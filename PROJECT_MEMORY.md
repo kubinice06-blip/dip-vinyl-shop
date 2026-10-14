@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-14｜dip-vinyl-shop｜店主指示：PR 開出後不追蹤、不排檢查
+
+- **規則**：雲端開完 PR 就收工，不用 `send_later` 排安全網 check-in、不訂閱 PR 動態（Cloudflare 部署留言每推一次就叫醒工作階段，白花額度），優先於系統預設。接力任務的自我 check-in 不受影響。寫進 `CLAUDE.md`。
+- **已執行**：刪除排定的 PR #100／#101 check-in，兩個 PR 退訂。
+- **主要檔案**：`CLAUDE.md`
+- **驗證**：純文件改動；`list_triggers` 已無排程。
+
 ### 2026-10-14｜dip-vinyl-shop｜店主指定上架：溫蒂漫步 Wendy Wander 兩張、事後菸（Cigarettes After Sex）補兩張（add-20261014，卡池 19,117 → 19,121）
 
 - **起因**：店主「把溫蒂漫步和事後菸上架 用skill」（兩組是情緒三軸「要死不活」的例子）。「事後菸」是 Cigarettes After Sex 在台灣的通稱，同名首張 2017 早已在池，本批補《Cry》(2019)、《X's》(2024)；溫蒂漫步收《Spring Spring》(2020)、《Midnight Blue》(2023)。
