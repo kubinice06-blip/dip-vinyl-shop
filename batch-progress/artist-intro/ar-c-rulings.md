@@ -1525,3 +1525,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-2 審稿 9 處：Reicha 刪父親早逝、Salieri 刪雙親相繼過世（家人逝世細節，歷史人物同規）；Pappano 刪「任期最長」；Salieri「最受歡迎之一」改「極受歡迎」；Khachaturian「最知名」改「極負盛名」；Nikisch 1913 貝多芬第五號由「完整錄音之一、省略反覆」改「早期的交響曲錄音之一，有所刪略」（補洞層指該版有刪節）；Tuckwell 刪「史上錄音最多」；Beverly Sills「自 Caruso 以來最受歡迎」改「極受歡迎」；Bhimsen Joshi「幾乎無人能及」改「極為驚人」。
   - 保留：Amy Beach「美國女性第一首出版的交響曲」屬通行事實（照 Van Cliburn 先例）；在世者各一處成績（Staier、Manze、Norman、Nelsons、Clyne、Meredith、Netrebko、Þorvaldsdóttir、《Evita》、Wit、Volodos、Rana）；Tuckwell 引國際法國號協會（官方）；Fiedler 1976 金氏紀錄；Salieri 毒殺傳說以「無史實根據」帶過；Schiff 1979 離開匈牙利、Panufnik 戰時與定居英國、Netrebko 不寫政治（背景各一句或不寫）。
 - 待本機（上線簡介與卡池）：《Evita》簡介「兩人共同製作」（維基寫 Rice 製作）；Andrew Manze Corelli 卡池 2002，搜尋所見 2003-01；Duhamel《Pierrot le Fou / Week-End》2001 後段為 2000 年重錄。
+
+## ar-d-103（2026-10-14）
+
+- 40 位全上架（36 full、4 thin：胡瀞云、Christopher Larkin、Claude-Michel Schönberg、Clemencic Consort），無不寫。
+- 古典段 B 至 C 字頭，含華人作曲家與演奏家（盛宗亮、陳其鋼、周文中、郭芝苑、呂泉生、胡瀞云、林昭亮；地名照實寫「中國」「台灣」「上海」，不寫兩岸政治）、遊戲與電影配樂（Larkin、Tin、Mansell、Gerhardt）、音樂劇（Schönberg）。Clint Mansell 個人卡與 featuring Kronos Quartet 卡分寫不重複。
+- 搜尋超額：Caroline Shaw & Sō Percussion 多 1 次（普立茲官網與 Princeton 403，改開第二源），照第二源先例放行。
+- 審稿修 18 處：
+  - out-1 審稿 7 處：Martinů「最重要」改「極重要」；Borodin Quartet「演出最久、最負盛名之一」改「歷史悠長、極負盛名」；Nielsen「丹麥最重要的作曲家」改「極具代表性」；Chávez「最早談電子音樂的書之一」改「早期」；Bartoli「最受歡迎之一」改「極受歡迎」；Chanticleer 刪名人堂（在世團體第二項成績）；Czernowin 刪 GEMA 評審團「在世最重要的作曲家之一」。
+  - out-2 審稿 11 處：Ludwig「20 世紀最重要之一」改「極重要」；Ferras「歐洲首屈一指之一」改「重要」；Dohnányi 刪父親遭納粹處決（家人逝世細節＋政治）；呂泉生刪「因受傷」；Claire Chase「最前線」改「前線」；Clara Schumann「最早背譜之一」「最傑出之一」改「早期」「極傑出」；Vivier 刪「加拿大史上最偉大之一」（留 Ligeti 具名評語）；Cleveland Quartet「最受推崇之一」改「極受推崇」；Clint Mansell 刪「獻給過世的伴侶」；Silvestri「二流樂團」改「樂團」。
+  - 保留：Claude-Michel Schönberg thin 以「先做法語概念專輯再上舞台」的做法過聲音門檻，倫敦版 2006 年成為西區最長壽音樂劇屬通行紀錄；Christopher Tin「第一首得葛萊美的遊戲音樂」屬通行事實（照 Van Cliburn 先例）；在世者各一處（盛宗亮麥克阿瑟、Shaw 普立茲、Simon 甘迺迪中心駐團、Bartoli、Chanticleer 葛萊美、Dutoit 皇家愛樂協會金獎、Czernowin GEMA、Rousset 布魯日首獎、Tin 葛萊美、Chase 麥克阿瑟）；盛宗亮文革背景一句＋《H'un》副題（作品題材）、Huberman 籌組巴勒斯坦交響樂團、Carlos Simon《Requiem for the Enslaved》委託緣由、呂泉生《閹雞》民謠遭皇民化政策禁唱（歷史背景）；胡瀞云 2024 年改名 Charlotte Hu。
+- 待本機：無新增上線簡介錯誤（本批多數無上線簡介）。
