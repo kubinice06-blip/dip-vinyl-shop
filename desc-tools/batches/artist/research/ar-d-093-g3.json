@@ -1,0 +1,875 @@
+[
+  {
+    "key": "temdendam suay",
+    "name": "Temdendam Suay",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Temdendam Suay 是日本的電子音樂名義，Discogs 登記唯一成員為 Jiro Sueoka（本名 末岡二郎），他另有 Transonic Jokers、Click Slipp、O-Tism 等團體名義。",
+            "src": "https://api.discogs.com/artists/277380",
+            "src2": "https://api.discogs.com/artists/408467",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "他在 Zero Gravity 廠牌發片；該廠牌自 1996 年起營運，是日本的電子音響專門廠牌，由永田一直（Kazunao Nagata）主持，2016 年 10 月在六本木 Super Deluxe 辦二十週年與重啟的音樂祭。",
+            "src": "https://zerogravity1996.blogspot.com/",
+            "src2": "https://ototoy.jp/_/default/p/128492",
+            "from": "new"
+          },
+          {
+            "f": "廠牌官方部落格寫他曾在 RE-RE、O-TISM、CLICK SLIP 等團體演出。",
+            "src": "https://zerogravity1996.blogspot.com/",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "sound": {
+        "status": "none",
+        "facts": []
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "廠牌官方部落格寫他 1996 年發行 CD《Sounzer Paranoun》之後便銷聲匿跡。",
+            "src": "https://zerogravity1996.blogspot.com/",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "同一頁寫他最後的作品是一個實驗電子音響計畫，並預告 2019 年他以 50 歲之齡在下北澤的 THREE 辦一場回顧自身音樂歷程的演出。",
+            "src": "https://zerogravity1996.blogspot.com/",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "era": {
+        "status": "bank",
+        "facts": [
+          {
+            "f": "《Sounzer Paranoun》的錄音與混音在 Jet Rocket 完成，期間 1995 至 1996 年；Discogs 編號 ZGV-003，日本發行。",
+            "src": "https://api.discogs.com/releases/322548",
+            "from": "bank"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "searches": 10,
+    "failedFetches": 0,
+    "status": "thin",
+    "notes": "卡池只有 1996《Sounzer Paranoun (Sound Tracks of Some Films)》一張，身分與 Discogs（artist 277380，廠牌 Zero Gravity 日本）對得上；網路上另有 2023 年 Star Ocean Record 同掛名單曲，事實庫已確認是另一出版品。可用資料幾乎只有 Discogs 與廠牌官方部落格兩處；部落格那段「發片後消失、2019 年預告回顧演出」只此一源（廠牌官方，人物故事，標單一來源），沒能找到演出是否如期舉行的第二源，所以 facts 只寫「預告」。sound 格查無（沒有任何樂評或訪談描述其聲音），標 none，寫作層只能靠專輯層級的曲目與 credit 事實。搜尋 10 次（超出 8 次上限 2 次：其中 Discogs API 五次（artist 搜尋、兩個 artist 條目、releases、廠牌條目）是為了確認身分與國籍，另一次日文搜尋與最後一次 2019 演出搜尋都沒有結果）。Jiro Sueoka 的本名漢字 末岡二郎 只見 Discogs 一處。",
+    "overCapOk": "多出的兩次只確認身分，聲音格仍查無（寫作層不寫，比照齊豫前例）"
+  },
+  {
+    "key": "ten city",
+    "name": "Ten City",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Ten City 是芝加哥的 R&B 與 house 團體，團名取自 intensity 的諧音；成員是主唱 Byron Stingily、吉他手 Herb Lawson 與鍵盤手 Byron Burke，由製作人 Marshall Jefferson 參與製作。",
+            "src": "https://en.wikipedia.org/wiki/Ten_City",
+            "src2": "https://www.internazionale.it/opinione/daniele-cassandro/2021/11/30/ten-city-gospel-house",
+            "from": "new"
+          },
+          {
+            "f": "義大利《Internazionale》的評論把 Jefferson 形容為芝加哥 house 的奠基人物之一、Ten City 沒掛名的「第四位成員」。",
+            "src": "https://www.internazionale.it/opinione/daniele-cassandro/2021/11/30/ten-city-gospel-house",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "Jefferson 1986 年的〈Move Your Body〉常被認為是把 house 帶向國際的作品；《Mixmag》稱 Jefferson 與 Stingily 兩人如今各自有受敬重的個人生涯。",
+            "src": "https://mixmag.net/read/ten-city-reunite-celebrate-40-years-chicago-event-news",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Mixmag》寫他們把現場樂器與福音唱腔，接上較硬、較跳躍的芝加哥 jacking house。",
+            "src": "https://mixmag.net/read/ten-city-reunite-celebrate-40-years-chicago-event-news",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "Stingily 的假音柔而有力，聽感時而像 Smokey Robinson、時而像 Sylvester，是團的聲音核心；歌曲結構承襲 Motown 式的情歌寫法，以福音的情感撐住，製作上把類比溫度與數位鼓機、合成器並置。",
+            "src": "https://www.internazionale.it/opinione/daniele-cassandro/2021/11/30/ten-city-gospel-house",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "英文維基稱 Ten City 是最早的 deep house 代表之一，在 1980 年代末到 1990 年代初有多首俱樂部與都會電台熱門曲。",
+            "src": "https://en.wikipedia.org/wiki/Ten_City",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "《Mixmag》稱 Ten City「開創了一種深具靈魂味的 house」，〈That's the Way Love Is〉登上美國舞曲榜冠軍、英國前十，另一首〈All Loved Out〉也被視為經典。",
+            "src": "https://mixmag.net/read/ten-city-reunite-celebrate-40-years-chicago-event-news",
+            "src2": "https://en.wikipedia.org/wiki/Ten_City",
+            "from": "new"
+          },
+          {
+            "f": "樂團 1990 年代中期解散後沉寂約二十五年，2021 年在 Jefferson 與 Stingily 帶領下重返，專輯《Judgment》（《Mixmag》拼作 Judgement）入圍葛萊美最佳舞曲／電子專輯（入圍）。",
+            "src": "https://en.wikipedia.org/wiki/Ten_City",
+            "src2": "https://mixmag.net/read/ten-city-reunite-celebrate-40-years-chicago-event-news",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "為紀念 house 誕生四十週年，Jefferson 與 Stingily 以 Ten City 之名在芝加哥 Metro 辦一場單次演出，搭配十四人現場樂團，收益捐給紀念芝加哥 house 歷史的慈善組織 House Music 40。",
+            "src": "https://mixmag.net/read/ten-city-reunite-celebrate-40-years-chicago-event-news",
+            "from": "new",
+            "single": true
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1989 年專輯《Foundation》由 Atlantic 發行，單曲〈That's the Way Love Is〉登上美國舞曲榜冠軍並進入英國前十。",
+        "src": "https://en.wikipedia.org/wiki/Ten_City",
+        "src2": "https://mixmag.net/read/ten-city-reunite-celebrate-40-years-chicago-event-news",
+        "from": "bank"
+      }
+    ],
+    "conflicts": [
+      "事實庫無研究稿；上線簡介寫前身 Ragtyme（英文維基同），但搜尋摘要有一源寫 Raw Silk，兩說不一致，facts 不寫前身團名。"
+    ],
+    "searches": 4,
+    "failedFetches": 4,
+    "status": "full",
+    "notes": "身分：卡池《Foundation》1989，對得上芝加哥 Ten City（Byron Stingily 個人卡另寫）。「前身團名」Ragtyme（維基、上線簡介）與 Raw Silk（搜尋摘要 musicto.com，未開頁）不一致，facts 不寫。專輯名 Judgment（英文維基）與 Judgement（Mixmag、Internazionale）拼法不一，facts 照維基並括註。葛萊美入圍：維基寫 2021 年入圍，Mixmag 寫 2022 年葛萊美提名，應為 2021 年公布提名、2022 年典禮，facts 只寫「入圍」不寫年份。Internazionale 另主張《Foundation》「實際上奠定了 vocal／deep house」並影響 Ultra Naté、Inner City、Crystal Waters 乃至 Dua Lipa、Róisín Murphy、Robyn，那是單一評論人的主張，未收 facts，只留 notes。Mixmag 與維基非完全獨立（都是新聞稿式敘述）。專輯榜第 49 名（維基）與英國單曲榜第 8、Stingily 1999 年重錄同曲再登美國舞曲榜冠軍，各只見維基單源，未收 facts。DJ Mag 長文（djmag.com）、MusicRadar 經典專輯文都無法取得內容（403／頁面截斷）。"
+  },
+  {
+    "key": "terrence dixon",
+    "name": "Terrence Dixon",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Terrence Dixon 是底特律的 techno 製作人與 DJ，另以 Population One 之名發片；90 年代初從 acid 開始做音樂，1994 年出道，早期在 Claude Young 主持的 Utensil 廠牌發片。",
+            "src": "https://en.wikipedia.org/wiki/Terrence_Dixon",
+            "src2": "https://thequietus.com/?p=16674",
+            "from": "new"
+          },
+          {
+            "f": "他長年低調，據說「不接受訪談」；他說自己的音樂來自周遭環境與個人生活，並點名 Teddy Pendergrass、The O'Jays、Mantronix 與 Jimi Hendrix 為最大的影響。",
+            "src": "https://en.wikipedia.org/wiki/Terrence_Dixon",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "90 年代後半他在 Metroplex 發過兩張 Population One 唱片，也參與了 Juan Atkins《Skynet》專輯的製作。",
+            "src": "https://en.wikipedia.org/wiki/Terrence_Dixon",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他以極簡 techno 著稱，作曲工具是 Roland MC-303 groovebox。",
+            "src": "https://en.wikipedia.org/wiki/Terrence_Dixon",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "《The Quietus》形容他的極簡手法專注於為舞池功能而生的稀疏聲音，帶著近乎科學的有條不紊；Population One 的《Theatre of a Confused Mind》以底特律的工業衰退、建築與穿行城市的心理經驗為主題，也帶非洲未來主義色彩。",
+            "src": "https://thequietus.com/?p=16674",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "Resident Advisor 的藝人頁引他自己的說法，把 techno 稱作「Forward thinking ghetto electronics」；同頁稱其聲音設計怪異而極簡、重真實性。",
+            "src": "https://ra.co/dj/terrencedixon",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《The Quietus》把他放進以 Robert Hood（The Vision 名義）為源頭的極簡譜系，並稱他對這個類型已有二十年的影響；另一篇樂評指出，隨著樂迷世代回頭尋找底特律根源，他的音樂重新受到關注，而一些早期同儕已漸被遺忘。",
+            "src": "https://thequietus.com/?p=16674",
+            "src2": "https://thequietus.com/?p=14558",
+            "from": "new"
+          },
+          {
+            "f": "2014 年 4 月他曾以一句話宣布退出音樂製作，但之後仍持續發片；他 2013 年創辦自己的 Reduction 廠牌，2021 年再創辦以底特律與柏林連結為主題的 Minimal Detroit Audio。",
+            "src": "https://en.wikipedia.org/wiki/Terrence_Dixon",
+            "src2": "https://thequietus.com/?p=16674",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2000 年首張專輯《From the Far Future》由柏林 Tresor 發行；他說這張的主旨是向前人致敬、尊重純粹的 techno，拿舊的片段重新做成新的；2016 年增收兩首未發表曲目再版。",
+            "src": "https://en.wikipedia.org/wiki/Terrence_Dixon",
+            "from": "new",
+            "single": true
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "上線簡介稱「1994 年出道後長年低調」與維基、Quietus 一致；Population One 名義的首作《Unknown Black Shapes》1994 年在 Utensil 發行（Quietus）。"
+    ],
+    "searches": 5,
+    "failedFetches": 3,
+    "status": "full",
+    "notes": "身分：卡池《From the Far Future》2000（Tresor 141），與維基 Terrence Dixon（底特律）對得上。出身地 Romulus 見於搜尋摘要轉述 Juno Daily，但 Juno 頁面 403 未讀到，不收。「不接受訪談」見維基與搜尋摘要（Juno 轉述），facts 單源。Quietus 兩篇是同一站（非獨立），所以 legacy 第一條不算兩個獨立源，已在 notes 說明；RA 頁的「The Detroit techno don」「最難捉摸的藝人之一」是評論人形容詞，未收。維基與 Quietus 對「2014 年退休」一致（維基只寫 2014 年）；四月是 Quietus 說的。Resident Advisor 與 Quietus 句內評價均屬單一評論來源，故多數標單一來源。"
+  },
+  {
+    "key": "terrence parker",
+    "name": "Terrence Parker",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Terrence Parker 是底特律的 house DJ 與製作人；他先是 hip-hop DJ，並在電台主持節目，後來被 house 的歌曲結構、和弦、旋律與人聲吸引，轉向 house。",
+            "src": "https://www.tokyoweekender.com/?p=28447",
+            "src2": "https://nowtoronto.com/music/terrence-parker-closes-up-house/",
+            "from": "new"
+          },
+          {
+            "f": "他在家裡聽 Motown 與 Philly soul 長大，父親愛爵士，他也聽 The Staple Singers、Shirley Caesar、Mahalia Jackson 等福音歌手。",
+            "src": "https://www.tokyoweekender.com/?p=28447",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "他在底特律的 Buy Rite Records 拿到 Derrick May、Kevin Saunderson、Juan Atkins 等 Detroit techno 創始者的宣傳盤，並在自己的電台節目上播放。",
+            "src": "https://www.tokyoweekender.com/?p=28447",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "1988 年他以與 Lou Robinson、Marc Kinchen 合組的團體發行第一批黑膠。",
+            "src": "https://volumo.com/artist/5622-terrence-parker/about",
+            "src2": "https://en.wikipedia.org/wiki/Terrence_Parker",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "維基寫他以靈性面向著稱，會把這一面放進音樂；他自述的聲音混合柔和人聲、deep house、garage、disco 經典與 funk，並自稱是少數把 hip-hop 的 cut、scratch 與 beat-juggling 用進 house 混音的人。",
+            "src": "https://nowtoronto.com/music/terrence-parker-closes-up-house/",
+            "src2": "https://en.wikipedia.org/wiki/Terrence_Parker",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "他把音樂定位為 house 與底特律場景影響的結合，包括 Motown、funk 與爵士。",
+            "src": "https://www.tokyoweekender.com/?p=28447",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "他因用電話聽筒代替耳機而得到「Telephone Man」的外號，他說這招借自更早的 DJ，聽筒比一般耳機耐用得多。",
+            "src": "https://en.wikipedia.org/wiki/Terrence_Parker",
+            "src2": "https://nowtoronto.com/music/terrence-parker-closes-up-house/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2002 年他宣布減少出國巡演，當時已 DJ 超過二十年、1993 年起到海外演出；他說想把重心放在家庭與「和上帝的個人關係」，並專注製作與經營自己的 Intangible 廠牌。",
+            "src": "https://nowtoronto.com/music/terrence-parker-closes-up-house/",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "他在 1993 年創辦 Intangible Records。",
+            "src": "https://volumo.com/artist/5622-terrence-parker/about",
+            "from": "new",
+            "single": true
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "searches": 5,
+    "failedFetches": 1,
+    "status": "thin",
+    "notes": "身分：卡池《Tragedies of a Plastic Soul Junkie》1996（!K7 R007），與維基 Terrence Parker（底特律）對得上；維基 wikidata 的 born 2000-01-01 明顯是錯值，不收。legacy 查無有出處的共識評價（無名人堂、官方榮譽、後輩點名），標 none；他最有名的成績（Love's Got Me High、The Question 的榜單）在世者榜單避免，且來源分歧（維基寫英國等地前 20、另一源寫第 1 名、Tokyo Weekender 引他自述荷蘭榜約第 12），不收。首張黑膠的團名各源不一（Volumo 作 Separate Minds，Tokyo Weekender 引他說 Other Minds，另提更早的 Scan 7），facts 不寫團名。巡演國家數 40／51／56 不一，不收。Intangible Records 1993 只見 Volumo（官方式簡介）與搜尋摘要，標單一來源。movementfestival.com 頁面 404。Tokyo Weekender 把 Derrick May 拼成 Derrick Mays，facts 已寫正確人名。"
+  },
+  {
+    "key": "tetsu inoue",
+    "name": "Tetsu Inoue",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Tetsu Inoue 是日本出身的電子音樂製作人，曾住過日本、舊金山與紐約；他以 ambient techno 與 lowercase 等各種 ambient 為主，尤其在 Pete Namlook 的 FAX 廠牌發片。",
+            "src": "https://en.wikipedia.org/wiki/Tetsu_Inoue",
+            "src2": "https://www.nts.live/artists/18748-tetsu-inoue",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "他合作過的音樂人包括 Pete Namlook、Bill Laswell、Andrew Deutsch、Carl Stone、Terre Thaemlitz、Jonah Sharp、Taylor Deupree 與 Uwe Schmidt。",
+            "src": "https://en.wikipedia.org/wiki/Tetsu_Inoue",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "他與 Namlook 在 FAX 廠牌合作出了幾十張唱片，兩人經常通信。",
+            "src": "https://andybeta.substack.com/p/how-to-disappear-completely",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "NTS 的藝人簡介稱《Ambiant Otaku》被許多人視為「極簡 ambient techno 的經典」，最初在 Namlook 的 FAX 以限量版發行。",
+            "src": "https://www.nts.live/artists/18748-tetsu-inoue",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "1998 年紀錄片《Modulations: Cinema for the Ear》拍到他採集日常聲響的田野錄音。",
+            "src": "https://andybeta.substack.com/p/how-to-disappear-completely",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "維基寫道，2007 年最後一張專輯《Inland》發行後，他徹底從公眾視野消失。",
+            "src": "https://en.wikipedia.org/wiki/Tetsu_Inoue",
+            "src2": "https://andybeta.substack.com/p/how-to-disappear-completely",
+            "from": "new"
+          },
+          {
+            "f": "2012 年 6 月，部落客 Phonaut 發表〈Where Is Tetsu Inoue?〉，說寄給他的電子郵件與寄到紐約 Broadway 住址的信都沒有回音，連朋友與廠牌主人也無法與他處理未了事務。",
+            "src": "https://andybeta.substack.com/p/how-to-disappear-completely",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "Uwe Schmidt 談到他時說：「他是唯一一個就這麼消失的人。」文章稱這是圈內一直沒解開的謎，他是隱居或已過世，至今沒有證實。",
+            "src": "https://andybeta.substack.com/p/how-to-disappear-completely",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "searches": 5,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "身分：卡池《Ambiant Otaku》1994，對得上日本出身的 Tetsu Inoue（依指示不寫漢字名）。維基與 NTS 簡介同源（NTS 內容抄自維基，非獨立）；sound 的「經典」說法因此標單一。Namlook 2012 年過世只見單一來源與搜尋摘要（Bandcamp Daily 列表），未開頁，且死因避免，facts 不收。Apple Music 簡介稱他 1980 年代末在德國認識 Uwe Schmidt 與 Namlook、約 1986 年移居紐約，都只見搜尋摘要，未讀到頁面，不收。Substack 文章付費牆後的段落（Schmidt 所稱的真相）沒讀到，故「去向」一律寫成未證實。《Ambiant Otaku》是不是個人首張、限量 1000 張，只見 NTS 單源，不收 facts。另一失敗請求：spin.com 403。"
+  },
+  {
+    "key": "the 7th plain",
+    "name": "The 7th Plain",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "The 7th Plain 是 Luke Slater 的 ambient 化名；Slater 是英國電子音樂人，生於 Reading、長於 Horley，1988 年已在倫敦 Heaven 夜店當 DJ，正趕上早期 acid house。",
+            "src": "https://en.wikipedia.org/wiki/Luke_Slater",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "Slater 用過十個以上的化名；The 7th Plain 在 General Production Recordings 發片，1994 年有《My Yellow Wise Rug》與《The 4 Cornered Room》兩張專輯。",
+            "src": "https://en.wikipedia.org/wiki/Luke_Slater",
+            "src2": "https://www.berghain.berlin/en/shop/releases/the-7th-plain-chronicles-i/",
+            "from": "new"
+          },
+          {
+            "f": "The 7th Plain 是他的 ambient 另一面，與他以 techno 為主的 Planetary Assault Systems 分開。",
+            "src": "https://factmag.com/2016/06/23/ostgut-ton-ambient-sub-label-a-ton-luke-slater-the-7th-plain",
+            "src2": "https://en.wikipedia.org/wiki/Luke_Slater",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Berghain 的 A-TON 說明稱，The 7th Plain 把 ambient 從幾乎無鼓的合成器鋪底，擴展到加入推進力強的鼓點、細膩節奏與細緻旋律，當時難以歸類、相當前衛；《The 4 Cornered Room》被形容為情感豐富、詭異而帶逃離現實的氣氛。",
+            "src": "https://www.berghain.berlin/en/shop/releases/the-7th-plain-chronicles-i/",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "FACT 形容它的音樂介於 Jean-Michel Jarre 的旋律合成器與 Global Communication 的 downtempo 之間。",
+            "src": "https://factmag.com/2016/06/23/ostgut-ton-ambient-sub-label-a-ton-luke-slater-the-7th-plain",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "Resident Advisor 的樂評把這批作品連到 90 年代初 chill-out 室文化；評者 Oli Warwick 指出，它的能量起伏讓曲子不會淪為背景音，並點名《The 4 Cornered Room》的〈Lost〉：吃力的鼓搭配忙碌的 hi-hat 與大片管弦風格的合成器。",
+            "src": "https://pt-br.ra.co/reviews/23333",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2016 年 Ostgut Ton（Berghain）成立專注 ambient 與檔案重發的新子廠牌 A-TON，第一張就是 The 7th Plain 的《Chronicles I》；系列到 2018 年的《Chronicles II》《Chronicles III》共三卷，全面重新母帶處理並收入未發表曲目。",
+            "src": "https://factmag.com/2016/06/23/ostgut-ton-ambient-sub-label-a-ton-luke-slater-the-7th-plain",
+            "src2": "https://pt-br.ra.co/reviews/23333",
+            "from": "new"
+          },
+          {
+            "f": "Resident Advisor 稱，對 90 年代初 ambient techno 的興趣重燃，帶動了對這批作品的重新評價。",
+            "src": "https://pt-br.ra.co/reviews/23333",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Chronicles I》2016 年出，收入每張 90 年代中期專輯各一首與六首未發表製作，其中包括 Ken Ishii〈Extra〉的混音。",
+            "src": "https://factmag.com/2016/06/23/ostgut-ton-ambient-sub-label-a-ton-luke-slater-the-7th-plain",
+            "src2": "https://www.berghain.berlin/en/shop/releases/the-7th-plain-chronicles-i/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "活躍期各源不一：FACT 寫 1993 至 1996、RA 寫 1993 至 1995，且 FACT 稱三張專輯、Berghain 與維基只點名兩張（1994），facts 不寫活躍年份區間，專輯只寫 1994 年的兩張。"
+    ],
+    "searches": 5,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "身分：卡池《The 4 Cornered Room》1994，對得上 Luke Slater 的 The 7th Plain（預抓維基無此條，改用 Luke Slater 維基與 FACT／Berghain／RA）。Luke Slater 維基頁沒有 The 7th Plain 的獨立描述，只在別名列表；Berghain 是廠牌自家說明（宣傳性質），sound 標單一來源。Juno Daily 的 Slater 專訪頁 403，Slater 本人對此化名的說法沒取得。在世者榜單、銷量、DJ 排名一概未收。"
+  },
+  {
+    "key": "the advent",
+    "name": "The Advent",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "The Advent 是英國的 techno 組合，1993 年由 Cisco Ferreira 與 Colin McBean 在倫敦成軍；Ferreira 出身馬德拉島，離開學校不久就到 Jack Trax Records 當錄音助理。",
+            "src": "https://en.wikipedia.org/wiki/The_Advent",
+            "src2": "https://www.qobuz.com/us-en/interpreter/the-advent/102789",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "在 Jack Trax 的工作讓 Ferreira 近距離接觸 Derrick May、Marshall Jefferson 等底特律與芝加哥製作人的作品，這成為他走上音樂的起點。",
+            "src": "https://en.wikipedia.org/wiki/The_Advent",
+            "src2": "https://www.electronicsound.co.uk/?p=19344",
+            "from": "new"
+          },
+          {
+            "f": "1988 年 Ferreira 開始與 C.J. Bolland 以 Space Opera 之名錄音，在 R&S Records 發了四張單曲；他另以個人名義錄了 Fragile 廠牌的第一張單曲。",
+            "src": "https://en.wikipedia.org/wiki/The_Advent",
+            "src2": "https://www.electronicsound.co.uk/?p=19344",
+            "from": "new"
+          },
+          {
+            "f": "McBean 是頂尖 DJ，曾與 Bang the Party 的 Keith Franklin 組成 DJ 組合 KCC。",
+            "src": "https://en.wikipedia.org/wiki/The_Advent",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們的聲音取自底特律 techno 與 electro，Qobuz 的簡介形容為「硬而帶金屬感、被推到彎曲加速的鼓點」。",
+            "src": "https://www.qobuz.com/us-en/interpreter/the-advent/102789",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "評論稱他們以充沛的能量，翻新 Derrick May 與 Kevin Saunderson 這類早期底特律 techno 開創者的聲音。",
+            "src": "https://www.qobuz.com/us-en/interpreter/the-advent/102789",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Qobuz 的簡介把 The Advent 形容為英國活躍最久、產量最多的 techno 組合之一；Ferreira 此後仍持續發片，作品散見 Tresor、Drumcode 等廠牌，也創辦了 Kombination Research 廠牌。",
+            "src": "https://www.qobuz.com/us-en/interpreter/the-advent/102789",
+            "src2": "https://www.electronicsound.co.uk/?p=19344",
+            "from": "new"
+          },
+          {
+            "f": "Kombination Research 的第 100 號發行《Collection 100》收進 22 首廠牌早期作品，其中有 Ferreira 在底特律 MOTOR 現場錄下的曲目；評論人 Kris Needs 認為這些作品勾起的記憶至今仍能抓住人。",
+            "src": "https://www.electronicsound.co.uk/?p=19344",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "The Advent 簽進 Orbital 所在的 Internal Records，發了一批 12 吋單曲、1995 年專輯《Elements of Life》與 1997 年專輯《New Beginning》；《New Beginning》之後 McBean 離團，專心做自己的 Mr G 名義，Ferreira 繼續用 The Advent 之名。",
+            "src": "https://www.electronicsound.co.uk/?p=19344",
+            "src2": "https://www.qobuz.com/us-en/interpreter/the-advent/102789",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "McBean 離團年份：Qobuz 寫 1999 年（因不願再巡演），Electronic Sound 寫《New Beginning》（1997）之後，兩源不一致，facts 不寫年份，只寫「《New Beginning》之後」。"
+    ],
+    "searches": 4,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "身分：卡池《Elements of Life》1995，對得上英國 techno 的 The Advent（Cisco Ferreira／Colin McBean）。Ferreira 的出身地馬德拉只見 wikidata 與 Electronic Sound 稱其為葡萄牙裔製作人，facts 只寫「出身馬德拉島」（維基 wikidata，與預抓英文維基同家族）；The Advent 作為團名國籍採 Qobuz 與維基的「英國」。Qobuz 簡介抄自 AllMusic 系列（allmusic.com 被擋），與維基非獨立。Metalbox 由誰創辦各源不一，未收。Mr G 由 McBean 獨立發展的說法兩源一致（Electronic Sound、搜尋摘要），但未寫成就。DJ Mag 的 Mr G 專文 403，Resident Advisor 藝人頁無生平，皆未取得。"
+  },
+  {
+    "key": "the beloved",
+    "name": "The Beloved",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "The Beloved 是英國團體，1983 年 Jon Marsh 與 Steve Waddington 認識後，邀貝斯手 Tim Havard 組成 The Journey Through，1984 年初改名 The Beloved，早年走後龐克與獨立搖滾路線，常被拿來和 New Order 相比，成績有限。",
+            "src": "https://en.wikipedia.org/wiki/The_Beloved_(band)",
+            "src2": "https://en.wikipedia.org/wiki/Happiness_(The_Beloved_album)",
+            "from": "new"
+          },
+          {
+            "f": "1985 年 1 月，他們以四人編制錄了 John Peel 的 BBC Radio 1 現場錄音。",
+            "src": "https://en.wikipedia.org/wiki/The_Beloved_(band)",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "1987 年 Havard 與鼓手 Guy Gausden 相繼離團，Marsh 與 Waddington 變成二人組；他們受紐約之行接觸到美國舞曲的啟發，接著投入 1988 年倫敦的 rave 與 acid house 場景，轉向 house 與另類舞曲。",
+            "src": "https://en.wikipedia.org/wiki/Happiness_(The_Beloved_album)",
+            "src2": "https://en.wikipedia.org/wiki/The_Beloved_(band)",
+            "from": "new"
+          },
+          {
+            "f": "樂團最初的「Diana's Diner」宣傳故事，Marsh 在 2017 年承認是編造的新聞稿。",
+            "src": "https://en.wikipedia.org/wiki/The_Beloved_(band)",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Happiness》是混合 synth-pop、後 rave 風格與 house 的舞曲流行；〈The Sun Rising〉是以倒轉吉他和取樣中世紀人聲建成的 ambient 風格歌曲，〈Hello〉是一首 techno 風格的羅列式歌曲。",
+            "src": "https://en.wikipedia.org/wiki/Happiness_(The_Beloved_album)",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "英文維基稱，評論界常把《Happiness》視為最早把 house 帶進流行脈絡的專輯之一。",
+            "src": "https://en.wikipedia.org/wiki/Happiness_(The_Beloved_album)",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "維基稱《Happiness》是 The Beloved 的突破之作，也是 90 年代初「第二個愛之夏」舞曲場景的代表唱片之一；專輯在英國拿到金唱片認證。",
+            "src": "https://en.wikipedia.org/wiki/Happiness_(The_Beloved_album)",
+            "src2": "https://en.wikipedia.org/wiki/The_Beloved_(band)",
+            "from": "new"
+          },
+          {
+            "f": "Marsh 後來擔任 Ministry of Sound 與 Fabric 的 DJ 駐場；《Happiness》三十週年版與樂團舊作在 2019 至 2020 年重新發行並上串流。",
+            "src": "https://en.wikipedia.org/wiki/The_Beloved_(band)",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈The Sun Rising〉1989 年成為夜店熱門曲，進英國前 40；〈Hello〉1990 年初發行，是樂團第一支國際熱門曲，英國排第 19 名。",
+            "src": "https://en.wikipedia.org/wiki/The_Beloved_(band)",
+            "src2": "https://en.wikipedia.org/wiki/Happiness_(The_Beloved_album)",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "searches": 5,
+    "failedFetches": 0,
+    "status": "thin",
+    "notes": "⚠ 預抓維基抓錯頁（Beloved 小說，warn），已改讀英文維基 The Beloved (band) 與 Happiness (The Beloved album)；兩頁同屬維基，非獨立，非維基來源未取得（Apple Music 頁沒有簡介；兩次搜尋被泛字「happiness」帶偏）。因此 origin 與 sound 多為維基單源的低風險敘述，高風險項（金唱片、單曲名次）才與另頁交叉。成軍地：維基寫倫敦，Happiness 條目寫劍橋，facts 不寫地點。「首張／唯一」：Happiness 條目稱 debut studio album，樂團條目稱 duo 唯一錄音室專輯，與較早的 1988 年《Where It Is》並存，facts 不用。在世者榜單：《Happiness》的專輯榜名次與 Billboard 200 名次（上線簡介已寫）未再收；Mixmag 1996 榜名次不收。上線簡介核對：英國專輯榜第 14 名、Billboard 200 第 154 名、〈Hello〉英國第 19 名（首支前二十）與維基 Happiness 條目一致；「最早把 house 與流行歌並置的英國專輯之一」比維基的「評論界常說最早之一」說得更強，建議寫作層維持「常被視為」措辭。"
+  },
+  {
+    "key": "the bug",
+    "name": "The Bug",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "The Bug 是 Kevin Martin 的名義；他是英國人，少年時在 Weymouth 的唱片行 Handsome Dick's 接觸音樂，受後龐克吸引，約 1990 年搬到倫敦，現居歐洲大陸。",
+            "src": "https://en.wikipedia.org/wiki/Kevin_Martin_(British_musician)",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "他用四軌錄音機和效果踏板開始做音樂，迷上 dub；90 年代初在倫敦聽到 Iration Steppas 與 The Disciples 的 sound system，培養出對 ragga 與數位 dancehall 的口味。",
+            "src": "https://en.wikipedia.org/wiki/Kevin_Martin_(British_musician)",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "在 The Bug 之前，他先後以 God（jazzcore）、Techno Animal（與 Justin Broadrick 的 industrial hip hop）與 Ice 等名義錄音。",
+            "src": "https://en.wikipedia.org/wiki/Kevin_Martin_(British_musician)",
+            "src2": "https://thequietus.com/articles/00928-the-bug-in-conversation-the-future-sound-of-i-london-zoo-i-quietus-album-of-the-year",
+            "from": "new"
+          },
+          {
+            "f": "Martin 自述當了好幾年「討厭 dancehall 的 dub 純粹派」，直到聽到 Capleton 的〈Final Assassin〉才改變，之後迷上 dancehall 的 7 吋單曲。",
+            "src": "https://thequietus.com/articles/00928-the-bug-in-conversation-the-future-sound-of-i-london-zoo-i-quietus-album-of-the-year",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "維基稱 The Bug 的音樂取自 dancehall、noise、grime 與 hip hop，與 Basic Channel、Pole 之間有較隱微的連結；他把 dub、dancehall、industrial、jazzcore、hip hop 與 dubstep 一路帶進同一條作品線。",
+            "src": "https://en.wikipedia.org/wiki/Kevin_Martin_(British_musician)",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "Martin 說 hip hop 與 dancehall 曾是他連續七八年最穩定的靈感來源，後來覺得兩者都不再讓他興奮，才逼自己做出想聽的音樂；他也說科技與倫敦的環境會塑造方向。",
+            "src": "https://thequietus.com/articles/00928-the-bug-in-conversation-the-future-sound-of-i-london-zoo-i-quietus-album-of-the-year",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "他點名的影響包括 Jah Shaka、Adrian Sherwood、King Tubby、Lee \"Scratch\" Perry、Swans、Public Enemy 與 Thomas Köner。",
+            "src": "https://en.wikipedia.org/wiki/Kevin_Martin_(British_musician)",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《London Zoo》在《The Wire》2008 年度榜（2009 年 3 月號 Top 50）名列第一。",
+            "src": "https://www.thewire.co.uk/issues/charts/2008-rewind",
+            "src2": "https://en.wikipedia.org/wiki/London_Zoo_(album)",
+            "from": "new"
+          },
+          {
+            "f": "Martin 認為較早的 Pressure 大概只影響了 Kode9 與 Spaceape，沒對早期 dubstep 有更大的影響；他覺得 dubstep 的貢獻，是讓聽眾與主辦單位適應重低音 sound system。",
+            "src": "https://thequietus.com/articles/00928-the-bug-in-conversation-the-future-sound-of-i-london-zoo-i-quietus-album-of-the-year",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "與 Justin Broadrick 的 Techno Animal 在 2017 年於柏林辦了最後一場演出，之後兩人轉以 Zonal 合作；他也與詩人 Roger Robinson、歌手 Kiki Hitomi 組成 King Midas Sound，在 Hyperdub 發片。",
+            "src": "https://en.wikipedia.org/wiki/Kevin_Martin_(British_musician)",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《London Zoo》是他以 The Bug 之名的第三張專輯，2008 年由 Ninja Tune 發行，客座 MC 包括 Tippa Irie、Ricky Ranking、Killa P、Flow Dan、Warrior Queen、Spaceape、Roger Robinson 與 Aya。",
+            "src": "https://en.wikipedia.org/wiki/London_Zoo_(album)",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "Martin 說這張很難做，個人與經濟都吃緊，約有兩年半住在錄音室裡，專輯一再被改寫；原定與主持人 Mary Anne Hobbs 的人聲錄音混得不好，逼他重做。",
+            "src": "https://thequietus.com/articles/00928-the-bug-in-conversation-the-future-sound-of-i-london-zoo-i-quietus-album-of-the-year",
+            "from": "new",
+            "single": true
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "searches": 7,
+    "failedFetches": 3,
+    "status": "full",
+    "notes": "⚠ 預抓維基抓到同名歌曲頁（warn），已改讀英文維基的 Kevin Martin (British musician) 條目（URL 的 The_Bug_(musician) 轉址至此）與 London Zoo (album)。身分：卡池《London Zoo》2008（Ninja Tune），對得上 Kevin Martin 的 The Bug。《The Wire》第一名：thewire.co.uk 榜單頁（2009 年 3 月號）與維基 London Zoo 條目兩處，上線簡介「年度樂評票選第一」成立，但來源是樂評人投票榜，非「票選獎項」，寫作層維持「年度榜第一」即可。Metacritic 90 分／10 篇只見維基單源，不收；Quietus 同年也把它選為年度專輯，與 Wire 屬同類榜單，只留一處。上線簡介其餘（封面 Fefe Talavera、母帶 Kevin Metcalfe、〈Skeng〉等最常播放）本層未核對。Red Bull 口述史、Bristol247 訪談與 Drowned in Sound 頁面皆取不到（403／404）。Quietus 訪談時年 2008，Martin 說的「Pressure」指他 2003 年的專輯，內容照訪談原話不補年份。"
+  },
+  {
+    "key": "the crystal method",
+    "name": "The Crystal Method",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "The Crystal Method 是 Scott Kirkland 與 Ken Jordan 1993 年在拉斯維加斯組成的美國電子音樂組合；兩人在內華達大學拉斯維加斯分校相識，Jordan 當時是校園電台 DJ，能接觸新音樂與錄音設備。",
+            "src": "https://en.wikipedia.org/wiki/The_Crystal_Method",
+            "src2": "https://www.orlandoweekly.com/music/leaving-las-vegas-fruitful-for-method-2259481/",
+            "from": "new"
+          },
+          {
+            "f": "Kirkland 的父母愛 disco 與 Pink Floyd，讓他學吉他並買了第一台合成器。",
+            "src": "https://www.orlandoweekly.com/music/leaving-las-vegas-fruitful-for-method-2259481/",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "兩人後來搬到洛杉磯一帶，1992 年起把時間分給做電子曲與洛杉磯的 rave 場景；他們把住處地下的防空洞當成工作室，取名 The Bomb Shelter。",
+            "src": "https://www.orlandoweekly.com/music/leaving-las-vegas-fruitful-for-method-2259481/",
+            "src2": "https://en.wikipedia.org/wiki/The_Crystal_Method",
+            "from": "new"
+          },
+          {
+            "f": "樂團名稱來自合作的一位饒舌歌手隨口說出的詞；Kirkland 說這名字刻意挑釁，只是三個字的聲音，沒有特指藥物。",
+            "src": "https://popmatters.com/crystal-method-2018-interview-2604136815.html",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們被稱為 big beat／breakbeat 的先驅，作法是把 breakbeat 與合成器樣式結合。",
+            "src": "https://en.wikipedia.org/wiki/The_Crystal_Method",
+            "src2": "https://popmatters.com/crystal-method-2018-interview-2604136815.html",
+            "from": "new"
+          },
+          {
+            "f": "Kirkland 把《Vegas》長年受歡迎，歸因於跨界的吸引力：搖滾、funk 與 R&B 的影響混在一起；他說不論走哪條風格，「仍然有 Crystal Method 的聲音」。",
+            "src": "https://popmatters.com/crystal-method-2018-interview-2604136815.html",
+            "src2": "https://www.orlandoweekly.com/music/leaving-las-vegas-fruitful-for-method-2259481/",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們的音樂被用在大量電視節目、電影、電玩與廣告，兩人也在紀錄片《Better Living Through Circuitry》中，於家門前草坪接受訪問。",
+            "src": "https://en.wikipedia.org/wiki/The_Crystal_Method",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "Ken Jordan 在 2017 年前後退出音樂圈，團名改由 Kirkland 單獨使用；Kirkland 買下 Jordan 在錄音室的份額，說兩人是和平分開。",
+            "src": "https://en.wikipedia.org/wiki/The_Crystal_Method",
+            "src2": "https://popmatters.com/crystal-method-2018-interview-2604136815.html",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1993 年他們與洛杉磯的 City of Angels 廠牌簽約，並參與電影原聲與 Filter 的《Spawn》合作；1997 年首張專輯《Vegas》發行。",
+            "src": "https://www.orlandoweekly.com/music/leaving-las-vegas-fruitful-for-method-2259481/",
+            "src2": "https://en.wikipedia.org/wiki/The_Crystal_Method",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "Ken Jordan 退休年：維基寫 2017、PopMatters 訪談寫 2016，兩源不一致，facts 寫「2017 年前後」。"
+    ],
+    "searches": 3,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "身分：卡池《Vegas》1997，對得上美國的 The Crystal Method。「白金認證（2007）」只見維基與搜尋摘要（Bandsintown，未開頁），《Vegas》上榜 Billboard 200 36 週、單曲〈Comin' Back〉登舞曲榜冠軍只見 1998 年 Orlando Weekly 單源，在世者榜單與認證預設避免，皆未收 facts。成軍年 1993：維基寫 1993，Orlando Weekly 寫 1993 簽約 City of Angels、1992 起混電子與 rave，兩源未衝突但成軍年以維基為準。BMI 訪談 403 未取得。搜尋摘要中的 Orlando Weekly 把加州城市拼成 Glenwood，維基是 La Crescenta，facts 不寫城市。"
+  }
+]
