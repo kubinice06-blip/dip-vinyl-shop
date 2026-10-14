@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1248 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1252 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1204,6 +1204,10 @@
 | ar-d-092 | SAB | Crystallization | 阿木譲 2018 年逝世後，《vanity records》一書的兩位作者逐一聯絡藝人取得許可，原盤權與母帶歸還藝人，2020 年的正式再發才成立 | hanabun 該文只把 Sab 列為《Vanity Box》第一彈的收錄藝人，全文沒有提到 Crystallization 或 SAB 在 2020 年重發；2020 年 4 至 12 月的重發是 Vanity 整體，無法證明包含 SAB。EM Records 的 2025 年重發也沒有說是 2020 年重發之後。『兩位作者』也不對：文中是 Nakamura Yasuyuki 與 Higashiseto 兩位聯絡藝人，書的作者共 5 位。 | https://hanabun.press/2021/08/06/vanityrecords01/ |
 | ar-d-092 | SAB | Crystallization | 他一人包辦合成器、鋼琴與電吉他 | Soundohm 與 EM Records 都寫另有兩位樂手參與器樂（弦樂、西塔琴、長笛）。 | https://www.soundohm.com/product/crystallization |
 | ar-d-092 | Sainkho Namtchylak | Stepmother City | 2000 年在義大利廠牌 Ponderosa Music & Art 發表此作（CD003） | Ponderosa 廠牌自家頁面把《Stepmother City》標為 2001 年；Rambles 評論與維基寫 2000 年。發行年份各處不一，簡介的『2000 年』未必錯，但廠牌官方寫法是 2001，建議主線核對。 | https://ponderosa.it/en/record/sainkho-namtchylak/ |
+| ar-d-092 | Shadow | Sweet Sweet Dreams | 1984 年這批錄音原由千里達 SR Records 發行，合成器與鼓機把 calypso 推到迪斯可與早期 soca 的交界 | 本層讀到的來源（Analog Africa 重發報導、零售頁摘要）只提到重 synth、貝斯與銅管為主、近 disco，沒有任何一處提到 SR Records 或鼓機；pan-african-music 稱原版沒有發行通路。廠牌名與器材需另找來源核實，否則改寫保守。 | https://pan-african-music.com/en/analog-africa-reissues-the-much-sought-after-and-oddball-record-that-revolutionized-soca-music-in-1984-perfect-for-this-winters-dancefloors/ |
+| ar-d-092 | Shadow | Sweet Sweet Dreams | 他自己從不加「Mighty」 | 維基條目名稱 Mighty Shadow，Stabroek News 與維基都以 The Mighty Shadow 稱呼，沒有看到他拒用「Mighty」的說法，此句無依據，建議刪除或另查。 | https://en.wikipedia.org/wiki/Mighty_Shadow |
+| ar-d-093 | Sympathy Nervous | Sympathy Nervous | 千崎達也掛吉他與人聲 | Soundohm 寫吉他手為 Tatsuya Chiba，羅馬字對應『千葉達也』較合理而非『千崎達也』；所開頁面都沒有漢字，簡介的漢字與『人聲』分工本層驗不到，建議店主對 Discogs 或原盤版權頁確認 | https://www.soundohm.com/product/vanity-records-3-x-box-se |
+| ar-d-093 | T.Power | The Self Evident Truth of an Intuitive Mind | production 生涯從 UK hardcore 起家，之後轉進 jungle 並簽在 Botchit and Scarper（隱含 1995 年專輯時期簽在該廠牌） | Qobuz 與 Apple Music 都把這張專輯的發行商登錄為 Sound of the Underground（SOUR）；subpac 傳記把 Botchit and Scarper 放在他 1999 年回歸之後。簡介的廠牌敘述承襲英文維基，時序可能不對，建議改為不點名廠牌或改寫 | https://www.Qobuz.com/gb-en/interpreter/t-power/585169 |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

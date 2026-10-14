@@ -1391,3 +1391,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：RAM 的〈Fèy〉遭軍政府禁唱一句（唯一一句政治背景，與歌曲直接相關）；Pink Siifu《NEGRO》的主題（專輯主題）；Rico 2007 MBE 與 2015 年過世；Robert Miles 2017 年過世與排行冠軍（已故者不受在世者成績限制）；Bill Leeb 談 Portion Control（具名音樂人）。
 - 身分：預抓維基作廢——Paul Nagle（愛爾蘭拉力賽副駕駛）、Palais Schaumburg（波昂總理官邸）、RAM（荷蘭 trance DJ）。Photon Inc. 是 DJ Pierre 的化名（MusicBrainz、Discogs 一致）；Quadra 是 Hiroshi Watanabe（非同名攝影師）。P-MODEL 搜尋 9 次，overCapOk（第二源）。
 - 待本機（上線簡介）：Peace Orchestra 發行月份；Pépé Bradock「自營 Kif」與聯名副署查無；Peshay 1995 年空白的原因兩說，建議改中性；Pete Namlook & Mixmaster Morris「流通最廣」查無；R. Carlos Nakai 漏 RIAA 白金；R.N.A. Organism 卡帶寄送經過與 Wax Poetics／NTS 不合；Regis「第一張長篇」查無；Rico 出生地兩說；Robert Miles 全英音樂獎與五百萬張只見維基。
+
+## ar-d-092（2026-10-14）
+
+- 36 位上架（29 full、7 thin：Roberto Musci / Giovanni Venosta、SBTRKT、Sean Deason、Shpongle、Sia、Skee Mask、Skyray）。4 位不寫：SAB、Salaried Man Club、Shiho Yabuki、Soundsmith（事實只有單一來源或同源文案）。
+- 審稿修 9 處：
+  - out-1 審稿 4 處：Roly Porter「第一張成熟的 dubstep 專輯」改「早期成熟的」；Roni Size / Reprazent 刪「前所未有的主流位置」（在世者只留水星獎一處）；S'Express「英國最早推介之一」改「早期」、「最早靠取樣走紅」「最早的商業成功」改「早期」。另撤下 SAB（聲音與身世只有廠牌與店家同源文案）。寫作層不寫 Salaried Man Club（只有單一來源的 industrial 標籤）。
+  - 保留：Sampha《Process》以照顧與失去母親為主題（專輯主題，不寫病況）；Silent Servant 2024 年過世（兩源）；Flying Lotus 談 Samiyam（具名音樂人）；Scanner 停止掃描創作的原因一句。
+  - out-2 審稿 5 處：Shed 刪媒體名（年度專輯一處保留、不具名）；Sly & Robbie「最具影響力之一」改「極具影響力」；Sneaker Pimps「最容易入耳之一」改「容易入耳」；Sophie 刪享年（只寫過世年份）；Source Direct「最有才華之一」改「出色」。寫作層不寫 Shiho Yabuki（只有 NTS 與廠牌同源文案）、Soundsmith（聲音與地位皆無，只有 MusicBrainz）。
+  - 保留：Sly Dunbar 2026 年過世（主線以 WebSearch 核實：Variety、DJ Mag、BrooklynVegan 均報導 2026 年 1 月 26 日過世，正文只寫年份）、Robbie Shakespeare 2021、Shadow 2018、Silent Servant 2024、Sophie 2021；Silent Phase 照研究層更正寫成 Stacey Pullen 的化名（MusicBrainz 關係與維基化名清單）；Paul Mac 談 Severed Heads（具名音樂人）；Sia Billboard 200 冠軍（唯一一處成績）。
+- 身分：主線特注寫 Silent Phase 是 Kirk Degiorgio，研究層以 MusicBrainz 關係與維基化名清單更正為 Stacey Pullen（ar-d-093 另有 Pullen 本人卡，分寫）。Shadow 是千里達的 Mighty Shadow（預抓維基抓到物理詞條）；Space 是法國 Marouani 的團（預抓維基是「空間」）；Soundsmith 網路上多為紐約唱頭廠商，已排除。Sly & Robbie 搜尋 9 次，overCapOk（第二源）。
+- 待本機（上線簡介）：Royal House 取樣來源與 Todd Terry 自述不合；Ruth White〈Litanies of Satan〉長度 6:50／6:53；SAB「2020 年再發」與「一人包辦器樂」不對；Sainkho Namtchylak《Stepmother City》2000／2001；Shadow「SR Records／鼓機」「從不加 Mighty」查無。
