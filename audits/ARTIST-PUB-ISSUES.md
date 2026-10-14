@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1273 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1286 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1229,6 +1229,19 @@
 | ar-d-097 | Drunken Tiger | 위대한 탄생 | 타이거 JK 與 DJ 샤인 的드렁큰 타이거 正規二輯……由도레미미디어發行 | 韓文與漢字直接相鄰處缺少半形空格（『的드렁큰』『由도레미미디어』等），不合現行排版規則；內容本身與 generasia、維基一致。 | https://www.generasia.com/wiki/Drunken_Tiger |
 | ar-d-097 | E.U. | Livin' Large | E.U. 一九八九年二月由 Virgin 發行 | 年月用中文數字，不合現行『年月日一律阿拉伯數字』規則；內容年份 1989 與搜尋摘要一致，但『二月』的月份本層沒有開頁證實。 | https://washingtoncitypaper.com/article/214126/da-oral-history-of-da-butt-put-your-memory-in/ |
 | ar-d-097 | Eve | Let There Be Eve... Ruff Ryders' First Lady | 這張首作的詞全部由她自己寫 | 維基專輯條目文字雖這麼寫，但其曲目 credits 列有 Missy Elliott、DMX、Melvin Smalls 等共同作者，全部自己寫缺乏支持；建議改成『她自己參與寫詞』或刪掉此句 | https://en.wikipedia.org/wiki/Let_There_Be_Eve...Ruff_Ryders%27_First_Lady |
+| ar-d-097 | Freddie Jackson | Rock Me Tonight | 厚實的男中音 | NewsOne 形容他的嗓音是 smooth tenor（男高音），與簡介的男中音不符；嗓音類型單源、未能第二源確認，建議店主改成不指定音域的寫法（例：滑順的嗓音） | https://newsone.com/6873542/freddie-jackson-soundtrack-grown-folks-love/ |
+| ar-d-097 | G-Unit | Beg for Mercy | 原始成員 Tony Yayo 因 2002 年入獄 | 維基 G-Unit 條目寫 Yayo 缺席是 2003 年，與簡介的 2002 年不一致；單源（維基），建議店主本機核對後再決定是否改成不寫年份 | https://en.wikipedia.org/wiki/G-Unit |
+| ar-d-097 | Garnet Mimms & the Enchanters | Cry Baby and 11 Other Hit Songs | Janis Joplin 1970 年的翻唱 | Joplin 版收在她過世後的 1971 年專輯《Pearl》，WAMC 與搜尋摘要皆寫 1971 年；1970 年應為錄音年，建議改成 1971 年或寫『1971 年的翻唱版』 | https://www.wamc.org/2015-07-20/revisiting-the-career-of-gospel-singer-turned-hit-maker-garnet-mimms |
+| ar-d-097 | Garnet Mimms & the Enchanters | Cry Baby and 11 Other Hit Songs | 被視為替 Aretha Franklin 與 Otis Redding 鋪路的深靈魂原點 | 本層找到的可靠來源只稱他是『最早的真正靈魂歌手之一』（AllMusic 經維基、Ed Ward），沒有點名替 Aretha Franklin、Otis Redding 鋪路的出處；建議改為有出處的 Huey 說法或刪除 | https://en.wikipedia.org/wiki/Garnet_Mimms |
+| ar-d-097 | Griselda | WWCD | 團名縮寫是 What Would ChineGun Do | WWCD 是這張首張團體專輯的標題，不是團名「Griselda」的縮寫；維基與 Complex 都把 WWCD 當作專輯名，建議改成『專輯名縮寫』。『指 Benny 已故的兄長 Chine Gun Black』等其餘部分本層未核對 | https://en.wikipedia.org/wiki/Griselda_Records |
+| ar-d-098 | Joe | My Name Is Joe | 並於 2000 年 7 月拿到三白金認證 | Encyclopedia.com 寫專輯一年內達雙白金；搜尋摘要稱最終銷量逾 300 萬張，三白金的時間點（2000 年 7 月，發行約三個月後）與雙白金說法對不上，請本機查 RIAA 認證日期。 | https://www.encyclopedia.com/arts/culture-magazines/joe |
+| ar-d-098 | Juicy J | Stay Trippy | Juicy J 離開 Three 6 Mafia、進 Wiz Khalifa 的 Taylor Gang 後的首張個人作 | 維基寫 Three 6 Mafia 2011 年是暫停活動而非離團；《Stay Trippy》是他的第三張個人錄音室專輯（前兩張為 2002《Chronicles of the Juice Man》與 2009《Hustle Till I Die》），是主流廠牌的首作。請改成『主流廠牌首作』或『第三張個人專輯』。 | https://en.wikipedia.org/wiki/Stay_Trippy |
+| ar-d-098 | K-Ci & JoJo | Love Always | 〈All My Life〉由 JoJo 與 Rory Bennett 合寫、兄弟倆自行製作 | Stereogum 只寫 JoJo 與 Rory Bennett 合寫並製作，K-Ci 主唱，未說兄弟倆共同製作；『自行製作』宜改為『JoJo 與 Rory Bennett 製作』 | https://stereogum.com/2188539/the-number-ones-k-ci-jojos-all-my-life/columns/the-number-ones |
+| ar-d-098 | K-Ci & JoJo | Love Always | 是他們生涯停留最久的冠軍曲 | 本層沒有查到來源支撐『生涯停留最久』，建議店主核對或刪除（目前兩源只確認 3 週冠軍，查無其他冠軍曲可比） | https://en.wikipedia.org/wiki/K-Ci_%26_JoJo |
+| ar-d-098 | Karyn White | Karyn White | 專輯本身更在 R&B 專輯榜連坐七週冠軍並獲白金認證 | 本層未能在兩個可讀來源找到『連坐七週』；白金認證則維基寫白金、encyclopedia.com 寫雙白金，建議店主核對 RIAA 資料庫 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/white-karyn |
+| ar-d-098 | Kurtis Blow | Kurtis Blow | 〈The Breaks〉中段把鼓 break 放到底，日後成為最常被取樣的段落之一 | 查無來源。Songfacts 稱該曲是現場樂手（Bralower、Wolk、Tropea、Miller）演奏、非取樣，頁面未提到被取樣；維基與 Udiscover 提到被取樣的是〈Christmas Rappin'〉（Next〈Too Close〉）與〈If I Ruled the World〉（Nas）。建議刪或改寫。 | https://www.songfacts.com/facts/kurtis-blow/the-breaks |
+| ar-d-098 | Kurupt | Tha Streetz Iz a Mutha | 同年 10 月他一行人在 Echo Sounds 錄音室外遭槍擊，保鑣 Dwayne Dupree 當場身亡；Kurupt 自述錄這張時「又回到幫派狀態，非常低落、憤怒」 | 非事實錯誤，是與本批規則不符：案情細節與暴力事件依本批特注避免；另「四十四萬張」為在世者銷量，也屬避免項。由主線決定是否改寫。 |  |
+| ar-d-098 | Lord Finesse & DJ Mike Smooth | Funky Technician | 1998 年《The Source》列入 100 Best Rap Albums | 只有英文維基《Funky Technician》條目單源，粉絲維基寫成『100 Best Albums』；兩次搜尋與一篇整理《The Source》1998 年 1 月第 100 期榜單的文章都找不到原榜單，榜名與是否存在未能核實。建議改寫或移除。 | https://en.wikipedia.org/wiki/Funky_Technician |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

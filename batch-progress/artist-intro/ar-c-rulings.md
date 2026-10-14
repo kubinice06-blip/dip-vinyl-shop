@@ -1450,3 +1450,16 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：Black Sheep 金唱片、Brian McKnight Hot 100 第 2、C-Murder Billboard 200 第 3、Central Cee 英國專輯榜首、Damian Marley 葛萊美（同一張專輯兩項，算一處）、DEAN 韓國大眾音樂獎（各一處）；DEV LARGE 2015、MF DOOM 2020、DJ Screw 2000 年過世；Capone-N-Noreaga 以「無法全程參與」中性帶過，C-Murder、Boosie、DaBaby、Digga D、Crime Mob、Conway 刑案官司一律未寫。
 - 身分：預抓維基作廢——DEAN（Dean (education)）、Dipset（單曲頁〈Dipset Anthem〉），改查本人與團頁。
 - 待本機（上線簡介與卡池）：BUDDHA BRAND《黒船》實為 1996-12-04 單曲（CTCR-14061），卡片性質待確認；Digga D 上線簡介以 2018 年 Criminal Behaviour Order 為主軸，與不寫刑案的規則相左，建議改寫；Booba《Temps mort》「Lunatic 拆夥後」先後說法不一；C-Murder「逾兩百萬張」與 RIAA 白金不符；Camp Lo 組團年 1995／1994 不一；Control Machete 1996 年份與銷量待核；Cormega 「被踢出 The Firm」與「簽進 Def Jam」先後寫反、「獨立榜第四」查無。
+
+## ar-d-097（2026-10-14）
+
+- 39 位上架（34 full、5 thin：eLZhi and Will Sessions、Father MC、Fergie、Heize、Ho99o9）。1 位不寫：Double X（台灣趙一豪的龐克團；聲音格查無，唯一另一條事實是個人專輯查禁，過不了 thin 門檻）。
+- 嘻哈段 D 至 H 字頭；E.U. 照 go-go、El Michels Affair 照器樂靈魂、Garnet Mimms & the Enchanters 照 1960 年代靈魂樂、Freddie Jackson 照 R&B 寫。
+- 搜尋超額：Double X 多 2 次（追成軍年與專輯年，三說打架未收，無新事實，照齊豫先例）、Fergie 多 1 次（補 legacy，照第二源先例），放行。
+- 2025–26 事實：Freddie Jackson 2026 年 10 月過世——主線 WebSearch 核實（AP 系 WAFB、ABC11、NST、Hello 多源），只寫年份，享年 69／70 兩說故刪；Earl Sweatshirt, MIKE & SURF GANG《POMPEII // UTILITY》（2026）只用補洞稿兩源事實。
+- 審稿修 17 處：
+  - out-1 審稿 7 處：Doechii「最大的啟發」改「重要」；Doug E. Fresh「beatboxing 的開創者」改「先驅」、「史上最常被取樣的歌之一」改「被大量取樣」；Dr. Octagon「九〇年代最佳嘻哈專輯之一」改「常被列進重要榜單」；Drunken Tiger「最早把嘻哈帶進韓國主流之一」改「較早」；E.U.「最早打進特區外電台之一」改「早期」；Fabolous（Nicki Minaj 語）「最穩定的之一」改「一直很穩定」。
+  - out-2 審稿 10 處：Freddie Jackson 刪享年；Garnet Mimms「最早的真正靈魂歌手之一」改「早期」；Giggs「英國最有影響力的 MC 之一」改「極具影響力」；Gravediggaz「開創了 horrorcore」改「重要源頭」；GZA「詞彙量最大的幾位之一」改「名列前茅」、「個人專輯裡最好的一張」改「代表作」；Handsome Boy「最有野心」改「極具野心」；Headie One 刪母親過世（私人逝世細節）與腳踝骨折（傷病）；Heltah Skeltah「最突出」改「突出」；Hieroglyphics（官網自述）「最有影響的貢獻」改「重要貢獻」。
+  - 保留：Doechii 葛萊美最佳饒舌專輯（含「第三位女性」，算一處）、E.U.〈Da Butt〉R&B 榜首（必要例外）、Eve Billboard 200 冠軍、Fergie Hot 100 冠軍、Ghetts MOBO Pioneer Award、Giggs BET 英國類別、Headie One 英國專輯榜冠軍、Heize 音源榜首、Hot Boys Billboard 200 第 5、House of Pain Hot 100 第 3（各一處）；Eazy-E 1995、Gangsta Boo 2023、Sean Price 2015 年過世；Drunken Tiger 的 1992 年洛杉磯暴動背景一句（政治背景上限一句）；Dos Monos 取樣唐鳳的事實照收（中性）；Foxy Brown、Fabolous 引 Nicki Minaj（具名音樂人）。
+- 身分：Double X 是台灣龐克團（非美國同名 rap 團）；GZA/Genius、Dos Monos、E.U. 維基查無，照卡池確認。
+- 待本機（上線簡介與卡池）：Double X 卡池曲風 hiphop／electronic 錯置、簡介「後龐克」查無；Drunken Tiger 簡介韓文與漢字相鄰缺空格；E.U. 簡介年月用中文數字；Eve 簡介「詞全部由她自己寫」與 credits 不合；Freddie Jackson 簡介「男中音」（來源寫 tenor）；G-Unit 簡介 Tony Yayo 入獄年 2002／2003（建議整句刪）；Garnet Mimms 簡介 Janis Joplin 翻唱年 1970／1971、「替 Aretha Franklin 與 Otis Redding 鋪路」查無；Griselda 簡介把 WWCD 寫成團名縮寫、含 Clara Gomez 身故一句（建議刪）；Hot Boys「一週錄完」、Headie One「二十餘人分軌製作」查無來源。
