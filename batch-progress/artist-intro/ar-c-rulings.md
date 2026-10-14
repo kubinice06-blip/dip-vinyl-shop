@@ -1402,3 +1402,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：Sly Dunbar 2026 年過世（主線以 WebSearch 核實：Variety、DJ Mag、BrooklynVegan 均報導 2026 年 1 月 26 日過世，正文只寫年份）、Robbie Shakespeare 2021、Shadow 2018、Silent Servant 2024、Sophie 2021；Silent Phase 照研究層更正寫成 Stacey Pullen 的化名（MusicBrainz 關係與維基化名清單）；Paul Mac 談 Severed Heads（具名音樂人）；Sia Billboard 200 冠軍（唯一一處成績）。
 - 身分：主線特注寫 Silent Phase 是 Kirk Degiorgio，研究層以 MusicBrainz 關係與維基化名清單更正為 Stacey Pullen（ar-d-093 另有 Pullen 本人卡，分寫）。Shadow 是千里達的 Mighty Shadow（預抓維基抓到物理詞條）；Space 是法國 Marouani 的團（預抓維基是「空間」）；Soundsmith 網路上多為紐約唱頭廠商，已排除。Sly & Robbie 搜尋 9 次，overCapOk（第二源）。
 - 待本機（上線簡介）：Royal House 取樣來源與 Todd Terry 自述不合；Ruth White〈Litanies of Satan〉長度 6:50／6:53；SAB「2020 年再發」與「一人包辦器樂」不對；Sainkho Namtchylak《Stepmother City》2000／2001；Shadow「SR Records／鼓機」「從不加 Mighty」查無。
+
+## ar-d-093（2026-10-14）
+
+- 34 位上架（31 full、3 thin：Sympathy Nervous、Terrence Parker、The Hafler Trio）。5 位不寫：Strange Garden、Taichi（只有資料庫風格分類）、Temdendam Suay（聲音查無）、The Beloved（事實全出自維基）、The Martian（只有曲名意象與發行規格）。
+- 審稿修 12 處：
+  - out-1 審稿 6 處：Speedy J「荷比盧最早的 techno 製作人之一」改「早期」；Stardust「French touch 最好的範例之一」改「代表範例」；Susanne Sundfør 刪「挪威音樂圈最核心的人物之一」（在世者只留 Spellemannprisen 一處）；Sven Väth 刪「歐洲最知名的 techno DJ 之一」；Takkyu Ishino「日本最大的室內 rave」改「大型」；Technotronic「new beat 最成功之一」改「代表人物」。寫作層不寫 Strange Garden、Taichi（只有資料庫風格分類）。
+  - 保留：Stardust 全球兩百萬張（唯一一處成績）；Sterling Void 經 Pet Shop Boys 翻唱登英國第 5 名；DJ Deeon 談 Steve Poindexter（具名音樂人）；Technotronic Hot 100 第 2 名（唯一一處）；Sven Väth 雙親從東德到西邊一句（背景，不評價）。
+  - out-2 審稿 5 處：Tetsu Inoue 刪「隱居還是已經過世，沒有人能證實」與追問下落的細節（生死臆測），改寫為「從公眾視野淡出，朋友與廠牌也聯絡不上他」；The Advent「活躍最久、產量最多之一」改「活躍甚久、產量豐富」；The Dust Brothers「最搶手之一」改「搶手」；The Field「並列當年評價最高」改「名列前茅」；The Other People Place 刪「電子音樂最重要的唱片之一」。寫作層不寫 Temdendam Suay（聲音查無）、The Beloved（事實全出自維基）、The Martian（只有曲名意象與發行規格）。
+  - 保留：The Bug《London Zoo》2008 年度榜第一（官方網頁＋維基，媒體不具名）；Ten City 舞曲榜冠軍（唯一一處）；James Stinson 2002 年過世；The Gaslamp Killer 只寫音樂。
+  -   另 Tetsu Inoue 刪減後 171 字低於 full 下限，補一句與細野晴臣、Atom Heart 合組 HAT（ar-d-087 HAT 卡已核實），回到 201 字。
+- 身分：Stacey Pullen 本人卡與 ar-d-092 的 Silent Phase 分寫；Takayuki Shiraishi 即 ar-d-084 BGM 的核心白石隆之；Ten City 與 ar-d-084 Byron Stingily 個人卡分寫；The Martian 與 MusicBrainz 另一位 The Martian（Marlon Grant）不同。System 7 搜尋 10 次、Temdendam Suay 搜尋 10 次，overCapOk（前者補第二源，後者只確認身分且最終不寫）——超兩次的放行限這兩例，不成先例。
+- 待本機（上線簡介）：Sympathy Nervous 成員漢字「千崎達也」與來源不合；T.Power 簽約廠牌時序；Technotronic 簡介寫了歌聲掛名爭議（建議刪）；The Beloved「最早…之一」過強；The Infinity Project「1995 年首張專輯」與 Qobuz 不合；The Other People Place 的年度榜與英國黑膠榜名次查無。
