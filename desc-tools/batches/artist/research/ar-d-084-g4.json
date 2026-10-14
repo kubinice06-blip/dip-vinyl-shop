@@ -1,0 +1,1040 @@
+[
+  {
+    "key": "cecil leuter",
+    "name": "Cecil Leuter",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Cecil Leuter 是法國作曲家 Roger Roger 做電子音樂時用的化名；MusicBrainz 的 Cecil Leuter 條目標註的辨識說明就是 Roger Roger，國別法國。",
+            "src": "https://en.wikipedia.org/wiki/Roger_Roger_(composer)",
+            "src2": "https://musicbrainz.org/ws/2/artist/?query=artist:%22Cecil%20Leuter%22&fmt=json",
+            "from": "bank"
+          },
+          {
+            "f": "Roger Roger 1911 年生、1995 年過世，是法國的輕管弦樂與電影配樂作曲家，也當指揮與樂團領班。",
+            "src": "https://en.wikipedia.org/wiki/Roger_Roger_(composer)",
+            "src2": "https://musicbrainz.org/ws/2/artist/?query=artist:%22Roger%20Roger%22%20AND%20country:FR&fmt=json",
+            "from": "new"
+          },
+          {
+            "f": "二戰後他被倫敦的出版社 Chappell & Co 簽下，替 Chappell Recorded Music Library 擴充目錄，作品主要走圖書館音樂的管道，而不是個別委製。",
+            "src": "https://en.wikipedia.org/wiki/Roger_Roger_(composer)",
+            "src2": "https://mail.spaceagepop.com/roger.htm",
+            "from": "bank"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他替圖書館寫的多是不具名的「庫存音樂」，編制與曲風照用途切換，電子音樂只是其中一條線，用的是另一個名字。",
+            "src": "https://mail.spaceagepop.com/roger.htm",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "電子音樂史作者 Thom Holmes 推測，1970 年 Neuilly 廠牌的《Musique Idiote》是 Roger Roger 第一張以 Moog Modular 合成器寫成的圖書館音樂唱片；曲子很簡單，多由一兩個疊錄的聲部組成。",
+            "src": "https://thomholmes.com/post/the-french-love-their-synthesizers",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的〈Versailles〉成了法國電視上歷任總統的標誌曲，另有數首作品用在影集《The Prisoner》的配樂與 BBC 的測試卡播送。",
+            "src": "https://mail.spaceagepop.com/roger.htm",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "1994 年 Gert-Jan Blom 編的 CD《Grands Travaux》，把他的作品帶給新一代聽眾。",
+            "src": "https://mail.spaceagepop.com/roger.htm",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1976 年的《Tourbillon de Paris》由他自己的曲子以三台合成器演奏，但當時的 mood music 年代已過，專輯很快被遺忘。",
+            "src": "https://mail.spaceagepop.com/roger.htm",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "〈Versailles〉成為法國電視上歷任總統的標誌曲。",
+        "src": "https://mail.spaceagepop.com/roger.htm",
+        "single": true,
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "MusicBrainz 記 Roger Roger 逝於 Deauville，維基與 Presto 記 Paris，TMDB 記 Deauville；地點不一致，facts 只寫年份不寫地點。",
+      "維基與 MusicBrainz 說 Cecil Leuter 是電子音樂專用名，spaceagepop 說他替美國 Major Mood Music 圖書館寫作時用這個名字；facts 採前者（兩源），後者放 notes。",
+      "Discogs 記 Neuilly 廠牌 1970 年才由 Louis Delacour 創立，而卡池專輯年份是 1969；本層不在 facts 寫專輯廠牌，也不寫 Neuilly 與本專輯的關係。"
+    ],
+    "pubIssues": [
+      {
+        "album": "Pop Electronique",
+        "claim": "1960 年代末，他是最早一批動手玩 Moog 的人之一，同輩還有 Pierre Henry 與 Wendy Carlos",
+        "problem": "找不到可開頁的可靠來源支持「最早一批」與這組同輩名單；搜尋只見唱片行文案把他與 Pierre Henry、Jean-Jacques Perrey 並列，未提 Wendy Carlos。Thom Holmes 也只說《Musique Idiote》（1970）他『相信』是 Roger Roger 第一張 Moog Modular 圖書館唱片。建議改成可查證的版本或刪掉同輩名單。",
+        "src": "https://thomholmes.com/post/the-french-love-their-synthesizers"
+      }
+    ],
+    "searches": 6,
+    "failedFetches": 2,
+    "status": "full",
+    "notes": "本位是化名；卡池專輯 Pop Electronique（1969）確認為 Roger Roger 的電子專輯，無同名混卡。搜尋 2 次（Roger Roger 與 Cecil Leuter 英文、法文各一），開頁 4 次（thomholmes、MusicBrainz 兩次、spaceagepop）；失敗請求 2 次未計（forcedexposure 頁面空白、progarchives 403）。判定：三格都只有低風險單源或兩源；legacy 的〈Versailles〉與《Grands Travaux》只見 spaceagepop 單源（站為私人網站，非獨立多源），寫作層用語宜保守。未收：『超過 50 部廣播節目、500 部以上電影』（維基『據稱』數字，單源）；『Les Enfants du Paradis 啞劇段落配器』（只見搜尋摘要）；『Cecil Leuter 名字來自祖母』（單一來源摘要）；《TVMusic 101》與 Nino Nardini 1969 年合作（只見搜尋摘要，商家頁）；出生地魯昂與逝世地（MusicBrainz 單源，逝世地各源不一致）。Neuilly 與本專輯：Discogs 記 Neuilly 1970 年創立，晚於卡池年份 1969，專輯原盤廠牌應另查，寫作層不要寫專輯在 Neuilly 發行。"
+  },
+  {
+    "key": "charles dodge",
+    "name": "Charles Dodge",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Charles Dodge 是美國作曲家，愛荷華州 Ames 出身，以電子音樂、特別是電腦音樂見稱。",
+            "src": "https://en.wikipedia.org/wiki/Charles_Dodge_(composer)",
+            "single": true,
+            "from": "bank"
+          },
+          {
+            "f": "他 1964 年在愛荷華大學拿學士，之後在哥倫比亞大學取得碩士（1966）與博士（1970），師從 Jack Beeson、Chou Wen-chung、Otto Luening 與 Vladimir Ussachevsky，並在哥倫比亞—普林斯頓電子音樂中心活動。",
+            "src": "https://en.wikipedia.org/wiki/Charles_Dodge_(composer)",
+            "single": true,
+            "from": "bank"
+          },
+          {
+            "f": "1969 至 1970 年他在普林斯頓大學跟 Godfrey Winham 學電腦音樂；他在哥倫比亞與普林斯頓期間，也同時在貝爾實驗室做自己的音樂。",
+            "src": "https://en.wikipedia.org/wiki/Charles_Dodge_(composer)",
+            "src2": "https://info.umkc.edu/specialcollections/archives/1056",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Earth's Magnetic Field》（1970）把地球磁場的資料對應成聲音：一年份共 2920 筆磁場讀數，對應到四個八度、45 個音，讀數之間的內插再決定速度、力度與音域。",
+            "src": "https://info.umkc.edu/specialcollections/archives/1056",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "《Speech Songs》以電腦分析人聲再重新合成；Tom Johnson 1972 年的評述說，合成的男聲念短句清楚、唱的音準比他聽過的任何人類歌手都準，能不換氣一直唱下去，但缺少人聲的表情幅度。",
+            "src": "https://editions75.com/tvonm/articles/1972/charles-dodge-the-computer-sings.html",
+            "src2": "https://en.wikipedia.org/wiki/Charles_Dodge_(composer)",
+            "from": "new"
+          },
+          {
+            "f": "《Any Resemblance is Purely Coincidental》（1978）把現場鋼琴演奏，跟一段經數位處理的 Enrico Caruso 演唱 Leoncavallo 詠嘆調〈Vesti la giubba〉的錄音疊在一起。",
+            "src": "https://en.wikipedia.org/wiki/Charles_Dodge_(composer)",
+            "single": true,
+            "from": "bank"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "維基稱他是 1970 年代電腦音樂創作的領導革新者，有別於當時以類比電子為常態的作法。",
+            "src": "https://en.wikipedia.org/wiki/Charles_Dodge_(composer)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他在 Brooklyn College 創立電腦音樂中心，1978 年成為該校正式設立的中心；他與人合寫的教科書《Computer Music: Synthesis, Composition, and Performance》在維基上被形容為廣受好評。",
+            "src": "https://en.wikipedia.org/wiki/Charles_Dodge_(composer)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Tom Johnson 1972 年寫道，電腦人聲比電影《2001 太空漫遊》裡的 HAL 更像人，只限短句；他把 Dodge 的作品看作對有限人聲可能性一次討人喜愛又有發明的探索。",
+            "src": "https://editions75.com/tvonm/articles/1972/charles-dodge-the-computer-sings.html",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1970 年 Nonesuch 以編號 H-71250 發行《Earth's Magnetic Field》；同年 Nonesuch／Elektra 另出他的《Computer Music》（編號 71245），收錄〈Changes〉。",
+            "src": "https://www.discogs.com/master/2072326-Charles-Dodge-Earths-Magnetic-Field",
+            "src2": "https://en.wikipedia.org/wiki/Charles_Dodge_(composer)",
+            "from": "bank"
+          },
+          {
+            "f": "1990 年代初他轉往 Dartmouth College，擔任訪問教授 18 年，2009 年 5 月退休。",
+            "src": "https://en.wikipedia.org/wiki/Charles_Dodge_(composer)",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1970 年，《Earth's Magnetic Field》由 Nonesuch 發行。",
+        "src": "https://www.discogs.com/master/2072326-Charles-Dodge-Earths-Magnetic-Field",
+        "src2": "https://info.umkc.edu/specialcollections/archives/1056",
+        "from": "bank"
+      }
+    ],
+    "conflicts": [
+      "維基寫《Speech Songs》為 1974 年，Tom Johnson 1972 年 12 月的評述已在談這組作品；年份不一致，facts 不寫 Speech Songs 的年份。",
+      "維基寫他 1970–1977 年在哥倫比亞任教，NYPL 與 last.fm 摘要寫 1970–1980；不一致，facts 不寫任教年份。",
+      "上線簡介與事實庫無其他衝突；簡介寫『1974 年的《Speech Songs》』，見 pubIssues。"
+    ],
+    "pubIssues": [
+      {
+        "album": "Earth's Magnetic Field",
+        "claim": "1974 年的《Speech Songs》換成分析並重新合成人聲",
+        "problem": "維基標 1974 年，但 Tom Johnson 1972 年 12 月的評述已在談 Speech Songs（貝爾實驗室語音合成），作品完成年與發行年可能不同；建議簡介刪掉年份或改成『隨後的《Speech Songs》』。",
+        "src": "https://editions75.com/tvonm/articles/1972/charles-dodge-the-computer-sings.html"
+      }
+    ],
+    "searches": 5,
+    "failedFetches": 3,
+    "status": "thin",
+    "notes": "無同名混卡（卡池只有《Earth's Magnetic Field》，確認是電腦音樂作曲家 Charles Dodge）。搜尋 3 次、開頁 2 次（editions75、umkc）；失敗請求 3 次未計（NASA APPEL 301 轉址、archives.nypl.org 與 nypl.org 頁面空白）。legacy 是薄的：沒有後輩點名，也沒有可開頁證實的共識評價。未收：『《紐約時報》稱 Earth's Magnetic Field 為七〇年代十大重要作品之一』只見搜尋摘要、維基頁預抓文也沒有、umkc 頁面查無，不收，若寫作層需要請主線另查；NASA APPEL 訪談（Dodge 說他利用在貝爾實驗室聽到的語音研究做 Speech Songs）只見搜尋摘要；生年 1942 年 6 月 5 日 Ames（維基、wikidata 同源，last.fm 為維基衍生，NYPL 頁只見摘要）屬高風險但無獨立第二源，facts 因此只寫出身地不寫生年，生年請寫作層略過；『NYPL 稱 Brooklyn College 中心為公立機構最早的電腦音樂中心之一』與『1993 年轉 Dartmouth』只見搜尋摘要，未收；任教 Columbia 年份各源不一致，未收。『2920 筆讀數／45 個音』只見 umkc 單頁（撰寫者 Eli Hougland 的校館藏部落文），標單源。"
+  },
+  {
+    "key": "chase & status",
+    "name": "Chase & Status",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Chase & Status 是英國倫敦的 drum and bass 二人組，成員是 Saul Milton（Chase）與 Will Kennard（Status），2003 年組成。",
+            "src": "https://en.wikipedia.org/wiki/Chase_%26_Status",
+            "src2": "https://www.dancemusicnw.com/?p=98656",
+            "from": "new"
+          },
+          {
+            "f": "兩人 1990 年代末在倫敦經由一起去 rave 的朋友認識，後來在曼徹斯特重逢，才開始認真做音樂；起初靠辦夜店、跟唱片行搭線，之後覺得光當 DJ 不夠，便轉向自己做曲子。",
+            "src": "https://www.newwavemagazine.com/single-post/what-came-before-what-s-happening-now-and-what-s-coming-next-chase-and-status-interview",
+            "src2": "https://www.dancemusicnw.com/?p=98656",
+            "from": "new"
+          },
+          {
+            "f": "兩人都沒有學過音樂，大學對他們只是過渡，後來都離校全心做音樂。",
+            "src": "https://www.dancemusicnw.com/?p=98656",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他們少年時被海盜電台與早期 jungle、hardcore 吸引；Will 迷 hip-hop 與 turntablism，Saul 迷 Nirvana 與 grunge。",
+            "src": "https://www.newwavemagazine.com/single-post/what-came-before-what-s-happening-now-and-what-s-coming-next-chase-and-status-interview",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們的音樂以 drum and bass 為主，帶有 big beat 與 hip-hop 的成分。",
+            "src": "https://en.wikipedia.org/wiki/Chase_%26_Status",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "兩人都說對自己影響最深的是 The Prodigy，說這個團把 jungle、drum and bass 那種聲音和 rave 混在一起，帶到另一個層次。",
+            "src": "https://www.newwavemagazine.com/single-post/what-came-before-what-s-happening-now-and-what-s-coming-next-chase-and-status-interview",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他們合作過的人從 Plan B、CeeLo Green、Rihanna 到 Stormzy。",
+            "src": "https://en.wikipedia.org/wiki/Chase_%26_Status",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2024 年的 BRIT Awards，Chase & Status 獲得年度製作人（Producer of the Year，得獎）。",
+            "src": "https://en.wikipedia.org/wiki/Chase_%26_Status",
+            "src2": "https://www.musicradar.com/news/chase-and-status-brit-awards",
+            "from": "new"
+          },
+          {
+            "f": "他們經營獨立廠牌 MTA Records；Will Kennard 2014 年創辦 ELAM（East London Arts and Music）。",
+            "src": "https://en.wikipedia.org/wiki/Chase_%26_Status",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2004 年，經 DJ Zinc 的 Bingo Beats 廠牌發行的〈Love's Theme〉在 BBC Radio 1Xtra 開始被播放。",
+            "src": "https://en.wikipedia.org/wiki/Chase_%26_Status",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "《No More Idols》（2011）收有 Dizzee Rascal 參與的〈Heavy〉，單曲有〈Let You Go〉與〈Blind Faith〉。",
+            "src": "https://en.wikipedia.org/wiki/Chase_%26_Status",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "2018 年他們先暫停現場樂團，怕變得老套；2022 年的《What Came Before》則想做得「更大」，不只是夜店與 DJ 文化，並回到能轉成現場樂團的作法。",
+            "src": "https://www.newwavemagazine.com/single-post/what-came-before-what-s-happening-now-and-what-s-coming-next-chase-and-status-interview",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2003 年，Saul Milton 與 Will Kennard 組成 Chase & Status。",
+        "src": "https://en.wikipedia.org/wiki/Chase_%26_Status",
+        "src2": "https://www.dancemusicnw.com/?p=98656",
+        "from": "new"
+      },
+      {
+        "f": "2024 年獲 BRIT Awards 年度製作人（得獎）。",
+        "src": "https://en.wikipedia.org/wiki/Chase_%26_Status",
+        "src2": "https://www.musicradar.com/news/chase-and-status-brit-awards",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "認識的時間地點：維基寫兩人原本在倫敦由共同朋友介紹、後在曼徹斯特求學時重逢；維基導言與 University Observer 摘要寫『在曼徹斯特大學認識』；New Wave 訪談（Milton 本人說這是常見誤傳）與 Dance Music Northwest 寫 1997 年前後在倫敦就認識。facts 採倫敦先認識、曼徹斯特重逢的版本，不寫確切年份。"
+    ],
+    "pubIssues": [],
+    "searches": 6,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "無同名混卡（卡池《No More Idols》2011 為英國二人組）。搜尋 2 次、開頁 4 次（維基導言被預抓截斷，另開頁一次補查早期生涯與 No More Idols；newwavemagazine；dancemusicnw；musicradar）；失敗請求 1 次未計（universityobserver.ie 503）。事實庫為空，三格全靠補查。在世者規則：榜單、銷量、認證一律未收（No More Idols 首週專輯榜與金唱片認證、2 Ruff Vol. 1 四首單曲同時進英國前 40、〈Backbone〉英國冠軍、2007–2009 年三支舞曲榜冠軍，皆為榜單，避免）；『2008 年首張專輯 More Than Alot』屬出道作，只見維基單源，不收；『2025 年 Kennard 獲 MBE』只見維基單源（搜尋未見官方榮譽名單），且為新近事實，不收；ELAM 2014 年創辦只見維基單源，標 single。『Prodigy 為影響』在維基內文被標需要出處，故此條只引訪談。"
+  },
+  {
+    "key": "cheb khaled & safy boutella",
+    "name": "Cheb Khaled & Safy Boutella",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Khaled 1960 年 2 月 29 日生於阿爾及利亞 Oran 一帶的 Sidi-El-Houari 區，名字前的 Cheb 是 raï 男歌手常用的稱號。",
+            "src": "https://en.wikipedia.org/wiki/Khaled_(musician)",
+            "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/khaled",
+            "from": "new"
+          },
+          {
+            "f": "Khaled 十四歲左右開始錄音，之後離家組了 Five Stars，在婚禮、派對與夜店演出；他愛摩洛哥音樂與 Elvis Presley，後來製作人 Rachid Baba Ahmed 把他的音樂推向流行，加進合成器與吉他。",
+            "src": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/khaled",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Safy Boutella 是阿爾及利亞的音樂人、編曲家、作曲家與製作人，畢業於 Berklee 音樂學院；1981 年從美國回國後，他在阿爾及利亞辦地下演奏會，發展以複合節奏、融合北非、東方與西方聲音的音樂。",
+            "src": "https://en.wikipedia.org/wiki/Safy_Boutella",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Kutché》是 raï 專輯：電子鍵盤、合成器與 Linn 9000 鼓機程式，搭配手風琴、bendir、darbouka、tar、oud 與吉他，另有薩克斯風、小號與小提琴；編制名單裡 Boutella 負責音樂構想與編曲。",
+            "src": "https://en.wikipedia.org/wiki/Kutch%C3%A9",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "《Kutché》1987 至 1988 年在巴黎 Artistic Palace 與倫敦 Paradise 錄音，1988 年由 Zone Music 發行，製作人是 Martin Meissonnier 與 Safy Boutella；法國國家圖書館的錄音目錄同樣記為 1988 年。",
+            "src": "https://en.wikipedia.org/wiki/Kutch%C3%A9",
+            "src2": "https://catalogue.bnf.fr/ark:/12148/cb44267696t",
+            "from": "new"
+          },
+          {
+            "f": "標題曲〈Kutché〉翻自摩洛哥流行歌〈Moul el Koutchi〉，〈La Camel〉翻自 Cheikha Rimitti，〈Chebba〉翻自 Ahmed Zergui；〈Baroud〉與〈Chab Rassi〉等是 Khaled 與 Boutella 編曲的傳統曲目。",
+            "src": "https://en.wikipedia.org/wiki/Kutch%C3%A9",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Khaled 把 funk、hip-hop、reggae、salsa 與法國香頌融進 raï，同時保留它的阿拉伯特色。",
+            "src": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/khaled",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1985 年，Khaled 在奧蘭舉行的首屆官方 raï 音樂節上被加冕為「raï 之王」。",
+            "src": "https://en.wikipedia.org/wiki/Khaled_(musician)",
+            "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/khaled",
+            "from": "new"
+          },
+          {
+            "f": "《Kutché》讓 Khaled 在法國的名聲擴大，他不久後定居法國；日後他成為 raï 在阿爾及利亞境外最知名的歌手之一，Boutella 則在歐洲繼續走爵士樂手的路。",
+            "src": "https://en.wikipedia.org/wiki/Kutch%C3%A9",
+            "src2": "https://en.wikipedia.org/wiki/Khaled_(musician)",
+            "from": "new"
+          },
+          {
+            "f": "1980 年代末阿爾及利亞局勢緊張，Khaled 與許多阿爾及利亞音樂人前往巴黎；流亡讓這些音樂人用上更好的錄音室、有更大的創作自由，這也改變了 raï 的面貌。",
+            "src": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/khaled",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Boutella 日後替 Khaled、Djamel Allam 等人編曲，並替超過七十部電影配樂；2001 年的《La Source》演出在阿爾及爾奧林匹克體育場面對約 9 萬名觀眾。",
+            "src": "https://en.wikipedia.org/wiki/Safy_Boutella",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "1985 年，Khaled 在奧蘭的 raï 音樂節被加冕為「raï 之王」。",
+        "src": "https://en.wikipedia.org/wiki/Khaled_(musician)",
+        "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/khaled",
+        "from": "new"
+      },
+      {
+        "f": "1988 年，Khaled 與 Safy Boutella 發行《Kutché》，是兩人唯一的合作專輯。",
+        "src": "https://en.wikipedia.org/wiki/Kutch%C3%A9",
+        "src2": "https://catalogue.bnf.fr/ark:/12148/cb44267696t",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Safy Boutella 維基條目傳記段寫 1986 年與 Khaled 發行《Kutché》，Kutché 維基條目與法國國家圖書館目錄寫 1988 年，encyclopedia.com 的作品表寫 1989 年；採 1988（維基專輯條目＋法國國家圖書館兩源），不寫 1986 或 1989。",
+      "AllMusic 對《Kutché》的星等：Kutché 維基條目寫 4.5 星（Bob Tarte 稱其為 raï 專輯立下高標準），搜尋摘要寫 1.5 星；AllMusic 雲端擋、無法開頁核對，facts 一律不收評分與評語。",
+      "上線簡介與以上兩份來源在已寫的事實上無衝突。"
+    ],
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "同名確認：卡池只有《Kutché》（1988），指 Cheb Khaled 與 Safy Boutella 的聯名，無混卡。搜尋 3 次、開頁 4 次（Kutché 維基、Khaled 維基、法國國家圖書館目錄、encyclopedia.com）；Safy Boutella 維基為預抓。Khaled 只寫音樂。未收：Khaled 的銷量與金氏紀錄（在世者數字，避免）；『Fnac－Le Monde 百大專輯』只見演唱會網站摘要（宣傳文案）；『1985 年七月阿爾及爾青年音樂節』由 Hosni Snoussi 邀請，與奧蘭 raï 音樂節的先後各源說法不同，只收奧蘭加冕這一條；Khaled 搬到法國的原因（Britannica 摘要提伊斯蘭極端分子壓力，encyclopedia.com 寫局勢動盪）各源不一，facts 採動盪寫法並放低；Boutella 生年（維基 1950、法國國家圖書館目錄也記 1950）本位不用；『Boutella 七十部以上電影配樂、9 萬人』數字為維基單源，Boutella 這條 legacy 為單源，寫作層宜保守。維基 Safy Boutella 與 Kutché、Khaled 條目屬同一來源家族，非獨立；《Kutché》1988 年有維基＋法國國家圖書館兩源。法國國家圖書館目錄的廠牌為 Sony 旗下 Pomme Music，與維基的 Zone Music 是不同版本的發行，寫作層不要把兩者混寫。"
+  },
+  {
+    "key": "chez damier",
+    "name": "Chez Damier",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Chez Damier 本名 Anthony Pearson，在芝加哥長大，11 歲就在唱片行工作。",
+            "src": "https://www.mdmarchive.co.uk/artefact/5723/The-Roadhouse-Flyer-2010",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他自己說，芝加哥教他音樂、底特律教他技術面、紐約教他怎麼理解音樂，這三座城是他的「大學」。",
+            "src": "https://ra.co/exchange/467",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "1987 年他與 Alton Miller 等人在底特律開了 Music Institute 俱樂部，讓 D-Wynn、Juan Atkins、Derrick May 等新銳 DJ 有地方演出，想和芝加哥的 Warehouse、紐約的 Paradise Garage 較量。",
+            "src": "https://ra.co/exchange/467",
+            "src2": "https://www.mdmarchive.co.uk/artefact/5723/The-Roadhouse-Flyer-2010",
+            "from": "new"
+          },
+          {
+            "f": "他在底特律曾替 Kevin Saunderson 管理 KMS 廠牌與錄音室。",
+            "src": "https://www.mdmarchive.co.uk/artefact/5723/The-Roadhouse-Flyer-2010",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他看重深度與打動人的音樂，用一首曲子能不能觸動靈魂來衡量它。",
+            "src": "https://ra.co/exchange/467",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "認識 Ron Trent 之前，他已在 KMS 做過三張 EP：《Can You Feel It》《I Never Knew Love》與《Untitled》。",
+            "src": "https://pt-br.ra.co/reviews/20708",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他自己的人聲常帶 ad-lib，替曲子添上態度；Resident Advisor 形容他是這組搭檔裡的「精神哲學家」，Ron Trent 則是把聲音合成出來的人。",
+            "src": "https://pt-br.ra.co/reviews/20708",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Mixmag 寫道，他與 Ron Trent 的 Prescription 和 Larry Heard、Jamie Principle 並列，做出芝加哥最好的一批 deep house；Prescription 與子廠牌 Balance 發行過 Derrick Carter、Romanthony 與 Moodymann 等人的作品。",
+            "src": "https://mixmag.net/read/ron-trents-prescription-anthology-finally-nears-release-news",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Prescription 常被視為 deep house 的藍本，也被廣泛提為重大影響。",
+            "src": "https://www.mdmarchive.co.uk/artefact/5723/The-Roadhouse-Flyer-2010",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "2017 年 2 月，Rush Hour 出版六張黑膠的盒裝《Prescription: Word, Sound & Power》；Resident Advisor 稱它「essential」，說裡面的音樂「聽起來仍然鮮活」。",
+            "src": "https://pt-br.ra.co/reviews/20708",
+            "src2": "https://mixmag.net/read/ron-trents-prescription-anthology-finally-nears-release-news",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1993 年，Chez Damier 與 Ron Trent 成立 Prescription Records。",
+            "src": "https://mixmag.net/read/ron-trents-prescription-anthology-finally-nears-release-news",
+            "src2": "https://pt-br.ra.co/reviews/20708",
+            "from": "new"
+          },
+          {
+            "f": "1993 至 1995 年是他與 Ron Trent 合作最多產、最受稱道的時期；Prescription 結束後，他全力經營 Balance，Ron Trent 則留在 Prescription。",
+            "src": "https://ra.co/exchange/467",
+            "src2": "https://mixmag.net/read/ron-trents-prescription-anthology-finally-nears-release-news",
+            "from": "new"
+          },
+          {
+            "f": "2000 年代他有一段長時間離開音樂，直到 house 再度興起才回來。",
+            "src": "https://ra.co/exchange/467",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1987 年，他在底特律與人合開 Music Institute 俱樂部。",
+        "src": "https://ra.co/exchange/467",
+        "src2": "https://www.mdmarchive.co.uk/artefact/5723/The-Roadhouse-Flyer-2010",
+        "from": "new"
+      },
+      {
+        "f": "1993 年，與 Ron Trent 成立 Prescription Records。",
+        "src": "https://mixmag.net/read/ron-trents-prescription-anthology-finally-nears-release-news",
+        "src2": "https://pt-br.ra.co/reviews/20708",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "事實庫的 MusicBrainz 條目另有一個 Noni 實體（辨識說明為『US techno producer Chez Damier』），目錄與本人實體不互通；本層以 KMS 12 吋《Can You Feel It》（1992）對應的 Chez Damier 為準，與 Resident Advisor 評論所列 KMS 三張 EP 一致。",
+      "Balance 廠牌是否由兩人共同創立與創立年份，各源不一致（Moovin 稱兩人，Traxsource 與 Sound Shelter 摘要指 Damier 個人經營）；facts 只寫『Prescription 子廠牌 Balance，Prescription 結束後由 Damier 經營』。",
+      "事實庫該筆研究稿只有 MusicBrainz 目錄覆核，與簡介無衝突，沒有可用的人物事實。"
+    ],
+    "pubIssues": [],
+    "searches": 6,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "同名確認：卡池只有 1992 年 KMS《Can You Feel It》，Resident Advisor 評論所列 KMS 三張 EP 含此張，確認是 Chicago 出身的 Chez Damier。事實庫為空，三格全靠補查。搜尋 1 次、開頁 5 次（ra.co exchange、mdmarchive、mixmag、ra.co 評論、noods——後三者與 Chez N Trent 共用，兩位各記一次）；失敗請求 1 次未計（soundshelter 404）。mdmarchive 是英國 2010 年一場活動傳單的存檔頁，性質接近宣傳文案，故其單源條目全標 single 且寫作層宜保守，『11 歲在唱片行工作』『本名』只此一源。未收：『Music Institute 被部分人認為助長了 techno』（各源措辭模糊）；『1997 年 Balance 系列 EP 後簽法國廠牌 Distance』（只見 Traxsource 搜尋摘要）；『KMS049 是他的作品』（只見 mdmarchive 單源，且與 12 吋《Can You Feel It》KMS 035 的編號關係沒查，不收）。"
+  },
+  {
+    "key": "chez n trent",
+    "name": "Chez N Trent",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Chez N Trent（來源也寫 Chez-N Trent）是 Chez Damier 與 Ron Trent 的二人組。",
+            "src": "https://mixmag.net/read/ron-trents-prescription-anthology-finally-nears-release-news",
+            "src2": "https://noodsradio.com/editorial/ron-trent-in-20-tracks",
+            "from": "new"
+          },
+          {
+            "f": "Ron Trent 是芝加哥人，十三、四歲就錄下芝加哥經典〈Altered States〉，1990 年 17 歲正式出道；Chez Damier 也在那個年紀已活躍於俱樂部與唱片行。",
+            "src": "https://noodsradio.com/editorial/ron-trent-in-20-tracks",
+            "src2": "https://pt-br.ra.co/reviews/20708",
+            "from": "new"
+          },
+          {
+            "f": "兩人 1992 年底或 1993 年初在底特律 Kevin Saunderson 的 KMS 錄音室相識，當時 Damier 在那裡工作；他們夜裡在錄音室錄音，Saunderson 把成果之一〈The Choice〉在 1993 年發在自己的 KMS 廠牌。",
+            "src": "https://noodsradio.com/editorial/ron-trent-in-20-tracks",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "Damier 說，KMS 後來走向結束，他們跟 Saunderson 談定接手他的錄音室，並住在裡面。",
+            "src": "https://mixmag.net/read/ron-trents-prescription-anthology-finally-nears-release-news",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Resident Advisor 形容 Ron Trent「把聲音合成出來」，Damier 是「精神哲學家」；兩人的配方是爵士感的 pad、夢幻氛圍、手鼓與深沉的低頻。",
+            "src": "https://pt-br.ra.co/reviews/20708",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "〈The Choice〉裡有 Damier 自己的人聲，加上一種打嗝般的效果；Noods Radio 說這首結合他們的芝加哥與底特律底子，帶一點紐澤西 garage 的搖擺。",
+            "src": "https://pt-br.ra.co/reviews/20708",
+            "src2": "https://noodsradio.com/editorial/ron-trent-in-20-tracks",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Resident Advisor 寫道，兩人想重現他們認為 1980 年代之後已淡去的芝加哥舞曲黃金歲月，並把底特律、芝加哥與紐約的 house 融成向美國黑人靈魂樂致敬的音樂。",
+            "src": "https://pt-br.ra.co/reviews/20708",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Ron Trent 談 Prescription 的目標是「raise the bar」，把芝加哥與中西部音樂的音質標準拉高；Mixmag 把 Prescription 與 Larry Heard、Jamie Principle 並列為芝加哥最好的一批 deep house。",
+            "src": "https://mixmag.net/read/ron-trents-prescription-anthology-finally-nears-release-news",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "2017 年 2 月 Rush Hour 出版六張黑膠的盒裝《Prescription: Word, Sound & Power》，收錄署名 Chez-N Trent 的〈The Choice〉與〈Don't Try It〉。",
+            "src": "https://mixmag.net/read/ron-trents-prescription-anthology-finally-nears-release-news",
+            "src2": "https://pt-br.ra.co/reviews/20708",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1993 年，兩人成立 Prescription Records，作為他們合作作品的歸處；Prescription 結束後 Damier 接手子廠牌 Balance，Trent 留在 Prescription。",
+            "src": "https://mixmag.net/read/ron-trents-prescription-anthology-finally-nears-release-news",
+            "src2": "https://noodsradio.com/editorial/ron-trent-in-20-tracks",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1993 年，Chez-N Trent 的〈The Choice〉在 KMS 發行。",
+        "src": "https://noodsradio.com/editorial/ron-trent-in-20-tracks",
+        "from": "new",
+        "single": true
+      },
+      {
+        "f": "1993 年，兩人成立 Prescription Records。",
+        "src": "https://mixmag.net/read/ron-trents-prescription-anthology-finally-nears-release-news",
+        "src2": "https://pt-br.ra.co/reviews/20708",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "兩人『第一首合作曲』：Resident Advisor 評論寫〈Don't Try It〉是他們第一首一起做的曲子，Noods Radio 寫〈The Choice〉是在 KMS 錄音室做出的第一批成果；各說各話，facts 都不寫『第一首』。",
+      "事實庫研究稿只有 MusicBrainz 目錄覆核（無任何 Album）與一筆 iTunes 1994 年《Untitled》EP（兩人隔年另立廠牌後的作品，已被駁回），沒有可用的人物事實。",
+      "Ron Trent 錄〈Altered States〉時的年紀：Noods 寫約 13 或 14 歲、Resident Advisor 寫 14 歲；facts 寫『十三、四歲』。"
+    ],
+    "pubIssues": [],
+    "searches": 4,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "同名確認：卡池只有 1993 年《The Choice》（KMS 051），確認是 Chez Damier 與 Ron Trent 二人組，非他人。搜尋 1 次、開頁 3 次（Mixmag、Resident Advisor 評論、Noods Radio，與 Chez Damier 共用；另 mdmarchive 一頁共用）；失敗請求 1 次未計（soundshelter 404）。事實庫為空，三格全靠補查。未收：Ron Trent 個人的後續生涯與其他廠牌（超出本團範圍）；盒裝出版日期只收『2017 年 2 月』（Resident Advisor 評論）與 Mixmag 2016 年 12 月預告，沒收確切日期；Rush Hour 商品頁與 Rubadub 商店頁只當搜尋線索，不當來源。Mixmag 與 Resident Advisor、Noods 對兩人的稱讚多為編輯語氣，寫作層用『某媒體稱』或具名寫法。 〈The Choice〉1993 年在 KMS 發行只見 Noods 單源（mdmarchive 只說兩人在 KMS 發行〈The Choice〉與〈Don't Try It〉，無年份），卡池年份同為 1993。"
+  },
+  {
+    "key": "chicane",
+    "name": "Chicane",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Chicane 是英國音樂人 Nick Bracegirdle 的藝名；他小時候受過古典吉他與鋼琴訓練，最早的電子音樂啟蒙是 Jean Michel Jarre、Vangelis，以及合成流行先驅 Vince Clarke。",
+            "src": "https://en.wikipedia.org/wiki/Chicane_(musician)",
+            "src2": "https://909originals.com/2025/11/25/chicane-chats-to-909originals-about-his-thirty-year-career-in-music/",
+            "from": "new"
+          },
+          {
+            "f": "他 12 歲前後就已在錄音室做音樂，並把 demo 寄給唱片公司。",
+            "src": "https://en.wikipedia.org/wiki/Chicane_(musician)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他不是 DJ 出身，而是來自製作人與樂團圈子，後來因為帶整團巡迴太貴才開始 DJ；維基也指出，他的舞曲製作讓他一直被誤認為 DJ。",
+            "src": "https://909originals.com/2025/11/25/chicane-chats-to-909originals-about-his-thirty-year-career-in-music/",
+            "src2": "https://en.wikipedia.org/wiki/Chicane_(musician)",
+            "from": "new"
+          },
+          {
+            "f": "他童年的暑假常在英國懷特島度過；他說〈Offshore〉寫的是懷特島夏末、海灘上最後一個孩子，後來與 Ibiza 的連結是外界的「荒謬包裝」。",
+            "src": "https://909originals.com/2025/11/25/chicane-chats-to-909originals-about-his-thirty-year-career-in-music/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他最初兩張專輯與第四張《Giants》以氛圍感的旋律與多變的情緒、速度見稱；《Far from the Maddening Crowds》被形容為「平凡一天的配樂」。",
+            "src": "https://en.wikipedia.org/wiki/Chicane_(musician)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他說自己的靈感不是來自舞曲，而是電影配樂與 Brian Eno、Trevor Horn 這類音樂人；他寫東西以旋律為先、寫給自己聽。",
+            "src": "https://en.wikipedia.org/wiki/Chicane_(musician)",
+            "src2": "https://909originals.com/2025/11/25/chicane-chats-to-909originals-about-his-thirty-year-career-in-music/",
+            "from": "new"
+          },
+          {
+            "f": "他說〈Offshore〉是一首 down-tempo 唱片而不是舞曲，在當時改變了類型的走向。",
+            "src": "https://909originals.com/2025/11/25/chicane-chats-to-909originals-about-his-thirty-year-career-in-music/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "維基稱《Far from the Maddening Crowds》至今仍被 trance 圈視為開創性的作品，〈Offshore〉與這張首作都被視為早期關鍵的 trance 發行。",
+            "src": "https://en.wikipedia.org/wiki/Chicane_(musician)",
+            "src2": "https://en.wikipedia.org/wiki/Far_from_the_Maddening_Crowds",
+            "from": "new"
+          },
+          {
+            "f": "909originals 把他列為 1990 年代中期 Balearic 風格 trance 的樣板人物，並舉〈Offshore〉〈Sunstroke〉〈Saltwater〉為例。",
+            "src": "https://909originals.com/2025/11/25/chicane-chats-to-909originals-about-his-thirty-year-career-in-music/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "《Far from the Maddening Crowds》曾因授權問題被擱置，直到 2007 年 10 月 18 日才重發，並加進〈Offshore 2007〉新混音。",
+            "src": "https://en.wikipedia.org/wiki/Far_from_the_Maddening_Crowds",
+            "src2": "https://en.wikipedia.org/wiki/Chicane_(musician)",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Far from the Maddening Crowds》1996 至 1997 年主要在他位於父母家的個人錄音室 Modena One 錄成，1997 年 10 月 20 日由 Xtravaganza Recordings 發行；單曲〈Offshore〉1996 年 12 月先出。",
+            "src": "https://en.wikipedia.org/wiki/Far_from_the_Maddening_Crowds",
+            "src2": "https://en.wikipedia.org/wiki/Chicane_(musician)",
+            "from": "bank"
+          },
+          {
+            "f": "他的突破來自與 Leo Elstob 合作的 Disco Citizens〈Right Here, Right Now〉；Disco Citizens 以較不討電台喜歡、沒有人聲、偏 progressive house 的曲子為主。",
+            "src": "https://909originals.com/2025/11/25/chicane-chats-to-909originals-about-his-thirty-year-career-in-music/",
+            "src2": "https://en.wikipedia.org/wiki/Chicane_(musician)",
+            "from": "new"
+          },
+          {
+            "f": "2007 年的第三張專輯《Somersault》發行在他自己的獨立廠牌。",
+            "src": "https://en.wikipedia.org/wiki/Chicane_(musician)",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1997 年 10 月 20 日，首張專輯《Far from the Maddening Crowds》由 Xtravaganza Recordings 發行。",
+        "src": "https://en.wikipedia.org/wiki/Far_from_the_Maddening_Crowds",
+        "src2": "https://en.wikipedia.org/wiki/Chicane_(musician)",
+        "from": "bank"
+      },
+      {
+        "f": "2007 年 10 月 18 日，因授權問題被擱置的首張專輯重發。",
+        "src": "https://en.wikipedia.org/wiki/Far_from_the_Maddening_Crowds",
+        "src2": "https://en.wikipedia.org/wiki/Chicane_(musician)",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "維基與搜尋摘要把〈Offshore〉說成 Ibiza trance 名曲、並說他童年被帶去 Ibiza 度假；Chicane 在 2025 年的 909originals 訪談卻說〈Offshore〉寫的是懷特島，Ibiza 連結是「荒謬的包裝」。facts 只引他本人的說法，不寫〈Offshore〉是 Ibiza 的歌，也不寫他童年去 Ibiza。",
+      "上線簡介寫『〈Offshore〉被收進逾一百三十張合輯』；維基專輯條目自己標明這個數字引的是不可靠來源，facts 不收，見 pubIssues。",
+      "上線簡介其餘（發行日 1997 年 10 月 20 日、Xtravaganza、榜上第 49 名、2023 年 BPI 銀唱片、AllMusic 四星）與維基專輯條目一致，未發現衝突。"
+    ],
+    "pubIssues": [
+      {
+        "album": "Far From the Maddening Crowds",
+        "claim": "〈Offshore〉後來被收進逾一百三十張合輯",
+        "problem": "英文維基專輯條目寫『over 130 compilations』，但條目自己標示這個數字引用的是不可靠來源；找不到可靠來源。建議刪掉數字或改成較含糊的寫法。另：Chicane 本人在 2025 年訪談說〈Offshore〉寫的是懷特島，與 Ibiza 的連結是外界包裝，若簡介未寫 Ibiza 則無須改。",
+        "src": "https://en.wikipedia.org/wiki/Far_from_the_Maddening_Crowds"
+      }
+    ],
+    "searches": 4,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "同名確認：卡池《Far From the Maddening Crowds》（1997）為英國 Nick Bracegirdle，無混卡。搜尋 2 次、開頁 2 次（維基專輯條目、909originals）；失敗請求 1 次未計（musicradar 訪談頁只回導覽列、無內文）。維基藝人頁為預抓，專輯頁為另開。在世者規則：榜單、銷量、認證一律不收（〈Don't Give Up〉英國冠軍、專輯榜第 49 名、BPI 銀唱片與金唱片、Behind the Sun 認證）；核心成績最多一處，此處以『trance 圈視為開創性』作 legacy。生年 1971 年 2 月 28 日只見維基與 wikidata（同源），本位不用。維基稱他的 Ibiza 童年與〈Offshore〉Ibiza 名曲，與他本人訪談衝突，已以本人說法為準。維基藝人頁與專輯頁同屬一個來源家族，標 src2 的條目其實一個是維基、一個是 909originals（獨立），維基＋維基的兩條（開創性、2007 重發）屬『非獨立』。"
+  },
+  {
+    "key": "chris & cosey",
+    "name": "Chris & Cosey",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Chris & Cosey 是 Chris Carter（電子）與 Cosey Fanni Tutti（人聲、電子、吉他、短號）這對伴侶組成的英國二人組，兩人原本都是工業音樂先驅 Throbbing Gristle 的成員；1981 年 Throbbing Gristle 解散後成軍。",
+            "src": "https://en.wikipedia.org/wiki/Chris_%26_Cosey",
+            "src2": "https://daily.bandcamp.com/features/throbbing-gristle-interview",
+            "from": "new"
+          },
+          {
+            "f": "Cosey Fanni Tutti 出身達達主義風格的表演團體 COUM Transmissions；她和 Chris Carter 早期做音樂的方式鬆散、即興，根源是 1960 年代的偶發藝術，Carter 自己造喇叭與器材來塑造現場聲音。",
+            "src": "https://daily.redbullmusicacademy.com/2012/11/cosey-interview/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他們後來搬離倫敦，住進諾福克一所舊村學校，在家中蓋了錄音室，在那裡工作了約 20 年。",
+            "src": "https://thequietus.com/interviews/chris-carter-cosey-fanni-tutti-interview/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "首張專輯《Heartbeat》（1981）延續 Throbbing Gristle 的節奏想法，並加進合成流行的元素。",
+            "src": "https://en.wikipedia.org/wiki/Chris_%26_Cosey",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Trouser Press 的評論說，《Heartbeat》很大一部分承襲 Throbbing Gristle 的路數，在搏動的合成器上疊現成人聲，其餘則走向受 Kraftwerk 啟發的輕盈金屬流行。",
+            "src": "https://trouserpress.com/reviews/chris-and-cosey/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Chris Carter 說他們「不想聽起來像 TG」，也說後來「沒有人去做任何一點工業音樂」；Cosey 說她愛好的流行樂是「現代版的教會歌」。Quietus 把他們早期的作品形容成走向「冰河般的電子流行」。",
+            "src": "https://thequietus.com/interviews/chris-carter-cosey-fanni-tutti-interview/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Cosey 說，Chris & Cosey 的歌比 Throbbing Gristle 的現場即興更有結構；後來改用軟體，她說「軟體讓我們整個世界都打開了」。",
+            "src": "https://daily.redbullmusicacademy.com/2012/11/cosey-interview/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "紅牛音樂學院在介紹 Cosey Fanni Tutti 時，把 Chris & Cosey 與 Carter Tutti 說成 techno 與 acid house 的原型。",
+            "src": "https://daily.redbullmusicacademy.com/2012/11/cosey-interview/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他們的曲子被 Carl Craig、Daniel Miller、μ-Ziq 與 Andrew Weatherall 等人混音過，器樂曲也出現在藝廊裝置、音樂節、廣播與電影預告裡；維基也記他們被收進紐約現代美術館的藝術家資料庫。",
+            "src": "https://en.wikipedia.org/wiki/Chris_%26_Cosey",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Carter 與 Tutti 日後與 Factory Floor 的 Nik Colk Void 組成 Carter Tutti Void，2011 至 2019 年發行《Transverse》《f (x)》與《Triumvirate》三張專輯。",
+            "src": "https://en.wikipedia.org/wiki/Chris_%26_Cosey",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們在 1980 年代初為 Rough Trade 做了四張專輯，用電子、取樣、Cosey 的人聲與短號。",
+            "src": "https://en.wikipedia.org/wiki/Chris_%26_Cosey",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "2004 至 2010 年，Carter 與 Tutti 又和 Throbbing Gristle 重組，錄了《TG Now》與《Part Two》；Throbbing Gristle 這個團名在 1975 年成立，六年後解散。",
+            "src": "https://en.wikipedia.org/wiki/Chris_%26_Cosey",
+            "src2": "https://daily.bandcamp.com/features/throbbing-gristle-interview",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "1981 年，兩人在 Throbbing Gristle 解散後組成 Chris & Cosey，並發行首張專輯《Heartbeat》。",
+        "src": "https://en.wikipedia.org/wiki/Chris_%26_Cosey",
+        "src2": "https://daily.bandcamp.com/features/throbbing-gristle-interview",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "Conspiracy International 廠牌的成立年份各源不一致（Chris Carter 維基條目說 1981 年解散後不久、Bandsintown 摘要說 1983 年）；Chris & Cosey 維基條目說 1983 年成立 Creative Technology Institute 廠牌。facts 不收廠牌成立年。",
+      "Quietus 訪談中 Cosey 的說法是在 TG『最後掙扎』的階段（她 1979 年離開 Genesis P-Orridge 後）兩人就開始一起做《Heartbeat》，與維基『TG 解散後成軍』的先後略有出入；facts 只寫 1981 年成軍與《Heartbeat》1981 年，不寫確切的『從哪個月開始合作』。",
+      "『Heartbeat』風格定位（industrial pop／synth pop／electro）各評論用語不一，facts 只引 Trouser Press 與 Quietus 的具名說法。"
+    ],
+    "pubIssues": [],
+    "searches": 8,
+    "failedFetches": 2,
+    "status": "full",
+    "notes": "同名確認：卡池《Heartbeat》（1981）為 Chris Carter 與 Cosey Fanni Tutti，無混卡。事實庫為空，三格全靠補查。搜尋 3 次、開頁 5 次（維基全文補查一次——預抓只有導言、Trouser Press、Quietus、Red Bull Music Academy、Bandcamp Daily）= 8 次；失敗請求 2 次未計（chrisandcosey.com 503、snowsovgethen.com 401）。『Heartbeat 1981 年 11 月 18 日由 Rough Trade 發行』只見 Discogs 搜尋摘要，未收日期；『影響 Juan Atkins、Drexciya』來自一篇再版文章的搜尋摘要，頁面 401 無法開頁，不收；『techno 先驅』只收紅牛音樂學院介紹文字的具名寫法。生卒與成員：兩人皆在世，不寫生年。Cosey 自傳《Art Sex Music》只見搜尋摘要，不收。Throbbing Gristle 內部糾紛、成員 Genesis P-Orridge 離團與 X-TG 不涉及本位，未收。Quietus 該句『Heartbeat 與 Exotica 轉向冰河般的電子流行』為文章編者語氣，已標具名。「早 1980 年代四張專輯為 Rough Trade」只見維基單源，標 single。"
+  },
+  {
+    "key": "christ.",
+    "name": "Christ.",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "christ. 是蘇格蘭電子音樂人 Christopher Horne 的舞台名，他說這個名字沒有宗教含義，是自己全名的縮寫，句點表示這是縮寫。",
+            "src": "https://en.wikipedia.org/wiki/Christ._(musician)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他以 Chris H. 的署名，是 Hexagon Sun 這個鬆散集體早期的參與者（Boards of Canada 即從中而出），並與該二人合作到約 1995 年；〈Melissa Juice〉的共同作曲署名出現在《Twoism》，Warp 2002 年重發時應他本人要求拿掉他的署名；離開過程和平，他在 2001 年的 Pylonesque EP 向那兩人致謝。",
+            "src": "https://en.wikipedia.org/wiki/Christ._(musician)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他的 Pylonesque EP（2001）與第一張完整長度專輯《Metamorphic Reproduction Miracle》都發行在蘇格蘭廠牌 Benbecula Records。",
+            "src": "https://en.wikipedia.org/wiki/Christ._(musician)",
+            "src2": "https://igloomag.com/reviews/christ-metamorphic-reproduction-miracle-benbecula-cd",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的音樂常被拿來和同為蘇格蘭的 Boards of Canada 相提並論。",
+            "src": "https://en.wikipedia.org/wiki/Christ._(musician)",
+            "src2": "https://brainwashed.com/index.php?option=com_content&view=article&id=21701:christ-qmetamorphic-reproduction-miracleq&catid=101&Itemid=855",
+            "from": "new"
+          },
+          {
+            "f": "Textura 評《Metamorphic Reproduction Miracle》是純電子、IDM 帶有 Autechre 與 Boards of Canada 的痕跡，在田園風的短曲與中速、憂鬱的律動之間移動，有些曲子轉向 funk 或 Autechre 式的碎拍。",
+            "src": "https://www.textura.org/archives/c/christreview.htm",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Brainwashed 的評論把這張專輯形容成「濃稠、帶著 dub 感的布丁，裝滿惡夢與彩虹景色」，既不全暗也不全亮，在靜態重複與不規則的變化之間走鋼索。",
+            "src": "https://brainwashed.com/index.php?option=com_content&view=article&id=21701:christ-qmetamorphic-reproduction-miracleq&catid=101&Itemid=855",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "維基稱《Metamorphic Reproduction Miracle》在這個類型圈內評價很好；Textura 的評論則說它是「accomplished if imperfect」，認為它很穩，但有時太像別人的風格。",
+            "src": "https://en.wikipedia.org/wiki/Christ._(musician)",
+            "src2": "https://www.textura.org/archives/c/christreview.htm",
+            "from": "new"
+          },
+          {
+            "f": "他的現場巡演到過英國、歐洲與日本。",
+            "src": "https://en.wikipedia.org/wiki/Christ._(musician)",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2003 年 12 月，他錄了 BBC 電台 John Peel 節目的現場 session。",
+            "src": "https://en.wikipedia.org/wiki/Christ._(musician)",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [
+      {
+        "f": "2003 年 12 月，在 BBC 電台 John Peel 節目錄現場 session。",
+        "src": "https://en.wikipedia.org/wiki/Christ._(musician)",
+        "single": true,
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "出身地：Igloo 評論者『相信』他來自愛丁堡，搜尋摘要有來源稱 Balerno，維基只寫 Scottish；各源不一，facts 只寫蘇格蘭。",
+      "Hexagon Sun 成員身分：維基寫早期參與者與合作到約 1995 年；Alchetron 摘要列為成員，bocpages 摘要說可能是前成員，維基 Boards of Canada 摘要寫在約 1996 年結束；facts 只引維基『約 1995 年』並在 notes 標單源。",
+      "Peel session 日期：維基只寫 2003 年 12 月，搜尋摘要寫 17 日（來源不明）；facts 只寫 2003 年 12 月。"
+    ],
+    "pubIssues": [],
+    "searches": 6,
+    "failedFetches": 3,
+    "status": "thin",
+    "notes": "同名確認：卡池《Metamorphic Reproduction Miracle》（2003）為蘇格蘭 Christopher Horne，維基條目 albumHits 1 對得上，不是其他同名藝人。事實庫為空，三格全靠補查。搜尋 3 次、開頁 3 次（Textura、Igloo——只用來確認他是『首張完整長度』、Brainwashed）= 6 次；失敗請求 3 次未計（Huck 訪談 403、bocpages 403、Discogs 藝人頁 403）。legacy 薄：沒有後輩點名、沒有可開頁證實的共識評價，只有維基『評價很好』與 Textura 評語；Igloo 與 Gridface 的評論只見搜尋摘要未收；RYM 評分是用戶評分，不收。未收：『Peel 唯一一次要求安可』（唯一類宣稱，維基單源，另有 Huck 搜尋摘要未開頁證實）；Boards of Canada 與他的合作細節超過維基單源的部分；Benbecula 廠牌近況與關閉；第二、第四張專輯名稱與年份（來源不一致：維基說第四張 2007 年 1 月，搜尋摘要稱 Blue Shift Emissions 2007）；專輯確切發行月份（June 或 July 2003，各源不一）。『Chris H. 署名被拿掉』『合作到約 1995 年』與 Hexagon Sun 細節只見維基單源（合作關係屬低風險），寫作層宜保守、並加上『維基記載』的語氣。"
+  }
+]
