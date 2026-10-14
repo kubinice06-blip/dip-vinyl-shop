@@ -1347,3 +1347,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分：預抓維基作廢——Gemini（Google 語言模型）、HAT（帽子）、Hercules & Love Affair（神話）、Hula（夏威夷舞）、Hybrid（生物學）、Infiniti（日產汽車）、Interferon（干擾素）、Innerzone Orchestra（Steve Roach 的專輯）。Hazard 是 BJ Nilsen（派工詞寫的 Benny Jonsson 有誤）；Instra:mental 成員是 Alex Green 與 Damon Kirkham（派工詞有誤）；Hirofumi Goto 即後來的 Rondenion。
 - 卡池年份存疑：Hercules & Love Affair 2007／2008。
 - 待本機（上線簡介）：Function「2004 年加入 Sandwell District」年份不一；Gigi Masin《Wind》年份不一、被取樣的是 1989 年〈Clouds〉；Giora Feidman「二十多年」應為「將近二十年」；Grant Kirkhope「最早採用垂直重混」無來源；Hallucinogen「全球約八萬五千張」只見唱片行；Heldon「口白找了 Deleuze」只見於另一張單曲；I-F「首張專輯」待核。
+
+## ar-d-088（2026-10-14）
+
+- 40 位全數上架（34 full、6 thin：Jade、John Wiese、Kiasmos、Kid Loco、Konstruktivists、Lapalux）。
+- 審稿修 11 處：
+  - out-2 審稿 3 處：Kavinsky 刪法國總統悼詞（政治人物，非音樂），只留 2026 年過世（主線以 WebSearch 核實：Paris Match、RTBF、Electronic Groove 皆報導 2026 年 7 月過世，死因與調查不寫）；Kemistry & Storm 補半形空格；Kylie Minogue 刪「美國最大的商業成功」（在世者只留葛萊美一處）。
+  - 保留：Kemistry 1999、Kagami 2010、Klaus Wiese 2009、The Spaceape 2014 年過世（只寫年份）；Brian Eno 談 Ladytron、Thom Yorke 談 Laika（具名音樂人）；Kyle Dixon & Michael Stein 艾美獎（唯一一處成績）。
+  - out-1 審稿 8 處：Jam & Spoon「德國最大的俱樂部熱門曲之一」改「當紅」；Jamie Principle 刪署名爭議一句（「偷走他的歌」）；Joe Smooth 刪曼德拉獲釋一句（政治背景）；Joker「最為人知」改「知名度高」；Jumprava 刪「蘇聯治下」（政治背景只留拉脫維亞文化中心那一句）、「最受歡迎之一」改「極受歡迎」；Juno Reactor「最常與 Goa trance 連在一起」改「常」；K. Leimer 刪「比 K Records 與 Sub Pop 都早」（比較性的最早宣稱）。
+  - 保留：Jamie Principle〈Your Love〉2026 年列入美國國會圖書館國家錄音登錄（國會圖書館部落格＋RA 兩源）；K. Hand「The First Lady of Detroit」是底特律市議會頒證稱號，照官方表彰寫；Mark Spoon 2006、Joanna Brouk 2017、Jon Hassell 2021、K. Hand 2021 年過世。
+- 身分：預抓維基作廢——K2（喀喇崑崙山峰，改用德文維基的日本噪音計畫）、Kyle Dixon（美式足球員）、Kyle Hall（北卡州議員）、Laika（太空犬）。Jade 是芝加哥 R&B 女子團，卡池分類 electronic 有誤（留給本機）。Kode9 & The Spaceape 搜尋 9 次，overCapOk（重開同一頁核對引句，比照齊豫前例）。
+- 待本機（上線簡介）：Jamie Principle「唯一個人專輯」「最早的 house 錄音」等未取得兩源；Joe Smooth 藝名由來與器材清單查無；John Carpenter & Alan Howarth 的 Tangerine Dream／Debussy 等說法查無；K2「隔十年才有下一張」不對（1981–1985 年約 20 卷卡帶）；Klaus Wiese「參與 Popol Vuh《Hosianna Mantra》」應改為封面署名 tamboura、本人自稱客人；Kevin Saunderson《Faces & Phases》是彙編；Kyle Dixon & Michael Stein「首次在團體之外合作」查無。
