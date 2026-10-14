@@ -1501,3 +1501,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：The Sugarhill Gang「第一首打進 Hot 100 前 40 的饒舌單曲」、Vanilla Ice「第一首 Hot 100 冠軍饒舌單曲」屬通行事實（照 Van Cliburn 先例）；Shabba Ranks 葛萊美兩屆、SIRUP SPACE SHOWER 獎、Skepta 水星獎、SUMIN 韓國大眾音樂獎、The LOX 揚克斯市鑰、Tierra Whack 葛萊美入圍、Twista 金氏紀錄（1992）、Victoria Monét 葛萊美、Tha Dogg Pound Billboard 200 冠軍（各一處）；The Moonglows、The Platters 引搖滾名人堂官網；Magoo 2023、MF DOOM 2020、UTFO 兩位成員 2017／2021 年過世。
 - 身分：Today 預抓維基（NBC 節目）作廢；Viktor Vaughn 照 MF DOOM 化名寫；The Alkaholiks 正文照名冊拼法。
 - 待本機（上線簡介與卡池）：Stetsasonic「第一支嘻哈樂團」只是自稱；T La Rock〈It's Yours〉「Def Jam 編號第一號」有爭議；Tech N9ne「範本」一說無來源；Tha Blue Herb 首張發行年 1998／1999 不一；Silkk 簡介首週銷量、榜位、白金與「全碟 Beats By the Pound」查無佐證；The Moonglows〈Ten Commandments of Love〉錄音陣容兩源不一；Today 卡池曲風誤標 hiphop；Tommy Wright III「生於 Whitehaven」（維基生於曼菲斯）；Twista 2019 RIAA 白金查無；UTFO「答歌最多」只是可能語氣；Vanilla Ice「連續 16 週」來源寫 12 週。
+
+## ar-d-101（2026-10-14）
+
+- 39 位上架（32 full、7 thin：Wreckx-n-Effect、YoungBoy Never Broke Again、Your Old Droog、Zayn、勞動服務、夜貓組、Alma Mahler）。1 位不寫：Westside Connection（thin 的聲音句只有 gangsta rap／G-funk 標籤與製作分工，照 Vex'd 先例）。
+- **嘻哈段至此寫完**；本批後半進入古典段（Aaron Copland～Amjad Ali Khan），含印度古典（Alla Rakha、Amir Khan、Amjad Ali Khan）、伊朗廣播節目《Golha》、電影配樂（Silvestri、North、Desplat）。台灣嘻哈三組（勞動服務、呂士軒、夜貓組）地名寫「台灣」。
+- 搜尋超額：勞動服務多 1 次（確認 fishLIN 領軍身分）、Aaron Copland 多 1 次（補獎項第二源）、Golha 四人掛名多 2 次（補 Hayedeh 生卒與出道第二源），照第二源先例放行。
+- 2025–26 事實：呂士軒 2025 年第 36 屆金曲獎最佳華語男歌手與最佳華語專輯（nownews＋中文維基），照收；Desplat《Les Aigles de la République》（2025）兩源同屬 filmmusicreporter（非獨立），不寫。
+- 審稿修 15 處：
+  - out-1 審稿 7 處：Whodini「最早把 R&B 帶進嘻哈之一」改「早期」、「被取樣最多的歌之一」改「被大量取樣」；Z-Ro 刪「6 歲喪母」（家人逝世細節）；スチャダラパー「日本最早走紅之一」改「早期」；夜貓組「顏社第一個饒舌團體」改「早期」；Aaron Copland 單卡 277 字超出 250，刪出生年、族裔細節與總統自由勳章、奧斯卡，保留作曲手法與普立茲（兩處）。另撤下 Westside Connection。
+  - out-2 審稿 8 處：Golha（Hayedeh）「最具影響力之一」改「極具影響力」；Hovhaness「作品量最多之一」改「極多」；Alex North「第一份大量依賴爵士語彙的配樂」改「早期」；Kipnis「世上最偉大的低音之一」改「極受推崇」；Kantorow 刪「第一位法國籍冠軍」；Alla Rakha「史上最受推崇之一」改「極受推崇」；Alma Mahler 刪老師的「盲眼」（他人健康）；Amjad Ali Khan「當代首席大師」改「當代 sarod 大師」。
+  - 保留：Alex North 1986 年「第一位獲頒榮譽奧斯卡的作曲家」屬通行事實（照 Van Cliburn 先例）；呂士軒金曲獎、Wreckx-n-Effect Hot 100 第 2、YoungBloodZ Hot 100 前五、Zayn 英美專輯榜冠軍、スチャダラパー 50 萬張、諏訪內晶子與 Kantorow 柴可夫斯基首獎、Silvestri 奧斯卡入圍、Desplat 兩座奧斯卡、Weilerstein 麥克阿瑟、Amjad Ali Khan Padma Vibhushan（各一處）；Whodini 引長島音樂名人堂（官方機構）；Yo-Yo 1994 年參議院作證、Golha 1979 年革命後女性獨唱遭禁、Hába 遭納粹禁演（政治背景各一句）；Baba Zumbi 2021 年過世。
+- 待本機（上線簡介與卡池）：Whodini「首張打進前四十名的嘻哈唱片」查無；Wiz Khalifa 大廠合約年、Big Jerm、「全球熱門第一」不符；Wizkid「慢速」（來源中速）；YG「九成節拍」查無；Yo-Yo「康普頓出身」（來源南洛杉磯）；勞動服務《海島聲事》各軌秒數與 Bandcamp 差 1–3 秒；夜貓組「唯一一張錄音室專輯」與報導不合；Aaron Copland 卡 1971 自指錄音有 1959／1970／1973 三版；Alex North 簡介樂器清單與「ondioline 從未用於電影」查無；Alan Silvestri 卡 1985 與簡介所述 2015 Intrada 完整版不一；Alarm Will Sound 卡池 composer 欄誤填「Acoustica」。

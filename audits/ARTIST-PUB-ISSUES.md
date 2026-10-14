@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1311 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1312 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1267,6 +1267,7 @@
 | ar-d-101 | Yo-Yo | Make Way for the Motherlode | 康普頓出身的 Yolanda Whitaker | 維基導言與 encyclopedia.com 都寫南洛杉磯（South Central），只有 wikidata 出生地是 Compton，建議改成「南洛杉磯出身」或保守寫法。 | https://en.wikipedia.org/wiki/Yo-Yo_(rapper) |
 | ar-d-101 | 勞動服務 | 海島聲事 | 最長的兩軌一樣長（〈鹽分地帶〉5:12 等），各軌長度落在 3:01 到 5:12 | 團方 Bandcamp 列的各軌長度與簡介相差 1 至 3 秒（〈鹽分地帶〉5:10、〈阮住佇艋舺〉4:11、〈坪仔田〉2:59、〈核邪〉4:35、〈眉溪四庄的過年〉4:45），且最長的〈鹽分地帶〉5:10 與次長的〈老佛山傳奇〉5:09 並不等長，「最長的兩軌一樣長」與範圍「3:01 到 5:12」可能是 CD 版與數位版秒數不同；需對照實體 CD 的曲目長度再決定是否改。 | https://communityservicetw.bandcamp.com/ |
 | ar-d-101 | 夜貓組 | 健康歌曲 | 這是這個組合至今唯一一張錄音室專輯 | Marie Claire 的報導稱夜貓組「發行過兩張專輯」，未列專輯名稱與年份，可能是計入了其他專輯或簡介已過時；需查顏社目錄確認夜貓組是否另有專輯後再決定要不要改這句。 | https://www.marieclaire.com.tw/entertainment/story/45206 |
+| ar-d-102 | Andrew Lloyd Webber & Tim Rice | Evita | 概念專輯由 Andrew Lloyd Webber 與 Tim Rice 共同製作 | 維基《Evita (album)》頁的措辭是兩人合寫、Rice 製作（The album ... written by Lloyd Webber and Rice, who produced it），製作署名待核；若店主在本機改簡介，建議改成「由 Tim Rice 與 Andrew Lloyd Webber 創作」較保險 | https://en.wikipedia.org/wiki/Evita_(album) |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
