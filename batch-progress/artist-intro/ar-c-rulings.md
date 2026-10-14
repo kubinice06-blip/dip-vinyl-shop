@@ -1229,3 +1229,71 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 待本機：
   - KV 上線簡介的修正：見 `audits/ARTIST-PUB-ISSUES.md`（本輪各批「待本機」條目）。
   - 卡池年份存疑清單：Trouble、Kim Jung Mi、Modern Folk Üçlüsü、Stone Angel、Kelly Clarkson《Breakaway》2003／2004、The Shirelles 1960／1961、Пугачёва《Зеркало души》1977／1978、Selda 1975／1976、Tenor Saw《Fever》1985／1986、The Disciples《Infinite Density of Dub》、Sussan Deyhim《Madman of God》、Ρίτα Αμπατζή 2013／2014、《Dub Conference》1979／1980、Avrocar 1999／2000。
+
+## 新世代爵士＋downtempo 兩線補介紹（ar-d-120～127，2026-10-13）
+
+- 店主 2026-10-13「現在新增專輯也要同時新增藝人介紹」→「補」。兩線上架藝人 327 位，扣已有介紹 18、已排隊 17、別名 1，**290 位補進名冊**（`addedBy` add-20261012-nj／add-20261011-dt，tier D，shard null），nj 136 位切 ar-d-120～123、dt 153 位切 ar-d-124～127。
+- 別名：Cassie Kinoshi's seed → SEED Ensemble（同一團改名），寫進 aliases.json，不另寫。其餘「領隊 & 編制」掛名照 2026-09-30 先例（伍佰 vs 伍佰 & China Blue）分開寫。
+- 名冊 collab 旗標：腳本按 `&`／`and`／`'s` 判定，主線把團名本身含 & 的（Smith & Mighty、Dry & Heavy、Ford & Lopatin 等 14 個）改回 false。
+- **WebSearch 額度**：本工作階段已跑 nj／dt 十批研究，剩餘額度不明；補洞派工加註「事實庫＋維基預抓已夠兩源的格不搜；每位 WebSearch 至多 2 次，其餘靠 WebFetch 已知站」。若中途額度用盡，停派、交下一個工作階段。
+
+## ar-d-120（2026-10-13）
+
+- 34 位上架（25 full、9 thin：Maisha、Nérija、London Brew、Matthew Halsall & The Gondwana Orchestra、Chip Wickham、Jasmine Myra、Ancient Infinity Orchestra、Mansur Brown、Vels Trio），0 位不寫。
+- 審稿修 3 處：Ashley Henry 開頭「教父母經營 sound system」主詞不清，改「Ashley Henry 的教父母經營…，他從小…」；Joe Armon-Jones 刪「被《時代》雜誌列入 2019 年度十大專輯」（雜誌榜單名次＋媒體名，兩源未必獨立）；Zara McFarlane 多餘空格。
+- 保留：Neil Cowley「給不愛爵士的人聽的爵士樂手」（被形容為、非最高級）；單一樂評的最高級（Dinosaur、22a、Myra、Phronesis）寫作層已不寫，照收。Elliot Galvin 篇的 Parliamentary Jazz Awards 主詞是 Dinosaur（兩源），Dinosaur 篇不寫（該格 notes 不收），照收。
+- 身分：Brandon Coleman 維基預抓是美式足球員（121 組，已作廢）；wikidata 的 Sarathy Korwar 出生年 1950 明顯錯，不採。
+
+## ar-d-121（2026-10-13）
+
+- 34 位上架（28 full、6 thin：Sam Gendel & Sam Wilkes、Jamael Dean、Ben LaMar Gay、Chicago Underground Duo、Resavoir、Joshua Abrams），0 位不寫。審稿修 0 處。
+- 截止日後事實核實：Nate Smith 以《LIVE-ACTION》獲 2026 年（第 68 屆）葛萊美最佳另類爵士專輯、另以〈Big Fish〉得最佳器樂與人聲編曲——WebSearch 對到 grammy.com 與 VCU 新聞，照收。Ryan Porter 2026 年去世（補洞三源一致），只寫年份與享年，不寫車禍。
+- 保留：Jaimie Branch 只寫 2022 年在家中過世與享年，不寫死因；上線簡介寫出死因，記進 pubIssues。單一媒體年度榜（紐約時報、NPR 票選）與 DownBeat 名次寫作層不寫，照收；Mitchell／Davis／Oh 改用爵士新聞工作者協會年度獎。
+- 身分：Brandon Coleman 維基預抓是美式足球員，已作廢。Polar Bear、Xhosa Cole、Emma Rawicz 是英國樂手（切批依卡單順序落在本批），照寫。
+
+## ar-d-122（2026-10-13）
+
+- 34 位上架（29 full、5 thin：Fire! Orchestra、Rymden、Hedvig Mollestad Trio、Nik Bärtsch's Ronin、Bokani Dyer Trio），0 位不寫。審稿修 0 處。
+- 截止日後事實核實：Sullivan Fortner《Southern Nights》獲 2026 年葛萊美最佳爵士器樂專輯、生涯第三座（grammy.com、PIAS）；Craig Taborn 2025 年 MacArthur Fellow（macfound.org）——照收。
+- 保留：Marius Neset《Lion》寫 Spellemannprisen 得獎（挪威維基頁與英文維基；snl 寫入圍，屬維基家族兩源，conflicts 已裁）；Fortner 的 Fred Hersch 評語屬具名樂手評語，非樂評最高級，照收。DownBeat、紐約時報、NPR、《Polityka》《Jazzism》年度榜寫作層不寫，照收。
+- Steve Lehman Octet 只寫編制與 Lehman 的師承／獎項，不重寫生平（ar-d-121 已寫）。
+
+## ar-d-123（2026-10-13）
+
+- 34 位上架（25 full、9 thin：Samuel Yirga、Shai Maestro Trio、Yonathan Avishai、Antonio Loureiro、TRI4TH、indigo jam unit、J-Squad、類家心平、Dewa Budjana），0 位不寫。審稿修 0 處。
+- 保留：Antonio Sánchez「累計 4 座葛萊美」（獎項數非銷量／名次，不在在世者避免清單內）；Metá Metá「被稱為最具聲望的團體之一」（被稱為口氣）。不寫：《紐約時報》年度榜、DownBeat／Modern Drummer 票選、Tower 排行與「最重要樂團」單源、SOIL 的 John Peel 獎等維基同源事蹟、挾間美帆「25 for the Future」。
+- 나윤선 正文照韓文原名並附羅馬拼音一次；劇團名（學田）資料寫錯字，正文只寫導演金敏基。Answer to Remember 的素材都是石若駿本人，寫計畫加這個人。
+- 名詞：QA 的「你」禁語會誤擋「迷你」，寫作層已改「小型電子琴」；之後 qa-artist 可加白名單（未改）。
+
+## ar-d-124（2026-10-13）
+
+- 39 位上架（28 full、11 thin：Alpha & Omega meets The Disciples、Deadbeat、Fenin、Little Tempo、Divination、Ott、Kanka、Dub Colossus、Prince Fatty、Sly & Robbie meet Nils Petter Molvær、Alpha），0 位不寫。
+- 審稿修 4 處：Jah Wobble & Bill Laswell 刪媒體名 Bass Musician Magazine、改「被認為影響了」；Jhelisa 刪《Time Out》、改「被形容為」；Mute Beat 正文的「小玉和文」改卡池名「こだま和文」（同一人舊寫法，與こだま和文篇一致）；Smoke City 刪銀唱片認證（在世者認證倍數）。
+- 保留：Olive〈You're Not Alone〉英國榜第 1、Smoke City〈Underwater Love〉第 4（份量核心，補洞層已標必要例外）；Prince Far I、Dub Syndicate（Style Scott）只寫辭世年份、不寫案情；Creation Rebel facts「停擺逾四十年」與時間線不符，寫作層改「停擺多年」照收。
+- 身分：Alpha（希臘字母）、Olive（橄欖樹）、Divination（占卜）、Kanka（消歧頁）、Creation Rebel（Burning Spear 精選輯）維基預抓皆錯頁，已作廢。
+
+## ar-d-125（2026-10-13）
+
+- 38 位上架（18 full、20 thin），1 位不寫：jinsang（素材只有「加州 hip-hop 製作人」一句，未達 thin 門檻；韓國鋼琴家 Jinsang Lee 同名不同人，已排除）。qa「缺 1 位」即此，比照ar-d-118 モア、ar-d-119 桃井かおり 的 skipped 先例。審稿修 0 處。
+- 保留：Chet Faker〈Talk Is Cheap〉triple j Hottest 100 第 1 名（聽眾票選、補洞層兩源並標必要例外，是這個名號份量的核心）；Tourist〈Stay with Me〉葛萊美年度歌曲；Lovage 第一句只寫「Dan the Automator 領軍的合作計畫」，素材無國籍，不硬補。
+- 不寫：tomppabeats「最具影響力之一」、FKJ「French Touch 繼承人」、Dntel 的 RA「定義性曲目」、Aim 的《Sunday Times》評語（單一媒體評價）。
+
+## ar-d-126（2026-10-13）
+
+- 39 位上架（26 full、13 thin），0 位不寫。審稿修 1 處：A Man Called Adam 多餘空格。
+- 保留：Dead Combo「葡萄牙文化部長稱…最有影響力的音樂計畫之一」（官方具名聲明、份量核心）；Suba、José Padilla、Olivier Libaux、Pedro Gonçalves 只寫辭世年份與享年，Suba 不寫火災細節；Cibelle 全文不用他／她（維基用中性代名詞）。
+- 不寫：Mark Barrott 轉述兩家媒體的評價、Nicola Conte「義大利 acid jazz 奠基者」單一媒體說法、DJ Magazine 星等、「ECM 最不尋常的專輯」。
+- Nils Petter Molvær、Bugge Wesseltoft 與本線 Sly & Robbie meet Molvær、Rymden 兩篇比對過，句子不重複。
+
+## ar-d-127（2026-10-13）
+
+- 36 位上架（24 full、12 thin），0 位不寫。審稿修 1 處：haruka nakamura 的動畫電影片名《Look Back》改台灣譯名《驀然回首》。
+- 保留：CALM 的事實全出自一篇訪談，第二條 src 是已上線卡片的 Discogs 藝人頁（只佐證深川清隆＝CALM）；Fat Jon「Nujabes 後期受他影響」以據說口氣寫；Lamp〈夢うつつ〉經 TikTok 在西方走紅、2025 年北美巡演照收。
+- 不寫：Ametsub「坂本龍一年度最佳」（單源）、Mocca 榜單名次與銷量、Small Black／Memory Tapes／jj／Fridge 的單一樂評最高級評價。Helios 國籍兩源不一，正文不寫國籍。
+- 已上線專輯簡介待修（pubIssues）：Yosi Horikawa《Vapor》「家裡和音樂不親」與「出道作」兩處（dt5 剛上架）、Da Lata「兩個倫敦人」、Sleep Walker 成軍年等，彙整在 audits/ARTIST-PUB-ISSUES.md。
+
+## 兩線補介紹收尾（ar-d-120～127）
+
+- 290 位排入 8 批，**289 位上架**（新世代爵士 136、downtempo 153；jinsang 素材不足不寫）＋ SEED Ensemble 別名 1 位；藝人介紹 5,808 → 6,097。
+- 審稿合計修 13 處；2025–26 年事實（Nate Smith、Sullivan Fortner 葛萊美，Craig Taborn MacArthur）以 WebSearch 核實。補洞層 WebSearch 每位壓到 2 次以內，八批未觸額度上限。
+- 全程同一工作階段接力，PR #96、#97、#98 已合併；最後兩批（126、127）隨收尾 PR 上線。

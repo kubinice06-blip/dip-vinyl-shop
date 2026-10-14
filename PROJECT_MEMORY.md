@@ -1,5 +1,136 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-13｜dip-vinyl-shop｜新世代爵士＋downtempo 兩線補藝人介紹（ar-d-120～127，289 位上架；介紹 5,808 → 6,097）
+
+- **起因**：店主 2026-10-13「現在新增專輯也要同時新增藝人介紹」→「補」。兩線上架藝人 327 位，扣已有介紹 18、已排隊 17、別名 1，290 位補進名冊（`addedBy` add-20261012-nj／add-20261011-dt，tier D），切 8 批。
+- **結果**：289 位上架（新世代爵士 136：120 英國、121 美國、122 美國與歐陸、123 南非／以色列／拉美／日韓／東南亞；downtempo 153：124 dub／On-U／dub techno／日本 dub、125 trip-hop／beat／chillhop、126 歐陸與拉丁、127 日本 lounge／folktronica／chillwave）；jinsang 素材不足不寫；Cassie Kinoshi's seed 設為 SEED Ensemble 別名。full 198、thin 91。
+- **審稿**：主線逐位審，合計修 13 處（媒體名入正文 3、在世者認證倍數 1、雜誌年度榜 1、譯名／名稱統一 3、空格與主詞 5）。2025–26 年事實以 WebSearch 核實（Nate Smith、Sullivan Fortner 2026 葛萊美，Craig Taborn 2025 MacArthur）。
+- **產線**：補洞 32 支（Sonnet，WebSearch 每位 ≤2）＋寫作 16 支（Opus），同時最多兩批在飛；PR #96、#97、#98 已合併，126／127 隨本 PR。上線簡介待修 pubIssues 彙整到 `audits/ARTIST-PUB-ISSUES.md`（954 條，含 dt5《Vapor》兩處）。
+- **主要檔案**：`batch-progress/artist-intro/roster-20260929.json`、`batch-progress/artist-intro/ar-c-rulings.md`、`desc-tools/batches/artist/{progress.json,aliases.json,cut,facts,research,output}/ar-d-12*`、`data/artist-intros/*.json`、`audits/ARTIST-PUB-ISSUES.md`
+- **驗證**：qa-artist gap／out 每批 0 處（ar-d-125 只剩 skipped 的 jinsang）；build-artist-intros 321 份成品、6,097 位、64 分片。
+
+### 2026-10-13｜dip-vinyl-shop｜店主指示：新增專輯要同時新增藝人介紹
+
+- **規則**：每批上架後，本批藝人中沒有介紹、也沒在 `batches/artist/progress.json` 排隊的，補進名冊、切 `ar-d-xxx`，照 `dip-artist-intro` skill 跑完。寫進 `CLAUDE.md`「新增專輯固定公式」、`ALBUM_ONBOARDING.md` §11、`dip-card-create` SKILL.md Phase 5。
+- **盤點（2026-10-13）**：卡池藝人 8,813 位，有介紹 5,808；排隊中（ar-d-064…116 共 53 批未跑）2,084；不在名冊 844、在名冊但沒排隊 77。新世代爵士線 144 位缺 137、downtempo 線 183 位缺 154（另 17 位已排隊）。
+- **主要檔案**：`CLAUDE.md`、`ALBUM_ONBOARDING.md`、`.claude/skills/dip-card-create/SKILL.md`
+- **驗證**：純文件改動。
+
+### 2026-10-12｜dip-vinyl-shop｜首頁「店內挖寶」卡加寄售地點副標
+
+- **改動**：首頁 hub 的「店內挖寶」卡名下方加灰色小字副標「目前於水星藝大書店寄售中」（沿用 `.homehub-card-desc`）。
+- **踩到的坑**：卡名左側像素小圖（44px，絕對定位、垂直置中於卡名）會往下超出卡名約 11px，副標 5px 間距時被壓住；改 `.homehub-solo .homehub-card-desc { margin-top: 14px; }`，副標上緣落在圖下緣之下 3px。
+- **主要檔案**：`index.html`。
+- **驗證**：本機 Playwright 量 390／1280 寬：圖 bottom 491、副標 top 494（不再重疊）；分支預覽確認文字上線。
+
+### 2026-10-12｜dip-vinyl-shop｜downtempo 線第 5 批上架（add-20261011-dt5，43 張；卡池 19,074 → 19,117）——全線收尾
+
+- **本批內容**：日本 lounge／nu-jazz（Fantastic Plastic Machine、FreeTEMPO、Uyama Hiroto、Cro-Magnon、CALM ×2、MONDAY満ちる、Sleep Walker、Substantial、Fat Jon、haruka nakamura ×2、高木正勝、Ametsub、Masayoshi Fujita ×2、Yosi Horikawa、Lamp）、亞洲流行（Clazziquai Project ×2、Mocca）、folktronica／indietronica（Lali Puna、The Notwist、Tunng、The Books、ISAN、Styrofoam、Helios、Hood、Fridge、Junior Boys、The Album Leaf、Flunk）、chillwave（Small Black、Memory Tapes、Ford & Lopatin、jj、The Radio Dept.、Teen Daze、Poolside、Nite Jewel、Electric Youth、Houses）。
+- **產線**：研究 5 組（41 full／2 thin）→ 鉤子 2 組 → 寫作 2 組（176–239）→ 主線審稿未改字。研究層刪 Jazztronik 拼盤 1 張；廠牌／年份更正 6 張（改首發廠牌）。
+- **封面**：CAA 36、Apple 7（CAA 無圖或下載失敗 3、Instrumentals Only 版 1、上架前回查 CAA 500 的 3 張）。**試聽**：ready 37、unavailable 6。頂點 0；稀有度 rare 24、uncommon 18、epic 1。
+- **寫入**：prepare 0 error → card_catalog 43/43 → KV 46 鍵回讀一致 → 靜態試聽 → seed 43 列 → **published gate 0 error**；子曲風 17,570 → 17,598。
+- **全線合計**：策展 223 → 刪 1 → **上架 222 張**（dt1 45、dt2 45、dt3 45、dt4 44、dt5 43），全程同一工作階段跑完。交接單 `batch-progress/HANDOFF-downtempo-line.md` 已標全線完成。
+- **主要檔案**：`batch-progress/add-20261011-dt5/`、`onboarding-manifest-add-20261011-dt5-20261012.json`、`desc-tools/batches/*/add-20261011-dt5*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`card-subgenres.json`、`genre-tree.json`、`batch-progress/HANDOFF-downtempo-line.md`
+- **驗證**：verify-album-onboarding prepare／published 皆 0 error；verify-wave-kv 46/46；qa-batch research／hooks／out 全過；qa-check-research 標記 0。
+
+### 2026-10-12｜dip-vinyl-shop｜downtempo 線第 4 批上架（add-20261011-dt4，44 張；卡池 19,030 → 19,074）
+
+- **本批內容**：歐陸 downtempo／Balearic／nu-jazz（Bebel Gilberto、José Padilla、Bent、Thunderball、Tosca ×2、Boozoo Bajou、Christian Prommer's Drumlesson、Beanfield、Mo' Horizons、Lali Puna、dZihan & Kamien、Waldeck、Beady Belle、Nils Petter Molvær、Bugge Wesseltoft、Koop、Erlend Øye、Flunk、Hocus Pocus、Gotan Project、Nouvelle Vague、Llorca、Kid Loco、Télépopmusik、Nicola Conte、Gabin）、地中海與拉丁（Dead Combo、Imam Baildi、The Dining Rooms、Chambao、Mark Barrott、A Man Called Adam、Quiet Village、Ultramarine、Suba、Federico Aubele ×2、Bajofondo Tango Club、Zuco 103、Bossacucanova、Cibelle、Skalpel、Da Lata）。
+- **產線**：研究 5 組（39 full／5 thin）→ 鉤子 2 組 → 寫作 2 組（145–240）→ 主線審稿刪 1 句含混敘述。無刪卡；廠牌更正 5 張（改為首發廠牌）。
+- **封面**：CAA 38、Apple 6（含側標／貼紙 2 張、上架前回查 CAA 500 的 2 張改 Apple）。**試聽**：ready 36、unavailable 8。頂點 0；稀有度 rare 35、uncommon 8、epic 1。
+- **寫入**：prepare 0 error → card_catalog 44/44 → KV 44 鍵回讀一致 → 靜態試聽 → seed 44 列 → **published gate 0 error**；子曲風 17,536 → 17,570。
+- **主要檔案**：`batch-progress/add-20261011-dt4/`、`onboarding-manifest-add-20261011-dt4-20261012.json`、`desc-tools/batches/*/add-20261011-dt4*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`card-subgenres.json`、`genre-tree.json`。
+
+### 2026-10-12｜dip-vinyl-shop｜downtempo 線第 3 批上架（add-20261011-dt3，45 張；卡池 18,985 → 19,030）
+
+- **本批內容**：trip-hop／abstract hip-hop 後段（Fila Brazillia、Bowery Electric、Craig Armstrong、Dot Allison、Hooverphonic、Mandalay、Alpha、Earthling、Mr. Scruff、Lemon Jelly、Supreme Beings of Leisure、Dntel、Blue States、DJ Food、DJ Vadim、Hidden Orchestra ×2、Nostalgia 77、Lack of Afro、Kid Koala、The Herbaliser、Aim、Fingathing、Madlib、Blue Sky Black Death、Free the Robots、jinsang）、chill electronica（Emancipator、Tourist、Maribou State、Rhye、Chet Faker、Petit Biscuit）、歐陸前段（Jazzanova、dZihan & Kamien、Sofa Surfers、Waldeck、Trüby Trio、Bugge Wesseltoft、Nils Petter Molvær、Koop、Jaga Jazzist、Skalpel、Télépopmusik、Nouvelle Vague）。
+- **店主**：「跑完downtempo」——同一工作階段接著跑 dt3–dt5（研究層 WebSearch 每支 ≤3）。
+- **產線**：研究 5 組（44 full／1 thin）→ 鉤子 2 組 → 寫作 2 組（175–240）→ 主線審稿改 3 句轉述引導詞 hook 為直述。無刪卡；年份更正 2 張（Craig Armstrong 1998、Wesseltoft 1996），廠牌更正 8 張。
+- **封面**：CAA 43、Apple 1、Discogs 1（兩張是上架後 CAA 回 500 才改）。**試聽**：ready 39、unavailable 6（Nouvelle Vague 的 Apple 只有 KCRW 現場重錄版，不收）。頂點 0；稀有度 rare 34、uncommon 11。
+- **寫入**：prepare 0 error → card_catalog 45/45 → KV 45 鍵回讀一致 → 靜態試聽 → seed 45 列 → **published gate 0 error**；子曲風 17,494 → 17,536。
+- **主要檔案**：`batch-progress/add-20261011-dt3/`、`onboarding-manifest-add-20261011-dt3-20261012.json`、`desc-tools/batches/*/add-20261011-dt3*`、`data/discogs-cover-registry.json`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`card-subgenres.json`、`genre-tree.json`。
+
+### 2026-10-12｜dip-vinyl-shop｜店主裁定：接力任務留在同一個工作階段跑，不再「兩批就換」
+
+- **店主原話**：「因為我曾經跑幾批換新 每次開新的都要重新訓練 反而效率很差 所以我都只在同一個做」。
+- **取代** CLAUDE.md「每個工作階段跑 2 批就換新工作階段」那句（雲端改不了 CLAUDE.md，本機請同步修訂）。接力線一律在當前工作階段跑到收尾，不寫「請開新工作階段」的交接。
+- **代價的控管**：WebSearch 是整個工作階段共用額度，所以研究層每支壓到 3 次（嚴格），其餘走 MB／Discogs API、維基 WebFetch、廠牌頁、Bandcamp；同時最多兩批在飛的規則不變。2026-10-12 實證：同一工作階段跑完 dt1、dt2、新世代爵士 nj1–nj5 共 7 批，研究品質未見下滑。
+- **主要檔案**：`PROJECT_MEMORY.md`、`batch-progress/HANDOFF-downtempo-line.md`（改成「同一工作階段接著跑」）。
+
+### 2026-10-12｜dip-vinyl-shop｜新世代爵士線第 5 批上架（add-20261012-nj5，39 張；卡池 18,946 → 18,985）——全線收尾
+
+- **本批內容**：拉美尾段與加拿大（Daymé Arocena、BADBADNOTGOOD、Christine Jensen）、日本（H ZETTRIO ×2、桑原あい ×2、Hiromi ×2、fox capture plan ×3、TRI4TH ×2、JABBERLOOP、bohemianvoodoo ×2、indigo jam unit、SOIL&"PIMP"SESSIONS ×2、黒田卓也 ×2、J-Squad、Answer to Remember ×2、類家心平、松丸契、挾間美帆 ×3）、韓國（Black String ×2、나윤선 ×3、Jihye Lee Orchestra）、印尼（Joey Alexander ×2、Dewa Budjana）。
+- **產線**：研究 5 組（34 full／5 thin）→ 鉤子 2 組 → 寫作 2 組（139–240）→ 主線審稿未改字（派寫作前先把 Eclipse 鉤子的媒體名改成「樂評」）。無刪卡；年份更正 2 張（挾間美帆兩張取日本 Verve 首發年），廠牌更正 4 張。試聽以羅馬字重查補 9 張。
+- **封面**：CAA 30、Apple 9（含 Spectrum 側標改乾淨圖）。**試聽**：ready 38、unavailable 1。頂點 0；稀有度 uncommon 21、rare 17、epic 1。
+- **寫入**：prepare 0 error → card_catalog 39/39 → KV 52 鍵回讀一致 → 靜態試聽 → seed 39 列 → **published gate 0 error**；子曲風 17,467 → 17,494。
+- **全線合計**：策展 219 → 主線刪 22（老世代 15、偏離爵士 6、MB 查無 1）→ 研究層再刪 5（house、EP、ambient、電子節拍、極簡主義各 1）→ **上架 192 張**（nj1 38、nj2 39、nj3 39、nj4 37、nj5 39），卡池 18,793 → 18,985。交接單 `batch-progress/HANDOFF-newjazz-line.md` 已標全線完成。
+- **主要檔案**：`batch-progress/add-20261012-nj5/`、`onboarding-manifest-add-20261012-nj5-20261012.json`、`desc-tools/batches/*/add-20261012-nj5*`、`batch-progress/HANDOFF-newjazz-line.md`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`card-subgenres.json`、`genre-tree.json`。
+
+### 2026-10-12｜dip-vinyl-shop｜新世代爵士線第 4 批上架（add-20261012-nj4，37 張；卡池 18,909 → 18,946）
+
+- **本批內容**：北歐後段（Marius Neset ×2、Jakob Bro、Mette Henriette）、波蘭（EABS ×2、Kuba Więcek Trio）、德奧瑞荷比（Shake Stew ×2、Michael Wollny Trio、Nik Bärtsch's Ronin、Colin Vallon Trio、STUFF.、De Beren Gieren）、法國（Laurent Bardainne、Thomas de Pourquery ×2、Anne Paceo、Sélène Saint-Aimé、Vincent Peirani、Émile Parisien）、南非與衣索比亞（Bokani Dyer、Thandi Ntuli、Asher Gamedze、Samuel Yirga）、以色列（Shai Maestro ×2、Yonathan Avishai、Omer Avital、Gilad Hekselman）、拉美（Antonio Sánchez、Amaro Freitas ×2、Antonio Loureiro、Camila Meza、Roberto Fonseca、Metá Metá）。
+- **產線**：研究 5 組（34 full／3 thin）→ 鉤子 2 組 → 寫作 2 組（166–240）→ 主線審稿刪 1 句單一來源的榜單說法。刪 2 張：Christian Lillinger《Konus》（電子節拍）、Wacław Zimpel《Lines》（寫定的極簡主義）。年份更正 2 張（Só 2013、Sons of Love 2017），廠牌更正 2 張。
+- **封面**：CAA 35（含 release 層 2）、Discogs 1（registry 295 → 296）、Apple 1。**試聽**：ready 32、unavailable 5。頂點 0；稀有度 uncommon 22、rare 10、epic 5。
+- **寫入**：prepare 0 error → card_catalog 37/37 → KV 37 鍵回讀一致 → 靜態試聽 → seed 37 列 → **published gate 0 error**；子曲風 17,441 → 17,467。
+- **主要檔案**：`batch-progress/add-20261012-nj4/`、`onboarding-manifest-add-20261012-nj4-20261012.json`、`desc-tools/batches/*/add-20261012-nj4*`、`data/discogs-cover-registry.json`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`card-subgenres.json`、`genre-tree.json`。
+
+### 2026-10-12｜dip-vinyl-shop｜新世代爵士線第 3 批上架（add-20261012-nj3，39 張；卡池 18,870 → 18,909）
+
+- **本批內容**：芝加哥後段（Rob Mazurek、Chicago Underground Duo、Resavoir、Damon Locks ×2、Isaiah Collier、Tomeka Reid、Nicole Mitchell、Jeff Parker、Marquis Hill、Joshua Abrams）、紐約（Vijay Iyer、Mary Halvorson、Tyshawn Sorey、Kris Davis、Linda May Han Oh、Melissa Aldana、Sullivan Fortner、Theo Croker ×2、Craig Taborn、The Bad Plus、Steve Lehman Octet、James Brandon Lewis）、大樂團與豎琴、歌手（Donny McCaslin、Darcy James Argue、Brandee Younger ×2、Lakecia Benjamin ×2、Jazzmeia Horn ×2）、北歐前段（Elephant9、Fire! Orchestra ×2、Jaga Jazzist ×2、Rymden、Hedvig Mollestad Trio）。
+- **產線**：研究 5 組（38 full／1 thin）→ 鉤子 2 組 → 寫作 2 組（157–240）→ 主線審稿改 2 處媒體名。無刪卡；label／scene 更正 4 張（Impulse!、Concord Jazz、TAO Forms、Craig Taborn 場景）。
+- **封面**：CAA 36、Apple 3。**試聽**：ready 36、unavailable 3。頂點 0；稀有度 epic 14、uncommon 17、rare 8。
+- **寫入**：prepare 0 error → card_catalog 39/39 → KV 39 鍵回讀一致 → 靜態試聽 → seed 39 列 → **published gate 0 error**；子曲風 17,412 → 17,441。
+- **主要檔案**：`batch-progress/add-20261012-nj3/`、`onboarding-manifest-add-20261012-nj3-20261012.json`、`desc-tools/batches/*/add-20261012-nj3*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`card-subgenres.json`、`genre-tree.json`。
+
+### 2026-10-12｜dip-vinyl-shop｜新世代爵士線第 2 批上架（add-20261012-nj2，39 張；卡池 18,831 → 18,870）
+
+- **本批內容**：英國後段（Ruby Rushton、Vels Trio、Dinosaur ×2、Laura Jurd、Kit Downes、Neil Cowley Trio、Phronesis、Elliot Galvin、Fergus McCreadie ×2、Polar Bear、Xhosa Cole、Emma Rawicz）、LA（Terrace Martin、Miles Mosley、Cameron Graves、Brandon Coleman、Ryan Porter、Sam Gendel ×2、Carlos Niño、Mark de Clive-Lowe、Jamael Dean）、爵士×嘻哈（Kassa Overall ×2、Nate Smith、Keyon Harrold、Snarky Puppy ×2、Terri Lyne Carrington）、芝加哥前段（Steve Lehman、Jaimie Branch ×3、Matana Roberts ×2、Ben LaMar Gay ×2）。
+- **產線**：研究 5 組（38 full／1 thin）→ 鉤子 2 組 → 寫作 2 組（191–240、thin 164）→ 主線審稿刪 1 句媒體評價。刪 1 張：Carlos Niño《Placenta》（ambient 拼貼）。場景／曲風／廠牌更正數張（West Coast Get Down 只留三張屬實者；Obsidian 加 classical）。
+- **封面**：CAA 34、Apple 5（含 2 張 CAA 帶側標／貼紙改用 Apple 乾淨圖）。**試聽**：ready 37、unavailable 2。頂點 0；稀有度 rare 15、uncommon 15、epic 9。
+- **寫入**：prepare 0 error → card_catalog 39/39 → KV 39 鍵回讀一致 → 靜態試聽 → seed 39 列 → **published gate 0 error**；子曲風 17,385 → 17,412。
+- **主要檔案**：`batch-progress/add-20261012-nj2/`、`onboarding-manifest-add-20261012-nj2-20261012.json`、`desc-tools/batches/*/add-20261012-nj2*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`card-subgenres.json`、`genre-tree.json`。
+
+### 2026-10-12｜dip-vinyl-shop｜新世代爵士線第 1 批上架（add-20261012-nj1，38 張；卡池 18,793 → 18,831）
+
+- **本批內容**：倫敦新浪潮（Theon Cross ×2、Binker and Moses ×3、Emma-Jean Thackray、Joe Armon-Jones ×2、Maisha、Nérija、SEED Ensemble／seed.、Tom Skinner、Ashley Henry、Chelsea Carmichael、Sarah Tandy、Moses Boyd Exodus、London Brew）、Afro／加勒比（Camilla George ×2、Zara McFarlane ×2、Soweto Kinch ×2、Sarathy Korwar ×3、Nubiyan Twist）、Gondwana 系（Matthew Halsall ×3、Nat Birchall ×2、Chip Wickham、Jasmine Myra、Ancient Infinity Orchestra）、Mansur Brown、Tenderlonious & The 22archestra。
+- **店主**：「在這開跑」——同一個工作階段接著跑上架（研究層 WebSearch 每支壓到 3–4 次）。
+- **產線**：研究 5 組（36 full／2 thin）→ 鉤子 2 組 → 寫作 2 組（202–240、thin 178）→ 主線審稿改 1 句（與 hook 重複）。刪 2 張：Tenderlonious《Hard Rain》（house）、Steam Down《Five Fruit》（EP）。年份更正 2 張（Isang 2017、If You Knew Her 2014），scene／label 更正 4 張。
+- **封面**：CAA 27、Apple 11，縮圖表逐張目視。**試聽**：ready 34、unavailable 4。三軸機器基線、頂點 0；稀有度 rare 18、uncommon 15、epic 5。
+- **寫入**：prepare 0 error → card_catalog 38/38 → KV 38 鍵回讀一致 → 靜態試聽 → seed 38 列 → **published gate 0 error**；子曲風 17,366 → 17,385。
+- **主要檔案**：`batch-progress/add-20261012-nj1/`、`onboarding-manifest-add-20261012-nj1-20261012.json`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261012-nj1*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`card-subgenres.json`、`genre-tree.json`。
+
+### 2026-10-12｜dip-vinyl-shop｜新世代爵士（2010–）策展線：策展 219 → 197 張、切 5 批卡單，交新工作階段上架
+
+- **緣由**：店主指出卡池 2010 年後的新世代爵士很缺（「像 kokoroko……這些也都是新世代的爵士……不是 downtempo」），看過策展摘要後回「開跑」。
+- **策展**：四組（英國 57、美國 63、歐陸與世界 53、亞洲 46）共 219 張、167 位藝人，跨組 0 重複、撞池 0。主線刪 22：1970–80 年代成名的老將 15（Maria Schneider、Henry Threadgill、Wadada Leo Smith、坂田明、The Necks…）、偏離爵士 6（Ishmael Ensemble、WONK、mouse on the keys、BIGYUKI、박지하、Kyoto Jazz Massive）、MB 查無 1（Byron Wallen）。年份最新到 2024；台港中查不到可靠資料未收。
+- **卡單**：197 張全 pinned（MB release-group 逐張回查），切 nj1–nj5（40／40／39／39／39），研究 a–e 各 7–8 張。
+- **交接**：`batch-progress/HANDOFF-newjazz-line.md`（每批流程、條號 9361–9760、與 downtempo 線並行時的合併注意）。這個工作階段已跑滿兩批，上架交下一個工作階段。
+- **主要檔案**：`batch-progress/newjazz-20261011/{curation-a..d.json,master.json,build-master.mjs,build-cards.mjs,build-manifest.mjs,RES/HOOK/WRITER-DISPATCH.md,rulings.md}`、`desc-tools/batches/cards/add-20261012-nj{1..5}-cards.json`。
+- **驗證**：build-master 197 張 MB 回查完成（Live 4、Compilation 1 已裁定照收，rulings 9345）；build-cards 對 seed 18,793 列撞池 0。
+
+### 2026-10-11｜dip-vinyl-shop｜downtempo 線第 2 批上架（add-20261011-dt2，45 張；卡池 18,748 → 18,793）；dt3–dt5 交下一個工作階段
+
+- **本批內容**：日本 dub（Mute Beat、こだま和文、Dry & Heavy、Little Tempo）、Easy Star All-Stars、ambient dub（Divination、Bill Laswell、Ott、Kanka、Groundation、Dub Colossus、Prince Fatty、Banco de Gaia、Nordub）、英國 trip-hop 第二波（Olive、Alpha、Smoke City、Mono、Esthero、Martina Topley-Bird、Beth Orton、Jhelisa）、Ninja Tune／Mo' Wax 系（The Herbaliser、Kid Koala、Funki Porcini、Money Mark、Up, Bustle & Out、Quantic、Red Snapper）、beat／chill electronica（Yppah、Shigeto、Romare、Submotion Orchestra、FKJ、tomppabeats）、Lovage、Howie B、Rae & Christian。
+- **產線**：研究 5 組（44 full／1 thin）→ 鉤子 2 組 → 寫作 2 組（184–240、thin 169）→ 主線逐張審稿：改 3 句帶「據說」的開頭為直述，其餘未改字。年份／廠牌更正 4 張（Olive 1996、A Silent Prayer 2003、クワイエット・レゲエ 補 Sony、Rae & Christian 改 Grand Central）。
+- **封面**：CAA 37、Apple 7、Discogs 1（registry 294→295）。**試聽**：ready 39、unavailable 6。三軸機器基線、經典 5 壓 4；頂點 0。稀有度 rare 26、uncommon 15、epic 4。
+- **寫入**：prepare 0 error → card_catalog 45/45 → KV 47 鍵回讀一致 → 靜態試聽 → seed 45 列 → **published gate 0 error**。子曲風 17,327 → 17,366（新卡 39/45 落位，3 張 worker 查無標籤）。
+- **接續**：照 CLAUDE.md「每工作階段 2 批」，dt3–dt5（134 張，卡單已備）交下一個工作階段，步驟全寫在 `batch-progress/HANDOFF-downtempo-line.md`。
+- 主要檔案：`onboarding-manifest-add-20261011-dt2-20261011.json`、`batch-progress/add-20261011-dt2/`（rulings 9021–9098）、`desc-tools/batches/*/add-20261011-dt2*`、`batch-progress/HANDOFF-downtempo-line.md`、`batch-progress/downtempo-20261011/cover-sheet.cjs`，其餘同 dt1。
+
+### 2026-10-11｜dip-vinyl-shop｜downtempo／chill dub 策展線第 1 批上架（add-20261011-dt1，45 張；卡池 18,703 → 18,748）
+
+店主：「補強downtempo類型 很chill的音樂類型 策展」→「太少了 至少找好聽的200張以上 dub的chill也要」。四組策展合計 231 張，跨組去重與主線刪除後定案 **223 張、分 5 批**（`batch-progress/downtempo-20261011/`：curation-a…d、master.json、build-master／build-cards／meta／picks／build-manifest／add-registry 腳本與四份派工單）。
+
+- **本批內容**：chill dub——牙買加 roots dub（Augustus Pablo、Joe Gibbs、Scientist、The Upsetters…）、On-U Sound（Dub Syndicate、Creation Rebel、New Age Steppers、Singers & Players、African Head Charge）、英國 dub（Mad Professor、Dennis Bovell、Aswad、Alpha & Omega、Jah Wobble、Smith & Mighty、Massive Attack v Mad Professor）、dub techno（Moritz von Oswald Trio、Deadbeat、Intrusion、Echospace、Fenin）。
+- **產線**：卡牌版全套——研究 5 組（Sonnet，45 張 full 42／thin 3）→ 鉤子 2 組（Opus）→ 寫作 2 組（Opus，字數 full 196–240、thin 142–172）→ 主線逐張審稿（未改字）。QA 三階段全過。
+- **身分**：全 pinned（MB release-group）；策展誤掛 MBID 一筆（Cloak & Dagger）主線改釘；年份更正兩張（Stoned Immaculate、Overstanding → 1991）。
+- **封面**：CAA 41、Discogs 2（登錄 registry 292→294）、Apple 2；縮圖表逐張目視。
+- **試聽**：Apple ready 41、unavailable 4（二合一 CD 取對應段落的軌）。
+- **三軸**：/album-rating 機器基線，經典 5 壓 4；頂點 0。稀有度 uncommon 30、epic 11、rare 4。
+- **寫入**：prepare gate 0 error → card_catalog 45/45 → KV 45 鍵回讀一致 → 靜態試聽 → seed 45 列 → **published gate 0 error**。子曲風 17,282 → 17,327（新卡 45/45 落位）。
+- 主要檔案：`onboarding-manifest-add-20261011-dt1-20261011.json`、`batch-progress/add-20261011-dt1/`（rulings 8941–9016、meta、試聽與封面裁定）、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261011-dt1*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-{map,runtime}-v1.json`、`card-subgenres.json`、`genre-tree.json`、`data/discogs-cover-registry.json`。
+- 待續：dt2（研究已交、鉤子進行中）；dt3–dt5 依 CLAUDE.md「每工作階段 2 批」交接下一個工作階段。
+
 ### 2026-10-11｜dip-vinyl-shop｜藝人介紹第八輪二十批上線（雲端，ar-d-064～083；747 位）
 
 店主說「再二十批」→ 雲端一路接力跑完 ar-d-064～083，推分支 `claude/artist-intro-interactive-plan-ycws4h`，開 PR 等店主合併。
@@ -9,6 +140,7 @@
 - **待本機**：KV 上線簡介的修正見 `audits/ARTIST-PUB-ISSUES.md`；卡池年份存疑 14 張（清單在 rulings 收尾段）。
 - 主要檔案：`data/artist-intros/*`、`desc-tools/batches/artist/{research,output}/ar-d-06x～08x-*`、`desc-tools/batches/artist/progress.json`、`batch-progress/artist-intro/ar-c-rulings.md`（「第八輪二十批接力」段與收尾段）、`audits/ARTIST-PUB-ISSUES.md`。
 - 驗證：每批 `qa-artist.mjs` 只剩「缺 N 位」（即不寫名單）；`build-artist-intros.mjs` 6,556 位、64 分片有內容。沒寫 KV、seed、card_catalog（本輪不需要）。
+
 
 ### 2026-10-10｜dip-vinyl-shop｜店內待上架 37 張上卡池（雲端，add-20261010-shop；卡池 18,666 → 18,703）
 

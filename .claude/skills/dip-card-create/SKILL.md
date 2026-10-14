@@ -123,6 +123,9 @@ node dip-vinyl-shop/scripts/verify-album-onboarding.mjs <manifest> --published
 本次相關檔案、`git fetch origin` 確認無分歧後 push（不需事先問店主）、回報精確數量
 （候選／排除／一般卡／頂點／preview ready･unavailable･disabled）。
 
+**接著補藝人介紹**（2026-10-13 店主指示）：本批藝人中還沒有介紹、也沒排隊的，補名冊、切 `ar-d-xxx`，
+照 `dip-artist-intro` skill 跑完再收工（`ALBUM_ONBOARDING.md` §11）。
+
 ## 紅線與陷阱（本產線專屬，通用的見兩個母 skill）
 
 - **MusicBrainz／CAA 只能離線批次**（1 req/s＋UA 檢查），絕不進 worker 即時查詢；

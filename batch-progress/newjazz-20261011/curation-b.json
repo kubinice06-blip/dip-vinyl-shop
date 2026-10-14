@@ -1,0 +1,940 @@
+{
+ "group": "b",
+ "factions": [
+  {
+   "id": "wc",
+   "zh": "LA West Coast Get Down 與 beat-jazz",
+   "count": 11,
+   "why": "WCGD 成員、Brainfeeder／Nonesuch／International Anthem 旗下 LA 場景、beat 與靈性爵士"
+  },
+  {
+   "id": "hh",
+   "zh": "爵士×嘻哈／融合／社會議題",
+   "count": 8,
+   "why": "Kassa Overall、Nate Smith、Snarky Puppy、Carrington、Lehman 的 hip-hop 融合"
+  },
+  {
+   "id": "chi",
+   "zh": "芝加哥 International Anthem 與實驗派",
+   "count": 18,
+   "why": "芝加哥 AACM 與 Anthem 圈：Jaimie Branch、Matana Roberts、Ben LaMar Gay、Damon Locks 等"
+  },
+  {
+   "id": "ny",
+   "zh": "紐約 post-bop 新生代與前衛鋼琴三重奏",
+   "count": 16,
+   "why": "Vijay、Halvorson、Sorey、Davis、Taborn、Bad Plus、Lehman、Threadgill 等"
+  },
+  {
+   "id": "bb",
+   "zh": "大樂團與當代作曲",
+   "count": 3,
+   "why": "Maria Schneider、Darcy James Argue"
+  },
+  {
+   "id": "spi",
+   "zh": "靈性復興與豎琴",
+   "count": 5,
+   "why": "Brandee Younger、Sun Ra Arkestra、Lakecia Benjamin"
+  },
+  {
+   "id": "voc",
+   "zh": "歌手新世代",
+   "count": 2,
+   "why": "Jazzmeia Horn（Samara Joy、Cécile、Esperanza 卡池已有）"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Terrace Martin",
+   "album": "Velvet Portraits",
+   "year": 2016,
+   "label": "Ropeadope / Sounds of Crenshaw",
+   "faction": "wc",
+   "why": "WCGD 圈的製作人兼薩克斯風手，Kamasi、Glasper、Herbie 同台的 jazz／hip-hop／funk 代表作",
+   "evidence": [
+    "https://musicbrainz.org/release-group/ad0bd208-0790-4cda-b9a2-dec399fa9213"
+   ],
+   "mbRgMbid": "ad0bd208-0790-4cda-b9a2-dec399fa9213",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Miles Mosley",
+   "album": "Uprising",
+   "year": 2017,
+   "label": "Verve",
+   "faction": "wc",
+   "why": "West Coast Get Down 貝斯手的個人首作，電貝斯與立式貝斯的 LA 靈魂爵士",
+   "evidence": [
+    "https://musicbrainz.org/release-group/ad6315f7-7762-4fa0-8574-0b9ae28716ef"
+   ],
+   "mbRgMbid": "ad6315f7-7762-4fa0-8574-0b9ae28716ef",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Cameron Graves",
+   "album": "Planetary Prince",
+   "year": 2017,
+   "label": "Mack Avenue",
+   "faction": "wc",
+   "why": "WCGD 鋼琴手的 metal-fusion 靈性爵士，與 Kamasi 同源的另一極端",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f609e58d-4135-4b67-aadf-4b2dc3996840"
+   ],
+   "mbRgMbid": "f609e58d-4135-4b67-aadf-4b2dc3996840",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Brandon Coleman",
+   "album": "Resistance",
+   "year": 2018,
+   "label": "Brainfeeder",
+   "faction": "wc",
+   "why": "WCGD 鍵盤手在 Brainfeeder 的 funk-fusion 作品，Kamasi 與 Thundercat 客演",
+   "evidence": [
+    "https://musicbrainz.org/release-group/b4033cfd-7528-474c-84d0-7ab234d85740"
+   ],
+   "mbRgMbid": "b4033cfd-7528-474c-84d0-7ab234d85740",
+   "poolHas": 0,
+   "uncertain": "MB 首發年為 2018-09-14（Brainfeeder／Beat Records）；未另查維基"
+  },
+  {
+   "artist": "Ryan Porter",
+   "album": "The Optimist",
+   "year": 2018,
+   "label": "World Galaxy",
+   "faction": "wc",
+   "why": "WCGD 長號手的 World Galaxy 作品，LA 靈性爵士圈的核心樂手視角（改收 The Optimist：Force For Good 在 MB 無日期無廠牌）",
+   "evidence": [
+    "https://musicbrainz.org/release-group/499fc871-1001-4f4f-be05-108917e69ad8"
+   ],
+   "mbRgMbid": "499fc871-1001-4f4f-be05-108917e69ad8",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Sam Gendel",
+   "album": "Satin Doll",
+   "year": 2020,
+   "label": "Nonesuch",
+   "faction": "wc",
+   "why": "LA 前衛薩克斯風手重新解構爵士標準曲，Nonesuch 出版的 beat-jazz／環境爵士代表",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f99fa236-682c-4aa5-92a8-8dbc2fd768e6"
+   ],
+   "mbRgMbid": "f99fa236-682c-4aa5-92a8-8dbc2fd768e6",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Sam Gendel & Sam Wilkes",
+   "album": "Music for Saxofone and Bass Guitar",
+   "year": 2018,
+   "label": "Leaving Records",
+   "faction": "wc",
+   "why": "LA 即興與錄音室拼貼的奠基作，Gendel／Wilkes 雙人組新世代爵士圈指標",
+   "evidence": [
+    "https://musicbrainz.org/release-group/38038766-2701-45c5-8aaa-42ed82d4b7ed"
+   ],
+   "mbRgMbid": "38038766-2701-45c5-8aaa-42ed82d4b7ed",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Carlos Niño & Friends",
+   "album": "More Energy Fields, Current",
+   "year": 2021,
+   "label": "International Anthem",
+   "faction": "wc",
+   "why": "Carlos Niño 的靈性即興合奏，International Anthem 旗下洛杉磯 new age／spiritual jazz 一脈",
+   "evidence": [
+    "https://musicbrainz.org/release-group/c422650d-1060-4b49-9e84-a2c17dd25bb3"
+   ],
+   "mbRgMbid": "c422650d-1060-4b49-9e84-a2c17dd25bb3",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Carlos Niño & Friends",
+   "album": "Placenta",
+   "year": 2024,
+   "label": "International Anthem",
+   "faction": "wc",
+   "why": "Carlos Niño & Friends 近作，延續 LA 靈性復興與環境即興",
+   "evidence": [
+    "https://musicbrainz.org/release-group/a02b21eb-c805-4651-b644-f48f65dc5eff"
+   ],
+   "mbRgMbid": "a02b21eb-c805-4651-b644-f48f65dc5eff",
+   "poolHas": 0,
+   "uncertain": "MB 首發年 2024-05-24（單一 release）；風格偏 spiritual／ambient jazz"
+  },
+  {
+   "artist": "Mark de Clive-Lowe",
+   "album": "Heritage",
+   "year": 2019,
+   "label": "Ropeadope",
+   "faction": "wc",
+   "why": "LA 的鍵盤手／製作人，現場即興＋beat 的新世代爵士代表",
+   "evidence": [
+    "https://musicbrainz.org/release-group/932ef005-0d56-4577-839f-e25da5465d9a"
+   ],
+   "mbRgMbid": "932ef005-0d56-4577-839f-e25da5465d9a",
+   "poolHas": 0,
+   "uncertain": "MB 歸屬 2019-02-08；實為其現場系列，風格 jazz/beat 交界"
+  },
+  {
+   "artist": "Jamael Dean",
+   "album": "Primordial Waters",
+   "year": 2021,
+   "label": "Stones Throw",
+   "faction": "wc",
+   "why": "LA 年輕鋼琴手，spiritual jazz 與 beat 文化交融，Stones Throw 出版",
+   "evidence": [
+    "https://musicbrainz.org/release-group/00b8520b-89c8-44e0-b6d0-d15fa91a5523"
+   ],
+   "mbRgMbid": "00b8520b-89c8-44e0-b6d0-d15fa91a5523",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Kassa Overall",
+   "album": "I Think I'm Good",
+   "year": 2020,
+   "label": "Brownswood Recordings",
+   "faction": "hh",
+   "why": "鼓手／製作人把 hip-hop 製作語法塞進爵士的代表作",
+   "evidence": [
+    "https://musicbrainz.org/release-group/4571a593-8617-4695-9249-bd9e145b0f98"
+   ],
+   "mbRgMbid": "4571a593-8617-4695-9249-bd9e145b0f98",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Kassa Overall",
+   "album": "ANIMALS",
+   "year": 2023,
+   "label": "Warp",
+   "faction": "hh",
+   "why": "Warp 出版，爵士鼓手整合電子與饒舌的成熟之作",
+   "evidence": [
+    "https://musicbrainz.org/release-group/83ed57ce-d894-4c2a-8ac0-7b09cbf9f613"
+   ],
+   "mbRgMbid": "83ed57ce-d894-4c2a-8ac0-7b09cbf9f613",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Nate Smith",
+   "album": "Kinfolk: Postcards from Everywhere",
+   "year": 2017,
+   "label": "Ropeadope",
+   "faction": "hh",
+   "why": "鼓手兼作曲人，把 R&B、hip-hop 律動融入爵士的 Kinfolk 系列",
+   "evidence": [
+    "https://musicbrainz.org/release-group/0153a765-6c68-4336-8a1d-74d6bebef24e"
+   ],
+   "mbRgMbid": "0153a765-6c68-4336-8a1d-74d6bebef24e",
+   "poolHas": 0,
+   "uncertain": "MB 有兩筆重複 release-group（fb85abac-776d-4756-b406-4f15ea01c23f）"
+  },
+  {
+   "artist": "Keyon Harrold",
+   "album": "The Mugician",
+   "year": 2017,
+   "label": "Columbia / Legacy",
+   "faction": "hh",
+   "why": "小號手，Glasper 圈外交的 jazz／hip-hop／R&B 融合，Mass Appeal 合作",
+   "evidence": [
+    "https://musicbrainz.org/release-group/89278b43-5e0b-4685-8869-e5fd71e27000"
+   ],
+   "mbRgMbid": "89278b43-5e0b-4685-8869-e5fd71e27000",
+   "poolHas": 0,
+   "uncertain": "MB 首發年 2017-09-29；若店內有更早自發行版本以店內為準"
+  },
+  {
+   "artist": "Snarky Puppy",
+   "album": "groundUP",
+   "year": 2012,
+   "label": "Ropeadope / GroundUP",
+   "faction": "hh",
+   "why": "卡池只有 2006／2007，補 2010 後 groundUP 世代的現場代表作",
+   "evidence": [
+    "https://musicbrainz.org/release-group/7812b93f-be89-46b1-b69a-acf4b0076c93"
+   ],
+   "mbRgMbid": "7812b93f-be89-46b1-b69a-acf4b0076c93",
+   "poolHas": 2,
+   "uncertain": "現場錄音（棚內有觀眾）；MB 標 AlbumLive"
+  },
+  {
+   "artist": "Snarky Puppy",
+   "album": "We Like It Here",
+   "year": 2014,
+   "label": "Ropeadope / GroundUP",
+   "faction": "hh",
+   "why": "Snarky Puppy 轉紅的現場名作，Grammy 當代器樂得獎",
+   "evidence": [
+    "https://musicbrainz.org/release-group/fcf368c7-9ce7-487e-bd95-14543f6764cd"
+   ],
+   "mbRgMbid": "fcf368c7-9ce7-487e-bd95-14543f6764cd",
+   "poolHas": 2,
+   "uncertain": "現場錄音；Grammy 得獎說法未逐項查證"
+  },
+  {
+   "artist": "Terri Lyne Carrington & Social Science",
+   "album": "Waiting Game",
+   "year": 2019,
+   "label": "Motéma",
+   "faction": "hh",
+   "why": "鼓手 Terri Lyne Carrington 帶領的社會議題爵士，Grammy 肯定的代表作",
+   "evidence": [
+    "https://musicbrainz.org/release-group/b97cf0db-3536-4cd1-ac21-97aa9478dba7"
+   ],
+   "mbRgMbid": "b97cf0db-3536-4cd1-ac21-97aa9478dba7",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Steve Lehman",
+   "album": "Sélébéyone",
+   "year": 2016,
+   "label": "Pi Recordings",
+   "faction": "hh",
+   "why": "薩克斯風手 Lehman 與塞內加爾饒舌合作，spectral 和聲加 hip-hop 的新世代實驗",
+   "evidence": [
+    "https://musicbrainz.org/release-group/da045096-0f3a-43c5-9a91-93df8b91d2e0"
+   ],
+   "mbRgMbid": "da045096-0f3a-43c5-9a91-93df8b91d2e0",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Jaimie Branch",
+   "album": "Fly or Die",
+   "year": 2017,
+   "label": "International Anthem",
+   "faction": "chi",
+   "why": "芝加哥 International Anthem 小號手首作，新世代自由爵士的標誌",
+   "evidence": [
+    "https://musicbrainz.org/release-group/467688f6-de99-422e-ab34-c1c271699ce6"
+   ],
+   "mbRgMbid": "467688f6-de99-422e-ab34-c1c271699ce6",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Jaimie Branch",
+   "album": "Fly or Die II: bird dogs of paradise",
+   "year": 2019,
+   "label": "International Anthem",
+   "faction": "chi",
+   "why": "第二作，社會憤怒與旋律並存的新世代爵士代表",
+   "evidence": [
+    "https://musicbrainz.org/release-group/ea25e6f4-c41d-4f5d-afa8-c76a5a95aac2"
+   ],
+   "mbRgMbid": "ea25e6f4-c41d-4f5d-afa8-c76a5a95aac2",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Jaimie Branch",
+   "album": "Fly or Die Fly or Die Fly or Die ((world war))",
+   "year": 2023,
+   "label": "International Anthem",
+   "faction": "chi",
+   "why": "身後出版的第三作，維基確認 2023-08-25",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f8994372-9e73-4241-9ec5-672707f01738"
+   ],
+   "mbRgMbid": "f8994372-9e73-4241-9ec5-672707f01738",
+   "poolHas": 0,
+   "uncertain": "遺作"
+  },
+  {
+   "artist": "Matana Roberts",
+   "album": "Coin Coin Chapter One: Gens de couleur libres",
+   "year": 2011,
+   "label": "Constellation",
+   "faction": "chi",
+   "why": "薩克斯風手 Coin Coin 系列第一章，美國黑人記憶的實驗爵士",
+   "evidence": [
+    "https://musicbrainz.org/release-group/30bb9be4-c39a-4803-b19f-eb171b88ab04"
+   ],
+   "mbRgMbid": "30bb9be4-c39a-4803-b19f-eb171b88ab04",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Matana Roberts",
+   "album": "Coin Coin Chapter Three: River Run Thee",
+   "year": 2015,
+   "label": "Constellation",
+   "faction": "chi",
+   "why": "Coin Coin 系列公認最佳章節之一",
+   "evidence": [
+    "https://musicbrainz.org/release-group/7badc600-c795-4cdd-85e3-8d9e011b5e3b"
+   ],
+   "mbRgMbid": "7badc600-c795-4cdd-85e3-8d9e011b5e3b",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Ben LaMar Gay",
+   "album": "Downtown Castles Can Never Block the Sun",
+   "year": 2018,
+   "label": "International Anthem",
+   "faction": "chi",
+   "why": "芝加哥短號手兼作曲人，International Anthem 首張，混合爵士與民謠實驗",
+   "evidence": [
+    "https://musicbrainz.org/release-group/b4ac7104-8819-43b4-9226-4b69046e1073"
+   ],
+   "mbRgMbid": "b4ac7104-8819-43b4-9226-4b69046e1073",
+   "poolHas": 0,
+   "uncertain": "MB 類型標為 compilation，實為其公認首張專輯"
+  },
+  {
+   "artist": "Ben LaMar Gay",
+   "album": "Open Arms to Open Us",
+   "year": 2021,
+   "label": "International Anthem",
+   "faction": "chi",
+   "why": "芝加哥獨特世界爵士聲響，Anthem 代表作",
+   "evidence": [
+    "https://musicbrainz.org/release-group/cbb52b80-15bf-4fdf-a6e8-983ecce8344b"
+   ],
+   "mbRgMbid": "cbb52b80-15bf-4fdf-a6e8-983ecce8344b",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Rob Mazurek & Exploding Star Orchestra",
+   "album": "Galactic Parables: Volume 1",
+   "year": 2015,
+   "label": "Cuneiform",
+   "faction": "chi",
+   "why": "Mazurek 的大編制宇宙爵士，芝加哥前衛承襲 Sun Ra 的代表作",
+   "evidence": [
+    "https://musicbrainz.org/release-group/ca7963e8-14b7-4168-b2aa-388db11ab7f4"
+   ],
+   "mbRgMbid": "ca7963e8-14b7-4168-b2aa-388db11ab7f4",
+   "poolHas": 0,
+   "uncertain": "現場錄音；MB 標 AlbumLive"
+  },
+  {
+   "artist": "Chicago Underground Duo",
+   "album": "Locus",
+   "year": 2014,
+   "label": "Northern Spy",
+   "faction": "chi",
+   "why": "Mazurek 與 Chad Taylor 的雙人組，電子與打擊的芝加哥爵士",
+   "evidence": [
+    "https://musicbrainz.org/release-group/3bed6cc0-1f65-4284-92be-1c071a912bca"
+   ],
+   "mbRgMbid": "3bed6cc0-1f65-4284-92be-1c071a912bca",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Resavoir",
+   "album": "Resavoir",
+   "year": 2019,
+   "label": "International Anthem",
+   "faction": "chi",
+   "why": "Chicago 場景 International Anthem 旗下，新世代 jazz／beat／soul 交融",
+   "evidence": [
+    "https://musicbrainz.org/release-group/bc274581-52a0-4a0a-ae54-229b91b10ef3"
+   ],
+   "mbRgMbid": "bc274581-52a0-4a0a-ae54-229b91b10ef3",
+   "poolHas": 0,
+   "uncertain": "MB 另有 2023 同名 release-group，注意勿混"
+  },
+  {
+   "artist": "Damon Locks Black Monument Ensemble",
+   "album": "Where Future Unfolds",
+   "year": 2019,
+   "label": "International Anthem",
+   "faction": "chi",
+   "why": "芝加哥聲音藝術家的集體現場，爵士、spoken word 與社會運動",
+   "evidence": [
+    "https://musicbrainz.org/release-group/626f5ce3-71e3-4529-940a-a63b8f8a6749"
+   ],
+   "mbRgMbid": "626f5ce3-71e3-4529-940a-a63b8f8a6749",
+   "poolHas": 0,
+   "uncertain": "現場錄音（MB 標 AlbumLive）；公認代表作"
+  },
+  {
+   "artist": "Damon Locks Black Monument Ensemble",
+   "album": "NOW",
+   "year": 2021,
+   "label": "International Anthem",
+   "faction": "chi",
+   "why": "Where Future Unfolds 之後的錄音室作，節奏與合唱更成熟",
+   "evidence": [
+    "https://musicbrainz.org/release-group/32bb2c8b-8a70-4976-8c64-8414c6686538"
+   ],
+   "mbRgMbid": "32bb2c8b-8a70-4976-8c64-8414c6686538",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Isaiah Collier & The Chosen Few",
+   "album": "Cosmic Transitions",
+   "year": 2021,
+   "label": "Division 81",
+   "faction": "chi",
+   "why": "芝加哥薩克斯風手，Coltrane 靈性傳承的新世代代表",
+   "evidence": [
+    "https://musicbrainz.org/release-group/95d285ec-2443-4d85-8597-aa8240aba391"
+   ],
+   "mbRgMbid": "95d285ec-2443-4d85-8597-aa8240aba391",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Tomeka Reid Quartet",
+   "album": "Tomeka Reid Quartet",
+   "year": 2015,
+   "label": "Thirsty Ear",
+   "faction": "chi",
+   "why": "芝加哥大提琴手 Reid 的首張四重奏，AACM 新世代",
+   "evidence": [
+    "https://musicbrainz.org/release-group/5783b639-fbc9-4500-9724-b324ee744d54"
+   ],
+   "mbRgMbid": "5783b639-fbc9-4500-9724-b324ee744d54",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Nicole Mitchell",
+   "album": "Mandorla Awakening II: Emerging Worlds",
+   "year": 2017,
+   "label": "FPE",
+   "faction": "chi",
+   "why": "AACM 長笛手 Nicole Mitchell 的未來主義黑人爵士",
+   "evidence": [
+    "https://musicbrainz.org/release-group/72af9fbb-9378-400b-9aed-b6d25cb099c7"
+   ],
+   "mbRgMbid": "72af9fbb-9378-400b-9aed-b6d25cb099c7",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Jeff Parker & The New Breed",
+   "album": "Suite for Max Brown",
+   "year": 2020,
+   "label": "International Anthem / Nonesuch",
+   "faction": "chi",
+   "why": "Jeff Parker 的 beat-jazz 新作，International Anthem 時期代表作",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f66c9888-b308-4768-8049-826ecabab459"
+   ],
+   "mbRgMbid": "f66c9888-b308-4768-8049-826ecabab459",
+   "poolHas": 2,
+   "uncertain": "卡池已有 Jeff Parker 的 The New Breed（2016），本張為不同專輯"
+  },
+  {
+   "artist": "Marquis Hill",
+   "album": "The Way We Play",
+   "year": 2016,
+   "label": "Concord Jazz",
+   "faction": "chi",
+   "why": "芝加哥小號手 Blue Note 世代新秀，Monk 大賽得主，hip-hop 感的後波普",
+   "evidence": [
+    "https://musicbrainz.org/release-group/823f2559-3538-4d6c-b94e-85cd1e685c0d"
+   ],
+   "mbRgMbid": "823f2559-3538-4d6c-b94e-85cd1e685c0d",
+   "poolHas": 0,
+   "uncertain": "Monk 大賽說法未逐項查證"
+  },
+  {
+   "artist": "Joshua Abrams",
+   "album": "Magnetoception",
+   "year": 2015,
+   "label": "Eremite",
+   "faction": "chi",
+   "why": "芝加哥貝斯手的 Natural Information 系列，結合 guimbri 與極簡迴圈",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f4ab15a8-db72-4503-b4bc-76113b19355c"
+   ],
+   "mbRgMbid": "f4ab15a8-db72-4503-b4bc-76113b19355c",
+   "poolHas": 0,
+   "uncertain": "MB 署名 Joshua Abrams；實為 Natural Information 樂團"
+  },
+  {
+   "artist": "Vijay Iyer Sextet",
+   "album": "Far From Over",
+   "year": 2017,
+   "label": "ECM",
+   "faction": "ny",
+   "why": "卡池已有 2 張，補 ECM 六重奏代表作",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d8aef6bc-490a-4c92-84c4-f8bbc1408cf4"
+   ],
+   "mbRgMbid": "d8aef6bc-490a-4c92-84c4-f8bbc1408cf4",
+   "poolHas": 2,
+   "uncertain": ""
+  },
+  {
+   "artist": "Mary Halvorson",
+   "album": "Code Girl",
+   "year": 2018,
+   "label": "Firehouse 12",
+   "faction": "ny",
+   "why": "卡池已有 2 張，補她的 Code Girl 歌曲作品",
+   "evidence": [
+    "https://musicbrainz.org/release-group/4fab8e74-c4bf-4ff0-8a9e-b6d8be3333fe"
+   ],
+   "mbRgMbid": "4fab8e74-c4bf-4ff0-8a9e-b6d8be3333fe",
+   "poolHas": 2,
+   "uncertain": ""
+  },
+  {
+   "artist": "Tyshawn Sorey",
+   "album": "The Inner Spectrum of Variables",
+   "year": 2016,
+   "label": "Pi Recordings",
+   "faction": "ny",
+   "why": "鼓手兼作曲家的室內爵士，近年美國前衛核心",
+   "evidence": [
+    "https://musicbrainz.org/release-group/c2724f66-6305-4fb8-bbab-a2895d86cf33"
+   ],
+   "mbRgMbid": "c2724f66-6305-4fb8-bbab-a2895d86cf33",
+   "poolHas": 1,
+   "uncertain": ""
+  },
+  {
+   "artist": "Kris Davis",
+   "album": "Diatom Ribbons",
+   "year": 2019,
+   "label": "Pyroclastic",
+   "faction": "ny",
+   "why": "鋼琴家 Kris Davis 邀 Terri Lyne Carrington 等的跨界之作",
+   "evidence": [
+    "https://musicbrainz.org/release-group/361334ed-41c1-443f-b7c0-12248e943ccf"
+   ],
+   "mbRgMbid": "361334ed-41c1-443f-b7c0-12248e943ccf",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Linda May Han Oh",
+   "album": "Walk Against Wind",
+   "year": 2017,
+   "label": "Biophilia",
+   "faction": "ny",
+   "why": "馬來西亞出生、紐約活躍的貝斯手／作曲人，Pat Metheny 樂團成員",
+   "evidence": [
+    "https://musicbrainz.org/release-group/33841373-90cf-47d5-b13e-c85fd560ae27"
+   ],
+   "mbRgMbid": "33841373-90cf-47d5-b13e-c85fd560ae27",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Melissa Aldana",
+   "album": "Visions",
+   "year": 2019,
+   "label": "Motéma",
+   "faction": "ny",
+   "why": "智利出生的薩克斯風手，Frida Kahlo 靈感專輯，卡池已有 3 張",
+   "evidence": [
+    "https://musicbrainz.org/release-group/1528a366-e622-4e3e-9365-01c011f4b86d"
+   ],
+   "mbRgMbid": "1528a366-e622-4e3e-9365-01c011f4b86d",
+   "poolHas": 3,
+   "uncertain": ""
+  },
+  {
+   "artist": "Sullivan Fortner",
+   "album": "Aria",
+   "year": 2015,
+   "label": "Impulse!",
+   "faction": "ny",
+   "why": "鋼琴家 Fortner 的 Impulse! 首作，紐約新生代鋼琴代表",
+   "evidence": [
+    "https://musicbrainz.org/release-group/3eeb28d4-a84a-4a03-b624-214a373ba70f"
+   ],
+   "mbRgMbid": "3eeb28d4-a84a-4a03-b624-214a373ba70f",
+   "poolHas": 0,
+   "uncertain": "維基與 MB 同為 2015；Impulse!"
+  },
+  {
+   "artist": "Theo Croker",
+   "album": "Afro Physicist",
+   "year": 2014,
+   "label": "OKeh",
+   "faction": "ny",
+   "why": "小號手 Theo Croker 的 OKeh 首作，hip-hop 與新世代融合",
+   "evidence": [
+    "https://musicbrainz.org/release-group/33923576-7028-4a0f-a9f9-0bd90e78c628"
+   ],
+   "mbRgMbid": "33923576-7028-4a0f-a9f9-0bd90e78c628",
+   "poolHas": 0,
+   "uncertain": "MB 拼寫為 Afro Physicist；常見拼寫 AfroPhysicist"
+  },
+  {
+   "artist": "Theo Croker",
+   "album": "Star People Nation",
+   "year": 2019,
+   "label": "Masterworks",
+   "faction": "ny",
+   "why": "Croker 的 Sony Masterworks 代表作，hip-hop／soul 與爵士融合",
+   "evidence": [
+    "https://musicbrainz.org/release-group/26407b26-fbe6-4fa3-ad79-01b665608497"
+   ],
+   "mbRgMbid": "26407b26-fbe6-4fa3-ad79-01b665608497",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Craig Taborn",
+   "album": "Daylight Ghosts",
+   "year": 2017,
+   "label": "ECM",
+   "faction": "ny",
+   "why": "鍵盤手 Taborn 在 ECM 的四重奏，美國前衛核心",
+   "evidence": [
+    "https://musicbrainz.org/release-group/0ec70da5-2dd7-4f3f-884f-5187867d8d94"
+   ],
+   "mbRgMbid": "0ec70da5-2dd7-4f3f-884f-5187867d8d94",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "The Bad Plus",
+   "album": "Made Possible",
+   "year": 2012,
+   "label": "eOne",
+   "faction": "ny",
+   "why": "卡池只有 2003，補 2010 後鋼琴三重奏新浪潮代表",
+   "evidence": [
+    "https://musicbrainz.org/release-group/64e3d262-0265-4fc8-bf86-7766045b0bbf"
+   ],
+   "mbRgMbid": "64e3d262-0265-4fc8-bf86-7766045b0bbf",
+   "poolHas": 1,
+   "uncertain": ""
+  },
+  {
+   "artist": "Steve Lehman Octet",
+   "album": "Mise en Abîme",
+   "year": 2014,
+   "label": "Pi Recordings",
+   "faction": "ny",
+   "why": "spectral 和聲加八重奏，Lehman 的代表作",
+   "evidence": [
+    "https://musicbrainz.org/release-group/ff1d67e7-9bf4-44bc-9562-a36b1a407e5f"
+   ],
+   "mbRgMbid": "ff1d67e7-9bf4-44bc-9562-a36b1a407e5f",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Henry Threadgill Zooid",
+   "album": "In for a Penny, In for a Pound",
+   "year": 2015,
+   "label": "Pi Recordings",
+   "faction": "ny",
+   "why": "老將在新世代場景的核心角色，作品獲普立茲音樂獎",
+   "evidence": [
+    "https://musicbrainz.org/release-group/0a3e461f-2b1a-428f-b0ed-f97c23572dd4"
+   ],
+   "mbRgMbid": "0a3e461f-2b1a-428f-b0ed-f97c23572dd4",
+   "poolHas": 2,
+   "uncertain": "普立茲說法未查證"
+  },
+  {
+   "artist": "Wadada Leo Smith",
+   "album": "Ten Freedom Summers",
+   "year": 2012,
+   "label": "Cuneiform",
+   "faction": "ny",
+   "why": "小號手 Wadada Leo Smith 的民權史詩，四張 CD 規模",
+   "evidence": [
+    "https://musicbrainz.org/release-group/b22bbe50-de0a-47d9-9e94-90e3e541d297"
+   ],
+   "mbRgMbid": "b22bbe50-de0a-47d9-9e94-90e3e541d297",
+   "poolHas": 0,
+   "uncertain": "多碟製品，MB 視為單張專輯"
+  },
+  {
+   "artist": "James Brandon Lewis",
+   "album": "Jesup Wagon",
+   "year": 2021,
+   "label": "TAO Forms / AUM Fidelity",
+   "faction": "ny",
+   "why": "薩克斯風手 Lewis 向 George Washington Carver 致敬的代表作",
+   "evidence": [
+    "https://musicbrainz.org/release-group/39eba5fc-252e-4ee4-afe1-2bc607e26219"
+   ],
+   "mbRgMbid": "39eba5fc-252e-4ee4-afe1-2bc607e26219",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Donny McCaslin",
+   "album": "Beyond Now",
+   "year": 2016,
+   "label": "Motéma",
+   "faction": "ny",
+   "why": "Bowie《Blackstar》樂隊的小組自己的作品，爵士與電子搖滾",
+   "evidence": [
+    "https://musicbrainz.org/release-group/59f7d194-2b6c-4d1c-bb9f-88dc48a6caf5"
+   ],
+   "mbRgMbid": "59f7d194-2b6c-4d1c-bb9f-88dc48a6caf5",
+   "poolHas": 0,
+   "uncertain": "偏 jazz-rock 交界"
+  },
+  {
+   "artist": "Maria Schneider Orchestra",
+   "album": "The Thompson Fields",
+   "year": 2015,
+   "label": "ArtistShare",
+   "faction": "bb",
+   "why": "大樂團新世代最重要的作曲家之一，Grammy 大樂團專輯",
+   "evidence": [
+    "https://musicbrainz.org/release-group/0df42ba8-02e9-4707-9746-e1858ef94746"
+   ],
+   "mbRgMbid": "0df42ba8-02e9-4707-9746-e1858ef94746",
+   "poolHas": 0,
+   "uncertain": "Grammy 說法未逐項查證"
+  },
+  {
+   "artist": "Maria Schneider Orchestra",
+   "album": "Data Lords",
+   "year": 2020,
+   "label": "ArtistShare",
+   "faction": "bb",
+   "why": "雙碟概念大作，數位生活主題的當代大樂團",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d16db088-ac31-40e8-ae20-ece4ed451b21"
+   ],
+   "mbRgMbid": "d16db088-ac31-40e8-ae20-ece4ed451b21",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Darcy James Argue's Secret Society",
+   "album": "Real Enemies",
+   "year": 2016,
+   "label": "New Amsterdam",
+   "faction": "bb",
+   "why": "布魯克林大樂團，Nonesuch 世代新作曲",
+   "evidence": [
+    "https://musicbrainz.org/release-group/0e5a671c-ae75-4d91-a81f-53cc8588fcc7"
+   ],
+   "mbRgMbid": "0e5a671c-ae75-4d91-a81f-53cc8588fcc7",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Brandee Younger",
+   "album": "Somewhere Different",
+   "year": 2021,
+   "label": "Verve",
+   "faction": "spi",
+   "why": "豎琴手承襲 Alice Coltrane、Dorothy Ashby 的新世代代表",
+   "evidence": [
+    "https://musicbrainz.org/release-group/5e82b429-be83-443e-bad4-d5497f66271f"
+   ],
+   "mbRgMbid": "5e82b429-be83-443e-bad4-d5497f66271f",
+   "poolHas": 0,
+   "uncertain": "MB 廠牌為 Verve Label Group"
+  },
+  {
+   "artist": "Brandee Younger",
+   "album": "Brand New Life",
+   "year": 2023,
+   "label": "Impulse!",
+   "faction": "spi",
+   "why": "向 Ashby、Coltrane 致敬的 Impulse! 作品",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6933b233-65f8-4e99-b730-4fb4248dd520"
+   ],
+   "mbRgMbid": "6933b233-65f8-4e99-b730-4fb4248dd520",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Sun Ra Arkestra",
+   "album": "Swirling",
+   "year": 2020,
+   "label": "Strut",
+   "faction": "spi",
+   "why": "Marshall Allen 領軍的 Sun Ra Arkestra，2010 年代後的復興代表",
+   "evidence": [
+    "https://musicbrainz.org/release-group/74ae5206-74a1-4144-ad74-a85388e79d2c"
+   ],
+   "mbRgMbid": "74ae5206-74a1-4144-ad74-a85388e79d2c",
+   "poolHas": 3,
+   "uncertain": "新世代定位：老團的當代續作"
+  },
+  {
+   "artist": "Lakecia Benjamin",
+   "album": "Pursuance: The Coltranes",
+   "year": 2020,
+   "label": "Ropeadope",
+   "faction": "spi",
+   "why": "薩克斯風手 Lakecia Benjamin 向 Coltrane 家族致敬的新世代靈性復興",
+   "evidence": [
+    "https://musicbrainz.org/release-group/769558d3-0081-4313-b548-9aa79b988061"
+   ],
+   "mbRgMbid": "769558d3-0081-4313-b548-9aa79b988061",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Lakecia Benjamin",
+   "album": "Phoenix",
+   "year": 2023,
+   "label": "Whirlwind",
+   "faction": "spi",
+   "why": "集合 Dianne Reeves、Angela Davis 的社會議題大作",
+   "evidence": [
+    "https://musicbrainz.org/release-group/7dc47f29-a5e6-4d24-b14d-d97db7d43539"
+   ],
+   "mbRgMbid": "7dc47f29-a5e6-4d24-b14d-d97db7d43539",
+   "poolHas": 0,
+   "uncertain": ""
+  },
+  {
+   "artist": "Jazzmeia Horn",
+   "album": "A Social Call",
+   "year": 2017,
+   "label": "Prestige",
+   "faction": "voc",
+   "why": "新世代爵士歌手，Sarah Vaughan 大賽得主，Prestige 首作",
+   "evidence": [
+    "https://musicbrainz.org/release-group/e20f8624-d2f5-4e81-a2c8-220fed6b0be4"
+   ],
+   "mbRgMbid": "e20f8624-d2f5-4e81-a2c8-220fed6b0be4",
+   "poolHas": 0,
+   "uncertain": "獲獎說法未逐項查證"
+  },
+  {
+   "artist": "Jazzmeia Horn",
+   "album": "Love and Liberation",
+   "year": 2019,
+   "label": "Concord Jazz",
+   "faction": "voc",
+   "why": "第二作，結合自由主題與傳統爵士唱腔",
+   "evidence": [
+    "https://musicbrainz.org/release-group/3501f4b4-23f2-4e0c-b0ef-094999f072cf"
+   ],
+   "mbRgMbid": "3501f4b4-23f2-4e0c-b0ef-094999f072cf",
+   "poolHas": 0,
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "不補：Kamasi Washington、Makaya McCraven、Robert Glasper、Christian Scott、Thundercat、Immanuel Wilkins、Joel Ross、Ambrose Akinmusire、Charles Lloyd、Samara Joy、Esperanza Spalding、Cécile McLorin Salvant、Joshua Redman（卡池已有 4）、Julian Lage（4）、Jason Moran（9）、Gerald Clayton／Aaron Parks／Walter Smith III（各 3）因卡池已足不補。",
+  "Ryan Porter 改收 The Optimist（2018，World Galaxy）：Force For Good 在 MB 無日期無廠牌。",
+  "未收且 MB 查不到：Knower（本質偏電子流行）、Tyshawn Sorey 之外的 Linda May Han Oh Aventurine（MB 無）。",
+  "Angel Bat Dawid The Oracle 卡池已有。",
+  "證據網址目前僅有 MusicBrainz release-group 頁，廠牌來自最早 release 的 label-info。",
+  "若要補量：Kris Davis Duopoly、Theo Croker Love Quantum、Craig Taborn Chants、Linda May Han Oh The Glass Hours、Mary Halvorson Away With You、Gretchen Parlato Flor、Christian McBride Big Band The Good Feeling。",
+  "卡池 0 張的新藝人共 39 位（Henry Threadgill 卡池已有 2 張舊作，不計入）。"
+ ]
+}

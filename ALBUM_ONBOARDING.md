@@ -378,6 +378,17 @@ node scripts/verify-album-onboarding.mjs <manifest.json> --published
 - 提交前再 fetch；只暫存本次檔案，直接 push `main`。
 - 回報「候選／排除／一般卡／頂點候選／ready／unavailable／disabled」數量，不用模糊的「大約完成」。
 
+### 11. 藝人介紹（2026-10-13 店主指示：新增專輯要同時新增藝人介紹）
+
+1. 列出本批卡的藝人鍵（卡池藝人欄 NFC → trim → 小寫），扣掉 `data/artist-intros/*.json` 已有的、
+   `desc-tools/batches/artist/progress.json` 未上架批次已排隊的，以及 `aliases.json` 的別名鍵。
+2. 剩下的補進 `batch-progress/artist-intro/roster-*.json`（`tier` D、`mainGenre`、`script`、`cards`、
+   `sampleAlbums`、`addedBy: <批名>`），在 progress.json 追加一批 `ar-d-xxx`（`state: cut`，40 位一批，
+   `note` 寫明來自哪批專輯）。
+3. 照 `.claude/skills/dip-artist-intro/SKILL.md` 跑：萃取 → 維基預抓 → 補洞 4 組 → 寫作 2 組 → `qa-artist.mjs` →
+   主線逐位審 → alias → issues → `scripts/build-artist-intros.mjs`。
+4. 素材不足 thin 門檻的照該線規則 `skipped`，不硬寫。藝人介紹線不改卡池與專輯簡介。
+
 7. 接著執行 `node scripts/build-genre-tree.mjs --write` 更新曲風樹與卡片歸屬
    （`genre-tree.json`／`card-subgenres.json`，類型挑片 v2 的第二／三層靠它）。
    子類型由 Last.fm 標籤推導、不必人工填欄位；新卡若標籤還沒進 KV，

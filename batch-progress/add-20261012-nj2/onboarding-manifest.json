@@ -1,0 +1,2873 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-12-nj2",
+ "batchNote": "新世代爵士（2010–）策展線（add-20261012-nj2）",
+ "createdAt": "2026-10-12T06:49:51Z",
+ "albums": [
+  {
+   "artist": "Ruby Rushton",
+   "album": "Two for Joy",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d48b8c98-55b0-406a-b5e0-ccb2fdc1e2a3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "電子、broken beat 與 22a 系 fusion：Tenderlonious 的樂團，南倫敦 jazz-funk／afro-jazz 早期代表。｜策展無疑點｜MB release-group d48b8c98-55b0-406a-b5e0-ccb2fdc1e2a3：title「Two for Joy」、Album、first-release-date 2015-06-29、artist-credit「Ruby Rushton」。證據：https://musicbrainz.org/release-group/d48b8c98-55b0-406a-b5e0-ccb2fdc1e2a3",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d48b8c98-55b0-406a-b5e0-ccb2fdc1e2a3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2588,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 2588）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 5、accessibility 2；obscurity=5 但沒有遺珠級證據（listeners 2588），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "剛滿 19 歲的 Yussef Dayes 負責打鼓。南倫敦樂團 Ruby Rushton 的主人是 Ed Cawthorne，藝名 Tenderlonious，樂團此時是爵士四重奏。2011 年 12 月 30 日進倫敦的錄音棚，四人一天就現場錄完：Cawthorne 管次中音薩克斯風，另有小號、兼管合成貝斯的鍵盤與鼓，沒有貝斯手。等到 2015 年，Cawthorne 自設的 22a 才把它發行，成為樂團首作。一年後，Dayes 另與人組成 Yussef Kamaal。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Ruby_Rushton",
+     "https://www.discogs.com/release/7214089",
+     "https://musicbrainz.org/release-group/d48b8c98-55b0-406a-b5e0-ccb2fdc1e2a3",
+     "https://en.wikipedia.org/wiki/Yussef_Dayes",
+     "https://rubyrushton.bandcamp.com/album/two-for-joy",
+     "https://en.wikipedia.org/wiki/Tenderlonious"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d0/0d/a0/d00da05e-64de-82c3-bbd6-0ac31a43e8cf/mzaf_12574858174402582679.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1617791321",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1617791321「Ruby Rushton《Two for Joy》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈An Introduction〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Vels Trio",
+   "album": "Celestial Greens",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ac9e5b63-8d46-4b63-952c-9f8ac8f701f9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "電子、broken beat 與 22a 系 fusion：倫敦（布萊頓出身）鍵盤三重奏，Gilles Peterson 力推，fusion 復興路線。｜策展無疑點｜MB release-group ac9e5b63-8d46-4b63-952c-9f8ac8f701f9：title「Celestial Greens」、Album、first-release-date 2021-10-25、artist-credit「Vels Trio」。證據：https://musicbrainz.org/release-group/ac9e5b63-8d46-4b63-952c-9f8ac8f701f9 https://jazzwise.com/review/vels-trio-celestial-greens",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ac9e5b63-8d46-4b63-952c-9f8ac8f701f9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 34380,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 2/3/2（廣度線冷門軸照 Last.fm listeners 34380）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "三人在 Kate Bush 私人工作室待足兩週。三重奏 Vels Trio 在布萊頓成軍，後來落腳倫敦，聲音走融合爵士與電子。那間工作室是 Welling 的 Wicker Studios，時間是首次封城後的 2020 年夏天，參與製作的 Raven Bush 正是 Kate Bush 的姪子。他把後製壓到最低，只收三人在房裡的演奏：鍵盤與合成器、貝斯與合成貝斯，外加鼓。2021 年，樂團首張完整長度專輯掛上 Rhythm Section International 的廠標。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/20774191",
+     "https://www.thejazzmann.com/reviews/review/vels-trio-celestial-greens",
+     "https://www.jazzrevelations.com/post/vels-trio-celestial-greens-feature-interview",
+     "https://velstrio.bandcamp.com/album/celestial-greens",
+     "https://beatcaffeine.com/london-based-vels-trio-release-stellar-cosmic-jazz-debut-lp-celestial-greens/",
+     "https://musicbrainz.org/release-group/ac9e5b63-8d46-4b63-952c-9f8ac8f701f9"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6b/8c/b1/6b8cb11e-f4ff-e326-cde4-ac82482fda4a/mzaf_6818480001863070891.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1576682662",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1576682662「Vels Trio《Celestial Greens》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Dormant Daze〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dinosaur",
+   "album": "Together, as One",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "78f6dd98-9c5a-41f2-bcea-abd8f02302d3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "作曲家、大編制與鋼琴三重奏：Laura Jurd 領軍的小號四重奏，以小號為主角的當代英國室內爵士。｜策展無疑點｜MB release-group 78f6dd98-9c5a-41f2-bcea-abd8f02302d3：title「Together, as One」、Album、first-release-date 2016-09-16、artist-credit「Dinosaur」。證據：https://musicbrainz.org/release-group/78f6dd98-9c5a-41f2-bcea-abd8f02302d3",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1133626119",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/df/94/73/df947327-026a-8bc4-7f44-a4132244f26a/190374740838.jpg/600x600bb.jpg",
+    "note": "CAA 圖帶 Mercury 入圍貼紙；改取已釘定試聽的 Apple 1133626119 官方圖，主線 2026-10-12 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3126,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 4/4/2（廣度線冷門軸照 Last.fm listeners 3126）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "成形約六年後，樂團才定名 Dinosaur。小號手 Laura Jurd 讀的是 Trinity Laban，這支英國四重奏以爵士為底，曲子全出自她手。定名那年年初，樂團簽下 Edition；3 月底進棚，首作只用三天便錄好。Jurd 吹小號，也彈合成器，Elliot Galvin 彈 Rhodes 與 Hammond，Conor Chaplin 彈電貝斯，Corrie Dick 打鼓。它隨後入圍 2017 年的 Mercury Prize。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/9819689",
+     "https://editionrecords.com/releases/dinosaur-together-as-one/",
+     "https://en.wikipedia.org/wiki/Dinosaur_(band)",
+     "https://editionrecords.com/artists/dinosaur",
+     "https://en.wikipedia.org/wiki/Mercury_Prize",
+     "https://en.wikipedia.org/wiki/Laura_Jurd",
+     "https://musicbrainz.org/release-group/78f6dd98-9c5a-41f2-bcea-abd8f02302d3"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/00/51/25/005125c8-3eb1-5566-f21c-76a6ebb15d57/mzaf_10622716989177505469.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1133626119",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1133626119「Dinosaur《Together, As One》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Awakening〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dinosaur",
+   "album": "Wonder Trail",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b305299f-f445-47d3-94a1-94f9cd67cd7e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "作曲家、大編制與鋼琴三重奏：第二張，作曲更細緻，搖滾與電子質地融入。｜策展無疑點｜MB release-group b305299f-f445-47d3-94a1-94f9cd67cd7e：title「Wonder Trail」、Album、first-release-date 2018-05-04、artist-credit「Dinosaur」。證據：https://musicbrainz.org/release-group/b305299f-f445-47d3-94a1-94f9cd67cd7e",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b305299f-f445-47d3-94a1-94f9cd67cd7e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2445,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 2445）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 5、accessibility 2；obscurity=5 但沒有遺珠級證據（listeners 2445），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "以 1980 年代 synth-pop 為起點的小號四重奏。Laura Jurd 自己把 Dinosaur 概括成「synth-pop 遇上爵士樂團」，曲子照樣全由她寫。2017 年 10 月底，原班人馬在威爾斯的棚裡連錄五天，這回 Elliot Galvin 主力放在合成器上。那些合成器音色被拿來打開即興、民謠與搖滾的空間，Jurd 的小號清亮地浮在最上層。2018 年 5 月，這份續作面世，樂評給的短評是親密而醒目。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/1381897",
+     "https://editionrecords.com/releases/dinosaur-wonder-trail/",
+     "https://editionrecords.com/artists/dinosaur",
+     "https://en.wikipedia.org/wiki/Elliot_Galvin",
+     "https://musicbrainz.org/release-group/b305299f-f445-47d3-94a1-94f9cd67cd7e"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1a/f5/50/1af5506d-14cf-75f5-b556-649d38e2f25d/mzaf_1268265207411406693.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1353493838",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1353493838「Dinosaur《Wonder Trail》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Renewal, Pt. 1〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Laura Jurd",
+   "album": "Stepping Back, Jumping In",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "680a2cc0-c6fb-4c87-ba76-8662c08d904d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "作曲家、大編制與鋼琴三重奏：Dinosaur 之外的個人作，室內樂式作曲家爵士。｜⚠ Dinosaur／Laura Jurd 為同一人，合計 3 張（≤4）。｜MB release-group 680a2cc0-c6fb-4c87-ba76-8662c08d904d：title「Stepping Back, Jumping In」、Album、first-release-date 2019-07-19、artist-credit「Laura Jurd」。證據：https://musicbrainz.org/release-group/680a2cc0-c6fb-4c87-ba76-8662c08d904d",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/680a2cc0-c6fb-4c87-ba76-8662c08d904d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 488,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 3/5/3（廣度線冷門軸照 Last.fm listeners 488）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 488），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一份 Kings Place 委託，讓四重奏擴成十多人。小號手 Laura Jurd 這回一人身兼演奏、作曲、領隊與策展。核心仍是 Dinosaur 的鋼琴、低音提琴與鼓，外加弦樂四重奏 Ligeti Quartet、班鳥琴兼吉他、桑圖爾琴，以及一位挪威樂手彈奏合成器。錄音排在 2019 年 3 月，選在 Gateshead 的 The Sage，前後兩天。7 月交 Edition 發行，收錄的六首各長 8 到 12 分鐘，有一首她的小號遲至五分鐘前後才進來。",
+    "sourceUrls": [
+     "https://editionrecords.com/releases/laura-jurd-stepping-back-jumping-in/",
+     "https://www.discogs.com/release/14594987",
+     "https://www.kingsplace.co.uk/whats-on/jazz/dinosaur-and-friends/190301UJ11/",
+     "https://downbeat.com/reviews/detail/stepping-back-jumping-in",
+     "https://en.wikipedia.org/wiki/Laura_Jurd",
+     "https://musicbrainz.org/release-group/680a2cc0-c6fb-4c87-ba76-8662c08d904d"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7d/aa/1d/7daa1d0f-5ecf-eaab-b16b-50e7c3fa7bdf/mzaf_6012993152660658581.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1464565208",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1464565208「Laura Jurd《Stepping Back, Jumping In》」：曲目 6/6 對上 MB 原盤（Apple 共 6 軌），取第 1 軌〈Jumping In〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kit Downes",
+   "album": "Obsidian",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2f6640f5-b2b7-4e39-ab5e-4972854de333",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "作曲家、大編制與鋼琴三重奏：管風琴取代鋼琴的 ECM 首張，英國鋼琴手的重要轉向。｜策展無疑點｜MB release-group 2f6640f5-b2b7-4e39-ab5e-4972854de333：title「Obsidian」、Album、first-release-date 2018-01-19、artist-credit「Kit Downes」。證據：https://musicbrainz.org/release-group/2f6640f5-b2b7-4e39-ab5e-4972854de333",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2f6640f5-b2b7-4e39-ab5e-4972854de333/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 8036,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 3/4/3（廣度線冷門軸照 Last.fm listeners 8036）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Kit Downes 走進三座教堂，只彈管風琴。這位英格蘭爵士鋼琴手，管風琴底子來自故鄉 Norwich。2016 年他在倫敦 Union Chapel 彈三排鍵盤的大琴，又到 Suffolk 兩座小教堂，彈兩排與單排鍵盤的小琴。曲子混用即興、半寫定與寫定，靈感點名 Messiaen，只有〈Modern Gods〉加進次中音薩克斯風。ECM 把它排進 2018 年的目錄，這是 Downes 首度以自己的名字在該廠出片；廠方直言它與爵士關係不大，但只有細膩的即興者才辦得到。",
+    "sourceUrls": [
+     "https://ecmrecords.com/product/obsidian-kit-downes/",
+     "https://musicbrainz.org/release-group/2f6640f5-b2b7-4e39-ab5e-4972854de333",
+     "https://en.wikipedia.org/wiki/Kit_Downes"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4a/f4/a5/4af4a5c0-4316-ee2e-e876-2131d42b0fcc/mzaf_8826513786483333691.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1442892672",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1442892672「Kit Downes《Obsidian》」：曲目 10/10 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Kings〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Neil Cowley Trio",
+   "album": "Touch and Flee",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a88628ed-0be3-4732-8385-464697ae094b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "作曲家、大編制與鋼琴三重奏：鋼琴三重奏新浪潮（Radiohead／Bon Iver 影響），2014 Naim 時期代表。｜策展無疑點｜MB release-group a88628ed-0be3-4732-8385-464697ae094b：title「Touch and Flee」、Album、first-release-date 2014-06-08、artist-credit「Neil Cowley Trio」。證據：https://musicbrainz.org/release-group/a88628ed-0be3-4732-8385-464697ae094b",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a88628ed-0be3-4732-8385-464697ae094b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 16596,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 3/4/2（廣度線冷門軸照 Last.fm listeners 16596）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "前作請來的弦樂與吉他，這次全數撤下。Neil Cowley 古典鋼琴出身，10 歲就彈過蕭士塔高維契協奏曲，在這裡領的是他的爵士三重奏。2012 年的前作加過弦樂四重奏與 Leo Abrahams 的吉他，這張只留他的鋼琴、Rex Horan 的低音與 Evan Jenkins 的鼓，他稱之為三重奏的「音樂廳錄音」。九首都由他寫，全長約 36 分鐘，開場〈Kneel Down〉從稀疏和弦與幾乎聽不見的鼓聲裡長出來。2014 年的 Naim Jazz 版，已是樂團第五張專輯。",
+    "sourceUrls": [
+     "https://londonjazznews.com/2014/08/19/cd-review-neil-cowley-trio-touch-and-flee/",
+     "https://www.thejazzmann.com/reviews/review/touch-and-flee",
+     "https://thequietus.com/?p=15533",
+     "https://en.wikipedia.org/wiki/Neil_Cowley",
+     "https://musicbrainz.org/release-group/a88628ed-0be3-4732-8385-464697ae094b"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/95/ed/1e/95ed1e9b-043a-0560-a01a-e0842ef04af4/mzaf_7716188641169573128.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "899076547",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 899076547「Neil Cowley Trio《Touch And Flee》」：曲目 9/9 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Kneel Down〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Phronesis",
+   "album": "Parallax",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ef468c4e-4fb7-4784-a439-473965e256b0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "作曲家、大編制與鋼琴三重奏：丹麥裔 Jasper Høiby 領軍的倫敦鋼琴三重奏，Edition 代表團。｜⚠ 成員多為北歐，倫敦為活動中心。｜MB release-group ef468c4e-4fb7-4784-a439-473965e256b0：title「Parallax」、Album、first-release-date 2016-04-08、artist-credit「Phronesis」。證據：https://musicbrainz.org/release-group/ef468c4e-4fb7-4784-a439-473965e256b0",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ef468c4e-4fb7-4784-a439-473965e256b0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 7184,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 4/4/4（廣度線冷門軸照 Last.fm listeners 7184）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "丹麥、英國、瑞典三人，作曲各分三首。丹麥低音提琴手 Jasper Høiby 2005 年在倫敦創了 Phronesis，英國的 Ivo Neame 彈鋼琴，瑞典的 Anton Eger 打鼓，三人只用原聲樂器演奏爵士。2015 年 10 月，三人進 Abbey Road 的 Studio 2，一天錄完。開場〈67000 MPH〉出自 Eger，標題取自地球繞太陽公轉的時速；Høiby 的〈Stillness〉用弓拉奏。2016 年問世，是樂團在 Edition 的第四張。",
+    "sourceUrls": [
+     "https://editionrecords.com/releases/phronesis-parallax/",
+     "https://en.wikipedia.org/wiki/Jasper_H%C3%B8iby",
+     "https://en.wikipedia.org/wiki/Phronesis_(band)",
+     "https://www.discogs.com/release/8405369",
+     "https://musicbrainz.org/release-group/ef468c4e-4fb7-4784-a439-473965e256b0"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ec/53/5d/ec535d99-1432-1177-27f9-c9b6f514ccce/mzaf_2377584100847700027.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1077065655",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1077065655「Phronesis《Parallax》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈67,000 MPH〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Elliot Galvin",
+   "album": "The Influencing Machine",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4714fc80-9c23-403d-bf3c-9c63eae391c5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "作曲家、大編制與鋼琴三重奏：新世代鋼琴／鍵盤作曲家，大編制與電子聲響的實驗。｜策展無疑點｜MB release-group 4714fc80-9c23-403d-bf3c-9c63eae391c5：title「The Influencing Machine」、Album、first-release-date 2018-01-26、artist-credit「Elliot Galvin」。證據：https://musicbrainz.org/release-group/4714fc80-9c23-403d-bf3c-9c63eae391c5",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4714fc80-9c23-403d-bf3c-9c63eae391c5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 2716,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 3/5/4（廣度線冷門軸照 Last.fm listeners 2716）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 4；obscurity=5 但沒有遺珠級證據（listeners 2716），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "18 世紀一位病人堅信，有台機器在操控他。掛名的是鋼琴手 Elliot Galvin，實際是三重奏，底子是爵士。病人名叫 Matthews，1797 年被送入倫敦的精神病院，那台機器他叫作 Air Loom。Galvin 讀到同名的書，聯想到社群媒體，稱這是沒有歌詞的抗議唱片。Tom McCredie 彈低音提琴兼電吉他，Corrie Dick 打鼓；Galvin 在鋼琴外加進 Hammond、類比合成器與自己改過電路的兒童玩具。2018 年，唱片由 Edition 發行。",
+    "sourceUrls": [
+     "https://elliotgalvin.bandcamp.com/album/the-influencing-machine",
+     "https://www.discogs.com/release/11810845",
+     "https://thejazzmann.com/reviews/review/elliot-galvin-the-influencing-machine",
+     "https://en.wikipedia.org/wiki/Edition_Records",
+     "https://musicbrainz.org/release-group/4714fc80-9c23-403d-bf3c-9c63eae391c5"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/78/68/51/7868519b-e4f2-7a27-4196-c108f093c5a3/mzaf_8138446663302672087.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1310716368",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1310716368「Elliot Galvin《The Influencing Machine》」：曲目 8/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈New Model Army〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Fergus McCreadie",
+   "album": "Cairn",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "fcd3d2a5-63c8-4edd-a0bd-fcea7a7a4d54",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "作曲家、大編制與鋼琴三重奏：蘇格蘭鋼琴三重奏，融合蘇格蘭民謠，Edition 旗下新世代代表。｜⚠ MB 有同名單曲 RG，取 Album 版。｜MB release-group fcd3d2a5-63c8-4edd-a0bd-fcea7a7a4d54：title「Cairn」、Album、first-release-date 2021-01-29、artist-credit「Fergus McCreadie」。證據：https://musicbrainz.org/release-group/fcd3d2a5-63c8-4edd-a0bd-fcea7a7a4d54",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fcd3d2a5-63c8-4edd-a0bd-fcea7a7a4d54/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2978,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 4/5/2（廣度線冷門軸照 Last.fm listeners 2978）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 5、accessibility 2；obscurity=5 但沒有遺珠級證據（listeners 2978），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "蘇格蘭孩子最早學風笛，十二歲左右改彈爵士。那個孩子長大後成了鋼琴手 Fergus McCreadie，讓他轉向的是一場鋼琴爵士演出，他覺得那樣好玩又自由。進了皇家蘇格蘭音樂學院，他師事 Tommy Smith，也在同校結識低音提琴手 David Bowden 與鼓手 Stephen Henderson。2020 年 1 月，三人在 Hastings 花兩天錄好，Edition 隔年 1 月把唱片推上市面，排在他作品序列的第二位。曲名多取自地貌，〈Jig〉則直接指向蘇格蘭舞曲。",
+    "sourceUrls": [
+     "https://fergusmccreadie.bandcamp.com/album/cairn",
+     "https://en.wikipedia.org/wiki/Fergus_McCreadie",
+     "https://www.discogs.com/master/1948576",
+     "https://en.wikipedia.org/wiki/Scottish_Album_of_the_Year_Award",
+     "https://en.wikipedia.org/wiki/Edition_Records",
+     "https://musicbrainz.org/release-group/fcd3d2a5-63c8-4edd-a0bd-fcea7a7a4d54"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/14/d7/78/14d77800-c346-8359-b3a2-8380542ef475/mzaf_16951212401682853059.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1538009166",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1538009166「Fergus McCreadie《Cairn》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈North〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Fergus McCreadie",
+   "album": "Forest Floor",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e003bdd5-a384-43bd-879f-f7d823cca647",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "作曲家、大編制與鋼琴三重奏：第二張，蘇格蘭自然意象的鋼琴三重奏，Edition 旗下代表作。｜策展無疑點｜MB release-group e003bdd5-a384-43bd-879f-f7d823cca647：title「Forest Floor」、Album、first-release-date 2022-03-08、artist-credit「Fergus McCreadie」。證據：https://musicbrainz.org/release-group/e003bdd5-a384-43bd-879f-f7d823cca647",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1604902146",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/0e/90/2f/0e902f24-32e9-dc01-b08a-26c596355c19/196292431179.jpg/600x600bb.jpg",
+    "note": "CAA 無圖；取已釘定試聽的 Apple 1604902146 官方圖，主線 2026-10-12 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 18076,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 4/4/2（廣度線冷門軸照 Last.fm listeners 18076）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "2 萬英鎊的蘇格蘭年度專輯獎，落在一支鋼琴三重奏。得主是蘇格蘭鋼琴手 Fergus McCreadie，憑這份爵士作品拿下 2022 年的 Scottish Album of the Year 首獎。同年也擠進 Mercury Prize 的短名單，和 Harry Styles 並列。錄音早在 2021 年 7 月，同一組三重奏重回 Hastings 待了三天，製作也由他來。2022 年 4 月，他的第三作交由 Edition 發行，錄音版權歸他本人，獨家授權給廠牌。",
+    "sourceUrls": [
+     "https://fergusmccreadie.bandcamp.com/album/forest-floor",
+     "https://en.wikipedia.org/wiki/Mercury_Prize",
+     "https://en.wikipedia.org/wiki/Scottish_Album_of_the_Year_Award",
+     "https://en.wikipedia.org/wiki/Fergus_McCreadie",
+     "https://www.discogs.com/release/22813814",
+     "https://en.wikipedia.org/wiki/Edition_Records",
+     "https://musicbrainz.org/release-group/e003bdd5-a384-43bd-879f-f7d823cca647"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/6c/64/72/6c6472fd-7179-c3b0-4f5a-db27cdbaca9a/mzaf_9770981004410090362.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1604902146",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1604902146「Fergus McCreadie《Forest Floor》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Law Hill〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Polar Bear",
+   "album": "Peepers",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6fe06993-abc5-44ef-92f0-b4faffd88df4",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "作曲家、大編制與鋼琴三重奏：Seb Rochford 領軍的 free jazz／電子質地樂團，英國另類爵士代表。｜⚠ 首發日 MB 2010-03-01。｜MB release-group 6fe06993-abc5-44ef-92f0-b4faffd88df4：title「Peepers」、Album、first-release-date 2010-03-01、artist-credit「Polar Bear」。證據：https://musicbrainz.org/release-group/6fe06993-abc5-44ef-92f0-b4faffd88df4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6fe06993-abc5-44ef-92f0-b4faffd88df4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 28966,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 28966）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "直到開錄前，團員才拿到鼓手的新曲。這位鼓手叫 Sebastian Rochford，團名 Polar Bear，是一支五人編制的爵士團。進棚後五人擠在同一個房間，拿掉隔板，也拿掉耳機：雙次中音薩克斯風、低音提琴、Leafcutter John 的電子與吉他，加上他的鼓。樂評從中聽出演奏的喜悅與急迫。Rochford 說，他想用另一種和聲把音樂打開。Leaf 在 2010 年 3 月讓這十二首上市，樂團累計第四張，與 Leaf 合作則是頭一回。",
+    "sourceUrls": [
+     "https://www.theleaflabel.com/releases/peepers/",
+     "https://thejazzmann.com/reviews/review/polar-bear-peepers",
+     "https://en.wikipedia.org/wiki/Polar_Bear_(British_band)",
+     "https://www.herecomestheflood.com/2010/02/polar-bear-peepers.html",
+     "https://www.discogs.com/release/2338443",
+     "https://en.wikipedia.org/wiki/Mercury_Prize",
+     "https://musicbrainz.org/release-group/6fe06993-abc5-44ef-92f0-b4faffd88df4"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/45/6f/76/456f7697-5d41-5560-eeb2-d79d1aa49905/mzaf_12120660703914374550.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "354689156",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 354689156「Polar Bear《Peepers》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Happy for You〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Xhosa Cole",
+   "album": "K(no)w Them, K(no)w Us",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "544c7dbe-f459-46cf-8f19-9b597ba24220",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "作曲家、大編制與鋼琴三重奏：伯明翰次中音手，BBC Young Jazz Musician 2018 得主的首張。｜策展無疑點｜MB release-group 544c7dbe-f459-46cf-8f19-9b597ba24220：title「K(no)w Them, K(no)w Us」、Album、first-release-date 2021-07-30、artist-credit「Xhosa Cole」。證據：https://musicbrainz.org/release-group/544c7dbe-f459-46cf-8f19-9b597ba24220",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/544c7dbe-f459-46cf-8f19-9b597ba24220/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 511,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 511）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 5、accessibility 2；obscurity=5 但沒有遺珠級證據（listeners 511），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "伯明翰次中音薩克斯風手，整張只吹前輩的作品。Xhosa Cole 從 Ladywood 的社區音樂學校起步，他說是向塑造自己的非裔美國作曲家與即興者致敬。標題借用 Dizzy Gillespie 談 Louis Armstrong 的一句「no him, no me」（沒有他就沒有我）。七首爵士曲子來自 Woody Shaw、Ornette Coleman、Monk 等人，他以次中音帶著小號、低音提琴與鼓，四人合奏。2021 年，同城的 Stoney Lane 為它發行。",
+    "sourceUrls": [
+     "https://xhosacole.bandcamp.com/album/k-no-w-them-k-no-w-us",
+     "https://thejazzmann.com/reviews/review/xhosa-cole-know-them-know-us",
+     "https://www.discogs.com/release/20268925",
+     "https://en.wikipedia.org/wiki/BBC_Young_Musician",
+     "https://en.wikipedia.org/wiki/Xhosa_Cole",
+     "https://musicbrainz.org/release-group/544c7dbe-f459-46cf-8f19-9b597ba24220"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/2d/34/39/2d34394b-6df6-53b3-394d-d36dcf1a5e0c/mzaf_7897147229811099911.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1617212905",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1617212905「Xhosa Cole《K (No) W Them, K (No) W Us》」：曲目 7/7 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Zoltan〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Emma Rawicz",
+   "album": "Chroma",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f89f468d-a239-47c0-8af0-57c526022592",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "作曲家、大編制與鋼琴三重奏：年輕次中音手，ACT 簽約的首張，新世代英國薩克斯風手。｜策展無疑點｜MB release-group f89f468d-a239-47c0-8af0-57c526022592：title「Chroma」、Album、first-release-date 2023-08-25、artist-credit「Emma Rawicz」。證據：https://musicbrainz.org/release-group/f89f468d-a239-47c0-8af0-57c526022592",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f89f468d-a239-47c0-8af0-57c526022592/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4372,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 2/4/2（廣度線冷門軸照 Last.fm listeners 4372）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "她聽到聲音，眼前就浮出顏色。那是爵士次中音薩克斯風手 Emma Rawicz 的共感覺，英文叫 chromesthesia，專輯名 Chroma 便取自古希臘文的「顏色」。曲子全是她寫、她編，製作人欄也是她；她吹的主要是次中音，也吹長笛與低音單簧管。班底由 Ivo Neame 彈鋼琴，加上吉他、低音提琴、鼓與一位歌手，2022 年 6 月在倫敦錄成。隔年 8 月，德國 ACT 接手發行，這是她在 ACT 的頭一張，總數上算第二張。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/3221656",
+     "https://emmarawicz.bandcamp.com/album/chroma",
+     "https://en.wikipedia.org/wiki/Emma_Rawicz",
+     "https://emmarawicz.com/",
+     "https://www.discogs.com/release/28116634",
+     "https://musicbrainz.org/release-group/f89f468d-a239-47c0-8af0-57c526022592"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/fa/4e/14/fa4e1425-9ebf-6cd7-f4e9-731172c0a8e1/mzaf_2588199441925578804.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1679751010",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1679751010「Emma Rawicz《Chroma》」：曲目 9/9 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Phlox〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Terrace Martin",
+   "album": "Velvet Portraits",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ad0bd208-0790-4cda-b9a2-dec399fa9213",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "LA West Coast Get Down 與 beat-jazz：WCGD 圈的製作人兼薩克斯風手，Kamasi、Glasper、Herbie 同台的 jazz／hip-hop／funk 代表作｜策展無疑點｜MB release-group ad0bd208-0790-4cda-b9a2-dec399fa9213：title「Velvet Portraits」、Album、first-release-date 2016-04-01、artist-credit「Terrace Martin」。證據：https://musicbrainz.org/release-group/ad0bd208-0790-4cda-b9a2-dec399fa9213",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ad0bd208-0790-4cda-b9a2-dec399fa9213/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 63136,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 63136）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Kendrick Lamar 的製作班底，回頭做自己的專輯。薩克斯風手 Terrace Martin 請父親 Curly Martin 來打鼓，表親 Thundercat 客席。這張從《To Pimp a Butterfly》的工作延伸而來，壓軸〈Mortal Man〉沿用 Lamar 那張的同名曲素材。聲音落在 R&B、爵士融合與 G-funk 之間。2016 年經 Ropeadope 發行，登上 Billboard 爵士榜第 2 名，並入圍葛萊美最佳 R&B 專輯。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Velvet_Portraits",
+     "https://en.wikipedia.org/wiki/Terrace_Martin",
+     "https://www.discogs.com/release/8345287",
+     "https://en.wikipedia.org/wiki/59th_Annual_Grammy_Awards",
+     "https://musicbrainz.org/release-group/ad0bd208-0790-4cda-b9a2-dec399fa9213"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/55/0d/e4/550de431-400d-e9ad-5e66-f2cdf39605e2/mzaf_2880951934422386607.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1649781603",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1649781603「TERRACE MARTIN《Velvet Portraits》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Velvet Portraits〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Miles Mosley",
+   "album": "Uprising",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ad6315f7-7762-4fa0-8574-0b9ae28716ef",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "LA West Coast Get Down 與 beat-jazz：West Coast Get Down 貝斯手的個人首作，電貝斯與立式貝斯的 LA 靈魂爵士｜策展無疑點｜MB release-group ad6315f7-7762-4fa0-8574-0b9ae28716ef：title「Uprising」、Album、first-release-date 2017-01-27、artist-credit「Miles Mosley」。證據：https://musicbrainz.org/release-group/ad6315f7-7762-4fa0-8574-0b9ae28716ef",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ad6315f7-7762-4fa0-8574-0b9ae28716ef/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 10162,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 3/4/2（廣度線冷門軸照 Last.fm listeners 10162）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "接上擴大器的立式低音提琴，Miles Mosley 開唱。名字取自 Miles Davis 的 Mosley，是洛杉磯 Hollywood 人，放大的琴聲正是這名爵士低音提琴手的招牌。這回他彈琴兼主唱，Tony Austin 打鼓，再加上銅管、弦樂與合唱團。十一首承襲 Motown、Stax 與 Atlantic 的傳統，寫成一張靈魂歌曲專輯，幾乎不靠取樣與電子。2017 年改由 Verve 發行；在此之前，他已自行發過三張專輯。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/ad6315f7-7762-4fa0-8574-0b9ae28716ef",
+     "https://www.discogs.com/artist/653307",
+     "https://londonjazznews.com/2017/06/25/cd-review-miles-mosley-uprising/",
+     "https://en.wikipedia.org/wiki/West_Coast_Get_Down",
+     "https://www.discogs.com/release/9740598",
+     "https://en.wikipedia.org/wiki/Miles_Mosley"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/27/ad/71/27ad7192-a1d3-aa78-989b-68899b9d9cf2/mzaf_10179895616432347543.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1440876983",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1440876983「Miles Mosley《UPRISING》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Young Lion〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Cameron Graves",
+   "album": "Planetary Prince",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f609e58d-4135-4b67-aadf-4b2dc3996840",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "LA West Coast Get Down 與 beat-jazz：WCGD 鋼琴手的 metal-fusion 靈性爵士，與 Kamasi 同源的另一極端｜策展無疑點｜MB release-group f609e58d-4135-4b67-aadf-4b2dc3996840：title「Planetary Prince」、Album、first-release-date 2017-02-24、artist-credit「Cameron Graves」。證據：https://musicbrainz.org/release-group/f609e58d-4135-4b67-aadf-4b2dc3996840",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f609e58d-4135-4b67-aadf-4b2dc3996840/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 5812,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 3/4/3（廣度線冷門軸照 Last.fm listeners 5812）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "30 天錄下的素材，也流進了《The Epic》。Cameron Graves 在 West Coast Get Down 裡彈鋼琴，這批洛杉磯爵士樂手 2009 年在好萊塢正式成軍。那 30 天是 2011 年在 Kingsize Soundlabs 錄的，曲子分給了 Kamasi Washington 和 Graves 自己。編制是鋼琴、雙貝斯、鼓與三支管樂，Thundercat 彈其中一把貝斯。Mack Avenue 2017 年發行，八首約 78 分鐘。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/9b5edb2f-a12d-4114-9065-cd0bf3bd569c",
+     "https://www.allaboutjazz.com/planetary-prince-cameron-graves-mack-avenue-records-review-by-christopher-hoard.php",
+     "https://en.wikipedia.org/wiki/West_Coast_Get_Down",
+     "https://convocations.purdue.edu/review-cameron-graves-planetary-prince",
+     "https://www.kqed.org/news/11363086/new-jazz-releases-from-alex-cline-and-cameron-graves-draw-on-spiritual-inspiration",
+     "https://musicbrainz.org/release-group/f609e58d-4135-4b67-aadf-4b2dc3996840"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5b/1c/f7/5b1cf72d-05b4-74f1-3d4d-84144fc2b12d/mzaf_6250785045634245312.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1850037862",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1850037862「Cameron Graves《Planetary Prince》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Satania Our Solar System〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Brandon Coleman",
+   "album": "Resistance",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b4033cfd-7528-474c-84d0-7ab234d85740",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "LA West Coast Get Down 與 beat-jazz：WCGD 鍵盤手在 Brainfeeder 的 funk-fusion 作品，Kamasi 與 Thundercat 客演｜⚠ MB 首發年為 2018-09-14（Brainfeeder／Beat Records）；未另查維基｜MB release-group b4033cfd-7528-474c-84d0-7ab234d85740：title「Resistance」、Album、first-release-date 2018-09-14、artist-credit「Brandon Coleman」。證據：https://musicbrainz.org/release-group/b4033cfd-7528-474c-84d0-7ab234d85740",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1407275826",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/25/0b/3f/250b3f6e-61b7-5391-b2e2-cceec4b3b39d/5054429132953.jpg/600x600bb.jpg",
+    "note": "CAA 圖是日本版帶側標（Brainfeeder 宣傳貼與 obi）；改取已釘定試聽的 Apple 1407275826 官方圖，主線 2026-10-12 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 14466,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 3/4/3（廣度線冷門軸照 Last.fm listeners 14466）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "替人錄音多年，鍵盤手要一張不妥協的唱片。Brandon Coleman 綽號 Professor Boogie，是 Kamasi Washington 樂團的鍵盤手。他替 Ciara、Childish Gambino 等人錄過音，說那些年總覺得被綁著，得向流行口味讓步，這回只想做自由、原創的東西。十二首曲子 2018 年在 Brainfeeder 上架，Kamasi 吹管樂，Patrice Quinn 等人獻唱。他把這張的聲音形容成爵士、迪斯可、boogie 和放克的混合。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/12514617",
+     "https://en.wikipedia.org/wiki/Brainfeeder",
+     "https://factmag.com/2018/07/19/brandon-coleman-announces-album-resistance",
+     "https://thevinylfactory.com/news/brandon-coleman-album-resistance-vinyl-brainfeeder",
+     "https://musicismysanctuary.com/album-of-the-week-brandon-coleman-resistance-brainfeeder",
+     "https://musicbrainz.org/release-group/b4033cfd-7528-474c-84d0-7ab234d85740"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7a/ea/ff/7aeaff3b-d0fb-5271-e0bf-b78d9aa02cc7/mzaf_3156275884938714393.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1407275826",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1407275826「Brandon Coleman《Resistance》」：曲目 12/13 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Live For Today〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ryan Porter",
+   "album": "The Optimist",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "499fc871-1001-4f4f-be05-108917e69ad8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "LA West Coast Get Down 與 beat-jazz：WCGD 長號手的 World Galaxy 作品，LA 靈性爵士圈的核心樂手視角（改收 The Optimist：Force For Good 在 MB 無日期無廠牌）｜策展無疑點｜MB release-group 499fc871-1001-4f4f-be05-108917e69ad8：title「The Optimist」、Album、first-release-date 2018-02-23、artist-credit「Ryan Porter」。證據：https://musicbrainz.org/release-group/499fc871-1001-4f4f-be05-108917e69ad8",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/499fc871-1001-4f4f-be05-108917e69ad8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 6281,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 3/4/2（廣度線冷門軸照 Last.fm listeners 6281）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "專輯名來自 Obama 剛當選時的那股樂觀。長號手 Ryan Porter 是看了 J. J. Johnson 的唱片封面才迷上長號，這張是他聽完就職演說後構思的，〈Obamanomics〉最先錄好。錄音落在 2008 至 2009 年，地點是 Kamasi Washington 雙親家裡的小屋，頭頂就是機場的降落航線。Kamasi 的薩克斯風每首都在，曲子走 hard bop 與 soul-jazz。World Galaxy 到 2018 年才發行它，共約 100 分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/1319787",
+     "https://www.discogs.com/release/11610251",
+     "https://daily.bandcamp.com/album-of-the-day/album-of-the-day-ryan-porter-the-optimist",
+     "https://downbeat.com/news/detail/ryan-porter-jams-from-the-shack",
+     "https://en.wikipedia.org/wiki/Ryan_Porter",
+     "https://musicbrainz.org/release-group/499fc871-1001-4f4f-be05-108917e69ad8"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/54/e0/53/54e05373-9a23-7b60-320e-c7dd8e21210d/mzaf_8985806107689316183.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1694809073",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1694809073「Ryan Porter《The Optimist》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈The Psalmist〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sam Gendel",
+   "album": "Satin Doll",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f99fa236-682c-4aa5-92a8-8dbc2fd768e6",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "LA West Coast Get Down 與 beat-jazz：LA 前衛薩克斯風手重新解構爵士標準曲，Nonesuch 出版的 beat-jazz／環境爵士代表｜策展無疑點｜MB release-group f99fa236-682c-4aa5-92a8-8dbc2fd768e6：title「Satin Doll」、Album、first-release-date 2020-03-13、artist-credit「Sam Gendel」。證據：https://musicbrainz.org/release-group/f99fa236-682c-4aa5-92a8-8dbc2fd768e6",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f99fa236-682c-4aa5-92a8-8dbc2fd768e6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 18907,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 3/4/2（廣度線冷門軸照 Last.fm listeners 18907）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "〈Afro Blue〉錄在朋友婚禮的彩排晚宴上。錄下它的是中音薩克斯風手 Sam Gendel，當著約 200 位賓客即興演奏，事前沒排練，事後也沒疊錄。整張的構想源自他獨奏的〈Satin Doll〉，他說當下就知道唱片該是什麼聲音。三人之中，他吹薩克斯風，配上電貝斯與電子打擊，把爵士標準曲建構又拆解。〈Goodbye Pork Pie Hat〉的歌聲其實是電腦人聲：貝斯手在鍵盤上彈出歌詞，再由 Gendel 經效果器即時操控。唱片 2020 年落在 Nonesuch 旗下。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Sam_Gendel",
+     "https://www.nonesuch.com/albums/satin-doll",
+     "https://www.nonesuch.com/journal/sam-gendel-talks-track-new-album-satin-doll-2020-03-16",
+     "https://londonjazznews.com/2020/03/13/sam-gendel-satin-doll/",
+     "https://musicbrainz.org/release-group/f99fa236-682c-4aa5-92a8-8dbc2fd768e6"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7f/60/23/7f6023b8-7224-4af0-43de-8387e21b0c95/mzaf_13093936325844739465.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1491419386",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1491419386「Sam Gendel《Satin Doll》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Afro Blue〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sam Gendel & Sam Wilkes",
+   "album": "Music for Saxofone and Bass Guitar",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "38038766-2701-45c5-8aaa-42ed82d4b7ed",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "LA West Coast Get Down 與 beat-jazz：LA 即興與錄音室拼貼的奠基作，Gendel／Wilkes 雙人組新世代爵士圈指標｜策展無疑點｜MB release-group 38038766-2701-45c5-8aaa-42ed82d4b7ed：title「Music for Saxofone and Bass Guitar」、Album、first-release-date 2018-06-15、artist-credit「Sam Gendel & Sam Wilkes」。證據：https://musicbrainz.org/release-group/38038766-2701-45c5-8aaa-42ed82d4b7ed",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/38038766-2701-45c5-8aaa-42ed82d4b7ed/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 151,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 3/5/2（廣度線冷門軸照 Last.fm listeners 151）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 2；obscurity=5 但沒有遺珠級證據（listeners 151），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "開場曲〈BOA〉在三年後被一部 Netflix 電影帶紅。兩位 Sam：Gendel 管中音薩克斯風，Wilkes 管電貝斯，兩人是在 USC 讀音樂時結識的。從 2017 年 11 月到隔年 2 月，他們在洛杉磯現場對奏，用一台四軌卡帶機錄下，連混音和製作也自己包下。2018 年 6 月由 Leaving Records 推出，首批實體只是 50 張手簽的白標黑膠。那部電影是 2021 年的《Malcolm & Marie》，〈BOA〉就收在它的配樂裡。",
+    "sourceUrls": [
+     "https://samgendelsamwilkes.bandcamp.com/album/music-for-saxofone-and-bass-guitar",
+     "https://www.discogs.com/master/1400399",
+     "https://en.wikipedia.org/wiki/Sam_Wilkes",
+     "https://en.wikipedia.org/wiki/Sam_Gendel",
+     "https://musicbrainz.org/release-group/38038766-2701-45c5-8aaa-42ed82d4b7ed"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bd/38/96/bd389683-371d-775f-26d0-6493e0713d81/mzaf_9808525656933780961.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "6791880948",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 6791880948「Sam Gendel & Sam Wilkes《Music for Saxofone & Bass Guitar》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈BOA〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Carlos Niño & Friends",
+   "album": "More Energy Fields, Current",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c422650d-1060-4b49-9e84-a2c17dd25bb3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "LA West Coast Get Down 與 beat-jazz：Carlos Niño 的靈性即興合奏，International Anthem 旗下洛杉磯 new age／spiritual jazz 一脈｜策展無疑點｜MB release-group c422650d-1060-4b49-9e84-a2c17dd25bb3：title「More Energy Fields, Current」、Album、first-release-date 2021-05-07、artist-credit「Carlos Niño & Friends」。證據：https://musicbrainz.org/release-group/c422650d-1060-4b49-9e84-a2c17dd25bb3",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c422650d-1060-4b49-9e84-a2c17dd25bb3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 17443,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 3/4/2（廣度線冷門軸照 Last.fm listeners 17443）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Dublab 的共同創辦人，召集一群洛杉磯即興樂手。打擊樂手 Carlos Niño 從 2008 年起用「& Friends」這塊招牌合作，這回 Jamael Dean 的合成器與鋼琴鋪滿了十首中的八首，另有 Sam Gendel 等人加入。收尾曲另外疊上 Shabaka Hutchings 與 Niño 的二重奏，取自兩人 2019 年 3 月 11 日錄下的一段。整張像靈性爵士圈的一幅環境拼貼，2021 年由 International Anthem 於芝加哥出版。",
+    "sourceUrls": [
+     "https://intlanthem.bandcamp.com/album/more-energy-fields-current",
+     "https://en.wikipedia.org/wiki/Carlos_Ni%C3%B1o",
+     "https://en.wikipedia.org/wiki/International_Anthem_Recording_Company",
+     "https://musicbrainz.org/release-group/c422650d-1060-4b49-9e84-a2c17dd25bb3"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/04/08/a0/0408a004-e7c5-acab-84cc-124d40cea4d8/mzaf_13582724081401522107.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1552708681",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1552708681「Carlos Niño《More Energy Fields, Current》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Pleasewakeupalittlefaster please . . . (feat. Nate Mercereau, Jamael Dean & Shabaka Hutchings)〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mark de Clive-Lowe",
+   "album": "Heritage",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "932ef005-0d56-4577-839f-e25da5465d9a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "LA West Coast Get Down 與 beat-jazz：LA 的鍵盤手／製作人，現場即興＋beat 的新世代爵士代表｜⚠ MB 歸屬 2019-02-08；實為其現場系列，風格 jazz/beat 交界｜MB release-group 932ef005-0d56-4577-839f-e25da5465d9a：title「Heritage」、Album、first-release-date 2019-02-08、artist-credit「Mark de Clive‐Lowe」。證據：https://musicbrainz.org/release-group/932ef005-0d56-4577-839f-e25da5465d9a",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/932ef005-0d56-4577-839f-e25da5465d9a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2606,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 3/5/2（廣度線冷門軸照 Last.fm listeners 2606）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 2；obscurity=5 但沒有遺珠級證據（listeners 2606），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一半是小東京俱樂部裡的現場，一半進棚。母親是日本人、父親是紐西蘭人，Mark de Clive-Lowe 自幼說雙語，這回的主題正是他的日本血統，新曲取材童年故事與神話，〈Akatombo〉則是他獨奏鋼琴的一首日本民謠。2018 年 6 月，五重奏到洛杉磯的 The Blue Whale 錄了三晚，7 月 10 日再進 NRG Studios 補上棚內版本。他負責鋼琴、合成器和現場電子，身旁是兩支薩克斯風，加上貝斯、鼓。2019 年 Ropeadope 將它發表。",
+    "sourceUrls": [
+     "https://markdeclivelowe.bandcamp.com/album/heritage",
+     "https://en.wikipedia.org/wiki/Mark_de_Clive-Lowe",
+     "https://musicbrainz.org/release-group/932ef005-0d56-4577-839f-e25da5465d9a"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3f/93/03/3f930349-37f9-c894-cf40-e028a2dd7264/mzaf_4745010449957291252.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1689830929",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1689830929「Mark de Clive-Lowe《Heritage》」：曲目 6/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈The Offering (feat. Josh Johnson, Brandon Eugene Owens, Brandon Combs & Carlos Nino)〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jamael Dean",
+   "album": "Primordial Waters",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "00b8520b-89c8-44e0-b6d0-d15fa91a5523",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "LA West Coast Get Down 與 beat-jazz：LA 年輕鋼琴手，spiritual jazz 與 beat 文化交融，Stones Throw 出版｜策展無疑點｜MB release-group 00b8520b-89c8-44e0-b6d0-d15fa91a5523：title「Primordial Waters」、Album、first-release-date 2021-10-29、artist-credit「Jamael Dean」。證據：https://musicbrainz.org/release-group/00b8520b-89c8-44e0-b6d0-d15fa91a5523",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/00b8520b-89c8-44e0-b6d0-d15fa91a5523/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 1422,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 3/5/4（廣度線冷門軸照 Last.fm listeners 1422）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 4；obscurity=5 但沒有遺珠級證據（listeners 1422），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "十首爵士錄音，又被他自己取樣做成十首嘻哈。洛杉磯鋼琴手 Jamael Dean 的祖父，是靈魂爵士鼓手 Donald Dean。嘻哈那半，他以 Jasik 之名製作、以 Jira 之名說唱。標題出自約魯巴的創世故事，爵士那半便順著 Orisha 的故事一路發展。樂隊裡找來雙簧管、巴松管、長號與豎琴，重心卻是 Sharada Shashidhar 逐個音節唱出的人聲。2021 年 10 月，Stones Throw 讓它上架，黑膠 2LP 只收爵士那十首。",
+    "sourceUrls": [
+     "https://www.stonesthrow.com/store/primordial-waters/",
+     "https://scratchedvinyl.com/reviews/jamael-dean-primordial-waters/",
+     "https://www.stonesthrow.com/artist/jamaeldean/",
+     "https://www.discogs.com/master/3214707",
+     "https://loudandquiet.com/reviews/jamael-dean-primordial-waters",
+     "https://musicbrainz.org/release-group/00b8520b-89c8-44e0-b6d0-d15fa91a5523"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kassa Overall",
+   "album": "I Think I'm Good",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4571a593-8617-4695-9249-bd9e145b0f98",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "爵士×嘻哈／融合／社會議題：鼓手／製作人把 hip-hop 製作語法塞進爵士的代表作｜策展無疑點｜MB release-group 4571a593-8617-4695-9249-bd9e145b0f98：title「I Think I’m Good」、Album、first-release-date 2020-02-28、artist-credit「Kassa Overall」。證據：https://musicbrainz.org/release-group/4571a593-8617-4695-9249-bd9e145b0f98",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4571a593-8617-4695-9249-bd9e145b0f98/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 20009,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 20009）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Angela Davis 的聲音，被放進談監獄的一首歌。念過 Oberlin 打擊系的 Kassa Overall，是鼓手、製作人也饒舌。那首歌叫〈Show Me a Prison〉，用上這位民權運動者的語音，整張觸及的題目也包括美國監獄體系裡的種族階層。製作他自己來，錄音室的手法被他當成樂器的一部分。壓軸請 Vijay Iyer 彈 Rhodes，獻給已故鋼琴手 Geri Allen。2020 年 Brownswood 替他發行，在他的作品裡排第二。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/I_Think_I%27m_Good",
+     "https://en.wikipedia.org/wiki/Kassa_Overall",
+     "https://downbeat.com/reviews/detail/i-think-im-good",
+     "https://www.discogs.com/master/1693537",
+     "https://musicbrainz.org/release-group/4571a593-8617-4695-9249-bd9e145b0f98"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e3/f3/48/e3f348c9-5520-7c42-416d-c688faba94f0/mzaf_11452681388192536629.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1561233347",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1561233347「Kassa Overall《I THINK I'M GOOD》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Visible Walls〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kassa Overall",
+   "album": "ANIMALS",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "83ed57ce-d894-4c2a-8ac0-7b09cbf9f613",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "爵士×嘻哈／融合／社會議題：Warp 出版，爵士鼓手整合電子與饒舌的成熟之作｜策展無疑點｜MB release-group 83ed57ce-d894-4c2a-8ac0-7b09cbf9f613：title「ANIMALS」、Album、first-release-date 2023-05-26、artist-credit「Kassa Overall」。證據：https://musicbrainz.org/release-group/83ed57ce-d894-4c2a-8ac0-7b09cbf9f613",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/83ed57ce-d894-4c2a-8ac0-7b09cbf9f613/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 19268,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 3/4/3（廣度線冷門軸照 Last.fm listeners 19268）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "弦樂請來 Skopje 的一支樂團拉奏。Terri Lyne Carrington 說，鼓手兼饒舌者 Kassa Overall 是首屈一指的風格混搭者。那些弦樂出自 Jherek Bischoff 的編寫，有四首用到它們。〈Clock Ticking〉請來饒舌的 Danny Brown 與 Wiki，坐在鋼琴前的是 Kris Davis，壓軸還多了 Lil B。2023 年 5 月轉由 Warp 發表，那是他第三部專輯作品，也是他與 Warp 的初次合作。",
+    "sourceUrls": [
+     "https://popmatters.com/kassa-overall-animals-album-review",
+     "https://en.wikipedia.org/wiki/Kassa_Overall",
+     "https://www.discogs.com/master/3111582",
+     "https://scratchedvinyl.com/reviews/kassa-overall-animals/",
+     "https://www.hhv-mag.com/review/kassa-overall-animals/?lang=en",
+     "https://downbeat.com/reviews/detail/waiting-game",
+     "https://musicbrainz.org/release-group/83ed57ce-d894-4c2a-8ac0-7b09cbf9f613"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Nate Smith",
+   "album": "Kinfolk: Postcards from Everywhere",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0153a765-6c68-4336-8a1d-74d6bebef24e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "爵士×嘻哈／融合／社會議題：鼓手兼作曲人，把 R&B、hip-hop 律動融入爵士的 Kinfolk 系列｜⚠ MB 有兩筆重複 release-group（fb85abac-776d-4756-b406-4f15ea01c23f）｜MB release-group 0153a765-6c68-4336-8a1d-74d6bebef24e：title「Kinfolk: Postcards from Everywhere」、Album、first-release-date 2017-02-03、artist-credit「Nate Smith」。證據：https://musicbrainz.org/release-group/0153a765-6c68-4336-8a1d-74d6bebef24e",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0153a765-6c68-4336-8a1d-74d6bebef24e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 77953,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 2/3/2（廣度線冷門軸照 Last.fm listeners 77953）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "爸媽受訪的錄音，剪成了兩首明信片短曲。鼓手 Nate Smith 2003 年認識 Dave Holland，隨後加入 Holland 五重奏。他訪問雙親的片段散在整張之間，兩首短篇一首寫母親、一首寫父親。素材的起點，是他在鼓或鋼琴上即興，或把點子哼進錄音筆，再交給樂團上色。客席有 Holland 與 Chris Potter，Gretchen Parlato 則唱〈Pages〉。Ropeadope 2017 年 2 月出片，這回是他頭一遭以 Kinfolk 之名領軍。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Kinfolk:_Postcards_from_Everywhere",
+     "https://en.wikipedia.org/wiki/Nate_Smith_(drummer)",
+     "https://www.discogs.com/master/1129044",
+     "https://musicbrainz.org/release-group/0153a765-6c68-4336-8a1d-74d6bebef24e"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d5/9a/61/d59a613c-9fb2-3c51-f8a3-322ac99480b8/mzaf_10100840919819345635.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1649748372",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1649748372「Nate Smith《KINFOLK: Postcards from Everywhere》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Intro: Wish You Were Here〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Keyon Harrold",
+   "album": "The Mugician",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "89278b43-5e0b-4685-8869-e5fd71e27000",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "爵士×嘻哈／融合／社會議題：小號手，Glasper 圈外交的 jazz／hip-hop／R&B 融合，Mass Appeal 合作｜⚠ MB 首發年 2017-09-29；若店內有更早自發行版本以店內為準｜MB release-group 89278b43-5e0b-4685-8869-e5fd71e27000：title「The Mugician」、Album、first-release-date 2017-09-29、artist-credit「Keyon Harrold」。證據：https://musicbrainz.org/release-group/89278b43-5e0b-4685-8869-e5fd71e27000",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/89278b43-5e0b-4685-8869-e5fd71e27000/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 10085,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 3/4/2（廣度線冷門軸照 Last.fm listeners 10085）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Nas 把爵士小號手簽進自己的嘻哈廠牌。Keyon Harrold 替電影《Miles Ahead》吹了全部小號。那家 Mass Appeal 是 Nas 等人在 2014 年創立的，2017 年和 Legacy 一起發行了這張。盤中他身兼小號、歌聲與節拍，Robert Glasper 與 Big K.R.I.T. 也來客串。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/1379913",
+     "https://en.wikipedia.org/wiki/Keyon_Harrold",
+     "https://keyonharroldmusic.com/bio",
+     "https://musicbrainz.org/release-group/89278b43-5e0b-4685-8869-e5fd71e27000"
+    ],
+    "note": "新世代爵士線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c2/82/e7/c282e7d8-9d56-f331-0c39-2b832eb80c85/mzaf_2481386651452658173.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1855563721",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1855563721「Keyon Harrold《The Mugician》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Voicemail〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Snarky Puppy",
+   "album": "groundUP",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7812b93f-be89-46b1-b69a-acf4b0076c93",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "爵士×嘻哈／融合／社會議題：卡池只有 2006／2007，補 2010 後 groundUP 世代的現場代表作｜⚠ 現場錄音（棚內有觀眾）；MB 標 AlbumLive｜MB release-group 7812b93f-be89-46b1-b69a-acf4b0076c93：title「groundUP」、Album＋Live、first-release-date 2012-03-26、artist-credit「Snarky Puppy」。證據：https://musicbrainz.org/release-group/7812b93f-be89-46b1-b69a-acf4b0076c93",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7812b93f-be89-46b1-b69a-acf4b0076c93/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 39536,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 4/3/2（廣度線冷門軸照 Last.fm listeners 39536）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "貝斯手創立新廠牌，拿自家樂團的現場打頭陣。Snarky Puppy 的團長 Michael League 彈貝斯，2004 年在北德州大學組團。他的 GroundUP Music 起初是 Ropeadope 旗下的子廠牌，用意是讓較不知名的藝人接觸這支樂團的聽眾。2011 年 12 月，樂團在布魯克林的 Shapeshifter Lab 連錄三晚，台下坐著朋友與家人，成品全是台上當場的聲音。21 位演奏者裡，鍵盤、吉他與打擊各有三人。這張開張盤在 2012 年問世。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/671850",
+     "https://en.wikipedia.org/wiki/GroundUP_(album)",
+     "https://en.wikipedia.org/wiki/Michael_League",
+     "https://en.wikipedia.org/wiki/Snarky_Puppy",
+     "https://musicbrainz.org/release-group/7812b93f-be89-46b1-b69a-acf4b0076c93"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/b1/51/ecb151b4-9317-0196-e59f-7e26058cb47f/mzaf_16253304351639041098.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1105115559",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1105115559「Snarky Puppy《GroundUP》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Thing of Gold〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Snarky Puppy",
+   "album": "We Like It Here",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "fcf368c7-9ce7-487e-bd95-14543f6764cd",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "爵士×嘻哈／融合／社會議題：Snarky Puppy 轉紅的現場名作，Grammy 當代器樂得獎｜⚠ 現場錄音；Grammy 得獎說法未逐項查證｜MB release-group fcf368c7-9ce7-487e-bd95-14543f6764cd：title「We Like It Here」、Album＋Live、first-release-date 2014-02-25、artist-credit「Snarky Puppy」。證據：https://musicbrainz.org/release-group/fcf368c7-9ce7-487e-bd95-14543f6764cd",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fcf368c7-9ce7-487e-bd95-14543f6764cd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 152590,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 4/2/2（廣度線冷門軸照 Last.fm listeners 152590）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "荷蘭 Utrecht 連錄四晚，攝影機也全程開著。Snarky Puppy 常被稱作一個集體，前後進出的樂手超過四十位。場地是藝術空間 Kytopia，日期是 2013 年 10 月 7 至 10 日，台下有觀眾，唱片收的就是現場原音，影像則收進隨附的 DVD。鼓手這回換成 Larnell Lewis，Cory Henry 彈 Hammond B3，〈Lingus〉裡還有他的一段合成器獨奏。整套在 2014 年 2 月面市。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/832307",
+     "https://en.wikipedia.org/wiki/We_Like_It_Here",
+     "https://en.wikipedia.org/wiki/Family_Dinner_%E2%80%93_Volume_1",
+     "https://en.wikipedia.org/wiki/Snarky_Puppy",
+     "https://en.wikipedia.org/wiki/Cory_Henry",
+     "https://musicbrainz.org/release-group/fcf368c7-9ce7-487e-bd95-14543f6764cd"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/eb/b1/57/ebb1576e-fbd3-834c-5f79-14cc74f5cc83/mzaf_11869149220171255927.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1322208932",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1322208932「Snarky Puppy《We Like It Here》」：曲目 16/16 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Shofukan〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Terri Lyne Carrington & Social Science",
+   "album": "Waiting Game",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b97cf0db-3536-4cd1-ac21-97aa9478dba7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "爵士×嘻哈／融合／社會議題：鼓手 Terri Lyne Carrington 帶領的社會議題爵士，Grammy 肯定的代表作｜策展無疑點｜MB release-group b97cf0db-3536-4cd1-ac21-97aa9478dba7：title「Waiting Game」、Album、first-release-date 2019-11-08、artist-credit「Terri Lyne Carrington & Social Science」。證據：https://musicbrainz.org/release-group/b97cf0db-3536-4cd1-ac21-97aa9478dba7",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b97cf0db-3536-4cd1-ac21-97aa9478dba7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 364,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 4/5/2（廣度線冷門軸照 Last.fm listeners 364）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 5、accessibility 2；obscurity=5 但沒有遺珠級證據（listeners 364），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "鼓手為了回應時局，組了 Social Science。Terri Lyne Carrington 在 Berklee 任教，也創辦該校的爵士與性別正義學院。所謂時局，指的是社會與政治上的重大變動：第一張碟收的是歌，處理 #MeToo，核心則是警察暴力。Esperanza Spalding 彈貝斯，Kassa Overall 負責唱盤與人聲。第二張碟換成四個樂章、長 42 分鐘的管弦組曲。2019 年經 Motéma 出版，後來入圍第 63 屆葛萊美最佳爵士器樂專輯。",
+    "sourceUrls": [
+     "https://motema.com/waiting-game",
+     "https://en.wikipedia.org/wiki/Terri_Lyne_Carrington",
+     "https://downbeat.com/reviews/detail/waiting-game",
+     "https://www.discogs.com/master/1643075",
+     "https://en.wikipedia.org/wiki/63rd_Annual_Grammy_Awards",
+     "https://musicbrainz.org/release-group/b97cf0db-3536-4cd1-ac21-97aa9478dba7"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/89/4f/7c/894f7c76-5912-32ef-4124-717a2d13f0cb/mzaf_6372232044693716874.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1477169817",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1477169817「Terri Lyne Carrington《Waiting Game》」：曲目 15/15 對上 MB 原盤（Apple 共 15 軌），取第 1 軌〈Trapped In The American Dream (feat. Kassa Overall)〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Steve Lehman",
+   "album": "Sélébéyone",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "da045096-0f3a-43c5-9a91-93df8b91d2e0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "爵士×嘻哈／融合／社會議題：薩克斯風手 Lehman 與塞內加爾饒舌合作，spectral 和聲加 hip-hop 的新世代實驗｜策展無疑點｜MB release-group da045096-0f3a-43c5-9a91-93df8b91d2e0：title「Sélébéyone」、Album、first-release-date 2016-05-10、artist-credit「Steve Lehman」。證據：https://musicbrainz.org/release-group/da045096-0f3a-43c5-9a91-93df8b91d2e0",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/da045096-0f3a-43c5-9a91-93df8b91d2e0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 2236,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 4/5/4（廣度線冷門軸照 Last.fm listeners 2236）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 5、accessibility 4；obscurity=5 但沒有遺珠級證據（listeners 2236），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兩位 MC，一位用英語饒舌，一位用沃洛夫語。Steve Lehman 主奏中音薩克斯風，讀到哥倫比亞大學作曲博士。英語那位是紐約地下嘻哈老手 HPrizm，沃洛夫語那位則是塞內加爾的 Gaston Bandimic；盤名也是沃洛夫語，意指交會成新事物的路口。2010 年，高音薩克斯風手 Maciek Lasserre 帶他進入塞內加爾嘻哈圈。鼓機編程與取樣由他和 Lasserre 親手做，鼓聲在電子與原聲之間切換。2016 年，Pi Recordings 把它收進目錄。",
+    "sourceUrls": [
+     "https://pirecordings.com/release/selebeyone/",
+     "https://www.textura.org/archives/l/lehman_selebeyone.htm",
+     "https://cabbageshiphop.com/hprizm-selebeyone-antipop-consortium",
+     "https://www.freejazzblog.org/2016/10/steve-lehman-selebeyone-selebeyone-pi.html",
+     "https://en.wikipedia.org/wiki/Steve_Lehman_(composer)",
+     "https://musicbrainz.org/release-group/da045096-0f3a-43c5-9a91-93df8b91d2e0"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/24/9d/ae/249dae44-a36e-9e43-a19c-5bb0cfbae1f5/mzaf_5126223112403176158.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1256713104",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1256713104「Steve Lehman & Sélébéyone《Sélébéyone (feat. Gaston Bandimic, Hprizm, Maciek Lasserre, Carlos Homs, Drew Gress & Damion Reid)》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Laamb〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jaimie Branch",
+   "album": "Fly or Die",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "467688f6-de99-422e-ab34-c1c271699ce6",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "芝加哥 International Anthem 與實驗派：芝加哥 International Anthem 小號手首作，新世代自由爵士的標誌｜策展無疑點｜MB release-group 467688f6-de99-422e-ab34-c1c271699ce6：title「Fly or Die」、Album、first-release-date 2017-05-05、artist-credit「jaimie branch」。證據：https://musicbrainz.org/release-group/467688f6-de99-422e-ab34-c1c271699ce6",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1464515693",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/8a/99/c4/8a99c45f-8357-938e-16f9-ee0f80ef039a/0664992991205.png/600x600bb.jpg",
+    "note": "CAA release-group front 連續 500／逾時；取已釘定試聽的 Apple 1464515693 官方圖，主線 2026-10-12 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 20363,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 4/3/4（廣度線冷門軸照 Last.fm listeners 20363）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "姊妹的公寓裡，樂團一個下午就錄完。小號手 Jaimie Branch 十四歲搬到芝加哥近郊，公寓的地點是布魯克林 Red Hook。同場有 Tomeka Reid 的大提琴、Jason Ajemian 的貝斯與 Chad Taylor 的鼓。她回芝加哥後，在 Dave Vettraino 的家庭錄音室後製、疊錄，把十首串成一組約 35 分鐘長的組曲，標題曲只有 52 秒。International Anthem 在 2017 年接下這張，那是她頭一回當領銜。",
+    "sourceUrls": [
+     "https://intlanthem.bandcamp.com/album/fly-or-die",
+     "https://en.wikipedia.org/wiki/Jaimie_Branch",
+     "https://musicbrainz.org/release-group/467688f6-de99-422e-ab34-c1c271699ce6"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/74/e6/6b/74e66b62-2654-5cb0-e61c-f4cd8ea5a1b9/mzaf_13934988255211203472.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1464515693",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1464515693「Jaimie Branch《Fly or Die》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Jump Off〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jaimie Branch",
+   "album": "Fly or Die II: bird dogs of paradise",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ea25e6f4-c41d-4f5d-afa8-c76a5a95aac2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "芝加哥 International Anthem 與實驗派：第二作，社會憤怒與旋律並存的新世代爵士代表｜策展無疑點｜MB release-group ea25e6f4-c41d-4f5d-afa8-c76a5a95aac2：title「FLY or DIE II: bird dogs of paradise」、Album、first-release-date 2019-10-11、artist-credit「jaimie branch」。證據：https://musicbrainz.org/release-group/ea25e6f4-c41d-4f5d-afa8-c76a5a95aac2",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ea25e6f4-c41d-4f5d-afa8-c76a5a95aac2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 24306,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 4/3/4（廣度線冷門軸照 Last.fm listeners 24306）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "這回小號手站到前面，第一次開口唱。Jaimie Branch 在文案裡說，器樂的抽象之中藏著許多美，這次她偏偏挑了更直白的路，用人聲說話，還添上合成器。多數曲子寫在 2018 年 11 月的歐洲巡演途中，巡演尾聲就在倫敦 Dalston 的兩處場地錄下。〈prayer for amerikkka pt. 1 & 2〉在調低的藍調上直指種族歧視。大提琴改由 Lester St. Louis 坐鎮，2019 年 International Anthem 推出了它。",
+    "sourceUrls": [
+     "https://intlanthem.bandcamp.com/album/fly-or-die-ii-bird-dogs-of-paradise",
+     "https://en.wikipedia.org/wiki/Jaimie_Branch",
+     "https://musicbrainz.org/release-group/ea25e6f4-c41d-4f5d-afa8-c76a5a95aac2"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d0/92/bc/d092bce5-ba88-89dc-3330-5d118158a965/mzaf_12719206839216332881.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1850783180",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1850783180「Jaimie Branch《Fly or Die II: Bird Dogs of Paradise (Ia11 Edition)》」：曲目 9/9 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Birds of Paradise〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jaimie Branch",
+   "album": "Fly or Die Fly or Die Fly or Die ((world war))",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f8994372-9e73-4241-9ec5-672707f01738",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "芝加哥 International Anthem 與實驗派：身後出版的第三作，維基確認 2023-08-25｜⚠ 遺作｜MB release-group f8994372-9e73-4241-9ec5-672707f01738：title「Fly or Die Fly or Die Fly or Die ((world war))」、Album、first-release-date 2023-08-25、artist-credit「jaimie branch」。證據：https://musicbrainz.org/release-group/f8994372-9e73-4241-9ec5-672707f01738",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f8994372-9e73-4241-9ec5-672707f01738/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 23517,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 4/3/4（廣度線冷門軸照 Last.fm listeners 23517）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "混音只差微調、曲名與封面未定時，小號手離世。Jaimie Branch 2022 年 8 月 22 日於布魯克林家中過世，得年 39 歲，死因是意外藥物過量。在那之前，專輯已於當年 4 月在 Omaha 的 Bemis Center 駐村錄成，7 月轉往芝加哥剪輯、混音。最後的收尾，由她的家人、團員與廠牌夥伴接手。2023 年，International Anthem 讓它問世。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Jaimie_Branch",
+     "https://intlanthem.bandcamp.com/album/fly-or-die-fly-or-die-fly-or-die-world-war",
+     "https://en.wikipedia.org/wiki/Fly_or_Die_Fly_or_Die_Fly_or_Die_((world_war))",
+     "https://musicbrainz.org/release-group/f8994372-9e73-4241-9ec5-672707f01738"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0e/bf/b1/0ebfb1c0-0315-3929-68cb-a0fa6ed30211/mzaf_500343390459502222.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "6769746146",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 6769746146「Jaimie Branch《Fly or Die Fly or Die Fly or Die ((world war))》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈aurora rising〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Matana Roberts",
+   "album": "Coin Coin Chapter One: Gens de couleur libres",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "30bb9be4-c39a-4803-b19f-eb171b88ab04",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "芝加哥 International Anthem 與實驗派：薩克斯風手 Coin Coin 系列第一章，美國黑人記憶的實驗爵士｜策展無疑點｜MB release-group 30bb9be4-c39a-4803-b19f-eb171b88ab04：title「Coin Coin Chapter One: Gens de couleur libres」、Album、first-release-date 2011-05-10、artist-credit「Matana Roberts」。證據：https://musicbrainz.org/release-group/30bb9be4-c39a-4803-b19f-eb171b88ab04",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/30bb9be4-c39a-4803-b19f-eb171b88ab04/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 18601,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 4/4/4（廣度線冷門軸照 Last.fm listeners 18601）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "曾祖父母把破布縫成被子，Roberts 照這法子做音樂。Matana Roberts 以簧管與人聲領奏，系列預計寫十二章。那段往事出自外祖母之口，化作 Roberts 所說「全景聲音縫被」這套作法的靈感。系列名取自 Marie Thérèse Coincoin，一位獲得自由的奴隸，也是女商人；副標的意思是「有色自由人」。第一章召集蒙特婁 15 位樂手，對著一小群觀眾錄下現場，收尾曲獻給錄音前兩週過世的母親。Constellation 於 2011 年出版。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/30bb9be4-c39a-4803-b19f-eb171b88ab04",
+     "https://www.wemu.org/2011-07-27/matana-roberts-an-ancestral-history-in-music",
+     "https://en.wikipedia.org/wiki/Coin_Coin_Chapter_One:_Gens_de_Couleur_Libres",
+     "https://blacksound.com.au/products/roberts-matana-coin-coin-chapter-one-gens-de-couleur-2x10",
+     "https://en.wikipedia.org/wiki/Matana_Roberts"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d3/66/55/d36655ed-f3bb-df3a-d271-e5d96d31e5b4/mzaf_6905147033551356395.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "482998388",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 482998388「Matana Roberts《Coin Coin Chapter One: Gens de Couleur Libres》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Rise〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Matana Roberts",
+   "album": "Coin Coin Chapter Three: River Run Thee",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7badc600-c795-4cdd-85e3-8d9e011b5e3b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "芝加哥 International Anthem 與實驗派：Coin Coin 系列公認最佳章節之一｜策展無疑點｜MB release-group 7badc600-c795-4cdd-85e3-8d9e011b5e3b：title「Coin Coin Chapter Three: River Run Thee」、Album、first-release-date 2015-02-03、artist-credit「Matana Roberts」。證據：https://musicbrainz.org/release-group/7badc600-c795-4cdd-85e3-8d9e011b5e3b",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "944265844",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/f2/45/4b/f2454b67-1e8d-3c3c-6b3e-396679be3fc3/666561011062.jpg/600x600bb.jpg",
+    "note": "CAA 無圖；取已釘定試聽的 Apple 944265844 官方圖，主線 2026-10-12 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 7040,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 4/4/4（廣度線冷門軸照 Last.fm listeners 7040）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "第一章十六人上場，第三章只剩 Roberts 一人。曾是芝加哥 AACM 成員的 Matana Roberts，這一章所有樂器都自己演奏。錄音在 2014 年 6 月，地點是蒙特婁 Hotel2Tango；人聲與中音薩克斯風擺在中央，周圍再鋪一層合成器、直立鋼琴與持續低音。取樣的素材包括 1965 年 Malcolm X 的演講，以及密西西比州一位無家可歸女士的聲音。整章在 2015 年由 Constellation 推出。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Coin_Coin_Chapter_Three:_River_Run_Thee",
+     "https://en.wikipedia.org/wiki/Matana_Roberts",
+     "https://musicbrainz.org/release-group/7badc600-c795-4cdd-85e3-8d9e011b5e3b"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ed/64/ac/ed64ac9a-3d46-6c8a-d442-0852c22997f0/mzaf_12201161913571915692.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "944265844",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 944265844「Matana Roberts《Coin Coin Chapter Three: River Run Thee》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈All Is Written〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ben LaMar Gay",
+   "album": "Downtown Castles Can Never Block the Sun",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b4ac7104-8819-43b4-9226-4b69046e1073",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "芝加哥 International Anthem 與實驗派：芝加哥短號手兼作曲人，International Anthem 首張，混合爵士與民謠實驗｜⚠ MB 類型標為 compilation，實為其公認首張專輯｜MB release-group b4ac7104-8819-43b4-9226-4b69046e1073：title「Downtown Castles Can Never Block the Sun」、Album＋Compilation、first-release-date 2018-05-04、artist-credit「Ben LaMar Gay」。證據：https://musicbrainz.org/release-group/b4ac7104-8819-43b4-9226-4b69046e1073",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b4ac7104-8819-43b4-9226-4b69046e1073/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 14674,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 3/4/4（廣度線冷門軸照 Last.fm listeners 14674）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "七張沒發行的專輯，挑出十五首當首作。Ben LaMar Gay 早年混跡芝加哥南區的塗鴉圈，吹短號也作曲。那七張錄於七年之間，International Anthem 把這張同時稱作 greatest hits 與 debut album。挑歌的是 Scott McNiece 與他本人，曲目大半來自那批裡的《Grapes》，盤名正是他在那張裡反覆念誦的一句咒語。〈Muhal〉一曲向 Muhal Richard Abrams 致敬。2018 年發片。",
+    "sourceUrls": [
+     "https://intlanthem.bandcamp.com/album/downtown-castles-can-never-block-the-sun",
+     "https://www.freejazzblog.org/2018/11/ben-lamar-gay-downtown-castles-can.html",
+     "https://thequietus.com/quietus-reviews/album-of-the-week/ben-lamar-gay-open-arms-to-open-us-review/",
+     "https://www.allaboutjazz.com/downtown-castles-can-never-block-the-sun-ben-lamar-gay-international-anthem-review-by-gareth-thompson",
+     "https://www.nonesuch.com/artists/ben-lamar-gay",
+     "https://musicbrainz.org/release-group/b4ac7104-8819-43b4-9226-4b69046e1073"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c6/19/d3/c619d3f7-41f2-aecf-9668-24a9435b94e4/mzaf_10499881491662947972.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1464506746",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1464506746「Ben LaMar Gay《Downtown Castles Can Never Block the Sun》」：曲目 14/15 對上 MB 原盤（Apple 共 15 軌），取第 1 軌〈Vitis Labrusca〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ben LaMar Gay",
+   "album": "Open Arms to Open Us",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "cbb52b80-15bf-4fdf-a6e8-983ecce8344b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "芝加哥 International Anthem 與實驗派：芝加哥獨特世界爵士聲響，Anthem 代表作｜策展無疑點｜MB release-group cbb52b80-15bf-4fdf-a6e8-983ecce8344b：title「Open Arms to Open Us」、Album、first-release-date 2021-11-19、artist-credit「Ben LaMar Gay」。證據：https://musicbrainz.org/release-group/cbb52b80-15bf-4fdf-a6e8-983ecce8344b",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cbb52b80-15bf-4fdf-a6e8-983ecce8344b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 34267,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "note": "機器基線 3/3/3（廣度線冷門軸照 Last.fm listeners 34267）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "姑婆說，父親走後她仍聽得見他在田裡敲打。短號手 Ben LaMar Gay 童年暑假住在阿拉巴馬的姑婆家，由這句話想到節奏是「資訊的繼承」。2021 年 3 至 6 月在 International Anthem Studios 錄成，地點在芝加哥；短號、人聲之外，他還負責合成器、風琴與巴拉豐木琴。盧安達的 Dorothée Munyaneza 以盧安達語唱輓歌，Onye Ozuzu 則念伊博字母。同年 11 月上架，是他在這間廠牌的第二號作品。",
+    "sourceUrls": [
+     "https://intlanthem.bandcamp.com/album/open-arms-to-open-us",
+     "https://www.freejazzblog.org/2021/12/ben-lamar-gay-open-arms-to-us.html",
+     "https://thequietus.com/quietus-reviews/album-of-the-week/ben-lamar-gay-open-arms-to-open-us-review/",
+     "https://daily.bandcamp.com/album-of-the-day/ben-lamar-gay-open-arms-to-open-us-review",
+     "https://www.nonesuch.com/artists/ben-lamar-gay",
+     "https://musicbrainz.org/release-group/cbb52b80-15bf-4fdf-a6e8-983ecce8344b"
+    ],
+    "note": "新世代爵士線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f7/42/d0/f742d0ca-14a1-1791-77c2-f2aea0ffa16a/mzaf_15155271605879491742.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-12T06:49:51Z",
+    "appleCollectionId": "1584837965",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1584837965「Ben LaMar Gay《Open Arms to Open Us》」：曲目 16/16 對上 MB 原盤（Apple 共 16 軌），取第 1 軌〈Sometimes I Forget How Summer Looks on You (feat. Ohmme)〉。主線 2026-10-12 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  }
+ ]
+}

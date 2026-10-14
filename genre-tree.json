@@ -1,5 +1,5 @@
 {
- "產出日期": "2026-10-10",
+ "產出日期": "2026-10-12",
  "minNode": 20,
  "genres": [
   {
@@ -174,48 +174,54 @@
   {
    "id": "jazz",
    "zh": "爵士",
-   "count": 4470,
+   "count": 4672,
    "children": [
     {
      "id": "bop",
      "zh": "Bebop / Hard Bop",
-     "count": 1407,
+     "count": 1415,
      "children": []
     },
     {
      "id": "fusion",
      "zh": "Fusion / Jazz-Funk",
-     "count": 826,
-     "children": []
-    },
-    {
-     "id": "free",
-     "zh": "自由與前衛",
-     "count": 699,
+     "count": 868,
      "children": []
     },
     {
      "id": "contemporary",
      "zh": "當代與 Nu Jazz",
-     "count": 678,
+     "count": 749,
+     "children": []
+    },
+    {
+     "id": "free",
+     "zh": "自由與前衛",
+     "count": 732,
      "children": []
     },
     {
      "id": "vocal",
      "zh": "人聲爵士",
-     "count": 351,
+     "count": 361,
      "children": []
     },
     {
      "id": "swing",
      "zh": "Swing / 大樂團",
-     "count": 276,
+     "count": 278,
      "children": []
     },
     {
      "id": "soul-jazz",
      "zh": "Soul Jazz / 管風琴",
-     "count": 215,
+     "count": 219,
+     "children": []
+    },
+    {
+     "id": "modal",
+     "zh": "Modal / 靈性爵士",
+     "count": 187,
      "children": []
     },
     {
@@ -225,27 +231,21 @@
      "children": []
     },
     {
-     "id": "modal",
-     "zh": "Modal / 靈性爵士",
-     "count": 175,
-     "children": []
-    },
-    {
      "id": "latin",
      "zh": "拉丁與巴莎",
-     "count": 156,
+     "count": 160,
      "children": []
     },
     {
      "id": "ecm",
      "zh": "ECM / 歐陸",
-     "count": 103,
+     "count": 114,
      "children": []
     },
     {
      "id": "jp-jazz",
      "zh": "日本爵士",
-     "count": 20,
+     "count": 22,
      "children": []
     }
    ]
@@ -253,48 +253,48 @@
   {
    "id": "electronic",
    "zh": "電子",
-   "count": 1789,
+   "count": 1955,
    "children": [
     {
      "id": "ambient",
      "zh": "Ambient / Drone",
-     "count": 693,
+     "count": 738,
      "children": []
     },
     {
      "id": "techno",
      "zh": "Techno",
-     "count": 483,
-     "children": []
-    },
-    {
-     "id": "synth",
-     "zh": "Synthpop / Electro",
-     "count": 345,
-     "children": []
-    },
-    {
-     "id": "idm",
-     "zh": "IDM / Glitch",
-     "count": 339,
-     "children": []
-    },
-    {
-     "id": "house",
-     "zh": "House",
-     "count": 333,
+     "count": 492,
      "children": []
     },
     {
      "id": "downtempo",
      "zh": "Trip-hop / Downtempo",
-     "count": 269,
+     "count": 372,
+     "children": []
+    },
+    {
+     "id": "synth",
+     "zh": "Synthpop / Electro",
+     "count": 353,
+     "children": []
+    },
+    {
+     "id": "idm",
+     "zh": "IDM / Glitch",
+     "count": 348,
+     "children": []
+    },
+    {
+     "id": "house",
+     "zh": "House",
+     "count": 347,
      "children": []
     },
     {
      "id": "bass",
      "zh": "Dub / Bass",
-     "count": 216,
+     "count": 244,
      "children": []
     },
     {
@@ -306,19 +306,19 @@
     {
      "id": "noise",
      "zh": "實驗與噪音",
-     "count": 137,
+     "count": 138,
      "children": []
     },
     {
      "id": "trance",
      "zh": "Trance / Goa",
-     "count": 59,
+     "count": 61,
      "children": []
     },
     {
      "id": "nu-disco",
      "zh": "Disco / Nu-Disco",
-     "count": 49,
+     "count": 51,
      "children": []
     }
    ]
@@ -326,12 +326,12 @@
   {
    "id": "soul",
    "zh": "靈魂放克",
-   "count": 1587,
+   "count": 1588,
    "children": [
     {
      "id": "funk",
      "zh": "Funk / P-Funk",
-     "count": 897,
+     "count": 898,
      "children": []
     },
     {
@@ -649,12 +649,12 @@
   {
    "id": "world",
    "zh": "世界",
-   "count": 819,
+   "count": 864,
    "children": [
     {
      "id": "reggae",
      "zh": "Reggae / Dub",
-     "count": 251,
+     "count": 294,
      "children": []
     },
     {
@@ -666,7 +666,7 @@
     {
      "id": "african",
      "zh": "非洲",
-     "count": 145,
+     "count": 147,
      "children": []
     },
     {

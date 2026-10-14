@@ -33,6 +33,12 @@
 判定、固定簡介、固定試聽／無來源狀態與 published gate 缺一不可；不得先上線
 `seed_cards.json` 再補其他資料。
 
+**新增專輯要同時新增藝人介紹**（2026-10-13 店主指示）：每批上架的卡，凡藝人在
+`data/artist-intros/` 還沒有介紹、也不在 `desc-tools/batches/artist/progress.json` 排隊中的，
+補進名冊（`batch-progress/artist-intro/roster-*.json`，`tier` D、`addedBy` 標批名）、切一批
+`ar-d-xxx`，照 `dip-artist-intro` skill 跑完（補洞 → 寫作 → 審稿 → 建分片），與專輯同一個 PR 或緊接的 PR 上線。
+細節見 `ALBUM_ONBOARDING.md` §11。
+
 ## 風險操作：先在對話中提示，等用戶說「可以」再執行
 
 執行以下操作前，**必須先在對話中用中文說明要做什麼、有什麼風險，等用戶明確說「可以」後才執行**。不顯示系統權限對話框，直接在聊天裡確認。
