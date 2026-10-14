@@ -1312,3 +1312,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：Blind Light 寫成 Anton Fier 主導的錄音名義（維基；MusicBrainz 另列 Laswell、Skopelitis、Dieng、Knox Chandler、Lori Carson 為成員，正文寫「Laswell 等人參與」兩者相容）；Black Box〈Ride on Time〉英國冠軍六週（唯一一處成績）；Bomb the Bass〈Beat Dis〉英國第 2 名；Blake Baxter「比 Derrick May 與 Kevin Saunderson 還早錄音」（Qobuz＋維基）。
 - 身分：預抓維基作廢 3 位——Boo Williams（美式足球員）、Bola（菲律賓影集）、Boymerang 的 Graham Sutton（威爾斯氣象學家）。BGM 是日本團，不是 YMO 的《BGM》。Cecil Leuter 是 Roger Roger 的化名。Brian Eno / Jah Wobble 搜尋 9 次，overCapOk（第二源：補 Eno 名人堂）。
 - 待本機（上線簡介）：Blind Light《The Absence of Time》簡介寫成 Laswell 的計畫（維基寫 Fier 主導，MusicBrainz 列六名成員，建議改「Fier 主導、Laswell 等人參與」）；Cecil Leuter「最早一批玩 Moog、與 Pierre Henry、Wendy Carlos 同輩」查無；Charles Dodge《Speech Songs》年份；Chicane〈Offshore〉「逾 130 張合輯」為不可靠來源；另有 Bernard Fevre、Beverly Glenn-Copeland、Black Box、Blake Baxter、Bob Sinclar、Boymerang 數條（見 ARTIST-PUB-ISSUES）。
+
+## ar-d-085（2026-10-14）
+
+- 36 位上架（26 full、10 thin：Claude Young、Co-Fusion、Craig Kupka、Cristian Vogel、Cut Copy、Dan Curtin、Das Ding、dBridge、Deep Dish、Don Slepian）。4 位不寫：Dada、Den Sei Kwan（素材只有唱片行或經銷商頁）、CJ Bolland、Darkstar（thin 的聲音句只剩廠牌路線或曲風轉向）。
+- 審稿修 12 處：
+  - out-1 審稿 3 處：Dan Curtin 刪週報名（媒體名不進正文），改「當地媒體形容」；Danny Tenaglia「那一年紐約最大牌的 DJ」改「那幾年紐約當紅的 DJ」；Dark Comedy「影響極大」改「都有影響」（單源）。另撤下 CJ Bolland、Darkstar（thin 的聲音句只剩廠牌路線或曲風轉向，電子段要求具體手法）；寫作層不寫 Dada（團本身只有唱片行商品頁）。
+  - 保留：Cut Copy《In Ghost Colours》ARIA 冠軍（唯一一處成績）；Conrad Schnitzler 與 Mayhem 首張 EP 的軼事；Craig Leon 製作 Ramones 與 Suicide 首張；Constance Demby、Conrad Schnitzler 只寫過世年份。
+  - out-2 審稿 9 處：David Behrman「最早一代」改「早期」；David Lynch & Alan R. Splet 刪 Splet「法定失明」（健康）、Lynch「影史最具影響力之一」改「影響深遠」；Deux Filles 267 字超出單卡上限，刪「構想來自一場夢」「日後兩度被重發」；Digital Mystikz「最有名之一」改「具代表性」；Dillinja「定義者之一」改「重要製作人」（同源廠牌文案）；DJ Pierre「第一張 acid house 唱片」改「開端之作」；Don Slepian「唯一每天使用的人」改「每天使用」。寫作層不寫 Den Sei Kwan（只有經銷商再版頁的比喻，地位查無）。
+  - 保留：Lynch 2025 年、Splet 1994 年、DJ Deeon 2023 年過世（只寫年份）；Deee-Lite 百大單曲榜第 4 名、Deep Dish 葛萊美最佳混音（各一處成績）；John Peel 稱 Dave Clarke「techno 男爵」（具名人物）。
+- 身分：預抓維基作廢——Cluster & Eno（歐洲大學聯盟）、Dada（達達主義）、Dan Curtin（澳洲足球員）。Dada 是關西二人組泉陸奥彦與小西健司；Dark Comedy 是 Kenny Larkin 的化名；Das Ding 是荷蘭的 Danny Bosten。Deux Filles 的法國少女身世是杜撰設定，正文照「設定」寫。
+- 卡池年份存疑：Das Ding《H.S.T.A.》重製 2009／2010；Dave Clarke《Archive One》1995／1996。
+- 待本機（上線簡介）：Commix《Call to Mind》「Metalheadz 第二張藝人專輯」排序兩說、2002 年起是三人不是雙人組；Derrick Carter、Dillinja、Dimitri From Paris 各 2 條（見 ARTIST-PUB-ISSUES）。

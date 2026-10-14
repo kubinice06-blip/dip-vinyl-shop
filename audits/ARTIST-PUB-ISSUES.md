@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1190 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1198 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1146,6 +1146,14 @@
 | ar-d-084 | Chicane | Far From the Maddening Crowds | 〈Offshore〉後來被收進逾一百三十張合輯 | 英文維基專輯條目寫『over 130 compilations』，但條目自己標示這個數字引用的是不可靠來源；找不到可靠來源。建議刪掉數字或改成較含糊的寫法。另：Chicane 本人在 2025 年訪談說〈Offshore〉寫的是懷特島，與 Ibiza 的連結是外界包裝，若簡介未寫 Ibiza 則無須改。 | https://en.wikipedia.org/wiki/Far_from_the_Maddening_Crowds |
 | ar-d-085 | Commix | Call to Mind | 那是該廠繼 Rufige Kru《Malice in Wonderland》之後第二張藝人專輯 | fabric 官方店頁稱《Call to Mind》是 Metalheadz 的「首張藝人專輯」，維基則寫第二張（在 Rufige Kru《Malice in Wonderland》之後）；兩說互相衝突，排序宣稱不可靠，建議簡介改成不排序的寫法 | https://store.fabriclondon.com/products/fabriclive-44-commix |
 | ar-d-085 | Commix | Call to Mind | Cambridge 的 George Levings 與 Guy Brewer 從 2002 年起以 Commix 之名發行 12 吋 | 維基記載 2002 年起合作的是 Levings、Brewer 與 Conrad Whittle 三人，Whittle 在 2005 年簽 Metalheadz 前離團；2002 年起是三人組，雙人組是後來的事 | https://en.wikipedia.org/wiki/Commix |
+| ar-d-085 | Derrick Carter | Squaredancing in a Roundhouse | 1988 年他與 Mark Farina、Chris Nazuka 以 Symbols & Instruments 之名做的〈Mood〉 | Mood 是 EP 名而非單曲；年份兩源不一致（維基 1988、官網與 Qobuz 簡介 1989），建議改成不帶年份或標示『約 1988–89 年』 | https://www.derrickcarter.com/about |
+| ar-d-085 | Derrick Carter | Squaredancing in a Roundhouse | 1995 年他和 Luke Solomon、Chez Damier 創辦 Classic Recordings | 1996 年的訪談與官網只稱廠牌為 Classic（Ibiza Spotlight 稱 Classic Recordings），未見 1995 年這個創辦年份；請對照 Discogs 或廠牌頁再定 | https://www.discopogo.co/archive/derrick-carter-luke-solomon-were-tasmanian-devils-putting-out-house-music-1996 |
+| ar-d-085 | Dillinja | Cybotron | 2001 年他與長年搭檔 Lemon D 成立 Valve Recordings 與自製音響系統 | Valve Recordings 是 1997 年創辦（首發〈Violent Killa〉），2001 年 5 月是 Valve Sound System 在 Fabric 首度亮相；維基『2001 年成立音響系統與廠牌』的寫法有誤導 | https://vrecordings.com/artist/dillinja |
+| ar-d-085 | Dillinja | Cybotron | Cybotron 也是他 1993 年用過的名義之一 | 維基只列 Cybotron 為化名之一，未見 1993 年這個年份，本層查到的來源皆無；建議拿掉年份或另找依據 | https://en.wikipedia.org/wiki/Dillinja |
+| ar-d-085 | Dimitri From Paris | Sacrebleu | 嵌進《第凡內早餐》《甜蜜的生活》《8½》與《狂歡宴》的電影對白當轉場 | 維基只列《Breakfast at Tiffany's》《La Dolce Vita》與《The Party》三部，未見《8½》；請對照專輯曲目或樣本資料庫再定 | https://en.wikipedia.org/wiki/Dimitri_from_Paris |
+| ar-d-085 | Dimitri From Paris | Sacrebleu | 北美由 Atlantic、歐洲與日本由 EastWest 代理發行 | 本層來源未涉及發行代理，encyclopedia.com 僅記美國版 1998 年發行；未驗證，非確認有誤 | https://encyclopedia.com/education/news-wires-white-papers-and-books/dimitri-paris |
+| ar-d-086 | E-Dancer | Heavenly | 《Spin》曾稱它是「你沒聽過的十張最好專輯」之一 | 此說只見維基 Kevin Saunderson 條目單源，兩次搜尋都找不到 Spin 原文；屬排名／獎項類高風險宣稱，建議降級或加「據維基」，或刪除。 | https://en.wikipedia.org/wiki/Kevin_Saunderson |
+| ar-d-086 | Emerald Web | Dragon Wings and Wizard Tales | Stohl 1990 年因溺水意外過世 | Kat Epple 官網（1990）與 NTS、Sounds of Subterrania（1989，NTS 另寫享年 34 歲）不一致；建議改成不寫年份或寫『1989 或 1990 年』，並依死因預設規則拿掉死因 | https://www.nts.live/artists/12902-emerald-web |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
