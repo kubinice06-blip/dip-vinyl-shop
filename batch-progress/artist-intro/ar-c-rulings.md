@@ -1536,3 +1536,18 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-2 審稿 11 處：Ludwig「20 世紀最重要之一」改「極重要」；Ferras「歐洲首屈一指之一」改「重要」；Dohnányi 刪父親遭納粹處決（家人逝世細節＋政治）；呂泉生刪「因受傷」；Claire Chase「最前線」改「前線」；Clara Schumann「最早背譜之一」「最傑出之一」改「早期」「極傑出」；Vivier 刪「加拿大史上最偉大之一」（留 Ligeti 具名評語）；Cleveland Quartet「最受推崇之一」改「極受推崇」；Clint Mansell 刪「獻給過世的伴侶」；Silvestri「二流樂團」改「樂團」。
   - 保留：Claude-Michel Schönberg thin 以「先做法語概念專輯再上舞台」的做法過聲音門檻，倫敦版 2006 年成為西區最長壽音樂劇屬通行紀錄；Christopher Tin「第一首得葛萊美的遊戲音樂」屬通行事實（照 Van Cliburn 先例）；在世者各一處（盛宗亮麥克阿瑟、Shaw 普立茲、Simon 甘迺迪中心駐團、Bartoli、Chanticleer 葛萊美、Dutoit 皇家愛樂協會金獎、Czernowin GEMA、Rousset 布魯日首獎、Tin 葛萊美、Chase 麥克阿瑟）；盛宗亮文革背景一句＋《H'un》副題（作品題材）、Huberman 籌組巴勒斯坦交響樂團、Carlos Simon《Requiem for the Enslaved》委託緣由、呂泉生《閹雞》民謠遭皇民化政策禁唱（歷史背景）；胡瀞云 2024 年改名 Charlotte Hu。
 - 待本機：無新增上線簡介錯誤（本批多數無上線簡介）。
+
+## 第九輪收尾（ar-d-084～103，2026-10-14）
+
+- 二十批全數上線：755 位（612 full、143 thin），不寫 42 位，審稿修 238 處。介紹總數 6,846 → 7,601。
+- 範圍：電子段寫完（d-084～095 前段）；嘻哈段寫完（d-095 後段～d-101 前段）；古典段從 d-101 後段開始，寫到 C 字頭（Constantin Silvestri）。剩 13 批（ar-d-104～116，約 485 個卡鍵）未上線。
+- 本輪新定或重申的形狀：
+  - 「最／最早／第一／唯一／之一」一律收斂成「早期／重要／極具」；**通行事實**（MC Hammer 第一張鑽石嘻哈專輯、Vanilla Ice 第一首 Hot 100 冠軍饒舌單曲、Amy Beach 美國女性第一首交響曲等）照 Van Cliburn 先例保留。
+  - 家人逝世細節（喪母、父親早逝、伴侶過世、親人遭處決）與他人病況（盲眼、聽障、精神病名）也不寫，歷史人物同規；作品本身以逝者為題（Saba《Care for Me》、Headie One《Edna》）只寫作品題材。
+  - thin 的聲音句只有曲風標籤＋製作人名（J. Holiday、Marques Houston、Today、Westside Connection）照 Vex'd 先例不寫。
+  - 單卡 251–280 字放寬只給雙名／多名卡；單卡超過 250 一律刪到 250 內（Aaron Copland）。
+  - 2025–26 年死訊：Freddie Jackson、Peabo Bryson 主線 WebSearch 兩源以上核實；Sensational 只有 RA（引合作者公告）＋轉引的維基，**單一獨立來源放行為例外、不作先例**。
+  - 搜尋超額：補第二源或查無新事實者照先例放行；從零確認身分超 3–4 次（Yutaka Hirose、Lu1）記為例外、不作先例。
+- 待本機：
+  - KV 上線簡介的修正：見 `audits/ARTIST-PUB-ISSUES.md`（本輪各批「待本機」條目，共 1,312 條累計）。重點：Digga D、Kurupt 簡介以刑案為主軸建議改寫；Mac Dre、Griselda、Schoolly D 簡介含案情或私人逝世細節建議刪句。
+  - 卡池年份與曲風存疑：Das Ding《H.S.T.A.》2009／2010；Dave Clarke《Archive One》1995／1996；Hercules & Love Affair 2007／2008；Sainkho Namtchylak《Stepmother City》2000／2001；BUDDHA BRAND《黒船》實為單曲；Double X（台灣龐克團）曲風誤標 hiphop；Madvillain《Madvillainy》應為 2004；Kazi & Madlib《Blackmarket Seminar》1996 錄、2011 公開（卡池 2014）；Aaron Copland 自指《Appalachian Spring》版本待確認；Alan Silvestri《Back to the Future》卡年與版本；Andrew Manze Corelli 2002／2003；Alarm Will Sound composer 欄誤填；曲風誤標 hiphop：Karyn White、Kelis、Kirk Franklin、Koffee、J. Holiday、Jaheim、Joe、Peabo Bryson、PinkPantheress、Today。

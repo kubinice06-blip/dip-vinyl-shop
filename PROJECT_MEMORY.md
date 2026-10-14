@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-14｜dip-vinyl-shop｜藝人介紹第九輪二十批上線（雲端，ar-d-084～103；755 位；介紹 6,846 → 7,601）
+
+- 結果：755 位上架（612 full、143 thin），不寫 42 位（thin 聲音句只有曲風標籤、素材全單源等），審稿修 238 處。電子段、嘻哈段寫完；古典段寫到 C 字頭。剩 ar-d-104～116 共 13 批（約 485 卡鍵）。
+- 產線：每批補洞 4 支（Sonnet）＋寫作 2 支（Opus），同時最多兩批在飛；主線逐位審稿，2025–26 年死訊以 WebSearch 核實（Freddie Jackson、Peabo Bryson 多源；Sensational 單一獨立來源，記為例外）。
+- 本輪新形狀：家人逝世細節與他人病況也不寫（歷史人物同規）；通行「第一」事實照 Van Cliburn 先例保留；單卡超過 250 字一律刪減。
+- 主要檔案：`data/artist-intros/*`、`desc-tools/batches/artist/{cut,facts,research,output}/ar-d-084～103-*`、`desc-tools/batches/artist/progress.json`、`batch-progress/artist-intro/ar-c-rulings.md`（第九輪各批與收尾段）、`audits/ARTIST-PUB-ISSUES.md`。
+- 驗證：qa-artist gap／out 每批 0 處（只剩 skipped 的缺位）；build-artist-intros 64 分片、7,601 位；PR #80 各提交 Cloudflare 預覽部署與檢查全綠。
+
 ### 2026-10-13｜dip-vinyl-shop｜新世代爵士＋downtempo 兩線補藝人介紹（ar-d-120～127，289 位上架；介紹 5,808 → 6,097）
 
 - **起因**：店主 2026-10-13「現在新增專輯也要同時新增藝人介紹」→「補」。兩線上架藝人 327 位，扣已有介紹 18、已排隊 17、別名 1，290 位補進名冊（`addedBy` add-20261012-nj／add-20261011-dt，tier D），切 8 批。
