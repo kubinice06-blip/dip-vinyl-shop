@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1208 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1210 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1164,6 +1164,8 @@
 | ar-d-087 | Giora Feidman | The Magic of the Klezmer | 待了二十多年才轉為獨奏 | 以色列愛樂任期來源不一：英文維基「over 20 years」、德文維基 18 年（1956 年起）、Styriarte「almost two decades」，建議改成「將近二十年」或不寫年數；另上線簡介年份用中文數字（一九三六年等），與全站阿拉伯數字慣例不一致。 | https://de.wikipedia.org/wiki/Giora_Feidman |
 | ar-d-087 | Grant Kirkhope | Banjo-Kazooie | 這也是最早採用垂直重混的遊戲之一 | 英文維基《Banjo-Kazooie》只寫垂直重混在遊戲史上有其重要性、是 Mayles 要他做出超越 LucasArts iMUSE 淡接的東西，並未稱它是『最早採用』之一；『最早』無來源，建議改成『以垂直重混著稱』。 | https://en.wikipedia.org/wiki/Banjo-Kazooie_(video_game) |
 | ar-d-087 | Hallucinogen | Twisted | 全球約八萬五千張 | 英文維基《Twisted》條目的 85,000 張銷量只引用一個唱片行網站，無獨立來源；屬高風險數字，建議改用較保守說法或刪除。 | https://en.wikipedia.org/wiki/Twisted_(Hallucinogen_album) |
+| ar-d-087 | Heldon | Electronique Guerilla | 口白找了 Gilles Deleuze | 可查的來源沒有一處說 Deleuze 出現在《Électronique Guérilla》：Cyclic Defrost 說 Deleuze 朗讀 Nietzsche 文字的是 Pinhas 前身樂團 Schizo 的單曲〈Le Voyageur〉；英文維基 Richard Pinhas 與法文維基 Heldon 都沒提他參與這張。另有搜尋摘要說〈Ouais, Marchais, Mieux Qu'en 68〉有他，但頁面未開、出處不明。建議對照原盤 credit 再決定保留或改寫。 | https://www.cyclicdefrost.com/2015/11/richard-pinhas-electronique-guerilla-a-profile-by-tony-mitchell/ |
+| ar-d-087 | I-F | Fucking Consumer | 1998 年 Disko B 發行的首張專輯 | 待核：維基的 I-f 作品表在 1998 年前還列有 1995 年《Portrait Of A Dead Girl 1: The Cause》與 1997 年《The Brown Elbow Conspiracy》，是否為專輯未查（可能是 EP 或 12 吋），「首張專輯」宣稱只有上線簡介一源，建議本機核對 Discogs 後決定是否改成「專輯」。 | https://en.wikipedia.org/wiki/I-F |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

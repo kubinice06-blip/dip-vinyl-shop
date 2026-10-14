@@ -1335,3 +1335,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：底特律歷史博物館把 Fowlkes 與 Belleville Three 並列（官方機構）；Duke Dumont 英國冠軍、Ellie Goulding Critics' Choice、Empire of the Sun ARIA 七項（各一處成績）；E-Dancer 的聲音句出自 Qobuz 介紹，口氣已收斂；Ernest Hood 1995 年過世。
 - 身分：預抓維基作廢——Electroscope（驗電器）、Floorplan（電路設計）、Foul Play（小說）、Freeform（電視頻道）、Frost（霜）。Edward Ka-Spel 卡池標題「Aa?zhyd」是《AaΔzhyd, China Doll》的亂碼。Frost 是饒舌歌手 Kid Frost，卡池分類 electronic／rock 有誤（留給本機改分類）。
 - 待本機（上線簡介）：E-Dancer《Heavenly》「《Spin》十張最好專輯」只見維基單源；Emerald Web 簡介寫 Stohl 溺水過世（死因不該寫，年份 1989／1990 兩說）；Experimental Audio Research 簡介把 "contributed to Spacemen 3" 誤譯成「Spacemen 3 之外」；Fischerspooner 成軍年 1998／1999／2001 三說；Fred again.. 簡介「每首以說話的那個人命名」過度概括；Frost〈La Raza〉Hot 100 名次 42／48 兩說。
+
+## ar-d-087（2026-10-14）
+
+- 38 位上架（33 full、5 thin：Gold Panda、Gui Boratto、Holy Ghost!、Ikonika、Instra:mental）。2 位不寫：Government Alpha、Interferon（素材只有曲風標籤、廠牌與唱片行文案）。
+- 審稿修 12 處：
+  - out-1 審稿 9 處：Gemini「最神祕、最受敬重之一」改「神祕而受敬重」；Giora Feidman「最年輕單簧管手」改「年輕時」、刪德國大聯邦十字勳章與和解一句（在世者一處成績，且涉政治）；Goldfrapp 補半形空格；Gotan Project「頭一個指標」改「早期指標」；Hallucinogen「最有影響力之一」改「具影響力」；HAT 細野晴臣「最有影響力之一」改「影響深遠」、井上徹兩處改回 Tetsu Inoue（漢字名無來源）。寫作層不寫 Government Alpha（只有 harsh noise 標籤、廠牌與合作名單）。
+  - 保留：Fuck Buttons 倫敦奧運開幕式配樂；Grant Kirkhope 2023 Ivor Novello（唯一一處成績）；Goldfrapp 入圍水星獎；Sven Väth 談 Hardfloor（具名音樂人）；Gemini「在巔峰期從場景消失」（不涉原因）。
+  - out-2 審稿 2 處：Hudson Mohawke「DMC 決賽最年輕的選手」改「15 歲就打進 DMC 決賽」（紀錄類）；Innerzone Orchestra「融合得最連貫的作品之一」改「連貫代表作」。寫作層不寫 Interferon（只有唱片行文案，聲音句只剩曲風標籤）。另 HAT 補刪 Daisyworld 一句，壓回 242 字。
+  - 保留：Holly Herndon 的 STARTS Prize（唯一一處成績）；Pete Tong 談 Hudson Mohawke（具名人物）；Ikonika 依來源不用性別代名詞。
+- 身分：預抓維基作廢——Gemini（Google 語言模型）、HAT（帽子）、Hercules & Love Affair（神話）、Hula（夏威夷舞）、Hybrid（生物學）、Infiniti（日產汽車）、Interferon（干擾素）、Innerzone Orchestra（Steve Roach 的專輯）。Hazard 是 BJ Nilsen（派工詞寫的 Benny Jonsson 有誤）；Instra:mental 成員是 Alex Green 與 Damon Kirkham（派工詞有誤）；Hirofumi Goto 即後來的 Rondenion。
+- 卡池年份存疑：Hercules & Love Affair 2007／2008。
+- 待本機（上線簡介）：Function「2004 年加入 Sandwell District」年份不一；Gigi Masin《Wind》年份不一、被取樣的是 1989 年〈Clouds〉；Giora Feidman「二十多年」應為「將近二十年」；Grant Kirkhope「最早採用垂直重混」無來源；Hallucinogen「全球約八萬五千張」只見唱片行；Heldon「口白找了 Deleuze」只見於另一張單曲；I-F「首張專輯」待核。
