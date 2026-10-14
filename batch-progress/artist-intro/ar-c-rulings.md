@@ -1513,3 +1513,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-2 審稿 8 處：Golha（Hayedeh）「最具影響力之一」改「極具影響力」；Hovhaness「作品量最多之一」改「極多」；Alex North「第一份大量依賴爵士語彙的配樂」改「早期」；Kipnis「世上最偉大的低音之一」改「極受推崇」；Kantorow 刪「第一位法國籍冠軍」；Alla Rakha「史上最受推崇之一」改「極受推崇」；Alma Mahler 刪老師的「盲眼」（他人健康）；Amjad Ali Khan「當代首席大師」改「當代 sarod 大師」。
   - 保留：Alex North 1986 年「第一位獲頒榮譽奧斯卡的作曲家」屬通行事實（照 Van Cliburn 先例）；呂士軒金曲獎、Wreckx-n-Effect Hot 100 第 2、YoungBloodZ Hot 100 前五、Zayn 英美專輯榜冠軍、スチャダラパー 50 萬張、諏訪內晶子與 Kantorow 柴可夫斯基首獎、Silvestri 奧斯卡入圍、Desplat 兩座奧斯卡、Weilerstein 麥克阿瑟、Amjad Ali Khan Padma Vibhushan（各一處）；Whodini 引長島音樂名人堂（官方機構）；Yo-Yo 1994 年參議院作證、Golha 1979 年革命後女性獨唱遭禁、Hába 遭納粹禁演（政治背景各一句）；Baba Zumbi 2021 年過世。
 - 待本機（上線簡介與卡池）：Whodini「首張打進前四十名的嘻哈唱片」查無；Wiz Khalifa 大廠合約年、Big Jerm、「全球熱門第一」不符；Wizkid「慢速」（來源中速）；YG「九成節拍」查無；Yo-Yo「康普頓出身」（來源南洛杉磯）；勞動服務《海島聲事》各軌秒數與 Bandcamp 差 1–3 秒；夜貓組「唯一一張錄音室專輯」與報導不合；Aaron Copland 卡 1971 自指錄音有 1959／1970／1973 三版；Alex North 簡介樂器清單與「ondioline 從未用於電影」查無；Alan Silvestri 卡 1985 與簡介所述 2015 Intrada 完整版不一；Alarm Will Sound 卡池 composer 欄誤填「Acoustica」。
+
+## ar-d-102（2026-10-14）
+
+- 40 位全上架（37 full、3 thin：André Navarra、Bang on a Can All-Stars、Beatrice Rana），無不寫。
+- 古典段 A 至 B 字頭：演奏家、指揮、作曲家，加上音樂劇（Lloyd Webber & Rice《Evita》）、電影配樂（Duhamel、Poledouris、Conti）、印度古典（Bhimsen Joshi）、跨界（Bocelli）。
+- 搜尋超額：無。Navarra 失敗請求 6 次（超過記錄上限 4），照實記 notes，不影響事實。
+- 2025–26 事實：無新近死訊；Staier 2024 萊比錫巴赫勳章、Pappano 2024 年卸任皇家歌劇院，照收。
+- 審稿修 14 處：
+  - out-1 審稿 5 處：Schiff「最受敬重之一」改「極受敬重」；Bocelli 刪青光眼與失明（健康）、刪《Romanza》「史上最暢銷之一」（最高級＋在世者第二項成績）；Panufnik 刪出版社自述「二十世紀波蘭最重要的作曲家之一」；Duhamel「舒曼的精神分裂傾向」改「舒曼音樂裡的雙重性格」（他人病況）。
+  - out-2 審稿 9 處：Reicha 刪父親早逝、Salieri 刪雙親相繼過世（家人逝世細節，歷史人物同規）；Pappano 刪「任期最長」；Salieri「最受歡迎之一」改「極受歡迎」；Khachaturian「最知名」改「極負盛名」；Nikisch 1913 貝多芬第五號由「完整錄音之一、省略反覆」改「早期的交響曲錄音之一，有所刪略」（補洞層指該版有刪節）；Tuckwell 刪「史上錄音最多」；Beverly Sills「自 Caruso 以來最受歡迎」改「極受歡迎」；Bhimsen Joshi「幾乎無人能及」改「極為驚人」。
+  - 保留：Amy Beach「美國女性第一首出版的交響曲」屬通行事實（照 Van Cliburn 先例）；在世者各一處成績（Staier、Manze、Norman、Nelsons、Clyne、Meredith、Netrebko、Þorvaldsdóttir、《Evita》、Wit、Volodos、Rana）；Tuckwell 引國際法國號協會（官方）；Fiedler 1976 金氏紀錄；Salieri 毒殺傳說以「無史實根據」帶過；Schiff 1979 離開匈牙利、Panufnik 戰時與定居英國、Netrebko 不寫政治（背景各一句或不寫）。
+- 待本機（上線簡介與卡池）：《Evita》簡介「兩人共同製作」（維基寫 Rice 製作）；Andrew Manze Corelli 卡池 2002，搜尋所見 2003-01；Duhamel《Pierrot le Fou / Week-End》2001 後段為 2000 年重錄。
