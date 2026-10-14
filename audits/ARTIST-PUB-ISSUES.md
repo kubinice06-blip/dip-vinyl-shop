@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1269 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1273 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1225,6 +1225,10 @@
 | ar-d-096 | Control Machete | Mucho barato… | 1996 年的首作；西語維基記本作在墨西哥賣出十萬張、全拉美四十萬張 | 發行年各源不一（1996 錄音、1997 年 2 月或 7 月發行）；西語維基現版銷量寫法已改成六個月內 50 萬張，簡介的數字與引用已與現版不符，建議刪銷量或改成現版寫法，年份改核對後的版本 | https://es.wikipedia.org/wiki/Control_Machete |
 | ar-d-096 | Cormega | The Realness | 九〇年代中期是 The Firm 的一員……被踢出團後簽進 Def Jam，錄好的《The Testament》卻遭冷凍 | Qobuz（AllMusic 傳記）的順序是：1995 年出獄後先簽 Def Jam、錄《The Testament》，之後才在 The Firm 的規畫中被排除、換成 Nature；簡介寫成「被踢出團後簽進 Def Jam」，先後相反。另外他是「原本規畫的成員」，簡介寫「是 The Firm 的一員」建議改為被排除的規畫成員 | https://www.qobuz.com/ca-en/interpreter/cormega/114678 |
 | ar-d-096 | Cormega | The Realness | 獨立專輯榜第四 | 兩個來源（Qobuz、The Source）都寫登上 Top Heatseekers 榜第一，沒有「獨立專輯榜第四」的出處；請核對榜名與名次 | https://www.qobuz.com/ca-en/interpreter/cormega/114678 |
+| ar-d-097 | Double X | 白痴的謊言 | 台灣最早的地下龐克／後龐克樂團之一 | 開頁讀到的維基只稱 Double X 是龐克（punk），沒有任何來源稱後龐克（post-punk）；「最早」一詞也只有維基「pioneer」的說法。建議改為「台灣龐克的先驅」或拿掉「後龐克」。 | https://en.wikipedia.org/wiki/Sissey_Chao |
+| ar-d-097 | Drunken Tiger | 위대한 탄생 | 타이거 JK 與 DJ 샤인 的드렁큰 타이거 正規二輯……由도레미미디어發行 | 韓文與漢字直接相鄰處缺少半形空格（『的드렁큰』『由도레미미디어』等），不合現行排版規則；內容本身與 generasia、維基一致。 | https://www.generasia.com/wiki/Drunken_Tiger |
+| ar-d-097 | E.U. | Livin' Large | E.U. 一九八九年二月由 Virgin 發行 | 年月用中文數字，不合現行『年月日一律阿拉伯數字』規則；內容年份 1989 與搜尋摘要一致，但『二月』的月份本層沒有開頁證實。 | https://washingtoncitypaper.com/article/214126/da-oral-history-of-da-butt-put-your-memory-in/ |
+| ar-d-097 | Eve | Let There Be Eve... Ruff Ryders' First Lady | 這張首作的詞全部由她自己寫 | 維基專輯條目文字雖這麼寫，但其曲目 credits 列有 Missy Elliott、DMX、Melvin Smalls 等共同作者，全部自己寫缺乏支持；建議改成『她自己參與寫詞』或刪掉此句 | https://en.wikipedia.org/wiki/Let_There_Be_Eve...Ruff_Ryders%27_First_Lady |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

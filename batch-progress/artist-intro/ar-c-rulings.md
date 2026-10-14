@@ -1438,3 +1438,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：Biz Markie 1991 年取樣官司一句（中性背景，交代取樣授權制度與製作手法的轉變，本批裁定放行；其他人的官司仍不寫）；Outkast 2025 年入選搖滾名人堂（官方，補洞稿兩源）；Betty Wright 2020、Big Pun 2000、Biz Markie 2021、芦川聡 1983 年過世；Arrested Development 葛萊美兩座（同一屆，算一處）、Beenzino 韓國大眾音樂獎、Billy Ocean 葛萊美（各一處）；Chernavsky 2025 年過世未寫入。
 - 寫作層疑點處理：Чернавский/Матецкий 與北村昌士缺電子手法，前者補評語、後者以 YBO² 力量三重奏編制為具體路數，照收；3rd Bass 聲音句只到製作陣容，照收（full 其他材料足）。
 - 待本機（上線簡介）：Mescherin 合奏團成立年 1956／1957 不一；プラスチックス 出道年不一；北村昌士《FOOL'S MATE》創刊與就任年兩源不一；伊藤詳 生平敘述來源互相矛盾，建議刪；3rd Bass 榜位與金唱片敘述待核；Above the Law「饒舌榜冠軍」查無；AZ 銷量數字待核；Bahamadia〈Funk Vibe〉／《Kollage》製作人與日期不一。
+
+## ar-d-096（2026-10-14）
+
+- 39 位上架（34 full、5 thin：Brian McKnight、DaBaby、Damu the Fudgemunk、DEAN、DJ Cam）。1 位不寫：Christopher Williams（素材只有維基系與部落格單源，出生年與出生地互相矛盾）。
+- 嘻哈段 B 至 D 字頭（Black Sheep～Do or Die）；R&B 卡（Brian McKnight、Cassie、Color Me Badd、DEAN）照 R&B 寫，Damian Marley 照雷鬼／dancehall 寫。
+- 搜尋超額：Control Machete 多 1 次（無關的榜單頁，無新事實，照齊豫先例）、Curren$y 多 1 次（補 legacy 第二源，照第二源先例），放行。
+- 審稿修 7 處：
+  - out-1 審稿 4 處：Booba「法國 rap 史上最重要的專輯之一／史上最好、最有影響力之一」改「重要專輯／極具影響力」；Boosie Badazz「巴頓魯治最大的饒舌歌手」改「代表性」；Brother Ali 刪白化症與視盲（健康）；撤下 Christopher Williams（見上）。
+  - out-2 審稿 3 處：Control Machete 媒體名匿名化（西語媒體 50 大榜單第 6 名保留，補洞稿列為必要例外、兩源）；Damu the Fudgemunk「Crate Diggers 系列第一位藝人」改「也替該系列錄製作品」；Do or Die「最大的啟發之一」改「重要的啟發」。
+  - 保留：Black Sheep 金唱片、Brian McKnight Hot 100 第 2、C-Murder Billboard 200 第 3、Central Cee 英國專輯榜首、Damian Marley 葛萊美（同一張專輯兩項，算一處）、DEAN 韓國大眾音樂獎（各一處）；DEV LARGE 2015、MF DOOM 2020、DJ Screw 2000 年過世；Capone-N-Noreaga 以「無法全程參與」中性帶過，C-Murder、Boosie、DaBaby、Digga D、Crime Mob、Conway 刑案官司一律未寫。
+- 身分：預抓維基作廢——DEAN（Dean (education)）、Dipset（單曲頁〈Dipset Anthem〉），改查本人與團頁。
+- 待本機（上線簡介與卡池）：BUDDHA BRAND《黒船》實為 1996-12-04 單曲（CTCR-14061），卡片性質待確認；Digga D 上線簡介以 2018 年 Criminal Behaviour Order 為主軸，與不寫刑案的規則相左，建議改寫；Booba《Temps mort》「Lunatic 拆夥後」先後說法不一；C-Murder「逾兩百萬張」與 RIAA 白金不符；Camp Lo 組團年 1995／1994 不一；Control Machete 1996 年份與銷量待核；Cormega 「被踢出 The Firm」與「簽進 Def Jam」先後寫反、「獨立榜第四」查無。
