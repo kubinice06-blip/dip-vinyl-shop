@@ -1324,3 +1324,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分：預抓維基作廢——Cluster & Eno（歐洲大學聯盟）、Dada（達達主義）、Dan Curtin（澳洲足球員）。Dada 是關西二人組泉陸奥彦與小西健司；Dark Comedy 是 Kenny Larkin 的化名；Das Ding 是荷蘭的 Danny Bosten。Deux Filles 的法國少女身世是杜撰設定，正文照「設定」寫。
 - 卡池年份存疑：Das Ding《H.S.T.A.》重製 2009／2010；Dave Clarke《Archive One》1995／1996。
 - 待本機（上線簡介）：Commix《Call to Mind》「Metalheadz 第二張藝人專輯」排序兩說、2002 年起是三人不是雙人組；Derrick Carter、Dillinja、Dimitri From Paris 各 2 條（見 ARTIST-PUB-ISSUES）。
+
+## ar-d-086（2026-10-14）
+
+- 40 位全數上架（30 full、10 thin：Eat Static、Electroscope、Eluvium、Emerald Web、Emma Louise & Flume、Experimental Audio Research、Floorplan、Foul Play、Freeform、Freescha），沒有不寫的。
+- 審稿修 11 處：
+  - out-2 審稿 7 處：Esplendor Geométrico「最早的獨立案例之一」改「早期」；Fifty Foot Hose「最佳嘗試之一」改「重要嘗試」；Fingers Inc.「最耐久的唱片之一」改「耐聽的經典」；Floorplan「極簡 techno 創始者之一」改「重要人物」（維基單源）；François Bayle「最傑出的作曲家之一」改「重要作曲家」（維基單源）；Fred again.. 刪「史上最年輕得主」（在世者紀錄類），只寫得過 BRIT 年度製作人；Frost「最早成功的拉丁 hip hop 歌曲之一」改「早期」。
+  - 保留：巴塞隆納當代美術館的評語（官方機構）；Tyree Cooper 稱 Fast Eddie 發明 hip house（具名音樂人）；Francis Monkman 2023、Francis Bebey 2001、Frankie Knuckles 2014 年過世（只寫年份）；Satoshi Tomiie 沿用拉丁拼法（漢字名無來源）。
+  - out-1 審稿 4 處：Dopplereffekt 刪封面鎚子與鐮刀一句（政治符號，非音樂）；Ed Rush & Optical「史上最好的 drum and bass 專輯之一」改「經典專輯」；Eddie "Flashin" Fowlkes「Atkins 廠牌第一首大受歡迎」改「早期大受歡迎」；Ernest Hood 刪病名（健康），改「因病不能再彈吉他」，保留改彈 zither 的做法。
+  - 保留：底特律歷史博物館把 Fowlkes 與 Belleville Three 並列（官方機構）；Duke Dumont 英國冠軍、Ellie Goulding Critics' Choice、Empire of the Sun ARIA 七項（各一處成績）；E-Dancer 的聲音句出自 Qobuz 介紹，口氣已收斂；Ernest Hood 1995 年過世。
+- 身分：預抓維基作廢——Electroscope（驗電器）、Floorplan（電路設計）、Foul Play（小說）、Freeform（電視頻道）、Frost（霜）。Edward Ka-Spel 卡池標題「Aa?zhyd」是《AaΔzhyd, China Doll》的亂碼。Frost 是饒舌歌手 Kid Frost，卡池分類 electronic／rock 有誤（留給本機改分類）。
+- 待本機（上線簡介）：E-Dancer《Heavenly》「《Spin》十張最好專輯」只見維基單源；Emerald Web 簡介寫 Stohl 溺水過世（死因不該寫，年份 1989／1990 兩說）；Experimental Audio Research 簡介把 "contributed to Spacemen 3" 誤譯成「Spacemen 3 之外」；Fischerspooner 成軍年 1998／1999／2001 三說；Fred again.. 簡介「每首以說話的那個人命名」過度概括；Frost〈La Raza〉Hot 100 名次 42／48 兩說。

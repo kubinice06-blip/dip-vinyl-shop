@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1198 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1208 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1154,6 +1154,16 @@
 | ar-d-085 | Dimitri From Paris | Sacrebleu | 北美由 Atlantic、歐洲與日本由 EastWest 代理發行 | 本層來源未涉及發行代理，encyclopedia.com 僅記美國版 1998 年發行；未驗證，非確認有誤 | https://encyclopedia.com/education/news-wires-white-papers-and-books/dimitri-paris |
 | ar-d-086 | E-Dancer | Heavenly | 《Spin》曾稱它是「你沒聽過的十張最好專輯」之一 | 此說只見維基 Kevin Saunderson 條目單源，兩次搜尋都找不到 Spin 原文；屬排名／獎項類高風險宣稱，建議降級或加「據維基」，或刪除。 | https://en.wikipedia.org/wiki/Kevin_Saunderson |
 | ar-d-086 | Emerald Web | Dragon Wings and Wizard Tales | Stohl 1990 年因溺水意外過世 | Kat Epple 官網（1990）與 NTS、Sounds of Subterrania（1989，NTS 另寫享年 34 歲）不一致；建議改成不寫年份或寫『1989 或 1990 年』，並依死因預設規則拿掉死因 | https://www.nts.live/artists/12902-emerald-web |
+| ar-d-086 | Experimental Audio Research | Pestrepeller | E.A.R. 用來延續他在 Spacemen 3 之外的實驗性作品 | Discogs 原文是 the more experimental work he had contributed to Spacemen 3 since the 1980s，指他在 Spacemen 3 期間就貢獻的實驗成分，不是『之外』；建議改為『延續他自 1980 年代在 Spacemen 3 期間就做的實驗性作品』。 | https://www.discogs.com/artist/90418 |
+| ar-d-086 | Fischerspooner | #1 | 兩人 1998 年在 Astor Place 星巴克臨場演出自製曲起家 | 成軍年來源不一：維基寫 1998，PopMatters 寫 1999，Georgia Straight 寫 2001；1998 只是維基單一說法，建議簡介改寫成『在 Astor Place 星巴克臨場演出自製曲起家』而不帶年份。 | https://www.popmatters.com/fischerspooner-1-2495907903.html |
+| ar-d-086 | Fred again.. | Actual Life (April 14 - December 17 2020) | 「每首以說話的那個人命名」 | 曲目表裡〈Me (Heavy)〉〈Hackney (Interlude)〉不是以說話者命名；首尾兩軌確以日期命名；建議改為「多數曲目以人名命名」。 | https://en.wikipedia.org/wiki/Actual_Life_(April_14_%E2%80%93_December_17_2020) |
+| ar-d-086 | Frost | Hispanic Causing Panic | 單曲進 Billboard Hot 100 第 42 名 | 維基〈La Raza〉條目寫第 42 名，Remezcla 專文寫第 48 名，兩說不一；Billboard 本身雲端不可開，無法裁定，建議核對或刪掉名次。 | https://remezcla.com/features/music/tbt-30-years-dropping-la-raza-remains-historic-part-hip-hop-history/ |
+| ar-d-086 | Frost | Hispanic Causing Panic | 被視為最早的 Latin rap 專輯之一，替之後的 Cypress Hill 鋪了場 | 「最早之一」有來源（維基稱〈La Raza〉是最早成功的拉丁 hip hop 歌曲之一）；Remezcla 說 Cypress Hill 的歌詞建在同一份藍圖上，但同文也提到 Cypress Hill 的〈Insane in the Brain〉部分是對 Frost 的 diss，「鋪了場」可保留但別寫成師承。 | https://remezcla.com/features/music/tbt-30-years-dropping-la-raza-remains-historic-part-hip-hop-history/ |
+| ar-d-087 | Function | Incubation | 2004 年加入 Sandwell District | 年份只有英文維基單源；Dachstock 的藝人介紹把他與 O'Connor 共同創立 Sandwell District 的時間放在 2007 年底搬到柏林之後，兩者不一致，建議上線簡介不寫加入年份。 | https://dachstock.ch/artist/function-live |
+| ar-d-087 | Gigi Masin | Wind | 1986 年自費壓出這張首作 | 年份來源不一致（英文維基首段 1986、同頁生平段與 Powerline 的藝人介紹為 1987），池內年份 1986；另被 Björk 與 Nujabes 取樣的是 1989 年〈Clouds〉，不是《Wind》的曲子，原文寫「取樣過他的素材」尚可，但若寫成《Wind》被取樣會失真。 | https://powerline-agency.com/artists/gigi-masin/ |
+| ar-d-087 | Giora Feidman | The Magic of the Klezmer | 待了二十多年才轉為獨奏 | 以色列愛樂任期來源不一：英文維基「over 20 years」、德文維基 18 年（1956 年起）、Styriarte「almost two decades」，建議改成「將近二十年」或不寫年數；另上線簡介年份用中文數字（一九三六年等），與全站阿拉伯數字慣例不一致。 | https://de.wikipedia.org/wiki/Giora_Feidman |
+| ar-d-087 | Grant Kirkhope | Banjo-Kazooie | 這也是最早採用垂直重混的遊戲之一 | 英文維基《Banjo-Kazooie》只寫垂直重混在遊戲史上有其重要性、是 Mayles 要他做出超越 LucasArts iMUSE 淡接的東西，並未稱它是『最早採用』之一；『最早』無來源，建議改成『以垂直重混著稱』。 | https://en.wikipedia.org/wiki/Banjo-Kazooie_(video_game) |
+| ar-d-087 | Hallucinogen | Twisted | 全球約八萬五千張 | 英文維基《Twisted》條目的 85,000 張銷量只引用一個唱片行網站，無獨立來源；屬高風險數字，建議改用較保守說法或刪除。 | https://en.wikipedia.org/wiki/Twisted_(Hallucinogen_album) |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
