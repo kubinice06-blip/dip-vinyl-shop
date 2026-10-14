@@ -106,4 +106,9 @@ export const A = [
 ["Melt-Banana|Scratch or Stitch",5.0,1.8,0.0,"blaze","噪音龐克，極速"],
 ["BOREDOMS|Vision Creation Newsun",4.8,1.6,0.8,"blaze","鼓陣與迷幻的狂喜"],
 ["閃靈 CHTHONIC|賽德克巴萊",4.8,2.0,-1.4,"blaze","黑金屬加二胡，快而重"],
+// 2026-10-14 補：店主舉例的「要死不活」兩組，add-20261014 上架後補入
+["溫蒂漫步 Wendy Wander|Spring Spring",2.4,1.0,1.0,"languid","dream pop 的殘響與溫潤合成器，雙主唱慵懶甜"],
+["溫蒂漫步 Wendy Wander|Midnight Blue",3.2,0.4,0.6,"glad","第二張加進 Disco、Funk，節奏變強，往愉悅走"],
+["Cigarettes After Sex|Cry",1.6,1.2,0.2,"languid","極慢的 ambient pop，殘響淹沒、氣聲唱法"],
+["Cigarettes After Sex|X's",2.0,1.2,0.0,"languid","律動比前作緊一點，仍是慢而糊的失戀 dream pop"],
 ];

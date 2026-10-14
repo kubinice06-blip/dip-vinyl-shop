@@ -38,15 +38,15 @@
   "zWeight": 0.5
  },
  "_corrWithOldAxes": {
-  "x~classic": 0.07,
-  "x~obscurity": 0.04,
-  "x~accessibility": 0.09,
-  "y~classic": -0.02,
-  "y~obscurity": 0.12,
-  "y~accessibility": 0.64,
-  "z~classic": 0.09,
-  "z~obscurity": -0.18,
-  "z~accessibility": -0.63
+  "x~classic": 0.12,
+  "x~obscurity": 0.05,
+  "x~accessibility": 0.11,
+  "y~classic": -0.03,
+  "y~obscurity": 0.11,
+  "y~accessibility": 0.62,
+  "z~classic": 0.07,
+  "z~obscurity": -0.15,
+  "z~accessibility": -0.62
  },
  "anchors": [
   {
@@ -1848,6 +1848,78 @@
    "z": -1.4,
    "region": "blaze",
    "why": "黑金屬加二胡，快而重"
+  },
+  {
+   "key": "溫蒂漫步 Wendy Wander|Spring Spring",
+   "artist": "溫蒂漫步 Wendy Wander",
+   "album": "Spring Spring",
+   "year": 2020,
+   "genre": "pop",
+   "tier": null,
+   "old": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2
+   },
+   "x": 2.4,
+   "y": 1,
+   "z": 1,
+   "region": "languid",
+   "why": "dream pop 的殘響與溫潤合成器，雙主唱慵懶甜"
+  },
+  {
+   "key": "溫蒂漫步 Wendy Wander|Midnight Blue",
+   "artist": "溫蒂漫步 Wendy Wander",
+   "album": "Midnight Blue",
+   "year": 2023,
+   "genre": "pop",
+   "tier": null,
+   "old": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2
+   },
+   "x": 3.2,
+   "y": 0.4,
+   "z": 0.6,
+   "region": "glad",
+   "why": "第二張加進 Disco、Funk，節奏變強，往愉悅走"
+  },
+  {
+   "key": "Cigarettes After Sex|Cry",
+   "artist": "Cigarettes After Sex",
+   "album": "Cry",
+   "year": 2019,
+   "genre": "pop",
+   "tier": null,
+   "old": {
+    "classic": 3,
+    "obscurity": 1,
+    "accessibility": 1
+   },
+   "x": 1.6,
+   "y": 1.2,
+   "z": 0.2,
+   "region": "languid",
+   "why": "極慢的 ambient pop，殘響淹沒、氣聲唱法"
+  },
+  {
+   "key": "Cigarettes After Sex|X's",
+   "artist": "Cigarettes After Sex",
+   "album": "X's",
+   "year": 2024,
+   "genre": "pop",
+   "tier": null,
+   "old": {
+    "classic": 2,
+    "obscurity": 1,
+    "accessibility": 1
+   },
+   "x": 2,
+   "y": 1.2,
+   "z": 0,
+   "region": "languid",
+   "why": "律動比前作緊一點，仍是慢而糊的失戀 dream pop"
   }
  ]
 }

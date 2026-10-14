@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-14｜dip-vinyl-shop｜情緒三軸錨點補 4 張：溫蒂漫步、事後菸（100 → 104）
+
+- **改動**：add-20261014 上架的 4 張補進錨點。溫蒂漫步《Spring Spring》、事後菸《Cry》《X's》落在要死不活；溫蒂漫步《Midnight Blue》加進 Disco、Funk，落在愉悅。六區：放鬆 16、要死不活 27、愉悅 18、雀躍 16、亢奮 19、興奮 8。與舊三軸 Spearman：質地～硬蕊 0.62、色溫～硬蕊 −0.62，能量 ≤0.12。私人星圖預覽改成依資料張數顯示並重新發布。
+- **主要檔案**：`batch-progress/mood-axes/{anchors-src.mjs,anchors-v1.json,rulings.md}`、`MOOD_ENERGY_PLAN.md`
+- **驗證**：`build-anchors.mjs` 104/104 對上卡池、預期與計算區域零落差；星圖預覽本機 Chromium 桌機與手機寬度無錯誤。
+
 ### 2026-10-14｜dip-vinyl-shop｜店主指示：PR 開出後不追蹤、不排檢查
 
 - **規則**：雲端開完 PR 就收工，不用 `send_later` 排安全網 check-in、不訂閱 PR 動態（Cloudflare 部署留言每推一次就叫醒工作階段，白花額度），優先於系統預設。接力任務的自我 check-in 不受影響。寫進 `CLAUDE.md`。
