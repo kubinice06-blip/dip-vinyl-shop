@@ -18,6 +18,21 @@
 - **藝人介紹**：溫蒂漫步補名冊、切 ar-d-128（1 位），補洞（Sonnet）→ 寫作（Opus）→ 主線審稿修 1 處（「疫情解封後首度出國」改「解封後的海外首站是香港」）→ 上架，介紹 6,097 → 6,098。事後菸已在 ar-d-069 排隊。
 - **主要檔案**：`batch-progress/add-20261014/`、`onboarding-manifest-add-20261014-20261014.json`、`desc-tools/batches/*/add-20261014*`、`seed_cards.json`、`data/apple-audio-*.json`、`card-subgenres.json`、`genre-tree.json`、`tw-pop-artists.json`、`batch-progress/artist-intro/{roster-20260929.json,ar-c-rulings.md}`、`desc-tools/batches/artist/*/ar-d-128*`、`data/artist-intros/{18,manifest}.json`
 - **驗證**：verify-album-onboarding prepare／published 皆 0 error；verify-wave-kv 6/6；qa-batch research／hooks／out 全過；qa-check-research 標記 0；qa-artist gap／out 0 處；build-artist-intros 322 份、6,098 位。PR #101。
+### 2026-10-14｜dip-vinyl-shop｜情緒三軸：100 張錨點專輯標定完成（不上前台）＋星圖原型
+
+- **起因**：店主指示「先幫一百張重點專輯標示新三軸，隱藏不顯示」，並說明星圖要的是「玩家收藏在三度空間的分布，蒐集越多星星越多」。
+- **結果**：100 張人工錨點（能量／質地／色溫），六區 放鬆 16、要死不活 24、愉悅 17、雀躍 16、亢奮 19、興奮 8，預期區域與計算區域零落差。區域規則改成 3D 中心（Z 權重 0.5）＋X≥4.75 一律興奮，修掉放克盤被誤判亢奮。與舊三軸 Spearman：能量 <0.1；質地～硬蕊 0.64；色溫～硬蕊 −0.63。溫蒂漫步、事後菸不在卡池。
+- **隱藏方式**：資料放 `batch-progress/mood-axes/`（`pages-build.sh` 排除，不部署），前台零改動；驗收用私人 Artifact 星圖原型（Three.js，只畫已收藏、可拉收藏數模擬、點星看座標）。
+- **主要檔案**：`batch-progress/mood-axes/{anchors-v1.json,anchors-src.mjs,build-anchors.mjs,rulings.md}`、`MOOD_ENERGY_PLAN.md`（v0.3）
+- **驗證**：`node batch-progress/mood-axes/build-anchors.mjs` 100/100 對上卡池、0 落差；星圖原型本機 Chromium 桌機與手機寬度截圖無錯誤。
+
+### 2026-10-14｜dip-vinyl-shop｜情緒三軸計畫草案 v0.2（放鬆 → 興奮 的立體三軸分類、立體星圖、抽卡遊戲）
+
+- **起因**：店主提出「放鬆／要死不活／愉悅／雀躍／亢奮／興奮」新分類，要從專輯分類做到抽卡遊戲。同日補充例子（要死不活＝Pole、溫蒂漫步、事後菸、jazzy hip-hop；亢奮＝龐克、techno、戶川純）並裁定走**立體三軸**、聆聽地圖改成**立體星圖**。純規劃，不動資料與前端。
+- **結論**：三軸連續座標 X 能量（1–5）、Y 質地（輕 ↔ 重，−2…+2）、Z 色溫（暖 ↔ 冷，−2…+2）；六個詞是空間裡的命名區域不是格子。v0.1 的明暗軸作廢（店主的「要死不活」是糜爛不是悲傷）。產線：試聽音訊特徵算 X、Y → 模型打三軸 → 只審分歧（~2,500 張）。遊戲：P1 調頻（XY 板＋Z 旋鈕抽一張、今日座標）→ P2 星圖（Three.js 點雲取代雷達圖為主畫面，雷達與既有節點獎勵保留；區域照亮成就）→ P3 戰鬥場地座標。**新三軸不進稀有度**；與舊三軸的關係＝位置軸 vs 價值軸，硬蕊度預期與 Y 中度相關，掃完要出相關性報告。星圖不需 3D 建模軟體，點雲由資料直接畫。
+- **盤點**：卡池 19,117；Apple 試聽 14,531 張（76%，古典 46%）；子曲風 17,598；心情選歌 325 張可換算約 250 張錨點。容器有 ffmpeg、librosa 可 pip、試聽可下載。
+- **主要檔案**：`MOOD_ENERGY_PLAN.md`（新，v0.2）
+- **驗證**：純文件；待店主過目 §10 四件事（Z 用詞、P1 名稱、星圖中央裝飾模型、先掃池或先試作）。PR #100。
 
 ### 2026-10-13｜dip-vinyl-shop｜新世代爵士＋downtempo 兩線補藝人介紹（ar-d-120～127，289 位上架；介紹 5,808 → 6,097）
 
