@@ -1,0 +1,2273 @@
+[
+ {
+  "key": "p-model",
+  "name": "P-MODEL",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1979,
+   1979
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "IN A MODEL ROOM",
+    "year": 1979,
+    "genres": [
+     "electronic",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "IN A MODEL ROOM",
+    "manifest": "onboarding-manifest-c34-japan-20260821.json",
+    "desc": "P-MODEL 於 1979 年 8 月 25 日在 Warner-Pioneer 發表的出道盤。樂團同年由平沢進召集已解散的前衛搖滾團體マンドレイク舊部組成，7 月先以單曲〈美術館で会った人だろ〉出道，該曲也收進本作開頭。與 YMO、プラスチックス 同被視為日本 technopop 的草創與核心，日後與プラスチックス、ヒカシュー 併稱テクノ御三家。唱片在 1992、2003、2020 年數度再版，2020 年重製版另行上線串流。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/IN_A_MODEL_ROOM",
+     "https://ja.wikipedia.org/wiki/P-MODEL",
+     "https://musicbrainz.org/release-group/9595218c-50e7-3a3f-9133-209e249e798f"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "pacific 231",
+  "name": "Pacific 231",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1997,
+   1997
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Tropical Songs Gold",
+    "year": 1997,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 20,
+   "researchRecords": 2,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c82-b",
+    "album": "Tropical Songs Gold",
+    "facts": [
+     {
+      "f": "Discogs 原盤條目（Transonic Records，編號欄寫成帶連接號的「TRS–25017」，日本，CD 一張標 Album，發行年 1997）的內註是本組最長的一段，逐條交代編制、客席與錄音：「Pacific 231 is a Musical Joint Ad–Venture of two boys, Hasumi Shigeomi & Miyake Takemasa. / * [Track 4] Extra Track with Asano Tatsuhiko. / Recorded & Mixed by: Pacific 231 at LOTUStudio, 1995–1996 (1–3, 5–8) / Asano Tatsuhiko at Studio Corne, 1996 (4) / ... / Total Time 63:49 / ... / ℗&© 1995, 1996, 1997 Transonic Records / Released in standard jewel case with 4-page insert and obi.」",
+      "src": "https://api.discogs.com/releases/226936"
+     },
+     {
+      "f": "Discogs master 1385100 底下兩個版本，都是 1997 年同一家廠牌、同一個編號：release 226936（編號寫成 TRS–25017）與 release 12188513（編號寫成 TRS-25017，內註記「Mini-LP gatefold paper sleeve.」，曲長逐軌與前者差一到八秒）。兩筆裡零筆標 Unofficial Release。",
+      "src": "https://api.discogs.com/masters/1385100/versions?per_page=100"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c82-b",
+    "album": "ミヤシロ",
+    "facts": [
+     {
+      "f": "Discogs 廠牌目錄頁（labels/4518/releases）記本張編號 SYDW-0011 的前後號：SYDW-0010 Tipsy《Trip Tease - The Seductive Sounds Of Tipsy》（1998）與 SYDW-0012 HAT《DSP-Holiday》（1998）；同一份目錄裡這條 SYDW 編號線從 SYDW-0001《Daisy World Tour》（Various，1996）排到 SYDW-13 Apache 61《Apache 61》（1998）。",
+      "src": "https://api.discogs.com/labels/4518/releases?per_page=100&sort=catno"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Tropical Songs Gold",
+    "manifest": "onboarding-manifest-c82-20260910.json",
+    "desc": "MusicBrainz 上有四個 Pacific 231，靠 disambiguation 欄才分得開。本卡是日本那個實體，那一欄寫 Shigeomi Hasumi、Takemasa Miyake。內註自稱是兩個男生的 Musical Joint Ad-Venture，第 4 軌以外的錄音與混音在 LOTUStudio、1995 到 1996。八軌的 Written-By 兩軌掛前者、四軌掛後者、兩軌合掛。版權欄印著三個年份：1995、1996、1997。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/226936",
+     "https://musicbrainz.org/ws/2/release/b02aa213-baa7-4550-b84d-fde31da44778?inc=recordings+labels+artist-credits&fmt=json",
+     "https://musicbrainz.org/ws/2/artist/?query=Pacific%20231&limit=5&fmt=json",
+     "https://api.discogs.com/artists/160530",
+     "https://api.discogs.com/labels/785343/releases?per_page=100&sort=catno",
+     "https://api.discogs.com/masters/1385100/versions?per_page=100",
+     "https://itunes.apple.com/search?term=Pacific%20231%20Tropical%20Songs%20Gold&country=jp&entity=album&limit=25",
+     "https://musicbrainz.org/release-group/be414d3f-ddde-473a-b69e-ba789322c81e"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "pain jerk",
+  "name": "Pain Jerk",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1995,
+   1995
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Aktion Bruit",
+    "year": 1995,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c116-b",
+    "album": "Aktion Bruit",
+    "facts": [
+     {
+      "f": "MB 藝人頁分頁全列 Pain Jerk 名下 **161 個 release-group、Album 109 筆、EP 20 筆**，深度僅次於本批的 Aube（194）。**1995 年一年就有八筆**：《Alchemistry》《Recycled》《Trashware》**《Aktion Bruit》**《Split-Tape》《Retrogress》《Fatamorgana》《Exhibition of Electro-Disease》(1995-05-25)；1996 年更多達十四筆（Decollaboration／Neurotten／Spitfire／Great Invisible Crashing／Epistasis／Pleonasm／Snuff Electronics／From Nothing to Nothingness／Fragmentagraph／Cacophony of a Thousand Pleasures／Transcription of Piss Angel 等）。**光是 1995–1996 兩年就有二十二筆。**",
+      "src": "https://musicbrainz.org/ws/2/release-group?artist=7e199c07-31f8-4f8d-9bc0-e06e54def3d2&fmt=json&limit=100&offset=0"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Aktion Bruit",
+    "manifest": "onboarding-manifest-c116-20260910.json",
+    "desc": "三軌的長度一路遞減：十九分半、十二分五十、九分三十七。三個曲名分屬三種寫法：〈Neon Kid〉是英文，〈In die Glutenkiste〉是德文，〈Mosquitomagus〉則是拉丁語式的造詞。1995 年那捲卡帶的編號是 AMP-013；光那一年，五味浩平名下就有八筆，隔年再添十四筆，兩年合計二十二筆，這張只是其中之一。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/4ce3524d-1e39-423b-9d01-ddb866c7f762?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=4ce3524d-1e39-423b-9d01-ddb866c7f762&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=7e199c07-31f8-4f8d-9bc0-e06e54def3d2&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/artist/7e199c07-31f8-4f8d-9bc0-e06e54def3d2?fmt=json&inc=aliases+artist-rels",
+     "https://itunes.apple.com/lookup?id=269344324&country=us&entity=album&limit=200",
+     "https://musicbrainz.org/release-group/4ce3524d-1e39-423b-9d01-ddb866c7f762"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "palais schaumburg",
+  "name": "Palais Schaumburg",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1981,
+   1981
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Palais Schaumburg",
+    "year": 1981,
+    "genres": [
+     "electronic",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c110-a",
+    "album": "Palais Schaumburg",
+    "facts": [
+     {
+      "f": "德文條目〈Palais Schaumburg (Band)〉：樂團 1980 年在漢堡成立，**團名取自波昂那棟聯邦總理官邸 Palais Schaumburg**。風格是一組偏放克的節奏部（貝斯、鼓）配上「令人想起兒歌」的無調性演唱；他們受美國前衛樂團 The Residents 影響，試著做一種新的前衛「舞曲」，並大量借用達達主義。**他們最為人知的那首歌，歌詞直接取自 Paul Hindemith 的兒童歌劇《Wir bauen eine Stadt》**。創始陣容除了 Holger Hiller 與 Thomas Fehlmann 之外，還包括後來 Abwärts 與 Einstürzende Neubauten 的 FM Einheit——**他 1981 年年中就離開了**。",
+      "src": "https://de.wikipedia.org/wiki/Palais_Schaumburg_(Band)"
+     },
+     {
+      "f": "同一條目：樂團先在 Zickzack Records 出過兩張單曲，之後才拿到大廠合約——條目把這件事當成當時唱片工業廣泛簽下 NDW 團體（包括不走主流路線的那些）的一個例子。他們**始終停在「圈內人才知道」的位置**，儘管演出去過紐約的 Danceteria 與曼徹斯特的 Haçienda。在當時的場景裡，**這支漢堡樂團扮演的是「冷淡的知識分子舞曲」，與杜塞道夫的 Fehlfarben、柏林的 Ideal 那種較靠近龐克的路數形成對比**。首張專輯之後 Hiller 就離團單飛。",
+      "src": "https://de.wikipedia.org/wiki/Palais_Schaumburg_(Band)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Palais Schaumburg",
+    "manifest": "onboarding-manifest-c110-20260910.json",
+    "desc": "團名取自波昂那棟聯邦總理官邸，歌詞則借了一齣兒童歌劇。他們最為人知的〈Wir bauen eine neue Stadt〉，歌詞直接取自 Paul Hindemith 的兒童歌劇《Wir bauen eine Stadt》。1981 年的原盤十軌、約三十五分鐘，最短 1:46、最長 5:33，節奏部走放克，上面疊小號、鍵盤與噪音式的音色，人聲是刻意不入調的德語念唱。當時的場景裡，這支漢堡樂團站的是冷淡知識分子舞曲那一邊，對面是杜塞道夫與柏林那兩支較靠近龐克的團。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/4dc08fdd-e13c-39d6-8919-9fb8c5ee7def?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=4dc08fdd-e13c-39d6-8919-9fb8c5ee7def&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://de.wikipedia.org/wiki/Palais_Schaumburg_(Band)",
+     "https://itunes.apple.com/lookup?id=1184967254&country=de&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=c2faf89f-078a-4b52-abd3-65583429c096&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/4dc08fdd-e13c-39d6-8919-9fb8c5ee7def"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "palomatic",
+  "name": "Palomatic",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1995,
+   1995
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Trill",
+    "year": 1995,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c82-b",
+    "album": "Trill",
+    "facts": [
+     {
+      "f": "Discogs 廠牌目錄頁（labels/785343/releases）記本張編號 TRS-25010 的前後號：TRS-25009《Transonic 4 (In-Out)》（Various，1995，Comp）與 TRS-25011《Transonic 5 -Re-Entry-》（Various，1995，Comp），兩側都是廠牌自家的合輯。",
+      "src": "https://api.discogs.com/labels/785343/releases?per_page=100&sort=catno"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Trill",
+    "manifest": "onboarding-manifest-c82-20260910.json",
+    "desc": "Koji Takahashi 掛作曲與混音，製作掛的是 Palomatic 這個名字。同一欄裡 Kazunao Nagata 掛 Co-producer。Discogs 藝人頁 profile 欄寫著：他與 Kiyoshi Hazemoto 合開 Microbe Recordings。原盤九軌，MusicBrainz 記首發日 1995-03-20，九首曲長全落在 5:20 到 8:14 之間，〈Flutter〉6:29、〈Source Of Light〉6:07。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/923781",
+     "https://musicbrainz.org/ws/2/release-group/92d83d1e-aa77-4159-bb30-2506b0cf0dfc?inc=artist-credits+releases&fmt=json",
+     "https://musicbrainz.org/ws/2/release?release-group=92d83d1e-aa77-4159-bb30-2506b0cf0dfc&inc=recordings&fmt=json",
+     "https://api.discogs.com/masters/354610/versions?per_page=100",
+     "https://itunes.apple.com/lookup?id=449098077&country=jp&entity=song",
+     "https://api.discogs.com/artists/110880",
+     "https://api.discogs.com/releases/318679",
+     "https://api.discogs.com/labels/785343/releases?per_page=100&sort=catno",
+     "https://coverartarchive.org/release-group/92d83d1e-aa77-4159-bb30-2506b0cf0dfc/front",
+     "https://musicbrainz.org/release-group/92d83d1e-aa77-4159-bb30-2506b0cf0dfc"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "paperclip people",
+  "name": "Paperclip People",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1996,
+   1996
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Secret Tapes of Dr. Eich",
+    "year": 1996,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "The Secret Tapes of Dr. Eich",
+    "manifest": "onboarding-manifest-c40-electronic-20260823.json",
+    "desc": "Carl Craig 的 house 化名 Paperclip People，1996 年在自營的底特律廠牌 Planet E 發表。十二軌以〈Throw〉為核心：一段上行的弦樂式合成器樂句反覆疊加，鼓組維持四拍不動，靠加減聲部與濾波推出高潮。〈Oscillator〉〈Floor〉〈Steam〉沿用同樣的長段落堆疊法，〈Country Boy Goes Dub〉則轉入回聲處理。封面用一台盤帶機呼應標題的秘密錄音帶設定。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Carl_Craig",
+     "https://en.wikipedia.org/wiki/Planet_E_Communications",
+     "https://musicbrainz.org/release-group/dfcc2b1a-e247-3b58-adaf-686e0c21ea3e"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "parris mitchell",
+  "name": "Parris Mitchell",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1994,
+   1994
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Life in the Underground",
+    "year": 1994,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c118-a",
+    "album": "Life in the Underground",
+    "facts": [
+     {
+      "f": "廠牌條目：Dance Mania **1985 年在芝加哥成立、創辦人記的是 Jesse Saunders**，Ray Barney 是一年後才替廠牌定名的人；該廠在 **1999 年結束前發行了將近三百張唱片**，2013 年復刊。條目把它的路線記為 house 與 ghetto house。本張的編號 DM 071 與同廠 DJ Deeon《House Work》的 DM 085 相差十四號、發行年相差一年。",
+      "src": "https://en.wikipedia.org/wiki/Dance_Mania_(record_label)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Life in the Underground",
+    "manifest": "onboarding-manifest-c118-20260910.json",
+    "desc": "第一張六軌沒有一軌超過五分四十秒，第二張開頭就衝到八分四十二秒。1994 年的原盤是兩張 12 吋、六軌加五軌共十一軌，第一張從 2 分 45 秒的〈Street Jazz〉到 5 分 38 秒的〈Ghetto Booty〉全是短曲。十一軌裡另有三軌的標題自帶重做註記，〈Work It (re-mix)〉與〈F.T.M.F.B. (revised)〉都寫在盤上。廠牌是 Dance Mania，編號 DM 071。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/5cc1a023-7bfc-45d8-9ea3-870aec03662f?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=5cc1a023-7bfc-45d8-9ea3-870aec03662f&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=584624819&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=abda6360-88aa-4b4b-8a27-525f97acc419&fmt=json&limit=100&offset=0",
+     "https://en.wikipedia.org/wiki/Dance_Mania_(record_label)",
+     "https://musicbrainz.org/release-group/5cc1a023-7bfc-45d8-9ea3-870aec03662f"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "paul horn",
+  "name": "Paul Horn",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1969,
+   1969
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Inside",
+    "year": 1969,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Inside",
+    "manifest": "onboarding-manifest-c46-soundtrack-cross-20260828.json",
+    "desc": "1968 年 4 月 25 日，Paul Horn 帶著一支中音長笛、一支麥克風與 Nagra 攜帶式錄音機進到阿格拉的泰姬瑪哈陵內部錄音，技術由錄音師 John Archer 負責。陵寢內部長達數秒的殘響本身成了第二個聲部，樂句必須等前一句散盡才推出下一句；一名守衛的吟誦、蚊子與遠處婚禮的煙火聲也一併留在帶子上。Epic 於 1969 年發行（BXN 26466），BBC 在 2001 年報導其全球銷量逾百萬張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Inside_(Paul_Horn_album)",
+     "https://musicbrainz.org/release-group/8ff211d5-ec9e-321c-bae8-147c808cf20b"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "paul johnson",
+  "name": "Paul Johnson",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1996,
+   1996
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Feel the Music",
+    "year": 1996,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "paul nagle",
+  "name": "Paul Nagle",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1981,
+   1981
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Soft Room",
+    "year": 1981,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c77-b",
+    "album": "The Soft Room",
+    "facts": [
+     {
+      "f": "Discogs 的 Paul Nagle 藝人條目記：英國合成器演奏者，自 1980 年代初期活動至今；條目上登錄的別名有 No Artificial Sweeteners、WilyEPeyote、Smokyfrog，參與的團體有 Binar、Joint Intelligence Committee、Headshock (2)、Ideation、Far From Stars 等；外部連結掛 softroom.co.uk 與他的 Bandcamp。",
+      "src": "https://www.discogs.com/artist/203554-Paul-Nagle"
+     },
+     {
+      "f": "Nagle 自己網站上的傳記段落（Discogs 藝人條目連到的 softroom.co.uk，現址在 rafferty.co.uk／softroom）寫：他年輕時隨合唱團去美國巡演，1970 年代末開始作曲並演出電子與實驗音樂，「早期的專輯發行在卡帶上（還記得那種東西嗎？）」，並在 1983 年那場「傳說中的第一屆 UK Electronica 音樂節」演出。",
+      "src": "https://www.rafferty.co.uk/softroom/pn/"
+     },
+     {
+      "f": "同一年他在另一家卡帶廠牌也有作品：Discogs 記 1981 年英國 Flowmotion 的《Alcove》（目錄號 ART 007）與《Modulus》（ART 008），兩張都是他名下的主要發行。",
+      "src": "https://www.discogs.com/master/4183977-Paul-Nagle-Alcove"
+     },
+     {
+      "f": "Discogs 的 YHR Tapes 廠牌目錄把 YHR 018《The Soft Room》登錄為 1981 年英國、格式 Cass, Album；同一年的前後兩號是 YHR 017 Andrew Cox《Hydra》與 YHR 019 Asmus Tietchens《Musik Aus Der Grauzone》。",
+      "src": "https://www.discogs.com/label/63284-YHR-Tapes"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "The Soft Room",
+    "manifest": "onboarding-manifest-c77-20260910.json",
+    "desc": "他後來在自己的網站上寫：早期的專輯都出在卡帶上。那句話後面還跟著一個括號：還記得那種東西嗎。同一年他在另一家卡帶廠牌也出了《Alcove》與《Modulus》，這一捲則是 YHR 018，十一軌，從〈Wheel Of Fortune〉開場；曲目表上排著幾張塔羅大牌的名字，也排著小說裡的地名。Discogs 的風格欄只給一個字，Minimal，條目上沒有登錄任何 credit。他自己還寫，1983 年他在傳說中的第一屆 UK Electronica 演出過。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5787545-Paul-Nagle-The-Soft-Room",
+     "https://www.discogs.com/artist/203554-Paul-Nagle",
+     "https://www.rafferty.co.uk/softroom/pn/",
+     "https://www.discogs.com/master/4183977-Paul-Nagle-Alcove",
+     "https://www.discogs.com/label/63284-YHR-Tapes",
+     "https://www.discogs.com/release/4684409-Paul-Nagle-The-Soft-Room-198085",
+     "https://www.discogs.com/master/573866-Paul-Nagle-The-Soft-Room-198085",
+     "https://musicbrainz.org/release-group/ca5f26cf-0bfa-433e-b498-eb8367b83d8a"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "paul oakenfold",
+  "name": "Paul Oakenfold",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1998,
+   1998
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Tranceport",
+    "year": 1998,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Tranceport",
+    "manifest": "onboarding-manifest-c40-electronic-20260823.json",
+    "desc": "1998 年 11 月由 Kinetic 在美國發行，是 Tranceport 系列的第一張，也是把歐洲 trance 整批帶進美國舞池的關鍵混音盤。曲目挑當時舞池正熱的版本：Three Drives〈Greece 2000〉、Tilt〈Rendezvous〉的 Quadraphonic mix、GusGus〈Purple〉的 Sasha 版、Energy 52〈Café Del Mar〉的 Three 'N One 重混、Binary Finary〈1998〉的 Paul van Dyk 版。混音走長段疊置，能量一路往上堆。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Tranceport",
+     "https://musicbrainz.org/release-group/6e19bf3a-3706-308f-9a68-d4716a9c730f"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "pauline anna strom",
+  "name": "Pauline Anna Strom",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1982,
+   1982
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Trans-Millenia Consort",
+    "year": 1982,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Trans-Millenia Consort",
+    "manifest": "onboarding-manifest-c46-soundtrack-cross-20260828.json",
+    "desc": "Pauline Anna Strom 生於路易斯安那州、天生全盲，靠聽覺建立對世界的方位感，1982 年在舊金山灣區的家中工作室做出這張首作，由 Ether Ship Records 自費發行。器材是 Yamaha DX7、Prophet-10、E-mu Emulator 與一台 Tascam 四軌，八首曲子以長音鋪底、靠緩慢的音色與音量變化推進，沒有節拍也沒有人聲。她 1982 至 1988 年間只留下三張 LP 與四卷卡帶便停手，2017 年 RVNG Intl. 的《Trans-Millenia Music》精選才使她重新被聽見。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Pauline_Anna_Strom",
+     "https://musicbrainz.org/release-group/350fae30-168b-4c27-8297-844f1a39a1f7"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "peace orchestra",
+  "name": "Peace Orchestra",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1999,
+   1999
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Peace Orchestra",
+    "year": 1999,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Peace Orchestra",
+    "manifest": "onboarding-manifest-c40-electronic-20260823.json",
+    "desc": "Peace Orchestra 是 Kruder & Dorfmeister 之一 Peter Kruder 的個人計畫，同名作 1999 年 9 月由兩人自營的 G-Stone Recordings 發行。九首曲子把 downtempo 的慢速鼓組推到最前，貝斯線寫得像爵士低音提琴，其上是薩克斯風、電鋼琴與大量 dub 式的殘響推送；〈The Man Part One〉與〈Who Am I〉是最常被 DJ 取用的段落。G-Stone 自 1993 年的《G-Stoned》EP 起，即是維也納 downtempo 的核心廠牌。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Peace_Orchestra",
+     "https://en.wikipedia.org/wiki/Kruder_%26_Dorfmeister",
+     "https://musicbrainz.org/release-group/a68a549f-7361-3a87-a65d-9e95ca15c8be"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "pendulum",
+  "name": "Pendulum",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   2005,
+   2005
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Hold Your Colour",
+    "year": 2005,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "pépé bradock",
+  "name": "Pépé Bradock",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1999,
+   1999
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Burning",
+    "year": 1999,
+    "genres": [
+     "electronic",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Burning",
+    "manifest": "onboarding-manifest-c40-electronic-20260823.json",
+    "desc": "法國製作人 Julien Auger 以 Pépé Bradock 之名、掛 The Grand Brûlé's Choir 副署，1999 年在自營的 Kif Records 發行的三曲十二吋。收錄的〈Deep Burnt〉把一小段爵士樂句循環到底，幾乎不作和聲變化，靠取樣邊緣的雜訊、鼓的推遲與空間殘響堆起情緒。與同期 French touch 慣用的濾波迪斯可路線不同，Bradock 的取材更雜、結構也更不規則，他另有 Braccio D'Oco、Brigitte Barbu 等化名，長年維持極低的公開曝光。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/P%C3%A9p%C3%A9_Bradock",
+     "https://en.wikipedia.org/wiki/French_house",
+     "https://musicbrainz.org/release-group/3367d96e-76d3-3619-9362-09a63f525493"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "perturbator",
+  "name": "Perturbator",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   2014,
+   2014
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Dangerous Days",
+    "year": 2014,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Dangerous Days",
+    "manifest": "onboarding-manifest-c40-electronic-20260823.json",
+    "desc": "James Kent 1993 年生於巴黎，父母是樂評 Nick Kent 與 Laurence Romance，他自己先在數個黑金屬樂團彈吉他。2014 年 6 月由芬蘭廠牌 Blood Music 發行的第三張，用 OB-X、CS-80 這類老合成器的軟體模擬堆出賽博龐克式的厚牆，〈Future Club〉與〈Raw Power〉節奏直白而重。Hotline Miami 系列選用他的曲子，讓這條路線被主流看見。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Perturbator",
+     "https://musicbrainz.org/release-group/f765fa78-96b2-4a72-b8c7-c1d7eecbae92"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "peshay",
+  "name": "Peshay",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1999,
+   1999
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Miles From Home",
+    "year": 1999,
+    "genres": [
+     "electronic",
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Miles From Home",
+    "manifest": "onboarding-manifest-c40-electronic-20260823.json",
+    "desc": "本名 Paul Pesce 的英義混血製作人 Peshay，十三歲起就站在唱盤後，早年在 Reinforced、Good Looking 與 Metalheadz 發表〈Psychosis〉〈Piano Tune〉〈On the Nile〉等曲，以取樣與效果的處理手法著稱，也很早就把真人樂手拉進 drum'n'bass。1995 年一場意外讓他近乎臥床兩年，1999 年他在 Island 交出這張爵士取向的專輯，J-Live 與 Kym Mazelle 分別在〈End of Story〉與〈Truly〉獻聲。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Peshay",
+     "https://musicbrainz.org/release-group/6a9fe83b-d141-3138-a99b-0bc52bfb558b"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "pete namlook & dr. atmo",
+  "name": "Pete Namlook & Dr. Atmo",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1992,
+   1992
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Silence",
+    "year": 1992,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Silence",
+    "manifest": "onboarding-manifest-c40-electronic-20260823.json",
+    "desc": "Namlook 與 Dr. Atmo 合作的四軌長篇，1992 年 12 月由 Namlook 自營的 FAX +49-69/450464 發行（PK 08/025），隔年英國 Rising High 以 RSN CD 7 再版。〈Omid/Hope〉〈Garden of Dreams〉〈Santur〉〈Trip〉多以合成器長音鋪底、和聲移動極慢、鼓點稀薄；曲名 Omid 在波斯語中即「希望」，santur 則是波斯揚琴。FAX 成立首年發行量極小，此作屬該廠牌最早一批合作專輯，1999 年 Ambient World 曾以 AW 019 再版。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Pete_Namlook",
+     "https://musicbrainz.org/release-group/ef4a5a07-fd65-32ae-95aa-dc2ccc0dbab0"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "pete namlook & mixmaster morris",
+  "name": "Pete Namlook & Mixmaster Morris",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1993,
+   1993
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Dreamfish",
+    "year": 1993,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Dreamfish",
+    "manifest": "onboarding-manifest-c40-electronic-20260823.json",
+    "desc": "德國製作人 Pete Namlook（本名 Peter Kuhlmann）與 Mixmaster Morris 以 Dreamfish 名義合作的第一張，1993 年 5 月由 Namlook 自營的 FAX +49-69/450464 發行（PW 02）。四軌〈School of Fish〉〈Hymn〉〈Fishology〉〈Under Water〉全為長篇，以類比合成器鋪底、和聲極緩慢移動、水感殘響為主，鼓點稀薄。Namlook 生前在 FAX 累積上百張錄音，這組是其中流通最廣的一項。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Pete_Namlook",
+     "https://en.wikipedia.org/wiki/Mixmaster_Morris",
+     "https://musicbrainz.org/release-group/f679e90e-dbf1-3393-b550-5fad68abbb47"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "photon inc.",
+  "name": "Photon Inc.",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1991,
+   1991
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Generate Power",
+    "year": 1991,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c118-a",
+    "album": "Generate Power",
+    "facts": [
+     {
+      "f": "release-group b1b5d1ae 的欄位：title「Generate Power」、artist-credit「Photon Inc.」（藝人實體 MBID 4eb1179b，**type 與 country 兩欄都是空的**）、first-release-date **1991**、**primary-type Single**、secondary-types **空**。轄下 **5 筆 release**：1991 US 的 Strictly Rhythm SR 1251（**12 吋、5 軌，status 欄是空的**）、2002-06-10 GB 的 Strictly Rhythm UK SRUK 1212X（**12 吋、2 軌**，Official）、2010-01-11 XW（數位、5 軌，Official）、2010 XW 的《Generate Power (2010 Mixes)》（數位、5 軌，Official）、2014-10-01 XW（數位、5 軌，Official）。**同一家廠牌在 2002、2010、2014 前後重發四次。**",
+      "src": "https://musicbrainz.org/ws/2/release-group/b1b5d1ae-978e-48de-a792-b71c305491f1?fmt=json&inc=artist-credits+releases"
+     },
+     {
+      "f": "**§5.5 白名單條件覆核**：藝人端點分頁的結果是 **這個掛名名下只有 1 個 release-group，就是本張**——primary-type=Album 0 個、EP 0 個、Single 1 個、primary-type=Compilation 0 個。**「這個掛名只有一個 release-group、沒有任何 Album」成立。**",
+      "src": "https://musicbrainz.org/ws/2/release-group?artist=4eb1179b-5882-4b8e-9c8a-e7324b087b02&fmt=json&limit=100&offset=0"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Generate Power",
+    "manifest": "onboarding-manifest-c118-20260910.json",
+    "desc": "五軌是同一首的五種版本，末軌八分四十一秒比清唱版長出近六分鐘。1991 年的那張 12 吋上，club mix 6 分 10 秒、a cappella 2 分 52 秒、radio mix 3 分 38 秒、instrumental 4 分 46 秒，最後才輪到那軌 Wild Pitch mix。其餘四軌像是圍著它做的拆解：把人聲抽掉一次、把長度砍成電台版一次、把伴奏單獨留一次。廠牌是 Strictly Rhythm，編號 SR 1251。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/b1b5d1ae-978e-48de-a792-b71c305491f1?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=b1b5d1ae-978e-48de-a792-b71c305491f1&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1531700653&country=us&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=1437993302&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=4eb1179b-5882-4b8e-9c8a-e7324b087b02&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/b1b5d1ae-978e-48de-a792-b71c305491f1",
+     "https://www.discogs.com/master/142729"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "piano magic",
+  "name": "Piano Magic",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1999,
+   1999
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Low Birth Weight",
+    "year": 1999,
+    "genres": [
+     "electronic",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 12,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c83-b",
+    "album": "Low Birth Weight",
+    "facts": [
+     {
+      "f": "MusicBrainz 那筆 release（2d0d0d7c）登記廠牌 Rocket Girl、編號 Rgirl 6、barcode 5016266100625、一片 CD、track-count 11，曲目為 1〈Snowfall Soon〉5:02、2〈Crown Estate〉4:34、3〈Bad Patient〉5:00、4〈The Fun of the Century〉5:02、5〈Birdymachine〉1:26、6〈Not Fair〉4:12、7〈Dark Secrets Look for Light〉4:52、8〈Snow Drums〉、9〈Shepherds Are Needed〉5:21、10〈I Am the Sub-Librarian〉4:27、11〈Waking Up〉5:50。",
+      "src": "https://musicbrainz.org/release/2d0d0d7c-9ac8-44cc-ab1b-c599b697095b"
+     },
+     {
+      "f": "同一條目的註記欄還寫「Track 8: Contains a sample of \"Constructing Clouds\"」，並逐條列出五位客座是「appears courtesy of」哪個廠牌或團體；公司欄記 Distributed By: Cargo (2)、Glass Mastered At: DOCdata UK、Published By: Copyright Control。",
+      "src": "https://www.discogs.com/release/6722568"
+     },
+     {
+      "f": "Discogs 廠牌頁 3471（Rocket Girl）的簡介欄只有一句「UK label founded by (…) in 1997.」；子廠牌欄列 Indus Sonica；該廠牌頁的 releases 端點回報 473 筆。",
+      "src": "https://www.discogs.com/label/3471"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Low Birth Weight",
+    "manifest": "onboarding-manifest-c83-20260910.json",
+    "desc": "十一軌的工程師欄拆成四條，每一條各自標了軌號。四人是 Martin Cooper (6)、Matt Simpson、Glen Johnson 與 Pete Lorentz。人聲也逐軌指定，同一張碟換過五個人聲掛名，Caroline Potter 一人佔四軌。Exclaim! 一篇署名 Ian Danzig 的樂評把這寫成 A revolving cast of players。MusicBrainz 把這筆的國別欄記成 US，Discogs 記 UK。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/117a4d44-c1aa-3021-829b-e2bf75070560",
+     "https://musicbrainz.org/release/2d0d0d7c-9ac8-44cc-ab1b-c599b697095b",
+     "https://www.discogs.com/release/6722568",
+     "https://www.discogs.com/master/6707",
+     "https://music.apple.com/gb/album/low-birth-weight/202385491",
+     "https://exclaim.ca/music/article/piano_magic-low_birth_weight",
+     "https://musicbrainz.org/artist/88861c95-0cd8-4710-81ef-6cecd7ea8ff5",
+     "https://www.discogs.com/label/3471"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "pinch",
+  "name": "Pinch",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   2007,
+   2007
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Underwater Dancehall",
+    "year": 2007,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "pink siifu",
+  "name": "Pink Siifu",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   2020,
+   2020
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Negro",
+    "year": 2020,
+    "genres": [
+     "electronic",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "portion control",
+  "name": "Portion Control",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1982,
+   1982
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "I Staggered Mentally",
+    "year": 1982,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c77-b",
+    "album": "I Staggered Mentally",
+    "facts": [
+     {
+      "f": "Discogs 的 In Phaze Records 廠牌目錄顯示這支團在同一家廠牌上同時用了四種規格：1981 年的 C30 卡帶《Gaining Momentum》(POR CON 002)、單面七吋軟膠片（POR CON 003）、C10 卡帶加一張透明軟膠片的《Dining On The Fresh》(POR CON 004)、1982 年的 12 吋 EP《Surface And Be Seen》(POR CON 006)、C25 卡帶《With Mixed Emotion》(IP012)、本張黑膠 LP（CP007），以及 1983 年的 C35 卡帶《Shot In The Belly》(TMT07) 與 12 吋《Hit The Pulse》(EZ2)。",
+      "src": "https://www.discogs.com/label/12679-In-Phaze-Records"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "I Staggered Mentally",
+    "manifest": "onboarding-manifest-c77-20260910.json",
+    "desc": "封底印著完整的通訊地址，還有一組電話號碼。地址是 Ilford 的 Top Floor, 737 Eastern Avenue，同一面還印著一句自我分類：Hard, Rhythmic Electronics。十軌，〈Mass Disorder〉在 B 面；錄音在 Ding Dong Records And Tapes。整張碟的 credit 只有一行封面設計；A 面刻紋是手刻的，把盤名刻了進去。這支團在同一家廠牌上把卡帶、單面軟膠片、七吋、12 吋與 LP 用過一輪。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/260699-Portion-Control-I-Staggered-Mentally",
+     "https://www.discogs.com/label/12679-In-Phaze-Records",
+     "https://www.discogs.com/master/336345-Portion-Control-I-Staggered-Mentally",
+     "https://musicbrainz.org/release-group/b279d125-fc2d-3257-82b1-c1e399cab301",
+     "https://itunes.apple.com/lookup?id=1849657751&country=gb"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "propellerheads",
+  "name": "Propellerheads",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1998,
+   1998
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Decksandrumsandrockandroll",
+    "year": 1998,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "psyche \\ bfc",
+  "name": "Psyche \\ BFC",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1996,
+   1996
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Elements 1989-1990",
+    "year": 1996,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c118-b",
+    "album": "Elements 1989-1990",
+    "facts": [
+     {
+      "f": "release-group a2b1ec04 的欄位：title「Elements 1989-1990」、**artist-credit 是「Psyche \\ BFC」——兩個獨立的藝人實體以反斜線併起來**（Psyche，MBID 98f61162，type Person、**disambiguation「techno producer Carl Craig」**、country 欄空白；BFC，MBID 81b6f2b3，type Person、country US、**disambiguation「Carl Craig」**）。first-release-date **1996**、**primary-type Album、secondary-types ［Compilation］**（依裁定 167 照一般 Album 處理、例外欄位留空）。轄下 **2 筆 release，都 Official**：1996 US 的 Planet E PE BFC 96-CD（**CD、12 軌**）與 2013-04-02 XW 的 Planet E PLE65353-0（**數位、13 軌**）。",
+      "src": "https://musicbrainz.org/ws/2/release-group/a2b1ec04-b5b5-3eec-90f5-00882c3df725?fmt=json&inc=artist-credits+releases"
+     },
+     {
+      "f": "1996 US 原盤（Planet E PE BFC 96-CD）的逐軌曲目與長度：1〈Elements〉6:50、2〈Neurotic Behavior〉7:42、3〈Crackdown〉5:58、4〈From Beyond〉5:44、5〈Andromeda〉4:56、**6〈Evolution〉3:09**、7〈Galaxy〉6:41、8〈It's a Shame〉5:39、9〈Please Stand By〉5:02、10〈Chicken Noodle Soup〉6:34、11〈How the West Was Won〉3:34、12〈Sleep〉5:11。**十二軌從 3:09 到 7:42，最長與最短差四分半；盤名裡那個 1989-1990 是錄音年份，碟本身是 1996 年才出的。** 2013 年的數位版前十二軌完全相同、**末尾多出第 13 軌〈D Funk〉5:16**。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=a2b1ec04-b5b5-3eec-90f5-00882c3df725&fmt=json&inc=media+labels+recordings&limit=100"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Elements 1989-1990",
+    "manifest": "onboarding-manifest-c118-20260910.json",
+    "desc": "盤名裡的 1989-1990 是錄音年份，碟要到 1996 年才出。原盤十二軌，從 3:09 的〈Evolution〉到 7:42 的〈Neurotic Behavior〉，最長與最短差了四分半。中段的〈Andromeda〉與〈Galaxy〉把題材推向星系，前後卻夾著〈Chicken Noodle Soup〉〈How the West Was Won〉這種日常語彙，末軌就叫〈Sleep〉。碟出在 1996 年的美國 Planet E，編號 PE BFC 96-CD。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/a2b1ec04-b5b5-3eec-90f5-00882c3df725?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=a2b1ec04-b5b5-3eec-90f5-00882c3df725&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://musicbrainz.org/ws/2/release-group?artist=98f61162-a4f5-454e-b4a6-2b3b12724505&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/release-group?artist=81b6f2b3-fd7b-4f4d-b940-0b7144826b89&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/search?term=Psyche+BFC+Elements+1989+1990&country=us&media=music&entity=album&limit=30",
+     "https://musicbrainz.org/release-group/a2b1ec04-b5b5-3eec-90f5-00882c3df725"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "quadra",
+  "name": "Quadra",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1997,
+   1997
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Sketch From a Moment",
+    "year": 1997,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c82-a",
+    "album": "Sketch From a Moment",
+    "facts": [
+     {
+      "f": "Discogs 藝人頁 19433 的本名欄是 Hiroshi Watanabe，簡介欄寫「Born in Tokyo in 1971, son of composer father and a jazz pianist mother. Contrabass Course at Tokyo College of Music Senior High School graduate Music Synthesis Major at Baklee College of Music graduate.」；別名欄列 Kaito、Hiroshi Watanabe、Nite System、32 Project、DJ FX (4)、Deep Emotion、DJ Oddball、Crunky Boy、DJ Mazinger、Crunky Boy Jr.、Defcon 5 (3) 十一個。",
+      "src": "https://www.discogs.com/artist/19433"
+     },
+     {
+      "f": "Discogs 廠牌頁 414 的簡介欄記 Frogman Records 1993 年在東京成立，發起者是一群在西麻布十字路口等夜店開門時偶然結識的人；廠牌名取自青蛙——「the first creature to make sound」；第一場活動 1993 年 12 月 31 日在澀谷舉行、約 700 人到場，第二場 1994 年 2 月 5 日約 600 人，五個月後才發行第一張黑膠 FRG001R。",
+      "src": "https://www.discogs.com/label/414"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Sketch From a Moment",
+    "manifest": "onboarding-manifest-c82-20260910.json",
+    "desc": "廠牌條目記下廠牌名的由來：青蛙是第一種發出聲音的生物。Discogs 的 Frogman Records 條目說，廠牌 1993 年在東京成立，發起的是一群在西麻布十字路口等夜店開門時認識的人；第一場活動在 1993 年 12 月 31 日的澀谷，約 700 人到場，第二場 1994 年 2 月 5 日約 600 人，五個月後才發行第一張黑膠 FRG001R。詞曲與製作掛同一個名字，封面美術掛藝人自己。〈Winter〉7:50，〈Forebode〉1:13。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/113703",
+     "https://musicbrainz.org/release-group/d4548b61-ade5-3c79-9260-6e1b6345c136",
+     "https://musicbrainz.org/release/47063dfe-857d-48a7-8382-4c8b1bf60a71",
+     "https://music.apple.com/jp/album/quadra-complete-selection-95-07-sketch-from-a/1124763712",
+     "https://musicbrainz.org/artist/f8680968-5aab-443b-8bf8-f2984b23d034",
+     "https://www.discogs.com/artist/19433",
+     "https://www.discogs.com/label/414"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "r. carlos nakai",
+  "name": "R. Carlos Nakai",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1989,
+   1989
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Canyon Trilogy",
+    "year": 1989,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Canyon Trilogy",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "納瓦霍與尤特血統的 R. Carlos Nakai 原本吹銅管,一場車禍毀了嘴形,1972 年才改學雪松木製的原住民笛,自學摸索並把大量傳統歌謠改編成笛子曲。1989 年由 Canyon Records 發行的這套獨奏錄音幾乎全是無伴奏笛聲,〈Song for the Morning Star〉一類曲目定下了後來被大量模仿的空曠語彙。依英文維基 Canyon Records 條目,原住民音樂僅有的兩張金唱片都出自 Nakai,本作是其一;串流與再版另以「Deluxe Platinum Edition」名義流通。他生涯累積十一次葛萊美提名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/R._Carlos_Nakai",
+     "https://en.wikipedia.org/wiki/Canyon_Records",
+     "https://musicbrainz.org/release-group/e7a10e65-e4e5-3bc5-8b4b-4debb504dada"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "r.n.a. organism",
+  "name": "R.N.A. Organism",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1980,
+   1980
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "R.N.A.O Meets P.O.P.O",
+    "year": 1980,
+    "genres": [
+     "electronic",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c70-a",
+    "album": "R.N.A.O Meets P.O.P.O",
+    "facts": [
+     {
+      "f": "原盤曲目：R1〈Weimar 22〉、R2〈Howareyou, Whyou〉、R3〈After〉、R4〈Bring To Naught〉、R5〈Nativity〉、R6〈Yes, Every Africa Must Be Free Eternally〉、N1〈Say It Loud, I'm Dilettante, I'm Proud〉、N2〈Matrix〉。",
+      "src": "https://www.discogs.com/release/1048258"
+     },
+     {
+      "f": "Mesh-Key 的 Bandcamp 頁寫：這個神祕的京都三人組從不現場演出，改把預錄的卡帶送到場地播放；2024 年 5 月 3 日的復刻自原始盤帶轉錄、Stephan Mathieu 重製、Josh Bonati 刻片、RTI 壓片，並把原本 R 面最後一曲移到 N 面開頭以改善音質，N 面照舊以鎖溝收尾。",
+      "src": "https://rnaorganism.bandcamp.com/album/r-n-a-o-meets-p-o-p-o"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "R.N.A.O Meets P.O.P.O",
+    "manifest": "onboarding-manifest-c70-20260904.json",
+    "desc": "京都三人組從不上台，改把預錄的卡帶送到場地播放。演出者只掛 0123、Zero、Chance 三個化名，佐藤薫（Kaoru Sato）製作，阿木譲掛 directed by。Bandcamp Daily 記三人把試聽帶寄到《Rock Magazine》才被注意到，器材包括從漫畫書封底郵購的兒童電吉他與垃圾場撿來的小提琴。訪談另記帶子是從倫敦以航空郵件寄來的，並推測他們可能是偽裝的海外藝人。原盤兩面不叫 A、B 而叫 R 面與 N 面，N 面以鎖溝結尾。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1048258",
+     "https://rnaorganism.bandcamp.com/album/r-n-a-o-meets-p-o-p-o",
+     "https://daily.bandcamp.com/label-profile/vanity-records-label-profile",
+     "https://hanabun.press/2021/08/30/vanityrecords03/",
+     "https://www.hhv-mag.com/review/r-n-a-organism-r-n-a-o-meets-p-o-p-o/?lang=en",
+     "https://www.discogs.com/release/30410114",
+     "https://www.discogs.com/master/703326",
+     "https://musicbrainz.org/release-group/29823dc5-8372-44ae-8ef7-2dbae5c6c070"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "raime",
+  "name": "Raime",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   2012,
+   2012
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Quarter Turns Over a Living Line",
+    "year": 2012,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "ram",
+  "name": "RAM",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1993,
+   1993
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Aïbobo",
+    "year": 1993,
+    "genres": [
+     "electronic",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Aïbobo",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "Richard A. Morse 1990 年在太子港組團，團名取自他的姓名縮寫，妻子 Lunise 為主唱之一；週四夜在 Hotel Oloffson 的固定演出，成為 1990 年代政治動盪期少見的中立場合。首作以伏都儀式用的 petro 鼓與 rara 號角搭配搖滾與放克編制，克里奧爾語、法語、英語混唱。開場〈Ibo Lele (Dreams Come True)〉收進電影《費城》原聲帶；專輯裡的〈Féy〉則因被當成支持流亡總統 Aristide 的歌而遭禁。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/RAM_(band)",
+     "https://musicbrainz.org/release-group/70ac0532-174a-4cb4-8cac-f6d7c0993600"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "reese",
+  "name": "Reese",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1988,
+   1988
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Just Want Another Chance",
+    "year": 1988,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 5,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c118-b",
+    "album": "Just Want Another Chance",
+    "facts": [
+     {
+      "f": "**§5.5 白名單條件覆核**：`Reese` 這個掛名的藝人端點分頁全列 **10 個 release-group**——**primary-type=Album 0 個、primary-type=Compilation 0 個**，EP 1 個、Single 9 個。**「這個掛名下沒有任何 Album、12 吋是唯一的作品形態」成立。** **別名各查一次（裁定 223）**：本人實體是另一個 MBID（bf259ecd，Person／US），名下 36 個 release-group，**兩份目錄完全不互通**；本批同時收的《Faces & Phases》掛在 bf259ecd 底下，**與本張不是同一份目錄查得到的**。",
+      "src": "https://musicbrainz.org/ws/2/release-group?artist=e753448b-2970-4f7d-9265-532ef0657891&fmt=json&limit=100&offset=0"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Just Want Another Chance",
+    "manifest": "onboarding-manifest-c118-20260910.json",
+    "desc": "八軌裡只有前三軌有名字，其餘五軌在曲目列上是無標題。前三軌是同一首曲子的三種版本，5:13、5:45 與一段兩分半的短版；後五軌連長度都沒有記。後來的數位版把那五軌編了號、當成節奏素材上架，最短的不到兩分鐘、最長的三分四十九秒，五軌加起來還不到十四分鐘——等於整張一半是成品、一半是素材。碟出在 1988 年的美國 Incognito Records，編號 IR 111787，一張 12 吋。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/db7921a6-afca-4af5-9895-da75fd7c64b3?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=db7921a6-afca-4af5-9895-da75fd7c64b3&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1446257423&country=us&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=1892252421&country=us&entity=song&limit=200",
+     "https://musicbrainz.org/ws/2/release-group?artist=e753448b-2970-4f7d-9265-532ef0657891&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/db7921a6-afca-4af5-9895-da75fd7c64b3",
+     "https://www.discogs.com/master/1341"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "regis",
+  "name": "Regis",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1996,
+   1996
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Gymnastics",
+    "year": 1996,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Gymnastics",
+    "manifest": "onboarding-manifest-c40-electronic-20260823.json",
+    "desc": "Karl O'Connor 1993 年與 Peter Sutton 在 Halesowen 創立 Downwards，1996 年的《Gymnastics》是他名下第一張長篇。做法是把 Chicago house 的四拍骨架抽乾潤飾：鼓組推到接近破音，殘響短而硬，〈We Said No〉〈Keep Planning〉只靠一個循環與音量變化撐完整段。〈The Black Freighter〉與〈Cold Water〉則放進近乎工業的金屬撞擊。2017 年 Downwards 推出修復版，補上原先未收錄的〈Allies〉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Regis_(musician)",
+     "https://musicbrainz.org/release-group/cc5492fb-45e7-328f-b258-1bbbd85ed453"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "reload",
+  "name": "Reload",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1993,
+   1993
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "A Collection of Short Stories",
+    "year": 1993,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c97-b",
+    "album": "A Collection of Short Stories",
+    "facts": [
+     {
+      "f": "英文維基〈A Collection of Short Stories (Reload album)〉開頭寫：這是英國電子雙人組 Reload——Mark Pritchard 與 Tom Middleton，他們也以 Global Communication 之名發行音樂——的首張專輯；內頁收有 Dominic Fripp 寫的一段引言與六篇短篇小說。",
+      "src": "https://en.wikipedia.org/wiki/A_Collection_of_Short_Stories_(Reload_album)"
+     },
+     {
+      "f": "英文維基〈Global Communication〉寫：這對雙人組以 Global Communication 之名的作品相較之下著重溫暖的節奏與環境感，而以 Reload 之名的錄音則是「詭譎但可跳」（eerie but danceable）；他們也用 Jedi Knights、Secret Ingredients、The Chameleon、Link、E621 等化名，並創立了 Evolution Records 與 Universal Language Productions 兩家廠牌。",
+      "src": "https://en.wikipedia.org/wiki/Global_Communication"
+     },
+     {
+      "f": "英文維基〈Mark Pritchard (musician)〉的資料框把 Reload 列為 Mark Pritchard 的化名之一，並記他 1971 年 4 月 15 日生於英格蘭 Somerset 的 Crewkerne，1991 年起活動。",
+      "src": "https://en.wikipedia.org/wiki/Mark_Pritchard_(musician)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "A Collection of Short Stories",
+    "manifest": "onboarding-manifest-c97-20260910.json",
+    "desc": "內頁附的是 Dominic Fripp 寫的一段引言與六篇短篇小說。小說的發想由 Tom Middleton 協力。英文維基記這是 Reload 的首張專輯，Reload 就是他與 Mark Pritchard，同一對人也以 Global Communication 之名錄音，維基把 Reload 這一線記為 eerie but danceable。曲目由 Pritchard 作曲與製作，1993 年的英國盤由 Infonet 發行、編號 INF 004CD。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/4859a089-5664-3991-939f-41a3f62f36f0",
+     "https://musicbrainz.org/release/e78bfe16-bf3c-4966-9d1d-aebef2600d71",
+     "https://en.wikipedia.org/wiki/A_Collection_of_Short_Stories_(Reload_album)",
+     "https://en.wikipedia.org/wiki/Global_Communication",
+     "https://en.wikipedia.org/wiki/Mark_Pritchard_(musician)",
+     "https://itunes.apple.com/lookup?id=367543&entity=album&limit=200&country=gb"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "rico",
+  "name": "Rico",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1977,
+   1977
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Man from Wareika",
+    "year": 1977,
+    "genres": [
+     "electronic",
+     "hiphop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Man from Wareika",
+    "manifest": "onboarding-manifest-c31-world-20260821.json",
+    "desc": "長號手Emmanuel「Rico」Rodriguez生於哈瓦那、在Kingston長大,於Alpha Boys School由同學Don Drummond教會長號,1950年代成為Rastafari信徒,與鼓手Count Ossie往來密切。1961年移居英國後組過Rico and the Rudies,1977年在Island Records發行本作(ILPS 9485),以雷鬼節奏承載近乎爵士的長號即興,標題回望Kingston東側的Wareika Hill。1995年Island另以《Roots to the Bone》重新編排這批錄音。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Rico_Rodriguez_(musician)",
+     "https://en.wikipedia.org/wiki/Island_Records_discography",
+     "https://musicbrainz.org/release-group/bc0cef12-432c-4cf9-9c28-7d3711c40163"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "rival consoles",
+  "name": "Rival Consoles",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   2018,
+   2018
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Persona",
+    "year": 2018,
+    "genres": [
+     "electronic",
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "robert miles",
+  "name": "Robert Miles",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1996,
+   1996
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Dreamland",
+    "year": 1996,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Dreamland",
+    "manifest": "onboarding-manifest-c40-electronic-20260823.json",
+    "desc": "義大利裔製作人 Roberto Concina 以 Robert Miles 之名交出的首張專輯，1996 年 6 月 7 日於歐洲發行。核心是 1994 年寫成的〈Children〉，先以吉他和弦與柔和合成鋪底，再疊上鋼琴主題，全球賣出逾五百萬張，也讓他拿下 1997 年全英音樂獎國際突破藝人。〈Fable〉〈Fantasya〉延續同一套鋼琴加上緩速 trance 的寫法，美國版另收與 Maria Nayler 合唱的〈One and One〉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Dreamland_(Robert_Miles_album)",
+     "https://en.wikipedia.org/wiki/Robert_Miles",
+     "https://musicbrainz.org/release-group/8c605cec-ace8-3950-bfc9-875a4a88a285"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "robert owens",
+  "name": "Robert Owens",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1990,
+   1990
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Rhythms in Me",
+    "year": 1990,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Rhythms in Me",
+    "manifest": "onboarding-manifest-c40-electronic-20260823.json",
+    "desc": "Robert Owens 1961 年生於俄亥俄州，在教會唱詩長大，1985 年做 DJ 時遇上 Larry Heard，兩人再加 Ron Wilson 組成 Fingers Inc.，把「歌手」放回幾乎全靠器樂與鼓機的芝加哥 house。單飛後他與 4th & B'way 簽約，1990 年交出這張十軌，從〈Visions〉〈Changes〉到〈A.M. Blues〉與同名曲，整張以嗓子為軸而非以鼓機為軸。發片時芝加哥 house 場景正快速瓦解，唱片很快沒了能見度。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Robert_Owens_(musician)",
+     "https://musicbrainz.org/release-group/f90245d2-7e95-4d74-be25-9f3b07cd3245"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "robert rich",
+  "name": "Robert Rich",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1989,
+   1989
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Rainforest",
+    "year": 1989,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Rainforest",
+    "manifest": "onboarding-manifest-c46-soundtrack-cross-20260828.json",
+    "desc": "1988 至 1989 年間在舊金山的 Soundscape Studio 與 The Lobby 錄成，1989 年由 Hearts of Space 發行，是他在該廠的第一張。他一人包辦取樣機、合成器、竹笛、陶笛、lap steel 吉他，以及 doumbec、bonang 等打擊，數首曲子帶明顯的甘美朗律動；Andrew MacGowan 在一軌彈無品貝斯。〈The Raining Room〉最實驗，題獻給導演塔可夫斯基。素材出自他走訪太平洋西北岸雨林時所見的皆伐現場，部分收益捐給 Rainforest Action Network。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Rainforest_(album)",
+     "https://musicbrainz.org/release-group/80cc6f50-9639-3507-9c1b-f62169392b0e"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "robert turman",
+  "name": "Robert Turman",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1981,
+   1981
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Flux",
+    "year": 1981,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c65-a",
+    "album": "Flux",
+    "facts": [
+     {
+      "f": "Discogs 的 1981 年美國原盤是一捲 C60 卡帶（無廠牌自資，編號 No.1111），註記只有一句：「1981 年以四種不同的限量版本發行。」",
+      "src": "https://www.discogs.com/release/1380047"
+     },
+     {
+      "f": "Exclaim! 報導這次重製時寫，《Flux》是 Turman 的首張個人作，相對於他先前與 Boyd Rice 在 NON 裡的噪音實驗是一次風格轉向；新聞稿把它描述成「以卡林巴、鋼琴、Mini-Pops Jr. 鼓機與磁帶迴圈做出的長篇極簡，織成一層層互相穿插的微靜止」。",
+      "src": "https://exclaim.ca/music/article/robert_turmans_1981_work_flux_gets_reissued_on_spectrum_spools"
+     },
+     {
+      "f": "同一篇報導記載，重製由 Rashad Becker 在 Dubplates and Mastering 從原始的 C-60 卡帶母帶處理，雙黑膠 2012 年 2 月 14 日經 Editions Mego 旗下的 Spectrum Spools 發行。",
+      "src": "https://exclaim.ca/music/article/robert_turmans_1981_work_flux_gets_reissued_on_spectrum_spools"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Flux",
+    "manifest": "onboarding-manifest-c65-20260904.json",
+    "desc": "重製版留著盤帶機的喀噠聲：他一手按錄音鍵，一手彈鋼琴。那台是 Tascam 3340。原盤是 1981 年一捲無廠牌的 C60 卡帶，編號 No.1111，註記只有一句：1981 年以四種不同的限量版本發行。六軌裡〈Kalimba〉與〈Miao〉都長 11:11，B1〈Slow Burning〉16:26。新聞稿把它形容成以卡林巴、鋼琴、Mini-Pops Jr. 鼓機與磁帶迴圈做出的長篇極簡；相對於他先前與 Boyd Rice 在 NON 的噪音實驗是一次轉向。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1380047",
+     "https://exclaim.ca/music/article/robert_turmans_1981_work_flux_gets_reissued_on_spectrum_spools",
+     "https://www.discogs.com/master/148118",
+     "https://musicbrainz.org/release-group/df49fae0-08c4-4d21-bdfe-ae1940e55b11"
+    ]
+   }
+  ]
+ }
+]
