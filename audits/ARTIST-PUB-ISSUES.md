@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1218 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1229 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1173,7 +1173,18 @@
 | ar-d-088 | Kevin Saunderson | Faces & Phases | 1996 年的英國原盤是兩張 CD、共二十軌 | MusicBrainz 把本作列為 Compilation（第一發行日 1996），內容多半是 Reese、Tronik House、E-Dancer、Kreem 等化名的作品回顧，且只含一首 Inner City；簡介談版本差異正確，但若寫作層另寫成 Saunderson 原創專輯就不準確。建議店主確認是否要在簡介註明這是彙整其多個化名的選輯。 | https://musicbrainz.org/release-group/723bb9f3-ffb0-3705-9b7a-2c68b8d4ab74 |
 | ar-d-088 | Klaus Wiese | Baraka | 他因參與 Popol Vuh 的《Hosianna Mantra》而為人所知 | popolvuh.nl 的傳記頁稱他在該專輯「一個音都沒彈」，只是 Florian Fricke 的特別助理、封面署名 tamboura；Al Gromer Khan 說他並非團員，因有小巴能運器材而被掛名；Wiese 2007 年自稱僅是臨時「客人」。「為人所知」可保留，但「參與」建議改為「封面署名」，或整句刪除。 | https://www.popolvuh.nl/research/biographical-notes/klaus-wiese |
 | ar-d-088 | Kyle Dixon & Michael Stein | Stranger Things, Volume One: A Netflix Original Series: Original Music | 兩人首次在團體之外合作 | NME 只說配樂只有 Dixon 與 Stein 參與（預算不足以請整團），並未說是兩人首次在 S U R V I V E 之外合作；查無來源支持『首次』，建議改成『只有兩人參與』或刪去。 | https://www.nme.com/blogs/nme-blogs/stranger-things-soundtrack-survive-interview |
+| ar-d-089 | Lil' Louis & The World | Journey with the Lonely | 〈Jazzmen〉則直接把爵士的和聲語彙搬進來 | 維基 Lil Louis 條目與 jahsonic 引述的評論提到的曲目為〈Club Lonely〉〈Saved My Life〉〈Thief〉〈Share〉，查不到〈Jazzmen〉；提到爵士味的曲目是〈Thief〉（雙低音提琴與薩克斯風獨奏的爵士搖擺），疑為曲名誤植。 | https://jahsonic.com/LilLouis.html |
+| ar-d-089 | Lil' Louis & The World | Journey with the Lonely | 〈Club Lonely〉以低語式主唱與稀疏和弦，成為此後 Chicago house 反覆被引用的曲式 | 〈Club Lonely〉在維基列為 Joi Cardwell 合唱的單曲，查不到「低語式主唱」「稀疏和弦」或「被 Chicago house 反覆引用」的來源。 | https://en.wikipedia.org/wiki/Lil_Louis |
+| ar-d-089 | Lil' Louis & The World | Journey with the Lonely | 編制往樂團方向走，鍵盤、貝斯與人聲和聲取代了單純的鼓機推進 | 查不到來源；jahsonic 引述的評論只說音色從 garage 製作轉向 House／R&B 混種，沒有樂團化或鼓機被取代的說法。 | https://jahsonic.com/LilLouis.html |
 | ar-d-089 | Louis and Bebe Barron | Forbidden Planet | MGM 當年拒發唱片，直到 1976 年才由他們自營的 Planet Records 首度發行 | Movie Music UK 與 The Rising Storm 寫的是 Small Planet Records（兩人自營廠牌）；『約二十年後』與 1976 年相合，但廠牌全名待查。簡介另寫『全盤二十三軌』，本層未能查證。 | https://moviemusicuk.us/2020/06/15/forbidden-planet-louis-barron-and-bebe-barron/ |
+| ar-d-089 | Mad Professor | Dub Me Crazy | 上線簡介全文使用半形逗號與分號，且『蓋亞那』『1979年』『Thornton Heath』等中英數之間缺半形空格 | 違反文字規則（中文行文禁半形逗號、中文與英數之間補空格）；內容事實與維基一致 | https://en.wikipedia.org/wiki/Mad_Professor |
+| ar-d-089 | Mad Professor | Dub Me Crazy, Part 2: Beyond the Realms of Dub | 第一集半年沒人播，直到 John Peel 來電說喜歡並要他再做一張 | 『半年』與『來電』無來源可證；Ransom Note 只寫起初被雷鬼聽眾忽略、Peel 在節目上力挺後促成續集 | https://www.theransomnote.com/music/interviews/dub-me-crazy-mad-professor-talks/ |
+| ar-d-089 | Man With No Name | Moment of Truth | Muzik 把〈Floor-Essence〉選為年度第十二名單曲，本作則列年度專輯第二十六名 | 維基將此榜標為 1995 年，但專輯 MusicBrainz 首發日為 1996 年 2 月 1 日，年份對不上；榜單名次只見維基單源，建議整句拿掉或改為可查證的版本 | https://musicbrainz.org/ws/2/release-group?query=releasegroup:%22Moment%20of%20Truth%22%20AND%20artist:%22Man%20With%20No%20Name%22&fmt=json |
+| ar-d-089 | Mantronix | The Album | 英國的 Melody Maker 與 NME 都把它選進 1986 年度十大 | 維基專輯條目內文只記 NME 1986 年度專輯榜第 10 名；Melody Maker 只見 Paul Mathur 的評語，沒有年度榜記錄，建議改寫或拿掉 Melody Maker | https://en.wikipedia.org/wiki/The_Album_(Mantronix_album) |
+| ar-d-089 | Mantronix | The Album | 與在附近上班的 MC Tee 湊出〈Fresh Is the Word〉的 demo，被 Will Socolov 當場簽下 | 維基寫 MC Tee 是 Downtown Records 的常客而非『附近上班』；也沒有『當場簽下』的來源，只寫 demo 後最終簽給 Sleeping Bag；Red Bull Music Academy 寫 Socolov 是出錢讓他們進錄音室 | https://en.wikipedia.org/wiki/Mantronix |
+| ar-d-089 | Marcel Dettmann | Dettmann | 2002 至 2012 年間在柏林唱片行 Hard Wax 工作 | 年份只見英文維基；The Skinny 訪談說他 2003 年起在 Hard Wax，Berghain 店頁說 2004 年起，三源不一致；建議改成不含年份的寫法（曾在 Hard Wax 工作） | https://www.theskinny.co.uk/clubs/interviews/dettman-goes-off-the-record |
+| ar-d-090 | Michele Mercure | Beside Herself | 兩捲卡帶當初掛的是另一個名字：Michele Musser。 | 來源拼作 Michelle Musser（雙 l），用到 1987 年離婚為止；「兩捲」無來源可核，早期卡帶至少有 1983 至 1985 年三捲。 | https://igetrvng.com/products/rervng12 |
+| ar-d-090 | Mirwais | Production | 2000 年由 Naïve 發行的個人專輯，隔年他為 Madonna 打造《Music》的聲音。 | 《Music》是 2000 年專輯，錄音從 1999 年 9 月在倫敦 Sarm West 開始，與《Production》同年，並非隔年。 | https://en.wikipedia.org/wiki/Music_(Madonna_song) |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

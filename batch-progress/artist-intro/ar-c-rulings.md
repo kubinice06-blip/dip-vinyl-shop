@@ -1358,3 +1358,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：Jamie Principle〈Your Love〉2026 年列入美國國會圖書館國家錄音登錄（國會圖書館部落格＋RA 兩源）；K. Hand「The First Lady of Detroit」是底特律市議會頒證稱號，照官方表彰寫；Mark Spoon 2006、Joanna Brouk 2017、Jon Hassell 2021、K. Hand 2021 年過世。
 - 身分：預抓維基作廢——K2（喀喇崑崙山峰，改用德文維基的日本噪音計畫）、Kyle Dixon（美式足球員）、Kyle Hall（北卡州議員）、Laika（太空犬）。Jade 是芝加哥 R&B 女子團，卡池分類 electronic 有誤（留給本機）。Kode9 & The Spaceape 搜尋 9 次，overCapOk（重開同一頁核對引句，比照齊豫前例）。
 - 待本機（上線簡介）：Jamie Principle「唯一個人專輯」「最早的 house 錄音」等未取得兩源；Joe Smooth 藝名由來與器材清單查無；John Carpenter & Alan Howarth 的 Tangerine Dream／Debussy 等說法查無；K2「隔十年才有下一張」不對（1981–1985 年約 20 卷卡帶）；Klaus Wiese「參與 Popol Vuh《Hosianna Mantra》」應改為封面署名 tamboura、本人自稱客人；Kevin Saunderson《Faces & Phases》是彙編；Kyle Dixon & Michael Stein「首次在團體之外合作」查無。
+
+## ar-d-089（2026-10-14）
+
+- 38 位上架（34 full、4 thin：Lipps Inc.、Logic System、Lone、Martyn）。2 位不寫：Masaaki Kikuchi、Max Brennan（事實全來自單一來源）。
+- 審稿修 9 處：
+  - out-2 審稿 6 處：Macintosh Plus「最常被認出的 vaporwave 圖像」改「代表性」；Mad Professor「英國最大的黑人自營錄音室園區」改「規模可觀」；Man With No Name「最具定義性之一」改「具代表性」；Mantronix「最有影響力之一」改「極具影響力」；Marcel Dettmann「頂尖之一」改「代表性」；Masters at Work「最具影響力之一」改「極具影響力的組合」。另撤下 Masaaki Kikuchi（聲音句只有日文維基單源，且該頁無出典）、Max Brennan（只有一家轉載站的同一份傳記）——事實全來自單一來源者不寫。
+  - 保留：Marc Barreca 本業法官一句；Maurizio Bianchi 退出音樂的原因（宗教一句，非爭議）；Mala 談 sound system 文化；Martin Garrix 只留〈Animals〉突破作，不寫 DJ 排名。
+  - out-1 審稿 3 處：Lejaren Hiller「第一件有分量的電腦作曲作品」改「早期有分量的」；London Elektricity「歷史最久的廠牌之一」改「歷史悠久」；Loraine James 刪兩家媒體名（媒體名不進正文），改「兩家音樂媒體選為年度專輯」。
+  - 保留：Laurie Spiegel 入選美國國家女性名人堂（官方）；Louis and Bebe Barron 260 字（雙卡放寬）、「第一部全電子電影配樂」為廣泛共識；Joel Chadabe 談 Bebe Barron（具名音樂人）；Legowelt 以諾瑞加為題的概念專輯（專輯主題）；Les Rythmes Digitales 的聲音句偏標籤，但以「包裝成法國電子團」的做法補足，予以保留。
+- 身分：預抓維基作廢——Macintosh Plus（蘋果電腦）、Man With No Name（Clint Eastwood 角色）、Marta（足球員）、Max Brennan（澳洲物理學家）、Maurizio（義大利人名消歧頁）。Lil Louis 與 Lil' Louis & The World 是同一人兩卡，分寫不同面向。Marc Barreca 與西雅圖聯邦破產法官是同一人。Martyn 搜尋 9 次，overCapOk（第二源）。
+- 待本機（上線簡介）：Lil' Louis & The World〈Jazzmen〉疑為曲名誤植、〈Club Lonely〉與「樂團化取代鼓機」查無；Lil Louis《French Kiss》在 MusicBrainz 是單曲；Louis and Bebe Barron「Planet Records」應為 Small Planet Records；Mantronix 年度榜與簽約經過查無；Man With No Name 雜誌榜 1995 與專輯 1996；Marcel Dettmann 的 Hard Wax 年份；Mad Professor 兩條；Michele Mercure、Mirwais 各一條（屬 ar-d-090，見 ARTIST-PUB-ISSUES）。
