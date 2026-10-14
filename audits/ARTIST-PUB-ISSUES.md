@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1229 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1235 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1185,6 +1185,12 @@
 | ar-d-089 | Marcel Dettmann | Dettmann | 2002 至 2012 年間在柏林唱片行 Hard Wax 工作 | 年份只見英文維基；The Skinny 訪談說他 2003 年起在 Hard Wax，Berghain 店頁說 2004 年起，三源不一致；建議改成不含年份的寫法（曾在 Hard Wax 工作） | https://www.theskinny.co.uk/clubs/interviews/dettman-goes-off-the-record |
 | ar-d-090 | Michele Mercure | Beside Herself | 兩捲卡帶當初掛的是另一個名字：Michele Musser。 | 來源拼作 Michelle Musser（雙 l），用到 1987 年離婚為止；「兩捲」無來源可核，早期卡帶至少有 1983 至 1985 年三捲。 | https://igetrvng.com/products/rervng12 |
 | ar-d-090 | Mirwais | Production | 2000 年由 Naïve 發行的個人專輯，隔年他為 Madonna 打造《Music》的聲音。 | 《Music》是 2000 年專輯，錄音從 1999 年 9 月在倫敦 Sarm West 開始，與《Production》同年，並非隔年。 | https://en.wikipedia.org/wiki/Music_(Madonna_song) |
+| ar-d-090 | Morton Subotnick | The Wild Bull | 聲音全部出自 Donald Buchla 為他打造、設在 San Francisco Tape Music Center 的模組系統 | The Wild Bull 與 Silver Apples 是 Subotnick 1966 年離開舊金山後，在紐約大學提供的工作室用 Buchla 做的；國會圖書館說是兩套依他規格打造的 Buchla 100，並不是設在 Tape Music Center 的那一套。建議改成『Buchla 為他打造的模組系統』，不要指定放在哪裡。 | https://en.wikipedia.org/wiki/Morton_Subotnick |
+| ar-d-090 | Mr. Scruff | Trouser Jazz | 1992 年開始當 DJ | 維基寫 1992 年，但 NTS 與 Ninja Tune 官方簡介寫活躍／第一個重要突破在 1994 年，來源不一致；建議改成不寫年份，或只說『很早就在曼徹斯特當 DJ』。 | https://ninjatune.net/artist/mr-scruff |
+| ar-d-090 | Octave One | The Living Key (To Images From Above) | 1989 年以〈I Believe〉在 Derrick May 的 Transmat 出道，1990 年自辦 430 West | 出道年份與廠牌年份各源不一致：維基寫 1989、Mixmag Asia 寫 1989 或 1990（同一篇兩處）、Electronic Groove 稱該曲收在 1990 年合輯；430 West 成立年維基 1990、Mixmag 1991。建議簡介改成不帶年份，或只寫「1990 年前後」 | https://electronicgroove.com/interview-octave-one/ |
+| ar-d-090 | Octave One | The Living Key (To Images From Above) | 屬底特律第二代較內斂的一支 | 「較內斂」查無來源；Mixmag Asia 描述他們以硬體現場、粗礪的 909 聲音、在 techno 與 house、funk、soul 間移動見稱，並未稱為內斂。可改成只寫「底特律第二代」 | https://mixmag.asia/feature/the-accidental-genius-of-octave-one-detroit-techno-hong-kong-interview |
+| ar-d-090 | Overmono | Good Lies | 弟弟 Ed 以 Tessela 做 drum and bass | Loud and Quiet 稱 Ed 以 Tessela 做的是 breakbeat 取向的俱樂部曲（代表作〈Hackney Parrot〉，2013 年），jaegeroslo 的人物報導同樣沒有 drum and bass 的說法；建議改成 breakbeat 取向 | https://www.loudandquiet.com/members-lounge/overmono-interview/ |
+| ar-d-091 | Peace Orchestra | Peace Orchestra | 1999 年 9 月由兩人自營的 G-Stone Recordings 發行 | 英文維基專輯條目寫發行日為 24 August 1999（1999 年 8 月 24 日），與簡介的 9 月不同；本層只開到維基一源，建議主線用 Discogs 或 MusicBrainz 核對後再改。另『由兩人自營』指 Kruder 與 Dorfmeister 共同創立 G-Stone，無衝突。 | https://en.wikipedia.org/wiki/Peace_Orchestra_(album) |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

@@ -1369,3 +1369,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：Laurie Spiegel 入選美國國家女性名人堂（官方）；Louis and Bebe Barron 260 字（雙卡放寬）、「第一部全電子電影配樂」為廣泛共識；Joel Chadabe 談 Bebe Barron（具名音樂人）；Legowelt 以諾瑞加為題的概念專輯（專輯主題）；Les Rythmes Digitales 的聲音句偏標籤，但以「包裝成法國電子團」的做法補足，予以保留。
 - 身分：預抓維基作廢——Macintosh Plus（蘋果電腦）、Man With No Name（Clint Eastwood 角色）、Marta（足球員）、Max Brennan（澳洲物理學家）、Maurizio（義大利人名消歧頁）。Lil Louis 與 Lil' Louis & The World 是同一人兩卡，分寫不同面向。Marc Barreca 與西雅圖聯邦破產法官是同一人。Martyn 搜尋 9 次，overCapOk（第二源）。
 - 待本機（上線簡介）：Lil' Louis & The World〈Jazzmen〉疑為曲名誤植、〈Club Lonely〉與「樂團化取代鼓機」查無；Lil Louis《French Kiss》在 MusicBrainz 是單曲；Louis and Bebe Barron「Planet Records」應為 Small Planet Records；Mantronix 年度榜與簽約經過查無；Man With No Name 雜誌榜 1995 與專輯 1996；Marcel Dettmann 的 Hard Wax 年份；Mad Professor 兩條；Michele Mercure、Mirwais 各一條（屬 ar-d-090，見 ARTIST-PUB-ISSUES）。
+
+## ar-d-090（2026-10-14）
+
+- 32 位上架（25 full、7 thin：Mbongwana Star、Meitei、Metgumbnerbone、Metrotone、Mike & Rich、N.Y. House'n Authority、Nerve Net Noise）。8 位不寫：Mfon、Montage、Mushroom Now!、Nina-Noho、Okihide（只有 Discogs 單源或標籤）、Mind Design（只有脈絡描述）、Michael Garrison（thin 沒有具體手法）、Normal Brain（事實出自同一份重發文案，人物連結只是同名推定）。
+- 本批不寫的比例偏高：電子段 M 字頭有一批只在 Discogs 與唱片行留下痕跡的冷門自發行計畫，照「全部來自單一來源就不寫」處理。
+- 審稿修 7 處：
+  - out-2 審稿 6 處：Mort Garson「最早用 Moog 之一」改「早期」；Morton Subotnick「第一部唱片公司委製的電子作品」改「開端」；MSBR「最受敬重之一」改「備受敬重」；Nicolas Jaar 刪媒體名；Oppenheimer Analysis「Minimal Wave 的第一張發行」改為「由 Minimal Wave 發行」（兩源不獨立）；Orgy「Korn 廠牌的第一組藝人」改「旗下藝人」。另撤下 Normal Brain（聲音與身分事實都出自同一份重發文案，與聲音藝術家藤本由紀夫是同一人只是同名推定）。寫作層不寫 Mushroom Now!、Nina-Noho、Okihide（只有 Discogs 標籤與發行說明）。
+  - out-1 審稿 1 處：Metro Area 刪媒體名。另撤下 Michael Garrison（thin 的手法句只有「追隨歐洲先行者、自創廠牌」，沒有具體手法）。寫作層不寫 Mfon、Montage（只有 Discogs 單源）、Mind Design（只有脈絡描述）。
+  - 保留：Mika Vainio 2017、Mort Garson 2008、MSBR 的 Tano Kōji 2005、Philippe Zdar 2019 年過世（只寫年份）；Alva Noto 談 Mika Vainio（具名音樂人）；龐畢度中心談 Mirwais（官方機構）；Mono/Poly 參與製作的 Thundercat 專輯葛萊美（他人專輯的製作署名）。
+- 身分：Michael Garrison 與 MusicBrainz 上的同名美國迪斯可歌手不同；Mfon 不是維基的奈及利亞人名消歧頁；Nerve Net Noise 與 Brian Eno《Nerve Net》、美國同名二人組不同；Okihide 搜尋時誤對到 Yoshihiro Sawasaki，未收。Mushroom Now!、Nerve Net Noise 各搜尋 9 次，overCapOk（多出的一次沒有新事實，比照齊豫前例）。
+- 待本機（上線簡介）：Michele Mercure 名字拼法與「兩捲卡帶」；Mirwais「隔年為 Madonna 做《Music》」不對（同年）；Morton Subotnick《The Wild Bull》的工作室位置；Mr. Scruff DJ 起算年 1992／1994；Octave One〈I Believe〉與 430 West 年份、「較內斂」查無；Overmono 的 Tessela 做的是 breakbeat 不是 drum and bass。
