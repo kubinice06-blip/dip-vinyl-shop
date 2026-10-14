@@ -1488,3 +1488,16 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：MC Hammer「第一張 RIAA 鑽石認證嘻哈專輯」屬通行事實（照 Van Cliburn 先例）；Nelly Furtado、Nekfeu、Next、Orelsan、PUNPEE、Rapsody、Roxanne Shanté、PinkPantheress 各一處成績；ODB 2004、Nate Dogg 2011、Nipsey Hussle 2019、Nujabes 2010、Ras G 2019、Peabo Bryson 2026 年過世；Saba《Care for Me》獻給過世表親（專輯核心概念，未寫死因）；Sage Francis〈Makeshift Patriot〉（政治背景一句）；Schoolly D 引 Questlove 與 Ice-T（具名音樂人）。
 - 身分：預抓維基 Navy blue（顏色）、NeXT（電腦公司）作廢；MC Eiht featuring Compton's Most Wanted 以 MC Eiht 為主寫，避開與 ar-d-096 CMW 重複。
 - 待本機（上線簡介與卡池）：Peabo Bryson、PinkPantheress 卡池曲風誤標 hiphop；MC Shan「Cold Chillin' 第一張 LP」查無；MC Hammer 鑽石認證日期兩源不一；Next《Rated Next》簡介「取樣」實為改寫；Nipsey Hussle《Victory Lap》榜次待核；Nujabes / Fat Jon《Departure》「共同署名四張裡的第一張」不成立；Schoolly D 簡介幫派名（三源拼寫不一，且屬幫派內容，建議刪）、「發明 gangsta rap」宜改具名轉述。
+
+## ar-d-100（2026-10-14）
+
+- 39 位上架（31 full、8 thin：Silkk the Shocker、Smino、Standing on the Corner、Stetsasonic、Styles P、Themselves、Urban Species、Victoria Monét）。1 位不寫：Today（thin 的聲音句只有 new jack swing 標籤與行銷說法，照 Vex'd 先例）。
+- 嘻哈段 S 至 W 字頭；Shabba Ranks 照 dancehall、SIRUP 與 Victoria Monét 照 R&B、The Moonglows 與 The Platters 照 doo-wop 寫。
+- 搜尋超額：The LOX 多 1 次（補三位成員押韻路數第二源），照第二源先例放行。
+- 2025–26 事實：Sensational 2026 年 8 月過世——主線 WebSearch 只找到 RA（音樂專業媒體，引合作者 Madteo 公告）與轉引它的維基；裁定照收過世年份（一手專業報導＋合作者本人公告），刪享年，死因與成癮不寫。**這是單一獨立來源放行的例外，不作先例**：日後同形狀以兩家獨立媒體為準，只有一家時改寫成不提生死。
+- 審稿修 15 處：
+  - out-1 審稿 10 處：Sensational「最不依常規之一」改「極不依常規」、刪享年；Shabba Ranks「最受歡迎之一」改「極受歡迎」；Skepta「繼 Dizzee Rascal 之後第一位得獎的 grime MC」改「再度得獎」；Stetsasonic「開創者之一」改「先驅之一」；Styles P「最粗礪之一」改「極粗礪」；SUMIN 刪青少年歌謠祭大賞（在世者第二項成績）；T La Rock「第一張印有 Def Jam 標誌」改「早期」（編號第一有爭議）；Tha Dogg Pound「最早簽進 Death Row 之一」改「早期」、刪 Kendrick Lamar 點名 Kurupt（ar-d-098 補洞判學生報單源未收，保持一致）。
+  - out-2 審稿 5 處：Timbaland & Magoo「幾乎所有流行趨勢」改「許多」；Tommy Wright III 刪父母聽障（家人健康）；UTFO「可能是最早的 diss 論戰」改「早期」；Viktor Vaughn「史上最偉大的作詞者之一」改「極具影響力」；Warren G「Def Jam 史上最大的單曲」改「代表性暢銷單曲」；撤下 Today（不計入修改數）。
+  - 保留：The Sugarhill Gang「第一首打進 Hot 100 前 40 的饒舌單曲」、Vanilla Ice「第一首 Hot 100 冠軍饒舌單曲」屬通行事實（照 Van Cliburn 先例）；Shabba Ranks 葛萊美兩屆、SIRUP SPACE SHOWER 獎、Skepta 水星獎、SUMIN 韓國大眾音樂獎、The LOX 揚克斯市鑰、Tierra Whack 葛萊美入圍、Twista 金氏紀錄（1992）、Victoria Monét 葛萊美、Tha Dogg Pound Billboard 200 冠軍（各一處）；The Moonglows、The Platters 引搖滾名人堂官網；Magoo 2023、MF DOOM 2020、UTFO 兩位成員 2017／2021 年過世。
+- 身分：Today 預抓維基（NBC 節目）作廢；Viktor Vaughn 照 MF DOOM 化名寫；The Alkaholiks 正文照名冊拼法。
+- 待本機（上線簡介與卡池）：Stetsasonic「第一支嘻哈樂團」只是自稱；T La Rock〈It's Yours〉「Def Jam 編號第一號」有爭議；Tech N9ne「範本」一說無來源；Tha Blue Herb 首張發行年 1998／1999 不一；Silkk 簡介首週銷量、榜位、白金與「全碟 Beats By the Pound」查無佐證；The Moonglows〈Ten Commandments of Love〉錄音陣容兩源不一；Today 卡池曲風誤標 hiphop；Tommy Wright III「生於 Whitehaven」（維基生於曼菲斯）；Twista 2019 RIAA 白金查無；UTFO「答歌最多」只是可能語氣；Vanilla Ice「連續 16 週」來源寫 12 週。

@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1300 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1311 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1254,8 +1254,19 @@
 | ar-d-100 | T La Rock | Lyrical King (From the Boogie Down Bronx) | 〈It's Yours〉是 Def Jam 編號第一號的唱片 | 維基寫它是第一張印有 Def Jam 標誌的單曲，但實際由 Arthur Baker 的 Partytime（Streetwise 分支）發行、未列入 Def Jam 母帶目錄；『編號第一號』說法有爭議，建議改成『第一張印上 Def Jam 標誌的單曲』或加『被視為』。 | https://en.wikipedia.org/wiki/T_La_Rock |
 | ar-d-100 | Tech N9ne | Anghellic | 那套模式後來成了美國獨立 rap 廠牌的範本 | 本層來源只支撐『Tech N9ne 與 Strange Music 是最成功的獨立嘻哈營運之一』（Complex、官網），沒有來源稱《Anghellic》重發『成了範本』；建議改成可查的說法或刪除。 | https://www.complex.com/music/a/chris-mench/strange-music-tech-n9ne-goes-mainstream-profile |
 | ar-d-100 | Tha Blue Herb | Stilling, Still Dreaming | 札幌的 ILL-BOSSTINO 與 O.N.O 於 1997 年組隊後交出的首張長篇 | 首張專輯發行年來源不一（MusicBrainz 1998，日文維基作品表 1999 年 9 月 15 日），『於 1997 年組隊後』無誤；簡介其餘細節（地下鐵錄音、〈Shock-Shine's Revolt〉取樣《座頭市》）本層來源未涵蓋，未驗證。『DJ DYE』1999 年才加入，簡介未寫，無誤。 | https://ja.wikipedia.org/wiki/THA_BLUE_HERB |
+| ar-d-100 | The Moonglows | Look! It's the Moonglows | 核心是 1958 年的〈Ten Commandments of Love〉，Fuqua 領唱加一段口白；專輯發行後原班人馬即告解散。 | 〈Ten Commandments of Love〉的錄音陣容兩源不一致：Marv Goldberg 說是原班人馬、原班於 1959 年底在這首大熱後瓦解；encyclopedia.com 說錄音有年輕的 Marvin Gaye 參與、Fuqua 是唯一原始成員。簡介的「原班人馬」「錄在團名改掛 Harvey and the Moonglows 的時期」兩句宜由店主對照 Chess 錄音資料再核。 | https://www.uncamarvy.com/Moonglows/moonglows.html |
 | ar-d-100 | Tommy Wright III | On the Run | 1976 年生於曼菲斯 Whitehaven | 維基寫他生於曼菲斯、15 歲時住在 Riverside 的公共住宅，之後才搬到 Whitehaven 區；Whitehaven 不是出生地。 | https://en.wikipedia.org/wiki/Tommy_Wright_III |
 | ar-d-100 | Twista | Adrenaline Rush | 專輯 2019 年獲 RIAA 白金認證 | 本層查不到支持來源（維基只寫專輯登 Billboard 200 第 77 名、〈Get It Wet〉Hot 100 第 96 名）；建議店主在本機核對 RIAA 資料庫。 | https://en.wikipedia.org/wiki/Twista |
+| ar-d-100 | UTFO | UTFO | 嘻哈史上答歌數量最多的一場論戰 | 維基 Roxanne Wars 條目是『may have produced more answer records than any other episode in music history』（可能），簡介寫成肯定句；建議改為『可能是答歌最多的一場論戰』。另 Roxanne Shanté 的〈Roxanne's Revenge〉是對〈Roxanne, Roxanne〉的回應，簡介寫法正確。 | https://en.wikipedia.org/wiki/Roxanne_Wars |
+| ar-d-100 | Vanilla Ice | To the Extreme | 專輯在 Billboard 200 連續 16 週居首 | Stereogum 寫該專輯在 #1 12 週；『連續』與週數兩處本層沒有第二源可驗，建議店主核對 Billboard 200 史料再改簡介。 | https://stereogum.com/2164461/the-number-ones-vanilla-ices-ice-ice-baby/columns/the-number-ones |
+| ar-d-101 | Whodini | Escape | 是首張打進美國專輯榜前四十名的嘻哈唱片 | 「首張」類宣稱，本層查閱的維基、長島音樂名人堂、The Source 均未提到，無法佐證；建議店主本機核對或改為可查證的說法（長島音樂名人堂稱專輯 Escape 獲白金認證，The Source 稱金唱片，兩者也不一致）。 | https://www.limusichalloffame.org/?p=417 |
+| ar-d-101 | Wiz Khalifa | Kush & Orange Juice | 也直接推動了他隔年的大廠約 | 維基 Wiz Khalifa 條目寫他 2010 年 7 月簽 Atlantic，與該 mixtape 同年（2010 年 4 月），不是隔年；「大廠約」年份需改。 | https://en.wikipedia.org/wiki/Wiz_Khalifa |
+| ar-d-101 | Wiz Khalifa | Kush & Orange Juice | Big Jerm 做了偏慢、合成器鋪底的音色；放出當天成為 Google 與 Twitter 的全球熱門第一 | 維基製作人名單沒有 Big Jerm；趨勢一事維基只說 Google 與 Twitter 的熱門第一，沒有「全球」，Twitter 標籤排第六。 | https://en.wikipedia.org/wiki/Kush_%26_Orange_Juice |
+| ar-d-101 | Wizkid | Made in Lagos | 整體收在慢速、氣音式的 Afrobeats 質地上 | 維基引 Pitchfork 的 Joey Akan 稱中速（mid-tempo）製作，「慢速」一詞與來源不符，建議改為中速或保守說法。 | https://en.wikipedia.org/wiki/Made_in_Lagos |
+| ar-d-101 | YG | My Krazy Life | DJ Mustard 做了全碟九成的節拍 | 維基只說 Mustard 是主要製作人，另有 Ty Dolla Sign、Terrace Martin、Metro Boomin、Mike Free 等；「九成」找不到來源，維基同頁的 90% 指的是 2014 年 1 月專輯完成度，建議改成「主要製作人」。 | https://en.wikipedia.org/wiki/My_Krazy_Life |
+| ar-d-101 | Yo-Yo | Make Way for the Motherlode | 康普頓出身的 Yolanda Whitaker | 維基導言與 encyclopedia.com 都寫南洛杉磯（South Central），只有 wikidata 出生地是 Compton，建議改成「南洛杉磯出身」或保守寫法。 | https://en.wikipedia.org/wiki/Yo-Yo_(rapper) |
+| ar-d-101 | 勞動服務 | 海島聲事 | 最長的兩軌一樣長（〈鹽分地帶〉5:12 等），各軌長度落在 3:01 到 5:12 | 團方 Bandcamp 列的各軌長度與簡介相差 1 至 3 秒（〈鹽分地帶〉5:10、〈阮住佇艋舺〉4:11、〈坪仔田〉2:59、〈核邪〉4:35、〈眉溪四庄的過年〉4:45），且最長的〈鹽分地帶〉5:10 與次長的〈老佛山傳奇〉5:09 並不等長，「最長的兩軌一樣長」與範圍「3:01 到 5:12」可能是 CD 版與數位版秒數不同；需對照實體 CD 的曲目長度再決定是否改。 | https://communityservicetw.bandcamp.com/ |
+| ar-d-101 | 夜貓組 | 健康歌曲 | 這是這個組合至今唯一一張錄音室專輯 | Marie Claire 的報導稱夜貓組「發行過兩張專輯」，未列專輯名稱與年份，可能是計入了其他專輯或簡介已過時；需查顏社目錄確認夜貓組是否另有專輯後再決定要不要改這句。 | https://www.marieclaire.com.tw/entertainment/story/45206 |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
