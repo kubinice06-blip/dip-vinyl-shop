@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1292 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1300 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1248,6 +1248,14 @@
 | ar-d-099 | Next | Rated Next | 取樣 Kurtis Blow〈Christmas Rappin'〉的〈Too Close〉 | Songfacts 寫 KayGee 是把〈Christmas Rappin'〉的樂段改寫成新編曲（interpolate），並非直接取樣，原曲作者列名創作；維基則寫 samples，兩源不一致，建議改成「以……為底改寫」或淡化取樣二字，由店主裁定 | https://www.songfacts.com/facts/next/too-close |
 | ar-d-099 | Nipsey Hussle | Victory Lap | 首週 53,000 單位、Billboard 200 第 4 名 | 英文維基 Nipsey Hussle 首段寫 Victory Lap 在 Billboard 200 最高第 2 名；首週名次與最高名次可能是兩回事（首週第 4、之後升至第 2），本層未查榜單原始資料，建議店主核對 Billboard 頁面 | https://en.wikipedia.org/wiki/Nipsey_Hussle |
 | ar-d-099 | Nujabes / Fat Jon | samurai champloo music record: departure | 同一部作品有四張原聲帶，掛名各不相同；這張是由 Nujabes 與 Fat Jon 共同署名的四張裡的第一張 | 維基 Music of Samurai Champloo：四張配樂掛名是《Departure》（Nujabes、Fat Jon）、《Masta》（Tsutchie、Force of Nature）、《Impression》（Nujabes、Force of Nature、Fat Jon、Minmi）、《Playlist》（Tsutchie）。《Departure》與《Masta》2004 年 6 月 23 日同日發行，同時掛 Nujabes 與 Fat Jon 的不是四張而是《Departure》一張（《Impression》另含兩人與其他人）；「共同署名的四張裡的第一張」說法不成立，建議改成「四張配樂之一，也是 Nujabes 與 Fat Jon 兩人專屬掛名的一張」 | https://en.wikipedia.org/wiki/Music_of_Samurai_Champloo |
+| ar-d-099 | Schoolly D | Schoolly D | 上線簡介稱 P.S.K. 指他「所屬的 Park Side Killas」，並說被視為 gangsta rap 的原型錄音 | 幫派拼寫三源不一致（Killas／Killers／Parkside Killers）；且 Inquirer 引述 Questlove 的「發明了 gangsta rap」是個人說法，非共識；建議降為「被視為最早的 gangsta rap 唱片之一」並改為與來源一致的拼寫或略去幫派名。 | https://www.inquirer.com/philly/entertainment/music/How-Schoolly-D-invented-gangsta-rap.html |
+| ar-d-099 | Schoolly D | Schoolly D | 上線簡介稱 Ice-T「說過〈6 in the Mornin'〉正是聽完這首之後寫的」 | 英文維基引 Ice-T 自傳：他是借用〈P.S.K.〉的押韻切分與口氣，再寫成自己的主題；方向一致，無錯，僅供寫作層參考。 | https://en.wikipedia.org/wiki/Schoolly_D |
+| ar-d-100 | Stetsasonic | In Full Gear | 自稱「第一支嘻哈樂團」 | 本層來源只支撐『最早的嘻哈樂團之一』，『第一』屬自稱，未見獨立第二源；另一篇部落格說 1985 年〈Straight From The Letter〉首度用『hip-hop band』一詞，單源未收。建議簡介保留『自稱』。 | https://en.wikipedia.org/wiki/Stetsasonic |
+| ar-d-100 | T La Rock | Lyrical King (From the Boogie Down Bronx) | 〈It's Yours〉是 Def Jam 編號第一號的唱片 | 維基寫它是第一張印有 Def Jam 標誌的單曲，但實際由 Arthur Baker 的 Partytime（Streetwise 分支）發行、未列入 Def Jam 母帶目錄；『編號第一號』說法有爭議，建議改成『第一張印上 Def Jam 標誌的單曲』或加『被視為』。 | https://en.wikipedia.org/wiki/T_La_Rock |
+| ar-d-100 | Tech N9ne | Anghellic | 那套模式後來成了美國獨立 rap 廠牌的範本 | 本層來源只支撐『Tech N9ne 與 Strange Music 是最成功的獨立嘻哈營運之一』（Complex、官網），沒有來源稱《Anghellic》重發『成了範本』；建議改成可查的說法或刪除。 | https://www.complex.com/music/a/chris-mench/strange-music-tech-n9ne-goes-mainstream-profile |
+| ar-d-100 | Tha Blue Herb | Stilling, Still Dreaming | 札幌的 ILL-BOSSTINO 與 O.N.O 於 1997 年組隊後交出的首張長篇 | 首張專輯發行年來源不一（MusicBrainz 1998，日文維基作品表 1999 年 9 月 15 日），『於 1997 年組隊後』無誤；簡介其餘細節（地下鐵錄音、〈Shock-Shine's Revolt〉取樣《座頭市》）本層來源未涵蓋，未驗證。『DJ DYE』1999 年才加入，簡介未寫，無誤。 | https://ja.wikipedia.org/wiki/THA_BLUE_HERB |
+| ar-d-100 | Tommy Wright III | On the Run | 1976 年生於曼菲斯 Whitehaven | 維基寫他生於曼菲斯、15 歲時住在 Riverside 的公共住宅，之後才搬到 Whitehaven 區；Whitehaven 不是出生地。 | https://en.wikipedia.org/wiki/Tommy_Wright_III |
+| ar-d-100 | Twista | Adrenaline Rush | 專輯 2019 年獲 RIAA 白金認證 | 本層查不到支持來源（維基只寫專輯登 Billboard 200 第 77 名、〈Get It Wet〉Hot 100 第 96 名）；建議店主在本機核對 RIAA 資料庫。 | https://en.wikipedia.org/wiki/Twista |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

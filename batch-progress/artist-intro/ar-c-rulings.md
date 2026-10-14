@@ -1475,3 +1475,16 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：Kurtis Blow「第一位與大廠簽約」「第一首 RIAA 金唱片饒舌歌」屬通行事實（照 Van Cliburn 先例）；Ice Spice、Joe、Juelz Santana、Juicy J、K-Ci & JoJo、Karyn White、Kelis、Koffee、Lil Nas X、Lloyd Banks、Lizzo 各一處成績；King Geedorah 寫 KMD 團員（弟弟）過世一語（團體經歷，未寫死因）；Makaveli 父母為 Black Panther 成員（政治背景一句）；King Von 2020、Mac Dre 2004、2Pac 1996、MF DOOM 2020、J Dilla 未寫年份。
 - 身分：Kazi 預抓維基（德州電台 KAZI）作廢；King Geedorah 改查 MF DOOM 條目；Madvillain 專輯年照 2004 寫。
 - 待本機（上線簡介與卡池）：Madvillain《Madvillainy》卡池 2002 應為 2004；Kazi & Madlib《Blackmarket Seminar》卡池 2014，實為 1996 錄、2011 公開；Karyn White、Kelis、Kirk Franklin、Koffee、J. Holiday、Jaheim、Joe 卡池曲風誤標 hiphop；Kurupt 簡介含槍擊案、死者細節與銷量（建議改寫）；Mac Dre 簡介「第九張錄音室作」「距遇害僅三個月」（未核實且含案情，建議刪）；Joe 簡介「三白金」與來源「一年內雙白金」不合；Juicy J 簡介「離開 Three 6 Mafia」「首張個人作」有誤（團體暫停，第三張個人作）；K-Ci & JoJo 簡介「兄弟倆自行製作」「停留最久的冠軍曲」；Karyn White「連坐七週」與白金認證；Kurtis Blow「〈The Breaks〉最常被取樣」查無；Leaders of the New School「製作交給 Eric Sadler」偏窄；Lord Finesse《The Source》百大榜單單源；Mach-Hommy「兩成收益」查無。
+
+## ar-d-099（2026-10-14）
+
+- 40 位全上架（28 full、12 thin：Maxo Kream、Mick Jenkins、milo、Moneybagg Yo、Mr. Lif、Navy Blue、Polo G、Rico Nasty、Rod Wave、Roddy Ricch、Rome Streetz、Royce da 5'9"），無不寫。
+- 嘻哈段 M 至 S 字頭；Nelly Furtado、PinkPantheress 照流行寫，Next、Peabo Bryson 照 R&B 寫，Nujabes / Fat Jon 照動畫原聲合作寫。
+- 搜尋超額：Nipsey Hussle 多 1 次（補葛萊美第二源）、Nujabes / Fat Jon 多 2 次（補逝世年第二源與查 Fat Jon 身分）、PUNPEE 多 2 次（補 CD Shop 大賞第二源），照第二源與齊豫先例放行。
+- 2025–26 事實：Peabo Bryson 2026-06-02 過世——主線 WebSearch 核實（ABC News 系、NME），只寫年份；PinkPantheress 2026 年 BRIT 年度製作人獎（Music Week＋維基）、Rapsody 2025 葛萊美（grammy.com＋維基）、Roxanne Shanté 2025 葛萊美終身成就獎，照收；ODB Way（2026）兩源同屬 Urban One、非獨立，不寫。
+- 審稿修 10 處：
+  - out-1 審稿 1 處：Meek Mill「最費城的饒舌歌」改「費城味十足」。
+  - out-2 審稿 9 處：Ol' Dirty Bastard「最常被引用」改「常被引用」；Orelsan「同世代最重要的詞作者之一」改「重要」；PinkPantheress 刪 TikTok 影片數、刪「第一位女性得主」；Ras G「最大的影響」「最重要的人物之一」改「重要」（兩處）；Roxanne Shanté 刪「第一位女性 solo 饒舌歌手」。
+  - 保留：MC Hammer「第一張 RIAA 鑽石認證嘻哈專輯」屬通行事實（照 Van Cliburn 先例）；Nelly Furtado、Nekfeu、Next、Orelsan、PUNPEE、Rapsody、Roxanne Shanté、PinkPantheress 各一處成績；ODB 2004、Nate Dogg 2011、Nipsey Hussle 2019、Nujabes 2010、Ras G 2019、Peabo Bryson 2026 年過世；Saba《Care for Me》獻給過世表親（專輯核心概念，未寫死因）；Sage Francis〈Makeshift Patriot〉（政治背景一句）；Schoolly D 引 Questlove 與 Ice-T（具名音樂人）。
+- 身分：預抓維基 Navy blue（顏色）、NeXT（電腦公司）作廢；MC Eiht featuring Compton's Most Wanted 以 MC Eiht 為主寫，避開與 ar-d-096 CMW 重複。
+- 待本機（上線簡介與卡池）：Peabo Bryson、PinkPantheress 卡池曲風誤標 hiphop；MC Shan「Cold Chillin' 第一張 LP」查無；MC Hammer 鑽石認證日期兩源不一；Next《Rated Next》簡介「取樣」實為改寫；Nipsey Hussle《Victory Lap》榜次待核；Nujabes / Fat Jon《Departure》「共同署名四張裡的第一張」不成立；Schoolly D 簡介幫派名（三源拼寫不一，且屬幫派內容，建議刪）、「發明 gangsta rap」宜改具名轉述。
