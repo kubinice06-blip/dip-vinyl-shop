@@ -1,0 +1,1853 @@
+{
+ "_built": "2026-10-14",
+ "_by": "cloud-main（人工判定，尚無音訊層）",
+ "_axes": {
+  "x": "能量 1–5（靜→狂）",
+  "y": "質地 −2–+2（輕→重）",
+  "z": "色溫 −2–+2（冷→暖）"
+ },
+ "_regionRule": {
+  "blaze": "x≥4.75",
+  "centers": {
+   "calm": [
+    1.7,
+    -1.4,
+    0.5
+   ],
+   "languid": [
+    2.1,
+    1.3,
+    0
+   ],
+   "glad": [
+    3,
+    0,
+    0.8
+   ],
+   "lift": [
+    3.9,
+    -0.4,
+    1.4
+   ],
+   "charge": [
+    4.2,
+    1.5,
+    -0.6
+   ]
+  },
+  "zWeight": 0.5
+ },
+ "_corrWithOldAxes": {
+  "x~classic": 0.07,
+  "x~obscurity": 0.04,
+  "x~accessibility": 0.09,
+  "y~classic": -0.02,
+  "y~obscurity": 0.12,
+  "y~accessibility": 0.64,
+  "z~classic": 0.09,
+  "z~obscurity": -0.18,
+  "z~accessibility": -0.63
+ },
+ "anchors": [
+  {
+   "key": "Yutaka Hirose|Nova",
+   "artist": "Yutaka Hirose",
+   "album": "Nova",
+   "year": 1986,
+   "genre": "electronic",
+   "tier": "pearl",
+   "old": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3
+   },
+   "x": 1,
+   "y": -1.8,
+   "z": 0.3,
+   "region": "calm",
+   "why": "環境聲加淡合成器，音與音之間留大片空白"
+  },
+  {
+   "key": "吉村弘|Music for Nine Post Cards",
+   "artist": "吉村弘",
+   "album": "Music for Nine Post Cards",
+   "year": 1982,
+   "genre": "electronic",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3
+   },
+   "x": 1.2,
+   "y": -1.8,
+   "z": 0.8,
+   "region": "calm",
+   "why": "Fender Rhodes 單音慢慢落下，像窗邊的光"
+  },
+  {
+   "key": "Aldo Ciccolini|Satie: Gymnopédies / Gnossiennes",
+   "artist": "Aldo Ciccolini",
+   "album": "Satie: Gymnopédies / Gnossiennes",
+   "year": 1986,
+   "genre": "classical",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 1,
+    "accessibility": 1
+   },
+   "x": 1.3,
+   "y": -1.6,
+   "z": 0,
+   "region": "calm",
+   "why": "獨奏鋼琴，慢、乾淨、不帶情緒推力"
+  },
+  {
+   "key": "Arvo Pärt|Alina",
+   "artist": "Arvo Pärt",
+   "album": "Alina",
+   "year": 1999,
+   "genre": "classical",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 2,
+    "accessibility": 2
+   },
+   "x": 1.1,
+   "y": -1.7,
+   "z": -0.5,
+   "region": "calm",
+   "why": "鋼琴與小提琴極簡反覆，清冷"
+  },
+  {
+   "key": "Brian Eno|Discreet Music",
+   "artist": "Brian Eno",
+   "album": "Discreet Music",
+   "year": 1975,
+   "genre": "electronic",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4
+   },
+   "x": 1,
+   "y": -1.3,
+   "z": 0,
+   "region": "calm",
+   "why": "磁帶迴圈慢慢漂，幾乎沒有事件"
+  },
+  {
+   "key": "Bill Evans|Waltz for Debby",
+   "artist": "Bill Evans",
+   "album": "Waltz for Debby",
+   "year": 1964,
+   "genre": "jazz",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 1
+   },
+   "x": 2.2,
+   "y": -1.5,
+   "z": 1,
+   "region": "calm",
+   "why": "鋼琴三重奏現場，觸鍵輕、空氣感重"
+  },
+  {
+   "key": "Chet Baker|Chet Baker Sings",
+   "artist": "Chet Baker",
+   "album": "Chet Baker Sings",
+   "year": 1954,
+   "genre": "jazz",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 2,
+    "accessibility": 1
+   },
+   "x": 2.2,
+   "y": -1.4,
+   "z": 1.2,
+   "region": "calm",
+   "why": "氣聲般的嗓音與小號，柔軟溫"
+  },
+  {
+   "key": "Stan Getz|Getz/Gilberto",
+   "artist": "Stan Getz",
+   "album": "Getz/Gilberto",
+   "year": 1963,
+   "genre": "jazz",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 1
+   },
+   "x": 2.4,
+   "y": -1.6,
+   "z": 1.5,
+   "region": "calm",
+   "why": "巴薩諾瓦的耳語唱法，輕盈溫暖"
+  },
+  {
+   "key": "João Gilberto|Chega de Saudade",
+   "artist": "João Gilberto",
+   "album": "Chega de Saudade",
+   "year": 1959,
+   "genre": "jazz",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 1
+   },
+   "x": 2.5,
+   "y": -1.7,
+   "z": 1.4,
+   "region": "calm",
+   "why": "木吉他切分與低聲吟唱，最輕的律動"
+  },
+  {
+   "key": "Nick Drake|Pink Moon",
+   "artist": "Nick Drake",
+   "album": "Pink Moon",
+   "year": 1972,
+   "genre": "folk",
+   "tier": "hall",
+   "old": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2
+   },
+   "x": 1.8,
+   "y": -1.5,
+   "z": -0.3,
+   "region": "calm",
+   "why": "一把吉他一副嗓子，安靜偏涼"
+  },
+  {
+   "key": "Joni Mitchell|Blue",
+   "artist": "Joni Mitchell",
+   "album": "Blue",
+   "year": 1971,
+   "genre": "folk",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 2
+   },
+   "x": 2.2,
+   "y": -1.3,
+   "z": 0.8,
+   "region": "calm",
+   "why": "揚琴與鋼琴的私語，輕而溫"
+  },
+  {
+   "key": "Bon Iver|For Emma, Forever Ago",
+   "artist": "Bon Iver",
+   "album": "For Emma, Forever Ago",
+   "year": 2007,
+   "genre": "folk",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 1
+   },
+   "x": 2,
+   "y": -0.8,
+   "z": 0.3,
+   "region": "calm",
+   "why": "木屋錄音，假音疊層，比民謠略厚"
+  },
+  {
+   "key": "陳綺貞 Cheer Chen|讓我想一想",
+   "artist": "陳綺貞 Cheer Chen",
+   "album": "讓我想一想",
+   "year": 1998,
+   "genre": "folk",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1
+   },
+   "x": 2.4,
+   "y": -1.4,
+   "z": 0.8,
+   "region": "calm",
+   "why": "木吉他自彈自唱，清澈"
+  },
+  {
+   "key": "鄧麗君 Teresa Teng|淡淡幽情",
+   "artist": "鄧麗君 Teresa Teng",
+   "album": "淡淡幽情",
+   "year": 1983,
+   "genre": "pop",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 2,
+    "accessibility": 1
+   },
+   "x": 2,
+   "y": -1.3,
+   "z": 1,
+   "region": "calm",
+   "why": "宋詞譜曲，弦樂與嗓音都輕柔"
+  },
+  {
+   "key": "Miles Davis|In a Silent Way",
+   "artist": "Miles Davis",
+   "album": "In a Silent Way",
+   "year": 1969,
+   "genre": "jazz",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 2,
+    "accessibility": 3
+   },
+   "x": 1.8,
+   "y": -0.6,
+   "z": -0.3,
+   "region": "calm",
+   "why": "電鋼琴與管樂慢慢展開，空間大、略冷"
+  },
+  {
+   "key": "Elliott Smith|Either/Or",
+   "artist": "Elliott Smith",
+   "album": "Either/Or",
+   "year": 1997,
+   "genre": "rock",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 2
+   },
+   "x": 2.3,
+   "y": -1,
+   "z": -0.6,
+   "region": "calm",
+   "why": "雙軌人聲與木吉他，輕但憂鬱偏涼"
+  },
+  {
+   "key": "Pole|2",
+   "artist": "Pole",
+   "album": "2",
+   "year": 1999,
+   "genre": "electronic",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4
+   },
+   "x": 1.6,
+   "y": 1.8,
+   "z": -1.2,
+   "region": "languid",
+   "why": "黑膠劈啪雜訊壓在深沉 dub 低音上，慢而糊"
+  },
+  {
+   "key": "Pole|1",
+   "artist": "Pole",
+   "album": "1",
+   "year": 1998,
+   "genre": "electronic",
+   "tier": null,
+   "old": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4
+   },
+   "x": 1.5,
+   "y": 1.9,
+   "z": -1.4,
+   "region": "languid",
+   "why": "壞掉的濾波器做成的 dub，低頻厚、極冷"
+  },
+  {
+   "key": "Basic Channel|BCD",
+   "artist": "Basic Channel",
+   "album": "BCD",
+   "year": 1995,
+   "genre": "electronic",
+   "tier": null,
+   "old": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4
+   },
+   "x": 2.6,
+   "y": 1.6,
+   "z": -1.3,
+   "region": "languid",
+   "why": "dub techno：拍子穩但被殘響淹沒，催眠"
+  },
+  {
+   "key": "Burial|Untrue",
+   "artist": "Burial",
+   "album": "Untrue",
+   "year": 2007,
+   "genre": "electronic",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 2,
+    "accessibility": 3
+   },
+   "x": 2.8,
+   "y": 1.5,
+   "z": -1,
+   "region": "languid",
+   "why": "2-step 碎拍包在雨夜雜訊裡，低頻重、陰"
+  },
+  {
+   "key": "Portishead|Dummy",
+   "artist": "Portishead",
+   "album": "Dummy",
+   "year": 1994,
+   "genre": "jazz",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 2
+   },
+   "x": 2.2,
+   "y": 1.4,
+   "z": -0.9,
+   "region": "languid",
+   "why": "trip-hop 慢拍、刮盤、冷調女聲"
+  },
+  {
+   "key": "Massive Attack|Mezzanine",
+   "artist": "Massive Attack",
+   "album": "Mezzanine",
+   "year": 1998,
+   "genre": "electronic",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 2
+   },
+   "x": 2.6,
+   "y": 1.8,
+   "z": -1.3,
+   "region": "languid",
+   "why": "失真貝斯與慢拍，厚重陰暗"
+  },
+  {
+   "key": "Nujabes|Modal Soul",
+   "artist": "Nujabes",
+   "album": "Modal Soul",
+   "year": 2005,
+   "genre": "hiphop",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1
+   },
+   "x": 2.3,
+   "y": 1,
+   "z": 1.6,
+   "region": "languid",
+   "why": "爵士取樣加 dusty 鼓，chill 而溫"
+  },
+  {
+   "key": "J Dilla|Donuts",
+   "artist": "J Dilla",
+   "album": "Donuts",
+   "year": 2006,
+   "genre": "hiphop",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 2,
+    "accessibility": 3
+   },
+   "x": 2.8,
+   "y": 1.2,
+   "z": 1.2,
+   "region": "languid",
+   "why": "靈魂樂碎切、拖拍的鼓，dusty"
+  },
+  {
+   "key": "Madvillain|Madvillainy",
+   "artist": "Madvillain",
+   "album": "Madvillainy",
+   "year": 2002,
+   "genre": "hiphop",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 2,
+    "accessibility": 3
+   },
+   "x": 2.9,
+   "y": 1.3,
+   "z": 0.6,
+   "region": "languid",
+   "why": "髒取樣、低傳真鼓、懶洋洋的饒舌"
+  },
+  {
+   "key": "Nightmares on Wax|Smokers Delight",
+   "artist": "Nightmares on Wax",
+   "album": "Smokers Delight",
+   "year": 1995,
+   "genre": "electronic",
+   "tier": null,
+   "old": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2
+   },
+   "x": 2.5,
+   "y": 1,
+   "z": 1.4,
+   "region": "languid",
+   "why": "downtempo 與 dub 低音，名副其實的煙霧"
+  },
+  {
+   "key": "D'Angelo|Voodoo",
+   "artist": "D'Angelo",
+   "album": "Voodoo",
+   "year": 2000,
+   "genre": "soul",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 3
+   },
+   "x": 2.4,
+   "y": 1.3,
+   "z": 1.5,
+   "region": "languid",
+   "why": "拖在拍子後面的 groove，混音糊而性感"
+  },
+  {
+   "key": "Sade|Love Deluxe",
+   "artist": "Sade",
+   "album": "Love Deluxe",
+   "year": 1992,
+   "genre": "soul",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1
+   },
+   "x": 2,
+   "y": 0.8,
+   "z": 1.4,
+   "region": "languid",
+   "why": "低沉貝斯與緩慢 groove，溫"
+  },
+  {
+   "key": "King Tubby|King Tubby Meets the Upsetter at the Grass Roots of Dub",
+   "artist": "King Tubby",
+   "album": "King Tubby Meets the Upsetter at the Grass Roots of Dub",
+   "year": 1974,
+   "genre": "world",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 4
+   },
+   "x": 2.3,
+   "y": 1.8,
+   "z": 0.4,
+   "region": "languid",
+   "why": "dub：鼓與貝斯為主、殘響迴盪"
+  },
+  {
+   "key": "Slowdive|Souvlaki",
+   "artist": "Slowdive",
+   "album": "Souvlaki",
+   "year": 1993,
+   "genre": "rock",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 2,
+    "accessibility": 2
+   },
+   "x": 2,
+   "y": 1.4,
+   "z": 0.2,
+   "region": "languid",
+   "why": "shoegaze 吉他牆溶成霧"
+  },
+  {
+   "key": "My Bloody Valentine|Loveless",
+   "artist": "My Bloody Valentine",
+   "album": "Loveless",
+   "year": 1991,
+   "genre": "rock",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 4
+   },
+   "x": 2.7,
+   "y": 2,
+   "z": 0.3,
+   "region": "languid",
+   "why": "滑音吉他層層糊在一起，最厚的霧"
+  },
+  {
+   "key": "Mazzy Star|So Tonight That I Might See",
+   "artist": "Mazzy Star",
+   "album": "So Tonight That I Might See",
+   "year": 1993,
+   "genre": "rock",
+   "tier": "hall",
+   "old": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2
+   },
+   "x": 1.7,
+   "y": 1,
+   "z": -0.2,
+   "region": "languid",
+   "why": "慢板迷幻，殘響與倦怠的嗓音"
+  },
+  {
+   "key": "Codeine|Frigid Stars LP",
+   "artist": "Codeine",
+   "album": "Frigid Stars LP",
+   "year": 1990,
+   "genre": "rock",
+   "tier": null,
+   "old": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3
+   },
+   "x": 1.4,
+   "y": 1.5,
+   "z": -1.5,
+   "region": "languid",
+   "why": "slowcore：極慢、重、冷"
+  },
+  {
+   "key": "Nico|The Marble Index",
+   "artist": "Nico",
+   "album": "The Marble Index",
+   "year": 1968,
+   "genre": "folk",
+   "tier": "heresy",
+   "old": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 5
+   },
+   "x": 1.2,
+   "y": 1.7,
+   "z": -2,
+   "region": "languid",
+   "why": "風琴嗡鳴與冰冷嗓音，最陰的一端"
+  },
+  {
+   "key": "Sunn O)))|Black One",
+   "artist": "Sunn O)))",
+   "album": "Black One",
+   "year": 2005,
+   "genre": "rock",
+   "tier": "heresy",
+   "old": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 5
+   },
+   "x": 1.2,
+   "y": 2,
+   "z": -2,
+   "region": "languid",
+   "why": "drone metal：極慢極重極暗"
+  },
+  {
+   "key": "The Cure|Disintegration",
+   "artist": "The Cure",
+   "album": "Disintegration",
+   "year": 1989,
+   "genre": "rock",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 2
+   },
+   "x": 2.4,
+   "y": 1.5,
+   "z": -1.2,
+   "region": "languid",
+   "why": "慢板合成器牆與殘響吉他，陰鬱厚重"
+  },
+  {
+   "key": "Boards of Canada|Music Has the Right to Children",
+   "artist": "Boards of Canada",
+   "album": "Music Has the Right to Children",
+   "year": 1998,
+   "genre": "electronic",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 2,
+    "accessibility": 3
+   },
+   "x": 2.3,
+   "y": 1,
+   "z": 0,
+   "region": "languid",
+   "why": "走音磁帶感的慢拍，懷舊又詭異"
+  },
+  {
+   "key": "deca joins|Go Slow",
+   "artist": "deca joins",
+   "album": "Go Slow",
+   "year": 2018,
+   "genre": "rock",
+   "tier": null,
+   "old": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2
+   },
+   "x": 2,
+   "y": 0.9,
+   "z": -0.3,
+   "region": "languid",
+   "why": "慢板、殘響與倦怠的唱腔"
+  },
+  {
+   "key": "Fishmans|Long Season",
+   "artist": "Fishmans",
+   "album": "Long Season",
+   "year": 1996,
+   "genre": "pop",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 3
+   },
+   "x": 2.3,
+   "y": 1,
+   "z": 0.8,
+   "region": "languid",
+   "why": "35 分鐘的 dub 流動，迷濛"
+  },
+  {
+   "key": "The Beatles|Abbey Road",
+   "artist": "The Beatles",
+   "album": "Abbey Road",
+   "year": 1969,
+   "genre": "rock",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 1
+   },
+   "x": 3.1,
+   "y": 0,
+   "z": 1,
+   "region": "glad",
+   "why": "中速流行搖滾，溫和明亮"
+  },
+  {
+   "key": "Stevie Wonder|Songs in the Key of Life",
+   "artist": "Stevie Wonder",
+   "album": "Songs in the Key of Life",
+   "year": 1976,
+   "genre": "soul",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 2
+   },
+   "x": 3.3,
+   "y": 0.2,
+   "z": 1.8,
+   "region": "glad",
+   "why": "靈魂樂大全，溫暖飽滿"
+  },
+  {
+   "key": "Marvin Gaye|Let's Get It On",
+   "artist": "Marvin Gaye",
+   "album": "Let's Get It On",
+   "year": 1973,
+   "genre": "soul",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 1,
+    "accessibility": 1
+   },
+   "x": 2.8,
+   "y": 0.3,
+   "z": 1.8,
+   "region": "glad",
+   "why": "中慢板靈魂，溫熱"
+  },
+  {
+   "key": "Simon & Garfunkel|Bridge over Troubled Water",
+   "artist": "Simon & Garfunkel",
+   "album": "Bridge over Troubled Water",
+   "year": 1970,
+   "genre": "rock",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 1
+   },
+   "x": 2.7,
+   "y": -0.8,
+   "z": 1,
+   "region": "glad",
+   "why": "和聲民謠，乾淨溫"
+  },
+  {
+   "key": "The Beach Boys|Pet Sounds",
+   "artist": "The Beach Boys",
+   "album": "Pet Sounds",
+   "year": 1966,
+   "genre": "pop",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 2
+   },
+   "x": 2.9,
+   "y": -0.4,
+   "z": 1,
+   "region": "glad",
+   "why": "層疊和聲與管弦，明亮帶憂"
+  },
+  {
+   "key": "Miles Davis|Kind of Blue",
+   "artist": "Miles Davis",
+   "album": "Kind of Blue",
+   "year": 1959,
+   "genre": "jazz",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 2
+   },
+   "x": 2.6,
+   "y": -0.9,
+   "z": 0.5,
+   "region": "glad",
+   "why": "調式爵士，從容"
+  },
+  {
+   "key": "Kraftwerk|The Man-Machine",
+   "artist": "Kraftwerk",
+   "album": "The Man-Machine",
+   "year": 1978,
+   "genre": "electronic",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 1
+   },
+   "x": 3.4,
+   "y": -0.3,
+   "z": -1.3,
+   "region": "glad",
+   "why": "機械律動，乾淨而冷"
+  },
+  {
+   "key": "A Tribe Called Quest|The Low End Theory",
+   "artist": "A Tribe Called Quest",
+   "album": "The Low End Theory",
+   "year": 1991,
+   "genre": "hiphop",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 2
+   },
+   "x": 3.1,
+   "y": 1,
+   "z": 1.1,
+   "region": "glad",
+   "why": "爵士貝斯取樣加硬鼓，jazzy hip-hop"
+  },
+  {
+   "key": "De La Soul|3 Feet High and Rising",
+   "artist": "De La Soul",
+   "album": "3 Feet High and Rising",
+   "year": 1989,
+   "genre": "hiphop",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 2,
+    "accessibility": 1
+   },
+   "x": 3.4,
+   "y": 0,
+   "z": 1.8,
+   "region": "lift",
+   "why": "嬉鬧取樣拼貼，明亮"
+  },
+  {
+   "key": "周杰倫|葉惠美",
+   "artist": "周杰倫",
+   "album": "葉惠美",
+   "year": 2003,
+   "genre": "pop",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 2,
+    "accessibility": 2
+   },
+   "x": 3.2,
+   "y": 0.2,
+   "z": 0.6,
+   "region": "glad",
+   "why": "華語流行與 R&B，中速"
+  },
+  {
+   "key": "羅大佑|之乎者也",
+   "artist": "羅大佑",
+   "album": "之乎者也",
+   "year": 1982,
+   "genre": "pop",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 2
+   },
+   "x": 3,
+   "y": -0.2,
+   "z": 0,
+   "region": "glad",
+   "why": "民謠搖滾，直白"
+  },
+  {
+   "key": "落日飛車 Sunset Rollercoaster|Jinji Kikko",
+   "artist": "落日飛車 Sunset Rollercoaster",
+   "album": "Jinji Kikko",
+   "year": 2016,
+   "genre": "rock",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2
+   },
+   "x": 2.8,
+   "y": 0.2,
+   "z": 1.6,
+   "region": "glad",
+   "why": "軟搖滾與 AOR 質地，溫"
+  },
+  {
+   "key": "細野晴臣|Hosono House",
+   "artist": "細野晴臣",
+   "album": "Hosono House",
+   "year": 1973,
+   "genre": "electronic",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2
+   },
+   "x": 2.6,
+   "y": -0.8,
+   "z": 1.3,
+   "region": "glad",
+   "why": "家裡錄的民謠搖滾，鬆而暖"
+  },
+  {
+   "key": "はっぴいえんど|風街ろまん",
+   "artist": "はっぴいえんど",
+   "album": "風街ろまん",
+   "year": 1971,
+   "genre": "rock",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 2
+   },
+   "x": 3,
+   "y": -0.5,
+   "z": 0.6,
+   "region": "glad",
+   "why": "日語民謠搖滾，清爽"
+  },
+  {
+   "key": "Radiohead|OK Computer",
+   "artist": "Radiohead",
+   "album": "OK Computer",
+   "year": 1997,
+   "genre": "rock",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 3
+   },
+   "x": 3,
+   "y": 0.9,
+   "z": -1.4,
+   "region": "languid",
+   "why": "中速但陰冷厚重；愉悅與要死不活的邊界卡"
+  },
+  {
+   "key": "Curtis Mayfield|Superfly",
+   "artist": "Curtis Mayfield",
+   "album": "Superfly",
+   "year": 1972,
+   "genre": "soul",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 2,
+    "accessibility": 1
+   },
+   "x": 3.6,
+   "y": 0.6,
+   "z": 0.9,
+   "region": "glad",
+   "why": "放克 groove 加弦樂"
+  },
+  {
+   "key": "Herbie Hancock|Head Hunters",
+   "artist": "Herbie Hancock",
+   "album": "Head Hunters",
+   "year": 1973,
+   "genre": "jazz",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 2
+   },
+   "x": 3.6,
+   "y": 0.9,
+   "z": 1.2,
+   "region": "glad",
+   "why": "爵士放克，厚實貝斯"
+  },
+  {
+   "key": "Talking Heads|Remain in Light",
+   "artist": "Talking Heads",
+   "album": "Remain in Light",
+   "year": 1980,
+   "genre": "rock",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 3
+   },
+   "x": 3.9,
+   "y": 0.6,
+   "z": 0.3,
+   "region": "glad",
+   "why": "非洲節奏的層疊 funk"
+  },
+  {
+   "key": "山下達郎|For You",
+   "artist": "山下達郎",
+   "album": "For You",
+   "year": 1982,
+   "genre": "pop",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 1
+   },
+   "x": 3.8,
+   "y": -0.8,
+   "z": 1.9,
+   "region": "lift",
+   "why": "明亮的吉他切分與和聲，夏天"
+  },
+  {
+   "key": "大貫妙子|Sunshower",
+   "artist": "大貫妙子",
+   "album": "Sunshower",
+   "year": 1977,
+   "genre": "pop",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 1
+   },
+   "x": 3.1,
+   "y": -0.6,
+   "z": 1.4,
+   "region": "glad",
+   "why": "都會 AOR，輕盈"
+  },
+  {
+   "key": "竹内まりや|Variety",
+   "artist": "竹内まりや",
+   "album": "Variety",
+   "year": 1984,
+   "genre": "pop",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 1
+   },
+   "x": 3.5,
+   "y": -0.7,
+   "z": 1.7,
+   "region": "lift",
+   "why": "city pop，甜而亮"
+  },
+  {
+   "key": "Chic|C'est Chic",
+   "artist": "Chic",
+   "album": "C'est Chic",
+   "year": 1978,
+   "genre": "soul",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1
+   },
+   "x": 4,
+   "y": -0.4,
+   "z": 1.8,
+   "region": "lift",
+   "why": "disco 吉他切分，乾淨彈跳"
+  },
+  {
+   "key": "Donna Summer|Bad Girls",
+   "artist": "Donna Summer",
+   "album": "Bad Girls",
+   "year": 1979,
+   "genre": "soul",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 1,
+    "accessibility": 1
+   },
+   "x": 4.1,
+   "y": -0.3,
+   "z": 1.6,
+   "region": "lift",
+   "why": "disco 舞池，亮"
+  },
+  {
+   "key": "Earth, Wind & Fire|That's the Way of the World",
+   "artist": "Earth, Wind & Fire",
+   "album": "That's the Way of the World",
+   "year": 1975,
+   "genre": "soul",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 1,
+    "accessibility": 1
+   },
+   "x": 3.8,
+   "y": -0.1,
+   "z": 1.9,
+   "region": "lift",
+   "why": "銅管放克，熱鬧溫暖"
+  },
+  {
+   "key": "The Jackson 5|ABC",
+   "artist": "The Jackson 5",
+   "album": "ABC",
+   "year": 1970,
+   "genre": "soul",
+   "tier": null,
+   "old": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 1
+   },
+   "x": 4,
+   "y": -0.9,
+   "z": 2,
+   "region": "lift",
+   "why": "Motown 泡泡糖靈魂，最亮"
+  },
+  {
+   "key": "Daft Punk|Discovery",
+   "artist": "Daft Punk",
+   "album": "Discovery",
+   "year": 2001,
+   "genre": "electronic",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 2
+   },
+   "x": 4.3,
+   "y": 0.2,
+   "z": 1.8,
+   "region": "lift",
+   "why": "法式 house 的閃亮取樣"
+  },
+  {
+   "key": "Michael Jackson|Thriller",
+   "artist": "Michael Jackson",
+   "album": "Thriller",
+   "year": 1982,
+   "genre": "soul",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 1
+   },
+   "x": 4,
+   "y": -0.1,
+   "z": 1.4,
+   "region": "lift",
+   "why": "流行舞曲，俐落"
+  },
+  {
+   "key": "Yellow Magic Orchestra|Solid State Survivor",
+   "artist": "Yellow Magic Orchestra",
+   "album": "Solid State Survivor",
+   "year": 1979,
+   "genre": "electronic",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 2,
+    "accessibility": 1
+   },
+   "x": 4,
+   "y": -0.8,
+   "z": -0.4,
+   "region": "lift",
+   "why": "合成器流行，輕快偏冷"
+  },
+  {
+   "key": "Perfume|Game",
+   "artist": "Perfume",
+   "album": "Game",
+   "year": 2008,
+   "genre": "electronic",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 1
+   },
+   "x": 4.4,
+   "y": -0.6,
+   "z": 0.4,
+   "region": "lift",
+   "why": "電子流行，亮而快"
+  },
+  {
+   "key": "NewJeans|New Jeans",
+   "artist": "NewJeans",
+   "album": "New Jeans",
+   "year": 2022,
+   "genre": "pop",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 1
+   },
+   "x": 3.7,
+   "y": -0.9,
+   "z": 1,
+   "region": "lift",
+   "why": "Jersey club 與 Y2K 流行，輕"
+  },
+  {
+   "key": "Prince|1999",
+   "artist": "Prince",
+   "album": "1999",
+   "year": 1982,
+   "genre": "soul",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 1
+   },
+   "x": 4.1,
+   "y": 0.3,
+   "z": 1.2,
+   "region": "lift",
+   "why": "Minneapolis funk，彈"
+  },
+  {
+   "key": "Beastie Boys|Paul's Boutique",
+   "artist": "Beastie Boys",
+   "album": "Paul's Boutique",
+   "year": 1989,
+   "genre": "hiphop",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 2
+   },
+   "x": 3.9,
+   "y": 0.6,
+   "z": 1.5,
+   "region": "lift",
+   "why": "取樣狂歡，熱鬧"
+  },
+  {
+   "key": "Fela Kuti|Zombie",
+   "artist": "Fela Kuti",
+   "album": "Zombie",
+   "year": 1977,
+   "genre": "jazz",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 2
+   },
+   "x": 4.2,
+   "y": 0.6,
+   "z": 1,
+   "region": "lift",
+   "why": "Afrobeat 長段 groove"
+  },
+  {
+   "key": "James Brown|Say It Loud: I’m Black and I’m Proud",
+   "artist": "James Brown",
+   "album": "Say It Loud: I’m Black and I’m Proud",
+   "year": 1969,
+   "genre": "soul",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 5,
+    "accessibility": 2
+   },
+   "x": 4.3,
+   "y": 0.3,
+   "z": 1.5,
+   "region": "lift",
+   "why": "放克切分，緊而熱"
+  },
+  {
+   "key": "Ramones|Ramones",
+   "artist": "Ramones",
+   "album": "Ramones",
+   "year": 1976,
+   "genre": "rock",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 2
+   },
+   "x": 4.6,
+   "y": 1.6,
+   "z": 0.2,
+   "region": "charge",
+   "why": "三和弦快速龐克，粗而直"
+  },
+  {
+   "key": "Sex Pistols|Never Mind the Bollocks, Here's the Sex Pistols",
+   "artist": "Sex Pistols",
+   "album": "Never Mind the Bollocks, Here's the Sex Pistols",
+   "year": 1977,
+   "genre": "rock",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 2,
+    "accessibility": 2
+   },
+   "x": 4.4,
+   "y": 1.8,
+   "z": -0.6,
+   "region": "charge",
+   "why": "失真吉他牆與嘶吼"
+  },
+  {
+   "key": "Dead Kennedys|Fresh Fruit for Rotting Vegetables",
+   "artist": "Dead Kennedys",
+   "album": "Fresh Fruit for Rotting Vegetables",
+   "year": 1980,
+   "genre": "rock",
+   "tier": "hall",
+   "old": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 3
+   },
+   "x": 4.7,
+   "y": 1.5,
+   "z": -0.5,
+   "region": "charge",
+   "why": "快速衝撞的龐克"
+  },
+  {
+   "key": "Black Flag|My War",
+   "artist": "Black Flag",
+   "album": "My War",
+   "year": 1984,
+   "genre": "rock",
+   "tier": null,
+   "old": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4
+   },
+   "x": 4,
+   "y": 2,
+   "z": -1.6,
+   "region": "charge",
+   "why": "硬蕊前半加 sludge 後半，極重"
+  },
+  {
+   "key": "Jeff Mills|Waveform Transmission Vol. 1",
+   "artist": "Jeff Mills",
+   "album": "Waveform Transmission Vol. 1",
+   "year": 1993,
+   "genre": "electronic",
+   "tier": null,
+   "old": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4
+   },
+   "x": 4.7,
+   "y": 1.4,
+   "z": -1.6,
+   "region": "charge",
+   "why": "底特律 techno，快而硬、冷"
+  },
+  {
+   "key": "戸川純|玉姫様",
+   "artist": "戸川純",
+   "album": "玉姫様",
+   "year": 1984,
+   "genre": "pop",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3
+   },
+   "x": 4.1,
+   "y": 1,
+   "z": -0.5,
+   "region": "charge",
+   "why": "躁動的新浪潮歌唱，戲劇化"
+  },
+  {
+   "key": "ヤプーズ|Dadada-ism",
+   "artist": "ヤプーズ",
+   "album": "Dadada-ism",
+   "year": 1992,
+   "genre": "pop",
+   "tier": null,
+   "old": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3
+   },
+   "x": 4.5,
+   "y": 1.5,
+   "z": -0.4,
+   "region": "charge",
+   "why": "龐克化的戶川純樂團"
+  },
+  {
+   "key": "Joy Division|Unknown Pleasures",
+   "artist": "Joy Division",
+   "album": "Unknown Pleasures",
+   "year": 1979,
+   "genre": "rock",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 4
+   },
+   "x": 3.5,
+   "y": 1.6,
+   "z": -1.9,
+   "region": "charge",
+   "why": "後龐克：緊繃貝斯、冷到骨"
+  },
+  {
+   "key": "The Velvet Underground|White Light/White Heat",
+   "artist": "The Velvet Underground",
+   "album": "White Light/White Heat",
+   "year": 1968,
+   "genre": "rock",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 2,
+    "accessibility": 4
+   },
+   "x": 4.2,
+   "y": 2,
+   "z": -1,
+   "region": "charge",
+   "why": "失真回授與噪音"
+  },
+  {
+   "key": "The Clash|London Calling",
+   "artist": "The Clash",
+   "album": "London Calling",
+   "year": 1979,
+   "genre": "rock",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 2
+   },
+   "x": 4.2,
+   "y": 1,
+   "z": 0.5,
+   "region": "charge",
+   "why": "龐克混雷鬼與搖滾，衝"
+  },
+  {
+   "key": "Nirvana|Nevermind",
+   "artist": "Nirvana",
+   "album": "Nevermind",
+   "year": 1991,
+   "genre": "rock",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 1
+   },
+   "x": 4.2,
+   "y": 1.7,
+   "z": -0.3,
+   "region": "charge",
+   "why": "grunge 大聲小聲"
+  },
+  {
+   "key": "The Prodigy|The Fat of the Land",
+   "artist": "The Prodigy",
+   "album": "The Fat of the Land",
+   "year": 1997,
+   "genre": "electronic",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 1,
+    "accessibility": 1
+   },
+   "x": 4.7,
+   "y": 1.7,
+   "z": -0.8,
+   "region": "charge",
+   "why": "big beat：重拍、失真、咄咄逼人"
+  },
+  {
+   "key": "Black Sabbath|Paranoid",
+   "artist": "Black Sabbath",
+   "album": "Paranoid",
+   "year": 1970,
+   "genre": "rock",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 2
+   },
+   "x": 3.9,
+   "y": 2,
+   "z": -1,
+   "region": "charge",
+   "why": "重金屬的重"
+  },
+  {
+   "key": "草東沒有派對 No Party For Cao Dong|醜奴兒",
+   "artist": "草東沒有派對 No Party For Cao Dong",
+   "album": "醜奴兒",
+   "year": 2016,
+   "genre": "rock",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 3
+   },
+   "x": 4,
+   "y": 1.5,
+   "z": -1.2,
+   "region": "charge",
+   "why": "失真吉他與嘶喊，憤怒"
+  },
+  {
+   "key": "NUMBER GIRL|School Girl Distortional Addict",
+   "artist": "NUMBER GIRL",
+   "album": "School Girl Distortional Addict",
+   "year": 1999,
+   "genre": "rock",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3
+   },
+   "x": 4.6,
+   "y": 1.7,
+   "z": -0.3,
+   "region": "charge",
+   "why": "尖銳失真的日本另類"
+  },
+  {
+   "key": "伍佰 & China Blue|樹枝孤鳥",
+   "artist": "伍佰 & China Blue",
+   "album": "樹枝孤鳥",
+   "year": 1998,
+   "genre": "rock",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 3
+   },
+   "x": 3.8,
+   "y": 1.3,
+   "z": 0.2,
+   "region": "charge",
+   "why": "台語搖滾加電子，粗獷"
+  },
+  {
+   "key": "Can|Tago Mago",
+   "artist": "Can",
+   "album": "Tago Mago",
+   "year": 1971,
+   "genre": "rock",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 5,
+    "accessibility": 4
+   },
+   "x": 3.6,
+   "y": 1.3,
+   "z": -0.6,
+   "region": "charge",
+   "why": "krautrock 長段催眠鼓組"
+  },
+  {
+   "key": "椎名林檎|勝訴ストリップ",
+   "artist": "椎名林檎",
+   "album": "勝訴ストリップ",
+   "year": 2000,
+   "genre": "rock",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 3
+   },
+   "x": 4.2,
+   "y": 1.5,
+   "z": -0.3,
+   "region": "charge",
+   "why": "失真與戲劇化嗓音"
+  },
+  {
+   "key": "Swans|The Seer",
+   "artist": "Swans",
+   "album": "The Seer",
+   "year": 2012,
+   "genre": "rock",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 4
+   },
+   "x": 3.3,
+   "y": 2,
+   "z": -1.8,
+   "region": "charge",
+   "why": "巨大反覆的音牆，壓迫"
+  },
+  {
+   "key": "Merzbow|Pulse Demon",
+   "artist": "Merzbow",
+   "album": "Pulse Demon",
+   "year": 1996,
+   "genre": "electronic",
+   "tier": "heresy",
+   "old": {
+    "classic": 5,
+    "obscurity": 2,
+    "accessibility": 5
+   },
+   "x": 5,
+   "y": 2,
+   "z": -1.5,
+   "region": "blaze",
+   "why": "純噪音，滿格"
+  },
+  {
+   "key": "John Coltrane|Interstellar Space",
+   "artist": "John Coltrane",
+   "album": "Interstellar Space",
+   "year": 1974,
+   "genre": "jazz",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 5
+   },
+   "x": 5,
+   "y": 0.8,
+   "z": -0.4,
+   "region": "blaze",
+   "why": "薩克斯與鼓的二重奏狂飆"
+  },
+  {
+   "key": "John Coltrane|Ascension",
+   "artist": "John Coltrane",
+   "album": "Ascension",
+   "year": 1965,
+   "genre": "jazz",
+   "tier": "heresy",
+   "old": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 4
+   },
+   "x": 4.9,
+   "y": 1.6,
+   "z": -0.2,
+   "region": "blaze",
+   "why": "集體即興的爆發"
+  },
+  {
+   "key": "Slayer|Reign in Blood",
+   "artist": "Slayer",
+   "album": "Reign in Blood",
+   "year": 1986,
+   "genre": "rock",
+   "tier": "hall",
+   "old": {
+    "classic": 5,
+    "obscurity": 1,
+    "accessibility": 3
+   },
+   "x": 5,
+   "y": 2,
+   "z": -1.4,
+   "region": "blaze",
+   "why": "捶擊金屬，28 分鐘不停"
+  },
+  {
+   "key": "Darkthrone|Transilvanian Hunger",
+   "artist": "Darkthrone",
+   "album": "Transilvanian Hunger",
+   "year": 1994,
+   "genre": "rock",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4
+   },
+   "x": 4.9,
+   "y": 2,
+   "z": -2,
+   "region": "blaze",
+   "why": "黑金屬：快、糊、冰"
+  },
+  {
+   "key": "Melt-Banana|Scratch or Stitch",
+   "artist": "Melt-Banana",
+   "album": "Scratch or Stitch",
+   "year": 1995,
+   "genre": "rock",
+   "tier": "heresy",
+   "old": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4
+   },
+   "x": 5,
+   "y": 1.8,
+   "z": 0,
+   "region": "blaze",
+   "why": "噪音龐克，極速"
+  },
+  {
+   "key": "BOREDOMS|Vision Creation Newsun",
+   "artist": "BOREDOMS",
+   "album": "Vision Creation Newsun",
+   "year": 1999,
+   "genre": "rock",
+   "tier": null,
+   "old": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 4
+   },
+   "x": 4.8,
+   "y": 1.6,
+   "z": 0.8,
+   "region": "blaze",
+   "why": "鼓陣與迷幻的狂喜"
+  },
+  {
+   "key": "閃靈 CHTHONIC|賽德克巴萊",
+   "artist": "閃靈 CHTHONIC",
+   "album": "賽德克巴萊",
+   "year": 2005,
+   "genre": "rock",
+   "tier": null,
+   "old": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4
+   },
+   "x": 4.8,
+   "y": 2,
+   "z": -1.4,
+   "region": "blaze",
+   "why": "黑金屬加二胡，快而重"
+  }
+ ]
+}
