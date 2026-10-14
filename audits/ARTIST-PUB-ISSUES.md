@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1255 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1256 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1211,6 +1211,7 @@
 | ar-d-093 | The Infinity Project | Feeling Weird | 1995 年這張首張專輯即是廠牌編號 TIP CD 003 | Qobuz 簡介列《Mystical Experiences》（1995，Blue Room Released）為較早的專輯，並寫《Feeling Wierd》為 1996 年、主要彙整先前單曲與 EP；年份與「首張專輯」說法待用 Discogs 或 TIP 官方目錄核對（卡池年份為 1995）。 | https://www.qobuz.com/se-en/interpreter/the-infinity-project/827464 |
 | ar-d-094 | TOKYO No.1 SOUL SET | Triple Barrel | TOKYO No.1 SOUL SET 的首張錄音室作 | 日文維基說他們在 1994 年轉江戸屋之前已在 Natsume 發過數張獨立作品，若其中有專輯，則《Triple Barrel》不是首張；本層沒查到 Natsume 時期的曲目與形式，待店主在本機核對 Discogs | https://ja.wikipedia.org/wiki/TOKYO_No.1_SOUL_SET |
 | ar-d-094 | Yanni | Live at the Acropolis | 替該台募得一千三百萬美元 | 開頁讀到的英文維基、WRAL、Encyclopedia.com 都沒有 1300 萬美元這個數字，也沒有說明是哪一台；唯一出處是 last.fm 的使用者維基，建議刪除或改成有出處的說法（例如『成為 PBS 最成功的募款節目之一』）。 | https://en.wikipedia.org/wiki/Live_at_the_Acropolis |
+| ar-d-095 | Ансамбль электромузыкальных инструментов п/у Вячеслава Мещерина | Easy USSR | Вячеслав Мещерин 1956 年創立這個合奏團 | WOMEX 與 The Sound Projector 寫 1957，Мещерин 個人條目（ru／en 維基）亦寫 1957；僅 ru 維基合奏團條目寫 1956（並稱 1958 取得正式編制）。待核，建議改 1957 或避開年份 | https://www.womex.com/virtual/eastblok_music/v_a/balkanbeats_vol_2 |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

@@ -1414,3 +1414,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   -   另 Tetsu Inoue 刪減後 171 字低於 full 下限，補一句與細野晴臣、Atom Heart 合組 HAT（ar-d-087 HAT 卡已核實），回到 201 字。
 - 身分：Stacey Pullen 本人卡與 ar-d-092 的 Silent Phase 分寫；Takayuki Shiraishi 即 ar-d-084 BGM 的核心白石隆之；Ten City 與 ar-d-084 Byron Stingily 個人卡分寫；The Martian 與 MusicBrainz 另一位 The Martian（Marlon Grant）不同。System 7 搜尋 10 次、Temdendam Suay 搜尋 10 次，overCapOk（前者補第二源，後者只確認身分且最終不寫）——超兩次的放行限這兩例，不成先例。
 - 待本機（上線簡介）：Sympathy Nervous 成員漢字「千崎達也」與來源不合；T.Power 簽約廠牌時序；Technotronic 簡介寫了歌聲掛名爭議（建議刪）；The Beloved「最早…之一」過強；The Infinity Project「1995 年首張專輯」與 Qobuz 不合；The Other People Place 的年度榜與英國黑膠榜名次查無。
+
+## ar-d-094（2026-10-14）
+
+- 35 位上架（24 full、11 thin：The Third Eye Foundation、Thomas Newman、Toshimaru Nakamura、Turquoise Days、Twisted Science、Ura Ura、Urban Tribe、we·be·echo、World Class Wreckin' Cru、X-Press 2、Yagya）。5 位不寫：Trio Rakant（聲音查無）、Troye Sivan（只有 MV 主題與製作人）、Total Eclipse（只有曲風標籤）、Vex'd（thin 沒有具體手法）、Yoshihiro Sawasaki（只有無出典的日文維基）。
+- 電子段至此寫完；ar-d-095 前段是希臘、蘇聯與日文名的電子尾段，後段進入嘻哈段。
+- 審稿修 9 處：
+  - out-1 審稿 4 處：The Shamen 刪〈Ebeneezer Goode〉歌名諧音鼓吹搖頭丸的爭議一句（毒品）；Todd Terry「最受尊敬」改「備受尊敬」；Toshimaru Nakamura 刪機構名與「開創」（第一類宣稱），改「他在九〇年代中期發展出來的」；Transllusion「最具影響力之一」改「極具影響力」。寫作層不寫 Trio Rakant（聲音查無）、Troye Sivan（只有 MV 主題與製作人）、Total Eclipse（只有曲風標籤）。
+  - 保留：The Sabres of Paradise 2025 年重組演出（banbantonton 訪談＋Line Noise 兩源）、Andrew Weatherall 2020、Will Sinnott 1991、Tod Dockstader 2015、Tony Scott 2007、James Stinson 2002 年過世；Trent Reznor 談 Gary Numan（具名音樂人）；Tubeway Army 英國兩榜冠軍（唯一一處）。
+  - out-2 審稿 5 處：Visage「最典型的宣言」改「典型宣言」；Web「日本最早的獨立 techno 廠牌之一」改「早期」；Yanni「最成功的募款節目之一」改「成功的」；Yoshinori Sunahara「最重要的專輯」改「重要專輯」；Yothu Yindi 刪「原住民土地權時代的配樂」（政治背景只留〈Treaty〉起因一句）。另撤下 Vex'd（thin 的聲音句只有「工業感、力道強悍」，沒有具體手法；兩人中的 Roly Porter 已在 ar-d-092 寫過 Vex'd 的經歷）、Yoshihiro Sawasaki（只有無出典的日文維基與活動介紹）。
+  - 保留：Wamdue Project 英國冠軍、Visage 英國第 8 名、X-Press 2 的 Ivor Novello（各一處）；Anohni 談 Yazoo（具名音樂人）；Mandawuy Yunupingu 2013 年過世；Yothu Yindi 2012 年入選 ARIA 名人堂（官方）。
+- 身分：Ura Ura 與 Web 是同一人（杉本卓也），分寫；Transllusion 與 ar-d-093 The Other People Place 是同一人（James Stinson），分寫；預抓維基作廢——Total Eclipse（舊金山金屬團）、Web（Knuth 的程式系統）、Woo（雞尾酒）。主線特注寫的 Wamdue Project 成員 Roy Davis Jr／Gabriel Brann、Web 的 Fatcat 均查無來源，不收。
+- 待本機（上線簡介）：TOKYO No.1 SOUL SET「首張錄音室作」與日文維基不合；The Sabres of Paradise 報紙千大專輯查無；Vainqueur「Basic Channel 周邊最早的名字之一」查無；Yanni「替 PBS 募得一千三百萬美元」只見 last.fm 摘要，建議刪。
