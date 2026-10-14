@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1286 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1292 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1241,7 +1241,13 @@
 | ar-d-098 | Karyn White | Karyn White | 專輯本身更在 R&B 專輯榜連坐七週冠軍並獲白金認證 | 本層未能在兩個可讀來源找到『連坐七週』；白金認證則維基寫白金、encyclopedia.com 寫雙白金，建議店主核對 RIAA 資料庫 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/white-karyn |
 | ar-d-098 | Kurtis Blow | Kurtis Blow | 〈The Breaks〉中段把鼓 break 放到底，日後成為最常被取樣的段落之一 | 查無來源。Songfacts 稱該曲是現場樂手（Bralower、Wolk、Tropea、Miller）演奏、非取樣，頁面未提到被取樣；維基與 Udiscover 提到被取樣的是〈Christmas Rappin'〉（Next〈Too Close〉）與〈If I Ruled the World〉（Nas）。建議刪或改寫。 | https://www.songfacts.com/facts/kurtis-blow/the-breaks |
 | ar-d-098 | Kurupt | Tha Streetz Iz a Mutha | 同年 10 月他一行人在 Echo Sounds 錄音室外遭槍擊，保鑣 Dwayne Dupree 當場身亡；Kurupt 自述錄這張時「又回到幫派狀態，非常低落、憤怒」 | 非事實錯誤，是與本批規則不符：案情細節與暴力事件依本批特注避免；另「四十四萬張」為在世者銷量，也屬避免項。由主線決定是否改寫。 |  |
+| ar-d-098 | Leaders of the New School | A Future Without a Past... | 製作交給 Bomb Squad 的 Eric Sadler | 偏窄。Albumism 寫專輯製作者還包括 Cut Monitor Milo、Busta Rhymes、Backspin 與 Dante Ross 所在的 Stimulated Dummies，Eric Sadler 只是其中之一；建議改成「Eric Sadler 與團員自己等多人製作」。 | https://albumism.com/features/leaders-of-the-new-school-debut-album-a-future-without-a-past-album-anniversary |
 | ar-d-098 | Lord Finesse & DJ Mike Smooth | Funky Technician | 1998 年《The Source》列入 100 Best Rap Albums | 只有英文維基《Funky Technician》條目單源，粉絲維基寫成『100 Best Albums』；兩次搜尋與一篇整理《The Source》1998 年 1 月第 100 期榜單的文章都找不到原榜單，榜名與是否存在未能核實。建議改寫或移除。 | https://en.wikipedia.org/wiki/Funky_Technician |
+| ar-d-098 | Mach-Hommy | Pray for Haiti | 他宣布將兩成收益投入自設的 Pray for Haiti Trust Fund | 維基只寫他把自己那份收益捐給基金，未見『兩成』；本層找不到比例的來源，建議改寫成不帶比例，或另查原始聲明。 | https://en.wikipedia.org/wiki/Mach-Hommy |
+| ar-d-099 | MC Shan | Down by Law | 是 Cold Chillin' 的第一張 LP（編號 CCLP-500） | 本層找不到來源證實『廠牌第一張 LP』；維基與 hiphopnostalgia 只說是 Shan 在 Cold Chillin' 的首張專輯，依規則『某廠牌第一張』須反查廠牌沿革，建議店主複核或退成『Shan 的首張專輯』 | https://www.hiphopnostalgia.com/2022/08/mc-shan-down-by-law-august-8-1987.html |
+| ar-d-099 | Next | Rated Next | 取樣 Kurtis Blow〈Christmas Rappin'〉的〈Too Close〉 | Songfacts 寫 KayGee 是把〈Christmas Rappin'〉的樂段改寫成新編曲（interpolate），並非直接取樣，原曲作者列名創作；維基則寫 samples，兩源不一致，建議改成「以……為底改寫」或淡化取樣二字，由店主裁定 | https://www.songfacts.com/facts/next/too-close |
+| ar-d-099 | Nipsey Hussle | Victory Lap | 首週 53,000 單位、Billboard 200 第 4 名 | 英文維基 Nipsey Hussle 首段寫 Victory Lap 在 Billboard 200 最高第 2 名；首週名次與最高名次可能是兩回事（首週第 4、之後升至第 2），本層未查榜單原始資料，建議店主核對 Billboard 頁面 | https://en.wikipedia.org/wiki/Nipsey_Hussle |
+| ar-d-099 | Nujabes / Fat Jon | samurai champloo music record: departure | 同一部作品有四張原聲帶，掛名各不相同；這張是由 Nujabes 與 Fat Jon 共同署名的四張裡的第一張 | 維基 Music of Samurai Champloo：四張配樂掛名是《Departure》（Nujabes、Fat Jon）、《Masta》（Tsutchie、Force of Nature）、《Impression》（Nujabes、Force of Nature、Fat Jon、Minmi）、《Playlist》（Tsutchie）。《Departure》與《Masta》2004 年 6 月 23 日同日發行，同時掛 Nujabes 與 Fat Jon 的不是四張而是《Departure》一張（《Impression》另含兩人與其他人）；「共同署名的四張裡的第一張」說法不成立，建議改成「四張配樂之一，也是 Nujabes 與 Fat Jon 兩人專屬掛名的一張」 | https://en.wikipedia.org/wiki/Music_of_Samurai_Champloo |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

@@ -1463,3 +1463,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：Doechii 葛萊美最佳饒舌專輯（含「第三位女性」，算一處）、E.U.〈Da Butt〉R&B 榜首（必要例外）、Eve Billboard 200 冠軍、Fergie Hot 100 冠軍、Ghetts MOBO Pioneer Award、Giggs BET 英國類別、Headie One 英國專輯榜冠軍、Heize 音源榜首、Hot Boys Billboard 200 第 5、House of Pain Hot 100 第 3（各一處）；Eazy-E 1995、Gangsta Boo 2023、Sean Price 2015 年過世；Drunken Tiger 的 1992 年洛杉磯暴動背景一句（政治背景上限一句）；Dos Monos 取樣唐鳳的事實照收（中性）；Foxy Brown、Fabolous 引 Nicki Minaj（具名音樂人）。
 - 身分：Double X 是台灣龐克團（非美國同名 rap 團）；GZA/Genius、Dos Monos、E.U. 維基查無，照卡池確認。
 - 待本機（上線簡介與卡池）：Double X 卡池曲風 hiphop／electronic 錯置、簡介「後龐克」查無；Drunken Tiger 簡介韓文與漢字相鄰缺空格；E.U. 簡介年月用中文數字；Eve 簡介「詞全部由她自己寫」與 credits 不合；Freddie Jackson 簡介「男中音」（來源寫 tenor）；G-Unit 簡介 Tony Yayo 入獄年 2002／2003（建議整句刪）；Garnet Mimms 簡介 Janis Joplin 翻唱年 1970／1971、「替 Aretha Franklin 與 Otis Redding 鋪路」查無；Griselda 簡介把 WWCD 寫成團名縮寫、含 Clara Gomez 身故一句（建議刪）；Hot Boys「一週錄完」、Headie One「二十餘人分軌製作」查無來源。
+
+## ar-d-098（2026-10-14）
+
+- 38 位上架（29 full、9 thin：Jaheim、Joe、Kazi & Madlib、King Von、Kurupt、Larry June & The Alchemist、Latto、Lloyd Banks、Lu1）。2 位不寫：J. Holiday、Marques Houston（thin 的聲音句只有曲風定位與製作人名，沒有具體手法，照 Vex'd 先例）。
+- 嘻哈段 I 至 M 字頭；R&B（Jaheim、Joe、K-Ci & JoJo、Karyn White、Kelis）、福音（Kirk Franklin）、雷鬼（Koffee）、音樂劇（Lin-Manuel Miranda）照本人路數寫。
+- 搜尋超額：Lord Finesse & DJ Mike Smooth 多 2 次（找榜單第二源未果，無新事實，照齊豫先例）；Lu1 多 3 次（無維基，從零確認國籍與身分：上海出生、移居洛杉磯的華語爵士嘻哈），照身分重查前例放行，**記為例外、不作先例**。
+- 審稿修 13 處：
+  - out-1 審稿 6 處：Jadakiss「最受矚目」改「較受矚目」；Jay Park 刪留言誤譯風暴與解約（爭議）；Jay Rock 刪「因意外沒去成葛萊美」；Jaylib「Stones Throw 最早的代表作之一」改「早期」；King Geedorah「嘻哈史上最偉大且最具影響力之一」改「極具影響力」；撤下 J. Holiday。
+  - out-2 審稿 7 處：Lauryn Hill 在世者成績收斂成葛萊美五項（含年度專輯）一處，刪兩個「第一位」與國家錄音登記簿；Lin-Manuel Miranda 只留《Hamilton》普立茲與東尼獎一處；Lizzo 刪父親過世與住車上（私人逝世細節）；Mac Dre「影響力最大之一」改「極具影響力」；Madvillain「史上最偉大的饒舌專輯之一」改「饒舌經典」；Makaveli（名人堂官網語）「史上最偉大」改「饒舌標竿」；撤下 Marques Houston。
+  - 保留：Kurtis Blow「第一位與大廠簽約」「第一首 RIAA 金唱片饒舌歌」屬通行事實（照 Van Cliburn 先例）；Ice Spice、Joe、Juelz Santana、Juicy J、K-Ci & JoJo、Karyn White、Kelis、Koffee、Lil Nas X、Lloyd Banks、Lizzo 各一處成績；King Geedorah 寫 KMD 團員（弟弟）過世一語（團體經歷，未寫死因）；Makaveli 父母為 Black Panther 成員（政治背景一句）；King Von 2020、Mac Dre 2004、2Pac 1996、MF DOOM 2020、J Dilla 未寫年份。
+- 身分：Kazi 預抓維基（德州電台 KAZI）作廢；King Geedorah 改查 MF DOOM 條目；Madvillain 專輯年照 2004 寫。
+- 待本機（上線簡介與卡池）：Madvillain《Madvillainy》卡池 2002 應為 2004；Kazi & Madlib《Blackmarket Seminar》卡池 2014，實為 1996 錄、2011 公開；Karyn White、Kelis、Kirk Franklin、Koffee、J. Holiday、Jaheim、Joe 卡池曲風誤標 hiphop；Kurupt 簡介含槍擊案、死者細節與銷量（建議改寫）；Mac Dre 簡介「第九張錄音室作」「距遇害僅三個月」（未核實且含案情，建議刪）；Joe 簡介「三白金」與來源「一年內雙白金」不合；Juicy J 簡介「離開 Three 6 Mafia」「首張個人作」有誤（團體暫停，第三張個人作）；K-Ci & JoJo 簡介「兄弟倆自行製作」「停留最久的冠軍曲」；Karyn White「連坐七週」與白金認證；Kurtis Blow「〈The Breaks〉最常被取樣」查無；Leaders of the New School「製作交給 Eric Sadler」偏窄；Lord Finesse《The Source》百大榜單單源；Mach-Hommy「兩成收益」查無。
