@@ -1380,3 +1380,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：Mika Vainio 2017、Mort Garson 2008、MSBR 的 Tano Kōji 2005、Philippe Zdar 2019 年過世（只寫年份）；Alva Noto 談 Mika Vainio（具名音樂人）；龐畢度中心談 Mirwais（官方機構）；Mono/Poly 參與製作的 Thundercat 專輯葛萊美（他人專輯的製作署名）。
 - 身分：Michael Garrison 與 MusicBrainz 上的同名美國迪斯可歌手不同；Mfon 不是維基的奈及利亞人名消歧頁；Nerve Net Noise 與 Brian Eno《Nerve Net》、美國同名二人組不同；Okihide 搜尋時誤對到 Yoshihiro Sawasaki，未收。Mushroom Now!、Nerve Net Noise 各搜尋 9 次，overCapOk（多出的一次沒有新事實，比照齊豫前例）。
 - 待本機（上線簡介）：Michele Mercure 名字拼法與「兩捲卡帶」；Mirwais「隔年為 Madonna 做《Music》」不對（同年）；Morton Subotnick《The Wild Bull》的工作室位置；Mr. Scruff DJ 起算年 1992／1994；Octave One〈I Believe〉與 430 West 年份、「較內斂」查無；Overmono 的 Tessela 做的是 breakbeat 不是 drum and bass。
+
+## ar-d-091（2026-10-14）
+
+- 37 位上架（30 full、7 thin：Pain Jerk、Paul Nagle、Paul Oakenfold、Pendulum、Pink Siifu、Rival Consoles、Robert Turman）。3 位不寫：Pacific 231（只有曲風標籤）、Palomatic（只有一篇店家文案）、Quadra（手法只屬於他其他名義）。
+- 審稿修 12 處：
+  - out-1 審稿 7 處：Pauline Anna Strom 276 字超出單卡上限，刪「天生全盲」與讀不到說明書一句（比照 d-085 Splet 刪「法定失明」，健康與身體狀況不寫）、壓縮廠牌找上她的過程，回到 250 內；Palais Schaumburg「歐洲最早以取樣機為主要樂器之一」改「早期」；Paul Horn 的 Maharishi 譯名改台灣通用的「瑪赫西」；Peshay「影響最深」改「影響深遠」；Pete Namlook & Dr. Atmo「FAX 最早的 ambient 專輯之一」改「早期」。寫作層不寫 Pacific 231（只有曲風標籤）、Palomatic（只有一篇店家文案）。
+  - 保留：P-MODEL 的米津玄師受影響用「據稱」、今敏談平沢進（具名人物）；Paul Horn 2014、Paul Johnson 2021、Pauline Anna Strom 2020、Pete Namlook 2012 年過世；Daft Punk〈Teachers〉點名 Parris Mitchell、Paul Johnson；CTM 音樂節檔案談 Palais Schaumburg（機構）。
+  - out-2 審稿 5 處：Pinch「最早把這種聲音帶進 Bristol 之一」改「早期」；R. Carlos Nakai 刪車禍傷了嘴形一句（傷病）、「原住民音樂僅有的兩張金唱片」改為只寫《Canyon Trilogy》獲金唱片（在世者一處成績、刪「僅有」）；Reload 刪《76:14》「指標之作」（維基單源，且是另一名義）；Robert Owens「史上最偉大之一」改「經典」。另撤下 Quadra（手法句只寫到他其他名義 Kaito、Tread，Quadra 名義本身沒有手法）。
+  - 保留：RAM 的〈Fèy〉遭軍政府禁唱一句（唯一一句政治背景，與歌曲直接相關）；Pink Siifu《NEGRO》的主題（專輯主題）；Rico 2007 MBE 與 2015 年過世；Robert Miles 2017 年過世與排行冠軍（已故者不受在世者成績限制）；Bill Leeb 談 Portion Control（具名音樂人）。
+- 身分：預抓維基作廢——Paul Nagle（愛爾蘭拉力賽副駕駛）、Palais Schaumburg（波昂總理官邸）、RAM（荷蘭 trance DJ）。Photon Inc. 是 DJ Pierre 的化名（MusicBrainz、Discogs 一致）；Quadra 是 Hiroshi Watanabe（非同名攝影師）。P-MODEL 搜尋 9 次，overCapOk（第二源）。
+- 待本機（上線簡介）：Peace Orchestra 發行月份；Pépé Bradock「自營 Kif」與聯名副署查無；Peshay 1995 年空白的原因兩說，建議改中性；Pete Namlook & Mixmaster Morris「流通最廣」查無；R. Carlos Nakai 漏 RIAA 白金；R.N.A. Organism 卡帶寄送經過與 Wax Poetics／NTS 不合；Regis「第一張長篇」查無；Rico 出生地兩說；Robert Miles 全英音樂獎與五百萬張只見維基。

@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1235 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1248 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1191,6 +1191,19 @@
 | ar-d-090 | Octave One | The Living Key (To Images From Above) | 屬底特律第二代較內斂的一支 | 「較內斂」查無來源；Mixmag Asia 描述他們以硬體現場、粗礪的 909 聲音、在 techno 與 house、funk、soul 間移動見稱，並未稱為內斂。可改成只寫「底特律第二代」 | https://mixmag.asia/feature/the-accidental-genius-of-octave-one-detroit-techno-hong-kong-interview |
 | ar-d-090 | Overmono | Good Lies | 弟弟 Ed 以 Tessela 做 drum and bass | Loud and Quiet 稱 Ed 以 Tessela 做的是 breakbeat 取向的俱樂部曲（代表作〈Hackney Parrot〉，2013 年），jaegeroslo 的人物報導同樣沒有 drum and bass 的說法；建議改成 breakbeat 取向 | https://www.loudandquiet.com/members-lounge/overmono-interview/ |
 | ar-d-091 | Peace Orchestra | Peace Orchestra | 1999 年 9 月由兩人自營的 G-Stone Recordings 發行 | 英文維基專輯條目寫發行日為 24 August 1999（1999 年 8 月 24 日），與簡介的 9 月不同；本層只開到維基一源，建議主線用 Discogs 或 MusicBrainz 核對後再改。另『由兩人自營』指 Kruder 與 Dorfmeister 共同創立 G-Stone，無衝突。 | https://en.wikipedia.org/wiki/Peace_Orchestra_(album) |
+| ar-d-091 | Pépé Bradock | Burning | 1999 年在自營的 Kif Records 發行 | 維基與 RA 都只寫《Burning》由巴黎的 Kif Recordings 發行；RA 寫他自己的廠牌是 Atavisme（較晚期）。『自營』查無來源，建議改成『巴黎的 Kif Recordings』。 | https://es.ra.co/reviews/23971 |
+| ar-d-091 | Pépé Bradock | Burning | 掛 The Grand Brûlé's Choir 副署 | 維基與 RA 都沒有這個副署；本層查無來源，建議主線核對 Discogs 後決定是否保留。 | https://en.wikipedia.org/wiki/P%C3%A9p%C3%A9_Bradock |
+| ar-d-091 | Peshay | Miles From Home | 1995 年一場意外讓他近乎臥床兩年 | 維基寫 accident，Tru Thoughts 寫 illness（病）；兩源不一致，建議改成中性的『因故近兩年無法活動』。 | https://tru-thoughts.co.uk/artists/peshay/ |
+| ar-d-091 | Pete Namlook & Mixmaster Morris | Dreamfish | Namlook 生前在 FAX 累積上百張錄音，這組是其中流通最廣的一項 | 查無來源說《Dreamfish》是 FAX 流通最廣的作品；Red Bull 專文把 1993 年 3 月限量 500 張的《Air》當作 FAX 的 ambient 試金石。建議刪掉『流通最廣』或改成有來源的說法。 | https://daily.redbullmusicacademy.com/2018/11/fax-pete-namlook |
+| ar-d-091 | R. Carlos Nakai | Canyon Trilogy | 原住民音樂僅有的兩張金唱片都出自 Nakai，本作是其一 | 此作後來獲 RIAA 白金認證（Navajo Times 2015 年 1 月報導，稱是傳統音樂首例）；簡介只寫金唱片，已過時。白金一條目前只見 Navajo Times 單源（搜尋摘要另有 Trinity Music 頁寫 2014 年，未開頁），改稿前建議再核 RIAA 資料庫。 | https://navajotimes.com/reznews/r-carlos-nakais-canyon-trilogy-earns-platinum-status |
+| ar-d-091 | R.N.A. Organism | R.N.A.O Meets P.O.P.O | Bandcamp Daily 記三人把試聽帶寄到《Rock Magazine》才被注意到；帶子是從倫敦以航空郵件寄來的 | Wax Poetics 與 NTS 的說法是：卡帶（蓋倫敦郵戳）寄給 Vanity 創辦人阿木譲，他在自己主編的《Rock Magazine》上稱讚；據說是佐藤薫自己寄的偽裝。簡介『寄到 Rock Magazine』與『從倫敦寄來』兩處需改成『寄給 Vanity 的阿木譲，蓋倫敦郵戳，據說是佐藤薫所為』。Bandcamp Daily 原文本次未取得，建議主線核對。 | https://magazine.waxpoetics.com/article/penumbra-punk-tapes-synths-and-independent-music-in-1980s-japan |
+| ar-d-091 | Regis | Gymnastics | 《Gymnastics》是他名下第一張長篇 | 維基只把 Montreal EP 記為出道作、Gymnastics 記為 2x12 吋，未標示「第一張長篇」；查不到來源支持，建議改成「1996 年的雙 12 吋」或刪去「第一張」。 | https://en.wikipedia.org/wiki/Regis_(musician) |
+| ar-d-091 | Rico | Man from Wareika | 長號手 Emmanuel「Rico」Rodriguez 生於哈瓦那 | 出生地來源不一：英文維基與 Scotsman 訃聞（搜尋結果摘要）寫哈瓦那，FACT 寫 1934 年生於京斯敦；建議改成不點名出生地，只說在京斯敦長大。 | https://factmag.com/2015/09/07/remembering-pioneering-trombonist-rico-rodriguez |
+| ar-d-092 | Royal House | Can You Party | 把迪斯可與 hip hop 唱片切成短促的取樣塊，用取樣機硬接在四四拍鼓機上 | Terry 本人受訪說〈Party People〉是把現成 house 曲子拼成 megamix，並取樣朋友給的一捲混音帶（後來才知道是 Marshall Jefferson 的作品）；Line Noise 也指出取樣包括 Marshall Jefferson〈Move Your Body〉。取樣來源以 house 曲為主，『迪斯可與 hip hop 唱片』的說法缺乏來源。 | https://daily.redbullmusicacademy.com/2013/05/todd-terry-interview |
+| ar-d-092 | Ruth White | Flowers of Evil | 收尾的〈The Litanies Of Satan〉六分五十秒最長 | Helen Abbott 2015 年論文的曲目表列該曲 6 分 53 秒（全專輯 9 軌、約 33 分鐘），與簡介的『六分五十秒』差 3 秒；Transmediale 檔案頁寫全長 33:28。 | https://eprints.whiterose.ac.uk/88604/15/ABBOTT_Baudelaire |
+| ar-d-092 | SAB | Crystallization | 阿木譲 2018 年逝世後，《vanity records》一書的兩位作者逐一聯絡藝人取得許可，原盤權與母帶歸還藝人，2020 年的正式再發才成立 | hanabun 該文只把 Sab 列為《Vanity Box》第一彈的收錄藝人，全文沒有提到 Crystallization 或 SAB 在 2020 年重發；2020 年 4 至 12 月的重發是 Vanity 整體，無法證明包含 SAB。EM Records 的 2025 年重發也沒有說是 2020 年重發之後。『兩位作者』也不對：文中是 Nakamura Yasuyuki 與 Higashiseto 兩位聯絡藝人，書的作者共 5 位。 | https://hanabun.press/2021/08/06/vanityrecords01/ |
+| ar-d-092 | SAB | Crystallization | 他一人包辦合成器、鋼琴與電吉他 | Soundohm 與 EM Records 都寫另有兩位樂手參與器樂（弦樂、西塔琴、長笛）。 | https://www.soundohm.com/product/crystallization |
+| ar-d-092 | Sainkho Namtchylak | Stepmother City | 2000 年在義大利廠牌 Ponderosa Music & Art 發表此作（CD003） | Ponderosa 廠牌自家頁面把《Stepmother City》標為 2001 年；Rambles 評論與維基寫 2000 年。發行年份各處不一，簡介的『2000 年』未必錯，但廠牌官方寫法是 2001，建議主線核對。 | https://ponderosa.it/en/record/sainkho-namtchylak/ |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |
