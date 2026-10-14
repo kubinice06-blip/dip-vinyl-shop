@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1256 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1269 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1212,6 +1212,19 @@
 | ar-d-094 | TOKYO No.1 SOUL SET | Triple Barrel | TOKYO No.1 SOUL SET 的首張錄音室作 | 日文維基說他們在 1994 年轉江戸屋之前已在 Natsume 發過數張獨立作品，若其中有專輯，則《Triple Barrel》不是首張；本層沒查到 Natsume 時期的曲目與形式，待店主在本機核對 Discogs | https://ja.wikipedia.org/wiki/TOKYO_No.1_SOUL_SET |
 | ar-d-094 | Yanni | Live at the Acropolis | 替該台募得一千三百萬美元 | 開頁讀到的英文維基、WRAL、Encyclopedia.com 都沒有 1300 萬美元這個數字，也沒有說明是哪一台；唯一出處是 last.fm 的使用者維基，建議刪除或改成有出處的說法（例如『成為 PBS 最成功的募款節目之一』）。 | https://en.wikipedia.org/wiki/Live_at_the_Acropolis |
 | ar-d-095 | Ансамбль электромузыкальных инструментов п/у Вячеслава Мещерина | Easy USSR | Вячеслав Мещерин 1956 年創立這個合奏團 | WOMEX 與 The Sound Projector 寫 1957，Мещерин 個人條目（ru／en 維基）亦寫 1957；僅 ru 維基合奏團條目寫 1956（並稱 1958 取得正式編制）。待核，建議改 1957 或避開年份 | https://www.womex.com/virtual/eastblok_music/v_a/balkanbeats_vol_2 |
+| ar-d-095 | プラスチックス | WELCOME PLASTICS | プラスチックス 1980 年 1 月在 Invitation 推出的出道盤 | 日文維基寫レコードデビューは 1979 年，Billboard Japan 與 Qobuz 寫 1979 年已在 Rough Trade 發行單曲〈Copy/Robot〉；本作應稱「首張專輯」而非「出道盤」，且發行年各源不一（1979 或 1980），待核 | https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%A9%E3%82%B9%E3%83%81%E3%83%83%E3%82%AF%E3%82%B9 |
+| ar-d-095 | 伊藤詳 | Marine Flowers (Science Fantasy) | 他十九歲起有五年在東南亞與南太平洋諸島漫遊，1975 年組成被視為日本第一支進步搖滾樂團的ファー・イースト・ファミリー・バンド，1977 年因為關心音樂療法退團 | 此段全取自日文維基〈伊藤詳〉單源；Discogs 藝人頁與 Glossy Mistakes 重發說法（童星、Group Sounds、美軍基地伴奏，1945 年生）與之不符，身分疑似被維基與另一人（宮下文夫或同名者）混寫；ファー・イースト・ファミリー・バンド條目寫 1973 年成立、創辦人為宮下文夫與伊藤詳，且沒有『日本第一支進步搖滾樂團』的說法。建議簡介刪去這整段生平，改寫廠牌與唱片本身 | https://www.theransomnote.com/?p=35543 |
+| ar-d-095 | 北村昌士＋PHONOGENIX | Prologue for Post Modern Music | 他 1977 年創刊《FOOL'S MATE》並當首任總編輯 | 只有日文維基單源；Westside Spirit（2000 年前後的美國報導）寫他是 1979 年開始編輯該誌，兩源年份不同，建議簡介避開『1977 年創刊』或確認一手來源 | https://www.westsidespirit.com/news/japanese-indie-rocker-masashi-kitamura-KYNP1320000215302159982 |
+| ar-d-095 | 3rd Bass | The Cactus Album | Billboard R&B 榜第 5 名 | 英文維基 3rd Bass 條目寫的第 5 名是單曲〈The Gas Face〉在 Billboard Top Rap Singles 的最高位，專輯的 R&B 榜名次本層未查到來源；請在本機對 Billboard 榜單核對這一句，並同時核對 1990 年 4 月金唱片（MC Serch 條目標白金，兩處維基不一致）。 | https://en.wikipedia.org/wiki/3rd_Bass |
+| ar-d-095 | Above the Law | Livin' Like Hustlers | 〈Murder Rap〉與〈Untouchable〉雙雙拿下 Hot Rap Songs 冠軍 | 英文維基稱兩首只是 minor hits，本層查無榜單來源支持「雙雙冠軍」；請在本機對 Billboard Hot Rap Songs 榜核對。 | https://en.wikipedia.org/wiki/Above_the_Law_(group) |
+| ar-d-095 | AZ | Doe or Die | 銷量逾百萬張 | AllHipHop（2025）寫賣過 50 萬張並獲金唱片認證，BeatTips 寫 EMI 行銷力道不足、金唱片來得慢；找不到百萬的來源。上線簡介寫「登 Billboard 200 第 15」本層未核實（BeatTips 只寫 Top R&B Albums 第 1 名），建議本機一併核對。 | https://allhiphop.com/news/rapper-az-celebrates-30-years-of-doe-or-die-with-announcement-that-shocks-real-hip-hop-heads/ |
+| ar-d-095 | Bahamadia | Kollage | 3 月 19 日發行；DJ Premier 做〈Intro〉與〈Rugged Ruff〉 | Albumism 列 DJ Premier 的曲目為〈Rugged Ruff〉、〈3 The Hard Way〉、〈True Honey Buns〉，未列〈Intro〉；Blackout 稱 Premier 做五首。〈Intro〉的製作人本層未核實，建議本機對 Discogs／專輯內頁核對。發行日 3 月 19 日是資料庫通行日期，Bahamadia 本人主張街頭上架日為 4 月 2 日，可考慮改寫為「1996 年春」。 | https://albumism.com/features/bahamadia-debut-album-kollage-album-anniversary |
+| ar-d-096 | Booba | Temps mort | Élie Yaffa 在 Lunatic 拆夥後於 2002 年 1 月 22 日交出個人首作 | 英文與法文維基皆寫 Lunatic 2003 年才解散（Temps mort 在解散前出版），Afrik 則寫兩人在《Mauvais œil》後不久分開；來源不一，「拆夥後」的先後說法站不穩，建議改成不排時序。2002 年 1 月 22 日與法文維基吻合。 | https://fr.wikipedia.org/wiki/Booba |
+| ar-d-096 | C-Murder | Life or Death | 到 1999 年底售出逾兩百萬張 | XXL 與維基專輯頁的 RIAA 認證都是白金（1999 年 12 月 13 日），以 100 萬張為單位；搜尋摘要提到維基內文有「1999 年底逾 200 萬」的說法，但未見 RIAA 雙白金認證，兩百萬張的說法單源且與認證不符，建議改寫成白金認證。 | https://www.xxlmag.com/c-murder-life-or-death/ |
+| ar-d-096 | Camp Lo | Uptown Saturday Night | Sonny Cheeba 與 Geechi Suede 1995 年組成 Camp Lo | 維基 Camp Lo 條目寫 1995 年，XXL 轉載文寫 1994 年，來源不一致，建議改成不寫年份。 | https://hiphopnostalgia.com/2015/01/camp-lo-uptown-saturday-night-classic.html |
+| ar-d-096 | Control Machete | Mucho barato… | 1996 年的首作；西語維基記本作在墨西哥賣出十萬張、全拉美四十萬張 | 發行年各源不一（1996 錄音、1997 年 2 月或 7 月發行）；西語維基現版銷量寫法已改成六個月內 50 萬張，簡介的數字與引用已與現版不符，建議刪銷量或改成現版寫法，年份改核對後的版本 | https://es.wikipedia.org/wiki/Control_Machete |
+| ar-d-096 | Cormega | The Realness | 九〇年代中期是 The Firm 的一員……被踢出團後簽進 Def Jam，錄好的《The Testament》卻遭冷凍 | Qobuz（AllMusic 傳記）的順序是：1995 年出獄後先簽 Def Jam、錄《The Testament》，之後才在 The Firm 的規畫中被排除、換成 Nature；簡介寫成「被踢出團後簽進 Def Jam」，先後相反。另外他是「原本規畫的成員」，簡介寫「是 The Firm 的一員」建議改為被排除的規畫成員 | https://www.qobuz.com/ca-en/interpreter/cormega/114678 |
+| ar-d-096 | Cormega | The Realness | 獨立專輯榜第四 | 兩個來源（Qobuz、The Source）都寫登上 Top Heatseekers 榜第一，沒有「獨立專輯榜第四」的出處；請核對榜名與名次 | https://www.qobuz.com/ca-en/interpreter/cormega/114678 |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

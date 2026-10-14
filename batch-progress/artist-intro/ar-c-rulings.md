@@ -1426,3 +1426,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：Wamdue Project 英國冠軍、Visage 英國第 8 名、X-Press 2 的 Ivor Novello（各一處）；Anohni 談 Yazoo（具名音樂人）；Mandawuy Yunupingu 2013 年過世；Yothu Yindi 2012 年入選 ARIA 名人堂（官方）。
 - 身分：Ura Ura 與 Web 是同一人（杉本卓也），分寫；Transllusion 與 ar-d-093 The Other People Place 是同一人（James Stinson），分寫；預抓維基作廢——Total Eclipse（舊金山金屬團）、Web（Knuth 的程式系統）、Woo（雞尾酒）。主線特注寫的 Wamdue Project 成員 Roy Davis Jr／Gabriel Brann、Web 的 Fatcat 均查無來源，不收。
 - 待本機（上線簡介）：TOKYO No.1 SOUL SET「首張錄音室作」與日文維基不合；The Sabres of Paradise 報紙千大專輯查無；Vainqueur「Basic Channel 周邊最早的名字之一」查無；Yanni「替 PBS 募得一千三百萬美元」只見 last.fm 摘要，建議刪。
+
+## ar-d-095（2026-10-14）
+
+- 37 位上架（25 full、12 thin：Yutaka Hirose、伊藤詳、森下登喜彦、矢吹紫帆、越智義朗、Ab-Soul、Action Bronson、Ari Lennox、B.G.、Bahamadia、Billy Ocean、Black Milk）。2 位不寫：吉川洋一郎、永田一直（facts 只有身分、合作對象與廠牌事務，沒有聲音或具體手法）。
+- 前段是電子段尾（日文、希臘、蘇聯名），後段進入嘻哈段（3rd Bass～Black Moon）。
+- 搜尋超額：Yutaka Hirose 補洞多查 4 次（找第二源與 Misawa Home 委託細節），放行但**記為例外、不作先例**——同形狀下次超過 2 次就停查改 thin。
+- 審稿修 15 處：
+  - out-1 審稿 6 處：Λένα Πλάτωνος「最早主要仰賴合成器之一」改「較早以合成器為主力」；Чернавский/Матецкий Проджект「八〇年代蘇聯最重要的唱片之一」改「重要唱片」，並補一句補洞稿兩源的聲音評語（讓晚期蘇聯搖滾輕快好玩，評論者匿名）；北村昌士＋PHONOGENIX 刪「據說是首任總編輯」（創刊年與職稱兩源衝突）；ハナタラシ 刪綽號由來的病名、「最早的形態」改「早期」。
+  - out-2 審稿 9 處：高田みどり 刪在世者播放次數；3rd Bass「最早成功的跨種族嘻哈團體之一」改「早期」；Action Bronson 刪腿傷；Ari Lennox「Dreamville 第一位女藝人」改「後來簽進 Dreamville」；AZ「最被低估之一」改「被低估」；Bahamadia「最早讓費城饒舌獲國際認可之一」改「早期 MC」；Beenzino 刪下載次數（在世者第二項成績）；Big Pun「第一張 RIAA 白金的拉丁裔獨唱嘻哈專輯」改「早期拿下白金」。
+  - 保留：Biz Markie 1991 年取樣官司一句（中性背景，交代取樣授權制度與製作手法的轉變，本批裁定放行；其他人的官司仍不寫）；Outkast 2025 年入選搖滾名人堂（官方，補洞稿兩源）；Betty Wright 2020、Big Pun 2000、Biz Markie 2021、芦川聡 1983 年過世；Arrested Development 葛萊美兩座（同一屆，算一處）、Beenzino 韓國大眾音樂獎、Billy Ocean 葛萊美（各一處）；Chernavsky 2025 年過世未寫入。
+- 寫作層疑點處理：Чернавский/Матецкий 與北村昌士缺電子手法，前者補評語、後者以 YBO² 力量三重奏編制為具體路數，照收；3rd Bass 聲音句只到製作陣容，照收（full 其他材料足）。
+- 待本機（上線簡介）：Mescherin 合奏團成立年 1956／1957 不一；プラスチックス 出道年不一；北村昌士《FOOL'S MATE》創刊與就任年兩源不一；伊藤詳 生平敘述來源互相矛盾，建議刪；3rd Bass 榜位與金唱片敘述待核；Above the Law「饒舌榜冠軍」查無；AZ 銷量數字待核；Bahamadia〈Funk Vibe〉／《Kollage》製作人與日期不一。
