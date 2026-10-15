@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1312 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1315 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1268,6 +1268,9 @@
 | ar-d-101 | 勞動服務 | 海島聲事 | 最長的兩軌一樣長（〈鹽分地帶〉5:12 等），各軌長度落在 3:01 到 5:12 | 團方 Bandcamp 列的各軌長度與簡介相差 1 至 3 秒（〈鹽分地帶〉5:10、〈阮住佇艋舺〉4:11、〈坪仔田〉2:59、〈核邪〉4:35、〈眉溪四庄的過年〉4:45），且最長的〈鹽分地帶〉5:10 與次長的〈老佛山傳奇〉5:09 並不等長，「最長的兩軌一樣長」與範圍「3:01 到 5:12」可能是 CD 版與數位版秒數不同；需對照實體 CD 的曲目長度再決定是否改。 | https://communityservicetw.bandcamp.com/ |
 | ar-d-101 | 夜貓組 | 健康歌曲 | 這是這個組合至今唯一一張錄音室專輯 | Marie Claire 的報導稱夜貓組「發行過兩張專輯」，未列專輯名稱與年份，可能是計入了其他專輯或簡介已過時；需查顏社目錄確認夜貓組是否另有專輯後再決定要不要改這句。 | https://www.marieclaire.com.tw/entertainment/story/45206 |
 | ar-d-102 | Andrew Lloyd Webber & Tim Rice | Evita | 概念專輯由 Andrew Lloyd Webber 與 Tim Rice 共同製作 | 維基《Evita (album)》頁的措辭是兩人合寫、Rice 製作（The album ... written by Lloyd Webber and Rice, who produced it），製作署名待核；若店主在本機改簡介，建議改成「由 Tim Rice 與 Andrew Lloyd Webber 創作」較保險 | https://en.wikipedia.org/wiki/Evita_(album) |
+| ar-d-104 | Cortot / Thibaud / Casals | Beethoven: Archduke Trio / Schubert: Piano Trio D 898 | 最後一場是 1933 年 5 月 13 日在史特拉斯堡 | 另一說法（古典樂譜商頁面引 Tully Potter）稱三重奏最後聯合演出是 1934 年 3 月 27 日 Fiesole；上線簡介採英文維基引註，尚不能說錯，但兩說不一，建議店主改成不寫最後一場日期（只搜尋摘要，未開頁，信心低） | https://schubertiademusic.com/products/9758-casals-trio-cortot-alfred-1877-1962-thibaud-jacques-1880-1953-casals-pablo-1876-1973-autograph-signatures |
+| ar-d-104 | Domus | Fauré: Piano Quartets | 這是 Domus 的第一張唱片 | 兩個 Hyperion 頁面（藝人頁與唱片頁）都沒有寫這是團的第一張唱片；搜尋摘要稱 Susan Tomes 的 Apple Music 簡介說是首錄，但實際開頁沒有該段；『第一張』無開頁來源證實，建議店主複核或改寫成『1985 年錄下的 Fauré 鋼琴四重奏』。 | https://www.hyperion-records.co.uk/a.asp?a=A755 |
+| ar-d-104 | Domus | Fauré: Piano Quartets | 巡演用的音樂廳是一頂帳篷 | Hyperion 藝人頁的原話是白色測地線圓頂，沒有『帳篷』；簡介同句稍後已寫圓頂，建議把『帳篷』改成『圓頂』以免前後不一。 | https://www.hyperion-records.co.uk/a.asp?a=A755 |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

@@ -1563,3 +1563,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 店主 2026-10-15「新增二十批」。排隊中只剩 ar-d-104～116（13 批、485 位，全為古典段）；另 7 批從卡池「不在名冊」的藝人補切（2026-10-15 盤點：卡池 19,121 張的藝人中，不在名冊也沒有介紹的 554 位，爵士 518、流行 15、搖滾 9、民謠 7、其他 5）。補進名冊照 2026-10-13 先例（tier D、`addedBy` 標批名、shard null），本輪只切 7 批（約 280 位），其餘留下一輪。
 - PR #80 照 2026-10-14 店主指示退訂，不再盯 PR；接力期間的自我 check-in 照「接力任務」節保留。
 - 名冊補登：`batch-progress/artist-intro/backfill-20261015.mjs` 以 seed_cards.json 對名冊與已上線介紹取差集，554 位補進名冊（tier D、`addedBy` add-20261015-backfill、shard null；mainGenre 取卡片首類型的多數；collab 按 `&`／`and`／`with`／`feat.`／逗號／斜線判定，Spick & Span、Medeski Martin & Wood、Marty & Mystics、Paul Jackson, Jr. 手動改回 false）。排序照切批規則（爵士先、卡數多的先），切 ar-d-129～135 七批 280 位（Gonzalo Rubalcaba … John Kaizan Neptune / 直居隆雄），剩 274 位留下一輪。領隊與編制掛名（Stefano Di Battista vs Stefano Di Battista Quintet 等）照伍佰先例分開寫。
+
+## ar-d-104（2026-10-15）
+
+- 40 位全上架（36 full、4 thin：賴德和、Diabolus in Musica、Elaheh／Shajarian／Shahnaz、Ellen Arkbro），無不寫。
+- 古典段 C 至 E 字頭；Elmo Hope Sextet 卡池歸古典，照爵士寫。合作掛名卡（Cortot 三重奏、Oistrakh 父子、Oistrakh & Oborin、Fischer-Dieskau & Moore、Schwarzkopf & Fischer-Dieskau）用 251–280 字額度、各人分寫，跨卡同構段落已錯開。
+- 搜尋超額：無。
+- 審稿修 21 處：
+  - out-1 審稿 8 處：Cortot 三重奏「最重要」改「極重要」；Danish String Quartet 刪「Sonning 第一次頒給樂團」（頒獎單位自述）；Zinman「史上商業上最成功之一」改「極為成功」；Dennis Brain「最知名」改「極負盛名」；Fischer-Dieskau & Moore「最重要之一」改「極重要」；Mitropoulos「獨奏者病倒」改「臨時無法上場」並刪一句壓字數；Earl Wild「最後的偉大浪漫派之一」改「延續浪漫派傳統的名家」。
+  - out-2 審稿 13 處：Edo de Waart「最大的遺產」改「重要遺產」；Edwin Fischer「最偉大之一」改「極重要」；Rautavaara 刪幼年喪父喪母、「最重要之一」改「極重要」；Schwarzkopf「最偉大的女高音之一」改「極受推崇」；Emahoy 單卡 272 字超出 250，刪三處壓到 248；Emilie Mayer 刪「父親過世後」；Emma Kirkby 刪頒獎詞「最有力的推動者之一」；Tüür「最受歡迎之一」「最具代表性之一」改「大受歡迎」「代表作」。
+  - 保留：Đặng Thái Sơn「第一位贏得蕭邦大賽的亞洲人」、Edwin Fischer「第一套《平均律》完整錄音」、Jacquet de La Guerre「法國第一部女性歌劇」屬通行事實（照 Van Cliburn 先例）；在世者各一處（Trifonov、Lang、杜韻、DSQ、de Waart、Kirkby、Pahud、Ensemble Modern）；Feuermann 引 Artur Rubinstein（具名音樂人）；越南國籍限制出國、納粹解職、《第七號》抵抗象徵（歷史背景各一句）。
+- 待本機：Cortot / Thibaud / Casals 簡介最後一場日期兩說（建議不寫日期）；Domus 簡介「第一張唱片」查無、「帳篷」應為「圓頂」；賴德和《樂典03》卡池 1987 疑誤（樂典系列約 2009–2012）；Shostakovich plays Shostakovich 1958 版本待確認；David Tudor《Rainforest》卡池 1981 為錄音年（作品 1968）、Earl Wild 卡 1966（錄音 1965）。
