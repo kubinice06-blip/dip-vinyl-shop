@@ -1707,3 +1707,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-2 5 處：Keating（在世）刪舞台恐懼與 iTunes 買房、串流收入；Theodorakis「最知名」改「極知名」；早坂文雄「最重要的老師」改「重要」；盛岡夕美子補空格。
   - 保留：林尹燦影片觀看數補洞層列必要例外，主線裁定不寫（在世者串流類規則優先）；李雲迪 2021 年案件、Bashmet 政治立場、すぎやま政治發言、Theodorakis 反猶爭議一律未寫；Růžičková「被稱為第一位錄全套巴赫鍵盤作品」；Mengelberg 戰時合作、俞麗拿文革下放、周龍文革下鄉、Guller 躲藏、Růžičková 集中營、Theodorakis 軍政府禁樂各一句；在世者各一處。
 - 待本機：俞麗拿《梁祝》1993、李雲迪 2001、曾宇謙 2012、Guller 1956 卡池專輯對應未證實；Bashmet Schnittke 卡 1991 vs 1988；林尹燦 Rach 3 卡 2022 vs 2025 Decca 發行；Francescatti 卡 1949 搭檔年份未給；Dagar 上線簡介「修車廠與賣麵包 25 年」單源（pubIssues 1）；天野正道上線簡介 OVA 發售日待核；digest 把 Giant Robo 誤作《巨神 Gorg》、《排球女將》對應待查。
+
+## ar-d-129（2026-10-15）
+
+- 40 位全上架（32 full、8 thin：山中千尋、深町純、MALTA、Manhattan Jazz Quintet、カリオカ、益田幹夫、Cæcilie Norby、Native Son），無不寫。名冊補登批（add-20261015-backfill）第一批，爵士為主。
+- 同名混卡已棄：MALTA（馬爾他）、Benny Green（英國薩克斯風手）、José James（同名薩克斯風手）。鈴木勲的 Blakey 說法疑混淆鈴木良雄，不寫。
+- 搜尋超額：Air（g4）超 1 次，開專輯條目讀具名評語，放行。
+- 2025–26 事實：Immanuel Wilkins 2026 年入選 MacArthur Fellows——補洞第二源偏弱（NYU 新聞稿只見標題），主線 WebSearch 再核：Philadelphia Inquirer、AP 2026 名單（WECT／AJC 轉載）一致，照收一處。Bill Frisell 2026《In My Dreams》兩源皆 Blue Note 自家頁，只寫編制。
+- 審稿修 15 處：
+  - out-1 7 處：Rubalcaba、Ron Carter、Alsmann「最…之一」改「極…」；Rubalcaba 刪 Gillespie 抬棺；Reeves 刪兩歲喪父；Rosnes 刪生父母與領養、「多次獲 Juno」改「曾獲」；Manhattan Jazz Quintet 刪銷量。
+  - out-2 8 處：本多俊之刪「父親到過世都沒認可」、「無人能出其右」改寫（初改「獨樹一格」撞禁語，再改「辨識度極高」）；阿川泰子刪離開演藝圈的私人原因；Don Byron 刪童年氣喘、三項獎只留普立茲入圍；Patricia Barber 刪院士只留古根漢；NANIWA EXPRESS 刪單源「最成功之一」。
+  - 保留：Blanchard「大都會首部黑人作曲家歌劇」（通行事實）；Ron Carter 金氏紀錄、Oosterhuis 荷蘭專輯榜冠軍（在世者核心一處、兩源）；Wilkins《Omega》題材；具名音樂人評語。
+- 待本機：Erik Truffaz 上線簡介 2 條（Blue Note 簽約年、金唱片歸屬）、Stanley Jordan 上線簡介五軌／六軌自相矛盾、鈴木勲上線簡介 Blakey 說法單源（pubIssues 共 4）。

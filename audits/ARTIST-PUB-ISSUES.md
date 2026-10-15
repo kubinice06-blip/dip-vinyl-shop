@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1333 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1342 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1337,3 +1337,12 @@
 | ar-d-127 | Mocca | My Diary | 《My Diary》的銷量將近 15 萬張 | 只有英文維基寫『估計約 15 萬張，是 2000 年代印尼最暢銷的獨立專輯』，屬單源估計值，找不到第二源；建議改成『據估計』或刪去數字 | https://en.wikipedia.org/wiki/Mocca_(band) |
 | ar-d-127 | Fridge | Happiness | Fridge 成團於 1995 年 | 維基與 Wikidata 為 1995 年，RA 2023 年重發評論寫 1996 年，兩說並存；年份是否保留請店主斟酌，改成『1990 年代中期』最穩。 | https://ra.co/reviews/35511 |
 | ar-d-127 | Houses | A Quiet Darkness | 德州的 Sonic Ranch Studios 包辦錄音與混音 | 維基寫錄音含加州 Desert Center 廢棄房屋、學校、小屋的田野錄音，Sonic Ranch 是『完成』專輯之處；『包辦錄音』可能說過頭，建議改為『在德州 Sonic Ranch 完成』或查 Discogs 製作名單再定 | https://en.wikipedia.org/wiki/Dexter_Tortoriello |
+| ar-d-129 | Erik Truffaz | Rollin' | 2000 年簽進這個廠牌 | 上線簡介沿用 Blue Note 官網簡介的 2000 年簽約說；但維基與已上線的《Out of a Dream》《The Dawn》《Bending New Corners》簡介顯示 1997–1999 年已在 Blue Note 發片，瑞士聯邦文化局新聞稿也記《Bending New Corners》為 1999 年 Blue Note 專輯，2000 年簽約的說法與之矛盾，建議改為不寫簽約年。 | https://musikzeitung.ch/en/?p=44583 |
+| ar-d-129 | Erik Truffaz | The Walk of the Giant Turtle | 前一張四重奏盤在法國賣到十萬張的金唱片 | 維基只寫《Bending New Corners》（1999）是法國 Silver Album；本張的前一張是《Mantis》（2001），並非《Bending New Corners》。需核對金唱片的專輯歸屬與認證層級。 | https://en.wikipedia.org/wiki/Erik_Truffaz |
+| ar-d-129 | Stanley Jordan | Magic Touch | 九軌裡有五軌只有一把電吉他 … 六軌只有他的電吉他 | 同一則簡介前後自相矛盾：五軌 vs 六軌；事實庫引 jazzdisco 為六軌純獨奏、其餘三軌各配一組節奏，應統一為六軌。 | https://en.wikipedia.org/wiki/Magic_Touch_(Stanley_Jordan_album) |
+| ar-d-129 | 鈴木勲 | My Spare Time | 鈴木勲 1970 年被來日的 Art Blakey 挖進 Jazz Messengers | 只見 ja 維基單源；en 維基列 1969–71 旅居紐約的合作者卻無 Blakey；同名貝斯手鈴木良雄才是明確在 Blakey Jazz Messengers 的人（Live Spot Rag 條目）。建議改寫為『1970 年前後旅居紐約』或查第二源。 | https://en.wikipedia.org/wiki/Isao_Suzuki |
+| ar-d-130 | Out of the Blue | O.T.B. | 六重奏是 Blue Note 1985 年才組起來的 | Blue Note 藝人頁與英文維基皆寫樂團 1984 年成立（錄首作是 1985 年 6 月）；『1985 年才組起來』與來源不符，建議改成『1984 年組成』或只寫 1985 年錄音。 | https://www.bluenote.com/artist/out-of-the-blue/ |
+| ar-d-130 | 向井滋春 | A Head Wind | 1975 年那一年他拿下新宿ジャズ賞 | 年份兩說：Nippon Columbia 官方頁寫 1974 年，Last.fm／3rd-in 搜尋摘要寫 1975 年；建議改成不帶年份或本機再核 | https://columbia.jp/j-digs/artists/shigeharumukai.html |
+| ar-d-130 | Joe Chambers | Samba de Maracatu | 2021 年 1 月 15 日發行的九軌 | 1 月 15 日是 Blue Note 官網的宣布稿日期，專輯實際發行日是 2021 年 2 月 26 日（官網網址 out-feb-26，且事實庫 Apple Music releaseDate 為 2021-02-26） | https://www.bluenote.com/joe-chambers-samba-de-maracatu-out-feb-26/ |
+| ar-d-130 | Joe Chambers | Samba de Maracatu / Dance Kobina | 掛自己名字的首作要等到 1998 年的《Mirrors》 | 照字面讀會變成他的領班首作是 1998 年；維基記他 1974 年就以《The Almoravid》首度以領班身分錄音，應限縮成「掛自己名字的第一張 Blue Note 碟」 | https://en.wikipedia.org/wiki/Joe_Chambers |
+| ar-d-130 | Joe Chambers | Mirrors / Samba de Maracatu / Dance Kobina | Mirrors 寫 1999 年出版，另兩張寫 1998 年的《Mirrors》 | 三篇上線簡介對《Mirrors》年份說法不一（1999 對 1998），需統一；事實庫的廠牌與日版原壓日期指向 1999 | https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-01-16.pdf |
