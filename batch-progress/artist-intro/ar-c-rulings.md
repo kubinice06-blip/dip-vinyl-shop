@@ -1619,3 +1619,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-2 12 處：Lhévinne、Kraus、Bream、Katchen（Decca 語）、Kander & Ebb、Leister & Amadeus 的「最…之一」改「極…」；Saint-Georges「第一位」改「早期」、刪「歐洲第一支非白人部隊」；Björling 刪「父親過世後」；Szymanowski 刪膝疾免役；Münchinger 刪單源「歐洲最主要 Bach 詮釋者」；Kander & Ebb（Kander 在世）刪東尼獎座數、入圍數與甘迺迪中心榮譽，只留《Cabaret》東尼獎。
   - 保留：Björling 1999 樂評人票選第一名（必要例外，不寫媒體名）；朱宗慶「被稱為台灣第一支專業打擊樂團」（官方自述，以「被稱為」呈現）；Harvey 過世時 BBC Radio 3 負責人語（官方機構）；Lhévinne 一戰受困、Kraus 國王遇刺、Krips 德奧合併被禁、Leister & Amadeus 拘留營各一句背景；具名音樂人（Schoenberg、Brian Eno、Petri、Glenn Gould、Anton Rubinstein、呂紹嘉、Horowitz、Emanuel Ax、Pavarotti）；在世者各一處。
 - 待本機：Jerusalem Quartet 卡池推斷為 2007 Harmonia Mundi；McCormack《McCormack in Song》疑為選輯；Hofmann《Casimir Hall Recital (1938)》版本未核；Krips 1958 樂團單源（LSO）；Kate Soper《Romance of the Rose》卡 2023 為舞台首演、唱片 2024；Eastman《Femenine》卡 1974 為演出年、2016 首次錄音發行；Serrat 上線簡介 pubIssues 2 條（封殺年數、TVE 票選）。
+
+## ar-d-109（2026-10-15）
+
+- 40 位全上架（36 full、4 thin：Kayhan Kalhor, Brooklyn Rider、Kremerata Baltica、La Venexiana、Marc Coppey），無不寫。
+- 古典段 K 至 M 字頭；多名卡放寬：Leonard Bernstein & Stephen Sondheim 279、三大男高音 256（三人分寫）。Kenneth Gilbert 預抓維基為英國演員，改照加拿大大鍵琴家寫；Mannheim Steamroller 卡池歸古典，照新世紀樂團寫。
+- 搜尋超額：三大男高音（g4）多 3 次查三位歌手各自出身與聲音，比照「第二源」放行。
+- 2025–26 事實：Liza Lim 2026 年 Grawemeyer 獎（補洞兩源），照收一處。
+- 審稿修 18 處：
+  - out-1 10 處：Kashkashian 刪 Edison Prize（維基＋bach-cantatas 近單源）；Tennstedt 刪手指受傷；Tennstedt、Zimerman、Penderecki、La Monte Young、Lalgudi 的「最…之一／最早」改「極…／早期」；Masur 刪二戰被徵召傘兵、刪德國總統悼詞（政治只留 1989 萊比錫一句）；Melchior「生病的女高音」改「代唱」。
+  - out-2 8 處：Kogan、Boulanger（姊姊）、Tertis、Lehmann、Harrison、三大男高音（史上銷量最高）的「最…」改「極／早期」；Boulanger 刪童年喪父、馬水龍刪父親過世；Kraus 刪「休養」；Harrison 刪「與伴侶」；三大男高音刪 Carreras 白血病基金會（暗示病況）。
+  - 保留：Boulanger「第一位獲羅馬大獎作曲首獎的女性」（通行事實）；Morlot 只寫樂團與 Adams 得獎，未寫成本人；Mannheim Steamroller〈Convoy〉Hot 100 榜首（故事核心，必要例外）；Melnyk 每秒 19.5 音（必要例外）；Kalhor《Silent City》題材、Kraus 爪哇拘禁、Tennstedt 離開東德、Slatkin 9/11 後 Proms 各一句；具名音樂人與人物（Zakir Hussain、Menuhin、Gilels、Toscanini、Colin Davis、Schumann、甘地、Nehru）；在世者各一處。
+- 待本機：Gilbert 卡 1971 查無版本；Flagstad《Wesendonck Lieder》、Kondrashin《Babi Yar》1980、Te Kanawa 卡池版本未核；Berman《Années de pèlerinage》1977、Masur Mendelssohn 1972 未開專輯頁；Mannheim Steamroller《Fresh Aire》上線簡介 pubIssues 1 條（SESAC 年度作曲人）。
