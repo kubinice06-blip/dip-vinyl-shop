@@ -1653,3 +1653,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-2 8 處：Parissa & Dastan 兩處、O'Dette、Pérotin「最…」改「極…」；Mauriat 刪「Telstar 之後第一首登頂器樂曲」；O'Dette「每卷都獲 Diapason d'Or」、Vasks「三度獲」改為不帶數字；Penguin Cafe Orchestra 單一團名卡 268 字，刪 reel 翻奏句壓到 246。
   - 保留：辻井伸行天生全盲與靠耳朵學曲（比照 Walcha，做法核心）、「Van Cliburn 第一位日本籍金牌」（通行事實）；Penguin Cafe 創團傳說（據說）；Pérotin「最好的 discant 作曲者」為 13 世紀文獻原句；Roslavets 遭壓制、Parissa 革命後禁演、Vasks 信仰受壓制各一句；在世者各一處。
 - 待本機：Oistrakh 四人卡上線簡介 pubIssues 3 條（Richter 公開否認、魯道夫大公題獻、敗筆說）；Panocha 上線簡介成團年（1966 三重奏／1968 四重奏）、Mauriat 金唱片無源；Pears & Bream 卡池 1956 為 Decca、Bream 以吉他伴奏；Peter Serkin 卡 1996、RCA 實為 1997；Vasks 卡 1997 為《Distant Light》首演年、Teldec 1999；Badura-Skoda 卡池推定 Astrée 古鋼琴版。
+
+## ar-d-112（2026-10-15）
+
+- 40 位全上架（34 full、6 thin：Pierre Dervaux、Poppy Ackroyd、Rachel Podger、Ramnad Krishnan、Rebecca Saunders、Rein Rannap），無不寫。
+- 古典段 P 至 R 字頭；多名卡放寬：Ravi Shankar & Philip Glass 273、Rubinstein / Heifetz / Feuermann 259（補洞標 thin，寫作以多名卡寫成 full）。Rachel Grimes、Robert Shaw 預抓維基同名混卡已棄。
+- 搜尋超額：Shankar & Glass（g2）、Crespin、Muti（g3）各超 1 次，放行（第二源／齊豫先例）。
+- 2025–26 事實：Roger Norrington 2025-07-18 過世，補洞多源一致（維基、Classical Music Daily、OperaWire、Symphony），只寫年份。
+- 審稿修 26 處：
+  - out-1 15 處：Sarde、Fournier、Schaeffer、Domingo、Lupu、Shankar & Glass、Kell 的「最…／最早之一」改「極／備受／早期」；陳必先刪 Joyce Hatto 造假事件（他人刑事類爭議）改寫重錄；Fournier 刪小兒麻痺；Kirkpatrick 刪單源評價與晚年失明；單一名卡超 250：Ram Narayan 刪電台試音軼事、Clarke 刪「最早一批女性樂手」與壓縮四處。
+  - out-2 11 處：Rannap、Scotto、Muti、Désormière、Ponselle、三重奏卡三處、Firkušný 的「最…」改「極…」；Bonynge「指揮病倒」改「無法上台」；三重奏「早逝」改「過世」。
+  - 保留：Clarke「Stanford 第一位女性作曲學生」（通行事實）；具名音樂人評語（Menuhin、Uchida、Harrison、Toscanini、Muti、Glenn Gould、Barbara Hannigan、Poulenc、Cortot）；Zukerman 父母大屠殺倖存者、Feuermann 遭納粹解職、Firkušný 出逃各一句；在世者各一處。
+- 待本機：陳必先《郭德堡》1985 錄、卡 1988（另有 2001 重錄）；Fournier 貝多芬 1965 錄、卡 1966；Zukerman 貝多芬 1971–73；Muti《Cherubini: Requiem》1975 版本與調性未確認；Rannap 上線簡介「最早發行品」誤（Ruja 1979 EP）；Bonynge《霍夫曼》上線簡介「原始設想」無源；Ram Narayan 上線簡介 1956 獨奏好評無源；Désormière《Pelléas》上線簡介錄音月份待核；Norrington、Tureck、Ponselle、三重奏卡池版本年份未核。
