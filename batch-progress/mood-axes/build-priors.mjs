@@ -2,7 +2,7 @@
 // 這是 MOOD_ENERGY_PLAN §3 三層產線的第一層（先驗），不是最終座標；音訊層、模型層之後會覆蓋。
 //   1. 每個子曲風標籤一組 (x, y, z)（下方 TAG 表，主線人工定）；卡片取所有標籤平均，沒有子曲風就用主曲風。
 //   2. 硬蕊度（舊三軸 accessibility）微調質地與色溫——104 張錨點量到 y～硬蕊 0.62、z～硬蕊 −0.61。係數用錨點最小平方擬合。
-//   3. 模型評分（score500/scored-500.json，有就用）蓋過先驗；104 張錨點再蓋過一切。來源碼：0 先驗、1 錨點、2 模型評分。
+//   3. 模型評分（score500／score3000 的 scored-*.json，有就用）蓋過先驗；104 張錨點再蓋過一切。來源碼：0 先驗、1 錨點、2 模型評分。
 //   4. 同標籤的卡會疊成一點，加 ±0.15 的確定性抖動（依卡鍵雜湊），只為了星圖看得出是一群。
 // 用法：node batch-progress/mood-axes/build-priors.mjs   → 寫 data/mood/card-moods-v0.json
 import fs from 'node:fs';
@@ -64,7 +64,8 @@ const subKey = (a, b) => a + '|' + b;
 
 const rows = seed.map(r => ({ artist: r[0], album: r[1], acc: r[4], genres: r[5] || [], id: idOf(r[0], r[1]), sk: subKey(r[0], r[1]) }));
 const anchorById = new Map(anchors.anchors.map(a => [idOf(a.artist, a.album), a]));
-let scored = []; try { scored = JSON.parse(fs.readFileSync(R('./score500/scored-500.json'), 'utf8')); } catch {}
+let scored = [];
+for (const f of ['./score500/scored-500.json', './score3000/scored-3000.json']) { try { scored.push(...JSON.parse(fs.readFileSync(R(f), 'utf8'))); } catch {} }
 const scoredById = new Map(scored.map(s => [s.id, s]));
 
 // 擬合硬蕊度係數：殘差 = 錨點 − 子曲風先驗，對 (acc−3) 做無截距最小平方
