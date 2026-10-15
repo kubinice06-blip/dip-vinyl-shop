@@ -1729,3 +1729,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 審稿修 7 處：Lage「最早慧之一」改「極」；Aga Zaryan 刪「第一位簽 Blue Note 的波蘭音樂人」只留 Fryderyk；McFerrin 刪 Hot 100「唯一無伴奏冠軍曲」只留 NEA；Jannah「兩度獲 Edison、最高榮譽之一」改「曾獲」；Johnathan Blake 刪 2025 單源新作並壓縮成 thin。
   - 保留：Geri Allen「Jazzpar 第一位女性得主」、McFerrin 父親「第一位登上大都會的非裔男歌手」（通行事實）、弘田三枝子「據報導首位登上新港」；具名評語。
 - 待本機：Out of the Blue 上線簡介「1985 年組起」誤（1984）；向井滋春上線簡介新宿ジャズ賞年份兩說；Joe Chambers 上線簡介 3 條（發行日、首作年、《Mirrors》年份）；Kevin Hays 上線簡介「首張領班盤」誤；Marlene 上線簡介來日年齡不一（pubIssues 共 7）。
+
+## ar-d-131（2026-10-15）
+
+- 40 位全上架（33 full、7 thin：Pieces of a Dream、Prism、Steps、Wha-ha-ha、99.99、Bennie Wallace、Gianluca Petrella），無不寫。名冊補登批第三批，爵士為主。
+- 多名卡放寬：Charles Lloyd & The Marvels 276、George Russell & The Living Time Orchestra 279。Prism 寫樂團（森園勝敏個人卡在 ar-d-130）；Doky Brothers 以兄弟檔為主、不重複 Chris Minh Doky 個人卡。
+- 搜尋超額：Ben l'Oncle Soul（g3）超 3 次，查 Victoires 類別與白金第二源，比照盧律銘先例放行（偏多，記此）。
+- QA 處理：村岡實 facts「厚生年金会館」被判簡體，主線改正體「會館」。
+- 審稿修 9 處：Meshell 刪「維基百科稱」與父母過世遺物；Musica Nuda「病倒」改「無法上台」；Fresu Quintet、Paul Jackson Jr.、Domínguez（評審語）「最…」改「極…」；Trio Töykeät 刪「第一支在總統府演出」；村岡實「最早」改「早期」；Gare du Nord 刪荷蘭專輯榜 100 週；Russell「唯一原創的理論」改寫。
+  - 保留：99.99 thin 以製作分工與吉他換名作做法句（勉強過門檻）；具名評語（James Taylor、Wynton Marsalis、Chucho Valdés、Grover Washington Jr.）；在世者各一處。
+- 待本機：Musica Nuda 上線簡介「第五張錄音室專輯」無源、Rick Margitza 上線簡介「Miles 聽完卡帶」無源（pubIssues 2）；Bob Dorough NEA 爵士大師 facts 記 2019、本人 2018 過世，年份待核。
