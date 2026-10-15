@@ -17,7 +17,7 @@ export const A = [
 ["鄧麗君 Teresa Teng|淡淡幽情",2.0,-1.3,1.0,"calm","宋詞譜曲，弦樂與嗓音都輕柔"],
 ["Miles Davis|In a Silent Way",1.8,-0.6,-0.3,"still","電鋼琴與管樂慢慢展開，空間大、略冷"],
 ["Elliott Smith|Either/Or",2.3,-1.0,-0.6,"still","雙軌人聲與木吉他，輕但憂鬱偏涼"],
-// 要死不活 languid
+// 慵懶 languid（2026-10-15 前叫「要死不活」）
 ["Pole|2",1.6,1.8,-1.2,"decay","黑膠劈啪雜訊壓在深沉 dub 低音上，慢而糊"],
 ["Pole|1",1.5,1.9,-1.4,"decay","壞掉的濾波器做成的 dub，低頻厚、極冷"],
 ["Basic Channel|BCD",2.6,1.6,-1.3,"decay","dub techno：拍子穩但被殘響淹沒，催眠"],

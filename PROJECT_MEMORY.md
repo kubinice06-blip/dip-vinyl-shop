@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-15｜dip-vinyl-shop｜情緒八格「要死不活」改名「慵懶」；星圖封面縮到跟星星一樣小
+
+- **改動**：店主裁定靜重暖格改名「慵懶」（id `languid` 不變，座標門檻不動）：`build-anchors.mjs` 名稱表、`starmap-lab.html`、`score500/BRIEF.md`、`MOOD_ENERGY_PLAN.md`、`MOOD_SCALE_PLAN.md` 改名，anchors-v1／priors／scale／merge 四個產出重跑（分布不變）。舊紀錄與 add-20261014 引用店主原話者保留。星圖原型飄的封面改 6–18px、上限 400 張、無封面者純色小方塊，重新發布（Version 10）。
+- **主要檔案**：`batch-progress/mood-axes/{build-anchors.mjs,anchors-src.mjs,anchors-v1.json,priors-v0-report.json,scale-v0-report.json,rulings.md}`、`batch-progress/mood-axes/score500/{BRIEF.md,merge-report.json}`、`data/mood/{card-moods-v0.json,scale-v0.json}`、`starmap-lab.html`、`MOOD_ENERGY_PLAN.md`、`MOOD_SCALE_PLAN.md`
+- **驗證**：build-anchors 104/104 零落差；repo 內只剩歷史紀錄與店主原話引用含舊名；星圖原型桌機／手機 0 錯誤。
+
 ### 2026-10-15｜dip-vinyl-shop｜星圖原型：飄的封面改很小很迷你
 
 - **改動**：店主「專輯封面要很小很迷你」。飄的封面尺寸 26–124px → 12–44px，改用 Spotify 64px 小圖，同時最多 260 張，星空背景保留可見；重新發布（Version 9）。計畫文件 §4.1 同步。
