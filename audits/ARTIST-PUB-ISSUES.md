@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1361 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1367 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1362,6 +1362,12 @@
 | ar-d-134 | Booster | Loop in Release | 整張碟在他 Bougival 的家裡做完；錄音與混音都由他一人在 2000 至 2001 年間完成 | Discogs 版權註記寫『Recorded and mixed by Booster at his home, Bougival, 2000-2001, except some tracks recorded at Studio Tex Avril, Ivry』，有幾軌不在家裡錄；建議改成『主要在家裡完成』 | https://www.discogs.com/release/718356 |
 | ar-d-134 | Booster | Loop in Release | 10 軌裡有四首超過 9 分鐘 | Discogs 曲長：9:01、7:21、4:55、3:22、4:02、1:34、8:19、1:51、9:00、9:24；超過 9 分鐘的只有 2 首（9:01 與 9:24），9:00 整的 1 首剛好 9 分，8:19 的 1 首未達；最多算『四首在 8 分鐘以上』 | https://www.discogs.com/release/718356 |
 | ar-d-134 | Brisa Roché | The Chase | 父親過世後才搬到法國；十八歲在巴黎地鐵賣唱 | 此為英文維基說法（單一來源）；2005 年 1 月 North Coast Journal 專訪寫她的行程是 Humboldt 郡到法國、再到西雅圖、再回 Humboldt，約 2002 年才因錄音計畫回法國，順序與維基不同；建議把『地鐵賣唱』『父親過世後』改為『據維基』或刪去時序 | https://northcoastjournal.com/010605/preview0106.html |
+| ar-d-134 | Cautious Clay | KARPEH | 客座只有吉他手 Julian Lage 與小號手 Ambrose Akinmusire | Blue Note 官方介紹與 Grammy.com 專訪列出的客座還有 Immanuel Wilkins、Joel Ross、Julius Rodriguez、Joshua Crumbly、Sean Rickman、Kai Eckhardt 與 Arooj Aftab；『只有』兩人不成立，建議改成『客座包括 Lage 與 Akinmusire 等人』 | https://www.bluenote.com/cautious-clay-explores-his-jazz-roots-on-blue-note-debut-karpeh/ |
+| ar-d-134 | Cautious Clay | KARPEH | 人聲、長笛、次中音薩克斯風、低音單簧管與貝斯全由他一個人包辦 | Blue Note 的說法是『專輯中他演奏』這些樂器（還有高音薩克斯風、吉他、合成器），並非每軌都由他一人包辦，貝斯也有客座 Joshua Crumbly 與 Kai Eckhardt；建議改成『他在專輯中身兼多種樂器』 | https://www.bluenote.com/cautious-clay-explores-his-jazz-roots-on-blue-note-debut-karpeh/ |
+| ar-d-134 | Charlie Mariano & Sadao Watanabe | Charlie Mariano & Sadao Watanabe | 本作 1977 年才在美國上架，改題《Nabesada And Charlie》，收進 Catalyst Records 的 Jazz From Japan 系列 | encyclopedia.com 的渡辺貞夫條目把美國版寫成《Nabasada and Charlie》（Catalyst）；拼寫與 1977 年份本層沒有第二個來源核對，請店主在本機對 Discogs 或 Catalyst 原盤確認標題拼法。 | https://encyclopedia.com/education/news-wires-white-papers-and-books/watanabe-sadao |
 | ar-d-134 | Chris Dave and The Drumhedz | Chris Dave and The Drumhedz | 向 Jimmy Jam 自我推薦，Mint Condition 就找他當鼓手 | Okayplayer 專訪說法是 Jimmy Jam 與 Terry Lewis 到霍華德校園聽他演奏後帶他去排練；與 Blue Note 藝人頁『翹課去自我推薦』兩說並存，建議簡介改成較中性寫法或標明出處 | https://www.okayplayer.com/interviews/chris-daddy-dave-drumhedz-make-feel-interview.html |
+| ar-d-134 | Cosmic Pulsation Unity | C・P・U | 1970 年 1 月他的背部被刀刺傷、脊椎受損而下半身不隨 | 年份兩說：日文維基寫 1970 年 1 月；kotobank（日本人名辭典）寫昭和 44 年（1969 年）出事，英文簡介也寫 1969；建議簡介改成不含年份的寫法，或待查一手資料。 | https://kotobank.jp/word/%E5%AF%8C%E6%A8%AB%E9%9B%85%E5%BD%A6 |
 | ar-d-134 | Eric Darius | Goin' All Out | 專輯在 Top Contemporary Jazz 榜最高第 9 名 | 維基 Eric Darius 條目寫該專輯在 Billboard 爵士專輯榜最高第 14 名（8 月 2 日號起進 Top Contemporary Jazz 的事實庫記載另有出處）；榜名與名次對不上，建議本機對 Billboard 原榜（事實庫那期 PDF）再核一次最高名次。 | https://en.wikipedia.org/wiki/Eric_Darius |
 | ar-d-134 | Eric Darius | Goin' All Out | 同名曲在 2008 年 10 月 25 日那一週登上 Smooth Jazz Songs 榜首 | 維基寫同名單曲同週登上的是『Contemporary Jazz chart』第 1 名，簡介寫 Smooth Jazz Songs；兩個榜名不同，需對原榜確認用哪個名稱。 | https://en.wikipedia.org/wiki/Eric_Darius |
+| ar-d-135 | George Howard | There's a Riot Goin' On | 他在同年 3 月 20 日已過世 | 過世日期各來源不一致（維基與 Muziekweb 為 3 月 20 日，Carnegie Hall Data Lab 為 3 月 22 日，Blue Note 官網與 Rovi 傳記為 3 月 29 日）；建議改寫為「同年 3 月」，不寫日。 | https://www.bluenote.com/artist/george-howard/ |
+| ar-d-135 | Hank Jones | Hanky Panky | 做了十六年電視台駐台鋼琴手；Hank Jones 在 CBS 從 1959 待到 1975 年 | AP 訃聞（ABC7 轉載）寫他在 CBS 擔任錄音室鋼琴手 17 年；起訖年份我們找不到第二個來源，建議店主本機再核對『十六年』與『1959』 | https://abc7chicago.com/archive/7446355 |

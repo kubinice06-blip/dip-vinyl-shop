@@ -1760,3 +1760,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-1 5 處：大村憲司「長期信任」加「據說」、刪過世當晚流星群；山口真文刪宣傳單源「數一數二」；村岡実兩處「最早之一」改「早期」；菊池ひみこ刪鳥取市文化賞（在世者一處）。
   - out-2 7 處：Kähärä 刪「第一位女性得主」；Sarpila & Pyysalo「最知名」改「極」；Bebo 刪妻兒留島；Charlap & Rosnes 刪 Rosnes 領養身世（比照 ar-d-129）與婚禮地點；Lagrène 三重奏丹麥百科「唯一」改寫；Dorough & Frishberg 刪「身後獲 NEA」（年份矛盾）。
 - 待本機：渡辺貞夫 with GJT 卡池《Bird of Paradise》渡辺是否參與；山口真文上線簡介 Leeward「極少見」無源、宮間利之上線簡介芸術祭主詞不清；Kähärä 上線簡介「第一張個人專輯」誤；Bill Stewart 上線簡介「第一張掛名碟」誤（pubIssues 4）；Bob Dorough NEA 年份。
+
+## ar-d-134（2026-10-15）
+
+- 40 位全上架（27 full、13 thin：Bobby Lyle Trio、Booster、Brandon Woody、Brisa Roché、Buscemi & Bisceglia、Charlie Hunter / Leon Parker、China Moses、Chris Botti、Dave Koz、Emma Salokoski & UMO、Eric Darius、FATHERS、Floratone），無不寫。名冊補登批第六批。
+- 多名卡放寬：McFerrin & Corea、Lloyd／Moran／Sewell、Mingus Sextet with Dolphy、Mariano & 渡辺、Parker & Gillespie、Connor 三人、Hinze 三人、Grusin／GRP／渡辺、Bosso & Girotto，另 Charlie Hunter & Pound For Pound 258（四人編制樂團卡）。Charlie Hunter 四張卡、Fabrizio Bosso 兩張卡各以該編制為主。同名混卡已棄：Cecil Taylor Unit（同名專輯）、David Matthews（同名作家）。
+- 搜尋超額：Branford Marsalis Quartet（g1）超 2、Lloyd 三人卡與 Mingus Sextet（g2）各超 1、Connor 三人卡超 2、Hinze 三人卡超 1（g3），皆補第二源或多人身分，放行。
+- 審稿修 10 處：McFerrin & Corea、Cecil Taylor、Mingus、Parker & Gillespie「最…之一」改「極…」；Lloyd 三人卡刪《Forest Flower》百萬銷量；C.P.U「日本第一支自由爵士樂團」改「早期」；David Matthews「日本頭號爵士團」改寫；Don Byron and Existential Dred 刪童年氣喘（比照 ar-d-129）；FATHERS、Floratone 首句補國籍。
+  - 保留：Bosso 1999 義大利 Top Jazz 票選最佳新人（權威票選、不寫刊名）；C.P.U 不寫富樫雅彦事故與傷殘；具名評語（Questlove、Blanchard、Corea、Miles Davis、錄音學院主席）。
+- 待本機：Booster 上線簡介 2 條、Brisa Roché 1 條、Cautious Clay 2 條、Mariano & Watanabe 盤名拼法、Eric Darius 榜名與名次 2 條、Chris Dave 簽約起源、富樫雅彥事故年份（pubIssues 約 10）；Branford《Belonging》2025、Lloyd《Figure in Blue》2025 新近事實已兩源。
