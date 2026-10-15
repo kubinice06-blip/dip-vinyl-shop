@@ -1608,3 +1608,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-2 11 處：du Pré「最傑出之一」改「極傑出」、刪西牆婚禮地點只留「1967 年結為夫妻」；Thibaud 刪一戰負傷、「最好的之一」改「極出色」；Thibaud & Cortot「首屈一指」改「極負盛名」；Ehnes 授勳詞「最出色之一」改「極出色」；Kubelík 刪「練到手指流血」、「最傑出之一」改「極傑出」；Baker、Godard 的「最」改「極」；Higdon 刪《blue cathedral》紀念過世弟弟（家人過世）。
   - 保留：Pogorelich 1980 蕭邦大賽 Argerich 退出評審一句；Levit 的 Rzewski 曲目背景一句；Horenstein 1933 離德、Martinon 戰俘營、Koh 母親韓戰難民、Kalniņš 音樂節遭禁各一句背景；MacMillan《Isobel Gowdie》題材為作品核心；具名音樂人評語（Messiaen、Huberman、Sibelius、Bartók、Kalhor、Steve Turre、Yo-Yo Ma、Furtwängler、Paavo Järvi、Ysaÿe）；在世者各一處（Shore 三座奧斯卡、Bostridge CBE、Levit Gramophone 年度藝術家、Huelgas OPUS Klassik、Ehnes 加拿大勳章、Jansen Vermeer 獎、Higdon 普立茲、Koh 葛萊美、Baker 女爵士）。
 - 待本機：Markevitch 卡 1960，實際 1959 Philharmonia 立體聲；Isaac Stern Prokofiev 版本年份不確定；Il Giardino《Concerti per flauto》實為直笛協奏曲；Alizadeh & Omoumi 卡池合奏與 1987 年份無法證實；Pogorelich 卡 1981 Chopin Sonata 2 對不上 DG 首張；MacMillan 卡 1990 為作品首演年；Queyras 卡池作曲者欄（Kurtág／Ligeti）與實際碟待核。
+
+## ar-d-108（2026-10-15）
+
+- 40 位全上架（38 full、2 thin：Jesper Kyd、王健），無不寫。
+- 古典段 J 至 K 字頭；多名卡放寬：John Cage & David Tudor 265、Josef Suk & Julius Katchen 279、Kander & Ebb 253、Karl Leister & Amadeus Quartet 271。Serrat 卡池歸古典，照創作歌手寫；John Kirkpatrick 預抓維基為英國手風琴手，改照美國鋼琴家寫；Josef Suk 照小提琴家（1929–2011）寫，不是作曲家祖父。
+- 搜尋超額：Juilliard String Quartet（g3）超 1 次，開頁確認 2014 年 Sony 重發，比照「第二源」放行。
+- 審稿修 20 處：
+  - out-1 8 處：Dutcher（在世）刪第二張得獎與「第一位兩度得主」；王健刪「第一位」駐團、Hofmann 刪「唯一的」私人學生；江文也刪「歷經政治運動的衝擊」（政治只留作品在台灣被禁一句）；Serrat、Cage、Nunes Garcia「最…之一」改「極…」；McCormack 刪下葬禮服。
+  - out-2 12 處：Lhévinne、Kraus、Bream、Katchen（Decca 語）、Kander & Ebb、Leister & Amadeus 的「最…之一」改「極…」；Saint-Georges「第一位」改「早期」、刪「歐洲第一支非白人部隊」；Björling 刪「父親過世後」；Szymanowski 刪膝疾免役；Münchinger 刪單源「歐洲最主要 Bach 詮釋者」；Kander & Ebb（Kander 在世）刪東尼獎座數、入圍數與甘迺迪中心榮譽，只留《Cabaret》東尼獎。
+  - 保留：Björling 1999 樂評人票選第一名（必要例外，不寫媒體名）；朱宗慶「被稱為台灣第一支專業打擊樂團」（官方自述，以「被稱為」呈現）；Harvey 過世時 BBC Radio 3 負責人語（官方機構）；Lhévinne 一戰受困、Kraus 國王遇刺、Krips 德奧合併被禁、Leister & Amadeus 拘留營各一句背景；具名音樂人（Schoenberg、Brian Eno、Petri、Glenn Gould、Anton Rubinstein、呂紹嘉、Horowitz、Emanuel Ax、Pavarotti）；在世者各一處。
+- 待本機：Jerusalem Quartet 卡池推斷為 2007 Harmonia Mundi；McCormack《McCormack in Song》疑為選輯；Hofmann《Casimir Hall Recital (1938)》版本未核；Krips 1958 樂團單源（LSO）；Kate Soper《Romance of the Rose》卡 2023 為舞台首演、唱片 2024；Eastman《Femenine》卡 1974 為演出年、2016 首次錄音發行；Serrat 上線簡介 pubIssues 2 條（封殺年數、TVE 票選）。
