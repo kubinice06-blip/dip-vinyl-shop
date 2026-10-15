@@ -2,7 +2,7 @@
 // 這是 MOOD_ENERGY_PLAN §3 三層產線的第一層（先驗），不是最終座標；音訊層、模型層之後會覆蓋。
 //   1. 每個子曲風標籤一組 (x, y, z)（下方 TAG 表，主線人工定）；卡片取所有標籤平均，沒有子曲風就用主曲風。
 //   2. 硬蕊度（舊三軸 accessibility）微調質地與色溫——104 張錨點量到 y～硬蕊 0.62、z～硬蕊 −0.61。係數用錨點最小平方擬合。
-//   3. 104 張錨點直接蓋上人工座標。
+//   3. 模型評分（score500/scored-500.json，有就用）蓋過先驗；104 張錨點再蓋過一切。來源碼：0 先驗、1 錨點、2 模型評分。
 //   4. 同標籤的卡會疊成一點，加 ±0.15 的確定性抖動（依卡鍵雜湊），只為了星圖看得出是一群。
 // 用法：node batch-progress/mood-axes/build-priors.mjs   → 寫 data/mood/card-moods-v0.json
 import fs from 'node:fs';
@@ -64,6 +64,8 @@ const subKey = (a, b) => a + '|' + b;
 
 const rows = seed.map(r => ({ artist: r[0], album: r[1], acc: r[4], genres: r[5] || [], id: idOf(r[0], r[1]), sk: subKey(r[0], r[1]) }));
 const anchorById = new Map(anchors.anchors.map(a => [idOf(a.artist, a.album), a]));
+let scored = []; try { scored = JSON.parse(fs.readFileSync(R('./score500/scored-500.json'), 'utf8')); } catch {}
+const scoredById = new Map(scored.map(s => [s.id, s]));
 
 // 擬合硬蕊度係數：殘差 = 錨點 − 子曲風先驗，對 (acc−3) 做無截距最小平方
 const fit = [0, 0, 0]; { const num = [0, 0, 0]; let den = 0;
@@ -88,20 +90,22 @@ for (const r of rows) { const a = anchorById.get(r.id); if (!a) continue; const 
   if ((x >= T.x) === (a.x >= T.x)) sign[0]++; if ((y >= T.y) === (a.y >= T.y)) sign[1]++; if ((z >= T.z) === (a.z >= T.z)) sign[2]++;
   const c = cellOf(x, y, z); if (c === a.region) same++; else miss.push(`${a.artist}《${a.album}》 錨點 ${anchors._regionRule.names[a.region]} → 先驗 ${anchors._regionRule.names[c]}`); }
 
-const out = {}; const cnt = {}; let fromSub = 0, fromGenre = 0, fromAnchor = 0, none = 0;
+const out = {}; const cnt = {}; let fromSub = 0, fromGenre = 0, fromAnchor = 0, fromScored = 0, none = 0;
 for (const r of rows) {
   const a = anchorById.get(r.id); let v, src;
+  const sc = scoredById.get(r.id);
   if (a) { v = [a.x, a.y, a.z]; src = 'anchor'; fromAnchor++; }
+  else if (sc) { v = [sc.x, sc.y, sc.z]; src = 'scored'; fromScored++; }
   else { const p = prior(r); if (!p) { none++; continue; } v = p.v; src = p.src; src === 'subgenre' ? fromSub++ : fromGenre++; }
   const g = GENRES.indexOf((r.genres || []).find(g => MAIN[g]));
-  out[r.id] = [r2(v[0]), r2(v[1]), r2(v[2]), g, src === 'anchor' ? 1 : 0];
+  out[r.id] = [r2(v[0]), r2(v[1]), r2(v[2]), g, src === 'anchor' ? 1 : src === 'scored' ? 2 : 0];
   const c = cellOf(...out[r.id].slice(0, 3)); cnt[c] = (cnt[c] || 0) + 1;
 }
 const file = { _v: 'v0-subgenre-prior', _built: new Date().toISOString().slice(0, 10),
-  _note: '情緒三軸暫定座標（子曲風先驗＋硬蕊度微調＋104 張錨點）。[x 能量, y 質地, z 色溫（兩位小數原始值）, 主曲風序號, 是否錨點]；build-scale.mjs 另補三個百分位 p。只給星圖實驗頁用，不是正式分類。',
+  _note: '情緒三軸暫定座標（子曲風先驗＋硬蕊度微調＋104 張錨點）。[x 能量, y 質地, z 色溫（兩位小數原始值）, 主曲風序號, 來源（0 子曲風暫估／1 人工錨點／2 模型評分）]；build-scale.mjs 另補三個百分位 p。只給星圖實驗頁用，不是正式分類。',
   _genres: GENRES, _thresholds: T, cards: out };
 fs.writeFileSync(R('../../data/mood/card-moods-v0.json'), JSON.stringify(file));
 const report = { n, cellAgree: same, mae: err.map(e => +(e / n).toFixed(2)), sideAgree: sign, accFit: fit,
-  coverage: { anchor: fromAnchor, subgenre: fromSub, genreOnly: fromGenre, none }, cells: Object.fromEntries(Object.entries(cnt).map(([k, v]) => [anchors._regionRule.names[k], v])), misses: miss };
+  coverage: { anchor: fromAnchor, scored: fromScored, subgenre: fromSub, genreOnly: fromGenre, none }, cells: Object.fromEntries(Object.entries(cnt).map(([k, v]) => [anchors._regionRule.names[k], v])), misses: miss };
 fs.writeFileSync(R('./priors-v0-report.json'), JSON.stringify(report, null, 1));
 console.log(JSON.stringify({ ...report, misses: miss.length }, null, 1));

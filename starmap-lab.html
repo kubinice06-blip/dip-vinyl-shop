@@ -133,7 +133,7 @@ const coll=new Map();snap.docs.forEach(d=>{const v=d.data();coll.set(idOf(v.arti
 const DATA=[];let unmatched=[];
 for(const [id,v] of Object.entries(moods.cards)){const c=coll.get(id);const [rx,ry,rz,g,anc,x,y,z]=v;
   const [ar,...al]=id.split('|');
-  DATA.push({id,h:hashId(id),artist:c?.artist||ar,album:c?.album||al.join('|'),x,y,z,rx,ry,rz,genre:(c?.mapGenres?.[0])||moods._genres[g]||'',anchor:!!anc,owned:!!c,
+  DATA.push({id,h:hashId(id),artist:c?.artist||ar,album:c?.album||al.join('|'),x,y,z,rx,ry,rz,genre:(c?.mapGenres?.[0])||moods._genres[g]||'',src:anc,anchor:anc===1,owned:!!c,
     t:c?(c.obtainedAt||c.lastObtainedAt||0):0,cover:c?.coverUrl||'',count:c?.count||0,tier:c?.hall?'hall':c?.pearl?'pearl':c?.heresy?'heresy':''});}
 for(const [id,c] of coll){if(!moods.cards[id])unmatched.push(c.artist+'《'+c.album+'》');}
 document.getElementById('gate').hidden=true;document.getElementById('stage').hidden=false;document.getElementById('panel').hidden=false;
@@ -248,7 +248,7 @@ const centerLabel = addLabel('引力中心',new THREE.Vector3(),'center');
 // 收藏順序：照收進唱片櫃的時間
 const order = DATA.map((_,i)=>i).filter(i=>DATA[i].owned).sort((a,b)=>DATA[a].t-DATA[b].t); const ON = order.length;
 document.getElementById('nOwned').textContent = ON;
-{const a=order.filter(i=>DATA[i].anchor).length;document.getElementById('stats').textContent=`唱片櫃 ${coll.size} 張 · 有座標 ${ON} 張（人工錨點 ${a}、其餘子曲風暫估）`+(unmatched.length?` · ${unmatched.length} 張不在卡池、沒有座標`:'');if(unmatched.length)console.info('[starmap-lab] 沒有座標：',unmatched);}
+{const a=order.filter(i=>DATA[i].src===1).length,m=order.filter(i=>DATA[i].src===2).length;document.getElementById('stats').textContent=`唱片櫃 ${coll.size} 張 · 有座標 ${ON} 張（人工錨點 ${a}、模型評分 ${m}、其餘子曲風暫估）`+(unmatched.length?` · ${unmatched.length} 張不在卡池、沒有座標`:'');if(unmatched.length)console.info('[starmap-lab] 沒有座標：',unmatched);}
 const target = new Float32Array(N);
 let lit = ON, ghost = false;
 const regEl = document.getElementById('regions');
@@ -289,7 +289,7 @@ function select(i){
   const day=d.t?new Date(d.t).toISOString().slice(0,10):'';
   el.innerHTML=`<div class="card">${d.cover?`<img class="cover" src="${esc(d.cover)}" alt="" loading="lazy" referrerpolicy="no-referrer">`:''}<div class="artist">${esc(d.artist)}</div><div class="album">${esc(d.album)}</div>
   <div class="tag">${REG[d.region]} · ${g[0]}${d.tier?' · '+TIER[d.tier]:''}</div>
-  <div class="src">${d.anchor?'人工錨點':'子曲風暫估'}${d.owned?` · 收進 ${day}${d.count>1?' · ×'+d.count:''}`:' · 未收藏'}</div>
+  <div class="src">${['子曲風暫估','人工錨點','模型評分'][d.src]||'子曲風暫估'}${d.owned?` · 收進 ${day}${d.count>1?' · ×'+d.count:''}`:' · 未收藏'}</div>
   <div class="coords"><div><em>能量</em>${d.x}<small>原始 ${d.rx.toFixed(2)}</small></div><div><em>質地</em>${d.y}<small>原始 ${(d.ry>0?'+':'')+d.ry.toFixed(2)}</small></div><div><em>色溫</em>${d.z}<small>原始 ${(d.rz>0?'+':'')+d.rz.toFixed(2)}</small></div></div>
   <div class="src">0–100＝全池排名（後台數值，不給玩家看）</div></div>`;
 }
