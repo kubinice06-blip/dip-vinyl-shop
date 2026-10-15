@@ -1719,3 +1719,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-2 8 處：本多俊之刪「父親到過世都沒認可」、「無人能出其右」改寫（初改「獨樹一格」撞禁語，再改「辨識度極高」）；阿川泰子刪離開演藝圈的私人原因；Don Byron 刪童年氣喘、三項獎只留普立茲入圍；Patricia Barber 刪院士只留古根漢；NANIWA EXPRESS 刪單源「最成功之一」。
   - 保留：Blanchard「大都會首部黑人作曲家歌劇」（通行事實）；Ron Carter 金氏紀錄、Oosterhuis 荷蘭專輯榜冠軍（在世者核心一處、兩源）；Wilkins《Omega》題材；具名音樂人評語。
 - 待本機：Erik Truffaz 上線簡介 2 條（Blue Note 簽約年、金唱片歸屬）、Stanley Jordan 上線簡介五軌／六軌自相矛盾、鈴木勲上線簡介 Blakey 說法單源（pubIssues 共 4）。
+
+## ar-d-130（2026-10-15）
+
+- 40 位全上架（32 full、8 thin：向井滋春、森園勝敏、Charles Pasi、Charlie Hunter Quartet、George Young、Gerald Clayton、Johnathan Blake、Jukka Perko），無不寫。名冊補登批第二批，爵士為主。
+- 同名混卡已棄：Out of the Blue（鹽湖城雕塑）、大野俊三（同名足球員）、George Young（英國政治人物，改查費城薩克斯風手 George Opalisky Jr.）。
+- 搜尋超額：無。
+- 2025–26 事實：George Young 2026 年過世（補洞 Chiaroscuro 悼文＋維基；主線 WebSearch 再核，維基載 2026-04-23），只寫年份；Julian Lage《Scenes From Above》、Makhathini《The Myth We Choose》2026 兩源；Johnathan Blake 2025《My Life Matters》只有 Blue Note 單源，主線刪除，改寫 thin。
+- 審稿修 7 處：Lage「最早慧之一」改「極」；Aga Zaryan 刪「第一位簽 Blue Note 的波蘭音樂人」只留 Fryderyk；McFerrin 刪 Hot 100「唯一無伴奏冠軍曲」只留 NEA；Jannah「兩度獲 Edison、最高榮譽之一」改「曾獲」；Johnathan Blake 刪 2025 單源新作並壓縮成 thin。
+  - 保留：Geri Allen「Jazzpar 第一位女性得主」、McFerrin 父親「第一位登上大都會的非裔男歌手」（通行事實）、弘田三枝子「據報導首位登上新港」；具名評語。
+- 待本機：Out of the Blue 上線簡介「1985 年組起」誤（1984）；向井滋春上線簡介新宿ジャズ賞年份兩說；Joe Chambers 上線簡介 3 條（發行日、首作年、《Mirrors》年份）；Kevin Hays 上線簡介「首張領班盤」誤；Marlene 上線簡介來日年齡不一（pubIssues 共 7）。

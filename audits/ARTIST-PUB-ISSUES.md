@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1342 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1346 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1346,3 +1346,7 @@
 | ar-d-130 | Joe Chambers | Samba de Maracatu | 2021 年 1 月 15 日發行的九軌 | 1 月 15 日是 Blue Note 官網的宣布稿日期，專輯實際發行日是 2021 年 2 月 26 日（官網網址 out-feb-26，且事實庫 Apple Music releaseDate 為 2021-02-26） | https://www.bluenote.com/joe-chambers-samba-de-maracatu-out-feb-26/ |
 | ar-d-130 | Joe Chambers | Samba de Maracatu / Dance Kobina | 掛自己名字的首作要等到 1998 年的《Mirrors》 | 照字面讀會變成他的領班首作是 1998 年；維基記他 1974 年就以《The Almoravid》首度以領班身分錄音，應限縮成「掛自己名字的第一張 Blue Note 碟」 | https://en.wikipedia.org/wiki/Joe_Chambers |
 | ar-d-130 | Joe Chambers | Mirrors / Samba de Maracatu / Dance Kobina | Mirrors 寫 1999 年出版，另兩張寫 1998 年的《Mirrors》 | 三篇上線簡介對《Mirrors》年份說法不一（1999 對 1998），需統一；事實庫的廠牌與日版原壓日期指向 1999 | https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-01-16.pdf |
+| ar-d-130 | Kevin Hays | Seventh Sense | 這是他的首張領班盤，1994 年出版 | 他的首張領班專輯是 1990 年的《El Matador》，1991 至 1993 年又替 SteepleChase 錄了三張；《Seventh Sense》是他在 Blue Note 的第一張，應改成『他在 Blue Note 的第一張』 | https://en.wikipedia.org/wiki/Kevin_Hays |
+| ar-d-130 | Marlene | It's Magic / My Favorite Songs | 19 歲來到日本 | Sony 官方簡介寫 18 歲來日，Philstar 專訪寫她 1978 年 12 月赴日；日文維基的 19 歲與這兩源不一致 | https://www.sonymusic.co.jp/artist/Marlene_MHonda_BBSt/profile/ |
+| ar-d-131 | Musica Nuda | 55/21 | 本作是這個企劃的第五張錄音室專輯 | 本位五個來源都沒有提到序數；gonews 稱 18 年間出了 8 張錄音室專輯，序數待確認，建議店主對照 Discogs 再決定是否保留 | https://www.gonews.it/?p=1119074 |
+| ar-d-131 | Rick Margitza | Color | Miles Davis 聽完一捲卡帶，就把他找進自己的樂團 | 本位開了維基、Blue Note、moutin.com 與 milesdavis.com 四頁，皆未提到卡帶；Blue Note 只說 1988 年他進了 Miles 的團。建議店主回查 Color 研究稿該句的來源，無來源就改為『1988 年加入』 | https://www.milesdavis.com/person/rick-margitza/ |
