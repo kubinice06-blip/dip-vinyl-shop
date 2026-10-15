@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow"><link rel="icon" type="image/png" href="/favicon.png">
+<title>星圖實驗 · dip</title>
+<!-- 店主測試頁（2026-10-15）：用自己的唱片櫃看情緒三軸星圖。不掛連結、不進導覽、noindex；座標是 v0 子曲風暫估（data/mood/card-moods-v0.json）。 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap">
+<style>
+/* 版面：上方星空畫布（拖曳旋轉），下方控制台＋選中卡片；單一夜空色系，刻意不做亮色版 */
+:root{
+  --sky:#0b0d14; --sky-2:#121626; --ink:#e8e6df; --ink-dim:#8e93a6; --line:#262b3d; --glow:#f5d27a;
+  --mono:'Space Mono',ui-monospace,Menlo,monospace; --sans:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;
+  color-scheme:dark;
+}
+html,body{background:var(--sky);color:var(--ink)}
+body{font-family:var(--sans);font-size:14px;line-height:1.7;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 40px}
+.wrap{max-width:980px;margin:0 auto;display:grid;gap:16px}
+header{display:grid;gap:4px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--ink-dim);text-transform:uppercase}
+h1{font-family:var(--mono);font-size:22px;letter-spacing:.08em;margin:0;text-wrap:balance}
+.sub{color:var(--ink-dim);max-width:62ch;margin:0}
+.stage{position:relative;height:min(64vh,620px);min-height:360px;border:1px solid var(--line);background:radial-gradient(ellipse at 50% 40%,var(--sky-2),var(--sky) 70%);overflow:hidden;touch-action:none}
+.stage canvas{display:block;width:100%;height:100%}
+.lbl{position:absolute;transform:translate(-50%,-50%);pointer-events:none;white-space:nowrap;font-size:12px;letter-spacing:.06em}
+.lbl.axis{font-family:var(--mono);color:var(--ink-dim);font-size:11px}
+.lbl.region{font-weight:700;opacity:.55;transition:opacity .4s}
+.lbl.region.lit{opacity:1}
+.lbl.center{font-family:var(--mono);color:var(--glow);font-size:11px}
+.hint{position:absolute;left:12px;bottom:10px;font-family:var(--mono);font-size:10px;color:var(--ink-dim);letter-spacing:.08em}
+.views{position:absolute;left:12px;top:10px;display:flex;flex-wrap:wrap;gap:6px;max-width:calc(100% - 150px)}
+.views button{padding:5px 8px;font-size:10px;background:rgba(11,13,20,.7)}
+.count{position:absolute;right:12px;top:10px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;font-variant-numeric:tabular-nums}
+.count b{color:var(--glow);font-size:18px}
+.panel{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:16px}
+@media(max-width:720px){.panel{grid-template-columns:minmax(0,1fr)}}
+.box{border:1px solid var(--line);padding:14px 16px;display:grid;gap:12px;min-width:0}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+label{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--ink-dim)}
+input[type=range]{flex:1;min-width:160px;accent-color:var(--glow)}
+button{font:700 11px var(--mono);letter-spacing:.1em;background:transparent;color:var(--ink);border:1px solid var(--ink-dim);padding:8px 12px;cursor:pointer}
+button:hover,button[aria-pressed=true]{border-color:var(--glow);color:var(--glow)}
+button:focus-visible,input:focus-visible{outline:2px solid var(--glow);outline-offset:2px}
+.regions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+@media(max-width:560px){.regions{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.reg .c{font-family:var(--mono);font-size:10px;color:var(--ink-dim);letter-spacing:.08em}
+.reg{border:1px solid var(--line);padding:8px 10px;display:grid;gap:2px}
+.reg .n{font-family:var(--mono);font-size:11px;color:var(--ink-dim);font-variant-numeric:tabular-nums}
+.reg .t{font-weight:700}
+.reg .bar{height:3px;background:var(--line)}
+.reg .bar i{display:block;height:100%;width:0;transition:width .4s}
+.legend{display:flex;flex-wrap:wrap;gap:6px 12px;font-family:var(--mono);font-size:10px;color:var(--ink-dim)}
+.legend span::before{content:"";display:inline-block;width:8px;height:8px;margin-right:5px;vertical-align:-1px;background:var(--c)}
+.card{display:grid;gap:6px}
+.card .artist{color:var(--ink-dim);font-size:13px}
+.card .album{font-size:18px;font-weight:700;line-height:1.4;text-wrap:balance}
+.card .tag{font-family:var(--mono);font-size:12px;color:var(--glow)}
+.card .why{font-size:13px}
+.coords{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;font-family:var(--mono);font-size:11px;font-variant-numeric:tabular-nums}
+.coords div{border:1px solid var(--line);padding:6px 8px;display:grid}
+.coords em{font-style:normal;color:var(--ink-dim);font-size:10px}
+.empty{color:var(--ink-dim);font-size:13px}
+.note{color:var(--ink-dim);font-size:12px;margin:0;max-width:72ch}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.gate{display:grid;gap:10px;justify-items:start;border:1px solid var(--line);padding:16px}
+.gate[hidden]{display:none}
+.cover{width:96px;height:96px;object-fit:cover;border:1px solid var(--line);image-rendering:auto}
+#detail{align-content:start}
+.src{font-family:var(--mono);font-size:10px;color:var(--ink-dim);letter-spacing:.08em}
+</style>
+</head><body>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">dip vinyl · 店主實驗頁 · 不公開</div>
+    <h1>我的唱片櫃星圖</h1>
+    <p class="sub">每張收藏是一顆星，位置由三軸決定：上下是能量（靜到躁）、左右是質地（輕到重）、前後是色溫（冷到暖）。三軸各切一刀成八格，每格一個詞。下方時間軸照你收進唱片櫃的先後播放，看星空怎麼長出來。</p>
+  </header>
+
+  <div class="gate" id="gate"><div id="gateMsg">正在確認登入…</div><button id="loginBtn" type="button" hidden>用 Google 登入</button></div>
+
+  <div class="stage" id="stage" hidden>
+    <div class="count"><b id="nLit">0</b> / <span id="nOwned">0</span> 顆星</div>
+    <div class="hint">拖曳任意翻轉 · 右鍵或雙指平移 · 滾輪或雙指縮放 · 點星星看專輯</div>
+    <div class="views" id="views"><button type="button" data-v="home">回正</button><button type="button" data-v="front">正面</button><button type="button" data-v="top">頂視</button><button type="button" data-v="side">側面</button><button type="button" data-v="under">底視</button></div>
+  </div>
+
+  <div class="panel" id="panel" hidden>
+    <div class="box">
+      <div class="row">
+        <label for="collect">收藏時間軸</label>
+        <input type="range" id="collect" min="0" max="1" value="1">
+        <button id="play" type="button">重播收藏歷程</button>
+      </div>
+      <div class="row">
+        <button id="ghost" type="button" aria-pressed="false">顯示全池（暗）</button>
+        <button id="spin" type="button" aria-pressed="true">緩慢自轉</button>
+      </div>
+      <div class="regions" id="regions"></div>
+      <div class="legend" id="legend"></div>
+      <div class="src" id="stats"></div>
+    </div>
+    <div class="box" id="detail"><div class="empty">點一顆星，這裡會顯示專輯與它的三軸座標。</div></div>
+  </div>
+
+  <p class="note">座標是 <b>v0 暫估</b>：104 張人工錨點以外，全用子曲風標籤平均＋硬蕊度微調算的，對錨點驗證三軸各約八成落在正確一側、八格只有約一半對上。看的是整體分布與手感，個別星星放錯位置很正常；正式版要等音訊層與模型層。黃色那顆是收藏的引力中心。八格名稱暫定。</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/TrackballControls.js"></script>
+<script type="module">
+import{initializeApp}from'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+import{getFirestore,collection,getDocs}from'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+import{getAuth,onAuthStateChanged,signInWithPopup,GoogleAuthProvider}from'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
+const app=initializeApp({apiKey:'AIzaSyBpR5XKKHwT_eQoShtBPtFNRXz4ymzPWQg',authDomain:'price-manager-e8846.firebaseapp.com',projectId:'price-manager-e8846',storageBucket:'price-manager-e8846.firebasestorage.app',messagingSenderId:'570133498387',appId:'1:570133498387:web:8835b8d2373797e91d0de6'});
+const db=getFirestore(app),auth=getAuth(app);
+const OWNER='kubinice06@gmail.com';
+const gateMsg=document.getElementById('gateMsg'),loginBtn=document.getElementById('loginBtn');
+loginBtn.onclick=()=>signInWithPopup(auth,new GoogleAuthProvider()).catch(e=>{gateMsg.textContent='登入失敗：'+(e.code||e.message);});
+const user=await new Promise(res=>onAuthStateChanged(auth,u=>{
+  if(!u){gateMsg.textContent='這是店主的測試頁，登入後讀你的唱片櫃。';loginBtn.hidden=false;return;}
+  if(u.email!==OWNER){gateMsg.textContent='這是店主的測試頁，目前只開給店主帳號。';loginBtn.hidden=true;return;}
+  res(u);}));
+gateMsg.textContent='正在讀唱片櫃與座標…';loginBtn.hidden=true;
+const idOf=(a,b)=>((a||'')+'|'+(b||'')).toLowerCase().replace(/\//g,'-').trim();
+const [snap,moods]=await Promise.all([getDocs(collection(db,'collections',user.uid,'cards')),fetch('data/mood/card-moods-v0.json',{cache:'no-cache'}).then(r=>r.json())]);
+const coll=new Map();snap.docs.forEach(d=>{const v=d.data();coll.set(idOf(v.artist,v.album)||d.id,v);});
+const DATA=[];let unmatched=[];
+for(const [id,v] of Object.entries(moods.cards)){const c=coll.get(id);const [x,y,z,g,anc]=v;
+  const [ar,...al]=id.split('|');
+  DATA.push({id,artist:c?.artist||ar,album:c?.album||al.join('|'),x,y,z,genre:(c?.mapGenres?.[0])||moods._genres[g]||'',anchor:!!anc,owned:!!c,
+    t:c?(c.obtainedAt||c.lastObtainedAt||0):0,cover:c?.coverUrl||'',count:c?.count||0,tier:c?.hall?'hall':c?.pearl?'pearl':c?.heresy?'heresy':''});}
+for(const [id,c] of coll){if(!moods.cards[id])unmatched.push(c.artist+'《'+c.album+'》');}
+document.getElementById('gate').hidden=true;document.getElementById('stage').hidden=false;document.getElementById('panel').hidden=false;
+const REG = {calm:'放鬆',still:'平靜',languid:'要死不活',decay:'頹靡',lift:'雀躍',crisp:'冷冽',boil:'沸騰',charge:'亢奮'};
+// 八格：三軸各切一刀（能量 x≥3.0 躁、質地 y≥0.5 重、色溫 z≥0 暖），門檻與 build-anchors.mjs 的 T 相同
+const T = moods._thresholds;
+const CELL = {'靜輕暖':'calm','靜輕冷':'still','靜重暖':'languid','靜重冷':'decay','躁輕暖':'lift','躁輕冷':'crisp','躁重暖':'boil','躁重冷':'charge'};
+const CODE = Object.fromEntries(Object.entries(CELL).map(([c,k])=>[k,c]));
+const cellOf = (x,y,z) => CELL[(x>=T.x?'躁':'靜')+(y>=T.y?'重':'輕')+(z>=T.z?'暖':'冷')];
+const BAR = {calm:'#9ccf6a',still:'#59c3e0',languid:'#a98bf0',decay:'#6a8cf0',lift:'#f5d27a',crisp:'#4fd1a5',boil:'#f39c6b',charge:'#e2694d'};
+// 每格在資料空間的範圍 [x0,x1],[y0,y1],[z0,z1]
+const BOUNDS = k => { const c=CODE[k]; return [c[0]==='躁'?[T.x,5]:[1,T.x], c[1]==='重'?[T.y,2]:[-2,T.y], c[2]==='暖'?[T.z,2]:[-2,T.z]]; };
+DATA.forEach(d=>d.region=cellOf(d.x,d.y,d.z));
+const GENRE = {rock:['搖滾','#e2694d'],jazz:['爵士','#e8b54a'],electronic:['電子','#59c3e0'],soul:['靈魂放克','#e07ab8'],hiphop:['嘻哈','#a98bf0'],folk:['民謠','#9ccf6a'],classical:['古典','#d9d4c7'],world:['世界','#4fd1a5'],pop:['流行','#f39c6b'],blues:['藍調','#6a8cf0']};
+const TIER = {hall:'殿堂',pearl:'流亡',heresy:'異端'};
+
+// 座標：三軸 → 場景。上＝能量、右＝重、前＝暖
+const P = a => new THREE.Vector3((a.y)/2*1.0, (a.x-3)/2*1.0, (a.z)/2*1.0);
+
+const stage = document.getElementById('stage');
+const renderer = new THREE.WebGLRenderer({antialias:false, alpha:true});
+renderer.setPixelRatio(Math.min(2, window.devicePixelRatio||1));
+stage.prepend(renderer.domElement);
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(45, 1, 0.01, 50);
+camera.position.set(1.9, 0.9, 2.3);
+// 任意翻轉（像 SketchUp 的環繞）：不鎖上下角度，可以翻過頂、翻到底下看
+const controls = new THREE.TrackballControls(camera, renderer.domElement);
+controls.rotateSpeed = 3.2; controls.zoomSpeed = 1.1; controls.panSpeed = 0.5;
+controls.staticMoving = false; controls.dynamicDampingFactor = 0.14;
+controls.minDistance = 1.0; controls.maxDistance = 7;
+const HOME = { pos: new THREE.Vector3(1.9, 0.9, 2.3), up: new THREE.Vector3(0,1,0) };
+function setView(dir, up){ const d = camera.position.distanceTo(controls.target) || 3.2; controls.target.set(0,0,0);
+  camera.up.copy(up); camera.position.copy(dir.clone().normalize().multiplyScalar(d)); camera.lookAt(0,0,0); controls.update(); }
+
+// 三條軸：極細的線，兩端淡出（加色混合下黑色＝透明）
+{const pts=[],cols=[],c=new THREE.Color(0x4a5170);
+  [[1,0,0],[0,1,0],[0,0,1]].forEach(d=>{const v=new THREE.Vector3(...d);
+    [-1.1,-0.85,0.85,1.1].forEach((t,i,a)=>{if(i===0)return;const p0=v.clone().multiplyScalar(a[i-1]),p1=v.clone().multiplyScalar(t);pts.push(p0,p1);
+      const k0=i===1?0:1,k1=i===3?0:1;cols.push(c.r*k0,c.g*k0,c.b*k0,c.r*k1,c.g*k1,c.b*k1);});});
+  const g=new THREE.BufferGeometry().setFromPoints(pts);g.setAttribute('color',new THREE.Float32BufferAttribute(cols,3));
+  scene.add(new THREE.LineSegments(g,new THREE.LineBasicMaterial({vertexColors:true,transparent:true,blending:THREE.AdditiveBlending,depthWrite:false})));}
+
+// 背景星空（裝飾，固定種子）：遠近兩層、大小亮度不一、緩慢閃爍，外加一條淡淡的銀河帶
+let seed = 7; const rnd = () => (seed = (seed*16807)%2147483647)/2147483647;
+const sky = new THREE.ShaderMaterial({transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,uniforms:{uT:{value:0},uPR:{value:renderer.getPixelRatio()}},
+  vertexShader:`attribute float sz;attribute float ph;attribute vec3 tint;varying float vB;varying vec3 vC;uniform float uT;uniform float uPR;
+    void main(){vC=tint;vB=0.55+0.45*sin(uT*0.9+ph);vec4 mv=modelViewMatrix*vec4(position,1.);gl_PointSize=sz*uPR;gl_Position=projectionMatrix*mv;}`,
+  fragmentShader:`varying float vB;varying vec3 vC;void main(){float d=length(gl_PointCoord-.5);float a=(1.-smoothstep(0.,.5,d));a*=a;if(a<.01)discard;gl_FragColor=vec4(vC,a*vB);}`});
+{const n=2400,pos=new Float32Array(n*3),sz=new Float32Array(n),ph=new Float32Array(n),tint=new Float32Array(n*3);
+  const tints=[[0.62,0.68,0.85],[0.85,0.82,0.72],[0.55,0.62,0.78],[0.9,0.75,0.6]];
+  for(let i=0;i<n;i++){
+    // 球殼分布（離中心 4–14），約三成擠在一條傾斜的帶上當銀河
+    let u=rnd()*2-1,th=rnd()*Math.PI*2; if(i%10<3){u=(rnd()-.5)*0.22;}
+    const r=4+rnd()*10,q=Math.sqrt(1-u*u),x=r*q*Math.cos(th),y=r*u,z=r*q*Math.sin(th);
+    pos.set([x, y*0.94+x*0.34, z],i*3);
+    const big=rnd(); sz[i]=big>0.985?3.6:big>0.9?2.4:1.3+rnd()*0.6; ph[i]=rnd()*6.283;
+    const t=tints[Math.floor(rnd()*tints.length)],k=0.35+rnd()*0.65; tint.set([t[0]*k,t[1]*k,t[2]*k],i*3);}
+  const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(pos,3));g.setAttribute('sz',new THREE.BufferAttribute(sz,1));
+  g.setAttribute('ph',new THREE.BufferAttribute(ph,1));g.setAttribute('tint',new THREE.BufferAttribute(tint,3));scene.add(new THREE.Points(g,sky));}
+
+// 星星：方形像素核心＋十字閃光，加色混合
+const N = DATA.length, pos = new Float32Array(N*3), col = new Float32Array(N*3), size = new Float32Array(N), alpha = new Float32Array(N);
+DATA.forEach((d,i)=>{const v=P(d);pos.set([v.x,v.y,v.z],i*3);const c=new THREE.Color(GENRE[d.genre]?.[1]||'#ffffff');col.set([c.r,c.g,c.b],i*3);size[i]=d.owned?(d.tier?34:22):12;});
+const geo = new THREE.BufferGeometry();
+geo.setAttribute('position',new THREE.BufferAttribute(pos,3));
+geo.setAttribute('color',new THREE.BufferAttribute(col,3));
+geo.setAttribute('size',new THREE.BufferAttribute(size,1));
+geo.setAttribute('alpha',new THREE.BufferAttribute(alpha,1));
+const mat = new THREE.ShaderMaterial({transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,uniforms:{uPR:{value:renderer.getPixelRatio()},uSel:{value:-1}},
+  vertexShader:`attribute vec3 color;attribute float size;attribute float alpha;varying vec3 vC;varying float vA;uniform float uPR;void main(){vC=color;vA=alpha;vec4 mv=modelViewMatrix*vec4(position,1.);gl_PointSize=size*uPR*(2.4/-mv.z);gl_Position=projectionMatrix*mv;}`,
+  fragmentShader:`varying vec3 vC;varying float vA;void main(){vec2 c=abs(gl_PointCoord-.5);float sq=step(max(c.x,c.y),.11);float cross=step(min(c.x,c.y),.035)*(1.-smoothstep(.12,.5,max(c.x,c.y)));float halo=(1.-smoothstep(0.,.5,length(gl_PointCoord-.5)))*.35;float a=max(sq,max(cross*.8,halo))*vA;if(a<.01)discard;gl_FragColor=vec4(mix(vC,vec3(1.),sq*.35),a);}`});
+const stars = new THREE.Points(geo, mat); scene.add(stars);
+
+// 選取圈與引力中心
+const ring = new THREE.Mesh(new THREE.RingGeometry(0.045,0.055,4), new THREE.MeshBasicMaterial({color:0xf5d27a,side:THREE.DoubleSide,transparent:true}));
+ring.visible=false; scene.add(ring);
+const centroid = new THREE.Mesh(new THREE.OctahedronGeometry(0.035), new THREE.MeshBasicMaterial({color:0xf5d27a,wireframe:true}));
+scene.add(centroid);
+
+// 八格：不畫框線，每格是一團星雲（幾個柔光貼圖疊在格子裡），收藏越多越亮
+const glowTex = (()=>{const c=document.createElement('canvas');c.width=c.height=128;const x=c.getContext('2d');
+  const g=x.createRadialGradient(64,64,0,64,64,64);g.addColorStop(0,'rgba(255,255,255,1)');g.addColorStop(0.35,'rgba(255,255,255,.35)');g.addColorStop(1,'rgba(255,255,255,0)');
+  x.fillStyle=g;x.fillRect(0,0,128,128);return new THREE.CanvasTexture(c);})();
+const nebulae = {}, cellCenter = {};
+seed = 31;
+Object.keys(REG).forEach(k=>{const [bx,by,bz]=BOUNDS(k);
+  const a=P({x:bx[0],y:by[0],z:bz[0]}), b=P({x:bx[1],y:by[1],z:bz[1]});
+  const size=b.clone().sub(a), mid=a.clone().add(b).multiplyScalar(0.5); cellCenter[k]=mid;
+  const mat=new THREE.SpriteMaterial({map:glowTex,color:new THREE.Color(BAR[k]),transparent:true,opacity:0,depthWrite:false,blending:THREE.AdditiveBlending});
+  for(let j=0;j<4;j++){const sp=new THREE.Sprite(mat);
+    sp.position.set(mid.x+(rnd()-.5)*size.x*0.5, mid.y+(rnd()-.5)*size.y*0.5, mid.z+(rnd()-.5)*size.z*0.5);
+    const sc=Math.min(size.x,size.y,size.z)*(0.9+rnd()*0.7); sp.scale.set(sc,sc,1); scene.add(sp);}
+  nebulae[k]=mat;});
+
+// HTML 標籤
+const labels = [];
+const addLabel = (text, v, cls) => {const el=document.createElement('div');el.className='lbl '+cls;el.textContent=text;stage.appendChild(el);labels.push({el,v});return el;};
+addLabel('躁',new THREE.Vector3(0,1.12,0),'axis');addLabel('靜',new THREE.Vector3(0,-1.12,0),'axis');
+addLabel('重',new THREE.Vector3(1.14,0,0),'axis');addLabel('輕',new THREE.Vector3(-1.14,0,0),'axis');
+addLabel('暖',new THREE.Vector3(0,0,1.14),'axis');addLabel('冷',new THREE.Vector3(0,0,-1.14),'axis');
+const regLabels = {};
+Object.keys(REG).forEach(k=>{regLabels[k]=addLabel(REG[k],cellCenter[k].clone(),'region');});
+const centerLabel = addLabel('引力中心',new THREE.Vector3(),'center');
+
+// 收藏順序：固定種子洗牌，模擬一位玩家慢慢抽到的順序
+// 收藏順序：照收進唱片櫃的時間
+const order = DATA.map((_,i)=>i).filter(i=>DATA[i].owned).sort((a,b)=>DATA[a].t-DATA[b].t); const ON = order.length;
+document.getElementById('nOwned').textContent = ON;
+{const a=order.filter(i=>DATA[i].anchor).length;document.getElementById('stats').textContent=`唱片櫃 ${coll.size} 張 · 有座標 ${ON} 張（人工錨點 ${a}、其餘子曲風暫估）`+(unmatched.length?` · ${unmatched.length} 張不在卡池、沒有座標`:'');if(unmatched.length)console.info('[starmap-lab] 沒有座標：',unmatched);}
+const target = new Float32Array(N);
+let lit = ON, ghost = false;
+const regEl = document.getElementById('regions');
+const totals = {}; DATA.forEach(d=>totals[d.region]=(totals[d.region]||0)+1);
+regEl.innerHTML = Object.keys(REG).map(k=>`<div class="reg" id="r-${k}"><div class="c">${CODE[k]}</div><div class="t">${REG[k]}</div><div class="n"><span>0</span> 張 · 全池 ${totals[k]||0}</div><div class="bar"><i style="background:${BAR[k]}"></i></div></div>`).join('');
+document.getElementById('legend').innerHTML = Object.entries(GENRE).filter(([g])=>DATA.some(d=>d.genre===g)).map(([g,[n,c]])=>`<span style="--c:${c}">${n}</span>`).join('');
+
+function applyCollection(){
+  const owned = new Set(order.slice(0,lit));
+  const cnt = {}; let cx=0,cy=0,cz=0;
+  DATA.forEach((d,i)=>{target[i]=owned.has(i)?1:(ghost?0.1:0);if(owned.has(i)){cnt[d.region]=(cnt[d.region]||0)+1;cx+=d.x;cy+=d.y;cz+=d.z;}});
+  document.getElementById('nLit').textContent = lit;
+  Object.keys(REG).forEach(k=>{const n=cnt[k]||0,t=Math.max(1,lit),el=document.getElementById('r-'+k);el.querySelector('span').textContent=n;el.querySelector('i').style.width=(n/t*100)+'%';regLabels[k].classList.toggle('lit',n>=3);nebulae[k].opacity=0.015+0.3*(n/t);});
+  if(lit>0){const c={x:cx/lit,y:cy/lit,z:cz/lit};centroid.visible=true;centroid.position.copy(P(c));centerLabel.hidden=false;
+    const best=cellOf(c.x,c.y,c.z);
+    centerLabel.textContent=`引力中心 · ${REG[best]}`;}
+  else{centroid.visible=false;centerLabel.hidden=true;}
+}
+
+// 點選：螢幕空間找最近的已點亮星星
+const tmp = new THREE.Vector3();
+let selected = -1;
+function pick(ev){
+  const r = renderer.domElement.getBoundingClientRect(), px = ev.clientX-r.left, py = ev.clientY-r.top;
+  let best=-1, bd=28*28;
+  for(let i=0;i<N;i++){ if(alpha[i]<0.1) continue; tmp.set(pos[i*3],pos[i*3+1],pos[i*3+2]).project(camera); if(tmp.z>1) continue;
+    const sx=(tmp.x+1)/2*r.width, sy=(1-tmp.y)/2*r.height, d=(sx-px)**2+(sy-py)**2; if(d<bd){bd=d;best=i;} }
+  select(best);
+}
+function select(i){
+  selected=i; const el=document.getElementById('detail');
+  if(i<0){ring.visible=false;el.innerHTML='<div class="empty">點一顆星，這裡會顯示專輯與它的三軸座標。</div>';return;}
+  const d=DATA[i]; ring.visible=true; ring.position.set(pos[i*3],pos[i*3+1],pos[i*3+2]);
+  const g=GENRE[d.genre]||['?','#fff'];
+  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const day=d.t?new Date(d.t).toISOString().slice(0,10):'';
+  el.innerHTML=`<div class="card">${d.cover?`<img class="cover" src="${esc(d.cover)}" alt="" loading="lazy" referrerpolicy="no-referrer">`:''}<div class="artist">${esc(d.artist)}</div><div class="album">${esc(d.album)}</div>
+  <div class="tag">${REG[d.region]} · ${g[0]}${d.tier?' · '+TIER[d.tier]:''}</div>
+  <div class="src">${d.anchor?'人工錨點':'子曲風暫估'}${d.owned?` · 收進 ${day}${d.count>1?' · ×'+d.count:''}`:' · 未收藏'}</div>
+  <div class="coords"><div><em>能量</em>${d.x.toFixed(1)}</div><div><em>質地</em>${(d.y>0?'+':'')+d.y.toFixed(1)}</div><div><em>色溫</em>${(d.z>0?'+':'')+d.z.toFixed(1)}</div></div></div>`;
+}
+let down=null;
+let dragging=false;
+renderer.domElement.addEventListener('pointerdown',e=>{down=[e.clientX,e.clientY];dragging=true;});
+window.addEventListener('pointerup',e=>{if(down&&Math.hypot(e.clientX-down[0],e.clientY-down[1])<6)pick(e);down=null;dragging=false;});
+renderer.domElement.addEventListener('contextmenu',e=>e.preventDefault());
+document.getElementById('views').addEventListener('click',e=>{const v=e.target.dataset.v;if(!v)return;
+  if(v==='home'){controls.target.set(0,0,0);camera.up.copy(HOME.up);camera.position.copy(HOME.pos).setLength(3.2*Math.max(1,1.15/camera.aspect));camera.lookAt(0,0,0);controls.update();return;}
+  if(v==='front')setView(new THREE.Vector3(0,0,1),new THREE.Vector3(0,1,0));
+  if(v==='top')setView(new THREE.Vector3(0,1,0),new THREE.Vector3(0,0,-1));
+  if(v==='side')setView(new THREE.Vector3(1,0,0),new THREE.Vector3(0,1,0));
+  if(v==='under')setView(new THREE.Vector3(0,-1,0),new THREE.Vector3(0,0,1));});
+
+// 控制台
+const slider=document.getElementById('collect'), playBtn=document.getElementById('play'), ghostBtn=document.getElementById('ghost'), spinBtn=document.getElementById('spin');
+let spinOn = !matchMedia('(prefers-reduced-motion: reduce)').matches; spinBtn.setAttribute('aria-pressed',spinOn);
+slider.max=ON;slider.value=ON;
+slider.addEventListener('input',()=>{lit=+slider.value;applyCollection();});
+let timer=null;
+playBtn.addEventListener('click',()=>{ if(timer){clearInterval(timer);timer=null;playBtn.textContent='重播收藏歷程';return;}
+  if(lit>=ON){lit=0;} playBtn.textContent='暫停'; const step=Math.max(1,Math.ceil(ON/160)); timer=setInterval(()=>{lit=Math.min(ON,lit+step);slider.value=lit;applyCollection();if(lit>=ON){clearInterval(timer);timer=null;playBtn.textContent='重播收藏歷程';}},70); });
+ghostBtn.addEventListener('click',()=>{ghost=!ghost;ghostBtn.setAttribute('aria-pressed',ghost);applyCollection();});
+spinBtn.addEventListener('click',()=>{spinOn=!spinOn;spinBtn.setAttribute('aria-pressed',spinOn);});
+
+function resize(){const w=stage.clientWidth,h=stage.clientHeight;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();controls.handleResize();const want=3.2*Math.max(1,1.15/camera.aspect);camera.position.sub(controls.target).setLength(Math.min(controls.maxDistance,want)).add(controls.target);}
+new ResizeObserver(resize).observe(stage); resize();
+
+function frame(){
+  sky.uniforms.uT.value=performance.now()/1000;
+  for(let i=0;i<N;i++){alpha[i]+= (target[i]-alpha[i])*0.12;}
+  geo.attributes.alpha.needsUpdate=true;
+  if(spinOn&&!dragging){const q=new THREE.Quaternion().setFromAxisAngle(camera.up,0.0025);camera.position.sub(controls.target).applyQuaternion(q).add(controls.target);}
+  controls.update();
+  ring.quaternion.copy(camera.quaternion);
+  centroid.rotation.y+=0.02;
+  renderer.render(scene,camera);
+  const w=stage.clientWidth,h=stage.clientHeight;
+  for(const {el,v} of labels){ const p=(el===centerLabel?centroid.position.clone().add(new THREE.Vector3(0,0.09,0)):v.clone()).project(camera);
+    if(p.z>1){el.style.display='none';continue;} el.style.display=''; el.style.left=((p.x+1)/2*w)+'px'; el.style.top=((1-p.y)/2*h)+'px'; }
+  requestAnimationFrame(frame);
+}
+applyCollection();
+for(let i=0;i<N;i++)alpha[i]=target[i];
+select(ON?order[ON-1]:-1);
+frame();
+</script>
+</body></html>
