@@ -7,35 +7,32 @@
   "z": "色溫 −2–+2（冷→暖）"
  },
  "_regionRule": {
-  "blaze": "x≥4.75",
-  "centers": {
-   "calm": [
-    1.7,
-    -1.4,
-    0.5
-   ],
-   "languid": [
-    2.1,
-    1.3,
-    0
-   ],
-   "glad": [
-    3,
-    0,
-    0.8
-   ],
-   "lift": [
-    3.9,
-    -0.4,
-    1.4
-   ],
-   "charge": [
-    4.2,
-    1.5,
-    -0.6
-   ]
+  "type": "octant",
+  "thresholds": {
+   "x": 3,
+   "y": 0.5,
+   "z": 0
   },
-  "zWeight": 0.5
+  "cells": {
+   "靜輕暖": "calm",
+   "靜輕冷": "still",
+   "靜重暖": "languid",
+   "靜重冷": "decay",
+   "躁輕暖": "lift",
+   "躁輕冷": "crisp",
+   "躁重暖": "boil",
+   "躁重冷": "charge"
+  },
+  "names": {
+   "calm": "放鬆",
+   "still": "平靜",
+   "languid": "要死不活",
+   "decay": "頹靡",
+   "lift": "雀躍",
+   "crisp": "冷冽",
+   "boil": "沸騰",
+   "charge": "亢奮"
+  }
  },
  "_corrWithOldAxes": {
   "x~classic": 0.12,
@@ -46,7 +43,7 @@
   "y~accessibility": 0.62,
   "z~classic": 0.07,
   "z~obscurity": -0.15,
-  "z~accessibility": -0.62
+  "z~accessibility": -0.61
  },
  "anchors": [
   {
@@ -118,7 +115,7 @@
    "x": 1.1,
    "y": -1.7,
    "z": -0.5,
-   "region": "calm",
+   "region": "still",
    "why": "鋼琴與小提琴極簡反覆，清冷"
   },
   {
@@ -226,7 +223,7 @@
    "x": 1.8,
    "y": -1.5,
    "z": -0.3,
-   "region": "calm",
+   "region": "still",
    "why": "一把吉他一副嗓子，安靜偏涼"
   },
   {
@@ -316,7 +313,7 @@
    "x": 1.8,
    "y": -0.6,
    "z": -0.3,
-   "region": "calm",
+   "region": "still",
    "why": "電鋼琴與管樂慢慢展開，空間大、略冷"
   },
   {
@@ -334,7 +331,7 @@
    "x": 2.3,
    "y": -1,
    "z": -0.6,
-   "region": "calm",
+   "region": "still",
    "why": "雙軌人聲與木吉他，輕但憂鬱偏涼"
   },
   {
@@ -352,7 +349,7 @@
    "x": 1.6,
    "y": 1.8,
    "z": -1.2,
-   "region": "languid",
+   "region": "decay",
    "why": "黑膠劈啪雜訊壓在深沉 dub 低音上，慢而糊"
   },
   {
@@ -370,7 +367,7 @@
    "x": 1.5,
    "y": 1.9,
    "z": -1.4,
-   "region": "languid",
+   "region": "decay",
    "why": "壞掉的濾波器做成的 dub，低頻厚、極冷"
   },
   {
@@ -388,7 +385,7 @@
    "x": 2.6,
    "y": 1.6,
    "z": -1.3,
-   "region": "languid",
+   "region": "decay",
    "why": "dub techno：拍子穩但被殘響淹沒，催眠"
   },
   {
@@ -406,7 +403,7 @@
    "x": 2.8,
    "y": 1.5,
    "z": -1,
-   "region": "languid",
+   "region": "decay",
    "why": "2-step 碎拍包在雨夜雜訊裡，低頻重、陰"
   },
   {
@@ -424,7 +421,7 @@
    "x": 2.2,
    "y": 1.4,
    "z": -0.9,
-   "region": "languid",
+   "region": "decay",
    "why": "trip-hop 慢拍、刮盤、冷調女聲"
   },
   {
@@ -442,7 +439,7 @@
    "x": 2.6,
    "y": 1.8,
    "z": -1.3,
-   "region": "languid",
+   "region": "decay",
    "why": "失真貝斯與慢拍，厚重陰暗"
   },
   {
@@ -622,7 +619,7 @@
    "x": 1.7,
    "y": 1,
    "z": -0.2,
-   "region": "languid",
+   "region": "decay",
    "why": "慢板迷幻，殘響與倦怠的嗓音"
   },
   {
@@ -640,7 +637,7 @@
    "x": 1.4,
    "y": 1.5,
    "z": -1.5,
-   "region": "languid",
+   "region": "decay",
    "why": "slowcore：極慢、重、冷"
   },
   {
@@ -658,7 +655,7 @@
    "x": 1.2,
    "y": 1.7,
    "z": -2,
-   "region": "languid",
+   "region": "decay",
    "why": "風琴嗡鳴與冰冷嗓音，最陰的一端"
   },
   {
@@ -676,7 +673,7 @@
    "x": 1.2,
    "y": 2,
    "z": -2,
-   "region": "languid",
+   "region": "decay",
    "why": "drone metal：極慢極重極暗"
   },
   {
@@ -694,7 +691,7 @@
    "x": 2.4,
    "y": 1.5,
    "z": -1.2,
-   "region": "languid",
+   "region": "decay",
    "why": "慢板合成器牆與殘響吉他，陰鬱厚重"
   },
   {
@@ -730,7 +727,7 @@
    "x": 2,
    "y": 0.9,
    "z": -0.3,
-   "region": "languid",
+   "region": "decay",
    "why": "慢板、殘響與倦怠的唱腔"
   },
   {
@@ -766,7 +763,7 @@
    "x": 3.1,
    "y": 0,
    "z": 1,
-   "region": "glad",
+   "region": "lift",
    "why": "中速流行搖滾，溫和明亮"
   },
   {
@@ -784,7 +781,7 @@
    "x": 3.3,
    "y": 0.2,
    "z": 1.8,
-   "region": "glad",
+   "region": "lift",
    "why": "靈魂樂大全，溫暖飽滿"
   },
   {
@@ -802,7 +799,7 @@
    "x": 2.8,
    "y": 0.3,
    "z": 1.8,
-   "region": "glad",
+   "region": "calm",
    "why": "中慢板靈魂，溫熱"
   },
   {
@@ -820,7 +817,7 @@
    "x": 2.7,
    "y": -0.8,
    "z": 1,
-   "region": "glad",
+   "region": "calm",
    "why": "和聲民謠，乾淨溫"
   },
   {
@@ -838,7 +835,7 @@
    "x": 2.9,
    "y": -0.4,
    "z": 1,
-   "region": "glad",
+   "region": "calm",
    "why": "層疊和聲與管弦，明亮帶憂"
   },
   {
@@ -855,9 +852,9 @@
    },
    "x": 2.6,
    "y": -0.9,
-   "z": 0.5,
-   "region": "glad",
-   "why": "調式爵士，從容"
+   "z": -0.2,
+   "region": "still",
+   "why": "調式爵士，從容；cool jazz 的冷調"
   },
   {
    "key": "Kraftwerk|The Man-Machine",
@@ -874,7 +871,7 @@
    "x": 3.4,
    "y": -0.3,
    "z": -1.3,
-   "region": "glad",
+   "region": "crisp",
    "why": "機械律動，乾淨而冷"
   },
   {
@@ -892,7 +889,7 @@
    "x": 3.1,
    "y": 1,
    "z": 1.1,
-   "region": "glad",
+   "region": "boil",
    "why": "爵士貝斯取樣加硬鼓，jazzy hip-hop"
   },
   {
@@ -928,7 +925,7 @@
    "x": 3.2,
    "y": 0.2,
    "z": 0.6,
-   "region": "glad",
+   "region": "lift",
    "why": "華語流行與 R&B，中速"
   },
   {
@@ -946,7 +943,7 @@
    "x": 3,
    "y": -0.2,
    "z": 0,
-   "region": "glad",
+   "region": "lift",
    "why": "民謠搖滾，直白"
   },
   {
@@ -964,7 +961,7 @@
    "x": 2.8,
    "y": 0.2,
    "z": 1.6,
-   "region": "glad",
+   "region": "calm",
    "why": "軟搖滾與 AOR 質地，溫"
   },
   {
@@ -982,7 +979,7 @@
    "x": 2.6,
    "y": -0.8,
    "z": 1.3,
-   "region": "glad",
+   "region": "calm",
    "why": "家裡錄的民謠搖滾，鬆而暖"
   },
   {
@@ -1000,7 +997,7 @@
    "x": 3,
    "y": -0.5,
    "z": 0.6,
-   "region": "glad",
+   "region": "lift",
    "why": "日語民謠搖滾，清爽"
   },
   {
@@ -1018,8 +1015,8 @@
    "x": 3,
    "y": 0.9,
    "z": -1.4,
-   "region": "languid",
-   "why": "中速但陰冷厚重；愉悅與要死不活的邊界卡"
+   "region": "charge",
+   "why": "中速但陰冷厚重；x 剛好 3.0，亢奮與頹靡的邊界卡"
   },
   {
    "key": "Curtis Mayfield|Superfly",
@@ -1036,7 +1033,7 @@
    "x": 3.6,
    "y": 0.6,
    "z": 0.9,
-   "region": "glad",
+   "region": "boil",
    "why": "放克 groove 加弦樂"
   },
   {
@@ -1054,7 +1051,7 @@
    "x": 3.6,
    "y": 0.9,
    "z": 1.2,
-   "region": "glad",
+   "region": "boil",
    "why": "爵士放克，厚實貝斯"
   },
   {
@@ -1072,7 +1069,7 @@
    "x": 3.9,
    "y": 0.6,
    "z": 0.3,
-   "region": "glad",
+   "region": "boil",
    "why": "非洲節奏的層疊 funk"
   },
   {
@@ -1108,7 +1105,7 @@
    "x": 3.1,
    "y": -0.6,
    "z": 1.4,
-   "region": "glad",
+   "region": "lift",
    "why": "都會 AOR，輕盈"
   },
   {
@@ -1252,7 +1249,7 @@
    "x": 4,
    "y": -0.8,
    "z": -0.4,
-   "region": "lift",
+   "region": "crisp",
    "why": "合成器流行，輕快偏冷"
   },
   {
@@ -1324,7 +1321,7 @@
    "x": 3.9,
    "y": 0.6,
    "z": 1.5,
-   "region": "lift",
+   "region": "boil",
    "why": "取樣狂歡，熱鬧"
   },
   {
@@ -1342,7 +1339,7 @@
    "x": 4.2,
    "y": 0.6,
    "z": 1,
-   "region": "lift",
+   "region": "boil",
    "why": "Afrobeat 長段 groove"
   },
   {
@@ -1378,7 +1375,7 @@
    "x": 4.6,
    "y": 1.6,
    "z": 0.2,
-   "region": "charge",
+   "region": "boil",
    "why": "三和弦快速龐克，粗而直"
   },
   {
@@ -1540,7 +1537,7 @@
    "x": 4.2,
    "y": 1,
    "z": 0.5,
-   "region": "charge",
+   "region": "boil",
    "why": "龐克混雷鬼與搖滾，衝"
   },
   {
@@ -1648,7 +1645,7 @@
    "x": 3.8,
    "y": 1.3,
    "z": 0.2,
-   "region": "charge",
+   "region": "boil",
    "why": "台語搖滾加電子，粗獷"
   },
   {
@@ -1720,7 +1717,7 @@
    "x": 5,
    "y": 2,
    "z": -1.5,
-   "region": "blaze",
+   "region": "charge",
    "why": "純噪音，滿格"
   },
   {
@@ -1738,7 +1735,7 @@
    "x": 5,
    "y": 0.8,
    "z": -0.4,
-   "region": "blaze",
+   "region": "charge",
    "why": "薩克斯與鼓的二重奏狂飆"
   },
   {
@@ -1756,7 +1753,7 @@
    "x": 4.9,
    "y": 1.6,
    "z": -0.2,
-   "region": "blaze",
+   "region": "charge",
    "why": "集體即興的爆發"
   },
   {
@@ -1774,7 +1771,7 @@
    "x": 5,
    "y": 2,
    "z": -1.4,
-   "region": "blaze",
+   "region": "charge",
    "why": "捶擊金屬，28 分鐘不停"
   },
   {
@@ -1792,7 +1789,7 @@
    "x": 4.9,
    "y": 2,
    "z": -2,
-   "region": "blaze",
+   "region": "charge",
    "why": "黑金屬：快、糊、冰"
   },
   {
@@ -1810,7 +1807,7 @@
    "x": 5,
    "y": 1.8,
    "z": 0,
-   "region": "blaze",
+   "region": "boil",
    "why": "噪音龐克，極速"
   },
   {
@@ -1828,7 +1825,7 @@
    "x": 4.8,
    "y": 1.6,
    "z": 0.8,
-   "region": "blaze",
+   "region": "boil",
    "why": "鼓陣與迷幻的狂喜"
   },
   {
@@ -1846,7 +1843,7 @@
    "x": 4.8,
    "y": 2,
    "z": -1.4,
-   "region": "blaze",
+   "region": "charge",
    "why": "黑金屬加二胡，快而重"
   },
   {
@@ -1882,7 +1879,7 @@
    "x": 3.2,
    "y": 0.4,
    "z": 0.6,
-   "region": "glad",
+   "region": "lift",
    "why": "第二張加進 Disco、Funk，節奏變強，往愉悅走"
   },
   {

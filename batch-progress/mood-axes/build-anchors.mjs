@@ -2,10 +2,12 @@ import fs from 'node:fs';
 import { A } from './anchors-src.mjs';
 const seed = JSON.parse(fs.readFileSync(new URL('../../seed_cards.json', import.meta.url),'utf8'));
 const idx = new Map(seed.map(c => [c[0]+'|'+c[1], c]));
-// 區域：X≥4.75 一律興奮（頂端合流），其餘取 (x,y) 最近中心
-const C = { calm:[1.7,-1.4,0.5], languid:[2.1,1.3,0.0], glad:[3.0,0.0,0.8], lift:[3.9,-0.4,1.4], charge:[4.2,1.5,-0.6] };
-const ZW = 0.5;
-const regionOf = (x,y,z) => x >= 4.75 ? 'blaze' : Object.entries(C).map(([k,[cx,cy,cz]])=>[k,(x-cx)**2+(y-cy)**2+ZW*(z-cz)**2]).sort((a,b)=>a[1]-b[1])[0][0];
+// 區域（2026-10-15 店主定八格）：三軸各切一刀，2×2×2＝8 格。門檻寫在這裡，之後可調。
+//   能量 x≥3.0 躁、否則靜；質地 y≥0.5 重、否則輕；色溫 z≥0 暖、否則冷。
+const T = { x: 3.0, y: 0.5, z: 0 };
+const CELL = { '靜輕暖':'calm','靜輕冷':'still','靜重暖':'languid','靜重冷':'decay','躁輕暖':'lift','躁輕冷':'crisp','躁重暖':'boil','躁重冷':'charge' };
+const NAME = { calm:'放鬆', still:'平靜', languid:'要死不活', decay:'頹靡', lift:'雀躍', crisp:'冷冽', boil:'沸騰', charge:'亢奮' };
+const regionOf = (x,y,z) => CELL[(x>=T.x?'躁':'靜')+(y>=T.y?'重':'輕')+(z>=T.z?'暖':'冷')];
 const out = [], miss = [], mism = [], dup = new Set();
 for (const [key,x,y,z,intent,why] of A) {
   if (dup.has(key)) { miss.push('DUP '+key); continue; } dup.add(key);
@@ -25,4 +27,4 @@ const sp = (a,b) => { const ra=rank(a), rb=rank(b), n=a.length, ma=ra.reduce((s,
 const corr = {};
 for (const n of ['x','y','z']) for (const o of ['classic','obscurity','accessibility']) corr[`${n}~${o}`] = +sp(out.map(v=>v[n]), out.map(v=>v.old[o])).toFixed(2);
 console.log(corr);
-fs.writeFileSync(new URL('./anchors-v1.json', import.meta.url), JSON.stringify({ _built:'2026-10-14', _by:'cloud-main（人工判定，尚無音訊層）', _axes:{x:'能量 1–5（靜→狂）', y:'質地 −2–+2（輕→重）', z:'色溫 −2–+2（冷→暖）'}, _regionRule:{blaze:'x≥4.75', centers:C, zWeight:ZW}, _corrWithOldAxes:corr, anchors: out }, null, 1));
+fs.writeFileSync(new URL('./anchors-v1.json', import.meta.url), JSON.stringify({ _built:'2026-10-14', _by:'cloud-main（人工判定，尚無音訊層）', _axes:{x:'能量 1–5（靜→狂）', y:'質地 −2–+2（輕→重）', z:'色溫 −2–+2（冷→暖）'}, _regionRule:{type:'octant', thresholds:T, cells:CELL, names:NAME}, _corrWithOldAxes:corr, anchors: out }, null, 1));
