@@ -1749,3 +1749,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-1 6 處：Newton「票選第一 23 次＋年度專輯」改「長年名列第一」不帶次數刊名；Scofield、Waldron & McLean（NEA 語）、Fresu & Caine「最…」改「極…」；Lena Horne 單一名卡 272 刪「終生摯友」與甘迺迪中心壓到 247。
   - out-2 9 處：Barretto 兩處、Ron Miles「最…」改「極…」；Ron Miles 刪氣喘、Yaron Herman 刪膝傷；Superblue 刪「Hargrove 第一次錄音」；Blanchard E-Collective 刪 Eric Garner 臨終與槍枝暴力句（政治只留一句）；Nelson 刪甘迺迪中心（在世者一處）。
 - 待本機：Önder Focan 上線簡介「Blue Note 第一張土耳其專輯」有並存說法、Modern Jazz Playboys 上線簡介人數（15 vs 12）、Ralph Peterson 上線簡介加入 Blakey 年份、Ferrell 卡池日本首發名、Yaron Herman 上線簡介獎項名誤（pubIssues 5）。
+
+## ar-d-133（2026-10-15）
+
+- 40 位全上架（31 full、9 thin：伊東たけし、喜多嶋修、山屋清、真梨邑ケイ、赤尾三千子、Alice Ricciardi、Aron Ottignon、ATLAS、Blue Note All-Stars），無不寫。名冊補登批第五批，日本音樂人與同一人多張掛名卡多。
+- 多名卡放寬 8 張（Sarpila & Pyysalo、Bebo 三重奏、Charlap & Rosnes、Charlap & Stewart、Evans／Jones／Mitchell、Lagrène 三重奏、Dorough & Frishberg、Hutcherson 三重奏，皆 ≤280）。同一人多卡（Charlap、Bill Evans sax、O'Farrill、村岡実、Belden）各以該編制與卡池那張為主。_BY.ALEXANDER 照 Alex da Kid 寫；ATLAS 為日本三鍵盤手錄音室團；'Hannibal' Marvin Peterson 即 Hannibal Lokumbe。
+- 搜尋超額：渡辺貞夫 with GJT、Sarpila & Pyysalo、Evans／Jones／Mitchell（g2–g4）各超 1 次，皆補第二源，放行。
+- Severi Pyysalo 已過世但兩源只寫月份、無年份，正文只寫「已過世」。
+- 審稿修 12 處：
+  - out-1 5 處：大村憲司「長期信任」加「據說」、刪過世當晚流星群；山口真文刪宣傳單源「數一數二」；村岡実兩處「最早之一」改「早期」；菊池ひみこ刪鳥取市文化賞（在世者一處）。
+  - out-2 7 處：Kähärä 刪「第一位女性得主」；Sarpila & Pyysalo「最知名」改「極」；Bebo 刪妻兒留島；Charlap & Rosnes 刪 Rosnes 領養身世（比照 ar-d-129）與婚禮地點；Lagrène 三重奏丹麥百科「唯一」改寫；Dorough & Frishberg 刪「身後獲 NEA」（年份矛盾）。
+- 待本機：渡辺貞夫 with GJT 卡池《Bird of Paradise》渡辺是否參與；山口真文上線簡介 Leeward「極少見」無源、宮間利之上線簡介芸術祭主詞不清；Kähärä 上線簡介「第一張個人專輯」誤；Bill Stewart 上線簡介「第一張掛名碟」誤（pubIssues 4）；Bob Dorough NEA 年份。

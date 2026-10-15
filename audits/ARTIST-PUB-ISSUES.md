@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1354 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1361 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1356,5 +1356,12 @@
 | ar-d-132 | Ralph Peterson Quintet | V | 1984 年畢業之後被 Art Blakey 挑去當第二鼓手 | 英文維基寫他 1983 年加入 Jazz Messengers 當第二鼓手（1984 年畢業於 Rutgers 是另一件事），jazz.fm 訃聞摘要也寫 Blakey 1983 年選中他；『畢業之後』的順序與年份可能有誤，建議改成『1983 年被 Blakey 挑去當第二鼓手，1984 年才從 Rutgers 畢業』或去掉順序。 | https://en.wikipedia.org/wiki/Ralph_Peterson_Jr. |
 | ar-d-132 | Yaron Herman | Y | 2008 年拿過 Victoire du Jazz 的年度新人獎 | 獎項全名是 Révélation instrumentale（器樂新秀／年度器樂新秀），不是泛稱的年度新人獎；法文維基寫「révélation instrumentale française」，Numéro 2025 年專訪寫「Révélation instrumentale de l'année」。 | https://numero.com/culture/musique/les-secrets-de-yaron-herman-le-pianiste-capable-dimproviser-4-heures-sur-scene/ |
 | ar-d-133 | 宮間利之とニューハード + 佐藤允彦 | Yamataifu | 這張碟替他拿到 1972 年的芸術祭優秀賞 | 「他」主詞不清，官網與日文維基將《邪馬台賦》1972 年芸術祭優秀賞記在樂團與佐藤允彦的合作作品上；建議寫成「這張合作盤拿下 1972 年芸術祭優秀賞」 | https://newherd.jp/about/ |
+| ar-d-133 | 山口真文カルテット | Leeward | 1970 年代的日本爵士盤上極少見 | 「極少見」沒有可查的來源，屬推論；Discogs 只寫他吹 sopranino，建議刪去「極少見」，改寫成「他吹的其中一把是音域在高音薩克斯風之上的 sopranino」 | https://api.discogs.com/releases/8762846 |
 | ar-d-133 | Anna-Mari Kähärän Orkesteri | Anna-Mari Kähärän Orkesteri | 這是她的第一張個人專輯 | fi 維基與 jazzfinland 都把 2005 年這張寫成 Anna-Mari Kähärän Orkesteri 的首張專輯（樂團名義），她更早已有 How Many Sisters 等人聲團專輯；『第一張個人專輯』可改為『樂團首張專輯』或拿掉『個人』。 | https://fi.wikipedia.org/wiki/Anna-Mari_K%C3%A4h%C3%A4r%C3%A4 |
 | ar-d-133 | Bill Stewart | Snide Remarks | 1995 年出版，這是他第一張掛自己名字的碟 | 他的第一張個人專輯是 1990 年日本 Jazz City 發行的《Think Before You Think》（Lovano、Dave Holland、Marc Copland 參與），Snide Remarks 是他的第二張個人專輯，應改為「他在 Blue Note 的第一張」 | https://en.wikipedia.org/wiki/Bill_Stewart_(musician) |
+| ar-d-134 | Booster | Loop in Release | 整張碟在他 Bougival 的家裡做完；錄音與混音都由他一人在 2000 至 2001 年間完成 | Discogs 版權註記寫『Recorded and mixed by Booster at his home, Bougival, 2000-2001, except some tracks recorded at Studio Tex Avril, Ivry』，有幾軌不在家裡錄；建議改成『主要在家裡完成』 | https://www.discogs.com/release/718356 |
+| ar-d-134 | Booster | Loop in Release | 10 軌裡有四首超過 9 分鐘 | Discogs 曲長：9:01、7:21、4:55、3:22、4:02、1:34、8:19、1:51、9:00、9:24；超過 9 分鐘的只有 2 首（9:01 與 9:24），9:00 整的 1 首剛好 9 分，8:19 的 1 首未達；最多算『四首在 8 分鐘以上』 | https://www.discogs.com/release/718356 |
+| ar-d-134 | Brisa Roché | The Chase | 父親過世後才搬到法國；十八歲在巴黎地鐵賣唱 | 此為英文維基說法（單一來源）；2005 年 1 月 North Coast Journal 專訪寫她的行程是 Humboldt 郡到法國、再到西雅圖、再回 Humboldt，約 2002 年才因錄音計畫回法國，順序與維基不同；建議把『地鐵賣唱』『父親過世後』改為『據維基』或刪去時序 | https://northcoastjournal.com/010605/preview0106.html |
+| ar-d-134 | Chris Dave and The Drumhedz | Chris Dave and The Drumhedz | 向 Jimmy Jam 自我推薦，Mint Condition 就找他當鼓手 | Okayplayer 專訪說法是 Jimmy Jam 與 Terry Lewis 到霍華德校園聽他演奏後帶他去排練；與 Blue Note 藝人頁『翹課去自我推薦』兩說並存，建議簡介改成較中性寫法或標明出處 | https://www.okayplayer.com/interviews/chris-daddy-dave-drumhedz-make-feel-interview.html |
+| ar-d-134 | Eric Darius | Goin' All Out | 專輯在 Top Contemporary Jazz 榜最高第 9 名 | 維基 Eric Darius 條目寫該專輯在 Billboard 爵士專輯榜最高第 14 名（8 月 2 日號起進 Top Contemporary Jazz 的事實庫記載另有出處）；榜名與名次對不上，建議本機對 Billboard 原榜（事實庫那期 PDF）再核一次最高名次。 | https://en.wikipedia.org/wiki/Eric_Darius |
+| ar-d-134 | Eric Darius | Goin' All Out | 同名曲在 2008 年 10 月 25 日那一週登上 Smooth Jazz Songs 榜首 | 維基寫同名單曲同週登上的是『Contemporary Jazz chart』第 1 名，簡介寫 Smooth Jazz Songs；兩個榜名不同，需對原榜確認用哪個名稱。 | https://en.wikipedia.org/wiki/Eric_Darius |
