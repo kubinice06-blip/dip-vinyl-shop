@@ -65,6 +65,7 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--glow);outline-o
 .gate[hidden]{display:none}
 .cover{width:96px;height:96px;object-fit:cover;border:1px solid var(--line);image-rendering:auto}
 #detail{align-content:start}
+.coords small{font-size:9px;color:var(--ink-dim)}
 .src{font-family:var(--mono);font-size:10px;color:var(--ink-dim);letter-spacing:.08em}
 </style>
 </head><body>
@@ -73,7 +74,7 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--glow);outline-o
   <header>
     <div class="eyebrow">dip vinyl · 店主實驗頁 · 不公開</div>
     <h1>我的唱片櫃星圖</h1>
-    <p class="sub">每張收藏是一顆星，位置由三軸決定：上下是能量（靜到躁）、左右是質地（輕到重）、前後是色溫（冷到暖）。三軸各切一刀成八格，每格一個詞。下方時間軸照你收進唱片櫃的先後播放，看星空怎麼長出來。</p>
+    <p class="sub">每張收藏是一顆星，位置由三軸決定：上下是能量（靜到躁）、左右是質地（輕到重）、前後是色溫（冷到暖）。位置用全池排名（百分位）定，所以星星會均勻撒滿整個空間；八格可切換三種切法比較。下方時間軸照你收進唱片櫃的先後播放，看星空怎麼長出來。</p>
   </header>
 
   <div class="gate" id="gate"><div id="gateMsg">正在確認登入…</div><button id="loginBtn" type="button" hidden>用 Google 登入</button></div>
@@ -94,6 +95,13 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--glow);outline-o
       <div class="row">
         <button id="ghost" type="button" aria-pressed="false">顯示全池（暗）</button>
         <button id="spin" type="button" aria-pressed="true">緩慢自轉</button>
+        <button id="squeeze" type="button" aria-pressed="false">往中間收</button>
+      </div>
+      <div class="row" id="modes" role="group" aria-label="八格切法">
+        <label>八格切法</label>
+        <button type="button" data-m="equal" aria-pressed="true">平均（各 12.5%）</button>
+        <button type="button" data-m="half" aria-pressed="false">折衷</button>
+        <button type="button" data-m="semantic" aria-pressed="false">語意門檻</button>
       </div>
       <div class="regions" id="regions"></div>
       <div class="legend" id="legend"></div>
@@ -102,7 +110,9 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--glow);outline-o
     <div class="box" id="detail"><div class="empty">點一顆星，這裡會顯示專輯與它的三軸座標。</div></div>
   </div>
 
-  <p class="note">座標是 <b>v0 暫估</b>：104 張人工錨點以外，全用子曲風標籤平均＋硬蕊度微調算的，對錨點驗證三軸各約八成落在正確一側、八格只有約一半對上。看的是整體分布與手感，個別星星放錯位置很正常；正式版要等音訊層與模型層。黃色那顆是收藏的引力中心。八格名稱暫定。</p>
+  <p class="note">座標是 <b>v0 暫估</b>：104 張人工錨點以外，全用子曲風標籤平均＋硬蕊度微調算的，個別星星放錯位置很正常；正式版要等音訊層與模型層。
+  三種切法：<b>平均</b>＝八格各 12.5%（條件中位數）；<b>語意門檻</b>＝固定「能量 3.0／質地 +0.5／色溫 0」，分布不平均但最貼字面；<b>折衷</b>＝兩者門檻取中點。
+  點星顯示的 0–100 是後台數值（全池排名），不給玩家看。黃色那顆是收藏的引力中心。八格名稱暫定。</p>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -122,30 +132,35 @@ const user=await new Promise(res=>onAuthStateChanged(auth,u=>{
   res(u);}));
 gateMsg.textContent='正在讀唱片櫃與座標…';loginBtn.hidden=true;
 const idOf=(a,b)=>((a||'')+'|'+(b||'')).toLowerCase().replace(/\//g,'-').trim();
-const [snap,moods]=await Promise.all([getDocs(collection(db,'collections',user.uid,'cards')),fetch('data/mood/card-moods-v0.json',{cache:'no-cache'}).then(r=>r.json())]);
+const [snap,moods,SCALE]=await Promise.all([getDocs(collection(db,'collections',user.uid,'cards')),fetch('data/mood/card-moods-v0.json',{cache:'no-cache'}).then(r=>r.json()),fetch('data/mood/scale-v0.json',{cache:'no-cache'}).then(r=>r.json())]);
+// 與 build-scale.mjs 相同的 FNV-1a，八格門檻上的並列靠它切開
+const hashId=s=>{let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}return h>>>0;};
 const coll=new Map();snap.docs.forEach(d=>{const v=d.data();coll.set(idOf(v.artist,v.album)||d.id,v);});
 const DATA=[];let unmatched=[];
-for(const [id,v] of Object.entries(moods.cards)){const c=coll.get(id);const [x,y,z,g,anc]=v;
+for(const [id,v] of Object.entries(moods.cards)){const c=coll.get(id);const [rx,ry,rz,g,anc,x,y,z]=v;
   const [ar,...al]=id.split('|');
-  DATA.push({id,artist:c?.artist||ar,album:c?.album||al.join('|'),x,y,z,genre:(c?.mapGenres?.[0])||moods._genres[g]||'',anchor:!!anc,owned:!!c,
+  DATA.push({id,h:hashId(id),artist:c?.artist||ar,album:c?.album||al.join('|'),x,y,z,rx,ry,rz,genre:(c?.mapGenres?.[0])||moods._genres[g]||'',anchor:!!anc,owned:!!c,
     t:c?(c.obtainedAt||c.lastObtainedAt||0):0,cover:c?.coverUrl||'',count:c?.count||0,tier:c?.hall?'hall':c?.pearl?'pearl':c?.heresy?'heresy':''});}
 for(const [id,c] of coll){if(!moods.cards[id])unmatched.push(c.artist+'《'+c.album+'》');}
 document.getElementById('gate').hidden=true;document.getElementById('stage').hidden=false;document.getElementById('panel').hidden=false;
 const REG = {calm:'放鬆',still:'平靜',languid:'要死不活',decay:'頹靡',lift:'雀躍',crisp:'冷冽',boil:'沸騰',charge:'亢奮'};
-// 八格：三軸各切一刀（能量 x≥3.0 躁、質地 y≥0.5 重、色溫 z≥0 暖），門檻與 build-anchors.mjs 的 T 相同
-const T = moods._thresholds;
+// 八格：門檻樹（scale-v0.json，MOOD_SCALE_PLAN §2）。x、y、z 都是全池百分位 0–100。
+let mode = SCALE.defaultTree, TREE = SCALE.trees[mode];
 const CELL = {'靜輕暖':'calm','靜輕冷':'still','靜重暖':'languid','靜重冷':'decay','躁輕暖':'lift','躁輕冷':'crisp','躁重暖':'boil','躁重冷':'charge'};
 const CODE = Object.fromEntries(Object.entries(CELL).map(([c,k])=>[k,c]));
-const cellOf = (x,y,z) => CELL[(x>=T.x?'躁':'靜')+(y>=T.y?'重':'輕')+(z>=T.z?'暖':'冷')];
+const above = (p,h,at) => p>at.p || (p===at.p && h>=at.h);
+const cellOf = (x,y,z,h=0) => { const e=above(x,h,TREE.x)?'躁':'靜', w=above(y,h,TREE.y[e])?'重':'輕', t=above(z,h,TREE.z[e+w])?'暖':'冷'; return CELL[e+w+t]; };
 const BAR = {calm:'#9ccf6a',still:'#59c3e0',languid:'#a98bf0',decay:'#6a8cf0',lift:'#f5d27a',crisp:'#4fd1a5',boil:'#f39c6b',charge:'#e2694d'};
-// 每格在資料空間的範圍 [x0,x1],[y0,y1],[z0,z1]
-const BOUNDS = k => { const c=CODE[k]; return [c[0]==='躁'?[T.x,5]:[1,T.x], c[1]==='重'?[T.y,2]:[-2,T.y], c[2]==='暖'?[T.z,2]:[-2,T.z]]; };
-DATA.forEach(d=>d.region=cellOf(d.x,d.y,d.z));
+// 每格在百分位空間的範圍（隨切法變）
+const BOUNDS = k => { const c=CODE[k], tx=TREE.x.p, ty=TREE.y[c[0]].p, tz=TREE.z[c[0]+c[1]].p; return [c[0]==='躁'?[tx,100]:[0,tx], c[1]==='重'?[ty,100]:[0,ty], c[2]==='暖'?[tz,100]:[0,tz]]; };
+const assignCells = () => DATA.forEach(d=>d.region=cellOf(d.x,d.y,d.z,d.h));
+assignCells();
 const GENRE = {rock:['搖滾','#e2694d'],jazz:['爵士','#e8b54a'],electronic:['電子','#59c3e0'],soul:['靈魂放克','#e07ab8'],hiphop:['嘻哈','#a98bf0'],folk:['民謠','#9ccf6a'],classical:['古典','#d9d4c7'],world:['世界','#4fd1a5'],pop:['流行','#f39c6b'],blues:['藍調','#6a8cf0']};
 const TIER = {hall:'殿堂',pearl:'流亡',heresy:'異端'};
 
-// 座標：三軸 → 場景。上＝能量、右＝重、前＝暖
-const P = a => new THREE.Vector3((a.y)/2*1.0, (a.x-3)/2*1.0, (a.z)/2*1.0);
+// 座標：百分位 → 場景 [-1,1]。上＝能量、右＝重、前＝暖。「往中間收」只是顯示層的冪次壓縮，不動資料
+let squeeze = false; const S = u => squeeze ? Math.sign(u)*Math.pow(Math.abs(u),1.7) : u;
+const P = a => new THREE.Vector3(S(a.y/50-1), S(a.x/50-1), S(a.z/50-1));
 
 const stage = document.getElementById('stage');
 const renderer = new THREE.WebGLRenderer({antialias:false, alpha:true});
@@ -191,7 +206,9 @@ const sky = new THREE.ShaderMaterial({transparent:true,depthWrite:false,blending
 
 // 星星：方形像素核心＋十字閃光，加色混合
 const N = DATA.length, pos = new Float32Array(N*3), col = new Float32Array(N*3), size = new Float32Array(N), alpha = new Float32Array(N);
-DATA.forEach((d,i)=>{const v=P(d);pos.set([v.x,v.y,v.z],i*3);const c=new THREE.Color(GENRE[d.genre]?.[1]||'#ffffff');col.set([c.r,c.g,c.b],i*3);size[i]=d.owned?(d.tier?34:22):12;});
+const placeStars = () => DATA.forEach((d,i)=>{const v=P(d);pos.set([v.x,v.y,v.z],i*3);});
+placeStars();
+DATA.forEach((d,i)=>{const c=new THREE.Color(GENRE[d.genre]?.[1]||'#ffffff');col.set([c.r,c.g,c.b],i*3);size[i]=d.owned?(d.tier?34:22):12;});
 const geo = new THREE.BufferGeometry();
 geo.setAttribute('position',new THREE.BufferAttribute(pos,3));
 geo.setAttribute('color',new THREE.BufferAttribute(col,3));
@@ -212,16 +229,18 @@ scene.add(centroid);
 const glowTex = (()=>{const c=document.createElement('canvas');c.width=c.height=128;const x=c.getContext('2d');
   const g=x.createRadialGradient(64,64,0,64,64,64);g.addColorStop(0,'rgba(255,255,255,1)');g.addColorStop(0.35,'rgba(255,255,255,.35)');g.addColorStop(1,'rgba(255,255,255,0)');
   x.fillStyle=g;x.fillRect(0,0,128,128);return new THREE.CanvasTexture(c);})();
-const nebulae = {}, cellCenter = {};
-seed = 31;
-Object.keys(REG).forEach(k=>{const [bx,by,bz]=BOUNDS(k);
-  const a=P({x:bx[0],y:by[0],z:bz[0]}), b=P({x:bx[1],y:by[1],z:bz[1]});
-  const size=b.clone().sub(a), mid=a.clone().add(b).multiplyScalar(0.5); cellCenter[k]=mid;
-  const mat=new THREE.SpriteMaterial({map:glowTex,color:new THREE.Color(BAR[k]),transparent:true,opacity:0,depthWrite:false,blending:THREE.AdditiveBlending});
-  for(let j=0;j<4;j++){const sp=new THREE.Sprite(mat);
-    sp.position.set(mid.x+(rnd()-.5)*size.x*0.5, mid.y+(rnd()-.5)*size.y*0.5, mid.z+(rnd()-.5)*size.z*0.5);
-    const sc=Math.min(size.x,size.y,size.z)*(0.9+rnd()*0.7); sp.scale.set(sc,sc,1); scene.add(sp);}
-  nebulae[k]=mat;});
+const nebulae = {}, cellCenter = {}; let nebSprites = [];
+Object.keys(REG).forEach(k=>{nebulae[k]=new THREE.SpriteMaterial({map:glowTex,color:new THREE.Color(BAR[k]),transparent:true,opacity:0,depthWrite:false,blending:THREE.AdditiveBlending});cellCenter[k]=new THREE.Vector3();});
+function buildNebulae(){
+  nebSprites.forEach(sp=>scene.remove(sp)); nebSprites=[]; seed = 31;
+  Object.keys(REG).forEach(k=>{const [bx,by,bz]=BOUNDS(k);
+    const a=P({x:bx[0],y:by[0],z:bz[0]}), b=P({x:bx[1],y:by[1],z:bz[1]});
+    const size=b.clone().sub(a), mid=a.clone().add(b).multiplyScalar(0.5); cellCenter[k].copy(mid);
+    for(let j=0;j<4;j++){const sp=new THREE.Sprite(nebulae[k]);
+      sp.position.set(mid.x+(rnd()-.5)*size.x*0.5, mid.y+(rnd()-.5)*size.y*0.5, mid.z+(rnd()-.5)*size.z*0.5);
+      const sc=Math.max(0.12,Math.min(Math.abs(size.x),Math.abs(size.y),Math.abs(size.z)))*(0.9+rnd()*0.7); sp.scale.set(sc,sc,1); scene.add(sp); nebSprites.push(sp);}});
+}
+buildNebulae();
 
 // HTML 標籤
 const labels = [];
@@ -230,7 +249,7 @@ addLabel('躁',new THREE.Vector3(0,1.12,0),'axis');addLabel('靜',new THREE.Vect
 addLabel('重',new THREE.Vector3(1.14,0,0),'axis');addLabel('輕',new THREE.Vector3(-1.14,0,0),'axis');
 addLabel('暖',new THREE.Vector3(0,0,1.14),'axis');addLabel('冷',new THREE.Vector3(0,0,-1.14),'axis');
 const regLabels = {};
-Object.keys(REG).forEach(k=>{regLabels[k]=addLabel(REG[k],cellCenter[k].clone(),'region');});
+Object.keys(REG).forEach(k=>{regLabels[k]=addLabel(REG[k],cellCenter[k],'region');});   // 共用向量：重排時標籤跟著動
 const centerLabel = addLabel('引力中心',new THREE.Vector3(),'center');
 
 // 收藏順序：固定種子洗牌，模擬一位玩家慢慢抽到的順序
@@ -241,8 +260,10 @@ document.getElementById('nOwned').textContent = ON;
 const target = new Float32Array(N);
 let lit = ON, ghost = false;
 const regEl = document.getElementById('regions');
-const totals = {}; DATA.forEach(d=>totals[d.region]=(totals[d.region]||0)+1);
-regEl.innerHTML = Object.keys(REG).map(k=>`<div class="reg" id="r-${k}"><div class="c">${CODE[k]}</div><div class="t">${REG[k]}</div><div class="n"><span>0</span> 張 · 全池 ${totals[k]||0}</div><div class="bar"><i style="background:${BAR[k]}"></i></div></div>`).join('');
+let totals = {};
+function renderRegions(){ totals = {}; DATA.forEach(d=>totals[d.region]=(totals[d.region]||0)+1);
+regEl.innerHTML = Object.keys(REG).map(k=>`<div class="reg" id="r-${k}"><div class="c">${CODE[k]}</div><div class="t">${REG[k]}</div><div class="n"><span>0</span> 張 · 全池 ${totals[k]||0}</div><div class="bar"><i style="background:${BAR[k]}"></i></div></div>`).join(''); }
+renderRegions();
 document.getElementById('legend').innerHTML = Object.entries(GENRE).filter(([g])=>DATA.some(d=>d.genre===g)).map(([g,[n,c]])=>`<span style="--c:${c}">${n}</span>`).join('');
 
 function applyCollection(){
@@ -252,7 +273,7 @@ function applyCollection(){
   document.getElementById('nLit').textContent = lit;
   Object.keys(REG).forEach(k=>{const n=cnt[k]||0,t=Math.max(1,lit),el=document.getElementById('r-'+k);el.querySelector('span').textContent=n;el.querySelector('i').style.width=(n/t*100)+'%';regLabels[k].classList.toggle('lit',n>=3);nebulae[k].opacity=0.015+0.3*(n/t);});
   if(lit>0){const c={x:cx/lit,y:cy/lit,z:cz/lit};centroid.visible=true;centroid.position.copy(P(c));centerLabel.hidden=false;
-    const best=cellOf(c.x,c.y,c.z);
+    const best=cellOf(c.x,c.y,c.z);   // 重心沒有卡鍵，門檻上的並列一律歸下半
     centerLabel.textContent=`引力中心 · ${REG[best]}`;}
   else{centroid.visible=false;centerLabel.hidden=true;}
 }
@@ -277,7 +298,8 @@ function select(i){
   el.innerHTML=`<div class="card">${d.cover?`<img class="cover" src="${esc(d.cover)}" alt="" loading="lazy" referrerpolicy="no-referrer">`:''}<div class="artist">${esc(d.artist)}</div><div class="album">${esc(d.album)}</div>
   <div class="tag">${REG[d.region]} · ${g[0]}${d.tier?' · '+TIER[d.tier]:''}</div>
   <div class="src">${d.anchor?'人工錨點':'子曲風暫估'}${d.owned?` · 收進 ${day}${d.count>1?' · ×'+d.count:''}`:' · 未收藏'}</div>
-  <div class="coords"><div><em>能量</em>${d.x.toFixed(1)}</div><div><em>質地</em>${(d.y>0?'+':'')+d.y.toFixed(1)}</div><div><em>色溫</em>${(d.z>0?'+':'')+d.z.toFixed(1)}</div></div></div>`;
+  <div class="coords"><div><em>能量</em>${d.x}<small>原始 ${d.rx.toFixed(2)}</small></div><div><em>質地</em>${d.y}<small>原始 ${(d.ry>0?'+':'')+d.ry.toFixed(2)}</small></div><div><em>色溫</em>${d.z}<small>原始 ${(d.rz>0?'+':'')+d.rz.toFixed(2)}</small></div></div>
+  <div class="src">0–100＝全池排名（後台數值，不給玩家看）</div></div>`;
 }
 let down=null;
 let dragging=false;
@@ -301,6 +323,12 @@ playBtn.addEventListener('click',()=>{ if(timer){clearInterval(timer);timer=null
   if(lit>=ON){lit=0;} playBtn.textContent='暫停'; const step=Math.max(1,Math.ceil(ON/160)); timer=setInterval(()=>{lit=Math.min(ON,lit+step);slider.value=lit;applyCollection();if(lit>=ON){clearInterval(timer);timer=null;playBtn.textContent='重播收藏歷程';}},70); });
 ghostBtn.addEventListener('click',()=>{ghost=!ghost;ghostBtn.setAttribute('aria-pressed',ghost);applyCollection();});
 spinBtn.addEventListener('click',()=>{spinOn=!spinOn;spinBtn.setAttribute('aria-pressed',spinOn);});
+function relayout(){ placeStars(); geo.attributes.position.needsUpdate=true; buildNebulae();
+  if(selected>=0) ring.position.set(pos[selected*3],pos[selected*3+1],pos[selected*3+2]); applyCollection(); }
+document.getElementById('squeeze').addEventListener('click',e=>{squeeze=!squeeze;e.currentTarget.setAttribute('aria-pressed',squeeze);relayout();});
+document.getElementById('modes').addEventListener('click',e=>{const m=e.target.dataset.m;if(!m||m===mode)return;
+  mode=m;TREE=SCALE.trees[m];document.querySelectorAll('#modes button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.m===m));
+  assignCells();renderRegions();relayout();if(selected>=0)select(selected);});
 
 function resize(){const w=stage.clientWidth,h=stage.clientHeight;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();controls.handleResize();const want=3.2*Math.max(1,1.15/camera.aspect);camera.position.sub(controls.target).setLength(Math.min(controls.maxDistance,want)).add(controls.target);}
 new ResizeObserver(resize).observe(stage); resize();

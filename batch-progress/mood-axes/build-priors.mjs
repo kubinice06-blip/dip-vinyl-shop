@@ -73,7 +73,7 @@ const fit = [0, 0, 0]; { const num = [0, 0, 0]; let den = 0;
 
 const hash = s => { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; };
 const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
-const r1 = v => Math.round(v * 10) / 10;
+const r2 = v => Math.round(v * 100) / 100;   // 兩位小數：百分位化時才不會大量並列（MOOD_SCALE_PLAN §1.1）
 function prior(r, jitter = true) {
   const b = base(r.sk, r.genres); if (!b) return null;
   const d = (r.acc || 3) - 3, h = hash(r.id);
@@ -94,11 +94,11 @@ for (const r of rows) {
   if (a) { v = [a.x, a.y, a.z]; src = 'anchor'; fromAnchor++; }
   else { const p = prior(r); if (!p) { none++; continue; } v = p.v; src = p.src; src === 'subgenre' ? fromSub++ : fromGenre++; }
   const g = GENRES.indexOf((r.genres || []).find(g => MAIN[g]));
-  out[r.id] = [r1(v[0]), r1(v[1]), r1(v[2]), g, src === 'anchor' ? 1 : 0];
+  out[r.id] = [r2(v[0]), r2(v[1]), r2(v[2]), g, src === 'anchor' ? 1 : 0];
   const c = cellOf(...out[r.id].slice(0, 3)); cnt[c] = (cnt[c] || 0) + 1;
 }
 const file = { _v: 'v0-subgenre-prior', _built: new Date().toISOString().slice(0, 10),
-  _note: '情緒三軸暫定座標（子曲風先驗＋硬蕊度微調＋104 張錨點）。[x 能量, y 質地, z 色溫, 主曲風序號, 是否錨點]。只給星圖實驗頁用，不是正式分類。',
+  _note: '情緒三軸暫定座標（子曲風先驗＋硬蕊度微調＋104 張錨點）。[x 能量, y 質地, z 色溫（兩位小數原始值）, 主曲風序號, 是否錨點]；build-scale.mjs 另補三個百分位 p。只給星圖實驗頁用，不是正式分類。',
   _genres: GENRES, _thresholds: T, cards: out };
 fs.writeFileSync(R('../../data/mood/card-moods-v0.json'), JSON.stringify(file));
 const report = { n, cellAgree: same, mae: err.map(e => +(e / n).toFixed(2)), sideAgree: sign, accFit: fit,
