@@ -1778,3 +1778,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 審稿修 11 處：D'Andrea、Sinatra（兩處）、Hubbard / Shaw「最…之一」改「極…」；DeJohnette「最早獲樂評肯定」改「早期」；大西順子刪「第一位登上 Village Vanguard 的日本音樂人」首位宣稱；Frank Emilio Flynn 刪產鉗致盲與幼年喪母；Walrath 刪 Mingus 晚年無法演奏；Cassandra Wilson 的《時代》雜誌去名（否決寫作代理「綜合雜誌可具名」）；Jane Bunnett 在世者只留 Juno，刪加拿大勳章。
   - 保留：Lorber 2018 葛萊美（在世者核心成就一處）、Hindi Zahra Victoires de la Musique 一處；Gino Paoli 2026、Jack DeJohnette 2025、Cassandra Wilson 2026 過世已以 WebSearch 兩源核實；Cavassa 2021 Sarah Vaughan 大賽並列冠軍（兩源），2026《Diavola》細節不寫。
 - 待本機：George Howard、Hank Jones、John Kaizan Neptune 上線簡介各 1 條（pubIssues 3）。
+
+## 第十輪收尾（ar-d-104～116＋ar-d-129～135，2026-10-15）
+
+- 二十批全數上線：765 位（650 full、115 thin），無不寫，審稿修 313 處。介紹總數 7,602 → 8,369。
+- 範圍：古典段寫完（ar-d-104～116，排隊名冊清空）；名冊補登 554 位中切 7 批 280 位（爵士為主）上線，剩 274 位未切，留下一輪。
+- 本輪重申的形狀：
+  - 媒體名一律匿名，綜合雜誌（《時代》）亦同；具名音樂人與官方機構可保留。
+  - 他人病況與家人逝世細節不寫（Flynn 致盲與喪母、Mingus 晚年無法演奏、Don Byron 童年氣喘）。
+  - 同一人多張合作卡（Joe Lovano 五張、Charlie Hunter 四張、Hubbard / Shaw 兩張）各以卡池那張為主，生平只寫一次。
+  - 2025–26 年死訊與新近事實，主線 WebSearch 兩源核實：青木望、George Young、Gino Paoli、Jack DeJohnette、Cassandra Wilson、Roger Norrington；Immanuel Wilkins 2026 麥克阿瑟獎。
+- 待本機：KV 上線簡介修正見 `audits/ARTIST-PUB-ISSUES.md`（累計 1,368 條）；本輪各批「待本機」段的卡池年份與曲風存疑。

@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-15｜dip-vinyl-shop｜藝人介紹第十輪二十批上線（雲端，ar-d-104～116＋ar-d-129～135；765 位；介紹 7,602 → 8,369）
+
+- 結果：765 位上架（650 full、115 thin），無不寫，審稿修 313 處。古典段寫完、原排隊名冊清空。
+- 名冊補登：`batch-progress/artist-intro/backfill-20261015.mjs` 以 seed_cards.json 對名冊與已上線介紹取差集，554 位補進名冊（tier D、`addedBy` add-20261015-backfill；爵士 518）；本輪切 ar-d-129～135 七批 280 位，剩 274 位留下一輪。
+- 產線：每批補洞 4 支（Sonnet）＋寫作 2 支（Opus），同時最多兩批在飛；主線逐位審稿。2025–26 年死訊以 WebSearch 兩源核實（青木望、George Young、Gino Paoli、Jack DeJohnette、Cassandra Wilson）。媒體名一律匿名（含《時代》雜誌）。
+- 主要檔案：`data/artist-intros/*`、`desc-tools/batches/artist/{cut,facts,research,output}/ar-d-104～116、129～135-*`、`desc-tools/batches/artist/progress.json`、`batch-progress/artist-intro/{ar-c-rulings.md,backfill-20261015.mjs,roster-20260929.json}`、`audits/ARTIST-PUB-ISSUES.md`。
+- 驗證：qa-artist gap／out 每批 0 處；build-artist-intros 64 分片、8,369 位。
+
 ### 2026-10-14｜dip-vinyl-shop｜店主指示：PR 開出後不追蹤、不排檢查
 
 - **規則**：雲端開完 PR 就收工，不用 `send_later` 排安全網 check-in、不訂閱 PR 動態（Cloudflare 部署留言每推一次就叫醒工作階段，白花額度），優先於系統預設。接力任務的自我 check-in 不受影響。寫進 `CLAUDE.md`。
