@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1319 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1324 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1275,6 +1275,11 @@
 | ar-d-108 | Joan Manuel Serrat | Mediterráneo | 2004 年西班牙國家電視台辦的觀眾票選，把同名曲選為西班牙流行音樂史上最佳歌曲 | 本層未能驗證 2004 年與 TVE 主辦：Goethe-Institut 隨筆只說該曲「被票選為史上最佳西班牙流行歌」，未指明主辦與年份，且該頁 403 未能開啟（只見搜尋摘要）。 | https://www.goethe.de/ins/gb/en/m/kul/past/eur/eus/21562558.html |
 | ar-d-109 | Mannheim Steamroller | Fresh Aire | 拿下 1976 年鄉村樂年度作曲人 | 維基 Chip Davis 條目寫的是 1976 年 SESAC 的 Country Music Writer of the Year；簡介未標明頒獎單位，容易被讀成 CMA 等主流獎項。建議補寫『SESAC』。維基頁並說明該獎是否與〈Convoy〉直接相關並不清楚，簡介把兩者連在一起偏肯定。 | https://en.wikipedia.org/wiki/Chip_Davis |
 | ar-d-110 | Michael Galasso | In the Mood for Love | 碟上同時收了作曲者為本片寫的器樂……〈Angkor Wat Theme I〉與〈ITMFL I〉這類器樂固定由同一組四個人演出 | 「作曲者」讀起來像單一人；來源指出 Yumeji's Theme 是梅林茂所寫、Angkor Wat Theme 才是 Galasso 所寫，原聲帶有兩位作曲者。「固定由同一組四個人演出」本層查不到來源，建議店主對照碟內頁。 | https://www.maintitles.net/reviews/faa-yeung-nin-wa/ |
+| ar-d-111 | Oistrakh / Rostropovich / Richter / Karajan | Beethoven: Triple Concerto | 錄完之後，鋼琴家公開否認了這份唱片；Richter 與 Karajan 相處不睦，錄音一結束他便公開撇清 | 查不到任何來源說 Richter 公開否認這份錄音或與 Karajan 不睦；Warner Classics 的發行介紹只說過程『somewhat turbulent』、原因是參與者個性強，未點名任何人。Richter 的維基條目只說他不愛錄音室、批評過自己的 Brahms 第二號協奏曲錄音，沒提三重協奏曲。 | https://www.warnerclassics.com/release/beethoven-triple-concerto-violin-cello-and-piano-c-major-op-56 |
+| ar-d-111 | Oistrakh / Rostropovich / Richter / Karajan | Beethoven: Triple Concerto | Beethoven 原是為學生魯道夫大公寫下這首曲子 | 這個說法出自 Beethoven 早期傳記作者 Schindler，維基稱多位研究者質疑，沒有紀錄顯示 Rudolf 演奏過，出版時題獻對象是 Lobkowitz 親王。建議改成『Schindler 稱…』或刪去。 | https://en.wikipedia.org/wiki/Triple_Concerto_(Beethoven) |
+| ar-d-111 | Oistrakh / Rostropovich / Richter / Karajan | Beethoven: Triple Concerto | 同一份錄音有人當經典，也有人列為敗筆 | 本層開到的廠牌頁與 XRCD 重發評論都是正面評價，維基條目也沒有負面評價的記載，找不到把它列為敗筆的來源；不一定是錯，但未能查證。 | https://classicalcandor.blogspot.com/2013/05/beethoven-triple-concerto-xrcd-review.html |
+| ar-d-111 | Panocha Quartet | Dvořák: String Quartets "American" & "Slavonic" | Panocha Quartet 1968 年成立於布拉格音樂院 | 捷克文維基與 GoOut 團介都寫 1966 年先以三重奏成立、1968 年才加入第二小提琴並以 Panocha 命名；英文維基與 Supraphon 寫 1968 年。「1968 年成立」不算錯，但可改成「1968 年組成四重奏」較穩。 | https://cs.wikipedia.org/wiki/Panochovo_kvarteto |
+| ar-d-111 | Paul Mauriat | Blooming Hits | 帶動專輯在 Billboard 200 蟬聯五週冠軍並取得 RIAA 金唱片認證 | 五週冠軍有 Popdose 支持；RIAA 金唱片認證本層查不到來源（Popdose 與 encyclopedia.com 都未提），請主線核對來源，沒有就移除或改寫 | https://popdose.com/the-1-albums-blooming-hits-by-paul-mauriat/ |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

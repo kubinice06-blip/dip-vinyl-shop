@@ -1631,3 +1631,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-2 8 處：Kogan、Boulanger（姊姊）、Tertis、Lehmann、Harrison、三大男高音（史上銷量最高）的「最…」改「極／早期」；Boulanger 刪童年喪父、馬水龍刪父親過世；Kraus 刪「休養」；Harrison 刪「與伴侶」；三大男高音刪 Carreras 白血病基金會（暗示病況）。
   - 保留：Boulanger「第一位獲羅馬大獎作曲首獎的女性」（通行事實）；Morlot 只寫樂團與 Adams 得獎，未寫成本人；Mannheim Steamroller〈Convoy〉Hot 100 榜首（故事核心，必要例外）；Melnyk 每秒 19.5 音（必要例外）；Kalhor《Silent City》題材、Kraus 爪哇拘禁、Tennstedt 離開東德、Slatkin 9/11 後 Proms 各一句；具名音樂人與人物（Zakir Hussain、Menuhin、Gilels、Toscanini、Colin Davis、Schumann、甘地、Nehru）；在世者各一處。
 - 待本機：Gilbert 卡 1971 查無版本；Flagstad《Wesendonck Lieder》、Kondrashin《Babi Yar》1980、Te Kanawa 卡池版本未核；Berman《Années de pèlerinage》1977、Masur Mendelssohn 1972 未開專輯頁；Mannheim Steamroller《Fresh Aire》上線簡介 pubIssues 1 條（SESAC 年度作曲人）。
+
+## ar-d-110（2026-10-15）
+
+- 40 位全上架（40 full、0 thin），無不寫。
+- 古典段 M 至 N 字頭；多名卡放寬：Maurizio Pollini & Quartetto Italiano 265。Michael Gordon 預抓維基為同名導演，改照作曲家寫；Galasso 只寫〈Angkor Wat Theme〉，〈Yumeji's Theme〉照實歸梅林茂；陳美安卡池卡名對不上，正文不寫專輯。
+- 搜尋超額：Masters of Persian Music（g2）超 1 次、Michael Galasso（g3）超 2 次、Mikis Theodorakis（g3）超 1 次，皆為補第二源，放行。
+- 審稿修 17 處：
+  - out-1 11 處：Meyer、del Monaco、Pollini & QI 的「最…」改「極…」；Pires 刪出生前父親過世、Alain 刪哥哥戰時過世、del Monaco 刪穿戲服下葬；Jansons 刪蘇聯攔截 Karajan 邀請（政治只留躲藏中出生一句）；Brabbins 刪抗議辭職；Gendron 刪「唯一」；陳美安刪「該校第一位雙學位」「唯一女性首獎」。
+  - out-2 6 處：Rabin 刪「最悲劇的名家之一」；Weinberg 刪家人死於集中營；Tippett、Freni、Rosenthal、Yepes 的「最…」改「極／偏愛」。
+  - 保留：Gražinytė-Tyla「DG 第一位簽長約的女性指揮」、Mazzoli「大都會首批委託歌劇的兩位女性」屬通行事實（在世者核心一處）；Yudina 信仰被解職、Gendron 抵抗運動、Theodorakis 軍政府入獄、Maisky 被捕勞改各一句背景；具名人物評語；在世者各一處。
+- 待本機：陳美安卡池《Orchestral Works》2019 在 apple-audio-map 對到《Project W》（Chicago Sinfonietta／Cedille）；Mazzoli《Vespers》卡 2014，實際 2015；Caballé《Lucrezia Borgia》1966 錄、卡 1967 為發行年；Freni《Don Carlo》卡 1979 對不上 Karajan 1978／Levine 1983；Galasso《花樣年華》上線簡介 pubIssues 1 條；Rózsa 上線簡介數字無源。
