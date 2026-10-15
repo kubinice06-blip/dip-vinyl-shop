@@ -1677,3 +1677,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-2 10 處：三人卡刪白金與「最暢銷之一」、Schwartz 刪奧斯卡座數；馬思聰、Gubaidulina、Richter「最…」改「極…」；Cleobury 刪「第一位」；Cherkassky、馬思聰、Barere、Solomon 刪死亡情境與身後細節。
   - 保留：Crawford Seeger「第一位獲 Guggenheim 的女性作曲家」、Hough「第一位獲麥克阿瑟的古典演奏者」、Sheku「BBC Young Musician 第一位黑人冠軍」（通行事實）；Sabine Meyer 柏林愛樂試用風波（本人說法並陳）；馬思聰 1967 出走、Isserlis 祖父離蘇各一句；具名評語（Stravinsky、Horowitz、Neuhaus、John Rutter、Karajan）。
 - 待本機：Accardo 帕格尼尼全集為 DG、卡 1976 對不上 1975 評論；張永宙卡 1998 疑為 EMI Sibelius／Mendelssohn；Crawford Seeger 卡 1931 為創作年、實為 1997 DG；Koussevitzky 卡 1944 查無（Ravel 配器首錄 1930）；呂紹嘉是否指揮《樂典08》；Call of the Valley 卡 1968、錄於 1967；Richter & Borodin Franck 卡 1981 疑為 1986 現場；Solomon 卡 1959 疑再版；馬思聰卡池是否本人演奏、Zimmermann／Isserlis 卡池樂團廠牌未查；《末代皇帝》上線簡介 pubIssues 2 條；《Wicked》RIAA 白金待查。
+
+## ar-d-114（2026-10-15）
+
+- 40 位全上架（35 full、5 thin：臺北市立國樂團、高木正勝、Teodor Currentzis、Vienna Octet、Wilhelm Backhaus），無不寫。
+- 古典段 T 至 W 字頭；無多名卡。The Ronettes 卡池誤歸古典，照女子流行團體寫；The Sixteen 寫合唱團本身，不重複 Harry Christophers 個人卡。Ullmann 身分寫「奧地利出身、在布拉格活動」。
+- 搜尋超額：Takács Quartet（g1）超 1 次補獎項第二源，放行。
+- 審稿修 16 處：
+  - out-1 4 處：李泰祥刪賣斷版權與晚年經濟困頓；Hearne「兩度入圍」改「曾入圍」；Ronettes 刪 Hot 100 名次（成員在世，只留名人堂）；Tallis「最偉大之一」改「極重要」。
+  - out-2 12 處：Mørk、Repin、簡文彬刪「首位／最年輕」類宣稱；陳銀淑刪 Gaudeamus、Cosma「兩度獲凱撒」改一處（在世者一處）；de Sabata 兩處、Gieseking 非獨立評價改／刪；Serafin「女主角病退」改「無法演出」並修句首年份流水帳、壓字數；Ullmann 單一名卡 257 壓到 236。
+  - 保留：黛敏郎「第一位獲奧斯卡配樂提名的日本籍作曲家」（兩源）、Landowska「第一位用大鍵琴錄《郭德堡》」（通行事實）；〈橄欖樹〉禁歌、蕭泰然〈民主進行曲〉遭禁、Silvestrov 遭除名、Ashkenazy 離開蘇聯、Ullmann Theresienstadt 各一句；西洛斯 Billboard 200 第 3 名（必要例外）；Sofronitsky 與 Scriabin 長女結婚（身分核心）。
+- 待本機：李泰祥卡池《鄉土．民謠 第一輯》查無專輯資料；Mørk Brahms 卡 1994 搭檔年份可能不符；Silvestrov《Silent Songs》卡 1977 為作曲年（ECM 1986 錄、2004 發行）；Serafin《Rigoletto》應為 1955 錄、1956 發行；陳銀淑卡池推定 Analekta；Backhaus 卡 1969 疑再版（1950–53 錄）；簡文彬《Taiwan Rhapsody》卡 2014、官網 © 2015；King's Singers 卡池年差一年；Ronettes 上線簡介「鼻腔嗓音」、Sorey 上線簡介「2015 年 5 月布魯克林首演」無源。
