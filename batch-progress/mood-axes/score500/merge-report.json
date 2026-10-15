@@ -1,0 +1,118 @@
+{
+ "n": 305,
+ "errors": [
+  "chunk-06: 缺 various artists|saturday night fever: the original movie sound track",
+  "chunk-06: 缺 aretha franklin|i never loved a man the way i love you",
+  "chunk-06: 缺 dusty springfield|dusty in memphis",
+  "chunk-06: 缺 erykah badu|baduizm",
+  "chunk-06: 缺 marvin gaye|what's going on",
+  "chunk-07: 缺 otis redding|the dock of the bay",
+  "chunk-07: 缺 parliament|mothership connection",
+  "chunk-07: 缺 sam cooke|ain't that good news",
+  "chunk-07: 缺 sylvester|step ii",
+  "chunk-07: 缺 the isley brothers|shout!",
+  "chunk-07: 缺 wilson pickett|in the midnight hour",
+  "chunk-07: 缺 bill withers|live at carnegie hall",
+  "chunk-07: 缺 donna summer|love to love you baby",
+  "chunk-07: 缺 funkadelic|maggot brain",
+  "chunk-07: 缺 funkadelic|standing on the verge of getting it on",
+  "chunk-07: 缺 isaac hayes|hot buttered soul",
+  "chunk-07: 缺 james brown|sex machine",
+  "chunk-07: 缺 james brown|the payback",
+  "chunk-07: 缺 jill scott|who is jill scott? words and sounds vol. 1",
+  "chunk-07: 缺 labelle|nightbirds",
+  "chunk-07: 缺 prince|sign 'o' the times",
+  "chunk-07: 缺 ray charles|modern sounds in country and western music",
+  "chunk-07: 缺 sam & dave|soul men",
+  "chunk-07: 缺 sly & the family stone|there's a riot goin' on",
+  "chunk-07: 缺 the meters|the meters",
+  "chunk-07: 缺 the soul stirrers|sam cooke with the soul stirrers",
+  "chunk-07: 缺 al green|i can’t stop",
+  "chunk-07: 缺 chuck brown & the soul searchers|bustin' loose",
+  "chunk-07: 缺 beyoncé|dangerously in love",
+  "chunk-07: 缺 dr. dre|2001",
+  "chunk-07: 缺 eminem|the marshall mathers lp",
+  "chunk-07: 缺 frank ocean|channel orange",
+  "chunk-07: 缺 jay-z|reasonable doubt",
+  "chunk-07: 缺 jay-z|the blueprint",
+  "chunk-07: 缺 kanye west|late registration",
+  "chunk-07: 缺 kanye west|the college dropout",
+  "chunk-07: 缺 陶喆|i'm ok",
+  "chunk-07: 缺 beyoncé|lemonade",
+  "chunk-07: 缺 bts|love yourself 轉 'tear'",
+  "chunk-07: 缺 dr. dre|the chronic",
+  "chunk-07: 缺 jay-z|4:44",
+  "chunk-07: 缺 kanye west|my beautiful dark twisted fantasy",
+  "chunk-07: 缺 kendrick lamar|good kid, m.a.a.d city",
+  "chunk-07: 缺 lauryn hill|the miseducation of lauryn hill",
+  "chunk-07: 缺 mary j. blige|no more drama",
+  "chunk-08: 沒有輸出",
+  "chunk-09: 沒有輸出",
+  "chunk-10: 沒有輸出"
+ ],
+ "conf": {
+  "high": 190,
+  "mid": 107,
+  "low": 8
+ },
+ "cells": {
+  "放鬆": 86,
+  "平靜": 19,
+  "要死不活": 6,
+  "頹靡": 14,
+  "雀躍": 89,
+  "冷冽": 26,
+  "沸騰": 38,
+  "亢奮": 27
+ },
+ "spread": {
+  "x": {
+   "mean": 3.08,
+   "sd": 0.74,
+   "min": 1,
+   "max": 4.8
+  },
+  "y": {
+   "mean": -0.06,
+   "sd": 0.88,
+   "min": -1.9,
+   "max": 2
+  },
+  "z": {
+   "mean": 0.35,
+   "sd": 0.85,
+   "min": -1.9,
+   "max": 1.9
+  }
+ },
+ "anchorSpread": {
+  "x": {
+   "mean": 3.14,
+   "sd": 1.1
+  },
+  "y": {
+   "mean": 0.52,
+   "sd": 1.17
+  },
+  "z": {
+   "mean": 0.19,
+   "sd": 1.12
+  }
+ },
+ "corrWithOldAxes": {
+  "x~classic": 0.02,
+  "x~obscurity": -0.13,
+  "x~accessibility": -0.01,
+  "y~classic": 0.04,
+  "y~obscurity": -0.3,
+  "y~accessibility": 0.12,
+  "z~classic": -0.09,
+  "z~obscurity": -0.02,
+  "z~accessibility": -0.48
+ },
+ "axisCorr": {
+  "x~y": 0.5,
+  "x~z": -0.06,
+  "y~z": -0.47
+ }
+}
