@@ -1665,3 +1665,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-2 11 處：Rannap、Scotto、Muti、Désormière、Ponselle、三重奏卡三處、Firkušný 的「最…」改「極…」；Bonynge「指揮病倒」改「無法上台」；三重奏「早逝」改「過世」。
   - 保留：Clarke「Stanford 第一位女性作曲學生」（通行事實）；具名音樂人評語（Menuhin、Uchida、Harrison、Toscanini、Muti、Glenn Gould、Barbara Hannigan、Poulenc、Cortot）；Zukerman 父母大屠殺倖存者、Feuermann 遭納粹解職、Firkušný 出逃各一句；在世者各一處。
 - 待本機：陳必先《郭德堡》1985 錄、卡 1988（另有 2001 重錄）；Fournier 貝多芬 1965 錄、卡 1966；Zukerman 貝多芬 1971–73；Muti《Cherubini: Requiem》1975 版本與調性未確認；Rannap 上線簡介「最早發行品」誤（Ruja 1979 EP）；Bonynge《霍夫曼》上線簡介「原始設想」無源；Ram Narayan 上線簡介 1956 獨奏好評無源；Désormière《Pelléas》上線簡介錄音月份待核；Norrington、Tureck、Ponselle、三重奏卡池版本年份未核。
+
+## ar-d-113（2026-10-15）
+
+- 40 位全上架（34 full、6 thin：Sabine Liebner、張永宙、趙成珍、Seth Parker Woods、呂紹嘉、Sol Gabetta），無不寫。
+- 古典段 R 至 T 字頭；多名卡放寬：Sakamoto／Byrne／蘇聰 262、Call of the Valley 三人卡 256、Richter & Borodin Quartet 278。Scott Ross、Solomon 預抓維基同名混卡已棄。
+- 搜尋超額：Sakamoto 三人卡、Sequentia、曹秀美各超 1 次，Richter & Borodin 超 2 次，皆補第二源，放行。
+- 2025–26 事實：Gubaidulina 2025 年過世（補洞兩源），只寫年份；Sabine Meyer 2025 年 12 月告別演奏（維基＋Violin Channel 兩源）。
+- 審稿修 20 處：
+  - out-1 10 處：Crawford Seeger、Sciarrino、Rachmaninoff、Nazeri「最…」改「極…／早期」；Sakamoto 三人卡刪葛萊美（在世者一處）；Joplin 刪窮困過世與無名墓地、Prokofiev 刪與史達林同日過世與遺體細節、Scott Ross 刪父親過世、Rachmaninoff「陷入低潮」改「沉潛」、Sequentia 刪「兩人也是夫妻」。
+  - out-2 10 處：三人卡刪白金與「最暢銷之一」、Schwartz 刪奧斯卡座數；馬思聰、Gubaidulina、Richter「最…」改「極…」；Cleobury 刪「第一位」；Cherkassky、馬思聰、Barere、Solomon 刪死亡情境與身後細節。
+  - 保留：Crawford Seeger「第一位獲 Guggenheim 的女性作曲家」、Hough「第一位獲麥克阿瑟的古典演奏者」、Sheku「BBC Young Musician 第一位黑人冠軍」（通行事實）；Sabine Meyer 柏林愛樂試用風波（本人說法並陳）；馬思聰 1967 出走、Isserlis 祖父離蘇各一句；具名評語（Stravinsky、Horowitz、Neuhaus、John Rutter、Karajan）。
+- 待本機：Accardo 帕格尼尼全集為 DG、卡 1976 對不上 1975 評論；張永宙卡 1998 疑為 EMI Sibelius／Mendelssohn；Crawford Seeger 卡 1931 為創作年、實為 1997 DG；Koussevitzky 卡 1944 查無（Ravel 配器首錄 1930）；呂紹嘉是否指揮《樂典08》；Call of the Valley 卡 1968、錄於 1967；Richter & Borodin Franck 卡 1981 疑為 1986 現場；Solomon 卡 1959 疑再版；馬思聰卡池是否本人演奏、Zimmermann／Isserlis 卡池樂團廠牌未查；《末代皇帝》上線簡介 pubIssues 2 條；《Wicked》RIAA 白金待查。
