@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1367 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1368 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1371,3 +1371,4 @@
 | ar-d-134 | Eric Darius | Goin' All Out | 同名曲在 2008 年 10 月 25 日那一週登上 Smooth Jazz Songs 榜首 | 維基寫同名單曲同週登上的是『Contemporary Jazz chart』第 1 名，簡介寫 Smooth Jazz Songs；兩個榜名不同，需對原榜確認用哪個名稱。 | https://en.wikipedia.org/wiki/Eric_Darius |
 | ar-d-135 | George Howard | There's a Riot Goin' On | 他在同年 3 月 20 日已過世 | 過世日期各來源不一致（維基與 Muziekweb 為 3 月 20 日，Carnegie Hall Data Lab 為 3 月 22 日，Blue Note 官網與 Rovi 傳記為 3 月 29 日）；建議改寫為「同年 3 月」，不寫日。 | https://www.bluenote.com/artist/george-howard/ |
 | ar-d-135 | Hank Jones | Hanky Panky | 做了十六年電視台駐台鋼琴手；Hank Jones 在 CBS 從 1959 待到 1975 年 | AP 訃聞（ABC7 轉載）寫他在 CBS 擔任錄音室鋼琴手 17 年；起訖年份我們找不到第二個來源，建議店主本機再核對『十六年』與『1959』 | https://abc7chicago.com/archive/7446355 |
+| ar-d-135 | John Kaizan Neptune | Tokyosphere | 胡弓請來 Eric Golub | 待核：komuso.com 專輯頁內頁文字（搜尋摘要）寫 Golub 是中提琴／小提琴即興手，與 Neptune 在東京同台演過，但 Neptune 此張原就打算只用日本傳統樂器，與 Golub 的合錄沒有在這張實現；上線簡介把他列為胡弓樂手可能是 Discogs 錄入錯誤。需本機開 komuso 專輯頁或查盤上實物確認 | https://www.komuso.com/albums/albums.pl?album=97 |

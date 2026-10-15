@@ -1769,3 +1769,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 審稿修 10 處：McFerrin & Corea、Cecil Taylor、Mingus、Parker & Gillespie「最…之一」改「極…」；Lloyd 三人卡刪《Forest Flower》百萬銷量；C.P.U「日本第一支自由爵士樂團」改「早期」；David Matthews「日本頭號爵士團」改寫；Don Byron and Existential Dred 刪童年氣喘（比照 ar-d-129）；FATHERS、Floratone 首句補國籍。
   - 保留：Bosso 1999 義大利 Top Jazz 票選最佳新人（權威票選、不寫刊名）；C.P.U 不寫富樫雅彦事故與傷殘；具名評語（Questlove、Blanchard、Corea、Miles Davis、錄音學院主席）。
 - 待本機：Booster 上線簡介 2 條、Brisa Roché 1 條、Cautious Clay 2 條、Mariano & Watanabe 盤名拼法、Eric Darius 榜名與名次 2 條、Chris Dave 簽約起源、富樫雅彥事故年份（pubIssues 約 10）；Branford《Belonging》2025、Lloyd《Figure in Blue》2025 新近事實已兩源。
+
+## ar-d-135（2026-10-15）
+
+- 40 位全上架（32 full、8 thin：French Toast、Hang Raiji、High Five Quintet、Jackie Allen、James Hurt、Jazztronik、Joe Sample / Ray Brown / Shelly Manne、John Kaizan Neptune / 直居隆雄），無不寫。名冊補登批 add-20261015-backfill 最後一批。
+- 多名卡放寬：Sinatra / Norvo、兩張 Hubbard / Shaw、Paoli 六人、Edison 五人、Laws 八人、大西順子、Great Jazz Trio、Terrasson & Wilson、Baxter 四人、Lovano & Rubalcaba、Lovano & Osby、Lovano & Hank Jones。Joe Lovano 五張合作卡、Hubbard / Shaw 兩張、Neptune 兩張、Hank Jones 兩張（個人卡與 Lovano 二重奏）各以卡池那張為主，生平不重複。
+- 搜尋超額：Edison 五人、Baxter 四人、Jeff Lorber 放行（多人身分或補第二源）。
+- 審稿修 11 處：D'Andrea、Sinatra（兩處）、Hubbard / Shaw「最…之一」改「極…」；DeJohnette「最早獲樂評肯定」改「早期」；大西順子刪「第一位登上 Village Vanguard 的日本音樂人」首位宣稱；Frank Emilio Flynn 刪產鉗致盲與幼年喪母；Walrath 刪 Mingus 晚年無法演奏；Cassandra Wilson 的《時代》雜誌去名（否決寫作代理「綜合雜誌可具名」）；Jane Bunnett 在世者只留 Juno，刪加拿大勳章。
+  - 保留：Lorber 2018 葛萊美（在世者核心成就一處）、Hindi Zahra Victoires de la Musique 一處；Gino Paoli 2026、Jack DeJohnette 2025、Cassandra Wilson 2026 過世已以 WebSearch 兩源核實；Cavassa 2021 Sarah Vaughan 大賽並列冠軍（兩源），2026《Diavola》細節不寫。
+- 待本機：George Howard、Hank Jones、John Kaizan Neptune 上線簡介各 1 條（pubIssues 3）。
