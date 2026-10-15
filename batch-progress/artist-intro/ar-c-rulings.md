@@ -1551,3 +1551,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 待本機：
   - KV 上線簡介的修正：見 `audits/ARTIST-PUB-ISSUES.md`（本輪各批「待本機」條目，共 1,312 條累計）。重點：Digga D、Kurupt 簡介以刑案為主軸建議改寫；Mac Dre、Griselda、Schoolly D 簡介含案情或私人逝世細節建議刪句。
   - 卡池年份與曲風存疑：Das Ding《H.S.T.A.》2009／2010；Dave Clarke《Archive One》1995／1996；Hercules & Love Affair 2007／2008；Sainkho Namtchylak《Stepmother City》2000／2001；BUDDHA BRAND《黒船》實為單曲；Double X（台灣龐克團）曲風誤標 hiphop；Madvillain《Madvillainy》應為 2004；Kazi & Madlib《Blackmarket Seminar》1996 錄、2011 公開（卡池 2014）；Aaron Copland 自指《Appalachian Spring》版本待確認；Alan Silvestri《Back to the Future》卡年與版本；Andrew Manze Corelli 2002／2003；Alarm Will Sound composer 欄誤填；曲風誤標 hiphop：Karyn White、Kelis、Kirk Franklin、Koffee、J. Holiday、Jaheim、Joe、Peabo Bryson、PinkPantheress、Today。
+## ar-d-128（2026-10-14，add-20261014 補介紹）
+
+- 1 位上架：溫蒂漫步 Wendy Wander（full，251 字）。事後菸 Cigarettes After Sex 已排在 ar-d-069，不重複。
+- 審稿修 1 處：「2023 年疫情解封後首度出國」→「2023 年疫情解封後的海外首站是香港」。來源（VERSE、MeMeOn）只說解封後海外首站是香港，沒說之前沒出過國。
+- 保留：〈我想和你一起〉900 萬點閱（中文維基引 VERSE，非獨立來源；樂團走紅核心，必要例外，寫成「後來」）；2023 夏中國 11 城（MeMeOn＋中文維基）。
+- 不寫：2026-12-25 香港麥花臣場（尚未發生）、新專輯《House Of》（未發行、單源）、成員加入先後（兩源不一）、獎項（查無金曲／金音紀錄）、製作人姓名（未證）。
