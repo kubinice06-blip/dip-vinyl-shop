@@ -1586,3 +1586,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-2 審稿 8 處：Berwald 機構語「十九世紀最重要」改「重要」；Afanassiev「最長之一」改「極長」；Kahane「川普當選隔天」改「美國大選隔天」、刪「極度政治」引語；Bryars 刪錄音中老人過世；Enescu「史上最重要」改「極重要」；Gershwin「最重要的美國歌劇之一」改「重要作品」；Cziffra「最偉大之一」改「極具代表性」。
   - 保留：Smyth「第一位封 DBE 的女作曲家」、Weingartner「第一位商業錄完貝多芬九首」（兩源）、Caccini「現存最早的女性作曲家歌劇」屬通行事實；具名音樂人評語（Carl Flesch、Toscanini、Ornette Coleman、Domingo、Simon Rattle、Menuhin、Argerich、Kodály）；在世者各一處；歷史背景各一句（Afanassiev 不回蘇聯、Busch 反納粹免職、Schreker 反猶失職、Cziffra 戰後關押、Fricsay 戰時躲藏）。
 - 待本機：Floating Points《Promises》卡 2020，實際 2021-03-26；Errollyn Wallen《Photography》卡 2006 與 NPR 年度專輯 2016 對不上；Gabriela Ortiz 卡 2023 為首演年，專輯 2024–25；Afanassiev D.960 卡 1986 vs 1985 Lockenhaus 現場；Cziffra 卡池 1958 查無來源。
+
+## ar-d-106（2026-10-15）
+
+- 40 位全上架（33 full、7 thin：Giuliano Carmignola、Goldmund、Gwhyneth Chen 陳毓襄、Hans Rosbaud、Hans Zender、Hélène Grimaud、Hespèrion XXI），無不寫。
+- 古典段 G 至 H 字頭；雙名卡放寬：Gervase de Peyer & Amadeus Quartet 265、Glenn Gould & Leonard Bernstein 272、Gregor Piatigorsky & Jascha Heifetz 266。
+- 搜尋超額：Hans Zender（g3）超 1 次，找卡池 Scelsi 錄音的指揮身分，比照「第二源」放行。
+- 審稿修 17 處：
+  - out-1 12 處：Grisey「開創者」改「先驅」；Souzay、Neveu、Gould、Bernstein、Gothic Voices、Heifetz、Sokolov、Cantelli 的「最…之一」改「極…」；Neveu 刪錄音後頸部磨血（傷病）；Bacewicz 刪車禍；Suggia「同居」改「長年同台巡演」（私生活）。
+  - out-2 5 處：Holliger「同時代最重要」改「極具代表性」；Lachenmann 刪「第一位」私人學生、「最重要之一」改「極具份量」；Górecki「最激進之一」改「激進」；Scherchen「首演比幾乎任何指揮家都多」改「大量」。
+  - 保留：Walcha 失明——是演奏與錄音方法（靠耳記譜、全憑記憶）的成因，屬身分核心，不寫病因（疫苗）；Krása 的 Theresienstadt 與《Brundibár》寓意為作品核心；Górecki 銷量與榜位（已故）；具名音樂人評語（Lutosławski、Shchedrin、Perlman、Casals、Toscanini、Rubinstein、Tom Waits）；在世者各一處（Hardenberger Proms 首演、Kendall Ivor Novello、Zimmer 兩座奧斯卡、Gerrard 金球獎、Christophers CBE、Holliger 日內瓦首獎、Grimaud 巴黎音樂院第一名、Sokolov 柴可夫斯基金牌、陳毓襄 Pogorelich 首獎）。
+- 待本機：Souzay《Fauré: Mélodies》1974 版本未確認；Kancheli《Vom Winde beweint》卡 1989 對不上 ECM（1991 錄）或 Melodiya（1988）；Gould & Bernstein 卡為 1962-04-06 現場廣播、1998 發行；Guarneri Quartet 卡 1995 對不上 RCA 全集（1966–69）；Piatigorsky & Heifetz Brahms 雙協奏 1960 錄、1961 發行；Hans Zimmer《Diamond In The Desert》（2025）查到的是杜拜演唱會電影、無同名原聲帶；Scherchen 卡 1958 對不上 Westminster 貝多芬全集（1951–54）。
