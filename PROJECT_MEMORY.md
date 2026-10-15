@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-15｜dip-vinyl-shop｜情緒三軸：再評 3,000 張、接力補到一萬張，星圖預覽換成一萬張
+
+- **改動**：店主「再評三千張」「直接跑到一萬張 接力跑」。`score3000/select.mjs` 依全池曲風比例挑 3,000 張（含 300 亞洲名額），`score10k/select.mjs` 挑 6,396 張補到 10,000（知名度＝經典度×2 − 冷門度、亞洲加權 1.3）；30＋64 份工單由最多 6 支代理接力打分，主線關鍵字掃 49 張矛盾、改 4 張質地（`score10k/review.json`）。`build-priors.mjs` 讀三批評分，全池 19,121 張中 10,000 張脫離子曲風暫估。一萬張八格：放鬆 2,787、平靜 710、慵懶 305、頹靡 497、雀躍 3,032、冷冽 467、沸騰 936、亢奮 1,266。**score10k 低把握 1,617 張（25%）**，集中在昭和歌謠／演歌、韓國八〇–九〇、老粵語國語、日本冷門爵士、世界音樂老錄音與 2025–26 新盤，品質接近暫估。代理回報的卡池重複、曲風標錯、年份疑誤記在 `rulings.md`，未處理。私人星圖預覽改一萬張（Version 12），預設亮 600；未點亮的星在著色器剔除、透明度收斂後停止上傳。
+- **主要檔案**：`batch-progress/mood-axes/score3000/*`、`batch-progress/mood-axes/score10k/{select.mjs,merge.mjs,review.json,scored-10k.json,merge-report.json,cards.json,chunk-*.json,out/*.json}`、`batch-progress/mood-axes/{build-priors.mjs,priors-v0-report.json,scale-v0-report.json,rulings.md}`、`data/mood/{card-moods-v0.json,scale-v0.json}`
+- **驗證**：merge 3,000/3,000 與 6,396/6,396 皆 0 錯誤、0 外來 id、跨批 0 重複；錨點 104/104 同格；swiftshader 下星圖桌機／手機 0 錯誤，一萬張版幀率 8／7（舊 3,604 張版 6／5），開卡簡介正常載入。
+
 ### 2026-10-15｜dip-vinyl-shop｜情緒八格「要死不活」改名「慵懶」；星圖封面縮到跟星星一樣小
 
 - **改動**：店主裁定靜重暖格改名「慵懶」（id `languid` 不變，座標門檻不動）：`build-anchors.mjs` 名稱表、`starmap-lab.html`、`score500/BRIEF.md`、`MOOD_ENERGY_PLAN.md`、`MOOD_SCALE_PLAN.md` 改名，anchors-v1／priors／scale／merge 四個產出重跑（分布不變）。舊紀錄與 add-20261014 引用店主原話者保留。星圖原型飄的封面改 6–18px、上限 400 張、無封面者純色小方塊，重新發布（Version 10）。
