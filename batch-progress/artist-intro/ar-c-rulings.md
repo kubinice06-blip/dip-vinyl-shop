@@ -1562,3 +1562,4 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 店主 2026-10-15「新增二十批」。排隊中只剩 ar-d-104～116（13 批、485 位，全為古典段）；另 7 批從卡池「不在名冊」的藝人補切（2026-10-15 盤點：卡池 19,121 張的藝人中，不在名冊也沒有介紹的 554 位，爵士 518、流行 15、搖滾 9、民謠 7、其他 5）。補進名冊照 2026-10-13 先例（tier D、`addedBy` 標批名、shard null），本輪只切 7 批（約 280 位），其餘留下一輪。
 - PR #80 照 2026-10-14 店主指示退訂，不再盯 PR；接力期間的自我 check-in 照「接力任務」節保留。
+- 名冊補登：`batch-progress/artist-intro/backfill-20261015.mjs` 以 seed_cards.json 對名冊與已上線介紹取差集，554 位補進名冊（tier D、`addedBy` add-20261015-backfill、shard null；mainGenre 取卡片首類型的多數；collab 按 `&`／`and`／`with`／`feat.`／逗號／斜線判定，Spick & Span、Medeski Martin & Wood、Marty & Mystics、Paul Jackson, Jr. 手動改回 false）。排序照切批規則（爵士先、卡數多的先），切 ar-d-129～135 七批 280 位（Gonzalo Rubalcaba … John Kaizan Neptune / 直居隆雄），剩 274 位留下一輪。領隊與編制掛名（Stefano Di Battista vs Stefano Di Battista Quintet 等）照伍佰先例分開寫。
