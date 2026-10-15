@@ -26,6 +26,12 @@ for (let i = 1; i <= 10; i++) {
   }
   const extra = got.filter(g => !input.some(c => c.id === g.id)); if (extra.length) errs.push(`chunk-${nn}: 多出 ${extra.length} 筆不在卡單的 id`);
 }
+// 主線審稿覆寫（review.json）：保留原值於 orig
+let review = {}; try { review = JSON.parse(fs.readFileSync(R('./review.json'), 'utf8')); } catch {}
+let reviewed = 0;
+for (const o of out) { const rv = review[o.id]; if (!rv) continue; o.orig = { x: o.x, y: o.y, z: o.z };
+  for (const k of ['x', 'y', 'z']) if (rv[k] != null) o[k] = rv[k]; o.region = cellOf(o.x, o.y, o.z); o.review = rv.note; reviewed++; }
+if (Object.keys(review).filter(k => k[0] !== '_').length !== reviewed) errs.push(`review.json 有 ${Object.keys(review).filter(k => k[0] !== '_').length - reviewed} 筆對不到卡單`);
 fs.writeFileSync(R('./scored-500.json'), JSON.stringify(out, null, 1));
 
 // 檢查
@@ -37,7 +43,7 @@ const sp = (a, b) => { const ra = rank(a), rb = rank(b), m = (ra.length - 1) / 2
 const ok = out.filter(o => o.old.classic != null);
 const corr = {};
 for (const ax of ['x', 'y', 'z']) for (const od of ['classic', 'obscurity', 'accessibility']) corr[`${ax}~${od}`] = sp(ok.map(o => o[ax]), ok.map(o => o.old[od]));
-const report = { n, errors: errs, conf, cells: Object.fromEntries(Object.keys(NAME).map(k => [NAME[k], cnt[k] || 0])),
+const report = { n, reviewed, errors: errs, conf, cells: Object.fromEntries(Object.keys(NAME).map(k => [NAME[k], cnt[k] || 0])),
   spread: { x: stat('x'), y: stat('y'), z: stat('z') }, anchorSpread: (() => { const a = anchors.anchors; const st = k => { const v = a.map(o => o[k]); const m = v.reduce((p, q) => p + q, 0) / v.length; return { mean: +m.toFixed(2), sd: +Math.sqrt(v.reduce((p, q) => p + (q - m) ** 2, 0) / v.length).toFixed(2) }; }; return { x: st('x'), y: st('y'), z: st('z') }; })(),
   corrWithOldAxes: corr, axisCorr: { 'x~y': sp(out.map(o => o.x), out.map(o => o.y)), 'x~z': sp(out.map(o => o.x), out.map(o => o.z)), 'y~z': sp(out.map(o => o.y), out.map(o => o.z)) } };
 fs.writeFileSync(R('./merge-report.json'), JSON.stringify(report, null, 1));

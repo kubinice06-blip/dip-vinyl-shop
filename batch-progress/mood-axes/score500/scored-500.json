@@ -1741,11 +1741,17 @@
    "accessibility": 1
   },
   "x": 3.2,
-  "y": 0.4,
+  "y": 0.7,
   "z": -0.2,
-  "region": "crisp",
+  "region": "charge",
   "why": "藍調搖滾，粗糙吉他與福音和聲，泥濘陰影籠罩",
-  "conf": "high"
+  "conf": "high",
+  "orig": {
+   "x": 3.2,
+   "y": 0.4,
+   "z": -0.2
+  },
+  "review": "理由「粗糙吉他、泥濘」，質地 0.4 低估；Stones 這期本來就厚"
  },
  {
   "id": "the rolling stones|sticky fingers",
@@ -4021,11 +4027,17 @@
    "accessibility": 3
   },
   "x": 3.9,
-  "y": 0.4,
-  "z": -0.2,
-  "region": "crisp",
+  "y": 0.8,
+  "z": 0,
+  "region": "boil",
   "why": "長篇現場即興，次中音嘶吼密集、鼓組翻騰，緊繃灼熱",
-  "conf": "high"
+  "conf": "high",
+  "orig": {
+   "x": 3.9,
+   "y": 0.4,
+   "z": -0.2
+  },
+  "review": "理由寫「灼熱」卻給 −0.2；Coltrane＋Elvin Jones 密度與厚度都高，質地 0.4 低估"
  },
  {
   "id": "john coltrane|cattin' with coltrane and quinichette",
@@ -4933,11 +4945,17 @@
    "accessibility": 3
   },
   "x": 3,
-  "y": 0.4,
+  "y": 0.7,
   "z": -0.3,
-  "region": "crisp",
+  "region": "charge",
   "why": "取樣鼓擊厚重切片，快慢交錯，器樂拼貼偏冷調",
-  "conf": "mid"
+  "conf": "mid",
+  "orig": {
+   "x": 3,
+   "y": 0.4,
+   "z": -0.3
+  },
+  "review": "理由「取樣鼓擊厚重切片」，質地 0.4 低估"
  },
  {
   "id": "trent reznor and atticus ross|the social network",
@@ -5605,6 +5623,101 @@
   "conf": "high"
  },
  {
+  "id": "various artists|saturday night fever: the original movie sound track",
+  "artist": "Various Artists",
+  "album": "Saturday Night Fever: The Original Movie Sound Track",
+  "year": 1977,
+  "genre": "soul",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.8,
+  "y": -0.4,
+  "z": 1.3,
+  "region": "lift",
+  "why": "迪斯可四拍、假音和聲與弦樂明亮，舞池熱度",
+  "conf": "high"
+ },
+ {
+  "id": "aretha franklin|i never loved a man the way i love you",
+  "artist": "Aretha Franklin",
+  "album": "I Never Loved a Man the Way I Love You",
+  "year": 1967,
+  "genre": "soul",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 3,
+  "y": -0.6,
+  "z": 1.6,
+  "region": "lift",
+  "why": "南方靈魂樂團編制乾淨扎實，嗓音熱烈、快慢均衡",
+  "conf": "high"
+ },
+ {
+  "id": "dusty springfield|dusty in memphis",
+  "artist": "Dusty Springfield",
+  "album": "Dusty in Memphis",
+  "year": 1969,
+  "genre": "soul",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 2.4,
+  "y": -1,
+  "z": 1.3,
+  "region": "calm",
+  "why": "中慢速靈魂流行，弦樂與和聲輕柔，溫柔細膩",
+  "conf": "high"
+ },
+ {
+  "id": "erykah badu|baduizm",
+  "artist": "Erykah Badu",
+  "album": "Baduizm",
+  "year": 1997,
+  "genre": "soul",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 2.3,
+  "y": 0.9,
+  "z": 1,
+  "region": "languid",
+  "why": "慢速爵士味節拍、低頻厚且帶灰塵感，慵懶溫暖",
+  "conf": "high"
+ },
+ {
+  "id": "marvin gaye|what's going on",
+  "artist": "Marvin Gaye",
+  "album": "What's Going On",
+  "year": 1971,
+  "genre": "soul",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 2.6,
+  "y": -0.2,
+  "z": 1.3,
+  "region": "calm",
+  "why": "連續組曲中慢律動，弦樂康加鼓與殘響和聲，溫厚",
+  "conf": "high"
+ },
+ {
   "id": "prince|purple rain",
   "artist": "Prince",
   "album": "Purple Rain",
@@ -5793,5 +5906,3627 @@
   "region": "lift",
   "why": "切分吉他與銅管短促，混早期 R&B 慢歌，乾淨熱絡",
   "conf": "mid"
+ },
+ {
+  "id": "otis redding|the dock of the bay",
+  "artist": "Otis Redding",
+  "album": "The Dock of the Bay",
+  "year": 1968,
+  "genre": "soul",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 2.9,
+  "y": -0.5,
+  "z": 1.5,
+  "region": "calm",
+  "why": "Stax 乾淨鼓與銅管，快慢歌參半，嗓音粗暖",
+  "conf": "mid"
+ },
+ {
+  "id": "parliament|mothership connection",
+  "artist": "Parliament",
+  "album": "Mothership Connection",
+  "year": 1975,
+  "genre": "soul",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 3.8,
+  "y": 0.6,
+  "z": 1.6,
+  "region": "boil",
+  "why": "厚重合成器貝斯、銅管與群唱，派對式黏稠 funk",
+  "conf": "high"
+ },
+ {
+  "id": "sam cooke|ain't that good news",
+  "artist": "Sam Cooke",
+  "album": "Ain't That Good News",
+  "year": 1964,
+  "genre": "soul",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 2.8,
+  "y": -1.1,
+  "z": 1.6,
+  "region": "calm",
+  "why": "弦樂與輕鼓的流行靈魂，製作清亮，嗓音圓潤溫柔",
+  "conf": "mid"
+ },
+ {
+  "id": "sylvester|step ii",
+  "artist": "Sylvester",
+  "album": "Step II",
+  "year": 1978,
+  "genre": "soul",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 4.3,
+  "y": -0.2,
+  "z": 1.6,
+  "region": "lift",
+  "why": "合成器 disco 快拍、閃亮琶音，假音高亢歡騰",
+  "conf": "mid"
+ },
+ {
+  "id": "the isley brothers|shout!",
+  "artist": "The Isley Brothers",
+  "album": "Shout!",
+  "year": 1959,
+  "genre": "soul",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 3.6,
+  "y": -0.8,
+  "z": 1.6,
+  "region": "lift",
+  "why": "早期 R&B 呼應式合唱，錄音單薄乾淨，教堂般熱烈",
+  "conf": "mid"
+ },
+ {
+  "id": "wilson pickett|in the midnight hour",
+  "artist": "Wilson Pickett",
+  "album": "In the Midnight Hour",
+  "year": 1965,
+  "genre": "soul",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 3.7,
+  "y": -0.3,
+  "z": 1.3,
+  "region": "lift",
+  "why": "南方靈魂硬拍與銅管衝刺，嘶吼嗓，錄音緊實",
+  "conf": "mid"
+ },
+ {
+  "id": "bill withers|live at carnegie hall",
+  "artist": "Bill Withers",
+  "album": "Live at Carnegie Hall",
+  "year": 1973,
+  "genre": "soul",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.6,
+  "y": -1,
+  "z": 1.6,
+  "region": "calm",
+  "why": "小編制原聲感現場，吉他與鋼琴疏朗，談笑親切",
+  "conf": "mid"
+ },
+ {
+  "id": "donna summer|love to love you baby",
+  "artist": "Donna Summer",
+  "album": "Love to Love You Baby",
+  "year": 1975,
+  "genre": "soul",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.2,
+  "y": -0.4,
+  "z": 0.9,
+  "region": "lift",
+  "why": "長篇慢燉 disco 律動，弦樂與喘息人聲，柔滑性感",
+  "conf": "mid"
+ },
+ {
+  "id": "funkadelic|maggot brain",
+  "artist": "Funkadelic",
+  "album": "Maggot Brain",
+  "year": 1971,
+  "genre": "soul",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.2,
+  "y": 1.5,
+  "z": -0.2,
+  "region": "charge",
+  "why": "迷幻失真長吉他獨奏、髒糊錄音，混亂與哀傷並存",
+  "conf": "high"
+ },
+ {
+  "id": "funkadelic|standing on the verge of getting it on",
+  "artist": "Funkadelic",
+  "album": "Standing on the Verge of Getting It On",
+  "year": 1974,
+  "genre": "soul",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.6,
+  "y": 1.2,
+  "z": 0.4,
+  "region": "boil",
+  "why": "重吉他 funk rock，失真與厚低頻，粗糙迷幻",
+  "conf": "mid"
+ },
+ {
+  "id": "isaac hayes|hot buttered soul",
+  "artist": "Isaac Hayes",
+  "album": "Hot Buttered Soul",
+  "year": 1969,
+  "genre": "soul",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.2,
+  "y": 0.4,
+  "z": 1.4,
+  "region": "calm",
+  "why": "四首長曲慢慢鋪陳，華麗弦樂與低沉嗓音，濃郁溫熱",
+  "conf": "high"
+ },
+ {
+  "id": "james brown|sex machine",
+  "artist": "James Brown",
+  "album": "Sex Machine",
+  "year": 1970,
+  "genre": "soul",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 4.3,
+  "y": 0.2,
+  "z": 1.3,
+  "region": "lift",
+  "why": "現場 funk 長段 groove，緊密切分與吶喊，汗水熱度",
+  "conf": "mid"
+ },
+ {
+  "id": "james brown|the payback",
+  "artist": "James Brown",
+  "album": "The Payback",
+  "year": 1973,
+  "genre": "soul",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.6,
+  "y": 0.8,
+  "z": 0.2,
+  "region": "boil",
+  "why": "慢燒長篇 funk 律動，貝斯厚、氣氛偏陰沉強硬",
+  "conf": "mid",
+  "orig": {
+   "x": 3.6,
+   "y": 0.4,
+   "z": 0.6
+  },
+  "review": "理由「貝斯厚、陰沉強硬」，質地 0.4 低估、色溫 0.6 偏暖"
+ },
+ {
+  "id": "jill scott|who is jill scott? words and sounds vol. 1",
+  "artist": "Jill Scott",
+  "album": "Who Is Jill Scott? Words and Sounds Vol. 1",
+  "year": 2000,
+  "genre": "soul",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.6,
+  "y": 0.1,
+  "z": 1.6,
+  "region": "calm",
+  "why": "neo-soul 鬆軟律動、溫暖鍵盤，口白與吟唱親密",
+  "conf": "mid"
+ },
+ {
+  "id": "labelle|nightbirds",
+  "artist": "Labelle",
+  "album": "Nightbirds",
+  "year": 1974,
+  "genre": "soul",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.5,
+  "y": 0,
+  "z": 1.3,
+  "region": "lift",
+  "why": "紐奧良 funk 伴奏、三重唱高亢，明亮又帶勁",
+  "conf": "mid"
+ },
+ {
+  "id": "prince|sign 'o' the times",
+  "artist": "Prince",
+  "album": "Sign 'O' the Times",
+  "year": 1987,
+  "genre": "soul",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.6,
+  "y": 0.1,
+  "z": 0.5,
+  "region": "lift",
+  "why": "極簡鼓機 funk 到搖滾抒情，風格雜，乾冷與溫熱交錯",
+  "conf": "high"
+ },
+ {
+  "id": "ray charles|modern sounds in country and western music",
+  "artist": "Ray Charles",
+  "album": "Modern Sounds in Country and Western Music",
+  "year": 1962,
+  "genre": "soul",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.4,
+  "y": -0.9,
+  "z": 1.4,
+  "region": "calm",
+  "why": "弦樂與合唱托著慢板鄉村曲，製作柔滑，深情溫暖",
+  "conf": "mid"
+ },
+ {
+  "id": "sam & dave|soul men",
+  "artist": "Sam & Dave",
+  "album": "Soul Men",
+  "year": 1967,
+  "genre": "soul",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.6,
+  "y": -0.3,
+  "z": 1.6,
+  "region": "lift",
+  "why": "Stax 銅管與雙人對唱呼應，節奏緊、熱情外放",
+  "conf": "mid"
+ },
+ {
+  "id": "sly & the family stone|there's a riot goin' on",
+  "artist": "Sly & the Family Stone",
+  "album": "There's a Riot Goin' On",
+  "year": 1971,
+  "genre": "soul",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.6,
+  "y": 1.4,
+  "z": -0.6,
+  "region": "decay",
+  "why": "鼓機悶糊、反覆疊錄的磁帶霧感，慵懶陰鬱",
+  "conf": "high"
+ },
+ {
+  "id": "the meters|the meters",
+  "artist": "The Meters",
+  "album": "The Meters",
+  "year": 1969,
+  "genre": "soul",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.4,
+  "y": -0.6,
+  "z": 0.6,
+  "region": "lift",
+  "why": "器樂 funk，鼓與吉他乾燥稀疏，切分彈性十足",
+  "conf": "mid"
+ },
+ {
+  "id": "the soul stirrers|sam cooke with the soul stirrers",
+  "artist": "The Soul Stirrers",
+  "album": "Sam Cooke with the Soul Stirrers",
+  "year": 1991,
+  "genre": "soul",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.4,
+  "y": -1.3,
+  "z": 1.5,
+  "region": "calm",
+  "why": "五〇年代福音四重唱，伴奏極簡，和聲純淨溫厚",
+  "conf": "mid"
+ },
+ {
+  "id": "al green|i can’t stop",
+  "artist": "Al Green",
+  "album": "I Can’t Stop",
+  "year": 2003,
+  "genre": "soul",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 1
+  },
+  "x": 2.8,
+  "y": -0.3,
+  "z": 1.6,
+  "region": "calm",
+  "why": "重返 Hi 唱片式鬆軟鼓與銅管，假音溫柔",
+  "conf": "low"
+ },
+ {
+  "id": "chuck brown & the soul searchers|bustin' loose",
+  "artist": "Chuck Brown & the Soul Searchers",
+  "album": "Bustin' Loose",
+  "year": 1979,
+  "genre": "soul",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 1
+  },
+  "x": 4,
+  "y": 0.2,
+  "z": 1.5,
+  "region": "lift",
+  "why": "go-go 打擊樂不間斷、銅管熱鬧，派對連續推進",
+  "conf": "mid"
+ },
+ {
+  "id": "beyoncé|dangerously in love",
+  "artist": "Beyoncé",
+  "album": "Dangerously in Love",
+  "year": 2003,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 2.9,
+  "y": 0,
+  "z": 1.2,
+  "region": "calm",
+  "why": "銅管熱曲之外多為慢板 R&B 抒情，製作光滑",
+  "conf": "mid"
+ },
+ {
+  "id": "dr. dre|2001",
+  "artist": "Dr. Dre",
+  "album": "2001",
+  "year": 1999,
+  "genre": "hiphop",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.2,
+  "y": 1.1,
+  "z": -0.7,
+  "region": "charge",
+  "why": "冷硬鋼琴樂句、厚重低頻與重鼓，威嚇感強",
+  "conf": "high"
+ },
+ {
+  "id": "eminem|the marshall mathers lp",
+  "artist": "Eminem",
+  "album": "The Marshall Mathers LP",
+  "year": 2000,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.5,
+  "y": 0.8,
+  "z": -1.2,
+  "region": "charge",
+  "why": "稀疏冷硬的鼓與合成器，快嘴密集，尖銳陰暗",
+  "conf": "high"
+ },
+ {
+  "id": "frank ocean|channel orange",
+  "artist": "Frank Ocean",
+  "album": "Channel Orange",
+  "year": 2012,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 2.5,
+  "y": 0.3,
+  "z": 0.5,
+  "region": "calm",
+  "why": "中慢板合成器與電鋼琴鋪陳，溫潤中帶憂鬱",
+  "conf": "high"
+ },
+ {
+  "id": "jay-z|reasonable doubt",
+  "artist": "JAY-Z",
+  "album": "Reasonable Doubt",
+  "year": 1996,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 2.9,
+  "y": 0.8,
+  "z": 0.1,
+  "region": "languid",
+  "why": "爵士靈魂取樣 loop、鼓聲 dusty，從容的黑幫奢華感",
+  "conf": "high"
+ },
+ {
+  "id": "jay-z|the blueprint",
+  "artist": "JAY-Z",
+  "album": "The Blueprint",
+  "year": 2001,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.3,
+  "y": 0.6,
+  "z": 1,
+  "region": "boil",
+  "why": "加速的靈魂取樣與銅管，飽滿溫暖，節奏輕快",
+  "conf": "high"
+ },
+ {
+  "id": "kanye west|late registration",
+  "artist": "Kanye West",
+  "album": "Late Registration",
+  "year": 2005,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.1,
+  "y": 0.5,
+  "z": 1.1,
+  "region": "boil",
+  "why": "管弦編曲疊靈魂取樣，層次豐厚，溫暖華麗",
+  "conf": "high"
+ },
+ {
+  "id": "kanye west|the college dropout",
+  "artist": "Kanye West",
+  "album": "The College Dropout",
+  "year": 2004,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.1,
+  "y": 0.6,
+  "z": 1.3,
+  "region": "boil",
+  "why": "加速靈魂取樣、福音合唱與鋼琴，溫暖帶笑",
+  "conf": "high"
+ },
+ {
+  "id": "陶喆|i'm ok",
+  "artist": "陶喆",
+  "album": "I'm OK",
+  "year": 1999,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 2.8,
+  "y": -0.5,
+  "z": 1,
+  "region": "calm",
+  "why": "乾淨 R&B 製作、木吉他與和聲疊唱，輕鬆溫柔",
+  "conf": "mid"
+ },
+ {
+  "id": "beyoncé|lemonade",
+  "artist": "Beyoncé",
+  "album": "Lemonade",
+  "year": 2016,
+  "genre": "hiphop",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 3.2,
+  "y": 0.9,
+  "z": -0.3,
+  "region": "charge",
+  "why": "搖滾、trap、鄉村拼接，失真與厚低頻，情緒冷硬",
+  "conf": "mid"
+ },
+ {
+  "id": "bts|love yourself 轉 'tear'",
+  "artist": "BTS",
+  "album": "LOVE YOURSELF 轉 'Tear'",
+  "year": 2018,
+  "genre": "hiphop",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 3.5,
+  "y": 0.3,
+  "z": -0.3,
+  "region": "crisp",
+  "why": "小調 emo trap 與電子舞曲，製作亮而密，氣氛憂傷",
+  "conf": "low"
+ },
+ {
+  "id": "dr. dre|the chronic",
+  "artist": "Dr. Dre",
+  "album": "The Chronic",
+  "year": 1992,
+  "genre": "hiphop",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 3,
+  "y": 1,
+  "z": 0.6,
+  "region": "boil",
+  "why": "G-funk 慵懶律動、厚貝斯與高音 Moog 合成器",
+  "conf": "high"
+ },
+ {
+  "id": "jay-z|4:44",
+  "artist": "JAY-Z",
+  "album": "4:44",
+  "year": 2017,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 2.5,
+  "y": 0.6,
+  "z": 0.6,
+  "region": "languid",
+  "why": "No I.D. 單一製作，靈魂取樣稀疏溫潤，中慢速自省",
+  "conf": "mid"
+ },
+ {
+  "id": "kanye west|my beautiful dark twisted fantasy",
+  "artist": "Kanye West",
+  "album": "My Beautiful Dark Twisted Fantasy",
+  "year": 2010,
+  "genre": "hiphop",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 3.5,
+  "y": 1.3,
+  "z": -0.4,
+  "region": "charge",
+  "why": "極繁編曲、失真合成器與重鼓疊層，華麗而陰暗",
+  "conf": "high"
+ },
+ {
+  "id": "kendrick lamar|good kid, m.a.a.d city",
+  "artist": "Kendrick Lamar",
+  "album": "good kid, m.A.A.d city",
+  "year": 2012,
+  "genre": "hiphop",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 3.1,
+  "y": 0.8,
+  "z": -0.3,
+  "region": "charge",
+  "why": "迷濛西岸低頻、陰暗合成器鋪底，敘事式起伏",
+  "conf": "high"
+ },
+ {
+  "id": "lauryn hill|the miseducation of lauryn hill",
+  "artist": "Lauryn Hill",
+  "album": "The Miseducation of Lauryn Hill",
+  "year": 1998,
+  "genre": "hiphop",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 2.9,
+  "y": 0.3,
+  "z": 1.4,
+  "region": "calm",
+  "why": "真實樂器 R&B 與 dusty 鼓，福音和聲，溫暖有人味",
+  "conf": "high"
+ },
+ {
+  "id": "mary j. blige|no more drama",
+  "artist": "Mary J. Blige",
+  "album": "No More Drama",
+  "year": 2001,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 3.1,
+  "y": 0.2,
+  "z": 0.4,
+  "region": "lift",
+  "why": "彈跳的 Dre 鼓與戲劇性鋼琴取樣，光滑 R&B 製作",
+  "conf": "mid"
+ },
+ {
+  "id": "nas|illmatic",
+  "artist": "Nas",
+  "album": "Illmatic",
+  "year": 1994,
+  "genre": "hiphop",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 3,
+  "y": 1.2,
+  "z": -0.2,
+  "region": "charge",
+  "why": "中速 boom bap，爵士鋼琴取樣帶灰塵感，低頻厚、街頭夜色偏冷",
+  "conf": "high"
+ },
+ {
+  "id": "outkast|aquemini",
+  "artist": "OutKast",
+  "album": "Aquemini",
+  "year": 1998,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 3.2,
+  "y": 0.8,
+  "z": 0.9,
+  "region": "boil",
+  "why": "南方放克現場樂器，口琴吉他溫潤，鼓組鬆而厚，帶人味",
+  "conf": "high"
+ },
+ {
+  "id": "outkast|stankonia",
+  "artist": "OutKast",
+  "album": "Stankonia",
+  "year": 2000,
+  "genre": "hiphop",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 4.1,
+  "y": 1.2,
+  "z": 0.6,
+  "region": "boil",
+  "why": "快拍密集、失真吉他與電子鼓轟炸，放克迷幻熱鬧",
+  "conf": "high"
+ },
+ {
+  "id": "public enemy|fear of a black planet",
+  "artist": "Public Enemy",
+  "album": "Fear of a Black Planet",
+  "year": 1990,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 4.2,
+  "y": 1.7,
+  "z": -0.6,
+  "region": "charge",
+  "why": "Bomb Squad 取樣拼貼成噪音牆，警笛刺耳、密度極高",
+  "conf": "high"
+ },
+ {
+  "id": "wu-tang clan|enter the wu-tang (36 chambers)",
+  "artist": "Wu-Tang Clan",
+  "album": "Enter the Wu-Tang (36 Chambers)",
+  "year": 1993,
+  "genre": "hiphop",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 3.4,
+  "y": 1.6,
+  "z": -1,
+  "region": "charge",
+  "why": "粗糙 lo-fi 鼓、陰暗鋼琴與功夫片取樣，髒而冷硬",
+  "conf": "high"
+ },
+ {
+  "id": "black star|mos def & talib kweli are black star",
+  "artist": "Black Star",
+  "album": "Mos Def & Talib Kweli Are Black Star",
+  "year": 1998,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 3
+  },
+  "x": 3.1,
+  "y": 0.7,
+  "z": 0.9,
+  "region": "boil",
+  "why": "中速爵士靈魂取樣 boom bap，鼓溫厚、氛圍明亮友善",
+  "conf": "mid"
+ },
+ {
+  "id": "kendrick lamar|to pimp a butterfly",
+  "artist": "Kendrick Lamar",
+  "album": "To Pimp a Butterfly",
+  "year": 2015,
+  "genre": "hiphop",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 3
+  },
+  "x": 3.2,
+  "y": 0.8,
+  "z": 0.6,
+  "region": "boil",
+  "why": "現場爵士放克編制密集，貝斯厚實，熱烈中帶緊繃",
+  "conf": "high"
+ },
+ {
+  "id": "a tribe called quest|midnight marauders",
+  "artist": "A Tribe Called Quest",
+  "album": "Midnight Marauders",
+  "year": 1993,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 3.1,
+  "y": 0.9,
+  "z": 1.2,
+  "region": "boil",
+  "why": "低頻飽滿的爵士取樣，鼓鬆軟順滑，氣氛輕鬆溫暖",
+  "conf": "high"
+ },
+ {
+  "id": "arrested development|3 years, 5 months and 2 days in the life of...",
+  "artist": "Arrested Development",
+  "album": "3 Years, 5 Months and 2 Days in the Life Of...",
+  "year": 1992,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 3.4,
+  "y": -0.2,
+  "z": 1.6,
+  "region": "lift",
+  "why": "明亮放克與民謠吉他，合唱開朗，製作乾淨有陽光感",
+  "conf": "mid"
+ },
+ {
+  "id": "boyz ii men|cooleyhighharmony",
+  "artist": "Boyz II Men",
+  "album": "Cooleyhighharmony",
+  "year": 1991,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 2.9,
+  "y": -0.6,
+  "z": 1.6,
+  "region": "calm",
+  "why": "新傑克搖擺與抒情曲各半，和聲乾淨甜美",
+  "conf": "mid"
+ },
+ {
+  "id": "brandy|brandy",
+  "artist": "Brandy",
+  "album": "Brandy",
+  "year": 1994,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 2.7,
+  "y": 0,
+  "z": 1.3,
+  "region": "calm",
+  "why": "中慢速 R&B，柔和合成器與輕 hip-hop 鼓，人聲溫柔",
+  "conf": "mid"
+ },
+ {
+  "id": "mariah carey|mariah carey",
+  "artist": "Mariah Carey",
+  "album": "Mariah Carey",
+  "year": 1990,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 2.6,
+  "y": -0.6,
+  "z": 1.4,
+  "region": "calm",
+  "why": "抒情曲為主，製作光亮乾淨，高音飽滿溫暖",
+  "conf": "high"
+ },
+ {
+  "id": "mos def|black on both sides",
+  "artist": "Mos Def",
+  "album": "Black on Both Sides",
+  "year": 1999,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 3.2,
+  "y": 0.7,
+  "z": 0.9,
+  "region": "boil",
+  "why": "爵士靈魂取樣夾現場樂器與搖滾，鼓厚實、人味濃",
+  "conf": "mid"
+ },
+ {
+  "id": "the roots|things fall apart",
+  "artist": "The Roots",
+  "album": "Things Fall Apart",
+  "year": 1999,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 2.9,
+  "y": 0.8,
+  "z": 0.1,
+  "region": "languid",
+  "why": "現場樂團鬆弛律動，鍵盤低迴、色調陰鬱內斂",
+  "conf": "high"
+ },
+ {
+  "id": "toni braxton|toni braxton",
+  "artist": "Toni Braxton",
+  "album": "Toni Braxton",
+  "year": 1993,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 2.3,
+  "y": 0.1,
+  "z": 1.2,
+  "region": "calm",
+  "why": "慢速性感 R&B，低沉女中音、柔軟鍵盤，氛圍溫熱",
+  "conf": "mid"
+ },
+ {
+  "id": "a tribe called quest|beats, rhymes and life",
+  "artist": "A Tribe Called Quest",
+  "album": "Beats, Rhymes and Life",
+  "year": 1996,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.9,
+  "y": 1,
+  "z": 0.1,
+  "region": "languid",
+  "why": "The Ummah 製作偏暗偏簡，低頻沉、鍵盤朦朧，較前作冷淡",
+  "conf": "mid"
+ },
+ {
+  "id": "bone thugs-n-harmony|e. 1999 eternal",
+  "artist": "Bone Thugs-n-Harmony",
+  "album": "E. 1999 Eternal",
+  "year": 1995,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.3,
+  "y": 0.9,
+  "z": -0.8,
+  "region": "charge",
+  "why": "快嘴旋律唱腔疊在陰沉合成器上，低頻厚、氣氛幽暗",
+  "conf": "mid"
+ },
+ {
+  "id": "eric b. & rakim|paid in full",
+  "artist": "Eric B. & Rakim",
+  "album": "Paid in Full",
+  "year": 1987,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.4,
+  "y": 0.4,
+  "z": -0.3,
+  "region": "crisp",
+  "why": "鼓機骨架極簡、取樣稀疏，冷靜沉穩的節奏感",
+  "conf": "high"
+ },
+ {
+  "id": "gang starr|step in the arena",
+  "artist": "Gang Starr",
+  "album": "Step in the Arena",
+  "year": 1990,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.2,
+  "y": 0.6,
+  "z": 0.3,
+  "region": "boil",
+  "why": "早期 Premier 爵士取樣與刷碟，鼓紮實，中性略溫",
+  "conf": "mid"
+ },
+ {
+  "id": "grandmaster flash & the furious five|the message",
+  "artist": "Grandmaster Flash & The Furious Five",
+  "album": "The Message",
+  "year": 1982,
+  "genre": "hiphop",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.5,
+  "y": -0.3,
+  "z": 0.5,
+  "region": "lift",
+  "why": "放克迪斯可與電子律動為主，製作乾淨，節奏輕快",
+  "conf": "mid"
+ },
+ {
+  "id": "gza|liquid swords",
+  "artist": "GZA",
+  "album": "Liquid Swords",
+  "year": 1995,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.8,
+  "y": 1.4,
+  "z": -1.5,
+  "region": "decay",
+  "why": "RZA 陰冷鋼琴與弦樂取樣，鼓沉、空間髒暗肅殺",
+  "conf": "high"
+ },
+ {
+  "id": "juvenile|400 degreez",
+  "artist": "Juvenile",
+  "album": "400 Degreez",
+  "year": 1998,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.9,
+  "y": 0.5,
+  "z": 0.6,
+  "region": "boil",
+  "why": "Mannie Fresh 彈跳合成器與 808，派對感強、節奏密",
+  "conf": "mid"
+ },
+ {
+  "id": "lil' kim|hard core",
+  "artist": "Lil' Kim",
+  "album": "Hard Core",
+  "year": 1996,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.2,
+  "y": 0.7,
+  "z": 0,
+  "region": "boil",
+  "why": "Bad Boy 式光滑取樣配粗厚低頻，中速、帶狠勁",
+  "conf": "mid"
+ },
+ {
+  "id": "madonna|like a virgin",
+  "artist": "Madonna",
+  "album": "Like a Virgin",
+  "year": 1984,
+  "genre": "pop",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.9,
+  "y": -0.6,
+  "z": 1.4,
+  "region": "lift",
+  "why": "Nile Rodgers 舞曲製作，貝斯跳動、合成器明亮輕快",
+  "conf": "high"
+ },
+ {
+  "id": "richard rodgers & oscar hammerstein ii|the sound of music (an original soundtrack recording)",
+  "artist": "Richard Rodgers & Oscar Hammerstein II",
+  "album": "The Sound of Music (An Original Soundtrack Recording)",
+  "year": 1965,
+  "genre": "pop",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 2.6,
+  "y": -1.2,
+  "z": 1.8,
+  "region": "calm",
+  "why": "管弦樂與清亮人聲音樂劇曲，甜美開朗，低頻少",
+  "conf": "high"
+ },
+ {
+  "id": "the go-go's|beauty and the beat",
+  "artist": "The Go-Go's",
+  "album": "Beauty and the Beat",
+  "year": 1981,
+  "genre": "pop",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 4.2,
+  "y": 0.2,
+  "z": 1.2,
+  "region": "lift",
+  "why": "快速新浪潮流行龐克，吉他清脆、合唱明亮雀躍",
+  "conf": "high"
+ },
+ {
+  "id": "whitney houston|whitney",
+  "artist": "Whitney Houston",
+  "album": "Whitney",
+  "year": 1987,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.3,
+  "y": -0.4,
+  "z": 1.6,
+  "region": "lift",
+  "why": "八〇舞曲與大抒情交錯，製作亮麗，人聲熱情",
+  "conf": "high"
+ },
+ {
+  "id": "luis miguel|romance",
+  "artist": "Luis Miguel",
+  "album": "Romance",
+  "year": 1991,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 1.9,
+  "y": -1.3,
+  "z": 1.5,
+  "region": "calm",
+  "why": "慢速 bolero，木吉他與絲滑弦樂，柔情溫暖",
+  "conf": "high"
+ },
+ {
+  "id": "pet shop boys|actually",
+  "artist": "Pet Shop Boys",
+  "album": "Actually",
+  "year": 1987,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.6,
+  "y": -0.4,
+  "z": -0.6,
+  "region": "crisp",
+  "why": "合成器流行舞曲，音色光滑冷調，人聲淡漠憂鬱",
+  "conf": "high"
+ },
+ {
+  "id": "various artists|trainspotting",
+  "artist": "Various Artists",
+  "album": "Trainspotting",
+  "year": 1996,
+  "genre": "pop",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.5,
+  "y": 0.6,
+  "z": -0.2,
+  "region": "charge",
+  "why": "Britpop 與電子舞曲居中，偶夾慢曲，聲音略厚偏都市夜",
+  "conf": "mid"
+ },
+ {
+  "id": "the shirelles|tonight's the night",
+  "artist": "The Shirelles",
+  "album": "Tonight's the Night",
+  "year": 1961,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 1
+  },
+  "x": 2.9,
+  "y": -1.2,
+  "z": 1.6,
+  "region": "calm",
+  "why": "早期女子團體流行，輕柔和聲、弦樂點綴，甜美乾淨",
+  "conf": "mid"
+ },
+ {
+  "id": "big star|third-sister lovers",
+  "artist": "Big Star",
+  "album": "Third/Sister Lovers",
+  "year": 1987,
+  "genre": "pop",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 2.2,
+  "y": 0,
+  "z": -1,
+  "region": "still",
+  "why": "慢而破碎，弦樂與鬆散編曲，空間荒涼疏離",
+  "conf": "high"
+ },
+ {
+  "id": "franco battiato|la voce del padrone",
+  "artist": "Franco Battiato",
+  "album": "La voce del padrone",
+  "year": 1981,
+  "genre": "pop",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 3.6,
+  "y": -0.5,
+  "z": 0.6,
+  "region": "lift",
+  "why": "輕快合成器流行，節奏俐落，帶戲謔明亮感",
+  "conf": "mid"
+ },
+ {
+  "id": "naushad|baiju bawra",
+  "artist": "Naushad",
+  "album": "Baiju Bawra",
+  "year": 1952,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 2.2,
+  "y": -1.3,
+  "z": 0.8,
+  "region": "calm",
+  "why": "印度古典拉格為底的電影歌曲，聲樂與傳統樂器清亮",
+  "conf": "low"
+ },
+ {
+  "id": "naushad|mughal-e-azam",
+  "artist": "Naushad",
+  "album": "Mughal-E-Azam",
+  "year": 1960,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 2.6,
+  "y": -0.8,
+  "z": 1,
+  "region": "calm",
+  "why": "宏大管弦與卡瓦里合唱，華麗溫潤，中慢速",
+  "conf": "low"
+ },
+ {
+  "id": "s.d. burman|aradhana",
+  "artist": "S.D. Burman",
+  "album": "Aradhana",
+  "year": 1969,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 2.9,
+  "y": -1,
+  "z": 1.5,
+  "region": "calm",
+  "why": "Kishore Kumar 輕快浪漫情歌，弦樂與打擊明亮",
+  "conf": "mid"
+ },
+ {
+  "id": "shankar jaikishan|sangam",
+  "artist": "Shankar Jaikishan",
+  "album": "Sangam",
+  "year": 1964,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 2.8,
+  "y": -1,
+  "z": 1.4,
+  "region": "calm",
+  "why": "六〇年代寶萊塢浪漫管弦，手風琴與弦樂甜潤",
+  "conf": "low"
+ },
+ {
+  "id": "shankar jaikishan|shree 420",
+  "artist": "Shankar Jaikishan",
+  "album": "Shree 420",
+  "year": 1955,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 2.8,
+  "y": -1.1,
+  "z": 1.5,
+  "region": "calm",
+  "why": "輕快流浪漢小調與情歌，配器簡潔、氛圍親切",
+  "conf": "mid"
+ },
+ {
+  "id": "fishmans|98.12.28 otokotachi no wakare",
+  "artist": "Fishmans",
+  "album": "98.12.28 Otokotachi no Wakare",
+  "year": 1999,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 3
+  },
+  "x": 2.6,
+  "y": 1,
+  "z": 0.6,
+  "region": "languid",
+  "why": "現場長篇 dub 律動，殘響深、低頻綿延，溫柔帶哀愁",
+  "conf": "high"
+ },
+ {
+  "id": "elton john, tim rice & hans zimmer|the lion king: original motion picture soundtrack",
+  "artist": "Elton John, Tim Rice & Hans Zimmer",
+  "album": "The Lion King: Original Motion Picture Soundtrack",
+  "year": 1994,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 4,
+   "accessibility": 1
+  },
+  "x": 2.9,
+  "y": -0.2,
+  "z": 1.2,
+  "region": "calm",
+  "why": "歌曲歡快、配樂壯闊，非洲合唱與管弦溫暖",
+  "conf": "high"
+ },
+ {
+  "id": "fito páez|el amor después del amor",
+  "artist": "Fito Páez",
+  "album": "El Amor Después del Amor",
+  "year": 1992,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 5,
+   "accessibility": 2
+  },
+  "x": 3.2,
+  "y": -0.2,
+  "z": 1,
+  "region": "lift",
+  "why": "鋼琴主導的阿根廷流行搖滾，編曲多彩、氛圍溫熱",
+  "conf": "mid"
+ },
+ {
+  "id": "a-ha|hunting high and low",
+  "artist": "a-ha",
+  "album": "Hunting High and Low",
+  "year": 1985,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 4,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.4,
+  "y": -0.5,
+  "z": -0.3,
+  "region": "crisp",
+  "why": "明亮合成器流行，但多數曲子憂鬱，北歐冷感",
+  "conf": "high"
+ },
+ {
+  "id": "abba|abba",
+  "artist": "ABBA",
+  "album": "ABBA",
+  "year": 1975,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 4,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.4,
+  "y": -0.7,
+  "z": 1.5,
+  "region": "lift",
+  "why": "光亮流行搖滾，鋼琴與和聲甜美，節奏輕快",
+  "conf": "high"
+ },
+ {
+  "id": "abba|arrival",
+  "artist": "ABBA",
+  "album": "Arrival",
+  "year": 1976,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 4,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.5,
+  "y": -0.6,
+  "z": 1.3,
+  "region": "lift",
+  "why": "迪斯可律動與抒情交替，製作晶亮、和聲飽滿",
+  "conf": "high"
+ },
+ {
+  "id": "bangles|different light",
+  "artist": "Bangles",
+  "album": "Different Light",
+  "year": 1986,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 4,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.4,
+  "y": -0.4,
+  "z": 1.2,
+  "region": "lift",
+  "why": "清脆 jangle 吉他與女聲和聲，中快速、明亮",
+  "conf": "high"
+ },
+ {
+  "id": "duran duran|rio",
+  "artist": "Duran Duran",
+  "album": "Rio",
+  "year": 1982,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 4,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 4,
+  "y": -0.2,
+  "z": 0.8,
+  "region": "lift",
+  "why": "舞曲貝斯跳動、合成器亮麗，節奏輕快華麗",
+  "conf": "high"
+ },
+ {
+  "id": "eurythmics|sweet dreams (are made of this)",
+  "artist": "Eurythmics",
+  "album": "Sweet Dreams (Are Made of This)",
+  "year": 1983,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 4,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.4,
+  "y": -0.3,
+  "z": -1.2,
+  "region": "crisp",
+  "why": "極簡冰冷合成器與鼓機，人聲疏離，機械感強",
+  "conf": "high"
+ },
+ {
+  "id": "lana del rey|born to die",
+  "artist": "Lana Del Rey",
+  "album": "Born to Die",
+  "year": 2012,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 4,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 2.4,
+  "y": 0.6,
+  "z": -0.5,
+  "region": "decay",
+  "why": "慢速電影感弦樂配 hip-hop 鼓，殘響厚、慵懶陰鬱",
+  "conf": "high"
+ },
+ {
+  "id": "madonna|like a prayer",
+  "artist": "Madonna",
+  "album": "Like a Prayer",
+  "year": 1989,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 4,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.3,
+  "y": -0.1,
+  "z": 1,
+  "region": "lift",
+  "why": "福音合唱、流行搖滾與舞曲混合，飽滿溫熱",
+  "conf": "high"
+ },
+ {
+  "id": "madonna|madonna",
+  "artist": "Madonna",
+  "album": "Madonna",
+  "year": 1983,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 4,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.9,
+  "y": -0.6,
+  "z": 1.2,
+  "region": "lift",
+  "why": "後迪斯可舞曲，鼓機與合成器輕快，明亮跳躍",
+  "conf": "high"
+ },
+ {
+  "id": "madonna|the immaculate collection",
+  "artist": "Madonna",
+  "album": "The Immaculate Collection",
+  "year": 1990,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 4,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.9,
+  "y": -0.3,
+  "z": 1.2,
+  "region": "lift",
+  "why": "舞曲流行合輯，中位數是四拍舞池合成器，乾淨明亮帶甜",
+  "conf": "high"
+ },
+ {
+  "id": "michael jackson|invincible",
+  "artist": "Michael Jackson",
+  "album": "Invincible",
+  "year": 2001,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 4,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.4,
+  "y": 0.4,
+  "z": 0.5,
+  "region": "lift",
+  "why": "Jerkins 碎拍節奏重、合成低頻厚，夾大量抒情慢歌",
+  "conf": "mid"
+ },
+ {
+  "id": "olivia newton-john|physical",
+  "artist": "Olivia Newton-John",
+  "album": "Physical",
+  "year": 1981,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 4,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.4,
+  "y": -0.6,
+  "z": 1.2,
+  "region": "lift",
+  "why": "八〇初合成器軟搖滾，中快板、乾淨亮麗、輕快開朗",
+  "conf": "mid"
+ },
+ {
+  "id": "roxette|look sharp!",
+  "artist": "Roxette",
+  "album": "Look Sharp!",
+  "year": 1988,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 4,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.6,
+  "y": 0.1,
+  "z": 0.9,
+  "region": "lift",
+  "why": "吉他流行搖滾配大鼓聲，旋律直白有勁、明朗",
+  "conf": "mid"
+ },
+ {
+  "id": "tears for fears|songs from the big chair",
+  "artist": "Tears for Fears",
+  "album": "Songs from the Big Chair",
+  "year": 1985,
+  "genre": "pop",
+  "tier": null,
+  "old": {
+   "classic": 4,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.3,
+  "y": 0.4,
+  "z": -0.3,
+  "region": "crisp",
+  "why": "大片合成器與殘響鼓，中速厚實，帶憂鬱都會感",
+  "conf": "high"
+ },
+ {
+  "id": "johnny cash|at folsom prison",
+  "artist": "Johnny Cash",
+  "album": "At Folsom Prison",
+  "year": 1968,
+  "genre": "folk",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.3,
+  "y": -0.6,
+  "z": 0.6,
+  "region": "lift",
+  "why": "現場 boom-chicka 節拍，乾瘦錄音加犯人歡呼，粗獷有人味",
+  "conf": "high"
+ },
+ {
+  "id": "marty robbins|gunfighter ballads and trail songs",
+  "artist": "Marty Robbins",
+  "album": "Gunfighter Ballads and Trail Songs",
+  "year": 1959,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 2.4,
+  "y": -1.5,
+  "z": 1,
+  "region": "calm",
+  "why": "木吉他敘事民謠加和聲，乾淨簡樸，西部篝火感",
+  "conf": "mid"
+ },
+ {
+  "id": "paul simon|graceland",
+  "artist": "Paul Simon",
+  "album": "Graceland",
+  "year": 1986,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.6,
+  "y": -0.4,
+  "z": 1.6,
+  "region": "lift",
+  "why": "南非 mbaqanga 律動、明亮吉他與貝斯，輕快熱絡",
+  "conf": "high"
+ },
+ {
+  "id": "robert plant & alison krauss|raising sand",
+  "artist": "Robert Plant & Alison Krauss",
+  "album": "Raising Sand",
+  "year": 2007,
+  "genre": "folk",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 2.1,
+  "y": 0.5,
+  "z": 0.1,
+  "region": "languid",
+  "why": "Burnett 製作陰暗殘響、慢速低迴，兩人嗓音溫柔",
+  "conf": "high"
+ },
+ {
+  "id": "leonard cohen|songs of leonard cohen",
+  "artist": "Leonard Cohen",
+  "album": "Songs of Leonard Cohen",
+  "year": 1967,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 1.7,
+  "y": -1.3,
+  "z": -0.4,
+  "region": "still",
+  "why": "木吉他撥弦、低沉念唱、稀疏伴奏，冷靜陰鬱",
+  "conf": "high"
+ },
+ {
+  "id": "paul simon|still crazy after all these years",
+  "artist": "Paul Simon",
+  "album": "Still Crazy After All These Years",
+  "year": 1975,
+  "genre": "folk",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 2.6,
+  "y": -1,
+  "z": 0.4,
+  "region": "calm",
+  "why": "爵士味柔順製作、中慢速，都會微憂但溫潤",
+  "conf": "mid"
+ },
+ {
+  "id": "sufjan stevens|illinois",
+  "artist": "Sufjan Stevens",
+  "album": "Illinois",
+  "year": 2005,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 2.9,
+  "y": -0.6,
+  "z": 1,
+  "region": "calm",
+  "why": "班鳩琴、管樂、合唱層層堆疊，明亮溫暖，快慢交錯",
+  "conf": "high"
+ },
+ {
+  "id": "van morrison|astral weeks",
+  "artist": "Van Morrison",
+  "album": "Astral Weeks",
+  "year": 1968,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 2.4,
+  "y": -1.4,
+  "z": 0.9,
+  "region": "calm",
+  "why": "原聲吉他、低音提琴與弦樂即興流動，空氣感溫熱",
+  "conf": "high"
+ },
+ {
+  "id": "bob dylan|the freewheelin' bob dylan",
+  "artist": "Bob Dylan",
+  "album": "The Freewheelin' Bob Dylan",
+  "year": 1963,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 2.4,
+  "y": -1.9,
+  "z": 0.3,
+  "region": "calm",
+  "why": "單把木吉他加口琴，極簡乾淨，中性偏溫",
+  "conf": "high"
+ },
+ {
+  "id": "dixie chicks|wide open spaces",
+  "artist": "Dixie Chicks",
+  "album": "Wide Open Spaces",
+  "year": 1998,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 3.4,
+  "y": -1,
+  "z": 1.4,
+  "region": "lift",
+  "why": "提琴、班鳩琴的明亮鄉村流行，輕快陽光",
+  "conf": "mid"
+ },
+ {
+  "id": "hank williams|40 greatest hits",
+  "artist": "Hank Williams",
+  "album": "40 Greatest Hits",
+  "year": 1978,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 2.8,
+  "y": -1.3,
+  "z": 0.7,
+  "region": "calm",
+  "why": "honky-tonk 小編制、鋼棒吉他、單聲道乾瘦，溫厚寂寞",
+  "conf": "mid"
+ },
+ {
+  "id": "joan baez|joan baez",
+  "artist": "Joan Baez",
+  "album": "Joan Baez",
+  "year": 1960,
+  "genre": "folk",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 1.7,
+  "y": -1.9,
+  "z": -0.2,
+  "region": "still",
+  "why": "獨唱高音配木吉他，傳統敘事曲，素淨偏清冷",
+  "conf": "mid"
+ },
+ {
+  "id": "lucinda williams|car wheels on a gravel road",
+  "artist": "Lucinda Williams",
+  "album": "Car Wheels on a Gravel Road",
+  "year": 1998,
+  "genre": "folk",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 3,
+  "y": 0.2,
+  "z": 0.6,
+  "region": "lift",
+  "why": "根源搖滾、粗糙吉他與中速律動，有塵土味的溫度",
+  "conf": "mid"
+ },
+ {
+  "id": "patsy cline|patsy cline",
+  "artist": "Patsy Cline",
+  "album": "Patsy Cline",
+  "year": 1957,
+  "genre": "folk",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 2.6,
+  "y": -1.2,
+  "z": 1,
+  "region": "calm",
+  "why": "早期 Nashville 小編制，乾淨嗓音與鋼琴，溫和",
+  "conf": "low"
+ },
+ {
+  "id": "patsy cline|showcase",
+  "artist": "Patsy Cline",
+  "album": "Showcase",
+  "year": 1961,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 2.2,
+  "y": -1.1,
+  "z": 1,
+  "region": "calm",
+  "why": "Nashville sound 弦樂和聲襯托，慢速抒情，溫柔",
+  "conf": "mid"
+ },
+ {
+  "id": "pete seeger|we shall overcome",
+  "artist": "Pete Seeger",
+  "album": "We Shall Overcome",
+  "year": 1963,
+  "genre": "folk",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 2.6,
+  "y": -1.7,
+  "z": 1.5,
+  "region": "calm",
+  "why": "現場班鳩琴與全場合唱，原聲乾淨，團結熱絡",
+  "conf": "mid"
+ },
+ {
+  "id": "randy travis|storms of life",
+  "artist": "Randy Travis",
+  "album": "Storms of Life",
+  "year": 1986,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 2.8,
+  "y": -1.1,
+  "z": 1,
+  "region": "calm",
+  "why": "新傳統鄉村，鋼棒吉他、清爽製作，中速溫厚",
+  "conf": "mid"
+ },
+ {
+  "id": "bob dylan|bringing it all back home",
+  "artist": "Bob Dylan",
+  "album": "Bringing It All Back Home",
+  "year": 1965,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.1,
+  "y": -0.6,
+  "z": 0.4,
+  "region": "lift",
+  "why": "一面電聲樂團一面木吉他，跳躍節奏、乾瘦錄音",
+  "conf": "high"
+ },
+ {
+  "id": "bob dylan|dylan",
+  "artist": "Bob Dylan",
+  "album": "Dylan",
+  "year": 1973,
+  "genre": "folk",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.5,
+  "y": -0.9,
+  "z": 0.8,
+  "region": "calm",
+  "why": "鬆散翻唱 outtakes，女聲和音、鄉村小編制",
+  "conf": "low"
+ },
+ {
+  "id": "dixie chicks|taking the long way",
+  "artist": "Dixie Chicks",
+  "album": "Taking the Long Way",
+  "year": 2006,
+  "genre": "folk",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3,
+  "y": -0.3,
+  "z": 0.7,
+  "region": "lift",
+  "why": "Rubin 製作偏成人搖滾，厚實樂團、中速，溫暖",
+  "conf": "mid"
+ },
+ {
+  "id": "fabrizio de andré|crêuza de mä",
+  "artist": "Fabrizio De André",
+  "album": "Crêuza de mä",
+  "year": 1984,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.7,
+  "y": -0.6,
+  "z": 0.8,
+  "region": "calm",
+  "why": "布祖基、地中海民族樂器織體，熱帶海港溫度",
+  "conf": "mid"
+ },
+ {
+  "id": "fairport convention|liege & lief",
+  "artist": "Fairport Convention",
+  "album": "Liege & Lief",
+  "year": 1969,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.2,
+  "y": -0.1,
+  "z": 0,
+  "region": "lift",
+  "why": "電聲英倫民謠，提琴快速舞曲與古老敘事曲交替",
+  "conf": "mid"
+ },
+ {
+  "id": "johnny cash|american recordings",
+  "artist": "Johnny Cash",
+  "album": "American Recordings",
+  "year": 1994,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 1.7,
+  "y": -1.6,
+  "z": -0.3,
+  "region": "still",
+  "why": "單人木吉他與低沉嗓音近錄，簡樸陰暗",
+  "conf": "high"
+ },
+ {
+  "id": "nitty gritty dirt band|will the circle be unbroken",
+  "artist": "Nitty Gritty Dirt Band",
+  "album": "Will the Circle Be Unbroken",
+  "year": 1972,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.1,
+  "y": -1.5,
+  "z": 1.5,
+  "region": "lift",
+  "why": "藍草原聲大合奏，提琴班鳩琴輕快，熱鬧親切",
+  "conf": "mid"
+ },
+ {
+  "id": "paco de lucía|fuente y caudal",
+  "artist": "Paco de Lucía",
+  "album": "Fuente y caudal",
+  "year": 1973,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.3,
+  "y": -1.6,
+  "z": 0.6,
+  "region": "lift",
+  "why": "佛朗明哥獨奏吉他快速輪指，配手鼓，乾淨熱情",
+  "conf": "mid"
+ },
+ {
+  "id": "sufjan stevens|carrie & lowell",
+  "artist": "Sufjan Stevens",
+  "album": "Carrie & Lowell",
+  "year": 2015,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 1.5,
+  "y": -1.2,
+  "z": -0.3,
+  "region": "still",
+  "why": "氣聲低語、指彈木吉他、淡淡電子霧，哀傷稀疏",
+  "conf": "high"
+ },
+ {
+  "id": "井上陽水|氷の世界",
+  "artist": "井上陽水",
+  "album": "氷の世界",
+  "year": 1973,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.9,
+  "y": -0.5,
+  "z": 0.1,
+  "region": "calm",
+  "why": "民謠搖滾樂團加弦樂，中速，旋律帶冷調超現實",
+  "conf": "low"
+ },
+ {
+  "id": "emmylou harris|wrecking ball",
+  "artist": "Emmylou Harris",
+  "album": "Wrecking Ball",
+  "year": 1995,
+  "genre": "folk",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 3
+  },
+  "x": 2.1,
+  "y": 0.9,
+  "z": -0.3,
+  "region": "decay",
+  "why": "Lanois 殘響霧化、低頻嗡鳴，慢速幽暗",
+  "conf": "high"
+ },
+ {
+  "id": "neutral milk hotel|in the aeroplane over the sea",
+  "artist": "Neutral Milk Hotel",
+  "album": "In the Aeroplane Over the Sea",
+  "year": 1998,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 3
+  },
+  "x": 3,
+  "y": 1.2,
+  "z": 0.6,
+  "region": "boil",
+  "why": "用力刷木吉他、管樂、鋸琴，lo-fi 爆音糊厚熾熱",
+  "conf": "high"
+ },
+ {
+  "id": "charlie rich|behind closed doors",
+  "artist": "Charlie Rich",
+  "album": "Behind Closed Doors",
+  "year": 1973,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 1
+  },
+  "x": 2.2,
+  "y": -0.8,
+  "z": 1.3,
+  "region": "calm",
+  "why": "countrypolitan 弦樂與柔順製作，慢速，溫柔纏綿",
+  "conf": "mid"
+ },
+ {
+  "id": "elizabeth cotten|folksongs and instrumentals with guitar",
+  "artist": "Elizabeth Cotten",
+  "album": "Folksongs and Instrumentals with Guitar",
+  "year": 1958,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 1
+  },
+  "x": 2.2,
+  "y": -2,
+  "z": 1.2,
+  "region": "calm",
+  "why": "單把指彈吉他家中錄音，極輕極素，親切溫暖",
+  "conf": "mid"
+ },
+ {
+  "id": "garth brooks|garth brooks",
+  "artist": "Garth Brooks",
+  "album": "Garth Brooks",
+  "year": 1989,
+  "genre": "folk",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 1
+  },
+  "x": 2.7,
+  "y": -0.9,
+  "z": 1,
+  "region": "calm",
+  "why": "新傳統鄉村，抒情慢歌多、乾淨製作，溫厚",
+  "conf": "mid"
+ },
+ {
+  "id": "garth brooks|no fences",
+  "artist": "Garth Brooks",
+  "album": "No Fences",
+  "year": 1990,
+  "genre": "folk",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 1
+  },
+  "x": 3,
+  "y": -0.7,
+  "z": 1,
+  "region": "lift",
+  "why": "honky-tonk 快歌與慢歌各半，清爽鄉村製作",
+  "conf": "mid"
+ },
+ {
+  "id": "garth brooks|ropin' the wind",
+  "artist": "Garth Brooks",
+  "album": "Ropin' the Wind",
+  "year": 1991,
+  "genre": "folk",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 1
+  },
+  "x": 3.2,
+  "y": -0.5,
+  "z": 0.9,
+  "region": "lift",
+  "why": "鄉村搖滾味加重，樂團較厚、節奏較快，溫暖",
+  "conf": "mid"
+ },
+ {
+  "id": "keola & kapono beamer|honolulu city lights",
+  "artist": "Keola & Kapono Beamer",
+  "album": "Honolulu City Lights",
+  "year": 1978,
+  "genre": "folk",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 1
+  },
+  "x": 2,
+  "y": -1.5,
+  "z": 1.5,
+  "region": "calm",
+  "why": "夏威夷 slack-key 吉他與柔和和聲，慢速，陽光海風",
+  "conf": "mid"
+ },
+ {
+  "id": "adrian boult|holst: the planets",
+  "artist": "Adrian Boult",
+  "album": "Holst: The Planets",
+  "year": 1979,
+  "genre": "classical",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3,
+  "y": 0.5,
+  "z": -0.5,
+  "region": "charge",
+  "why": "火星銅管進行曲到海王星遠聲合唱，厚重管弦，宇宙冷感",
+  "conf": "high"
+ },
+ {
+  "id": "arthur rubinstein|chopin: nocturnes",
+  "artist": "Arthur Rubinstein",
+  "album": "Chopin: Nocturnes",
+  "year": 1967,
+  "genre": "classical",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 1.5,
+  "y": -1.6,
+  "z": 0.6,
+  "region": "calm",
+  "why": "獨奏鋼琴慢板夜曲，觸鍵圓潤，空間大，溫柔",
+  "conf": "high"
+ },
+ {
+  "id": "ennio morricone|the good, the bad and the ugly",
+  "artist": "Ennio Morricone",
+  "album": "The Good, the Bad and the Ugly",
+  "year": 2004,
+  "genre": "classical",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3,
+  "y": -0.2,
+  "z": 0.2,
+  "region": "lift",
+  "why": "口哨、彈撥吉他、小號與合唱，乾燥荒漠的緊繃",
+  "conf": "high"
+ },
+ {
+  "id": "herbert von karajan|beethoven: 9 symphonies (1963)",
+  "artist": "Herbert von Karajan",
+  "album": "Beethoven: 9 Symphonies (1963)",
+  "year": 1963,
+  "genre": "classical",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.5,
+  "y": 0.3,
+  "z": 0.3,
+  "region": "lift",
+  "why": "柏林愛樂速度緊湊有推力，弦樂飽滿，中性偏溫",
+  "conf": "mid"
+ },
+ {
+  "id": "i musici|vivaldi: the four seasons",
+  "artist": "I Musici",
+  "album": "Vivaldi: The Four Seasons",
+  "year": 1959,
+  "genre": "classical",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.2,
+  "y": -1.3,
+  "z": 0.8,
+  "region": "lift",
+  "why": "室內弦樂巴洛克快板明亮跳動，輕盈溫暖",
+  "conf": "high"
+ },
+ {
+  "id": "istván kertész|dvořák: symphony no. 9 from the new world",
+  "artist": "István Kertész",
+  "album": "Dvořák: Symphony no. 9 From the New World",
+  "year": 1967,
+  "genre": "classical",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.1,
+  "y": 0.3,
+  "z": 0.4,
+  "region": "lift",
+  "why": "銅管爆發的快板配慢板英國管，厚度中等偏溫",
+  "conf": "mid"
+ },
+ {
+  "id": "john williams|e.t. the extra-terrestrial",
+  "artist": "John Williams",
+  "album": "E.T. The Extra-Terrestrial",
+  "year": 1982,
+  "genre": "classical",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 2.6,
+  "y": -0.2,
+  "z": 1.2,
+  "region": "calm",
+  "why": "弦樂飛翔主題與神祕慢段交替，溫情抒情",
+  "conf": "mid"
+ },
+ {
+  "id": "john williams|indiana jones and the raiders of the lost ark (original motion picture soundtrack)",
+  "artist": "John Williams",
+  "album": "Indiana Jones and the Raiders of the Lost Ark (Original Motion Picture Soundtrack)",
+  "year": 1981,
+  "genre": "classical",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.6,
+  "y": 0.2,
+  "z": 0.3,
+  "region": "lift",
+  "why": "銅管進行曲與動作配樂為主，中間夾陰森懸疑段",
+  "conf": "mid"
+ },
+ {
+  "id": "john williams|schindler's list",
+  "artist": "John Williams",
+  "album": "Schindler's List",
+  "year": 1993,
+  "genre": "classical",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 1.5,
+  "y": -0.9,
+  "z": -0.8,
+  "region": "still",
+  "why": "獨奏小提琴慢板哀歌，弦樂稀薄，陰冷悲傷",
+  "conf": "high"
+ },
+ {
+  "id": "van cliburn|tchaikovsky: piano concerto no. 1",
+  "artist": "Van Cliburn",
+  "album": "Tchaikovsky: Piano Concerto no. 1",
+  "year": 1958,
+  "genre": "classical",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.7,
+  "y": 0.3,
+  "z": 0.8,
+  "region": "lift",
+  "why": "浪漫派大協奏曲，鋼琴強奏和弦與樂團齊鳴，熱烈",
+  "conf": "high"
+ },
+ {
+  "id": "wolfgang amadeus mozart|requiem mass in d minor, k. 626",
+  "artist": "Wolfgang Amadeus Mozart",
+  "album": "Requiem Mass in D minor, K. 626",
+  "year": 1791,
+  "genre": "classical",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 2.4,
+  "y": 0.5,
+  "z": -1.2,
+  "region": "decay",
+  "why": "合唱加樂團、教堂殘響厚，慢板為主偶有激昂段落，整體陰沉肅穆",
+  "conf": "mid"
+ },
+ {
+  "id": "ennio morricone|c'era una volta il west",
+  "artist": "Ennio Morricone",
+  "album": "C'era una volta il West",
+  "year": 1970,
+  "genre": "classical",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 2.3,
+  "y": 0.1,
+  "z": 0,
+  "region": "calm",
+  "why": "口琴與弦樂長線條、人聲吟唱，慢速蒼涼開闊，荒漠感與抒情並存",
+  "conf": "high"
+ },
+ {
+  "id": "ennio morricone|the mission (original sound track from the film)",
+  "artist": "Ennio Morricone",
+  "album": "The Mission (Original Sound Track From the Film)",
+  "year": 1986,
+  "genre": "classical",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 2,
+  "y": -0.5,
+  "z": 0.8,
+  "region": "calm",
+  "why": "雙簧管獨奏、合唱與排笛，慢而透明，聖詠般的溫柔",
+  "conf": "high"
+ },
+ {
+  "id": "herbert von karajan|puccini: la bohème",
+  "artist": "Herbert von Karajan",
+  "album": "Puccini: La Bohème",
+  "year": 1973,
+  "genre": "classical",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 2.7,
+  "y": -0.3,
+  "z": 1.3,
+  "region": "calm",
+  "why": "抒情詠嘆與輕快對唱交錯，樂團溫潤，浪漫熱切",
+  "conf": "mid"
+ },
+ {
+  "id": "johann sebastian bach|concerti",
+  "artist": "Johann Sebastian Bach",
+  "album": "Concerti",
+  "year": 1739,
+  "genre": "classical",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 3.3,
+  "y": -1.3,
+  "z": 0.6,
+  "region": "lift",
+  "why": "巴洛克快板律動明亮、小編制弦樂乾淨，低頻少",
+  "conf": "mid"
+ },
+ {
+  "id": "johann sebastian bach|the goldberg variations",
+  "artist": "Johann Sebastian Bach",
+  "album": "The Goldberg Variations",
+  "year": 1741,
+  "genre": "classical",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 2.4,
+  "y": -1.8,
+  "z": 0,
+  "region": "calm",
+  "why": "單一鍵盤獨奏、對位清晰，變奏快慢交替，乾淨中性",
+  "conf": "mid"
+ },
+ {
+  "id": "john williams|jaws: music from the original motion picture soundtrack",
+  "artist": "John Williams",
+  "album": "Jaws: Music From the Original Motion Picture Soundtrack",
+  "year": 1975,
+  "genre": "classical",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 3,
+  "y": 0.4,
+  "z": -0.6,
+  "region": "crisp",
+  "why": "低音弦逼近的兩音動機、銅管冒險段落，緊張偏冷",
+  "conf": "mid"
+ },
+ {
+  "id": "john williams|star wars (original motion picture soundtrack)",
+  "artist": "John Williams",
+  "album": "Star Wars (Original Motion Picture Soundtrack)",
+  "year": 1977,
+  "genre": "classical",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 3.4,
+  "y": 0.3,
+  "z": 0.6,
+  "region": "lift",
+  "why": "銅管號角與進行曲、全編制樂團飽滿，英雄式明亮",
+  "conf": "high"
+ },
+ {
+  "id": "karl böhm|mozart: requiem",
+  "artist": "Karl Böhm",
+  "album": "Mozart: Requiem",
+  "year": 1971,
+  "genre": "classical",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 2.1,
+  "y": 0.8,
+  "z": -1.3,
+  "region": "decay",
+  "why": "慢速沉重、合唱厚實殘響大，莊嚴陰冷",
+  "conf": "mid"
+ },
+ {
+  "id": "leonard bernstein & stephen sondheim|west side story (original sound track recording)",
+  "artist": "Leonard Bernstein & Stephen Sondheim",
+  "album": "West Side Story (Original Sound Track Recording)",
+  "year": 1961,
+  "genre": "classical",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 3.5,
+  "y": -0.2,
+  "z": 0.7,
+  "region": "lift",
+  "why": "拉丁節奏、爵士銅管與響指，快歌多，抒情曲熱切",
+  "conf": "high"
+ },
+ {
+  "id": "ludwig van beethoven|fidelio",
+  "artist": "Ludwig van Beethoven",
+  "album": "Fidelio",
+  "year": 1814,
+  "genre": "classical",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 3,
+  "y": 0,
+  "z": 0.4,
+  "region": "lift",
+  "why": "古典樂團與獨唱，從陰暗地牢走向歡騰終曲",
+  "conf": "mid"
+ },
+ {
+  "id": "ludwig van beethoven|kreutzer sonata",
+  "artist": "Ludwig van Beethoven",
+  "album": "Kreutzer Sonata",
+  "year": 1803,
+  "genre": "classical",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 3.4,
+  "y": -1.5,
+  "z": -0.2,
+  "region": "crisp",
+  "why": "小提琴與鋼琴對峙、急板激烈，編制乾淨，張力偏緊",
+  "conf": "mid"
+ },
+ {
+  "id": "ludwig van beethoven|symphony no. 7",
+  "artist": "Ludwig van Beethoven",
+  "album": "Symphony no. 7",
+  "year": 1813,
+  "genre": "classical",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 3.8,
+  "y": 0.1,
+  "z": 0.6,
+  "region": "lift",
+  "why": "舞曲般的反覆節奏、終樂章狂奔，樂團飽滿明亮",
+  "conf": "high"
+ },
+ {
+  "id": "坂本龍一|戦場のメリークリスマス",
+  "artist": "坂本龍一",
+  "album": "戦場のメリークリスマス",
+  "year": 1983,
+  "genre": "classical",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 2.3,
+  "y": -0.6,
+  "z": -0.4,
+  "region": "still",
+  "why": "玻璃質合成器與東方五聲旋律，中慢速，清冷憂傷",
+  "conf": "high"
+ },
+ {
+  "id": "andrea bocelli|romanza",
+  "artist": "Andrea Bocelli",
+  "album": "Romanza",
+  "year": 1996,
+  "genre": "classical",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 2.2,
+  "y": -0.5,
+  "z": 1.3,
+  "region": "calm",
+  "why": "美聲男高音配弦樂抒情曲，慢速柔和，溫暖甜美",
+  "conf": "mid"
+ },
+ {
+  "id": "bob marley & the wailers|exodus",
+  "artist": "Bob Marley & The Wailers",
+  "album": "Exodus",
+  "year": 1977,
+  "genre": "world",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 2.8,
+  "y": 0.5,
+  "z": 1.3,
+  "region": "languid",
+  "why": "中速雷鬼反拍、貝斯圓厚，鬆弛有陽光感",
+  "conf": "high"
+ },
+ {
+  "id": "bob marley & the wailers|legend",
+  "artist": "Bob Marley & The Wailers",
+  "album": "Legend",
+  "year": 1984,
+  "genre": "world",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 2.7,
+  "y": 0.2,
+  "z": 1.5,
+  "region": "calm",
+  "why": "精選以中速雷鬼情歌為主，貝斯溫厚、合聲甜",
+  "conf": "high"
+ },
+ {
+  "id": "juan luis guerra y 440|bachata rosa",
+  "artist": "Juan Luis Guerra y 440",
+  "album": "Bachata Rosa",
+  "year": 1990,
+  "genre": "world",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 1
+  },
+  "x": 3.3,
+  "y": -0.9,
+  "z": 1.7,
+  "region": "lift",
+  "why": "巴恰塔吉他與梅倫格快歌、製作乾淨明亮，熱情甜",
+  "conf": "mid"
+ },
+ {
+  "id": "selena|amor prohibido",
+  "artist": "Selena",
+  "album": "Amor Prohibido",
+  "year": 1994,
+  "genre": "world",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 3.4,
+  "y": -0.6,
+  "z": 1.6,
+  "region": "lift",
+  "why": "昆比亞節奏輕快、合成器與手風琴乾淨，甜美流行",
+  "conf": "mid"
+ },
+ {
+  "id": "tito puente|dance mania",
+  "artist": "Tito Puente",
+  "album": "Dance Mania",
+  "year": 1958,
+  "genre": "world",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 4.2,
+  "y": -0.4,
+  "z": 1.6,
+  "region": "lift",
+  "why": "曼波大樂隊、快速打擊與銅管齊奏，熱力舞曲",
+  "conf": "high"
+ },
+ {
+  "id": "astor piazzolla|libertango",
+  "artist": "Astor Piazzolla",
+  "album": "Libertango",
+  "year": 1974,
+  "genre": "world",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.3,
+  "y": -0.4,
+  "z": -0.4,
+  "region": "crisp",
+  "why": "班多鈕手風琴驅動的頑固節奏，探戈張力，帶都市冷調",
+  "conf": "mid"
+ },
+ {
+  "id": "celia cruz & johnny pacheco|celia & johnny",
+  "artist": "Celia Cruz & Johnny Pacheco",
+  "album": "Celia & Johnny",
+  "year": 1974,
+  "genre": "world",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 4,
+  "y": -0.4,
+  "z": 1.8,
+  "region": "lift",
+  "why": "騷莎快速打擊、銅管與熱烈人聲，歡快熱鬧",
+  "conf": "mid"
+ },
+ {
+  "id": "fania all-stars|live at the cheetah, vol. 1",
+  "artist": "Fania All-Stars",
+  "album": "Live at the Cheetah, Vol. 1",
+  "year": 1972,
+  "genre": "world",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 4.2,
+  "y": 0.2,
+  "z": 1.5,
+  "region": "lift",
+  "why": "現場長段騷莎即興、打擊與銅管密集，觀眾熱烈",
+  "conf": "mid"
+ },
+ {
+  "id": "junior murvin|police & thieves",
+  "artist": "Junior Murvin",
+  "album": "Police & Thieves",
+  "year": 1977,
+  "genre": "world",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.4,
+  "y": 1,
+  "z": 1,
+  "region": "languid",
+  "why": "Black Ark 混濁相位效果、假音人聲，慢搖雷鬼溫潤",
+  "conf": "mid"
+ },
+ {
+  "id": "max romeo & the upsetters|war ina babylon",
+  "artist": "Max Romeo & The Upsetters",
+  "album": "War ina Babylon",
+  "year": 1976,
+  "genre": "world",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.4,
+  "y": 1.1,
+  "z": 0.4,
+  "region": "languid",
+  "why": "Black Ark 霧狀殘響、低頻厚，中慢速帶點陰鬱",
+  "conf": "high",
+  "orig": {
+   "x": 2.4,
+   "y": 1.1,
+   "z": 0.7
+  },
+  "review": "Black Ark 霧狀低頻、理由寫陰鬱，色溫 0.7 略高，收到 0.4（roots reggae 仍偏暖）"
+ },
+ {
+  "id": "mercedes sosa|mercedes sosa en argentina",
+  "artist": "Mercedes Sosa",
+  "album": "Mercedes Sosa en Argentina",
+  "year": 1982,
+  "genre": "world",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.4,
+  "y": -1.2,
+  "z": 1.2,
+  "region": "calm",
+  "why": "吉他與 bombo 鼓伴奏的民謠現場，人聲渾厚溫熱",
+  "conf": "mid"
+ },
+ {
+  "id": "the mighty diamonds|right time",
+  "artist": "The Mighty Diamonds",
+  "album": "Right Time",
+  "year": 1976,
+  "genre": "world",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.6,
+  "y": 0.4,
+  "z": 1.2,
+  "region": "calm",
+  "why": "三重唱和聲、rockers 節奏貝斯紮實，溫柔抒情",
+  "conf": "mid"
+ },
+ {
+  "id": "u-roy|dread in a babylon",
+  "artist": "U-Roy",
+  "album": "Dread in a Babylon",
+  "year": 1975,
+  "genre": "world",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.5,
+  "y": 1,
+  "z": 0.9,
+  "region": "languid",
+  "why": "念唱 toasting 疊在 dub 伴奏上，低頻厚殘響多",
+  "conf": "mid"
+ },
+ {
+  "id": "willie colón|cosa nuestra",
+  "artist": "Willie Colón",
+  "album": "Cosa Nuestra",
+  "year": 1969,
+  "genre": "world",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.9,
+  "y": 0,
+  "z": 1.1,
+  "region": "lift",
+  "why": "長號粗礪齊奏、騷莎快板，街頭熱鬧",
+  "conf": "mid"
+ },
+ {
+  "id": "willie colón|siembra",
+  "artist": "Willie Colón",
+  "album": "Siembra",
+  "year": 1978,
+  "genre": "world",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.7,
+  "y": -0.3,
+  "z": 1,
+  "region": "lift",
+  "why": "騷莎編曲精緻、銅管乾淨，快板敘事曲為主",
+  "conf": "high"
+ },
+ {
+  "id": "yellowman|zungguzungguguzungguzeng",
+  "artist": "Yellowman",
+  "album": "Zungguzungguguzungguzeng",
+  "year": 1983,
+  "genre": "world",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.1,
+  "y": 0.4,
+  "z": 1.2,
+  "region": "lift",
+  "why": "dancehall 中速節奏、貝斯厚，念唱活潑歡快",
+  "conf": "mid"
+ },
+ {
+  "id": "a.r. rahman|dil se..",
+  "artist": "A.R. Rahman",
+  "album": "Dil Se..",
+  "year": 1998,
+  "genre": "world",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 3.2,
+  "y": 0,
+  "z": 0.8,
+  "region": "lift",
+  "why": "打擊與弦樂層疊、火車節奏舞曲與戲劇化抒情交錯",
+  "conf": "mid"
+ },
+ {
+  "id": "a.r. rahman|roja",
+  "artist": "A.R. Rahman",
+  "album": "Roja",
+  "year": 1992,
+  "genre": "world",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 2.7,
+  "y": -0.7,
+  "z": 1.2,
+  "region": "calm",
+  "why": "合成器與管弦輕盈、旋律柔美，空氣感明亮",
+  "conf": "mid"
+ },
+ {
+  "id": "a.r. rahman|slumdog millionaire: music from the motion picture",
+  "artist": "A.R. Rahman",
+  "album": "Slumdog Millionaire: Music From the Motion Picture",
+  "year": 2008,
+  "genre": "world",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 3.9,
+  "y": 0.6,
+  "z": 0.6,
+  "region": "boil",
+  "why": "電子節拍與嘻哈、打擊密集低頻厚，熱烈",
+  "conf": "mid"
+ },
+ {
+  "id": "ali farka touré & toumani diabaté|ali and toumani",
+  "artist": "Ali Farka Touré & Toumani Diabaté",
+  "album": "Ali and Toumani",
+  "year": 2010,
+  "genre": "world",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 1.9,
+  "y": -1.8,
+  "z": 1,
+  "region": "calm",
+  "why": "柯拉琴與木吉他對話、全原聲、慢而流動，溫和",
+  "conf": "high"
+ },
+ {
+  "id": "muddy waters|the best of muddy waters",
+  "artist": "Muddy Waters",
+  "album": "The Best of Muddy Waters",
+  "year": 1958,
+  "genre": "blues",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 1,
+   "accessibility": 2
+  },
+  "x": 2.8,
+  "y": 0.5,
+  "z": 0.6,
+  "region": "languid",
+  "why": "芝加哥電藍調、放大器顆粒感，中速沉穩",
+  "conf": "high"
+ },
+ {
+  "id": "dr. john|dr. john's gumbo",
+  "artist": "Dr. John",
+  "album": "Dr. John's Gumbo",
+  "year": 1972,
+  "genre": "blues",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 3.2,
+  "y": -0.3,
+  "z": 1.6,
+  "region": "lift",
+  "why": "紐奧良鋼琴滾奏與銅管，搖擺輕快，歡樂",
+  "conf": "high"
+ },
+ {
+  "id": "freddie king|let's hide away and dance away with freddie king",
+  "artist": "Freddie King",
+  "album": "Let's Hide Away and Dance Away with Freddie King",
+  "year": 1961,
+  "genre": "blues",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 3.4,
+  "y": -0.3,
+  "z": 1,
+  "region": "lift",
+  "why": "器樂吉他 shuffle、清亮推弦，輕快可跳",
+  "conf": "mid"
+ },
+ {
+  "id": "jimmy reed|i'm jimmy reed",
+  "artist": "Jimmy Reed",
+  "album": "I'm Jimmy Reed",
+  "year": 1958,
+  "genre": "blues",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 2.5,
+  "y": 0,
+  "z": 1.3,
+  "region": "calm",
+  "why": "慵懶 shuffle、口琴高音與含糊唱腔，鬆弛",
+  "conf": "mid"
+ },
+ {
+  "id": "little walter|the best of little walter",
+  "artist": "Little Walter",
+  "album": "The Best of Little Walter",
+  "year": 1957,
+  "genre": "blues",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 1
+  },
+  "x": 3.2,
+  "y": 0.6,
+  "z": 0.9,
+  "region": "boil",
+  "why": "放大口琴失真、中快 shuffle，粗礪有勁",
+  "conf": "mid"
+ },
+ {
+  "id": "b.b. king|live in cook county jail",
+  "artist": "B.B. King",
+  "album": "Live in Cook County Jail",
+  "year": 1971,
+  "genre": "blues",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.9,
+  "y": -0.1,
+  "z": 1.3,
+  "region": "calm",
+  "why": "現場銅管與慢藍調獨奏，觀眾回應熱烈",
+  "conf": "mid"
+ },
+ {
+  "id": "john mayall & the bluesbreakers|blues breakers with eric clapton",
+  "artist": "John Mayall & The Bluesbreakers",
+  "album": "Blues Breakers with Eric Clapton",
+  "year": 1966,
+  "genre": "blues",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.4,
+  "y": 0.9,
+  "z": 0.4,
+  "region": "boil",
+  "why": "破音電吉他前景、中快藍調搖滾，粗厚",
+  "conf": "high"
+ },
+ {
+  "id": "junior wells|hoodoo man blues",
+  "artist": "Junior Wells",
+  "album": "Hoodoo Man Blues",
+  "year": 1965,
+  "genre": "blues",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.8,
+  "y": 0.1,
+  "z": 0.7,
+  "region": "calm",
+  "why": "三重奏編制精簡、吉他與口琴乾，親密",
+  "conf": "mid"
+ },
+ {
+  "id": "muddy waters|at newport 1960",
+  "artist": "Muddy Waters",
+  "album": "At Newport 1960",
+  "year": 1960,
+  "genre": "blues",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.2,
+  "y": 0.3,
+  "z": 1.2,
+  "region": "lift",
+  "why": "現場樂團搖擺、鋼琴口琴熱烈，越唱越嗨",
+  "conf": "high"
+ },
+ {
+  "id": "muddy waters|folk singer",
+  "artist": "Muddy Waters",
+  "album": "Folk Singer",
+  "year": 1964,
+  "genre": "blues",
+  "tier": null,
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 1.8,
+  "y": -1.4,
+  "z": 0.2,
+  "region": "calm",
+  "why": "木吉他與低音提琴原聲、近距收音，沉靜深沉",
+  "conf": "high"
+ },
+ {
+  "id": "professor longhair|crawfish fiesta",
+  "artist": "Professor Longhair",
+  "album": "Crawfish Fiesta",
+  "year": 1980,
+  "genre": "blues",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.4,
+  "y": -0.6,
+  "z": 1.7,
+  "region": "lift",
+  "why": "倫巴藍調鋼琴、明亮跳動，歡樂嘉年華",
+  "conf": "mid"
+ },
+ {
+  "id": "the paul butterfield blues band|the paul butterfield blues band",
+  "artist": "The Paul Butterfield Blues Band",
+  "album": "The Paul Butterfield Blues Band",
+  "year": 1965,
+  "genre": "blues",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.6,
+  "y": 0.8,
+  "z": 0.4,
+  "region": "boil",
+  "why": "放大口琴與電吉他大聲直接，快板 shuffle",
+  "conf": "mid"
+ },
+ {
+  "id": "willie dixon|i am the blues",
+  "artist": "Willie Dixon",
+  "album": "I Am the Blues",
+  "year": 1970,
+  "genre": "blues",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.7,
+  "y": 0.1,
+  "z": 0.8,
+  "region": "calm",
+  "why": "芝加哥樂團中速、鋼琴與口琴，渾厚放鬆",
+  "conf": "low"
+ },
+ {
+  "id": "bessie smith|the essential bessie smith",
+  "artist": "Bessie Smith",
+  "album": "The Essential Bessie Smith",
+  "year": 1997,
+  "genre": "blues",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 3
+  },
+  "x": 2,
+  "y": -0.8,
+  "z": 0.4,
+  "region": "calm",
+  "why": "1920 年代錄音低頻少、短號與鋼琴伴慢藍調",
+  "conf": "mid"
+ },
+ {
+  "id": "howlin' wolf|moanin' in the moonlight",
+  "artist": "Howlin' Wolf",
+  "album": "Moanin' in the Moonlight",
+  "year": 1959,
+  "genre": "blues",
+  "tier": "hall",
+  "old": {
+   "classic": 5,
+   "obscurity": 2,
+   "accessibility": 3
+  },
+  "x": 2.8,
+  "y": 1,
+  "z": -0.3,
+  "region": "decay",
+  "why": "沙啞嘶吼與失真吉他、慢中速，陰森壓迫",
+  "conf": "high"
  }
 ]

@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-15｜dip-vinyl-shop｜情緒三軸：500 張主要專輯模型評分並上圖
+
+- **改動**：店主要「先評分五百張主要專輯 放上去看」。`score500/select.mjs` 從經典度 5 依曲風配額挑 440 張＋60 張亞洲名盤（排除錨點）；10 支代理各 50 張照評分說明書與 104 錨點校正表打 x/y/z＋理由＋把握度，主線審稿改 5 張（`review.json`）。八格：放鬆 148、平靜 26、要死不活 18、頹靡 21、雀躍 154、冷冽 32、沸騰 60、亢奮 41。拿這 500 張回測子曲風暫估：八格只對 43%、能量同側只 66%——全池其餘卡的格子仍不可靠。`build-priors.mjs` 加「模型評分」來源層，`card-moods-v0.json` 來源碼 0 暫估／1 錨點／2 模型評分；`starmap-lab.html` 顯示來源；私人星圖預覽換成 604 張已評分專輯。
+- **主要檔案**：`batch-progress/mood-axes/score500/{select.mjs,BRIEF.md,merge.mjs,review.json,scored-500.json,merge-report.json,cards.json,chunk-*.json,out/*.json}`、`batch-progress/mood-axes/{build-priors.mjs,rulings.md}`、`data/mood/{card-moods-v0.json,scale-v0.json}`、`starmap-lab.html`
+- **驗證**：merge 500/500、0 錯誤、各輸出檔 0 筆外來 id；能量對舊三軸 |r| ≤ 0.13；星圖預覽桌機與手機 0 錯誤。
+
 ### 2026-10-15｜dip-vinyl-shop｜情緒八格回語意門檻：不為平均改屬性，平均改在抽卡層
 
 - **改動**：店主看過條件中位數的代價後裁定「不要為了平均而改變原本的屬性」。`build-scale.mjs` 移除條件中位數與折衷門檻，八格只看原始值對語意門檻（能量 3.0／質地 +0.5／色溫 0），錨點 104/104 同格；百分位 p 保留為後台數值與星圖定位，不決定格子。`starmap-lab.html` 拿掉切法切換鈕。分布不均改在抽卡層處理：抽某一格時八格等機率、薄格不足 300 張向相鄰格借卡、成就門檻按該格比例。`MOOD_SCALE_PLAN.md` 升 v1.3（§0、§1、§2 重寫，§2.4 記否決理由），`MOOD_ENERGY_PLAN.md` §1.2、§2、§6.2 同步。v0 全池八格 1.7%（頹靡）～31.7%（雀躍）。
