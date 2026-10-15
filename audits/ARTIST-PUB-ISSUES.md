@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1350 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1354 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1354,3 +1354,7 @@
 | ar-d-132 | Önder Focan | Beneath the Stars / Yıldızların Altında | 是 Blue Note 發行的第一張土耳其專輯 | 『第一』只見於 Focan 自己的官網、Nardis 官網、Pori Jazz 與英文維基（同源或宣傳稿），說法是『第一位在 Blue Note 發片的土耳其爵士樂手』；但 cornucopia.net 轉載的 Nardis 活動稿稱鋼琴家 Ayşe Tütüncü 是『第一位有作品由 Blue Note 製作（produced by）的土耳其人』（《Panayır》2006），兩者關係待釐清。建議上線簡介改成較保守的『自稱／被稱為第一位在 Blue Note 發片的土耳其爵士樂手』或拿掉『第一』。 | https://www.cornucopia.net/events/ayse-tutuncu-quartet/ |
 | ar-d-132 | Rachelle Ferrell | First Instrument | 1990 年在日本以《Rachelle Ferrell》之名首發，1995 年美國才改題《First Instrument》重發 | 英文維基寫 1990 年 6 月 19 日日本首發的就是《First Instrument》，1995 年美國版沿用同名；另有 1992 年 Capitol 的流行專輯才叫《Rachelle Ferrell》。日本首發版專輯名是否為《Rachelle Ferrell》本層查無第二源，待核對 Discogs 日本版。 | https://en.wikipedia.org/wiki/Rachelle_Ferrell |
 | ar-d-132 | Ralph Peterson Quintet | V | 1984 年畢業之後被 Art Blakey 挑去當第二鼓手 | 英文維基寫他 1983 年加入 Jazz Messengers 當第二鼓手（1984 年畢業於 Rutgers 是另一件事），jazz.fm 訃聞摘要也寫 Blakey 1983 年選中他；『畢業之後』的順序與年份可能有誤，建議改成『1983 年被 Blakey 挑去當第二鼓手，1984 年才從 Rutgers 畢業』或去掉順序。 | https://en.wikipedia.org/wiki/Ralph_Peterson_Jr. |
+| ar-d-132 | Yaron Herman | Y | 2008 年拿過 Victoire du Jazz 的年度新人獎 | 獎項全名是 Révélation instrumentale（器樂新秀／年度器樂新秀），不是泛稱的年度新人獎；法文維基寫「révélation instrumentale française」，Numéro 2025 年專訪寫「Révélation instrumentale de l'année」。 | https://numero.com/culture/musique/les-secrets-de-yaron-herman-le-pianiste-capable-dimproviser-4-heures-sur-scene/ |
+| ar-d-133 | 宮間利之とニューハード + 佐藤允彦 | Yamataifu | 這張碟替他拿到 1972 年的芸術祭優秀賞 | 「他」主詞不清，官網與日文維基將《邪馬台賦》1972 年芸術祭優秀賞記在樂團與佐藤允彦的合作作品上；建議寫成「這張合作盤拿下 1972 年芸術祭優秀賞」 | https://newherd.jp/about/ |
+| ar-d-133 | Anna-Mari Kähärän Orkesteri | Anna-Mari Kähärän Orkesteri | 這是她的第一張個人專輯 | fi 維基與 jazzfinland 都把 2005 年這張寫成 Anna-Mari Kähärän Orkesteri 的首張專輯（樂團名義），她更早已有 How Many Sisters 等人聲團專輯；『第一張個人專輯』可改為『樂團首張專輯』或拿掉『個人』。 | https://fi.wikipedia.org/wiki/Anna-Mari_K%C3%A4h%C3%A4r%C3%A4 |
+| ar-d-133 | Bill Stewart | Snide Remarks | 1995 年出版，這是他第一張掛自己名字的碟 | 他的第一張個人專輯是 1990 年日本 Jazz City 發行的《Think Before You Think》（Lovano、Dave Holland、Marc Copland 參與），Snide Remarks 是他的第二張個人專輯，應改為「他在 Blue Note 的第一張」 | https://en.wikipedia.org/wiki/Bill_Stewart_(musician) |

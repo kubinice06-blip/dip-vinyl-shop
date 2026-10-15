@@ -1739,3 +1739,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 審稿修 9 處：Meshell 刪「維基百科稱」與父母過世遺物；Musica Nuda「病倒」改「無法上台」；Fresu Quintet、Paul Jackson Jr.、Domínguez（評審語）「最…」改「極…」；Trio Töykeät 刪「第一支在總統府演出」；村岡實「最早」改「早期」；Gare du Nord 刪荷蘭專輯榜 100 週；Russell「唯一原創的理論」改寫。
   - 保留：99.99 thin 以製作分工與吉他換名作做法句（勉強過門檻）；具名評語（James Taylor、Wynton Marsalis、Chucho Valdés、Grover Washington Jr.）；在世者各一處。
 - 待本機：Musica Nuda 上線簡介「第五張錄音室專輯」無源、Rick Margitza 上線簡介「Miles 聽完卡帶」無源（pubIssues 2）；Bob Dorough NEA 爵士大師 facts 記 2019、本人 2018 過世，年份待核。
+
+## ar-d-132（2026-10-15）
+
+- 40 位全上架（27 full、13 thin：Mark Shim、Modern Jazz Playboys、Out Of/Into、Placebo (Belgium)、R+R=NOW、Ruben Hein、Superblue、The Benny Green Trio、The Players、U-Street All Stars、ゼロ戦、上田力、井上敬三），無不寫。名冊補登批第四批，樂團與合作掛名卡多、日本冷門樂團多，thin 比例偏高。
+- 多名卡放寬：Mal Waldron & Jackie McLean 252、Waldron 五人卡 279、Willie Nelson & Wynton Marsalis 265。已有個人卡者（Blanchard、Benny Green、Pullen、Adams、Fresu）在樂團卡只寫樂團與卡池那張。
+- 搜尋超額：Waldron 五人卡（g1）超 4 次查五人各自身分，放行。
+- 審稿修 15 處：
+  - out-1 6 處：Newton「票選第一 23 次＋年度專輯」改「長年名列第一」不帶次數刊名；Scofield、Waldron & McLean（NEA 語）、Fresu & Caine「最…」改「極…」；Lena Horne 單一名卡 272 刪「終生摯友」與甘迺迪中心壓到 247。
+  - out-2 9 處：Barretto 兩處、Ron Miles「最…」改「極…」；Ron Miles 刪氣喘、Yaron Herman 刪膝傷；Superblue 刪「Hargrove 第一次錄音」；Blanchard E-Collective 刪 Eric Garner 臨終與槍枝暴力句（政治只留一句）；Nelson 刪甘迺迪中心（在世者一處）。
+- 待本機：Önder Focan 上線簡介「Blue Note 第一張土耳其專輯」有並存說法、Modern Jazz Playboys 上線簡介人數（15 vs 12）、Ralph Peterson 上線簡介加入 Blakey 年份、Ferrell 卡池日本首發名、Yaron Herman 上線簡介獎項名誤（pubIssues 5）。
