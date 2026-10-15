@@ -74,7 +74,7 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--glow);outline-o
   <header>
     <div class="eyebrow">dip vinyl · 店主實驗頁 · 不公開</div>
     <h1>我的唱片櫃星圖</h1>
-    <p class="sub">每張收藏是一顆星，位置由三軸決定：上下是能量（靜到躁）、左右是質地（輕到重）、前後是色溫（冷到暖）。位置用全池排名（百分位）定，所以星星會均勻撒滿整個空間；八格可切換三種切法比較。下方時間軸照你收進唱片櫃的先後播放，看星空怎麼長出來。</p>
+    <p class="sub">每張收藏是一顆星，位置由三軸決定：上下是能量（靜到躁）、左右是質地（輕到重）、前後是色溫（冷到暖）。位置用全池排名（百分位）定，星星會撒滿整個空間；八格照字面門檻判定。下方時間軸照你收進唱片櫃的先後播放，看星空怎麼長出來。</p>
   </header>
 
   <div class="gate" id="gate"><div id="gateMsg">正在確認登入…</div><button id="loginBtn" type="button" hidden>用 Google 登入</button></div>
@@ -97,12 +97,6 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--glow);outline-o
         <button id="spin" type="button" aria-pressed="true">緩慢自轉</button>
         <button id="squeeze" type="button" aria-pressed="false">往中間收</button>
       </div>
-      <div class="row" id="modes" role="group" aria-label="八格切法">
-        <label>八格切法</label>
-        <button type="button" data-m="equal" aria-pressed="true">平均（各 12.5%）</button>
-        <button type="button" data-m="half" aria-pressed="false">折衷</button>
-        <button type="button" data-m="semantic" aria-pressed="false">語意門檻</button>
-      </div>
       <div class="regions" id="regions"></div>
       <div class="legend" id="legend"></div>
       <div class="src" id="stats"></div>
@@ -111,7 +105,7 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--glow);outline-o
   </div>
 
   <p class="note">座標是 <b>v0 暫估</b>：104 張人工錨點以外，全用子曲風標籤平均＋硬蕊度微調算的，個別星星放錯位置很正常；正式版要等音訊層與模型層。
-  三種切法：<b>平均</b>＝八格各 12.5%（條件中位數）；<b>語意門檻</b>＝固定「能量 3.0／質地 +0.5／色溫 0」，分布不平均但最貼字面；<b>折衷</b>＝兩者門檻取中點。
+  八格照字面門檻判定（能量 3.0／質地 +0.5／色溫 0，看原始值），不為了平均挪門檻，所以各格大小不一；平均放在抽卡那一層處理。
   點星顯示的 0–100 是後台數值（全池排名），不給玩家看。黃色那顆是收藏的引力中心。八格名稱暫定。</p>
 </div>
 
@@ -144,17 +138,15 @@ for(const [id,v] of Object.entries(moods.cards)){const c=coll.get(id);const [rx,
 for(const [id,c] of coll){if(!moods.cards[id])unmatched.push(c.artist+'《'+c.album+'》');}
 document.getElementById('gate').hidden=true;document.getElementById('stage').hidden=false;document.getElementById('panel').hidden=false;
 const REG = {calm:'放鬆',still:'平靜',languid:'要死不活',decay:'頹靡',lift:'雀躍',crisp:'冷冽',boil:'沸騰',charge:'亢奮'};
-// 八格：門檻樹（scale-v0.json，MOOD_SCALE_PLAN §2）。x、y、z 都是全池百分位 0–100。
-let mode = SCALE.defaultTree, TREE = SCALE.trees[mode];
+// 八格：原始值對語意門檻（scale-v0.json 的 thresholds，MOOD_SCALE_PLAN §2）。x、y、z 是全池百分位 0–100，只用來定位。
+const T = SCALE.thresholds, TP = SCALE.thresholdP;
 const CELL = {'靜輕暖':'calm','靜輕冷':'still','靜重暖':'languid','靜重冷':'decay','躁輕暖':'lift','躁輕冷':'crisp','躁重暖':'boil','躁重冷':'charge'};
 const CODE = Object.fromEntries(Object.entries(CELL).map(([c,k])=>[k,c]));
-const above = (p,h,at) => p>at.p || (p===at.p && h>=at.h);
-const cellOf = (x,y,z,h=0) => { const e=above(x,h,TREE.x)?'躁':'靜', w=above(y,h,TREE.y[e])?'重':'輕', t=above(z,h,TREE.z[e+w])?'暖':'冷'; return CELL[e+w+t]; };
+const cellOf = (x,y,z) => CELL[(x>=T.x?'躁':'靜')+(y>=T.y?'重':'輕')+(z>=T.z?'暖':'冷')];   // 吃原始值
 const BAR = {calm:'#9ccf6a',still:'#59c3e0',languid:'#a98bf0',decay:'#6a8cf0',lift:'#f5d27a',crisp:'#4fd1a5',boil:'#f39c6b',charge:'#e2694d'};
-// 每格在百分位空間的範圍（隨切法變）
-const BOUNDS = k => { const c=CODE[k], tx=TREE.x.p, ty=TREE.y[c[0]].p, tz=TREE.z[c[0]+c[1]].p; return [c[0]==='躁'?[tx,100]:[0,tx], c[1]==='重'?[ty,100]:[0,ty], c[2]==='暖'?[tz,100]:[0,tz]]; };
-const assignCells = () => DATA.forEach(d=>d.region=cellOf(d.x,d.y,d.z,d.h));
-assignCells();
+// 每格在百分位空間的範圍（門檻換成全池第幾百分位，只供畫星雲）
+const BOUNDS = k => { const c=CODE[k]; return [c[0]==='躁'?[TP.x,100]:[0,TP.x], c[1]==='重'?[TP.y,100]:[0,TP.y], c[2]==='暖'?[TP.z,100]:[0,TP.z]]; };
+DATA.forEach(d=>d.region=cellOf(d.rx,d.ry,d.rz));
 const GENRE = {rock:['搖滾','#e2694d'],jazz:['爵士','#e8b54a'],electronic:['電子','#59c3e0'],soul:['靈魂放克','#e07ab8'],hiphop:['嘻哈','#a98bf0'],folk:['民謠','#9ccf6a'],classical:['古典','#d9d4c7'],world:['世界','#4fd1a5'],pop:['流行','#f39c6b'],blues:['藍調','#6a8cf0']};
 const TIER = {hall:'殿堂',pearl:'流亡',heresy:'異端'};
 
@@ -268,12 +260,12 @@ document.getElementById('legend').innerHTML = Object.entries(GENRE).filter(([g])
 
 function applyCollection(){
   const owned = new Set(order.slice(0,lit));
-  const cnt = {}; let cx=0,cy=0,cz=0;
-  DATA.forEach((d,i)=>{target[i]=owned.has(i)?1:(ghost?0.1:0);if(owned.has(i)){cnt[d.region]=(cnt[d.region]||0)+1;cx+=d.x;cy+=d.y;cz+=d.z;}});
+  const cnt = {}; let cx=0,cy=0,cz=0,rx=0,ry=0,rz=0;
+  DATA.forEach((d,i)=>{target[i]=owned.has(i)?1:(ghost?0.1:0);if(owned.has(i)){cnt[d.region]=(cnt[d.region]||0)+1;cx+=d.x;cy+=d.y;cz+=d.z;rx+=d.rx;ry+=d.ry;rz+=d.rz;}});
   document.getElementById('nLit').textContent = lit;
   Object.keys(REG).forEach(k=>{const n=cnt[k]||0,t=Math.max(1,lit),el=document.getElementById('r-'+k);el.querySelector('span').textContent=n;el.querySelector('i').style.width=(n/t*100)+'%';regLabels[k].classList.toggle('lit',n>=3);nebulae[k].opacity=0.015+0.3*(n/t);});
   if(lit>0){const c={x:cx/lit,y:cy/lit,z:cz/lit};centroid.visible=true;centroid.position.copy(P(c));centerLabel.hidden=false;
-    const best=cellOf(c.x,c.y,c.z);   // 重心沒有卡鍵，門檻上的並列一律歸下半
+    const best=cellOf(rx/lit,ry/lit,rz/lit);   // 重心的格子看原始值平均
     centerLabel.textContent=`引力中心 · ${REG[best]}`;}
   else{centroid.visible=false;centerLabel.hidden=true;}
 }
@@ -326,10 +318,6 @@ spinBtn.addEventListener('click',()=>{spinOn=!spinOn;spinBtn.setAttribute('aria-
 function relayout(){ placeStars(); geo.attributes.position.needsUpdate=true; buildNebulae();
   if(selected>=0) ring.position.set(pos[selected*3],pos[selected*3+1],pos[selected*3+2]); applyCollection(); }
 document.getElementById('squeeze').addEventListener('click',e=>{squeeze=!squeeze;e.currentTarget.setAttribute('aria-pressed',squeeze);relayout();});
-document.getElementById('modes').addEventListener('click',e=>{const m=e.target.dataset.m;if(!m||m===mode)return;
-  mode=m;TREE=SCALE.trees[m];document.querySelectorAll('#modes button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.m===m));
-  assignCells();renderRegions();relayout();if(selected>=0)select(selected);});
-
 function resize(){const w=stage.clientWidth,h=stage.clientHeight;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();controls.handleResize();const want=3.2*Math.max(1,1.15/camera.aspect);camera.position.sub(controls.target).setLength(Math.min(controls.maxDistance,want)).add(controls.target);}
 new ResizeObserver(resize).observe(stage); resize();
 

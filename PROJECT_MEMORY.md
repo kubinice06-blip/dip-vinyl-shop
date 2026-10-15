@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-15｜dip-vinyl-shop｜情緒八格回語意門檻：不為平均改屬性，平均改在抽卡層
+
+- **改動**：店主看過條件中位數的代價後裁定「不要為了平均而改變原本的屬性」。`build-scale.mjs` 移除條件中位數與折衷門檻，八格只看原始值對語意門檻（能量 3.0／質地 +0.5／色溫 0），錨點 104/104 同格；百分位 p 保留為後台數值與星圖定位，不決定格子。`starmap-lab.html` 拿掉切法切換鈕。分布不均改在抽卡層處理：抽某一格時八格等機率、薄格不足 300 張向相鄰格借卡、成就門檻按該格比例。`MOOD_SCALE_PLAN.md` 升 v1.3（§0、§1、§2 重寫，§2.4 記否決理由），`MOOD_ENERGY_PLAN.md` §1.2、§2、§6.2 同步。v0 全池八格 1.7%（頹靡）～31.7%（雀躍）。
+- **主要檔案**：`batch-progress/mood-axes/{build-scale.mjs,scale-v0-report.json,rulings.md}`、`data/mood/{scale-v0.json,card-moods-v0.json}`、`starmap-lab.html`、`MOOD_SCALE_PLAN.md`、`MOOD_ENERGY_PLAN.md`
+- **驗證**：錨點 104/104 同格；實驗頁假 Firebase 桌機與手機 0 錯誤，頁面八格計數與腳本一致。
+
 ### 2026-10-15｜dip-vinyl-shop｜情緒三軸刻度階段 A：百分位、八格各 12.5%、實驗頁三種切法
 
 - **改動**：店主裁定數值留後台、其餘照 `MOOD_SCALE_PLAN.md`。新腳本 `build-scale.mjs` 把 v0 暫估座標換成全池百分位 0–100，用條件中位數切八格（各 2,390 張），輸出 `data/mood/scale-v0.json`（斷點＋門檻樹）並把 p 接進 `card-moods-v0.json`；`build-priors.mjs` 改兩位小數。**發現代價**：平均切法讓 104 錨點中 23 張換格（躁輕的色溫門檻落在 p75，NewJeans、《葉惠美》變冷冽；事後菸變頹靡），所以另存折衷（4.9%–22.9%、錨點 90/104）與語意門檻（1.6%–32.1%、104/104）兩組門檻；`starmap-lab.html` 改用百分位定位，加「八格切法」三鈕與「往中間收」開關，點星顯示後台數值。規劃書 v1.2 補 §2.4 實測，rulings 同步。

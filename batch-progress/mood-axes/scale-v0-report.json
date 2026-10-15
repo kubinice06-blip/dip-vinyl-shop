@@ -1,146 +1,34 @@
 {
  "n": 19121,
- "fixedThresholdAsP": [
-  38,
-  66,
-  27
- ],
- "recomputeMismatch": 0,
- "modes": {
-  "equal": {
-   "lambda": 1,
-   "cells": {
-    "放鬆": 2390,
-    "平靜": 2390,
-    "要死不活": 2390,
-    "頹靡": 2390,
-    "雀躍": 2390,
-    "冷冽": 2390,
-    "沸騰": 2391,
-    "亢奮": 2390
-   },
-   "minMaxPct": [
-    12.5,
-    12.5
-   ],
-   "tree": {
-    "x": 50,
-    "y": {
-     "靜": 34,
-     "躁": 66
-    },
-    "z": {
-     "靜輕": 58,
-     "靜重": 46,
-     "躁輕": 75,
-     "躁重": 20
-    }
-   },
-   "anchorsSameCell": "81/104",
-   "anchorMoves": [
-    "Yutaka Hirose《Nova》 放鬆→平靜",
-    "Aldo Ciccolini《Satie: Gymnopédies / Gnossiennes》 放鬆→平靜",
-    "Brian Eno《Discreet Music》 放鬆→平靜",
-    "Bon Iver《For Emma, Forever Ago》 放鬆→平靜",
-    "King Tubby《King Tubby Meets the Upsetter at the Grass Roots of Dub》 要死不活→頹靡",
-    "Slowdive《Souvlaki》 要死不活→頹靡",
-    "My Bloody Valentine《Loveless》 要死不活→頹靡",
-    "Boards of Canada《Music Has the Right to Children》 要死不活→頹靡",
-    "The Beatles《Abbey Road》 雀躍→要死不活",
-    "Marvin Gaye《Let's Get It On》 放鬆→要死不活",
-    "A Tribe Called Quest《The Low End Theory》 沸騰→要死不活",
-    "周杰倫《葉惠美》 雀躍→冷冽",
-    "羅大佑《之乎者也》 雀躍→頹靡",
-    "落日飛車 Sunset Rollercoaster《Jinji Kikko》 放鬆→要死不活",
-    "はっぴいえんど《風街ろまん》 雀躍→平靜",
-    "Radiohead《OK Computer》 亢奮→頹靡",
-    "大貫妙子《Sunshower》 雀躍→放鬆",
-    "Perfume《Game》 雀躍→冷冽",
-    "NewJeans《New Jeans》 雀躍→冷冽",
-    "John Coltrane《Ascension》 亢奮→沸騰",
-    "溫蒂漫步 Wendy Wander《Midnight Blue》 雀躍→冷冽",
-    "Cigarettes After Sex《Cry》 要死不活→頹靡",
-    "Cigarettes After Sex《X's》 要死不活→頹靡"
-   ]
-  },
-  "half": {
-   "lambda": 0.5,
-   "cells": {
-    "放鬆": 4281,
-    "平靜": 1572,
-    "要死不活": 1519,
-    "頹靡": 946,
-    "雀躍": 4384,
-    "冷冽": 1135,
-    "沸騰": 2387,
-    "亢奮": 2897
-   },
-   "minMaxPct": [
-    4.9,
-    22.9
-   ],
-   "tree": {
-    "x": 44,
-    "y": {
-     "靜": 49,
-     "躁": 65
-    },
-    "z": {
-     "靜輕": 41,
-     "靜重": 36,
-     "躁輕": 51,
-     "躁重": 24
-    }
-   },
-   "anchorsSameCell": "90/104",
-   "anchorMoves": [
-    "Yutaka Hirose《Nova》 放鬆→平靜",
-    "Aldo Ciccolini《Satie: Gymnopédies / Gnossiennes》 放鬆→平靜",
-    "Brian Eno《Discreet Music》 放鬆→平靜",
-    "Bon Iver《For Emma, Forever Ago》 放鬆→平靜",
-    "Slowdive《Souvlaki》 要死不活→頹靡",
-    "Boards of Canada《Music Has the Right to Children》 要死不活→頹靡",
-    "Marvin Gaye《Let's Get It On》 放鬆→要死不活",
-    "羅大佑《之乎者也》 雀躍→平靜",
-    "落日飛車 Sunset Rollercoaster《Jinji Kikko》 放鬆→要死不活",
-    "はっぴいえんど《風街ろまん》 雀躍→放鬆",
-    "Radiohead《OK Computer》 亢奮→頹靡",
-    "Perfume《Game》 雀躍→冷冽",
-    "Cigarettes After Sex《Cry》 要死不活→頹靡",
-    "Cigarettes After Sex《X's》 要死不活→頹靡"
-   ]
-  },
-  "semantic": {
-   "lambda": 0,
-   "cells": {
-    "放鬆": 4832,
-    "平靜": 1125,
-    "要死不活": 909,
-    "頹靡": 304,
-    "雀躍": 6146,
-    "冷冽": 421,
-    "沸騰": 2167,
-    "亢奮": 3217
-   },
-   "minMaxPct": [
-    1.6,
-    32.1
-   ],
-   "tree": {
-    "x": 38,
-    "y": {
-     "靜": 66,
-     "躁": 66
-    },
-    "z": {
-     "靜輕": 27,
-     "靜重": 27,
-     "躁輕": 27,
-     "躁重": 27
-    }
-   },
-   "anchorsSameCell": "104/104",
-   "anchorMoves": []
-  }
- }
+ "thresholds": {
+  "x": 3,
+  "y": 0.5,
+  "z": 0
+ },
+ "thresholdP": {
+  "x": 38,
+  "y": 66,
+  "z": 27
+ },
+ "cells": {
+  "放鬆": 4913,
+  "平靜": 1148,
+  "要死不活": 927,
+  "頹靡": 316,
+  "雀躍": 6052,
+  "冷冽": 444,
+  "沸騰": 2068,
+  "亢奮": 3253
+ },
+ "cellsPct": {
+  "放鬆": 25.7,
+  "平靜": 6,
+  "要死不活": 4.8,
+  "頹靡": 1.7,
+  "雀躍": 31.7,
+  "冷冽": 2.3,
+  "沸騰": 10.8,
+  "亢奮": 17
+ },
+ "anchorsSameCell": "104/104"
 }
