@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1315 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1317 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1271,6 +1271,8 @@
 | ar-d-104 | Cortot / Thibaud / Casals | Beethoven: Archduke Trio / Schubert: Piano Trio D 898 | 最後一場是 1933 年 5 月 13 日在史特拉斯堡 | 另一說法（古典樂譜商頁面引 Tully Potter）稱三重奏最後聯合演出是 1934 年 3 月 27 日 Fiesole；上線簡介採英文維基引註，尚不能說錯，但兩說不一，建議店主改成不寫最後一場日期（只搜尋摘要，未開頁，信心低） | https://schubertiademusic.com/products/9758-casals-trio-cortot-alfred-1877-1962-thibaud-jacques-1880-1953-casals-pablo-1876-1973-autograph-signatures |
 | ar-d-104 | Domus | Fauré: Piano Quartets | 這是 Domus 的第一張唱片 | 兩個 Hyperion 頁面（藝人頁與唱片頁）都沒有寫這是團的第一張唱片；搜尋摘要稱 Susan Tomes 的 Apple Music 簡介說是首錄，但實際開頁沒有該段；『第一張』無開頁來源證實，建議店主複核或改寫成『1985 年錄下的 Fauré 鋼琴四重奏』。 | https://www.hyperion-records.co.uk/a.asp?a=A755 |
 | ar-d-104 | Domus | Fauré: Piano Quartets | 巡演用的音樂廳是一頂帳篷 | Hyperion 藝人頁的原話是白色測地線圓頂，沒有『帳篷』；簡介同句稍後已寫圓頂，建議把『帳篷』改成『圓頂』以免前後不一。 | https://www.hyperion-records.co.uk/a.asp?a=A755 |
+| ar-d-108 | Joan Manuel Serrat | Mediterráneo | 被國營電視與廣播封殺六年 | biografiasyvidas.com 寫「近十年」（casi diez años）；未找到第二源，年數待定。 | https://www.biografiasyvidas.com/biografia/s/serrat.htm |
+| ar-d-108 | Joan Manuel Serrat | Mediterráneo | 2004 年西班牙國家電視台辦的觀眾票選，把同名曲選為西班牙流行音樂史上最佳歌曲 | 本層未能驗證 2004 年與 TVE 主辦：Goethe-Institut 隨筆只說該曲「被票選為史上最佳西班牙流行歌」，未指明主辦與年份，且該頁 403 未能開啟（只見搜尋摘要）。 | https://www.goethe.de/ins/gb/en/m/kul/past/eur/eus/21562558.html |
 | ar-d-117 | John Wright | Mr. Soul | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ |
 | ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones | Crossings | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) |
 | ar-d-117 | The Detroit Experiment | The Detroit Experiment | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html |

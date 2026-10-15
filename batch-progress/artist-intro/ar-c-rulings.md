@@ -1597,3 +1597,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-2 5 處：Holliger「同時代最重要」改「極具代表性」；Lachenmann 刪「第一位」私人學生、「最重要之一」改「極具份量」；Górecki「最激進之一」改「激進」；Scherchen「首演比幾乎任何指揮家都多」改「大量」。
   - 保留：Walcha 失明——是演奏與錄音方法（靠耳記譜、全憑記憶）的成因，屬身分核心，不寫病因（疫苗）；Krása 的 Theresienstadt 與《Brundibár》寓意為作品核心；Górecki 銷量與榜位（已故）；具名音樂人評語（Lutosławski、Shchedrin、Perlman、Casals、Toscanini、Rubinstein、Tom Waits）；在世者各一處（Hardenberger Proms 首演、Kendall Ivor Novello、Zimmer 兩座奧斯卡、Gerrard 金球獎、Christophers CBE、Holliger 日內瓦首獎、Grimaud 巴黎音樂院第一名、Sokolov 柴可夫斯基金牌、陳毓襄 Pogorelich 首獎）。
 - 待本機：Souzay《Fauré: Mélodies》1974 版本未確認；Kancheli《Vom Winde beweint》卡 1989 對不上 ECM（1991 錄）或 Melodiya（1988）；Gould & Bernstein 卡為 1962-04-06 現場廣播、1998 發行；Guarneri Quartet 卡 1995 對不上 RCA 全集（1966–69）；Piatigorsky & Heifetz Brahms 雙協奏 1960 錄、1961 發行；Hans Zimmer《Diamond In The Desert》（2025）查到的是杜拜演唱會電影、無同名原聲帶；Scherchen 卡 1958 對不上 Westminster 貝多芬全集（1951–54）。
+
+## ar-d-107（2026-10-15）
+
+- 40 位全上架（33 full、7 thin：Homayoun Shajarian & Ali Ghamsari、Hossein Alizadeh & Hossein Omoumi、許常惠、Ian Bostridge、Icebreaker、Isata Kanneh-Mason、Jean-Guihen Queyras），無不寫。
+- 古典段 H 至 J 字頭；多名卡放寬：J.J. Johnson & Kai Winding 277（卡池誤歸古典，照爵士寫）、du Pré & Barenboim 260、Thibaud & Cortot 268、伊朗六人 267。Godard 照電影導演寫，註明卡池《Histoire(s) du Cinéma》是影像系列聲軌。
+- 搜尋超額：伊朗六人合作掛名（g3）多 3 次查成員身分（Nahid、Bahari、Shahidi），比照「第二源」放行。
+- 審稿修 23 處：
+  - out-1 12 處：Omoumi 刪單源「tombak 與 daf 原創技法」（與 ney 身分不符）；許常惠、Alfvén（兩處，含機構語「最受尊崇」）、Friedman、Markevitch（兩處）、Il Giardino Armonico 的「最…」改「極／尤」；Kalniņš「蘇聯第一部搖滾歌劇」、Imrat Khan「第一位登上 Proms」「歐洲第一場通宵音樂會」改「早期」或刪；尹伊桑刪二戰被日本關押（政治背景只留 1967 年綁架一句）；Wyschnegradsky 刪晚年貧困。
+  - out-2 11 處：du Pré「最傑出之一」改「極傑出」、刪西牆婚禮地點只留「1967 年結為夫妻」；Thibaud 刪一戰負傷、「最好的之一」改「極出色」；Thibaud & Cortot「首屈一指」改「極負盛名」；Ehnes 授勳詞「最出色之一」改「極出色」；Kubelík 刪「練到手指流血」、「最傑出之一」改「極傑出」；Baker、Godard 的「最」改「極」；Higdon 刪《blue cathedral》紀念過世弟弟（家人過世）。
+  - 保留：Pogorelich 1980 蕭邦大賽 Argerich 退出評審一句；Levit 的 Rzewski 曲目背景一句；Horenstein 1933 離德、Martinon 戰俘營、Koh 母親韓戰難民、Kalniņš 音樂節遭禁各一句背景；MacMillan《Isobel Gowdie》題材為作品核心；具名音樂人評語（Messiaen、Huberman、Sibelius、Bartók、Kalhor、Steve Turre、Yo-Yo Ma、Furtwängler、Paavo Järvi、Ysaÿe）；在世者各一處（Shore 三座奧斯卡、Bostridge CBE、Levit Gramophone 年度藝術家、Huelgas OPUS Klassik、Ehnes 加拿大勳章、Jansen Vermeer 獎、Higdon 普立茲、Koh 葛萊美、Baker 女爵士）。
+- 待本機：Markevitch 卡 1960，實際 1959 Philharmonia 立體聲；Isaac Stern Prokofiev 版本年份不確定；Il Giardino《Concerti per flauto》實為直笛協奏曲；Alizadeh & Omoumi 卡池合奏與 1987 年份無法證實；Pogorelich 卡 1981 Chopin Sonata 2 對不上 DG 首張；MacMillan 卡 1990 為作品首演年；Queyras 卡池作曲者欄（Kurtág／Ligeti）與實際碟待核。
