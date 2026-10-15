@@ -1574,3 +1574,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-2 審稿 13 處：Edo de Waart「最大的遺產」改「重要遺產」；Edwin Fischer「最偉大之一」改「極重要」；Rautavaara 刪幼年喪父喪母、「最重要之一」改「極重要」；Schwarzkopf「最偉大的女高音之一」改「極受推崇」；Emahoy 單卡 272 字超出 250，刪三處壓到 248；Emilie Mayer 刪「父親過世後」；Emma Kirkby 刪頒獎詞「最有力的推動者之一」；Tüür「最受歡迎之一」「最具代表性之一」改「大受歡迎」「代表作」。
   - 保留：Đặng Thái Sơn「第一位贏得蕭邦大賽的亞洲人」、Edwin Fischer「第一套《平均律》完整錄音」、Jacquet de La Guerre「法國第一部女性歌劇」屬通行事實（照 Van Cliburn 先例）；在世者各一處（Trifonov、Lang、杜韻、DSQ、de Waart、Kirkby、Pahud、Ensemble Modern）；Feuermann 引 Artur Rubinstein（具名音樂人）；越南國籍限制出國、納粹解職、《第七號》抵抗象徵（歷史背景各一句）。
 - 待本機：Cortot / Thibaud / Casals 簡介最後一場日期兩說（建議不寫日期）；Domus 簡介「第一張唱片」查無、「帳篷」應為「圓頂」；賴德和《樂典03》卡池 1987 疑誤（樂典系列約 2009–2012）；Shostakovich plays Shostakovich 1958 版本待確認；David Tudor《Rainforest》卡池 1981 為錄音年（作品 1968）、Earl Wild 卡 1966（錄音 1965）。
+
+## ar-d-105（2026-10-15）
+
+- 40 位全上架（38 full、2 thin：Franz Schubert & Valery Afanassiev、Gautier Capuçon），無不寫。
+- 古典段 E 至 G 字頭；Franz Schubert & Valery Afanassiev 照鋼琴家 Afanassiev 寫；Floating Points, Pharoah Sanders & LSO 三方分寫（272 字，多名卡放寬）。
+- 搜尋超額：無。
+- 2025–26 事實：Gary Karr 2025 年過世——補洞層派工誤列在世，寫作層照事實寫已故；主線 WebSearch 核實（維基、Classical Music Daily、Apple Classical），只寫年份。Gabriela Ortiz 葛萊美（2025）照收一處。
+- 審稿修 20 處：
+  - out-1 審稿 12 處：Lecuona 刪遺囑政治條件；Wallen 刪「第一位黑人女性國王音樂大師」；Nyiregyházi 單卡 276 字超出 250，刪 Schoenberg 評語並把「史上記錄最完整之一」改「極完整」；Schulhoff「最早之一」改「早期」、刪被捕關押；Smyth 單卡 255 字，刪「Purcell 與 Britten 之間最重要的英國歌劇」與「入獄」；Ormandy「最長紀錄之一」改「極長」；Fanny Mendelssohn 刪 MGG「十九世紀最重要的女作曲家」（單源轉引）；FLUX「最知名」改「知名」。
+  - out-2 審稿 8 處：Berwald 機構語「十九世紀最重要」改「重要」；Afanassiev「最長之一」改「極長」；Kahane「川普當選隔天」改「美國大選隔天」、刪「極度政治」引語；Bryars 刪錄音中老人過世；Enescu「史上最重要」改「極重要」；Gershwin「最重要的美國歌劇之一」改「重要作品」；Cziffra「最偉大之一」改「極具代表性」。
+  - 保留：Smyth「第一位封 DBE 的女作曲家」、Weingartner「第一位商業錄完貝多芬九首」（兩源）、Caccini「現存最早的女性作曲家歌劇」屬通行事實；具名音樂人評語（Carl Flesch、Toscanini、Ornette Coleman、Domingo、Simon Rattle、Menuhin、Argerich、Kodály）；在世者各一處；歷史背景各一句（Afanassiev 不回蘇聯、Busch 反納粹免職、Schreker 反猶失職、Cziffra 戰後關押、Fricsay 戰時躲藏）。
+- 待本機：Floating Points《Promises》卡 2020，實際 2021-03-26；Errollyn Wallen《Photography》卡 2006 與 NPR 年度專輯 2016 對不上；Gabriela Ortiz 卡 2023 為首演年，專輯 2024–25；Afanassiev D.960 卡 1986 vs 1985 Lockenhaus 現場；Cziffra 卡池 1958 查無來源。
