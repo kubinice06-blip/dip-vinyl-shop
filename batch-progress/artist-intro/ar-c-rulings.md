@@ -1642,3 +1642,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-2 6 處：Rabin 刪「最悲劇的名家之一」；Weinberg 刪家人死於集中營；Tippett、Freni、Rosenthal、Yepes 的「最…」改「極／偏愛」。
   - 保留：Gražinytė-Tyla「DG 第一位簽長約的女性指揮」、Mazzoli「大都會首批委託歌劇的兩位女性」屬通行事實（在世者核心一處）；Yudina 信仰被解職、Gendron 抵抗運動、Theodorakis 軍政府入獄、Maisky 被捕勞改各一句背景；具名人物評語；在世者各一處。
 - 待本機：陳美安卡池《Orchestral Works》2019 在 apple-audio-map 對到《Project W》（Chicago Sinfonietta／Cedille）；Mazzoli《Vespers》卡 2014，實際 2015；Caballé《Lucrezia Borgia》1966 錄、卡 1967 為發行年；Freni《Don Carlo》卡 1979 對不上 Karajan 1978／Levine 1983；Galasso《花樣年華》上線簡介 pubIssues 1 條；Rózsa 上線簡介數字無源。
+
+## ar-d-111（2026-10-15）
+
+- 40 位全上架（36 full、4 thin：Oleg Malov、Osipov State Russian Folk Orchestra、Peter Broderick、Peter Gregson），無不寫。
+- 古典段 N 至 P 字頭；多名卡放寬：Oistrakh 四人卡 263、Arnalds & Frahm 273、Parissa & Ensemble Dastan 276、Peter Pears & Julian Bream 278。Pavel Haas 與 Pavel Haas Quartet 分寫不重複。
+- 搜尋超額：Parissa & Ensemble Dastan（g3）超 1 次補獎項第二源未成，比照「齊豫」放行。
+- 審稿修 15 處：
+  - out-1 7 處：Melba 刪葬禮規格；Zabaleta、Gedda、Oistrakh 四人卡的「最…之一」改「極…」；Kennedy（在世）刪「史上最暢銷之一」只留銷量數字（必要例外）、「最容易認出」改「極」；Neuwirth 刪基金會語「最具影響力之一」。
+  - out-2 8 處：Parissa & Dastan 兩處、O'Dette、Pérotin「最…」改「極…」；Mauriat 刪「Telstar 之後第一首登頂器樂曲」；O'Dette「每卷都獲 Diapason d'Or」、Vasks「三度獲」改為不帶數字；Penguin Cafe Orchestra 單一團名卡 268 字，刪 reel 翻奏句壓到 246。
+  - 保留：辻井伸行天生全盲與靠耳朵學曲（比照 Walcha，做法核心）、「Van Cliburn 第一位日本籍金牌」（通行事實）；Penguin Cafe 創團傳說（據說）；Pérotin「最好的 discant 作曲者」為 13 世紀文獻原句；Roslavets 遭壓制、Parissa 革命後禁演、Vasks 信仰受壓制各一句；在世者各一處。
+- 待本機：Oistrakh 四人卡上線簡介 pubIssues 3 條（Richter 公開否認、魯道夫大公題獻、敗筆說）；Panocha 上線簡介成團年（1966 三重奏／1968 四重奏）、Mauriat 金唱片無源；Pears & Bream 卡池 1956 為 Decca、Bream 以吉他伴奏；Peter Serkin 卡 1996、RCA 實為 1997；Vasks 卡 1997 為《Distant Light》首演年、Teldec 1999；Badura-Skoda 卡池推定 Astrée 古鋼琴版。
