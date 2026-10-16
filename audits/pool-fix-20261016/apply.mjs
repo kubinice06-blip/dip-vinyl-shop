@@ -120,16 +120,20 @@ if (VERIFY) {
 }
 
 // ── seed 變更（不含改名）──────────────────────────────────────────
+// --live 在 --write 之後跑：seed 已改，重複卡已刪，不再逐列比對（KV 終態只看 KV，不依賴 seed）
+let drop = new Set(), bb = null;
+if (!LIVE) {
 const log = [];
-const drop = new Set(DUPES.map(([d]) => find(...d)));
+drop = new Set(DUPES.map(([d]) => find(...d)));
 for (const [d, k] of DUPES) { find(...k); log.push(`刪 ${d.join('《')}》（留 ${k.join('《')}》）`); }
-const bb = find(...BB.from);
+bb = find(...BB.from);
 if (bb[0] !== BB.artist) log.push(`Cheap Thrills 掛名 ${bb[0]} → ${BB.artist}；三軸 ${bb.slice(2, 5)} → ${BB.ratings}`);
 for (const [a, b, g] of GENRES) { if (!g) continue; const r = find(a, b); if (JSON.stringify(r[5]) !== JSON.stringify(g)) log.push(`曲風 ${a}《${b}》 ${JSON.stringify(r[5])} → ${JSON.stringify(g)}`); }
 for (const [a, b, from, to] of YEARS) { const r = find(a, b); if (r[6] !== from && r[6] !== to) { console.error(`✗ ${a}《${b}》年份現值 ${r[6]}`); process.exit(1); } if (r[6] === from) log.push(`年份 ${a}《${b}》 ${from} → ${to}`); }
 log.forEach(l => console.log(l));
 console.log(`改名 ${RENAME.oldA}《${RENAME.album}》 → ${RENAME.newA}：--live 時套用`);
 console.log(`\nKV（--live）：寫 ${puts.size} 鍵；舊鍵 ${dels.size} 個列入待刪`); notes.forEach(n => console.log('   ' + n));
+}
 
 // Firestore：留下的 Cheap Thrills 帶上被刪那張的上架欄位（push-card-catalog-patches.mjs 格式）；改名交給 migrate-card-catalog-ids.mjs
 const iv = n => ({ integerValue: String(n) }), sv = v => ({ stringValue: v });
