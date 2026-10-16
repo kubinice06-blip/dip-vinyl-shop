@@ -1883,3 +1883,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 多名卡放寬：Coil、Swans（樂團）。KISS 2025 甘迺迪中心榮譽獎主線 WebSearch 核實（Blabbermouth、NBC Palm Springs）後放行。
 - 審稿修 20 處：Moodymann、電気グルーヴ、Beyond、周杰倫、1976、Arctic Monkeys、JPEGMAFIA「最…之一」改「極／早期」；Aesop Rock「排名第一、詞彙量最大」改寫；Coil 刪伴侶關係、Judas Priest 刪出櫃、Sufjan Stevens 刪母親離家與過世（私事、家人逝世）；山中千尋、Manhattan Jazz Quintet 刪《Swing Journal》刊名與獎；Steely Dan 在世者只留名人堂；周杰倫金曲獎不寫座數；電気グルーヴ ピエール瀧改 Pierre Taki 並壓到 250 內。
   - 保留：Beyond 出殯規模一句（不寫雨傘運動與意外經過）；電気グルーヴ不寫逮捕；Arctic Monkeys「英國史上首週銷量最高的首張專輯」（兩源、無數字，在世者核心一處）；具名音樂人評語（Steve Earle、Trent Reznor、Kerry King、Dave Grohl、Lil Baby、Shabaka Hutchings）。
+
+## ar-u-002（2026-10-16，thin 升級）
+
+- 40 位中 34 位升 full 上線；6 位不寫、保留原上線 thin 版：益田幹夫、Four Tet、Nils Frahm、Pantha du Prince、The Doobie Brothers（補洞後仍 thin），Rainbow（補洞稿 full，但 digest 無國籍事實，寫作層照首句國籍門檻不寫）。
+- 搜尋超額：Theo Parrish 9（RBMA 講座自述）、Interpol 9（The Killers 點名），放行。
+- 審稿修 16 處：Beyoncé、Death、Ka（Mickey Factz 評語）「最…之一」改「極／早期／推崇備至」；Fairport 刪鼓手車禍死因；White Stripes 刪婚姻與姊弟說法；Mogwai 刪英國專輯榜冠軍、Morrissey 刪 BBC 偶像票選名次、Spoon 刪 Metacritic 年代排名、Biosphere 刪多次 Spellemannprisen（在世者一處）；Armand Hammer 刪 billy woods 父母（跨卡重複）；中森明菜片假名改寫三處並壓到 250 內；Spoon 補空格。
+  - 保留：BBC 民謠獎公眾票選《Liege & Lief》（權威票選）；Cat Power 首位拿下 Shortlist Music Prize 的女性（兩源）；Motörhead、Mastodon、Gucci Mane 的逮捕、家人逝世、入獄寫作層已自刪；Lemmy 2015、Ka 2024、Schuldiner 2001 只寫年份。
+- 寫作層提出：部分補洞 notes 要求寫「某媒體寫道」，與「樂評媒體名不進正文」衝突；照規則處理，單一媒體評價不用。後續升級批寫作通則已明載。
