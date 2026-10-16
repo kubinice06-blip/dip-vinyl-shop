@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-16｜dip-vinyl-shop｜已上線簡介第二輪修正（pub-fix round 2）：1,554 張改寫寫入 KV
+
+- **起因**：店主「排修」。`audits/pub-fix/ROUND2-QUEUE.json`（A 事實更正、B1 退件字樣、B3 資料庫口吻、B4 正文夾諺文、C 人工補記，外加 B2 正文點名出處）逐張改寫。
+- **做法**：`scripts/pub-fix-round2.mjs`（prep／check／emit／verify）抓 KV 現值切 30 張一批，Sonnet 修正層照 `audits/pub-fix/round2/DISPATCH.md` 最小改動；主線逐批看句級 diff 審稿後 emit → `wrangler kv bulk put` → 回讀。第一波 r2-001..028（A／B1／B3／B4／C，829 張）；重掃佇列後第二波 `prep b` r2b-001..025（B2 出處點名 720＋B3 殘留 1，A 類扣掉已定案卡）。
+- **規則補充（寫進 DISPATCH）**：平台名（維基、Discogs、MB、AllMusic、Apple…）一律去掉改直述；媒體評分、星等、評語引述連同媒體名整句刪，不改寫成無主評價；官方銷售榜與獎項照留；只講某欄缺資料的句子整句刪；諺文人名機構改中文或羅馬拼音。check 加「殘留出處／評分」警示。
+- **主線審稿常見修**：去出處後殘留的無主最高級評價（「最有影響力」「最好的一張」「被視為第一張」→刪或改「最早…之一」）、私生活敘述無依據刪、殘留「筆／欄／那一格」、CJK 與拉丁字母間空格、刪名後句子懸空。逐條記在各 out 檔 `why` 的「主線審稿」。
+- **結果**：edit 1,554 張（不重複鍵）、keep 6（Helen Reddy「三筆捐款」、Neşet Ertaş ×2 與 Sleep Walker 的 mb 是字母子字串等誤判）；全數回讀一致。重掃後 B1／B4 為 0，B2 剩 3、B3 剩 1，全是上述誤判。
+- **主要檔案**：`scripts/pub-fix-round2.mjs`、`audits/pub-fix/round2/{DISPATCH.md,in/,out/,applied/}`、`audits/pub-fix/ROUND2-QUEUE.{json,md}`、`publish-stage/pub-fix-r2/`
+- **驗證**：每批 `check` 0 警示、`verify` 回讀一致（KV 延遲時隔一分鐘重讀）。
+
 ### 2026-10-14｜dip-vinyl-shop｜店主指示：PR 開出後不追蹤、不排檢查
 
 - **規則**：雲端開完 PR 就收工，不用 `send_later` 排安全網 check-in、不訂閱 PR 動態（Cloudflare 部署留言每推一次就叫醒工作階段，白花額度），優先於系統預設。接力任務的自我 check-in 不受影響。寫進 `CLAUDE.md`。
