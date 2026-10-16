@@ -1811,3 +1811,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 審稿修 5 處：Fresu「辨識度最高之一」、Cornish「最重要的影響之一」、Stan Tracey「最受推崇之一」改「極…」；Rita Reys 單卡 263 字刪 Avakian 評語；Sarah McCoy 刪父親與祖母過世並壓到 250 內。另補洞稿「九段会館」「稲葉国光」照 ar-d-131 先例改「會」「國」。
   - 保留：Richie Beirach（2026-01）、Danny Simmons（2026-06）過世，主線 WebSearch 兩源核實（WRTI、DownBeat；Black Enterprise、Westwood Gallery）；Ron Carter 金氏紀錄錄音數量（必要例外、不用「最」）；Rita Reys 263→233 後的六座 Edison 獎（已故者）；Stan Tracey Octet 水星獎入圍（已故者）；Orphy Robinson MBE 一處。
 - 待本機：Sadistics、Scolohofo、Stefon Harris & Blackout 上線簡介各 1 條（pubIssues 3）。
+
+## ar-d-138（2026-10-16）
+
+- 40 位全上架（23 full、17 thin：Harris & Terrasson、Lacy / 高橋悠治 / 小杉武久、Sugar Loaf Express、Sunburst、Tania Maria、Blue Note 7、Blue Note All Stars、Freedom Unity、Nels Cline 4、Nels Cline Singers、Northern Governors、Players / 鈴木宏昌、THE SPHÈRES、Dutronc & Les Esprits Manouches、Tranzam、Viktoria Tolstoy、Wind-Breakers），無不寫。名冊補登批第十批。
+- 多名卡放寬：Teddy Wilson / 北村英治、Super Quartet、Monk with Coltrane、Hagans & Belden、Hagans & Printup、Allen & Mills、Trijntje with Sinfonietta、Trio Focan、Wayne Shorter Quartet、Woody Herman / 北村英治。Nels Cline 兩張、Thomas Dutronc 兩張、Tim Hagans 兩張、北村英治兩張、Steve Lacy 三張各以卡池那張為主。The Pentagon 實為 Cedar Walton 名下錄音陣容、Sugar Loaf Express 只是該專輯陣容、Today's Latin Project 為一次性錄音名義，照實寫。
+- 預抓維基誤配（Steve Lacy → The Internet 吉他手、Sunburst 圖案、Tania Maria 女演員）補洞層棄用。補洞稿「稲葉国光」照先例改「國」。
+- 審稿修 8 處：Gadd、Teddy Wilson（兩處）、Super Quartet、Monk with Coltrane、Allen & Mills（Eno 評語）、Shorter Quartet「最…之一」改「極／早期」或改寫；Masakowski「新奧爾良」統一為「紐奧良」；Wind-Breakers 刪「晚年」（1980 錄音、同團與否無法確定）。
+  - 保留：Trio Focan 照補洞稿寫土耳其吉他手 Önder Focan 領軍（主線特注誤記為芬蘭，兩位客座才是芬蘭人，記為主線更正）；Bill Holman 2024、Ellis Marsalis 2020、Wayne Shorter 2023、Tony Allen 2020 過世（截止日前通行事實）；Charles Lloyd、Thierry Lang、Thomas Dutronc 在世者各一處。
+- 待本機：Harris & Terrasson 2、Monk with Coltrane 2、Lacy / 高橋 / 小杉、Freedom Unity、Thomas Dutronc、Allen & Mills 各 1（pubIssues 8）。

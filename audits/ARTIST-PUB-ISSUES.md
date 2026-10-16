@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1385 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1393 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1388,4 +1388,12 @@
 | ar-d-138 | Stefon Harris & Jacky Terrasson | Kindred | 兩人各自在 Bruce Lundvall 面前稱讚對方，於是有了這張碟 | 本層搜尋與英文維基、Blue Note 簡介摘要都查不到 Lundvall 促成的說法（只見 Village Vanguard 同台一說），建議核對原始出處（內頁或訪談），查不到就改寫。 | https://en.wikipedia.org/wiki/Kindred_(Jacky_Terrasson_and_Stefon_Harris_album) |
 | ar-d-138 | Steve Lacy, 高橋悠治, 小杉武久 | Distant Voices | Lacy 1934 年生於紐約，1972 年移居巴黎 | 英文維基寫 Lacy 1970 年移居巴黎（Sunnyside 簡介為 1967 年起長居歐洲、義大利三年後到巴黎），同店《The Wire》的上線簡介也寫 1970 年；1972 年與兩者不符。 | https://en.wikipedia.org/wiki/Steve_Lacy_(saxophonist) |
 | ar-d-138 | The Freedom Unity | Down By The Naked City | 同一年他們另外還壓了四張碟 | NTS 稱這是 one off project，Discogs 本盤頁也只列此團這一張；本層找不到另外四張的佐證，建議店主本機核對 Discogs 藝人頁後再決定是否保留 | https://nts.live/artists/81086-the-freedom-unity |
+| ar-d-138 | Thelonious Monk Quartet with John Coltrane | At Carnegie Hall | 1957 年 11 月 29 日那場……同年 9 月 27 日首度發行 | 『同年』緊接 1957 年，語意上變成 1957 年 9 月 27 日發行，比演出還早；實際是 2005 年 9 月 27 日由 Blue Note 發行。建議改寫成『2005 年 9 月 27 日首度發行』。 | https://en.wikipedia.org/wiki/Thelonious_Monk_Quartet_with_John_Coltrane_at_Carnegie_Hall |
+| ar-d-138 | Thelonious Monk Quartet with John Coltrane | At Carnegie Hall | 美國之音錄下整場 | 維基專輯條目說錄音涵蓋 Monk 四重奏早晚兩場，但晚場並未完整錄下（最後一段〈Epistrophy〉不完整，Playbill 寫整卷只有約 55 分鐘）；『整場』宜改成『錄下這個四重奏的兩場演出』。 | https://playbill.com/article/never-heard-monk-coltrane-recording-is-released |
+| ar-d-138 | Thomas Dutronc | Frenchy | 錄音跑了四個國家六間錄音室 | riffx 的報導寫『enregistré entre Paris, New York, Miami et Los Angeles』，是四座城市、兩個國家（法國、美國）；『四個國家』若出自 Discogs 的錄音室欄位則無法由本層來源證實，建議對照 Discogs 信用欄再確認，否則改成『四座城市』。 | https://www.riffx.fr/iggy-pop-billy-gibbons-diana-krall-thomas-dutronc-reunit-un-casting-all-star-sur-son-nouvel-album/ |
 | ar-d-138 | Tony Allen & Jeff Mills | Tomorrow Comes The Harvest | 2018 年 9 月 28 日發行；錄音在巴黎 CBE Studio 現場錄下 | 搜尋摘要顯示發行日各站不一：Shuga Records 寫 2018 年 9 月 21 日（Blue Note Lab 778630 6）、Soundshelter 寫 20 日、uDiscover 預告寫 28 日；Shuga 列錄音室為 Studio CBE，但沒有『現場錄音』或『巴黎』字樣，建議店主核實日期與錄音說法。 | https://www.shugarecords.com/products/tonyallenjeffmillstomorrowcomestheharvest-new10eprecord2018bluenotelabfranceimportvinyl-electronicfuturejazzafrobeat |
+| ar-d-139 | ミッキー吉野, 渡辺香津美 | Kaleidoscope | ミッキー吉野 1975 年組成ゴダイゴ 並當團長 | 成軍年兩說：ja 吉野條與 en Godiego 條寫 1975，ja ゴダイゴ條與 Fami-geki（2006 年為 30 週年）指向 1976；建議改成「1970 年代中期組成」或查 Godiego 官網 | https://ja.wikipedia.org/wiki/%E3%82%B4%E3%83%80%E3%82%A4%E3%82%B4 |
+| ar-d-139 | 佐藤允彦 & Medical Sugar Bank | MSB Two | 這支團是 佐藤允彦 1980 年組的五人團 | 第一張《MSB》Discogs 記錄為 1979 年 11、12 月與 1980 年 1 月錄音，成軍應在 1979 年或更早；建議改成「約 1980 年前後」或查官方資料 | https://www.discogs.com/release/6557225 |
+| ar-d-139 | 佐藤允彦 & ゲイリー・ピーコック | 三昧 | 為了學禪與長壽飲食法退出樂壇的貝斯手，搬到日本住了兩年半 | Peacock 自述是 1969 年先因身心危機離開樂壇，之後才赴日學東洋思想與長壽飲食法，因果順序與簡介相反；『兩年半』只有英文維基一源，Encyclopedia.com 與 NYT 系報導的年數說法不同，建議改成『在日本住了兩年多』或不寫年數；『學禪』在英文維基與 Chronogram 都未明說是赴日目的（NYT 系報導才寫 Zen） | https://www.chronogram.com/arts/zen-and-the-art-of-musical-maintenance-2210143/ |
+| ar-d-139 | 佐藤允彦 Featuring Eddie Gomez & Steve Gadd | As If… | Gomez 與 Steve Gadd 當時同在 Manhattan Jazz Quintet 撐節奏 | Gadd 的團員身分有英文維基（1983 至 1987 年）為證；Gomez 在 MJQ 的身分本層查到的維基條目與 Blue Note 簡介都沒有明說，建議店主核對 MJQ 成員名單或改寫 | https://en.wikipedia.org/wiki/Steve_Gadd |
+| ar-d-139 | 北村英治 & Happy Cooking All Stars | Sapporo Concert | 三十歲那年 Benny Goodman 訪日，北村英治在偶像面前吹並得到稱讚 | Goodman 樂團訪日是 1957 年，北村 1929 年生，當時約 28 歲；「三十歲」是日文維基的說法，與訪談記載的 1957 年不合，建議改成「Goodman 訪日時」不寫年齡 | https://www.tyojyu.or.jp/net/interview/itsumogenki-imamogeneki/sukinakoto.html |
