@@ -1899,3 +1899,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 補洞層把重新開頁讀到的低風險單源說法（影響、合作、風格描述）標 single 收入，主線准許，寫作層一律用「據說／被形容為」。搜尋超額：Ólafur Arnalds 9、Parquet Courts 10（補第二源），放行。
 - 審稿修 17 處：Furtwängler、日野皓正、Arcade Fire、Explosions in the Sky、Foals、Ghostface Killah、MIKE、Porcupine Tree「最…之一」改「極…」；Furtwängler 的 BBC Music Magazine 去名；大貫妙子刪父親特攻隊與振武寮（戰爭背景）；日野皓正片假名改寫、刪「第一位與 Blue Note 簽約的日本音樂人」；Ghostface Killah 刪 Wu-Tang Clan 入選搖滾名人堂（無法核實、疑屬新近事實）；Robert Wyatt 刪墜樓癱瘓與輪椅上節目（傷病）並壓到 250；Siouxsie and the Banshees 樂團單卡壓到 250；Kacey Musgraves 補空格。
   - 保留：Arcade Fire 海地獨裁背景一句；Rick Ross 50 Cent 質疑一句（真實性爭議屬音樂形象、非官司）；Rei Harakami 2011 年過世、得年 40 歲。
+
+## ar-u-004（2026-10-16，thin 升級）
+
+- 40 位中 33 位升 full 上線；7 位補洞後仍 thin、保留原上線版：八城一夫、宇宙人、麋先生、Native Son、Crystal Castles、Danny Brown、Dilated Peoples。
+- 身分：wings 鍵寫 Paul McCartney 的 Wings；卡池《Belenggu Irama》掛在 Wings 名下，實為馬來西亞 Wings，記入待本機（卡池藝人欄應改 Wings (Malaysia)）。竇唯現行 thin 版提到 2006 年事件（刑案），升級版不收，上線後即替換。
+- 搜尋超額：Disclosure、DMX 各 9（補第二源），放行；DMX 2026 街道命名、Denzel Curry 2026 新作不寫。
+- 審稿修 17 處：Supergrass 出道作銷量、Decemberists Billboard 冠軍、The Knife 六獎全得、311 與 Disclosure 榜首（在世者成績）刪；Decemberists、Wings、Yeah Yeah Yeahs、Black Uhuru、Dead Kennedys「最…」改「極／早期」；David Murray Octet 三處單源最高級改寫；Weezer 腿骨手術、Actress「因傷」刪（傷病）；Wings 拉哥斯遭搶、311 裸露被捕的團名由來刪（刑案）。
+  - 保留：XTC 舞台恐懼停巡（轉折，非病名）；Yo La Tengo 夫妻組團（合作身分）；Wings〈Mull of Kintyre〉英國首支破 200 萬張單曲、Boney M.〈Rivers of Babylon〉英國榜首 5 週（核心成就各一處）；DMX 追思會規模；傷心欲絕劉暐 2023 年逝世只寫年份。
