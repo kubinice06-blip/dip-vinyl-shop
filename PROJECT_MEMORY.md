@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-16｜dip-vinyl-shop｜情緒三軸：評完剩下 9,120 張，全池 19,116 張都有模型評分
+
+- **改動**：店主「繼續幫剩下的專輯評分」。`score-rest/select.mjs` 把剩下全部按曲風與藝人排序切 92 份，最多 6 支代理接力打分；主線關鍵字審稿改 6 張（`score-rest/review.json`）。`build-priors.mjs` 讀四批評分，全池 104 錨點＋19,012 模型評分，子曲風暫估歸零。八格：放鬆 5,102、平靜 1,309、慵懶 589、頹靡 970、雀躍 5,867、冷冽 873、沸騰 1,900、亢奮 2,506。**這批低把握 43%**（全池 31%），集中在冷門日本爵士、東南亞／台日老唱片、私壓迷幻、福音小眾與 2025–26 新盤。代理回報的卡池問題（含六類系統性問題）寫在 `score-rest/DATA-ISSUES.md`，未處理。私人星圖預覽改全池（Version 13）。
+- **主要檔案**：`batch-progress/mood-axes/score-rest/{select.mjs,merge.mjs,review.json,scored-rest.json,merge-report.json,cards.json,chunk-*.json,out/*.json,DATA-ISSUES.md}`、`batch-progress/mood-axes/{build-priors.mjs,priors-v0-report.json,scale-v0-report.json,rulings.md}`、`data/mood/{card-moods-v0.json,scale-v0.json}`
+- **驗證**：merge 9,120/9,120、0 錯誤、0 外來 id、四批 0 重複；錨點 104/104 同格；星圖 swiftshader 桌機／手機 0 錯誤。
+
 ### 2026-10-16｜dip-vinyl-shop｜卡池資料修正套用完成（卡池 19,121 → 19,116），情緒三軸重建
 
 - **改動**：照 `audits/pool-fix-20261016/README.md`「怎麼套用」跑完七行：`apply.mjs --write`（seed 刪重複 5、曲風 16、年份 2、Cheap Thrills 掛名與三軸）→ `build-genre-tree.mjs --write` → `--live`（KV 寫 22 鍵回讀一致，In Orbit 改名 Clark Terry with Thelonious Monk 套到 seed 與 apple-audio-map）→ `migrate-card-catalog-ids.mjs`（card_catalog 搬 1 筆，舊文件保留）→ `push-card-catalog-patches.mjs`（Cheap Thrills 上架欄位 1 筆）→ `--verify`。
