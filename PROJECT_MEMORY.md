@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-16｜dip-vinyl-shop｜卡池資料修正套用完成（卡池 19,121 → 19,116），情緒三軸重建
+
+- **改動**：照 `audits/pool-fix-20261016/README.md`「怎麼套用」跑完七行：`apply.mjs --write`（seed 刪重複 5、曲風 16、年份 2、Cheap Thrills 掛名與三軸）→ `build-genre-tree.mjs --write` → `--live`（KV 寫 22 鍵回讀一致，In Orbit 改名 Clark Terry with Thelonious Monk 套到 seed 與 apple-audio-map）→ `migrate-card-catalog-ids.mjs`（card_catalog 搬 1 筆，舊文件保留）→ `push-card-catalog-patches.mjs`（Cheap Thrills 上架欄位 1 筆）→ `--verify`。
+- **修腳本**：照 README 順序先 `--write` 再 `--live`，`--live` 會重查已刪的重複卡而中止；改成 `--live` 不跑 seed 比對（KV 終態只依 KV 計算）。
+- **子曲風**：`--write` 時 In Orbit 還沒改名，子曲風表留著舊鍵。把 `--live` 寫進 KV 的新 mapgenre3（hard bop／bebop／flugelhorn）放進本機快取 `data/rawgenres-cache.json`、拿掉舊鍵，再跑一次 `build-genre-tree.mjs --write`（不 `--pull`）；現為 jazz/bop。
+- **情緒三軸**：`score3000/scored-3000.json` 的 In Orbit 改 id 與 artist；重跑 `build-priors.mjs` 與 `build-scale.mjs v0`。已評張數 9,896 → 9,892（被刪的重複卡有 4 張評過），錨點同格 104/104。
+- **未做**：`kv-deletes-pending.json` 的 18 個舊 KV 鍵沒刪（卡池已不指向，留著無害）；card_catalog 舊 In Orbit 文件未刪。
+- **主要檔案**：`seed_cards.json`、`genre-tree.json`、`card-subgenres.json`、`data/apple-audio-map-v1.json`、`data/mood/{card-moods-v0,scale-v0}.json`、`batch-progress/mood-axes/{priors-v0-report,scale-v0-report}.json`、`batch-progress/mood-axes/score3000/scored-3000.json`、`audits/pool-fix-20261016/`（apply.mjs 修正、套用清單、KV 與 Firestore 備份）
+- **驗證**：`apply.mjs --verify`「KV 寫 19／刪 18、seed 檢查：全部相符」；card_catalog 搬移逐筆相符；patch 成功 1／1。
+
 ### 2026-10-16｜dip-vinyl-shop｜卡池資料修正定案（重複 5、曲風 16、年份 2、掛名 1），雲端權限擋下未套用
 
 - **改動**：店主「順便修掉」情緒評分時代理回報的卡池問題。主線查 KV、Firestore、MB 後定案，寫成 `audits/pool-fix-20261016/`（README＋套用腳本，可乾跑／`--write` 本機／`--live` 線上／`--verify`）。重複卡另掃出 Nick Cave《Murder Ballads》與 Big Brother《Cheap Thrills》（兩張都在殿堂）。Happy End 兩組留はっぴいえんど（依 ALBUM_ONBOARDING 第 91 行卡池用假名本名；稽核檔「全假名改羅馬字」是簡介內文規則，混用了）。Clark《Cave Dog》確有其碟（MB 5df67f10），代理判錯不改。**雲端執行時 KV 寫入、KV 刪除、改 seed 三次被權限擋下，seed／KV／Firestore 都沒動**，等店主決定在本機跑或放行。

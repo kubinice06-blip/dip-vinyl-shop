@@ -1,11 +1,11 @@
 {
- "產出日期": "2026-10-14",
+ "產出日期": "2026-10-16",
  "minNode": 20,
  "genres": [
   {
    "id": "rock",
    "zh": "搖滾",
-   "count": 4614,
+   "count": 4608,
    "children": [
     {
      "id": "indie-alt",
@@ -16,7 +16,7 @@
     {
      "id": "punk-wave",
      "zh": "龐克新浪潮",
-     "count": 891,
+     "count": 890,
      "children": [
       {
        "id": "punk",
@@ -31,7 +31,7 @@
       {
        "id": "new-wave",
        "zh": "新浪潮",
-       "count": 232
+       "count": 233
       },
       {
        "id": "no-wave",
@@ -41,7 +41,7 @@
       {
        "id": "goth",
        "zh": "哥德暗潮",
-       "count": 52
+       "count": 51
       },
       {
        "id": "industrial",
@@ -53,7 +53,7 @@
     {
      "id": "psych-prog",
      "zh": "迷幻前衛",
-     "count": 663,
+     "count": 662,
      "children": [
       {
        "id": "prog",
@@ -63,7 +63,7 @@
       {
        "id": "psych",
        "zh": "迷幻搖滾",
-       "count": 278
+       "count": 277
       },
       {
        "id": "art-rock",
@@ -85,7 +85,7 @@
     {
      "id": "metal",
      "zh": "金屬",
-     "count": 611,
+     "count": 609,
      "children": [
       {
        "id": "trad",
@@ -115,12 +115,12 @@
       {
        "id": "doom",
        "zh": "厄運與粗厚",
-       "count": 93
+       "count": 91
       },
       {
        "id": "black",
        "zh": "黑金屬",
-       "count": 78
+       "count": 77
       }
      ]
     },
@@ -133,7 +133,7 @@
     {
      "id": "jrock-asia",
      "zh": "日亞搖滾",
-     "count": 372,
+     "count": 370,
      "children": []
     },
     {
@@ -174,7 +174,7 @@
   {
    "id": "jazz",
    "zh": "爵士",
-   "count": 4672,
+   "count": 4671,
    "children": [
     {
      "id": "bop",
@@ -197,13 +197,13 @@
     {
      "id": "free",
      "zh": "自由與前衛",
-     "count": 732,
+     "count": 731,
      "children": []
     },
     {
      "id": "vocal",
      "zh": "人聲爵士",
-     "count": 361,
+     "count": 360,
      "children": []
     },
     {
@@ -253,7 +253,7 @@
   {
    "id": "electronic",
    "zh": "電子",
-   "count": 1955,
+   "count": 1944,
    "children": [
     {
      "id": "ambient",
@@ -270,13 +270,7 @@
     {
      "id": "downtempo",
      "zh": "Trip-hop / Downtempo",
-     "count": 372,
-     "children": []
-    },
-    {
-     "id": "synth",
-     "zh": "Synthpop / Electro",
-     "count": 353,
+     "count": 371,
      "children": []
     },
     {
@@ -286,9 +280,15 @@
      "children": []
     },
     {
+     "id": "synth",
+     "zh": "Synthpop / Electro",
+     "count": 343,
+     "children": []
+    },
+    {
      "id": "house",
      "zh": "House",
-     "count": 347,
+     "count": 336,
      "children": []
     },
     {
@@ -326,7 +326,7 @@
   {
    "id": "soul",
    "zh": "靈魂放克",
-   "count": 1588,
+   "count": 1589,
    "children": [
     {
      "id": "funk",
@@ -337,7 +337,7 @@
     {
      "id": "classic-rnb",
      "zh": "經典 R&B / Doo-wop",
-     "count": 760,
+     "count": 761,
      "children": []
     },
     {
@@ -387,7 +387,7 @@
   {
    "id": "hiphop",
    "zh": "嘻哈 R&B",
-   "count": 1362,
+   "count": 1363,
    "children": [
     {
      "id": "east-coast",
@@ -422,13 +422,13 @@
     {
      "id": "gangsta",
      "zh": "Gangsta",
-     "count": 207,
+     "count": 208,
      "children": []
     },
     {
      "id": "west-coast",
      "zh": "西岸 / G-Funk",
-     "count": 74,
+     "count": 75,
      "children": []
     },
     {
@@ -454,18 +454,18 @@
   {
    "id": "classical",
    "zh": "古典",
-   "count": 1279,
+   "count": 1288,
    "children": [
     {
      "id": "contemporary",
      "zh": "當代與極簡",
-     "count": 509,
+     "count": 519,
      "children": []
     },
     {
      "id": "romantic",
      "zh": "浪漫時期",
-     "count": 239,
+     "count": 238,
      "children": []
     },
     {
@@ -509,12 +509,12 @@
   {
    "id": "folk",
    "zh": "民謠",
-   "count": 1322,
+   "count": 1323,
    "children": [
     {
      "id": "songwriter",
      "zh": "創作歌手",
-     "count": 578,
+     "count": 579,
      "children": []
     },
     {
@@ -576,7 +576,7 @@
   {
    "id": "pop",
    "zh": "流行",
-   "count": 1107,
+   "count": 1108,
    "children": [
     {
      "id": "jp-pop",
@@ -593,13 +593,13 @@
     {
      "id": "synth",
      "zh": "合成器流行",
-     "count": 158,
+     "count": 156,
      "children": []
     },
     {
      "id": "indie-pop",
      "zh": "獨立流行",
-     "count": 151,
+     "count": 149,
      "children": []
     },
     {
