@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-16｜dip-vinyl-shop｜藝人介紹第十一輪五批上線（雲端，ar-d-136～140；195 位；介紹 8,369 → 8,564）
+
+- 結果：195 位上架（132 full、63 thin），不寫 5 位（單源或聲音句不足），審稿修 61 處。add-20261015-backfill 名冊的爵士段寫完，剩 74 位未切（爵士尾段 38、流行 15、搖滾 9、民謠 7、其他 5）。
+- 新形狀：片假名人名、團名、曲名一律改羅馬字或通行中文（ar-d-139 起）；src 不足 2 的卡不寫；媒體名進正文的獎項一律刪。2026 年死訊（Richie Beirach、Danny Simmons）以 WebSearch 兩源核實。
+- 主要檔案：`data/artist-intros/*`、`desc-tools/batches/artist/{cut,facts,research,output}/ar-d-136～140-*`、`desc-tools/batches/artist/progress.json`、`batch-progress/artist-intro/ar-c-rulings.md`（第十一輪各批與收尾段）、`audits/ARTIST-PUB-ISSUES.md`。
+- 驗證：qa-artist gap／out 每批 0 處（只剩不寫名單的缺位）；build-artist-intros 64 分片、8,564 位。
+
 ### 2026-10-15｜dip-vinyl-shop｜藝人介紹第十輪二十批上線（雲端，ar-d-104～116＋ar-d-129～135；765 位；介紹 7,602 → 8,369）
 
 - 結果：765 位上架（650 full、115 thin），無不寫，審稿修 313 處。古典段寫完、原排隊名冊清空。
