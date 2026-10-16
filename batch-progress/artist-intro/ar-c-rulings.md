@@ -1866,3 +1866,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 審稿修 10 處：沢田靖司「日本第一」改「推崇備至」；Nelson、Walton、Gil Evans「最…之一」改「極…」；渡辺香津美 & Gentle Thoughts 刪 Pat Metheny 評語（跨卡重複）；筒井 / 市原 / 佐藤刪《Swing Journal》獎；鈴木弘刪「日本最好的長號手」（同出版者兩條）；《東海道戰爭》《世界遺產》改繁體；Ghost 補空格。
   - 保留：浅川マキ照片假名規則寫 Maki Asakawa；秋吉敏子的兩段婚姻只作合作身分交代（照 Tabackin 先例）；Steve Lacy 葛萊美、筒井康隆谷崎賞（在世者各一處）；花柳幻舟不寫事件與刑案。
 - 待本機：沢田駿吾、秋吉敏子 Trio & Flute Quartet 上線簡介各 1 條（pubIssues 2）。
+
+## ar-d-142（2026-10-16）
+
+- 32 位上架（23 full、9 thin），不寫 2 位：真芽正恵（三格全無）、高田真樹子（只有 ja 維基單源，音樂貢獻格空）。名冊補登批最後一批（非爵士雜項：日本歌謠曲與民謠、西洋搖滾與靈魂、泰國、馬來西亞、台灣、古典）。add-20261015-backfill 554 位至此全數處理完。
+- 身分：破地獄是台北的實驗搖滾團（Scattered Purgatory），主線特注誤記香港，補洞層更正；Caravan 為泰國 Songs for Life 樂團、Wings 為馬來西亞 rock kapak 團、John Williams 為澳洲古典吉他手、Mother Earth 為 Tracy Nelson 的 1960 年代團，皆與同名者區分。
+- 搜尋超額：Lily 10、Yufu 9、高橋真梨子 9（補第二源），放行。
+- 審稿修 13 處：Wood Brothers、吉田拓郎、Caravan、Phoebe Snow、Wings「最…之一」改「極…」；Lily 刪母親過世；小柳ルミ子刪銷量、小坂明子刪 Oricon 連續 7 週第 1（在世者）；Caravan 政治背景只留成團一句，刪屠殺事件與流亡；John Williams 刪吉他史學者具名評語；Neil Young & Bluenotes 首句補國籍；Phoebe Snow 刪女兒照護一句（家庭私事）；小川知子刪交往對象驟逝與紀錄片（私人關係、他人死亡），改 thin。
+  - 保留：George Azuma（ジョージ吾妻）照片假名規則寫羅馬字；name 欄照名冊保留假名、正文寫 Lily、Candies、Carmen Maki；Melanie 2024、Lily 2016 過世（截止日前）。
+- 待本機：Yufu 2、高橋真梨子 2、Wood Brothers、LAFF、小坂明子、朱里エイコ、高田真樹子 各 1（pubIssues 9）。
