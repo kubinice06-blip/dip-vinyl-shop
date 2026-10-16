@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1423 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1424 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1427,3 +1427,4 @@
 | ar-u-004 | 宇宙人 | 理想狀態 | 讓樂團在第 34 屆金曲獎拿下最佳樂團獎，是他們第二度進入這個名單之後的第一座 | 依中文維基最佳樂團獎表，宇宙人共入圍該獎 2 次（第 27 屆 2016 年《一萬小時》未得獎、第 34 屆 2023 年《理想狀態》得獎）；CNA 0227 寫 2023 年是首度獲獎。『第二度進入之後的第一座』易讀成先入圍兩次才得獎，實際是第二次入圍即得獎，建議改寫成『繼 2016 年第 27 屆入圍之後，第二度入圍即得獎，是成軍 19 年的第一座』。（最佳樂團獎表與 CNA 0227 皆確認 2016 年入圍、2023 年首度得獎） | https://www.cna.com.tw/news/amov/202307010227.aspx |
 | ar-u-004 | Amon Tobin | Supermodified | Metacritic 依八篇樂評給出 85 分，2012 年獲 IMPALA 雙銀認證，代表歐洲銷量逾四萬張 | 在世者認證倍數與銷量、樂評評分依共同特注不寫；事實本身與維基一致，只是違反寫作規範，建議本機刪去（沿用 ar-b-024 登記）。 | https://en.wikipedia.org/wiki/Supermodified_(album) |
 | ar-u-004 | Amon Tobin | Bricolage | Pitchfork 給滿分十分，Fact 在 2015 年 50 張最佳 trip-hop 專輯榜列第 23 | 雜誌榜單名次依共同特注不收；事實與維基一致，只是違反寫作規範，建議本機刪去（沿用 ar-b-024 登記）。 | https://en.wikipedia.org/wiki/Bricolage_(album) |
+| ar-u-006 | Richard "Groove" Holmes | Soul Message | 簡介寫「左手踏出低音線」（舊稿備註轉述） | 傳記來源說 Holmes 的低音線靠風琴腳踏板；單源、未逐條核對，建議本機確認簡介是否混用左手與踏板 | https://fromthevaults-boppinbob.blogspot.com/2022/05/richard-groove-holmes-born-2-may-1931.html |

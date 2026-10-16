@@ -1907,3 +1907,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 搜尋超額：Disclosure、DMX 各 9（補第二源），放行；DMX 2026 街道命名、Denzel Curry 2026 新作不寫。
 - 審稿修 17 處：Supergrass 出道作銷量、Decemberists Billboard 冠軍、The Knife 六獎全得、311 與 Disclosure 榜首（在世者成績）刪；Decemberists、Wings、Yeah Yeah Yeahs、Black Uhuru、Dead Kennedys「最…」改「極／早期」；David Murray Octet 三處單源最高級改寫；Weezer 腿骨手術、Actress「因傷」刪（傷病）；Wings 拉哥斯遭搶、311 裸露被捕的團名由來刪（刑案）。
   - 保留：XTC 舞台恐懼停巡（轉折，非病名）；Yo La Tengo 夫妻組團（合作身分）；Wings〈Mull of Kintyre〉英國首支破 200 萬張單曲、Boney M.〈Rivers of Babylon〉英國榜首 5 週（核心成就各一處）；DMX 追思會規模；傷心欲絕劉暐 2023 年逝世只寫年份。
+
+## ar-u-005（2026-10-16，thin 升級）
+
+- 40 位中 33 位升 full 上線；7 位補洞後仍 thin、保留原上線版：Edna Gallmon Cooke、Funk Inc.、Grouper、Lykke Li、M.O.P.、Migos、Real Estate。
+- 搜尋超額：Monica、One Direction 各 9（補第二源），放行。
+- 審稿修 13 處：Limp Bizkit 刪單週銷售紀錄；f(x) 刪 Billboard 年代排名、Fleet Foxes 刪《1001 Albums》書單、Halsey 刪《時代》百大（媒體排名與名單）；Eric B. & Rakim 刪 2026 葛萊美名人堂（新近事實未核）；Fleet Foxes、Frank Bretschneider、Masonna、Queensrÿche「最…之一」改「極／早期」；Gregory Porter 刪肩傷、不寫葛萊美座數；Flower Travellin' Band ジョー山中改 Joe Yamanaka。
+  - 保留：One Direction IFPI 年度最受歡迎錄音藝人、KAYTRANADA／Miley Cyrus／Monica 各一座葛萊美（在世者核心一處）；Julian Cope 排名（具名音樂人）。
+- 寫作層提出：有一組初稿普遍超長、整組重寫後一次寫檔（沒照每 5 位寫一次），容器若重啟會整組重做；後續寫作派工仍要求分段寫檔。
