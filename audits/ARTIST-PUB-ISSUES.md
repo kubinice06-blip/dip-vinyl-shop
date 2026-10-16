@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1418 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1423 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1422,3 +1422,8 @@
 | ar-u-003 | 日野皓正 | Alone, Alone and Alone | 1969 年才離團專心帶自己的團；同年他也與菊地雅章錄下 Hino-Kikuchi Quintet | 「同年」若指 1969 年有誤：英文維基與日文維基皆記 Hino-Kikuchi Quintet 為 1968 年專輯；建議改為 1968 年。 | https://en.wikipedia.org/wiki/Terumasa_Hino |
 | ar-u-003 | 日野皓正 | Feelin' Good | 1964 年他加入白木秀雄的五重奏 | 日文維基作 1964，英文維基作 1965 加入、1969 離團；兩源不一致，建議刪去年份或再查一手來源。 | https://en.wikipedia.org/wiki/Terumasa_Hino |
 | ar-u-003 | 高橋達也と東京ユニオン | Black Pearl | 1980 年樂團赴加州演出，……同年也第二次登上 Montreux Jazz Festival | 日文維基寫 1978、1980 兩度出演 Montreux；英文維基寫 1980 是赴加州並登上 Monterey（蒙特雷）爵士節，未提 1980 蒙特勒。兩源不一致，簡介『第二次 Montreux』需以一手來源確認。 | https://en.wikipedia.org/wiki/Tokyo_Union |
+| ar-u-003 | MONO | Snowdrop | 東京 1999 年成立的四人器樂團 | 成軍年各源不一致：維基寫 1999 年 1 月起意、2000 年 1 月首演，generasia 寫 2000 年成軍；建議改成不帶年份，或改寫「1999 年起意組團」並確認。 | https://www.generasia.com/wiki/MONO |
+| ar-u-004 | The Strokes | Is This It | 全長只有三十五分鐘 | NME 20 週年專文寫「36-minute debut」；卡池用的是含〈New York City Cops〉的國際版，長度約 36 分鐘，上線簡介的 35 分鐘略短（微小，可改成約三十六分鐘）。 | https://www.nme.com/features/the-strokes-is-this-it-at-20-years-anniversary-3006402 |
+| ar-u-004 | 宇宙人 | 理想狀態 | 讓樂團在第 34 屆金曲獎拿下最佳樂團獎，是他們第二度進入這個名單之後的第一座 | 依中文維基最佳樂團獎表，宇宙人共入圍該獎 2 次（第 27 屆 2016 年《一萬小時》未得獎、第 34 屆 2023 年《理想狀態》得獎）；CNA 0227 寫 2023 年是首度獲獎。『第二度進入之後的第一座』易讀成先入圍兩次才得獎，實際是第二次入圍即得獎，建議改寫成『繼 2016 年第 27 屆入圍之後，第二度入圍即得獎，是成軍 19 年的第一座』。（最佳樂團獎表與 CNA 0227 皆確認 2016 年入圍、2023 年首度得獎） | https://www.cna.com.tw/news/amov/202307010227.aspx |
+| ar-u-004 | Amon Tobin | Supermodified | Metacritic 依八篇樂評給出 85 分，2012 年獲 IMPALA 雙銀認證，代表歐洲銷量逾四萬張 | 在世者認證倍數與銷量、樂評評分依共同特注不寫；事實本身與維基一致，只是違反寫作規範，建議本機刪去（沿用 ar-b-024 登記）。 | https://en.wikipedia.org/wiki/Supermodified_(album) |
+| ar-u-004 | Amon Tobin | Bricolage | Pitchfork 給滿分十分，Fact 在 2015 年 50 張最佳 trip-hop 專輯榜列第 23 | 雜誌榜單名次依共同特注不收；事實與維基一致，只是違反寫作規範，建議本機刪去（沿用 ar-b-024 登記）。 | https://en.wikipedia.org/wiki/Bricolage_(album) |

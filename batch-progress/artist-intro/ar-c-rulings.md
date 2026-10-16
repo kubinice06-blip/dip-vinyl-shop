@@ -1891,3 +1891,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 審稿修 16 處：Beyoncé、Death、Ka（Mickey Factz 評語）「最…之一」改「極／早期／推崇備至」；Fairport 刪鼓手車禍死因；White Stripes 刪婚姻與姊弟說法；Mogwai 刪英國專輯榜冠軍、Morrissey 刪 BBC 偶像票選名次、Spoon 刪 Metacritic 年代排名、Biosphere 刪多次 Spellemannprisen（在世者一處）；Armand Hammer 刪 billy woods 父母（跨卡重複）；中森明菜片假名改寫三處並壓到 250 內；Spoon 補空格。
   - 保留：BBC 民謠獎公眾票選《Liege & Lief》（權威票選）；Cat Power 首位拿下 Shortlist Music Prize 的女性（兩源）；Motörhead、Mastodon、Gucci Mane 的逮捕、家人逝世、入獄寫作層已自刪；Lemmy 2015、Ka 2024、Schuldiner 2001 只寫年份。
 - 寫作層提出：部分補洞 notes 要求寫「某媒體寫道」，與「樂評媒體名不進正文」衝突；照規則處理，單一媒體評價不用。後續升級批寫作通則已明載。
+
+## ar-u-003（2026-10-16，thin 升級）
+
+- 40 位中 37 位升 full 上線；3 位補洞後仍 thin、保留原上線版：高橋達也と東京ユニオン、Angel Olsen、Big K.R.I.T.。
+- 身分：ghost 鍵寫日本迷幻民謠集體 Ghost（瑞典 Ghost 已在 ar-d-141 另立鍵）；Perfume Genius 出生地補洞層更正為愛荷華州。
+- 補洞層把重新開頁讀到的低風險單源說法（影響、合作、風格描述）標 single 收入，主線准許，寫作層一律用「據說／被形容為」。搜尋超額：Ólafur Arnalds 9、Parquet Courts 10（補第二源），放行。
+- 審稿修 17 處：Furtwängler、日野皓正、Arcade Fire、Explosions in the Sky、Foals、Ghostface Killah、MIKE、Porcupine Tree「最…之一」改「極…」；Furtwängler 的 BBC Music Magazine 去名；大貫妙子刪父親特攻隊與振武寮（戰爭背景）；日野皓正片假名改寫、刪「第一位與 Blue Note 簽約的日本音樂人」；Ghostface Killah 刪 Wu-Tang Clan 入選搖滾名人堂（無法核實、疑屬新近事實）；Robert Wyatt 刪墜樓癱瘓與輪椅上節目（傷病）並壓到 250；Siouxsie and the Banshees 樂團單卡壓到 250；Kacey Musgraves 補空格。
+  - 保留：Arcade Fire 海地獨裁背景一句；Rick Ross 50 Cent 質疑一句（真實性爭議屬音樂形象、非官司）；Rei Harakami 2011 年過世、得年 40 歲。
