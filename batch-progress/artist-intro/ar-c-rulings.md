@@ -1851,3 +1851,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 同一人合作卡多（富樫雅彦九張、佐藤允彦七張）時，每張身分句換說法，生平只在一張寫，兩組寫作代理跨組錯開事實。
 - 2025–26 年死訊：Richie Beirach（2026-01）、Danny Simmons（2026-06）主線 WebSearch 兩源核實；José Luis Cortés 經補洞層更正為 2022。
 - 待本機：KV 上線簡介修正見 `audits/ARTIST-PUB-ISSUES.md`（本輪新增 31 條，見各批「待本機」）。
+
+## 第十二輪三十批接力（ar-d-141～142＋ar-u-001～028，2026-10-16 起）
+
+- 店主 2026-10-16「做三十批」。盤點：卡池 19,121 張的藝人全部已有介紹、已排隊或列入不寫名單，未切的只剩 add-20261015-backfill 最後 74 位，切成 ar-d-141（40）、ar-d-142（34）。
+- 其餘 28 批由店主選定「thin 升級成 full」：取每個鍵最新一版上線成品中 status 為 thin 的 1,603 位，依卡數多→少、分級 A→D、鍵排序，切 ar-u-001～028 共 1,120 位（`batch-progress/artist-intro/upgrade-thin-20261016.mjs`，tier 記 U、addedBy upgrade-thin-20261016）。每批另寫 `cache/<批>-prior.json`（原 thin 正文、原批名、原補洞稿條目），補洞層從原有事實出發、只補缺的格；寫作層只寫補到 full 的人，仍 thin 的不寫、保留原上線版（記進該批 skipped）。
+- `scripts/build-artist-intros.mjs` 與 `desc-tools/artist-alias.mjs` 的 published 閘從 `ar-[a-d]` 改成 `ar-[a-z]`，ar-u 升級批未標 published 前不進分片；同鍵多版時檔名排序在後者蓋前，ar-u 自然覆蓋原 thin 版。
