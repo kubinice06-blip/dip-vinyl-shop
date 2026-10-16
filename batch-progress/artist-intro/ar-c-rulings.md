@@ -1789,3 +1789,7 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 同一人多張合作卡（Joe Lovano 五張、Charlie Hunter 四張、Hubbard / Shaw 兩張）各以卡池那張為主，生平只寫一次。
   - 2025–26 年死訊與新近事實，主線 WebSearch 兩源核實：青木望、George Young、Gino Paoli、Jack DeJohnette、Cassandra Wilson、Roger Norrington；Immanuel Wilkins 2026 麥克阿瑟獎。
 - 待本機：KV 上線簡介修正見 `audits/ARTIST-PUB-ISSUES.md`（累計 1,368 條）；本輪各批「待本機」段的卡池年份與曲風存疑。
+
+## 第十一輪五批接力（ar-d-136～140，2026-10-16 起）
+
+- 店主 2026-10-16「再五批」。從 add-20261015-backfill 剩下的 274 位，照切批規則（爵士先、卡數多的先、同卡數依鍵排序）接續切 ar-d-136～140 五批 200 位（John Lewis & Hank Jones … 横内章次とクインテット・プラス・ラテン），全為爵士。剩 74 位（爵士 38、流行 15、搖滾 9、民謠 7、靈魂 3、電子 1、古典 1）留下一輪。
