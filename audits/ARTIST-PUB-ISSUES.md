@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1378 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1385 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1382,3 +1382,10 @@
 | ar-d-136 | Kitty Hoff & Forêt-Noire | Zuhause | 發行前一年她拿下 Lale Andersen 獎 | 只見德文維基單源（2008 年），laut.de 與搜尋都查不到該獎；建議保留但標單源，或改寫成較保守的說法。 | https://de.wikipedia.org/wiki/Kitty_Hoff |
 | ar-d-136 | Minyo Crusaders | From Japan With Love | Ry Cooder 說他們是他這麼多年來聽過最好的樂團 | 各源措辭不同：soundsandcolours（2019）寫『reportedly』『the best band he has heard in years』，另一站寫『the best band I've ever seen』；沒有找到 Cooder 本人的原始出處，上線簡介把轉述直接寫成他說的，建議改成『據報導』或具名來源。 | https://soundsandcolours.com/articles/colombia/meeting-minyo-crusaders-the-10-piece-mixing-cumbia-with-japanese-folklore-48447/ |
 | ar-d-137 | Sadistics | Sadistics | 動力來自 1975 年 10 月替 Roxy Music 英國巡演當開場的好評。 | 日文維基 Sadistics 頁只說團名源自該巡演時當地媒體的稱呼，未見『好評是重組動力』的說法；英文維基也只寫四人於樂團解散後以 The Sadistics 名義續行。屬推論，建議降成『團名在那次巡演時就被當地媒體用上』。 | https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%87%E3%82%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%82%B9 |
+| ar-d-137 | Scolohofo | Oh! | 團名取的是四位成員姓氏的前兩個字母：John Scofield、Joe Lovano、Dave Holland、Al Foster。 | 團名 ScoLoHoFo 的拆法是 Sco、Lo、Ho、Fo：Scofield 取前三個字母，其餘三人取前兩個；Blue Note 官方只說『取自成員姓名的字母』。建議改成『取自四位成員姓氏開頭的字母』。 | https://www.bluenote.com/artist/scolohofo/ |
+| ar-d-137 | Stefon Harris & Blackout | Evolution | 顫音琴手三十歲那年用團名發片 | 維基 Stefon Harris 生於 1973 年 3 月 23 日，《Evolution》2004 年 4 月 20 日發行時已 31 歲（簡介『三十歲』疑以錄音或準備期計）；建議改為『三十出頭』或刪去歲數。 | https://en.wikipedia.org/wiki/Stefon_Harris |
+| ar-d-138 | Stefon Harris & Jacky Terrasson | Kindred | 曲目一半是標準曲，一半是兩人的原創 | 英文維基曲目表：他人作品 7 首（含 My Foolish Heart、Summertime、John's Abbey、Little Niles 等）、兩人自作僅 3 首（Rat Entrance、Rat Race、Shane），另有 Tank's Tune（Charlie Henderson 作）與 2 首未列作者；原創未過半，建議改寫或核對原盤曲目作者。 | https://en.wikipedia.org/wiki/Kindred_(Jacky_Terrasson_and_Stefon_Harris_album) |
+| ar-d-138 | Stefon Harris & Jacky Terrasson | Kindred | 兩人各自在 Bruce Lundvall 面前稱讚對方，於是有了這張碟 | 本層搜尋與英文維基、Blue Note 簡介摘要都查不到 Lundvall 促成的說法（只見 Village Vanguard 同台一說），建議核對原始出處（內頁或訪談），查不到就改寫。 | https://en.wikipedia.org/wiki/Kindred_(Jacky_Terrasson_and_Stefon_Harris_album) |
+| ar-d-138 | Steve Lacy, 高橋悠治, 小杉武久 | Distant Voices | Lacy 1934 年生於紐約，1972 年移居巴黎 | 英文維基寫 Lacy 1970 年移居巴黎（Sunnyside 簡介為 1967 年起長居歐洲、義大利三年後到巴黎），同店《The Wire》的上線簡介也寫 1970 年；1972 年與兩者不符。 | https://en.wikipedia.org/wiki/Steve_Lacy_(saxophonist) |
+| ar-d-138 | The Freedom Unity | Down By The Naked City | 同一年他們另外還壓了四張碟 | NTS 稱這是 one off project，Discogs 本盤頁也只列此團這一張；本層找不到另外四張的佐證，建議店主本機核對 Discogs 藝人頁後再決定是否保留 | https://nts.live/artists/81086-the-freedom-unity |
+| ar-d-138 | Tony Allen & Jeff Mills | Tomorrow Comes The Harvest | 2018 年 9 月 28 日發行；錄音在巴黎 CBE Studio 現場錄下 | 搜尋摘要顯示發行日各站不一：Shuga Records 寫 2018 年 9 月 21 日（Blue Note Lab 778630 6）、Soundshelter 寫 20 日、uDiscover 預告寫 28 日；Shuga 列錄音室為 Studio CBE，但沒有『現場錄音』或『巴黎』字樣，建議店主核實日期與錄音說法。 | https://www.shugarecords.com/products/tonyallenjeffmillstomorrowcomestheharvest-new10eprecord2018bluenotelabfranceimportvinyl-electronicfuturejazzafrobeat |

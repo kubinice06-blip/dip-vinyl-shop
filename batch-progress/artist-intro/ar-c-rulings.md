@@ -1802,3 +1802,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 審稿修 12 處：Cortés、Barron Quintet、Les Brown、Louis Hayes「最…之一」改「極…／一線」；Solal 的 Avakian 評語「最偉大」改「頂尖」；山下洋輔「日本最早」改「早期」並刪紫綬褒章；Barron Trio 刪製作人評論家名；Kitty Hoff 在世者只留一項獎助；Tabackin、New York Liner 刪《Swing Journal》獎項（刊名、單源）；Minyo Crusaders 片假名改羅馬字並壓到 250 字。
   - 保留：José Luis Cortés 2022 年過世（補洞層已更正被誤算的 2026）；Kiefer 引 Blue Note 總裁 Don Was、Anderson .Paak《Ventura》葛萊美一處；Nancy Wilson 榜單與葛萊美（已故者）；Solal 維琪政權背景一句。
 - 待本機：Juliano Rossi 2、Kitty Hoff 2、Karl Denson、Kenny Barron Trio、Burrell & Washington、Kiefer、Minyo Crusaders 各 1（pubIssues 9）。
+
+## ar-d-137（2026-10-16）
+
+- 38 位上架（27 full、11 thin：NORIKI、Paul Cornish、Ralph Peterson Fo'tet、Ravi Coltrane、Richard Pine & Company、Rodney Jones、Ron Carter / Ricky Dillard、Clooney with Les Brown、Sadistics、Scolohofo、Spick & Span），不寫 2 位：Sidevision（只有成員簡歷與發行資料，寫不出有來源的聲音句）、South Wind Section（全部事實出自同一 Discogs 頁，單源）。名冊補登批第九批。
+- 多名卡放寬：Rosnes & Danish Radio Big Band、Beirach & Liebman、Beirach with 富樫雅彦、Ron Carter & Danny Simmons。Ralph Peterson 三張、Ron Carter 三張、Stan Tracey 兩張、Sonia Rosa 兩張、Stefon Harris 兩張、Richie Beirach 兩張各以卡池那張為主，生平不重複。Beirach with 富樫雅彦的《Kahuna》查無可開來源，改寫兩人同月的現場盤《津波 Tidal Wave》，不寫富樫受傷經過。
+- 預抓維基誤配（Sarah McCoy 小說家、Spectrum 光譜詞條、Richard Pine 愛爾蘭評論家、Paul Cornish 橄欖球員）補洞層皆棄用。
+- 審稿修 5 處：Fresu「辨識度最高之一」、Cornish「最重要的影響之一」、Stan Tracey「最受推崇之一」改「極…」；Rita Reys 單卡 263 字刪 Avakian 評語；Sarah McCoy 刪父親與祖母過世並壓到 250 內。另補洞稿「九段会館」「稲葉国光」照 ar-d-131 先例改「會」「國」。
+  - 保留：Richie Beirach（2026-01）、Danny Simmons（2026-06）過世，主線 WebSearch 兩源核實（WRTI、DownBeat；Black Enterprise、Westwood Gallery）；Ron Carter 金氏紀錄錄音數量（必要例外、不用「最」）；Rita Reys 263→233 後的六座 Edison 獎（已故者）；Stan Tracey Octet 水星獎入圍（已故者）；Orphy Robinson MBE 一處。
+- 待本機：Sadistics、Scolohofo、Stefon Harris & Blackout 上線簡介各 1 條（pubIssues 3）。
