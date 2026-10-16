@@ -2,6 +2,8 @@
 // 已上線專輯簡介・第二輪修正（2026-10-16 起，雲端可寫 KV 之後）。
 //
 //   node scripts/pub-fix-round2.mjs prep            依 ROUND2-QUEUE.json 抓 KV 現值、切派工檔到 audits/pub-fix/round2/in/
+//   node scripts/pub-fix-round2.mjs prep b          第二波：重掃後的殘留＋B2 出處點名，切成 in/r2b-NNN.json；
+//                                                   A 類扣掉已在 applied/ 定案過的卡（keep 或已改寫）
 //   node scripts/pub-fix-round2.mjs check <out…>    檢查改寫稿（比對現值、字數、禁語、半形標點），不寫任何東西
 //   node scripts/pub-fix-round2.mjs emit <out…>     產出 publish-stage/pub-fix-r2/<批>/kv-puts.json 與變更紀錄
 //   node scripts/pub-fix-round2.mjs verify <out…>   逐字回讀 KV（寫入後等半分鐘再跑，KV 有 10–30 秒延遲）
@@ -60,24 +62,28 @@ const readOuts = files => files.flatMap(f => JSON.parse(fs.readFileSync(f, 'utf8
 const cmd = process.argv[2], files = process.argv.slice(3);
 
 if (cmd === 'prep') {
+  const wave = files[0] === 'b' ? 'r2b-' : 'r2-';
   const q = JSON.parse(fs.readFileSync('audits/pub-fix/ROUND2-QUEUE.json', 'utf8'));
+  const done = new Set();
+  if (wave === 'r2b-') for (const f of fs.readdirSync(DIR + '/applied')) for (const r of JSON.parse(fs.readFileSync(`${DIR}/applied/${f}`, 'utf8'))) done.add(r.key);
   const by = new Map();
   const add = (key, sec, item) => { if (!key) return; if (!by.has(key)) by.set(key, { key, issues: [] }); by.get(key).issues.push({ sec, ...item }); };
-  for (const r of q.A) if (r.claimFound) add(r.key, 'A', { claim: r.claim, problem: r.problem, src: r.src });
+  for (const r of q.A) if (r.claimFound && !done.has(r.key)) add(r.key, 'A', { claim: r.claim, problem: r.problem, src: r.src });
   for (const r of q.B1) add(r.key, 'B1', { hits: r.hits });
   for (const r of q.B1b) add(r.key, 'B1b', { context: r.context });
   for (const r of q.B3) add(r.key, 'B3', { context: r.context });
   for (const r of q.B4) add(r.key, 'B4', { context: r.context });
-  for (const r of q.C) add(r.key, 'C', { note: r.note });
+  if (wave === 'r2b-') for (const r of q.B2) add(r.key, 'B2', { hits: r.hits });
+  for (const r of q.C) if (!done.has(r.key)) add(r.key, 'C', { note: r.note });
   const live = await bulkGet([...by.keys()]);
   const items = [...by.values()].filter(x => live.get(x.key)).map(x => ({ ...x, desc: live.get(x.key) }));
   // 優先序：C／B1／B1b 先，再 A，再 B3／B4
-  const rank = x => Math.min(...x.issues.map(i => ({ C: 0, B1: 0, B1b: 0, A: 1, B3: 2, B4: 2 }[i.sec])));
+  const rank = x => Math.min(...x.issues.map(i => ({ C: 0, B1: 0, B1b: 0, A: 1, B3: 2, B4: 2, B2: 3 }[i.sec])));
   items.sort((a, b) => rank(a) - rank(b) || a.key.localeCompare(b.key));
   fs.mkdirSync(DIR + '/in', { recursive: true });
   let n = 0;
   for (let i = 0; i < items.length; i += PER) {
-    const name = 'r2-' + String(++n).padStart(3, '0');
+    const name = wave + String(++n).padStart(3, '0');
     fs.writeFileSync(`${DIR}/in/${name}.json`, JSON.stringify(items.slice(i, i + PER), null, 1));
   }
   const sec = {}; items.forEach(x => x.issues.forEach(i => { sec[i.sec] = (sec[i.sec] || 0) + 1; }));
