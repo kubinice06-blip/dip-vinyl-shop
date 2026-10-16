@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1399 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1409 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1403,3 +1403,13 @@
 | ar-d-140 | 山本邦山 & Chris Hinze | 去来 Kyorai | 領銜作幾乎都掛 CBS | 英文維基寫 Hinze 的領銜作『多數出在 CBS 與 Keytone』，Keytone 是他自己在 1970 年代中期創的廠牌；『幾乎都』說法過頭，建議改『多數在 CBS 與自家 Keytone』 | https://en.wikipedia.org/wiki/Chris_Hinze |
 | ar-d-140 | 峰純子 with Roland Hanna Trio | Pre Morning | 1970 年賴比瑞亞總統為表彰他替該國教育募款而授予榮譽爵位 | Blue Note 官方介紹寫 1970 年、為利比里亞兒童辦系列義演；另有來源寫 1978 年榮譽爵位，年份有分歧，且『替該國教育募款』與『為兒童義演』措辭不同，建議不寫死年份、改『為賴比瑞亞兒童辦的系列義演』 | https://www.bluenote.com/artist/roland-hanna/ |
 | ar-d-140 | 村上“ポンタ”秀一 | Introducing "Ponta" Murakami | 唱片上開始印出側錄樂手的名字，是他們去找製作人抗議之後的事 | 日文維基只寫『曾要求製作方在唱片上標示演奏者名字』的逸話，沒有『之後唱片才開始印名字』的因果；現代ビジネス（gendai.media）的伝説報導則完全未提此事，建議改寫為『他曾向製作方要求印出演奏者名字』 | https://ja.wikipedia.org/wiki/%E6%9D%91%E4%B8%8A%E7%A7%80%E4%B8%80 |
+| ar-d-141 | 沢田駿吾とオールスターズ | Fool On The Hill | 組團在 1952 年 | Victor 商品頁說 1952 年組自己的爵士 combo，但英文維基寫 1954 年成立 Double Beats、日文維基的 Double Beats Five 照片也是 1954 年；兩說並存。建議簡介註明『廠牌商品頁稱』或略去年份。 | https://en.wikipedia.org/wiki/Shungo_Sawada |
+| ar-d-141 | 秋吉敏子トリオ & Flute Quartet | Tuttie Flutie | 抵達波士頓第一晚台上正是 Bud Powell，舊識招她上去頂了一段 | NEA 傳記只寫她到波士頓後聽過 Bud Powell Trio、後來與他們同台，沒有『第一晚』與『舊識招上台』；jazz.com 完全沒提。細節可能來自日文維基或自傳，但本層找不到可開頁的來源，建議對一次來源或降級成『到波士頓後曾與 Bud Powell 同台』。 | https://www.arts.gov/honors/jazz/toshiko-akiyoshi |
+| ar-d-142 | The Wood Brothers | Ways Not to Lose | 2001 年重新合到一起，2001 年 5 月 24 日北卡羅來納州那場演出 | 英文維基持此說，但 Folk Alley 寫兄弟在 2004 年的同台演出後決定一起做音樂；年份有來源衝突，待店主視需要查證或改寫成不含年份。 | https://folkalley.com/basic-folk-podcast-oliver-wood/ |
+| ar-d-142 | Yufu | To My Pen Pal | Marvin Gaye 與 The Spinners 是啟蒙 | 訪談寫家人放 The Platters 與 The Spinners 讓他學英文、愛上靈魂樂；Marvin Gaye 是他列出的影響之一，不是童年啟蒙；Taiwan News 寫童年愛聽盜版 Barry White 與 The Spinners。 | https://www.billboardlivetaipei.tw/ko/articles/yufuinterview |
+| ar-d-142 | Yufu | To My Pen Pal | 自己彈 wah-wah 吉他、吹長笛 | Taiwan News 證實他彈吉他、吹長笛、打康加鼓，但兩個來源都未說他彈 wah-wah 吉他；訪談中的 wah-wah 指 Little Beaver 的演奏。 | https://www.taiwannews.com.tw/en/news/6007454 |
+| ar-d-142 | カルメン・マキ&LAFF | LAFF | 專輯銷量不佳，同年秋天她因毒品案被捕，樂團停擺 | 依本批規則，刑案與毒品逮捕一律不寫；且日文維基只寫「ヒットには至らなかった」，逮捕時間點僅見英文維基與搜尋摘要，建議把這句刪去、只留銷量不佳。 | https://en.wikipedia.org/wiki/Carmen_Maki |
+| ar-d-142 | 小坂明子 | あなた - 小坂明子の世界 | 單曲連續 7 週 Oricon 第 1，是女性創作歌手第一張百萬單曲 | 7 週第 1 有據（1974/1/28 至 3/11）；但『女性創作歌手第一張百萬單曲』查無依據，日文維基只寫 1978 年 10 月時為女性獨唱單曲銷量當時第 1、民謠類單曲歷代第 1，建議改寫為其中一項或刪去『第一張』 | https://ja.wikipedia.org/wiki/%E3%81%82%E3%81%AA%E3%81%9F_(%E5%B0%8F%E5%9D%82%E6%98%8E%E5%AD%90%E3%81%AE%E6%9B%B2) |
+| ar-d-142 | 高橋真梨子 | Triad | 〈桃色吐息〉是替珠寶廣告訂製的歌，先被退件，靠經紀人力保才上檔 | 本層四輪搜尋（含針對 CM 與退件的關鍵字）找不到任何出處；Oricon 與日文維基都只寫它是單飛後第一首大熱門。建議回查原研究稿的來源網址，查不到就改掉。 | https://www.oricon.co.jp/news/2270677/full/ |
+| ar-d-142 | 高橋真梨子 | Triad | 收錄它的這張賣近 50 萬張 | 本層沒有找到銷量的來源；日文維基、Oricon 與 3rd-in 百科摘錄皆只記首度奪得 Oricon 冠軍，未見銷量數字。建議回查原來源。 | https://ja.wikipedia.org/wiki/%E9%AB%98%E6%A9%8B%E7%9C%9F%E6%A2%A8%E5%AD%90 |
+| ar-d-142 | 高田真樹子 | MAKIKO first | 11 首全由她自己作詞作曲 | 待核：Uta-Net 的搜尋摘要顯示單曲〈屋根〉歌手與作詞為高田真樹子，作曲欄為萩田光雄（可能是編曲者誤列，也可能是他人作曲）；本層沒有開到專輯逐曲作曲者的來源，建議回查原簡介的來源，或對照盤面信用表。 | https://www.uta-net.com/lyricist/55300/ |

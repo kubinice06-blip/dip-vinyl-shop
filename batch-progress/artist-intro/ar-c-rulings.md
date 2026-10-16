@@ -1857,3 +1857,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 店主 2026-10-16「做三十批」。盤點：卡池 19,121 張的藝人全部已有介紹、已排隊或列入不寫名單，未切的只剩 add-20261015-backfill 最後 74 位，切成 ar-d-141（40）、ar-d-142（34）。
 - 其餘 28 批由店主選定「thin 升級成 full」：取每個鍵最新一版上線成品中 status 為 thin 的 1,603 位，依卡數多→少、分級 A→D、鍵排序，切 ar-u-001～028 共 1,120 位（`batch-progress/artist-intro/upgrade-thin-20261016.mjs`，tier 記 U、addedBy upgrade-thin-20261016）。每批另寫 `cache/<批>-prior.json`（原 thin 正文、原批名、原補洞稿條目），補洞層從原有事實出發、只補缺的格；寫作層只寫補到 full 的人，仍 thin 的不寫、保留原上線版（記進該批 skipped）。
 - `scripts/build-artist-intros.mjs` 與 `desc-tools/artist-alias.mjs` 的 published 閘從 `ar-[a-d]` 改成 `ar-[a-z]`，ar-u 升級批未標 published 前不進分片；同鍵多版時檔名排序在後者蓋前，ar-u 自然覆蓋原 thin 版。
+
+## ar-d-141（2026-10-16）
+
+- 38 位上架（29 full、9 thin），不寫 2 位：池田芳夫（個人卡）、響野夏子（聲音句都只剩師承、合作名單或盤面掛名，照 Vex'd 先例；池田芳夫クインテット卡保留）。名冊補登批第十三批，日本爵士為主，另有 Steve Lacy (The Internet)、Ghost。
+- 多名卡放寬：渡辺貞夫 & Mariano、福村博 with 渡辺貞夫、八位吉他手《New York》、秋吉敏子 Trio & Flute Quartet、渡辺香津美 & Gentle Thoughts、深町純 & 21st Century Band、笠井紀美子三張、筒井康隆 / 市原 / 佐藤、辛島文雄 & Elvin Jones、鈴木勲 & Duke Jordan。笠井紀美子三張、深町純兩張、渡辺貞夫兩張、渡辺香津美兩張、鈴木弘三張、鈴木勲兩張、筒井康隆兩張各以合作者為主。
+- 搜尋超額：沢田靖司 & Soul Media 10、八位吉他手 9、筒井 / 市原 / 佐藤 9、鈴木勲・山本剛 9，放行（多名或補第二源）。補洞稿 国／会 改繁體時誤改「生活向上委員会大管弦楽団」的鍵，已還原；name 欄照名冊、正文寫「委員會」。
+- 審稿修 10 處：沢田靖司「日本第一」改「推崇備至」；Nelson、Walton、Gil Evans「最…之一」改「極…」；渡辺香津美 & Gentle Thoughts 刪 Pat Metheny 評語（跨卡重複）；筒井 / 市原 / 佐藤刪《Swing Journal》獎；鈴木弘刪「日本最好的長號手」（同出版者兩條）；《東海道戰爭》《世界遺產》改繁體；Ghost 補空格。
+  - 保留：浅川マキ照片假名規則寫 Maki Asakawa；秋吉敏子的兩段婚姻只作合作身分交代（照 Tabackin 先例）；Steve Lacy 葛萊美、筒井康隆谷崎賞（在世者各一處）；花柳幻舟不寫事件與刑案。
+- 待本機：沢田駿吾、秋吉敏子 Trio & Flute Quartet 上線簡介各 1 條（pubIssues 2）。
