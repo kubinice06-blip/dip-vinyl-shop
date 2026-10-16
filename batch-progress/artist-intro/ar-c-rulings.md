@@ -1820,3 +1820,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 審稿修 8 處：Gadd、Teddy Wilson（兩處）、Super Quartet、Monk with Coltrane、Allen & Mills（Eno 評語）、Shorter Quartet「最…之一」改「極／早期」或改寫；Masakowski「新奧爾良」統一為「紐奧良」；Wind-Breakers 刪「晚年」（1980 錄音、同團與否無法確定）。
   - 保留：Trio Focan 照補洞稿寫土耳其吉他手 Önder Focan 領軍（主線特注誤記為芬蘭，兩位客座才是芬蘭人，記為主線更正）；Bill Holman 2024、Ellis Marsalis 2020、Wayne Shorter 2023、Tony Allen 2020 過世（截止日前通行事實）；Charles Lloyd、Thierry Lang、Thomas Dutronc 在世者各一處。
 - 待本機：Harris & Terrasson 2、Monk with Coltrane 2、Lacy / 高橋 / 小杉、Freedom Unity、Thomas Dutronc、Allen & Mills 各 1（pubIssues 8）。
+
+## ar-d-139（2026-10-16）
+
+- 39 位上架（32 full、7 thin：Henri 菅野、Sammy & 稲垣次郎、上田力 & The Power Station、佐藤允彦 & Medical Sugar Bank、兼崎順一、前田憲男・藤舎推峰、増尾元章），不寫 1 位：仲村裕美（只有出版紀錄，聲音句只剩曲目取向與 Discogs 風格標籤，照 Vex'd 先例不寫）。名冊補登批第十一批，日本爵士為主。
+- 多名卡放寬：Peacock / 佐藤 / 富樫、Steve Marcus + Soul Media、Stomu Yamashta & 佐藤、Mickey 吉野 & 渡辺香津美、井野信義 & Lester Bowie、佐藤 & Dauner、佐藤 & Peacock、佐藤 & Big Soul Media、佐藤 ft. Gomez & Gadd、前田憲男 & Tin Pan Alley、原信夫 / Elvin Jones / Frank Foster、古澤良治郎 & Lee Oskar。佐藤允彦六張、前田憲男三張、土取利行三張、Stomu Yamashta 兩張、井野信義兩張、北村英治兩張、古沢良治郎兩張各以合作者與卡池那張為主，生平不重複（兩張 Peacock 卡一張寫駐德與 Jarrett 三重奏、一張寫 Ayler 與 ECM）。
+- 搜尋超額：Mickey 吉野 & 渡辺香津美超 1（補 1980 天津巡演的非維基第二源），放行。
+- 本批起片假名一律改寫：人名改羅馬字（Henri 菅野、George 川口、Tiger 大越、Mickey 吉野、Smiley 小原、Shibata Hatsumi），團名改羅馬字或「與」（稲垣次郎與 Soul Media、Big Soul Media），曲名與片名改通行中文或英文（〈Gandhara〉〈Monkey Magic〉〈Poésie〉〈寶島〉〈歸來的醉漢〉、《小拳王》《飛機雲》《平成狸合戰》《Innocence》《影像的世紀》），美空ひばり作美空雲雀；漢字人名保留日文字形（渡辺、稲垣、武満）。早前 ar-d-119／129 保留片假名的寫法不追改。
+- 審稿修 25 處：上述片假名改寫 16 處；Peacock、Gomez & Gadd、加藤和彦「最…之一」改「極…」；Yaron Herman 刪膝傷；伊藤君子刪《Swing Journal》讀者票選連續九年第一（刊名、在世者榜單）；原信夫刪單曲名改「熱門曲」；土取・坂本刪 2026 黑膠重發（兩源為同一新聞稿）；土取・高木刪評論家間章；古沢 live house 空格。
+  - 保留：Wynton Marsalis「第一位拿下普立茲音樂獎的爵士音樂人」屬通行事實（照 Van Cliburn 先例）；Julian Cope 評 Stomu Yamashta（具名音樂人）；三枝成彰文化功勞者、北村英治旭日小綬章（在世者各一處）；しばたはつみ Oricon 第 17 名（已故者）。
+- 待本機：Mickey 吉野、佐藤 & MSB、佐藤 & Peacock、佐藤 ft. Gomez & Gadd、北村 & Happy Cooking、土取利行 上線簡介各 1 條（pubIssues 6）。

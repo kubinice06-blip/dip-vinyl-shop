@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1393 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1398 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1397,3 +1397,8 @@
 | ar-d-139 | 佐藤允彦 & ゲイリー・ピーコック | 三昧 | 為了學禪與長壽飲食法退出樂壇的貝斯手，搬到日本住了兩年半 | Peacock 自述是 1969 年先因身心危機離開樂壇，之後才赴日學東洋思想與長壽飲食法，因果順序與簡介相反；『兩年半』只有英文維基一源，Encyclopedia.com 與 NYT 系報導的年數說法不同，建議改成『在日本住了兩年多』或不寫年數；『學禪』在英文維基與 Chronogram 都未明說是赴日目的（NYT 系報導才寫 Zen） | https://www.chronogram.com/arts/zen-and-the-art-of-musical-maintenance-2210143/ |
 | ar-d-139 | 佐藤允彦 Featuring Eddie Gomez & Steve Gadd | As If… | Gomez 與 Steve Gadd 當時同在 Manhattan Jazz Quintet 撐節奏 | Gadd 的團員身分有英文維基（1983 至 1987 年）為證；Gomez 在 MJQ 的身分本層查到的維基條目與 Blue Note 簡介都沒有明說，建議店主核對 MJQ 成員名單或改寫 | https://en.wikipedia.org/wiki/Steve_Gadd |
 | ar-d-139 | 北村英治 & Happy Cooking All Stars | Sapporo Concert | 三十歲那年 Benny Goodman 訪日，北村英治在偶像面前吹並得到稱讚 | Goodman 樂團訪日是 1957 年，北村 1929 年生，當時約 28 歲；「三十歲」是日文維基的說法，與訪談記載的 1957 年不合，建議改成「Goodman 訪日時」不寫年齡 | https://www.tyojyu.or.jp/net/interview/itsumogenki-imamogeneki/sukinakoto.html |
+| ar-d-139 | 土取利行 | 磬石（サヌカイト） 古代石の自然律 | 錄音 1986 年 8 月 2 日，同年 12 月 1 日直接做成 CD 交由 Victor 發行，編成 VDR-1326 | 未能確認、僅供店主核對：搜尋結果摘要（organicmusic.jp 商品頁與 last.fm）把《Keiseki -Sanukaito-》記為 1984 年 Japan Records 的 LP，與上線簡介的 1986 年 Victor CD 不同；可能是不同版本（先 LP 後 CD 重發），商品頁頁面 429 沒讀到，請店主對 Discogs 確認。 | https://organicmusic.jp/en/products/toshiyuki-tsuchitori-keiseki-sanukaito |
+| ar-d-140 | 宮間利之とニューハード + 富樫雅彦 | Canto of Aries | 本作拿下スイングジャーナル主辦的 1971 年度日本ジャズ賞，這支樂團前一年的《Canto of Libra》拿的是 1970 年度，連著兩年 | 本層搜尋摘要稱 1970 年度 Swing Journal 日本爵士唱片獎給了《Perspective》（1969 年作）；兩者是否同年並存、獎項名稱（日本ジャズ賞／日本ジャズ・レコード賞）無法在線上證實，建議本機以 Swing Journal 年度結果或 Discogs／日文維基核對。 | https://www.jazzmusicarchives.com/artist/toshiyuki-miyama |
+| ar-d-140 | 山屋清とコンテンポラリー・サウント・オーケストラ | Kyo | 彈箏的是 米川敏子、打鼓的是 堅田喜三久，兩位後來都成了人間國寶。 | 米川敏子 1996 年認定人間國寶有日文維基（單源）支持；堅田喜三久是否人間國寶本層無法確認（日文維基條目 404，搜尋摘要僅稱他是長唄囃子的人間國寶，未開頁）；「打鼓」也宜核對盤面樂器（長唄囃子的打擊多為鼓類）。建議本機核實堅田喜三久後再保留「兩位」。 | https://ja.wikipedia.org/wiki/%E7%B1%B3%E5%B7%9D%E6%95%8F%E5%AD%90 |
+| ar-d-140 | 山本邦山 & Chris Hinze | 去来 Kyorai | 領銜作幾乎都掛 CBS | 英文維基寫 Hinze 的領銜作『多數出在 CBS 與 Keytone』，Keytone 是他自己在 1970 年代中期創的廠牌；『幾乎都』說法過頭，建議改『多數在 CBS 與自家 Keytone』 | https://en.wikipedia.org/wiki/Chris_Hinze |
+| ar-d-140 | 峰純子 with Roland Hanna Trio | Pre Morning | 1970 年賴比瑞亞總統為表彰他替該國教育募款而授予榮譽爵位 | Blue Note 官方介紹寫 1970 年、為利比里亞兒童辦系列義演；另有來源寫 1978 年榮譽爵位，年份有分歧，且『替該國教育募款』與『為兒童義演』措辭不同，建議不寫死年份、改『為賴比瑞亞兒童辦的系列義演』 | https://www.bluenote.com/artist/roland-hanna/ |
