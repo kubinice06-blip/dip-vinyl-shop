@@ -1793,3 +1793,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 ## 第十一輪五批接力（ar-d-136～140，2026-10-16 起）
 
 - 店主 2026-10-16「再五批」。從 add-20261015-backfill 剩下的 274 位，照切批規則（爵士先、卡數多的先、同卡數依鍵排序）接續切 ar-d-136～140 五批 200 位（John Lewis & Hank Jones … 横内章次とクインテット・プラス・ラテン），全為爵士。剩 74 位（爵士 38、流行 15、搖滾 9、民謠 7、靈魂 3、電子 1、古典 1）留下一輪。
+
+## ar-d-136（2026-10-16）
+
+- 40 位全上架（26 full、14 thin：Scofield & Metheny、Judi Silvano、Perko & Virtuosi di Kuhmo、Juliano Rossi、Kangaroo、Kenny Werner、L.A. Transit、Lew Tabackin、Logan Richardson、Love Live Life、Waldron & 日野皓正、Twi-Life、Marty & Mystics、Maya Delilah），無不寫。名冊補登批第八批。
+- 多名卡放寬：John Lewis & Hank Jones、Kendrick Scott 三人、Les Brown（兩位客席）、Waldron & 山下洋輔、Tyner 三張（Hutcherson、McLean、Henderson）、Mercereau / Johnson / Niño。Kenny Barron 兩張編制卡、Kenny Burrell 兩張合作卡、McCoy Tyner 三張合作卡、Mal Waldron 兩張合作卡各以卡池那張為主，生平不重複。
+- 預抓維基誤配（John Lewis 國會議員、Kangaroo 動物、Love Live Life 英國專輯、Marty & Mystics 籃球隊、Paul Cornish 橄欖球員）補洞層皆整份棄用，照卡池重查。
+- 審稿修 12 處：Cortés、Barron Quintet、Les Brown、Louis Hayes「最…之一」改「極…／一線」；Solal 的 Avakian 評語「最偉大」改「頂尖」；山下洋輔「日本最早」改「早期」並刪紫綬褒章；Barron Trio 刪製作人評論家名；Kitty Hoff 在世者只留一項獎助；Tabackin、New York Liner 刪《Swing Journal》獎項（刊名、單源）；Minyo Crusaders 片假名改羅馬字並壓到 250 字。
+  - 保留：José Luis Cortés 2022 年過世（補洞層已更正被誤算的 2026）；Kiefer 引 Blue Note 總裁 Don Was、Anderson .Paak《Ventura》葛萊美一處；Nancy Wilson 榜單與葛萊美（已故者）；Solal 維琪政權背景一句。
+- 待本機：Juliano Rossi 2、Kitty Hoff 2、Karl Denson、Kenny Barron Trio、Burrell & Washington、Kiefer、Minyo Crusaders 各 1（pubIssues 9）。

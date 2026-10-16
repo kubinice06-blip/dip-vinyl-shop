@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1368 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1378 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1372,3 +1372,13 @@
 | ar-d-135 | George Howard | There's a Riot Goin' On | 他在同年 3 月 20 日已過世 | 過世日期各來源不一致（維基與 Muziekweb 為 3 月 20 日，Carnegie Hall Data Lab 為 3 月 22 日，Blue Note 官網與 Rovi 傳記為 3 月 29 日）；建議改寫為「同年 3 月」，不寫日。 | https://www.bluenote.com/artist/george-howard/ |
 | ar-d-135 | Hank Jones | Hanky Panky | 做了十六年電視台駐台鋼琴手；Hank Jones 在 CBS 從 1959 待到 1975 年 | AP 訃聞（ABC7 轉載）寫他在 CBS 擔任錄音室鋼琴手 17 年；起訖年份我們找不到第二個來源，建議店主本機再核對『十六年』與『1959』 | https://abc7chicago.com/archive/7446355 |
 | ar-d-135 | John Kaizan Neptune | Tokyosphere | 胡弓請來 Eric Golub | 待核：komuso.com 專輯頁內頁文字（搜尋摘要）寫 Golub 是中提琴／小提琴即興手，與 Neptune 在東京同台演過，但 Neptune 此張原就打算只用日本傳統樂器，與 Golub 的合錄沒有在這張實現；上線簡介把他列為胡弓樂手可能是 Discogs 錄入錯誤。需本機開 komuso 專輯頁或查盤上實物確認 | https://www.komuso.com/albums/albums.pl?album=97 |
+| ar-d-136 | Juliano Rossi | Free Runner | 這個藝名是他 2003 年前後才用的 | 德文維基 Juliano Rossi 條目寫 Perau 在 Terry Hoax 最後一張錄音室專輯後就用此名轉向靈魂與爵士，一則宣傳稿甚至寫 1996 年；2003 年是首張以此名發片的年份，不一定是藝名開始使用的年份。建議改寫成『2003 年以此名發片』。 | https://de.wikipedia.org/wiki/Juliano_Rossi |
+| ar-d-136 | Juliano Rossi | Free Runner | 翻唱的〈Policy of Truth〉曾是 MTV 上播放最多的德國樂團錄影帶 | 德文維基 Terry Hoax 條目只說該曲是 1992 年樂團最成功的單曲，未見 MTV 播放排名之說；本層查無第二源。建議改成可查證的『1992 年翻唱 Depeche Mode 的〈Policy of Truth〉，是樂團最成功的單曲』。 | https://de.wikipedia.org/wiki/Terry_Hoax |
+| ar-d-136 | Karl Denson | Dance Lesson #2 | 那是他長年待在 Lenny Kravitz 樂團的年代，在那之前他是 Greyboy All-Stars 的薩克斯風手 | 時序疑似顛倒：Blue Note 簡介寫他 1989 年因〈Let Love Rule〉進 Kravitz 團，Greyboy Allstars 是他 1994 年前後創辦、約三年後拆夥的團，是 Kravitz 之後才有；若『在那之前』指的是〈Let Love Rule〉之前則有誤，若指本碟之前則無誤，建議改寫避免歧義（Billboard 2001 原文是 former saxophonist for Greyboy All-Stars and a longtime member of Lenny Kravitz's band）。 | https://www.bluenote.com/artist/karl-denson/ |
+| ar-d-136 | Kenny Barron Trio | Imo Live | 那支樂團 1977 年組成、以 Monk 中間名命名 | Sphere 成立年各來源不一致：Sphere 與 Barron 英文維基寫 1977，encyclopedia.com 寫 1980，NEA 寫 1982；建議改成不寫年份或寫『1970 年代末至 1980 年代初』。 | https://www.arts.gov/honors/jazz/kenny-barron |
+| ar-d-136 | Kenny Burrell & Grover Washington Jr. | Togethering | 曲單收了兩首艾靈頓與史崔洪 | 英文維基的曲目表只有〈Day Dream〉掛 Ellington / Strayhorn / La Touche，〈What Am I Here For?〉掛 Ellington / Frankie Laine，並非兩首艾靈頓與史崔洪；建議改成『兩首 Ellington 的曲子』。 | https://en.wikipedia.org/wiki/Togethering |
+| ar-d-136 | Kiefer | Memory Bomb | 這張碟定在 2026 年 9 月 25 日發行 | 寫稿時為預告句；Blue Note 官網現為『Out Sept. 25』，專輯已發行，建議改成過去式。 | https://www.bluenote.com/kiefer-announces-blue-note-debut-memory-bomb/ |
+| ar-d-136 | Kitty Hoff & Forêt-Noire | Zuhause | 1972 年生於明斯特 | 德文維基寫生於 Münster，laut.de 寫生於明斯特地區的小村；兩源不一致，建議改成『明斯特地區』。 | https://laut.de/Kitty-Hoff |
+| ar-d-136 | Kitty Hoff & Forêt-Noire | Zuhause | 發行前一年她拿下 Lale Andersen 獎 | 只見德文維基單源（2008 年），laut.de 與搜尋都查不到該獎；建議保留但標單源，或改寫成較保守的說法。 | https://de.wikipedia.org/wiki/Kitty_Hoff |
+| ar-d-136 | Minyo Crusaders | From Japan With Love | Ry Cooder 說他們是他這麼多年來聽過最好的樂團 | 各源措辭不同：soundsandcolours（2019）寫『reportedly』『the best band he has heard in years』，另一站寫『the best band I've ever seen』；沒有找到 Cooder 本人的原始出處，上線簡介把轉述直接寫成他說的，建議改成『據報導』或具名來源。 | https://soundsandcolours.com/articles/colombia/meeting-minyo-crusaders-the-10-piece-mixing-cumbia-with-japanese-folklore-48447/ |
+| ar-d-137 | Sadistics | Sadistics | 動力來自 1975 年 10 月替 Roxy Music 英國巡演當開場的好評。 | 日文維基 Sadistics 頁只說團名源自該巡演時當地媒體的稱呼，未見『好評是重組動力』的說法；英文維基也只寫四人於樂團解散後以 The Sadistics 名義續行。屬推論，建議降成『團名在那次巡演時就被當地媒體用上』。 | https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%87%E3%82%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%82%B9 |
