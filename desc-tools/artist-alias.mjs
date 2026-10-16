@@ -21,7 +21,7 @@ const OUT = 'zz-alias-out.json'
 const have = new Map()
 // 量產批只收已上架（progress.json 標 published）的，與 build-artist-intros.mjs 同一道閘
 const published = new Set(JSON.parse(fs.readFileSync('batches/artist/progress.json', 'utf8')).batches.filter(b => b.state === 'published').map(b => b.batch))
-const ok = f => { const m = f.match(/^(ar-[a-d]-\d{3})-out/); return !m || published.has(m[1]) }
+const ok = f => { const m = f.match(/^(ar-[a-z]-\d{3})-out/); return !m || published.has(m[1]) }
 for (const f of fs.readdirSync(ODIR).filter(f => /-out(?:-\d+)?\.json$/.test(f) && f !== OUT && ok(f)).sort()) {
   for (const r of JSON.parse(fs.readFileSync(path.join(ODIR, f), 'utf8'))) have.set(r.key, r)
 }
