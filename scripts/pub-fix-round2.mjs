@@ -45,7 +45,7 @@ const stripTitles = t => t.replace(/《[^》]*》|〈[^〉]*〉/g, '');
 const BANNED = [/維基|wikipedia/i, /musicbrainz/i, /discogs/i, /allmusic/i, /資料庫/, /建檔/, /本卡/, /本筆/, /條目/];
 const HANGUL = /\p{Script=Hangul}/u;
 // 與 build-pub-fix-queue.mjs 的 SOURCE 同步，另加常見樂評媒體與評分寫法
-const SOURCE = /維基|Wikipedia|MusicBrainz|\bMB\b|Discogs|AllMusic|RateYourMusic|\bRYM\b|release[- ]group|Pitchfork|Rolling Stone|Mojo|Uncut|Apple Music|Spotify|[四五三]星半?|滿分/iu;
+const SOURCE = /維基|Wikipedia|MusicBrainz|\bMB\b|Discogs|AllMusic|RateYourMusic|\bRYM\b|release[- ]group|Pitchfork|Rolling Stone|《Mojo》|《Uncut》|Apple Music|Spotify|[四五三]星半?|滿分/iu;
 
 function lint(r) {
   const w = [];
