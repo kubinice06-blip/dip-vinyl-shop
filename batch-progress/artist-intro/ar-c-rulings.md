@@ -2116,3 +2116,8 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 補查 27 位：add 13、none 14；改寫 13 位，補回 Townsend 自行住院確診雙相情緒障礙與戒菸酒、Rowland 古柯鹼成癮與破產及《My Beauty》、Drudkh 獻給班德拉與 NSBM 指控、Dua Lipa 2020 年地圖風波與 2024 年呼籲加薩停火、Father John Misty 的蘑菇之旅、Shawn Jay 2026 年公開癌症第四期（補查開頁兩源）、Foje 在獨立運動中為媒體大樓辦通宵演唱會、Frank Lowe 肺癌、Gabor Szabo 1956 年出逃、海洛因成癮與控告山達基、George Michael 控告索尼、伴侶 Feleppa 之死與 1998 年被捕出櫃、Scott-Heron 反種族隔離與反核及成癮入獄、H.E.R.〈I Can't Breathe〉、HAIM 新專輯寫伴侶罹癌、糖尿病與業界性別歧視。
 - 主線審稿 8 處：連續年份句（Devin、Dua Lipa、George Michael）、年份超量（George Michael、Gil Scott-Heron）、卡池專輯名超量（George Michael）、Gabor「後來和解」只有單源刪去、字數。
+
+### 題材補回：ar-u-016（2026-10-17）
+
+- 補查 21 位：add 7、none 14；改寫 7 位，補回 Corea 的山達基信仰與 2021 年因罕見癌症過世、Sam Jones 肺癌過世、XXXTentacion 2018 年遭持槍搶劫槍殺、Townsend 躁鬱症與酒毒問題及解散樂團戒除、Tamia 與 Grant Hill 的婚姻及多發性硬化症、Granduciel 感情破裂後的憂鬱與孤立、Froese 2015 年猝逝。
+- 主線審稿 1 處：The War on Drugs 卡池專輯名超量。
