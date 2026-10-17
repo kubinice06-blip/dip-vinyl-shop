@@ -2055,3 +2055,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 搜尋超額：Atlas Sound、Banteay Ampil Band、Bob Carlin（thin）、Bhaskara（thin）、Billy Ocean 放行。
 - 主線審稿 6 處：B.G.、Batushka 連續年份句；Bo Carter 年份超量；Bahamadia「最早…之一」改「早期」；Billy Ocean 刪 MBE（在世者一處成績）；Batushka 壓回 250。
   - 保留：Bang on a Can All-Stars 獲《Musical America》年度樂團（獎項，非媒體名單）。
+
+## ar-u-021（2026-10-17，thin 升級；題材補回後上架）
+
+- 40 位中 22 位升 full 上線；18 位補洞後仍 thin、保留原上線版：Bola、Bong Peñera、Booster、Boozoo Bajou、Brighter、Brisa Roché、Bröselmaschine、Buffalo Tom、Buscemi & The Michel Bisceglia Ensemble、Cannibale、Carbon Based Lifeforms、Carl Thomas、Casino Versus Japan、Castanarc、Catapilla、Cause for Alarm、Centry、Charles Kynard。
+- 寫作照新規則（題材沒有禁區），補查再補 8 位：Bokani Dyer 父親拒服種族隔離軍役流亡波札那、Brian McKnight 與子女失和及長子 2025 年病逝、Buddy Thomas 死因與醫療困境、Buffalo Nichols 談藍調的黑人所有權、Oli Sykes 氯胺酮成癮與戒除、Camila Cabello 離開 Fifth Harmony 的聲明風波、Caleb Scofield 2018 年車禍過世、Charles Brackeen 的婚姻。Chambao 搜尋 11 次放行。
+- 主線審稿 7 處：Breakbot、Charles Sullivan、Charles Webster、Charles May & Annette May Thomas、Charlie Hunter / Leon Parker「最…」改「代表／極」；BOYNEXTDOOR 刪連續破百萬（2026 年作品且屬銷量）；McKnight 來源改 https。
