@@ -2121,3 +2121,8 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 補查 21 位：add 7、none 14；改寫 7 位，補回 Corea 的山達基信仰與 2021 年因罕見癌症過世、Sam Jones 肺癌過世、XXXTentacion 2018 年遭持槍搶劫槍殺、Townsend 躁鬱症與酒毒問題及解散樂團戒除、Tamia 與 Grant Hill 的婚姻及多發性硬化症、Granduciel 感情破裂後的憂鬱與孤立、Froese 2015 年猝逝。
 - 主線審稿 1 處：The War on Drugs 卡池專輯名超量。
+
+### 題材補回：ar-u-015（2026-10-17）
+
+- 補查 28 位：add 11、none 17；改寫 11 位，補回 Ferrari 結核病、Maceo 隨 James Brown 樂手因薪資糾紛集體出走、工藤冬里早年的無政府主義與政治團體、Mahmoud Ahmed 在 Derg 政權下樂隊解散與審查、Mario 母親海洛因成癮與 2010 年指控撤案、Terrell 台上倒下與腦瘤逝世及《What's Going On》被嫌太政治、Gaye 1984 年遭父親槍殺、Ndegéocello 雙性戀身分與〈Leviticus: Faggot〉、Atlas 2011 年拒赴以色列演出、Potter 肺炎併發症、Howard 腦出血猝逝、Norma Jean 與 Porter Wagoner 的戀情。
+- 主線審稿 2 處：Ferrari、Mario 連續年份句。
