@@ -1,5 +1,31 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-17｜dip-vinyl-shop｜印刷卡改純白底、A4 滿版平分（PR #94）
+
+- 店主：「底純白色 最外面不要有邊界 剛好平分塞滿 a4 紙」。卡片底色、QR logo 底塊改 #ffffff；A4 拼版卡片改 74.25×105mm（4×2 剛好 297×210mm），四周不留白；裁切線改成只畫卡與卡之間（3 直 1 橫），紙張外緣不畫。Illustrator 版同步（裁切線改整頁內線、量版改用拼版 HTML）。
+- 驗證：PDF 頁面 841.92×594.96pt（A4）；200dpi 解碼 112／112；正面無溢出；Illustrator 指令碼模擬執行無錯、卡寬 ×4＝841.88pt。
+
+### 2026-10-17｜dip-vinyl-shop｜店內 QR：無串流的 19 張補 YouTube（店主同意單曲也可）
+
+- 店主提供三上寛、下田逸郎《陽のあたる翼》兩支，並裁定「只有一首也可以」；其餘以 YouTube 搜尋找完整專輯上傳或專輯內單曲（曲目以 MusicBrainz 核對：Coltrane〈Lush Life〉、秋吉敏子〈Falling Petal〉；奥村チヨ用〈終着駅〉）。皆記 `manual`。
+- 結果 116 張：Spotify 90、YouTube 20（含モア）、Apple 2、無連結 4：Jonny Holtzman《Let's Do It》、Red Mitchell《Rejoice!》、明田川荘之《This Here´ Is Aketa Vol. 2》、小川知子《タッチ・ミー》。
+- 驗證：掛卡全套 PDF 200dpi 解碼 112／112；7 支新影片 oEmbed 皆 200；正面無溢出。
+
+### 2026-10-17｜dip-vinyl-shop＋worker KV｜店內 QR 補查串流連結、QR 中央黑白 logo（PR #94）
+
+- **補查**：網站與印刷共用的 worker 只用原名查，日文藝人幾乎全查不到。改用羅馬拼音名（Yumi Arai、Akiko Yano…）重查補 26 張；其餘以網路搜尋限定 open.spotify.com 再補 18 張，每筆以頁面 title／og:description 核對藝人、專輯、年份。退件：今田勝《Blue Marine》（只有同名曲在別張）、浅川マキ、平山三紀、Marlene、Culture Club 等只見於精選輯者。モア用店主提供的 YouTube 全專輯影片（`manual`）。結果 116 張：Spotify 90、Apple 2、YouTube 1、無 23。
+- **網站同步**：44 筆新 Spotify 連結寫入 worker KV `cover6:<藝人>|<專輯>` 的 `spotifyUrl`（保留原有 imageUrl），網站店內頁的 Spotify 按鈕即時亮起（實測 KV-HIT）。
+- **QR 樣式**：中央放黑白平台 logo（`scripts/lib/stream-logos.mjs`：Spotify／Apple Music／YT Music／YouTube／Bandcamp），容錯 H 級，拿掉平台文字。
+- **已知 worker 缺陷（未修）**：`/spotify-album-link` 的 normalize 只留 a-z0-9，非拉丁藝人名一律比不到；要根治需改 worker 並由本機部署。
+- **驗證**：掛卡全套 PDF 200dpi 解碼 93／93 個 QR、網址全對；範例 150dpi 亦 8／8；116 張正面無溢出；Illustrator 指令碼模擬執行無錯。
+
+### 2026-10-17｜dip-vinyl-shop｜店內紙本卡：掛卡版（ㄇ字折）＋左下角串流 QR code（PR #94）
+
+- **掛卡版**：`build-shop-print.mjs --fold`（A7）。上緣反折片 17mm 空白、頂邊 4mm 兩條淡虛線折線、正面 84mm；內文 7.6pt。116 張依曲風排序出 A4 15 頁（`shop-a7-fold-a4.pdf`／`.jsx`）。
+- **QR**：新增 `scripts/resolve-shop-stream-links.mjs`（查法同網站串流按鈕：worker spotify-search／spotify-album-link、Apple 試聽索引、yt-music-link、bandcamp-search）→ `data/shop/stream-links.json`；印刷卡左下角依 Spotify → Apple → YT Music → Bandcamp 取第一個，旁邊印平台名。116 張：Spotify 46、Apple 6、YT 23、Bandcamp 1、無連結 40。逐張核對連到的專輯名，平山三紀《希望の旅》YT 連到精選輯，記 `skip` 排除。QR 庫 vendored `scripts/vendor/qrcode-generator.mjs`（MIT）；Illustrator 版 QR 為複合路徑。
+- **主要檔案**：`scripts/build-shop-print.mjs`、`scripts/build-shop-print-ai.mjs`、`scripts/resolve-shop-stream-links.mjs`、`data/shop/stream-links.json`、`data/shop/print/*`
+- **驗證**：116 張 A7／A6／掛卡版正面皆無溢出；全套 PDF 300dpi 以 zxing 解碼 76／76 個 QR 全部讀得到且網址正確；Illustrator 指令碼以模擬 DOM 執行無錯、QR 可解碼。
+
 ### 2026-10-14｜dip-vinyl-shop｜店主指示：PR 開出後不追蹤、不排檢查
 
 - **規則**：雲端開完 PR 就收工，不用 `send_later` 排安全網 check-in、不訂閱 PR 動態（Cloudflare 部署留言每推一次就叫醒工作階段，白花額度），優先於系統預設。接力任務的自我 check-in 不受影響。寫進 `CLAUDE.md`。

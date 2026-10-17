@@ -70,13 +70,16 @@ const cards = await page.evaluate(() => {
       const r = el.getBoundingClientRect(), cs = getComputedStyle(el), w = parseFloat(cs[`border${side}Width`]);
       if (!w) return;
       const y = side === 'Bottom' ? r.bottom - w / 2 : r.top + w / 2;
-      items.push({ k: 'line', x1: X(r.left), x2: X(r.right), y: Y(y), sw: w * PT, color: cs[`border${side}Color`] });
+      items.push({ k: 'line', x1: X(r.left), x2: X(r.right), y: Y(y), sw: w * PT, color: cs[`border${side}Color`], dash: cs[`border${side}Style`] === 'dashed' });
     };
     const box = (el, fill, stroke) => {
       const r = el.getBoundingClientRect(), cs = getComputedStyle(el);
       items.push({ k: 'rect', x: X(r.left), y: Y(r.top), w: r.width * PT, h: r.height * PT, r: parseFloat(cs.borderTopLeftRadius) * PT,
         fill: fill ? cs.backgroundColor : null, stroke: stroke ? cs.borderTopColor : null, sw: parseFloat(cs.borderTopWidth) * PT });
     };
+    // 掛卡版（--fold）：頂邊上下兩條虛線折線
+    const spine = card.querySelector('.spine');
+    if (spine) { line(spine, 'Top'); line(spine, 'Bottom'); }
     // 頁首：店名、頂點徽章、曲風
     const shop = card.querySelector('.shop');
     point(shop, shop.firstChild.textContent.trim(), 'left', shop.firstChild);
@@ -107,10 +110,29 @@ const cards = await page.evaluate(() => {
     const foot = card.querySelector('footer'); line(foot, 'Top');
     const sub = card.querySelector('.sub'); if (sub.textContent.trim()) point(sub, sub.textContent);
     const price = card.querySelector('.price'); point(price, price.textContent, 'right');
+    const qr = card.querySelector('svg.qr');
+    if (qr) { const q = qr.getBoundingClientRect(); items.push({ k: 'qr', url: qr.dataset.url, logo: qr.dataset.logo, x: X(q.left), y: Y(q.top), w: q.width * PT }); }
     return { name: (card.querySelector('.artist').textContent + '｜' + h1.textContent).slice(0, 60), w: c.width * PT, h: c.height * PT, items };
   });
 });
 await browser.close();
+
+// QR：在 Node 端用同一套 qrcode-generator 算出格子，每列連續的黑格合成一個長方形（runs），JSX 端畫成一個複合路徑
+const { default: qrcode } = await import('./vendor/qrcode-generator.mjs');
+const { LOGOS } = await import('./lib/stream-logos.mjs');
+for (const c of cards) for (const it of c.items) if (it.k === 'qr') {
+  const q = qrcode(0, 'H'); q.addData(it.url); q.make();   // 與 build-shop-print.mjs 相同：H 級容錯，中央放 logo
+  const n = q.getModuleCount(), runs = [];
+  for (let r = 0; r < n; r++) for (let col = 0; col < n;) {
+    if (!q.isDark(r, col)) { col++; continue; }
+    let e = col; while (e < n && q.isDark(r, e)) e++;
+    runs.push([r, col, e - col]); col = e;
+  }
+  it.n = n + 4; it.runs = runs;   // 含兩格靜區，與 HTML 的 viewBox 相同
+  // logo 底塊（同 build-shop-print.mjs 的 logoBox）：奇數格、置中；logo 圖元在 0–100 方框內
+  let b = Math.round(n * 0.3); if (b % 2 === 0) b++;
+  it.box = { o: 2 + (n - b) / 2, b, pad: 0.7 }; it.prims = LOGOS[it.logo] || [];
+}
 
 // 數值收斂到 0.01pt，非 ASCII 全轉 \uXXXX（ExtendScript 讀檔編碼不一定是 UTF-8）
 const r2 = v => typeof v === 'number' ? Math.round(v * 100) / 100 : v;
@@ -148,6 +170,7 @@ function color(css) {
   c.cyan = Math.round((1 - r - k) / (1 - k) * 100); c.magenta = Math.round((1 - g - k) / (1 - k) * 100);
   c.yellow = Math.round((1 - b - k) / (1 - k) * 100); c.black = Math.round(k * 100); return c;
 }
+function hex(h) { return 'rgb(' + parseInt(h.substr(1, 2), 16) + ', ' + parseInt(h.substr(3, 2), 16) + ', ' + parseInt(h.substr(5, 2), 16) + ')'; }
 function style(tf, it) {
   var a = tf.textRange.characterAttributes, f = getFont(it.font);
   if (f) a.textFont = f;
@@ -172,15 +195,42 @@ for (var n = 0; n < N; n++) {
     if (slot === 0) ab.name = 'A4 ' + (Math.floor(n / PER) + 1);
   } else ab.name = cd.name;
   var grp = doc.groupItems.add(); grp.name = cd.name;
-  if (SHEET) {   // 裁切線：卡片外框，淺灰虛線
-    var cut = grp.pathItems.rectangle(T, L, cd.w, cd.h);
-    cut.filled = false; cut.stroked = true; cut.strokeWidth = 0.28; cut.strokeDashes = [2, 2]; cut.strokeColor = color('rgb(201, 195, 184)'); cut.name = 'cut';
+  if (SHEET && n % PER === 0) {   // 裁切線：只畫卡與卡之間（直線 cols-1 條、橫線 rows-1 條），紙張外緣不畫
+    var R0 = ab.artboardRect, cuts = [];
+    for (var cc = 1; cc < SHEET.cols; cc++) cuts.push([[R0[0] + cc * cd.w, R0[1]], [R0[0] + cc * cd.w, R0[3]]]);
+    for (var rr = 1; rr < SHEET.rows; rr++) cuts.push([[R0[0], R0[1] - rr * cd.h], [R0[2], R0[1] - rr * cd.h]]);
+    for (var cu = 0; cu < cuts.length; cu++) {
+      var cut = doc.pathItems.add(); cut.setEntirePath(cuts[cu]); cut.filled = false; cut.stroked = true;
+      cut.strokeWidth = 0.28; cut.strokeDashes = [2, 2]; cut.strokeColor = color('rgb(201, 195, 184)'); cut.name = 'cut';
+    }
   }
   for (var j = 0; j < cd.items.length; j++) {
     var it = cd.items[j], o;
     if (it.k === 'line') {
       o = grp.pathItems.add(); o.setEntirePath([[L + it.x1, T - it.y], [L + it.x2, T - it.y]]);
       o.filled = false; o.stroked = true; o.strokeWidth = it.sw; o.strokeColor = color(it.color);
+      if (it.dash) { o.strokeDashes = [1.5, 1.5]; o.name = 'fold'; }
+    } else if (it.k === 'qr') {   // 每格邊長＝寬度 ÷（格數＋靜區）；黑格以列為單位合成長方形，放進同一個複合路徑
+      var cell = it.w / it.n, cp = grp.compoundPathItems.add(); cp.name = 'QR';
+      for (var u = 0; u < it.runs.length; u++) {
+        var ru = it.runs[u], rp = cp.pathItems.rectangle(T - it.y - (ru[0] + 2) * cell, L + it.x + (ru[1] + 2) * cell, ru[2] * cell, cell);
+        rp.filled = true; rp.stroked = false; rp.fillColor = color('rgb(0, 0, 0)');
+      }
+      // 中央 logo：先鋪紙色底塊蓋住格子，再畫平台 logo（座標 0–100 → 底塊內縮 pad 格）
+      var bx = L + it.x + it.box.o * cell, by = T - it.y - it.box.o * cell, bs = it.box.b * cell;
+      var bg = grp.pathItems.rectangle(by, bx, bs, bs); bg.filled = true; bg.stroked = false; bg.fillColor = color('rgb(255, 255, 255)');
+      var lx = bx + it.box.pad * cell, ly = by - it.box.pad * cell, ls = (bs - 2 * it.box.pad * cell) / 100;
+      for (var g = 0; g < it.prims.length; g++) {
+        var pr = it.prims[g], po;
+        if (pr.t === 'circle') { po = grp.pathItems.ellipse(ly - (pr.cy - pr.r) * ls, lx + (pr.cx - pr.r) * ls, 2 * pr.r * ls, 2 * pr.r * ls); }
+        else if (pr.t === 'rrect') { po = grp.pathItems.roundedRectangle(ly - pr.y * ls, lx + pr.x * ls, pr.w * ls, pr.h * ls, pr.r * ls, pr.r * ls); }
+        else {
+          var pp = []; for (var h = 0; h < pr.pts.length; h++) pp.push([lx + pr.pts[h][0] * ls, ly - pr.pts[h][1] * ls]);
+          po = grp.pathItems.add(); po.setEntirePath(pp);
+        }
+        if (pr.t === 'line') { po.filled = false; po.stroked = true; po.strokeWidth = pr.w * ls; po.strokeCap = StrokeCap.ROUNDENDCAP; po.strokeJoin = StrokeJoin.ROUNDENDJOIN; po.strokeColor = color(hex(pr.stroke)); }
+        else { if (pr.t === 'poly') po.closed = true; po.filled = true; po.stroked = false; po.fillColor = color(hex(pr.fill)); }
+      }
     } else if (it.k === 'rect') {
       o = grp.pathItems.roundedRectangle(T - it.y, L + it.x, it.w, it.h, it.r, it.r);
       o.filled = !!it.fill; if (it.fill) o.fillColor = color(it.fill);
