@@ -2111,3 +2111,8 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 補查 31 位：add 14、none 17；改寫 14 位，補回 Chaka Khan 戒毒與止痛藥戒治、Satyricon 與挪威教堂縱火及 Euronymous 命案的場景史、Seu Jorge 哥哥遇害與露宿、Shania Twain 父母車禍身亡、萊姆病致發聲障礙與離婚、Snooks Eaglin 幼年失明、Sonny Stitt 毒品案與戒治、Stromae 父親在盧安達大屠殺中遇害與抗瘧藥副作用、Summer Walker 社交焦慮、Mess 遭蘇聯審查、Chuck Billy 罹癌、Jimmie Vaughan 離團與 Stevie Ray 過世、The Game 遭槍擊與被逐出 G-Unit、Darnielle 遭繼父施暴的童年、Cornwell 因毒品入獄與 Greenfield 死於新冠。
 - 主線審稿 0 處。
+
+### 題材補回：ar-u-013（2026-10-17）
+
+- 補查 27 位：add 13、none 14；改寫 13 位，補回 Townsend 自行住院確診雙相情緒障礙與戒菸酒、Rowland 古柯鹼成癮與破產及《My Beauty》、Drudkh 獻給班德拉與 NSBM 指控、Dua Lipa 2020 年地圖風波與 2024 年呼籲加薩停火、Father John Misty 的蘑菇之旅、Shawn Jay 2026 年公開癌症第四期（補查開頁兩源）、Foje 在獨立運動中為媒體大樓辦通宵演唱會、Frank Lowe 肺癌、Gabor Szabo 1956 年出逃、海洛因成癮與控告山達基、George Michael 控告索尼、伴侶 Feleppa 之死與 1998 年被捕出櫃、Scott-Heron 反種族隔離與反核及成癮入獄、H.E.R.〈I Can't Breathe〉、HAIM 新專輯寫伴侶罹癌、糖尿病與業界性別歧視。
+- 主線審稿 8 處：連續年份句（Devin、Dua Lipa、George Michael）、年份超量（George Michael、Gil Scott-Heron）、卡池專輯名超量（George Michael）、Gabor「後來和解」只有單源刪去、字數。
