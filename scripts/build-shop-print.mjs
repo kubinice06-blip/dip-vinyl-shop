@@ -12,7 +12,7 @@ const SHEET = (arg('--sheet') || '').toLowerCase();   // a4：A7 卡 8 張拼一
 // --fold（限 A7）：卡片上緣留一段反折片，折成ㄇ字掛在唱片封套上緣——上到下依序是背面反折片 17mm（空白）、
 // 跨封套厚度的頂邊 4mm（兩條折線之間）、正面 84mm（原本的內容，字級整體縮小）
 const FOLD = process.argv.includes('--fold');
-const OUT = path.resolve(R, arg('--out') || `data/shop/print/shop-${(arg('--size') || 'a6').toLowerCase()}${FOLD ? '-fold' : ''}${SHEET ? '-' + SHEET : ''}.html`);
+const OUT = path.resolve(R, arg('--out') || `data/shop/print/shop-${(arg('--size') || 'a6').toLowerCase()}${FOLD ? '-fold' : ''}${SHEET ? '-' + SHEET : ''}${(arg('--prefer') || '').toLowerCase() === 'apple' ? '-apple' : ''}.html`);
 const pick = arg('--ids') ? new Set(arg('--ids').split(',')) : null;
 const SIZE = (arg('--size') || 'a6').toLowerCase();   // a6 105×148mm（預設）｜a7 74×105mm
 
@@ -42,7 +42,12 @@ rows.sort((a, b) => rk(a) - rk(b) || a.d.artist.localeCompare(b.d.artist));
 import qrcode from './vendor/qrcode-generator.mjs';
 import { LOGOS, logoOf, toSvg } from './lib/stream-logos.mjs';
 const LINKS = (() => { try { return JSON.parse(fs.readFileSync(path.join(R, 'data/shop/stream-links.json'), 'utf8')).items || {}; } catch { return {}; } })();
-const STREAMS = ['spotify', 'apple', 'yt', 'bandcamp'];
+// --prefer apple：Apple Music 專用版（iPhone 客人用），Apple 優先，查不到才退回其他平台
+const PREFER = (arg('--prefer') || '').toLowerCase();
+const STREAMS = PREFER === 'apple' ? ['apple', 'spotify', 'yt', 'bandcamp'] : ['spotify', 'apple', 'yt', 'bandcamp'];
+// Apple 網址的名稱段常是長串轉碼日文，QR 會密到手機掃不出來（店主 2026-10-17 實測）。名稱段只是裝飾、App 認的是最後的專輯 id，
+// 所以印刷用一律縮成 /<國家>/album/a/<id>（網頁版會 301 到正式網址），長度跟 Spotify 差不多
+const qrUrl = (k, u) => k === 'apple' ? u.replace(/^(https:\/\/music\.apple\.com\/[a-z]{2}\/album\/)[^/]+\/(\d+).*$/, '$1a/$2') : u;
 const QR_M = 2;   // 2 格靜區
 // logo 底塊：邊長約 QR 的 30%，取奇數格讓它正好置中在格線上
 const logoBox = n => { let b = Math.round(n * 0.3); if (b % 2 === 0) b++; return { b, o: QR_M + (n - b) / 2 }; };
@@ -55,7 +60,7 @@ const qrSvg = (url, logo) => {
   return `<svg class="qr" data-url="${esc(url)}" data-logo="${logo}" viewBox="0 0 ${n + 2 * m} ${n + 2 * m}"><path d="${d}" fill="#1c1b19" shape-rendering="crispEdges"/>`
     + `<rect x="${o}" y="${o}" width="${b}" height="${b}" fill="#ffffff"/><g transform="translate(${o + pad} ${o + pad}) scale(${sc})">${toSvg(LOGOS[logo])}</g></svg>`;
 };
-const streamOf = id => { const l = LINKS[id]; if (!l) return null; for (const k of STREAMS) if (l[k]) return { url: l[k], logo: logoOf(k, l[k]) }; return null; };
+const streamOf = id => { const l = LINKS[id]; if (!l) return null; for (const k of STREAMS) if (l[k]) return { url: qrUrl(k, l[k]), logo: logoOf(k, l[k]) }; return null; };
 
 const stars = (n, total) => { n = Math.max(0, Math.min(total, Math.round(Number(n) || 0))); return '<b>' + '★'.repeat(n) + '</b>' + '☆'.repeat(total - n); };
 const card = ({ i, d }) => {
