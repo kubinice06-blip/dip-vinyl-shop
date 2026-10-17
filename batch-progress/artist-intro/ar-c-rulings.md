@@ -1941,6 +1941,6 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 ## ar-u-009（2026-10-17，thin 升級）
 
 - 40 位中 35 位升 full 上線；5 位補洞後仍 thin、保留原上線版：Lloyd、Musica Antiqua Köln、Nice & Smooth、Outer Limits、Pageant。
-- Lloyd 的維基預抓抓成 Lloyd Banks，補洞層依 poolAlbums 改認 R&B 歌手 Lloyd；Mother Earth 鍵為倫敦 acid jazz 樂團（與 ar-u-0xx 同名卡標錯已記本機待修）。
+- Lloyd 的維基預抓抓成 Lloyd Banks，補洞層依 poolAlbums 改認 R&B 歌手 Lloyd；Mother Earth 鍵為倫敦 acid jazz 樂團（卡池《Living with the Animals》屬 Tracy Nelson 的 Mother Earth，卡標錯已記本機待修）。
 - 審稿修 12 處：Mystikal、NOFX、Obituary（兩處）、Pusha T、Ricardo Villalobos、Léo Ferré、Melt-Banana、Minutemen「最…之一」改「極／早期／經典」；Professor Harold Boggs 刪失明（身體狀況）；Keyshia Cole 刪寄養與收養（私事）；Lil Baby 刪街頭販毒（刑案）。
   - 保留：Mystikal 不寫刑案；Pusha T 不寫 2025–26 Clipse 重組與葛萊美（舊 thin 版的 2026 葛萊美隨升級版移除）；PNL、Paul van Dyk、Villalobos 政治背景各一句；Little Mix BRIT 獎（團體核心）；Leo Kottke 不寫肌腱炎；Moor Mother 不寫伴侶；Minutemen 只寫 Boon 1985 年過世。
