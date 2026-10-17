@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1560 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1561 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1564,3 +1564,4 @@
 | ar-u-028 | Kurupt | Tha Streetz Iz a Mutha | 同年 10 月他一行人在 Echo Sounds 錄音室外遭槍擊，保鑣 Dwayne Dupree 當場身亡；Kurupt 自述錄這張時「又回到幫派狀態，非常低落、憤怒」 | 非事實錯誤，是與本批規則不符：案情細節與暴力事件依本批特注避免；另「四十四萬張」為在世者銷量，也屬避免項。由主線決定是否改寫。 |  |
 | ar-u-028 | La Venexiana | Monteverdi: Selva morale e spirituale | 錄音是 2005 年 3 月西班牙 Cuenca 一場宗教音樂節的教堂現場 | Early Music Review 只寫錄音來自 2005 年 Cuenca 音樂節，未提月份；「3 月」查無來源，建議刪月份或補來源。 | https://earlymusicreview.com/monteverdi-salve-morale-e-spirituale/ |
 | ar-u-028 | Lack of Afro | Press On | 他在這間廠牌的作品目錄就從這張算起 | 維基與事實庫都寫 Freestyle 先發行的是出道單曲〈Wait A Minute〉，《Press On》是他在這間廠牌的第一張專輯，不是第一件作品。 | https://en.wikipedia.org/wiki/Lack_of_Afro |
+| ar-u-028 | Liz Story | Solid Colors | 樂評提到的重點是她讓每首曲子保持結構完整的能力 | 『scrupulous sense of compositional unity』是 Stephen Holden 評她 1986 年 The Bottom Line 現場演出的話（維基 Liz Story 條目），不是對《Solid Colors》專輯的評語；建議改為『樂評人 Holden 在 1986 年的現場評論中稱讚…』或刪除。 | https://en.wikipedia.org/wiki/Liz_Story |

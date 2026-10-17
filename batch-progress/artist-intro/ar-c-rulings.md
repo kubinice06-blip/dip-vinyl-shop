@@ -2100,6 +2100,19 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 搜尋超上限放行：Kaiser Chiefs、Kalaparusha Maurice McIntyre 各 9 次（多的一次是補 sound／查評論段落）。題材：Kayhan Kalhor 父母與兄弟死於兩伊戰爭飛彈（主線開頁核實：NPR 2021 年人物報導、英文維基）；Jimmy Arnold 酗酒、藥物、入獄與心臟衰竭過世；Juke Boy Bonner 的貧困與歌中的黑人處境——照寫。
 - 主線審稿 8 處：Jesu「被公認」改「被視為」；Jimmy Arnold、Katedra、Kazi & Madlib、Burrell & Coltrane 的「最…之一」改「極」；Kaiser Chiefs 刪「一晚三個獎」（獎項數）改寫一項；Kangaroo 平假名「柵木ひとみ」改「柵木 Hitomi」並壓回 250 字。
 
+## ar-u-028（2026-10-17，thin 升級；補洞與寫作照更正後規則）
+
+- 40 位中 24 位升 full 上線；16 位補洞後仍 thin、保留原上線版：Kiasmos、Kid Loco、King General Bucks Up Pon De Bush Chemists、King James Version、Kollektiv、Konstruktivists、L.A. Transit、La Venexiana、Lapalux、Lazy Smoke、Le Trio Camara、Leila Forouhar、Lemon Kittens、Limbus 4、Linda Hill、Little Sonny。
+- 搜尋超上限放行：Limbus 4 9 次（仍 thin、不上線）。題材：金正美與導師申重鉉受朴正熙政權審查與禁歌；King Von 2020 年槍擊身亡；Kiosk 諷刺伊朗政治、遭禁演與地下流通；Kevin Morby 的抗議歌；Kitchens of Distinction 寫同志暴力遭唱片公司卻步；Lloyd Banks 中槍；Liz Story 2019 年雙側硬腦膜下血腫開刀與重新學琴——照寫。King Von 的刑案補洞稿未收，不寫；Mavis Staples 2025 年翻唱、Tyler, the Creator 2025 年發言不寫。卡池年份疑誤：Kim Jung Mi《Now》卡池 1968，來源一律 1973（記本機修）。
+- 主線審稿 11 處：Kenny Wayne Shepherd 刪主流搖滾榜冠軍、Louisiana 改「路易斯安那州」；Kevin Morby「Texas」改「德州」；Kremerata Baltica、Kurupt、Larry June & The Alchemist「最…之一」改保守；Lew Tabackin 刪 Swing Journal 金唱片獎（媒體獎、次數）；Lipps Inc. 刪 Hot 100 冠軍；Liz Story 壓回 250 字；Lloyd Banks 刪 Billboard 200 冠軍與 2025 年 Tyler 發言；Local H 刪 Spin 年度榜（媒體名單）。
+
+## 第十二輪收尾（2026-10-17）
+
+- 30 批：ar-d-141、142（新藝人 55 位上線）＋ thin 升級 ar-u-001～028（1,120 位中 766 位升 full，354 位補洞後仍 thin、保留原上線版）。審稿合計 296 處。
+- 中途更正：撤銷主線自加的題材禁令（店主「越政治越好」），ar-d-141、142、ar-u-001～021 逐批題材補查補回約 309 位；ar-u-022 起補洞與寫作直接照「題材沒有禁區」。
+- 2026 年事實主線開頁核實：I'm With Her 2026 年葛萊美最佳民謠專輯；Shajarian 死因（長年腎癌）；Kalhor 家人死於兩伊戰爭。
+- 留給本機的卡池疑點：Tamia 1978→1998、Maceo Funky Music Machine 1975 vs 1972、Mahmoud Ahmed《Éthiopiques》1999 vs 1973、賴德和《樂典03》1987 vs 2009–12、Kim Jung Mi 1968 vs 1973；In Spe 得獎年 1997 未核；Wings（馬來西亞）與 Mother Earth 卡片身分誤標；其餘見 `audits/ARTIST-PUB-ISSUES.md`。
+
 ### 題材補回：ar-u-003（2026-10-17）
 
 - 補查 37 位：add 23、none 14；改寫 23 位，補回 Lynott 海洛因成癮與死因、Furtwängler 納粹時期與去納粹化審理、大象體操 2023 跨年騷動、大貫妙子父親特攻隊經歷、日野皓正 2017 年體罰事件、Staley 與 Starr 藥物過量、Butler 2022 年遭指控與回應、Chassagne 父母逃離海地獨裁、Drive-By Truckers 的南方歷史與警察暴力題材、Cox 馬凡氏症與車禍、Portnoy 戒酒組曲、Ghostface 搶案與服刑、José González 父母逃離阿根廷軍政府、Musgraves 歌曲遭電台卻步與離婚、Mitski 暫停演出、MIKE 與 MONO 的喪親、Hadreas 成癮與克隆氏症、Rei Harakami 腦出血驟逝、Rick Ross 矯正官過往與 Reebok 事件、Wyatt 墜樓癱瘓與共產黨員、Siouxsie 的 Grundy 節目風波、St. Vincent 父親入獄。
