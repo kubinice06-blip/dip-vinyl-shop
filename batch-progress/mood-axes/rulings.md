@@ -106,3 +106,11 @@
 - **全池結果**：錨點 104＋模型評分 19,012。八格 放鬆 5,102、平靜 1,309、慵懶 589、頹靡 970、雀躍 5,867、冷冽 873、沸騰 1,900、亢奮 2,506（3.1%–30.7%）。錨點 104/104 同格。全池 conf：high 3,079、mid 9,967、low 5,966（31%）。
 - **卡池資料問題**：代理沿路回報的寫在 `score-rest/DATA-ISSUES.md`，未處理。最重要的是六類系統性問題（古典子曲風時期、古典年份填作曲年、舊卡 hiphop 誤對、主流流行歸 folk／soul、子曲風地區濫標、同名串線），要改規則或整批掃，不是逐卡改。
 - **星圖預覽**（Version 13）：全池 19,116 張、預設亮 600。KV 只有 3,626 張新增卡有 `cover6`，改從 Firestore `card_catalog.coverUrl` 唯讀補到只剩 24 張無封面；Apple／CAA 封面改用小圖（100／250px）。建置時以 `seed_cards.json` 過濾，刪掉的重複卡不上圖。swiftshader 下桌機 7、手機 6 fps，0 錯誤。KV 一則簡介含亂碼 U+FFFD（Lazy Lester《All Over You》），預覽已去除、KV 原文未改。
+
+## 2026-10-17｜「慵懶」改名「恍惚」（店主）
+
+- **緣起**：店主看全池結果，指出慵懶、冷冽薄的主因是「評分怎麼判重」。主線驗證：Al Green 18 張、Marvin Gaye 13 張、Anita Baker 5 張、Bill Withers 8 張，一張都沒落慵懶，全在放鬆；真正落慵懶的是 Nujabes、J Dilla、D'Angelo、King Tubby、Slowdive、MBV、Beach House、事後菸。根因不是代理權重，是說明書的 Y 軸硬規則量「低頻、失真、殘響、壓縮」（製作髒度），Hi Records 式乾淨製作照規則就是 −0.4；且店主審過的錨點本來就把《Let's Get It On》放在放鬆（y 0.3）。門檻移動是零和（y≥0 時慵懶 575→1,199、冷冽 871→354），不採。
+- **店主裁定**：格名改「恍惚」，承認這格裝的是「暖色的霧」（dusty 取樣、dub、shoegaze、dream pop），不是靈魂樂的懶。id `languid` 不變、座標門檻不動、分布不變。候選另有迷離、微醺、昏沉、朦朧、悶燒。
+- **改動**：`build-anchors.mjs` 名稱表、`starmap-lab.html`、星圖原型、`score500/BRIEF.md`、`MOOD_ENERGY_PLAN.md`、`MOOD_SCALE_PLAN.md`、`EXPANSION-PLAN-mood-thin-cells.md`、`anchors-src.mjs` 註解；重跑 anchors／四批 merge／priors／scale。店主原話引用（MOOD_ENERGY_PLAN 第 3、4、383 行，補充計畫第 3 行）與舊紀錄保留。
+- **順帶修**：重跑合併時發現 `score3000/chunk-15.json` 與 `out/chunk-15.json` 的《In Orbit》id 仍是舊掛名，merge 會把 10-16 另一工作階段改好的 `scored-3000.json` 蓋回去、全池少一張模型評分（19,011）。工單與輸出檔一起改成 `clark terry with thelonious monk|in orbit`，重跑後 19,012／0 暫估。星圖預覽亂碼改成全檔去除 U+FFFD，不再寫死索引。
+- **未決（店主）**：Y 軸要不要改定義成「重量感」（律動拖、底部厚、編制密，刪「乾淨製作就是輕」）。改了要重審約 20 張錨點、重評靜暖與躁冷兩片約 9,000 張；以及 techno 該在冷冽還是亢奮。

@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-17｜dip-vinyl-shop｜情緒八格「慵懶」改名「恍惚」；修 In Orbit 評分 id
+
+- **改動**：店主裁定靜重暖格改叫「恍惚」（id `languid` 不變，座標門檻與分布不動）。起因是主線驗證出三格薄的根因：說明書 Y 軸量製作髒度，Al Green、Marvin Gaye、Anita Baker 等店主心中的慵懶盤全落放鬆，落慵懶的是 dusty 嘻哈、dub、shoegaze；改名讓格名對上內容。名稱表、實驗頁、星圖原型、BRIEF、兩份規劃書、補充計畫改名，店主原話引用保留；anchors／四批 merge／priors／scale 重跑。順帶把 `score3000` 的《In Orbit》工單與輸出檔 id 改成新掛名，否則重跑合併會蓋掉 10-16 的改名、全池少一張評分。星圖預覽 Version 14。Y 軸要不要改成「重量感」、techno 歸冷冽或亢奮，留店主決定（見 rulings）。
+- **主要檔案**：`batch-progress/mood-axes/{build-anchors.mjs,anchors-src.mjs,anchors-v1.json,priors-v0-report.json,scale-v0-report.json,rulings.md}`、`batch-progress/mood-axes/score*/merge-report.json`、`batch-progress/mood-axes/score3000/{chunk-15.json,out/chunk-15.json,cards.json,scored-3000.json}`、`batch-progress/mood-axes/score500/BRIEF.md`、`data/mood/{card-moods-v0.json,scale-v0.json}`、`starmap-lab.html`、`MOOD_ENERGY_PLAN.md`、`MOOD_SCALE_PLAN.md`、`batch-progress/EXPANSION-PLAN-mood-thin-cells.md`
+- **驗證**：八格計數與改名前逐格相同（恍惚 589）；錨點 104/104 同格；全池模型評分 19,012、暫估 0；星圖 swiftshader 桌機／手機 0 錯誤。
+
 ### 2026-10-16｜dip-vinyl-shop｜情緒三軸：評完剩下 9,120 張，全池 19,116 張都有模型評分
 
 - **改動**：店主「繼續幫剩下的專輯評分」。`score-rest/select.mjs` 把剩下全部按曲風與藝人排序切 92 份，最多 6 支代理接力打分；主線關鍵字審稿改 6 張（`score-rest/review.json`）。`build-priors.mjs` 讀四批評分，全池 104 錨點＋19,012 模型評分，子曲風暫估歸零。八格：放鬆 5,102、平靜 1,309、慵懶 589、頹靡 970、雀躍 5,867、冷冽 873、沸騰 1,900、亢奮 2,506。**這批低把握 43%**（全池 31%），集中在冷門日本爵士、東南亞／台日老唱片、私壓迷幻、福音小眾與 2025–26 新盤。代理回報的卡池問題（含六類系統性問題）寫在 `score-rest/DATA-ISSUES.md`，未處理。私人星圖預覽改全池（Version 13）。

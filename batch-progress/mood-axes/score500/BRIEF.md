@@ -65,7 +65,7 @@
 ## 八格（供你對照，不必輸出）
 
 能量 x ≥ 3.0 為「躁」否則「靜」；質地 y ≥ 0.5 為「重」否則「輕」；色溫 z ≥ 0 為「暖」否則「冷」。
-放鬆＝靜輕暖、平靜＝靜輕冷、慵懶＝靜重暖、頹靡＝靜重冷、雀躍＝躁輕暖、冷冽＝躁輕冷、沸騰＝躁重暖、亢奮＝躁重冷。
+放鬆＝靜輕暖、平靜＝靜輕冷、恍惚＝靜重暖、頹靡＝靜重冷、雀躍＝躁輕暖、冷冽＝躁輕冷、沸騰＝躁重暖、亢奮＝躁重冷。
 **格子是結果，不是目標**：照聲音打分，不要為了湊進某一格調數字。
 
 ## 校正表：104 張人工錨點（店主審過，這就是尺）
@@ -94,23 +94,23 @@
 | Burial《Untrue》 | 2.8 | +1.5 | -1.0 | 頹靡 |
 | Portishead《Dummy》 | 2.2 | +1.4 | -0.9 | 頹靡 |
 | Massive Attack《Mezzanine》 | 2.6 | +1.8 | -1.3 | 頹靡 |
-| Nujabes《Modal Soul》 | 2.3 | +1.0 | +1.6 | 慵懶 |
-| J Dilla《Donuts》 | 2.8 | +1.2 | +1.2 | 慵懶 |
-| Madvillain《Madvillainy》 | 2.9 | +1.3 | +0.6 | 慵懶 |
-| Nightmares on Wax《Smokers Delight》 | 2.5 | +1.0 | +1.4 | 慵懶 |
-| D'Angelo《Voodoo》 | 2.4 | +1.3 | +1.5 | 慵懶 |
-| Sade《Love Deluxe》 | 2.0 | +0.8 | +1.4 | 慵懶 |
-| King Tubby《King Tubby Meets the Upsetter at the Grass Roots of Dub》 | 2.3 | +1.8 | +0.4 | 慵懶 |
-| Slowdive《Souvlaki》 | 2.0 | +1.4 | +0.2 | 慵懶 |
-| My Bloody Valentine《Loveless》 | 2.7 | +2.0 | +0.3 | 慵懶 |
+| Nujabes《Modal Soul》 | 2.3 | +1.0 | +1.6 | 恍惚 |
+| J Dilla《Donuts》 | 2.8 | +1.2 | +1.2 | 恍惚 |
+| Madvillain《Madvillainy》 | 2.9 | +1.3 | +0.6 | 恍惚 |
+| Nightmares on Wax《Smokers Delight》 | 2.5 | +1.0 | +1.4 | 恍惚 |
+| D'Angelo《Voodoo》 | 2.4 | +1.3 | +1.5 | 恍惚 |
+| Sade《Love Deluxe》 | 2.0 | +0.8 | +1.4 | 恍惚 |
+| King Tubby《King Tubby Meets the Upsetter at the Grass Roots of Dub》 | 2.3 | +1.8 | +0.4 | 恍惚 |
+| Slowdive《Souvlaki》 | 2.0 | +1.4 | +0.2 | 恍惚 |
+| My Bloody Valentine《Loveless》 | 2.7 | +2.0 | +0.3 | 恍惚 |
 | Mazzy Star《So Tonight That I Might See》 | 1.7 | +1.0 | -0.2 | 頹靡 |
 | Codeine《Frigid Stars LP》 | 1.4 | +1.5 | -1.5 | 頹靡 |
 | Nico《The Marble Index》 | 1.2 | +1.7 | -2.0 | 頹靡 |
 | Sunn O)))《Black One》 | 1.2 | +2.0 | -2.0 | 頹靡 |
 | The Cure《Disintegration》 | 2.4 | +1.5 | -1.2 | 頹靡 |
-| Boards of Canada《Music Has the Right to Children》 | 2.3 | +1.0 | 0.0 | 慵懶 |
+| Boards of Canada《Music Has the Right to Children》 | 2.3 | +1.0 | 0.0 | 恍惚 |
 | deca joins《Go Slow》 | 2.0 | +0.9 | -0.3 | 頹靡 |
-| Fishmans《Long Season》 | 2.3 | +1.0 | +0.8 | 慵懶 |
+| Fishmans《Long Season》 | 2.3 | +1.0 | +0.8 | 恍惚 |
 | The Beatles《Abbey Road》 | 3.1 | 0.0 | +1.0 | 雀躍 |
 | Stevie Wonder《Songs in the Key of Life》 | 3.3 | +0.2 | +1.8 | 雀躍 |
 | Marvin Gaye《Let's Get It On》 | 2.8 | +0.3 | +1.8 | 放鬆 |
@@ -172,7 +172,7 @@
 | Melt-Banana《Scratch or Stitch》 | 5.0 | +1.8 | 0.0 | 沸騰 |
 | BOREDOMS《Vision Creation Newsun》 | 4.8 | +1.6 | +0.8 | 沸騰 |
 | 閃靈 CHTHONIC《賽德克巴萊》 | 4.8 | +2.0 | -1.4 | 亢奮 |
-| 溫蒂漫步 Wendy Wander《Spring Spring》 | 2.4 | +1.0 | +1.0 | 慵懶 |
+| 溫蒂漫步 Wendy Wander《Spring Spring》 | 2.4 | +1.0 | +1.0 | 恍惚 |
 | 溫蒂漫步 Wendy Wander《Midnight Blue》 | 3.2 | +0.4 | +0.6 | 雀躍 |
-| Cigarettes After Sex《Cry》 | 1.6 | +1.2 | +0.2 | 慵懶 |
-| Cigarettes After Sex《X's》 | 2.0 | +1.2 | 0.0 | 慵懶 |
+| Cigarettes After Sex《Cry》 | 1.6 | +1.2 | +0.2 | 恍惚 |
+| Cigarettes After Sex《X's》 | 2.0 | +1.2 | 0.0 | 恍惚 |

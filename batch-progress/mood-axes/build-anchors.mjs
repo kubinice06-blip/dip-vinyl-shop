@@ -6,7 +6,7 @@ const idx = new Map(seed.map(c => [c[0]+'|'+c[1], c]));
 //   能量 x≥3.0 躁、否則靜；質地 y≥0.5 重、否則輕；色溫 z≥0 暖、否則冷。
 const T = { x: 3.0, y: 0.5, z: 0 };
 const CELL = { '靜輕暖':'calm','靜輕冷':'still','靜重暖':'languid','靜重冷':'decay','躁輕暖':'lift','躁輕冷':'crisp','躁重暖':'boil','躁重冷':'charge' };
-const NAME = { calm:'放鬆', still:'平靜', languid:'慵懶', decay:'頹靡', lift:'雀躍', crisp:'冷冽', boil:'沸騰', charge:'亢奮' };
+const NAME = { calm:'放鬆', still:'平靜', languid:'恍惚', decay:'頹靡', lift:'雀躍', crisp:'冷冽', boil:'沸騰', charge:'亢奮' };
 const regionOf = (x,y,z) => CELL[(x>=T.x?'躁':'靜')+(y>=T.y?'重':'輕')+(z>=T.z?'暖':'冷')];
 const out = [], miss = [], mism = [], dup = new Set();
 for (const [key,x,y,z,intent,why] of A) {
