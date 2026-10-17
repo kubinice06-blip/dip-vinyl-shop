@@ -2106,3 +2106,8 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 補查 33 位：add 10、none 23；改寫 10 位，補回 Tyrone Davis 中風與死因、Whitehouse 遭拒售拒演與警方突襲及 Sotos 案、William Tyler 談精神疾病的新作、Mravinsky 婉拒首演〈娘子谷〉、Seifert 癌症治療期間過世、พุ่มพวง 死於紅斑性狼瘡、조용필 1977 年大麻案禁演與 2005 年平壤演唱會、Johnathan Blake 回應警察暴力的新作、10cc 的 Stewart 車禍。**農村武裝青年先前被主線刪掉的楊儒門、樂生、蘇花高、反核、國光石化環評會議唱〈白海豚之歌〉全部寫回。**
 - 主線審稿 1 處：조용필 年份超量。
+
+### 題材補回：ar-u-010（2026-10-17）
+
+- 補查 31 位：add 14、none 17；改寫 14 位，補回 Chaka Khan 戒毒與止痛藥戒治、Satyricon 與挪威教堂縱火及 Euronymous 命案的場景史、Seu Jorge 哥哥遇害與露宿、Shania Twain 父母車禍身亡、萊姆病致發聲障礙與離婚、Snooks Eaglin 幼年失明、Sonny Stitt 毒品案與戒治、Stromae 父親在盧安達大屠殺中遇害與抗瘧藥副作用、Summer Walker 社交焦慮、Mess 遭蘇聯審查、Chuck Billy 罹癌、Jimmie Vaughan 離團與 Stevie Ray 過世、The Game 遭槍擊與被逐出 G-Unit、Darnielle 遭繼父施暴的童年、Cornwell 因毒品入獄與 Greenfield 死於新冠。
+- 主線審稿 0 處。
