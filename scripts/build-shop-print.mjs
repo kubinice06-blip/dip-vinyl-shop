@@ -30,7 +30,7 @@ const ORDER = ['Jazz', 'Soul', 'R&B', 'Hip-Hop', 'Reggae', 'Rock', 'Folk', 'City
 const ZH = { Jazz: '爵士', Soul: '靈魂', 'R&B': '節奏藍調', 'Hip-Hop': '嘻哈', Rock: '搖滾', Folk: '民謠', 'City Pop': '城市流行', Pop: '流行', Electronic: '電子', Soundtrack: '原聲帶', Classical: '古典', Reggae: '雷鬼' };
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
-const rows = inv.items
+let rows = inv.items
   .filter(i => i.status !== 'sold' && (!pick || pick.has(i.id)))
   .map(i => ({ i, d: byId.get(i.id) || byKey.get(i.cardKey) }))
   .filter(x => x.d);
@@ -42,7 +42,7 @@ rows.sort((a, b) => rk(a) - rk(b) || a.d.artist.localeCompare(b.d.artist));
 import qrcode from './vendor/qrcode-generator.mjs';
 import { LOGOS, logoOf, toSvg } from './lib/stream-logos.mjs';
 const LINKS = (() => { try { return JSON.parse(fs.readFileSync(path.join(R, 'data/shop/stream-links.json'), 'utf8')).items || {}; } catch { return {}; } })();
-// --prefer apple：Apple Music 專用版（iPhone 客人用），Apple 優先，查不到才退回其他平台
+// --prefer apple：Apple Music 專用版（iPhone 客人用），只收有 Apple Music 連結的唱片（店主 2026-10-17：「只出 apple music 的專輯就好」）
 const PREFER = (arg('--prefer') || '').toLowerCase();
 const STREAMS = PREFER === 'apple' ? ['apple', 'spotify', 'yt', 'bandcamp'] : ['spotify', 'apple', 'yt', 'bandcamp'];
 // Apple 網址的名稱段常是長串轉碼日文，QR 會密到手機掃不出來（店主 2026-10-17 實測）。名稱段只是裝飾、App 認的是最後的專輯 id，
@@ -60,6 +60,7 @@ const qrSvg = (url, logo) => {
   return `<svg class="qr" data-url="${esc(url)}" data-logo="${logo}" viewBox="0 0 ${n + 2 * m} ${n + 2 * m}"><path d="${d}" fill="#1c1b19" shape-rendering="crispEdges"/>`
     + `<rect x="${o}" y="${o}" width="${b}" height="${b}" fill="#ffffff"/><g transform="translate(${o + pad} ${o + pad}) scale(${sc})">${toSvg(LOGOS[logo])}</g></svg>`;
 };
+if (PREFER === 'apple') rows = rows.filter(x => LINKS[x.i.id]?.apple);
 const streamOf = id => { const l = LINKS[id]; if (!l) return null; for (const k of STREAMS) if (l[k]) return { url: qrUrl(k, l[k]), logo: logoOf(k, l[k]) }; return null; };
 
 const stars = (n, total) => { n = Math.max(0, Math.min(total, Math.round(Number(n) || 0))); return '<b>' + '★'.repeat(n) + '</b>' + '☆'.repeat(total - n); };
