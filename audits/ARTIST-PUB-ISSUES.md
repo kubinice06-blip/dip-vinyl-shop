@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1531 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1538 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1535,3 +1535,10 @@
 | ar-u-025 | Gamelan Semar Pegulingan | Gamelan of the Love God | Semar pegulingan 約自十七世紀傳下 | 年代各家不一：維基寫約十七世紀；Smithsonian 的 Yamin 專文說起源不明、部分峇里學者推十六世紀。建議改成「相傳已有數百年歷史」之類較保守的寫法。 | https://asia-archive.si.edu/essays/article-yamin |
 | ar-u-025 | Gamelan Semar Pegulingan | Gamelan of the Love God | 加美蘭,gamelan semar pegulingan。 | 簡介最後一句像是殘句或重複詞，與前文語氣不連貫，建議本機檢視是否為生成殘留並刪除。 | https://www.nonesuch.com/albums/bali-gamelan-semar-pegulingan-gamelan-love-god |
 | ar-u-025 | Gamelan Semar Pegulingan | Gamelan of the Love God | 1972 年 6 月收進 Nonesuch Explorer 系列（H-72046） | Nonesuch 官網只寫 1972 年首度發行、2003 年重發，沒有寫 6 月或編號；維基 Robert E. Brown 條目也沒有年份；「6 月」與「H-72046」未找到可開頁來源，建議本機核對 Discogs。 | https://www.nonesuch.com/albums/bali-gamelan-semar-pegulingan-gamelan-love-god |
+| ar-u-025 | GQ | Disco Nights | 全張獲 RIAA 白金認證 | 維基寫專輯美國 R&B 榜最高第 2、Pop 榜第 13，單曲〈Disco Nights (Rock-Freak)〉在美國賣破百萬張，但未列任何 RIAA 認證；The Second Disc 與 PopMatters 的專輯介紹也都沒有認證記載。建議主線核對 RIAA 資料庫，查不到就改寫成『單曲在美國賣破百萬張』或刪去。 | https://en.wikipedia.org/wiki/GQ_(band) |
+| ar-u-025 | Grow-Up | The Best Thing | 吉他手 John Bisset-Smith | LTM 傳記頁寫 Bisset-Smith 在 Grow Up 改彈貝斯，吉他手是 Roger Blackburn；Bisset-Smith 是在前一個團 Spherical Objects 彈吉他。建議簡介改成『成員 John Bisset-Smith』或『貝斯手與作曲 John Bisset-Smith』。 | https://www.ltmrecordings.com/grow_up.html |
+| ar-u-026 | Hocus Pocus | 73 touches | 南特的爵士 hip-hop 團 Hocus Pocus，此時只剩 MC 兼製作 20Syl 與 DJ Greem | Universal Music France 官方頁與 Le Peuple du Rock 都寫 2001 年起已擴編成現場樂團（鍵盤、貝斯、吉他），法文維基也列 2000 至 2004 年起的現場樂手；若『只剩兩人』指的是 MC 與 DJ 的核心，寫法可以，若指整個團則不準，建議改成『核心是 20Syl 與 DJ Greem，另有現場樂手』。 | https://www.universalmusic.fr/artistes/30079849936 |
+| ar-u-026 | Homayun Sakhi | The Art of the Afghan Rubâb | 2002 年移居美國加州佛利蒙 | 維基寫 2002 年，Aga Khan 博物館的藝人介紹寫 2001 年定居佛利蒙，兩源不一致；建議簡介改寫成「移居美國後定居佛利蒙」，或另查第三源再定年份。 | https://agakhanmuseum.org/bio/homayoun-sakhi-2/ |
+| ar-u-026 | Il Paese dei Balocchi | Il Paese dei Balocchi | 吉他手回憶這張唱片壓了 1800 張，用來試市場 | italianprog.com 原文是『Sandro Laudadio si ricorda che il nostro primo LP è stato stampato in 1800 copie per saggiare il mercato』，說這句話的是鼓手 Laudadio，不是吉他手 Fabiani；『吉他手回憶』應改為『鼓手回憶』。 | https://www.italianprog.com/it/a_paesedeibalocchi.htm |
+| ar-u-026 | Il Paese dei Balocchi | Il Paese dei Balocchi | 有幾段人聲，是借羅馬一座教堂的自然殘響錄下來的 | italianprog.com 證實部分合唱在羅馬 S. Euclide 教堂內利用殘響錄製（含〈Vanità dell'intuizione fantastica〉的人聲），與上線簡介一致；另補充教堂下方 Ortophonic 錄音室的管風琴用在末曲。簡介無誤，僅供補充。 | https://www.italianprog.com/it/a_paesedeibalocchi.htm |
+| ar-u-026 | Imam Baildi | Imam Baildi | 另外自己寫了 3 首器樂曲 | 官網寫這 3 首原創器樂曲是以老希臘器樂錄音的取樣為底做出來的，並非全然從零自寫；建議改成『另有 3 首以老器樂錄音取樣做成的原創器樂曲』。 | https://www.imambaildi.com/?p=374 |

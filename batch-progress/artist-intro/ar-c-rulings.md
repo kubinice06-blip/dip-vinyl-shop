@@ -2082,6 +2082,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 題材：Eric Benét 與 Halle Berry 的婚姻、離婚與承認不忠；Everclear 的 Alexakis 兄長海洛因過量、女友輕生與本人毒癮；Filter〈Hey Man Nice Shot〉與 Dwyer 直播輕生的關係、Patrick 成癮與勒戒；Afanassiev 叛逃尋求政治庇護——都照寫。
 - 主線審稿 4 處：Eloy「德國搖滾圈影響最大之一」只有德文維基單源，改「在德國擁有龐大樂迷」；Everclear「最有名」改「代表性」；Filter 刪白金認證（在世者不寫銷量）；板橋文夫條「渡辺貞夫」改台灣字形「渡邊貞夫」。
 
+## ar-u-025（2026-10-17，thin 升級；補洞與寫作照更正後規則）
+
+- 40 位中 27 位升 full 上線；13 位補洞後仍 thin、保留原上線版：G-Schmitt、Gentle Faith、Gerard、Ghazal、Ginhouse、Gold Panda、Gone、Grow-Up、Gui Boratto、H-Town、Haley Heynderickx、Hang Raiji、Harvest Flight。
+- 搜尋超上限放行：Gold Panda 11 次（替 Guardian First Album Award 找第二源未果，仍 thin、不上線）。GQ「RIAA 白金」查無來源、Guadalcanal Diary 的 Paste 名次（媒體榜單）不寫。日文人名照台灣字形：渡邊文男／渡邊貞夫、太田寬二、佐佐木秀人、關根敏行。Hans Rosbaud 納粹時期低調與兄長替盟軍蒐集情報照寫。
+- 主線審稿 9 處：渡邊、太田寬二字形（2 處）；Gabin 片名改台灣譯名《驚奇4超人》；GQ 刪 R&B 榜冠軍；陳毓襄刪少年 MTNA 第一（在世者留一處核心成績：Pogorelich 大賽首獎）；Heize 刪音源榜第一；Henry's Dress、Hideto Sasaki 那張「最…之一」改「極」；High Five Quintet「橫掃銷售榜」改「大獲成功」。
+
 ### 題材補回：ar-u-003（2026-10-17）
 
 - 補查 37 位：add 23、none 14；改寫 23 位，補回 Lynott 海洛因成癮與死因、Furtwängler 納粹時期與去納粹化審理、大象體操 2023 跨年騷動、大貫妙子父親特攻隊經歷、日野皓正 2017 年體罰事件、Staley 與 Starr 藥物過量、Butler 2022 年遭指控與回應、Chassagne 父母逃離海地獨裁、Drive-By Truckers 的南方歷史與警察暴力題材、Cox 馬凡氏症與車禍、Portnoy 戒酒組曲、Ghostface 搶案與服刑、José González 父母逃離阿根廷軍政府、Musgraves 歌曲遭電台卻步與離婚、Mitski 暫停演出、MIKE 與 MONO 的喪親、Hadreas 成癮與克隆氏症、Rei Harakami 腦出血驟逝、Rick Ross 矯正官過往與 Reebok 事件、Wyatt 墜樓癱瘓與共產黨員、Siouxsie 的 Grundy 節目風波、St. Vincent 父親入獄。
