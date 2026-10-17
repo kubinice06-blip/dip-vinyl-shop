@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1489 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1494 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1491,5 +1491,10 @@
 | ar-u-017 | 圖騰樂團 | 我在那邊唱 | 二○○五年拿下貢寮國際海洋音樂祭大賞、二○○六年四月由彎的音樂發行首張 | 年份寫成中文數字（二○○五）；規則是年月日用阿拉伯數字。事實本身與維基、ltn 相符。 | https://zh.wikipedia.org/zh-tw/%E5%9C%96%E9%A8%B0%E6%A8%82%E5%9C%98 |
 | ar-u-017 | 圖騰樂團 | 放羊的孩子 | 彎的音樂二○○九年九月發行、樂團二○○二年成軍 | 同樣是年份寫成中文數字（二○○九、二○○二）；二○○二年成軍與維基相符。 | https://zh.wikipedia.org/zh-tw/%E5%9C%96%E9%A8%B0%E6%A8%82%E5%9C%98 |
 | ar-u-017 | 小河 | 飛的高的鳥不落在跑不快的牛的背上 | 屬民謠大類，中國大陸慣稱「實驗民謠」（experimental folk） | 違反用語房規（2026-09-29 店主裁定）：稱呼中國一律寫「中國」，不寫「中國大陸」；此句另屬自行補充的類別說明，本層所讀來源（界面新聞、澎湃、Bandcamp Daily）沒有一處稱「實驗民謠」是中國慣稱，建議整句改寫或刪除。 | https://www.jiemian.com/article/8926943.html |
+| ar-u-017 | 李英宏 | 水哥 2020 | 2020 年這一筆掛顏社，條碼 4712862000260，是名下最晚的一張長篇 | Tatler Asia 2025 年報導與中文維基（摘要）載他 2025 年 3 月發行第三張專輯《東方美人》，「名下最晚的一張長篇」已過時；《台北直直撞》簡介的「名下最早的一張長篇」仍成立。 | https://www.tatlerasia.com/lifestyle/entertainment/didilong-2025-zh-hant |
 | ar-u-017 | 菊地雅章セクステット | Re-confirmation | 電鋼琴由另一位同姓的樂手菊地雅洋擔任 | 並非錯誤，可補：日文維基記菊地雅洋是菊地雅章的實弟、同為爵士鋼琴家；單源（日文維基），是否補寫由主線決定。 | https://ja.wikipedia.org/wiki/%E8%8F%8A%E5%9C%B0%E9%9B%85%E7%AB%A0 |
 | ar-u-017 | 薄荷葉 | 的士房間 | 一位鼓手在 2002 年離開 Tizzy Bac，走進了這個團，條目記那位鼓手是鄭凱同 | 成員異動年份屬高風險，只有中文維基〈Tizzy Bac〉單源；官方頁與 BusinessToday 都沒有提到，搜尋摘要的現任鼓手是滾滾（呂孟芝）。建議降為不寫或標明出處。 | https://zh.wikipedia.org/wiki/Tizzy_Bac |
+| ar-u-017 | 陳世興 | 行雲 | 陳世興 1959 年生 | 生年屬高風險事實，可查到的只有台灣電影網單源（國家機關資料庫）與 FOND/SOUND 部落格（寫 1959 年生於台北近郊、無科班訓練、先學吉他）；部落格不算可靠來源。目前沒有實證反駁，建議保留但知道是單源。 | https://fondsound.com/jimi-chen-%E9%99%B3%E4%B8%96%E8%88%88-discovering-arts-behind-the-mountains-%E7%99%BC%E7%8F%BE%E5%BE%8C%E5%B1%B1%E7%9A%84%E8%97%9D%E8%A1%93-1994 |
+| ar-u-017 | Ben LaMar Gay | Open Arms to Open Us | 是他在這間廠牌的第二號作品 | 「第二號作品」容易被讀成目錄號 2；Bandcamp 頁面載明是在 International Anthem 的第二張專輯，目錄號為 IARC 0051。建議改寫為「第二張專輯」。 | https://intlanthem.bandcamp.com/album/open-arms-to-open-us |
+| ar-u-018 | Lali Puna | Scary World Theory | The Notwist 的主唱與鼓手，後來都加入了她的樂團 | 維基只說 Markus Acher 是 The Notwist 與 Tied & Tickled Trio 的主唱兼吉他手，Christoph Brandner 是在 Tied & Tickled Trio 與 Acher 同團的鼓手，沒有他是 The Notwist 鼓手的說法。建議改成「The Notwist 的主唱，與他同在 Tied & Tickled Trio 的鼓手」。 | https://en.wikipedia.org/wiki/Lali_Puna |
+| ar-u-018 | Modern Jazz Playboys | Modern Jazz Screen Mood | 十五個東京第一線的樂手擠進錄音室 | Discogs 的 SL-1001 credits 只列出 12 位樂手（含鋼琴兩位、顫音琴一位）；十五人的出處本層查不到，請對照原盤封底確認或改成較保守的說法。 | https://api.discogs.com/releases/17325919 |

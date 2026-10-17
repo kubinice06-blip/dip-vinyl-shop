@@ -1997,3 +1997,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 維基預抓錯抓 Sam Jones（NBA 球員）、Treatment（污水處理）、Troop（軍事單位），補洞層都已改認。卡池年份待本機核：Tamia《Tamia》卡池標 1978，應為 1998。
 - 審稿修 7 處：Randy Crawford、Return to Forever、Sam Jones（兩處）、Ted Lundy, Bob Paisley and The Southern Mountain Boys、The Headhunters、The Waterboys「最…」改「極／代表／廣為人知／常見」。
   - 保留：Ted Lundy 多名卡 276（放寬額度）；Randy Crawford 1982 年全英音樂獎、Raphael Saadiq 葛萊美（不寫年份）、Saint Etienne Mercury 入圍、Tamia 葛萊美提名、The War on Drugs 葛萊美、Troop R&B 冠軍（各一處）；Ski Mask the Slump God 只寫 XXXTentacion「過世」；Troop 的 Hit-Boy 葛萊美寫明是製作人本人的獎。
+
+## ar-u-017（2026-10-17，thin 升級）
+
+- 40 位中 18 位升 full 上線；22 位補洞後仍 thin、保留原上線版：ZAZEN BOYS、テルズ・シンフォニア、ひがしのひとし、丸山繁雄、南西肯恩、古川豪、圖騰樂團、小河、日野元彦、春艷、木馬、潘秀瓊、生活向上委員会、美狂乱、菅野邦彦、薄荷葉、蛋堡 Soft Lipa、超載、鈴木宏昌トリオ、陳世興、99.99、Alpha（本輪最低；台灣、日本小眾樂手 legacy 多查無獨立評價）。
+- 保留版順手更正：蛋堡 Soft Lipa（ar-c-029）「最佳國語男歌手／專輯」改「最佳華語」（第 32 屆金曲已改名）。搜尋超額：春艷 9、Zion.T 9、JAGATARA 10，放行。
+- 審稿修 11 處：လေးဖြူ 刪軍政府子女與翁山蘇姬門牌、剪髮細節，政治只留盤名被改一句；潘麗麗刪〈春天的花蕊〉被選為競選歌曲（政治）；들국화 刪《京鄉新聞》百大名盤（媒體名單）；茄子蛋獎項只留最佳新人；菊地雅章セクステット 樂團單卡從 274 壓回 210；Zoot Sims、零與聲音解放組織、Ben LaMar Gay「最…」改「極／早期」；じゃがたら 遠藤ミチロウ改 Michiro Endo 並壓回 250；Zion.T 本名改韓文加羅馬字（漢字未核）並壓回 247。
+  - 保留：澤野弘之引的「菅野よう子」（含漢字人名照原文）；楊乃文 2000 年金曲最佳國語女演唱人（當年獎名）；李英宏金馬獎不寫（補洞稿裁定）；Akemi Edo 只寫 1990 年過世。
