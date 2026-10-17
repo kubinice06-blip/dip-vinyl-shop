@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1448 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1452 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1452,3 +1452,7 @@
 | ar-u-009 | Mother Earth | Stoned Woman | Matt Deighton 的吉他與人聲、Neil Corcoran 貝斯構成緊實的現場編制，主唱由 Shauna Green 擔任 | Ace 官方內頁文字寫這張以錄音室企畫起家，Deighton 在錄音尾聲才加入、主唱來不及在專輯上唱，幾位女歌手是班底；『Deighton 的吉他與人聲』作為首作編制核心與官方說法有出入，待核 | https://www.acerecords.co.uk/stoned-woman |
 | ar-u-009 | Paul van Dyk | Out There and Back | 自營廠牌 Vandit 的第一號發行 | 維基 Vandit Records 條目稱廠牌最早的發行是 Paul van Dyk 的單曲〈Another Way〉與〈Avenue〉；維基《Out There and Back》條目稱這是廠牌的第一張專輯。建議改成「Vandit 的第一張專輯」。兩條都是維基，非獨立，建議店主再核廠牌目錄。 | https://en.wikipedia.org/wiki/Vandit_Records |
 | ar-u-009 | Phosphorescent | Muchacho | 2010 年《Here's to Taking It Easy》巡演後失去布魯克林海軍造船廠的錄音空間 | 維基《Muchacho》條目寫 2012 年紐約重新分區迫使他拆掉 Navy Yards 的工作室（單源），與簡介的時間點對不上；建議店主再核對時間線，必要時改成不帶年份的寫法。 | https://en.wikipedia.org/wiki/Muchacho_(album) |
+| ar-u-010 | Seu Jorge | Cru | 第二張個人錄音室作 | 原稿疑為第三張，但本次搜尋摘要顯示《Carolina》（2003）其實是首張個人專輯《Samba Esporte Fino》（2001）的國際發行名稱，不是另一張新專輯；若此說成立，《Cru》（2004 或 2005 年）確實是第二張，上線簡介原寫法可能是對的。我只讀到維基 Carolina 條目的搜尋摘要，未開頁，兩說都請店主本機覆核後再決定要不要改。 | https://en.wikipedia.org/wiki/Carolina_(Seu_Jorge_album) |
+| ar-u-010 | Songhoy Blues | Résistance | 廷巴克圖出身的三人在 2012 年北馬利衝突與音樂禁令下南遷巴馬科組團 | 維基與 OkayAfrica 都說 Garba Touré 來自 Diré（廷巴克圖地區的城鎮，非廷巴克圖市）；搜尋摘要（帝國戰爭博物館頁，未開）稱成員家鄉為 Gao 與 Timbuktu；三位 Touré 之外另有鼓手 Nathanaël Dembélé。『廷巴克圖出身的三人』過於肯定，建議改為『來自北馬利』 | https://en.wikipedia.org/wiki/Songhoy_Blues |
+| ar-u-010 | Sven Grünberg | Hingus | 愛沙尼亞文維基記載，1981 年完成的《Hingus》是整個蘇聯的第一張電子音樂唱片。 | 簡介把『蘇聯第一張電子音樂唱片』掛在愛沙尼亞文維基名下，原句確實出自該條目；但這是『第一』類宣稱且有明顯反例：拉脫維亞團 Zodiac 的《Disco Alliance》1980 年已由國營 Melodiya 發行，英文維基說它大量使用當時罕見的合成器音色，早於 1981 年。建議改成『愛沙尼亞文維基稱…』並加『說法有爭議』，或刪掉這個『第一』。另，Bureau B 重發頁（搜尋摘要）寫本作錄製於 1978 至 1980 年、1981 年發行，簡介『1981 年完成』可改『1981 年發行』。 | https://en.wikipedia.org/wiki/Zodiac_(Latvian_band) |
+| ar-u-010 | The Contemporary Jazz Quintet | Multidirection | 五重奏是 Charles Moore、Leon Henderson、Kenny Cox 與 Danny Spencer，五人都是底特律人 | 句中稱五重奏、稱五人，只列四個名字，漏了樂團固定成員貝斯手 Ron Brooks；Blue Note 與底特律社區口述史都列 Brooks 是五重奏成員。是否錄於這張未逐頁核對錄音人員，請對錄音人員名單後補上或改口。 | https://www.bluenote.com/artist/kenny-cox/ |
