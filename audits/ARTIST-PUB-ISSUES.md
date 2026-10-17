@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1525 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1531 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1529,3 +1529,9 @@
 | ar-u-024 | Eric Darius | Goin' All Out | 專輯在 Top Contemporary Jazz 榜最高第 9 名 | 維基 Eric Darius 條目寫該專輯在 Billboard 爵士專輯榜最高第 14 名（8 月 2 日號起進 Top Contemporary Jazz 的事實庫記載另有出處）；榜名與名次對不上，建議本機對 Billboard 原榜（事實庫那期 PDF）再核一次最高名次。 | https://en.wikipedia.org/wiki/Eric_Darius |
 | ar-u-024 | Eric Darius | Goin' All Out | 同名曲在 2008 年 10 月 25 日那一週登上 Smooth Jazz Songs 榜首 | 維基寫同名單曲同週登上的是『Contemporary Jazz chart』第 1 名，簡介寫 Smooth Jazz Songs；兩個榜名不同，需對原榜確認用哪個名稱。 | https://en.wikipedia.org/wiki/Eric_Darius |
 | ar-u-024 | Experimental Audio Research | Pestrepeller | E.A.R. 用來延續他在 Spacemen 3 之外的實驗性作品 | Discogs 原文是 the more experimental work he had contributed to Spacemen 3 since the 1980s，指他在 Spacemen 3 期間就貢獻的實驗成分，不是『之外』；建議改為『延續他自 1980 年代在 Spacemen 3 期間就做的實驗性作品』。 | https://www.discogs.com/artist/90418 |
+| ar-u-024 | Fred Jackson | Hootin' 'n Tootin' | Fred Jackson 一生只留下這一張領銜錄音 | 維基與 Blue Note 傳記都記載他另有一次領銜錄音（第二次 Blue Note session），直到 1998 年才作為 CD 加碼曲目發行；『一生只留下這一張』建議改成『生前只發行過這一張個人專輯』。 | https://en.wikipedia.org/wiki/Fred_Jackson_(saxophonist) |
+| ar-u-024 | Fresh Blueberry Pancake | Heavy | 1970 年自資發行 | Psychedelic Baby 2023 專文稱 demo 是 1971 年錄的，搜尋摘要稱 MetalMusicArchives 曲目頁載明 1971 年 8 月 18 日向美國國會圖書館登記著作權；Discogs 與 NTS 寫 1970，來源不一致，建議店主本機核對 Discogs 條目後決定是否改年份（待核，非確定錯誤） | https://www.psychedelicbabymag.com/2023/02/fresh-blueberry-pancake-the-legendary-underground-heavy-psych-classic-gets-an-official-reissue.html |
+| ar-u-025 | Gabin | Gabin | 羅馬雙人組 Gabin | 義大利文維基、英文維基、Qobuz、Trill 訪談都只寫「義大利」二人組，沒有已開頁的來源寫羅馬；「羅馬」僅見搜尋摘要，建議改成「義大利雙人組」。 | https://it.wikipedia.org/wiki/Gabin_(gruppo_musicale) |
+| ar-u-025 | Gamelan Semar Pegulingan | Gamelan of the Love God | Semar pegulingan 約自十七世紀傳下 | 年代各家不一：維基寫約十七世紀；Smithsonian 的 Yamin 專文說起源不明、部分峇里學者推十六世紀。建議改成「相傳已有數百年歷史」之類較保守的寫法。 | https://asia-archive.si.edu/essays/article-yamin |
+| ar-u-025 | Gamelan Semar Pegulingan | Gamelan of the Love God | 加美蘭,gamelan semar pegulingan。 | 簡介最後一句像是殘句或重複詞，與前文語氣不連貫，建議本機檢視是否為生成殘留並刪除。 | https://www.nonesuch.com/albums/bali-gamelan-semar-pegulingan-gamelan-love-god |
+| ar-u-025 | Gamelan Semar Pegulingan | Gamelan of the Love God | 1972 年 6 月收進 Nonesuch Explorer 系列（H-72046） | Nonesuch 官網只寫 1972 年首度發行、2003 年重發，沒有寫 6 月或編號；維基 Robert E. Brown 條目也沒有年份；「6 月」與「H-72046」未找到可開頁來源，建議本機核對 Discogs。 | https://www.nonesuch.com/albums/bali-gamelan-semar-pegulingan-gamelan-love-god |

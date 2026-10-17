@@ -2075,6 +2075,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 題材：Shajarian 2009 年選後支持抗議者、國家廣播停播其作品照寫；死因主線另查（NPR／Bloomberg：長年腎癌，2020 年病逝；其子另稱心臟病發為直接原因），寫「長年罹患腎癌，2020 年病逝」。Aref 2026 年過世、Emad Raam 1981 年因政治離開伊朗皆未開頁兩源，不寫。
 - 主線審稿 8 處：Deja-Vu「桜庭統」改台灣字形「櫻庭統」（來源網址不動）、「Tales 系列」改「《傳說》系列」；Jalil Shahnaz「近五十年最傑出之一」改「頂尖」；Shajarian 補死因；DJ Vadim 刪巡演場次與國數；Donell Jones 刪 Hot 100 名次（在世者不寫榜單）；Lockjaw Davis「最典型」改「典型」；Arkbro 重複「後來」改順。
 
+## ar-u-024（2026-10-17，thin 升級；補洞與寫作照更正後規則）
+
+- 40 位中 23 位升 full 上線；17 位補洞後仍 thin、保留原上線版：Eluvium、Emerald Web、Emma Salokoski & UMO、Emtidi、Eric Darius、Errata Corrige、Estelle Perrault、Eve 6、Extradition、Father MC、FATHERS、Fenin、Fergie、Fingathing、Fireworks、Fix、French Toast。
+- 搜尋超上限放行：Eloy、Eluvium 各 9 次（多的一次是確認創立年與開了沒有內文的榜單頁）。Emma Louise & Flume 卡池只有 2025 年《DUMB》，寫卡上這張本身不屬「2025–26 新事件」，照寫、不寫年份。
+- 題材：Eric Benét 與 Halle Berry 的婚姻、離婚與承認不忠；Everclear 的 Alexakis 兄長海洛因過量、女友輕生與本人毒癮；Filter〈Hey Man Nice Shot〉與 Dwyer 直播輕生的關係、Patrick 成癮與勒戒；Afanassiev 叛逃尋求政治庇護——都照寫。
+- 主線審稿 4 處：Eloy「德國搖滾圈影響最大之一」只有德文維基單源，改「在德國擁有龐大樂迷」；Everclear「最有名」改「代表性」；Filter 刪白金認證（在世者不寫銷量）；板橋文夫條「渡辺貞夫」改台灣字形「渡邊貞夫」。
+
 ### 題材補回：ar-u-003（2026-10-17）
 
 - 補查 37 位：add 23、none 14；改寫 23 位，補回 Lynott 海洛因成癮與死因、Furtwängler 納粹時期與去納粹化審理、大象體操 2023 跨年騷動、大貫妙子父親特攻隊經歷、日野皓正 2017 年體罰事件、Staley 與 Starr 藥物過量、Butler 2022 年遭指控與回應、Chassagne 父母逃離海地獨裁、Drive-By Truckers 的南方歷史與警察暴力題材、Cox 馬凡氏症與車禍、Portnoy 戒酒組曲、Ghostface 搶案與服刑、José González 父母逃離阿根廷軍政府、Musgraves 歌曲遭電台卻步與離婚、Mitski 暫停演出、MIKE 與 MONO 的喪親、Hadreas 成癮與克隆氏症、Rei Harakami 腦出血驟逝、Rick Ross 矯正官過往與 Reebok 事件、Wyatt 墜樓癱瘓與共產黨員、Siouxsie 的 Grundy 節目風波、St. Vincent 父親入獄。
