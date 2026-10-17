@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1503 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1513 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1506,4 +1506,14 @@
 | ar-u-020 | Azitis | Help | 沒有鼓組，推進力來自鍵盤與貝斯 | Discogs 只登錄 Steve Nelson 為 percussion（打擊樂），沒有說明有無鼓組；「沒有鼓組」是從 credit 推論，找不到來源直接證實，建議改成「打擊樂由 Steve Nelson 一人負責」或刪去推論。 | https://www.discogs.com/release/5033032-Azitis-Help |
 | ar-u-020 | Bahamadia | Kollage | 3 月 19 日發行；DJ Premier 做〈Intro〉與〈Rugged Ruff〉 | Albumism 列 DJ Premier 的曲目為〈Rugged Ruff〉、〈3 The Hard Way〉、〈True Honey Buns〉，未列〈Intro〉；Blackout 稱 Premier 做五首。〈Intro〉的製作人本層未核實，建議本機對 Discogs／專輯內頁核對。發行日 3 月 19 日是資料庫通行日期，Bahamadia 本人主張街頭上架日為 4 月 2 日，可考慮改寫為「1996 年春」。 | https://albumism.com/features/bahamadia-debut-album-kollage-album-anniversary |
 | ar-u-020 | Bananarians | Boner | 原盤 credit 上藤井義之掛人聲、吉他與鍵盤 | Discogs 的《Boner》credit 寫的是 Sansuke Fujii（人聲、吉他、鍵盤），Discogs 團體成員欄另有「藤井義之」，兩者在 Discogs 上是各自獨立的條目，沒有資料證明是同一人；簡介把 credit 直接寫成藤井義之，建議改寫成「藤井（Sansuke Fujii）」或查證後再用。 | https://www.discogs.com/master/1323163-Bananarians-Boner |
+| ar-u-020 | Ben Harper & Charlie Musselwhite | Get Up! | 全部曲目由 Harper 執筆 | 維基專輯條目列 Jason Mozersky 與 Jesse Ingalls 在部分曲目掛名共同創作；American Blues Scene 寫十首由 Harper 寫或與人合寫。宜改成「曲目由 Harper 寫或與人合寫」。 | https://en.wikipedia.org/wiki/Get_Up!_(Ben_Harper_and_Charlie_Musselwhite_album) |
+| ar-u-020 | Ben Harper & Charlie Musselwhite | Get Up! | 編制壓得極小，口琴與滑棒吉他直接對話 | American Blues Scene 與維基列出吉他手 Mozersky、貝斯手 Ingalls、鼓手 Richardson 參與錄音，並非僅兩人編制。 | https://www.americanbluesscene.com/2023/09/ben-harper-and-charlie-musselwhites-grammy-winning-get-up-returns-to-vinyl/ |
+| ar-u-020 | Ben Harper & Charlie Musselwhite | Get Up! | 首度聯名 | 兩人 1998 年已在 John Lee Hooker 的專輯同奏，Harper 也客串過 Musselwhite 2004 年的《Sanctuary》；「首度聯名」只適用於首張共同署名的專輯。 | https://www.americanbluesscene.com/2023/09/ben-harper-and-charlie-musselwhites-grammy-winning-get-up-returns-to-vinyl/ |
 | ar-u-020 | Bob Sinclar | Paradise | Christophe Le Friant 以 Bob Sinclar 之名的首張專輯 | 法文維基寫 Bob Sinclar 這個名字最初是為一張匿名合輯想的玩笑概念，由 DJ Yellow 以此名演出並宣傳《Paradise》；英文維基與搜尋到的 NRJ 傳記都把這張當成 Le Friant 的首張，來源不一致，僅法文維基單源，建議店主視需要核對，簡介可保留但勿寫成確定語氣 | https://fr.wikipedia.org/wiki/Bob_Sinclar |
+| ar-u-021 | Booster | Loop in Release | 整張碟在他 Bougival 的家裡做完；錄音與混音都由他一人在 2000 至 2001 年間完成 | Discogs 版權註記寫『Recorded and mixed by Booster at his home, Bougival, 2000-2001, except some tracks recorded at Studio Tex Avril, Ivry』，有幾軌不在家裡錄；建議改成『主要在家裡完成』 | https://www.discogs.com/release/718356 |
+| ar-u-021 | Booster | Loop in Release | 10 軌裡有四首超過 9 分鐘 | Discogs 曲長：9:01、7:21、4:55、3:22、4:02、1:34、8:19、1:51、9:00、9:24；超過 9 分鐘的只有 2 首（9:01 與 9:24），9:00 整的 1 首剛好 9 分，8:19 的 1 首未達；最多算『四首在 8 分鐘以上』 | https://www.discogs.com/release/718356 |
+| ar-u-021 | Brisa Roché | The Chase | 父親過世後才搬到法國；十八歲在巴黎地鐵賣唱 | 此為英文維基說法（單一來源）；2005 年 1 月 North Coast Journal 專訪寫她的行程是 Humboldt 郡到法國、再到西雅圖、再回 Humboldt，約 2002 年才因錄音計畫回法國，順序與維基不同；建議把『地鐵賣唱』『父親過世後』改為『據維基』或刪去時序 | https://northcoastjournal.com/010605/preview0106.html |
+| ar-u-021 | Catapilla | Catapilla | Robert Calvert 一人吹中音、次中音與高音三種薩克斯風 | 英文維基專輯條目的人員表只列 Calvert 吹 alto（中音）與 tenor（次中音）薩克斯風，沒有 soprano（高音）；『三種』沒有來源支持。 | https://en.wikipedia.org/wiki/Catapilla_(album) |
+| ar-u-021 | Chambao | Endorfinas en la mente | 11 首裡有 10 首出自他們自己，唯一的翻唱是 Camarón de la Isla 唱紅的〈Volando voy〉 | Amazon.es 的曲目列表出現第 15 首〈Instinto humano〉，表示某個版本不只 11 首（可能是再版或加料版，也可能是列表錯誤）；請對照 Discogs 406307 的原版曲目數，確認簡介說的是哪個版本。 | https://www.amazon.es/Endorfinas-En-Mente-Chambao/dp/B0000V8CCM |
+| ar-u-021 | Charles Brackeen | Rhythm X | 他 1940 年生於奧克拉荷馬州 Eufaula | 出生年有 1938（WMBR）與 1940（維基、MusicBrainz）兩說，出生地維基寫 Eufaula、wikidata 寫 Oklahoma City；高風險生年單靠維基家族，建議複核或改寫成「生於奧克拉荷馬州」。 | https://wmbr.mit.edu/cgi-bin/events?e=12526 |
+| ar-u-021 | Charles Dodge | Earth's Magnetic Field | 1974 年的《Speech Songs》換成分析並重新合成人聲 | 維基與布魯克林學院頁標 1974 年，但 Tom Johnson 1972 年 12 月的評述已在談 Speech Songs，Soundohm 重發頁說這批作品作於 1972 至 1975 年；作品完成年與發行年可能不同，建議簡介刪掉年份或改成『隨後的《Speech Songs》』。 | https://editions75.com/tvonm/articles/1972/charles-dodge-the-computer-sings.html |

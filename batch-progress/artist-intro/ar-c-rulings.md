@@ -2025,3 +2025,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 本段以上各批「審稿修 N 處」裡，凡以「政治／病況／刑案／家人逝世／私事」為由的刪改都是錯的；「保留」欄的「不寫刑案、不寫死因」等也一樣。先前「258 篇含死因刑案字眼待清理」的掃描結論撤回（那些應保留）。
 - 補救（店主選「重新補查」）：第十二輪已寫成的正文（ar-d-141、142、ar-u-001～021）逐批派「題材補查」代理（`research/<批>-sens.json`，每位最多 4 次、兩源），再改寫補回；u-022 起的補洞與寫作備註已改成照店主裁定。
 - 其餘規則不受影響：在世者一處核心成績、媒體名單不寫、2025–26 新事實要兩源核實、「最…」要有出處。
+
+### 題材補回：ar-u-001（2026-10-17）
+
+- 補查 34 位：add 18、none 16。改寫 18 位補回伴侶與出櫃（Coil、Halford）、死因（Balance、Becker、黃家駒、Frehley、Fletcher、Lake、Emerson、Van Zandt）、成癮（Becker、Future、Coxon、Gahan）、官司與執法（Judas Priest 潛意識訊息審判、Pierre Taki 被捕緩刑、Moodymann 遭警察持槍包圍、Gira 入獄）、病況（Aesop Rock、Sufjan Stevens、周杰倫）、政治（〈海闊天空〉在雨傘運動與反修例運動被合唱、billy woods 的辛巴威背景、JPEGMAFIA）。
+- 主線審稿 2 處：Judas Priest 年份超量刪成軍年；Sufjan Stevens 第二張專輯名改「新專輯」（卡池專輯名上限）。
+- 未寫：Fagen 告 Becker 遺產（結果不明）、Eric Carr、Halford 戒癮與 Tipton 帕金森（字數）。
