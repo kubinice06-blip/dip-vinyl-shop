@@ -2004,3 +2004,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 保留版順手更正：蛋堡 Soft Lipa（ar-c-029）「最佳國語男歌手／專輯」改「最佳華語」（第 32 屆金曲已改名）。搜尋超額：春艷 9、Zion.T 9、JAGATARA 10，放行。
 - 審稿修 11 處：လေးဖြူ 刪軍政府子女與翁山蘇姬門牌、剪髮細節，政治只留盤名被改一句；潘麗麗刪〈春天的花蕊〉被選為競選歌曲（政治）；들국화 刪《京鄉新聞》百大名盤（媒體名單）；茄子蛋獎項只留最佳新人；菊地雅章セクステット 樂團單卡從 274 壓回 210；Zoot Sims、零與聲音解放組織、Ben LaMar Gay「最…」改「極／早期」；じゃがたら 遠藤ミチロウ改 Michiro Endo 並壓回 250；Zion.T 本名改韓文加羅馬字（漢字未核）並壓回 247。
   - 保留：澤野弘之引的「菅野よう子」（含漢字人名照原文）；楊乃文 2000 年金曲最佳國語女演唱人（當年獎名）；李英宏金馬獎不寫（補洞稿裁定）；Akemi Edo 只寫 1990 年過世。
+
+## ar-u-018（2026-10-17，thin 升級）
+
+- 40 位中 20 位升 full 上線；20 位補洞後仍 thin、保留原上線版：Bennie Wallace、CALM、Divination、Hidden Orchestra、Lali Puna、Little Tempo、Modern Jazz Playboys、Ott、Out Of/Into、Placebo (Belgium)、R+R=NOW、Superblue、The Players、ゼロ戦、上田力、井上敬三、真梨邑ケイ、100 Proof (Aged in Soul)、A Silver Mt. Zion、Aardvark。
+- 搜尋超額：Deadbeat、TRI4TH 各 9，放行。ゼロ戦、井上敬三 搜了沒補到新事實，主線把 legacy 格改 gap 過 QA（仍 thin）。維基預抓錯抓 CALM（軟體公司）、Divination（占卜）、Fire! Orchestra，補洞層都已改認。
+- 審稿修 3 處：The Benny Green Trio 三重奏單卡從 273 壓回 247；山屋清「原信夫とシャープス＆フラッツ」「モダンジャズ三人の會」假名改寫並壓回 221。
+  - 保留：:wumpscut: 不寫爭議；127 伊朗禁演背景一句；喜多嶋修不寫與加山雄三的親戚關係；TRI4TH 獎項不寫（兩源同出官方簡介）；Gianluca Petrella 只留 Django d'Or。

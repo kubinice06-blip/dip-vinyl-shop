@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1494 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1499 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1498,3 +1498,8 @@
 | ar-u-017 | Ben LaMar Gay | Open Arms to Open Us | 是他在這間廠牌的第二號作品 | 「第二號作品」容易被讀成目錄號 2；Bandcamp 頁面載明是在 International Anthem 的第二張專輯，目錄號為 IARC 0051。建議改寫為「第二張專輯」。 | https://intlanthem.bandcamp.com/album/open-arms-to-open-us |
 | ar-u-018 | Lali Puna | Scary World Theory | The Notwist 的主唱與鼓手，後來都加入了她的樂團 | 維基只說 Markus Acher 是 The Notwist 與 Tied & Tickled Trio 的主唱兼吉他手，Christoph Brandner 是在 Tied & Tickled Trio 與 Acher 同團的鼓手，沒有他是 The Notwist 鼓手的說法。建議改成「The Notwist 的主唱，與他同在 Tied & Tickled Trio 的鼓手」。 | https://en.wikipedia.org/wiki/Lali_Puna |
 | ar-u-018 | Modern Jazz Playboys | Modern Jazz Screen Mood | 十五個東京第一線的樂手擠進錄音室 | Discogs 的 SL-1001 credits 只列出 12 位樂手（含鋼琴兩位、顫音琴一位）；十五人的出處本層查不到，請對照原盤封底確認或改成較保守的說法。 | https://api.discogs.com/releases/17325919 |
+| ar-u-018 | 100 Proof (Aged in Soul) | Somebody's Been Sleeping in My Bed | Holland-Dozier-Holland 1969 年離開 Motown、在底特律另起 Hot Wax | 搜尋結果摘要複述英文維基寫 Holland-Dozier-Holland 是 1968 年離開 Motown（Hot Wax 1969 年成立後簽下此團）；我只開頁讀到『1969 年成立 Hot Wax』，離開 Motown 的年份未逐頁核對，建議店主複核後再決定是否改成『1968 年離開 Motown、1969 年另起 Hot Wax』。 | https://en.wikipedia.org/wiki/100_Proof_(Aged_in_Soul) |
+| ar-u-019 | Adnan Othman | Bershukor: A Retrospective of Hits by a Malaysian Pop Yeh Yeh Legend | Adnan Othman 來自登嘉樓 | Sublime Frequencies 的 Bandcamp 頁面全文沒有出生地，Forced Exposure、Soundohm 等零售頁也沒有，目前沒有任何開頁讀到的來源支持登嘉樓；建議確認出處，查不到可考慮改成不點明家鄉。 | https://sublime-frequencies.bandcamp.com/album/adnan-othman-bershukor-a-retrospective-of-malaysian-pop-yeh-yeh-legend |
+| ar-u-019 | Ana Popović | Can You Stand the Heat | 1998 年赴荷蘭修爵士吉他後轉為職業樂手 | Vintage Guitar 2013 年訪談：她去荷蘭念平面設計，樂團簽 Ruf 後因《Hush!》成功而放下學業；Donne in Musica 則寫進海牙音樂學院；「赴荷蘭修爵士吉他」沒有來源支持（訪談只說她後來才學爵士吉他，且是在樂團忙碌時）。建議改為「赴荷蘭求學後，樂團簽下 Ruf Records，轉為職業樂手」。 | https://www.vintageguitar.com/15965/ana-popovic |
+| ar-u-019 | Ariesta Birawa Group | Ariesta Birawa Group, Vol. 1 | 唱片是這支團唯一的一張 | 早期陣容（Mus Mulyadi、Soenata Tanjung）1965 年已用同一團名發行過 Djoko Tarub（Wasted Rockers 稱 EP 或 10 吋；CNN Indonesia 稱 Jaka Tarub 專輯），Wasted Rockers 把 Vol. 1 寫成首張全長專輯；建議改成『首張全長專輯』或不寫唯一。 | https://www.cnnindonesia.com/hiburan/20190411111224-234-385270/mus-mulyadi-sang-buaya-keroncong-indonesia |
+| ar-u-019 | Ariesta Birawa Group | Ariesta Birawa Group, Vol. 1 | 官方那時正推 dangdut | 待核：PopMatters 只寫政府鼓勵本土傳統音樂、dangdut 在 1970 年代崛起（Rhoma Irama 的〈Begadang〉比這張晚兩年），沒有寫官方在 1973 年推 dangdut；建議改成較保守的寫法。 | https://popmatters.com/ariesta-birawa-group-vol-1-indonesia-2495753530.html |
