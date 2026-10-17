@@ -37,6 +37,19 @@ const rows = inv.items
 const rk = x => { const k = ORDER.indexOf((x.i.genres || [])[0]); return k < 0 ? 99 : k; };
 rows.sort((a, b) => rk(a) - rk(b) || a.d.artist.localeCompare(b.d.artist));
 
+// 左下角 QR：data/shop/stream-links.json（scripts/resolve-shop-stream-links.mjs 產生），依 Spotify → Apple Music → YT Music → Bandcamp 取第一個
+import qrcode from './vendor/qrcode-generator.mjs';
+const LINKS = (() => { try { return JSON.parse(fs.readFileSync(path.join(R, 'data/shop/stream-links.json'), 'utf8')).items || {}; } catch { return {}; } })();
+const STREAMS = [['spotify', 'Spotify'], ['apple', 'Apple Music'], ['yt', 'YT Music'], ['bandcamp', 'Bandcamp']];
+const qrSvg = url => {
+  const q = qrcode(0, 'M'); q.addData(url); q.make();
+  const n = q.getModuleCount(), m = 2;   // 2 格靜區
+  let d = '';
+  for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (q.isDark(r, c)) d += `M${c + m} ${r + m}h1v1h-1z`;
+  return `<svg class="qr" data-url="${esc(url)}" viewBox="0 0 ${n + 2 * m} ${n + 2 * m}" shape-rendering="crispEdges"><path d="${d}" fill="#1c1b19"/></svg>`;
+};
+const streamOf = id => { const l = LINKS[id]; if (!l) return null; for (const [k, name] of STREAMS) if (l[k]) return { url: l[k], name }; return null; };
+
 const stars = (n, total) => { n = Math.max(0, Math.min(total, Math.round(Number(n) || 0))); return '<b>' + '★'.repeat(n) + '</b>' + '☆'.repeat(total - n); };
 const card = ({ i, d }) => {
   // 待上架（卡池還沒有）的三軸讀 data/shop/pending-meta.json 的店內暫定值
@@ -51,11 +64,12 @@ const card = ({ i, d }) => {
   const price = i.priceNT ? `NT$ ${Number(i.priceNT).toLocaleString('en-US')}` : '價格請洽店員';
   const sub = [i.pressingYear ? `${i.pressingYear} 年壓片` : '', i.condition ? `品相 ${i.condition}` : ''].filter(Boolean).join('　');
   const len = [...d.text].length;
+  const st = streamOf(i.id);
   const body = `<header><span class="shop">dip vinyl${apex ? `<span class="apexbadge">${apex.label}<i>${apex.en}</i></span>` : ''}</span><span class="genres">${genres}</span></header>
   <div class="title"><p class="artist">${esc(d.artist)}</p><h1>${esc(d.album)}</h1></div>
   ${axes ? `<div class="axes">${axes}</div>` : ''}
   <p class="text">${esc(d.text)}</p>
-  <footer><span class="sub">${esc(sub)}</span><span class="price">${esc(price)}</span></footer>`;
+  <footer><span class="foot-l">${st ? `${qrSvg(st.url)}<span class="foot-t"><i class="qr-n">${esc(st.name)}</i><span class="sub">${esc(sub)}</span></span>` : `<span class="sub">${esc(sub)}</span>`}</span><span class="price">${esc(price)}</span></footer>`;
   const cls = `card${len > 225 ? ' long' : ''}${apex ? ' apex apex-' + row[8] : ''}${FOLD ? ' fold' : ''}`;
   if (!FOLD) return `<section class="${cls}">\n  ${body}\n</section>`;
   return `<section class="${cls}">
@@ -99,6 +113,10 @@ h1 { margin: 0; font-family: "Noto Serif TC", "Noto Serif JP", serif; font-weigh
 footer { display: flex; justify-content: space-between; align-items: flex-end; border-top: .2mm solid #b9b3a8; padding-top: 2.5mm; }
 .sub { font-family: "IBM Plex Mono", "Noto Sans TC", monospace; font-size: 6.5pt; color: #6d675e; }
 .price { font-family: "IBM Plex Mono", monospace; font-weight: 500; font-size: 16pt; letter-spacing: .02em; }
+.foot-l { display: flex; align-items: flex-end; gap: 2mm; min-width: 0; }
+.qr { width: 14mm; height: 14mm; flex: none; display: block; margin: 0 0 -1mm -1mm; }
+.foot-t { display: flex; flex-direction: column; gap: .6mm; }
+.qr-n { font-style: normal; font-family: "IBM Plex Mono", monospace; font-size: 5.5pt; letter-spacing: .06em; color: #6d675e; }
 @media print { html, body { background: none; } .card { margin: 0; } }
 ${SIZE === 'a7' ? `
 /* A7 74×105mm：同版面等比縮小，內文字級另調到可讀下限 */
@@ -113,7 +131,8 @@ h1 { font-size: 10.5pt; line-height: 1.25; }
 .axes { padding: 1.5mm 0; } .ax em { font-size: 5.2pt; } .st { font-size: 7.6pt; }
 .text { margin-top: 2.4mm; font-size: 9pt; line-height: 1.5; }
 .long .text { font-size: 9pt; line-height: 1.5; }
-footer { padding-top: 1.6mm; } .sub { font-size: 5pt; } .price { font-size: 11.5pt; }` : ''}
+footer { padding-top: 1.6mm; } .sub { font-size: 5pt; } .price { font-size: 11.5pt; }
+.qr { width: 11mm; height: 11mm; margin: 0 0 -.8mm -.8mm; } .foot-l { gap: 1.4mm; } .qr-n { font-size: 4.6pt; }` : ''}
 ${FOLD ? `
 /* 掛卡（ㄇ字折）：反折片 17mm（空白）＋頂邊 4mm＋正面 84mm＝105mm；兩條折線是灰色虛線 */
 .card.fold { padding: 0; }
@@ -128,7 +147,8 @@ header { font-size: 4.6pt; }
 h1 { font-size: 9.5pt; }
 .axes { padding: 1.1mm 0; } .ax em { font-size: 4.8pt; } .st { font-size: 6.8pt; }
 .text, .long .text { margin-top: 1.8mm; font-size: 7.6pt; line-height: 1.5; }
-footer { padding-top: 1.2mm; } .sub { font-size: 4.6pt; } .price { font-size: 10pt; }` : ''}
+footer { padding-top: 1.2mm; } .sub { font-size: 4.6pt; } .price { font-size: 10pt; }
+.qr { width: 11mm; height: 11mm; } .qr-n { font-size: 4.4pt; }` : ''}
 ${SHEET === 'a4' ? `
 /* A4 橫式 297×210mm 拼 8 張 A7（4 × 2，左右各留 0.5mm）；卡緣畫淺灰虛線當裁切線 */
 @page { size: 297mm 210mm; margin: 0; }

@@ -110,10 +110,26 @@ const cards = await page.evaluate(() => {
     const foot = card.querySelector('footer'); line(foot, 'Top');
     const sub = card.querySelector('.sub'); if (sub.textContent.trim()) point(sub, sub.textContent);
     const price = card.querySelector('.price'); point(price, price.textContent, 'right');
+    const qn = card.querySelector('.qr-n'); if (qn) point(qn, qn.textContent);
+    const qr = card.querySelector('svg.qr');
+    if (qr) { const q = qr.getBoundingClientRect(); items.push({ k: 'qr', url: qr.dataset.url, x: X(q.left), y: Y(q.top), w: q.width * PT }); }
     return { name: (card.querySelector('.artist').textContent + '｜' + h1.textContent).slice(0, 60), w: c.width * PT, h: c.height * PT, items };
   });
 });
 await browser.close();
+
+// QR：在 Node 端用同一套 qrcode-generator 算出格子，每列連續的黑格合成一個長方形（runs），JSX 端畫成一個複合路徑
+const { default: qrcode } = await import('./vendor/qrcode-generator.mjs');
+for (const c of cards) for (const it of c.items) if (it.k === 'qr') {
+  const q = qrcode(0, 'M'); q.addData(it.url); q.make();
+  const n = q.getModuleCount(), runs = [];
+  for (let r = 0; r < n; r++) for (let col = 0; col < n;) {
+    if (!q.isDark(r, col)) { col++; continue; }
+    let e = col; while (e < n && q.isDark(r, e)) e++;
+    runs.push([r, col, e - col]); col = e;
+  }
+  it.n = n + 4; it.runs = runs;   // 含兩格靜區，與 HTML 的 viewBox 相同
+}
 
 // 數值收斂到 0.01pt，非 ASCII 全轉 \uXXXX（ExtendScript 讀檔編碼不一定是 UTF-8）
 const r2 = v => typeof v === 'number' ? Math.round(v * 100) / 100 : v;
@@ -185,6 +201,12 @@ for (var n = 0; n < N; n++) {
       o = grp.pathItems.add(); o.setEntirePath([[L + it.x1, T - it.y], [L + it.x2, T - it.y]]);
       o.filled = false; o.stroked = true; o.strokeWidth = it.sw; o.strokeColor = color(it.color);
       if (it.dash) { o.strokeDashes = [1.5, 1.5]; o.name = 'fold'; }
+    } else if (it.k === 'qr') {   // 每格邊長＝寬度 ÷（格數＋靜區）；黑格以列為單位合成長方形，放進同一個複合路徑
+      var cell = it.w / it.n, cp = grp.compoundPathItems.add(); cp.name = 'QR';
+      for (var u = 0; u < it.runs.length; u++) {
+        var ru = it.runs[u], rp = cp.pathItems.rectangle(T - it.y - (ru[0] + 2) * cell, L + it.x + (ru[1] + 2) * cell, ru[2] * cell, cell);
+        rp.filled = true; rp.stroked = false; rp.fillColor = color('rgb(0, 0, 0)');
+      }
     } else if (it.k === 'rect') {
       o = grp.pathItems.roundedRectangle(T - it.y, L + it.x, it.w, it.h, it.r, it.r);
       o.filled = !!it.fill; if (it.fill) o.fillColor = color(it.fill);

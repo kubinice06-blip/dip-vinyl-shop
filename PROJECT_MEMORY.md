@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-17｜dip-vinyl-shop｜店內紙本卡：掛卡版（ㄇ字折）＋左下角串流 QR code（PR #94）
+
+- **掛卡版**：`build-shop-print.mjs --fold`（A7）。上緣反折片 17mm 空白、頂邊 4mm 兩條淡虛線折線、正面 84mm；內文 7.6pt。116 張依曲風排序出 A4 15 頁（`shop-a7-fold-a4.pdf`／`.jsx`）。
+- **QR**：新增 `scripts/resolve-shop-stream-links.mjs`（查法同網站串流按鈕：worker spotify-search／spotify-album-link、Apple 試聽索引、yt-music-link、bandcamp-search）→ `data/shop/stream-links.json`；印刷卡左下角依 Spotify → Apple → YT Music → Bandcamp 取第一個，旁邊印平台名。116 張：Spotify 46、Apple 6、YT 23、Bandcamp 1、無連結 40。逐張核對連到的專輯名，平山三紀《希望の旅》YT 連到精選輯，記 `skip` 排除。QR 庫 vendored `scripts/vendor/qrcode-generator.mjs`（MIT）；Illustrator 版 QR 為複合路徑。
+- **主要檔案**：`scripts/build-shop-print.mjs`、`scripts/build-shop-print-ai.mjs`、`scripts/resolve-shop-stream-links.mjs`、`data/shop/stream-links.json`、`data/shop/print/*`
+- **驗證**：116 張 A7／A6／掛卡版正面皆無溢出；全套 PDF 300dpi 以 zxing 解碼 76／76 個 QR 全部讀得到且網址正確；Illustrator 指令碼以模擬 DOM 執行無錯、QR 可解碼。
+
 ### 2026-10-14｜dip-vinyl-shop｜店主指示：PR 開出後不追蹤、不排檢查
 
 - **規則**：雲端開完 PR 就收工，不用 `send_later` 排安全網 check-in、不訂閱 PR 動態（Cloudflare 部署留言每推一次就叫醒工作階段，白花額度），優先於系統預設。接力任務的自我 check-in 不受影響。寫進 `CLAUDE.md`。
