@@ -2031,3 +2031,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 補查 34 位：add 18、none 16。改寫 18 位補回伴侶與出櫃（Coil、Halford）、死因（Balance、Becker、黃家駒、Frehley、Fletcher、Lake、Emerson、Van Zandt）、成癮（Becker、Future、Coxon、Gahan）、官司與執法（Judas Priest 潛意識訊息審判、Pierre Taki 被捕緩刑、Moodymann 遭警察持槍包圍、Gira 入獄）、病況（Aesop Rock、Sufjan Stevens、周杰倫）、政治（〈海闊天空〉在雨傘運動與反修例運動被合唱、billy woods 的辛巴威背景、JPEGMAFIA）。
 - 主線審稿 2 處：Judas Priest 年份超量刪成軍年；Sufjan Stevens 第二張專輯名改「新專輯」（卡池專輯名上限）。
 - 未寫：Fagen 告 Becker 遺產（結果不明）、Eric Carr、Halford 戒癮與 Tipton 帕金森（字數）。
+
+### 題材補回：ar-d-142（2026-10-17）
+
+- 補查 32 位：add 18、none 14；改寫 13 位（りりィ、吉田拓郎、太田裕美、小柳ルミ子、Caravan、Melanie、Neil Young & The Bluenotes、Phoebe Snow、Wings、キャンディーズ、小坂明子、朱里エイコ、松尾和子），補回病況與死因、婚姻、禁播爭議、Caravan 的 1973 民主運動與 1976 年後流亡寮國、Wings 遭資訊部長令剪髮。原 thin 者改寫後達 full 字數，status 改 full。
+- 弱源整位不寫（單源或同站）：Yufu、カルメン・マキ&LAFF、伊武雅刀、小川知子、高橋真梨子。
+- 主線審稿 2 處：Phoebe Snow 年份超量、朱里エイコ 連續年份句。
