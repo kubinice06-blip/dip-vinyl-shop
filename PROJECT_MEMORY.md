@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-17｜dip-vinyl-shop＋worker KV｜店內 QR 補查串流連結、QR 中央黑白 logo（PR #94）
+
+- **補查**：網站與印刷共用的 worker 只用原名查，日文藝人幾乎全查不到。改用羅馬拼音名（Yumi Arai、Akiko Yano…）重查補 26 張；其餘以網路搜尋限定 open.spotify.com 再補 18 張，每筆以頁面 title／og:description 核對藝人、專輯、年份。退件：今田勝《Blue Marine》（只有同名曲在別張）、浅川マキ、平山三紀、Marlene、Culture Club 等只見於精選輯者。モア用店主提供的 YouTube 全專輯影片（`manual`）。結果 116 張：Spotify 90、Apple 2、YouTube 1、無 23。
+- **網站同步**：44 筆新 Spotify 連結寫入 worker KV `cover6:<藝人>|<專輯>` 的 `spotifyUrl`（保留原有 imageUrl），網站店內頁的 Spotify 按鈕即時亮起（實測 KV-HIT）。
+- **QR 樣式**：中央放黑白平台 logo（`scripts/lib/stream-logos.mjs`：Spotify／Apple Music／YT Music／YouTube／Bandcamp），容錯 H 級，拿掉平台文字。
+- **已知 worker 缺陷（未修）**：`/spotify-album-link` 的 normalize 只留 a-z0-9，非拉丁藝人名一律比不到；要根治需改 worker 並由本機部署。
+- **驗證**：掛卡全套 PDF 200dpi 解碼 93／93 個 QR、網址全對；範例 150dpi 亦 8／8；116 張正面無溢出；Illustrator 指令碼模擬執行無錯。
+
 ### 2026-10-17｜dip-vinyl-shop｜店內紙本卡：掛卡版（ㄇ字折）＋左下角串流 QR code（PR #94）
 
 - **掛卡版**：`build-shop-print.mjs --fold`（A7）。上緣反折片 17mm 空白、頂邊 4mm 兩條淡虛線折線、正面 84mm；內文 7.6pt。116 張依曲風排序出 A4 15 頁（`shop-a7-fold-a4.pdf`／`.jsx`）。
