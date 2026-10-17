@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1452 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1458 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1456,3 +1456,9 @@
 | ar-u-010 | Songhoy Blues | Résistance | 廷巴克圖出身的三人在 2012 年北馬利衝突與音樂禁令下南遷巴馬科組團 | 維基與 OkayAfrica 都說 Garba Touré 來自 Diré（廷巴克圖地區的城鎮，非廷巴克圖市）；搜尋摘要（帝國戰爭博物館頁，未開）稱成員家鄉為 Gao 與 Timbuktu；三位 Touré 之外另有鼓手 Nathanaël Dembélé。『廷巴克圖出身的三人』過於肯定，建議改為『來自北馬利』 | https://en.wikipedia.org/wiki/Songhoy_Blues |
 | ar-u-010 | Sven Grünberg | Hingus | 愛沙尼亞文維基記載，1981 年完成的《Hingus》是整個蘇聯的第一張電子音樂唱片。 | 簡介把『蘇聯第一張電子音樂唱片』掛在愛沙尼亞文維基名下，原句確實出自該條目；但這是『第一』類宣稱且有明顯反例：拉脫維亞團 Zodiac 的《Disco Alliance》1980 年已由國營 Melodiya 發行，英文維基說它大量使用當時罕見的合成器音色，早於 1981 年。建議改成『愛沙尼亞文維基稱…』並加『說法有爭議』，或刪掉這個『第一』。另，Bureau B 重發頁（搜尋摘要）寫本作錄製於 1978 至 1980 年、1981 年發行，簡介『1981 年完成』可改『1981 年發行』。 | https://en.wikipedia.org/wiki/Zodiac_(Latvian_band) |
 | ar-u-010 | The Contemporary Jazz Quintet | Multidirection | 五重奏是 Charles Moore、Leon Henderson、Kenny Cox 與 Danny Spencer，五人都是底特律人 | 句中稱五重奏、稱五人，只列四個名字，漏了樂團固定成員貝斯手 Ron Brooks；Blue Note 與底特律社區口述史都列 Brooks 是五重奏成員。是否錄於這張未逐頁核對錄音人員，請對錄音人員名單後補上或改口。 | https://www.bluenote.com/artist/kenny-cox/ |
+| ar-u-011 | พุ่มพวง ดวงจันทร์（Pumpuang Duangjan） | ตะวันลับฟ้า／ลำเพลิน พุ่มพวง ดวงจันทร์ | 《ตะวันลับฟ้า》寫「1975 年拜師之後才改用現在這個藝名」；《ลำเพลิน》寫「1976 年一位 luk thung 歌師收她為徒，替她取了名字」 | 兩張上線簡介對拜師與改名年份自相矛盾（1975 vs 1976）；泰文維基（事實庫）為 1975，英文維基只寫 15 歲（約 1976）被 Waiphot Phetsuphan 的巡演樂團發現，師父人名也不同。建議兩張都改成不帶年份的寫法，或由店主本機以泰文原始資料裁定。 | https://th.wikipedia.org/wiki/พุ่มพวง_ดวงจันทร์ |
+| ar-u-011 | 조용필 | 조용필 1집 (창밖의 여자) | 全輯成為韓國第一張銷量突破百萬的單張唱片 | 「第一張」類宣稱：韓國一日報只寫 1 집賣 100 萬張並載入金氏紀錄，沒寫『韓國第一張』；另有在世者累計銷量不寫的規則，建議店主複核這句。 | https://www.hankookilbo.com/news/article/201804121123249996 |
+| ar-u-011 | 조용필 | 조용필 1집 (창밖의 여자) | 全輯成為韓國第一張銷量突破百萬的單張唱片 | Korea Herald 只寫該輯是韓國第一張拿到白金的專輯，Korea Times 只寫賣到 100 萬張，兩家都沒有「第一張銷量破百萬」的說法；「第一」類宣稱兩源不一致，建議改成不帶序數。 | https://www.koreaherald.com/article/1677099 |
+| ar-u-011 | 光束夜 | 1st | 這張 12 吋出在 1990 年的日本 Ray Night Music，編號 RNM0001 | 英文維基系統來源（搜尋摘要）寫首張 LP 在 Ray Night Music 於 1991 年發行；MusicBrainz 記 1990；兩源不一致，未能判定，建議店主再核對 Discogs 實體資料。 | https://en.wikipedia.org/wiki/Kousokuya |
+| ar-u-011 | 脫拉庫 | 飛向陽光飛向你 | 一九九九年首張《歡迎脫拉庫》入圍第十一屆金曲獎最佳演唱團體獎 | 第 11 屆金曲獎典禮於 2000 年 4 月 28 日舉行，1999 年是專輯發行年；寫「一九九九年…入圍」易讀成入圍發生在 1999 年，建議改為「首張專輯入圍 2000 年第 11 屆…」或去掉年份。（沿用原稿） | https://zh.wikipedia.org/zh-tw/%E7%AC%AC11%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E |
+| ar-u-011 | 脫拉庫 | 歡迎脫拉庫 | 貝斯彭承吉、鼓陳沐凡 | 中文維基摘要與 udn 專題寫彭丞吉、陳牧凡，與上線簡介寫法不同；字形請店主於本機核對維基原頁。（沿用原稿） | https://time.udn.com/udntime/story/122834/8011437 |

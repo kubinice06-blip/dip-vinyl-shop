@@ -1944,3 +1944,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - Lloyd 的維基預抓抓成 Lloyd Banks，補洞層依 poolAlbums 改認 R&B 歌手 Lloyd；Mother Earth 鍵為倫敦 acid jazz 樂團（卡池《Living with the Animals》屬 Tracy Nelson 的 Mother Earth，卡標錯已記本機待修）。
 - 審稿修 12 處：Mystikal、NOFX、Obituary（兩處）、Pusha T、Ricardo Villalobos、Léo Ferré、Melt-Banana、Minutemen「最…之一」改「極／早期／經典」；Professor Harold Boggs 刪失明（身體狀況）；Keyshia Cole 刪寄養與收養（私事）；Lil Baby 刪街頭販毒（刑案）。
   - 保留：Mystikal 不寫刑案；Pusha T 不寫 2025–26 Clipse 重組與葛萊美（舊 thin 版的 2026 葛萊美隨升級版移除）；PNL、Paul van Dyk、Villalobos 政治背景各一句；Little Mix BRIT 獎（團體核心）；Leo Kottke 不寫肌腱炎；Moor Mother 不寫伴侶；Minutemen 只寫 Boon 1985 年過世。
+
+## ar-u-010（2026-10-17，thin 升級）
+
+- 40 位中 31 位升 full 上線；9 位補洞後仍 thin、保留原上線版：Shabazz Palaces、Sharon Van Etten、Smog、Styx、The Heptones、The Jazz Crusaders、The Soul Children、The Tallest Man on Earth、Third Quadrant。
+- The Game 現行 thin 版含遭槍擊、Testament 現行 thin 版含 Chuck Billy 腫瘤，升級版都不寫，上線即替換。Sven Grünberg《Hingus》的 EMS Synthi 100 說法只有單源，升級版改寫 Härmo Härm 自製合成器。
+- 審稿修 8 處：Rufus featuring Chaka Khan 樂團單卡從 271 壓回 247；Sonny Stitt 刪收養（私事，照 Keyshia Cole 先例）；Sunn O)))、The Gaslight Anthem、The New Pornographers「最…之一」改「重要／極」；The Stranglers 刪 23 首前 40 名單曲（排行榜數字）。
+  - 保留：Rufus 名人堂稱 Chaka Khan「Queen of Funk」（名人堂官方可具名）；Satyricon《Nemesis Divina》被視為經典（不寫雜誌名人堂）；Shania Twain 加拿大勳章、Skepta 水星獎、Skrillex 一座葛萊美、Tate McRae Juno 年度藝人、Summer Walker Soul Train 年度專輯（在世者各一處）；Snooks Eaglin、Seu Jorge、Stromae 不寫身體狀況與家人遇難；Dave Greenfield 只寫 2020 年過世。
