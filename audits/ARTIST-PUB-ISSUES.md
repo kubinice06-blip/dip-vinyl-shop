@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1424 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1439 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1428,3 +1428,18 @@
 | ar-u-004 | Amon Tobin | Supermodified | Metacritic 依八篇樂評給出 85 分，2012 年獲 IMPALA 雙銀認證，代表歐洲銷量逾四萬張 | 在世者認證倍數與銷量、樂評評分依共同特注不寫；事實本身與維基一致，只是違反寫作規範，建議本機刪去（沿用 ar-b-024 登記）。 | https://en.wikipedia.org/wiki/Supermodified_(album) |
 | ar-u-004 | Amon Tobin | Bricolage | Pitchfork 給滿分十分，Fact 在 2015 年 50 張最佳 trip-hop 專輯榜列第 23 | 雜誌榜單名次依共同特注不收；事實與維基一致，只是違反寫作規範，建議本機刪去（沿用 ar-b-024 登記）。 | https://en.wikipedia.org/wiki/Bricolage_(album) |
 | ar-u-006 | Richard "Groove" Holmes | Soul Message | 簡介寫「左手踏出低音線」（舊稿備註轉述） | 傳記來源說 Holmes 的低音線靠風琴腳踏板；單源、未逐條核對，建議本機確認簡介是否混用左手與踏板 | https://fromthevaults-boppinbob.blogspot.com/2022/05/richard-groove-holmes-born-2-may-1931.html |
+| ar-u-006 | 林俊傑 | 和自己對話 | 全球第一張以假人頭麥克風（人頭錄音）製作的華語流行唱片 | 『首張』範圍有三種說法：中文維基〈和自己對話〉寫為全球首張以 Dummy Head 錄製的流行音樂專輯；媒體寫華語樂壇先例或台灣創舉；英文維基未載。『第一』類宣稱兩源不一致，建議簡介改成『以人頭錄音技術錄製』，或寫成『中文維基稱…全球首張』。（沿用原補洞稿，本次未再查） | https://zh.wikipedia.org/zh-tw/%E5%92%8C%E8%87%AA%E5%B7%B1%E5%B0%8D%E8%A9%B1 |
+| ar-u-006 | 藤圭子 | 新宿の女 | 連續二十週第一，接續的《女のブルース》再連十七週，合計三十七週 | 英文維基寫 20 週加 17 週共 37 週，但 Weblio 寫《女のブルース》16 週、合計 41 週；Tower 與日文維基摘要寫合計 42 週；generasia 寫兩首單曲前兩名共 40 週。首張 20 週多源一致。建議簡介只留『首張連續二十週第一』，或查原始榜單後再定合計。（沿用原補洞稿並補述新查到的英維與 generasia 數字） | https://www.weblio.jp/content/%E6%96%B0%E5%AE%BF%E3%81%AE%E5%A5%B3/%E2%80%9C%E6%BC%94%E6%AD%8C%E3%81%AE%E6%98%9F%E2%80%9D%E8%97%A4%E5%9C%AD%E5%AD%90%E3%81%AE%E3%81%99%E3%81%B9%E3%81%A6 |
+| ar-u-006 | 謝雷 | 梨山痴情花 | 1974 年在菲律賓被檢舉遣返，台灣也禁止他出境兩年，之後轉往歌廳與秀場 | 高風險事件只有中文維基單一來源；百度百科、WSM 經紀簡介、udn 專訪、鏡週刊、TVBS 皆未提；本層補查後仍找不到第二來源，建議店主審視是否保留或改成較模糊寫法。（沿用原補洞稿，本次未再找到佐證） | https://zh.wikipedia.org/wiki/%E8%AC%9D%E9%9B%B7_%28%E6%AD%8C%E6%89%8B%29 |
+| ar-u-007 | 向井滋春 | A Head Wind | 1975 年那一年他拿下新宿ジャズ賞 | 年份兩說：Nippon Columbia 官方頁寫 1974 年，Last.fm／3rd-in 搜尋摘要寫 1975 年；建議改成不帶年份或本機再核 | https://columbia.jp/j-digs/artists/shigeharumukai.html |
+| ar-u-007 | 向井滋春 | A Head Wind | 那一年（1975）他拿下新宿ジャズ賞 | 日本コロムビア官方簡歷寫新宿ジャズ賞為昭和 49 年（1974）；搜尋摘要有寫 1975 的轉述。兩說不一致，建議改成不帶年份或標 1974（官方簡歷）。 | https://columbia.jp/artist-info/mukaishigeharu/prof.html |
+| ar-u-007 | 929 | 也許像星星 | 929 由吳志寧與黃玠 2004 年在大學時期組成 | 此句依中文維基〈吳志寧〉；馬世芳〈8/14 耳朵借我：專訪929樂團〉寫 2005 年首次上節目是志寧和嘟嘟兩人組，黃玠後來才在四人編制出現、再因單飛退出，兩源對創團成員不一致；建議簡介只寫「吳志寧在大學時期組成」、不點黃玠為共同創團者，或標明出處 | https://vocus.cc/article/601a697bfd89780001367b50 |
+| ar-u-007 | 929 | 929同名專輯 | 2004 年吳志寧與黃玠在大學時期成立 929；同名碟是兩人編制做出來的 | 同上：兩人編制的另一位，馬世芳寫是嘟嘟（貝斯），中文維基則說成立者是黃玠；簡介引中文維基原句本身無誤，但讀者會以為兩人編制就是吳志寧與黃玠，建議不暗示這一點 | https://vocus.cc/article/601a697bfd89780001367b50 |
+| ar-u-007 | 929 | 也許像星星／929同名專輯 | 929 由吳志寧與黃玠 2004 年在大學時期組成 | 兩源不一致：馬世芳 vocus 專訪稱 2005 年第一次上廣播是志寧與嘟嘟兩人組，黃玠後來加入；2013 年香港獨立媒體專訪稱 2004 年志寧與貝斯手嘟嘟參加貢寮海洋音樂祭。建議把成軍者與年份改成不帶人名的寫法，或查原始出處再定。 | https://vocus.cc/article/601a697bfd89780001367b50 |
+| ar-u-007 | Alton Ellis | Sings Rock and Soul | 同年（1967）替 Duke Reid 錄的〈Rock Steady〉是第一首在歌名裡指出這個樂種的作品 | 維基 Alton Ellis 條目記〈Rock Steady〉為 1967 年；Songfacts 引 Ellis 本人說『1965 年我替它命名』並記發行 1965 年；兩源不一致，年份不宜寫死，建議刪年份或改寫『1960 年代中期』。 | https://www.songfacts.com/facts/alton-ellis/get-ready-rock-steady |
+| ar-u-007 | Alton Ellis | Mr. Soul of Jamaica | Ellis 1967 年的〈Rock Steady〉是第一首把這個節奏名稱唱進歌名的作品 | 維基 Alton Ellis 條目記〈Rock Steady〉為 1967 年；Songfacts 引 Ellis 本人說『1965 年我替它命名』並記發行 1965 年；兩源不一致，年份不宜寫死，建議刪年份或改寫『1960 年代中期』。 | https://www.songfacts.com/facts/alton-ellis/get-ready-rock-steady |
+| ar-u-007 | Alton Ellis | （Yellowman 卡）Zungguzungguguzungguzeng | 源頭是 Alton Ellis 1967 年為 Coxsone Dodd 錄的〈Mad, Mad, Mad〉 | 維基 Alton Ellis 條目寫〈Mad Mad〉底軌是 1968 年與 Sound Dimension 錄製，與上線簡介的 1967 年不符；僅維基單源，建議店主在本機核對 Studio One 目錄再改。 | https://en.wikipedia.org/wiki/Alton_Ellis |
+| ar-u-007 | Alton Ellis | Mr. Soul of Jamaica／Sings Rock and Soul | 〈Rock Steady〉是第一首把這個節奏名稱唱進歌名的作品 | 國家圖書館頁稱〈Come Do The Rocksteady〉才是第一首含 rocksteady 一詞的歌，Gleaner 稱 Ellis 自認〈Girl I've Got a Date〉是第一首 rocksteady 歌，維基也只說〈Rock Steady〉「被說成」把樂種名稱唱進歌名。建議改成「被稱為」，不寫確定的第一首。 | https://www.nlj.gov.jm/REGGAE%20EXHIBITION/Alton%20Ellis.htm |
+| ar-u-007 | Anouar Brahem | Barzakh | 1981 年赴巴黎四年 | 維基寫 1981 年赴巴黎；Brahem 官網寫 1982–1986，起年不一致（維基同條另寫 four years）。建議改寫成「赴巴黎約四年」或查第三源後定年。 | https://anouarbrahem.com/en/full-biography |
+| ar-u-007 | Anouar Brahem | Barzakh | 1981 年赴巴黎四年 | 1981 僅維基單源；官網與 encyclopedia.com 都寫 1982 年，官網同頁起訖年自相不合。建議改成「約四年」不寫年份。 | https://anouarbrahem.com/en/full-biography |
+| ar-u-007 | Billy Paul | War of the Gods | 〈Thanks for Saving My Life〉打進流行榜第 37 名，專輯登上靈魂榜第 12 名 | 維基 War of the Gods 條目只寫單曲流行榜第 37 名、靈魂榜第 9 名；專輯靈魂榜第 12 名本層未查到來源，需核對（可能是專輯榜位，需 Billboard 專輯榜記錄）。 | https://en.wikipedia.org/wiki/War_of_the_Gods_(album) |

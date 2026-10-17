@@ -1915,3 +1915,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 審稿修 13 處：Limp Bizkit 刪單週銷售紀錄；f(x) 刪 Billboard 年代排名、Fleet Foxes 刪《1001 Albums》書單、Halsey 刪《時代》百大（媒體排名與名單）；Eric B. & Rakim 刪 2026 葛萊美名人堂（新近事實未核）；Fleet Foxes、Frank Bretschneider、Masonna、Queensrÿche「最…之一」改「極／早期」；Gregory Porter 刪肩傷、不寫葛萊美座數；Flower Travellin' Band ジョー山中改 Joe Yamanaka。
   - 保留：One Direction IFPI 年度最受歡迎錄音藝人、KAYTRANADA／Miley Cyrus／Monica 各一座葛萊美（在世者核心一處）；Julian Cope 排名（具名音樂人）。
 - 寫作層提出：有一組初稿普遍超長、整組重寫後一次寫檔（沒照每 5 位寫一次），容器若重啟會整組重做；後續寫作派工仍要求分段寫檔。
+
+## ar-u-006（2026-10-17，thin 升級）
+
+- 40 位中 33 位升 full 上線；7 位補洞後仍 thin、保留原上線版：Ryan Adams、ScHoolboy Q、Travis Scott、Tycho、林俊傑、謝雷、Cæcilie Norby（原 thin 版已檢查，Ryan Adams 不含指控）。
+- Sonny Criss 現行 thin 版含胃癌與自殺，升級版只寫生卒年，上線即替換。藤圭子只寫 2013 年過世，Young Thug 不寫逮捕與審判，Type O Negative 的 Peter Steele 只寫 2010 年。
+- 搜尋超額：Shackleton、Type O Negative、Travis Scott、ネーネーズ、林俊傑、菊地雅章各超 1（補第二源），放行。
+- 審稿修 18 處：Shawn Mendes 刪《TIME》百大；Stereophonics、FSOL、The Streets、The Time、菊地雅章「最…之一」改「極／早期」；Underoath 不寫入圍次數；TLC、WSQ 樂團單卡壓回 250；ネーネーズ、杏里、藤圭子、鷺巣詩郎片假名改寫；藤圭子刪母親身體狀況與安保鬥爭一句。
+- 待本機（掃描發現）：上線 8,600 餘篇介紹中，258 篇含死因、病況、成癮、刑案類字眼，多為 ar-a／ar-b 早期批（規則收緊前），其中部分屬身分（盲人藍調樂手的 Blind）或作品題材；升級批會逐步蓋掉一部分，其餘待另排一輪清理。
