@@ -2068,6 +2068,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 本批補洞與寫作的備註已照店主 2026-07-31「題材沒有禁區」，不另跑題材補查。Larkin（Silksong／TGA）與 Chicago Underground Duo 的 2025 年事項未開頁兩源，不寫。胡瀞云寫「未頒首獎、並列第二」。
 - 主線審稿 4 處：D.R. Hooker「最重要的作品之一」改「極重要的作品」；Chavez 刪「最紅／最好的新搖滾樂團之一」改「極受矚目的新團」；Co-Fusion「最具代表性之一」改「代表性藝人」；胡瀞云受邀時間句改順。
 
+## ar-u-023（2026-10-17，thin 升級；補洞與寫作照更正後規則）
+
+- 40 位中 28 位升 full 上線；12 位補洞後仍 thin、保留原上線版：Danielle Dax、Darius、Debris'、Deerfield、Deh-Ho Lai 賴德和、Derek Smith Trio、Diabolus in Musica、Discus、DJ Cam、Earthen Vessel、El Hombre Trajeado、Electroscope。
+- 搜尋超上限放行：Deep Dish、Derek Smith Trio 各 9 次（多的一次是重查未開成的頁）、Dub Colossus 11 次（替 2013 年 Songlines 獎找開得了的第二源）。Deja-Vu 研究稿 notes 自稱 thin、status 為 full，照 full 寫，地位只寫櫻庭統日後的遊戲音樂名聲。
+- 題材：Shajarian 2009 年選後支持抗議者、國家廣播停播其作品照寫；死因主線另查（NPR／Bloomberg：長年腎癌，2020 年病逝；其子另稱心臟病發為直接原因），寫「長年罹患腎癌，2020 年病逝」。Aref 2026 年過世、Emad Raam 1981 年因政治離開伊朗皆未開頁兩源，不寫。
+- 主線審稿 8 處：Deja-Vu「桜庭統」改台灣字形「櫻庭統」（來源網址不動）、「Tales 系列」改「《傳說》系列」；Jalil Shahnaz「近五十年最傑出之一」改「頂尖」；Shajarian 補死因；DJ Vadim 刪巡演場次與國數；Donell Jones 刪 Hot 100 名次（在世者不寫榜單）；Lockjaw Davis「最典型」改「典型」；Arkbro 重複「後來」改順。
+
 ### 題材補回：ar-u-003（2026-10-17）
 
 - 補查 37 位：add 23、none 14；改寫 23 位，補回 Lynott 海洛因成癮與死因、Furtwängler 納粹時期與去納粹化審理、大象體操 2023 跨年騷動、大貫妙子父親特攻隊經歷、日野皓正 2017 年體罰事件、Staley 與 Starr 藥物過量、Butler 2022 年遭指控與回應、Chassagne 父母逃離海地獨裁、Drive-By Truckers 的南方歷史與警察暴力題材、Cox 馬凡氏症與車禍、Portnoy 戒酒組曲、Ghostface 搶案與服刑、José González 父母逃離阿根廷軍政府、Musgraves 歌曲遭電台卻步與離婚、Mitski 暫停演出、MIKE 與 MONO 的喪親、Hadreas 成癮與克隆氏症、Rei Harakami 腦出血驟逝、Rick Ross 矯正官過往與 Reebok 事件、Wyatt 墜樓癱瘓與共產黨員、Siouxsie 的 Grundy 節目風波、St. Vincent 父親入獄。

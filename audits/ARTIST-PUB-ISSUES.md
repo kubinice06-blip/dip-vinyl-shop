@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1521 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1525 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1523,5 +1523,9 @@
 | ar-u-022 | Confuse | Indignation | 十三年後由 Anarchy Centre 與樂團自營的 Confuse Records 聯名壓成黑膠與 CD | 搜尋摘要（NTS 引 Discogs）只見 1984 年 Violent Party Records 的卡帶與 1987 年的 Confuse Records 單曲，Sorry State 稱黑膠把整張卡帶與 Nuclear Addicts flexi 等合輯；未能證實「十三年後」「黑膠與 CD」「Anarchy Centre 聯名」。建議店主對 Discogs 的 Indignation 條目逐項核對。 | https://nts.live/artists/89568-confuse |
 | ar-u-022 | Da Lata | Songs From the Tin | 團員是 Chris Franck 與 Patrick Forge 這兩個倫敦人 | Franck 生於德國、六歲起住英國，說「倫敦人」過粗；Da Lata 本身是倫敦的團，可改寫成「倫敦的團」 | https://en.wikipedia.org/wiki/Chris_Franck |
 | ar-u-023 | Discus | 1st | 2001 至 2007 年間他們登上舊金山與紐約的前衛音樂節 | 印尼維基只列 ProgNight（舊金山）、Knitting Factory（紐約，是演出場地不是音樂節）與 ProgDay（北卡羅來納），沒有給這三處的年份；有年份的只有 BajaProg（墨西哥，2001）、Progsol 與 FreakShow（2005）以及預定的 2007 年 Zappalane（德國）。2001 至 2007 與舊金山、紐約的對應查不到依據，建議改成較保守的寫法或查出各場年份 | https://id.wikipedia.org/wiki/Discus_(grup_musik) |
+| ar-u-023 | Dulcimer | And I Turned As I Had Turned As A Boy… | 1970 年的原盤總長 62 分 44 秒，…同一張碟另有 12 軌的版本：1971 年的 12 吋與後來的日本 CD 都只收 12 軌 | Psychedelic Baby 的團員訪談與 President Records 的團史都寫這張首作 1971 年（President：mid-1971）由 Nepentha 發行，沒有 1970 年的版本；簡介把 1970 年當原盤、1971 年當 12 軌版，與來源不符，建議核對 Discogs 版本年份後改寫，或刪去 1970 年的說法。 | https://president-records.co.uk/artist/dulcimer-2/ |
 | ar-u-023 | Earthling | Radar | Tim Saul 自己也參與過 Portishead《Dummy》的試聽帶 | 本次兩次搜尋（含 Portishead 與 Dummy 相關報導）都找不到這項說法的出處；只查到 Saul 協助製作 Stephanie McKay 的專輯、Barrow 與 Saul 合作 Earthling。建議改回『查證有出處』的版本或請主線核對原出處（若原出處是 Discogs 藝人頁的 credits 則可保留）。 | https://en.wikipedia.org/wiki/Earthling_(band) |
 | ar-u-023 | Egschiglen | Zazal | 《Zazal》2000 年錄於德國 Bocholt 的 Grenzland Studio，由 Heaven and Earth 發行（HE 10） | rambles.net 的樂評寫 Zazal 是 2002 年的 Felmay 版、錄於德國南部，alba Kultur／womex 頁面列 Heaven & Earth 發行年 2002；Bocholt 位在德國西北部，與『德國南部』不符。卡池年份 2000 與簡介的錄音地點、年份建議核對 Discogs 與 CD 版權頁後再決定是否改寫（可能是 2000 年原版與 2002 年再版並存）。 | https://rambles.net/egschiglen_zazal02.html |
+| ar-u-024 | Eric Darius | Goin' All Out | 專輯在 Top Contemporary Jazz 榜最高第 9 名 | 維基 Eric Darius 條目寫該專輯在 Billboard 爵士專輯榜最高第 14 名（8 月 2 日號起進 Top Contemporary Jazz 的事實庫記載另有出處）；榜名與名次對不上，建議本機對 Billboard 原榜（事實庫那期 PDF）再核一次最高名次。 | https://en.wikipedia.org/wiki/Eric_Darius |
+| ar-u-024 | Eric Darius | Goin' All Out | 同名曲在 2008 年 10 月 25 日那一週登上 Smooth Jazz Songs 榜首 | 維基寫同名單曲同週登上的是『Contemporary Jazz chart』第 1 名，簡介寫 Smooth Jazz Songs；兩個榜名不同，需對原榜確認用哪個名稱。 | https://en.wikipedia.org/wiki/Eric_Darius |
+| ar-u-024 | Experimental Audio Research | Pestrepeller | E.A.R. 用來延續他在 Spacemen 3 之外的實驗性作品 | Discogs 原文是 the more experimental work he had contributed to Spacemen 3 since the 1980s，指他在 Spacemen 3 期間就貢獻的實驗成分，不是『之外』；建議改為『延續他自 1980 年代在 Spacemen 3 期間就做的實驗性作品』。 | https://www.discogs.com/artist/90418 |
