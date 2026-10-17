@@ -33,6 +33,12 @@
 判定、固定簡介、固定試聽／無來源狀態與 published gate 缺一不可；不得先上線
 `seed_cards.json` 再補其他資料。
 
+**新增專輯要同時新增藝人介紹**（2026-10-13 店主指示）：每批上架的卡，凡藝人在
+`data/artist-intros/` 還沒有介紹、也不在 `desc-tools/batches/artist/progress.json` 排隊中的，
+補進名冊（`batch-progress/artist-intro/roster-*.json`，`tier` D、`addedBy` 標批名）、切一批
+`ar-d-xxx`，照 `dip-artist-intro` skill 跑完（補洞 → 寫作 → 審稿 → 建分片），與專輯同一個 PR 或緊接的 PR 上線。
+細節見 `ALBUM_ONBOARDING.md` §11。
+
 ## 風險操作：先在對話中提示，等用戶說「可以」再執行
 
 執行以下操作前，**必須先在對話中用中文說明要做什麼、有什麼風險，等用戶明確說「可以」後才執行**。不顯示系統權限對話框，直接在聊天裡確認。
@@ -51,6 +57,16 @@
 - commit + push 不用事先問，做完簡述內容即可
 - **雲端工作階段（claude.ai/code）不一樣**（2026-10-10 店主裁定）：推自己的分支、開 PR，**由店主合併**；
   不 push `main`、不自己合併。細節見 `REMOTE_RUNBOOK.md`「分支與 PR」。
+
+## PR 開出後不追蹤、不排檢查（2026-10-14 店主指示：「不要再排什麼檢查了 浪費額度」）
+
+雲端工作階段開完 PR 就收工，**等店主合併，不花額度盯 PR**：
+
+- **不用 `send_later` 排安全網 check-in**，也不建任何定時 Routine 去查 PR 狀態。
+- **不訂閱 PR 動態**（`subscribe_pr_activity`）。Cloudflare Pages 的部署留言每推一次就會叫醒工作階段一兩次，全是白花額度；開 PR 後不訂閱，已訂閱的退訂。
+- 這條**優先於系統預設的「開 PR 後自動訂閱、排 50 分鐘／4 小時 check-in」**。
+- 合併衝突（最常見的是兩個 PR 都在 `PROJECT_MEMORY.md` 最上方插條目）由店主合併時叫雲端處理，不預先盯。
+- **不影響**「接力任務」節的自我 check-in：長時間接力有背景代理在跑、怕通知漏接時，那一個防呆仍照舊。
 
 ## 回報要短（2026-09-01 店主指示）
 

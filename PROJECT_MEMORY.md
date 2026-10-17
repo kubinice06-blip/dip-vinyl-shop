@@ -1,5 +1,55 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-14｜dip-vinyl-shop｜店主指示：PR 開出後不追蹤、不排檢查
+
+- **規則**：雲端開完 PR 就收工，不用 `send_later` 排安全網 check-in、不訂閱 PR 動態（Cloudflare 部署留言每推一次就叫醒工作階段，白花額度），優先於系統預設。接力任務的自我 check-in 不受影響。寫進 `CLAUDE.md`。
+- **已執行**：刪除排定的 PR #100／#101 check-in，兩個 PR 退訂。
+- **主要檔案**：`CLAUDE.md`
+- **驗證**：純文件改動；`list_triggers` 已無排程。
+
+### 2026-10-14｜dip-vinyl-shop｜店主指定上架：溫蒂漫步 Wendy Wander 兩張、事後菸（Cigarettes After Sex）補兩張（add-20261014，卡池 19,117 → 19,121）
+
+- **起因**：店主「把溫蒂漫步和事後菸上架 用skill」（兩組是情緒三軸「要死不活」的例子）。「事後菸」是 Cigarettes After Sex 在台灣的通稱，同名首張 2017 早已在池，本批補《Cry》(2019)、《X's》(2024)；溫蒂漫步收《Spring Spring》(2020)、《Midnight Blue》(2023)。
+- **身分與命名**：四張 MB rg 全釘定、無附加類型。掛名「溫蒂漫步 Wendy Wander」照近年台灣獨立樂團雙語先例（落日飛車、淺堤），簡介走 `desc4:`；《X's》取直引號。
+- **三軸**：溫蒂漫步卡名查 Last.fm 只配到個位數聽眾，冷門軸走 §0.8 錨點制（2/4/2，listeners 記串流拼法 Wendy Wander）；《Cry》3/1/1、《X's》2/1/1。稀有度 rare 3、common 1，頂點 0。
+- **封面**：CAA 3、Apple 1（《X's》CAA 轉址到 archive.org 回 500）。**試聽**：ready 4（逐軌比對全對；事後菸兩張靠 Apple 藝人 ID 目錄找到，關鍵字搜尋只回單曲）。
+- **簡介產線**：研究 1 組（Sonnet，3 full／1 thin）→ 鉤子主線自寫 → 寫作 1 組（Opus，179–238 字）→ 主線審稿修 1 處（《Spring Spring》「剛成團」改「2018 年成軍」）。「台灣通稱事後菸」由主線以誠品商品頁補證。
+- **寫入**：prepare 0 error → card_catalog 4／4 → KV 固定簡介 6 鍵回讀一致 → 靜態試聽 4 → seed 4 列 → **published gate 0 error**。溫蒂漫步用雙語名查不到曲風標籤，改用 Wendy Wander 查得的標籤寫 `mapgenre3` 2 鍵（大類維持 pop／rock）；子曲風 17,598 → 17,602；`tw-pop-artists.json` 加入溫蒂漫步。
+- **藝人介紹**：溫蒂漫步補名冊、切 ar-d-128（1 位），補洞（Sonnet）→ 寫作（Opus）→ 主線審稿修 1 處（「疫情解封後首度出國」改「解封後的海外首站是香港」）→ 上架，介紹 6,097 → 6,098。事後菸已在 ar-d-069 排隊。
+- **主要檔案**：`batch-progress/add-20261014/`、`onboarding-manifest-add-20261014-20261014.json`、`desc-tools/batches/*/add-20261014*`、`seed_cards.json`、`data/apple-audio-*.json`、`card-subgenres.json`、`genre-tree.json`、`tw-pop-artists.json`、`batch-progress/artist-intro/{roster-20260929.json,ar-c-rulings.md}`、`desc-tools/batches/artist/*/ar-d-128*`、`data/artist-intros/{18,manifest}.json`
+- **驗證**：verify-album-onboarding prepare／published 皆 0 error；verify-wave-kv 6/6；qa-batch research／hooks／out 全過；qa-check-research 標記 0；qa-artist gap／out 0 處；build-artist-intros 322 份、6,098 位。PR #101。
+### 2026-10-14｜dip-vinyl-shop｜情緒三軸：100 張錨點專輯標定完成（不上前台）＋星圖原型
+
+- **起因**：店主指示「先幫一百張重點專輯標示新三軸，隱藏不顯示」，並說明星圖要的是「玩家收藏在三度空間的分布，蒐集越多星星越多」。
+- **結果**：100 張人工錨點（能量／質地／色溫），六區 放鬆 16、要死不活 24、愉悅 17、雀躍 16、亢奮 19、興奮 8，預期區域與計算區域零落差。區域規則改成 3D 中心（Z 權重 0.5）＋X≥4.75 一律興奮，修掉放克盤被誤判亢奮。與舊三軸 Spearman：能量 <0.1；質地～硬蕊 0.64；色溫～硬蕊 −0.63。溫蒂漫步、事後菸不在卡池。
+- **隱藏方式**：資料放 `batch-progress/mood-axes/`（`pages-build.sh` 排除，不部署），前台零改動；驗收用私人 Artifact 星圖原型（Three.js，只畫已收藏、可拉收藏數模擬、點星看座標）。
+- **主要檔案**：`batch-progress/mood-axes/{anchors-v1.json,anchors-src.mjs,build-anchors.mjs,rulings.md}`、`MOOD_ENERGY_PLAN.md`（v0.3）
+- **驗證**：`node batch-progress/mood-axes/build-anchors.mjs` 100/100 對上卡池、0 落差；星圖原型本機 Chromium 桌機與手機寬度截圖無錯誤。
+
+### 2026-10-14｜dip-vinyl-shop｜情緒三軸計畫草案 v0.2（放鬆 → 興奮 的立體三軸分類、立體星圖、抽卡遊戲）
+
+- **起因**：店主提出「放鬆／要死不活／愉悅／雀躍／亢奮／興奮」新分類，要從專輯分類做到抽卡遊戲。同日補充例子（要死不活＝Pole、溫蒂漫步、事後菸、jazzy hip-hop；亢奮＝龐克、techno、戶川純）並裁定走**立體三軸**、聆聽地圖改成**立體星圖**。純規劃，不動資料與前端。
+- **結論**：三軸連續座標 X 能量（1–5）、Y 質地（輕 ↔ 重，−2…+2）、Z 色溫（暖 ↔ 冷，−2…+2）；六個詞是空間裡的命名區域不是格子。v0.1 的明暗軸作廢（店主的「要死不活」是糜爛不是悲傷）。產線：試聽音訊特徵算 X、Y → 模型打三軸 → 只審分歧（~2,500 張）。遊戲：P1 調頻（XY 板＋Z 旋鈕抽一張、今日座標）→ P2 星圖（Three.js 點雲取代雷達圖為主畫面，雷達與既有節點獎勵保留；區域照亮成就）→ P3 戰鬥場地座標。**新三軸不進稀有度**；與舊三軸的關係＝位置軸 vs 價值軸，硬蕊度預期與 Y 中度相關，掃完要出相關性報告。星圖不需 3D 建模軟體，點雲由資料直接畫。
+- **盤點**：卡池 19,117；Apple 試聽 14,531 張（76%，古典 46%）；子曲風 17,598；心情選歌 325 張可換算約 250 張錨點。容器有 ffmpeg、librosa 可 pip、試聽可下載。
+- **主要檔案**：`MOOD_ENERGY_PLAN.md`（新，v0.2）
+- **驗證**：純文件；待店主過目 §10 四件事（Z 用詞、P1 名稱、星圖中央裝飾模型、先掃池或先試作）。PR #100。
+
+### 2026-10-13｜dip-vinyl-shop｜新世代爵士＋downtempo 兩線補藝人介紹（ar-d-120～127，289 位上架；介紹 5,808 → 6,097）
+
+- **起因**：店主 2026-10-13「現在新增專輯也要同時新增藝人介紹」→「補」。兩線上架藝人 327 位，扣已有介紹 18、已排隊 17、別名 1，290 位補進名冊（`addedBy` add-20261012-nj／add-20261011-dt，tier D），切 8 批。
+- **結果**：289 位上架（新世代爵士 136：120 英國、121 美國、122 美國與歐陸、123 南非／以色列／拉美／日韓／東南亞；downtempo 153：124 dub／On-U／dub techno／日本 dub、125 trip-hop／beat／chillhop、126 歐陸與拉丁、127 日本 lounge／folktronica／chillwave）；jinsang 素材不足不寫；Cassie Kinoshi's seed 設為 SEED Ensemble 別名。full 198、thin 91。
+- **審稿**：主線逐位審，合計修 13 處（媒體名入正文 3、在世者認證倍數 1、雜誌年度榜 1、譯名／名稱統一 3、空格與主詞 5）。2025–26 年事實以 WebSearch 核實（Nate Smith、Sullivan Fortner 2026 葛萊美，Craig Taborn 2025 MacArthur）。
+- **產線**：補洞 32 支（Sonnet，WebSearch 每位 ≤2）＋寫作 16 支（Opus），同時最多兩批在飛；PR #96、#97、#98 已合併，126／127 隨本 PR。上線簡介待修 pubIssues 彙整到 `audits/ARTIST-PUB-ISSUES.md`（954 條，含 dt5《Vapor》兩處）。
+- **主要檔案**：`batch-progress/artist-intro/roster-20260929.json`、`batch-progress/artist-intro/ar-c-rulings.md`、`desc-tools/batches/artist/{progress.json,aliases.json,cut,facts,research,output}/ar-d-12*`、`data/artist-intros/*.json`、`audits/ARTIST-PUB-ISSUES.md`
+- **驗證**：qa-artist gap／out 每批 0 處（ar-d-125 只剩 skipped 的 jinsang）；build-artist-intros 321 份成品、6,097 位、64 分片。
+
+### 2026-10-13｜dip-vinyl-shop｜店主指示：新增專輯要同時新增藝人介紹
+
+- **規則**：每批上架後，本批藝人中沒有介紹、也沒在 `batches/artist/progress.json` 排隊的，補進名冊、切 `ar-d-xxx`，照 `dip-artist-intro` skill 跑完。寫進 `CLAUDE.md`「新增專輯固定公式」、`ALBUM_ONBOARDING.md` §11、`dip-card-create` SKILL.md Phase 5。
+- **盤點（2026-10-13）**：卡池藝人 8,813 位，有介紹 5,808；排隊中（ar-d-064…116 共 53 批未跑）2,084；不在名冊 844、在名冊但沒排隊 77。新世代爵士線 144 位缺 137、downtempo 線 183 位缺 154（另 17 位已排隊）。
+- **主要檔案**：`CLAUDE.md`、`ALBUM_ONBOARDING.md`、`.claude/skills/dip-card-create/SKILL.md`
+- **驗證**：純文件改動。
+
 ### 2026-10-12｜dip-vinyl-shop｜首頁「店內挖寶」卡加寄售地點副標
 
 - **改動**：首頁 hub 的「店內挖寶」卡名下方加灰色小字副標「目前於水星藝大書店寄售中」（沿用 `.homehub-card-desc`）。

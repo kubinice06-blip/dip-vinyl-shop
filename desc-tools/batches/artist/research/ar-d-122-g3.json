@@ -1,0 +1,479 @@
+[
+  {
+    "key": "kuba więcek trio",
+    "name": "Kuba Więcek Trio",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          { "f": "領隊 Kuba Więcek 1994 年生於波蘭 Rybnik，是中音薩克斯風手兼作曲人。", "src": "https://pl.wikipedia.org/wiki/Kuba_Więcek", "src2": "https://nospr.org.pl/en/kalendarz/artysci/kuba-wiecek", "from": "new" },
+          { "f": "他小時候先學大提琴，幾年後才改吹薩克斯風。", "src": "https://nospr.org.pl/en/kalendarz/artysci/kuba-wiecek", "single": true, "from": "new" },
+          { "f": "他先在阿姆斯特丹讀了一年，再進哥本哈根的 Rytmisk Musikkonservatorium（節奏音樂學院），老師包括 Lee Konitz、Steve Lehman 與 David Binney。", "src": "https://pl.wikipedia.org/wiki/Kuba_Więcek", "src2": "https://nospr.org.pl/en/kalendarz/artysci/kuba-wiecek", "from": "new" }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          { "f": "他的音樂把爵士和古典、電子、民謠、搖滾與嘻哈的影響混在一起，錄音室和現場都用合成器。", "src": "https://nospr.org.pl/en/kalendarz/artysci/kuba-wiecek", "single": true, "from": "new" },
+          { "f": "三重奏的另外兩位是 Michał Barański（低音提琴、電貝斯，也用 konnakol 與人聲）和 Łukasz Żyta（鼓與鐘琴）；曲子全由 Więcek 寫，〈Jazz Robots〉請 Marcin Masecki 客串合成器。", "src": "https://www.discogs.com/release/13806178", "single": true, "from": "bank" }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          { "f": "Polish Jazz 是波蘭國家唱片公司 Polskie Nagrania 的老系列，Krzysztof Komeda 與 Tomasz Stańko 都出過；Więcek 的三重奏連續把《Another Raindrop》（2017）、《Multitasking》（2019）、《Kwiateczki》（2021，與 Paulina Przybysz 合作）收進這個系列。", "src": "https://www.britishpoles.uk/?p=2908", "src2": "https://nospr.org.pl/en/kalendarz/artysci/kuba-wiecek", "from": "new" },
+          { "f": "《Another Raindrop》（2017）拿下 2018 年 Fryderyk 獎的「爵士唱片出道作」類（Jazzowy Fonograficzny Debiut Roku，得獎）。", "src": "https://pl.wikipedia.org/wiki/Kuba_Więcek", "src2": "https://nospr.org.pl/en/kalendarz/artysci/kuba-wiecek", "from": "new" },
+          { "f": "《Multitasking》（2019）被波蘭週刊《Polityka》選為 2019 年的波蘭年度專輯（得獎）。", "src": "https://pl.wikipedia.org/wiki/Kuba_Więcek", "src2": "https://nospr.org.pl/en/kalendarz/artysci/kuba-wiecek", "from": "new" }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          { "f": "2017 年出道作《Another Raindrop》是 Polish Jazz 系列第 78 號。", "src": "https://www.britishpoles.uk/?p=2908", "single": true, "from": "bank" },
+          { "f": "2019 年《Multitasking》是 Polish Jazz 系列第 82 號，由 Warner Music Poland 旗下的 Polskie Nagrania 發行。", "src": "https://www.discogs.com/release/13806178", "single": true, "from": "bank" }
+        ]
+      }
+    },
+    "milestones": [
+      { "f": "2018 年 Fryderyk 爵士唱片出道作獎（得獎，《Another Raindrop》）。", "src": "https://pl.wikipedia.org/wiki/Kuba_Więcek", "src2": "https://nospr.org.pl/en/kalendarz/artysci/kuba-wiecek", "from": "new" },
+      { "f": "2019 年《Multitasking》獲《Polityka》選為波蘭年度專輯。", "src": "https://pl.wikipedia.org/wiki/Kuba_Więcek", "src2": "https://nospr.org.pl/en/kalendarz/artysci/kuba-wiecek", "from": "new" }
+    ],
+    "conflicts": [
+      "事實庫引 pl.wikipedia 說他「被逼著拉了八年大提琴、音樂學校第九年才愛上薩克斯風」；本次讀到的 pl 維基與 NOSPR 簡介只寫「先學大提琴、數年後改吹薩克斯風」，facts 採後者，八年與第九年的細節不收。"
+    ],
+    "searches": 3,
+    "failedFetches": [],
+    "pubIssues": [],
+    "status": "full",
+    "notes": "同名檢查：卡池只有《Multitasking》一張，與 Kuba Więcek 本人的三重奏吻合。三格都有料。WebSearch 1 次（Fryderyk／Polityka 查證）、WebFetch 2 次（pl 維基、NOSPR 官方藝人頁）。未收（單源或未開頁）：①「Polish Jazz 28 年來第一張新人出道作」「系列最年輕的出道者」只見 britishpoles 單源與搜尋摘要，屬「第一／最年輕」宣稱，不放 facts；②DownBeat 2020 年「25 位值得關注樂手」與 Jazz Forum 年輕薩克斯風手票選（2017 起）只見 NOSPR 單源，獎項類單源不收；③Mateusz Święcicki 音樂獎只見 NOSPR；④NOSPR 另寫他畢業於克拉科夫音樂院，pl 維基沒寫，不收。pl 維基與 NOSPR 為獨立來源；Fryderyk 的年份（2018）只有 pl 維基明寫，NOSPR 只寫得獎未寫年份，已在 facts 引用兩源，年份以 pl 維基為準。"
+  },
+  {
+    "key": "shake stew",
+    "name": "Shake Stew",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          { "f": "領軍的 Lukas Kranzelbinder 在林茲的布魯克納私立大學跟 Peter Herbert 學低音提琴，2014 年畢業。", "src": "https://www.lukaskranzelbinder.com/bio/", "single": true, "from": "bank" },
+          { "f": "Shake Stew 2016 年在奧地利成軍，起點是薩爾費爾登爵士節（Jazzfestival Saalfelden）開幕音樂會的委託創作，團的第一次公開演出就在該節。", "src": "https://www.lukaskranzelbinder.com/bio/", "src2": "https://de.wikipedia.org/wiki/Shake_Stew", "from": "bank" },
+          { "f": "成軍後樂團當過維也納爵士俱樂部 Porgy & Bess 一個樂季的駐場樂團。", "src": "https://de.wikipedia.org/wiki/Shake_Stew", "single": true, "from": "new" }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          { "f": "編制是兩把貝斯、兩套鼓加三支管樂（中音與次中音薩克斯風、小號），從成軍起就固定；律動由雙貝斯與雙鼓層層疊出，管樂在上面吹出催眠式的長線。", "src": "https://de.wikipedia.org/wiki/Shake_Stew", "src2": "https://shakestew.bandcamp.com/album/gris-gris", "from": "bank" },
+          { "f": "Kranzelbinder 除了低音提琴與電貝斯，也彈摩洛哥三弦低音琵琶 guembri，所有曲子都出自他手。", "src": "https://shakestew.bandcamp.com/album/gris-gris", "single": true, "from": "bank" }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          { "f": "2021 年（德國爵士獎首屆）Shake Stew 獲 Deutscher Jazzpreis「國際年度樂團」類（得獎）。", "src": "https://www.musicexport.at/shake-stew-and-wolfgang-muthspiel-awarded-the-deutscher-jazzpreis-2021/", "src2": "https://www.traumton.de/?p=7632", "from": "new" },
+          { "f": "樂團的演出足跡遍及歐洲、加拿大、美國、摩洛哥、突尼西亞與墨西哥。", "src": "https://de.wikipedia.org/wiki/Shake_Stew", "single": true, "from": "new" }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          { "f": "2018 年第二張專輯《Rise and Rise Again》有 Shabaka Hutchings 客串。", "src": "https://shakestew.bandcamp.com/album/gris-gris", "single": true, "from": "bank" },
+          { "f": "2019 年 11 月《Gris Gris》以雙 CD 發行，是第三張錄音室專輯，廠牌 Traumton Records。", "src": "https://shakestew.bandcamp.com/album/gris-gris", "single": true, "from": "bank" }
+        ]
+      }
+    },
+    "milestones": [
+      { "f": "2021 年獲 Deutscher Jazzpreis「國際年度樂團」類。", "src": "https://www.musicexport.at/shake-stew-and-wolfgang-muthspiel-awarded-the-deutscher-jazzpreis-2021/", "src2": "https://www.traumton.de/?p=7632", "from": "new" }
+    ],
+    "conflicts": [],
+    "searches": 4,
+    "failedFetches": ["https://db.musicaustria.at/print/pdf/node/207220（PDF 壓縮無法讀，未取得內容）"],
+    "pubIssues": [],
+    "status": "full",
+    "notes": "同名檢查：卡池兩張（Gris Gris、The Golden Fang）皆為奧地利七重奏，吻合。德國爵士獎年份來源不一致：de 維基寫 2022，musicexport.at（2021-06-09 報導，稱該獎「今年首屆」、樂團得獎）寫 2021，musicaustria 資料庫連結與搜尋結果也指 2021；Traumton 官網只說「最近獲獎」未給年份。採 2021（facts 只放 2021）。未收：①Kranzelbinder 1988 年生於克拉根福與「薩爾費爾登開幕委託史上最年輕受託者」只見其官網單源（生年與「最年輕」皆高風險）；②2020 年 Gris Gris 入德國唱片評論獎季度榜（Quartals-Bestenliste）、2023 年 Amadeus Austrian Music Award（爵士／世界音樂／藍調類）只見 de 維基單源；③Robert Fischer（jazz-fun.de）十週年文章對現場演出的稱讚，只見 de 維基轉述，未開原頁。第一版 de 維基成員名單與專輯研究稿不同（現任含 Yvonne Moriel，Clemens Salesny、Mathias Koch 為前成員），facts 只寫編制不點名樂手，避開成員異動。"
+  },
+  {
+    "key": "michael wollny trio",
+    "name": "Michael Wollny Trio",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          { "f": "Michael Wollny 1978 年生於德國施韋因富特（Schweinfurt）。", "src": "https://en.wikipedia.org/wiki/Michael_Wollny", "src2": "https://de.wikipedia.org/wiki/Michael_Wollny", "from": "new" },
+          { "f": "他少年時在施韋因富特音樂學校與維爾茨堡的 Hermann-Zilcher 音樂院學鋼琴和小提琴，1997 年起進維爾茨堡音樂學院，跟 Chris Beier 學習，也上過 John Taylor 與 Walter Norris 的課。", "src": "https://de.wikipedia.org/wiki/Michael_Wollny", "single": true, "from": "new" },
+          { "f": "1998 至 2002 年他是巡迴演出的德國聯邦爵士樂團（Bundesjazzorchester）成員，2001 年起與薩克斯風手 Heinz Sauer 組成雙人和四重奏長期合作。", "src": "https://en.wikipedia.org/wiki/Michael_Wollny", "src2": "https://de.wikipedia.org/wiki/Michael_Wollny", "from": "new" },
+          { "f": "他的長期三重奏原本叫 [em]，成員是貝斯手 Eva Kruse 與鼓手 Eric Schaefer；ACT 2004 年與他們結識，2005 年首張《call it [em]》成為該廠牌「Young German Jazz」系列的開頭。", "src": "https://de.wikipedia.org/wiki/Michael_Wollny", "src2": "https://michaelwollny.com/en/music-album/weltentraum-live-philharmonie-berlin/", "from": "new" }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          { "f": "德文維基歸納他的特色有四點：重和聲勝過節奏與旋律、拍號模糊、作曲與即興取得平衡、樂句流動不中斷。", "src": "https://de.wikipedia.org/wiki/Michael_Wollny", "single": true, "from": "new" },
+          { "f": "他的作品從 2004 年起越來越常引用其他樂手、作曲家、作家與電影導演。", "src": "https://de.wikipedia.org/wiki/Michael_Wollny", "single": true, "from": "new" },
+          { "f": "《法蘭克福匯報》（FAZ）的樂評人 Wolfgang Sandner 形容他是敏感、帶沉思氣質、手觸輕的即興者，突然冒出的點子有時不易跟上。", "src": "https://michaelwollny.com/en/music-album/weltentraum-live-philharmonie-berlin/", "single": true, "from": "new" }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          { "f": "2007 年 [em] 三重奏在倫敦獲 Ronnie Scott's Jazz Award 的「最具潛力國際新人」（得獎）。", "src": "https://en.wikipedia.org/wiki/Michael_Wollny", "src2": "https://de.wikipedia.org/wiki/Michael_Wollny", "from": "new" },
+          { "f": "2010 年 Echo Jazz 首度頒獎，Wollny 拿下「國內年度器樂手：鋼琴／鍵盤」類（得獎）。", "src": "https://en.wikipedia.org/wiki/Michael_Wollny", "src2": "https://de.wikipedia.org/wiki/Michael_Wollny", "from": "new" },
+          { "f": "2011 年他的三重奏在 Neuer Deutscher Jazzpreis 獲獎，Wollny 本人同時獲選最佳獨奏者（得獎）。", "src": "https://en.wikipedia.org/wiki/Michael_Wollny", "src2": "https://de.wikipedia.org/wiki/Michael_Wollny", "from": "new" },
+          { "f": "2013 年他獲巴伐利亞音樂國家獎（Bayerischer Staatspreis für Musik，得獎）。", "src": "https://en.wikipedia.org/wiki/Michael_Wollny", "src2": "https://de.wikipedia.org/wiki/Michael_Wollny", "from": "new" },
+          { "f": "《南德日報》（Süddeutsche Zeitung）的 Oliver Hochkeppel 形容他像是用音樂史的磚塊蓋自己新房子的人，並拿他和 Mozart、Ellington、Lennon 這類創作者相比。", "src": "https://michaelwollny.com/en/music-album/weltentraum-live-philharmonie-berlin/", "single": true, "from": "new" }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          { "f": "2005 年簽約 ACT；2007 年發表第一張獨奏專輯《Hexentanz》。", "src": "https://en.wikipedia.org/wiki/Michael_Wollny", "src2": "https://de.wikipedia.org/wiki/Michael_Wollny", "from": "new" },
+          { "f": "2014 年《Weltentraum》由美國貝斯手 Tim Lefebvre 頂替休息中的 Eva Kruse，與 Eric Schaefer 組成新的三人陣容，3 月在柏林愛樂廳錄下現場版。", "src": "https://michaelwollny.com/en/music-album/weltentraum-live-philharmonie-berlin/", "single": true, "from": "bank" }
+        ]
+      }
+    },
+    "milestones": [
+      { "f": "2010 年首屆 Echo Jazz 的鋼琴／鍵盤器樂手獎。", "src": "https://en.wikipedia.org/wiki/Michael_Wollny", "src2": "https://de.wikipedia.org/wiki/Michael_Wollny", "from": "new" },
+      { "f": "2013 年巴伐利亞音樂國家獎。", "src": "https://en.wikipedia.org/wiki/Michael_Wollny", "src2": "https://de.wikipedia.org/wiki/Michael_Wollny", "from": "new" }
+    ],
+    "conflicts": [
+      "事實庫與卡池專輯《Weltentraum》是 Wollny 與 Lefebvre、Schaefer 的陣容；英文維基稱此為「Michael Wollny Trio」，德文維基與 ACT 稱長期三重奏為 [em]（Kruse、Schaefer）。2007 年 Ronnie Scott's 獎、2011 年 Echo Jazz 團體獎在德文維基記在 em 名下，英文維基記為「the trio」。facts 的獎項寫成 [em] 或「他的三重奏」，不寫成 Michael Wollny Trio。"
+    ],
+    "searches": 3,
+    "failedFetches": ["https://michaelwollny.com/en/biography/（404）", "https://bauhauskooperation.com/…/michael-wollny（301 轉到錯誤網址，未取得）"],
+    "pubIssues": [],
+    "status": "full",
+    "notes": "同名檢查：卡池只有《Weltentraum》，是 Michael Wollny 的 ACT 專輯，吻合。獎項的兩源是英文維基＋德文維基，屬同一來源家族，非獨立；Wollny 自己的官網（michaelwollny.com）不給獎項年份。已知限制：獎項沒有非維基第二源，若寫作層要用，建議保守寫「多次獲德國爵士獎項」不點細項。未收：①《Weltentraum》上德國流行榜前五十（官網稱德國爵士鋼琴家專輯首次）、德文維基寫第 46 名，屬在世者榜位與「首次」宣稱，單源且為官網自述，不放 facts；②ACT 創辦人 Siegfried Loch 稱他是繼 Albert Mangelsdorff 之後德國最重要的爵士樂手——只見搜尋摘要，未開頁；③官網轉述《Jazzwise》封面故事與《DownBeat》四星，無年份期別；④德文維基稱 Wollny「gilt als großes Talent」，無具名出處，不收；⑤2017 巴伐利亞文化獎、2018 維爾茨堡文化獎只見德文維基單源。"
+  },
+  {
+    "key": "nik bärtsch's ronin",
+    "name": "Nik Bärtsch's Ronin",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          { "f": "Nik Bärtsch 是蘇黎世人，1997 年拿到蘇黎世音樂學院的古典鋼琴文憑，1998 至 2001 年在蘇黎世大學念語言學、音樂學與哲學。", "src": "https://en.wikipedia.org/wiki/Nik_B%C3%A4rtsch", "single": true, "from": "new" },
+          { "f": "他 14 歲被黑澤明的《亂》吸引，開始長期接觸日本文化；18 歲時母親帶他接觸坐禪，並送他鈴木俊隆的《禪者的初心》；他也練合氣道，並把它和自己對音樂的態度連在一起。", "src": "https://en.wikipedia.org/wiki/Nik_B%C3%A4rtsch", "single": true, "from": "new" },
+          { "f": "Ronin 2001 年成立，延續他 1997 年組的樂團 Mobile 的 ritual groove 想法。", "src": "https://en.wikipedia.org/wiki/Nik_B%C3%A4rtsch", "src2": "https://www.nikbaertsch.com/", "from": "bank" },
+          { "f": "他在蘇黎世的 EXIL 俱樂部每週一固定舉辦工作坊與演出（Montags），是他持續打磨 ritual groove music 的場子。", "src": "https://www.nikbaertsch.com/", "src2": "https://en.wikipedia.org/wiki/Nik_B%C3%A4rtsch", "from": "new" }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          { "f": "Bärtsch 把自己的音樂叫 ritual groove music，這個詞原是他 2001 年 Mobile 專輯的標題；音樂靠重複、精簡與交錯的節奏，近似建築式的空間，他說一首曲子可以像房間一樣讓人走進去、住在裡面。", "src": "https://www.nikbaertsch.com/", "single": true, "from": "new" },
+          { "f": "樂團的目標是「以最少的手段造成最大的效果」。", "src": "https://www.nikbaertsch.com/", "single": true, "from": "new" },
+          { "f": "AllMusic 的 Michael Nastos 把這種音樂稱為「zen funk」；影響包括 Steve Reich 的極簡主義、John Cage 與 Morton Feldman，以及 James Brown 的反覆低音型。", "src": "https://en.wikipedia.org/wiki/Nik_B%C3%A4rtsch", "single": true, "from": "bank" }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          { "f": "英國《觀察家報》（The Observer）的樂評人 Stuart Nicholson 寫道，Bärtsch 神祕的音樂會比多數人追逐的速食口味留得更久。", "src": "https://www.nikbaertsch.com/", "single": true, "from": "new" },
+          { "f": "2021 年他與 Andrea Pfisterer 合寫、由 Lars Müller 出版社出版《LISTENING – Music, Movement, Mind》，把自己對聆聽、動作與心智的想法寫成書。", "src": "https://www.nikbaertsch.com/", "single": true, "from": "new" }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          { "f": "2006 年 Manfred Eicher 把 Ronin 簽進 ECM，首張《Stoa》同年發行。", "src": "https://en.wikipedia.org/wiki/Nik_B%C3%A4rtsch", "single": true, "from": "new" },
+          { "f": "2011 年貝斯手 Thomy Jordi 接替 Björn Meyer；打擊手 Andi Pupato 2002 至 2012 年在團。", "src": "https://www.nikbaertsch.com/", "single": true, "from": "new" }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "官網寫 Sha 彈貝斯與低音單簧管（bass and contrabass clarinet），專輯研究稿寫中音薩克斯風與低音單簧管；兩者不一致，facts 不點 Sha 的樂器。",
+      "事實庫與上線簡介都寫 Awase 是 ECM 第四張錄音室專輯；搜尋結果的 ECM 目錄另列 2012 年《Ronin Live》，若算現場專輯則為 ECM 第五張發行，見 pubIssues。"
+    ],
+    "searches": 5,
+    "failedFetches": ["https://www.nikbaertsch.com/media/publication/nikbaertsch-exil-live-review_1.pdf（PDF 無文字）", "https://bigearsfestival.org/nik-b%c2%8artschs-ronin/（404）"],
+    "pubIssues": [
+      { "album": "Awase", "claim": "ECM 的發行月份是 2018 年 5 月，Ronin 在這家廠牌累積到四張", "problem": "ECM 目錄另有 2012 年現場專輯《Ronin Live》，若計入則 Awase 是 ECM 第五張發行、第四張錄音室專輯；「四張」需限定為錄音室專輯。此條依據為搜尋結果列出的 ECM 目錄，未開頁核對。", "src": "https://www.allaboutjazz.com/awase-nik-bartsch-ecm-records-review-by-mike-jurkovic.php" }
+    ],
+    "status": "thin",
+    "notes": "同名檢查：卡池只有《Awase》（2018），是 Nik Bärtsch's Ronin 的 ECM 專輯，吻合。legacy 偏薄：能找到的有出處共識評價只有 Nicholson 一句與一本書，後輩點名受他影響的資料、Ronin 在瑞士或歐洲爵士的位置，兩次搜尋都沒有取得。未收（單源，獎項類）：DownBeat 2016 年 Rising Stars Keyboards、2021 年 Critics Poll Rising Star Piano、2019 年蘇黎世市藝術獎、2015 年瑞士音樂獎入圍（英文維基單源）；每週一 EXIL 演出「第 710 場」的評論只見搜尋摘要；2024 年專輯《Spin》回到獨立發行、離開 ECM 約十五年，只見搜尋摘要；「曲子大致全寫好、只容許細微詮釋差異」與 Stoa 評論「James Brown 請 Steve Reich 當音樂總監」只見搜尋摘要（All About Jazz／Audiophile Audition），未開頁。1971 年生於蘇黎世的生年只有英文維基單源，不放 facts。ECM 官方藝人頁幾乎沒有生平。"
+  },
+  {
+    "key": "colin vallon trio",
+    "name": "Colin Vallon Trio",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          { "f": "Colin Vallon 1980 年生於瑞士洛桑（Lausanne）。", "src": "https://en.wikipedia.org/wiki/Colin_Vallon", "src2": "https://thejazzmann.com/reviews/review/colin-vallon-danse", "from": "bank" },
+          { "f": "他先學了兩年古典音樂，14 歲起跟爵士鋼琴家 Marc Ueter 學爵士，1998 年進瑞士爵士學校（Swiss Jazz School）。", "src": "https://en.wikipedia.org/wiki/Colin_Vallon", "single": true, "from": "new" },
+          { "f": "他 1999 年組了第一支三重奏，2004 年發行首張專輯《Les Ombres》；Samuel Rohrer 之後，Julian Sartorius 從《Le Vent》（2014）起接下鼓椅。", "src": "https://en.wikipedia.org/wiki/Colin_Vallon", "src2": "https://thejazzmann.com/reviews/review/colin-vallon-danse", "from": "new" },
+          { "f": "Vallon 說自己受歌手的影響多過鋼琴家，曾提到 Björk 與 Thom Yorke；他也在阿爾巴尼亞裔歌手 Elina Duni 的樂團裡演奏。", "src": "https://thejazzmann.com/reviews/review/colin-vallon-danse", "single": true, "from": "new" }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          { "f": "英國樂評人 Ian Mann 認為這支三重奏的聲音在 ECM 廠牌同門 Tord Gustavsen 與 Nik Bärtsch 之間：強調旋律、善用留白，又有重複和形式上的實驗，團員之間的互動比一般領袖制更民主。", "src": "https://thejazzmann.com/reviews/review/colin-vallon-danse", "single": true, "from": "new" },
+          { "f": "ECM 評論站的 Grillo 把 Vallon 三重奏放在廠牌鋼琴三重奏的座標裡，Tord Gustavsen 當 x 軸、Bobo Stenson 當 y 軸，意思是它在兩者之間找到自己的位置。", "src": "https://ecmreviews.com/2015/05/10/le-vent/", "single": true, "from": "bank" },
+          { "f": "鼓手 Julian Sartorius 2011 年做過一個每天一段節奏、共 365 段的計畫，2012 年出成 12 張 LP 的盒裝《Beat Diary》。", "src": "https://de.wikipedia.org/wiki/Julian_Sartorius", "single": true, "from": "bank" }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          { "f": "這支三重奏的演出足跡遍及歐洲、加拿大、美國、日本與南韓，官網也稱它在歐洲、亞洲與北美的音樂節演出過。", "src": "https://en.wikipedia.org/wiki/Colin_Vallon", "src2": "https://www.colinvallon.com/", "from": "new" },
+          { "f": "Ian Mann 稱它是同類型鋼琴三重奏中世界上最好的之一。", "src": "https://thejazzmann.com/reviews/review/colin-vallon-danse", "single": true, "from": "new" },
+          { "f": "官網引述《Los Angeles Times》的評語：這張專輯讓這位瑞士出身的年輕鋼琴家，延續了歐洲爵士的長久傳統。", "src": "https://www.colinvallon.com/", "single": true, "from": "new" }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          { "f": "2011 年《Rruga》是這支三重奏在 ECM 的首張專輯，之後有 2014 年《Le Vent》與 2017 年《Danse》。", "src": "https://en.wikipedia.org/wiki/Colin_Vallon", "src2": "https://thejazzmann.com/reviews/review/colin-vallon-danse", "from": "new" }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "Patrice Moret 加入的年份：英文維基寫 2005 年新三重奏成軍，搜尋摘要（highresaudio）寫 2004 年加入；兩者不一致，facts 不寫 Moret 的加入年。",
+      "官網介紹寫 ECM 三張三重奏專輯，同頁新聞又稱 2024 年《Samares》是 ECM 第四張；facts 不寫 ECM 張數。"
+    ],
+    "searches": 3,
+    "failedFetches": [],
+    "pubIssues": [],
+    "status": "full",
+    "notes": "同名檢查：卡池只有《Le Vent》（2014），是 Colin Vallon 瑞士三重奏的 ECM 專輯，吻合。已知限制：legacy 以樂評與官網引言為主，後輩點名與獎項沒有雙源。未收（單源）：2008 年 Nico Kaufmann 基金會獎、2009 年 SUISA 基金會獎、2009 年 Pro Helvetia 爵士重點扶持、2016 年瑞士音樂獎入圍、2017 年 Prix de la Relève du Canton de Vaud（英文維基單源，獎項類）；Vallon 土耳其血統的說法只是 Ian Mann 的推測，不收；官網引言（DownBeat「highly original」、Guardian「strength and reserved power」）屬官方挑選的宣傳摘錄，只用了 LA Times 一條作單源具名說法。Vallon 的生年 1980 取英文維基與 The Jazz Mann 兩源。"
+  },
+  {
+    "key": "stuff.",
+    "name": "STUFF.",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          { "f": "STUFF. 2012 年成立於比利時根特：鼓手 Lander Gyselinck 受酒吧 White Cat 邀請，在 DJ 之間安排現場演奏，他找來的朋友後來成了固定班底。", "src": "https://nl.wikipedia.org/wiki/STUFF.", "src2": "https://en.wikipedia.org/wiki/Stuff.", "from": "bank" },
+          { "f": "五人編制是薩克斯風 Andrew Claes、電貝斯 Dries Laheye、鼓 Lander Gyselinck、鍵盤 Joris Caluwaerts，加上負責取樣與唱盤的 Mixmonster Menno。", "src": "https://nl.wikipedia.org/wiki/STUFF.", "single": true, "from": "new" }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          { "f": "荷蘭文維基把他們歸為前衛爵士，混了放克、嘻哈與電子。", "src": "https://nl.wikipedia.org/wiki/STUFF.", "single": true, "from": "new" },
+          { "f": "官方 Bandcamp 介紹的說法是 broken hip-hop 律動，加上電子與帶爵士影響的 future funk，樂器除了鼓、電貝斯、合成器與唱盤，還有吹管合成器（wind synth），自稱難以歸類。", "src": "https://stuffmusic.bandcamp.com/album/old-dreams-new-planets", "single": true, "from": "bank" }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          { "f": "BBC Radio 1 的主持人 Phil Taggart 說，這就是他想像中 Flying Lotus 的樂團該有的樣子；BBC Radio 6 的 Gilles Peterson 則說有 STUFF. 這樣的團出現，是音樂令人興奮的時刻。", "src": "https://stuffmusic.bandcamp.com/album/old-dreams-new-planets", "single": true, "from": "new" },
+          { "f": "2018 年 4 月他們與英國的 Gondwana Records 簽約，由它把《Old Dreams, New Planets》（2017 年先在比利時發行）推向國際。", "src": "https://stuffmusic.bandcamp.com/album/old-dreams-new-planets", "single": true, "from": "new" },
+          { "f": "2015 年他們是布魯塞爾 Ancienne Belgique 的駐館藝人，同年登上 Gent Jazz、Best Kept Secret 與 Pukkelpop 音樂節。", "src": "https://nl.wikipedia.org/wiki/STUFF.", "single": true, "from": "new" }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          { "f": "2015 年發行同名首張專輯《STUFF.》，2017 年第二張《Old Dreams, New Planets》，2021 年第三張《T(h)reats》。", "src": "https://nl.wikipedia.org/wiki/STUFF.", "single": true, "from": "new" }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "地點：荷蘭文／英文維基寫根特，官方 Bandcamp 與搜尋結果寫安特衛普（Antwerp）；本批特注與事實庫都以根特為準，facts 寫根特，詳見 notes。"
+    ],
+    "searches": 4,
+    "failedFetches": [],
+    "pubIssues": [],
+    "status": "full",
+    "notes": "同名檢查：卡池只有《Old Dreams New Planets》（2017），是比利時 STUFF. 的專輯，吻合；非 Stuff（美國放克樂團）。⚠ 地點來源不一致：維基兩版與 Discogs 系的事實庫寫根特（White Cat 酒吧在根特），Bandcamp 官方介紹寫 Antwerp，寫作層請用「比利時」或維基版的根特起源，不要把兩地混寫。Gondwana 簽約月份只見 Bandcamp 單源（Bandcamp 日期欄寫專輯 2018 年 9 月 7 日發行，說明文字寫 8 月 31 日，兩者不一致，不寫發行日）。第一次 WebSearch 結果完全離題，第二次查 Gondwana 與 Gilles Peterson 沒有找到雙源，Peterson 的那句話只見 Bandcamp 單源引述（廠牌與藝人自選的宣傳引言，非獨立評論）。未收：2017 年 Music Industry Awards 最佳封面設計獎（荷文維基單源，獎項類）；《Old Dreams, New Planets》比利時法蘭德斯榜最高第 2 名、前作第 45 名、第三張第 6 名（在世者榜位，荷文維基單源，上線簡介已寫第 2 名）；搜尋結果顯示 2017 年首發廠牌為 Sdban Ultra Records（4 月 28 日）、Gondwana 為 2018 年再發行，只見搜尋摘要。"
+  },
+  {
+    "key": "de beren gieren",
+    "name": "De Beren Gieren",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          { "f": "De Beren Gieren 2009 年成立於比利時，是鋼琴三重奏：Fulco Ottervanger（鋼琴，荷蘭人、在布魯塞爾長大）、Lieven Van Pée（低音提琴，根特人）、Simon Segers（鼓）。", "src": "https://nl.wikipedia.org/wiki/De_Beren_Gieren", "src2": "https://jazzinbelgium.be/en/bands/1242/de-beren-gieren", "from": "bank" },
+          { "f": "他們曾是根特 Vooruit 藝術中心的駐館藝人。", "src": "https://jazzinbelgium.be/en/bands/1242/de-beren-gieren", "src2": "https://nl.wikipedia.org/wiki/De_Beren_Gieren", "from": "new" },
+          { "f": "他們在 Jazz Hoeilaart 的國際比賽拿下首獎。", "src": "https://nl.wikipedia.org/wiki/De_Beren_Gieren", "src2": "https://jazzinbelgium.be/en/bands/1242/de-beren-gieren", "from": "new" }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          { "f": "荷蘭文維基稱他們是電聲爵士鋼琴三重奏，現代爵士裡留很多即興空間，並帶古典、搖滾與電子音樂的元素。", "src": "https://nl.wikipedia.org/wiki/De_Beren_Gieren", "single": true, "from": "new" },
+          { "f": "Jazz in Belgium 的樂團介紹形容他們的聲音有衝勁，旋律閃亮，結構複雜、多重節奏，也有可以跟著哼的段落和突如其來的情緒轉折。", "src": "https://jazzinbelgium.be/en/bands/1242/de-beren-gieren", "single": true, "from": "new" }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          { "f": "比利時爵士雜誌《Jazzism》的年度榜單選了《One Mirrors Many》（2015）。", "src": "https://nl.wikipedia.org/wiki/De_Beren_Gieren", "src2": "https://jazzinbelgium.be/en/bands/1242/de-beren-gieren", "from": "new" },
+          { "f": "他們與葡萄牙小號手 Susana Santos Silva 合作現場專輯《The Detour Fish》（2014，Clean Feed），並與 Marc Ribot、Louis Sclavis、Ernst Reijseger、Joachim Badenhorst 等人合作過。", "src": "https://jazzinbelgium.be/en/bands/1242/de-beren-gieren", "src2": "https://nl.wikipedia.org/wiki/De_Beren_Gieren", "from": "new" },
+          { "f": "他們在北海爵士節、Gent Jazz、盧布爾雅那爵士節與特隆赫姆爵士節演出過，也走遍比利時全國的爵士舞台。", "src": "https://nl.wikipedia.org/wiki/De_Beren_Gieren", "src2": "https://jazzinbelgium.be/en/bands/1242/de-beren-gieren", "from": "new" }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          { "f": "2013 年第二張專輯《a raveling》被樂團介紹為國際突破作。", "src": "https://jazzinbelgium.be/en/bands/1242/de-beren-gieren", "single": true, "from": "bank" }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "Vooruit 駐館年份：荷蘭文維基寫 2012 至 2013，Jazz in Belgium 與事實庫寫 2010 至 2015；兩者不一致，facts 不寫年份。",
+      "Jazzism 榜單：荷蘭文維基寫《One Mirrors Many》列年度榜第一，Jazz in Belgium 寫「most influential & accurate album of 2015-16」；facts 只寫「榜單選了這張」，不寫名次。",
+      "Jazz Hoeilaart：荷蘭文維基寫 2012 年，Jazz in Belgium 寫「拿下三個獎含首獎」沒寫年份；facts 不寫年份。"
+    ],
+    "searches": 2,
+    "failedFetches": [],
+    "pubIssues": [],
+    "status": "full",
+    "notes": "同名檢查：卡池只有《One Mirrors Many》（2015），是比利時根特鋼琴三重奏，吻合。Jazz in Belgium 的樂團介紹出自樂團自供資料，與官網措辭相近，與荷蘭文維基兩源並不完全獨立（已在 facts 兩源間互相對照）。未收：2009 年 Gent Jazz「Jong jazztalent」比賽獲獎（荷文維基單源）；2017 年 Klara Award（Jazz in Belgium 單源，獎項類）；「2013 年國際突破」屬樂團自述，只放 era 作單源敘述。專輯研究稿裡 Boma Studio 錄音細節屬製作履歷，不重收。"
+  },
+  {
+    "key": "laurent bardainne & tigre d'eau douce",
+    "name": "Laurent Bardainne & Tigre d'Eau Douce",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          { "f": "Laurent Bardainne 是法國 Fougères 出身的次中音薩克斯風手、鍵盤手與作曲人。", "src": "https://fr.wikipedia.org/wiki/Laurent_Bardainne", "single": true, "from": "bank" },
+          { "f": "他在巴黎國立高等音樂院的爵士班（François Jeanneau 班）受訓。", "src": "https://www.rushhour.nl/record/cd/love-everywhere", "single": true, "from": "new" },
+          { "f": "他早期與鼓手 Philippe Gleizes 組自由爵士雙人組（2003 年），Gleizes 後來成為 Tigre d'Eau Douce 的鼓手。", "src": "https://fr.wikipedia.org/wiki/Laurent_Bardainne", "src2": "https://laurentbardainnetigredeaudouce.bandcamp.com/album/love-is-everywhere", "from": "new" },
+          { "f": "他和 Maxime Delpierre 共同創辦 Limousine（首張 2005 年），也與 Nicolas Ker 共同領導電子搖滾團 Poni Hoax（首張 2006 年），並是 Thomas de Pourquery 的 Supersonic 創團成員。", "src": "https://fr.wikipedia.org/wiki/Laurent_Bardainne", "single": true, "from": "bank" },
+          { "f": "Tigre d'Eau Douce 是他 2018 年組的樂團，名字指一種註定消失的物種（淡水虎）。", "src": "https://fr.wikipedia.org/wiki/Laurent_Bardainne", "src2": "https://www.rushhour.nl/record/cd/love-everywhere", "from": "new" }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          { "f": "廠牌文案說這張是他回到爵士這個初戀，帶 1970 年代的律動與靈魂樂，由打擊樂與薩克斯風帶頭，也有嘻哈的粗礪感和熱帶的主題；旋律、吟唱與獨奏像一份「逃生指南」，把次中音往 John Coltrane 那一類爵士大師所在的高處帶。", "src": "https://www.rushhour.nl/record/cd/love-everywhere", "single": true, "from": "new" },
+          { "f": "樂評站 BeatCaffeine 形容這張首作混合 spiritual jazz 律動、soul-jazz 與熱帶氛圍，有 Coltrane 式的薩克斯風獨奏、B3 風琴旋律與層層疊疊的放克打擊樂。", "src": "https://beatcaffeine.com/french-saxophonist-laurent-bardainnes-new-project-tigre-deau-douce-releases-brilliant-debut/", "single": true, "from": "new" },
+          { "f": "專輯陣容是 Bardainne（次中音）、Arnaud Roulin（Hammond B3 風琴）、Sylvain Daniel（貝斯）、Philippe Gleizes（鼓）與 Roger Raspail（打擊）；詩人 Anthony Joseph 在〈Star 5〉客席並寫詞。", "src": "https://laurentbardainnetigredeaudouce.bandcamp.com/album/love-is-everywhere", "single": true, "from": "new" }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          { "f": "Bardainne 是 Supersonic 的成員，該團的《Play Sun Ra》2014 年拿下 Victoires du jazz 年度專輯（得獎）。", "src": "https://fr.wikipedia.org/wiki/Laurent_Bardainne", "src2": "https://syos.co/en/blogs/our-artists/thomas-de-pourquery", "from": "new" },
+          { "f": "他的樂手履歷橫跨流行、電子與非洲節奏，與 Cassius、Tony Allen 等人合作過；法文維基另列他為 Julien Doré（2011）、Abd Al Malik（2008）、Gonzales（2008）錄音。", "src": "https://fr.wikipedia.org/wiki/Laurent_Bardainne", "src2": "https://beatcaffeine.com/french-saxophonist-laurent-bardainnes-new-project-tigre-deau-douce-releases-brilliant-debut/", "from": "new" }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          { "f": "Tigre d'Eau Douce 2019 年先發單曲〈Marvin〉，2020 年 5 月《Love Is Everywhere》是首張完整專輯，之後有 2022 年《Hymne au soleil》。", "src": "https://fr.wikipedia.org/wiki/Laurent_Bardainne", "src2": "https://laurentbardainnetigredeaudouce.bandcamp.com/album/love-is-everywhere", "from": "bank" }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "Heavenly Sweetness 創辦年份等廠牌沿革沿用事實庫（Discogs 廠牌頁），本次未重查。",
+      "上線簡介寫 Tigre d'Eau Douce「走 soul-jazz 的路子，帶著熱帶打擊樂的色彩」，與 BeatCaffeine、Rush Hour 文案一致，無衝突。"
+    ],
+    "searches": 5,
+    "failedFetches": [],
+    "pubIssues": [],
+    "status": "full",
+    "notes": "同名檢查：卡池只有《Love Is Everywhere》（2020），是 Laurent Bardainne 帶的 Tigre d'Eau Douce，吻合；注意本卡名義是 Bardainne 加團名，團與個人要分清。⚠ 已知限制：Bardainne 的生年（1975 年，法文維基單源）與 Conservatoire 受訓只有廠牌文案單源（Rush Hour 轉載 Heavenly Sweetness 文案），法文維基反而說沒有受訓資料；訓練一句按低風險單源收。未收：1975 年生年、free jazz 雙人組在 La Défense 比賽的第三名（年份未載）。BeatCaffeine 與 Rush Hour 文案皆提到他與 Pharrell Williams 合作，兩者不獨立（文案轉載）且法文維基未列，不收。Heavenly Sweetness 是 spiritual jazz 偏重的法國廠牌的說法沿用事實庫，不作為 facts。"
+  },
+  {
+    "key": "thomas de pourquery & supersonic",
+    "name": "Thomas de Pourquery & Supersonic",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          { "f": "Thomas de Pourquery 出生於法國 Bondy（巴黎近郊的塞納－聖但尼省）。", "src": "https://fr.wikipedia.org/wiki/Thomas_de_Pourquery", "single": true, "from": "bank" },
+          { "f": "他 14 歲開始吹薩克斯風，跟義大利薩克斯風手 Stefano Di Battista 學習，後來進巴黎國立高等音樂院，在 François Jeanneau 班上。", "src": "https://fr.wikipedia.org/wiki/Thomas_de_Pourquery", "src2": "https://syos.co/en/blogs/our-artists/thomas-de-pourquery", "from": "new" },
+          { "f": "他是前橄欖球員，在 2017 年 7 月滿 40 歲。", "src": "https://www.rtbf.be/article/les-victoires-du-jazz-consacrent-thomas-de-pourquery-artiste-de-l-annee-9741371", "single": true, "from": "new" },
+          { "f": "2011 年他與 Laurent Bardainne、Fabrice Martinez、Arnaud Roulin、Frederick Galiay、Edward Perraud 組成六人團 Supersonic。", "src": "https://fr.wikipedia.org/wiki/Thomas_de_Pourquery", "src2": "https://syos.co/en/blogs/our-artists/thomas-de-pourquery", "from": "new" }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          { "f": "Supersonic 的首張專輯《Play Sun Ra》（2014）向 Sun Ra 的「宇宙自由爵士」致敬；Pourquery 領軍這個團約六年，一直以 Sun Ra 為核心題材。", "src": "https://www.rtbf.be/article/les-victoires-du-jazz-consacrent-thomas-de-pourquery-artiste-de-l-annee-9741371", "src2": "https://syos.co/en/blogs/our-artists/thomas-de-pourquery", "from": "new" },
+          { "f": "他的活動橫跨爵士、搖滾與流行，既是薩克斯風手也是歌手、詞曲作者與演員；與龐克味的 Rigolus 集體、流行的 VKNG 二人組、戲劇團體 Chiens de Navarre 都合作過。", "src": "https://fr.wikipedia.org/wiki/Thomas_de_Pourquery", "src2": "https://syos.co/en/blogs/our-artists/thomas-de-pourquery", "from": "new" },
+          { "f": "第二張《Sons of Love》2017 年 3 月在 Label Bleu 發行，曲名滿是太空意象，延續 Play Sun Ra 的宇宙觀。", "src": "https://www.rtbf.be/article/les-victoires-du-jazz-consacrent-thomas-de-pourquery-artiste-de-l-annee-9741371", "single": true, "from": "bank" }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          { "f": "《Play Sun Ra》2014 年拿下 Victoires du jazz 年度專輯（得獎），並入圍法國爵士學院（Académie du jazz）的法國唱片獎決選。", "src": "https://fr.wikipedia.org/wiki/Thomas_de_Pourquery", "src2": "https://syos.co/en/blogs/our-artists/thomas-de-pourquery", "from": "new" },
+          { "f": "2017 年 Pourquery 獲 Victoires du jazz 年度藝人（得獎），當年也是他以《Sons of Love》帶 Supersonic 的一年。", "src": "https://fr.wikipedia.org/wiki/Thomas_de_Pourquery", "src2": "https://www.rtbf.be/article/les-victoires-du-jazz-consacrent-thomas-de-pourquery-artiste-de-l-annee-9741371", "from": "new" },
+          { "f": "他與 Jeanne Added、Oxmo Puccino、Mick Jones、Metronomy、Fred Pallem 等跨類型音樂人合作過，並擔任 2022 年法國 César 電影獎頒獎典禮的音樂總監。", "src": "https://fr.wikipedia.org/wiki/Thomas_de_Pourquery", "single": true, "from": "new" }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          { "f": "2000 年他加入 Big Band Lumière，之後進法國國家爵士樂團（Orchestre national de jazz，Laurent Cugny 指揮）。", "src": "https://fr.wikipedia.org/wiki/Thomas_de_Pourquery", "single": true, "from": "new" },
+          { "f": "2018 年起他與拉羅謝爾的 La Coursive 和 La Sirène 場館結為合作藝人。", "src": "https://fr.wikipedia.org/wiki/Thomas_de_Pourquery", "single": true, "from": "new" }
+        ]
+      }
+    },
+    "milestones": [
+      { "f": "2014 年《Play Sun Ra》獲 Victoires du jazz 年度專輯。", "src": "https://fr.wikipedia.org/wiki/Thomas_de_Pourquery", "src2": "https://syos.co/en/blogs/our-artists/thomas-de-pourquery", "from": "new" },
+      { "f": "2017 年獲 Victoires du jazz 年度藝人。", "src": "https://fr.wikipedia.org/wiki/Thomas_de_Pourquery", "src2": "https://www.rtbf.be/article/les-victoires-du-jazz-consacrent-thomas-de-pourquery-artiste-de-l-annee-9741371", "from": "new" }
+    ],
+    "conflicts": [
+      "法文維基的獎項欄把 2014 年寫成「instrumental jazz album of the year」，同頁討論片目表卻寫「album of the year」；Syos、Jazz à Vienne、BJF 等搜尋摘要皆稱「Best Album of the Year」。facts 採「年度專輯」，不寫器樂類。上線簡介寫「年度器樂爵士專輯」，見 pubIssues。"
+    ],
+    "searches": 4,
+    "failedFetches": [],
+    "pubIssues": [
+      { "album": "Play Sun Ra", "claim": "Victoires du jazz 把年度器樂爵士專輯頒給了它", "problem": "Syos、Jazz à Vienne、Belgrade Jazz Festival 等多個來源都稱該獎是 2014 Victoires du jazz 的「年度專輯」（Album of the Year）；只有法文維基獎項欄寫「器樂爵士專輯」，同頁另一處寫年度專輯。建議改成「年度專輯」或查官方類別名後再定。", "src": "https://syos.co/en/blogs/our-artists/thomas-de-pourquery" }
+    ],
+    "status": "full",
+    "notes": "同名檢查：卡池兩張（Play Sun Ra、Sons of Love）皆為 Thomas de Pourquery 與 Supersonic，吻合。⚠ 生年：1977 年（法文維基與事實庫）只有法文維基單源，本次不放生年。未收（單源）：2021 年 Prix Django-Reinhardt（法蘭西爵士學院年度樂手，法文維基單源，引 Le Figaro 2022 年 3 月）；2002 年 La Défense 比賽 Pourquery-Zimmermann Quintet 樂團與獨奏首獎（Syos 單源）；Jazz sous les pommiers 三個樂季駐館（Syos 單源）。「Victoires du jazz 2017 年度藝人」兩源是法文維基與 RTBF；RTBF 文章稱 Sons of Love 是 Supersonic 領軍的第二張，與上線簡介「這是樂團頭一回整張都是原創」不衝突。法文維基同時寫他是演員、為電影寫配樂，已在事實庫收。"
+  },
+  {
+    "key": "anne paceo",
+    "name": "Anne Paceo",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          { "f": "Anne Paceo 1984 年生於法國 Niort，生命最初三年在象牙海岸 Daloa 度過，1996 年搬到巴黎。", "src": "https://fr.wikipedia.org/wiki/Anne_Paceo", "src2": "https://www.qobuz.com/dk-en/interpreter/anne-paceo/52729", "from": "new" },
+          { "f": "她 10 歲開始打鼓，1998 年在 Barcelonnette 的 Enfants du jazz 工作營第一次碰爵士，營隊裡還上過 Dianne Reeves、Kenny Garrett、Maceo Parker 與 Ravi Coltrane 的大師班。", "src": "https://fr.wikipedia.org/wiki/Anne_Paceo", "single": true, "from": "new" },
+          { "f": "2005 至 2009 年她就讀巴黎國立高等音樂院爵士系，老師包括 Riccardo Del Fra 與比利時鼓手 Dré Pallemaerts。", "src": "https://fr.wikipedia.org/wiki/Anne_Paceo", "src2": "https://www.qobuz.com/dk-en/interpreter/anne-paceo/52729", "from": "new" },
+          { "f": "2004 年她加入吉他手 Christian Escoudé 的樂團，後來成為他三重奏與四重奏的鼓手。", "src": "https://fr.wikipedia.org/wiki/Anne_Paceo", "single": true, "from": "new" }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          { "f": "法文維基稱她是法國爵士新世代的「旗手」，鼓聲從頭幾個小節就認得出來。", "src": "https://fr.wikipedia.org/wiki/Anne_Paceo", "single": true, "from": "new" },
+          { "f": "她的作品常跨出傳統爵士：2017 年與五位緬甸音樂人合作《Fables of Shwedagon》，2022 年的《S.H.A.M.A.N.E.S》以薩滿儀式為題；2024 年她以 Villa Albertine 駐村名義到紐奧良研究 voodoo 與 hoodoo。", "src": "https://fr.wikipedia.org/wiki/Anne_Paceo", "single": true, "from": "new" },
+          { "f": "從《Bright Shadows》（2019）起，她的曲子加入人聲。", "src": "https://www.qobuz.com/dk-en/interpreter/anne-paceo/52729", "single": true, "from": "new" }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          { "f": "她三度獲 Victoires du jazz：2011 年「器樂新人」（Prix Frank Ténot）、2016 年「年度藝人」（《Circles》）、2019 年再度獲「年度藝人」（《Bright Shadows》）。", "src": "https://www.qobuz.com/dk-en/interpreter/anne-paceo/52729", "src2": "https://londonjazznews.com/2019/10/17/winners-announced-at-2019-victoires-du-jazz-ceremony-including-anne-paceo-naissam-jalal-and-henri-texier/", "from": "new" },
+          { "f": "2017 至 2020 年她是 Jazz sous les pommiers 音樂節的駐節藝人，2020 至 2023 年是 Sceaux 的 Les Gémeaux 國家劇院的合作藝人，2020 年受邀擔任蒙特勒爵士學院的導師。", "src": "https://fr.wikipedia.org/wiki/Anne_Paceo", "single": true, "from": "new" },
+          { "f": "2021 年男歌手 Kurt Elling 為巡演《Apparition Bridge》挑了她的曲子〈Sunshine〉；2024 年 4 月，Savenay 開了一座以她命名的文化場館「Espace Anne Paceo」。", "src": "https://fr.wikipedia.org/wiki/Anne_Paceo", "single": true, "from": "new" }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          { "f": "約 2009 年她組了三重奏 Triphase（Leonardo Montana、Joan Eche-Puig），2010 年組 Yôkaï。", "src": "https://fr.wikipedia.org/wiki/Anne_Paceo", "single": true, "from": "new" },
+          { "f": "2021 年她成立自己的廠牌 Jusqu'à la nuit。", "src": "https://fr.wikipedia.org/wiki/Anne_Paceo", "src2": "https://www.qobuz.com/dk-en/interpreter/anne-paceo/52729", "from": "new" }
+        ]
+      }
+    },
+    "milestones": [
+      { "f": "2016 年與 2019 年兩度獲 Victoires du jazz 年度藝人。", "src": "https://www.qobuz.com/dk-en/interpreter/anne-paceo/52729", "src2": "https://londonjazznews.com/2019/10/17/winners-announced-at-2019-victoires-du-jazz-ceremony-including-anne-paceo-naissam-jalal-and-henri-texier/", "from": "new" }
+    ],
+    "conflicts": [
+      "法文維基對 2019 年 Victoires du jazz 前後不一：獎項欄列「artiste de l'année」，內文寫「nommée」；London Jazz News 與 Qobuz 明寫得獎，採得獎。上線簡介寫「2019 年第二次獲 Victoires du jazz 年度藝人」，與 London Jazz News 和 Qobuz 一致。"
+    ],
+    "searches": 5,
+    "failedFetches": ["https://laboriejazz.fr/en/86-news/175-anne-paceo-artist-of-the-year-2016（404）", "https://laboriejazz.fr/en/albums/anne-paceo-circles（404）"],
+    "pubIssues": [],
+    "status": "full",
+    "notes": "同名檢查：卡池只有《Bright Shadows》（2019），是法國鼓手 Anne Paceo，吻合。2016 年「年度藝人」與 2011 年「器樂新人」的第二源是 Qobuz 簡介（開頁讀到），London Jazz News 只確認 2019 年。Qobuz 簡介與維基類似，來源近似但出版者不同，生年 1984 年兩源（法文維基＋Qobuz）。未收（獎項單源）：2006 年 Tremplin Jazz 團體獎、2007 年 Trophées du Sunside、2007 年 Montauban 青年才俊獎、2009 年 Djangodor 新人獎、2021 年藝術與文學騎士勳章（法文維基單源）；搜尋摘要稱她是首位兩度獲年度藝人的女性，只見摘要未開頁，不收。「第二張」之類序數一律不寫。"
+  }
+]
