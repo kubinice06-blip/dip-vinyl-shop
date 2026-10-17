@@ -1930,3 +1930,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - Aqua 現行 thin 版寫「2026 年解散」（未核），升級版不寫，上線即替換。
 - 審稿修 9 處：Bridget St John 的 John Peel 評語、Collage、Cro-Mags、Deerhoof、Above & Beyond、Anouar Brahem、Augustus Pablo「最…」改「極／早期／推崇備至」；Aqua 刪 Mattel 官司與判決（改寫走紅一句、補到 180 字）。
   - 保留：向井滋春不寫《Swing Journal》讀者票選；112、Amerie、BCNR 在世者各留一處成績；Cleo Sol 只寫入圍；CocoRosie 不寫爭議。
+
+## ar-u-008（2026-10-17，thin 升級）
+
+- 40 位中 30 位升 full 上線；10 位補洞後仍 thin、保留原上線版：Dry Cleaning、Durand Jones & The Indications、Galliano、Gamma Ray、George Braith、Immortal Technique、ITZY、Julia Holter、Kehlani、Kelela。
+- Faith Evans 現行 thin 版含「遇害」字眼，升級版只寫婚姻身分與合唱曲，上線即替換。搜尋超額：Elmo Hope、Faith Evans、First Choice、FKA twigs、Kenny Drew Trio（補第二源），放行。
+- 審稿修 9 處：Enslaved 不寫得獎次數；Freddie Gibbs、Fritz Wunderlich、Immortal、Jurassic 5「最…」改「極／頂尖」；Jimmy Giuffre 刪單源最高級；Japanese Breakfast 刪《紐約時報》暢銷榜；Judge 樂團單卡壓回 250；Kesha 刪葛萊美〈Praying〉與 #MeToo 一句（實質指向官司與指控）。
+  - 保留：FKA twigs 參議院 AI 作證（2024）、Japanese Breakfast 以母親為題（作品題材）。

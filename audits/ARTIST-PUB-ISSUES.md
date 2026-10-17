@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1442 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1448 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1446,3 +1446,9 @@
 | ar-u-007 | Collage | Collage | 成員關係欄只有六筆，六位全是女性 | 該句只依 MusicBrainz 關係欄；愛沙尼亞文維基列有 Aarne Vahuri、Tauno Vahter、Enn Tomson、Uno Loop 等人名為歌手，專輯條目另列男性樂手 German Pekarevski（長號）與 Lembit Saarsalu（次中音薩克斯風，性別由名字判斷、未另查），全是女性的說法恐誤導。 | https://et.wikipedia.org/wiki/Collage |
 | ar-u-007 | Collage | Kadriko | 盤面是 1975 年 Мелодия СМ 02821-2 | 愛沙尼亞文維基團條目的唱片目錄把《Kadriko》記為 1974，與 MusicBrainz 的 1975 不一致，年份待核（Melodiya 目錄號本層未驗）。 | https://et.wikipedia.org/wiki/Collage |
 | ar-u-007 | Collage | Käokiri | 盤面是 1977 年 Мелодия С60-08739-40；團史裡最後一個當年出的發行品 | 愛沙尼亞文維基記《Käokiri》為 1978，與 MusicBrainz 的 1977 不一致，年份待核；『最後一個當年出的發行品』的說法隨年份而變。 | https://et.wikipedia.org/wiki/Collage |
+| ar-u-008 | First Choice | Armed and Extremely Dangerous | 樂團日後轉入 Salsoul 旗下以〈Doctor Love〉等曲成為舞曲名團 | 〈Doctor Love〉是 1977 年出在 Gold Mind 廠牌《Delusions》的單曲（Hot 100 第 41 名、Hot Soul Singles 第 23 名），不是 Salsoul 時期；Salsoul 是 1983 年重發〈Let No Man Put Asunder〉那條線。建議把『Salsoul 旗下以 Doctor Love 成名』改成『Gold Mind 時期以 Doctor Love 成為舞曲名團』 | https://en.wikipedia.org/wiki/Delusions_(First_Choice_album) |
+| ar-u-009 | Léo Ferré | Verlaine et Rimbaud chantés par Léo Ferré | 同一條目記這是流行音樂史上第一張錄音室雙唱片 | 這句出自法文維基單源、屬「史上第一」型宣稱，本層沒有另一個獨立來源，也沒有查到反例；建議改成『法文維基稱⋯』或刪去。上線簡介已寫成『同一條目記』，風險有限，列出供店主決定。 | https://fr.wikipedia.org/wiki/Verlaine_et_Rimbaud_chant%C3%A9s_par_L%C3%A9o_Ferr%C3%A9 |
+| ar-u-009 | Mother Earth | The People Tree | 1993 年 9 月 1 日由 Acid Jazz Records 發行 | Ace Records 官方內頁文字寫專輯 1994 年 2 月問世，維基寫 1993；兩源衝突，待查 Acid Jazz 目錄／Discogs 確認發行日 | https://www.acerecords.co.uk/the-people-tree |
+| ar-u-009 | Mother Earth | Stoned Woman | Matt Deighton 的吉他與人聲、Neil Corcoran 貝斯構成緊實的現場編制，主唱由 Shauna Green 擔任 | Ace 官方內頁文字寫這張以錄音室企畫起家，Deighton 在錄音尾聲才加入、主唱來不及在專輯上唱，幾位女歌手是班底；『Deighton 的吉他與人聲』作為首作編制核心與官方說法有出入，待核 | https://www.acerecords.co.uk/stoned-woman |
+| ar-u-009 | Paul van Dyk | Out There and Back | 自營廠牌 Vandit 的第一號發行 | 維基 Vandit Records 條目稱廠牌最早的發行是 Paul van Dyk 的單曲〈Another Way〉與〈Avenue〉；維基《Out There and Back》條目稱這是廠牌的第一張專輯。建議改成「Vandit 的第一張專輯」。兩條都是維基，非獨立，建議店主再核廠牌目錄。 | https://en.wikipedia.org/wiki/Vandit_Records |
+| ar-u-009 | Phosphorescent | Muchacho | 2010 年《Here's to Taking It Easy》巡演後失去布魯克林海軍造船廠的錄音空間 | 維基《Muchacho》條目寫 2012 年紐約重新分區迫使他拆掉 Navy Yards 的工作室（單源），與簡介的時間點對不上；建議店主再核對時間線，必要時改成不帶年份的寫法。 | https://en.wikipedia.org/wiki/Muchacho_(album) |
