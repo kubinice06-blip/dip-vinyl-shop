@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-17｜dip-vinyl-shop｜店內 QR：無串流的 19 張補 YouTube（店主同意單曲也可）
+
+- 店主提供三上寛、下田逸郎《陽のあたる翼》兩支，並裁定「只有一首也可以」；其餘以 YouTube 搜尋找完整專輯上傳或專輯內單曲（曲目以 MusicBrainz 核對：Coltrane〈Lush Life〉、秋吉敏子〈Falling Petal〉；奥村チヨ用〈終着駅〉）。皆記 `manual`。
+- 結果 116 張：Spotify 90、YouTube 20（含モア）、Apple 2、無連結 4：Jonny Holtzman《Let's Do It》、Red Mitchell《Rejoice!》、明田川荘之《This Here´ Is Aketa Vol. 2》、小川知子《タッチ・ミー》。
+- 驗證：掛卡全套 PDF 200dpi 解碼 112／112；7 支新影片 oEmbed 皆 200；正面無溢出。
+
 ### 2026-10-17｜dip-vinyl-shop＋worker KV｜店內 QR 補查串流連結、QR 中央黑白 logo（PR #94）
 
 - **補查**：網站與印刷共用的 worker 只用原名查，日文藝人幾乎全查不到。改用羅馬拼音名（Yumi Arai、Akiko Yano…）重查補 26 張；其餘以網路搜尋限定 open.spotify.com 再補 18 張，每筆以頁面 title／og:description 核對藝人、專輯、年份。退件：今田勝《Blue Marine》（只有同名曲在別張）、浅川マキ、平山三紀、Marlene、Culture Club 等只見於精選輯者。モア用店主提供的 YouTube 全專輯影片（`manual`）。結果 116 張：Spotify 90、Apple 2、YouTube 1、無 23。
