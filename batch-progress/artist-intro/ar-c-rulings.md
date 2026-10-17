@@ -2066,3 +2066,8 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 補查 37 位：add 23、none 14；改寫 23 位，補回 Lynott 海洛因成癮與死因、Furtwängler 納粹時期與去納粹化審理、大象體操 2023 跨年騷動、大貫妙子父親特攻隊經歷、日野皓正 2017 年體罰事件、Staley 與 Starr 藥物過量、Butler 2022 年遭指控與回應、Chassagne 父母逃離海地獨裁、Drive-By Truckers 的南方歷史與警察暴力題材、Cox 馬凡氏症與車禍、Portnoy 戒酒組曲、Ghostface 搶案與服刑、José González 父母逃離阿根廷軍政府、Musgraves 歌曲遭電台卻步與離婚、Mitski 暫停演出、MIKE 與 MONO 的喪親、Hadreas 成癮與克隆氏症、Rei Harakami 腦出血驟逝、Rick Ross 矯正官過往與 Reebok 事件、Wyatt 墜樓癱瘓與共產黨員、Siouxsie 的 Grundy 節目風波、St. Vincent 父親入獄。
 - 主線審稿 8 處：Furtwängler、Alice in Chains 年份超量；Kacey Musgraves 卡池專輯名超量；Rick Ross 連續年份句並壓回 250。
+
+### 題材補回：ar-u-007（2026-10-17）
+
+- 補查 30 位：add 11、none 19；改寫 10 位，補回 Alton Ellis 癌症與過世、Aqua 的芭比商標官司、Grumiaux 事業因德軍佔領中斷、Augustus Pablo 重症肌無力、Billy Paul 的政治歌與版稅官司勝訴、BCNR 前身因主唱性侵指控解散與 Wood 離團、Cavetown 公開為跨性別者、Cro-Mags 團名官司、Danzig 的 Misfits 商標官司、Deerhoof 2025 年因 Spotify 執行長投資軍事科技撤下作品（補查開頁兩源核實）。Don Ellis 兩條皆弱源，不寫。
+- 主線審稿 2 處：Grumiaux 年份超量、「最受推崇」改「尤受推崇」。
