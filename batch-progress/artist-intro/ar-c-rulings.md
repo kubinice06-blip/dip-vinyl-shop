@@ -2081,3 +2081,8 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 補查 33 位：add 18、none 15（多數第二源只見搜尋摘要，改寫只取廣為人知、兩源明確者）；改寫 17 位，補回 Holmes 攝護腺癌與死因、Killer Mike 支持桑德斯與 2020 年演說及 2024 年被拘留、Shawn Mendes 為心理健康取消巡演、Shirley Scott 的婚姻與 fen-phen 官司、J Dilla 的 TTP 與狼瘡及 Baatin 思覺失調、Almond 車禍、Sonny Criss 罹癌後輕生（多數傳記記載）、Stuart Cable 遭解雇與過世、Cooper 過世、Healy 海洛因與馬來西亞禁演、Left Eye 縱火案與車禍身亡、Steele 憂鬱與成癮、Chamberlain 古柯鹼成癮、Crutchfield 戒酒、Hemphill 病況、Young Thug YSL 案、藤圭子 輕生與精神疾病。The Streets 兩條待核，不寫；Dave Ball 2025 年過世未開頁核實，不寫。
 - 主線審稿 5 處：RTJ、Shawn Mendes、TLC、藤圭子 連續年份句；Waxahatchee 卡池專輯名超量。
+
+### 題材補回：ar-u-008（2026-10-17）
+
+- 補查 30 位：add 12、none 18；改寫 11 位，補回 Elmo Hope 毒癮、演出執照被撤與入獄、Faith Evans 的丈夫 B.I.G. 1997 年遇害、FKA twigs 控告 LaBeouf 與 2025 年和解、Freddie Gibbs 奧地利性侵指控獲判無罪、Wunderlich 意外過世、Geoff Mann 癌逝、Demonaz 肌腱炎與 Abbath 商標爭議、Zauner 母親罹癌過世、Greenwood 與 Dudu Tassa 的英國演出因 BDS 施壓取消、Savall 拒領國家音樂獎、Kesha 暴食症治療與 Dr. Luke 官司。Jimmy Giuffre 只有低優先一條，不改。
+- 主線審稿 2 處：Japanese Breakfast 卡池專輯名超量、Greenwood 連續年份句。
