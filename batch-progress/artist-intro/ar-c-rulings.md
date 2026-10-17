@@ -2061,3 +2061,8 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 40 位中 22 位升 full 上線；18 位補洞後仍 thin、保留原上線版：Bola、Bong Peñera、Booster、Boozoo Bajou、Brighter、Brisa Roché、Bröselmaschine、Buffalo Tom、Buscemi & The Michel Bisceglia Ensemble、Cannibale、Carbon Based Lifeforms、Carl Thomas、Casino Versus Japan、Castanarc、Catapilla、Cause for Alarm、Centry、Charles Kynard。
 - 寫作照新規則（題材沒有禁區），補查再補 8 位：Bokani Dyer 父親拒服種族隔離軍役流亡波札那、Brian McKnight 與子女失和及長子 2025 年病逝、Buddy Thomas 死因與醫療困境、Buffalo Nichols 談藍調的黑人所有權、Oli Sykes 氯胺酮成癮與戒除、Camila Cabello 離開 Fifth Harmony 的聲明風波、Caleb Scofield 2018 年車禍過世、Charles Brackeen 的婚姻。Chambao 搜尋 11 次放行。
 - 主線審稿 7 處：Breakbot、Charles Sullivan、Charles Webster、Charles May & Annette May Thomas、Charlie Hunter / Leon Parker「最…」改「代表／極」；BOYNEXTDOOR 刪連續破百萬（2026 年作品且屬銷量）；McKnight 來源改 https。
+
+### 題材補回：ar-u-003（2026-10-17）
+
+- 補查 37 位：add 23、none 14；改寫 23 位，補回 Lynott 海洛因成癮與死因、Furtwängler 納粹時期與去納粹化審理、大象體操 2023 跨年騷動、大貫妙子父親特攻隊經歷、日野皓正 2017 年體罰事件、Staley 與 Starr 藥物過量、Butler 2022 年遭指控與回應、Chassagne 父母逃離海地獨裁、Drive-By Truckers 的南方歷史與警察暴力題材、Cox 馬凡氏症與車禍、Portnoy 戒酒組曲、Ghostface 搶案與服刑、José González 父母逃離阿根廷軍政府、Musgraves 歌曲遭電台卻步與離婚、Mitski 暫停演出、MIKE 與 MONO 的喪親、Hadreas 成癮與克隆氏症、Rei Harakami 腦出血驟逝、Rick Ross 矯正官過往與 Reebok 事件、Wyatt 墜樓癱瘓與共產黨員、Siouxsie 的 Grundy 節目風波、St. Vincent 父親入獄。
+- 主線審稿 8 處：Furtwängler、Alice in Chains 年份超量；Kacey Musgraves 卡池專輯名超量；Rick Ross 連續年份句並壓回 250。
