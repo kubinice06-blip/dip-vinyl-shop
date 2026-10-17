@@ -2071,3 +2071,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 補查 30 位：add 11、none 19；改寫 10 位，補回 Alton Ellis 癌症與過世、Aqua 的芭比商標官司、Grumiaux 事業因德軍佔領中斷、Augustus Pablo 重症肌無力、Billy Paul 的政治歌與版稅官司勝訴、BCNR 前身因主唱性侵指控解散與 Wood 離團、Cavetown 公開為跨性別者、Cro-Mags 團名官司、Danzig 的 Misfits 商標官司、Deerhoof 2025 年因 Spotify 執行長投資軍事科技撤下作品（補查開頁兩源核實）。Don Ellis 兩條皆弱源，不寫。
 - 主線審稿 2 處：Grumiaux 年份超量、「最受推崇」改「尤受推崇」。
+
+### 題材補回：ar-u-004（2026-10-17）
+
+- 補查 33 位：add 19、none 14；改寫 19 位，補回 The Knife 的政治立場、Strokes 911 後抽歌與為桑德斯站台、Gerard Smith 肺癌過世、Cuomo 腿骨手術、Wings〈Give Ireland Back to the Irish〉遭禁播與 McCartney 東京大麻被捕、Partridge 鎮靜劑戒斷與〈Dear God〉風波、劉暐逝世、濁水溪公社反威權與支持台灣獨立、竇唯與王菲的婚姻及燒車案、311 團名典故、Actress 傷退、Miret 古巴出身與入獄及罹癌、Puma Jones 死於癌症、Boney M. 代唱內幕與訪蘇、Sylvian 與 Karn 決裂、Dead Kennedys《Frankenchrist》海報案、Denzel Curry 兄長在警方執法中死亡、DMX 成癮與逃稅入獄。
+- 主線審稿 2 處：The Knife 卡池專輯名超量、竇唯年份超量。
+
+### 題材補回：ar-u-006（2026-10-17）
+
+- 補查 33 位：add 18、none 15（多數第二源只見搜尋摘要，改寫只取廣為人知、兩源明確者）；改寫 17 位，補回 Holmes 攝護腺癌與死因、Killer Mike 支持桑德斯與 2020 年演說及 2024 年被拘留、Shawn Mendes 為心理健康取消巡演、Shirley Scott 的婚姻與 fen-phen 官司、J Dilla 的 TTP 與狼瘡及 Baatin 思覺失調、Almond 車禍、Sonny Criss 罹癌後輕生（多數傳記記載）、Stuart Cable 遭解雇與過世、Cooper 過世、Healy 海洛因與馬來西亞禁演、Left Eye 縱火案與車禍身亡、Steele 憂鬱與成癮、Chamberlain 古柯鹼成癮、Crutchfield 戒酒、Hemphill 病況、Young Thug YSL 案、藤圭子 輕生與精神疾病。The Streets 兩條待核，不寫；Dave Ball 2025 年過世未開頁核實，不寫。
+- 主線審稿 5 處：RTJ、Shawn Mendes、TLC、藤圭子 連續年份句；Waxahatchee 卡池專輯名超量。
