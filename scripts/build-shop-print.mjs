@@ -37,19 +37,25 @@ const rows = inv.items
 const rk = x => { const k = ORDER.indexOf((x.i.genres || [])[0]); return k < 0 ? 99 : k; };
 rows.sort((a, b) => rk(a) - rk(b) || a.d.artist.localeCompare(b.d.artist));
 
-// 左下角 QR：data/shop/stream-links.json（scripts/resolve-shop-stream-links.mjs 產生），依 Spotify → Apple Music → YT Music → Bandcamp 取第一個
+// 左下角 QR：data/shop/stream-links.json（scripts/resolve-shop-stream-links.mjs 產生），依 Spotify → Apple Music → YT Music → Bandcamp 取第一個；
+// QR 中央放該平台 logo（scripts/lib/stream-logos.mjs），所以容錯用最高的 H 級（可承受約 30% 遮蔽，logo 底塊只佔約 9%）
 import qrcode from './vendor/qrcode-generator.mjs';
+import { LOGOS, logoOf, toSvg } from './lib/stream-logos.mjs';
 const LINKS = (() => { try { return JSON.parse(fs.readFileSync(path.join(R, 'data/shop/stream-links.json'), 'utf8')).items || {}; } catch { return {}; } })();
-const STREAMS = [['spotify', 'Spotify'], ['apple', 'Apple Music'], ['yt', 'YT Music'], ['bandcamp', 'Bandcamp']];
-const qrSvg = url => {
-  const q = qrcode(0, 'M'); q.addData(url); q.make();
-  const n = q.getModuleCount(), m = 2;   // 2 格靜區
+const STREAMS = ['spotify', 'apple', 'yt', 'bandcamp'];
+const QR_M = 2;   // 2 格靜區
+// logo 底塊：邊長約 QR 的 30%，取奇數格讓它正好置中在格線上
+const logoBox = n => { let b = Math.round(n * 0.3); if (b % 2 === 0) b++; return { b, o: QR_M + (n - b) / 2 }; };
+const qrSvg = (url, logo) => {
+  const q = qrcode(0, 'H'); q.addData(url); q.make();
+  const n = q.getModuleCount(), m = QR_M;
   let d = '';
   for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (q.isDark(r, c)) d += `M${c + m} ${r + m}h1v1h-1z`;
-  return `<svg class="qr" data-url="${esc(url)}" viewBox="0 0 ${n + 2 * m} ${n + 2 * m}" shape-rendering="crispEdges"><path d="${d}" fill="#1c1b19"/></svg>`;
+  const { b, o } = logoBox(n), pad = 0.7, sc = (b - 2 * pad) / 100;
+  return `<svg class="qr" data-url="${esc(url)}" data-logo="${logo}" viewBox="0 0 ${n + 2 * m} ${n + 2 * m}"><path d="${d}" fill="#1c1b19" shape-rendering="crispEdges"/>`
+    + `<rect x="${o}" y="${o}" width="${b}" height="${b}" fill="#fbfaf6"/><g transform="translate(${o + pad} ${o + pad}) scale(${sc})">${toSvg(LOGOS[logo])}</g></svg>`;
 };
-// 店主手動給的 YouTube 影片（非 YT Music 專輯頁）標成 YouTube
-const streamOf = id => { const l = LINKS[id]; if (!l) return null; for (const [k, name] of STREAMS) if (l[k]) return { url: l[k], name: k === 'yt' && !/music\.youtube\.com/.test(l[k]) ? 'YouTube' : name }; return null; };
+const streamOf = id => { const l = LINKS[id]; if (!l) return null; for (const k of STREAMS) if (l[k]) return { url: l[k], logo: logoOf(k, l[k]) }; return null; };
 
 const stars = (n, total) => { n = Math.max(0, Math.min(total, Math.round(Number(n) || 0))); return '<b>' + '★'.repeat(n) + '</b>' + '☆'.repeat(total - n); };
 const card = ({ i, d }) => {
@@ -70,7 +76,7 @@ const card = ({ i, d }) => {
   <div class="title"><p class="artist">${esc(d.artist)}</p><h1>${esc(d.album)}</h1></div>
   ${axes ? `<div class="axes">${axes}</div>` : ''}
   <p class="text">${esc(d.text)}</p>
-  <footer><span class="foot-l">${st ? `${qrSvg(st.url)}<span class="foot-t"><i class="qr-n">${esc(st.name)}</i><span class="sub">${esc(sub)}</span></span>` : `<span class="sub">${esc(sub)}</span>`}</span><span class="price">${esc(price)}</span></footer>`;
+  <footer><span class="foot-l">${st ? qrSvg(st.url, st.logo) : ''}<span class="sub">${esc(sub)}</span></span><span class="price">${esc(price)}</span></footer>`;
   const cls = `card${len > 225 ? ' long' : ''}${apex ? ' apex apex-' + row[8] : ''}${FOLD ? ' fold' : ''}`;
   if (!FOLD) return `<section class="${cls}">\n  ${body}\n</section>`;
   return `<section class="${cls}">
@@ -116,8 +122,6 @@ footer { display: flex; justify-content: space-between; align-items: flex-end; b
 .price { font-family: "IBM Plex Mono", monospace; font-weight: 500; font-size: 16pt; letter-spacing: .02em; }
 .foot-l { display: flex; align-items: flex-end; gap: 2mm; min-width: 0; }
 .qr { width: 14mm; height: 14mm; flex: none; display: block; margin: 0 0 -1mm -1mm; }
-.foot-t { display: flex; flex-direction: column; gap: .6mm; }
-.qr-n { font-style: normal; font-family: "IBM Plex Mono", monospace; font-size: 5.5pt; letter-spacing: .06em; color: #6d675e; }
 @media print { html, body { background: none; } .card { margin: 0; } }
 ${SIZE === 'a7' ? `
 /* A7 74×105mm：同版面等比縮小，內文字級另調到可讀下限 */
@@ -133,7 +137,7 @@ h1 { font-size: 10.5pt; line-height: 1.25; }
 .text { margin-top: 2.4mm; font-size: 9pt; line-height: 1.5; }
 .long .text { font-size: 9pt; line-height: 1.5; }
 footer { padding-top: 1.6mm; } .sub { font-size: 5pt; } .price { font-size: 11.5pt; }
-.qr { width: 11mm; height: 11mm; margin: 0 0 -.8mm -.8mm; } .foot-l { gap: 1.4mm; } .qr-n { font-size: 4.6pt; }` : ''}
+.qr { width: 11mm; height: 11mm; margin: 0 0 -.8mm -.8mm; } .foot-l { gap: 1.4mm; }` : ''}
 ${FOLD ? `
 /* 掛卡（ㄇ字折）：反折片 17mm（空白）＋頂邊 4mm＋正面 84mm＝105mm；兩條折線是灰色虛線 */
 .card.fold { padding: 0; }
@@ -149,7 +153,7 @@ h1 { font-size: 9.5pt; }
 .axes { padding: 1.1mm 0; } .ax em { font-size: 4.8pt; } .st { font-size: 6.8pt; }
 .text, .long .text { margin-top: 1.8mm; font-size: 7.6pt; line-height: 1.5; }
 footer { padding-top: 1.2mm; } .sub { font-size: 4.6pt; } .price { font-size: 10pt; }
-.qr { width: 11mm; height: 11mm; } .qr-n { font-size: 4.4pt; }` : ''}
+.qr { width: 11mm; height: 11mm; }` : ''}
 ${SHEET === 'a4' ? `
 /* A4 橫式 297×210mm 拼 8 張 A7（4 × 2，左右各留 0.5mm）；卡緣畫淺灰虛線當裁切線 */
 @page { size: 297mm 210mm; margin: 0; }
