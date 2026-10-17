@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1439 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1442 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1443,3 +1443,6 @@
 | ar-u-007 | Anouar Brahem | Barzakh | 1981 年赴巴黎四年 | 維基寫 1981 年赴巴黎；Brahem 官網寫 1982–1986，起年不一致（維基同條另寫 four years）。建議改寫成「赴巴黎約四年」或查第三源後定年。 | https://anouarbrahem.com/en/full-biography |
 | ar-u-007 | Anouar Brahem | Barzakh | 1981 年赴巴黎四年 | 1981 僅維基單源；官網與 encyclopedia.com 都寫 1982 年，官網同頁起訖年自相不合。建議改成「約四年」不寫年份。 | https://anouarbrahem.com/en/full-biography |
 | ar-u-007 | Billy Paul | War of the Gods | 〈Thanks for Saving My Life〉打進流行榜第 37 名，專輯登上靈魂榜第 12 名 | 維基 War of the Gods 條目只寫單曲流行榜第 37 名、靈魂榜第 9 名；專輯靈魂榜第 12 名本層未查到來源，需核對（可能是專輯榜位，需 Billboard 專輯榜記錄）。 | https://en.wikipedia.org/wiki/War_of_the_Gods_(album) |
+| ar-u-007 | Collage | Collage | 成員關係欄只有六筆，六位全是女性 | 該句只依 MusicBrainz 關係欄；愛沙尼亞文維基列有 Aarne Vahuri、Tauno Vahter、Enn Tomson、Uno Loop 等人名為歌手，專輯條目另列男性樂手 German Pekarevski（長號）與 Lembit Saarsalu（次中音薩克斯風，性別由名字判斷、未另查），全是女性的說法恐誤導。 | https://et.wikipedia.org/wiki/Collage |
+| ar-u-007 | Collage | Kadriko | 盤面是 1975 年 Мелодия СМ 02821-2 | 愛沙尼亞文維基團條目的唱片目錄把《Kadriko》記為 1974，與 MusicBrainz 的 1975 不一致，年份待核（Melodiya 目錄號本層未驗）。 | https://et.wikipedia.org/wiki/Collage |
+| ar-u-007 | Collage | Käokiri | 盤面是 1977 年 Мелодия С60-08739-40；團史裡最後一個當年出的發行品 | 愛沙尼亞文維基記《Käokiri》為 1978，與 MusicBrainz 的 1977 不一致，年份待核；『最後一個當年出的發行品』的說法隨年份而變。 | https://et.wikipedia.org/wiki/Collage |

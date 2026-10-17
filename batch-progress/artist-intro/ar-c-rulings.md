@@ -1923,3 +1923,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 搜尋超額：Shackleton、Type O Negative、Travis Scott、ネーネーズ、林俊傑、菊地雅章各超 1（補第二源），放行。
 - 審稿修 18 處：Shawn Mendes 刪《TIME》百大；Stereophonics、FSOL、The Streets、The Time、菊地雅章「最…之一」改「極／早期」；Underoath 不寫入圍次數；TLC、WSQ 樂團單卡壓回 250；ネーネーズ、杏里、藤圭子、鷺巣詩郎片假名改寫；藤圭子刪母親身體狀況與安保鬥爭一句。
 - 待本機（掃描發現）：上線 8,600 餘篇介紹中，258 篇含死因、病況、成癮、刑案類字眼，多為 ar-a／ar-b 早期批（規則收緊前），其中部分屬身分（盲人藍調樂手的 Blind）或作品題材；升級批會逐步蓋掉一部分，其餘待另排一輪清理。
+
+## ar-u-007（2026-10-17，thin 升級）
+
+- 40 位中 30 位升 full 上線；10 位補洞後仍 thin、保留原上線版：6LACK、929、Beach Fossils、Bennie Green、Blue Magic、Blueboy、Brass Construction、Camera Obscura、Com Truise、DIIV。
+- Aqua 現行 thin 版寫「2026 年解散」（未核），升級版不寫，上線即替換。
+- 審稿修 9 處：Bridget St John 的 John Peel 評語、Collage、Cro-Mags、Deerhoof、Above & Beyond、Anouar Brahem、Augustus Pablo「最…」改「極／早期／推崇備至」；Aqua 刪 Mattel 官司與判決（改寫走紅一句、補到 180 字）。
+  - 保留：向井滋春不寫《Swing Journal》讀者票選；112、Amerie、BCNR 在世者各留一處成績；Cleo Sol 只寫入圍；CocoRosie 不寫爭議。
