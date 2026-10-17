@@ -1959,3 +1959,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - George Young（2026）、今田勝（2025）過世照升級批通則不寫（原 thin 版有寫，升級版不寫屬保守，不另核）；明田川荘之 2024 年過世有兩源與訃報，保留。
 - 審稿修 10 處：Yiruma、Zbigniew Seifert、Jukka Perko、鈴木宏昌「最…」改「代表／極」；明田川荘之「アケタの店」、村岡建《ハイノロジー》〈横須賀ストーリー〉、鈴木宏昌「ジョージ川口」《海のトリトン》假名改羅馬字或刪去；農村武裝青年刪楊儒門、樂生、蘇花高、國光石化等社會運動細節，只留題材一句（政治背景上限）。
   - 保留：-M- 的 Victoires 獲獎最多（補洞稿列必要例外）；조용필 銀冠文化勳章、八十八顆芭樂籽海洋大賞（在世者各一處，後者 2025 金曲入圍不寫）；尾島由郎只寫選輯入圍葛萊美；Mravinsky 不寫雜誌票選。
+
+## ar-u-012（2026-10-17，thin 升級）
+
+- 40 位中 23 位升 full 上線；17 位補洞後仍 thin、保留原上線版：702、Abel Ganz、After 7、Alela Diane、Amazing Blondel、Andrew Cox、Asturias、Attacca Quartet、Avant、Balmorhea、Bobby V.、Borah Bergman、Brick、Brides of Funkenstein、Cloud Nothings、Corduroy、Curve（本輪升級率最低，A 段多為 legacy 缺共識評價的 R&B 與小眾前衛團）。
+- 搜尋超額：After 7、Attacca Quartet、Brick 各 9（補第二源），放行。維基預抓錯抓 Asturias（地區）、Avant（街頭藝術團體）、Andrew Cox（划船選手）、Brick（建材）、C.C.C.C.（C 語言）、Crush（遊戲），補洞層都已改認。
+- Chris Brown 只寫音樂、舞蹈與一座葛萊美，不寫暴力事件、官司與感情關係。Bulldoze 舊稿的 Knocked Loose 一條不成立，不寫。
+- 審稿修 9 處：Ain Soph《妖精の森》改英文名、「全世界最好…之一」改「極出色」；Art Bears 補「英國前衛團體」、「最大的影響之一」改「重要影響」；Avishai Cohen、Crush「最…」改「重要／極」；Bryson Tiller 刪四歲喪母（家人逝世）；Cannonball Adderley Quintet 補中音薩克斯風並壓回 250；Chris Brown 刪入圍次數。
+  - 保留：Clara Nunes《Alvorecer》約 30 萬張（已故者，且是「女歌手賣不動」的論點本身）；Alabama Shakes、Crush、Cory Wong 在世者各一處成績；C.C.C.C. 夫妻組合（身分）；Dave Burrell 不寫名單名次。

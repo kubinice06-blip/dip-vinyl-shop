@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1466 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1467 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1465,6 +1465,7 @@
 | ar-u-011 | 脫拉庫 | 飛向陽光飛向你 | 一九九九年首張《歡迎脫拉庫》入圍第十一屆金曲獎最佳演唱團體獎 | 第 11 屆金曲獎典禮於 2000 年 4 月 28 日舉行，1999 年是專輯發行年；寫「一九九九年…入圍」易讀成入圍發生在 1999 年，建議改為「首張專輯入圍 2000 年第 11 屆…」或去掉年份。（沿用原稿） | https://zh.wikipedia.org/zh-tw/%E7%AC%AC11%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E |
 | ar-u-011 | 脫拉庫 | 歡迎脫拉庫 | 貝斯彭承吉、鼓陳沐凡 | 中文維基摘要與 udn 專題寫彭丞吉、陳牧凡，與上線簡介寫法不同；字形請店主於本機核對維基原頁。（沿用原稿） | https://time.udn.com/udntime/story/122834/8011437 |
 | ar-u-011 | 鈴木宏昌 | Skip Step Colgen | 1977 年它先成了盤名，後來成了樂團的名字（コルゲン・バンド 再發展成 The Players） | Kotobank 與日文維基摘要記コルゲン・バンド 1976 年成立、1979 年改名 The Players，樂團名早於 1977 年的盤名；「先成盤名、後成團名」的先後對不上。（沿用原稿） | https://kotobank.jp/word/%E9%88%B4%E6%9C%A8%20%E5%AE%8F%E6%98%8C-1647546 |
+| ar-u-012 | Alela Diane | The Pirate's Gospel | 歌寫於一趟歐洲旅行 | 英文維基如此寫，但 Raise the Stakes 專訪（藝人本人說法）指最早的歌寫於 2002 至 2003 年搬到舊金山之後、標題曲來自露營划船，兩說不一，建議改成不指明寫作地點，或對照原始專訪後再定 | https://raisethestakeseditions.com/alela-diane/ |
 | ar-u-012 | Brick | Good High | 克里夫蘭的 Dazz Band 團名亦源自這首歌 | 僅維基 Dazz 條目（引 SoulTracks）單源；搜尋摘要另有 Kinsman Dazz 以街名與酒吧得名的說法，兩者矛盾，未開頁核實。建議存疑或刪去。 | https://en.wikipedia.org/wiki/Dazz |
 | ar-u-012 | Budka Suflera | Cień wielkiej góry | 樂隊 1969 年在 Lublin 成立 | 來源對成軍年份不一致：pl 維基與 ebilet 寫 1974 年，bibliotekapiosenki 寫 1973 年，en 維基首段兩種年份並陳（1969 是 Cugowski 早期同名前身團，1974 才是現行樂團成立）；建議改成不帶年份或寫「1970 年代前半」。 | https://pl.wikipedia.org/wiki/Budka_Suflera |
 | ar-u-012 | Clara Nunes | Canto das Três Raças | 一九七一年後改信溫班達（umbanda），舞台上以白衣與頭巾示人 | 宗教歸屬各源不一致：英文維基與 Dicionário Cravo Albin 寫她皈依 Candomblé，葡文維基寫 1971 年離開 Candomblé 轉 Umbanda，Projeto Colabora 說她兼信 Kardec 派、Umbanda 與 Candomblé。建議改成較中性的寫法（她的歌與舞台形象與非裔巴西宗教相連），不指定 1971 年與單一宗教。 | https://pt.wikipedia.org/wiki/Clara_Nunes |
