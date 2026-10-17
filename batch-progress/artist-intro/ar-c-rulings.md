@@ -1974,3 +1974,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 搜尋超額：Dua Lipa 9、Ground Zero 9、HAIM 10（補 Stevie Nicks 評語第二源），放行。Field Mob 的 2026 年州議會決議照升級批通則不寫。Dr. Strangely Strange 的上線專輯簡介把 Goulding 寫成創團者，已列 pubIssues。
 - 審稿修 13 處：Dexys Midnight Runners 刪北愛衝突封面照（政治背景只留一句）；Dua Lipa 刪總統授公民身分（成績只留葛萊美一處）；Gabor Szabo「1956 年革命期間出走」改「離開匈牙利」（政治背景只留一句）；Dillinger、Dru Hill、Elton Dean's Ninesense、Felt、Foje（兩處）、Garmarna、Grumiaux Trio、H.E.R.「最…」改「代表／極／推崇備至」；Dillinger 刪多餘空格。
   - 保留：Gil Scott-Heron & Brian Jackson 雙人聯名卡 271 字（放寬額度）；George Michael 葛萊美年度專輯與身後入選名人堂（已故者）；Father John Misty 以婚姻為題的專輯（作品題材）；Haken 由 Dream Theater 成員列年度十大（具名音樂人，非媒體）。
+
+## ar-u-014（2026-10-17，thin 升級）
+
+- 40 位中 32 位升 full 上線；8 位補洞後仍 thin、保留原上線版：In Spe、Jeremih、John Lee & Gerry Brown、Julianna Barwick、Katra Turana、Kunihiko Sugano、L.T.D.、Lakeside。
+- 保留版順手更正：Katra Turana（ar-c-011）貝斯手「北島妙子」改「北島妙枝子」（diskunion 開頁確認）。待本機核：In Spe 保留版寫 Tüür「1997 年獲愛沙尼亞文化獎」，補洞層查到的頁面另列 1991、1996，未改。
+- Herbert Grönemeyer 不寫 1998 年喪妻喪兄（家人逝世）與 2026 年德國國家獎（升級批通則，未另核）；Israel Vibration 不寫小兒麻痺；Key Glock 不寫刑案與母親入獄，只寫 Young Dolph「離世」。
+- 審稿修 7 處：Khalid 刪《時代》百大（媒體名單）；Key Glock、Khanate、I Musici、Israel Vibration「最…之一」改「主要／極／早期」；Hedningarna 刪「Garmarna 等後來者的前導」（無後輩點名）；Grönemeyer 刪 2026 年獎項。
+  - 保留：I Mean Us〈Søulмaтe〉照原標題寫法；Iggy Pop 對 Iceage 的評語（具名音樂人）；Jorja Smith Brit 獎、Julia Jacklin ARIA 獎、Leprous Spellemannprisen 入圍、Janelle Monáe 葛萊美入圍（在世者各一處）；Harry Roesli 抗議歌曲一句（政治題材上限）。

@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1470 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1478 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1474,3 +1474,11 @@
 | ar-u-013 | Dr. Strangely Strange | Kip of the Serenes | 都柏林的 Tim Booth、Ivan Pawle 與 Tim Goulding 1967 年組團 | 維基與 Irish Rock 資料庫都寫 1967 年成軍者是 Booth 與 Pawle，Goulding 是之後才加入的第三人；建議改為『Booth 與 Pawle 1967 年組團，Goulding 隨後加入』。 | https://en.wikipedia.org/wiki/Dr._Strangely_Strange |
 | ar-u-013 | Dr. Strangely Strange | Kip of the Serenes | 是愛爾蘭迷幻民謠的起點 | 『起點』屬無來源的排他性說法（Bandcamp 文案稱『先驅』，自家宣傳）；Irish Rock 資料庫只稱它是 acid folk 經典、並說團不是單純模仿 Incredible String Band。建議改成『acid folk 經典之一』或刪去。 | https://irishrock.org/irodb/bands/drss.html |
 | ar-u-014 | Harry Roesli | Titik Api | 在 1973 年《Philosophy Gang》、1975 年《Ken Arok》之後推出的第三作，1976 年問世 | 與《Ken Arok》上線簡介互相矛盾：該簡介與 Antara 都說《Ken Arok》的歌曲唱片是 1977 年 Eterna 出版（1975 年是萬隆搬演的搖滾歌劇），若如此 1976 年的《Titik Api》就不是《Ken Arok》唱片之後的第三作；建議改成不排專輯先後的寫法，或查清《Ken Arok》首版年再定。 | https://www.antaranews.com/berita/1116114/histori-rock-indonesia-lahirnya-musisi-legenda |
+| ar-u-014 | Herbert Grönemeyer | Mensch | 期間他的兄長與其妻在幾天之內相繼過世 | 英文維基《Herbert Grönemeyer》與德文維基都寫 Wilhelm（哥哥）與『his wife Anna』（Grönemeyer 自己的妻子、演員 Anna Henkel）幾天內相繼過世；Sonntagsblatt 也寫『seine Frau Anna und sein Bruder Wilhelm』。上線簡介的『兄長與其妻』讀成兄長的妻子，應改為『他的哥哥與妻子』。本層已有非維基的 Sonntagsblatt 為第二源。 | https://www.sonntagsblatt.de/artikel/kultur/herbert-groenemeyer-zwischen-musik-glauben-und-persoenlicher-krise |
+| ar-u-014 | L.T.D. | Togetherness | 專輯拿下 R&B 榜第 3、Billboard 200 第 18 | theseconddisc.com（The Second Disc 2018）摘要寫 Something to Love 與 Togetherness 皆為 R&B 專輯榜第 1；與簡介的第 3 名不一致。僅此單源、頁面為小模型摘要，可能誤讀，建議本機查 Billboard 專輯榜確認再決定要不要改。 | https://theseconddisc.com/2018/05/25/back-in-love-again-robinsongs-collects-four-albums-from-soul-funk-disco-band-l-t-d/ |
+| ar-u-014 | L.T.D. | Togetherness | 洛杉磯的九人編制放克／靈魂樂團 | theseconddisc.com 稱 L.T.D. 是 ten-piece band（十人編制）；簡介寫九人。編制隨年代增減，單源，建議本機核對 Togetherness 時期的實際人數。 | https://theseconddisc.com/2018/05/25/back-in-love-again-robinsongs-collects-four-albums-from-soul-funk-disco-band-l-t-d/ |
+| ar-u-015 | Louis Smith | Here Comes Louis Smith | 〈Tribute to Brownie〉是 Duke Pearson 寫給 Clifford Brown 的 | 維基專輯頁曲目表標〈Tribute to Brownie〉作曲 Duke Pearson，與上線簡介一致；但只見維基單源，未見第二源。非確認有誤。 | https://en.wikipedia.org/wiki/Here_Comes_Louis_Smith |
+| ar-u-015 | Maceo & All the King's Men | Funky Music Machine | 1975 年才正式發行（樂隊活動末期完成） | 維基 Maceo Parker 條目寫該專輯為 1972 年；搜尋摘要稱 1971 年底錄製、1972 年由 Excello 發行（未開頁）。1975 可能是再版年，建議本機核對 MusicBrainz／Discogs 的首發年與廠牌後改簡介與卡池年份。 | https://en.wikipedia.org/wiki/Maceo_Parker |
+| ar-u-015 | Me'Shell Ndegéocello | Plantation Lullabies | 次年入圍三項葛萊美 | 英文維基獎項表把〈Plantation Lullabies〉相關的提名（最佳 R&B 專輯、最佳 R&B 歌曲、最佳女 R&B 演唱，另有與 John Mellencamp 合唱的最佳流行合作）列在 1995 年；專輯 1993 年 10 月發行，距離不是次年。單源，建議本機對照葛萊美官網的屆次與年份後再決定是否改。 | https://en.wikipedia.org/wiki/Meshell_Ndegeocello |
+| ar-u-015 | Natacha Atlas | Gedida | 1999 年由 Mantra Records 發行，Natacha Atlas 第三張個人專輯 | 英文維基藝人條目把《Gedida》列為 1998 年；Aramco World（2003）與卡單作 1999。發行年（各地區版本可能不同）待核；專輯序數（Diaspora、Halim、Gedida 為第三張）與兩處列表一致。 | https://en.wikipedia.org/wiki/Natacha_Atlas |
+| ar-u-015 | Negasphere | Disadvantage | 鍵盤的基本軌由川崎馨在東京方南町的 Green Studio 錄下 | 日文維基與 Disk Union 的樂團頁把鍵盤手寫成「川崎薫」（TuneCore 英文作 Kaoru Kawasaki），上線簡介寫「川崎馨」。Discogs 製作名單可能用不同寫法，待店主對照原盤內頁確認。 | https://ja.wikipedia.org/wiki/Negasphere |
