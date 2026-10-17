@@ -1951,3 +1951,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - The Game 現行 thin 版含遭槍擊、Testament 現行 thin 版含 Chuck Billy 腫瘤，升級版都不寫，上線即替換。Sven Grünberg《Hingus》的 EMS Synthi 100 說法只有單源，升級版改寫 Härmo Härm 自製合成器。
 - 審稿修 8 處：Rufus featuring Chaka Khan 樂團單卡從 271 壓回 247；Sonny Stitt 刪收養（私事，照 Keyshia Cole 先例）；Sunn O)))、The Gaslight Anthem、The New Pornographers「最…之一」改「重要／極」；The Stranglers 刪 23 首前 40 名單曲（排行榜數字）。
   - 保留：Rufus 名人堂稱 Chaka Khan「Queen of Funk」（名人堂官方可具名）；Satyricon《Nemesis Divina》被視為經典（不寫雜誌名人堂）；Shania Twain 加拿大勳章、Skepta 水星獎、Skrillex 一座葛萊美、Tate McRae Juno 年度藝人、Summer Walker Soul Train 年度專輯（在世者各一處）；Snooks Eaglin、Seu Jorge、Stromae 不寫身體狀況與家人遇難；Dave Greenfield 只寫 2020 年過世。
+
+## ar-u-011（2026-10-17，thin 升級）
+
+- 40 位中 33 位升 full 上線；7 位補洞後仍 thin、保留原上線版：Wild Nothing、Within Temptation、光束夜、夢幻、杉本喜代志、Prism、Wha-ha-ha。
+- 搜尋超額：Trentemøller、Yevgeny Mravinsky、村岡建、農村武裝青年各 9（補第二源與核名次），放行。White Heaven 的維基預抓是同名電影，補洞層作廢改認東京樂團。
+- George Young（2026）、今田勝（2025）過世照升級批通則不寫（原 thin 版有寫，升級版不寫屬保守，不另核）；明田川荘之 2024 年過世有兩源與訃報，保留。
+- 審稿修 10 處：Yiruma、Zbigniew Seifert、Jukka Perko、鈴木宏昌「最…」改「代表／極」；明田川荘之「アケタの店」、村岡建《ハイノロジー》〈横須賀ストーリー〉、鈴木宏昌「ジョージ川口」《海のトリトン》假名改羅馬字或刪去；農村武裝青年刪楊儒門、樂生、蘇花高、國光石化等社會運動細節，只留題材一句（政治背景上限）。
+  - 保留：-M- 的 Victoires 獲獎最多（補洞稿列必要例外）；조용필 銀冠文化勳章、八十八顆芭樂籽海洋大賞（在世者各一處，後者 2025 金曲入圍不寫）；尾島由郎只寫選輯入圍葛萊美；Mravinsky 不寫雜誌票選。
