@@ -2047,3 +2047,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 補查 34 位：add 21、none 13；改寫 21 位，補回 Lemmy 1975 年被捕遭逐出 Hawkwind 與 2015 年過世、Molko 毒癮與憂鬱症、Hyde 酗酒與〈Born Slippy〉、中森明菜 1989 年輕生未遂與復出、Beyoncé〈Formation〉爭議與 CMA 事件、Kele Okereke 出櫃、Cat Power 精神崩潰與戒酒、Schuldiner 腦瘤與募款、de Freitas 車禍、Fairport M1 車禍、Gucci Mane 謀殺指控撤銷與 2014 年入獄、Mastodon 的 Skye 與 Hinds 2025 年過世、Merzbow 動物權、Mogwai 的 T 恤風波與支持蘇格蘭獨立、Morrissey 版稅官司與支持 For Britain、Reznor 成癮與勒戒、Scarface 專輯遭拒發與輕生未遂、Sigur Rós 鼓手被指控與稅案、White Stripes 前夫妻身分與 Meg 焦慮。
 - 主線審稿 11 處：卡池專輯名超量（Cat Power、Mastodon）、連續年份句（Gucci Mane、Mogwai、Morrissey、Sigur Rós）、年份超量（White Stripes）、字數壓回 250。
+
+## ar-u-020（2026-10-17，thin 升級；題材補回後上架）
+
+- 40 位中 24 位升 full 上線；16 位補洞後仍 thin、保留原上線版：ATLAS、Aurra、Azitis、Babyshambles、Bananarians、Beanfield、Bellaphon、Bernard Xolotl、Bhaskara、Billy Parker's Fourth World、Blue Note All-Stars、Blue Sky Black Death、Blue States、Bob Ayala、Bob Carlin、Bodkin。
+- 寫作層是照舊（錯誤）規則寫的，上架前先跑題材補查：add 10、none 14，改寫 10 位補回 Bradford Cox 的馬凡氏症與 Sony 誤撤、B.G. 持槍案判 14 年與 2023 年假釋、Banteay Ampil 隸屬 KPNLF 抵抗組織、Baths 出櫃與大腸桿菌重病、Batushka 分裂官司與正教圈抗議、Bebel Gilberto 對父親的監護與遺產爭議、Musselwhite 戒酒、Cosentino 戒酒戒藥、Beth Hart 成癮與躁鬱症、Bo Carter 半盲與死因。
+- 搜尋超額：Atlas Sound、Banteay Ampil Band、Bob Carlin（thin）、Bhaskara（thin）、Billy Ocean 放行。
+- 主線審稿 6 處：B.G.、Batushka 連續年份句；Bo Carter 年份超量；Bahamadia「最早…之一」改「早期」；Billy Ocean 刪 MBE（在世者一處成績）；Batushka 壓回 250。
+  - 保留：Bang on a Can All-Stars 獲《Musical America》年度樂團（獎項，非媒體名單）。
