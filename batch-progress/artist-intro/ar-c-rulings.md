@@ -2136,3 +2136,8 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 補查 32 位：add 16、none 16；改寫 15 位，補回 Connick 13 歲喪母、Roesli 2001 年改詞〈Garuda Pancasila〉遭警方傳喚、Herbert 的 Radio Boy 反全球化與《One Pig》遭 PETA 譴責、Grönemeyer 1998 年喪妻喪兄與 2019 年反右傾演說、Huey Lewis 的抄襲官司與梅尼爾氏症及 2025 年聽力近況（補查開頁兩源）、Iceage 被指有法西斯傾向與樂團否認、Israel Vibration 小兒麻痺與輪椅籃球隊事件、Monáe〈Hell You Talmbout〉與性別認同、Jacklin 的分手專輯、Dayes 遭撤美國入境資格、Kansas 成員轉信福音派與 Steinhardt 過世、Casey 車禍癱瘓與用藥、Key Glock 母親入獄與 Young Dolph 遇害、Khalid 2024 年確認同志身分、Solberg 的憂鬱焦慮。Khatia 兩條皆單源，不改。
 - 主線審稿 3 處：Grönemeyer、Huey Lewis、Monáe 連續年份句。
+
+### 題材補回：ar-u-017（2026-10-17）
+
+- 補查 18 位：add 11、none 7；改寫 10 位，補回 Yung Lean 藥物過量住院、經紀人過世與雙極性疾患、Zomby 的抄襲爭議、Zoot Sims 酗酒與癌逝、**လေးဖြူ 被主線刪掉的翁山蘇姬門牌、專輯遭收回改名、剃光頭抗命、拒演軍官之子婚禮、2006 年禁演全部寫回**、들국화 1987 年大麻案與成員過世、박효신 毀約官司與債務、JAGATARA 主唱的精神疾病與溺水過世、茄子蛋主唱聲帶受損休團、菊地雅章的閣樓租約判例、零與聲音解放組織的爭議與反體制立場。
+- 主線審稿 5 處：Yung Lean、茄子蛋 連續年份句；박효신、茄子蛋 年份超量；茄子蛋 刪 2025 年新歌（新作未核）。
