@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1517 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1521 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1521,3 +1521,7 @@
 | ar-u-022 | Christian Prommer's Drumlesson | Drum Lesson, Vol. 1 | 挑了 11 首做成改編專輯 | Sonar Kollektiv 廠牌頁寫專輯十首（都是他 DJ 現場放了十多年的歌）；可能是計入加碼曲或不同版本，需對照實體曲目表 | https://www.sonarkollektiv.com/jazz-club/christian-prommers-drumlesson-drum-lesson-vol-1/ |
 | ar-u-022 | Christian Prommer's Drumlesson | Drum Lesson, Vol. 1 | 錄音在 2007 年 5 月的慕尼黑完成，五天後移到維也納混音 | Sonar Kollektiv 說 2007 年 5 月是 Jazzanova 的 Alex Barck 把〈Strings of Life〉單曲以 12 吋發行的時間，不是整張專輯錄音完成；時序待核 | https://www.sonarkollektiv.com/jazz-club/christian-prommers-drumlesson-drum-lesson-vol-1/ |
 | ar-u-022 | Confuse | Indignation | 十三年後由 Anarchy Centre 與樂團自營的 Confuse Records 聯名壓成黑膠與 CD | 搜尋摘要（NTS 引 Discogs）只見 1984 年 Violent Party Records 的卡帶與 1987 年的 Confuse Records 單曲，Sorry State 稱黑膠把整張卡帶與 Nuclear Addicts flexi 等合輯；未能證實「十三年後」「黑膠與 CD」「Anarchy Centre 聯名」。建議店主對 Discogs 的 Indignation 條目逐項核對。 | https://nts.live/artists/89568-confuse |
+| ar-u-022 | Da Lata | Songs From the Tin | 團員是 Chris Franck 與 Patrick Forge 這兩個倫敦人 | Franck 生於德國、六歲起住英國，說「倫敦人」過粗；Da Lata 本身是倫敦的團，可改寫成「倫敦的團」 | https://en.wikipedia.org/wiki/Chris_Franck |
+| ar-u-023 | Discus | 1st | 2001 至 2007 年間他們登上舊金山與紐約的前衛音樂節 | 印尼維基只列 ProgNight（舊金山）、Knitting Factory（紐約，是演出場地不是音樂節）與 ProgDay（北卡羅來納），沒有給這三處的年份；有年份的只有 BajaProg（墨西哥，2001）、Progsol 與 FreakShow（2005）以及預定的 2007 年 Zappalane（德國）。2001 至 2007 與舊金山、紐約的對應查不到依據，建議改成較保守的寫法或查出各場年份 | https://id.wikipedia.org/wiki/Discus_(grup_musik) |
+| ar-u-023 | Earthling | Radar | Tim Saul 自己也參與過 Portishead《Dummy》的試聽帶 | 本次兩次搜尋（含 Portishead 與 Dummy 相關報導）都找不到這項說法的出處；只查到 Saul 協助製作 Stephanie McKay 的專輯、Barrow 與 Saul 合作 Earthling。建議改回『查證有出處』的版本或請主線核對原出處（若原出處是 Discogs 藝人頁的 credits 則可保留）。 | https://en.wikipedia.org/wiki/Earthling_(band) |
+| ar-u-023 | Egschiglen | Zazal | 《Zazal》2000 年錄於德國 Bocholt 的 Grenzland Studio，由 Heaven and Earth 發行（HE 10） | rambles.net 的樂評寫 Zazal 是 2002 年的 Felmay 版、錄於德國南部，alba Kultur／womex 頁面列 Heaven & Earth 發行年 2002；Bocholt 位在德國西北部，與『德國南部』不符。卡池年份 2000 與簡介的錄音地點、年份建議核對 Discogs 與 CD 版權頁後再決定是否改寫（可能是 2000 年原版與 2002 年再版並存）。 | https://rambles.net/egschiglen_zazal02.html |
