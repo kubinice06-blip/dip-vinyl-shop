@@ -1,0 +1,1381 @@
+[
+ {
+  "key": "crow",
+  "name": "Crow",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Crow 是來自大阪的日本硬蕊龐克樂團（MusicBrainz 登記地區為大阪，備註『Japanese punk band』）。",
+      "src": "https://crowjapan.bandcamp.com/music",
+      "src2": "https://musicbrainz.org/ws/2/artist/2b5e6093-50b4-4b12-acf0-eac69c955076?fmt=json&inc=aliases+artist-rels",
+      "from": "bank"
+     },
+     {
+      "f": "大阪時期的樂團最後以合輯《Eye Of The Thrash Guerrilla》的參與收尾，1980 年代末沉寂；之後主唱 Crow 在東京重組樂團，找來前 Juntess 的吉他手 Tomio 等新成員。",
+      "src": "https://www.sorrystaterecords.com/products/200916985",
+      "src2": "https://crowjapan.bandcamp.com/music",
+      "from": "bank"
+     },
+     {
+      "f": "樂團的兩張代表唱片是 EP《Who Killed Dove?》與 LP《Last Chaos》（1987）。",
+      "src": "https://crowjapan.bandcamp.com/music",
+      "src2": "https://endofanear.com/products/100047271",
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "樂團 Bandcamp 自述：大阪時期『受英國吉他導向硬蕊的強烈影響』；Sorry State 與 End of an Ear 的賣場文案都說他們的攻擊感來自 Discharge，並稱當時多數日本團受 Disorder 與 Chaos UK 影響，Crow 最深的源頭卻是 Discharge（此為賣方文案，非獨立樂評）。",
+      "src": "https://www.sorrystaterecords.com/products/200916985",
+      "src2": "https://endofanear.com/products/100047271",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "東京重組後，Tomio 的加入讓聲音變重，Discharge 式的攻擊感與金屬味的 crust 硬蕊合流，之後出了多張 EP 與專輯《Bloody Tear》。",
+      "src": "https://crowjapan.bandcamp.com/music",
+      "src2": "https://www.sorrystaterecords.com/products/200916985",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Sorry State 的說明稱 Crow 即使在人才濟濟的日本硬蕊場景中，也是『distinctive, unique band』；End of an Ear 把《Who Killed Dove?》與《Last Chaos》並稱為兩張『seminal』的日本龐克唱片（皆為賣方文案）。",
+      "src": "https://www.sorrystaterecords.com/products/200916985",
+      "src2": "https://endofanear.com/products/100047271",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "東京重組版的 Crow 曾三度巡迴美國西岸。",
+      "src": "https://crowjapan.bandcamp.com/music",
+      "src2": "https://www.sorrystaterecords.com/products/200916985",
+      "from": "bank"
+     },
+     {
+      "f": "2023 年發行《EYE》，是樂團 12 年來第一次新錄音，2022 年在東京 Noise Room Studios 錄製。",
+      "src": "https://crowjapan.bandcamp.com/music",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "《Last Chaos》1987 年首次發行，只壓了極少的數量（賣方稱 200 張）；Overthrow Records 後來發行重混版，再經 George Horn 重新母帶發行 14 首完整版。",
+      "src": "https://www.sorrystaterecords.com/products/200916985",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1987 年發行 LP《Last Chaos》。",
+    "src": "https://www.sorrystaterecords.com/products/200916985",
+    "src2": "https://crowjapan.bandcamp.com/music",
+    "single": true,
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "成軍年：Sorry State 寫 1980 年代前半，End of an Ear 與 Bandcamp 寫 1980 年代中期；facts 不寫成軍年。",
+   "東京重組時間：Sorry State 寫 1990 年代後期，Bandcamp 與 End of an Ear 寫 1990 年代中期；facts 不寫年份。",
+   "事實庫 MusicBrainz 說《Last Chaos》是 MB 目錄上最早的整張黑膠；賣方文案另稱 1985 年有 EP《Who Killed Dove?》（EP 非整張），兩者不衝突。"
+  ],
+  "pubIssues": [],
+  "searches": 3,
+  "failedFetches": [
+   "https://www.tornlightrecords.com/shop/crow-last-chaos-2021-reissue/ 401"
+  ],
+  "status": "thin",
+  "notes": "本次升級補查 3 次（WebSearch 3：英文、日文、獨立樂評導向各一），失敗請求 1 次未計（Torn Light 401）。結果：搜尋回傳的幾乎全是 Sorry State、End of an Ear、Torn Light、Midheaven 等賣場與廠牌文案，與前稿同一批來源，沒有新增的獨立來源；日文搜尋同樣只回海外賣場頁，查不到日本的唱片指南、雜誌或樂手點名。legacy 因此仍只有賣方文案的『distinctive／seminal』與巡迴事實，全為賣方單源，不構成共識評價；sound 仍只有 Discharge 取向與 Tomio 加入後變重的說法，無具體演奏或製作手法的第二源。判定仍為 thin，寫作層跳過、保留原上線版。還缺：日本硬蕊史書或唱片指南（如日文硬蕊誌、Maximum Rocknroll）對 Crow 的獨立評價、後輩點名、演奏手法的第二源。thinIssues：無事實錯誤；原 thin 正文用『據介紹』『被認為』已具名性地保留賣方措辭，可維持。\n【前稿 notes（沿用）】名冊 Crow 對上卡池《Last Chaos》（1987）＝大阪硬蕊團 Crow（事實庫 MusicBrainz：area Osaka、Group、『Japanese punk band』，團員 Babi、Ironfist Tatsushima、Jett）；英文維基 Crow 條目是烏鴉，預抓警示成立，已當作沒有。⚠ 同名警示：Bandcamp 說重組的東京版團員是 Tomio 等人，MB 的 Babi／Jett 屬大阪時期；寫作時不要把兩個時期的成員混在一起。本位用掉 5 次（WebSearch 2：英文與日文；WebFetch 3：Bandcamp、Sorry State、End of an Ear）；失敗請求 1 次未計（Torn Light 401）。素材幾乎全是賣方文案與樂團自述，沒有獨立樂評或史書；日文維基未查到條目，日本語的獨立評價查不到，legacy 因此標 thin 並全標單源。事實庫的 Ironfist Tatsushima 同時是 G.I.S.M. 鼓手（日文維基〈G.I.S.M.〉成員欄），這個關聯只見事實庫舊稿，未新查，不放進 facts。1985 年 EP 與《Last Chaos》的『200 張』數量、1994 年 Overthrow 版與 2021 年 Prank／Torn Light 再發，只見賣方頁（Sorry State 一頁），已標單源。"
+ },
+ {
+  "key": "crumb",
+  "name": "Crumb",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Crumb 是以布魯克林為基地的美國迷幻搖滾樂團：Lila Ramani（吉他、主唱）、Jesse Brotter（貝斯）、Aronow（鍵盤、薩克斯風）與 Jonathan Gilad（鼓），成員在 Tufts University 相識。",
+      "src": "https://en.wikipedia.org/wiki/Crumb_(band)",
+      "src2": "https://www.thefader.com/2019/06/27/crumbs-jinx-locket-interview",
+      "from": "bank"
+     },
+     {
+      "f": "Ramani 在紐約長大、在波士頓念大學，Fader 說她從高中就開始寫歌，樂團的歌詞都由她執筆；她和 Brotter 在 2016 年秋天搬到紐約。",
+      "src": "https://www.thefader.com/2019/06/27/crumbs-jinx-locket-interview",
+      "src2": "https://www.wbur.org/news/2017/06/21/tufts-bred-band-crumb",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Tufts 校園的音樂圈很緊密，成員常加入彼此的臨時計畫；幾位成員住在同一棟滿是樂手的房子裡，Ramani 手上的歌曲雛形就發展成 Crumb。",
+      "src": "https://www.wbur.org/news/2017/06/21/tufts-bred-band-crumb",
+      "src2": "https://www.thefader.com/2019/06/27/crumbs-jinx-locket-interview",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "2016 年夏天，他們在同一棟房子裡錄下同名 EP，自行上傳；Aronow 說：『一開始更像是個錄音計畫。』一篇 Reddit r/listentothis 的貼文讓更多人聽到，一年後發行 EP《Locket》。",
+      "src": "https://www.thefader.com/2019/06/27/crumbs-jinx-locket-interview",
+      "src2": "https://www.wbur.org/news/2017/06/21/tufts-bred-band-crumb",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "WBUR 形容他們玩的是帶爵士味的迷幻搖滾，融合 jazz fusion 與 psych rock；首張 EP 的靈感包括 Melody's Echo Chamber、Walter Wanderley 與 Novos Baianos，現場偏重即興。",
+      "src": "https://www.wbur.org/news/2017/06/21/tufts-bred-band-crumb",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "維基引 Paste 的說法：他們把『60 年代迷幻、鬆散的爵士與自由形式的獨立搖滾』煉成柔和的流行；Bandcamp Daily 評《Locket》是以獨立搖滾為入口、走向更開闊聲響的『微迷幻』，吉他、貝斯與合成器的質地像一個更溫和的 Tame Impala。",
+      "src": "https://en.wikipedia.org/wiki/Crumb_(band)",
+      "src2": "https://daily.bandcamp.com/2017/07/17/crumb-locket-album-review/",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Boston Hassle 稱 Ramani 的嗓音『如海妖般』，並聽到 70 年代式的合成器與鍵盤；Fader 形容他們的聲音是『腦波式』的迷幻搖滾，常有段落切換、速度轉變與循環反覆。",
+      "src": "https://bostonhassle.com/crumb-takes-a-trip-with-jinx/",
+      "src2": "https://www.thefader.com/2019/06/27/crumbs-jinx-locket-interview",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "《Ice Melt》（2021）由 Foxygen 的 Jonathan Rado 製作；Beats Per Minute 的評論說他幫樂團找到迷幻與 trip-hop 之間的平衡，並稱這兩種成分在《Jinx》就有，到這張聽起來更飽滿。",
+      "src": "https://en.wikipedia.org/wiki/Ice_Melt",
+      "src2": "https://beatsperminute.com/album-review-crumb-ice-melt/",
+      "from": "new"
+     },
+     {
+      "f": "Beats Per Minute 形容《Ice Melt》比樂團早期作品更大聲、更宏大但仍然柔軟；開場曲 Up & Down 帶毛茸茸的 trip-hop 製作，整張聽得到 Portishead 的氣味，Ramani 的唱法被比作 Melody's Echo Chamber 的 Melody Prochet，在這張聽起來更清晰、更有樂團支撐。",
+      "src": "https://beatsperminute.com/album-review-crumb-ice-melt/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Atwood Magazine 評《Jinx》：全長 10 首、約 27 分鐘；鍵盤像雨滴般落下，鼓聲脆到『聽起來像假的』，Aronow 在〈Fall Down〉與〈Part III〉帶頭彈出 psych-jazz 的 riff，Ramani 的人聲跟著節拍跳著唱，服務器樂多過敘事。",
+      "src": "https://atwoodmagazine.com/crjx-crumb-jinx-album-review/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Ramani 說她的寫法是先把歌寫出來，事後才明白自己在講什麼。",
+      "src": "https://atwoodmagazine.com/crjx-crumb-jinx-album-review/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "錄《Ice Melt》時，樂團把包了保險套的麥克風放進一桶水裡，做出水下的音效；這張專輯的流動感與水的意象也貫穿全張（僅維基單源）。",
+      "src": "https://en.wikipedia.org/wiki/Ice_Melt",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Fader（2019 年 6 月）說《Locket》之後，現場觀眾已經能跟著唱出歌詞，樂迷圈持續擴大。",
+      "src": "https://www.thefader.com/2019/06/27/crumbs-jinx-locket-interview",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "WBUR（2017 年 6 月）記載，Stereogum、Pitchfork 等音樂部落格在 2017 年已報導《Locket》EP 的單曲〈Plants〉，Richmond 的 Citrus City Records 幫他們安排了第一次新英格蘭以外的巡迴。",
+      "src": "https://www.wbur.org/news/2017/06/21/tufts-bred-band-crumb",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "首張全長專輯《Jinx》2019 年 6 月發行，多首歌是在巡迴中邊演邊成形，前一年夏天才錄下。",
+      "src": "https://www.thefader.com/2019/06/27/crumbs-jinx-locket-interview",
+      "src2": "https://bostonhassle.com/crumb-takes-a-trip-with-jinx/",
+      "from": "bank"
+     },
+     {
+      "f": "2018 年 4 月，樂團在蒙特婁發生車禍（無人受重傷），剩下的巡演日期延後；Ramani 說這件事啟發了《Jinx》的標題曲與收尾曲，不過樂團不想把整張專輯說成『車禍專輯』。",
+      "src": "https://www.thefader.com/2019/06/27/crumbs-jinx-locket-interview",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "《Ice Melt》2021 年發行，在洛杉磯錄成，樂團以自己的廠牌 Crumb Records 獨立發行；Ramani 2019 年先錄 demo，全張花了約兩年寫成。",
+      "src": "https://en.wikipedia.org/wiki/Ice_Melt",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2019 年 6 月發行首張全長專輯《Jinx》。",
+    "src": "https://www.thefader.com/2019/06/27/crumbs-jinx-locket-interview",
+    "src2": "https://bostonhassle.com/crumb-takes-a-trip-with-jinx/",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "成員在 Tufts 相識的年份：Fader 寫 2013 年，Boston Hassle 寫 2016 年，WBUR 寫 2015 年底 Ramani 的雜亂歌曲才成形為 Crumb；facts 不寫相識年。",
+   "Aronow 名字：維基寫 Bri Aronow，Fader 與 WBUR 寫 Brian Aronow；facts 只寫姓。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": [
+   "https://wabe.org/?p=620685 403"
+  ],
+  "status": "thin",
+  "notes": "本次升級補查 7 次（WebSearch 3：Jinx 與訪談、Ice Melt 與 AMAMA、Tiny Desk 與影響；WebFetch 4：KALX 訪談頁、維基 Ice Melt、Beats Per Minute、Atwood Magazine）；失敗請求 1 次未計（WABE 403）。補到的是 sound：Ice Melt 的製作人與製作質地（維基＋BPM 兩源）、Jinx 的樂器與人聲處理、Ramani 的寫歌方式（單源）。仍缺 legacy：沒有後輩點名、獎項或權威機構的共識評價——這是 2016 年才起步的在世新團，搜尋只有評論與廠牌頁；Atwood 評《Jinx》預言『將出現一批 jazz-rock 樂團、之後會有人說 this sounds like Crumb』，是單一評論者的預測，不收；Metacritic 與 Pitchfork 分數屬樂評名次，避免。KALX 頁是廣播節目預告，沒有成員談話，不收；Alt Press 訪談稱 Ramani 童年專輯有 Cesária Évora 與 Neil Young《After the Gold Rush》，只見搜尋摘要未開頁，不收。身分：Ice Melt 維基頁寫 Rado 製作、洛杉磯錄音、Crumb Records 發行，與卡池《Jinx》同團無疑。判定仍為 thin（legacy 缺兩源實質內容），寫作層跳過、保留原上線版。thinIssues：無事實錯誤。\n【前稿 notes（沿用）】卡池《Jinx》（2019）＝布魯克林 Crumb（Lila Ramani 的團），不是同名的 Robert Crumb 相關音樂或其他 Crumb；無同名混卡。本位用掉 6 次（WebSearch 2：Jinx 與訪談、Locket／Reddit／Stereogum；WebFetch 4：Fader、WBUR、Boston Hassle、Bandcamp Daily）。這是 2016 年才開始的在世新團，legacy 只有『成長軌跡』沒有後輩點名或共識評價，因此標 thin。Pitchfork 評分（Jinx 7.8、AMAMA 8.1）與串流數字依規則避免，未收；Rolling Stone 的 Ice Melt 訪談被擋。Reddit 一節的實際來源是 Fader，搜尋摘要稱找不到 Reddit，但 Fader 內文確有其事。卡池若日後補 Ice Melt（2021）或 AMAMA（2024），新近事實需另行補兩源。"
+ },
+ {
+  "key": "culture freeman meets the bush chemists",
+  "name": "Culture Freeman meets The Bush Chemists",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "The Bush Chemists 1993 年在倫敦成立，起初是 Dougie Wardrop 在樂團 Centry 之外的副業計畫。",
+      "src": "https://en.wikipedia.org/wiki/The_Bush_Chemists",
+      "src2": "https://musicbrainz.org/release-group/9cafdcc2-73d5-38d8-9777-5949afc523bf",
+      "from": "bank"
+     },
+     {
+      "f": "Wardrop 1980 年代末在倫敦一家唱片行工作，Disciples 的 Russ 當時在那裡賣唱片。",
+      "src": "https://rebelbase.be/interviews/detail/bush-chemists---vk-052005",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "Wardrop 自己經營 Conscious Sounds 廠牌，他說帶有訊息的 conscious 音樂就是比較好；《Conqueror》的錄音地點在 Discogs 也記為 Conscious Sounds Studio。",
+      "src": "https://rebelbase.be/interviews/detail/bush-chemists---vk-052005",
+      "src2": "https://www.discogs.com/release/2424742",
+      "from": "bank"
+     },
+     {
+      "f": "Culture Freeman 是英國的吟誦歌手（chanter），長期與 The Bush Chemists 合作，風格或吟誦或念白；維基把他列為樂團固定合作的歌手。",
+      "src": "https://reggae-agenda.nl/ghent-dub-club-indica-dubs-soundsystem/",
+      "src2": "https://en.wikipedia.org/wiki/The_Bush_Chemists",
+      "from": "bank"
+     },
+     {
+      "f": "Conscious Sounds 廠牌的簡介把 Bush Chemists 列為廠牌最常用的名義，成員寫作 Dougie（Wardrop）、Chazbo 與 Culture Freeman。",
+      "src": "https://www.nts.live/artists/27562-conscious-sounds",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Bush Chemists 玩的是 dub steppers，Wardrop 稱之為對七〇年代 steppers 曲子的詮釋，另加入 sequencer 與鼓機；他不愛 UK dub 之類的標籤，寧可直接稱 reggae。",
+      "src": "https://rebelbase.be/interviews/detail/bush-chemists---vk-052005",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "Wardrop 點名的影響包括 King Tubby、Scientist、Lee Perry、Channel One 與 Jah Shaka；他說 Jah Shaka 的 sound 讓 dub steppers 在 1980 年代延續下去，也在 1990 年代吸引新聽眾。",
+      "src": "https://rebelbase.be/interviews/detail/bush-chemists---vk-052005",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "樂團是傳統雷鬼結合數位 dub：以重低音、電子打擊與繁複的鼓編程為骨幹，帶大量回聲，Jonah Dan 的邦哥鼓、合成器與 melodica 增添質地（取自對 2001 年《Dub Fire Blazing》的評論）。",
+      "src": "https://en.wikipedia.org/wiki/The_Bush_Chemists",
+      "src2": "https://freq.org.uk/?p=11782",
+      "from": "bank"
+     },
+     {
+      "f": "《Conqueror》的 credit 把全部樂器記給 Dougie Wardrop 與 Paul Davey，另有 Jonah Dan 打擊、Hughie Izachaar 吉他；製作署名 The Bush Chemists，Culture Freeman 掛詞曲作者。",
+      "src": "https://www.discogs.com/release/2424742",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "1996 年 Lollipop 的評論稱 Bush Chemists 玩的是承襲 King Tubby 與 Scientist 的『原教旨』dub reggae；PopMatters 評《Raw Raw Dub》則說他們的聲音跟 King Tubby 與 Lee Perry 三十年前做的差別不大，只加了剛好足以避免老調重彈的數位元素。",
+      "src": "https://lollipopmagazine.com/1996/08/bush-chemists-dub-outernational-review/",
+      "src2": "https://popmatters.com/bushchemists-rawrawdub-2495839532.html",
+      "from": "new"
+     },
+     {
+      "f": "PopMatters 稱他們是專注『老派 dub』的倫敦資深二人組，沒有走 Adrian Sherwood、Bill Laswell 與 Mad Professor 那種後雷鬼的實驗路線；鼓機、合成器與數位效果都繫在傳統 rocksteady 節奏上，現場邦哥鼓與吉他『保持真實感』，穩健的貝斯線與細微的變化才是抓人的地方。",
+      "src": "https://popmatters.com/bushchemists-rawrawdub-2495839532.html",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Conscious Sounds 的簡介稱 Wardrop 早年的錄音（Centry 名義時期）靠 Jah Shaka 的大量播放才有了早期的支持。",
+      "src": "https://www.nts.live/artists/27562-conscious-sounds",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1998 年 10 月，《Conqueror》由英國廠牌 Dubhead 發行（黑膠編號 DBHD 009LP），掛名 Culture Freeman Meets The Bush Chemists。",
+      "src": "https://musicbrainz.org/release-group/9cafdcc2-73d5-38d8-9777-5949afc523bf",
+      "src2": "https://www.discogs.com/release/2424742",
+      "from": "bank"
+     },
+     {
+      "f": "樂團的「Toker's Trilogy」依序是《Light Up Your Spliff》、《Light Up Your Chalice》與 2001 年的《Dub Fire Blazing》（Dubhead）。",
+      "src": "https://freq.org.uk/?p=11782",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "1996 年的《Dub Outernational》是 Bush Chemists 在美國的首次發行，由 ROIR 推出，內容是新曲加上自己經典曲目的重混。",
+      "src": "https://lollipopmagazine.com/1996/08/bush-chemists-dub-outernational-review/",
+      "src2": "https://en.wikipedia.org/wiki/The_Bush_Chemists",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1993 年，The Bush Chemists 在倫敦成立。",
+    "src": "https://en.wikipedia.org/wiki/The_Bush_Chemists",
+    "src2": "https://musicbrainz.org/release-group/9cafdcc2-73d5-38d8-9777-5949afc523bf",
+    "from": "bank"
+   },
+   {
+    "f": "1998 年 10 月，Culture Freeman 與 The Bush Chemists 的合作專輯《Conqueror》在 Dubhead 發行。",
+    "src": "https://musicbrainz.org/release-group/9cafdcc2-73d5-38d8-9777-5949afc523bf",
+    "src2": "https://www.discogs.com/release/2424742",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "維基成員欄把歌手拼成 Colture Freeman，疑為 Culture Freeman 之誤，facts 一律寫 Culture Freeman。",
+   "Conscious Sounds 成立年：Ghent 演出頁寫自 1989 年起，樂團成軍為 1993 年；兩者無法對起來，facts 不寫廠牌成立年。",
+   "成員：NTS（Conscious Sounds 簡介）列 Dougie、Chazbo 與 Culture Freeman 為 Bush Chemists，維基與 Discogs credit 則以 Paul Davey 為 Wardrop 的主要合作者；兩者不互斥，facts 只寫 NTS 的列法並具名來源，不寫『核心三人』。",
+   "Conscious Sounds 成立年：NTS 簡介寫 1990 年以 Centry 名義的〈Stepping Time〉開張，前稿 Ghent 演出頁寫 1989 年，樂團成軍 1993 年；三者不一致，facts 仍不寫廠牌成立年。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": [
+   "https://forcedexposure.com/Artists/BUSH.CHEMISTS.html 頁面空白"
+  ],
+  "status": "thin",
+  "notes": "本次升級補查 7 次（WebSearch 3：steppers 與影響、Conqueror 評論、Light Up Your Spliff 再版；WebFetch 4：PopMatters、Lollipop、NTS、英文維基 The Bush Chemists），失敗請求 1 次未計（Forced Exposure 空白頁）。補到的是 sound：兩篇不同年代的獨立評論都把樂團放進 King Tubby 傳統（Lollipop 評《Dub Outernational》1996、PopMatters 評《Raw Raw Dub》），另有 1996 年 ROIR 首次美國發行（Lollipop＋維基）。仍缺 legacy：沒有後輩點名、獎項或共識評價，只有 NTS 簡介稱早年錄音受 Jah Shaka 大量播放（廠牌自述，單源）。未收：NTS 稱 1990 年代末與 Dubhead 的合約因版稅與創作爭執而終止（爭議屬高風險、單源，且與本碟發行商有關，寫作層若要寫請不要）；NTS 說廠牌近年迎來『新黃金期』是廠牌自述；搜尋摘要提到〈Light Up Your Spliff〉被商業廣告使用（含 Supreme）出自 Forced Exposure 再版頁，頁面開不出內容，不收；Culture Freeman 本人出身地、本名、生年仍查不到，英文維基只列他的作品（〈Dread Inna Babylon〉1996、《The Conqueror》1998 等）。PopMatters 評的是《Raw Raw Dub》、Lollipop 評的是《Dub Outernational》，都不是本碟《Conqueror》，寫作時只能寫樂團整體，不得寫成本碟評價。查無任何針對《Conqueror》的獨立評論。判定仍為 thin，寫作層跳過、保留原上線版。thinIssues：原 thin 正文『Freeman 是長期合作的歌手，或吟誦或念白』與前稿 Ghent 演出頁一致，無錯誤。\n【前稿 notes（沿用）】本位補查 6 次：WebSearch（樂團與廠牌）、維基 The Bush Chemists、rebelbase 2005 年訪談、Ghent Dub Club 演出頁、WebSearch（Light Up Your Spliff 與評論）、freq.org.uk 評論；失敗請求 1 次（Forced Exposure 再版頁空白）。legacy 格查不到：沒有後輩點名、獎項或共識評價。未收：搜尋摘要提到〈Light Up Your Spliff〉標題句是 Wardrop 想取樣紀錄片中有人吟誦、塞不進去才請 Culture Freeman 念，以及 2018 年 Mania Dub 再版稱該曲被多個品牌用於廣告，兩者出自 Forced Exposure 再版頁，該頁開不出內容，不收；維基稱 1996 年《Dub Outernational》是樂團首張美國發行（ROIR），屬「首次」類只見單源，不收。Culture Freeman 本人的出身地、本名、生年一律查不到（MusicBrainz 只登錄為 Person，無地區與生年）。卡池專輯 Conqueror 1998 與 MusicBrainz first-release-date 1998-10 一致。事實庫的 Discogs 與 MusicBrainz 欄位清單只取 credit 與發行資訊。Wardrop 替 Jah Warrior 發行擔任工程師一事（維基）與本專輯無直接關聯，未收。Centry 也在本批（卡池 1993），本位只提它作為 Wardrop 的主樂團。"
+ },
+ {
+  "key": "curtis counce",
+  "name": "Curtis Counce",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Curtis Counce 1926 年生於密蘇里州 Kansas City，1963 年在洛杉磯過世。",
+      "src": "https://en.wikipedia.org/wiki/Curtis_Counce",
+      "src2": "https://www.highresaudio.com/artist/view/4ff96cb8-ee1f-4bba-b12b-c3bcc9b6c6e1/curtis-counce",
+      "from": "bank"
+     },
+     {
+      "f": "他先學小提琴與大號，後來才專攻低音提琴；16 歲就在 Omaha 加入 Nat Towles 樂團，開始職業演出。",
+      "src": "https://www.highresaudio.com/artist/view/4ff96cb8-ee1f-4bba-b12b-c3bcc9b6c6e1/curtis-counce",
+      "src2": "https://thejazztome.info/curtis-counce-the-curtis-counce-group/",
+      "from": "bank"
+     },
+     {
+      "f": "他 1945 年搬到洛杉磯，先跟 Johnny Otis 合作，1946 年首次錄音是和 Lester Young 一起。",
+      "src": "https://www.highresaudio.com/artist/view/4ff96cb8-ee1f-4bba-b12b-c3bcc9b6c6e1/curtis-counce",
+      "src2": "https://en.wikipedia.org/wiki/Curtis_Counce",
+      "from": "bank"
+     },
+     {
+      "f": "1950 年代他在洛杉磯當錄音室與樂團的搶手貝斯手，與 Shorty Rogers、Stan Kenton、Shelly Manne、Clifford Brown 等人合作，1956 年隨 Kenton 巡演。",
+      "src": "https://en.wikipedia.org/wiki/Curtis_Counce",
+      "src2": "https://thejazztome.info/curtis-counce-the-curtis-counce-group/",
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1956 年 Counce 組成自己的五重奏：Jack Sheldon（小號）、Harold Land（次中音薩克斯風）、Carl Perkins（鋼琴）與 Frank Butler（鼓）。",
+      "src": "https://en.wikipedia.org/wiki/Curtis_Counce",
+      "src2": "https://www.highresaudio.com/artist/view/4ff96cb8-ee1f-4bba-b12b-c3bcc9b6c6e1/curtis-counce",
+      "from": "bank"
+     },
+     {
+      "f": "這個五重奏約 15 個月內錄下四張專輯，全部由 Contemporary 發行，風格落在西岸冷爵士與 hard bop 之間，曲目是標準曲加上團員自己的原創。",
+      "src": "https://www.highresaudio.com/artist/view/4ff96cb8-ee1f-4bba-b12b-c3bcc9b6c6e1/curtis-counce",
+      "src2": "https://en.wikipedia.org/wiki/Curtis_Counce",
+      "from": "bank"
+     },
+     {
+      "f": "一份回顧把這個團的立場說成西岸對東岸 hard bop 的回應：比東岸的同行更放鬆、不那麼緊繃。",
+      "src": "https://thejazztome.info/curtis-counce-the-curtis-counce-group/",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "鼓手 Frank Butler 在 Counce 五重奏的第一批錄音裡初次錄音，當年評論稱他是「a wonderful find」。",
+      "src": "https://thejazztome.info/curtis-counce-the-curtis-counce-group/",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Jazz.com 的條目說，Counce 這個團的團員都替樂團寫原創曲。",
+      "src": "https://jazz.com/encyclopedia/counce-curtis",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "AllMusic 的 Scott Yanow 評《You Get More Bounce with Curtis Counce!》時寫道，這是個「solo 實力十足」的團，音樂落在 hard bop 與冷爵士之間。",
+      "src": "https://en.wikipedia.org/wiki/You_Get_More_Bounce_with_Curtis_Counce!",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Counce 的五重奏剛亮相時，《Billboard》寫道「注意這個團，它就要紅了」，《Down Beat》給了四顆星，稱讚它在成團不到一個月的情況下已有「powerful integration」。",
+      "src": "https://thejazztome.info/curtis-counce-the-curtis-counce-group/",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Counce 1963 年因心臟病在洛杉磯過世；他最被記得的就是 1956 至 1958 年這個錄音完整的五重奏。",
+      "src": "https://en.wikipedia.org/wiki/Curtis_Counce",
+      "src2": "https://www.highresaudio.com/artist/view/4ff96cb8-ee1f-4bba-b12b-c3bcc9b6c6e1/curtis-counce",
+      "from": "bank"
+     },
+     {
+      "f": "這批 Contemporary 錄音後來有重發：四張原版專輯 2006 年由 Gambit Spain 合輯成雙 CD。",
+      "src": "https://en.wikipedia.org/wiki/Curtis_Counce",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Blue Note 的傳記與 Jazz.com 的條目都稱 Counce 是最早深入投入西岸爵士運動的非裔樂手之一（兩者措辭皆為『之一』）。",
+      "src": "https://bluenote.com/?p=2055",
+      "src2": "https://jazz.com/encyclopedia/counce-curtis",
+      "from": "new"
+     },
+     {
+      "f": "Jazz.com 的條目指出，Counce 的團在 Contemporary 與 Dootone 的唱片評價不錯，卻從沒去過紐約演出，因此多數爵士樂評人忽略了它；該條目稱它的風格是 Brown-Roach 五重奏東遷後，西岸「最接近 hard bop 的東西」。",
+      "src": "https://jazz.com/encyclopedia/counce-curtis",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Blue Note 的傳記說他因心臟病早逝，是爵士樂的「悲劇性損失」。",
+      "src": "https://bluenote.com/?p=2055",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Notorious Jazz 評 Contemporary 錄音雙 CD 重發時說，這個團的目的是替東岸那種帶靈魂味的 hard bop 發展出一個西岸的回答；The Jazz Tome 的回顧也把這個團的立場說成西岸對東岸 hard bop 的回應。",
+      "src": "https://notoriousjazz.com/?p=30072",
+      "src2": "https://thejazztome.info/curtis-counce-the-curtis-counce-group/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1956 至 1958 年是 Counce 五重奏的活動期；Carl Perkins 1958 年過世後由 Elmo Hope 接手鋼琴。",
+      "src": "https://en.wikipedia.org/wiki/Curtis_Counce",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "《You Get More Bounce with Curtis Counce!》由 Lester Koenig 製作，在洛杉磯 Contemporary Studios 分五次錄成：1956 年 10 月 8 日與 15 日，1957 年 4 月 27 日、5 月 13 日與 9 月 3 日。",
+      "src": "https://en.wikipedia.org/wiki/You_Get_More_Bounce_with_Curtis_Counce!",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1956 年，Counce 組成五重奏，與 Harold Land、Jack Sheldon、Carl Perkins 與 Frank Butler 合作，在 Contemporary 錄下四張專輯。",
+    "src": "https://en.wikipedia.org/wiki/Curtis_Counce",
+    "src2": "https://www.highresaudio.com/artist/view/4ff96cb8-ee1f-4bba-b12b-c3bcc9b6c6e1/curtis-counce",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "事實庫沒有研究稿，只有上線簡介：簡介「1956 至 1957 年間分五次進洛杉磯 Contemporary 錄音室」本層沒有找到來源可核對次數；簡介「屬西岸罕見的黑人常設 hard bop 樂團」與 AllMusic（經 HighResAudio 轉載）的「最早深度參與西岸爵士的非裔樂手之一」同方向，但都沒有開頁證實，facts 不收。",
+   "前稿 conflicts 說上線簡介『分五次進錄音室』查無來源可核對；本次維基專輯頁列出五個錄音日期（1956 年 10 月 8、15 日，1957 年 4 月 27 日、5 月 13 日、9 月 3 日），與上線簡介一致，採上線簡介，維基單源。",
+   "上線簡介『西岸罕見的黑人常設 hard bop 樂團』：Blue Note 與 Jazz.com 稱 Counce 個人是最早深入西岸爵士的非裔樂手之一，Jazz.com 稱該團是 Brown-Roach 五重奏東遷後西岸『最接近 hard bop 的東西』，方向一致；『罕見』一詞無來源，facts 不收，寫作層不必沿用。",
+   "Blue Note 傳記與 Jazz.com 條目、HighResAudio 轉載同出 AllMusic（Scott Yanow）一脈，視為非獨立；legacy 兩源第一條因此在 notes 註明。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": [],
+  "status": "full",
+  "notes": "升級為 full。身分：卡池只有《You Get More Bounce with Curtis Counce!》（1957），與貝斯手 Counce 吻合，無同名混卡。本次補查 6 次（WebSearch 2：樂團與影響、傳記與訃聞；WebFetch 4：維基專輯頁、Notorious Jazz 樂評、Blue Note 傳記、Jazz.com 條目）。補到的 legacy：『最早深入西岸爵士的非裔樂手之一』（Blue Note＋Jazz.com 兩源，但兩者與 HighResAudio 同出 AllMusic 的 Yanow 文字，非獨立，寫作層寫成『傳記稱…』並用『之一』）；樂團因沒去過紐約而被主流樂評忽略（Jazz.com 單源，具名說法）；『西岸對東岸 hard bop 的回應』現在有 The Jazz Tome 與 Notorious Jazz 兩處（兩篇皆為重發樂評，各自獨立）。sound 補到全員寫曲（單源）與 Yanow 的描述。未收：『最早』類宣稱不寫成『第一位』，因 Hampton Hawes 等同期非裔樂手也在洛杉磯活動，只能用『之一』；Notorious Jazz 稱音樂是『非裔美國原生藝術的最高等級』是單一樂評人的形容詞，不收；Notorious Jazz 稱樂團 1956 至 1958 年錄了 24 首，與前稿『四張專輯』不矛盾，不收數字；Perkins 逝世年（1958）與死因仍只見維基與搜尋摘要，維持前稿單源 era；Counce 出生地搜尋摘要有一處寫 Oklahoma，維基、Blue Note、Jazz.com 皆寫 Kansas City，採 Kansas City。專輯日期若寫作層要用，只有維基單源。thinIssues：無事實錯誤；原 thin 正文『約 15 個月內為 Contemporary 錄下四張專輯』與維基（1956 年成團）及前稿一致。\n【前稿 notes（沿用）】身分：卡池只有《You Get More Bounce with Curtis Counce!》（1957）一張，是貝斯手 Curtis Counce（Kansas City 出生、洛杉磯活動），沒有同名混卡。HighResAudio 的傳記轉載自 AllMusic（Scott Yanow 的文字），與維基的描述幾乎重疊，視為非獨立。單源未收：(1) AllMusic 稱 Counce 是「最早深度參與西岸爵士運動的非裔美國人之一」——「最早」類宣稱，只有 AllMusic 轉載單源，且有明顯的同期反例（如 Hampton Hawes、Sonny Criss 等），不收；(2) Carl Perkins 1958 年過世、Elmo Hope 接手、Gerald Wilson 替換 Sheldon——只有英文維基，成員異動屬高風險，已放 era 但標 single，寫作層若寫請謹慎；(3) JT 整頁評論的對象是同團的另一張專輯《The Curtis Counce Group》（Landslide，1957），Down Beat 四星與 Billboard 的評語屬那張，不要寫成《You Get More Bounce》的評價，facts 已寫「五重奏剛亮相時」；(4) Frank Butler 是否「在這系列錄音裡首次錄音」只有 JT 一頁，已標 single。legacy 格沒有後輩點名或權威評價，只有同期樂評與重發，故整位標 thin。查證 4 次：WebSearch 兩次、HighResAudio 傳記、The Jazz Tome。"
+ },
+ {
+  "key": "cut copy",
+  "name": "Cut Copy",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Cut Copy 是澳洲樂團，2001 年在墨爾本由 Dan Whitford 以個人錄音計畫起家，Whitford 同時是 DJ 與平面設計師。",
+      "src": "https://en.wikipedia.org/wiki/Cut_Copy",
+      "src2": "https://albumism.com/features/tribute-celebrating-10-years-of-cut-copy-in-ghost-colours",
+      "from": "bank"
+     },
+     {
+      "f": "Whitford 當時同時迷 1990 年代的舞曲與 grunge，覺得這是兩個互不往來的場景，想把兩者合在一起。",
+      "src": "https://albumism.com/features/tribute-celebrating-10-years-of-cut-copy-in-ghost-colours",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "樂團後來擴成四人，現有成員是 Dan Whitford、Tim Hoey（吉他）、Ben Browning（貝斯）與 Mitchell Scott（鼓）。",
+      "src": "https://en.wikipedia.org/wiki/Cut_Copy",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "吉他手 Tim Hoey 說，他們組團之前其實不太會彈自己的樂器，卻被這種做音樂的方式吸引。",
+      "src": "https://music.mxdwn.com/2008/07/20/features/strangers-in-the-wind-an-interview-with-cut-copy/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基把樂團歸為 synth-pop、indietronica、dance-punk 與 new wave；Whitford 說自己受 indie lo-fi 的啟發，與受舞曲的一樣多。",
+      "src": "https://en.wikipedia.org/wiki/Cut_Copy",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "《In Ghost Colours》（2008 年 3 月）帶有 1980 年代復興的色彩、泡了大量殘響的人聲與合成器低音，比 2004 年的首張《Bright Like Neon Love》更有動態。",
+      "src": "https://albumism.com/features/tribute-celebrating-10-years-of-cut-copy-in-ghost-colours",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "《In Ghost Colours》由 Tim Goldsworthy 製作；他是 DFA Records 的前共同經營者，做過 The Rapture 與 Hercules & Love Affair，被認為抓到了樂團的現場能量。",
+      "src": "https://albumism.com/features/tribute-celebrating-10-years-of-cut-copy-in-ghost-colours",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "《In Ghost Colours》2007 年在紐約的 DFA Records 錄音室與墨爾本錄成，由 Cut Copy 與 Tim Goldsworthy 製作；Hoey 說他們在紐約和 Goldsworthy 待了 6 週把曲子完成，並刻意保留部分臥室錄音。",
+      "src": "https://en.wikipedia.org/wiki/In_Ghost_Colours",
+      "src2": "https://music.mxdwn.com/2008/07/20/features/strangers-in-the-wind-an-interview-with-cut-copy/",
+      "from": "new"
+     },
+     {
+      "f": "Whitford 2008 年說，DFA 錄音室講究老派做法：整首歌完整演奏而不是疊一段循環；唱片上沒有程式排好的鼓機，合成器對他們只是另一件樂器，這張也比首作更貼近現場的能量。",
+      "src": "https://www.tinymixtapes.com/features/cut-copy",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Hoey 說他們最直接的影響是 1970 年代的『middle of the road』加州流行；他描述的做法是 Whitford 先帶歌進來，全團一起學曲子、重組結構，再由 Whitford 帶回去繼續打磨。Whitford 自己則說聽這張唱片能聽到上百個藝人或專輯的影響，由一種共通的流行美學串起來。",
+      "src": "https://music.mxdwn.com/2008/07/20/features/strangers-in-the-wind-an-interview-with-cut-copy/",
+      "src2": "https://www.tinymixtapes.com/features/cut-copy",
+      "from": "new"
+     },
+     {
+      "f": "英文維基列出此專輯的錄音過程：美國廠牌 Interscope 起初曾建議樂團找 Timbaland 合作，最後是在紐約與 Goldsworthy 完成；專輯原訂 2007 年在澳洲發行，為配合國際發行延到 2008 年。",
+      "src": "https://en.wikipedia.org/wiki/In_Ghost_Colours",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《In Ghost Colours》2008 年一出就登上澳洲 ARIA 專輯榜第 1 名，樂團的突破也從這張開始。",
+      "src": "https://en.wikipedia.org/wiki/Cut_Copy",
+      "src2": "https://albumism.com/features/tribute-celebrating-10-years-of-cut-copy-in-ghost-colours",
+      "from": "bank"
+     },
+     {
+      "f": "這張專輯被放在當時剛成形的「indie-dance」與「indie-electronic」分類裡談；專輯裡的單曲〈Lights & Music〉是樂團最受歡迎的歌。",
+      "src": "https://albumism.com/features/tribute-celebrating-10-years-of-cut-copy-in-ghost-colours",
+      "src2": "https://en.wikipedia.org/wiki/Cut_Copy",
+      "from": "bank"
+     },
+     {
+      "f": "Whitford 2018 年（專輯 10 週年）受訪說，專輯在澳洲一出就登上第 1 名，樂團後來替 Daft Punk 的澳洲巡演開場；他知道樂迷非常珍惜這張，但樂團還是得往前走、做當下讓他們興奮的音樂。",
+      "src": "https://www.timeoutmexico.mx/ciudad-de-mexico/musica/dan-whitford-de-cut-copy-nos-cuenta-sobre-los-10-anyos-de-su-disco-in-ghost-colours",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "專輯發行日：維基與 Albumism 都寫 2008 年 3 月，Albumism 另寫 3 月 22 日、維基專輯頁寫 ARIA 榜首週為 3 月 30 日；facts 只寫 2008 年。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": [
+   "https://redbull.com/au-en/cut-copy-in-ghost-colours-interview 403（www 與非 www 各一次）",
+   "https://purplesneakers.com.au/2017/07/interview-cut-copy-2/ 301 轉址到錯誤頁"
+  ],
+  "status": "thin",
+  "notes": "本次升級補查 8 次（WebSearch 3：影響與 New Order、十年後的定位、後輩點名；WebFetch 5：維基 In Ghost Colours、mxdwn 2008 訪談 Tim Hoey、Time Out Mexico 十週年訪談、BlackPlastic 評《Zonoscope》、Tiny Mix Tapes 2008 訪談）；失敗請求 3 次未計。sound 補足：錄音地點與製作人（維基＋mxdwn 兩源）、整首完整演奏與不用程式鼓機（TMT）、Hoey 說的 1970 年代加州流行影響（mxdwn）。origin 沿用前稿兩源。仍缺 legacy：沒有後輩點名，也沒有可讀的回顧來源——搜尋摘要提到 Red Bull（澳洲）稱此張為『澳洲電子音樂最重要的專輯之一』『ARIA 榜首』、Purple Sneakers 稱它是『最重要的澳洲專輯之一、啟發一整波電子結合現場樂器』，兩頁皆開不了，只見摘要，不收，兩源不全。BlackPlastic 評《Zonoscope》（2011）稱《In Ghost Colours》『重新定義了參考點、幾乎永不過時』是單一樂評人形容詞，不收；Whitford 在 TMT 說『人們說這有個 Cut Copy sound』是本人轉述，也不構成共識。避免：維基專輯頁列的 Metacritic、Pitchfork（Best New Music、2008 年度第 4 名、2000 年代 200 張第 61 名）、Drowned in Sound 第 3、Sunday Times 第 2 等樂評榜單名次；J Awards 2008『澳洲年度專輯』入圍（獎項屬高風險，只有維基單源）；ARIA 金唱片認證 35000 張。未再查：2011 年 ARIA 最佳舞曲發行與最佳封面設計得獎、2012 葛萊美入圍（單源，同前稿）。判定仍為 thin（legacy 缺兩源共識評價），寫作層跳過、保留原上線版。thinIssues：無事實錯誤；原 thin 正文『成為樂團的突破』『登上澳洲 ARIA 專輯榜第 1 名』與維基一致。\n【前稿 notes（沿用）】身分：卡池《In Ghost Colours》2008 對上墨爾本的 Cut Copy，無同名混卡。ARIA 專輯榜第 1 名屬在世者榜單名次，因它是樂團突破的核心，列為必要例外一處，兩源（維基與 Albumism 各自寫到）。獎項（2008 ARIA 最佳舞曲發行入圍、2011 ARIA 最佳舞曲發行與最佳封面設計得獎、2012 葛萊美最佳舞曲／電子專輯入圍）只見維基，單源，不進 facts。Red Bull 一文稱此專輯被視為澳洲電子音樂最重要的專輯之一，頁面 403 開不了，只見搜尋摘要，不收。成員 Tim Hoey 與 Mitchell Scott 2003 年加入、Ben Browning 2010 年加入、Bennett Foddy 2004 年離團，屬成員異動，只有維基一源，facts 只寫現有成員、不寫年份。預抓維基的 wikidata 成軍年 2001 與兩源一致。"
+ },
+ {
+  "key": "d.r. hooker",
+  "name": "D.R. Hooker",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "D.R. Hooker 是美國康乃狄克州的歌手兼詞曲作者，樂團以他為首，他唱歌並彈吉他。",
+      "src": "https://www.spaceritual.net/alexgitlin/npp2/drhooker.htm",
+      "src2": "https://cdn.soundohm.com/product/the-truth",
+      "from": "bank"
+     },
+     {
+      "f": "1972 年初他雇了一批當地樂手演出自己的歌，只排練了幾次就開錄；錄完班底便散了，有些樂手連成品都沒聽過。",
+      "src": "https://cdn.soundohm.com/product/the-truth",
+      "src2": "https://www.subliminalsounds.se/?p=329",
+      "from": "bank"
+     },
+     {
+      "f": "他一生自行發行三張專輯：1972 年的《The Truth》，之後是《Armageddon》與《Rain on the Moon》。",
+      "src": "https://www.spaceritual.net/alexgitlin/npp2/drhooker.htm",
+      "src2": "https://www.subliminalsounds.se/?p=329",
+      "from": "bank"
+     },
+     {
+      "f": "Subliminal Sounds 的紀念頁寫他長期在資訊科技業工作，音樂是副業。",
+      "src": "https://www.subliminalsounds.se/?p=329",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "歌詞題材的跨度大：從態度含糊的藥物歌曲，到田園風的聖歌，再到全然的耶穌讚頌，這是《The Acid Archives》作者 Patrick Lundborg 的描述。",
+      "src": "https://www.subliminalsounds.se/?p=329",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "評論者形容〈Weather Girl〉是介於 The Doors 與 Curtis Mayfield 之間的輕快搖擺流行，〈Free〉把低吼的硬搖滾律動接上合成器旋律，〈Forge Your Own Chains〉則是康加鼓帶頭的 lounge-funk soul 加上探索式的迷幻。",
+      "src": "https://cdn.soundohm.com/product/the-truth",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "《Fuzz, Acid & Flowers》作者寫道，這張少有商業野心，重一點的曲目如〈I'm Leaving You〉與〈The Bible〉最突出，結尾是一段倒放的訊息。",
+      "src": "https://www.spaceritual.net/alexgitlin/npp2/drhooker.htm",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "重發廠牌 Numero Group 的文案把《The Truth》形容成嬉皮迷幻與福音派基督教的混合：唱腔像被 LSD 弄壞的 Frank Sinatra 或 Lou Reed，扮演一個離婚的郊區老爸，是一場『宗教的中年危機』。",
+      "src": "https://numerogroup.com/products/the-truth",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "NTS 的介紹稱這張聽起來比多數私壓更有野心、更完整，雜訊與毛邊的段落出乎意料地精細；〈Forge Your Own Chains〉把這點推到極端，在進階的 lounge 爵士樂句上壓上猛烈的銅管。",
+      "src": "https://www.nts.live/artists/1217-d-r-hooker",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "兩本美國私壓搖滾專書都給《The Truth》高位：Patrick Lundborg 在《The Acid Archives》稱它是私壓圈的大型經典之一，Clark Faville 在《Fuzz, Acid & Flowers》稱它是 1970 年代初私壓圈的真正珍寶之一。",
+      "src": "https://www.subliminalsounds.se/?p=329",
+      "src2": "https://www.spaceritual.net/alexgitlin/npp2/drhooker.htm",
+      "from": "bank"
+     },
+     {
+      "f": "〈Forge Your Own Chains〉在 2009 年成為 Now-Again 合輯《Forge Your Own Chains: Heavy Psychedelic Ballads and Dirges 1968-1974》的書名曲。",
+      "src": "https://www.discogs.com/release/1994638",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "《The Truth》1993 年由 Del-Val 重發，之後 Subliminal Sounds 於 1990 年代末出了 LP、2000 年出了 CD，2024 年 Numero Group 再版（NUM1282）。",
+      "src": "https://www.spaceritual.net/alexgitlin/npp2/drhooker.htm",
+      "src2": "https://www.discogs.com/release/31572151",
+      "from": "bank"
+     },
+     {
+      "f": "NTS 的介紹說，1972 年的 LP《The Truth》被廣泛視為 1970 年代迷幻私壓中最重要的作品之一。",
+      "src": "https://www.nts.live/artists/1217-d-r-hooker",
+      "src2": "https://www.subliminalsounds.se/?p=329",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "上線簡介寫《The Truth》1972 年由 On Records 發行；Discogs 原盤條目（XPL-1029）廠牌欄為 On Records，spaceritual（引 Fuzz, Acid & Flowers）則寫 No Label（XLP 1029），兩者不一致，facts 未收廠牌。"
+  ],
+  "pubIssues": [],
+  "searches": 4,
+  "failedFetches": [
+   "https://www.normanrecords.com/records/160776-d-r-hooker-the-truth 空白",
+   "https://www.forcedexposure.com/Catalog/VAG.014CD.html 403",
+   "https://www.theselfportraitgospel.com/interviews/george-sheck-dr-hooker 404"
+  ],
+  "status": "full",
+  "notes": "升級為 full（偏弱的 full）。身分：卡池只有《The Truth》（1972），與康乃狄克私壓迷幻歌手 D.R. Hooker 吻合，維基無條目。本次補查 4 次（WebSearch 2：Numero 重發與生平、評論；WebFetch 2：Numero Group 商品頁、NTS 藝人頁）；失敗請求 3 次未計。補到：sound 兩條（Numero 文案屬廠牌自述，NTS 屬電台介紹，皆低風險單源具名寫法）與 legacy『最重要的私壓之一』（NTS＋Subliminal Sounds 引 Lundborg 的方向一致）。legacy 因此有三個獨立說法：Lundborg 與 Faville 兩本專書、NTS、Now-Again 合輯以〈Forge Your Own Chains〉為名。origin 仍薄：只有『康乃狄克、雇當地樂手只排練幾次、IT 業、三張自行發行』，沒有出身、年齡、信仰轉變的雙源；寫作層以人物故事（排練幾次就開錄、班底散去、成品有人沒聽過）為主軸即可，不要寫生卒年與職業細節（Subliminal Sounds 單源）。未收：搜尋摘要稱 Guardian 2013（Rob Fitzpatrick）稱〈Forge Your Own Chains〉是 Hooker 的傑作，Guardian 在雲端被擋，只見摘要；搜尋摘要稱 session 樂手說錄製花了兩個月長時間錄音與混音，來源 Sheck 訪談頁 404 開不了；原盤只壓 99 張僅見賣場與摘要；搜尋摘要稱 Hooker 後來信教並在 IBM 工作，仍只見一篇評論的轉述、無法證實，不收（前稿同判）；Veals & Geeks 2016 年 CD 重發與 Psychedelic Sounds International CD 只見賣場摘要，不收。thinIssues：無事實錯誤；上線簡介寫『錄於康乃狄克州紐哈芬』『1972 年由 On Records 發行』仍未找到來源可核對（前稿 conflicts 已記廠牌歧異）。\n【前稿 notes（沿用）】身分：poolAlbums 為 1972 年《The Truth》，與康乃狄克私壓迷幻歌手 D.R. Hooker 對上；維基無條目、無 warn。本名 Donald R. Hooker II、1949 至 2009 年僅見 Subliminal Sounds 紀念頁（單源，生卒年屬高風險，故不收進 facts）。原盤壓量約 99 張僅見 Forced Exposure 與 Record Exchange 等商店頁估計（頁面未開成功，僅搜尋摘要），不收。「新港（New Haven）」錄音一說出自上線簡介／既有研究稿，本層未再找到來源，facts 未收。Armageddon 1979 年 On Records 發行、1974 年初錄音出自 spaceritual 單源，未收。Hooker 後來信教、在 IBM 工作之說搜尋無法證實，不收。George Sheck（貝斯手）訪談頁 theselfportraitgospel.com 取不到。Lundborg 與 Faville 的評語皆為專書具名說法（低風險）。「legacy 重發」一條：Del-Val 1993 年與 Numero Group 2024 年 Discogs 條目皆讀到（以 Discogs API 查證），Subliminal Sounds LP 年份 Discogs 為 1999、spaceritual 為 1990 年代，CD 為 2000（spaceritual）而 Discogs 另列 2008 年壓，facts 寫「1990 年代末／2000 年」。素材偏薄，落 thin。"
+ },
+ {
+  "key": "da lata",
+  "name": "Da Lata",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Da Lata 是倫敦的團，由 Chris Franck 與 Patrick Forge 組成；兩人先前在布萊頓的樂團 Batu 合作，Da Lata 是改以錄音室為主的計畫。",
+      "src": "https://en.wikipedia.org/wiki/Da_Lata",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "Chris Franck 生於德國，父母是德國人與荷蘭人，六歲起住在英國。",
+      "src": "https://en.wikipedia.org/wiki/Chris_Franck",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "Patrick Forge 是倫敦的 DJ 與廣播人，1980 年代末到 1990 年代初與 Gilles Peterson 同在北倫敦 Camden 的 Dingwalls 放爵士舞曲，那裡的「Sunday Afternoon at Dingwalls」場子是他的招牌。",
+      "src": "https://en.wikipedia.org/wiki/Patrick_Forge",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "Franck 自述的影響包括 samba、bossa nova、非洲音樂、民謠、funk 與搖滾。",
+      "src": "https://en.wikipedia.org/wiki/Chris_Franck",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "Da Lata 的經紀簡介把主唱 Liliana Chachian 與打擊樂手 Oli Savill 列為核心貢獻者，創辦人則是製作人 Chris Franck 與 DJ Patrick Forge。",
+      "src": "https://www.vip-booking.com/details?id=52595",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們把非洲系巴西音樂的影響，和家鄉倫敦那鍋什麼都有的音樂混在一起。",
+      "src": "https://en.wikipedia.org/wiki/Da_Lata",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "Franck 是主要創作者，包辦詞曲、製作與多種樂器；Forge 以 DJ 與廣播人聞名，掛名共同製作人。",
+      "src": "https://en.wikipedia.org/wiki/Da_Lata",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "《Songs From the Tin》的人聲與編制很國際：住在倫敦的巴西歌手 Liliana Chachian 領唱多首，約魯巴語歌手與弦樂四重奏、berimbau 同場。",
+      "src": "https://www.discogs.com/release/13621",
+      "from": "bank"
+     },
+     {
+      "f": "Da Lata 的簡介把他們的音樂說成『前進式地融合非洲與巴西的節奏和當代舞池質感』，混合原聲與電子元素。",
+      "src": "https://www.vip-booking.com/details?id=52595",
+      "src2": "https://twistedsoulmusic.org/2019/05/10/guest-playlist-da-lata/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "最早的作品是以 Trio Da Lata 名義在日本 Brownswood 發行的〈Deep Water〉；真正引起注意的是下一支，翻唱 Edu Lobo 的經典〈Ponteio〉，同時打進 house 與 jazz-dance 兩邊的聽眾，在日本與紐約特別受 Body&Soul 的 DJ 們支持。",
+      "src": "https://en.wikipedia.org/wiki/Da_Lata",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "〈Ponteio〉成功後，Franck 轉去替 Smoke City 寫歌、製作並巡演，Da Lata 因此擱置數年。",
+      "src": "https://en.wikipedia.org/wiki/Da_Lata",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "他們為 Chris Blackwell 的 Palm Pictures 做過三張專輯：《Songs from the Tin》（2000）、《Serious》（2003）與收錄自己替別人混音的《Remixes》，被混的對象包括 Femi Kuti、Luciano、Bebel Gilberto 與 Sly and Robbie。",
+      "src": "https://en.wikipedia.org/wiki/Da_Lata",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "〈Ponteio〉1997 年春天在 Jo Davis 的 Far Out 廠牌發行，由巴西歌手 Liliana Chachian 主唱；經紀簡介說 François Kevorkian 與 Joe Claussell 在紐約的 Body & Soul 俱樂部讓它「紅透」，並說這首被譽為『開創性』與『經典』，Gilles Peterson 等 DJ 都力挺他們的音樂（簡介為經紀文案，非獨立樂評）。",
+      "src": "https://www.vip-booking.com/details?id=52595",
+      "src2": "https://en.wikipedia.org/wiki/Da_Lata",
+      "from": "new"
+     },
+     {
+      "f": "Da Lata 的自述簡介說，他們後來替 Vieux Farka Touré、Africa Express、George Clinton 與 Bernie Worrell 混音、製作或寫歌，並做過國際巡迴。",
+      "src": "https://twistedsoulmusic.org/2019/05/10/guest-playlist-da-lata/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1998 年他們把四年前做過 demo 的〈Prá Manhã〉正式錄出來，憑這首歌被 Chris Blackwell 的 Palm Pictures 簽下。",
+      "src": "https://en.wikipedia.org/wiki/Da_Lata",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "停擺數年後，兩人 2011 年開始做新專輯，原訂 2013 年初發行。",
+      "src": "https://en.wikipedia.org/wiki/Da_Lata",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "Da Lata 沉寂多年後，2013 年發行專輯《Fabiola》，另有向西非文化致敬的 EP《Oba Lata》，簡介稱西非文化深刻影響了樂團 25 年的歷史。",
+      "src": "https://twistedsoulmusic.org/2019/05/10/guest-playlist-da-lata/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "成軍年：維基寫 1994 年，經紀簡介（vip-booking）寫 1996 年夏天；前稿已決定不寫年份，本次維持。",
+   "首張專輯年：Twisted Soul 簡介寫《Songs From The Tin》1998 年，維基與 Discogs（事實庫 13621）為 2000 年；卡池 2000，採 2000。",
+   "『首作』：Twisted Soul 與經紀簡介稱 1997 年〈Ponteio〉是 Da Lata 的首作，維基稱最早作品是以 Trio Da Lata 名義在日本 Brownswood 發行的〈Deep Water〉，〈Ponteio〉是『引起注意的下一支』；兩者不一致，facts 不稱〈Ponteio〉為首作。"
+  ],
+  "pubIssues": [
+   {
+    "album": "Songs From the Tin",
+    "claim": "團員是 Chris Franck 與 Patrick Forge 這兩個倫敦人",
+    "problem": "Franck 生於德國、六歲起住英國，說「倫敦人」過粗；Da Lata 本身是倫敦的團，可改寫成「倫敦的團」",
+    "src": "https://en.wikipedia.org/wiki/Chris_Franck"
+   }
+  ],
+  "searches": 6,
+  "failedFetches": [],
+  "status": "full",
+  "notes": "升級為 full（legacy 偏弱的 full）。身分沿用前稿：卡池《Songs From the Tin》（2000）＝倫敦的 Chris Franck／Patrick Forge 的 Da Lata，無同名混卡（搜尋第一次回來全是 Lata Mangeshkar，已無視）。本次補查 6 次（WebSearch 3：評論、Ponteio／Body & Soul、Far Out 傳記；WebFetch 3：Da Lata Bandcamp、Twisted Soul 2019 簡介、vip-booking 經紀簡介）。補到：sound 的『非洲／巴西節奏＋當代舞池質感』第二源；legacy 的〈Ponteio〉年份、Far Out 廠牌、點名 DJ（Kevorkian、Claussell、Gilles Peterson）與『譽為開創性、經典』說法——但 vip-booking 是經紀文案，Twisted Soul 是樂團自述簡介，兩者都非獨立樂評，寫作層必須寫成『簡介稱…』；同簡介的 Body & Soul 力挺與維基『日本與紐約的 Body&Soul DJ 特別力挺』方向一致，可互證。沒有找到《Songs From the Tin》的獨立樂評（AllMusic 被擋；Ink 19 評《Serious》只見摘要）。未收：Bandcamp 現行簡介『North London tropicalia』是新專輯《Edge of Blue》的宣傳文案；搜尋摘要稱 Phil Asher、Rainer Truby、Gerry Lyseight、Shuya Okino 也力挺其音樂，來源不明（未開頁）；Smoke City 暫停一節仍是維基單源（沿用前稿）。pubIssues 沿用前稿一條（上線簡介稱『倫敦人』）。thinIssues：原 thin 正文『生於德國的 Chris Franck』一致；『翻唱 Edu Lobo 的〈Ponteio〉』與維基一致；無新增錯誤。\n【前稿 notes（沿用）】同名檢查：poolAlbums 只有《Songs From the Tin》（2000），與英國 Franck／Forge 的 Da Lata 吻合。成軍年 1994 只有維基單源（旁證：1998 年錄的 demo 是「四年前」做的），故不放 facts；中文寫作若要提年份請寫「1990 年代中期」或略去。Smoke City〈Underwater Love〉因 Levi's 廣告打進英國單曲榜（1997）出自 Chris Franck 維基單源且涉榜單，放 notes 不放 facts。Franck、Forge 兩頁維基與 Da Lata 同屬維基來源家族（非獨立），整份 legacy 皆為維基單源；沒有找到 Ink 19 之外的獨立樂評內文（只讀到搜尋摘要），故 legacy 只有現象沒有共識評價，status 記 thin。Ink 19 2003 年 12 月樂評（https://ink19.com/2003/12/magazine/music-reviews/da-lata）搜尋摘要稱《Serious》比首作更跳出巴西靈感，未開頁，不收。2013 年新專輯名《Fabiola》（Agogo）出自搜尋摘要，未開頁，不收。"
+ },
+ {
+  "key": "dababy",
+  "name": "DaBaby",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "DaBaby 本名 Jonathan Lyndale Kirk，生於俄亥俄州克里夫蘭，六歲搬到北卡羅來納州夏洛特，在那裡度過大半年少時光；他和兩個哥哥聽 Eminem、50 Cent 與 Lil Wayne 長大。",
+      "src": "https://en.wikipedia.org/wiki/DaBaby",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他 2015 年以混音帶《Nonfiction》起步，早期用過 Baby Jesus 的名字；Complex 稱他用五部的《Baby Talk》混音帶系列為「DaBaby」這個角色試水溫。",
+      "src": "https://en.wikipedia.org/wiki/DaBaby",
+      "src2": "https://www.complex.com/music/a/will-schube/dababy-new-album-kirk-review",
+      "from": "bank"
+     },
+     {
+      "f": "他的突破靠電台推廣人 Arnold Taylor：Taylor 在北卡夜店看到他演出，正好在創辦 South Coast Music Group，兩人合作後靠混音帶與場子在南方累積聲量。",
+      "src": "https://en.wikipedia.org/wiki/DaBaby",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他讀的是 Zebulon B. Vance 高中（2010 年畢業），之後念了兩年北卡羅來納大學格林斯伯勒分校沒讀完，說自己只是為了父母才去讀大學。",
+      "src": "https://en.wikipedia.org/wiki/DaBaby",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Rolling Stone 的 Charles Holmes 形容他的 flow 是斷奏式、精準而凶猛，像把音節壓碎的推進力，常讓人覺得他在 beat 還沒進來前就開始唸；Complex 評《Baby on Baby》則稱它有「始終一致的 flow」，幽默與威脅並存。",
+      "src": "https://en.wikipedia.org/wiki/DaBaby",
+      "src2": "https://www.complex.com/music/a/will-schube/dababy-new-album-kirk-review",
+      "from": "bank"
+     },
+     {
+      "f": "《Baby on Baby》共 13 首、約 31 分鐘，製作人有 jetsonmade、Pooh Beatz、Cubeatz、Pyrex 等多人，〈Suge〉由 jetsonmade 與 Pooh Beatz 製作；Cornell Sun 形容整張是厚重的低頻、合成器、口哨聲與 hi-hat 抖動。",
+      "src": "https://en.wikipedia.org/wiki/Baby_on_Baby",
+      "src2": "https://cornellsun.com/2019/03/15/test-spin-dababy-baby-on-baby/",
+      "from": "bank"
+     },
+     {
+      "f": "Cornell Sun 評《Baby on Baby》時稱他的口氣大多面無表情、副歌卻很凶；〈Baby Sitter〉裡 Offset 的詩句是 Migos 式的走走停停 flow。",
+      "src": "https://cornellsun.com/2019/03/15/test-spin-dababy-baby-on-baby/",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他說自己研究 Future、Lil Wayne 與 Kanye West 這些「出道後持續進步」的人，也說：「只要誰有東西可以給，我就借。」",
+      "src": "https://en.wikipedia.org/wiki/DaBaby",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "DJBooth 的分析稱他的 flow『字多而擠，聽起來卻毫不費力、流暢』，像把一家 22 個孩子塞進 MINI Cooper 一樣在一小節裡塞滿音節，吐字準確地避開下一個 snare；他常在歌曲 0 秒就開口、不等 beat 進來，而那種所謂的『DaBaby flow』在 2019 年才完全成形，早期混音帶走的是 Migos 式的 trap flow。",
+      "src": "https://djbooth.net/features/2020-04-06-dababy-rap-flow-absurdly-detailed-investigation-humor/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Jeff Weiss 在《衛報》把他和 Busta Rhymes、Eminem、Missy Elliott 與 Ludacris 相比，稱這些都是「不怕在影片裡搞笑惡搞的創意饒舌風格家」，並說他走的是不跟榜單上憂鬱歌風的路，專心唸能「把你的頭打飛」的饒舌。",
+      "src": "https://en.wikipedia.org/wiki/DaBaby",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Complex 的評論稱《Baby on Baby》讓他成為明星，並稱他是「饒舌界的年度最佳新人」。",
+      "src": "https://www.complex.com/music/a/will-schube/dababy-new-album-kirk-review",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "〈Rockstar〉（與 Roddy Ricch 合作，2020 年 4 月 17 日發行）入圍 2021 年第 63 屆葛萊美的年度唱片（Record of the Year）。",
+      "src": "https://www.grammy.com/news/record-year-2021-grammys-nominees/",
+      "src2": "https://en.wikipedia.org/wiki/DaBaby",
+      "from": "new"
+     },
+     {
+      "f": "2021 年 7 月 25 日，他在邁阿密 Rolling Loud 音樂節的演出中，對台下說了針對男同志與 HIV 的不實且侮辱性言論，並要觀眾若有 HIV／AIDS 就亮起手機燈；8 月 1 日芝加哥 Lollapalooza 取消了他當晚的演出，Elton John 與 Dua Lipa 等人公開批評。他先在 Instagram 為說法辯護，隨後道歉，承認自己對 HIV／AIDS 的認知有誤。",
+      "src": "https://www.nbcnews.com/pop-culture/pop-culture-news/lollapalooza-music-festival-cancels-dababy-performance-after-homophobic-remarks-n1275644",
+      "src2": "https://abc7news.com/post/dababy-lollapalooza-lolla-homophobic/10925351/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2018 年底的混音帶《Blank Blank》是他的突破作，2019 年 1 月他簽進 Interscope。",
+      "src": "https://en.wikipedia.org/wiki/DaBaby",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "2019 年 3 月 1 日發行首張錄音室專輯《Baby on Baby》，由 South Coast Music Group、Interscope 與 Alamo 發行。",
+      "src": "https://en.wikipedia.org/wiki/Baby_on_Baby",
+      "src2": "https://www.complex.com/music/a/will-schube/dababy-new-album-kirk-review",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2019 年 3 月 1 日發行首張錄音室專輯《Baby on Baby》。",
+    "src": "https://en.wikipedia.org/wiki/Baby_on_Baby",
+    "src2": "https://www.complex.com/music/a/will-schube/dababy-new-album-kirk-review",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": [
+   "https://www.grammy.com/artists/dababy/ 404",
+   "WebSearch allowed_domains 兩次 API 400（不計）"
+  ],
+  "status": "full",
+  "notes": "升級為 full。身分：卡池只有《Baby on Baby》（2019），與克里夫蘭出生、夏洛特長大的 DaBaby 吻合，無同名混卡。本次補查 8 次（WebSearch 4：Rockstar 與葛萊美、錄音流程、2021 事件兩次；WebFetch 4：DJBooth、Grammy.com 提名頁、ABC7 轉載的 CNN、NBC News）；失敗請求不計。補到：sound 的 DJBooth 逐項分析（單源，樂評人分析文）；legacy 的葛萊美提名（Grammy.com＋維基兩源）與 2021 年 Rolling Loud／Lollapalooza 事件（NBC News＋CNN 經 ABC7 轉載兩源，皆讀到）。事件寫作建議：事實平述、不附情緒詞，不收各音樂節後續取消名單（Governors Ball、Day N Vegas 只見搜尋摘要）與 2022 年 Rolling Loud 邀請回歸爭議（未開頁）。避免（在世者銷量榜單）：〈Suge〉進 Hot 100 前十、〈Rockstar〉Hot 100 冠軍 7 週（連七週非連續；維基單源，擬為核心成績必要例外但只有單源，故不收）、RIAA 5 倍白金、〈Levitating〉混音榜名次；2020 年第 62 屆葛萊美〈Suge〉的最佳饒舌表演與最佳饒舌歌曲提名只見搜尋摘要（Grammy.com 藝人頁 404），不收。其他未收：Coach Brodie（錄音師）與 DJ K.i.D（製作人）談錄製流程的說法只見搜尋摘要，未開頁；2019 年父親與 2020 年哥哥過世屬個人事件（前稿同判不收）。thinIssues：無事實錯誤；原 thin 正文與維基、Cornell Sun 一致。\n【前稿 notes（沿用）】身分：卡池《Baby on Baby》（2019）與英文維基頁吻合，無同名混卡；卡池無上線簡介。本位用了 5 次：WebSearch 2 次、WebFetch 3 次（Cornell Sun 評論、維基專輯頁、Complex 的 Kirk 評論）。legacy 偏薄：只有具名評論者的形容，沒有後輩點名、官方榮譽或權威票選的共識評價，故狀態為 thin。維基導言與《衛報》Weiss 的說法是透過維基條目轉述（衛報在雲端被擋），已標單源。依批次特注避免：2019 年後的所有爭議與刑案、〈Suge〉與專輯的榜單與認證、〈Rockstar〉連續登頂與葛萊美提名（在世者成績，核心成績最多一處，這裡沒收，因為只有維基單源）、2022 年後專輯與 2026 年新作。他 2019 年父親過世屬個人事件，不收。Complex 評論把《Baby on Baby》與 Kirk 混在同一篇，facts 只取關於前者的評語。"
+ },
+ {
+  "key": "damu the fudgemunk",
+  "name": "Damu the Fudgemunk",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Damu the Fudgemunk 本名 Earl Davis，是華盛頓特區出身的製作人、多樂器演奏者、DJ 與饒舌歌手；他自稱是「華盛頓公立學校的產物」。",
+      "src": "https://en.wikipedia.org/wiki/Damu_the_Fudgemunk",
+      "src2": "https://www.kacu.org/post/damu-fudgemunk-breaks-down-his-latest-album",
+      "from": "bank"
+     },
+     {
+      "f": "他的父母都是樂手，他十幾歲就開始做 beat。",
+      "src": "https://en.wikipedia.org/wiki/Damu_the_Fudgemunk",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "藝名取自 Parliament-Funkadelic 稱華盛頓為「巧克力城」，加上他少年時迷少林僧與功夫電影、《巧克力冒險工廠》；他自己概括為「來自巧克力城、膚色如巧克力的音樂僧人」。",
+      "src": "https://www.kacu.org/post/damu-fudgemunk-breaks-down-his-latest-album",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他 2007 年的正式首作是與饒舌歌手 Insight 組成的 Y Society《Travel at Your Own Pace》，由 Tres Records 發行。",
+      "src": "https://en.wikipedia.org/wiki/Damu_the_Fudgemunk",
+      "src2": "https://disquiet.com/2017/01/31/beat-download/",
+      "from": "bank"
+     },
+     {
+      "f": "Damu 說自己來自華盛頓特區，至今仍住在市內；十幾歲時先是說唱，後來發現 DJ 和做 beat 更好玩，約 17 歲開始做 beat，得自己買唱片、自己研究製作；在 XM 電台實習後，得到 DJ 與製作的工作。",
+      "src": "https://plusoneme.substack.com/p/building-bridges-one-handshake-at",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Disquiet 稱他和 DJ Premier 一樣偏愛把爵士取樣截成短段、做成點頭用的 loop，並在 4/4 的好聽與偏斜、重質地的 beat 之間取平衡；《Travel at Your Own Pace》被維基形容為大量用爵士與靈魂取樣、也有 scratch 的「真學派」嘻哈。",
+      "src": "https://disquiet.com/2017/01/31/beat-download/",
+      "src2": "https://en.wikipedia.org/wiki/Damu_the_Fudgemunk",
+      "from": "bank"
+     },
+     {
+      "f": "2008 年他發行兩張免費、以器樂為主的專輯《Spare Time》與《Overtime》，靠 YouTube 影片與華盛頓、紐約的街頭表演累積樂迷，用可攜式發電機接取樣器和喇叭。",
+      "src": "https://en.wikipedia.org/wiki/Damu_the_Fudgemunk",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Scratched Vinyl 的評論稱他的律動有「又大又厚的 pocket」，深受 funk 與 soul 影響。",
+      "src": "https://scratchedvinyl.com/reviews/damu-the-fudemunk-victorious-visions/",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他也自己彈樂器，例如在〈Reporting〉裡彈 vibes；2020 年到倫敦挖 KPM 時，帶回大量取樣和用 MPC2000XL 做的 beat 草稿。",
+      "src": "https://www.kacu.org/post/damu-fudgemunk-breaks-down-his-latest-album",
+      "src2": "https://www.thefindmag.com/features/selected-producers-are-allowed-into-the-kpm-music-library-first-up-damu-the-fudgemunk/",
+      "from": "bank"
+     },
+     {
+      "f": "Damu 說：『我一直把自己看成做嘻哈的爵士樂手。』他早年取樣很放，廠牌曾要他收斂，他說那段批評讓他一度『創作上很低落』。",
+      "src": "https://plusoneme.substack.com/p/building-bridges-one-handshake-at",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Scratched Vinyl 評他與 Raw Poetic 合作的《The Reflecting Sea》時說，他的 beat 是 boom bap 加爵士取樣，帶迷幻或福音的走向，根源在 1990 年代初的東岸嘻哈，再往更實驗的方向走。",
+      "src": "https://scratchedvinyl.com/reviews/damu-the-fudgemunk-raw-poetic-the-reflecting-sea-welcome-to-a-new-philosophy/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2020 年 1 月他受邀到倫敦的 KPM 音樂資料庫，成為 Def Pressé／KPM Crate Diggers 系列的第一位藝人，以 KPM 的素材做出《Conversation Peace》。",
+      "src": "https://en.wikipedia.org/wiki/Damu_the_Fudgemunk",
+      "src2": "https://www.thefindmag.com/features/selected-producers-are-allowed-into-the-kpm-music-library-first-up-damu-the-fudgemunk/",
+      "from": "bank"
+     },
+     {
+      "f": "他說這是 KPM 資料庫「第一次對 crate-digger 這一代敞開大門」，翻這批目錄像「翻一座時光膠囊」。",
+      "src": "https://www.kacu.org/post/damu-fudgemunk-breaks-down-his-latest-album",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "2019 年他與 Raw Poetic 及爵士薩克斯風手 Archie Shepp 合作了一張即興專輯《Ocean Bridges》，2020 年自己廠牌發行。",
+      "src": "https://en.wikipedia.org/wiki/Damu_the_Fudgemunk",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "《Ocean Bridges》（Redefinition，2020）是 Archie Shepp 與他的外甥 Raw Poetic 的合作：Raw Poetic 開口請『Archie 舅舅』合作，Damu 擔任音樂總監、組了一個 8 人樂手班底，自己也打鼓與打擊、彈 vibes、刮唱盤並唱和聲；樂評稱這是跨世代黑人音樂人的對話。",
+      "src": "https://www.jazzrightnow.com/?p=30836",
+      "src2": "https://plusoneme.substack.com/p/building-bridges-one-handshake-at",
+      "from": "new"
+     },
+     {
+      "f": "Damu 還負責《Ocean Bridges》的混音與母帶；他坦言對爵士樂手有些忐忑，自嘲『我在那張專輯裡是在冒充爵士鼓手』。",
+      "src": "https://plusoneme.substack.com/p/building-bridges-one-handshake-at",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他共同經營獨立黑膠與卡帶廠牌 Redefinition Records，自己的大部分作品也在那裡發行。",
+      "src": "https://en.wikipedia.org/wiki/Damu_the_Fudgemunk",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "2008 年發行免費專輯《Spare Time》與《Overtime》。",
+      "src": "https://en.wikipedia.org/wiki/Damu_the_Fudgemunk",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Redefinition Records 由 Damu 與搭檔 John Notarfrancesco 共同經營，Damu 說兩人都沒想過要開廠牌，最初是在華盛頓廣場公園握手談定；廠牌強調 DIY、自給自足、講究包裝與黑膠。",
+      "src": "https://plusoneme.substack.com/p/building-bridges-one-handshake-at",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2007 年與 Insight 組成 Y Society，發行《Travel at Your Own Pace》。",
+    "src": "https://en.wikipedia.org/wiki/Damu_the_Fudgemunk",
+    "src2": "https://disquiet.com/2017/01/31/beat-download/",
+    "from": "bank"
+   },
+   {
+    "f": "2008 年發行免費專輯《Spare Time》與《Overtime》。",
+    "src": "https://en.wikipedia.org/wiki/Damu_the_Fudgemunk",
+    "single": true,
+    "from": "bank"
+   },
+   {
+    "f": "2020 年成為 KPM Crate Diggers 系列的第一位藝人。",
+    "src": "https://en.wikipedia.org/wiki/Damu_the_Fudgemunk",
+    "src2": "https://www.thefindmag.com/features/selected-producers-are-allowed-into-the-kpm-music-library-first-up-damu-the-fudgemunk/",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "生年：英文維基與 wikidata 寫 1984 年 6 月 8 日，兩者同屬維基家族，無獨立第二源，facts 不寫生年。",
+   "《Conversation Peace》拼法：PopMatters 寫 Conversation Piece，NPR、Def Pressé 與其他來源寫 Peace；採 Peace。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": [
+   "https://passionweiss.com/2014/02/13/question-in-the-form-of-an-answer-an-interview-with-damu-the-fudgemunk 301 轉址到 powmag.net 首頁",
+   "https://www.treblezine.com/?p=50170 403",
+   "https://roughtrade.com/en-gb/artist/damu-the-fudgemunk 403"
+  ],
+  "status": "full",
+  "notes": "升級為 full。身分沿用前稿：卡池《Spare Time》（2008）＝華盛頓特區的 Damu the Fudgemunk，無同名混卡。本次補查 5 次（WebSearch 2：Ocean Bridges 與影響、Redefinition 與 KPM；WebFetch 3：Jazz Right Now、Scratched Vinyl 評《The Reflecting Sea》、Plus One 訪談）；失敗請求 3 次未計（Passion of the Weiss 轉址、Treble 與 Rough Trade 403）。補到：origin 的 D.C. 養成（Plus One 訪談，單源）、sound 的自述『做嘻哈的爵士樂手』與取樣風格被廠牌要求收斂的經過、legacy 的 Ocean Bridges（Jazz Right Now＋Plus One 兩源）。legacy 現有兩條有兩源的實質事實：KPM Crate Diggers 第一位藝人（前稿，維基＋The Find）與 Archie Shepp 合作（本次）。未收：Scratched Vinyl 稱他『華盛頓特區的一流製作人、D.C. 嘻哈場景的老將』是單一站台的樂評形容詞（與前稿的 Victorious Visions 評論同站，非獨立）；搜尋摘要稱 2014 年訪談他點名 Pete Rock、Lord Finesse、DJ Premier 與 Native Tongues 為影響，訪談頁轉址失敗未開，不收（前稿 Disquiet 稱他偏好 Premier 式短爵士取樣，可互相參照但不同源）；Plus One 提到的導師 Insight（Andre Todman）與 2004 年等細節因表述含糊不收年份；Jazz Right Now 稱專輯『重要性不可低估、是黑人解放音樂的見證』是單一樂評人的形容詞，不收。生年仍不寫（維基家族單源）。thinIssues：無事實錯誤；原 thin 正文與維基、Disquiet、The Find、KACU 一致。\n【前稿 notes（沿用）】身分：卡池《Spare Time》（2008）與維基頁相符，無同名混卡；卡池無上線簡介。本位用了 6 次：WebSearch 2 次、WebFetch 4 次（Scratched Vinyl 評論、Disquiet、KACU 轉載的 NPR 訪談、The Find）。NPR 原站被擋，KACU 為 NPR 節目文字稿轉載。legacy 偏薄：只有 KPM 計畫的「首位」與評論者的「資深製作人」形容，沒有後輩點名或官方榮譽，故狀態 thin。「首位 KPM Crate Diggers 藝人」是系列內的第一，維基、The Find、KACU 三處一致，不涉全面首例。Spare Time 專輯的取樣來源與錄製細節查不到（搜尋摘要提到 Damu 自己的 liner notes 稱 2008 年 1 月免費發行，未開頁，故只用維基單源）。避免：Redefinition Records 近年的黑膠再版與銷售、Y Society 之外的合作清單。"
+ },
+ {
+  "key": "dan curtin",
+  "name": "Dan Curtin",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Dan Curtin 是美國俄亥俄州克里夫蘭人，1992 年起發片，最早的唱片出在底特律的 33 RPM 與比利時的 Buzz 廠牌，之後自己創辦 Metamorphic Recordings。",
+      "src": "https://ja.ra.co/dj/dancurtin/biography",
+      "src2": "https://www.clevescene.com/?p=213663",
+      "from": "bank"
+     },
+     {
+      "f": "他從 1980 年代的嘻哈、new wave 與 electro 進入電子音樂，之後接觸 house 與 techno，才走向錄音室製作。",
+      "src": "https://ja.ra.co/dj/dancurtin/biography",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他說在俄亥俄州長大、住在克里夫蘭，是他整個人的基礎；他把夜生活、城市衰敗、靈魂樂、funk、嘻哈、自然與太空列為克里夫蘭給他的靈感。",
+      "src": "https://djtechtools.com/2019/05/03/dan-curtin-inside-the-dj-mind-of-a-30-year-career-in-electronic-music",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他說底特律 techno 是他心目中 techno 的根基，另一個主要影響是嘻哈，最愛的人名包括 DJ Premier 與 J Dilla；他是在美國的 rave 圈子裡學會 DJ 的。",
+      "src": "https://djtechtools.com/2019/05/03/dan-curtin-inside-the-dj-mind-of-a-30-year-career-in-electronic-music",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Curtin 出身克里夫蘭，那座城市幾乎沒有電子音樂場景；他 1980 年代起接觸音樂，1990 年代初開始做 techno 時，沒有芝加哥或底特律那種 house 與 techno 的明確脈絡，RA 說這讓他得以用自己的想像去融合；他最初迷的是嘻哈，從那裡進到 electro，再到 house 與 techno。",
+      "src": "https://ra.co/exchange/259",
+      "src2": "https://crackmagazine.net/?p=112248",
+      "from": "new"
+     },
+     {
+      "f": "他曾在克里夫蘭高地（Cleveland Heights）開過唱片行 Deep Records。",
+      "src": "https://www.clevescene.com/?p=227156",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2001 年 3 月的 Cleveland Scene 預告文章寫他拒絕重複同一個音樂方向，funk 的影響被視為他多變的表現；他早期的 EP《3rd From the Sun》與《Tales From the 2nd Moon》反映他對觀星的興趣。",
+      "src": "https://www.clevescene.com/?p=213663",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他說自己先用硬體作曲、再到 DAW 完成，讓曲子更有即興感；近作延續他早期的 broken-beat 風格。",
+      "src": "https://djtechtools.com/2019/05/03/dan-curtin-inside-the-dj-mind-of-a-30-year-career-in-electronic-music",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "2003 年前後他轉向更有 funk 味的聲音，並投入柏林的電子音樂場景。",
+      "src": "https://ja.ra.co/dj/dancurtin/biography",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Crack Magazine 形容他的 techno 以『推進力與旋律』為特色，帶粗獷、生猛的觸感，並說他在 Metamorphic 的作品過了多年聽起來依然新鮮。",
+      "src": "https://crackmagazine.net/?p=112248",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "RA 說他 1990 年代初在沒有現成場景脈絡的克里夫蘭做出『獨一無二』的聲音，吸引了既有場景裡的 DJ 與廠牌主理人。",
+      "src": "https://ra.co/exchange/259",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Cleveland Scene 2001 年的預告文章稱，他自 1992 年起幾乎憑一己之力把家鄉克里夫蘭放上國際 techno 地圖，但在克里夫蘭本地的名氣不如他的成績。",
+      "src": "https://www.clevescene.com/?p=213663",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他的廠牌 Metamorphic Recordings 扶持過 Morgan Geist 與哥倫布市的 Titonton Duvante 等人，至今仍在營運，他說簽約要求製作人必須有「自己的觀點」。",
+      "src": "https://www.clevescene.com/?p=213663",
+      "src2": "https://djtechtools.com/2019/05/03/dan-curtin-inside-the-dj-mind-of-a-30-year-career-in-electronic-music",
+      "from": "bank"
+     },
+     {
+      "f": "Cleveland Scene 2004 年的報導說，Curtin 的 Metamorphic 廠牌發掘了三位如今享譽國際的俄亥俄州藝人：Morgan Geist、Hanna 與哥倫布市的 Titonton Duvante；Peacefrog 注意到這位『克里夫蘭的無名之輩』並簽下他之後，歐洲邀約接踵而至，他一度每月都在歐洲演出；Down Low Music 的 Minto George 稱他是『活傳奇』。",
+      "src": "https://www.clevescene.com/?p=227156",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "RA 與 Crack Magazine 的介紹文都把他寫成長年穩定、影響他人的電子音樂人：RA 稱他是『極具啟發又有影響力』的舞曲藝人，Crack 稱他的名字『與品質和穩定畫上等號』（皆為媒體介紹文字）。",
+      "src": "https://ra.co/exchange/259",
+      "src2": "https://crackmagazine.net/?p=112248",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Crack Magazine 列出他的早期作品包括替 Peacefrog 錄的《The Silicon Dawn》與替 Strictly Rhythm 錄的《Journey's In Motion》；他現居柏林，作品也在 Mobilee、Only 與 Blumoog 等廠牌發行。",
+      "src": "https://crackmagazine.net/?p=112248",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "最早的唱片廠牌：前稿 RA 傳記寫最早出在底特律的 33 RPM 與比利時的 Buzz；Crack Magazine 列的早期作品是 Peacefrog 的《The Silicon Dawn》與 Strictly Rhythm 的《Journey's In Motion》；兩者不互斥（Crack 沒說是『最早』），facts 不寫『出道作』，也不寫這些專輯的年份。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": [
+   "https://www.groovespin.it/artista/dan-curtin 403"
+  ],
+  "status": "full",
+  "notes": "升級為 full（legacy 偏地方媒體的 full）。身分沿用前稿：卡池《Deception》（1996）＝克里夫蘭 techno 製作人 Dan Curtin；預抓維基是同名澳洲足球員，已當作無。本次補查 6 次（WebSearch 3：Metamorphic 與影響、Deception 評論（回傳全是無關金屬樂團，空）、廠牌歷史；WebFetch 3：RA Exchange 259、Crack Magazine、Cleveland Scene 2004 報導）；失敗請求 1 次未計（Groovespin 403）。補到：origin 的克里夫蘭局外人背景（RA＋Crack 兩源）、Deep Records 唱片行（單源）、sound 的 Crack 與 RA 描述、legacy 的 Metamorphic 扶持 Morgan Geist／Hanna／Titonton Duvante 與歐洲巡演（Cleveland Scene 2004，與前稿 Scene 2001＋DJ TechTools 的兩源互證，方向一致）以及具名說法『活傳奇』（Minto George，單源）。仍缺：後輩點名他為影響的來源，以及針對《Deception》的獨立樂評（搜尋無果）；legacy 的核心評價仍來自地方報（Cleveland Scene 2001／2004）與 RA、Crack 的介紹文，寫作層請具名寫成『Cleveland Scene 稱…』。未收：Juno 稱 Metamorphic 2015 年以黑膠獨佔的《Space Pressure》EP 重啟、五年空窗（只見摘要）；Curtin 與 Derrick May 的關聯搜尋無證據，不寫；產量數字（70 張單曲 9 張專輯）依規則避免。thinIssues：無事實錯誤；原 thin 正文與 RA、Cleveland Scene、DJ TechTools 一致。\n【前稿 notes（沿用）】身分：卡池《Deception》1996（日本版有 Ken Ishii 改編、Kelli Hand 改編）對上克里夫蘭的 techno 製作人 Dan Curtin，與上線簡介引用的 Discogs「N.E. Ohio、1992 年起」一致；預抓維基是同名澳洲足球員，已當作無。「近乎憑一己之力把克里夫蘭放上地圖」是單一地方報的措辭，寫作層需具名寫成『Cleveland Scene 稱…』。《3rd From the Sun》與《Tales From the 2nd Moon》的出版年未查，facts 沒有寫年份。他搬到柏林的確切年份各源不明（RA 頁面無年份），facts 只寫『2003 年前後轉向 funk』，該年份來自 RA 傳記頁單源，若主線嫌弱可刪。別名 Purveyors of Fine Funk、產量『70 張單曲 9 張專輯』兩源一致（RA、DJ TechTools）但屬數字，未收。"
+ }
+]
