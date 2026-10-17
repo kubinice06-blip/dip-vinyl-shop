@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1546 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1560 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1550,3 +1550,17 @@
 | ar-u-027 | John Kaizan Neptune / 直居隆雄 | Two in Flight | 八軌全出自兩人：Neptune 寫四首、直居隆雄寫兩首 | 四加二只有六首，與「八軌全出自兩人」對不上；Discogs 發行頁只列直居隆雄為編曲與重混，作曲分配需對照曲目作者欄再改。 | https://www.discogs.com/release/4333136 |
 | ar-u-027 | Jonny Holtzman | Let's Do It | 1972 年 Widespread Depression Orchestra 在佛蒙特州的 Marlboro College 成立時，他是最初的領班與主唱 | 維基只寫樂團 1972 年成立於 Marlboro College、1978 年遷紐約時由 Jon Holtzman 領導，沒有說他是 1972 年的創團領班與主唱；建議改寫成 1978 年遷紐約時由他領導。 | https://en.wikipedia.org/wiki/Widespread_Depression_Orchestra |
 | ar-u-027 | Josephine Foster | Hazel Eyes, I Will Lead You | 2005 年這張個人第二作 | 維基只說她先有在家自錄的《There Are Eyes Above》（2000）、兒歌《Little Life》（2001）及與 The Supposed 合作的《All the Leaves Are Gone》（2004），之後才有包括本張在內的一連串個人專輯；另有簡介把本張稱為首張個人錄音室專輯。『第二作』無法證實，建議拿掉序數。 | https://en.wikipedia.org/wiki/Josephine_Foster |
+| ar-u-027 | Juliano Rossi | Free Runner | 這個藝名是他 2003 年前後才用的 | 德文維基 Juliano Rossi 條目寫 Perau 在 Terry Hoax 最後一張錄音室專輯後就用此名轉向靈魂與爵士，一則宣傳稿甚至寫 1996 年；2003 年是首張以此名發片的年份，不一定是藝名開始使用的年份。建議改寫成『2003 年以此名發片』。 | https://de.wikipedia.org/wiki/Juliano_Rossi |
+| ar-u-027 | Juliano Rossi | Free Runner | 翻唱的〈Policy of Truth〉曾是 MTV 上播放最多的德國樂團錄影帶 | 德文維基 Terry Hoax 條目只說該曲是 1992 年樂團最成功的單曲，未見 MTV 播放排名之說；本層查無第二源。建議改成可查證的『1992 年翻唱 Depeche Mode 的〈Policy of Truth〉，是樂團最成功的單曲』。 | https://de.wikipedia.org/wiki/Terry_Hoax |
+| ar-u-027 | Junip | Fields | 先出過《Straight Lines》《Black Refuge》兩張 EP | 《Straight Lines》是 2000 年的 7 吋單曲（瑞典維基與 FMA 都寫 7 吋），只有《Black Refuge》（2006）是 EP | https://sv.wikipedia.org/wiki/Junip |
+| ar-u-027 | Junip | Fields | 早在 1998 年就以 Junip 名義活動 | 成軍年各源不一（Last.fm 1998、瑞典維基與 Wikidata 1999、FMA 1990 年代末），建議改「1990 年代末」 | https://freemusicarchive.org/music/Junip/bio |
+| ar-u-027 | Kanka | Dub Communication | 他 1977 年出生 | 法文維基資訊框為 1976、正文為 1977；本名未公開，生年只有網路簡介支撐，來源不一致。建議上線簡介改為不寫出生年或寫「1970 年代後期生」。 | https://fr.wikipedia.org/wiki/Kanka_(musicien) |
+| ar-u-027 | Kembara | Kembara | 這支同年成軍的五人團 | 馬來語維基與 NST 都寫創團是 M. Nasir、A. Ali、S. Sahlan 三人（最初加入的 Abby、Eddie Ali 兄弟初期離開），1984 年後才到五人編制；「1981 年成軍的五人團」與來源不符 | https://ms.wikipedia.org/wiki/Kembara_(kumpulan_muzik) |
+| ar-u-027 | Kembara | Kembara | 在馬來西亞與新加坡由 Polygram 推出；是這支同年成軍的五人團的首作 | 樂團實為新加坡成軍（NST、馬來語維基），簡介前段沒交代這點，可補一句 | https://www.nst.com.my/amp/news/2015/09/32458/kembara-new-journey |
+| ar-u-028 | Kenny Wayne Shepherd Band | Trouble Is... | 創下 Billboard 藍調榜在榜最久的紀錄 | 僅英文維基 Kenny Wayne Shepherd 條目單源（holds the record for the longest-running album on the Billboard Blues chart）；專輯條目沒寫，搜尋摘要的 Nashville Scene 只寫在榜 104 週、其中 30 週居 Blues Albums 第 1，找不到獨立來源稱為紀錄，建議改成較保守寫法或補上來源 | https://en.wikipedia.org/wiki/Kenny_Wayne_Shepherd |
+| ar-u-028 | Kitchens of Distinction | Strange Free World | Fitzgerald 是公開出櫃的同志、歌詞也常寫此事，樂團因此始終沒拿到同代 shoegaze 團的市場位置 | 這個因果是英文維基的單源說法（did not attain the commercial success… as Fitzgerald was openly gay），並非公認事實；Fitzgerald 本人反對被貼上「gay band」標籤。建議改成「維基這樣解釋」或「當時媒體傾向以此定位」，避免寫成確定的原因 | https://en.wikipedia.org/wiki/Kitchens_of_Distinction |
+| ar-u-028 | Kočani Orkestar | L'Orient est rouge | 「多年後樂隊因《Borat》未經授權使用〈Siki siki baba〉而與片方興訟，同案的另一位原告正是 Esma Redžepova」 | 維基 Borat (soundtrack) 寫的是 Esma Redžepova 與 Naat Veliov（Kočani Orkestar 的前領軍、〈Siki siki baba〉的作曲者，2000 年前後已離團）「planned to file a lawsuit」，並非樂隊本身提告；最後獲賠 26000 歐元的只有 Redžepova，原因是她的製作人曾授權卻沒通知她。沒有來源說樂隊是原告，也沒有來源說 Veliov 實際成為原告。建議改成「作曲者 Naat Veliov 與 Esma Redžepova 曾表示要對片方提告」，或整句刪除。 | https://en.wikipedia.org/wiki/Borat_(soundtrack) |
+| ar-u-028 | Kočani Orkestar | L'Orient est rouge | 「北馬其頓Kočani的羅姆銅管樂隊,2000年前由小號手Naat Veliov領軍」整段 | 格式不合房規：中文與英數之間沒有空格、中文行文用了半形逗號「,」，且「Borat」「Siki siki baba」等處同樣缺空格；屬格式問題，不是事實錯誤。 | https://en.wikipedia.org/wiki/Ko%C4%8Dani_Orkestar |
+| ar-u-028 | Kurupt | Tha Streetz Iz a Mutha | 同年 10 月他一行人在 Echo Sounds 錄音室外遭槍擊，保鑣 Dwayne Dupree 當場身亡；Kurupt 自述錄這張時「又回到幫派狀態，非常低落、憤怒」 | 非事實錯誤，是與本批規則不符：案情細節與暴力事件依本批特注避免；另「四十四萬張」為在世者銷量，也屬避免項。由主線決定是否改寫。 |  |
+| ar-u-028 | La Venexiana | Monteverdi: Selva morale e spirituale | 錄音是 2005 年 3 月西班牙 Cuenca 一場宗教音樂節的教堂現場 | Early Music Review 只寫錄音來自 2005 年 Cuenca 音樂節，未提月份；「3 月」查無來源，建議刪月份或補來源。 | https://earlymusicreview.com/monteverdi-salve-morale-e-spirituale/ |
+| ar-u-028 | Lack of Afro | Press On | 他在這間廠牌的作品目錄就從這張算起 | 維基與事實庫都寫 Freestyle 先發行的是出道單曲〈Wait A Minute〉，《Press On》是他在這間廠牌的第一張專輯，不是第一件作品。 | https://en.wikipedia.org/wiki/Lack_of_Afro |

@@ -2094,6 +2094,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 搜尋超上限放行：Ingrid Michaelson 9 次（仍 thin、不上線）。I'm With Her 2026 年葛萊美最佳民謠專輯主線開頁核實（Grammy.com、維基），寫為在世者唯一核心成績。題材：Homayun Sakhi 塔利班禁樂與海外募款；Iron Cross 主唱 Lay Phyu 嘲諷政府、《Power 54》影射翁山蘇姬遭回收、2006 年被禁演——照寫。
 - 主線審稿 6 處：Iron Cross 刪電台名並把「最受歡迎」「最受崇拜之一」改「極」；Hocus Pocus 刪「連拿四屆」（獎項次數）；許常惠刪「最具影響力之一」；Ikonika「最具創新之一」改「極具創新」；indigo jam unit「樽栄」改台灣字形「樽榮」。
 
+## ar-u-027（2026-10-17，thin 升級；補洞與寫作照更正後規則）
+
+- 40 位中 30 位升 full 上線；10 位補洞後仍 thin、保留原上線版：Jimmy Carter and Dallas County Green、Joe Bonner、John Gordon、John Kaizan Neptune / 直居隆雄、John Wiese、Jonny Holtzman、Judi Silvano、Julian's Treatment、Juliano Rossi、Kellee Patterson。
+- 搜尋超上限放行：Kaiser Chiefs、Kalaparusha Maurice McIntyre 各 9 次（多的一次是補 sound／查評論段落）。題材：Kayhan Kalhor 父母與兄弟死於兩伊戰爭飛彈（主線開頁核實：NPR 2021 年人物報導、英文維基）；Jimmy Arnold 酗酒、藥物、入獄與心臟衰竭過世；Juke Boy Bonner 的貧困與歌中的黑人處境——照寫。
+- 主線審稿 8 處：Jesu「被公認」改「被視為」；Jimmy Arnold、Katedra、Kazi & Madlib、Burrell & Coltrane 的「最…之一」改「極」；Kaiser Chiefs 刪「一晚三個獎」（獎項數）改寫一項；Kangaroo 平假名「柵木ひとみ」改「柵木 Hitomi」並壓回 250 字。
+
 ### 題材補回：ar-u-003（2026-10-17）
 
 - 補查 37 位：add 23、none 14；改寫 23 位，補回 Lynott 海洛因成癮與死因、Furtwängler 納粹時期與去納粹化審理、大象體操 2023 跨年騷動、大貫妙子父親特攻隊經歷、日野皓正 2017 年體罰事件、Staley 與 Starr 藥物過量、Butler 2022 年遭指控與回應、Chassagne 父母逃離海地獨裁、Drive-By Truckers 的南方歷史與警察暴力題材、Cox 馬凡氏症與車禍、Portnoy 戒酒組曲、Ghostface 搶案與服刑、José González 父母逃離阿根廷軍政府、Musgraves 歌曲遭電台卻步與離婚、Mitski 暫停演出、MIKE 與 MONO 的喪親、Hadreas 成癮與克隆氏症、Rei Harakami 腦出血驟逝、Rick Ross 矯正官過往與 Reebok 事件、Wyatt 墜樓癱瘓與共產黨員、Siouxsie 的 Grundy 節目風波、St. Vincent 父親入獄。
