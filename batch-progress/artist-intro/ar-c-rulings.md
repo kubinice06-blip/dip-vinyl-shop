@@ -2101,3 +2101,8 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 補查 23 位：add 12、none 11；改寫 11 位，補回 Chris Brown 2009 年毆打 Rihanna 認罪緩刑與倫敦夜店案 2026 年 7 月改認鬥毆罪（宣判未到，不寫結果）、Daughters 主唱遭 Kristin Hayter 指控（對方否認、無司法結果）、Bryson Tiller 四歲喪母、Brittany Howard 姊姊早逝與鼓手違反保護令認罪、Mark Linkous 輕生與悼念曲、Art Bears 的社會主義立場、Avishai Cohen 赴莫斯科演出後遭音樂節取消、Cannonball《Country Preacher》與 Operation Breadbasket 及中風過世、Chris Connor 酗酒與伴侶、Clara Nunes 婚姻與麻醉過敏過世、Al Cohn 肝癌過世。
 - 主線審稿 6 處：連續年份句四處（AWVFTS、Avishai Cohen、Cannonball、Clara Nunes）、來源改 https、字數壓回 250。
+
+### 題材補回：ar-u-011（2026-10-17）
+
+- 補查 33 位：add 10、none 23；改寫 10 位，補回 Tyrone Davis 中風與死因、Whitehouse 遭拒售拒演與警方突襲及 Sotos 案、William Tyler 談精神疾病的新作、Mravinsky 婉拒首演〈娘子谷〉、Seifert 癌症治療期間過世、พุ่มพวง 死於紅斑性狼瘡、조용필 1977 年大麻案禁演與 2005 年平壤演唱會、Johnathan Blake 回應警察暴力的新作、10cc 的 Stewart 車禍。**農村武裝青年先前被主線刪掉的楊儒門、樂生、蘇花高、反核、國光石化環評會議唱〈白海豚之歌〉全部寫回。**
+- 主線審稿 1 處：조용필 年份超量。
