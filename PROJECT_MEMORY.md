@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-17｜dip-vinyl-shop｜藝人介紹第十二輪三十批上線（雲端，ar-d-141～142＋thin 升級 ar-u-001～028；介紹 8,564 → 8,634，790 篇 thin→full）
+
+- 結果：新藝人 70 位（55 full、15 thin）；thin 升級 28 批 1,120 位，790 位升 full，330 位補洞後仍 thin、保留原上線版。審稿合計 296 處。
+- **中途更正（店主指示）**：主線自 2026-10-07 起在派工備註自加「政治、指控、死因、私事避免」，第十二輪審稿也照刪——違反店主 2026-07-31「題材沒有禁區」裁定，已撤銷。ar-d-141、142、ar-u-001～021 逐批派題材補查（`research/<批>-sens.json`）並改寫補回約 309 位；ar-u-022 起補洞與寫作直接照店主裁定。教訓：**不得自行新增題材限制**，只守三條（有來源、不逐字引歌詞、涉逝者與受害者語氣克制）。
+- 升級批做法：只寫補洞稿標 full 的人；在世者一處核心成績、不寫榜單銷量獎項數；媒體名單不寫；2025–26 事實主線開頁兩源才寫（本輪核實 I'm With Her 2026 葛萊美、Shajarian 死因、Kalhor 家人死於兩伊戰爭）。
+- 留給本機：卡池年份疑誤 Tamia 1978→1998、Maceo 1975 vs 1972、Mahmoud Ahmed 1999 vs 1973、賴德和 1987 vs 2009–12、Kim Jung Mi 1968 vs 1973；Wings（馬來西亞）與 Mother Earth 卡片身分誤標；In Spe 得獎年未核；其餘見 `audits/ARTIST-PUB-ISSUES.md`。
+- 主要檔案：`data/artist-intros/*`、`desc-tools/batches/artist/{cut,facts,research,output}/ar-{d-141,d-142,u-001～028}-*`、`desc-tools/batches/artist/progress.json`、`batch-progress/artist-intro/ar-c-rulings.md`（第十二輪各批、題材更正與收尾段）、`audits/ARTIST-PUB-ISSUES.md`。
+- 驗證：qa-artist gap／out 每批 0 處（只剩保留 thin 的缺位）；build-artist-intros 64 分片、8,634 位。
+
 ### 2026-10-16｜dip-vinyl-shop｜藝人介紹第十一輪五批上線（雲端，ar-d-136～140；195 位；介紹 8,369 → 8,564）
 
 - 結果：195 位上架（132 full、63 thin），不寫 5 位（單源或聲音句不足），審稿修 61 處。add-20261015-backfill 名冊的爵士段寫完，剩 74 位未切（爵士尾段 38、流行 15、搖滾 9、民謠 7、其他 5）。
