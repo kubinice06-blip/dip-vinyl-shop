@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1467 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1470 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1471,3 +1471,6 @@
 | ar-u-012 | Clara Nunes | Canto das Três Raças | 一九七一年後改信溫班達（umbanda），舞台上以白衣與頭巾示人 | 宗教歸屬各源不一致：英文維基與 Dicionário Cravo Albin 寫她皈依 Candomblé，葡文維基寫 1971 年離開 Candomblé 轉 Umbanda，Projeto Colabora 說她兼信 Kardec 派、Umbanda 與 Candomblé。建議改成較中性的寫法（她的歌與舞台形象與非裔巴西宗教相連），不指定 1971 年與單一宗教。 | https://pt.wikipedia.org/wiki/Clara_Nunes |
 | ar-u-012 | Clara Nunes | Alvorecer | 唱片銷量讓她成為巴西當時最暢銷的女歌手，也替 Alcione、Beth Carvalho 等人打開市場 | Alcione 與 Beth Carvalho 因她而受惠一說只見英文維基；銷量約 30 萬張兩源一致。建議保留銷量、對『最暢銷』與替他人開路的因果句降級。 | https://dicionariompb.com.br/artista/clara-nunes/ |
 | ar-u-012 | Clara Nunes | Alvorecer | Clara Nunes 的第七張 | 英文維基專輯列表在 Alvorecer 之前已有 1966、1968、1969、1971、1972、1973、1973（與 Vinicius de Moraes、Toquinho 合輯）、1974《Brasileiro Profissão Esperança》，序數取決於是否計入合輯與演出專輯，各源口徑不一；建議刪『第七張』。 | https://en.wikipedia.org/wiki/Clara_Nunes |
+| ar-u-013 | Dr. Strangely Strange | Kip of the Serenes | 都柏林的 Tim Booth、Ivan Pawle 與 Tim Goulding 1967 年組團 | 維基與 Irish Rock 資料庫都寫 1967 年成軍者是 Booth 與 Pawle，Goulding 是之後才加入的第三人；建議改為『Booth 與 Pawle 1967 年組團，Goulding 隨後加入』。 | https://en.wikipedia.org/wiki/Dr._Strangely_Strange |
+| ar-u-013 | Dr. Strangely Strange | Kip of the Serenes | 是愛爾蘭迷幻民謠的起點 | 『起點』屬無來源的排他性說法（Bandcamp 文案稱『先驅』，自家宣傳）；Irish Rock 資料庫只稱它是 acid folk 經典、並說團不是單純模仿 Incredible String Band。建議改成『acid folk 經典之一』或刪去。 | https://irishrock.org/irodb/bands/drss.html |
+| ar-u-014 | Harry Roesli | Titik Api | 在 1973 年《Philosophy Gang》、1975 年《Ken Arok》之後推出的第三作，1976 年問世 | 與《Ken Arok》上線簡介互相矛盾：該簡介與 Antara 都說《Ken Arok》的歌曲唱片是 1977 年 Eterna 出版（1975 年是萬隆搬演的搖滾歌劇），若如此 1976 年的《Titik Api》就不是《Ken Arok》唱片之後的第三作；建議改成不排專輯先後的寫法，或查清《Ken Arok》首版年再定。 | https://www.antaranews.com/berita/1116114/histori-rock-indonesia-lahirnya-musisi-legenda |

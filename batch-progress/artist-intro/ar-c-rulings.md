@@ -1967,3 +1967,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - Chris Brown 只寫音樂、舞蹈與一座葛萊美，不寫暴力事件、官司與感情關係。Bulldoze 舊稿的 Knocked Loose 一條不成立，不寫。
 - 審稿修 9 處：Ain Soph《妖精の森》改英文名、「全世界最好…之一」改「極出色」；Art Bears 補「英國前衛團體」、「最大的影響之一」改「重要影響」；Avishai Cohen、Crush「最…」改「重要／極」；Bryson Tiller 刪四歲喪母（家人逝世）；Cannonball Adderley Quintet 補中音薩克斯風並壓回 250；Chris Brown 刪入圍次數。
   - 保留：Clara Nunes《Alvorecer》約 30 萬張（已故者，且是「女歌手賣不動」的論點本身）；Alabama Shakes、Crush、Cory Wong 在世者各一處成績；C.C.C.C. 夫妻組合（身分）；Dave Burrell 不寫名單名次。
+
+## ar-u-013（2026-10-17，thin 升級）
+
+- 40 位中 27 位升 full 上線；13 位補洞後仍 thin、保留原上線版：David Murray Quartet、Dewey Redman、Dorian Electra、dvsn、Ebi、EP-4、Epica、Everything but the Girl、Ginuwine、Gorgon City、Grenadine、Ground Zero、Gunna。
+- 搜尋超額：Dua Lipa 9、Ground Zero 9、HAIM 10（補 Stevie Nicks 評語第二源），放行。Field Mob 的 2026 年州議會決議照升級批通則不寫。Dr. Strangely Strange 的上線專輯簡介把 Goulding 寫成創團者，已列 pubIssues。
+- 審稿修 13 處：Dexys Midnight Runners 刪北愛衝突封面照（政治背景只留一句）；Dua Lipa 刪總統授公民身分（成績只留葛萊美一處）；Gabor Szabo「1956 年革命期間出走」改「離開匈牙利」（政治背景只留一句）；Dillinger、Dru Hill、Elton Dean's Ninesense、Felt、Foje（兩處）、Garmarna、Grumiaux Trio、H.E.R.「最…」改「代表／極／推崇備至」；Dillinger 刪多餘空格。
+  - 保留：Gil Scott-Heron & Brian Jackson 雙人聯名卡 271 字（放寬額度）；George Michael 葛萊美年度專輯與身後入選名人堂（已故者）；Father John Misty 以婚姻為題的專輯（作品題材）；Haken 由 Dream Theater 成員列年度十大（具名音樂人，非媒體）。
