@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1515 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1517 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1518,4 +1518,6 @@
 | ar-u-021 | Charles Brackeen | Rhythm X | 他 1940 年生於奧克拉荷馬州 Eufaula | 出生年有 1938（WMBR）與 1940（維基、MusicBrainz）兩說，出生地維基寫 Eufaula、wikidata 寫 Oklahoma City；高風險生年單靠維基家族，建議複核或改寫成「生於奧克拉荷馬州」。 | https://wmbr.mit.edu/cgi-bin/events?e=12526 |
 | ar-u-021 | Charles Dodge | Earth's Magnetic Field | 1974 年的《Speech Songs》換成分析並重新合成人聲 | 維基與布魯克林學院頁標 1974 年，但 Tom Johnson 1972 年 12 月的評述已在談 Speech Songs，Soundohm 重發頁說這批作品作於 1972 至 1975 年；作品完成年與發行年可能不同，建議簡介刪掉年份或改成『隨後的《Speech Songs》』。 | https://editions75.com/tvonm/articles/1972/charles-dodge-the-computer-sings.html |
 | ar-u-022 | Chester Thompson | Powerhouse | 「這張 1971 年 12 月由 Black Jazz 發行的首作是四人編制加一支長號」 | Discogs 的人員欄只有四位演奏者：風琴 Chester Thompson、鼓 Raymond Pounds、薩克斯風 Rudolph Johnson、長號 Al Hall；長號手就在四人之內，不是四人之外再加一支。建議改成「風琴、鼓、薩克斯風與長號的四人編制」。 | https://www.discogs.com/release/1186448 |
+| ar-u-022 | Christian Prommer's Drumlesson | Drum Lesson, Vol. 1 | 挑了 11 首做成改編專輯 | Sonar Kollektiv 廠牌頁寫專輯十首（都是他 DJ 現場放了十多年的歌）；可能是計入加碼曲或不同版本，需對照實體曲目表 | https://www.sonarkollektiv.com/jazz-club/christian-prommers-drumlesson-drum-lesson-vol-1/ |
+| ar-u-022 | Christian Prommer's Drumlesson | Drum Lesson, Vol. 1 | 錄音在 2007 年 5 月的慕尼黑完成，五天後移到維也納混音 | Sonar Kollektiv 說 2007 年 5 月是 Jazzanova 的 Alex Barck 把〈Strings of Life〉單曲以 12 吋發行的時間，不是整張專輯錄音完成；時序待核 | https://www.sonarkollektiv.com/jazz-club/christian-prommers-drumlesson-drum-lesson-vol-1/ |
 | ar-u-022 | Confuse | Indignation | 十三年後由 Anarchy Centre 與樂團自營的 Confuse Records 聯名壓成黑膠與 CD | 搜尋摘要（NTS 引 Discogs）只見 1984 年 Violent Party Records 的卡帶與 1987 年的 Confuse Records 單曲，Sorry State 稱黑膠把整張卡帶與 Nuclear Addicts flexi 等合輯；未能證實「十三年後」「黑膠與 CD」「Anarchy Centre 聯名」。建議店主對 Discogs 的 Indignation 條目逐項核對。 | https://nts.live/artists/89568-confuse |

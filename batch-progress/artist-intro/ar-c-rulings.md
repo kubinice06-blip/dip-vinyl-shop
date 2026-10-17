@@ -2141,3 +2141,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 補查 18 位：add 11、none 7；改寫 10 位，補回 Yung Lean 藥物過量住院、經紀人過世與雙極性疾患、Zomby 的抄襲爭議、Zoot Sims 酗酒與癌逝、**လေးဖြူ 被主線刪掉的翁山蘇姬門牌、專輯遭收回改名、剃光頭抗命、拒演軍官之子婚禮、2006 年禁演全部寫回**、들국화 1987 年大麻案與成員過世、박효신 毀約官司與債務、JAGATARA 主唱的精神疾病與溺水過世、茄子蛋主唱聲帶受損休團、菊地雅章的閣樓租約判例、零與聲音解放組織的爭議與反體制立場。
 - 主線審稿 5 處：Yung Lean、茄子蛋 連續年份句；박효신、茄子蛋 年份超量；茄子蛋 刪 2025 年新歌（新作未核）。
+
+### 題材補回：ar-u-019（2026-10-17）
+
+- 補查 30 位：add 8、none 22；改寫 8 位，補回 Action Bronson 遭兩所大學撤出演出、Adia Victoria 拒絕 Americana 標籤、O'Neal 2015 年《Celebrity Big Brother》恐同辱罵風波、Stevenson 腦瘤手術、Alma Mahler 與 Gropius 的外遇、佛洛伊德會談與 1938 年流亡、Andy Gibb 古柯鹼成癮與心肌炎死因、Ari Lennox 公開要求解約並離開 Dreamville。
+- **更正**：Ametsub 遭音樂人 Cuushe 公開指控是在 2018 年（RA 與 The Playground 兩源開頁），先前 ar-u-019 段寫「2025 年」有誤；正文寫明是指控。判緩刑一條只有單源，不寫。
+- 主線審稿 9 處：Alma Mahler、Andy Gibb 年份超量；Alma Mahler、Ametsub、Ari Lennox 連續年份句；字數壓回 250。
