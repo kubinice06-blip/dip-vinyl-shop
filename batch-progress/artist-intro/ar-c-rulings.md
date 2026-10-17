@@ -912,6 +912,324 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 名冊身分錯誤由研究層更正多處（頂樓的馬戲團是上海團、隨性樂團是台語搖滾、Kembara 在新加坡成軍、Jimmy Carter and Dallas County Green 是 country rock、Francesco Guccini 已於 2026 年 8 月過世等），皆照研究層改寫。
 - 本機待辦：PROJECT_MEMORY.md 補一筆（雲端不碰）；各批「待本機」的上線簡介勘誤（改 KV）；何勇簡介「至今唯一」需改過去式（2026 年過世）；卡池年份存疑（Kim Jung Mi 1968→1973、Modern Folk Üçlüsü 1974／1975，另沿第六輪 Trouble《Psalm 9》1984 等）。
 
+## 第八輪二十批接力（ar-d-064～083，2026-10-10 起）
+
+- 範圍：民謠段 R 字頭之後、流行段、世界音樂段，以及電子段開頭。沿用第三至七輪的審稿規則、thin 門檻與裁定形狀（含第七輪新增：只剩影響名單或曲目題材不寫）。
+
+## ar-d-064（2026-10-11）
+
+- 39 位上架（32 full、7 thin：Ryley Walker、Sam Amidon、She & Him、Shu-De、Stone Angel、Synanthesia、The Avett Brothers），1 位不寫：Sandy Harless（全部事實只出自 Numero 廠牌兩頁，身分無獨立出處）。
+- 審稿修 9 處：字數——Simon Finn 258→242、Steve Tilston 265→216（刪 BBC 民謠獎）、Steve Goodman 259→246（皆非雙卡）；最高級刪改——S.E. Rogie「西非最受歡迎之一」、Šaban Bajramović「國際評價最高之一」、Sérgio Godinho「最具影響力、最受推崇之一」、Seth Lakeman「開風氣之先」、Davy Graham「最具影響力之一」、The Carter Family「20 世紀初最重要之一」。
+- 保留：Roscoe Holcomb 的 Bob Dylan 說法；Shirley Collins & Davy Graham 的 Billy Bragg 說法；Snuffy Jenkins 的 Ralph Stanley、Don Reno 說法；Simon Joyner 的 Conor Oberst 說法；Sweeney's Men「被視為第一位引進 bouzouki」（兩源）；The Carter Family「鄉村音樂名人堂第一個入選的團體」（官方）；Tenores di Bitti UNESCO 2008 年列入（官方）；Suzanne Vega「MP3 之母」稱號。
+- 身分：Skara Brae 維基預抓為奧克尼遺址，已作廢；Sisa 是加泰隆尼亞的 Jaume Sisa；Satwa 是 Lula Côrtes e Lailson 的唯一專輯；Sandy Harless 另有同名女性布道歌手，未收。
+- 卡池年份存疑：Stone Angel 卡池 1974，錄音 1975 年 2 月、Seashell 1975 年發行。
+- 待本機（上線簡介）：Rosanne Cash「史上第一位單張四冠的女性鄉村歌手」只見本人說法；SamulNori「1993 年解散」與 Korea Times 推算不合；Seals & Crofts 簡介半形逗號；Seth Lakeman 簡介「全片」用語；Shu-De「圖瓦喉音 2009 年列入 UNESCO」錯（官方是蒙古申報、2010）；Sibylle Baier「兒子整理成 CD」細節兩說；Tenores di Bitti「2005 年列入」應為 2008、簡介半形標點需重排；The Albion Country Band 發行月份應為 1976 年 4 月；Sweeney's Men「Woods 進了 The Pogues」無據。
+
+## ar-d-065（2026-10-11）
+
+- 40 位全上（35 full、5 thin：The II Generation、The Search Party、The Unthanks、Turid、Vernon Wray）。The Unthanks 唯一的地位事實是某雜誌年度選，媒體名不能進正文，地位句整句不寫，只留身世與聲音。
+- 超額放行：The Weavers 第 9 次為榜首週數與年榜的第二源（第二源先例）。
+- 審稿修 3 處：最高級刪改——The Dillards「最早電氣化之一」改「早期」、The Dubliners「二十世紀最具影響力之一」改「重要」；政治——Trovante 刪「共產黨學生組織」。
+- 保留：The Kingston Trio、The Flying Burrito Brothers 的 Bob Dylan 說法；Tom Paxton 的 Steve Earle 說法；Tony Trischka 的 American Banjo Museum 名人堂官方評語「或許是根源音樂界最有影響力的五弦琴手」（名人堂官方）；Tommy Jarrell「首屆 National Heritage Fellowship 得主之一」（官方）；Toumani Diabaté 2024 年過世與 Salif Keita 悼詞；The Weavers 冷戰時期被封殺（歷史背景一句）；Trovante 首張向阿言德支持者致敬（歌詞題材）。
+- 身分：The Search Party（電視劇）、The Tree People（Mother Earth 專輯）、Turid（挪威人名消歧義）、四人聯名卡的 Bobby Patterson（Dallas 的 soul 歌手）維基預抓皆作廢；The Mountain Ramblers 非 Slate Mountain Ramblers。
+- 待本機（上線簡介）：The Dillards「Doug 因不滿新方向出走」兩說；The Dubliners「兩天賣出 4 萬張」無據、Heaney 禁播與基金會說法不符；The Fairfield Four 葛萊美 1997／1998；The Gabby Pahinui Hawaiian Band「Vol. 1 是頭一號作品」錯（第三張）；The II Generation 團名由來屬推測；The Young Tradition《Galleries》「三人無伴奏」錯（有器樂）；Tom Paxton《Ramblin' Boy》「首張專輯」需限定 Elektra；《June Apple》「Lineberry 名下沒有別的作品」錯；Toumani Symmetric Orchestra「入圍 2007 年 BBC Radio 3」未證實；Trader Horne 的 Brian Patten 與托爾金典故、Vernon Wray「Link 彈 dobro 與曼陀林」無據。
+
+## ar-d-066（2026-10-11）
+
+- 34 位上架（28 full、6 thin：World Standard、စိုင်းထီးဆိုင်、김두수、シバ、休みの国、前川守賢），6 位不寫：オリジナル・ザ・ディラン（聲音只剩成員名單）、ダッチャ、ほうむず、中島光一、五条坂、伴よしかず（寫作層判定：事實全部單源，或身分無獨立出處）。
+- 超額放行：World Standard（齊豫先例，超出那次沒有新事實）。
+- 審稿修 6 處：
+  - 用藥：김두수 刪大麻一句。
+  - 最高級：Vince Gill 刪最高級，Галич 刪「最重要」，စိုင်းထီးဆိုင် 刪「最有名之一」。
+  - 政治、刑罰：Юлий Ким 刪父親被處決與古拉格一句（政治背景，不直接關係到聲音）。
+  - 用語：정태춘 的「南韓」改「韓國」。
+- 待本機（上線簡介）：
+  - 以莉·高露：種稻地點。
+  - Новелла Матвеева：嗓音描述。
+  - 김두수、조동진：專輯排名。
+  - 노래를 찾는 사람들：「1987 再發行」。
+  - Wardruna：成軍年份。
+  - Will Ackerman：專輯年份 1975／1976，另有製作名單細節。
+  - Waylon：「命名起點」。
+  - Ye Vagabonds：獎項名稱。
+  - 정태춘：違憲說法。
+  - フォークル：Oricon 排名說法。
+
+## ar-d-067（2026-10-11）
+
+- 32 位上架（23 full、9 thin：宋冬野、張瑋瑋和郭龍、柯泯薰、張清芳、紀曉君、茶木みやこ、武蔵野タンポポ団、蘇陽、野沢享司）。
+- 8 位不寫：
+  - 山里勇吉：身分只靠同名推定，事實全是單源。
+  - 忍冬創：只有一條身分事實。
+  - 斉藤哲夫：全部事實只出自日文維基。
+  - 松田弘一：事實全出自琉球新報，同一報社算一個來源，身分無第二源。
+  - 宮里ひろし、金森幸介：聲音句只剩伴奏名單。
+  - 楊祖珺：音樂句只剩曲目與遺稿經過，沒有聲音或做法。
+  - 謝宇威：只剩「用客語寫流行歌」與專輯清單。
+- 審稿修 9 處：
+  - 在世者成績：張清芳刪「東方不敗」銷量說法，字數掉到 158，改列 thin。
+  - 最高級與「第一」：張雨生刪「唯一一座」；胡德夫「最早」改「早期」；照屋林助「第一人」改「代表人物」。
+  - 單源：潘越雲刪「最器重的女歌手」與 2025 年民歌五十登台。
+  - 政治：李雙澤刪〈美麗島〉成為雜誌刊名一句。
+  - 出處進正文：普久原恒勇刪「日文維基稱」。
+  - 標點：野孩子的〈黃河謠〉是歌，改單書名號。
+  - 字數：照屋林助 251 改 231（刪紀念祭，非雙卡）。
+- 保留：
+  - 楊弦「被公認為台灣第一張民歌專輯」與 2025 年 12 月過世，皆兩源。
+  - 李雙澤淡江事件、楊弦中山堂演唱會兩個「起點」，各有出處，指的是不同層次。
+  - 郭英男只寫 Enigma 取樣一句，不寫官司。
+  - 盧廣仲車禍受傷：直接促成他自學吉他（Richard Crandell 先例）。
+  - 宇多田ヒカル談折坂悠太、老狼談萬曉利、小河談野孩子：具名音樂人。
+- 身分：
+  - 預抓維基作廢：朴樹（樹種）、野孩子（feral child）。
+  - 宮里ひろし出身地有沖繩與大阪兩說，只寫在大阪活動。
+- 待本機（上線簡介）：
+  - 周華健《花心》銷量與 IFPI 說法。
+  - 山口五郎專輯年份 1968／1969、「最早」用語。
+  - 張清芳大學城名次。
+  - 張瑋瑋和郭龍「首張個人創作專輯」（實為二人合作）。
+  - 宋冬野、張瑋瑋和郭龍、野孩子的簡介寫「中國大陸」，需改「中國」。
+  - 松田弘一「最核心的即興唱腔」。
+  - 森田童子出道年 1974／1975。
+  - 楊祖珺〈美麗島〉詞作者與禁唱細節。
+  - 莫西子詩「彝語與漢語交替」（澎湃新聞說只有彝語）。
+  - 郭英男「魔岩居間和解」（魔岩是提告方）。
+  - 野孩子「張瑋瑋早年團員」。
+  - 金延幸子「發表後赴美」與「長年停止活動」。
+
+## ar-d-068（2026-10-11）
+
+- 39 位上架（30 full、9 thin：音羽信、須山公美子、黃玠 Dadado Huang、Another Sunny Day、Anthony Adverse、BOYNEXTDOOR、Brighter、Buffalo Tom、Camila Cabello）。1 位不寫：Bad Dream Fancy Dress（聲音句只剩「誰寫歌製作、她們演唱」的分工，過不了 thin 門檻）。
+- 民謠段至此寫完，本批後半起進入流行段（A 至 C 字頭）。
+- 審稿修 18 處：
+  - 「南韓」改「韓國」：015B、AKMU、BoA、BOYNEXTDOOR。
+  - 最高級刪改：
+    - Alleycats 刪「史上最具影響力之一」（出自一個標了需補引用的維基條目）。
+    - Anthony Adverse 刪 él「最具影響力的廠牌之一」。
+    - Apelsin「最受歡迎之一」改「走紅」。
+    - Black Brothers 刪「1980 年代新幾內亞最受歡迎」。
+    - Burt Bacharach「最重要、最具影響力之一」改「重要人物」。
+    - Camilo Sesto「最具代表性」改「代表性」。
+  - 「第一」「唯一」刪改：
+    - 音羽信刪「唯一一張」。
+    - Celentano「把搖滾引進義大利的人」改「先驅之一」。
+    - BoA「第一位真正打開日本市場」改「先驅」。
+  - 單源刪除：
+    - 齊豫 & 潘越雲刪「最著名之一」與「羅大佑、李宗盛視為第一線人選」（d-067 已判單源）。
+    - BoA 刪出道 25 週年致敬（只有 HYBE 旗下的 Weverse 一源）。
+  - 媒體名進正文：陳昇「中央社稱」改「據報導」。
+  - 健康：Bobby Darin 刪風濕熱與心臟一句。
+  - 在世者成績：Captain & Tennille 刪「登上榜首」，只留葛萊美年度唱片。
+- 保留：
+  - 高橋竹山「被視為史上第一張津輕三味線獨奏 LP」（兩源）。
+  - Streisand「第一位以作曲者身分獲奧斯卡最佳原創歌曲的女性」（限定作曲者）。
+  - Burt Bacharach 蓋希文獎「第一次頒給作詞作曲搭檔」（官方）。
+  - Barbra Streisand & Kris Kristofferson 269 字（雙卡）。
+  - Bananarama 以「自己寫歌、自己挑形象」的 DIY 做法當方法句（地位格只有金氏紀錄，不寫）。
+  - 具名音樂人：Cornelius 談青葉市子、Ivo Linna 談 Apelsin。
+- 身分：
+  - 預抓維基作廢：After Dinner（舞台劇）、Anthony Adverse（1936 年電影）。
+  - 音羽信、黃玠預抓查無，以 Discogs 與專訪確認身分。
+- 待本機（上線簡介）：
+  - 高橋竹山「約兩歲失明」各書不一。
+  - 《回聲》「百張最佳專輯第十一」與「絕響」查無出處。
+  - Black Brothers「1975 年遷到雅加達」（另一說 1976）。
+  - Alleycats「Penang 唱了近十年」、兄弟和聲、M. Nasir。
+  - Apelsin 同名 LP 年份與「最早發行品」。
+  - Captain & Tennille「年度製作」應為「年度唱片」。
+
+## ar-d-069（2026-10-11）
+
+- 40 位全上（38 full、2 thin：Elaheh, Aref & Emad Raam、Even as We Speak）。
+- 超額放行：HANA 第 9、10 次為 2025 年日本レコード大賞最優秀新人賞的第二源（第二源先例）。
+- 審稿修 13 處：
+  - out-1 審稿 5 處：Dariush 刪青年雜誌票選「最受歡迎」與學者「最受喜愛」，改「與 Googoosh 齊名」；Dick Lee 刪金像獎與 Cultural Medallion（在世者只留白金一處）；Donnie & Joe Emerson「《紐約時報》」改「一篇報紙」；Eka Sapta 刪「最具主導地位之一」；Elaheh, Aref & Emad Raam 刪「波斯音樂史上最受珍愛之一」。
+  - 保留：Elaheh 身分查無，正文只寫 Aref、Emad Raam（「這張唱片掛名的」限定，不冒認 Elaheh）；Deacon Blue 2020 全國票選；Chappell Roan 葛萊美最佳新人；Balavoine 對 Mitterrand 一句（背景）；Cecilia 佛朗哥審查一句（背景）；Dean Blunt 媒體獎不具名。
+  - out-2 審稿 8 處：Enrique Iglesias 刪祖父遭綁架（刑案）；France Gall 刪「最受讚譽之一」；Gary Wilson 276→約 240（刪 IBM 父親與 John Cage，非雙卡）；George Clanton 刪「第一個 vaporwave 音樂節」；Hayedeh「最具代表性、最有影響力之一」改「具代表性」；Hemant Kumar 正文補藝名、「最重要詮釋者之一」改「重要詮釋者」。
+  - 保留：Fito Páez「阿根廷搖滾史上最暢銷專輯」（兩源、必要例外）；Hikaru Utada《First Love》「日本史上最暢銷」（在世者唯一一處成績）；Ghantasala 參加退出印度運動入獄（政治背景一句）；Belafonte & Makeba 279 字（雙卡），專輯直面種族隔離算作品內容；Habib Mohebian「伊朗搖滾奠基者之一」以「據介紹」限縮；Lata Mangeshkar 談 Hemant Kumar（具名音樂人）；Macron 談 France Gall（官方悼詞）。
+- 稱呼：Christine and the Queens 不寫出生名與舊名、Hikaru Utada 不用性別代名詞，皆照本人意願。
+- 身分：預抓維基作廢——Crayon（蠟筆）、Denim（布料）、Dariush（人名頁）。Elaheh 是否即 Bahar Gholamhosseini 查無，正文不冒認。
+- 待本機（上線簡介）：Chaseiro「五張作品裡的第二張」（實際更多）；Christine and the Queens 簡介用出生名與「她」、「三位變裝皇后收留並命名」查無；Eka Sapta 專輯規格未核實；Donnie & Joe Emerson「三百人演奏廳」查無；Fariz RM「Sakura 是出道專輯」（1979 已有首張）；Fito Páez「14 首全由他一人譜寫」（有與 Charly García 共寫）；Gary Wilson 工作地點兩說；Giao Linh 試唱年份與本名兩說；Hemant Kumar〈Sahil Ki Taraf〉「改用進《Anupama》」（實為曲調挪用）；Belafonte/Makeba〈Nongqongqo〉與 Hayedeh「與 Mahasti 生年相差四年」未能核對。
+
+## ar-d-070（2026-10-11）
+
+- 38 位上架（32 full、6 thin：Homeshake、Hope Sandoval & The Warm Inventions、Insides、Leila Forouhar、Level 42、Makoto Matsushita）。2 位不寫：Ma Chérie for Painting（全部事實只出自 Discogs、MusicBrainz 兩個可自由編輯的資料庫）、Marden Hill（研究層標身分待核，聲音句只剩「熱愛 1960 年代電影配樂」的自述影響）。
+- 超額放行：IVE 第 9 次核對上線簡介曲長，無新事實（齊豫先例）；Laurel Halo 第 9 次為第二源，無新事實（齊豫先例）。
+- 審稿修 10 處：
+  - out-1 審稿 7 處：IVE「南韓」改「韓國」；Jennifer Lopez 刪「同代最有影響力之一」；Julee Cruise 264→約 250（刪自認百老匯強聲一句，非雙卡）；Kelly Clarkson 刪 Hot 100 跳幅紀錄（在世者只留 American Idol 冠軍）；Kombi「最受歡迎之一」改「人氣樂團」；Laura Pausini 刪葛萊美（只留 Sanremo 新人組冠軍）；Laurel Halo「The Wire 雜誌」改「英國一家音樂雜誌」（媒體名不進正文）。
+  - 保留：Jennifer Lopez「被稱為首位同週坐擁冠軍專輯與冠軍電影的女性」（被稱為）；Laura Branigan〈Gloria〉Hot 100 停留 36 週紀錄（已故）；IVE「super rookie」以「被稱為」帶過，數字不寫；Ahmet Ertegun 談 Branigan、Ariel Pink 談 John Maus（具名音樂人）；法國文化部悼 Jane Birkin（官方）。
+  - out-2 審稿 3 處：Lệ Thu「西貢最紅之一」改「當紅」；M.S. Viswanathan 刪母親欲輕生一句；Margo Guryan 272→247（非雙卡，刪自述與兩處修飾）。
+- 身分：Mariah 是日本清水靖晃的樂團，Marjan 是伊朗歌手 Shahla Safi Zamir（非荷蘭電音同名者），Marden Hill 預抓維基是鄉間宅邸已作廢。
+- 卡池年份存疑：Kelly Clarkson《Breakaway》卡池 2003，實為 2004 年 11 月。
+- 待本機（上線簡介）：IVE《REVIVE+》總長與〈In Your Heart〉曲長；Laura Pausini「19 歲」應為 18 歲；Laura Branigan 簡介年份用中文數字；Luis Miguel《Romance》銷量 700 萬／800 萬兩說；Marine Girls「十六首全在花園小屋錄成」過於肯定。
+
+## ar-d-071（2026-10-11）
+
+- 36 位上架（32 full、4 thin：Marta Kubišová、Men I Trust、Mild High Club、Rajie）。4 位不寫：Shahram Shabpareh（全部事實只出自英文維基）、Siavash Ghomayshi（官網與英文維基幾乎同文，無獨立來源）、Sanisah Huri（沒有任何聲音或做法的事實）、Sơn Ca（全部事實只出自越南文維基）。
+- 審稿修 11 處：
+  - out-1 審稿 6 處：Marta Kubišová 政治段落壓成一條主線（刪父親拒與政權合作、《七七憲章》），字數降到約 150，改列 thin；Michel Polnareff 刪「與 Gainsbourg 並列最重要的詞曲作者」；Miki Matsubara「最具代表」改「代表」；Olivia Newton-John 刪「史上最成功之一」；Owen Pallett 刪奧斯卡入圍（在世者只留 Polaris）；Paula Abdul 刪艾美獎（在世者只留出道專輯四首冠軍）。
+  - 保留：Paulo de Carvalho〈E Depois do Adeus〉成為康乃馨革命暗號（歌曲本身的事件，一句背景）；Milli Vanilli 對嘴風波與葛萊美被收回（事件本身，不寫成員死因與官司）；Lô Borges 2025 年 11 月過世只見摘要未標兩源，正文不寫生死。
+  - out-2 審稿 5 處：Raimonds Pauls 刪官方「影響力最大之一」只留「國寶與大師」；Ramesh「最具代表性之一」改「具代表性」；Roshan 278→約 230（刪「印度電影最好之一」「史上最有名」，非雙卡）；Salil Chowdhury 265→約 240（刪作品數，非雙卡）；Spandau Ballet 刪「新浪漫時期最成功之一」。另 Sơn Ca 審稿撤下（全部事實只出自越南文維基）。
+  - 保留：Richard Rodgers & Oscar Hammerstein II 270 字（搭檔雙人卡）；Spice Girls「史上銷量最高的女子團體」（兩源，在世者唯一一處）；S.E.N.S. 霹靂布袋戲一句以「有文章指出」限縮；Raimonds Pauls 文化部長一句（背景）；Salil Chowdhury 左翼劇團與抗議歌一句（背景）。
+- 稱呼：Owen Pallett 以姓名稱呼，不用性別代名詞。
+- 待查：Lô Borges 2025 年 11 月過世只見研究摘要，未標兩源，正文不寫生死，留待下次補查。
+- 待本機（上線簡介）：Mecano 法國榜連冠 8 週應為 7 週；Milli Vanilli 撤銷日期 19／20 日兩說、簡介用中文數字；Nino Bravo〈Puerta de amor〉非代表曲；Northern Picture Library 成軍 1993 應為 1992 年春；ORIGINAL LOVE《結晶》是第二張不是第三作；Paula Abdul「首位以出道作達成的女歌手」來源只支持「出道專輯最多冠軍」；Petula Clark「第一位獲葛萊美的英國歌手」站不住（同屆 Beatles 也得獎）；Robert Lester Folsom「約四十年後」（實為 34 年）、「東京」盜版與 Abacus Records；Roshan「事前取得兩人同意」主詞錯；Rodgers & Hammerstein 電影版新增兩首為 Rodgers 一人詞曲；Razorcuts 成軍年地待核；Siavash Ghomayshi 卡池卡帶的身分與年份待核。
+
+## ar-d-072（2026-10-11）
+
+- 37 位上架（32 full、5 thin：St. Christopher、The Groove Farm、The King of Luxembourg、The Pussycat Dolls、The Sweetest Ache）。3 位不寫：The Chesterfields、The Flatmates、The Crescendos（理由見下）。
+- 超額放行：Sugar Babe 第 9 次核對製作人說法未果，只多得一句單源評價，寫作層不採（齊豫先例）。
+- 審稿修 6 處：
+  - out-1 審稿 3 處：Thái Thanh 刪 Phạm Duy「最重要之一」；The Flamingos 刪「史上最出色、最有影響力之一」（留名人堂官方評語）；The Go-Go's 刪 Drew Barrymore 引介詞（在世者成績收斂）。另撤下 3 位：The Chesterfields、The Flatmates（聲音句只剩 C86／anorak pop 場景標籤）、The Crescendos（只剩「吉他樂團、改女主唱」編制）。
+  - 保留：Sugar Babe「《SONGS》常被放在 city pop 源流起點，也有論者歸給 Happy End」（兩源、兩說並陳）；The Go-Go's「被稱為第一張自寫自彈全女子樂團的專輯榜冠軍」（兩源）與 2026 國家錄音登記處（國會圖書館官方）；Khánh Ly 談 Thái Thanh、Dusty Springfield 與 Ellie Greenwich 談 The Exciters（具名音樂人）。
+  - out-2 審稿 3 處：The Shirelles 263→約 235（刪國家錄音登記名冊一句，非雙卡、專輯年份也有兩說）；TVXQ! 兩處「南韓」改「韓國」。
+  - 保留：The Shirelles「第一支登上 Billboard 流行榜冠軍的非裔美國女子團體歌曲」（兩源）與名人堂官方評語；The Housemartins 政治與信仰入詞一句（歌詞內容）；Morrissey 談 The June Brides、The Shop Assistants，Gary Usher 談 Curt Boettcher（具名音樂人）。
+- 身分：預抓維基作廢——Sugar Babe（山下達郎單曲）、The Crescendos（1957 年 Nashville 同名團）、The Millennium（千年消歧頁）、The Times（英國報紙）。研究層更正派工信：The Shop Assistants 是蘇格蘭愛丁堡、The Sweetest Ache 是威爾斯斯旺西。
+- 卡池年份存疑：The Shirelles 首張專輯卡池 1961，維基與國會圖書館專文作 1960。
+- 待本機（上線簡介）：The Mercy's「1965 年在棉蘭成立」（另一說 1969）；Tracey Thorn《A Distant Shore》成本 138／167 英鎊兩說；The 5th Dimension「白金單曲」未見認證記載。
+
+## ar-d-073（2026-10-11）
+
+- 40 位全上（34 full、6 thin：Vasant Desai、Vehicle Flips、Westlife、Wimp Factor 14、လွှမ်းမိုး、ヤプーズ）。
+- 審稿修 8 處：
+  - out-1 審稿 3 處：Валерий Ободзинский 270→約 245（刪電視劇描寫一句，非雙卡）；София Ротару 刪姊姊失明（他人健康細節）；김완선「韓國 synth-pop 的起點」改「早期的 synth-pop 作品」。
+  - 保留：Westlife 金氏紀錄「唯一前七支單曲全部空降冠軍」（官方紀錄，在世者唯一一處）；ထူးအိမ်သင်〈The Bride of History〉被解讀為向翁山蘇姬致意與演出受限（一句背景）；Françoise Hardy 談 Véronique Sanson、윤종신與백지영談변진섭（具名音樂人）。
+  - out-2 審稿 5 處：신화 刪「最早確立偶像公式」的「最早」；양희은 刪李韓烈出殯路祭百萬人合唱（政治只留一句背景）；이찬혁 刪「該屆得獎最多」；펄 시스터즈「最受歡迎的雙人組」改「當紅雙人組」；中山美穂〈Rosa〉「把 house 帶進 J-POP」改「帶進 house 的色彩」。
+  - 保留：신화「被稱為韓國最長壽的男子偶像團體」（六人陣容未變的事實陳述）；이찬혁 2026 年韓國大眾音樂賞三獎（兩源）；유재하「生前唯一的專輯」與兩次名盤票選名次（已故）；성시경談이소라、김태원談한영애、伊東ゆかり與中尾ミエ談ザ・ピーナッツ（具名音樂人）。
+- 身分：預抓維基作廢——신화（神話 Myth 條目）。Муслим Магомаев 與同名作曲家祖父分開，祖父內容一條不收。
+- 卡池年份存疑：Алла Пугачёва《Зеркало души》卡池 1977，俄文維基作 1978 年發行。
+- 待本機（上線簡介）：Wendy & Bonnie 錄音歲數應為 18 與 15；Véronique Sanson《Amoureuse》「二白金」應為二金；ထူးအိမ်သင် 首張 1987 年（出道另一說 1986）；양희은〈아침 이슬〉禁曲年份三說；ザ・スパイダース「井上孝之」應作「井上堯之」；五輪真弓《少女》錄音 1971 夏／1972 年 6 月兩說。
+
+## ar-d-074（2026-10-11）
+
+- 39 位上架（37 full、2 thin：冰球樂團、品冠）。1 位不寫：柴田容子（日文維基是唯一來源且掛出典警示，聲音句只剩唱片資料庫的曲風標籤）。
+- 審稿修 10 處：
+  - out-2 審稿 6 處：小沢健二「最早的實踐者」改「早期」；小泉今日子刪「最成功的」三大女偶像；崔萍「人氣與酬勞最高之一」改「當紅」；戴佩妮刪「第一位獲獎的馬來西亞歌手」與十大傑出青年（在世者只留金曲獎）；戸川純「影響最深之一」改「影響深遠」；李竺芯刪「該屆最大贏家」。另撤下柴田容子（聲音句只剩唱片資料庫的曲風標籤）。
+  - 保留：李香蘭少時肺病促成學聲樂（健康細節直接導向音樂，Richard Crandell 先例），「七大歌星中唯一外籍」；杉山清貴&オメガトライブ「被稱為 city pop 的原點」（稱號）；五月天談李宗盛、黃霑談杜麗莎、陶晶瑩談崔苔菁、武部聡志與松本隆談斉藤由貴（具名音樂人）。
+  - out-1 審稿 4 處：佐藤奈々子刪唱片公司官方「渋谷系源頭之一」（只有官方一句，非共識）；内山田洋とクール・ファイブ 刪唱片公司「1970 年代頂尖」；周璇「最著名之一」改「著名」；容祖兒刪「無可動搖的地位」。
+  - 保留：坂本九「第一位以日語歌拿下美國榜首的歌手」；山下達郎稱佐藤博「日本最高的鋼琴手」、黃霑分析〈啼笑因緣〉、宮川彬良談宮川泰（具名音樂人）；冰球樂團金曲獎入圍（三源）。
+- 生年：多位歌手的生年只見維基家族，正文不寫；有獨立第二源的（李香蘭、当山ひとみ 等）保留。
+- 待本機（上線簡介）：張信哲獎項名應為「最佳國語男演唱人」；佐藤奈々子「耳語嬌媚、渋谷系源頭」只有唱片公司一句、「1975 年冬起一同創作」查無；北島三郎出道曲應為〈ブンガチャ節〉、被發掘年應為 1960；吳鶯音「文革被當作間諜批鬥」單源且涉政治；国分友里恵為中山美穗作詞實為共作；坂本九簡介寫了死因；寺尾聰「164 萬張、刷新紀錄」數字不一。
+
+## ar-d-075（2026-10-11）
+
+- 36 位上架（31 full、5 thin：楊千嬅、河合奈保子、無印良品、盧冠廷、阿杜）。3 位不寫：細野晴臣・鈴木茂・山下達郎、許美靜（來源全是維基家族，比照 Shahram Shabpareh 先例），洪榮宏（理由見下）。
+- 超額放行：柴田聡子第 9 次只回商品頁，無新事實（齊豫先例）。
+- 審稿修 8 處：
+  - out-1 審稿 4 處：柴田聡子刪詩集新人獎（在世者只留 CD 唱片行大賞赤盤大賞）；無印良品刪「當年馬來西亞最暢銷」；白光刪「傳聞她瘋了、潦倒」；稲垣潤一「最受歡迎的聖誕歌之一」改「經典聖誕歌」。另撤下洪榮宏（聲音句只剩「台語流行歌與日式演歌」曲風與演唱會曲目）。寫作層不寫細野晴臣・鈴木茂・山下達郎（全部來源都是英文維基家族）。
+  - 保留：王傑〈一場遊戲一場夢〉被李宗盛列為「世紀歌曲」、林夕談楊千嬅、阿信談草蜢、侯麗芳談美黛（具名音樂人）；盧冠廷 2026 年金針獎（兩源）；理想混蛋 2025 年小巨蛋加場。
+  - out-2 審稿 4 處：鄭秀文「轉戰影壇最成功之一」改「成功例子」；阿杜「最深入人心之一」改「深入人心」；陳淑樺樂評人馬世芳改不具名；陳潔儀刪〈Home〉「最廣為人知、最受喜愛之一」。寫作層不寫許美靜（來源只有中英文維基）。
+  - 保留：陳淑樺「據稱台灣第一張破百萬的國語唱片」（據稱，在世者唯一一處）；陳雷「被稱為首位站上新加坡室內體育館的閩南語歌手」（兩源）；蔡振南刻意吸石灰粉塵練沙啞嗓音（直接關係聲音，據說）；西田佐知子〈アカシアの雨がやむとき〉與安保鬥爭年代一句（背景）；陶喆、黃霑、周華健談陳淑樺，竹内まりや、松任谷由実、井上陽水談薬師丸ひろ子，盧廣仲談蔡振南（具名音樂人）。
+- 待本機（上線簡介）：沈文程《心事誰人知》百張最佳第 81 名查無可靠出處；河合奈保子《Daydream Coast》「David Foster 製作」應為編曲與演奏；洪榮宏赴日 13 歲／10 歲兩說；王傑簡介用中文數字；細野組《Pacific》「隔年 YMO 首張」應為同年；紫薇〈綠島小夜曲〉「第一首灌製唱片」與「綠島指台灣本島」各有異說；葉啟田簡介寫「中國大陸」需改「中國」、粵語版歌名「勝志／勝利」待核；陳雷《歡喜就好》「百萬張」只有單源、原始發行公司待核。
+
+## ar-d-076（2026-10-11）
+
+- 37 位上架（33 full、4 thin：靜婷、風コーラス団、Al Campbell、Alpha & Omega）。3 位不寫：龍千玉、Angkanang Kunchai With Ubon-Pattana Band、Armagideon（理由見下）。
+- 流行段至此寫完，本批後半起進入世界音樂段（A 至 B 字頭）。
+- 審稿修 10 處：
+  - out-1 審稿 5 處：顧媚刪〈情人的眼淚〉「那個年代最浪漫之一」（單源）；魏如萱刪喉嚨受傷；龔秋霞刪「最早與百代簽約之一」；Afel Bocoum 父親「當地最有名」改「知名」；Ahmet Kaya 刪「庫德認同的民族象徵」（政治只留起訴與出走一句）。另撤下龍千玉（沒有聲音事實，只剩歌廳秀場次與轉唱台語）。寫作層不寫 Angkanang Kunchai With Ubon-Pattana Band（全部事實轉自同一份復刻說明）。
+  - 保留：陳建騏談魏如萱（具名音樂人）；Alpha Blondy〈Brigadier Sabari〉寫被捕受虐經歷（歌曲題材，一句）；Alèmayèhu Eshèté 軍政府上台後夜生活結束（背景一句）。
+  - out-2 審稿 5 處：Aurelio 刪訃告「Garifuna 文化代言人與守護者」（單源），只寫 2025 年逝世（兩源）；Ayalew Mesfin、Ayub Ogada、Bob Andy 三處「最重要／最具影響力之一」改「重要／具影響力」；Beth Carvalho 刪 Zeca Pagodinho「90 年代最重要」。寫作層不寫 Armagideon（身分只有 Discogs 單頁，聲音只剩風格標籤）。
+  - 保留：Aurelio 國會議員一句（背景，不寫「第一位」）；Ayalew Mesfin 德爾格時期入獄與禁歌一句（背景）；Bebo Valdés 革命後衛兵與卡斯楚一段（本人回憶，背景一句）；Bismillah Khan 1947 年紅堡演奏；John Peel 談 Black Roots、Brinsley Forde 談 Aswad（具名音樂人與 DJ）。
+- 待本機（上線簡介）：風コーラス団 漏寫細野晴臣是製作人；黃乙玲「後來四次拿下金曲獎」時序待核；龔秋霞〈莫負今宵／莫忘今宵〉待核；Afel Bocoum 兩曲的節奏描述與樂評不合；Ahmet Kaya 專輯序數不一；Althea and Donna「John Peel 放錯 B 面」查無；Angkanang 錄音年應為發行年；Ashkhabad「第一個在 Real World 發片的前蘇聯樂團」與精神病院一事單源；Piazzolla & Mulligan「八重奏」應為十重奏、「在德國改名」查無；Aurelio「第一位非裔議員」各源不一，簡介寫了空難死因；Ballaké Sissoko & Vincent Segal「Segal 出身法國國家管弦樂團」查無；Bismillah Khan & V.G. Jog「Jog 把小提琴引進印度斯坦體系」說過頭；Bob Andy 曲名應為〈Too Experienced〉；Boban Marković「第一小號」五度／六度兩說。
+
+## ar-d-077（2026-10-11）
+
+- 39 位上架（35 full、4 thin：Bunji Garlin、Centry、Culture Freeman meets The Bush Chemists、Dayjah & The Disciples）。1 位不寫：Dub Ghecko。
+- 審稿修 15 處：
+  - out-1 審稿 8 處：Boubacar Traoré 277→約 248（刪 1987 年電視被誤認一句，非雙卡）；Cachao 274→約 244（壓縮 descarga 一句、刪錄音學院「最重要之一」，非雙卡）；Carlos do Carmo「同世代最重要」改「重要」、刪「首位獲拉丁葛萊美終身成就獎的葡萄牙藝人」；Chaweewan Dumnern 刪 2025 年《The White Lotus》（新近事實單源）；Cheikha Rimitti「最早之一」改「早期」、刪「raï 之母」（只見維基）。
+  - 保留：Celia Cruz & Ray Barretto 261 字（雙卡）；搖滾名人堂官方稱 Celia Cruz「史上最暢銷的拉丁藝人之一」與 2026 年身後入選（官方）；Boukman Eksperyans 以「學者 Gage Averill 認為」寫 Avril 下台（不寫成因果）；Brenda Fassie〈Black President〉禁播一句（背景）；Calle 13「拉丁葛萊美獲獎最多團體」（在世者唯一一處）；Bill Frisell 談 Boubacar Traoré、Angélique Kidjo 談 Burna Boy、Youssou N'Dour 談 Cheikh Lô（具名音樂人）。
+  - out-2 審稿 7 處：Count Ossie & The Mystic Revelation of Rastafari、Dalida、Derrick Harriott（兩處）、Eddy Grant 的「最早之一」改「早期」；Count Ossie & The Rasta Family 刪「開風氣之先、近乎神話」（一篇樂評加一篇廠牌文案）；Daddy Yankee 刪遭流彈擊中一事（刑案）；Dao Bandon 歌詞題材刪「大麻」。寫作層不寫 Dub Ghecko（只有國別與資料庫標籤）。
+  - 保留：Derrick Morgan 獨立六十週年 Music Icon Award 表彰詞「唯一同時佔滿榜單一到七名」（官方表彰詞）；Dadawah 即 Ras Michael、Order of Distinction（官方）；Eddy Grant〈Gimme Hope Jo'anna〉遭南非政府查禁（背景一句）；Quincy Jones 與 Stevie Wonder 之於 Djavan、Bobby Sanabria 談 Dom Um Romão（具名音樂人）。
+- 待本機（上線簡介）：Boubacar Traoré「1968 年政變後從廣播消失」查無；Cheikh Lô 移居年應為 1981、《Né la thiass》不是出道作；Cheikha Rimitti《Sidi Mansour》的 East Bay Ray 查無；Cornell Campbell 曲名應為 Greenwich Farm；Count Ossie《Grounation》標題曲「近半小時」（維基作逾 30 分鐘）；Çudamani 發行年 2001／2002；Dalida《Le Temps des fleurs》簡介整段寫 Luigi Tenco 之死與輕生，與「不寫死因」衝突，建議改寫；Derrick Morgan〈Housewives' Choice〉年份與政府合照收場；Dur-Dur Band「Bob Marley 與寶萊塢影響」「紅到衣索比亞等地」查無；Eddy Grant The Equals 成軍應為 1965。
+
+## ar-d-078（2026-10-11）
+
+- 37 位上架（32 full、5 thin：Gamelan Semar Pegulingan、Ghazal、Goat、Hughie Izachaar、Idjah Hadidjah）。3 位不寫：Impact All Stars、Jah Free、Jah Stitch（理由見下）。
+- 超額放行：Ghazal 第 9、10 次為葛萊美入圍名單與成軍年的第二源（第二源先例）。
+- 審稿修 11 處：
+  - out-2 審稿 5 處：Herbs 刪「和奧克蘭的政治運動連在一起」（政治只留反核歌一句）；Hopeton Lewis「最早的 rocksteady 錄音之一」改「早期」；Hwang Byungki「開啟創作國樂」改「開拓者」；İbrahim Tatlıses「最知名、最成功之一」改「代表歌手」；Izrael「最受歡迎、最具影響力之一」改「具影響力」。另撤下 Impact All Stars（身分與成員未確認，聲音句只剩「收器樂曲與 dub 版本」的格式說明）、Jah Stitch（全部事實只出自維基家族）；寫作層不寫 Jah Free（只有國別、製作掛名與一場活動）。
+  - 保留：Hossein Alizadeh & Djivan Gasparyan 277 字（雙卡）；Ini Kamoze〈Here Comes the Hotstepper〉Hot 100 冠軍（在世者唯一一處）；Inner Circle 只寫 Jacob Miller 1980 年過世，不寫死因；Héctor Lavoe 談 Ismael Rivera、The Bug 談 Jah Shaka、Sly Dunbar 談 Jimmy Riley（具名音樂人）。
+  - out-1 審稿 6 處：Eek-A-Mouse 刪「常下注」、「最早被形容為 singjay 之一」改「早期」；Franco & Tabu Ley Rochereau 刪 TPOK Jazz「最受歡迎也最有影響力」改「極具影響力」；Freddie Aguilar 刪〈Anak〉「菲律賓史上最暢銷」；Garnett Silk 刪「牙買加銷量最好之一」。
+  - 保留：Fela 2026 年入選搖滾名人堂「第一位入選的非洲獨立藝人」（限定 solo，排除 Freddie Mercury 反例）；Fela 反軍政府與「Black President」外號一句（背景）；Freddie Aguilar 不寫〈Bayan Ko〉與人民力量革命（政治）；Stelios Kazantzidis 與 Manos Hatzidakis 談 Haris Alexiou、Bonnie Raitt 與 Jackson Browne 之於 Habib Koité（具名音樂人）。
+- 身分：Goat 預抓維基是山羊，已作廢；İbrahim Tatlıses 照來源寫父親阿拉伯人、母親庫德人，不寫成「庫德裔」。
+- 待本機（上線簡介）：Eek-A-Mouse「押中賽馬」與《Wa-Do-Dem》首發廠牌；Elomar 首張專輯年份與廠牌、Discoteca Básica 名次；Fela with Ginger Baker「與 Tony Allen 對打」查無、Land Rover 年份；Femi Kuti 專輯序數；Franco & Tabu Ley「全片」用語；Freddie Aguilar「譯本數以百計」（實為數十種語言）；Gamelan Semar Pegulingan「約十七世紀」、殘句、編號；Grupo Niche 專輯序數；Habib Koité「把吉他調成五聲音階」；Hariprasad Chaurasia「改用左手吹奏」寫成定論；Herbs 成軍年、Tatlıses 走紅年、Impact All Stars 年份、Inner Circle 的 Jacob Miller 加入年份，皆來源不一。
+
+## ar-d-079（2026-10-11）
+
+- 37 位上架（35 full、2 thin：King General Bucks Up Pon De Bush Chemists、Liz Story）。3 位不寫：Johnny Clarke、Josey Wales（全部事實只出自維基家族，第二源逐句照抄維基）、Lidj Incorporated Meets Sound Iration（只有 Discogs 單源的唱片資料）。
+- 審稿修 7 處：
+  - out-2 審稿 3 處：Lucho Bermúdez「最重要之一」改「重要」；Mahlathini「最突出的一位」改「代表人物」；Mighty Sparrow「最偉大之一」改「代表人物」。寫作層不寫 Lidj Incorporated Meets Sound Iration（只有 Discogs 單源的唱片資料）。
+  - 保留：Max Romeo〈Let the Power Fall〉成為 1972 年大選主題曲（背景一句）；Letta Mbulu 流亡與國家勳章（背景一句、在世者一處）；Lord Kitchener「11 次 Road March，長年是歷來最多」；Mighty Sparrow 2026 年 9 月過世（維基與 AP 兩源）、Max Romeo 2025 年過世；Quincy Jones 談 Letta Mbulu、Joe Strummer 點名 Leroy Smart（具名音樂人）。
+  - out-1 審稿 4 處：Juanes 刪兩場跨國和平音樂會（政治活動）；Judy Mowatt 刪《Black Woman》「女性做過最好的雷鬼專輯」；Kassav'「最具影響力之一」改「具影響力」；Kudsi Erguner「最知名之一」改「知名」。寫作層不寫 Johnny Clarke、Josey Wales（全部事實只出自維基家族，第二源逐句照抄維基）。
+  - 保留：Julio Iglesias 車禍傷脊椎促成學吉他寫歌（健康細節直接導向音樂，Richard Crandell 先例），「全世界商業上最成功的西班牙歌手」（兩源，在世者唯一一處）；Johnny Clegg〈Asimbonanga〉與曼德拉一句（背景）；Miles Davis 談 Kassav'、Yehudi Menuhin 談 L. Subramaniam、Lee Perry 談 Junior Byles、Chayanne 談 José José（具名音樂人）。
+- 身分：Josey Wales 預抓維基是虛構角色條目，已作廢。研究層更正派工名冊：Max Romeo 已於 2025 年過世、Mighty Sparrow 已於 2026 年 9 月過世。
+- 待本機（上線簡介）：Joe Arroyo〈La Rebelión〉世紀與「一對夫妻」說法不一；Joe Gibbs African Dub 系列起始年（1973／1975）；José José《Secretos》應為 1983；Josey Wales〈Let Go Mi Hand〉應為〈Leggo Mi Hand〉；Judy Mowatt「史上第一張女性自製」單源、「首位入圍葛萊美雷鬼獎的女歌手」有反例、Ashandan 廠牌說法不一；Kabaka Pyramid 轉向時序與結識 Damian Marley 因果顛倒；Kassav'「全程克里奧爾語」「CBS 發行」；Larry Harlow「Fania 第二支簽約樂團」來源抵觸；Laurel Aitken〈Boogie in My Bones〉1958／1959；Liz Story 把現場評語當專輯評語；Lord Kitchener「至今無人能及」已過時；Malavoi、Matumbi 成軍年各說；Mayra Andrade 與 Orlando Pantera 時序矛盾、發行年與廠牌待核；Michel Camilo & Tomatito 廠牌三說。
+
+## ar-d-080（2026-10-11）
+
+- 39 位上架（30 full、9 thin：Misty in Roots、Molam Lao、Mystic Eyes、Nouthong Phimvilayphone、Omar Faruk Tekbilek、Orishas、Ottmar Liebert、Pablo Moses、Revolutionary Dub Warriors）。1 位不寫：Onuma Singsiri（身世與聲音兩格查無）。
+- 超額放行：Shajarian 等四人掛名第 9 次為生卒年第二源；Ravi Shankar & Ali Akbar Khan 第 9 次找 Bharat Ratna 第二源未果、無新事實；Rubén Blades & Willie Colón 第 9、10 次為 Colón 過世與傳記第二源（齊豫與第二源先例）。
+- 審稿修 13 處，另回補前批 1 處：
+  - 回補 d-077：Dadawah「在 Rastafari 社群裡長大」改「後來皈依 Rastafari」（d-080 研究層查到他由基督徒母親帶大、1950 年代才皈依）。
+  - out-1 審稿 9 處：Misty in Roots 刪「1970 年代晚期英國最受歡迎之一」（維基家族）與 Clarence Baker 遭警方打傷一段（暴力與政治），字數降到 136，改列 thin；Moana and the Moahunters 刪 Maniapoto「紐西蘭最成功的原住民藝人之一」；Mory Kanté「最有名的格里奧家族之一」改「著名」、刪「第一支銷量破百萬的非洲單曲」；Mutabaruka 刪「名列最受歡迎廣播節目」；Müzeyyen Senar 刪口吃（健康）；Nusrat Fateh Ali Khan & Michael Brook 刪「史上最具影響力的南亞歌手之一」（280→261）；Orchestre Poly-Rythmo「出品最多」改「出品極多」；Orquesta Aragón「最好的 charanga」改「代表性的」。寫作層不寫 Onuma Singsiri（身世與聲音兩格查無）。
+  - 保留：Shajarian 等四人掛名卡 273 字（四人全名與團名就佔近百字，比照雙卡）；Noura Mint Seymali 2025 年 WOMEX 頒獎詞（官方）；Youssou N'Dour 談 Mory Kanté（具名音樂人）。
+  - out-2 審稿 4 處：Pablo Moses 刪〈I Man a Grasshopper〉的入獄與大麻題材；Pedro Santos「最推崇之一」改「受推崇」；Phyllis Dillon 刪〈Don't Stay Away〉「也許是牙買加最好的女聲演出」（單源）；Ras Michael 刪「第一位主持雷鬼電台節目的 Rastafari 成員」（d-077 已判非獨立）。
+  - 保留：Owen Gray 2025 年過世（維基與 VP Records）、Phil Pratt 2026 年 2 月過世（Jamaica Observer 等兩源）、Willie Colón 2026 年過世（AP、NPR）；Prince Jammy〈Under Mi Sleng Teng〉「被許多人視為雷鬼第一個數位節奏」；Ranking Ann〈Kill the Police Bill〉一句（背景）；《Siembra》「銷量最高之一」（必要例外，保守寫法）；George Harrison 談 Ravi Shankar、Juan Gabriel 談 Rocío Dúrcal、Dennis Alcapone 談 Phil Pratt（具名音樂人）。
+- 身分：預抓維基作廢——Moana and the Moahunters（迪士尼角色）、Mystic Eyes（Van Morrison 歌曲）、Pedro Santos（葡萄牙足球員，實為 Pedro Sorongo）。Shajarian 卡的四人是 Masters of Persian Music 巡演團成員，這張專輯人員表只有 Kalhor 與 Shajarian 等，正文不寫成四人合錄。
+- 待本機（上線簡介）：Mory Kanté《Akwaba Beach》各國榜首與「當時銷量最高的非洲唱片」單源；Mutabaruka《Check It!》不是首張（前有 1982 年現場專輯）；Orquesta Aragón 的 Rafael Lay 掌舵應為 1948、Egües 加入應為 1954；Orishas「四人都在 Amenaza」錯（只有 Yotuel 等）；Onuma Singsiri 年份與曲數待核；Phyllis Dillon〈Don't Stay Away〉錄於 1966 年底；Radio Tarifa 錄音年與地點、「1997 年美國再版」查無；Ras Michael「在 Rastafari 社群長大」錯（1950 年代才皈依）；Rasmee 獎項年份 2017／2018；Rocío Dúrcal「一個月賣一百萬張」「列入文化遺產」查無；Rokia Traoré「評審團獎」應為樂評獎；Oliver Mtukudzi 簡介寫了病名。
+
+## ar-d-081（2026-10-11）
+
+- 35 位上架（30 full、5 thin：Seun Kuti & Egypt 80、Sheila Chandra、The Disciples、The Rootsman、The Rootsman vs Muslimgauze）。5 位不寫：Sylvia Tella、The Force of Music、The Overnight Players、The Well Pack Band、Tiao Phün Muang（理由見下）。
+- 審稿修 9 處：
+  - out-1 審稿 4 處：Sabri Brothers 刪「史上最偉大的蘇非 qawwali 歌手之一」；Satyajit Ray「影史最偉大、最具影響力之一」改「重要」、刪「在病床上」；T.P. Orchestre Poly-Rythmo「最重要的廠牌」改「重要廠牌」；Tenor Saw「最有影響力之一」改「具影響力」。寫作層不寫 Sylvia Tella（聲音只剩資料庫標籤）。
+  - 保留：Sabri Brothers 1975 年卡內基廳演出「被廣泛視為 qawwali 走向西方的起點」；Sister Nancy「常被稱為第一位女性 dancehall DJ」；Selda 政治入獄一句（背景）；Staff Benda Bilili 成員小兒麻痺一句（交代團體背景）；Herb Alpert 談 Sérgio Mendes、St. Vincent 與 tUnE-yArDs 之於 Selda（具名音樂人）。T.P. Orchestre Poly-Rythmo 與 d-080 的 Orchestre Poly-Rythmo de Cotonou 是同一團的兩張卡，內容有部分重疊，可接受。
+  - out-2 審稿 5 處：The Esso Trinidad Steel Band「最早出現的一批之一」改「早期」；The Royals 刪「偉大的雷鬼專輯之一」（單一樂評）；Thomas Mapfumo 刪關押與批評新政府（政治只留旅美一句）；Tiken Jah Fakoly「最受歡迎、最受敬重之一」改「受敬重」；Tito Puente & La Lupe 刪 La Lupe「最受歡迎之一」。另撤下 The Force of Music（聲音句只剩曲名題材）、Tiao Phün Muang（身分查無，正文只剩宮廷音樂背景）；寫作層不寫 The Overnight Players、The Well Pack Band（只有發行資料）。
+  - 保留：Totó la Momposina 2026 年 5 月過世（Forbes 與 Vanguardia 兩源）；Toumani Diabaté 2024 年過世；Brian Eno 談 Tony Allen、Keith Richards 談 The Itals、Van Dyke Parks 談 Esso（具名音樂人）；The Rootsman vs Muslimgauze 的以巴題材一句（創作題材）。
+- 身分：預抓維基作廢——Selda（人名消歧頁）、Sérgio Mendes 與 Siti Nurhaliza（專輯條目）、The Royals（電視劇）。Tappa Zukie 與 Tapper Zukie 是同一人的兩張卡，分寫不同時期。
+- 卡池年份存疑：Selda 首張 1975／1976、Tenor Saw《Fever》1985／1986、The Disciples《Infinite Density of Dub》1996／1997／1999、Sussan Deyhim《Madman of God》1996／2000。
+- 待本機（上線簡介）：Sabri Brothers「1975 年首批登上卡內基廳的亞洲藝人」站不住（Ravi Shankar 1957 年已在卡內基廳演出）、「1989 年赴英巡演錄下母帶」查無；Tomatito「陪伴 Camarón 最後十八年」各源年數不一，建議改「多年」；The Silvertones「半數曲目改唱美國流行與靈魂樂」未核實；Super Cat、T.P. Orchestre Poly-Rythmo、Tappa Zukie 另有 6 條（見 ARTIST-PUB-ISSUES）。
+
+## ar-d-082（2026-10-11）
+
+- 37 位上架（36 full、1 thin：အင်းလေး မြင့်မောင်）。3 位不寫：Tradition、Victor Romero Evans、Ρίτα Αμπατζή（聲音句只剩曲風或曲種標籤）。
+- 世界音樂段至此寫完，下一批進入電子段。
+- 審稿修 17 處：
+  - out-1 審稿 9 處：Ustad Mohammad Omar 刪「第一位在美國主要大學授課的阿富汗音樂家」（兩源措辭不一）；Zainal Abidin 的 Headwind「最受歡迎之一」改「當紅」；Zeki Müren 刪「土耳其第一張金唱片」；Zouk Machine「商業上最成功」改「商業上的代表」；Αντώνης Νταλγκάς 刪「那段錄音年代最重要的歌手」；Βίκυ Μοσχολιού「最早之一」改「早期」、「最好的詮釋者之一」改「重要」；Γιάννης Μαρκόπουλος「最重要之一」改「重要」；Μαρκόπουλος & Ξυλούρης 刪 Charles-Cros 表彰（單源）。另撤下 Tradition、Victor Romero Evans（聲音句只剩曲風標籤）。
+  - 保留：Wayne Smith〈Under Mi Sleng Teng〉「被視為雷鬼數位時代的起點」（與 d-080 Prince Jammy 一致）；Willie Colón 2026 年過世；紐澤西名人堂評 Wyclef Jean（官方）；Manos Hatzidakis 談 Βίκυ Μοσχολιού、Giorgos Dalaras 談 Καλδάρας、Daud Khan Sadozai 談 Ustad Mohammad Omar（具名音樂人）；Ξυλούρης 軍政府時期「抵抗的旗幟」一句（背景）。
+  - out-2 審稿 8 處：Θάνος Μικρούτσικος、Νίκος Μαμαγκάκης、三橋美智也 三處「最重要之一」改「重要」或刪；Μαρίκα Παπαγκίκα「最早一批之一」改「早期」；Ялла「蘇聯最紅之一」改「當紅」；อังคนางค์ คุณไชย「最早之一」改「早期」；အင်းလေး မြင့်မောင် 刪「二十世紀最出色之一」（只見搜尋摘要）；សូ សាវឿន 刪 2025 年回顧輯（新近事實未見兩源）。另撤下 Ρίτα Αμπατζή（聲音句只剩曲種名）。
+  - 保留：อังคนางค์ คุณไชย 這次有 Thai PBS 與樂評兩個獨立於 EM Records 文案的來源，與 d-076 不寫的 Angkanang Kunchai With Ubon-Pattana Band 為不同卡鍵，予以上線；Μάρκος Βαμβακάρης 第一批唱片 1932 年；Θάνος Μικρούτσικος 文化部長一句與 Νίκος Ξυλούρης 軍政府時期一句（背景）；Μίκης Θεοδωράκης 談 Βαμβακάρης、추다혜 得獎感言（具名音樂人）。
+- 身分：預抓維基作廢——Tradition（普通名詞）、Winston Edwards & Blackbeard（海盜，Blackbeard 實為 Dennis Bovell）。Γιώργος Μητσάκης 這張卡唱片掛 Various，正文照他擔任指揮與編曲的角色寫。
+- 卡池年份存疑：Ρίτα Αμπατζή 專輯 2013／2014；《Dub Conference》1979／1980。
+- 待本機（上線簡介）：Waldjinah〈Walang Kekek〉走紅年份應屬另一首；Zouk Machine「蟬聯九週」「銷量逾百萬」「1989 年 10 月 Ariola」；Απόστολος Καλδάρας「五萬張、希臘第一張金唱片」查無；Μαρκόπουλος & Ξυλούρης「1976 年國際民間音樂首獎、頒了兩次」查無；Γιώργος Νταλάρας「超過五十萬張」；Μαρίκα Παπαγκίκα「第一家 café-aman」「只有三件樂器」；Μάρκος Βαμβακάρης「1934 年」應為 1932；Ρόζα Εσκενάζυ 生年與出道唱片公司、「一晚 200 德拉克馬」；សូ សាវឿន「1962 年發第一張唱片」單源、外號英文兩說。
+
+## ar-d-083（2026-10-11）
+
+- 36 位上架（28 full、8 thin：:wumpscut:、2562、Amnesia Scanner、Andrés、Arms and Sleepers、ASTRO、Barker、Baths）。4 位不寫：AKIO / OKIHIDE、Astral Engineering、Avrocar（聲音格查無）、Andrei Zueff（電子段要求具體手法，只剩「輕鬆聆聽取向」標籤與編曲掛名）。
+- 電子段從這一批開始。新定的形狀：電子段的聲音句必須點名具體手法（器材、取樣來源、錄音方式），「ambient／chill-out」這類曲風標籤不算。
+- 審稿修 11 處：
+  - out-1 審稿 5 處：Ado 刪〈うっせぇわ〉串流次數與「最年輕達成紀錄」（在世者串流數字不寫，只留流行語大賞）；Afrika Bambaataa「最早之一」改「早期」、「史上最具影響力之一」改「極具影響力」；Akira Yamaoka「最早之一」改「早期」。另撤下 Andrei Zueff（電子段要求具體手法，這篇只剩「輕鬆聆聽取向」標籤與編曲掛名）；寫作層不寫 AKIO / OKIHIDE（聲音與地位兩格查無）。
+  - 保留：Afrika Bambaataa 2026 年過世（只寫年份，不寫死因與指控）；Andreas Vollenweider「新設類別第一位得主」（事實）；Goldie 談 Alex Reece（具名音樂人）；Anohni《Hopelessness》的政治題材（專輯主題）。
+  - out-2 審稿 6 處：Argo「最早期…之一」改「早期」；Armando「最早看出 TB-303 潛力…之一」改「早期」；Aube「最重要的 noise 音樂人之一」改「重要」；Aventura「最有影響力」改「具影響力」、刪「這個曲風最大的明星」；Banco de Gaia 刪西藏支持團體與中國鐵路計畫一句（政治），只留蒸汽火車取樣與命名由來；Arms and Sleepers 刪「父親死於那場戰爭」（死因／家庭傷痛）。寫作層不寫 Avrocar、Astral Engineering（聲音格查無）。
+  - 保留：Ariel Kalma 2025 年過世（家屬悼念頁＋RVNG 悼文兩源，只寫年份）；Aril Brikha 的 DJ 轉速軼事（具體、非最高級）。
+- 卡池年份存疑：Avrocar 1999／2000。
+- 待本機（上線簡介）：Afrika Bambaataa〈Planet Rock〉「史上第一張金唱片 12 吋」與「Kraftwerk 成員列名詞曲」未核實；Alex Reece「jazzstep 定型之作」應改 two-step；Anthony "Shake" Shakir 的 SP-12 型號查無、Puzzlebox 為合辦；Aril Brikha「以 Art of Vengeance EP 出道」不對；Aube《Spindrift》「名下最早」不對（1991 年已有《Hydrophobia》）；Aventura 成團年份 1993／1994；另有 A Tribe Called Red、Andreas Vollenweider 兩條（見 ARTIST-PUB-ISSUES）。
+
+## 第八輪收尾（ar-d-064～083，2026-10-11）
+
+- 二十批全數上線：747 位（643 full、104 thin），不寫 52 位，審稿修 204 處（含 d-077 回補 1 處）。
+- 範圍：民謠、流行、世界音樂三段寫完；電子段從 d-083 開始。剩 35 批（約 1,331 個卡鍵）未上線。
+- 本輪新定或重申的形狀：
+  - thin 底線＝國籍身分＋一句具體聲音或方法；只有曲風標籤、掛名、陣容、曲目名都不算，一律不寫。
+  - 全部事實只來自維基家族或單一來源 → 不寫。
+  - 電子段聲音句要點名具體手法。
+  - 2025–26 年新事實（過世、新作）要兩個獨立來源，只寫年份，不寫死因。
+  - 在世者不寫串流數字。
+- 待本機：
+  - KV 上線簡介的修正：見 `audits/ARTIST-PUB-ISSUES.md`（本輪各批「待本機」條目）。
+  - 卡池年份存疑清單：Trouble、Kim Jung Mi、Modern Folk Üçlüsü、Stone Angel、Kelly Clarkson《Breakaway》2003／2004、The Shirelles 1960／1961、Пугачёва《Зеркало души》1977／1978、Selda 1975／1976、Tenor Saw《Fever》1985／1986、The Disciples《Infinite Density of Dub》、Sussan Deyhim《Madman of God》、Ρίτα Αμπατζή 2013／2014、《Dub Conference》1979／1980、Avrocar 1999／2000。
+
 ## 新世代爵士＋downtempo 兩線補介紹（ar-d-120～127，2026-10-13）
 
 - 店主 2026-10-13「現在新增專輯也要同時新增藝人介紹」→「補」。兩線上架藝人 327 位，扣已有介紹 18、已排隊 17、別名 1，**290 位補進名冊**（`addedBy` add-20261012-nj／add-20261011-dt，tier D，shard null），nj 136 位切 ar-d-120～123、dt 153 位切 ar-d-124～127。
@@ -980,9 +1298,903 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 審稿合計修 13 處；2025–26 年事實（Nate Smith、Sullivan Fortner 葛萊美，Craig Taborn MacArthur）以 WebSearch 核實。補洞層 WebSearch 每位壓到 2 次以內，八批未觸額度上限。
 - 全程同一工作階段接力，PR #96、#97、#98 已合併；最後兩批（126、127）隨收尾 PR 上線。
 
+## 第九輪二十批接力（ar-d-084～103，2026-10-14 起）
+
+- 範圍：電子段 B 字頭起。開工前合併 origin/main（另一工作階段已上 ar-d-117～127，新世代爵士與 downtempo 兩線）；比對過 ar-d-084～116 的卡鍵與已上線 6,845 位無重疊。沿用第八輪的審稿形狀（電子段聲音句要點名具體手法）。
+
+## ar-d-084（2026-10-14）
+
+- 38 位上架（30 full、8 thin：Bernard Xolotl、Bob Sinclar、Bola、Breakbot、Carbon Based Lifeforms、Casino Versus Japan、Charles Dodge、Christ.）。1 位不寫：Booka Shade（電子段要求具體手法，素材只有曲風轉向與現場聲勢）。
+- 審稿修 10 處：
+  - out-2 審稿 4 處：BT 刪〈Blue Skies〉登上 Billboard 舞曲俱樂部榜首（在世者成績只留「trance 與 IDM 先驅」一處）；Byron Stingily「house 裡最美的嗓音之一」改「極美的嗓音」；Cheb Khaled & Safy Boutella「境外最知名之一」改「具代表性」；Chez N Trent「與 Larry Heard 並列為芝加哥最好的一批」改「常與 Larry Heard 相提並論」。
+  - 保留：Caterina Barbieri 威尼斯雙年展音樂部門藝術總監（2024 年 11 月任命，官方來源）與董事長評語（官方）；Byron Stingily 三度登上舞曲俱樂部榜首（唯一一處成績）；Cecil Leuter〈Versailles〉用「據說」；Chris & Cosey 收進 MoMA 藝術家資料庫。
+  - out-1 審稿 6 處：Benga 刪「〈Night〉dubstep 最成功的跨界曲之一」（在世者一處成績、最高級），改「跨出了 dubstep 圈」；Beverly Glenn-Copeland「McGill 最早的黑人音樂系學生之一」改「早期」；BGM「日本最早的獨立廠牌之一」改「早期」、刪「最搶手的日本 new wave 專輯之一」；Blake Baxter「也許最被低估」改「被低估」；Boo Williams「最多產卻最少被注意之一」改「多產卻少被注意」。另撤下 Booka Shade（電子段要求具體手法，素材只有「synth-pop 轉向俱樂部電子」與現場聲勢）。
+  - 保留：Blind Light 寫成 Anton Fier 主導的錄音名義（維基；MusicBrainz 另列 Laswell、Skopelitis、Dieng、Knox Chandler、Lori Carson 為成員，正文寫「Laswell 等人參與」兩者相容）；Black Box〈Ride on Time〉英國冠軍六週（唯一一處成績）；Bomb the Bass〈Beat Dis〉英國第 2 名；Blake Baxter「比 Derrick May 與 Kevin Saunderson 還早錄音」（Qobuz＋維基）。
+- 身分：預抓維基作廢 3 位——Boo Williams（美式足球員）、Bola（菲律賓影集）、Boymerang 的 Graham Sutton（威爾斯氣象學家）。BGM 是日本團，不是 YMO 的《BGM》。Cecil Leuter 是 Roger Roger 的化名。Brian Eno / Jah Wobble 搜尋 9 次，overCapOk（第二源：補 Eno 名人堂）。
+- 待本機（上線簡介）：Blind Light《The Absence of Time》簡介寫成 Laswell 的計畫（維基寫 Fier 主導，MusicBrainz 列六名成員，建議改「Fier 主導、Laswell 等人參與」）；Cecil Leuter「最早一批玩 Moog、與 Pierre Henry、Wendy Carlos 同輩」查無；Charles Dodge《Speech Songs》年份；Chicane〈Offshore〉「逾 130 張合輯」為不可靠來源；另有 Bernard Fevre、Beverly Glenn-Copeland、Black Box、Blake Baxter、Bob Sinclar、Boymerang 數條（見 ARTIST-PUB-ISSUES）。
+
+## ar-d-085（2026-10-14）
+
+- 36 位上架（26 full、10 thin：Claude Young、Co-Fusion、Craig Kupka、Cristian Vogel、Cut Copy、Dan Curtin、Das Ding、dBridge、Deep Dish、Don Slepian）。4 位不寫：Dada、Den Sei Kwan（素材只有唱片行或經銷商頁）、CJ Bolland、Darkstar（thin 的聲音句只剩廠牌路線或曲風轉向）。
+- 審稿修 12 處：
+  - out-1 審稿 3 處：Dan Curtin 刪週報名（媒體名不進正文），改「當地媒體形容」；Danny Tenaglia「那一年紐約最大牌的 DJ」改「那幾年紐約當紅的 DJ」；Dark Comedy「影響極大」改「都有影響」（單源）。另撤下 CJ Bolland、Darkstar（thin 的聲音句只剩廠牌路線或曲風轉向，電子段要求具體手法）；寫作層不寫 Dada（團本身只有唱片行商品頁）。
+  - 保留：Cut Copy《In Ghost Colours》ARIA 冠軍（唯一一處成績）；Conrad Schnitzler 與 Mayhem 首張 EP 的軼事；Craig Leon 製作 Ramones 與 Suicide 首張；Constance Demby、Conrad Schnitzler 只寫過世年份。
+  - out-2 審稿 9 處：David Behrman「最早一代」改「早期」；David Lynch & Alan R. Splet 刪 Splet「法定失明」（健康）、Lynch「影史最具影響力之一」改「影響深遠」；Deux Filles 267 字超出單卡上限，刪「構想來自一場夢」「日後兩度被重發」；Digital Mystikz「最有名之一」改「具代表性」；Dillinja「定義者之一」改「重要製作人」（同源廠牌文案）；DJ Pierre「第一張 acid house 唱片」改「開端之作」；Don Slepian「唯一每天使用的人」改「每天使用」。寫作層不寫 Den Sei Kwan（只有經銷商再版頁的比喻，地位查無）。
+  - 保留：Lynch 2025 年、Splet 1994 年、DJ Deeon 2023 年過世（只寫年份）；Deee-Lite 百大單曲榜第 4 名、Deep Dish 葛萊美最佳混音（各一處成績）；John Peel 稱 Dave Clarke「techno 男爵」（具名人物）。
+- 身分：預抓維基作廢——Cluster & Eno（歐洲大學聯盟）、Dada（達達主義）、Dan Curtin（澳洲足球員）。Dada 是關西二人組泉陸奥彦與小西健司；Dark Comedy 是 Kenny Larkin 的化名；Das Ding 是荷蘭的 Danny Bosten。Deux Filles 的法國少女身世是杜撰設定，正文照「設定」寫。
+- 卡池年份存疑：Das Ding《H.S.T.A.》重製 2009／2010；Dave Clarke《Archive One》1995／1996。
+- 待本機（上線簡介）：Commix《Call to Mind》「Metalheadz 第二張藝人專輯」排序兩說、2002 年起是三人不是雙人組；Derrick Carter、Dillinja、Dimitri From Paris 各 2 條（見 ARTIST-PUB-ISSUES）。
+
+## ar-d-086（2026-10-14）
+
+- 40 位全數上架（30 full、10 thin：Eat Static、Electroscope、Eluvium、Emerald Web、Emma Louise & Flume、Experimental Audio Research、Floorplan、Foul Play、Freeform、Freescha），沒有不寫的。
+- 審稿修 11 處：
+  - out-2 審稿 7 處：Esplendor Geométrico「最早的獨立案例之一」改「早期」；Fifty Foot Hose「最佳嘗試之一」改「重要嘗試」；Fingers Inc.「最耐久的唱片之一」改「耐聽的經典」；Floorplan「極簡 techno 創始者之一」改「重要人物」（維基單源）；François Bayle「最傑出的作曲家之一」改「重要作曲家」（維基單源）；Fred again.. 刪「史上最年輕得主」（在世者紀錄類），只寫得過 BRIT 年度製作人；Frost「最早成功的拉丁 hip hop 歌曲之一」改「早期」。
+  - 保留：巴塞隆納當代美術館的評語（官方機構）；Tyree Cooper 稱 Fast Eddie 發明 hip house（具名音樂人）；Francis Monkman 2023、Francis Bebey 2001、Frankie Knuckles 2014 年過世（只寫年份）；Satoshi Tomiie 沿用拉丁拼法（漢字名無來源）。
+  - out-1 審稿 4 處：Dopplereffekt 刪封面鎚子與鐮刀一句（政治符號，非音樂）；Ed Rush & Optical「史上最好的 drum and bass 專輯之一」改「經典專輯」；Eddie "Flashin" Fowlkes「Atkins 廠牌第一首大受歡迎」改「早期大受歡迎」；Ernest Hood 刪病名（健康），改「因病不能再彈吉他」，保留改彈 zither 的做法。
+  - 保留：底特律歷史博物館把 Fowlkes 與 Belleville Three 並列（官方機構）；Duke Dumont 英國冠軍、Ellie Goulding Critics' Choice、Empire of the Sun ARIA 七項（各一處成績）；E-Dancer 的聲音句出自 Qobuz 介紹，口氣已收斂；Ernest Hood 1995 年過世。
+- 身分：預抓維基作廢——Electroscope（驗電器）、Floorplan（電路設計）、Foul Play（小說）、Freeform（電視頻道）、Frost（霜）。Edward Ka-Spel 卡池標題「Aa?zhyd」是《AaΔzhyd, China Doll》的亂碼。Frost 是饒舌歌手 Kid Frost，卡池分類 electronic／rock 有誤（留給本機改分類）。
+- 待本機（上線簡介）：E-Dancer《Heavenly》「《Spin》十張最好專輯」只見維基單源；Emerald Web 簡介寫 Stohl 溺水過世（死因不該寫，年份 1989／1990 兩說）；Experimental Audio Research 簡介把 "contributed to Spacemen 3" 誤譯成「Spacemen 3 之外」；Fischerspooner 成軍年 1998／1999／2001 三說；Fred again.. 簡介「每首以說話的那個人命名」過度概括；Frost〈La Raza〉Hot 100 名次 42／48 兩說。
+
+## ar-d-087（2026-10-14）
+
+- 38 位上架（33 full、5 thin：Gold Panda、Gui Boratto、Holy Ghost!、Ikonika、Instra:mental）。2 位不寫：Government Alpha、Interferon（素材只有曲風標籤、廠牌與唱片行文案）。
+- 審稿修 12 處：
+  - out-1 審稿 9 處：Gemini「最神祕、最受敬重之一」改「神祕而受敬重」；Giora Feidman「最年輕單簧管手」改「年輕時」、刪德國大聯邦十字勳章與和解一句（在世者一處成績，且涉政治）；Goldfrapp 補半形空格；Gotan Project「頭一個指標」改「早期指標」；Hallucinogen「最有影響力之一」改「具影響力」；HAT 細野晴臣「最有影響力之一」改「影響深遠」、井上徹兩處改回 Tetsu Inoue（漢字名無來源）。寫作層不寫 Government Alpha（只有 harsh noise 標籤、廠牌與合作名單）。
+  - 保留：Fuck Buttons 倫敦奧運開幕式配樂；Grant Kirkhope 2023 Ivor Novello（唯一一處成績）；Goldfrapp 入圍水星獎；Sven Väth 談 Hardfloor（具名音樂人）；Gemini「在巔峰期從場景消失」（不涉原因）。
+  - out-2 審稿 2 處：Hudson Mohawke「DMC 決賽最年輕的選手」改「15 歲就打進 DMC 決賽」（紀錄類）；Innerzone Orchestra「融合得最連貫的作品之一」改「連貫代表作」。寫作層不寫 Interferon（只有唱片行文案，聲音句只剩曲風標籤）。另 HAT 補刪 Daisyworld 一句，壓回 242 字。
+  - 保留：Holly Herndon 的 STARTS Prize（唯一一處成績）；Pete Tong 談 Hudson Mohawke（具名人物）；Ikonika 依來源不用性別代名詞。
+- 身分：預抓維基作廢——Gemini（Google 語言模型）、HAT（帽子）、Hercules & Love Affair（神話）、Hula（夏威夷舞）、Hybrid（生物學）、Infiniti（日產汽車）、Interferon（干擾素）、Innerzone Orchestra（Steve Roach 的專輯）。Hazard 是 BJ Nilsen（派工詞寫的 Benny Jonsson 有誤）；Instra:mental 成員是 Alex Green 與 Damon Kirkham（派工詞有誤）；Hirofumi Goto 即後來的 Rondenion。
+- 卡池年份存疑：Hercules & Love Affair 2007／2008。
+- 待本機（上線簡介）：Function「2004 年加入 Sandwell District」年份不一；Gigi Masin《Wind》年份不一、被取樣的是 1989 年〈Clouds〉；Giora Feidman「二十多年」應為「將近二十年」；Grant Kirkhope「最早採用垂直重混」無來源；Hallucinogen「全球約八萬五千張」只見唱片行；Heldon「口白找了 Deleuze」只見於另一張單曲；I-F「首張專輯」待核。
+
+## ar-d-088（2026-10-14）
+
+- 40 位全數上架（34 full、6 thin：Jade、John Wiese、Kiasmos、Kid Loco、Konstruktivists、Lapalux）。
+- 審稿修 11 處：
+  - out-2 審稿 3 處：Kavinsky 刪法國總統悼詞（政治人物，非音樂），只留 2026 年過世（主線以 WebSearch 核實：Paris Match、RTBF、Electronic Groove 皆報導 2026 年 7 月過世，死因與調查不寫）；Kemistry & Storm 補半形空格；Kylie Minogue 刪「美國最大的商業成功」（在世者只留葛萊美一處）。
+  - 保留：Kemistry 1999、Kagami 2010、Klaus Wiese 2009、The Spaceape 2014 年過世（只寫年份）；Brian Eno 談 Ladytron、Thom Yorke 談 Laika（具名音樂人）；Kyle Dixon & Michael Stein 艾美獎（唯一一處成績）。
+  - out-1 審稿 8 處：Jam & Spoon「德國最大的俱樂部熱門曲之一」改「當紅」；Jamie Principle 刪署名爭議一句（「偷走他的歌」）；Joe Smooth 刪曼德拉獲釋一句（政治背景）；Joker「最為人知」改「知名度高」；Jumprava 刪「蘇聯治下」（政治背景只留拉脫維亞文化中心那一句）、「最受歡迎之一」改「極受歡迎」；Juno Reactor「最常與 Goa trance 連在一起」改「常」；K. Leimer 刪「比 K Records 與 Sub Pop 都早」（比較性的最早宣稱）。
+  - 保留：Jamie Principle〈Your Love〉2026 年列入美國國會圖書館國家錄音登錄（國會圖書館部落格＋RA 兩源）；K. Hand「The First Lady of Detroit」是底特律市議會頒證稱號，照官方表彰寫；Mark Spoon 2006、Joanna Brouk 2017、Jon Hassell 2021、K. Hand 2021 年過世。
+- 身分：預抓維基作廢——K2（喀喇崑崙山峰，改用德文維基的日本噪音計畫）、Kyle Dixon（美式足球員）、Kyle Hall（北卡州議員）、Laika（太空犬）。Jade 是芝加哥 R&B 女子團，卡池分類 electronic 有誤（留給本機）。Kode9 & The Spaceape 搜尋 9 次，overCapOk（重開同一頁核對引句，比照齊豫前例）。
+- 待本機（上線簡介）：Jamie Principle「唯一個人專輯」「最早的 house 錄音」等未取得兩源；Joe Smooth 藝名由來與器材清單查無；John Carpenter & Alan Howarth 的 Tangerine Dream／Debussy 等說法查無；K2「隔十年才有下一張」不對（1981–1985 年約 20 卷卡帶）；Klaus Wiese「參與 Popol Vuh《Hosianna Mantra》」應改為封面署名 tamboura、本人自稱客人；Kevin Saunderson《Faces & Phases》是彙編；Kyle Dixon & Michael Stein「首次在團體之外合作」查無。
+
+## ar-d-089（2026-10-14）
+
+- 38 位上架（34 full、4 thin：Lipps Inc.、Logic System、Lone、Martyn）。2 位不寫：Masaaki Kikuchi、Max Brennan（事實全來自單一來源）。
+- 審稿修 9 處：
+  - out-2 審稿 6 處：Macintosh Plus「最常被認出的 vaporwave 圖像」改「代表性」；Mad Professor「英國最大的黑人自營錄音室園區」改「規模可觀」；Man With No Name「最具定義性之一」改「具代表性」；Mantronix「最有影響力之一」改「極具影響力」；Marcel Dettmann「頂尖之一」改「代表性」；Masters at Work「最具影響力之一」改「極具影響力的組合」。另撤下 Masaaki Kikuchi（聲音句只有日文維基單源，且該頁無出典）、Max Brennan（只有一家轉載站的同一份傳記）——事實全來自單一來源者不寫。
+  - 保留：Marc Barreca 本業法官一句；Maurizio Bianchi 退出音樂的原因（宗教一句，非爭議）；Mala 談 sound system 文化；Martin Garrix 只留〈Animals〉突破作，不寫 DJ 排名。
+  - out-1 審稿 3 處：Lejaren Hiller「第一件有分量的電腦作曲作品」改「早期有分量的」；London Elektricity「歷史最久的廠牌之一」改「歷史悠久」；Loraine James 刪兩家媒體名（媒體名不進正文），改「兩家音樂媒體選為年度專輯」。
+  - 保留：Laurie Spiegel 入選美國國家女性名人堂（官方）；Louis and Bebe Barron 260 字（雙卡放寬）、「第一部全電子電影配樂」為廣泛共識；Joel Chadabe 談 Bebe Barron（具名音樂人）；Legowelt 以諾瑞加為題的概念專輯（專輯主題）；Les Rythmes Digitales 的聲音句偏標籤，但以「包裝成法國電子團」的做法補足，予以保留。
+- 身分：預抓維基作廢——Macintosh Plus（蘋果電腦）、Man With No Name（Clint Eastwood 角色）、Marta（足球員）、Max Brennan（澳洲物理學家）、Maurizio（義大利人名消歧頁）。Lil Louis 與 Lil' Louis & The World 是同一人兩卡，分寫不同面向。Marc Barreca 與西雅圖聯邦破產法官是同一人。Martyn 搜尋 9 次，overCapOk（第二源）。
+- 待本機（上線簡介）：Lil' Louis & The World〈Jazzmen〉疑為曲名誤植、〈Club Lonely〉與「樂團化取代鼓機」查無；Lil Louis《French Kiss》在 MusicBrainz 是單曲；Louis and Bebe Barron「Planet Records」應為 Small Planet Records；Mantronix 年度榜與簽約經過查無；Man With No Name 雜誌榜 1995 與專輯 1996；Marcel Dettmann 的 Hard Wax 年份；Mad Professor 兩條；Michele Mercure、Mirwais 各一條（屬 ar-d-090，見 ARTIST-PUB-ISSUES）。
+
+## ar-d-090（2026-10-14）
+
+- 32 位上架（25 full、7 thin：Mbongwana Star、Meitei、Metgumbnerbone、Metrotone、Mike & Rich、N.Y. House'n Authority、Nerve Net Noise）。8 位不寫：Mfon、Montage、Mushroom Now!、Nina-Noho、Okihide（只有 Discogs 單源或標籤）、Mind Design（只有脈絡描述）、Michael Garrison（thin 沒有具體手法）、Normal Brain（事實出自同一份重發文案，人物連結只是同名推定）。
+- 本批不寫的比例偏高：電子段 M 字頭有一批只在 Discogs 與唱片行留下痕跡的冷門自發行計畫，照「全部來自單一來源就不寫」處理。
+- 審稿修 7 處：
+  - out-2 審稿 6 處：Mort Garson「最早用 Moog 之一」改「早期」；Morton Subotnick「第一部唱片公司委製的電子作品」改「開端」；MSBR「最受敬重之一」改「備受敬重」；Nicolas Jaar 刪媒體名；Oppenheimer Analysis「Minimal Wave 的第一張發行」改為「由 Minimal Wave 發行」（兩源不獨立）；Orgy「Korn 廠牌的第一組藝人」改「旗下藝人」。另撤下 Normal Brain（聲音與身分事實都出自同一份重發文案，與聲音藝術家藤本由紀夫是同一人只是同名推定）。寫作層不寫 Mushroom Now!、Nina-Noho、Okihide（只有 Discogs 標籤與發行說明）。
+  - out-1 審稿 1 處：Metro Area 刪媒體名。另撤下 Michael Garrison（thin 的手法句只有「追隨歐洲先行者、自創廠牌」，沒有具體手法）。寫作層不寫 Mfon、Montage（只有 Discogs 單源）、Mind Design（只有脈絡描述）。
+  - 保留：Mika Vainio 2017、Mort Garson 2008、MSBR 的 Tano Kōji 2005、Philippe Zdar 2019 年過世（只寫年份）；Alva Noto 談 Mika Vainio（具名音樂人）；龐畢度中心談 Mirwais（官方機構）；Mono/Poly 參與製作的 Thundercat 專輯葛萊美（他人專輯的製作署名）。
+- 身分：Michael Garrison 與 MusicBrainz 上的同名美國迪斯可歌手不同；Mfon 不是維基的奈及利亞人名消歧頁；Nerve Net Noise 與 Brian Eno《Nerve Net》、美國同名二人組不同；Okihide 搜尋時誤對到 Yoshihiro Sawasaki，未收。Mushroom Now!、Nerve Net Noise 各搜尋 9 次，overCapOk（多出的一次沒有新事實，比照齊豫前例）。
+- 待本機（上線簡介）：Michele Mercure 名字拼法與「兩捲卡帶」；Mirwais「隔年為 Madonna 做《Music》」不對（同年）；Morton Subotnick《The Wild Bull》的工作室位置；Mr. Scruff DJ 起算年 1992／1994；Octave One〈I Believe〉與 430 West 年份、「較內斂」查無；Overmono 的 Tessela 做的是 breakbeat 不是 drum and bass。
+
+## ar-d-091（2026-10-14）
+
+- 37 位上架（30 full、7 thin：Pain Jerk、Paul Nagle、Paul Oakenfold、Pendulum、Pink Siifu、Rival Consoles、Robert Turman）。3 位不寫：Pacific 231（只有曲風標籤）、Palomatic（只有一篇店家文案）、Quadra（手法只屬於他其他名義）。
+- 審稿修 12 處：
+  - out-1 審稿 7 處：Pauline Anna Strom 276 字超出單卡上限，刪「天生全盲」與讀不到說明書一句（比照 d-085 Splet 刪「法定失明」，健康與身體狀況不寫）、壓縮廠牌找上她的過程，回到 250 內；Palais Schaumburg「歐洲最早以取樣機為主要樂器之一」改「早期」；Paul Horn 的 Maharishi 譯名改台灣通用的「瑪赫西」；Peshay「影響最深」改「影響深遠」；Pete Namlook & Dr. Atmo「FAX 最早的 ambient 專輯之一」改「早期」。寫作層不寫 Pacific 231（只有曲風標籤）、Palomatic（只有一篇店家文案）。
+  - 保留：P-MODEL 的米津玄師受影響用「據稱」、今敏談平沢進（具名人物）；Paul Horn 2014、Paul Johnson 2021、Pauline Anna Strom 2020、Pete Namlook 2012 年過世；Daft Punk〈Teachers〉點名 Parris Mitchell、Paul Johnson；CTM 音樂節檔案談 Palais Schaumburg（機構）。
+  - out-2 審稿 5 處：Pinch「最早把這種聲音帶進 Bristol 之一」改「早期」；R. Carlos Nakai 刪車禍傷了嘴形一句（傷病）、「原住民音樂僅有的兩張金唱片」改為只寫《Canyon Trilogy》獲金唱片（在世者一處成績、刪「僅有」）；Reload 刪《76:14》「指標之作」（維基單源，且是另一名義）；Robert Owens「史上最偉大之一」改「經典」。另撤下 Quadra（手法句只寫到他其他名義 Kaito、Tread，Quadra 名義本身沒有手法）。
+  - 保留：RAM 的〈Fèy〉遭軍政府禁唱一句（唯一一句政治背景，與歌曲直接相關）；Pink Siifu《NEGRO》的主題（專輯主題）；Rico 2007 MBE 與 2015 年過世；Robert Miles 2017 年過世與排行冠軍（已故者不受在世者成績限制）；Bill Leeb 談 Portion Control（具名音樂人）。
+- 身分：預抓維基作廢——Paul Nagle（愛爾蘭拉力賽副駕駛）、Palais Schaumburg（波昂總理官邸）、RAM（荷蘭 trance DJ）。Photon Inc. 是 DJ Pierre 的化名（MusicBrainz、Discogs 一致）；Quadra 是 Hiroshi Watanabe（非同名攝影師）。P-MODEL 搜尋 9 次，overCapOk（第二源）。
+- 待本機（上線簡介）：Peace Orchestra 發行月份；Pépé Bradock「自營 Kif」與聯名副署查無；Peshay 1995 年空白的原因兩說，建議改中性；Pete Namlook & Mixmaster Morris「流通最廣」查無；R. Carlos Nakai 漏 RIAA 白金；R.N.A. Organism 卡帶寄送經過與 Wax Poetics／NTS 不合；Regis「第一張長篇」查無；Rico 出生地兩說；Robert Miles 全英音樂獎與五百萬張只見維基。
+
+## ar-d-092（2026-10-14）
+
+- 36 位上架（29 full、7 thin：Roberto Musci / Giovanni Venosta、SBTRKT、Sean Deason、Shpongle、Sia、Skee Mask、Skyray）。4 位不寫：SAB、Salaried Man Club、Shiho Yabuki、Soundsmith（事實只有單一來源或同源文案）。
+- 審稿修 9 處：
+  - out-1 審稿 4 處：Roly Porter「第一張成熟的 dubstep 專輯」改「早期成熟的」；Roni Size / Reprazent 刪「前所未有的主流位置」（在世者只留水星獎一處）；S'Express「英國最早推介之一」改「早期」、「最早靠取樣走紅」「最早的商業成功」改「早期」。另撤下 SAB（聲音與身世只有廠牌與店家同源文案）。寫作層不寫 Salaried Man Club（只有單一來源的 industrial 標籤）。
+  - 保留：Sampha《Process》以照顧與失去母親為主題（專輯主題，不寫病況）；Silent Servant 2024 年過世（兩源）；Flying Lotus 談 Samiyam（具名音樂人）；Scanner 停止掃描創作的原因一句。
+  - out-2 審稿 5 處：Shed 刪媒體名（年度專輯一處保留、不具名）；Sly & Robbie「最具影響力之一」改「極具影響力」；Sneaker Pimps「最容易入耳之一」改「容易入耳」；Sophie 刪享年（只寫過世年份）；Source Direct「最有才華之一」改「出色」。寫作層不寫 Shiho Yabuki（只有 NTS 與廠牌同源文案）、Soundsmith（聲音與地位皆無，只有 MusicBrainz）。
+  - 保留：Sly Dunbar 2026 年過世（主線以 WebSearch 核實：Variety、DJ Mag、BrooklynVegan 均報導 2026 年 1 月 26 日過世，正文只寫年份）、Robbie Shakespeare 2021、Shadow 2018、Silent Servant 2024、Sophie 2021；Silent Phase 照研究層更正寫成 Stacey Pullen 的化名（MusicBrainz 關係與維基化名清單）；Paul Mac 談 Severed Heads（具名音樂人）；Sia Billboard 200 冠軍（唯一一處成績）。
+- 身分：主線特注寫 Silent Phase 是 Kirk Degiorgio，研究層以 MusicBrainz 關係與維基化名清單更正為 Stacey Pullen（ar-d-093 另有 Pullen 本人卡，分寫）。Shadow 是千里達的 Mighty Shadow（預抓維基抓到物理詞條）；Space 是法國 Marouani 的團（預抓維基是「空間」）；Soundsmith 網路上多為紐約唱頭廠商，已排除。Sly & Robbie 搜尋 9 次，overCapOk（第二源）。
+- 待本機（上線簡介）：Royal House 取樣來源與 Todd Terry 自述不合；Ruth White〈Litanies of Satan〉長度 6:50／6:53；SAB「2020 年再發」與「一人包辦器樂」不對；Sainkho Namtchylak《Stepmother City》2000／2001；Shadow「SR Records／鼓機」「從不加 Mighty」查無。
+
+## ar-d-093（2026-10-14）
+
+- 34 位上架（31 full、3 thin：Sympathy Nervous、Terrence Parker、The Hafler Trio）。5 位不寫：Strange Garden、Taichi（只有資料庫風格分類）、Temdendam Suay（聲音查無）、The Beloved（事實全出自維基）、The Martian（只有曲名意象與發行規格）。
+- 審稿修 12 處：
+  - out-1 審稿 6 處：Speedy J「荷比盧最早的 techno 製作人之一」改「早期」；Stardust「French touch 最好的範例之一」改「代表範例」；Susanne Sundfør 刪「挪威音樂圈最核心的人物之一」（在世者只留 Spellemannprisen 一處）；Sven Väth 刪「歐洲最知名的 techno DJ 之一」；Takkyu Ishino「日本最大的室內 rave」改「大型」；Technotronic「new beat 最成功之一」改「代表人物」。寫作層不寫 Strange Garden、Taichi（只有資料庫風格分類）。
+  - 保留：Stardust 全球兩百萬張（唯一一處成績）；Sterling Void 經 Pet Shop Boys 翻唱登英國第 5 名；DJ Deeon 談 Steve Poindexter（具名音樂人）；Technotronic Hot 100 第 2 名（唯一一處）；Sven Väth 雙親從東德到西邊一句（背景，不評價）。
+  - out-2 審稿 5 處：Tetsu Inoue 刪「隱居還是已經過世，沒有人能證實」與追問下落的細節（生死臆測），改寫為「從公眾視野淡出，朋友與廠牌也聯絡不上他」；The Advent「活躍最久、產量最多之一」改「活躍甚久、產量豐富」；The Dust Brothers「最搶手之一」改「搶手」；The Field「並列當年評價最高」改「名列前茅」；The Other People Place 刪「電子音樂最重要的唱片之一」。寫作層不寫 Temdendam Suay（聲音查無）、The Beloved（事實全出自維基）、The Martian（只有曲名意象與發行規格）。
+  - 保留：The Bug《London Zoo》2008 年度榜第一（官方網頁＋維基，媒體不具名）；Ten City 舞曲榜冠軍（唯一一處）；James Stinson 2002 年過世；The Gaslamp Killer 只寫音樂。
+  -   另 Tetsu Inoue 刪減後 171 字低於 full 下限，補一句與細野晴臣、Atom Heart 合組 HAT（ar-d-087 HAT 卡已核實），回到 201 字。
+- 身分：Stacey Pullen 本人卡與 ar-d-092 的 Silent Phase 分寫；Takayuki Shiraishi 即 ar-d-084 BGM 的核心白石隆之；Ten City 與 ar-d-084 Byron Stingily 個人卡分寫；The Martian 與 MusicBrainz 另一位 The Martian（Marlon Grant）不同。System 7 搜尋 10 次、Temdendam Suay 搜尋 10 次，overCapOk（前者補第二源，後者只確認身分且最終不寫）——超兩次的放行限這兩例，不成先例。
+- 待本機（上線簡介）：Sympathy Nervous 成員漢字「千崎達也」與來源不合；T.Power 簽約廠牌時序；Technotronic 簡介寫了歌聲掛名爭議（建議刪）；The Beloved「最早…之一」過強；The Infinity Project「1995 年首張專輯」與 Qobuz 不合；The Other People Place 的年度榜與英國黑膠榜名次查無。
+
+## ar-d-094（2026-10-14）
+
+- 35 位上架（24 full、11 thin：The Third Eye Foundation、Thomas Newman、Toshimaru Nakamura、Turquoise Days、Twisted Science、Ura Ura、Urban Tribe、we·be·echo、World Class Wreckin' Cru、X-Press 2、Yagya）。5 位不寫：Trio Rakant（聲音查無）、Troye Sivan（只有 MV 主題與製作人）、Total Eclipse（只有曲風標籤）、Vex'd（thin 沒有具體手法）、Yoshihiro Sawasaki（只有無出典的日文維基）。
+- 電子段至此寫完；ar-d-095 前段是希臘、蘇聯與日文名的電子尾段，後段進入嘻哈段。
+- 審稿修 9 處：
+  - out-1 審稿 4 處：The Shamen 刪〈Ebeneezer Goode〉歌名諧音鼓吹搖頭丸的爭議一句（毒品）；Todd Terry「最受尊敬」改「備受尊敬」；Toshimaru Nakamura 刪機構名與「開創」（第一類宣稱），改「他在九〇年代中期發展出來的」；Transllusion「最具影響力之一」改「極具影響力」。寫作層不寫 Trio Rakant（聲音查無）、Troye Sivan（只有 MV 主題與製作人）、Total Eclipse（只有曲風標籤）。
+  - 保留：The Sabres of Paradise 2025 年重組演出（banbantonton 訪談＋Line Noise 兩源）、Andrew Weatherall 2020、Will Sinnott 1991、Tod Dockstader 2015、Tony Scott 2007、James Stinson 2002 年過世；Trent Reznor 談 Gary Numan（具名音樂人）；Tubeway Army 英國兩榜冠軍（唯一一處）。
+  - out-2 審稿 5 處：Visage「最典型的宣言」改「典型宣言」；Web「日本最早的獨立 techno 廠牌之一」改「早期」；Yanni「最成功的募款節目之一」改「成功的」；Yoshinori Sunahara「最重要的專輯」改「重要專輯」；Yothu Yindi 刪「原住民土地權時代的配樂」（政治背景只留〈Treaty〉起因一句）。另撤下 Vex'd（thin 的聲音句只有「工業感、力道強悍」，沒有具體手法；兩人中的 Roly Porter 已在 ar-d-092 寫過 Vex'd 的經歷）、Yoshihiro Sawasaki（只有無出典的日文維基與活動介紹）。
+  - 保留：Wamdue Project 英國冠軍、Visage 英國第 8 名、X-Press 2 的 Ivor Novello（各一處）；Anohni 談 Yazoo（具名音樂人）；Mandawuy Yunupingu 2013 年過世；Yothu Yindi 2012 年入選 ARIA 名人堂（官方）。
+- 身分：Ura Ura 與 Web 是同一人（杉本卓也），分寫；Transllusion 與 ar-d-093 The Other People Place 是同一人（James Stinson），分寫；預抓維基作廢——Total Eclipse（舊金山金屬團）、Web（Knuth 的程式系統）、Woo（雞尾酒）。主線特注寫的 Wamdue Project 成員 Roy Davis Jr／Gabriel Brann、Web 的 Fatcat 均查無來源，不收。
+- 待本機（上線簡介）：TOKYO No.1 SOUL SET「首張錄音室作」與日文維基不合；The Sabres of Paradise 報紙千大專輯查無；Vainqueur「Basic Channel 周邊最早的名字之一」查無；Yanni「替 PBS 募得一千三百萬美元」只見 last.fm 摘要，建議刪。
+
+## ar-d-095（2026-10-14）
+
+- 37 位上架（25 full、12 thin：Yutaka Hirose、伊藤詳、森下登喜彦、矢吹紫帆、越智義朗、Ab-Soul、Action Bronson、Ari Lennox、B.G.、Bahamadia、Billy Ocean、Black Milk）。2 位不寫：吉川洋一郎、永田一直（facts 只有身分、合作對象與廠牌事務，沒有聲音或具體手法）。
+- 前段是電子段尾（日文、希臘、蘇聯名），後段進入嘻哈段（3rd Bass～Black Moon）。
+- 搜尋超額：Yutaka Hirose 補洞多查 4 次（找第二源與 Misawa Home 委託細節），放行但**記為例外、不作先例**——同形狀下次超過 2 次就停查改 thin。
+- 審稿修 15 處：
+  - out-1 審稿 6 處：Λένα Πλάτωνος「最早主要仰賴合成器之一」改「較早以合成器為主力」；Чернавский/Матецкий Проджект「八〇年代蘇聯最重要的唱片之一」改「重要唱片」，並補一句補洞稿兩源的聲音評語（讓晚期蘇聯搖滾輕快好玩，評論者匿名）；北村昌士＋PHONOGENIX 刪「據說是首任總編輯」（創刊年與職稱兩源衝突）；ハナタラシ 刪綽號由來的病名、「最早的形態」改「早期」。
+  - out-2 審稿 9 處：高田みどり 刪在世者播放次數；3rd Bass「最早成功的跨種族嘻哈團體之一」改「早期」；Action Bronson 刪腿傷；Ari Lennox「Dreamville 第一位女藝人」改「後來簽進 Dreamville」；AZ「最被低估之一」改「被低估」；Bahamadia「最早讓費城饒舌獲國際認可之一」改「早期 MC」；Beenzino 刪下載次數（在世者第二項成績）；Big Pun「第一張 RIAA 白金的拉丁裔獨唱嘻哈專輯」改「早期拿下白金」。
+  - 保留：Biz Markie 1991 年取樣官司一句（中性背景，交代取樣授權制度與製作手法的轉變，本批裁定放行；其他人的官司仍不寫）；Outkast 2025 年入選搖滾名人堂（官方，補洞稿兩源）；Betty Wright 2020、Big Pun 2000、Biz Markie 2021、芦川聡 1983 年過世；Arrested Development 葛萊美兩座（同一屆，算一處）、Beenzino 韓國大眾音樂獎、Billy Ocean 葛萊美（各一處）；Chernavsky 2025 年過世未寫入。
+- 寫作層疑點處理：Чернавский/Матецкий 與北村昌士缺電子手法，前者補評語、後者以 YBO² 力量三重奏編制為具體路數，照收；3rd Bass 聲音句只到製作陣容，照收（full 其他材料足）。
+- 待本機（上線簡介）：Mescherin 合奏團成立年 1956／1957 不一；プラスチックス 出道年不一；北村昌士《FOOL'S MATE》創刊與就任年兩源不一；伊藤詳 生平敘述來源互相矛盾，建議刪；3rd Bass 榜位與金唱片敘述待核；Above the Law「饒舌榜冠軍」查無；AZ 銷量數字待核；Bahamadia〈Funk Vibe〉／《Kollage》製作人與日期不一。
+
+## ar-d-096（2026-10-14）
+
+- 39 位上架（34 full、5 thin：Brian McKnight、DaBaby、Damu the Fudgemunk、DEAN、DJ Cam）。1 位不寫：Christopher Williams（素材只有維基系與部落格單源，出生年與出生地互相矛盾）。
+- 嘻哈段 B 至 D 字頭（Black Sheep～Do or Die）；R&B 卡（Brian McKnight、Cassie、Color Me Badd、DEAN）照 R&B 寫，Damian Marley 照雷鬼／dancehall 寫。
+- 搜尋超額：Control Machete 多 1 次（無關的榜單頁，無新事實，照齊豫先例）、Curren$y 多 1 次（補 legacy 第二源，照第二源先例），放行。
+- 審稿修 7 處：
+  - out-1 審稿 4 處：Booba「法國 rap 史上最重要的專輯之一／史上最好、最有影響力之一」改「重要專輯／極具影響力」；Boosie Badazz「巴頓魯治最大的饒舌歌手」改「代表性」；Brother Ali 刪白化症與視盲（健康）；撤下 Christopher Williams（見上）。
+  - out-2 審稿 3 處：Control Machete 媒體名匿名化（西語媒體 50 大榜單第 6 名保留，補洞稿列為必要例外、兩源）；Damu the Fudgemunk「Crate Diggers 系列第一位藝人」改「也替該系列錄製作品」；Do or Die「最大的啟發之一」改「重要的啟發」。
+  - 保留：Black Sheep 金唱片、Brian McKnight Hot 100 第 2、C-Murder Billboard 200 第 3、Central Cee 英國專輯榜首、Damian Marley 葛萊美（同一張專輯兩項，算一處）、DEAN 韓國大眾音樂獎（各一處）；DEV LARGE 2015、MF DOOM 2020、DJ Screw 2000 年過世；Capone-N-Noreaga 以「無法全程參與」中性帶過，C-Murder、Boosie、DaBaby、Digga D、Crime Mob、Conway 刑案官司一律未寫。
+- 身分：預抓維基作廢——DEAN（Dean (education)）、Dipset（單曲頁〈Dipset Anthem〉），改查本人與團頁。
+- 待本機（上線簡介與卡池）：BUDDHA BRAND《黒船》實為 1996-12-04 單曲（CTCR-14061），卡片性質待確認；Digga D 上線簡介以 2018 年 Criminal Behaviour Order 為主軸，與不寫刑案的規則相左，建議改寫；Booba《Temps mort》「Lunatic 拆夥後」先後說法不一；C-Murder「逾兩百萬張」與 RIAA 白金不符；Camp Lo 組團年 1995／1994 不一；Control Machete 1996 年份與銷量待核；Cormega 「被踢出 The Firm」與「簽進 Def Jam」先後寫反、「獨立榜第四」查無。
+
+## ar-d-097（2026-10-14）
+
+- 39 位上架（34 full、5 thin：eLZhi and Will Sessions、Father MC、Fergie、Heize、Ho99o9）。1 位不寫：Double X（台灣趙一豪的龐克團；聲音格查無，唯一另一條事實是個人專輯查禁，過不了 thin 門檻）。
+- 嘻哈段 D 至 H 字頭；E.U. 照 go-go、El Michels Affair 照器樂靈魂、Garnet Mimms & the Enchanters 照 1960 年代靈魂樂、Freddie Jackson 照 R&B 寫。
+- 搜尋超額：Double X 多 2 次（追成軍年與專輯年，三說打架未收，無新事實，照齊豫先例）、Fergie 多 1 次（補 legacy，照第二源先例），放行。
+- 2025–26 事實：Freddie Jackson 2026 年 10 月過世——主線 WebSearch 核實（AP 系 WAFB、ABC11、NST、Hello 多源），只寫年份，享年 69／70 兩說故刪；Earl Sweatshirt, MIKE & SURF GANG《POMPEII // UTILITY》（2026）只用補洞稿兩源事實。
+- 審稿修 17 處：
+  - out-1 審稿 7 處：Doechii「最大的啟發」改「重要」；Doug E. Fresh「beatboxing 的開創者」改「先驅」、「史上最常被取樣的歌之一」改「被大量取樣」；Dr. Octagon「九〇年代最佳嘻哈專輯之一」改「常被列進重要榜單」；Drunken Tiger「最早把嘻哈帶進韓國主流之一」改「較早」；E.U.「最早打進特區外電台之一」改「早期」；Fabolous（Nicki Minaj 語）「最穩定的之一」改「一直很穩定」。
+  - out-2 審稿 10 處：Freddie Jackson 刪享年；Garnet Mimms「最早的真正靈魂歌手之一」改「早期」；Giggs「英國最有影響力的 MC 之一」改「極具影響力」；Gravediggaz「開創了 horrorcore」改「重要源頭」；GZA「詞彙量最大的幾位之一」改「名列前茅」、「個人專輯裡最好的一張」改「代表作」；Handsome Boy「最有野心」改「極具野心」；Headie One 刪母親過世（私人逝世細節）與腳踝骨折（傷病）；Heltah Skeltah「最突出」改「突出」；Hieroglyphics（官網自述）「最有影響的貢獻」改「重要貢獻」。
+  - 保留：Doechii 葛萊美最佳饒舌專輯（含「第三位女性」，算一處）、E.U.〈Da Butt〉R&B 榜首（必要例外）、Eve Billboard 200 冠軍、Fergie Hot 100 冠軍、Ghetts MOBO Pioneer Award、Giggs BET 英國類別、Headie One 英國專輯榜冠軍、Heize 音源榜首、Hot Boys Billboard 200 第 5、House of Pain Hot 100 第 3（各一處）；Eazy-E 1995、Gangsta Boo 2023、Sean Price 2015 年過世；Drunken Tiger 的 1992 年洛杉磯暴動背景一句（政治背景上限一句）；Dos Monos 取樣唐鳳的事實照收（中性）；Foxy Brown、Fabolous 引 Nicki Minaj（具名音樂人）。
+- 身分：Double X 是台灣龐克團（非美國同名 rap 團）；GZA/Genius、Dos Monos、E.U. 維基查無，照卡池確認。
+- 待本機（上線簡介與卡池）：Double X 卡池曲風 hiphop／electronic 錯置、簡介「後龐克」查無；Drunken Tiger 簡介韓文與漢字相鄰缺空格；E.U. 簡介年月用中文數字；Eve 簡介「詞全部由她自己寫」與 credits 不合；Freddie Jackson 簡介「男中音」（來源寫 tenor）；G-Unit 簡介 Tony Yayo 入獄年 2002／2003（建議整句刪）；Garnet Mimms 簡介 Janis Joplin 翻唱年 1970／1971、「替 Aretha Franklin 與 Otis Redding 鋪路」查無；Griselda 簡介把 WWCD 寫成團名縮寫、含 Clara Gomez 身故一句（建議刪）；Hot Boys「一週錄完」、Headie One「二十餘人分軌製作」查無來源。
+
+## ar-d-098（2026-10-14）
+
+- 38 位上架（29 full、9 thin：Jaheim、Joe、Kazi & Madlib、King Von、Kurupt、Larry June & The Alchemist、Latto、Lloyd Banks、Lu1）。2 位不寫：J. Holiday、Marques Houston（thin 的聲音句只有曲風定位與製作人名，沒有具體手法，照 Vex'd 先例）。
+- 嘻哈段 I 至 M 字頭；R&B（Jaheim、Joe、K-Ci & JoJo、Karyn White、Kelis）、福音（Kirk Franklin）、雷鬼（Koffee）、音樂劇（Lin-Manuel Miranda）照本人路數寫。
+- 搜尋超額：Lord Finesse & DJ Mike Smooth 多 2 次（找榜單第二源未果，無新事實，照齊豫先例）；Lu1 多 3 次（無維基，從零確認國籍與身分：上海出生、移居洛杉磯的華語爵士嘻哈），照身分重查前例放行，**記為例外、不作先例**。
+- 審稿修 13 處：
+  - out-1 審稿 6 處：Jadakiss「最受矚目」改「較受矚目」；Jay Park 刪留言誤譯風暴與解約（爭議）；Jay Rock 刪「因意外沒去成葛萊美」；Jaylib「Stones Throw 最早的代表作之一」改「早期」；King Geedorah「嘻哈史上最偉大且最具影響力之一」改「極具影響力」；撤下 J. Holiday。
+  - out-2 審稿 7 處：Lauryn Hill 在世者成績收斂成葛萊美五項（含年度專輯）一處，刪兩個「第一位」與國家錄音登記簿；Lin-Manuel Miranda 只留《Hamilton》普立茲與東尼獎一處；Lizzo 刪父親過世與住車上（私人逝世細節）；Mac Dre「影響力最大之一」改「極具影響力」；Madvillain「史上最偉大的饒舌專輯之一」改「饒舌經典」；Makaveli（名人堂官網語）「史上最偉大」改「饒舌標竿」；撤下 Marques Houston。
+  - 保留：Kurtis Blow「第一位與大廠簽約」「第一首 RIAA 金唱片饒舌歌」屬通行事實（照 Van Cliburn 先例）；Ice Spice、Joe、Juelz Santana、Juicy J、K-Ci & JoJo、Karyn White、Kelis、Koffee、Lil Nas X、Lloyd Banks、Lizzo 各一處成績；King Geedorah 寫 KMD 團員（弟弟）過世一語（團體經歷，未寫死因）；Makaveli 父母為 Black Panther 成員（政治背景一句）；King Von 2020、Mac Dre 2004、2Pac 1996、MF DOOM 2020、J Dilla 未寫年份。
+- 身分：Kazi 預抓維基（德州電台 KAZI）作廢；King Geedorah 改查 MF DOOM 條目；Madvillain 專輯年照 2004 寫。
+- 待本機（上線簡介與卡池）：Madvillain《Madvillainy》卡池 2002 應為 2004；Kazi & Madlib《Blackmarket Seminar》卡池 2014，實為 1996 錄、2011 公開；Karyn White、Kelis、Kirk Franklin、Koffee、J. Holiday、Jaheim、Joe 卡池曲風誤標 hiphop；Kurupt 簡介含槍擊案、死者細節與銷量（建議改寫）；Mac Dre 簡介「第九張錄音室作」「距遇害僅三個月」（未核實且含案情，建議刪）；Joe 簡介「三白金」與來源「一年內雙白金」不合；Juicy J 簡介「離開 Three 6 Mafia」「首張個人作」有誤（團體暫停，第三張個人作）；K-Ci & JoJo 簡介「兄弟倆自行製作」「停留最久的冠軍曲」；Karyn White「連坐七週」與白金認證；Kurtis Blow「〈The Breaks〉最常被取樣」查無；Leaders of the New School「製作交給 Eric Sadler」偏窄；Lord Finesse《The Source》百大榜單單源；Mach-Hommy「兩成收益」查無。
+
+## ar-d-099（2026-10-14）
+
+- 40 位全上架（28 full、12 thin：Maxo Kream、Mick Jenkins、milo、Moneybagg Yo、Mr. Lif、Navy Blue、Polo G、Rico Nasty、Rod Wave、Roddy Ricch、Rome Streetz、Royce da 5'9"），無不寫。
+- 嘻哈段 M 至 S 字頭；Nelly Furtado、PinkPantheress 照流行寫，Next、Peabo Bryson 照 R&B 寫，Nujabes / Fat Jon 照動畫原聲合作寫。
+- 搜尋超額：Nipsey Hussle 多 1 次（補葛萊美第二源）、Nujabes / Fat Jon 多 2 次（補逝世年第二源與查 Fat Jon 身分）、PUNPEE 多 2 次（補 CD Shop 大賞第二源），照第二源與齊豫先例放行。
+- 2025–26 事實：Peabo Bryson 2026-06-02 過世——主線 WebSearch 核實（ABC News 系、NME），只寫年份；PinkPantheress 2026 年 BRIT 年度製作人獎（Music Week＋維基）、Rapsody 2025 葛萊美（grammy.com＋維基）、Roxanne Shanté 2025 葛萊美終身成就獎，照收；ODB Way（2026）兩源同屬 Urban One、非獨立，不寫。
+- 審稿修 10 處：
+  - out-1 審稿 1 處：Meek Mill「最費城的饒舌歌」改「費城味十足」。
+  - out-2 審稿 9 處：Ol' Dirty Bastard「最常被引用」改「常被引用」；Orelsan「同世代最重要的詞作者之一」改「重要」；PinkPantheress 刪 TikTok 影片數、刪「第一位女性得主」；Ras G「最大的影響」「最重要的人物之一」改「重要」（兩處）；Roxanne Shanté 刪「第一位女性 solo 饒舌歌手」。
+  - 保留：MC Hammer「第一張 RIAA 鑽石認證嘻哈專輯」屬通行事實（照 Van Cliburn 先例）；Nelly Furtado、Nekfeu、Next、Orelsan、PUNPEE、Rapsody、Roxanne Shanté、PinkPantheress 各一處成績；ODB 2004、Nate Dogg 2011、Nipsey Hussle 2019、Nujabes 2010、Ras G 2019、Peabo Bryson 2026 年過世；Saba《Care for Me》獻給過世表親（專輯核心概念，未寫死因）；Sage Francis〈Makeshift Patriot〉（政治背景一句）；Schoolly D 引 Questlove 與 Ice-T（具名音樂人）。
+- 身分：預抓維基 Navy blue（顏色）、NeXT（電腦公司）作廢；MC Eiht featuring Compton's Most Wanted 以 MC Eiht 為主寫，避開與 ar-d-096 CMW 重複。
+- 待本機（上線簡介與卡池）：Peabo Bryson、PinkPantheress 卡池曲風誤標 hiphop；MC Shan「Cold Chillin' 第一張 LP」查無；MC Hammer 鑽石認證日期兩源不一；Next《Rated Next》簡介「取樣」實為改寫；Nipsey Hussle《Victory Lap》榜次待核；Nujabes / Fat Jon《Departure》「共同署名四張裡的第一張」不成立；Schoolly D 簡介幫派名（三源拼寫不一，且屬幫派內容，建議刪）、「發明 gangsta rap」宜改具名轉述。
+
+## ar-d-100（2026-10-14）
+
+- 39 位上架（31 full、8 thin：Silkk the Shocker、Smino、Standing on the Corner、Stetsasonic、Styles P、Themselves、Urban Species、Victoria Monét）。1 位不寫：Today（thin 的聲音句只有 new jack swing 標籤與行銷說法，照 Vex'd 先例）。
+- 嘻哈段 S 至 W 字頭；Shabba Ranks 照 dancehall、SIRUP 與 Victoria Monét 照 R&B、The Moonglows 與 The Platters 照 doo-wop 寫。
+- 搜尋超額：The LOX 多 1 次（補三位成員押韻路數第二源），照第二源先例放行。
+- 2025–26 事實：Sensational 2026 年 8 月過世——主線 WebSearch 只找到 RA（音樂專業媒體，引合作者 Madteo 公告）與轉引它的維基；裁定照收過世年份（一手專業報導＋合作者本人公告），刪享年，死因與成癮不寫。**這是單一獨立來源放行的例外，不作先例**：日後同形狀以兩家獨立媒體為準，只有一家時改寫成不提生死。
+- 審稿修 15 處：
+  - out-1 審稿 10 處：Sensational「最不依常規之一」改「極不依常規」、刪享年；Shabba Ranks「最受歡迎之一」改「極受歡迎」；Skepta「繼 Dizzee Rascal 之後第一位得獎的 grime MC」改「再度得獎」；Stetsasonic「開創者之一」改「先驅之一」；Styles P「最粗礪之一」改「極粗礪」；SUMIN 刪青少年歌謠祭大賞（在世者第二項成績）；T La Rock「第一張印有 Def Jam 標誌」改「早期」（編號第一有爭議）；Tha Dogg Pound「最早簽進 Death Row 之一」改「早期」、刪 Kendrick Lamar 點名 Kurupt（ar-d-098 補洞判學生報單源未收，保持一致）。
+  - out-2 審稿 5 處：Timbaland & Magoo「幾乎所有流行趨勢」改「許多」；Tommy Wright III 刪父母聽障（家人健康）；UTFO「可能是最早的 diss 論戰」改「早期」；Viktor Vaughn「史上最偉大的作詞者之一」改「極具影響力」；Warren G「Def Jam 史上最大的單曲」改「代表性暢銷單曲」；撤下 Today（不計入修改數）。
+  - 保留：The Sugarhill Gang「第一首打進 Hot 100 前 40 的饒舌單曲」、Vanilla Ice「第一首 Hot 100 冠軍饒舌單曲」屬通行事實（照 Van Cliburn 先例）；Shabba Ranks 葛萊美兩屆、SIRUP SPACE SHOWER 獎、Skepta 水星獎、SUMIN 韓國大眾音樂獎、The LOX 揚克斯市鑰、Tierra Whack 葛萊美入圍、Twista 金氏紀錄（1992）、Victoria Monét 葛萊美、Tha Dogg Pound Billboard 200 冠軍（各一處）；The Moonglows、The Platters 引搖滾名人堂官網；Magoo 2023、MF DOOM 2020、UTFO 兩位成員 2017／2021 年過世。
+- 身分：Today 預抓維基（NBC 節目）作廢；Viktor Vaughn 照 MF DOOM 化名寫；The Alkaholiks 正文照名冊拼法。
+- 待本機（上線簡介與卡池）：Stetsasonic「第一支嘻哈樂團」只是自稱；T La Rock〈It's Yours〉「Def Jam 編號第一號」有爭議；Tech N9ne「範本」一說無來源；Tha Blue Herb 首張發行年 1998／1999 不一；Silkk 簡介首週銷量、榜位、白金與「全碟 Beats By the Pound」查無佐證；The Moonglows〈Ten Commandments of Love〉錄音陣容兩源不一；Today 卡池曲風誤標 hiphop；Tommy Wright III「生於 Whitehaven」（維基生於曼菲斯）；Twista 2019 RIAA 白金查無；UTFO「答歌最多」只是可能語氣；Vanilla Ice「連續 16 週」來源寫 12 週。
+
+## ar-d-101（2026-10-14）
+
+- 39 位上架（32 full、7 thin：Wreckx-n-Effect、YoungBoy Never Broke Again、Your Old Droog、Zayn、勞動服務、夜貓組、Alma Mahler）。1 位不寫：Westside Connection（thin 的聲音句只有 gangsta rap／G-funk 標籤與製作分工，照 Vex'd 先例）。
+- **嘻哈段至此寫完**；本批後半進入古典段（Aaron Copland～Amjad Ali Khan），含印度古典（Alla Rakha、Amir Khan、Amjad Ali Khan）、伊朗廣播節目《Golha》、電影配樂（Silvestri、North、Desplat）。台灣嘻哈三組（勞動服務、呂士軒、夜貓組）地名寫「台灣」。
+- 搜尋超額：勞動服務多 1 次（確認 fishLIN 領軍身分）、Aaron Copland 多 1 次（補獎項第二源）、Golha 四人掛名多 2 次（補 Hayedeh 生卒與出道第二源），照第二源先例放行。
+- 2025–26 事實：呂士軒 2025 年第 36 屆金曲獎最佳華語男歌手與最佳華語專輯（nownews＋中文維基），照收；Desplat《Les Aigles de la République》（2025）兩源同屬 filmmusicreporter（非獨立），不寫。
+- 審稿修 15 處：
+  - out-1 審稿 7 處：Whodini「最早把 R&B 帶進嘻哈之一」改「早期」、「被取樣最多的歌之一」改「被大量取樣」；Z-Ro 刪「6 歲喪母」（家人逝世細節）；スチャダラパー「日本最早走紅之一」改「早期」；夜貓組「顏社第一個饒舌團體」改「早期」；Aaron Copland 單卡 277 字超出 250，刪出生年、族裔細節與總統自由勳章、奧斯卡，保留作曲手法與普立茲（兩處）。另撤下 Westside Connection。
+  - out-2 審稿 8 處：Golha（Hayedeh）「最具影響力之一」改「極具影響力」；Hovhaness「作品量最多之一」改「極多」；Alex North「第一份大量依賴爵士語彙的配樂」改「早期」；Kipnis「世上最偉大的低音之一」改「極受推崇」；Kantorow 刪「第一位法國籍冠軍」；Alla Rakha「史上最受推崇之一」改「極受推崇」；Alma Mahler 刪老師的「盲眼」（他人健康）；Amjad Ali Khan「當代首席大師」改「當代 sarod 大師」。
+  - 保留：Alex North 1986 年「第一位獲頒榮譽奧斯卡的作曲家」屬通行事實（照 Van Cliburn 先例）；呂士軒金曲獎、Wreckx-n-Effect Hot 100 第 2、YoungBloodZ Hot 100 前五、Zayn 英美專輯榜冠軍、スチャダラパー 50 萬張、諏訪內晶子與 Kantorow 柴可夫斯基首獎、Silvestri 奧斯卡入圍、Desplat 兩座奧斯卡、Weilerstein 麥克阿瑟、Amjad Ali Khan Padma Vibhushan（各一處）；Whodini 引長島音樂名人堂（官方機構）；Yo-Yo 1994 年參議院作證、Golha 1979 年革命後女性獨唱遭禁、Hába 遭納粹禁演（政治背景各一句）；Baba Zumbi 2021 年過世。
+- 待本機（上線簡介與卡池）：Whodini「首張打進前四十名的嘻哈唱片」查無；Wiz Khalifa 大廠合約年、Big Jerm、「全球熱門第一」不符；Wizkid「慢速」（來源中速）；YG「九成節拍」查無；Yo-Yo「康普頓出身」（來源南洛杉磯）；勞動服務《海島聲事》各軌秒數與 Bandcamp 差 1–3 秒；夜貓組「唯一一張錄音室專輯」與報導不合；Aaron Copland 卡 1971 自指錄音有 1959／1970／1973 三版；Alex North 簡介樂器清單與「ondioline 從未用於電影」查無；Alan Silvestri 卡 1985 與簡介所述 2015 Intrada 完整版不一；Alarm Will Sound 卡池 composer 欄誤填「Acoustica」。
+
+## ar-d-102（2026-10-14）
+
+- 40 位全上架（37 full、3 thin：André Navarra、Bang on a Can All-Stars、Beatrice Rana），無不寫。
+- 古典段 A 至 B 字頭：演奏家、指揮、作曲家，加上音樂劇（Lloyd Webber & Rice《Evita》）、電影配樂（Duhamel、Poledouris、Conti）、印度古典（Bhimsen Joshi）、跨界（Bocelli）。
+- 搜尋超額：無。Navarra 失敗請求 6 次（超過記錄上限 4），照實記 notes，不影響事實。
+- 2025–26 事實：無新近死訊；Staier 2024 萊比錫巴赫勳章、Pappano 2024 年卸任皇家歌劇院，照收。
+- 審稿修 14 處：
+  - out-1 審稿 5 處：Schiff「最受敬重之一」改「極受敬重」；Bocelli 刪青光眼與失明（健康）、刪《Romanza》「史上最暢銷之一」（最高級＋在世者第二項成績）；Panufnik 刪出版社自述「二十世紀波蘭最重要的作曲家之一」；Duhamel「舒曼的精神分裂傾向」改「舒曼音樂裡的雙重性格」（他人病況）。
+  - out-2 審稿 9 處：Reicha 刪父親早逝、Salieri 刪雙親相繼過世（家人逝世細節，歷史人物同規）；Pappano 刪「任期最長」；Salieri「最受歡迎之一」改「極受歡迎」；Khachaturian「最知名」改「極負盛名」；Nikisch 1913 貝多芬第五號由「完整錄音之一、省略反覆」改「早期的交響曲錄音之一，有所刪略」（補洞層指該版有刪節）；Tuckwell 刪「史上錄音最多」；Beverly Sills「自 Caruso 以來最受歡迎」改「極受歡迎」；Bhimsen Joshi「幾乎無人能及」改「極為驚人」。
+  - 保留：Amy Beach「美國女性第一首出版的交響曲」屬通行事實（照 Van Cliburn 先例）；在世者各一處成績（Staier、Manze、Norman、Nelsons、Clyne、Meredith、Netrebko、Þorvaldsdóttir、《Evita》、Wit、Volodos、Rana）；Tuckwell 引國際法國號協會（官方）；Fiedler 1976 金氏紀錄；Salieri 毒殺傳說以「無史實根據」帶過；Schiff 1979 離開匈牙利、Panufnik 戰時與定居英國、Netrebko 不寫政治（背景各一句或不寫）。
+- 待本機（上線簡介與卡池）：《Evita》簡介「兩人共同製作」（維基寫 Rice 製作）；Andrew Manze Corelli 卡池 2002，搜尋所見 2003-01；Duhamel《Pierrot le Fou / Week-End》2001 後段為 2000 年重錄。
+
+## ar-d-103（2026-10-14）
+
+- 40 位全上架（36 full、4 thin：胡瀞云、Christopher Larkin、Claude-Michel Schönberg、Clemencic Consort），無不寫。
+- 古典段 B 至 C 字頭，含華人作曲家與演奏家（盛宗亮、陳其鋼、周文中、郭芝苑、呂泉生、胡瀞云、林昭亮；地名照實寫「中國」「台灣」「上海」，不寫兩岸政治）、遊戲與電影配樂（Larkin、Tin、Mansell、Gerhardt）、音樂劇（Schönberg）。Clint Mansell 個人卡與 featuring Kronos Quartet 卡分寫不重複。
+- 搜尋超額：Caroline Shaw & Sō Percussion 多 1 次（普立茲官網與 Princeton 403，改開第二源），照第二源先例放行。
+- 審稿修 18 處：
+  - out-1 審稿 7 處：Martinů「最重要」改「極重要」；Borodin Quartet「演出最久、最負盛名之一」改「歷史悠長、極負盛名」；Nielsen「丹麥最重要的作曲家」改「極具代表性」；Chávez「最早談電子音樂的書之一」改「早期」；Bartoli「最受歡迎之一」改「極受歡迎」；Chanticleer 刪名人堂（在世團體第二項成績）；Czernowin 刪 GEMA 評審團「在世最重要的作曲家之一」。
+  - out-2 審稿 11 處：Ludwig「20 世紀最重要之一」改「極重要」；Ferras「歐洲首屈一指之一」改「重要」；Dohnányi 刪父親遭納粹處決（家人逝世細節＋政治）；呂泉生刪「因受傷」；Claire Chase「最前線」改「前線」；Clara Schumann「最早背譜之一」「最傑出之一」改「早期」「極傑出」；Vivier 刪「加拿大史上最偉大之一」（留 Ligeti 具名評語）；Cleveland Quartet「最受推崇之一」改「極受推崇」；Clint Mansell 刪「獻給過世的伴侶」；Silvestri「二流樂團」改「樂團」。
+  - 保留：Claude-Michel Schönberg thin 以「先做法語概念專輯再上舞台」的做法過聲音門檻，倫敦版 2006 年成為西區最長壽音樂劇屬通行紀錄；Christopher Tin「第一首得葛萊美的遊戲音樂」屬通行事實（照 Van Cliburn 先例）；在世者各一處（盛宗亮麥克阿瑟、Shaw 普立茲、Simon 甘迺迪中心駐團、Bartoli、Chanticleer 葛萊美、Dutoit 皇家愛樂協會金獎、Czernowin GEMA、Rousset 布魯日首獎、Tin 葛萊美、Chase 麥克阿瑟）；盛宗亮文革背景一句＋《H'un》副題（作品題材）、Huberman 籌組巴勒斯坦交響樂團、Carlos Simon《Requiem for the Enslaved》委託緣由、呂泉生《閹雞》民謠遭皇民化政策禁唱（歷史背景）；胡瀞云 2024 年改名 Charlotte Hu。
+- 待本機：無新增上線簡介錯誤（本批多數無上線簡介）。
+
+## 第九輪收尾（ar-d-084～103，2026-10-14）
+
+- 二十批全數上線：755 位（612 full、143 thin），不寫 42 位，審稿修 238 處。介紹總數 6,846 → 7,601。
+- 範圍：電子段寫完（d-084～095 前段）；嘻哈段寫完（d-095 後段～d-101 前段）；古典段從 d-101 後段開始，寫到 C 字頭（Constantin Silvestri）。剩 13 批（ar-d-104～116，約 485 個卡鍵）未上線。
+- 本輪新定或重申的形狀：
+  - 「最／最早／第一／唯一／之一」一律收斂成「早期／重要／極具」；**通行事實**（MC Hammer 第一張鑽石嘻哈專輯、Vanilla Ice 第一首 Hot 100 冠軍饒舌單曲、Amy Beach 美國女性第一首交響曲等）照 Van Cliburn 先例保留。
+  - 家人逝世細節（喪母、父親早逝、伴侶過世、親人遭處決）與他人病況（盲眼、聽障、精神病名）也不寫，歷史人物同規；作品本身以逝者為題（Saba《Care for Me》、Headie One《Edna》）只寫作品題材。
+  - thin 的聲音句只有曲風標籤＋製作人名（J. Holiday、Marques Houston、Today、Westside Connection）照 Vex'd 先例不寫。
+  - 單卡 251–280 字放寬只給雙名／多名卡；單卡超過 250 一律刪到 250 內（Aaron Copland）。
+  - 2025–26 年死訊：Freddie Jackson、Peabo Bryson 主線 WebSearch 兩源以上核實；Sensational 只有 RA（引合作者公告）＋轉引的維基，**單一獨立來源放行為例外、不作先例**。
+  - 搜尋超額：補第二源或查無新事實者照先例放行；從零確認身分超 3–4 次（Yutaka Hirose、Lu1）記為例外、不作先例。
+- 待本機：
+  - KV 上線簡介的修正：見 `audits/ARTIST-PUB-ISSUES.md`（本輪各批「待本機」條目，共 1,312 條累計）。重點：Digga D、Kurupt 簡介以刑案為主軸建議改寫；Mac Dre、Griselda、Schoolly D 簡介含案情或私人逝世細節建議刪句。
+  - 卡池年份與曲風存疑：Das Ding《H.S.T.A.》2009／2010；Dave Clarke《Archive One》1995／1996；Hercules & Love Affair 2007／2008；Sainkho Namtchylak《Stepmother City》2000／2001；BUDDHA BRAND《黒船》實為單曲；Double X（台灣龐克團）曲風誤標 hiphop；Madvillain《Madvillainy》應為 2004；Kazi & Madlib《Blackmarket Seminar》1996 錄、2011 公開（卡池 2014）；Aaron Copland 自指《Appalachian Spring》版本待確認；Alan Silvestri《Back to the Future》卡年與版本；Andrew Manze Corelli 2002／2003；Alarm Will Sound composer 欄誤填；曲風誤標 hiphop：Karyn White、Kelis、Kirk Franklin、Koffee、J. Holiday、Jaheim、Joe、Peabo Bryson、PinkPantheress、Today。
 ## ar-d-128（2026-10-14，add-20261014 補介紹）
 
 - 1 位上架：溫蒂漫步 Wendy Wander（full，251 字）。事後菸 Cigarettes After Sex 已排在 ar-d-069，不重複。
 - 審稿修 1 處：「2023 年疫情解封後首度出國」→「2023 年疫情解封後的海外首站是香港」。來源（VERSE、MeMeOn）只說解封後海外首站是香港，沒說之前沒出過國。
 - 保留：〈我想和你一起〉900 萬點閱（中文維基引 VERSE，非獨立來源；樂團走紅核心，必要例外，寫成「後來」）；2023 夏中國 11 城（MeMeOn＋中文維基）。
 - 不寫：2026-12-25 香港麥花臣場（尚未發生）、新專輯《House Of》（未發行、單源）、成員加入先後（兩源不一）、獎項（查無金曲／金音紀錄）、製作人姓名（未證）。
+
+## 第十輪二十批接力（ar-d-104～116＋新切 7 批，2026-10-15 起）
+
+- 店主 2026-10-15「新增二十批」。排隊中只剩 ar-d-104～116（13 批、485 位，全為古典段）；另 7 批從卡池「不在名冊」的藝人補切（2026-10-15 盤點：卡池 19,121 張的藝人中，不在名冊也沒有介紹的 554 位，爵士 518、流行 15、搖滾 9、民謠 7、其他 5）。補進名冊照 2026-10-13 先例（tier D、`addedBy` 標批名、shard null），本輪只切 7 批（約 280 位），其餘留下一輪。
+- PR #80 照 2026-10-14 店主指示退訂，不再盯 PR；接力期間的自我 check-in 照「接力任務」節保留。
+- 名冊補登：`batch-progress/artist-intro/backfill-20261015.mjs` 以 seed_cards.json 對名冊與已上線介紹取差集，554 位補進名冊（tier D、`addedBy` add-20261015-backfill、shard null；mainGenre 取卡片首類型的多數；collab 按 `&`／`and`／`with`／`feat.`／逗號／斜線判定，Spick & Span、Medeski Martin & Wood、Marty & Mystics、Paul Jackson, Jr. 手動改回 false）。排序照切批規則（爵士先、卡數多的先），切 ar-d-129～135 七批 280 位（Gonzalo Rubalcaba … John Kaizan Neptune / 直居隆雄），剩 274 位留下一輪。領隊與編制掛名（Stefano Di Battista vs Stefano Di Battista Quintet 等）照伍佰先例分開寫。
+
+## ar-d-104（2026-10-15）
+
+- 40 位全上架（36 full、4 thin：賴德和、Diabolus in Musica、Elaheh／Shajarian／Shahnaz、Ellen Arkbro），無不寫。
+- 古典段 C 至 E 字頭；Elmo Hope Sextet 卡池歸古典，照爵士寫。合作掛名卡（Cortot 三重奏、Oistrakh 父子、Oistrakh & Oborin、Fischer-Dieskau & Moore、Schwarzkopf & Fischer-Dieskau）用 251–280 字額度、各人分寫，跨卡同構段落已錯開。
+- 搜尋超額：無。
+- 審稿修 21 處：
+  - out-1 審稿 8 處：Cortot 三重奏「最重要」改「極重要」；Danish String Quartet 刪「Sonning 第一次頒給樂團」（頒獎單位自述）；Zinman「史上商業上最成功之一」改「極為成功」；Dennis Brain「最知名」改「極負盛名」；Fischer-Dieskau & Moore「最重要之一」改「極重要」；Mitropoulos「獨奏者病倒」改「臨時無法上場」並刪一句壓字數；Earl Wild「最後的偉大浪漫派之一」改「延續浪漫派傳統的名家」。
+  - out-2 審稿 13 處：Edo de Waart「最大的遺產」改「重要遺產」；Edwin Fischer「最偉大之一」改「極重要」；Rautavaara 刪幼年喪父喪母、「最重要之一」改「極重要」；Schwarzkopf「最偉大的女高音之一」改「極受推崇」；Emahoy 單卡 272 字超出 250，刪三處壓到 248；Emilie Mayer 刪「父親過世後」；Emma Kirkby 刪頒獎詞「最有力的推動者之一」；Tüür「最受歡迎之一」「最具代表性之一」改「大受歡迎」「代表作」。
+  - 保留：Đặng Thái Sơn「第一位贏得蕭邦大賽的亞洲人」、Edwin Fischer「第一套《平均律》完整錄音」、Jacquet de La Guerre「法國第一部女性歌劇」屬通行事實（照 Van Cliburn 先例）；在世者各一處（Trifonov、Lang、杜韻、DSQ、de Waart、Kirkby、Pahud、Ensemble Modern）；Feuermann 引 Artur Rubinstein（具名音樂人）；越南國籍限制出國、納粹解職、《第七號》抵抗象徵（歷史背景各一句）。
+- 待本機：Cortot / Thibaud / Casals 簡介最後一場日期兩說（建議不寫日期）；Domus 簡介「第一張唱片」查無、「帳篷」應為「圓頂」；賴德和《樂典03》卡池 1987 疑誤（樂典系列約 2009–2012）；Shostakovich plays Shostakovich 1958 版本待確認；David Tudor《Rainforest》卡池 1981 為錄音年（作品 1968）、Earl Wild 卡 1966（錄音 1965）。
+
+## ar-d-105（2026-10-15）
+
+- 40 位全上架（38 full、2 thin：Franz Schubert & Valery Afanassiev、Gautier Capuçon），無不寫。
+- 古典段 E 至 G 字頭；Franz Schubert & Valery Afanassiev 照鋼琴家 Afanassiev 寫；Floating Points, Pharoah Sanders & LSO 三方分寫（272 字，多名卡放寬）。
+- 搜尋超額：無。
+- 2025–26 事實：Gary Karr 2025 年過世——補洞層派工誤列在世，寫作層照事實寫已故；主線 WebSearch 核實（維基、Classical Music Daily、Apple Classical），只寫年份。Gabriela Ortiz 葛萊美（2025）照收一處。
+- 審稿修 20 處：
+  - out-1 審稿 12 處：Lecuona 刪遺囑政治條件；Wallen 刪「第一位黑人女性國王音樂大師」；Nyiregyházi 單卡 276 字超出 250，刪 Schoenberg 評語並把「史上記錄最完整之一」改「極完整」；Schulhoff「最早之一」改「早期」、刪被捕關押；Smyth 單卡 255 字，刪「Purcell 與 Britten 之間最重要的英國歌劇」與「入獄」；Ormandy「最長紀錄之一」改「極長」；Fanny Mendelssohn 刪 MGG「十九世紀最重要的女作曲家」（單源轉引）；FLUX「最知名」改「知名」。
+  - out-2 審稿 8 處：Berwald 機構語「十九世紀最重要」改「重要」；Afanassiev「最長之一」改「極長」；Kahane「川普當選隔天」改「美國大選隔天」、刪「極度政治」引語；Bryars 刪錄音中老人過世；Enescu「史上最重要」改「極重要」；Gershwin「最重要的美國歌劇之一」改「重要作品」；Cziffra「最偉大之一」改「極具代表性」。
+  - 保留：Smyth「第一位封 DBE 的女作曲家」、Weingartner「第一位商業錄完貝多芬九首」（兩源）、Caccini「現存最早的女性作曲家歌劇」屬通行事實；具名音樂人評語（Carl Flesch、Toscanini、Ornette Coleman、Domingo、Simon Rattle、Menuhin、Argerich、Kodály）；在世者各一處；歷史背景各一句（Afanassiev 不回蘇聯、Busch 反納粹免職、Schreker 反猶失職、Cziffra 戰後關押、Fricsay 戰時躲藏）。
+- 待本機：Floating Points《Promises》卡 2020，實際 2021-03-26；Errollyn Wallen《Photography》卡 2006 與 NPR 年度專輯 2016 對不上；Gabriela Ortiz 卡 2023 為首演年，專輯 2024–25；Afanassiev D.960 卡 1986 vs 1985 Lockenhaus 現場；Cziffra 卡池 1958 查無來源。
+
+## ar-d-106（2026-10-15）
+
+- 40 位全上架（33 full、7 thin：Giuliano Carmignola、Goldmund、Gwhyneth Chen 陳毓襄、Hans Rosbaud、Hans Zender、Hélène Grimaud、Hespèrion XXI），無不寫。
+- 古典段 G 至 H 字頭；雙名卡放寬：Gervase de Peyer & Amadeus Quartet 265、Glenn Gould & Leonard Bernstein 272、Gregor Piatigorsky & Jascha Heifetz 266。
+- 搜尋超額：Hans Zender（g3）超 1 次，找卡池 Scelsi 錄音的指揮身分，比照「第二源」放行。
+- 審稿修 17 處：
+  - out-1 12 處：Grisey「開創者」改「先驅」；Souzay、Neveu、Gould、Bernstein、Gothic Voices、Heifetz、Sokolov、Cantelli 的「最…之一」改「極…」；Neveu 刪錄音後頸部磨血（傷病）；Bacewicz 刪車禍；Suggia「同居」改「長年同台巡演」（私生活）。
+  - out-2 5 處：Holliger「同時代最重要」改「極具代表性」；Lachenmann 刪「第一位」私人學生、「最重要之一」改「極具份量」；Górecki「最激進之一」改「激進」；Scherchen「首演比幾乎任何指揮家都多」改「大量」。
+  - 保留：Walcha 失明——是演奏與錄音方法（靠耳記譜、全憑記憶）的成因，屬身分核心，不寫病因（疫苗）；Krása 的 Theresienstadt 與《Brundibár》寓意為作品核心；Górecki 銷量與榜位（已故）；具名音樂人評語（Lutosławski、Shchedrin、Perlman、Casals、Toscanini、Rubinstein、Tom Waits）；在世者各一處（Hardenberger Proms 首演、Kendall Ivor Novello、Zimmer 兩座奧斯卡、Gerrard 金球獎、Christophers CBE、Holliger 日內瓦首獎、Grimaud 巴黎音樂院第一名、Sokolov 柴可夫斯基金牌、陳毓襄 Pogorelich 首獎）。
+- 待本機：Souzay《Fauré: Mélodies》1974 版本未確認；Kancheli《Vom Winde beweint》卡 1989 對不上 ECM（1991 錄）或 Melodiya（1988）；Gould & Bernstein 卡為 1962-04-06 現場廣播、1998 發行；Guarneri Quartet 卡 1995 對不上 RCA 全集（1966–69）；Piatigorsky & Heifetz Brahms 雙協奏 1960 錄、1961 發行；Hans Zimmer《Diamond In The Desert》（2025）查到的是杜拜演唱會電影、無同名原聲帶；Scherchen 卡 1958 對不上 Westminster 貝多芬全集（1951–54）。
+
+## ar-d-107（2026-10-15）
+
+- 40 位全上架（33 full、7 thin：Homayoun Shajarian & Ali Ghamsari、Hossein Alizadeh & Hossein Omoumi、許常惠、Ian Bostridge、Icebreaker、Isata Kanneh-Mason、Jean-Guihen Queyras），無不寫。
+- 古典段 H 至 J 字頭；多名卡放寬：J.J. Johnson & Kai Winding 277（卡池誤歸古典，照爵士寫）、du Pré & Barenboim 260、Thibaud & Cortot 268、伊朗六人 267。Godard 照電影導演寫，註明卡池《Histoire(s) du Cinéma》是影像系列聲軌。
+- 搜尋超額：伊朗六人合作掛名（g3）多 3 次查成員身分（Nahid、Bahari、Shahidi），比照「第二源」放行。
+- 審稿修 23 處：
+  - out-1 12 處：Omoumi 刪單源「tombak 與 daf 原創技法」（與 ney 身分不符）；許常惠、Alfvén（兩處，含機構語「最受尊崇」）、Friedman、Markevitch（兩處）、Il Giardino Armonico 的「最…」改「極／尤」；Kalniņš「蘇聯第一部搖滾歌劇」、Imrat Khan「第一位登上 Proms」「歐洲第一場通宵音樂會」改「早期」或刪；尹伊桑刪二戰被日本關押（政治背景只留 1967 年綁架一句）；Wyschnegradsky 刪晚年貧困。
+  - out-2 11 處：du Pré「最傑出之一」改「極傑出」、刪西牆婚禮地點只留「1967 年結為夫妻」；Thibaud 刪一戰負傷、「最好的之一」改「極出色」；Thibaud & Cortot「首屈一指」改「極負盛名」；Ehnes 授勳詞「最出色之一」改「極出色」；Kubelík 刪「練到手指流血」、「最傑出之一」改「極傑出」；Baker、Godard 的「最」改「極」；Higdon 刪《blue cathedral》紀念過世弟弟（家人過世）。
+  - 保留：Pogorelich 1980 蕭邦大賽 Argerich 退出評審一句；Levit 的 Rzewski 曲目背景一句；Horenstein 1933 離德、Martinon 戰俘營、Koh 母親韓戰難民、Kalniņš 音樂節遭禁各一句背景；MacMillan《Isobel Gowdie》題材為作品核心；具名音樂人評語（Messiaen、Huberman、Sibelius、Bartók、Kalhor、Steve Turre、Yo-Yo Ma、Furtwängler、Paavo Järvi、Ysaÿe）；在世者各一處（Shore 三座奧斯卡、Bostridge CBE、Levit Gramophone 年度藝術家、Huelgas OPUS Klassik、Ehnes 加拿大勳章、Jansen Vermeer 獎、Higdon 普立茲、Koh 葛萊美、Baker 女爵士）。
+- 待本機：Markevitch 卡 1960，實際 1959 Philharmonia 立體聲；Isaac Stern Prokofiev 版本年份不確定；Il Giardino《Concerti per flauto》實為直笛協奏曲；Alizadeh & Omoumi 卡池合奏與 1987 年份無法證實；Pogorelich 卡 1981 Chopin Sonata 2 對不上 DG 首張；MacMillan 卡 1990 為作品首演年；Queyras 卡池作曲者欄（Kurtág／Ligeti）與實際碟待核。
+
+## ar-d-108（2026-10-15）
+
+- 40 位全上架（38 full、2 thin：Jesper Kyd、王健），無不寫。
+- 古典段 J 至 K 字頭；多名卡放寬：John Cage & David Tudor 265、Josef Suk & Julius Katchen 279、Kander & Ebb 253、Karl Leister & Amadeus Quartet 271。Serrat 卡池歸古典，照創作歌手寫；John Kirkpatrick 預抓維基為英國手風琴手，改照美國鋼琴家寫；Josef Suk 照小提琴家（1929–2011）寫，不是作曲家祖父。
+- 搜尋超額：Juilliard String Quartet（g3）超 1 次，開頁確認 2014 年 Sony 重發，比照「第二源」放行。
+- 審稿修 20 處：
+  - out-1 8 處：Dutcher（在世）刪第二張得獎與「第一位兩度得主」；王健刪「第一位」駐團、Hofmann 刪「唯一的」私人學生；江文也刪「歷經政治運動的衝擊」（政治只留作品在台灣被禁一句）；Serrat、Cage、Nunes Garcia「最…之一」改「極…」；McCormack 刪下葬禮服。
+  - out-2 12 處：Lhévinne、Kraus、Bream、Katchen（Decca 語）、Kander & Ebb、Leister & Amadeus 的「最…之一」改「極…」；Saint-Georges「第一位」改「早期」、刪「歐洲第一支非白人部隊」；Björling 刪「父親過世後」；Szymanowski 刪膝疾免役；Münchinger 刪單源「歐洲最主要 Bach 詮釋者」；Kander & Ebb（Kander 在世）刪東尼獎座數、入圍數與甘迺迪中心榮譽，只留《Cabaret》東尼獎。
+  - 保留：Björling 1999 樂評人票選第一名（必要例外，不寫媒體名）；朱宗慶「被稱為台灣第一支專業打擊樂團」（官方自述，以「被稱為」呈現）；Harvey 過世時 BBC Radio 3 負責人語（官方機構）；Lhévinne 一戰受困、Kraus 國王遇刺、Krips 德奧合併被禁、Leister & Amadeus 拘留營各一句背景；具名音樂人（Schoenberg、Brian Eno、Petri、Glenn Gould、Anton Rubinstein、呂紹嘉、Horowitz、Emanuel Ax、Pavarotti）；在世者各一處。
+- 待本機：Jerusalem Quartet 卡池推斷為 2007 Harmonia Mundi；McCormack《McCormack in Song》疑為選輯；Hofmann《Casimir Hall Recital (1938)》版本未核；Krips 1958 樂團單源（LSO）；Kate Soper《Romance of the Rose》卡 2023 為舞台首演、唱片 2024；Eastman《Femenine》卡 1974 為演出年、2016 首次錄音發行；Serrat 上線簡介 pubIssues 2 條（封殺年數、TVE 票選）。
+
+## ar-d-109（2026-10-15）
+
+- 40 位全上架（36 full、4 thin：Kayhan Kalhor, Brooklyn Rider、Kremerata Baltica、La Venexiana、Marc Coppey），無不寫。
+- 古典段 K 至 M 字頭；多名卡放寬：Leonard Bernstein & Stephen Sondheim 279、三大男高音 256（三人分寫）。Kenneth Gilbert 預抓維基為英國演員，改照加拿大大鍵琴家寫；Mannheim Steamroller 卡池歸古典，照新世紀樂團寫。
+- 搜尋超額：三大男高音（g4）多 3 次查三位歌手各自出身與聲音，比照「第二源」放行。
+- 2025–26 事實：Liza Lim 2026 年 Grawemeyer 獎（補洞兩源），照收一處。
+- 審稿修 18 處：
+  - out-1 10 處：Kashkashian 刪 Edison Prize（維基＋bach-cantatas 近單源）；Tennstedt 刪手指受傷；Tennstedt、Zimerman、Penderecki、La Monte Young、Lalgudi 的「最…之一／最早」改「極…／早期」；Masur 刪二戰被徵召傘兵、刪德國總統悼詞（政治只留 1989 萊比錫一句）；Melchior「生病的女高音」改「代唱」。
+  - out-2 8 處：Kogan、Boulanger（姊姊）、Tertis、Lehmann、Harrison、三大男高音（史上銷量最高）的「最…」改「極／早期」；Boulanger 刪童年喪父、馬水龍刪父親過世；Kraus 刪「休養」；Harrison 刪「與伴侶」；三大男高音刪 Carreras 白血病基金會（暗示病況）。
+  - 保留：Boulanger「第一位獲羅馬大獎作曲首獎的女性」（通行事實）；Morlot 只寫樂團與 Adams 得獎，未寫成本人；Mannheim Steamroller〈Convoy〉Hot 100 榜首（故事核心，必要例外）；Melnyk 每秒 19.5 音（必要例外）；Kalhor《Silent City》題材、Kraus 爪哇拘禁、Tennstedt 離開東德、Slatkin 9/11 後 Proms 各一句；具名音樂人與人物（Zakir Hussain、Menuhin、Gilels、Toscanini、Colin Davis、Schumann、甘地、Nehru）；在世者各一處。
+- 待本機：Gilbert 卡 1971 查無版本；Flagstad《Wesendonck Lieder》、Kondrashin《Babi Yar》1980、Te Kanawa 卡池版本未核；Berman《Années de pèlerinage》1977、Masur Mendelssohn 1972 未開專輯頁；Mannheim Steamroller《Fresh Aire》上線簡介 pubIssues 1 條（SESAC 年度作曲人）。
+
+## ar-d-110（2026-10-15）
+
+- 40 位全上架（40 full、0 thin），無不寫。
+- 古典段 M 至 N 字頭；多名卡放寬：Maurizio Pollini & Quartetto Italiano 265。Michael Gordon 預抓維基為同名導演，改照作曲家寫；Galasso 只寫〈Angkor Wat Theme〉，〈Yumeji's Theme〉照實歸梅林茂；陳美安卡池卡名對不上，正文不寫專輯。
+- 搜尋超額：Masters of Persian Music（g2）超 1 次、Michael Galasso（g3）超 2 次、Mikis Theodorakis（g3）超 1 次，皆為補第二源，放行。
+- 審稿修 17 處：
+  - out-1 11 處：Meyer、del Monaco、Pollini & QI 的「最…」改「極…」；Pires 刪出生前父親過世、Alain 刪哥哥戰時過世、del Monaco 刪穿戲服下葬；Jansons 刪蘇聯攔截 Karajan 邀請（政治只留躲藏中出生一句）；Brabbins 刪抗議辭職；Gendron 刪「唯一」；陳美安刪「該校第一位雙學位」「唯一女性首獎」。
+  - out-2 6 處：Rabin 刪「最悲劇的名家之一」；Weinberg 刪家人死於集中營；Tippett、Freni、Rosenthal、Yepes 的「最…」改「極／偏愛」。
+  - 保留：Gražinytė-Tyla「DG 第一位簽長約的女性指揮」、Mazzoli「大都會首批委託歌劇的兩位女性」屬通行事實（在世者核心一處）；Yudina 信仰被解職、Gendron 抵抗運動、Theodorakis 軍政府入獄、Maisky 被捕勞改各一句背景；具名人物評語；在世者各一處。
+- 待本機：陳美安卡池《Orchestral Works》2019 在 apple-audio-map 對到《Project W》（Chicago Sinfonietta／Cedille）；Mazzoli《Vespers》卡 2014，實際 2015；Caballé《Lucrezia Borgia》1966 錄、卡 1967 為發行年；Freni《Don Carlo》卡 1979 對不上 Karajan 1978／Levine 1983；Galasso《花樣年華》上線簡介 pubIssues 1 條；Rózsa 上線簡介數字無源。
+
+## ar-d-111（2026-10-15）
+
+- 40 位全上架（36 full、4 thin：Oleg Malov、Osipov State Russian Folk Orchestra、Peter Broderick、Peter Gregson），無不寫。
+- 古典段 N 至 P 字頭；多名卡放寬：Oistrakh 四人卡 263、Arnalds & Frahm 273、Parissa & Ensemble Dastan 276、Peter Pears & Julian Bream 278。Pavel Haas 與 Pavel Haas Quartet 分寫不重複。
+- 搜尋超額：Parissa & Ensemble Dastan（g3）超 1 次補獎項第二源未成，比照「齊豫」放行。
+- 審稿修 15 處：
+  - out-1 7 處：Melba 刪葬禮規格；Zabaleta、Gedda、Oistrakh 四人卡的「最…之一」改「極…」；Kennedy（在世）刪「史上最暢銷之一」只留銷量數字（必要例外）、「最容易認出」改「極」；Neuwirth 刪基金會語「最具影響力之一」。
+  - out-2 8 處：Parissa & Dastan 兩處、O'Dette、Pérotin「最…」改「極…」；Mauriat 刪「Telstar 之後第一首登頂器樂曲」；O'Dette「每卷都獲 Diapason d'Or」、Vasks「三度獲」改為不帶數字；Penguin Cafe Orchestra 單一團名卡 268 字，刪 reel 翻奏句壓到 246。
+  - 保留：辻井伸行天生全盲與靠耳朵學曲（比照 Walcha，做法核心）、「Van Cliburn 第一位日本籍金牌」（通行事實）；Penguin Cafe 創團傳說（據說）；Pérotin「最好的 discant 作曲者」為 13 世紀文獻原句；Roslavets 遭壓制、Parissa 革命後禁演、Vasks 信仰受壓制各一句；在世者各一處。
+- 待本機：Oistrakh 四人卡上線簡介 pubIssues 3 條（Richter 公開否認、魯道夫大公題獻、敗筆說）；Panocha 上線簡介成團年（1966 三重奏／1968 四重奏）、Mauriat 金唱片無源；Pears & Bream 卡池 1956 為 Decca、Bream 以吉他伴奏；Peter Serkin 卡 1996、RCA 實為 1997；Vasks 卡 1997 為《Distant Light》首演年、Teldec 1999；Badura-Skoda 卡池推定 Astrée 古鋼琴版。
+
+## ar-d-112（2026-10-15）
+
+- 40 位全上架（34 full、6 thin：Pierre Dervaux、Poppy Ackroyd、Rachel Podger、Ramnad Krishnan、Rebecca Saunders、Rein Rannap），無不寫。
+- 古典段 P 至 R 字頭；多名卡放寬：Ravi Shankar & Philip Glass 273、Rubinstein / Heifetz / Feuermann 259（補洞標 thin，寫作以多名卡寫成 full）。Rachel Grimes、Robert Shaw 預抓維基同名混卡已棄。
+- 搜尋超額：Shankar & Glass（g2）、Crespin、Muti（g3）各超 1 次，放行（第二源／齊豫先例）。
+- 2025–26 事實：Roger Norrington 2025-07-18 過世，補洞多源一致（維基、Classical Music Daily、OperaWire、Symphony），只寫年份。
+- 審稿修 26 處：
+  - out-1 15 處：Sarde、Fournier、Schaeffer、Domingo、Lupu、Shankar & Glass、Kell 的「最…／最早之一」改「極／備受／早期」；陳必先刪 Joyce Hatto 造假事件（他人刑事類爭議）改寫重錄；Fournier 刪小兒麻痺；Kirkpatrick 刪單源評價與晚年失明；單一名卡超 250：Ram Narayan 刪電台試音軼事、Clarke 刪「最早一批女性樂手」與壓縮四處。
+  - out-2 11 處：Rannap、Scotto、Muti、Désormière、Ponselle、三重奏卡三處、Firkušný 的「最…」改「極…」；Bonynge「指揮病倒」改「無法上台」；三重奏「早逝」改「過世」。
+  - 保留：Clarke「Stanford 第一位女性作曲學生」（通行事實）；具名音樂人評語（Menuhin、Uchida、Harrison、Toscanini、Muti、Glenn Gould、Barbara Hannigan、Poulenc、Cortot）；Zukerman 父母大屠殺倖存者、Feuermann 遭納粹解職、Firkušný 出逃各一句；在世者各一處。
+- 待本機：陳必先《郭德堡》1985 錄、卡 1988（另有 2001 重錄）；Fournier 貝多芬 1965 錄、卡 1966；Zukerman 貝多芬 1971–73；Muti《Cherubini: Requiem》1975 版本與調性未確認；Rannap 上線簡介「最早發行品」誤（Ruja 1979 EP）；Bonynge《霍夫曼》上線簡介「原始設想」無源；Ram Narayan 上線簡介 1956 獨奏好評無源；Désormière《Pelléas》上線簡介錄音月份待核；Norrington、Tureck、Ponselle、三重奏卡池版本年份未核。
+
+## ar-d-113（2026-10-15）
+
+- 40 位全上架（34 full、6 thin：Sabine Liebner、張永宙、趙成珍、Seth Parker Woods、呂紹嘉、Sol Gabetta），無不寫。
+- 古典段 R 至 T 字頭；多名卡放寬：Sakamoto／Byrne／蘇聰 262、Call of the Valley 三人卡 256、Richter & Borodin Quartet 278。Scott Ross、Solomon 預抓維基同名混卡已棄。
+- 搜尋超額：Sakamoto 三人卡、Sequentia、曹秀美各超 1 次，Richter & Borodin 超 2 次，皆補第二源，放行。
+- 2025–26 事實：Gubaidulina 2025 年過世（補洞兩源），只寫年份；Sabine Meyer 2025 年 12 月告別演奏（維基＋Violin Channel 兩源）。
+- 審稿修 20 處：
+  - out-1 10 處：Crawford Seeger、Sciarrino、Rachmaninoff、Nazeri「最…」改「極…／早期」；Sakamoto 三人卡刪葛萊美（在世者一處）；Joplin 刪窮困過世與無名墓地、Prokofiev 刪與史達林同日過世與遺體細節、Scott Ross 刪父親過世、Rachmaninoff「陷入低潮」改「沉潛」、Sequentia 刪「兩人也是夫妻」。
+  - out-2 10 處：三人卡刪白金與「最暢銷之一」、Schwartz 刪奧斯卡座數；馬思聰、Gubaidulina、Richter「最…」改「極…」；Cleobury 刪「第一位」；Cherkassky、馬思聰、Barere、Solomon 刪死亡情境與身後細節。
+  - 保留：Crawford Seeger「第一位獲 Guggenheim 的女性作曲家」、Hough「第一位獲麥克阿瑟的古典演奏者」、Sheku「BBC Young Musician 第一位黑人冠軍」（通行事實）；Sabine Meyer 柏林愛樂試用風波（本人說法並陳）；馬思聰 1967 出走、Isserlis 祖父離蘇各一句；具名評語（Stravinsky、Horowitz、Neuhaus、John Rutter、Karajan）。
+- 待本機：Accardo 帕格尼尼全集為 DG、卡 1976 對不上 1975 評論；張永宙卡 1998 疑為 EMI Sibelius／Mendelssohn；Crawford Seeger 卡 1931 為創作年、實為 1997 DG；Koussevitzky 卡 1944 查無（Ravel 配器首錄 1930）；呂紹嘉是否指揮《樂典08》；Call of the Valley 卡 1968、錄於 1967；Richter & Borodin Franck 卡 1981 疑為 1986 現場；Solomon 卡 1959 疑再版；馬思聰卡池是否本人演奏、Zimmermann／Isserlis 卡池樂團廠牌未查；《末代皇帝》上線簡介 pubIssues 2 條；《Wicked》RIAA 白金待查。
+
+## ar-d-114（2026-10-15）
+
+- 40 位全上架（35 full、5 thin：臺北市立國樂團、高木正勝、Teodor Currentzis、Vienna Octet、Wilhelm Backhaus），無不寫。
+- 古典段 T 至 W 字頭；無多名卡。The Ronettes 卡池誤歸古典，照女子流行團體寫；The Sixteen 寫合唱團本身，不重複 Harry Christophers 個人卡。Ullmann 身分寫「奧地利出身、在布拉格活動」。
+- 搜尋超額：Takács Quartet（g1）超 1 次補獎項第二源，放行。
+- 審稿修 16 處：
+  - out-1 4 處：李泰祥刪賣斷版權與晚年經濟困頓；Hearne「兩度入圍」改「曾入圍」；Ronettes 刪 Hot 100 名次（成員在世，只留名人堂）；Tallis「最偉大之一」改「極重要」。
+  - out-2 12 處：Mørk、Repin、簡文彬刪「首位／最年輕」類宣稱；陳銀淑刪 Gaudeamus、Cosma「兩度獲凱撒」改一處（在世者一處）；de Sabata 兩處、Gieseking 非獨立評價改／刪；Serafin「女主角病退」改「無法演出」並修句首年份流水帳、壓字數；Ullmann 單一名卡 257 壓到 236。
+  - 保留：黛敏郎「第一位獲奧斯卡配樂提名的日本籍作曲家」（兩源）、Landowska「第一位用大鍵琴錄《郭德堡》」（通行事實）；〈橄欖樹〉禁歌、蕭泰然〈民主進行曲〉遭禁、Silvestrov 遭除名、Ashkenazy 離開蘇聯、Ullmann Theresienstadt 各一句；西洛斯 Billboard 200 第 3 名（必要例外）；Sofronitsky 與 Scriabin 長女結婚（身分核心）。
+- 待本機：李泰祥卡池《鄉土．民謠 第一輯》查無專輯資料；Mørk Brahms 卡 1994 搭檔年份可能不符；Silvestrov《Silent Songs》卡 1977 為作曲年（ECM 1986 錄、2004 發行）；Serafin《Rigoletto》應為 1955 錄、1956 發行；陳銀淑卡池推定 Analekta；Backhaus 卡 1969 疑再版（1950–53 錄）；簡文彬《Taiwan Rhapsody》卡 2014、官網 © 2015；King's Singers 卡池年差一年；Ronettes 上線簡介「鼻腔嗓音」、Sorey 上線簡介「2015 年 5 月布魯克林首演」無源。
+
+## ar-d-116（2026-10-15）
+
+- 5 位全上架（5 full），古典段收尾的影視與動畫配樂作曲家：盧律銘、菊池俊輔、陳光榮、陳勳奇、青木望。
+- 搜尋超額：盧律銘（g1）超 4 次，查金馬獎與《返校》配樂錄音細節的第二源（未證實的「40 位樂手、玉成戲院錄音室」未收），比照「第二源」放行；超額偏多，記此備查。
+- 2025–26 事實：青木望 2026-02-20 過世（94 歲）。補洞兩源（日文維基、GameBusiness 訃報）；主線 WebSearch 再核：GameBusiness（松山千春 3 月 8 日於廣播證實）、allcinema 同載 2026/02/20。只寫年份。
+- 審稿修 1 處：陳勳奇刪「父親生意失敗」（家人私事）。保留：菊池俊輔〈怨み節〉無台灣通行譯名，寫原名附羅馬拼音；盧律銘只寫〈光明之日〉金馬獎一處（與雷光夏合寫）；陳光榮金像獎不寫座數片名；陳勳奇以「據他自述」帶出專訪內容。
+- 待本機：青木望上線簡介把《デビルマン》《母をたずねて三千里》寫成「動畫音樂」，實為主題歌編曲與插入歌（pubIssues 1）；陳光榮金像獎片名與是否與金培達共獲未核。
+
+## ar-d-115（2026-10-15）
+
+- 40 位全上架（38 full、2 thin：柴野さつき、横山菁児），無不寫。
+- 古典段 W 至 Z 字頭，加希臘文與日文名（動畫、遊戲配樂作曲家）；多名卡放寬：馬友友 & Silkroad 267、Theodorakis & Farantouri 269、崎元仁 / 岩田匡治 276。希臘文 Theodorakis 卡以《Ρωμιοσύνη》為主，不重複 ar-d-110 的拉丁拼寫卡。
+- 搜尋超額：無。
+- 審稿修 20 處：
+  - out-1 15 處：W.F. Bach、Mengelberg、Lutosławski、Mozart、李雲迪、Loriod 的「最…」改「極…」；W.F. Bach「窮困而終」改「過世」；Lutosławski 刪禁演句（政治只留占領期一句）；yMusic 刪媒體年度第一；Guller 單一名卡 273 刪母親生產時過世並壓縮兩句到 247；林尹燦「南韓」改「韓國」、刪「史上最年輕」；李雲迪刪「史上最年輕」只留「第一位中國籍首獎得主」。
+  - out-2 5 處：Keating（在世）刪舞台恐懼與 iTunes 買房、串流收入；Theodorakis「最知名」改「極知名」；早坂文雄「最重要的老師」改「重要」；盛岡夕美子補空格。
+  - 保留：林尹燦影片觀看數補洞層列必要例外，主線裁定不寫（在世者串流類規則優先）；李雲迪 2021 年案件、Bashmet 政治立場、すぎやま政治發言、Theodorakis 反猶爭議一律未寫；Růžičková「被稱為第一位錄全套巴赫鍵盤作品」；Mengelberg 戰時合作、俞麗拿文革下放、周龍文革下鄉、Guller 躲藏、Růžičková 集中營、Theodorakis 軍政府禁樂各一句；在世者各一處。
+- 待本機：俞麗拿《梁祝》1993、李雲迪 2001、曾宇謙 2012、Guller 1956 卡池專輯對應未證實；Bashmet Schnittke 卡 1991 vs 1988；林尹燦 Rach 3 卡 2022 vs 2025 Decca 發行；Francescatti 卡 1949 搭檔年份未給；Dagar 上線簡介「修車廠與賣麵包 25 年」單源（pubIssues 1）；天野正道上線簡介 OVA 發售日待核；digest 把 Giant Robo 誤作《巨神 Gorg》、《排球女將》對應待查。
+
+## ar-d-129（2026-10-15）
+
+- 40 位全上架（32 full、8 thin：山中千尋、深町純、MALTA、Manhattan Jazz Quintet、カリオカ、益田幹夫、Cæcilie Norby、Native Son），無不寫。名冊補登批（add-20261015-backfill）第一批，爵士為主。
+- 同名混卡已棄：MALTA（馬爾他）、Benny Green（英國薩克斯風手）、José James（同名薩克斯風手）。鈴木勲的 Blakey 說法疑混淆鈴木良雄，不寫。
+- 搜尋超額：Air（g4）超 1 次，開專輯條目讀具名評語，放行。
+- 2025–26 事實：Immanuel Wilkins 2026 年入選 MacArthur Fellows——補洞第二源偏弱（NYU 新聞稿只見標題），主線 WebSearch 再核：Philadelphia Inquirer、AP 2026 名單（WECT／AJC 轉載）一致，照收一處。Bill Frisell 2026《In My Dreams》兩源皆 Blue Note 自家頁，只寫編制。
+- 審稿修 15 處：
+  - out-1 7 處：Rubalcaba、Ron Carter、Alsmann「最…之一」改「極…」；Rubalcaba 刪 Gillespie 抬棺；Reeves 刪兩歲喪父；Rosnes 刪生父母與領養、「多次獲 Juno」改「曾獲」；Manhattan Jazz Quintet 刪銷量。
+  - out-2 8 處：本多俊之刪「父親到過世都沒認可」、「無人能出其右」改寫（初改「獨樹一格」撞禁語，再改「辨識度極高」）；阿川泰子刪離開演藝圈的私人原因；Don Byron 刪童年氣喘、三項獎只留普立茲入圍；Patricia Barber 刪院士只留古根漢；NANIWA EXPRESS 刪單源「最成功之一」。
+  - 保留：Blanchard「大都會首部黑人作曲家歌劇」（通行事實）；Ron Carter 金氏紀錄、Oosterhuis 荷蘭專輯榜冠軍（在世者核心一處、兩源）；Wilkins《Omega》題材；具名音樂人評語。
+- 待本機：Erik Truffaz 上線簡介 2 條（Blue Note 簽約年、金唱片歸屬）、Stanley Jordan 上線簡介五軌／六軌自相矛盾、鈴木勲上線簡介 Blakey 說法單源（pubIssues 共 4）。
+
+## ar-d-130（2026-10-15）
+
+- 40 位全上架（32 full、8 thin：向井滋春、森園勝敏、Charles Pasi、Charlie Hunter Quartet、George Young、Gerald Clayton、Johnathan Blake、Jukka Perko），無不寫。名冊補登批第二批，爵士為主。
+- 同名混卡已棄：Out of the Blue（鹽湖城雕塑）、大野俊三（同名足球員）、George Young（英國政治人物，改查費城薩克斯風手 George Opalisky Jr.）。
+- 搜尋超額：無。
+- 2025–26 事實：George Young 2026 年過世（補洞 Chiaroscuro 悼文＋維基；主線 WebSearch 再核，維基載 2026-04-23），只寫年份；Julian Lage《Scenes From Above》、Makhathini《The Myth We Choose》2026 兩源；Johnathan Blake 2025《My Life Matters》只有 Blue Note 單源，主線刪除，改寫 thin。
+- 審稿修 7 處：Lage「最早慧之一」改「極」；Aga Zaryan 刪「第一位簽 Blue Note 的波蘭音樂人」只留 Fryderyk；McFerrin 刪 Hot 100「唯一無伴奏冠軍曲」只留 NEA；Jannah「兩度獲 Edison、最高榮譽之一」改「曾獲」；Johnathan Blake 刪 2025 單源新作並壓縮成 thin。
+  - 保留：Geri Allen「Jazzpar 第一位女性得主」、McFerrin 父親「第一位登上大都會的非裔男歌手」（通行事實）、弘田三枝子「據報導首位登上新港」；具名評語。
+- 待本機：Out of the Blue 上線簡介「1985 年組起」誤（1984）；向井滋春上線簡介新宿ジャズ賞年份兩說；Joe Chambers 上線簡介 3 條（發行日、首作年、《Mirrors》年份）；Kevin Hays 上線簡介「首張領班盤」誤；Marlene 上線簡介來日年齡不一（pubIssues 共 7）。
+
+## ar-d-131（2026-10-15）
+
+- 40 位全上架（33 full、7 thin：Pieces of a Dream、Prism、Steps、Wha-ha-ha、99.99、Bennie Wallace、Gianluca Petrella），無不寫。名冊補登批第三批，爵士為主。
+- 多名卡放寬：Charles Lloyd & The Marvels 276、George Russell & The Living Time Orchestra 279。Prism 寫樂團（森園勝敏個人卡在 ar-d-130）；Doky Brothers 以兄弟檔為主、不重複 Chris Minh Doky 個人卡。
+- 搜尋超額：Ben l'Oncle Soul（g3）超 3 次，查 Victoires 類別與白金第二源，比照盧律銘先例放行（偏多，記此）。
+- QA 處理：村岡實 facts「厚生年金会館」被判簡體，主線改正體「會館」。
+- 審稿修 9 處：Meshell 刪「維基百科稱」與父母過世遺物；Musica Nuda「病倒」改「無法上台」；Fresu Quintet、Paul Jackson Jr.、Domínguez（評審語）「最…」改「極…」；Trio Töykeät 刪「第一支在總統府演出」；村岡實「最早」改「早期」；Gare du Nord 刪荷蘭專輯榜 100 週；Russell「唯一原創的理論」改寫。
+  - 保留：99.99 thin 以製作分工與吉他換名作做法句（勉強過門檻）；具名評語（James Taylor、Wynton Marsalis、Chucho Valdés、Grover Washington Jr.）；在世者各一處。
+- 待本機：Musica Nuda 上線簡介「第五張錄音室專輯」無源、Rick Margitza 上線簡介「Miles 聽完卡帶」無源（pubIssues 2）；Bob Dorough NEA 爵士大師 facts 記 2019、本人 2018 過世，年份待核。
+
+## ar-d-132（2026-10-15）
+
+- 40 位全上架（27 full、13 thin：Mark Shim、Modern Jazz Playboys、Out Of/Into、Placebo (Belgium)、R+R=NOW、Ruben Hein、Superblue、The Benny Green Trio、The Players、U-Street All Stars、ゼロ戦、上田力、井上敬三），無不寫。名冊補登批第四批，樂團與合作掛名卡多、日本冷門樂團多，thin 比例偏高。
+- 多名卡放寬：Mal Waldron & Jackie McLean 252、Waldron 五人卡 279、Willie Nelson & Wynton Marsalis 265。已有個人卡者（Blanchard、Benny Green、Pullen、Adams、Fresu）在樂團卡只寫樂團與卡池那張。
+- 搜尋超額：Waldron 五人卡（g1）超 4 次查五人各自身分，放行。
+- 審稿修 15 處：
+  - out-1 6 處：Newton「票選第一 23 次＋年度專輯」改「長年名列第一」不帶次數刊名；Scofield、Waldron & McLean（NEA 語）、Fresu & Caine「最…」改「極…」；Lena Horne 單一名卡 272 刪「終生摯友」與甘迺迪中心壓到 247。
+  - out-2 9 處：Barretto 兩處、Ron Miles「最…」改「極…」；Ron Miles 刪氣喘、Yaron Herman 刪膝傷；Superblue 刪「Hargrove 第一次錄音」；Blanchard E-Collective 刪 Eric Garner 臨終與槍枝暴力句（政治只留一句）；Nelson 刪甘迺迪中心（在世者一處）。
+- 待本機：Önder Focan 上線簡介「Blue Note 第一張土耳其專輯」有並存說法、Modern Jazz Playboys 上線簡介人數（15 vs 12）、Ralph Peterson 上線簡介加入 Blakey 年份、Ferrell 卡池日本首發名、Yaron Herman 上線簡介獎項名誤（pubIssues 5）。
+
+## ar-d-133（2026-10-15）
+
+- 40 位全上架（31 full、9 thin：伊東たけし、喜多嶋修、山屋清、真梨邑ケイ、赤尾三千子、Alice Ricciardi、Aron Ottignon、ATLAS、Blue Note All-Stars），無不寫。名冊補登批第五批，日本音樂人與同一人多張掛名卡多。
+- 多名卡放寬 8 張（Sarpila & Pyysalo、Bebo 三重奏、Charlap & Rosnes、Charlap & Stewart、Evans／Jones／Mitchell、Lagrène 三重奏、Dorough & Frishberg、Hutcherson 三重奏，皆 ≤280）。同一人多卡（Charlap、Bill Evans sax、O'Farrill、村岡実、Belden）各以該編制與卡池那張為主。_BY.ALEXANDER 照 Alex da Kid 寫；ATLAS 為日本三鍵盤手錄音室團；'Hannibal' Marvin Peterson 即 Hannibal Lokumbe。
+- 搜尋超額：渡辺貞夫 with GJT、Sarpila & Pyysalo、Evans／Jones／Mitchell（g2–g4）各超 1 次，皆補第二源，放行。
+- Severi Pyysalo 已過世但兩源只寫月份、無年份，正文只寫「已過世」。
+- 審稿修 12 處：
+  - out-1 5 處：大村憲司「長期信任」加「據說」、刪過世當晚流星群；山口真文刪宣傳單源「數一數二」；村岡実兩處「最早之一」改「早期」；菊池ひみこ刪鳥取市文化賞（在世者一處）。
+  - out-2 7 處：Kähärä 刪「第一位女性得主」；Sarpila & Pyysalo「最知名」改「極」；Bebo 刪妻兒留島；Charlap & Rosnes 刪 Rosnes 領養身世（比照 ar-d-129）與婚禮地點；Lagrène 三重奏丹麥百科「唯一」改寫；Dorough & Frishberg 刪「身後獲 NEA」（年份矛盾）。
+- 待本機：渡辺貞夫 with GJT 卡池《Bird of Paradise》渡辺是否參與；山口真文上線簡介 Leeward「極少見」無源、宮間利之上線簡介芸術祭主詞不清；Kähärä 上線簡介「第一張個人專輯」誤；Bill Stewart 上線簡介「第一張掛名碟」誤（pubIssues 4）；Bob Dorough NEA 年份。
+
+## ar-d-134（2026-10-15）
+
+- 40 位全上架（27 full、13 thin：Bobby Lyle Trio、Booster、Brandon Woody、Brisa Roché、Buscemi & Bisceglia、Charlie Hunter / Leon Parker、China Moses、Chris Botti、Dave Koz、Emma Salokoski & UMO、Eric Darius、FATHERS、Floratone），無不寫。名冊補登批第六批。
+- 多名卡放寬：McFerrin & Corea、Lloyd／Moran／Sewell、Mingus Sextet with Dolphy、Mariano & 渡辺、Parker & Gillespie、Connor 三人、Hinze 三人、Grusin／GRP／渡辺、Bosso & Girotto，另 Charlie Hunter & Pound For Pound 258（四人編制樂團卡）。Charlie Hunter 四張卡、Fabrizio Bosso 兩張卡各以該編制為主。同名混卡已棄：Cecil Taylor Unit（同名專輯）、David Matthews（同名作家）。
+- 搜尋超額：Branford Marsalis Quartet（g1）超 2、Lloyd 三人卡與 Mingus Sextet（g2）各超 1、Connor 三人卡超 2、Hinze 三人卡超 1（g3），皆補第二源或多人身分，放行。
+- 審稿修 10 處：McFerrin & Corea、Cecil Taylor、Mingus、Parker & Gillespie「最…之一」改「極…」；Lloyd 三人卡刪《Forest Flower》百萬銷量；C.P.U「日本第一支自由爵士樂團」改「早期」；David Matthews「日本頭號爵士團」改寫；Don Byron and Existential Dred 刪童年氣喘（比照 ar-d-129）；FATHERS、Floratone 首句補國籍。
+  - 保留：Bosso 1999 義大利 Top Jazz 票選最佳新人（權威票選、不寫刊名）；C.P.U 不寫富樫雅彦事故與傷殘；具名評語（Questlove、Blanchard、Corea、Miles Davis、錄音學院主席）。
+- 待本機：Booster 上線簡介 2 條、Brisa Roché 1 條、Cautious Clay 2 條、Mariano & Watanabe 盤名拼法、Eric Darius 榜名與名次 2 條、Chris Dave 簽約起源、富樫雅彥事故年份（pubIssues 約 10）；Branford《Belonging》2025、Lloyd《Figure in Blue》2025 新近事實已兩源。
+
+## ar-d-135（2026-10-15）
+
+- 40 位全上架（32 full、8 thin：French Toast、Hang Raiji、High Five Quintet、Jackie Allen、James Hurt、Jazztronik、Joe Sample / Ray Brown / Shelly Manne、John Kaizan Neptune / 直居隆雄），無不寫。名冊補登批 add-20261015-backfill 最後一批。
+- 多名卡放寬：Sinatra / Norvo、兩張 Hubbard / Shaw、Paoli 六人、Edison 五人、Laws 八人、大西順子、Great Jazz Trio、Terrasson & Wilson、Baxter 四人、Lovano & Rubalcaba、Lovano & Osby、Lovano & Hank Jones。Joe Lovano 五張合作卡、Hubbard / Shaw 兩張、Neptune 兩張、Hank Jones 兩張（個人卡與 Lovano 二重奏）各以卡池那張為主，生平不重複。
+- 搜尋超額：Edison 五人、Baxter 四人、Jeff Lorber 放行（多人身分或補第二源）。
+- 審稿修 11 處：D'Andrea、Sinatra（兩處）、Hubbard / Shaw「最…之一」改「極…」；DeJohnette「最早獲樂評肯定」改「早期」；大西順子刪「第一位登上 Village Vanguard 的日本音樂人」首位宣稱；Frank Emilio Flynn 刪產鉗致盲與幼年喪母；Walrath 刪 Mingus 晚年無法演奏；Cassandra Wilson 的《時代》雜誌去名（否決寫作代理「綜合雜誌可具名」）；Jane Bunnett 在世者只留 Juno，刪加拿大勳章。
+  - 保留：Lorber 2018 葛萊美（在世者核心成就一處）、Hindi Zahra Victoires de la Musique 一處；Gino Paoli 2026、Jack DeJohnette 2025、Cassandra Wilson 2026 過世已以 WebSearch 兩源核實；Cavassa 2021 Sarah Vaughan 大賽並列冠軍（兩源），2026《Diavola》細節不寫。
+- 待本機：George Howard、Hank Jones、John Kaizan Neptune 上線簡介各 1 條（pubIssues 3）。
+
+## 第十輪收尾（ar-d-104～116＋ar-d-129～135，2026-10-15）
+
+- 二十批全數上線：765 位（650 full、115 thin），無不寫，審稿修 313 處。介紹總數 7,602 → 8,369。
+- 範圍：古典段寫完（ar-d-104～116，排隊名冊清空）；名冊補登 554 位中切 7 批 280 位（爵士為主）上線，剩 274 位未切，留下一輪。
+- 本輪重申的形狀：
+  - 媒體名一律匿名，綜合雜誌（《時代》）亦同；具名音樂人與官方機構可保留。
+  - 他人病況與家人逝世細節不寫（Flynn 致盲與喪母、Mingus 晚年無法演奏、Don Byron 童年氣喘）。
+  - 同一人多張合作卡（Joe Lovano 五張、Charlie Hunter 四張、Hubbard / Shaw 兩張）各以卡池那張為主，生平只寫一次。
+  - 2025–26 年死訊與新近事實，主線 WebSearch 兩源核實：青木望、George Young、Gino Paoli、Jack DeJohnette、Cassandra Wilson、Roger Norrington；Immanuel Wilkins 2026 麥克阿瑟獎。
+- 待本機：KV 上線簡介修正見 `audits/ARTIST-PUB-ISSUES.md`（累計 1,368 條）；本輪各批「待本機」段的卡池年份與曲風存疑。
+
+## 第十一輪五批接力（ar-d-136～140，2026-10-16 起）
+
+- 店主 2026-10-16「再五批」。從 add-20261015-backfill 剩下的 274 位，照切批規則（爵士先、卡數多的先、同卡數依鍵排序）接續切 ar-d-136～140 五批 200 位（John Lewis & Hank Jones … 横内章次とクインテット・プラス・ラテン），全為爵士。剩 74 位（爵士 38、流行 15、搖滾 9、民謠 7、靈魂 3、電子 1、古典 1）留下一輪。
+
+## ar-d-136（2026-10-16）
+
+- 40 位全上架（26 full、14 thin：Scofield & Metheny、Judi Silvano、Perko & Virtuosi di Kuhmo、Juliano Rossi、Kangaroo、Kenny Werner、L.A. Transit、Lew Tabackin、Logan Richardson、Love Live Life、Waldron & 日野皓正、Twi-Life、Marty & Mystics、Maya Delilah），無不寫。名冊補登批第八批。
+- 多名卡放寬：John Lewis & Hank Jones、Kendrick Scott 三人、Les Brown（兩位客席）、Waldron & 山下洋輔、Tyner 三張（Hutcherson、McLean、Henderson）、Mercereau / Johnson / Niño。Kenny Barron 兩張編制卡、Kenny Burrell 兩張合作卡、McCoy Tyner 三張合作卡、Mal Waldron 兩張合作卡各以卡池那張為主，生平不重複。
+- 預抓維基誤配（John Lewis 國會議員、Kangaroo 動物、Love Live Life 英國專輯、Marty & Mystics 籃球隊、Paul Cornish 橄欖球員）補洞層皆整份棄用，照卡池重查。
+- 審稿修 12 處：Cortés、Barron Quintet、Les Brown、Louis Hayes「最…之一」改「極…／一線」；Solal 的 Avakian 評語「最偉大」改「頂尖」；山下洋輔「日本最早」改「早期」並刪紫綬褒章；Barron Trio 刪製作人評論家名；Kitty Hoff 在世者只留一項獎助；Tabackin、New York Liner 刪《Swing Journal》獎項（刊名、單源）；Minyo Crusaders 片假名改羅馬字並壓到 250 字。
+  - 保留：José Luis Cortés 2022 年過世（補洞層已更正被誤算的 2026）；Kiefer 引 Blue Note 總裁 Don Was、Anderson .Paak《Ventura》葛萊美一處；Nancy Wilson 榜單與葛萊美（已故者）；Solal 維琪政權背景一句。
+- 待本機：Juliano Rossi 2、Kitty Hoff 2、Karl Denson、Kenny Barron Trio、Burrell & Washington、Kiefer、Minyo Crusaders 各 1（pubIssues 9）。
+
+## ar-d-137（2026-10-16）
+
+- 38 位上架（27 full、11 thin：NORIKI、Paul Cornish、Ralph Peterson Fo'tet、Ravi Coltrane、Richard Pine & Company、Rodney Jones、Ron Carter / Ricky Dillard、Clooney with Les Brown、Sadistics、Scolohofo、Spick & Span），不寫 2 位：Sidevision（只有成員簡歷與發行資料，寫不出有來源的聲音句）、South Wind Section（全部事實出自同一 Discogs 頁，單源）。名冊補登批第九批。
+- 多名卡放寬：Rosnes & Danish Radio Big Band、Beirach & Liebman、Beirach with 富樫雅彦、Ron Carter & Danny Simmons。Ralph Peterson 三張、Ron Carter 三張、Stan Tracey 兩張、Sonia Rosa 兩張、Stefon Harris 兩張、Richie Beirach 兩張各以卡池那張為主，生平不重複。Beirach with 富樫雅彦的《Kahuna》查無可開來源，改寫兩人同月的現場盤《津波 Tidal Wave》，不寫富樫受傷經過。
+- 預抓維基誤配（Sarah McCoy 小說家、Spectrum 光譜詞條、Richard Pine 愛爾蘭評論家、Paul Cornish 橄欖球員）補洞層皆棄用。
+- 審稿修 5 處：Fresu「辨識度最高之一」、Cornish「最重要的影響之一」、Stan Tracey「最受推崇之一」改「極…」；Rita Reys 單卡 263 字刪 Avakian 評語；Sarah McCoy 刪父親與祖母過世並壓到 250 內。另補洞稿「九段会館」「稲葉国光」照 ar-d-131 先例改「會」「國」。
+  - 保留：Richie Beirach（2026-01）、Danny Simmons（2026-06）過世，主線 WebSearch 兩源核實（WRTI、DownBeat；Black Enterprise、Westwood Gallery）；Ron Carter 金氏紀錄錄音數量（必要例外、不用「最」）；Rita Reys 263→233 後的六座 Edison 獎（已故者）；Stan Tracey Octet 水星獎入圍（已故者）；Orphy Robinson MBE 一處。
+- 待本機：Sadistics、Scolohofo、Stefon Harris & Blackout 上線簡介各 1 條（pubIssues 3）。
+
+## ar-d-138（2026-10-16）
+
+- 40 位全上架（23 full、17 thin：Harris & Terrasson、Lacy / 高橋悠治 / 小杉武久、Sugar Loaf Express、Sunburst、Tania Maria、Blue Note 7、Blue Note All Stars、Freedom Unity、Nels Cline 4、Nels Cline Singers、Northern Governors、Players / 鈴木宏昌、THE SPHÈRES、Dutronc & Les Esprits Manouches、Tranzam、Viktoria Tolstoy、Wind-Breakers），無不寫。名冊補登批第十批。
+- 多名卡放寬：Teddy Wilson / 北村英治、Super Quartet、Monk with Coltrane、Hagans & Belden、Hagans & Printup、Allen & Mills、Trijntje with Sinfonietta、Trio Focan、Wayne Shorter Quartet、Woody Herman / 北村英治。Nels Cline 兩張、Thomas Dutronc 兩張、Tim Hagans 兩張、北村英治兩張、Steve Lacy 三張各以卡池那張為主。The Pentagon 實為 Cedar Walton 名下錄音陣容、Sugar Loaf Express 只是該專輯陣容、Today's Latin Project 為一次性錄音名義，照實寫。
+- 預抓維基誤配（Steve Lacy → The Internet 吉他手、Sunburst 圖案、Tania Maria 女演員）補洞層棄用。補洞稿「稲葉国光」照先例改「國」。
+- 審稿修 8 處：Gadd、Teddy Wilson（兩處）、Super Quartet、Monk with Coltrane、Allen & Mills（Eno 評語）、Shorter Quartet「最…之一」改「極／早期」或改寫；Masakowski「新奧爾良」統一為「紐奧良」；Wind-Breakers 刪「晚年」（1980 錄音、同團與否無法確定）。
+  - 保留：Trio Focan 照補洞稿寫土耳其吉他手 Önder Focan 領軍（主線特注誤記為芬蘭，兩位客座才是芬蘭人，記為主線更正）；Bill Holman 2024、Ellis Marsalis 2020、Wayne Shorter 2023、Tony Allen 2020 過世（截止日前通行事實）；Charles Lloyd、Thierry Lang、Thomas Dutronc 在世者各一處。
+- 待本機：Harris & Terrasson 2、Monk with Coltrane 2、Lacy / 高橋 / 小杉、Freedom Unity、Thomas Dutronc、Allen & Mills 各 1（pubIssues 8）。
+
+## ar-d-139（2026-10-16）
+
+- 39 位上架（32 full、7 thin：Henri 菅野、Sammy & 稲垣次郎、上田力 & The Power Station、佐藤允彦 & Medical Sugar Bank、兼崎順一、前田憲男・藤舎推峰、増尾元章），不寫 1 位：仲村裕美（只有出版紀錄，聲音句只剩曲目取向與 Discogs 風格標籤，照 Vex'd 先例不寫）。名冊補登批第十一批，日本爵士為主。
+- 多名卡放寬：Peacock / 佐藤 / 富樫、Steve Marcus + Soul Media、Stomu Yamashta & 佐藤、Mickey 吉野 & 渡辺香津美、井野信義 & Lester Bowie、佐藤 & Dauner、佐藤 & Peacock、佐藤 & Big Soul Media、佐藤 ft. Gomez & Gadd、前田憲男 & Tin Pan Alley、原信夫 / Elvin Jones / Frank Foster、古澤良治郎 & Lee Oskar。佐藤允彦六張、前田憲男三張、土取利行三張、Stomu Yamashta 兩張、井野信義兩張、北村英治兩張、古沢良治郎兩張各以合作者與卡池那張為主，生平不重複（兩張 Peacock 卡一張寫駐德與 Jarrett 三重奏、一張寫 Ayler 與 ECM）。
+- 搜尋超額：Mickey 吉野 & 渡辺香津美超 1（補 1980 天津巡演的非維基第二源），放行。
+- 本批起片假名一律改寫：人名改羅馬字（Henri 菅野、George 川口、Tiger 大越、Mickey 吉野、Smiley 小原、Shibata Hatsumi），團名改羅馬字或「與」（稲垣次郎與 Soul Media、Big Soul Media），曲名與片名改通行中文或英文（〈Gandhara〉〈Monkey Magic〉〈Poésie〉〈寶島〉〈歸來的醉漢〉、《小拳王》《飛機雲》《平成狸合戰》《Innocence》《影像的世紀》），美空ひばり作美空雲雀；漢字人名保留日文字形（渡辺、稲垣、武満）。早前 ar-d-119／129 保留片假名的寫法不追改。
+- 審稿修 25 處：上述片假名改寫 16 處；Peacock、Gomez & Gadd、加藤和彦「最…之一」改「極…」；Yaron Herman 刪膝傷；伊藤君子刪《Swing Journal》讀者票選連續九年第一（刊名、在世者榜單）；原信夫刪單曲名改「熱門曲」；土取・坂本刪 2026 黑膠重發（兩源為同一新聞稿）；土取・高木刪評論家間章；古沢 live house 空格。
+  - 保留：Wynton Marsalis「第一位拿下普立茲音樂獎的爵士音樂人」屬通行事實（照 Van Cliburn 先例）；Julian Cope 評 Stomu Yamashta（具名音樂人）；三枝成彰文化功勞者、北村英治旭日小綬章（在世者各一處）；しばたはつみ Oricon 第 17 名（已故者）。
+- 待本機：Mickey 吉野、佐藤 & MSB、佐藤 & Peacock、佐藤 ft. Gomez & Gadd、北村 & Happy Cooking、土取利行 上線簡介各 1 條（pubIssues 6）。
+
+## ar-d-140（2026-10-16）
+
+- 38 位上架（24 full、14 thin），不寫 2 位：村松健、横内章次とクインテット・プラス・ラテン（研究稿都只有 ja 維基一個來源，src 不足 2，照 ar-d-137 South Wind Section 先例）。名冊補登批第十二批，本輪最後一批，日本爵士為主。
+- 富樫雅彦八張合作卡（宮沢昭等四人、ニューハード、Wave、高橋悠治、高柳昌行、鈴木勲、Richie Beirach、加古隆）與山本邦山 / 富樫 / 山下，每張只用一句交代富樫身分、說法互不重複，重心放在合作者；兩組寫作代理跨組錯開事實（New Direction、手肘奏法、早稻田演出等只寫一次）。富樫的受傷、病況、死因一律未寫。
+- 搜尋超額：大村憲司 / 渡辺香津美 / Lee Ritenour 15 次（超 7，三人合查並為 1978 原盤找第二源）、山本剛 with Sam Jones, Billy Higgins 10 次（超 2，多出兩次為無內容頁）。放行，大村那筆記為例外、不作先例。補洞稿「稲葉国光」照先例改「國」。
+- 審稿修 11 處：鈴木勲、Ponta 村上秀一、松岡直也、松本英彦（兩處）「最…／第一人」改「極／首選／代表人物／早期」；加古隆刪「第一位在 ECM 出片的日本人」；山下洋輔トリオとブラス12 刪紫綬褒章（比照 ar-d-136）；峰純子刪模糊生年與單源刊物列名；村岡実 & 沢井忠夫刪宮城道雄急逝；高橋悠治「水牛楽団」改「樂團」。
+  - 保留：Richie Beirach 2026 年過世（ar-d-137 已兩源核實）；山本邦山 / 富樫 / 山下的 1969 學運背景一句；渡辺香津美引 Pat Metheny（具名音樂人）；奥慶一 JASRAC 賞、安藤正容 F-1 主題曲、Chris Hinze Montreux 獎（在世者各一處）。
+- 待本機：宮間利之 Canto 系列得獎年份、山屋清《Kyo》人間國寶說法、山本邦山《Kyorai》廠牌、峰純子 Hanna 爵位年份、Ponta 名字印刷因果，各 1 條（pubIssues 5）。
+
+## 第十一輪收尾（ar-d-136～140，2026-10-16）
+
+- 五批全數上線：195 位（132 full、63 thin），不寫 5 位（Sidevision、South Wind Section、仲村裕美、村松健、横内章次とクインテット・プラス・ラテン），審稿修 61 處。介紹總數 8,369 → 8,564。
+- 範圍：add-20261015-backfill 名冊的爵士段寫完；剩 74 位（爵士 38 為卡數分組後的尾段、流行 15、搖滾 9、民謠 7、靈魂 3、電子 1、古典 1）未切。
+- 本輪新定的形狀：
+  - 片假名改寫（ar-d-139 起）：人名改羅馬字、團名改羅馬字或中文編制名、曲名與片名改通行中文或英文；漢字人名保留日文字形；簡體字形（国、会）照 ar-d-131 先例改繁體。早前保留片假名的批次不追改。
+  - 研究稿只有單一來源（src 不足 2）的卡不寫，full 稿也一樣（横内章次）。
+  - 媒體名進正文的獎項（《Swing Journal》金唱片、讀者票選、Golden Hit Award）一律刪，與 Bosso 先例一致。
+  - 同一人合作卡多（富樫雅彦九張、佐藤允彦七張）時，每張身分句換說法，生平只在一張寫，兩組寫作代理跨組錯開事實。
+- 2025–26 年死訊：Richie Beirach（2026-01）、Danny Simmons（2026-06）主線 WebSearch 兩源核實；José Luis Cortés 經補洞層更正為 2022。
+- 待本機：KV 上線簡介修正見 `audits/ARTIST-PUB-ISSUES.md`（本輪新增 31 條，見各批「待本機」）。
+
+## 第十二輪三十批接力（ar-d-141～142＋ar-u-001～028，2026-10-16 起）
+
+- 店主 2026-10-16「做三十批」。盤點：卡池 19,121 張的藝人全部已有介紹、已排隊或列入不寫名單，未切的只剩 add-20261015-backfill 最後 74 位，切成 ar-d-141（40）、ar-d-142（34）。
+- 其餘 28 批由店主選定「thin 升級成 full」：取每個鍵最新一版上線成品中 status 為 thin 的 1,603 位，依卡數多→少、分級 A→D、鍵排序，切 ar-u-001～028 共 1,120 位（`batch-progress/artist-intro/upgrade-thin-20261016.mjs`，tier 記 U、addedBy upgrade-thin-20261016）。每批另寫 `cache/<批>-prior.json`（原 thin 正文、原批名、原補洞稿條目），補洞層從原有事實出發、只補缺的格；寫作層只寫補到 full 的人，仍 thin 的不寫、保留原上線版（記進該批 skipped）。
+- `scripts/build-artist-intros.mjs` 與 `desc-tools/artist-alias.mjs` 的 published 閘從 `ar-[a-d]` 改成 `ar-[a-z]`，ar-u 升級批未標 published 前不進分片；同鍵多版時檔名排序在後者蓋前，ar-u 自然覆蓋原 thin 版。
+
+## ar-d-141（2026-10-16）
+
+- 38 位上架（29 full、9 thin），不寫 2 位：池田芳夫（個人卡）、響野夏子（聲音句都只剩師承、合作名單或盤面掛名，照 Vex'd 先例；池田芳夫クインテット卡保留）。名冊補登批第十三批，日本爵士為主，另有 Steve Lacy (The Internet)、Ghost。
+- 多名卡放寬：渡辺貞夫 & Mariano、福村博 with 渡辺貞夫、八位吉他手《New York》、秋吉敏子 Trio & Flute Quartet、渡辺香津美 & Gentle Thoughts、深町純 & 21st Century Band、笠井紀美子三張、筒井康隆 / 市原 / 佐藤、辛島文雄 & Elvin Jones、鈴木勲 & Duke Jordan。笠井紀美子三張、深町純兩張、渡辺貞夫兩張、渡辺香津美兩張、鈴木弘三張、鈴木勲兩張、筒井康隆兩張各以合作者為主。
+- 搜尋超額：沢田靖司 & Soul Media 10、八位吉他手 9、筒井 / 市原 / 佐藤 9、鈴木勲・山本剛 9，放行（多名或補第二源）。補洞稿 国／会 改繁體時誤改「生活向上委員会大管弦楽団」的鍵，已還原；name 欄照名冊、正文寫「委員會」。
+- 審稿修 10 處：沢田靖司「日本第一」改「推崇備至」；Nelson、Walton、Gil Evans「最…之一」改「極…」；渡辺香津美 & Gentle Thoughts 刪 Pat Metheny 評語（跨卡重複）；筒井 / 市原 / 佐藤刪《Swing Journal》獎；鈴木弘刪「日本最好的長號手」（同出版者兩條）；《東海道戰爭》《世界遺產》改繁體；Ghost 補空格。
+  - 保留：浅川マキ照片假名規則寫 Maki Asakawa；秋吉敏子的兩段婚姻只作合作身分交代（照 Tabackin 先例）；Steve Lacy 葛萊美、筒井康隆谷崎賞（在世者各一處）；花柳幻舟不寫事件與刑案。
+- 待本機：沢田駿吾、秋吉敏子 Trio & Flute Quartet 上線簡介各 1 條（pubIssues 2）。
+
+## ar-d-142（2026-10-16）
+
+- 32 位上架（23 full、9 thin），不寫 2 位：真芽正恵（三格全無）、高田真樹子（只有 ja 維基單源，音樂貢獻格空）。名冊補登批最後一批（非爵士雜項：日本歌謠曲與民謠、西洋搖滾與靈魂、泰國、馬來西亞、台灣、古典）。add-20261015-backfill 554 位至此全數處理完。
+- 身分：破地獄是台北的實驗搖滾團（Scattered Purgatory），主線特注誤記香港，補洞層更正；Caravan 為泰國 Songs for Life 樂團、Wings 為馬來西亞 rock kapak 團、John Williams 為澳洲古典吉他手、Mother Earth 為 Tracy Nelson 的 1960 年代團，皆與同名者區分。
+- 搜尋超額：Lily 10、Yufu 9、高橋真梨子 9（補第二源），放行。
+- 審稿修 13 處：Wood Brothers、吉田拓郎、Caravan、Phoebe Snow、Wings「最…之一」改「極…」；Lily 刪母親過世；小柳ルミ子刪銷量、小坂明子刪 Oricon 連續 7 週第 1（在世者）；Caravan 政治背景只留成團一句，刪屠殺事件與流亡；John Williams 刪吉他史學者具名評語；Neil Young & Bluenotes 首句補國籍；Phoebe Snow 刪女兒照護一句（家庭私事）；小川知子刪交往對象驟逝與紀錄片（私人關係、他人死亡），改 thin。
+  - 保留：George Azuma（ジョージ吾妻）照片假名規則寫羅馬字；name 欄照名冊保留假名、正文寫 Lily、Candies、Carmen Maki；Melanie 2024、Lily 2016 過世（截止日前）。
+- 待本機：Yufu 2、高橋真梨子 2、Wood Brothers、LAFF、小坂明子、朱里エイコ、高田真樹子 各 1（pubIssues 9）。
+
+## ar-u-001（2026-10-16，thin 升級）
+
+- 40 位中 34 位升 full 上線（覆蓋原 thin 版）；6 位補洞後仍 thin、不寫，保留原上線版：深町純、Con Funk Shun、Leroy Hutson、山本剛トリオ、MALTA、カリオカ（legacy 仍無共識評價或只有通路頁）。
+- 補洞層第 2 組三格 status 誤寫成 full，主線發訊更正為 gap；後續各批派工詞已補「三格 status 只能是 bank／gap／none」。
+- 多名卡放寬：Coil、Swans（樂團）。KISS 2025 甘迺迪中心榮譽獎主線 WebSearch 核實（Blabbermouth、NBC Palm Springs）後放行。
+- 審稿修 20 處：Moodymann、電気グルーヴ、Beyond、周杰倫、1976、Arctic Monkeys、JPEGMAFIA「最…之一」改「極／早期」；Aesop Rock「排名第一、詞彙量最大」改寫；Coil 刪伴侶關係、Judas Priest 刪出櫃、Sufjan Stevens 刪母親離家與過世（私事、家人逝世）；山中千尋、Manhattan Jazz Quintet 刪《Swing Journal》刊名與獎；Steely Dan 在世者只留名人堂；周杰倫金曲獎不寫座數；電気グルーヴ ピエール瀧改 Pierre Taki 並壓到 250 內。
+  - 保留：Beyond 出殯規模一句（不寫雨傘運動與意外經過）；電気グルーヴ不寫逮捕；Arctic Monkeys「英國史上首週銷量最高的首張專輯」（兩源、無數字，在世者核心一處）；具名音樂人評語（Steve Earle、Trent Reznor、Kerry King、Dave Grohl、Lil Baby、Shabaka Hutchings）。
+
+## ar-u-002（2026-10-16，thin 升級）
+
+- 40 位中 34 位升 full 上線；6 位不寫、保留原上線 thin 版：益田幹夫、Four Tet、Nils Frahm、Pantha du Prince、The Doobie Brothers（補洞後仍 thin），Rainbow（補洞稿 full，但 digest 無國籍事實，寫作層照首句國籍門檻不寫）。
+- 搜尋超額：Theo Parrish 9（RBMA 講座自述）、Interpol 9（The Killers 點名），放行。
+- 審稿修 16 處：Beyoncé、Death、Ka（Mickey Factz 評語）「最…之一」改「極／早期／推崇備至」；Fairport 刪鼓手車禍死因；White Stripes 刪婚姻與姊弟說法；Mogwai 刪英國專輯榜冠軍、Morrissey 刪 BBC 偶像票選名次、Spoon 刪 Metacritic 年代排名、Biosphere 刪多次 Spellemannprisen（在世者一處）；Armand Hammer 刪 billy woods 父母（跨卡重複）；中森明菜片假名改寫三處並壓到 250 內；Spoon 補空格。
+  - 保留：BBC 民謠獎公眾票選《Liege & Lief》（權威票選）；Cat Power 首位拿下 Shortlist Music Prize 的女性（兩源）；Motörhead、Mastodon、Gucci Mane 的逮捕、家人逝世、入獄寫作層已自刪；Lemmy 2015、Ka 2024、Schuldiner 2001 只寫年份。
+- 寫作層提出：部分補洞 notes 要求寫「某媒體寫道」，與「樂評媒體名不進正文」衝突；照規則處理，單一媒體評價不用。後續升級批寫作通則已明載。
+
+## ar-u-003（2026-10-16，thin 升級）
+
+- 40 位中 37 位升 full 上線；3 位補洞後仍 thin、保留原上線版：高橋達也と東京ユニオン、Angel Olsen、Big K.R.I.T.。
+- 身分：ghost 鍵寫日本迷幻民謠集體 Ghost（瑞典 Ghost 已在 ar-d-141 另立鍵）；Perfume Genius 出生地補洞層更正為愛荷華州。
+- 補洞層把重新開頁讀到的低風險單源說法（影響、合作、風格描述）標 single 收入，主線准許，寫作層一律用「據說／被形容為」。搜尋超額：Ólafur Arnalds 9、Parquet Courts 10（補第二源），放行。
+- 審稿修 17 處：Furtwängler、日野皓正、Arcade Fire、Explosions in the Sky、Foals、Ghostface Killah、MIKE、Porcupine Tree「最…之一」改「極…」；Furtwängler 的 BBC Music Magazine 去名；大貫妙子刪父親特攻隊與振武寮（戰爭背景）；日野皓正片假名改寫、刪「第一位與 Blue Note 簽約的日本音樂人」；Ghostface Killah 刪 Wu-Tang Clan 入選搖滾名人堂（無法核實、疑屬新近事實）；Robert Wyatt 刪墜樓癱瘓與輪椅上節目（傷病）並壓到 250；Siouxsie and the Banshees 樂團單卡壓到 250；Kacey Musgraves 補空格。
+  - 保留：Arcade Fire 海地獨裁背景一句；Rick Ross 50 Cent 質疑一句（真實性爭議屬音樂形象、非官司）；Rei Harakami 2011 年過世、得年 40 歲。
+
+## ar-u-004（2026-10-16，thin 升級）
+
+- 40 位中 33 位升 full 上線；7 位補洞後仍 thin、保留原上線版：八城一夫、宇宙人、麋先生、Native Son、Crystal Castles、Danny Brown、Dilated Peoples。
+- 身分：wings 鍵寫 Paul McCartney 的 Wings；卡池《Belenggu Irama》掛在 Wings 名下，實為馬來西亞 Wings，記入待本機（卡池藝人欄應改 Wings (Malaysia)）。竇唯現行 thin 版提到 2006 年事件（刑案），升級版不收，上線後即替換。
+- 搜尋超額：Disclosure、DMX 各 9（補第二源），放行；DMX 2026 街道命名、Denzel Curry 2026 新作不寫。
+- 審稿修 17 處：Supergrass 出道作銷量、Decemberists Billboard 冠軍、The Knife 六獎全得、311 與 Disclosure 榜首（在世者成績）刪；Decemberists、Wings、Yeah Yeah Yeahs、Black Uhuru、Dead Kennedys「最…」改「極／早期」；David Murray Octet 三處單源最高級改寫；Weezer 腿骨手術、Actress「因傷」刪（傷病）；Wings 拉哥斯遭搶、311 裸露被捕的團名由來刪（刑案）。
+  - 保留：XTC 舞台恐懼停巡（轉折，非病名）；Yo La Tengo 夫妻組團（合作身分）；Wings〈Mull of Kintyre〉英國首支破 200 萬張單曲、Boney M.〈Rivers of Babylon〉英國榜首 5 週（核心成就各一處）；DMX 追思會規模；傷心欲絕劉暐 2023 年逝世只寫年份。
+
+## ar-u-005（2026-10-16，thin 升級）
+
+- 40 位中 33 位升 full 上線；7 位補洞後仍 thin、保留原上線版：Edna Gallmon Cooke、Funk Inc.、Grouper、Lykke Li、M.O.P.、Migos、Real Estate。
+- 搜尋超額：Monica、One Direction 各 9（補第二源），放行。
+- 審稿修 13 處：Limp Bizkit 刪單週銷售紀錄；f(x) 刪 Billboard 年代排名、Fleet Foxes 刪《1001 Albums》書單、Halsey 刪《時代》百大（媒體排名與名單）；Eric B. & Rakim 刪 2026 葛萊美名人堂（新近事實未核）；Fleet Foxes、Frank Bretschneider、Masonna、Queensrÿche「最…之一」改「極／早期」；Gregory Porter 刪肩傷、不寫葛萊美座數；Flower Travellin' Band ジョー山中改 Joe Yamanaka。
+  - 保留：One Direction IFPI 年度最受歡迎錄音藝人、KAYTRANADA／Miley Cyrus／Monica 各一座葛萊美（在世者核心一處）；Julian Cope 排名（具名音樂人）。
+- 寫作層提出：有一組初稿普遍超長、整組重寫後一次寫檔（沒照每 5 位寫一次），容器若重啟會整組重做；後續寫作派工仍要求分段寫檔。
+
+## ar-u-006（2026-10-17，thin 升級）
+
+- 40 位中 33 位升 full 上線；7 位補洞後仍 thin、保留原上線版：Ryan Adams、ScHoolboy Q、Travis Scott、Tycho、林俊傑、謝雷、Cæcilie Norby（原 thin 版已檢查，Ryan Adams 不含指控）。
+- Sonny Criss 現行 thin 版含胃癌與自殺，升級版只寫生卒年，上線即替換。藤圭子只寫 2013 年過世，Young Thug 不寫逮捕與審判，Type O Negative 的 Peter Steele 只寫 2010 年。
+- 搜尋超額：Shackleton、Type O Negative、Travis Scott、ネーネーズ、林俊傑、菊地雅章各超 1（補第二源），放行。
+- 審稿修 18 處：Shawn Mendes 刪《TIME》百大；Stereophonics、FSOL、The Streets、The Time、菊地雅章「最…之一」改「極／早期」；Underoath 不寫入圍次數；TLC、WSQ 樂團單卡壓回 250；ネーネーズ、杏里、藤圭子、鷺巣詩郎片假名改寫；藤圭子刪母親身體狀況與安保鬥爭一句。
+- 待本機（掃描發現）：上線 8,600 餘篇介紹中，258 篇含死因、病況、成癮、刑案類字眼，多為 ar-a／ar-b 早期批（規則收緊前），其中部分屬身分（盲人藍調樂手的 Blind）或作品題材；升級批會逐步蓋掉一部分，其餘待另排一輪清理。
+
+## ar-u-007（2026-10-17，thin 升級）
+
+- 40 位中 30 位升 full 上線；10 位補洞後仍 thin、保留原上線版：6LACK、929、Beach Fossils、Bennie Green、Blue Magic、Blueboy、Brass Construction、Camera Obscura、Com Truise、DIIV。
+- Aqua 現行 thin 版寫「2026 年解散」（未核），升級版不寫，上線即替換。
+- 審稿修 9 處：Bridget St John 的 John Peel 評語、Collage、Cro-Mags、Deerhoof、Above & Beyond、Anouar Brahem、Augustus Pablo「最…」改「極／早期／推崇備至」；Aqua 刪 Mattel 官司與判決（改寫走紅一句、補到 180 字）。
+  - 保留：向井滋春不寫《Swing Journal》讀者票選；112、Amerie、BCNR 在世者各留一處成績；Cleo Sol 只寫入圍；CocoRosie 不寫爭議。
+
+## ar-u-008（2026-10-17，thin 升級）
+
+- 40 位中 30 位升 full 上線；10 位補洞後仍 thin、保留原上線版：Dry Cleaning、Durand Jones & The Indications、Galliano、Gamma Ray、George Braith、Immortal Technique、ITZY、Julia Holter、Kehlani、Kelela。
+- Faith Evans 現行 thin 版含「遇害」字眼，升級版只寫婚姻身分與合唱曲，上線即替換。搜尋超額：Elmo Hope、Faith Evans、First Choice、FKA twigs、Kenny Drew Trio（補第二源），放行。
+- 審稿修 9 處：Enslaved 不寫得獎次數；Freddie Gibbs、Fritz Wunderlich、Immortal、Jurassic 5「最…」改「極／頂尖」；Jimmy Giuffre 刪單源最高級；Japanese Breakfast 刪《紐約時報》暢銷榜；Judge 樂團單卡壓回 250；Kesha 刪葛萊美〈Praying〉與 #MeToo 一句（實質指向官司與指控）。
+  - 保留：FKA twigs 參議院 AI 作證（2024）、Japanese Breakfast 以母親為題（作品題材）。
+
+## ar-u-009（2026-10-17，thin 升級）
+
+- 40 位中 35 位升 full 上線；5 位補洞後仍 thin、保留原上線版：Lloyd、Musica Antiqua Köln、Nice & Smooth、Outer Limits、Pageant。
+- Lloyd 的維基預抓抓成 Lloyd Banks，補洞層依 poolAlbums 改認 R&B 歌手 Lloyd；Mother Earth 鍵為倫敦 acid jazz 樂團（卡池《Living with the Animals》屬 Tracy Nelson 的 Mother Earth，卡標錯已記本機待修）。
+- 審稿修 12 處：Mystikal、NOFX、Obituary（兩處）、Pusha T、Ricardo Villalobos、Léo Ferré、Melt-Banana、Minutemen「最…之一」改「極／早期／經典」；Professor Harold Boggs 刪失明（身體狀況）；Keyshia Cole 刪寄養與收養（私事）；Lil Baby 刪街頭販毒（刑案）。
+  - 保留：Mystikal 不寫刑案；Pusha T 不寫 2025–26 Clipse 重組與葛萊美（舊 thin 版的 2026 葛萊美隨升級版移除）；PNL、Paul van Dyk、Villalobos 政治背景各一句；Little Mix BRIT 獎（團體核心）；Leo Kottke 不寫肌腱炎；Moor Mother 不寫伴侶；Minutemen 只寫 Boon 1985 年過世。
+
+## ar-u-010（2026-10-17，thin 升級）
+
+- 40 位中 31 位升 full 上線；9 位補洞後仍 thin、保留原上線版：Shabazz Palaces、Sharon Van Etten、Smog、Styx、The Heptones、The Jazz Crusaders、The Soul Children、The Tallest Man on Earth、Third Quadrant。
+- The Game 現行 thin 版含遭槍擊、Testament 現行 thin 版含 Chuck Billy 腫瘤，升級版都不寫，上線即替換。Sven Grünberg《Hingus》的 EMS Synthi 100 說法只有單源，升級版改寫 Härmo Härm 自製合成器。
+- 審稿修 8 處：Rufus featuring Chaka Khan 樂團單卡從 271 壓回 247；Sonny Stitt 刪收養（私事，照 Keyshia Cole 先例）；Sunn O)))、The Gaslight Anthem、The New Pornographers「最…之一」改「重要／極」；The Stranglers 刪 23 首前 40 名單曲（排行榜數字）。
+  - 保留：Rufus 名人堂稱 Chaka Khan「Queen of Funk」（名人堂官方可具名）；Satyricon《Nemesis Divina》被視為經典（不寫雜誌名人堂）；Shania Twain 加拿大勳章、Skepta 水星獎、Skrillex 一座葛萊美、Tate McRae Juno 年度藝人、Summer Walker Soul Train 年度專輯（在世者各一處）；Snooks Eaglin、Seu Jorge、Stromae 不寫身體狀況與家人遇難；Dave Greenfield 只寫 2020 年過世。
+
+## ar-u-011（2026-10-17，thin 升級）
+
+- 40 位中 33 位升 full 上線；7 位補洞後仍 thin、保留原上線版：Wild Nothing、Within Temptation、光束夜、夢幻、杉本喜代志、Prism、Wha-ha-ha。
+- 搜尋超額：Trentemøller、Yevgeny Mravinsky、村岡建、農村武裝青年各 9（補第二源與核名次），放行。White Heaven 的維基預抓是同名電影，補洞層作廢改認東京樂團。
+- George Young（2026）、今田勝（2025）過世照升級批通則不寫（原 thin 版有寫，升級版不寫屬保守，不另核）；明田川荘之 2024 年過世有兩源與訃報，保留。
+- 審稿修 10 處：Yiruma、Zbigniew Seifert、Jukka Perko、鈴木宏昌「最…」改「代表／極」；明田川荘之「アケタの店」、村岡建《ハイノロジー》〈横須賀ストーリー〉、鈴木宏昌「ジョージ川口」《海のトリトン》假名改羅馬字或刪去；農村武裝青年刪楊儒門、樂生、蘇花高、國光石化等社會運動細節，只留題材一句（政治背景上限）。
+  - 保留：-M- 的 Victoires 獲獎最多（補洞稿列必要例外）；조용필 銀冠文化勳章、八十八顆芭樂籽海洋大賞（在世者各一處，後者 2025 金曲入圍不寫）；尾島由郎只寫選輯入圍葛萊美；Mravinsky 不寫雜誌票選。
+
+## ar-u-012（2026-10-17，thin 升級）
+
+- 40 位中 23 位升 full 上線；17 位補洞後仍 thin、保留原上線版：702、Abel Ganz、After 7、Alela Diane、Amazing Blondel、Andrew Cox、Asturias、Attacca Quartet、Avant、Balmorhea、Bobby V.、Borah Bergman、Brick、Brides of Funkenstein、Cloud Nothings、Corduroy、Curve（本輪升級率最低，A 段多為 legacy 缺共識評價的 R&B 與小眾前衛團）。
+- 搜尋超額：After 7、Attacca Quartet、Brick 各 9（補第二源），放行。維基預抓錯抓 Asturias（地區）、Avant（街頭藝術團體）、Andrew Cox（划船選手）、Brick（建材）、C.C.C.C.（C 語言）、Crush（遊戲），補洞層都已改認。
+- Chris Brown 只寫音樂、舞蹈與一座葛萊美，不寫暴力事件、官司與感情關係。Bulldoze 舊稿的 Knocked Loose 一條不成立，不寫。
+- 審稿修 9 處：Ain Soph《妖精の森》改英文名、「全世界最好…之一」改「極出色」；Art Bears 補「英國前衛團體」、「最大的影響之一」改「重要影響」；Avishai Cohen、Crush「最…」改「重要／極」；Bryson Tiller 刪四歲喪母（家人逝世）；Cannonball Adderley Quintet 補中音薩克斯風並壓回 250；Chris Brown 刪入圍次數。
+  - 保留：Clara Nunes《Alvorecer》約 30 萬張（已故者，且是「女歌手賣不動」的論點本身）；Alabama Shakes、Crush、Cory Wong 在世者各一處成績；C.C.C.C. 夫妻組合（身分）；Dave Burrell 不寫名單名次。
+
+## ar-u-013（2026-10-17，thin 升級）
+
+- 40 位中 27 位升 full 上線；13 位補洞後仍 thin、保留原上線版：David Murray Quartet、Dewey Redman、Dorian Electra、dvsn、Ebi、EP-4、Epica、Everything but the Girl、Ginuwine、Gorgon City、Grenadine、Ground Zero、Gunna。
+- 搜尋超額：Dua Lipa 9、Ground Zero 9、HAIM 10（補 Stevie Nicks 評語第二源），放行。Field Mob 的 2026 年州議會決議照升級批通則不寫。Dr. Strangely Strange 的上線專輯簡介把 Goulding 寫成創團者，已列 pubIssues。
+- 審稿修 13 處：Dexys Midnight Runners 刪北愛衝突封面照（政治背景只留一句）；Dua Lipa 刪總統授公民身分（成績只留葛萊美一處）；Gabor Szabo「1956 年革命期間出走」改「離開匈牙利」（政治背景只留一句）；Dillinger、Dru Hill、Elton Dean's Ninesense、Felt、Foje（兩處）、Garmarna、Grumiaux Trio、H.E.R.「最…」改「代表／極／推崇備至」；Dillinger 刪多餘空格。
+  - 保留：Gil Scott-Heron & Brian Jackson 雙人聯名卡 271 字（放寬額度）；George Michael 葛萊美年度專輯與身後入選名人堂（已故者）；Father John Misty 以婚姻為題的專輯（作品題材）；Haken 由 Dream Theater 成員列年度十大（具名音樂人，非媒體）。
+
+## ar-u-014（2026-10-17，thin 升級）
+
+- 40 位中 32 位升 full 上線；8 位補洞後仍 thin、保留原上線版：In Spe、Jeremih、John Lee & Gerry Brown、Julianna Barwick、Katra Turana、Kunihiko Sugano、L.T.D.、Lakeside。
+- 保留版順手更正：Katra Turana（ar-c-011）貝斯手「北島妙子」改「北島妙枝子」（diskunion 開頁確認）。待本機核：In Spe 保留版寫 Tüür「1997 年獲愛沙尼亞文化獎」，補洞層查到的頁面另列 1991、1996，未改。
+- Herbert Grönemeyer 不寫 1998 年喪妻喪兄（家人逝世）與 2026 年德國國家獎（升級批通則，未另核）；Israel Vibration 不寫小兒麻痺；Key Glock 不寫刑案與母親入獄，只寫 Young Dolph「離世」。
+- 審稿修 7 處：Khalid 刪《時代》百大（媒體名單）；Key Glock、Khanate、I Musici、Israel Vibration「最…之一」改「主要／極／早期」；Hedningarna 刪「Garmarna 等後來者的前導」（無後輩點名）；Grönemeyer 刪 2026 年獎項。
+  - 保留：I Mean Us〈Søulмaтe〉照原標題寫法；Iggy Pop 對 Iceage 的評語（具名音樂人）；Jorja Smith Brit 獎、Julia Jacklin ARIA 獎、Leprous Spellemannprisen 入圍、Janelle Monáe 葛萊美入圍（在世者各一處）；Harry Roesli 抗議歌曲一句（政治題材上限）。
+
+## ar-u-015（2026-10-17，thin 升級）
+
+- 40 位中 28 位升 full 上線；12 位補洞後仍 thin、保留原上線版：Louis Smith、Mach One、Madeleine Peyroux、Melanie Martinez、Melt Yourself Down、Mr. Sirius、Negasphere、NxWorries、of Montreal、Portico Quartet、Preoccupations、Primus。
+- 搜尋超額：Louis Smith、Oh No 各 9，放行。Luc Ferrari 現行 thin 版含結核病，升級版不寫，上線即替換；Nala Sinephro 的 2025 年電影配樂照通則不寫；Mew 的 2025 告別隨升級版移除。
+- 卡池年份待本機核：Maceo & All the King's Men《Funky Music Machine》卡池 1975、維基 1972；Mahmoud Ahmed《Éthiopiques 6: Almaz》卡池 1999（疑為選輯發行年，原錄音 1973）。
+- 審稿修 6 處：Liars、M. Ward「最…之一」改「備受／重要」；Maceo & All the King's Men 樂團單卡從 265 壓回 227、Milton Wright 個人卡從 278 壓回 250（「人物故事」不屬多名卡放寬）；Natacha Atlas 金基德片名改台灣譯名《空屋情人》；Patty Waters 補英中間空格。
+  - 保留：Marvin Gaye & Tammi Terrell 雙人卡 276（放寬額度），Terrell 只寫 1970 年過世；Mario Hot 100 蟬聯 9 週（補洞稿必要例外）；Me'Shell Ndegéocello 2024 年葛萊美（在世者一處）；METZ 2024 年休團（不在 2025–26 範圍）。
+
+## ar-u-016（2026-10-17，thin 升級）
+
+- 40 位中 21 位升 full 上線；19 位補洞後仍 thin、保留原上線版：Ressurection、Riow Arai、Roberto Cacciapaglia、Rudolph Johnson、Solmania、Tagomago、Tamaru、The Argo Singers、The Awakening、The Bush Chemists、The East St. Louis Gospelettes、The Menzingers、The Murder Capital、The Orchids、The Wolfhounds、Titus Andronicus、Treatment、Vetiver、Wailing Souls（本輪升級率最低；多為小眾福音、雷鬼與 2010 年代獨立團，legacy 缺共識評價）。
+- 維基預抓錯抓 Sam Jones（NBA 球員）、Treatment（污水處理）、Troop（軍事單位），補洞層都已改認。卡池年份待本機核：Tamia《Tamia》卡池標 1978，應為 1998。
+- 審稿修 7 處：Randy Crawford、Return to Forever、Sam Jones（兩處）、Ted Lundy, Bob Paisley and The Southern Mountain Boys、The Headhunters、The Waterboys「最…」改「極／代表／廣為人知／常見」。
+  - 保留：Ted Lundy 多名卡 276（放寬額度）；Randy Crawford 1982 年全英音樂獎、Raphael Saadiq 葛萊美（不寫年份）、Saint Etienne Mercury 入圍、Tamia 葛萊美提名、The War on Drugs 葛萊美、Troop R&B 冠軍（各一處）；Ski Mask the Slump God 只寫 XXXTentacion「過世」；Troop 的 Hit-Boy 葛萊美寫明是製作人本人的獎。
+
+## ar-u-017（2026-10-17，thin 升級）
+
+- 40 位中 18 位升 full 上線；22 位補洞後仍 thin、保留原上線版：ZAZEN BOYS、テルズ・シンフォニア、ひがしのひとし、丸山繁雄、南西肯恩、古川豪、圖騰樂團、小河、日野元彦、春艷、木馬、潘秀瓊、生活向上委員会、美狂乱、菅野邦彦、薄荷葉、蛋堡 Soft Lipa、超載、鈴木宏昌トリオ、陳世興、99.99、Alpha（本輪最低；台灣、日本小眾樂手 legacy 多查無獨立評價）。
+- 保留版順手更正：蛋堡 Soft Lipa（ar-c-029）「最佳國語男歌手／專輯」改「最佳華語」（第 32 屆金曲已改名）。搜尋超額：春艷 9、Zion.T 9、JAGATARA 10，放行。
+- 審稿修 11 處：လေးဖြူ 刪軍政府子女與翁山蘇姬門牌、剪髮細節，政治只留盤名被改一句；潘麗麗刪〈春天的花蕊〉被選為競選歌曲（政治）；들국화 刪《京鄉新聞》百大名盤（媒體名單）；茄子蛋獎項只留最佳新人；菊地雅章セクステット 樂團單卡從 274 壓回 210；Zoot Sims、零與聲音解放組織、Ben LaMar Gay「最…」改「極／早期」；じゃがたら 遠藤ミチロウ改 Michiro Endo 並壓回 250；Zion.T 本名改韓文加羅馬字（漢字未核）並壓回 247。
+  - 保留：澤野弘之引的「菅野よう子」（含漢字人名照原文）；楊乃文 2000 年金曲最佳國語女演唱人（當年獎名）；李英宏金馬獎不寫（補洞稿裁定）；Akemi Edo 只寫 1990 年過世。
+
+## ar-u-018（2026-10-17，thin 升級）
+
+- 40 位中 20 位升 full 上線；20 位補洞後仍 thin、保留原上線版：Bennie Wallace、CALM、Divination、Hidden Orchestra、Lali Puna、Little Tempo、Modern Jazz Playboys、Ott、Out Of/Into、Placebo (Belgium)、R+R=NOW、Superblue、The Players、ゼロ戦、上田力、井上敬三、真梨邑ケイ、100 Proof (Aged in Soul)、A Silver Mt. Zion、Aardvark。
+- 搜尋超額：Deadbeat、TRI4TH 各 9，放行。ゼロ戦、井上敬三 搜了沒補到新事實，主線把 legacy 格改 gap 過 QA（仍 thin）。維基預抓錯抓 CALM（軟體公司）、Divination（占卜）、Fire! Orchestra，補洞層都已改認。
+- 審稿修 3 處：The Benny Green Trio 三重奏單卡從 273 壓回 247；山屋清「原信夫とシャープス＆フラッツ」「モダンジャズ三人の會」假名改寫並壓回 221。
+  - 保留：:wumpscut: 不寫爭議；127 伊朗禁演背景一句；喜多嶋修不寫與加山雄三的親戚關係；TRI4TH 獎項不寫（兩源同出官方簡介）；Gianluca Petrella 只留 Django d'Or。
+
+## ar-u-019（2026-10-17，thin 升級）
+
+- 40 位中 30 位升 full 上線；10 位補洞後仍 thin、保留原上線版：Abbhama、Adnan Othman、Alice Ricciardi、Alpha Stone、Amp、André Navarra、Andrés、Androids of Mu、Anno Luz、ASTRO。
+- Ametsub：補洞層在搜尋結果看到 2025 年一則騷擾指控報導（未開頁核實），照通則不寫指控，只寫音樂，照常升級。ASMF Chamber Ensemble「為演 Mendelssohn 八重奏而組」經官方歷史頁確認，前稿 pubIssue 翻案。維基預抓錯抓 Alpha & Omega（希臘字母）、Anthony Adverse（電影）、Aphrodite（女神）、ASTRO（電視公司），補洞層都已改認。
+- 審稿修 5 處：Ancient Infinity Orchestra 刪「保守得最好的祕密」（疑新聞稿單源）；Andy Gibb 刪「世上最紅的錄音明星」（單一雜誌）；Aron Ottignon、Alfred Panou & Art Ensemble of Chicago「最…之一」改「極」；Alma Mahler 刪老師「盲眼」（身體狀況）。
+  - 保留：Alfred Panou & AEC、Alpha & Omega meets The Disciples 聯名卡 274／276（放寬額度）；Arms and Sleepers 父親在戰火中喪生（專輯主題本身，補洞稿列必要例外）；Alma Mahler 只寫與 Gustav Mahler 的婚姻；Andy Gibb 只寫 1988 年過世。
+
+## 第十二輪中途更正：撤銷主線自加的題材禁令（2026-10-17 店主指示）
+
+- 店主指出：「我從來沒有說不寫政治…越政治越好，為何要擅自增加條件」。查證屬實：店主 2026-07-31 裁定（PROJECT_MEMORY）是**題材沒有禁區**——政治、爭議、刑案、成癮、離婚、死因照寫，只限①有來源②不逐字引歌詞③涉逝者與受害者語氣克制（不獵奇不渲染）。藝人介紹線自 2026-10-07 起，主線在派工備註自加「指控、官司、死因避免，政治至多一句」，第十二輪再加「政治立場、私人關係、家人逝世不寫」，審稿也照刪。這是主線擅自作主，**全部作廢**。
+- 本段以上各批「審稿修 N 處」裡，凡以「政治／病況／刑案／家人逝世／私事」為由的刪改都是錯的；「保留」欄的「不寫刑案、不寫死因」等也一樣。先前「258 篇含死因刑案字眼待清理」的掃描結論撤回（那些應保留）。
+- 補救（店主選「重新補查」）：第十二輪已寫成的正文（ar-d-141、142、ar-u-001～021）逐批派「題材補查」代理（`research/<批>-sens.json`，每位最多 4 次、兩源），再改寫補回；u-022 起的補洞與寫作備註已改成照店主裁定。
+- 其餘規則不受影響：在世者一處核心成績、媒體名單不寫、2025–26 新事實要兩源核實、「最…」要有出處。
+
+### 題材補回：ar-u-001（2026-10-17）
+
+- 補查 34 位：add 18、none 16。改寫 18 位補回伴侶與出櫃（Coil、Halford）、死因（Balance、Becker、黃家駒、Frehley、Fletcher、Lake、Emerson、Van Zandt）、成癮（Becker、Future、Coxon、Gahan）、官司與執法（Judas Priest 潛意識訊息審判、Pierre Taki 被捕緩刑、Moodymann 遭警察持槍包圍、Gira 入獄）、病況（Aesop Rock、Sufjan Stevens、周杰倫）、政治（〈海闊天空〉在雨傘運動與反修例運動被合唱、billy woods 的辛巴威背景、JPEGMAFIA）。
+- 主線審稿 2 處：Judas Priest 年份超量刪成軍年；Sufjan Stevens 第二張專輯名改「新專輯」（卡池專輯名上限）。
+- 未寫：Fagen 告 Becker 遺產（結果不明）、Eric Carr、Halford 戒癮與 Tipton 帕金森（字數）。
+
+### 題材補回：ar-d-142（2026-10-17）
+
+- 補查 32 位：add 18、none 14；改寫 13 位（りりィ、吉田拓郎、太田裕美、小柳ルミ子、Caravan、Melanie、Neil Young & The Bluenotes、Phoebe Snow、Wings、キャンディーズ、小坂明子、朱里エイコ、松尾和子），補回病況與死因、婚姻、禁播爭議、Caravan 的 1973 民主運動與 1976 年後流亡寮國、Wings 遭資訊部長令剪髮。原 thin 者改寫後達 full 字數，status 改 full。
+- 弱源整位不寫（單源或同站）：Yufu、カルメン・マキ&LAFF、伊武雅刀、小川知子、高橋真梨子。
+- 主線審稿 2 處：Phoebe Snow 年份超量、朱里エイコ 連續年份句。
+
+### 題材補回：ar-d-141（2026-10-17）
+
+- 補查 38 卡：add 18 卡（11 位藝人）、none 20；改寫 18 卡，補回花柳幻舟 1980 年持刀傷家元入獄與即位禮遊行被捕、筒井康隆斷筆宣言、浅川マキ 2010 年巡演中猝逝、辛島文雄帶病演出、渡辺香津美腦幹出血、秋吉敏子戰後自中國東北返日、Mariano 與秋吉敏子的婚姻、笠井紀美子婚姻、Ghost 前成員官司、Steve Lacy 2017 年的說法。鈴木良雄 2026-09-23 過世（補查多源核實），改已故口吻。
+- 主線審稿 1 處：水谷公生「妻子是小川糸」只有單源加鏡像，改寫成三人同組 Fairlife。
+
+### 題材補回：ar-u-002（2026-10-17）
+
+- 補查 34 位：add 21、none 13；改寫 21 位，補回 Lemmy 1975 年被捕遭逐出 Hawkwind 與 2015 年過世、Molko 毒癮與憂鬱症、Hyde 酗酒與〈Born Slippy〉、中森明菜 1989 年輕生未遂與復出、Beyoncé〈Formation〉爭議與 CMA 事件、Kele Okereke 出櫃、Cat Power 精神崩潰與戒酒、Schuldiner 腦瘤與募款、de Freitas 車禍、Fairport M1 車禍、Gucci Mane 謀殺指控撤銷與 2014 年入獄、Mastodon 的 Skye 與 Hinds 2025 年過世、Merzbow 動物權、Mogwai 的 T 恤風波與支持蘇格蘭獨立、Morrissey 版稅官司與支持 For Britain、Reznor 成癮與勒戒、Scarface 專輯遭拒發與輕生未遂、Sigur Rós 鼓手被指控與稅案、White Stripes 前夫妻身分與 Meg 焦慮。
+- 主線審稿 11 處：卡池專輯名超量（Cat Power、Mastodon）、連續年份句（Gucci Mane、Mogwai、Morrissey、Sigur Rós）、年份超量（White Stripes）、字數壓回 250。
+
+## ar-u-020（2026-10-17，thin 升級；題材補回後上架）
+
+- 40 位中 24 位升 full 上線；16 位補洞後仍 thin、保留原上線版：ATLAS、Aurra、Azitis、Babyshambles、Bananarians、Beanfield、Bellaphon、Bernard Xolotl、Bhaskara、Billy Parker's Fourth World、Blue Note All-Stars、Blue Sky Black Death、Blue States、Bob Ayala、Bob Carlin、Bodkin。
+- 寫作層是照舊（錯誤）規則寫的，上架前先跑題材補查：add 10、none 14，改寫 10 位補回 Bradford Cox 的馬凡氏症與 Sony 誤撤、B.G. 持槍案判 14 年與 2023 年假釋、Banteay Ampil 隸屬 KPNLF 抵抗組織、Baths 出櫃與大腸桿菌重病、Batushka 分裂官司與正教圈抗議、Bebel Gilberto 對父親的監護與遺產爭議、Musselwhite 戒酒、Cosentino 戒酒戒藥、Beth Hart 成癮與躁鬱症、Bo Carter 半盲與死因。
+- 搜尋超額：Atlas Sound、Banteay Ampil Band、Bob Carlin（thin）、Bhaskara（thin）、Billy Ocean 放行。
+- 主線審稿 6 處：B.G.、Batushka 連續年份句；Bo Carter 年份超量；Bahamadia「最早…之一」改「早期」；Billy Ocean 刪 MBE（在世者一處成績）；Batushka 壓回 250。
+  - 保留：Bang on a Can All-Stars 獲《Musical America》年度樂團（獎項，非媒體名單）。
+
+## ar-u-021（2026-10-17，thin 升級；題材補回後上架）
+
+- 40 位中 22 位升 full 上線；18 位補洞後仍 thin、保留原上線版：Bola、Bong Peñera、Booster、Boozoo Bajou、Brighter、Brisa Roché、Bröselmaschine、Buffalo Tom、Buscemi & The Michel Bisceglia Ensemble、Cannibale、Carbon Based Lifeforms、Carl Thomas、Casino Versus Japan、Castanarc、Catapilla、Cause for Alarm、Centry、Charles Kynard。
+- 寫作照新規則（題材沒有禁區），補查再補 8 位：Bokani Dyer 父親拒服種族隔離軍役流亡波札那、Brian McKnight 與子女失和及長子 2025 年病逝、Buddy Thomas 死因與醫療困境、Buffalo Nichols 談藍調的黑人所有權、Oli Sykes 氯胺酮成癮與戒除、Camila Cabello 離開 Fifth Harmony 的聲明風波、Caleb Scofield 2018 年車禍過世、Charles Brackeen 的婚姻。Chambao 搜尋 11 次放行。
+- 主線審稿 7 處：Breakbot、Charles Sullivan、Charles Webster、Charles May & Annette May Thomas、Charlie Hunter / Leon Parker「最…」改「代表／極」；BOYNEXTDOOR 刪連續破百萬（2026 年作品且屬銷量）；McKnight 來源改 https。
+
+## ar-u-022（2026-10-17，thin 升級；補洞與寫作照更正後規則）
+
+- 40 位中 27 位升 full 上線；13 位補洞後仍 thin、保留原上線版：Chicken Shack、China Moses、Chrissy Zebby Tembo、Concrete Rubber Band、Confuse、Corte dei Miracoli、Cos、Creative Arts Ensemble、Cro-Magnon、Crow、Crumb、Culture Freeman meets The Bush Chemists、Cut Copy。
+- 本批補洞與寫作的備註已照店主 2026-07-31「題材沒有禁區」，不另跑題材補查。Larkin（Silksong／TGA）與 Chicago Underground Duo 的 2025 年事項未開頁兩源，不寫。胡瀞云寫「未頒首獎、並列第二」。
+- 主線審稿 4 處：D.R. Hooker「最重要的作品之一」改「極重要的作品」；Chavez 刪「最紅／最好的新搖滾樂團之一」改「極受矚目的新團」；Co-Fusion「最具代表性之一」改「代表性藝人」；胡瀞云受邀時間句改順。
+
+## ar-u-023（2026-10-17，thin 升級；補洞與寫作照更正後規則）
+
+- 40 位中 28 位升 full 上線；12 位補洞後仍 thin、保留原上線版：Danielle Dax、Darius、Debris'、Deerfield、Deh-Ho Lai 賴德和、Derek Smith Trio、Diabolus in Musica、Discus、DJ Cam、Earthen Vessel、El Hombre Trajeado、Electroscope。
+- 搜尋超上限放行：Deep Dish、Derek Smith Trio 各 9 次（多的一次是重查未開成的頁）、Dub Colossus 11 次（替 2013 年 Songlines 獎找開得了的第二源）。Deja-Vu 研究稿 notes 自稱 thin、status 為 full，照 full 寫，地位只寫櫻庭統日後的遊戲音樂名聲。
+- 題材：Shajarian 2009 年選後支持抗議者、國家廣播停播其作品照寫；死因主線另查（NPR／Bloomberg：長年腎癌，2020 年病逝；其子另稱心臟病發為直接原因），寫「長年罹患腎癌，2020 年病逝」。Aref 2026 年過世、Emad Raam 1981 年因政治離開伊朗皆未開頁兩源，不寫。
+- 主線審稿 8 處：Deja-Vu「桜庭統」改台灣字形「櫻庭統」（來源網址不動）、「Tales 系列」改「《傳說》系列」；Jalil Shahnaz「近五十年最傑出之一」改「頂尖」；Shajarian 補死因；DJ Vadim 刪巡演場次與國數；Donell Jones 刪 Hot 100 名次（在世者不寫榜單）；Lockjaw Davis「最典型」改「典型」；Arkbro 重複「後來」改順。
+
+## ar-u-024（2026-10-17，thin 升級；補洞與寫作照更正後規則）
+
+- 40 位中 23 位升 full 上線；17 位補洞後仍 thin、保留原上線版：Eluvium、Emerald Web、Emma Salokoski & UMO、Emtidi、Eric Darius、Errata Corrige、Estelle Perrault、Eve 6、Extradition、Father MC、FATHERS、Fenin、Fergie、Fingathing、Fireworks、Fix、French Toast。
+- 搜尋超上限放行：Eloy、Eluvium 各 9 次（多的一次是確認創立年與開了沒有內文的榜單頁）。Emma Louise & Flume 卡池只有 2025 年《DUMB》，寫卡上這張本身不屬「2025–26 新事件」，照寫、不寫年份。
+- 題材：Eric Benét 與 Halle Berry 的婚姻、離婚與承認不忠；Everclear 的 Alexakis 兄長海洛因過量、女友輕生與本人毒癮；Filter〈Hey Man Nice Shot〉與 Dwyer 直播輕生的關係、Patrick 成癮與勒戒；Afanassiev 叛逃尋求政治庇護——都照寫。
+- 主線審稿 4 處：Eloy「德國搖滾圈影響最大之一」只有德文維基單源，改「在德國擁有龐大樂迷」；Everclear「最有名」改「代表性」；Filter 刪白金認證（在世者不寫銷量）；板橋文夫條「渡辺貞夫」改台灣字形「渡邊貞夫」。
+
+## ar-u-025（2026-10-17，thin 升級；補洞與寫作照更正後規則）
+
+- 40 位中 27 位升 full 上線；13 位補洞後仍 thin、保留原上線版：G-Schmitt、Gentle Faith、Gerard、Ghazal、Ginhouse、Gold Panda、Gone、Grow-Up、Gui Boratto、H-Town、Haley Heynderickx、Hang Raiji、Harvest Flight。
+- 搜尋超上限放行：Gold Panda 11 次（替 Guardian First Album Award 找第二源未果，仍 thin、不上線）。GQ「RIAA 白金」查無來源、Guadalcanal Diary 的 Paste 名次（媒體榜單）不寫。日文人名照台灣字形：渡邊文男／渡邊貞夫、太田寬二、佐佐木秀人、關根敏行。Hans Rosbaud 納粹時期低調與兄長替盟軍蒐集情報照寫。
+- 主線審稿 9 處：渡邊、太田寬二字形（2 處）；Gabin 片名改台灣譯名《驚奇4超人》；GQ 刪 R&B 榜冠軍；陳毓襄刪少年 MTNA 第一（在世者留一處核心成績：Pogorelich 大賽首獎）；Heize 刪音源榜第一；Henry's Dress、Hideto Sasaki 那張「最…之一」改「極」；High Five Quintet「橫掃銷售榜」改「大獲成功」。
+
+## ar-u-026（2026-10-17，thin 升級；補洞與寫作照更正後規則）
+
+- 40 位中 23 位升 full 上線；17 位補洞後仍 thin、保留原上線版：Holy Ghost!、Homayoun Shajarian & Ali Ghamsari、Homeshake、Houses、Hughie Izachaar、Icecross、Idjah Hadidjah、Il Paese dei Balocchi、Indiscreet Music、Ingrid Michaelson、ISAN、Jackie Allen、Jade、Jaheim、Jamael Dean、James Hurt、James Mason。
+- 搜尋超上限放行：Ingrid Michaelson 9 次（仍 thin、不上線）。I'm With Her 2026 年葛萊美最佳民謠專輯主線開頁核實（Grammy.com、維基），寫為在世者唯一核心成績。題材：Homayun Sakhi 塔利班禁樂與海外募款；Iron Cross 主唱 Lay Phyu 嘲諷政府、《Power 54》影射翁山蘇姬遭回收、2006 年被禁演——照寫。
+- 主線審稿 6 處：Iron Cross 刪電台名並把「最受歡迎」「最受崇拜之一」改「極」；Hocus Pocus 刪「連拿四屆」（獎項次數）；許常惠刪「最具影響力之一」；Ikonika「最具創新之一」改「極具創新」；indigo jam unit「樽栄」改台灣字形「樽榮」。
+
+## ar-u-027（2026-10-17，thin 升級；補洞與寫作照更正後規則）
+
+- 40 位中 30 位升 full 上線；10 位補洞後仍 thin、保留原上線版：Jimmy Carter and Dallas County Green、Joe Bonner、John Gordon、John Kaizan Neptune / 直居隆雄、John Wiese、Jonny Holtzman、Judi Silvano、Julian's Treatment、Juliano Rossi、Kellee Patterson。
+- 搜尋超上限放行：Kaiser Chiefs、Kalaparusha Maurice McIntyre 各 9 次（多的一次是補 sound／查評論段落）。題材：Kayhan Kalhor 父母與兄弟死於兩伊戰爭飛彈（主線開頁核實：NPR 2021 年人物報導、英文維基）；Jimmy Arnold 酗酒、藥物、入獄與心臟衰竭過世；Juke Boy Bonner 的貧困與歌中的黑人處境——照寫。
+- 主線審稿 8 處：Jesu「被公認」改「被視為」；Jimmy Arnold、Katedra、Kazi & Madlib、Burrell & Coltrane 的「最…之一」改「極」；Kaiser Chiefs 刪「一晚三個獎」（獎項數）改寫一項；Kangaroo 平假名「柵木ひとみ」改「柵木 Hitomi」並壓回 250 字。
+
+## ar-u-028（2026-10-17，thin 升級；補洞與寫作照更正後規則）
+
+- 40 位中 24 位升 full 上線；16 位補洞後仍 thin、保留原上線版：Kiasmos、Kid Loco、King General Bucks Up Pon De Bush Chemists、King James Version、Kollektiv、Konstruktivists、L.A. Transit、La Venexiana、Lapalux、Lazy Smoke、Le Trio Camara、Leila Forouhar、Lemon Kittens、Limbus 4、Linda Hill、Little Sonny。
+- 搜尋超上限放行：Limbus 4 9 次（仍 thin、不上線）。題材：金正美與導師申重鉉受朴正熙政權審查與禁歌；King Von 2020 年槍擊身亡；Kiosk 諷刺伊朗政治、遭禁演與地下流通；Kevin Morby 的抗議歌；Kitchens of Distinction 寫同志暴力遭唱片公司卻步；Lloyd Banks 中槍；Liz Story 2019 年雙側硬腦膜下血腫開刀與重新學琴——照寫。King Von 的刑案補洞稿未收，不寫；Mavis Staples 2025 年翻唱、Tyler, the Creator 2025 年發言不寫。卡池年份疑誤：Kim Jung Mi《Now》卡池 1968，來源一律 1973（記本機修）。
+- 主線審稿 11 處：Kenny Wayne Shepherd 刪主流搖滾榜冠軍、Louisiana 改「路易斯安那州」；Kevin Morby「Texas」改「德州」；Kremerata Baltica、Kurupt、Larry June & The Alchemist「最…之一」改保守；Lew Tabackin 刪 Swing Journal 金唱片獎（媒體獎、次數）；Lipps Inc. 刪 Hot 100 冠軍；Liz Story 壓回 250 字；Lloyd Banks 刪 Billboard 200 冠軍與 2025 年 Tyler 發言；Local H 刪 Spin 年度榜（媒體名單）。
+
+## 第十二輪收尾（2026-10-17）
+
+- 30 批：ar-d-141、142（新藝人 70 位上線：55 full、15 thin）＋ thin 升級 ar-u-001～028（1,120 位中 790 位升 full，330 位補洞後仍 thin、保留原上線版）。審稿合計 296 處。
+- 中途更正：撤銷主線自加的題材禁令（店主「越政治越好」），ar-d-141、142、ar-u-001～021 逐批題材補查補回約 309 位；ar-u-022 起補洞與寫作直接照「題材沒有禁區」。
+- 2026 年事實主線開頁核實：I'm With Her 2026 年葛萊美最佳民謠專輯；Shajarian 死因（長年腎癌）；Kalhor 家人死於兩伊戰爭。
+- 留給本機的卡池疑點：Tamia 1978→1998、Maceo Funky Music Machine 1975 vs 1972、Mahmoud Ahmed《Éthiopiques》1999 vs 1973、賴德和《樂典03》1987 vs 2009–12、Kim Jung Mi 1968 vs 1973；In Spe 得獎年 1997 未核；Wings（馬來西亞）與 Mother Earth 卡片身分誤標；其餘見 `audits/ARTIST-PUB-ISSUES.md`。
+
+### 題材補回：ar-u-003（2026-10-17）
+
+- 補查 37 位：add 23、none 14；改寫 23 位，補回 Lynott 海洛因成癮與死因、Furtwängler 納粹時期與去納粹化審理、大象體操 2023 跨年騷動、大貫妙子父親特攻隊經歷、日野皓正 2017 年體罰事件、Staley 與 Starr 藥物過量、Butler 2022 年遭指控與回應、Chassagne 父母逃離海地獨裁、Drive-By Truckers 的南方歷史與警察暴力題材、Cox 馬凡氏症與車禍、Portnoy 戒酒組曲、Ghostface 搶案與服刑、José González 父母逃離阿根廷軍政府、Musgraves 歌曲遭電台卻步與離婚、Mitski 暫停演出、MIKE 與 MONO 的喪親、Hadreas 成癮與克隆氏症、Rei Harakami 腦出血驟逝、Rick Ross 矯正官過往與 Reebok 事件、Wyatt 墜樓癱瘓與共產黨員、Siouxsie 的 Grundy 節目風波、St. Vincent 父親入獄。
+- 主線審稿 8 處：Furtwängler、Alice in Chains 年份超量；Kacey Musgraves 卡池專輯名超量；Rick Ross 連續年份句並壓回 250。
+
+### 題材補回：ar-u-007（2026-10-17）
+
+- 補查 30 位：add 11、none 19；改寫 10 位，補回 Alton Ellis 癌症與過世、Aqua 的芭比商標官司、Grumiaux 事業因德軍佔領中斷、Augustus Pablo 重症肌無力、Billy Paul 的政治歌與版稅官司勝訴、BCNR 前身因主唱性侵指控解散與 Wood 離團、Cavetown 公開為跨性別者、Cro-Mags 團名官司、Danzig 的 Misfits 商標官司、Deerhoof 2025 年因 Spotify 執行長投資軍事科技撤下作品（補查開頁兩源核實）。Don Ellis 兩條皆弱源，不寫。
+- 主線審稿 2 處：Grumiaux 年份超量、「最受推崇」改「尤受推崇」。
+
+### 題材補回：ar-u-004（2026-10-17）
+
+- 補查 33 位：add 19、none 14；改寫 19 位，補回 The Knife 的政治立場、Strokes 911 後抽歌與為桑德斯站台、Gerard Smith 肺癌過世、Cuomo 腿骨手術、Wings〈Give Ireland Back to the Irish〉遭禁播與 McCartney 東京大麻被捕、Partridge 鎮靜劑戒斷與〈Dear God〉風波、劉暐逝世、濁水溪公社反威權與支持台灣獨立、竇唯與王菲的婚姻及燒車案、311 團名典故、Actress 傷退、Miret 古巴出身與入獄及罹癌、Puma Jones 死於癌症、Boney M. 代唱內幕與訪蘇、Sylvian 與 Karn 決裂、Dead Kennedys《Frankenchrist》海報案、Denzel Curry 兄長在警方執法中死亡、DMX 成癮與逃稅入獄。
+- 主線審稿 2 處：The Knife 卡池專輯名超量、竇唯年份超量。
+
+### 題材補回：ar-u-006（2026-10-17）
+
+- 補查 33 位：add 18、none 15（多數第二源只見搜尋摘要，改寫只取廣為人知、兩源明確者）；改寫 17 位，補回 Holmes 攝護腺癌與死因、Killer Mike 支持桑德斯與 2020 年演說及 2024 年被拘留、Shawn Mendes 為心理健康取消巡演、Shirley Scott 的婚姻與 fen-phen 官司、J Dilla 的 TTP 與狼瘡及 Baatin 思覺失調、Almond 車禍、Sonny Criss 罹癌後輕生（多數傳記記載）、Stuart Cable 遭解雇與過世、Cooper 過世、Healy 海洛因與馬來西亞禁演、Left Eye 縱火案與車禍身亡、Steele 憂鬱與成癮、Chamberlain 古柯鹼成癮、Crutchfield 戒酒、Hemphill 病況、Young Thug YSL 案、藤圭子 輕生與精神疾病。The Streets 兩條待核，不寫；Dave Ball 2025 年過世未開頁核實，不寫。
+- 主線審稿 5 處：RTJ、Shawn Mendes、TLC、藤圭子 連續年份句；Waxahatchee 卡池專輯名超量。
+
+### 題材補回：ar-u-008（2026-10-17）
+
+- 補查 30 位：add 12、none 18；改寫 11 位，補回 Elmo Hope 毒癮、演出執照被撤與入獄、Faith Evans 的丈夫 B.I.G. 1997 年遇害、FKA twigs 控告 LaBeouf 與 2025 年和解、Freddie Gibbs 奧地利性侵指控獲判無罪、Wunderlich 意外過世、Geoff Mann 癌逝、Demonaz 肌腱炎與 Abbath 商標爭議、Zauner 母親罹癌過世、Greenwood 與 Dudu Tassa 的英國演出因 BDS 施壓取消、Savall 拒領國家音樂獎、Kesha 暴食症治療與 Dr. Luke 官司。Jimmy Giuffre 只有低優先一條，不改。
+- 主線審稿 2 處：Japanese Breakfast 卡池專輯名超量、Greenwood 連續年份句。
+
+### 題材補回：ar-u-005（2026-10-17）
+
+- 補查 33 位：add 22、none 11；改寫 22 位，補回 Eric B. & Rakim 合約官司與拆夥、Sulli 的網路霸凌與 2019 年過世、Wentz 輕生未遂、佐藤伸治 1999 年猝逝、Numan 亞斯伯格自述與印度扣留、Porter 母親病逝、Halsey 雙極性疾患與狼瘡、Newsom 聲帶結節、Bieber 用藥與 2014 年被捕、Juvenile 女兒遇害與廠牌糾紛、Richter 心臟病猝逝、Meighan 家暴認罪離團、KAYTRANADA 出櫃、Limp Bizkit 的 Woodstock '99 與雪梨致死事件、DeMarco 缺席的父親、Masta Ace 多發性硬化症、Miley Cyrus VMA 爭議、Monica 男友在她面前輕生、Liam Payne 2024 年過世、Spencer Smith 成癮離團、Playboi Carti 2020 年被捕、Queensrÿche 團名官司。
+- 主線審稿 10 處：Numan、Newsom、Bieber、Kasabian 連續年份句；One Direction 年份超量；Newsom 卡池專輯名超量；f(x) 補空格；字數壓回 250。
+
+### 題材補回：ar-u-009（2026-10-17）
+
+- 補查 35 位：add 18、none 17；改寫 17 位，補回 Keyshia Cole 寄養、收養與生母成癮、Ferré 無政府主義與阿爾及利亞戰爭歌、Kottke 聽損與肌腱炎、Lil Baby 販毒入獄與巴黎被捕、Lil Uzi Vert 戒除 Xanax、Little Mix 成員談網路霸凌與種族歧視、McLaughlin 與 Sri Chinmoy 的師徒關係、Boon 車禍過世與 Minutemen 的政治歌詞、Moor Mother 的住宅行動、Mystikal 性侵案服刑與 2026 年強姦罪認罪判刑（補查開頁兩源核實）、NOFX 的 Rock Against Bush 與槍擊案玩笑風波、van Dyk 1989 年出走東德與 2016 年墜台重傷、Bridgers 指控 Ryan Adams 與 SNL 砸吉他、Ademo 被捕後獲判無罪、Poppy 遭 Mars Argo 控告、Boggs 失明、Pusha T 與 Drake 對槓。Villalobos 只有單源，不改。
+- 主線審稿 2 處：NOFX、Phoebe Bridgers 連續年份句。
+
+### 題材補回：ar-u-012（2026-10-17）
+
+- 補查 23 位：add 12、none 11；改寫 11 位，補回 Chris Brown 2009 年毆打 Rihanna 認罪緩刑與倫敦夜店案 2026 年 7 月改認鬥毆罪（宣判未到，不寫結果）、Daughters 主唱遭 Kristin Hayter 指控（對方否認、無司法結果）、Bryson Tiller 四歲喪母、Brittany Howard 姊姊早逝與鼓手違反保護令認罪、Mark Linkous 輕生與悼念曲、Art Bears 的社會主義立場、Avishai Cohen 赴莫斯科演出後遭音樂節取消、Cannonball《Country Preacher》與 Operation Breadbasket 及中風過世、Chris Connor 酗酒與伴侶、Clara Nunes 婚姻與麻醉過敏過世、Al Cohn 肝癌過世。
+- 主線審稿 6 處：連續年份句四處（AWVFTS、Avishai Cohen、Cannonball、Clara Nunes）、來源改 https、字數壓回 250。
+
+### 題材補回：ar-u-011（2026-10-17）
+
+- 補查 33 位：add 10、none 23；改寫 10 位，補回 Tyrone Davis 中風與死因、Whitehouse 遭拒售拒演與警方突襲及 Sotos 案、William Tyler 談精神疾病的新作、Mravinsky 婉拒首演〈娘子谷〉、Seifert 癌症治療期間過世、พุ่มพวง 死於紅斑性狼瘡、조용필 1977 年大麻案禁演與 2005 年平壤演唱會、Johnathan Blake 回應警察暴力的新作、10cc 的 Stewart 車禍。**農村武裝青年先前被主線刪掉的楊儒門、樂生、蘇花高、反核、國光石化環評會議唱〈白海豚之歌〉全部寫回。**
+- 主線審稿 1 處：조용필 年份超量。
+
+### 題材補回：ar-u-010（2026-10-17）
+
+- 補查 31 位：add 14、none 17；改寫 14 位，補回 Chaka Khan 戒毒與止痛藥戒治、Satyricon 與挪威教堂縱火及 Euronymous 命案的場景史、Seu Jorge 哥哥遇害與露宿、Shania Twain 父母車禍身亡、萊姆病致發聲障礙與離婚、Snooks Eaglin 幼年失明、Sonny Stitt 毒品案與戒治、Stromae 父親在盧安達大屠殺中遇害與抗瘧藥副作用、Summer Walker 社交焦慮、Mess 遭蘇聯審查、Chuck Billy 罹癌、Jimmie Vaughan 離團與 Stevie Ray 過世、The Game 遭槍擊與被逐出 G-Unit、Darnielle 遭繼父施暴的童年、Cornwell 因毒品入獄與 Greenfield 死於新冠。
+- 主線審稿 0 處。
+
+### 題材補回：ar-u-013（2026-10-17）
+
+- 補查 27 位：add 13、none 14；改寫 13 位，補回 Townsend 自行住院確診雙相情緒障礙與戒菸酒、Rowland 古柯鹼成癮與破產及《My Beauty》、Drudkh 獻給班德拉與 NSBM 指控、Dua Lipa 2020 年地圖風波與 2024 年呼籲加薩停火、Father John Misty 的蘑菇之旅、Shawn Jay 2026 年公開癌症第四期（補查開頁兩源）、Foje 在獨立運動中為媒體大樓辦通宵演唱會、Frank Lowe 肺癌、Gabor Szabo 1956 年出逃、海洛因成癮與控告山達基、George Michael 控告索尼、伴侶 Feleppa 之死與 1998 年被捕出櫃、Scott-Heron 反種族隔離與反核及成癮入獄、H.E.R.〈I Can't Breathe〉、HAIM 新專輯寫伴侶罹癌、糖尿病與業界性別歧視。
+- 主線審稿 8 處：連續年份句（Devin、Dua Lipa、George Michael）、年份超量（George Michael、Gil Scott-Heron）、卡池專輯名超量（George Michael）、Gabor「後來和解」只有單源刪去、字數。
+
+### 題材補回：ar-u-016（2026-10-17）
+
+- 補查 21 位：add 7、none 14；改寫 7 位，補回 Corea 的山達基信仰與 2021 年因罕見癌症過世、Sam Jones 肺癌過世、XXXTentacion 2018 年遭持槍搶劫槍殺、Townsend 躁鬱症與酒毒問題及解散樂團戒除、Tamia 與 Grant Hill 的婚姻及多發性硬化症、Granduciel 感情破裂後的憂鬱與孤立、Froese 2015 年猝逝。
+- 主線審稿 1 處：The War on Drugs 卡池專輯名超量。
+
+### 題材補回：ar-u-015（2026-10-17）
+
+- 補查 28 位：add 11、none 17；改寫 11 位，補回 Ferrari 結核病、Maceo 隨 James Brown 樂手因薪資糾紛集體出走、工藤冬里早年的無政府主義與政治團體、Mahmoud Ahmed 在 Derg 政權下樂隊解散與審查、Mario 母親海洛因成癮與 2010 年指控撤案、Terrell 台上倒下與腦瘤逝世及《What's Going On》被嫌太政治、Gaye 1984 年遭父親槍殺、Ndegéocello 雙性戀身分與〈Leviticus: Faggot〉、Atlas 2011 年拒赴以色列演出、Potter 肺炎併發症、Howard 腦出血猝逝、Norma Jean 與 Porter Wagoner 的戀情。
+- 主線審稿 2 處：Ferrari、Mario 連續年份句。
+
+### 題材補回：ar-u-018（2026-10-17）
+
+- 補查 20 位：add 3、none 17；改寫 3 位，補回喜多嶋修與內藤洋子的婚姻、Keenan 母親中風癱瘓與〈Judith〉及 2004 年大選日發行的反戰翻唱、Ab-Soul 罹史蒂文斯–強森症候群與女友 Alori Joh 2012 年輕生。加山雄三表親一條第二源弱，不寫；:wumpscut: 的芬蘭校園槍擊案帳號線索僅單一來源且與樂團無關，不寫。
+- 主線審稿 0 處。
+
+### 題材補回：ar-u-014（2026-10-17）
+
+- 補查 32 位：add 16、none 16；改寫 15 位，補回 Connick 13 歲喪母、Roesli 2001 年改詞〈Garuda Pancasila〉遭警方傳喚、Herbert 的 Radio Boy 反全球化與《One Pig》遭 PETA 譴責、Grönemeyer 1998 年喪妻喪兄與 2019 年反右傾演說、Huey Lewis 的抄襲官司與梅尼爾氏症及 2025 年聽力近況（補查開頁兩源）、Iceage 被指有法西斯傾向與樂團否認、Israel Vibration 小兒麻痺與輪椅籃球隊事件、Monáe〈Hell You Talmbout〉與性別認同、Jacklin 的分手專輯、Dayes 遭撤美國入境資格、Kansas 成員轉信福音派與 Steinhardt 過世、Casey 車禍癱瘓與用藥、Key Glock 母親入獄與 Young Dolph 遇害、Khalid 2024 年確認同志身分、Solberg 的憂鬱焦慮。Khatia 兩條皆單源，不改。
+- 主線審稿 3 處：Grönemeyer、Huey Lewis、Monáe 連續年份句。
+
+### 題材補回：ar-u-017（2026-10-17）
+
+- 補查 18 位：add 11、none 7；改寫 10 位，補回 Yung Lean 藥物過量住院、經紀人過世與雙極性疾患、Zomby 的抄襲爭議、Zoot Sims 酗酒與癌逝、**လေးဖြူ 被主線刪掉的翁山蘇姬門牌、專輯遭收回改名、剃光頭抗命、拒演軍官之子婚禮、2006 年禁演全部寫回**、들국화 1987 年大麻案與成員過世、박효신 毀約官司與債務、JAGATARA 主唱的精神疾病與溺水過世、茄子蛋主唱聲帶受損休團、菊地雅章的閣樓租約判例、零與聲音解放組織的爭議與反體制立場。
+- 主線審稿 5 處：Yung Lean、茄子蛋 連續年份句；박효신、茄子蛋 年份超量；茄子蛋 刪 2025 年新歌（新作未核）。
+
+### 題材補回：ar-u-019（2026-10-17）
+
+- 補查 30 位：add 8、none 22；改寫 8 位，補回 Action Bronson 遭兩所大學撤出演出、Adia Victoria 拒絕 Americana 標籤、O'Neal 2015 年《Celebrity Big Brother》恐同辱罵風波、Stevenson 腦瘤手術、Alma Mahler 與 Gropius 的外遇、佛洛伊德會談與 1938 年流亡、Andy Gibb 古柯鹼成癮與心肌炎死因、Ari Lennox 公開要求解約並離開 Dreamville。
+- **更正**：Ametsub 遭音樂人 Cuushe 公開指控是在 2018 年（RA 與 The Playground 兩源開頁），先前 ar-u-019 段寫「2025 年」有誤；正文寫明是指控。判緩刑一條只有單源，不寫。
+- 主線審稿 9 處：Alma Mahler、Andy Gibb 年份超量；Alma Mahler、Ametsub、Ari Lennox 連續年份句；字數壓回 250。

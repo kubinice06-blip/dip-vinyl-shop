@@ -1,0 +1,1862 @@
+[
+ {
+  "key": "kayhan kalhor, brooklyn rider",
+  "name": "Kayhan Kalhor, Brooklyn Rider",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   2008,
+   2008
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Silent City",
+    "year": 2008,
+    "genres": [
+     "classical",
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c124-b",
+    "album": "Silent City",
+    "facts": [
+     {
+      "f": "⚠ **廠牌與盤面編號都查得到，策展層說的「未填 label-info」不成立**：release 519bc9c4 的 label-info 是 **World Village**（廠牌實體 5518f9d4）、**catalog-number 468078**。barcode 713746807825。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=9d47870f-55de-49a1-a6eb-6bf3e5c2daa9&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+     },
+     {
+      "f": "店面覆核（三種查法都跑）：直查 **collectionId 586280803**「Kayhan Kalhor & Brooklyn Rider — Silent City - EP」得 **4 軌**、標示日期 **2008-08-12**、版權標示「℗ 2008 world village」——**版權標示的廠牌與資料庫端的 label-info 是同一家**。四軌長度 6:54／29:10／6:23／10:34，**與資料庫端逐軌 0 秒差、曲名全同**。藝人目錄端（Kalhor 的藝人頁 7180580，22 筆）覆核後未再撈到第二筆對得上本張的條目。",
+      "src": "https://itunes.apple.com/lookup?id=586280803&country=nl&entity=song&limit=200"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Silent City",
+    "manifest": "onboarding-manifest-c124-20260910.json",
+    "desc": "四軌裡的第二軌 29:10，比其餘三軌加起來還長。那一軌與盤名同字，一支就占掉全張五分之三，其餘三軌合計只有 23:51。開場〈Ascending Bird〉6:54 與第三軌〈Parvaz〉6:23 只差三十一秒，末軌 10:34 把長度再拉開一次才收掉。2008 年發行，廠牌記 World Village、編號 468078，四軌的掛名全部是兩個名字並列，沒有任何一軌只掛其中一邊。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/9d47870f-55de-49a1-a6eb-6bf3e5c2daa9?fmt=json&inc=artist-credits+releases+media+genres+tags",
+     "https://musicbrainz.org/ws/2/release?release-group=9d47870f-55de-49a1-a6eb-6bf3e5c2daa9&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://musicbrainz.org/ws/2/artist/dd2a84cc-0d01-45fd-ba64-a0f7df21a226?fmt=json&inc=artist-rels+aliases",
+     "https://musicbrainz.org/ws/2/artist/0c4ac6e7-ebc0-43dd-9c1e-35ff7dd2fbe9?fmt=json&inc=artist-rels+aliases",
+     "https://musicbrainz.org/ws/2/release-group?artist=0c4ac6e7-ebc0-43dd-9c1e-35ff7dd2fbe9&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/release-group?artist=dd2a84cc-0d01-45fd-ba64-a0f7df21a226&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/lookup?id=586280803&country=nl&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/9d47870f-55de-49a1-a6eb-6bf3e5c2daa9"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "kenneth gilbert",
+  "name": "Kenneth Gilbert",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1971,
+   1971
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Couperin: Second livre de clavecin",
+    "year": 1971,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Couperin"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "kent nagano",
+  "name": "Kent Nagano",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   2000,
+   2000
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Busoni: Doktor Faust",
+    "year": 2000,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Busoni"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "kim kashkashian",
+  "name": "Kim Kashkashian",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1997,
+   1997
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Brahms: Viola Sonatas",
+    "year": 1997,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Brahms"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "kiri te kanawa",
+  "name": "Kiri Te Kanawa",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1983,
+   1983
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Mozart: Opera Arias",
+    "year": 1983,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Mozart"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "kirill kondrashin",
+  "name": "Kirill Kondrashin",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1980,
+   1980
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Shostakovich: Symphony no. 13 Babi Yar",
+    "year": 1980,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Shostakovich"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "kirsten flagstad",
+  "name": "Kirsten Flagstad",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1953,
+   1953
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Wagner: Wesendonck Lieder",
+    "year": 1953,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Wagner"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "kishori amonkar",
+  "name": "Kishori Amonkar",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1971,
+   1971
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Classical Vocal",
+    "year": 1971,
+    "genres": [
+     "classical",
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c66-b",
+    "album": "Classical Vocal",
+    "facts": [
+     {
+      "f": "Discogs 的印度盤條目標題作《(Classical) Vocal》，廠牌 His Master's Voice、目錄號 ECSD 2702、1971 年印度發行；曲目一面一首：〈Raga Bhoop〉與〈Raga Bageshri〉。",
+      "src": "https://www.discogs.com/release/3986239"
+     },
+     {
+      "f": "英文維基的 Kishori Amonkar 條目記她 1932 年生、2017 年過世，屬 Jaipur gharana，唱 khyal，也唱 thumri 與 bhajan 這類輕古典體裁；她的第一位老師是同屬 Jaipur gharana 的母親、古典聲樂家 Mogubai Kurdikar。她說母親要求嚴格，一開始的教法是唱一句、要她跟著複述一句；出道初期她隨母親四處演出，在台上替母親按 tanpura。",
+      "src": "https://en.wikipedia.org/wiki/Kishori_Amonkar"
+     },
+     {
+      "f": "同一條目記 1940 年代初起她另向 Bhendibazaar gharana 的 Anjanibai Malpekar 學唱，之後又受教於數個 gharana 的老師——Agra gharana 的 Anwar Hussain Khan、Gwalior gharana 的 Sharadchandra Arolkar 與 Balkrishnabuwa Parwatkar；她把 meend（音與音之間的滑行）技法特別歸功於 Anjanibai。",
+      "src": "https://en.wikipedia.org/wiki/Kishori_Amonkar"
+     },
+     {
+      "f": "同一條目記她的古典演唱事業在 1960 至 70 年代成長起來；在那之前她曾因一場影響發聲能力的病短暫停止演出，她說自己利用那段空檔思考並發展出一套跨越 gharana 的唱法。她也談過女性演出者的處境，並曾因觀眾行為不端而拒絕上台。",
+      "src": "https://en.wikipedia.org/wiki/Kishori_Amonkar"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Classical Vocal",
+    "manifest": "onboarding-manifest-c66-20260904.json",
+    "desc": "她公開說 Jaipur 的技法只是她的底，她在上面做了不少變化。第一位老師是同屬 Jaipur gharana 的母親 Mogubai Kurdikar。1940 年代初起她另向 Anjanibai Malpekar 學唱，meend 歸功於她；她也採用 alapchaari，放鬆節奏與音之間的連結。HMV ECSD 2702 一面一首，收〈Raga Bhoop〉與夜半的〈Raga Bageshri〉，tabla 是 Narayanrao Indorkar。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/6a72e4c0-0eba-4fd0-82c2-ef14de99bcc3",
+     "https://www.discogs.com/release/3986239",
+     "https://en.wikipedia.org/wiki/Kishori_Amonkar",
+     "https://en.wikipedia.org/wiki/Bhupali",
+     "https://en.wikipedia.org/wiki/Bageshri"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "klaus tennstedt",
+  "name": "Klaus Tennstedt",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1983,
+   1983
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Mahler: Symphony no. 6 (live)",
+    "year": 1983,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Mahler"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "kremerata baltica",
+  "name": "Kremerata Baltica",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   2017,
+   2017
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Weinberg: Chamber Symphonies",
+    "year": 2017,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Weinberg"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "krystian zimerman",
+  "name": "Krystian Zimerman",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1988,
+   1988
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Chopin: Ballades",
+    "year": 1988,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Chopin"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "krzysztof penderecki",
+  "name": "Krzysztof Penderecki",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1973,
+   1973
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Threnody to the Victims of Hiroshima",
+    "year": 1973,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "kurt masur",
+  "name": "Kurt Masur",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1972,
+   1972
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Mendelssohn: Symphonies",
+    "year": 1972,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Mendelssohn"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "kyung-wha chung 鄭京和",
+  "name": "Kyung-wha Chung 鄭京和",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1980,
+   1980
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Franck / Debussy: Violin Sonatas",
+    "year": 1980,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "la monte young",
+  "name": "La Monte Young",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1987,
+   1987
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Well-Tuned Piano",
+    "year": 1987,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "la venexiana",
+  "name": "La Venexiana",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   2008,
+   2008
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Monteverdi: Selva morale e spirituale",
+    "year": 2008,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 7,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c48b-b",
+    "album": "Monteverdi: Selva morale e spirituale",
+    "facts": [
+     {
+      "f": "Claudio Cavina 一身兩職，既是指揮也以假聲男高音唱 alto 聲部；歌手包括 Rossana Bertini、Alena Dantcheva、Nadia Ragni（女高音）、Giuseppe Maletto、Sandro Naglia（男高音）、Daniele Carnovich、Matteo Bellotto（男低音），器樂有兩把小提琴、四把長號、兩把 theorbo、violone 與 Vittorio Zanon 的管風琴。",
+      "src": "https://www.discogs.com/release/15061824-Claudio-Monteverdi-La-Venexiana-Claudio-Cavina-Selva-Morale-E-Spirituale"
+     },
+     {
+      "f": "三張 CD 不照原曲集次序排列，而是把其中的樂曲重組成兩套完整的晚禱（Vespers）與一套莊嚴彌撒（Missa solemnis）；演唱以每聲部一人（OVPP）為主。",
+      "src": "https://earlymusicreview.com/monteverdi-salve-morale-e-spirituale/"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Monteverdi: Selva morale e spirituale",
+    "manifest": "onboarding-manifest-c48-rescue-20260901.json",
+    "desc": "指揮席上的人同時在唱：Claudio Cavina 一邊帶團一邊唱 alto 聲部。《Selva morale e spirituale》是 Monteverdi 就任聖馬可教堂樂長之後最重的一部宗教曲集，出版時他已 74 歲，收錄約四十首、題獻給皇后 Eleonora Gonzaga。La Venexiana 不照原曲集的次序走，把樂曲重組成兩套完整晚禱與一套莊嚴彌撒，每個聲部只用一人；錄音是 2005 年 3 月西班牙 Cuenca 一場宗教音樂節的教堂現場。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/15061824-Claudio-Monteverdi-La-Venexiana-Claudio-Cavina-Selva-Morale-E-Spirituale",
+     "https://earlymusicreview.com/monteverdi-salve-morale-e-spirituale/",
+     "https://en.wikipedia.org/wiki/Selva_morale_e_spirituale",
+     "https://en.wikipedia.org/wiki/La_Venexiana",
+     "https://www.lavenexiana.net/about-us/",
+     "https://musicbrainz.org/release-group/3f2896c0-cd94-4ecc-acb4-4af1a648a39a"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "lalgudi jayaraman",
+  "name": "Lalgudi Jayaraman",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1970,
+   1970
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Violin Solos of Carnatic Music",
+    "year": 1970,
+    "genres": [
+     "classical",
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c66-b",
+    "album": "Violin Solos of Carnatic Music",
+    "facts": [
+     {
+      "f": "Discogs 的印度盤條目標題作《Violin Solos Of Carnatic Music By Lalgudi G. Jayaraman & G. Srimathi》，廠牌 His Master's Voice、目錄號 ECSD 2435，1970 年印度發行的 LP。",
+      "src": "https://www.discogs.com/release/5324490"
+     },
+     {
+      "f": "英文維基的 Lalgudi Jayaraman 條目記他 1930 年生、2013 年過世，是卡納提克小提琴家、歌者兼作曲者，一般與 M.S. Gopalakrishnan、T.N. Krishnan 並稱卡納提克小提琴的三傑；2001 年獲頒 Padma Bhushan。",
+      "src": "https://en.wikipedia.org/wiki/Lalgudi_Jayaraman"
+     },
+     {
+      "f": "同一條目記他出身「音樂三聖」（Muthuswami Dikshitar、Shyama Shastri、Thyagaraja）弟子的一脈，音樂由父親 V. R. Gopala Iyer 親授；父親治學極嚴，連削鉛筆都不准他做，認為他的手指太寶貴。他十二歲起以伴奏小提琴手出道，後來才成為獨奏者。",
+      "src": "https://en.wikipedia.org/wiki/Lalgudi_Jayaraman"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Violin Solos of Carnatic Music",
+    "manifest": "onboarding-manifest-c66-20260904.json",
+    "desc": "Menuhin 聽完他在愛丁堡的演出，把自己的義大利小提琴送給他。ECSD 2435 每段都標出 raga 與 taal：B 面的〈Theeradha Vilayattu Pillai〉在一首裡連換四個 raga，收在〈Thillana〉。小提琴是他與 G. Srimathi，mridangam Umayalpuram K. Sivaraman、ghatam Alangudi Ramachandran。他把聲樂的路子帶進小提琴，那套技法叫 Lalgudi Bani。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/a9ae736d-912a-4016-a3e9-943dae78981c",
+     "https://www.discogs.com/release/5324490",
+     "https://en.wikipedia.org/wiki/Lalgudi_Jayaraman"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "lauritz melchior",
+  "name": "Lauritz Melchior",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1940,
+   1940
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Wagner: Arias",
+    "year": 1940,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Wagner"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "lazar berman",
+  "name": "Lazar Berman",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1977,
+   1977
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Liszt: Années de pèlerinage",
+    "year": 1977,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Liszt"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "leonard bernstein & stephen sondheim",
+  "name": "Leonard Bernstein & Stephen Sondheim",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1961,
+   1961
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "West Side Story (Original Sound Track Recording)",
+    "year": 1961,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "West Side Story (Original Sound Track Recording)",
+    "manifest": "onboarding-manifest-c34-canon-20260821.json",
+    "desc": "1961 年電影《West Side Story》的原聲帶，Leonard Bernstein 作曲、Stephen Sondheim 作詞。片中歌唱多由幕後歌手代勞，Marni Nixon 頂替 Natalie Wood 演唱 Maria，最終如何取用各人聲軌由製片 Saul Chaplin 拍板。唱片在 Billboard 立體聲專輯榜蟬聯 54 週冠軍，是專輯榜史上最長的榜首紀錄，另在單聲道榜六週奪冠；1962 年獲葛萊美最佳原聲帶／原班卡司獎，1986 年獲 RIAA 三白金認證。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/West_Side_Story_(1961_soundtrack)",
+     "https://en.wikipedia.org/wiki/West_Side_Story_(1961_film)",
+     "https://musicbrainz.org/release-group/dd5d8373-4ae3-3908-9235-c871e49ebd76"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "leonard slatkin",
+  "name": "Leonard Slatkin",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1995,
+   1995
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Barber: Adagio for Strings",
+    "year": 1995,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Barber"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "leonid kogan",
+  "name": "Leonid Kogan",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1958,
+   1958
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Khachaturian: Violin Concerto",
+    "year": 1958,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Khachaturian"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "les percussions de strasbourg",
+  "name": "Les Percussions de Strasbourg",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1987,
+   1987
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Xenakis: Pléïades",
+    "year": 1987,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Xenakis"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "lili boulanger",
+  "name": "Lili Boulanger",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1913,
+   1913
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Faust et Hélène",
+    "year": 1913,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "lili kraus",
+  "name": "Lili Kraus",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1968,
+   1968
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Mozart: Piano Sonatas",
+    "year": 1968,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Mozart"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "lionel tertis",
+  "name": "Lionel Tertis",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1933,
+   1933
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Bax: Viola Sonata / Brahms: Sonata in F minor / Bach: Chaconne / Delius: Second Sonata",
+    "year": 1933,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "liza lim",
+  "name": "Liza Lim",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   2018,
+   2018
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Extinction Events and Dawn Chorus",
+    "year": 2018,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "lotte lehmann",
+  "name": "Lotte Lehmann",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1946,
+   1946
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Schumann: Frauenliebe und -leben",
+    "year": 1946,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Schumann"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "lou harrison",
+  "name": "Lou Harrison",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1972,
+   1972
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "La Koro Sutro",
+    "year": 1972,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "louise farrenc",
+  "name": "Louise Farrenc",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1847,
+   1847
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Symphony no. 3",
+    "year": 1847,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "lubomyr melnyk",
+  "name": "Lubomyr Melnyk",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   2013,
+   2013
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Corollaries",
+    "year": 2013,
+    "genres": [
+     "classical",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "luciano pavarotti, plácido domingo & josé carreras",
+  "name": "Luciano Pavarotti, Plácido Domingo & José Carreras",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1990,
+   1990
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Three Tenors in Concert 1990",
+    "year": 1990,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "ludovic morlot",
+  "name": "Ludovic Morlot",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   2014,
+   2014
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "John Luther Adams: Become Ocean",
+    "year": 2014,
+    "genres": [
+     "classical"
+    ],
+    "composer": "John Luther Adams"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "m.s. subbulakshmi",
+  "name": "M.S. Subbulakshmi",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1965,
+   1965
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Meera Bhajans",
+    "year": 1965,
+    "genres": [
+     "classical",
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c66-b",
+    "album": "Meera Bhajans",
+    "facts": [
+     {
+      "f": "MusicBrainz 的 release-group 記首度發行年 1965、主類型 Album、無次類型，掛名「M.S. Subbulakshmi」，底下三個 release：1965 年印度原盤（廠牌 His Master's Voice、目錄號 EALP 1297，十軌）、1999 年印度再版與一筆無日期的印度版，三筆狀態皆 Official。",
+      "src": "https://musicbrainz.org/release-group/a1d3dbe5-849d-4eef-9f8f-459a166b55cb"
+     },
+     {
+      "f": "Discogs 的印度原盤條目記廠牌 His Master's Voice、目錄號 EALP 1297、1965 年印度發行，封面掛名作「Smt. M. S. Subbulakshmi」；同年另有一筆 Odeon 的 MOAE 133。",
+      "src": "https://www.discogs.com/release/3920769"
+     },
+     {
+      "f": "英文維基的 M. S. Subbulakshmi 條目記她 1916 年生於馬杜賴、2004 年過世，是南印卡納提克歌者；她是史上第一位獲頒印度最高平民榮譽 Bharat Ratna 的音樂家，1974 年也是第一位獲得拉蒙·麥格塞塞獎的印度音樂家，1966 年更是第一位在聯合國大會演出的印度人。",
+      "src": "https://en.wikipedia.org/wiki/M._S._Subbulakshmi"
+     },
+     {
+      "f": "同一條目記她以印度文化大使的身分走過倫敦、紐約、加拿大與遠東，1963 年愛丁堡音樂與戲劇節、紐約卡內基廳、1966 年聯合國日的聯大、1982 年倫敦皇家亞伯特廳與 1987 年莫斯科印度節，都是她生涯的重要節點；1997 年丈夫過世後她停止所有公開演出，音樂會收入與版稅多半捐給了各種慈善用途。",
+      "src": "https://en.wikipedia.org/wiki/M._S._Subbulakshmi"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Meera Bhajans",
+    "manifest": "onboarding-manifest-c66-20260904.json",
+    "desc": "Meera 的夫家最不能忍的，正是她用來表達虔敬的音樂。詞歸在這位十六世紀詩人名下：她出身拉吉普特王族，1516 年嫁給梅瓦爾王儲，1521 年丈夫傷重身亡；歸在她名下的讚歌數以百萬計，學者認為只有數百首可信。HMV EALP 1297 收十軌、兩面各五首，每首三分多到五分多鐘，伴奏只有 T.K. Murthy 的 mridangam 與 V.V. Subramaniam 的小提琴。1929 年十三歲的她首度登上馬德拉斯音樂學院，唱的正是 bhajan。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/a1d3dbe5-849d-4eef-9f8f-459a166b55cb",
+     "https://www.discogs.com/release/3920769",
+     "https://musicbrainz.org/release/e1b0624d-b5aa-40d3-8169-08876fdc809c",
+     "https://en.wikipedia.org/wiki/M._S._Subbulakshmi",
+     "https://en.wikipedia.org/wiki/Mirabai"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "ma shui-long 馬水龍",
+  "name": "Ma Shui-Long 馬水龍",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1981,
+   1981
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "梆笛協奏曲",
+    "year": 1981,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "maddalena laura sirmen",
+  "name": "Maddalena Laura Sirmen",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1769,
+   1769
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "String Quartets",
+    "year": 1769,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "malcolm bilson",
+  "name": "Malcolm Bilson",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1988,
+   1988
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": true,
+  "poolAlbums": [
+   {
+    "album": "Mozart: Piano Concertos (fortepiano)",
+    "year": 1988,
+    "genres": [
+     "classical"
+    ],
+    "composer": "Mozart"
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "mallikarjun mansur",
+  "name": "Mallikarjun Mansur",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1968,
+   1968
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Ragas Bahaduri Todi & Gaud Malhar",
+    "year": 1968,
+    "genres": [
+     "classical",
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c66-b",
+    "album": "Ragas Bahaduri Todi & Gaud Malhar",
+    "facts": [
+     {
+      "f": "MusicBrainz 的 release-group 記首度發行年 1968、主類型 Album、無次類型，掛名「Mallikarjun Mansur」，底下只有一個 release：1968 年印度、廠牌 His Master's Voice、目錄號 ECLP-2384，兩軌。",
+      "src": "https://musicbrainz.org/release-group/433bfeef-ffde-49bb-a3cb-8afc32e64ba2"
+     },
+     {
+      "f": "Discogs 上這張唱片的條目標題是《Mallikarjun Mansur》（封面只印他的名字），廠牌 His Master's Voice、目錄號 ECLP-2384、1968 年印度發行；曲目正是 A1〈Ye Mahadev Devan Pate〉（Raga: Bahaduri Todi，Taal: Rupak）與 B1〈Man Na Kariye Ri〉（Raga: Gaud Malhar，Taal: Teentaal）。",
+      "src": "https://www.discogs.com/release/4903499"
+     },
+     {
+      "f": "MusicBrainz 上另外兩個同年 release-group——《Mallikarjun Mansur》（344bc67b-ef2e-4d98-8664-4f0787186e5a）與《Hindi Classical》（cbb0c66d-e8e0-4011-9462-c694d1d7fb18）——底下的 release 目錄號同樣是 His Master's Voice ECLP-2384、曲目也同樣是這兩首，也就是**同一張唱片在 MB 上被建了三筆**；其中自我同名那筆記錄了曲長：19 分 11 秒與 18 分 6 秒。",
+      "src": "https://musicbrainz.org/release/7187be1f-14c7-42b1-b713-8db31a645068"
+     },
+     {
+      "f": "英文維基的 Mallikarjun Mansur 條目記他 1910 年生於 Karnataka 的 Mansur 村、1992 年過世，唱 khyal，屬 Jaipur-Atrauli gharana；父親是村長兼農夫、也是音樂的愛好者與贊助人。九歲時他在兄長的劇團裡演過一個小角色，父親隨後把他送進巡迴的 Yakshagana（坎納達語戲曲）班子，班主喜歡他清亮的嗓子，鼓勵他在戲裡唱各種曲子。",
+      "src": "https://en.wikipedia.org/wiki/Mallikarjun_Mansur"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Ragas Bahaduri Todi & Gaud Malhar",
+    "manifest": "onboarding-manifest-c66-20260904.json",
+    "desc": "他以罕用 raga 著稱，A 面唱的 Bahaduri Todi 正是其中之一。ECLP-2384 一面一首：〈Ye Mahadev Devan Pate〉與走 Gaud Malhar 的〈Man Na Kariye Ri〉，tabla 是 Narayanrao Indorkar。他從南印卡納提克起步，由 Nilkanth Bua Alurmath 引介進 Hindustani，拜進 Alladiya Khan 門下，最後隨其子 Bhurji Khan 琢磨最久。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/433bfeef-ffde-49bb-a3cb-8afc32e64ba2",
+     "https://www.discogs.com/release/4903499",
+     "https://musicbrainz.org/release/7187be1f-14c7-42b1-b713-8db31a645068",
+     "https://en.wikipedia.org/wiki/Mallikarjun_Mansur",
+     "https://en.wikipedia.org/wiki/Todi_(raga)",
+     "https://en.wikipedia.org/wiki/Gaud_Malhar"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "mannheim steamroller",
+  "name": "Mannheim Steamroller",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   1975,
+   1975
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Fresh Aire",
+    "year": 1975,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Fresh Aire",
+    "manifest": "onboarding-manifest-c46-soundtrack-cross-20260828.json",
+    "desc": "Chip Davis 替 C.W. McCall 寫出〈Convoy〉、拿下 1976 年鄉村樂年度作曲人之後端出的器樂企畫。沒有大廠願意代理，他因此自創 American Gramaphone（名字拿 Deutsche Grammophon 開玩笑），1975 年出版本作。曲目依月份排序，題名取古典曲式——同名曲是 air、〈Saras Band〉是 sarabande、〈Pass the Keg (Lia)〉是 passacaglia；Davis 自稱這是「十八世紀的搖滾樂」，他本人負責鼓、打擊與直笛，鍵盤交給 Jackson Berkey。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Fresh_Aire",
+     "https://en.wikipedia.org/wiki/Mannheim_Steamroller",
+     "https://musicbrainz.org/release-group/b5117e5d-5027-3bf7-88ea-6fc456b3c89f"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "marc coppey",
+  "name": "Marc Coppey",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "classical",
+  "yearRange": [
+   2007,
+   2007
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Dutilleux: Tout un monde lointain / Caplet: Épiphanie",
+    "year": 2007,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c48c-b",
+    "album": "Dutilleux: Tout un monde lointain / Caplet: Épiphanie",
+    "facts": [
+     {
+      "f": "錄音於 2007 年 7 月 12 日至 15 日，地點是列日的 Salle Philharmonique，由 Marc Coppey 獨奏、Pascal Rophé 指揮 Orchestre Philharmonique de Liège。",
+      "src": "https://www.oprl.be/fr/caplet-dutilleux"
+     },
+     {
+      "f": "《Tout un monde lointain…》是為 Mstislav Rostropovich 而寫，1970 年 7 月 25 日由他在 Aix-en-Provence 音樂節首演，Serge Baudo 指揮 Orchestre de Paris。",
+      "src": "https://en.wikipedia.org/wiki/Tout_un_monde_lointain..."
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Dutilleux: Tout un monde lointain / Caplet: Épiphanie",
+    "manifest": "onboarding-manifest-c48-rescue-20260901.json",
+    "desc": "五個樂章，五句 Baudelaire——連曲名都是從一首詩裡撈出來的。那句取自《惡之華》中的〈頭髮〉。這首協奏曲是為 Mstislav Rostropovich 而寫，1970 年由他在 Aix-en-Provence 音樂節首演；這一份則是 2007 年 7 月 Marc Coppey 獨奏、Pascal Rophé 指揮列日愛樂錄下的。Æon 於 2008 年發成雙碟，另收 Caplet 的《Épiphanie》與一段訪問 Dutilleux 本人的錄音。",
+    "sourceUrls": [
+     "https://www.oprl.be/fr/caplet-dutilleux",
+     "https://en.wikipedia.org/wiki/Tout_un_monde_lointain...",
+     "https://musicbrainz.org/release-group/ce5dd2ba-0ed6-4152-9d6b-0a38932e467b"
+    ]
+   }
+  ]
+ }
+]

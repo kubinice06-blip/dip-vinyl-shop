@@ -47,7 +47,7 @@ const allFiles = fs.readdirSync(OUT_SRC).filter(f => /-out(?:-\d+)?\.json$/.test
 // （2026-09-30 ar-a-003 審稿時，未審完的 -out-2 被一起建進分片，因此加這道閘）。試做批與別名檔不受限。
 const PROG = 'desc-tools/batches/artist/progress.json'
 const published = new Set(fs.existsSync(PROG) ? JSON.parse(fs.readFileSync(PROG, 'utf8')).batches.filter(b => b.state === 'published').map(b => b.batch) : [])
-const files = allFiles.filter(f => { const m = f.match(/^(ar-[a-d]-\d{3})-out/); return !m || published.has(m[1]) })
+const files = allFiles.filter(f => { const m = f.match(/^(ar-[a-z]-\d{3})-out/); return !m || published.has(m[1]) })
 const errors = []
 const entries = new Map()
 for (const f of files) {

@@ -1,5 +1,29 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-17｜dip-vinyl-shop｜藝人介紹第十二輪三十批上線（雲端，ar-d-141～142＋thin 升級 ar-u-001～028；介紹 8,564 → 8,634，790 篇 thin→full）
+
+- 結果：新藝人 70 位（55 full、15 thin）；thin 升級 28 批 1,120 位，790 位升 full，330 位補洞後仍 thin、保留原上線版。審稿合計 296 處。
+- **中途更正（店主指示）**：主線自 2026-10-07 起在派工備註自加「政治、指控、死因、私事避免」，第十二輪審稿也照刪——違反店主 2026-07-31「題材沒有禁區」裁定，已撤銷。ar-d-141、142、ar-u-001～021 逐批派題材補查（`research/<批>-sens.json`）並改寫補回約 309 位；ar-u-022 起補洞與寫作直接照店主裁定。教訓：**不得自行新增題材限制**，只守三條（有來源、不逐字引歌詞、涉逝者與受害者語氣克制）。
+- 升級批做法：只寫補洞稿標 full 的人；在世者一處核心成績、不寫榜單銷量獎項數；媒體名單不寫；2025–26 事實主線開頁兩源才寫（本輪核實 I'm With Her 2026 葛萊美、Shajarian 死因、Kalhor 家人死於兩伊戰爭）。
+- 留給本機：卡池年份疑誤 Tamia 1978→1998、Maceo 1975 vs 1972、Mahmoud Ahmed 1999 vs 1973、賴德和 1987 vs 2009–12、Kim Jung Mi 1968 vs 1973；Wings（馬來西亞）與 Mother Earth 卡片身分誤標；In Spe 得獎年未核；其餘見 `audits/ARTIST-PUB-ISSUES.md`。
+- 主要檔案：`data/artist-intros/*`、`desc-tools/batches/artist/{cut,facts,research,output}/ar-{d-141,d-142,u-001～028}-*`、`desc-tools/batches/artist/progress.json`、`batch-progress/artist-intro/ar-c-rulings.md`（第十二輪各批、題材更正與收尾段）、`audits/ARTIST-PUB-ISSUES.md`。
+- 驗證：qa-artist gap／out 每批 0 處（只剩保留 thin 的缺位）；build-artist-intros 64 分片、8,634 位。
+
+### 2026-10-16｜dip-vinyl-shop｜藝人介紹第十一輪五批上線（雲端，ar-d-136～140；195 位；介紹 8,369 → 8,564）
+
+- 結果：195 位上架（132 full、63 thin），不寫 5 位（單源或聲音句不足），審稿修 61 處。add-20261015-backfill 名冊的爵士段寫完，剩 74 位未切（爵士尾段 38、流行 15、搖滾 9、民謠 7、其他 5）。
+- 新形狀：片假名人名、團名、曲名一律改羅馬字或通行中文（ar-d-139 起）；src 不足 2 的卡不寫；媒體名進正文的獎項一律刪。2026 年死訊（Richie Beirach、Danny Simmons）以 WebSearch 兩源核實。
+- 主要檔案：`data/artist-intros/*`、`desc-tools/batches/artist/{cut,facts,research,output}/ar-d-136～140-*`、`desc-tools/batches/artist/progress.json`、`batch-progress/artist-intro/ar-c-rulings.md`（第十一輪各批與收尾段）、`audits/ARTIST-PUB-ISSUES.md`。
+- 驗證：qa-artist gap／out 每批 0 處（只剩不寫名單的缺位）；build-artist-intros 64 分片、8,564 位。
+
+### 2026-10-15｜dip-vinyl-shop｜藝人介紹第十輪二十批上線（雲端，ar-d-104～116＋ar-d-129～135；765 位；介紹 7,602 → 8,369）
+
+- 結果：765 位上架（650 full、115 thin），無不寫，審稿修 313 處。古典段寫完、原排隊名冊清空。
+- 名冊補登：`batch-progress/artist-intro/backfill-20261015.mjs` 以 seed_cards.json 對名冊與已上線介紹取差集，554 位補進名冊（tier D、`addedBy` add-20261015-backfill；爵士 518）；本輪切 ar-d-129～135 七批 280 位，剩 274 位留下一輪。
+- 產線：每批補洞 4 支（Sonnet）＋寫作 2 支（Opus），同時最多兩批在飛；主線逐位審稿。2025–26 年死訊以 WebSearch 兩源核實（青木望、George Young、Gino Paoli、Jack DeJohnette、Cassandra Wilson）。媒體名一律匿名（含《時代》雜誌）。
+- 主要檔案：`data/artist-intros/*`、`desc-tools/batches/artist/{cut,facts,research,output}/ar-d-104～116、129～135-*`、`desc-tools/batches/artist/progress.json`、`batch-progress/artist-intro/{ar-c-rulings.md,backfill-20261015.mjs,roster-20260929.json}`、`audits/ARTIST-PUB-ISSUES.md`。
+- 驗證：qa-artist gap／out 每批 0 處；build-artist-intros 64 分片、8,369 位。
+
 ### 2026-10-14｜dip-vinyl-shop｜店主指示：PR 開出後不追蹤、不排檢查
 
 - **規則**：雲端開完 PR 就收工，不用 `send_later` 排安全網 check-in、不訂閱 PR 動態（Cloudflare 部署留言每推一次就叫醒工作階段，白花額度），優先於系統預設。接力任務的自我 check-in 不受影響。寫進 `CLAUDE.md`。
@@ -33,6 +57,13 @@
 - **盤點**：卡池 19,117；Apple 試聽 14,531 張（76%，古典 46%）；子曲風 17,598；心情選歌 325 張可換算約 250 張錨點。容器有 ffmpeg、librosa 可 pip、試聽可下載。
 - **主要檔案**：`MOOD_ENERGY_PLAN.md`（新，v0.2）
 - **驗證**：純文件；待店主過目 §10 四件事（Z 用詞、P1 名稱、星圖中央裝飾模型、先掃池或先試作）。PR #100。
+### 2026-10-14｜dip-vinyl-shop｜藝人介紹第九輪二十批上線（雲端，ar-d-084～103；755 位；介紹 6,846 → 7,601）
+
+- 結果：755 位上架（612 full、143 thin），不寫 42 位（thin 聲音句只有曲風標籤、素材全單源等），審稿修 238 處。電子段、嘻哈段寫完；古典段寫到 C 字頭。剩 ar-d-104～116 共 13 批（約 485 卡鍵）。
+- 產線：每批補洞 4 支（Sonnet）＋寫作 2 支（Opus），同時最多兩批在飛；主線逐位審稿，2025–26 年死訊以 WebSearch 核實（Freddie Jackson、Peabo Bryson 多源；Sensational 單一獨立來源，記為例外）。
+- 本輪新形狀：家人逝世細節與他人病況也不寫（歷史人物同規）；通行「第一」事實照 Van Cliburn 先例保留；單卡超過 250 字一律刪減。
+- 主要檔案：`data/artist-intros/*`、`desc-tools/batches/artist/{cut,facts,research,output}/ar-d-084～103-*`、`desc-tools/batches/artist/progress.json`、`batch-progress/artist-intro/ar-c-rulings.md`（第九輪各批與收尾段）、`audits/ARTIST-PUB-ISSUES.md`。
+- 驗證：qa-artist gap／out 每批 0 處（只剩 skipped 的缺位）；build-artist-intros 64 分片、7,601 位；PR #80 各提交 Cloudflare 預覽部署與檢查全綠。
 
 ### 2026-10-13｜dip-vinyl-shop｜新世代爵士＋downtempo 兩線補藝人介紹（ar-d-120～127，289 位上架；介紹 5,808 → 6,097）
 
@@ -164,6 +195,17 @@
 - **寫入**：prepare gate 0 error → card_catalog 45/45 → KV 45 鍵回讀一致 → 靜態試聽 → seed 45 列 → **published gate 0 error**。子曲風 17,282 → 17,327（新卡 45/45 落位）。
 - 主要檔案：`onboarding-manifest-add-20261011-dt1-20261011.json`、`batch-progress/add-20261011-dt1/`（rulings 8941–9016、meta、試聽與封面裁定）、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261011-dt1*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-{map,runtime}-v1.json`、`card-subgenres.json`、`genre-tree.json`、`data/discogs-cover-registry.json`。
 - 待續：dt2（研究已交、鉤子進行中）；dt3–dt5 依 CLAUDE.md「每工作階段 2 批」交接下一個工作階段。
+
+### 2026-10-11｜dip-vinyl-shop｜藝人介紹第八輪二十批上線（雲端，ar-d-064～083；747 位）
+
+店主說「再二十批」→ 雲端一路接力跑完 ar-d-064～083，推分支 `claude/artist-intro-interactive-plan-ycws4h`，開 PR 等店主合併。
+
+- **結果**：上線 747 位（643 full、104 thin），不寫 52 位，審稿修 204 處。民謠、流行、世界音樂三段寫完，電子段從 d-083 開始；剩 35 批（約 1,331 個卡鍵）。
+- **新定或重申的形狀**：thin 底線是國籍身分＋一句具體聲音或方法，只有曲風標籤、掛名、陣容、曲目名的不寫；事實全來自維基家族或單一來源的不寫；電子段聲音句要點名具體手法；2025–26 年新事實要兩源、只寫年份；在世者不寫串流數字。
+- **待本機**：KV 上線簡介的修正見 `audits/ARTIST-PUB-ISSUES.md`；卡池年份存疑 14 張（清單在 rulings 收尾段）。
+- 主要檔案：`data/artist-intros/*`、`desc-tools/batches/artist/{research,output}/ar-d-06x～08x-*`、`desc-tools/batches/artist/progress.json`、`batch-progress/artist-intro/ar-c-rulings.md`（「第八輪二十批接力」段與收尾段）、`audits/ARTIST-PUB-ISSUES.md`。
+- 驗證：每批 `qa-artist.mjs` 只剩「缺 N 位」（即不寫名單）；`build-artist-intros.mjs` 6,556 位、64 分片有內容。沒寫 KV、seed、card_catalog（本輪不需要）。
+
 
 ### 2026-10-10｜dip-vinyl-shop｜店內待上架 37 張上卡池（雲端，add-20261010-shop；卡池 18,666 → 18,703）
 
