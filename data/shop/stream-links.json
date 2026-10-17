@@ -96,10 +96,14 @@
    "artist": "Charles Webster",
    "album": "Remixed on the 24th of July",
    "spotify": null,
-   "apple": "https://music.apple.com/us/album/remixed-on-the-24th-of-july/280288544",
+   "apple": null,
    "yt": null,
    "bandcamp": "https://charleswebster.bandcamp.com/album/remixed-on-the-24th-of-july",
-   "checkedAt": "2026-10-17"
+   "checkedAt": "2026-10-17",
+   "skip": [
+    "apple"
+   ],
+   "note": "Apple 只有 us 區，台灣打不開；台灣區只有原版《Born on the 24th of July》沒有 Remixed。QR 改用 Bandcamp（正確專輯）"
   },
   "3ee0ad0255ff8175b3c8f5f06e26186c": {
    "artist": "ジョージ大塚トリオ",
@@ -721,10 +725,14 @@
    "artist": "宮沢昭",
    "album": "いわな",
    "spotify": null,
-   "apple": "https://music.apple.com/jp/album/%E3%81%84%E3%82%8F%E3%81%AA/1055608337",
+   "apple": "https://music.apple.com/tw/album/bull-trout/1434567168",
    "yt": null,
    "bandcamp": null,
-   "checkedAt": "2026-10-17"
+   "checkedAt": "2026-10-17",
+   "manual": [
+    "apple"
+   ],
+   "note": "Apple 台灣區《Bull Trout》（いわな英文盤名）；原 jp 區連結台灣打不開"
   },
   "3f30ad0255ff8004aaa2e4e69e8fdac9": {
    "artist": "Built to Spill",
