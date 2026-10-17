@@ -1,0 +1,1237 @@
+[
+ {
+  "key": "i musici",
+  "name": "I Musici",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "I Musici（又稱 I Musici di Roma）是 1951 年成立於羅馬的義大利室內樂團。",
+      "src": "https://en.wikipedia.org/wiki/I_Musici",
+      "src2": "https://www.mallorca.com/en/events/artists/i-musici",
+      "from": "bank"
+     },
+     {
+      "f": "樂團由十二位年輕的 Accademia di Santa Cecilia 畢業生創立，首演在 1952 年 3 月 30 日於羅馬的 Santa Cecilia。",
+      "src": "https://www.mallorca.com/en/events/artists/i-musici",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "I Musici 以巴洛克曲目聞名，尤其是 Vivaldi 與 Tomaso Albinoni。",
+      "src": "https://en.wikipedia.org/wiki/I_Musici",
+      "src2": "https://www.mallorca.com/en/events/artists/i-musici",
+      "from": "bank"
+     },
+     {
+      "f": "樂團不設指揮：十二位樂手（六把小提琴、兩把中提琴、兩把大提琴、一把低音大提琴與一台大鍵琴）以平等身分共同決定詮釋。",
+      "src": "https://www.mallorca.com/en/events/artists/i-musici",
+      "single": true,
+      "from": "bank",
+      "src2": "https://iicwashington.esteri.it/en/?p=1514"
+     },
+     {
+      "f": "I Musici 演奏與錄製巴洛克音樂的時間，早於早期音樂樂團投入這批曲目。",
+      "src": "https://en.wikipedia.org/wiki/Felix_Ayo",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "1959 年的立體聲重錄版用現代樂器，揉弦輕柔、音色溫暖，是早於古樂演奏運動的浪漫式詮釋；另有評論說它的速度偏慢、帶浪漫色彩，聽來像隔著窗看見古樂演奏興起之前的年代。",
+      "src": "https://www.audiophilia.com/reviews/2025/7/21/esoteric",
+      "src2": "https://www.musicweb-international.com/classrev/2001/oct01/Vivaldi_4Seasons_Ayo.htm",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1955 年的 Vivaldi《四季》錄音是樂團的突破，成為暢銷唱片；The Quietus 稱這張唱片讓 Vivaldi 重新成為大眾耳熟的名字，四年後樂團又以立體聲重錄。",
+      "src": "https://en.wikipedia.org/wiki/Felix_Ayo",
+      "src2": "https://thequietus.com/?p=23229",
+      "from": "new"
+     },
+     {
+      "f": "1959 年的立體聲版長期被當作這首曲子的標準錄音之一：Audiophilia 稱它「set a standard that endured for decades」，另一篇評論指出 Philips 把它收進「50 Great Recordings」系列，在唱片行裡一直重新出現。",
+      "src": "https://www.audiophilia.com/reviews/2025/7/21/esoteric",
+      "src2": "https://www.musicweb-international.com/classrev/2001/oct01/Vivaldi_4Seasons_Ayo.htm",
+      "from": "new"
+     },
+     {
+      "f": "義大利文化機構稱樂團是最早把十八世紀義大利音樂介紹給二十世紀聽眾的團體之一。",
+      "src": "https://iicwashington.esteri.it/en/?p=1514",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "I Musici 是第一個為 Philips 錄製 CD 的團體。",
+      "src": "https://en.wikipedia.org/wiki/I_Musici",
+      "src2": "https://www.mallorca.com/en/events/artists/i-musici",
+      "from": "bank"
+     },
+     {
+      "f": "樂團 1970 年代錄下第一支古典音樂錄影。",
+      "src": "https://en.wikipedia.org/wiki/I_Musici",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "樂團 1956 年與 1967 年兩度巡演南部非洲。",
+      "src": "https://en.wikipedia.org/wiki/I_Musici",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1951 年在羅馬成立。",
+    "src": "https://en.wikipedia.org/wiki/I_Musici",
+    "src2": "https://www.mallorca.com/en/events/artists/i-musici",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "維基預抓條目文字記 1951 年成立，wikidata 記 1952；Mallorca 頁面寫 1951 年創立、1952 年 3 月 30 日首演，推定 1952 是首演年，facts 採 1951 成立。",
+   "《四季》銷量：Felix Ayo 維基條寫第二版立體聲錄音約一千萬張，Mallorca 與搜尋摘要寫各版本合計超過兩千五百萬張；數字來源不一致，facts 不寫銷量。",
+   "立體聲重錄的年份：維基 Felix Ayo 條與 Quietus 為 1955 年首錄後四年（1959）；MusicWeb 評論寫錄於 1958 至 1959 年；facts 只寫「1959 年的立體聲版」，不寫錄音地點與月份。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "沿用 ar-c-030-g3 的身分判定（卡池《Vivaldi: The Four Seasons》1959 與《Corelli: Concerti Grossi op. 6》1992 皆為 I Musici 的 Philips 錄音，無同名混卡）。針對原 thin 缺的 legacy 補查 6 次（WebSearch 2、WebFetch 4：Audiophilia、義大利文化機構 iicwashington、MusicWeb、The Quietus）；The Strad 405、Gramophone 403 失敗未計。legacy 現有兩條兩源（1955 突破與暢銷；1959 立體聲版長期被視為標準錄音）加一條單源地位描述與原有兩條；sound 補上 1959 版的演奏取向（現代樂器、浪漫式、早於古樂運動），兩源皆為評論者意見，寫作層宜寫成「評論認為」而非定論。非獨立提醒：iicwashington 是義大利外交部文化機構的音樂會介紹頁，內容與樂團宣傳稿同調；Felix Ayo 維基與 Quietus 彼此獨立。未收：銷量（維基 Felix Ayo 條稱立體聲版約一千萬張、義大利文化機構與搜尋摘要稱合計逾兩千五百萬張、Quietus 稱賣了數百萬並引 Lebrecht 排名為史上第三暢銷古典唱片，數字不一致，且是排名）；Grand Prix du Disque（維基稱該錄音得獎、義大利文化機構只稱樂團得過 Edison Award 與 Grand Prix International du Disque，主詞不同，未能認定是哪張）；「義大利現存最久的室內樂團」（義大利文化機構單源，屬「最」類宣稱）；「世界上最長壽的室內樂團」（搜尋摘要）；「第一支古典音樂錄影」與「第一個為 Philips 錄 CD」兩條沿用自舊稿（只見維基與樂團宣傳頁，兩條都是「第一」類，寫作層用「據稱」或避免）；Felix Ayo 2023 年過世（維基單源）。thinIssues：現行 thin 正文無事實錯誤；其中「據稱早於早期音樂樂團投入巴洛克」語氣已保守。"
+ },
+ {
+  "key": "iceage",
+  "name": "Iceage",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Iceage 是 2008 年在哥本哈根成軍的丹麥龐克樂團，成員當時都還是十幾歲的少年。",
+      "src": "https://en.wikipedia.org/wiki/Iceage",
+      "src2": "https://i-d.co/article/iceage-are-the-danish-band-redefining-punk/",
+      "from": "bank"
+     },
+     {
+      "f": "主唱 Elias Bender Rønnenfelt 與團員自小相識，其中兩位成員從六歲起就是同學；成軍前他已熟悉 The Stooges 的專輯，也聽哥本哈根在地龐克團 Sods。",
+      "src": "https://www.dazeddigital.com/music/article/15671/1/iceage",
+      "src2": "https://i-d.co/article/iceage-are-the-danish-band-redefining-punk/",
+      "from": "bank"
+     },
+     {
+      "f": "四位創團成員一起走過十年以上；早期對音樂產業高度不信任，文章認為這份距離保護了團的創作核心。",
+      "src": "https://www.theringer.com/music/2021/5/7/22423982/iceage-elias-bender-ronnenfelt-interview-seek-shelter",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Elias Bender Rønnenfelt 在受訪時說他們真正的偶像還是 Iggy Pop，青少年時期聽的就是他的聲音。",
+      "src": "https://www.rollingstone.it/musica/news-musica/iceage-i-figli-di-iggy-pop-venuti-dal-freddo/434068/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "早期聲音是把後龐克、hardcore 與噪音揉在一起的快速、響亮的龐克，主唱的舞台動作暴烈、近乎失控。",
+      "src": "https://www.dazeddigital.com/music/article/15671/1/iceage",
+      "src2": "https://i-d.co/article/iceage-are-the-danish-band-redefining-punk/",
+      "from": "bank"
+     },
+     {
+      "f": "2018 年的《Beyondless》往 gothic 的方向走，評論點出 Nick Cave 的《Henry's Dream》時期、The Stooges 與 Sisters of Mercy 的影子，帶著北歐式的憂鬱。",
+      "src": "https://www.irishtimes.com/culture/music/iceage-something-rotten-from-the-state-of-denmark-1.3481745",
+      "src2": "https://i-d.co/article/iceage-are-the-danish-band-redefining-punk/",
+      "from": "bank"
+     },
+     {
+      "f": "早期樂評形容他們的聲音是陰暗、不協和的龐克，混著後龐克與更吵的噪音支流，現場跟錄音一樣有力。",
+      "src": "https://www.spinmagazine.com/2011/06/danish-punks-iceage-slay-us-debut/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "樂風後來不斷擴寬：《Plowing Into the Field of Love》（2014）受 outlaw country、Nick Cave 與 Gun Club 影響，《Beyondless》更好記並加入銅管，《Seek Shelter》（2021）加入弦樂、合唱與第五位成員吉他手 Casper Morilla，製作人是 Spacemen 3 的 Sonic Boom；Rønnenfelt 把他們的演奏形容為「high-octane sloppiness」，不跟 click track。",
+      "src": "https://www.theringer.com/music/2021/5/7/22423982/iceage-elias-bender-ronnenfelt-interview-seek-shelter",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2013 年 3 月，Iggy Pop 在澳洲 triple j 電台訪談中稱 Iceage 是他想得到的「唯一聽起來真正危險的當代龐克樂團」，並說「要黑到那個程度不容易」；他還把〈You're Nothing〉選進自己為電台挑的歌單。",
+      "src": "https://www.theringer.com/music/2021/5/7/22423982/iceage-elias-bender-ronnenfelt-interview-seek-shelter",
+      "src2": "https://www.nme.com/?p=1259009",
+      "from": "new"
+     },
+     {
+      "f": "首張專輯《New Brigade》美國版 2011 年 6 月由 What's Your Rupture? 發行，發行前已在網路樂評圈被熱烈討論；6 月 17 日他們在布魯克林 Public Assembly 的首場美國演出約 22 分鐘。",
+      "src": "https://www.spinmagazine.com/2011/06/danish-punks-iceage-slay-us-debut/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "2026 年發行第六張錄音室專輯《For Love of Grace & the Hereafter》，是繼 2021 年《Seek Shelter》後相隔約五年的新作。",
+      "src": "https://en.wikipedia.org/wiki/Iceage",
+      "src2": "https://thequietus.com/news/iceage-detail-new-album-for-love-of-grace-the-hereafter/",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "沿用 ar-c-011-g2 的身分判定（卡池《You're Nothing》2013 與《For Love of Grace & the Hereafter》2026，皆為哥本哈根這支樂團，無同名混卡）。針對原 thin 缺的 legacy 補查 7 次（WebSearch 3、WebFetch 4：The Ringer、NME、Spin、Rolling Stone Italia）。legacy 的主體是具名音樂人 Iggy Pop 的公開評價（Ringer、Rolling Stone Italia、NME 三處報導，NME 為 2013 年 3 月 25 日 triple j 訪談的報導；NME 的引句與 Ringer 的措辭不同，facts 兩句都寫但出處分開）。沒有找到後輩樂團點名受 Iceage 影響的有出處說法（搜尋摘要只見推廣稿的「影響力」形容，不收），所以 legacy 偏重外界評價與美國初登場，寫作層不得寫成「影響了某某樂團」。非獨立：Ringer 與 Rolling Stone Italia 的 Iggy 引句同源於 triple j 訪談。未收：Richard Hell 稱許（Ringer 與 i-D 各只一句，內容含糊）；Rolling Stone Italia 稱他們為 2010 年代最有前途的後龐克樂團之一（單一媒體形容）；媒體報導的法西斯意象與 Burzum 周邊爭議（The Guardian 報導，爭議事件須兩源且非音樂份量核心，不收）；Rolling Stone Italia 寫 2009 年自我命名的首作（與維基首張專輯為 2011 年《New Brigade》不符，疑誤）。thinIssues：無事實錯誤。"
+ },
+ {
+  "key": "ida",
+  "name": "Ida",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Ida 是 1992 年由 Daniel Littleton 與 Elizabeth Mitchell 在紐約組成的團，最初是兩人的二重唱，後來加入鼓手 Michael Littleton（Daniel 的弟弟）與貝斯手 Karla Schickele。",
+      "src": "https://en.wikipedia.org/wiki/Ida_(band)",
+      "src2": "https://roughtradepublishing.com/artist/ida/",
+      "from": "bank"
+     },
+     {
+      "f": "團在布魯克林活動；首張專輯《Tales of Brave Ida》1994 年由 Jenny Toomey 的 Simple Machines 發行，起因是一卷早期錄音帶傳到了廠牌主人手上。",
+      "src": "https://roughtradepublishing.com/artist/ida/",
+      "src2": "https://nysmusic.com/2025/02/20/ida-commemorates-25-years-of-will-you-find-me-with-special-edition-and-tour/",
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "以柔和的和聲與克制的編曲見稱，聲音落在室內搖滾與室內流行之間，帶有民謠與夢幻流行的底色。",
+      "src": "https://trouserpress.com/reviews/ida/",
+      "src2": "https://newmusicoldmusic.substack.com/p/a-ballad-of-ida-the-band",
+      "from": "bank"
+     },
+     {
+      "f": "相較當時「messy guitars」的獨立搖滾，Ida 安靜而緩慢；招牌是 Daniel Littleton、Elizabeth Mitchell 與 Karla Schickele 三人聲音的融合，維基稱他們以三部和聲、稀疏簡約的編排見稱；樂器有指彈的原聲與電吉他、弦樂、鋼琴、風琴，偶爾加上鼓。",
+      "src": "https://www.tucsonweekly.com/music/meet-ida-1079711/",
+      "src2": "https://en.wikipedia.org/wiki/Ida_(band)",
+      "from": "new"
+     },
+     {
+      "f": "2000 年的《Will You Find Me》由 Tiger Style 發行，錄於 14 間錄音室，客席有 Bernie Worrell（Wurlitzer 與 Moog）與 Tara Jane O'Neil（melodica），製作人包括 Trina Shoemaker、Warren Defever 與 Tony Lash。",
+      "src": "https://bighassle.com/ida",
+      "src2": "https://en.wikipedia.org/wiki/Will_You_Find_Me",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《紐約時報》2000 年把《Will You Find Me》選為 Album of the Week，樂評人 Jon Pareles 形容歌曲像「不確定的戀人之間的低語」，在脆弱與篤定、分開與和好之間來回。",
+      "src": "https://en.wikipedia.org/wiki/Will_You_Find_Me",
+      "src2": "https://bighassle.com/ida",
+      "from": "new"
+     },
+     {
+      "f": "Mitchell 自 1998 年起也為兒童與家庭錄音，後來成為 Smithsonian Folkways 的藝人；她與丈夫 Daniel Littleton 共同創辦 Ida。",
+      "src": "https://thejewishmuseum.org/press/elizabeth-mitchell-2015-release/",
+      "src2": "https://www.smithsonianmag.com/smithsonian-institution/listen-grammy-nominated-folkways-artist-elizabeth-mitchell-discusses-parenthood-and-being-in-a-band-with-your-kid-5954/",
+      "from": "new"
+     },
+     {
+      "f": "兩人的女兒 Storey 後來在團裡唱和聲、彈樂器（2012 年 Smithsonian 專訪）。",
+      "src": "https://www.smithsonianmag.com/smithsonian-institution/listen-grammy-nominated-folkways-artist-elizabeth-mitchell-discusses-parenthood-and-being-in-a-band-with-your-kid-5954/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "2025 年，Tiger Style 與 Numero Group 為 2000 年的專輯《Will You Find Me》推出 25 週年紀念版；團員 Daniel Littleton 說這張專輯對 Ida 是『一個開始也是一個結束』，之後再沒做過類似的東西。",
+      "src": "https://nysmusic.com/2025/02/20/ida-commemorates-25-years-of-will-you-find-me-with-special-edition-and-tour/",
+      "src2": "https://newmusicoldmusic.substack.com/p/a-ballad-of-ida-the-band",
+      "from": "bank"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "1994 年首張專輯《Tales of Brave Ida》，1994 年春天錄於布魯克林，同年由 Simple Machines 以 CD 發行。",
+      "src": "https://www.discogs.com/release/740884",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "Hermes 文章稱《Will You Find Me》是第四張錄音室專輯，nysmusic 也稱第四張，搜尋摘要（維基）稱第五張；排序不一致，facts 不寫序數。",
+   "成軍年：預抓維基導言、Tucson Weekly、Big Hassle、Rough Trade 皆為 1992；Elizabeth Mitchell 維基條與搜尋摘要有「1991」說法；facts 採 1992。",
+   "Capitol：Big Hassle 稱 1997 年與 Capitol 簽約、《Will You Find Me》2000 年由 Tiger Style 發行；《Will You Find Me》維基條未提 Capitol，facts 不寫 Capitol 資助與買回母帶的細節。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "沿用 ar-c-011-g2 的身分判定（布魯克林的 Ida，Discogs 掛 Ida (3)；卡池《Tales of Brave Ida》1994 與《Will You Find Me》2000；無同名混卡）。針對原 thin 缺的 legacy 與 sound 補查 8 次（WebSearch 3、WebFetch 5：Tucson Weekly、Big Hassle、Smithsonian Magazine、Jewish Museum、維基 Will You Find Me）。legacy 仍偏薄：沒有後輩點名或機構級共識評價，只有《紐約時報》Album of the Week（維基與 Big Hassle 兩源，後者為經紀公司介紹稿，非獨立於樂團公關）、Mitchell 的兒童音樂事業與 2025 年 Numero Group 25 週年再發，寫作層宜寫成「被看見的程度有限但有行家」，不得寫成地位崇高。未收：Mitchell 兩度入圍葛萊美最佳兒童專輯（Jewish Museum 稱《Blue Clouds》與《Little Seed》；Smithsonian 專訪只確認《Little Seed》，且兩頁都沒給典禮年份，屬獎項類高風險，缺年份不收）；「Folkways 二十一世紀第一位新簽兒童音樂人」（Jewish Museum 單源，屬「第一」類）；Tucson Weekly 稱 Ida 是 Low 的「極簡表親」（單一評論者比喻）；Village Voice 2000 年 Eric Weisbard 的批評句（單一樂評）；Entertainment Weekly A 與 Pitchfork 5.9 分、Spin 與《紐約時報》年終榜入選（樂評分數與榜單，不收）；Rough Trade 稱他們類似 Idaho 與 Low（搜尋摘要未開頁）。專輯序數與發行年（Ida 條寫 1999、專輯條與官方寫 2000）不一致：facts 一律寫 2000 年並不寫序數。thinIssues：現行 thin 正文無事實錯誤。"
+ },
+ {
+  "key": "in spe",
+  "name": "In Spe",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "In Spe 是 1979 年由 Erkki-Sven Tüür 創立的愛沙尼亞前衛搖滾樂團；他在團裡擔任作曲、長笛、鍵盤與主唱，到 1983 年為止。",
+      "src": "https://en.wikipedia.org/wiki/In_Spe",
+      "src2": "https://www.eestimuusikapaevad.ee/en/bio/erkki-sven-tuur/",
+      "from": "bank"
+     },
+     {
+      "f": "Tüür 1959 年生於愛沙尼亞希烏馬島（Hiiumaa）的 Kärdla；1976 至 1980 年在塔林的 Georg Ots 音樂學校學打擊樂與長笛，1980 至 1984 年在塔林音樂學院學作曲。",
+      "src": "https://etbl.teatriliit.ee/artikkel/t%C3%BC%C3%BCr_erkki-sven3",
+      "src2": "https://www.wisemusicclassical.com/composer/6314/Erkki-Sven-T%C3%BC%C3%BCr/",
+      "from": "bank"
+     },
+     {
+      "f": "團最初叫 Esra，到 1979 年底才改名 In Spe。",
+      "src": "https://et.wikipedia.org/wiki/In_Spe",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Tüür 領導的 In Spe 被介紹為室內搖滾（chamber rock）團，風格屬前衛搖滾。",
+      "src": "https://www.epcc.ee/html/tuurcvi.html",
+      "src2": "https://et.wikipedia.org/wiki/In_Spe",
+      "from": "new"
+     },
+     {
+      "f": "Tüür 這個時期的作品把文藝復興式的音調與前衛搖滾結合在一起。",
+      "src": "https://www.epcc.ee/html/tuurcvi.html",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Tüür 1979 年創立的 In Spe 成為愛沙尼亞最受歡迎的搖滾團之一；他在團裡擔任作曲、長笛、鍵盤與主唱。",
+      "src": "https://www.fondationprincepierre.mc/en/candidates/erkki-sven-tuur-1",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "1983 年接替 Tüür 的 Alo Mattiisen，日後的愛國歌曲成為愛沙尼亞「歌唱革命」的常用曲目；1988 年 5 月 14 日他在塔爾圖首演〈Five Patriotic Songs〉，當地立有紀念牌。",
+      "src": "https://en.wikipedia.org/wiki/Alo_Mattiisen",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Tüür 的作品在蘇聯解體前夕的改革時期走出愛沙尼亞，從 1989 年的〈Insula deserta〉開始接到一連串委託，如今他的錄音多數由 ECM 發行。",
+      "src": "https://www.fondationprincepierre.mc/en/candidates/erkki-sven-tuur-1",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "In Spe 的創辦人 Tüür 離團後走向古典作曲，1992 年起專職作曲，1997 年獲愛沙尼亞文化獎（Estonian Culture Prize）。",
+      "src": "https://www.erkkisven.com/cv",
+      "src2": "https://www.mphil.de/en/ueber-uns/musicians/details/erkki-sven-tueuer",
+      "from": "bank"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1983 年 Erkki-Sven Tüür 在團的區間結束，同年 Alo Mattiisen 進團；到 1985 年的《Typewriter Concerto in D》時 Tüür 已不在團。",
+      "src": "https://musicbrainz.org/ws/2/artist/2c3ef15a-75bb-4208-b184-8d8fda50b627?fmt=json&inc=artist-rels+annotation",
+      "from": "bank"
+     },
+     {
+      "f": "Alo Mattiisen 1983 年接替 Tüür 進團，1984 年 1 月首次隨團演出。",
+      "src": "https://en.wikipedia.org/wiki/Alo_Mattiisen",
+      "src2": "https://musicbrainz.org/ws/2/artist/2c3ef15a-75bb-4208-b184-8d8fda50b627?fmt=json&inc=artist-rels+annotation",
+      "from": "new"
+     },
+     {
+      "f": "團的專輯由國營廠牌 Melodiya 發行：1983 年自題專輯與 1985 年的《Typewriter Concerto in D》（愛沙尼亞文 Kirjutusmasina kontsert in D）。",
+      "src": "https://et.wikipedia.org/wiki/In_Spe",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "Wise Music 的搜尋摘要稱 Tüür『1979 至 1984 年領導 In Spe』，其餘四份來源（eestimuusikapaevad、erkkisven.com、mphil.de、ECM 摘要）與 MusicBrainz 都是到 1983 年；採 1983。",
+   "mphil 單源列出柏林愛樂、皇家音樂廳管弦樂團、倫敦愛樂等委託；erkkisven 只寫『受國際知名演奏者委託』，facts 不寫樂團名。",
+   "Tüür 領導 In Spe 的終點：epcc.ee 與 MusicBrainz 為 1983，Wise Music 摘要與維基 Tüür 條有 1984 說法，In Spe 條列 1979–1985；採 1983。",
+   "文化獎年份：fondation Prince Pierre 頁寫 1991 與 1996 年愛沙尼亞共和國文化獎，與舊稿三源一致的 1997 衝突；facts 沿用 1997 不改，不寫 1991、1996。",
+   "首張專輯：某二手商品頁寫 1979 年自題首作，愛沙尼亞維基與卡池年份為 1983 年；採 1983，不寫「首張」。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "thin",
+  "notes": "沿用 ar-c-011-g2 的身分判定（卡池《In Spe》1983 與《Typewriter Concerto in D》1985，皆為 Tüür 創立的愛沙尼亞團，國籍愛沙尼亞，當時屬蘇聯；無同名混卡）。針對原 thin 缺的 sound 與 legacy 補查 8 次（WebSearch 4、WebFetch 4：epcc.ee、fondationprincepierre.mc、英文維基 Alo Mattiisen、愛沙尼亞文維基 In Spe）；erkkisven.com 與 primephonic 專訪被防護頁擋（不計）。補到的只有曲風標籤（室內搖滾／前衛搖滾，epcc 與愛沙尼亞維基兩源）、樂團「很受歡迎」的單源說法與團員 Mattiisen 的後續，仍然缺：樂團層級的共識評價、後輩點名、具體的演奏或編曲手法（沒有可開頁的樂評或訪談談這支團的聲音），所以維持 thin，寫作層跳過、保留原上線版。單源未收：Tüür 自述受 King Crimson、Yes、ELP、Genesis、Mike Oldfield、Zappa 影響（搜尋摘要稱出自 erkkisven.com 的 CV，但該頁這次被擋、未讀到內文；舊稿 notes 只確認 King Crimson 一類）；Primephonic 2017 專訪稱 Tüür 進 In Spe 前已在搖滾圈、同團成員延續到 In Spe（搜尋摘要）；「很快成為最受歡迎的團之一」只見 fondation 頁（單源，已收為低風險單源並標 single）；某搜尋摘要稱首作「highly acclaimed」（維基衍生）；Musea 1994 年再發第二張被評品質差（搜尋摘要）；2009 年原班人馬重聚演出（愛沙尼亞維基外部連結，未讀）。thinIssues：現行 thin 正文寫「到 1983 年為止」符合 epcc 與 MusicBrainz，無事實錯誤；正文寫「1997 年獲愛沙尼亞文化獎」只與舊稿三源一致，fondation 頁另列 1991 與 1996，建議店主日後確認。"
+ },
+ {
+  "key": "iri",
+  "name": "iri",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "iri 是出身神奈川縣逗子市的創作歌手，現居逗子。",
+      "src": "https://spincoaster.com/interview-iri",
+      "src2": "https://www.wwdjapan.com/articles/1062503",
+      "from": "bank"
+     },
+     {
+      "f": "iri 小時候聽的是母親愛聽的爵士與森巴；她用母親的原聲吉他自學，18 歲起在打工的爵士酒吧開始彈唱。",
+      "src": "https://www.wwdjapan.com/articles/1062503",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "iri 高中起就上聲樂課，而不是參加社團；大學期間在爵士酒吧演出，也和爵士樂團合作。",
+      "src": "https://en.wikipedia.org/wiki/Iri_(artist)",
+      "src2": "https://www.wwdjapan.com/articles/1062503",
+      "from": "bank"
+     },
+     {
+      "f": "iri 大學四年級時在《NYLON JAPAN》的徵選拿下首獎，之後簽約出道。",
+      "src": "https://www.wwdjapan.com/articles/1062503",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "iri 被介紹為把嘻哈、R&B、靈魂樂與爵士這類黑人音樂風格等身大表現出來的創作歌手，特色是嘻哈式的歌詞配上帶靈魂感的嗓音。",
+      "src": "https://numero.jp/news-20190304-iri/",
+      "src2": "https://www.wwdjapan.com/articles/1062503",
+      "from": "bank"
+     },
+     {
+      "f": "iri 一開始以彈唱為主，後來愈來愈偏向嘻哈；她自己說歌曲的嘻哈色彩愈來愈強。",
+      "src": "https://spincoaster.com/interview-iri",
+      "src2": "https://www.wwdjapan.com/articles/1062503",
+      "from": "bank"
+     },
+     {
+      "f": "iri 說自己喜歡日本的饒舌歌手 5lack 與 PSG，也愛聽 IAMDDB、FKJ 與 Soulection 這類帶嘻哈味又用現場樂器的海外音樂，並從詩人谷川俊太郎的作品得到靈感。",
+      "src": "https://spincoaster.com/interview-iri",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Realsound 形容她的歌聲是「令人想起 Alicia Keys 的沙啞靈魂嗓」，並指出她和 ケンモチヒデフミ、mabanua、YOSA、Yaffle 等製作人合作，橫跨現代 R&B、嘻哈、beat music 與彈唱；The First Times 也說她的歌是以嘻哈與 R&B 的節拍為底、配上日文歌詞，低中音域尤其動聽。",
+      "src": "https://realsound.jp/2017/12/post-134379.html",
+      "src2": "https://www.thefirsttimes.jp/?p=68185",
+      "from": "new"
+     },
+     {
+      "f": "她的歌曲有 80 年代風格的電子靈魂〈STARLIGHT〉、帶福音色彩的〈Shade〉、鼓打貝斯的〈Run〉與鋼琴抒情曲〈hug〉，現場樂手包括 Suchmos 的 TAIKING。",
+      "src": "https://www.thefirsttimes.jp/?p=397478",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "iri 的第三張專輯《Shade》（2019 年）有大澤伸一與 tofubeats 等新製作人參與；她把前作《Juice》視為光，這張則是照實表現自己內在的陰影。",
+      "src": "https://numero.jp/news-20190304-iri/",
+      "src2": "https://en.wikipedia.org/wiki/Iri_(artist)",
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈Watashi〉（2017 年 3 月）被用在 Nike 與 Apple Music 的廣告，也是 Nike Women 活動的歌曲。",
+      "src": "https://en.wikipedia.org/wiki/Iri_(artist)",
+      "src2": "https://www.wwdjapan.com/articles/1062503",
+      "from": "bank"
+     },
+     {
+      "f": "2017 年 4 月，iri 擔任 Corinne Bailey Rae 日本巡迴的暖場嘉賓之一。",
+      "src": "https://en.wikipedia.org/wiki/Iri_(artist)",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "時尚圈也邀請她在 Chloé 與 Valentino 的派對上演出。",
+      "src": "https://www.wwdjapan.com/articles/1062503",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Realsound 把她放在 DAOKO、向井太一、ぼくのりりっくのぼうよみ這一代橫跨流行、嘻哈、R&B 與俱樂部音樂的年輕歌手之中，稱她是黑人音樂影響特別濃的「新式靈魂天后」；饒舌歌手 5lack 在她 2017 年的首場單獨演唱會臨時登台。",
+      "src": "https://realsound.jp/2017/12/post-134379.html",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "2022 年她上 THE FIRST TAKE，以一鏡到底的方式演唱〈Wonderland〉，與 MPC GIRL USAGI 用現場節拍合作。",
+      "src": "https://www.thefirsttimes.jp/?p=68185",
+      "src2": "https://www.billboard-japan.com/d_news/detail/107755/2",
+      "from": "new"
+     },
+     {
+      "f": "2024 年 3 月 13 日她在日本武道館舉辦『iri LIVE at 武道館』，5lack 上台一起唱〈Telephone〉，同年 8 月發行現場影像。",
+      "src": "https://www.thefirsttimes.jp/?p=397478",
+      "src2": "https://www.billboard-japan.com/d_news/detail/107755/2",
+      "from": "new"
+     },
+     {
+      "f": "她曾與 RADWIMPS 合作〈Tokyo〉（feat. iri）。",
+      "src": "https://www.thefirsttimes.jp/?p=68185",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "2016 年 10 月 26 日發行首張專輯《Groove it》出道。",
+      "src": "https://en.wikipedia.org/wiki/Iri_(artist)",
+      "src2": "https://www.wwdjapan.com/articles/1062503",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2016 年 10 月 26 日發行首張專輯《Groove it》出道。",
+    "src": "https://en.wikipedia.org/wiki/Iri_(artist)",
+    "src2": "https://www.wwdjapan.com/articles/1062503",
+    "from": "bank"
+   },
+   {
+    "f": "2017 年 3 月發行〈Watashi〉，被用在 Nike 與 Apple Music 的廣告。",
+    "src": "https://en.wikipedia.org/wiki/Iri_(artist)",
+    "src2": "https://www.wwdjapan.com/articles/1062503",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "維基與搜尋摘要說她 2015 年簽約 Colourful Records，WWD JAPAN 說她大學四年級在《NYLON JAPAN》徵選得首獎後加入現在的事務所，簽約年份兩源不一致，facts 不寫簽約年份。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "沿用 ar-c-020-g3 的身分判定（卡池《Shade》2019 與《SPARKLE》2020 皆為逗子出身的創作歌手 iri，無同名混卡）。針對原 thin 缺的 legacy 補查 7 次（WebSearch 2、WebFetch 5：Realsound、The First Times 兩頁、Billboard JAPAN、Generasia）；日文維基兩種網址都 404（不計）。legacy 仍沒有後輩點名或機構級共識評價，這格靠跨界合作與舞台規模撐起：THE FIRST TAKE（兩源）、日本武道館（The First Times 與 Billboard JAPAN 的影像發行頁，後者未載日期，日期為 The First Times 單源）、廣告歌（舊稿兩源），寫作層宜以這些具體事件寫，不寫「地位崇高」。「武道館首場」：The First Times 稱「自身初」，只見該文，facts 不寫「首次」。未收：〈Wonderland〉日本唱片協會串流金認證與 YouTube 約 2000 萬次播放（數字與認證）、〈会いたいわ〉長銷（單源）、Generasia 列的 2014 年 NYLON JAPAN 與 Sony Music「JAM」徵選優勝（與舊稿 WWD JAPAN 記大學四年級得首獎一致，簽約年份兩源不一致，仍不寫）、2019 年中國三地巡演與 2018 年法國音樂節 La Magnifique Society（單源）、iTunes 榜首與 Apple Music 專輯榜名次（榜單）。生年（1994 年 3 月 15 日）維基、wikidata、Generasia 皆記，但前兩者同源，仍不收。thinIssues：現行 thin 正文無事實錯誤。"
+ },
+ {
+  "key": "irreversible entanglements",
+  "name": "Irreversible Entanglements",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Irreversible Entanglements 2015 年成軍於紐約布魯克林的 Musicians Against Police Brutality 活動，那場活動是為回應 2014 年 Akai Gurley 之死而辦。",
+      "src": "https://www.intlanthem.com/artists/irreversible-entanglements",
+      "src2": "https://www.thenation.com/article/culture/irreversible-entanglements-who-sent-you-review/",
+      "from": "bank"
+     },
+     {
+      "f": "先同台的是詩人兼主唱 Camae Ayewa（Moor Mother）、薩克斯風手 Keir Neuringer 與貝斯手 Luke Stewart；小號手 Aquiles Navarro 與鼓手 Tcheser Holmes 幾個月後加入，一起錄下首張專輯。",
+      "src": "https://www.intlanthem.com/artists/irreversible-entanglements",
+      "src2": "https://en.wikipedia.org/wiki/Irreversible_Entanglements",
+      "from": "bank"
+     },
+     {
+      "f": "薩克斯風手 Keir Neuringer 2014 年認識 Camae Ayewa 並想與她合作；兩人合演幾場後在一場為 Akai Gurley 家屬辦的義演邀來貝斯手 Luke Stewart，之後 Aquiles Navarro 與 Tcheser Holmes 的小號與鼓二重奏讓他聽出一個五重奏，樂團不久就進錄音室。團名是錄音後他從 Black Quantum Futurism 朗讀會上聽到的一句話挑出來的。",
+      "src": "https://www.jazzrightnow.com/?p=19336",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們以 free jazz 與前衛爵士為底，混進 post-punk 與 noise rock 的元素，Ayewa 的口語詩對警察暴力、種族主義與資本主義提出直接的批判。",
+      "src": "https://en.wikipedia.org/wiki/Irreversible_Entanglements",
+      "src2": "https://www.thenation.com/article/culture/irreversible-entanglements-who-sent-you-review/",
+      "from": "bank"
+     },
+     {
+      "f": "評論把他們放進 New York Art Quartet 一脈的黑人前衛爵士傳承。",
+      "src": "https://en.wikipedia.org/wiki/Irreversible_Entanglements",
+      "src2": "https://www.thenation.com/article/culture/irreversible-entanglements-who-sent-you-review/",
+      "from": "bank"
+     },
+     {
+      "f": "Jazz Journal 評論說他們浸在爵士史裡，尤其是 Ornette Coleman 的自由即興，也帶有 Afrobeat 與雷鬼的律動，〈Free Love〉和同名曲都聽得到；Ayewa 的聲音從稠密的打擊與管樂裡穿出來，歌詞談全球性的社會不公。",
+      "src": "https://jazzjournal.co.uk/2023/10/29/irreversible-entanglements-protect-your-light/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Neuringer 說樂團不是把詩和自由爵士相加：Ayewa 的文字與音樂彼此不是外在的；專輯有些曲子是完全即興的第一次演奏，結尾曲就是五重奏第一次合奏，另有兩首先寫好旋律與結構、文字則現場即興或當場挑選。",
+      "src": "https://www.jazzrightnow.com/?p=19336",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Neuringer 把樂團放在「自由爵士的延續」裡，點名 Amiri Baraka、Archie Shepp、John Coltrane、Pharaoh Sanders、Milford Graves、Sunny Murray、Sonia Sanchez 與 Jayne Cortez，並引 Anthony Monteiro 的看法，認為爵士與黑人解放相連。",
+      "src": "https://www.jazzrightnow.com/?p=19336",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們直接誕生於抗議行動，從首張專輯起就以黑人解放為方向，被 The Nation 稱為重塑「抗議之聲」的樂團。",
+      "src": "https://www.intlanthem.com/artists/irreversible-entanglements",
+      "src2": "https://www.thenation.com/article/culture/irreversible-entanglements-who-sent-you-review/",
+      "from": "bank"
+     },
+     {
+      "f": "2023 年 7 月，樂團宣布加入歷史悠久的 Impulse! Records，《Protect Your Light》是他們在該廠牌的第一張，前三張專輯在 International Anthem 發行；Jazz Journal 稱這張專輯是 Impulse! 目錄中令人興奮、創新的新增項目。",
+      "src": "https://thefader.com/2023/07/27/irreversible-entanglements-sign-to-impulse-announce-new-album-protect-your-light",
+      "src2": "https://jazzjournal.co.uk/2023/10/29/irreversible-entanglements-protect-your-light/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "2023 年的《Protect Your Light》在 Impulse! Records 發行，主要在紐澤西的 Van Gelder Studios 錄成。",
+      "src": "https://en.wikipedia.org/wiki/Irreversible_Entanglements",
+      "src2": "https://pickathon.com/artist/irreversible-entanglements/",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2015 年在 Musicians Against Police Brutality 活動上成軍。",
+    "src": "https://www.intlanthem.com/artists/irreversible-entanglements",
+    "src2": "https://www.thenation.com/article/culture/irreversible-entanglements-who-sent-you-review/",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "維基寫 2015 年成軍於「Musicians Against Brutality」活動，International Anthem 與 The Nation 寫 Musicians Against Police Brutality；採後者。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "沿用 ar-c-002-g4 的身分判定與事實（卡池《Irreversible Entanglements》2017 與《Protect Your Light》2023 皆為紐約這支五重奏；goout.net 列表把團寫成芝加哥，疑誤，不採；無同名混卡）。針對原 thin 缺的 sound 與 legacy 補查 7 次（WebSearch 3、WebFetch 4：The FADER、Jazz Journal、Jazz Right Now 的 Neuringer 專訪、In Search of Media）；North Sea Jazz 頁無內文、Treble 403（不計）。sound 補到成員自己的說法（Neuringer，單源）與 Jazz Journal 的血脈描述（Ornette Coleman、Afrobeat、雷鬼），與舊稿兩源的「New York Art Quartet 一脈」並列；寫作層宜把 Neuringer 的血脈名單寫成「他說」，不當成客觀評價。legacy 增加 Impulse! 簽約這個具體事件；「後輩點名」與「機構級共識」仍然沒有。未收：維基稱專輯被 The Wire、The Quietus、Magnet、NPR Music、Stereogum 評為年度或十年最佳（雜誌與媒體榜單，只見維基單源，未逐頁核對）；Kennedy Center「Direct Current」首季演出（維基單源，官網被擋）；Jazz Journal 稱「當代激進傳統的火炬手」與 In Search of Media 稱「當今最創新的爵士團之一」（單一評論者形容）；Bimhuis／North Sea Jazz 節目說明把他們放進 Charles Mingus、Alice Coltrane、Sun Ra 的 spiritual jazz 傳統（搜尋摘要，兩個節目頁實際內文未讀到）；國際音樂節名單（Jazzfest Berlin、London Jazz Festival，場次類）。Akai Gurley 事件只寫年份與公開層級，不寫案情、不點名任何人。thinIssues：現行 thin 正文無事實錯誤（「評論把他們放進 New York Art Quartet 一脈」有舊稿兩源支持）。"
+ },
+ {
+  "key": "israel vibration",
+  "name": "Israel Vibration",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Israel Vibration 的三位成員 Lascelle「Wiss」Bulgin、Albert「Apple Gabriel」Craig 與 Cecil「Skelly」Spence，童年都得過 1950 年代牙買加流行的小兒麻痺，在京斯敦的 Mona Rehabilitation Centre 相識。",
+      "src": "https://en.wikipedia.org/wiki/Israel_Vibration",
+      "src2": "https://www.jamaicaobserver.com/2022/08/27/israel-vibrations-skelly-spence-dies-at-69-years-old/",
+      "from": "bank"
+     },
+     {
+      "f": "他們的家庭負擔不起足夠的醫療，三個男孩才被送進復健中心；在中心裡無事可做，便開始一起唱和聲。",
+      "src": "https://www.uvm.edu/~debate/dreadlibrary/levy.html",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "中心裡一位名叫 Baba Douse 的 Rasta 長者教他們認識 Rastafari 與 Haile Selassie；他們因為蓄 dreadlocks、信奉 Rastafari 被趕出機構，之後住在京斯敦郊外的叢林邊緣，靠街頭唱歌維生。",
+      "src": "https://www.uvm.edu/~debate/dreadlibrary/levy.html",
+      "src2": "https://www.reggaeville.com/artist-details/israel-vibration/about/",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "1976 年的首支單曲〈Why Worry〉由 Twelve Tribes of Israel 的成員出資，據說是這位成員聽見他們在京斯敦郊外的樹林裡唱歌而起意。",
+      "src": "https://www.uvm.edu/~debate/dreadlibrary/levy.html",
+      "src2": "https://www.reggaeville.com/artist-details/israel-vibration/about/",
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "三人的和聲是在困境裡自己練出來的，歌裡唱 Rastafari 信仰與生存處境，被形容為『傳統 roots reggae 加上赤裸的人性情感與強烈的靈性訊息』。",
+      "src": "https://www.uvm.edu/~debate/dreadlibrary/levy.html",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "團員 Apple 十歲時自學鋼琴並寫下人生第一首歌。",
+      "src": "https://www.uvm.edu/~debate/dreadlibrary/levy.html",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "與製作人 Tommy Cowan 合作的〈The Same Song〉是他們第一次受到國際注意的作品，內容呼籲 Rasta 各派團結；英國的 EMI Harvest 因此取得發行，接著推出第二張專輯《Unconquered People》（1980）。",
+      "src": "https://www.jamaicaobserver.com/2022/08/27/israel-vibrations-skelly-spence-dies-at-69-years-old/",
+      "src2": "https://www.reggaeville.com/artist-details/israel-vibration/about/",
+      "from": "bank"
+     },
+     {
+      "f": "Clevescene（2005 年演出預告）形容他們的聲音是「lilting, dissonant harmonies」疊在極傳統的 one-drop 節奏上，帶著既沉思又振奮的憂鬱氣氛；三位成員都自己寫歌，所以 RAS 時期十幾張專輯各有變化。",
+      "src": "https://www.clevescene.com/?p=200696",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "RAS 時期的錄音與後來的巡演，都由 Roots Radics 擔任伴奏。",
+      "src": "https://www.clevescene.com/?p=200696",
+      "src2": "https://www.roots-archives.com/artist/49",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "牙買加音樂產業的黑箱帳目、盜版與缺乏巡演支援，讓他們早期進展艱難；1980 年代三人先後各自移居美國，後來在華盛頓的 RAS Records 負責人 Doctor Dread 撮合下重聚。",
+      "src": "https://www.reggaeville.com/artist-details/israel-vibration/about/",
+      "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/israel-vibration",
+      "from": "bank"
+     },
+     {
+      "f": "RAS Records 創辦人 Gary Himelfarb 稱 Israel Vibration 是 RAS 廠牌的『基石』，並說 Skelly 身上有『Bob Marley 的味道』。",
+      "src": "https://www.jamaicaobserver.com/2022/08/27/israel-vibrations-skelly-spence-dies-at-69-years-old/",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "Clevescene 稱他們是「one of reggae's all-time greatest vocal-harmony roots trios」，Reggaeville 的簡介稱他們是 1970 年代牙買加成立的最成功的 roots 團體之一。",
+      "src": "https://www.clevescene.com/?p=200696",
+      "src2": "https://www.reggaeville.com/artist-details/israel-vibration/about/",
+      "from": "new"
+     },
+     {
+      "f": "《The Same Song》在國際上獲得成功，英國 EMI／Harvest 因此重發；〈Why Worry〉之後，Dennis Brown、Inner Circle 與 Bob Marley 的演出都邀他們擔任暖場。",
+      "src": "https://www.roots-archives.com/artist/49",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "1980 年代後期牙買加轉向 dancehall 時，他們沒有改變路線，而是長年在海外巡演，現場被稱為「the act to see live」。",
+      "src": "https://www.clevescene.com/?p=200696",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "約 1969 年，三人在西印度大學一帶重聚，一起『抽草、讀聖經、說理』，發現他們的和聲吸引聽眾。",
+      "src": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/israel-vibration",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "1997 年 Apple Gabriel 離團單飛，Skelly 與 Wiss 以 Israel Vibration 之名繼續。",
+      "src": "https://www.reggaeville.com/artist-details/israel-vibration/about/",
+      "src2": "https://www.jamaicaobserver.com/2022/08/27/israel-vibrations-skelly-spence-dies-at-69-years-old/",
+      "from": "bank"
+     },
+     {
+      "f": "Albert「Apple Gabriel」Craig 於 2020 年過世，Cecil「Skelly」Spence 於 2022 年過世。",
+      "src": "https://www.roots-archives.com/artist/49",
+      "src2": "https://www.jamaicaobserver.com/2022/08/27/israel-vibrations-skelly-spence-dies-at-69-years-old/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1976 年首支單曲〈Why Worry〉問世。",
+    "src": "https://www.uvm.edu/~debate/dreadlibrary/levy.html",
+    "src2": "https://www.reggaeville.com/artist-details/israel-vibration/about/",
+    "from": "bank"
+   },
+   {
+    "f": "〈The Same Song〉與同名專輯（1978）讓他們第一次受到國際注意，EMI Harvest 取得英國發行。",
+    "src": "https://www.jamaicaobserver.com/2022/08/27/israel-vibrations-skelly-spence-dies-at-69-years-old/",
+    "src2": "https://www.reggaeville.com/artist-details/israel-vibration/about/",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "《The Same Song》的年份：uvm.edu 寫專輯 1976 年、Reggaeville 寫單曲 1977 年與專輯 1978 年、Jamaica Observer 寫 1978 年；facts 只在單曲與專輯合稱處寫 1978 年（Observer 與上線簡介一致），單曲年份不寫。",
+   "移居美國年份：Reggaeville 寫 1982 年、encyclopedia.com 寫 1983 年；兩源不一致，facts 不寫年份。重聚年份：Reggaeville 寫 1987 年、encyclopedia.com 寫 1989 年；不寫年份。",
+   "〈Why Worry〉出資標的：uvm.edu 寫出資單曲、Reggaeville 寫出資首張專輯；兩源都說 1976 年 Why Worry 是首支單曲，facts 只寫『單曲』。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "沿用 ar-c-022-g3 的身分判定（卡池《The Same Song》1978 與《Unconquered People》1980，牙買加 roots reggae 三人組，無同名混卡）。針對原 thin 缺的 legacy 補查 6 次（WebSearch 4、WebFetch 2：Clevescene、Roots Archives）；Reggaeville 的兩篇訃聞皆 403（不計）。legacy 仍沒有後輩點名、名人堂或國家級榮譽，這格靠「Clevescene 與 Reggaeville 兩源一致的圈內地位評價」加 RAS 創辦人 Himelfarb 的具名說法（舊稿）加國際發行與暖場的具體事件撐起，寫作層宜寫成「被視為」而非「影響了」，並注意 Clevescene 是 2005 年演出預告稿、Reggaeville 是廠牌／媒體簡介，兩者獨立但都不是學術評價。非獨立提醒：Jamaica Observer 與 Reggaeville 訃聞可能引用同一份新聞稿。已故者只收過世年份，死因與地點不寫。未收：〈Strength of My Life〉（1988，RAS 第一張）「被視為後黃金時代 roots reggae 少數的標竿」（只見 Bandsintown 等商家簡介，非獨立評論）；重聚年份仍是 1987、1988、1989 各源不一，不寫；Roots Archives 列的「17 張他人合輯」（資料庫統計）；搜尋摘要稱 Skelly 是「rebel who was the personification of Rasta」（Himelfarb 的說法，出處未開頁）；Apple Gabriel 離團年份 1996 與 1997 兩說（沿用舊稿 1997 與 Reggaeville／Observer 兩源）；成員出生年各源不一；Grammy 提名在所有開過的頁面與搜尋都找不到，不收。thinIssues：現行 thin 正文無事實錯誤。"
+ },
+ {
+  "key": "jamie xx",
+  "name": "Jamie xx",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Jamie xx 本名 James Thomas Smith，是倫敦出身的英國音樂人、DJ、製作人與混音師，也是 indie pop 樂團 The xx 的成員。",
+      "src": "https://en.wikipedia.org/wiki/Jamie_xx",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Jamie xx 說自己對舞曲的興趣來自兩位當 DJ 的叔叔；他的母親迷 Stax Records，父親在 1970 年代是 folk-rock 鼓手。",
+      "src": "https://en.wikipedia.org/wiki/Jamie_xx",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "2009 年，Jamie xx 以混音 Florence and the Machine 開啟個人路線，同年他也製作了 The xx 的首張專輯。",
+      "src": "https://en.wikipedia.org/wiki/In_Colour_(Jamie_xx_album)",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "2011 年，XL Recordings 老闆 Richard Russell 邀他把 Gil Scott-Heron 2010 年的《I'm New Here》重新電子化，成了混音專輯《We're New Here》。",
+      "src": "https://en.wikipedia.org/wiki/In_Colour_(Jamie_xx_album)",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他在加入 The xx 之前就開始做製作；他說自己不把混音和製作看成兩件事，DJ 是他製作的基礎，常取材自自己收藏的唱片。",
+      "src": "https://www.hotpress.com/music/talk-about-xx-baby-7927187",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他的聲音和倫敦俱樂部文化相連：house、electro、grime、dubstep 都在他為 BBC 6 Music 做的混音節目裡探索；他回憶早年在布里克斯頓與南倫敦的 dubstep 之夜，「一個小房間擠滿戴著帽子的人在聽」。",
+      "src": "https://www.hotpress.com/music/talk-about-xx-baby-7927187",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《In Colour》2015 年 5 月 29 日由 Young Turks 發行；他在 The xx 的行程之間斷斷續續完成，主要在倫敦的 Fortress 錄音，有一首錄於德州 Marfa；他想要聽起來「不屬於任何特定年代」的音樂。",
+      "src": "https://en.wikipedia.org/wiki/In_Colour_(Jamie_xx_album)",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "《In Colour》融合 UK garage、house 與 rave，取樣英國媒體片段：〈Girl〉用了《Top Boy》的一段，〈Gosh〉用了一段未發行的 BBC Radio 1 節目；〈I Know There's Gonna Be (Good Times)〉取樣 The Persuasions 1971 年的〈Good Times〉。",
+      "src": "https://en.wikipedia.org/wiki/In_Colour_(Jamie_xx_album)",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "《In Colour》的人聲來自 The xx 團員 Romy Madley Croft 與 Oliver Sim，以及 Young Thug 與 Popcaan；Four Tet 共同製作〈SeeSaw〉。",
+      "src": "https://en.wikipedia.org/wiki/In_Colour_(Jamie_xx_album)",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "《In Waves》2024 年 9 月 20 日由 Young 發行，是他隔了九年的第二張個人專輯；客席與製作包括 Romy、Oliver Sim、Honey Dijon、Kelsey Lu、Panda Bear、Robyn 與 The Avalanches。",
+      "src": "https://en.wikipedia.org/wiki/In_Waves_(Jamie_xx_album)",
+      "src2": "https://stereogum.com/2277882/jamie-xx-new-album-in-waves-interview/music",
+      "from": "bank"
+     },
+     {
+      "f": "Jamie xx 說，《In Waves》一開始「概念先行」的做法行不通，好音樂通常出自「一連串的失誤」；Honey Dijon 在疫情期間邀他合作，幫他走出創作停滯。",
+      "src": "https://stereogum.com/2277882/jamie-xx-new-album-in-waves-interview/music",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Jamie xx 說疫情期間的地下 rave 讓他重新感受到「剛開始上俱樂部時的那些感覺」；《In Waves》大量取樣靈魂與爵士唱片，並用上新的 AI 音軌分離軟體。",
+      "src": "https://stereogum.com/2277882/jamie-xx-new-album-in-waves-interview/music",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他說 Flying Lotus 與 J Dilla 這類洛杉磯製作人影響了〈My Cloud〉的質地。",
+      "src": "https://www.hotpress.com/music/talk-about-xx-baby-7927187",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Jamie xx 的《In Colour》入圍 2015 年 Mercury Prize（入圍，未得獎）。",
+      "src": "https://en.wikipedia.org/wiki/In_Colour_(Jamie_xx_album)",
+      "src2": "https://www.stereogum.com/1837796/mercury-prize-2015-nominees-include-aphex-twin-jamie-xx-florence-the-machine/news/",
+      "from": "bank"
+     },
+     {
+      "f": "維基稱 Jamie xx 是 The xx 在商業與評論上大獲成功的「driving force」。",
+      "src": "https://en.wikipedia.org/wiki/Jamie_xx",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "The xx 2009 年的自題首作由 Jamie xx 製作，在 2010 年贏得 Mercury Prize。",
+      "src": "https://www.hotpress.com/music/talk-about-xx-baby-7927187",
+      "src2": "https://en.wikipedia.org/wiki/Mercury_Prize",
+      "from": "new"
+     },
+     {
+      "f": "《In Colour》入圍 2016 年第 58 屆葛萊美最佳舞曲／電子專輯（入圍，未得獎）。",
+      "src": "https://grammy.com/artists/jamie-xx/19097",
+      "src2": "https://en.wikipedia.org/wiki/Jamie_xx",
+      "from": "new"
+     },
+     {
+      "f": "他 2011 年混音的 Gil Scott-Heron〈I'll Take Care of You〉被 Drake 與 Rihanna 的〈Take Care〉（2012 年 1 月發行）取樣，Jamie xx 與 Noah「40」Shebib 同列製作人，詞曲作者名單也有他，由 XL Recordings 授權。",
+      "src": "https://en.wikipedia.org/wiki/Take_Care_(Drake_song)",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "《In Colour》2015 年發行，《In Waves》2024 年發行，兩張相隔九年。",
+      "src": "https://en.wikipedia.org/wiki/In_Waves_(Jamie_xx_album)",
+      "src2": "https://stereogum.com/2277882/jamie-xx-new-album-in-waves-interview/music",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2011 年，Jamie xx 發行重製 Gil Scott-Heron 的《We're New Here》。",
+    "src": "https://en.wikipedia.org/wiki/In_Colour_(Jamie_xx_album)",
+    "single": true,
+    "from": "bank"
+   },
+   {
+    "f": "2015 年，《In Colour》入圍 Mercury Prize。",
+    "src": "https://en.wikipedia.org/wiki/In_Colour_(Jamie_xx_album)",
+    "src2": "https://www.stereogum.com/1837796/mercury-prize-2015-nominees-include-aphex-twin-jamie-xx-florence-the-machine/news/",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "《In Colour》製作期：維基摘要同時出現「花了五年」與「2012 至 2014 年」，彼此不一致，facts 只寫「斷斷續續完成」，不寫年數。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "沿用 ar-c-024-g4 的身分判定（卡池 In Colour 2015 與 In Waves 2024，皆為倫敦的 Jamie xx，無同名混卡）。針對原 thin 缺的 legacy 補查 7 次（WebSearch 4、WebFetch 3：Hot Press、Grammy 藝人頁、維基 Mercury Prize 與 Take Care 條）；Grammy 第一個網址 404、維基 xx (album) 無相關內容（不計）。legacy 現有：Mercury 2015 入圍（舊稿兩源）、The xx 首作 2010 年得 Mercury（Hot Press 與維基 Mercury Prize 條兩源）、2016 葛萊美入圍（Grammy 官網與維基首段兩源）、〈Take Care〉取樣（維基單源，屬事實層級的合作與授權，標 single）。Hot Press 文章年份不明（談到 We're New Here 與 My Cloud，應為 2011 至 2015 年間），其中說法為訪談，視為本人說法。未收：Gosh 入圍 2017 年第 59 屆葛萊美最佳音樂錄影（Grammy 官網單源，獎項類須兩源）；2016 Brit Awards 英國年度專輯入圍（維基與搜尋摘要，未開官網）；Ivor Novello 提名（搜尋摘要）；The xx 首作英國白金與被 Gorillaz、Shakira 翻唱（數字與次要細節）；Pitchfork 年榜名次、Metacritic、榜單、認證（榜單與數字）。我的 Mercury 2015 得主、2010 得主均已在維基 Mercury Prize 條核對（2010 The xx、2015 Benjamin Clementine）。thinIssues：現行 thin 正文寫「入圍 Mercury Prize」正確（2015 年入圍、未得獎），無事實錯誤。"
+ },
+ {
+  "key": "janelle monáe",
+  "name": "Janelle Monáe",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Janelle Monáe 1985 年 12 月 1 日生於 Kansas 州的 Kansas City，在勞工階層社區 Quindaro 長大；父母從事服務業與勞力工作（母親做過清潔工與旅館女傭，父親是卡車司機）。",
+      "src": "https://en.wikipedia.org/wiki/Janelle_Mon%C3%A1e",
+      "src2": "https://www.redbullmusicacademy.com/lectures/janelle-monae/",
+      "from": "bank"
+     },
+     {
+      "f": "她到紐約的 American Musical and Dramatic Academy 學音樂劇，之後搬到 Atlanta，在那裡開始寫自己的音樂。",
+      "src": "https://en.wikipedia.org/wiki/Janelle_Mon%C3%A1e",
+      "src2": "https://www.redbullmusicacademy.com/lectures/janelle-monae/",
+      "from": "bank"
+     },
+     {
+      "f": "Wondaland 是她在 Atlanta 參與建立的創作者集體，2015 年她與 Epic 合作成立同名廠牌 Wondaland Arts Society，簽下 Jidenna 等人。",
+      "src": "https://en.wikipedia.org/wiki/Janelle_Mon%C3%A1e",
+      "src2": "https://www.redbullmusicacademy.com/lectures/janelle-monae/",
+      "from": "bank"
+     },
+     {
+      "f": "她在浸信會長大，從教會學會唱歌；第一張薪水買了兩張 Lauryn Hill 的《The Miseducation of Lauryn Hill》，並用其中的歌連續三年拿下 Juneteenth 才藝賽冠軍。",
+      "src": "https://en.wikipedia.org/wiki/Janelle_Mon%C3%A1e",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "少女時期她加入 Coterie Theater 的青少年劇作家圓桌，寫過一齣約在 12 歲完成的音樂劇，靈感來自 Stevie Wonder 的《Journey Through \"The Secret Life of Plants\"》；在 AMDA 她是班上唯一的黑人女性，一年半後輟學搬到亞特蘭大。",
+      "src": "https://en.wikipedia.org/wiki/Janelle_Mon%C3%A1e",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "2003 年她在亞特蘭大自行發行 demo 專輯《The Audition》，從一輛 Mitsubishi Galant 的後車廂賣出。",
+      "src": "https://en.wikipedia.org/wiki/Janelle_Mon%C3%A1e",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《The ArchAndroid》（2010）延續她以機器人 Cindi Mayweather 為主角的 Metropolis 故事，靈感來自 1927 年的電影《Metropolis》；專輯的故事設定在 2719 年。",
+      "src": "https://www.redbullmusicacademy.com/lectures/janelle-monae/",
+      "src2": "https://www.pastemagazine.com/article/janelle-monae-the-archandroid",
+      "from": "bank"
+     },
+     {
+      "f": "Red Bull Music Academy 講座中，她說自己用科幻設定談種族、階級與性向，並自稱 Afrofuturism，脈絡接上 Sun Ra、George Clinton 與 Betty Davis；她穿黑白兩色是向勞動家庭致意。",
+      "src": "https://www.redbullmusicacademy.com/lectures/janelle-monae/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Paste 的評論稱《The ArchAndroid》橫跨 R&B、嘻哈、迷幻、新靈魂、舞曲與管弦樂，開場有管弦樂團調音與掌聲；評論拿 David Bowie、Stevie Wonder 的《Songs in the Key of Life》與 OutKast 相比。",
+      "src": "https://www.pastemagazine.com/article/janelle-monae-the-archandroid",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2018 年她獲 Billboard Women in Music 的 Trailblazer 獎。",
+      "src": "https://en.wikipedia.org/wiki/Janelle_Mon%C3%A1e",
+      "src2": "https://thesource.com/2018/12/10/janelle-monae-accepts-trailblazer-award-at-women-in-music-awards/",
+      "from": "bank"
+     },
+     {
+      "f": "2019 年她在搖滾名人堂典禮上為 Janet Jackson 擔任引介人，稱 Jackson 是「queen of black girl magic」。",
+      "src": "https://www.okayplayer.com/watch-janelle-monae-crown-janet-jackson-queen-of-black-girl-magic-at-rock-roll-hall-of-fame-induction/387973",
+      "src2": "https://en.wikipedia.org/wiki/Janelle_Mon%C3%A1e",
+      "from": "new"
+     },
+     {
+      "f": "Prince 混音過她的〈Q.U.E.E.N.〉，並在《The Electric Lady》（2013）客串，也在《Dirty Computer》製作期間擔任她的討論對象與合作者；她對《衛報》說「如果沒有 Prince，我不會這麼自在地做自己」，又說他從不要她變得像他。",
+      "src": "https://stereogum.com/1984812/prince-worked-on-janelle-monaes-new-album/news",
+      "src2": "https://www.okayplayer.com/music/janelle-monae-dirty-computer-prince-mentor.html",
+      "from": "new"
+     },
+     {
+      "f": "葛萊美官網列她共 10 次提名、0 次得獎；其中《The Age of Pleasure》入圍 2024 年第 66 屆的 Album of the Year。",
+      "src": "https://grammy.com/artists/janelle-monae/4464",
+      "src2": "https://en.wikipedia.org/wiki/Janelle_Mon%C3%A1e",
+      "from": "new"
+     },
+     {
+      "f": "Paste 稱她受 Big Boi 提攜。",
+      "src": "https://www.pastemagazine.com/article/janelle-monae-the-archandroid",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "2018 年的《Dirty Computer》是她的第三張錄音室專輯，同為概念專輯，設定在近未來。",
+      "src": "https://en.wikipedia.org/wiki/Janelle_Mon%C3%A1e",
+      "src2": "https://www.redbullmusicacademy.com/lectures/janelle-monae/",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "葛萊美提名總數：葛萊美官網藝人頁列 10 次（含以 Fun. 掛名的《Some Nights》Album of the Year 與〈We Are Young〉兩項）、維基首段寫 10 次；facts 只寫「官網列 10 次提名、0 次得獎」，不拆項目。",
+   "首次提名：葛萊美官網簡介稱首次是 2008 年度的 Best R&B Performance〈Many Moons〉，同頁表格列於第 51 屆（2009 年）Best Urban/Alternative Performance；兩處不一致，facts 不寫。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 3,
+  "status": "full",
+  "notes": "沿用 ar-c-006-g2 的身分判定與事實（卡池《The ArchAndroid》2010 與《The Electric Lady》2013 皆為堪薩斯市出身的 Janelle Monáe，無同名混卡）。針對原 thin 缺的 legacy 補查 7 次（WebSearch 3、WebFetch 4：Okayplayer 兩頁、Stereogum、Grammy 藝人頁）；Britannica、Rolling Stone、Ebony 與兩個 Grammy 網址失敗（不計）。sound 與 origin 的單源項目取自預抓維基與舊稿 notes 提到、已開過的頁面（Red Bull 講座、Paste 評論），依新規改標 single。legacy 的具名說法：Prince（Stereogum 與 Okayplayer 兩頁，Okayplayer 為 2018 年 3 月，Stereogum 為 2018 年 2 月；她對《衛報》的引句經 Stereogum 轉述）。非獨立提醒：維基首段的葛萊美與搖滾名人堂敘述與官網同源於公開紀錄，兩源但非編輯獨立。未收：Big Boi 把她帶進 Got Purp? Vol. II 與 Idlewild（搜尋摘要，來源頁未開，Paste 只說受其提攜）；Bad Boy 簽約年份（Britannica 與其他來源不一致）；〈We Are Young〉鑽石認證與榜首（榜單與認證）；Dirty Computer 入圍 2019 年第 61 屆 Album of the Year（Grammy 官網列出，另一源只見搜尋摘要，獎項類須兩源，未收）；ASCAP Vanguard Award 與 Billboard 2015 年 Rising Star（維基單源）；演員身分（Hidden Figures、Glass Onion 等，不屬音樂份量）；2018 年公開談性向（個人層面）。thinIssues：現行 thin 正文「《The ArchAndroid》延續她以機器人 Cindi Mayweather 為主角的 Metropolis 故事，靈感來自 1927 年的電影，設定在 2719 年」有舊稿兩源，無事實錯誤。"
+ },
+ {
+  "key": "japandroids",
+  "name": "Japandroids",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Japandroids 是 2006 年在溫哥華成立的加拿大雙人搖滾樂團，由吉他與主唱 Brian King、鼓手 David Prowse 組成；兩人是維多利亞大學的朋友，後來都搬到溫哥華。",
+      "src": "https://en.wikipedia.org/wiki/Japandroids",
+      "src2": "https://stereogum.com/2279911/japandroids-2024/interviews/cover-story",
+      "from": "bank"
+     },
+     {
+      "f": "King 與 Prowse 受 The Sonics 粗獷有勁的錄音啟發，2006 年開始寫歌錄音；原本想找第三人當主唱，後來決定不設主唱、兩人分唱。團名由 Prowse 的點子 Japanese Scream 與 King 的 Pleasure Droids 拼成。",
+      "src": "https://en.wikipedia.org/wiki/Japandroids",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "溫哥華缺乏現場演出的支持，他們受 Fugazi 這類團的 DIY 作風影響，自己租場地、設備、設計並發送海報來辦演出；第一場現場是 2006 年 12 月 30 日。",
+      "src": "https://en.wikipedia.org/wiki/Japandroids",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "2008 年秋天，兩人認定團走不下去，決定年底解散，錄好的《Post-Nothing》打算 2009 年初自行發行、不宣傳；2009 年那張專輯走紅，團才繼續。",
+      "src": "https://en.wikipedia.org/wiki/Japandroids",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "兩人只用吉他與鼓，把 Bruce Springsteen、Tom Petty 這類經典搖滾的氣勢與龐克的衝勁攪在一起，目標是同時重現每一張經典搖滾專輯裡最精彩的片段。",
+      "src": "https://en.wikipedia.org/wiki/Japandroids",
+      "src2": "https://uproxx.com/indie/a-eulogy-for-japandroids-2006-2024/",
+      "from": "bank"
+     },
+     {
+      "f": "維基把他們的音樂形容為「one part classic rock, one part punk」，經典搖滾的影響是 Bruce Springsteen 與 Tom Petty，龐克的影響是 The Replacements 與 Hüsker Dü。",
+      "src": "https://en.wikipedia.org/wiki/Japandroids",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "2012 年 6 月《Celebration Rock》發行前的訪談中，King 說團是龐克、車庫、傳統搖滾、藍調、油漬搖滾與經典搖滾的混合，站在搖滾「慶祝」的那一端，最簡單的說法是「We are a rock and roll band」；他們錄音主要是為了有現場可演的歌，棚內像「兩個人在房間裡」。",
+      "src": "https://www.thelineofbestfit.com/features/interviews/japandroids-98505",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Celebration Rock》入圍 2012 年 Polaris Music Prize 十張短名單（2012 年 7 月公布，同榜有 Drake《Take Care》、Feist《Metals》與 Grimes《Visions》）。",
+      "src": "https://diymag.com/news/polaris-music-prize-shortlist-revealed-japandroids-grimes-more",
+      "src2": "https://archives.boulderweekly.com/?p=9210",
+      "from": "new"
+     },
+     {
+      "f": "《Celebration Rock》入圍 2013 年 Juno Awards 的 Alternative Album of the Year（入圍，未得獎；得主是 Metric《Synthetica》）。",
+      "src": "https://junoawards.ca/nomination/2013-alternative-album-of-the-year-sponsored-by-long-mcquade-japandroids/",
+      "src2": "https://en.wikipedia.org/wiki/Juno_Award_for_Alternative_Album_of_the_Year",
+      "from": "new"
+     },
+     {
+      "f": "Steven Hyden 在 Uproxx（2016 年 8 月）寫道，《Celebration Rock》「helped to crystallize a new subgenre」，讓想把龐克的力量與經典搖滾神話合在一起的地下樂團有了名字；他在 PUP、Pkew Pkew Pkew 與 Beach Slang 的專輯裡聽到相似的迴響，但這些樂團並未自認受其影響。",
+      "src": "https://uproxx.com/music/japandroids-absence-beach-slang/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "『celebration rock』一詞後來成了這種『喊叫式龐克加上 Springsteen 式渴望』的聲音的代稱，也被用來描述後來的 The Menzingers、PUP 等團。",
+      "src": "https://stereogum.com/2279911/japandroids-2024/interviews/cover-story",
+      "src2": "https://stereogum.com/2187862/japandroids-celebration-rock-turns-10/reviews/the-anniversary",
+      "from": "bank"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "2024 年 10 月 18 日發行第四張專輯《Fate & Alcohol》，團宣布這是最後一張，不辦告別巡演。",
+      "src": "https://stereogum.com/2279911/japandroids-2024/interviews/cover-story",
+      "src2": "https://ca.billboard.com/fyi/japandroids-fate-alcohol",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "Stereogum 封面故事寫兩人 2006 年於維多利亞大學認識並成軍；維基寫兩人 2000 年在維多利亞大學認識、2006 年成軍；facts 只寫『維多利亞大學的朋友』與 2006 年成軍。",
+   "sg 與 sga 同屬 Stereogum（非獨立）：legacy 一則的第二源與第一源同站；Stereogum 同文另有 Ian Cohen 指出『沒看到一波明顯受 Japandroids 影響的樂團』，本層不寫後輩影響，只寫『celebration rock』成為描述詞，寫作層也不要把它寫成『影響了某某』。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "沿用 ar-c-011-g2 的身分判定（卡池《Celebration Rock》2012 與《Near to the Wild Heart of Life》2017，皆為溫哥華這支 Japandroids，無同名混卡）。針對原 thin 缺的 legacy 補查 8 次（WebSearch 2、WebFetch 6：Juno 官網、Uproxx、DIY Magazine、Line of Best Fit、維基 Juno 另類專輯條、Boulder Weekly）。origin 與 sound 的新增項目取自預抓維基導言與生平段落（視同已開頁）及 Best Fit 訪談，依新規標 single。legacy 兩個獎項各有兩源（Polaris 短名單：DIY 與 Boulder Weekly；Juno：官網與維基 Juno 條，後者已核對得主 Metric）；「後輩」只有 Uproxx 單一評論者的「聽到迴響」，且文中明說那些樂團未自認受其影響，另有舊稿的 Stereogum 兩源「celebration rock 成為這類聲音的代稱」，但同一篇 Stereogum 另有 Ian Cohen 指出「沒看到明顯受 Japandroids 影響的一波樂團」，寫作層不得寫成「影響了 PUP」，只能寫成「評論把這類樂團放在同一條線」。非獨立提醒：舊稿 legacy 兩源同屬 Stereogum。未收：Rolling Stone 稱《Celebration Rock》是十大最酷夏日專輯之一、Spin 2012 年度樂團（維基首段，雜誌評選與榜單）；2009 至 2013 年約 500 場、44 國（場次）；Post-Nothing 的 Polaris 初選名單與 Juno 提名（搜尋摘要，維基系，未開頁）；Pitchfork 稱「a rock record for the ages」（單一樂評）；Billboard Canada 的 2010 年代最佳搖滾專輯之一（單一媒體評價，舊稿已排除）；King 戒酒、King 住密西根而 Prowse 住溫哥華（人物近況，舊稿單源）。thinIssues：現行 thin 正文寫「維多利亞大學時期的朋友」「2006 年成軍」與兩源一致；「celebration rock 一詞後來成了這種聲音的代稱」有舊稿 Stereogum 兩源支持，無事實錯誤。"
+ }
+]
