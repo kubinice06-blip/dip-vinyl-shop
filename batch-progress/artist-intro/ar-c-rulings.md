@@ -2131,3 +2131,8 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 補查 20 位：add 3、none 17；改寫 3 位，補回喜多嶋修與內藤洋子的婚姻、Keenan 母親中風癱瘓與〈Judith〉及 2004 年大選日發行的反戰翻唱、Ab-Soul 罹史蒂文斯–強森症候群與女友 Alori Joh 2012 年輕生。加山雄三表親一條第二源弱，不寫；:wumpscut: 的芬蘭校園槍擊案帳號線索僅單一來源且與樂團無關，不寫。
 - 主線審稿 0 處。
+
+### 題材補回：ar-u-014（2026-10-17）
+
+- 補查 32 位：add 16、none 16；改寫 15 位，補回 Connick 13 歲喪母、Roesli 2001 年改詞〈Garuda Pancasila〉遭警方傳喚、Herbert 的 Radio Boy 反全球化與《One Pig》遭 PETA 譴責、Grönemeyer 1998 年喪妻喪兄與 2019 年反右傾演說、Huey Lewis 的抄襲官司與梅尼爾氏症及 2025 年聽力近況（補查開頁兩源）、Iceage 被指有法西斯傾向與樂團否認、Israel Vibration 小兒麻痺與輪椅籃球隊事件、Monáe〈Hell You Talmbout〉與性別認同、Jacklin 的分手專輯、Dayes 遭撤美國入境資格、Kansas 成員轉信福音派與 Steinhardt 過世、Casey 車禍癱瘓與用藥、Key Glock 母親入獄與 Young Dolph 遇害、Khalid 2024 年確認同志身分、Solberg 的憂鬱焦慮。Khatia 兩條皆單源，不改。
+- 主線審稿 3 處：Grönemeyer、Huey Lewis、Monáe 連續年份句。
