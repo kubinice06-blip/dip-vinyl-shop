@@ -2042,3 +2042,8 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 補查 38 卡：add 18 卡（11 位藝人）、none 20；改寫 18 卡，補回花柳幻舟 1980 年持刀傷家元入獄與即位禮遊行被捕、筒井康隆斷筆宣言、浅川マキ 2010 年巡演中猝逝、辛島文雄帶病演出、渡辺香津美腦幹出血、秋吉敏子戰後自中國東北返日、Mariano 與秋吉敏子的婚姻、笠井紀美子婚姻、Ghost 前成員官司、Steve Lacy 2017 年的說法。鈴木良雄 2026-09-23 過世（補查多源核實），改已故口吻。
 - 主線審稿 1 處：水谷公生「妻子是小川糸」只有單源加鏡像，改寫成三人同組 Fairlife。
+
+### 題材補回：ar-u-002（2026-10-17）
+
+- 補查 34 位：add 21、none 13；改寫 21 位，補回 Lemmy 1975 年被捕遭逐出 Hawkwind 與 2015 年過世、Molko 毒癮與憂鬱症、Hyde 酗酒與〈Born Slippy〉、中森明菜 1989 年輕生未遂與復出、Beyoncé〈Formation〉爭議與 CMA 事件、Kele Okereke 出櫃、Cat Power 精神崩潰與戒酒、Schuldiner 腦瘤與募款、de Freitas 車禍、Fairport M1 車禍、Gucci Mane 謀殺指控撤銷與 2014 年入獄、Mastodon 的 Skye 與 Hinds 2025 年過世、Merzbow 動物權、Mogwai 的 T 恤風波與支持蘇格蘭獨立、Morrissey 版稅官司與支持 For Britain、Reznor 成癮與勒戒、Scarface 專輯遭拒發與輕生未遂、Sigur Rós 鼓手被指控與稅案、White Stripes 前夫妻身分與 Meg 焦慮。
+- 主線審稿 11 處：卡池專輯名超量（Cat Power、Mastodon）、連續年份句（Gucci Mane、Mogwai、Morrissey、Sigur Rós）、年份超量（White Stripes）、字數壓回 250。
