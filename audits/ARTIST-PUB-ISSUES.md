@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1499 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1503 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1503,3 +1503,7 @@
 | ar-u-019 | Ana Popović | Can You Stand the Heat | 1998 年赴荷蘭修爵士吉他後轉為職業樂手 | Vintage Guitar 2013 年訪談：她去荷蘭念平面設計，樂團簽 Ruf 後因《Hush!》成功而放下學業；Donne in Musica 則寫進海牙音樂學院；「赴荷蘭修爵士吉他」沒有來源支持（訪談只說她後來才學爵士吉他，且是在樂團忙碌時）。建議改為「赴荷蘭求學後，樂團簽下 Ruf Records，轉為職業樂手」。 | https://www.vintageguitar.com/15965/ana-popovic |
 | ar-u-019 | Ariesta Birawa Group | Ariesta Birawa Group, Vol. 1 | 唱片是這支團唯一的一張 | 早期陣容（Mus Mulyadi、Soenata Tanjung）1965 年已用同一團名發行過 Djoko Tarub（Wasted Rockers 稱 EP 或 10 吋；CNN Indonesia 稱 Jaka Tarub 專輯），Wasted Rockers 把 Vol. 1 寫成首張全長專輯；建議改成『首張全長專輯』或不寫唯一。 | https://www.cnnindonesia.com/hiburan/20190411111224-234-385270/mus-mulyadi-sang-buaya-keroncong-indonesia |
 | ar-u-019 | Ariesta Birawa Group | Ariesta Birawa Group, Vol. 1 | 官方那時正推 dangdut | 待核：PopMatters 只寫政府鼓勵本土傳統音樂、dangdut 在 1970 年代崛起（Rhoma Irama 的〈Begadang〉比這張晚兩年），沒有寫官方在 1973 年推 dangdut；建議改成較保守的寫法。 | https://popmatters.com/ariesta-birawa-group-vol-1-indonesia-2495753530.html |
+| ar-u-020 | Azitis | Help | 沒有鼓組，推進力來自鍵盤與貝斯 | Discogs 只登錄 Steve Nelson 為 percussion（打擊樂），沒有說明有無鼓組；「沒有鼓組」是從 credit 推論，找不到來源直接證實，建議改成「打擊樂由 Steve Nelson 一人負責」或刪去推論。 | https://www.discogs.com/release/5033032-Azitis-Help |
+| ar-u-020 | Bahamadia | Kollage | 3 月 19 日發行；DJ Premier 做〈Intro〉與〈Rugged Ruff〉 | Albumism 列 DJ Premier 的曲目為〈Rugged Ruff〉、〈3 The Hard Way〉、〈True Honey Buns〉，未列〈Intro〉；Blackout 稱 Premier 做五首。〈Intro〉的製作人本層未核實，建議本機對 Discogs／專輯內頁核對。發行日 3 月 19 日是資料庫通行日期，Bahamadia 本人主張街頭上架日為 4 月 2 日，可考慮改寫為「1996 年春」。 | https://albumism.com/features/bahamadia-debut-album-kollage-album-anniversary |
+| ar-u-020 | Bananarians | Boner | 原盤 credit 上藤井義之掛人聲、吉他與鍵盤 | Discogs 的《Boner》credit 寫的是 Sansuke Fujii（人聲、吉他、鍵盤），Discogs 團體成員欄另有「藤井義之」，兩者在 Discogs 上是各自獨立的條目，沒有資料證明是同一人；簡介把 credit 直接寫成藤井義之，建議改寫成「藤井（Sansuke Fujii）」或查證後再用。 | https://www.discogs.com/master/1323163-Bananarians-Boner |
+| ar-u-020 | Bob Sinclar | Paradise | Christophe Le Friant 以 Bob Sinclar 之名的首張專輯 | 法文維基寫 Bob Sinclar 這個名字最初是為一張匿名合輯想的玩笑概念，由 DJ Yellow 以此名演出並宣傳《Paradise》；英文維基與搜尋到的 NRJ 傳記都把這張當成 Le Friant 的首張，來源不一致，僅法文維基單源，建議店主視需要核對，簡介可保留但勿寫成確定語氣 | https://fr.wikipedia.org/wiki/Bob_Sinclar |

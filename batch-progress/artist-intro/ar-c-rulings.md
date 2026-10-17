@@ -2011,3 +2011,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 搜尋超額：Deadbeat、TRI4TH 各 9，放行。ゼロ戦、井上敬三 搜了沒補到新事實，主線把 legacy 格改 gap 過 QA（仍 thin）。維基預抓錯抓 CALM（軟體公司）、Divination（占卜）、Fire! Orchestra，補洞層都已改認。
 - 審稿修 3 處：The Benny Green Trio 三重奏單卡從 273 壓回 247；山屋清「原信夫とシャープス＆フラッツ」「モダンジャズ三人の會」假名改寫並壓回 221。
   - 保留：:wumpscut: 不寫爭議；127 伊朗禁演背景一句；喜多嶋修不寫與加山雄三的親戚關係；TRI4TH 獎項不寫（兩源同出官方簡介）；Gianluca Petrella 只留 Django d'Or。
+
+## ar-u-019（2026-10-17，thin 升級）
+
+- 40 位中 30 位升 full 上線；10 位補洞後仍 thin、保留原上線版：Abbhama、Adnan Othman、Alice Ricciardi、Alpha Stone、Amp、André Navarra、Andrés、Androids of Mu、Anno Luz、ASTRO。
+- Ametsub：補洞層在搜尋結果看到 2025 年一則騷擾指控報導（未開頁核實），照通則不寫指控，只寫音樂，照常升級。ASMF Chamber Ensemble「為演 Mendelssohn 八重奏而組」經官方歷史頁確認，前稿 pubIssue 翻案。維基預抓錯抓 Alpha & Omega（希臘字母）、Anthony Adverse（電影）、Aphrodite（女神）、ASTRO（電視公司），補洞層都已改認。
+- 審稿修 5 處：Ancient Infinity Orchestra 刪「保守得最好的祕密」（疑新聞稿單源）；Andy Gibb 刪「世上最紅的錄音明星」（單一雜誌）；Aron Ottignon、Alfred Panou & Art Ensemble of Chicago「最…之一」改「極」；Alma Mahler 刪老師「盲眼」（身體狀況）。
+  - 保留：Alfred Panou & AEC、Alpha & Omega meets The Disciples 聯名卡 274／276（放寬額度）；Arms and Sleepers 父親在戰火中喪生（專輯主題本身，補洞稿列必要例外）；Alma Mahler 只寫與 Gustav Mahler 的婚姻；Andy Gibb 只寫 1988 年過世。
