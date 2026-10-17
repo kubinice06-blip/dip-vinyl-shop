@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1478 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1484 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1482,3 +1482,9 @@
 | ar-u-015 | Me'Shell Ndegéocello | Plantation Lullabies | 次年入圍三項葛萊美 | 英文維基獎項表把〈Plantation Lullabies〉相關的提名（最佳 R&B 專輯、最佳 R&B 歌曲、最佳女 R&B 演唱，另有與 John Mellencamp 合唱的最佳流行合作）列在 1995 年；專輯 1993 年 10 月發行，距離不是次年。單源，建議本機對照葛萊美官網的屆次與年份後再決定是否改。 | https://en.wikipedia.org/wiki/Meshell_Ndegeocello |
 | ar-u-015 | Natacha Atlas | Gedida | 1999 年由 Mantra Records 發行，Natacha Atlas 第三張個人專輯 | 英文維基藝人條目把《Gedida》列為 1998 年；Aramco World（2003）與卡單作 1999。發行年（各地區版本可能不同）待核；專輯序數（Diaspora、Halim、Gedida 為第三張）與兩處列表一致。 | https://en.wikipedia.org/wiki/Natacha_Atlas |
 | ar-u-015 | Negasphere | Disadvantage | 鍵盤的基本軌由川崎馨在東京方南町的 Green Studio 錄下 | 日文維基與 Disk Union 的樂團頁把鍵盤手寫成「川崎薫」（TuneCore 英文作 Kaoru Kawasaki），上線簡介寫「川崎馨」。Discogs 製作名單可能用不同寫法，待店主對照原盤內頁確認。 | https://ja.wikipedia.org/wiki/Negasphere |
+| ar-u-015 | Rabih Abou-Khalil | Blue Camel | 在貝魯特隨 Georges Farah 學 oud | 英文維基支持 Georges Farah，但 Jazz in the Park 的簡介寫的是 Wadih El Safi，兩說並存；建議店主改成不點名老師，或另查官方傳記確認。 | https://jazzinthepark.ro/en/rabih-abou-khalil-a-unique-map-of-the-music/ |
+| ar-u-016 | Roberto Cacciapaglia | Sei Note in Logica | 日後 Jim O'Rourke、Fennesz 等人把這批早期錄音列為影響來源 | 唯一來源是再版廠牌 Superior Viaduct 的文案，只寫「影響可以在 Jim O'Rourke、Fennesz 與 Ben Vida 的作品中聽到」，沒有後輩自己點名；建議改成「再版廠牌稱…」或刪掉。 | https://www.superiorviaduct.com/products/roberto-cacciapaglia-sei-note-in-logica-lp |
+| ar-u-016 | Roberto Cacciapaglia | Sei Note in Logica | 他自己的路線則很快轉向流行與鋼琴 | 義大利維基與本人官方簡介的年表顯示 1980 年代之後仍有實驗電子與 Ricordi／Fonit Cetra 的作品，新古典與商業成功要到 2000 年代；「很快轉向」缺依據，Superior Viaduct 頁面本層也沒讀到這句。 | https://it.wikipedia.org/wiki/Roberto_Cacciapaglia |
+| ar-u-016 | Stephanie Mills | （藝人介紹 thin 版） | 十一歲就在哈林 Apollo 劇院的業餘夜連續六週奪冠 | 來源對年齡不一致（維基 11 歲、encyclopedia.com 一份寫 9 歲），建議拿掉年齡 | https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/stephanie-mills |
+| ar-u-016 | The Sensational Nightingales | The Best of the Sensational Nightingales | John Fogerty 寫〈Proud Mary〉時想召喚的男聲和聲，正是這一支。 | 英文維基原文是 Fogerty 想召喚的是男聲福音和聲，『以 Swan Silvertones、Sensational Nightingales、Five Blind Boys of Mississippi 這類團體為代表』，Nightingales 只是被舉例的幾支之一，不是『正是這一支』。建議改成『Fogerty 想召喚的那種男聲福音和聲，Nightingales 是代表之一』。 | https://en.wikipedia.org/wiki/Sensational_Nightingales |
+| ar-u-016 | The Sensational Nightingales | The Best of the Sensational Nightingales | 四重唱 1942 年由 Dixie Hummingbirds 出身的 Barney Parks 組成，1946 年 Julius「June」Cheeks 加入。 | 英文維基與 Journal of Gospel Music 作 1942 年 Parks 創團，但 Malaco 官方傳記寫前身為費城 Lamplighters、1949 年改名 Nightingale Quartet、Cheeks 1950 年才加入，來源不一致，Cheeks 加入年建議改為『四〇年代後期』或不寫年份。 | https://malaco.com/artist/gospel/the-sensational-nightingales/ |

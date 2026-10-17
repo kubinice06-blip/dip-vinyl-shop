@@ -1982,3 +1982,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - Herbert Grönemeyer 不寫 1998 年喪妻喪兄（家人逝世）與 2026 年德國國家獎（升級批通則，未另核）；Israel Vibration 不寫小兒麻痺；Key Glock 不寫刑案與母親入獄，只寫 Young Dolph「離世」。
 - 審稿修 7 處：Khalid 刪《時代》百大（媒體名單）；Key Glock、Khanate、I Musici、Israel Vibration「最…之一」改「主要／極／早期」；Hedningarna 刪「Garmarna 等後來者的前導」（無後輩點名）；Grönemeyer 刪 2026 年獎項。
   - 保留：I Mean Us〈Søulмaтe〉照原標題寫法；Iggy Pop 對 Iceage 的評語（具名音樂人）；Jorja Smith Brit 獎、Julia Jacklin ARIA 獎、Leprous Spellemannprisen 入圍、Janelle Monáe 葛萊美入圍（在世者各一處）；Harry Roesli 抗議歌曲一句（政治題材上限）。
+
+## ar-u-015（2026-10-17，thin 升級）
+
+- 40 位中 28 位升 full 上線；12 位補洞後仍 thin、保留原上線版：Louis Smith、Mach One、Madeleine Peyroux、Melanie Martinez、Melt Yourself Down、Mr. Sirius、Negasphere、NxWorries、of Montreal、Portico Quartet、Preoccupations、Primus。
+- 搜尋超額：Louis Smith、Oh No 各 9，放行。Luc Ferrari 現行 thin 版含結核病，升級版不寫，上線即替換；Nala Sinephro 的 2025 年電影配樂照通則不寫；Mew 的 2025 告別隨升級版移除。
+- 卡池年份待本機核：Maceo & All the King's Men《Funky Music Machine》卡池 1975、維基 1972；Mahmoud Ahmed《Éthiopiques 6: Almaz》卡池 1999（疑為選輯發行年，原錄音 1973）。
+- 審稿修 6 處：Liars、M. Ward「最…之一」改「備受／重要」；Maceo & All the King's Men 樂團單卡從 265 壓回 227、Milton Wright 個人卡從 278 壓回 250（「人物故事」不屬多名卡放寬）；Natacha Atlas 金基德片名改台灣譯名《空屋情人》；Patty Waters 補英中間空格。
+  - 保留：Marvin Gaye & Tammi Terrell 雙人卡 276（放寬額度），Terrell 只寫 1970 年過世；Mario Hot 100 蟬聯 9 週（補洞稿必要例外）；Me'Shell Ndegéocello 2024 年葛萊美（在世者一處）；METZ 2024 年休團（不在 2025–26 範圍）。
