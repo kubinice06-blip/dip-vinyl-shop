@@ -55,6 +55,9 @@ async function one({ i, d }) {
     bandcamp: okUrl(bc?.bandcampUrl, /^https:\/\/[^/]+\/album\//) || prev.bandcamp || null,
     checkedAt: new Date().toISOString().slice(0, 10),
   };
+  // 店主手動給的連結記在 manual，重查一律保留
+  for (const k of prev.manual || []) items[i.id][k] = prev[k];
+  if (prev.manual) items[i.id].manual = prev.manual;
   // 人工核對過連錯專輯的平台記在 skip，重查也不再採用
   if (prev.skip?.length) { items[i.id].skip = prev.skip; for (const k of prev.skip) items[i.id][k] = null; }
   if (++n % 10 === 0) console.log(`  已查 ${n} 張`);

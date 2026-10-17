@@ -48,7 +48,8 @@ const qrSvg = url => {
   for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (q.isDark(r, c)) d += `M${c + m} ${r + m}h1v1h-1z`;
   return `<svg class="qr" data-url="${esc(url)}" viewBox="0 0 ${n + 2 * m} ${n + 2 * m}" shape-rendering="crispEdges"><path d="${d}" fill="#1c1b19"/></svg>`;
 };
-const streamOf = id => { const l = LINKS[id]; if (!l) return null; for (const [k, name] of STREAMS) if (l[k]) return { url: l[k], name }; return null; };
+// 店主手動給的 YouTube 影片（非 YT Music 專輯頁）標成 YouTube
+const streamOf = id => { const l = LINKS[id]; if (!l) return null; for (const [k, name] of STREAMS) if (l[k]) return { url: l[k], name: k === 'yt' && !/music\.youtube\.com/.test(l[k]) ? 'YouTube' : name }; return null; };
 
 const stars = (n, total) => { n = Math.max(0, Math.min(total, Math.round(Number(n) || 0))); return '<b>' + '★'.repeat(n) + '</b>' + '☆'.repeat(total - n); };
 const card = ({ i, d }) => {
