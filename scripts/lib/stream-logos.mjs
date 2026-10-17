@@ -1,11 +1,11 @@
-// 串流平台的簡化 logo（放在印刷卡 QR 中央），座標在 0–100 的方框內。黑白單色（店主 2026-10-17）：底色同 QR 黑，鏤空處同卡片紙色。
+// 串流平台的簡化 logo（放在印刷卡 QR 中央），座標在 0–100 的方框內。黑白單色（店主 2026-10-17）：底色同 QR 黑，鏤空處白色（卡片底色）。
 // 同一組圖元同時給 HTML（toSvg）與 Illustrator 指令碼（build-shop-print-ai.mjs 逐一畫成原生路徑）用。
 //   circle {cx, cy, r, fill}｜rrect {x, y, w, h, r, fill}｜poly {pts, fill}｜line {pts, stroke, w}（圓頭粗線）
 const quad = (a, c, b, n = 12) => Array.from({ length: n + 1 }, (_, i) => {
   const t = i / n, u = 1 - t;
   return [u * u * a[0] + 2 * u * t * c[0] + t * t * b[0], u * u * a[1] + 2 * u * t * c[1] + t * t * b[1]].map(v => Math.round(v * 10) / 10);
 });
-const W = '#fbfaf6', K = '#1c1b19';
+const W = '#ffffff', K = '#1c1b19';
 export const LOGOS = {
   spotify: [
     { t: 'circle', cx: 50, cy: 50, r: 50, fill: K },

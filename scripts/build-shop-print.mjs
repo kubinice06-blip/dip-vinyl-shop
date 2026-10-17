@@ -53,7 +53,7 @@ const qrSvg = (url, logo) => {
   for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (q.isDark(r, c)) d += `M${c + m} ${r + m}h1v1h-1z`;
   const { b, o } = logoBox(n), pad = 0.7, sc = (b - 2 * pad) / 100;
   return `<svg class="qr" data-url="${esc(url)}" data-logo="${logo}" viewBox="0 0 ${n + 2 * m} ${n + 2 * m}"><path d="${d}" fill="#1c1b19" shape-rendering="crispEdges"/>`
-    + `<rect x="${o}" y="${o}" width="${b}" height="${b}" fill="#fbfaf6"/><g transform="translate(${o + pad} ${o + pad}) scale(${sc})">${toSvg(LOGOS[logo])}</g></svg>`;
+    + `<rect x="${o}" y="${o}" width="${b}" height="${b}" fill="#ffffff"/><g transform="translate(${o + pad} ${o + pad}) scale(${sc})">${toSvg(LOGOS[logo])}</g></svg>`;
 };
 const streamOf = id => { const l = LINKS[id]; if (!l) return null; for (const k of STREAMS) if (l[k]) return { url: l[k], logo: logoOf(k, l[k]) }; return null; };
 
@@ -86,6 +86,8 @@ const card = ({ i, d }) => {
 </section>`;
 };
 
+// 裁切線只畫在卡與卡之間：3 條直線、1 條橫線
+const CUTS = [1, 2, 3].map(c => `<i class="cut v" style="left:${c * 74.25}mm"></i>`).join('') + '<i class="cut h" style="top:105mm"></i>';
 const html = `<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><title>dip vinyl 店內介紹卡 A6</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Serif+JP:wght@500;700;900&family=Noto+Sans+TC:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -93,7 +95,7 @@ const html = `<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><t
 * { box-sizing: border-box; }
 html, body { margin: 0; background: #e9e6df; }
 body { font-family: "Noto Sans TC", sans-serif; color: #1c1b19; }
-.card { width: 105mm; height: 148mm; background: #fbfaf6; margin: 6mm auto; padding: 9mm 8.5mm 8mm;
+.card { width: 105mm; height: 148mm; background: #ffffff; margin: 6mm auto; padding: 9mm 8.5mm 8mm;
   display: flex; flex-direction: column; page-break-after: always; break-after: page; overflow: hidden; }
 header { display: flex; justify-content: space-between; align-items: center; gap: 3mm;
   font-family: "IBM Plex Mono", monospace; font-size: 6.5pt; letter-spacing: .14em; text-transform: lowercase; }
@@ -109,7 +111,7 @@ header { display: flex; justify-content: space-between; align-items: center; gap
 .st b { color: #1c1b19; font-weight: 400; }
 .ax.hit em { color: #1c1b19; font-weight: 500; }
 .apex-hall .ax.hit .st b { color: #6f777f; } .apex-pearl .ax.hit .st b { color: #8a5a2b; } .apex-heresy .ax.hit .st b { color: #a3122a; }
-.apexbadge { margin-left: 2.5mm; padding: .6mm 2mm; border-radius: .6mm; color: #fbfaf6; font-family: "Noto Sans TC", sans-serif; font-weight: 500; font-size: 7pt; letter-spacing: .1em; }
+.apexbadge { margin-left: 2.5mm; padding: .6mm 2mm; border-radius: .6mm; color: #ffffff; font-family: "Noto Sans TC", sans-serif; font-weight: 500; font-size: 7pt; letter-spacing: .1em; }
 .apexbadge i { font-style: normal; font-family: "IBM Plex Mono", monospace; font-size: 5.5pt; margin-left: 1.2mm; opacity: .85; letter-spacing: .06em; }
 .apex-hall .apexbadge { background: #6f777f; } .apex-pearl .apexbadge { background: #8a5a2b; } .apex-heresy .apexbadge { background: #a3122a; }
 
@@ -155,16 +157,20 @@ h1 { font-size: 9.5pt; }
 footer { padding-top: 1.2mm; } .sub { font-size: 4.6pt; } .price { font-size: 10pt; }
 .qr { width: 11mm; height: 11mm; }` : ''}
 ${SHEET === 'a4' ? `
-/* A4 橫式 297×210mm 拼 8 張 A7（4 × 2，左右各留 0.5mm）；卡緣畫淺灰虛線當裁切線 */
+/* A4 橫式 297×210mm 拼 8 張（4 × 2），卡片 74.25×105mm 剛好平分塞滿、四周不留白（店主 2026-10-17）；
+   只在卡與卡之間畫淺灰虛線當裁切線，紙張外緣不畫 */
 @page { size: 297mm 210mm; margin: 0; }
-.sheet { width: 297mm; height: 210mm; margin: 6mm auto; background: #fbfaf6; display: grid;
-  grid-template-columns: repeat(4, 74mm); grid-template-rows: repeat(2, 105mm); justify-content: center; align-content: center;
+.sheet { position: relative; width: 297mm; height: 210mm; margin: 6mm auto; background: #ffffff; display: grid;
+  grid-template-columns: repeat(4, 74.25mm); grid-template-rows: repeat(2, 105mm);
   break-after: page; page-break-after: always; }
-.sheet .card { margin: 0; break-after: auto; page-break-after: auto; outline: .1mm dashed #c9c3b8; outline-offset: -.05mm; }
+.sheet .card { width: 74.25mm; margin: 0; break-after: auto; page-break-after: auto; }
+.cut { position: absolute; display: block; border: 0 dashed #c9c3b8; }
+.cut.v { top: 0; bottom: 0; width: 0; border-left-width: .1mm; margin-left: -.05mm; }
+.cut.h { left: 0; right: 0; height: 0; border-top-width: .1mm; margin-top: -.05mm; }
 @media print { .sheet { margin: 0; } }` : ''}
 </style></head><body>
 ${SHEET === 'a4'
-  ? Array.from({ length: Math.ceil(rows.length / 8) }, (_, i) => `<div class="sheet">\n${rows.slice(i * 8, i * 8 + 8).map(card).join('\n')}\n</div>`).join('\n')
+  ? Array.from({ length: Math.ceil(rows.length / 8) }, (_, i) => `<div class="sheet">\n${rows.slice(i * 8, i * 8 + 8).map(card).join('\n')}\n${CUTS}</div>`).join('\n')
   : rows.map(card).join('\n')}
 </body></html>`;
 fs.mkdirSync(path.dirname(OUT), { recursive: true });

@@ -195,9 +195,14 @@ for (var n = 0; n < N; n++) {
     if (slot === 0) ab.name = 'A4 ' + (Math.floor(n / PER) + 1);
   } else ab.name = cd.name;
   var grp = doc.groupItems.add(); grp.name = cd.name;
-  if (SHEET) {   // 裁切線：卡片外框，淺灰虛線
-    var cut = grp.pathItems.rectangle(T, L, cd.w, cd.h);
-    cut.filled = false; cut.stroked = true; cut.strokeWidth = 0.28; cut.strokeDashes = [2, 2]; cut.strokeColor = color('rgb(201, 195, 184)'); cut.name = 'cut';
+  if (SHEET && n % PER === 0) {   // 裁切線：只畫卡與卡之間（直線 cols-1 條、橫線 rows-1 條），紙張外緣不畫
+    var R0 = ab.artboardRect, cuts = [];
+    for (var cc = 1; cc < SHEET.cols; cc++) cuts.push([[R0[0] + cc * cd.w, R0[1]], [R0[0] + cc * cd.w, R0[3]]]);
+    for (var rr = 1; rr < SHEET.rows; rr++) cuts.push([[R0[0], R0[1] - rr * cd.h], [R0[2], R0[1] - rr * cd.h]]);
+    for (var cu = 0; cu < cuts.length; cu++) {
+      var cut = doc.pathItems.add(); cut.setEntirePath(cuts[cu]); cut.filled = false; cut.stroked = true;
+      cut.strokeWidth = 0.28; cut.strokeDashes = [2, 2]; cut.strokeColor = color('rgb(201, 195, 184)'); cut.name = 'cut';
+    }
   }
   for (var j = 0; j < cd.items.length; j++) {
     var it = cd.items[j], o;
@@ -213,7 +218,7 @@ for (var n = 0; n < N; n++) {
       }
       // 中央 logo：先鋪紙色底塊蓋住格子，再畫平台 logo（座標 0–100 → 底塊內縮 pad 格）
       var bx = L + it.x + it.box.o * cell, by = T - it.y - it.box.o * cell, bs = it.box.b * cell;
-      var bg = grp.pathItems.rectangle(by, bx, bs, bs); bg.filled = true; bg.stroked = false; bg.fillColor = color('rgb(251, 250, 246)');
+      var bg = grp.pathItems.rectangle(by, bx, bs, bs); bg.filled = true; bg.stroked = false; bg.fillColor = color('rgb(255, 255, 255)');
       var lx = bx + it.box.pad * cell, ly = by - it.box.pad * cell, ls = (bs - 2 * it.box.pad * cell) / 100;
       for (var g = 0; g < it.prims.length; g++) {
         var pr = it.prims[g], po;
