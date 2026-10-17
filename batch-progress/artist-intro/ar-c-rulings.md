@@ -2086,3 +2086,8 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 補查 30 位：add 12、none 18；改寫 11 位，補回 Elmo Hope 毒癮、演出執照被撤與入獄、Faith Evans 的丈夫 B.I.G. 1997 年遇害、FKA twigs 控告 LaBeouf 與 2025 年和解、Freddie Gibbs 奧地利性侵指控獲判無罪、Wunderlich 意外過世、Geoff Mann 癌逝、Demonaz 肌腱炎與 Abbath 商標爭議、Zauner 母親罹癌過世、Greenwood 與 Dudu Tassa 的英國演出因 BDS 施壓取消、Savall 拒領國家音樂獎、Kesha 暴食症治療與 Dr. Luke 官司。Jimmy Giuffre 只有低優先一條，不改。
 - 主線審稿 2 處：Japanese Breakfast 卡池專輯名超量、Greenwood 連續年份句。
+
+### 題材補回：ar-u-005（2026-10-17）
+
+- 補查 33 位：add 22、none 11；改寫 22 位，補回 Eric B. & Rakim 合約官司與拆夥、Sulli 的網路霸凌與 2019 年過世、Wentz 輕生未遂、佐藤伸治 1999 年猝逝、Numan 亞斯伯格自述與印度扣留、Porter 母親病逝、Halsey 雙極性疾患與狼瘡、Newsom 聲帶結節、Bieber 用藥與 2014 年被捕、Juvenile 女兒遇害與廠牌糾紛、Richter 心臟病猝逝、Meighan 家暴認罪離團、KAYTRANADA 出櫃、Limp Bizkit 的 Woodstock '99 與雪梨致死事件、DeMarco 缺席的父親、Masta Ace 多發性硬化症、Miley Cyrus VMA 爭議、Monica 男友在她面前輕生、Liam Payne 2024 年過世、Spencer Smith 成癮離團、Playboi Carti 2020 年被捕、Queensrÿche 團名官司。
+- 主線審稿 10 處：Numan、Newsom、Bieber、Kasabian 連續年份句；One Direction 年份超量；Newsom 卡池專輯名超量；f(x) 補空格；字數壓回 250。
