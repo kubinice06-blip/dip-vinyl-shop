@@ -1,0 +1,802 @@
+[
+ {
+  "id": "moodymann|silentintroduction",
+  "x": 3.3,
+  "y": 1.1,
+  "z": 1.3,
+  "why": "中速深浩室，粗糙取樣、低頻厚、靈魂樂人聲溫熱",
+  "conf": "high"
+ },
+ {
+  "id": "moritz von oswald trio|horizontal structures",
+  "x": 2.4,
+  "y": 1.0,
+  "z": -0.4,
+  "why": "慢速即興 dub techno，打擊樂細碎、殘響深、克制",
+  "conf": "mid"
+ },
+ {
+  "id": "moritz von oswald trio|vertical ascent",
+  "x": 2.5,
+  "y": 1.2,
+  "z": -0.6,
+  "why": "緩慢鼓組與 dub 回聲層疊，低頻沉、夜色冷調",
+  "conf": "mid"
+ },
+ {
+  "id": "morton subotnick|the wild bull",
+  "x": 2.4,
+  "y": 0.4,
+  "z": -1.0,
+  "why": "Buchla 合成器怪異音色，時疏時密，陰沉不安",
+  "conf": "mid"
+ },
+ {
+  "id": "muslimgauze|buddhist on fire",
+  "x": 2.8,
+  "y": 1.4,
+  "z": -1.2,
+  "why": "早期工業磁帶循環與鼓機，粗糙失真、陰冷",
+  "conf": "low"
+ },
+ {
+  "id": "muslimgauze|kabul",
+  "x": 2.6,
+  "y": 1.2,
+  "z": -1.3,
+  "why": "早期極簡工業電子，低保真循環、單調陰暗",
+  "conf": "low"
+ },
+ {
+  "id": "nocturnal emissions|fruiting body",
+  "x": 3.0,
+  "y": 1.5,
+  "z": -1.3,
+  "why": "工業節奏與噪音拼貼，粗糙密集、疏離冷硬",
+  "conf": "low"
+ },
+ {
+  "id": "nurse with wound|soliloquy for lilith",
+  "x": 1.0,
+  "y": 0.8,
+  "z": -0.8,
+  "why": "回授嗡鳴長時間靜止漂浮，霧狀低頻、幽閉",
+  "conf": "high"
+ },
+ {
+  "id": "nurse with wound|thunder perfect mind",
+  "x": 1.8,
+  "y": 1.2,
+  "z": -1.4,
+  "why": "緩慢循環拼貼與長篇陰暗 drone，殘響厚重",
+  "conf": "mid"
+ },
+ {
+  "id": "omar-s|thank you for letting me be myself",
+  "x": 3.7,
+  "y": 0.8,
+  "z": 0.6,
+  "why": "粗糙底特律浩室，鼓機直拍跳動、低保真帶人味",
+  "conf": "mid"
+ },
+ {
+  "id": "oval|94diskont",
+  "x": 1.6,
+  "y": 0.2,
+  "z": 0.4,
+  "why": "跳針 CD 碎片織成柔和長波，閃爍溫潤、幾乎無拍",
+  "conf": "high"
+ },
+ {
+  "id": "oval|dok",
+  "x": 1.5,
+  "y": 0.5,
+  "z": -0.4,
+  "why": "更抽象的數位碎片與嗡鳴，靜止、灰調疏離",
+  "conf": "mid"
+ },
+ {
+  "id": "oval|ovalcommers",
+  "x": 1.6,
+  "y": 0.5,
+  "z": -0.5,
+  "why": "glitch 碎屑緩慢流動，低密度、數位冷感",
+  "conf": "low"
+ },
+ {
+  "id": "oval|ovalprocess",
+  "x": 1.8,
+  "y": 0.6,
+  "z": -0.6,
+  "why": "軟體處理的斷裂音塊，稍噪、無明確拍子",
+  "conf": "low"
+ },
+ {
+  "id": "oval|popp",
+  "x": 3.4,
+  "y": -0.2,
+  "z": 0.5,
+  "why": "明亮跳動的 glitch 流行節拍，音色清脆輕快",
+  "conf": "low"
+ },
+ {
+  "id": "oval|scis",
+  "x": 2.8,
+  "y": 0.0,
+  "z": 0.2,
+  "why": "細碎原聲質感切片密集交錯，中速、乾淨偏中性",
+  "conf": "low"
+ },
+ {
+  "id": "oval|wohnton",
+  "x": 2.4,
+  "y": 0.0,
+  "z": 0.3,
+  "why": "早期帶人聲的電子歌曲，夢幻柔和、中慢速",
+  "conf": "low"
+ },
+ {
+  "id": "palais schaumburg|palais schaumburg",
+  "x": 3.9,
+  "y": 0.4,
+  "z": -0.3,
+  "why": "新德國浪潮，彆扭放克節奏、小號與尖銳吉他",
+  "conf": "mid"
+ },
+ {
+  "id": "pan sonic|gravitoni",
+  "x": 3.4,
+  "y": 1.9,
+  "z": -1.7,
+  "why": "巨大低頻與工業噪音脈衝，壓迫金屬冷硬",
+  "conf": "mid"
+ },
+ {
+  "id": "pan sonic|katodivaihe - cathodephase",
+  "x": 2.6,
+  "y": 1.5,
+  "z": -1.6,
+  "why": "正弦波與嗡鳴偏氛圍，低頻壓重、冰冷空曠",
+  "conf": "mid"
+ },
+ {
+  "id": "pan sonic|kesto (234.48:4)",
+  "x": 2.6,
+  "y": 1.6,
+  "z": -1.7,
+  "why": "四碟橫跨節拍、噪音與長 drone，整體厚重冰冷",
+  "conf": "mid"
+ },
+ {
+  "id": "pan sonic|vakio",
+  "x": 3.0,
+  "y": 0.8,
+  "z": -1.6,
+  "why": "極簡正弦脈衝 techno，留白多、次低頻沉、冷",
+  "conf": "mid"
+ },
+ {
+  "id": "pépé bradock|burning",
+  "x": 3.3,
+  "y": 0.7,
+  "z": 1.2,
+  "why": "濾波爵士取樣深浩室，律動柔軟、溫暖帶塵",
+  "conf": "mid"
+ },
+ {
+  "id": "pete namlook & mixmaster morris|dreamfish",
+  "x": 1.3,
+  "y": -0.6,
+  "z": 0.6,
+  "why": "漂浮合成器長音與自然音效，幾乎無拍、舒緩",
+  "conf": "mid"
+ },
+ {
+  "id": "peverelist|tessellations",
+  "x": 3.5,
+  "y": 1.2,
+  "z": -0.8,
+  "why": "英式低音 techno，切分鼓點與厚實次低頻",
+  "conf": "low"
+ },
+ {
+  "id": "phuture|we are phuture",
+  "x": 4.0,
+  "y": 0.9,
+  "z": -0.8,
+  "why": "303 酸性音色扭動、鼓機直拍，催眠帶冷",
+  "conf": "mid"
+ },
+ {
+  "id": "pierre henry|le voyage",
+  "x": 1.6,
+  "y": 0.8,
+  "z": -1.0,
+  "why": "具象音樂慢速呼吸般音塊與嗡鳴，幽冥冷寂",
+  "conf": "mid"
+ },
+ {
+  "id": "pierre henry|messe de liverpool",
+  "x": 2.2,
+  "y": 0.9,
+  "z": -0.8,
+  "why": "電子處理人聲與噪音的彌撒，詭譎稠密",
+  "conf": "low"
+ },
+ {
+  "id": "pierre henry|messe pour le temps présent",
+  "x": 3.6,
+  "y": 0.2,
+  "z": 0.6,
+  "why": "迷幻搖滾律動加電子音效，吉他貝斯輕快好動",
+  "conf": "high"
+ },
+ {
+  "id": "pole|fading",
+  "x": 2.0,
+  "y": 1.6,
+  "z": -1.0,
+  "why": "dub 爆裂雜音與沉低頻，慢速，旋律陰鬱",
+  "conf": "mid"
+ },
+ {
+  "id": "pole|tempus",
+  "x": 2.2,
+  "y": 1.5,
+  "z": -0.9,
+  "why": "爆裂底噪與 dub 低頻，節拍稍多仍慢、灰冷",
+  "conf": "low"
+ },
+ {
+  "id": "popol vuh|hosianna mantra",
+  "x": 1.6,
+  "y": -1.5,
+  "z": 1.0,
+  "why": "鋼琴、木吉他與女高音，聖潔留白、溫柔",
+  "conf": "high"
+ },
+ {
+  "id": "porter ricks|porter ricks",
+  "x": 3.0,
+  "y": 1.7,
+  "z": -1.3,
+  "why": "水下般 dub techno，悶厚低頻與殘響，冷",
+  "conf": "mid"
+ },
+ {
+  "id": "regis|gymnastics",
+  "x": 4.4,
+  "y": 1.7,
+  "z": -1.6,
+  "why": "伯明罕硬派 techno，粗糲失真鼓、快且無情",
+  "conf": "mid"
+ },
+ {
+  "id": "rei harakami|わすれもの",
+  "x": 2.4,
+  "y": -0.8,
+  "z": 1.2,
+  "why": "水滴般柔軟合成器旋律，慢中速、溫潤懷舊",
+  "conf": "mid"
+ },
+ {
+  "id": "rhythim is rhythim|it is what it is",
+  "x": 4.1,
+  "y": -0.2,
+  "z": 0.3,
+  "why": "底特律 techno 快拍、合成弦樂明亮奔放",
+  "conf": "mid"
+ },
+ {
+  "id": "rhythim is rhythim|nude photo",
+  "x": 4.2,
+  "y": 0.0,
+  "z": 0.0,
+  "why": "急促鼓機與迴旋合成器，乾淨利落、中性",
+  "conf": "mid"
+ },
+ {
+  "id": "richie hawtin|de9: transitions",
+  "x": 3.4,
+  "y": 0.3,
+  "z": -1.3,
+  "why": "極簡 techno 混音，喀嚓細點與長段過渡、冷",
+  "conf": "mid"
+ },
+ {
+  "id": "robert hood|internal empire",
+  "x": 4.0,
+  "y": 0.4,
+  "z": -1.2,
+  "why": "極簡 techno 重複鼓點，骨架精瘦、機械冷硬",
+  "conf": "mid"
+ },
+ {
+  "id": "robert hood|mirror man",
+  "x": 3.9,
+  "y": 0.4,
+  "z": -0.3,
+  "why": "浩室與 techno 交錯的直拍律動，較有人味",
+  "conf": "low"
+ },
+ {
+  "id": "robert hood|motor: nighttime world 3",
+  "x": 3.0,
+  "y": 0.4,
+  "z": -1.0,
+  "why": "氛圍段與 techno 段交替，合成器憂鬱、城市夜",
+  "conf": "mid"
+ },
+ {
+  "id": "robert hood|nighttime world, volume 1",
+  "x": 2.8,
+  "y": 0.2,
+  "z": -0.8,
+  "why": "偏聆聽向電子小品，中慢速、夜色冷調",
+  "conf": "low"
+ },
+ {
+  "id": "robert hood|omega",
+  "x": 3.8,
+  "y": 0.6,
+  "z": -1.3,
+  "why": "反烏托邦感極簡 techno，重複推進、陰冷",
+  "conf": "low"
+ },
+ {
+  "id": "robert hood|point blank",
+  "x": 4.0,
+  "y": 0.5,
+  "z": -1.1,
+  "why": "緊湊極簡 techno 鼓點循環，乾硬機械",
+  "conf": "low"
+ },
+ {
+  "id": "ron trent|lift off",
+  "x": 3.1,
+  "y": -0.2,
+  "z": 1.2,
+  "why": "深浩室溫柔和弦與打擊樂，中速、明亮溫暖",
+  "conf": "low"
+ },
+ {
+  "id": "ron trent|primitive arts",
+  "x": 3.3,
+  "y": 0.2,
+  "z": 1.1,
+  "why": "非洲打擊樂感深浩室，律動柔韌、溫熱",
+  "conf": "low"
+ },
+ {
+  "id": "ron trent|what do the stars say to you",
+  "x": 2.6,
+  "y": -0.8,
+  "z": 1.4,
+  "why": "爵士融合與 balearic 真樂器，舒展溫暖",
+  "conf": "mid"
+ },
+ {
+  "id": "roni size|take kontrol",
+  "x": 4.4,
+  "y": 0.8,
+  "z": 0.0,
+  "why": "drum'n'bass 快速碎拍與厚貝斯線，衝勁足",
+  "conf": "low"
+ },
+ {
+  "id": "rp boo|established!",
+  "x": 4.4,
+  "y": 0.5,
+  "z": 0.2,
+  "why": "160 BPM footwork，切碎取樣與密集鼓點",
+  "conf": "mid"
+ },
+ {
+  "id": "rp boo|legacy",
+  "x": 4.4,
+  "y": 0.4,
+  "z": 0.3,
+  "why": "footwork 急促切分鼓機、人聲切片反覆",
+  "conf": "mid"
+ },
+ {
+  "id": "ruth white|flowers of evil",
+  "x": 2.0,
+  "y": 0.4,
+  "z": -1.3,
+  "why": "Moog 詭異音色伴處理過的朗誦，緩慢陰森",
+  "conf": "mid"
+ },
+ {
+  "id": "ryoji ikeda|+--",
+  "x": 2.0,
+  "y": -0.6,
+  "z": -1.8,
+  "why": "正弦純音與極端頻率點擊，大量留白、無人味",
+  "conf": "mid"
+ },
+ {
+  "id": "ryoji ikeda|0°c",
+  "x": 2.6,
+  "y": -0.5,
+  "z": -1.8,
+  "why": "精密點擊與脈衝排出節奏，乾淨銳利、冰冷",
+  "conf": "mid"
+ },
+ {
+  "id": "ryoji ikeda|1000 fragments",
+  "x": 1.8,
+  "y": -0.2,
+  "z": -1.5,
+  "why": "早期聲響碎片拼貼，稀疏靜止、冷調",
+  "conf": "low"
+ },
+ {
+  "id": "ryoji ikeda|matrix",
+  "x": 1.3,
+  "y": -0.9,
+  "z": -1.8,
+  "why": "正弦波空間干涉，幾乎靜止、純淨冰冷",
+  "conf": "mid"
+ },
+ {
+  "id": "ryoji ikeda|supercodex",
+  "x": 3.5,
+  "y": 0.3,
+  "z": -1.8,
+  "why": "數據雜訊排成快速節拍，銳利高頻、機械",
+  "conf": "mid"
+ },
+ {
+  "id": "ryoji ikeda|test pattern",
+  "x": 4.3,
+  "y": 0.9,
+  "z": -1.9,
+  "why": "條碼化噪音高速連射，密集刺耳、毫無人味",
+  "conf": "mid"
+ },
+ {
+  "id": "ryoji ikeda|ultratronics",
+  "x": 3.6,
+  "y": 0.6,
+  "z": -1.8,
+  "why": "高速數位脈衝與噪音節奏，精密冷冽",
+  "conf": "low"
+ },
+ {
+  "id": "sasha & john digweed|communicate",
+  "x": 3.8,
+  "y": 0.3,
+  "z": -0.3,
+  "why": "progressive house 長混音，推進式直拍、夜店",
+  "conf": "mid"
+ },
+ {
+  "id": "sasha & john digweed|northern exposure 2",
+  "x": 3.5,
+  "y": 0.2,
+  "z": -0.1,
+  "why": "氛圍開場漸入 progressive，合成器鋪陳寬廣",
+  "conf": "mid"
+ },
+ {
+  "id": "sasha & john digweed|northern exposure: expeditions",
+  "x": 3.6,
+  "y": 0.2,
+  "z": -0.2,
+  "why": "progressive／trance 長混音，合成器層疊推進",
+  "conf": "low"
+ },
+ {
+  "id": "scanner|mass observation",
+  "x": 2.4,
+  "y": 0.5,
+  "z": -1.1,
+  "why": "竊聽電話人聲疊在氛圍節拍上，疏離夜感",
+  "conf": "mid"
+ },
+ {
+  "id": "seefeel|(ch-vox)",
+  "x": 1.4,
+  "y": 1.0,
+  "z": -1.3,
+  "why": "抽象低頻嗡鳴與扭曲迴圈，幾乎無拍、幽暗",
+  "conf": "mid"
+ },
+ {
+  "id": "seefeel|sol.hz",
+  "x": 2.4,
+  "y": 1.2,
+  "z": -0.5,
+  "why": "推測為 dub 化吉他音牆與電子節拍，霧狀",
+  "conf": "low"
+ },
+ {
+  "id": "severed heads|city slab horror",
+  "x": 3.4,
+  "y": 0.8,
+  "z": -0.6,
+  "why": "磁帶循環與工業合成流行，怪誕節奏、粗糙",
+  "conf": "low"
+ },
+ {
+  "id": "shackleton|music for the quiet hour",
+  "x": 2.6,
+  "y": 1.3,
+  "z": -1.5,
+  "why": "長篇不祥打擊樂與朗誦，次低頻沉、陰森",
+  "conf": "mid"
+ },
+ {
+  "id": "shackleton|music for the quiet hour - the drawbar organ eps",
+  "x": 2.8,
+  "y": 1.2,
+  "z": -1.2,
+  "why": "風琴循環與複節奏打擊，催眠、暗沉",
+  "conf": "mid"
+ },
+ {
+  "id": "shackleton|three eps",
+  "x": 3.2,
+  "y": 1.4,
+  "z": -1.3,
+  "why": "複節奏手鼓與深沉次低頻，儀式感陰暗",
+  "conf": "mid"
+ },
+ {
+  "id": "silent servant|negative fascination",
+  "x": 3.6,
+  "y": 1.3,
+  "z": -1.7,
+  "why": "暗潮 techno，冷硬合成器與失真鼓、哥德冷",
+  "conf": "mid"
+ },
+ {
+  "id": "spk|information overload unit",
+  "x": 3.6,
+  "y": 1.9,
+  "z": -1.9,
+  "why": "刺耳工業噪音與嘶吼，失真牆、極度冰冷",
+  "conf": "mid"
+ },
+ {
+  "id": "spring heel jack|68 million shades...",
+  "x": 3.8,
+  "y": 0.3,
+  "z": 0.4,
+  "why": "爵士味 drum'n'bass，快碎拍配柔和和聲",
+  "conf": "mid"
+ },
+ {
+  "id": "sterling void|it's all right",
+  "x": 3.8,
+  "y": -0.4,
+  "z": 1.6,
+  "why": "芝加哥浩室直拍、鋼琴與歌唱，明亮振奮",
+  "conf": "low"
+ },
+ {
+  "id": "steve roach|structures from silence",
+  "x": 1.0,
+  "y": -1.2,
+  "z": 0.4,
+  "why": "緩慢合成器長音如呼吸，大片留白、安寧",
+  "conf": "high"
+ },
+ {
+  "id": "suba|são paulo confessions",
+  "x": 2.6,
+  "y": 0.0,
+  "z": 0.8,
+  "why": "電子化 bossa 與巴西打擊，柔軟律動、溫潤",
+  "conf": "mid"
+ },
+ {
+  "id": "surgeon|balance",
+  "x": 4.6,
+  "y": 1.6,
+  "z": -1.4,
+  "why": "硬派 techno 混音，快速失真鼓密集不歇",
+  "conf": "mid"
+ },
+ {
+  "id": "surgeon|basictonalvocabulary",
+  "x": 4.4,
+  "y": 1.4,
+  "z": -1.5,
+  "why": "粗糲重複的工業味 techno，鼓猛音色冷",
+  "conf": "mid"
+ },
+ {
+  "id": "surgeon|force + form",
+  "x": 4.5,
+  "y": 1.6,
+  "z": -1.6,
+  "why": "高密度硬 techno，失真打擊連續轟炸",
+  "conf": "mid"
+ },
+ {
+  "id": "susumu yokota|sakura",
+  "x": 1.7,
+  "y": -1.0,
+  "z": 1.1,
+  "why": "柔和循環與吉他、鋼琴碎片，慢、溫暖輕盈",
+  "conf": "high"
+ },
+ {
+  "id": "susumu yokota|symbol",
+  "x": 1.8,
+  "y": -0.6,
+  "z": 0.6,
+  "why": "古典樂取樣拼貼成慢速氛圍，夢幻柔和",
+  "conf": "mid"
+ },
+ {
+  "id": "suzanne ciani|buchla concerts 1975",
+  "x": 2.6,
+  "y": -0.6,
+  "z": 0.3,
+  "why": "Buchla 序列冒泡流動，音色清亮、中速",
+  "conf": "mid"
+ },
+ {
+  "id": "suzanne ciani|golden apples of the sun",
+  "x": 2.0,
+  "y": -0.9,
+  "z": 0.6,
+  "why": "Buchla 柔和起伏音型，留白多、明亮溫和",
+  "conf": "low"
+ },
+ {
+  "id": "suzanne ciani|live quadraphonic",
+  "x": 2.4,
+  "y": -0.5,
+  "z": 0.3,
+  "why": "現場 Buchla 序列如潮汐起落，清亮流動",
+  "conf": "mid"
+ },
+ {
+  "id": "t.power|the self evident truth of an intuitive mind",
+  "x": 3.6,
+  "y": 0.4,
+  "z": 0.2,
+  "why": "氛圍爵士味 jungle，快碎拍上鋪柔和合成器",
+  "conf": "low"
+ },
+ {
+  "id": "terrence dixon|from the far future",
+  "x": 3.6,
+  "y": 0.2,
+  "z": -1.3,
+  "why": "極簡底特律 techno，稀疏重複、機械冷",
+  "conf": "low"
+ },
+ {
+  "id": "tetsu inoue|ambiant otaku",
+  "x": 1.2,
+  "y": -0.9,
+  "z": 0.3,
+  "why": "緩慢漂浮的合成器氛圍，幾乎無拍、輕柔",
+  "conf": "mid"
+ },
+ {
+  "id": "the 7th plain|the 4 cornered room",
+  "x": 2.7,
+  "y": -0.3,
+  "z": 0.0,
+  "why": "旋律性氛圍 techno，柔和合成器與輕鼓機",
+  "conf": "mid"
+ },
+ {
+  "id": "the art of noise|in no sense? nonsense!",
+  "x": 3.1,
+  "y": 0.1,
+  "z": 0.4,
+  "why": "管弦取樣與合成器拼貼，風格跳躍、中速",
+  "conf": "low"
+ },
+ {
+  "id": "the art of noise|in visible silence",
+  "x": 3.5,
+  "y": 0.2,
+  "z": 0.3,
+  "why": "重擊取樣鼓與合成器流行，俐落有勁",
+  "conf": "mid"
+ },
+ {
+  "id": "the art of noise|into battle with the art of noise",
+  "x": 3.2,
+  "y": 0.4,
+  "z": -0.2,
+  "why": "Fairlight 取樣碎拍與噪音拼貼，冷峻實驗",
+  "conf": "mid"
+ },
+ {
+  "id": "the black dog|music for photographers",
+  "x": 2.2,
+  "y": 0.2,
+  "z": -1.0,
+  "why": "灰調氛圍電子與緩慢節拍，空曠疏離",
+  "conf": "low"
+ },
+ {
+  "id": "the black dog|the grey album",
+  "x": 2.6,
+  "y": 0.3,
+  "z": -1.1,
+  "why": "冷色合成器與中慢速 IDM 節拍，陰鬱灰暗",
+  "conf": "low"
+ },
+ {
+  "id": "the dust brothers|fight club: original motion picture score",
+  "x": 3.7,
+  "y": 1.3,
+  "z": -0.9,
+  "why": "big beat 碎拍與扭曲低音，焦躁陰暗",
+  "conf": "mid"
+ },
+ {
+  "id": "the future sound of london|isdn",
+  "x": 2.8,
+  "y": 0.9,
+  "z": -0.6,
+  "why": "現場傳輸的氛圍碎拍，層疊音效、迷離偏暗",
+  "conf": "mid"
+ },
+ {
+  "id": "the hafler trio|negentropy",
+  "x": 1.2,
+  "y": 0.5,
+  "z": -1.2,
+  "why": "抽象聲響與低沉 drone，靜止緩慢、疏離",
+  "conf": "low"
+ },
+ {
+  "id": "the higher intelligence agency|colourform",
+  "x": 2.3,
+  "y": 0.3,
+  "z": -0.2,
+  "why": "氛圍 dub 電子，柔和低頻與慢節拍",
+  "conf": "low"
+ },
+ {
+  "id": "the infinity project|feeling weird",
+  "x": 4.5,
+  "y": 0.6,
+  "z": -0.6,
+  "why": "迷幻 trance 快速直拍與扭動 acid 旋律",
+  "conf": "low"
+ },
+ {
+  "id": "the irresistible force|flying high",
+  "x": 1.8,
+  "y": -0.3,
+  "z": 0.8,
+  "why": "chill out 氛圍，慢拍與漂浮合成器、悠哉",
+  "conf": "mid"
+ },
+ {
+  "id": "the irresistible force|global chillage",
+  "x": 1.9,
+  "y": -0.3,
+  "z": 0.8,
+  "why": "慵懶氛圍浩室與取樣，鬆弛溫和",
+  "conf": "mid"
+ },
+ {
+  "id": "the new blockaders|changez les blockeurs",
+  "x": 3.8,
+  "y": 2.0,
+  "z": -1.8,
+  "why": "金屬刮擦的純噪音牆，全頻淹沒、無人味",
+  "conf": "mid"
+ },
+ {
+  "id": "the residents|the third reich 'n roll",
+  "x": 3.6,
+  "y": 1.2,
+  "z": -0.5,
+  "why": "變形翻唱拼貼，雜亂失真與怪聲、躁動",
+  "conf": "mid"
+ }
+]

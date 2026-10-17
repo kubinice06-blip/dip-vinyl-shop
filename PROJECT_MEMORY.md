@@ -1,5 +1,111 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-17｜dip-vinyl-shop｜情緒八格「慵懶」改名「恍惚」；修 In Orbit 評分 id
+
+- **改動**：店主裁定靜重暖格改叫「恍惚」（id `languid` 不變，座標門檻與分布不動）。起因是主線驗證出三格薄的根因：說明書 Y 軸量製作髒度，Al Green、Marvin Gaye、Anita Baker 等店主心中的慵懶盤全落放鬆，落慵懶的是 dusty 嘻哈、dub、shoegaze；改名讓格名對上內容。名稱表、實驗頁、星圖原型、BRIEF、兩份規劃書、補充計畫改名，店主原話引用保留；anchors／四批 merge／priors／scale 重跑。順帶把 `score3000` 的《In Orbit》工單與輸出檔 id 改成新掛名，否則重跑合併會蓋掉 10-16 的改名、全池少一張評分。星圖預覽 Version 14。Y 軸要不要改成「重量感」、techno 歸冷冽或亢奮，留店主決定（見 rulings）。
+- **主要檔案**：`batch-progress/mood-axes/{build-anchors.mjs,anchors-src.mjs,anchors-v1.json,priors-v0-report.json,scale-v0-report.json,rulings.md}`、`batch-progress/mood-axes/score*/merge-report.json`、`batch-progress/mood-axes/score3000/{chunk-15.json,out/chunk-15.json,cards.json,scored-3000.json}`、`batch-progress/mood-axes/score500/BRIEF.md`、`data/mood/{card-moods-v0.json,scale-v0.json}`、`starmap-lab.html`、`MOOD_ENERGY_PLAN.md`、`MOOD_SCALE_PLAN.md`、`batch-progress/EXPANSION-PLAN-mood-thin-cells.md`
+- **驗證**：八格計數與改名前逐格相同（恍惚 589）；錨點 104/104 同格；全池模型評分 19,012、暫估 0；星圖 swiftshader 桌機／手機 0 錯誤。
+
+### 2026-10-16｜dip-vinyl-shop｜情緒三軸：評完剩下 9,120 張，全池 19,116 張都有模型評分
+
+- **改動**：店主「繼續幫剩下的專輯評分」。`score-rest/select.mjs` 把剩下全部按曲風與藝人排序切 92 份，最多 6 支代理接力打分；主線關鍵字審稿改 6 張（`score-rest/review.json`）。`build-priors.mjs` 讀四批評分，全池 104 錨點＋19,012 模型評分，子曲風暫估歸零。八格：放鬆 5,102、平靜 1,309、慵懶 589、頹靡 970、雀躍 5,867、冷冽 873、沸騰 1,900、亢奮 2,506。**這批低把握 43%**（全池 31%），集中在冷門日本爵士、東南亞／台日老唱片、私壓迷幻、福音小眾與 2025–26 新盤。代理回報的卡池問題（含六類系統性問題）寫在 `score-rest/DATA-ISSUES.md`，未處理。私人星圖預覽改全池（Version 13）。
+- **主要檔案**：`batch-progress/mood-axes/score-rest/{select.mjs,merge.mjs,review.json,scored-rest.json,merge-report.json,cards.json,chunk-*.json,out/*.json,DATA-ISSUES.md}`、`batch-progress/mood-axes/{build-priors.mjs,priors-v0-report.json,scale-v0-report.json,rulings.md}`、`data/mood/{card-moods-v0.json,scale-v0.json}`
+- **驗證**：merge 9,120/9,120、0 錯誤、0 外來 id、四批 0 重複；錨點 104/104 同格；星圖 swiftshader 桌機／手機 0 錯誤。
+
+### 2026-10-16｜dip-vinyl-shop｜卡池資料修正套用完成（卡池 19,121 → 19,116），情緒三軸重建
+
+- **改動**：照 `audits/pool-fix-20261016/README.md`「怎麼套用」跑完七行：`apply.mjs --write`（seed 刪重複 5、曲風 16、年份 2、Cheap Thrills 掛名與三軸）→ `build-genre-tree.mjs --write` → `--live`（KV 寫 22 鍵回讀一致，In Orbit 改名 Clark Terry with Thelonious Monk 套到 seed 與 apple-audio-map）→ `migrate-card-catalog-ids.mjs`（card_catalog 搬 1 筆，舊文件保留）→ `push-card-catalog-patches.mjs`（Cheap Thrills 上架欄位 1 筆）→ `--verify`。
+- **修腳本**：照 README 順序先 `--write` 再 `--live`，`--live` 會重查已刪的重複卡而中止；改成 `--live` 不跑 seed 比對（KV 終態只依 KV 計算）。
+- **子曲風**：`--write` 時 In Orbit 還沒改名，子曲風表留著舊鍵。把 `--live` 寫進 KV 的新 mapgenre3（hard bop／bebop／flugelhorn）放進本機快取 `data/rawgenres-cache.json`、拿掉舊鍵，再跑一次 `build-genre-tree.mjs --write`（不 `--pull`）；現為 jazz/bop。
+- **情緒三軸**：`score3000/scored-3000.json` 的 In Orbit 改 id 與 artist；重跑 `build-priors.mjs` 與 `build-scale.mjs v0`。已評張數 9,896 → 9,892（被刪的重複卡有 4 張評過），錨點同格 104/104。
+- **未做**：`kv-deletes-pending.json` 的 18 個舊 KV 鍵沒刪（卡池已不指向，留著無害）；card_catalog 舊 In Orbit 文件未刪。
+- **主要檔案**：`seed_cards.json`、`genre-tree.json`、`card-subgenres.json`、`data/apple-audio-map-v1.json`、`data/mood/{card-moods-v0,scale-v0}.json`、`batch-progress/mood-axes/{priors-v0-report,scale-v0-report}.json`、`batch-progress/mood-axes/score3000/scored-3000.json`、`audits/pool-fix-20261016/`（apply.mjs 修正、套用清單、KV 與 Firestore 備份）
+- **驗證**：`apply.mjs --verify`「KV 寫 19／刪 18、seed 檢查：全部相符」；card_catalog 搬移逐筆相符；patch 成功 1／1。
+
+### 2026-10-16｜dip-vinyl-shop｜卡池資料修正定案（重複 5、曲風 16、年份 2、掛名 1），雲端權限擋下未套用
+
+- **改動**：店主「順便修掉」情緒評分時代理回報的卡池問題。主線查 KV、Firestore、MB 後定案，寫成 `audits/pool-fix-20261016/`（README＋套用腳本，可乾跑／`--write` 本機／`--live` 線上／`--verify`）。重複卡另掃出 Nick Cave《Murder Ballads》與 Big Brother《Cheap Thrills》（兩張都在殿堂）。Happy End 兩組留はっぴいえんど（依 ALBUM_ONBOARDING 第 91 行卡池用假名本名；稽核檔「全假名改羅馬字」是簡介內文規則，混用了）。Clark《Cave Dog》確有其碟（MB 5df67f10），代理判錯不改。**雲端執行時 KV 寫入、KV 刪除、改 seed 三次被權限擋下，seed／KV／Firestore 都沒動**，等店主決定在本機跑或放行。
+- **主要檔案**：`audits/pool-fix-20261016/{README.md,apply.mjs}`
+- **驗證**：乾跑讀 KV 定位全部命中：seed 刪 5 列、改 20 列；KV 寫 22 鍵（含 3 鍵合併）、舊鍵 18 個列待刪。工作區除新目錄外 0 改動。
+
+### 2026-10-15｜dip-vinyl-shop｜情緒三軸：再評 3,000 張、接力補到一萬張，星圖預覽換成一萬張
+
+- **改動**：店主「再評三千張」「直接跑到一萬張 接力跑」。`score3000/select.mjs` 依全池曲風比例挑 3,000 張（含 300 亞洲名額），`score10k/select.mjs` 挑 6,396 張補到 10,000（知名度＝經典度×2 − 冷門度、亞洲加權 1.3）；30＋64 份工單由最多 6 支代理接力打分，主線關鍵字掃 49 張矛盾、改 4 張質地（`score10k/review.json`）。`build-priors.mjs` 讀三批評分，全池 19,121 張中 10,000 張脫離子曲風暫估。一萬張八格：放鬆 2,787、平靜 710、慵懶 305、頹靡 497、雀躍 3,032、冷冽 467、沸騰 936、亢奮 1,266。**score10k 低把握 1,617 張（25%）**，集中在昭和歌謠／演歌、韓國八〇–九〇、老粵語國語、日本冷門爵士、世界音樂老錄音與 2025–26 新盤，品質接近暫估。代理回報的卡池重複、曲風標錯、年份疑誤記在 `rulings.md`，未處理。私人星圖預覽改一萬張（Version 12），預設亮 600；未點亮的星在著色器剔除、透明度收斂後停止上傳。
+- **主要檔案**：`batch-progress/mood-axes/score3000/*`、`batch-progress/mood-axes/score10k/{select.mjs,merge.mjs,review.json,scored-10k.json,merge-report.json,cards.json,chunk-*.json,out/*.json}`、`batch-progress/mood-axes/{build-priors.mjs,priors-v0-report.json,scale-v0-report.json,rulings.md}`、`data/mood/{card-moods-v0.json,scale-v0.json}`
+- **驗證**：merge 3,000/3,000 與 6,396/6,396 皆 0 錯誤、0 外來 id、跨批 0 重複；錨點 104/104 同格；swiftshader 下星圖桌機／手機 0 錯誤，一萬張版幀率 8／7（舊 3,604 張版 6／5），開卡簡介正常載入。
+
+### 2026-10-15｜dip-vinyl-shop｜情緒八格「要死不活」改名「慵懶」；星圖封面縮到跟星星一樣小
+
+- **改動**：店主裁定靜重暖格改名「慵懶」（id `languid` 不變，座標門檻不動）：`build-anchors.mjs` 名稱表、`starmap-lab.html`、`score500/BRIEF.md`、`MOOD_ENERGY_PLAN.md`、`MOOD_SCALE_PLAN.md` 改名，anchors-v1／priors／scale／merge 四個產出重跑（分布不變）。舊紀錄與 add-20261014 引用店主原話者保留。星圖原型飄的封面改 6–18px、上限 400 張、無封面者純色小方塊，重新發布（Version 10）。
+- **主要檔案**：`batch-progress/mood-axes/{build-anchors.mjs,anchors-src.mjs,anchors-v1.json,priors-v0-report.json,scale-v0-report.json,rulings.md}`、`batch-progress/mood-axes/score500/{BRIEF.md,merge-report.json}`、`data/mood/{card-moods-v0.json,scale-v0.json}`、`starmap-lab.html`、`MOOD_ENERGY_PLAN.md`、`MOOD_SCALE_PLAN.md`
+- **驗證**：build-anchors 104/104 零落差；repo 內只剩歷史紀錄與店主原話引用含舊名；星圖原型桌機／手機 0 錯誤。
+
+### 2026-10-15｜dip-vinyl-shop｜星圖原型：飄的封面改很小很迷你
+
+- **改動**：店主「專輯封面要很小很迷你」。飄的封面尺寸 26–124px → 12–44px，改用 Spotify 64px 小圖，同時最多 260 張，星空背景保留可見；重新發布（Version 9）。計畫文件 §4.1 同步。
+- **主要檔案**：`MOOD_ENERGY_PLAN.md`
+- **驗證**：本機 Chromium 桌機／手機拉近狀態 0 錯誤（260／143 張封面）。
+
+### 2026-10-15｜dip-vinyl-shop｜星圖原型：八格配色規則、拉近變封面、點星開黑底專輯卡
+
+- **改動**：店主三項要求。(1) 顏色改依八格、有規則：色相看冷暖×輕重（暖輕金黃、暖重橘紅、冷輕青、冷重紫），明暗看能量（靜深躁亮，同格內越躁越亮）；星雲、格名、面板同一套，不再依曲風上色。(2) 拉近時星星淡出、換成封面漂浮：DOM 圖層每幀投影定位，只建最近 150 張，各有慢速漂移動畫；Spotify 300px 圖、放大 640px。(3) 點星跳漂浮黑底專輯卡：版型照唱片櫃 cd-* 卡（等級、封面可放大、藝人／專輯／年份、舊三軸星、八格詞＋三軸值＋評分依據、固定簡介、Spotify 鈕、來源），手機改底部抽屜。604 張的封面與簡介以 curl 從 worker 預抓（全部命中 KV，無生成；30 張無封面）塞進頁面，重新發布（Version 8）。計畫文件 §4.1 同步。
+- **主要檔案**：`MOOD_ENERGY_PLAN.md`（原型 HTML 與抓資料腳本在 scratchpad／私人 Artifact，不進 repo）
+- **驗證**：本機 Chromium 桌機與手機：預設、拉近（150／143 張封面）、開卡、燈箱四個狀態 0 錯誤。
+
+### 2026-10-15｜dip-vinyl-shop｜情緒三軸：500 張主要專輯模型評分並上圖
+
+- **改動**：店主要「先評分五百張主要專輯 放上去看」。`score500/select.mjs` 從經典度 5 依曲風配額挑 440 張＋60 張亞洲名盤（排除錨點）；10 支代理各 50 張照評分說明書與 104 錨點校正表打 x/y/z＋理由＋把握度，主線審稿改 5 張（`review.json`）。八格：放鬆 148、平靜 26、要死不活 18、頹靡 21、雀躍 154、冷冽 32、沸騰 60、亢奮 41。拿這 500 張回測子曲風暫估：八格只對 43%、能量同側只 66%——全池其餘卡的格子仍不可靠。`build-priors.mjs` 加「模型評分」來源層，`card-moods-v0.json` 來源碼 0 暫估／1 錨點／2 模型評分；`starmap-lab.html` 顯示來源；私人星圖預覽換成 604 張已評分專輯。
+- **主要檔案**：`batch-progress/mood-axes/score500/{select.mjs,BRIEF.md,merge.mjs,review.json,scored-500.json,merge-report.json,cards.json,chunk-*.json,out/*.json}`、`batch-progress/mood-axes/{build-priors.mjs,rulings.md}`、`data/mood/{card-moods-v0.json,scale-v0.json}`、`starmap-lab.html`
+- **驗證**：merge 500/500、0 錯誤、各輸出檔 0 筆外來 id；能量對舊三軸 |r| ≤ 0.13；星圖預覽桌機與手機 0 錯誤。
+
+### 2026-10-15｜dip-vinyl-shop｜情緒八格回語意門檻：不為平均改屬性，平均改在抽卡層
+
+- **改動**：店主看過條件中位數的代價後裁定「不要為了平均而改變原本的屬性」。`build-scale.mjs` 移除條件中位數與折衷門檻，八格只看原始值對語意門檻（能量 3.0／質地 +0.5／色溫 0），錨點 104/104 同格；百分位 p 保留為後台數值與星圖定位，不決定格子。`starmap-lab.html` 拿掉切法切換鈕。分布不均改在抽卡層處理：抽某一格時八格等機率、薄格不足 300 張向相鄰格借卡、成就門檻按該格比例。`MOOD_SCALE_PLAN.md` 升 v1.3（§0、§1、§2 重寫，§2.4 記否決理由），`MOOD_ENERGY_PLAN.md` §1.2、§2、§6.2 同步。v0 全池八格 1.7%（頹靡）～31.7%（雀躍）。
+- **主要檔案**：`batch-progress/mood-axes/{build-scale.mjs,scale-v0-report.json,rulings.md}`、`data/mood/{scale-v0.json,card-moods-v0.json}`、`starmap-lab.html`、`MOOD_SCALE_PLAN.md`、`MOOD_ENERGY_PLAN.md`
+- **驗證**：錨點 104/104 同格；實驗頁假 Firebase 桌機與手機 0 錯誤，頁面八格計數與腳本一致。
+
+### 2026-10-15｜dip-vinyl-shop｜情緒三軸刻度階段 A：百分位、八格各 12.5%、實驗頁三種切法
+
+- **改動**：店主裁定數值留後台、其餘照 `MOOD_SCALE_PLAN.md`。新腳本 `build-scale.mjs` 把 v0 暫估座標換成全池百分位 0–100，用條件中位數切八格（各 2,390 張），輸出 `data/mood/scale-v0.json`（斷點＋門檻樹）並把 p 接進 `card-moods-v0.json`；`build-priors.mjs` 改兩位小數。**發現代價**：平均切法讓 104 錨點中 23 張換格（躁輕的色溫門檻落在 p75，NewJeans、《葉惠美》變冷冽；事後菸變頹靡），所以另存折衷（4.9%–22.9%、錨點 90/104）與語意門檻（1.6%–32.1%、104/104）兩組門檻；`starmap-lab.html` 改用百分位定位，加「八格切法」三鈕與「往中間收」開關，點星顯示後台數值。規劃書 v1.2 補 §2.4 實測，rulings 同步。
+- **主要檔案**：`batch-progress/mood-axes/{build-scale.mjs,build-priors.mjs,scale-v0-report.json,priors-v0-report.json,rulings.md}`、`data/mood/{scale-v0.json,card-moods-v0.json}`、`starmap-lab.html`、`MOOD_SCALE_PLAN.md`
+- **驗證**：八格各 2,390（±1）；前端門檻判斷重算全池 0 不一致、重跑結果相同；實驗頁假 Firebase 測桌機與手機 0 錯誤，三種切法的頁面計數與腳本一致。
+
+### 2026-10-15｜dip-vinyl-shop｜情緒三軸刻度與平均分布規劃書 `MOOD_SCALE_PLAN.md`
+
+- **改動**：店主要「分佈要平均、數值也要細分」，問 0–100 怎麼評斷。新檔定三件事：(1) 三層數字——產線原始值兩位小數（內部）、全池百分位 0–100 整數（前台與玩家）、八格 id（顯示詞）；百分位刻度表凍結成 `data/mood/scale-vN.json`，新卡內插不重算。(2) 八格各 12.5% 用**條件中位數**（先切能量、各半邊切質地、各四分切色溫，七個門檻）；實測三軸各自切 50 後八格仍是 3%–25%，因為能量～質地 0.54、質地～色溫 −0.49，三個獨立門檻壓不平。(3) 三軸評分說明書（人與模型共用，每級附例）、音訊／模型融合權重（X 0.6/0.4、Y 0.5/0.5、Z 0.2/0.8）、過關門檻（融合後每軸對錨點 Spearman ≥ 0.8、三軸同側 ≥ 85%、八格命中 ≥ 70%、盲測被騙 ≤ 10）。分階段 A（用 v0 暫估先做刻度與實驗頁）、B（正式產線後重凍結）；§6 是給下一個 Opus 工作階段的逐步工單。`MOOD_ENERGY_PLAN.md` §1.2、§2、附錄 C 加指標。
+- **主要檔案**：`MOOD_SCALE_PLAN.md`、`MOOD_ENERGY_PLAN.md`
+- **驗證**：純文件；八格 3%–25% 與相關係數由 `data/mood/card-moods-v0.json` 全池百分位化實算。
+
+### 2026-10-15｜dip-vinyl-shop｜情緒三軸 v0 子曲風先驗＋店主唱片櫃星圖實驗頁
+
+- **改動**：店主要「用我的唱片櫃收藏測試」星圖。雲端讀不到會員卡冊（規則只給本人與管理員），改做網站頁 `starmap-lab.html`（不掛連結、noindex、只開店主帳號）：登入後讀自己的唱片櫃，對上全池暫定座標畫立體星圖，時間軸照收進先後重播。全池座標由新腳本 `build-priors.mjs` 產生：116 個子曲風標籤各一組人工座標、卡取平均、硬蕊度微調、104 張錨點覆蓋，輸出 `data/mood/card-moods-v0.json`（19,121 張）。對錨點：三軸同側約八成、八格對 48/104；全池雀躍 6,195、放鬆 4,551、亢奮 3,173、沸騰 2,673、平靜 1,023、要死不活 851、冷冽 370、頹靡 285（先驗把兩端往中間拉）。只供實驗頁，不是正式分類。計畫文件 §3.4、§4 補段，rulings 記調參與天花板。
+- **主要檔案**：`starmap-lab.html`、`data/mood/card-moods-v0.json`、`batch-progress/mood-axes/{build-priors.mjs,priors-v0-report.json,rulings.md}`、`MOOD_ENERGY_PLAN.md`
+- **驗證**：本機 Chromium 以假 Firebase（350 張隨機卡＋1 張卡池外）測桌機與手機寬度 0 錯誤、統計正確。Google 登入只認正式網域，需合併上線後在 dipvinyl.tw/starmap-lab.html 實測。
+
+### 2026-10-15｜dip-vinyl-shop｜星圖原型：格名不加三軸代碼、補回三條細軸線
+
+- **改動**：店主指示「沸騰後面躁重暖不要寫」「三條軸線拉出細線條」。引力中心與卡片標籤只寫格名（「沸騰」），拿掉括號裡的「躁重暖」；三條軸線以極細線穿過中心、兩端淡出，外框與格子盒仍不畫。重新發布（Version 6）。計畫文件 §4.1 同步。
+- **主要檔案**：`MOOD_ENERGY_PLAN.md`（原型 HTML 在私人 Artifact，不進 repo）
+- **驗證**：本機 Chromium 桌機與手機寬度截圖 0 錯誤。
+
+### 2026-10-15｜dip-vinyl-shop｜星圖原型拿掉所有框線，改成星空
+
+- **改動**：店主指示「不用顯示框線 讓圖更像星空」。私人星圖預覽拿掉外框、三條軸線與八格線框盒；八格改成各一團星雲光暈（柔光貼圖、加色混合、格色），收藏越多越亮；背景換成 2,400 顆大小亮度不一、緩慢閃爍的遠景星與一條淡銀河帶。軸端只留文字標籤。重新發布（Version 5）。計畫文件 §4.1、§6.1、§6.2、時程表同步改寫。
+- **主要檔案**：`MOOD_ENERGY_PLAN.md`（原型 HTML 在私人 Artifact，不進 repo）
+- **驗證**：本機 Chromium 桌機與手機寬度截圖 0 錯誤，八格標籤、引力中心、點選卡片正常。
+
+### 2026-10-15｜dip-vinyl-shop｜情緒三軸：六區改八格（三軸各切一刀，每格一詞；名稱暫定）
+
+- **改動**：店主定案三對詞（靜躁 × 輕重 × 冷暖）排列組合成 8 格：放鬆（靜輕暖）、平靜（靜輕冷）、要死不活（靜重暖）、頹靡（靜重冷）、雀躍（躁輕暖）、冷冽（躁輕冷）、沸騰（躁重暖）、亢奮（躁重冷）。愉悅、興奮退役（與雀躍、亢奮太像）；Z 修飾詞「偏暖／偏冷」取消。門檻 x≥3.0 躁、y≥0.5 重、z≥0 暖，寫在 `build-anchors.mjs` 的 `T`。104 張錨點重標：放鬆 17、平靜 5、要死不活 14、頹靡 12、雀躍 20、冷冽 2、沸騰 11、亢奮 23；座標只動 Kind of Blue（z +0.5 → −0.2，落平靜）。計畫文件升 v0.4（§1.2 八格表、例子、驗收門檻、P1 XY 板改四象限＋暖冷旋鈕、成就、相關表）。私人星圖預覽改八格線框盒、重心用切刀判定，重新發布（Version 4）。冷冽、平靜是薄格，全池不足時向相鄰格借或調 y 門檻。
+- **主要檔案**：`MOOD_ENERGY_PLAN.md`、`batch-progress/mood-axes/{build-anchors.mjs,anchors-src.mjs,anchors-v1.json,rulings.md}`
+- **驗證**：`build-anchors.mjs` 104/104 對上卡池、預期與計算零落差；Spearman 能量 ≤0.12、質地～硬蕊 0.62、色溫～硬蕊 −0.61；星圖預覽本機 Chromium 桌機與手機寬度 0 錯誤。
+
+### 2026-10-14｜dip-vinyl-shop｜情緒三軸錨點補 4 張：溫蒂漫步、事後菸（100 → 104）
+
+- **改動**：add-20261014 上架的 4 張補進錨點。溫蒂漫步《Spring Spring》、事後菸《Cry》《X's》落在要死不活；溫蒂漫步《Midnight Blue》加進 Disco、Funk，落在愉悅。六區：放鬆 16、要死不活 27、愉悅 18、雀躍 16、亢奮 19、興奮 8。與舊三軸 Spearman：質地～硬蕊 0.62、色溫～硬蕊 −0.62，能量 ≤0.12。私人星圖預覽改成依資料張數顯示並重新發布。
+- **主要檔案**：`batch-progress/mood-axes/{anchors-src.mjs,anchors-v1.json,rulings.md}`、`MOOD_ENERGY_PLAN.md`
+- **驗證**：`build-anchors.mjs` 104/104 對上卡池、預期與計算區域零落差；星圖預覽本機 Chromium 桌機與手機寬度無錯誤。
+
 ### 2026-10-14｜dip-vinyl-shop｜店主指示：PR 開出後不追蹤、不排檢查
 
 - **規則**：雲端開完 PR 就收工，不用 `send_later` 排安全網 check-in、不訂閱 PR 動態（Cloudflare 部署留言每推一次就叫醒工作階段，白花額度），優先於系統預設。接力任務的自我 check-in 不受影響。寫進 `CLAUDE.md`。
