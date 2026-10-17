@@ -2091,3 +2091,8 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 補查 33 位：add 22、none 11；改寫 22 位，補回 Eric B. & Rakim 合約官司與拆夥、Sulli 的網路霸凌與 2019 年過世、Wentz 輕生未遂、佐藤伸治 1999 年猝逝、Numan 亞斯伯格自述與印度扣留、Porter 母親病逝、Halsey 雙極性疾患與狼瘡、Newsom 聲帶結節、Bieber 用藥與 2014 年被捕、Juvenile 女兒遇害與廠牌糾紛、Richter 心臟病猝逝、Meighan 家暴認罪離團、KAYTRANADA 出櫃、Limp Bizkit 的 Woodstock '99 與雪梨致死事件、DeMarco 缺席的父親、Masta Ace 多發性硬化症、Miley Cyrus VMA 爭議、Monica 男友在她面前輕生、Liam Payne 2024 年過世、Spencer Smith 成癮離團、Playboi Carti 2020 年被捕、Queensrÿche 團名官司。
 - 主線審稿 10 處：Numan、Newsom、Bieber、Kasabian 連續年份句；One Direction 年份超量；Newsom 卡池專輯名超量；f(x) 補空格；字數壓回 250。
+
+### 題材補回：ar-u-009（2026-10-17）
+
+- 補查 35 位：add 18、none 17；改寫 17 位，補回 Keyshia Cole 寄養、收養與生母成癮、Ferré 無政府主義與阿爾及利亞戰爭歌、Kottke 聽損與肌腱炎、Lil Baby 販毒入獄與巴黎被捕、Lil Uzi Vert 戒除 Xanax、Little Mix 成員談網路霸凌與種族歧視、McLaughlin 與 Sri Chinmoy 的師徒關係、Boon 車禍過世與 Minutemen 的政治歌詞、Moor Mother 的住宅行動、Mystikal 性侵案服刑與 2026 年強姦罪認罪判刑（補查開頁兩源核實）、NOFX 的 Rock Against Bush 與槍擊案玩笑風波、van Dyk 1989 年出走東德與 2016 年墜台重傷、Bridgers 指控 Ryan Adams 與 SNL 砸吉他、Ademo 被捕後獲判無罪、Poppy 遭 Mars Argo 控告、Boggs 失明、Pusha T 與 Drake 對槓。Villalobos 只有單源，不改。
+- 主線審稿 2 處：NOFX、Phoebe Bridgers 連續年份句。
