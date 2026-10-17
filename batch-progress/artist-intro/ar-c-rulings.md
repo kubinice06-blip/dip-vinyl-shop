@@ -1990,3 +1990,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 卡池年份待本機核：Maceo & All the King's Men《Funky Music Machine》卡池 1975、維基 1972；Mahmoud Ahmed《Éthiopiques 6: Almaz》卡池 1999（疑為選輯發行年，原錄音 1973）。
 - 審稿修 6 處：Liars、M. Ward「最…之一」改「備受／重要」；Maceo & All the King's Men 樂團單卡從 265 壓回 227、Milton Wright 個人卡從 278 壓回 250（「人物故事」不屬多名卡放寬）；Natacha Atlas 金基德片名改台灣譯名《空屋情人》；Patty Waters 補英中間空格。
   - 保留：Marvin Gaye & Tammi Terrell 雙人卡 276（放寬額度），Terrell 只寫 1970 年過世；Mario Hot 100 蟬聯 9 週（補洞稿必要例外）；Me'Shell Ndegéocello 2024 年葛萊美（在世者一處）；METZ 2024 年休團（不在 2025–26 範圍）。
+
+## ar-u-016（2026-10-17，thin 升級）
+
+- 40 位中 21 位升 full 上線；19 位補洞後仍 thin、保留原上線版：Ressurection、Riow Arai、Roberto Cacciapaglia、Rudolph Johnson、Solmania、Tagomago、Tamaru、The Argo Singers、The Awakening、The Bush Chemists、The East St. Louis Gospelettes、The Menzingers、The Murder Capital、The Orchids、The Wolfhounds、Titus Andronicus、Treatment、Vetiver、Wailing Souls（本輪升級率最低；多為小眾福音、雷鬼與 2010 年代獨立團，legacy 缺共識評價）。
+- 維基預抓錯抓 Sam Jones（NBA 球員）、Treatment（污水處理）、Troop（軍事單位），補洞層都已改認。卡池年份待本機核：Tamia《Tamia》卡池標 1978，應為 1998。
+- 審稿修 7 處：Randy Crawford、Return to Forever、Sam Jones（兩處）、Ted Lundy, Bob Paisley and The Southern Mountain Boys、The Headhunters、The Waterboys「最…」改「極／代表／廣為人知／常見」。
+  - 保留：Ted Lundy 多名卡 276（放寬額度）；Randy Crawford 1982 年全英音樂獎、Raphael Saadiq 葛萊美（不寫年份）、Saint Etienne Mercury 入圍、Tamia 葛萊美提名、The War on Drugs 葛萊美、Troop R&B 冠軍（各一處）；Ski Mask the Slump God 只寫 XXXTentacion「過世」；Troop 的 Hit-Boy 葛萊美寫明是製作人本人的獎。

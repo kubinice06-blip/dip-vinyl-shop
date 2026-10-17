@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1484 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1489 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1488,3 +1488,8 @@
 | ar-u-016 | Stephanie Mills | （藝人介紹 thin 版） | 十一歲就在哈林 Apollo 劇院的業餘夜連續六週奪冠 | 來源對年齡不一致（維基 11 歲、encyclopedia.com 一份寫 9 歲），建議拿掉年齡 | https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/stephanie-mills |
 | ar-u-016 | The Sensational Nightingales | The Best of the Sensational Nightingales | John Fogerty 寫〈Proud Mary〉時想召喚的男聲和聲，正是這一支。 | 英文維基原文是 Fogerty 想召喚的是男聲福音和聲，『以 Swan Silvertones、Sensational Nightingales、Five Blind Boys of Mississippi 這類團體為代表』，Nightingales 只是被舉例的幾支之一，不是『正是這一支』。建議改成『Fogerty 想召喚的那種男聲福音和聲，Nightingales 是代表之一』。 | https://en.wikipedia.org/wiki/Sensational_Nightingales |
 | ar-u-016 | The Sensational Nightingales | The Best of the Sensational Nightingales | 四重唱 1942 年由 Dixie Hummingbirds 出身的 Barney Parks 組成，1946 年 Julius「June」Cheeks 加入。 | 英文維基與 Journal of Gospel Music 作 1942 年 Parks 創團，但 Malaco 官方傳記寫前身為費城 Lamplighters、1949 年改名 Nightingale Quartet、Cheeks 1950 年才加入，來源不一致，Cheeks 加入年建議改為『四〇年代後期』或不寫年份。 | https://malaco.com/artist/gospel/the-sensational-nightingales/ |
+| ar-u-017 | 圖騰樂團 | 我在那邊唱 | 二○○五年拿下貢寮國際海洋音樂祭大賞、二○○六年四月由彎的音樂發行首張 | 年份寫成中文數字（二○○五）；規則是年月日用阿拉伯數字。事實本身與維基、ltn 相符。 | https://zh.wikipedia.org/zh-tw/%E5%9C%96%E9%A8%B0%E6%A8%82%E5%9C%98 |
+| ar-u-017 | 圖騰樂團 | 放羊的孩子 | 彎的音樂二○○九年九月發行、樂團二○○二年成軍 | 同樣是年份寫成中文數字（二○○九、二○○二）；二○○二年成軍與維基相符。 | https://zh.wikipedia.org/zh-tw/%E5%9C%96%E9%A8%B0%E6%A8%82%E5%9C%98 |
+| ar-u-017 | 小河 | 飛的高的鳥不落在跑不快的牛的背上 | 屬民謠大類，中國大陸慣稱「實驗民謠」（experimental folk） | 違反用語房規（2026-09-29 店主裁定）：稱呼中國一律寫「中國」，不寫「中國大陸」；此句另屬自行補充的類別說明，本層所讀來源（界面新聞、澎湃、Bandcamp Daily）沒有一處稱「實驗民謠」是中國慣稱，建議整句改寫或刪除。 | https://www.jiemian.com/article/8926943.html |
+| ar-u-017 | 菊地雅章セクステット | Re-confirmation | 電鋼琴由另一位同姓的樂手菊地雅洋擔任 | 並非錯誤，可補：日文維基記菊地雅洋是菊地雅章的實弟、同為爵士鋼琴家；單源（日文維基），是否補寫由主線決定。 | https://ja.wikipedia.org/wiki/%E8%8F%8A%E5%9C%B0%E9%9B%85%E7%AB%A0 |
+| ar-u-017 | 薄荷葉 | 的士房間 | 一位鼓手在 2002 年離開 Tizzy Bac，走進了這個團，條目記那位鼓手是鄭凱同 | 成員異動年份屬高風險，只有中文維基〈Tizzy Bac〉單源；官方頁與 BusinessToday 都沒有提到，搜尋摘要的現任鼓手是滾滾（呂孟芝）。建議降為不寫或標明出處。 | https://zh.wikipedia.org/wiki/Tizzy_Bac |
