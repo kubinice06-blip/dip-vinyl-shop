@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1538 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1546 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1539,6 +1539,14 @@
 | ar-u-025 | Grow-Up | The Best Thing | 吉他手 John Bisset-Smith | LTM 傳記頁寫 Bisset-Smith 在 Grow Up 改彈貝斯，吉他手是 Roger Blackburn；Bisset-Smith 是在前一個團 Spherical Objects 彈吉他。建議簡介改成『成員 John Bisset-Smith』或『貝斯手與作曲 John Bisset-Smith』。 | https://www.ltmrecordings.com/grow_up.html |
 | ar-u-026 | Hocus Pocus | 73 touches | 南特的爵士 hip-hop 團 Hocus Pocus，此時只剩 MC 兼製作 20Syl 與 DJ Greem | Universal Music France 官方頁與 Le Peuple du Rock 都寫 2001 年起已擴編成現場樂團（鍵盤、貝斯、吉他），法文維基也列 2000 至 2004 年起的現場樂手；若『只剩兩人』指的是 MC 與 DJ 的核心，寫法可以，若指整個團則不準，建議改成『核心是 20Syl 與 DJ Greem，另有現場樂手』。 | https://www.universalmusic.fr/artistes/30079849936 |
 | ar-u-026 | Homayun Sakhi | The Art of the Afghan Rubâb | 2002 年移居美國加州佛利蒙 | 維基寫 2002 年，Aga Khan 博物館的藝人介紹寫 2001 年定居佛利蒙，兩源不一致；建議簡介改寫成「移居美國後定居佛利蒙」，或另查第三源再定年份。 | https://agakhanmuseum.org/bio/homayoun-sakhi-2/ |
+| ar-u-026 | Houses | A Quiet Darkness | 德州的 Sonic Ranch Studios 包辦錄音與混音 | 維基寫錄音含加州 Desert Center 廢棄房屋、學校、小屋的田野錄音，Sonic Ranch 是『完成』專輯之處；『包辦錄音』可能說過頭，建議改為『在德州 Sonic Ranch 完成』或查 Discogs 製作名單再定 | https://en.wikipedia.org/wiki/Dexter_Tortoriello |
 | ar-u-026 | Il Paese dei Balocchi | Il Paese dei Balocchi | 吉他手回憶這張唱片壓了 1800 張，用來試市場 | italianprog.com 原文是『Sandro Laudadio si ricorda che il nostro primo LP è stato stampato in 1800 copie per saggiare il mercato』，說這句話的是鼓手 Laudadio，不是吉他手 Fabiani；『吉他手回憶』應改為『鼓手回憶』。 | https://www.italianprog.com/it/a_paesedeibalocchi.htm |
 | ar-u-026 | Il Paese dei Balocchi | Il Paese dei Balocchi | 有幾段人聲，是借羅馬一座教堂的自然殘響錄下來的 | italianprog.com 證實部分合唱在羅馬 S. Euclide 教堂內利用殘響錄製（含〈Vanità dell'intuizione fantastica〉的人聲），與上線簡介一致；另補充教堂下方 Ortophonic 錄音室的管風琴用在末曲。簡介無誤，僅供補充。 | https://www.italianprog.com/it/a_paesedeibalocchi.htm |
 | ar-u-026 | Imam Baildi | Imam Baildi | 另外自己寫了 3 首器樂曲 | 官網寫這 3 首原創器樂曲是以老希臘器樂錄音的取樣為底做出來的，並非全然從零自寫；建議改成『另有 3 首以老器樂錄音取樣做成的原創器樂曲』。 | https://www.imambaildi.com/?p=374 |
+| ar-u-026 | Indiscreet Music | Dubious Collaberations | 年份落在 1971 到 1976——那是素材錄下的年份，碟本身是 1979 年的 | LTM 寫素材是 1971 至 1975 年的家庭即興；賣家頁曲目表則標到 1976 年（Manchester、Chester）。兩源對上限不一致，建議簡介改寫成『落在 1971 到 1976 年』時標明依據曲目表，或略去上限。簡介寫 A 面十段、B 面十四段與賣家頁一致（A1–A10、B1–B14）。 | https://ltmrecordings.com/auteur_labels_object_music_ltmcd2527.html |
+| ar-u-026 | J-Squad | J-Squad II | 五個人各自交出原創，由樂團挑出最好的幾首 | HIGHRESAUDIO 專輯頁寫「由黒田卓也創作（compositions）」，但頁面沒有逐曲署名；與簡介的「五人各自交出原創」不一致或至少無法證實。需對照 CD 內頁或 Universal 官方曲目作者欄再定。 | https://mag.highresaudio.com/en/album/view/ou9mu9/j-squad-j-squad-ii |
+| ar-u-026 | Jasmine Myra | Horizons | 2018 年，她入選扶持北英格蘭新秀的 Jazz North Introduces | Leeds Conservatoire 2018 年 9 月公告（兩支入選樂團之一）寫的是 Jasmine 樂團，領軍者署名 Jasmine Whalley；維基稱 Myra 創辦過同名樂團 Jasmine，二者很可能是同一人，但沒有開得了的頁面明說，且 Myra 本名是否 Whalley 查無。屬待核而非確認有誤。 | http://www.leedsconservatoire.ac.uk/about-us/news/lcom-alumni-selected-for-jazz-north-introduces |
+| ar-u-027 | Joe | My Name Is Joe | 並於 2000 年 7 月拿到三白金認證 | Encyclopedia.com 寫專輯一年內達雙白金；搜尋摘要稱最終銷量逾 300 萬張，三白金的時間點（2000 年 7 月，發行約三個月後）與雙白金說法對不上，請本機查 RIAA 認證日期。 | https://www.encyclopedia.com/arts/culture-magazines/joe |
+| ar-u-027 | John Kaizan Neptune / 直居隆雄 | Two in Flight | 八軌全出自兩人：Neptune 寫四首、直居隆雄寫兩首 | 四加二只有六首，與「八軌全出自兩人」對不上；Discogs 發行頁只列直居隆雄為編曲與重混，作曲分配需對照曲目作者欄再改。 | https://www.discogs.com/release/4333136 |
+| ar-u-027 | Jonny Holtzman | Let's Do It | 1972 年 Widespread Depression Orchestra 在佛蒙特州的 Marlboro College 成立時，他是最初的領班與主唱 | 維基只寫樂團 1972 年成立於 Marlboro College、1978 年遷紐約時由 Jon Holtzman 領導，沒有說他是 1972 年的創團領班與主唱；建議改寫成 1978 年遷紐約時由他領導。 | https://en.wikipedia.org/wiki/Widespread_Depression_Orchestra |
+| ar-u-027 | Josephine Foster | Hazel Eyes, I Will Lead You | 2005 年這張個人第二作 | 維基只說她先有在家自錄的《There Are Eyes Above》（2000）、兒歌《Little Life》（2001）及與 The Supposed 合作的《All the Leaves Are Gone》（2004），之後才有包括本張在內的一連串個人專輯；另有簡介把本張稱為首張個人錄音室專輯。『第二作』無法證實，建議拿掉序數。 | https://en.wikipedia.org/wiki/Josephine_Foster |

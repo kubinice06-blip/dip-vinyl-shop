@@ -2088,6 +2088,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 搜尋超上限放行：Gold Panda 11 次（替 Guardian First Album Award 找第二源未果，仍 thin、不上線）。GQ「RIAA 白金」查無來源、Guadalcanal Diary 的 Paste 名次（媒體榜單）不寫。日文人名照台灣字形：渡邊文男／渡邊貞夫、太田寬二、佐佐木秀人、關根敏行。Hans Rosbaud 納粹時期低調與兄長替盟軍蒐集情報照寫。
 - 主線審稿 9 處：渡邊、太田寬二字形（2 處）；Gabin 片名改台灣譯名《驚奇4超人》；GQ 刪 R&B 榜冠軍；陳毓襄刪少年 MTNA 第一（在世者留一處核心成績：Pogorelich 大賽首獎）；Heize 刪音源榜第一；Henry's Dress、Hideto Sasaki 那張「最…之一」改「極」；High Five Quintet「橫掃銷售榜」改「大獲成功」。
 
+## ar-u-026（2026-10-17，thin 升級；補洞與寫作照更正後規則）
+
+- 40 位中 23 位升 full 上線；17 位補洞後仍 thin、保留原上線版：Holy Ghost!、Homayoun Shajarian & Ali Ghamsari、Homeshake、Houses、Hughie Izachaar、Icecross、Idjah Hadidjah、Il Paese dei Balocchi、Indiscreet Music、Ingrid Michaelson、ISAN、Jackie Allen、Jade、Jaheim、Jamael Dean、James Hurt、James Mason。
+- 搜尋超上限放行：Ingrid Michaelson 9 次（仍 thin、不上線）。I'm With Her 2026 年葛萊美最佳民謠專輯主線開頁核實（Grammy.com、維基），寫為在世者唯一核心成績。題材：Homayun Sakhi 塔利班禁樂與海外募款；Iron Cross 主唱 Lay Phyu 嘲諷政府、《Power 54》影射翁山蘇姬遭回收、2006 年被禁演——照寫。
+- 主線審稿 6 處：Iron Cross 刪電台名並把「最受歡迎」「最受崇拜之一」改「極」；Hocus Pocus 刪「連拿四屆」（獎項次數）；許常惠刪「最具影響力之一」；Ikonika「最具創新之一」改「極具創新」；indigo jam unit「樽栄」改台灣字形「樽榮」。
+
 ### 題材補回：ar-u-003（2026-10-17）
 
 - 補查 37 位：add 23、none 14；改寫 23 位，補回 Lynott 海洛因成癮與死因、Furtwängler 納粹時期與去納粹化審理、大象體操 2023 跨年騷動、大貫妙子父親特攻隊經歷、日野皓正 2017 年體罰事件、Staley 與 Starr 藥物過量、Butler 2022 年遭指控與回應、Chassagne 父母逃離海地獨裁、Drive-By Truckers 的南方歷史與警察暴力題材、Cox 馬凡氏症與車禍、Portnoy 戒酒組曲、Ghostface 搶案與服刑、José González 父母逃離阿根廷軍政府、Musgraves 歌曲遭電台卻步與離婚、Mitski 暫停演出、MIKE 與 MONO 的喪親、Hadreas 成癮與克隆氏症、Rei Harakami 腦出血驟逝、Rick Ross 矯正官過往與 Reebok 事件、Wyatt 墜樓癱瘓與共產黨員、Siouxsie 的 Grundy 節目風波、St. Vincent 父親入獄。
