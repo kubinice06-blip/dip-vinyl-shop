@@ -2096,3 +2096,8 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 補查 35 位：add 18、none 17；改寫 17 位，補回 Keyshia Cole 寄養、收養與生母成癮、Ferré 無政府主義與阿爾及利亞戰爭歌、Kottke 聽損與肌腱炎、Lil Baby 販毒入獄與巴黎被捕、Lil Uzi Vert 戒除 Xanax、Little Mix 成員談網路霸凌與種族歧視、McLaughlin 與 Sri Chinmoy 的師徒關係、Boon 車禍過世與 Minutemen 的政治歌詞、Moor Mother 的住宅行動、Mystikal 性侵案服刑與 2026 年強姦罪認罪判刑（補查開頁兩源核實）、NOFX 的 Rock Against Bush 與槍擊案玩笑風波、van Dyk 1989 年出走東德與 2016 年墜台重傷、Bridgers 指控 Ryan Adams 與 SNL 砸吉他、Ademo 被捕後獲判無罪、Poppy 遭 Mars Argo 控告、Boggs 失明、Pusha T 與 Drake 對槓。Villalobos 只有單源，不改。
 - 主線審稿 2 處：NOFX、Phoebe Bridgers 連續年份句。
+
+### 題材補回：ar-u-012（2026-10-17）
+
+- 補查 23 位：add 12、none 11；改寫 11 位，補回 Chris Brown 2009 年毆打 Rihanna 認罪緩刑與倫敦夜店案 2026 年 7 月改認鬥毆罪（宣判未到，不寫結果）、Daughters 主唱遭 Kristin Hayter 指控（對方否認、無司法結果）、Bryson Tiller 四歲喪母、Brittany Howard 姊姊早逝與鼓手違反保護令認罪、Mark Linkous 輕生與悼念曲、Art Bears 的社會主義立場、Avishai Cohen 赴莫斯科演出後遭音樂節取消、Cannonball《Country Preacher》與 Operation Breadbasket 及中風過世、Chris Connor 酗酒與伴侶、Clara Nunes 婚姻與麻醉過敏過世、Al Cohn 肝癌過世。
+- 主線審稿 6 處：連續年份句四處（AWVFTS、Avishai Cohen、Cannonball、Clara Nunes）、來源改 https、字數壓回 250。
