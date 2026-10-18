@@ -303,12 +303,20 @@
     }
     .gt-chip:hover { border-color: var(--black); background: var(--black); color: #fff; }
     .gt-chip-n { font-size: 0.8em; opacity: 0.55; margin-left: 2px; }
+    /* 「← 上一層」放在內容區左上、緊貼遊戲頂欄的「↩ 找一張來聽」之下，同一種字級與位置，
+       不再是最底下那顆虛線小鈕（2026-10-18 店主：太不明顯）。 */
+    .gt-head-deep { padding-top: 14px; }
+    .gt-back-top {
+      display: inline-flex; align-items: center; gap: 6px; background: none; border: none; padding: 6px 0 16px;
+      font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: var(--black); cursor: pointer;
+    }
+    .gt-back-top:hover { color: var(--gray); }
     .gt-nav { padding: 16px 20px 24px; display: flex; flex-direction: column; gap: 8px; }
     .gt-any, .gt-back {
-      background: none; border: 1px dashed var(--line); font-family: var(--mono); font-size: 10px;
-      letter-spacing: 0.1em; padding: 12px; cursor: pointer; color: var(--gray); transition: all 0.15s;
+      background: none; border: 1px solid var(--line); font-family: var(--mono); font-size: 10px;
+      letter-spacing: 0.1em; padding: 12px; cursor: pointer; color: var(--black); transition: all 0.15s;
     }
-    .gt-any:hover, .gt-back:hover { border-color: var(--black); color: var(--black); }
+    .gt-any:hover, .gt-back:hover { border-color: var(--black); }
     /* 類型挑片：選項下的年代／副曲風小註記（由卡池本地推導）、換一批鈕、結果頁「為什麼是這張」 */
     .gp-opt-meta { display: block; font-size: 9px; color: var(--gray); letter-spacing: 0.08em; margin-top: 3px; }
     .gp-opt-meta:empty { display: none; }
@@ -1013,9 +1021,9 @@
 </footer>
 
 <script src="card-preview-status.js?v=1"></script>
-<script src="dip-player.js?v=44"></script>
+<script src="dip-player.js?v=45"></script>
 <script src="dip-draw-anim.js?v=2"></script>
-<script src="dip-genre-tree.js?v=2"></script>
+<script src="dip-genre-tree.js?v=3"></script>
 <script src="dip-artist-intro.js?v=2"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -5543,13 +5551,30 @@ ${seenList}
     if (!slot) return null;
     _autoplayToggle = window.DipPlayer.createToggle(slot, {
       className: 'is-plain',
+      // 只切開關不武裝音訊：切開關本身不該停掉玩家正在聽的串流。真的有東西要播
+      //（在結果頁上開啟）才由 onToggle 用同一下手勢起播，起播才搶焦點（2026-10-18）。
+      armOnEnable: false,
+      onToggle: (enabled) => enabled && gpPlayCurrentResultFromToggle(),
       hints: {
         first: '♪ 點這裡開啟自動試聽',
         auto: '♪ 自動試聽中 · 點這裡可關閉',
+        enabled: '♪ 自動試聽已開啟 · 抽到卡就會播放',
+        interrupted: '♪ 試聽被其他音訊打斷 · 再按一次播放鍵',
         revoked: '偵測到你在聽其他音樂 · 已暫停自動試聽'
       }
     });
     return _autoplayToggle;
+  }
+  // 在結果頁上把開關打開＝「我要聽這一張」：用這一下手勢直接起播（iOS 要同步手勢）。
+  // 回傳 true 代表真的開始播了；不在結果頁（或已在播）就回 false，開關只記偏好、不碰音訊。
+  function gpPlayCurrentResultFromToggle() {
+    const modal = document.querySelector('.quiz-modal.open');
+    if (!modal || !modal.querySelector('[data-gp-action="preview"]') || !window.DipPlayer) return false;
+    const r = modal.id === 'quizModal' ? lastQuizResult : lastGpResult;
+    if (!r) return false;
+    if (gpPreviewStarted && ['loading', 'playing', 'stopping'].includes(gpPlayerState.status)) return false;
+    gpPlayPreview(true, r);
+    return true;
   }
   // 玩家沒開自動試聽時，點唱片不出聲；提示指向頂欄的開關，才不會以為是壞掉。
   function autoplayBlocked() {

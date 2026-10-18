@@ -22,6 +22,10 @@
   let previewAudio = null, previewBufferSource = null, previewTimer = null, lastPreviewTrackId = '', previewPrimed = false, silentPreviewUrl = '';
   let keepAliveTimer = null;
   let previewArmedAt = 0, previewArmPromise = null;
+  // 使用者最近一次「親手」要出聲的時間（按播放鍵、按音樂開關、點播放列表）。
+  // 幾秒內若被系統中斷，視為音訊 session 交接的來回，不當成「使用者去聽串流」（見 revokeAutoplayByInterruption）。
+  let lastManualPlayAt = 0;
+  const MANUAL_PLAY_GRACE_MS = 4000;
   let currentPreviewData = null, lastFailCode = '';
   let appleAudioMap = null, appleAudioMapPromise = null;
   // 店主要求：整體音量固定 50%，開頭 1.5 秒淡入、結尾 1.5 秒淡出。
@@ -118,6 +122,16 @@
   // 但偵測不到「我們蓋過別人」——後者只能靠每場開聲時的提示涵蓋。
   function revokeAutoplayByInterruption(reason) {
     if (!autoplayConsent) return false;
+    // 使用者幾秒前才親手按下播放／開關，這時被中斷多半是系統交接 audio session 的來回：
+    // 我們剛把對方的串流打斷、session 一鬆手對方收到「可續播」就自動接回、再把我們中斷。
+    // 這不是使用者改變心意。若照舊把裝置記憶寫成 off 並跳「偵測到你在聽其他音樂」，
+    // 使用者看到的就是「按了播放沒反應、開關還自己關掉」（2026-10-18 店主回報）。
+    // 寬限內只停這一次、偏好不動，提示改成請他再按一次播放。
+    if (Date.now() - lastManualPlayAt < MANUAL_PLAY_GRACE_MS) {
+      try { stop(); } catch (_) {}
+      revokeListeners.forEach(listener => { try { listener({ reason, kept: true }); } catch (_) {} });
+      return false;
+    }
     setAutoplayPreference(false);
     revokeListeners.forEach(listener => { try { listener({ reason }); } catch (_) {} });
     return true;
@@ -268,7 +282,11 @@
   const DEFAULT_TOGGLE_HINTS = {
     first: '♪ 點這裡開啟自動試聽',
     auto: '♪ 自動試聽中 · 點這裡可關閉',
-    revoked: '偵測到你在聽其他音樂 · 已暫停自動試聽'
+    revoked: '偵測到你在聽其他音樂 · 已暫停自動試聽',
+    // 開啟開關但當下沒有東西可播（armOnEnable:false 的頁面）
+    enabled: '♪ 自動試聽已開啟 · 抽到卡就會播放',
+    // 手動播放剛起就被別的音訊中斷（寬限內不寫 off，見 revokeAutoplayByInterruption）
+    interrupted: '♪ 試聽被其他音訊打斷 · 再按一次播放鍵'
   };
 
   function createToggle(container, options = {}) {
@@ -291,13 +309,19 @@
       const enable = autoplayPreference() !== 'on';
       setAutoplayPreference(enable);
       sync();
+      // 開啟時預設順手武裝音訊（這一下是授權手勢，iOS 只認同步手勢）。但「武裝」＝靜音
+      // keep-alive 開始播＝向系統要走音訊焦點＝停掉玩家正在聽的串流——而此刻根本沒有東西要出聲。
+      // 知道自己有沒有可播內容的頁面（抽卡結果頁）傳 armOnEnable:false，並在 onToggle 裡
+      // 直接起播（回傳 true）：真的要出聲才搶焦點，只是切開關不搶。
+      // 2026-10-18 店主回報：聽串流時切開開關，串流被停、按播放鍵又沒反應，病灶就在這裡。
+      if (enable && options.armOnEnable !== false) unlock();
+      if (enable) lastManualPlayAt = Date.now();
+      let started = false;
+      try { started = options.onToggle?.(enable) === true; } catch (_) {}
       if (enable) {
-        // 這一下就是使用者的授權手勢，順手把音訊武裝起來（iOS 只認同步手勢）。
-        unlock();
         autoHintShownThisVisit = true;
-        showHint(button, hints.auto);
+        showHint(button, (started || options.armOnEnable !== false) ? hints.auto : hints.enabled);
       }
-      try { options.onToggle?.(enable); } catch (_) {}
     });
     container.appendChild(button);
     sync();
@@ -310,7 +334,7 @@
         showHint(button, hints.auto);
       }
     });
-    const offRevoke = onAutoplayRevoked(() => { sync(); showHint(button, hints.revoked); });
+    const offRevoke = onAutoplayRevoked((info) => { sync(); showHint(button, info?.kept ? hints.interrupted : hints.revoked); });
     // 裝置從未表態：靜音，但要讓玩家知道有這個功能。整台裝置只提示一次。
     if (autoplayPreference() === 'unset') {
       let seen = false;
@@ -1255,13 +1279,12 @@
       setPreviewLevel(0);
       source.start(0);
       fadePreview(BASE_GAIN, FADE_MS);
-      // 真實試聽已經在輸出、session 由它接手 → 這時才收掉靜音 keep-alive。
-      // 失敗的分支一律不收：讓它繼續墊著，下一次重試才有 session 可用。
-      // 必須等這次手勢發出的 play() 落定再 pause，否則會把自己的 play() 打成
-      // AbortError（快取命中時 start 幾乎與武裝同一個 tick，必中）。
-      const releaseKeepAlive = () => { try { audio.loop = false; audio.pause?.(); } catch (_) {} };
-      if (previewArmPromise?.then) previewArmPromise.then(releaseKeepAlive, releaseKeepAlive);
-      else releaseKeepAlive();
+      // 2026-10-18 起**不再在起播後收掉靜音 keep-alive**，讓它陪著真實試聽播到 stop()／播完
+      // （播完走 emit(stopped) → clearMediaSession 會暫停並拆 src；stop() 的 finish 也會暫停）。
+      // 原本「起播即收」是在 gain 還在 0 附近淡入的那一刻把唯一的媒體元素暫停，iOS 在這個
+      // 空窗會把 audio session 鬆手；剛被我們打斷的串流收到「可續播」就自動接回，反過來把
+      // 我們中斷——使用者看到的是按了播放沒聲音、開關還被碰撞偵測關掉。keep-alive 本身無聲，
+      // 多播 30 秒沒有代價；失敗的分支本來就不收，行為一致。
       currentPreviewData = data;
       lastPreviewTrackId = track.id || track.previewUrl;
       const playMs = Math.max(FADE_MS, Math.min(30500, Number(decoded.duration || 30) * 1000));
@@ -1293,6 +1316,7 @@
   async function playTrack(trackId) {
     if (!currentPreviewData || !trackId || !root) return false;
     grantAutoplayConsent();  // 點播放列表的某一首＝使用者自己要出聲
+    lastManualPlayAt = Date.now();
     const token = ++requestId;
     lastFailCode = '';
     emit({ status:'loading', provider:'itunes', code:'' });
@@ -1373,7 +1397,7 @@
       return false;
     }
     // 使用者自己按的播放＝授權本次造訪的後續自動播放。
-    if (!auto) grantAutoplayConsent();
+    if (!auto) { grantAutoplayConsent(); lastManualPlayAt = Date.now(); }
     const token = ++requestId;
     lastFailCode = '';
     // cover 只餵給鎖定畫面的媒體卡片；沒帶就留空，Chrome 會退回無封面而不是抓網站 logo。

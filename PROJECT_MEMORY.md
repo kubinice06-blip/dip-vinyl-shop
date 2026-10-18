@@ -1,5 +1,19 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-18｜dip-vinyl-shop｜抽卡四件事：開關不再搶串流、日亞搖滾分國別、老搖滾分年代、上一層鈕搬到左上
+
+- **起因**：店主回報 (1) 邊聽串流時，抽卡頁右上的 🔇 切成 🔊 串流就被停掉、按播放鍵又沒反應；(2) 日亞搖滾要分台／日／韓／中／泰／越等；(3) 老搖滾分 50／60／70／80 年代；(4) 「回到上一層」在最下方又是虛線，太不明顯，要像左上角「↩ 找一張來聽」那樣。
+- **(1) 音訊三處改法（`dip-player.js?v=45`，四頁同步升版）**：
+  - `createToggle` 新增 `armOnEnable` 選項：切開開關本身不再 `unlock()`（武裝＝靜音 keep-alive 起播＝向系統要音訊焦點＝停掉串流，而當下根本沒東西要出聲）。`index.html` 傳 `armOnEnable:false`，並在 `onToggle` 用同一下手勢起播**當前結果頁那張**（`gpPlayCurrentResultFromToggle`，心情選歌看 `lastQuizResult`、其餘看 `lastGpResult`）；不在結果頁只記偏好，提示改「自動試聽已開啟 · 抽到卡就會播放」。其他頁沒傳選項，行為照舊。
+  - 碰撞偵測加 **4 秒手動寬限**：按播放／開關／播放列表後 4 秒內 ctx 被 interrupted／suspended，不再寫裝置記憶 `off`，只停這一次並提示「試聽被其他音訊打斷 · 再按一次播放鍵」（`onAutoplayRevoked` 回 `{reason, kept:true}`）。原因：我們剛打斷對方的串流、session 一鬆手對方自動續播又把我們中斷，是系統交接不是使用者改變心意；舊行為讓使用者看到「按了沒反應、開關自己關掉」。
+  - `playItunes` 起播後**不再立刻收掉靜音 keep-alive**，讓它陪真實試聽播到 stop／播完（`clearMediaSession`／`stop` 都會暫停並拆 src）。原本在 gain 還在 0 附近淡入時暫停唯一媒體元素，iOS 會把 audio session 鬆手，正是上面那個來回的觸發點。
+- **(2)(3) 曲風樹（`scripts/build-genre-tree.mjs`）**：老搖滾第三層依卡片年份分 50／60／70／80／90 年代之後（照時間排，不照張數）；日亞搖滾改成**地區鏡頭**——新增 `rock-asia-country-map.json`（藝人 → 國別，391 位，含 2 位標 `-` 的同名混淆：西班牙歌手 Raphael 被 Last.fm 標成 visual kei、Parameter 標籤 UK／Korean 互斥），亞洲藝人不論落在哪個風格桶都另掛進日亞搖滾並依國別分第三層（閃靈在金屬、BOØWY 在龐克新浪潮、崔健在獨立另類，以前從日亞搖滾抽不到）。掛載做成步驟 2.5、加在同藝人傳播之後，否則沒標籤的卡會被當成已落位而跳過傳播（實測風格桶少 26／17 張）。國別節點門檻 1 張（店主點名泰／越）。新腳本 `scripts/build-asia-country-map.mjs` 依標籤／文字系統提案、列待裁定名單，`ALBUM_ONBOARDING.md` 第 7 步補一句。
+- **結果**：日亞搖滾 372 → 729（台灣 284、日本 266、中國 54、韓國 53、印尼 28、香港 20、菲律賓 8、馬來西亞 6、泰國 4、柬埔寨 2、越南／新加坡／巴基斯坦各 1）；老搖滾 573（50s 14、60s 92、70s 300、80s 95、90 後 59，13 張無年份不分）。其餘桶只有 KV 標籤漂移的個位數差。裁定：Yoko Ono 歸日本、蔡健雅沿 `tw-pop-artists.json` 歸台灣、Ghost 是 1990 年代日本迷幻團、Drakkar 1974 是柬埔寨團。
+- **(4) 選單（`dip-genre-tree.js?v=3`）**：「← 上一層」改成內容區左上的實線粗體鈕（`.gt-back-top`），與頂欄「↩ 找一張來聽」同一欄位；底部只留「這一層隨便挑 →」並改實線；第一層不再放底部返回鈕（頂欄那顆就是，店內挖寶同）。
+- **主要檔案**：`dip-player.js`、`index.html`、`battle.html`／`roguelike.html`／`shop-all.html`（只升版）、`dip-genre-tree.js`、`scripts/build-genre-tree.mjs`、`scripts/build-asia-country-map.mjs`（新）、`rock-asia-country-map.json`（新）、`genre-tree.json`、`card-subgenres.json`、`ALBUM_ONBOARDING.md`
+- **驗證**：本機 Playwright 16/16 通過——`armOnEnable:false` 切開不建 ctx／不起 keep-alive、預設仍武裝；手動播放 4 秒內 suspend 偏好留 `on` 且收到 `kept:true`、4 秒後 suspend 寫 `off`；`#genre` 第二層左上鈕與頂欄返回鈕左緣對齊、底部返回鈕消失、日亞搖滾 13 國、老搖滾 5 個年代、上一層兩次回十大類、遊戲頁開關切開不碰音訊。`node --check` 三支 JS 通過。**真機（iPhone＋串流）待店主實測**。
+- **留給本機／店主**：無 KV／Firestore 寫入；PR 合併即生效。
+
 ### 2026-10-14｜dip-vinyl-shop｜店主指示：PR 開出後不追蹤、不排檢查
 
 - **規則**：雲端開完 PR 就收工，不用 `send_later` 排安全網 check-in、不訂閱 PR 動態（Cloudflare 部署留言每推一次就叫醒工作階段，白花額度），優先於系統預設。接力任務的自我 check-in 不受影響。寫進 `CLAUDE.md`。
