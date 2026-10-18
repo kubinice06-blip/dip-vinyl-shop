@@ -391,6 +391,12 @@
     .quiz-stock-thumb-name { font-size: 8px; color: var(--gray); margin-top: 4px; letter-spacing: 0.04em; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 
     .gp-genre-grid { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
+    /* 直接來一張的起跑畫面（頁面尚無使用者手勢時才出現，見 startRandomPick） */
+    .gp-random-landing { padding: 56px 20px 40px; text-align: center; }
+    .gp-random-landing .quiz-question { margin-bottom: 12px; }
+    .gp-random-sub { font-size: 11px; color: var(--gray); line-height: 1.7; margin-bottom: 32px; }
+    .gp-random-go { width: 100%; background: var(--black); color: #fff; border: 1px solid var(--black); font-family: var(--mono); font-size: 12px; font-weight: 700; letter-spacing: 0.12em; padding: 18px; cursor: pointer; }
+    .gp-random-go:hover { background: none; color: var(--black); }
     .gp-genre-btn {
       border: none; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line);
       background: none; font-family: var(--mono); font-size: 12px; font-weight: 700;
@@ -5276,6 +5282,9 @@ ${seenList}
       sessionStorage.removeItem('dip_gp_seen'); gpSeenAlbums = new Set();
       if (gpIsRandom) startRandomPick(); else startGuess();
     }
+    if (e.target.closest('[data-gp-action="random-go"]')) {
+      submitGenrePick();
+    }
     if (e.target.closest('[data-gp-action="view-item"]')) {
       const id = e.target.closest('[data-gp-action="view-item"]').dataset.id;
       openModal(id);
@@ -5326,7 +5335,20 @@ ${seenList}
     gpUsed = new Set(); gpAnotherCount = 0;
     try { const s = sessionStorage.getItem('dip_gp_seen'); gpSeenAlbums = s ? new Set(JSON.parse(s)) : new Set(); }
     catch(e) { gpSeenAlbums = new Set(); }
-    submitGenrePick();
+    // 2026-10-18 店主回報「店內挖寶的直接來一張沒有自動播放」。原因：這是四個遊戲裡唯一
+    // 一進頁就抽、使用者還沒碰過這份文件的流程——從 shop.html／find.html 點過來是換了一份文件，
+    // iOS Safari 的音訊授權不跨文件，AudioContext 建在手勢外就永遠 suspended，自動試聽安靜失敗。
+    // 其他三個遊戲在抽卡前至少點過一次（選題／選類型），那一下經 pointerdown 捕獲先武裝了音訊。
+    // 修法：頁面還沒有任何使用者手勢時，先停在一顆大按鈕上，點下去再抽——
+    // 那一下落在 #artistContent，照樣走捕獲武裝。已有手勢（再試一次、首頁切過來）就照舊直接抽。
+    const touched = navigator.userActivation ? navigator.userActivation.hasBeenActive : false;
+    if (touched) { submitGenrePick(); return; }
+    document.getElementById('artistContent').innerHTML = `
+      <div class="gp-random-landing">
+        <div class="quiz-question">直接來一張</div>
+        <div class="gp-random-sub">${SHOP_MODE ? '不選類型、不挑歌手，從店裡現有的唱片隨機抽一張。' : '不選類型、不挑歌手，隨機抽一張你沒聽過的。'}</div>
+        <button class="gp-random-go" data-gp-action="random-go">抽一張 →</button>
+      </div>`;
   }
 
   function renderGpGenreSelect() {

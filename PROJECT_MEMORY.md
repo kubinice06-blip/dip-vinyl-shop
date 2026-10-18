@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-18（同日第二筆）｜dip-vinyl-shop｜店內挖寶「直接來一張」沒有自動試聽：加一顆起跑鈕
+
+- **起因**：店主回報店內挖寶的直接來一張不會自動播放，其他三個遊戲正常。
+- **病因**：直接來一張是四個遊戲裡唯一「一進頁就抽」的流程。從 `shop.html`／`find.html` 點過來是換了一份文件，iOS Safari 的音訊授權不跨文件；`submitGenrePick` 在手勢外 `gpEnsurePlayer()` → `unlock()` 的 `audio.play()` 被拒、AudioContext 永遠 suspended，自動試聽依設計安靜失敗（狀態仍回 playing、圖示變 ⏸ 但沒聲音）。其他三個遊戲在抽卡前至少點過一次（選題／選類型／選藝人），那一下經 `pointerdown` 捕獲先武裝了音訊。非店內的 `/random` 同病，只是第一張常抽到 reel（無試聽）沒被注意。
+- **修法**：`startRandomPick()` 在 `navigator.userActivation.hasBeenActive` 為 false 時先畫起跑畫面（「直接來一張」＋一句說明＋黑底「抽一張 →」鈕，`data-gp-action="random-go"`），點下去才 `submitGenrePick()`；那一下落在 `#artistContent`，走既有的捕獲武裝。已有手勢（再試一次、重新隨機一張、首頁切過來）照舊直接抽，不多一步。
+- **主要檔案**：`index.html`（`startRandomPick`、`#artistContent` 點擊委派、`.gp-random-*` 樣式）
+- **驗證**：本機 Playwright：`#random` 與 `?shop=1#random` 都停在起跑畫面；點鈕後 `unlock` 被呼叫（非店內 1 次、店內 2 次含 warmAlbum 前那次）、非店內 1.5 秒內出結果頁。**真機 iOS 自動出聲待店主實測**。隨 PR #104。
+
 ### 2026-10-18｜dip-vinyl-shop｜抽卡四件事：開關不再搶串流、日亞搖滾分國別、老搖滾分年代、上一層鈕搬到左上
 
 - **起因**：店主回報 (1) 邊聽串流時，抽卡頁右上的 🔇 切成 🔊 串流就被停掉、按播放鍵又沒反應；(2) 日亞搖滾要分台／日／韓／中／泰／越等；(3) 老搖滾分 50／60／70／80 年代；(4) 「回到上一層」在最下方又是虛線，太不明顯，要像左上角「↩ 找一張來聽」那樣。
