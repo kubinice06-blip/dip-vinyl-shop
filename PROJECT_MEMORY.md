@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-18｜dip-vinyl-shop｜情緒三軸上線計畫 `MOOD_LAUNCH_PLAN.md`
+
+- **改動**：店主「規劃如何讓這個系統上線 以我現在有的為基礎」。新寫 `MOOD_LAUNCH_PLAN.md`：盤點現有資產（全池 19,116 張座標、scale-v0、104 錨點、星圖原型 Version 14、抽卡管線掛點），定四個 PR 約四週：P0 前台檔 `data/mood/card-moods.json`（依 seed 順序存三值＋信心，實測 gz 58KB，對比依 id 存 361KB；`_seed` 三值綁定、不符即整檔失效）＋ `mood-gate.mjs`；P1 調頻（`dip-tune.js` 照 `dip-genre-tree.js`、`pickByCoord` 先按權重取 60 張候選再交 `pickSeedCard` 分層、`gameConfig/tune` 旗標、先藏 `/tune` 軟上線一週再曝光）；P2 `starmap.html` 從原型搬、只亮收藏、2D 退回、hub 卡改「聆聽星圖」；P3 成就照 `settleRewards`、比例門檻；P4 上架公式接三軸（§2.5、skill Phase 2、`scored-onboard.json` 第五來源、`overrides.json`）與 P1 並行；P5 品質迴圈不擋上線。音訊層、v1 刻度、Y 軸改「重量感」都不在本輪。
+- **主要檔案**：`MOOD_LAUNCH_PLAN.md`
+- **驗證**：純規劃，無程式改動；檔案大小數字由 node 實測（seed 19,116 張全部對到座標、0 缺）。
+
 ### 2026-10-17｜dip-vinyl-shop｜情緒八格「慵懶」改名「恍惚」；修 In Orbit 評分 id
 
 - **改動**：店主裁定靜重暖格改叫「恍惚」（id `languid` 不變，座標門檻與分布不動）。起因是主線驗證出三格薄的根因：說明書 Y 軸量製作髒度，Al Green、Marvin Gaye、Anita Baker 等店主心中的慵懶盤全落放鬆，落慵懶的是 dusty 嘻哈、dub、shoegaze；改名讓格名對上內容。名稱表、實驗頁、星圖原型、BRIEF、兩份規劃書、補充計畫改名，店主原話引用保留；anchors／四批 merge／priors／scale 重跑。順帶把 `score3000` 的《In Orbit》工單與輸出檔 id 改成新掛名，否則重跑合併會蓋掉 10-16 的改名、全池少一張評分。星圖預覽 Version 14。Y 軸要不要改成「重量感」、techno 歸冷冽或亢奮，留店主決定（見 rulings）。
