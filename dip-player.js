@@ -558,7 +558,7 @@
   // 靜音 keep-alive 只是為了讓 iOS 在「下載＋解碼」的空窗期不要收掉 audio session。
   // 若武裝之後遲遲沒有真的試聽起播（使用者只是點了介面、最後沒播成），它會一直
   // 循環播放並持續佔著音訊焦點，Spotify 就一直被壓著。逾時就自己放手。
-  function armKeepAliveRelease() {
+  function armKeepAliveRelease(holdMs) {
     clearTimeout(keepAliveTimer);
     keepAliveTimer = setTimeout(() => {
       if (previewBufferSource) return;
@@ -570,7 +570,7 @@
           previewAudio.load?.();
         }
       } catch (_) {}
-    }, 8000);
+    }, holdMs || 8000);
   }
 
   // 切到別的 App／別的分頁而我們沒在播 → 沒有理由再佔著音訊焦點。
@@ -658,13 +658,14 @@
     return Date.now() - lastGestureAt < 1000;
   }
 
-  function primePreviewFromGesture() {
+  function primePreviewFromGesture(holdMs) {
     if (!root) return false;
     try {
       const audio = ensurePreviewAudio();
       ensurePreviewGraph();
       // 武裝就開始倒數：8 秒內沒有真的試聽起播就放掉焦點，別一直壓著別人的串流。
-      armKeepAliveRelease();
+      // 一進頁就抽的流程（直接來一張）可傳 hold 拉長，蓋過載入卡池與封面的時間。
+      armKeepAliveRelease(holdMs);
       // 送出一個全靜音 sample，確保 iOS 真正解鎖 Web Audio 輸出，不只把
       // AudioContext 狀態標成 running。gain 此時固定為 0，不會產生聲音。
       if (audioCtx?.createBuffer && audioCtx?.createBufferSource && previewGain) {
@@ -746,10 +747,10 @@
   // 在這裡統一擋掉，往後新增呼叫點也不會再犯同一個錯。
   // grant=true 專給「使用者明確點了某張唱片要聽」（唱片櫃／搜尋頁）——那是本次造訪的
   // 授權，不寫裝置記憶，不會順手把對戰／試煉的自動播放也打開。
-  function unlock({ youtube = UNLOCK_YOUTUBE_DEFAULT, grant = false } = {}) {
+  function unlock({ youtube = UNLOCK_YOUTUBE_DEFAULT, grant = false, hold = 0 } = {}) {
     if (grant) grantAutoplayConsent();
     if (!autoplayConsent) return false;
-    const previewReady = primePreviewFromGesture();
+    const previewReady = primePreviewFromGesture(hold);
     const youtubeReadyNow = youtube ? primeYoutubeFromGesture() : false;
     return previewReady || youtubeReadyNow;
   }

@@ -391,12 +391,6 @@
     .quiz-stock-thumb-name { font-size: 8px; color: var(--gray); margin-top: 4px; letter-spacing: 0.04em; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 
     .gp-genre-grid { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
-    /* 直接來一張的起跑畫面（頁面尚無使用者手勢時才出現，見 startRandomPick） */
-    .gp-random-landing { padding: 56px 20px 40px; text-align: center; }
-    .gp-random-landing .quiz-question { margin-bottom: 12px; }
-    .gp-random-sub { font-size: 11px; color: var(--gray); line-height: 1.7; margin-bottom: 32px; }
-    .gp-random-go { width: 100%; background: var(--black); color: #fff; border: 1px solid var(--black); font-family: var(--mono); font-size: 12px; font-weight: 700; letter-spacing: 0.12em; padding: 18px; cursor: pointer; }
-    .gp-random-go:hover { background: none; color: var(--black); }
     .gp-genre-btn {
       border: none; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line);
       background: none; font-family: var(--mono); font-size: 12px; font-weight: 700;
@@ -1027,7 +1021,7 @@
 </footer>
 
 <script src="card-preview-status.js?v=1"></script>
-<script src="dip-player.js?v=45"></script>
+<script src="dip-player.js?v=46"></script>
 <script src="dip-draw-anim.js?v=2"></script>
 <script src="dip-genre-tree.js?v=3"></script>
 <script src="dip-artist-intro.js?v=2"></script>
@@ -2845,6 +2839,12 @@
     if (tab === 'random') {
       // 直接來一張：沿用猜你喜歡的結果 UI，但不選類型、不選歌手
       document.getElementById('artistModal').classList.add('open');
+      // 2026-10-19：這是唯一「一進頁就抽、使用者還沒碰過這份文件」的流程（從 shop.html／find.html
+      // 點過來是換了一份文件）。iOS 會把點連結那一下的授權帶進新文件，但只有一小段時間；原本要等
+      // loadQuizData → 卡池 → 店內庫存 幾次 Firestore 往返之後才武裝音訊，早就過了窗口，自動試聽
+      // 於是「顯示在播、沒聲音」（店主 2026-10-19 錄影：抽卡音效有、試聽無聲）。改成進頁第一件事
+      // 就武裝（有開自動試聽才會動作），keep-alive 保留 25 秒蓋過載入時間。店主不要多一顆「抽一張」鈕。
+      gpEnsurePlayer({ hold: 25000 });
       (quizReels.length ? Promise.resolve() : loadQuizData()).then(() => startRandomPick());
       return;
     }
@@ -5282,9 +5282,6 @@ ${seenList}
       sessionStorage.removeItem('dip_gp_seen'); gpSeenAlbums = new Set();
       if (gpIsRandom) startRandomPick(); else startGuess();
     }
-    if (e.target.closest('[data-gp-action="random-go"]')) {
-      submitGenrePick();
-    }
     if (e.target.closest('[data-gp-action="view-item"]')) {
       const id = e.target.closest('[data-gp-action="view-item"]').dataset.id;
       openModal(id);
@@ -5335,20 +5332,7 @@ ${seenList}
     gpUsed = new Set(); gpAnotherCount = 0;
     try { const s = sessionStorage.getItem('dip_gp_seen'); gpSeenAlbums = s ? new Set(JSON.parse(s)) : new Set(); }
     catch(e) { gpSeenAlbums = new Set(); }
-    // 2026-10-18 店主回報「店內挖寶的直接來一張沒有自動播放」。原因：這是四個遊戲裡唯一
-    // 一進頁就抽、使用者還沒碰過這份文件的流程——從 shop.html／find.html 點過來是換了一份文件，
-    // iOS Safari 的音訊授權不跨文件，AudioContext 建在手勢外就永遠 suspended，自動試聽安靜失敗。
-    // 其他三個遊戲在抽卡前至少點過一次（選題／選類型），那一下經 pointerdown 捕獲先武裝了音訊。
-    // 修法：頁面還沒有任何使用者手勢時，先停在一顆大按鈕上，點下去再抽——
-    // 那一下落在 #artistContent，照樣走捕獲武裝。已有手勢（再試一次、首頁切過來）就照舊直接抽。
-    const touched = navigator.userActivation ? navigator.userActivation.hasBeenActive : false;
-    if (touched) { submitGenrePick(); return; }
-    document.getElementById('artistContent').innerHTML = `
-      <div class="gp-random-landing">
-        <div class="quiz-question">直接來一張</div>
-        <div class="gp-random-sub">${SHOP_MODE ? '不選類型、不挑歌手，從店裡現有的唱片隨機抽一張。' : '不選類型、不挑歌手，隨機抽一張你沒聽過的。'}</div>
-        <button class="gp-random-go" data-gp-action="random-go">抽一張 →</button>
-      </div>`;
+    submitGenrePick();
   }
 
   function renderGpGenreSelect() {
@@ -5549,7 +5533,7 @@ ${seenList}
   // 一律呼叫 unlock：手勢外它會自己判斷（inUserGesture），不會去動還在墊場的 keep-alive。
   // grant=true 只用在「使用者自己按了試聽鈕」。不帶 grant 時 unlock 會自己判斷授權，
   // 沒開自動播放就完全不武裝音訊——碰一下卡片不會再停掉玩家正在聽的串流。
-  function gpEnsurePlayer({ grant = false } = {}) {
+  function gpEnsurePlayer({ grant = false, hold = 0 } = {}) {
     if (!window.DipPlayer) return;
     let el = document.getElementById('gpPlayerMount');
     if (!el) {
@@ -5559,7 +5543,7 @@ ${seenList}
       document.body.appendChild(el);
     }
     window.DipPlayer.mount(el, { hidden: true });
-    window.DipPlayer.unlock?.({ grant });
+    window.DipPlayer.unlock?.({ grant, hold });
   }
 
   // ── 自動試聽開關：全站一顆，低調掛在頂欄登入區旁邊 ──

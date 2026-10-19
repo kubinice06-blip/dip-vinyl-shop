@@ -1,12 +1,12 @@
 # dip vinyl 專案備忘錄
 
-### 2026-10-18（同日第二筆）｜dip-vinyl-shop｜店內挖寶「直接來一張」沒有自動試聽：加一顆起跑鈕
+### 2026-10-19｜dip-vinyl-shop｜店內挖寶「直接來一張」沒有自動試聽：改成一進頁就武裝音訊（不加按鈕）
 
-- **起因**：店主回報店內挖寶的直接來一張不會自動播放，其他三個遊戲正常。
-- **病因**：直接來一張是四個遊戲裡唯一「一進頁就抽」的流程。從 `shop.html`／`find.html` 點過來是換了一份文件，iOS Safari 的音訊授權不跨文件；`submitGenrePick` 在手勢外 `gpEnsurePlayer()` → `unlock()` 的 `audio.play()` 被拒、AudioContext 永遠 suspended，自動試聽依設計安靜失敗（狀態仍回 playing、圖示變 ⏸ 但沒聲音）。其他三個遊戲在抽卡前至少點過一次（選題／選類型／選藝人），那一下經 `pointerdown` 捕獲先武裝了音訊。非店內的 `/random` 同病，只是第一張常抽到 reel（無試聽）沒被注意。
-- **修法**：`startRandomPick()` 在 `navigator.userActivation.hasBeenActive` 為 false 時先畫起跑畫面（「直接來一張」＋一句說明＋黑底「抽一張 →」鈕，`data-gp-action="random-go"`），點下去才 `submitGenrePick()`；那一下落在 `#artistContent`，走既有的捕獲武裝。已有手勢（再試一次、重新隨機一張、首頁切過來）照舊直接抽，不多一步。
-- **主要檔案**：`index.html`（`startRandomPick`、`#artistContent` 點擊委派、`.gp-random-*` 樣式）
-- **驗證**：本機 Playwright：`#random` 與 `?shop=1#random` 都停在起跑畫面；點鈕後 `unlock` 被呼叫（非店內 1 次、店內 2 次含 warmAlbum 前那次）、非店內 1.5 秒內出結果頁。**真機 iOS 自動出聲待店主實測**。隨 PR #104。
+- **起因**：店主回報店內挖寶的直接來一張不會自動播放，其他三個遊戲正常。錄影（iPhone Chrome，正式站）顯示：抽卡動畫音效全有，試聽無聲，圖示停在 ⏸、提示「自動試聽中」——播放器自以為在播。
+- **病因**：直接來一張是四個遊戲裡唯一「一進頁就抽」的流程，從 `shop.html`／`find.html` 點過來是換了一份文件。iOS 會把點連結那一下的授權帶進新文件，但只維持一小段時間；原本要等 `loadQuizData` → 卡池 → 店內庫存幾次 Firestore 往返之後才 `gpEnsurePlayer()` 武裝音訊，早就過了窗口。抽卡音效的 AudioContext 建得比較早（`submitGenrePick` 一開始）所以還趕得上。其他三個遊戲抽卡前至少點過一次，那一下經 `pointerdown` 捕獲先武裝了。
+- **修法（店主裁定：不要多一顆「抽一張」鈕，直接抽）**：`bootstrapView` 的 `random` 分支第一件事就 `gpEnsurePlayer({ hold: 25000 })`——有開自動試聽才動作；`DipPlayer.unlock()` 新增 `hold` 參數傳到 `armKeepAliveRelease`，keep-alive 保留 25 秒蓋過載入卡池與封面的時間（預設仍 8 秒）。先前加的起跑畫面整段移除。`dip-player.js?v=46`。
+- **主要檔案**：`index.html`、`dip-player.js`、`battle.html`／`roguelike.html`／`shop-all.html`（只升版）
+- **驗證**：本機 Playwright（自動試聽 on）：`?shop=1#random` 進頁即 ctx running、keep-alive playing，無起跑鈕，12 秒後直接出結果頁。**真機 iOS 待店主在預覽網址實測**；若仍無聲，請用 `?shop=1&audiodebug=1#random` 錄影。隨 PR #104。
 
 ### 2026-10-18｜dip-vinyl-shop｜抽卡四件事：開關不再搶串流、日亞搖滾分國別、老搖滾分年代、上一層鈕搬到左上
 
