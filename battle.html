@@ -575,8 +575,8 @@
 </div>
 
 <script src="card-preview-status.js?v=1"></script>
-<script src="dip-player.js?v=44"></script>
-<script src="dip-draw-anim.js?v=2"></script>
+<script src="dip-player.js?v=49"></script>
+<script src="dip-draw-anim.js?v=3"></script>
 <script src="dip-character.js?v=2"></script>
 <script>
   // 序章捏的角色跟著來：名牌換成像素小人＋名字＋耳朵（沒角色就維持「你 · 黑膠玩家」）
@@ -1760,7 +1760,7 @@ function openCardInfo(card){
   loadCardDesc(card, ++_cardDescSeq);
 }
 
-// 抽卡動畫接線（引擎在 dip-draw-anim.js?v=2，與前台共用）：對戰走 profile battle，
+// 抽卡動畫接線（引擎在 dip-draw-anim.js?v=3，與前台共用）：對戰走 profile battle，
 // 參數獨立存 gameConfig/drawAnimationBattle，節奏比前台快。
 DipDrawAnim.configure({
   fetchConfig: async (profile) => {

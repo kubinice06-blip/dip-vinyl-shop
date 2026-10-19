@@ -11,7 +11,10 @@
 // - 十大類＝卡片的**主類型**（seed_cards 曲風陣列首欄），不是「含此標籤」。
 // - 第二層規則以 Last.fm 標籤正規式為主；搖滾另有藝人級對照 rock-subgenre-map.json 優先，
 //   對照表沒收錄的藝人退回標籤後備（ROCK_FALLBACK），否則新上架的搖滾卡整批落不了位。
-// - 第三層只在資料撐得住的桶生成（門檻同第二層：節點卡數 ≥ MIN_NODE）。
+// - 第三層只在資料撐得住的桶生成（門檻同第二層：節點卡數 ≥ MIN_NODE；定義可帶 min 覆寫）。
+// - 搖滾兩個「非標籤」的第三層（2026-10-18 店主指示）：老搖滾依卡片年份分年代；
+//   日亞搖滾依藝人國別分（rock-asia-country-map.json，由 build-asia-country-map.mjs 維護）。
+//   日亞搖滾是地區不是風格：亞洲藝人不論落在哪個風格桶，都另外掛進日亞搖滾（多重歸屬）。
 // - 多重歸屬：一張卡可落在同層多個節點（ambient＋techno 很正常），不硬切。
 // - 古典不用標籤（覆蓋僅 23%），改用作曲家欄＋年份推時期。
 import fs from 'node:fs';
@@ -59,10 +62,26 @@ const L1 = [
   ['world', '世界'], ['blues', '藍調'],
 ];
 
+// 日亞搖滾第三層＝國別。店主點名台／日／韓／中／泰／越「等等」，所以門檻放到 1 張：
+// 卡少的國家照樣開門，讓人看得到卡池在哪裡還很薄。順序由建樹時依張數排。
+const ASIA_COUNTRIES = {
+  tw: '台灣', jp: '日本', kr: '韓國', cn: '中國', hk: '香港', th: '泰國', vn: '越南',
+  id: '印尼', ph: '菲律賓', my: '馬來西亞', sg: '新加坡', kh: '柬埔寨', pk: '巴基斯坦', in: '印度', mn: '蒙古',
+};
+const asiaChildren = Object.fromEntries(Object.entries(ASIA_COUNTRIES).map(([cc, zh]) => [cc, { zh, min: 1 }]));
+
 const RULES = {
   // 搖滾第二層走藝人級對照（rock-subgenre-map.json）＋ ROCK_FALLBACK，此處只列中文名與第三層
   rock: {
-    classic: { zh: '老搖滾' },
+    // 老搖滾第三層依卡片年份（seed 第 7 欄）分年代，不看標籤。90 年代之後是老牌藝人的晚期作品，
+    // 另成一桶，才不會從選單上消失。
+    classic: { zh: '老搖滾', children: {
+      '50s': { zh: '50 年代', years: [1950, 1959], min: 10 },
+      '60s': { zh: '60 年代', years: [1960, 1969] },
+      '70s': { zh: '70 年代', years: [1970, 1979] },
+      '80s': { zh: '80 年代', years: [1980, 1989] },
+      later: { zh: '90 年代之後', years: [1990, 9999] },
+    } },
     'psych-prog': { zh: '迷幻前衛', children: {
       krautrock: { zh: 'Krautrock', re: /^(krautrock|kraut)$/ },
       prog: { zh: '前衛搖滾', re: /^(progressive rock|prog|symphonic prog|symphonic rock|canterbury scene)$/ },
@@ -94,7 +113,7 @@ const RULES = {
       'post-rock': { zh: '後搖滾', re: /^(post-rock|post rock)$/ },
       slowcore: { zh: '慢核', re: /^(slowcore|sadcore)$/ },
     } },
-    'jrock-asia': { zh: '日亞搖滾' },
+    'jrock-asia': { zh: '日亞搖滾', children: asiaChildren },
     'roots-other': { zh: '根源其他' },
   },
 
@@ -269,6 +288,10 @@ const artistMap = fs.existsSync(path.join(ROOT, 'genre-artist-map.json'))
 // c-pop 標籤分不出台港中星馬，只能靠出產地名單切。
 const TW_POP = new Set((fs.existsSync(path.join(ROOT, 'tw-pop-artists.json'))
   ? JSON.parse(fs.readFileSync(path.join(ROOT, 'tw-pop-artists.json'), 'utf8')).artists : []) || []);
+// 亞洲搖滾藝人 → 國別代碼（ASIA_COUNTRIES 的鍵）。人工裁定過的對照表，新藝人由
+// scripts/build-asia-country-map.mjs 依標籤／文字系統提案、列出待裁定名單。
+const ASIA_MAP_FILE = path.join(ROOT, 'rock-asia-country-map.json');
+const asiaMap = fs.existsSync(ASIA_MAP_FILE) ? JSON.parse(fs.readFileSync(ASIA_MAP_FILE, 'utf8')) : {};
 
 async function pullRawGenres() {
   const TOKEN = process.env.CLOUDFLARE_API_TOKEN;
@@ -343,13 +366,10 @@ function classify(card) {
     if (!bucket && over) [bucket, fixedL3] = over.split('/');
     if (bucket && RULES.rock[bucket]) {
       paths.add(`rock/${bucket}`);
-      const children = RULES.rock[bucket].children;
-      // 對照表直接指定第三層時就用它；否則照標籤比對
-      if (fixedL3 && children?.[fixedL3]) paths.add(`rock/${bucket}/${fixedL3}`);
-      else if (children) for (const [id, def] of Object.entries(children)) {
-        if (card.tags.some(t => def.re.test(t))) paths.add(`rock/${bucket}/${id}`);
-      }
+      addRockL3(paths, bucket, card, fixedL3);
     }
+    // 日亞搖滾的地區掛載不在這裡做（見步驟 2.5）：若在此加進 paths，沒標籤的卡會被視為
+    // 「已落位」而跳過步驟 2 的同藝人傳播，風格桶反而少掉一批（實測 indie-alt 少 26、metal 少 17）。
     return [...paths];
   }
   for (const [id, def] of Object.entries(RULES[g])) {
@@ -372,6 +392,20 @@ function classify(card) {
     }
   }
   return [...paths];
+}
+
+// 搖滾第三層：對照表直接指定就用它；年代桶看年份；其餘照標籤比對
+function addRockL3(paths, bucket, card, fixedL3) {
+  const children = RULES.rock[bucket]?.children;
+  if (!children) return;
+  if (fixedL3 && children[fixedL3]) { paths.add(`rock/${bucket}/${fixedL3}`); return; }
+  for (const [id, def] of Object.entries(children)) {
+    if (def.years) {
+      if (card.year >= def.years[0] && card.year <= def.years[1]) paths.add(`rock/${bucket}/${id}`);
+    } else if (def.re && card.tags.some(t => def.re.test(t))) {
+      paths.add(`rock/${bucket}/${id}`);
+    }
+  }
 }
 
 const assign = new Map();               // "artist|album" -> paths[]
@@ -403,6 +437,22 @@ for (const c of cards) {
   step2++;
 }
 
+// 步驟 2.5：日亞搖滾是「地區」不是「風格」——亞洲藝人不論落在哪個風格桶（閃靈在金屬、BOØWY 在
+// 龐克新浪潮、崔健在獨立另類……），都另外掛進日亞搖滾並依國別分第三層；以前這些卡從日亞搖滾抽不到。
+// 加在風格落位（含步驟 2 的傳播）之上，不取代它。"-"＝裁定過不是亞洲藝人（同名混淆）。
+let stepAsia = 0;
+for (const c of cards) {
+  if (c.prim !== 'rock') continue;
+  const cc = asiaMap[c.artist];
+  if (!cc || cc === '-') continue;
+  const k = `${c.artist}|${c.album}`;
+  const p = new Set(assign.get(k) || []);
+  p.add('rock/jrock-asia');
+  if (RULES.rock['jrock-asia'].children[cc]) p.add(`rock/jrock-asia/${cc}`);
+  assign.set(k, [...p]);
+  stepAsia++;
+}
+
 // 步驟 3：台灣流行正規化。步驟 2 的同藝人傳播也會發 c-pop，跑在 classify() 的覆寫之後，
 // 所以要在這裡再掃一次，否則同一位台灣歌手會一半 t-pop 一半 c-pop。
 let step3 = 0;
@@ -429,10 +479,12 @@ for (const [gid, zh] of L1) {
     const child = { id: cid, zh: def.zh, count: n, children: [] };
     for (const [gcid, gdef] of Object.entries(def.children || {})) {
       const gn = counts.get(`${p}/${gcid}`) || 0;
-      if (gn < MIN_NODE) continue;
-      child.children.push({ id: gcid, zh: gdef.zh, count: gn });
+      if (gn < (gdef.min || MIN_NODE)) continue;
+      child.children.push({ id: gcid, zh: gdef.zh, count: gn, ...(gdef.years ? { _y: gdef.years[0] } : {}) });
     }
-    child.children.sort((a, b) => b.count - a.count);
+    // 年代桶照時間排（50→60→70…），其餘第三層照張數排
+    child.children.sort((a, b) => (a._y != null && b._y != null) ? a._y - b._y : b.count - a.count);
+    child.children.forEach(x => { delete x._y; });
     node.children.push(child);
   }
   node.children.sort((a, b) => b.count - a.count);
@@ -454,7 +506,7 @@ for (const [k, paths] of assign) {
 
 // ── 報告 ──────────────────────────────────────────────────────────────
 console.log(`\n卡池 ${cards.length} 張｜有標籤 ${cards.filter(c => c.tags.length).length}｜`
-  + `步驟1 規則命中 ${step1}｜步驟2 同藝人傳播 +${step2}｜步驟3 台灣流行改判 ${step3}｜剪枝後覆蓋 ${covered}`
+  + `步驟1 規則命中 ${step1}｜步驟2 同藝人傳播 +${step2}｜步驟2.5 日亞搖滾地區掛載 ${stepAsia}｜步驟3 台灣流行改判 ${step3}｜剪枝後覆蓋 ${covered}`
   + ` (${(covered / cards.length * 100).toFixed(1)}%)`);
 console.log(`節點門檻 ${MIN_NODE} 張\n`);
 for (const g of tree.genres) {

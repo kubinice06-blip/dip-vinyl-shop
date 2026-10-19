@@ -77,8 +77,14 @@
   }
 
   /* ── 合成音效（無外部檔；由點擊手勢觸發，行動端可播）── */
+  // 2026-10-19 起優先共用 DipPlayer 的 AudioContext（見 dip-player.js audioContext() 的說明）；
+  // 沒有 DipPlayer 的頁面才自己建。
   let AC = null;
-  const ac = () => { if (!AC) AC = new (global.AudioContext || global.webkitAudioContext)(); return AC; };
+  const ac = () => {
+    if (!AC) AC = (global.DipPlayer && global.DipPlayer.audioContext && global.DipPlayer.audioContext())
+      || new (global.AudioContext || global.webkitAudioContext)();
+    return AC;
+  };
   // 抽卡音效同樣受店主的自動試聽開關管。這是獨立於 DipPlayer 的第二套音訊系統，
   // 一旦出聲就會向系統要走音訊焦點、停掉玩家正在聽的串流——而且因為它從頭到尾
   // 不經過 DipPlayer，先前所有的授權修正都管不到它。沒開試聽就完全不建立 context。

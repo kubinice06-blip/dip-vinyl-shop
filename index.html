@@ -303,12 +303,20 @@
     }
     .gt-chip:hover { border-color: var(--black); background: var(--black); color: #fff; }
     .gt-chip-n { font-size: 0.8em; opacity: 0.55; margin-left: 2px; }
+    /* 「← 上一層」放在內容區左上、緊貼遊戲頂欄的「↩ 找一張來聽」之下，同一種字級與位置，
+       不再是最底下那顆虛線小鈕（2026-10-18 店主：太不明顯）。 */
+    .gt-head-deep { padding-top: 14px; }
+    .gt-back-top {
+      display: inline-flex; align-items: center; gap: 6px; background: none; border: none; padding: 6px 0 16px;
+      font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: var(--black); cursor: pointer;
+    }
+    .gt-back-top:hover { color: var(--gray); }
     .gt-nav { padding: 16px 20px 24px; display: flex; flex-direction: column; gap: 8px; }
     .gt-any, .gt-back {
-      background: none; border: 1px dashed var(--line); font-family: var(--mono); font-size: 10px;
-      letter-spacing: 0.1em; padding: 12px; cursor: pointer; color: var(--gray); transition: all 0.15s;
+      background: none; border: 1px solid var(--line); font-family: var(--mono); font-size: 10px;
+      letter-spacing: 0.1em; padding: 12px; cursor: pointer; color: var(--black); transition: all 0.15s;
     }
-    .gt-any:hover, .gt-back:hover { border-color: var(--black); color: var(--black); }
+    .gt-any:hover, .gt-back:hover { border-color: var(--black); }
     /* 類型挑片：選項下的年代／副曲風小註記（由卡池本地推導）、換一批鈕、結果頁「為什麼是這張」 */
     .gp-opt-meta { display: block; font-size: 9px; color: var(--gray); letter-spacing: 0.08em; margin-top: 3px; }
     .gp-opt-meta:empty { display: none; }
@@ -326,6 +334,7 @@
     .quiz-loading .spinner { margin: 0 auto 16px; }
     .quiz-loading-text { font-size: 10px; color: var(--gray); letter-spacing: 0.12em; text-transform: uppercase; }
     .quiz-result { padding: 32px 20px; }
+    .quiz-result .gt-back-top { padding-top: 0; margin-top: -14px; }
     .quiz-result-label { font-size: 10px; color: var(--gray); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 16px; }
     .quiz-result-cover { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; margin-bottom: 20px; border: 1px solid var(--line); cursor: pointer; }
     /* 抽卡結果頁的藝人／專輯／等級置中（介紹內文仍靠左，長段落置中不好讀） */
@@ -530,6 +539,28 @@
       padding: 8px 14px 8px 20px; min-height: 40px;
       position: sticky; top: 0; z-index: 20;
     }
+    /* 找一張來聽／店內挖寶 hub（同 find.html／shop.html 的版面） */
+    .hub-hero { text-align: center; padding: 40px 20px 24px; }
+    .hub-title { font-size: 20px; font-weight: 700; letter-spacing: 0.12em; }
+    .hub-sub { margin-top: 12px; font-size: 10px; color: var(--gray); letter-spacing: 0.05em; line-height: 1.7; }
+    .hub-cards { display: flex; flex-direction: column; border-top: 1px solid var(--line); }
+    .hub-card {
+      position: relative; border: none; border-bottom: 1px solid var(--line); padding: 32px 44px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 16px;
+      background: #fff; transition: background 0.15s, color 0.15s; text-align: center; width: 100%;
+      font-family: var(--mono); text-decoration: none; color: var(--black); font-size: 11px; letter-spacing: 0.04em;
+    }
+    .hub-card-name { font-size: 15px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 6px; }
+    .hub-card-desc { font-size: 10px; color: var(--gray); letter-spacing: 0.05em; line-height: 1.6; }
+    .hub-card-arrow { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 18px; flex-shrink: 0; }
+    .hub-card:active { background: #111; color: #fff; }
+    .hub-card:active .hub-card-desc { color: #bbb; }
+    @media (hover: hover) {
+      .hub-card:hover { background: #111; color: #fff; }
+      .hub-card:hover .hub-card-desc { color: #bbb; }
+    }
+    .hub-foot { padding: 22px 20px 30px; text-align: center; font-size: 9px; color: var(--gray); letter-spacing: 0.1em; }
+    .hub-foot a { color: var(--gray); }
     .game-back-btn {
       background: none; border: none; padding: 0; font-family: var(--mono); font-size: 11px;
       letter-spacing: 0.08em; color: var(--gray); cursor: pointer; transition: color 0.15s;
@@ -932,6 +963,20 @@
   </div>
 </div>
 
+<!-- 找一張來聽／店內挖寶 hub（2026-10-19 搬進 index.html）：
+     原本是 find.html／shop.html 兩份獨立頁，點「直接來一張」等於換一份文件，iOS 把點連結那一下的
+     音訊授權只給 <audio> 元素、不給 AudioContext，第一抽永遠走不到正常路徑（音效無聲、試聽無淡入淡出）。
+     hub 搬進同一份文件後，選單上那一下點擊就是頁內手勢，抽卡前音訊已照常武裝。兩個舊網址改成轉址樁。 -->
+<div class="quiz-modal" id="hubModal">
+  <div class="quiz-inner">
+    <div class="game-topbar">
+      <button class="game-back-btn" data-hub-home>↩ 回主頁</button>
+      <span class="game-top-slot"></span>
+    </div>
+    <div id="hubContent"></div>
+  </div>
+</div>
+
 <!-- 猜你喜歡 modal（舊「類型挑片」機制：選類型 → 三位藝人 → 抽一張）-->
 <div class="quiz-modal" id="artistModal">
   <div class="quiz-inner">
@@ -1013,9 +1058,9 @@
 </footer>
 
 <script src="card-preview-status.js?v=1"></script>
-<script src="dip-player.js?v=44"></script>
-<script src="dip-draw-anim.js?v=2"></script>
-<script src="dip-genre-tree.js?v=2"></script>
+<script src="dip-player.js?v=49"></script>
+<script src="dip-draw-anim.js?v=3"></script>
+<script src="dip-genre-tree.js?v=4"></script>
 <script src="dip-artist-intro.js?v=2"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -2736,6 +2781,53 @@
     });
   }
 
+  // 找一張來聽／店內挖寶 hub 的內容（文案與 find.html／shop.html 一致）
+  const HUB_DEFS = {
+    find: {
+      title: '找一張來聽', sub: '不知道從何聽起？<br>挑一種方式，挖出屬於你的那張。',
+      cards: [
+        ['quiz', '心情選歌', '回答幾個問題，讓心情帶你找到一張唱片。'],
+        ['genre', '類型挑片', '從大類一路選到細分類型，挖出那張。'],
+        ['artist', '猜你喜歡', '選個領域，用三位藝人的品味猜出你會喜歡的。'],
+        ['random', '直接來一張', '不想選？隨機抽一張你沒聽過的。'],
+      ],
+      foot: '<a href="pvp.html">想跟人拚品味？→ 品味生死鬥</a>',
+    },
+    shop: {
+      title: '店內挖寶', sub: '不知從何挑起？<br>幫你從架上挑一張。',
+      cards: [
+        ['shop-all.html', '所有唱片', '架上每一張攤開來，點開看介紹。'],
+        ['quiz', '心情選歌', '回答幾個問題，從架上挑一張接得住你今天心情的。'],
+        ['genre', '類型挑片', '選一個大類，從店裡這一類抽一張。'],
+        ['artist', '猜你喜歡', '選個領域和三位藝人，從架上猜出你會喜歡的。'],
+        ['random', '直接來一張', '不想選？從架上隨機抽一張。'],
+      ],
+      foot: '<a href="/#find">想從整個資料庫挖？→ 找一張來聽</a>',
+    },
+  };
+  function renderHub(kind) {
+    const d = HUB_DEFS[kind];
+    const host = document.getElementById('hubContent');
+    if (!d || !host) return;
+    host.innerHTML = `
+      <div class="hub-hero"><div class="hub-title">${d.title}</div><div class="hub-sub">${d.sub}</div></div>
+      <div class="hub-cards">
+        ${d.cards.map(([go, name, desc]) => {
+          const inner = `<div><div class="hub-card-name">${name}</div><div class="hub-card-desc">${desc}</div></div><span class="hub-card-arrow">→</span>`;
+          return go.endsWith('.html')
+            ? `<a class="hub-card" href="${go}">${inner}</a>`
+            : `<button class="hub-card" type="button" data-hub-go="${go}">${inner}</button>`;
+        }).join('')}
+      </div>
+      <div class="hub-foot">${d.foot}</div>`;
+  }
+  document.addEventListener('click', (e) => {
+    const go = e.target.closest('[data-hub-go]');
+    if (go) { setActiveTab(go.dataset.hubGo); return; }
+    // hub 的「回主頁」：店內模式要離開 ?shop=1，一律換回乾淨首頁
+    if (e.target.closest('[data-hub-home]')) { if (SHOP_MODE) location.href = 'index.html'; else setActiveTab('home'); }
+  });
+
   // 遊戲頁模式：把全站唯一的自動試聽開關與登入區搬進遊戲頂欄，離開遊戲再搬回站頂。
   // 搬的是同一組 DOM 節點（不是複製）：事件與狀態都跟著走，updateAuthUI 之後照樣找得到 #authStatus。
   function moveGameChrome(modalId) {
@@ -2764,8 +2856,9 @@
   function setActiveTab(tab) {
     // 卡牌對戰為獨立頁面，直接導向
     if (tab === 'pvp') { location.href = 'pvp.html'; return; }
-    if (tab === 'find') { location.href = 'find.html'; return; }   // 三個選片遊戲的 hub 頁
-    if (tab === 'shop') { location.href = 'shop.html'; return; }   // 店內挖寶 hub 頁
+    // 兩個 hub 現在是頁內畫面（hubModal）；跨「店內／全站」模式才換頁（SHOP_MODE 綁在網址參數上）
+    if (tab === 'find' && SHOP_MODE) { location.href = '/#find'; return; }
+    if (tab === 'shop' && !SHOP_MODE) { location.href = '/?shop=1#shop'; return; }
     if (tab === 'music-map') { location.href = 'music-map.html'; return; }
     if (tab === 'battle') { location.href = 'battle.html'; return; }
     if (tab === 'roguelike') { location.href = 'roguelike.html'; return; }
@@ -2778,7 +2871,8 @@
     // 三個選片遊戲走「遊戲頁模式」：站頂 logo／頂欄／主分頁列全收，畫面只剩遊戲
     const gameModal = tab === 'quiz' ? 'quizModal'
       : (tab === 'artist' || tab === 'random') ? 'artistModal'
-      : tab === 'genre' ? 'genreModal' : null;
+      : tab === 'genre' ? 'genreModal'
+      : (tab === 'find' || tab === 'shop') ? 'hubModal' : null;
     document.body.classList.toggle('game-page', !!gameModal);
     moveGameChrome(gameModal);
     applyTawkVisibility();
@@ -2786,7 +2880,7 @@
     document.querySelectorAll('.main-tab').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
     document.body.style.overflow = '';
     // 先收起所有內嵌面板
-    ['quizModal', 'artistModal', 'genreModal', 'historyModal', 'collectionModal', 'albumSearchModal'].forEach(id => document.getElementById(id).classList.remove('open'));
+    ['quizModal', 'artistModal', 'genreModal', 'hubModal', 'historyModal', 'collectionModal', 'albumSearchModal'].forEach(id => document.getElementById(id).classList.remove('open'));
 
     // 「今天聽什麼？」首頁 hub
     const homeHub = document.getElementById('homeHub');
@@ -2813,6 +2907,12 @@
 
     history.replaceState(null, '', '#' + tab);
 
+    if (tab === 'find' || tab === 'shop') {
+      renderHub(tab);
+      document.getElementById('hubModal').classList.add('open');
+      window.scrollTo(0, 0);
+      return;
+    }
     if (tab === 'quiz') {
       document.getElementById('quizModal').classList.add('open');
       (quizQs.length ? Promise.resolve() : loadQuizData()).then(() => startQuiz());
@@ -2831,6 +2931,13 @@
     if (tab === 'random') {
       // 直接來一張：沿用猜你喜歡的結果 UI，但不選類型、不選歌手
       document.getElementById('artistModal').classList.add('open');
+      // 2026-10-19：這是唯一「一進頁就抽、使用者還沒碰過這份文件」的流程（從 shop.html／find.html
+      // 點過來是換了一份文件）。iOS 會把點連結那一下的授權帶進新文件，但只有一小段時間；原本要等
+      // loadQuizData → 卡池 → 店內庫存 幾次 Firestore 往返之後才武裝音訊，早就過了窗口，自動試聽
+      // 於是「顯示在播、沒聲音」（店主 2026-10-19 錄影：抽卡音效有、試聽無聲）。改成進頁第一件事
+      // 就武裝（有開自動試聽才會動作），keep-alive 保留 25 秒蓋過載入時間。店主不要多一顆「抽一張」鈕。
+      gpEnsurePlayer({ hold: 25000 });
+      audioDebugSnapshot('arm(random@boot)');
       (quizReels.length ? Promise.resolve() : loadQuizData()).then(() => startRandomPick());
       return;
     }
@@ -5519,7 +5626,7 @@ ${seenList}
   // 一律呼叫 unlock：手勢外它會自己判斷（inUserGesture），不會去動還在墊場的 keep-alive。
   // grant=true 只用在「使用者自己按了試聽鈕」。不帶 grant 時 unlock 會自己判斷授權，
   // 沒開自動播放就完全不武裝音訊——碰一下卡片不會再停掉玩家正在聽的串流。
-  function gpEnsurePlayer({ grant = false } = {}) {
+  function gpEnsurePlayer({ grant = false, hold = 0 } = {}) {
     if (!window.DipPlayer) return;
     let el = document.getElementById('gpPlayerMount');
     if (!el) {
@@ -5529,7 +5636,7 @@ ${seenList}
       document.body.appendChild(el);
     }
     window.DipPlayer.mount(el, { hidden: true });
-    window.DipPlayer.unlock?.({ grant });
+    window.DipPlayer.unlock?.({ grant, hold });
   }
 
   // ── 自動試聽開關：全站一顆，低調掛在頂欄登入區旁邊 ──
@@ -5543,13 +5650,30 @@ ${seenList}
     if (!slot) return null;
     _autoplayToggle = window.DipPlayer.createToggle(slot, {
       className: 'is-plain',
+      // 只切開關不武裝音訊：切開關本身不該停掉玩家正在聽的串流。真的有東西要播
+      //（在結果頁上開啟）才由 onToggle 用同一下手勢起播，起播才搶焦點（2026-10-18）。
+      armOnEnable: false,
+      onToggle: (enabled) => enabled && gpPlayCurrentResultFromToggle(),
       hints: {
         first: '♪ 點這裡開啟自動試聽',
         auto: '♪ 自動試聽中 · 點這裡可關閉',
+        enabled: '♪ 自動試聽已開啟 · 抽到卡就會播放',
+        interrupted: '♪ 試聽被其他音訊打斷 · 再按一次播放鍵',
         revoked: '偵測到你在聽其他音樂 · 已暫停自動試聽'
       }
     });
     return _autoplayToggle;
+  }
+  // 在結果頁上把開關打開＝「我要聽這一張」：用這一下手勢直接起播（iOS 要同步手勢）。
+  // 回傳 true 代表真的開始播了；不在結果頁（或已在播）就回 false，開關只記偏好、不碰音訊。
+  function gpPlayCurrentResultFromToggle() {
+    const modal = document.querySelector('.quiz-modal.open');
+    if (!modal || !modal.querySelector('[data-gp-action="preview"]') || !window.DipPlayer) return false;
+    const r = modal.id === 'quizModal' ? lastQuizResult : lastGpResult;
+    if (!r) return false;
+    if (gpPreviewStarted && ['loading', 'playing', 'stopping'].includes(gpPlayerState.status)) return false;
+    gpPlayPreview(true, r);
+    return true;
   }
   // 玩家沒開自動試聽時，點唱片不出聲；提示指向頂欄的開關，才不會以為是壞掉。
   function autoplayBlocked() {
@@ -5563,7 +5687,7 @@ ${seenList}
   // 抽卡入口與流程內的每一下點擊（首頁卡片、類型/藝人選項、再一張、特殊抽卡券…）都先解鎖，
   // 之後結果頁的自動播放才有授權。capture 確保跑在各自 click handler 之前。
   document.addEventListener('pointerdown', (e) => {
-    if (e.target.closest('.homehub-card, #artistContent, #genreContent, [data-special-draw], [data-collect]')) gpEnsurePlayer();
+    if (e.target.closest('.homehub-card, #hubContent, #artistContent, #genreContent, [data-special-draw], [data-collect]')) gpEnsurePlayer();
   }, true);
 
   function gpPlayPreview(manual = true, result = null) {
@@ -5607,7 +5731,7 @@ ${seenList}
     </div>`;
   }
 
-  // ── 抽卡動畫接線（引擎在 dip-draw-anim.js?v=2，四處共用）──────────────
+  // ── 抽卡動畫接線（引擎在 dip-draw-anim.js?v=3，四處共用）──────────────
   // 心情選歌／類型挑片／直接來一張都走 profile front（gameConfig/drawAnimation）；
   // 對戰的戰利品揭曉在 battle.html 走 profile battle（gameConfig/drawAnimationBattle）。
   DipDrawAnim.configure({
@@ -5638,7 +5762,7 @@ ${seenList}
     host: () => document.getElementById('genreContent'),
     loadCardPool: loadGamePool,
     topOnly: SHOP_MODE,                         // 店內挖寶只選大類
-    backHref: SHOP_MODE ? 'shop.html' : 'find.html',
+    onBack: () => setActiveTab(SHOP_MODE ? 'shop' : 'find'),
     onError: (e) => console.warn('[genre-tree]', e),
     onResult: async ({ card, path, pathZh, anim }) => {
       gpResultHost = 'genreContent';
@@ -5910,8 +6034,14 @@ ${seenList}
     _saveGpSeen();
     if (!result._streaming && result.reason) _saveReasonWords(result.reason);
 
+    // 結果頁左上也放「← 換個類型」（與選單畫面的「← 上一層」同位置同樣式；2026-10-19 店主：
+    // 左上角要有換個類型）。類型挑片回到大類選單、猜你喜歡回到領域選單；直接來一張沒有類型可換。
+    const gpTopBack = result._mode === 'tree'
+      ? '<button class="gt-back-top" data-gt-restart>← 換個類型</button>'
+      : (!gpIsRandom ? '<button class="gt-back-top" data-gp-action="retry">← 換個類型</button>' : '');
     document.getElementById(gpResultHost).innerHTML = `
       <div class="quiz-result">
+        ${gpTopBack}
         <div class="quiz-result-label">為你挖出的那張</div>
         ${coverHtml}
         <div class="quiz-result-artist" data-artist-intro="${escapeCollectionHtml(result.artist || '')}">${result.artist || ''}</div>
@@ -6243,7 +6373,7 @@ ${seenList}
     document.addEventListener('click', (e) => {
       if (e.target.closest('[data-hub-back]')) setActiveTab('home');
       // 三個選片遊戲的上一層是 find.html 這個 hub，不是首頁
-      if (e.target.closest('[data-game-back]')) location.href = SHOP_MODE ? 'shop.html' : 'find.html';
+      if (e.target.closest('[data-game-back]')) setActiveTab(SHOP_MODE ? 'shop' : 'find');
     });
 
     // 店內挖寶：遊戲頁左上的返回鍵改指 shop.html，字也跟著改
@@ -6261,8 +6391,8 @@ ${seenList}
 
     // 有效路由：直接導向，否則一律落在「今天聽什麼？」首頁
     const valid = window.__APP_MODE__
-      ? ['home', 'quiz', 'genre', 'artist', 'random', 'history', 'collection', 'album-search']
-      : ['home', 'used', 'new', 'quiz', 'genre', 'artist', 'random', 'history', 'archive', 'collection', 'album-search'];
+      ? ['home', 'find', 'shop', 'quiz', 'genre', 'artist', 'random', 'history', 'collection', 'album-search']
+      : ['home', 'find', 'shop', 'used', 'new', 'quiz', 'genre', 'artist', 'random', 'history', 'archive', 'collection', 'album-search'];
     setActiveTab(valid.includes(target) ? target : 'home');
   })();
 

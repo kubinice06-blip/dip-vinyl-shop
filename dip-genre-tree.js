@@ -7,9 +7,10 @@
  * 兩份都是 scripts/build-genre-tree.mjs 產生的靜態檔，走瀏覽器快取，抽卡零 API。
  *
  * 用法（index.html 接線）：
- *   DipGenreTree.configure({ host, loadCardPool, onResult, onError, topOnly, backHref });
+ *   DipGenreTree.configure({ host, loadCardPool, onResult, onError, topOnly, backHref, onBack });
  *   topOnly：只選大類、選了就抽（店內挖寶用，2026-10-07 店主：「只需大分類就好，細分不用」），
- *            大類只列卡池裡有卡的，按鈕附張數。backHref：第一層「回上一頁」要去的頁面。
+ *            大類只列卡池裡有卡的，按鈕附張數。backHref：第一層「回上一頁」要去的頁面；
+ *            onBack 給了就改呼叫它（hub 搬進同一份文件後走頁內切換，不換頁）。
  *   DipGenreTree.start();
  *
  * onResult 收到 { artist, album, path, pathZh, ratings } 後，由呼叫端沿用既有的
@@ -19,7 +20,8 @@
   'use strict';
 
   const DATA = { tree: null, cards: null, promise: null };
-  let cfg = { host: null, loadCardPool: null, onResult: null, onError: null, topOnly: false, backHref: 'find.html' };
+  let cfg = { host: null, loadCardPool: null, onResult: null, onError: null, topOnly: false, backHref: 'find.html', onBack: null };
+  const leave = () => { if (cfg.onBack) cfg.onBack(); else location.href = cfg.backHref; };
   let seen = new Set();          // 本次 session 抽過的卡，跨層保留
   let path = [];                 // 目前選到的節點 [{id, zh}]
   let pool = null;               // seed 卡池（由 loadCardPool 提供）
@@ -90,16 +92,21 @@
     return n;
   }
 
-  function chips(items, back, counts) {
+  // 晶片＋底部導覽。導覽只放「這一層隨便挑」；「上一層」改到內容區左上（backTop），
+  // 跟遊戲頂欄的「↩ 找一張來聽」同位置同樣式，讓人直覺按得到（2026-10-18 店主：
+  // 原本在最下方又是虛線，太不明顯）。第一層不另放返回鈕——頂欄那顆就是。
+  function chips(items, opts) {
+    const o = opts || {};
+    const nav = [];
+    if (o.any) nav.push('<button class="gt-any" data-gt-any>這一層隨便挑 →</button>');
+    if (o.bottomBack) nav.push(`<button class="gt-back" data-gt-back>${o.bottomBack}</button>`);
     return `
       <div class="gt-chips">
-        ${items.map(x => `<button class="gt-chip" data-gt-pick="${esc(x.id)}">${esc(x.zh)}${counts ? ` <span class="gt-chip-n">${counts[x.id]}</span>` : ''}</button>`).join('')}
+        ${items.map(x => `<button class="gt-chip" data-gt-pick="${esc(x.id)}">${esc(x.zh)}${o.counts ? ` <span class="gt-chip-n">${o.counts[x.id]}</span>` : ''}</button>`).join('')}
       </div>
-      <div class="gt-nav">
-        ${path.length ? `<button class="gt-any" data-gt-any>這一層隨便挑 →</button>` : ''}
-        <button class="gt-back" data-gt-back>${back}</button>
-      </div>`;
+      ${nav.length ? `<div class="gt-nav">${nav.join('')}</div>` : ''}`;
   }
+  const backTop = (label) => `<button class="gt-back-top" data-gt-back aria-label="回到上一層">${label}</button>`;
 
   function currentNode() {
     let node = null, list = DATA.tree.genres;
@@ -121,7 +128,7 @@
           <div class="quiz-question">想聽哪一類？</div>
           <div class="gt-sub">選一個大類，從店裡現有的唱片抽一張。</div>
         </div>
-        ${chips(DATA.tree.genres.filter(g => n[g.id]), '↩ 回上一頁', n)}`);
+        ${chips(DATA.tree.genres.filter(g => n[g.id]), { counts: n })}`);
       return;
     }
     if (!path.length) {
@@ -130,15 +137,16 @@
           <div class="quiz-question">想聽哪一類？</div>
           <div class="gt-sub">選一個大類，再一路選到你要的那種音樂。</div>
         </div>
-        ${chips(DATA.tree.genres, '↩ 回上一頁')}`);
+        ${chips(DATA.tree.genres)}`);
       return;
     }
     render(`
-      <div class="gt-head">
+      <div class="gt-head gt-head-deep">
+        ${backTop('← 上一層')}
         <div class="gt-crumb">${path.map(p => esc(p.zh)).join(' › ')}</div>
         <div class="quiz-question">${path.length === 1 ? '再細一點' : '還可以更細'}</div>
       </div>
-      ${chips(children, '← 上一層')}`);
+      ${chips(children, { any: true })}`);
   }
 
   async function pick() {
@@ -196,12 +204,13 @@
       if (e.target.closest('[data-gt-back]')) {
         // topOnly 只有一層：大類選單上的「回上一頁」離開；錯誤頁的「換一層」回大類選單
         if (cfg.topOnly) {
-          if (e.target.closest('.gt-nav')) location.href = cfg.backHref;
+          // 大類選單上已不放返回鈕（遊戲頂欄的「↩ 店內挖寶」就是）；錯誤頁的「換一層」回大類選單
+          if (e.target.closest('.gt-nav')) leave();
           else { path = []; renderStep(); }
           return;
         }
         if (path.length) { path.pop(); renderStep(); }
-        else location.href = cfg.backHref;
+        else leave();
         return;
       }
       if (e.target.closest('[data-gt-again]')) { pick(); return; }

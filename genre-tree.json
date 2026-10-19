@@ -1,5 +1,5 @@
 {
- "產出日期": "2026-10-14",
+ "產出日期": "2026-10-18",
  "minNode": 20,
  "genres": [
   {
@@ -16,7 +16,7 @@
     {
      "id": "punk-wave",
      "zh": "龐克新浪潮",
-     "count": 891,
+     "count": 892,
      "children": [
       {
        "id": "punk",
@@ -26,12 +26,12 @@
       {
        "id": "post-punk",
        "zh": "後龐克",
-       "count": 330
+       "count": 331
       },
       {
        "id": "new-wave",
        "zh": "新浪潮",
-       "count": 232
+       "count": 233
       },
       {
        "id": "no-wave",
@@ -47,6 +47,78 @@
        "id": "industrial",
        "zh": "工業",
        "count": 33
+      }
+     ]
+    },
+    {
+     "id": "jrock-asia",
+     "zh": "日亞搖滾",
+     "count": 729,
+     "children": [
+      {
+       "id": "tw",
+       "zh": "台灣",
+       "count": 284
+      },
+      {
+       "id": "jp",
+       "zh": "日本",
+       "count": 266
+      },
+      {
+       "id": "cn",
+       "zh": "中國",
+       "count": 54
+      },
+      {
+       "id": "kr",
+       "zh": "韓國",
+       "count": 53
+      },
+      {
+       "id": "id",
+       "zh": "印尼",
+       "count": 28
+      },
+      {
+       "id": "hk",
+       "zh": "香港",
+       "count": 20
+      },
+      {
+       "id": "ph",
+       "zh": "菲律賓",
+       "count": 8
+      },
+      {
+       "id": "my",
+       "zh": "馬來西亞",
+       "count": 6
+      },
+      {
+       "id": "th",
+       "zh": "泰國",
+       "count": 4
+      },
+      {
+       "id": "kh",
+       "zh": "柬埔寨",
+       "count": 2
+      },
+      {
+       "id": "vn",
+       "zh": "越南",
+       "count": 1
+      },
+      {
+       "id": "sg",
+       "zh": "新加坡",
+       "count": 1
+      },
+      {
+       "id": "pk",
+       "zh": "巴基斯坦",
+       "count": 1
       }
      ]
     },
@@ -85,7 +157,7 @@
     {
      "id": "metal",
      "zh": "金屬",
-     "count": 611,
+     "count": 609,
      "children": [
       {
        "id": "trad",
@@ -115,12 +187,12 @@
       {
        "id": "doom",
        "zh": "厄運與粗厚",
-       "count": 93
+       "count": 91
       },
       {
        "id": "black",
        "zh": "黑金屬",
-       "count": 78
+       "count": 77
       }
      ]
     },
@@ -128,13 +200,33 @@
      "id": "classic",
      "zh": "老搖滾",
      "count": 573,
-     "children": []
-    },
-    {
-     "id": "jrock-asia",
-     "zh": "日亞搖滾",
-     "count": 372,
-     "children": []
+     "children": [
+      {
+       "id": "50s",
+       "zh": "50 年代",
+       "count": 14
+      },
+      {
+       "id": "60s",
+       "zh": "60 年代",
+       "count": 92
+      },
+      {
+       "id": "70s",
+       "zh": "70 年代",
+       "count": 300
+      },
+      {
+       "id": "80s",
+       "zh": "80 年代",
+       "count": 95
+      },
+      {
+       "id": "later",
+       "zh": "90 年代之後",
+       "count": 59
+      }
+     ]
     },
     {
      "id": "dream-post",
@@ -258,7 +350,7 @@
     {
      "id": "ambient",
      "zh": "Ambient / Drone",
-     "count": 738,
+     "count": 748,
      "children": []
     },
     {
@@ -270,13 +362,7 @@
     {
      "id": "downtempo",
      "zh": "Trip-hop / Downtempo",
-     "count": 372,
-     "children": []
-    },
-    {
-     "id": "synth",
-     "zh": "Synthpop / Electro",
-     "count": 353,
+     "count": 371,
      "children": []
     },
     {
@@ -286,9 +372,15 @@
      "children": []
     },
     {
+     "id": "synth",
+     "zh": "Synthpop / Electro",
+     "count": 343,
+     "children": []
+    },
+    {
      "id": "house",
      "zh": "House",
-     "count": 347,
+     "count": 336,
      "children": []
     },
     {
@@ -465,7 +557,7 @@
     {
      "id": "romantic",
      "zh": "浪漫時期",
-     "count": 239,
+     "count": 238,
      "children": []
     },
     {
