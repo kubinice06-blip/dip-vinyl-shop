@@ -7,9 +7,10 @@
  * 兩份都是 scripts/build-genre-tree.mjs 產生的靜態檔，走瀏覽器快取，抽卡零 API。
  *
  * 用法（index.html 接線）：
- *   DipGenreTree.configure({ host, loadCardPool, onResult, onError, topOnly, backHref });
+ *   DipGenreTree.configure({ host, loadCardPool, onResult, onError, topOnly, backHref, onBack });
  *   topOnly：只選大類、選了就抽（店內挖寶用，2026-10-07 店主：「只需大分類就好，細分不用」），
- *            大類只列卡池裡有卡的，按鈕附張數。backHref：第一層「回上一頁」要去的頁面。
+ *            大類只列卡池裡有卡的，按鈕附張數。backHref：第一層「回上一頁」要去的頁面；
+ *            onBack 給了就改呼叫它（hub 搬進同一份文件後走頁內切換，不換頁）。
  *   DipGenreTree.start();
  *
  * onResult 收到 { artist, album, path, pathZh, ratings } 後，由呼叫端沿用既有的
@@ -19,7 +20,8 @@
   'use strict';
 
   const DATA = { tree: null, cards: null, promise: null };
-  let cfg = { host: null, loadCardPool: null, onResult: null, onError: null, topOnly: false, backHref: 'find.html' };
+  let cfg = { host: null, loadCardPool: null, onResult: null, onError: null, topOnly: false, backHref: 'find.html', onBack: null };
+  const leave = () => { if (cfg.onBack) cfg.onBack(); else location.href = cfg.backHref; };
   let seen = new Set();          // 本次 session 抽過的卡，跨層保留
   let path = [];                 // 目前選到的節點 [{id, zh}]
   let pool = null;               // seed 卡池（由 loadCardPool 提供）
@@ -203,12 +205,12 @@
         // topOnly 只有一層：大類選單上的「回上一頁」離開；錯誤頁的「換一層」回大類選單
         if (cfg.topOnly) {
           // 大類選單上已不放返回鈕（遊戲頂欄的「↩ 店內挖寶」就是）；錯誤頁的「換一層」回大類選單
-          if (e.target.closest('.gt-nav')) location.href = cfg.backHref;
+          if (e.target.closest('.gt-nav')) leave();
           else { path = []; renderStep(); }
           return;
         }
         if (path.length) { path.pop(); renderStep(); }
-        else location.href = cfg.backHref;
+        else leave();
         return;
       }
       if (e.target.closest('[data-gt-again]')) { pick(); return; }

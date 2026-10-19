@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-19（同日第二筆）｜dip-vinyl-shop｜找一張來聽／店內挖寶兩個 hub 搬進 index.html（店主：「永遠以正常狀態運行」）
+
+- **起因**：直接來一張在 iOS 第一抽能不能走正常路徑（音效＋淡入淡出），取決於 iOS 當下是否把點連結那一下的授權算給 AudioContext，時好時壞（同日兩張 audiodebug 截圖一張 running 一張 suspended）。根本原因是 hub 在另一份文件，抽卡前沒有頁內手勢。店主裁定要永遠正常，唯一解法是讓那一下點擊發生在同一份文件。
+- **改法**：index.html 新增 `hubModal`／`#hubContent`，`renderHub('find'|'shop')` 以 `HUB_DEFS` 畫出與 find.html／shop.html 相同的版面（`.hub-*` 樣式）；`setActiveTab('find'|'shop')` 改成頁內畫面（跨店內／全站模式才換頁，因 `SHOP_MODE` 綁在 `?shop=1`）；hub 走 `game-page` 模式，頂欄「↩ 回主頁」（店內模式回乾淨首頁）、自動試聽開關也在 hub 上。遊戲返回鍵 `[data-game-back]` 與類型挑片 `onBack`（`dip-genre-tree.js?v=4` 新選項，取代 `backHref` 換頁）都改 `setActiveTab` 頁內回 hub。`pointerdown` 捕獲武裝加 `#hubContent`——點選單那一下就把音訊武裝好。`shop.html`／`find.html` 改成轉址樁（`/?shop=1#shop`、`/#find`，保留 OG），`shop-all.html` 的連結直指新位置。路由 valid 加 `find`／`shop`。
+- **保留**：進頁即武裝、元素後備、共用 context 都留著，給直接深連結 `#random`（分享連結、PWA 捷徑）那種仍無手勢的情況用。
+- **主要檔案**：`index.html`、`dip-genre-tree.js`、`shop.html`、`find.html`、`shop-all.html`
+- **驗證**：本機 Playwright 7/7——店內 hub 5 張卡、點直接來一張同一份文件內開抽（`unlock` 在手勢內被呼叫、ctx running）、遊戲返回鍵與類型挑片返回都頁內回 hub、全站 hub 4 張卡、`shop.html` 轉址到 `/?shop=1#shop`。**真機待店主實測**。隨 PR #104。
+
 ### 2026-10-19｜dip-vinyl-shop｜店內挖寶「直接來一張」沒有自動試聽：改成一進頁就武裝音訊（不加按鈕）
 
 - **起因**：店主回報店內挖寶的直接來一張不會自動播放，其他三個遊戲正常。錄影（iPhone Chrome，正式站）顯示：抽卡動畫音效全有，試聽無聲，圖示停在 ⏸、提示「自動試聽中」——播放器自以為在播。

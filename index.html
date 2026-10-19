@@ -539,6 +539,28 @@
       padding: 8px 14px 8px 20px; min-height: 40px;
       position: sticky; top: 0; z-index: 20;
     }
+    /* 找一張來聽／店內挖寶 hub（同 find.html／shop.html 的版面） */
+    .hub-hero { text-align: center; padding: 40px 20px 24px; }
+    .hub-title { font-size: 20px; font-weight: 700; letter-spacing: 0.12em; }
+    .hub-sub { margin-top: 12px; font-size: 10px; color: var(--gray); letter-spacing: 0.05em; line-height: 1.7; }
+    .hub-cards { display: flex; flex-direction: column; border-top: 1px solid var(--line); }
+    .hub-card {
+      position: relative; border: none; border-bottom: 1px solid var(--line); padding: 32px 44px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 16px;
+      background: #fff; transition: background 0.15s, color 0.15s; text-align: center; width: 100%;
+      font-family: var(--mono); text-decoration: none; color: var(--black); font-size: 11px; letter-spacing: 0.04em;
+    }
+    .hub-card-name { font-size: 15px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 6px; }
+    .hub-card-desc { font-size: 10px; color: var(--gray); letter-spacing: 0.05em; line-height: 1.6; }
+    .hub-card-arrow { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 18px; flex-shrink: 0; }
+    .hub-card:active { background: #111; color: #fff; }
+    .hub-card:active .hub-card-desc { color: #bbb; }
+    @media (hover: hover) {
+      .hub-card:hover { background: #111; color: #fff; }
+      .hub-card:hover .hub-card-desc { color: #bbb; }
+    }
+    .hub-foot { padding: 22px 20px 30px; text-align: center; font-size: 9px; color: var(--gray); letter-spacing: 0.1em; }
+    .hub-foot a { color: var(--gray); }
     .game-back-btn {
       background: none; border: none; padding: 0; font-family: var(--mono); font-size: 11px;
       letter-spacing: 0.08em; color: var(--gray); cursor: pointer; transition: color 0.15s;
@@ -941,6 +963,20 @@
   </div>
 </div>
 
+<!-- 找一張來聽／店內挖寶 hub（2026-10-19 搬進 index.html）：
+     原本是 find.html／shop.html 兩份獨立頁，點「直接來一張」等於換一份文件，iOS 把點連結那一下的
+     音訊授權只給 <audio> 元素、不給 AudioContext，第一抽永遠走不到正常路徑（音效無聲、試聽無淡入淡出）。
+     hub 搬進同一份文件後，選單上那一下點擊就是頁內手勢，抽卡前音訊已照常武裝。兩個舊網址改成轉址樁。 -->
+<div class="quiz-modal" id="hubModal">
+  <div class="quiz-inner">
+    <div class="game-topbar">
+      <button class="game-back-btn" data-hub-home>↩ 回主頁</button>
+      <span class="game-top-slot"></span>
+    </div>
+    <div id="hubContent"></div>
+  </div>
+</div>
+
 <!-- 猜你喜歡 modal（舊「類型挑片」機制：選類型 → 三位藝人 → 抽一張）-->
 <div class="quiz-modal" id="artistModal">
   <div class="quiz-inner">
@@ -1024,7 +1060,7 @@
 <script src="card-preview-status.js?v=1"></script>
 <script src="dip-player.js?v=49"></script>
 <script src="dip-draw-anim.js?v=3"></script>
-<script src="dip-genre-tree.js?v=3"></script>
+<script src="dip-genre-tree.js?v=4"></script>
 <script src="dip-artist-intro.js?v=2"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -2745,6 +2781,53 @@
     });
   }
 
+  // 找一張來聽／店內挖寶 hub 的內容（文案與 find.html／shop.html 一致）
+  const HUB_DEFS = {
+    find: {
+      title: '找一張來聽', sub: '不知道從何聽起？<br>挑一種方式，挖出屬於你的那張。',
+      cards: [
+        ['quiz', '心情選歌', '回答幾個問題，讓心情帶你找到一張唱片。'],
+        ['genre', '類型挑片', '從大類一路選到細分類型，挖出那張。'],
+        ['artist', '猜你喜歡', '選個領域，用三位藝人的品味猜出你會喜歡的。'],
+        ['random', '直接來一張', '不想選？隨機抽一張你沒聽過的。'],
+      ],
+      foot: '<a href="pvp.html">想跟人拚品味？→ 品味生死鬥</a>',
+    },
+    shop: {
+      title: '店內挖寶', sub: '不知從何挑起？<br>幫你從架上挑一張。',
+      cards: [
+        ['shop-all.html', '所有唱片', '架上每一張攤開來，點開看介紹。'],
+        ['quiz', '心情選歌', '回答幾個問題，從架上挑一張接得住你今天心情的。'],
+        ['genre', '類型挑片', '選一個大類，從店裡這一類抽一張。'],
+        ['artist', '猜你喜歡', '選個領域和三位藝人，從架上猜出你會喜歡的。'],
+        ['random', '直接來一張', '不想選？從架上隨機抽一張。'],
+      ],
+      foot: '<a href="/#find">想從整個資料庫挖？→ 找一張來聽</a>',
+    },
+  };
+  function renderHub(kind) {
+    const d = HUB_DEFS[kind];
+    const host = document.getElementById('hubContent');
+    if (!d || !host) return;
+    host.innerHTML = `
+      <div class="hub-hero"><div class="hub-title">${d.title}</div><div class="hub-sub">${d.sub}</div></div>
+      <div class="hub-cards">
+        ${d.cards.map(([go, name, desc]) => {
+          const inner = `<div><div class="hub-card-name">${name}</div><div class="hub-card-desc">${desc}</div></div><span class="hub-card-arrow">→</span>`;
+          return go.endsWith('.html')
+            ? `<a class="hub-card" href="${go}">${inner}</a>`
+            : `<button class="hub-card" type="button" data-hub-go="${go}">${inner}</button>`;
+        }).join('')}
+      </div>
+      <div class="hub-foot">${d.foot}</div>`;
+  }
+  document.addEventListener('click', (e) => {
+    const go = e.target.closest('[data-hub-go]');
+    if (go) { setActiveTab(go.dataset.hubGo); return; }
+    // hub 的「回主頁」：店內模式要離開 ?shop=1，一律換回乾淨首頁
+    if (e.target.closest('[data-hub-home]')) { if (SHOP_MODE) location.href = 'index.html'; else setActiveTab('home'); }
+  });
+
   // 遊戲頁模式：把全站唯一的自動試聽開關與登入區搬進遊戲頂欄，離開遊戲再搬回站頂。
   // 搬的是同一組 DOM 節點（不是複製）：事件與狀態都跟著走，updateAuthUI 之後照樣找得到 #authStatus。
   function moveGameChrome(modalId) {
@@ -2773,8 +2856,9 @@
   function setActiveTab(tab) {
     // 卡牌對戰為獨立頁面，直接導向
     if (tab === 'pvp') { location.href = 'pvp.html'; return; }
-    if (tab === 'find') { location.href = 'find.html'; return; }   // 三個選片遊戲的 hub 頁
-    if (tab === 'shop') { location.href = 'shop.html'; return; }   // 店內挖寶 hub 頁
+    // 兩個 hub 現在是頁內畫面（hubModal）；跨「店內／全站」模式才換頁（SHOP_MODE 綁在網址參數上）
+    if (tab === 'find' && SHOP_MODE) { location.href = '/#find'; return; }
+    if (tab === 'shop' && !SHOP_MODE) { location.href = '/?shop=1#shop'; return; }
     if (tab === 'music-map') { location.href = 'music-map.html'; return; }
     if (tab === 'battle') { location.href = 'battle.html'; return; }
     if (tab === 'roguelike') { location.href = 'roguelike.html'; return; }
@@ -2787,7 +2871,8 @@
     // 三個選片遊戲走「遊戲頁模式」：站頂 logo／頂欄／主分頁列全收，畫面只剩遊戲
     const gameModal = tab === 'quiz' ? 'quizModal'
       : (tab === 'artist' || tab === 'random') ? 'artistModal'
-      : tab === 'genre' ? 'genreModal' : null;
+      : tab === 'genre' ? 'genreModal'
+      : (tab === 'find' || tab === 'shop') ? 'hubModal' : null;
     document.body.classList.toggle('game-page', !!gameModal);
     moveGameChrome(gameModal);
     applyTawkVisibility();
@@ -2795,7 +2880,7 @@
     document.querySelectorAll('.main-tab').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
     document.body.style.overflow = '';
     // 先收起所有內嵌面板
-    ['quizModal', 'artistModal', 'genreModal', 'historyModal', 'collectionModal', 'albumSearchModal'].forEach(id => document.getElementById(id).classList.remove('open'));
+    ['quizModal', 'artistModal', 'genreModal', 'hubModal', 'historyModal', 'collectionModal', 'albumSearchModal'].forEach(id => document.getElementById(id).classList.remove('open'));
 
     // 「今天聽什麼？」首頁 hub
     const homeHub = document.getElementById('homeHub');
@@ -2822,6 +2907,12 @@
 
     history.replaceState(null, '', '#' + tab);
 
+    if (tab === 'find' || tab === 'shop') {
+      renderHub(tab);
+      document.getElementById('hubModal').classList.add('open');
+      window.scrollTo(0, 0);
+      return;
+    }
     if (tab === 'quiz') {
       document.getElementById('quizModal').classList.add('open');
       (quizQs.length ? Promise.resolve() : loadQuizData()).then(() => startQuiz());
@@ -5596,7 +5687,7 @@ ${seenList}
   // 抽卡入口與流程內的每一下點擊（首頁卡片、類型/藝人選項、再一張、特殊抽卡券…）都先解鎖，
   // 之後結果頁的自動播放才有授權。capture 確保跑在各自 click handler 之前。
   document.addEventListener('pointerdown', (e) => {
-    if (e.target.closest('.homehub-card, #artistContent, #genreContent, [data-special-draw], [data-collect]')) gpEnsurePlayer();
+    if (e.target.closest('.homehub-card, #hubContent, #artistContent, #genreContent, [data-special-draw], [data-collect]')) gpEnsurePlayer();
   }, true);
 
   function gpPlayPreview(manual = true, result = null) {
@@ -5671,7 +5762,7 @@ ${seenList}
     host: () => document.getElementById('genreContent'),
     loadCardPool: loadGamePool,
     topOnly: SHOP_MODE,                         // 店內挖寶只選大類
-    backHref: SHOP_MODE ? 'shop.html' : 'find.html',
+    onBack: () => setActiveTab(SHOP_MODE ? 'shop' : 'find'),
     onError: (e) => console.warn('[genre-tree]', e),
     onResult: async ({ card, path, pathZh, anim }) => {
       gpResultHost = 'genreContent';
@@ -6282,7 +6373,7 @@ ${seenList}
     document.addEventListener('click', (e) => {
       if (e.target.closest('[data-hub-back]')) setActiveTab('home');
       // 三個選片遊戲的上一層是 find.html 這個 hub，不是首頁
-      if (e.target.closest('[data-game-back]')) location.href = SHOP_MODE ? 'shop.html' : 'find.html';
+      if (e.target.closest('[data-game-back]')) setActiveTab(SHOP_MODE ? 'shop' : 'find');
     });
 
     // 店內挖寶：遊戲頁左上的返回鍵改指 shop.html，字也跟著改
@@ -6300,8 +6391,8 @@ ${seenList}
 
     // 有效路由：直接導向，否則一律落在「今天聽什麼？」首頁
     const valid = window.__APP_MODE__
-      ? ['home', 'quiz', 'genre', 'artist', 'random', 'history', 'collection', 'album-search']
-      : ['home', 'used', 'new', 'quiz', 'genre', 'artist', 'random', 'history', 'archive', 'collection', 'album-search'];
+      ? ['home', 'find', 'shop', 'quiz', 'genre', 'artist', 'random', 'history', 'collection', 'album-search']
+      : ['home', 'find', 'shop', 'used', 'new', 'quiz', 'genre', 'artist', 'random', 'history', 'archive', 'collection', 'album-search'];
     setActiveTab(valid.includes(target) ? target : 'home');
   })();
 
