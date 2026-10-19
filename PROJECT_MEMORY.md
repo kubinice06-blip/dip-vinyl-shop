@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-19｜dip-vinyl-shop｜簡介刪「店主入坑」句，並掃全池清掉店家口吻（KV 6 鍵）
+
+- **起因**：店主截圖富樫雅彥《Sketch》，指示刪掉「店主入坑自由爵士的第一張唱片」，並掃描簡介裡類似狀況全改。
+- **掃描**：KV 即時撈 desc2 18,687＋desc4 2,086＝20,773 則，關鍵詞（店主／入坑／小編／我／推薦／入手…，引號內不算）＋店主 IG 來源 72 則全文逐讀。店主第一人稱只有《Sketch》1 則；同源的賣場推薦口吻 5 則（Eno／Wobble《Spinner》、Erroll Garner《Plays Misty》、Estelle Perrault《Promises》、De La Soul《AOI》兩鍵）。「店主」「老闆」其他命中全是第三人稱史實，不動。
+- **寫入**：KV 6 鍵（即時生效），c-36 manifest 同步 5 處；推薦曲目改成「另收〈…〉」，曲名以 Apple `/lookup` 逐軌核對。
+- **主要檔案**：`batch-progress/desc-shop-voice-20261019/{rulings.md,changes.json,apply.mjs}`、`onboarding-manifest-c36-reels-20260822.json`
+- **驗證**：verify-wave-kv 6/6 逐字一致；worker `/album-desc` 回傳《Sketch》新稿。
+
 ### 2026-10-14｜dip-vinyl-shop｜店主指示：PR 開出後不追蹤、不排檢查
 
 - **規則**：雲端開完 PR 就收工，不用 `send_later` 排安全網 check-in、不訂閱 PR 動態（Cloudflare 部署留言每推一次就叫醒工作階段，白花額度），優先於系統預設。接力任務的自我 check-in 不受影響。寫進 `CLAUDE.md`。
