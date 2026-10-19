@@ -26,6 +26,8 @@
   // 幾秒內若被系統中斷，視為音訊 session 交接的來回，不當成「使用者去聽串流」（見 revokeAutoplayByInterruption）。
   let lastManualPlayAt = 0;
   const MANUAL_PLAY_GRACE_MS = 4000;
+  // 真實試聽正由 <audio> 元素直接播放（Web Audio 起不來時的後備，見 playPreviewElement）
+  let previewElementActive = false;
   let currentPreviewData = null, lastFailCode = '';
   let appleAudioMap = null, appleAudioMapPromise = null;
   // 店主要求：整體音量固定 50%，開頭 1.5 秒淡入、結尾 1.5 秒淡出。
@@ -561,7 +563,7 @@
   function armKeepAliveRelease(holdMs) {
     clearTimeout(keepAliveTimer);
     keepAliveTimer = setTimeout(() => {
-      if (previewBufferSource) return;
+      if (previewBufferSource || previewElementActive) return;
       try {
         if (previewAudio && !previewAudio.paused) {
           previewAudio.loop = false;
@@ -575,7 +577,7 @@
 
   // 切到別的 App／別的分頁而我們沒在播 → 沒有理由再佔著音訊焦點。
   document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState !== 'hidden' || previewBufferSource) return;
+    if (document.visibilityState !== 'hidden' || previewBufferSource || previewElementActive) return;
     try {
       if (previewAudio && !previewAudio.paused) {
         previewAudio.loop = false;
@@ -588,7 +590,7 @@
 
   function fadePreview(toValue, ms) {
     clearInterval(previewVolumeTimer);
-    if (previewGain && audioCtx) {
+    if (previewGain && audioCtx && !previewElementActive) {
       try {
         const now = audioCtx.currentTime;
         const gain = previewGain.gain;
@@ -1178,6 +1180,39 @@
     const source = previewBufferSource;
     previewBufferSource = null;
     disposePreviewBuffer(source);
+    if (previewElementActive) {
+      previewElementActive = false;
+      try { if (previewAudio) { previewAudio.onended = null; previewAudio.pause(); } } catch (_) {}
+    }
+  }
+
+  // Web Audio 起不來時的後備：用 <audio> 元素直接播試聽（2026-10-19）。
+  // iOS Safari 從 shop.html 點「直接來一張」過來的新文件沒有頁內手勢：WebKit 把點連結那一下的
+  // 授權給 HTMLMediaElement（靜音 keep-alive 播得起來），卻不給 AudioContext——resume() 永遠
+  // 掛著、state 停在 suspended、currentTime 一直是 0，source.start() 悄悄無聲而狀態照樣 playing
+  //（店主 2026-10-19 的 audiodebug 截圖）。這條路沒有淡入淡出（iOS 不理 volume），
+  // 但有聲音；一旦之後出現真正的手勢（再一張、播放鍵），ctx 跑起來就回到 Web Audio 路徑。
+  async function playPreviewElement(audio, url, token, durationSec) {
+    try {
+      clearTimeout(keepAliveTimer);
+      audio.loop = false;
+      audio.src = url;
+      audio.currentTime = 0;
+      try { audio.volume = BASE_GAIN; } catch (_) {}
+      const attempt = audio.play();
+      const ok = attempt?.then ? await withTimeout(attempt.then(() => true, () => false), 4000) : true;
+      if (!ok || token !== requestId) { try { audio.pause(); } catch (_) {} return false; }
+      previewElementActive = true;
+      const playMs = Math.min(30500, Math.max(1000, Number(durationSec || 30) * 1000));
+      const finish = () => {
+        if (token !== requestId || !previewElementActive) return;
+        stopPreviewBuffer();
+        emit({ status:'stopped', provider:null });
+      };
+      audio.onended = finish;
+      previewTimer = setTimeout(finish, playMs + 500);
+      return true;
+    } catch (_) { return false; }
   }
 
   function decodePreviewBuffer(bytes) {
@@ -1276,6 +1311,20 @@
         if (previewBufferSource === source) previewBufferSource = null;
         disposePreviewBuffer(source);
         return false;
+      }
+      if (audioCtx.state !== 'running') {
+        // Web Audio 沒跑起來 → 改用 <audio> 元素直接播（見 playPreviewElement 的說明）
+        if (previewBufferSource === source) previewBufferSource = null;
+        disposePreviewBuffer(source);
+        const okEl = await playPreviewElement(audio, track.previewUrl, token, decoded.duration);
+        if (!okEl) { lastFailCode = 'S12'; return false; }
+        currentPreviewData = data;
+        lastPreviewTrackId = track.id || track.previewUrl;
+        return {
+          trackName:track.trackName || '', storeUrl:track.storeUrl || '',
+          attribution:data?.source === 'pinned-file' ? (data.attribution || '店內試聽') : 'Apple Music 試聽',
+          trackId:String(track.id || track.previewUrl), tracks:data?.source === 'itunes-map' ? [] : previewTrackSummary(data)
+        };
       }
       setPreviewLevel(0);
       source.start(0);
@@ -1527,7 +1576,8 @@
       gain: previewGain ? Number(previewGain.gain.value.toFixed(3)) : -1,
       keepAlive: previewAudio ? (previewAudio.paused ? 'paused' : 'playing') : 'none',
       primed: previewPrimed,
-      playing: !!previewBufferSource,
+      playing: !!previewBufferSource || previewElementActive,
+      elem: previewElementActive,
       gesture: inUserGesture(),
       code: lastFailCode || '',
       status: state.status,
