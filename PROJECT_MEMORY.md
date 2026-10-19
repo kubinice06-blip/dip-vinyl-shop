@@ -9,6 +9,7 @@
 - **真機 audiodebug 定案（店主 iOS Safari 截圖）**：`arm(random@boot)` 與 `play(auto)` 時 ctx 都是 `suspended`、`t:0`，8 秒後仍 `suspended` 而 keep-alive `<audio>` 已 `playing`、狀態 `playing/itunes`——**WebKit 把點連結帶進新文件的授權給 HTMLMediaElement，卻不給 AudioContext**（resume 永遠掛著），`source.start()` 悄悄無聲。這才是根因；前兩輪（提前武裝、共用 context）方向對但碰不到它。
 - **最終修法（`dip-player.js?v=48`）**：`playItunes` 在 resume 逾時、ctx 仍非 running 時，改走 `playPreviewElement()`——把試聽網址直接塞進那顆 `<audio>` 元素播（無淡入淡出，iOS 不理 volume；`previewElementActive` 旗標讓 keep-alive 逾時釋放、背景釋放、fadePreview 都避開它；`ended`／30.5 秒 → stopped；`stopPreviewBuffer` 一併收）。一旦之後有真手勢（再一張、播放鍵）ctx 跑起來就回 Web Audio 路徑。失敗碼 S12。
 - **驗證**：本機 Playwright 模擬「ctx 永遠 suspended」：auto 播放走元素、狀態 playing、`elem:true`；播完 ended → stopped；`stop({fade})` 立即暫停。原 16 項開關／寬限／選單測試仍全過。
+- **v49 兩處收尾（店主第二張截圖：元素後備有聲但 loading 5.8s → playing 13.0s，且切出 App 仍續播）**：(1) `playItunes` 改在**下載解碼之前**判斷 ctx 起不起得來——手勢外只等 resume 300ms（手勢內仍 1.5s），起不來直接走元素、不再先下載解碼再等逾時；(2) 元素模式 `visibilitychange` hidden 與 `pagehide` 一律 `stop()`——iOS 會讓 `<audio>` 在背景續播，Web Audio 路徑不會，試聽是前景體驗。抽卡音效在無手勢的第一抽仍無聲（ctx 起不來，WebKit 限制，無解）。
 - **主要檔案**：`index.html`、`dip-player.js`、`battle.html`／`roguelike.html`／`shop-all.html`（只升版）
 - **驗證**：本機 Playwright（自動試聽 on）：`?shop=1#random` 進頁即 ctx running、keep-alive playing，無起跑鈕，12 秒後直接出結果頁。**真機 iOS 待店主在預覽網址實測**；若仍無聲，請用 `?shop=1&audiodebug=1#random` 錄影。隨 PR #104。
 

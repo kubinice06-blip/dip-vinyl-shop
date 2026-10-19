@@ -577,7 +577,11 @@
 
   // 切到別的 App／別的分頁而我們沒在播 → 沒有理由再佔著音訊焦點。
   document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState !== 'hidden' || previewBufferSource || previewElementActive) return;
+    if (document.visibilityState !== 'hidden') return;
+    // 元素模式：iOS 會讓 <audio> 在背景續播（Web Audio 路徑切到背景會自己停），
+    // 試聽是前景的體驗，切出去就停（店主 2026-10-19：「跳出去音樂還在播放」）。
+    if (previewElementActive) { try { stop(); } catch (_) {} return; }
+    if (previewBufferSource) return;
     try {
       if (previewAudio && !previewAudio.paused) {
         previewAudio.loop = false;
@@ -587,6 +591,9 @@
       }
     } catch (_) {}
   });
+
+  // 離開頁面（返回店內挖寶、關分頁）一律停掉元素模式的試聽，別讓它活過頁面
+  window.addEventListener('pagehide', () => { if (previewElementActive) { try { stop(); } catch (_) {} } });
 
   function fadePreview(toValue, ms) {
     clearInterval(previewVolumeTimer);
@@ -1293,6 +1300,23 @@
       // 「第一次點開沒聲音、關掉重開才正常」的成因：第二次 buffer 已在快取，幾乎同一個
       // tick 就 start，來不及被收掉。改成等真實試聽開始輸出、由它接手 session 之後才收。
       setProvider('itunes');
+      // 2026-10-19：下載解碼**之前**先確認 ctx 跑不跑得起來。沒有頁內手勢時（直接來一張第一抽）
+      // resume() 在 iOS 永遠不回，原本要先下載解碼、再等 1.5 秒逾時才改走元素，試聽晚了七秒才出聲
+      //（店主截圖 loading 5.8s → playing 13.0s）。手勢外只等 300ms，起不來就直接讓元素自己載自己播。
+      const elementResult = () => ({
+        trackName:track.trackName || '', storeUrl:track.storeUrl || '',
+        attribution:data?.source === 'pinned-file' ? (data.attribution || '店內試聽') : 'Apple Music 試聽',
+        trackId:String(track.id || track.previewUrl), tracks:data?.source === 'itunes-map' ? [] : previewTrackSummary(data)
+      });
+      if (audioCtx && audioCtx.state !== 'running') await withTimeout(Promise.resolve(audioCtx.resume?.()), inUserGesture() ? 1500 : 300);
+      if (token !== requestId) return false;
+      if (!audioCtx || audioCtx.state !== 'running') {
+        const okEl = await playPreviewElement(audio, track.previewUrl, token, 30);
+        if (!okEl) { lastFailCode = 'S12'; return false; }
+        currentPreviewData = data;
+        lastPreviewTrackId = track.id || track.previewUrl;
+        return elementResult();
+      }
       const decoded = await loadPreviewBuffer(track.previewUrl);
       if (token !== requestId) return false;
       if (!decoded || !audioCtx?.createBufferSource || !previewGain) {
@@ -1320,11 +1344,7 @@
         if (!okEl) { lastFailCode = 'S12'; return false; }
         currentPreviewData = data;
         lastPreviewTrackId = track.id || track.previewUrl;
-        return {
-          trackName:track.trackName || '', storeUrl:track.storeUrl || '',
-          attribution:data?.source === 'pinned-file' ? (data.attribution || '店內試聽') : 'Apple Music 試聽',
-          trackId:String(track.id || track.previewUrl), tracks:data?.source === 'itunes-map' ? [] : previewTrackSummary(data)
-        };
+        return elementResult();
       }
       setPreviewLevel(0);
       source.start(0);
