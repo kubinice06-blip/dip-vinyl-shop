@@ -334,6 +334,7 @@
     .quiz-loading .spinner { margin: 0 auto 16px; }
     .quiz-loading-text { font-size: 10px; color: var(--gray); letter-spacing: 0.12em; text-transform: uppercase; }
     .quiz-result { padding: 32px 20px; }
+    .quiz-result .gt-back-top { padding-top: 0; margin-top: -14px; }
     .quiz-result-label { font-size: 10px; color: var(--gray); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 16px; }
     .quiz-result-cover { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; margin-bottom: 20px; border: 1px solid var(--line); cursor: pointer; }
     /* 抽卡結果頁的藝人／專輯／等級置中（介紹內文仍靠左，長段落置中不好讀） */
@@ -5941,8 +5942,14 @@ ${seenList}
     _saveGpSeen();
     if (!result._streaming && result.reason) _saveReasonWords(result.reason);
 
+    // 結果頁左上也放「← 換個類型」（與選單畫面的「← 上一層」同位置同樣式；2026-10-19 店主：
+    // 左上角要有換個類型）。類型挑片回到大類選單、猜你喜歡回到領域選單；直接來一張沒有類型可換。
+    const gpTopBack = result._mode === 'tree'
+      ? '<button class="gt-back-top" data-gt-restart>← 換個類型</button>'
+      : (!gpIsRandom ? '<button class="gt-back-top" data-gp-action="retry">← 換個類型</button>' : '');
     document.getElementById(gpResultHost).innerHTML = `
       <div class="quiz-result">
+        ${gpTopBack}
         <div class="quiz-result-label">為你挖出的那張</div>
         ${coverHtml}
         <div class="quiz-result-artist" data-artist-intro="${escapeCollectionHtml(result.artist || '')}">${result.artist || ''}</div>
