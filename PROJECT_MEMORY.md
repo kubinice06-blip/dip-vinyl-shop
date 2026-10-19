@@ -5,6 +5,7 @@
 - **起因**：店主回報店內挖寶的直接來一張不會自動播放，其他三個遊戲正常。錄影（iPhone Chrome，正式站）顯示：抽卡動畫音效全有，試聽無聲，圖示停在 ⏸、提示「自動試聽中」——播放器自以為在播。
 - **病因**：直接來一張是四個遊戲裡唯一「一進頁就抽」的流程，從 `shop.html`／`find.html` 點過來是換了一份文件。iOS 會把點連結那一下的授權帶進新文件，但只維持一小段時間；原本要等 `loadQuizData` → 卡池 → 店內庫存幾次 Firestore 往返之後才 `gpEnsurePlayer()` 武裝音訊，早就過了窗口。抽卡音效的 AudioContext 建得比較早（`submitGenrePick` 一開始）所以還趕得上。其他三個遊戲抽卡前至少點過一次，那一下經 `pointerdown` 捕獲先武裝了。
 - **修法（店主裁定：不要多一顆「抽一張」鈕，直接抽）**：`bootstrapView` 的 `random` 分支第一件事就 `gpEnsurePlayer({ hold: 25000 })`——有開自動試聽才動作；`DipPlayer.unlock()` 新增 `hold` 參數傳到 `armKeepAliveRelease`，keep-alive 保留 25 秒蓋過載入卡池與封面的時間（預設仍 8 秒）。先前加的起跑畫面整段移除。`dip-player.js?v=46`。
+- **再追加（店主回報「第一次抽卡連抽卡畫面都沒有聲音，第二次才有」）**：抽卡音效（`dip-draw-anim.js`）原本自己再建一個 AudioContext，與播放器的 context 搶同一份「點連結帶進來」的授權；正式站是音效有聲、試聽無聲，進頁先武裝後變成兩者都無聲，第二抽（有頁內手勢）才正常。改成**全站共用一個 AudioContext**：`DipPlayer.audioContext()` 對外提供（只建不 resume 的規則不變），`dip-draw-anim.js?v=3` 有 DipPlayer 就共用、沒有才自建；`dip-player.js?v=47`。直接來一張進頁武裝後留一筆 `audiodebug` 快照 `arm(random@boot)`。本機 Playwright 全程只建 1 個 context。**真機仍待店主實測；若仍無聲，必須用 `?shop=1&audiodebug=1#random` 錄影**。
 - **主要檔案**：`index.html`、`dip-player.js`、`battle.html`／`roguelike.html`／`shop-all.html`（只升版）
 - **驗證**：本機 Playwright（自動試聽 on）：`?shop=1#random` 進頁即 ctx running、keep-alive playing，無起跑鈕，12 秒後直接出結果頁。**真機 iOS 待店主在預覽網址實測**；若仍無聲，請用 `?shop=1&audiodebug=1#random` 錄影。隨 PR #104。
 

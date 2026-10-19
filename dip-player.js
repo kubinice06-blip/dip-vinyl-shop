@@ -1534,8 +1534,17 @@
     };
   }
 
+  // 全站共用的 AudioContext（2026-10-19）：抽卡音效原本自己再建一個 context。iOS 對「沒有頁內手勢、
+  // 只靠點連結帶過來的授權」的 context 很吝嗇，兩個 context 搶同一份授權，直接來一張第一抽就出現
+  // 「音效無聲、第二抽才有」。改成只建一個、越早建越好（進頁武裝時），音效接在同一個 context 上。
+  // 沒授權時這裡只建不 resume（ensurePreviewGraph 的規則），不會搶走別人的串流。
+  function audioContext() {
+    if (!audioCtx) ensurePreviewGraph();
+    return audioCtx;
+  }
+
   window.DipPlayer = {
-    mount, unlock, prefetch, appleAlbumUrl, upgradeAppleLinks, warmAlbum, playAlbum, playTrack, stop, onStateChange, debugState,
+    mount, unlock, prefetch, audioContext, appleAlbumUrl, upgradeAppleLinks, warmAlbum, playAlbum, playTrack, stop, onStateChange, debugState,
     hasAutoplayConsent, grantAutoplayConsent,
     autoplayPreference, setAutoplayPreference, onAutoplayRevoked, releaseAudio, showHint, createToggle
   };
