@@ -3,8 +3,8 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **297** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 59、已退回 1）。
-最後更新：2026-10-12
+共 **298** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 60、已退回 1）。
+最後更新：2026-10-20
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
 `matchedOn` 欄記的就是實際對上哪幾項。圖片沿用 Discogs 圖床網址，
@@ -106,6 +106,12 @@
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
 | Shake Stew 《The Golden Fang》 | [#9484990](https://www.discogs.com/release/9484990) | 2016 | Traumton Records | Traumton 4639 | Discogs master 1102621 的版本、主線目視與盤名相符 | ok |
+
+## add-20261020-ts1（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Mike Hanopol 《Buhay Musikero》 | [#4292543](https://www.discogs.com/release/4292543) | 1977 | Jem (3) | JLP 105 | Discogs master 739788 的版本、主線目視與盤名相符 | ok |
 
 ## c49（3 張）
 
