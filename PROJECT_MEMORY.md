@@ -119,6 +119,49 @@
 - **改動**：add-20261014 上架的 4 張補進錨點。溫蒂漫步《Spring Spring》、事後菸《Cry》《X's》落在要死不活；溫蒂漫步《Midnight Blue》加進 Disco、Funk，落在愉悅。六區：放鬆 16、要死不活 27、愉悅 18、雀躍 16、亢奮 19、興奮 8。與舊三軸 Spearman：質地～硬蕊 0.62、色溫～硬蕊 −0.62，能量 ≤0.12。私人星圖預覽改成依資料張數顯示並重新發布。
 - **主要檔案**：`batch-progress/mood-axes/{anchors-src.mjs,anchors-v1.json,rulings.md}`、`MOOD_ENERGY_PLAN.md`
 - **驗證**：`build-anchors.mjs` 104/104 對上卡池、預期與計算區域零落差；星圖預覽本機 Chromium 桌機與手機寬度無錯誤。
+### 2026-10-20｜dip-vinyl-shop｜類型挑片第三層全面展開（270 節點）＋抽卡動畫閃該分類的封面
+
+- **起因**：店主「目前分類還不夠細緻，比如電子的 techno 還有 deep techno、house 還有 acid house」「抽卡時動畫裡的專輯使用該分類的專輯，不要明明是抽搖滾卻跑出 2Pac」。
+- **分類**：用 `data/rawgenres-cache.json` 統計每個第二層節點內的標籤分布（`scratchpad/tags.mjs`），逐桶寫第三層規則進 `scripts/build-genre-tree.mjs` 的 `RULES[*].children`；非搖滾的 `classify()` 原本只落第二層，補上子節點掃描（多重歸屬），古典「當代與極簡」也在 `classifyClassical` 補第三層。門檻沿用 20，小國別／小場景用 `min` 8–12。結果第二層 94、**第三層 270**（原 34）。重疊式節點命名「偏 X」（例：Ambient 桶下的「偏 IDM」）。各桶主要切法：techno→Detroit／Minimal／Dub Techno／Acid／Ambient Techno／Electro／Tech House／Hard；house→Deep／Acid／Chicago／Detroit／Tech／Progressive／French／UK Garage；bop→Hard Bop／Bebop／Post-Bop／鋼琴／薩克斯風／Blue Note；嘻哈東岸→Boom Bap／Hardcore／Jazz Rap／抽象；南方→Trap／Dirty South／Memphis／New Orleans／Cloud；民謠創作歌手→Americana／獨立／民謠搖滾／迷幻／英倫／日本／拉丁；流行 J-Pop→City Pop／歌謠曲演歌／偶像／創作歌手；世界 reggae→Roots／Dub／Dancehall／Ska／Lovers…（全表見 `genre-tree.json`）。
+- **分類封面池**：新腳本 `scripts/build-draw-covers.mjs`（`--pull` 從 KV `cover6:*` 拉 10,948 張封面存 `data/covers-cache.json`，已 gitignore；合併 manifest 封面 10,185，合計 17,884 張卡有封面），每節點挑 L1 20／L2 16／L3 10 張（偏好 scdn／mzstatic 快 CDN），**每大類一檔** `draw-covers/<genre>.json`（urls 去重＋節點索引，9–44KB），選到大類才載。
+- **前端**：`dip-draw-anim.js?v=4` `start({covers})` 給了就只閃這組、`preloadCovers()`；`dip-genre-tree.js?v=5` 選大類載池並預載，選更深節點預載該節點，抽卡時 `coversFor(path)` 由深到淺找有 ≥4 張的清單；`index.html` 猜你喜歡選了領域也載池、`submitGenrePick` 傳 `covers`（直接來一張沒有類型，仍閃全站池）。
+- **主要檔案**：`scripts/build-genre-tree.mjs`、`scripts/build-draw-covers.mjs`（新）、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`（新，10 檔）、`dip-draw-anim.js`、`dip-genre-tree.js`、`index.html`、`battle.html`（升版）、`ALBUM_ONBOARDING.md`、`.gitignore`
+- **驗證**：建樹覆蓋 92.5% 不變；本機 Playwright 5/5——選電子就抓 `draw-covers/electronic.json`、techno 第三層 8 顆晶片、選 Acid 開抽時動畫拿到 acid 節點 10 張封面（與檔案一致）、猜你喜歡選爵士抓 jazz 池且 L1 清單 20 張。`pages-build.sh` 未排除 `draw-covers/`，會部署。
+
+### 2026-10-19（同日第二筆）｜dip-vinyl-shop｜找一張來聽／店內挖寶兩個 hub 搬進 index.html（店主：「永遠以正常狀態運行」）
+
+- **起因**：直接來一張在 iOS 第一抽能不能走正常路徑（音效＋淡入淡出），取決於 iOS 當下是否把點連結那一下的授權算給 AudioContext，時好時壞（同日兩張 audiodebug 截圖一張 running 一張 suspended）。根本原因是 hub 在另一份文件，抽卡前沒有頁內手勢。店主裁定要永遠正常，唯一解法是讓那一下點擊發生在同一份文件。
+- **改法**：index.html 新增 `hubModal`／`#hubContent`，`renderHub('find'|'shop')` 以 `HUB_DEFS` 畫出與 find.html／shop.html 相同的版面（`.hub-*` 樣式）；`setActiveTab('find'|'shop')` 改成頁內畫面（跨店內／全站模式才換頁，因 `SHOP_MODE` 綁在 `?shop=1`）；hub 走 `game-page` 模式，頂欄「↩ 回主頁」（店內模式回乾淨首頁）、自動試聽開關也在 hub 上。遊戲返回鍵 `[data-game-back]` 與類型挑片 `onBack`（`dip-genre-tree.js?v=4` 新選項，取代 `backHref` 換頁）都改 `setActiveTab` 頁內回 hub。`pointerdown` 捕獲武裝加 `#hubContent`——點選單那一下就把音訊武裝好。`shop.html`／`find.html` 改成轉址樁（`/?shop=1#shop`、`/#find`，保留 OG），`shop-all.html` 的連結直指新位置。路由 valid 加 `find`／`shop`。
+- **保留**：進頁即武裝、元素後備、共用 context 都留著，給直接深連結 `#random`（分享連結、PWA 捷徑）那種仍無手勢的情況用。
+- **主要檔案**：`index.html`、`dip-genre-tree.js`、`shop.html`、`find.html`、`shop-all.html`
+- **驗證**：本機 Playwright 7/7——店內 hub 5 張卡、點直接來一張同一份文件內開抽（`unlock` 在手勢內被呼叫、ctx running）、遊戲返回鍵與類型挑片返回都頁內回 hub、全站 hub 4 張卡、`shop.html` 轉址到 `/?shop=1#shop`。**真機待店主實測**。隨 PR #104。
+
+### 2026-10-19｜dip-vinyl-shop｜店內挖寶「直接來一張」沒有自動試聽：改成一進頁就武裝音訊（不加按鈕）
+
+- **起因**：店主回報店內挖寶的直接來一張不會自動播放，其他三個遊戲正常。錄影（iPhone Chrome，正式站）顯示：抽卡動畫音效全有，試聽無聲，圖示停在 ⏸、提示「自動試聽中」——播放器自以為在播。
+- **病因**：直接來一張是四個遊戲裡唯一「一進頁就抽」的流程，從 `shop.html`／`find.html` 點過來是換了一份文件。iOS 會把點連結那一下的授權帶進新文件，但只維持一小段時間；原本要等 `loadQuizData` → 卡池 → 店內庫存幾次 Firestore 往返之後才 `gpEnsurePlayer()` 武裝音訊，早就過了窗口。抽卡音效的 AudioContext 建得比較早（`submitGenrePick` 一開始）所以還趕得上。其他三個遊戲抽卡前至少點過一次，那一下經 `pointerdown` 捕獲先武裝了。
+- **修法（店主裁定：不要多一顆「抽一張」鈕，直接抽）**：`bootstrapView` 的 `random` 分支第一件事就 `gpEnsurePlayer({ hold: 25000 })`——有開自動試聽才動作；`DipPlayer.unlock()` 新增 `hold` 參數傳到 `armKeepAliveRelease`，keep-alive 保留 25 秒蓋過載入卡池與封面的時間（預設仍 8 秒）。先前加的起跑畫面整段移除。`dip-player.js?v=46`。
+- **再追加（店主回報「第一次抽卡連抽卡畫面都沒有聲音，第二次才有」）**：抽卡音效（`dip-draw-anim.js`）原本自己再建一個 AudioContext，與播放器的 context 搶同一份「點連結帶進來」的授權；正式站是音效有聲、試聽無聲，進頁先武裝後變成兩者都無聲，第二抽（有頁內手勢）才正常。改成**全站共用一個 AudioContext**：`DipPlayer.audioContext()` 對外提供（只建不 resume 的規則不變），`dip-draw-anim.js?v=3` 有 DipPlayer 就共用、沒有才自建；`dip-player.js?v=47`。直接來一張進頁武裝後留一筆 `audiodebug` 快照 `arm(random@boot)`。本機 Playwright 全程只建 1 個 context。**真機仍待店主實測；若仍無聲，必須用 `?shop=1&audiodebug=1#random` 錄影**。
+- **真機 audiodebug 定案（店主 iOS Safari 截圖）**：`arm(random@boot)` 與 `play(auto)` 時 ctx 都是 `suspended`、`t:0`，8 秒後仍 `suspended` 而 keep-alive `<audio>` 已 `playing`、狀態 `playing/itunes`——**WebKit 把點連結帶進新文件的授權給 HTMLMediaElement，卻不給 AudioContext**（resume 永遠掛著），`source.start()` 悄悄無聲。這才是根因；前兩輪（提前武裝、共用 context）方向對但碰不到它。
+- **最終修法（`dip-player.js?v=48`）**：`playItunes` 在 resume 逾時、ctx 仍非 running 時，改走 `playPreviewElement()`——把試聽網址直接塞進那顆 `<audio>` 元素播（無淡入淡出，iOS 不理 volume；`previewElementActive` 旗標讓 keep-alive 逾時釋放、背景釋放、fadePreview 都避開它；`ended`／30.5 秒 → stopped；`stopPreviewBuffer` 一併收）。一旦之後有真手勢（再一張、播放鍵）ctx 跑起來就回 Web Audio 路徑。失敗碼 S12。
+- **驗證**：本機 Playwright 模擬「ctx 永遠 suspended」：auto 播放走元素、狀態 playing、`elem:true`；播完 ended → stopped；`stop({fade})` 立即暫停。原 16 項開關／寬限／選單測試仍全過。
+- **v49 兩處收尾（店主第二張截圖：元素後備有聲但 loading 5.8s → playing 13.0s，且切出 App 仍續播）**：(1) `playItunes` 改在**下載解碼之前**判斷 ctx 起不起得來——手勢外只等 resume 300ms（手勢內仍 1.5s），起不來直接走元素、不再先下載解碼再等逾時；(2) 元素模式 `visibilitychange` hidden 與 `pagehide` 一律 `stop()`——iOS 會讓 `<audio>` 在背景續播，Web Audio 路徑不會，試聽是前景體驗。抽卡音效在無手勢的第一抽仍無聲（ctx 起不來，WebKit 限制，無解）。
+- **主要檔案**：`index.html`、`dip-player.js`、`battle.html`／`roguelike.html`／`shop-all.html`（只升版）
+- **驗證**：本機 Playwright（自動試聽 on）：`?shop=1#random` 進頁即 ctx running、keep-alive playing，無起跑鈕，12 秒後直接出結果頁。**真機 iOS 待店主在預覽網址實測**；若仍無聲，請用 `?shop=1&audiodebug=1#random` 錄影。隨 PR #104。
+
+### 2026-10-18｜dip-vinyl-shop｜抽卡四件事：開關不再搶串流、日亞搖滾分國別、老搖滾分年代、上一層鈕搬到左上
+
+- **起因**：店主回報 (1) 邊聽串流時，抽卡頁右上的 🔇 切成 🔊 串流就被停掉、按播放鍵又沒反應；(2) 日亞搖滾要分台／日／韓／中／泰／越等；(3) 老搖滾分 50／60／70／80 年代；(4) 「回到上一層」在最下方又是虛線，太不明顯，要像左上角「↩ 找一張來聽」那樣。
+- **(1) 音訊三處改法（`dip-player.js?v=45`，四頁同步升版）**：
+  - `createToggle` 新增 `armOnEnable` 選項：切開開關本身不再 `unlock()`（武裝＝靜音 keep-alive 起播＝向系統要音訊焦點＝停掉串流，而當下根本沒東西要出聲）。`index.html` 傳 `armOnEnable:false`，並在 `onToggle` 用同一下手勢起播**當前結果頁那張**（`gpPlayCurrentResultFromToggle`，心情選歌看 `lastQuizResult`、其餘看 `lastGpResult`）；不在結果頁只記偏好，提示改「自動試聽已開啟 · 抽到卡就會播放」。其他頁沒傳選項，行為照舊。
+  - 碰撞偵測加 **4 秒手動寬限**：按播放／開關／播放列表後 4 秒內 ctx 被 interrupted／suspended，不再寫裝置記憶 `off`，只停這一次並提示「試聽被其他音訊打斷 · 再按一次播放鍵」（`onAutoplayRevoked` 回 `{reason, kept:true}`）。原因：我們剛打斷對方的串流、session 一鬆手對方自動續播又把我們中斷，是系統交接不是使用者改變心意；舊行為讓使用者看到「按了沒反應、開關自己關掉」。
+  - `playItunes` 起播後**不再立刻收掉靜音 keep-alive**，讓它陪真實試聽播到 stop／播完（`clearMediaSession`／`stop` 都會暫停並拆 src）。原本在 gain 還在 0 附近淡入時暫停唯一媒體元素，iOS 會把 audio session 鬆手，正是上面那個來回的觸發點。
+- **(2)(3) 曲風樹（`scripts/build-genre-tree.mjs`）**：老搖滾第三層依卡片年份分 50／60／70／80／90 年代之後（照時間排，不照張數）；日亞搖滾改成**地區鏡頭**——新增 `rock-asia-country-map.json`（藝人 → 國別，391 位，含 2 位標 `-` 的同名混淆：西班牙歌手 Raphael 被 Last.fm 標成 visual kei、Parameter 標籤 UK／Korean 互斥），亞洲藝人不論落在哪個風格桶都另掛進日亞搖滾並依國別分第三層（閃靈在金屬、BOØWY 在龐克新浪潮、崔健在獨立另類，以前從日亞搖滾抽不到）。掛載做成步驟 2.5、加在同藝人傳播之後，否則沒標籤的卡會被當成已落位而跳過傳播（實測風格桶少 26／17 張）。國別節點門檻 1 張（店主點名泰／越）。新腳本 `scripts/build-asia-country-map.mjs` 依標籤／文字系統提案、列待裁定名單，`ALBUM_ONBOARDING.md` 第 7 步補一句。
+- **結果**：日亞搖滾 372 → 729（台灣 284、日本 266、中國 54、韓國 53、印尼 28、香港 20、菲律賓 8、馬來西亞 6、泰國 4、柬埔寨 2、越南／新加坡／巴基斯坦各 1）；老搖滾 573（50s 14、60s 92、70s 300、80s 95、90 後 59，13 張無年份不分）。其餘桶只有 KV 標籤漂移的個位數差。裁定：Yoko Ono 歸日本、蔡健雅沿 `tw-pop-artists.json` 歸台灣、Ghost 是 1990 年代日本迷幻團、Drakkar 1974 是柬埔寨團。
+- **(4) 選單（`dip-genre-tree.js?v=3`）**：「← 上一層」改成內容區左上的實線粗體鈕（`.gt-back-top`），與頂欄「↩ 找一張來聽」同一欄位；底部只留「這一層隨便挑 →」並改實線；第一層不再放底部返回鈕（頂欄那顆就是，店內挖寶同）。**結果頁左上也放「← 換個類型」**（2026-10-19 店主補充）：類型挑片回大類選單（`data-gt-restart`）、猜你喜歡回領域選單（`data-gp-action="retry"`）、直接來一張沒有類型不放；底部原有按鈕保留。
+- **主要檔案**：`dip-player.js`、`index.html`、`battle.html`／`roguelike.html`／`shop-all.html`（只升版）、`dip-genre-tree.js`、`scripts/build-genre-tree.mjs`、`scripts/build-asia-country-map.mjs`（新）、`rock-asia-country-map.json`（新）、`genre-tree.json`、`card-subgenres.json`、`ALBUM_ONBOARDING.md`
+- **驗證**：本機 Playwright 16/16 通過——`armOnEnable:false` 切開不建 ctx／不起 keep-alive、預設仍武裝；手動播放 4 秒內 suspend 偏好留 `on` 且收到 `kept:true`、4 秒後 suspend 寫 `off`；`#genre` 第二層左上鈕與頂欄返回鈕左緣對齊、底部返回鈕消失、日亞搖滾 13 國、老搖滾 5 個年代、上一層兩次回十大類、遊戲頁開關切開不碰音訊。`node --check` 三支 JS 通過。**真機（iPhone＋串流）待店主實測**。
+- **留給本機／店主**：無 KV／Firestore 寫入；PR 合併即生效。
 
 ### 2026-10-14｜dip-vinyl-shop｜店主指示：PR 開出後不追蹤、不排檢查
 
