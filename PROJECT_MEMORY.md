@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-20｜dip-vinyl-shop｜薄細項策展線 ts3：非洲 42 張上線（剛果 soukous、衣索比亞、南部非洲）
+
+- **內容**：剛果 soukous／rumba 21、衣索比亞 15（《Éthiopiques》第 3／5／16／18／19／22／23／25／28／29／30 卷等）、南部非洲 6；策展 44，刪 Tcha Tcho、Mahotella 重包裝。選輯 12 張走 §5.6（考古整理盤，各附 exceptionReason）。
+- **主線審稿**改 7 張：刪 hook 的「據說」、媒體名改「華府樂評」、刪查無頒獎單位的年度獎、衣索比亞首都統一「阿迪斯阿貝巴」（`batch-progress/add-20261020-ts3/rulings.md` 9959–9960）。
+- **類型樹**：`build-genre-tree.mjs` 步驟 2.6 支援「藝人|專輯」條目（Various Artists 的 Éthiopiques 才能單張掛），`genre-l3-artist-map.json` 補剛果 16、衣索比亞 13、南部非洲 5 條；衣索比亞節點 9→17、剛果 31、南部非洲 29。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`onboarding-manifest-add-20261020-ts3-20261020.json`、`batch-progress/add-20261020-ts3/*`、`desc-tools/batches/*/add-20261020-ts3-*`、`scripts/build-genre-tree.mjs`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`。
+- **驗證**：上線前封面 42 張逐一回讀 HTTP 200；`verify-album-onboarding --published` 0 error；KV 回讀 42/42；card_catalog 42/42。
+
 ### 2026-10-20｜dip-vinyl-shop｜薄細項策展線 ts1：東南亞搖滾 42 張上線（越南搖滾 1→15）
 
 - **起因**：店主「掃描細項是否有些太少，比如越南搖滾只有一張；太少的策展增加卡池」→「開始跑」。計畫 `batch-progress/EXPANSION-PLAN-thin-subgenres.md`，交接 `batch-progress/HANDOFF-thin-sub-line.md`。

@@ -760,7 +760,7 @@ for (const c of cards) {
   stepAsia++;
 }
 
-// 步驟 2.6：細項藝人對照（加掛，不取代既有落位）
+// 步驟 2.6：細項藝人對照（加掛，不取代既有落位）。條目寫「藝人|專輯」就只掛那一張（Various Artists 用）。
 let stepL3 = 0;
 const l3ByArtist = new Map();
 for (const [node, artists] of Object.entries(l3Map)) {
@@ -768,9 +768,9 @@ for (const [node, artists] of Object.entries(l3Map)) {
   for (const a of artists) { if (!l3ByArtist.has(a)) l3ByArtist.set(a, []); l3ByArtist.get(a).push(node); }
 }
 for (const c of cards) {
-  const nodes = l3ByArtist.get(c.artist);
-  if (!nodes) continue;
   const k = `${c.artist}|${c.album}`;
+  const nodes = [...(l3ByArtist.get(c.artist) || []), ...(l3ByArtist.get(k) || [])];
+  if (!nodes.length) continue;
   const p = new Set(assign.get(k) || []);
   const before = p.size;
   for (const node of nodes) {
