@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-20｜dip-vinyl-shop｜薄細項策展線 ts4：地中海與拉丁傳統 44 張上線（Fado、Flamenco、Tango、巴爾幹／Klezmer）
+
+- **內容**：Fado 12、Flamenco 11、Tango 11、巴爾幹／吉普賽／Klezmer 10；策展 45，刪 Rodolfo Mederos《Verdades y mentiras》（研究查得是爵士搖滾器樂盤、非探戈）。Šaban Bajramović 改釘 1980 RTV Ljubljana 原盤《A Sunen Romalen - Slusajte me ljudi》（原卡是 1995 整理 CD）；Utrera 姊妹卡面年份改 1970 Hispavox 原版。
+- **主線**：試聽 27 ready（人工 6 張，含另區商店 pt／es 曲目逐首核對）；封面 CAA 35＋Apple 4＋Discogs 5；三軸照 §0.8 錨點制以各樂種音樂圈為尺度；審稿改 1 張（Gisela João 媒體年終榜整條不寫）。裁定見 `batch-progress/add-20261020-ts4/rulings.md` 10111–10118。
+- **類型樹**：`genre-l3-artist-map.json` 補 fado 12、flamenco 11、tango 11、balkan 10 條；原本隱藏的 Tango 節點 4→15 過門檻上線，Flamenco 17→28、Fado 12→24、巴爾幹 12→23。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`onboarding-manifest-add-20261020-ts4-20261020.json`、`batch-progress/add-20261020-ts4/*`、`desc-tools/batches/*/add-20261020-ts4-*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`。
+- **驗證**：封面 44 張逐一回讀 200；`verify-album-onboarding --published` 0 error；KV 回讀 44/44；card_catalog 44/44。
+
 ### 2026-10-20｜dip-vinyl-shop｜薄細項策展線 ts3：非洲 42 張上線（剛果 soukous、衣索比亞、南部非洲）
 
 - **內容**：剛果 soukous／rumba 21、衣索比亞 15（《Éthiopiques》第 3／5／16／18／19／22／23／25／28／29／30 卷等）、南部非洲 6；策展 44，刪 Tcha Tcho、Mahotella 重包裝。選輯 12 張走 §5.6（考古整理盤，各附 exceptionReason）。

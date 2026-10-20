@@ -1878,7 +1878,7 @@
   {
    "id": "world",
    "zh": "世界",
-   "count": 906,
+   "count": 950,
    "children": [
     {
      "id": "reggae",
@@ -1947,7 +1947,7 @@
     {
      "id": "latin",
      "zh": "拉丁 / 古巴",
-     "count": 177,
+     "count": 191,
      "children": [
       {
        "id": "salsa",
@@ -1957,12 +1957,39 @@
       {
        "id": "latin-pop",
        "zh": "拉丁流行與西語",
-       "count": 41
+       "count": 43
       },
       {
        "id": "cumbia",
        "zh": "Cumbia / Chicha / 安地斯",
-       "count": 35
+       "count": 36
+      },
+      {
+       "id": "tango",
+       "zh": "Tango",
+       "count": 15
+      }
+     ]
+    },
+    {
+     "id": "med",
+     "zh": "地中海與巴爾幹",
+     "count": 95,
+     "children": [
+      {
+       "id": "flamenco",
+       "zh": "Flamenco",
+       "count": 28
+      },
+      {
+       "id": "fado",
+       "zh": "Fado",
+       "count": 24
+      },
+      {
+       "id": "balkan",
+       "zh": "巴爾幹 / 吉普賽 / Klezmer",
+       "count": 23
       }
      ]
     },
@@ -1990,28 +2017,6 @@
        "id": "turkish",
        "zh": "土耳其",
        "count": 10
-      }
-     ]
-    },
-    {
-     "id": "med",
-     "zh": "地中海與巴爾幹",
-     "count": 62,
-     "children": [
-      {
-       "id": "flamenco",
-       "zh": "Flamenco",
-       "count": 17
-      },
-      {
-       "id": "fado",
-       "zh": "Fado",
-       "count": 12
-      },
-      {
-       "id": "balkan",
-       "zh": "巴爾幹 / 吉普賽 / Klezmer",
-       "count": 12
       }
      ]
     },
