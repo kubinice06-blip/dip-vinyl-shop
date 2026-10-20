@@ -23,3 +23,8 @@
 - 9888 Sam Mangwana《Galo Negro》：策展層「融合安哥拉 semba 與幾內亞音樂」查無來源，改採 Rumba on the River 的「原音、放慢的倫巴、安哥拉血統色彩」；原版 Musidisc 1998 France，Putumayo 美國版 1998-05-19；Murray Head 為 Discogs 名單所列（Discogs 藝人頁即英國歌手，單一來源）。
 - 9889 Sam Mangwana《Sam Mangwana et l'African All Stars》：此盤即維基／Rumba on the River 所稱《Georgette Eckins》（Adios Records ALP 1，四首）；策展層「非洲流浪歌手」無來源（來源綽號是 pigeon voyageur）；廠牌／製作人維基（Adios 製作、Adaramola 發行）與 Discogs（Badmos 製作）並列不斷言；找不到針對這張的評論，status 標 thin。
 - 9890 通則：MB 全程忙線，身分以 Discogs API 為主；WebSearch 用 3 次（Nippon Banzai、Molokai、Kwassa Kwassa）；Wikipedia API 被共用 IP 限流，改用 WebFetch。
+
+## 主線（試聽、封面、三軸）
+- **9951**：試聽 31 ready／13 無來源（`preview-override.json`：Éthiopiques 3 與 Muluken Melesse 兩張自動比對因轉寫差異漏判，主線逐首核對後指定第 1 軌）。Sam Mangwana《Sam Mangwana et l'African All Stars》的 Apple 候選是另一張 Vol. 1（曲目不符），不採。
+- **9952**：封面 CAA 37、Apple 官方圖 6（CAA 404）、Discogs 1（Pépé Kallé《Larger Than Life》人工身分卡，Discogs 1476045 Stern's Africa 1992，已登錄 registry）；縮圖表逐張目視相符。
+- **9953**：三軸冷門軸照 §0.8 錨點制、以非洲音樂圈為尺度（`ratings-override.json`，source `manual:regional-rubric`）；考古再發已進串流者給 4（Verckys、Docteur Nico、Malombo、Batsumi、Éthiopiques 28／29、Muluken）。經典度最高 4（Zaïko《Non Stop Dancing》、Papa Wemba《Le Voyageur》、Kanda《Kwassa Kwassa》、Mangwana & African All Stars、Éthiopiques 3／16、Malombo、Mankunku《Yakhal' Inkomo》）。
