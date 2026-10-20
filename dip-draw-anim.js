@@ -11,7 +11,9 @@
  * 頁面用法：
  *   DipDrawAnim.configure({ fetchConfig, fetchCovers });   // 兩者皆 async，由頁面接 Firestore
  *   DipDrawAnim.preload('front');                          // 載入後預熱（非必要但強烈建議）
- *   const anim = await DipDrawAnim.start({ host, profile:'front' });
+ *   const anim = await DipDrawAnim.start({ host, profile:'front', covers:[…] });
+ *   covers：這一抽閃卡要用的封面清單（抽搖滾就閃搖滾封面；2026-10-20 店主：不要抽搖滾閃出 2Pac）。
+ *           給了（≥4 張）就只用它，不再退回全站封面池；沒給才用 fetchCovers 的全站池。
  *   ... 背景抽卡 ...
  *   anim.state.cover = url; anim.state.apex = true; anim.state.ready = true;   // 或 .fail = true
  *   await anim.done;
@@ -77,8 +79,14 @@
   }
 
   /* ── 合成音效（無外部檔；由點擊手勢觸發，行動端可播）── */
+  // 2026-10-19 起優先共用 DipPlayer 的 AudioContext（見 dip-player.js audioContext() 的說明）；
+  // 沒有 DipPlayer 的頁面才自己建。
   let AC = null;
-  const ac = () => { if (!AC) AC = new (global.AudioContext || global.webkitAudioContext)(); return AC; };
+  const ac = () => {
+    if (!AC) AC = (global.DipPlayer && global.DipPlayer.audioContext && global.DipPlayer.audioContext())
+      || new (global.AudioContext || global.webkitAudioContext)();
+    return AC;
+  };
   // 抽卡音效同樣受店主的自動試聽開關管。這是獨立於 DipPlayer 的第二套音訊系統，
   // 一旦出聲就會向系統要走音訊焦點、停掉玩家正在聽的串流——而且因為它從頭到尾
   // 不經過 DipPlayer，先前所有的授權修正都管不到它。沒開試聽就完全不建立 context。
@@ -180,9 +188,10 @@
     // 不等 Firestore：先用「已快取線上設定或內建預設」＋「已快取封面池或內建樣本」立刻開跑，
     // 資料晚到熱插拔（cfg 就地合併，閃卡迴圈每拍讀最新值；封面池整組換掉）。
     const cfg = { ...defaultsFor(profile), ...(cfgCache[profile] || {}) };
-    let order = (coversCache || FALLBACK_COVERS).slice().sort(() => Math.random() - 0.5);
+    const own = Array.isArray(o.covers) && o.covers.length >= 4 ? o.covers : null;
+    let order = (own || coversCache || FALLBACK_COVERS).slice().sort(() => Math.random() - 0.5);
     loadConfig(profile).then(c => { Object.assign(cfg, c); applyVisuals(); }).catch(() => {});
-    loadCovers().then(list => { if (list && list.length >= 4) order = list.slice().sort(() => Math.random() - 0.5); }).catch(() => {});
+    if (!own) loadCovers().then(list => { if (list && list.length >= 4) order = list.slice().sort(() => Math.random() - 0.5); }).catch(() => {});
     if (soundAllowed(cfg) && ac().resume) ac().resume();
 
     // 牌背顏色（品牌字自動對比）＋版面：卡片放大 popScale、上移 popLift 都要塞進舞台，
@@ -339,6 +348,8 @@
     DEFAULTS,
     configure(h) { hooks = { ...hooks, ...(h || {}) }; },
     preload(profile) { loadConfig(profile || 'front').catch(() => {}); loadCovers().catch(() => {}); },
+    // 預載一組封面（選到分類時先暖好，閃卡才不會閃到空白）
+    preloadCovers(list) { (Array.isArray(list) ? list : []).forEach(u => { const im = new Image(); im.src = u; }); },
     invalidate() { Object.keys(cfgCache).forEach(k => delete cfgCache[k]); },
     start, finishHandoff, cancel: cancelHandoff,
   };
