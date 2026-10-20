@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-20｜dip-vinyl-shop｜薄細項策展線 ts2：南亞、內亞與東南亞第二輪 46 張上線
+
+- **內容**：新加坡 10、馬來西亞 6、巴基斯坦 7、印度 7、蒙古 5、孟加拉 2、尼泊爾 2、印尼 7（1990 後補缺）。研究層更正廠牌 12 處（Fuzön → Virgin Records、Shironamhin → Rabbit Communications 初版、XPDC → Life 等）、The SIGIT 年份改 2006（印尼首發）。
+- **主線**：試聽 35 ready（人工 4 張）／11 無來源；封面 CAA 29＋Apple 14＋Discogs 3；三軸照 §0.8 錨點制以各國搖滾圈為尺度；審稿 46 篇不改（`batch-progress/add-20261020-ts2/rulings.md` 10031–10039）。
+- **類型樹**：`build-genre-tree.mjs` 日亞搖滾國別加孟加拉、尼泊爾；新藝人 39 位寫進 `rock-asia-country-map.json`。新加坡 1→11、巴基斯坦 1→8、印度 0→7、蒙古 0→5、馬來西亞 9→15、印尼 28→35。
+- **交接**：`batch-progress/HANDOFF-thin-sub-line.md` 更新進度；ts5／ts6 派工單已寫，換新工作階段開跑；新增 `batch-progress/thin-sub-20261020/warm-batch.mjs`（上線後預熱 `/album-genres`）。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`onboarding-manifest-add-20261020-ts2-20261020.json`、`batch-progress/add-20261020-ts2/*`、`desc-tools/batches/*/add-20261020-ts2-*`、`scripts/build-genre-tree.mjs`、`rock-asia-country-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`。
+- **驗證**：封面 46 張逐一回讀 200；`verify-album-onboarding --published` 0 error；KV 回讀 46/46；card_catalog 46/46。
+
 ### 2026-10-20｜dip-vinyl-shop｜薄細項策展線 ts4：地中海與拉丁傳統 44 張上線（Fado、Flamenco、Tango、巴爾幹／Klezmer）
 
 - **內容**：Fado 12、Flamenco 11、Tango 11、巴爾幹／吉普賽／Klezmer 10；策展 45，刪 Rodolfo Mederos《Verdades y mentiras》（研究查得是爵士搖滾器樂盤、非探戈）。Šaban Bajramović 改釘 1980 RTV Ljubljana 原盤《A Sunen Romalen - Slusajte me ljudi》（原卡是 1995 整理 CD）；Utrera 姊妹卡面年份改 1970 Hispavox 原版。

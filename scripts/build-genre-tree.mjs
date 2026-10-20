@@ -66,7 +66,7 @@ const L1 = [
 // 卡少的國家照樣開門，讓人看得到卡池在哪裡還很薄。順序由建樹時依張數排。
 const ASIA_COUNTRIES = {
   tw: '台灣', jp: '日本', kr: '韓國', cn: '中國', hk: '香港', th: '泰國', vn: '越南',
-  id: '印尼', ph: '菲律賓', my: '馬來西亞', sg: '新加坡', kh: '柬埔寨', pk: '巴基斯坦', in: '印度', mn: '蒙古',
+  id: '印尼', ph: '菲律賓', my: '馬來西亞', sg: '新加坡', kh: '柬埔寨', pk: '巴基斯坦', in: '印度', mn: '蒙古', bd: '孟加拉', np: '尼泊爾',
 };
 const asiaChildren = Object.fromEntries(Object.entries(ASIA_COUNTRIES).map(([cc, zh]) => [cc, { zh, min: 1 }]));
 
