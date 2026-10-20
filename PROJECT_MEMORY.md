@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-20｜dip-vinyl-shop｜「調頻」上線：三顆輪子掃唱片星空（MOOD_LAUNCH_PLAN P0＋P1）
+
+- **改動**：店主「可以上線了 放在找一張來聽 心情選歌上面」。新遊戲「調頻」（名稱暫用，店主還沒定）：左邊 Three.js 星圖（全池 19,116 張按百分位定位、三片切面、淡軸線與座標網格），右邊店主的像素稿控制面板（`tune/panel.jpg`，滾筒、三顆銅輪、SCAN／FINE 開關、就這張都是疊在上面的活件；輪子的滾花用稿子裡的銅帶 `tune/tile-*.png` 照圓柱投影取樣捲動）。轉輪子時掃過的卡一張張閃在右上角小卡，停 0.7 秒播站上固定試聽（電台式硬切），按「就這張」或點小卡走與類型挑片相同的 `showGpResult` 結果頁（`_mode:'tune'`，按鈕「同頻率再抽一張／回去轉頻率」，歷史型別 `tune`）。調頻音效（粉紅雜訊掃頻＋嘯聲）以 Web Audio 現場合成，第一次觸碰即喚醒。
+- **資料**：新前台檔 `data/mood/card-moods.json`（`scripts/build-card-moods.mjs` 由 v0 檔產生，依 seed 順序存 [x,y,z,把握]，302KB／66KB gz；`_seed` 張數與首尾 id 綁定，不符整檔失效）。建檔腳本同時是 gate：seed 全有座標、v0 無孤兒 id、錨點 104/104 同格，任一不過 exit 1。`data/mood/overrides.json` 存在時套店主改判。
+- **接線**：`index.html` 加 `dip-tune.js?v=1`、`#tuneModal`（主機層＋結果層）、`setActiveTab('tune')`、路由 `tune`、Three.js 只在進調頻時從 CDN 載；`find.html` 第一張卡；`tune/index.html` OG 轉址；`og-tune.png`；`manifest.json` 捷徑。不預快取、不動 `seed_cards.json`、Worker 零改動。
+- **主要檔案**：`dip-tune.js`、`scripts/build-card-moods.mjs`、`data/mood/card-moods.json`、`tune/{index.html,panel.jpg,tile-x.png,tile-y.png,tile-z.png,wheel-spans.json}`、`og-tune.png`、`index.html`、`find.html`、`manifest.json`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：`build-card-moods.mjs` gate 全綠（19,116/19,116、錨點 104/104）；本機 Playwright 開 `/#tune` 桌機與手機：星圖、輪子、掃描、就這張→結果頁→回去轉頻率全程 0 錯誤（本機沒有 Firestore／Worker，封面與介紹空白屬預期）。**留給店主**：遊戲名稱、σ／掃描半徑上線後看手感調（寫在 `dip-tune.js` 頂部常數，尚未接 `gameConfig/tune`）。
+
 ### 2026-10-18｜dip-vinyl-shop｜情緒三軸上線計畫 `MOOD_LAUNCH_PLAN.md`
 
 - **改動**：店主「規劃如何讓這個系統上線 以我現在有的為基礎」。新寫 `MOOD_LAUNCH_PLAN.md`：盤點現有資產（全池 19,116 張座標、scale-v0、104 錨點、星圖原型 Version 14、抽卡管線掛點），定四個 PR 約四週：P0 前台檔 `data/mood/card-moods.json`（依 seed 順序存三值＋信心，實測 gz 58KB，對比依 id 存 361KB；`_seed` 三值綁定、不符即整檔失效）＋ `mood-gate.mjs`；P1 調頻（`dip-tune.js` 照 `dip-genre-tree.js`、`pickByCoord` 先按權重取 60 張候選再交 `pickSeedCard` 分層、`gameConfig/tune` 旗標、先藏 `/tune` 軟上線一週再曝光）；P2 `starmap.html` 從原型搬、只亮收藏、2D 退回、hub 卡改「聆聽星圖」；P3 成就照 `settleRewards`、比例門檻；P4 上架公式接三軸（§2.5、skill Phase 2、`scored-onboard.json` 第五來源、`overrides.json`）與 P1 並行；P5 品質迴圈不擋上線。音訊層、v1 刻度、Y 軸改「重量感」都不在本輪。
