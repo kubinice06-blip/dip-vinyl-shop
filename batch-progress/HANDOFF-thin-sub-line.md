@@ -9,13 +9,19 @@
 | 步 | 內容 | 狀態 |
 |---|---|---|
 | 補標 | `genre-l3-artist-map.json`＋`build-genre-tree.mjs` 步驟 2.6；13 個節點過門檻 | ✅ 2026-10-20 提交 |
-| 策展 a／b／c | 越柬新／泰菲馬／巴印蒙孟＋印尼補缺（`curation-{a,b,c}.json`） | 進行中 |
-| ts1 | 東南亞搖滾 45 | 待策展交件 |
-| ts2 | 南亞與內亞搖滾＋東南亞第二輪 | 待策展交件 |
-| ts3 | 非洲（剛果、衣索比亞、南部非洲） | 未開始 |
-| ts4 | Fado、Flamenco、Tango、巴爾幹 | 未開始 |
-| ts5 | 嘻哈深度（台韓法、Bounce、Cloud） | 未開始 |
-| ts6 | Neofolk、Psy、50 年代搖滾與 Doo-wop 原盤 | 未開始 |
+| 策展 a–g | 越柬新／泰菲馬／南亞內亞印尼／剛果／衣索比亞＋南部非洲／Fado＋Flamenco／Tango＋巴爾幹（`curation-{a..g}.json`） | ✅ |
+| ts1 | 東南亞搖滾 42 張 | ✅ 上線（越南 1→15） |
+| ts3 | 非洲 42 張 | ✅ 上線（衣索比亞 9→17；步驟 2.6 支援「藝人|專輯」條目） |
+| ts4 | Fado、Flamenco、Tango、巴爾幹 44 張 | ✅ 上線（Tango 4→15 過門檻） |
+| ts2 | 新加坡、馬來西亞、南亞、蒙古、印尼補缺 46 張 | 寫作層進行中（研究／鉤子／試聽／封面／三軸已完成） |
+| ts5 | 嘻哈深度（台華、韓、法語、Bounce、Cloud） | 派工單 `CUR-DISPATCH-ts5.md` 已寫（組 h、i），未開跑 |
+| ts6 | Neofolk、Psy／Goa、50 年代搖滾、Doo-wop 原盤 | 派工單 `CUR-DISPATCH-ts6.md` 已寫（組 j、k），未開跑 |
+| 收尾 | 情緒評分（ts1–ts6 一起）、藝人介紹 §11（ts1–ts6 一起切 ar-d 批） | 未開始 |
+
+**換工作階段**：WebSearch 額度整個工作階段共用；ts1–ts4 已在 2026-10-20 這個工作階段跑完，ts5／ts6 開新工作階段再跑。
+ts5 策展派工：「工作目錄 /home/user/dip-vinyl-shop。先完整讀 `batch-progress/thin-sub-20261020/CUR-DISPATCH-ts5.md` 並照做。組別：h。」（i 同理；ts6 為 j、k）。交件後 `build-master.mjs h i` → 主線挑 45 張寫 `batch-progress/add-20261020-ts5/pick.json` → `build-cards.mjs`。
+**亞洲以外的節點**：國別樹只管日亞搖滾；其他新卡要掛細項就寫進 `genre-l3-artist-map.json`（ts3、ts4 先例；Various Artists 用「藝人|專輯」）。主類型必須等於節點第一層。
+**/album-genres 預熱**：`build-seed-genres` 不會打 worker；每批上線後跑 `batch-progress/thin-sub-20261020/warm-batch.mjs <worker> <批>`（逐張打 `/album-genres`，1.1 秒間隔）再 `build-genre-tree --pull --write`。
 
 ## 二、每批流程（腳本在 `batch-progress/thin-sub-20261020/`，複製自 downtempo 線）
 
