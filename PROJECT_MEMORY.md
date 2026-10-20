@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-20｜dip-vinyl-shop｜類型挑片第三層全面展開（270 節點）＋抽卡動畫閃該分類的封面
+
+- **起因**：店主「目前分類還不夠細緻，比如電子的 techno 還有 deep techno、house 還有 acid house」「抽卡時動畫裡的專輯使用該分類的專輯，不要明明是抽搖滾卻跑出 2Pac」。
+- **分類**：用 `data/rawgenres-cache.json` 統計每個第二層節點內的標籤分布（`scratchpad/tags.mjs`），逐桶寫第三層規則進 `scripts/build-genre-tree.mjs` 的 `RULES[*].children`；非搖滾的 `classify()` 原本只落第二層，補上子節點掃描（多重歸屬），古典「當代與極簡」也在 `classifyClassical` 補第三層。門檻沿用 20，小國別／小場景用 `min` 8–12。結果第二層 94、**第三層 270**（原 34）。重疊式節點命名「偏 X」（例：Ambient 桶下的「偏 IDM」）。各桶主要切法：techno→Detroit／Minimal／Dub Techno／Acid／Ambient Techno／Electro／Tech House／Hard；house→Deep／Acid／Chicago／Detroit／Tech／Progressive／French／UK Garage；bop→Hard Bop／Bebop／Post-Bop／鋼琴／薩克斯風／Blue Note；嘻哈東岸→Boom Bap／Hardcore／Jazz Rap／抽象；南方→Trap／Dirty South／Memphis／New Orleans／Cloud；民謠創作歌手→Americana／獨立／民謠搖滾／迷幻／英倫／日本／拉丁；流行 J-Pop→City Pop／歌謠曲演歌／偶像／創作歌手；世界 reggae→Roots／Dub／Dancehall／Ska／Lovers…（全表見 `genre-tree.json`）。
+- **分類封面池**：新腳本 `scripts/build-draw-covers.mjs`（`--pull` 從 KV `cover6:*` 拉 10,948 張封面存 `data/covers-cache.json`，已 gitignore；合併 manifest 封面 10,185，合計 17,884 張卡有封面），每節點挑 L1 20／L2 16／L3 10 張（偏好 scdn／mzstatic 快 CDN），**每大類一檔** `draw-covers/<genre>.json`（urls 去重＋節點索引，9–44KB），選到大類才載。
+- **前端**：`dip-draw-anim.js?v=4` `start({covers})` 給了就只閃這組、`preloadCovers()`；`dip-genre-tree.js?v=5` 選大類載池並預載，選更深節點預載該節點，抽卡時 `coversFor(path)` 由深到淺找有 ≥4 張的清單；`index.html` 猜你喜歡選了領域也載池、`submitGenrePick` 傳 `covers`（直接來一張沒有類型，仍閃全站池）。
+- **主要檔案**：`scripts/build-genre-tree.mjs`、`scripts/build-draw-covers.mjs`（新）、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`（新，10 檔）、`dip-draw-anim.js`、`dip-genre-tree.js`、`index.html`、`battle.html`（升版）、`ALBUM_ONBOARDING.md`、`.gitignore`
+- **驗證**：建樹覆蓋 92.5% 不變；本機 Playwright 5/5——選電子就抓 `draw-covers/electronic.json`、techno 第三層 8 顆晶片、選 Acid 開抽時動畫拿到 acid 節點 10 張封面（與檔案一致）、猜你喜歡選爵士抓 jazz 池且 L1 清單 20 張。`pages-build.sh` 未排除 `draw-covers/`，會部署。
+
 ### 2026-10-19（同日第二筆）｜dip-vinyl-shop｜找一張來聽／店內挖寶兩個 hub 搬進 index.html（店主：「永遠以正常狀態運行」）
 
 - **起因**：直接來一張在 iOS 第一抽能不能走正常路徑（音效＋淡入淡出），取決於 iOS 當下是否把點連結那一下的授權算給 AudioContext，時好時壞（同日兩張 audiodebug 截圖一張 running 一張 suspended）。根本原因是 hub 在另一份文件，抽卡前沒有頁內手勢。店主裁定要永遠正常，唯一解法是讓那一下點擊發生在同一份文件。
