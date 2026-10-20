@@ -390,7 +390,7 @@ node scripts/verify-album-onboarding.mjs <manifest.json> --published
 4. 素材不足 thin 門檻的照該線規則 `skipped`，不硬寫。藝人介紹線不改卡池與專輯簡介。
 
 7. 接著執行 `node scripts/build-genre-tree.mjs --write` 更新曲風樹與卡片歸屬；搖滾批次先跑 `node scripts/build-asia-country-map.mjs`，
-   把「待裁定」的亞洲藝人國別手寫進 `rock-asia-country-map.json`（日亞搖滾第三層靠它），再 `--write`
+   把「待裁定」的亞洲藝人國別手寫進 `rock-asia-country-map.json`（日亞搖滾第三層靠它），再 `--write`；樹寫完再跑 `node scripts/build-draw-covers.mjs --pull --write` 更新抽卡動畫的分類封面池（`draw-covers/`）
    （`genre-tree.json`／`card-subgenres.json`，類型挑片 v2 的第二／三層靠它）。
    子類型由 Last.fm 標籤推導、不必人工填欄位；新卡若標籤還沒進 KV，
    會先靠「同藝人傳播」落位，之後重跑即可補上。

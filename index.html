@@ -1059,8 +1059,8 @@
 
 <script src="card-preview-status.js?v=1"></script>
 <script src="dip-player.js?v=49"></script>
-<script src="dip-draw-anim.js?v=3"></script>
-<script src="dip-genre-tree.js?v=4"></script>
+<script src="dip-draw-anim.js?v=4"></script>
+<script src="dip-genre-tree.js?v=5"></script>
 <script src="dip-artist-intro.js?v=2"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -5454,6 +5454,7 @@ ${seenList}
       btn.addEventListener('click', () => {
         gpGenre = btn.dataset.genre;
         gpRound = 0; gpArtists = []; gpUsed = new Set();
+        window.DipGenreTree?.loadCoverPool?.(gpGenre);   // 抽卡動畫閃這一類的封面
         renderGpRound();
       });
     });
@@ -5820,6 +5821,8 @@ ${seenList}
     // 類型挑片與直接來一張都走抽卡動畫（取代等待 spinner；抽卡／封面解析在背景並行跑）
     const gpAnim = await DipDrawAnim.start({
       host: document.getElementById('artistContent'), profile: 'front',
+      // 猜你喜歡選了領域就閃該類封面；直接來一張沒有類型，閃全站池
+      covers: (!gpIsRandom && gpGenre) ? window.DipGenreTree?.coversFor?.([gpGenre]) : null,
       fullscreen: true,     // 動畫期間蓋滿視窗（含站頂選單），揭曉接軌時才還原
       alive: () => document.getElementById('artistModal')?.classList.contains('open'),
     }).catch(() => null);
