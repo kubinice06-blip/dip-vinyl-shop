@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-20｜dip-vinyl-shop｜薄細項策展線 ts1：東南亞搖滾 42 張上線（越南搖滾 1→15）
+
+- **起因**：店主「掃描細項是否有些太少，比如越南搖滾只有一張；太少的策展增加卡池」→「開始跑」。計畫 `batch-progress/EXPANSION-PLAN-thin-subgenres.md`，交接 `batch-progress/HANDOFF-thin-sub-line.md`。
+- **內容**：越南 9、柬埔寨 2、菲律賓 11、泰國 9、馬來西亞 3 等 42 張（策展 45，刪 Rough Guide Cambodia、The Flob EP、Clash Soundcream）；人工身分 2 張（Moderndog《เสริมสุขภาพ》、พงษ์สิทธิ์ คำภีร์《เสือตัวที่ 11》）。研究 5／鉤子 2／寫作 2，主線審稿改 4 處（媒體名改「樂評」、刪銷量單一來源、刪 Hujan 空泛結句），裁定見 `batch-progress/add-20261020-ts1/rulings.md`。
+- **寫入**：card_catalog 42、KV 固定簡介 42（回讀逐字一致）、試聽 32 ready／10 無來源、seed 上架；Bức Tường《Vô hình》CAA 前封面持續 500，改 Apple 官方圖。新藝人 31 位寫進 `rock-asia-country-map.json`，`/album-genres` 預熱 42 張（39 有標籤）後重建類型樹與抽卡封面：越南 15、泰國 12、菲律賓 20、馬來西亞 9、柬埔寨 5。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`onboarding-manifest-add-20261020-ts1-20261020.json`、`batch-progress/add-20261020-ts1/*`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261020-ts1-*`、`rock-asia-country-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`。
+- **驗證**：`verify-album-onboarding --published` 42 張 0 error；KV 回讀 42/42；qa-batch out／qa-check-research 0 標記。情緒評分與藝人介紹（§11）併到整條 ts 線收尾一起做。
+
 ### 2026-10-20｜dip-vinyl-shop｜類型挑片第三層全面展開（270 節點）＋抽卡動畫閃該分類的封面
 
 - **起因**：店主「目前分類還不夠細緻，比如電子的 techno 還有 deep techno、house 還有 acid house」「抽卡時動畫裡的專輯使用該分類的專輯，不要明明是抽搖滾卻跑出 2Pac」。
