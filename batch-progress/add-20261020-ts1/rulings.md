@@ -27,3 +27,17 @@
 ## 主線（研究交件後）
 - **9871**：Ngũ Cung《365000》的 2010 年抄襲爭議只有維基單一來源，且涉第三方作品，簡介不寫（鉤子層整格捨去）。
 - **9872**：卡單 label 照研究 a 組更正：Ngọt《Gieo》補 LP Club；Cá Hồi Hoang《Hiệu Ứng Trốn Chạy》發行方改 Hãng Đĩa Thời Đại（Lumif Recordings 是製作方）。Bức Tường 兩張廠牌兩說並存（Công ty Nghe nhìn Hà Nội／Dihavina），卡單保留 MB 寫法。
+
+## 研究 c 組
+- **9821**　Various Artists《The Rough Guide to Cambodian Psychedelia》：推翻策展層的內容描述。卡單 curatorWhy 與證據網址 worldmusic.net/products/the-rough-guide-to-psychedelic-cambodia 指向另一個產品《The Rough Guide To Psychedelic Cambodia》（RGNET1319，2xCD，含 Sinn Sisamouth 與 Cambodian Space Project 附贈碟）；但 MB RG b827b086／Discogs master 1681487 是 2018-07-27 的 RGNET1365（單張黑膠 7 首／數位版）：Ros Seresyothea 1、Pan Ron 2、Dengue Fever 3、Dub Addiction 1。本盤沒有 Sinn Sisamouth，也沒有 Cambodian Space Project。facts 依 7 首寫；年份 2018 與廠牌不變。池中若已有 RGNET1319 那張，兩者不重複。
+- **9822**　Rivermaya《RiverMaya》：年份 1994 與廠牌 BMG Records (Pilipinas)／Musiko 相符；三白金（逾 12 萬張）僅維基單一來源，寫作層用「三白金」不寫確切銷量。Perf de Castro 1995 年離團與作品綁定可寫。
+- **9823**　Rivermaya《Trip》：1996-02-14 與 MB 相符。「金唱片一夜、六天白金」只有維基轉引一則 1996 年報紙，寫作層用「報導稱」。
+- **9824**　Wolfgang《Wolfgang》：推翻策展層廠牌。卡單 label「Ivory Music & Video」是 2004 年 Legends Series 數位再版的廠牌；1995 年原版是 Tone Def Records（Ivory Records 的搖滾子廠牌，Discogs TDM-K-7047）。「白金」與 1995 年吉他手獎為維基 citation needed 項，標 uncertain；發行日 1995-01-20 僅 Discogs，寫年份即可。
+- **9825**　Sandwich《Grip Stand Throw》：推翻策展層「舞曲化吉他寫法」的說法，維基描述是 alternative metal／nu metal／post-grunge、比 Eraserheads 更重更粗，寫作層勿用「舞曲化」。發行日 MB 數位版 1999-07-06 vs 維基 1999-08-06，只寫年份；廠牌維基 album 頁寫 Greater East Asia Music & BMG，band 頁寫 Sony，Discogs 原版 CD 為 BMG Records (Pilipinas) ASIACD 125，寫作層只寫 BMG 菲律賓。與 Wolfgang《Serve in Silence》並列 1999 NU Rock 年度專輯（兩份維基互證）。
+- **9826**　Up Dharma Down《Bipolar》：推翻策展層「trip-hop 與夢幻搖滾」，維基為 indie pop／shoegaze／indietronica，Philippine Star 為「rock、neo-soul、acid jazz、electronic」。MB RG 首發日 2008-01-02 疑為錯誤（MB 另有 CD 版 2008-10-24，與維基一致），年份不受影響。
+- **9827**　Parokya ni Edgar《Buruguduystunstugudunstuy》：確認是第二張專輯（首張 1996《Khangkhungkherrnitz》）。策展層「rap-rock」查無來源，維基為 alternative rock／novelty，寫作層不用。〈Harana〉原作者 Eric Yaptangco，Parokya 版收在本專輯，2001 年 APO Hiking Society 另錄；三白金為維基單一來源。
+- **9828**　Radioactive Sago Project《Urban Gulaman》：推翻策展層「首張專輯」，這是第二張（首張 2000 年 Viva Records 同名《The Radioactive Sago Project》）。〈Astro〉MV 的 2005 年 MTV Pilipinas 獎項歸屬維基未明寫，facts 不寫；只寫 2004 NU Rock 年度搖滾錄影帶（維基獎項表明列）。成軍年份有 1997／1999 兩說，facts 寫「1990 年代末」。
+- **9829**　The Jerks《The Jerks》：策展層「90 年代另類搖滾場景」不精確——樂團 1979 年成軍，1994 年先出《The Jerks Live》，1997 年同名錄音室專輯。維基稱 1998 年錄大廠專輯《Haligi Ng Maynila》，查證是本專輯第 1 首歌名被誤作專輯名（NU Rock 1998 年度專輯得主即「The Jerks」），標 uncertain。Katha 1998 最佳搖滾歌曲維基寫〈Rage〉與〈Reklamo ng Reklamo〉兩種，facts 不點歌名。製作人 Gabby Lopez 僅維基單一來源且存疑，寫作層略。Inquirer／philmusic 原始報導因 403／503 無法開啟，專輯層來源薄，status 標 thin。
+- **9830**　工具備忘：Wikimedia API／頁面對雲端 IP 限流（429），腳本加退避重試；Inquirer、AllMusic 被 Cloudflare 擋（403），Discogs API 與 MB 正常；WebSearch 3 次用於 Wolfgang、Parokya、Radioactive Sago Project。
+- **9873**：刪 Various Artists《Rough Guide to Cambodian Psychedelia》。研究 c 組（9821）查出卡單指向的是 2018 年 7 首單張黑膠 RGNET1365，四組人裡兩組是當代團（Dengue Fever、Dub Addiction），不是策展層描述的考古整理盤；「柬埔寨 60–70 年代搖滾」改留 ts2 再找可釘住 MB 的考古盤。本批 44 張。
+- **9874**：Wolfgang《Wolfgang》label 改 Tone Def Records（1995 原版；Ivory Music & Video 是 2004 再版）。
