@@ -6127,6 +6127,8 @@ ${seenList}
     // 左上角要有換個類型）。類型挑片回到大類選單、猜你喜歡回到領域選單；直接來一張沒有類型可換。
     const gpTopBack = result._mode === 'tree'
       ? '<button class="gt-back-top" data-gt-restart>← 換個類型</button>'
+      : result._mode === 'tune'
+      ? '<button class="gt-back-top" data-tune-back>← 換個頻率</button>'
       : (!gpIsRandom ? '<button class="gt-back-top" data-gp-action="retry">← 換個類型</button>' : '');
     document.getElementById(gpResultHost).innerHTML = `
       <div class="quiz-result">
