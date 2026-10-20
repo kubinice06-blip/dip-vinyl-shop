@@ -1,10 +1,10 @@
 // 薄細項策展線（ts）：master.json 的指定張 → 一批卡單，再分研究 a–e 組。
-//   node batch-progress/thin-sub-20261020/build-cards.mjs add-20261020-ts1 <選取檔.json>
+//   node batch-progress/thin-sub-20261020/build-cards.mjs add-20261020-ts1 <選取檔.json> <master-xx.json>
 // 選取檔：["artist|album", …]（主線依地區配額挑出，寫進 rulings）。
 import fs from 'node:fs';
 const D = 'batch-progress/thin-sub-20261020/';
-const [batch, pickFile] = process.argv.slice(2);
-const m = JSON.parse(fs.readFileSync(D + 'master.json', 'utf8'));
+const [batch, pickFile, masterFile] = process.argv.slice(2);
+const m = JSON.parse(fs.readFileSync(masterFile, 'utf8'));
 const want = JSON.parse(fs.readFileSync(pickFile, 'utf8'));
 const by = new Map(m.map(a => [a.artist + '|' + a.album, a]));
 const n = s => String(s || '').toLowerCase().replace(/[‐-―－]/g, '-').normalize('NFKC').replace(/[^\p{L}\p{N}]+/gu, '');

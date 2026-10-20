@@ -1,5 +1,5 @@
 // 薄細項策展線（ts）：策展各組合併 → master.json（跨組去重、主線刪除與更正、MB release-group 回查）。
-//   node batch-progress/thin-sub-20261020/build-master.mjs a b c
+//   node batch-progress/thin-sub-20261020/build-master.mjs a b c   → master-abc.json
 // 人工身分卡（mbRgMbid 空、附 mbAbsenceProof）不查 MB，原樣保留。
 import fs from 'node:fs';
 const D = 'batch-progress/thin-sub-20261020/';
@@ -9,7 +9,7 @@ const n = s => String(s || '').toLowerCase().replace(/[‐-―－]/g, '-').norma
 const groups = process.argv.slice(2);
 // 主線刪除與更正（逐筆寫理由進 rulings）
 const ov = fs.existsSync(D + 'master-override.json') ? JSON.parse(fs.readFileSync(D + 'master-override.json', 'utf8')) : { drop: [], fix: {} };
-const OUT = D + 'master.json';
+const OUT = D + `master-${groups.join('')}.json`;
 const prev = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')) : [];
 const prevBy = new Map(prev.map(x => [x.artist + '|' + x.album, x]));
 const all = [], seen = new Set();
