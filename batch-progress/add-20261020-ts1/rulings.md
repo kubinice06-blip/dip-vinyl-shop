@@ -69,3 +69,17 @@
 - **9850**　工具備忘：Wikimedia API 對雲端 IP 429，改以 curl 讀維基頁 HTML 轉文字；Discogs API 免 token 可用（releases／masters／artists／labels）；MB API 可用（1 req/s）。WebSearch 3 次用於 Potato《Life》、Thai Beat 系列、Search 專輯（Search 那次僅確認 Rabbani 翻唱，其餘無新資料）。e 組 9 張 facts 10–12 條，status：full×7、thin×2（Thai Beat Vol.2／Vol.3）；推翻策展層 6 處（Clash 首張、พงษ์สิทธิ์ 社會批判、Thai Beat Vol.3 psych、Search 風潮核心、Butterfingers funk-metal、Thai Beat Vol.2 樂團錄音集）。
 - **9877**：刪 Clash《Soundcream》。研究 e 組查出是 2003 年把《ONE》《Soundshake》重編成 acoustic 的特別盤（附一首新歌），不是原創錄音室專輯。本批 42 張；泰國 Clash 的正規盤（《Soundshake》2002）留待後批。
 - **9878**：Potato《Life》label 補 GMM Grammy。Thai Beat a Go-Go Vol.2／Vol.3 保留（Subliminal Sounds 系列考古整理盤），寫作層不得寫「全部錄於 1960 年代」，genres 改 rock,pop。
+
+## 研究 d 組
+
+- **9831**　IV of Spades《CLAPCLAPCLAP!》：身分無誤（MB／Discogs 13404857，2019-01-18，Warner Music Philippines，15 首）。早期單曲〈Mundo〉〈Hey Barbara〉〈Ilaw sa Daan〉〈Where Have You Been My Disco?〉都**不在**這張專輯，寫作層不得把〈Mundo〉當專輯曲目寫。Unique 離團（2018-05-05）、〈Mundo〉1.76 億次觀看為英文維基單一來源（觀看數須標時點 2024-09）。Audiomack 的 Sony 發行商字樣與 Warner 衝突，採 MB／Discogs。專輯錄音地點與製作人查無。2020 休團屬與作品直接綁定的後續，已標時序。
+- **9832**　Asin《Himig Ng Pag-ibig》：廠牌 Ugat 屬實（Discogs 1979 原版 TSP-5283，Vicor 壓製、Cinema Audio 錄音）；維基寫 Vicor。日期 Discogs 1979-08-20，維基寫「1979 年最後一季」，facts 採 Discogs。不寫 Bañares 1993 年遇害（與作品無關）、不採維基「Apl Song 2005」年份（疑誤）。Discogs 樂手欄列 Fred Aban Jr.，但維基說他 1983 年才入團，伴奏名單不寫。
+- **9833**　Mike Hanopol《Buhay Musikero》：身分無誤（JEM JLP 105，1977，Discogs 製作人 Dodie Gonzalez／Nilo Santos，錄音 Jess Payumo／Jun Orenza）。Tatler 的 Danny Javier 以 5000 披索「買下」同名曲之說為單一來源，且 Tatler 稱 Hanopol「opened for Pink Floyd and Led Zeppelin」疑義大，未採。sound 欄（硬搖滾／藍調搖滾）僅依編制推論，低確定度。
+- **9834**　Bamboo《As the Music Plays》：廠牌 EMI Philippines／PolyEast（GMA 專題：簽約人為 EMI 總經理 Chris Sy，兩家當時合併）。MB 日期 2004-01-01 為佔位，英文維基與搜尋結果為 2004 年 2 月。銷量 7.5 萬（Chris Sy）vs 雙白金（Kiko Guevarra）互相矛盾，facts 只並陳說法。錄音在 Tracks Studios（Angee Rozul 賒帳錄、成為部分共同製作人）。
+- **9835**　Loso《Lo-Society》：身分無誤（1996-04-30，More Music／GMM Grammy，MM-019001）。銷量英文維基「逾 100 萬」，泰文維基「含新封面累計 222 萬」，後者單一來源標 uncertain。錄音 Butterfly Studio 約 20 天、Pichet Kruawan（Y NOT 7）共同製作。
+- **9836**　Loso《Entertainment》：銷量英文維基「逾 200 萬」，泰文維基表格 295 萬、並註 Billboard 1999 為 200 萬，facts 採 200 萬以上。Seesan Award 第 11 屆最佳搖滾團體（得獎），英文維基文字寫「1999」而清單寫「1998」，不寫典禮年。Rath 1999 年離團為與作品直接綁定的後續，已標時序。
+- **9837**　Silly Fools《Candyman》：**推翻策展層**——《Candy Man》不是首作，首張是《I.Q. 180》（1998），且 Bakery Music 只是 1996 年 EP 時期的廠牌；《Candy Man》屬 More Music（GMM Grammy，Discogs 記 MGA）。發行日 MB 1999-06-15、泰文維基 1999-07-15、Discogs 1999-07，facts 只寫 1999 年。英文維基「More Music 1998 年成立」與 Loso 1996 年即在該廠牌發片矛盾，不採。Toe 2006 年離團屬無關後續，不寫。
+- **9838**　bodyslam《bodyslam》：**推翻策展層廠牌**——原版是 Music Bugs（Discogs 卡帶 PT-0145007、泰文維基），不是 Genie Records（之後的東家；轉簽年份泰文維基 2005 vs 英文維基 2003 後，衝突，只寫「之後」）。建議卡片廠牌改 Music Bugs。製作人 Poonsak Jaturabul、Fatima Studio、Liam Laurence 錄音（Discogs）。前身 La-On（1996 Hot Wave 冠軍）。曲風不只硬搖滾，泰文維基同列電子搖滾與 rockabilly。
+- **9839**　Slot Machine《Slot Machine》：**推翻策展層廠牌**——卡單 Tero Records 是 MB 標示；樂團官網為 Sony Music Thailand、Apple Music ℗ 為 Sony Music BEC Tero、泰文維基 Sony Music BEC-Tero，建議卡片廠牌改 Sony Music（BEC-Tero）。發行日 MB 2004-05-28／泰文維基 06-25／官網 06-28／Apple 01-01（佔位），facts 只寫 2004 年。製作人 Sert Siri（官網單一來源）。本張可查實質資料偏少，status thin。
+- **9840**　工具備忘（d 組）：Wikimedia API 對雲端 IP 429，改以 WebFetch 讀維基頁；WebSearch 用 3 次（Hanopol 1977、Bamboo 首作、IV of Spades 首作）。d 組 9 張 facts 9–12 條，status full×8、thin×1（Slot Machine）；推翻策展層 3 處（bodyslam 廠牌、Slot Machine 廠牌、Candyman 非首作／Bakery 時期）。
+- **9879**：label 照研究 d 組更正：bodyslam《bodyslam》→ Music Bugs（原版；Genie 是後來的東家）；Slot Machine《Slot Machine》→ Sony Music BEC-Tero；Silly Fools《Candyman》→ More Music（GMM Grammy）。
