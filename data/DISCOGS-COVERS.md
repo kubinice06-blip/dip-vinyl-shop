@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **304** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 66、已退回 1）。
+共 **307** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 69、已退回 1）。
 最後更新：2026-10-20
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -112,6 +112,14 @@
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
 | Mike Hanopol 《Buhay Musikero》 | [#4292543](https://www.discogs.com/release/4292543) | 1977 | Jem (3) | JLP 105 | Discogs master 739788 的版本、主線目視與盤名相符 | ok |
+
+## add-20261020-ts2（3 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Pure Saturday 《Pure Saturday》 | [#14738109](https://www.discogs.com/release/14738109) | 1996 | Ceepee | Rp. 7000 | 唯一版本、主線目視與盤名相符 | ok |
+| The Quests 《Questing》 | [#6845204](https://www.discogs.com/release/6845204) | 1966 | Columbia | 33OSX-7775 | 唯一版本、主線目視與盤名相符 | ok |
+| Zircon Lounge 《Regal Vigor》 | [#10055242](https://www.discogs.com/release/10055242) | 1983 | WEA | 2292 502264-1 | Discogs master 4272663 的版本、主線目視與盤名相符 | ok |
 
 ## add-20261020-ts3（1 張）
 
