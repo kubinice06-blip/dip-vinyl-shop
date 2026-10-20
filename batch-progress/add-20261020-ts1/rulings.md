@@ -41,3 +41,17 @@
 - **9830**　工具備忘：Wikimedia API／頁面對雲端 IP 限流（429），腳本加退避重試；Inquirer、AllMusic 被 Cloudflare 擋（403），Discogs API 與 MB 正常；WebSearch 3 次用於 Wolfgang、Parokya、Radioactive Sago Project。
 - **9873**：刪 Various Artists《Rough Guide to Cambodian Psychedelia》。研究 c 組（9821）查出卡單指向的是 2018 年 7 首單張黑膠 RGNET1365，四組人裡兩組是當代團（Dengue Fever、Dub Addiction），不是策展層描述的考古整理盤；「柬埔寨 60–70 年代搖滾」改留 ts2 再找可釘住 MB 的考古盤。本批 44 張。
 - **9874**：Wolfgang《Wolfgang》label 改 Tone Def Records（1995 原版；Ivory Music & Video 是 2004 再版）。
+
+## 研究 b 組
+- **9811**　Cá Hồi Hoang《Gấp》：身分三處對上（MB／Discogs 38066574 越南 CD／越南語維基），年份 2017 不變。卡單 label 空白 → 建議補 Luke Record（樂團自家，MB 數位版與 Discogs CD 皆寫）。序數（第三張專輯）與「Gấp＋Gấp gáp 為雙專輯」都只有越南語維基一句，facts 不寫序數；團名由來兩說衝突（Lucky Luke 漫畫／逆流鮭魚）不採。2023 年解散屬無關後續不入 facts。
+- **9812**　Chillies《Qua Khung Cửa Sổ》：2021-05-05（MB／Discogs 28651522）；越南語維基專輯表誤標 2020、英文維基寫「預計 2021 Q1」，採 2021-05-05。搖滾純度偏輕（Discogs 類型 Pop／V-pop／Indie Pop，維基 pop rock／indie），建議主線視為備選等級。Warner 官網無法連線；2023 首場演唱會與 2026 轉簽 Sony 為無關後續不入 facts。
+- **9813**　The Flob《Sống sai》：推翻策展層「專輯」定性——越南語維基明寫「EP đầu tay」七首，樂團 2024 年才出首張錄音室專輯；MB 登為 Album（約 32 分鐘）。建議主線列為 EP 並決定是否保留。廠牌 MB 寫 Yin Yang Media、維基與官網為 1010 Network，關係未證實，寫作層廠牌擇一或不寫。Discogs 無此盤，status 標 thin。
+- **9814**　Thủy Triều Đỏ《Nắng mới》：策展層疑點（曲風）已查——維基與 VnExpress 一致稱 heavy metal，搖滾成分足夠。成軍年 VnExpress／Tuổi Trẻ／MB 為 1998，越南語維基寫 1999，facts 採 1998。專輯 12 軌 = 10 首＋2 首器樂版。維基稱 2003 年越南搖滾大會「得最佳重金屬團」，但其引用的 Thanh Niên 報導並無得獎一事，不採；MTV Việt Nam 第 6 名同為維基轉述，不採。
+- **9815**　Sàigòn Soul Revival《Họa âm xưa》：身分三處對上（MB／Discogs master 1884444／FIP 報導），年份 2019 不變。搖滾純度偏輕屬實（Discogs 風格僅 Nhạc Vàng，主體 psych／soul 復興），建議主線備選。鍵盤手兩說（Trần Nam Kỳ／Đăng Nguyễn Khoa）衝突，facts 不點名；Songlines 2021 入圍只有廠牌官網自述，保守寫。廠牌 INFRACom!（數位）與 Saigon Supersound（實體 SSS03）為同一發行體系。
+- **9816**　Raditori《NHỮNG CON NGƯỜI》：身分對上（MB／Apple Music／Saigoneer 年度精選〈Vô hình〉）。搖滾疑點已解（MB 標籤 alternative rock／rock，Saigoneer、Vietcetera 皆以 rock 為題）。成軍年 Vietcetera 稱 2019，其餘 2018，採 2018。貝斯／鼓的分配兩來源互相矛盾，寫作層勿點名。英文維基稱混探戈、民謠、math rock，Vietcetera 未提，不採。12 trái lê 只能寫「以樂團與 12 trái lê 名義」，不寫簽約。
+- **9817**　Dengue Fever《Escape From Dragon House》：美國（洛杉磯）團，依店主指示收 1 張，寫作層須寫「洛杉磯樂團、柬埔寨主唱」。身分對上（MB／Discogs 724860 M80 BRG 137／PopMatters）。Ros Serey Sothea 遭處決一說 PopMatters 明講「據傳、未經證實」，不可寫成事實。NPR、Goner、Turntable Lab 轉述的細節（Hummingbird 英高棉切換、Nimol 英語有限）因頁面 503／429 未能開啟，不採。
+- **9818**　Cambodian Space Project《Not Easy Rock & Roll》：推翻策展層年份。卡單 2013 取自 MB 首發日（Metal Postcard LP，2013-03-26）；實際首發是 2012 年柬埔寨 CD（Discogs 10870374，Chatomuk Recordings CHAT001；官網列 2012-08-27；維基 2012）。建議卡片年份改 2012，或寫作層寫「2012 年先在柬埔寨出 CD，2013 年 LP」。2012 CD 與 2013 LP 曲名不全相同，寫作層勿列全曲目。官網專輯頁幾乎無內容，status 標 thin。
+- **9819**　Cambodian Space Project《Whisky Cambodia》：2014 年一致（MB／Discogs／維基／官網）。官網稱「在底特律錄製、製作人 Dennis Coffey」；Rustbelt Studios 為 Discogs promo 版的製作地點（城市未證實，facts 不寫）。與 Coffey 的接觸經過未查到。策展層「garage／surf」描述不精確，實際是迷幻車庫加底特律放克。2018 年 Channthy 辭世屬樂團後續事件，與本作無直接綁定，不入 facts。
+- **9820**　工具備忘：Wikimedia API 對雲端 IP 429，改以 WebFetch 讀維基頁；Discogs API 免 token 可用；Facebook／SoundCloud／Last.fm／Warner Vietnam／thuytrieudo.com 無法讀取。WebSearch 3 次用於 Cá Hồi Hoang、Dengue Fever、The Flob（The Flob 那次無結果）。b 組 9 張 facts 10–12 條，status：full×7、thin×2（The Flob、CSP《Not Easy Rock & Roll》）；推翻策展層 3 處（The Flob 性質、CSP 年份、Thủy Triều Đỏ 成軍年說法與維基得獎說法不採）。
+- **9875**：刪 The Flob《Sống sai》。研究 b 組查出是七首 EP（越南語維基「EP đầu tay」），MB 誤登 Album；搖滾不在 EP 白名單。本批 43 張。
+- **9876**：The Cambodian Space Project《Not Easy Rock & Roll》年份改 2012（柬埔寨 CD 首發；MB 的 2013 是 Metal Postcard LP）。Cá Hồi Hoang《Gấp》label 補 Luke Record。Chillies、Sàigòn Soul Revival 搖滾成分偏輕但仍是越南樂團代表作，保留，genres 改 rock,pop。
