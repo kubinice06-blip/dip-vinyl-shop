@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-21｜dip-vinyl-shop｜薄細項策展線 ts9：新加坡搖滾 30 張＋泰國 4＋蒙古 2＋Jogja Hip Hop Foundation 上線；越泰新蒙補卡收尾
+
+- **內容**：新加坡 30 張（The Observatory 7、Wormrot 4、Subsonic Eye 5、Sobs 2、Forests、Humpback Oak、Rudra 2、Blush、Doldrey、Padres、Sweet Charity《Pelarian》、The Caulfield Cult、Caracal、Mystique、Cosmic Child、Sial）＋泰國 4 張（前一輪被誤寫的同藝人上限擋掉的 bodyslam《Save My Life》、Moderndog《ทิงนองนอย》、Silly Fools《The One》、Big Ass《THE LION》）＋蒙古 2 張（Nisvanis《Нисдэг таваг》、Hurd《The Best Collection II》）＋店主指名的 Jogja Hip Hop Foundation《Semar Mesem Romo Mendem》（歸嘻哈、掛亞洲嘻哈節點）。研究後刪 8 張（證據弱 7、無封面 1）。
+- **主線審稿**：寫作層把媒體年終榜「去掉媒體名、留下名次」，違反 writer-base 榜單條——18 張整句刪名次、保留評語本身；已上線的 ts7 The HU《Hun》、ts8 Quái Vật Tí Hon 同類兩句一併修正並重寫 KV。
+- **越泰新蒙收尾**（店主「補到至少 50，不能水掉」）：泰國 12→57 ✅、新加坡 11→41、越南 15→31、蒙古 5→15。後三國照「每張都要有具體好評證據」的門檻已無夠格候選（補充輪拿掉誤寫的同藝人上限後再找一輪），是否放寬待店主裁定。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`onboarding-manifest-add-20261021-ts{7,8,9}-20261021.json`、`batch-progress/add-20261021-ts9/*`、`desc-tools/batches/*/add-20261021-ts9-*`、`rock-asia-country-map.json`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`。
+- **驗證**：封面 37 張回讀 200；`verify-album-onboarding --published` 0 error；KV 回讀 ts9 37/37、ts7 30/30、ts8 35/35；card_catalog 37/37。
+
 ### 2026-10-21｜dip-vinyl-shop｜薄細項策展線 ts8：泰國搖滾（二）19 張＋越南搖滾 16 張上線
 
 - **內容**：泰國 2005 後 19 張（Slot Machine、bodyslam 2、Taitosmith、Apartment Khunpa 2、Moderndog、Big Ass、Desktop Error、Sek Loso、BrandNew Sunset、KLUAYTHAI 2、Lomosonic、The Richman Toy、Silent Scream、Greasy Cafe 2、Instinct；以 Season Awards 為主要證據）＋越南 16 張（ATΩMEGA、The Flob、Gạt Tàn Đầy、Black Infinity、Windrunner、Hạc San 2、UnlimiteD、Ngọt 2、Quái Vật Tí Hon、Tạ Quang Thắng 2、Bức Tường 2、Microwave）。研究後刪 7 張：The Yers、Chillies《KIM》、Thắng、Bức Tường《Ngày khác》（證據弱），ชาตรี คงสุวรรณ、Phạm Anh Khoa 2 張（無封面來源）。

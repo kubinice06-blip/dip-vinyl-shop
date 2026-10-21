@@ -3000,4 +3000,12 @@ window.DipPreviewStatus = Object.freeze({
   "black infinity|666 metal": "unavailable",
   "unlimited|tái sinh": "unavailable",
   "tạ quang thắng|country rock": "unavailable",
+  "the observatory|august is the cruellest": "unavailable",
+  "wormrot|hiss": "unavailable",
+  "wormrot|voices": "unavailable",
+  "padres|night": "unavailable",
+  "sweet charity|pelarian": "unavailable",
+  "the caulfield cult|cult": "unavailable",
+  "caracal|welcome the ironists": "unavailable",
+  "wormrot|abuse": "unavailable",
 });
