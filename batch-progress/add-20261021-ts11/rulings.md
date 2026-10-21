@@ -53,3 +53,14 @@
 - 10448｜推翻策展層：無推翻事實。僅補四處：Ödör Shönö 廠牌為 Erel 贊助而非純自主發行；Хайрын салхи 2010 實為宣傳盤、2013 才正式出版；策展層提的 Pentatonic 入圍提名查無來源不採；Монголд төрсөн 年份 2004 確認。
 - 10449｜封面：未動。六張 Apple 蒙古區皆有圖（IDs 1566613946／1570806136／1570509556／1570418082／1570807015／1649428602），Narlag Divaajin 與 Хайрын салхи 的 Discogs／MB 無圖或僅宣傳版封面，沿用策展層 Apple 圖。
 - 10450｜WebSearch 用量 2 次（Нарлаг диваажин、Долоон тэрбум 各一，皆無有用結果），其餘走英文維基 raw、蒙文維基 raw、MB／Discogs／iTunes API 與 RFA 全文。NYT、Pentatonic 維基頁讀不到。qa-batch 對 Cyrillic 專名報『非拉丁亂碼』為預期（曲名／盤名照原文保留）。
+
+## 研究 d 組（條號 10471–10480）
+- **10471**｜Аравт《Гүрэн》：身分無疑（MB 530a0675、Apple 1331461356、Discogs 12906939 三方對上，2017）。發行日 Apple／MB 為 12/20、蒙文維基寫 12/21（當天辦發行小演出），facts 分開寫、正文只寫 2017 年 12 月。Discogs 實體 CD 無廠牌，僅 Apple ℗ Hi-Fi Media Group 可證，正文勿寫實體廠牌。『第一支蒙古語金屬團』『蒙古首次金屬加弦樂團』僅蒙文維基（近自述）一源，維持『據稱』。Ganbold D.、Narandulam A. 身分不明，不寫成長調歌手。full，建議保留。
+- **10472**｜Аясын Салхи《Coffin Town Under the Moon》：身分無疑（MB a2941c79、Discogs master 1227241）。年份取 2004（Discogs 自主發行卡帶，2008 Hi-Fi CD 註記『2004 年原始錄音』），MB 的 2008 是再版年；僅 Discogs 單一來源互證。『蒙古第一支金屬／死亡金屬 CD』出自蒙文維基與 Discogs 用戶簡介（MetalSucks、Metal Music Archives 403），維持『據稱』。蒙文維基 2002 年陣容與 2008 CD 名單只有 Andy 與 Purevdorj 重合，寫作層只寫 Andy。thin，建議保留。
+- **10473**｜Аясын Салхи《Eastern Wind》：身分走 §1 人工，Discogs 33491165（2023、CD Album、8 首、Death Metal）盤名年份曲目全對得上。『是否現場盤』風險：蒙文維基原句是『演出也將成為 CD』，但 Discogs 無 Live 標記、有混音母帶與封面設計名單，判斷偏錄音室；無第二來源可排除，寫作層只寫『一張 8 首的 CD』。全卡僅 Discogs 與蒙文維基兩源，WebSearch 查無第二來源，thin。Nyamka（標 ARAVT）是否為 Aravt 主唱無來源，勿連結。不建議移除。
+- **10474**｜Аясын Салхи《We Go In Different Directions》：**本組唯一的『是否正規專輯』疑點**。Discogs 登錄為 1985 自主發行卡帶 Album，12 首；但同一 Discogs 樂團簡介說樂團三卷重金屬 demo『一卷錄音室、兩卷現場』，這卷即是那卷錄音室 demo，很可能是 demo 卡帶。依放寬裁定（不因證據薄移除）不列建議移除，但寫作層不得寫成『首張正式專輯』，只寫『1985 年自主發行卡帶』；若主線要從嚴看待是否正規專輯，這張是第一個該拿掉的。翻唱：只確認〈Band On The Run〉〈Stars On 45〉與知名作品同名，Discogs 未註明作者，不得斷言翻唱或比例。Discogs 名單（Andy、Donny M.、Billy R.）與蒙文維基 1984 至 1990 陣容無一重合，不連結。年份與盤名僅 Discogs 單源。thin。
+- **10475**｜A-Sound《Release》：身分無疑（MB 42656d77、Discogs 13616593、蒙文維基『2008-07-01 發行首張專輯 Release』）。上架 CD 是含 3 首現場版的 Special Edition（12 軌），非現場專輯。成員喜好（Radiohead、Oasis、Kings of Leon）是蒙文維基成員簡介，不是音樂影響，不得寫『受影響』。樂團 2026-05-16 解散與作品無關，依反向禁令不寫。WebSearch 一次查無，thin，建議保留。
+- **10476**｜mxrningstar《Хүн》：身分無疑（MB b2d99016、Apple 1774565000、Bandcamp、UB.LIFE、Discogs 黑膠 33620058）。榜單事實採 UB.LIFE（7 首全進 Apple Music Top 100 Mongolia 歌曲榜，〈Бодлын гүнээс〉第 12 名），不採英文維基（掛未揭露付費標記）的『前 20』；不得寫成專輯榜。Céline Dessberg 彈豎琴僅 Bandcamp 描述一源。Eguur.mn 2023 訪談稱當年秋天發專輯，實際 2024 年 10 月。full，建議保留。
+- **10477**｜本組建議移除：無。六張身分、年份、封面來源、搖滾屬性皆成立（死亡／旋律死亡金屬、重金屬、另類搖滾均屬搖滾）；唯 10474 有『demo 或專輯』疑點，已列主線備查。
+- **10478**｜推翻策展層：Аравт『蒙古首支蒙古語民族金屬團』降為『維基稱』；Coffin Town 補陣容衝突；其餘未推翻事實。封面未動（Aravt、mxrningstar 有 Apple 圖；三張 Аясын Салхи 與 A-Sound 僅 Discogs）。
+- **10479**｜WebSearch 使用 2 次（Аясын Салхи 英文與蒙古語專輯名、A-Sound Release），皆無有用結果；其餘走蒙文／英文維基 raw、iTunes API（country=mn）、Discogs API、MB API、Bandcamp、UB.LIFE、Eguur.mn、Unite Asia。MetalSucks、Metal Music Archives、Neocha、Soundfly 皆 403／連線失敗未能開啟。qa-batch 對 Cyrillic 專名報『非拉丁亂碼』為預期。
