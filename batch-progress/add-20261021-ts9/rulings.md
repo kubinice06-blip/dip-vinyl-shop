@@ -34,3 +34,4 @@
 - **10308**　CURB：MB／Discogs／Bandcamp（403）皆無，身分以 NME 專題與 NME 年榜（#23，2022-12-23，25 張）為準；Big Duck 2022 榜第 2 成立（該條無簡評）。發行廠牌、月份、製作人員查無，不寫。
 - **10309**　Padres《Night》：策展層「入選 BBC Multitrack 3」查無來源，未寫入 facts（John Peel 在 BBC World Service 播放屬實，出自 Discogs 藝人傳記）。專輯級樂評原文未找到，好評靠傳記與維基樂團層級並列，蘇慧倫翻唱〈Water〉→〈傻瓜〉為 Discogs 同源兩處敘述。
 - **10310**　本組 WebSearch 用 2 次（Concave Scream 一次、Astreal 一次），其餘用 Discogs／MB API、維基 raw 與 WebFetch。
+- **10352**：照研究 c 組刪 Concave Scream 1995 同名（專輯級好評查無，只有 Discogs 傳記一句）與 Astreal《Fragments of the Same Dead Star》（只有新聞稿一個形容詞）。Caracal、The Caulfield Cult 保留，簡介保守。本批 42 張。

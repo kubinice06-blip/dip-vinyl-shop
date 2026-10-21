@@ -593,47 +593,6 @@
   "cover": null
  },
  {
-  "key": "desc2:Concave Scream|Concave Scream",
-  "artist": "Concave Scream",
-  "album": "Concave Scream",
-  "year": 1995,
-  "genre": "rock",
-  "genres": [
-   "rock"
-  ],
-  "label": "",
-  "country": "sg",
-  "rgMbid": "",
-  "identitySource": "manual",
-  "mbAbsenceProof": {
-   "queries": [
-    "artist?query=artist:\"Concave Scream\"（藝人方向）",
-    "release-group?query=releasegroup:\"Concave Scream\"（作品方向）"
-   ],
-   "checkedAt": "2026-10-20",
-   "conclusion": "artist count=0，作品方向 count=0"
-  },
-  "manualEvidenceUrls": [
-   "https://www.discogs.com/release/25111363",
-   "https://www.discogs.com/artist/4011305"
-  ],
-  "curatorWhy": "新加坡：Concave Scream 自資發行的同名首張，在新加坡英語搖滾圈尤其樂評間逐步發酵，為 90 年代新加坡獨立搖滾鋪路（Discogs／AllMusic 傳記）。",
-  "curatorRisk": "⚠ 好評證據偏弱（傳記稱受樂評青睞），若需減量優先拿掉；同團代表作以 Erratic 為主。",
-  "mbNote": "MB 查無（artist count=0，作品方向 count=0），走 §1 人工身分。證據：https://www.discogs.com/release/25111363 https://www.discogs.com/artist/4011305 https://www.discogs.com/release/25111363 https://www.discogs.com/artist/4011305",
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "genreException": "",
-  "selfTitled": true,
-  "apex": null,
-  "group": "c",
-  "lineType": "廣度",
-  "scene": "薄細項策展線（新加坡）",
-  "queryAlias": "",
-  "republic": "",
-  "cover": null
- },
- {
   "key": "desc2:Sweet Charity|Pelarian",
   "artist": "Sweet Charity",
   "album": "Pelarian",
@@ -748,35 +707,6 @@
   "curatorWhy": "新加坡：吠陀金屬開創者 Rudra 的第九張，Transcending Obscurity 發行；入選 Bandwagon 2016 新加坡年度最佳專輯榮譽提名，是極端金屬少見打進綜合年度榜的例子。",
   "curatorRisk": "⚠ 年終榜為榮譽提名，強度中等；同團另一張 The Aryan Crusade 已提。",
   "mbNote": "MB release-group 56678e49-f9cb-459c-8c29-cb4cbccd8370：title「Enemy of Duality」、Album、first-release-date 2016-12-17、artist-credit「Rudra」。證據：https://musicbrainz.org/release-group/56678e49-f9cb-459c-8c29-cb4cbccd8370 https://bandwagon.asia/articles/watch-here-are-our-picks-for-best-singaporean-albums-of-2016 https://en.wikipedia.org/wiki/Rudra_(band)",
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "genreException": "",
-  "selfTitled": false,
-  "apex": null,
-  "group": "c",
-  "lineType": "廣度",
-  "scene": "薄細項策展線（新加坡）",
-  "queryAlias": "",
-  "republic": "",
-  "cover": null
- },
- {
-  "key": "desc2:Astreal|Fragments of the Same Dead Star",
-  "artist": "Astreal",
-  "album": "Fragments of the Same Dead Star",
-  "year": 2006,
-  "genre": "rock",
-  "genres": [
-   "rock"
-  ],
-  "label": "Wallwork Records",
-  "country": "sg",
-  "rgMbid": "39cea7f1-7aef-4aeb-84aa-b20db45dc6cc",
-  "identitySource": "pinned",
-  "curatorWhy": "新加坡：新加坡最早由女聲領銜的 shoegaze／noise pop 樂團之一 Astreal 第二張（EMI 發行）；發片後入圍 Street Style Awards，Juice 雜誌選為 2007 年最佳樂團。",
-  "curatorRisk": "⚠ 好評為樂團層級（年度最佳樂團、獎項入圍），非針對此盤的樂評。",
-  "mbNote": "MB release-group 39cea7f1-7aef-4aeb-84aa-b20db45dc6cc：title「Fragments of the Same Dead Star」、Album、first-release-date 2006、artist-credit「Astreal」。證據：https://musicbrainz.org/release-group/39cea7f1-7aef-4aeb-84aa-b20db45dc6cc https://en.wikipedia.org/wiki/Astreal https://sg.bandwagon.asia/articles/dive-into-singapore-s-undying-rock-scene-with-caracal-sphaeras-astreal-the-observatory-bad-dod-ramli-sarip-forests-and-more",
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
