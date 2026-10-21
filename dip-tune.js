@@ -1,7 +1,7 @@
 /* 調頻 —— 三顆輪子各轉一軸（能量／質地／色溫），轉過去的唱片一張張閃過，停下來鎖定一張。
  *
- * 資料：data/mood/card-moods.json（scripts/build-card-moods.mjs 產生，依 seed_cards.json 順序存
- * [x, y, z, 把握]）＋ seed_cards.json（對 id；瀏覽器快取裡已有）。面板外殼是店主的像素稿
+ * 資料：data/mood/card-moods.json（scripts/build-card-moods.mjs 產生，每張 [x, y, z, 把握] 加 id 雜湊 _h）；
+ * 卡池物件用 id 的 FNV-1a 雜湊對上座標，不靠 seed 順序，舊快取的 seed 或還沒評分的新卡只是被跳過。面板外殼是店主的像素稿
  * tune/panel.jpg，滾筒、輪子、開關、按鍵是疊在上面的活件；輪子的滾花拿稿子裡的銅帶
  * （tune/tile-*.png）照圓柱投影取樣捲動。星圖用 Three.js（r128，與 starmap-lab 同版）。
  *
@@ -40,17 +40,12 @@
     if (!dataPromise) {
       dataPromise = Promise.all([
         fetch('data/mood/card-moods.json').then(r => { if (!r.ok) throw new Error('情緒座標載入失敗'); return r.json(); }),
-        fetch('seed_cards.json').then(r => { if (!r.ok) throw new Error('卡池載入失敗'); return r.json(); }),
         cfg.loadCardPool(),
-      ]).then(([moods, seed, pool]) => {
-        // 前台檔依 seed 順序綁定：張數、第一張、最後一張 id 都要對，否則整檔失效
-        const s = moods._seed || {};
-        if (s.count !== seed.length || s.head !== idOf(seed[0][0], seed[0][1]) || s.tail !== idOf(seed[seed.length - 1][0], seed[seed.length - 1][1])) {
-          throw new Error('情緒座標與卡池版本不一致，資料更新中');
-        }
-        const byId = new Map();
-        seed.forEach((row, i) => { const m = moods.cards[i]; if (m) byId.set(idOf(row[0], row[1]), m); });
-        return { moods, byId, pool };
+      ]).then(([moods, pool]) => {
+        if (!Array.isArray(moods._h) || moods._h.length !== moods.cards.length) throw new Error('情緒座標檔格式不對');
+        const byHash = new Map();
+        moods._h.forEach((h, i) => { const m = moods.cards[i]; if (m) byHash.set(h, m); });
+        return { moods, byHash, pool };
       }).catch(e => { dataPromise = null; throw e; });
     }
     return dataPromise;
@@ -65,11 +60,12 @@
   const cellOf = (x, y, z) => (x >= T.x ? (y >= T.y ? (z >= T.z ? 'boil' : 'charge') : (z >= T.z ? 'lift' : 'crisp')) : (y >= T.y ? (z >= T.z ? 'languid' : 'decay') : (z >= T.z ? 'calm' : 'still')));
   const target = () => ({ x: rawOf('x', state.p.x), y: rawOf('y', state.p.y), z: rawOf('z', state.p.z) });
 
-  function buildCards({ moods, byId, pool }) {
+  const fnv = s => { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; };
+  function buildCards({ moods, byHash, pool }) {
     DATA = moods; T = moods.thresholds; BR = moods.breaks; NAMES = moods.names;
     CARDS = [];
     for (const c of pool.cards) {
-      const m = byId.get(idOf(c.artist, c.album));
+      const m = byHash.get(fnv(idOf(c.artist, c.album)));
       if (!m) continue;
       const i = CARDS.length;
       CARDS.push({ i, card: c, x: m[0], y: m[1], z: m[2], conf: m[3], cell: cellOf(m[0], m[1], m[2]),
