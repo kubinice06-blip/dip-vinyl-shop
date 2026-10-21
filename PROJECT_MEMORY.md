@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-21｜dip-vinyl-shop｜頻率選歌：「載入中」蓋住星圖（轉不動）修掉；返回鍵只留箭頭
+
+- **改動**：`.tune-msg` 自己設了 `display:grid`，壓過瀏覽器預設的 `[hidden]{display:none}`，載入完 `hidden=true` 沒效，那層一直罩在星圖上，字留著、拖曳也被它吃掉（預覽 artifact 有自帶 `[hidden]` 規則所以沒發現）。補 `.tune-app [hidden]{display:none!important}`（含 `#tuneApp`／`#tuneResultWrap`）。左上返回鍵改只剩「↩」。`dip-tune.js?v=3`。
+- **主要檔案**：`dip-tune.js`、`index.html`
+- **驗證**：本機 Playwright：載入後 `#tuneMsg` computed display 為 none、拖曳星圖相機位置有變、四種尺寸 0 錯誤。
+
 ### 2026-10-21｜dip-vinyl-shop｜頻率選歌版面：FREQUENCY 壓矮、按鍵縮短；`dip-tune.js?v=2` 換掉舊快取
 
 - **改動**：店主回報合併 #107 後版面沒換——`index.html` 還載 `dip-tune.js?v=1`，瀏覽器與 service worker 的執行期快取沿用舊檔；版本號改 `?v=2`。FREQUENCY 模組依店主指示「上下縮、寬不變」：模組圖改緊裁（原稿 y 985–1552）再把高度壓到 88%（aspect 1438/499），滾筒字跟著縮；右側黃銅「就這張」隨列高自動縮短。

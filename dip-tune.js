@@ -88,6 +88,7 @@
 .tune-readout span+span{border-left:1px solid rgba(233,226,200,.18);padding-left:6px}
 .tune-spk,.tune-back{height:24px;padding:2px 6px;border:1px solid rgba(233,226,200,.2);background:rgba(10,12,9,.16);color:#e9e2c8;font-family:var(--pix);font-size:10px;cursor:pointer;display:inline-flex;align-items:center;gap:4px}
 .tune-spk{width:24px;padding:2px}
+.tune-back{width:24px;padding:0;justify-content:center;font-size:14px;line-height:1}
 .tune-spk svg{display:block}.tune-spk .b{fill:#e9e2c8}.tune-spk .w{fill:#ffd166}.tune-spk .o{fill:#ff6a3d;display:none}
 .tune-spk[aria-pressed="false"] .w{display:none}.tune-spk[aria-pressed="false"] .o{display:block}.tune-spk[aria-pressed="false"] .b{fill:#8d9478}
 .tune-now{position:absolute;right:10px;top:10px;display:flex;align-items:center;gap:8px;max-width:min(240px,calc(100% - 20px));padding:4px 8px 4px 4px;border:1px solid rgba(233,226,200,.2);background:rgba(10,12,9,.16);color:#e9e2c8;font-family:var(--pix);font-size:11px;text-align:left;cursor:pointer}
@@ -106,6 +107,7 @@
 .tune-now .dot{width:5px;height:5px;background:#ff4d3d;box-shadow:0 0 6px #ff4d3d;animation:tuneBlink .9s steps(2) infinite;flex:none;align-self:flex-start}
 @keyframes tuneBlink{50%{opacity:.15}}
 .tune-msg{position:absolute;inset:0;display:grid;place-items:center;color:#9aa088;font-size:12px;text-align:center;padding:20px;line-height:1.8}
+.tune-app [hidden],#tuneApp[hidden],#tuneResultWrap[hidden]{display:none!important}
 .tune-panel{position:relative;min-width:0;min-height:0;display:grid;place-items:start center;padding:10px 10px 0;background:#2c3037 repeating-linear-gradient(135deg,rgba(255,255,255,.025) 0 2px,transparent 2px 9px);border-top:2px solid #14161a;overflow:hidden}
 @media (orientation:landscape) and (max-height:600px){.tune-panel{border-top:0;border-left:2px solid #14161a;padding:12px}}
 /* 主機拆兩個模組：FREQUENCY 靠左 76% 寬、右側一塊直立的黃銅「就這張」；輪子模組全寬。整台高 ≈ 0.86 倍寬，依視窗高度反推寬度，一定塞進一個畫面 */
@@ -148,7 +150,7 @@
     <div class="tune-hud">
       <div class="tune-readout" id="tuneReadout" title="能量 / 質地 / 色溫"><span style="--c:${AX.x}"><b>-.--</b></span><span style="--c:${AX.y}"><b>-.--</b></span><span style="--c:${AX.z}"><b>-.--</b></span></div>
       <button class="tune-spk" id="tuneSpk" type="button" aria-pressed="true" aria-label="聲音">${SPK}</button>
-      <button class="tune-back" id="tuneBack" type="button">↩ 找一張來聽</button>
+      <button class="tune-back" id="tuneBack" type="button" aria-label="回找一張來聽" title="找一張來聽">↩</button>
     </div>
     <button class="tune-now" id="tuneNow" type="button" hidden></button>
     <div class="tune-hint">拖曳旋轉　滾輪縮放</div>
