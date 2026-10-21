@@ -3,8 +3,9 @@
 ### 2026-10-21｜dip-vinyl-shop｜頻率選歌熱修：座標改用 id 雜湊對卡，不再靠 seed 順序
 
 - **改動**：上線當天店主手機開到「情緒座標與卡池版本不一致，資料更新中」。原因：`sw.js` 對同源 JSON 走快取優先，店主瀏覽器裡的 `seed_cards.json` 還是舊版（卡池修正前 19,121 張），與前台檔的 `_seed` 綁定（張數、首尾 id）對不上就整檔失效。改法：`build-card-moods.mjs` 多存每張 id 的 FNV-1a 雜湊 `_h`（檔案 302KB→502KB，gz 66KB→169KB），`dip-tune.js` 不再抓 seed、用雜湊對卡池物件；舊快取的 seed 或還沒評分的新卡只是對不到被跳過。
-- **主要檔案**：`dip-tune.js`、`scripts/build-card-moods.mjs`、`data/mood/card-moods.json`
-- **驗證**：gate 19,116/19,116、錨點 104/104；本機 Playwright `/#tune` 桌機與手機 0 錯誤。
+- **版面**（店主手繪指示）：主機拆成兩個模組圖（`tune/panel-freq.jpg`、`tune/panel-wheels.jpg`，原 `panel.jpg` 退役）：FREQUENCY 靠左 76% 寬，右側改成直立的黃銅「就這張」（CSS 畫、字直排），輪子模組全寬、原本底下的按鍵帶裁掉；面板寬度依視窗高度反推（高 ≈ 0.86 倍寬），整台一定塞進一個畫面不捲動，底部留 18px＋安全區給瀏覽器底欄。
+- **主要檔案**：`dip-tune.js`、`scripts/build-card-moods.mjs`、`data/mood/card-moods.json`、`tune/{panel-freq.jpg,panel-wheels.jpg}`
+- **驗證**：gate 19,116/19,116、錨點 104/104；本機 Playwright `/#tune` 桌機 1400×900、iPhone 14、iPhone SE、手機橫放：整台都在視窗內、無捲動、0 錯誤；就這張→結果頁→換個頻率→hub 全程通。
 
 ### 2026-10-21｜dip-vinyl-shop｜「頻率選歌」定名、版面改直式預設（橫向短視窗才左右並排）
 
