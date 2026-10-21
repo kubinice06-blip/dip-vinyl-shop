@@ -32,4 +32,4 @@
 ## 主線裁定（研究層交件中）
 
 - **10511**：刪 Haranga《Hard Rock Group, Vol. 1 & 2》——研究 e 組逐首比對，是 1997 年波昂兩張 CD 的合併整理（其中《The Sound of the Century》14 首收 13 首，該盤 ts7 已上架），屬再編合輯，放寬門檻下仍不收。本批 29 張。
-- **10512**：研究 b 組：Altan Urag《Blood》卡面年份改 2008（實體 CD 與 UBS 獎年份；MB／Apple 2009 為數位上架）；《Hypnotism》Discogs 只標 Folk／Neo-Classical，但封面與維基稱 Folk Rock Band，放寬門檻下保留、正文不稱硬搖滾。The Lemons《III》Beehype 2016 蒙古榜第 3 名驗證成立——可具名出處（Beehype 是榜單本身）照寫機構名與名次。
+- **10512**：研究 b 組：Altan Urag《Blood》卡面年份改 2008（實體 CD 與 UBS 獎年份；MB／Apple 2009 為數位上架）；《Hypnotism》Discogs 只標 Folk／Neo-Classical，但封面與維基稱 Folk Rock Band，放寬門檻下保留、正文不稱硬搖滾。The Lemons《III》Beehype 2016 蒙古榜第 3 名驗證成立，但 Beehype 是音樂媒體、其年終榜屬 writer-base 榜單條「整條不寫」，只當收錄理由，正文不寫。
