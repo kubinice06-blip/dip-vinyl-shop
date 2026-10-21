@@ -1070,7 +1070,7 @@
 <script src="dip-player.js?v=49"></script>
 <script src="dip-draw-anim.js?v=4"></script>
 <script src="dip-genre-tree.js?v=5"></script>
-<script src="dip-tune.js?v=3"></script>
+<script src="dip-tune.js?v=4"></script>
 <script src="dip-artist-intro.js?v=2"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -5852,8 +5852,11 @@ ${seenList}
     loadCardPool: loadGamePool,
     cardIdOf,
     player: window.DipPlayer,
-    // 第一次碰輪子＝使用者明確要出聲：武裝播放器並授權這次造訪的自動試聽（停下來就播電台）
-    onFirstGesture: () => gpEnsurePlayer({ grant: true }),
+    // 第一次碰輪子＝使用者明確要出聲：武裝播放器並授權這次造訪的自動試聽（停下來就播電台）。
+    // 之後每次按下／放開輪子都再武裝一次並拉長 keep-alive：iOS 的 audio session 8 秒內沒真的播就放掉，
+    // 轉久了才停下來會變成「沒有試聽」。
+    onFirstGesture: () => gpEnsurePlayer({ grant: true, hold: 30000 }),
+    onGesture: () => gpEnsurePlayer({ grant: true, hold: 30000 }),
     resolveCover: async (card) => (await resolveCardAssets(card.artist, card.album)).coverUrl || '',
     onBack: () => setActiveTab(SHOP_MODE ? 'shop' : 'find'),
     onResult: async ({ card, cell, cellName, targetCellName }) => {

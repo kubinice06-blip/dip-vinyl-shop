@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-21｜dip-vinyl-shop｜頻率選歌：時好時壞的「沒有試聽」——每次碰輪子都重新武裝播放器
+
+- **改動**：店主回報停下來常顯示「沒有試聽」、有時又有。原因：播放器只在第一次碰輪子時武裝（`gpEnsurePlayer({grant:true})`），而 `primePreviewFromGesture` 的 keep-alive 8 秒內沒真的播就放掉 audio session；玩家轉了一陣子才停，timer 觸發的 `playAlbum` 在 iOS 上就起不來，回報失敗被當成沒試聽。改成每次按下／放開輪子都 `gpEnsurePlayer({grant:true, hold:30000})`（`onGesture`），小卡改照播放器狀態顯示「找試聽中／這張沒有試聽／再碰一下輪子開聲音」（`onStateChange`＋`debugState().code`）。`dip-tune.js?v=4`。
+- **主要檔案**：`dip-tune.js`、`index.html`
+- **驗證**：本機 Playwright `/#tune` 0 錯誤（本機無 Worker，試聽本身要正式站驗）。
+
 ### 2026-10-21｜dip-vinyl-shop｜頻率選歌：「載入中」蓋住星圖（轉不動）修掉；返回鍵只留箭頭
 
 - **改動**：`.tune-msg` 自己設了 `display:grid`，壓過瀏覽器預設的 `[hidden]{display:none}`，載入完 `hidden=true` 沒效，那層一直罩在星圖上，字留著、拖曳也被它吃掉（預覽 artifact 有自帶 `[hidden]` 規則所以沒發現）。補 `.tune-app [hidden]{display:none!important}`（含 `#tuneApp`／`#tuneResultWrap`）。左上返回鍵改只剩「↩」。`dip-tune.js?v=3`。
