@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **313** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 75、已退回 1）。
+共 **315** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 77、已退回 1）。
 最後更新：2026-10-21
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -147,6 +147,13 @@
 | ดิ โอฬาร โปรเจ็คท์ 《ลิขิตดวงดาว》 | [#6725966](https://www.discogs.com/release/6725966) | 1996 | Perfect Record | PR 96015 | Discogs master 804854 的版本、主線目視與盤名相符 | ok |
 | เดอะ ซัน 《เสือ สิงห์ กระทิง แรด》 | [#38360079](https://www.discogs.com/release/38360079) | — | RS Promotion | none | 唯一版本、主線目視與盤名相符 | ok |
 | วูล์ฟแพ็ค 《วูล์ฟแพ็ค》 | [#37619697](https://www.discogs.com/release/37619697) | 1996 | Not On Label | none | 唯一版本、主線目視與盤名相符 | ok |
+
+## add-20261021-ts8（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Black Infinity 《666 Metal》 | [#7270883](https://www.discogs.com/release/7270883) | 2009 | Music Faces | 00788 | 唯一版本、主線目視與盤名相符 | ok |
+| Greasy Cafe 《The Journey without Maps》 | [#21696439](https://www.discogs.com/release/21696439) | 2012 | Smallroom | SR 155 | 唯一版本、主線目視與盤名相符 | ok |
 
 ## c49（3 張）
 
