@@ -8,7 +8,7 @@
 ## 品質門檻（這次的重點）
 - **每張都要「讚」**：要有具體的好評證據才收——當地或國際樂評推崇、年度／史上最佳榜單、重要獎項、場景里程碑（第一張某某、開創某風格）、或是後輩公認的經典。`why` 必須寫出這個證據（一句話＋來源在 `evidence`）。
 - **寧缺勿濫**：真的找不到夠格的就停，**不要為了湊數收普通的碟**。湊不滿目標數時在 `notes` 寫明「夠格的只到 N 張」與理由，主線會照實回報店主。
-- 同一藝人池中已有＋本次提名合計**最多 3 張**，且第 2、3 張也要各自夠格（不是「同團另一張」就收）。
+- **同一藝人沒有張數上限**（2026-09-04 店主裁定；本行 2026-10-21 更正，原文誤寫「最多 3 張」）。但同團的每一張都要各自夠格，不是「同團另一張」就收。
 - 池中已有（不要重提）：
   - 越南：Phương Tâm《Magical Nights》、Bức Tường 3 張（已滿）、Microwave《Lối thoát》《Thời gian》、Ngũ Cung《365000》、Ngọt《Ngọt》《Gieo》、Cá Hồi Hoang《Hiệu Ứng Trốn Chạy》《Gấp》、Chillies《Qua Khung Cửa Sổ》、Thủy Triều Đỏ《Nắng mới》、Sàigòn Soul Revival《Họa âm xưa》、Raditori《NHỮNG CON NGƯỜI》。
   - 泰國：Khun Narin 2 張、คาราบาว《เมด อิน ไทยแลนด์》《เวลคัมทูไทยแลนด์》、Loso 2 張、Silly Fools《Candyman》、bodyslam 同名、Slot Machine 同名、Moderndog《เสริมสุขภาพ》、Potato《Life》、พงษ์สิทธิ์ คำภีร์《เสือตัวที่ 11》。

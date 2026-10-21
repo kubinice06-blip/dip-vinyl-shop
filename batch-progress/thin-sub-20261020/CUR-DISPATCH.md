@@ -9,7 +9,7 @@
 - **去重**：每張都要跑下面的指令，輸出 0 才可提（藝人名互為子字串也算撞）：
   `node -e 'const s=require("./seed_cards.json");const n=x=>x.toLowerCase().normalize("NFKC").replace(/[^\p{L}\p{N}]+/gu,"");const [a,b]=process.argv.slice(1);console.log(s.filter(r=>n(r[1])===n(b)&&(n(r[0]).includes(n(a))||n(a).includes(n(r[0])))).length)' "藝人" "專輯"`
   另外先看該藝人在池中已有幾張：`node -e 'const s=require("./seed_cards.json");const a=process.argv[1].toLowerCase();console.log(s.filter(r=>r[0].toLowerCase()===a).map(r=>r[1]))' "藝人"`
-- 同一藝人最多 3 張，大多 1–2 張。
+- **同一藝人沒有張數上限**（2026-09-04 店主：「並沒有一個人只限三張這種限制」，`batch-progress/c53/rulings.md` 第 150 條）。判準只有「這張碟夠不夠格、池中有沒有」。
 - **身分兩條路，二選一**：
   1. **MB 釘得住**：查 `https://musicbrainz.org/ws/2/release-group?query=artist:"…" AND releasegroup:"…"&fmt=json`（header `User-Agent: dip-vinyl-shop/1.0 (kubinice06@gmail.com)`，**每秒最多 1 次**，503 等 2 秒重試），取 `primary-type=Album`（考古合輯可為 Compilation），填 `mbRgMbid`。
   2. **MB 查無 → 人工身分**（ALBUM_ONBOARDING §1）：`mbRgMbid` 留空，另填
