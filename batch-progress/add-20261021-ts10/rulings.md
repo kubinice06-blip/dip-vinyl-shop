@@ -63,3 +63,4 @@
 - 10399｜本組建議移除：無。八張皆為原創專輯，身分、封面來源與年份核對無誤（Plainsunset 年份 2003／2004 留疑但不構成移除理由）。thin 兩張：Final Stage、Opposition Party。
 - 10400｜WebSearch 用量：2 次，全數用在 Final Stage（英文、越南文，皆無有用結果）；其餘七張零搜尋，走 Discogs／MB／iTunes API、維基 raw 與 WebFetch（Bandwagon、Bandcamp）。Metal Archives、Discogs 網頁版、danviet、NLB、archive.org 皆 403／被擋。封面：Plainsunset、Stompin' Ground 取 Discogs 圖（尺寸未量）；Electrico 兩張、Oddfellows、Opposition Party、I Am David Sparkle 取策展層給的 Apple 圖；Final Stage CAA 有圖。
 - **10433**：研究 d 組：The Oddfellows《What's Yours and Mine》廠牌改 Teenage Head Records（LP；TNT 是鼓的錄音室）；Opposition Party 寫「原聲帶收錄」不寫「配樂」；Stompin' Ground 不寫暖場與命名者；Final Stage 廠牌兩說、正文不寫。
+- **10434**：試聽 35 ready／3 無來源（Sói Đen、Stompin' Ground、Plainsunset；人工 8 張照策展層身分證據所指的 Apple 專輯，Thắng《Cái Thứ Hai》不取 demo 版、Electrico 不取 Remix 版、Black Infinity 取雙 CD 的 Vol. 1）。封面 CAA 23、Apple 12、Discogs 3（Sói Đen 只有 300×225 小圖，為唯一來源，照收）。三軸：冷門軸 §0.8 錨點制（大廠／國營廠 2、獨立 3）；經典度一律 2，因本批收錄理由是場景代表性、非專輯級好評。

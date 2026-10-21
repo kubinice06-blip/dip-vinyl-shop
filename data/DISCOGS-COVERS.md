@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **317** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 79、已退回 1）。
+共 **320** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 82、已退回 1）。
 最後更新：2026-10-21
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -161,6 +161,14 @@
 |---|---|---:|---|---|---|---|
 | Padres 《Night》 | [#11694210](https://www.discogs.com/release/11694210) | 1997 | Rock Records | RSDINT 009 | 唯一版本、主線目視與盤名相符 | ok |
 | Sweet Charity 《Pelarian》 | [#5579304](https://www.discogs.com/release/5579304) | 1980 | WEA | Q93223 | Discogs master 829785 的版本、主線目視與盤名相符 | ok |
+
+## add-20261021-ts10（3 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Plainsunset 《The Gift》 | [#24571880](https://www.discogs.com/release/24571880) | 2003 | Wake Me Up Music | wmum 006 | 唯一版本、主線目視與盤名相符 | ok |
+| Sói Đen 《Chiến tranh và hòa bình》 | [#10488499](https://www.discogs.com/release/10488499) | 2005 | Not On Label (Sói Đen Self-released) | none | 唯一版本、主線目視與盤名相符 | ok |
+| Stompin' Ground 《Measured by the Richter Scale》 | [#2239436](https://www.discogs.com/release/2239436) | 1995 | Pony Canyon | SKCS 0001 | Discogs master 2738420 的版本、主線目視與盤名相符 | ok |
 
 ## c49（3 張）
 
