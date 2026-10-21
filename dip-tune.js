@@ -80,8 +80,9 @@
 
   // ── 畫面 ──────────────────────────────────────────────────────────
   const CSS = `
-.tune-app{--pix:'DotGothic16','Space Mono',monospace;position:relative;display:grid;grid-template-columns:minmax(0,1fr) clamp(300px,calc((100dvh - 24px) * 1438 / 1608),48vw);grid-template-rows:minmax(0,1fr);height:100dvh;background:#0b0c10;color:#e9e2c8;font-family:var(--pix);font-size:11px;letter-spacing:.04em;overflow:hidden}
-@media (max-width:820px){.tune-app{grid-template-columns:1fr;grid-template-rows:minmax(0,46dvh) auto;overflow:auto}}
+.tune-app{--pix:'DotGothic16','Space Mono',monospace;position:relative;display:grid;grid-template-columns:1fr;grid-template-rows:clamp(300px,54dvh,720px) auto;width:100%;max-width:720px;margin:0 auto;min-height:100dvh;background:#0b0c10;color:#e9e2c8;font-family:var(--pix);font-size:11px;letter-spacing:.04em}
+/* 轉成橫向（手機側放、矮視窗）才左右並排 */
+@media (orientation:landscape) and (max-height:600px){.tune-app{grid-template-columns:minmax(0,1fr) clamp(300px,calc((100dvh - 24px) * 1438 / 1608),48vw);grid-template-rows:minmax(0,1fr);max-width:none;height:100dvh;min-height:0;overflow:hidden}}
 .tune-stage{position:relative;min-width:0;min-height:0;background:#060609;overflow:hidden}
 .tune-stage canvas{display:block;width:100%;height:100%;touch-action:none}
 .tune-stage .tune-hint{position:absolute;left:12px;bottom:10px;font-size:9px;letter-spacing:.14em;color:#777;pointer-events:none}
@@ -109,10 +110,10 @@
 .tune-now .dot{width:5px;height:5px;background:#ff4d3d;box-shadow:0 0 6px #ff4d3d;animation:tuneBlink .9s steps(2) infinite;flex:none;align-self:flex-start}
 @keyframes tuneBlink{50%{opacity:.15}}
 .tune-msg{position:absolute;inset:0;display:grid;place-items:center;color:#9aa088;font-size:12px;text-align:center;padding:20px;line-height:1.8}
-.tune-panel{position:relative;min-width:0;min-height:0;display:grid;place-items:center;padding:12px;background:#2c3037 repeating-linear-gradient(135deg,rgba(255,255,255,.025) 0 2px,transparent 2px 9px);border-left:2px solid #14161a;overflow:hidden}
-@media (max-width:820px){.tune-panel{border-left:0;border-top:2px solid #14161a;padding:10px}}
-.tune-console{position:relative;width:100%;max-width:min(100%,calc((100dvh - 24px) * 1438 / 1608));aspect-ratio:1438/1608;background:url(tune/panel.jpg) 0 0/100% 100% no-repeat;image-rendering:pixelated;container-type:inline-size;user-select:none}
-@media (max-width:820px){.tune-console{max-width:min(100%,560px)}}
+.tune-panel{position:relative;min-width:0;min-height:0;display:grid;place-items:center;padding:10px;background:#2c3037 repeating-linear-gradient(135deg,rgba(255,255,255,.025) 0 2px,transparent 2px 9px);border-top:2px solid #14161a;overflow:hidden}
+@media (orientation:landscape) and (max-height:600px){.tune-panel{border-top:0;border-left:2px solid #14161a;padding:12px}}
+.tune-console{position:relative;width:100%;max-width:min(100%,600px);aspect-ratio:1438/1608;background:url(tune/panel.jpg) 0 0/100% 100% no-repeat;image-rendering:pixelated;container-type:inline-size;user-select:none}
+@media (orientation:landscape) and (max-height:600px){.tune-console{max-width:min(100%,calc((100dvh - 24px) * 1438 / 1608))}}
 .tune-console .abs{position:absolute}
 .tune-drumwin{left:14.26%;top:13.8%;width:61.2%;height:19.28%;background:#0d0f0d;display:flex;gap:1.1cqw;padding:1.2cqw 1.3cqw;align-items:stretch}
 .tune-drum{position:relative;flex:1 1 0;overflow:hidden;background:linear-gradient(180deg,#000 0,#2b2f2a 30%,#3a3f38 50%,#2b2f2a 70%,#000 100%);box-shadow:inset 0 0 0 .3cqw #000}
