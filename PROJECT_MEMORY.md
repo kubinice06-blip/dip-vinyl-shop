@@ -11,7 +11,8 @@
 - **根源**：PR #111 只止住了掃描狂打，但傷害已造成——worker 的 Spotify app 被打到 `429 QUOTA_EXCEEDED`（`retry-after` 約 4.5 小時，token 正常）。429 期間 `/spotify-search` 退到 Cover Art Archive 仍補得到封面，舊寫法見到封面就**永久**寫進 KV，`spotifyUrl` 永遠空白；`/spotify-album-link` 備援也一起 429。掃 KV：`cover6:*` 12,191 個鍵只有 3,252 有 Spotify，**8,644 個是 CAA 無 Spotify（8,502 在卡池）**，U2《Achtung Baby》、Billy Joel、Justin Bieber 都灰掉——不是頻率選歌獨有，所有抽卡線都受影響，只是頻率選歌抽得多先被看到。
 - **改動**：(1) worker `/spotify-search`：Spotify 沒走完（非 200 或沒 token）→ 結果帶 `spotifyUnchecked`、只存 6 小時；`/spotify-album-link` 沒回 200 的空結果不進邊緣快取（分支 `claude/spotify-429-kv-poison`，**要店主合併並 `npx wrangler deploy`**）。(2) 新增 `scripts/kv-spotify-link-repair.mjs`：列 KV 候選（CAA 無 Spotify、未查過、卡池內），拿卡池原寫法直接問 Spotify 一次，**只收與 worker 同一套「完全吻合」判定**的連結、模糊命中維持灰（沒有 MusicBrainz 覆核層，寧缺勿錯），查過的寫 `spotifyChecked` 不再查；1.2 秒一張、每輪上限 2,000、遇 429 存進度退出可續跑；進度在 `batch-progress/spotify-link-repair/state.json`。
 - **主要檔案**：`dip-vinyl-worker/src/index.js`、`scripts/kv-spotify-link-repair.mjs`
-- **驗證**：直接拿 worker token 打 Spotify 得 429 `QUOTA_EXCEEDED`；`--dry-run` 候選 8,502；worker `node --check` 過。配額重置後跑修復（見下一筆或 rulings）。
+- **驗證**：直接拿 worker token 打 Spotify 得 429 `QUOTA_EXCEEDED`；`--dry-run` 候選 8,502；worker `node --check` 過。
+- **實跑結果（同日）**：配額 11:00 UTC 重置後 Spotify 直查只撐 691 張（補上 531、無完全吻合 160）就再撞 429、`retry-after` 23.7 小時——**這個 app 每日配額約千次，正式站也在用同一份，不能再拿它跑批次**。改走 MusicBrainz（鍵裡的 `rgMbid` → 發行版 url-rels，免配額、1.1 秒一張）：三段共 8,299 張，補上 3,954、MB 沒有 3,851、殘餘 503 錯誤 12。**累計補回 4,485 張**，U2／Billy Joel／Justin Bieber 在正式站驗過按鈕亮。剩 3,851 張 MB 也沒有的（Kacey Musgraves、Donald Byrd 這種明明在 Spotify 的也在內）待店主定：Odesli（Apple collectionId 換 Spotify 連結，每分鐘 10 筆）或第二個 Spotify app。前端 `resolveSpotifyBtn` 看到 KV 已標 `spotifyChecked` 就不再打 `/spotify-album-link` 燒配額。
 
 ### 2026-10-21｜dip-vinyl-shop｜薄細項策展線 ts10／ts11：越南 25＋新加坡 13＋蒙古 28 張上線（放寬門檻）；越泰新蒙線收尾
 
