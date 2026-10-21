@@ -12,3 +12,4 @@
 - Hurd《The Best Collection II》：MB 標 Album+Compilation，英文維基與 Discogs 原版為錄音室第二張，照 Album；掛名統一 Hurd（MB 為西里爾 Хурд）。
 - 策展層自評偏弱、研究層查不到專輯級好評就刪：Concave Scream 1995 同名、Astreal、Forests《Sun Eat Moon Grave Party》、The Caulfield Cult、The Observatory《A Far Cry From Here》。
 - 研究層每支 WebSearch ≤2 次。
+- 店主 2026-10-21 指名加 **Jogja Hip Hop Foundation**（歸嘻哈）：策展 y 組只收《Semar Mesem Romo Mendem》（2013，JHF 唯一以團名發行的正規專輯；§1 人工身分，Discogs 37026846＋Apple 1450307520）。《Jogja Istimewa》是合輯、《Poetry Battle》1／2 為計畫合輯且無封面來源、其餘皆單曲，不收。`genres` 為 hiphop＋world，掛進 e 組（本批 44 張）。
