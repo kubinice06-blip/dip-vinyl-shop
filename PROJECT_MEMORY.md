@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-21｜dip-vinyl-shop｜薄細項策展線 ts10／ts11：越南 25＋新加坡 13＋蒙古 28 張上線（放寬門檻）；越泰新蒙線收尾
+
+- **內容**：店主裁定 VN／SG／MN 放寬為「場景裡有代表性」（仍排除單曲、EP、合輯、現場專、非搖滾、無封面）。ts10：越南 25（Ngũ Cung 3、Cá Hồi Hoang 4、Bức Tường 2、Thắng 2、The Cassette 2、Cút Lộn 2、Chillies、Thủy Triều Đỏ、Raditori、Windrunner、The Flob、Black Infinity、Da Vàng、Sói Đen、7UPPERCUTS、Final Stage）＋新加坡 13（Electrico 2、Rudra 2、The Oddfellows、Opposition Party、I Am David Sparkle、Stompin' Ground、Plainsunset、Amateur Takes Control、Marijannah、Forests、Sweet Charity）。ts11：蒙古 28（Hurd 6、Altan Urag 5、Nisvanis 2、The Lemons 2、Mohanik 2、Аравт 2、Аясын Салхи 2、mxrningstar 2、The Tourists 2、Magnolian 2、A-Sound）。The HU《Live at Glastonbury》照店主指示不收。
+- **主線審稿**：ts10 改 3 張（德國雜誌無頭評分、直譯不通的媒體評語刪除；「外界」改「當地樂評」）；ts11 改 2 張（The Lemons 兩張刪 Last.fm／維基單源評價句）。封面 live-check 換 3 張（Hypnotism、S.O.S. 改 CAA 縮圖；Slow Burn 改 Apple）。
+- **結果**：泰國 57、越南 56、新加坡 54、蒙古 43。蒙古到不了 50——剩餘候選沒有封面或沒有可核身分。國別表補 20 位藝人。
+- **未完**：本線新卡 mood 座標未評（mood gate 紅，前端略過）；§11 藝人介紹待補；ts5／ts6 策展另開工作階段。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`onboarding-manifest-add-20261021-ts{10,11}-20261021.json`、`batch-progress/add-20261021-ts{10,11}/*`、`desc-tools/batches/*/add-20261021-ts1{0,1}-*`、`rock-asia-country-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`。
+- **驗證**：封面 66 張回讀 200（換源後）；`verify-album-onboarding --published` ts10 38／ts11 28 皆 0 error；KV 回讀 38/38、28/28；card_catalog 38/38、28/28。
+
 ### 2026-10-21｜dip-vinyl-shop｜薄細項策展線 ts9：新加坡搖滾 30 張＋泰國 4＋蒙古 2＋Jogja Hip Hop Foundation 上線；越泰新蒙補卡收尾
 
 - **內容**：新加坡 30 張（The Observatory 7、Wormrot 4、Subsonic Eye 5、Sobs 2、Forests、Humpback Oak、Rudra 2、Blush、Doldrey、Padres、Sweet Charity《Pelarian》、The Caulfield Cult、Caracal、Mystique、Cosmic Child、Sial）＋泰國 4 張（前一輪被誤寫的同藝人上限擋掉的 bodyslam《Save My Life》、Moderndog《ทิงนองนอย》、Silly Fools《The One》、Big Ass《THE LION》）＋蒙古 2 張（Nisvanis《Нисдэг таваг》、Hurd《The Best Collection II》）＋店主指名的 Jogja Hip Hop Foundation《Semar Mesem Romo Mendem》（歸嘻哈、掛亞洲嘻哈節點）。研究後刪 8 張（證據弱 7、無封面 1）。

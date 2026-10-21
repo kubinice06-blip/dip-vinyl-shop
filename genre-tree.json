@@ -5,32 +5,32 @@
   {
    "id": "rock",
    "zh": "搖滾",
-   "count": 4825,
+   "count": 4863,
    "children": [
     {
      "id": "indie-alt",
      "zh": "獨立另類",
-     "count": 982,
+     "count": 994,
      "children": [
       {
        "id": "indie-rock",
        "zh": "獨立搖滾",
-       "count": 494
+       "count": 499
       },
       {
        "id": "alt-rock",
        "zh": "另類搖滾與油漬",
-       "count": 473
+       "count": 476
       },
       {
        "id": "indie-pop",
        "zh": "獨立流行",
-       "count": 275
+       "count": 276
       },
       {
        "id": "art-exp",
        "zh": "藝術與實驗",
-       "count": 157
+       "count": 158
       },
       {
        "id": "folk-side",
@@ -40,7 +40,7 @@
       {
        "id": "emo",
        "zh": "Emo / 後硬蕊",
-       "count": 97
+       "count": 98
       },
       {
        "id": "britpop",
@@ -62,7 +62,7 @@
     {
      "id": "jrock-asia",
      "zh": "日亞搖滾",
-     "count": 942,
+     "count": 980,
      "children": [
       {
        "id": "tw",
@@ -80,8 +80,18 @@
        "count": 57
       },
       {
+       "id": "vn",
+       "zh": "越南",
+       "count": 56
+      },
+      {
        "id": "cn",
        "zh": "中國",
+       "count": 54
+      },
+      {
+       "id": "sg",
+       "zh": "新加坡",
        "count": 54
       },
       {
@@ -95,19 +105,9 @@
        "count": 43
       },
       {
-       "id": "sg",
-       "zh": "新加坡",
-       "count": 41
-      },
-      {
        "id": "id",
        "zh": "印尼",
        "count": 35
-      },
-      {
-       "id": "vn",
-       "zh": "越南",
-       "count": 31
       },
       {
        "id": "hk",
@@ -154,12 +154,12 @@
     {
      "id": "punk-wave",
      "zh": "龐克新浪潮",
-     "count": 898,
+     "count": 901,
      "children": [
       {
        "id": "punk",
        "zh": "龐克",
-       "count": 420
+       "count": 422
       },
       {
        "id": "post-punk",
@@ -174,17 +174,17 @@
       {
        "id": "hardcore",
        "zh": "硬蕊",
-       "count": 177
+       "count": 178
       },
       {
        "id": "pop-punk",
        "zh": "Pop Punk / Emo",
-       "count": 89
+       "count": 90
       },
       {
        "id": "no-wave",
        "zh": "No Wave",
-       "count": 86
+       "count": 87
       },
       {
        "id": "goth",
@@ -204,9 +204,51 @@
      ]
     },
     {
+     "id": "metal",
+     "zh": "金屬",
+     "count": 675,
+     "children": [
+      {
+       "id": "trad",
+       "zh": "傳統重金屬",
+       "count": 250
+      },
+      {
+       "id": "alt-metal",
+       "zh": "另類與新金屬",
+       "count": 191
+      },
+      {
+       "id": "thrash",
+       "zh": "鞭擊",
+       "count": 134
+      },
+      {
+       "id": "death",
+       "zh": "死亡金屬",
+       "count": 133
+      },
+      {
+       "id": "prog-metal",
+       "zh": "前衛與技術",
+       "count": 119
+      },
+      {
+       "id": "doom",
+       "zh": "厄運與粗厚",
+       "count": 95
+      },
+      {
+       "id": "black",
+       "zh": "黑金屬",
+       "count": 79
+      }
+     ]
+    },
+    {
      "id": "psych-prog",
      "zh": "迷幻前衛",
-     "count": 673,
+     "count": 674,
      "children": [
       {
        "id": "prog",
@@ -221,7 +263,7 @@
       {
        "id": "art-rock",
        "zh": "藝術搖滾",
-       "count": 95
+       "count": 96
       },
       {
        "id": "symphonic",
@@ -237,48 +279,6 @@
        "id": "space-rock",
        "zh": "太空搖滾",
        "count": 34
-      }
-     ]
-    },
-    {
-     "id": "metal",
-     "zh": "金屬",
-     "count": 659,
-     "children": [
-      {
-       "id": "trad",
-       "zh": "傳統重金屬",
-       "count": 243
-      },
-      {
-       "id": "alt-metal",
-       "zh": "另類與新金屬",
-       "count": 185
-      },
-      {
-       "id": "thrash",
-       "zh": "鞭擊",
-       "count": 131
-      },
-      {
-       "id": "death",
-       "zh": "死亡金屬",
-       "count": 128
-      },
-      {
-       "id": "prog-metal",
-       "zh": "前衛與技術",
-       "count": 115
-      },
-      {
-       "id": "doom",
-       "zh": "厄運與粗厚",
-       "count": 93
-      },
-      {
-       "id": "black",
-       "zh": "黑金屬",
-       "count": 78
       }
      ]
     },
@@ -317,12 +317,12 @@
     {
      "id": "dream-post",
      "zh": "音牆後搖",
-     "count": 228,
+     "count": 229,
      "children": [
       {
        "id": "post-rock",
        "zh": "後搖滾",
-       "count": 107
+       "count": 108
       },
       {
        "id": "shoegaze",

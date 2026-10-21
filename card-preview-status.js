@@ -3014,4 +3014,7 @@ window.DipPreviewStatus = Object.freeze({
   "altan urag|mongol": "unavailable",
   "аясын салхи|coffin town under the moon": "unavailable",
   "аясын салхи|eastern wind": "unavailable",
+  "sói đen|chiến tranh và hòa bình": "unavailable",
+  "stompin' ground|measured by the richter scale": "unavailable",
+  "plainsunset|the gift": "unavailable",
 });
