@@ -48,3 +48,17 @@
 - **10319**　Silly Fools《The One》：Season Awards 第 21 屆為**最佳搖滾團體**，專輯獎給了 Silent Scream《Lost and Found》；**策展層「Seed Awards 年度搖滾專輯」查無來源，facts 不寫**（只找到 Seed 年度音樂錄影帶給〈เราเป็นคนเลือกเอง〉）。專輯評價中等（泰文維基：反應良好但不及 Toe 主唱時期），建議保留，寫作層以主唱換血為軸。主唱 Toe 離團的宗教因素為泰文維基敘述，寫作宜中性簡略。〈เราเป็นคนเลือกเอง〉榜位維基內文（14）與表格（3）互相矛盾，不寫。
 - **10320**　本組 9 張全數保留（Sweet Charity 為 thin，見 10316）。**WebSearch 我用了 3 次**（Cosmic Child、Sial、Subsonic Eye 各 1，超過每支 2 次上限，後來不再用），其餘走 Discogs／MB API、各語維基 raw 與 WebFetch。無偏弱名單內的卡在本組（The Observatory《A Far Cry From Here》不在 d 組）。
 - **10353**：刪 Sweet Charity《Sejuta Wajah》（研究 d 10316：專輯級好評唯一來源是英文維基抄自 2009 年部落格的一句，與本線「每張都要讚」的門檻不合；同團《Pelarian》《Berita Gempa》《Sweet Charity》仍在池中）。本批 41 張（新加坡 34、泰國 4、蒙古 2、印尼嘻哈 1）。
+
+## 研究 b 組
+
+- **10291**（Subsonic Eye《Dive Into》）：策展層「Bandwagon 2018 榜第 2」改為「Hear65 編輯部 20 張名單中第二個位置（條目未標號）」，寫作層寫「名列榜上」不寫名次。廠牌補 Middle Class Cigars（MCC011）。成軍年 Noise Artists 稱 2015、Daily Emerald 稱 2016，來源不一，寫作層略年份。
+- **10292**（Forests《Spending Eternity…》）：第二張成立；Bandcamp 數位版無廠牌，實體黑膠 Dog Knights Productions／Sweetness Follows、卡帶 Svara Records，寫作層不寫某廠牌首發。Hear65 名單未標號，不寫名次。
+- **10293**（Forests《Sun Eat Moon Grave Party》）：status thin，建議移除（與主線既定刪除一致）。專輯級好評僅 Bandwagon 2016 年中「至今最愛」名單中一位編輯的推薦加同文「特別致意」，非年終榜、無獨立樂評或榜單成績；若主線仍留，只能寫「編輯在年中名單推薦」。
+- **10294**（Humpback Oak《Pain-Stained Morning》）：MB 無，走 §1；Discogs master 1803887 對上。1994 版本是澳洲 Shock（CD）與印尼 Pony Canyon（卡帶），盤面註明獲 Pony Canyon 授權，新加坡本地發行商未查到，廠牌欄不得寫成新加坡廠牌。1995 Perfect 10 兩項獎僅英文維基一個管道（引 AllMusic 與已死的 my Paper 頁），寫作層不加屆次細節。
+- **10295**（Concave Scream《Erratic》）：status thin；專輯級好評僅 Discogs 傳記（疑轉自 AllMusic，AllMusic 403、報刊原文查不到）一句「突破之作」。歷史定位（Springroll SPCD 002、〈Driven〉1996 年已上《Army Daze》原聲與《Dazed and Confused》合輯）有來源但屬樂團或單曲層級。建議移除，除非主線接受單一傳記為證據；若留，寫成「被傳記稱為突破之作」，不寫榜位與銷量。
+- **10296**（Rudra《The Aryan Crusade》）：MB 釘住成立；Trishul Records 國別 Discogs 登馬來西亞、MB 登新加坡，facts 不寫國別。「Big O 年度 40 大專輯之一」僅英文維基單一來源，不寫名次。「定義性專輯」為維基印度搖滾條目無引註敘述，寫作層若用要寫「被視為」。〈Sad but True〉等曲是否翻唱未查證，不寫。
+- **10297**（Blush《Supercrush》）：Big Duck 2023 年度第 4 成立；No Sleep Records 成立（黑膠 NSR272），但 Bandcamp 註明 No Sleep 已結束營運，英文維基載 2024-06-25 宣布關閉。第 10 軌為 Floorplan 原聲版，寫作層寫「九首歌加一首原聲版」。
+- **10298**（Doldrey《Celestial Deconstruction》）：Big Duck 2022 年度第 6 成立；Pulverised Records（新加坡 CD，ASH187CD）成立，但美國黑膠為 Iron Lung Records（LUNGS-204）、馬來西亞卡帶為 Pissed Off Records，寫作層寫廠牌時兩者並提，不要寫 Pulverised 獨家。
+- **10299**（Electrico《So Much More Inside》）：status thin。榜位、COMPASS、MTV Asia 提名全出自英文維基，而該維基相關節被標「Unreferenced／citation needed（2026-07）」，無法交叉驗證；成軍年維基 1996、Discogs 1998 衝突，寫作層略年份。好評僅單曲電台榜與 COMPASS 單曲獎，無樂評也無專輯榜成績，不可寫成「專輯獲獎」。建議移除，除非主線認為單曲獎項可替代專輯級好評；池中已有同團《Hip City》。
+- **10300**（本組總結）：WebSearch 兩次（一次無結果，一次找到 Noise Artists 與 Daily Emerald 訪談）；其餘走 Discogs API、MB API、Bandcamp、Hear65／Bandwagon／Big Duck 年度榜與維基。NLB Infopedia、AllMusic、Metal Archives 無法開啟。建議移除名單：Forests《Sun Eat Moon Grave Party》、Concave Scream《Erratic》、Electrico《So Much More Inside》。
+- **10354**：照研究 b 組刪 3 張：Forests《Sun Eat Moon Grave Party》（只有年中名單一位編輯推薦）、Concave Scream《Erratic》（只有 Discogs 傳記一句）、Electrico《So Much More Inside》（好評只有單曲層級、維基標 citation needed）。Subsonic Eye《Dive Into》廠牌補 Middle Class Cigars。本批 38 張（新加坡 31、泰國 4、蒙古 2、印尼嘻哈 1）。
