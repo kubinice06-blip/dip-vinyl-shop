@@ -488,48 +488,6 @@
   "cover": null
  },
  {
-  "key": "desc2:ชาตรี คงสุวรรณ|Into the Light",
-  "artist": "ชาตรี คงสุวรรณ",
-  "album": "Into the Light",
-  "year": 2008,
-  "genre": "rock",
-  "genres": [
-   "rock",
-   "pop"
-  ],
-  "label": "Mister Music",
-  "country": "th",
-  "rgMbid": "",
-  "identitySource": "manual",
-  "mbAbsenceProof": {
-   "queries": [
-    "https://musicbrainz.org/ws/2/release-group?query=artist:\"ชาตรี คงสุวรรณ\"&fmt=json",
-    "https://musicbrainz.org/ws/2/release-group?query=releasegroup:\"Into the Light\" AND artist:\"Chatree Kongsuwan\"&fmt=json"
-   ],
-   "checkedAt": "2026-10-20",
-   "conclusion": "MB 藝人方向（泰文與英文名）count=0，作品方向 count=0"
-  },
-  "manualEvidenceUrls": [
-   "https://th.wikipedia.org/wiki/%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%B5_%E0%B8%84%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93",
-   "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
-  ],
-  "curatorWhy": "泰國（二）2005 後：前 The Innocent 吉他手、資深製作人 Chatree Kongsuwan 的搖滾專輯，獲第 21 屆 Season Awards 年度專輯、最佳男歌手與最佳演奏曲三項大獎。",
-  "curatorRisk": "⚠ 創作人個人專輯（搖滾為主，含演奏曲）；以搖滾創作人資格收",
-  "mbNote": "MB 查無（MB 藝人方向（泰文與英文名）count=0，作品方向 count=0），走 §1 人工身分。證據：https://th.wikipedia.org/wiki/%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%B5_%E0%B8%84%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93 https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%B5_%E0%B8%84%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93",
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "genreException": "",
-  "selfTitled": false,
-  "apex": null,
-  "group": "b",
-  "lineType": "廣度",
-  "scene": "薄細項策展線（泰國（二）2005 後）",
-  "queryAlias": "Chatree Kongsuwan / โอม ชาตรี",
-  "republic": "",
-  "cover": null
- },
- {
   "key": "desc2:Silent Scream|Lost and Found",
   "artist": "Silent Scream",
   "album": "Lost and Found",
@@ -957,90 +915,6 @@
   "cover": null
  },
  {
-  "key": "desc2:Phạm Anh Khoa|Nghe",
-  "artist": "Phạm Anh Khoa",
-  "album": "Nghe",
-  "year": 2014,
-  "genre": "rock",
-  "genres": [
-   "rock"
-  ],
-  "label": "",
-  "country": "vn",
-  "rgMbid": "",
-  "identitySource": "manual",
-  "mbAbsenceProof": {
-   "queries": [
-    "artist:\"Phạm Anh Khoa\"（藝人方向，artist count=1，有藝人實體）",
-    "release-group?query=artist:\"Phạm Anh Khoa\"（作品方向，count=0）；artist:\"PAK Band\" count=0"
-   ],
-   "checkedAt": "2026-10-20",
-   "conclusion": "MB 有藝人但無任何 release-group，Nghe 未收錄"
-  },
-  "manualEvidenceUrls": [
-   "https://vi.wikipedia.org/wiki/Ph%E1%BA%A1m_Anh_Khoa",
-   "https://www.elleman.vn/van-hoa-giai-tri/ban-nang-nhu-pham-anh-khoa/",
-   "https://web.archive.org/web/20150414054719/http://thethaovanhoa.vn/van-hoa-giai-tri/cong-hien-lan-thu-10-2015-my-tam-lan-thu-3-doat-giai-ca-si-cua-nam-n20150406165210965.htm"
-  ],
-  "curatorWhy": "越南：「搖滾紳士」Phạm Anh Khoa 與自組 PAK Band 的專輯，入圍第 10 屆 Cống hiến「年度專輯」（2015），是 2010 年代少數擠進年度專輯入圍的越南搖滾作品。",
-  "curatorRisk": "⚠ 掛名為 Phạm Anh Khoa 或 PAK Band 需看封面；Discogs 無此盤；廠牌未查到。",
-  "mbNote": "MB 查無（MB 有藝人但無任何 release-group，Nghe 未收錄），走 §1 人工身分。證據：https://vi.wikipedia.org/wiki/Ph%E1%BA%A1m_Anh_Khoa https://www.elleman.vn/van-hoa-giai-tri/ban-nang-nhu-pham-anh-khoa/ https://web.archive.org/web/20150414054719/http://thethaovanhoa.vn/van-hoa-giai-tri/cong-hien-lan-thu-10-2015-my-tam-lan-thu-3-doat-giai-ca-si-cua-nam-n20150406165210965.htm https://vi.wikipedia.org/wiki/Ph%E1%BA%A1m_Anh_Khoa https://web.archive.org/web/20150414054719/http://thethaovanhoa.vn/van-hoa-giai-tri/cong-hien-lan-thu-10-2015-my-tam-lan-thu-3-doat-giai-ca-si-cua-nam-n20150406165210965.htm",
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "genreException": "",
-  "selfTitled": false,
-  "apex": null,
-  "group": "d",
-  "lineType": "廣度",
-  "scene": "薄細項策展線（越南）",
-  "queryAlias": "artist: PAK Band; Pham Anh Khoa",
-  "republic": "",
-  "cover": null
- },
- {
-  "key": "desc2:Phạm Anh Khoa|Phá",
-  "artist": "Phạm Anh Khoa",
-  "album": "Phá",
-  "year": 2015,
-  "genre": "rock",
-  "genres": [
-   "rock"
-  ],
-  "label": "",
-  "country": "vn",
-  "rgMbid": "",
-  "identitySource": "manual",
-  "mbAbsenceProof": {
-   "queries": [
-    "artist:\"Phạm Anh Khoa\"（藝人方向，artist count=1）",
-    "release-group?query=releasegroup:\"Phá\" AND country:VN（作品方向，count=0）；artist:\"Phạm Anh Khoa\" release-group count=0"
-   ],
-   "checkedAt": "2026-10-20",
-   "conclusion": "MB 有藝人但無此 release-group"
-  },
-  "manualEvidenceUrls": [
-   "https://vi.wikipedia.org/wiki/Ph%E1%BA%A1m_Anh_Khoa",
-   "https://tuoitre.vn/pham-anh-khoa-tang-toc-cung-phuot-show-700956.htm",
-   "https://web.archive.org/web/20160529025622/http://www.thethaovanhoa.vn/cac-giai-tt-vh-to-chuc/hang-muc-album-cua-nam-nhung-thai-cuc-nguoc-chieu-n20160408070423443.htm"
-  ],
-  "curatorWhy": "越南：Phạm Anh Khoa 與 PAK Band 的下一張專輯，連續第二年入圍 Cống hiến「年度專輯」（第 11 屆，2016），同名巡演於胡志明市 Hoa Lư 體育場舉行。",
-  "curatorRisk": "⚠ 同上：掛名需看封面；Discogs 無此盤。",
-  "mbNote": "MB 查無（MB 有藝人但無此 release-group），走 §1 人工身分。證據：https://vi.wikipedia.org/wiki/Ph%E1%BA%A1m_Anh_Khoa https://tuoitre.vn/pham-anh-khoa-tang-toc-cung-phuot-show-700956.htm https://web.archive.org/web/20160529025622/http://www.thethaovanhoa.vn/cac-giai-tt-vh-to-chuc/hang-muc-album-cua-nam-nhung-thai-cuc-nguoc-chieu-n20160408070423443.htm https://vi.wikipedia.org/wiki/Ph%E1%BA%A1m_Anh_Khoa https://web.archive.org/web/20160529025622/http://www.thethaovanhoa.vn/cac-giai-tt-vh-to-chuc/hang-muc-album-cua-nam-nhung-thai-cuc-nguoc-chieu-n20160408070423443.htm",
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "genreException": "",
-  "selfTitled": false,
-  "apex": null,
-  "group": "d",
-  "lineType": "廣度",
-  "scene": "薄細項策展線（越南）",
-  "queryAlias": "artist: PAK Band; Pham Anh Khoa",
-  "republic": "",
-  "cover": null
- },
- {
   "key": "desc2:Tạ Quang Thắng|Country Rock",
   "artist": "Tạ Quang Thắng",
   "album": "Country Rock",
@@ -1117,35 +991,6 @@
   "curatorWhy": "越南：越南最重要的搖滾樂團 Bức Tường 建團 20 年紀念專輯、也是主唱 Trần Lập 生前最後一張錄音室作品；民族音樂素材入搖滾，《An ninh Thủ đô》稱之為「越南人的雄壯史詩」，《Hà Nội mới》譽為「純越式搖滾的宣言」。池中已有前三張，前一輪因上限未收。",
   "curatorRisk": "",
   "mbNote": "MB release-group 0b00ef20-d2a3-417e-8397-b3280e618d1b：title「Đất Việt」、Album、first-release-date 2014-12-12、artist-credit「Bức Tường」。證據：https://vi.wikipedia.org/wiki/B%E1%BB%A9c_T%C6%B0%E1%BB%9Dng_(ban_nh%E1%BA%A1c) https://baonghean.vn/buc-tuong-ra-mat-album-ky-niem-20-nam-thanh-lap-67208.html https://www.discogs.com/release/10902518 https://musicbrainz.org/release-group/0b00ef20-d2a3-417e-8397-b3280e618d1b",
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "genreException": "",
-  "selfTitled": false,
-  "apex": null,
-  "group": "e",
-  "lineType": "廣度",
-  "scene": "薄細項策展線（越南）",
-  "queryAlias": "",
-  "republic": "",
-  "cover": null
- },
- {
-  "key": "desc2:Bức Tường|Ngày khác",
-  "artist": "Bức Tường",
-  "album": "Ngày khác",
-  "year": 2010,
-  "genre": "rock",
-  "genres": [
-   "rock"
-  ],
-  "label": "Nghe nhìn Thăng Long",
-  "country": "vn",
-  "rgMbid": "4334737d-9fd0-4255-9195-3a86b0437199",
-  "identitySource": "pinned",
-  "curatorWhy": "越南：Bức Tường 解散近四年後的重組專輯，從早期 metal／hard rock 轉向 modern rock，收錄〈Rung chuông vàng〉；《An ninh Thủ đô》評它「12 首歌傳遞旺盛的生命能量、歌詞富哲理」，是樂團第二階段的起點。",
-  "curatorRisk": "⚠ 證據是國內大報正面樂評與「重組里程碑」，沒有獎項；四張 Bức Tường 新增中證據最薄的一張，主線可視需要剔除。",
-  "mbNote": "MB release-group 4334737d-9fd0-4255-9195-3a86b0437199：title「Ngày khác」、Album、first-release-date 2010-10-15、artist-credit「Bức Tường」。證據：https://vi.wikipedia.org/wiki/B%E1%BB%A9c_T%C6%B0%E1%BB%9Dng_(ban_nh%E1%BA%A1c) https://www.anninhthudo.vn/buc-tuong-ra-mat-album-ngay-khac-post84192.antd https://tuoitre.vn/ngay-khac-cua-buc-tuong-405368.htm https://www.discogs.com/release/8875450 https://musicbrainz.org/release-group/4334737d-9fd0-4255-9195-3a86b0437199",
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],

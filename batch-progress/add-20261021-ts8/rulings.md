@@ -66,3 +66,15 @@
 ## 主線裁定（研究 a–d 交件後，2026-10-21）
 
 - **10271**：照研究層建議刪 3 張：The Yers《Y》（10218：專輯只有入圍，唯一得獎是藝人級最佳新人）、Chillies《KIM》（10233：Cống hiến 只進 top 10、無樂評）、Thắng《Cái Đầu Tiên》（10238：同上）。Greasy Cafe《Technicolor》查到專輯級獎項，保留。Sek Loso、KLUAYTHAI 的獎項口徑照研究層更正（10211、10213）。e 組（含 Bức Tường《Ngày khác》、Microwave《10》）待交件。
+
+## 研究 e 組
+
+- **10241**（Bức Tường《Đất Việt》）：成立，證據強。引文核對：「雄壯長歌」一語在《Hà Nội mới》2014-12 原文逐字確認（指同名曲），ANTĐ 原文連線被重設、只確認網址 slug；「純越南搖滾」句同為 HNM 原文。發行日與 Trần Lập 生日（12/12）同天、樂團 20 週年；是他生前最後一張專輯（Billboard 原話）。獎項分開：Đôi bàn tay thắp lửa=第 12 屆年度節目得獎（演唱會，非專輯）；〈Cơn mưa tháng 5〉第 16 屆年度歌曲入圍是 Tùng Dương 與 Trần Lập 版本。卡單 label「Nghe nhìn Thăng Long」＝Thăng Long Audio Visual。
+- **10242**（Bức Tường《Ngày khác》去留）：偏弱卡查證結果：專輯級好評只有 ANTĐ Hương Thủy 一則（轉引自維基，原文 503）；Cống hiến 查無入圍；WebSearch 1 次無新樂評。維基同段另載「對年輕樂迷偏難入耳」。status thin，**建議移除**（若從嚴）；若留，寫作只寫「大報給正面評價」，勿寫「盛讚」。保留理由僅為重組里程碑（hard rock→modern rock、〈Hoa ban trắng〉）。
+- **10243**（Bức Tường《Con đường không tên》推翻策展層）：(1)〈Cơn mưa tháng 5〉是《Đất Việt》第 6 首，不是本盤；第 16 屆年度歌曲入圍是 Tùng Dương 與 Trần Lập 版本，已改歸《Đất Việt》。(2) 本盤在第 16 屆只有「年度節目」類入圍（同名演出），專輯類無。(3) Billboard 專文日期是 2021-05-19，不是 2020。證據：Billboard 專文原文過線，保留。Phạm Anh Khoa 客座掛名 Bức Tường（MB／Discogs 同）。
+- **10244**（Microwave《10》）：偏弱卡查證結果——證據中等但過線，**建議保留**：CAND 專業樂評（Hà Nguyên Anh，2016-01-16）＋Saostar（轉引）＋VnExpress 2015-12-28 的 Trần Lập 稱讚。無獎項、無榜單。發行日分歧：Discogs／維基 12/25，VnExpress 報導發行會 12/27；維基巡演日期「2015 年 1 月、3 月」為筆誤，採 2016。年份取 2015。Chris Hesse「三度葛萊美入圍」為 VnExpress／維基說法，未另查，facts 標「報導稱」。若主線從嚴可剔。
+- **10245**（Tạ Quang Thắng《Một tôi rất mới》）：status thin，**建議從嚴時移除**（優先序在 Ngày khác 之後）：專輯級證據只有第 10 屆（2015）Cống hiến 年度專輯與年度詞曲作者雙入圍未得獎，無樂評；曲風 country rock 偏軟。曲目與日期改用 Apple Music/iTunes API 核對（collectionId 1465821488，2014-10-27、10 首）；論壇存檔頁無法連線。屆次採獎項頁（第 10 屆），人物頁寫第 9 屆。若留，label 建議 Phương Nam Film（沿用 d 組 10237）。
+- **10246**（Hạc San《Hồn - Trăng - Máu》）：成立，**建議保留**：NLD 專文（2020-10-08）與 Vietcetera 專題皆為當地媒體的專輯級正面評價，無獎項。身分走 §1：Discogs 18160606（2020-04-12、MP3、Not On Label）；Apple Music 標 EP、2020-04-09，發行日只寫 2020 年 4 月。單曲 29:02、六章。Billboard Việt Nam 專訪（web.archive.org）連線被拒，未讀未引。
+- **10247**（偏弱清單總結）：策展層自評偏弱的 Bức Tường《Ngày khác》、Microwave《10》二張：前者建議移除、後者建議保留（過線）；Bức Tường《Ngày khác》以外 e 組無建議移除，Tạ Quang Thắng 屬次選移除。
+- **10248**（WebSearch 額度）：本組實際用了 2 次（Bức Tường《Ngày khác》1、Tạ Quang Thắng 1），未超額；其餘走維基 raw、Discogs／MB／iTunes API、Hà Nội mới、Tuổi Trẻ、Billboard、Thanh Niên、VnExpress、CAND、NLD、Vietcetera、SGGP 直接抓取。ANTĐ（anninhthudo.vn）連線被重設、web.archive.org 被封，兩者皆未讀到原文。
+- **10272**：研究 e 組交件後再刪 4 張：Bức Tường《Ngày khác》（10242：專輯級好評只有一則轉引評論）；ชาตรี คงสุวรรณ《Into the Light》、Phạm Anh Khoa《Nghe》《Phá》（人工身分卡，Discogs／Apple／CAA 皆無封面來源，§1 要求人工身分卡一定要有封面）。Microwave《10》、Tạ Quang Thắng《Một tôi rất mới》（Cống hiến 年度專輯入圍）保留。Instinct《อินเนอร์》找到 Apple《Inner》（2007-03-20、10 首）當封面與試聽。本批 35 張（泰國 19、越南 16）。
