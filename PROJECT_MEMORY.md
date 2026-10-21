@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-21｜dip-vinyl-shop｜薄細項策展線 ts8：泰國搖滾（二）19 張＋越南搖滾 16 張上線
+
+- **內容**：泰國 2005 後 19 張（Slot Machine、bodyslam 2、Taitosmith、Apartment Khunpa 2、Moderndog、Big Ass、Desktop Error、Sek Loso、BrandNew Sunset、KLUAYTHAI 2、Lomosonic、The Richman Toy、Silent Scream、Greasy Cafe 2、Instinct；以 Season Awards 為主要證據）＋越南 16 張（ATΩMEGA、The Flob、Gạt Tàn Đầy、Black Infinity、Windrunner、Hạc San 2、UnlimiteD、Ngọt 2、Quái Vật Tí Hon、Tạ Quang Thắng 2、Bức Tường 2、Microwave）。研究後刪 7 張：The Yers、Chillies《KIM》、Thắng、Bức Tường《Ngày khác》（證據弱），ชาตรี คงสุวรรณ、Phạm Anh Khoa 2 張（無封面來源）。
+- **類型樹**：泰國 34→53、越南 15→31。
+- **另**：合併 origin/main（情緒三軸上線，PR #102 等）。`scripts/build-card-moods.mjs` gate 目前因 ts1–ts8 新卡尚無情緒座標而紅；前台以雜湊對卡、缺座標的卡只是不出現在調頻結果，不影響部署。情緒評分排在本線收尾一起補。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`onboarding-manifest-add-20261021-ts8-20261021.json`、`batch-progress/add-20261021-ts8/*`、`desc-tools/batches/*/add-20261021-ts8-*`、`rock-asia-country-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`。
+- **驗證**：封面 35 張回讀 200；`verify-album-onboarding --published` 0 error；KV 回讀 35/35；card_catalog 35/35。
+
 ### 2026-10-21｜dip-vinyl-shop｜薄細項策展線 ts7：泰國搖滾（一）22 張＋蒙古搖滾 8 張上線；更正「同一藝人最多 3 張」
 
 - **起因**：店主 2026-10-20「越南 泰國 新加坡 蒙古 多補充 補到至少 50（不能因此水掉，還是要讚的）」。策展 p–u 六組＋補充輪 v–x 三組（`batch-progress/thin-sub-20261020/CUR-DISPATCH-ts7.md`、`-ts7b.md`），每張要有具體好評證據、寧缺勿濫。

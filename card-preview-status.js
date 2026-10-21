@@ -2991,4 +2991,13 @@ window.DipPreviewStatus = Object.freeze({
   "เดอะ ซัน|ถนนพระอาทิตย์": "unavailable",
   "соёл эрдэнэ|soyol erdene": "unavailable",
   "altan urag|унага төрөв": "unavailable",
+  "ไททศมิตร|เพื่อชีวิตกู": "unavailable",
+  "kluaythai|12 animals (สิบสองสัตว์)": "unavailable",
+  "kluaythai|1": "unavailable",
+  "greasy cafe|the journey without maps": "unavailable",
+  "atωmega|đất mẹ": "unavailable",
+  "gạt tàn đầy|đám cưới chuột": "unavailable",
+  "black infinity|666 metal": "unavailable",
+  "unlimited|tái sinh": "unavailable",
+  "tạ quang thắng|country rock": "unavailable",
 });
