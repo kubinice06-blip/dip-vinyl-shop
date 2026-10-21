@@ -64,3 +64,4 @@
 - **10477**｜本組建議移除：無。六張身分、年份、封面來源、搖滾屬性皆成立（死亡／旋律死亡金屬、重金屬、另類搖滾均屬搖滾）；唯 10474 有『demo 或專輯』疑點，已列主線備查。
 - **10478**｜推翻策展層：Аравт『蒙古首支蒙古語民族金屬團』降為『維基稱』；Coffin Town 補陣容衝突；其餘未推翻事實。封面未動（Aravt、mxrningstar 有 Apple 圖；三張 Аясын Салхи 與 A-Sound 僅 Discogs）。
 - **10479**｜WebSearch 使用 2 次（Аясын Салхи 英文與蒙古語專輯名、A-Sound Release），皆無有用結果；其餘走蒙文／英文維基 raw、iTunes API（country=mn）、Discogs API、MB API、Bandcamp、UB.LIFE、Eguur.mn、Unite Asia。MetalSucks、Metal Music Archives、Neocha、Soundfly 皆 403／連線失敗未能開啟。qa-batch 對 Cyrillic 專名報『非拉丁亂碼』為預期。
+- **10513**：刪 Аясын Салхи《We Go In Different Directions》——研究 d 組（10474）查得是 1985 年錄音室 demo 卡帶，不是正規專輯；放寬門檻不放寬「正規專輯」這條。《Eastern Wind》判為錄音室作，保留、正文只寫「8 首 CD」。研究層全數交件，本批 28 張（蒙古上線後 43）。
