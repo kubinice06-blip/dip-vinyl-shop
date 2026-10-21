@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-21｜dip-vinyl-shop＋dip-vinyl-worker｜缺 Spotify 連結的真正根源：掃描狂打把 Spotify 配額打爆，429 期間 KV 被永久污染
+
+- **根源**：PR #111 只止住了掃描狂打，但傷害已造成——worker 的 Spotify app 被打到 `429 QUOTA_EXCEEDED`（`retry-after` 約 4.5 小時，token 正常）。429 期間 `/spotify-search` 退到 Cover Art Archive 仍補得到封面，舊寫法見到封面就**永久**寫進 KV，`spotifyUrl` 永遠空白；`/spotify-album-link` 備援也一起 429。掃 KV：`cover6:*` 12,191 個鍵只有 3,252 有 Spotify，**8,644 個是 CAA 無 Spotify（8,502 在卡池）**，U2《Achtung Baby》、Billy Joel、Justin Bieber 都灰掉——不是頻率選歌獨有，所有抽卡線都受影響，只是頻率選歌抽得多先被看到。
+- **改動**：(1) worker `/spotify-search`：Spotify 沒走完（非 200 或沒 token）→ 結果帶 `spotifyUnchecked`、只存 6 小時；`/spotify-album-link` 沒回 200 的空結果不進邊緣快取（分支 `claude/spotify-429-kv-poison`，**要店主合併並 `npx wrangler deploy`**）。(2) 新增 `scripts/kv-spotify-link-repair.mjs`：列 KV 候選（CAA 無 Spotify、未查過、卡池內），拿卡池原寫法直接問 Spotify 一次，**只收與 worker 同一套「完全吻合」判定**的連結、模糊命中維持灰（沒有 MusicBrainz 覆核層，寧缺勿錯），查過的寫 `spotifyChecked` 不再查；1.2 秒一張、每輪上限 2,000、遇 429 存進度退出可續跑；進度在 `batch-progress/spotify-link-repair/state.json`。
+- **主要檔案**：`dip-vinyl-worker/src/index.js`、`scripts/kv-spotify-link-repair.mjs`
+- **驗證**：直接拿 worker token 打 Spotify 得 429 `QUOTA_EXCEEDED`；`--dry-run` 候選 8,502；worker `node --check` 過。配額重置後跑修復（見下一筆或 rulings）。
+
 ### 2026-10-21｜dip-vinyl-shop｜頻率選歌：玩家回報三件（就這張空白、上一張的介紹、缺 Spotify）同一個根源
 
 - **根源**：掃描時每閃過一張就呼叫 `resolveCardAssets`（2 次 Firestore 讀＋worker `/spotify-search`）查封面，轉幾圈就是幾百次；worker 與 Firestore 被打爆後，結果頁的封面／Spotify 連結查不到、`resolveCardAssets` 慢到玩家只看到空白（我把主機層先藏了、結果層還沒畫）。
