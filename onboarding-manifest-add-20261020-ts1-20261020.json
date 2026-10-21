@@ -1,0 +1,3080 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-ts1",
+ "batchNote": "薄細項策展線（add-20261020-ts1）",
+ "createdAt": "2026-10-20T17:07:38Z",
+ "albums": [
+  {
+   "artist": "Bức Tường",
+   "album": "Tâm hồn của đá",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a0959b5e-c2b7-3281-a42d-8e634c0038a9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：Bức Tường 首張錄音室專輯，越南搖滾從西貢擴及北方的起點；該團前三張專輯各賣約五萬片，是越南 hard rock 的奠基盤。｜策展無疑點｜MB release-group a0959b5e-c2b7-3281-a42d-8e634c0038a9：title「Tâm hồn của đá」、Album、first-release-date 2002-02-03、artist-credit「Bức Tường」。證據：https://musicbrainz.org/release-group/a0959b5e-c2b7-3281-a42d-8e634c0038a9 https://www.discogs.com/master/1480869 https://www.wikidata.org/wiki/Q30920987 https://www.wikidata.org/wiki/Q5005760 https://vi.wikipedia.org/wiki/B%E1%BB%A9c_T%C6%B0%E1%BB%9Dng_(ban_nh%E1%BA%A1c)",
+    "queryAlias": "artist: Buc Tuong; album: Tam hon cua da"
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a0959b5e-c2b7-3281-a42d-8e634c0038a9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 377,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 377）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Bức Tường 錄下越南北方第一張搖滾團專屬 CD。樂團 1995 年在河內建築大學成軍，走 hard rock 與 heavy metal。錄音是 2000 年 7 月進 Orient Studio 做的，「北方頭一回」是團員自己的說法。成品先被 VTV1 的體育評論節目選用，唱片到 2002 年 2 月 3 日全國發行，曲目 10 首。同年 11 月，他們在河內 Giảng Võ 辦了同名演唱會，近 1 萬人到場。",
+    "sourceUrls": [
+     "https://vi.wikipedia.org/wiki/B%E1%BB%A9c_T%C6%B0%E1%BB%9Dng_(ban_nh%E1%BA%A1c)",
+     "https://www.discogs.com/release/13033910",
+     "https://musicbrainz.org/release-group/a0959b5e-c2b7-3281-a42d-8e634c0038a9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3f/74/d3/3f74d369-a596-a9d0-c504-4419c15f9735/mzaf_6504312515842506356.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1896219006",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 1896219006「Bức Tường《Tâm Hồn Của Đá》」：曲目 8/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Rock Xuyên Màn Đêm〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bức Tường",
+   "album": "Vô hình",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f4090af4-790d-3b8a-84d4-9bd84cc57137",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：Bức Tường 第二張專輯，延續首張的 hard rock／heavy metal 路線，與前後作並列越南搖滾商業與口碑雙高的黃金期三部曲。｜策展無疑點｜MB release-group f4090af4-790d-3b8a-84d4-9bd84cc57137：title「Vô hình」、Album、first-release-date 2003-08-10、artist-credit「Bức Tường」。證據：https://musicbrainz.org/release-group/f4090af4-790d-3b8a-84d4-9bd84cc57137 https://www.wikidata.org/wiki/Q86012808 https://www.wikidata.org/wiki/Q5005760 https://www.discogs.com/artist/5180025 https://vi.wikipedia.org/wiki/B%E1%BB%A9c_T%C6%B0%E1%BB%9Dng_(ban_nh%E1%BA%A1c)",
+    "queryAlias": "artist: Buc Tuong; album: Vo hinh"
+   },
+   "research": {
+    "suggestedYear": 2003,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "6769311735",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8e/51/e3/8e51e3f8-b597-931b-b14d-0b148db29108/cover.jpg/600x600bb.jpg",
+    "note": "CAA release-group 與 release 前封面皆持續 HTTP 500（2026-10-20 published gate）；改取已釘定試聽的 Apple 6769311735 官方圖，主線目視盤名 Vô hình 與團徽相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 387,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 387）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一首唱紅河的歌，把河內這支金屬團送到法國南部。那首是 Bức Tường 第二張專輯裡的〈Bài ca sông Hồng〉。2003 年 9 月底，樂團第一次赴法，在 Cahors 的藝術節代表當代越南音樂。主唱兼詞曲 Trần Lập 覺得首張個性不夠鮮明、錄音也不滿意，這張兩樣都改進了；他把和搖滾相近的傳統音型，放進重搖滾的結構。唱片那年 8 月就已上架，共 9 首，最長的〈Cây bàng〉有 7 分 38 秒。",
+    "sourceUrls": [
+     "https://vi.wikipedia.org/wiki/B%E1%BB%A9c_T%C6%B0%E1%BB%9Dng_(ban_nh%E1%BA%A1c)",
+     "https://www.discogs.com/release/8843489",
+     "https://musicbrainz.org/release-group/f4090af4-790d-3b8a-84d4-9bd84cc57137"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/04/23/cc042332-8d3b-957f-ae1d-cf351df004a9/mzaf_4199481230929854951.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "6769311735",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 6769311735「Bức Tường《Vô Hình》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Đêm〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bức Tường",
+   "album": "Nam châm",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "288a7605-e2d2-3ad3-95d3-086bf502945b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：Bức Tường 黃金期三部曲之三（2004），越南 90 年代起搖滾樂團代表作，MB 標 hard rock／heavy metal。｜策展無疑點｜MB release-group 288a7605-e2d2-3ad3-95d3-086bf502945b：title「Nam châm」、Album、first-release-date 2004、artist-credit「Bức Tường」。證據：https://musicbrainz.org/release-group/288a7605-e2d2-3ad3-95d3-086bf502945b https://www.wikidata.org/wiki/Q86010242 https://www.wikidata.org/wiki/Q5005760 https://www.discogs.com/artist/5180025 https://vi.wikipedia.org/wiki/B%E1%BB%A9c_T%C6%B0%E1%BB%9Dng_(ban_nh%E1%BA%A1c)",
+    "queryAlias": "artist: Buc Tuong; album: Nam cham"
+   },
+   "research": {
+    "suggestedYear": 2004,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/288a7605-e2d2-3ad3-95d3-086bf502945b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 487,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 4/5/2（Last.fm listeners 487）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "傳說裡的一段愛情悲劇，被 Bức Tường 寫成交響金屬。當地樂評說它是這支河內團在技術上的突破。Mỵ Châu 與 Trọng Thủy、Sơn Tinh 與 Thủy Tinh 兩則傳說都進了歌裡，曲風是帶史詩感的 symphony／power metal。開場〈Ra khơi〉改編自南部民歌，〈Dế mèn〉用 6 分 57 秒把傳統旋律揉進金屬。2004 年 10 月 16 日釋出，收 12 首。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/8843520",
+     "https://vi.wikipedia.org/wiki/B%E1%BB%A9c_T%C6%B0%E1%BB%9Dng_(ban_nh%E1%BA%A1c)",
+     "https://musicbrainz.org/release-group/288a7605-e2d2-3ad3-95d3-086bf502945b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/f7/ae/15f7ae53-03c0-b54c-0d52-37b51d21abb3/mzaf_3093659444506049947.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "6769322619",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 6769322619「Bức Tường《Nam Châm》」：曲目 11/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Ra Khơi〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Microwave",
+   "album": "Lối thoát",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "1e45737d-4fe0-3853-b547-1643a6493b04",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：Microwave 2005 年首張專輯，胡志明市 nu metal 代表，名曲〈Tìm lại〉讓該團成名；英文維基將其列為 21 世紀越南主流重搖滾。｜策展無疑點｜MB release-group 1e45737d-4fe0-3853-b547-1643a6493b04：title「Lối thoát」、Album、first-release-date 2005-12-24、artist-credit「Microwave」。證據：https://musicbrainz.org/release-group/1e45737d-4fe0-3853-b547-1643a6493b04 https://www.wikidata.org/wiki/Q10788736 https://www.wikidata.org/wiki/Q10793697 https://www.discogs.com/artist/3798168 https://ovietnam.vietnamnews.vn/microwave39s-10-marks-decade-of-rock-post280387.html",
+    "queryAlias": "album: Loi thoat"
+   },
+   "research": {
+    "suggestedYear": 2005,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1e45737d-4fe0-3853-b547-1643a6493b04/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 1478,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 1478）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "文化廳要標題曲改詞，吉他手坐在那裡改到過關。Microwave 來自胡志明市，玩 nu metal，這是他們的首張。坐鎮文化廳改〈Lối thoát〉歌詞的，是吉他兼饒舌的 Trần Ngọc Tùng。樂團先寫了幾十首，再一首首刪到要錄的那些。唱片 2005 年底推出，11 首歌以低頻吉他配上好記的鉤子。〈Tìm lại〉成了他們的成名曲，後來現場一唱，幾千人跟著合唱。",
+    "sourceUrls": [
+     "https://tienphong.vn/microwave-ban-nhac-rock-de-nghe-nhat-2008-post148445.tpo",
+     "https://www.discogs.com/release/5627892",
+     "https://vi.wikipedia.org/wiki/Microwave_(ban_nh%E1%BA%A1c)",
+     "https://ovietnam.vietnamnews.vn/microwave39s-10-marks-decade-of-rock-post280387.html",
+     "https://musicbrainz.org/release-group/1e45737d-4fe0-3853-b547-1643a6493b04"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/22/44/8d/22448da1-c616-077d-bfd0-239c3b223f7d/mzaf_13189116904231829145.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1844832459",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 1844832459「Microwave《Lối Thoát》」：曲目 10/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Intro〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Microwave",
+   "album": "Thời gian",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "05db098d-b5b8-4b6e-88d2-a19a33e5aed4",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：Microwave 第二張專輯（2009），獲 HTV 月度『金專輯』獎，越南 nu metal 的成熟之作。｜策展無疑點｜MB release-group 05db098d-b5b8-4b6e-88d2-a19a33e5aed4：title「Thời gian」、Album、first-release-date 2009-08-20、artist-credit「Microwave」。證據：https://musicbrainz.org/release-group/05db098d-b5b8-4b6e-88d2-a19a33e5aed4 https://www.wikidata.org/wiki/Q10826665 https://www.wikidata.org/wiki/Q10793697 https://www.discogs.com/artist/3798168 https://ovietnam.vietnamnews.vn/microwave39s-10-marks-decade-of-rock-post280387.html",
+    "queryAlias": "album: Thoi gian"
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/05db098d-b5b8-4b6e-88d2-a19a33e5aed4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 909,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 909）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "主打情歌試過五、六種編曲，最後挑了最溫和的一版。胡志明市的 Microwave 在第二張從 nu metal 走向 modern rock。那首〈Chỉ là giấc mơ〉偏流行，選定最簡單的版本後，在圈內引起爭論。出片前團員透露，前後寫了近 20 首、錄過三次，還聽說自己是城裡錄音室最難伺候的團。2009 年問世時收 10 首，含一段 Intro；2010 年 1 月，它拿下金專輯（Album Vàng）的當月最佳專輯。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5889353",
+     "https://tienphong.vn/microwave-ban-nhac-rock-de-nghe-nhat-2008-post148445.tpo",
+     "https://vi.wikipedia.org/wiki/Microwave_(ban_nh%E1%BA%A1c)",
+     "https://musicbrainz.org/release-group/05db098d-b5b8-4b6e-88d2-a19a33e5aed4"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/28/9e/b5/289eb5d2-fb26-b67b-de62-55050ccd34d6/mzaf_12800741115006121543.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1844359594",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 1844359594「Microwave《Thời Gian》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Intro〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ngũ Cung",
+   "album": "365000",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5fdd0305-bb33-4cf9-b432-382313e2627b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：Ngũ Cung（河內）2009 年專輯，越南進化搖滾／重搖滾代表團體，英文維基與越南維基皆列為 21 世紀越南重搖滾要角。｜⚠ MB 未標 rock 類型標籤；曲風依樂團歸類（進化／重搖滾）。｜MB release-group 5fdd0305-bb33-4cf9-b432-382313e2627b：title「365000」、Album、first-release-date 2009-07-18、artist-credit「Ngũ Cung」。證據：https://musicbrainz.org/release-group/5fdd0305-bb33-4cf9-b432-382313e2627b https://www.wikidata.org/wiki/Q7023302 https://www.discogs.com/artist/5738542 http://ngucung.com/",
+    "queryAlias": "artist: Ngu Cung"
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5fdd0305-bb33-4cf9-b432-382313e2627b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 1104,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/5/4（Last.fm listeners 1104）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "吉他手與祖父合寫一曲，唱苗族的搶親習俗。祖孫倆是 Trần Thắng 與 Trần Tuấn Long，孫子在河內前衛搖滾團 Ngũ Cung 彈吉他。那首〈Cướp vợ〉2008 年 12 月拿過月度編曲獎。樂團以 hard rock 加 progressive rock 打底，混進越南西北少數民族的節奏與樂器；標題曲〈365000〉則為昇龍—河內建都 1000 年而寫。2009 年的首張有兩版：Honda 贊助的初版 12 首，第二版 11 首。",
+    "sourceUrls": [
+     "https://vi.wikipedia.org/wiki/Ng%C5%A9_Cung_(ban_nh%E1%BA%A1c)",
+     "https://www.discogs.com/release/37103847",
+     "https://www.discogs.com/release/15861998",
+     "https://en.wikipedia.org/wiki/Ng%C5%A9_Cung",
+     "https://musicbrainz.org/release-group/5fdd0305-bb33-4cf9-b432-382313e2627b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/bd/e5/f0/bde5f0be-a115-2cdb-73a7-2022991519ae/mzaf_12954430292186541166.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1634102535",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 1634102535「Ngũ Cung《365000》」：曲目 11/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Nụ Hôn Trên Đỉnh Phanxipăng〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ngọt",
+   "album": "Ngọt",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b3058f3b-3b23-4445-86c8-75f24ff90e57",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：Ngọt 2016 年首張專輯，河內 indie／pop rock，被越南媒體視為新世代獨立搖滾的標誌，叫好且叫座。｜策展無疑點｜MB release-group b3058f3b-3b23-4445-86c8-75f24ff90e57：title「Ngọt」、Album、first-release-date 2016、artist-credit「Ngọt」。證據：https://musicbrainz.org/release-group/b3058f3b-3b23-4445-86c8-75f24ff90e57 https://www.discogs.com/artist/13114662 https://vietnamnews.vn/sunday/features/1653739/end-of-an-era-ngot-s-10-year-indie-legacy.html",
+    "queryAlias": "artist: Ngot; album: Ngot",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b3058f3b-3b23-4445-86c8-75f24ff90e57/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 6513,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/4/2（Last.fm listeners 6513）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "小學同學組的河內團 Ngọt，靠募款錄出首張。吉他清爽，被歸在 indie pop。60 天裡他們募到約 5000 萬越盾，約合 1900 美元。2015 年 10 月起，樂團在河內錄了約五個月，錄音與後製都有外國專家幫忙。2016 年 5 月 13 日自行發行，用的是樂團自己的名義，收 10 首，開場是〈Vì ai〉，收尾的〈Drama Queen〉長 5 分 05 秒。主唱 Vũ Đinh Trọng Thắng 說，樂團想保有在各種曲風間遊走的自由。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Ng%E1%BB%8Dt",
+     "https://vi.wikipedia.org/wiki/Ng%E1%BB%8Dt_(ban_nh%E1%BA%A1c)",
+     "https://www.discogs.com/release/27333228",
+     "https://vietnamnews.vn/sunday/features/1653739/end-of-an-era-ngot-s-10-year-indie-legacy.html",
+     "https://musicbrainz.org/release-group/b3058f3b-3b23-4445-86c8-75f24ff90e57"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/8e/5a/ba/8e5aba7f-dc82-5dc9-5469-a23bc74f7f83/mzaf_14867179036127523071.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1605739274",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 1605739274「Ngọt《Ngọt》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Vì Ai〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ngọt",
+   "album": "Gieo",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "045354fb-83ab-44fa-8be7-68273800dcd3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：Ngọt 2022 年專輯，樂團十年路上的重要作品，代表越南獨立搖滾進入成熟期。｜⚠ MB 同名有兩筆 release group（其一無日期）；年份取 2022。｜MB release-group 045354fb-83ab-44fa-8be7-68273800dcd3：title「Gieo」、Album、first-release-date 2022-11-25、artist-credit「Ngọt」。證據：https://musicbrainz.org/release-group/045354fb-83ab-44fa-8be7-68273800dcd3 https://www.discogs.com/artist/13114662 https://vietnamnews.vn/sunday/features/1653739/end-of-an-era-ngot-s-10-year-indie-legacy.html",
+    "queryAlias": "artist: Ngot"
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/045354fb-83ab-44fa-8be7-68273800dcd3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 13197,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/4/2（Last.fm listeners 13197）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一張河內樂團的唱片包裝，入圍了葛萊美。唱片是 Ngọt 的《Gieo》，這支樂團走迷幻搖滾。負責美術設計與藝術指導的 Duy Đào，在發行一年多後的 2024 年 2 月，以它入圍第 66 屆葛萊美「最佳盒裝或特別限量版包裝」。11 首新歌構成他們的第四張，2022 年經 LP Club 發行。大提琴、中提琴與兩把小提琴疊在吉他上；最短的〈Chào buổi sáng〉1 分 40 秒，收尾〈Mất tích〉4 分 31 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/27321684",
+     "https://vi.wikipedia.org/wiki/Ng%E1%BB%8Dt_(ban_nh%E1%BA%A1c)",
+     "https://en.wikipedia.org/wiki/66th_Annual_Grammy_Awards",
+     "https://vietnamnews.vn/sunday/features/1653739/end-of-an-era-ngot-s-10-year-indie-legacy.html",
+     "https://musicbrainz.org/release-group/045354fb-83ab-44fa-8be7-68273800dcd3"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/4d/c8/564dc856-6e3c-47c5-4147-21090c9bee33/mzaf_344036157206251987.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1656315118",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 1656315118「Ngọt《Gieo》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Bạn thỏ tivi nhỏ〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Cá Hồi Hoang",
+   "album": "Hiệu Ứng Trốn Chạy",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "65a38e48-adeb-484b-80c3-c679d664c207",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：Cá Hồi Hoang 2019 年專輯，《Tuổi trẻ》稱其『改變了越南對 alternative rock 的看法』。｜策展無疑點｜MB release-group 65a38e48-adeb-484b-80c3-c679d664c207：title「Hiệu Ứng Trốn Chạy」、Album、first-release-date 2019-07-31、artist-credit「Cá Hồi Hoang」。證據：https://musicbrainz.org/release-group/65a38e48-adeb-484b-80c3-c679d664c207 https://www.cahoihoang.com/ https://vi.wikipedia.org/wiki/C%C3%A1_H%E1%BB%93i_Hoang",
+    "queryAlias": "artist: Ca Hoi Hoang; album: Hieu ung tron chay"
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/65a38e48-adeb-484b-80c3-c679d664c207/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 4359,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 3/4/4（Last.fm listeners 4359）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "15 首曲子，有四首掛著「效應」這個詞。Hiệu ứng 就是效應，Cá Hồi Hoang 是大叻出身的 alternative rock 團。開場是〈Hiệu ứng bắt đầu〉，倒數第三首是〈Hiệu ứng cuối cùng〉。2019 年這張第四作發行後，樂團跑了《F(x)》巡迴，從大叻一路到胡志明市，約 6000 人到場。",
+    "sourceUrls": [
+     "https://vietcetera.com/vn/4s-dao-giua-dong-nuoc-lanh-cung-ca-hoi-hoang",
+     "https://www.discogs.com/release/13915408",
+     "https://vi.wikipedia.org/wiki/C%C3%A1_H%E1%BB%93i_Hoang",
+     "https://musicbrainz.org/release-group/65a38e48-adeb-484b-80c3-c679d664c207"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1d/24/5a/1d245a27-5902-19dc-f6c3-02a9defa1102/mzaf_10374241774945776862.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1474357404",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 1474357404「Cá Hồi Hoang《Hiệu Ứng Trốn Chạy》」：曲目 15/15 對上 MB 原盤（Apple 共 15 軌），取第 1 軌〈Hiệu Ứng Bắt Đầu〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Cá Hồi Hoang",
+   "album": "Gấp",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f236871f-1735-4c5b-a7e3-27a95617c989",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：Cá Hồi Hoang 2017 年專輯（與 2018《Gấp gáp》成對），越南 indie rock 代表。｜策展無疑點｜MB release-group f236871f-1735-4c5b-a7e3-27a95617c989：title「Gấp」、Album、first-release-date 2017-11-18、artist-credit「Cá Hồi Hoang」。證據：https://musicbrainz.org/release-group/f236871f-1735-4c5b-a7e3-27a95617c989 https://www.cahoihoang.com/ https://vi.wikipedia.org/wiki/C%C3%A1_H%E1%BB%93i_Hoang",
+    "queryAlias": "artist: Ca Hoi Hoang; album: Gap"
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f236871f-1735-4c5b-a7e3-27a95617c989/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 4656,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 3/4/2（Last.fm listeners 4656）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "大叻來的獨立團，CD 從 400 張一路賣過一千張。樂團叫 Cá Hồi Hoang，2013 年由兩位同校高中生組成。400 張是 2014 年的《Chương II》，800 張是 2016 年的《Giấc.mơ.giấy》，破千的則是《Gấp》。2017 年 11 月 18 日透過自家 Luke Record 發行，10 首歌的壓軸〈Bandamusical〉長 8 分 40 秒。團員住西貢，每週兩次在 Lê Văn Sỹ 路排練。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/f236871f-1735-4c5b-a7e3-27a95617c989",
+     "https://www.discogs.com/release/38066574",
+     "https://vi.wikipedia.org/wiki/C%C3%A1_H%E1%BB%93i_Hoang",
+     "https://vietcetera.com/vn/4s-dao-giua-dong-nuoc-lanh-cung-ca-hoi-hoang"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/0a/f6/010af6d7-c91f-1b4f-a077-aeefc3e0aa67/mzaf_5318686881031903589.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1454672142",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 1454672142「Cá Hồi Hoang《Gấp》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Hết Mực〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Chillies",
+   "album": "Qua Khung Cửa Sổ",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "dfa3cd1d-f9f5-4e73-85ee-029fde7bd320",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：Chillies 2021 年專輯，與 Ngọt、Cá Hồi Hoang 並列越南近年另類／流行搖滾三大名字（英文維基）。｜策展無疑點｜MB release-group dfa3cd1d-f9f5-4e73-85ee-029fde7bd320：title「Qua Khung Cửa Sổ」、Album、first-release-date 2021-05-05、artist-credit「Chillies」。證據：https://musicbrainz.org/release-group/dfa3cd1d-f9f5-4e73-85ee-029fde7bd320 https://www.discogs.com/artist/6277947 https://warnermusic.vn/artist/domestic/chillies/",
+    "queryAlias": "album: Qua khung cua so"
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/dfa3cd1d-f9f5-4e73-85ee-029fde7bd320/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 13980,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/4/2（Last.fm listeners 13980）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "在西貢小酒吧唱翻唱起家，一年半後簽進 Warner。流行搖滾樂團 Chillies 的詞曲出自主唱 Trần Duy Khang。樂團 2018 年 10 月在 Hard Rock Cafe 的一場活動上成軍，2020 年 3 月簽下 Warner Music Vietnam。2021 年 5 月 5 日亮相的首張收 10 首，混了流行、另類搖滾、放克、R&B 與復古合成器。主打同名曲以鋼琴前奏開頭，MV 一週內破百萬次觀看。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/dfa3cd1d-f9f5-4e73-85ee-029fde7bd320",
+     "https://vi.wikipedia.org/wiki/Chillies_(ban_nh%E1%BA%A1c)",
+     "https://www.discogs.com/release/28651522",
+     "https://en.wikipedia.org/wiki/Chillies_(band)"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/f7/4a/2ff74acb-2785-45b0-2f9e-1bffa7909ce5/mzaf_11479348033129994389.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1565122644",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 1565122644「Chillies《Qua Khung Cửa Sổ》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Bao Nhiêu〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Thủy Triều Đỏ",
+   "album": "Nắng mới",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4a4f7547-df12-3731-953c-4370253d4329",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：Thủy Triều Đỏ（河內，1998 年成軍）2003 年專輯；越南文媒體將其與 Bức Tường、Da Vàng 並列越南早期搖滾團體。｜⚠ Thủy Triều Đỏ 的曲風僅憑越南媒體稱『早期搖滾團體』，未逐曲核對；列為備選等級。｜MB release-group 4a4f7547-df12-3731-953c-4370253d4329：title「Nắng mới」、Album、first-release-date 2003-12-24、artist-credit「Thủy Triều Đỏ」。證據：https://musicbrainz.org/release-group/4a4f7547-df12-3731-953c-4370253d4329 https://www.discogs.com/artist/4243455 http://thuytrieudo.com/ https://musicbrainz.org/artist/2521a28f-7571-424c-85fc-3c62f3f371a7",
+    "queryAlias": "artist: Thuy Trieu Do; album: Nang moi"
+   },
+   "research": {
+    "suggestedYear": 2003,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4a4f7547-df12-3731-953c-4370253d4329/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 73,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 73）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "從翻唱團轉做原創，這張河內重金屬首作磨了五年。出這張時，樂團已叫 Thủy Triều Đỏ，團長是吉他手 Lê Hiếu。他們 1998 年以 Coming Late（Đến Muộn）之名成軍，起初專翻國外搖滾，後來改做原創與編曲。2003 年 12 月 24 日當天上市，被形容成送給聖誕節的禮物；十首加兩首器樂版，共 12 軌。鼓聲錄得厚實，被視為少數把越南搖滾的鼓錄好的專輯。純器樂〈Đàn dơi〉拿夜裡獵食的蝙蝠，比喻不求上進的人。",
+    "sourceUrls": [
+     "https://vnexpress.net/nang-moi-qua-tang-giang-sinh-cua-thuy-trieu-do-1878780.html",
+     "https://musicbrainz.org/release-group/4a4f7547-df12-3731-953c-4370253d4329",
+     "https://vi.wikipedia.org/wiki/Th%E1%BB%A7y_Tri%E1%BB%81u_%C4%90%E1%BB%8F_(ban_nh%E1%BA%A1c)",
+     "https://tuoitre.vn/cac-ong-cu-cua-rock-viet-hoi-ngo-voi-ban-hit-hai-nguoi-linh-canh-thu-cuoi-cung-2023092507195152.htm",
+     "https://thanhnien.vn/rock-viet-nam-khoi-sac-185160167.htm"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sàigòn Soul Revival",
+   "album": "Họa âm xưa",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "85d632fd-4e32-4e5a-9daa-eb10b23c405d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：Sàigòn Soul Revival 2019 年專輯，復興 60–70 年代西貢 psych／soul／搖滾聲響，Saigon Supersound 旗下。｜⚠ 樂團走復古 soul／psych／nhạc vàng 復興，搖滾成分偏輕；MB 有 4 個 release。｜MB release-group 85d632fd-4e32-4e5a-9daa-eb10b23c405d：title「Họa âm xưa」、Album、first-release-date 2019-11-08、artist-credit「Sàigòn Soul Revival」。證據：https://musicbrainz.org/release-group/85d632fd-4e32-4e5a-9daa-eb10b23c405d https://www.discogs.com/master/1884444 https://www.discogs.com/artist/7496428 http://saigonsupersound.com/saigon-soul-revival/",
+    "queryAlias": "artist: Saigon Soul Revival; album: Hoa am xua"
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/85d632fd-4e32-4e5a-9daa-eb10b23c405d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 15,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 15）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "西貢樂團把 1975 年以前的黃金音樂，接上迷幻吉他。Sàigòn Soul Revival 的主唱來自河內，貝斯手是賽普勒斯人。nhạc vàng 是混了西方聲響、寫愛情與戰爭的越南流行歌，專輯取材 1960 年代到 1975 年的西貢樂壇，也加進放克、探戈與波麗露。一週錄完 11 首，6 首原創，其餘是老歌新詮，例如 Minh Kỳ 1955 年的〈Tình nhạc sỹ〉。傳統樂器手彈箏與獨弦琴，吉他手另外彈月琴。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/85d632fd-4e32-4e5a-9daa-eb10b23c405d",
+     "https://www.discogs.com/release/14423919",
+     "https://vietnam-aujourdhui.info/2021/02/16/saigon-soul-revival-revisite-lage-dor-de-la-soul-et-du-rock-vietnamien/",
+     "https://saigonsupersound.com/saigon-soul-revival/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Raditori",
+   "album": "NHỮNG CON NGƯỜI",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a31b3eb8-8f59-4cd3-a8bf-d476ed85e21b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：Raditori（胡志明市）2021 年專輯，MB 標 rock／alternative rock，近年越南新生代搖滾樂團代表。｜⚠ MB 無曲風標籤，搖滾歸類來自 artist 標籤 rock／alternative rock。｜MB release-group a31b3eb8-8f59-4cd3-a8bf-d476ed85e21b：title「NHỮNG CON NGƯỜI」、Album、first-release-date 2021-11-28、artist-credit「Raditori」。證據：https://musicbrainz.org/release-group/a31b3eb8-8f59-4cd3-a8bf-d476ed85e21b https://www.last.fm/music/Raditori",
+    "queryAlias": "album: Nhung con nguoi"
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1761401254",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f2/80/31/f2803136-1647-7bf2-c05b-155da0303493/3616842219325.jpg/600x600bb.jpg",
+    "note": "CAA 無圖；取已釘定試聽的 Apple 1761401254 官方圖，主線 2026-10-20 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 452,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 452）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "封城時只完成一半，團員各錄各的，再寄給吉他手定稿。Raditori 是西貢的搖滾三人組，團員出身文朗大學建築與土木系的搖滾圈。接手定稿的 Đức 兼任製作人；主唱 Đức Nguyên 說，少了面對面合奏，也就少了合奏擦出的新旋律。原本要拍兩三支 MV，樂團成了次密接者，只好停拍隔離。每首聚焦一種情緒，開場〈(INTRO) Vui〉，收尾〈(OUTRO) Không vui〉。2021 年 11 月 28 日署名樂團與 12 trái lê 上線。",
+    "sourceUrls": [
+     "https://music.apple.com/us/album/1761401254",
+     "https://musicbrainz.org/release-group/a31b3eb8-8f59-4cd3-a8bf-d476ed85e21b",
+     "https://vietcetera.com/vn/raditori-cung-la-rock-nhung-khong-gai-goc",
+     "https://saigoneer.com/quang-8-octave/20598-built-on-rock,-raditori-s-music-shines-thanks-to-whimsy-and-unpredictability",
+     "https://saigoneer.com/saigon-music-art/20828-year-in-review-saigoneer-s-30-picks-for-best-vietnamese-music-of-2021"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dd/25/f2/dd25f258-434a-d47c-a636-c253fc5fdb61/mzaf_3972794184701438096.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1761401254",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 1761401254「Raditori《NHỮNG CON NGƯỜI》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈(INTRO) Vui〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dengue Fever",
+   "album": "Escape From Dragon House",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "91b00ac9-1795-3a03-ac3d-f2109cfef1fb",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "柬埔寨：Dengue Fever（美國洛杉磯團，主唱 Chhom Nimol 為柬埔寨歌手）2005 年專輯，把 60–70 年代高棉搖滾重新帶進世界，是『柬埔寨搖滾復興』的核心文獻。｜⚠ 美國團，非柬埔寨本地；依店主指示收 1 張並註明。｜MB release-group 91b00ac9-1795-3a03-ac3d-f2109cfef1fb：title「Escape From Dragon House」、Album、first-release-date 2005-09-13、artist-credit「Dengue Fever」。證據：https://musicbrainz.org/release-group/91b00ac9-1795-3a03-ac3d-f2109cfef1fb https://www.discogs.com/master/265812 https://www.wikidata.org/wiki/Q500659 https://www.allmusic.com/artist/mn0000237528",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2005,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/91b00ac9-1795-3a03-ac3d-f2109cfef1fb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 23069,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 3/3/2（Last.fm listeners 23069）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "洛杉磯樂團在一座壁球場裡，錄下高棉語的放克。Dengue Fever 的鍵盤手 Ethan Holtzman 在柬埔寨旅行時迷上當地迷幻搖滾。在壁球場掌管錄音與混音的，是鼓手 Paul Smith。主唱是在長灘小金邊一帶徵選來的 Chhom Nimol，她 1997 年拿過柬埔寨 Apsara 歌唱大獎，當時剛移居美國。首張多是柬埔寨老歌，這張多半原創，只有〈Tip My Canoe〉是翻唱。唱片由 M80 於 2005 年發行，Farfisa 管風琴配上短促銅管。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/724860",
+     "https://en.wikipedia.org/wiki/Dengue_Fever_(band)",
+     "https://en.wikipedia.org/wiki/Chhom_Nimol",
+     "https://popmatters.com/denguefever-escape-2495886098.html",
+     "https://musicbrainz.org/release-group/91b00ac9-1795-3a03-ac3d-f2109cfef1fb"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/ba/32/af/ba32af70-98ec-729a-2bb7-e495e983d16b/mzaf_14569365693874866377.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1617793621",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1617793621「Dengue Fever《Escape from Dragon House (Deluxe Edition)》」：曲目 11/11 對上 MB 原盤（Apple 共 15 軌），取第 1 軌〈We Were Gonna〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Cambodian Space Project",
+   "album": "Not Easy Rock & Roll",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5936e46f-7037-4a2a-b93f-718bb30087bd",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "柬埔寨：Cambodian Space Project（金邊）2013 年專輯，以 60–70 年代高棉搖滾為本的當代金邊團體，與池中 2011 年首張互補。｜⚠ 池中已有 CSP《2011: A Space Odyssey》，本團累計第 2 張。｜MB release-group 5936e46f-7037-4a2a-b93f-718bb30087bd：title「Not Easy Rock & Roll」、Album、first-release-date 2013-03-26、artist-credit「Cambodian Space Project」。證據：https://musicbrainz.org/release-group/5936e46f-7037-4a2a-b93f-718bb30087bd https://www.wikidata.org/wiki/Q52329120 https://www.discogs.com/artist/1904518 https://cambodianspaceproject.org/",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5936e46f-7037-4a2a-b93f-718bb30087bd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 52,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 52）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "金邊一間卡拉 OK 酒吧，澳洲樂手聽見她獨自唱歌。她叫 Channthy Kak，陸軍坦克駕駛的獨生女。那位樂手 Julien Poulson 約 2009 年邀她組成 Cambodian Space Project，要喚回 1960 年代的高棉搖滾。這張 2012 年首發的 CD，錄於金邊的 Cambodian Living Arts 錄音室。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/10870374",
+     "https://www.discogs.com/release/4688207",
+     "https://cambodianspaceproject.org/biography/",
+     "https://en.wikipedia.org/wiki/Kak_Channthy",
+     "https://cambodianspaceproject.org/album/album-black/",
+     "https://musicbrainz.org/release-group/5936e46f-7037-4a2a-b93f-718bb30087bd"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f7/cd/cc/f7cdccf6-1a4c-8546-6600-b21119d05864/mzaf_2796017422045206843.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "572282318",
+    "storefront": "KH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple kh 572282318「Cambodian Space Project《Not Easy Rock and Roll》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Not Easy Rock and Roll〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Cambodian Space Project",
+   "album": "Whisky Cambodia",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5ccfc656-72d8-4420-baeb-6aa256d41c93",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "柬埔寨：Cambodian Space Project 2014 年專輯，金邊當代高棉 garage／surf 搖滾代表作之一。｜⚠ 池中已有 CSP 1 張，本批另加 Not Easy Rock & Roll，累計 3 張（上限）。｜MB release-group 5ccfc656-72d8-4420-baeb-6aa256d41c93：title「Whisky Cambodia」、Album、first-release-date 2014-05-01、artist-credit「The Cambodian Space Project」。證據：https://musicbrainz.org/release-group/5ccfc656-72d8-4420-baeb-6aa256d41c93 https://www.wikidata.org/wiki/Q52329120 https://www.discogs.com/artist/1904518 https://cambodianspaceproject.org/",
+    "queryAlias": "The Cambodian Space Project"
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5ccfc656-72d8-4420-baeb-6aa256d41c93/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 325,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 325）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "柬埔寨女聲在底特律錄音，請來 Motown 的老吉他手製作。她是 Cambodian Space Project 的主唱 Channthy。製作人 Dennis Coffey 出身 Motown 的 Funk Brothers，在 Temptations 的〈Cloud Nine〉裡彈過 wah-wah 吉他。這第三張專輯 2014 年經 Metal Postcard 推出。壓軸的同名曲由她寫，長 5 分 34 秒，寫一次到村子作客、被當成外國賓客歡迎。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5745963",
+     "https://cambodianspaceproject.org/biography/",
+     "https://www.discogs.com/release/10306445",
+     "https://en.wikipedia.org/wiki/Dennis_Coffey",
+     "https://musicbrainz.org/release-group/5ccfc656-72d8-4420-baeb-6aa256d41c93",
+     "https://www.discogs.com/release/19695934"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Rivermaya",
+   "album": "RiverMaya",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b642c153-e3b5-3ac1-b4d6-297d9ddf8087",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "菲律賓：Pinoy rock 90 年代主流搖滾的起點，Rivermaya 同名處女作把 Eraserheads 之外的另一條旋律線帶進菲律賓主流電台。｜策展無疑點｜MB release-group b642c153-e3b5-3ac1-b4d6-297d9ddf8087：title「RiverMaya」、Album、first-release-date 1994、artist-credit「Rivermaya」。證據：https://musicbrainz.org/release-group/b642c153-e3b5-3ac1-b4d6-297d9ddf8087 https://www.discogs.com/master/1733774 https://en.wikipedia.org/wiki/Rivermaya_(album)",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b642c153-e3b5-3ac1-b4d6-297d9ddf8087/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 1,
+    "accessibility": 2,
+    "listeners": 6211,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 3/4/2（Last.fm listeners 6211）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 1、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "簽約那年，主唱和鼓手都才 17 歲。這兩人是馬尼拉另類搖滾團 Rivermaya 的 Bamboo Mañalac 與 Mark Escueta。最年長的 Rico Blanco 也才 20 歲，他掛製作，十首裡有六首一人寫完。1994 年，BMG 菲律賓把它推出，〈214〉在電台常播，專輯後來拿到三白金。2019 年，〈214〉又被翻唱成電影《Alone/Together》的主題曲。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Rivermaya_(album)",
+     "https://en.wikipedia.org/wiki/Rivermaya",
+     "https://www.discogs.com/master/1733774",
+     "https://musicbrainz.org/release-group/b642c153-e3b5-3ac1-b4d6-297d9ddf8087"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：Rivermaya《Rivermaya Greatest Hits 2006 (The Ultimate Collection)》1/11）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Rivermaya",
+   "album": "Trip",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "082bad92-9aa2-3002-b66e-258c5c7e90e1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "菲律賓：Rivermaya 最受推崇的第二張專輯，Rico Blanco 與 Bamboo 時期的寫作高峰，Pinoy rock 90 年代正典之一。｜策展無疑點｜MB release-group 082bad92-9aa2-3002-b66e-258c5c7e90e1：title「Trip」、Album、first-release-date 1996-02-14、artist-credit「Rivermaya」。證據：https://musicbrainz.org/release-group/082bad92-9aa2-3002-b66e-258c5c7e90e1 https://www.discogs.com/master/814264 https://en.wikipedia.org/wiki/Trip_(Rivermaya_album)",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/082bad92-9aa2-3002-b66e-258c5c7e90e1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 1,
+    "accessibility": 2,
+    "listeners": 4009,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 3/4/2（Last.fm listeners 4009）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 1、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "封面畫家參與創造了《X戰警》的 Bishop。Whilce Portacio 這回畫的是菲律賓搖滾團 Rivermaya 的第二張。1995 年底錄音途中，吉他手 Perf de Castro 離團，Rico Blanco 轉任全職吉他手，四個人把專輯錄完。Blanco 也掛製作，13 首裡有三首由他主唱，收尾曲加了大提琴。1996 年 2 月 14 日情人節發行，主打是〈Kisapmata〉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Trip_(Rivermaya_album)",
+     "https://en.wikipedia.org/wiki/Rivermaya",
+     "https://musicbrainz.org/release-group/082bad92-9aa2-3002-b66e-258c5c7e90e1"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Wolfgang",
+   "album": "Wolfgang",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d23c6285-feb8-4a4f-95b3-5a8ae90ab926",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "菲律賓：馬尼拉重搖滾／硬搖滾的代表，Wolfgang 同名處女作定下 90 年代菲律賓地下搖滾的粗礪聲響。｜策展無疑點｜MB release-group d23c6285-feb8-4a4f-95b3-5a8ae90ab926：title「Wolfgang」、Album、first-release-date 1995、artist-credit「Wolfgang」。證據：https://musicbrainz.org/release-group/d23c6285-feb8-4a4f-95b3-5a8ae90ab926 https://www.discogs.com/master/795033",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d23c6285-feb8-4a4f-95b3-5a8ae90ab926/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 954,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 954）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "錄音時，吉他手搬來一台電風扇做效果。Legarda 屬於 1992 年在馬尼拉成軍的重搖滾團 Wolfgang。那首是〈Cast of Clowns〉，他靠電風扇弄出腦中想要的吉他聲。1994 年，樂團把〈Darkness Fell〉與〈Left Alone〉的 demo 寄給兩家電台，引來大量點播，隨後簽進 Ivory 旗下的搖滾子廠牌 Tone Def。這張 1995 年面世，8 首裡有兩首唱他加祿語。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/6630677",
+     "https://en.wikipedia.org/wiki/Wolfgang_(band)",
+     "https://en.wikipedia.org/wiki/Wolfgang_(album)",
+     "https://rollingstonephilippines.com/music/rock/wolfgang-debut-album-30-years-later/",
+     "https://musicbrainz.org/release-group/d23c6285-feb8-4a4f-95b3-5a8ae90ab926"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d9/51/d0/d951d068-3982-60dc-022c-d49bee581cfc/mzaf_1477337624295000504.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1701951637",
+    "storefront": "PH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple ph 1701951637「Wolfgang《The Legends Series: Wolfgang》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Arise〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sandwich",
+   "album": "Grip Stand Throw",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6132bf51-1f83-3d16-976d-7e65a322ca8b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "菲律賓：Sandwich 的首張專輯，菲律賓 90 年代末另類／新浪潮搖滾的代表作，Raimund Marasigan 的舞曲化吉他寫法由此成形。｜策展無疑點｜MB release-group 6132bf51-1f83-3d16-976d-7e65a322ca8b：title「Grip Stand Throw」、Album、first-release-date 1999-07-06、artist-credit「Sandwich」。證據：https://musicbrainz.org/release-group/6132bf51-1f83-3d16-976d-7e65a322ca8b https://www.discogs.com/master/802483",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6132bf51-1f83-3d16-976d-7e65a322ca8b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 3386,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/4/2（Last.fm listeners 3386）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "第一次合奏是〈Sabotage〉，一玩就是十分鐘。合奏的是主唱 Marc Abaya 與菲律賓 Eraserheads 鼓手 Raimund Marasigan。他當過 Abaya 高中樂隊比賽的評審。1998 年，Marasigan 與 Diego Castillo 成立 Sandwich，想要 Weezer 與 Whales 那種聲音。專輯錄於 Eraserheads 仍在活動的時期，聲音比那支大團更重、更粗礪。首張在 1999 年交由 BMG 菲律賓出版，收 16 首。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/802483",
+     "https://en.wikipedia.org/wiki/Sandwich_(band)",
+     "https://en.wikipedia.org/wiki/Grip_Stand_Throw",
+     "https://musicbrainz.org/release-group/6132bf51-1f83-3d16-976d-7e65a322ca8b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/87/56/f4/8756f4de-af92-39c9-47a7-43ec75652542/mzaf_9733309060259847619.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1447367712",
+    "storefront": "PH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple ph 1447367712「Sandwich《Grip Stand Throw》」：曲目 16/16 對上 MB 原盤（Apple 共 16 軌），取第 1 軌〈Cheese Factor Set To 9〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Up Dharma Down",
+   "album": "Bipolar",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e833c7c9-197b-40b2-9b53-9fc8dff4c1e3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "菲律賓：Up Dharma Down 把 trip-hop 與夢幻搖滾帶進 Pinoy 獨立場景的代表作，2000 後菲律賓獨立搖滾的標竿。｜策展無疑點｜MB release-group e833c7c9-197b-40b2-9b53-9fc8dff4c1e3：title「Bipolar」、Album、first-release-date 2008-01-02、artist-credit「Up Dharma Down」。證據：https://musicbrainz.org/release-group/e833c7c9-197b-40b2-9b53-9fc8dff4c1e3 https://www.discogs.com/master/912081",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e833c7c9-197b-40b2-9b53-9fc8dff4c1e3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 41064,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 3/3/2（Last.fm listeners 41064）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "收尾曲長達 15 分 44 秒，靜默之後又冒出兩首。〈Sugarcoats & Heartbeats〉收在菲律賓樂團 Up Dharma Down 的第二張，他們玩電子取樣與 glitch。正曲唱完先留一段空白，8 分 54 秒起藏著〈A Purse of Stories〉，13 分 28 秒起再接器樂曲〈Clarity〉。主唱 Armi Millare 把自己關在馬卡蒂一間酒吧裡，寫出盤中的六首。唱片 2008 年經 Terno Recordings 問市，共 14 軌。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Bipolar_(Up_Dharma_Down_album)",
+     "https://en.wikipedia.org/wiki/Up_Dharma_Down",
+     "https://musicbrainz.org/release-group/e833c7c9-197b-40b2-9b53-9fc8dff4c1e3"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/71/99/50/719950a0-c677-cb57-3fc7-ac20a1184f9d/mzaf_7249723699342223141.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1623882147",
+    "storefront": "PH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple ph 1623882147「Up Dharma Down《Bipolar》」：曲目 13/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Blessed〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Parokya ni Edgar",
+   "album": "Buruguduystunstugudunstuy",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4f05f0d3-e6ed-3490-bc29-36b35ef4fa2c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "菲律賓：Parokya ni Edgar 的第二張專輯，把 rap-rock 與搞笑歌詞推成菲律賓大學生世代的共同語言，90 年代後期 Pinoy rock 代表作。｜策展無疑點｜MB release-group 4f05f0d3-e6ed-3490-bc29-36b35ef4fa2c：title「Buruguduystunstugudunstuy」、Album、first-release-date 1997、artist-credit「Parokya ni Edgar」。證據：https://musicbrainz.org/release-group/4f05f0d3-e6ed-3490-bc29-36b35ef4fa2c https://www.discogs.com/master/786354",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4f05f0d3-e6ed-3490-bc29-36b35ef4fa2c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 1,
+    "accessibility": 2,
+    "listeners": 82890,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/3/2（Last.fm listeners 82890）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 1、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "盤名是主唱在機場隨口編的字，拿來考電台 DJ。主唱 Chito Miranda 的 Parokya ni Edgar，由雅典耀的高中生組成，唱搞笑搖滾。那天哥哥來接機，問他學了什麼新字，他當場答出這一長串；要看的是 DJ 唸不唸得對，純屬惡作劇。Universal Records 於 1997 年將它發行，22 軌大半很短，〈It's a Bird〉只有 8 秒。抒情的〈Harana〉是 Eric Yaptangco 1989 年寫的小夜曲，Parokya 版收在這裡。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Buruguduystunstugudunstuy",
+     "https://journalnews.com.ph/?p=204146",
+     "https://en.wikipedia.org/wiki/Parokya_ni_Edgar",
+     "https://interaksyon.philstar.com/trends-spotlights/2021/06/02/192972/hit-song-harana-has-a-missing-stanza-that-chito-miranda-didnt-know-about/",
+     "https://musicbrainz.org/release-group/4f05f0d3-e6ed-3490-bc29-36b35ef4fa2c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/59/d1/a159d14a-8398-4dac-ff11-d6cf5f2c1269/mzaf_6795378667166469495.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1657937611",
+    "storefront": "PH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple ph 1657937611「Parokya Ni Edgar《Buruguduystunstugudunstuy》」：曲目 19/21 對上 MB 原盤（Apple 共 21 軌），取第 1 軌〈G. L. I.〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Radioactive Sago Project",
+   "album": "Urban Gulaman",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5dd75ff3-a57a-3567-816f-1661b03a9b50",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "菲律賓：spoken-word 加爵士搖滾的 Radioactive Sago Project 首張專輯，菲律賓 2000 年代獨立搖滾最怪也最有辨識度的一張。｜策展無疑點｜MB release-group 5dd75ff3-a57a-3567-816f-1661b03a9b50：title「Urban Gulaman」、Album、first-release-date 2004、artist-credit「Radioactive Sago Project」。證據：https://musicbrainz.org/release-group/5dd75ff3-a57a-3567-816f-1661b03a9b50 https://www.discogs.com/master/4065049",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2004,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5dd75ff3-a57a-3567-816f-1661b03a9b50/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 2390,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 3/5/4（Last.fm listeners 2390）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "拿過三次文學獎的詩人，站在銅管前面朗誦。那位詩人是 Lourd de Veyra，奎松市樂團 Radioactive Sago Project 的主唱。他和弟弟、貝斯手 Francis 找來菲律賓大學音樂系的樂手，讓詩歌念白接上銅管、爵士與龐克。首張之後，風格太怪讓他們離開 Viva，2004 年這張轉由獨立廠牌 Terno 發行。〈Astro〉寫貧民區賣的廉價香菸與菸癮，MV 惡搞 1970 年代本地的 B 級片，為樂團贏得 NU Rock 年度搖滾錄影帶。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/9963179",
+     "https://towerofdoom.net/radioactive-sago-project/",
+     "https://en.wikipedia.org/wiki/Lourd_de_Veyra",
+     "https://en.wikipedia.org/wiki/Radioactive_Sago_Project",
+     "https://musicbrainz.org/release-group/5dd75ff3-a57a-3567-816f-1661b03a9b50"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Jerks",
+   "album": "The Jerks",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "62828ab3-ee3b-4c93-b8e2-c06f24c246db",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "菲律賓：The Jerks 的錄音室同名專輯，90 年代馬尼拉另類搖滾場景的代表，粗糙吉他與街頭歌詞。｜策展無疑點｜MB release-group 62828ab3-ee3b-4c93-b8e2-c06f24c246db：title「The Jerks」、Album、first-release-date 1997-11-07、artist-credit「The Jerks」。證據：https://musicbrainz.org/release-group/62828ab3-ee3b-4c93-b8e2-c06f24c246db https://www.discogs.com/master/347581",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/62828ab3-ee3b-4c93-b8e2-c06f24c246db/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1497,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 1497）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "成軍 18 年，The Jerks 才等到大廠來簽。這支馬尼拉樂團 1979 年成軍，玩藍調搖滾與龐克。第一張唱片遲至 1994 年才問世，是錄自 Mayric's 酒吧的《The Jerks Live》。ABS-CBN 體系的 Star Records 把這支酒吧樂團帶進主流，收 12 首。到了 1998 年，NU Rock 把年度最佳專輯頒給這張同名作。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Jerks",
+     "https://en.wikipedia.org/wiki/Jun_Lopito",
+     "https://www.discogs.com/release/2958573",
+     "https://musicbrainz.org/release-group/62828ab3-ee3b-4c93-b8e2-c06f24c246db"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/e7/32/3c/e7323cb5-6431-ab51-aa58-65248882542d/mzaf_4076759271835532031.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1688337789",
+    "storefront": "PH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple ph 1688337789「The Jerks《The Jerks》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Haligi Ng Maynila〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "IV of Spades",
+   "album": "CLAPCLAPCLAP!",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "52df00e0-52e8-45a6-92f4-2be44df6c5f0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "菲律賓：IV of Spades 的首張專輯，以 70 年代 funk-rock 與 disco 復古聲響帶動 2010 年代 Pinoy 新世代搖滾。｜策展無疑點｜MB release-group 52df00e0-52e8-45a6-92f4-2be44df6c5f0：title「CLAPCLAPCLAP!」、Album、first-release-date 2019-01-18、artist-credit「IV of Spades」。證據：https://musicbrainz.org/release-group/52df00e0-52e8-45a6-92f4-2be44df6c5f0 https://en.wikipedia.org/wiki/IV_of_Spades",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/52df00e0-52e8-45a6-92f4-2be44df6c5f0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 367680,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 3/2/2（Last.fm listeners 367680）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "爸爸替當吉他手的兒子組了團，就是 IV of Spades。這支菲律賓樂團以 1970 年代的服裝與聲響為標誌，被稱為 pop funk 與 funk rock。那個兒子是 Blaster Silonga，他和貝斯手 Zild Benitez 先前各自在電視擂台奪冠，樂團成形於 2014 年的馬尼拉大都會區。主唱 Unique Salonga 2018 年 5 月離團，改由 Zild 開口唱。Warner 在 2019 年替他們推出首張，15 首，標題曲只有 15 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/dcf6ff96-0644-440c-ad4d-92b1dab9c753",
+     "https://en.wikipedia.org/wiki/IV_of_Spades",
+     "https://en.wikipedia.org/wiki/IV_of_Spades_discography",
+     "https://www.bandwagon.asia/articles/on-the-record-iv-of-spades-songs-shaped-music",
+     "https://musicbrainz.org/release-group/52df00e0-52e8-45a6-92f4-2be44df6c5f0"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/c1/81/ccc18123-a073-d526-9025-46bf21911819/mzaf_11704863387567379610.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1825378953",
+    "storefront": "PH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple ph 1825378953「IV OF SPADES《CLAPCLAPCLAP!》」：曲目 15/15 對上 MB 原盤（Apple 共 15 軌），取第 1 軌〈CLAPCLAPCLAP!〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Asin",
+   "album": "Himig Ng Pag-ibig",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "06f974e0-13e4-3c74-bf79-cfa5fefd9f18",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "菲律賓：Asin 是 70 年代末菲律賓民謠搖滾與抗議歌謠的代表樂團，第二張專輯延續處女作的社會意識與在地民謠搖滾聲響。｜策展無疑點｜MB release-group 06f974e0-13e4-3c74-bf79-cfa5fefd9f18：title「Himig Ng Pag-ibig」、Album、first-release-date 1979、artist-credit「Asin」。證據：https://musicbrainz.org/release-group/06f974e0-13e4-3c74-bf79-cfa5fefd9f18 https://www.discogs.com/master/625875",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/06f974e0-13e4-3c74-bf79-cfa5fefd9f18/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 96,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 96）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "安吉利斯市長大的 apl.de.ap，童年聽的是 Asin。Asin 這個菲律賓三人組從馬尼拉民謠酒館起家，被視為第一個把原住民樂器放進流行與搖滾的團體。第二張在 1979 年掛 Ugat 出版，Homer Flores 編寫弦樂，共 10 首。那是戒嚴時期，當局時而查扣 Asin 的錄音，時而又稱其音樂愛國。〈Balita〉寫民答那峨的摩洛衝突，後來成了 apl.de.ap 所屬的 Black Eyed Peas〈The Apl Song〉裡的塔加拉語鉤子。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4891114-Asin-Himig-Ng-Pag-ibig",
+     "https://www.discogs.com/release/967999-Asin-Himig-Ng-Pag-Ibig",
+     "https://en.wikipedia.org/wiki/Asin_(band)",
+     "https://en.wikipedia.org/wiki/Pinoy_rock",
+     "https://musicbrainz.org/release-group/06f974e0-13e4-3c74-bf79-cfa5fefd9f18"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mike Hanopol",
+   "album": "Buhay Musikero",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6fbbed17-3e5c-42b7-a1bb-247a3a0a4859",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "菲律賓：Juan de la Cruz Band 吉他手 Mike Hanopol 的 70 年代個人專輯，Pinoy hard rock／blues rock 的原點之一。｜策展無疑點｜MB release-group 6fbbed17-3e5c-42b7-a1bb-247a3a0a4859：title「Buhay Musikero」、Album、first-release-date 1977、artist-credit「Mike Hanopol」。證據：https://musicbrainz.org/release-group/6fbbed17-3e5c-42b7-a1bb-247a3a0a4859 https://www.discogs.com/master/739788",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1977,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "4292543",
+    "url": "https://i.discogs.com/zKXXOJGyTQZFYYtN9EE2TagrmWAiuvwsWcdvMzpzIzQ/rs:fit/g:sm/q:90/h:551/w:557/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQyOTI1/NDMtMTM4MTU1MTEw/Mi0zOTMzLmpwZWc.jpeg",
+    "note": "CAA 無圖（release-group 404）；取 Discogs master 739788 主版本 4292543（Jem JLP-198）封面；主線 2026-10-20 目視：老爺車旁抱吉他的 Hanopol、Mike Hanopol／Buhay Musikero 字樣。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 19,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 19）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "在日本頂替過貝斯手的菲律賓人，單飛後才真正寫起歌來。他叫 Mike Hanopol，是 1970 年代菲律賓搖滾的先驅之一。七〇年代初他在日本加入 Speed, Glue & Shinki，1973 年又回到 Juan de la Cruz Band。孩子即將出生，需要一份穩定收入，他才離團單飛。JEM 替他出版這張，時為 1977 年，8 首約 33 分鐘；他自彈貝斯、木吉他與鋼琴並主唱，電吉他、talkbox 與 slide 吉他交給 Wally Gonzalez。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/739788-Mike-Hanopol-Buhay-Musikero",
+     "https://musicbrainz.org/release/3ab5b861-97be-4e39-8f45-bd64387c6692",
+     "https://www.discogs.com/release/4292543",
+     "https://en.wikipedia.org/wiki/Mike_Hanopol",
+     "https://en.wikipedia.org/wiki/Juan_de_la_Cruz_Band",
+     "https://en.wikipedia.org/wiki/Wally_Gonzalez",
+     "https://www.tatlerasia.com/lifestyle/entertainment/mike-hanopol-impact-on-filipino-music",
+     "https://musicbrainz.org/release-group/6fbbed17-3e5c-42b7-a1bb-247a3a0a4859"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bamboo",
+   "album": "As the Music Plays",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6760a50e-e972-37ff-928c-6efb2d52b4f4",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "菲律賓：Bamboo 脫離 Rivermaya 後的首張個人樂團專輯，把重一點的硬搖滾帶回菲律賓主流，2000 年代 Pinoy rock 銷量代表。｜策展無疑點｜MB release-group 6760a50e-e972-37ff-928c-6efb2d52b4f4：title「As the Music Plays」、Album、first-release-date 2004-01-01、artist-credit「Bamboo」。證據：https://musicbrainz.org/release-group/6760a50e-e972-37ff-928c-6efb2d52b4f4 https://www.discogs.com/master/1031320",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2004,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6760a50e-e972-37ff-928c-6efb2d52b4f4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 5319,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/4/2（Last.fm listeners 5319）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "首支單曲〈Noypi〉，是唱片公司總經理看現場挑的。菲律賓四人團 Bamboo 的主唱與貝斯手，都出自 Rivermaya 樂團。那位總經理是 EMI 的 Chris Sy，地點在 Watering Hole；主唱自己屬意的其實是〈Take Me Down〉。工程師 Angee Rozul 讓樂團先賒帳錄音，自己也成了共同製作人之一。首作 2004 年掛 EMI／PolyEast 上市，收 10 首；唱塔加拉語的〈Noypi〉日後成為海外菲勞的國歌。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Bamboo_(Filipino_band)",
+     "https://www.gmanetwork.com/news/specials/content/76/hoy-pinoy-ako-an-oral-history-of-as-the-music-plays-at-15",
+     "https://musicbrainz.org/release-group/6760a50e-e972-37ff-928c-6efb2d52b4f4"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/49/12/424912e0-69f8-1595-9404-17d4911b1501/mzaf_4937281217448137918.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1841464264",
+    "storefront": "PH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple ph 1841464264「Bamboo (The Band)《As the Music Plays the Band》」：曲目 15/19 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Take Me Down〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Loso",
+   "album": "Lo-Society",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0e2f04b6-3942-4b38-b8f3-ea33bc189bba",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國：Loso 的首張專輯，Sek Loso 領軍的泰國 90 年代中期另類／grunge 搖滾代表作，樂團名即由 high society 轉化而來。｜策展無疑點｜MB release-group 0e2f04b6-3942-4b38-b8f3-ea33bc189bba：title「Lo-Society」、Album、first-release-date 1996-04-30、artist-credit「Loso」。證據：https://musicbrainz.org/release-group/0e2f04b6-3942-4b38-b8f3-ea33bc189bba https://www.discogs.com/master/795188 https://en.wikipedia.org/wiki/Loso",
+    "queryAlias": "โลโซ Lo Society"
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1792753212",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/41/d8/3e/41d83ef1-59de-ee49-2903-bf8cc00c4747/888332981460.jpg/600x600bb.jpg",
+    "note": "CAA 無圖；取已釘定試聽的 Apple 1792753212 官方圖，主線 2026-10-20 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 1,
+    "accessibility": 2,
+    "listeners": 1469,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 1469）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 1、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "替別人的專輯伴奏，才換到 Loso 自己的唱片合約。團名 Loso 反諷泰語俚語 hi-so（上流社會），主腦 Sek 原本在那空沙旺府的酒吧裡玩團打工。1995 年他在曼谷組成三人團，向廠牌毛遂自薦卻屢屢被拒。轉機出現在隔年：他們替 Saksit Tangthong 的專輯當伴奏樂團，Saksit 再把試聽帶推薦給剛成立 More Music 的搖滾樂手 Asanee Chotikul。唱片花約 20 天錄成，受 Nirvana 啟發的 grunge 加進重金屬與泰式旋律。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/795188",
+     "https://en.wikipedia.org/wiki/Loso",
+     "https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%A5%E0%B9%82%E0%B8%8B",
+     "https://musicbrainz.org/release-group/0e2f04b6-3942-4b38-b8f3-ea33bc189bba"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/92/86/9a9286f3-cd6f-9f55-1dfa-384b40114cc0/mzaf_7056689911302777264.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1792753212",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1792753212「Sek Loso《LO-Society》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈คุณเธอ〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Loso",
+   "album": "เอ็นเตอร์เทนเม้นท์",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "22ca85cb-a367-40ef-9a7f-0313de60b67e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國：Loso 第二張專輯 Entertainment，泰國搖滾主流化的里程碑，Sek Loso 把另類搖滾寫成全國合唱歌曲。｜策展無疑點｜MB release-group 22ca85cb-a367-40ef-9a7f-0313de60b67e：title「เอ็นเตอร์เทนเม้นท์」、Album、first-release-date 1998-03-26、artist-credit「Loso」。證據：https://musicbrainz.org/release-group/22ca85cb-a367-40ef-9a7f-0313de60b67e https://en.wikipedia.org/wiki/Loso",
+    "queryAlias": "Loso Entertainment"
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1792755238",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/95/a1/79/95a17957-ee48-982f-0c47-f8cf8d9a6ee3/888332981675.jpg/600x600bb.jpg",
+    "note": "CAA 無圖；取已釘定試聽的 Apple 1792755238 官方圖，主線 2026-10-20 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 1,
+    "accessibility": 2,
+    "listeners": 4543,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/4/2（Last.fm listeners 4543）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 1、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Sek 把另類搖滾，寫成了人人都能跟著唱的歌。他在泰國三人團 Loso 擔任主唱兼吉他手，鼓手 Yai、貝斯手 Rath 都是原班。1998 年的這張二專出自 More Music，11 首比首張更偏 rock and roll，慢歌〈อะไรก็ยอม〉登上多個電台榜首。它在泰國賣出逾 200 萬張，是 Loso 銷量最高的一張，也替樂團拿下第 11 屆 Seesan Award 最佳搖滾團體。專輯推出約一年後，Rath 離團。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/968236",
+     "https://en.wikipedia.org/wiki/Loso",
+     "https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%A5%E0%B9%82%E0%B8%8B",
+     "https://musicbrainz.org/release-group/22ca85cb-a367-40ef-9a7f-0313de60b67e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fe/20/82/fe208285-fc51-888e-4807-f6dede9b024e/mzaf_10484668815909706028.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1792755238",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1792755238「Sek Loso《เอ็นเตอร์เทนเม้นท์》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈อยากเห็นหน้าคุณ〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Silly Fools",
+   "album": "Candyman",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "593c9bff-9a87-3bc2-b5d4-e8d8525da7ab",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國：Silly Fools 的突破專輯，泰國 90 年代末 pop-rock 與另類搖滾的代表，是 Bakery Music／More Music 時期泰國流行搖滾的代表唱片。｜策展無疑點｜MB release-group 593c9bff-9a87-3bc2-b5d4-e8d8525da7ab：title「Candyman」、Album、first-release-date 1999-06-15、artist-credit「Silly Fools」。證據：https://musicbrainz.org/release-group/593c9bff-9a87-3bc2-b5d4-e8d8525da7ab https://www.discogs.com/master/1817849 https://en.wikipedia.org/wiki/Silly_Fools",
+    "queryAlias": "แคนดี้แมน"
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1793074499",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/32/1b/92321bf5-238b-d3f7-e8f9-2beb4ce3be92/888332981620.jpg/600x600bb.jpg",
+    "note": "CAA 無圖；取已釘定試聽的 Apple 1793074499 官方圖，主線 2026-10-20 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 4972,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/4/2（Last.fm listeners 4972）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "試聽 EP 賣不滿 2 萬張，樂團解散回去上班。原名 Silly Foolish 的這支泰國另類搖滾四人團，1996 年成軍。那張 EP 出自 Bakery Music，廠牌原本答應達標就簽下他們，落空之後一散就是一年。1998 年寄出的試聽帶換來 More Music 的合約，首張《I.Q. 180》卻賣得不多，比不上同門的 Loso。發行前不久鼓手換成 Tor，1999 年這張接著問世，收 11 首，讓 Silly Fools 紅遍全泰國。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/1817849",
+     "https://en.wikipedia.org/wiki/Silly_Fools",
+     "https://th.wikipedia.org/wiki/%E0%B8%8B%E0%B8%B4%E0%B8%A5%E0%B8%A5%E0%B8%B5%E0%B9%88_%E0%B8%9F%E0%B8%B9%E0%B8%A5%E0%B8%AA%E0%B9%8C",
+     "https://musicbrainz.org/release-group/593c9bff-9a87-3bc2-b5d4-e8d8525da7ab"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/87/43/38/87433863-bfd2-848d-b0e0-a74449ff7dea/mzaf_5952347293433855572.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1793074499",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1793074499「Silly Fools《Candyman》」：曲目 11/12 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈ฝัน〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "bodyslam",
+   "album": "bodyslam",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "84800d01-fbec-41dd-8529-0ad30ce745ff",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國：Bodyslam 的首張專輯，Yoonoo 把重一點的泰國硬搖滾推上主流，2000 年代泰國搖滾的核心樂團之一。｜策展無疑點｜MB release-group 84800d01-fbec-41dd-8529-0ad30ce745ff：title「bodyslam」、Album、first-release-date 2002-07-09、artist-credit「bodyslam」。證據：https://musicbrainz.org/release-group/84800d01-fbec-41dd-8529-0ad30ce745ff https://www.discogs.com/master/1765535 https://en.wikipedia.org/wiki/Bodyslam",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/84800d01-fbec-41dd-8529-0ad30ce745ff/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 7225,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/4/2（Last.fm listeners 7225）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "六人的高中樂團散了，三個人回來改玩更重的。那支樂團叫 La-On，1996 年奪得泰國 Hot Wave 高中組冠軍。成員升學各奔東西後，主唱 Toon 與吉他手 Pao 在 2002 年召回貝斯手 Pid，以 bodyslam 之名重組；團名取自摔角招式，意思是全力投入。同年 Music Bugs 發行卡帶與 CD，共 12 首、長約 50 分鐘，製作人為 Poonsak Jaturabul。曲風橫跨另類、電子、流行搖滾與 rockabilly。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/15564489",
+     "https://en.wikipedia.org/wiki/Bodyslam_(band)",
+     "https://th.wikipedia.org/wiki/%E0%B8%9A%E0%B8%AD%E0%B8%94%E0%B8%B5%E0%B9%89%E0%B8%AA%E0%B9%81%E0%B8%A5%E0%B8%A1",
+     "https://musicbrainz.org/release/d8c4a833-cf01-4bc3-99b2-05fad5d6be72",
+     "https://musicbrainz.org/release-group/84800d01-fbec-41dd-8529-0ad30ce745ff"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/f3/8d/54f38df3-888f-20d3-2c74-b2c79c3b5b63/mzaf_4271718014807864674.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1020385442",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1020385442「Bodyslam《Bodyslam》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈ทางของฉัน ฝันของเธอ〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Slot Machine",
+   "album": "Slot Machine",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e3df1808-efe3-4358-b3f9-6c5ddacb12cf",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國：Slot Machine 的首張專輯，2000 年代泰國另類搖滾的代表，是泰國另類搖滾圈的重要樂團首作。｜策展無疑點｜MB release-group e3df1808-efe3-4358-b3f9-6c5ddacb12cf：title「Slot Machine」、Album、first-release-date 2004-05-28、artist-credit「Slot Machine」。證據：https://musicbrainz.org/release-group/e3df1808-efe3-4358-b3f9-6c5ddacb12cf https://en.wikipedia.org/wiki/Slot_Machine_(band)",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 2004,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e3df1808-efe3-4358-b3f9-6c5ddacb12cf/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1017,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 1017）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "10 首泰文歌，官網替每一首都配了英文副標。主唱 Foet、貝斯 Gak、吉他 Kon、鼓手 Ker 組成的 Slot Machine 是曼谷的搖滾團。出道作 2004 年面世，製作人 Sert Siri，屬 Sony Music BEC-Tero。開場的〈รอ〉副標是「I'm waiting for you」，也是受歡迎的單曲。",
+    "sourceUrls": [
+     "https://www.slotmachine.band/album-detail.php?news_id=3927",
+     "https://music.apple.com/us/album/326582011",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%95%E0%B9%81%E0%B8%A1%E0%B8%8A%E0%B8%8A%E0%B8%B5%E0%B8%99_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+     "https://musicbrainz.org/release/b34c6662-8aaa-422f-9696-549777270632",
+     "https://en.wikipedia.org/wiki/Slot_Machine_(band)",
+     "https://musicbrainz.org/release-group/e3df1808-efe3-4358-b3f9-6c5ddacb12cf"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a6/94/70/a69470ec-0d3b-f493-cc64-65e50e6353a4/mzaf_6298381184804549655.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "326582011",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 326582011「Slot Machine《Slot Machine》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈รอ〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Moderndog",
+   "album": "เสริมสุขภาพ",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group?query=artist:\"Moderndog\" AND releasegroup:\"Modern Dog\"（作品方向，count=0）",
+      "artist:\"Modern Dog\"（藝人方向，count=0）；artist:\"Moderndog\" 僅 1 個 ModernDog（c63263f7）且只收一張合輯 The Very Common of Moderndog"
+     ],
+     "checkedAt": "2026-10-20",
+     "conclusion": "MB 有 ModernDog 藝人但無 1994 首張專輯的 release-group；以 Discogs master 1461562 與維基百科 Discography 人工確認（首張專輯 Modern Dog / เสริมสุขภาพ，Bakery Music，1994）。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/1461562",
+     "https://en.wikipedia.org/wiki/Moderndog"
+    ],
+    "manualRuling": "雲端主線 2026-10-20 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261020-ts1）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "泰國：Moderndog 的首張專輯，Bakery Music 旗下泰國另類搖滾的奠基作，據稱銷量逾百萬。｜⚠ MB 無此 release-group；封面主標題為泰文（Discogs 標題 เสริมสุขภาพ，維基稱 Modern Dog (Soem Sukhaphap)）。｜MB 查無（MB 有 ModernDog 藝人但無 1994 首張專輯的 release-group；以 Discogs master 1461562 與維基百科 Discography 人工確認（首張專輯 Modern Dog / เสริมสุขภาพ，Bakery Music，1994）。），走 §1 人工身分。證據：https://www.discogs.com/master/1461562 https://en.wikipedia.org/wiki/Moderndog https://www.discogs.com/master/1461562 https://en.wikipedia.org/wiki/Moderndog",
+    "queryAlias": "Modern Dog Soem Sukhaphap"
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "557702798",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/91/1a/1c/911a1c76-35bc-1f6a-84b0-f9cfc56548b5/886443614628.jpg/600x600bb.jpg",
+    "note": "CAA 無圖（人工身分卡，CAA 走不通）；取已釘定試聽的 Apple 557702798 官方圖，主線 2026-10-20 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 207,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 207）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "主唱 Pod 原本估計，這張頂多賣 5000 張。他領唱的 Moderndog 是曼谷朱拉隆功大學的學生樂團，首張封面印著泰文 เสริมสุขภาพ。1992 年他們為了 Coke Music Contest 組團，一舉奪冠，被 Bakery Music 的 Suki 看上。Suki 擔任製作，Bakery 創辦人 Somkiat 則建議正式錄音保留 demo 的生猛粗糙。唱片 1994 年發行，〈...ก่อน〉成了代表曲；Pod 記得最後賣出超過 100 萬張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Moderndog",
+     "https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%A1%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A3%E0%B9%8C%E0%B8%99%E0%B8%94%E0%B9%87%E0%B8%AD%E0%B8%81",
+     "https://en.wikipedia.org/wiki/Bakery_Music",
+     "https://www.discogs.com/release/21359590",
+     "https://www.discogs.com/master/1461562",
+     "https://www.chiangmaicitylife.com/citylife-articles/the-life-of-a-modern-dog/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/86/d4/fd/86d4fd25-72e2-5769-7cd1-b178ba3ce31d/mzaf_455451209953638173.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "557702798",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 557702798「Moderndog《Moderndog - เสริมสุขภาพ》」：人工身分卡（MB 無曲目表）：Apple th 同名專輯 12 軌，盤名與 Discogs master 一致，主線核對曲目〈บุษบา〉〈กะลา〉〈มานี〉為原盤曲，取第 1 軌〈บุษบา〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Potato",
+   "album": "Life",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3a08f065-7e1c-41ce-b09b-7996cda58ef0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國：Potato 的第三張錄音室專輯，拿下 2005 年 Seed Awards 年度專輯，泰國 2000 年代主流 pop-rock 的代表作。｜⚠ 發行廠牌 MB／維基未載，label 留空。｜MB release-group 3a08f065-7e1c-41ce-b09b-7996cda58ef0：title「Life」、Album、first-release-date 2005、artist-credit「Potato」。證據：https://musicbrainz.org/release-group/3a08f065-7e1c-41ce-b09b-7996cda58ef0 https://en.wikipedia.org/wiki/Potato_(band)",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2005,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3a08f065-7e1c-41ce-b09b-7996cda58ef0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 2,
+    "accessibility": 1,
+    "listeners": 2934,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 1/5/1（Last.fm listeners 2934）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 2、accessibility 1，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "主唱換人之後，Potato 的第三張拿下年度專輯。Potato 起於一支可口可樂廣告的拍攝現場，是 2001 年組成的泰國搖滾團。第二張錄到一半，主唱 Pee 在 2002 年過世。樂團 2003 年重新集結，由最晚加入的 Pup 接下主唱。《Life》交 GMM Grammy 發行，時間是 2005 年，以序曲〈Day (Overture)〉開場。那座獎來自同年的 Seed Awards，〈รักแท้ ดูแลไม่ได้〉也獲年度熱門歌曲，後來成為代表曲。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%9B%E0%B9%80%E0%B8%95%E0%B9%82%E0%B8%95%E0%B9%89",
+     "https://www.discogs.com/release/27442980",
+     "https://en.wikipedia.org/wiki/Potato_(band)",
+     "https://www.sanook.com/music/2356029/",
+     "https://musicbrainz.org/release-group/3a08f065-7e1c-41ce-b09b-7996cda58ef0"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b4/0f/37/b40f3704-6dfc-c5fa-59b9-b5d77f44154f/mzaf_15160659319404667694.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1792754433",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1792754433「Potato《Life》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈ที่เดิม〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "พงษ์สิทธิ์ คำภีร์",
+   "album": "เสือตัวที่ 11",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group?query=artist:\"พงษ์สิทธิ์ คำภีร์\" AND releasegroup:\"Sua Tua Thi 11\"（作品方向，count=0）",
+      "release-group?query=artist:\"Pongsit Kampee\" AND releasegroup:\"เสือตัวที่ 11\"（count=0）；artist:\"พงษ์สิทธิ์ คำภีร์\" 有藝人 ea9f9fd7 但只收合輯 Best Hits"
+     ],
+     "checkedAt": "2026-10-20",
+     "conclusion": "MB 有藝人但無此專輯 release-group，Discogs master 870050 與維基百科人工確認（1990，Music Train）。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/870050",
+     "https://en.wikipedia.org/wiki/Pongsit_Kampee"
+    ],
+    "manualRuling": "雲端主線 2026-10-20 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261020-ts1）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "泰國：Phleng phuea chiwit 的代表人物之一 Pongsit Kampee，此張延續 80 年代 Carabao／Caravan 一脈把社會批判寫進民謠搖滾。｜⚠ MB 無此 release-group；Discogs 掛名為 คำภีร์，MB 為 พงษ์สิทธิ์ คำภีร์。｜MB 查無（MB 有藝人但無此專輯 release-group，Discogs master 870050 與維基百科人工確認（1990，Music Train）。），走 §1 人工身分。證據：https://www.discogs.com/master/870050 https://en.wikipedia.org/wiki/Pongsit_Kampee https://www.discogs.com/master/870050 https://en.wikipedia.org/wiki/Pongsit_Kampee",
+    "queryAlias": "Pongsit Kampee Sua Tua Thi 11"
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1163983604",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4d/3c/d6/4d3cd660-fbad-a501-0768-113f5ff77cbf/cover.jpg/600x600bb.jpg",
+    "note": "CAA 無圖（人工身分卡，CAA 走不通）；取已釘定試聽的 Apple 1163983604 官方圖，主線 2026-10-20 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 62,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 4/5/2（Last.fm listeners 62）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Caravan 的伴奏吉他手，靠〈ตลอดเวลา〉出頭。生於廊開府的 พงษ์สิทธิ์ คำภีร์（Pongsit Kampee），屬於泰國民謠搖滾 phleng phuea chiwit 一脈。他到曼谷投靠 Carabao 的 Preecha Chanapai 等前輩，也跟著 Caravan 去柬埔寨巡演過。1990 年 12 月，Music Train 替他推出二專，收十首。〈ตลอดเวลา〉讓更多人認識了他；招牌是那副共鳴厚重、帶著顫音的嗓子。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%87%E0%B8%A9%E0%B9%8C%E0%B8%AA%E0%B8%B4%E0%B8%97%E0%B8%98%E0%B8%B4%E0%B9%8C_%E0%B8%84%E0%B8%B3%E0%B8%A0%E0%B8%B5%E0%B8%A3%E0%B9%8C",
+     "https://en.wikipedia.org/wiki/Pongsit_Kampee",
+     "https://www.discogs.com/release/7333988",
+     "https://www.discogs.com/release/6328387",
+     "https://www.discogs.com/master/870050"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6a/11/90/6a1190d8-9c90-728e-dfff-4778f10c6ae6/mzaf_17243651619972126795.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1163983604",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1163983604「พงษ์สิทธิ์ คำภีร์《เสือตัวที่ 11》」：人工身分卡（MB 無曲目表）：Apple jp 同名專輯 10 軌，盤名與 Discogs master 一致，取同名曲〈เสือ 11 ตัว〉，取第 2 軌〈เสือ 11 ตัว〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Various Artists",
+   "album": "Thai Beat a Go-Go, Volume 2",
+   "identity": {
+    "releaseType": "Compilation",
+    "identitySource": "pinned",
+    "rgMbid": "272227fe-6659-3953-a104-d34740e70698",
+    "upc": "",
+    "aliasesChecked": true,
+    "exceptionReason": "Subliminal Sounds 的泰國 60–70 年代 luk thung／搖滾單曲考古系列第二卷，收錄的多是只出過 7 吋單曲的歌手，原盤散佚，這套整理是西方聽眾接觸泰國早期電吉他流行樂的主要入口",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/272227fe-6659-3953-a104-d34740e70698",
+     "https://www.discogs.com/master/306317"
+    ],
+    "aliasReview": "泰國：考古整理盤（收錄 60 年代泰國樂團錄音，2004 年由 Subliminal Sounds 整理再發），泰國車庫／衝浪／beat 搖滾的重要檔案。｜策展無疑點｜MB release-group 272227fe-6659-3953-a104-d34740e70698：title「Thai Beat a Go-Go, Volume 2」、Album＋Compilation、first-release-date 2004、artist-credit「Various Artists」。證據：https://musicbrainz.org/release-group/272227fe-6659-3953-a104-d34740e70698 https://www.discogs.com/master/306317",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2004,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/272227fe-6659-3953-a104-d34740e70698/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 164,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 164）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "All Shook Up 到了泰國，換上一個泰文歌名。整理者是瑞典 Subliminal Sounds，2004 年出版。那首就是〈Kotmorn Yoop Yap〉；20 首裡，Viparat 一人唱了四首。樂評評介這個系列時寫到，搖滾在 1960 年代末經越南的美軍電台傳進泰國。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/306317",
+     "https://www.discogs.com/release/1458842",
+     "https://www.discogs.com/artist/3026639",
+     "https://www.discogs.com/artist/3670130",
+     "https://www.discogs.com/release/2173375",
+     "https://phx-experimental.voicemediagroup.com/?p=40515523",
+     "https://musicbrainz.org/release-group/272227fe-6659-3953-a104-d34740e70698"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/f9/19/f1/f919f122-7807-b7c6-2d44-ce63a203bbc5/mzaf_3708107803748717398.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1532627112",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1532627112「Various Artists《Thai Beat a Go-Go, Vol. 2》」：曲目 19/20 對上 MB 原盤（Apple 共 20 軌），取第 1 軌〈Yok Yok (Jump Jump)〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Various Artists",
+   "album": "Thai Beat a Go-Go, Volume 3: Groovy Sounds From the Land of Smile!",
+   "identity": {
+    "releaseType": "Compilation",
+    "identitySource": "pinned",
+    "rgMbid": "4406c4cd-23ec-4be0-ba73-28e94f65c94b",
+    "upc": "",
+    "aliasesChecked": true,
+    "exceptionReason": "Subliminal Sounds 泰國單曲考古系列第三卷，收 disco、funk 與 novelty 取向的泰語單曲，與第二卷互補，原始 7 吋多已絕版",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/4406c4cd-23ec-4be0-ba73-28e94f65c94b",
+     "https://www.discogs.com/master/264071"
+    ],
+    "aliasReview": "泰國：考古整理盤（收錄 60–70 年代泰國樂團錄音，2005 年由 Subliminal Sounds 再發），Thai Beat a Go-Go 系列第三輯，泰式 beat／psych 搖滾檔案。｜策展無疑點｜MB release-group 4406c4cd-23ec-4be0-ba73-28e94f65c94b：title「Thai Beat a Go-Go, Volume 3: Groovy Sounds From the Land of Smile!」、Album＋Compilation、first-release-date 2005、artist-credit「Various Artists」。證據：https://musicbrainz.org/release-group/4406c4cd-23ec-4be0-ba73-28e94f65c94b https://www.discogs.com/master/264071",
+    "queryAlias": "Thai Beat A Go-Go Volume 3"
+   },
+   "research": {
+    "suggestedYear": 2005,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4406c4cd-23ec-4be0-ba73-28e94f65c94b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 19,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 19）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "第 1 首與第 17 首，都拿泰拳當題目。18 首取自泰國舊黑膠，瑞典 Subliminal Sounds 2005 年出版。兩首都由 Jiraphand Ong-Ard 演出，其中〈Siamese Boxing〉的原版是一張 7 吋 EP。整體曲目偏向 disco 與 funk，例如 Oriental Funk 的〈Come Together〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2246282",
+     "https://www.discogs.com/release/2324763",
+     "https://www.discogs.com/master/264071",
+     "https://phx-experimental.voicemediagroup.com/?p=40515523",
+     "https://musicbrainz.org/release-group/4406c4cd-23ec-4be0-ba73-28e94f65c94b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Search",
+   "album": "Mentari Merah Di Ufuk Timur",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "15797e7c-d825-30ba-acb3-b7cf03d0e3c5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "馬來西亞：Search 被視為馬來西亞最偉大的搖滾樂團，此張是 rock kapak 風潮的核心專輯，Amy Search 的標誌高音。｜策展無疑點｜MB release-group 15797e7c-d825-30ba-acb3-b7cf03d0e3c5：title「Mentari Merah Di Ufuk Timur」、Album、first-release-date 1987、artist-credit「Search」。證據：https://musicbrainz.org/release-group/15797e7c-d825-30ba-acb3-b7cf03d0e3c5 https://www.discogs.com/master/665661 https://en.wikipedia.org/wiki/Search_(band)",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/15797e7c-d825-30ba-acb3-b7cf03d0e3c5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 4,
+    "listeners": 148,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/5/4（Last.fm listeners 148）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "合約一結束，Polygram 拿他們的錄音另拼兩張新專輯。Search 唱的是 rock kapak，以馬來語演唱的硬搖滾與重金屬。他們 1981 年成軍於柔佛新山，首張由 M. Nasir 製作，他還把樂團簽給新加坡的 Polygram。1987 年推出第三張，收 10 首，M. Nasir 為它寫了標題曲，賣出 5 萬張以上。到了 1988 年，廠牌把舊歌和本作錄音期間的新錄歌曲拼成兩張「錄音室專輯」，Search 提告並勝訴。",
+    "sourceUrls": [
+     "https://ms.wikipedia.org/wiki/Search_(kugiran)",
+     "https://www.discogs.com/master/665661",
+     "https://en.wikipedia.org/wiki/Rabbani_1418-1428H",
+     "https://en.wikipedia.org/wiki/Rock_kapak",
+     "https://en.wikipedia.org/wiki/Search_(band)",
+     "https://musicbrainz.org/release-group/15797e7c-d825-30ba-acb3-b7cf03d0e3c5"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c1/de/85/c1de850b-0cd4-a4a8-a08e-c6aae39b4085/mzaf_4250351727530575296.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1442225169",
+    "storefront": "MY",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple my 1442225169「Search《Mentari Merah Diufuk Timur》」：曲目 9/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Pelesit Kota〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Butterfingers",
+   "album": "1.2 Milligrams",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2a971f78-3950-3155-b70d-03410c6f79b1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "馬來西亞：Butterfingers 的首張專輯，馬來西亞 90 年代中期另類／funk-metal 的先鋒，開啟英文歌詞大馬搖滾的線。｜策展無疑點｜MB release-group 2a971f78-3950-3155-b70d-03410c6f79b1：title「1.2 Milligrams」、Album、first-release-date 1996、artist-credit「Butterfingers」。證據：https://musicbrainz.org/release-group/2a971f78-3950-3155-b70d-03410c6f79b1 https://www.discogs.com/master/2107255",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2a971f78-3950-3155-b70d-03410c6f79b1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1275,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 1275）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "不少人以為這份 demo 是 Nirvana 的未發行專輯。錄這份 demo 的是馬來西亞 grunge 樂團 Butterfingers，主唱 Emmett 唱腔酷似 Kurt Cobain。1993 年吉他手 Loque 拉 Emmett 入團，1995 年他們在 FM Studio 現場錄成那份 demo，在吉隆坡地下流通。1996 年簽進 EMI Malaysia 後，首張專輯以英文演唱，共 11 首，也收進 demo 時期的〈Wet Blanket〉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Butterfingers_(Malaysian_band)",
+     "https://www.discogs.com/release/2619934",
+     "https://www.discogs.com/master/2107255",
+     "https://musicbrainz.org/release-group/2a971f78-3950-3155-b70d-03410c6f79b1"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hujan",
+   "album": "Hujan",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9bf42522-5667-4c3b-9f51-706e586f880c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "馬來西亞：Hujan 的首張專輯，2000 年代後期馬來西亞獨立流行搖滾的代表作，也是大馬獨立搖滾場景的標誌性唱片。｜策展無疑點｜MB release-group 9bf42522-5667-4c3b-9f51-706e586f880c：title「Hujan」、Album、first-release-date 2008-08、artist-credit「Hujan」。證據：https://musicbrainz.org/release-group/9bf42522-5667-4c3b-9f51-706e586f880c https://en.wikipedia.org/wiki/Hujan_(band)",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9bf42522-5667-4c3b-9f51-706e586f880c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-20 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 7942,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "note": "機器基線 3/4/2（Last.fm listeners 7942）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以該語言圈為尺度（Last.fm 聽眾偏英語圈）；經典度照該地搖滾史地位主線評定"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "印尼樂團吹冷氣，馬來西亞本地團只分到一張椅子。這是 Noh Salleh 回顧的演出現場，他是馬來西亞樂團 Hujan（馬來語「雨」）的主唱。首張同名專輯 2008 年由獨立的 Noh Phrofile Enterprise 發行，14 首裡收進讓他們打開主流知名度的〈Pagi Yang Gelap〉。第 16 屆 AIM 上，它拿下最佳搖滾專輯，〈Bila Aku Sudah Tiada〉也奪得最佳搖滾歌曲。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Hujan",
+     "https://whiteboardjournal.com/ideas/music/music-of-malaysia-with-noh-salleh/",
+     "https://musicbrainz.org/release-group/9bf42522-5667-4c3b-9f51-706e586f880c",
+     "https://ms.wikipedia.org/wiki/AIM16"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3a/af/e8/3aafe838-dd27-9cef-ed1e-2a0eb85e00cb/mzaf_14480666768475575531.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-20T17:07:38Z",
+    "appleCollectionId": "1507569858",
+    "storefront": "MY",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple my 1507569858「Hujan《Hujan》」：曲目 13/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Dugaannya〉。主線 2026-10-20 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

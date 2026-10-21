@@ -1,0 +1,537 @@
+{
+ "group": "g",
+ "factions": [
+  {
+   "id": "tango",
+   "zh": "探戈",
+   "count": 12,
+   "why": "Gardel、Troilo、Pugliese 的黃金年代老錄音（考古整理盤）加上 Salgán、Mederos、Fernández Fierro、Melingo 等新探戈"
+  },
+  {
+   "id": "balkan",
+   "zh": "巴爾幹／吉普賽",
+   "count": 7,
+   "why": "保加利亞女聲、塞爾維亞與羅馬尼亞羅姆歌謠、匈牙利民謠"
+  },
+  {
+   "id": "klezmer",
+   "zh": "Klezmer",
+   "count": 3,
+   "why": "Brandwein、Tarras 的早期錄音與 Brave Old World 的復興作"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Carlos Gardel",
+   "album": "Antología 60° aniversario",
+   "year": 1995,
+   "label": "BMG Argentina",
+   "country": "ar",
+   "faction": "tango",
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "why": "探戈歌王 Gardel 的 1917–1935 年錄音（原為 78 轉）以紀念逝世 60 週年整理的 RCA 專輯，收錄 Mi Buenos Aires querido、Volver、Por una cabeza 等代表曲；考古整理盤。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/138f5a45-b942-3cd8-b4e3-4249e19fad38",
+    "https://en.wikipedia.org/wiki/Carlos_Gardel"
+   ],
+   "mbRgMbid": "138f5a45-b942-3cd8-b4e3-4249e19fad38",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "archival-compilation",
+   "queryAlias": "Carlos Gardel Antologia 60 aniversario",
+   "uncertain": "Gardel 無嚴格意義的原盤專輯，全是後人整理；此張為 MB 年份明確的代表整理盤，若封面／上架來源不佳可換 Su obra integral 系列任一卷。"
+  },
+  {
+   "artist": "Aníbal Troilo",
+   "album": "Quejas de bandoneón - 1944",
+   "year": 2004,
+   "label": "BMG Argentina",
+   "country": "ar",
+   "faction": "tango",
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "why": "Pichuco Troilo 樂團 1944 年 RCA 錄音（Fiorentino 時期，原為 78 轉）整理的再發盤，標題曲 Quejas de bandoneón 是他的招牌；考古整理盤，收錄年代 1944。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/ec3c9249-31a9-3303-859e-e97c4c614bd5",
+    "https://en.wikipedia.org/wiki/An%C3%ADbal_Troilo"
+   ],
+   "mbRgMbid": "ec3c9249-31a9-3303-859e-e97c4c614bd5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "archival-compilation",
+   "queryAlias": "Anibal Troilo Quejas de bandoneon",
+   "uncertain": "同系列 Yo soy el tango - 1941、Cafetín de Buenos Aires - 1948-1949 皆可替換；只收一張。"
+  },
+  {
+   "artist": "Osvaldo Pugliese",
+   "album": "Recuerdo 1944-1945",
+   "year": 1995,
+   "label": "El Bandoneón",
+   "country": "ar",
+   "faction": "tango",
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "why": "Pugliese 樂團 1944–45 年 Odeon 錄音整理盤，含自作招牌曲 Recuerdo，是 yumba 重拍與弦樂張力風格成形期的代表；考古整理盤，收錄年代 1944–1945。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/7468337d-c9a4-3aca-94e3-a9ce61326dac",
+    "https://en.wikipedia.org/wiki/Osvaldo_Pugliese"
+   ],
+   "mbRgMbid": "7468337d-c9a4-3aca-94e3-a9ce61326dac",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "archival-compilation",
+   "queryAlias": "",
+   "uncertain": "備選：La yumba（8f460687-ea4f-4235-af83-3a5535eb4d8e）。"
+  },
+  {
+   "artist": "Juan d'Arienzo",
+   "album": "De pura cepa - 1935-1936",
+   "year": 2005,
+   "label": "BMG Ariola Argentina",
+   "country": "ar",
+   "faction": "tango",
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "why": "「節拍之王」D'Arienzo 與鋼琴家 Biagi 的 1935–36 年 Victor 錄音整理盤，以急促切分的舞廳節奏重新點燃探戈舞熱潮；考古整理盤，收錄年代 1935–1936。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/a5ad23d5-889c-3ec7-89e7-f1e0925e4dce",
+    "https://en.wikipedia.org/wiki/Juan_D%27Arienzo"
+   ],
+   "mbRgMbid": "a5ad23d5-889c-3ec7-89e7-f1e0925e4dce",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "archival-compilation",
+   "queryAlias": "Juan D'Arienzo De pura cepa",
+   "uncertain": ""
+  },
+  {
+   "artist": "Carlos Di Sarli",
+   "album": "Archivo RCA: 1954 / 1958",
+   "year": 2002,
+   "label": "Euro Records",
+   "country": "ar",
+   "faction": "tango",
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "why": "Di Sarli 晚期 RCA 錄音（1954–58）整理盤，絲滑弦樂與沉穩 marcato 是「探戈之王」風格的定型，也是 milonga 舞廳最常放的版本；考古整理盤。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/e9514fba-9e27-3950-8511-503bd0ba6947",
+    "https://en.wikipedia.org/wiki/Carlos_Di_Sarli"
+   ],
+   "mbRgMbid": "e9514fba-9e27-3950-8511-503bd0ba6947",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "archival-compilation",
+   "queryAlias": "",
+   "uncertain": "廠牌依 MB 顯示的 Euro Records S.A.。"
+  },
+  {
+   "artist": "Roberto Goyeneche",
+   "album": "Cantor de mi barrio",
+   "year": 1991,
+   "label": "Música & Marketing",
+   "country": "ar",
+   "faction": "tango",
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "why": "「El Polaco」Goyeneche 晚期與編曲家 Raúl Garello 合作的錄音室專輯，沙啞而戲劇化的唱腔是探戈演唱的標竿。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/a7c89c79-9817-4f46-ae3b-ae555fc0caa5",
+    "https://en.wikipedia.org/wiki/Roberto_Goyeneche"
+   ],
+   "mbRgMbid": "a7c89c79-9817-4f46-ae3b-ae555fc0caa5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Roberto Goyeneche & Raul Garello",
+   "uncertain": "MB 署名為 Roberto Goyeneche, Raúl Garello；上架名建議保留 Roberto Goyeneche。亦可換 Tangos del sur（04f1406c-52cf-393d-b246-80059a328f82, 1989）。"
+  },
+  {
+   "artist": "Horacio Salgán",
+   "album": "Salgán Tango",
+   "year": 1967,
+   "label": "Philips",
+   "country": "ar",
+   "faction": "tango",
+   "genres": [
+    "world",
+    "jazz"
+   ],
+   "why": "鋼琴家兼作曲家 Salgán 以其樂團錄製的 Philips 原盤，把爵士和聲與古典對位帶進探戈，是 tango de vanguardia 的先聲。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/bc1e3660-0dac-4254-a6b1-87159ae7b2c7",
+    "https://en.wikipedia.org/wiki/Horacio_Salg%C3%A1n"
+   ],
+   "mbRgMbid": "bc1e3660-0dac-4254-a6b1-87159ae7b2c7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Horacio Salgan y su Orquesta",
+   "uncertain": "MB 署名 Horacio Salgán y su Orquesta；備選 A fuego lento 系列（與 Rivero）。"
+  },
+  {
+   "artist": "Julio Sosa",
+   "album": "El varón del tango",
+   "year": 1994,
+   "label": "El Bandoneón",
+   "country": "uy",
+   "faction": "tango",
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "why": "烏拉圭出身、阿根廷探戈歌壇 1960 年代的巨星 Sosa 與 Leopoldo Federico 樂團的錄音整理盤；考古整理盤，收錄年代 1960–1964（他 1964 年車禍身亡）。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6d65e996-4ce2-329b-be93-a5bfb0246704",
+    "https://en.wikipedia.org/wiki/Julio_Sosa"
+   ],
+   "mbRgMbid": "6d65e996-4ce2-329b-be93-a5bfb0246704",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "archival-compilation",
+   "queryAlias": "El varon del tango",
+   "uncertain": "country 依派工規則用 uy（國籍），音樂場景在阿根廷。"
+  },
+  {
+   "artist": "Rodolfo Mederos",
+   "album": "Verdades y mentiras",
+   "year": 1984,
+   "label": "CBS",
+   "country": "ar",
+   "faction": "tango",
+   "genres": [
+    "world",
+    "jazz"
+   ],
+   "why": "班多鈕琴家 Mederos 從搖滾／爵士回到探戈後的代表錄音室專輯，開啟「新探戈」的現代室內化語彙。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/2899aa44-c4c3-486a-beb3-5f00652be0f0",
+    "https://en.wikipedia.org/wiki/Rodolfo_Mederos"
+   ],
+   "mbRgMbid": "2899aa44-c4c3-486a-beb3-5f00652be0f0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Mederos 最具代表性的個人盤我無法在不搜尋下完全確認；備選 Todo hoy（8fc86dee-ef35-48e5-a569-dcb63b49709c, 1978）、Eterno Buenos Aires（1999）。"
+  },
+  {
+   "artist": "Orquesta Típica Fernández Fierro",
+   "album": "Destrucción masiva",
+   "year": 2003,
+   "label": "Independiente",
+   "country": "ar",
+   "faction": "tango",
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "why": "2000 年代布宜諾斯艾利斯的搖滾化探戈樂團，以嘶吼與失真感把探戈帶回地下現場，這張是 Buenos Aires 新探戈浪潮的代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/94792d8d-ba98-3463-85bb-6fcfad35cd45",
+    "https://en.wikipedia.org/wiki/Orquesta_T%C3%ADpica_Fern%C3%A1ndez_Fierro"
+   ],
+   "mbRgMbid": "94792d8d-ba98-3463-85bb-6fcfad35cd45",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Fernandez Fierro Destruccion masiva",
+   "uncertain": "廠牌為自家獨立發行（MB 無廠牌）。"
+  },
+  {
+   "artist": "Daniel Melingo",
+   "album": "Maldito tango",
+   "year": 2007,
+   "label": "Mañana",
+   "country": "ar",
+   "faction": "tango",
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "why": "前 Los Twist 成員 Melingo 以煙嗓與豎笛重新詮釋 1930–40 年代探戈，是當代「探戈地下」的代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/47540a9d-983c-42fd-b22e-b2e5a8abaa88",
+    "https://en.wikipedia.org/wiki/Daniel_Melingo"
+   ],
+   "mbRgMbid": "47540a9d-983c-42fd-b22e-b2e5a8abaa88",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "備選：Tangos bajos（6a79d4c0-78e0-3d0f-ac64-df38c7199920, 1998）。"
+  },
+  {
+   "artist": "Adriana Varela",
+   "album": "Maquillaje",
+   "year": 1993,
+   "label": "Melopea",
+   "country": "ar",
+   "faction": "tango",
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "why": "1990 年代探戈歌壇復興的代表人物 Varela 的首張專輯，以搖滾式的舞台姿態和 Discépolo、Cadícamo 傳統接軌。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/dcf0f60c-07b3-339a-9588-5675856996ac",
+    "https://en.wikipedia.org/wiki/Adriana_Varela"
+   ],
+   "mbRgMbid": "dcf0f60c-07b3-339a-9588-5675856996ac",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 無廠牌資料，Melopea 為記憶推定，需上架時核對；亦可換 Corazones perversos（1994）。"
+  },
+  {
+   "artist": "Le Mystère des Voix Bulgares",
+   "album": "Le Mystère des voix bulgares, Volume 2",
+   "year": 1988,
+   "label": "Nonesuch",
+   "country": "bg",
+   "faction": "balkan",
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "why": "保加利亞國家廣播女聲合唱團（Marcel Cellier 錄音）以密集和聲與開放喉音席捲世界音樂界，本集拿下 1990 年 Grammy 最佳傳統民謠錄音。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/a6237749-3275-3708-9598-1ff3fb8c79b3",
+    "https://en.wikipedia.org/wiki/Le_Myst%C3%A8re_des_Voix_Bulgares"
+   ],
+   "mbRgMbid": "a6237749-3275-3708-9598-1ff3fb8c79b3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Bulgarian Voices",
+   "uncertain": "Vol.1 在 MB 為 1990 年整理盤（ca5a2a02-66d7-452c-aebc-b1979b369efb），故收 Vol.2。"
+  },
+  {
+   "artist": "Šaban Bajramović",
+   "album": "Djelem, djelem",
+   "year": 1980,
+   "label": "PGP RTB",
+   "country": "rs",
+   "faction": "balkan",
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "why": "塞爾維亞羅姆人「吉普賽之王」Šaban 的代表作，以羅姆人國歌同名曲為題，是巴爾幹吉普賽歌謠的核心唱片。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d6176315-2d3a-45ad-820d-9493779bbe86",
+    "https://en.wikipedia.org/wiki/%C5%A0aban_Bajramovi%C4%87"
+   ],
+   "mbRgMbid": "d6176315-2d3a-45ad-820d-9493779bbe86",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Saban Bajramovic Djelem djelem",
+   "uncertain": "1980 年原廠牌 PGP RTB 為記憶推定（MB 僅列 2012 再發 ZKP RTVS）；池中已有他 A Gypsy Legend 1 張。"
+  },
+  {
+   "artist": "Romica Puceanu",
+   "album": "Nici nu ninge, nici nu plouă",
+   "year": 1977,
+   "label": "Electrecord",
+   "country": "ro",
+   "faction": "balkan",
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "why": "羅馬尼亞羅姆人拉烏塔里（lăutari）傳統的巴爾幹女聲經典 Electrecord 錄音，沙啞而哀怨的 muzică lăutărească 代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/5e0d2edd-eb1c-4b1a-9d84-6777fb5c968e",
+    "https://en.wikipedia.org/wiki/Romica_Puceanu"
+   ],
+   "mbRgMbid": "5e0d2edd-eb1c-4b1a-9d84-6777fb5c968e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Romica Puceanu Nici nu ninge nici nu ploua",
+   "uncertain": ""
+  },
+  {
+   "artist": "Gabi Luncă",
+   "album": "Gabi Luncă",
+   "year": 1967,
+   "label": "Electrecord",
+   "country": "ro",
+   "faction": "balkan",
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "why": "布加勒斯特羅姆人女歌手 Gabi Luncă 的 Electrecord 首張 LP，奠定她「羅馬尼亞浪漫歌后」的地位。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/2be4015e-12b1-449e-9c44-132886ac621c",
+    "https://en.wikipedia.org/wiki/Gabi_Lunc%C4%83"
+   ],
+   "mbRgMbid": "2be4015e-12b1-449e-9c44-132886ac621c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Gabi Lunca",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mahala Rai Banda",
+   "album": "Mahala Rai Banda",
+   "year": 2004,
+   "label": "Crammed Discs",
+   "country": "ro",
+   "faction": "balkan",
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "why": "布加勒斯特 Zănoaga 區羅姆銅管與小提琴樂手組成的樂團首張專輯，Crammed Discs 出版，把拉烏塔里傳統帶進當代世界音樂舞台。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/bd6f852c-ed75-443a-84cd-b04e288ee655",
+    "https://en.wikipedia.org/wiki/Mahala_Rai_Banda"
+   ],
+   "mbRgMbid": "bd6f852c-ed75-443a-84cd-b04e288ee655",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Naftule Brandwein",
+   "album": "King of the Klezmer Clarinet",
+   "year": 1997,
+   "label": "Rounder",
+   "country": "us",
+   "faction": "klezmer",
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "why": "Klezmer 單簧管祖師 Brandwein 1920–40 年代美國 78 轉錄音的 Rounder 整理盤，是早期美國 klezmer 的核心史料；考古整理盤，收錄年代約 1923–1941。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/41d76233-5813-351a-ae5f-a2f053bd36ad",
+    "https://en.wikipedia.org/wiki/Naftule_Brandwein"
+   ],
+   "mbRgMbid": "41d76233-5813-351a-ae5f-a2f053bd36ad",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "archival-compilation",
+   "queryAlias": "",
+   "uncertain": "收錄年代範圍依記憶，須上架時依盤背確認。"
+  },
+  {
+   "artist": "Dave Tarras",
+   "album": "Yiddish-American Klezmer Music – 1925-1956",
+   "year": 1992,
+   "label": "Yazoo",
+   "country": "us",
+   "faction": "klezmer",
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "why": "單簧管大師 Tarras 1925–1956 年間的紐約錄音精選，Yazoo 整理，被視為美國 klezmer 復興前的經典樣本；考古整理盤，收錄年代 1925–1956。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/fdb56132-dc9d-37ea-9348-9a0556aae2ee",
+    "https://en.wikipedia.org/wiki/Dave_Tarras"
+   ],
+   "mbRgMbid": "fdb56132-dc9d-37ea-9348-9a0556aae2ee",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "archival-compilation",
+   "queryAlias": "Yiddish-American Klezmer Music 1925-1956",
+   "uncertain": "MB 標題使用 en dash；名稱改用 ASCII 連字號。"
+  },
+  {
+   "artist": "Brave Old World",
+   "album": "Beyond the Pale",
+   "year": 1993,
+   "label": "Pinorrekk",
+   "country": "us",
+   "faction": "klezmer",
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "why": "1990 年代 klezmer 復興的核心團體，這張把東歐猶太音樂、室內樂與即興結合，被視為新一代 klezmer 的代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/11cddf9d-68e4-3b6b-971a-348f8745e1de",
+    "https://en.wikipedia.org/wiki/Brave_Old_World"
+   ],
+   "mbRgMbid": "11cddf9d-68e4-3b6b-971a-348f8745e1de",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "1994 年由 Rounder 在美國發行；MB 首發為 1993 德國 Pinorrekk。"
+  },
+  {
+   "artist": "Márta Sebestyén",
+   "album": "Apocrypha",
+   "year": 1992,
+   "label": "Hannibal",
+   "country": "hu",
+   "faction": "balkan",
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "why": "匈牙利民謠歌手 Sebestyén 的國際代表作，延續她與 Muzsikás 的合作，以特蘭西瓦尼亞與匈牙利古老歌謠聞名，也是《英倫情人》插曲的歌聲。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/43b79fef-f6e2-312c-86c6-225231f447d0",
+    "https://en.wikipedia.org/wiki/M%C3%A1rta_Sebesty%C3%A9n"
+   ],
+   "mbRgMbid": "43b79fef-f6e2-312c-86c6-225231f447d0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Marta Sebestyen Apocrypha",
+   "uncertain": "池中已有 Muzsikás 2 張；備選 Kismet（1996）。"
+  },
+  {
+   "artist": "The Trio Bulgarka",
+   "album": "The Forest Is Crying (Lament for Indje Voivode)",
+   "year": 1988,
+   "label": "Hannibal",
+   "country": "bg",
+   "faction": "balkan",
+   "genres": [
+    "world",
+    "folk"
+   ],
+   "why": "Trio Bulgarka 三位保加利亞女聲與 Kate Bush 的《The Sensual World》同期出名；此張以傳統輓歌與民謠收錄 Hannibal 的海外代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/87de6d8b-fb7f-322a-9bab-a332df032395",
+    "https://en.wikipedia.org/wiki/Trio_Bulgarka"
+   ],
+   "mbRgMbid": "87de6d8b-fb7f-322a-9bab-a332df032395",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Trio Bulgarka Forest Is Crying",
+   "uncertain": "MB 署名 The Trio Bulgarka。"
+  }
+ ],
+ "notes": [
+  "全部 22 張皆以 MB 釘住（mbRgMbid），無人工身分；其中 archival-compilation 共 8 張。",
+  "備選（未收）：Esma Redžepova《Songs of a Macedonian Gypsy》1994（80cc1437-e53b-3995-9a5c-0c956f520ecc）、Frank London's Klezmer Brass Allstars《Brotherhood Of Brass》2002（9c2b54cd-b41a-3a18-ad17-ab1ca96e2420）、Söndörgő《Tamburocket》2014（5538711b-9fdd-4dc9-8a99-4765fe3a82cd）、Edmundo Rivero《Un pedazo de barrio》等、Susana Rinaldi《De otros tiempos, Tangos》1982（c25f9de1-2ff6-42c0-b0e4-53fd81c3775b）。派工 14 位探戈與 13 位巴爾幹／klezmer 名單超過張數，因此捨去 Rivero、Rinaldi、Esma、Frank London、Söndörgő。",
+  "WebSearch 使用 0 次；證據網址為 MB release-group 與英文維基藝人頁（維基頁僅確認 URL 存在，部分因 429 限流未驗證內容）。",
+  "全部去重指令輸出 0。Julio Sosa country 取 uy。"
+ ]
+}

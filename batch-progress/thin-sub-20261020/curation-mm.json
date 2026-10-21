@@ -1,0 +1,811 @@
+{
+ "group": "mm",
+ "factions": [
+  {
+   "id": "mn",
+   "zh": "蒙古",
+   "count": 30,
+   "why": "ts10 放寬補到 50：蒙古搖滾場景代表樂團的其他正規專輯＋新收的場景樂團（另類、金屬、民族搖滾）"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Hurd",
+   "album": "Өдөр шөнө",
+   "year": 1999,
+   "label": "Hurd（自主發行）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件1＋2：Hurd 是蒙古第一支把重金屬引進當地的樂團（1987 成軍，英文維基條目，Pentatonic／Golden Microphone 多次得獎），本作為其第三張錄音室專輯（英文維基列為 studio album），Apple Music 蒙古區上架、Discogs 有實體 master。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/28d6e008-00ed-44a7-9ce8-808522860814",
+    "https://music.apple.com/mn/album/1566613946",
+    "https://www.discogs.com/master/3211566",
+    "https://en.wikipedia.org/wiki/Hurd_(band)"
+   ],
+   "mbRgMbid": "28d6e008-00ed-44a7-9ce8-808522860814",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Хурд — Ödör Shönö",
+   "uncertain": ""
+  },
+  {
+   "artist": "Hurd",
+   "album": "Монголд төрсөн",
+   "year": 2004,
+   "label": "Hurd（自主發行）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件1＋2：Hurd（蒙古重金屬先驅）的錄音室專輯（英文維基列為 studio album；MB 標題帶刪節號「Монголд төрсөн...」），Apple Music 蒙古區上架、Discogs 有實體 master；當年帶往內蒙巡演的同名作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/922fccd0-663a-4c85-89d2-f2eb86062167",
+    "https://music.apple.com/mn/album/1570806136",
+    "https://www.discogs.com/master/3211560",
+    "https://en.wikipedia.org/wiki/Hurd_(band)"
+   ],
+   "mbRgMbid": "922fccd0-663a-4c85-89d2-f2eb86062167",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Хурд — Mongold Törsön",
+   "uncertain": "英文維基寫 2003，MB／Discogs／Apple 皆 2004，取 2004。"
+  },
+  {
+   "artist": "Hurd",
+   "album": "Зүйрлэх аргагүй",
+   "year": 2005,
+   "label": "Hurd（自主發行）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件1＋2：Hurd（蒙古重金屬先驅）的錄音室專輯，收入圍 2007 Pentatonic 最佳搖滾歌曲提名的〈Цоглог оюутан〉；Apple Music 蒙古區上架、Discogs 有實體 master。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/64a1ecae-3687-47e9-8f4c-0b858bb82c69",
+    "https://music.apple.com/mn/album/1570509556",
+    "https://www.discogs.com/master/3211563",
+    "https://en.wikipedia.org/wiki/Hurd_(band)"
+   ],
+   "mbRgMbid": "64a1ecae-3687-47e9-8f4c-0b858bb82c69",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Хурд — Züirlekh Argagüi",
+   "uncertain": ""
+  },
+  {
+   "artist": "Hurd",
+   "album": "Хайрын салхи",
+   "year": 2010,
+   "label": "Hurd（自主發行）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件1＋2：Hurd（蒙古重金屬先驅）的錄音室專輯，Apple Music 蒙古區上架、Discogs 有實體 master（另有中國非官方版，可見跨境流通）。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/5521368e-0055-434e-837e-0dcf514b5165",
+    "https://music.apple.com/mn/album/1570418082",
+    "https://www.discogs.com/master/796388",
+    "https://en.wikipedia.org/wiki/Hurd_(band)"
+   ],
+   "mbRgMbid": "5521368e-0055-434e-837e-0dcf514b5165",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Хурд — Khairyn Salkhi",
+   "uncertain": "蒙文維基寫 2009，MB／Discogs／Apple／英文維基皆 2010，取 2010。"
+  },
+  {
+   "artist": "Hurd",
+   "album": "Нарлаг диваажин",
+   "year": 2016,
+   "label": "Hurd（自主發行）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件1＋2：Hurd（蒙古重金屬先驅）的第八張錄音室專輯，Apple Music 蒙古區上架（18 首），英文維基列為 studio album。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d6ceea5d-7b70-4225-b547-0957368c63ee",
+    "https://music.apple.com/mn/album/1570807015",
+    "https://en.wikipedia.org/wiki/Hurd_(band)"
+   ],
+   "mbRgMbid": "d6ceea5d-7b70-4225-b547-0957368c63ee",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Хурд — Narlag Divaajin",
+   "uncertain": "MB 標題是拉丁轉寫「Narlag Divaajin」，封面／Apple 用西里爾，卡名取西里爾。"
+  },
+  {
+   "artist": "Hurd",
+   "album": "Долоон тэрбум",
+   "year": 2021,
+   "label": "Hurd（自主發行）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件1＋2：Hurd（蒙古重金屬先驅）的第九張錄音室專輯（英文維基列為 studio album），Apple Music 蒙古區上架、Discogs 有 2021 限量 CD 實體版。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/549426c2-c394-4ac6-abab-1e11e4583415",
+    "https://music.apple.com/mn/album/1649428602",
+    "https://www.discogs.com/release/22006666",
+    "https://en.wikipedia.org/wiki/Hurd_(band)"
+   ],
+   "mbRgMbid": "549426c2-c394-4ac6-abab-1e11e4583415",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Хурд — 7,000,000,000 / Doloon Terbum",
+   "uncertain": ""
+  },
+  {
+   "artist": "Nisvanis",
+   "album": "Саарал үе",
+   "year": 2002,
+   "label": "",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件1＋2＋3：Nisvanis 是蒙古 grunge／另類搖滾先驅（1996 成軍，蒙文維基條目，池中已有兩張），本作為第二張專輯，蒙文維基有專輯條目、記其以〈Тэсрэлт〉〈Эсрэг утгаар нь〉聞名；Apple Music 蒙古區上架。前一輪因查無專輯級好評沒收。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/ddb431ed-1bc4-49e1-b5a6-3ad71174d8a0",
+    "https://music.apple.com/mn/album/1714997086",
+    "https://mn.wikipedia.org/wiki/%D0%A1%D0%B0%D0%B0%D1%80%D0%B0%D0%BB_%D2%AF%D0%B5",
+    "https://coverartarchive.org/release-group/ddb431ed-1bc4-49e1-b5a6-3ad71174d8a0"
+   ],
+   "mbRgMbid": "ddb431ed-1bc4-49e1-b5a6-3ad71174d8a0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Нисванис — Saaral Ue",
+   "uncertain": "MB 標題為拉丁轉寫「Saaral Ue」，Apple 與蒙文維基用西里爾，卡名取西里爾。"
+  },
+  {
+   "artist": "Nisvanis",
+   "album": "Гар хангалга",
+   "year": 2016,
+   "label": "",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件1＋2＋3：Nisvanis（蒙古 grunge／另類先驅）的第四張專輯，13 首；Beehype「2016 蒙古年度專輯」第 2 名（稱其為 1996 成軍的蒙古另類搖滾／後 grunge 先驅），蒙文維基有專輯條目、Apple Music 蒙古區上架。前一輪因查無專輯級好評沒收。",
+   "evidence": [
+    "https://music.apple.com/mn/album/1714648516",
+    "https://mn.wikipedia.org/wiki/%D0%93%D0%B0%D1%80_%D1%85%D0%B0%D0%BD%D0%B3%D0%B0%D0%BB%D0%B3%D0%B0_(%D1%86%D0%BE%D0%BC%D0%BE%D0%B3)",
+    "https://beehy.pe/best-of-2016/mongolia-2/"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "release-group?artist=04c09b3e-47b8-4ebe-a3fa-37c7d0148716（Nisvanis，count=3：O₂、Хүчилтөрөгч、Saaral Ue）",
+     "releasegroup:\"Гар хангалга\" ／ releasegroup:\"Gar Hangalga\"（count=0）"
+    ],
+    "checkedAt": "2026-10-21",
+    "conclusion": "MB 有藝人 Nisvanis 但無此 release-group（作品方向 count=0）"
+   },
+   "manualEvidenceUrls": [
+    "https://music.apple.com/mn/album/1714648516",
+    "https://mn.wikipedia.org/wiki/%D0%93%D0%B0%D1%80_%D1%85%D0%B0%D0%BD%D0%B3%D0%B0%D0%BB%D0%B3%D0%B0_(%D1%86%D0%BE%D0%BC%D0%BE%D0%B3)",
+    "https://beehy.pe/best-of-2016/mongolia-2/"
+   ],
+   "releaseException": "",
+   "queryAlias": "Нисванис — Gar Khangalga",
+   "uncertain": "年份取 Apple 的 2016-09-07（蒙文維基條目未寫年份）；無 Discogs 條目，封面只有 Apple。"
+  },
+  {
+   "artist": "The Lemons",
+   "album": "Залуу Ленины ойролцоо 3н давхарт",
+   "year": 2009,
+   "label": "Hi-Fi Media Group",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件1＋2＋3：The Lemons 是蒙古 2000 年代另類／獨立搖滾代表團（英文維基條目，Playtime 音樂節年年受讚，池中已有《Red Album》），本作為第二張專輯，蒙古主要廠牌 Hi-Fi Media Group 發行、Apple Music 蒙古區上架；Last.fm 社群簡介稱核心搖滾聽眾視為傑作（前一輪因無正式樂評沒收）。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/8260167b-5a19-4595-8644-43f93e043cd4",
+    "https://music.apple.com/mn/album/1039734146",
+    "https://en.wikipedia.org/wiki/The_Lemons_(Mongolian_band)"
+   ],
+   "mbRgMbid": "8260167b-5a19-4595-8644-43f93e043cd4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Zaluu Leninii Oiroltsoo 3n Davhart",
+   "uncertain": "MB 無日期，年份取 Apple（℗ 2009 Hi-Fi Media Group）。"
+  },
+  {
+   "artist": "The Lemons",
+   "album": "III",
+   "year": 2015,
+   "label": "Hi-Fi Media Group",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件1＋2＋3：The Lemons（蒙古另類／獨立搖滾代表團）的第三張專輯，Hi-Fi Media Group 發行、Apple Music 蒙古區上架；Beehype「2016 蒙古年度專輯」第 3 名（稱該團為蒙古獨立場景最有才華、最具影響力的樂團之一），英文維基稱其具 cult status。前一輪列為證據偏薄、主線未收。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/082dfbd8-c5ab-415b-86c4-f08799fbee68",
+    "https://music.apple.com/mn/album/1038048809",
+    "https://coverartarchive.org/release-group/082dfbd8-c5ab-415b-86c4-f08799fbee68",
+    "https://en.wikipedia.org/wiki/The_Lemons_(Mongolian_band)",
+    "https://beehy.pe/best-of-2016/mongolia-2/"
+   ],
+   "mbRgMbid": "082dfbd8-c5ab-415b-86c4-f08799fbee68",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "The Lemons III",
+   "uncertain": "同名《III》池中另有 Sebadoh、Badbadnotgood、Crystal Castles，去重（藝人＋盤名）為 0，但顯示名要帶藝人。"
+  },
+  {
+   "artist": "Altan Urag",
+   "album": "Blood",
+   "year": 2009,
+   "label": "Altan Urag（自主發行）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "條件1＋2＋3：Altan Urag 是蒙古民族融合搖滾（folk rock）的開創者（2002 成軍，英文維基稱其為 pioneers of Mongolian folk-rock，電影《Mongol》《Khadak》配樂、2009 UBS MV 獎），池中已有兩張；本作為第四張專輯（英文維基 discography），Apple Music 蒙古區上架、Discogs 有實體 master（風格標 Folk Rock／Hard Rock）。前一輪因查無專輯級評價沒收。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/2de7d367-b092-4d2d-8254-74b471048fe3",
+    "https://music.apple.com/mn/album/1556321434",
+    "https://www.discogs.com/master/798602",
+    "https://coverartarchive.org/release-group/2de7d367-b092-4d2d-8254-74b471048fe3",
+    "https://en.wikipedia.org/wiki/Altan_Urag"
+   ],
+   "mbRgMbid": "2de7d367-b092-4d2d-8254-74b471048fe3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Алтан Ураг — Цус",
+   "uncertain": "Discogs master 寫 2008，MB／Apple／英文維基皆 2009，取 2009。同名《Blood》池中另有 This Mortal Coil（藝人不同，去重 0）。"
+  },
+  {
+   "artist": "Altan Urag",
+   "album": "Hypnotism",
+   "year": 2008,
+   "label": "Altan Urag（自主發行）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "條件1＋2＋3：Altan Urag 是蒙古民族融合搖滾（folk rock）的開創者（2002 成軍，英文維基稱其為 pioneers of Mongolian folk-rock，電影《Mongol》《Khadak》配樂、2009 UBS MV 獎），池中已有兩張；本作為第三張專輯（英文維基 discography 2008），Discogs 有蒙古原版 CD、MB 有 release-group 與 CAA 封面。前一輪因查無專輯級評價沒收。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/2fb61209-f464-4912-a769-713910f400a7",
+    "https://www.discogs.com/release/11344422",
+    "https://coverartarchive.org/release-group/2fb61209-f464-4912-a769-713910f400a7",
+    "https://en.wikipedia.org/wiki/Altan_Urag"
+   ],
+   "mbRgMbid": "2fb61209-f464-4912-a769-713910f400a7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Contemporary Hypnotism Album",
+   "uncertain": "MB 首發日 2009，英文維基與 Discogs 原版 2008，取 2008。Discogs 風格標 Folk／Neo-Classical／Overtone Singing（偏器樂民族），搖滾成分較該團其他作淡，主線可斟酌。Apple 未上架，封面靠 CAA／Discogs。"
+  },
+  {
+   "artist": "Altan Urag",
+   "album": "Nation",
+   "year": 2010,
+   "label": "Altan Urag（自主發行）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "條件1＋2＋3：Altan Urag 是蒙古民族融合搖滾（folk rock）的開創者（2002 成軍，英文維基稱其為 pioneers of Mongolian folk-rock，電影《Mongol》《Khadak》配樂、2009 UBS MV 獎），池中已有兩張；本作為 2010 年專輯（英文維基 discography），Discogs 有蒙古原版 CD（風格標 Folk Rock）、MB 有 release-group 與 CAA 封面。前一輪因查無專輯級評價沒收。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/fa5823a3-dae4-474f-a3cb-aba5b9f2baf3",
+    "https://www.discogs.com/release/11344486",
+    "https://coverartarchive.org/release-group/fa5823a3-dae4-474f-a3cb-aba5b9f2baf3",
+    "https://en.wikipedia.org/wiki/Altan_Urag"
+   ],
+   "mbRgMbid": "fa5823a3-dae4-474f-a3cb-aba5b9f2baf3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Алтан Ураг — Nation",
+   "uncertain": "同名《Nation》池中另有 Sepultura（藝人不同，去重 0）。Apple 未上架，封面靠 CAA／Discogs。"
+  },
+  {
+   "artist": "Altan Urag",
+   "album": "Once Upon a Time in Mongolia",
+   "year": 2010,
+   "label": "Altan Urag（自主發行）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "條件1＋2＋3：Altan Urag 是蒙古民族融合搖滾（folk rock）的開創者（2002 成軍，英文維基稱其為 pioneers of Mongolian folk-rock，電影《Mongol》《Khadak》配樂、2009 UBS MV 獎），池中已有兩張；本作為 2010 年專輯（英文維基 discography），Discogs 有蒙古原版 CD（風格標 Folk Rock）。前一輪因查無專輯級評價沒收。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/489eb2e5-e306-49b4-8fd2-d47e0ef588b3",
+    "https://www.discogs.com/release/11344577",
+    "https://en.wikipedia.org/wiki/Altan_Urag"
+   ],
+   "mbRgMbid": "489eb2e5-e306-49b4-8fd2-d47e0ef588b3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Алтан Ураг",
+   "uncertain": "CAA 無圖、Apple 未上架，封面只有 Discogs release 11344577 的圖。"
+  },
+  {
+   "artist": "Altan Urag",
+   "album": "Mongol",
+   "year": 2010,
+   "label": "Altan Urag（自主發行）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "條件1＋2＋3：Altan Urag 是蒙古民族融合搖滾（folk rock）的開創者（2002 成軍，英文維基稱其為 pioneers of Mongolian folk-rock，電影《Mongol》《Khadak》配樂、2009 UBS MV 獎），池中已有兩張；本作為 2010 年錄音室專輯（英文維基 discography 列 Mongol (2010)；Discogs 註明不是 2008 電影原聲帶），Discogs 有蒙古原版 CD（風格含 Rock）。",
+   "evidence": [
+    "https://www.discogs.com/release/11344614",
+    "https://en.wikipedia.org/wiki/Altan_Urag"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "release-group?artist=19063f26-ad08-4473-a1a9-2ce8eca902c5（Altan Urag，count=6：Унага төрөв、Made in Altan Urag、Blood、Hypnotism、Once Upon a Time in Mongolia、Nation）",
+     "artist:\"Altan Urag\" AND releasegroup:Mongol（count=0）"
+    ],
+    "checkedAt": "2026-10-21",
+    "conclusion": "MB 有藝人 Altan Urag 但無 2010《Mongol》release-group"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/11344614",
+    "https://en.wikipedia.org/wiki/Altan_Urag"
+   ],
+   "releaseException": "",
+   "queryAlias": "Алтан Ураг — Mongol (2010)",
+   "uncertain": "易與 2008 電影《Mongol》原聲帶（Tuomas Kantelinen & Altan Urag，Discogs master 951197）混淆；本張曲目（Oulen、Jamukha、Borte…）與原聲帶不同，Discogs 明註區分。封面只有 Discogs。"
+  },
+  {
+   "artist": "Mohanik",
+   "album": "100-n Undaa",
+   "year": 2009,
+   "label": "Mohanik（自主發行）／Hi-Fi Media Group（數位）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件2：Mohanik 是烏蘭巴托 2000 年代後段的另類／龐克搖滾團，首張專輯有蒙古自主發行 CD（Discogs，16 頁小冊）、由 Hi-Fi Media Group 數位上架 Apple Music 蒙古區；MB 有 release-group 與 CAA 封面。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f64eefe6-c748-466b-914a-5d14d3de7cbc",
+    "https://music.apple.com/mn/album/1041372086",
+    "https://www.discogs.com/release/7299415",
+    "https://coverartarchive.org/release-group/f64eefe6-c748-466b-914a-5d14d3de7cbc"
+   ],
+   "mbRgMbid": "f64eefe6-c748-466b-914a-5d14d3de7cbc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Моханик — 100 ₮ / 100-н ундаа",
+   "uncertain": "MB 只有 2015 德國數位發行日，原版 CD 2009（Discogs／Apple ℗ 2009），取 2009。封面主文字為「100 ₮」（Discogs 掛名西里爾 Моханйк），卡名照 MB 拉丁轉寫。代表性證據只有流通面（條件2），無維基條目。"
+  },
+  {
+   "artist": "Mohanik",
+   "album": "At Amarbayasgalant",
+   "year": 2014,
+   "label": "Mohanik（自主發行）／Hi-Fi Media Group（數位）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "條件2＋3：Mohanik 第二張專輯，在蒙古 Amarbayasgalant 寺院錄音（PBS／WHYY 曾報導錄音過程，前一輪因無好評證據沒收），蒙古自主發行 digipak CD（Discogs）、Apple Music 蒙古區上架，Discogs 風格標 Folk Rock／Indie／Prog。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6f712944-11c6-4f86-9ac4-37c4121db475",
+    "https://music.apple.com/mn/album/1041377285",
+    "https://www.discogs.com/release/7299063",
+    "https://coverartarchive.org/release-group/6f712944-11c6-4f86-9ac4-37c4121db475"
+   ],
+   "mbRgMbid": "6f712944-11c6-4f86-9ac4-37c4121db475",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Моханик — Амарбаясгалант",
+   "uncertain": "年份三說：Apple 2012、Discogs 實體 CD 2014、MB 2015（德國數位），取 Discogs 實體 2014。PBS／WHYY 報導網址本輪未重抓（前一輪 notes 提及）。"
+  },
+  {
+   "artist": "Аравт",
+   "album": "Нүүдлийн дайчид",
+   "year": 2015,
+   "label": "Hi-Fi Media Group（數位）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件1＋2：Аравт（2014 成軍）是蒙古旋律死亡／民族金屬團，蒙文維基條目稱其為第一支以蒙古語歌詞、蒙古化旋律演奏金屬的樂團；首張專輯有蒙古 CD 實體（Discogs）、Hi-Fi Media Group 上架 Apple Music、官方 Bandcamp。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/9f9d92e0-8164-4c7b-a32b-d738110fc089",
+    "https://music.apple.com/mn/album/1060725710",
+    "https://www.discogs.com/release/12906821",
+    "https://aravt-mongolia.bandcamp.com/",
+    "https://mn.wikipedia.org/wiki/%D0%90%D1%80%D0%B0%D0%B2%D1%82"
+   ],
+   "mbRgMbid": "9f9d92e0-8164-4c7b-a32b-d738110fc089",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Aravt — Nuudliin Daichid",
+   "uncertain": ""
+  },
+  {
+   "artist": "Аравт",
+   "album": "Гүрэн",
+   "year": 2017,
+   "label": "Hi-Fi Media Group（數位）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件1＋2：Аравт（蒙古首支蒙古語民族金屬團，蒙文維基條目）的第二張專輯，蒙古 CD 實體（Discogs）、Hi-Fi Media Group 上架 Apple Music，MB 有 release-group 與 CAA 封面。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/530a0675-6534-449e-aa49-06ab0abf41f4",
+    "https://music.apple.com/mn/album/1331461356",
+    "https://www.discogs.com/release/12906939",
+    "https://mn.wikipedia.org/wiki/%D0%90%D1%80%D0%B0%D0%B2%D1%82"
+   ],
+   "mbRgMbid": "530a0675-6534-449e-aa49-06ab0abf41f4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Aravt — Guren",
+   "uncertain": ""
+  },
+  {
+   "artist": "Аясын Салхи",
+   "album": "Coffin Town Under the Moon",
+   "year": 2004,
+   "label": "Аясын Салхи（自主發行）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件1＋3：Аясын Салхи（1984 成軍）是蒙古第一支金屬樂團，蒙文維基稱其為「蒙古金屬搖滾的教父」、開啟其後 Bulsara、Metronome 等金屬團；本作為其死亡金屬時期的專輯（蒙文維基列出全曲目），Discogs 有 master。前一輪提名但主線因證據偏薄未收，放寬後重提。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/a2941c79-b871-45cc-a56f-537c62d0c670",
+    "https://www.discogs.com/master/1227241",
+    "https://mn.wikipedia.org/wiki/%D0%90%D1%8F%D1%81%D1%8B%D0%BD_%D1%81%D0%B0%D0%BB%D1%85%D0%B8"
+   ],
+   "mbRgMbid": "a2941c79-b871-45cc-a56f-537c62d0c670",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Ayasyn Salkhi / Fair Wind",
+   "uncertain": "MB 日期 2008（再版），Discogs master 原版 2004，取 2004。CAA 無圖、Apple 未上架，封面只有 Discogs master 1227241 的圖（標 secondary）。"
+  },
+  {
+   "artist": "Аясын Салхи",
+   "album": "Eastern Wind",
+   "year": 2023,
+   "label": "Аясын Салхи（自主發行）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件1＋2：Аясын Салхи（蒙古第一支金屬樂團、蒙文維基稱「蒙古金屬搖滾教父」）的死亡金屬專輯，蒙文維基記其以《Eastern wind／Дорно зүгийн салхи》為名籌備並出 CD；Discogs 有蒙古自主發行 CD（8 頁小冊＋側標）。",
+   "evidence": [
+    "https://www.discogs.com/release/33491165",
+    "https://mn.wikipedia.org/wiki/%D0%90%D1%8F%D1%81%D1%8B%D0%BD_%D1%81%D0%B0%D0%BB%D1%85%D0%B8"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "release-group?artist=7d365dfe-568e-403c-8a6a-5b981d326e15（Аясын Салхи，count=1：Coffin Town Under The Moon）",
+     "releasegroup:\"Eastern Wind\" AND artist:\"Аясын Салхи\"（count=0）"
+    ],
+    "checkedAt": "2026-10-21",
+    "conclusion": "MB 有藝人 Аясын Салхи 但無此 release-group"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/33491165",
+    "https://mn.wikipedia.org/wiki/%D0%90%D1%8F%D1%81%D1%8B%D0%BD_%D1%81%D0%B0%D0%BB%D1%85%D0%B8"
+   ],
+   "releaseException": "",
+   "queryAlias": "Ayasyn Salkhi — Дорно зүгийн салхи",
+   "uncertain": "蒙文維基說是「演唱會也將成 CD」，Discogs 未標 Live，按錄音室專輯處理；若主線查到是現場盤就拿掉。封面只有 Discogs。"
+  },
+  {
+   "artist": "Аясын Салхи",
+   "album": "We Go In Different Directions",
+   "year": 1985,
+   "label": "Аясын Салхи（自主發行卡帶）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件1：蒙古第一支金屬樂團 Аясын Салхи（1984 成軍）的首張卡帶專輯，社會主義時期的重金屬／硬搖滾錄音（Discogs 風格標 Heavy Metal／Hard Rock），蒙文維基記其開啟蒙古金屬場景。",
+   "evidence": [
+    "https://www.discogs.com/release/6657377",
+    "https://mn.wikipedia.org/wiki/%D0%90%D1%8F%D1%81%D1%8B%D0%BD_%D1%81%D0%B0%D0%BB%D1%85%D0%B8"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "release-group?artist=7d365dfe-568e-403c-8a6a-5b981d326e15（Аясын Салхи，count=1：Coffin Town Under The Moon）",
+     "releasegroup:\"We Go In Different Directions\" ／ artist:\"Fair Wind\"（count=0）"
+    ],
+    "checkedAt": "2026-10-21",
+    "conclusion": "MB 有藝人 Аясын Салхи 但無此 release-group，也無 Fair Wind 名下條目"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/6657377",
+    "https://mn.wikipedia.org/wiki/%D0%90%D1%8F%D1%81%D1%8B%D0%BD_%D1%81%D0%B0%D0%BB%D1%85%D0%B8"
+   ],
+   "releaseException": "",
+   "queryAlias": "Fair Wind — Бид өөр замаар замнана",
+   "uncertain": "卡帶封面掛英文團名「Fair Wind」、蒙文盤名《Бид өөр замаар замнана》；12 首裡有翻唱（Band on the Run、Stars on 45、Mona Lisa），原創比例不高，主線可斟酌。Discogs 盤名帶「-85」，卡名去掉。封面只有 Discogs。同一團另兩卷卡帶（Hurricane -87、Зэвэрч нугарашгүй ган 1992）Discogs 標現場錄音，不提。"
+  },
+  {
+   "artist": "A-Sound",
+   "album": "Release",
+   "year": 2008,
+   "label": "Hi-Fi Label",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件1＋2：A-Sound（2006–2026，蒙文維基條目）是蒙古另類／獨立搖滾團，首張專輯由蒙古主要廠牌 Hi-Fi Label 發行（Discogs 有蒙古原版 CD），曾參加 Playtime、Coke'n Beat 音樂節。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/42656d77-0d5b-4533-848a-31af1cd5297d",
+    "https://www.discogs.com/release/13616593",
+    "https://mn.wikipedia.org/wiki/A_sound"
+   ],
+   "mbRgMbid": "42656d77-0d5b-4533-848a-31af1cd5297d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "A Sound — Release",
+   "uncertain": "Discogs 版本為 Special Edition，末三首為現場 bonus；封面只有 Discogs（標 secondary）。同名《Release》池中另有 Red Summer（藝人不同，去重 0）。第二張《100 наст》(2012) 查無封面來源，不提。"
+  },
+  {
+   "artist": "mxrningstar",
+   "album": "Хүн",
+   "year": 2024,
+   "label": "Steppescape Records",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件1＋2：mxrningstar（2020 成軍，英文維基條目，Playtime 2022 演出）是當代蒙古另類／龐克搖滾團，首張專輯（7 首、32 分鐘）發行首週全碟進入 Apple Music 蒙古 Top 100（英文維基轉引 UB.LIFE），Steppescape Records 發行。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/b2d99016-946d-4c53-869d-bde49ba84fbf",
+    "https://music.apple.com/mn/album/1774565000",
+    "https://en.wikipedia.org/wiki/Mxrningstar"
+   ],
+   "mbRgMbid": "b2d99016-946d-4c53-869d-bde49ba84fbf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Mxrningstar — Hun",
+   "uncertain": "7 首 32 分鐘，MB 與英文維基都當 Album；英文維基條目掛 Undisclosed paid 標記。與池中 The HU《Hun》同音不同團。"
+  },
+  {
+   "artist": "mxrningstar",
+   "album": "Эрх чөлөө",
+   "year": 2025,
+   "label": "Steppescape Records",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件1＋2：mxrningstar（當代蒙古另類搖滾團，英文維基條目）的第二張專輯，11 首、Steppescape Records 發行，Apple Music 蒙古區上架，MB 有 release-group。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/934e9bf0-faae-493c-8465-db9cf31eb874",
+    "https://music.apple.com/mn/album/1833487802",
+    "https://en.wikipedia.org/wiki/Mxrningstar"
+   ],
+   "mbRgMbid": "934e9bf0-faae-493c-8465-db9cf31eb874",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Mxrningstar — Erh Chuluu",
+   "uncertain": "新作（2025-10），尚無評價資料；封面只有 Apple。"
+  },
+  {
+   "artist": "Magnolian",
+   "album": "Slow Burn",
+   "year": 2020,
+   "label": "Magnolian（自主發行）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "條件2＋3：Magnolian（烏蘭巴托創作人 Dulguun Bayasgalan 的計畫，後與日本 Rambling Records 合作、歌曲收進《Death Stranding 2》原聲黑膠）的首張全長專輯；Apple 與 Discogs 都把風格歸 Indie Rock，MB 有 release-group 與 CAA 封面、官方 Bandcamp。前一輪以「indie folk 非搖滾」排除，放寬後以 indie rock 收。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/4576a39d-e7fb-4c01-8a80-ad8ff5463d05",
+    "https://music.apple.com/mn/album/1890243229",
+    "https://www.discogs.com/master/4105759",
+    "https://coverartarchive.org/release-group/4576a39d-e7fb-4c01-8a80-ad8ff5463d05",
+    "https://magnolian.bandcamp.com/"
+   ],
+   "mbRgMbid": "4576a39d-e7fb-4c01-8a80-ad8ff5463d05",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Magnolian (Dulguun Bayasgalan)",
+   "uncertain": "搖滾屬性邊緣（indie folk／indie rock 之間），主線可斟酌；前一輪曾判非搖滾。"
+  },
+  {
+   "artist": "Haranga",
+   "album": "Hard Rock Group, Vol. 1 & 2",
+   "year": 2007,
+   "label": "Hi-Fi Media Group",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件1＋考古整理：Haranga（1989 成軍，蒙古硬搖滾代表團，全員獲國家獎、2019 年 5 首歌獲國家獎，池中已有兩張）把 1989 年起的早期曲目（〈Амьдрал〉〈Энэ бол дурлал биш〉〈Манан〉〈Хилэнцэт харц〉〈Бодлын тэнгис〉等 26 首）整理成的雙卷盤，蒙文維基列為專輯《Special Edition Gold》(2007)；Hi-Fi Media Group 發行、Apple Music 蒙古區上架。早期作品原本只以卡帶流通（Discogs 有無標卡帶《Album Two》），這是最完整的早期曲目整理。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/75b53f94-da42-435a-81b6-d7a6b0913c75",
+    "https://music.apple.com/mn/album/1222984049",
+    "https://mn.wikipedia.org/wiki/%D0%A5%D0%B0%D1%80%D0%B0%D0%BD%D0%B3%D0%B0_(%D1%85%D0%B0%D0%BC%D1%82%D0%BB%D0%B0%D0%B3)",
+    "https://www.discogs.com/release/24698072"
+   ],
+   "mbRgMbid": "75b53f94-da42-435a-81b6-d7a6b0913c75",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [
+    "https://music.apple.com/mn/album/1222984049",
+    "https://mn.wikipedia.org/wiki/%D0%A5%D0%B0%D1%80%D0%B0%D0%BD%D0%B3%D0%B0_(%D1%85%D0%B0%D0%BC%D1%82%D0%BB%D0%B0%D0%B3)"
+   ],
+   "releaseException": "archival-compilation",
+   "queryAlias": "Харанга — Special Edition Gold",
+   "uncertain": "性質介於「早期兩張專輯的合訂再發」與精選之間：MB release-group 無 primary-type、無日期（已另備 manualEvidenceUrls）。Retro Records Mongolia 2023／2024 另出黑膠《Volume 1》《Volume 2》（Discogs 28013337／34901051，各 8 首，曲目同屬這批早期歌），若主線偏好實體黑膠可改提其一，但不要兩邊都收。"
+  },
+  {
+   "artist": "The Tourists (Mongolia)",
+   "album": "The Tourists",
+   "year": 2016,
+   "label": "Find A Way Records（數位再發）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件1＋2：烏蘭巴托年輕硬搖滾團 The Tourists 的同名首張專輯，Beehype「2016 蒙古年度專輯」第 8 名；Find A Way Records 上架 Apple Music 蒙古區（10 首、38 分鐘）。",
+   "evidence": [
+    "https://music.apple.com/mn/album/1617132395",
+    "https://beehy.pe/best-of-2016/mongolia-2/"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"The Tourists\" AND country:MN（count=0；MB 的 The Tourists 只有英國 pre-Eurythmics 團）",
+     "artist:\"The Tourists\" AND releasegroup:\"The Tourists\"（count=1，為英國團 1979 同名盤 d6c6cb9d…，非本團）"
+    ],
+    "checkedAt": "2026-10-21",
+    "conclusion": "MB 無蒙古 The Tourists 藝人，亦無此 release-group"
+   },
+   "manualEvidenceUrls": [
+    "https://music.apple.com/mn/album/1617132395",
+    "https://beehy.pe/best-of-2016/mongolia-2/"
+   ],
+   "releaseException": "",
+   "queryAlias": "The Tourists Mongolia",
+   "uncertain": "Apple 日期誤植為 1979-06-01（疑被英國同名團 metadata 污染），℗ 2022 為數位再發；首發年取 Beehype 2016 年度榜。掛名加「(Mongolia)」區分英國 The Tourists（池中先例 Caravan (Thailand)）。封面只有 Apple。"
+  },
+  {
+   "artist": "The Tourists (Mongolia)",
+   "album": "Where Happiness Fades",
+   "year": 2023,
+   "label": "Find A Way Records",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件2：烏蘭巴托硬搖滾團 The Tourists 的第二張全長專輯（12 首、60 分鐘），Find A Way Records 發行、Apple Music 蒙古區上架。",
+   "evidence": [
+    "https://music.apple.com/mn/album/1690381927",
+    "https://beehy.pe/best-of-2016/mongolia-2/"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"The Tourists\" AND country:MN（count=0）",
+     "releasegroup:\"Where Happiness Fades\"（count=0）"
+    ],
+    "checkedAt": "2026-10-21",
+    "conclusion": "MB 無此藝人與 release-group"
+   },
+   "manualEvidenceUrls": [
+    "https://music.apple.com/mn/album/1690381927",
+    "https://beehy.pe/best-of-2016/mongolia-2/"
+   ],
+   "releaseException": "",
+   "queryAlias": "The Tourists Mongolia",
+   "uncertain": "Beehype 網址只證明樂團身分（2016 首張），本張只有 Apple 一個來源；代表性偏薄，主線可斟酌。2021《Departure》6 首屬 EP，不提。"
+  },
+  {
+   "artist": "Magnolian",
+   "album": "Supermarket Daydreams",
+   "year": 2026,
+   "label": "Magnolian（自主發行）",
+   "country": "mn",
+   "faction": "mn",
+   "genres": [
+    "rock"
+   ],
+   "why": "條件2：Magnolian 的第二張全長專輯（9 首、35 分鐘），Apple 歸類 Indie Rock、Apple Music 蒙古區上架；收〈Supersonic/Psychedelic〉〈Walk the Fire〉等搖滾編制單曲。",
+   "evidence": [
+    "https://music.apple.com/mn/album/1891333617",
+    "https://magnolian.bandcamp.com/"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "release-group?artist=2fad3fc3-bc61-4b5d-bf11-cf696632a019（Magnolian，4 筆：Famous Men EP、Slow Burn、兩張單曲）",
+     "releasegroup:\"Supermarket Daydreams\"（count=0）"
+    ],
+    "checkedAt": "2026-10-21",
+    "conclusion": "MB 有藝人 Magnolian 但無此 release-group"
+   },
+   "manualEvidenceUrls": [
+    "https://music.apple.com/mn/album/1891333617",
+    "https://magnolian.bandcamp.com/"
+   ],
+   "releaseException": "",
+   "queryAlias": "Magnolian (Dulguun Bayasgalan)",
+   "uncertain": "2026-06 新作，無評價；搖滾屬性同《Slow Burn》屬邊緣。Bandcamp 網址為藝人頁，未確認本張已上 Bandcamp。若主線只收一張 Magnolian，優先《Slow Burn》。"
+  }
+ ],
+ "notes": [
+  "蒙古放寬後提 30 張（目標 +35、上限 42，未達）：池中 15 → 若全收 45。蒙古搖滾的正規專輯本來就少，且多數只有 Apple／Discogs 一個封面來源；再往下的候選都卡在「找不到封面」或「身分釘不住」（見下）。",
+  "身分：MB 釘住 23 張（含 Haranga《Hard Rock Group, Vol. 1 & 2》：MB 有 release-group 但無類型／日期，已補 manualEvidenceUrls）；§1 人工身分 7 張（Nisvanis《Гар хангалга》、Altan Urag《Mongol》、Аясын Салхи《Eastern Wind》《We Go In Different Directions》、The Tourists (Mongolia) ×2、Magnolian《Supermarket Daydreams》）。",
+  "組成：Hurd 6（池中已 3 → 9）、Altan Urag 5（已 2 → 7）、Nisvanis 2、The Lemons 2、Mohanik 2、Аравт 2、Аясын Салхи 3、mxrningstar 2、The Tourists (Mongolia) 2、Magnolian 2、A-Sound 1、Haranga 1（考古整理 archival-compilation）。新藝人 7 組（Mohanik、Аравт、Аясын Салхи、mxrningstar、The Tourists (Mongolia)、Magnolian、A-Sound），rock-asia-country-map.json 需補 mn 對應。",
+  "封面來源：每張都有。Apple Music 蒙古區 22 張；沒有 Apple、只靠 CAA／Discogs 圖的 8 張：Altan Urag《Hypnotism》、Altan Urag《Nation》、Altan Urag《Once Upon a Time in Mongolia》、Altan Urag《Mongol》、Аясын Салхи《Coffin Town Under the Moon》、Аясын Салхи《Eastern Wind》、Аясын Салхи《We Go In Different Directions》、A-Sound《Release》。Discogs 網站經代理 403，但 api.discogs.com 的 images 欄位拿得到圖。",
+  "主線可優先汰換（證據偏薄）：Altan Urag《Hypnotism》（Discogs 風格偏器樂民族）、Аясын Салхи《We Go In Different Directions》（半數翻唱）、The Tourists (Mongolia)《Where Happiness Fades》、Magnolian《Supermarket Daydreams》（搖滾邊緣、2026 新作）、Haranga《Hard Rock Group, Vol. 1 & 2》（早期曲目整理盤，性質近精選）。",
+  "新證據：Beehype「Best Albums of 2016 — Mongolia」(https://beehy.pe/best-of-2016/mongolia-2/) 第 2 名 Nisvanis《Gar Hangalga》、第 3 名 The Lemons《III》、第 8 名 The Tourists 同名首張——兩張前一輪被擋的盤現在有專輯級榜單證據。",
+  "掛名：Hurd 照池中拉丁「Hurd」（MB 是西里爾 Хурд）；mxrningstar 照 MB／Apple 小寫；The Tourists 加「(Mongolia)」區分英國同名團。",
+  "查過但不提：Hurd《The Best Collection III》（英文維基明列為 compilation，與 I／II 的 studio album 不同）、《Unplugged》《Acoustic Unplugged II》（現場）；Haranga《Бодлын тэнгис》（12 首皆標 Unplugged 重錄，判現場）、《Best of Haranga》（MB Compilation）、Retro Records《Volume 1》《Volume 2》黑膠（與已提的 Hard Rock Group 內容重疊，見該條 uncertain）；The Lemons《Unplugged in UB》（現場）；Аясын Салхи《Hurricane -87》《Зэвэрч нугарашгүй ган》（Discogs 標現場錄音）；Соёл Эрдэнэ《Дуу хөгжмийн хамтлаг》1983（4 首 7 吋，EP）、《Алагхан дэлхийдээ дуулж яваарай》（90 年代卡帶，無年份）、《Mongolian Music from the 70's Vol. I》（Ebalunga 2023 考古盤，但為 Bayan Mongol 合輯、風格 disco／綜藝）；Nisvanis《O₂》（MB 另立的 release-group，即《Хүчилтөрөгч》，重複）。",
+  "查過但找不到封面或身分：Bulsara《Булсара》(2005)《Хоосон ертөнц》(2008)（蒙文維基有條目、MB 有後者但無封面，Apple／Discogs／CAA 皆無圖）；A-Sound《100 наст》(2012)（無封面來源）；Night Train／Шөнийн галт тэрэг《Цэнхэр шувуу》（蒙文維基確認 2004 Sonor Records 錄音室專輯，但原版查無封面，Discogs 只有 2022 重錄黑膠）；Chinggis Khaan 樂團（Apple 有 JAGA 2015 四張，但查不到是否為 1990 年代老團的原專輯，身分釘不住）；Niciton（無專輯資料）；Growl of Clown（只有 EP《The Fallen City》）。",
+  "非搖滾排除：Domog《Folk Modern Group》（民族器樂、翻奏 Yesterday／山魔王）、Jonon、Delhii（當代民族器樂）、Dain ba Enkh（嘻哈）；Tengger Cavalry、Nine Treasures、Hanggai（非 mn）。",
+  "WebSearch 用了 3 次（上限）：Chinggis Khaan 樂團蒙文查詢（無果）、英文查詢（無 discography）、蒙古搖滾首張專輯（找到 Beehype 2016 年度榜與 The Tourists）。其餘靠 MB API、iTunes Search／Lookup（country=mn）、api.discogs.com、蒙文／英文維基 action=raw。"
+ ]
+}
