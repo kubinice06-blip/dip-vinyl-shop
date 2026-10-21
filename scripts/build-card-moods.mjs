@@ -2,8 +2,9 @@
 // 情緒三軸前台檔：data/mood/card-moods-v0.json（後台底稿）→ data/mood/card-moods.json（前台）。
 //
 // 前台檔依 seed_cards.json 的順序存，每張 [x, y, z, 把握]（把握 0 低／1 中／2 高／3 錨點），
-// 不存 id（依 id 存要 361KB gz，依順序存 58KB）。綁定靠 _seed 的張數、第一張、最後一張 id，
-// 前台三個都對得上才用，否則整檔視為失效（調頻入口顯示「資料更新中」），不會畫錯位置。
+// 另存每張 id 的 FNV-1a 32 位元雜湊 _h（不存 id 本身：依 id 存要 361KB gz，雜湊只多 ~90KB）。
+// 前台用雜湊對卡，不靠順序：瀏覽器快取裡的舊 seed（2026-10-21 上線當天店主手機就撞到）、
+// 之後新上架還沒評分的卡，都只是對不到而被跳過，不會整檔失效或畫錯位置。_seed 只當參考。
 //
 // 同時是 gate：seed 每張都要有座標、v0 檔不能有 seed 以外的 id、104 張錨點要在原格。
 // 任一項不過就 exit 1（MOOD_LAUNCH_PLAN §3.2）。
@@ -33,14 +34,16 @@ for (const f of ['score500/scored-500.json', 'score3000/scored-3000.json', 'scor
 const T = v0._thresholds;
 const cellOf = (x, y, z) => (x >= T.x ? (y >= T.y ? (z >= T.z ? 'boil' : 'charge') : (z >= T.z ? 'lift' : 'crisp')) : (y >= T.y ? (z >= T.z ? 'languid' : 'decay') : (z >= T.z ? 'calm' : 'still')));
 
+const fnv = s => { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; };
 const errors = [];
 const seedIds = new Set();
-const cards = [];
+const cards = [], hashes = [];
 const counts = {};
 let missing = 0, overridden = 0;
 for (const row of seed) {
   const id = idOf(row[0], row[1]);
   seedIds.add(id);
+  hashes.push(fnv(id));
   let m = v0.cards[id];
   const ov = overrides[id];
   let c;
@@ -82,6 +85,7 @@ const out = {
   breaks: scale.breaks,
   names: scale.names,
   cells: counts,
+  _h: hashes,
   cards,
 };
 

@@ -1,7 +1,7 @@
 /* 調頻 —— 三顆輪子各轉一軸（能量／質地／色溫），轉過去的唱片一張張閃過，停下來鎖定一張。
  *
- * 資料：data/mood/card-moods.json（scripts/build-card-moods.mjs 產生，依 seed_cards.json 順序存
- * [x, y, z, 把握]）＋ seed_cards.json（對 id；瀏覽器快取裡已有）。面板外殼是店主的像素稿
+ * 資料：data/mood/card-moods.json（scripts/build-card-moods.mjs 產生，每張 [x, y, z, 把握] 加 id 雜湊 _h）；
+ * 卡池物件用 id 的 FNV-1a 雜湊對上座標，不靠 seed 順序，舊快取的 seed 或還沒評分的新卡只是被跳過。面板外殼是店主的像素稿
  * tune/panel.jpg，滾筒、輪子、開關、按鍵是疊在上面的活件；輪子的滾花拿稿子裡的銅帶
  * （tune/tile-*.png）照圓柱投影取樣捲動。星圖用 Three.js（r128，與 starmap-lab 同版）。
  *
@@ -40,17 +40,12 @@
     if (!dataPromise) {
       dataPromise = Promise.all([
         fetch('data/mood/card-moods.json').then(r => { if (!r.ok) throw new Error('情緒座標載入失敗'); return r.json(); }),
-        fetch('seed_cards.json').then(r => { if (!r.ok) throw new Error('卡池載入失敗'); return r.json(); }),
         cfg.loadCardPool(),
-      ]).then(([moods, seed, pool]) => {
-        // 前台檔依 seed 順序綁定：張數、第一張、最後一張 id 都要對，否則整檔失效
-        const s = moods._seed || {};
-        if (s.count !== seed.length || s.head !== idOf(seed[0][0], seed[0][1]) || s.tail !== idOf(seed[seed.length - 1][0], seed[seed.length - 1][1])) {
-          throw new Error('情緒座標與卡池版本不一致，資料更新中');
-        }
-        const byId = new Map();
-        seed.forEach((row, i) => { const m = moods.cards[i]; if (m) byId.set(idOf(row[0], row[1]), m); });
-        return { moods, byId, pool };
+      ]).then(([moods, pool]) => {
+        if (!Array.isArray(moods._h) || moods._h.length !== moods.cards.length) throw new Error('情緒座標檔格式不對');
+        const byHash = new Map();
+        moods._h.forEach((h, i) => { const m = moods.cards[i]; if (m) byHash.set(h, m); });
+        return { moods, byHash, pool };
       }).catch(e => { dataPromise = null; throw e; });
     }
     return dataPromise;
@@ -65,11 +60,12 @@
   const cellOf = (x, y, z) => (x >= T.x ? (y >= T.y ? (z >= T.z ? 'boil' : 'charge') : (z >= T.z ? 'lift' : 'crisp')) : (y >= T.y ? (z >= T.z ? 'languid' : 'decay') : (z >= T.z ? 'calm' : 'still')));
   const target = () => ({ x: rawOf('x', state.p.x), y: rawOf('y', state.p.y), z: rawOf('z', state.p.z) });
 
-  function buildCards({ moods, byId, pool }) {
+  const fnv = s => { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; };
+  function buildCards({ moods, byHash, pool }) {
     DATA = moods; T = moods.thresholds; BR = moods.breaks; NAMES = moods.names;
     CARDS = [];
     for (const c of pool.cards) {
-      const m = byId.get(idOf(c.artist, c.album));
+      const m = byHash.get(fnv(idOf(c.artist, c.album)));
       if (!m) continue;
       const i = CARDS.length;
       CARDS.push({ i, card: c, x: m[0], y: m[1], z: m[2], conf: m[3], cell: cellOf(m[0], m[1], m[2]),
@@ -80,9 +76,9 @@
 
   // ── 畫面 ──────────────────────────────────────────────────────────
   const CSS = `
-.tune-app{--pix:'DotGothic16','Space Mono',monospace;position:relative;display:grid;grid-template-columns:1fr;grid-template-rows:clamp(300px,54dvh,720px) auto;width:100%;max-width:720px;margin:0 auto;min-height:100dvh;background:#0b0c10;color:#e9e2c8;font-family:var(--pix);font-size:11px;letter-spacing:.04em}
+.tune-app{--pix:'DotGothic16','Space Mono',monospace;position:relative;display:grid;grid-template-columns:1fr;grid-template-rows:minmax(280px,1fr) auto;width:100%;max-width:720px;margin:0 auto;height:100dvh;background:#0b0c10;color:#e9e2c8;font-family:var(--pix);font-size:11px;letter-spacing:.04em;overflow:hidden}
 /* 轉成橫向（手機側放、矮視窗）才左右並排 */
-@media (orientation:landscape) and (max-height:600px){.tune-app{grid-template-columns:minmax(0,1fr) clamp(300px,calc((100dvh - 24px) * 1438 / 1608),48vw);grid-template-rows:minmax(0,1fr);max-width:none;height:100dvh;min-height:0;overflow:hidden}}
+@media (orientation:landscape) and (max-height:600px){.tune-app{grid-template-columns:minmax(0,1fr) clamp(300px,calc((100dvh - 24px) / 0.86),48vw);grid-template-rows:minmax(0,1fr);max-width:none}}
 .tune-stage{position:relative;min-width:0;min-height:0;background:#060609;overflow:hidden}
 .tune-stage canvas{display:block;width:100%;height:100%;touch-action:none}
 .tune-stage .tune-hint{position:absolute;left:12px;bottom:10px;font-size:9px;letter-spacing:.14em;color:#777;pointer-events:none}
@@ -110,31 +106,38 @@
 .tune-now .dot{width:5px;height:5px;background:#ff4d3d;box-shadow:0 0 6px #ff4d3d;animation:tuneBlink .9s steps(2) infinite;flex:none;align-self:flex-start}
 @keyframes tuneBlink{50%{opacity:.15}}
 .tune-msg{position:absolute;inset:0;display:grid;place-items:center;color:#9aa088;font-size:12px;text-align:center;padding:20px;line-height:1.8}
-.tune-panel{position:relative;min-width:0;min-height:0;display:grid;place-items:center;padding:10px;background:#2c3037 repeating-linear-gradient(135deg,rgba(255,255,255,.025) 0 2px,transparent 2px 9px);border-top:2px solid #14161a;overflow:hidden}
+.tune-panel{position:relative;min-width:0;min-height:0;display:grid;place-items:start center;padding:10px 10px 0;background:#2c3037 repeating-linear-gradient(135deg,rgba(255,255,255,.025) 0 2px,transparent 2px 9px);border-top:2px solid #14161a;overflow:hidden}
 @media (orientation:landscape) and (max-height:600px){.tune-panel{border-top:0;border-left:2px solid #14161a;padding:12px}}
-.tune-console{position:relative;width:100%;max-width:min(100%,600px);aspect-ratio:1438/1608;background:url(tune/panel.jpg) 0 0/100% 100% no-repeat;image-rendering:pixelated;container-type:inline-size;user-select:none}
-@media (orientation:landscape) and (max-height:600px){.tune-console{max-width:min(100%,calc((100dvh - 24px) * 1438 / 1608))}}
+/* 主機拆兩個模組：FREQUENCY 靠左 76% 寬、右側一塊直立的黃銅「就這張」；輪子模組全寬。整台高 ≈ 0.86 倍寬，依視窗高度反推寬度，一定塞進一個畫面 */
+.tune-console{position:relative;width:min(100%,600px,calc((100dvh - 340px) / 0.86));display:flex;flex-direction:column;align-items:stretch;gap:1.2cqw;container-type:inline-size;user-select:none}
+@media (orientation:landscape) and (max-height:600px){.tune-console{width:min(100%,calc((100dvh - 24px) / 0.86))}}
+.tune-mod{position:relative;background-size:100% 100%;background-repeat:no-repeat;image-rendering:pixelated}
+.tune-row1{display:flex;gap:2cqw;align-items:stretch}
+.tune-mod-freq{width:76%;flex:none;aspect-ratio:1438/625;background-image:url(tune/panel-freq.jpg)}
+.tune-mod-wheels{width:100%;aspect-ratio:1438/983;background-image:url(tune/panel-wheels.jpg)}
+.tune-btncol{flex:1 1 0;min-width:0;display:grid;place-items:center;padding:1cqw 0}
+.tune-draw{height:100%;max-width:100%;aspect-ratio:168/358;background:url(tune/btn-v.png) center/100% 100% no-repeat;image-rendering:pixelated;border:0;padding:0;cursor:pointer;writing-mode:vertical-rl;text-orientation:upright;font-family:var(--pix);font-size:5cqw;letter-spacing:.3em;color:#2a1e07;text-shadow:.15cqw .15cqw 0 rgba(255,236,170,.55);display:grid;place-items:center}
+.tune-draw:active{transform:translateY(.4cqw);filter:brightness(1.08)}
+.tune-draw[disabled]{opacity:.55;cursor:default}
 .tune-console .abs{position:absolute}
-.tune-drumwin{left:14.26%;top:13.8%;width:61.2%;height:19.28%;background:#0d0f0d;display:flex;gap:1.1cqw;padding:1.2cqw 1.3cqw;align-items:stretch}
+.tune-drumwin{left:14.26%;top:35.5%;width:61.2%;height:49.6%;background:#0d0f0d;display:flex;gap:1.1cqw;padding:1.2cqw 1.3cqw;align-items:stretch}
 .tune-drum{position:relative;flex:1 1 0;overflow:hidden;background:linear-gradient(180deg,#000 0,#2b2f2a 30%,#3a3f38 50%,#2b2f2a 70%,#000 100%);box-shadow:inset 0 0 0 .3cqw #000}
 .tune-drum.wide{flex:2.3 1 0}
 .tune-drum .strip{transition:transform .5s cubic-bezier(.25,.9,.3,1.08)}
-.tune-drum span{display:block;height:6.3cqw;line-height:6.3cqw;text-align:center;font-family:var(--pix);font-size:4.4cqw;color:var(--w,#e9e2c8);text-shadow:0 0 1cqw var(--w,#e9e2c8)}
-.tune-drum.wide span{font-size:3.8cqw;letter-spacing:.2em;padding-left:.2em}
+.tune-drum span{display:block;height:4.95cqw;line-height:4.95cqw;text-align:center;font-family:var(--pix);font-size:3.6cqw;color:var(--w,#e9e2c8);text-shadow:0 0 1cqw var(--w,#e9e2c8)}
+.tune-drum.wide span{font-size:3.1cqw;letter-spacing:.2em;padding-left:.2em}
 .tune-drum::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.85) 0,rgba(0,0,0,.35) 30%,transparent 40%,transparent 60%,rgba(0,0,0,.35) 70%,rgba(0,0,0,.85) 100%);pointer-events:none}
-.tune-sw{left:80.7%;top:15.36%;width:7.6%;height:17.1%;background:transparent;border:0;cursor:pointer;padding:0}
-.tune-swlab{left:77%;width:15%;text-align:center;font-family:var(--pix);font-size:2.3cqw;letter-spacing:.1em;color:#8d9478;pointer-events:none}
-.tune-swlab.top{top:11.3%}.tune-swlab.bot{top:32.6%}
+.tune-sw{left:80.7%;top:39.5%;width:7.6%;height:44%;background:transparent;border:0;cursor:pointer;padding:0}
+.tune-swlab{left:77%;width:15%;text-align:center;font-family:var(--pix);font-size:1.9cqw;letter-spacing:.1em;color:#8d9478;pointer-events:none}
+.tune-swlab.top{top:28%}.tune-swlab.bot{top:84%}
 .tune-swlab.on{color:#ffd34d;text-shadow:0 0 .8cqw #ffd34d}
-.tune-led{left:83.3%;width:1.8%;height:1%;background:#2b2a1f;pointer-events:none}
-.tune-led.top{top:16.04%}.tune-led.bot{top:30.72%}
+.tune-led{left:83.3%;width:1.8%;height:2.56%;background:#2b2a1f;pointer-events:none}
+.tune-led.top{top:41.3%}.tune-led.bot{top:79%}
 .tune-led.on{background:#ffd34d;box-shadow:0 0 .8cqw #ffd34d}
-.tune-wheel{background:transparent;cursor:ns-resize;touch-action:none;overflow:hidden;top:48.26%;height:33.33%}
+.tune-wheel{background:transparent;cursor:ns-resize;touch-action:none;overflow:hidden;top:15.36%;height:54.5%}
 .tune-wheel canvas{display:block;width:100%;height:100%;image-rendering:pixelated}
 .tune-wheel[data-axis="x"]{left:15.58%;width:12.66%}.tune-wheel[data-axis="y"]{left:44.78%;width:12.24%}.tune-wheel[data-axis="z"]{left:73.7%;width:12.24%}
 .tune-wheel:focus-visible{outline:2px solid #ffd166;outline-offset:-2px}
-.tune-draw{left:32%;top:87.5%;width:36.2%;height:9.33%;background:transparent;border:0;cursor:pointer;padding:0}
-.tune-draw:active{background:rgba(255,255,255,.25)}
 `;
   const SPK = '<svg viewBox="0 0 12 12" shape-rendering="crispEdges" width="20" height="20"><path class="b" d="M1 4h2v4H1zM3 3h1v6H3zM4 2h1v8H4zM5 1h1v10H5z"/><path class="w" d="M8 4h1v4H8zM10 2h1v1h-1zM10 9h1v1h-1zM11 3h1v6h-1z"/><path class="o" d="M8 3h1v1H8zM9 4h1v1H9zM10 5h1v2h-1zM9 7h1v1H9zM8 8h1v1H8zM11 3h1v1h-1zM11 8h1v1h-1zM10 4h1v1h-1zM10 7h1v1h-1z"/></svg>';
 
@@ -152,6 +155,8 @@
     <div class="tune-msg" id="tuneMsg">載入中…</div>
   </div>
   <div class="tune-panel"><div class="tune-console" id="tuneConsole">
+    <div class="tune-row1">
+    <div class="tune-mod tune-mod-freq">
     <div class="abs tune-drumwin">
       <div class="tune-drum" id="tuneDx" style="--w:${AX.x}"><div class="strip"><span>靜</span><span>躁</span></div></div>
       <div class="tune-drum" id="tuneDy" style="--w:${AX.y}"><div class="strip"><span>輕</span><span>重</span></div></div>
@@ -161,10 +166,14 @@
     <span class="abs tune-swlab top on" id="tuneSwTop">SCAN</span><span class="abs tune-swlab bot" id="tuneSwBot">FINE</span>
     <button class="abs tune-sw" id="tuneMode" type="button" aria-label="粗調／微調" aria-pressed="false"></button>
     <i class="abs tune-led top on" id="tuneLedTop"></i><i class="abs tune-led bot" id="tuneLedBot"></i>
+    </div>
+    <div class="tune-btncol"><button class="tune-draw" id="tuneDraw" type="button" disabled>就這張</button></div>
+    </div>
+    <div class="tune-mod tune-mod-wheels">
     <div class="abs tune-wheel" data-axis="x" role="slider" tabindex="0" aria-label="能量" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25"><canvas></canvas></div>
     <div class="abs tune-wheel" data-axis="y" role="slider" tabindex="0" aria-label="質地" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><canvas></canvas></div>
     <div class="abs tune-wheel" data-axis="z" role="slider" tabindex="0" aria-label="色溫" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><canvas></canvas></div>
-    <button class="abs tune-draw" id="tuneDraw" type="button" aria-label="就這張" disabled></button>
+    </div>
   </div></div>
 </div>`;
   }
