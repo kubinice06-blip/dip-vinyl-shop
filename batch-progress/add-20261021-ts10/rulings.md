@@ -37,3 +37,16 @@
 ## 主線裁定（研究層交件中）
 
 - **10431**：The Flob《Tối Thượng》廠牌照 MB 用 Universal Music Indochina（Apple ℗、維基各一說，正文不寫廠牌）；Black Infinity《The Illuminati of Love and Death I & II》卡面年份 2014（MB、維基；Discogs 2013 為壓片年），封面用 Apple Vol. 1。Chillies、Thắng 的 Cống hiến「前十名單」查無獨立來源，正文不寫。
+
+## 研究 e 組（條號 10401–10410）
+- 10401｜Amateur Takes Control《You, Me and the Things Unsaid》：身分無疑（MB d081434e、Discogs 1729593、廠牌頁 KWR003、Bandcamp 四方一致，2008-10-10）。首張全長，前身是 2008-04 自費 CD 單曲《Built on Miles Of Hope》。策展層『偏弱』不成立：KittyWu 廠牌頁、Bandcamp 與 Bandwagon 兩篇專文（告別、十週年）足以支撐，Bandwagon 稱其影響新加坡後搖滾屬一家之言，寫作層須掛名。『landmark record』一語來歷不明不採。full，建議保留。
+- 10402｜Rudra《Kurukshetra》：身分無疑（MB a8ba25ef、Discogs 3747295 Trishul TR-004、Apple 11 首同序）。重要提醒：Kathir 2005-03 訪談稱製作團隊正用全新編曲重錄此盤並預告 2005 重發，而維基只列 2015 Remastered；Apple 上架版本是原錄、重錄或重新母帶無法確認，寫作層不得宣稱版本、不寫『已重錄發行』。metal-archives 403、無陣容與製作資料，thin。建議保留。
+- 10403｜Rudra《Brahmavidya: Primordial I》：身分無疑。發行日 MB／Discogs 為 2005-03、維基寫 4 月，寫作層只寫 2005 年。主故事取自 Kathir 2005 訪談（每曲一部奧義書、Joshua Nair 與 Sean Loo 製作、錄到一半加印度打擊樂）與兩篇小眾媒體評論（Voices from the Dark Side、Rough Edge），均掛名使用。奧義書中文譯名為我按通行譯名對應，寫作層可改寫英文原名。full，建議保留。
+- 10404｜Marijannah《Istanah》：身分無疑（MB 75301200、Discogs master 1675851、Bandcamp、Apple）。提醒主線：策展層稱『首張全長』，但 Bandwagon 2018 稱前作《Till Marijannah》為 debut album（約 29 分鐘、Discogs 為 12 吋黑膠 Album、4 曲，MB 標 EP），『首張』因分類而異，facts 與寫作層都不寫序數。實體版三家廠牌並存（丹麥 Cursed Tongue 黑膠、Disaster Records CD、Tandang 卡帶），數位版自行發行；Bandwagon 2018 榜屬前作不寫名次。thin，建議保留。
+- 10405｜Forests《Get In Losers, We're Going to Eternal Damnation》：身分無疑（MB c36ec0cd、Bandcamp 2022-04-01、Discogs master 2598617）。Apple 5 月 11 日是串流上架日，採 4 月 1 日。序數存疑：Bandcamp 另有 2015 年《worst beach vacation ever, circa 1997》，Discogs 主頁專輯只有三張，facts 與寫作層都不寫『第三張』。Sweetness Follows 僅見於 Apple 版權行，黑膠證據只有 Dog Knights（DK161，限量 150）。無樂評與專訪（Bandwagon 2022 頁 404），thin；建議保留。
+- 10406｜Sweet Charity《Sejuta Wajah》：身分無疑（MB 5e0d3374、Discogs master 1086115／release 5579313 WEA M 93459 十首）。維基那句區域影響力不採（ts9 10316 已判定抄自 2009 部落格，本次再確認）。曲目 Discogs 10 首、部落格 11 首，採 Discogs；貝斯名 S. Hassan Abdullah 與 Syed Hassan Al-Attas 不合併。1996 年現場專輯《Konsert Sejuta Wajah》的場館 Discogs 寫 Stadium Merdeka、ts2 稿寫 Stadium Negara，不寫場館。thin，依放寬門檻建議保留。
+- 10407｜本組建議移除：無。六張皆為原創錄音室專輯、身分與年份核對無誤；Marijannah 與 Forests 的序數說法需主線避免。
+- 10408｜推翻策展層：無推翻事實，僅提醒兩處措辭——Marijannah『首張全長』、Forests『第三張正規專輯』，兩者都因分類或目錄來源不一而不寫序數。
+- 10409｜封面：Marijannah 與 Forests 的 CAA 無圖或未確認，以策展層給的 Apple 圖為準；Forests 的 Apple 圖路徑（artwork.jpg）與 Bandcamp zcxz 美術署名未逐圖比對。
+- 10410｜WebSearch 用量：ATC 1 次、Rudra 1 次（共 2 次），其餘走 MB／Discogs／iTunes API、維基 raw 與 WebFetch；Marijannah、Forests、Sweet Charity 零搜尋。metal-archives、Discogs 網頁版 403 已改用 API。
+- **10432**：研究 c 組：Cút Lộn《Bắc Thảo》廠牌改自行發行（Discogs、Bandcamp）；7UPPERCUTS 同名專輯不是首張（2018《Summer Jam》），寫「同名專輯」；Da Vàng、Sói Đen 的「第一代重金屬」「民族金屬先聲」查無來源不寫。Sói Đen 封面只有 Discogs 300×225 小圖，封面層再看清晰度。
