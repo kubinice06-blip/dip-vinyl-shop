@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **320** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 82、已退回 1）。
+共 **324** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 86、已退回 1）。
 最後更新：2026-10-21
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -169,6 +169,15 @@
 | Plainsunset 《The Gift》 | [#24571880](https://www.discogs.com/release/24571880) | 2003 | Wake Me Up Music | wmum 006 | 唯一版本、主線目視與盤名相符 | ok |
 | Sói Đen 《Chiến tranh và hòa bình》 | [#10488499](https://www.discogs.com/release/10488499) | 2005 | Not On Label (Sói Đen Self-released) | none | 唯一版本、主線目視與盤名相符 | ok |
 | Stompin' Ground 《Measured by the Richter Scale》 | [#2239436](https://www.discogs.com/release/2239436) | 1995 | Pony Canyon | SKCS 0001 | Discogs master 2738420 的版本、主線目視與盤名相符 | ok |
+
+## add-20261021-ts11（4 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Altan Urag 《Once Upon a Time in Mongolia》 | [#11344577](https://www.discogs.com/release/11344577) | 2010 | Not On Label | none | 唯一版本、主線目視與盤名相符 | ok |
+| Altan Urag 《Mongol》 | [#11344614](https://www.discogs.com/release/11344614) | 2010 | Not On Label | none | 唯一版本、主線目視與盤名相符 | ok |
+| Аясын Салхи 《Coffin Town Under the Moon》 | [#6659975](https://www.discogs.com/release/6659975) | 2008 | Hi-Fi Label | none | Discogs master 1227241 的版本、主線目視與盤名相符 | ok |
+| Аясын Салхи 《Eastern Wind》 | [#33491165](https://www.discogs.com/release/33491165) | 2023 | Not On Label (Аясын Салхи Self-released) | none | 唯一版本、主線目視與盤名相符 | ok |
 
 ## c49（3 張）
 

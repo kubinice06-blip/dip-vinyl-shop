@@ -65,3 +65,4 @@
 - **10478**｜推翻策展層：Аравт『蒙古首支蒙古語民族金屬團』降為『維基稱』；Coffin Town 補陣容衝突；其餘未推翻事實。封面未動（Aravt、mxrningstar 有 Apple 圖；三張 Аясын Салхи 與 A-Sound 僅 Discogs）。
 - **10479**｜WebSearch 使用 2 次（Аясын Салхи 英文與蒙古語專輯名、A-Sound Release），皆無有用結果；其餘走蒙文／英文維基 raw、iTunes API（country=mn）、Discogs API、MB API、Bandcamp、UB.LIFE、Eguur.mn、Unite Asia。MetalSucks、Metal Music Archives、Neocha、Soundfly 皆 403／連線失敗未能開啟。qa-batch 對 Cyrillic 專名報『非拉丁亂碼』為預期。
 - **10513**：刪 Аясын Салхи《We Go In Different Directions》——研究 d 組（10474）查得是 1985 年錄音室 demo 卡帶，不是正規專輯；放寬門檻不放寬「正規專輯」這條。《Eastern Wind》判為錄音室作，保留、正文只寫「8 首 CD」。研究層全數交件，本批 28 張（蒙古上線後 43）。
+- **10514**：試聽 22 ready／6 無來源（人工 11 張：Apple 蒙古區，以策展層證據所指筆數、曲數與年份核對；mxrningstar 不取 instrumental 版、The Tourists 的 1979 日期為 Apple 誤植）。封面 CAA 10、Apple 14、Discogs 4（Altan Urag《Once Upon a Time in Mongolia》《Mongol》、Аясын Салхи 兩張）。A-Sound《Release》MB 宣稱的 CAA 實際無圖，改用 Apple 官方圖（極簡設計、印團名盤名）。三軸：冷門軸 3（本地小廠／自主發行）、經典度一律 2（放寬門檻批）。
