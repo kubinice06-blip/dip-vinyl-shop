@@ -1,0 +1,388 @@
+{
+ "group": "ss",
+ "factions": [
+  {
+   "id": "sg",
+   "zh": "新加坡",
+   "count": 13,
+   "why": "新加坡放寬補到 50（ts10–ts11）"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Electrico",
+   "album": "We Satellites",
+   "year": 2008,
+   "label": "Warner Music Singapore",
+   "country": "sg",
+   "faction": "sg",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "放寬條件 1＋2：Electrico 是 2000 年代新加坡英語搖滾代表團（首組入圍 MTV Asia Awards 的新加坡樂團、三座 COMPASS 本地英語流行曲獎、Power 98 最佳新加坡樂團）；本作為第三張正規專輯，Warner Music 新加坡／馬來西亞發行，現由 19SixtyFive 在 Apple Music 上架。前一輪因維基稱「較不成功」沒收。",
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Electrico",
+    "https://www.discogs.com/release/6720815",
+    "https://music.apple.com/sg/album/we-satellites/1557538691",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/5f/93/d1/5f93d1e0-ffab-3aec-a7dd-407fb5d9ebad/85365721579.jpg/600x600bb.jpg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "https://musicbrainz.org/ws/2/release-group?query=artist:\"Electrico\"&fmt=json（藝人方向：Electrico [c864a472] 只有 So Much More Inside、Hip City 兩個 release-group）",
+     "https://musicbrainz.org/ws/2/release-group?query=artist:\"Electrico\" AND releasegroup:\"We Satellites\"&fmt=json（作品方向）"
+    ],
+    "checkedAt": "2026-10-21",
+    "conclusion": "MB 有藝人但無此 release-group"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/6720815",
+    "https://music.apple.com/sg/album/we-satellites/1557538691",
+    "https://en.wikipedia.org/wiki/Electrico"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "維基（該節標 citation needed）稱本作比前兩張不成功；屬「場景代表團的正規專輯」放寬條件收錄。池中已有 Hip City。"
+  },
+  {
+   "artist": "Electrico",
+   "album": "So Much More Inside",
+   "year": 2004,
+   "label": "Universal Music Singapore",
+   "country": "sg",
+   "faction": "sg",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "放寬條件 3（前一輪 ts9 研究層因好評只有單曲層級而刪）＋條件 2：Electrico 首張正規專輯，Universal Music 新加坡發行並在澳洲、泰國、印尼發行；單曲〈I Want You〉登 Perfect 10 電台週榜冠軍並獲 COMPASS 年度本地英語流行曲。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/7ffa3c64-ca95-3311-8ad8-ed9e73f121ec",
+    "https://en.wikipedia.org/wiki/Electrico",
+    "https://music.apple.com/sg/album/so-much-more-inside/1557557352",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/6c/59/69/6c5969f9-8c65-44f7-9111-678054b2461e/602498237472.jpg/600x600bb.jpg"
+   ],
+   "mbRgMbid": "7ffa3c64-ca95-3311-8ad8-ed9e73f121ec",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ts9 曾刪（10354）：好評僅單曲電台榜與 COMPASS 單曲獎、維基相關節標 citation needed；放寬門檻下以「代表團首張、主流廠牌多國發行」收。MB 無首發日期，年份依維基與 Apple（2004-08）。"
+  },
+  {
+   "artist": "The Oddfellows",
+   "album": "What's Yours and Mine",
+   "year": 2021,
+   "label": "self-released / TNT Studio",
+   "country": "sg",
+   "faction": "sg",
+   "genres": [
+    "rock"
+   ],
+   "why": "放寬條件 1＋3：The Oddfellows 是 1988 年成軍、新加坡英語獨立搖滾開山團之一（池中已有 Teenage Head）；本作為睽違近三十年的正規專輯，Apple Music 上架、馬來西亞 TNT Studio 壓 LP／CD，Big Duck 2021 新加坡年度榜榮譽提名。前一輪 notes 列為備選。",
+   "evidence": [
+    "https://www.discogs.com/master/2763989",
+    "https://music.apple.com/sg/album/whats-yours-and-mine/1582549301",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1e/93/7f/1e937fc0-55f0-a543-c057-0a4423622096/198002030030.jpg/600x600bb.jpg",
+    "https://theoddfellowssg.bandcamp.com"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "https://musicbrainz.org/ws/2/release-group?query=artist:\"The Oddfellows\"&fmt=json（藝人方向：The Oddfellows [a20883ba] 只有 Teenage Head、Carnival 兩個 Album）",
+     "https://musicbrainz.org/ws/2/release-group?query=artist:\"The Oddfellows\" AND releasegroup:\"What's Yours and Mine\"&fmt=json（作品方向）"
+    ],
+    "checkedAt": "2026-10-21",
+    "conclusion": "MB 有藝人但無此 release-group"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/2763989",
+    "https://www.discogs.com/release/24340547",
+    "https://music.apple.com/sg/album/whats-yours-and-mine/1582549301"
+   ],
+   "releaseException": "",
+   "queryAlias": "What's Your And Mine",
+   "uncertain": "盤名 Discogs 作 What's Your And Mine、Apple 作 What's Yours and Mine，取 Apple（官方數位發行）寫法，主線可對封面再核。"
+  },
+  {
+   "artist": "Opposition Party",
+   "album": "Zombified",
+   "year": 2005,
+   "label": "Pulverised Records",
+   "country": "sg",
+   "faction": "sg",
+   "genres": [
+    "rock"
+   ],
+   "why": "放寬條件 1＋2：Opposition Party 是 1987 年由 Francis Frightful 創立的新加坡龐克老團（1990 年卡帶專輯、為邱金海電影《麵條人》配樂），前一輪 notes 列為候選；本作為正規全長專輯，新加坡 Pulverised Records 發行，Apple Music 上架、Discogs 有實體 CD。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/a47ba5ea-2d9a-3bdf-a0c8-433026671f7d",
+    "https://www.discogs.com/master/1361830",
+    "https://www.discogs.com/artist/1413273",
+    "https://music.apple.com/sg/album/zombified/151702007",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music/54/8b/a4/mzi.jdhoqqmr.tif/600x600bb.jpg"
+   ],
+   "mbRgMbid": "a47ba5ea-2d9a-3bdf-a0c8-433026671f7d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "龐克／thrash 跨界（Discogs 稱後期加入金屬元素），屬搖滾範圍；《麵條人》配樂出自 Apple 單曲頁「Mee Pok Man (Original Motion Picture Soundtrack)」。"
+  },
+  {
+   "artist": "I Am David Sparkle",
+   "album": "Swords",
+   "year": 2010,
+   "label": "KittyWu Records",
+   "country": "sg",
+   "faction": "sg",
+   "genres": [
+    "rock"
+   ],
+   "why": "放寬條件 1＋2：I Am David Sparkle 是新加坡後搖代表團（2001 年成軍、2009 年受邀 SXSW、Motorola Super StyleMIX 2007 最佳另類樂團，維基有條目），本作為第二張正規專輯，新加坡獨立廠牌 KittyWu Records 發行，Apple Music 上架。",
+   "evidence": [
+    "https://en.wikipedia.org/wiki/I_Am_David_Sparkle",
+    "https://musicbrainz.org/release-group/361c656f-003b-455a-ac71-1c2dd3ee5cfb",
+    "https://music.apple.com/sg/album/swords/6791117674",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/74/a1/32/74a132c4-6135-2ce2-70c7-5d8afb450668/0013964302493_cover.jpg/600x600bb.jpg"
+   ],
+   "mbRgMbid": "361c656f-003b-455a-ac71-1c2dd3ee5cfb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發日 2013-09-27（數位），維基（引 TODAY 2010-11-25）與 Apple 作 2010，取 2010。"
+  },
+  {
+   "artist": "Stompin' Ground",
+   "album": "Measured by the Richter Scale",
+   "year": 1995,
+   "label": "Pony Canyon (Singapore)",
+   "country": "sg",
+   "faction": "sg",
+   "genres": [
+    "rock"
+   ],
+   "why": "放寬條件 1＋2：Stompin' Ground 1988 年成軍，Bandwagon 稱其「無疑是新加坡硬蕊場景的開山團之一」、本地硬蕊圈的「forefathers」（吉他手 Suhaimi Subandie 為「Lion City Hardcore」命名者，曾為 Fugazi、Rollins Band 暖場）；本作為兩張全長之一，Pony Canyon 新加坡分公司發行 CD、馬來西亞卡帶。前一輪 notes 列為候選。",
+   "evidence": [
+    "https://www.discogs.com/master/2738420",
+    "https://www.discogs.com/release/2239436",
+    "https://sg.bandwagon.asia/articles/8-hardcore-bands-to-know",
+    "https://sg.bandwagon.asia/articles/hafidz-samsudin-singaporean-hardcore-pioneer-stompin-ground-vocalist-passes-at-50",
+    "https://i.discogs.com/a6PnxVRFg8HUYj_pJbIcPQwOxu09uerehKH-T6tEwBY/rs:fit/g:sm/q:90/h:542/w:550/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMzk0/MzYtMTQxMDAwNjQ0/MC05MzY3LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "https://musicbrainz.org/ws/2/release-group?query=artist:\"Stompin' Ground\"&fmt=json（藝人方向）",
+     "https://musicbrainz.org/ws/2/release-group?query=artist:\"Stompin' Ground\" AND releasegroup:\"Measured by the Richter Scale\"&fmt=json（作品方向）"
+    ],
+    "checkedAt": "2026-10-21",
+    "conclusion": "藝人方向 count=0（MB 無此新加坡團），作品方向 count=0"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/2738420",
+    "https://www.discogs.com/release/2239436",
+    "https://sg.bandwagon.asia/articles/8-hardcore-bands-to-know"
+   ],
+   "releaseException": "",
+   "queryAlias": "Stompin Ground",
+   "uncertain": "Apple Music 新加坡區查無本作（同名 Stompin' Ground《Two Weeks》2001 疑為他團，未採）；封面取 Discogs 圖（SKCS 0001）。另一張全長為 2004 年 Dies Irae《Vector Prime》。"
+  },
+  {
+   "artist": "Plainsunset",
+   "album": "The Gift",
+   "year": 2003,
+   "label": "Wake Me Up Music",
+   "country": "sg",
+   "faction": "sg",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "放寬條件 1＋2：Plainsunset（1996 年成軍、活躍約二十年）被 Bandwagon 稱為「新加坡最長青的 pop punk 樂團之一」；本作是其代表專輯，2014 年辦十週年整張演出並重錄特別版 EP，The Sam Willows、Inch Chua、Nothing To Declare 等本地團翻唱致敬。前一輪 notes 列為候選。",
+   "evidence": [
+    "https://www.discogs.com/release/24571880",
+    "https://www.bandwagon.asia/articles/plainsunset-celebrates-10th-anniversary-of-the-gift",
+    "https://sg.bandwagon.asia/articles/8-pop-punk-bands-singapore",
+    "https://i.discogs.com/_wExlHrWfRUwnIxjt87CW1EqZK2U2x5I1VJSWHnTyH0/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NTcx/ODgwLTE2NjM2NjQ2/MjctMjMyOS5wbmc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "https://musicbrainz.org/ws/2/release-group?query=artist:\"Plainsunset\"&fmt=json（藝人方向）",
+     "https://musicbrainz.org/ws/2/release-group?query=artist:\"Plainsunset\" AND releasegroup:\"The Gift\"&fmt=json（作品方向）"
+    ],
+    "checkedAt": "2026-10-21",
+    "conclusion": "藝人方向 count=0（MB 無此團），作品方向 count=0"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/24571880",
+    "https://www.discogs.com/master/2852638",
+    "https://www.bandwagon.asia/articles/plainsunset-celebrates-10th-anniversary-of-the-gift"
+   ],
+   "releaseException": "",
+   "queryAlias": "Plain Sunset",
+   "uncertain": "Apple 新加坡區只有《Love Songs For the Emotionally Wounded》（Discogs 2001，8 曲）與 2008 同名專輯，無本作，封面取 Discogs 圖；若主線要求 Apple 上架，可改收《Love Songs For the Emotionally Wounded》（https://music.apple.com/sg/album/love-songs-for-the-emotionally-wounded/309362502）。Bandwagon 十週年文發表於 2014-01，與 Discogs 2003 相符。"
+  },
+  {
+   "artist": "Amateur Takes Control",
+   "album": "You, Me and the Things Unsaid",
+   "year": 2008,
+   "label": "KittyWu Records",
+   "country": "sg",
+   "faction": "sg",
+   "genres": [
+    "rock"
+   ],
+   "why": "放寬條件 1＋2：Amateur Takes Control（2006 年由 Adel Rashid 創立的五人器樂搖滾團，新加坡後搖場景代表之一）的首張正規專輯，新加坡獨立廠牌 KittyWu Records 發行（KWR003），Apple Music 上架、Discogs 有 CD。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d081434e-d7a0-36d4-bfd6-9972e43ba3a5",
+    "https://www.discogs.com/release/1729593",
+    "https://www.discogs.com/artist/1423332",
+    "https://music.apple.com/sg/album/you-me-and-the-things-unsaid/6790659496",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/ff/e6/83ffe6d4-292f-74d5-dcd7-18f4d67935b6/0689076036306_cover.jpg/600x600bb.jpg"
+   ],
+   "mbRgMbid": "d081434e-d7a0-36d4-bfd6-9972e43ba3a5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "ATC",
+   "uncertain": "維基無條目（en 頁 429 未能確認），代表性依 Discogs 傳記與 KittyWu 廠牌；偏弱，主線可汰。"
+  },
+  {
+   "artist": "Rudra",
+   "album": "Kurukshetra",
+   "year": 2003,
+   "label": "",
+   "country": "sg",
+   "faction": "sg",
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "why": "放寬條件 1：Rudra 是 1992 年成軍的新加坡「吠陀金屬」先驅（維基有條目，三度擔任 Baybeats 頭牌，罕見的極端金屬團頭牌非金屬音樂節），池中已有《The Aryan Crusade》《Enemy of Duality》；本作為第三張正規專輯，以《摩訶婆羅多》俱盧之野戰場為題，2015 年再發重製版。",
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Rudra_(band)",
+    "https://musicbrainz.org/release-group/a8ba25ef-9156-35cb-99ec-f5b8cb1c3bcf",
+    "https://www.metal-archives.com/reviews/Rudra/Kurukshetra/23001/",
+    "https://music.apple.com/sg/album/kurukshetra/1646226742",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/e9/28/b8/e928b8fb-0e4a-9399-9f65-b3055476eb30/5063011686897_cover.jpg/600x600bb.jpg"
+   ],
+   "mbRgMbid": "a8ba25ef-9156-35cb-99ec-f5b8cb1c3bcf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB release（2003 SG）無廠牌資料，label 留空；Apple 版權行 ℗ 2003 Rudra。"
+  },
+  {
+   "artist": "Rudra",
+   "album": "Brahmavidya: Primordial I",
+   "year": 2005,
+   "label": "Demonzend Records",
+   "country": "sg",
+   "faction": "sg",
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "why": "放寬條件 1：Rudra《Brahmavidya》三部曲首章，維基稱黑金屬成分加重、錄音更密、編制更進一步，並憑此片 2007 年赴美巡演；新加坡吠陀金屬代表團的正規專輯。",
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Rudra_(band)",
+    "https://musicbrainz.org/release-group/c3d6d75f-896f-3d5e-95a2-4ef906966e5b",
+    "https://music.apple.com/sg/album/brahmavidya-primordial-i/1668125072",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/f3/f8/4b/f3f84bc5-82ab-326c-dd1f-4f40b5f72a5b/5063212608117_cover.jpg/600x600bb.jpg"
+   ],
+   "mbRgMbid": "c3d6d75f-896f-3d5e-95a2-4ef906966e5b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Brahmavidya: Primordial 1",
+   "uncertain": "MB 盤名作「Primordial 1」，但維基、Apple 與三部曲另兩張（MB 作 Transcendental I／Immortal I）皆用羅馬數字 I，取 I。MB 唯一 release 為 2005-03 馬來西亞 Demonzend Records DZ002。"
+  },
+  {
+   "artist": "Marijannah",
+   "album": "Istanah",
+   "year": 2019,
+   "label": "self-released",
+   "country": "sg",
+   "faction": "sg",
+   "genres": [
+    "rock"
+   ],
+   "why": "放寬條件 1＋2：Marijannah 是 Wormrot 吉他手 Rasyid 組的新加坡 stoner／doom 團（前作《Till Marijannah》登 Bandwagon 2018 新加坡年度榜第 1，但 MB 標 EP、ts9 已刪）；本作是 MB 標 Album 的首張全長（6 曲約 40 分鐘），Apple Music 上架，2020 年另出 Projector 現場版。前一輪 notes 列為候選。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/75301200-44a4-4423-84c0-d6979a681a55",
+    "https://music.apple.com/sg/album/istanah/1489060815",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/1d/58/73/1d587367-0717-8ee0-1bc9-ae54b3de13e6/artwork.jpg/600x600bb.jpg",
+    "https://sg.bandwagon.asia/articles/best-singaporean-music-releases-2018"
+   ],
+   "mbRgMbid": "75301200-44a4-4423-84c0-d6979a681a55",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無封面（307 轉址但未確認檔案），封面以 Apple 圖為準。Bandwagon 2018 榜是前作的成績，不可寫到本張。"
+  },
+  {
+   "artist": "Forests",
+   "album": "Get In Losers, We're Going to Eternal Damnation",
+   "year": 2022,
+   "label": "Dog Knights Productions / Sweetness Follows",
+   "country": "sg",
+   "faction": "sg",
+   "genres": [
+    "rock"
+   ],
+   "why": "放寬條件 1＋2：Forests 是新加坡 emo／math rock 代表團（池中已有《Spending Eternity in a Japanese Convenience Store》，2023 年上 Audiotree Live）；本作為第三張正規專輯，英國 Dog Knights Productions 與 Sweetness Follows 聯合發行，Apple Music 上架。前一輪 notes 列為候選。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/c36ec0cd-2320-42db-8340-be3ad663100c",
+    "https://music.apple.com/sg/album/get-in-losers-were-going-to-eternal-damnation/1621418102",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/93/39/cd/9339cd90-26fc-359b-9c36-76ecb63e1c22/artwork.jpg/600x600bb.jpg"
+   ],
+   "mbRgMbid": "c36ec0cd-2320-42db-8340-be3ad663100c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Get In Losers, We’re Going to Eternal Damnation",
+   "uncertain": "盤名撇號改 ASCII（MB／Apple 用 U+2019）。9 曲約 34 分鐘，MB 標 Album。"
+  },
+  {
+   "artist": "Sweet Charity",
+   "album": "Sejuta Wajah",
+   "year": 1981,
+   "label": "WEA Malaysia",
+   "country": "sg",
+   "faction": "sg",
+   "genres": [
+    "rock"
+   ],
+   "why": "放寬條件 3（ts9 主線 10353 因專輯級好評唯一來源是轉抄部落格而刪）＋條件 2：Sweet Charity 是新加坡馬來搖滾（rock kapak 先驅）代表團，池中已有三張；本作為 WEA 馬來西亞發行（M 93459）的正規專輯，Apple Music 上架、MB 有兩個版本。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/5e0d3374-9bfe-4855-97e3-d18ebd80d5d1",
+    "https://en.wikipedia.org/wiki/Sweet_Charity_(band)",
+    "https://music.apple.com/sg/album/sejuta-wajah/1101793487",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music49/v4/74/b7/43/74b743f5-953f-70bb-710a-9124a8095ef6/825646028085.jpg/600x600bb.jpg"
+   ],
+   "mbRgMbid": "5e0d3374-9bfe-4855-97e3-d18ebd80d5d1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "研究層 ts9 10316 已查：多數曲目非團員所寫，維基那句影響力敘述抄自 2009 部落格，寫作層不可引。Apple 日期 2004 為數位再發，原盤 1981（MB）。"
+  }
+ ],
+ "notes": [
+  "共 13 張，全新加坡（sg）。提名目標 11，多 2 張給主線汰換。新加坡現況池 41＋本輪 13＝54；汰到 9 張即 50。",
+  "身分：MB 釘住 9 張（Electrico《So Much More Inside》、Opposition Party《Zombified》、I Am David Sparkle《Swords》、Amateur Takes Control《You, Me and the Things Unsaid》、Rudra《Kurukshetra》《Brahmavidya: Primordial I》、Marijannah《Istanah》、Forests《Get In Losers…》、Sweet Charity《Sejuta Wajah》）；§1 人工身分 4 張（Electrico《We Satellites》、The Oddfellows《What's Yours and Mine》、Stompin' Ground《Measured by the Richter Scale》、Plainsunset《The Gift》）。",
+  "封面：11 張有 Apple Music 圖；Stompin' Ground、Plainsunset《The Gift》Apple 查無，用 Discogs 圖（網址在 evidence）。",
+  "重提前一輪被刪的 2 張（放寬條件 3）：Electrico《So Much More Inside》（ts9 10354）、Sweet Charity《Sejuta Wajah》（ts9 10353）。研究層禁區照 ts9 rulings 沿用。",
+  "建議汰換順序（弱→強）：Amateur Takes Control（代表性只靠 Discogs 傳記與廠牌）→ Electrico《We Satellites》（維基稱較不成功）→ Sweet Charity《Sejuta Wajah》→ Forests《Get In Losers》→ Opposition Party。",
+  "備選（未提）：Caracal《Bear. Shark. Wolf.》（2011 KittyWu 原版 Discogs 37355631；MB 只有 2013 第二版 rg 240d55b9；Apple 有第二版封面）、Plainsunset《Love Songs For the Emotionally Wounded》（2001，Apple 有）、Plainsunset 同名（2008，Apple 有）、Concave Scream《Erratic》（ts9 刪，Discogs 圖有）與《Horizons》（2006 EMI，Discogs 16175776）、Rudra 其他（Brahmavidya: Transcendental I／Immortal I、RTA、Invoking the Gods、Eight Mahavidyas、Antithesis，皆 MB＋Apple）、Stompin' Ground《Vector Prime》（2004 Dies Irae）、Amateur Takes Control《A Pale Decrepit Dot》（2025）。",
+  "排除：Livonia（新加坡只查到 1999 EP《Zerofeel》，Apple 同名團為他國）、Bellied Star（Apple／MB／Discogs 皆無，找不到封面）、Obedient Wives Club（Apple 全是 EP／單曲）、Typewriter、Cockpit（Apple 只有單曲且為他團／流行）、The Pinholes（只有 EP《D'Antara Kita》與單曲）、Humpback Oak《SideASideB》與 Rusty Blade 其他（Apple 查無、封面來源未找到）。",
+  "去重：13 張皆以 seed_cards.json 指令跑過，輸出 0。",
+  "預算：WebSearch 用 2 次（上限 3）。en.wikipedia 本工作階段 429 限流，只取到 Electrico、I Am David Sparkle、Rudra 三頁 raw；其餘走 MB API、iTunes Search／Lookup、Discogs API、WebFetch Bandwagon。"
+ ]
+}
