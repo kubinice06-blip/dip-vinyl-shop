@@ -1,0 +1,7 @@
+{
+ "_note": "主線審稿覆寫（2026-10-15）：關鍵字掃理由與分數矛盾 49 張，逐張判後只改 4 張質地低估；其餘是情緒義的「沉重」、酸性 house 的「催眠」、Pole 的「爆裂」雜訊等字面誤報。merge.mjs 會套用並保留原值於 orig。",
+ "emil gilels|beethoven: waldstein - appassionata": { "y": -0.3, "note": "理由「快速強奏、低音區轟鳴、激烈」，獨奏鋼琴給 −1.0 太輕" },
+ "mccoy tyner|revelations": { "y": -0.2, "note": "理由「四度和聲厚實滾動、力道強」，−0.6 低估" },
+ "weyes blood|and in the darkness, hearts aglow": { "y": 0.0, "note": "理由「弦樂鋼琴慢速厚實」，−0.6 低估；仍留輕側" },
+ "gas|pop": { "y": 0.8, "note": "理由寫「輕柔脈動、比其他 Gas 明亮」卻給 1.4（與 Zauberberg 同級），收到 0.8，仍在重側" }
+}

@@ -1,0 +1,8 @@
+{
+ "_note": "主線審稿覆寫（2026-10-15）：只改理由與分數自相矛盾、或明顯低估質地的卡。merge.mjs 會套用並保留原值於 orig。",
+ "john coltrane|\"live\" at the village vanguard": { "y": 0.8, "z": 0.0, "note": "理由寫「灼熱」卻給 −0.2；Coltrane＋Elvin Jones 密度與厚度都高，質地 0.4 低估" },
+ "james brown|the payback": { "y": 0.8, "z": 0.2, "note": "理由「貝斯厚、陰沉強硬」，質地 0.4 低估、色溫 0.6 偏暖" },
+ "the rolling stones|let it bleed": { "y": 0.7, "note": "理由「粗糙吉他、泥濘」，質地 0.4 低估；Stones 這期本來就厚" },
+ "the art of noise|(who's afraid of) the art of noise?": { "y": 0.7, "note": "理由「取樣鼓擊厚重切片」，質地 0.4 低估" },
+ "max romeo & the upsetters|war ina babylon": { "z": 0.4, "note": "Black Ark 霧狀低頻、理由寫陰鬱，色溫 0.7 略高，收到 0.4（roots reggae 仍偏暖）" }
+}
