@@ -6,7 +6,7 @@
  * （tune/tile-*.png）照圓柱投影取樣捲動。星圖用 Three.js（r128，與 starmap-lab 同版）。
  *
  * 用法（index.html 接線）：
- *   DipTune.configure({ host, loadCardPool, onResult, onBack, player, cardIdOf, cssVar });
+ *   DipTune.configure({ host, loadCardPool, onResult, onBack, player, cardIdOf, onFirstGesture, onGesture, resolveCover });
  *   DipTune.start();     // 進入分頁時呼叫；再次呼叫只會重新顯示，不重建
  *   DipTune.stop();      // 離開分頁：停試聽、停音效
  *   DipTune.pickAgain(); // 結果頁「同頻率再抽一張」：在目前頻率附近加權隨機
@@ -277,9 +277,9 @@
     if (tile) tile.addEventListener('load', draw);
     let drag = null;
     const setV = nv => { const v0 = state.p[axis]; state.p[axis] = Math.max(0, Math.min(100, nv)); node.setAttribute('aria-valuenow', Math.round(state.p[axis])); draw(); sweep(axis, v0, state.p[axis]); scheduleUpdate(); };
-    node.addEventListener('pointerdown', e => { drag = { y: e.clientY, v: state.p[axis] }; node.setPointerCapture(e.pointerId); e.preventDefault(); ensureAudio(); });
+    node.addEventListener('pointerdown', e => { drag = { y: e.clientY, v: state.p[axis] }; node.setPointerCapture(e.pointerId); e.preventDefault(); ensureAudio(); cfg.onGesture?.(); });
     node.addEventListener('pointermove', e => { if (!drag) return; const dy = e.clientY - drag.y; setV(drag.v + dy * (state.fine ? 0.05 : 0.2)); });
-    const end = () => { drag = null; }; node.addEventListener('pointerup', end); node.addEventListener('pointercancel', end);
+    const end = () => { drag = null; cfg.onGesture?.(); }; node.addEventListener('pointerup', end); node.addEventListener('pointercancel', () => { drag = null; });
     node.addEventListener('wheel', e => { e.preventDefault(); ensureAudio(); setV(state.p[axis] - Math.sign(e.deltaY) * (state.fine ? 0.25 : 1)); }, { passive: false });
     node.addEventListener('keydown', e => { const step = e.shiftKey ? 10 : 1; if (e.key === 'ArrowUp' || e.key === 'ArrowRight') { setV(state.p[axis] + step); e.preventDefault(); } if (e.key === 'ArrowDown' || e.key === 'ArrowLeft') { setV(state.p[axis] - step); e.preventDefault(); } });
     new ResizeObserver(size).observe(node); size();
@@ -305,24 +305,40 @@
     const card = c.card; const cover = card.coverUrl || '';
     el.now.hidden = false;
     el.now.innerHTML = `${cover ? `<img src="${esc(cover)}" alt="" referrerpolicy="no-referrer">` : `<div class="ph">♪</div>`}<div class="t"><div class="a">${esc(card.artist)}</div><div class="b">${esc(card.album)}</div><span class="c" style="--cc:${CELL_COLOR[c.cell]}"><i></i>${NAMES[c.cell]}<span class="np" id="tuneNp"></span></span></div><i class="dot"></i>`;
-    // 封面：卡池裡沒帶，交給呼叫端查（card_catalog／worker），查到再補上
-    if (!cover && cfg.resolveCover) cfg.resolveCover(card).then(url => { if (url && previewCard === c) { card.coverUrl = url; const img = el.now.querySelector('.ph'); if (img) img.outerHTML = `<img src="${esc(url)}" alt="" referrerpolicy="no-referrer">`; } }).catch(() => {});
+  }
+  // 封面：卡池裡沒帶，停下來那一張才交給呼叫端查（card_catalog／worker），查過就記住；掃過去的不查
+  function settleCover(c) {
+    const card = c.card; if (card.coverUrl || c.coverTried || !cfg.resolveCover) return; c.coverTried = true;
+    cfg.resolveCover(card).then(url => { if (url && previewCard === c) { card.coverUrl = url; const ph = el.now.querySelector('.ph'); if (ph) ph.outerHTML = `<img src="${esc(url)}" alt="" referrerpolicy="no-referrer">`; } }).catch(() => {});
   }
 
   // ── 試聽：停下來 0.7 秒就播站上的固定試聽（電台式硬切，不淡入淡出；轉動就停） ──
   let playing = null;
   function stopPreview() { clearTimeout(idleTimer); if (!playing) return; playing = null; try { cfg.player?.stop?.(); } catch (_) {} setNowPlaying(false); }
-  function armPreview() { clearTimeout(idleTimer); if (!state.audioOn) return; idleTimer = setTimeout(playPreview, 700); }
+  function armPreview() { clearTimeout(idleTimer); idleTimer = setTimeout(() => { if (previewCard) settleCover(previewCard); if (state.audioOn) playPreview(); }, 700); }
   function playPreview() {
     const c = previewCard; if (!c || !state.audioOn || !cfg.player) return;
     const card = c.card;
     if (card.previewUnavailable) { setNowPlaying(false, '這張沒有試聽'); return; }
-    playing = c;
+    playing = c; watchPlayer(); setNowPlaying(false, '找試聽中');
     Promise.resolve(cfg.player.playAlbum({ artist: card.artist, album: card.album, prefer: 'itunes', previewUrl: card.previewUrl || '', fixedOnly: !!card.previewUrl || !!card.previewUnavailable, cover: card.coverUrl || '', auto: true }))
-      .then(ok => { if (playing !== c) return; setNowPlaying(!!ok, ok ? '' : '沒有試聽'); if (!ok) playing = null; })
-      .catch(() => { if (playing === c) { playing = null; setNowPlaying(false, '沒有試聽'); } });
+      .then(ok => { if (playing !== c) return; if (ok) setNowPlaying(true); else { playing = null; const code = cfg.player.debugState?.().code || ''; setNowPlaying(false, code === 'NO-AUTOPLAY' ? '再碰一下輪子開聲音' : '這張沒有試聽'); } })
+      .catch(() => { if (playing === c) { playing = null; setNowPlaying(false, '這張沒有試聽'); } });
   }
   function setNowPlaying(on, msg) { const n = document.getElementById('tuneNp'); if (!n) return; n.classList.toggle('on', !!on); n.innerHTML = on ? '<i></i><i></i><i></i>' : (msg ? '· ' + msg : ''); }
+  // 播放器的狀態回報：只看目前這張，把 loading／error 的原因寫在小卡上
+  let unsubState = null;
+  function watchPlayer() {
+    if (unsubState || !cfg.player?.onStateChange) return;
+    unsubState = cfg.player.onStateChange(st => {
+      const c = playing; if (!c) return;
+      const card = c.card; if (!st || st.artist !== card.artist || st.album !== card.album) return;
+      if (st.status === 'loading') setNowPlaying(false, '找試聽中');
+      else if (st.status === 'playing') setNowPlaying(true);
+      else if (st.status === 'error') { playing = null; setNowPlaying(false, '這張沒有試聽'); }
+      else if (st.status === 'stopped' && st.code === 'NO-AUTOPLAY') { playing = null; setNowPlaying(false, '再碰一下輪子開聲音'); }
+    });
+  }
 
   // ── 調頻音效：粉紅雜訊過帶通（轉越快越響、越亮）＋ 跟著位置滑的嘯聲，全部現場合成 ──
   let AC = null, bp = null, noiseGain = null, whistle = null, whistleGain = null, sfxTimer = 0, unlocked = false;

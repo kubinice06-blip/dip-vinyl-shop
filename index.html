@@ -1070,7 +1070,7 @@
 <script src="dip-player.js?v=49"></script>
 <script src="dip-draw-anim.js?v=4"></script>
 <script src="dip-genre-tree.js?v=5"></script>
-<script src="dip-tune.js?v=3"></script>
+<script src="dip-tune.js?v=5"></script>
 <script src="dip-artist-intro.js?v=2"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -5568,8 +5568,10 @@ ${seenList}
 
   // 專輯簡介一律用現成資料，不再現場請 AI 寫：
   // 後台校正 > 殿堂神作人工簡介 > 店家/IG 自寫介紹 > /album-desc（KV 預生成、與卡片詳情同一套）
+  let _descSeq = 0;
   async function fillGpDesc(card, ov, presetDesc = '') {
     const el = document.querySelector('#' + gpResultHost + ' .quiz-result-reason');
+    const mine = ++_descSeq;
     let desc = (await shopDescOf(card.artist, card.album)) || (ov?.desc || '').trim() || (neoclassicOf(card)?.desc || '') || (presetDesc || '').trim();
     for (let attempt = 0; attempt < 2 && !desc; attempt++) {
       try {
@@ -5577,7 +5579,8 @@ ${seenList}
         if (res.ok) desc = ((await res.json()).desc || '').trim();
       } catch (e) {}
     }
-    if (el) el.textContent = desc || '（暫無介紹）';
+    // 慢回來的舊介紹不能蓋掉已換成新卡的結果頁（連抽兩張時玩家會看到上一張的介紹）
+    if (el && mine === _descSeq && el.isConnected) el.textContent = desc || '（暫無介紹）';
     return desc;
   }
 
@@ -5852,8 +5855,11 @@ ${seenList}
     loadCardPool: loadGamePool,
     cardIdOf,
     player: window.DipPlayer,
-    // 第一次碰輪子＝使用者明確要出聲：武裝播放器並授權這次造訪的自動試聽（停下來就播電台）
-    onFirstGesture: () => gpEnsurePlayer({ grant: true }),
+    // 第一次碰輪子＝使用者明確要出聲：武裝播放器並授權這次造訪的自動試聽（停下來就播電台）。
+    // 之後每次按下／放開輪子都再武裝一次並拉長 keep-alive：iOS 的 audio session 8 秒內沒真的播就放掉，
+    // 轉久了才停下來會變成「沒有試聽」。
+    onFirstGesture: () => gpEnsurePlayer({ grant: true, hold: 30000 }),
+    onGesture: () => gpEnsurePlayer({ grant: true, hold: 30000 }),
     resolveCover: async (card) => (await resolveCardAssets(card.artist, card.album)).coverUrl || '',
     onBack: () => setActiveTab(SHOP_MODE ? 'shop' : 'find'),
     onResult: async ({ card, cell, cellName, targetCellName }) => {
@@ -5861,12 +5867,18 @@ ${seenList}
       gpStopPreview();
       tuneShowApp(false);
       window.scrollTo(0, 0);
+      const seq = ++_tuneSeq;
+      const host = document.getElementById('tuneContent');
+      host.innerHTML = `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">${card.artist}《${card.album}》…</div></div>`;
       const st = window.DipPreviewStatus?.[cardIdOf(card.artist, card.album)] || '';
       if (st !== 'unavailable' && st !== 'disabled') {
         gpEnsurePlayer();
         void window.DipPlayer?.warmAlbum?.({ artist: card.artist, album: card.album });
       }
-      const assets = await resolveCardAssets(card.artist, card.album);
+      let assets;
+      try { assets = await resolveCardAssets(card.artist, card.album); }
+      catch (e) { assets = { ov: null, coverUrl: '', spotifyUrl: '', bandcampUrl: '', ytUrl: '', previewUrl: '', previewUnavailable: false }; }
+      if (seq !== _tuneSeq) return;   // 這段期間又抽了一張，舊的不要畫
       const ratings = (card.classic && !card.tier) ? {
         classic: assets.ov?.classic || card.classic,
         obscurity: assets.ov?.obscurity || card.obscurity,
@@ -5881,6 +5893,7 @@ ${seenList}
         _matchNote: note, _mode: 'tune', _streaming: true,
       });
       const reason = await fillGpDesc(card, assets.ov);
+      if (seq !== _tuneSeq) return;
       lastGpResult.reason = reason;
       recordDrawnCard(lastGpResult);
       if (reason) _saveReasonWords(reason);
@@ -5888,6 +5901,7 @@ ${seenList}
         .then(() => renderHistorySection(document.getElementById('tuneContent')));
     },
   });
+  let _tuneSeq = 0;
   document.getElementById('tuneModal').addEventListener('click', (e) => {
     if (e.target.closest('[data-tune-again]')) { gpStopPreview(); DipTune.pickAgain(); }
     else if (e.target.closest('[data-tune-back]')) { gpStopPreview(); tuneShowApp(true); DipTune.start(); }
