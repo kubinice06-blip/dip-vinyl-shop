@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-21｜dip-vinyl-shop｜頻率選歌：玩家回報三件（就這張空白、上一張的介紹、缺 Spotify）同一個根源
+
+- **根源**：掃描時每閃過一張就呼叫 `resolveCardAssets`（2 次 Firestore 讀＋worker `/spotify-search`）查封面，轉幾圈就是幾百次；worker 與 Firestore 被打爆後，結果頁的封面／Spotify 連結查不到、`resolveCardAssets` 慢到玩家只看到空白（我把主機層先藏了、結果層還沒畫）。
+- **改動**：`dip-tune.js` 掃過去的不查封面，停下來那一張（與試聽同一個 0.7 秒 idle）才查、查過記住；`index.html` 的 onResult 先放載入畫面、包 try/catch、以序號擋掉「期間又抽了一張」；`fillGpDesc` 寫 DOM 前確認還是同一張（連抽時慢回來的舊介紹不蓋新卡，類型挑片也受惠）。`dip-tune.js?v=5`。
+- **主要檔案**：`dip-tune.js`、`index.html`
+- **驗證**：本機 Playwright `/#tune` 桌機與手機：就這張→結果頁→同頻率再抽一張連按，0 錯誤。
+
 ### 2026-10-21｜dip-vinyl-shop｜頻率選歌：時好時壞的「沒有試聽」——每次碰輪子都重新武裝播放器
 
 - **改動**：店主回報停下來常顯示「沒有試聽」、有時又有。原因：播放器只在第一次碰輪子時武裝（`gpEnsurePlayer({grant:true})`），而 `primePreviewFromGesture` 的 keep-alive 8 秒內沒真的播就放掉 audio session；玩家轉了一陣子才停，timer 觸發的 `playAlbum` 在 iOS 上就起不來，回報失敗被當成沒試聽。改成每次按下／放開輪子都 `gpEnsurePlayer({grant:true, hold:30000})`（`onGesture`），小卡改照播放器狀態顯示「找試聽中／這張沒有試聽／再碰一下輪子開聲音」（`onStateChange`＋`debugState().code`）。`dip-tune.js?v=4`。
