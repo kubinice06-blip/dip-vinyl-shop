@@ -1,0 +1,406 @@
+/* 調頻 —— 三顆輪子各轉一軸（能量／質地／色溫），轉過去的唱片一張張閃過，停下來鎖定一張。
+ *
+ * 資料：data/mood/card-moods.json（scripts/build-card-moods.mjs 產生，依 seed_cards.json 順序存
+ * [x, y, z, 把握]）＋ seed_cards.json（對 id；瀏覽器快取裡已有）。面板外殼是店主的像素稿
+ * tune/panel.jpg，滾筒、輪子、開關、按鍵是疊在上面的活件；輪子的滾花拿稿子裡的銅帶
+ * （tune/tile-*.png）照圓柱投影取樣捲動。星圖用 Three.js（r128，與 starmap-lab 同版）。
+ *
+ * 用法（index.html 接線）：
+ *   DipTune.configure({ host, loadCardPool, onResult, onBack, player, cardIdOf, cssVar });
+ *   DipTune.start();     // 進入分頁時呼叫；再次呼叫只會重新顯示，不重建
+ *   DipTune.stop();      // 離開分頁：停試聽、停音效
+ *   DipTune.pickAgain(); // 結果頁「同頻率再抽一張」：在目前頻率附近加權隨機
+ *
+ * onResult 收到 { card, cell, cellName, coords }，由呼叫端沿用既有結果頁（showGpResult），本模組不碰那段。
+ * 抽卡層平均（MOOD_SCALE_PLAN §2.2）：掃描在百分位空間找卡（每一區密度一樣），不動任何卡的屬性。
+ */
+(function (global) {
+  'use strict';
+
+  let cfg = { host: null, loadCardPool: null, onResult: null, onBack: null, player: null, cardIdOf: null };
+  const ORDER = ['calm', 'still', 'languid', 'decay', 'lift', 'crisp', 'boil', 'charge'];
+  const CELL_COLOR = { calm: '#c9a24a', still: '#3f8f9b', languid: '#b5522e', decay: '#6b4aa8', lift: '#ffd166', crisp: '#5ee6f0', boil: '#ff6b35', charge: '#9b6bff' };
+  const AX = { x: '#f2b341', y: '#8fe0a0', z: '#ff7a6b', cold: '#a08cff' };
+  const SIGMA = [0.2, 0.2, 0.3], FLOOR = 0.02, SWEEP_R = 10;   // 距離權重與掃描半徑（MOOD_LAUNCH_PLAN §4.2，σ 0.35 太寬，實測改 0.2）
+  const idOf = (a, b) => (cfg.cardIdOf ? cfg.cardIdOf(a, b) : ((a || '') + '|' + (b || '')).toLowerCase().replace(/\//g, '-').trim());
+
+  function configure(next) { cfg = Object.assign(cfg, next); }
+
+  // ── 狀態 ──────────────────────────────────────────────────────────
+  const state = { p: { x: 25, y: 50, z: 50 }, fine: false, seen: [], audioOn: true, built: false, visible: false };
+  let DATA = null, CARDS = null, N = 0, T = null, BR = null, NAMES = null;
+  let previewCard = null, litIdx = -1, idleTimer = 0, lastTurn = 0;
+  let scene, camera, renderer, controls, geo, col, base, sizeAttr, pmat, marker, PX, PY, PZ, THREE_OK = false;
+  let el = {}; // DOM refs
+  let WX, WY, WZ, raf = 0;
+
+  // ── 資料 ──────────────────────────────────────────────────────────
+  let dataPromise = null;
+  function loadData() {
+    if (!dataPromise) {
+      dataPromise = Promise.all([
+        fetch('data/mood/card-moods.json').then(r => { if (!r.ok) throw new Error('情緒座標載入失敗'); return r.json(); }),
+        fetch('seed_cards.json').then(r => { if (!r.ok) throw new Error('卡池載入失敗'); return r.json(); }),
+        cfg.loadCardPool(),
+      ]).then(([moods, seed, pool]) => {
+        // 前台檔依 seed 順序綁定：張數、第一張、最後一張 id 都要對，否則整檔失效
+        const s = moods._seed || {};
+        if (s.count !== seed.length || s.head !== idOf(seed[0][0], seed[0][1]) || s.tail !== idOf(seed[seed.length - 1][0], seed[seed.length - 1][1])) {
+          throw new Error('情緒座標與卡池版本不一致，資料更新中');
+        }
+        const byId = new Map();
+        seed.forEach((row, i) => { const m = moods.cards[i]; if (m) byId.set(idOf(row[0], row[1]), m); });
+        return { moods, byId, pool };
+      }).catch(e => { dataPromise = null; throw e; });
+    }
+    return dataPromise;
+  }
+
+  function pOf(axis, v) { const b = BR[axis]; let lo = 0, hi = 100; while (lo < hi) { const m = (lo + hi) >> 1; if (b[m] < v) lo = m + 1; else hi = m; } let hi2 = lo; while (hi2 < 100 && b[hi2 + 1] === b[lo]) hi2++; return (lo + hi2) / 2; }
+  const rawOf = (axis, p) => { p = Math.max(0, Math.min(100, p)); const i = Math.floor(p), f = p - i; const b = BR[axis]; return i >= 100 ? b[100] : b[i] + (b[i + 1] - b[i]) * f; };
+  // 同一個原始值在百分位表上是一段平台（例如能量 3.0 佔 p42–49）；把同值的卡依固定亂數均勻鋪在這段平台上，
+  // 轉輪子時才會一張接一張掃過去，而不是幾百張疊在同一點
+  function pSpread(axis, v, u) { const b = BR[axis]; let lo = 0, hi = 100; while (lo < hi) { const m = (lo + hi) >> 1; if (b[m] < v) lo = m + 1; else hi = m; } let hi2 = lo; while (hi2 < 100 && b[hi2 + 1] === b[lo]) hi2++; const w = Math.max(1, hi2 - lo); return lo - 0.5 + (w + 1) * u; }
+  const hashU = (i, m, k) => ((i * m) % k) / k;
+  const cellOf = (x, y, z) => (x >= T.x ? (y >= T.y ? (z >= T.z ? 'boil' : 'charge') : (z >= T.z ? 'lift' : 'crisp')) : (y >= T.y ? (z >= T.z ? 'languid' : 'decay') : (z >= T.z ? 'calm' : 'still')));
+  const target = () => ({ x: rawOf('x', state.p.x), y: rawOf('y', state.p.y), z: rawOf('z', state.p.z) });
+
+  function buildCards({ moods, byId, pool }) {
+    DATA = moods; T = moods.thresholds; BR = moods.breaks; NAMES = moods.names;
+    CARDS = [];
+    for (const c of pool.cards) {
+      const m = byId.get(idOf(c.artist, c.album));
+      if (!m) continue;
+      const i = CARDS.length;
+      CARDS.push({ i, card: c, x: m[0], y: m[1], z: m[2], conf: m[3], cell: cellOf(m[0], m[1], m[2]),
+        px: pSpread('x', m[0], hashU(i, 7919, 997)), py: pSpread('y', m[1], hashU(i, 104729, 991)), pz: pSpread('z', m[2], hashU(i, 1299709, 983)) });
+    }
+    N = CARDS.length;
+  }
+
+  // ── 畫面 ──────────────────────────────────────────────────────────
+  const CSS = `
+.tune-app{--pix:'DotGothic16','Space Mono',monospace;position:relative;display:grid;grid-template-columns:1fr;grid-template-rows:clamp(300px,54dvh,720px) auto;width:100%;max-width:720px;margin:0 auto;min-height:100dvh;background:#0b0c10;color:#e9e2c8;font-family:var(--pix);font-size:11px;letter-spacing:.04em}
+/* 轉成橫向（手機側放、矮視窗）才左右並排 */
+@media (orientation:landscape) and (max-height:600px){.tune-app{grid-template-columns:minmax(0,1fr) clamp(300px,calc((100dvh - 24px) * 1438 / 1608),48vw);grid-template-rows:minmax(0,1fr);max-width:none;height:100dvh;min-height:0;overflow:hidden}}
+.tune-stage{position:relative;min-width:0;min-height:0;background:#060609;overflow:hidden}
+.tune-stage canvas{display:block;width:100%;height:100%;touch-action:none}
+.tune-stage .tune-hint{position:absolute;left:12px;bottom:10px;font-size:9px;letter-spacing:.14em;color:#777;pointer-events:none}
+.tune-hud{position:absolute;left:10px;top:10px;display:flex;flex-direction:column;gap:6px;align-items:flex-start;max-width:55%}
+.tune-readout{display:flex;gap:6px;align-items:center;padding:2px 6px;border:1px solid rgba(233,226,200,.2);background:rgba(10,12,9,.16);font-size:10px;line-height:1.3;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tune-readout b{color:var(--c);text-shadow:0 0 5px var(--c);font-weight:400;display:inline-block;min-width:2.9em;text-align:right}
+.tune-readout span+span{border-left:1px solid rgba(233,226,200,.18);padding-left:6px}
+.tune-spk,.tune-back{height:24px;padding:2px 6px;border:1px solid rgba(233,226,200,.2);background:rgba(10,12,9,.16);color:#e9e2c8;font-family:var(--pix);font-size:10px;cursor:pointer;display:inline-flex;align-items:center;gap:4px}
+.tune-spk{width:24px;padding:2px}
+.tune-spk svg{display:block}.tune-spk .b{fill:#e9e2c8}.tune-spk .w{fill:#ffd166}.tune-spk .o{fill:#ff6a3d;display:none}
+.tune-spk[aria-pressed="false"] .w{display:none}.tune-spk[aria-pressed="false"] .o{display:block}.tune-spk[aria-pressed="false"] .b{fill:#8d9478}
+.tune-now{position:absolute;right:10px;top:10px;display:flex;align-items:center;gap:8px;max-width:min(240px,calc(100% - 20px));padding:4px 8px 4px 4px;border:1px solid rgba(233,226,200,.2);background:rgba(10,12,9,.16);color:#e9e2c8;font-family:var(--pix);font-size:11px;text-align:left;cursor:pointer}
+.tune-now:hover{border-color:#ffd166;background:rgba(10,12,9,.4)}
+.tune-now img,.tune-now .ph{width:34px;height:34px;object-fit:cover;background:rgba(27,30,24,.4);flex:none;display:grid;place-items:center;color:#6a7058;font-size:11px;opacity:.85}
+.tune-now .t{min-width:0;display:grid;gap:0}
+.tune-now .a{font-size:9px;color:#b5bb9f;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tune-now .b{font-size:11px;line-height:1.3;color:#fff3c8;text-shadow:0 0 6px rgba(255,220,150,.5);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tune-now .c{display:inline-flex;align-items:center;gap:4px;font-size:9px;letter-spacing:.08em;color:var(--cc);text-shadow:0 0 5px var(--cc);white-space:nowrap;min-width:0}
+.tune-now .c i{width:5px;height:5px;background:var(--cc);box-shadow:0 0 5px var(--cc)}
+.tune-now .np{display:inline-flex;align-items:center;gap:3px;font-size:8px;color:#9aa088;margin-left:6px;text-shadow:none;letter-spacing:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:110px}
+.tune-now .np.on{color:#ffd166}
+.tune-now .np i{display:inline-block;width:3px;height:8px;background:#ff6a3d;animation:tuneEq .6s steps(3) infinite alternate}
+.tune-now .np i:nth-child(2){animation-delay:.2s}.tune-now .np i:nth-child(3){animation-delay:.4s}
+@keyframes tuneEq{from{transform:scaleY(.3)}to{transform:scaleY(1)}}
+.tune-now .dot{width:5px;height:5px;background:#ff4d3d;box-shadow:0 0 6px #ff4d3d;animation:tuneBlink .9s steps(2) infinite;flex:none;align-self:flex-start}
+@keyframes tuneBlink{50%{opacity:.15}}
+.tune-msg{position:absolute;inset:0;display:grid;place-items:center;color:#9aa088;font-size:12px;text-align:center;padding:20px;line-height:1.8}
+.tune-panel{position:relative;min-width:0;min-height:0;display:grid;place-items:center;padding:10px;background:#2c3037 repeating-linear-gradient(135deg,rgba(255,255,255,.025) 0 2px,transparent 2px 9px);border-top:2px solid #14161a;overflow:hidden}
+@media (orientation:landscape) and (max-height:600px){.tune-panel{border-top:0;border-left:2px solid #14161a;padding:12px}}
+.tune-console{position:relative;width:100%;max-width:min(100%,600px);aspect-ratio:1438/1608;background:url(tune/panel.jpg) 0 0/100% 100% no-repeat;image-rendering:pixelated;container-type:inline-size;user-select:none}
+@media (orientation:landscape) and (max-height:600px){.tune-console{max-width:min(100%,calc((100dvh - 24px) * 1438 / 1608))}}
+.tune-console .abs{position:absolute}
+.tune-drumwin{left:14.26%;top:13.8%;width:61.2%;height:19.28%;background:#0d0f0d;display:flex;gap:1.1cqw;padding:1.2cqw 1.3cqw;align-items:stretch}
+.tune-drum{position:relative;flex:1 1 0;overflow:hidden;background:linear-gradient(180deg,#000 0,#2b2f2a 30%,#3a3f38 50%,#2b2f2a 70%,#000 100%);box-shadow:inset 0 0 0 .3cqw #000}
+.tune-drum.wide{flex:2.3 1 0}
+.tune-drum .strip{transition:transform .5s cubic-bezier(.25,.9,.3,1.08)}
+.tune-drum span{display:block;height:6.3cqw;line-height:6.3cqw;text-align:center;font-family:var(--pix);font-size:4.4cqw;color:var(--w,#e9e2c8);text-shadow:0 0 1cqw var(--w,#e9e2c8)}
+.tune-drum.wide span{font-size:3.8cqw;letter-spacing:.2em;padding-left:.2em}
+.tune-drum::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.85) 0,rgba(0,0,0,.35) 30%,transparent 40%,transparent 60%,rgba(0,0,0,.35) 70%,rgba(0,0,0,.85) 100%);pointer-events:none}
+.tune-sw{left:80.7%;top:15.36%;width:7.6%;height:17.1%;background:transparent;border:0;cursor:pointer;padding:0}
+.tune-swlab{left:77%;width:15%;text-align:center;font-family:var(--pix);font-size:2.3cqw;letter-spacing:.1em;color:#8d9478;pointer-events:none}
+.tune-swlab.top{top:11.3%}.tune-swlab.bot{top:32.6%}
+.tune-swlab.on{color:#ffd34d;text-shadow:0 0 .8cqw #ffd34d}
+.tune-led{left:83.3%;width:1.8%;height:1%;background:#2b2a1f;pointer-events:none}
+.tune-led.top{top:16.04%}.tune-led.bot{top:30.72%}
+.tune-led.on{background:#ffd34d;box-shadow:0 0 .8cqw #ffd34d}
+.tune-wheel{background:transparent;cursor:ns-resize;touch-action:none;overflow:hidden;top:48.26%;height:33.33%}
+.tune-wheel canvas{display:block;width:100%;height:100%;image-rendering:pixelated}
+.tune-wheel[data-axis="x"]{left:15.58%;width:12.66%}.tune-wheel[data-axis="y"]{left:44.78%;width:12.24%}.tune-wheel[data-axis="z"]{left:73.7%;width:12.24%}
+.tune-wheel:focus-visible{outline:2px solid #ffd166;outline-offset:-2px}
+.tune-draw{left:32%;top:87.5%;width:36.2%;height:9.33%;background:transparent;border:0;cursor:pointer;padding:0}
+.tune-draw:active{background:rgba(255,255,255,.25)}
+`;
+  const SPK = '<svg viewBox="0 0 12 12" shape-rendering="crispEdges" width="20" height="20"><path class="b" d="M1 4h2v4H1zM3 3h1v6H3zM4 2h1v8H4zM5 1h1v10H5z"/><path class="w" d="M8 4h1v4H8zM10 2h1v1h-1zM10 9h1v1h-1zM11 3h1v6h-1z"/><path class="o" d="M8 3h1v1H8zM9 4h1v1H9zM10 5h1v2h-1zM9 7h1v1H9zM8 8h1v1H8zM11 3h1v1h-1zM11 8h1v1h-1zM10 4h1v1h-1zM10 7h1v1h-1z"/></svg>';
+
+  function html() {
+    return `
+<div class="tune-app" id="tuneApp">
+  <div class="tune-stage" id="tuneStage"><canvas id="tuneGl"></canvas>
+    <div class="tune-hud">
+      <div class="tune-readout" id="tuneReadout" title="能量 / 質地 / 色溫"><span style="--c:${AX.x}"><b>-.--</b></span><span style="--c:${AX.y}"><b>-.--</b></span><span style="--c:${AX.z}"><b>-.--</b></span></div>
+      <button class="tune-spk" id="tuneSpk" type="button" aria-pressed="true" aria-label="聲音">${SPK}</button>
+      <button class="tune-back" id="tuneBack" type="button">↩ 找一張來聽</button>
+    </div>
+    <button class="tune-now" id="tuneNow" type="button" hidden></button>
+    <div class="tune-hint">拖曳旋轉　滾輪縮放</div>
+    <div class="tune-msg" id="tuneMsg">載入中…</div>
+  </div>
+  <div class="tune-panel"><div class="tune-console" id="tuneConsole">
+    <div class="abs tune-drumwin">
+      <div class="tune-drum" id="tuneDx" style="--w:${AX.x}"><div class="strip"><span>靜</span><span>躁</span></div></div>
+      <div class="tune-drum" id="tuneDy" style="--w:${AX.y}"><div class="strip"><span>輕</span><span>重</span></div></div>
+      <div class="tune-drum" id="tuneDz"><div class="strip"><span style="color:${AX.cold};text-shadow:0 0 1cqw ${AX.cold}">冷</span><span style="color:${AX.z};text-shadow:0 0 1cqw ${AX.z}">暖</span></div></div>
+      <div class="tune-drum wide" id="tuneDcell"><div class="strip" id="tuneCellStrip"></div></div>
+    </div>
+    <span class="abs tune-swlab top on" id="tuneSwTop">SCAN</span><span class="abs tune-swlab bot" id="tuneSwBot">FINE</span>
+    <button class="abs tune-sw" id="tuneMode" type="button" aria-label="粗調／微調" aria-pressed="false"></button>
+    <i class="abs tune-led top on" id="tuneLedTop"></i><i class="abs tune-led bot" id="tuneLedBot"></i>
+    <div class="abs tune-wheel" data-axis="x" role="slider" tabindex="0" aria-label="能量" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25"><canvas></canvas></div>
+    <div class="abs tune-wheel" data-axis="y" role="slider" tabindex="0" aria-label="質地" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><canvas></canvas></div>
+    <div class="abs tune-wheel" data-axis="z" role="slider" tabindex="0" aria-label="色溫" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><canvas></canvas></div>
+    <button class="abs tune-draw" id="tuneDraw" type="button" aria-label="就這張" disabled></button>
+  </div></div>
+</div>`;
+  }
+
+  const esc = s => String(s).replace(/[&<>"]/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[m]));
+
+  // ── 星圖 ──────────────────────────────────────────────────────────
+  function buildScene() {
+    const THREE = global.THREE;
+    if (!THREE) return false;
+    const stage = el.stage, glc = el.gl;
+    renderer = new THREE.WebGLRenderer({ canvas: glc, antialias: true, alpha: false });
+    renderer.setPixelRatio(Math.min(2, global.devicePixelRatio || 1)); renderer.setClearColor(0x060609, 1);
+    scene = new THREE.Scene();
+    camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100); camera.position.set(2.4, 1.7, 2.6);
+    if (THREE.OrbitControls) {
+      controls = new THREE.OrbitControls(camera, glc); controls.enableDamping = true; controls.dampingFactor = .08; controls.autoRotate = true; controls.autoRotateSpeed = .6; controls.minDistance = 1.6; controls.maxDistance = 7; controls.enablePan = false;
+      let idleT = 0; controls.addEventListener('start', () => { controls.autoRotate = false; clearTimeout(idleT); }); controls.addEventListener('end', () => { idleT = setTimeout(() => { controls.autoRotate = true; }, 6000); });
+    }
+    const S = c => [c.px / 50 - 1, -(c.py / 50 - 1), c.pz / 50 - 1];
+    const pos = new Float32Array(N * 3); col = new Float32Array(N * 3); base = new Float32Array(N * 3);
+    const tmp = new THREE.Color();
+    for (let i = 0; i < N; i++) { const c = CARDS[i]; tmp.set(CELL_COLOR[c.cell]); base[i * 3] = tmp.r; base[i * 3 + 1] = tmp.g; base[i * 3 + 2] = tmp.b; const [x, y, z] = S(c); pos[i * 3] = x; pos[i * 3 + 1] = y; pos[i * 3 + 2] = z; }
+    geo = new THREE.BufferGeometry(); geo.setAttribute('position', new THREE.BufferAttribute(pos, 3)); geo.setAttribute('color', new THREE.BufferAttribute(col, 3));
+    sizeAttr = new Float32Array(N); geo.setAttribute('psize', new THREE.BufferAttribute(sizeAttr, 1));
+    pmat = new THREE.ShaderMaterial({ transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, uniforms: { uScale: { value: 1 } },
+      vertexShader: 'attribute float psize;attribute vec3 color;varying vec3 vC;uniform float uScale;void main(){vC=color;vec4 mv=modelViewMatrix*vec4(position,1.0);gl_PointSize=psize*uScale*(1.0/-mv.z);gl_Position=projectionMatrix*mv;}',
+      fragmentShader: 'varying vec3 vC;void main(){vec2 d=gl_PointCoord-.5;float r=length(d);if(r>.5)discard;float a=smoothstep(.5,.15,r);gl_FragColor=vec4(vC,a);}' });
+    scene.add(new THREE.Points(geo, pmat));
+    scene.add(new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(2, 2, 2)), new THREE.LineBasicMaterial({ color: 0x8a7a55, transparent: true, opacity: .22 })));
+    const ax = (hex, a, b) => { const g = new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(...a), new THREE.Vector3(...b)]); scene.add(new THREE.Line(g, new THREE.LineBasicMaterial({ color: new THREE.Color(hex), transparent: true, opacity: .32 }))); };
+    ax(AX.x, [-1.18, 0, 0], [1.18, 0, 0]); ax(AX.y, [0, -1.18, 0], [0, 1.18, 0]); ax(AX.z, [0, 0, -1.18], [0, 0, 1.18]);
+    const faceGrid = (rx, rz, px, py, pz) => { const g = new THREE.GridHelper(2, 10, 0x8a7a55, 0x8a7a55); g.material.transparent = true; g.material.opacity = .16; g.material.depthWrite = false; g.rotation.x = rx; g.rotation.z = rz; g.position.set(px, py, pz); scene.add(g); };
+    faceGrid(0, 0, 0, -1, 0); faceGrid(0, 0, 0, 1, 0); faceGrid(Math.PI / 2, 0, 0, 0, -1); faceGrid(Math.PI / 2, 0, 0, 0, 1); faceGrid(0, Math.PI / 2, -1, 0, 0); faceGrid(0, Math.PI / 2, 1, 0, 0);
+    const label = (txt, color, p) => { const c = document.createElement('canvas'); c.width = 128; c.height = 128; const g = c.getContext('2d');
+      g.font = '700 44px "Space Mono","PingFang TC","Microsoft JhengHei",sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle';
+      g.shadowColor = '#060609'; g.shadowBlur = 14; g.fillStyle = '#060609'; for (let i = 0; i < 3; i++) g.fillText(txt, 64, 66);
+      g.shadowBlur = 0; g.fillStyle = color; g.globalAlpha = .9; g.fillText(txt, 64, 66);
+      const t = new THREE.CanvasTexture(c); t.minFilter = THREE.LinearFilter; const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: t, transparent: true, depthTest: false })); s.scale.set(.34, .34, 1); s.renderOrder = 10; s.position.set(...p); scene.add(s); };
+    label('靜', AX.x, [-1.3, 0, 0]); label('躁', AX.x, [1.3, 0, 0]); label('輕', AX.y, [0, 1.3, 0]); label('重', AX.y, [0, -1.3, 0]); label('冷', AX.cold, [0, 0, -1.3]); label('暖', AX.z, [0, 0, 1.3]);
+    const plane = hex => { const c = new THREE.Color(hex); const m = new THREE.MeshBasicMaterial({ color: c, transparent: true, opacity: .05, side: THREE.DoubleSide, depthWrite: false });
+      const mesh = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), m); const edge = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.PlaneGeometry(2, 2)), new THREE.LineBasicMaterial({ color: c, transparent: true, opacity: .55 }));
+      const grid = new THREE.GridHelper(2, 10, c.getHex(), c.getHex()); grid.material.transparent = true; grid.material.opacity = .3; grid.material.depthWrite = false; grid.rotation.x = Math.PI / 2;
+      const g = new THREE.Group(); g.add(mesh, edge, grid); scene.add(g); return g; };
+    PX = plane(AX.x); PX.rotation.y = Math.PI / 2; PY = plane(AX.y); PY.rotation.x = Math.PI / 2; PZ = plane(AX.z);
+    const glowTex = (() => { const c = document.createElement('canvas'); c.width = c.height = 64; const g = c.getContext('2d'); const r = g.createRadialGradient(32, 32, 0, 32, 32, 32); r.addColorStop(0, 'rgba(255,220,150,.9)'); r.addColorStop(.4, 'rgba(255,200,120,.25)'); r.addColorStop(1, 'rgba(255,200,120,0)'); g.fillStyle = r; g.fillRect(0, 0, 64, 64); return new THREE.CanvasTexture(c); })();
+    marker = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, transparent: true, depthTest: false, color: 0xffffff })); marker.scale.set(0, 0, 1); scene.add(marker);
+    const resize = () => { const r = stage.getBoundingClientRect(); if (r.width < 2 || r.height < 2) return; renderer.setSize(r.width, r.height, false); camera.aspect = r.width / r.height; camera.updateProjectionMatrix(); pmat.uniforms.uScale.value = r.height * renderer.getPixelRatio() / 160; };
+    new ResizeObserver(resize).observe(stage); resize();
+    (function loop() { if (state.visible) { if (controls) controls.update(); renderer.render(scene, camera); } requestAnimationFrame(loop); })();
+    THREE_OK = true;
+    return true;
+  }
+  const S3 = c => [c.px / 50 - 1, -(c.py / 50 - 1), c.pz / 50 - 1];
+  function light(c) {
+    if (!THREE_OK) return;
+    const dimK = 0.45;
+    const dim = i => { const k = dimK * (CARDS[i].conf === 0 ? 0.7 : 1); col[i * 3] = base[i * 3] * k; col[i * 3 + 1] = base[i * 3 + 1] * k; col[i * 3 + 2] = base[i * 3 + 2] * k; sizeAttr[i] = 3.2; };
+    if (litIdx < 0) { for (let i = 0; i < N; i++) dim(i); } else dim(litIdx);
+    litIdx = c.i; col[c.i * 3] = base[c.i * 3]; col[c.i * 3 + 1] = base[c.i * 3 + 1]; col[c.i * 3 + 2] = base[c.i * 3 + 2]; sizeAttr[c.i] = 16;
+    geo.attributes.color.needsUpdate = true; geo.attributes.psize.needsUpdate = true;
+    const [mx, my, mz] = S3(c); marker.position.set(mx, my, mz); marker.scale.set(.34, .34, 1); marker.material.color.set(CELL_COLOR[c.cell]);
+  }
+
+  // ── 滾筒與讀數 ──────────────────────────────────────────────────────
+  function roll(d, idx) { const st = d.querySelector('.strip'); const n = st.dataset.n | 0; const h = st.firstElementChild.offsetHeight || 1; const mid = (d.clientHeight - h) / 2; st.style.transform = `translateY(${mid - (idx + n) * h}px)`; }
+  const fmt = v => (v < 0 ? '−' : '') + Math.abs(v).toFixed(2);
+  function readout(t) { const j = performance.now() - lastTurn < 160; const bs = el.readout.querySelectorAll('b'); const vals = [t.x, t.y, t.z]; bs.forEach((b, i) => { b.textContent = fmt(j ? vals[i] + (Math.random() - .5) * 0.04 : vals[i]); }); if (j) requestAnimationFrame(() => readout(target())); }
+  function updateScene() {
+    const p = state.p, t = target(); readout(t);
+    if (THREE_OK) { PX.position.x = p.x / 50 - 1; PY.position.y = -(p.y / 50 - 1); PZ.position.z = p.z / 50 - 1; }
+    if (!previewCard) scan(nearest());
+    const cell = cellOf(t.x, t.y, t.z);
+    roll(el.dx, t.x >= T.x ? 1 : 0); roll(el.dy, t.y >= T.y ? 1 : 0); roll(el.dz, t.z >= T.z ? 1 : 0); roll(el.dcell, ORDER.indexOf(cell));
+    el.draw.disabled = false;
+  }
+  function scheduleUpdate() { if (raf) return; raf = requestAnimationFrame(() => { raf = 0; updateScene(); }); }
+
+  // ── 輪子：拿像素稿裡的銅帶當貼圖，每一列照圓柱投影取樣，轉動就是稿子本身的滾花在捲 ──
+  let SPANS = null; const TILES = {};
+  function wheel(node) {
+    const axis = node.dataset.axis, cv = node.querySelector('canvas'), g = cv.getContext('2d'); const tile = TILES[axis]; let W = 0, H = 0, D = 1, shade = null;
+    function size() { const r = node.getBoundingClientRect(); D = Math.min(2, global.devicePixelRatio || 1); W = Math.max(8, Math.round(r.width * D)); H = Math.max(8, Math.round(r.height * D)); cv.width = W; cv.height = H; shade = null; draw(); }
+    function draw() {
+      const sp = SPANS && SPANS[axis]; g.clearRect(0, 0, W, H); if (!sp || !tile || !tile.complete || !tile.naturalWidth) return; const v = state.p[axis];
+      const sx = W / sp.w, sy = H / sp.h; const y0 = sp.y0 * sy, y1 = sp.y1 * sy, cy = (y0 + y1) / 2, R = (y1 - y0) / 2;
+      const th = tile.naturalHeight; const scale = sy * (sp.h / 536); const off = v * 4.2 * scale;
+      g.imageSmoothingEnabled = false;
+      for (let y = Math.ceil(y0); y < Math.floor(y1); y++) { const k = (cy - y) / R; if (k <= -1 || k >= 1) continue;
+        const row = sp.rows[Math.min(sp.rows.length - 1, Math.max(0, Math.floor(y / sy) - sp.y0))]; if (!row) continue;
+        const u = R * Math.asin(k); let t = ((u + off) / scale) % th; if (t < 0) t += th;
+        g.drawImage(tile, 0, Math.floor(t), tile.naturalWidth, 1, row[0] * sx, y, (row[1] - row[0]) * sx, 1); }
+      if (!shade) { shade = document.createElement('canvas'); shade.width = W; shade.height = H; const sg = shade.getContext('2d');
+        for (let y = Math.ceil(y0); y < Math.floor(y1); y++) { const k = (cy - y) / R; if (k <= -1 || k >= 1) continue; const row = sp.rows[Math.min(sp.rows.length - 1, Math.max(0, Math.floor(y / sy) - sp.y0))]; if (!row) continue;
+          const c = Math.sqrt(1 - k * k); const dark = Math.min(.85, Math.pow(1 - c, 1.2) * 0.95); sg.fillStyle = `rgba(0,0,0,${dark})`; sg.fillRect(row[0] * sx, y, (row[1] - row[0]) * sx, 1);
+          if (c > 0.92) { sg.fillStyle = `rgba(255,240,200,${(c - 0.92) * 1.2})`; sg.fillRect(row[0] * sx, y, (row[1] - row[0]) * sx, 1); } } }
+      g.drawImage(shade, 0, 0);
+    }
+    if (tile) tile.addEventListener('load', draw);
+    let drag = null;
+    const setV = nv => { const v0 = state.p[axis]; state.p[axis] = Math.max(0, Math.min(100, nv)); node.setAttribute('aria-valuenow', Math.round(state.p[axis])); draw(); sweep(axis, v0, state.p[axis]); scheduleUpdate(); };
+    node.addEventListener('pointerdown', e => { drag = { y: e.clientY, v: state.p[axis] }; node.setPointerCapture(e.pointerId); e.preventDefault(); ensureAudio(); });
+    node.addEventListener('pointermove', e => { if (!drag) return; const dy = e.clientY - drag.y; setV(drag.v + dy * (state.fine ? 0.05 : 0.2)); });
+    const end = () => { drag = null; }; node.addEventListener('pointerup', end); node.addEventListener('pointercancel', end);
+    node.addEventListener('wheel', e => { e.preventDefault(); ensureAudio(); setV(state.p[axis] - Math.sign(e.deltaY) * (state.fine ? 0.25 : 1)); }, { passive: false });
+    node.addEventListener('keydown', e => { const step = e.shiftKey ? 10 : 1; if (e.key === 'ArrowUp' || e.key === 'ArrowRight') { setV(state.p[axis] + step); e.preventDefault(); } if (e.key === 'ArrowDown' || e.key === 'ArrowLeft') { setV(state.p[axis] - step); e.preventDefault(); } });
+    new ResizeObserver(size).observe(node); size();
+    return { draw, set: setV };
+  }
+
+  // ── 掃描：輪子從 v0 轉到 v1，這段路上（其他兩軸在半徑內）的卡依序閃過去 ──
+  const queue = []; let qTimer = 0;
+  function nearest() { const p = state.p; let best = 0, bd = Infinity; for (let i = 0; i < N; i++) { const c = CARDS[i]; const d = (c.px - p.x) ** 2 + (c.py - p.y) ** 2 + (c.pz - p.z) ** 2; if (d < bd) { bd = d; best = i; } } return CARDS[best]; }
+  function sweep(axis, v0, v1) {
+    if (v0 === v1) return; lastTurn = performance.now(); stopPreview(); armPreview(); sfxTurn(axis, v0, v1);
+    const o = axis === 'x' ? ['py', 'pz'] : axis === 'y' ? ['px', 'pz'] : ['px', 'py']; const key = 'p' + axis;
+    const R = state.fine ? Math.min(4, SWEEP_R) : SWEEP_R; const a = Math.min(v0, v1), b = Math.max(v0, v1), r2 = R * R; const p = { px: state.p.x, py: state.p.y, pz: state.p.z }; const hit = [];
+    for (let i = 0; i < N; i++) { const c = CARDS[i]; const v = c[key]; if (v1 > v0) { if (v <= a || v > b) continue; } else { if (v < a || v >= b) continue; }
+      const d = (c[o[0]] - p[o[0]]) ** 2 + (c[o[1]] - p[o[1]]) ** 2; if (d <= r2) hit.push(c); }
+    hit.sort((u, w) => v1 > v0 ? u[key] - w[key] : w[key] - u[key]);
+    for (const c of hit) queue.push(c); while (queue.length > 14) queue.shift();
+    if (!qTimer) pump();
+  }
+  function pump() { qTimer = 0; const c = queue.shift(); if (!c) return; scan(c); qTimer = setTimeout(pump, queue.length > 8 ? 30 : 55); }
+  function scan(c) {
+    if (c === previewCard) return; previewCard = c; light(c); armPreview();
+    const card = c.card; const cover = card.coverUrl || '';
+    el.now.hidden = false;
+    el.now.innerHTML = `${cover ? `<img src="${esc(cover)}" alt="" referrerpolicy="no-referrer">` : `<div class="ph">♪</div>`}<div class="t"><div class="a">${esc(card.artist)}</div><div class="b">${esc(card.album)}</div><span class="c" style="--cc:${CELL_COLOR[c.cell]}"><i></i>${NAMES[c.cell]}<span class="np" id="tuneNp"></span></span></div><i class="dot"></i>`;
+    // 封面：卡池裡沒帶，交給呼叫端查（card_catalog／worker），查到再補上
+    if (!cover && cfg.resolveCover) cfg.resolveCover(card).then(url => { if (url && previewCard === c) { card.coverUrl = url; const img = el.now.querySelector('.ph'); if (img) img.outerHTML = `<img src="${esc(url)}" alt="" referrerpolicy="no-referrer">`; } }).catch(() => {});
+  }
+
+  // ── 試聽：停下來 0.7 秒就播站上的固定試聽（電台式硬切，不淡入淡出；轉動就停） ──
+  let playing = null;
+  function stopPreview() { clearTimeout(idleTimer); if (!playing) return; playing = null; try { cfg.player?.stop?.(); } catch (_) {} setNowPlaying(false); }
+  function armPreview() { clearTimeout(idleTimer); if (!state.audioOn) return; idleTimer = setTimeout(playPreview, 700); }
+  function playPreview() {
+    const c = previewCard; if (!c || !state.audioOn || !cfg.player) return;
+    const card = c.card;
+    if (card.previewUnavailable) { setNowPlaying(false, '這張沒有試聽'); return; }
+    playing = c;
+    Promise.resolve(cfg.player.playAlbum({ artist: card.artist, album: card.album, prefer: 'itunes', previewUrl: card.previewUrl || '', fixedOnly: !!card.previewUrl || !!card.previewUnavailable, cover: card.coverUrl || '', auto: true }))
+      .then(ok => { if (playing !== c) return; setNowPlaying(!!ok, ok ? '' : '沒有試聽'); if (!ok) playing = null; })
+      .catch(() => { if (playing === c) { playing = null; setNowPlaying(false, '沒有試聽'); } });
+  }
+  function setNowPlaying(on, msg) { const n = document.getElementById('tuneNp'); if (!n) return; n.classList.toggle('on', !!on); n.innerHTML = on ? '<i></i><i></i><i></i>' : (msg ? '· ' + msg : ''); }
+
+  // ── 調頻音效：粉紅雜訊過帶通（轉越快越響、越亮）＋ 跟著位置滑的嘯聲，全部現場合成 ──
+  let AC = null, bp = null, noiseGain = null, whistle = null, whistleGain = null, sfxTimer = 0, unlocked = false;
+  const unlock = new Audio('data:audio/wav;base64,UklGRmQfAABXQVZFZm10IBAAAAABAAEAQB8AAIA+AAACABAAZGF0YUAfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==');
+  unlock.loop = false; unlock.volume = 0.01;
+  function buildAudio() {
+    if (AC) return; const Ctx = global.AudioContext || global.webkitAudioContext; if (!Ctx) return; try { AC = new Ctx(); } catch (e) { return; }
+    const buf = AC.createBuffer(1, AC.sampleRate * 2, AC.sampleRate); const d = buf.getChannelData(0); let b0 = 0, b1 = 0, b2 = 0;
+    for (let i = 0; i < d.length; i++) { const w = Math.random() * 2 - 1; b0 = 0.99765 * b0 + w * 0.0990460; b1 = 0.96300 * b1 + w * 0.2965164; b2 = 0.57000 * b2 + w * 1.0526913; d[i] = (b0 + b1 + b2 + w * 0.1848) * 0.12; }
+    const fadeN = Math.floor(AC.sampleRate * 0.05); for (let i = 0; i < fadeN; i++) { const k = i / fadeN; d[i] *= k; d[d.length - 1 - i] *= k; }
+    const src = AC.createBufferSource(); src.buffer = buf; src.loop = true; bp = AC.createBiquadFilter(); bp.type = 'bandpass'; bp.frequency.value = 1200; bp.Q.value = 0.9;
+    noiseGain = AC.createGain(); noiseGain.gain.value = 0; src.connect(bp).connect(noiseGain).connect(AC.destination); src.start();
+    whistle = AC.createOscillator(); whistle.type = 'sine'; whistle.frequency.value = 800; whistleGain = AC.createGain(); whistleGain.gain.value = 0; whistle.connect(whistleGain).connect(AC.destination); whistle.start();
+  }
+  function ensureAudio() {
+    if (!state.audioOn) return;
+    // 第一次手勢：先讓站上的播放器武裝（同時授權這次造訪的自動試聽），再叫醒音效
+    if (!unlocked) { unlocked = true; try { unlock.play().catch(() => {}); } catch (_) {} cfg.onFirstGesture?.(); }
+    if (!AC) buildAudio(); if (AC && AC.state !== 'running') AC.resume().catch(() => {});
+  }
+  function sfxTurn(axis, v0, v1) {
+    if (!state.audioOn || !AC) return; if (AC.state !== 'running') { ensureAudio(); return; } const t = AC.currentTime; const sp = Math.min(6, Math.abs(v1 - v0));
+    noiseGain.gain.setTargetAtTime(0.09 + sp * 0.03, t, 0.05); bp.frequency.setTargetAtTime(600 + sp * 180 + Math.random() * 200, t, 0.06);
+    whistle.frequency.setTargetAtTime(300 + state.p[axis] * 34 + Math.random() * 40, t, 0.05); whistleGain.gain.setTargetAtTime(0.006 + sp * 0.002, t, 0.05);
+    clearTimeout(sfxTimer); sfxTimer = setTimeout(sfxStop, 140);
+  }
+  function sfxStop() { if (!AC) return; const t = AC.currentTime; noiseGain.gain.setTargetAtTime(0, t, 0.08); whistleGain.gain.setTargetAtTime(0, t, 0.06); }
+  function sfxClick() { if (!state.audioOn) return; ensureAudio(); if (!AC) return; const t = AC.currentTime; const o = AC.createOscillator(), g = AC.createGain(); o.type = 'square'; o.frequency.value = 180; g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(0.03, t + 0.004); g.gain.exponentialRampToValueAtTime(0.0001, t + 0.05); o.connect(g).connect(AC.destination); o.start(t); o.stop(t + 0.06); }
+
+  // ── 抽卡：同頻率再來一張（高斯加權隨機，看過 200 張內不重複；稀有度由呼叫端的結果頁處理） ──
+  function weightedPick() {
+    const t = target(); const [sx, sy, sz] = SIGMA; const seen = new Set(state.seen); const ws = new Float64Array(N); let g = 0, n = 0;
+    for (let i = 0; i < N; i++) { const c = CARDS[i]; if (seen.has(i)) continue; const d2 = ((c.x - t.x) / sx) ** 2 + ((c.y - t.y) / sy) ** 2 + ((c.z - t.z) / sz) ** 2; ws[i] = Math.exp(-d2 / 2); g += ws[i]; n++; }
+    const fl = n ? FLOOR * g / n / (1 - FLOOR) : 0; let sum = 0;
+    for (let i = 0; i < N; i++) { if (seen.has(i)) continue; ws[i] += fl; sum += ws[i]; }
+    if (sum <= 0) return null; let u = Math.random() * sum; for (let i = 0; i < N; i++) { u -= ws[i]; if (u <= 0) return CARDS[i]; } return CARDS[N - 1];
+  }
+  function emit(c) {
+    if (!c) return;
+    state.seen.push(c.i); if (state.seen.length > 200) state.seen.shift();
+    stopPreview(); sfxStop();
+    const t = target();
+    cfg.onResult?.({ card: c.card, cell: c.cell, cellName: NAMES[c.cell], coords: { x: c.x, y: c.y, z: c.z }, target: t, targetCell: cellOf(t.x, t.y, t.z), targetCellName: NAMES[cellOf(t.x, t.y, t.z)] });
+  }
+  function pickAgain() { const c = weightedPick(); if (c) { previewCard = c; light(c); emit(c); } }
+
+  // ── 進出 ──────────────────────────────────────────────────────────
+  function setModeUI() { const f = state.fine; el.ledTop.classList.toggle('on', !f); el.ledBot.classList.toggle('on', f); el.swTop.classList.toggle('on', !f); el.swBot.classList.toggle('on', f); el.mode.setAttribute('aria-pressed', String(f)); }
+  function setAudioUI() { el.spk.setAttribute('aria-pressed', String(state.audioOn)); }
+
+  async function build() {
+    const host = cfg.host();
+    if (!document.getElementById('tuneStyle')) { const st = document.createElement('style'); st.id = 'tuneStyle'; st.textContent = CSS; document.head.appendChild(st); }
+    host.innerHTML = html();
+    el = { stage: host.querySelector('#tuneStage'), gl: host.querySelector('#tuneGl'), readout: host.querySelector('#tuneReadout'), spk: host.querySelector('#tuneSpk'), back: host.querySelector('#tuneBack'), now: host.querySelector('#tuneNow'), msg: host.querySelector('#tuneMsg'),
+      dx: host.querySelector('#tuneDx'), dy: host.querySelector('#tuneDy'), dz: host.querySelector('#tuneDz'), dcell: host.querySelector('#tuneDcell'), cellStrip: host.querySelector('#tuneCellStrip'),
+      mode: host.querySelector('#tuneMode'), swTop: host.querySelector('#tuneSwTop'), swBot: host.querySelector('#tuneSwBot'), ledTop: host.querySelector('#tuneLedTop'), ledBot: host.querySelector('#tuneLedBot'), draw: host.querySelector('#tuneDraw'), console: host.querySelector('#tuneConsole') };
+    el.back.onclick = () => cfg.onBack?.();
+    el.spk.onclick = () => { state.audioOn = !state.audioOn; setAudioUI(); if (!state.audioOn) { stopPreview(); sfxStop(); } else { ensureAudio(); armPreview(); } };
+    el.mode.onclick = () => { state.fine = !state.fine; setModeUI(); sfxClick(); };
+    el.now.onclick = () => { if (previewCard) emit(previewCard); };
+    el.draw.onclick = () => { if (previewCard) emit(previewCard); };
+    setAudioUI(); setModeUI();
+    let data;
+    try { data = await loadData(); } catch (e) { el.msg.textContent = e.message || '載入失敗'; return; }
+    buildCards(data);
+    if (!N) { el.msg.textContent = '卡池裡沒有座標'; return; }
+    el.msg.hidden = true;
+    // 滾筒：每個前後各接一圈
+    { const items = ORDER.map(k => `<span style="color:${CELL_COLOR[k]};text-shadow:0 0 1cqw ${CELL_COLOR[k]}">${NAMES[k]}</span>`); el.cellStrip.dataset.n = items.length; el.cellStrip.innerHTML = items.join('') + items.join('') + items.join(''); }
+    host.querySelectorAll('.tune-drum .strip').forEach(st => { if (st.id === 'tuneCellStrip') return; const items = [...st.children].map(e => e.outerHTML); st.dataset.n = items.length; st.innerHTML = items.join('') + items.join('') + items.join(''); });
+    // 輪子素材
+    try { SPANS = await fetch('tune/wheel-spans.json').then(r => r.json()); } catch (_) { SPANS = null; }
+    for (const k of ['x', 'y', 'z']) { const im = new Image(); im.src = `tune/tile-${k}.png`; TILES[k] = im; }
+    try { buildScene(); } catch (e) { console.warn('[tune] 星圖建不起來，只用面板', e); THREE_OK = false; }
+    const ws = {}; host.querySelectorAll('.tune-wheel').forEach(n => { ws[n.dataset.axis] = wheel(n); }); WX = ws.x; WY = ws.y; WZ = ws.z;
+    new ResizeObserver(() => scheduleUpdate()).observe(el.console);
+    buildAudio();
+    for (const ev of ['pointerdown', 'touchstart', 'keydown']) host.addEventListener(ev, () => ensureAudio(), { passive: true, capture: true });
+    state.built = true;
+    updateScene();
+  }
+
+  async function start() {
+    state.visible = true;
+    if (!state.built) await build();
+    else { el.draw.disabled = false; if (previewCard) armPreview(); }
+  }
+  function stop() { state.visible = false; stopPreview(); sfxStop(); }
+
+  global.DipTune = { configure, start, stop, pickAgain, get state() { return state; } };
+})(window);

@@ -999,6 +999,15 @@
   </div>
 </div>
 
+<!-- 調頻（引擎在 dip-tune.js；主機畫面與結果頁分兩層，結果頁沿用 quiz-result） -->
+<div class="quiz-modal" id="tuneModal">
+  <div id="tuneApp"></div>
+  <div class="quiz-inner" id="tuneResultWrap" hidden>
+    <div class="quiz-topbar"><button class="modal-close-btn" data-tune-back>↩ 回去轉頻率</button><span class="game-top-slot"></span></div>
+    <div id="tuneContent"></div>
+  </div>
+</div>
+
 <!-- 我的紀錄 modal -->
 <div class="quiz-modal" id="historyModal">
   <div class="quiz-inner">
@@ -1061,6 +1070,7 @@
 <script src="dip-player.js?v=49"></script>
 <script src="dip-draw-anim.js?v=4"></script>
 <script src="dip-genre-tree.js?v=5"></script>
+<script src="dip-tune.js?v=1"></script>
 <script src="dip-artist-intro.js?v=2"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -2786,6 +2796,7 @@
     find: {
       title: '找一張來聽', sub: '不知道從何聽起？<br>挑一種方式，挖出屬於你的那張。',
       cards: [
+        ['tune', '頻率選歌', '轉三顆輪子，在整片唱片星空裡一張張掃過去，停在哪張就是哪張。'],
         ['quiz', '心情選歌', '回答幾個問題，讓心情帶你找到一張唱片。'],
         ['genre', '類型挑片', '從大類一路選到細分類型，挖出那張。'],
         ['artist', '猜你喜歡', '選個領域，用三位藝人的品味猜出你會喜歡的。'],
@@ -2867,11 +2878,13 @@
     // 抽卡結果頁的試聽同理：返回首頁／切去別的分頁時要跟著收掉，否則音樂會一直跑。
     // gpStopPreview 內部會檢查 gpPreviewStarted，沒在播就不動作。
     if (tab !== currentView) gpStopPreview({ fade: true });
+    if (currentView === 'tune' && tab !== 'tune') window.DipTune?.stop();
     currentView = tab;
     // 三個選片遊戲走「遊戲頁模式」：站頂 logo／頂欄／主分頁列全收，畫面只剩遊戲
     const gameModal = tab === 'quiz' ? 'quizModal'
       : (tab === 'artist' || tab === 'random') ? 'artistModal'
       : tab === 'genre' ? 'genreModal'
+      : tab === 'tune' ? 'tuneModal'
       : (tab === 'find' || tab === 'shop') ? 'hubModal' : null;
     document.body.classList.toggle('game-page', !!gameModal);
     moveGameChrome(gameModal);
@@ -2880,7 +2893,7 @@
     document.querySelectorAll('.main-tab').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
     document.body.style.overflow = '';
     // 先收起所有內嵌面板
-    ['quizModal', 'artistModal', 'genreModal', 'hubModal', 'historyModal', 'collectionModal', 'albumSearchModal'].forEach(id => document.getElementById(id).classList.remove('open'));
+    ['quizModal', 'artistModal', 'genreModal', 'tuneModal', 'hubModal', 'historyModal', 'collectionModal', 'albumSearchModal'].forEach(id => document.getElementById(id).classList.remove('open'));
 
     // 「今天聽什麼？」首頁 hub
     const homeHub = document.getElementById('homeHub');
@@ -2921,6 +2934,11 @@
     if (tab === 'genre') {
       document.getElementById('genreModal').classList.add('open');
       DipGenreTree.start();
+      return;
+    }
+    if (tab === 'tune') {
+      document.getElementById('tuneModal').classList.add('open');
+      openTune();
       return;
     }
     if (tab === 'artist') {
@@ -4704,7 +4722,7 @@ ${seenList}
                   : `<div class="history-thumb-placeholder">♪</div>`}
                 <div class="history-item-info">
                   <div class="history-item-meta">
-                    <span class="history-item-badge">${r.type === 'artist' ? '猜你喜歡' : r.type === 'genre' ? 'Genre' : 'Quiz'}</span>
+                    <span class="history-item-badge">${r.type === 'artist' ? '猜你喜歡' : r.type === 'genre' ? 'Genre' : r.type === 'tune' ? '頻率選歌' : 'Quiz'}</span>
                     <span class="history-item-date">${r.date}</span>
                   </div>
                   <div class="history-item-artist">${r.artist || ''}</div>
@@ -5807,6 +5825,74 @@ ${seenList}
   // 載入後預熱：設定與封面池先進快取（含封面預載），使用者點下去就零等待起跑
   setTimeout(() => DipDrawAnim.preload('front'), 1500);
 
+  // ── 調頻接線（引擎在 dip-tune.js；MOOD_LAUNCH_PLAN §4）───────────────────
+  // 模組只管「三顆輪子、掃描、鎖定」，鎖定的那張交回這裡走與類型挑片相同的結果頁
+  // （封面／三軸／試聽／收藏／分享都共用 showGpResult）。星圖的 Three.js 只在進入調頻時才載。
+  let _threePromise = null;
+  function ensureThree() {
+    if (window.THREE?.OrbitControls) return Promise.resolve();
+    if (!_threePromise) _threePromise = (async () => {
+      const load = src => new Promise((res, rej) => { const sc = document.createElement('script'); sc.src = src; sc.onload = res; sc.onerror = () => rej(new Error('three 載入失敗')); document.head.appendChild(sc); });
+      if (!window.THREE) await load('https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js');
+      if (!window.THREE.OrbitControls) await load('https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js');
+    })().catch(e => { _threePromise = null; console.warn('[tune]', e); });
+    return _threePromise;
+  }
+  function tuneShowApp(show) {
+    document.getElementById('tuneApp').hidden = !show;
+    document.getElementById('tuneResultWrap').hidden = show;
+  }
+  async function openTune() {
+    tuneShowApp(true);
+    await ensureThree();          // 載不到也照開：模組會只用面板、不畫星圖
+    DipTune.start();
+  }
+  DipTune.configure({
+    host: () => document.getElementById('tuneApp'),
+    loadCardPool: loadGamePool,
+    cardIdOf,
+    player: window.DipPlayer,
+    // 第一次碰輪子＝使用者明確要出聲：武裝播放器並授權這次造訪的自動試聽（停下來就播電台）
+    onFirstGesture: () => gpEnsurePlayer({ grant: true }),
+    resolveCover: async (card) => (await resolveCardAssets(card.artist, card.album)).coverUrl || '',
+    onBack: () => setActiveTab(SHOP_MODE ? 'shop' : 'find'),
+    onResult: async ({ card, cell, cellName, targetCellName }) => {
+      gpResultHost = 'tuneContent';
+      gpStopPreview();
+      tuneShowApp(false);
+      window.scrollTo(0, 0);
+      const st = window.DipPreviewStatus?.[cardIdOf(card.artist, card.album)] || '';
+      if (st !== 'unavailable' && st !== 'disabled') {
+        gpEnsurePlayer();
+        void window.DipPlayer?.warmAlbum?.({ artist: card.artist, album: card.album });
+      }
+      const assets = await resolveCardAssets(card.artist, card.album);
+      const ratings = (card.classic && !card.tier) ? {
+        classic: assets.ov?.classic || card.classic,
+        obscurity: assets.ov?.obscurity || card.obscurity,
+        accessibility: assets.ov?.accessibility || card.accessibility,
+      } : null;
+      const note = `頻率 <span style="color:${({calm:'#c9a24a',still:'#3f8f9b',languid:'#b5522e',decay:'#6b4aa8',lift:'#ffd166',crisp:'#5ee6f0',boil:'#ff6b35',charge:'#9b6bff'})[cell] || '#888'}">●</span> ${cellName}`;
+      await showGpResult({
+        artist: card.artist, album: card.album, reason: '', ratings,
+        _coverUrl: assets.coverUrl, _spotifyUrl: assets.spotifyUrl,
+        _bandcampUrl: assets.bandcampUrl, _ytUrl: assets.ytUrl,
+        _previewUrl: assets.previewUrl, _previewUnavailable: assets.previewUnavailable,
+        _matchNote: note, _mode: 'tune', _streaming: true,
+      });
+      const reason = await fillGpDesc(card, assets.ov);
+      lastGpResult.reason = reason;
+      recordDrawnCard(lastGpResult);
+      if (reason) _saveReasonWords(reason);
+      saveToHistory({ type: 'tune', artist: card.artist, album: card.album, reason, coverUrl: assets.coverUrl })
+        .then(() => renderHistorySection(document.getElementById('tuneContent')));
+    },
+  });
+  document.getElementById('tuneModal').addEventListener('click', (e) => {
+    if (e.target.closest('[data-tune-again]')) { gpStopPreview(); DipTune.pickAgain(); }
+    else if (e.target.closest('[data-tune-back]')) { gpStopPreview(); tuneShowApp(true); DipTune.start(); }
+  });
+
   // 抽卡動畫的結果頁接軌目標（心情選歌與類型挑片／直接來一張的容器不同）
   function daHandoffTo(hostSel) {
     return DipDrawAnim.finishHandoff({
@@ -6041,6 +6127,8 @@ ${seenList}
     // 左上角要有換個類型）。類型挑片回到大類選單、猜你喜歡回到領域選單；直接來一張沒有類型可換。
     const gpTopBack = result._mode === 'tree'
       ? '<button class="gt-back-top" data-gt-restart>← 換個類型</button>'
+      : result._mode === 'tune'
+      ? '<button class="gt-back-top" data-tune-back>← 換個頻率</button>'
       : (!gpIsRandom ? '<button class="gt-back-top" data-gp-action="retry">← 換個類型</button>' : '');
     document.getElementById(gpResultHost).innerHTML = `
       <div class="quiz-result">
@@ -6063,6 +6151,9 @@ ${seenList}
         ${result._mode === 'tree'
           ? `<button class="quiz-another-btn" data-gt-again>再抽一張</button>
              <button class="quiz-retry-btn" data-gt-restart>換個類型</button>`
+          : result._mode === 'tune'
+          ? `<button class="quiz-another-btn" data-tune-again>同頻率再抽一張</button>
+             <button class="quiz-retry-btn" data-tune-back>回去轉頻率</button>`
           : `${gpAnotherCount < GP_ANOTHER_MAX ? `<button class="quiz-another-btn" data-gp-action="another">再一張${GP_ANOTHER_MAX - gpAnotherCount > 1 ? `（${GP_ANOTHER_MAX - gpAnotherCount}）` : ''}</button>` : ''}
              <button class="quiz-retry-btn" data-gp-action="retry">${gpIsRandom ? '重新隨機一張' : '換個類型再試'}</button>`}
       </div>
@@ -6394,8 +6485,8 @@ ${seenList}
 
     // 有效路由：直接導向，否則一律落在「今天聽什麼？」首頁
     const valid = window.__APP_MODE__
-      ? ['home', 'find', 'shop', 'quiz', 'genre', 'artist', 'random', 'history', 'collection', 'album-search']
-      : ['home', 'find', 'shop', 'used', 'new', 'quiz', 'genre', 'artist', 'random', 'history', 'archive', 'collection', 'album-search'];
+      ? ['home', 'find', 'shop', 'quiz', 'genre', 'tune', 'artist', 'random', 'history', 'collection', 'album-search']
+      : ['home', 'find', 'shop', 'used', 'new', 'quiz', 'genre', 'tune', 'artist', 'random', 'history', 'archive', 'collection', 'album-search'];
     setActiveTab(valid.includes(target) ? target : 'home');
   })();
 
