@@ -33,3 +33,15 @@
 
 - **10511**：刪 Haranga《Hard Rock Group, Vol. 1 & 2》——研究 e 組逐首比對，是 1997 年波昂兩張 CD 的合併整理（其中《The Sound of the Century》14 首收 13 首，該盤 ts7 已上架），屬再編合輯，放寬門檻下仍不收。本批 29 張。
 - **10512**：研究 b 組：Altan Urag《Blood》卡面年份改 2008（實體 CD 與 UBS 獎年份；MB／Apple 2009 為數位上架）；《Hypnotism》Discogs 只標 Folk／Neo-Classical，但封面與維基稱 Folk Rock Band，放寬門檻下保留、正文不稱硬搖滾。The Lemons《III》Beehype 2016 蒙古榜第 3 名驗證成立，但 Beehype 是音樂媒體、其年終榜屬 writer-base 榜單條「整條不寫」，只當收錄理由，正文不寫。
+
+## 研究 a 組（條號 10441–10450）
+- 10441｜Hurd《Өдөр шөнө》：身分無疑（MB 28d6e008、Discogs master 3211566／release 3126636、Apple 1566613946 同為 16 首、1999）。廠牌：Discogs 為 Erel（贊助礦業公司）、Apple ℗ 為 Crcl Hurd，與卡單『Hurd（自主發行）』並存，正文不寫廠牌或只寫『Erel 贊助時期』。封面團名實為 Erel-Hurd，卡池掛 Hurd 不動，寫作層可交代短暫改名。full，建議保留。
+- 10442｜Hurd《Монголд төрсөн》：身分無疑（MB 922fccd0、Discogs 3681947 CD 15 首、Apple 16 首）。年份 2004 確認（英文維基主條目列表寫 2003，專輯 infobox 與 Discogs／MB／Apple 皆 2004）。序數各說不一（維基第 5、Discogs『7th full length』），寫作層不寫序數。首版 CD 漏壓〈Манайд ирээрэй〉，Black Box 才補。內蒙古巡演取消以 RFA 2004-11-18 全文為準；NYT 原文被擋未讀，『內蒙銷量高於本國』無獨立來源不採。full，建議保留。
+- 10443｜Hurd《Зүйрлэх аргагүй》：身分無疑（MB 64a1ecae、Discogs 3505100 16 首、Apple 16 首，2005-09-20）。策展層『入圍 2007 Pentatonic 最佳搖滾歌曲〈Цоглог оюутан〉』查無獨立來源（Pentatonic Awards 英文維基頁 404），facts 不寫，寫作層也勿寫。2005 年感謝演唱會 12 萬觀眾僅蒙文維基單一來源，寫作層建議不寫確切人數。full，建議保留。
+- 10444｜Hurd《Хайрын салхи》：身分無疑（MB 5521368e、Discogs master 796388／release 6636165 Promo CD、Apple 12 首）。年份留疑：英文維基 discography 寫『2013 (with Black Box)』、MB／Discogs／Apple 皆 2010，卡面維持 2010；正文須交代 2010 年只以宣傳盤、CD-R、卡帶流傳，2013 年 Black Box 才正式出版。依放寬門檻不以『未正式上市』建議移除。Altan gadas 勳章中譯不確定，寫作層可只寫『國家勳章』。full，建議保留。
+- 10445｜Hurd《Нарлаг диваажин》：身分無疑（MB d6ceea5d／release d4d601c1 18 首、Apple 2016-03-08、英文維基第 8 張雙專輯）。Discogs 無此盤。WebSearch 一次（蒙文）只回新聞與賽馬頁，查無發表會、評論；wiki 單獨條目遭 429。status thin。facts 內 P. Kherlen 只寫『長期合作的詞人』，不寫詩人。建議保留。
+- 10446｜Hurd《Долоон тэрбум》：身分無疑（MB 549426c2、Discogs release 22006666 限量 CD、Apple 1649428602，2021-12-11、10 首）。發行日衝突：英文維基寫 2021 年 7 月，其餘皆 12 月 11 日，卡面 2021 兩說相同，正文只寫 2021 年或『12 月實體 CD』。WebSearch 一次（蒙文）無結果，status thin，寫作層只寫曲目、參與者、規格，不編背景。建議保留。
+- 10447｜本組建議移除：無。六張皆為原創錄音室專輯，身分、封面來源（Apple）、年份核對無誤，且皆屬搖滾（Discogs styles：Heavy Metal、Hard Rock、Folk Rock 等）。
+- 10448｜推翻策展層：無推翻事實。僅補四處：Ödör Shönö 廠牌為 Erel 贊助而非純自主發行；Хайрын салхи 2010 實為宣傳盤、2013 才正式出版；策展層提的 Pentatonic 入圍提名查無來源不採；Монголд төрсөн 年份 2004 確認。
+- 10449｜封面：未動。六張 Apple 蒙古區皆有圖（IDs 1566613946／1570806136／1570509556／1570418082／1570807015／1649428602），Narlag Divaajin 與 Хайрын салхи 的 Discogs／MB 無圖或僅宣傳版封面，沿用策展層 Apple 圖。
+- 10450｜WebSearch 用量 2 次（Нарлаг диваажин、Долоон тэрбум 各一，皆無有用結果），其餘走英文維基 raw、蒙文維基 raw、MB／Discogs／iTunes API 與 RFA 全文。NYT、Pentatonic 維基頁讀不到。qa-batch 對 Cyrillic 專名報『非拉丁亂碼』為預期（曲名／盤名照原文保留）。
