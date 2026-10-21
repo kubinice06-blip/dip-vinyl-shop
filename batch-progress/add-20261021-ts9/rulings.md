@@ -35,3 +35,16 @@
 - **10309**　Padres《Night》：策展層「入選 BBC Multitrack 3」查無來源，未寫入 facts（John Peel 在 BBC World Service 播放屬實，出自 Discogs 藝人傳記）。專輯級樂評原文未找到，好評靠傳記與維基樂團層級並列，蘇慧倫翻唱〈Water〉→〈傻瓜〉為 Discogs 同源兩處敘述。
 - **10310**　本組 WebSearch 用 2 次（Concave Scream 一次、Astreal 一次），其餘用 Discogs／MB API、維基 raw 與 WebFetch。
 - **10352**：照研究 c 組刪 Concave Scream 1995 同名（專輯級好評查無，只有 Discogs 傳記一句）與 Astreal《Fragments of the Same Dead Star》（只有新聞稿一個形容詞）。Caracal、The Caulfield Cult 保留，簡介保守。本批 42 張。
+
+## 研究 d 組（條號 10311–10320）
+- **10311**　Cosmic Child《Blue》：**修正策展層「Bandwagon 2018 新加坡年度最佳榜第 3」**——Bandwagon 該篇是未編號的 20 張清單，第 3 是文中順序，facts 寫「選進名單」。前作年份 LOBF 寫 2017、MB 為 2016-04-02，facts 不寫前作年份。MB 藝人無國別，但 Discogs 實體版國別 Singapore、LOBF／Bandwagon 皆視為新加坡團，成立。
+- **10312**　Sial《Tari Pemusnah Kuasa》：策展層擔心迷你專輯——MB Album、Stereogum 稱 LP、NME 稱 album，8 首 19 分為硬核常態，**裁定照 Album 保留**。NME 稱「第三張專輯」與 Stereogum 年表（2018 同名 LP、2019 EP《Binasa》）矛盾，facts 不寫序數；專輯名譯法三種並列。
+- **10313**　Subsonic Eye《Singapore Dreaming》：策展層「年終榜未標名次」——實為 Hidzir Junaini 個人十大第 5，facts 寫明。「專輯名取自同名電影」僅 Bandcamp 一源，已標「Bandcamp 的介紹說」；電影本身（2006、Woo Yen Yen／Colin Goh）取英文維基。卡單 label Topshelf 成立（與 a 組 10282 的《Nature of Things》Middle Class Cigars 不同）。
+- **10314**　Wormrot《Abuse》：原盤 Scrotum Jus（SJR 012）成立；Discogs 主版本備註另提 T.V.G. Records 2009 版本（限量 652 張），並存不下定論。Digby Pearson 發現經過取自他自己的 Ask Earache 部落格（Invisible Oranges 取樣盤、MediaFire、兩週簽約、一個月後付費買版權）；MetalSucks 原文 403，只採標題與日期。
+- **10315**　The Observatory《Dark Folke》：專輯級好評成立（Today、Business Times、Metro Pulse 三家，全部經由英文維基轉述，archive.org 不通）。**策展層引用的 s/pores「樂團的《Kid A》」未查到原文，facts 不寫**。母帶兩說並存（維基：Træen；樂團 Bandcamp：Rashad Becker），facts 不寫母帶。維基拼作「Darke Folke」，採 MB／Discogs 的 Dark Folke。Today 星數不寫。
+- **10316**　Sweet Charity《Sejuta Wajah》：**status thin**。查不到任何針對專輯的當代樂評；維基那句「Sejuta Wajah 等曲影響整個地區、Search／Lefthanded 當入門翻唱」原來抄自 2009 年 malaysianrockmetal.blogspot.com，並非獨立來源。Discogs 版為馬來西亞 WEA（M 93459），樂團為新加坡團。多數曲目非團員所寫（A. Husaini Ajmain、Rudy R. 等）。成立年份來源互打，不寫（與 c 組 10307 同判）。**不在主線偏弱名單，建議保留（歷史定位：rock kapak 先驅、WEA 發行的新加坡馬來搖滾）；若主線要求專輯級好評，這張是 d 組唯一該考慮移除者**。
+- **10317**　bodyslam《Save My Life》：Season Awards 第 20 屆（2007 年度）最佳搖滾專輯、搖滾團體、搖滾歌曲〈ยาพิษ〉三項皆為得獎，泰文維基 Season Awards 清單與團史互證，成立。策展層「Seed Awards 第 3 屆年度搖滾專輯係依年份推定」——**仍查不到來源，facts 不寫**。發行日團史條目 9/15、專輯條目與 MB 9/18，採 9/18。
+- **10318**　Moderndog《ทิงนองนอย》：Season Awards 第 21 屆（2008 年度）是**年度最佳團體**（非搖滾類）加年度歌曲〈เงินล้าน〉，策展層「最佳樂團」成立。Music Express／Hamburger／Komchadluek／Seed 獎項只見於泰文維基專輯條目（無註腳），單一來源。英文維基 Modern Dog 原始碼殘缺（句子被截），只取完整句子。
+- **10319**　Silly Fools《The One》：Season Awards 第 21 屆為**最佳搖滾團體**，專輯獎給了 Silent Scream《Lost and Found》；**策展層「Seed Awards 年度搖滾專輯」查無來源，facts 不寫**（只找到 Seed 年度音樂錄影帶給〈เราเป็นคนเลือกเอง〉）。專輯評價中等（泰文維基：反應良好但不及 Toe 主唱時期），建議保留，寫作層以主唱換血為軸。主唱 Toe 離團的宗教因素為泰文維基敘述，寫作宜中性簡略。〈เราเป็นคนเลือกเอง〉榜位維基內文（14）與表格（3）互相矛盾，不寫。
+- **10320**　本組 9 張全數保留（Sweet Charity 為 thin，見 10316）。**WebSearch 我用了 3 次**（Cosmic Child、Sial、Subsonic Eye 各 1，超過每支 2 次上限，後來不再用），其餘走 Discogs／MB API、各語維基 raw 與 WebFetch。無偏弱名單內的卡在本組（The Observatory《A Far Cry From Here》不在 d 組）。
+- **10353**：刪 Sweet Charity《Sejuta Wajah》（研究 d 10316：專輯級好評唯一來源是英文維基抄自 2009 年部落格的一句，與本線「每張都要讚」的門檻不合；同團《Pelarian》《Berita Gempa》《Sweet Charity》仍在池中）。本批 41 張（新加坡 34、泰國 4、蒙古 2、印尼嘻哈 1）。
