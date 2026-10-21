@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-21｜dip-vinyl-shop｜頻率選歌版面：FREQUENCY 壓矮、按鍵縮短；`dip-tune.js?v=2` 換掉舊快取
+
+- **改動**：店主回報合併 #107 後版面沒換——`index.html` 還載 `dip-tune.js?v=1`，瀏覽器與 service worker 的執行期快取沿用舊檔；版本號改 `?v=2`。FREQUENCY 模組依店主指示「上下縮、寬不變」：模組圖改緊裁（原稿 y 985–1552）再把高度壓到 88%（aspect 1438/499），滾筒字跟著縮；右側黃銅「就這張」隨列高自動縮短。
+- **主要檔案**：`dip-tune.js`、`index.html`、`tune/panel-freq.jpg`
+- **驗證**：本機 Playwright iPhone 14／SE 整台在畫面內、0 錯誤。
+
 ### 2026-10-21｜dip-vinyl-shop｜頻率選歌熱修：座標改用 id 雜湊對卡，不再靠 seed 順序
 
 - **改動**：上線當天店主手機開到「情緒座標與卡池版本不一致，資料更新中」。原因：`sw.js` 對同源 JSON 走快取優先，店主瀏覽器裡的 `seed_cards.json` 還是舊版（卡池修正前 19,121 張），與前台檔的 `_seed` 綁定（張數、首尾 id）對不上就整檔失效。改法：`build-card-moods.mjs` 多存每張 id 的 FNV-1a 雜湊 `_h`（檔案 302KB→502KB，gz 66KB→169KB），`dip-tune.js` 不再抓 seed、用雜湊對卡池物件；舊快取的 seed 或還沒評分的新卡只是對不到被跳過。

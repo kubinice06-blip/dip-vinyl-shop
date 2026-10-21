@@ -113,26 +113,26 @@
 @media (orientation:landscape) and (max-height:600px){.tune-console{width:min(100%,calc((100dvh - 24px) / 0.86))}}
 .tune-mod{position:relative;background-size:100% 100%;background-repeat:no-repeat;image-rendering:pixelated}
 .tune-row1{display:flex;gap:2cqw;align-items:stretch}
-.tune-mod-freq{width:76%;flex:none;aspect-ratio:1438/625;background-image:url(tune/panel-freq.jpg)}
+.tune-mod-freq{width:76%;flex:none;aspect-ratio:1438/499;background-image:url(tune/panel-freq.jpg)}
 .tune-mod-wheels{width:100%;aspect-ratio:1438/983;background-image:url(tune/panel-wheels.jpg)}
 .tune-btncol{flex:1 1 0;min-width:0;display:grid;place-items:center;padding:1cqw 0}
 .tune-draw{height:100%;max-width:100%;aspect-ratio:168/358;background:url(tune/btn-v.png) center/100% 100% no-repeat;image-rendering:pixelated;border:0;padding:0;cursor:pointer;writing-mode:vertical-rl;text-orientation:upright;font-family:var(--pix);font-size:5cqw;letter-spacing:.3em;color:#2a1e07;text-shadow:.15cqw .15cqw 0 rgba(255,236,170,.55);display:grid;place-items:center}
 .tune-draw:active{transform:translateY(.4cqw);filter:brightness(1.08)}
 .tune-draw[disabled]{opacity:.55;cursor:default}
 .tune-console .abs{position:absolute}
-.tune-drumwin{left:14.26%;top:35.5%;width:61.2%;height:49.6%;background:#0d0f0d;display:flex;gap:1.1cqw;padding:1.2cqw 1.3cqw;align-items:stretch}
+.tune-drumwin{left:14.26%;top:36.2%;width:61.2%;height:54.7%;background:#0d0f0d;display:flex;gap:1.1cqw;padding:1.2cqw 1.3cqw;align-items:stretch}
 .tune-drum{position:relative;flex:1 1 0;overflow:hidden;background:linear-gradient(180deg,#000 0,#2b2f2a 30%,#3a3f38 50%,#2b2f2a 70%,#000 100%);box-shadow:inset 0 0 0 .3cqw #000}
 .tune-drum.wide{flex:2.3 1 0}
 .tune-drum .strip{transition:transform .5s cubic-bezier(.25,.9,.3,1.08)}
-.tune-drum span{display:block;height:4.95cqw;line-height:4.95cqw;text-align:center;font-family:var(--pix);font-size:3.6cqw;color:var(--w,#e9e2c8);text-shadow:0 0 1cqw var(--w,#e9e2c8)}
-.tune-drum.wide span{font-size:3.1cqw;letter-spacing:.2em;padding-left:.2em}
+.tune-drum span{display:block;height:4cqw;line-height:4cqw;text-align:center;font-family:var(--pix);font-size:3cqw;color:var(--w,#e9e2c8);text-shadow:0 0 1cqw var(--w,#e9e2c8)}
+.tune-drum.wide span{font-size:2.6cqw;letter-spacing:.2em;padding-left:.2em}
 .tune-drum::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.85) 0,rgba(0,0,0,.35) 30%,transparent 40%,transparent 60%,rgba(0,0,0,.35) 70%,rgba(0,0,0,.85) 100%);pointer-events:none}
-.tune-sw{left:80.7%;top:39.5%;width:7.6%;height:44%;background:transparent;border:0;cursor:pointer;padding:0}
+.tune-sw{left:80.7%;top:40.6%;width:7.6%;height:48.5%;background:transparent;border:0;cursor:pointer;padding:0}
 .tune-swlab{left:77%;width:15%;text-align:center;font-family:var(--pix);font-size:1.9cqw;letter-spacing:.1em;color:#8d9478;pointer-events:none}
-.tune-swlab.top{top:28%}.tune-swlab.bot{top:84%}
+.tune-swlab.top{top:29%}.tune-swlab.bot{top:90.8%}
 .tune-swlab.on{color:#ffd34d;text-shadow:0 0 .8cqw #ffd34d}
-.tune-led{left:83.3%;width:1.8%;height:2.56%;background:#2b2a1f;pointer-events:none}
-.tune-led.top{top:41.3%}.tune-led.bot{top:79%}
+.tune-led{left:83.3%;width:1.8%;height:2.8%;background:#2b2a1f;pointer-events:none}
+.tune-led.top{top:42.5%}.tune-led.bot{top:84.1%}
 .tune-led.on{background:#ffd34d;box-shadow:0 0 .8cqw #ffd34d}
 .tune-wheel{background:transparent;cursor:ns-resize;touch-action:none;overflow:hidden;top:15.36%;height:54.5%}
 .tune-wheel canvas{display:block;width:100%;height:100%;image-rendering:pixelated}
