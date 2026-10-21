@@ -454,48 +454,6 @@
   "cover": null
  },
  {
-  "key": "desc2:Y Not 7|Yeah!",
-  "artist": "Y Not 7",
-  "album": "Yeah!",
-  "year": 1999,
-  "genre": "rock",
-  "genres": [
-   "rock"
-  ],
-  "label": "Grammy Grand",
-  "country": "th",
-  "rgMbid": "",
-  "identitySource": "manual",
-  "mbAbsenceProof": {
-   "queries": [
-    "artist?query=Y Not 7 → 7a1e084e（TH）只有 Neverdie（1999），無 Yeah!",
-    "release-group?query=artist:\"Y Not 7\" AND releasegroup:\"Yeah!\"（count=0）"
-   ],
-   "checkedAt": "2026-10-20",
-   "conclusion": "MB 有藝人但無此 release-group；Discogs 藝人 4307204 亦無本作。以泰文維基曲目表（1999-01-28 發行）與 Seesan Awards 得獎清單人工確認。"
-  },
-  "manualEvidenceUrls": [
-   "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B2%E0%B8%A2_%E0%B8%99%E0%B9%87%E0%B8%AD%E0%B8%97_%E0%B9%80%E0%B8%8B%E0%B9%80%E0%B8%A7%E0%B9%88%E0%B8%99",
-   "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
-   "https://www.discogs.com/artist/4307204"
-  ],
-  "curatorWhy": "泰國：泰國 grunge／另類搖滾團 Y Not 7 的代表作，包下 Seesan Awards 第 12 屆（1999）「最佳搖滾專輯」「最佳搖滾樂團」與最佳搖滾歌曲〈Yeah! Yeah!〉。",
-  "curatorRisk": "⚠ 身分證據偏薄：Discogs 無本作條目。廠牌依泰文維基「Grammy Grand 1997–1999、Maker Head 1999–」推定為 Grammy Grand，需回核。MB 無（走 §1）。",
-  "mbNote": "MB 查無（MB 有藝人但無此 release-group；Discogs 藝人 4307204 亦無本作。以泰文維基曲目表（1999-01-28 發行）與 Seesan Awards 得獎清單人工確認。），走 §1 人工身分。證據：https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B2%E0%B8%A2_%E0%B8%99%E0%B9%87%E0%B8%AD%E0%B8%97_%E0%B9%80%E0%B8%8B%E0%B9%80%E0%B8%A7%E0%B9%88%E0%B8%99 https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://www.discogs.com/artist/4307204 https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B2%E0%B8%A2_%E0%B8%99%E0%B9%87%E0%B8%AD%E0%B8%97_%E0%B9%80%E0%B8%8B%E0%B9%80%E0%B8%A7%E0%B9%88%E0%B8%99 https://en.wikipedia.org/wiki/Thai_rock",
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "genreException": "",
-  "selfTitled": false,
-  "apex": null,
-  "group": "b",
-  "lineType": "廣度",
-  "scene": "薄細項策展線（泰國）",
-  "queryAlias": "วาย น็อท เซเว่น",
-  "republic": "",
-  "cover": null
- },
- {
   "key": "desc2:Silly Fools|Mint",
   "artist": "Silly Fools",
   "album": "Mint",
