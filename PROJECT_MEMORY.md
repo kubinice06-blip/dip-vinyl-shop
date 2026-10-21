@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-21｜dip-vinyl-shop｜店主改判 Celtic Frost《Monotheist》→ 亢奮；build-card-moods 加 --allow-missing
+
+- **改動**：店主在頻率選歌抽到《Monotheist》落頹靡，裁定「要去躁的那一端」。`data/mood/overrides.json`（首筆）能量 2.6→3.4，質地 2、色溫 −2 不動，落亢奮（與 To Mega Therion、Morbid Tales 同格）。同速同重的 Godflesh、Candlemass 不連動。`scripts/build-card-moods.mjs` 新增 `--allow-missing`：342 張新上架卡還沒評分讓 gate 紅、改判寫不進前台檔，加旗標照樣寫（缺的存 null，前端雜湊對卡跳過）。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`scripts/build-card-moods.mjs`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：重建後前台檔該卡 [3.4, 2, −2, 3]，判式算得亢奮；錨點 104/104 同格；八格 頹靡 970→969、亢奮 2506→2507。
+
 ### 2026-10-21｜dip-vinyl-shop＋dip-vinyl-worker｜缺 Spotify 連結的真正根源：掃描狂打把 Spotify 配額打爆，429 期間 KV 被永久污染
 
 - **根源**：PR #111 只止住了掃描狂打，但傷害已造成——worker 的 Spotify app 被打到 `429 QUOTA_EXCEEDED`（`retry-after` 約 4.5 小時，token 正常）。429 期間 `/spotify-search` 退到 Cover Art Archive 仍補得到封面，舊寫法見到封面就**永久**寫進 KV，`spotifyUrl` 永遠空白；`/spotify-album-link` 備援也一起 429。掃 KV：`cover6:*` 12,191 個鍵只有 3,252 有 Spotify，**8,644 個是 CAA 無 Spotify（8,502 在卡池）**，U2《Achtung Baby》、Billy Joel、Justin Bieber 都灰掉——不是頻率選歌獨有，所有抽卡線都受影響，只是頻率選歌抽得多先被看到。

@@ -14,6 +14,9 @@
 import fs from 'node:fs';
 
 const CHECK_ONLY = process.argv.includes('--check');
+// --allow-missing：seed 有卡還沒評分時照樣寫檔（缺的存 null，前端用雜湊對卡、對不到就跳過）。
+// 用在只改 overrides 要立刻上線、新上架那批還沒跑評分的時候；孤兒 id 與錨點換格仍擋。
+const ALLOW_MISSING = process.argv.includes('--allow-missing');
 const idOf = (a, b) => ((a || '') + '|' + (b || '')).toLowerCase().replace(/\//g, '-').trim();
 
 const seed = JSON.parse(fs.readFileSync('seed_cards.json', 'utf8'));
@@ -55,7 +58,7 @@ for (const row of seed) {
   const k = cellOf(x, y, z);
   counts[k] = (counts[k] || 0) + 1;
 }
-if (missing) errors.push(`seed 有 ${missing} 張沒有座標（先補評分再重建）`);
+if (missing) (ALLOW_MISSING ? console.warn : errors.push.bind(errors))(`seed 有 ${missing} 張沒有座標（先補評分再重建）${ALLOW_MISSING ? '——--allow-missing，照樣寫檔' : ''}`);
 
 const orphans = Object.keys(v0.cards).filter(id => !seedIds.has(id));
 if (orphans.length) errors.push(`v0 檔有 ${orphans.length} 個 seed 以外的 id（改名或刪卡後沒重建）：${orphans.slice(0, 5).join('、')}${orphans.length > 5 ? '…' : ''}`);
