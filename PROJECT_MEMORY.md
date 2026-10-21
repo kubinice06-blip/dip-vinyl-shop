@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-21｜dip-vinyl-shop｜薄細項策展線 ts7：泰國搖滾（一）22 張＋蒙古搖滾 8 張上線；更正「同一藝人最多 3 張」
+
+- **起因**：店主 2026-10-20「越南 泰國 新加坡 蒙古 多補充 補到至少 50（不能因此水掉，還是要讚的）」。策展 p–u 六組＋補充輪 v–x 三組（`batch-progress/thin-sub-20261020/CUR-DISPATCH-ts7.md`、`-ts7b.md`），每張要有具體好評證據、寧缺勿濫。
+- **更正**：派工單誤寫「同一藝人最多 3 張」——此條 2026-09-04 店主已作廢（c53 第 150 條），2026-10-11 downtempo 線派工誤抄回來、本線沿用；店主 2026-10-21 指出。已改 `CUR-DISPATCH.md`、`CUR-DISPATCH-ts7.md`、downtempo 派工，被擋的夠格專輯由補充輪收回。
+- **ts7 內容**：泰國 1970–2004 共 22 張（Micro 3、Asanee–Wasan 2、Carabao、Tawan、Hin Lek Fai、Crub、Wolfpack、Blackhead、The Sun 2、Smile Buffalo、Silly Fools 2、Moderndog、Pru、Big Ass 2、O-Larn Project、Hi-Rock；以 Season Awards 得獎為主要證據）＋蒙古 8 張（Soyol Erdene、Haranga、Hurd、Nisvanis、The Lemons、Altan Urag、Uuhai、The HU《Hun》）。刪 Clash《ONE》、The Lemons《III》、Аясын Салхи（證據弱）、Y Not 7《Yeah!》（無封面來源）。
+- **類型樹**：泰國 12→34、蒙古 5→13。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`onboarding-manifest-add-20261021-ts7-20261021.json`、`batch-progress/add-20261021-ts7/*`、`desc-tools/batches/*/add-20261021-ts7-*`、`rock-asia-country-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`、`batch-progress/thin-sub-20261020/*`。
+- **驗證**：封面 30 張回讀 200；`verify-album-onboarding --published` 0 error；KV 回讀 30/30；card_catalog 30/30。
+
 ### 2026-10-20｜dip-vinyl-shop｜薄細項策展線 ts2：南亞、內亞與東南亞第二輪 46 張上線
 
 - **內容**：新加坡 10、馬來西亞 6、巴基斯坦 7、印度 7、蒙古 5、孟加拉 2、尼泊爾 2、印尼 7（1990 後補缺）。研究層更正廠牌 12 處（Fuzön → Virgin Records、Shironamhin → Rabbit Communications 初版、XPDC → Life 等）、The SIGIT 年份改 2006（印尼首發）。

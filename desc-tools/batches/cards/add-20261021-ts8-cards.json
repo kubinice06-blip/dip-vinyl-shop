@@ -530,47 +530,6 @@
   "cover": null
  },
  {
-  "key": "desc2:The Yers|Y",
-  "artist": "The Yers",
-  "album": "Y",
-  "year": 2011,
-  "genre": "rock",
-  "genres": [
-   "rock"
-  ],
-  "label": "Smallroom",
-  "country": "th",
-  "rgMbid": "",
-  "identitySource": "manual",
-  "mbAbsenceProof": {
-   "queries": [
-    "https://musicbrainz.org/ws/2/release-group?query=artist:\"เดอะเยอร์ส\"&fmt=json",
-    "https://musicbrainz.org/ws/2/release-group?query=releasegroup:\"Y\" AND artist:\"The Yers\"&fmt=json"
-   ],
-   "checkedAt": "2026-10-20",
-   "conclusion": "MB 藝人方向 count=0（查無 The Yers／เดอะเยอร์ส），作品方向 count=0"
-  },
-  "manualEvidenceUrls": [
-   "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0%E0%B9%80%E0%B8%A2%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%AA",
-   "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
-  ],
-  "curatorWhy": "泰國（二）2005 後：新浪潮／後龐克復興樂團 The Yers 的首張專輯，獲第 24 屆 Season Awards 最佳新人，同時入圍 Season 年度專輯、最佳搖滾專輯與 Fat Awards 年度專輯。",
-  "curatorRisk": "⚠ 得獎為最佳新人（附註本作），兩項專輯獎為入圍；證據強度中等，可列汰換候補",
-  "mbNote": "MB 查無（MB 藝人方向 count=0（查無 The Yers／เดอะเยอร์ส），作品方向 count=0），走 §1 人工身分。證據：https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0%E0%B9%80%E0%B8%A2%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%AA https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0%E0%B9%80%E0%B8%A2%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%AA",
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "genreException": "",
-  "selfTitled": false,
-  "apex": null,
-  "group": "b",
-  "lineType": "廣度",
-  "scene": "薄細項策展線（泰國（二）2005 後）",
-  "queryAlias": "เดอะเยอร์ส",
-  "republic": "",
-  "cover": null
- },
- {
   "key": "desc2:Silent Scream|Lost and Found",
   "artist": "Silent Scream",
   "album": "Lost and Found",
@@ -969,36 +928,6 @@
   "cover": null
  },
  {
-  "key": "desc2:Chillies|KIM",
-  "artist": "Chillies",
-  "album": "KIM",
-  "year": 2025,
-  "genre": "rock",
-  "genres": [
-   "rock",
-   "pop"
-  ],
-  "label": "Warner Music Vietnam",
-  "country": "vn",
-  "rgMbid": "6b721445-aade-4e91-b2fc-20e569123286",
-  "identitySource": "pinned",
-  "curatorWhy": "越南：西貢獨立搖滾樂團 Chillies 第二張錄音室專輯，進入第 20 屆 Cống hiến 音樂獎「年度專輯」評審前十名（2026），樂團作品在流行歌手主導的年度專輯榜罕見入選。",
-  "curatorRisk": "⚠ 獎項證據是「前十名但未入圍正式提名」，比正式入圍弱一級。",
-  "mbNote": "MB release-group 6b721445-aade-4e91-b2fc-20e569123286：title「KIM」、Album、first-release-date 2025-10-16、artist-credit「Chillies」。證據：https://vi.wikipedia.org/wiki/Gi%E1%BA%A3i_th%C6%B0%E1%BB%9Fng_C%E1%BB%91ng_hi%E1%BA%BFn_cho_Album_c%E1%BB%A7a_n%C4%83m https://vi.wikipedia.org/wiki/Chillies_(ban_nh%E1%BA%A1c) https://musicbrainz.org/release-group/6b721445-aade-4e91-b2fc-20e569123286",
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "genreException": "",
-  "selfTitled": false,
-  "apex": null,
-  "group": "d",
-  "lineType": "廣度",
-  "scene": "薄細項策展線（越南）",
-  "queryAlias": "",
-  "republic": "",
-  "cover": null
- },
- {
   "key": "desc2:Quái Vật Tí Hon|Đường về",
   "artist": "Quái Vật Tí Hon",
   "album": "Đường về",
@@ -1138,36 +1067,6 @@
   "lineType": "廣度",
   "scene": "薄細項策展線（越南）",
   "queryAlias": "artist: Ta Quang Thang",
-  "republic": "",
-  "cover": null
- },
- {
-  "key": "desc2:Thắng|Cái Đầu Tiên",
-  "artist": "Thắng",
-  "album": "Cái Đầu Tiên",
-  "year": 2023,
-  "genre": "rock",
-  "genres": [
-   "rock",
-   "pop"
-  ],
-  "label": "LP Club",
-  "country": "vn",
-  "rgMbid": "31919c65-5245-4160-9a3a-640ccefea141",
-  "identitySource": "pinned",
-  "curatorWhy": "越南：Ngọt 主唱兼主創 Vũ Đinh Trọng Thắng 的首張個人錄音室專輯（樂團解散前夕），進入第 18 屆 Cống hiến「年度專輯」評審前十名（2024）。",
-  "curatorRisk": "⚠ 獎項證據為「前十名未入圍正式提名」；個人專輯偏 indie pop／rock，infobox 曲風 Indie、V-pop、Rock。",
-  "mbNote": "MB release-group 31919c65-5245-4160-9a3a-640ccefea141：title「Cái Đầu Tiên」、Album、first-release-date 2023-04-30、artist-credit「Thắng」。證據：https://vi.wikipedia.org/wiki/Gi%E1%BA%A3i_th%C6%B0%E1%BB%9Fng_C%E1%BB%91ng_hi%E1%BA%BFn_cho_Album_c%E1%BB%A7a_n%C4%83m https://vi.wikipedia.org/wiki/Th%E1%BA%AFng_(nh%E1%BA%A1c_s%C4%A9) https://musicbrainz.org/release-group/31919c65-5245-4160-9a3a-640ccefea141",
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "genreException": "",
-  "selfTitled": false,
-  "apex": null,
-  "group": "d",
-  "lineType": "廣度",
-  "scene": "薄細項策展線（越南）",
-  "queryAlias": "artist: Vũ Đinh Trọng Thắng; Thang",
   "republic": "",
   "cover": null
  },
