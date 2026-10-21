@@ -106,7 +106,7 @@
 .tune-now .dot{width:5px;height:5px;background:#ff4d3d;box-shadow:0 0 6px #ff4d3d;animation:tuneBlink .9s steps(2) infinite;flex:none;align-self:flex-start}
 @keyframes tuneBlink{50%{opacity:.15}}
 .tune-msg{position:absolute;inset:0;display:grid;place-items:center;color:#9aa088;font-size:12px;text-align:center;padding:20px;line-height:1.8}
-.tune-panel{position:relative;min-width:0;min-height:0;display:grid;place-items:center;padding:10px 10px calc(18px + env(safe-area-inset-bottom,0px));background:#2c3037 repeating-linear-gradient(135deg,rgba(255,255,255,.025) 0 2px,transparent 2px 9px);border-top:2px solid #14161a;overflow:hidden}
+.tune-panel{position:relative;min-width:0;min-height:0;display:grid;place-items:start center;padding:10px 10px 0;background:#2c3037 repeating-linear-gradient(135deg,rgba(255,255,255,.025) 0 2px,transparent 2px 9px);border-top:2px solid #14161a;overflow:hidden}
 @media (orientation:landscape) and (max-height:600px){.tune-panel{border-top:0;border-left:2px solid #14161a;padding:12px}}
 /* 主機拆兩個模組：FREQUENCY 靠左 76% 寬、右側一塊直立的黃銅「就這張」；輪子模組全寬。整台高 ≈ 0.86 倍寬，依視窗高度反推寬度，一定塞進一個畫面 */
 .tune-console{position:relative;width:min(100%,600px,calc((100dvh - 340px) / 0.86));display:flex;flex-direction:column;align-items:stretch;gap:1.2cqw;container-type:inline-size;user-select:none}
@@ -114,7 +114,7 @@
 .tune-mod{position:relative;background-size:100% 100%;background-repeat:no-repeat;image-rendering:pixelated}
 .tune-row1{display:flex;gap:2cqw;align-items:stretch}
 .tune-mod-freq{width:76%;flex:none;aspect-ratio:1438/625;background-image:url(tune/panel-freq.jpg)}
-.tune-mod-wheels{width:100%;aspect-ratio:1438/712;background-image:url(tune/panel-wheels.jpg)}
+.tune-mod-wheels{width:100%;aspect-ratio:1438/983;background-image:url(tune/panel-wheels.jpg)}
 .tune-btncol{flex:1 1 0;min-width:0;display:grid;place-items:center;padding:1cqw 0}
 .tune-draw{height:100%;max-width:100%;aspect-ratio:168/358;background:url(tune/btn-v.png) center/100% 100% no-repeat;image-rendering:pixelated;border:0;padding:0;cursor:pointer;writing-mode:vertical-rl;text-orientation:upright;font-family:var(--pix);font-size:5cqw;letter-spacing:.3em;color:#2a1e07;text-shadow:.15cqw .15cqw 0 rgba(255,236,170,.55);display:grid;place-items:center}
 .tune-draw:active{transform:translateY(.4cqw);filter:brightness(1.08)}
@@ -134,7 +134,7 @@
 .tune-led{left:83.3%;width:1.8%;height:2.56%;background:#2b2a1f;pointer-events:none}
 .tune-led.top{top:41.3%}.tune-led.bot{top:79%}
 .tune-led.on{background:#ffd34d;box-shadow:0 0 .8cqw #ffd34d}
-.tune-wheel{background:transparent;cursor:ns-resize;touch-action:none;overflow:hidden;top:21.2%;height:75.3%}
+.tune-wheel{background:transparent;cursor:ns-resize;touch-action:none;overflow:hidden;top:15.36%;height:54.5%}
 .tune-wheel canvas{display:block;width:100%;height:100%;image-rendering:pixelated}
 .tune-wheel[data-axis="x"]{left:15.58%;width:12.66%}.tune-wheel[data-axis="y"]{left:44.78%;width:12.24%}.tune-wheel[data-axis="z"]{left:73.7%;width:12.24%}
 .tune-wheel:focus-visible{outline:2px solid #ffd166;outline-offset:-2px}
