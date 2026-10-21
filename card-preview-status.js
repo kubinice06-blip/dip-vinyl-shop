@@ -3008,4 +3008,10 @@ window.DipPreviewStatus = Object.freeze({
   "the caulfield cult|cult": "unavailable",
   "caracal|welcome the ironists": "unavailable",
   "wormrot|abuse": "unavailable",
+  "altan urag|hypnotism": "unavailable",
+  "altan urag|nation": "unavailable",
+  "altan urag|once upon a time in mongolia": "unavailable",
+  "altan urag|mongol": "unavailable",
+  "аясын салхи|coffin town under the moon": "unavailable",
+  "аясын салхи|eastern wind": "unavailable",
 });
