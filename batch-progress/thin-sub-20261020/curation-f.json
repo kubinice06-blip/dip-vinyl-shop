@@ -1,0 +1,625 @@
+{
+  "group": "f",
+  "factions": [
+    {
+      "id": "fado",
+      "zh": "葡萄牙法朵 Fado",
+      "count": 12,
+      "why": "Fado 正典：Amália 以外的新舊世代（Camané、Mísia、Carminho、Gisela João 等）與老一輩（Marceneiro、Lucília do Carmo、Noronha）"
+    },
+    {
+      "id": "flamenco",
+      "zh": "西班牙佛朗明哥 Flamenco",
+      "count": 13,
+      "why": "Flamenco 正典：新佛朗明哥（Lole y Manuel、Ketama、Pata Negra）、當代 cantaor 與 Mairena、La Paquera 等歷史錄音"
+    }
+  ],
+  "albums": [
+    {
+      "artist": "Camané",
+      "album": "Na linha da vida",
+      "year": 1998,
+      "label": "EMI-Valentim de Carvalho",
+      "country": "pt",
+      "faction": "fado",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "Camané 的出道專輯，新世代男聲 fadista 回到傳統法朵語彙的起點，後來他被視為 Amália 之後最重要的男歌手。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/897498eb-ce2f-3e1d-8f8c-f8f00928f602",
+        "https://www.discogs.com/master/1245062",
+        "https://www.allmusic.com/album/mw0000698820"
+      ],
+      "mbRgMbid": "897498eb-ce2f-3e1d-8f8c-f8f00928f602",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "Cristina Branco",
+      "album": "Corpo iluminado",
+      "year": 2001,
+      "label": "EmArcy",
+      "country": "pt",
+      "faction": "fado",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "Cristina Branco 以葡語詩作入歌的代表作，經 EmArcy／Universal 發行到歐美，是新世代法朵走向國際的關鍵一張。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/aa604710-bc31-3f1e-bef1-0d682cddf00e",
+        "https://www.discogs.com/master/963012",
+        "https://www.allmusic.com/album/mw0000658130"
+      ],
+      "mbRgMbid": "aa604710-bc31-3f1e-bef1-0d682cddf00e",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "Mísia",
+      "album": "Garras dos sentidos",
+      "year": 1998,
+      "label": "Erato Detour",
+      "country": "pt",
+      "faction": "fado",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "Mísia 把詩、探戈與歐洲歌謠帶進法朵的錄音室作，Erato 向國際發行，是她九〇年代路線最完整的一張。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/4b76545f-bc34-3435-9c64-18dc30c67b01",
+        "https://www.discogs.com/master/959114",
+        "https://www.allmusic.com/album/mw0000037906"
+      ],
+      "mbRgMbid": "4b76545f-bc34-3435-9c64-18dc30c67b01",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "Carminho",
+      "album": "Fado",
+      "year": 2009,
+      "label": "EMI Portugal",
+      "country": "pt",
+      "faction": "fado",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "Carminho 的首張專輯，以家傳的法朵底子打出 2010 年代新一代 fadista 的第一槍。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/e56cac49-af30-4619-b424-4d9238134e3d",
+        "https://www.discogs.com/master/783420",
+        "https://www.allmusic.com/album/mw0001307106"
+      ],
+      "mbRgMbid": "e56cac49-af30-4619-b424-4d9238134e3d",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "Gisela João",
+      "album": "Gisela João",
+      "year": 2013,
+      "label": "Edições Valentim de Carvalho",
+      "country": "pt",
+      "faction": "fado",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "Gisela João 的同名首張，以近乎原生的 Barcelos 嗓音與傳統配器重新推高法朵的現場張力，2013 年起帶動新一波關注。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/3336d196-32c3-453f-b425-bbc8085413ae",
+        "https://www.discogs.com/master/599332",
+        "https://en.wikipedia.org/wiki/Gisela_Jo%C3%A3o"
+      ],
+      "mbRgMbid": "3336d196-32c3-453f-b425-bbc8085413ae",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "Katia Guerreiro",
+      "album": "Nas mãos do fado",
+      "year": 2003,
+      "label": "Ocarina",
+      "country": "pt",
+      "faction": "fado",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "Katia Guerreiro 的突破專輯，BBC 樂評給予肯定，以嚴謹的傳統唱法確立她在 Amália 之後世代的位置。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/01d0aaf5-5cf1-35e1-91ca-8fe08522e248",
+        "https://www.discogs.com/master/894022",
+        "https://www.bbc.co.uk/music/reviews/4654"
+      ],
+      "mbRgMbid": "01d0aaf5-5cf1-35e1-91ca-8fe08522e248",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "Alfredo Marceneiro",
+      "album": "Alfredo Marceneiro e o fado",
+      "year": 1972,
+      "label": "Estúdio",
+      "country": "pt",
+      "faction": "fado",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "Marceneiro 是法朵「老衛」的象徵，這張七〇年代專輯留下他晚年的唱法與經典曲目，是接觸法朵黃金時代最直接的入口。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/a4cc2e77-76d9-42be-bf0d-4f91aeb60a8c",
+        "https://www.discogs.com/master/2283673",
+        "https://en.wikipedia.org/wiki/Alfredo_Marceneiro"
+      ],
+      "mbRgMbid": "a4cc2e77-76d9-42be-bf0d-4f91aeb60a8c",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": "MB 另有同名 EP（d169a86b），這裡取 Album 型的 a4cc2e77；若卡池日後加 EP 需避免撞名。"
+    },
+    {
+      "artist": "Fernando Maurício",
+      "album": "Tantos fados deu-me a vida",
+      "year": 1995,
+      "label": "Discossete",
+      "country": "pt",
+      "faction": "fado",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "Fernando Maurício 被稱為「法朵之王」之一，Mouraria 傳統唱法的重要見證，這張九〇年代專輯收錄他晚年的代表曲目。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/dff5963b-6413-4e28-be84-a5ccb444796a",
+        "https://en.wikipedia.org/wiki/Fernando_Maur%C3%ADcio"
+      ],
+      "mbRgMbid": "dff5963b-6413-4e28-be84-a5ccb444796a",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": "無 Discogs master 連結；可能含舊錄音再整理，上架前請確認（若為整理盤需補 archival-compilation）。"
+    },
+    {
+      "artist": "Lucília do Carmo",
+      "album": "Recordações",
+      "year": 1971,
+      "label": "Decca Portugal",
+      "country": "pt",
+      "faction": "fado",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "Lucília do Carmo（Carlos do Carmo 之母）的七〇年代專輯，里斯本法朵老傳統的女聲代表，與池中 Carlos do Carmo 形成家族對照。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/010d7199-2751-460f-89d9-73c5b4987caa",
+        "https://www.discogs.com/master/795149",
+        "https://en.wikipedia.org/wiki/Carlos_do_Carmo"
+      ],
+      "mbRgMbid": "010d7199-2751-460f-89d9-73c5b4987caa",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": "證據第二條為 Carlos do Carmo 頁（母子關係），Lucília 本人無獨立英文維基頁。"
+    },
+    {
+      "artist": "Maria Teresa de Noronha",
+      "album": "Saudade das saudades",
+      "year": 1966,
+      "label": "Decca Portugal",
+      "country": "pt",
+      "faction": "fado",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "貴族出身的 Noronha 以優雅克制的唱腔聞名，這張六〇年代專輯是她 Fado Menor 一路的代表。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/4f890e01-49d9-43a3-b5b8-7ee81d2058cc",
+        "https://www.discogs.com/master/892178",
+        "https://en.wikipedia.org/wiki/Maria_Teresa_de_Noronha"
+      ],
+      "mbRgMbid": "4f890e01-49d9-43a3-b5b8-7ee81d2058cc",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "António Zambujo",
+      "album": "Guia",
+      "year": 2010,
+      "label": "World Village",
+      "country": "pt",
+      "faction": "fado",
+      "genres": [
+        "world",
+        "pop"
+      ],
+      "why": "Zambujo 把阿連特茹式的輕柔嗓音、巴西 bossa 與法朵揉在一起的成熟之作，World Village 向歐洲發行，帶動「新法朵」的跨界風格。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/cfa6ae12-1c6c-4ce0-8ba7-00298690ff65",
+        "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Zambujo"
+      ],
+      "mbRgMbid": "cfa6ae12-1c6c-4ce0-8ba7-00298690ff65",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "Ricardo Ribeiro",
+      "album": "Hoje é assim, amanhã não sei",
+      "year": 2016,
+      "label": "Parlophone Portugal",
+      "country": "pt",
+      "faction": "fado",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "Ricardo Ribeiro 是當代最受推崇的男聲 fadista 之一，這張以現代編曲與傳統詩意並行，是他 Parlophone 時期的代表。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/c65c687a-f088-41db-b4e0-2087d8803d5b",
+        "https://www.discogs.com/master/2756768",
+        "https://www.allmusic.com/album/mw0002934157"
+      ],
+      "mbRgMbid": "c65c687a-f088-41db-b4e0-2087d8803d5b",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "Lole y Manuel",
+      "album": "Nuevo día",
+      "year": 1975,
+      "label": "Movieplay",
+      "country": "es",
+      "faction": "flamenco",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "Lole Montoya 與 Manuel Molina 的首張，把吉普賽抒情與民謠式編曲帶進佛朗明哥，是「新佛朗明哥」運動最早的標誌之一。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/64b702b3-9038-4cc8-842e-e8bc265f3819",
+        "https://www.discogs.com/master/384912"
+      ],
+      "mbRgMbid": "64b702b3-9038-4cc8-842e-e8bc265f3819",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "Ketama, Toumani Diabaté & Danny Thompson",
+      "album": "Songhai",
+      "year": 1988,
+      "label": "Hannibal",
+      "country": "es",
+      "faction": "flamenco",
+      "genres": [
+        "world",
+        "jazz"
+      ],
+      "why": "Ketama 與馬利科拉琴手 Toumani Diabaté、英國低音提琴手 Danny Thompson 的合作錄音，佛朗明哥與曼丁音樂跨洲對話的經典。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/229156df-ee1e-3d0e-8804-08405dbc23bc",
+        "https://www.discogs.com/master/105976",
+        "https://en.wikipedia.org/wiki/Ketama"
+      ],
+      "mbRgMbid": "229156df-ee1e-3d0e-8804-08405dbc23bc",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "Ketama",
+      "uncertain": "MB 掛名為三方合作；池中無 Ketama 或 Toumani Diabaté 同名卡，去重為 0。"
+    },
+    {
+      "artist": "Pata Negra",
+      "album": "Blues de la frontera",
+      "year": 1987,
+      "label": "Nuevos Medios",
+      "country": "es",
+      "faction": "flamenco",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "Amador 兄弟把佛朗明哥吉他與藍調／搖滾融成一體，是八〇年代 flamenco-rock 的核心專輯。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/b4d78b4a-7ca7-36ee-b069-05974c0ffe5f",
+        "https://www.discogs.com/master/14149",
+        "https://en.wikipedia.org/wiki/Pata_Negra_(band)"
+      ],
+      "mbRgMbid": "b4d78b4a-7ca7-36ee-b069-05974c0ffe5f",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "Diego el Cigala",
+      "album": "Corren tiempos de alegría",
+      "year": 2001,
+      "label": "Ariola",
+      "country": "es",
+      "faction": "flamenco",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "El Cigala 的獨唱代表作，以 Rumba／copla 氣質與強烈嗓音打開他在《Lágrimas negras》之前的名聲。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/797d7c34-d33a-392b-9e92-464547c32b6a",
+        "https://en.wikipedia.org/wiki/Diego_el_Cigala"
+      ],
+      "mbRgMbid": "797d7c34-d33a-392b-9e92-464547c32b6a",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": "無 Discogs 連結；池中已有他與 Bebo Valdés 合作的《Lágrimas Negras》（不同藝人掛名，去重為 0）。"
+    },
+    {
+      "artist": "Estrella Morente",
+      "album": "Mi cante y un poema",
+      "year": 2001,
+      "label": "Chewaka／Virgin",
+      "country": "es",
+      "faction": "flamenco",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "Enrique Morente 之女的首張專輯，以詩歌與傳統 cante 並行，後來在 Real World 國際發行，是她確立聲名的起點。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/802c8d4f-ff81-3650-962a-6a6c2f6a77cd",
+        "https://www.discogs.com/master/375440",
+        "https://www.bbc.co.uk/music/reviews/dfdp"
+      ],
+      "mbRgMbid": "802c8d4f-ff81-3650-962a-6a6c2f6a77cd",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "Mayte Martín",
+      "album": "Muy frágil",
+      "year": 1995,
+      "label": "K Industria Cultural",
+      "country": "es",
+      "faction": "flamenco",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "加泰隆尼亞出身的 cantaora Mayte Martín 以極簡配器與細膩控制聞名，這張是她早期受樂評推崇的代表錄音。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/deeea85c-762d-4689-83b1-063770442281",
+        "https://en.wikipedia.org/wiki/Mayte_Mart%C3%ADn"
+      ],
+      "mbRgMbid": "deeea85c-762d-4689-83b1-063770442281",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": "無 Discogs 連結，Wikipedia 為藝人頁；請上架前確認專輯級證據。"
+    },
+    {
+      "artist": "Miguel Poveda",
+      "album": "Coplas del querer",
+      "year": 2009,
+      "label": "Universal Music Spain",
+      "country": "es",
+      "faction": "flamenco",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "Poveda 以佛朗明哥嗓音詮釋西班牙 copla 老歌的專輯，大獲商業與樂評成功，是他走向大眾的轉折。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/3f3d5cb1-b1dd-485c-b02f-b703f2b50a1d",
+        "https://en.wikipedia.org/wiki/Miguel_Poveda"
+      ],
+      "mbRgMbid": "3f3d5cb1-b1dd-485c-b02f-b703f2b50a1d",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": "copla 與 flamenco 混合；若店主要求純 flamenco 可刪。"
+    },
+    {
+      "artist": "Carmen Linares",
+      "album": "Antología de la mujer en el cante",
+      "year": 1996,
+      "label": "Mercury／PolyGram Ibérica",
+      "country": "es",
+      "faction": "flamenco",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "Carmen Linares 以一人之力重唱從 La Niña de los Peines 起的女性 cante 傳統，是 flamenco 女性史上的重要錄音。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/5fa4ae2c-95dc-4f5b-a99b-e025b5674f90",
+        "https://www.discogs.com/master/550988"
+      ],
+      "mbRgMbid": "5fa4ae2c-95dc-4f5b-a99b-e025b5674f90",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "José Mercé",
+      "album": "Aire",
+      "year": 2000,
+      "label": "Virgin España",
+      "country": "es",
+      "faction": "flamenco",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "José Mercé 的突破專輯，把 Jerez 唱腔放進現代編曲，是 2000 年代 flamenco 暢銷與口碑兼顧的代表。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/3c114867-3ce4-3cc0-a8f6-c81b3a3e68d2",
+        "https://www.discogs.com/master/445655"
+      ],
+      "mbRgMbid": "3c114867-3ce4-3cc0-a8f6-c81b3a3e68d2",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "La Paquera de Jerez",
+      "album": "La maestría flamenca de La Paquera de Jerez",
+      "year": 1969,
+      "label": "Marfer",
+      "country": "es",
+      "faction": "flamenco",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "La Paquera 是 Jerez 的 cante 傳奇，這張六〇年代錄音保存她 bulerías 與 soleá 的全盛嗓音。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/956fccb7-058d-42b6-b42c-577fb3c36a71",
+        "https://en.wikipedia.org/wiki/La_Paquera_de_Jerez"
+      ],
+      "mbRgMbid": "956fccb7-058d-42b6-b42c-577fb3c36a71",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": "無 Discogs 連結。"
+    },
+    {
+      "artist": "Enrique Morente",
+      "album": "Despegando",
+      "year": 1977,
+      "label": "CBS",
+      "country": "es",
+      "faction": "flamenco",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "Morente 早期以「起飛」姿態把傳統 cante 與現代音樂語彙放在同一張專輯，是新佛朗明哥的重要起點。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/94bb1e39-0004-3e4f-b73a-5e5b170cdccb",
+        "https://www.discogs.com/master/390575",
+        "https://www.wikidata.org/wiki/Q49468454"
+      ],
+      "mbRgMbid": "94bb1e39-0004-3e4f-b73a-5e5b170cdccb",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": "池中已有他與 Lagartija Nick 的《Omega》；此為個人盤，去重為 0。"
+    },
+    {
+      "artist": "Fernanda de Utrera y Bernarda de Utrera",
+      "album": "El cante de Fernanda y Bernarda de Utrera",
+      "year": 1993,
+      "label": "Hispavox",
+      "country": "es",
+      "faction": "flamenco",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "Utrera 姊妹是 Lebrija／Utrera 學派 bulerías 與 soleá 的代表聲音，這張 Hispavox 專輯整理她們傳世的 cante。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/8511ede2-d0d4-45da-84b8-d516bd52010d",
+        "https://es.wikipedia.org/wiki/Fernanda_de_Utrera"
+      ],
+      "mbRgMbid": "8511ede2-d0d4-45da-84b8-d516bd52010d",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "Fernanda y Bernarda de Utrera",
+      "uncertain": "1993 年出版，錄音年代可能早於此；若確認為舊錄音整理需補 archival-compilation。"
+    },
+    {
+      "artist": "Antonio Mairena",
+      "album": "La llave de oro del cante flamenco",
+      "year": 1964,
+      "label": "Hispavox",
+      "country": "es",
+      "faction": "flamenco",
+      "genres": [
+        "world",
+        "folk"
+      ],
+      "why": "Mairena 1962 年贏得科爾多瓦「Llave de Oro del Cante」後的代表錄音，他以此專輯系列奠定「純正吉普賽 cante」的 neoclassical 路線。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/",
+        "https://en.wikipedia.org/wiki/Antonio_Mairena",
+        "https://es.wikipedia.org/wiki/Antonio_Mairena"
+      ],
+      "mbRgMbid": "",
+      "mbAbsenceProof": {
+        "queries": [
+          "artist:\"Antonio Mairena\"（MB 全部 release-group，count=9，皆為合輯或後世整理，無此專輯）",
+          "artist:\"Antonio Mairena\" AND releasegroup:\"La llave de oro del cante flamenco\"（count=0）"
+        ],
+        "checkedAt": "2026-10-20",
+        "conclusion": "MB 有藝人但無此 release-group；其 1958–68 年原版 LP 皆未登錄"
+      },
+      "manualEvidenceUrls": [
+        "https://en.wikipedia.org/wiki/Antonio_Mairena",
+        "https://es.wikipedia.org/wiki/Antonio_Mairena"
+      ],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": "Hispavox 目錄號（HH10-251 等）來自 WebSearch 摘要的某discography 站，未再核第二來源；Wikipedia 僅列名稱與年份。若嫌證據薄，可改 MB 已登錄的《Raices del cante gitano》（2004）。"
+    }
+  ],
+  "notes": [
+    "f 組共 25 張（Fado 12＋Flamenco 13）；名單 Fado 列了 14 人，捨 Argentina Santos、Hermínia Silva（僅合輯／薄）；Flamenco 列了 19 人，未收 Manolo Caracol、Israel Fernández、Rocío Márquez、Niña Pastori、Remedios Amaya（MB 皆有可釘專輯，如 Claridad 2f60a329、Cañaílla 996f3d45、Pura sangre 88a53a3d，若店主要增量可補）。",
+    "MB 釘住 24 張、人工身分 1 張（Antonio Mairena）。",
+    "年份皆採 MB first-release-date（Camané 1998、Katia Guerreiro 2003、Cigala 2001、Zambujo《Guia》2010）。",
+    "WebSearch 用 1 次（Mairena 目錄），其餘為 MB API＋WebFetch／HTTP 檢查。"
+  ]
+}

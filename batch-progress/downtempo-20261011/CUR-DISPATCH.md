@@ -8,7 +8,7 @@
 - **只收正規錄音室專輯或公認原創專輯**：不收合輯、精選、DJ mix（DJ-Kicks、fabric 等）、單曲、EP。dub 例外：1970 年代 dub 專輯本來就是 version 盤，算原創專輯；但「Best of」「Anthology」「Collection」類合輯不收。
 - **去重**：每張都要跑下面的指令，輸出 0 才可提（藝人名互為子字串也算撞）：
   `node -e 'const s=require("./seed_cards.json");const n=x=>x.toLowerCase().normalize("NFKC").replace(/[^\p{L}\p{N}]+/gu,"");const [a,b]=process.argv.slice(1);console.log(s.filter(r=>n(r[1])===n(b)&&(n(r[0]).includes(n(a))||n(a).includes(n(r[0])))).length)' "藝人" "專輯"`
-- 同一藝人最多 3 張（經典大師如 King Tubby 可到 3），大多 1–2 張。
+- **同一藝人沒有張數上限**（2026-09-04 店主裁定作廢；本行 2026-10-21 更正，原文誤寫「最多 3 張」）。
 - **事實一律查證**：年份（原盤首發）、廠牌、MusicBrainz release-group MBID 取自 MusicBrainz API（`https://musicbrainz.org/ws/2/release-group?query=...&fmt=json`，header `User-Agent: dip-vinyl-shop/1.0 (kubinice06@gmail.com)`，**每秒最多 1 次**，503 就等 2 秒重試）。MB 查不到的照收但標 `uncertain`，附 Discogs／維基網址。
 - **WebSearch 每組最多 10 次**（整個工作階段共用 200 次額度），多用 MB API 與 WebFetch 維基／AllMusic。
 - 名稱：照 MusicBrainz 正規名；連字號用 ASCII `-`（MB 常用 U+2010，**不要照抄**）；希臘字母 μ 用 U+00B5。

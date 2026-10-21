@@ -1,0 +1,2346 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-ts7",
+ "batchNote": "薄細項策展線（add-20261021-ts7）",
+ "createdAt": "2026-10-21T06:35:46Z",
+ "albums": [
+  {
+   "artist": "ไมโคร",
+   "album": "สุริยคราส",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=ไมโคร → 36fb1799（TH，score 100）但該藝人 release-group 數 0",
+      "release-group?query=artist:\"ไมโคร\" AND releasegroup:\"สุริยคราส\"（count=0）；releasegroup:\"สุริยคราส\" 單查也 count=0"
+     ],
+     "checkedAt": "2026-10-20",
+     "conclusion": "MB 有藝人 ไมโคร 但未收任何 release-group；以 Discogs master 875428（1995，Grammy，LP／CD）與泰文維基、Seesan Awards 得獎清單人工確認。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/875428",
+     "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "manualRuling": "雲端主線 2026-10-21 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261021-ts7）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "泰國：Micro 在原主唱 Ampol 單飛、改由吉他手 Kob 主唱後的作品，包下 Seesan Awards 第 8 屆（1995）「年度最佳專輯」與「最佳樂團」，是 80–90 年代泰國搖滾代表樂團的評論高峰。｜⚠ MB 無此 release-group（走 §1）。｜MB 查無（MB 有藝人 ไมโคร 但未收任何 release-group；以 Discogs master 875428（1995，Grammy，LP／CD）與泰文維基、Seesan Awards 得獎清單人工確認。），走 §1 人工身分。證據：https://www.discogs.com/master/875428 https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5) https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://www.discogs.com/master/875428 https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+    "queryAlias": "Micro Suriyakhrat"
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1793077772",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/33/17/d0/3317d064-6694-f62d-7000-5de27ddc4de6/888332983105.jpg/600x600bb.jpg",
+    "note": "人工身分卡（無 CAA）；取已釘定試聽的 Apple 1793077772 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 4,
+    "listeners": 18,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 2/5/4（Last.fm listeners 18）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "鍵盤手 Boy 掛名製作，換來三座 Seesan 獎。出自曼谷起家的 Micro，這一張的風格偏硬搖滾，掛名的 Boy 本名 Santhan Lauhawatanawit。吉他手 Kob 接任主唱後，這是第二張，1995 年 6 月面世時掛 GMM Grammy，收 10 首歌。錄音分散在 Jam Studio、Center Stage 等五處錄音室。第 8 屆 Seesan Awards 上，Micro 包辦最佳團體與年度最佳專輯，Boy 本人另得最佳製作人。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+     "https://www.discogs.com/release/7385142",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://www.discogs.com/master/875428"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/80/3c/fa/803cfa74-7e32-f749-e2e0-345d015aae89/mzaf_2711233733385649884.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "appleCollectionId": "1793077772",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1793077772「ไมโคร《ไมโคร สุริยคราส》」：Apple jp 1793077772：GMM 官方上架、首發 1995-06-27 與 ℗1995 和卡面一致（MB 無曲目表，以盤名＋廠牌＋年份核對），取第 1 軌同名曲。，取第 1 軌〈สุริยคราส〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ไมโคร",
+   "album": "ร็อค เล็ก เล็ก",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=ไมโคร → 36fb1799（TH）但該藝人 release-group 數 0",
+      "release-group?query=artist:\"ไมโคร\" AND releasegroup:\"ร็อค เล็ก เล็ก\"（count=0）；releasegroup 單查 count=0"
+     ],
+     "checkedAt": "2026-10-20",
+     "conclusion": "MB 有藝人無作品；以 Discogs master 875385（1986，泰國卡帶／LP）與泰文維基人工確認。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/875385",
+     "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+     "https://en.wikipedia.org/wiki/Thai_rock"
+    ],
+    "manualRuling": "雲端主線 2026-10-21 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261021-ts7）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "泰國：Micro 的首張專輯，Rewat Buddhinan 簽進 Grammy 後推出，英文維基〈Thai rock〉把它列為 80 年代泰國搖滾起飛的代表作（〈รักปอนปอน〉〈จำฝังใจ〉），開啟 1986–1990 的樂團黃金期。｜⚠ 盤名拼法兩種：泰文維基與卡帶作「ร็อค」，Discogs master 作「ร็อก」；採維基與原卡帶。MB 無 release-group（走 §1）。｜MB 查無（MB 有藝人無作品；以 Discogs master 875385（1986，泰國卡帶／LP）與泰文維基人工確認。），走 §1 人工身分。證據：https://www.discogs.com/master/875385 https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5) https://en.wikipedia.org/wiki/Thai_rock https://en.wikipedia.org/wiki/Thai_rock https://www.discogs.com/master/875385 https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+    "queryAlias": "ร็อก เล็ก เล็ก / Micro Rock Lek Lek"
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1793394003",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/84/26/7b/84267ba8-0f6c-d491-8107-2ffb78e3d8d8/888332969451.jpg/600x600bb.jpg",
+    "note": "人工身分卡（無 CAA）；取已釘定試聽的 Apple 1793394003 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 458,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 458）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "替 mor lam 樂團暖場時，台下朝他們丟冰塊。那是 Micro 早年的遭遇，這個六人編制的泰語搖滾團由 Nui 領唱，當場被冰塊趕下了台。樂團前身叫 The Crab，造型醒目，被導演 Piak Poster 找去演電影，1984 年才取名 Micro。一次電視試演讓 Rewat Buddhinan 看中，樂團就此簽進 GMM Grammy。首張《ร็อค เล็ก เล็ก》的 10 首多半出自 Nui 與 Kob 之手，這張 1986 年 12 月 1 日發行。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+     "https://www.discogs.com/release/7384687",
+     "https://en.wikipedia.org/wiki/Thai_rock",
+     "https://www.discogs.com/master/875385"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cb/c3/ab/cbc3abbc-4ae7-03e2-fb60-39478f0c4f53/mzaf_4683765229224511158.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "appleCollectionId": "1793394003",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1793394003「ไมโคร《ร็อค เล็ก เล็ก》」：Apple jp 1793394003：GMM 官方上架、1986-12-01 與研究層泰文維基日期一致，取第 1 軌。，取第 1 軌〈อย่าดีกว่า〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "อัสนี-วสันต์",
+   "album": "รุ้งกินน้ำ",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "81a7eeec-b95f-439d-bdd5-87818b08b29b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國：Asanee–Wasan 兄弟檔第六張，拿下 Seesan Awards 第 6 屆「年度最佳專輯」，〈รักเธอเสมอ〉〈ลงเอย〉傳唱至今，是泰國主流搖滾的評論與銷量雙峰。｜⚠ MB release-group 無首發日；年份依泰文維基（1993-05-25）與 Discogs。掛名 MB 作「อัสนี - วสันต์ โชติกุล」，Discogs 與維基作「อัสนี-วสันต์」，採後者。｜MB release-group 81a7eeec-b95f-439d-bdd5-87818b08b29b：title「รุ้งกินน้ำ」、Album、first-release-date （空）、artist-credit「อัสนี - วสันต์ โชติกุล」。證據：https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://musicbrainz.org/release-group/81a7eeec-b95f-439d-bdd5-87818b08b29b https://www.discogs.com/master/873367 https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B1%E0%B8%AA%E0%B8%99%E0%B8%B5-%E0%B8%A7%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%8C",
+    "queryAlias": "Asanee–Wasan / อัสนี - วสันต์ โชติกุล / Rung Kin Nam；อัสนี - วสันต์ โชติกุล"
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1793080026",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ad/da/33/adda33ec-6eb3-17bd-5b89-52dea24eed03/888332983532.jpg/600x600bb.jpg",
+    "note": "CAA release-group 404；取已釘定試聽的 Apple 1793080026 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 31,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 4/5/2（Last.fm listeners 31）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "沒有宣傳演唱會，封套裡改放一枚吉他 pick。Asanee 與 Wasan 是泰國 Loei 府出身的兄弟，第六張專輯附的 pick 有七種顏色，對應彩虹。Asanee 一手製作，錄音在 Sri Siam 與 Center Stage 兩地完成。GMM Grammy 在 1993 年 5 月推出它；開場同名曲長 6 分 19 秒，分成三段。第 6 屆 Seesan Awards 頒給它年度最佳專輯，〈ทุกข์ไม่เว้นวันราชการ〉則拿到最佳錄音。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B1%E0%B8%AA%E0%B8%99%E0%B8%B5-%E0%B8%A7%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%8C",
+     "https://th.wikipedia.org/wiki/%E0%B8%A3%E0%B8%B8%E0%B9%89%E0%B8%87%E0%B8%81%E0%B8%B4%E0%B8%99%E0%B8%99%E0%B9%89%E0%B8%B3_(%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A1)",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://www.discogs.com/release/7365046",
+     "https://musicbrainz.org/release-group/81a7eeec-b95f-439d-bdd5-87818b08b29b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e8/d5/8d/e8d58dcc-abde-034d-7e06-b49d75515c65/mzaf_3828050767446234007.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "appleCollectionId": "1793080026",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1793080026「อัสนี & วสันต์《รุ้งกินน้ำ》」：曲目 11/11 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈รุ้งกินน้ำ〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "อัสนี-วสันต์",
+   "album": "บ้าหอบฟาง",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d2959526-2763-4c4b-a91c-a2dcf0198c3b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國：兄弟倆以二人組名義的首張專輯（Nite Spot／WEA 發行），英文維基〈Thai rock〉把它與 Micro 並列為 80 年代泰國搖滾起飛的代表作，也是他們進 Grammy 前的成名起點。｜⚠ 原版封面掛名作「อัสนี และ วสันต์」，卡名統一用「อัสนี-วสันต์」。泰文維基寫 1986 年 4 月；Discogs 有 1985 年標示的 promo，採 1986。｜MB release-group d2959526-2763-4c4b-a91c-a2dcf0198c3b：title「บ้าหอบฟาง」、Album、first-release-date 1986-01-01、artist-credit「อัสนี - วสันต์ โชติกุล」。證據：https://en.wikipedia.org/wiki/Thai_rock https://musicbrainz.org/release-group/d2959526-2763-4c4b-a91c-a2dcf0198c3b https://www.discogs.com/master/873127 https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B1%E0%B8%AA%E0%B8%99%E0%B8%B5-%E0%B8%A7%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%8C",
+    "queryAlias": "อัสนี และ วสันต์ / Asanee–Wasan Bah Horb Fang；อัสนี - วสันต์ โชติกุล"
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d2959526-2763-4c4b-a91c-a2dcf0198c3b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 29,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 4/5/2（Last.fm listeners 29）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "鼓聲全由 TR-707 與 Linn 9000 鼓機寫成。這是 Asanee 與 Wasan 兄弟二人組的首張，哥哥先離開民謠團 Isn't 改走搖滾。替鼓機編程的是 Karanes Wasininon，1985 年 10 月在 Sri Siam 開錄，Asanee 參與了製作。1986 年，唱片掛在 Warner 集團旗下的 Nite Spot 發行，共 9 首。Carabao 主唱 Ad 客串三首，Lam Morrison 則在〈ไม่เป็นไร〉彈電吉他。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B1%E0%B8%AA%E0%B8%99%E0%B8%B5-%E0%B8%A7%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%8C",
+     "https://www.discogs.com/release/7362957",
+     "https://musicbrainz.org/release-group/d2959526-2763-4c4b-a91c-a2dcf0198c3b",
+     "https://www.discogs.com/master/873127",
+     "https://th.wikipedia.org/wiki/%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%AD%E0%B8%9A%E0%B8%9F%E0%B8%B2%E0%B8%87",
+     "https://en.wikipedia.org/wiki/Thai_rock"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：อัสนี & วสันต์《บ้าหอบฟาง - EP》6/9）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "คาราบาว",
+   "album": "อเมริกันอันธพาล",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=คาราบาว → 0f16032c（TH）有 16 個 release-group，無本作",
+      "release-group?query=artist:\"คาราบาว\" AND releasegroup:\"อเมริกันอันธพาล\"（count=0）；releasegroup 單查 count=0"
+     ],
+     "checkedAt": "2026-10-20",
+     "conclusion": "MB 有藝人但無此 release-group；以 Discogs release 9242228（1998，Warner Music Thailand 卡帶，標 #19）與 Seesan Awards 得獎清單人工確認。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/9242228",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A7"
+    ],
+    "manualRuling": "雲端主線 2026-10-21 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261021-ts7）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "泰國：Carabao 第 19 張錄音室專輯（Discogs 卡帶標 #19），拿下 Seesan Awards 第 11 屆（1998）「年度最佳專輯」——出道近 20 年仍獲泰國樂評最高肯定的晚期代表作。｜⚠ 池中 คาราบาว 已 2 張，本張為第 3 張（上限）。Discogs 無 master，只有卡帶 release。MB 無此 release-group（走 §1）。｜MB 查無（MB 有藝人但無此 release-group；以 Discogs release 9242228（1998，Warner Music Thailand 卡帶，標 #19）與 Seesan Awards 得獎清單人工確認。），走 §1 人工身分。證據：https://www.discogs.com/release/9242228 https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A7 https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://www.discogs.com/release/9242228 https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A7",
+    "queryAlias": "Carabao American Antapan"
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "9242228",
+    "url": "https://i.discogs.com/Bb2ywceRYfU2iSkOWnrx3NTkgFF2ii3R8bZAzSwT604/rs:fit/g:sm/q:90/h:252/w:155/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkyNDIy/MjgtMTQ3NzIyODk3/My0yODg1LmpwZWc.jpeg",
+    "note": "人工身分卡（CAA 走不通）；取 Discogs 9242228 封面；主線 2026-10-21 目視：Warner Music Thailand（1998），山姆大叔指人圖與 19 字樣。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 5,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 5）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "高棉語唱的那首歌，被 Carabao 放在最後。Carabao 唱的是 phleng phuea chiwit（為生活而唱），由三名在馬尼拉求學的泰國學生創立。那首歌的歌名意為「柬埔寨人民兄弟姊妹」。這張樂團自製的第 19 張，1998 年 10 月由 Warner Music Thailand 出版，10 首合計約 47 分鐘。歌詞的分量比前作輕，曲子帶進 Blues 與 R&B。第 11 屆 Seesan Awards 的年度最佳專輯與最佳製作人都落在這張。",
+    "sourceUrls": [
+     "https://www.thaipbs.or.th/news/content/332693",
+     "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B9%80%E0%B8%A1%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B8%9E%E0%B8%B2%E0%B8%A5",
+     "https://www.discogs.com/release/9242228",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A7"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "วงตาวัน",
+   "album": "ม็อบ",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "be5931d7-19c8-49b8-9916-25b911f2bfab",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國：由前 McIntosh（แมคอินทอช）樂手組成的前衛搖滾團 Tawan 的代表作，包下 Seesan Awards 第 5 屆（1992）「年度最佳專輯」與「最佳樂團」。｜⚠ MB release-group 無首發日，年份依泰文維基與 Discogs（1992）。｜MB release-group be5931d7-19c8-49b8-9916-25b911f2bfab：title「ม็อบ」、Album、first-release-date （空）、artist-credit「วงตาวัน」。證據：https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://musicbrainz.org/release-group/be5931d7-19c8-49b8-9916-25b911f2bfab https://www.discogs.com/master/3365446 https://th.wikipedia.org/wiki/%E0%B8%95%E0%B8%B2%E0%B8%A7%E0%B8%B1%E0%B8%99_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+    "queryAlias": "ตาวัน / Tawan Mob"
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/be5931d7-19c8-49b8-9916-25b911f2bfab/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 6,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 6）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "自稱叛逆者的五人團，要把版權握在自己手裡。Tawan 指的是太陽的弧線，五人從曼谷 Hotel Asia 的夜間駐唱起家，其中 Moo、Prince、Ton 出自 1987 年解散的 McIntosh。「ขบถ」就是叛逆者的泰文原詞，他們不滿廠牌的分成，出完首張便成立 Orange Music Group。本作 1992 年由這家自營公司出版。在第 5 屆 Seesan Awards，它贏下最佳樂團與年度最佳專輯；最佳錄音的得主〈กาม〉只收在卡帶版。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B9%81%E0%B8%A1%E0%B8%84%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%AD%E0%B8%8A_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+     "https://th.wikipedia.org/wiki/%E0%B8%95%E0%B8%B2%E0%B8%A7%E0%B8%B1%E0%B8%99_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+     "https://www.discogs.com/release/6329023",
+     "https://www.discogs.com/release/29483662",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://th.wikipedia.org/wiki/%E0%B8%A3%E0%B8%B8%E0%B9%89%E0%B8%87%E0%B8%81%E0%B8%B4%E0%B8%99%E0%B8%99%E0%B9%89%E0%B8%B3_(%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A1)",
+     "https://www.discogs.com/release/38234649",
+     "https://musicbrainz.org/release-group/be5931d7-19c8-49b8-9916-25b911f2bfab"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "หิน เหล็ก ไฟ",
+   "album": "หิน เหล็ก ไฟ",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5d08b037-d8c7-40a2-8657-c4489b82c5a8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國：Stone Metal Fire 的同名首作，泰文維基載銷量逾百萬卷，並獲 Seesan Awards 第 6 屆（1993）最佳新人與最佳製作人；英文維基〈Thai rock〉列其為 90 年代初泰國重金屬／硬搖滾主流化的代表團。｜⚠ MB 對同一張有兩個 release-group（5d08b037 泰文名 1993-01-01；0cb354e7 拉丁拼音 Hin Lek Fai 1993），釘泰文那個；可能需要 MB 合併。泰文維基發行日 1993-03-15。｜MB release-group 5d08b037-d8c7-40a2-8657-c4489b82c5a8：title「หิน เหล็ก ไฟ」、Album、first-release-date 1993-01-01、artist-credit「Stone Metal Fire」。證據：https://th.wikipedia.org/wiki/%E0%B8%AB%E0%B8%B4%E0%B8%99_%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B9%87%E0%B8%81_%E0%B9%84%E0%B8%9F https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://en.wikipedia.org/wiki/Thai_rock https://musicbrainz.org/release-group/5d08b037-d8c7-40a2-8657-c4489b82c5a8 https://www.discogs.com/master/669780",
+    "queryAlias": "Stone Metal Fire / SMF / Hin Lek Fai；Stone Metal Fire",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5d08b037-d8c7-40a2-8657-c4489b82c5a8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 4,
+    "listeners": 479,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 2/5/4（Last.fm listeners 479）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "「石、鐵、火」這個團名，是一位雜誌創辦人取的。SMF 是這個泰國團體的簡稱，1991 年成軍，玩的是重金屬，前身試過 Brueh、Immortal 等團名。替他們命名的是 Tiwa Sarachuta，他創辦了《Seesan》雜誌。樂團簽下 RS Promotion，1993 年 3 月 15 日上市的首張專輯，初版由 Wrangler 牛仔褲贊助，LP 收 10 首。第 6 屆 Seesan Awards 揭曉時，最佳新人與最佳製作人兩項都列在這張名下。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B8%AB%E0%B8%B4%E0%B8%99_%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B9%87%E0%B8%81_%E0%B9%84%E0%B8%9F",
+     "https://musicbrainz.org/release-group/5d08b037-d8c7-40a2-8657-c4489b82c5a8",
+     "https://www.discogs.com/release/5537462",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://en.wikipedia.org/wiki/Thai_rock",
+     "https://en.wikipedia.org/wiki/Stone_Metal_Fire",
+     "https://www.discogs.com/release/5537838",
+     "https://www.discogs.com/master/669780"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/7e/e3/2a7ee318-df76-c047-9704-f16df1623e91/mzaf_15855580894887622611.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "appleCollectionId": "1754497940",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1754497940「หิน เหล็ก ไฟ《หิน เหล็ก ไฟ》」：曲目 9/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈สองคน〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Crub",
+   "album": "View",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Crub → 無泰國 Crub（最接近 Scrubb TH，為另一團）",
+      "release-group?query=artist:\"Crub\" AND releasegroup:\"View\"（count=0）"
+     ],
+     "checkedAt": "2026-10-20",
+     "conclusion": "MB 查無藝人 Crub（ครับ）及本作；以 Discogs master 4217739（1994，Gecco Music 卡帶；2016 黑膠再版）與泰文維基、英文維基〈Thai rock〉人工確認。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/4217739",
+     "https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B8%9A_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+     "https://en.wikipedia.org/wiki/Thai_rock"
+    ],
+    "manualRuling": "雲端主線 2026-10-21 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261021-ts7）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "泰國：Crub 唯一的專輯：英文維基〈Thai rock〉稱其與 Moderndog 同為泰國另類搖滾的先驅，受 shoegaze 與 Madchester 影響；當年銷量平平、只在一群樂迷間出名，2016 年再版黑膠。｜⚠ 封面掛名 Crub（Discogs 記 Crub = ครับ），採英文。MB 無此藝人（走 §1）。｜MB 查無（MB 查無藝人 Crub（ครับ）及本作；以 Discogs master 4217739（1994，Gecco Music 卡帶；2016 黑膠再版）與泰文維基、英文維基〈Thai rock〉人工確認。），走 §1 人工身分。證據：https://www.discogs.com/master/4217739 https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B8%9A_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5) https://en.wikipedia.org/wiki/Thai_rock https://en.wikipedia.org/wiki/Thai_rock https://www.discogs.com/master/4217739 https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B8%9A_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+    "queryAlias": "ครับ"
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "8125659",
+    "url": "https://i.discogs.com/aZ4SS5uJbWq4uqvhKIAMNouYR1xE7E0XdNZFroGlXgA/rs:fit/g:sm/q:90/h:600/w:415/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgxMjU2/NTktMTQ1NTYyMTk1/NC0yNTg2LmpwZWc.jpeg",
+    "note": "人工身分卡（CAA 走不通）；取 Discogs 8125659 封面；主線 2026-10-21 目視：Gecco Music（1994），CRUB 字樣。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 245,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 245）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "原主唱抽不出空，他們到唱片行貼了徵人啟事。這群迷 The Stone Roses、Ride 的泰國大學生，組成了 Crub；原主唱忙的是家裡生意，啟事貼在 Doremi 唱片行，最後找到前龐克團 Monstership 主唱。多家公司嫌這些英式的歌不上口，只有小廠 Gecco Music 點頭。錄音期是 1994 年 6 至 9 月，地點是 Gecco 錄音室，共 13 首。開場〈ทุกเวลา〉的前奏，放進了竹製搖奏樂器「อังกะลุง」。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/8125659",
+     "https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B8%9A_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+     "https://en.wikipedia.org/wiki/Thai_rock",
+     "https://www.discogs.com/release/37267290",
+     "https://www.discogs.com/master/4217739"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "วูล์ฟแพ็ค",
+   "album": "วูล์ฟแพ็ค",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Wolfpack → 僅瑞典／比利時／法國／澳洲同名團，無泰國 Wolfpack",
+      "release-group?query=artist:\"Wolfpack\" AND releasegroup:\"Wolfpack\"（count=1，為 Wreckshop Wolfpack 無關）"
+     ],
+     "checkedAt": "2026-10-20",
+     "conclusion": "MB 查無泰國 Wolfpack 與本作；以 Discogs release 37619697（1996，M Squared Music Entertainment 卡帶，11 首）與泰文維基、Seesan Awards 得獎清單人工確認。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/37619697",
+     "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B9%E0%B8%A5%E0%B9%8C%E0%B8%9F%E0%B9%81%E0%B8%9E%E0%B9%87%E0%B8%84",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "manualRuling": "雲端主線 2026-10-21 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261021-ts7）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "泰國：Inca 樂團的鼓手與吉他手等四位樂手組成的超級組合，唯一錄音室專輯以 60–70 年代復古硬搖滾為底，拿下 Seesan Awards 第 9 屆（1996）「最佳搖滾專輯」。｜⚠ 封面主文字依 Discogs 標題作泰文 วูล์ฟแพ็ค（Discogs 記 Wolfpack (20) = วูล์ฟแพ็ค），英文放 alias。泰文維基寫 1996 年 4 月、廠牌 เอ็มสแควร์（M Squared）。MB 無（走 §1）。｜MB 查無（MB 查無泰國 Wolfpack 與本作；以 Discogs release 37619697（1996，M Squared Music Entertainment 卡帶，11 首）與泰文維基、Seesan Awards 得獎清單人工確認。），走 §1 人工身分。證據：https://www.discogs.com/release/37619697 https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B9%E0%B8%A5%E0%B9%8C%E0%B8%9F%E0%B9%81%E0%B8%9E%E0%B9%87%E0%B8%84 https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://www.discogs.com/release/37619697 https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B9%E0%B8%A5%E0%B9%8C%E0%B8%9F%E0%B9%81%E0%B8%9E%E0%B9%87%E0%B8%84",
+    "queryAlias": "Wolfpack",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "37619697",
+    "url": "https://i.discogs.com/JOKM7t7J4ZIJTQmfpJN4AfQQuIKVdGFx6R3wWOuJ02w/rs:fit/g:sm/q:90/h:600/w:393/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3NjE5/Njk3LTE3ODEzNzQz/MjgtNDQzMy5qcGVn.jpeg",
+    "note": "人工身分卡（CAA 走不通）；取 Discogs 37619697 封面；主線 2026-10-21 目視：1996 卡帶，WOLFPACK 字樣。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 2/4/4（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "每個歌名都是一個字、刪節號，再接一組括號。Wolfpack 這個名字來自集體狩獵的狼群，四人玩的是 1960、70 年代式的復古硬搖滾。〈ไม่… (ใช่ของเรา)〉、〈จบ… (?)〉全是這個句型。團裡的鼓手、吉他手出身 GMM Grammy 旗下的 Inca，1996 年另組新團。同名作在同年春天推出，卡帶裡 11 首，四個人都開口唱，主唱另兼彈吉他、鍵盤與鋼琴。最佳搖滾專輯是它在第 9 屆 Seesan Awards 拿到的獎。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B9%E0%B8%A5%E0%B9%8C%E0%B8%9F%E0%B9%81%E0%B8%9E%E0%B9%87%E0%B8%84",
+     "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B8%84%E0%B8%B2_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+     "https://www.discogs.com/release/37619697",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Blackhead",
+   "album": "Full Flavor",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Blackhead → 1ffcd27a（TH）有 Handmade／Pure／Real Hits／Blackhead，無 Full Flavor",
+      "release-group?query=artist:\"Blackhead\" AND releasegroup:\"Full Flavor\"（count=0）"
+     ],
+     "checkedAt": "2026-10-20",
+     "conclusion": "MB 有藝人但無此 release-group；以 Discogs master 2880793（含 M Squared 原版 CD 與 2015 黑膠）與泰文維基（1997 年 2 月，M Squared）人工確認。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/2880793",
+     "https://th.wikipedia.org/wiki/%E0%B9%81%E0%B8%9A%E0%B8%A5%E0%B9%87%E0%B8%84%E0%B9%80%E0%B8%AE%E0%B8%94",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "manualRuling": "雲端主線 2026-10-21 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261021-ts7）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "泰國：Blackhead 第二張，包下 Seesan Awards 第 10 屆（1997）「最佳搖滾專輯」「最佳搖滾樂團」與最佳搖滾歌曲〈หลอน〉；英文維基〈Thai rock〉列其為 90 年代中泰國另類搖滾浪潮的代表團。｜⚠ Discogs master 年份標 2015（黑膠再版），原版年份依泰文維基 1997-02。MB 無此 release-group（走 §1）。｜MB 查無（MB 有藝人但無此 release-group；以 Discogs master 2880793（含 M Squared 原版 CD 與 2015 黑膠）與泰文維基（1997 年 2 月，M Squared）人工確認。），走 §1 人工身分。證據：https://www.discogs.com/master/2880793 https://th.wikipedia.org/wiki/%E0%B9%81%E0%B8%9A%E0%B8%A5%E0%B9%87%E0%B8%84%E0%B9%80%E0%B8%AE%E0%B8%94 https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B9%81%E0%B8%9A%E0%B8%A5%E0%B9%87%E0%B8%84%E0%B9%80%E0%B8%AE%E0%B8%94 https://www.discogs.com/master/2880793 https://en.wikipedia.org/wiki/Thai_rock",
+    "queryAlias": "แบล็คเฮด"
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "13260088",
+    "url": "https://i.discogs.com/DeFh0GUeVQNyzjr6yDj9KbruoFWEQoE-WaR5qsFYK9M/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMjYw/MDg4LTE1NTA5MTc0/MTUtOTQ2Ny5qcGVn.jpeg",
+    "note": "人工身分卡（CAA 走不通）；取 Discogs 13260088 封面；主線 2026-10-21 目視：Vlovevinyl VL 041 黑膠再版（2015），blackhead／Full Flavor 字樣，沿用原封面。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 294,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 294）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "老東家一倒閉，Uranium 的主唱和貝斯手另起新團。Blackhead 組團於 1994 年，歌詞泰英並用、走搖滾路線；倒閉的是廠牌 SP Supamit，旗下的 Uranium 與 Big Gun 一起散夥。兩人再找來兩名團員，經一位前輩歌手引薦進了 M Squared。1997 年 2 月，該廠替他們出了第二張，收一首〈สัญญา〉的銅管版。這張後來包下第 10 屆 Seesan Awards 搖滾類三項：最佳搖滾團體、搖滾專輯與搖滾歌曲〈หลอน〉。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B9%81%E0%B8%9A%E0%B8%A5%E0%B9%87%E0%B8%84%E0%B9%80%E0%B8%AE%E0%B8%94",
+     "https://www.sanook.com/men/6017/",
+     "https://www.discogs.com/master/2880793",
+     "https://www.discogs.com/release/13260088",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://en.wikipedia.org/wiki/Thai_rock"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：Blackhead《Full Flavor》0/0）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "เดอะ ซัน",
+   "album": "เสือ สิงห์ กระทิง แรด",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Sun AND country:TH → 3bff3182（Thai hard rock band）只有 ถนนพระอาทิตย์ 與 2024 The Sun，無本作",
+      "release-group?query=artist:\"The Sun\" AND releasegroup:\"เสือ สิงห์ กระทิง แรด\"（count=0）；releasegroup 單查 count=0"
+     ],
+     "checkedAt": "2026-10-20",
+     "conclusion": "MB 有藝人但無此 release-group；以 Discogs release 38360079（RS Promotion 卡帶）與泰文維基（1998-11-16，RS Promotion）、Seesan Awards 得獎清單人工確認。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/38360079",
+     "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0_%E0%B8%8B%E0%B8%B1%E0%B8%99",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "manualRuling": "雲端主線 2026-10-21 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261021-ts7）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "泰國：前 Stone Metal Fire 主唱 Pong 與吉他手 Pop 另組的重金屬團 The Sun 第二張，包下 Seesan Awards 第 11 屆（1998）「最佳搖滾專輯」與「最佳搖滾樂團」，同屆最佳搖滾歌曲〈เลือกเอา〉也出自本團。｜⚠ 掛名用泰文 เดอะ ซัน 以免與他國 The Sun 混淆（Discogs 記 The Sun (31) = เดอะ ซัน，封面主文字待封面層目視）。Discogs release 無年份，年份依泰文維基。MB 無此 release-group（走 §1）。｜MB 查無（MB 有藝人但無此 release-group；以 Discogs release 38360079（RS Promotion 卡帶）與泰文維基（1998-11-16，RS Promotion）、Seesan Awards 得獎清單人工確認。），走 §1 人工身分。證據：https://www.discogs.com/release/38360079 https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0_%E0%B8%8B%E0%B8%B1%E0%B8%99 https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0_%E0%B8%8B%E0%B8%B1%E0%B8%99 https://www.discogs.com/release/38360079",
+    "queryAlias": "The Sun (Thailand) / Suea Sing Krathing Raet"
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "38360079",
+    "url": "https://i.discogs.com/cc4jNOmopkQsGkFFDeha_o18dihVsnEXmquMREH0eNc/rs:fit/g:sm/q:90/h:441/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MzYw/MDc5LTE3ODg3NjQ3/MzItNjM5Ni5qcGVn.jpeg",
+    "note": "人工身分卡（CAA 走不通）；取 Discogs 38360079 封面；主線 2026-10-21 目視：RS Promotion，THE SUN 字樣與拼貼。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 4,
+    "listeners": 5,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 2/5/4（Last.fm listeners 5）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "原團一休團，Pong 和 Pop 隔年初就組了新團。兩人原是泰國金屬樂隊 หิน เหล็ก ไฟ 的主唱與吉他手；該團 1995 年底宣布休團，The Sun 則在 1996 年初成形。1998 年 11 月 16 日在 RS Promotion 旗下發行的《เสือ สิงห์ กระทิง แรด》，已是第 2 張，卡帶 10 首，編制裡有鍵盤與弦樂。他們憑這張在第 11 屆 Seesan Awards 抱走最佳搖滾團體、搖滾專輯與搖滾歌曲〈เลือกเอา〉。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0_%E0%B8%8B%E0%B8%B1%E0%B8%99",
+     "https://www.discogs.com/release/38360079",
+     "https://th.wikipedia.org/wiki/%E0%B8%AB%E0%B8%B4%E0%B8%99_%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B9%87%E0%B8%81_%E0%B9%84%E0%B8%9F",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "สไมล์บัฟฟาโล่",
+   "album": "นอกคอก",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=Smile Buffalo → 無（前列為 Buffalo Springfield 等）；artist?query=สไมล์บัฟฟาโล่ → 0 筆",
+      "release-group?query=artist:\"Smile Buffalo\" AND releasegroup:\"นอกคอก\"（count=0）；releasegroup 單查 count=0"
+     ],
+     "checkedAt": "2026-10-20",
+     "conclusion": "MB 查無藝人與作品；Discogs 只收首張（master 2842825），本作無條目。以泰文維基曲目表（1999-05-04 發行，10 首）與 Seesan Awards 得獎清單人工確認。"
+    },
+    "manualEvidenceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B9%84%E0%B8%A1%E0%B8%A5%E0%B9%8C%E0%B8%9A%E0%B8%B1%E0%B8%9F%E0%B8%9F%E0%B8%B2%E0%B9%82%E0%B8%A5%E0%B9%88",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://www.discogs.com/artist/4888184"
+    ],
+    "manualRuling": "雲端主線 2026-10-21 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261021-ts7）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "泰國：90 年代泰國另類搖滾團 Smile Buffalo 的第四張，拿下 Seesan Awards 第 12 屆（1999）「最佳樂團」；英文維基〈Thai rock〉把 Smile Buffalo 列為那波另類搖滾浪潮的代表團之一。｜⚠ 身分證據偏薄：Discogs 無本作條目，只有藝人頁；廠牌依泰文維基「Maker Head 1998–2000」推定。掛名封面文字未目視（Discogs 藝人名為 สไมล์ บัฟฟาโล）。MB 無（走 §1）。｜MB 查無（MB 查無藝人與作品；Discogs 只收首張（master 2842825），本作無條目。以泰文維基曲目表（1999-05-04 發行，10 首）與 Seesan Awards 得獎清單人工確認。），走 §1 人工身分。證據：https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B9%84%E0%B8%A1%E0%B8%A5%E0%B9%8C%E0%B8%9A%E0%B8%B1%E0%B8%9F%E0%B8%9F%E0%B8%B2%E0%B9%82%E0%B8%A5%E0%B9%88 https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://www.discogs.com/artist/4888184 https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B9%84%E0%B8%A1%E0%B8%A5%E0%B9%8C%E0%B8%9A%E0%B8%B1%E0%B8%9F%E0%B8%9F%E0%B8%B2%E0%B9%82%E0%B8%A5%E0%B9%88 https://en.wikipedia.org/wiki/Thai_rock https://www.discogs.com/artist/4888184",
+    "queryAlias": "Smile Buffalo / Nok Khok"
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1791613589",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6a/87/41/6a874150-7a69-5b43-90bc-64e80be24067/888332950008.jpg/600x600bb.jpg",
+    "note": "人工身分卡（Discogs／MB 皆無本作）；取 Apple th 1791613589（Smile Buffalo《นอกคอก》10 首，MGA 版權）官方圖，主線 2026-10-21 目視封面印 Smile Buffalo／นอกคอก。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 2/5/4（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Smile Buffalo 的泰文俗稱是「笑一個啊，水牛」。這支四人團走的是受 grunge 與英式獨立樂影響的另類路線，1995 年組團。1999 年 5 月 4 日，他們交出第四張《นอกคอก》，收 10 首，盤名指不按常規。這張得到第 12 屆 Seesan Awards 不分曲風的最佳雙人或團體。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B9%84%E0%B8%A1%E0%B8%A5%E0%B9%8C%E0%B8%9A%E0%B8%B1%E0%B8%9F%E0%B8%9F%E0%B8%B2%E0%B9%82%E0%B8%A5%E0%B9%88",
+     "https://music.apple.com/th/album/%E0%B8%99%E0%B8%AD%E0%B8%81%E0%B8%84%E0%B8%AD%E0%B8%81/1791613589",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://www.discogs.com/master/2842825",
+     "https://en.wikipedia.org/wiki/Thai_rock",
+     "https://www.discogs.com/artist/4888184"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f9/e2/f0/f9e2f058-3eaa-a190-9f56-f1de6435a132/mzaf_1388190920509506074.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "appleCollectionId": "1791613589",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1791613589「Smile Buffalo《นอกคอก》」：Apple th 1791613589：Smile Buffalo《นอกคอก》10 首（研究層 10135 所指的 Apple 泰國站版本），取第 1 軌。，取第 1 軌〈ไม่อยากคืนดี〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Silly Fools",
+   "album": "Mint",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "69e2efa5-5e17-3433-bf3d-8686e1c3b79b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國：Silly Fools 第三張，英文維基〈Thai rock〉載銷量逾百萬，並包下 Seesan Awards 第 13 屆（2000）「最佳搖滾專輯」與「最佳搖滾樂團」，是泰國 nu-metal／另類搖滾的高峰。｜⚠ MB 另有一個 Mint release-group（b90b0f71，日本版 2000）重複，釘泰國原版 69e2efa5（2000-09-28）。池中 Silly Fools 已 1 張（Candyman），本批連 Juicy 共 3 張（上限）。｜MB release-group 69e2efa5-5e17-3433-bf3d-8686e1c3b79b：title「Mint」、Album、first-release-date 2000-09-28、artist-credit「Silly Fools」。證據：https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://en.wikipedia.org/wiki/Thai_rock https://musicbrainz.org/release-group/69e2efa5-5e17-3433-bf3d-8686e1c3b79b https://www.discogs.com/master/2466259",
+    "queryAlias": "ซิลลี่ ฟูลส์"
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/69e2efa5-5e17-3433-bf3d-8686e1c3b79b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 5671,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 2/4/2（Last.fm listeners 5671）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "GMM Grammy 的百萬卷名單裡，列著《Mint》。Silly Fools 屬於受 nu-metal 影響的那一輩泰國樂團，那份名單收的是 GMM Grammy 旗下銷量破 100 萬卷的卡帶。2000 年 9 月，同集團的 More Music 讓第三張上市，10 首大多落在 4 到 5 分鐘，單曲有〈จิ๊จ๊ะ〉與〈คิดถึง〉。第 13 屆 Seesan Awards 上，最佳搖滾團體與最佳搖滾專輯兩項都歸它。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/16491279",
+     "https://th.wikipedia.org/wiki/%E0%B8%8B%E0%B8%B4%E0%B8%A5%E0%B8%A5%E0%B8%B5%E0%B9%88_%E0%B8%9F%E0%B8%B9%E0%B8%A5%E0%B8%AA%E0%B9%8C",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://mgronline.com/entertainment/detail/9600000036586",
+     "https://musicbrainz.org/release-group/69e2efa5-5e17-3433-bf3d-8686e1c3b79b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b6/3f/6d/b63f6dc4-d83c-295f-8a55-20adc13650d9/mzaf_4140664713734417711.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "appleCollectionId": "1793129482",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1793129482「Silly Fools《Mint》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈ไม่〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Silly Fools",
+   "album": "Juicy",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0d2b1134-9588-3f21-b7f1-82c523d308bb",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國：Silly Fools 第四張，再度拿下 Seesan Awards 第 15 屆（2002）「最佳搖滾專輯」與「最佳搖滾樂團」——同一團兩年內第二次奪搖滾雙冠，英文維基稱它鞏固了樂團的一線地位。｜⚠ 池中 Silly Fools 連本批共 3 張（上限）。｜MB release-group 0d2b1134-9588-3f21-b7f1-82c523d308bb：title「Juicy」、Album、first-release-date 2002-03-26、artist-credit「Silly Fools」。證據：https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://en.wikipedia.org/wiki/Thai_rock https://musicbrainz.org/release-group/0d2b1134-9588-3f21-b7f1-82c523d308bb https://www.discogs.com/master/2731274",
+    "queryAlias": "ซิลลี่ ฟูลส์"
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0d2b1134-9588-3f21-b7f1-82c523d308bb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 10584,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 2/4/2（Last.fm listeners 10584）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "隔了一屆，Silly Fools 把兩座搖滾獎抱了回來。Silly Fools 1998 年簽進 GMM Grammy 旗下的 More Music，第 13 屆時已拿過最佳搖滾樂團與搖滾專輯，第 14 屆這兩項則給了別人。2002 年 3 月上架的《Juicy》是第四張，仍掛 More Music，開場〈บ้าบอ〉長 6 分 25 秒，全盤以它最長。電子音色比以往少，樂器聲更厚重。兩項獎在第 15 屆 Seesan Awards 再度落到他們手上。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B8%88%E0%B8%B9%E0%B8%8B%E0%B8%8B%E0%B8%B5",
+     "https://www.discogs.com/release/9161531",
+     "https://th.wikipedia.org/wiki/%E0%B8%8B%E0%B8%B4%E0%B8%A5%E0%B8%A5%E0%B8%B5%E0%B9%88_%E0%B8%9F%E0%B8%B9%E0%B8%A5%E0%B8%AA%E0%B9%8C",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://en.wikipedia.org/wiki/Silly_Fools",
+     "https://th.wikipedia.org/wiki/%E0%B8%A1%E0%B8%AD%E0%B8%A3%E0%B9%8C_%E0%B8%A1%E0%B8%B4%E0%B8%A7%E0%B8%AA%E0%B8%B4%E0%B8%84",
+     "https://en.wikipedia.org/wiki/Thai_rock",
+     "https://musicbrainz.org/release-group/0d2b1134-9588-3f21-b7f1-82c523d308bb"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/03/df/4d03df65-71cf-c96c-0ba1-67c5f9379129/mzaf_12601317013362698740.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "appleCollectionId": "1793130258",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1793130258「Silly Fools《Juicy》」：Apple th 1793130258：GMM 官方上架、2002-03-26 ℗2002（More Music 為 GMM 子廠），MB 曲目為羅馬拼音故自動比對 0，取第 1 軌。，取第 1 軌〈บ้าบอ〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Moderndog",
+   "album": "Love Me Love My Life",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6e215c10-e425-4021-ad1f-7cca052c48d7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國：Moderndog 第三張，拿下 Seesan Awards 第 14 屆（2001）「最佳樂團」，是這支泰國另類搖滾先驅在 Bakery 時期的成熟之作。｜⚠ MB 掛名 ModernDog，池中寫法為 Moderndog，沿用池中。池中已 1 張（เสริมสุขภาพ），s 組提名 ทิงนองนอย（2008），合計 3 張（上限）。附帶發現：MB 現已有 เสริมสุขภาพ release-group（6f5c4676），池中該卡原走 §1 人工身分，可改釘。｜MB release-group 6e215c10-e425-4021-ad1f-7cca052c48d7：title「Love Me Love My Life」、Album、first-release-date 2001、artist-credit「ModernDog」。證據：https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://musicbrainz.org/release-group/6e215c10-e425-4021-ad1f-7cca052c48d7 https://www.discogs.com/master/2722244",
+    "queryAlias": "ModernDog / โมเดิร์นด็อก"
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6e215c10-e425-4021-ad1f-7cca052c48d7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 1107,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 1107）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "封面由主唱 Pod 自己拼貼，這張等了四年。Moderndog 是 Bakery Music 的第一組藝人，聲音帶 grunge、funk 與 soul。2001 年 7 月，Bakery Music 終於推出這張距前作四年的新作，共 10 首。Pod 經手設計、美術指導、攝影與拼貼插圖，錄音、混音則在曼谷的 Kamol Studios 完成。最後一首〈ในที่สุด〉足足 12 分 52 秒。第 14 屆 Seesan Awards 把總類別的最佳雙人或團體頒給了它。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%A1%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A3%E0%B9%8C%E0%B8%99%E0%B8%94%E0%B9%87%E0%B8%AD%E0%B8%81",
+     "https://www.discogs.com/release/6093736",
+     "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%9A%E0%B9%80%E0%B8%81%E0%B8%AD%E0%B8%A3%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B4%E0%B8%A7%E0%B8%AA%E0%B8%B4%E0%B8%84",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://www.discogs.com/master/2722244",
+     "https://en.wikipedia.org/wiki/Thai_rock",
+     "https://musicbrainz.org/release-group/6e215c10-e425-4021-ad1f-7cca052c48d7"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/79/02/ff/7902ffa4-e075-6b5e-0ef6-6fb7a4a5e4ca/mzaf_8868748982122685591.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "appleCollectionId": "557610282",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 557610282「Moderndog《Love Me Love My Life》」：曲目 8/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈เวตาล〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Pru",
+   "album": "Pru",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2ee21938-e591-4867-9cef-065b66af566f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國：泰國另類搖滾團 Pru 的首張同名專輯，〈แค่〉〈ทุกสิ่ง〉衝上電台榜，並拿下 Seesan Awards 第 14 屆（2001）「最佳搖滾樂團」。｜⚠ MB release-group 2ee21938 的首發日誤記為 2010-09-07（Sony Music 再發版），但曲目 12 首與泰文維基 2001 首張完全一致，故釘之、年份用 2001；MB 另有 a3d1ee5c「Pru」為美國同名歌手，勿混。Discogs 查無本作。｜MB release-group 2ee21938-e591-4867-9cef-065b66af566f：title「Pru」、Album、first-release-date 2010-09-07、artist-credit「Pru」。證據：https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%A3%E0%B8%B9 https://musicbrainz.org/release-group/2ee21938-e591-4867-9cef-065b66af566f",
+    "queryAlias": "พรู",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1711394887",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/be/87/d9/be87d992-b129-6ec9-24f4-c9388cc3d247/196871501842.jpg/600x600bb.jpg",
+    "note": "CAA release-group 404；取已釘定試聽的 Apple 1711394887 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。Apple 版為 Pru S.E. 特別版封面。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 2274,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 2274）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "曼谷路口一個賣花環的孩子，給了樂團名字。Pru 由 Krissada 與身為吉他手的哥哥 Sukie 等人組成，曲風屬泰國另類搖滾。主唱 Krissada 常在拉瑪四世路口遇見那個眼神哀傷的孩子，借 1953 年的電影《From Here to Eternity》替他取名 Pru。首張同名專輯由 Bakery Music 在 2001 年發行，〈แค่〉與〈ทุกสิ่ง〉接連衝上電台榜。這張也讓 Pru 在第 14 屆 Seesan Awards 獲頒最佳搖滾樂團。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%A3%E0%B8%B9",
+     "https://en.wikipedia.org/wiki/Krissada_Sukosol_Clapp",
+     "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%9A%E0%B9%80%E0%B8%81%E0%B8%AD%E0%B8%A3%E0%B8%B5%E0%B9%88%E0%B8%A1%E0%B8%B4%E0%B8%A7%E0%B8%AA%E0%B8%B4%E0%B8%84",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://musicbrainz.org/release-group/2ee21938-e591-4867-9cef-065b66af566f",
+     "https://en.wikipedia.org/wiki/Bakery_Music"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/8f/ba/01/8fba0185-c3ef-2bb4-289d-fe1decfd4e88/mzaf_3005867470708161752.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "appleCollectionId": "1711394887",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1711394887「Pru《Pru S.E.》」：曲目 12/12 對上 MB 原盤（Apple 共 16 軌），取第 1 軌〈นางฟ้า〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Big Ass",
+   "album": "My World",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4a711dfc-2938-4d4b-bf1e-167aaadff3b6",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國：Big Ass 第三張，包下 Seesan Awards 第 16 屆（2003）「最佳搖滾專輯」與「最佳搖滾樂團」，同屆最佳搖滾歌曲〈ชีวิตหลังความตาย〉也出自本作。｜⚠ MB 掛名 บิ๊กแอส，封面主文字為英文 BIG ASS（待封面層目視）。最佳搖滾歌曲歸屬依 Seesan 清單作詞作曲者（ขจรเดช／พูนศักดิ์ 為團員）推定，寫作層須回核。MB 首發日 2003-01-01 為佔位。｜MB release-group 4a711dfc-2938-4d4b-bf1e-167aaadff3b6：title「My World」、Album、first-release-date 2003-01-01、artist-credit「บิ๊กแอส」。證據：https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%9A%E0%B8%B4%E0%B9%8A%E0%B8%81%E0%B9%81%E0%B8%AD%E0%B8%AA https://musicbrainz.org/release-group/4a711dfc-2938-4d4b-bf1e-167aaadff3b6 https://www.discogs.com/master/2283922",
+    "queryAlias": "บิ๊กแอส"
+   },
+   "research": {
+    "suggestedYear": 2003,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1020803794",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music7/v4/4e/b3/72/4eb37277-53cd-2a8b-67db-b71d2583a18f/cover.jpg/600x600bb.jpg",
+    "note": "CAA release-group 404；取已釘定試聽的 Apple 1020803794 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 1,
+    "listeners": 3178,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 1/4/1（Last.fm listeners 3178）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 1，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "得獎那首歌由坐在鼓後面的 Lem 作詞。Big Ass 起於兩位中學同學，吉他手 Off 與 Moo，路線屬泰國主流搖滾。Lem 是 Moo 的弟弟，樂團缺鼓手時被哥哥找來補位，那首歌叫〈ชีวิตหลังความตาย〉。2003 年的第三張以卡帶面市，共 10 首，也是貝斯手 Oak 加入後的第一張。第 16 屆 Seesan Awards 一口氣給了它兩座獎，最佳搖滾雙人或團體和最佳搖滾專輯；Lem 填詞的那首則是最佳搖滾歌曲的得主。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B8%9A%E0%B8%B4%E0%B9%8A%E0%B8%81%E0%B9%81%E0%B8%AD%E0%B8%AA",
+     "https://www.discogs.com/master/2283922",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://musicbrainz.org/release-group/4a711dfc-2938-4d4b-bf1e-167aaadff3b6",
+     "https://th.wikipedia.org/wiki/%E0%B8%A1%E0%B8%AD%E0%B8%A3%E0%B9%8C_%E0%B8%A1%E0%B8%B4%E0%B8%A7%E0%B8%AA%E0%B8%B4%E0%B8%84"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ca/54/4c/ca544c0c-c2ae-314c-4b99-a4249d689590/mzaf_8176549706124421711.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "appleCollectionId": "1020803794",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1020803794「Big Ass《My World》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Goodbye〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Big Ass",
+   "album": "Seven",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "605c9969-059c-4b53-9d45-120555c765bb",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國：Big Ass 轉投 Genie Records 後的第四張，連續第二年拿下 Seesan Awards 第 17 屆（2004）「最佳搖滾專輯」與「最佳搖滾樂團」；英文維基〈Thai rock〉點名其單曲〈Len Kong Soong〉。｜⚠ 池中 Big Ass 0 張，本批 2 張。｜MB release-group 605c9969-059c-4b53-9d45-120555c765bb：title「Seven」、Album、first-release-date 2004-07-20、artist-credit「บิ๊กแอส」。證據：https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://en.wikipedia.org/wiki/Thai_rock https://musicbrainz.org/release-group/605c9969-059c-4b53-9d45-120555c765bb https://www.discogs.com/release/15491312",
+    "queryAlias": "บิ๊กแอส"
+   },
+   "research": {
+    "suggestedYear": 2004,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1792753211",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/da/0a/50/da0a5078-c783-1136-7b70-4cda09808d61/888332980746.jpg/600x600bb.jpg",
+    "note": "CAA release-group 404；取已釘定試聽的 Apple 1792753211 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 10390,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 2/4/2（Last.fm listeners 10390）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Seven 是團齡，Big Ass 剛走進第七年。那年 Big Ass 剛轉投 GMM Grammy 旗下的 Genie Records，這支以硬搖滾為底子的團換了東家。Seven 2004 年 7 月 20 日出版，由吉他手 Off 製作。開場〈ยักษ์ใหญ่ไล่ยักษ์เล็ก〉諷刺掌權者欺壓弱者；快歌〈เล่นของสูง〉唱明知高攀仍硬追的男生，成了招牌曲。到了第 17 屆 Seesan Awards，他們連續第二年包下最佳搖滾樂團，搖滾專輯也一併歸他們。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/15491312",
+     "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%8B%E0%B9%80%E0%B8%A7%E0%B9%88%E0%B8%99_(%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A1%E0%B8%9A%E0%B8%B4%E0%B9%8A%E0%B8%81%E0%B9%81%E0%B8%AD%E0%B8%AA)",
+     "https://th.wikipedia.org/wiki/%E0%B8%9A%E0%B8%B4%E0%B9%8A%E0%B8%81%E0%B9%81%E0%B8%AD%E0%B8%AA",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://th.wikipedia.org/wiki/%E0%B8%A1%E0%B8%AD%E0%B8%A3%E0%B9%8C_%E0%B8%A1%E0%B8%B4%E0%B8%A7%E0%B8%AA%E0%B8%B4%E0%B8%84",
+     "https://musicbrainz.org/release-group/605c9969-059c-4b53-9d45-120555c765bb"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5b/53/0d/5b530d43-8593-f3db-bca7-47f081c9ce11/mzaf_2264677648584101726.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "appleCollectionId": "1792753211",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1792753211「Big Ass《Seven》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈ยักษ์ใหญ่ไล่ยักษ์เล็ก〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ดิ โอฬาร โปรเจ็คท์",
+   "album": "ลิขิตดวงดาว",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=The Olarn Project → fd1e836b ดิ โอฬาร โปรเจ็คท์（TH）只有 กุมภาพันธ์ 2528／หูเหล็ก／ไตรภาค；另一重複藝人 959bede7 ดิ โอฬาร 也無本作",
+      "release-group?query=artist:\"The O-Larn Project\" AND releasegroup:\"ลิขิตดวงดาว\"（count=0）；releasegroup 單查 count=0"
+     ],
+     "checkedAt": "2026-10-20",
+     "conclusion": "MB 有藝人但無此 release-group；以 Discogs master 804854（1996，盤名 ลิขิต...ดวงดาว）與泰文維基、Seesan Awards 得獎清單人工確認。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/804854",
+     "https://th.wikipedia.org/wiki/%E0%B8%94%E0%B8%B4_%E0%B9%82%E0%B8%AD%E0%B8%AC%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B9%87%E0%B8%84%E0%B8%95%E0%B9%8C",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "manualRuling": "雲端主線 2026-10-21 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261021-ts7）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "泰國：吉他手 Olarn Promjai 領軍、1985 年成軍的泰國重金屬先驅 The Olarn Project 的 1996 年專輯，拿下 Seesan Awards 第 9 屆（1996）「最佳搖滾樂團」；英文維基〈Thai rock〉將其列為 80 年代泰國重金屬代表團。｜⚠ 掛名依 MB 藝人名 ดิ โอฬาร โปรเจ็คท์（維基作 โปรเจ็คต์，Discogs 作 The O-Larn Project），封面主文字待封面層目視。廠牌 Perfect Record 取自 Discogs 卡帶再版條目，原版廠牌待回核。泰文維基列 1987、1989 兩張正規＋1993 特別盤，本作序數寫作層回核。｜MB 查無（MB 有藝人但無此 release-group；以 Discogs master 804854（1996，盤名 ลิขิต...ดวงดาว）與泰文維基、Seesan Awards 得獎清單人工確認。），走 §1 人工身分。證據：https://www.discogs.com/master/804854 https://th.wikipedia.org/wiki/%E0%B8%94%E0%B8%B4_%E0%B9%82%E0%B8%AD%E0%B8%AC%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B9%87%E0%B8%84%E0%B8%95%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%94%E0%B8%B4_%E0%B9%82%E0%B8%AD%E0%B8%AC%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B9%87%E0%B8%84%E0%B8%95%E0%B9%8C https://www.discogs.com/master/804854 https://en.wikipedia.org/wiki/Thai_rock",
+    "queryAlias": "The Olarn Project / The O-Larn Project / ลิขิต...ดวงดาว"
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "6725966",
+    "url": "https://i.discogs.com/seGoJ_kbtu76MjNgXw9VaoBeK-fxCYbD4oykz2qoT04/rs:fit/g:sm/q:90/h:375/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3MjU5/NjYtMTQyNTM5OTQ0/Ni04NDY0LmpwZWc.jpeg",
+    "note": "人工身分卡（CAA 走不通）；取 Discogs 6725966 封面；主線 2026-10-21 目視：Perfect Record PR 96015（1996），ลิขิต...ดวงดาว。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 3/4/2（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Olarn 為泰王在位 50 週年譜的器樂曲，排在開場。Olarn Promjai 生於清萊，彈吉他起家，組成於 1985 年的這支團走硬搖滾。那首〈พลังและความตั้งใจ〉（力量與決心）寫於 1996 年，致敬的對象是泰王蒲美蓬。同年 Perfect Record 把專輯發成卡帶，10 首裡有三首器樂、一首標為 Jam，吉他始終是主角。第 9 屆 Seesan Awards 上，樂團以這張摘走最佳搖滾團體，那首致敬曲也獲選最佳器樂曲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/6725966",
+     "https://www.discogs.com/release/15263169",
+     "https://th.wikipedia.org/wiki/%E0%B8%94%E0%B8%B4_%E0%B9%82%E0%B8%AD%E0%B8%AC%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B9%87%E0%B8%84%E0%B8%95%E0%B9%8C",
+     "https://en.wikipedia.org/wiki/Thai_rock",
+     "https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%AD%E0%B8%AC%E0%B8%B2%E0%B8%A3_%E0%B8%9E%E0%B8%A3%E0%B8%AB%E0%B8%A1%E0%B9%83%E0%B8%88",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://www.discogs.com/master/804854"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ไมโคร",
+   "album": "เอี่ยมอ่องอรทัย",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist?query=ไมโคร → 36fb1799（TH）但 release-group 數 0",
+      "release-group?query=artist:\"ไมโคร\" AND releasegroup:\"เอี่ยมอ่องอรทัย\"（count=0）；releasegroup 單查 count=0"
+     ],
+     "checkedAt": "2026-10-20",
+     "conclusion": "MB 有藝人無作品；以 Discogs master 875421（1991，LP／卡帶／CD 再版）與泰文維基、Seesan Awards 得獎清單人工確認。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/875421",
+     "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "manualRuling": "雲端主線 2026-10-21 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261021-ts7）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "泰國：原主唱 Ampol 單飛後、Micro 改由吉他手 Kob 主唱的第一張，當年即拿下 Seesan Awards 第 4 屆（1991）「最佳樂團」，證明樂團換聲後仍是泰國搖滾一線。｜⚠ 池中 ไมโคร 0 張，本批 3 張（上限）。「換主唱後第一張」依泰文維基 1991 年 Ampol 單飛、Kob 接任與本作 1991 年發行推定，寫作層回核。MB 無（走 §1）。｜MB 查無（MB 有藝人無作品；以 Discogs master 875421（1991，LP／卡帶／CD 再版）與泰文維基、Seesan Awards 得獎清單人工確認。），走 §1 人工身分。證據：https://www.discogs.com/master/875421 https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5) https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://www.discogs.com/master/875421 https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+    "queryAlias": "Micro Iem Ong Ora Thai"
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1793093834",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/66/00/21/6600216d-46e9-2580-84a8-7da72bbe16fd/888332988483.jpg/600x600bb.jpg",
+    "note": "人工身分卡（無 CAA）；取已釘定試聽的 Apple 1793093834 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 4,
+    "listeners": 53,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 2/5/4（Last.fm listeners 53）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "主唱單飛之後，Micro 把麥克風交給吉他手 Kob。在那之前，Micro 已是 1980 年代泰國搖滾的代表團體之一。1991 年出走的是主唱 Nui，起因是團員之間長期溝通不良。同年 8 月 23 日問世的第四張，大半由 Kob 主唱，鍵盤手 Boy、吉他手 Uan 也各唱一兩首；製作人是 Jaturon Emsbut。這張在第 4 屆 Seesan Awards 得到最佳團體，那一屆也是 Seesan 頭一次公開舉行頒獎。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://en.wikipedia.org/wiki/Thai_rock",
+     "https://www.discogs.com/master/875421"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b3/5c/c9/b35cc985-2ce7-09bf-39c8-fe2bf0736074/mzaf_13210841658193902891.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "appleCollectionId": "1793093834",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1793093834「ไมโคร《เอี่ยมอ่องอรทัย》」：Apple jp 1793093834：GMM 官方上架、1991-08-23 ℗1991，取第 1 軌。，取第 1 軌〈รักซะให้เข็ด〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "เดอะ ซัน",
+   "album": "ถนนพระอาทิตย์",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "1f38ff7e-b5ed-4e2a-b292-cb5299a0eed9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國：The Sun 轉投 Bakery Music 後的第三張，拿下 Seesan Awards 第 13 屆（2000）「最佳樂團」（全類別，不限搖滾），2017 年再推 Extended Edition。｜⚠ MB release-group 首發日 2004-05-11 為再發版，原版依泰文維基 2000-11-01、Discogs VCD 2000。泰文維基稱其為第三張，但其間 1999 有一張電影原聲，序數寫作層回核。｜MB release-group 1f38ff7e-b5ed-4e2a-b292-cb5299a0eed9：title「ถนนพระอาทิตย์」、Album、first-release-date 2004-05-11、artist-credit「The Sun」。證據：https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0_%E0%B8%8B%E0%B8%B1%E0%B8%99 https://musicbrainz.org/release-group/1f38ff7e-b5ed-4e2a-b292-cb5299a0eed9 https://www.discogs.com/release/19949464",
+    "queryAlias": "The Sun (Thailand) / Thanon Phra Athit；The Sun"
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1f38ff7e-b5ed-4e2a-b292-cb5299a0eed9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 4,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 4）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "轉進 Bakery 那年，The Sun 也換了鼓手。The Sun 由 Pong 主唱、Pop 彈吉他，屬泰國硬搖滾。2000 年離開 RS Promotion 之後，坐上鼓椅的是綽號「ปิงปอง」的新成員。第三張錄音室專輯於 11 月 1 日面世，收十首，〈ปากแข็งใจอ่อน〉是其中的熱門曲。Seesan Awards 第 13 屆的評審把最佳團體給了它。到了 2017 年，它以擴充版再度推出，全盤重新母帶，另加收新曲。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0_%E0%B8%8B%E0%B8%B1%E0%B8%99",
+     "https://www.discogs.com/release/19949464",
+     "https://th.wikipedia.org/wiki/%E0%B8%AB%E0%B8%B4%E0%B8%99_%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B9%87%E0%B8%81_%E0%B9%84%E0%B8%9F",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%9A%E0%B9%80%E0%B8%81%E0%B8%AD%E0%B8%A3%E0%B8%B5%E0%B9%88_%E0%B8%A1%E0%B8%B4%E0%B8%A7%E0%B8%AA%E0%B8%B4%E0%B8%84",
+     "https://musicbrainz.org/artist/3bff3182-199c-4d14-b261-7cc02b97d55e",
+     "https://musicbrainz.org/release-group/1f38ff7e-b5ed-4e2a-b292-cb5299a0eed9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hi-Rock",
+   "album": "คนพันธุ์ร็อค",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "58280298-00dc-4f43-8667-3b001144b021",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國：Hi-Rock 首張，泰文維基稱其在流行搖滾當道時以厚重金屬聲「翻轉泰國樂壇」；英文維基〈Thai rock〉列 Hi-Rock 為 90 年代初重金屬／硬搖滾主流化的代表團，同年〈กระจกร้าว〉獲金電視獎最佳 MV。｜⚠ MB release-group 標題為拉丁拼音 Khon Pan Rock，卡名用封面泰文（Discogs 卡帶 คนพันธุ์ร็อค；泰文維基作 คนพันธุ์ร็อก）。掛名封面為 ไฮร็อก／Hi-Rock 並列，採英文。｜MB release-group 58280298-00dc-4f43-8667-3b001144b021：title「Khon Pan Rock」、Album、first-release-date 1990、artist-credit「Hi-Rock」。證據：https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%AE-%E0%B8%A3%E0%B9%87%E0%B8%AD%E0%B8%81 https://en.wikipedia.org/wiki/Thai_rock https://musicbrainz.org/release-group/58280298-00dc-4f43-8667-3b001144b021 https://www.discogs.com/master/1502632",
+    "queryAlias": "ไฮร็อก / Khon Pan Rock；Khon Pan Rock"
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1754829255",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/37/2b/8a/372b8a63-81be-fa25-809a-d54fa1f151d2/23UM1IM50349.rgb.jpg/600x600bb.jpg",
+    "note": "CAA release-group 404；取已釘定試聽的 Apple 1754829255 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 2,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 2）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "主唱 เป้ 曾被稱為泰國音域最高的歌手。他領唱的 Hi-Rock 是泰國重金屬團，1990 年 6 月在 RS Promotion 旗下交出首張。當時樂壇當道的是流行搖滾與少年流行，這張端出重金屬的厚重聲響，舞台裝扮也鮮豔奪目。樂風取法美國的 Cinderella 與日本的 Loudness。〈กระจกร้าว〉在第 5 屆金電視獎拿下 MV 類亞軍。到了 1990 年代初，Hi-Rock 已被列入受主流肯定的泰國重金屬樂團。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%AE-%E0%B8%A3%E0%B9%87%E0%B8%AD%E0%B8%81",
+     "https://en.wikipedia.org/wiki/Thai_rock",
+     "https://th.wikipedia.org/wiki/%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%A5%E0%B9%82%E0%B8%97%E0%B8%A3%E0%B8%97%E0%B8%B1%E0%B8%A8%E0%B8%99%E0%B9%8C%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B8%B3",
+     "https://www.discogs.com/release/38416254",
+     "https://www.discogs.com/release/13224539",
+     "https://www.discogs.com/master/1502632",
+     "https://musicbrainz.org/release-group/58280298-00dc-4f43-8667-3b001144b021"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/05/51/61/05516137-a099-6ca2-7591-a42290d9433c/mzaf_5808952760135236611.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "appleCollectionId": "1754829255",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1754829255「Hi-Rock《คนพันธ์ร็อก》」：曲目 9/9 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈กระจกร้าว〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Соёл Эрдэнэ",
+   "album": "Soyol Erdene",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "eb117aec-3051-404c-bc3d-4341bee61f74",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "蒙古：蒙古第一支搖滾樂團（1971 年成立、1973 年世界青年聯歡節金牌）唯一一張正規專輯，1981 年由蘇聯 Melodiya 發行；2019 年由俄國考古廠牌 Ebalunga!!!／Everland Psych 重新母帶再發黑膠、CD、卡帶，是蒙古搖滾的起點之作。｜⚠ MB 掛名用西里爾「Соёл Эрдэнэ」、盤名用拉丁「Soyol Erdene」；2019 再版封面為雙語「Соёл Эрдэнэ = Soyol Erdene」，主線可統一成西里爾。原 Melodiya 版封面誤用 Bayan Mongol 團照（Discogs 註記），找封面時以 2019 再版為準。｜MB release-group eb117aec-3051-404c-bc3d-4341bee61f74：title「Soyol Erdene」、Album、first-release-date 1981-07-29、artist-credit「Соёл Эрдэнэ」。證據：https://en.wikipedia.org/wiki/Soyol_Erdene https://www.discogs.com/master/1305787 https://musicbrainz.org/release-group/eb117aec-3051-404c-bc3d-4341bee61f74",
+    "queryAlias": "Soyol Erdene Соёл Эрдэнэ Soyol-Erdene"
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/eb117aec-3051-404c-bc3d-4341bee61f74/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 16,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 16）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Melodiya 印的封面，放錯了樂團的團照。Soyol Erdene 被稱為蒙古第一支搖滾樂團，這是他們唯一一張完整專輯，1981 年交由這家蘇聯廠牌發行。封面上用的是同期樂團 Bayan Mongol 的照片，直到 2019 年再版才換上本團。九首歌的曲名以蒙、俄、英三語並列。樂團的來歷要回到 1971 年底：文化部長想要一支蒙古自己的披頭四，便由文化部出面組團，找來四位剛畢業的年輕樂手。1973 年，他們在東柏林的世界青年學生聯歡節拿下金牌。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Soyol_Erdene",
+     "https://www.discogs.com/release/3657448",
+     "https://www.discogs.com/master/1305787",
+     "https://www.discogs.com/release/13744470",
+     "https://www.discogs.com/master/1305787/versions",
+     "https://radiodiffusion.blog/category/mongolia/",
+     "https://musicbrainz.org/release-group/eb117aec-3051-404c-bc3d-4341bee61f74"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Haranga",
+   "album": "The Sound of the Century",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a4cf139b-fc63-3521-8426-2e962a3e866d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "蒙古：蒙古第一支硬搖滾樂團（1989）的首張專輯，1997 年在德國錄製、由 DaimlerChrysler 與 Siemens Nixdorf 贊助發行，團方稱 Haranga 做出了「蒙古第一張達國際標準的專輯」；收錄〈Бодлын тэнгис〉〈Их хаадын сүнс〉〈Зөвхөн Монголдоо〉等 90 年代代表曲，2023–24 年這批歌再以 Retro Records Mongolia 黑膠兩卷重發。｜⚠ MB 此 release-group 沒填 primary-type 與日期（只有一筆無日期 release）；若主線要求 Album 型別，可改走 §1 人工身分（manualEvidenceUrls 已備）或先補 MB。Discogs 只收 2002 EU 版（印 ©1997）。封面主文字為英文。｜MB release-group a4cf139b-fc63-3521-8426-2e962a3e866d：title「The Sound of the Century」、null、first-release-date （空）、artist-credit「Haranga」。證據：https://en.wikipedia.org/wiki/Haranga https://www.discogs.com/release/22282192 https://eagle.mn/r/63094 https://www.ub.life/p/14551",
+    "queryAlias": "Эрин зууны хөг Erin zuuny khog"
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1206279247",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/cd/86/ef/cd86ef7f-aded-4e6d-bc82-393f0a8ac7be/cover.jpg/600x600bb.jpg",
+    "note": "CAA release-group 404；取已釘定試聽的 Apple 1206279247 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 1,
+    "listeners": 291,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 1/5/1（Last.fm listeners 291）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 1，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "德國聽眾想買 CD，Haranga 還沒出過專輯。Haranga 從烏蘭巴托的戲劇院起家，1989 年組成硬搖滾團。那是 1990 年代中期，樂團隨蒙古文化日赴德國演出。時任文化參贊的 Pürevsüren 出面奔走，找來 Mercedes-Benz 與 Siemens Nixdorf 等德國企業出資。1997 年，十四首歌在波昂的 Stonehenge Studio 錄製、混音，製作與編曲全由樂團包辦；鼓不用 MIDI，全憑類比麥克風。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Haranga",
+     "https://www.ub.life/p/14551",
+     "https://www.discogs.com/release/22282192",
+     "https://eagle.mn/r/63094",
+     "https://www.discogs.com/release/28013337",
+     "https://musicbrainz.org/release-group/a4cf139b-fc63-3521-8426-2e962a3e866d"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/15/e8/fb/15e8fb35-7905-b7b7-feee-bb0705ad47fe/mzaf_6468540870703242007.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "appleCollectionId": "1206279247",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1206279247「Haranga《The Sound of the Century》」：Apple jp 1206279247：14 首與 MB 14 首同數、年份 1997，曲名西里爾／拉丁拼寫差異故自動比對 0，取第 1 軌。，取第 1 軌〈Хилэнцэт харц〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hurd",
+   "album": "The Best Collection I",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "1743460b-ebb5-47a1-8b3a-cd3e77c8be5d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "蒙古：被公認（Metal Hammer、維基）「第一支把重金屬引進蒙古」的 Hurd 首張專輯（雖名為 Best Collection，實為原創錄音室首作，Discogs 註明 First album），與同時發行的第二卷一起奠定 90 年代蒙古重搖滾的聲音，2023 年限量再版。｜⚠ 盤名易被誤認為精選（MB 標 Album 無 Compilation；維基列為 studio album）。同團招牌曲〈Цэргийн бодол〉在同時發行的 Best Collection II（MB 標 Compilation），故選第一卷。池中已有《Мянган жилд ганц》，本張為第 2 張。具體好評證據偏弱，主要靠「蒙古第一支重金屬團首作」的場景里程碑；主線若嫌名稱混淆可拿掉。｜MB release-group 1743460b-ebb5-47a1-8b3a-cd3e77c8be5d：title「The Best Collection 1」、Album、first-release-date 1997、artist-credit「Хурд」。證據：https://en.wikipedia.org/wiki/Hurd_(band) https://www.loudersound.com/features/best-mongolian-metal-bands-the-hu https://www.discogs.com/master/798996 https://musicbrainz.org/release-group/1743460b-ebb5-47a1-8b3a-cd3e77c8be5d",
+    "queryAlias": "Хурд The Best Collection 1；The Best Collection 1；Хурд"
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1565555783",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/31/7d/a1/317da1fb-ea29-7e9d-0dd9-43bcc75e263f/859747004846_cover.jpg/600x600bb.jpg",
+    "note": "CAA release-group 404；取已釘定試聽的 Apple 1565555783 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 194,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 194）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "取名最佳精選，卻是 Hurd 的首張。說起蒙古的重金屬，Hurd 被認為是最早把它引進來的樂團。第一卷和第二卷都在 1997 年推出。盒裝《Black Box》註明，這系列收的是 1993 到 1998 年間自錄的原創歌。第一卷收十二首，合計約 62 分鐘，最長的〈Сэрүүн Бухимдал〉有 7 分 49 秒。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Hurd_(band)",
+     "https://www.loudersound.com/features/best-mongolian-metal-bands-the-hu",
+     "https://www.discogs.com/release/3123483",
+     "https://www.discogs.com/master/798996",
+     "https://www.discogs.com/release/5411433",
+     "https://mn.wikipedia.org/wiki/%D0%A5%D1%83%D1%80%D0%B4_(%D1%85%D0%B0%D0%BC%D1%82%D0%BB%D0%B0%D0%B3)",
+     "https://www.discogs.com/master/798995",
+     "https://www.discogs.com/release/27524697",
+     "https://musicbrainz.org/release-group/1743460b-ebb5-47a1-8b3a-cd3e77c8be5d"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/29/68/48/2968486b-b46c-bfe0-ca80-11cc9d824cd1/mzaf_4218879557129272806.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "appleCollectionId": "1565555783",
+    "storefront": "MN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple mn 1565555783「Hurd《The Best Collection I》」：Apple mn 1565555783：12 首與 MB 同數、年份 1997，取第 1 軌。，取第 1 軌〈Chono〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Nisvanis",
+   "album": "Хүчилтөрөгч",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0bf6343d-6d28-4ba2-88d1-f28de7406985",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "蒙古：蒙古另類／grunge 先驅 Nisvanis（1996 年即獲 Pentatonic 最佳新團）的首張專輯，現代派詩人 Galsansükh 參與塑造樂團方向；蒙文維基稱這張「在當時呈現了全新的面貌」，〈Эмийн сан руу алхсан нь〉MV 讓樂團打開全國知名度，2005 年再版。｜⚠ MB 另有重複 release-group ac295a6d-d6db-4cf2-be33-bbc25c90b8da「O₂」（1999 MN），同一張；封面主文字為「O2 - Хүчилтөрөгч」。｜MB release-group 0bf6343d-6d28-4ba2-88d1-f28de7406985：title「Хүчилтөрөгч」、Album、first-release-date 1999-07-14、artist-credit「Nisvanis」。證據：https://mn.wikipedia.org/wiki/%D0%A5%D2%AF%D1%87%D0%B8%D0%BB%D1%82%D3%A9%D1%80%D3%A9%D0%B3%D1%87_(%D1%86%D0%BE%D0%BC%D0%BE%D0%B3) https://mn.wikipedia.org/wiki/%D0%9D%D0%B8%D1%81%D0%B2%D0%B0%D0%BD%D0%B8%D1%81_%D1%85%D0%B0%D0%BC%D1%82%D0%BB%D0%B0%D0%B3 https://www.discogs.com/release/6668813 https://musicbrainz.org/release-group/0bf6343d-6d28-4ba2-88d1-f28de7406985",
+    "queryAlias": "O2 Oxygen Khuchiltorogch"
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0bf6343d-6d28-4ba2-88d1-f28de7406985/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 178,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 2/5/4（Last.fm listeners 178）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "現代派詩人入團後，這支大學樂團換了團名。Nisvanis 被歸為蒙古的 grunge 樂團。詩人名叫 Galsansükh，1995 年加入時，樂團還在唱流行搖滾，他提議連風格、團名與成員一起換。首張《Хүчилтөрөгч》（氧氣）發表於 1999 年，首支 MV〈Эмийн сан руу алхсан нь〉替他們打開了知名度。",
+    "sourceUrls": [
+     "https://mn.wikipedia.org/wiki/%D0%9D%D0%B8%D1%81%D0%B2%D0%B0%D0%BD%D0%B8%D1%81_%D1%85%D0%B0%D0%BC%D1%82%D0%BB%D0%B0%D0%B3",
+     "https://musicbrainz.org/release-group/0bf6343d-6d28-4ba2-88d1-f28de7406985",
+     "https://mn.wikipedia.org/wiki/%D0%A5%D2%AF%D1%87%D0%B8%D0%BB%D1%82%D3%A9%D1%80%D3%A9%D0%B3%D1%87_(%D1%86%D0%BE%D0%BC%D0%BE%D0%B3)",
+     "https://www.discogs.com/release/6668813",
+     "https://www.discogs.com/artist/3132781"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/3f/63/2d/3f632d14-98f6-3453-b0b3-c5fc9de92c88/mzaf_6337511432581478474.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "appleCollectionId": "1713888461",
+    "storefront": "MN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple mn 1713888461「Nisvanis《Хүчилтөрөгч》」：曲目 17/17 對上 MB 原盤（Apple 共 17 軌），取第 1 軌〈Гэрэлт Ирээдүй Намайг Дуудна〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Lemons",
+   "album": "Red Album",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "895a2db0-e25a-3bd8-a3cf-b8956ce2dd28",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "蒙古：2006 年在蒙古最大搖滾節 Playtime 一戰成名的烏蘭巴托樂團首張專輯，英文維基稱其為第一張不大幅妥協搖滾聲音、仍在全國取得商業成功的蒙古搖滾專輯，樂評拿來比早期 The Strokes；2018 年發行 500 張黑膠再版。｜⚠ MB release-group 無日期；年份照 Discogs 2006 原版 CD。藝人名與美國 90 年代 The Lemons 同名，MB 以 disambiguation「Mongolian rock band」區分（artist c6c434e1-0d16-4d0d-947f-c981f97d1aa7）。｜MB release-group 895a2db0-e25a-3bd8-a3cf-b8956ce2dd28：title「Red Album」、Album、first-release-date （空）、artist-credit「The Lemons」。證據：https://en.wikipedia.org/wiki/The_Lemons_(Mongolian_band) https://www.discogs.com/master/2030614 https://www.discogs.com/release/13497859 https://musicbrainz.org/release-group/895a2db0-e25a-3bd8-a3cf-b8956ce2dd28",
+    "queryAlias": "The Lemons Mongolia Red Album"
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1039734145",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/fa/dc/0f/fadc0f02-361e-0f3d-e379-9c4d8dc6e000/cover.jpg/600x600bb.jpg",
+    "note": "CAA release-group 404；取已釘定試聽的 Apple 1039734145 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 1,
+    "listeners": 1392,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 1/5/1（Last.fm listeners 1392）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 1，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Playtime 的舞台替 The Lemons 招來樂迷。這支烏蘭巴托獨立搖滾團成軍於 2004 年。那是 2006 年，他們登上蒙古最大的搖滾節 Playtime。同年 12 月，首張《Red Album》交由 Hi-Fi Label 推出。它被視為第一張在全國取得商業成功的蒙古本土搖滾唱片，樂評則把它比作早期的 The Strokes。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Lemons_(Mongolian_band)",
+     "https://www.discogs.com/release/17854522",
+     "https://www.discogs.com/release/13497859",
+     "https://www.discogs.com/master/2030614",
+     "https://musicbrainz.org/release-group/895a2db0-e25a-3bd8-a3cf-b8956ce2dd28"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/08/4e/0b/084e0b6f-762d-980c-6b68-02d417f13dff/mzaf_12831850190369646931.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "appleCollectionId": "1039734145",
+    "storefront": "MN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple mn 1039734145「The Lemons《Red Album》」：Apple mn 1039734145：10 首與 MB 同數、年份 2006，取第 1 軌。，取第 1 軌〈Zuud Noirondoo〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Altan Urag",
+   "album": "Унага төрөв",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "12f7a157-8b45-3220-9818-72c40ce98ecd",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "蒙古：蒙古民族搖滾的起點：PBS NewsHour 指蒙古的融合搖滾「始於 2000 年代初的 Altan Urag，把傳統蒙古樂器電氣化」，這張 2004 年首作就是那個轉折；樂團其後的音樂用於電影《Khadak》《Mongol》與 Netflix《Marco Polo》，開出 The HU、Uuhai 這條線。｜⚠ 封面雙語「Унага Төрөв - Foal's Been Born」，MB 正題為西里爾。池中已有《Made in Altan Urag》，本張為第 2 張。好評證據是「民族融合搖滾開端」的場景里程碑，沒有專輯本身的樂評。｜MB release-group 12f7a157-8b45-3220-9818-72c40ce98ecd：title「Унага төрөв」、Album、first-release-date 2004-06-15、artist-credit「Altan Urag」。證據：https://www.pbs.org/newshour/show/in-mongolia-a-new-generations-rock-n-roll-rooted-in-history https://en.wikipedia.org/wiki/Altan_Urag https://www.loudersound.com/features/best-mongolian-metal-bands-the-hu https://www.discogs.com/master/796074 https://musicbrainz.org/release-group/12f7a157-8b45-3220-9818-72c40ce98ecd",
+    "queryAlias": "Foal's Been Born Altan Urag Unaga Torov"
+   },
+   "research": {
+    "suggestedYear": 2004,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/12f7a157-8b45-3220-9818-72c40ce98ecd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 16,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 16）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "封底的曲名，用豎寫的傳統蒙古文字印上。作曲兼製作人 Erka 於 2002 年組成蒙古民族搖滾團 Altan Urag。首作《Унага төрөв》2004 年 6 月 15 日推出，經 Egshig Records 發行，版權則留在樂團手上。十首長約 40 分鐘，被標為 Folk Rock 與泛音喉唱。回顧蒙古的融合搖滾，Altan Urag 被點名為先驅：2000 年代初，他們把傳統樂器電氣化。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/12f7a157-8b45-3220-9818-72c40ce98ecd",
+     "https://www.discogs.com/master/796074",
+     "https://www.discogs.com/release/1185266",
+     "https://en.wikipedia.org/wiki/Altan_Urag",
+     "https://www.pbs.org/newshour/show/in-mongolia-a-new-generations-rock-n-roll-rooted-in-history",
+     "https://digitalcollections.sit.edu/isp_collection/1140"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Uuhai",
+   "album": "Human Herds",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "fef9f590-df15-4e39-ba7e-8070e5de5175",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "蒙古：Hurd 鼓手 Otgonbaatar 組成的蒙古民族金屬團簽下 Napalm Records 後的首張專輯，馬頭琴、喉唱接重型吉他、全蒙語演唱；Distorted Sound 給 9/10，稱其為「難以用言語概括的驚人聆聽體驗」，是 The HU 之後最受國際金屬媒體注目的蒙古新團。｜⚠ 2026-01-09 新碟，目前只找到一篇完整樂評（9/10）；國際廠牌＋單篇高分，夠格但證據厚度有限。｜MB release-group fef9f590-df15-4e39-ba7e-8070e5de5175：title「Human Herds」、Album、first-release-date 2026-01-09、artist-credit「Uuhai」。證據：https://distortedsoundmag.com/album-review-human-herds-uuhai/ https://en.wikipedia.org/wiki/Uuhai https://musicbrainz.org/release-group/fef9f590-df15-4e39-ba7e-8070e5de5175",
+    "queryAlias": "UUHAI Human Herds"
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fef9f590-df15-4e39-ba7e-8070e5de5175/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 4,
+    "listeners": 1448,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 2/5/4（Last.fm listeners 1448）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "七人金屬團裡，有兩位拉馬頭琴兼唱喉音。Uuhai 是蒙古的民族金屬團，創團鼓手 Otgonbaatar Damba 也是 Hurd 的成員。樂團 2020 年成立於烏蘭巴托，七人陣容一路維持原班。巴黎是他們 2023 年 6 月首次歐洲巡演的起點。Napalm Records 在 2025 年 11 月宣布簽約，三支單曲陸續先行。2026 年 1 月 9 日首張出片，評論形容它是寫給家鄉的情書，喉唱是全盤最大亮點。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/fef9f590-df15-4e39-ba7e-8070e5de5175",
+     "https://musicbrainz.org/release/38b4135b-fdeb-4d04-94d7-7e1dbecd42df",
+     "https://en.wikipedia.org/wiki/Uuhai",
+     "https://en.wikipedia.org/wiki/Hurd_(band)",
+     "https://distortedsoundmag.com/album-review-human-herds-uuhai/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/39/d0/ea39d052-4b75-8c39-0f58-b37267ae686e/mzaf_9628589785450550617.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "appleCollectionId": "1844835869",
+    "storefront": "MN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple mn 1844835869「Uuhai《Human Herds》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Beginning〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The HU",
+   "album": "Hun",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2c4307d0-0d42-4848-afad-ada40dad6f63",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "蒙古：The HU 第三張錄音室專輯，進入澳洲（53）、瑞士（43）專輯榜；Rush On Rock 選為「本週唱片」並稱是「自 2007 年 The Varangian Way 以來最刺激、最能定義類型的唱片」，Out of Rage 8/10，Sputnik Music 稱為樂團至今最完整的作品。｜⚠ 池中已有 The Gereg、Rumble of Thunder，本張為第 3 張（上限）。封面字樣為「HUN」，MB 用「Hun」。Sputnik 3.5/5 的引述來自搜尋摘要，頁面當下 503 未能直接核對。｜MB release-group 2c4307d0-0d42-4848-afad-ada40dad6f63：title「Hun」、Album、first-release-date 2026-07-24、artist-credit「The Hu」。證據：https://rushonrock.com/2026/07/24/record-of-the-week-the-hu/ https://www.outofrage.net/post/review-the-hu-hun https://en.wikipedia.org/wiki/The_Hu https://musicbrainz.org/release-group/2c4307d0-0d42-4848-afad-ada40dad6f63",
+    "queryAlias": "The HU HUN"
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2c4307d0-0d42-4848-afad-ada40dad6f63/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 5787,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "note": "機器基線 3/4/2（Last.fm listeners 5787）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／蒙古搖滾圈為尺度（大廠正常流通或國際發行 2、正規小廠圈外少人知 3）；經典度：Season Awards 得獎與場景里程碑給 3，泰國搖滾史奠基作（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan 兩張）與蒙古第一支搖滾團 Soyol Erdene 給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "第三張裡的〈Lost Soul〉，讓合成器走到前面。The HU 這支蒙古樂團自稱 hunnu rock，團名借自匈奴。〈Lost Soul〉請來 Nothing More 主唱 Jonny Hawkins 客串，被樂評稱為整張最大的驚喜。唱片 2026 年 7 月 24 日由 Better Noise Music 上市，收十一首。英國樂評說樂團有能力把喉唱帶進主流。專輯隨後進入澳洲與瑞士專輯榜。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/8c2afd26-711a-4543-a225-ed4422c2ed3b",
+     "https://en.wikipedia.org/wiki/The_Hu",
+     "https://rushonrock.com/2026/07/24/record-of-the-week-the-hu/",
+     "https://www.outofrage.net/post/review-the-hu-hun",
+     "https://musicbrainz.org/release-group/2c4307d0-0d42-4848-afad-ada40dad6f63"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/23/ea/70/23ea7053-1176-ab15-e464-3b597edc633e/mzaf_1699144265876096411.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:46Z",
+    "appleCollectionId": "6767602940",
+    "storefront": "MN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple mn 6767602940「The Hu《Hun》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Warrior Chant〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

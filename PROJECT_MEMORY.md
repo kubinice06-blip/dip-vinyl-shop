@@ -7,6 +7,72 @@
 - **主要檔案**：`dip-vinyl-worker/src/index.js`、`scripts/kv-spotify-link-repair.mjs`
 - **驗證**：直接拿 worker token 打 Spotify 得 429 `QUOTA_EXCEEDED`；`--dry-run` 候選 8,502；worker `node --check` 過。配額重置後跑修復（見下一筆或 rulings）。
 
+### 2026-10-21｜dip-vinyl-shop｜薄細項策展線 ts10／ts11：越南 25＋新加坡 13＋蒙古 28 張上線（放寬門檻）；越泰新蒙線收尾
+
+- **內容**：店主裁定 VN／SG／MN 放寬為「場景裡有代表性」（仍排除單曲、EP、合輯、現場專、非搖滾、無封面）。ts10：越南 25（Ngũ Cung 3、Cá Hồi Hoang 4、Bức Tường 2、Thắng 2、The Cassette 2、Cút Lộn 2、Chillies、Thủy Triều Đỏ、Raditori、Windrunner、The Flob、Black Infinity、Da Vàng、Sói Đen、7UPPERCUTS、Final Stage）＋新加坡 13（Electrico 2、Rudra 2、The Oddfellows、Opposition Party、I Am David Sparkle、Stompin' Ground、Plainsunset、Amateur Takes Control、Marijannah、Forests、Sweet Charity）。ts11：蒙古 28（Hurd 6、Altan Urag 5、Nisvanis 2、The Lemons 2、Mohanik 2、Аравт 2、Аясын Салхи 2、mxrningstar 2、The Tourists 2、Magnolian 2、A-Sound）。The HU《Live at Glastonbury》照店主指示不收。
+- **主線審稿**：ts10 改 3 張（德國雜誌無頭評分、直譯不通的媒體評語刪除；「外界」改「當地樂評」）；ts11 改 2 張（The Lemons 兩張刪 Last.fm／維基單源評價句）。封面 live-check 換 3 張（Hypnotism、S.O.S. 改 CAA 縮圖；Slow Burn 改 Apple）。
+- **結果**：泰國 57、越南 56、新加坡 54、蒙古 43。蒙古到不了 50——剩餘候選沒有封面或沒有可核身分。國別表補 20 位藝人。
+- **未完**：本線新卡 mood 座標未評（mood gate 紅，前端略過）；§11 藝人介紹待補；ts5／ts6 策展另開工作階段。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`onboarding-manifest-add-20261021-ts{10,11}-20261021.json`、`batch-progress/add-20261021-ts{10,11}/*`、`desc-tools/batches/*/add-20261021-ts1{0,1}-*`、`rock-asia-country-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`。
+- **驗證**：封面 66 張回讀 200（換源後）；`verify-album-onboarding --published` ts10 38／ts11 28 皆 0 error；KV 回讀 38/38、28/28；card_catalog 38/38、28/28。
+
+### 2026-10-21｜dip-vinyl-shop｜薄細項策展線 ts9：新加坡搖滾 30 張＋泰國 4＋蒙古 2＋Jogja Hip Hop Foundation 上線；越泰新蒙補卡收尾
+
+- **內容**：新加坡 30 張（The Observatory 7、Wormrot 4、Subsonic Eye 5、Sobs 2、Forests、Humpback Oak、Rudra 2、Blush、Doldrey、Padres、Sweet Charity《Pelarian》、The Caulfield Cult、Caracal、Mystique、Cosmic Child、Sial）＋泰國 4 張（前一輪被誤寫的同藝人上限擋掉的 bodyslam《Save My Life》、Moderndog《ทิงนองนอย》、Silly Fools《The One》、Big Ass《THE LION》）＋蒙古 2 張（Nisvanis《Нисдэг таваг》、Hurd《The Best Collection II》）＋店主指名的 Jogja Hip Hop Foundation《Semar Mesem Romo Mendem》（歸嘻哈、掛亞洲嘻哈節點）。研究後刪 8 張（證據弱 7、無封面 1）。
+- **主線審稿**：寫作層把媒體年終榜「去掉媒體名、留下名次」，違反 writer-base 榜單條——18 張整句刪名次、保留評語本身；已上線的 ts7 The HU《Hun》、ts8 Quái Vật Tí Hon 同類兩句一併修正並重寫 KV。
+- **越泰新蒙收尾**（店主「補到至少 50，不能水掉」）：泰國 12→57 ✅、新加坡 11→41、越南 15→31、蒙古 5→15。後三國照「每張都要有具體好評證據」的門檻已無夠格候選（補充輪拿掉誤寫的同藝人上限後再找一輪），是否放寬待店主裁定。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`onboarding-manifest-add-20261021-ts{7,8,9}-20261021.json`、`batch-progress/add-20261021-ts9/*`、`desc-tools/batches/*/add-20261021-ts9-*`、`rock-asia-country-map.json`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`。
+- **驗證**：封面 37 張回讀 200；`verify-album-onboarding --published` 0 error；KV 回讀 ts9 37/37、ts7 30/30、ts8 35/35；card_catalog 37/37。
+
+### 2026-10-21｜dip-vinyl-shop｜薄細項策展線 ts8：泰國搖滾（二）19 張＋越南搖滾 16 張上線
+
+- **內容**：泰國 2005 後 19 張（Slot Machine、bodyslam 2、Taitosmith、Apartment Khunpa 2、Moderndog、Big Ass、Desktop Error、Sek Loso、BrandNew Sunset、KLUAYTHAI 2、Lomosonic、The Richman Toy、Silent Scream、Greasy Cafe 2、Instinct；以 Season Awards 為主要證據）＋越南 16 張（ATΩMEGA、The Flob、Gạt Tàn Đầy、Black Infinity、Windrunner、Hạc San 2、UnlimiteD、Ngọt 2、Quái Vật Tí Hon、Tạ Quang Thắng 2、Bức Tường 2、Microwave）。研究後刪 7 張：The Yers、Chillies《KIM》、Thắng、Bức Tường《Ngày khác》（證據弱），ชาตรี คงสุวรรณ、Phạm Anh Khoa 2 張（無封面來源）。
+- **類型樹**：泰國 34→53、越南 15→31。
+- **另**：合併 origin/main（情緒三軸上線，PR #102 等）。`scripts/build-card-moods.mjs` gate 目前因 ts1–ts8 新卡尚無情緒座標而紅；前台以雜湊對卡、缺座標的卡只是不出現在調頻結果，不影響部署。情緒評分排在本線收尾一起補。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`onboarding-manifest-add-20261021-ts8-20261021.json`、`batch-progress/add-20261021-ts8/*`、`desc-tools/batches/*/add-20261021-ts8-*`、`rock-asia-country-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`。
+- **驗證**：封面 35 張回讀 200；`verify-album-onboarding --published` 0 error；KV 回讀 35/35；card_catalog 35/35。
+
+### 2026-10-21｜dip-vinyl-shop｜薄細項策展線 ts7：泰國搖滾（一）22 張＋蒙古搖滾 8 張上線；更正「同一藝人最多 3 張」
+
+- **起因**：店主 2026-10-20「越南 泰國 新加坡 蒙古 多補充 補到至少 50（不能因此水掉，還是要讚的）」。策展 p–u 六組＋補充輪 v–x 三組（`batch-progress/thin-sub-20261020/CUR-DISPATCH-ts7.md`、`-ts7b.md`），每張要有具體好評證據、寧缺勿濫。
+- **更正**：派工單誤寫「同一藝人最多 3 張」——此條 2026-09-04 店主已作廢（c53 第 150 條），2026-10-11 downtempo 線派工誤抄回來、本線沿用；店主 2026-10-21 指出。已改 `CUR-DISPATCH.md`、`CUR-DISPATCH-ts7.md`、downtempo 派工，被擋的夠格專輯由補充輪收回。
+- **ts7 內容**：泰國 1970–2004 共 22 張（Micro 3、Asanee–Wasan 2、Carabao、Tawan、Hin Lek Fai、Crub、Wolfpack、Blackhead、The Sun 2、Smile Buffalo、Silly Fools 2、Moderndog、Pru、Big Ass 2、O-Larn Project、Hi-Rock；以 Season Awards 得獎為主要證據）＋蒙古 8 張（Soyol Erdene、Haranga、Hurd、Nisvanis、The Lemons、Altan Urag、Uuhai、The HU《Hun》）。刪 Clash《ONE》、The Lemons《III》、Аясын Салхи（證據弱）、Y Not 7《Yeah!》（無封面來源）。
+- **類型樹**：泰國 12→34、蒙古 5→13。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`onboarding-manifest-add-20261021-ts7-20261021.json`、`batch-progress/add-20261021-ts7/*`、`desc-tools/batches/*/add-20261021-ts7-*`、`rock-asia-country-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`、`batch-progress/thin-sub-20261020/*`。
+- **驗證**：封面 30 張回讀 200；`verify-album-onboarding --published` 0 error；KV 回讀 30/30；card_catalog 30/30。
+
+### 2026-10-20｜dip-vinyl-shop｜薄細項策展線 ts2：南亞、內亞與東南亞第二輪 46 張上線
+
+- **內容**：新加坡 10、馬來西亞 6、巴基斯坦 7、印度 7、蒙古 5、孟加拉 2、尼泊爾 2、印尼 7（1990 後補缺）。研究層更正廠牌 12 處（Fuzön → Virgin Records、Shironamhin → Rabbit Communications 初版、XPDC → Life 等）、The SIGIT 年份改 2006（印尼首發）。
+- **主線**：試聽 35 ready（人工 4 張）／11 無來源；封面 CAA 29＋Apple 14＋Discogs 3；三軸照 §0.8 錨點制以各國搖滾圈為尺度；審稿 46 篇不改（`batch-progress/add-20261020-ts2/rulings.md` 10031–10039）。
+- **類型樹**：`build-genre-tree.mjs` 日亞搖滾國別加孟加拉、尼泊爾；新藝人 39 位寫進 `rock-asia-country-map.json`。新加坡 1→11、巴基斯坦 1→8、印度 0→7、蒙古 0→5、馬來西亞 9→15、印尼 28→35。
+- **交接**：`batch-progress/HANDOFF-thin-sub-line.md` 更新進度；ts5／ts6 派工單已寫，換新工作階段開跑；新增 `batch-progress/thin-sub-20261020/warm-batch.mjs`（上線後預熱 `/album-genres`）。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`onboarding-manifest-add-20261020-ts2-20261020.json`、`batch-progress/add-20261020-ts2/*`、`desc-tools/batches/*/add-20261020-ts2-*`、`scripts/build-genre-tree.mjs`、`rock-asia-country-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`。
+- **驗證**：封面 46 張逐一回讀 200；`verify-album-onboarding --published` 0 error；KV 回讀 46/46；card_catalog 46/46。
+
+### 2026-10-20｜dip-vinyl-shop｜薄細項策展線 ts4：地中海與拉丁傳統 44 張上線（Fado、Flamenco、Tango、巴爾幹／Klezmer）
+
+- **內容**：Fado 12、Flamenco 11、Tango 11、巴爾幹／吉普賽／Klezmer 10；策展 45，刪 Rodolfo Mederos《Verdades y mentiras》（研究查得是爵士搖滾器樂盤、非探戈）。Šaban Bajramović 改釘 1980 RTV Ljubljana 原盤《A Sunen Romalen - Slusajte me ljudi》（原卡是 1995 整理 CD）；Utrera 姊妹卡面年份改 1970 Hispavox 原版。
+- **主線**：試聽 27 ready（人工 6 張，含另區商店 pt／es 曲目逐首核對）；封面 CAA 35＋Apple 4＋Discogs 5；三軸照 §0.8 錨點制以各樂種音樂圈為尺度；審稿改 1 張（Gisela João 媒體年終榜整條不寫）。裁定見 `batch-progress/add-20261020-ts4/rulings.md` 10111–10118。
+- **類型樹**：`genre-l3-artist-map.json` 補 fado 12、flamenco 11、tango 11、balkan 10 條；原本隱藏的 Tango 節點 4→15 過門檻上線，Flamenco 17→28、Fado 12→24、巴爾幹 12→23。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`onboarding-manifest-add-20261020-ts4-20261020.json`、`batch-progress/add-20261020-ts4/*`、`desc-tools/batches/*/add-20261020-ts4-*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`。
+- **驗證**：封面 44 張逐一回讀 200；`verify-album-onboarding --published` 0 error；KV 回讀 44/44；card_catalog 44/44。
+
+### 2026-10-20｜dip-vinyl-shop｜薄細項策展線 ts3：非洲 42 張上線（剛果 soukous、衣索比亞、南部非洲）
+
+- **內容**：剛果 soukous／rumba 21、衣索比亞 15（《Éthiopiques》第 3／5／16／18／19／22／23／25／28／29／30 卷等）、南部非洲 6；策展 44，刪 Tcha Tcho、Mahotella 重包裝。選輯 12 張走 §5.6（考古整理盤，各附 exceptionReason）。
+- **主線審稿**改 7 張：刪 hook 的「據說」、媒體名改「華府樂評」、刪查無頒獎單位的年度獎、衣索比亞首都統一「阿迪斯阿貝巴」（`batch-progress/add-20261020-ts3/rulings.md` 9959–9960）。
+- **類型樹**：`build-genre-tree.mjs` 步驟 2.6 支援「藝人|專輯」條目（Various Artists 的 Éthiopiques 才能單張掛），`genre-l3-artist-map.json` 補剛果 16、衣索比亞 13、南部非洲 5 條；衣索比亞節點 9→17、剛果 31、南部非洲 29。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`onboarding-manifest-add-20261020-ts3-20261020.json`、`batch-progress/add-20261020-ts3/*`、`desc-tools/batches/*/add-20261020-ts3-*`、`scripts/build-genre-tree.mjs`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`。
+- **驗證**：上線前封面 42 張逐一回讀 HTTP 200；`verify-album-onboarding --published` 0 error；KV 回讀 42/42；card_catalog 42/42。
+
+### 2026-10-20｜dip-vinyl-shop｜薄細項策展線 ts1：東南亞搖滾 42 張上線（越南搖滾 1→15）
+
+- **起因**：店主「掃描細項是否有些太少，比如越南搖滾只有一張；太少的策展增加卡池」→「開始跑」。計畫 `batch-progress/EXPANSION-PLAN-thin-subgenres.md`，交接 `batch-progress/HANDOFF-thin-sub-line.md`。
+- **內容**：越南 9、柬埔寨 2、菲律賓 11、泰國 9、馬來西亞 3 等 42 張（策展 45，刪 Rough Guide Cambodia、The Flob EP、Clash Soundcream）；人工身分 2 張（Moderndog《เสริมสุขภาพ》、พงษ์สิทธิ์ คำภีร์《เสือตัวที่ 11》）。研究 5／鉤子 2／寫作 2，主線審稿改 4 處（媒體名改「樂評」、刪銷量單一來源、刪 Hujan 空泛結句），裁定見 `batch-progress/add-20261020-ts1/rulings.md`。
+- **寫入**：card_catalog 42、KV 固定簡介 42（回讀逐字一致）、試聽 32 ready／10 無來源、seed 上架；Bức Tường《Vô hình》CAA 前封面持續 500，改 Apple 官方圖。新藝人 31 位寫進 `rock-asia-country-map.json`，`/album-genres` 預熱 42 張（39 有標籤）後重建類型樹與抽卡封面：越南 15、泰國 12、菲律賓 20、馬來西亞 9、柬埔寨 5。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`onboarding-manifest-add-20261020-ts1-20261020.json`、`batch-progress/add-20261020-ts1/*`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261020-ts1-*`、`rock-asia-country-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`。
+- **驗證**：`verify-album-onboarding --published` 42 張 0 error；KV 回讀 42/42；qa-batch out／qa-check-research 0 標記。情緒評分與藝人介紹（§11）併到整條 ts 線收尾一起做。
 ### 2026-10-21｜dip-vinyl-shop｜頻率選歌：玩家回報三件（就這張空白、上一張的介紹、缺 Spotify）同一個根源
 
 - **根源**：掃描時每閃過一張就呼叫 `resolveCardAssets`（2 次 Firestore 讀＋worker `/spotify-search`）查封面，轉幾圈就是幾百次；worker 與 Firestore 被打爆後，結果頁的封面／Spotify 連結查不到、`resolveCardAssets` 慢到玩家只看到空白（我把主機層先藏了、結果層還沒畫）。
@@ -207,6 +273,15 @@
 - **主要檔案**：`dip-player.js`、`index.html`、`battle.html`／`roguelike.html`／`shop-all.html`（只升版）、`dip-genre-tree.js`、`scripts/build-genre-tree.mjs`、`scripts/build-asia-country-map.mjs`（新）、`rock-asia-country-map.json`（新）、`genre-tree.json`、`card-subgenres.json`、`ALBUM_ONBOARDING.md`
 - **驗證**：本機 Playwright 16/16 通過——`armOnEnable:false` 切開不建 ctx／不起 keep-alive、預設仍武裝；手動播放 4 秒內 suspend 偏好留 `on` 且收到 `kept:true`、4 秒後 suspend 寫 `off`；`#genre` 第二層左上鈕與頂欄返回鈕左緣對齊、底部返回鈕消失、日亞搖滾 13 國、老搖滾 5 個年代、上一層兩次回十大類、遊戲頁開關切開不碰音訊。`node --check` 三支 JS 通過。**真機（iPhone＋串流）待店主實測**。
 - **留給本機／店主**：無 KV／Firestore 寫入；PR 合併即生效。
+### 2026-10-16｜dip-vinyl-shop｜已上線簡介第二輪修正（pub-fix round 2）：1,554 張改寫寫入 KV
+
+- **起因**：店主「排修」。`audits/pub-fix/ROUND2-QUEUE.json`（A 事實更正、B1 退件字樣、B3 資料庫口吻、B4 正文夾諺文、C 人工補記，外加 B2 正文點名出處）逐張改寫。
+- **做法**：`scripts/pub-fix-round2.mjs`（prep／check／emit／verify）抓 KV 現值切 30 張一批，Sonnet 修正層照 `audits/pub-fix/round2/DISPATCH.md` 最小改動；主線逐批看句級 diff 審稿後 emit → `wrangler kv bulk put` → 回讀。第一波 r2-001..028（A／B1／B3／B4／C，829 張）；重掃佇列後第二波 `prep b` r2b-001..025（B2 出處點名 720＋B3 殘留 1，A 類扣掉已定案卡）。
+- **規則補充（寫進 DISPATCH）**：平台名（維基、Discogs、MB、AllMusic、Apple…）一律去掉改直述；媒體評分、星等、評語引述連同媒體名整句刪，不改寫成無主評價；官方銷售榜與獎項照留；只講某欄缺資料的句子整句刪；諺文人名機構改中文或羅馬拼音。check 加「殘留出處／評分」警示。
+- **主線審稿常見修**：去出處後殘留的無主最高級評價（「最有影響力」「最好的一張」「被視為第一張」→刪或改「最早…之一」）、私生活敘述無依據刪、殘留「筆／欄／那一格」、CJK 與拉丁字母間空格、刪名後句子懸空。逐條記在各 out 檔 `why` 的「主線審稿」。
+- **結果**：edit 1,554 張（不重複鍵）、keep 6（Helen Reddy「三筆捐款」、Neşet Ertaş ×2 與 Sleep Walker 的 mb 是字母子字串等誤判）；全數回讀一致。重掃後 B1／B4 為 0，B2 剩 3、B3 剩 1，全是上述誤判。
+- **主要檔案**：`scripts/pub-fix-round2.mjs`、`audits/pub-fix/round2/{DISPATCH.md,in/,out/,applied/}`、`audits/pub-fix/ROUND2-QUEUE.{json,md}`、`publish-stage/pub-fix-r2/`
+- **驗證**：每批 `check` 0 警示、`verify` 回讀一致（KV 延遲時隔一分鐘重讀）。
 
 ### 2026-10-14｜dip-vinyl-shop｜店主指示：PR 開出後不追蹤、不排檢查
 

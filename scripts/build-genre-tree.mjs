@@ -66,7 +66,7 @@ const L1 = [
 // 卡少的國家照樣開門，讓人看得到卡池在哪裡還很薄。順序由建樹時依張數排。
 const ASIA_COUNTRIES = {
   tw: '台灣', jp: '日本', kr: '韓國', cn: '中國', hk: '香港', th: '泰國', vn: '越南',
-  id: '印尼', ph: '菲律賓', my: '馬來西亞', sg: '新加坡', kh: '柬埔寨', pk: '巴基斯坦', in: '印度', mn: '蒙古',
+  id: '印尼', ph: '菲律賓', my: '馬來西亞', sg: '新加坡', kh: '柬埔寨', pk: '巴基斯坦', in: '印度', mn: '蒙古', bd: '孟加拉', np: '尼泊爾',
 };
 const asiaChildren = Object.fromEntries(Object.entries(ASIA_COUNTRIES).map(([cc, zh]) => [cc, { zh, min: 1 }]));
 
@@ -589,6 +589,10 @@ const TW_POP = new Set((fs.existsSync(path.join(ROOT, 'tw-pop-artists.json'))
 // 亞洲搖滾藝人 → 國別代碼（ASIA_COUNTRIES 的鍵）。人工裁定過的對照表，新藝人由
 // scripts/build-asia-country-map.mjs 依標籤／文字系統提案、列出待裁定名單。
 const ASIA_MAP_FILE = path.join(ROOT, 'rock-asia-country-map.json');
+// 細項藝人對照（2026-10-20 甲類補標）：節點路徑 → 藝人。標籤沒寫到細項名、但藝人明確屬於該細項的卡，
+// 在步驟 2.6 加掛第二、三層。只給主類型＝節點第一層的卡（前台抽卡要求主類型相符）。
+const L3_MAP_FILE = path.join(ROOT, 'genre-l3-artist-map.json');
+const l3Map = fs.existsSync(L3_MAP_FILE) ? JSON.parse(fs.readFileSync(L3_MAP_FILE, 'utf8')) : {};
 const asiaMap = fs.existsSync(ASIA_MAP_FILE) ? JSON.parse(fs.readFileSync(ASIA_MAP_FILE, 'utf8')) : {};
 
 async function pullRawGenres() {
@@ -756,6 +760,27 @@ for (const c of cards) {
   stepAsia++;
 }
 
+// 步驟 2.6：細項藝人對照（加掛，不取代既有落位）。條目寫「藝人|專輯」就只掛那一張（Various Artists 用）。
+let stepL3 = 0;
+const l3ByArtist = new Map();
+for (const [node, artists] of Object.entries(l3Map)) {
+  if (node.startsWith('_') || !Array.isArray(artists)) continue;
+  for (const a of artists) { if (!l3ByArtist.has(a)) l3ByArtist.set(a, []); l3ByArtist.get(a).push(node); }
+}
+for (const c of cards) {
+  const k = `${c.artist}|${c.album}`;
+  const nodes = [...(l3ByArtist.get(c.artist) || []), ...(l3ByArtist.get(k) || [])];
+  if (!nodes.length) continue;
+  const p = new Set(assign.get(k) || []);
+  const before = p.size;
+  for (const node of nodes) {
+    const parts = node.split('/');
+    if (parts[0] !== c.prim) continue;
+    for (let i = 2; i <= parts.length; i++) p.add(parts.slice(0, i).join('/'));
+  }
+  if (p.size > before) { assign.set(k, [...p]); stepL3++; }
+}
+
 // 步驟 3：台灣流行正規化。步驟 2 的同藝人傳播也會發 c-pop，跑在 classify() 的覆寫之後，
 // 所以要在這裡再掃一次，否則同一位台灣歌手會一半 t-pop 一半 c-pop。
 let step3 = 0;
@@ -809,7 +834,7 @@ for (const [k, paths] of assign) {
 
 // ── 報告 ──────────────────────────────────────────────────────────────
 console.log(`\n卡池 ${cards.length} 張｜有標籤 ${cards.filter(c => c.tags.length).length}｜`
-  + `步驟1 規則命中 ${step1}｜步驟2 同藝人傳播 +${step2}｜步驟2.5 日亞搖滾地區掛載 ${stepAsia}｜步驟3 台灣流行改判 ${step3}｜剪枝後覆蓋 ${covered}`
+  + `步驟1 規則命中 ${step1}｜步驟2 同藝人傳播 +${step2}｜步驟2.5 日亞搖滾地區掛載 ${stepAsia}｜步驟2.6 細項藝人對照 ${stepL3}｜步驟3 台灣流行改判 ${step3}｜剪枝後覆蓋 ${covered}`
   + ` (${(covered / cards.length * 100).toFixed(1)}%)`);
 console.log(`節點門檻 ${MIN_NODE} 張\n`);
 for (const g of tree.genres) {

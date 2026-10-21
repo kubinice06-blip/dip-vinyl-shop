@@ -1,0 +1,2699 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-ts8",
+ "batchNote": "薄細項策展線（add-20261021-ts8）",
+ "createdAt": "2026-10-21T06:35:52Z",
+ "albums": [
+  {
+   "artist": "Slot Machine",
+   "album": "Cell",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f2958d7b-bb4e-41c0-92d1-236ea948c853",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國（二）2005 後：Slot Machine 第四張錄音室專輯，同時拿下第 24 屆 Season Awards（สีสันอะวอร์ดส์）年度專輯與最佳樂團，並獲第 9 屆 Kom Chad Luek Awards 年度專輯——泰國現代另類搖滾的巔峰之作。｜策展無疑點｜MB release-group f2958d7b-bb4e-41c0-92d1-236ea948c853：title「Cell」、Album、first-release-date 2011-04-15、artist-credit「Slot Machine」。證據：https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%95%E0%B9%81%E0%B8%A1%E0%B8%8A%E0%B8%8A%E0%B8%B5%E0%B8%99_%28%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5%29 https://musicbrainz.org/release-group/f2958d7b-bb4e-41c0-92d1-236ea948c853",
+    "queryAlias": "สล็อตแมชชีน"
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f2958d7b-bb4e-41c0-92d1-236ea948c853/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 5449,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 3/4/2（Last.fm listeners 5449）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "換來的製作人生在香港，在紐約做過電影配樂。Montonn Jira 這回替曼谷搖滾團 Slot Machine 製作第四張，他 9 歲那年隨家人搬到泰國。在這之前，樂團頭兩張由 The Moffatts 前成員 Scott Moffatt 製作。2011 年由 Sony Music Thailand 發片，11 首裡的〈Cell〉與〈XY〉是器樂曲。第 24 屆 Season Awards 上，年度專輯由這張奪得，最佳團體則歸 Slot Machine。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%A5%E0%B9%87%E0%B8%AD%E0%B8%95%E0%B9%81%E0%B8%A1%E0%B8%8A%E0%B8%8A%E0%B8%B5%E0%B8%99_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+     "https://th.wikipedia.org/wiki/%E0%B8%A1%E0%B8%93%E0%B8%91%E0%B8%A5_%E0%B8%88%E0%B8%B4%E0%B8%A3%E0%B8%B2",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%A1%E0%B8%8A%E0%B8%B1%E0%B8%94%E0%B8%A5%E0%B8%B6%E0%B8%81_%E0%B8%AD%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94_%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88_9",
+     "https://www.discogs.com/release/35232694",
+     "https://musicbrainz.org/release-group/f2958d7b-bb4e-41c0-92d1-236ea948c853"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4b/61/1e/4b611e49-5ca8-25a4-af63-49c96a5da968/mzaf_4337759082409640185.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "434593036",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 434593036「Slot Machine《cell》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Cell〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "bodyslam",
+   "album": "คราม",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e65a5f15-522f-4f8f-b8c4-fe273e15e8f3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國（二）2005 後：泰國最大搖滾樂團的第五張專輯：獲第 8 屆 Kom Chad Luek Awards 年度專輯、第 6 屆 Seed Awards 年度專輯與年度搖滾專輯，並入圍 Fat Awards 年度專輯。｜策展無疑點｜MB release-group e65a5f15-522f-4f8f-b8c4-fe273e15e8f3：title「คราม」、Album、first-release-date 2010-06、artist-credit「bodyslam」。證據：https://th.wikipedia.org/wiki/%E0%B8%9A%E0%B8%AD%E0%B8%94%E0%B8%B5%E0%B9%89%E0%B8%AA%E0%B9%81%E0%B8%A5%E0%B8%A1 https://www.nationthailand.com/life/30165277 https://musicbrainz.org/release-group/e65a5f15-522f-4f8f-b8c4-fe273e15e8f3",
+    "queryAlias": "Kraam / Kram"
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e65a5f15-522f-4f8f-b8c4-fe273e15e8f3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 7257,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 3/4/2（Last.fm listeners 7257）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "主打先放了半年多，街頭示威又把上市往後推。被延後的是泰國搖滾團 bodyslam 第五張，盤名意為靛青。同名主打〈คราม〉在 2009 年 11 月先行，整張原訂更早面世，碰上 2010 年紅衫軍上街，Genie Records 只得把發行日挪到 6 月。〈คิดฮอด〉把泰東北的 mor lam 混進搖滾，請來 Siriporn Ampaipong 合唱。Seed Awards 頒給它年度搖滾專輯和年度專輯，Kom Chad Luek Awards 也選它當年度專輯。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1_(%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A1)",
+     "https://th.wikipedia.org/wiki/%E0%B8%9A%E0%B8%AD%E0%B8%94%E0%B8%B5%E0%B9%89%E0%B8%AA%E0%B9%81%E0%B8%A5%E0%B8%A1",
+     "https://www.discogs.com/release/7704872",
+     "https://www.discogs.com/release/36069652",
+     "https://musicbrainz.org/release-group/e65a5f15-522f-4f8f-b8c4-fe273e15e8f3"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/3e/b7/703eb736-4428-22f1-9ff2-96b30520049c/mzaf_17938101427637198113.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1792752791",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1792752791「Bodyslam《คราม》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈คราม〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "bodyslam",
+   "album": "Dharmajāti",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "979156a2-2647-405f-9e4a-aeb2fd470a42",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國（二）2005 後：bodyslam 第六張專輯，獲第 26 屆 Season Awards 最佳搖滾專輯與 The Guitar Mag Awards 2015 年度最佳專輯，是該團創作與編曲最成熟的代表作。｜策展無疑點｜MB release-group 979156a2-2647-405f-9e4a-aeb2fd470a42：title「Dharmajāti」、Album、first-release-date 2014-09-25、artist-credit「bodyslam」。證據：https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%9A%E0%B8%AD%E0%B8%94%E0%B8%B5%E0%B9%89%E0%B8%AA%E0%B9%81%E0%B8%A5%E0%B8%A1 https://musicbrainz.org/release-group/979156a2-2647-405f-9e4a-aeb2fd470a42",
+    "queryAlias": "ดัม-มะ-ชา-ติ / Dharmajati"
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/979156a2-2647-405f-9e4a-aeb2fd470a42/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 4,
+    "listeners": 2420,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/4（Last.fm listeners 2420）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "封面放了一個不等號，旁邊是一尊雙腿雕像。封面屬於 bodyslam 的第六張，樂風是另類與前衛搖滾。盤名取自梵文的「自然」：主唱 Toon 原想用泰文原詞，怕人只聯想到山林，才改梵文來講無常。不等號指不合度與自然的不確定，雕像則是泰國藝術家 Note Udom Taepanich 的作品。Genie Records 讓這 10 首歌在 2014 年 9 月面市。最佳搖滾專輯是它在第 26 屆 Season Awards 的收穫，製作人 Poonsak 同屆贏得最佳製作人。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B8%94%E0%B8%B1%E0%B8%A1-%E0%B8%A1%E0%B8%B0-%E0%B8%8A%E0%B8%B2-%E0%B8%95%E0%B8%B4_(%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A1)",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://th.wikipedia.org/wiki/%E0%B8%9A%E0%B8%AD%E0%B8%94%E0%B8%B5%E0%B9%89%E0%B8%AA%E0%B9%81%E0%B8%A5%E0%B8%A1",
+     "https://www.discogs.com/release/8754022",
+     "https://musicbrainz.org/release-group/979156a2-2647-405f-9e4a-aeb2fd470a42"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/6b/81/8c6b81c8-2ff9-8dbf-0a49-08e48f393157/mzaf_18065802803465535114.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1793624670",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1793624670「Bodyslam《dharmajāti》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈เตรียมตัวตาย〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ไททศมิตร",
+   "album": "เพื่อชีวิตกู",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e1a56848-cf12-49e9-a257-ed0a91fc3658",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國（二）2005 後：新世代 phleng phuea chiwit 搖滾樂團 Taitosmith 第二張專輯，拿下第 33 屆 Season Awards（2565–66）年度專輯，讓「為生活之歌」搖滾在 2020 年代重新成為主流話題。｜⚠ 藝人名 MB 為 TaitosmitH；封面主文字未逐一核對，暫用泰文團名｜MB release-group e1a56848-cf12-49e9-a257-ed0a91fc3658：title「เพื่อชีวิตกู」、Album、first-release-date 2022-01-03、artist-credit「Taitosmith」。證據：https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%97%E0%B8%97%E0%B8%A8%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3 https://musicbrainz.org/release-group/e1a56848-cf12-49e9-a257-ed0a91fc3658",
+    "queryAlias": "TaitosmitH / Taitosmith；Taitosmith"
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e1a56848-cf12-49e9-a257-ed0a91fc3658/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 19,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 19）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "上市九天後，客座合唱的國家藝術家去世。那位 luk thung 前輩叫 Waiphot Phetsuphan，邀他合唱的 Taitosmith 屬泰國新世代 phuea chiwit 樂團。兩方在專輯裡合唱的歌叫〈ไทเท่〉。GMM Grammy 旗下的 Gene Lab 在 2022 年 1 月替樂團發行專輯，Waiphot 在同月 12 日去世，這首歌也就被視為他生前最後的作品。這張後來在第 33 屆 Season Awards 奪下年度專輯。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/89bb14cc-add3-4580-9b22-ef9517790641",
+     "https://en.wikipedia.org/wiki/Taitosmith",
+     "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%97%E0%B8%97%E0%B8%A8%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3",
+     "https://musicstation.kapook.com/view234031.html",
+     "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%A7%E0%B8%9E%E0%B8%88%E0%B8%99%E0%B9%8C_%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93",
+     "https://mgronline.com/onlinesection/detail/9670000090610",
+     "https://musicbrainz.org/release-group/e1a56848-cf12-49e9-a257-ed0a91fc3658"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "อพาร์ตเมนต์คุณป้า",
+   "album": "รักสนิยม",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "76efd5f2-ae38-4909-aa5e-b617a13b57ac",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國（二）2005 後：曼谷另類搖滾樂團 Apartment Khunpa 的第四張專輯，獲第 28 屆 Season Awards 最佳搖滾專輯（อัลบั้มร็อกยอดเยี่ยม），以藍調、放克、硬搖滾混搭的實驗性被視為泰國獨立搖滾標竿。｜⚠ 泰文維基稱 2013-10-22 數位先行、2016-03-05 實體發行；MB 與得獎年度皆為 2016，暫取 2016；廠牌依 Discogs 2020 LP 再版標示，原版廠牌未核｜MB release-group 76efd5f2-ae38-4909-aa5e-b617a13b57ac：title「รักสนิยม」、Album、first-release-date 2016、artist-credit「อพาร์ตเมนต์คุณป้า」。證據：https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%9E%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%95%E0%B9%80%E0%B8%A1%E0%B8%99%E0%B8%95%E0%B9%8C%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%9B%E0%B9%89%E0%B8%B2 https://www.discogs.com/release/15420894 https://musicbrainz.org/release-group/76efd5f2-ae38-4909-aa5e-b617a13b57ac",
+    "queryAlias": "Apartment Khunpa / Rak Saniyom"
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/76efd5f2-ae38-4909-aa5e-b617a13b57ac/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 241,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 241）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一首寫曼谷政治撕裂的歌，MV 把鏡頭給了無家者。寫歌的 Apartment Khunpa 來自曼谷，團名源自 Lat Phrao 一帶的一棟公寓，把 blues、funk 與 hard rock 揉在一起。〈รักในมหานคร〉寫政治緊繃時期的曼谷：親友為價值觀爭吵，每年五月又浮現歷史傷痕。MV 交給 Muk Piyakan 掌鏡。《รักสนิยม》於 2016 年上架，10 首加起來約 38 分鐘。第 28 屆 Season Awards 的最佳搖滾專輯落在它身上。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%9E%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%95%E0%B9%80%E0%B8%A1%E0%B8%99%E0%B8%95%E0%B9%8C%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%9B%E0%B9%89%E0%B8%B2",
+     "https://musicbrainz.org/release/3a1e12c5-3a2c-4318-9e81-968bca31d50c",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%99%E0%B8%B2%E0%B8%A1%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%A1%E0%B8%B4%E0%B8%A7%E0%B8%AA%E0%B8%B4%E0%B8%81",
+     "https://www.thaipbs.or.th/program/SongHunterTV/watch/274761",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://thestandard.co/?p=94287",
+     "https://www.discogs.com/release/15420894",
+     "https://musicbrainz.org/release-group/76efd5f2-ae38-4909-aa5e-b617a13b57ac"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/72/25/10/7225102a-74bb-c1f5-9134-807300670b8d/mzaf_18316710946785282982.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1793313214",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1793313214「อพาร์ตเมนต์คุณป้า《รักสนิยม》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈โลกระยำ〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "อพาร์ตเมนต์คุณป้า",
+   "album": "อพาร์ตเมนต์คุณป้า",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a533fcb5-3667-4c5b-8343-a373aefd8207",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國（二）2005 後：Apartment Khunpa 同名第五張專輯，一舉拿下第 30 屆 Season Awards 年度專輯與最佳樂團，是該團十五年生涯的總結式代表作。｜⚠ 廠牌未核（MB 無廠牌資料，沿用前作廠牌），請主線補查｜MB release-group a533fcb5-3667-4c5b-8343-a373aefd8207：title「อพาร์ตเมนต์คุณป้า」、Album、first-release-date 2018、artist-credit「อพาร์ตเมนต์คุณป้า」。證據：https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%9E%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%95%E0%B9%80%E0%B8%A1%E0%B8%99%E0%B8%95%E0%B9%8C%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%9B%E0%B9%89%E0%B8%B2 https://musicbrainz.org/release-group/a533fcb5-3667-4c5b-8343-a373aefd8207",
+    "queryAlias": "Apartment Khunpa",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a533fcb5-3667-4c5b-8343-a373aefd8207/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 130,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 130）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兩段各 5 秒的間奏，把唱片切成夢霧與城市煙塵。這是曼谷五人搖滾團 Apartment Khunpa 以團名命名的第五張作品。Interlude 分別排在第 1 和第 7 首，14 首由此分成兩章。2018 年 5 月一篇評論的描述是：前半章多是慢歌，唱掛念與失望；後半章轉成搖滾，像霧越來越濃。五名成員從首張起始終是同一批人，那篇文章認為它走過了樂團 16 年的旅程。年度專輯與最佳團體，Apartment Khunpa 在第 30 屆 Season Awards 一併拿下。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%9E%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%95%E0%B9%80%E0%B8%A1%E0%B8%99%E0%B8%95%E0%B9%8C%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%9B%E0%B9%89%E0%B8%B2",
+     "https://musicbrainz.org/release/cab468a9-ac46-477d-854a-502e8a56e5c9",
+     "https://thestandard.co/?p=94287",
+     "https://www.naewna.com/entertain/405630",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://musicbrainz.org/release-group/a533fcb5-3667-4c5b-8343-a373aefd8207"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/bc/6b/e6bc6bc8-0c08-9dfa-3f01-7161abcedd61/mzaf_17842908734729996340.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1793201978",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1793201978「อพาร์ตเมนต์คุณป้า《อพาร์ตเมนต์คุณป้า》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Interlude หมอกฝัน〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Moderndog",
+   "album": "Pod Pong May-T",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "https://musicbrainz.org/ws/2/release-group?query=artist:ModernDog&fmt=json",
+      "https://musicbrainz.org/ws/2/release-group?query=releasegroup:\"Pod Pong May-T\"&fmt=json"
+     ],
+     "checkedAt": "2026-10-20",
+     "conclusion": "MB 有藝人 ModernDog（c63263f7-3b04-49d2-80ce-ff434704dde7），release-group 只有 4–5 筆（至 2008 ทิงนองนอย），無 2016 本作；作品方向 count=0"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/10655870",
+     "https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%A1%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A3%E0%B9%8C%E0%B8%99%E0%B8%94%E0%B9%87%E0%B8%AD%E0%B8%81",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "manualRuling": "雲端主線 2026-10-21 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261021-ts8）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "泰國（二）2005 後：Moderndog 以三名團員名字為題的第六張專輯，同時獲第 28 屆 Season Awards 年度專輯與最佳樂團，證明這支 90 年代開山團在成軍二十多年後仍站在泰國搖滾頂端。｜⚠ 封面主文字未核（Discogs 與泰文維基專輯欄作 Pod Pong May-T，外部連結作 ป๊อด/โป้ง/เมธี）｜MB 查無（MB 有藝人 ModernDog（c63263f7-3b04-49d2-80ce-ff434704dde7），release-group 只有 4–5 筆（至 2008 ทิงนองนอย），無 2016 本作；作品方向 count=0），走 §1 人工身分。證據：https://www.discogs.com/release/10655870 https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%A1%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A3%E0%B9%8C%E0%B8%99%E0%B8%94%E0%B9%87%E0%B8%AD%E0%B8%81 https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%A1%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A3%E0%B9%8C%E0%B8%99%E0%B8%94%E0%B9%87%E0%B8%AD%E0%B8%81 https://www.discogs.com/release/10655870",
+    "queryAlias": "ป๊อด / โป้ง / เมธี / Pod/Pong/May-T"
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1144202196",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music71/v4/09/0a/fd/090afdfc-78c7-4d11-f8fc-b496121041b6/8857122666155_cover.jpg/600x600bb.jpg",
+    "note": "人工身分卡（無 CAA）；取已釘定試聽的 Apple 1144202196 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 2723,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 2723）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "三人的暱稱串成盤名：Pod、Pong、May-T。Moderndog 1994 年在獨立廠牌 Bakery Music 出道，走另類搖滾。Pod 一邊唱一邊彈吉他，Pong 打鼓，May-T 彈另一把吉他；至於貝斯，另外找人客串。距上一張八年，錄音在紐約州森林裡的 Tarbox Road Studio，由蘇格蘭的 Tony Doogan 製作。唱片 2016 年掛樂團自家的名義上市。第 28 屆 Season Awards 上，Moderndog 憑它抱走年度專輯和最佳團體。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/10655870",
+     "https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%A1%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A3%E0%B9%8C%E0%B8%99%E0%B8%94%E0%B9%87%E0%B8%AD%E0%B8%81",
+     "https://www.dooddot.com/moderndog-single-o-noi-oog/",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8c/f2/68/8cf26828-206a-e3e3-c358-6449cdf25701/mzaf_2509509585557731859.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1144202196",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1144202196「Moderndog《Pod Pong May-T》」：Apple th 1144202196：盤名與 2016-08-14 首發一致（MB 無曲目表），取第 1 軌。，取第 1 軌〈O-Noi-Oog / โอน้อยออก〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Big Ass",
+   "album": "Begins",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "8856bbfc-2c00-3924-9106-269e229c568b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國（二）2005 後：泰國硬搖滾天團 Big Ass 第五張專輯，獲第 19 屆 Season Awards 最佳搖滾專輯、最佳搖滾樂團與最佳搖滾歌曲（同名曲）三項大獎。｜⚠ 藝人名對齊 r 組（Big Ass）；MB 藝人名為 บิ๊กแอส｜MB release-group 8856bbfc-2c00-3924-9106-269e229c568b：title「Begins」、Album、first-release-date 2006-11-04、artist-credit「บิ๊กแอส」。證據：https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%9A%E0%B8%B4%E0%B9%8A%E0%B8%81%E0%B9%81%E0%B8%AD%E0%B8%AA https://musicbrainz.org/release-group/8856bbfc-2c00-3924-9106-269e229c568b",
+    "queryAlias": "บิ๊กแอส"
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1792752677",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/eb/9f/62/eb9f622d-2717-af58-2ba7-32dc87865984/888332977999.jpg/600x600bb.jpg",
+    "note": "CAA release-group 404；取已釘定試聽的 Apple 1792752677 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 3934,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/4/2（Last.fm listeners 3934）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "專輯上架那天，四首單曲同時放出。放出單曲的，正是曼谷這支硬搖滾團 Big Ass，這已是第五張，主唱仍是 Dax。盤名講樂團走過一連串障礙後重新出發。四首裡有激勵人的〈ปลุกใจเสือป่า〉、一首詞鋒較硬的歌，另外兩首是抒情曲。吉他手 Poonsak Jaturabul 一手製作，Genie Records 在 2006 年出版，標題曲有 6 分 12 秒長。第 19 屆 Season Awards 的搖滾類，它包辦專輯與團體兩項，〈Begins〉另奪最佳搖滾歌曲。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B8%9A%E0%B8%B5%E0%B8%81%E0%B8%B4%E0%B8%99%E0%B8%AA%E0%B9%8C_(%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A1%E0%B8%9A%E0%B8%B4%E0%B9%8A%E0%B8%81%E0%B9%81%E0%B8%AD%E0%B8%AA)",
+     "https://th.wikipedia.org/wiki/%E0%B8%9A%E0%B8%B4%E0%B9%8A%E0%B8%81%E0%B9%81%E0%B8%AD%E0%B8%AA",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1_(%E0%B8%AD%E0%B8%B1%E0%B8%A5%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%A1)",
+     "https://www.discogs.com/master/2283919",
+     "https://musicbrainz.org/release-group/8856bbfc-2c00-3924-9106-269e229c568b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0c/cc/b5/0cccb548-81e5-b663-d111-e8ad9764dfed/mzaf_11635132760915830928.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1792752677",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1792752677「Big Ass《begins》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈ปลุกใจเสือป่า〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Desktop Error",
+   "album": "Indelible Stain",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "https://musicbrainz.org/ws/2/release-group?query=artist:\"Desktop Error\"&fmt=json",
+      "https://musicbrainz.org/ws/2/release-group?query=releasegroup:\"Indelible Stain\"&fmt=json"
+     ],
+     "checkedAt": "2026-10-20",
+     "conclusion": "MB 有藝人 Desktop Error（5c24337f-2715-47ea-9898-21afe9c6e19d），僅 2009、2013 兩張 release-group，無本作；作品方向 count=0"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/23337542",
+     "https://www.discogs.com/artist/6350285",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "manualRuling": "雲端主線 2026-10-21 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261021-ts8）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "泰國（二）2005 後：泰國 shoegaze／後搖先驅 Desktop Error 睽違九年的第三張專輯，獲第 33 屆 Season Awards 最佳搖滾專輯，讓一支地下夢幻搖滾團在主流獎項封頂。｜⚠ 封面為字母間隔的風格化標題，卡名取正規化寫法｜MB 查無（MB 有藝人 Desktop Error（5c24337f-2715-47ea-9898-21afe9c6e19d），僅 2009、2013 兩張 release-group，無本作；作品方向 count=0），走 §1 人工身分。證據：https://www.discogs.com/release/23337542 https://www.discogs.com/artist/6350285 https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://www.discogs.com/release/23337542 https://www.discogs.com/artist/6350285",
+    "queryAlias": "i n d e l i b l e s t a i n / ˙ n d e l ˙ b l e  s t a ˙ n"
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1622595757",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/26/01/dc/2601dcd0-630e-6f7b-5666-cd218b0f9122/cover.jpg/600x600bb.jpg",
+    "note": "人工身分卡（無 CAA）；取已釘定試聽的 Apple 1622595757 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 853,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/4（Last.fm listeners 853）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "吉他之外，他還彈雪茄盒吉他與 lap steel。彈的人是 Adisak Poung-OK，曼谷 shoegaze 團 Desktop Error 的五人之一。Desktop Error 自行製作，混音交給 Koichi Shimizu。2022 年，自家廠牌 Desktop Error Records 把它壓成兩片裝黑膠，共 10 首、51 分鐘左右。這是第三張正規專輯，與前作相隔九年。最佳搖滾專輯及最佳搖滾藝人，在第 33 屆 Season Awards 都由他們抱回。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/23337542",
+     "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B8%AA%E0%B8%81%E0%B9%8C%E0%B8%97%E0%B8%AD%E0%B8%9B%E0%B9%80%E0%B8%AD%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B9%80%E0%B8%A3%E0%B8%AD%E0%B8%A3%E0%B9%8C",
+     "https://mgronline.com/onlinesection/detail/9670000090610",
+     "https://www.discogs.com/artist/6350285",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/70/87/82/70878267-eec8-3390-d879-cef23e2bf3ef/mzaf_8530643251515494256.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1622595757",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1622595757「Desktop Error《Indelible Stain》」：Apple th 1622595757：2022-05-12 原版 10 首（另一筆 2024 為擴充版不取），取第 1 軌。，取第 1 軌〈โลกรอบตัว〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sek Loso",
+   "album": "Sek",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "001c2dcd-dc87-4b8d-b8b1-7d78020eb8d5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國（二）2005 後：Loso 主唱 Sek 的個人搖滾專輯，在第 22 屆 Season Awards 同時拿下最佳搖滾專輯與年度專輯，是 Loso 解散後他創作力的高峰。｜⚠ MB 盤名作 Sek，泰文維基與 Season 獎作 SEK LOSO（เสก โลโซ）；封面主文字未核。藝人與池中 Loso 不同掛名（個人名義），但為同一主唱｜MB release-group 001c2dcd-dc87-4b8d-b8b1-7d78020eb8d5：title「Sek」、Album、first-release-date 2009-05-28、artist-credit「Sek Loso」。證據：https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%AA%E0%B8%81_%E0%B9%82%E0%B8%A5%E0%B9%82%E0%B8%8B https://musicbrainz.org/release-group/001c2dcd-dc87-4b8d-b8b1-7d78020eb8d5",
+    "queryAlias": "SEK LOSO / เสก โลโซ"
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1793098346",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a3/98/72/a3987218-1ade-194f-fd37-9e6e3b487bc1/888332974066.jpg/600x600bb.jpg",
+    "note": "CAA release-group 404；取已釘定試聽的 Apple 1793098346 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 7,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 7）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "他曾讓 Loso 暫停，去倫敦進修語言與音樂。說的是 Sek Loso：呵叻府農家出身，1996 年帶搖滾樂團 Loso 以首張一炮而紅。那段課程從 2003 年開始，前後約 6 個月。以他個人名義推出的這張，上市於 2009 年 5 月，由 Up^G 出版，盤名只取本人的名字。14 軌約 56 分鐘，曲目裡有〈London〉，壓軸則是〈คิดถึงบ้านเกิด〉（想念家鄉）。最佳搖滾專輯在第 22 屆 Season Awards 落到這張，他本人另拿最佳搖滾個人藝人。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/e1139d70-d83f-4d51-a65a-a971882c85f5",
+     "https://en.wikipedia.org/wiki/Seksan_Sukpimai",
+     "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%AA%E0%B8%81%E0%B8%AA%E0%B8%A3%E0%B8%A3%E0%B8%84%E0%B9%8C_%E0%B8%A8%E0%B8%B8%E0%B8%82%E0%B8%9E%E0%B8%B4%E0%B8%A1%E0%B8%B2%E0%B8%A2",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://musicbrainz.org/release-group/001c2dcd-dc87-4b8d-b8b1-7d78020eb8d5"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/e8/db/cce8dba0-dd7a-1366-3b90-bdd0782f4d89/mzaf_6572373669255013535.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1793098346",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1793098346「Sek Loso《SEK LOSO》」：曲目 12/14 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Missed call〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "BrandNew Sunset",
+   "album": "Welcome Home",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c435db0d-fbc5-421f-9a10-fbba1ef00f86",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國（二）2005 後：泰國另類搖滾樂團 BrandNew Sunset 第四張專輯，獲第 23 屆 Season Awards 最佳搖滾專輯與最佳搖滾樂團雙料。｜策展無疑點｜MB release-group c435db0d-fbc5-421f-9a10-fbba1ef00f86：title「Welcome Home」、Album、first-release-date 2010、artist-credit「BrandNew Sunset」。證據：https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B9%81%E0%B8%9A%E0%B8%A3%E0%B8%99%E0%B8%94%E0%B9%8C%E0%B8%99%E0%B8%B4%E0%B8%A7_%E0%B8%8B%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%8B%E0%B8%97 https://musicbrainz.org/release-group/c435db0d-fbc5-421f-9a10-fbba1ef00f86 https://www.discogs.com/artist/3117956",
+    "queryAlias": "แบรนด์นิว ซันเซท / Brand New Sunset"
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "542190927",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/51/91/aa/5191aa61-5f21-1af8-74c8-073187057afe/884977781717.jpg/600x600bb.jpg",
+    "note": "CAA release-group 404；取已釘定試聽的 Apple 542190927 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 336,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 336）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "唱泰語之前，他們先在新加坡、馬來西亞與菲律賓巡迴。BrandNew Sunset 是五個朋友在曼谷組的樂團，把搖滾、龐克、重金屬與 emo 混在一起。2005 年第二張《Realistic》在這三國上架並巡迴。2008 年簽進 Sony BMG，第三張首度用泰語填詞。《Welcome Home》2010 年經 Sony Music 問世，〈ฝน〉的客座來自嘻哈團 Buddha Bless。他們在第 23 屆 Season Awards 包辦最佳搖滾樂團、最佳搖滾專輯。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B9%81%E0%B8%9A%E0%B8%A3%E0%B8%99%E0%B8%94%E0%B9%8C%E0%B8%99%E0%B8%B4%E0%B8%A7_%E0%B8%8B%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%8B%E0%B8%97",
+     "https://www.discogs.com/release/4227139-BrandNew-Sunset-Welcome-Home",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://musicbrainz.org/release-group/c435db0d-fbc5-421f-9a10-fbba1ef00f86"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/52/81/71/5281715e-da07-b391-1cc5-7ba794c66f4a/mzaf_18261468763638550985.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "542190927",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 542190927「BrandNew Sunset《Welcome Home》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Welcome〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "KLUAYTHAI",
+   "album": "12 Animals (สิบสองสัตว์)",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "113d856f-615b-4894-ac0a-e9965fb49486",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國（二）2005 後：泰國搖滾樂團 Kluaythai（กล้วยไทย）的《12 Animals（สิบสองสัตว์）》，獲第 22 屆 Season Awards 最佳搖滾樂團與年度最佳樂團。｜策展無疑點｜MB release-group 113d856f-615b-4894-ac0a-e9965fb49486：title「12 Animals (สิบสองสัตว์)」、Album、first-release-date 2009-03-28、artist-credit「KLUAYTHAI」。證據：https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://musicbrainz.org/release-group/113d856f-615b-4894-ac0a-e9965fb49486 https://kluaythai.bandcamp.com/",
+    "queryAlias": "กล้วยไทย / Kluay Thai / 12 สัตว์"
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/113d856f-615b-4894-ac0a-e9965fb49486/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 0）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "蒼蠅、蠍子、螢火蟲都進了曲名，收尾是猴神哈奴曼誕生。泰國樂團 KLUAYTHAI 創立於 2002 年，成員全是音樂本科，帶 nu-metal 影響。12 軌多以動物為名，狗、貓、蛇與蝴蝶同樣入列。末曲〈Hanaman〉的猴神出自泰版《羅摩衍那》（Ramakien）。上架是在 2009 年 3 月，廠牌為 Banana Record。第 22 屆 Season Awards 評 KLUAYTHAI 為最佳搖滾樂團，〈Butterfly Effect〉也成了最佳搖滾歌曲。",
+    "sourceUrls": [
+     "https://kluaythai.bandcamp.com/album/12-animals",
+     "https://musicbrainz.org/release/391d31ea-dc21-4e74-a455-c546c10362b5",
+     "https://kluaythai.bandcamp.com/",
+     "https://musicbrainz.org/artist/c3e38aa6-6fe3-44c0-b0bc-a3b309592815",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://www.naewna.com/entertain/449196",
+     "https://musicbrainz.org/release-group/113d856f-615b-4894-ac0a-e9965fb49486"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lomosonic",
+   "album": "Anti-Gravity",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "https://musicbrainz.org/ws/2/release-group?query=artist:\"Lomosonic\"&fmt=json",
+      "https://musicbrainz.org/ws/2/release-group?query=releasegroup:\"Anti-Gravity\" AND artist:\"Lomosonic\"&fmt=json"
+     ],
+     "checkedAt": "2026-10-20",
+     "conclusion": "MB 有藝人 Lomosonic（f94ae1b4-12ce-46c4-9dec-1c4c2d6f9af8）但 release-group 搜尋 count=0（僅單曲），無本作"
+    },
+    "manualEvidenceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%A5%E0%B9%82%E0%B8%A1%E0%B9%82%E0%B8%8B%E0%B8%99%E0%B8%B4%E0%B8%81",
+     "https://www.sanook.com/music/2396943/",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "manualRuling": "雲端主線 2026-10-21 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261021-ts8）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "泰國（二）2005 後：曼谷另類搖滾樂團 Lomosonic 第三張專輯，在第 29 屆 Season Awards 同時拿下最佳搖滾專輯與最佳搖滾樂團，為當屆與 The Richman Toy 並列得獎最多者。｜策展無疑點｜MB 查無（MB 有藝人 Lomosonic（f94ae1b4-12ce-46c4-9dec-1c4c2d6f9af8）但 release-group 搜尋 count=0（僅單曲），無本作），走 §1 人工身分。證據：https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%A5%E0%B9%82%E0%B8%A1%E0%B9%82%E0%B8%8B%E0%B8%99%E0%B8%B4%E0%B8%81 https://www.sanook.com/music/2396943/ https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://www.sanook.com/music/2396943/ https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%A5%E0%B9%82%E0%B8%A1%E0%B9%82%E0%B8%8B%E0%B8%99%E0%B8%B4%E0%B8%81",
+    "queryAlias": "โลโมโซนิก / ANTI-GRAVITY / แอนทาย-กราวิตี"
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1793143899",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fc/df/89/fcdf8913-b8d7-8602-0c89-2eaee08b93f2/888332942065.jpg/600x600bb.jpg",
+    "note": "人工身分卡（無 CAA）；取已釘定試聽的 Apple 1793143899 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 3,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/4（Last.fm listeners 3）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "11 支單曲從 2015 年一路發到 2018 年。Lomosonic 是另類搖滾團，起家於曼谷一所科技大學的建築與設計學院。2015 年和 Smallroom 合約期滿，樂團先到 V Records 放出兩支單曲，之後轉進 Sanamluang Music。CD 版本 2017 年 3 月先上市，14 首裡包含一首隱藏曲，單曲則在那之後繼續放。最佳搖滾樂團在第 29 屆 Season Awards 頒給 Lomosonic，最佳搖滾專輯同樣歸這張。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%A5%E0%B9%82%E0%B8%A1%E0%B9%82%E0%B8%8B%E0%B8%99%E0%B8%B4%E0%B8%81",
+     "https://www.sanook.com/music/2396943/",
+     "https://www.discogs.com/release/32202822-Lomosonic-Anti-Gravity",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/8d/05/678d05a7-1185-0a50-e7ce-9487557af2b8/mzaf_5530078846884733952.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1793143899",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1793143899「Lomosonic《ANTI - GRAVITY》」：Apple th 1793143899：ANTI - GRAVITY 2017-03-02 與卡面年份一致，取第 1 軌。，取第 1 軌〈เพชฌฆาตพายุนางฟ้า (ANTI GRAVITY)〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Richman Toy",
+   "album": "ตะวันเลียตูด",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "https://musicbrainz.org/ws/2/release-group?query=artist:\"The Richman Toy\"&fmt=json",
+      "https://musicbrainz.org/ws/2/release-group?query=releasegroup:\"ตะวันเลียตูด\" AND artist:\"The Richman Toy\"&fmt=json"
+     ],
+     "checkedAt": "2026-10-20",
+     "conclusion": "MB 藝人方向 count=0（查無 The Richman Toy／เดอะริชแมนทอย），作品方向 count=0"
+    },
+    "manualEvidenceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0%E0%B8%A3%E0%B8%B4%E0%B8%8A%E0%B9%81%E0%B8%A1%E0%B8%99%E0%B8%97%E0%B8%AD%E0%B8%A2",
+     "https://www.sanook.com/music/2396943/",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "manualRuling": "雲端主線 2026-10-21 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261021-ts8）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "泰國（二）2005 後：Smallroom 旗下車庫／另類搖滾樂團 The Richman Toy 第四張專輯，獲第 29 屆 Season Awards 年度專輯與最佳樂團雙料，是泰國獨立搖滾在 2010 年代後期的代表作。｜策展無疑點｜MB 查無（MB 藝人方向 count=0（查無 The Richman Toy／เดอะริชแมนทอย），作品方向 count=0），走 §1 人工身分。證據：https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0%E0%B8%A3%E0%B8%B4%E0%B8%8A%E0%B9%81%E0%B8%A1%E0%B8%99%E0%B8%97%E0%B8%AD%E0%B8%A2 https://www.sanook.com/music/2396943/ https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://www.sanook.com/music/2396943/ https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0%E0%B8%A3%E0%B8%B4%E0%B8%8A%E0%B9%81%E0%B8%A1%E0%B8%99%E0%B8%97%E0%B8%AD%E0%B8%A2",
+    "queryAlias": "เดอะริชแมนทอย / Tawan Lia Tood"
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1301426155",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/90/21/ee/9021ee0e-3c24-b57f-d04a-a9d58741a32b/cover.jpg/600x600bb.jpg",
+    "note": "人工身分卡（無 CAA）；取已釘定試聽的 Apple 1301426155 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。封面為海鷗與夕陽照片、無字，盤名與 2017-11-24 上架日核對。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 241,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/4（Last.fm listeners 241）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "鼓手唱社會諷刺，貝斯手唱佛教的無我。泰國 Smallroom 旗下的 The Richman Toy 2004 年成軍，車庫搖滾之外還有小提琴手。鼓手開口唱的是第 6 支單曲，諷刺泰國人習以為常的貪圖方便，MV 走帶美國鄉村味的拼貼風。第 7 支〈คิดดี ๆ〉是慢歌，換貝斯手來唱，同廠牌 Two Pills After Meal 的成員和聲。專輯 2017 年發行；第 29 屆 Season Awards 把年度專輯頒給這張，最佳團體亦歸樂團。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0%E0%B8%A3%E0%B8%B4%E0%B8%8A%E0%B9%81%E0%B8%A1%E0%B8%99%E0%B8%97%E0%B8%AD%E0%B8%A2",
+     "https://www.naewna.com/entertain/380916",
+     "https://www.naewna.com/entertain/397064",
+     "https://www.sanook.com/music/2396943/",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/80/8a/77/808a77f3-0c96-b825-a95a-7f0bb900d51a/mzaf_16836929441550468107.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1301426155",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1301426155「The Richman Toy《ตะวันเลียตูด》」：Apple th 1301426155：盤名與 2017-11-24 一致，取第 1 軌。，取第 1 軌〈ตะวันเลียตูด〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "KLUAYTHAI",
+   "album": "1",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "46788511-0558-4a3f-b8a8-280df45b6f24",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "泰國（二）2005 後：Kluaythai（กล้วยไทย）2019 年專輯，獲第 31 屆 Season Awards 最佳搖滾專輯——繼《12 Animals》拿下最佳搖滾樂團後，第二度在 Season 搖滾類封頂。｜⚠ 盤名僅一個數字「1」，上卡時注意搜尋／去重的辨識度｜MB release-group 46788511-0558-4a3f-b8a8-280df45b6f24：title「1」、Album、first-release-date 2019-11-01、artist-credit「KLUAYTHAI」。證據：https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://musicbrainz.org/release-group/46788511-0558-4a3f-b8a8-280df45b6f24 https://kluaythai.bandcamp.com/",
+    "queryAlias": "กล้วยไทย / Kluay Thai"
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/46788511-0558-4a3f-b8a8-280df45b6f24/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 383,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 383）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "發片演唱會不賣票，買一套 Boxset CD 就能進場。那是泰國金屬風格搖滾團 KLUAYTHAI 隔了十年的新專輯。演出安排在 2019 年 10 月 27 日下午，地點是 LIVE ARENA RCA，500 泰銖的 Boxset 本身就是門票。11 月推出的數位版收 17 首，限量的實體 2CD 則多到 25 首。第 31 屆 Season Awards 把最佳搖滾藝人、最佳搖滾專輯一併頒給 KLUAYTHAI，〈ทฤษฎี 1%〉另獲最佳搖滾歌曲。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/bb95cc3b-5e80-4c7c-be6c-bd0788840ae0",
+     "https://kluaythai.bandcamp.com/",
+     "https://www.naewna.com/entertain/449196",
+     "https://musicbrainz.org/artist/c3e38aa6-6fe3-44c0-b0bc-a3b309592815",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://musicbrainz.org/release-group/46788511-0558-4a3f-b8a8-280df45b6f24"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Silent Scream",
+   "album": "Lost and Found",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "https://musicbrainz.org/ws/2/artist?query=artist:\"Silent Scream\"&fmt=json",
+      "https://musicbrainz.org/ws/2/release-group?query=releasegroup:\"Lost and Found\" AND artist:\"Silent Scream\"&fmt=json"
+     ],
+     "checkedAt": "2026-10-20",
+     "conclusion": "MB 的 Silent Scream 只有芬蘭 goth 團與美國 death/thrash 團，無泰國團；作品方向 count=0"
+    },
+    "manualEvidenceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%8B%E0%B9%80%E0%B8%A5%E0%B8%99%E0%B8%97%E0%B9%8C_%E0%B8%AA%E0%B8%84%E0%B8%A3%E0%B8%B5%E0%B8%A1",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "manualRuling": "雲端主線 2026-10-21 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261021-ts8）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "泰國（二）2005 後：泰國後垃圾搖滾／現代搖滾樂團 Silent Scream 唯一的錄音室專輯，獲第 21 屆 Season Awards 最佳搖滾專輯，以帶金屬重量的現代搖滾在主流唱片公司體系中脫穎而出。｜⚠ 與芬蘭／美國同名團（MB 有條目）不同，上卡時注意消歧義｜MB 查無（MB 的 Silent Scream 只有芬蘭 goth 團與美國 death/thrash 團，無泰國團；作品方向 count=0），走 §1 人工身分。證據：https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%8B%E0%B9%80%E0%B8%A5%E0%B8%99%E0%B8%97%E0%B9%8C_%E0%B8%AA%E0%B8%84%E0%B8%A3%E0%B8%B5%E0%B8%A1 https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%8B%E0%B9%80%E0%B8%A5%E0%B8%99%E0%B8%97%E0%B9%8C_%E0%B8%AA%E0%B8%84%E0%B8%A3%E0%B8%B5%E0%B8%A1",
+    "queryAlias": "ไซเลนท์ สครีม"
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1754718986",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a8/f8/62/a8f86294-d574-2fa4-61ee-b47a3d6d9ff6/23UM1IM50580.rgb.jpg/600x600bb.jpg",
+    "note": "人工身分卡（無 CAA）；取已釘定試聽的 Apple 1754718986 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 148,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 1/5/2（Last.fm listeners 148）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "四位樂手湊在一起只有兩年，錄下這一張。Silent Scream 是泰國後垃圾搖滾團，屬 9 Richter／RS。主唱 Ben 出身 Gear Knight，貝斯手拿過 GBOB 2005，鼓手待過 Mr.Team 班底。《Lost and Found》2008 年 12 月 22 日釋出，獲第 21 屆 Season Awards 頒發最佳搖滾專輯。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%8B%E0%B9%80%E0%B8%A5%E0%B8%99%E0%B8%97%E0%B9%8C_%E0%B8%AA%E0%B8%84%E0%B8%A3%E0%B8%B5%E0%B8%A1",
+     "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%81%E0%B8%B5%E0%B8%A2%E0%B8%A3%E0%B9%8C%E0%B9%84%E0%B8%99%E0%B8%95%E0%B9%8C",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4a/8e/88/4a8e8859-fe0e-fad6-02c5-96741ade15b4/mzaf_12935801211637765003.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1754718986",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1754718986「Silent Scream《LOST AND FOUND》」：Apple th 1754718986：LOST AND FOUND 2008-12 與研究層 2008-12-22 同月，取第 1 軌。，取第 1 軌〈บทพิสูจน์〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Greasy Cafe",
+   "album": "The Journey without Maps",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "https://musicbrainz.org/ws/2/artist?query=artist:\"Greasy Cafe\"&fmt=json",
+      "https://musicbrainz.org/ws/2/release-group?query=releasegroup:\"The Journey without Maps\" AND artist:\"Greasy Cafe\"&fmt=json"
+     ],
+     "checkedAt": "2026-10-20",
+     "conclusion": "MB 有藝人 Greasy Cafe（9ae6af06-a179-4be1-863e-d0b6df4fdcc0）但無任何 album release-group；作品方向 count=0"
+    },
+    "manualEvidenceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%A3%E0%B8%B5%E0%B8%8B%E0%B8%8B%E0%B8%B5%E0%B9%88_%E0%B8%84%E0%B8%B2%E0%B9%80%E0%B8%9F%E0%B9%88",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "manualRuling": "雲端主線 2026-10-21 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261021-ts8）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "泰國（二）2005 後：Smallroom 旗下另類搖滾／後搖創作者 Greasy Cafe（อภิชัย ตระกูลเผด็จไกร）第三張專輯，獲 Channel [V] Thailand Melos Club 2012 年度專輯、第 10 屆 Kom Chad Luek Awards 最佳男歌手，並入圍 Season 年度專輯。｜⚠ 個人計畫（單人）；以搖滾創作人資格收｜MB 查無（MB 有藝人 Greasy Cafe（9ae6af06-a179-4be1-863e-d0b6df4fdcc0）但無任何 album release-group；作品方向 count=0），走 §1 人工身分。證據：https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%A3%E0%B8%B5%E0%B8%8B%E0%B8%8B%E0%B8%B5%E0%B9%88_%E0%B8%84%E0%B8%B2%E0%B9%80%E0%B8%9F%E0%B9%88 https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%A3%E0%B8%B5%E0%B8%8B%E0%B8%8B%E0%B8%B5%E0%B9%88_%E0%B8%84%E0%B8%B2%E0%B9%80%E0%B8%9F%E0%B9%88 https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "queryAlias": "กรีซซี่ คาเฟ่ / Apichai Tragoolpedjkrai"
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "21696439",
+    "url": "https://i.discogs.com/xPFm6PaDZywQOyxWdDp6aebzNtKquNDo6b0BGi2RdMM/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxNjk2/NDM5LTE2NDE5MjMw/OTktNjY4NS5qcGVn.jpeg",
+    "note": "人工身分卡（CAA 走不通）；取 Discogs 21696439 封面；主線 2026-10-21 目視：Greasy Cafe／The Journey Without Maps 字樣、海灘人影。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 175,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 175）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "他搬去英國，只帶木吉他、錄音器和筆電各一。Greasy Cafe 是泰國一位唱作人的藝名，1999 年起隸屬 Smallroom。前兩張叫好，收入卻撐不起生活，創作又卡住，他便無限期搬了過去。手邊樂器少，他改用口哨、iPad 上的作曲 app、室友借的尤克里里，以及房裡一台舊手風琴，全都錄了進去。盤名來自他的想法：與人交往之初，誰手上都沒有地圖。Smallroom 2012 年推出它，後來得過 Channel [V] Thailand Melos Club 年度最佳專輯。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/21696439-Greasy-Café-The-Journey-Without-Maps",
+     "https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B8%8B%E0%B8%B5_%E0%B8%84%E0%B8%B2%E0%B9%80%E0%B8%9F",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%A3%E0%B8%B5%E0%B8%8B%E0%B8%8B%E0%B8%B5%E0%B9%88_%E0%B8%84%E0%B8%B2%E0%B9%80%E0%B8%9F%E0%B9%88"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：Greasy Cafe'《The Journey Without Maps》0/0）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Greasy Cafe",
+   "album": "Technicolor",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "https://musicbrainz.org/ws/2/artist?query=artist:\"Greasy Cafe\"&fmt=json",
+      "https://musicbrainz.org/ws/2/release-group?query=releasegroup:\"Technicolor\" AND artist:\"Greasy Cafe\"&fmt=json"
+     ],
+     "checkedAt": "2026-10-20",
+     "conclusion": "MB 有藝人 Greasy Cafe（9ae6af06-a179-4be1-863e-d0b6df4fdcc0）但無任何 album release-group；作品方向 count=0"
+    },
+    "manualEvidenceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%A3%E0%B8%B5%E0%B8%8B%E0%B8%8B%E0%B8%B5%E0%B9%88_%E0%B8%84%E0%B8%B2%E0%B9%80%E0%B8%9F%E0%B9%88",
+     "https://www.sanook.com/music/2396943/",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "manualRuling": "雲端主線 2026-10-21 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261021-ts8）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "泰國（二）2005 後：Greasy Cafe 第四張專輯，獲第 29 屆 Season Awards 最佳男歌手（附註本作），與 The Richman Toy、Lomosonic 同屆，代表泰國 2010 年代後期獨立搖滾的高峰。｜⚠ 廠牌依泰文維基「整個計畫屬 Smallroom」推定，本作廠牌未逐張核；同藝人第 2 張，若主線要壓同藝人張數可汰此張｜MB 查無（MB 有藝人 Greasy Cafe（9ae6af06-a179-4be1-863e-d0b6df4fdcc0）但無任何 album release-group；作品方向 count=0），走 §1 人工身分。證據：https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%A3%E0%B8%B5%E0%B8%8B%E0%B8%8B%E0%B8%B5%E0%B9%88_%E0%B8%84%E0%B8%B2%E0%B9%80%E0%B8%9F%E0%B9%88 https://www.sanook.com/music/2396943/ https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://www.sanook.com/music/2396943/ https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%A3%E0%B8%B5%E0%B8%8B%E0%B8%8B%E0%B8%B5%E0%B9%88_%E0%B8%84%E0%B8%B2%E0%B9%80%E0%B8%9F%E0%B9%88",
+    "queryAlias": "กรีซซี่ คาเฟ่"
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1239274961",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music117/v4/79/09/6e/79096ebf-5f43-afed-cbf4-01c842a8abd7/cover.jpg/600x600bb.jpg",
+    "note": "人工身分卡（無 CAA）；取已釘定試聽的 Apple 1239274961 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 36,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 36）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "套裝裡附四張透明片，能疊在歌詞冊的圖像上。這套是泰國唱作人 Greasy Cafe 第四張專輯，製作與作詞都是他。盤名和〈ยามวิกาล〉〈Technicolor〉這些曲名，大多借用光、影像與底片的意象。離上一張約有五年。〈ยามวิกาล〉換上與過去明顯不同的電子音色，他自己稱之為一次不熟悉的聲音實驗，MV 則由 Rose 在柏林拍攝。這 14 首 2017 年上市，發行的是 Smallroom。第 29 屆 Season Awards 上，他憑這張摘下最佳男歌手。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/15577246-Greasy-Café-Technicolor",
+     "https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B8%8B%E0%B8%B5_%E0%B8%84%E0%B8%B2%E0%B9%80%E0%B8%9F",
+     "https://beehy.pe/best-of-2017/thailand-2/",
+     "https://www.sanook.com/music/2405749/",
+     "https://www.sanook.com/music/2396943/",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+     "https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%A3%E0%B8%B5%E0%B8%8B%E0%B8%8B%E0%B8%B5%E0%B9%88_%E0%B8%84%E0%B8%B2%E0%B9%80%E0%B8%9F%E0%B9%88"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/46/ec/08/46ec08ca-4369-55ab-b873-9102ba5e8b49/mzaf_15211308978349827705.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1239274961",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1239274961「Greasy Cafe'《TECHNICOLOR》」：Apple th 1239274961：TECHNICOLOR 2017-06-30 與卡面年份一致，取第 1 軌。，取第 1 軌〈ปะติดปะต่อ〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Instinct",
+   "album": "อินเนอร์",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "https://musicbrainz.org/ws/2/artist?query=artist:\"Instinct\"&fmt=json",
+      "https://musicbrainz.org/ws/2/release-group?query=releasegroup:\"Inner\" AND artist:\"Instinct\"&fmt=json"
+     ],
+     "checkedAt": "2026-10-20",
+     "conclusion": "MB 的 Instinct 為英國 UK garage 製作人與 Deviated Instinct，無泰國團；作品方向 count=0"
+    },
+    "manualEvidenceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B8%AA%E0%B8%95%E0%B8%B4%E0%B8%87%E0%B8%95%E0%B9%8C",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "manualRuling": "雲端主線 2026-10-21 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261021-ts8）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "泰國（二）2005 後：泰國另類／前衛搖滾樂團 Instinct 第二張專輯，以此作獲第 20 屆 Season Awards 最佳樂團（ศิลปินกลุ่มยอดเยี่ยม）。｜⚠ 泰文維基稱獲『最佳搖滾樂團』，Season 獎清單則列為『最佳樂團』（該屆最佳搖滾樂團為 bodyslam），以獎清單為準；封面主文字（Inner／อินเนอร์）未核｜MB 查無（MB 的 Instinct 為英國 UK garage 製作人與 Deviated Instinct，無泰國團；作品方向 count=0），走 §1 人工身分。證據：https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B8%AA%E0%B8%95%E0%B8%B4%E0%B8%87%E0%B8%95%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B8%AA%E0%B8%95%E0%B8%B4%E0%B8%87%E0%B8%95%E0%B9%8C",
+    "queryAlias": "Inner / อินสติงต์ / อินสติงค์"
+   },
+   "research": {
+    "suggestedYear": 2007,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1793402925",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9e/dd/94/9edd947f-3148-9c51-f292-94213d05bf53/888332977517.jpg/600x600bb.jpg",
+    "note": "人工身分卡（無 CAA）；取已釘定試聽的 Apple 1793402925 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 4,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/4/4（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "同出自樂團 Girl 的兩人，一個主唱、一個彈鍵盤。兩人 2006 年組成 Instinct，走泰式另類與流行搖滾。唱歌的那位，大學念的是藝術學院，主修繪畫。隔年 3 月，首作《Inner》經 More Music 問世，收 10 首歌。第 20 屆 Season Awards 上，Instinct 以它奪下最佳雙人或團體。",
+    "sourceUrls": [
+     "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B8%AA%E0%B8%95%E0%B8%B4%E0%B8%87%E0%B8%95%E0%B9%8C",
+     "https://th.wikipedia.org/wiki/%E0%B8%9B%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%A7%E0%B8%B4%E0%B8%A8%E0%B8%A7%E0%B9%8C_%E0%B8%99%E0%B8%B4%E0%B8%A5%E0%B8%88%E0%B8%B8%E0%B8%A5%E0%B8%81%E0%B8%B0",
+     "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/c4/fb/ddc4fba0-3dd4-7820-620c-372ef5b6d3db/mzaf_12162766838712316968.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1793402925",
+    "storefront": "TH",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple th 1793402925「Instinct《Inner》」：Apple th 1793402925：Instinct《Inner》（อินเนอร์ 的英文寫法）2007-03-20、10 首，取第 1 軌。，取第 1 軌〈ไม่กลัวใครหน้าไหน〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ATΩMEGA",
+   "album": "Đất mẹ",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "dc9fdd39-caaa-30ce-acfb-4f7188adf9f5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：越南維基《越南搖滾》明載 Atomega 的《Đất mẹ》是「越南第一張 heavy rock 專輯」——越南重搖滾／金屬的起點盤（Discogs 標 Heavy Metal；一首歌詞遭審查未收錄）。｜⚠ 年份三方不一：MB 首發 1995-05-25（VN）、Discogs 1997、越南維基 1998；暫取 MB 1995。九首中約一半為西洋搖滾越語翻唱（CCR、Steppenwolf、Nirvana…），收錄理由是『第一張』里程碑。掛名照 MB 寫 ATΩMEGA（alias Atomega）。｜MB release-group dc9fdd39-caaa-30ce-acfb-4f7188adf9f5：title「Đất mẹ」、Album、first-release-date 1995-05-25、artist-credit「ATΩMEGA」。證據：https://vi.wikipedia.org/wiki/Nh%E1%BA%A1c_rock_Vi%E1%BB%87t_Nam https://www.discogs.com/release/6718196 https://musicbrainz.org/release-group/dc9fdd39-caaa-30ce-acfb-4f7188adf9f5",
+    "queryAlias": "artist: Atomega; album: Dat me / Motherland"
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/dc9fdd39-caaa-30ce-acfb-4f7188adf9f5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 4,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/4（Last.fm listeners 4）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "1997 年西貢一場搖滾夜，十個團吸引了約一萬人。那一代西貢前輩團裡有 ATΩMEGA，《Đất mẹ》被當地媒體列為越南第一張 heavy rock 專輯。這張九〇年代的唱片收 9 首，其中四首把 CCR、Nirvana 等人的歌改成越語來唱。錄好的第十首〈Crazy World〉則因歌詞審查，留在了 CD 之外。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/6718196",
+     "https://tuoitre.vn/rock-viet-doi-2004-41780.htm",
+     "https://vi.wikipedia.org/wiki/Rock_Vi%E1%BB%87t",
+     "https://musicbrainz.org/release-group/dc9fdd39-caaa-30ce-acfb-4f7188adf9f5"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Flob",
+   "album": "Trời đánh tránh ta / Ta va trúng người",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a6df81f8-f4d7-4c42-86f3-5053c8037834",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：胡志明市樂團 The Flob 首張錄音室專輯，金屬／另類搖滾揉合越南民間素材；越南維基《越南搖滾》稱其為「2024 年最佳專輯之一」，主打〈Nhất bái thiên địa〉MV 獲越南音樂家協會越南音樂獎 Sol Vàng。｜⚠ Sol Vàng 是頒給 MV 而非專輯本身；樂團早期偏 pop rock，本張起轉金屬＋民族。與 q 組（2005 後獨立）時代重疊，以『金屬／民族搖滾』歸 p，主線可再去重。｜MB release-group a6df81f8-f4d7-4c42-86f3-5053c8037834：title「Trời đánh tránh ta / Ta va trúng người」、Album、first-release-date 2024-11-28、artist-credit「The Flob ft. CHIN」。證據：https://vi.wikipedia.org/wiki/Nh%E1%BA%A1c_rock_Vi%E1%BB%87t_Nam https://vi.wikipedia.org/wiki/The_Flob https://musicbrainz.org/release-group/a6df81f8-f4d7-4c42-86f3-5053c8037834",
+    "queryAlias": "album: Troi danh tranh ta - Ta va trung nguoi；The Flob ft. CHIN"
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a6df81f8-f4d7-4c42-86f3-5053c8037834/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 1）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "主打 MV 拿下越南音樂獎第一次頒出的 Sol Vàng。六人金屬樂團 The Flob 起於胡志明市一所高中，這是首張正式專輯。那支 MV 屬於〈Nhất bái thiên địa〉，2024 年 11 月搶在專輯之前放出，Sol Vàng 頒的正是 MV 項目。整張隨後也在當年由 Yin Yang Media 以數位形式發行。打頭陣的前導單曲〈Xì dzách〉以賭博為題，把搖滾、金屬與南部民歌揉在一起。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/bda3d901-4260-45e7-89cf-a0e8d3a042f6",
+     "https://vi.wikipedia.org/wiki/The_Flob",
+     "https://nhandan.vn/lan-dau-tien-trao-giai-sol-vang-tai-giai-thuong-am-nhac-viet-nam-post850739.html",
+     "https://vi.wikipedia.org/wiki/Gi%E1%BA%A3i_th%C6%B0%E1%BB%9Fng_%C3%82m_nh%E1%BA%A1c_Vi%E1%BB%87t_Nam",
+     "https://vi.wikipedia.org/wiki/Rock_Vi%E1%BB%87t",
+     "https://musicbrainz.org/release-group/a6df81f8-f4d7-4c42-86f3-5053c8037834"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/59/b4/b8/59b4b882-b0fb-5782-6094-e86987604f34/mzaf_11099925810787608041.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1781329983",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 1781329983「The Flob & CHIN《TRỜI ĐÁNH TRÁNH TA - TA VA TRÚNG NGƯỜI》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Cổng Trời〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gạt Tàn Đầy",
+   "album": "Đám cưới chuột",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ed866e71-f0cd-3808-b5dd-7f34bf17447d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：河內搖滾奠基團之一（越南維基《越南搖滾》列為「為河內搖滾打下根基」的名字）唯一錄音室專輯；同名曲獲 2006 年 10 月 Bài hát Việt「月度歌曲」，樂團獲 2006 Bài hát Việt 年度「印象團體」獎。｜策展無疑點｜MB release-group ed866e71-f0cd-3808-b5dd-7f34bf17447d：title「Đám cưới chuột」、Album、first-release-date 2006、artist-credit「Gạt Tàn Đầy」。證據：https://vi.wikipedia.org/wiki/G%E1%BA%A1t_T%C3%A0n_%C4%90%E1%BA%A7y https://vi.wikipedia.org/wiki/Nh%E1%BA%A1c_rock_Vi%E1%BB%87t_Nam https://www.discogs.com/release/5089387 https://musicbrainz.org/release-group/ed866e71-f0cd-3808-b5dd-7f34bf17447d",
+    "queryAlias": "artist: Gat Tan Day; album: Dam cuoi chuot"
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ed866e71-f0cd-3808-b5dd-7f34bf17447d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 1181,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/4（Last.fm listeners 1181）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一幅老鼠娶親的東湖版畫，變成河內搖滾團的歌名。Gạt Tàn Đầy 1993 年在悼念約翰·藍儂的音樂會首度聚首，1996 年於河內成軍。2003 年 11 月 29 日重新登台，舞台是第一屆越南搖滾大會。同名曲取材自那幅 Tranh Đông Hồ 同名畫，歌詞呼應一句民間諷喻：老鼠婚禮要辦得順，得先拿魚給貓。2006 年，這張首作交到 Dihavina 手上出版。同名曲拿下《Bài hát Việt》當年 10 月的月度歌曲，樂團則拿到年度印象團體。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5089387",
+     "https://vi.wikipedia.org/wiki/%C4%90%C3%A1m_c%C6%B0%E1%BB%9Bi_chu%E1%BB%99t_(album)",
+     "https://vi.wikipedia.org/wiki/G%E1%BA%A1t_T%C3%A0n_%C4%90%E1%BA%A7y",
+     "https://vi.wikipedia.org/wiki/Rock_Vi%E1%BB%87t",
+     "https://musicbrainz.org/release-group/ed866e71-f0cd-3808-b5dd-7f34bf17447d"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Black Infinity",
+   "album": "666 Metal",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5c19cd6a-795b-408c-b659-ed9698d0bb4d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：越南代表性哥德／死亡金屬團首張專輯（2009，越法美三地發行）；〈The Secret〉入選英國《Metal Hammer》2010 年〈Planet Metal〉世界金屬合輯，越南維基《越南搖滾》列其為當代最突出的團之一。｜⚠ MB 另有一筆 2018 年同名 release group（e9a7253a…，疑再發），取 2009 首發那筆。越南維基 Black Infinity 條目掛『缺可靠來源』；國際認可證據靠 Discogs 的 Metal Hammer 合輯收錄。｜MB release-group 5c19cd6a-795b-408c-b659-ed9698d0bb4d：title「666 Metal」、Album、first-release-date 2009-07、artist-credit「Black Infinity」。證據：https://www.discogs.com/release/7270883 https://www.discogs.com/release/3948892 https://vi.wikipedia.org/wiki/Black_Infinity https://musicbrainz.org/release-group/5c19cd6a-795b-408c-b659-ed9698d0bb4d",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "7270883",
+    "url": "https://i.discogs.com/I5bkl-wd7Fag8F_xEl-4VmLXu1MSTRjYF71SEhKjQF0/rs:fit/g:sm/q:90/h:488/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyNzA4/ODMtMTQzNzY3ODY4/Mi0xMTQ0LmpwZWc.jpeg",
+    "note": "CAA 無圖；取 Discogs 7270883 封面；主線 2026-10-21 目視：BLACK INFINITY／666 METAL 字樣、指揮骷髏。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 779,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/4（Last.fm listeners 779）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "英國金屬雜誌的隨刊 CD，收進一首帶古箏音色的越南金屬。這首屬於越南哥德與死亡金屬團 Black Infinity，曲名〈The Secret〉，用鍵盤模擬 đàn tranh 的聲響，再接上金屬 riff。那本雜誌 2010 年 4 月號附贈的世界金屬合輯裡，它排在第 3 首。樂團是 Nguyễn Tiến Hưng 2006 年在美國留學時創的，之後回越南招募團員。專輯 2009 年開錄，全以英文演唱，最後由 Music Faces 出版，成為樂團首張。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7270883",
+     "https://vi.wikipedia.org/wiki/Black_Infinity",
+     "https://www.discogs.com/release/3948892",
+     "https://musicbrainz.org/release-group/5c19cd6a-795b-408c-b659-ed9698d0bb4d"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Windrunner",
+   "album": "MAI",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "fabfeccd-a53f-423f-9d62-f6805fd2b5e2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：河內女聲前導的前衛 metalcore 團首張專輯，djent 揉入東方弦樂與鋼琴；獲國際金屬媒體評介——Metal Trenches 稱它是「今年少數真正紮實的 metalcore 專輯之一」，Wonderbox Metal、Sputnikmusic 亦有專評，越南金屬走向國際的代表作。｜⚠ Sputnikmusic 那篇為用戶評（非站方）；好評證據以 Metal Trenches 為主。｜MB release-group fabfeccd-a53f-423f-9d62-f6805fd2b5e2：title「MAI」、Album、first-release-date 2018-11-30、artist-credit「Windrunner」。證據：https://metaltrenches.com/reviews/mai-1670 https://www.sputnikmusic.com/review/78565/Windrunner-MAI/ https://www.discogs.com/release/12914350 https://musicbrainz.org/release-group/fabfeccd-a53f-423f-9d62-f6805fd2b5e2",
+    "queryAlias": "album: Mai"
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fabfeccd-a53f-423f-9d62-f6805fd2b5e2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 5673,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/4/2（Last.fm listeners 5673）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "越南報紙稱她是全國唯一的女嘶吼歌手。Windrunner 由她擔任主唱，屬河內的 metalcore 圈，歌詞全用英文。她叫 Dương Bùi，2016 年底就能在同一首歌裡，於嘶吼與清唱之間來回切換。《MAI》2018 年由美國廠牌 Famined Records 推出，CD 裡藏了一首越語版〈Rose〉：清唱改成越南語，嘶吼照舊是英文。國外樂評把它歸為帶 djent 式 hook 的前衛 metalcore，也指出前半張不如後半張讓人難忘。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/12914350",
+     "https://www.tienphong.vn/van-nghe/giong-nu-gao-duy-nhat-cua-rock-viet-1080265.tpo",
+     "https://metaltrenches.com/reviews/mai-1670",
+     "https://musicbrainz.org/release-group/fabfeccd-a53f-423f-9d62-f6805fd2b5e2"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7b/66/4b/7b664be9-aae2-08fb-865a-74e7c96ec109/mzaf_1106943997880329773.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1501433371",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 1501433371「Windrunner《Mai》」：曲目 11/11 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Mulan〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hạc San",
+   "album": "Sét đánh ngang trời",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "20086042-a98f-4acd-bbc4-6f74d5afa6e1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：胡志明市前衛金屬團的概念專輯，以民間故事《石生》串起 11 首；Zing News 列為 2015 越南搖滾年度亮點、《青年報》樂評讚其前衛金屬揉合越南民間素材，曾進入貢獻音樂獎年度專輯初選；團體同年獲 VnRock 年度搖滾歌曲。｜⚠ 廠牌未知（疑自主發行）。｜MB release-group 20086042-a98f-4acd-bbc4-6f74d5afa6e1：title「Sét đánh ngang trời」、Album、first-release-date 2015-11-20、artist-credit「Hạc San」。證據：https://vi.wikipedia.org/wiki/H%E1%BA%A1c_San https://musicbrainz.org/release-group/20086042-a98f-4acd-bbc4-6f74d5afa6e1 https://www.discogs.com/artist/9091024",
+    "queryAlias": "album: Set danh ngang troi"
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1538247892",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7b/51/ae/7b51aeb2-8d90-bab5-0854-c8f826f680f7/cover.jpg/600x600bb.jpg",
+    "note": "CAA release-group 404；取已釘定試聽的 Apple 1538247892 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 390,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 390）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "越南童話《石生》被寫成一張首尾相連的前衛金屬。Hạc San 是 2012 年 12 月 12 日於胡志明市組成的樂團。吉他手 Dzũng Phạm 從 2011 年起構想這張概念專輯，2013 年底進鼓手 Yvol 自家錄音室開錄，前後花了近五年。故事裡的石生遭義兄李通背叛、被埋進洞裡，歷經復仇與重生，李通最後遭雷劈；四章走完，以因果收尾。唱片 2015 年以樂團名義 Art Hacova 發行，3 首是純器樂。樂評的形容是：它揉進越南民間音色，講了一個後現代故事。",
+    "sourceUrls": [
+     "https://vi.wikipedia.org/wiki/S%C3%A9t_%C4%91%C3%A1nh_ngang_tr%E1%BB%9Di",
+     "https://vi.wikipedia.org/wiki/H%E1%BA%A1c_San",
+     "https://musicbrainz.org/release-group/20086042-a98f-4acd-bbc4-6f74d5afa6e1"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/27/df/c8/27dfc896-a492-7dfd-0ed7-296e65dc4310/mzaf_14267961567184251760.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1538247892",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 1538247892「Hạc San《Sét Đánh Ngang Trời》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Hỗn Mang〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "UnlimiteD",
+   "album": "Tái sinh",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0e662dab-35b1-33fd-b02f-f6f0b582b92a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：胡志明市 power／旋律死亡金屬團首張專輯，越南維基載為 Viết Tân 錄音室錄製的第一張搖滾專輯；入圍 2008 貢獻音樂獎（Cống hiến）年度專輯、2008 Album vàng 前五，樂團並獲 Superband 2007 最佳樂團，以金屬改編民謠〈Hòn vọng phu〉被譽為越南新音樂首見。｜⚠ 收錄兩首西洋金屬翻唱（Wing of Destiny、The Final Countdown）。｜MB release-group 0e662dab-35b1-33fd-b02f-f6f0b582b92a：title「Tái sinh」、Album、first-release-date 2007-11-23、artist-credit「UnlimiteD」。證據：https://vi.wikipedia.org/wiki/UnlimiteD https://www.discogs.com/release/12610807 https://musicbrainz.org/release-group/0e662dab-35b1-33fd-b02f-f6f0b582b92a",
+    "queryAlias": "artist: Unlimited; album: Tai sinh"
+   },
+   "research": {
+    "suggestedYear": 2007,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0e662dab-35b1-33fd-b02f-f6f0b582b92a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 185,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 185）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "越南國民作曲家的一曲，被金屬團改成強勁的搖滾版。原曲作者是 Trịnh Công Sơn，改編的 UnlimiteD 出身胡志明市，2003 年組團。這首改編收在首張《Tái sinh》裡，2007 年 11 月 23 日問世，在 Viết Tân 錄音室錄成；那間錄音室錄本土搖滾，就從這張起頭。當地報紙的評論稱讚它的和聲與配器，並點出改編〈Nối vòng tay lớn〉開出了新的取材方向。隔年 7 月，它擠進 Album vàng 月榜前五。",
+    "sourceUrls": [
+     "https://vi.wikipedia.org/wiki/UnlimiteD",
+     "https://www.discogs.com/release/12610807",
+     "https://vi.wikipedia.org/wiki/Gi%E1%BA%A3i_th%C6%B0%E1%BB%9Fng_C%E1%BB%91ng_hi%E1%BA%BFn_cho_Album_c%E1%BB%A7a_n%C4%83m",
+     "https://web.archive.org/web/20080815201117/http://albumvang.nhacso.net/mnCMS/Home/Album_Vang/?93",
+     "https://musicbrainz.org/release-group/0e662dab-35b1-33fd-b02f-f6f0b582b92a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ngọt",
+   "album": "3 (tuyển tập nhạc Ngọt mới trẻ sôi động 2019)",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "45e9ca23-b200-4581-a6d1-1d27082d1b2f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：河內獨立樂團 Ngọt 第三張錄音室專輯，入圍第 15 屆 Cống hiến 音樂獎「年度專輯」（2020，同屆唯一入圍的樂團作品），Saigoneer 2019 年度精選稱其呈現「前所未有自信的 Ngọt」，是越南 2010 年代獨立搖滾帶進主流視野的代表作；池中已有首張與《Gieo》，此為第三張也是獎項層級最高的一張。｜⚠ MB 另有一筆無日期重複 RG 9ce8dd95-2283-4f2b-8d90-9a8e5b08a7b1，取有日期與發行的 45e9ca23。｜MB release-group 45e9ca23-b200-4581-a6d1-1d27082d1b2f：title「3 (tuyển tập nhạc Ngọt mới trẻ sôi động 2019)」、Album、first-release-date 2019-10-06、artist-credit「Ngọt」。證據：https://vi.wikipedia.org/wiki/Gi%E1%BA%A3i_th%C6%B0%E1%BB%9Fng_C%E1%BB%91ng_hi%E1%BA%BFn_cho_Album_c%E1%BB%A7a_n%C4%83m https://en.wikipedia.org/wiki/Ng%E1%BB%8Dt https://musicbrainz.org/release-group/45e9ca23-b200-4581-a6d1-1d27082d1b2f https://saigoneer.com/saigon-music-art/18014-year-in-review-saigoneer-s-20-picks-for-best-vietnamese-music-of-2019",
+    "queryAlias": "album: 3"
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/45e9ca23-b200-4581-a6d1-1d27082d1b2f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 13924,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/4/2（Last.fm listeners 13924）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "開場曲唱到第三段，冒出別團名曲的一句副歌。河內獨立樂團 Ngọt 在這裡引用了 Microwave 的〈Tìm lại〉。那首開場曲堆滿 power chord 與失真吉他。2019 年 10 月，整張由 LP Club 推上市，全名直譯是「2019 年 Ngọt 新鮮青春熱鬧歌曲選集」。往下聽，圓舞曲與斯拉夫民謠的影子收斂了，換成放克刷弦與藍調單音，電吉他讓位給貝斯與鋼琴。英文樂評提到，它第一遍不如前作抓耳，卻越聽越想回頭，可能是樂團最好的作品。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/45e9ca23-b200-4581-a6d1-1d27082d1b2f",
+     "https://vi.wikipedia.org/wiki/Ng%E1%BB%8Dt_(ban_nh%E1%BA%A1c)",
+     "https://saigoneer.com/saigon-music-art/17683-review-in-ng%E1%BB%8Dt%E2%80%99s-newest-album,-urban-loneliness-lingers-on-mellow-strings",
+     "https://saigoneer.com/saigon-music-art/18014-year-in-review-saigoneer-s-20-picks-for-best-vietnamese-music-of-2019",
+     "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_%C4%91%E1%BB%81_c%E1%BB%AD_v%C3%A0_chi%E1%BA%BFn_th%E1%BA%AFng_gi%E1%BA%A3i_th%C6%B0%E1%BB%9Fng_%C3%82m_nh%E1%BA%A1c_C%E1%BB%91ng_hi%E1%BA%BFn"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4e/96/1f/4e961fce-53b2-cfb8-2cdd-73674a7da131/mzaf_12467406037737703260.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1606802192",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 1606802192「Ngọt《3 (tuyển tập nhạc Ngọt mới trẻ sôi động 2019)》」：曲目 13/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈MÀU (đen trắng)〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Quái Vật Tí Hon",
+   "album": "Đường về",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "514a7263-eb48-4aa1-a040-263063016b66",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：另類／後搖滾樂團 Quái Vật Tí Hon 唯一錄音室專輯，入圍第 7 屆 Cống hiến「年度專輯」與「年度詞曲作者」（2012），《Phụ nữ Today》評為 2011 年最耐聽的搖滾專輯之一。｜⚠ MB 藝人名寫作小寫「Quái vật tí hon」，維基與封面用首字大寫。｜MB release-group 514a7263-eb48-4aa1-a040-263063016b66：title「Đường về」、Album、first-release-date 2011-10-25、artist-credit「Quái vật tí hon」。證據：https://vi.wikipedia.org/wiki/Qu%C3%A1i_V%E1%BA%ADt_T%C3%AD_Hon https://vi.wikipedia.org/wiki/Gi%E1%BA%A3i_th%C6%B0%E1%BB%9Fng_C%E1%BB%91ng_hi%E1%BA%BFn_cho_Album_c%E1%BB%A7a_n%C4%83m https://musicbrainz.org/release-group/514a7263-eb48-4aa1-a040-263063016b66",
+    "queryAlias": "artist: Quai Vat Ti Hon; Little Monster"
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/514a7263-eb48-4aa1-a040-263063016b66/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 464,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 464）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "樂評從歌詞裡讀出自責，全碟十二首都是主唱寫的。四人合組的 Quái Vật Tí Hon，主唱 Hải Bột 待過 Microwave。那篇評論說，這 12 首內省得像自述，字句底下是一個為還不清的債、或抹不去的過錯而責備自己的靈魂。聲音也跟著收斂：吉他樸素，旋律輕柔深沉，Hải Bột 像在低聲訴說。這張 2011 年 10 月上市，是樂團留下的唯一一張。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5630261",
+     "https://vi.wikipedia.org/wiki/Qu%C3%A1i_V%E1%BA%ADt_T%C3%AD_Hon",
+     "https://musicbrainz.org/release-group/514a7263-eb48-4aa1-a040-263063016b66",
+     "https://vi.wikipedia.org/wiki/Gi%E1%BA%A3i_th%C6%B0%E1%BB%9Fng_C%E1%BB%91ng_hi%E1%BA%BFn_cho_Album_c%E1%BB%A7a_n%C4%83m",
+     "https://saigoneer.com/saigon-music-art/17683-review-in-ng%E1%BB%8Dt%E2%80%99s-newest-album,-urban-loneliness-lingers-on-mellow-strings"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/fc/90/c5fc9082-d7e9-9005-2235-6482045dbdb9/mzaf_9942674846737724411.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1760532485",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 1760532485「Quái Vật Tí Hon《Đường Về》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Qua Ô Cửa Thời Gian〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tạ Quang Thắng",
+   "album": "Country Rock",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9a771322-c45e-4ee2-9689-2e44e03569e3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：河內創作歌手 Tạ Quang Thắng 首張專輯，把鄉村搖滾帶進越南樂壇，入圍第 8 屆 Cống hiến「年度專輯」與「年度詞曲作者」（2013）；越南文維基〈Rock Việt Nam〉將他列為 2000 年代後轉向 country rock 的代表。｜⚠ 搖滾屬性邊界：維基 infobox 曲風列 Nhạc trẻ（流行）＋ Country rock；他是創作歌手而非樂團。主線可依「只收搖滾」從嚴剔除。第二張《Một tôi rất mới》（2014）也入圍年度專輯，但 MB 無收錄，未提名。｜MB release-group 9a771322-c45e-4ee2-9689-2e44e03569e3：title「Country Rock」、Album、first-release-date 2012-03、artist-credit「Tạ Quang Thắng」。證據：https://vi.wikipedia.org/wiki/T%E1%BA%A1_Quang_Th%E1%BA%AFng https://vi.wikipedia.org/wiki/Gi%E1%BA%A3i_th%C6%B0%E1%BB%9Fng_C%E1%BB%91ng_hi%E1%BA%BFn_cho_Album_c%E1%BB%A7a_n%C4%83m https://vi.wikipedia.org/wiki/Rock_Vi%E1%BB%87t_Nam https://musicbrainz.org/release-group/9a771322-c45e-4ee2-9689-2e44e03569e3",
+    "queryAlias": "artist: Ta Quang Thang"
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9a771322-c45e-4ee2-9689-2e44e03569e3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 42,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 42）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "搖滾往軟處走的那幾年，他選了 country rock。他是 1988 年生於河內的 Tạ Quang Thắng，畢業於越南國家音樂學院。那段時期，他和 Ngũ Cung 被並列為搖滾圈向大眾靠攏的例子。2012 年 3 月 20 日，首作經 Phương Nam Film 發行，八首歌全是他自寫自唱，盤名乾脆就叫 Country Rock。早在 2005 年，他已拿下歌唱比賽 Tuổi đời mênh mông 的第一名；嗓音強壯質樸，低沉而溫暖。",
+    "sourceUrls": [
+     "https://vi.wikipedia.org/wiki/T%E1%BA%A1_Quang_Th%E1%BA%AFng",
+     "https://www.discogs.com/release/5617455",
+     "https://musicbrainz.org/release-group/9a771322-c45e-4ee2-9689-2e44e03569e3",
+     "https://vi.wikipedia.org/wiki/Rock_Vi%E1%BB%87t",
+     "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_%C4%91%E1%BB%81_c%E1%BB%AD_v%C3%A0_chi%E1%BA%BFn_th%E1%BA%AFng_gi%E1%BA%A3i_th%C6%B0%E1%BB%9Fng_%C3%82m_nh%E1%BA%A1c_C%E1%BB%91ng_hi%E1%BA%BFn",
+     "https://vi.wikipedia.org/wiki/Gi%E1%BA%A3i_th%C6%B0%E1%BB%9Fng_C%E1%BB%91ng_hi%E1%BA%BFn_cho_Album_c%E1%BB%A7a_n%C4%83m"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ngọt",
+   "album": "Ng'bthg",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "dc102b9e-5488-488c-a23d-ed06f45ae777",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：河內獨立樂團 Ngọt 第二張錄音室專輯（四人自錄自製、首版 4,000 張 CD），收錄的〈Em dạo này〉拿下第 13 屆 Cống hiến 音樂獎（2018）「年度歌曲」，樂團同屆並獲「年度新人」——是 Ngọt 從地下走進主流的那一張；池中已有首張、《Gieo》，前一輪補了《3》，此張前一輪僅因假的三張上限未收。｜⚠ 維基寫作 Ng`bthg（反引號），MB 正規名為 Ng'bthg（ASCII 撇號），照 MB；發行日維基越文版 9/23、英文版 9/9，MB 取 2017-09-23。｜MB release-group dc102b9e-5488-488c-a23d-ed06f45ae777：title「Ng'bthg」、Album、first-release-date 2017-09-23、artist-credit「Ngọt」。證據：https://en.wikipedia.org/wiki/Ng%E1%BB%8Dt https://vi.wikipedia.org/wiki/Ng%E1%BB%8Dt_(ban_nh%E1%BA%A1c) https://tienphong.vn/nhung-chang-9x-da-tai-cua-ngot-band-vua-nhan-giai-cong-hien-la-ai-post1017035.tpo https://musicbrainz.org/release-group/dc102b9e-5488-488c-a23d-ed06f45ae777",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/dc102b9e-5488-488c-a23d-ed06f45ae777/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 9581,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 1/4/2（Last.fm listeners 9581）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "從學校開車回家的路上，主唱寫下了〈Em dạo này〉。這首歌的作者 Vũ Đinh Trọng Thắng，替河內的 Ngọt 包辦詞曲。啟發他的是法國圓舞曲。2017 年 4 月，樂團在巴黎的兩場演出售罄，單曲就在那趟巡演期間錄好，帶著 gypsy jazz 的氣息。9 月 23 日，第二張自行發行，由四位成員自己錄音製作，首版 4000 張 CD。配器多了旋律口琴、斑鳩琴、拍手與沙錘。第 13 屆 Cống hiến 上，這首歌拿下年度歌曲，樂團也獲選年度新人。",
+    "sourceUrls": [
+     "https://vi.wikipedia.org/wiki/Ng%E1%BB%8Dt_(ban_nh%E1%BA%A1c)",
+     "https://saigoneer.com/saigon-music-art/17683-review-in-ng%E1%BB%8Dt%E2%80%99s-newest-album,-urban-loneliness-lingers-on-mellow-strings",
+     "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_%C4%91%E1%BB%81_c%E1%BB%AD_v%C3%A0_chi%E1%BA%BFn_th%E1%BA%AFng_gi%E1%BA%A3i_th%C6%B0%E1%BB%9Fng_%C3%82m_nh%E1%BA%A1c_C%E1%BB%91ng_hi%E1%BA%BFn",
+     "https://tienphong.vn/nhung-chang-9x-da-tai-cua-ngot-band-vua-nhan-giai-cong-hien-la-ai-post1017035.tpo",
+     "https://musicbrainz.org/release-group/dc102b9e-5488-488c-a23d-ed06f45ae777"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/68/00/8a/68008ab0-e02b-6dc5-0f4d-a07676543fc9/mzaf_3700106369042563429.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1607501461",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 1607501461「Ngọt《Ng'bthg》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Xin Cho Tôi〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bức Tường",
+   "album": "Đất Việt",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0b00ef20-d2a3-417e-8397-b3280e618d1b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：越南最重要的搖滾樂團 Bức Tường 建團 20 年紀念專輯、也是主唱 Trần Lập 生前最後一張錄音室作品；民族音樂素材入搖滾，《An ninh Thủ đô》稱之為「越南人的雄壯史詩」，《Hà Nội mới》譽為「純越式搖滾的宣言」。池中已有前三張，前一輪因上限未收。｜策展無疑點｜MB release-group 0b00ef20-d2a3-417e-8397-b3280e618d1b：title「Đất Việt」、Album、first-release-date 2014-12-12、artist-credit「Bức Tường」。證據：https://vi.wikipedia.org/wiki/B%E1%BB%A9c_T%C6%B0%E1%BB%9Dng_(ban_nh%E1%BA%A1c) https://baonghean.vn/buc-tuong-ra-mat-album-ky-niem-20-nam-thanh-lap-67208.html https://www.discogs.com/release/10902518 https://musicbrainz.org/release-group/0b00ef20-d2a3-417e-8397-b3280e618d1b",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "6769352858",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/bb/b8/99/bbb89905-9a68-34b0-fa1f-6de56b62ef98/cover.jpg/600x600bb.jpg",
+    "note": "CAA release-group 404；取已釘定試聽的 Apple 6769352858 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 205,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 205）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Trần Lập 生日當天，樂團交出了第五張專輯。身為主唱兼靈魂人物，Trần Lập 在 2014 年帶著越南搖滾團 Bức Tường 走到第 20 年。同名曲〈Đất Việt〉跑了 8 分 51 秒，是他 17 年前就起了稿的歌，拼進半古典交響、metal ballad 與民間音樂，被譽為一首雄壯長歌。專輯裡的竹笛由 Hoàng Anh 吹奏。兩年後的 2016 年，Trần Lập 因癌症病逝，這張成了他與樂團一起錄下的最後一張。",
+    "sourceUrls": [
+     "https://vi.wikipedia.org/wiki/%C4%90%E1%BA%A5t_Vi%E1%BB%87t",
+     "https://baonghean.vn/buc-tuong-ra-mat-album-ky-niem-20-nam-thanh-lap-67208.html",
+     "https://hanoimoi.com.vn/Tin-tuc/Giai-tri/729412/goi-ca-hanh-trinh-hai-muoi-nam-vi-rock-viet",
+     "https://vi.wikipedia.org/wiki/B%E1%BB%A9c_T%C6%B0%E1%BB%9Dng_(ban_nh%E1%BA%A1c)",
+     "https://www.billboard.com/music/music-news/buc-tuong-rock-music-vietnam-9569114/",
+     "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_%C4%91%E1%BB%81_c%E1%BB%AD_v%C3%A0_chi%E1%BA%BFn_th%E1%BA%AFng_gi%E1%BA%A3i_th%C6%B0%E1%BB%9Fng_%C3%82m_nh%E1%BA%A1c_C%E1%BB%91ng_hi%E1%BA%BFn",
+     "https://musicbrainz.org/release-group/0b00ef20-d2a3-417e-8397-b3280e618d1b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/9e/da/da9eda03-41b9-4534-48d7-59945d3079ea/mzaf_1891716508184630020.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "6769352858",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 6769352858「Bức Tường《Đất Việt》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Tuổi 20〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bức Tường",
+   "album": "Con đường không tên",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2166e4a2-6056-48e9-b02e-adecc1bc93b5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：Trần Lập 過世後 Bức Tường 與 Phạm Anh Khoa 合作的第一張專輯，《Billboard》2020 年專文介紹樂團並評此專輯「歌曲堅毅有力、同時引入新聲響」；〈Cơn mưa tháng 5〉入圍第 16 屆 Cống hiến「年度歌曲」，同名演出入圍「年度節目」。｜⚠ 主唱為客座的 Phạm Anh Khoa，但掛名 Bức Tường（MB／Discogs 皆同）。｜MB release-group 2166e4a2-6056-48e9-b02e-adecc1bc93b5：title「Con đường không tên」、Album、first-release-date 2020-11-26、artist-credit「Bức Tường」。證據：https://www.billboard.com/music/music-news/buc-tuong-rock-music-vietnam-9569114/ https://vi.wikipedia.org/wiki/B%E1%BB%A9c_T%C6%B0%E1%BB%9Dng_(ban_nh%E1%BA%A1c) https://thanhnien.vn/ban-nhac-buc-tuong-duoc-vinh-danh-tren-tap-chi-dinh-dam-billboard-post1069624.html https://www.discogs.com/release/16815387 https://musicbrainz.org/release-group/2166e4a2-6056-48e9-b02e-adecc1bc93b5",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1541786146",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/aa/b5/a2/aab5a252-6d69-3f80-9003-73fc536a472e/886448930662.jpg/600x600bb.jpg",
+    "note": "CAA release-group 404；取已釘定試聽的 Apple 1541786146 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 325,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 4/5/2（Last.fm listeners 325）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "往後每個計畫，樂團都打算找不同的歌手來唱。Bức Tường 在主唱 Trần Lập 2016 年病逝後，以這張回歸，客座主唱是 Phạm Anh Khoa。2020 年 11 月專輯推出前五天，吉他手 Trần Tuấn Hùng 受訪時說出這個打算。他說 Lập 的領導位置留給 Lập，樂團需要的是一個唱新歌的聲音。十首歌全由他和 Vũ Văn Hà 寫成，〈Bình yên〉還加進了饒舌。2021 年 5 月的一篇美國雜誌專文說，明亮樂觀的旋律貫穿整張。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/16815387",
+     "https://vi.wikipedia.org/wiki/B%E1%BB%A9c_T%C6%B0%E1%BB%9Dng_(ban_nh%E1%BA%A1c)",
+     "https://www.billboard.com/music/music-news/buc-tuong-rock-music-vietnam-9569114/",
+     "https://vi.wikipedia.org/wiki/Con_%C4%90%C6%B0%E1%BB%9Dng_Kh%C3%B4ng_T%C3%AAn_(album)",
+     "https://thanhnien.vn/ban-nhac-buc-tuong-duoc-vinh-danh-tren-tap-chi-dinh-dam-billboard-post1069624.html",
+     "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_%C4%91%E1%BB%81_c%E1%BB%AD_v%C3%A0_chi%E1%BA%BFn_th%E1%BA%AFng_gi%E1%BA%A3i_th%C6%B0%E1%BB%9Fng_%C3%82m_nh%E1%BA%A1c_C%E1%BB%91ng_hi%E1%BA%BFn",
+     "https://musicbrainz.org/release-group/2166e4a2-6056-48e9-b02e-adecc1bc93b5"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/90/1e/c5/901ec59e-1c36-75b6-7327-4bbd7cb3ecda/mzaf_5908132634800469239.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1541786146",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 1541786146「Bức Tường《Con Đường Không Tên》」：Apple vn 1541786146：10 首與 MB 同數、2020-11-27，取第 1 軌。，取第 1 軌〈Con Duong Khong Ten〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Microwave",
+   "album": "10",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "740b184c-c716-4d5f-81a8-86cad1df4de7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "越南：胡志明市 nu-metal／另類搖滾代表 Microwave 第三張錄音室專輯，邀 Hoobastank 鼓手兼製作人 Chris Hesse 在美國完成混音；《Công An Nhân Dân》樂評稱其「更柔、更醇卻沒有沖淡搖滾本色，顯出樂團的成熟」，Bức Tường 主唱 Trần Lập 也公開稱讚為「非常現代的專輯」。｜⚠ 實體版 2015-12-25 發行（維基），MB 只有 2016-01-07 數位版，年份取 2015。q 組前一輪以『只有 Trần Lập 一句好評』未收；本輪補到 CAND 正式樂評，證據仍屬中等，主線可剔除。｜MB release-group 740b184c-c716-4d5f-81a8-86cad1df4de7：title「10」、Album、first-release-date 2016-01-07、artist-credit「Microwave」。證據：https://cand.com.vn/doi-song-van-hoa/MiCRoWaVe-Buoc-song-thu-10-i378057/ https://vnexpress.net/tran-lap-khen-album-moi-cua-microwave-3334356.html https://vi.wikipedia.org/wiki/Microwave_(ban_nh%E1%BA%A1c) https://musicbrainz.org/release-group/740b184c-c716-4d5f-81a8-86cad1df4de7",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/740b184c-c716-4d5f-81a8-86cad1df4de7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1026,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 1026）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一位前輩事先聽完整張，說它「非常現代」。這位前輩是 Bức Tường 主唱 Trần Lập，Microwave 則是 2001 年在胡志明市成軍的搖滾團。Trần Lập 在河內的發行會上說，這張預先抓到 EDM 的潮流，連搖滾圈外的人也能跟著搖擺。盤名《10》紀念樂團出道 10 週年。製作交給 Hoobastank 的鼓手 Chris Hesse，音軌在越南錄完，再寄到美國做後期。當地樂評則覺得它更柔和、更溫厚，搖滾本色仍在。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/18166516",
+     "https://vi.wikipedia.org/wiki/10_(album_c%E1%BB%A7a_Microwave)",
+     "https://vnexpress.net/tran-lap-khen-album-moi-cua-microwave-3334356.html",
+     "https://cand.com.vn/doi-song-van-hoa/MiCRoWaVe-Buoc-song-thu-10-i378057/",
+     "https://vi.wikipedia.org/wiki/Microwave_(ban_nh%E1%BA%A1c)",
+     "https://musicbrainz.org/release-group/740b184c-c716-4d5f-81a8-86cad1df4de7"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e1/c4/ab/e1c4ab12-3c0a-9881-9846-2999abca4643/mzaf_11105557806497333474.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1844358506",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 1844358506「Microwave《10》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Bay 2〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tạ Quang Thắng",
+   "album": "Một tôi rất mới",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group?query=artist:\"Tạ Quang Thắng\" → count=1（只有 Country Rock 9a771322）",
+      "release-group?query=releasegroup:\"Một tôi rất mới\" → count=0"
+     ],
+     "checkedAt": "2026-10-21",
+     "conclusion": "MB 有藝人（283177e1-a79a-4300-a603-b8be8d1ca995）但無此 release-group；Discogs 藝人 3793521 名下亦只有 Country Rock 一張專輯。"
+    },
+    "manualEvidenceUrls": [
+     "https://vi.wikipedia.org/wiki/Gi%E1%BA%A3i_th%C6%B0%E1%BB%9Fng_C%E1%BB%91ng_hi%E1%BA%BFn_cho_Album_c%E1%BB%A7a_n%C4%83m",
+     "https://vi.wikipedia.org/wiki/T%E1%BA%A1_Quang_Th%E1%BA%AFng",
+     "https://web.archive.org/web/20170202181649/http://forum.kites.vn/thread/-singer-musician-ta-quang-thang-album-country-rock-2-mot-toi-rat-moi-coming-soon-this-summer--395373-1-1.html"
+    ],
+    "manualRuling": "雲端主線 2026-10-21 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261021-ts8）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "越南：河內 country rock 創作歌手 Tạ Quang Thắng 第二張錄音室專輯（宣傳時稱《Country Rock 2》），入圍第 10 屆 Cống hiến 音樂獎（2015）「年度專輯」，與首張《Country Rock》連續兩屆入圍年度專輯；前一輪已收首張。｜⚠ 搖滾屬性偏軟（country rock 創作歌手，與前一輪《Country Rock》同一疑點）；唱片公司與確切發行日未查到；沒有實體版目錄（Discogs 無），身分只靠維基＋存檔論壇預告，封面需另找串流平台。｜MB 查無（MB 有藝人（283177e1-a79a-4300-a603-b8be8d1ca995）但無此 release-group；Discogs 藝人 3793521 名下亦只有 Country Rock 一張專輯。），走 §1 人工身分。證據：https://vi.wikipedia.org/wiki/Gi%E1%BA%A3i_th%C6%B0%E1%BB%9Fng_C%E1%BB%91ng_hi%E1%BA%BFn_cho_Album_c%E1%BB%A7a_n%C4%83m https://vi.wikipedia.org/wiki/T%E1%BA%A1_Quang_Th%E1%BA%AFng https://web.archive.org/web/20170202181649/http://forum.kites.vn/thread/-singer-musician-ta-quang-thang-album-country-rock-2-mot-toi-rat-moi-coming-soon-this-summer--395373-1-1.html https://vi.wikipedia.org/wiki/Gi%E1%BA%A3i_th%C6%B0%E1%BB%9Fng_C%E1%BB%91ng_hi%E1%BA%BFn_cho_Album_c%E1%BB%A7a_n%C4%83m https://vi.wikipedia.org/wiki/T%E1%BA%A1_Quang_Th%E1%BA%AFng https://web.archive.org/web/20170202181649/http://forum.kites.vn/thread/-singer-musician-ta-quang-thang-album-country-rock-2-mot-toi-rat-moi-coming-soon-this-summer--395373-1-1.html",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1465821488",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/79/41/c8/7941c886-f540-1efe-e1fc-48354b267b65/artwork.jpg/600x600bb.jpg",
+    "note": "人工身分卡（無 CAA）；取已釘定試聽的 Apple 1465821488 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 53,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 53）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "第二張專輯，又讓他進了 Cống hiến 兩份入圍名單。出身河內的歌手 Tạ Quang Thắng，把盤名取作「一個很新的我」。這回是第 10 屆的年度專輯與年度詞曲作者，兩項都停在入圍；首張那次是第 8 屆，結果一樣。唱片 2014 年問世，〈Hạnh phúc〉由他與 Văn Mai Hương 對唱。它被形容成一個年輕又新的自我聲音。",
+    "sourceUrls": [
+     "https://music.apple.com/vn/album/m%E1%BB%99t-t%C3%B4i-r%E1%BA%A5t-m%E1%BB%9Bi/1465821488",
+     "https://vi.wikipedia.org/wiki/T%E1%BA%A1_Quang_Th%E1%BA%AFng",
+     "https://vi.wikipedia.org/wiki/Gi%E1%BA%A3i_th%C6%B0%E1%BB%9Fng_C%E1%BB%91ng_hi%E1%BA%BFn_cho_Album_c%E1%BB%A7a_n%C4%83m",
+     "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_%C4%91%E1%BB%81_c%E1%BB%AD_v%C3%A0_chi%E1%BA%BFn_th%E1%BA%AFng_gi%E1%BA%A3i_th%C6%B0%E1%BB%9Fng_%C3%82m_nh%E1%BA%A1c_C%E1%BB%91ng_hi%E1%BA%BFn",
+     "https://www.sggp.org.vn/ta-quang-thang-ra-mat-album-danh-dau-giai-doan-o-giua-cuoc-doi-post624040.html",
+     "https://vi.wikipedia.org/wiki/B%E1%BB%A9c_T%C6%B0%E1%BB%9Dng_(ban_nh%E1%BA%A1c)",
+     "https://web.archive.org/web/20170202181649/http://forum.kites.vn/thread/-singer-musician-ta-quang-thang-album-country-rock-2-mot-toi-rat-moi-coming-soon-this-summer--395373-1-1.html"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8b/05/c7/8b05c7b0-d9dc-820c-04a9-4d9d323216a0/mzaf_2904486809701465741.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1465821488",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 1465821488「Tạ Quang Thắng《Một Tôi Rất Mới》」：Apple vn 1465821488：盤名與 2014-10-27 一致、10 首，取第 1 軌。，取第 1 軌〈I Love Country Rock〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hạc San",
+   "album": "Hồn - Trăng - Máu",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group?query=artist:\"Hạc San\" → count=1（只有 Sét đánh ngang trời 20086042）",
+      "release-group?query=releasegroup:\"Hồn trăng máu\" → count=0"
+     ],
+     "checkedAt": "2026-10-21",
+     "conclusion": "MB 有藝人（95fb82fd-5a83-46ac-b3b2-e950d16a898e）但無此 release-group。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/18160606",
+     "https://web.archive.org/web/20210411231748/https://billboardvn.vn/sau-5-nam-ban-nhac-hac-san-ra-mat-album-hon-trang-mau-viet-ve-cuoc-doi-nha-tho-han-mac-tu/",
+     "https://vi.wikipedia.org/wiki/H%E1%BA%A1c_San"
+    ],
+    "manualRuling": "雲端主線 2026-10-21 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261021-ts8）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "越南：胡志明市 progressive metal 樂團 Hạc San 第二張專輯：一首 29 分鐘、分六章的組曲，寫詩人韓默子（Hàn Mặc Tử）的一生；《Người Lao Động》在〈Khắc khoải rock Việt〉一文中把它列為越南搖滾低迷期少數值得稱讚的作品，Vietcetera 專文強調必須整張聆聽。前一輪已收首張《Sét đánh ngang trời》，此張前一輪列為備選。｜⚠ 只有數位版（Discogs：File, MP3, Album；2020-04-12），單曲 29:02 但樂團與 Discogs 皆標為專輯；盤名照 Discogs 用 ASCII 連字號加空格，維基寫法用全形破折號放 queryAlias。｜MB 查無（MB 有藝人（95fb82fd-5a83-46ac-b3b2-e950d16a898e）但無此 release-group。），走 §1 人工身分。證據：https://www.discogs.com/release/18160606 https://web.archive.org/web/20210411231748/https://billboardvn.vn/sau-5-nam-ban-nhac-hac-san-ra-mat-album-hon-trang-mau-viet-ve-cuoc-doi-nha-tho-han-mac-tu/ https://vi.wikipedia.org/wiki/H%E1%BA%A1c_San https://nld.com.vn/van-nghe/khac-khoai-rock-viet-20201007213830664.htm https://vietcetera.com/vn/thich-co-mi-ban-edm-cua-hoang-thuy-linh-hay-gap-han-mac-tu-ban-rock-cua-hac-san https://www.discogs.com/release/18160606 https://vi.wikipedia.org/wiki/H%E1%BA%A1c_San",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1538247682",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4c/79/6d/4c796daa-2949-8c95-6e3c-d928193112c5/cover.jpg/600x600bb.jpg",
+    "note": "人工身分卡（無 CAA）；取已釘定試聽的 Apple 1538247682 官方圖，主線 2026-10-21 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 300,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "note": "機器基線 2/5/4（Last.fm listeners 300）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一首歌撐滿整張專輯，長達 29 分 02 秒。這首組曲出自 Hạc San，胡志明市一支 progressive metal 樂團；主角是詩人 Hàn Mặc Tử。2020 年 4 月，這第二張只在串流平台上線，全曲分成六章，對應詩人從才華閃耀、染病到過世的一生，再改寫成孤獨生命在陌生星球上尋找生命的虛構故事。樂團說，為此他們連續排練兩年、準備現場錄音，封面也改了四到五次。樂評認為，在聽眾習慣碎片化收聽的時候，一曲到底是勇敢的選擇。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/18160606",
+     "https://nld.com.vn/van-nghe/khac-khoai-rock-viet-20201007213830664.htm",
+     "https://vi.wikipedia.org/wiki/H%C3%A0n_M%E1%BA%B7c_T%E1%BB%AD",
+     "https://vi.wikipedia.org/wiki/H%E1%BA%A1c_San",
+     "https://vietcetera.com/vn/thich-co-mi-ban-edm-cua-hoang-thuy-linh-hay-gap-han-mac-tu-ban-rock-cua-hac-san",
+     "https://web.archive.org/web/20210411231748/https://billboardvn.vn/sau-5-nam-ban-nhac-hac-san-ra-mat-album-hon-trang-mau-viet-ve-cuoc-doi-nha-tho-han-mac-tu/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/7a/de/7c/7ade7c54-383b-ab15-cfaf-db0e3f73f2b5/mzaf_18174444687409887773.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-21T06:35:52Z",
+    "appleCollectionId": "1538247682",
+    "storefront": "VN",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple vn 1538247682「Hạc San《Hồn - Trăng - Máu - EP》」：Apple vn 1538247682：Apple 標 EP，實為一首 29 分鐘的組曲（研究與策展層一致），取唯一一軌。，取第 1 軌〈Hồn - Trăng - Máu〉。主線 2026-10-21 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  }
+ ]
+}

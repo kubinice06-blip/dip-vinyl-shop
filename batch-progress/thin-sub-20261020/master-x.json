@@ -1,0 +1,77 @@
+[
+ {
+  "artist": "Nisvanis",
+  "album": "Нисдэг таваг",
+  "year": 2006,
+  "label": "GM Studio",
+  "country": "mn",
+  "faction": "mn",
+  "genres": [
+   "rock"
+  ],
+  "why": "蒙古 grunge／另類先驅 Nisvanis 的第三張專輯（CD＋DVD 雙碟、18 首）：收錄拿下 Pentatonic「最佳另類歌曲」的〈Улаан хэрүүлч〉，專輯本身再奪 Pentatonic「最佳專輯」——蒙文維基記載這是 Pentatonic 史上第一次由搖滾樂團拿下這個獎（Pentatonic 是蒙古搖滾／流行最高獎）。",
+  "evidence": [
+   "https://mn.wikipedia.org/wiki/%D0%9D%D0%B8%D1%81%D0%B4%D1%8D%D0%B3_%D1%82%D0%B0%D0%B2%D0%B0%D0%B3_(%D1%86%D0%BE%D0%BC%D0%BE%D0%B3)",
+   "https://mn.wikipedia.org/wiki/%D0%9F%D0%B5%D0%BD%D1%82%D0%B0%D1%82%D0%BE%D0%BD%D0%B8%D0%BA_(%D1%85%D3%A9%D0%B3%D0%B6%D0%BC%D0%B8%D0%B9%D0%BD_%D0%BD%D0%B0%D0%B0%D0%B4%D0%B0%D0%BC)",
+   "https://www.discogs.com/master/799141"
+  ],
+  "mbRgMbid": "",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:Nisvanis OR artist:Нисванис（release-group，count=3：O₂、Хүчилтөрөгч、Saaral Ue）",
+    "releasegroup:\"Нисдэг таваг\" OR releasegroup:\"Nisdeg tavag\" OR releasegroup:\"Flying Saucer\" AND artist:Nisvanis"
+   ],
+   "checkedAt": "2026-10-21",
+   "conclusion": "MB 有藝人 Nisvanis 但無此 release-group（作品方向 count=0）"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/master/799141",
+   "https://www.discogs.com/release/6668875",
+   "https://mn.wikipedia.org/wiki/%D0%9D%D0%B8%D1%81%D0%B4%D1%8D%D0%B3_%D1%82%D0%B0%D0%B2%D0%B0%D0%B3_(%D1%86%D0%BE%D0%BC%D0%BE%D0%B3)"
+  ],
+  "releaseException": "",
+  "queryAlias": "Nisdeg Tavag Flying Saucer Нисванис",
+  "uncertain": "年份：Discogs 原版（GM Studio，Mongolia）與蒙文維基內文都寫 2006，但歌曲獎掛在「Pentatonic 2005」、專輯獎掛在「Pentatonic 2006」；Pentatonic 條目 2007 屆（評 2005–2007 作品）最佳專輯提名名單也列了《Нисдэг таваг》。年份取 Discogs 2006。池中 Nisvanis 另有前一輪 u 組提的《Хүчилтөрөгч》，本張為第 2 張。",
+  "group": "x",
+  "factionZh": "蒙古",
+  "mb": null
+ },
+ {
+  "artist": "Hurd",
+  "album": "The Best Collection II",
+  "year": 1997,
+  "label": "",
+  "country": "mn",
+  "faction": "mn",
+  "genres": [
+   "rock"
+  ],
+  "why": "與《The Best Collection I》同時錄製發行、一起被視為蒙古最早的重金屬專輯；收錄樂團「公認經典、讓樂團一舉成名」的〈Цэргийн бодол〉（英文維基；據傳一場聯演被觀眾要求連唱三次），2013 年蒙古史上第一張「金唱片」選的 9 首 Hurd 代表曲裡，有 3 首（〈Цэргийн бодол〉〈Болтугай〉〈Зураг шиг бүсгүй〉）出自本張。",
+  "evidence": [
+   "https://en.wikipedia.org/wiki/Hurd_discography",
+   "https://www.discogs.com/master/798995",
+   "https://www.discogs.com/release/35485930",
+   "https://musicbrainz.org/release-group/c37139e4-4c1a-4480-9fd1-6ab0aec875ac"
+  ],
+  "mbRgMbid": "c37139e4-4c1a-4480-9fd1-6ab0aec875ac",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/master/798995",
+   "https://en.wikipedia.org/wiki/Hurd_discography"
+  ],
+  "releaseException": "",
+  "queryAlias": "Hurd The Best Collection 2 Хурд Цэргийн бодол",
+  "uncertain": "盤名像精選：MB 標 Album＋Compilation，但英文維基 discography 明寫「Hurd's second studio album」、與第一卷同場錄音（1993–95），Discogs 原版格式為 Album；屬原創錄音室首發，非精選。MB 掛名用西里爾「Хурд」（與前一輪《The Best Collection I》一致；池中《Мянган жилд ганц》掛 Hurd），主線統一掛名。池中 Hurd 已有《Мянган жилд ганц》、前一輪提《The Best Collection I》，本張為第 3 張。",
+  "group": "x",
+  "factionZh": "蒙古",
+  "mb": {
+   "title": "The Best Collection II",
+   "type": "Album",
+   "sec": [
+    "Compilation"
+   ],
+   "date": "1997",
+   "credit": "Хурд"
+  }
+ }
+]
