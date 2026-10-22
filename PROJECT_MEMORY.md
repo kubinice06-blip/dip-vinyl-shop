@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-22｜dip-vinyl-shop｜情緒薄格策展線開跑：計畫 v2 定案、md1–md4 派工與腳本
+
+- **內容**：店主「可以開始補缺少的頻率了 再策一次計畫」。現況 恍惚 779／冷冽 874／頹靡 952。三條線 12 批、順序 頹靡 md → 冷冽 mc → 恍惚 ml，每批 45 張。新目錄 `batch-progress/mood-cells-20261022/`（腳本複製自薄細項線；`build-cards` 帶 `moodGuess`、`build-master` 支援每組 `master-override-<組>.json`）；`CUR-DISPATCH.md`（md1 dark ambient／drone、md2 slowcore＋dark jazz、md3 goth 慢盤＋無鼓 drone metal、md4 暗嘻哈／暗 R&B／dub techno／亞洲；每張填三軸預估、留邊距、#114 後有鼓的 doom 不收）、`RES-DISPATCH.md`（facts 必含聲音事實、與預估不符標存疑）、`HANDOFF-mood-cells-line.md`（流程、條號 md1 10681 起、上線當天評分算落格率）。未動卡池；md1–md2、md3–md4 各開子工作階段跑。
+- **主要檔案**：`batch-progress/EXPANSION-PLAN-mood-thin-cells.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-cells-20261022/*`。
+- **驗證**：`node --check` 兩支改過的腳本通過；純文件與腳本，未上線任何卡。
+
 ### 2026-10-22｜dip-vinyl-shop｜薄細項策展線 ts5／ts6：嘻哈深度 45＋Neofolk／Psy／50s 搖滾／Doo-wop 45 張上線；全線 11 批完成
 
 - **內容**：店主「還沒做完的批次繼續做」。ts5（`add-20261022-ts5`）：台華 12（國蛋、ØZI、高爾宣、瘦子、Higher Brothers、GAI、艾福杰尼、熊仔、LMF、Miss Ko、谢帝、廿四味）、韓 10、法語 10（Oxmo、Rohff、Diam's、Kery James、Damso、La Rumeur、Lunatic、Booba、Ärsenik、113）、Bounce／No Limit／Cash Money 7、Cloud／emo 6。ts6（`add-20261022-ts6`）：Neofolk 12、Psy／Goa 12、50 年代搖滾原盤 11、Doo-wop 原盤 10。Miss Ko 換盤《皇后區的皇后》（原提名 Apple／Discogs 核不到）。
