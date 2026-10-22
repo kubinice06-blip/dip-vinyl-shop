@@ -65,3 +65,9 @@
 - **17071**　研究層後汰 2 張（e 組研究稿條目已刪）：Lustmord《Purifying Fire》（e：封底標 collected works 1995–1998，彙整 12 吋與合輯曲目＝選輯，非正規錄音室專輯；MB 未掛 Compilation）、Lustmord《Paradise Disowned》（e：Discogs 列鼓編程、維基稱傳統打擊與機械，早期工業期有拍）。同位置替入 master 候補、組別不變：Atrium Carceri《Kapnobatai》（策展汰的「勻一勻」名額收回，Atrium Carceri 個人盤 5 張）、Netherworld《Alchemy of Ice》（y 1.3，與《Mørketid》同型）。補研究由一支代理 append 進 e 組檔。
 - **17072**　其餘存疑不汰：Atrium Carceri、Sabled Sun、Inade、Hall of Mirrors、Netherworld、Yen Pox 等「無鼓未證實／聲音來源薄」屬於 dark ambient 廠牌文案通常不寫「無鼓」的資料缺口，不是反證；Desiderii Marginis《Songs Over Ruins》與 Sephiroth《Cathedron》的慢軍鼓／儀式鼓無攻擊性，照 10-22 規則仍靜；Randal Collier-Ford《The Architects》的 drum hits 同理；Hazard《Lech》輕循環節奏同理。評分後看落格。
 - **17073**　研究層更正策展層的說法（Majak＝Mayak 鈽廠非燈塔、Eye of Tunguska 題材是 1990 年代遇難事件、Within Ruins 非首張、2147 非廢棄太空站、Void 非創廠旗艦）全照研究稿，寫作層以研究稿為準。Cities Last Broadcast《The Cancelled Earth》年份照 MB 2009（Bandcamp 2008-04-22 為數位先行；facts 並列，正文只寫 2009 或不寫日期）。
+
+## 補研究
+- **17047**　Atrium Carceri《Kapnobatai》（補研究，append 進 e 組檔）：身分一致（MB 2005-09-26 Cold Meat Industry、14 首）。年份歧見：Cryo Chamber Bandcamp 寫 2005-09-06、MB 數位重發 2012-06-12；facts 取 MB 09-26，正文只寫 2005。
+- **17048**　Kapnobatai 的聲音：無鼓僅來自頁面與製作名單未提鼓，非第一手；KFJC 列出呼吸、雨雷、腳步、電腦嗶聲與日語說書聲，音景偏場景音效而非純 drone。moodGuess 輕度存疑（不要求汰換）；策展層「地下墓穴式」「霧厚」無來源，facts 不寫。
+- **17049**　Netherworld《Alchemy of Ice》：身分一致（MB 2013-05-27、GM018；Bandcamp 寫 5 月 20 日，取 27 日）。推翻策展層「冰河錄音」：素材為 Roland VP9000 取樣加工、音樂節現場與 2003 年拉齊奧洞穴錄音，非冰河現場。
+- **17050**　Alchemy of Ice 的聲音：Textura 明言色調冷，有鋼琴與教堂鐘聲、殘響很長；deep rumbles 支持重度，但鋼琴讓 y 1.3 可能偏樂觀，評分後看落格。WebSearch 用 2 次（Kapnobatai 評論、Alchemy of Ice 評論）。

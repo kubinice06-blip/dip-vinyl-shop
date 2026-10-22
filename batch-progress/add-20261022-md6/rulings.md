@@ -98,5 +98,8 @@
 - 總結：9 張 facts 8–9 條、全 https；full 6／thin 3（Kaamos、Imperial Horizon、Sistereis）。WebSearch 3 次，其餘用 WebFetch、MB、Discogs API。
 
 
+- **17160a**｜Köner《Unerforschtes Gebiet》（替入）：full。Die Stadt DS43 原版 700 張編號 picture disc（北極地圖，圓孔＝北極點），兩面各約 21 分；日期 MB／Discogs 2002-05、維基 2001，不動卡單。Brainwashed：低頻 drone＋穩定隆隆聲、冰河般低音旋律暗示，吻合 moodGuess；濃殘響未證實，聲音單源。CD 版第三首〈Les Sœurs Lumière〉有旁白，留意。
+- **17160b**｜KRM《Frequencies for Leaving Earth, Volume 1》（替入）：thin（只有簡短文案式描述）。三首各約 18–19 分，廠牌 Intercranial（卡單 curatorWhy 的「Room40 系」「延續《Sirens》」無來源）；評論提「極慢速爵士」「新古典」，色溫可能偏中性，輕微存疑。MB 2020-06-05、Discogs 卡帶版 2020-07-23。WebSearch 用 2 次。
+
 ## 主線（補研究後再汰換）
 - **17154b**　補研究推翻 2 張替入卡（e 組條目已刪）：Thomas Köner《Tiento de las Nieves》（Igloo、Textura 明寫疏落鋼琴＋靜默、近 Harold Budd，質地輕落平靜）、Paul Jebanasam《Continuum》（Exclaim! 與 A Closer Listen：快速強烈節拍、失真 pounding 打擊＝有拍又兇）。再替入策展補提的另兩張、組別 e：Köner《Unerforschtes Gebiet》（Köner 本批 5 張，無上限）、Kevin Richard Martin《Frequencies for Leaving Earth, Volume 1》。Elegi《Sistereis》（Modern Classical 標籤、短曲）與其餘輕度存疑不汰，評分後看落格。
