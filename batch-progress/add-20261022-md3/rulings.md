@@ -29,3 +29,12 @@
 - **10843**：推翻策展層 2 處：(1) ØØ Void 製作人是 Scott Reeder（Kyuss 前貝斯手），「Nick Cave 製作人加持」查無來源，不可入簡介；(2) Flight of the Behemoth 的 Merzbow 只混音第三、四首（單一來源），不是共同演出。
 - **10844**：moodGuess 存疑（要主線看）：Soused（Ian Thomas 四首真人鼓＋鼓編程＋牛鞭＋管樂，鼓不是「極稀」，貼邊）；Phase 3（Spin 稱「安撫」、AllMusic 嫌缺打擊，y1.7 恐偏高，可能落平靜）；Pyroclasts（音色偏亮、Albini 類比有機，z-0.9 恐更近 0）。輕度：Flight（末曲 F.W.T.B.T. 有鼓機與鼓）、White1（〈Gates of Ballard〉鼓機）、Terrestrials（列有鼓手 Tomas Pettersen、小號弦樂偏暖）。
 - **10845**：日期差異不改年份：ØØ Void MB 06-05 對維基 06-26；Kannon MB 11-27 對維基 12-04；Pyroclasts MB 10-23 對維基 10-25。White1 與 Terrestrials 互相矛盾的「Ulver 是否參與 White1」兩邊各單一來源，未寫入 facts。
+
+## 研究 b 組
+- **10851**：b 組 9 張 facts 8–10 條；來源 Wikipedia（WebFetch）、Discogs API（master／release 備註與 credits）、MB API、Scene Point Blank、Exclaim!。Wikipedia API 被 429 擋，改 WebFetch；Pitchfork／AllMusic／VHF 官網擋抓。WebSearch 用 3 次（Locrian、KTL IV、Khanate 樂評）。
+- **10852**：status：full 8、thin 1（Æthenor：無任何針對本盤的樂評，聲音事實只來自器材與風格標籤）。
+- **10853**：label 建議：Khanate《Clean Hands Go Foul》與 Jesu《Conqueror》卡單寫 Daymare Recordings，實為日本盤（2009-01-09、2007-02-02），原版為 Hydra Head Records；年份不變。KTL《IV》Editions Mego 正確，Daymare 為日本雙 CD。
+- **10854**：moodGuess 存疑（明顯）：KTL《IV》——21 分鐘〈Paratrooper〉由 Boris 鼓手 Atsuo 錨定、脈衝式漸強至極強（Exclaim!），並非無鼓；Locrian《The Clearing》——Hess 列鼓手，B 面有彈跳打擊節奏、〈Augury〉為「粗暴的聲音暴力」（Scene Point Blank），並非幾乎無鼓；Cranes《Forever》——dream pop、帶流行元素、鼓「精準有力」、歌名偏光與天空，x 可能高於 2.3、y 可能低於 1.2。輕度存疑：Khanate（鼓並非極稀，是極慢；尖嘯貫穿）、Jesu（真人鼓加程式、Broadrick 自述寫流行歌）、DCD（無鼓成立，冷暖無文字佐證）、Æthenor（無鼓成立，Rhodes／風琴音色偏溫潤）。Lycia 兩張無明顯不符。
+- **10855**：卡單措辭修正：Æthenor 的「鋼琴」實為 Fender Rhodes 電鋼琴（O'Sullivan）；全盤四首無曲名。Locrian 發行月份 MB 2011-01-11 對 Discogs／維基 2011-11-01，年份不變。Ionia 錄音地點 Discogs 寫 Gauss、維基寫 Lycium（皆 Mesa／Tempe 一帶），寫作層只寫亞利桑那州。
+- **10856**：沒有推翻年份、盤名；所有盤皆原創錄音室專輯，無選輯或重複卡。
+- **10857**：Dalton 貝斯手名字 Discogs 寫 Dermot、維基寫 Diarmuid，facts 只寫姓。Atsuo 只見 Exclaim! 一源，限定〈Paratrooper〉。
