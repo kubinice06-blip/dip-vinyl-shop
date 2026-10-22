@@ -35,3 +35,27 @@
 - **14348**　The Midnight Hour《The Midnight Hour》：**moodGuess 部分存疑（冷）**。mxdwn「cold and haunting、深夜爵士酒廊」，〈Ravens〉快而緊張；類比錄音室、真弦樂、厚低頻支持靜重，z 風險在偏冷。Okayplayer「mostly instrumental」與大量客唱名單矛盾，未寫入。
 - **14349**　Georgia Anne Muldrow《Umsindo》：**moodGuess 存疑（中）**，status thin。只證實層疊人聲與放鬆有機律動；〈Fonky Day〉等西岸放克、〈Daisies〉Sly Stone 式放克偏中速；總長／曲數／月份查無可靠來源。池中同藝人三張已實測落恍惚，以實測為準。
 - **14350**　本組推翻策展層年份／廠牌／掛名／盤名：0 處（僅註記發行日期來源互異：Nubians、Triana、Yaya Bey RYNS）。
+
+## 研究 d 組
+- **14351**　Georgia Anne Muldrow《King's Ballad》：**moodGuess 存疑（高，建議汰換）**。PopMatters／Scratched Vinyl／Basic Soul 描述為迷幻放克、電子放克鼓、龐克曲〈Room Punk!〉、高能混亂〈Thatch〉、「最接近主流」，標題曲急促脈動，與策展預估「慢、霧、包覆」不符。發行日 Discogs CD 2010-02-09、MB 2010-07-10，年份皆 2010 不動。
+- **14352**　Fatima《Yellow Memories》：**推翻策展層製作掛名**：Discogs 完整名單與 RA 評論都無 Funkineven、Alfa Mist；實為 Floating Points（4 首署名，RA 說 5 首）、Theo Parrish、Oh No、Computer Jay、Scoop DeVille、fLako、Knxwledge。聲音面輕度存疑（多製作人拼貼、boom bap、換拍曲，速度與暖度無直接來源）。
+- **14353**　Goapele《Even Closer》：年份 2002 確認（MB／Discogs／維基一致，疑慮的 2001 是前身自費版《Closer》，非本盤）；2004 Columbia 重發加曲。聲音輕度存疑：樂評談「柔、簡」，但〈The Daze〉可跳舞帶雷鬼、無夢幻合成器墊直接證據。首作／第二張說法分歧，建議不用序數。
+- **14354**　Mereba《The Jungle Is the Only Way Out》：status thin。無專輯本身完整樂評（Pitchfork 無此評、AllMusic 被擋、Hypebeast 空頁、HipHopDX 410）。**moodGuess 存疑（中）**：Pitchfork 追評稱首作「polished but scattershot」橫跨 Fugees／Atlanta 饒舌／Dylan，〈Planet U〉有 trap hi-hat 與饒舌段。WebSearch 額度已用完（本組 3 次用於 Muldrow、Fatima、Goapele）。
+- **14355**　Raveena《Lucid》：聲音（殘響、假聲、扭曲合成器）有 Pitchfork 佐證，速度／暖度為推論；曲長 12 首約 45 分，三首過場不到 2 分鐘。
+- **14356**　Raveena《Where the Butterflies Go in the Rain》：年份 2024-06-14（卡單／MB／維基）；Discogs master 記 2025 是只收了黑膠 Deluxe，不推翻。整體柔和，但〈Junebug〉（JPEGMAFIA）有俐落鼓、〈Water〉有搖滾 riff，輕度存疑。
+- **14357**　Kali Uchis《Red Moon in Venus》：moodGuess 支持。Guardian（pillow-soft、woozy）與 Clash（hazy、slow-funk、quiet storm）一致；廠牌 Geffen（Discogs 黑膠標 Interscope，同集團）。
+- **14358**　Charlotte Day Wilson《ALPHA》：輕度存疑。Pitchfork 強調「走出暮色、更宏大」，〈Keep Moving〉為八〇年代成人抒情風、〈Changes〉背 trap 節拍；11 首約 33 分。Polaris 長／短名單說法矛盾（維基稱 shortlisted），facts 不寫。
+- **14359**　Sabrina Claudio《About Time》：輕度存疑（暖度證據弱）。Apple Music「slow simmer」支持慢，但〈Used To〉偏舞曲、〈Wait〉Afrobeat 律動；性質為 mixtape（Wikipedia），12 首，另有 15 首擴充黑膠。Billboard 專輯榜名次兩處不一致（13／12），建議不用。2018 年網路爭議依反向禁令不寫。
+- **14360**　（預留未用）　本組推翻策展層年份／廠牌／掛名／盤名：1 處（Fatima 製作掛名）；另年份待核項 Goapele 確認為 2002。
+
+## 研究 e 組
+- **14361**　Sabrina Claudio《Truth Is》：**moodGuess 存疑（中高）**。聲音證據偏薄，只證實「氛圍弦樂＋黏稠脈動節拍」（Paper 評〈Holding the Gun〉）、更暗更實驗（NYU 報）、混多風格；「吉他殘響」無任何來源。製作班底 Sad Money／Stint／Sir Nolan 偏流行、有 ZAYN 客串曲，建議列汰換候選。
+- **14362**　Nick Hakim《WILL THIS MAKE ME GOOD》：**moodGuess 存疑（中高）**。殘響與層疊人聲有佐證，但「磁帶飽和」無來源；Clash「陰森」、標題曲電子失真雲、〈Drum Thing〉過載、〈Bouncing〉蹣跚重踏、〈Vincent Tyler〉反胃搖擺（Rolling Stone），暖度與速度皆有偏離風險，與策展層 z 0.6 疑慮一致。建議汰換候選。
+- **14363**　Nick Hakim《COMETA》：moodGuess 輕度存疑。HRA 明講「較快的歌與慢燒的歌」並陳，非整張慢；合成器層疊、鬆垮鼓循環、假聲（Stereogum〈M1〉）成立。錄音地 HRA 寫德州／北卡／加州／紐約，XPN 少北卡，facts 採 HRA。
+- **14364**　Gabriels《Angels & Queens》：**moodGuess 存疑（中）**。弦樂、合唱、暖成立，但〈Taboo〉巨大小鼓＋歇斯底里弦樂＋銅管、Dilla 式切採樣、「中速可跳舞」（Telegraph），戲劇起伏大，速度與強度有被判中到快、激昂的風險。年份：MB 單一 RG 首發 2022-09-30（Part I，7 首約 27 分鐘），完整版 2023-07-07 為 13 首標準版；寫作層須寫明兩階段。
+- **14365**　Baby Rose《To Myself》：moodGuess 輕度存疑。煙燻女低音、吉他／管風琴／簡單鈸、風雨環境音有佐證；「厚殘響、弦樂墊」與速度無來源（Pitchfork 被擋），編制可能比預估稀疏。2020 Island 重發與豪華版為同一專輯。
+- **14366**　Baby Rose《Through and Through》：moodGuess 輕度存疑（速度）。復古現場樂器、夢幻吉他、圓潤貝斯、迴盪低頻有 Flood／Loud And Quiet 佐證；DJ Dahi／Slim Wav 製作與 Smino 客串使〈I Won't Tell〉等偏現代 R&B 律動，可能判中速。
+- **14367**　Bobby Oroza《This Love》：moodGuess 輕度存疑。lo-fi、深夜、慢板抒情（〈Déjà Vu〉沉重鼓聲）成立；「磁帶殘響」「假音」無來源（只有 plaintive tenor），且〈Your Love Is Too Cold〉是 up-tempo 快歌。補充：標題曲 2016 先以 Stylart 雙面單曲發行（Discogs 另有同名 master，非專輯）。生平（赫爾辛基、玻利維亞血統）單一來源。
+- **14368**　Jesse Boykins III《Love Apparatus》：**moodGuess 強烈存疑（高）**。實為 Machinedrum 主製（14 首中 11 首）的電子製作：808、心跳節奏、Discogs 標籤 Neo Soul＋House、豪華版加碼曲 lounge-house 中速；NPR 稱放克味新世紀。建議優先汰換。廠牌無法補出：MB 4/22 版標 Nomadic Music，Discogs 主版本為 2014-11-04 豪華版 Empire；建議留空或 Nomadic Music，勿寫 Empire。維基出生地矛盾（芝加哥／牙買加），facts 不寫出生地。
+- **14369**　Brainstory《Buck》：**moodGuess 存疑（中）**。聲音來源只有 Big Crown 廠方文案與 Discogs 工程名單（無獨立樂評）。假音（Kevin）成立；「磁帶糊與殘響」無來源，廠方明講 G-Funk 律動、穩定 backbeat、朋克／硬核出身，Discogs 標 Rock／Indie Rock，偏乾中速。
+- **14370**　本組推翻策展層年份／廠牌／掛名／盤名：0 處（待補項：Love Apparatus 廠牌補不出，如 14368；Gabriels 年份僅需寫作層註明兩階段發行）。
