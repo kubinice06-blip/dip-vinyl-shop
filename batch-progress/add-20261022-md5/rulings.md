@@ -16,3 +16,30 @@
 - 藝人名照池中寫法：「Raison d'être」「Lustmord」（MB 名放 queryAlias）。Hazard 是 BJ Nilsen 早期名義，與 md6 的 BJ Nilsen 盤名不同、不撞。
 - 研究層每支 WebSearch ≤3；facts 必含 2–3 條聲音事實；與 moodGuess 不符的標「存疑」。
 
+
+## 研究 b 組
+- 17011 Eye of Tunguska 推翻策展層：題材是廠方簡介所述 1990 年代學生遇難事件（地點在通古斯撞擊區附近），不是 1908 大爆炸本身；該事件單一來源，facts 以「廠方簡介」口吻。
+- 17012 Majak 推翻策展層「廢棄燈塔」：實為車里雅賓斯克 Mayak 鈽廠（輻射污染題材）；聲音來源薄，moodGuess（短波／霧笛）無依據，status thin，建議主線視為存疑。
+- 17013 Within Ruins 推翻「首作」：Cristian Voicu 2012 年已在 GV Sound 發過《From The Depths》，此盤為 Cryo Chamber 首作；簡介強調工業聲響＋巨大殘響＋鋼琴，非「冷合成 drone」。
+- 17014 moodGuess 存疑：Architects 有零星鼓擊與喀噠節奏（x 可能偏高）；Dredge Portals 有吉他＋人聲＋醫院儀器嗶聲（非純 drone，冷度不確定）；Diagnosis、Dark Matter 聲音來源僅廠方簡介（thin）；Onyx 的「節奏性低音」鼓有無未查到。
+- 17015 Dark Matter 曲目數 Bandcamp 八首／Discogs 六首不一致，facts 不寫曲數；國別以 MB（DE）為準。
+- 17016 WebSearch 用 3 次（Architects、Dredge Portals〔無果〕、Ugasanie），其餘走 MB／Discogs API、Bandcamp、Wikipedia、Chain D.L.K.、idieyoudie。
+
+## 研究 c 組
+- 17021 全 9 張身分皆對（MB RG、Discogs master／release 的盤名、年份、廠牌一致），無推翻年份／廠牌／盤名。status：full 5（Northumbria、Aegri Somnia、Requiem、Empty Hollow、Songs Over Ruins）、thin 4（Within the Depths、Metamorphyses、Cathedron、Sadalmelik）。
+- 17022 **moodGuess 存疑（主線可能要汰換）**：(a) Desiderii Marginis《Songs Over Ruins》——This Is Darkness 明言幾乎每首有 down-tempo martial drum sequences 與金屬撞擊、整體 industrial feel，策展層『無鼓』不成立（緩慢軍鼓，x 或仍低）；(b) Sephiroth《Cathedron》——Discogs 藝人簡介寫 ritualistic drums，專輯登載 Söderberg 擔任 percussion，『鼓極稀』存疑（先例：Draconian Poetry 因遠鼓被汰）；(c) Moljebka Pvlse《Sadalmelik》——單曲 72 分鐘、Discogs 風格僅 Minimal／Ambient，『低頻轟鳴與工業雜訊牆』完全無來源，建議聽試聽或汰換；(d) raison d'être《Within the Depths…》——TMT 提到早期專輯有打擊與後工業節奏（文中盤名寫法有誤、未指明本張），原版有無鼓無第一手證據；(e) Aegri Somnia《Monde obscure》——來源只有田野錄音、drone、noise、horror，策展層『合唱取樣』無支持。
+- 17023 聲音支持度：Requiem（TMT 明言無打擊、金屬刮擦、教堂鐘聲）與 Empty Hollow（Spectrum Culture：聖詠、風鈴、低頻、廢金屬噪音，未提鼓）與策展層相符；Helluland（廠方：guitar based ambient drone，未提鼓）相符；策展層『吉他貝斯』的貝斯無來源，不採。
+- 17024 Metamorphyses 聲音描述全來自 2026 年擴充版藝人宣傳語；原作（2006）樂評未找到。Bandcamp 擴充版曲數與分碟曲號不一致，facts 不寫曲數。
+- 17025 WebSearch 用 3 次（raison d'être 三張樂評、Moljebka Sadalmelik〔無果〕、Sephiroth＋Desiderii 樂評）；其餘走 MB／Discogs API、Wikipedia、Bandcamp、This Is Darkness、TMT、Spectrum Culture。Bandcamp 的 Sephiroth／Moljebka 專輯頁 404，Discogs 網頁 403（API 可用）。
+
+## 研究 a 組
+- 17001 Seishinbyouin／Ptahil／Void 三張 moodGuess 存疑：Bandcamp 與 Wikipedia 皆未明說『無鼓』；Souyuan（2008）樂評稱 Atrium Carceri 作品『有節奏結構並不奇怪』，故 Cold Meat 時期三盤的無鼓預估不可視為已證，建議耳驗。無獨立樂評，聲音事實來自廠方文案與標籤（thin 邊緣，仍標 full 因身分、曲目、廠牌脈絡齊全）。
+- 17002 Seishinbyouin 首發廠牌是 Cold Meat Industry CMI133（2004-09-03）；Bandcamp 的 Cryo Chamber 版是後來的重發，寫作層勿把首發寫成 Cryo Chamber。
+- 17003 Void 推翻策展層『Cryo Chamber 創廠期旗艦』：查不到其廠牌編號；同年 3 月《Reliquiae》仍為 CMI212，故不寫旗艦或創廠第一張。
+- 17004 The Untold = CRYO 005（2013-10-22）；『約 2011 年起自營廠牌』與 Reliquiae 在 2012-03 仍屬 CMI 並存，寫作層只寫各自日期。
+- 17005 Sabled Sun《2146》moodGuess 存疑：文案自稱 genre bending，支持者留言稱比《2145》『更電子』，電子化程度與節拍有無待耳驗；『無線電雜訊』無來源。
+- 17006 Sabled Sun《2147》推翻策展層『荒廢太空站』：文案是前往外區與太空中心的旅程；moodGuess 存疑：聽眾評語『serene、time-slowing』偏柔，重度可能低於預估。
+- 17007 Alphaxone《Absence of Motion》推翻『代表作』定位（來源只說第三張）；moodGuess 存疑：Textura 描述有起伏與海邊意象，冷度可能略高、『靜止』不全準。
+- 17008 Dronny Darko《Outer Tehom》：Bandcamp 聽眾稱含 Anneliese Michel 驅魔錄音，兩次 WebSearch 找不到獨立來源，不寫；Tehom 希伯來文意為深淵是常識、無來源，不入 facts。
+- 17009 Dronny Darko《Neuroplasticity》moodGuess 存疑：文案與樂評強調 lowercase／minimal drone 與幾乎聽不見的取樣，質地偏稀疏而非『密集低頻層』，重度預估 1.7 可能偏高，建議評分時下調；開頭有小型節奏性聲響，非鼓組。
+- 17010 WebSearch 用了 4 次（超出上限 1 次）：Seishinbyouin 樂評〔無果〕、Outer Tehom、Absence of Motion、Neuroplasticity；其餘走 MB／Discogs API、Bandcamp（WebFetch）、Wikipedia、Textura、Chain D.L.K.。

@@ -68,3 +68,16 @@
 - 17119｜Elegi《Varde》：身分屬實（Miasmah MIACD009，MB／Discogs 2009-01-17，Discogs 只有 release 無 master）。與 moodGuess 吻合（無鼓、靜電顆粒、冰冷）。背景為 1912 年 Scott 南極隊故事（Textura）。
 - 17120｜（保留未用）
 - 總結：9 張全數 8–11 條 facts、全 https；status full 8／thin 1（The Dead Sea）。推翻策展層年份／廠牌／盤名 0 處。moodGuess 存疑：Seven Horses（嚴重）、Black Tie、The Summoner、The Dead Sea、Black to Comm 同名盤（輕微）。單一來源：Type 創辦年人（Discogs 廠牌頁）、Kreng 與 Abattoir Fermé 的合作年數（維基）。
+
+## 研究 c 組（條號 17101–17110）
+- 17101｜Claire M Singer《Solas》：身分屬實（Touch TO101，2016-06-24；MB 首發日 2016-06-01）。**moodGuess 存疑**：預估偏冷，但樂評寫「田園式暖意」「明亮」，盤名本義是「光」，色溫可能中性偏暖，有落恍惚風險；無鼓、管風琴低頻厚則吻合。注意是 2002–2015 年錄成的作品集式首作。
+- 17102｜Simon Scott《Below Sea Level》：身分屬實（12k 12k1071，2012-05-29）。**moodGuess 存疑**：策展層寫「吉他 drone 霧」，廠方明說主體是田野錄音、吉他只是點綴；樂評用語偏暖（glowingly warm），y 恐不到 +0.8。12k 藝人簡介稱此盤由 Touch 出版，與目錄號矛盾，判為過期誤植不採。
+- 17103｜Kane Ikin《Sublunar》：身分屬實（12k 12k1072，2012-09-18）。大致吻合；廠方稱有「strong sense of rhythm」機械拍但不兇，16 首多半短，色溫可能偏中性。
+- 17104｜Kane Ikin《Modern Pressure》：身分屬實（Type TYPE129 LP，MB／Discogs 2016-04-15、Bandcamp 6-06）。status thin：Type 官網、Juno 被擋，樂評只有 Boomkat（賣器材付房租、恐怖片氛圍皆單源）。**moodGuess 存疑**：Boomkat 寫 heavy rhythmic、Discogs 標 Techno／Industrial／Downtempo，有明確低速拍，不是「拍極稀」，x 可能偏高。
+- 17105｜Mika Vainio《Fe₃O₄ – Magnetite》：身分屬實（Touch TO:86，2012-09-03，柏林錄製）。**moodGuess 存疑**：Touch 說情緒「從平靜到不安」並與較黑暗的近作對比；無鼓吻合，但正弦波與警示音偏尖，y（重）與「極冷」需評分確認。2017 年逝世屬與作品無關的後續事件，僅放傳記條。
+- 17106｜Lawrence English《Wilderness of Mirrors》：身分屬實（Room40 RM460，2014-07-21）。聲音描述主要來自廠方文案與藝人自述（單源）；有無鼓無法證實，facts 未寫。重（諧波失真、音量）與冷方向吻合，大動態可能使 x 浮動。
+- 17107｜Rafael Anton Irisarri《Solastalgia》：身分屬實（Room40 RM4105，2019-06-21）。status thin：Room40 官網與 Bandcamp 打不開、Headphone Commute 被擋，只讀到 Chain D.L.K. 一家。**moodGuess 存疑**：可讀樂評寫的是和弦墊底音牆（未提吉他）、「pleasant and relaxing」「soporific」，色溫偏暖或中性、y 恐不到 +0.8，有落恍惚風險。
+- 17108｜Rafael Anton Irisarri《Peripeteia》：身分屬實（**Dais Records** DAIS150，2020-05-22，非 Room40；策展層歸 Room40 系有誤，卡單 label 欄正確）。廠方文案：金屬與古典影響、憂鬱，含 Yamila 人聲合唱與一條明亮琶音；鼓文案未提。大致吻合，人聲與旋律性較強。
+- 17109｜Ben Frost《Steel Wound》：身分屬實（Room40 RM403 CD，Discogs／MB／Wikipedia 皆 2003）。**推翻 1 處（輕微）**：Room40 官網（20 週年版頁）日期寫 2004-04-04，採 2003 不動；盤名官方拼法為 Steelwound，卡單 Steel Wound 為準。吻合 moodGuess（處理過的吉他、無鼓、冷）。
+- 17110｜（保留未用）
+- 總結：9 張全數 8–11 條 facts、全 https；status full 7／thin 2（Modern Pressure、Solastalgia）。推翻策展層：Peripeteia 廠牌是 Dais 非 Room40（1 處）、Steel Wound 官網年份衝突（採 2003，不動卡單）。moodGuess 存疑：Solas、Below Sea Level、Modern Pressure、Magnetite、Solastalgia（5 張，主要風險是色溫偏暖或有拍子）。WebSearch 共用 4 次（Solas、Modern Pressure、Magnetite、Solastalgia 各 1），超出上限 1 次。
