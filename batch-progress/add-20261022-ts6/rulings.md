@@ -13,3 +13,12 @@
 - Carl Perkins：池中既有《Introducing... Carl Perkins》是同名爵士鋼琴手；本批是 rockabilly 的 Carl Perkins。照 dt 線「同名藝人並存照 MB 掛名、正文寫清楚是誰」先例，寫作層正文要點明是 Sun 唱片的 rockabilly 歌手。§11 藝人介紹另議（見收尾）。
 - Death in June：派工單點名，收《Nada!》《But, What Ends…》兩張音樂史地位明確的；寫作層寫音樂與歷史，政治爭議照事實一句帶過即可，不迴避也不渲染。
 - 策展層自報待核：Forseti《Windzeit》廠牌、Fire + Ice《Gilded by the Sun》廠牌（策展憑記憶）、Ordo Rosarius Equilibrio 同年前篇／續篇——交研究層逐條查。
+
+## 研究 b 組
+- 10611 Fire + Ice《Gilded by the Sun》廠牌：策展層記 Fremdheit，查 Discogs master 39890 版本表，1992 年原版是 New European Recordings（BAD VC CD144），Fremdheit（FREMD CD 144）是 2004 年再版。建議卡單 label 改 New European Recordings（主線改）；正文不寫「首作」（來源未明寫）。
+- 10612 Infected Mushroom 兩張、Astral Projection、Juno Reactor 的發行日期各來源不一致（MB／Discogs／Wikipedia 差數日至數月），一律建議寫作層只寫年份或季節。
+- 10613 Infected Mushroom《Classical Mushroom》策展層「史上最重要之一」只見 Wikipedia「最好作品之一」（待引用），不採；寫作層用「被視為樂團最好作品之一」並勿升級。
+- 10614 Hallucinogen《The Lone Deranger》標 thin（來源僅 Discogs＋簡短維基＋AllMusic 3 星）；策展層「繼 Twisted 之後」的 Twisted 是 1995 專輯名，不是廠牌。
+- 10615 Shpongle《Tales of the Inexpressible》策展層「公認高峰」無可驗證來源，facts 不收；曲名〈Room 2ॐ〉含天城體 Om 符號，QA 若擋可改寫 Room 2 Om。
+- 10616 Wardruna《Runaljod – Yggdrasil》排行榜與獎項未取得；Fimbulljóð Productions 僅見維基專輯頁，正文寫 Indie Recordings。
+- 10617 Hexvessel《No Holier Temple》前作名與成團史未取得（維基未能開啟），僅用 MB 的 2009 成立年；Kvohst 別名單源，不寫。
