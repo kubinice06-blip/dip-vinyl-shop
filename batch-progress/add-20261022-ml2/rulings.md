@@ -27,3 +27,15 @@
 - **14097**　Spiritualized《And Nothing Hurt》輕度存疑：〈Let's Dance〉〈The Morning After〉有銅管與搖滾推進，偏動；色溫暖、質地厚有 NME 支撐。聲音事實來自 NME、Flood（維基未描述聲音）。
 - **14098**　Youth Lagoon 發行日 MB 9-26、維基 9-27，facts 並列不下斷言；聲音與 moodGuess 相符（Alesis SR16 鼓機、車庫／淋浴間殘響室）。
 - **14099**　全組 9 張 facts 9–10 條、全 https、無推翻身分；無千分位逗號、無簡體字。QA（`qa-batch.mjs research`）b 組零標記。
+
+## 研究 c 組
+- **14101**　Mercury Rev《All Is Dream》x 存疑：開場爆裂漸強、〈Nite and Fog〉鼓聲振奮、〈Hercules〉浮誇收尾，動態大；A.V. Club 稱『較令人佩服、不夠有溫度』。色溫（Rhodes、Hammond、弦樂）暖、質地厚墊成立。
+- **14102**　Mercury Rev《The Secret Migration》y、z 輕度存疑：〈Across Yer Ocean〉〈Vermillion〉俏皮偏流行；PopMatters 稱邊緣修乾淨、ProgArchives 用戶稱高頻偏多。卡單的 Catskills 說法查無來源，facts 不寫。PopMatters 頁面寫 2005-05-17，與 MB／維基 2005-01-24 不符，不採。
+- **14103**　Brightblack《Brightblack Morning Light》：Matador 與 Orlando Weekly 稱此前有《Ala.cali.tucky》（Galaxia），維基稱此為『首張』，採前者；前作年份來源互歧（2002／2004），facts 不寫年份。有康加鼓與打擊，非無鼓但鬆散，靜重暖成立。
+- **14104**　Brightblack《Motion to Rejoin》：太陽能、土坯小屋出自 Matador 廠牌頁，維基樂團條目寫四片太陽能板；OC Weekly 的『傳統美洲原住民樂器』單一來源不寫。無存疑，極慢極濕極暖。
+- **14105**　Connan Mockasin《Forever Dolphin Love》y 存疑：編制輕薄、延遲吉他與壓縮人聲為主、約 25 秒插曲多，厚度約 0.5；z 估約 0.3–0.8（Pink Floyd／Eno 式空間感偏冷灰）。MB 2010 為原版《Please Turn Me into the Snat》，Phantasy 重發為 2011；Erol Alkan 首發之說單一來源不寫。
+- **14106**　Melody's Echo Chamber《Emotional Eternal》x、y 存疑，建議優先汰換：NME 稱專輯大多輕快、可跳舞、貝斯領奏、比前作更暖更輕；Loud & Quiet 稱〈Looking Backward〉有 1960 年代流行衝撞感、〈Pyramids in the Clouds〉半 motorik。靜度可能 ≥3、質地偏輕，z 約 0.3–0.7。
+- **14107**　Mild High Club《Timeline》x、y 存疑：28 分 50 秒家庭錄音，Pitchfork 引文為迷幻軟搖滾加 80 年代合成器流行，〈Undeniable〉『聽來輕快』、〈The Chat〉才是慢燃；y 0.9 可能偏高。廠牌實為 Circle Star（Stones Throw 分支）。四軌／PortaSound 說法無法開頁核實，不寫。
+- **14108**　Sun Araw《Ancient Romans》x 局部存疑：整體慢而鬆，但 15 分鐘的〈Impluvium〉鼓點強勁、可跳舞，平均靜度約 2.5–3.2；y 厚濕、z 暖與預估相符。
+- **14109**　Robin Guthrie《Imperial》status thin，建議優先汰換：鼓／速度／製作資料查無；Ink19『冷天衝浪音樂、水慢慢轉暖』與 Times『晶瑩吉他和弦』指向色溫偏冷灰至中性（z 約 0）、Penny Black『稀疏寬敞』指向質地乾淨有空氣（y 約 0.3–0.8），與 moodGuess 暖霧不符。MB 日期 2003-03-24，維基副條目寫 3-17，以 MB 為準。多個來源 403／503，Times 訪談只經搜尋摘要取得。
+- **14110**　全組 9 張 facts 8–11 條、全 https、無推翻身分（僅廠牌／前作／日期微調）；無千分位逗號、無簡體字；`qa-batch.mjs research` c 組零標記。
