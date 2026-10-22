@@ -117,7 +117,7 @@
    "rock",
    "electronic"
   ],
-  "label": "Kranky",
+  "label": "Blast First",
   "country": "us",
   "moodGuess": {
    "x": 1.3,
@@ -190,7 +190,7 @@
    "electronic"
   ],
   "label": "kranky",
-  "country": "us",
+  "country": "nz",
   "moodGuess": {
    "x": 1.5,
    "y": 1.1,
@@ -226,7 +226,7 @@
    "electronic"
   ],
   "label": "VHF Records",
-  "country": "us",
+  "country": "nz",
   "moodGuess": {
    "x": 1.5,
    "y": 1.2,
@@ -262,7 +262,7 @@
    "electronic"
   ],
   "label": "Drunken Fish Records",
-  "country": "us",
+  "country": "nz",
   "moodGuess": {
    "x": 1.5,
    "y": 1,
@@ -477,7 +477,7 @@
    "rock",
    "electronic"
   ],
-  "label": "130701",
+  "label": "Alien8 Recordings",
   "country": "gb",
   "moodGuess": {
    "x": 2,
@@ -798,7 +798,7 @@
   "genres": [
    "rock"
   ],
-  "label": "Quatermass",
+  "label": "Young God Records",
   "country": "be",
   "moodGuess": {
    "x": 2.3,
@@ -834,7 +834,7 @@
    "rock",
    "electronic"
   ],
-  "label": "Labels",
+  "label": "4AD",
   "country": "gb",
   "moodGuess": {
    "x": 2,
@@ -892,78 +892,6 @@
   "group": "c",
   "lineType": "廣度",
   "scene": "薄細項策展線（暗色室內慢搖）",
-  "queryAlias": "",
-  "republic": "",
-  "cover": null
- },
- {
-  "key": "desc2:Supersilent|1–3",
-  "artist": "Supersilent",
-  "album": "1–3",
-  "year": 1998,
-  "genre": "electronic",
-  "genres": [
-   "electronic",
-   "jazz"
-  ],
-  "label": "Rune Grammofon",
-  "country": "no",
-  "moodGuess": {
-   "x": 1.6,
-   "y": 1.3,
-   "z": -1.2,
-   "why": "電子低鳴，打擊稀，陰冷"
-  },
-  "rgMbid": "57f98f31-0345-32a3-9373-3373675c9e27",
-  "identitySource": "pinned",
-  "curatorWhy": "Supersilent／drone 吉他：Rune Grammofon 的 Supersilent 早期即興，電子鳴響與稀疏打擊，冷而厚",
-  "curatorRisk": "",
-  "mbNote": "MB release-group 57f98f31-0345-32a3-9373-3373675c9e27：title「1–3」、Album、first-release-date 1998-01-12、artist-credit「Supersilent」。證據：https://musicbrainz.org/release-group/57f98f31-0345-32a3-9373-3373675c9e27 https://coverartarchive.org/release-group/57f98f31-0345-32a3-9373-3373675c9e27/front-250",
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "genreException": "",
-  "selfTitled": false,
-  "apex": null,
-  "group": "c",
-  "lineType": "廣度",
-  "scene": "薄細項策展線（Supersilent／drone 吉他）",
-  "queryAlias": "",
-  "republic": "",
-  "cover": null
- },
- {
-  "key": "desc2:Supersilent|4",
-  "artist": "Supersilent",
-  "album": "4",
-  "year": 1998,
-  "genre": "electronic",
-  "genres": [
-   "electronic",
-   "jazz"
-  ],
-  "label": "Rune Grammofon",
-  "country": "no",
-  "moodGuess": {
-   "x": 1.6,
-   "y": 1.2,
-   "z": -1.2,
-   "why": "電子氛圍，打擊稀，冷"
-  },
-  "rgMbid": "770bb218-527a-3fd0-b3ba-e3c4e41c483e",
-  "identitySource": "pinned",
-  "curatorWhy": "Supersilent／drone 吉他：Supersilent 第四張，長段電子氛圍與稀少打擊，冷峻",
-  "curatorRisk": "",
-  "mbNote": "MB release-group 770bb218-527a-3fd0-b3ba-e3c4e41c483e：title「4」、Album、first-release-date 1998-11-23、artist-credit「Supersilent」。證據：https://musicbrainz.org/release-group/770bb218-527a-3fd0-b3ba-e3c4e41c483e https://coverartarchive.org/release-group/770bb218-527a-3fd0-b3ba-e3c4e41c483e/front-250",
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "genreException": "",
-  "selfTitled": false,
-  "apex": null,
-  "group": "c",
-  "lineType": "廣度",
-  "scene": "薄細項策展線（Supersilent／drone 吉他）",
   "queryAlias": "",
   "republic": "",
   "cover": null
@@ -1147,42 +1075,6 @@
   "cover": null
  },
  {
-  "key": "desc2:Jóhann Jóhannsson|Arrival: Complete Score",
-  "artist": "Jóhann Jóhannsson",
-  "album": "Arrival: Complete Score",
-  "year": 2017,
-  "genre": "classical",
-  "genres": [
-   "classical",
-   "electronic"
-  ],
-  "label": "Deutsche Grammophon",
-  "country": "de",
-  "moodGuess": {
-   "x": 1.4,
-   "y": 1,
-   "z": -0.9,
-   "why": "低鳴與弦，無鼓，冷"
-  },
-  "rgMbid": "0ae66bb6-8b31-4404-a7a4-9d829d4b2694",
-  "identitySource": "pinned",
-  "curatorWhy": "冷色電子配樂：Jóhannsson 的 Arrival，合唱般低鳴與弦，無鼓、冷而厚",
-  "curatorRisk": "",
-  "mbNote": "MB release-group 0ae66bb6-8b31-4404-a7a4-9d829d4b2694：title「Arrival: Complete Score」、Album＋Soundtrack、first-release-date 2017-07-08、artist-credit「Jóhann Jóhannsson」。證據：https://musicbrainz.org/release-group/0ae66bb6-8b31-4404-a7a4-9d829d4b2694 https://coverartarchive.org/release-group/0ae66bb6-8b31-4404-a7a4-9d829d4b2694/front-250",
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "genreException": "",
-  "selfTitled": false,
-  "apex": null,
-  "group": "d",
-  "lineType": "廣度",
-  "scene": "薄細項策展線（冷色電子配樂）",
-  "queryAlias": "",
-  "republic": "",
-  "cover": null
- },
- {
   "key": "desc2:Ben Salisbury & Geoff Barrow|Annihilation",
   "artist": "Ben Salisbury & Geoff Barrow",
   "album": "Annihilation",
@@ -1263,7 +1155,7 @@
    "electronic"
   ],
   "label": "Drunken Fish Records",
-  "country": "us",
+  "country": "nz",
   "moodGuess": {
    "x": 1.4,
    "y": 1.2,
@@ -1299,7 +1191,7 @@
    "electronic"
   ],
   "label": "Drunken Fish Records",
-  "country": "us",
+  "country": "nz",
   "moodGuess": {
    "x": 1.4,
    "y": 1.1,
@@ -1335,7 +1227,7 @@
    "electronic"
   ],
   "label": "Grapefruit Records",
-  "country": "us",
+  "country": "nz",
   "moodGuess": {
    "x": 1.4,
    "y": 1.1,
@@ -1347,78 +1239,6 @@
   "curatorWhy": "無鼓吉他 drone（候補）：候補：Montgomery 晚期的暗色吉他與氛圍墊，無鼓、冷",
   "curatorRisk": "⚠ 候補；Bandcamp／小廠發行，label 取自 MB 最早 Official release",
   "mbNote": "MB release-group db2b52d1-9e5e-4106-92af-3659dde92c55：title「Camera Melancholia」、Album、first-release-date 2022-11-25、artist-credit「Roy Montgomery」。證據：https://musicbrainz.org/release-group/db2b52d1-9e5e-4106-92af-3659dde92c55 https://coverartarchive.org/release-group/db2b52d1-9e5e-4106-92af-3659dde92c55/front-250",
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "genreException": "",
-  "selfTitled": false,
-  "apex": null,
-  "group": "e",
-  "lineType": "廣度",
-  "scene": "薄細項策展線（無鼓吉他 drone（候補））",
-  "queryAlias": "",
-  "republic": "",
-  "cover": null
- },
- {
-  "key": "desc2:Thisquietarmy|Hex Mountains",
-  "artist": "Thisquietarmy",
-  "album": "Hex Mountains",
-  "year": 2013,
-  "genre": "rock",
-  "genres": [
-   "rock",
-   "electronic"
-  ],
-  "label": "Denovali Records",
-  "country": "de",
-  "moodGuess": {
-   "x": 1.4,
-   "y": 1.6,
-   "z": -1.2,
-   "why": "失真吉他 drone，無鼓"
-  },
-  "rgMbid": "4ca9fa09-71f5-4ba4-82f9-4f47726d42a8",
-  "identitySource": "pinned",
-  "curatorWhy": "無鼓吉他 drone（候補）：候補：加拿大 Thisquietarmy 的失真吉他 drone，無鼓厚牆，冷",
-  "curatorRisk": "⚠ 候補；Bandcamp／小廠發行，label 取自 MB 最早 Official release",
-  "mbNote": "MB release-group 4ca9fa09-71f5-4ba4-82f9-4f47726d42a8：title「Hex Mountains」、Album、first-release-date 2013、artist-credit「thisquietarmy」。證據：https://musicbrainz.org/release-group/4ca9fa09-71f5-4ba4-82f9-4f47726d42a8 https://coverartarchive.org/release-group/4ca9fa09-71f5-4ba4-82f9-4f47726d42a8/front-250",
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "genreException": "",
-  "selfTitled": false,
-  "apex": null,
-  "group": "e",
-  "lineType": "廣度",
-  "scene": "薄細項策展線（無鼓吉他 drone（候補））",
-  "queryAlias": "",
-  "republic": "",
-  "cover": null
- },
- {
-  "key": "desc2:Thisquietarmy|Vessels",
-  "artist": "Thisquietarmy",
-  "album": "Vessels",
-  "year": 2011,
-  "genre": "rock",
-  "genres": [
-   "rock",
-   "electronic"
-  ],
-  "label": "Aurora Borealis",
-  "country": "gb",
-  "moodGuess": {
-   "x": 1.4,
-   "y": 1.6,
-   "z": -1.2,
-   "why": "吉他回授，低頻厚，無鼓"
-  },
-  "rgMbid": "e614eb25-33f6-43d4-8eac-e29025feae1b",
-  "identitySource": "pinned",
-  "curatorWhy": "無鼓吉他 drone（候補）：候補：Thisquietarmy 的吉他回授長篇，低頻厚、無鼓、陰冷",
-  "curatorRisk": "⚠ 候補；Bandcamp／小廠發行，label 取自 MB 最早 Official release",
-  "mbNote": "MB release-group e614eb25-33f6-43d4-8eac-e29025feae1b：title「Vessels」、Album、first-release-date 2011-05、artist-credit「thisquietarmy」。證據：https://musicbrainz.org/release-group/e614eb25-33f6-43d4-8eac-e29025feae1b https://coverartarchive.org/release-group/e614eb25-33f6-43d4-8eac-e29025feae1b/front-250",
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
@@ -1455,42 +1275,6 @@
   "curatorWhy": "無鼓吉他 drone（候補）：候補：Thisquietarmy 的暗色吉他 drone，灰燼般的厚霧，鼓缺席",
   "curatorRisk": "⚠ 候補；Bandcamp／小廠發行，label 取自 MB 最早 Official release",
   "mbNote": "MB release-group cd6600be-6bec-4b35-947d-625ff3d45fee：title「Aftermath」、Album、first-release-date 2010-04-30、artist-credit「thisquietarmy」。證據：https://musicbrainz.org/release-group/cd6600be-6bec-4b35-947d-625ff3d45fee https://coverartarchive.org/release-group/cd6600be-6bec-4b35-947d-625ff3d45fee/front-250",
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "genreException": "",
-  "selfTitled": false,
-  "apex": null,
-  "group": "e",
-  "lineType": "廣度",
-  "scene": "薄細項策展線（無鼓吉他 drone（候補））",
-  "queryAlias": "",
-  "republic": "",
-  "cover": null
- },
- {
-  "key": "desc2:Aidan Baker|Green & Cold",
-  "artist": "Aidan Baker",
-  "album": "Green & Cold",
-  "year": 2007,
-  "genre": "rock",
-  "genres": [
-   "rock",
-   "electronic"
-  ],
-  "label": "Gears of Sand",
-  "country": "us",
-  "moodGuess": {
-   "x": 1.3,
-   "y": 1.3,
-   "z": -1,
-   "why": "循環吉他殘響，無鼓，冰冷"
-  },
-  "rgMbid": "0a4c66e3-942b-39d5-9eff-cd9104e0f245",
-  "identitySource": "pinned",
-  "curatorWhy": "無鼓吉他 drone（候補）：候補：Aidan Baker 的吉他 drone，冰冷質地加循環殘響，無鼓",
-  "curatorRisk": "⚠ 候補；Bandcamp／小廠發行，label 取自 MB 最早 Official release",
-  "mbNote": "MB release-group 0a4c66e3-942b-39d5-9eff-cd9104e0f245：title「Green & Cold」、Album、first-release-date 2007-02-09、artist-credit「Aidan Baker」。證據：https://musicbrainz.org/release-group/0a4c66e3-942b-39d5-9eff-cd9104e0f245 https://coverartarchive.org/release-group/0a4c66e3-942b-39d5-9eff-cd9104e0f245/front-250",
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
@@ -1577,28 +1361,169 @@
   "cover": null
  },
  {
-  "key": "desc2:Windy & Carl|Consciousness",
-  "artist": "Windy & Carl",
-  "album": "Consciousness",
-  "year": 2001,
+  "key": "desc2:Mogwai|Atomic",
+  "artist": "Mogwai",
+  "album": "Atomic",
+  "year": 2016,
   "genre": "rock",
   "genres": [
    "rock",
    "electronic"
   ],
-  "label": "kranky",
+  "label": "Rock Action Records",
+  "country": "gb",
+  "moodGuess": {
+   "x": 2,
+   "y": 0.9,
+   "z": -0.8,
+   "why": "厚合成器墊，鼓稀，冷"
+  },
+  "rgMbid": "abf559f9-8c52-4295-9b8c-79b72f8d9837",
+  "identitySource": "pinned",
+  "curatorWhy": "冷調 post-rock／慢核：Mogwai 為核能紀錄片所作的合成器與吉他慢盤，厚墊、鼓稀",
+  "curatorRisk": "⚠ y／z 邊距小，後搖配樂偏暖風險",
+  "mbNote": "MB release-group abf559f9-8c52-4295-9b8c-79b72f8d9837：title「Atomic」、Album＋Soundtrack、first-release-date 2016-03-29、artist-credit「Mogwai」。證據：https://musicbrainz.org/release-group/abf559f9-8c52-4295-9b8c-79b72f8d9837 https://coverartarchive.org/release-group/abf559f9-8c52-4295-9b8c-79b72f8d9837/front-250",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": null,
+  "group": "c",
+  "lineType": "廣度",
+  "scene": "薄細項策展線（冷調 post-rock／慢核）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Low|Ones and Sixes",
+  "artist": "Low",
+  "album": "Ones and Sixes",
+  "year": 2015,
+  "genre": "rock",
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "label": "Sub Pop Records",
   "country": "us",
   "moodGuess": {
-   "x": 1.2,
-   "y": 1.2,
-   "z": -0.6,
-   "why": "吉他霧，無鼓，z 邊距小"
+   "x": 2.2,
+   "y": 0.9,
+   "z": -0.9,
+   "why": "稀鼓，嗡鳴低頻，冷"
   },
-  "rgMbid": "a8f2c9a3-cf10-3c84-87aa-37439a17d0ab",
+  "rgMbid": "1e9dd0d9-59dc-4356-88db-a5353d0a17bc",
   "identitySource": "pinned",
-  "curatorWhy": "無鼓吉他 drone（候補）：候補：Windy & Carl 的吉他霧 drone，無鼓、殘響厚",
-  "curatorRisk": "⚠ z 邊距小",
-  "mbNote": "MB release-group a8f2c9a3-cf10-3c84-87aa-37439a17d0ab：title「Consciousness」、Album、first-release-date 2001-03-18、artist-credit「Windy & Carl」。證據：https://musicbrainz.org/release-group/a8f2c9a3-cf10-3c84-87aa-37439a17d0ab https://coverartarchive.org/release-group/a8f2c9a3-cf10-3c84-87aa-37439a17d0ab/front-250",
+  "curatorWhy": "暗色室內慢搖：Low 轉向電子質地的暗色慢盤，稀鼓與嗡鳴低頻，冷",
+  "curatorRisk": "⚠ 稀鼓＋電子，x 邊距小",
+  "mbNote": "MB release-group 1e9dd0d9-59dc-4356-88db-a5353d0a17bc：title「Ones and Sixes」、Album、first-release-date 2015-09-11、artist-credit「Low」。證據：https://musicbrainz.org/release-group/1e9dd0d9-59dc-4356-88db-a5353d0a17bc https://coverartarchive.org/release-group/1e9dd0d9-59dc-4356-88db-a5353d0a17bc/front-250",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": null,
+  "group": "c",
+  "lineType": "廣度",
+  "scene": "薄細項策展線（暗色室內慢搖）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Calla|Televise",
+  "artist": "Calla",
+  "album": "Televise",
+  "year": 2003,
+  "genre": "rock",
+  "genres": [
+   "rock"
+  ],
+  "label": "Arena Rock",
+  "country": "us",
+  "moodGuess": {
+   "x": 2.4,
+   "y": 0.9,
+   "z": -0.9,
+   "why": "殘響吉他，低音，拍克制"
+  },
+  "rgMbid": "973e5f85-5b36-381d-94ae-345afec2047e",
+  "identitySource": "pinned",
+  "curatorWhy": "冷調 post-rock／慢核：Calla 的黑夜都市感慢燃專輯，殘響吉他與低音，拍子克制",
+  "curatorRisk": "⚠ x 2.3–2.4 接近門檻，鼓中速",
+  "mbNote": "MB release-group 973e5f85-5b36-381d-94ae-345afec2047e：title「Televise」、Album、first-release-date 2003-01-23、artist-credit「Calla」。證據：https://musicbrainz.org/release-group/973e5f85-5b36-381d-94ae-345afec2047e https://coverartarchive.org/release-group/973e5f85-5b36-381d-94ae-345afec2047e/front-250",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": null,
+  "group": "d",
+  "lineType": "廣度",
+  "scene": "薄細項策展線（冷調 post-rock／慢核）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:This Will Destroy You|This Will Destroy You",
+  "artist": "This Will Destroy You",
+  "album": "This Will Destroy You",
+  "year": 2008,
+  "genre": "rock",
+  "genres": [
+   "rock"
+  ],
+  "label": "Dark Operative",
+  "country": "us",
+  "moodGuess": {
+   "x": 2.4,
+   "y": 1,
+   "z": -0.5,
+   "why": "殘響吉他慢堆，鼓克制"
+  },
+  "rgMbid": "1de570ee-7a63-3702-ab9c-1387c044306c",
+  "identitySource": "pinned",
+  "curatorWhy": "Temporary Residence 系慢燃器樂：TWDY 自題專輯，緩慢堆疊的殘響吉他，鼓克制，色調冷",
+  "curatorRisk": "⚠ z -0.5 邊距小；鼓有漸強",
+  "mbNote": "MB release-group 1de570ee-7a63-3702-ab9c-1387c044306c：title「This Will Destroy You」、Album、first-release-date 2008-01-28、artist-credit「This Will Destroy You」。證據：https://musicbrainz.org/release-group/1de570ee-7a63-3702-ab9c-1387c044306c https://coverartarchive.org/release-group/1de570ee-7a63-3702-ab9c-1387c044306c/front-250",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": true,
+  "apex": null,
+  "group": "e",
+  "lineType": "廣度",
+  "scene": "薄細項策展線（Temporary Residence 系慢燃器樂）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Trent Reznor & Atticus Ross|The Social Network",
+  "artist": "Trent Reznor & Atticus Ross",
+  "album": "The Social Network",
+  "year": 2010,
+  "genre": "electronic",
+  "genres": [
+   "electronic"
+  ],
+  "label": "The Null Corporation",
+  "country": "us",
+  "moodGuess": {
+   "x": 2.3,
+   "y": 0.9,
+   "z": -1,
+   "why": "脈動低頻，合成墊，鼓少"
+  },
+  "rgMbid": "68d34935-78f4-4dfc-8891-7155de2d2f6b",
+  "identitySource": "pinned",
+  "curatorWhy": "冷色電子配樂：Reznor 與 Ross 的冷色電子配樂，低頻脈動與合成器墊，鼓少",
+  "curatorRisk": "⚠ 含較輕的鋼琴曲，y 邊距小",
+  "mbNote": "MB release-group 68d34935-78f4-4dfc-8891-7155de2d2f6b：title「The Social Network」、Album＋Soundtrack、first-release-date 2010-09-17、artist-credit「Trent Reznor and Atticus Ross」。證據：https://musicbrainz.org/release-group/68d34935-78f4-4dfc-8891-7155de2d2f6b https://coverartarchive.org/release-group/68d34935-78f4-4dfc-8891-7155de2d2f6b/front-250",
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
@@ -1607,8 +1532,8 @@
   "apex": null,
   "group": "e",
   "lineType": "廣度",
-  "scene": "薄細項策展線（無鼓吉他 drone（候補））",
-  "queryAlias": "",
+  "scene": "薄細項策展線（冷色電子配樂）",
+  "queryAlias": "Trent Reznor and Atticus Ross",
   "republic": "",
   "cover": null
  }

@@ -58,3 +58,25 @@
 - **17188**（This Will Destroy You《Tunnel Blanket》）：暗、drone、厚成立；「慢鼓」小幅存疑（〈Black Dunes〉長漸強後有強烈高潮，僅聽眾評論佐證）。Monotreme 為 MB 首發，卡單成立。訪談取 Punknews（Brian Shultz），成員自述需標明。
 - **17189**（Mogwai《Les Revenants》）：鼓少、不爆發成立，但 Observer 評語提到「一些溫暖」，z 預估可能偏冷。配樂走一般 Album，不標 §5.6。評論全轉述自 Wikipedia，Pitchfork／AllMusic 此環境抓不到。
 - **17190**（來源與用量）：WebSearch 用 3 次（Tarentel FBTS、Supersilent 1–3、Calla Scavengers）。Pitchfork、AllMusic、Guardian、BBC、web.archive.org 皆抓不到；Wikipedia raw 與 MB 偶發限流已重試。九張皆為原創專輯（Mogwai 為原聲帶），無選輯、無重複卡，各 11–12 條 facts。
+
+## 研究 d 組
+- **17191**（Arrival: Complete Score 身分存疑，建議汰換或改掛官方原聲帶）：MB RG 0ae66bb6 底下唯一 release「Arrival: Complete Motion Picture Score」（2017-07-08、XW 數位、22 軌約 60 分 13 秒）status＝Bootleg、無廠牌、無 url 關聯；找不到 Deutsche Grammophon 發行「Complete Score」的來源（WebSearch、iTunes、Discogs 皆無，Discogs 網頁 403）。Wikipedia 只有 DG 2016-11-11 的 20 軌官方原聲帶。卡單「2017／Deutsche Grammophon」無來源支持，推翻策展層；facts 寫官方原聲帶與配樂本身，status thin。可逆（改 manifest 欄位或汰換，先例：策展層出格即汰）→ 交主線決定，若保留建議改掛官方 2016 原聲帶重取 mbid。
+- **17192**（Supersilent《6》）：錄音 2001-12-03 到 07、Athletic Sound（Wikipedia 寫 Halden、Discogs 只寫錄音室，合併採用）；未推翻。Alarmprisen 傳聞無來源，不寫。moodGuess 存疑：Ink19「冰冷卻帶輓歌式暖意」、Tiny Mix Tapes 有「溫暖空氣」，且有鼓手在場，z −1.2 與「鼓偶現」偏樂觀。
+- **17193**（Ghosts I–IV）：36 軌、dark ambient 成立；打擊為現成物件、稀少；但曲長混雜、Cortini 合成器段落未必冷，冷度為樂評推論。獎項兩項葛萊美皆為提名未得獎（51 屆）。
+- **17194**（Dragon Tattoo 葛萊美屆次更正）：Wikipedia 該頁表格寫 2013 年 2 月、導言寫 2012；查第 54 屆（2012-02）該類得主是《The King's Speech》，故本片得獎在第 55 屆（2013）。金球、BAFTA 為入圍；無奧斯卡提名。〈Immigrant Song〉是唯一明顯躁段，moodGuess 大致成立。
+- **17195**（Mandy moodGuess 中度存疑）：樂評明說「突然爆出的打擊」「doom 金屬 riff」「工業金屬式」，另有附加曲〈Chainsaw Fight〉；能量軸可能高於預估，主線評估是否判躁。辭世、遺作已標年份（作品直接綁定）。
+- **17196**（Prisoners）：Wikipedia 與 MB 差一天（09-16／09-17），寫「2013 年 9 月」。來源未提鼓，facts 不寫「無鼓」，只寫打擊由 Jóhannsson 本人演奏；聖樂取向與「美、脆弱」措辭使色溫可能偏溫，仍偏冷但無直接來源。
+- **17197**（Annihilation moodGuess 中度存疑）：原聲吉他被樂評稱「撫慰」「民謠式」，z −0.9 貼邊且可能偏暖；〈The Alien〉合唱與 Shimmer 失真合成器較躁。鼓的有無無來源。Barrow 2019 年 Lil Pump 取樣爭議屬無關後續，不寫。
+- **17198**（Only God Forgives）：MB 首發為 2013-05-20 法國版 Wild Bunch AG／Gaumont，卡單 label 相符；Milan 美版同日。有〈Wanna Fight〉、club mix（豪華版）與泰式卡拉 OK 人聲歌，並非全程靜，x 2.2 貼邊、冷度無色溫來源，moodGuess 存疑。
+- **17199**（Roy Montgomery）：身分相符（1998-04-13、Drunken Fish DFR-41、Nightshift Studios 基督城）。「通常不放鼓」出自 Scaruffi 轉載的 Blow Up 訪談且未指名本張，facts 標「自述」；專輯樂評僅得 WebSearch 摘要（Broward Palm Beach 403），以「樂評說」帶過，冷度無來源證實。
+- **17200**（來源與用量）：WebSearch 用 2 次（Supersilent 6、Arrival Complete Score）加 1 次（Montgomery）共 3 次；其餘為 MB API、Discogs API、Wikipedia（WebFetch）、Ink19、Tiny Mix Tapes、Scaruffi。Wikipedia 的 API 直連被限流（429），改走 WebFetch。QA：facts 9–10 條、全 https、`qa-batch.mjs research add-20261022-md7` 全通過。
+
+## 主線裁定（研究層交件後）
+- **17231**：照研究層的聲音事實汰 7 張（卡單與研究檔已移除，原卡存 `batch-progress/add-20261022-md7/dropped-cards.json`）：
+  - **有鼓又兇／打擊推進 4 張**：Supersilent《1–3》（暴力嘈雜爵士搖滾、噪音牆＋痙攣式鼓，188 分鐘大半判躁）、Supersilent《4》（部落式狂歡、強調打擊，4.6 像拉丁海灘——也不冷）、Thisquietarmy《Hex Mountains》（真鼓手 Scotty Rooney、嘶吼、「heaviest and darkest」、兩首現場）、Thisquietarmy《Vessels》（epic percussion、鼓機程式）。
+  - **編制與預估不符 1 張**：Aidan Baker《Green & Cold》（有鼓、人聲、貝斯、長笛，Bandcamp 自稱 songs，非無鼓 drone）。
+  - **偏暖 1 張**：Windy & Carl《Consciousness》（樂評 warm thawing guitar、bright airy，落恍惚風險）。
+  - **身分不成立 1 張**：Jóhann Jóhannsson《Arrival: Complete Score》（MB 唯一 release 是 Bootleg、無廠牌無網址；DG 只發過 2016 年 20 軌官方原聲帶。不改掛 2016 版：《Arrival》官方盤含 Max Richter〈On the Nature of Daylight〉首尾，且池中 Jóhannsson 已收兩張同期配樂，不硬補）。
+- **17232**：汰 7 後回補 5 張主線先前只因「邊距較小」汰掉、但都在策展邊距內的（x ≤ 2.7、y ≥ 0.8、z ≤ −0.3）：Mogwai《Atomic》、Low《Ones and Sixes》、Calla《Televise》、This Will Destroy You《This Will Destroy You》、Trent Reznor & Atticus Ross《The Social Network》；同位置替入 c 2、d 1、e 2，派一支補研究 append。Nadja 兩張（兇＋拍）、Gregor Samsa《Rest》（柔人聲偏暖）仍不收。全批 43 張（場景挖不到 45，不湊數）。
+- **17233**：留下但標存疑（評分照聲音打）：Pan American《The River Made No Sound》（「脈動極簡節奏」，無攻擊性照規則判靜）、Roy Montgomery《Temple IV》（〈Jaguar Meets Snake〉回授噪音，但無鼓照規則判靜）、Labradford《fixed::context》（Pitchfork「溫暖」吉他）、《E luxo so》（原聲鋼琴弦樂偏乾淨）、GY!BE 兩張（外側長曲有鼓拍高潮、雙鼓手）、Evpatoria Report（全樂團編制）、Barn Owl（慢而拖沓的鼓、Farfisa）、Tarentel 三張、TWDY《Tunnel Blanket》、Jóhannsson《Mandy》（doom riff 爆發段）、《Annihilation》（原聲吉他段偏撫慰）、《Only God Forgives》（泰式卡拉 OK 人聲曲）、Supersilent《6》、Mogwai《Les Revenants》（「一些溫暖」）、Thisquietarmy《Aftermath》（鼓機程式）。
+- **17234**：照研究層改卡單：Calla《Scavengers》廠牌 Quatermass → Young God Records（YG15；Quatermass 是比利時再版）、Piano Magic《Writers Without Homes》Labels → 4AD（CAD 2209）、Set Fire to Flames《Telegraphs…》130701 → Alien8 Recordings（加拿大原廠）、Labradford《fixed::context》Kranky → Blast First（2000 英國首發；Kranky 美版 2001，卡面年份取 2000）、Roy Montgomery 國別 us → nz、The Evpatoria Report 是瑞士團（Yverdon-les-Bains），與 Constellation 無關、Tarentel《The Order of Things》廠牌 Neurot。《The Girl With the Dragon Tattoo》葛萊美屆次以第 55 屆（2013）為準（維基頁內矛盾）。Piano Magic《Part Monster》多廠牌並存，照 MB 首發 Homesleep。Supersilent《6》照 MB 年份。
