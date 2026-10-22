@@ -55,3 +55,18 @@
 - 10716｜Labradford《Prazision LP》：發行日維基 1993 年 10 月 vs MB 1993-12-07，卡面 1993 不受影響；「Kranky 第一張」只有維基單一來源，facts 只寫目錄號 KRANK 001，不寫「廠牌史上第一張」（Kranky 頁被擋，無法反查沿革）。
 - 10717｜Maeror Tri《Myein》身分核對：盤名、1995、ND 皆符（維基＋MB）；樂團層級描述居多，專輯層級聲音細節薄，thin。Troum《Tjukurrpa》同為 thin，「Tjukurrpa」字義查無來源不寫。
 - 10718｜WebSearch 用 3 次（loscil、Irisarri、Murcof 各一）；Discogs 403、Pitchfork／AllMusic／Boomkat 多數頁被擋，Wikipedia 以 curl API 與 WebFetch 讀。
+
+## 研究 e 組
+- 10721｜moodGuess 存疑：Pan Daijing《Jade》——Mixmag 說先行單曲 Dust 是帶鑼聲的急促節拍、Loud and Quiet 說 Tilt／Dust 有鼓機即興，非全無鼓；整體仍以人聲與 drone 為主，x 可能偏躁，建議複核。MB 簡體雙語題不入卡面。
+- 10722｜moodGuess 存疑：Tim Hecker《No Highs》——Boomkat、Pitchfork 皆指脈動斷奏的合成器音序為主線、Lotus Light 有大聲高頻嗶聲、AllMusic 稱「緊張不安」，x 恐偏躁；建議複核或汰換。
+- 10723｜moodGuess 存疑：Zoviet France《Shouting at the Ground》——Discogs 風格含 Tribal、Boomkat 寫 hypnotic trance-like rhythms 與吟唱人聲，A／B 面多為 1–3 分鐘短曲，非純無鼓 drone；Boomkat 頁為 2020 Vinyl On Demand 再版，原版 1988 Red Rhino REDLP91，錄於 1987-04-03～05（Discogs 註記）。
+- 10724｜moodGuess 存疑：The Caretaker Stage 5——評論比作 Merzbow／John Wiese，噪音疊合暴力，x 可能偏躁；Stage 6 聲音與 moodGuess 相符。兩張反同構切入面向：Stage 5 切「最吵、人聲最多」，Stage 6 切「最空、結尾合唱與一分鐘靜默」。
+- 10725｜推翻／不確定：The Haxan Cloak 首作查無「大提琴」（Wikipedia 稱弦樂、Discogs 列 amped violin and glass），facts 不寫大提琴；Discogs 另列鼓錄音素材（Steve Bliss）。Roly Porter《Aftertime》沒讀到評論全文，聲音條數靠編制與標籤，標 thin；Bandcamp 發行日 2012 為上傳日，採 Apple／MB 的 2011-09-19。
+- 10726｜Mika Vainio 2017 年辭世屬與作品無關的後續生平，不入 facts。評分數字（Pitchfork、Metacritic、RA 等）不入 facts。Cortini《Sonno》「失真」查無來源，只證實 MC-202＋延遲＋旅館房間錄音。
+- 10727｜WebSearch 用 3 次（Hecker、Pan Daijing、Vainio 各一）；Discogs API 與 MusicBrainz 以 curl 可用，Wikipedia 多數專輯無條目，Boomkat 以猜網址 WebFetch 讀到 Sonno、No Highs、Zoviet France。
+
+## 主線裁定（研究層交件後）
+- **10751**　研究層聲音存疑汰換 4 張：KTL《IV》（d 組：機械活塞鼓＋高頻攻擊，有拍又兇＝躁）、Kreng《L'Autopsie Phénoménale de Dieu》（b 組：自由爵士節奏、18 首短曲，非靜止長音；人工身分卡隨之減為 1）、Desiderii Marginis《Deadbeat》（b 組：樂評明寫刺耳工業節奏）、Tim Hecker《No Highs》（e 組：全盤脈動斷奏音序、高頻嗶聲，拍不稀）。同位置替入 master 候補、組別不變：Scorn《Evanescence》(b，慢 dub 拍無攻擊性照 10-22 規則仍靜、y 1.7 z −1.5)、Belong《October Language》(b，失真殘響牆 y 1.6、z −0.7 仍在邊距)、William Basinski《A Shadow in Time》(d，池中已 7 張但無上限)、The Caretaker《Everywhere at the End of Time (Stage 4)》(e)。汰換卡的研究稿條目已從各組檔刪除；補 4 張由補研究代理寫進對應組檔。
+- **10752**　研究層輕度存疑但保留（留給上線當天評分驗收）：Pan Daijing《Jade》（兩首有鼓機即興，主體人聲＋drone）、Zoviet France《Shouting at the Ground》（部落式重複節奏、短曲）、Caretaker《Stage 5》（取樣暴力疊合但無拍，有攻擊沒拍＝靜）、loscil《Submers》（ambient techno 脈動，有拍沒攻擊）、Murcof《Cosmos》（微型拍）、Kali Malone《Living Torch》（協和持續音，y／z 存疑）、Lawrence English 兩張、Abul Mogard 兩張（冷暖無明文）、Philip Jeck《Stoke》（音色偏懷舊）、Final《One》（噪音拼貼短曲）、Sleep Research Facility《Nostromo》（跳動低音循環）、Inade、Svarte Greiner、Atrium Carceri（慢節奏）、Deathprod《Morals and Dogma》（木質音色 z 風險）。
+- **10753**　卡單廠牌照研究層更正 4 處（`master-override-md1.json`）：Lustmord《Heresy》Side Effects → Soleilmoon Recordings（1990 原版 SOL 9）；Deathprod《Treetop Drive》Rune Grammofon → Metal Art Disco（1994 MAD 004，RG 為 2004 盒裝）；Inade《Aldebaran》Loki Foundation → Cold Spring（CSR13CD）；Final《One》Subharmonic → Sentrax（1993 STC 33CD，Subharmonic 為 1994 美版）。年份、盤名皆不動。
+- **10754**　寫作層注意：Haxan Cloak 不寫「大提琴」（來源只有弦樂、擴音小提琴與玻璃）；Kali Malone《Living Torch》編制是長號＋低音單簧管，不寫銅管；Abul Mogard 身分兩說（塞爾維亞退休工人 vs 義大利人 Guido Zen 化名）不當已證事實；Nurse With Wound《Salt Marie Celeste》標題與 Mary Celeste 傳說關聯無來源；Thomas Köner《Nunatak Gongamur》不寫「鑼浸水錄」（那是《Teimo》）、《Permafrost》不寫鑼。

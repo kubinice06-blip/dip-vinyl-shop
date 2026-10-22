@@ -8,7 +8,7 @@
   "genres": [
    "electronic"
   ],
-  "label": "Side Effects",
+  "label": "Soleilmoon Recordings",
   "country": "gb",
   "moodGuess": {
    "x": 1.1,
@@ -253,7 +253,7 @@
   "genres": [
    "electronic"
   ],
-  "label": "Rune Grammofon",
+  "label": "Metal Art Disco",
   "country": "no",
   "moodGuess": {
    "x": 1,
@@ -420,27 +420,27 @@
   "cover": null
  },
  {
-  "key": "desc2:Desiderii Marginis|Deadbeat",
-  "artist": "Desiderii Marginis",
-  "album": "Deadbeat",
-  "year": 2001,
-  "genre": "electronic",
+  "key": "desc2:Belong|October Language",
+  "artist": "Belong",
+  "album": "October Language",
+  "year": 2006,
+  "genre": "rock",
   "genres": [
-   "electronic"
+   "rock"
   ],
-  "label": "Cold Meat Industry",
-  "country": "se",
+  "label": "Carpark",
+  "country": "us",
   "moodGuess": {
-   "x": 1.3,
-   "y": 1.3,
-   "z": -1.5,
-   "why": "無鼓，金屬敲擊殘響與低頻墊，灰冷"
+   "x": 1.4,
+   "y": 1.6,
+   "z": -0.7,
+   "why": "無鼓，失真殘響吉他霧牆，灰暗"
   },
-  "rgMbid": "e6c2cfa5-7a43-3ffd-9baa-9aba12907e91",
+  "rgMbid": "349ac32b-7bf3-30d0-bc3e-225ef25ba47b",
   "identitySource": "pinned",
-  "curatorWhy": "暗黑 ambient：CMI 系 dark ambient 的經典之一，金屬敲擊殘響與低頻墊交織的灰色儀式，無拍、重、冷。",
-  "curatorRisk": "",
-  "mbNote": "MB release-group e6c2cfa5-7a43-3ffd-9baa-9aba12907e91：title「Deadbeat」、Album、first-release-date 2001-03-21、artist-credit「Desiderii Marginis」。證據：https://musicbrainz.org/release-group/e6c2cfa5-7a43-3ffd-9baa-9aba12907e91 https://coverartarchive.org/release-group/e6c2cfa5-7a43-3ffd-9baa-9aba12907e91/front https://music.apple.com/us/album/deadbeat/210890017?uo=4",
+  "curatorWhy": "drone：紐奧良雙人組的 shoegaze drone，吉他被失真與殘響磨成一片霧牆，無鼓、糊、卡崔娜後的灰暗。",
+  "curatorRisk": "⚠ 色溫偏灰而非冰冷，估 −0.7；若評分往中性靠會貼邊",
+  "mbNote": "MB release-group 349ac32b-7bf3-30d0-bc3e-225ef25ba47b：title「October Language」、Album、first-release-date 2006-02-08、artist-credit「Belong」。證據：https://musicbrainz.org/release-group/349ac32b-7bf3-30d0-bc3e-225ef25ba47b https://coverartarchive.org/release-group/349ac32b-7bf3-30d0-bc3e-225ef25ba47b/front https://music.apple.com/us/album/october-language/1346890785?uo=4",
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
@@ -449,7 +449,7 @@
   "apex": null,
   "group": "b",
   "lineType": "廣度",
-  "scene": "薄細項策展線（暗黑 ambient）",
+  "scene": "薄細項策展線（drone）",
   "queryAlias": "",
   "republic": "",
   "cover": null
@@ -463,7 +463,7 @@
   "genres": [
    "electronic"
   ],
-  "label": "Loki Foundation",
+  "label": "Cold Spring",
   "country": "de",
   "moodGuess": {
    "x": 1.2,
@@ -608,40 +608,27 @@
   "cover": null
  },
  {
-  "key": "desc2:Kreng|L'Autopsie Phénoménale de Dieu",
-  "artist": "Kreng",
-  "album": "L'Autopsie Phénoménale de Dieu",
-  "year": 2009,
+  "key": "desc2:Scorn|Evanescence",
+  "artist": "Scorn",
+  "album": "Evanescence",
+  "year": 1994,
   "genre": "electronic",
   "genres": [
    "electronic"
   ],
-  "label": "Miasmah",
-  "country": "be",
+  "label": "Earache",
+  "country": "gb",
   "moodGuess": {
-   "x": 1.4,
-   "y": 1.2,
+   "x": 2.4,
+   "y": 1.7,
    "z": -1.5,
-   "why": "無鼓，樣本沉在殘響地窖，陰冷驚悚"
+   "why": "慢 dub 拍無攻擊性，次低頻淹沒，陰冷"
   },
-  "rgMbid": "",
-  "identitySource": "manual",
-  "mbAbsenceProof": {
-   "queries": [
-    "release-group?query=artist:\"Kreng\" AND releasegroup:\"Autopsie\"",
-    "release-group?query=artist:\"Kreng\" AND releasegroup:\"L'Autopsie Phénoménale de Dieu\""
-   ],
-   "checkedAt": "2026-10-22",
-   "conclusion": "MB 查無 Kreng 此作的 release-group；Discogs master 143701、Bandcamp 與 Apple Music 可證（2009, Miasmah）"
-  },
-  "manualEvidenceUrls": [
-   "https://www.discogs.com/master/143701",
-   "https://kreng.bandcamp.com/album/lautopsie-ph-nom-nale-de-dieu",
-   "https://music.apple.com/us/album/lautopsie-ph%C3%A9nom%C3%A9nale-de-dieu/313397773"
-  ],
-  "curatorWhy": "暗黑 ambient：比利時劇場配樂人 Kreng 的首作，爵士與古典樣本被拖進陰冷的殘響地窖，無拍、沉重、驚悚。",
-  "curatorRisk": "",
-  "mbNote": "MB 查無（MB 查無 Kreng 此作的 release-group；Discogs master 143701、Bandcamp 與 Apple Music 可證（2009, Miasmah）），走 §1 人工身分。證據：https://www.discogs.com/master/143701 https://kreng.bandcamp.com/album/lautopsie-ph-nom-nale-de-dieu https://music.apple.com/us/album/lautopsie-ph%C3%A9nom%C3%A9nale-de-dieu/313397773 https://music.apple.com/us/album/lautopsie-ph%C3%A9nom%C3%A9nale-de-dieu/313397773?uo=4 https://www.discogs.com/master/143701 https://kreng.bandcamp.com/album/lautopsie-ph-nom-nale-de-dieu",
+  "rgMbid": "a4d4cb7b-5fdb-3ed7-b799-217536a6fa5b",
+  "identitySource": "pinned",
+  "curatorWhy": "isolationist：Mick Harris 的 Scorn 從 dub 走向 isolationist 的關鍵作，極慢的 dub 節拍沉在次低頻與殘響裡，有拍無攻擊性，陰冷。",
+  "curatorRisk": "⚠ 有慢拍；依 10-22 規則「有拍沒攻擊性」應落 2–2.9，但若評分把工業 dub 拍判躁會掉到亢奮",
+  "mbNote": "MB release-group a4d4cb7b-5fdb-3ed7-b799-217536a6fa5b：title「Evanescence」、Album、first-release-date 1994-07-01、artist-credit「Scorn」。證據：https://musicbrainz.org/release-group/a4d4cb7b-5fdb-3ed7-b799-217536a6fa5b https://coverartarchive.org/release-group/a4d4cb7b-5fdb-3ed7-b799-217536a6fa5b/front https://music.apple.com/us/album/evanescence/265014286?uo=4",
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
@@ -650,7 +637,7 @@
   "apex": null,
   "group": "b",
   "lineType": "廣度",
-  "scene": "薄細項策展線（暗黑 ambient）",
+  "scene": "薄細項策展線（isolationist）",
   "queryAlias": "",
   "republic": "",
   "cover": null
@@ -734,7 +721,7 @@
   "genres": [
    "electronic"
   ],
-  "label": "Subharmonic",
+  "label": "Sentrax",
   "country": "gb",
   "moodGuess": {
    "x": 1.1,
@@ -1251,27 +1238,27 @@
   "cover": null
  },
  {
-  "key": "desc2:KTL|IV",
-  "artist": "KTL",
-  "album": "IV",
-  "year": 2009,
+  "key": "desc2:William Basinski|A Shadow in Time",
+  "artist": "William Basinski",
+  "album": "A Shadow in Time",
+  "year": 2017,
   "genre": "electronic",
   "genres": [
    "electronic"
   ],
-  "label": "Editions Mego",
-  "country": "at",
+  "label": "Temporary Residence",
+  "country": "us",
   "moodGuess": {
-   "x": 1.4,
-   "y": 1.8,
-   "z": -1.7,
-   "why": "無鼓，吉他 drone 與數位噪音牆，冰冷壓迫"
+   "x": 1,
+   "y": 1.1,
+   "z": -1,
+   "why": "無鼓，磁帶 drone 低頻厚殘響長，灰冷"
   },
-  "rgMbid": "60e3142e-425f-31cf-ba79-acc8d047ef59",
+  "rgMbid": "22d53a84-f009-413b-9637-9cd4f8264e2e",
   "identitySource": "pinned",
-  "curatorWhy": "工業 drone：Stephen O'Malley 與 Peter Rehberg 的 KTL 最完整的一張，吉他 drone 與數位噪音鋪成壓迫音牆，無鼓、極重、冷。",
+  "curatorWhy": "drone：Basinski 悼念 David Bowie 的兩段磁帶 drone，低頻厚、殘響長、灰暗，無鼓、慢、冷。",
   "curatorRisk": "",
-  "mbNote": "MB release-group 60e3142e-425f-31cf-ba79-acc8d047ef59：title「IV」、Album、first-release-date 2009-01-09、artist-credit「KTL」。證據：https://musicbrainz.org/release-group/60e3142e-425f-31cf-ba79-acc8d047ef59 https://coverartarchive.org/release-group/60e3142e-425f-31cf-ba79-acc8d047ef59/front https://music.apple.com/us/album/iv-feat-stephen-omalley-peter-rehberg/1799286880?uo=4",
+  "mbNote": "MB release-group 22d53a84-f009-413b-9637-9cd4f8264e2e：title「A Shadow in Time」、Album、first-release-date 2017-01-20、artist-credit「William Basinski」。證據：https://musicbrainz.org/release-group/22d53a84-f009-413b-9637-9cd4f8264e2e https://coverartarchive.org/release-group/22d53a84-f009-413b-9637-9cd4f8264e2e/front https://music.apple.com/us/album/a-shadow-in-time/1683857133?uo=4",
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
@@ -1280,7 +1267,7 @@
   "apex": null,
   "group": "d",
   "lineType": "廣度",
-  "scene": "薄細項策展線（工業 drone）",
+  "scene": "薄細項策展線（drone）",
   "queryAlias": "",
   "republic": "",
   "cover": null
@@ -1426,27 +1413,27 @@
   "cover": null
  },
  {
-  "key": "desc2:Tim Hecker|No Highs",
-  "artist": "Tim Hecker",
-  "album": "No Highs",
-  "year": 2023,
+  "key": "desc2:The Caretaker|Everywhere at the End of Time (Stage 4)",
+  "artist": "The Caretaker",
+  "album": "Everywhere at the End of Time (Stage 4)",
+  "year": 2018,
   "genre": "electronic",
   "genres": [
    "electronic"
   ],
-  "label": "Kranky",
-  "country": "ca",
+  "label": "History Always Favours the Winners",
+  "country": "gb",
   "moodGuess": {
-   "x": 1.5,
-   "y": 1.3,
-   "z": -1.1,
-   "why": "拍極稀，失真低頻霧與合成器脈動，灰冷"
+   "x": 1.2,
+   "y": 1.4,
+   "z": -1.2,
+   "why": "無鼓，78 轉碎片拖進殘響噪音霧，陰冷"
   },
-  "rgMbid": "c03e8bff-a92e-4f38-8de0-ac5e42bfb219",
+  "rgMbid": "7a3ab62a-1368-4fe4-a5f6-9e854097b6e6",
   "identitySource": "pinned",
-  "curatorWhy": "工業 drone：Hecker 近年最灰的一張，合成器脈動與薩克斯風沉在失真低頻霧裡，拍極稀、重、冷。",
+  "curatorWhy": "工業 drone：失智六部曲進入崩解的第四階段，舞廳 78 轉碎片被拖進長殘響與噪音霧，無拍、糊、冷。",
   "curatorRisk": "",
-  "mbNote": "MB release-group c03e8bff-a92e-4f38-8de0-ac5e42bfb219：title「No Highs」、Album、first-release-date 2023-04-07、artist-credit「Tim Hecker」。證據：https://musicbrainz.org/release-group/c03e8bff-a92e-4f38-8de0-ac5e42bfb219 https://coverartarchive.org/release-group/c03e8bff-a92e-4f38-8de0-ac5e42bfb219/front https://music.apple.com/us/album/no-highs/1667418220?uo=4",
+  "mbNote": "MB release-group 7a3ab62a-1368-4fe4-a5f6-9e854097b6e6：title「Everywhere at the End of Time (Stage 4)」、Album、first-release-date 2018-04-05、artist-credit「The Caretaker」。證據：https://musicbrainz.org/release-group/7a3ab62a-1368-4fe4-a5f6-9e854097b6e6 https://coverartarchive.org/release-group/7a3ab62a-1368-4fe4-a5f6-9e854097b6e6/front https://music.apple.com/us/album/everywhere-at-the-end-of-time-stage-4/1716927608?uo=4",
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
