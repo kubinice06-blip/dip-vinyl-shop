@@ -20,26 +20,26 @@
 
 **優先序**（由上往下派；頹靡已穩定，冷冽與恍惚往大池子集中）：
 
-| 順位 | 批 | 主場景＋可擴寫場景 |
-|---:|---|---|
-| 1 | md9 | 冷的 trip-hop／Bristol 二線 ＋ md17 暗 R&B |
-| 2 | mc9 | 80s synth-pop 二線 ＋ mc10 new wave 冷盤 ＋ mc20 港台日 80s synth-pop |
-| 3 | ml5 | neo-soul 二線 ＋ ml8 alt R&B 2010s–20s |
-| 4 | mc6 | Detroit techno／electro 二線 ＋ mc12 electroclash ＋ mc29 electro-funk 機械那半 |
-| 5 | ml6 | quiet storm／slow jam ＋ ml7 70s 慢板靈魂弦樂盤 |
-| 6 | md10 | 冷的 shoegaze／drone pop ＋ md25 冷的 ambient／art pop 慢盤 |
-| 7 | mc5 | 日本 techno-pop ＋ mc17 日本 techno ＋ mc25 J-pop／K-pop 冷系 |
-| 8 | ml9 | 暖 dub／roots dub 二線 ＋ ml25 80s 慢板 reggae 歌 |
-| 9 | mc7 | minimal techno 快而薄 ＋ mc8 IDM 快而乾 |
-| 10 | ml15 | 暖 trip-hop／downtempo ＋ ml23 ambient dub／ambient house 暖盤 |
-| 11 | md16 | cloud rap／sad rap 冷盤 ＋ md24 嘻哈 instrumental 冷盤 |
-| 12 | ml16 | jazz-rap／boom bap 暖盤 ＋ ml17 G-funk 慢盤 ＋ ml18 chopped & screwed |
-| 13 | mc11 | krautrock motorik 快盤 ＋ mc16 Italo／space disco 冷盤 ＋ mc27 70s 前衛電子快作 |
-| 14 | ml11 | chillwave／hypnagogic ＋ ml12 bedroom／dream pop 濕的那一路 |
-| 15 | md14 | 暗色電影／遊戲配樂 ＋ md13 現代古典暗黑音塊 |
-| 16 | ml19 | city pop／AOR 濕的慢歌 ＋ ml28 70s soft rock 慢而濕 |
-| 17 | mc26 | synthwave 冷而薄 ＋ mc19 東歐／蘇聯 synth |
-| 18 | md11 | 工業 old-school 慢盤／ritual ＋ md12 neoclassical darkwave |
+| 順位 | 批 | 主場景＋可擴寫場景 | 狀態 |
+|---:|---|---|---|
+| 1 | md9 | 冷的 trip-hop／Bristol 二線 ＋ md17 暗 R&B | 派→情緒薄格 md9、mc9（第 2 輪） |
+| 2 | mc9 | 80s synth-pop 二線 ＋ mc10 new wave 冷盤 ＋ mc20 港台日 80s synth-pop | 派→情緒薄格 md9、mc9（第 2 輪） |
+| 3 | ml5 | neo-soul 二線 ＋ ml8 alt R&B 2010s–20s | 派→情緒薄格 ml5、mc6（第 2 輪） |
+| 4 | mc6 | Detroit techno／electro 二線 ＋ mc12 electroclash ＋ mc29 electro-funk 機械那半 | 派→情緒薄格 ml5、mc6（第 2 輪） |
+| 5 | ml6 | quiet storm／slow jam ＋ ml7 70s 慢板靈魂弦樂盤 | 派→情緒薄格 ml6、md10（第 2 輪） |
+| 6 | md10 | 冷的 shoegaze／drone pop ＋ md25 冷的 ambient／art pop 慢盤 | 派→情緒薄格 ml6、md10（第 2 輪） |
+| 7 | mc5 | 日本 techno-pop ＋ mc17 日本 techno ＋ mc25 J-pop／K-pop 冷系 |  |
+| 8 | ml9 | 暖 dub／roots dub 二線 ＋ ml25 80s 慢板 reggae 歌 |  |
+| 9 | mc7 | minimal techno 快而薄 ＋ mc8 IDM 快而乾 |  |
+| 10 | ml15 | 暖 trip-hop／downtempo ＋ ml23 ambient dub／ambient house 暖盤 |  |
+| 11 | md16 | cloud rap／sad rap 冷盤 ＋ md24 嘻哈 instrumental 冷盤 |  |
+| 12 | ml16 | jazz-rap／boom bap 暖盤 ＋ ml17 G-funk 慢盤 ＋ ml18 chopped & screwed |  |
+| 13 | mc11 | krautrock motorik 快盤 ＋ mc16 Italo／space disco 冷盤 ＋ mc27 70s 前衛電子快作 |  |
+| 14 | ml11 | chillwave／hypnagogic ＋ ml12 bedroom／dream pop 濕的那一路 |  |
+| 15 | md14 | 暗色電影／遊戲配樂 ＋ md13 現代古典暗黑音塊 |  |
+| 16 | ml19 | city pop／AOR 濕的慢歌 ＋ ml28 70s soft rock 慢而濕 |  |
+| 17 | mc26 | synthwave 冷而薄 ＋ mc19 東歐／蘇聯 synth |  |
+| 18 | md11 | 工業 old-school 慢盤／ritual ＋ md12 neoclassical darkwave |  |
 
 **暫停**（第 1 輪證實產量低，或池子太小）：mc13 math rock、mc14 前衛 hard bop、mc21 post-punk revival、mc22 當代爵士、mc28 歐陸自由即興、mc30 minimalism、mc4 系古典快作續集、ml4 系東亞續集、ml13、ml22、ml26、ml27。
 
