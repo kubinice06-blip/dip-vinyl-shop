@@ -49,3 +49,9 @@
 - **14253** Polaris《Home》：2002-11-07 無爭議；策展層『承 Long Season 的漂浮感』無來源。10 首約 65 分鐘、4 首逾 10 分鐘。status thin；moodGuess 存疑（Discogs 標籤含 jazz-rock、post rock，鼓或偏活）。
 - **14254** 小沢健二《Eclectic》：推翻策展『慢板 R&B、耳語唱腔、quiet storm、lo-fi R&B 先聲』——日文維基只寫 funk／soul／R&B，無慢板與耳語描述；原曲〈今夜はブギーバック〉中速，x 恐 2.5–3.0。label 補：EASTWORLD（東芝EMI）TOCT-24711（卡單 label 空）。Oricon 7 位。
 - **14255** jp-proper-names.json 已 append 25 筆（本批日文專名）；未改既有項。
+
+## 主線裁定（研究層交件後；條號 14311–14314）
+- **14311**　研究層聲音存疑汰 9 張（不補位，場景候補已用盡）：吳卓源《1994 依舊舊事》（90s 復古 R&B、New Jack Swing 重拍）、Polaris《空間》（節奏組「疾走感」）、Hotel Mexico《His Jewelled Letter Box》（真鼓、可跳舞）、UA《turbo》（reggae-pop／disco 混雜，只有兩首 dubwise）、bonobos《HOVER HOVER》（聲音零來源、x／y 貼邊）、So!YoON!《So!YoON!》（多曲風混合、流行客串）、The Fur.《Serene Reminder》（indie folk rock 標籤，無霧狀證據）、U.TA屋塔《緩飆公路》（Portishead／Massive Attack 系、偏冷）、Oki Dub Ainu Band《Himalayan Dub》（前作 dub 版、聲音零來源，同團留首張）。卡單、pick.json、研究稿同步刪除；被汰卡留存 `dropped-cards.json`。**本批上線 11 張。**
+- **14312**　留下的存疑卡與理由：The Fur.《Town》（鼓機＋synthpop，但屬 Men I Trust 型 chorus 吉他＋合成器墊，依 10-22 質地新規則 (2) 算包覆，先例 Men I Trust《Oncle Jazz》落恍惚）；小沢健二《Eclectic》（中慢 R&B，x 估 2.5–3.0 有風險，主線聽感判慢而濕，留）；sugar plant《Hiding Place》、Polaris 兩張（標籤 slowcore／post rock，暖無來源，以評分為準）。
+- **14313**　廠牌更正：sugar plant《Hiding Place》→ Wonder Release Records（日本原版 W.R.R.-29；Pop Narcotic 是美版）、小沢健二《Eclectic》→ EASTWORLD、Oki Dub Ainu Band → Chikar Studio。신해경 廠牌三說（MB YOUNG,GIFTED&WACK／英文維基 Poclanos／Discogs 自發），卡單照 MB，正文不寫廠牌。
+- **14314**　正文禁寫（研究層查無來源）：bonobos 以外，Polaris「承 Fishmans《Long Season》」、オオヤユウスケ 是 Fishmans 成員、小沢《Eclectic》是 quiet storm／lo-fi R&B 先聲、Oki「首作」（2004 已有《Dub Ainu》）、The Fur.「台北」（中文維基寫高雄）。LITTLE TEMPO 掛名照 MB；Henry Holder 是 dub 混音人，不是團員。

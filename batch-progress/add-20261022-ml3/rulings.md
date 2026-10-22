@@ -41,3 +41,29 @@
 - **14196**　Ta-ku《50 Days For Dilla Vol. 2》：thin，與 Vol. 1 同形（Day 26–50，約 44 分鐘），聲音無法驗證；注意反同構。
 - **14197**　tomppabeats《Habits》：**moodGuess 存疑**。9 首約 23 分鐘，Discogs 為 10 吋 EP（限量 350）、MB 為 Album；標籤 Ambient／IDM／Downtempo，嘻哈鼓感可能比 Arcade 淡；Vinyl Digital 只是黑膠發行商，Bandcamp 原版自發。
 - **14198**　整組聲音證據薄的主因：WebSearch 兩組合計 5 次用盡，Pitchfork 等無法開啟，Bandcamp 的 curl 被擋、僅能用 WebFetch。c 組 4 張 full、3 張 thin，d 組 7 張 thin；**聲音事實欄位都誠實標『待查』，主線不要把 moodGuess 當已驗證**。
+
+## 研究 a 組
+- **14161**　Knxwledge《1988》：**moodGuess 存疑（x）**。Exclaim! 稱打擊推進、開頭兩首為舞動取向，維基有 funk 貝斯與銳利 snare，非『鬆垮』；暖有 Q 雜誌與〈Learn〉lo-fi 描述支撐；『磁帶糊』查無來源。MB、Stones Throw STH 2409、2020-03-27 對得上。
+- **14162**　Knxwledge《Kauliflowr》：身分對（All City、2013-10-14，XLR8R 與 Bandcamp 一致）。聲音有 XLR8R『扭曲取樣、鈍鼓』與 Turntable Lab『爵士 funk loop、MPC、重擊』；磁帶飽和／慵懶無來源，**moodGuess 輕度存疑**。
+- **14163**　Knxwledge《Hud.Dreems.PRT.1.5》：thin。2013-03-08 Bandcamp 自發（非 Stones Throw、卡單 label 空）；推翻 curatorWhy『同期續篇』（Stones Throw《Hud Dreems》是 2015 年）。聲音只有聽眾留言，**moodGuess 無法驗證**。
+- **14164**　MIKE《“Disco!”》：**moodGuess 強烈存疑（x、y）**。Flood 稱偏 house／bossa nova、比早期作品明亮有空氣感、鼓繁雜、joyful／summery；與『鼓稀、低語』不符。全張 MIKE 以 dj blackpower 製作；暖成立。建議主線以實際評分決定去留。
+- **14165**　Navy Blue《Song of Sage: Post Panic!》：thin。2020-12-22、18 首約 53 分鐘；『drumless』僅 MB 社群標籤，風格描述來自 2026 年對整體作品的樂評；製作人名單查不到。
+- **14166**　Navy Blue《Navy's Reprise》：**moodGuess 存疑（x 1.9 偏樂觀）**。樂評稱十位製作人混編、有 punchier／heavier 曲（〈Code of Honor〉〈Timberwolves〉）、groovy；MB 標籤含 boom bap。發行方 Discogs 為 Not On Label，facts 寫自行發行。
+- **14167**　Navy Blue《Ways of Knowing》：**推翻 curatorWhy**——整張由 Budgie 製作（維基、樂評一致），不是 Madlib／Alchemist。樂評稱 drumless、暖、舒適，另有評論認無鼓程度較低，標為部分無鼓。
+- **14168**　WebSearch 本組用 4 次（Navy's Reprise、Knxwledge 1988、Dudley A Lil' Light、Kauliflowr；MIKE 為與 b 組合計的第 5 次，共 5 次），Pitchfork 被擋、AllMusic 403、Bandcamp 的 curl 被擋，改以 WebFetch 讀 Bandcamp／維基／樂評。
+- **14169**　年份與廠牌：a 組 7 張皆與卡單一致，無推翻。facts 條數 1988=10、Kauliflowr／Hud／Song of Sage=7、Disco=9、Reprise／Ways=8；thin 3 張因聲音來源薄。
+
+## 研究 b 組
+- **14171**　Navy Blue《Memoirs in Armour》：thin。2024-08-02、10 首約 25 分鐘，Def Jam 解約後兩個月內錄成，三部曲第一部；聲音僅 MB 標籤與整體樂評，無逐張描述；製作人未查到。
+- **14172**　Onra《Chinoiseries, Part 2》：身分對（All City、2011-11-15、32 首）。ABCDR du Son：灰塵短 loop、Dilla 式鼓編程、電影對白穿插；未講快慢，『懶拍』屬推估。卡單『再赴越南』維基未證實，改寫成取樣來源（中國、泰國、越南）。
+- **14173**　Onra《Chinoiseries Pt. 3》：Bandcamp 明文『黑膠嘶聲劈啪貫穿』，成立 dusty；但 Onra 自述刻意追求多變節奏型（hip-hop 各年代、bossa、印度、迷幻搖滾），**moodGuess 輕度存疑（x）**。
+- **14174**　L'Orange《The Orchid Days》：**年份核對**——Bandcamp、MB、Discogs 皆 2014，未見 2012 自發版證據（2012 年的是《The Mad Writer》），維持 2014。**推翻 curatorWhy『器樂專輯』**：六位客席人聲（Homeboy Sandman、Blu、Jeremiah Jae、billy woods 等），且『1930–50 年代』無逐張來源。
+- **14175**　Dudley Perkins《A Lil' Light》：Madlib 全程製作，2003-07-15 STH 2067；Exclaim『泛舊鼓 loop、慢貝斯線、臥室 DIY 靈魂』，Discogs 使用者 BPM 約 87–103（已註明非官方）；Miami New Times／A.V. Club 為搜尋摘要來源。moodGuess 大致成立。
+- **14176**　Dudley Perkins《Expressions (2012 A.U.)》：thin。製作／錄音／人員齊全（Def Con IV 2005、STH 2136），但無可開啟樂評，聲音事實全缺；卡單『靈性與迷幻取樣』無來源，**moodGuess 無法驗證**。序數不寫（中間還有《Conversations with Dudley》）。
+- **14177**　Illa J《Yancey Boys》：身分對（Delicious Vinyl DV 9045、2008，CD 11/4／黑膠 10/31）。製作背景完整（Dilla 1995–98 未用 beat、Mike Floss 轉交），但聲音（搖晃鼓、厚電鋼、低頻）無任何來源，**moodGuess 無法驗證**，x 2.6 邊距薄。
+- **14178**　b 組 facts 條數：Memoirs／Ch2／Ch3／Expressions 以外多為 7–9 條，Expressions 僅 6 條（聲音來源缺）；全部 https、無簡體、無千分位逗號；`node qa-batch.mjs research add-20261022-ml3` 通過。
+
+## 主線裁定（研究層交件後；條號 14231–14233）
+- **14231**　研究層聲音存疑汰 5 張（不補位，場景候補已用盡）：MIKE《"Disco!"》（樂評稱偏 house／bossa、明亮有空氣、鼓繁雜，判輕判躁）、fLako《Natureboy》（電子／footwork 感，非慢鬆拍）、Knxwledge《Ovrstnd.LP》（Bandcamp 標 jungle／drum & bass）、tomppabeats《Habits》（Discogs 列 10 吋 EP、23 分鐘）、Pink Siifu《GUMBO'!》（聲音無來源、x 貼邊）。卡單、pick.json、研究稿同步刪除；被汰卡留存 `dropped-cards.json`。**本批上線 27 張。**
+- **14232**　廠牌更正：Maxo《LIL BIG MAN》→ Def Jam Recordings（研究 c 組）。研究層其餘推翻（Navy Blue《Ways of Knowing》製作是 Budgie、L'Orange《The Orchid Days》有客席人聲非器樂、Hud.Dreems.PRT.1.5 是 2013 自發、FlySiifu's 製作人十餘位、Onra & Quetzal《Tribute》非 Dilla 致敬、Beat Konducta Vol. 6 的「Withers」只是題名）一律以研究稿為準，鉤子／寫作層不得沿用 curatorWhy。
+- **14233**　「磁帶糊」全批查無來源，正文不得寫；聲音描述只用研究稿有來源的條目。
