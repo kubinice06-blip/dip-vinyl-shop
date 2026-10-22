@@ -39,3 +39,15 @@
 - **14108**　Sun Araw《Ancient Romans》x 局部存疑：整體慢而鬆，但 15 分鐘的〈Impluvium〉鼓點強勁、可跳舞，平均靜度約 2.5–3.2；y 厚濕、z 暖與預估相符。
 - **14109**　Robin Guthrie《Imperial》status thin，建議優先汰換：鼓／速度／製作資料查無；Ink19『冷天衝浪音樂、水慢慢轉暖』與 Times『晶瑩吉他和弦』指向色溫偏冷灰至中性（z 約 0）、Penny Black『稀疏寬敞』指向質地乾淨有空氣（y 約 0.3–0.8），與 moodGuess 暖霧不符。MB 日期 2003-03-24，維基副條目寫 3-17，以 MB 為準。多個來源 403／503，Times 訪談只經搜尋摘要取得。
 - **14110**　全組 9 張 facts 8–11 條、全 https、無推翻身分（僅廠牌／前作／日期微調）；無千分位逗號、無簡體字；`qa-batch.mjs research` c 組零標記。
+
+## 研究 d 組
+- **14111**　Robin Guthrie《Continental》：身分無誤（Darla DRL174，MB 2006-05-15；英國版 Rocket Girl 2006-06-12）。moodGuess 存疑：「輕拍」不完全，〈The Day Star〉〈Monument〉有砸下的鼓、厚貝斯與失真吉他，標題曲後段節奏組進場，x 可能偏動；色溫無評論直講，依 echoed／glazed／incandescent 描述判中性偏暖，質地殘響霧。
+- **14112**　Harold Budd 等《The Moon and the Melodies》：身分無誤（4AD CAD 611，1986-11-10）。錄音室與錄音日期查無（Harold Budd 維基寫「1985 年合作」，無第二來源，不寫）。moodGuess 存疑：鋼琴稀疏、延音與殘響為主，質地輕透有空氣，y（重）可能偏輕；Richard Thomas 掛薩克斯風與鼓但鼓的角色無說明。英國榜第 46 名一週（Harold Budd 條目）。
+- **14113**　Manual《Ascend》：身分無誤（Morr MM027，2002-05-06）。**moodGuess 存疑（z、y）**：Morr 簡介稱聲音主要是老類比合成器、吉他只偶爾出現，氣氛是憂傷、沉入水下，與卡單「殘響吉他、夏日暖」不符，色溫判中性微冷、質地乾淨空曠；有銳利帶稜角的電子節拍屬實。查無單張樂評全文，Igloo 的聲音描述是早期作品整體。
+- **14114**　Manual《Azure Vista》：身分無誤（Darla，MB 2005-04-19，維基寫 05-03，採 04-19）。色溫明確偏暖亮（Darla 彙整評論：陽光、海、sunbeams），質地厚墊（cathedral of sound）。moodGuess 存疑：卡單「幾乎無拍」，但評論是 1980 年代新浪潮合成器與體育場搖滾規模，x 可能偏動。Pitchfork 引句取自 Darla 的「過往好評」彙整，非直讀原文。
+- **14115**　Ulrich Schnauss & Jonas Munk《Passage》：身分無誤（MB 2017-01-20，十一首；Sonic Immersion 寫十首，採十一首）。**moodGuess 嚴重存疑（x）**：卡單「無鼓」，但 Somewhere Cold 與 Textura 明載攻擊性的鼓、techno 式鼓加 New Order 式貝斯、驅動可跳舞，整張有拍；建議主線汰換，或接受它落在恍惚格外緣。廠牌：MB 登記 Pedigree Cuts，Textura 稱兩者皆有、評論稱 Azure Vista Records，上架廠牌欄為可逆值。無錄音地點日期。
+- **14116**　Jónsi & Alex《Riceboy Sleeps》：身分無誤（Parlophone，歐洲 2009-07-20，MB 首發日 2009-04-06 為澳洲版）。錄音於雷克雅維克家中、2003 至 2009 年、夏威夷混音（官網）。弦樂 Amiina、合唱 Kópavogsdætur。**卡單「磁帶嘶聲」查無來源**；鼓查無記載。Pitchfork、BBC、Guardian、AllMusic 均不可讀，聲音事實偏薄但無矛盾；y（重）可能偏輕。
+- **14117**　Sun Araw & M. Geddes Gengras meet The Congos《Icon Give Thank》：身分無誤（RVNG FRKWYS09；MB／Discogs 2012-04-10，RVNG 官網寫 04-17）。RVNG 明言「不是 dub 雷鬼專輯」，與卡單「慢 dub 拍」有張力，鼓組有無查無描述，只列兩位打擊樂手；色溫偏暖、質地迴聲厚。牙買加十天、Portmore、The Congos 原始陣容重聚取自 RVNG 官方敘述。
+- **14118**　Peaking Lights《936》：身分無誤。錄音 2010-06-06 至 08，Iowa City，首次進錄音室。LA Weekly 訪談顯示孩子約 2011 年中出生，晚於本張，不可寫成為孩子而作。卡單三軸方向大致站得住。
+- **14119**　Peaking Lights《Lucifer》：身分無誤（Mexican Summer／Weird World，MB 英 06-18、美 06-19）。錄於布魯克林 Gary's Electric，孩子約 10 個月大時（2012 年 3 月訪談），卡單「孩子出生後錄的」成立；但「搖籃曲人聲」查無支持。moodGuess 存疑：Spin 稱刻意抽掉糊的多維層次追求清晰，質地比 936 乾淨，y 可能偏輕。孩子名 credit 寫 Mikko、LA Weekly 寫 Miko，採 Mikko。
+- **14120**　全組 9 張 facts 8–10 條、全 https（Textura 改 https 版）、無千分位逗號、無簡體字；`qa-batch.mjs research` d 組零標記。WebSearch 用 3 次。整組色溫排序（暖到冷）：Azure Vista、Icon Give Thank、936、Lucifer、Continental、Riceboy Sleeps、Moon and the Melodies、Passage、Ascend。
