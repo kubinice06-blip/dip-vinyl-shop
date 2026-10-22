@@ -23,3 +23,12 @@
 - 11165：Braxton《Five Pieces 1975》輕度存疑（Wheeler 富魯格號偏暖、首曲為標準曲）；速度無來源。
 - 11166：Braxton《Six Compositions: Quartet》輕～中度存疑（Blackwell 鼓、鋼琴）；維基總長 33:41 與 Discogs 曲長加總 41:33 不符，採 Discogs。
 - 11167：研究層刪除自己寫入但未抓取驗證的條目（Peter Ind 生平、Circle 校友、Blackwell／Davis 生平、Antilles 屬 Island），寧缺勿錯；聲音事實以樂評與 Discogs 能證者為限，各盤速度（BPM）全數查無。WebSearch 用 2 次。
+
+## 研究 b 組
+- **11171**（Quest）：推翻策展層『錄音室三重奏』——《The Quest》是 1976-03-12/13 米蘭 Rassegna Internazionale Jazz 現場錄音（Discogs＋英維）。moodGuess 存疑 y（Red Records 文案稱『猛烈撞擊』，間接來源，偏重風險）。
+- **11172**（Paragon）：推翻『快速連續即興組曲』——實為五首分曲，快／連續無來源；Holland 在 Discogs 登錄低音提琴兼大提琴。moodGuess z 弱存疑。
+- **11173**（K.C.）：推翻策展層陣容——Discogs／英維無 Al Kiger（小號 Don Ellis，次中音 Dave Young，低音提琴 Chuck Israels）；『奇數拍』無來源。錄於紐約非堪薩斯城。**moodGuess 強存疑 z、x**：副標《Original Swinging Instrumentals》、Sandu＋Tune Up 約 19 分鐘咆勃標準曲，建議主線列汰換候選。
+- **11174**（Outer View）：moodGuess 存疑 x、y——〈You Are My Sunshine〉約 12 分鐘人聲曲（Sheila Jordan 錄音出道，樂評稱 haunting）占近三成，偏慢；〈Au Privave〉為藍調。年份照原盤 1962。
+- **11175**（Stratus Seekers）：未推翻；速度／拍速無來源，z −0.4 弱存疑（Blues in Orbit、A Lonely Place）。〈Kige's Tune〉Al Kiger 是作曲者非團員。
+- **11176**（Braxton Seven Compositions 1978）：錄音實為 1979-11 巴黎（專輯名 1978）；Ray Anderson 以 Discogs＋英維為準列成員（德維作品表未列，不採）。聲音事實僅編制與曲長，速度音色無專文，moodGuess 無法證實也無法推翻；AllMusic 星等兩源矛盾，不寫。
+- WebSearch 用 2 次；其餘走 Discogs API 與 Wikipedia；AllMusic／Discogs 網頁／NPR／Jazzwise／Squidco 頁面 403／503，相關說法只入 notes。
