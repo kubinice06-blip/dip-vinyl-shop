@@ -15,3 +15,10 @@
   - MIKE, Wiki & The Alchemist《Faith Is a Rock》：Alchemist 迴圈偏冷偏乾，色溫存疑。
 - 留下的邊緣張（研究層要寫聲音事實）：Illa J《Yancey Boys》（x 2.6）、Onra & Quetzal《Tribute》（x 2.6）、Pink Siifu《GUMBO'!》（x 2.5）、Navy Blue《Memoirs in Armour》、Knxwledge《Klouds》、Georgia Anne Muldrow《Olesi》、Medhane《Own Pace》（z 0.5）。
 - L'Orange《The Orchid Days》年份照 MB 2014（策展層疑有更早自發版，研究層核）。
+
+## 研究 e 組
+- 14201：Muldrow《Olesi》核對 MB／Stones Throw 頁，身分成立；21 首多為兩分鐘片段、曲風跳動，標 moodGuess 存疑（y 持續度）。
+- 14202：Liv.e 錄音地實為聖路易母親家臥室（非達拉斯，達拉斯為出身）；20 首起伏大、有突然變速，標 moodGuess 存疑（x 偏高、低頻厚度無來源）。
+- 14203：Medhane《Own Pace》推翻策展層「MIKE 等人製作」——MIKE 僅客串〈Looking 4 Runtz〉；自發無廠牌；低頻與 dusty 程度無來源，標 moodGuess 存疑（z 貼邊）。status partial。
+- 14204：Pink Siifu《GUMBO’!》聲音事實偏薄（僅知 neo-soul＋trap 元素、製作人雜），標 moodGuess 存疑（x、y 皆無直接來源），建議汰換或以實際評分為準。status thin。
+- 14205：WebSearch 3 次用於 Muldrow、Medhane、Liv.e；Pitchfork／AllMusic／AOTY 皆擋，未取得全文。
