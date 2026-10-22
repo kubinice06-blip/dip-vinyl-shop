@@ -3043,4 +3043,12 @@ window.DipPreviewStatus = Object.freeze({
   "dean blunt|the narcissist ii": "unavailable",
   "cv313|analogue oceans": "unavailable",
   "cv313|baring stars": "unavailable",
+  "dennis brown|joseph's coat of many colours": "unavailable",
+  "sugar minott|ghetto-ology": "unavailable",
+  "hugh mundell|time and place": "unavailable",
+  "junior delgado|taste of the young heart": "unavailable",
+  "horace andy|natty dread a weh she want": "unavailable",
+  "jah lion|colombia colly": "unavailable",
+  "barrington levy|shaolin temple": "unavailable",
+  "sun araw & m. geddes gengras meet the congos|icon give thank": "unavailable",
 });
