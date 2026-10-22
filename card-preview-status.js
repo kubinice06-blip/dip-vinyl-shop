@@ -3045,4 +3045,7 @@ window.DipPreviewStatus = Object.freeze({
   "cv313|baring stars": "unavailable",
   "el aviador dro|tesis": "unavailable",
   "absolute body control|figures": "unavailable",
+  "numbers|numbers life": "unavailable",
+  "numbers|in my mind all the time": "unavailable",
+  "100 flowers|100 flowers": "unavailable",
 });

@@ -83,3 +83,10 @@
 - **11148**　只寫 note 列的項目：facts 有、note 沒列的（Wetdog 曲數與單曲、Destination Tokyo 成員名與 Hiorthøy 封面、Josef K 的 Pencaitland 與 TV Art 小樣、As Mercenárias 的陣容與翻唱、Purrkur 的 Einar Örn 與紀錄片、Q and Not U 的 Shirlington 與封面）一律不寫。性別照 11134：As Mercenárias、Wetdog 不寫；にせんねんもんだい用「她們」。正文無媒體名、無榜單名次、無轉述引導詞、無單一評者的評價句（Destination Tokyo 的比較只寫聲音描述）；「主線：研究後汰換」未進正文。
 - **11149**　「日」後一字照 11137：Frauhaus! 日在、Destination Tokyo 日，、Sorry for Laughing 日由、Different Damage 日交；其餘只寫到年或年秋。日期領頭逐張不同（年在倫敦／年月日在英國由／年月日，她們自家／原錄音要到年／年月日由／年出版的同名盤／錄音橫跨年到年／年把它推上市／年秋由／年月離開後／年月開錄／成品等到年月日交由）。
 - **11150**　自掃（han() 4-gram，含 hook，跨 out-1／out-2 兩檔）：批內 2 張以上 0 條。途中拆掉：分鐘最長（Purrkur 正文撞 Destination Tokyo hook）、樂團吉他（對 out-1）。另對近批已上架 out 檔掃一遍，改掉通用殘片：發行之後、在英國的、鍵盤年月、形容它聽、發行的專輯、的專輯年、在年推出、推出這張、同名專輯、替他們發行、之後他們、也在同一、主唱樂團、擔任製作、在年發行、發行了它、時間在年、交給發行、交由推出。剩下與近批重的多為鉤子層指派原文（常被拿來和、主唱兼彈吉他、他們的首張、年月日由／交）。輔助腳本在 scratchpad `wr-mc2-2/`。
+
+## 主線審稿（11151–11160）
+- **11151**　2026-10-22 雲端主線逐張審 15 張，逐句對回研究稿。改 3 張，其餘未改字。
+- **11152**　`desc2:Contortions|Buy`：「原本愉快的舞曲，被演得熱情卻冷。」→「薩克斯風刺耳的爆音最搶耳，吉他偶爾一劃。」依據：原句是 Trouser Press 單源評價（研究 a 第 5 條），照審稿規則刪；替換句為聲音事實（研究 a 第 6 條）。研究層已有，鉤子層不用同步。
+- **11153**　`desc2:Wetdog|Frauhaus!`：「後龐克三人團，鼓手 Sarah Datblygu，常被拿來和 The Fall 相比」語序讓人誤讀成鼓手被比作 The Fall，刪鼓手名（hook 與後文已交代貝斯），改「後龐克三人團，常被拿來和 The Fall 相比」。
+- **11154**　`desc2:100 Flowers|100 Flowers`：「長則 244 秒」→「長則 4 分 4 秒」（同一事實改寫法，研究 d 第 4 條）。
+- **11155**　其餘核過：Polyrock 由 Philip Glass 與 Kurt Munkacsi 製作、Suburban Lawns 的 Demme 錄影帶上 SNL、Q and Not U 2001 年 11 月請走 Borlik（研究 e「被請走」）、Josef K「平板、像被消毒過」為團員自述、にせんねんもんだい「三人女子」有來源（鉤子層 11136）。
