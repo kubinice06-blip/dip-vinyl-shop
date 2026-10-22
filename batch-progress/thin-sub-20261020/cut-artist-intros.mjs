@@ -1,4 +1,4 @@
-// ALBUM_ONBOARDING §11：薄細項策展線 ts1–ts11 上架卡的藝人補排藝人介紹（2026-10-21）。
+// ALBUM_ONBOARDING §11：薄細項策展線 ts1–ts11（10-22 起含 ts5／ts6） 上架卡的藝人補排藝人介紹（2026-10-21）。
 //   扣掉已有介紹、progress.json 已排隊、aliases 別名鍵與 Various Artists；剩下的補進 roster（tier D、addedBy 標批名），
 //   依批次順序每 40 位切一批 ar-d-xxx（state: cut），寫 cut/<批>.txt。冪等：roster 已有的鍵不重複加。
 import fs from 'node:fs';
@@ -12,7 +12,7 @@ const al = J('desc-tools/batches/artist/aliases.json'), alk = new Set(Object.key
 const RF = 'batch-progress/artist-intro/roster-20260929.json', ros = J(RF);
 const seed = J('seed_cards.json');
 const script = s => /[฀-๿]/.test(s) ? 'other' : /[Ѐ-ӿ]/.test(s) ? 'cyr' : /[぀-ヿ]/.test(s) ? 'ja' : /[가-힯]/.test(s) ? 'ko' : /[一-鿿]/.test(s) ? 'zh' : 'latin';
-const order = ['ts1', 'ts2', 'ts3', 'ts4', 'ts7', 'ts8', 'ts9', 'ts10', 'ts11'];
+const order = ['ts1', 'ts2', 'ts3', 'ts4', 'ts7', 'ts8', 'ts9', 'ts10', 'ts11', 'ts6', 'ts5'];
 const files = fs.readdirSync('.').filter(f => /^onboarding-manifest-add-2026102\d-ts\d+-2026102\d\.json$/.test(f))
   .sort((a, b) => order.indexOf(a.match(/-(ts\d+)-/)[1]) - order.indexOf(b.match(/-(ts\d+)-/)[1]));
 const picked = [];
