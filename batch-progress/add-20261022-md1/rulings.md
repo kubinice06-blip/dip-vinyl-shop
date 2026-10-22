@@ -105,3 +105,7 @@
 - **10742**　第二句全照 note 指派領句，三處微調：Permafrost「第三張個人專輯」→「獨自發表的第三張」、Kiri No Oto「這張是日文的…」→「這張的盤名是日文「霧之音」，出自…」（原句不通順）、Living Torch 在 Malone 前補「作曲家」（開頭兩句要交代身分，facts 有電聲作曲學歷；可逆）。Raison d'être 照卡單藝人欄大寫，不照 note 的小寫。日期「日」後一字照 10731：Monstrous 日發、Stalker 日問、Morals 日與、Cold Summer 日到。
 - **10743**　跨張 4-gram（han() 剝英數標點，連 out-2 現稿合掃）四輪收斂：初掃「首約分鐘」×5、「個人專輯」×4（含 out-2 兩張）、「推出編號」×3、「共約分鐘」×3、「年月把它」「年月發行」「到分鐘的」各 3，另拆 2 張殘片二十餘條（我方先交、照 writer-base 第 5 條當 3 張處理）。定稿本側 3 張以上 0 條，2 張只剩樂器名「模組合成器」（Living Torch × out-2 Above All Dreams）。out-2 仍在改，主線收件時請再合掃一次。
 - **10744**　note 自身的否定句：Nunatak「沒有打擊樂也沒有鼓機」照 note 寫（鉤子層 10735 已判內容描述保留）；其餘未新增否定句。Knive「廠方說」由 hook 帶出，正文只寫說法所在的重發頁，不再加轉述引導；Starwheel 的「第二部冥想」寫成「被廠方列為」。In Sadness 為撐到 thin 下限，補寫該曲全名〈In Abscence Of Light〉（收 hook 懸念，facts 有）。Belong 寫「評論與讀者事後的聯想」，「事後」是依錄於災前推得的時序措辭，可逆。
+
+## 主線審稿（2026-10-22）
+- **10760**　逐張審 45 篇（全文印出、逐句對研究稿），改 1 張（`desc-override.json`）：Maeror Tri《Myein》「成員多半是在 Leer 一起長大的同學」→「1988 年 4 月在 Leer 起步」——研究稿此句為單源「據說」，寫作層以「多半」改寫仍是轉述推測，刪（123 字，thin 下限 120 內）。跨張 4-gram ≥3 張為 0。無媒體名、無媒體榜名次、無「據說／據傳」、無資料平台名；卡面年份與正文發行年一致。寫作層自報三處小改（Permafrost「獨自發表的第三張」、Kiri No Oto 句讀、Living Torch 補「作曲家」）照准。Pan Daijing 卡面維持 MB 羅馬字、不補無來源漢字。
+- manifest：45 張、rarity legendary 2／epic 19／uncommon 21／rare 3；試聽 41 ready／4 unavailable；封面 CAA 44＋Apple 1（`apple-verified-collection`）。prepare gate 0 error（45 warning 皆 upc 空白）。

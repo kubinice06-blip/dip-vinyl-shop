@@ -107,3 +107,7 @@
 - **10828**　跨兩檔合掃（out-1 已在檔，後交件）han() 4-gram：拆掉「長達分秒」×4、「錄音室專輯」×4、「聽到的是」×3、「年月發行」×3、「年月推出」×3、「的第三張」×3、「樂團的第」×3、「專輯年月」×3，以及 2 張殘片「把它推出」「出自他手」「在整張裡」（撞 Cycle hook）「用這個名」「製作人是」「同年月由」「年月上市」「行評論說」「在年月替」「一首就佔」「自家廠牌」等。定稿只剩地名（印第安納州、布里斯托、俄亥俄州）、器材名（磁帶循環）與榜名（專輯榜第 N 名）。
 - **10829**　禁語自掃：正文無媒體名、無媒體榜名次、無「據說／據傳」、無資料平台名；唯一例外是 Leaving 的 hook 原文帶 Bandcamp（首句照抄、無權改），正文不再提。Luminol 單源的疫情錄音一格寫成「評論提到，…」（note 要求照評論說法寫，避「據」字型引導）。Forever 的 Colin Ward 詩作出處寫「唱片附註」，不寫來源平台。
 - **10830**　小裁定（可逆）：Low 第二句把「核心是」改「以…為核心」，避 Forever hook「整張的核心」；Geek the Girl 的〈Frascilita〉改「前後貫穿整張」，避 Cycle hook「在整張裡」；Way Their Crept「2005 年起她才掛出這個名字」，避 out-1 Wide 的「用這個名字發表」。Ghost Tropic、Bowery、Luminol 第二句只補身分，note 未給樂種，照 note 不補。
+
+## 主線審稿（2026-10-22）
+- **10841**（借用主線區間後續條號）　逐張審 45 篇（全文印出、逐句對研究稿），改 2 張（`desc-override.json`）：Bohren《Black Earth》「低音提琴與鼓壓著慢速，貝斯主導，」→「低音提琴與鼓壓著慢速，」——研究稿 Rodenberg 為低音提琴，同句再寫「貝斯主導」語意重疊（219 字）；Grouper《Cover the Windows and the Walls》尾句「樂評的結論是它雖然暗，卻是一張極為充滿希望的唱片」→「樂評把她放在自由形式的噪音團體附近，而不是 ambient 那一路」——單源評價句刪，換同篇樂評的定位描述（研究 c 組 DiS 條目；193 字）。跨張 4-gram ≥3 張只剩樂器名「薩克斯風」。官方專輯榜名次（德國榜 49、英國榜 37、蘇格蘭榜 59）不是媒體榜，保留。Early Day Miners《Placer Found》再版評語為研究稿有源（Spin 經維基）之轉述，不點媒體名，保留。Planning for Burial《Leaving》首句「先放上 Bandcamp」是發行管道事實、非資料來源，保留。
+- manifest：45 張、rarity epic 19／uncommon 22／rare 4；試聽 44 ready／1 unavailable；封面 CAA 45。prepare gate 0 error（45 warning 皆 upc 空白）。

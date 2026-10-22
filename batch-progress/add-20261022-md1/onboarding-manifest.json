@@ -1,0 +1,3274 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-md1",
+ "batchNote": "薄細項策展線（add-20261022-md1）",
+ "createdAt": "2026-10-22T06:05:47Z",
+ "albums": [
+  {
+   "artist": "Lustmord",
+   "album": "Heresy",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f759b7f6-941b-35c0-8674-82d7df1b35f5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗黑 ambient：Lustmord 奠定 dark ambient 一詞的原點：地底洞穴殘響與次低頻轟鳴，沒有鼓、沒有旋律，陰冷到底，三軸直落頹靡。｜策展無疑點｜MB release-group f759b7f6-941b-35c0-8674-82d7df1b35f5：title「Heresy」、Album、first-release-date 1990、artist-credit「Lustmord」。證據：https://musicbrainz.org/release-group/f759b7f6-941b-35c0-8674-82d7df1b35f5 https://coverartarchive.org/release-group/f759b7f6-941b-35c0-8674-82d7df1b35f5/front https://music.apple.com/us/album/heresy/396269726?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f759b7f6-941b-35c0-8674-82d7df1b35f5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 44590,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 4/3/4（Last.fm listeners 44590）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "他說到洞穴與地穴裡錄音，圖的是那裡的聲學。在北威爾斯長大的 Brian Williams，Lustmord 是他的 dark ambient 藝名。內頁寫明這是 1987 至 1989 年的工作，素材全是地下空間的現場錄音。他把這張的突破歸給改用 Atari 電腦當數位錄音工作站。後製掛名 Throbbing Gristle 的 Chris Carter，全盤分成六段。1990 年的 Soleilmoon 首發，編號是 SOL 9。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Lustmord",
+     "https://en.wikipedia.org/wiki/Heresy_(Lustmord_album)",
+     "https://www.discogs.com/master/40136",
+     "https://lustmord.bandcamp.com/album/heresy",
+     "https://musicbrainz.org/release-group/f759b7f6-941b-35c0-8674-82d7df1b35f5"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/36/07/17/360717ba-83c2-9a5f-71ba-a92cbccf2530/mzaf_1012404254505166943.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "396269726",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 396269726「Lustmord《Heresy》」：Apple 曲名 Heresy Part 1–6 與 MB Part I–VI 同序同數（6/6），機器只因羅馬數字對不上，取第 1 軌〈Heresy Part 1〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lustmord",
+   "album": "The Place Where the Black Stars Hang",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5652195d-fac4-3fcf-bf51-cdfc30395d08",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗黑 ambient：Lustmord 最浩瀚的一張，深空級低頻與長殘響鋪滿一小時，靜、重、冷，是 dark ambient 公認的代表作。｜策展無疑點｜MB release-group 5652195d-fac4-3fcf-bf51-cdfc30395d08：title「The Place Where the Black Stars Hang」、Album、first-release-date 1994、artist-credit「Lustmord」。證據：https://musicbrainz.org/release-group/5652195d-fac4-3fcf-bf51-cdfc30395d08 https://coverartarchive.org/release-group/5652195d-fac4-3fcf-bf51-cdfc30395d08/front https://music.apple.com/us/album/the-place-where-the-black-stars-hang/429464140?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5652195d-fac4-3fcf-bf51-cdfc30395d08/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 16151,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 4/4/5（Last.fm listeners 16151）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "替這張寫的長文裡，Lustmord 把科學看成另一種信仰。出版它的 Side Effects 原是 SPK 的廠牌，後來由 Lustmord 本人 Brian Williams 接手，1994 年發行。那篇文字從人類演化一路談到宇宙的黑暗，結尾落在一首短詩上。音樂在倫敦的 Scientific Electric 構思與製作，1993 年完成。五個 Section 共約 76 分鐘，其中兩段各約 25 分鐘，幾乎只靠緩慢變動的低頻推進。",
+    "sourceUrls": [
+     "https://www.factmag.com/2010/11/03/lustmord-the-last-heretic/",
+     "https://www.discogs.com/release/91283",
+     "https://www.discogs.com/master/40155",
+     "https://lustmord.bandcamp.com/album/the-place-where-the-black-stars-hang",
+     "https://musicbrainz.org/release-group/5652195d-fac4-3fcf-bf51-cdfc30395d08",
+     "https://en.wikipedia.org/wiki/Lustmord"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6a/28/31/6a28317e-cb28-9399-a610-64499f10ffa6/mzaf_8890051992290503368.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "429464140",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 429464140「Lustmord《The Place Where the Black Stars Hang》」：曲目 5/5 對上 MB 原盤（Apple 共 5 軌），取第 1 軌〈Sol Om On〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lustmord",
+   "album": "The Monstrous Soul",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "abd75db7-7790-34be-80f1-7b2a5a456669",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗黑 ambient：Lustmord 最陰慘的一張，金屬刮擦與低頻脈動夾雜儀式性樣本，無拍、壓迫、陰冷。｜策展無疑點｜MB release-group abd75db7-7790-34be-80f1-7b2a5a456669：title「The Monstrous Soul」、Album、first-release-date 1992-04-23、artist-credit「Lustmord」。證據：https://musicbrainz.org/release-group/abd75db7-7790-34be-80f1-7b2a5a456669 https://coverartarchive.org/release-group/abd75db7-7790-34be-80f1-7b2a5a456669/front https://music.apple.com/us/album/the-monstrous-soul/447797040?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/abd75db7-7790-34be-80f1-7b2a5a456669/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 8537,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 3/4/4（Last.fm listeners 8537）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Clock DVA 的 Adi Newton 掛名共同製作。另一位掛名的是 Lustmord 自己，他在 Throbbing Gristle 的圈子起步。內頁註明 1990 年 11 月在 Anterior Digital Research Station 製作，一直到 1992 年 4 月 23 日發行，中間隔了一年多，廠牌是 Side Effects，編號 DFX 14。五段加總約 54 分鐘，以低頻與長殘響為底，重心落在 25 分鐘的〈Primordial Atom〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/abd75db7-7790-34be-80f1-7b2a5a456669",
+     "https://www.discogs.com/release/91292",
+     "https://www.discogs.com/master/40144",
+     "https://lustmord.bandcamp.com/album/the-monstrous-soul",
+     "https://en.wikipedia.org/wiki/Lustmord",
+     "https://www.factmag.com/2010/11/03/lustmord-the-last-heretic/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c6/e8/d0/c6e8d04c-7853-b326-edea-cb806a35e81c/mzaf_10394776126862802992.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "447797040",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 447797040「Lustmord《The Monstrous Soul》」：曲目 5/5 對上 MB 原盤（Apple 共 5 軌），取第 1 軌〈Ixaxaar〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Robert Rich & B. Lustmord",
+   "album": "Stalker",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7a0c813e-d27e-3783-a9a4-e933102a236f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗黑 ambient：向塔可夫斯基《潛行者》致敬的 dark ambient 名盤，Rich 的霧狀合成器墊配 Lustmord 的地底低頻，無鼓、包覆、冷。｜策展無疑點｜MB release-group 7a0c813e-d27e-3783-a9a4-e933102a236f：title「Stalker」、Album、first-release-date 1995、artist-credit「Robert Rich & B. Lustmord」。證據：https://musicbrainz.org/release-group/7a0c813e-d27e-3783-a9a4-e933102a236f https://coverartarchive.org/release-group/7a0c813e-d27e-3783-a9a4-e933102a236f/front https://music.apple.com/us/album/stalker/170815742?uo=4",
+    "queryAlias": "Lustmord Robert Rich Stalker"
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7a0c813e-d27e-3783-a9a4-e933102a236f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 10575,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 4/4/4（Last.fm listeners 10575）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "1995 年的這張合作，到 2018 年才第一次壓成黑膠。美國 ambient 音樂家 Robert Rich 與 Lustmord 合寫這張，靈感是塔可夫斯基的《潛行者》。補上黑膠的是 Hearts of Space，出的是雙黑膠。兩人 1994 至 1995 年在 Rich 的 Soundscape Studio 錄製，原版 1995 年 11 月 21 日問世，由 Fathom 發行。緩慢的 drone 層上，散著稀疏的滴水、低語與刮擦聲。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Stalker_(album)",
+     "https://www.discogs.com/master/163897",
+     "https://sonicimmersion.org/robert-rich-lustmord-stalker",
+     "https://en.wikipedia.org/wiki/Lustmord",
+     "https://musicbrainz.org/release-group/7a0c813e-d27e-3783-a9a4-e933102a236f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/15/10/62/151062f2-2441-511f-b777-2bb3c35a1525/mzaf_15261549056256814066.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "170815742",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 170815742「B. Lustmord & Robert Rich《Stalker》」：曲目 6/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Elemental Trigger〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Raison d'être",
+   "album": "Prospectus I",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3915bfc2-6765-3821-8640-63697201beef",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗黑 ambient：Cold Meat Industry 瑞典 dark ambient 的開山作：教堂殘響、葛利果聖歌樣本與金屬低鳴，無鼓，陰冷儀式感。｜策展無疑點｜MB release-group 3915bfc2-6765-3821-8640-63697201beef：title「Prospectus I」、Album、first-release-date 1993-03、artist-credit「raison d’être」。證據：https://musicbrainz.org/release-group/3915bfc2-6765-3821-8640-63697201beef https://coverartarchive.org/release-group/3915bfc2-6765-3821-8640-63697201beef/front https://music.apple.com/us/album/prospectus-i/260642588?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3915bfc2-6765-3821-8640-63697201beef/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 10703,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 4/4/5（Last.fm listeners 10703）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "這張首作，Andersson 後來又重錄了三次。Raison d'être 是瑞典人 Peter Andersson 1991 年起的個人計畫，常把聖歌錄音帶混進自己的鍵盤。原版錄音與混音始於 1992 年 12 月，1993 年 1 月完成，Cold Meat Industry 隨即推出，掛 CMI.18。九首長度從 4 分鐘到 8 分鐘不等，標題多取自教堂與宗教詞彙。三個重錄版分別在 2005、2013、2023 年發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Raison_d%27%C3%AAtre_(band)",
+     "https://musicbrainz.org/release-group/3915bfc2-6765-3821-8640-63697201beef",
+     "https://www.discogs.com/release/97387",
+     "https://www.discogs.com/master/36598",
+     "https://en.wikipedia.org/wiki/Cold_Meat_Industry",
+     "https://cycliclaw.bandcamp.com/album/prospectus-i"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c6/8b/58/c68b58ba-77ed-6137-0700-b55b3c9c1556/mzaf_5132392335524265548.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "260642588",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 260642588「Raison d'Être《Prospectus I》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Katharsis〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Raison d'être",
+   "album": "In Sadness, Silence and Solitude",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "727793aa-1c92-367c-83bb-347f957daa47",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗黑 ambient：Raison d'être 最被引用的一張，修道院式吟唱沉在低頻霧裡，慢、重、冷，是北歐 dark ambient 的標準聲音。｜策展無疑點｜MB release-group 727793aa-1c92-367c-83bb-347f957daa47：title「In Sadness, Silence and Solitude」、Album、first-release-date 1997-10、artist-credit「raison d’être」。證據：https://musicbrainz.org/release-group/727793aa-1c92-367c-83bb-347f957daa47 https://coverartarchive.org/release-group/727793aa-1c92-367c-83bb-347f957daa47/front https://music.apple.com/us/album/in-sadness-silence-and-solitude-expanded-edition-2021/1597656543?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/727793aa-1c92-367c-83bb-347f957daa47/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 4237,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 4/4/5（Last.fm listeners 4237）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "第二首的曲名多拼了一個 c，寫成 Abscence。這是 Peter Andersson 的 Raison d'être 1997 年 10 月在 Cold Meat Industry 的專輯。那首的完整曲名是〈In Abscence Of Light〉，原版就這樣印著。錄音期間橫跨 1996 至 1997 年，六首總長約 51 分鐘，編號 CMI.57。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/147906",
+     "https://www.discogs.com/master/36568",
+     "https://en.wikipedia.org/wiki/Raison_d%27%C3%AAtre_(band)",
+     "https://en.wikipedia.org/wiki/Cold_Meat_Industry",
+     "https://musicbrainz.org/release-group/727793aa-1c92-367c-83bb-347f957daa47"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/a9/2a/52/a92a5290-046f-413d-0254-5ed2b4de9a32/mzaf_6107572417806964334.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1597656543",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 1597656543「Raison d'Être《In Sadness, Silence and Solitude (Expanded Edition 2021)》」：曲目 5/6 對上 MB 原盤（Apple 共 22 軌），取第 1 軌〈Reflecting in Shadows〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Deathprod",
+   "album": "Morals and Dogma",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c79cff57-60fd-3926-9981-896280026ffe",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗黑 ambient：Helge Sten 的 Audio Virus 低頻、鋸琴與殘響構成的挪威 dark ambient 代表作，無鼓、極慢、壓在胸口的冷。｜策展無疑點｜MB release-group c79cff57-60fd-3926-9981-896280026ffe：title「Morals and Dogma」、Album、first-release-date 2004-02-23、artist-credit「Deathprod」。證據：https://musicbrainz.org/release-group/c79cff57-60fd-3926-9981-896280026ffe https://coverartarchive.org/release-group/c79cff57-60fd-3926-9981-896280026ffe/front https://music.apple.com/us/album/morals-and-dogma/1499156361?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2004,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c79cff57-60fd-3926-9981-896280026ffe/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 5,
+    "listeners": 23674,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 4/3/5（Last.fm listeners 23674）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "四首長曲在九〇年代中期錄下，又改了將近十年才定稿。Deathprod 是挪威人 Helge Sten 的計畫，他也是 Supersilent 的成員。改動最多次的是〈Dead Peoples Things〉與〈Tron〉。音色取自經過處理的小提琴、鋸琴與簧風琴，〈Cloudchamber〉再交給 Maestro Echoplex 加工。2004 年 2 月 23 日與四 CD 作品盒裝同一天由 Rune Grammofon 發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Deathprod",
+     "https://musicbrainz.org/release-group/c79cff57-60fd-3926-9981-896280026ffe",
+     "https://smalltownsupersound.com/releases/deathprod-treetop-drive-imaginary-songs-from-tristan-da-cunha-morals-and-dogma/",
+     "https://en.wikipedia.org/wiki/Morals_and_Dogma_(album)",
+     "https://www.pressreader.com/uk/mojo-uk/20170627/282806421305774"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/03/40/e0/0340e040-7da4-6fc0-1f9c-674be43e5a1d/mzaf_11578736596846370712.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1499156361",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1499156361「Deathprod《Morals and Dogma》」：曲目 4/4 對上 MB 原盤（Apple 共 4 軌），取第 1 軌〈Tron〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Deathprod",
+   "album": "Treetop Drive",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "bf05b4ac-db50-3534-bd48-1e3ae549484e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗黑 ambient：Deathprod 首作，四段長篇低頻 drone 磨得粗糙晦暗，無拍無旋律，是挪威 isolationist 的源頭之一。｜策展無疑點｜MB release-group bf05b4ac-db50-3534-bd48-1e3ae549484e：title「Treetop Drive」、Album、first-release-date 1994、artist-credit「Deathprod」。證據：https://musicbrainz.org/release-group/bf05b4ac-db50-3534-bd48-1e3ae549484e https://coverartarchive.org/release-group/bf05b4ac-db50-3534-bd48-1e3ae549484e/front https://music.apple.com/us/album/treetop-drive/1499185505?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bf05b4ac-db50-3534-bd48-1e3ae549484e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 4235,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 3/4/4（Last.fm listeners 4235）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "前三段是藝術學院裡的一場演出，直接錄進兩軌 DAT。這是 Helge Sten 以 Deathprod 名義的第一張，那幾年他也在 Motorpsycho。那場演出辦在 1993 年的特隆赫姆藝術學院；第四首〈Towboat〉則是 1994 年回 Audio Virus LAB 錄成。用到的是自製電子裝置，加上 Hans Magnus Ryan 的磁帶回聲小提琴。Metal Art Disco 同年把它做成限量的手工卡帶盒，編號 MAD 004。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/bf05b4ac-db50-3534-bd48-1e3ae549484e",
+     "https://smalltownsupersound.com/releases/deathprod-treetop-drive-imaginary-songs-from-tristan-da-cunha-morals-and-dogma/",
+     "https://www.discogs.com/master/403819",
+     "https://en.wikipedia.org/wiki/Deathprod"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/df/3d/72/df3d72de-69ec-80bc-5378-01a4fab366cb/mzaf_4191996971527798864.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1499185505",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1499185505「Deathprod《Treetop Drive》」：曲目 4/4 對上 MB 原盤（Apple 共 4 軌），取第 1 軌〈Treetop Drive 1〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Thomas Köner",
+   "album": "Permafrost",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "24c944e9-ef5f-31c2-ba20-c744cdb5bb3a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗黑 ambient：Köner 極地三部曲的核心，處理過的鑼聲化成次聲波般的冰原轟鳴，幾乎無事件、全是低頻，isolationist 的典範。｜策展無疑點｜MB release-group 24c944e9-ef5f-31c2-ba20-c744cdb5bb3a：title「Permafrost」、Album、first-release-date 1993、artist-credit「Thomas Köner」。證據：https://musicbrainz.org/release-group/24c944e9-ef5f-31c2-ba20-c744cdb5bb3a https://coverartarchive.org/release-group/24c944e9-ef5f-31c2-ba20-c744cdb5bb3a/front https://music.apple.com/us/album/permafrost/381558942?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/24c944e9-ef5f-31c2-ba20-c744cdb5bb3a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 5,
+    "listeners": 23230,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 4/3/5（Last.fm listeners 23230）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "曲名寫的是冰雪地形，評論卻說〈Serac〉聽來像水，帶暖意。Thomas Köner 1993 年把這張交給 Barooni，限量 CD，是他獨自發表的第三張。創作時間從 1991 年 7 月延續到 1993 年 2 月。六首曲子總計約 38 分鐘，Nival、Serac、Firn 都是冰雪地貌的名稱，〈Meta Incognita〉是拉丁文「未知的邊界」，也是巴芬島的別名。評論形容整張低頻深沉、氛圍巨大而包覆，到標題曲推上高潮。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Thomas_K%C3%B6ner",
+     "https://www.discogs.com/release/173056",
+     "https://en.wikipedia.org/wiki/Permafrost_(album)",
+     "https://igloomag.com/?p=3248",
+     "https://musicbrainz.org/release-group/24c944e9-ef5f-31c2-ba20-c744cdb5bb3a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d2/10/56/d2105612-62f2-81ff-ce77-1c680cf50280/mzaf_7053511811534925117.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "381558942",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 381558942「Thomas Köner《Permafrost》」：曲目 5/6 對上 MB 原盤（Apple 共 6 軌），取第 1 軌〈Nival〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Thomas Köner",
+   "album": "Nunatak Gongamur",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "38e07f35-6617-3b46-8262-cbd377373b32",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗黑 ambient：Köner 首作，把鑼浸在水裡錄下的低頻嗡鳴，冰冷、緩慢、沒有人的痕跡，是極地 ambient 的起點。｜策展無疑點｜MB release-group 38e07f35-6617-3b46-8262-cbd377373b32：title「Nunatak Gongamur」、Album、first-release-date 1990、artist-credit「Thomas Köner」。證據：https://musicbrainz.org/release-group/38e07f35-6617-3b46-8262-cbd377373b32 https://coverartarchive.org/release-group/38e07f35-6617-3b46-8262-cbd377373b32/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/38e07f35-6617-3b46-8262-cbd377373b32/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 2266,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 4/5/5（Last.fm listeners 2266）"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 2266），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "整張只用一種音色：經過電子處理的鑼。1965 年生於西德波鴻的 Thomas Köner 是多媒體藝術家，也是 dub techno 雙人組合 Porter Ricks 的一半。Köner 的個人發行由此開頭，Barooni 在 1990 年出了限量 CD，編號 BAR 002。11 首全無標題，合起來約有 48 分鐘。鑼在共鳴空間裡錄下，再處理成低頻的深井、哀鳴與偶爾的尖嘯，沒有打擊樂也沒有鼓機，慢得像冰河移動。盤名 nunatak 指冰原中突出的岩石孤峰。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/38e07f35-6617-3b46-8262-cbd377373b32",
+     "https://en.wikipedia.org/wiki/Nunatak_Gongamur",
+     "https://igloomag.com/?p=3248",
+     "https://popmatters.com/132255-thomas-koener-nunatak-teimo-permafrost-2496124629.html",
+     "https://en.wikipedia.org/wiki/Thomas_Köner",
+     "https://burningambulance.com/2010/12/14/thomas-koner"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d0/3c/ba/d03cbade-9357-0085-e712-2e994be9bb34/mzaf_5089192963403455664.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "381556117",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 381556117「Thomas Köner《Nunatak》」：Apple 收錄名《Nunatak》11 軌＝MB 原盤 11 首無題曲；藝人目錄逐首核對，取第 1 軌〈Untitled, Pt. 1〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kammarheit",
+   "album": "The Starwheel",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4837e8bc-5d76-37ee-b171-443a97246b55",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗黑 ambient：Cyclic Law 時代 dark ambient 的標竿：厚重合成器墊與遠處金屬共鳴，無鼓、包覆、冷到骨子裡。｜策展無疑點｜MB release-group 4837e8bc-5d76-37ee-b171-443a97246b55：title「The Starwheel」、Album、first-release-date 2005、artist-credit「Kammarheit」。證據：https://musicbrainz.org/release-group/4837e8bc-5d76-37ee-b171-443a97246b55 https://coverartarchive.org/release-group/4837e8bc-5d76-37ee-b171-443a97246b55/front https://music.apple.com/us/album/the-starwheel/220399988?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2005,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4837e8bc-5d76-37ee-b171-443a97246b55/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 45208,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 3/3/4（Last.fm listeners 45208）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "同名曲拆成兩首，一首順時針轉，另一首逆時針轉。Kammarheit 是瑞典 Umeå 的 Pär Boström 獨自經營的計畫，這是第二張正式專輯。〈The Starwheel (Clockwise)〉長 6 分半，〈Counter Clockwise〉近 5 分鐘。Cyclic Law 在 2005 年出版，目錄號 12th Cycle，8 首加起來大概 46 分鐘。那些長音與憂鬱的聲景裡帶著深沉的寧靜，被廠方列為 Kammarheit 的第二部「冥想」。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/6f2f5e10-e49c-45ff-9a8f-0c26bc6d2a6b",
+     "https://en.wikipedia.org/wiki/Kammarheit",
+     "https://cycliclaw.bandcamp.com/album/the-starwheel",
+     "https://musicbrainz.org/release-group/4837e8bc-5d76-37ee-b171-443a97246b55"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cc/24/ac/cc24aca9-7d8a-feae-3a19-3b12e52eb567/mzaf_5981063103005060923.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "220399988",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 220399988「Kammarheit《The Starwheel》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Hypnagoga〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Atrium Carceri",
+   "album": "Cellblock",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4c62e2ab-14a1-3f88-92c1-d30a9107626d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗黑 ambient：Atrium Carceri 首作，監獄走廊般的殘響、鐵門與低頻嗡鳴構成的敘事型 dark ambient，陰冷壓抑。｜策展無疑點｜MB release-group 4c62e2ab-14a1-3f88-92c1-d30a9107626d：title「Cellblock」、Album、first-release-date 2003-09-02、artist-credit「Atrium Carceri」。證據：https://musicbrainz.org/release-group/4c62e2ab-14a1-3f88-92c1-d30a9107626d https://coverartarchive.org/release-group/4c62e2ab-14a1-3f88-92c1-d30a9107626d/front https://music.apple.com/us/album/cellblock/1083142497?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2003,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4c62e2ab-14a1-3f88-92c1-d30a9107626d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 20788,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 3/3/4（Last.fm listeners 20788）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一座腐朽的牢房，是後來十多張專輯共用的故事入口。Simon Heath 獨自負責 Atrium Carceri 的作曲、製作與母帶。系列由這張打頭，日後擴展成橫跨十張以上的連續故事。2003 年 9 月，它以 CMI125 進了瑞典 Cold Meat Industry 的目錄。主題圍繞創傷、孤立、恐懼與憂鬱，篇幅是 12 首、約 43 分鐘。合成器、音效、電影取樣與鋼琴，做出緩慢的節奏與苦澀的旋律。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/c3779a18-1e8b-4e88-a442-e27cee57d870",
+     "https://en.wikipedia.org/wiki/Atrium_Carceri",
+     "https://cryochamber.bandcamp.com/album/cellblock",
+     "https://en.wikipedia.org/wiki/Cold_Meat_Industry",
+     "https://musicbrainz.org/release-group/4c62e2ab-14a1-3f88-92c1-d30a9107626d"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/df/02/0f/df020fc1-0281-a00f-fe64-1f70adb4a6ca/mzaf_14130761496985117686.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1083142497",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 1083142497「Atrium Carceri《Cellblock》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Entrance〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Belong",
+   "album": "October Language",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "349ac32b-7bf3-30d0-bc3e-225ef25ba47b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "drone：紐奧良雙人組的 shoegaze drone，吉他被失真與殘響磨成一片霧牆，無鼓、糊、卡崔娜後的灰暗。｜⚠ 色溫偏灰而非冰冷，估 −0.7；若評分往中性靠會貼邊｜MB release-group 349ac32b-7bf3-30d0-bc3e-225ef25ba47b：title「October Language」、Album、first-release-date 2006-02-08、artist-credit「Belong」。證據：https://musicbrainz.org/release-group/349ac32b-7bf3-30d0-bc3e-225ef25ba47b https://coverartarchive.org/release-group/349ac32b-7bf3-30d0-bc3e-225ef25ba47b/front https://music.apple.com/us/album/october-language/1346890785?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/349ac32b-7bf3-30d0-bc3e-225ef25ba47b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 4,
+    "listeners": 109028,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 3/2/4（Last.fm listeners 109028）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "錄在颶風之前，這張卻被樂評貼上卡崔娜的標籤。2002 年，Turk Dietrich 與 Michael Jones 在紐奧良成軍為 Belong，出道作就是這張。音樂約在 2004 年成形，Telefon Tel Aviv 的 Joshua Eustis 做母帶。失真的吉他和合成器透過效果器堆成霧牆，像抽掉鼓、也抽掉人聲的 My Bloody Valentine。Carpark 到 2006 年 2 月才發行，颶風的連結是評論與讀者事後的聯想。",
+    "sourceUrls": [
+     "https://store.carparkrecords.com/products/cak031-belong-october-language",
+     "https://en.wikipedia.org/wiki/October_Language",
+     "https://igloomag.com/reviews/belong-october-language-spectrum-spools",
+     "https://www.offbeat.com/music/belong-october-language-carpark/",
+     "https://en.wikipedia.org/wiki/Belong_(band)",
+     "https://musicbrainz.org/release-group/349ac32b-7bf3-30d0-bc3e-225ef25ba47b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/07/98/07/0798074a-247d-8afb-ad97-a3b69968de59/mzaf_12219694283691956626.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1346890785",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1346890785「Belong《October Language》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈I Never Lose. Never Really〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Inade",
+   "album": "Aldebaran",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "01c40aa2-da2d-30de-b355-cc4b9b88f0e4",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗黑 ambient：德國 Inade 的宇宙論 dark ambient 代表作，深空低頻與金屬共鳴層層堆疊，無鼓、龐大、冰冷。｜策展無疑點｜MB release-group 01c40aa2-da2d-30de-b355-cc4b9b88f0e4：title「Aldebaran」、Album、first-release-date 1996、artist-credit「Inade」。證據：https://musicbrainz.org/release-group/01c40aa2-da2d-30de-b355-cc4b9b88f0e4 https://coverartarchive.org/release-group/01c40aa2-da2d-30de-b355-cc4b9b88f0e4/front https://music.apple.com/us/album/aldebaran-expanded/1624177267?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/01c40aa2-da2d-30de-b355-cc4b9b88f0e4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 3646,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 4/4/5（Last.fm listeners 3646）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Inade 說，他們想超越環境音樂偶爾靜態、常常重複的做法。Inade 是 Knut Enderlein 與 René Lehmann 組成的德國二人組。英國 Cold Spring 在 1996 年替他們出了這張，編號 CSR13CD，8 軌約 63 分鐘。曲名分成四組，各分 Part 1 與 Part 2，開場第一段就有約 11 分鐘。長音場、脈動式節奏與極簡質地，透出工業 ambient 的影響，荒涼而冰冷。樂評把專輯名讀成象徵祕密知識的「黑太陽」。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/01c40aa2-da2d-30de-b355-cc4b9b88f0e4",
+     "https://musicbrainz.org/release/c39f1add-fd07-406c-bc58-ded337516230",
+     "https://www.sonicimmersion.org/inade-aldebaran",
+     "https://musicbrainz.org/release/f9c9f82b-dffc-3d8e-b2a2-252133eedb21",
+     "https://goout.net/sk/inade/pzgmdqg/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music7/v4/cd/b7/cb/cdb7cb00-ebfa-be57-96bd-fd8c62f95076/mzaf_6376620460051118589.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "506950511",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 506950511「INADE《Aldebaran》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Signals from 68 Dimensions (I)〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sleep Research Facility",
+   "album": "Nostromo",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "release-group?query=artist:\"Sleep Research Facility\" (僅 Stealth 2012、Sargo/Posidonia 2023)",
+      "release-group?query=releasegroup:\"Nostromo\" AND artist:\"Sleep Research Facility\""
+     ],
+     "checkedAt": "2026-10-22",
+     "conclusion": "MB 有此藝人但無《Nostromo》(2001, Cold Spring) 的 release-group；Discogs master 112833 與 Apple Music 可證"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/112833",
+     "https://music.apple.com/us/album/nostromo/501760024",
+     "https://coldspring.co.uk/"
+    ],
+    "manualRuling": "雲端主線 2026-10-22 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261022-md1）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "暗黑 ambient：以《異形》太空船為題的五段機艙低鳴，幾乎只有次低頻與引擎殘響，是 isolationist 太空 ambient 的經典。｜策展無疑點｜MB 查無（MB 有此藝人但無《Nostromo》(2001, Cold Spring) 的 release-group；Discogs master 112833 與 Apple Music 可證），走 §1 人工身分。證據：https://www.discogs.com/master/112833 https://music.apple.com/us/album/nostromo/501760024 https://coldspring.co.uk/ https://music.apple.com/us/album/nostromo/501760024?uo=4 https://www.discogs.com/master/112833",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/08/6a/67/086a673b-faca-8bff-fbd8-73b88b2ef658/823566044420.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "appleCollectionId": "501760024",
+    "note": "人工身分卡（MB 查無）；Apple us 501760024《Nostromo》Sleep Research Facility 專輯封面 600px，主線 2026-10-22 縮圖表目視與 Discogs master 封面一致（黑底白噪聲波形＋Nostromo 字樣）。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 11267,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 2/4/4（Last.fm listeners 11267）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "電影裡的 Nostromo 只有三層甲板，這張多蓋了兩層。Kevin Doherty 從 2000 年起在格拉斯哥的自家工作室做 Sleep Research Facility。靈感是 1979 年電影《異形》的太空貨船，A、B、C 之外再加上虛構的 D、E 兩層。五首就叫 a-deck 到 e-deck，跳動的低音循環、長音合成器和弦與靜電劈啪交織其中。他的音樂設計成無節拍、能助眠。2001 年 Cold Spring 發行，限量 1000 張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Nostromo_(album)",
+     "https://en.wikipedia.org/wiki/SleepResearch_Facility",
+     "https://www.discogs.com/master/112833",
+     "https://music.apple.com/us/album/nostromo/501760024",
+     "https://coldspring.co.uk/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/43/ec/ca/43eccaae-4d35-776c-0682-cdd4b3565db8/mzaf_10606649688639718336.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "501760024",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 501760024「Sleep Research Facility《Nostromo》」：人工身分卡；Apple A-Deck～E-Deck 五軌＋再版加曲 Narcissus，取原盤首曲 A-Deck，取第 1 軌〈A-Deck〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Svarte Greiner",
+   "album": "Knive",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d67be5f4-7d71-3ba0-89c0-f2753d5f5bbf",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗黑 ambient：Deaf Center 一員 Erik K Skodvin 的個人首作，大提琴刮擦與磁帶殘響做成的黑暗森林 drone，無鼓、糊、冷。｜策展無疑點｜MB release-group d67be5f4-7d71-3ba0-89c0-f2753d5f5bbf：title「Knive」、Album、first-release-date 2006-11-07、artist-credit「Svarte Greiner」。證據：https://musicbrainz.org/release-group/d67be5f4-7d71-3ba0-89c0-f2753d5f5bbf https://coverartarchive.org/release-group/d67be5f4-7d71-3ba0-89c0-f2753d5f5bbf/front https://music.apple.com/us/album/knive/339792306?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d67be5f4-7d71-3ba0-89c0-f2753d5f5bbf/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 14137,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 2/4/4（Last.fm listeners 14137）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "acoustic doom 這個次類型，廠方說從這張開始。Svarte Greiner 是 Deaf Center 大提琴手 Erik K Skodvin 的個人化名。這個說法寫在 2017 年 Skodvin 自家廠牌 Miasmah 的重發頁上。原版編號 TYPE 016，2006 年 11 月出自英國的 Type。聲響裡有不協和的大提琴、教堂管風琴、失真吉他與木頭般的節拍，再織進烏鴉、樹枝、雨與風的實地收音，像午夜走在森林裡。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/89f108c5-104a-4789-9060-4b375ce28f66",
+     "https://svartegreiner.bandcamp.com/album/knive",
+     "https://miasmah.bandcamp.com/",
+     "https://musicbrainz.org/release-group/583ef4ed-5751-4db9-9178-3e3f4bb91aaa",
+     "https://musicbrainz.org/release-group/d67be5f4-7d71-3ba0-89c0-f2753d5f5bbf"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a7/71/2b/a7712bf9-1e52-e997-9073-260d1cc58023/mzaf_11113776443580798319.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "339792306",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 339792306「Svarte Greiner《Knive》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈The Boat Was My Friend〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Deaf Center",
+   "album": "Owl Splinters",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "583ef4ed-5751-4db9-9178-3e3f4bb91aaa",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗黑 ambient：Deaf Center 第二張，大提琴長音與低頻霧更厚更黑，無拍、包覆、陰冷，是 Type 廠牌黑暗一側的代表。｜策展無疑點｜MB release-group 583ef4ed-5751-4db9-9178-3e3f4bb91aaa：title「Owl Splinters」、Album、first-release-date 2011-02-10、artist-credit「Deaf Center」。證據：https://musicbrainz.org/release-group/583ef4ed-5751-4db9-9178-3e3f4bb91aaa https://coverartarchive.org/release-group/583ef4ed-5751-4db9-9178-3e3f4bb91aaa/front https://music.apple.com/us/album/owl-splinters/415337691?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/583ef4ed-5751-4db9-9178-3e3f4bb91aaa/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 4,
+    "listeners": 107779,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 3/2/4（Last.fm listeners 107779）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "隔了約六年才交出下一張，聲音也從 lo-fi 變得精緻。挪威的 Deaf Center 由拉大提琴的 Erik Skodvin 與彈鋼琴的 Otto Totland 組成。前一張是《Pale Ravine》，這回兩人進了 Nils Frahm 的錄音室 Durton。巨大陰暗的長音之間，穿插較安靜的鋼琴與大提琴小品。英國的 Type 在 2011 年 2 月以 TYPE080 出版，收錄 8 首，播完約需 44 分鐘。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/d16689fc-1575-4468-b031-ba16ba0238a4",
+     "https://deafcenter.bandcamp.com/album/owl-splinters",
+     "https://miasmah.bandcamp.com/",
+     "https://musicbrainz.org/release-group/583ef4ed-5751-4db9-9178-3e3f4bb91aaa"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b5/a1/cf/b5a1cff8-a425-a1dd-6e54-4f775d05f6c2/mzaf_6853086497295329312.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "415337691",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 415337691「Deaf Center《Owl Splinters》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Divided〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Scorn",
+   "album": "Evanescence",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a4d4cb7b-5fdb-3ed7-b799-217536a6fa5b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "isolationist：Mick Harris 的 Scorn 從 dub 走向 isolationist 的關鍵作，極慢的 dub 節拍沉在次低頻與殘響裡，有拍無攻擊性，陰冷。｜⚠ 有慢拍；依 10-22 規則「有拍沒攻擊性」應落 2–2.9，但若評分把工業 dub 拍判躁會掉到亢奮｜MB release-group a4d4cb7b-5fdb-3ed7-b799-217536a6fa5b：title「Evanescence」、Album、first-release-date 1994-07-01、artist-credit「Scorn」。證據：https://musicbrainz.org/release-group/a4d4cb7b-5fdb-3ed7-b799-217536a6fa5b https://coverartarchive.org/release-group/a4d4cb7b-5fdb-3ed7-b799-217536a6fa5b/front https://music.apple.com/us/album/evanescence/265014286?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a4d4cb7b-5fdb-3ed7-b799-217536a6fa5b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 26861,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 2/3/2（Last.fm listeners 26861）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "隔年貝斯手就離團，這成了 Scorn 兩人最後一張完整專輯。Scorn 的 Mick Harris 與 Nic Bullen 都出身 Napalm Death，這是兩人第三張專輯。唱片 1994 年由 Earache 發行，Bullen 則在 1995 年離開。錄音地點是伯明罕的 Arena Productions，Bullen 彈貝斯，Harris 負責鼓編程。評論說它是迴圈與節奏堆成的 dub 化電子樂，核心是 Bullen 的貝斯，一路穩定地往前碾。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Evanescence_(Scorn_album)",
+     "https://musicbrainz.org/release-group/a4d4cb7b-5fdb-3ed7-b799-217536a6fa5b",
+     "https://thequietus.com/?p=15949",
+     "https://www.decibelmagazine.com/?p=49541"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/99/f6/4a/99f64aa2-3495-a39b-39c3-ebc69b842752/mzaf_337651535501068458.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "265014286",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 265014286「Scorn《Evanescence》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Silver Rain Fell〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Nurse With Wound",
+   "album": "Salt Marie Celeste",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d2895b41-d826-3539-8831-d3e476cb11dc",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗黑 ambient：NWW 一小時的幽靈船 drone，木殼吱呀與海潮低鳴無盡循環，無拍、糊、陰冷，是暗 drone 的代表作。｜策展無疑點｜MB release-group d2895b41-d826-3539-8831-d3e476cb11dc：title「Salt Marie Celeste」、Album、first-release-date 2003-02、artist-credit「Nurse With Wound」。證據：https://musicbrainz.org/release-group/d2895b41-d826-3539-8831-d3e476cb11dc https://coverartarchive.org/release-group/d2895b41-d826-3539-8831-d3e476cb11dc/front https://music.apple.com/us/album/salt-marie-celeste/93543793?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2003,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d2895b41-d826-3539-8831-d3e476cb11dc/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 4750,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 4/4/5（Last.fm listeners 4750）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "整張只有一首曲子，近一小時都繞著兩個小調和弦。1981 年起，Nurse With Wound 只剩 Steven Stapleton 一人。錄音排在 2002 年 5 月到 9 月，地點是 Preston 的 Watertower。曲長 61 分 58 秒，兩個嘆息般的和弦緩步循環，四周是風聲與木頭的吱呀。同年 6 月，友人 Daragh Greally 過世，專輯就獻給他。United Dairies 的版本在 2003 年 2 月面世。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/341936-Nurse-With-Wound-Salt-Marie-Celeste",
+     "https://spectrumculture.com/?p=94026",
+     "https://de.wikipedia.org/wiki/Nurse_with_Wound",
+     "https://en.wikipedia.org/wiki/Nurse_with_Wound",
+     "https://musicbrainz.org/release-group/d2895b41-d826-3539-8831-d3e476cb11dc"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/44/95/80/44958001-b020-fd7a-ad2e-a9574a26dda3/mzaf_5202025316365028230.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "93543793",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 93543793「Nurse With Wound《Salt Marie Celeste》」：單曲目專輯 1/1 對上（機器門檻最少 3 首），取第 1 軌〈Salt Marie Celeste〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lull",
+   "album": "Cold Summer",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a2d5281b-7b03-31d5-89c3-ad0d03d8a582",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "isolationist：Mick Harris 的 Lull 是 isolationist 一詞的原型：近一小時的低頻嗡鳴與殘響霧，無鼓無旋律，冰冷空曠。｜策展無疑點｜MB release-group a2d5281b-7b03-31d5-89c3-ad0d03d8a582：title「Cold Summer」、Album、first-release-date 1994、artist-credit「Lull」。證據：https://musicbrainz.org/release-group/a2d5281b-7b03-31d5-89c3-ad0d03d8a582 https://coverartarchive.org/release-group/a2d5281b-7b03-31d5-89c3-ad0d03d8a582/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a2d5281b-7b03-31d5-89c3-ad0d03d8a582/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 8009,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 2/4/4（Last.fm listeners 8009）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "鼓手出身的他，靠取樣器、殘響踏板和四軌機開了 Lull。這位鼓手是 1991 年離開 Napalm Death 的 Mick Harris。這張從 1994 年 4 月 25 日到 30 日在 Wall of Silence 錄音並混音，都由 Harris 自己來。四首各長 16 至 24 分鐘，合計約 79 分半。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/155999-Lull-Cold-Summer",
+     "https://en.wikipedia.org/wiki/Lull_(band)",
+     "https://en.wikipedia.org/wiki/Mick_Harris",
+     "https://en.wikipedia.org/wiki/Isolationism_(music)",
+     "https://www.qobuz.com/at-de/interpreter/lull/1027037",
+     "https://musicbrainz.org/release-group/a2d5281b-7b03-31d5-89c3-ad0d03d8a582"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "Apple us 以藝人搜尋得兩位同名 Lull 皆非 Mick Harris，無本盤。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Final",
+   "album": "One",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "fc3b182b-1224-3ab0-bafe-88746099169b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "isolationist：Justin Broadrick 在 Godflesh 之外的 isolationist 計畫，吉他回授拉成厚重低頻 drone，無鼓、糊、冷。｜策展無疑點｜MB release-group fc3b182b-1224-3ab0-bafe-88746099169b：title「One」、Album、first-release-date 1993、artist-credit「Final」。證據：https://musicbrainz.org/release-group/fc3b182b-1224-3ab0-bafe-88746099169b https://coverartarchive.org/release-group/fc3b182b-1224-3ab0-bafe-88746099169b/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fc3b182b-1224-3ab0-bafe-88746099169b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1554,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 1554）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 5、accessibility 2；obscurity=5 但沒有遺珠級證據（listeners 1554），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "最後一首把 1983 到 1987 年的舊錄音剪成一曲。Godflesh 的 Justin Broadrick 1993 年重啟 Final，要探索無節拍的空間。前七首則是 1992 至 1993 年在 Avalanche 錄製的。Sentrax 在英國於 1993 年先出，隔年的美國版縮短了長度，削掉的正是最後一首。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Justin_Broadrick",
+     "https://en.wikipedia.org/wiki/Final_(band)",
+     "https://www.discogs.com/release/91460-Final-One",
+     "https://www.discogs.com/master/40980-Final-One",
+     "https://godflesh.com/projects/final/",
+     "https://scaruffi.com/vol6/godflesh.html",
+     "https://musicbrainz.org/release-group/fc3b182b-1224-3ab0-bafe-88746099169b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "Apple us 藝人 Final 目錄無 1993《One》（只有 2025 專輯）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kali Malone",
+   "album": "Living Torch",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4a6ab463-7c75-40d2-a4b6-e6f80321bcbd",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "drone：Malone 在 GRM 做的長篇 drone，長號、低音單簧管與合成器疊成厚重和聲塊，無拍、包覆、陰冷。｜策展無疑點｜MB release-group 4a6ab463-7c75-40d2-a4b6-e6f80321bcbd：title「Living Torch」、Album、first-release-date 2022-07-07、artist-credit「Kali Malone」。證據：https://musicbrainz.org/release-group/4a6ab463-7c75-40d2-a4b6-e6f80321bcbd https://coverartarchive.org/release-group/4a6ab463-7c75-40d2-a4b6-e6f80321bcbd/front https://music.apple.com/us/album/living-torch/1775483669?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4a6ab463-7c75-40d2-a4b6-e6f80321bcbd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 15102,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 4/4/4（Last.fm listeners 15102）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "這是 GRM 為一整座揚聲器管弦樂團委託的作品。1994 年生、在 Denver 長大的作曲家 Kali Malone，2012 年移居斯德哥爾摩。那座樂團是 GRM 旗下的 Acousmonium，作品在巴黎 INA GRM 寫成。編制有長號與低音單簧管，她自己操作 Éliane Radigue 的 ARP 2500 與模組合成器。純律和聲堆成厚重的 drone，兩面各一首。黑膠版 2022 年 7 月上架，廠牌是 Portraits GRM。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/23811443-Kali-Malone-Living-Torch",
+     "https://en.wikipedia.org/wiki/Kali_Malone",
+     "https://kalimalone.bandcamp.com/album/living-torch",
+     "https://musicbrainz.org/release-group/4a6ab463-7c75-40d2-a4b6-e6f80321bcbd"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/d7/cf/19d7cf5e-4320-735e-3785-1c2bf4d0e444/mzaf_6523513440265000908.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1775483669",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 1775483669「Kali Malone《Living Torch》」：2/2 對上（機器門檻最少 3 首），取第 1 軌〈Living Torch I〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lawrence English",
+   "album": "Kiri No Oto",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "901bf46a-d0c6-3fb7-8719-1bfb9379784a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "drone：English 以「霧之音」為題的厚重 drone，聲源全糊成一片灰色低頻霧，無拍、包覆、冷。｜策展無疑點｜MB release-group 901bf46a-d0c6-3fb7-8719-1bfb9379784a：title「Kiri No Oto」、Album、first-release-date 2008-07-28、artist-credit「Lawrence English」。證據：https://musicbrainz.org/release-group/901bf46a-d0c6-3fb7-8719-1bfb9379784a https://coverartarchive.org/release-group/901bf46a-d0c6-3fb7-8719-1bfb9379784a/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/901bf46a-d0c6-3fb7-8719-1bfb9379784a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 6574,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 3/4/4（Last.fm listeners 6574）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "焦點不停游移，連聽的人的耳朵也成了霧的一層。這張的盤名是日文「霧之音」，出自 Brisbane 的 Lawrence English，2008 年的作品。他用多種混音手法、類比濾波與和聲性失真，撐出寬闊的聲音空間。聲源兼有樂器與現場採集，錄於波蘭、紐西蘭、澳洲與日本。Touch 發行的這張收八首，大約 43 分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1369671-Lawrence-English-Kiri-No-Oto",
+     "https://lawrenceenglish.bandcamp.com/album/kiri-no-oto",
+     "https://www.discogs.com/master/329958-Lawrence-English-Kiri-No-Oto",
+     "https://en.wikipedia.org/wiki/Lawrence_English",
+     "https://musicbrainz.org/release-group/901bf46a-d0c6-3fb7-8719-1bfb9379784a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ac/9a/46/ac9a46f3-9415-d1e8-0464-0bdfaf177bba/mzaf_9518479230342423897.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "285487226",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 285487226「Lawrence English《English: Kiri No Oto》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Organs Lost at Sea〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lawrence English",
+   "album": "Cruel Optimism",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0415c2ac-380b-4049-9549-764805b3683f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "drone：English 最厚重的一張，銅管、管風琴與失真 drone 疊成壓迫的音牆，無鼓、低頻淹沒、陰鬱。｜策展無疑點｜MB release-group 0415c2ac-380b-4049-9549-764805b3683f：title「Cruel Optimism」、Album、first-release-date 2017-02-17、artist-credit「Lawrence English」。證據：https://musicbrainz.org/release-group/0415c2ac-380b-4049-9549-764805b3683f https://coverartarchive.org/release-group/0415c2ac-380b-4049-9549-764805b3683f/front https://music.apple.com/us/album/cruel-optimism/1178927541?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0415c2ac-380b-4049-9549-764805b3683f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 11953,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 3/4/4（Last.fm listeners 11953）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "難民危機、無人機與脫歐，是這張要回應的事。主持 Room40 的 Lawrence English 這次找來多位樂手合作，把 2016 年前後的事件寫進 drone 裡，其中還有 Black Lives Matter 與對平民使用的聲波武器。標題借自 Lauren Berlant 的同名文章，那篇文章談創傷與依附。參與錄音的有 The Necks 的 Tony Buck、Swans 的 Norman Westberg 等人。2017 年 2 月，專輯在他自己的廠牌上架。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/9766848-Lawrence-English-Cruel-Optimism",
+     "https://lawrenceenglish.bandcamp.com/album/cruel-optimism",
+     "https://boomkat.com/products/cruel-optimism",
+     "https://musicbrainz.org/release-group/0415c2ac-380b-4049-9549-764805b3683f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/88/5f/c0/885fc026-d114-f773-7000-76338ad6dd30/mzaf_2794119573088594250.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1178927541",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1178927541「Lawrence English《Cruel Optimism》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Hard Rain (feat. Thor Harris & Heinz Riegler)〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Abul Mogard",
+   "album": "Circular Forms",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "16f6592f-0ddc-4b6b-bdad-a4df00bd3884",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "drone：Abul Mogard 的厚合成器 drone 代表作，模組合成器墊慢慢膨脹成包覆一切的霧，無拍、重、灰冷。｜策展無疑點｜MB release-group 16f6592f-0ddc-4b6b-bdad-a4df00bd3884：title「Circular Forms」、Album、first-release-date 2015-09-03、artist-credit「Abul Mogard」。證據：https://musicbrainz.org/release-group/16f6592f-0ddc-4b6b-bdad-a4df00bd3884 https://coverartarchive.org/release-group/16f6592f-0ddc-4b6b-bdad-a4df00bd3884/front https://music.apple.com/us/album/circular-forms/1803243230?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/16f6592f-0ddc-4b6b-bdad-a4df00bd3884/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 41746,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 2/3/4（Last.fm listeners 41746）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一說是塞爾維亞的退休工人，一說是義大利人的化名。兩種說法講的都是 Abul Mogard，一個做緩慢 drone 的名字。前一種說他大半輩子在工廠工作，退休後才玩起合成器；後一種把他記為義大利音樂人 Guido Zen。作曲從 2013 年 12 月持續至 2014 年 10 月，器材是 Farfisa 風琴、合成器加上電腦。B 面只放一首，長 16 分半。2015 年 9 月 3 日以黑膠由 Ecstatic 發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7407312-Abul-Mogard-Circular-Forms",
+     "https://boomkat.com/products/circular-forms",
+     "https://abulmogard.bandcamp.com/album/circular-forms",
+     "https://www.discogs.com/artist/2803639-Abul-Mogard",
+     "https://musicbrainz.org/release-group/16f6592f-0ddc-4b6b-bdad-a4df00bd3884"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/c9/5f/34c95f38-5dfb-fc40-5162-59255159ab0a/mzaf_7947346747455188506.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1803243230",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1803243230「Abul Mogard《Circular Forms》」：曲目 4/4 對上 MB 原盤（Apple 共 4 軌），取第 1 軌〈Slate-Coloured Storm〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Abul Mogard",
+   "album": "Above All Dreams",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "de5678c2-bebb-41ca-bce2-0af45b4dee6e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "drone：Mogard 最受推崇的一張，合成器與失真人聲樣本拉成緩慢的巨浪，無拍、低頻厚、憂鬱陰冷。｜策展無疑點｜MB release-group de5678c2-bebb-41ca-bce2-0af45b4dee6e：title「Above All Dreams」、Album、first-release-date 2018-06-21、artist-credit「Abul Mogard」。證據：https://musicbrainz.org/release-group/de5678c2-bebb-41ca-bce2-0af45b4dee6e https://coverartarchive.org/release-group/de5678c2-bebb-41ca-bce2-0af45b4dee6e/front https://music.apple.com/us/album/above-all-dreams/1803242597?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/de5678c2-bebb-41ca-bce2-0af45b4dee6e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 13502,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 2/4/2（Last.fm listeners 13502）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "他說作品的形狀與密度，受了巴西音樂的影響。Abul Mogard 習慣長時間即興演奏模組合成器，像樂團培養默契那樣發展作品，這回點名的是 Tom Zé、Jobim 與 Chico Buarque。2015 到 2018 年間，他用模組合成器、Farfisa 風琴、效果器與電腦作曲，前後約三年。成品是六首長曲，一共 66 分鐘，聲音飄渺如夢，被形容為一組壯闊的寬銀幕風景。發行的是 Ecstatic，時間在 2018 年 6 月。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/12129468-Abul-Mogard-Above-All-Dreams",
+     "https://boomkat.com/products/above-all-dreams",
+     "https://abulmogard.bandcamp.com/album/above-all-dreams",
+     "https://www.discogs.com/artist/2803639-Abul-Mogard",
+     "https://musicbrainz.org/release-group/de5678c2-bebb-41ca-bce2-0af45b4dee6e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e0/3e/6d/e03e6ddb-2c7c-a421-06f4-a37264d905ee/mzaf_12813565599820988951.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1803242597",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1803242597「Abul Mogard《Above All Dreams》」：曲目 6/6 對上 MB 原盤（Apple 共 6 軌），取第 1 軌〈Quiet Dreams〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "loscil",
+   "album": "Submers",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c5d823c2-af3b-3162-8223-86236da8b285",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "drone：Loscil 以潛艇為題的 dub ambient，極慢的次低頻脈動與水下殘響，拍子極稀、包覆、冰冷。｜策展無疑點｜MB release-group c5d823c2-af3b-3162-8223-86236da8b285：title「Submers」、Album、first-release-date 2002-11-04、artist-credit「loscil」。證據：https://musicbrainz.org/release-group/c5d823c2-af3b-3162-8223-86236da8b285 https://coverartarchive.org/release-group/c5d823c2-af3b-3162-8223-86236da8b285/front https://music.apple.com/us/album/submers/40888244?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c5d823c2-af3b-3162-8223-86236da8b285/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 50023,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 3/3/4（Last.fm listeners 50023）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "九首曲名全是潛艇，末曲獻給 Kursk 號的罹難者。loscil 由加拿大人 Scott Morgan 一人操刀，曲目裡有〈Argonaut I〉〈Gymnote〉〈Nautilus〉，Gymnote 是早期的潛艇設計。許多聲音取自古典樂素材，經他取樣後再扭曲。前作《Triple Point》探索次原子尺度，這張改往水下深處潛。評論聽到的重點是節奏的波浪，比起前作，重擊與脈衝都退到了後面。2002 年 11 月，Kranky 讓它上架。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/73774-Loscil-Submers",
+     "https://en.wikipedia.org/wiki/Submers",
+     "https://en.wikipedia.org/wiki/Loscil",
+     "https://loscil.bandcamp.com/album/submers",
+     "https://musicbrainz.org/release-group/c5d823c2-af3b-3162-8223-86236da8b285"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/32/a3/56/32a35670-55aa-365e-e5f4-ee87a5131df0/mzaf_16973187620746422019.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "40888244",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 40888244「Loscil《Submers》」：曲目 8/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Argonaut I〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "loscil",
+   "album": "Monument Builders",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b7cba014-87ee-41e2-b671-41dd0696e136",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "drone：Loscil 最黑的一張，受人類世與廢墟啟發，銅管樣本與失真低頻墊緩慢推進，拍稀、重、陰冷。｜策展無疑點｜MB release-group b7cba014-87ee-41e2-b671-41dd0696e136：title「Monument Builders」、Album、first-release-date 2016-11-11、artist-credit「loscil」。證據：https://musicbrainz.org/release-group/b7cba014-87ee-41e2-b671-41dd0696e136 https://coverartarchive.org/release-group/b7cba014-87ee-41e2-b671-41dd0696e136/front https://music.apple.com/us/album/monument-builders/1164169989?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b7cba014-87ee-41e2-b671-41dd0696e136/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 66730,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 3/3/4（Last.fm listeners 66730）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "電影配樂與空拍工業照片，啟發了這張。溫哥華的 Scott Morgan 以 loscil 為名做 drone，這回的靈感是電影《Koyaanisqatsi》的配樂與 Edward Burtynsky 從空中拍下的工業景觀。這批曲子成形於親友重病之際，談的是死亡的必然。聲音陰暗，靠空間與重複一路推進。2016 年 11 月 11 日交給 Kranky 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/b7cba014-87ee-41e2-b671-41dd0696e136",
+     "https://en.wikipedia.org/wiki/Loscil",
+     "https://loscil.bandcamp.com/album/monument-builders",
+     "https://igloomag.com/?p=75435"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/be/57/11/be5711a5-7d38-0f2f-d205-874e2f0bab8b/mzaf_5405284059522968338.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1164169989",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1164169989「Loscil《Monument Builders》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Drained Lake〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Rafael Anton Irisarri",
+   "album": "The Shameless Years",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "033539c2-8b8b-4487-b559-5a991b2b49b9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "drone：Irisarri 的厚重 drone 代表作，吉他與合成器被失真與殘響糊成灰色巨牆，無鼓、低頻淹沒、陰鬱。｜策展無疑點｜MB release-group 033539c2-8b8b-4487-b559-5a991b2b49b9：title「The Shameless Years」、Album、first-release-date 2017-08-25、artist-credit「Rafael Anton Irisarri」。證據：https://musicbrainz.org/release-group/033539c2-8b8b-4487-b559-5a991b2b49b9 https://coverartarchive.org/release-group/033539c2-8b8b-4487-b559-5a991b2b49b9/front https://music.apple.com/us/album/the-shameless-years/1264525749?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/033539c2-8b8b-4487-b559-5a991b2b49b9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 19635,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 3/4/4（Last.fm listeners 19635）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "吉他、效果器和幾套老軟體，堆成一面失真的牆。Rafael Anton Irisarri 住在紐約，兼做母帶工程，2016 年底在一陣創作爆發中做出這張，手邊還多了類比處理。shoegaze 式的失真把旋律埋進噪音泛音裡。13 分鐘的〈The Faithless〉邀來 Siavash Amini，從 doom jazz 一路走向泛音群。整體氣氛倔強、哀悼而緊繃。2017 年 8 月 25 日由墨西哥的 Umor Rex 出版。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/033539c2-8b8b-4487-b559-5a991b2b49b9",
+     "https://en.wikipedia.org/wiki/Rafael_Anton_Irisarri",
+     "https://boomkat.com/products/the-shameless-years"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a5/c9/ce/a5c9ce54-5715-5e06-9d31-4242659f32a7/mzaf_13760361726955699588.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1264525749",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1264525749「Rafael Anton Irisarri《The Shameless Years》」：曲目 6/6 對上 MB 原盤（Apple 共 6 軌），取第 1 軌〈Indefinite Fields〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Rafael Anton Irisarri",
+   "album": "A Fragile Geography",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a5b837d3-b887-4f5d-ba43-dc976c4dccaa",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "drone：Irisarri 在器材被竊後重建的一張，磁帶糊與失真 drone 層層堆疊，無拍、重、冷灰。｜策展無疑點｜MB release-group a5b837d3-b887-4f5d-ba43-dc976c4dccaa：title「A Fragile Geography」、Album、first-release-date 2015-10-16、artist-credit「Rafael Anton Irisarri」。證據：https://musicbrainz.org/release-group/a5b837d3-b887-4f5d-ba43-dc976c4dccaa https://coverartarchive.org/release-group/a5b837d3-b887-4f5d-ba43-dc976c4dccaa/front https://music.apple.com/us/album/a-fragile-geography/1708362491?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a5b837d3-b887-4f5d-ba43-dc976c4dccaa/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 32216,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 3/3/4（Last.fm listeners 32216）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "搬家前幾天，錄音室被偷個精光。這位美國多樂器演奏者叫 Rafael Anton Irisarri，當時正要從西雅圖搬往紐約，樂器、錄音與檔案全數遺失。抵達紐約，迎接他的是一間空房，專輯只能從零重建。加工後的吉他、風琴質地與田野錄音，疊上西雅圖歲月半記得的旋律；〈Empire Systems〉從四個和弦擴張成循環與厚重失真。2015 年 10 月 16 日在 Room40 發行，共六首。Black Knoll 錄音室的起點，正是這張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/a5b837d3-b887-4f5d-ba43-dc976c4dccaa",
+     "https://igloomag.com/reviews/rafael-anton-irisarri-a-fragile-geography-room40",
+     "https://audiopile.ca/?p=156684"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/ff/61/b7ff61de-6cff-ed96-5d73-18618cfd5aef/mzaf_214167528308505462.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1842312181",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1842312181「Rafael Anton Irisarri《A Fragile Geography (10th Anniversary Edition)》」：曲目 7/8 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Displacement〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Troum",
+   "album": "Tjukurrpa, Part One: Harmonies",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c9789439-bccd-3763-91f4-0fcb6ee3e4a5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "drone：Maeror Tri 後身 Troum 的三部曲首章，吉他與人聲經效果器拉成厚重 drone，無鼓、糊、陰暗。｜策展無疑點｜MB release-group c9789439-bccd-3763-91f4-0fcb6ee3e4a5：title「Tjukurrpa, Part One: Harmonies」、Album、first-release-date 2001-01、artist-credit「Troum」。證據：https://musicbrainz.org/release-group/c9789439-bccd-3763-91f4-0fcb6ee3e4a5 https://coverartarchive.org/release-group/c9789439-bccd-3763-91f4-0fcb6ee3e4a5/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c9789439-bccd-3763-91f4-0fcb6ee3e4a5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 141,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 3/5/4（Last.fm listeners 141）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 4；obscurity=5 但沒有遺珠級證據（listeners 141），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "作者替它題了一句：這是醒著的人做的夢。Troum 來自德國不來梅，兩人都出自 Maeror Tri。錄音從 1998 年 9 月做到 2000 年 6 月，全在不來梅一間錄音室完成。聲源有吉他、田野錄音、手風琴與鑼，全程避開採樣機與電腦。2001 年 1 月由 Transgredient 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/c9789439-bccd-3763-91f4-0fcb6ee3e4a5",
+     "https://troum.bandcamp.com/album/tjukurrpa-part-one-harmonies",
+     "https://en.wikipedia.org/wiki/Troum"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "Apple us 藝人 Troum 目錄 12 張無本盤。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Maeror Tri",
+   "album": "Myein",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d6d1924d-5aec-349f-9456-ec795fc92738",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "drone：德國 Maeror Tri 的吉他 drone 名盤，回授與延遲堆成的灰色聲牆，無拍、糊、冷，是 Troum 之前的 drone 典範。｜策展無疑點｜MB release-group d6d1924d-5aec-349f-9456-ec795fc92738：title「Myein」、Album、first-release-date 1995-07、artist-credit「Maeror Tri」。證據：https://musicbrainz.org/release-group/d6d1924d-5aec-349f-9456-ec795fc92738 https://coverartarchive.org/release-group/d6d1924d-5aec-349f-9456-ec795fc92738/front https://music.apple.com/us/album/myein-remastered/1508586604?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d6d1924d-5aec-349f-9456-ec795fc92738/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 3644,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 3/4/4（Last.fm listeners 3644）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "團名是不太正確的拉丁文，可能指悲傷的三人。Maeror Tri 是德國的吉他 drone 三人組，1988 年 4 月在 Leer 起步。聲音全靠現場電吉他，再加上大量處理。標題曲長達 47 分鐘，由美國廠牌 ND 在 1995 年 7 月出版。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Maeror_Tri",
+     "https://musicbrainz.org/release-group/d6d1924d-5aec-349f-9456-ec795fc92738"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/ec/6e/71/ec6e7130-79a7-07d2-4fb4-6ee66af84f36/mzaf_2411457158422443131.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1508586604",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1508586604「Maeror Tri《Myein (Remastered)》」：曲目 3/3 對上 MB 原盤（Apple 共 3 軌），取第 1 軌〈Phlogiston (Remastered)〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Labradford",
+   "album": "Prazision LP",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "cbeac621-9452-352f-a233-7f8e7faf7ad5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "drone：Kranky 第一張唱片，合成器嗡鳴與吉他回授構成的暗色 drone，無鼓、糊、冷，是 post-rock drone 一脈的源頭。｜策展無疑點｜MB release-group cbeac621-9452-352f-a233-7f8e7faf7ad5：title「Prazision LP」、Album、first-release-date 1993-12-07、artist-credit「Labradford」。證據：https://musicbrainz.org/release-group/cbeac621-9452-352f-a233-7f8e7faf7ad5 https://coverartarchive.org/release-group/cbeac621-9452-352f-a233-7f8e7faf7ad5/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cbeac621-9452-352f-a233-7f8e7faf7ad5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 15425,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 4/4/4（Last.fm listeners 15425）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Kranky 給這張的編號是 KRANK 001。Labradford 組於 Virginia 州里奇蒙，三人編制，1992 年出了第一支單曲，隨後與 Kranky 簽約。這張出道作同樣在里奇蒙錄成，墊底的是 Carter Brown 的 Memorymoog、Polymoog 與 Moog Taurus II 低音踏板，Mark Nelson 負責人聲、吉他與磁帶。全盤 12 首，1993 年問世，被歸入 post-rock 與 drone。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Prazision_LP",
+     "https://en.wikipedia.org/wiki/Labradford",
+     "https://musicbrainz.org/release-group/cbeac621-9452-352f-a233-7f8e7faf7ad5"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/20/27/ed/2027ed75-5bf6-25f1-26ec-04013bb6f68e/mzaf_13548527750957592271.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "40881976",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 40881976「Labradford《Prazision》」：Apple 收錄名《Prazision》12 軌＝MB 12 首；藝人目錄核對，取第 1 軌〈Listening In Depth〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Philip Jeck",
+   "album": "Stoke",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "585dea7f-2f82-3d0a-a4de-f98d4101ba94",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 drone：Jeck 用老唱盤與破唱片做成的 drone，炒豆聲、鎖溝與殘響糊成幽暗的霧，無拍、重、冷。｜策展無疑點｜MB release-group 585dea7f-2f82-3d0a-a4de-f98d4101ba94：title「Stoke」、Album、first-release-date 2002-04、artist-credit「Philip Jeck」。證據：https://musicbrainz.org/release-group/585dea7f-2f82-3d0a-a4de-f98d4101ba94 https://coverartarchive.org/release-group/585dea7f-2f82-3d0a-a4de-f98d4101ba94/front https://music.apple.com/us/album/stoke/136695990?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/585dea7f-2f82-3d0a-a4de-f98d4101ba94/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 3500,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 4/4/4（Last.fm listeners 3500）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "他曾讓 180 台唱機一起轉。1952 年生的英國人 Philip Jeck，1979 年在紐約接觸到 DJ 的作品，才對唱機感興趣。那 180 台 Dansette 唱機出自 1993 年他與 Lol Sargent 的《Vinyl Requiem》。這張的材料是古董唱盤與舊黑膠，再加上循環與效果。唱片由 Touch 經手，2002 年 4 月面市。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/585dea7f-2f82-3d0a-a4de-f98d4101ba94",
+     "https://en.wikipedia.org/wiki/Philip_Jeck"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/96/01/59/9601594f-5ab1-7611-5c9c-577667d67601/mzaf_3725628852380996927.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "136695990",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 136695990「Philip Jeck《Stoke》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Above〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Murcof",
+   "album": "Cosmos",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "8e685ece-dadf-3164-893b-510f13f2103f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 drone：Murcof 放掉節拍後的管弦 drone，弦樂與銅管樣本沉在深空低頻裡，無拍、龐大、冰冷。｜策展無疑點｜MB release-group 8e685ece-dadf-3164-893b-510f13f2103f：title「Cosmos」、Album、first-release-date 2007-09-17、artist-credit「Murcof」。證據：https://musicbrainz.org/release-group/8e685ece-dadf-3164-893b-510f13f2103f https://coverartarchive.org/release-group/8e685ece-dadf-3164-893b-510f13f2103f/front https://music.apple.com/us/album/cosmos/1385698623?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2007,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8e685ece-dadf-3164-893b-510f13f2103f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 20414,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 3/3/4（Last.fm listeners 20414）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "搬往歐洲之前，Murcof 賣掉了手上的合成器。Murcof 背後是生於提華納的 Fernando Corona，出清的有 Roland Juno-106、Moog Prodigy 等硬體，2006 年他落腳巴塞隆納。這張幾乎全由古典樂器的錄音組成，起初只打算做成 EP，最後擴成整張。弦樂層層疊起，低頻隆隆，質地裡有碰撞與研磨，節奏稀疏，〈Cielo〉用上微型拍。他說每首都來自仰望星空。2007 年 9 月 17 日推出，由 The Leaf Label 發行。",
+    "sourceUrls": [
+     "https://www.theleaflabel.com/releases/cosmos/",
+     "https://en.wikipedia.org/wiki/Murcof",
+     "https://www.drownedinsound.org/archive-album-review-murcof-cosmos-2545234/",
+     "https://musicbrainz.org/release-group/8e685ece-dadf-3164-893b-510f13f2103f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e7/41/11/e7411107-a5ae-64bd-9d5a-410c6b3b5b86/mzaf_16348289965317836943.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1385698623",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1385698623「Murcof《Cosmos》」：曲目 6/6 對上 MB 原盤（Apple 共 6 軌），取第 1 軌〈Cuerpo Celeste〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "William Basinski",
+   "album": "A Shadow in Time",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "22d53a84-f009-413b-9637-9cd4f8264e2e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "drone：Basinski 悼念 David Bowie 的兩段磁帶 drone，低頻厚、殘響長、灰暗，無鼓、慢、冷。｜策展無疑點｜MB release-group 22d53a84-f009-413b-9637-9cd4f8264e2e：title「A Shadow in Time」、Album、first-release-date 2017-01-20、artist-credit「William Basinski」。證據：https://musicbrainz.org/release-group/22d53a84-f009-413b-9637-9cd4f8264e2e https://coverartarchive.org/release-group/22d53a84-f009-413b-9637-9cd4f8264e2e/front https://music.apple.com/us/album/a-shadow-in-time/1683857133?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/22d53a84-f009-413b-9637-9cd4f8264e2e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 18014,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 4/4/4（Last.fm listeners 18014）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兩條被貓咬壞的磁帶，成了給 Bowie 的輓歌。William Basinski 的樂器是磁帶迴圈，那兩條帶子一條錄著管弦樂、一條是薩克斯風，放上盤式錄音座反覆循環。原本是洛杉磯一家畫廊的委託，案子落空了。2016 年 1 月 Bowie 離世，他以 Bowie 的本名定下曲名〈For David Robert Jones〉，2 月 23 日於倫敦 Union Chapel 首演。老合成器片段反覆浮現，後段疊入失真的薩克斯風。2017 年 1 月 20 日上市，收兩首。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/A_Shadow_in_Time",
+     "https://crackmagazine.net/article/album-reviews/william-basinski-shadow-time/",
+     "https://www.slantmagazine.com/music/review/william-basinski-a-shadow-in-time",
+     "https://en.wikipedia.org/wiki/William_Basinski",
+     "https://musicbrainz.org/release-group/22d53a84-f009-413b-9637-9cd4f8264e2e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/23/eb/1a/23eb1ac8-9868-75da-cb7d-eede9130dacc/mzaf_6421021277649352006.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1683857133",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1683857133「William Basinski《A Shadow In Time》」：2/2 對上；Apple 軌序顛倒，第 2 軌才是原盤首曲〈A Shadow in Time〉，取第 2 軌〈A Shadow In Time〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Pan Daijing",
+   "album": "Jade",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "8fe7339e-2d68-488c-a23e-b05ab3729bfe",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 drone：潘岱靜的第二張，人聲、鋼琴與工業 drone 沉在長殘響裡，無拍、黑、冷，是當代工業 ambient 的代表。｜策展無疑點｜MB release-group 8fe7339e-2d68-488c-a23e-b05ab3729bfe：title「Jade 玉观音」、Album、first-release-date 2021-06-04、artist-credit「Pan Daijing」。證據：https://musicbrainz.org/release-group/8fe7339e-2d68-488c-a23e-b05ab3729bfe https://coverartarchive.org/release-group/8fe7339e-2d68-488c-a23e-b05ab3729bfe/front https://music.apple.com/us/album/jade/1559116239?uo=4",
+    "queryAlias": "Jade 玉观音"
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8fe7339e-2d68-488c-a23e-b05ab3729bfe/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 20303,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 3/3/4（Last.fm listeners 20303）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "九首歌的曲名，從一月排到九月。Pan Daijing 在柏林做聲音藝術，這九首從〈Clean〉排到〈Moema, Forever〉，在發行前約三年間寫成錄成，她想把它們當作創作過程留下的灼痕。主題是孤獨，她比作一座大湖，頭時而沒入水中、時而探出。人聲時而歌劇式拔高、時而念白，大提琴吱嘎作響，底下是低頻 drone；〈Tilt〉〈Dust〉則用鼓機與合成器即興。2021 年 6 月 4 日登場，廠牌是 PAN。",
+    "sourceUrls": [
+     "https://mixmag.net/amp/pan-daijing-album-announcement-jade",
+     "https://musicbrainz.org/release-group/8fe7339e-2d68-488c-a23e-b05ab3729bfe",
+     "https://www.discogs.com/master/2243950",
+     "https://www.loudandquiet.com/reviews/pan-daijing-jade-%E7%8E%89%E8%A7%82%E9%9F%B3/",
+     "https://daily.bandcamp.com/essential-releases/essential-releases-june-4-2021",
+     "https://www.discogs.com/release/19738222"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/e9/6c/3d/e96c3dc2-fa7e-537d-d4e1-fa54df45a5a5/mzaf_9511997504248594061.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1559116239",
+    "storefront": "TW",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple tw 1559116239「Pan Daijing《Jade》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Clean〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Alessandro Cortini",
+   "album": "Sonno",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ddd072b5-3529-49a1-a666-18a87466bc85",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 drone：Cortini 在旅館房間用 Roland MC-202 錄的夜間 drone，延遲與失真糊成陰暗的霧，無拍、重、冷。｜策展無疑點｜MB release-group ddd072b5-3529-49a1-a666-18a87466bc85：title「Sonno」、Album、first-release-date 2014-07-14、artist-credit「Alessandro Cortini」。證據：https://musicbrainz.org/release-group/ddd072b5-3529-49a1-a666-18a87466bc85 https://coverartarchive.org/release-group/ddd072b5-3529-49a1-a666-18a87466bc85/front https://music.apple.com/us/album/sonno/1247002396?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ddd072b5-3529-49a1-a666-18a87466bc85/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 10296,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 3/4/4（Last.fm listeners 10296）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "旅館房間裡，水龍頭一開一關也進了錄音。Alessandro Cortini 以 Nine Inch Nails 的鍵盤手身分最為人知，隨樂團巡迴那段時間，他把下榻的房間當成錄音室。他先把聲音從小喇叭放進房間，再拿手持錄音機邊走邊收，順手開關水龍頭與門窗，留下電子方式難以重現的嘶嘶共鳴。核心是一台 1983 年的 Roland MC-202 接一顆延遲踏板，全盤就靠它與房間聲。成品 2014 年 7 月 14 日裝進 Hospital Productions 的雙黑膠。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Alessandro_Cortini",
+     "https://www.discogs.com/release/5890208",
+     "https://boomkat.com/products/sonno",
+     "https://www.discogs.com/master/709773",
+     "https://musicbrainz.org/release-group/ddd072b5-3529-49a1-a666-18a87466bc85"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5e/97/dc/5e97dc79-f04c-d165-44fa-d1faffc7b16f/mzaf_6540582789586258007.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1247002396",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1247002396「Alessandro Cortini《Sonno》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Rovine〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Roly Porter",
+   "album": "Aftertime",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "78985499-19f8-4b08-aeb8-72c8d20f8c7a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 drone：Vex'd 一員 Porter 的個人首作，以《沙丘》行星為題的次低頻與失真 drone，無鼓、極重、冰冷。｜策展無疑點｜MB release-group 78985499-19f8-4b08-aeb8-72c8d20f8c7a：title「Aftertime」、Album、first-release-date 2011-09-19、artist-credit「Roly Porter」。證據：https://musicbrainz.org/release-group/78985499-19f8-4b08-aeb8-72c8d20f8c7a https://coverartarchive.org/release-group/78985499-19f8-4b08-aeb8-72c8d20f8c7a/front https://music.apple.com/us/album/aftertime/1478664129?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/78985499-19f8-4b08-aeb8-72c8d20f8c7a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 13093,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 3/4/4（Last.fm listeners 13093）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "大提琴、中提琴、小提琴與 ondes Martenot。布里斯托的 Roly Porter 原是 dubstep 二人組 Vex'd 成員，這張的弦樂之外，還請來 Cynthia Millar 彈 ondes Martenot 與 dulcitone。曲名都取自《沙丘》。專輯是他第一次獨力掛名的唱片，2011 年 9 月 19 日從 Subtext 發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Vex%27d",
+     "https://en.wikipedia.org/wiki/Roly_Porter",
+     "https://www.discogs.com/release/3128978",
+     "https://rolyporter.bandcamp.com/album/aftertime",
+     "https://music.apple.com/us/album/aftertime/1478664129",
+     "https://musicbrainz.org/release-group/78985499-19f8-4b08-aeb8-72c8d20f8c7a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7f/fd/8c/7ffd8c2a-caff-e878-a4e1-175631e1a86b/mzaf_13964003347337032541.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1478664129",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1478664129「Roly Porter《Aftertime》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Atar〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Haxan Cloak",
+   "album": "The Haxan Cloak",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c9274549-3f35-4a74-b5f1-2e680f718ad1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 drone：Bobby Krlic 首作，大提琴與低頻 drone 做成的葬禮音樂，無鼓、殘響長、陰森，比《Excavation》更靜。｜策展無疑點｜MB release-group c9274549-3f35-4a74-b5f1-2e680f718ad1：title「The Haxan Cloak」、Album、first-release-date 2011-06-06、artist-credit「The Haxan Cloak」。證據：https://musicbrainz.org/release-group/c9274549-3f35-4a74-b5f1-2e680f718ad1 https://coverartarchive.org/release-group/c9274549-3f35-4a74-b5f1-2e680f718ad1/front https://music.apple.com/us/album/the-haxan-cloak/1441818684?uo=4",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c9274549-3f35-4a74-b5f1-2e680f718ad1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 19611,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 4/4/4（Last.fm listeners 19611）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Krlic 轉向電子低音之前，先錄了這張弦樂。The Haxan Cloak 就是英格蘭 Wakefield 出生的 Bobby Krlic，這張錄於他父母家的棚屋，靠的是弦樂、麥克風與筆電。掛名欄還記著擴音小提琴、玻璃，還有鼓和人聲的錄音。2011 年 6 月 6 日首發於 Aurora Borealis，全盤八首，最長的〈Disorder〉近 11 分鐘。到了 2013 年的第二張《Excavation》，他才轉向取樣與厚重低音。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Haxan_Cloak",
+     "https://www.discogs.com/release/2945523",
+     "https://www.discogs.com/master/600388",
+     "https://thehaxancloak.bandcamp.com/album/the-haxan-cloak",
+     "https://music.apple.com/us/album/the-haxan-cloak/1441818684",
+     "https://musicbrainz.org/release-group/c9274549-3f35-4a74-b5f1-2e680f718ad1"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d4/1a/59/d41a59e0-20f1-29a5-8ed8-e895bcf5d75e/mzaf_12023085491547693057.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1441818684",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1441818684「The Haxan Cloak《The Haxan Cloak》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Raven's Lament〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Caretaker",
+   "album": "Everywhere at the End of Time (Stage 4)",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7a3ab62a-1368-4fe4-a5f6-9e854097b6e6",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 drone：失智六部曲進入崩解的第四階段，舞廳 78 轉碎片被拖進長殘響與噪音霧，無拍、糊、冷。｜策展無疑點｜MB release-group 7a3ab62a-1368-4fe4-a5f6-9e854097b6e6：title「Everywhere at the End of Time (Stage 4)」、Album、first-release-date 2018-04-05、artist-credit「The Caretaker」。證據：https://musicbrainz.org/release-group/7a3ab62a-1368-4fe4-a5f6-9e854097b6e6 https://coverartarchive.org/release-group/7a3ab62a-1368-4fe4-a5f6-9e854097b6e6/front https://music.apple.com/us/album/everywhere-at-the-end-of-time-stage-4/1716927608?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7a3ab62a-1368-4fe4-a5f6-9e854097b6e6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 15060,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 5/4/5（Last.fm listeners 15060）；主線：經典 5 不自動給，壓為 4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "從這一階段起，病人已不知道自己病了。James Leyland Kirby 以 The Caretaker 為名活動了二十年，他說後三階段要從病後覺知的角度製作，Post-Awareness 就由本張開始。聲音從前三階段的爵士式迴圈，轉向重度失真、殘響與噪音。四首各占一面，長度落於 21 至 22 分鐘；〈H1〉的 Hell Sirens 段有銅管、刺耳弦樂與撞擊，〈I1〉相對平靜。2018 年 4 月 5 日同步推出數位與雙 LP。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Caretaker_(musician)",
+     "https://en.wikipedia.org/wiki/Everywhere_at_the_End_of_Time",
+     "https://musicbrainz.org/release-group/7a3ab62a-1368-4fe4-a5f6-9e854097b6e6"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/da/fe/72/dafe725a-69e4-173f-3c75-2d66630ffd64/mzaf_14617043291576897464.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1716927608",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1716927608「The Caretaker《Everywhere at the End of Time (Stage 4)》」：Apple 曲名多「Stage 4」字樣，G1/H1/I1/J1 四軌同序同數，取第 1 軌〈G1 - Stage 4 Post Awareness Confusions〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mika Vainio",
+   "album": "Sokeiden maassa yksisilmäinen on kuningas (In the Land of the Blind One-Eyed Is King)",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c02254ea-98e7-341b-94d0-4cebb55554b4",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 drone：Pan Sonic 一員 Vainio 的個人 drone 代表作，正弦波低頻與金屬共鳴冷到發硬，無拍、重、疏離。｜策展無疑點｜MB release-group c02254ea-98e7-341b-94d0-4cebb55554b4：title「Sokeiden maassa yksisilmäinen on kuningas (In the Land of the Blind One-Eyed Is King)」、Album、first-release-date 2003、artist-credit「Mika Vainio」。證據：https://musicbrainz.org/release-group/c02254ea-98e7-341b-94d0-4cebb55554b4 https://coverartarchive.org/release-group/c02254ea-98e7-341b-94d0-4cebb55554b4/front",
+    "queryAlias": "Mika Vainio In the Land of the Blind One-Eyed Is King"
+   },
+   "research": {
+    "suggestedYear": 2003,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c02254ea-98e7-341b-94d0-4cebb55554b4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 22,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 4/5/5（Last.fm listeners 22）；主線：Last.fm 以芬蘭文全題查得 listeners 22 失真（Pan Sonic 成員，池中《Kilo》為尺）；照 §0.8 冷門軸 5→4。"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "磁帶嘶聲、家電嗡鳴、貝殼裡的海聲。Mika Vainio 出自芬蘭電子二人組 Pan Sonic，生於赫爾辛基，這些背景聲在他手裡做成尖刻、禁欲、乾淨如剃刀的構作。曲子離開舞池節奏，抽象而片段，還有近乎無聲的段落；〈Se On Olemassa〉的點擊稀疏到不成節奏。〈Ahriman〉把低沉的隆隆聲堆成一座靜電之山，再崩成尖嘯。2003 年 3 月 3 日編進 Touch 目錄 TO:54，他在該廠牌獨自掛名的作品，到這張已是第三張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mika_Vainio",
+     "https://touch.kudosrecords.co.uk/release/to54/mika-vainio-sokeiden-maassa-yksisilmainen-on-kuningas",
+     "https://www.tinymixtapes.com/music-review/mika-vainio-land-blind-one-eyed-king",
+     "https://musicbrainz.org/release-group/c02254ea-98e7-341b-94d0-4cebb55554b4"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/fc/89/43/fc8943ef-a299-7922-2c74-6dadd80df584/mzaf_12417797841271526550.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "159283959",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 159283959「Mika Vainio《Sokeiden Maassa Yksisilmainen On Kuningas》」：9/9 同序（Apple 去掉芬蘭文變音字母），機器只對上 5，取第 1 軌〈Revi Taala, Merimes (Sunder Here, Sailor)〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Zoviet France",
+   "album": "Shouting at the Ground",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "986eee5e-d4cb-3a08-b066-fe43142279a9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 drone：Zoviet France 後期代表作，環境錄音與磁帶迴圈糊成陰暗的工業 drone，無鼓、糊、冷。｜策展無疑點｜MB release-group 986eee5e-d4cb-3a08-b066-fe43142279a9：title「Shouting at the Ground」、Album、first-release-date 1988、artist-credit「:zoviet*france:」。證據：https://musicbrainz.org/release-group/986eee5e-d4cb-3a08-b066-fe43142279a9 https://coverartarchive.org/release-group/986eee5e-d4cb-3a08-b066-fe43142279a9/front",
+    "queryAlias": ":zoviet*france: Shouting at the Ground"
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/986eee5e-d4cb-3a08-b066-fe43142279a9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 1195,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 4/5/5（Last.fm listeners 1195）"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 1195），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "1987 年 4 月的三天裡，原始錄音全部完成。Zoviet France 由 1980 年的 Newcastle 起家，長期匿名，那三天是 4 月 3 日至 5 日，製作也掛在樂團名下。扭曲的取樣、吟唱人聲與循環效果，堆出催眠般的重複節奏。雙黑膠的 A、B 面是 11 首短曲，C、D 面則各是一首長曲，分別約 21 與 15 分鐘。Red Rhino 接手發行，那是 1988 年 5 月的事。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Zoviet_France",
+     "https://www.discogs.com/release/100543",
+     "https://www.discogs.com/master/26285",
+     "https://boomkat.com/products/shouting-at-the-ground",
+     "https://musicbrainz.org/release-group/986eee5e-d4cb-3a08-b066-fe43142279a9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "Apple us 兩個 Zoviet France 藝人條目皆無專輯。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Caretaker",
+   "album": "Everywhere at the End of Time (Stage 5)",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c46cbca0-97ee-43cd-ab63-b02d27adb38a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 drone：六部曲最混亂的第五階段，樣本完全糊成 drone 與噪音塊，無拍、低頻淹沒、冰冷。｜策展無疑點｜MB release-group c46cbca0-97ee-43cd-ab63-b02d27adb38a：title「Everywhere at the End of Time (Stage 5)」、Album、first-release-date 2018-09-19、artist-credit「The Caretaker」。證據：https://musicbrainz.org/release-group/c46cbca0-97ee-43cd-ab63-b02d27adb38a https://coverartarchive.org/release-group/c46cbca0-97ee-43cd-ab63-b02d27adb38a/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c46cbca0-97ee-43cd-ab63-b02d27adb38a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 10384,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 5/4/5（Last.fm listeners 10384）；主線：經典 5 不自動給，壓為 4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "系列裡人聲最多的一張，有人在噪音中宣布曼陀林獨奏。這套六張連作逐階段描寫失智症，本張是第五階段，噪音的影響繼續擴大，連貫的旋律被暴力疊加的取樣取代。人聲有低語，也有可辨識的英文詞，宣布獨奏的那句落在第一段近尾聲。Kirby 的說明寫著，更極端的纏結、重複與斷裂，可以讓位給更平靜的時刻。2018 年 9 月 20 日出版，四面各一段，每段約 21 至 23 分鐘；各段標題取自類澱粉斑塊、突觸等醫學概念。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Caretaker_(musician)",
+     "https://www.discogs.com/release/12551815",
+     "https://en.wikipedia.org/wiki/Everywhere_at_the_End_of_Time",
+     "https://musicbrainz.org/release-group/c46cbca0-97ee-43cd-ab63-b02d27adb38a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3a/6c/c6/3a6cc6ee-ba8b-e0d1-e88f-f4e802b97c2c/mzaf_8822417098026369757.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1716926294",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1716926294「The Caretaker《Everywhere at the End of Time (Stage 5)》」：曲目 4/4 對上 MB 原盤（Apple 共 4 軌），取第 1 軌〈K1 - Stage 5 Advanced plaque entanglements〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Caretaker",
+   "album": "Everywhere at the End of Time (Stage 6)",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "02c208b5-985e-4c27-912e-d22d897faf64",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 drone：六部曲的終章，近乎無事件的灰色 drone 與空洞殘響，無拍、重、冷到沒有人。｜策展無疑點｜MB release-group 02c208b5-985e-4c27-912e-d22d897faf64：title「Everywhere at the End of Time (Stage 6)」、Album、first-release-date 2019-03-14、artist-credit「The Caretaker」。證據：https://musicbrainz.org/release-group/02c208b5-985e-4c27-912e-d22d897faf64 https://coverartarchive.org/release-group/02c208b5-985e-4c27-912e-d22d897faf64/front https://music.apple.com/us/album/everywhere-at-the-end-of-time-stage-6/1716926918?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/02c208b5-985e-4c27-912e-d22d897faf64/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 19302,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "note": "機器基線 5/4/5（Last.fm listeners 19302）；主線：經典 5 不自動給，壓為 4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "結尾前約六分鐘，劣化的唱片裡傳出清晰的合唱。Everywhere at the End of Time 到這裡是第六張，也是終章，嘶嘶聲與爆音淹沒舞廳取樣，音樂聽得見卻很遠，是系列最空的一張。末曲〈Place In The World Fades Away〉鋪著風琴 drone，結尾前唱針落下，那段合唱取樣自巴哈《路加受難曲》詠嘆調的英譯。收尾是一分鐘的靜默。Kirby 對本階段的說明只有一句，說它不予描述。2019 年 3 月 14 日面世。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Caretaker_(musician)",
+     "https://www.discogs.com/release/13351214",
+     "https://en.wikipedia.org/wiki/Everywhere_at_the_End_of_Time",
+     "https://musicbrainz.org/release-group/02c208b5-985e-4c27-912e-d22d897faf64"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4f/26/27/4f2627ef-b35f-3f33-0e64-65a78db49d07/mzaf_13417080626349358208.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T06:05:47Z",
+    "appleCollectionId": "1716926918",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1716926918「The Caretaker《Everywhere at the End of Time (Stage 6)》」：曲目 4/4 對上 MB 原盤（Apple 共 4 軌），取第 1 軌〈O1 - Stage 6 A confusion so thick you forget forgetting〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  }
+ ]
+}
