@@ -3049,4 +3049,9 @@ window.DipPreviewStatus = Object.freeze({
   "arditti quartet|xenakis: st-4 - dikhthas - ikhoor - embellie - kottos - mikka - mikka s": "unavailable",
   "arditti quartet|carter: string quartets 2 & 3 - elegy": "unavailable",
   "carlos surinach|antheil: ballet mécanique - brant: signs and alarms - galaxy 2": "unavailable",
+  "lennie tristano|new york improvisations": "unavailable",
+  "anthony braxton|six compositions: quartet": "unavailable",
+  "anthony braxton|seven compositions 1978": "unavailable",
+  "spontaneous music ensemble|challenge": "unavailable",
+  "howard riley|synopsis": "unavailable",
 });
