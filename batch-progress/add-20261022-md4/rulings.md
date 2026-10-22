@@ -17,3 +17,28 @@
 - 策展層剔除且主線同意：Ka 其餘盤（池中 y 0.5–0.7 不夠邊距）、冥丁（池中《Komachi》y 0.4）、Porter Ricks《Anguilla Electrica》（池中同藝人 x 2.9–3.0）、BrokenTeeth、Asian Glow《Stalled Flutes, means》、王榆鈞（原聲編制判輕）、草東（池中 x 4.0）、Rhythm & Sound（暖）。候補留在 `curation-md4.json` notes（Scorn《Evanescence》、Rod Modell《Captagon》、Deepchord《Hash-Bar Loops》、Shabazz Palaces《Black Up》、Fluxion《Vibrant Forms III》、Dean Blunt《The Redeemer》、きのこ帝国《渦になる》）。
 - 亞洲搖滾卡（夢東 Mong Tong tw、腰 cn）上線後寫進 `rock-asia-country-map.json`。
 - 研究層每支 WebSearch ≤3；facts 必含 2–3 條聲音事實；與 moodGuess 不符的標「存疑」。研究層等 md3 進寫作層才開（同時最多兩批在飛）。
+
+## 研究 d 組
+- **10951**　Silent World 的「原聲帶」：標題即同名電影，頁面標 Original Motion Picture Soundtrack；Echospace 簡介稱是 Modell 製作、尚未發行的電影，查無片名以外資料。寫作層只寫「同名電影的原聲帶」，不編電影內容。Igloo 評：實為《Liumin》錄音素材的改編。
+- **10952**　Silent World moodGuess 存疑：非「幾無拍」，〈Lisbon〉等有軟性搥擊節奏、CD 版有低頻脈衝與踩鑔，x 估 2.2–2.6；仍屬靜重冷區。
+- **10953**　Lanterns 廠牌推翻：卡單 Soma → Astral Industries（AI-01，三源一致）。色溫混合（紅段偏暖），z 可能近 0。
+- **10954**　Will I Dream 廠牌推翻：卡單 Delsin → Sending Orbs（SO 005）。moodGuess 明顯不符：開場有重擊拍與踩鑔、結尾暖，x、z 皆偏；建議候補汰換。
+- **10955**　Topdown Dialectic 國別推翻：卡單 se → 無瑞典來源，Peak Oil 在洛杉磯（主腦疑在舊金山，單一來源不採）。首作被續作樂評形容為「顛簸、帶攻擊性的 IDM 稜角」，x 存疑，建議候補汰換。
+- **10956**　Rhythm of Snow moodGuess 存疑：樂評稱「不冷、像暖外套」，z 偏低估，可能落恍惚邊緣；單一來源，寫「評者形容」。
+- **10957**　Tonality of Night、Ultraviolet Music、Seconds to Forever 12 吋：查無獨立聲音描述，status thin，facts 不寫推測的聲音；moodGuess 皆無來源證實，以上線後聽感評分為準。Seconds to Forever 的長篇版（2011 CD／2014 數位）是另一個 release，不得混入。
+- **10958**　Too Many Voices：Wikipedia 稱更乾淨、輕盈、受 grime 影響，僅〈Selfish〉明確有深低頻，y 可能偏輕；鼓與速度無來源。
+- **10959**　Liumin 年份 Igloo（2008）與 Wikipedia（2010）衝突，facts 不獨立寫年份。
+- **10960**　WebSearch 用 3 次；Pitchfork／AllMusic／Juno／Boomkat 皆無法開啟。
+
+## 研究 b 組（10931–10940）
+
+- 10931　BONES《Powder》：MB 28 首約 57 分、4 月 10 日；維基 4 月 11 日，facts 只寫 4 月。聲音證據僅風格標籤（cloud rap／emo rap／lo-fi／trap），標 thin；moodGuess（慢拍、糊濾波低頻）存疑，建議試聽或汰換。
+- 10932　Salem《King Night》：身分與廠牌 IAMSOUND 對得上。moodGuess 能量存疑：拍子慢但「鞭炮般小鼓往前推」「末日俱樂部熱門曲」、節奏複雜、部分推進紅區，x 2.5 可能偏高（較躁）。出身地採維基 Traverse City（他刊寫芝加哥）。
+- 10933　Archy Marshall《A New Place 2 Drown》：身分對得上。聲音僅有風格標籤與自述「嘻哈專輯」，無速度、低頻、爵士取樣的來源，標 thin；moodGuess 未證實。
+- 10934　Tirzah《Colourgrade》：身分對得上；聲音只有風格標籤（experimental pop／alt R&B／ambient pop，Bandcamp 標 house），標 thin；moodGuess（失真糊低頻）存疑。
+- 10935　How to Dress Well《Love Remains》：MB 2010-09-21（Lefse）、維基 10-12，並列；聲音證據足（嘶聲、重殘響、遙遠零碎鼓、drone）。小幅存疑：部分福音曲有沉重踏步鼓。
+- 10936　Sevdaliza《ISON》：Pitchfork／PopMatters 證實 minimal breakbeats、downtempo、厚重管弦，無明顯不符；「厚低頻」無來源，sound 句已避開。
+- 10937　Klein《Lifetime》：**推翻卡單廠牌**，Hyperdub 是 2017 EP《Tommy》，本盤為自家 ijn inc.（MB＋維基）；主線須改卡單 label。moodGuess 存疑：樂迷留言有合唱般溫暖，冷暖可能偏暖，「幾無鼓」無來源。標 thin。
+- 10938　Holy Other《Held》：8/27（維基）對 8/28（MB），寫 8 月。鼓緊緻有結構、不是無鼓；Tiny Mix「抖動焦慮」、RA「令人振奮」，「霧冷」未證，小幅存疑。
+- 10939　King Krule《The Ooz》：moodGuess 存疑：標籤含 punk rock／post-punk／jazz-rock、AllMusic「controlled chaos」，19 首 66 分鐘，並非多數段落慢；無速度與低頻來源。標 thin，建議試聽或汰換。
+- 10940　WebSearch 3 次用於 Salem、Klein、How to Dress Well；其餘以 MB API、維基、Tiny Mix Tapes、DIY、Exclaim!、Village Voice、Stereogum、BPM、A.V. Club 取得。Pitchfork／BBC／Guardian／Discogs／RYM 直連被擋。
