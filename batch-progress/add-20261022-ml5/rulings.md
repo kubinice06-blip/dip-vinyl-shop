@@ -79,3 +79,14 @@
 - **14393**：卡單更正照研究層：Fatima 製作人改 Floating Points、Theo Parrish 等（非 Funkineven／Alfa Mist）；Eric Lau 客唱無 Fatima；Joi 製作人 Dallas Austin（已汰）；Society of Soul 不寫「唯一專輯」、年份 1995 由 Discogs master 304820 與維基證實；Gabriels 寫兩階段發行（2022 Part I／2023-07-07 完整版），年份維持 2022；Goapele 2002 確認。
 - **14394**：回頭叫策展代理補 12 張「有來源證實慢霧暖」的候補（SendMessage 續跑同一支），替入後派補研究 append 進各組檔。
 - **14394 補記**：策展代理收緊條件（要有樂評證實整張慢、霧、暖）只補到 6 張，照實不湊：GIVĒON《Give or Take》、SiR《Chasing Summer》《November》、Contour《Onwards!》《Take Off From Mercy》、Nick Hakim《I Can See》（2026）。替入後卡單 39 張（c 4、b 1、d 1），派一支補研究 append 進各組檔。查過不符未提 16 張（Kali Uchis《Sincerely,》upbeat、Lucky Daye《Algorithm》dancefloor、Bilal《A Love Surreal》lighter…，見 curation notes）。主線先前汰的 5 張（Taylor McFerrin、Delfonics、Dijon、Cyan Blue、hooke's law）不收回（色溫／能量風險未解）。**本批張數不足 45，照實上架。**
+
+## 補研究（主線替入 6 張）
+- **14395**　GIVĒON《Give or Take》：**moodGuess 存疑（中，建議低信心）**。**推翻策展層引文**：「lush variety of vocal arrangements」在 Pitchfork 原文是形容 rum.gold／Lucky Daye 兩張別人的專輯；對本盤的結論是 autopilot、dull midtempo、runny guitar lines、15 首「gloomy」。〈dec 11th〉木吉他底；「厚弦樂與和聲墊」無來源。LBOF 稱製作舒緩、聲音幅度有限。暖度與慢度大致成立，重度未證實。facts 10 條、full。年份、廠牌無誤。
+- **14396**　SiR《Chasing Summer》：moodGuess 輕度存疑。Pitchfork「hazy, gliding」「gauzy and sad」支持霧；但同評寫 paranoia、cruelty、surging synthesizers、Lil Wayne Auto-Tune 客座，色溫偏陰，z 可能被打低。facts 9 條、full。Pitchfork 兩篇 SiR 評論的專輯序數措辭易誤導，facts 採 Wikipedia（首張《Seven Sundays》2015）。
+- **14397**　SiR《November》：moodGuess 大致成立。Pitchfork 的 silkiness、atmospheric jazzy、incense、fuzzy kick、reverb- and regret-tinged 皆原文核得；MB 有逐曲製作人。輕疑：〈I Know〉lowrider 貝斯、〈Something New〉銅管，整盤僅 11 首 33 分鐘。facts 9 條、full。
+- **14398**　Contour《Onwards!》與《Take Off From Mercy》：
+  - 《Onwards!》moodGuess 大致成立（hazy、loose、drowsy groove），但 Pitchfork 說比 Frank Ocean「darker, more dour, downcast」，色溫偏冷暗風險；「煙嗓」無來源（smoky 是形容〈Babe Brother〉）。facts 9 條、full。MB 數位 2022-10-07、Discogs 黑膠 10-14 並列。第三首曲名含侮辱詞，facts 與 keyTracks 不寫。
+  - 《Take Off From Mercy》（group b）：**moodGuess 存疑（中）**。Pitchfork「operate in the haze」成立，但以指彈吉他為骨、製作「spare」，編制精簡；依 ml2 先例（原聲吉他判輕）y 有掉出風險，內省偏陰有佐證。facts 8 條、full。Discogs 另列 Almachrome 共同廠牌，以 MB／release 頁 Mexican Summer 為準。〈Entry 10-4〉括號 Mood／Moon 兩源不同，不入文。
+- **14399**　Nick Hakim《I Can See》（group d）：moodGuess **成立（本補研究 6 張中證據最強）**。Pitchfork「cassetteish hiss…haze」「tempo relentlessly moderate」、Far Out、Stereogum 互證；輕疑：「moderate」不等於慢，暖度無直接字句，〈7 Days〉行進鼓點與〈Soft Wet Clay〉末尾加速。curatorWhy 的 Variety「languid grooves、heavy bass」未找到原文，未入 facts。Heba Kadry 是 mixed 或 mastered 兩源衝突，未入 facts。同名 EP（2026-06）未核對。facts 10 條、full。
+- 本補研究推翻策展層：GIVĒON 的 Pitchfork 引文脈絡（1 處）；年份、廠牌、掛名、盤名 0 處。取材備註：Wikipedia action API 被 429，改抓 /wiki/ 頁；WebSearch 用 2 次（Giveon、Hakim）。
+- **14400**（主線，補研究交件後）：汰 Contour《Take Off From Mercy》（全盤指彈吉他為骨、製作 spare——ml2 原聲吉他判輕先例）。GIVĒON《Give or Take》留下標低信心（Pitchfork「dull midtempo」、木吉他底曲，但慢而暖成立；評分照聲音打）。GIVĒON 研究層推翻策展層引文 1 處（「lush variety of vocal arrangements」原文講的是別張），寫作層不用。**本批定案 38 張。**
