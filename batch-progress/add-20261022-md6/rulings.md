@@ -55,3 +55,16 @@
 - 17129｜Svarte Greiner《Penpals Forever (And Ever)》：**推翻策展層年份／廠牌**：2008 Digitalis Limited 是原卡帶《Penpals Forever》（180 卷、四段）；「(And Ever)」是 2010-07 Digitalis Recordings 的 CD／LP（五首，前兩首重新母帶、其餘新作）。建議年份改 2010、廠牌 Digitalis Recordings。moodGuess 輕度存疑：Bandcamp 只寫循環吉他線、回響單音、失真，無弓弦或回授的證據。
 - 17130｜（保留未用）
 - 總結：9 張全數 8–12 條 facts、全 https；status full 6／thin 3（Eye of the Microphone、Clara、Moss Garden）。推翻策展層 1 處（Penpals 年份／廠牌）。moodGuess 存疑：Paradise 94、Vladislav Delay Quartet、Eye of the Microphone 為中度（偏吵或缺證據），其餘輕度。WebSearch 本組實際用 6 次（超出 3 次上限，因 Vladislav Delay Quartet、Köner、Nilsen 三張缺獨立聲音來源）。
+
+## 研究 d 組（條號 17111–17120）
+- 17111｜Kevin Richard Martin《Sirens》：身分屬實（Room40 RM4103，2019-05-31；維基寫 6-07 為上市日差異）。與 moodGuess 吻合（無穩定鼓、次低頻嗡鳴、冷）；第 4 首〈Life Threatening Operation 2〉中段有一段埋在雜訊裡的節奏脈動，後半〈A Bright Future〉轉明亮。status full（11 條）。
+- 17112｜Xela《The Dead Sea》：身分屬實（Type TYPE018，2006-10-19）。status thin：AllMusic 頁被 Cloudflare 擋，聲音事實只有 PopMatters／Tiny Mix Tapes 的間接描述與 Qobuz 轉載的傳記（概念專輯、殭屍襲船、prog／水手歌謠／義大利恐怖片配樂／噪音影響）。moodGuess 存疑：『無鼓』查無直接來源，傳記提到民謠式片段與水手歌謠，可能有暖色或打擊，建議評分前聽。
+- 17113｜Svarte Greiner《Kappe》：身分屬實（Type TYPE033，2009-02／03；黑膠 400 張）。與 moodGuess 吻合（無鼓、緩慢、低頻、冷）；〈Tunnel of Love〉較吵、含鐵鏈聲，但仍靜重冷。status full。
+- 17114｜Svarte Greiner《Black Tie》：身分屬實（Miasmah MIALP023，2013-04；母帶 Nils Frahm）。**moodGuess 存疑**：〈White Noise〉後 6 分鐘出現加速低頻脈動與規律敲擊（Igloo：『demented dark ambient techno』），不完全是無鼓；前半仍是無鼓大提琴長音。另 Black Tie 以大提琴為主、吉他點綴，與卡單『吉他與大提琴』不盡相同。
+- 17115｜Black to Comm《Seven Horses for Seven Kings》：身分屬實（Thrill Jockey THRILL 481，2019-01-25）。**moodGuess 嚴重存疑，建議汰換或實聽**：廠牌明寫過去節奏缺席、這張『完全被節奏綁住』——破碎 techno 斷拍、戰鼓般重擊、脈動 Mellotron、疾速步調，且『憤怒』，更像躁而重，恐不落頹靡（靜）格。
+- 17116｜Black to Comm《Black to Comm》：身分屬實（Type TYPE120，雙黑膠限量 500，2014-12）。moodGuess 小存疑：開場〈Human Gidrah〉『脈動、喋喋聲』，〈Hands〉是『譫妄的破碎流行』，主體仍是長音 drone。
+- 17117｜Kreng《Grimoire》：身分屬實（Miasmah MIACD016，2011-06-03）。與 moodGuess 大致吻合（鼓極稀：軍鼓、刷鼓）；〈Wrak〉有失真薩克斯風與噪音爆發，戲劇張力偏強。
+- 17118｜Kreng《The Summoner》：身分屬實（Miasmah MIALP030，2015-02-06，錄音 2014-07-14）。**moodGuess 存疑**：整體安靜稀疏，但 15 分鐘〈The Summoning〉含通鼓、末日金屬吉他與 Amenra 嘶吼，〈Anger〉有弦樂風暴；評分時請把這些爆發算進去。
+- 17119｜Elegi《Varde》：身分屬實（Miasmah MIACD009，MB／Discogs 2009-01-17，Discogs 只有 release 無 master）。與 moodGuess 吻合（無鼓、靜電顆粒、冰冷）。背景為 1912 年 Scott 南極隊故事（Textura）。
+- 17120｜（保留未用）
+- 總結：9 張全數 8–11 條 facts、全 https；status full 8／thin 1（The Dead Sea）。推翻策展層年份／廠牌／盤名 0 處。moodGuess 存疑：Seven Horses（嚴重）、Black Tie、The Summoner、The Dead Sea、Black to Comm 同名盤（輕微）。單一來源：Type 創辦年人（Discogs 廠牌頁）、Kreng 與 Abattoir Fermé 的合作年數（維基）。
