@@ -3030,4 +3030,12 @@ window.DipPreviewStatus = Object.freeze({
   "ktl|ktl 2": "unavailable",
   "menace ruine|alight in ashes": "unavailable",
   "menace ruine|union of irreconcilables": "unavailable",
+  "king midas sound|waiting for you…": "unavailable",
+  "cv313|seconds to forever": "unavailable",
+  "deepchord presents echospace|silent world": "unavailable",
+  "deepchord|lanterns": "unavailable",
+  "akira yamaoka|silent hill": "unavailable",
+  "dean blunt|the narcissist ii": "unavailable",
+  "cv313|analogue oceans": "unavailable",
+  "cv313|baring stars": "unavailable",
 });
