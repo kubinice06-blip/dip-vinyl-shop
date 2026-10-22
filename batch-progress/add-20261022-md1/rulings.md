@@ -109,3 +109,8 @@
 ## 主線審稿（2026-10-22）
 - **10760**　逐張審 45 篇（全文印出、逐句對研究稿），改 1 張（`desc-override.json`）：Maeror Tri《Myein》「成員多半是在 Leer 一起長大的同學」→「1988 年 4 月在 Leer 起步」——研究稿此句為單源「據說」，寫作層以「多半」改寫仍是轉述推測，刪（123 字，thin 下限 120 內）。跨張 4-gram ≥3 張為 0。無媒體名、無媒體榜名次、無「據說／據傳」、無資料平台名；卡面年份與正文發行年一致。寫作層自報三處小改（Permafrost「獨自發表的第三張」、Kiri No Oto 句讀、Living Torch 補「作曲家」）照准。Pan Daijing 卡面維持 MB 羅馬字、不補無來源漢字。
 - manifest：45 張、rarity legendary 2／epic 19／uncommon 21／rare 3；試聽 41 ready／4 unavailable；封面 CAA 44＋Apple 1（`apple-verified-collection`）。prepare gate 0 error（45 warning 皆 upc 空白）。
+
+## 上線與評分（2026-10-22）
+- 上線：card_catalog 45／45、KV 45 鍵回讀逐字一致（stamp 20261022b）、靜態試聽 41＋負面 4、seed +45（19,548→19,593）、published gate 0 error（46 warning 皆 upc 空白與人工身分提示）。封面上線前 live-check 45 張全 200。
+- **情緒評分（本線驗收）**：`batch-progress/mood-axes/score-md/out/chunk-md1.json`，Opus 代理照 BRIEF（含 10-22 兩條新規則）打分，conf high 7／mid 30／low 8。**落頹靡 43／45＝95.6%**（預估 ~55%）。落隔壁格 2 張：William Basinski《A Shadow in Time》（z +0.1）、Belong《October Language》（z 0.0）皆落恍惚——色溫判到中性暖側，正是策展層已標「偏灰非冰冷」的那張與池中偏暖的 Basinski。能量 x 1.0–2.6 全靜（Scorn 2.6、Roly Porter 1.9 皆照新規則判「有拍不兇／有攻擊沒拍」）。場景繼續有效，不換。
+- 藝人介紹 §11：新藝人補進 roster、切 `ar-d-137`（與 md2 合計 39 位，只切不寫）。

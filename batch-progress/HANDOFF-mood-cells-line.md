@@ -7,8 +7,8 @@
 
 | 批 | 場景 | 目標格 | 狀態 |
 |---|---|---|---|
-| md1 | dark ambient／drone／工業 drone | 頹靡 | 策展派工已寫 |
-| md2 | slowcore／sadcore 二線＋dark jazz | 頹靡 | 策展派工已寫 |
+| md1 | dark ambient／drone／工業 drone | 頹靡 | ✅ 2026-10-22 上線 45；落頹靡 43/45＝95.6%（2 張落恍惚：Basinski、Belong 色溫判中性） |
+| md2 | slowcore／sadcore 二線＋dark jazz | 頹靡 | ✅ 2026-10-22 上線 45；落頹靡 41/45＝91.1%（4 張乾編制 sadcore 落平靜：Arab Strap ×2、Germano、Songs: Ohia） |
 | md3 | darkwave／goth 慢盤＋無鼓 drone metal／funeral doom | 頹靡 | 策展派工已寫 |
 | md4 | 暗色嘻哈／cloud rap／暗 R&B＋dub techno＋亞洲 | 頹靡 | 策展派工已寫 |
 | mc1–mc4 | 冷冽線（minimal synth／coldwave、post-punk／no wave、冷爵士、當代古典＋亞洲 synth-pop） | 冷冽 | 待寫 `CUR-DISPATCH-mc.md`（場景見計畫 §2.3） |
@@ -37,6 +37,10 @@
 11. PROJECT_MEMORY → 逐檔 git add → commit → push → 開 PR → 自己合併 → 退訂 PR。
 
 ## 三、坑（沿用薄細項線）
+- md1／md2 實跑（2026-10-22）：研究層聲音存疑是真的有用——md2 汰 7 張（鼓機／碎拍／synthwave）、md1 汰 4 張（KTL、Kreng、Desiderii、Hecker 有拍又兇），補位從 master 候補同位置替入、再派一支補研究 append 進各組檔（qa-batch 只認 a–e 五組，不要開第六組）。上線後評分 84/90 落格，遠高於預估；下一批可以把 45 張的 20% 汰換額度降到 10%。
+- 評分工單 `batch-progress/mood-axes/score-md/`（select／merge 仿 score-ts2；`build-priors.mjs` 來源層已加 `scored-md.json`），md3／md4 直接 `select.mjs <批>` 切 chunk、派 Opus 照 BRIEF 打分、`merge.mjs` → priors → scale v0 → `build-card-moods`。
+- 藝人介紹切批用 `cut-artist-intros.mjs`（已改成讀 `onboarding-manifest-add-2026102?-md?-*.json`，批序 md1→md4），md3／md4 上線後再跑一次會接著切 ar-d-138 起（冪等，roster 已有的鍵不重加）。
+- 乾編制 sadcore（Arab Strap、Lisa Germano、Songs: Ohia 那型）質地判輕落平靜；slowcore 要收霧狀 lo-fi／doomgaze 與 dark jazz 才落頹靡。
 - 容器會重啟：派工都加「每做完 N 筆寫檔」「已有內容就接續」；代理腳本放各自的 scratchpad 子資料夾。
 - `push-card-catalog-patches` 要吃 `publish-stage/<manifest 名>/card-catalog-patches.json`，不是 manifest。
 - Apple 專輯搜尋常回空：走 `entity=musicArtist` → `lookup?id=<artistId>&entity=album`。

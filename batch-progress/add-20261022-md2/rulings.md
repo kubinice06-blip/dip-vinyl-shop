@@ -111,3 +111,8 @@
 ## 主線審稿（2026-10-22）
 - **10841**（借用主線區間後續條號）　逐張審 45 篇（全文印出、逐句對研究稿），改 2 張（`desc-override.json`）：Bohren《Black Earth》「低音提琴與鼓壓著慢速，貝斯主導，」→「低音提琴與鼓壓著慢速，」——研究稿 Rodenberg 為低音提琴，同句再寫「貝斯主導」語意重疊（219 字）；Grouper《Cover the Windows and the Walls》尾句「樂評的結論是它雖然暗，卻是一張極為充滿希望的唱片」→「樂評把她放在自由形式的噪音團體附近，而不是 ambient 那一路」——單源評價句刪，換同篇樂評的定位描述（研究 c 組 DiS 條目；193 字）。跨張 4-gram ≥3 張只剩樂器名「薩克斯風」。官方專輯榜名次（德國榜 49、英國榜 37、蘇格蘭榜 59）不是媒體榜，保留。Early Day Miners《Placer Found》再版評語為研究稿有源（Spin 經維基）之轉述，不點媒體名，保留。Planning for Burial《Leaving》首句「先放上 Bandcamp」是發行管道事實、非資料來源，保留。
 - manifest：45 張、rarity epic 19／uncommon 22／rare 4；試聽 44 ready／1 unavailable；封面 CAA 45。prepare gate 0 error（45 warning 皆 upc 空白）。
+
+## 上線與評分（2026-10-22）
+- 上線：card_catalog 45／45、KV 45 鍵回讀逐字一致（stamp 20261022b）、靜態試聽 44＋負面 1、seed +45（19,593→19,638）、published gate 0 error（45 warning 皆 upc 空白）。封面上線前 live-check 45 張全 200。
+- **情緒評分（本線驗收）**：`batch-progress/mood-axes/score-md/out/chunk-md2.json`，conf high 5／mid 27／low 13。**落頹靡 41／45＝91.1%**（預估 ~50%）。落隔壁格 4 張皆因質地判輕落平靜：Arab Strap《Philophobia》（y 0.3）《Elephant Shoe》（0.4）、Lisa Germano《Geek the Girl》（0.3）、Songs: Ohia《Ghost Tropic》（0.2）——乾吉他／鼓機 sadcore 正是派工單預警會落平靜的那型；Arab Strap《The Red Thread》y 0.5 剛好壓線。dark jazz 20 張全落頹靡（Bohren 六張 y 0.8–1.3、z −0.8～−1.4）。下一輪 slowcore 線應避開乾編制的 sadcore（Arab Strap、Germano 型），多收霧狀 lo-fi／doomgaze 與 dark jazz。
+- 兩批合計 84／90 落頹靡；全池頹靡 952 → 1,036（build-card-moods 八格：放鬆 4,985、平靜 1,332、恍惚 781、頹靡 1,036、雀躍 5,962、冷冽 874、沸騰 2,004、亢奮 2,664）。
