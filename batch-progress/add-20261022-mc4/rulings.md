@@ -29,3 +29,10 @@
 - 11263　Oppens《Oppens Plays Carter》moodGuess 存疑：Piano Sonata 23 分鐘＋Night Fantasies 近 20 分鐘共約六成篇幅不快，x 3.5 為全批最貼邊，建議下調或汰換。
 - 11264　Carneiro Xenakis 打擊：Okho 低音鼓全曲只敲兩次，curatorRisk 的低頻疑慮解除；錄音年未查到，yearVerified 取 2005 並註明。
 - 11265　Takahashi 1976 Denon：錄音地點荒川／新川兩說不一，只寫『東京』；年份 1976 成立。
+
+## 研究 d 組
+- **11271**：Birtwistle《The Axe Manual》年份推翻：MB 2000 是曲子年份；錄音 2004-07、評論 2005-03／04、Claire Edwardes 官網 2005 → 建議卡年份改 2005（Discogs 標 2004，疑為錄入誤）。
+- **11272**：Ferneyhough 2（MO 782029）1993 僅 MB 一源，Discogs 最早 1996 Auvidis；年份標存疑，沿用 1993。
+- **11273**：Chin Kairos 版為 2011 再版，原版 2005 DG（維基單源）；年份由主線裁定。
+- **11274**：moodGuess 存疑四張：Ferneyhough 1（41 分鐘《奏鳴曲》占 57%，速度無源）、Ferneyhough 2（獨奏與女高音，僅 Terrain 較可能快）、Chin（Xi／Akrostichon 無速度源，確證機械快作僅約 46%）、Holzman（慢或偏慢段約 35%）。Hodges 大致可，z（冷）無直接來源。
+- **11275**：Boosey／Wolpe 樂評／Holzman 生平頁多次 403／404／503，三張 sound 只能靠編制與樂章速度標示，status 標 partial。
