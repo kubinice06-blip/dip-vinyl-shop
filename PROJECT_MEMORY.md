@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-22｜dip-vinyl-shop｜藝人介紹 ar-d-129、ar-d-130：薄細項策展線上架卡補介紹 79 位
+
+- **內容**：ALBUM_ONBOARDING §11，ts1–ts11 上架卡缺介紹的藝人。ar-d-129（越南、柬埔寨、菲律賓、泰國、馬來西亞、新加坡搖滾）40 位全上（30 full／10 thin）；ar-d-130（馬來西亞、南亞、蒙古、印尼搖滾、剛果倫巴）39 位上架（31 full／8 thin），Noori 只有維基單源、skipped。補洞 WebSearch 每位 ≤2 次。
+- **主線審稿**：修 13 位（129 五位、130 八位），細節見 `batch-progress/artist-intro/ar-c-rulings.md` 的 ar-d-129／130 段；2026 年事實（UDD〈Tadhana〉破 5 億、Warfaze Ekushey Padak）以 WebSearch 核實。
+- **主要檔案**：`desc-tools/batches/artist/{progress.json,facts,research,output}/ar-d-129*｜ar-d-130*`、`data/artist-intros/*`、`audits/ARTIST-PUB-ISSUES.md`、`batch-progress/artist-intro/ar-c-rulings.md`。
+- **驗證**：`qa-artist.mjs out` 129 0 處、130 只剩「缺 Noori」；`build-artist-intros.mjs` 326 份成品、6,177 位藝人。ar-d-131～134 留給下一個工作階段。
+
 ### 2026-10-22｜dip-vinyl-shop｜情緒薄格重掃：恍惚 592／頹靡 926／冷冽 874，更新補充計畫
 
 - **內容**：店主「掃描頻率 把專輯分佈較少的頻率補齊……先掃描給我計畫」。重掃全池八格與各子曲風落格率，更新 `batch-progress/EXPANSION-PLAN-mood-thin-cells.md` 開頭：10-16 計畫候選九成仍未進池、計畫本體有效；#114 能量軸改判後 md3 改收無鼓的 drone／暗黑 ambient（有鼓的 doom 現判躁）；每批 45 張只淨增約 20 張，恍惚靠補卡補不平，規則面的「質地尺」裁定仍待店主。未動卡池。

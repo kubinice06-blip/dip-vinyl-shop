@@ -996,3 +996,18 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 不寫：Cambodian Space Project 主唱 Channthy Kak 2018 年辭世（只在 notes；主線派工特注誤寫成 2023，補洞層已更正）；Bức Tường 早期銷量與到場人數、Loso 逾百萬卷、Ngọt CD 銷量、Wolfgang 白金、各團單源的「第一支」（The Jerks、Microwave、Electrico、The Great Spy Experiment SXSW）。
 - 身分：Microwave（微波）、Slot Machine（賭博機）、Wolfgang（人名頁）維基預抓錯頁已作廢；Western Union Band 經 Reggie Verghese 條目確認是新加坡同名團。
 - 已上線專輯簡介待修（pubIssues）：Thủy Triều Đỏ 成軍年 1998／1999、The Great Spy Experiment 成軍年、Rusty Blade「Stadium Negara 場場爆滿」、The Jerks NU Rock 得獎專輯；Butterfingers「demo 被誤認為 Nirvana 未發行專輯」查無來源。
+
+## ar-d-130（2026-10-22，薄細項策展線 ts1–ts11 補介紹：馬來西亞、南亞、蒙古、印尼搖滾、剛果倫巴）
+
+- 39 位上架（31 full、8 thin：Exists、Slam、Strings、Fuzön、Avial、The Local Train、Nepathya、Efek Rumah Kaca），1 位不寫：Noori（事實全出自英文維基一源，第二源五次抓取全失敗，未達兩源；比照 ar-d-125 jinsang 的 skipped 先例）。
+- 主線審稿修 8 位：Hurd 刪《紐約時報》具名與拘留人數、到場人數細節，留「巡演最後一站被警方取消、聽眾遭驅散」；Bozi Boziana 刪 1999 Kora 獎（兩源同屬維基、年份對應不明）；Kanda Bongo Man 刪中央公園「約兩萬五千人」（單源數字），改寫成錄成現場專輯；Efek Rumah Kaca「媒體常稱」改「被稱為」；Exists 句構改正並壓到 156 字；The HU、Seringai、The SIGIT 補半形空格。
+- 截止日後事實：Warfaze 2026 年獲 Ekushey Padak，主線 WebSearch 核實（The Daily Star、TBS News、Dhaka Tribune：2 月 5 日公布、26 日頒發），保留。
+- 放寬額度：Zaïko Langa Langa 262 字（cavacha 由來＋Clan Langa Langa 支系是份量核心）、Sam Mangwana 265 字（安哥拉身世故事是主體），照留。
+- 保留：Sheila on 7〈Dan〉MTV Ampuh 連 29 週第一與「百萬張樂團」稱號（Pantau＋印尼文維基；份量核心）；1974 AD Rock Yatra 約 6 萬人（Himalayan Times＋Kathmandu Post）；Koffi Olomidé 入選《1001 Albums You Must Hear Before You Die》（writer-base 具名書目例外）；Tshala Muana 2022、Pépé Kallé 1998 只寫辭世年。主線派工特注把 Tshala Muana 誤寫成 2024，補洞層照來源更正為 2022。
+- 不寫：Koffi Olomidé 法律爭議、「首位 Bercy 售罄」；Vital Signs、Indus Creed、Haranga、Warfaze、Fuzön 單源「第一」；1974 AD「唯一填滿最大體育場」；Seringai Ricky Siahaan 2025 辭世（單源）；Junaid Jamshed 辭世。
+- 身分：Avial（菜餚）、Navicula（矽藻屬）維基預抓錯頁已作廢；1974 AD 確認是尼泊爾樂團。
+- 已上線專輯簡介待修（pubIssues）：Estranged〈Itu Kamu〉AJL 年份（2007→第 22 屆／2008）、Peter Cat 團名「借自村上春樹」過強、Hurd 呼和浩特日期與警力人數、Haranga 贊助商寫法、Warfaze Maqsud 身分、Dewa 19《Terbaik Terbaik》發行日、M'bilia Bel「結婚」應為訂婚、Nyboma「1972 年起在 Verckys 旗下」無出處。
+
+## ts1–ts11 補介紹（ar-d-129～130）小結
+
+- 80 位排入 2 批，79 位上架（61 full、18 thin）、1 位不寫；藝人介紹 6,098 → 6,177。審稿合計修 13 位。ar-d-131～134 留給下一個工作階段。

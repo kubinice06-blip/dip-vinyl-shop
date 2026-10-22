@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 964 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 967 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -968,3 +968,6 @@
 | ar-d-130 | Hurd | Монголд төрсөн | 原定 10 月 30 日的首場在呼和浩特一所大學，當天現場來了數百名警察 | NYT 轉載稿（smhric）稱呼和浩特場是三日巡演最後一站，日期 11 月 1 日，警方包圍校園、驅散約 2,000 人；各報 10 月 30 日／11 月 1 日不一。『首場』『數百名警察』無來源，建議改『原定巡演的呼和浩特場』並刪『數百名警察』 | https://www.smhric.org/news_68.htm |
 | ar-d-130 | Haranga | The Sound of the Century | 找來 Mercedes-Benz 與 Siemens Nixdorf 等德國企業出資 | 維基寫 Daimler-Chrysler 與 Siemens Nixdorf；ub.life 三者皆列，且文章自己也前後不一（稱當時沒專輯又稱出版專輯）。Mercedes-Benz 為 Daimler 旗下，寫法可接受，僅供店主知悉 | https://www.ub.life/p/14551 |
 | ar-d-130 | Warfaze | Warfaze | 受到前 Feedback 主唱 Maqsud 啟發 | Prothom Alo 寫的是資深樂手 Maksud ul Haque 建議改寫孟加拉語歌，未提 Feedback；若 Maqsud 即 Maksud ul Haque（Feedback 主唱）則一致，此處身分未經第二源確認，僅供店主知悉 | https://www.prothomalo.com/entertainment/song/iezzx6w78i |
+| ar-d-130 | Dewa 19 | Terbaik Terbaik | 1995 年 8 月 2 日面世 | Jakarta Post（2022 黑膠報導）與搜尋摘要所引維基都寫 1995 年 6 月 20 日發行；兩者不一致，需店主對 Aquarius 版或維基確認。 | https://www.thejakartapost.com/culture/2022/09/23/dewa-19-album-gets-vinyl-treatment-for-the-first-time |
+| ar-d-130 | M’bilia Bel | Boya Ye | 領唱的 M’bilia Bel 與他在 1980 年代中期結婚 | 維基 Mbilia Bel 頁寫 1984 年訂婚、約 1988 年關係結束，未明說結婚；事實庫引的 Tabu Ley 頁說結婚。低度存疑，建議改「相戀並育有一女」或再查 | https://en.wikipedia.org/wiki/Mbilia_Bel |
+| ar-d-130 | Nyboma | Doublé doublé | 1972 年起在 Verckys 旗下唱紅 | 維基 Nyboma 頁：1972 年他加入 Orchestre Bella Bella（後者簽 Verckys 的 Vévé 廠牌），1973 年共組 Lipua Lipua；未見「在 Verckys 旗下」直接說法，建議改為更保守的寫法或補證 | https://en.wikipedia.org/wiki/Nyboma |
