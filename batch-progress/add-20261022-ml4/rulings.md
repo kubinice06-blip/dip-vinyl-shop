@@ -14,3 +14,10 @@
 - 掛名：`LITTLE TEMPO` 照 MB（Discogs 寫「Little Tempo Meets Henry Holder」），封面 CAA 無 → 走 Discogs（covers.json）。`U.TA屋塔` 走 §1 人工身分（MB 有藝人無此盤）。
 - 同名不同人：bonobos（日本 dub-pop）≠ 池中 Bonobo；Polaris 用 MB 286431ba 日本樂團；Doodle、The Fur. 為台灣團。
 - 台灣流行：吳卓源（Julia Wu，華語 R&B、台灣出產）上線後加 `tw-pop-artists.json`；Doodle／The Fur.／U.TA屋塔 是獨立樂團（rock）。
+
+## 研究 e 組（條號 14281–14290）
+
+- **14281**：LITTLE TEMPO 掛名查清——Discogs 主藝人 Little Tempo、join「Meets」、副名 Henry Holder；Henry Holder 職務僅「Mixed By [Dub]」，非演奏者。卡單掛 LITTLE TEMPO 維持；寫作層不得寫成雙人樂團。Henry Holder 國籍／背景單源（Needs Vote），facts 不寫。
+- **14282**：吳卓源《1994 依舊舊事》moodGuess 嚴重存疑——樂評為 90s 復古 R&B（MIDI／合成鼓、New Jack Swing 重拍舞曲、Boyz II Men 式慢板），非 lo-fi 糊拍；x 恐破 3.0，建議汰換。廠牌華風數位（MB）vs ChynaHouse（zh wiki）未決，寫作層別寫廠牌。發行日取 2018-12-18（zh wiki 的 12-11 疑為預告日）。
+- **14283**：Polaris《空間》moodGuess 部分存疑——Tower（經搜尋摘要）稱節奏組有「疾走感」，鼓手茂木欣一與あらきゆうこ；長曲（55 分 41 秒、8 首）不等於慢拍。tower.jp 403，屬間接來源。
+- **14284**：Oki Dub Ainu Band《Himalayan Dub》為《Sakhalin Rock》（2010）的 dub 版（OKI vs 内田直之混音對決），非新錄音；卡單 label 可補 Chikar Studio（CKR-0117）。聲音事實缺針對本盤的樂評，status thin；z（暖）無來源、tonkori 空弦偏亮，可能判冷。
