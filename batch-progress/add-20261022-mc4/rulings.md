@@ -104,3 +104,8 @@
 
 ## 本批新藝人（無介紹；6 個並行不切，留給調度工作階段統一切批）
 Danny Driver、Conlon Nancarrow、Alfons & Aloys Kontarsky、Daniel Kawka、Robert Craft、Elisabeth Chojnacka、Pedro Carneiro、Yuji Takahashi、Ensemble intercontemporain、David Holzman、Nicolas Hodges、Carlos Surinach、Nouvel Ensemble Moderne、Nicolas Hodges & Rolf Hind（14 位；古典演奏者，切批時標 classicalPerformer；Hodges 兩鍵可考慮以別名併一）
+
+## 上線當天評分與落格率（`batch-progress/mood-axes/score-mc4/`）
+- **上線 19｜落冷冽 9（47.4%）**；平靜 9、亢奮 1（Arditti《Xenakis: ST/4…》y 0.6：刮擦噪聲貼臉判重）。
+- **低於 60% 的原因（給下一輪換場景參考）**：2026-10-22 能量規則「兇不兇優先」把**沒有穩定拍點推進**的現代音樂一律壓到靜——點描、碎裂、複節奏層疊的戰後作品（Boulez《Structures》《Dérive 2》《explosante-fixe》、Carter 四重奏與晚期室內樂、Ferneyhough 兩張、Wolpe、陳銀淑）速度再快、密度再高，評分都給 x 2.3–2.9 落平靜。落冷冽的 9 張全是**有機械脈動或打擊推進**的：Nancarrow 自動鋼琴、Ligeti 練習曲、Antheil《Ballet mécanique》、Varèse 打擊、Xenakis 打擊與大鍵琴與 Evryali、Birtwistle《Harrison's Clocks》、Boulez《sur Incises》（同音反覆推進）。
+- **建議**：當代古典的冷冽候選只收「固定脈動／機械反覆／打擊在推」的作品；點描與複節奏層疊的不要再提（它們是平靜格的好素材）。mc30（minimalism 快作）有穩定脈動，預期落格率會高；若再開當代古典場景，改成「打擊樂與機械律動作品」專題。

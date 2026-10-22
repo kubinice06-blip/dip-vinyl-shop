@@ -108,3 +108,7 @@
 
 ## 本批新藝人（無介紹；6 個並行不切，留給調度工作階段統一切批）
 Joe Harriott、Connie Crothers（2 位；其餘 Tristano／Marsh／Braxton／Rivers／Russell／Ellis／Cecil Taylor／Howard Riley／SME／Schoof 已有介紹或已排隊）
+
+## 上線當天評分與落格率（`batch-progress/mood-axes/score-mc3/`）
+- **上線 19｜落冷冽 16（84.2%）**；3 張落平靜：Tristano《Note to Note》（x 2.9：鋼琴＋貝斯舊帶、補鼓不強推）、Howard Riley《Angle》（x 2.8：半自由三重奏、留白多）、Connie Crothers《Perception》（x 2.4：評分代理誤判為獨奏鋼琴，實為三重奏，但照三重奏重估仍不到 3.0，格子不變，未覆寫）。
+- 教訓：冷爵士要有鼓在推、線條密才過 x 3.0；Tristano 派的鋼琴主導盤（尤其無鼓或鼓弱）落平靜。下一輪冷爵士（mc14 前衛 hard bop）照「有鼓推＋快」篩，鋼琴三重奏只收鼓密的。
