@@ -1,0 +1,16 @@
+# add-20261022-ml4 裁定（情緒薄格策展線・恍惚：東亞——台日韓 dream pop／shoegaze／暖 dub／lo-fi R&B）
+
+> 店主 2026-10-22「新增的專輯數太少了 與雀躍嚴重不平衡」→ 三格各補到約 2,000；交接 `batch-progress/HANDOFF-mood-cells-line.md`、場景 `batch-progress/mood-cells-20261022/SCENES.md`。目標格：**恍惚＝靜（x<3.0）＋重（y≥+0.5）＋暖（z≥0）**；策展邊距 x ≤ 2.7、y ≥ +0.8、z ≥ +0.3。
+> 策展：`curation-ml4.json`（兩輪共 35 張：jp-dream 12、jp-dub 10、kr-dream 5、tw-dream 8）→ `master-ml4.json`（MB 34、人工 1）→ `pick.json`（20）→ `build-cards.mjs`。
+> 本批卡單：`desc-tools/batches/cards/add-20261022-ml4-cards.json`（20 張；研究 a–e 各 4）。身分：MB 釘住 19、§1 人工 1（U.TA屋塔《緩飆公路 Highway Cruising》）。
+> **預留：研究 a 14241–14250、b 14251–14260、c 14261–14270、d 14271–14280、e 14281–14290、鉤子 14291–14300、寫作 14301–14310、主線 14311–14320。**
+---
+
+## 主線策展（不佔條號）
+- **場景挖不到 45 張，照實上 20**（不湊數）。場景核心大多已在池：落日飛車 6、Fishmans 4、Mute Beat 3、こだま和文 2、甜梅號 4、Parannoul 3、The Black Skirts 3、9m88 3、?te、공중도둑；主流 lo-fi R&B（Colde、Zion.T、SIRUP、iri、9m88 系）留給 ml20–22。
+- 35 張全過 moodGuess 邊距，但亞洲卡策展把握度低（33/35 標 uncertain）。主線用**池中同藝人／同圈既有評分**（`data/mood/card-moods-v0.json`）比對，汰 15 張：
+  - **色溫實際判冷**：MUTE BEAT《MARCH》、こだま和文《Something》（池中同人 4 張 z −0.6～0，器樂 dub 小號判冷）；Dry & Heavy《From Creation》（池中《Full Contact》z 0，留有人聲的首作一張）；Doodle《Sacrifice in Despair》（台灣 shoegaze 池中甜梅號 z −0.3～0.3，兩張只留一張）；細野晴臣《MEDICINE COMPILATION》（池中同期盤 z 0–0.2，且 ambient 判輕風險）；吳卓源《5 am》（夜感，策展自估可能判冷）。
+  - **質地實際判輕**：wave to earth 兩張（池中《bad pieces》y −0.6）、?te《Way out》（池中前作 y 0.3）、HYUKOH & 落日飛車《AAA》（池中 HYUKOH《23》y 0.6／z 0.1、落日飛車多張 y 0.1）、Fishmans《Chappie, Don't Cry》《King Master George》《ORANGE》（早期乾淨 reggae-pop／中速 pop，池中後期盤才 y 0.8–1.0）、Polaris《Union》《Music》（估 y 0.9，同團留三張）。
+- 掛名：`LITTLE TEMPO` 照 MB（Discogs 寫「Little Tempo Meets Henry Holder」），封面 CAA 無 → 走 Discogs（covers.json）。`U.TA屋塔` 走 §1 人工身分（MB 有藝人無此盤）。
+- 同名不同人：bonobos（日本 dub-pop）≠ 池中 Bonobo；Polaris 用 MB 286431ba 日本樂團；Doodle、The Fur. 為台灣團。
+- 台灣流行：吳卓源（Julia Wu，華語 R&B、台灣出產）上線後加 `tw-pop-artists.json`；Doodle／The Fur.／U.TA屋塔 是獨立樂團（rock）。
