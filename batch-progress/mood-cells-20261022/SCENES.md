@@ -49,8 +49,8 @@
 |---|---|---|---|
 | mc1 | 11001 | minimal synth／coldwave／minimal wave |  派→情緒薄格 mc1、mc2（第 1 輪） |
 | mc2 | 11081 | post-punk／no wave／funk-punk（乾、尖、不厚） |  派→情緒薄格 mc1、mc2（第 1 輪） |
-| mc3 | 11161 | 冷爵士：Tristano 派、60s 前衛 Blue Note 二線、歐陸自由即興裡快而乾的 |  派→情緒薄格 mc3、mc4（第 1 輪） |
-| mc4 | 11241 | 當代古典快而冷（Ligeti、Xenakis、Varèse、Boulez、Stockhausen、Lutosławski 的快作） |  派→情緒薄格 mc3、mc4（第 1 輪） |
+| mc3 | 11161 | 冷爵士：Tristano 派、60s 前衛 Blue Note 二線、歐陸自由即興裡快而乾的 | ✅ 上線 19／落格 16（場景挖不到 45；鋼琴主導無強鼓的落平靜） |
+| mc4 | 11241 | 當代古典快而冷（Ligeti、Xenakis、Varèse、Boulez、Stockhausen、Lutosławski 的快作） | ✅ 上線 19／落格 9（47%：無拍點的點描／複節奏作品照新能量規則落平靜；只收機械脈動或打擊推進的） |
 | mc5 | 11321 | 日本 techno-pop／synth-pop（YMO 系、P-Model、Hikashu、capsule、Perfume 系、tofubeats 冷盤） | |
 | mc6 | 11401 | Detroit techno／electro 二線（Drexciya 系、Aux 88、DJ Stingray、Model 500、Dopplereffekt） | |
 | mc7 | 11481 | minimal techno 快而薄（Robert Hood、Jeff Mills 的 minimal、Monolake 快盤；厚的落亢奮） | |
@@ -86,8 +86,8 @@
 |---|---|---|---|
 | ml1 | 14001 | lovers rock＋80s rub-a-dub＋roots 二線 | ✅ 上線 35／落格 34 |
 | ml2 | 14081 | 暖 shoegaze／dream pop／新迷幻 | ✅ 上線 39／落格 33 |
-| ml3 | 14161 | beats／lo-fi hip-hop／dusty 地下饒舌 |  派→情緒薄格 ml3、ml4（第 1 輪） |
-| ml4 | 14241 | 東亞恍惚：台日韓 dream pop／shoegaze／lo-fi R&B |  派→情緒薄格 ml3、ml4（第 1 輪） |
+| ml3 | 14161 | beats／lo-fi hip-hop／dusty 地下饒舌 | ✅ 上線 27／落格 26（場景挖不到 45） |
+| ml4 | 14241 | 東亞恍惚：台日韓 dream pop／shoegaze／lo-fi R&B | ✅ 上線 11／落格 11（核心已在池、色溫多貼邊，挖不到 45） |
 | ml5 | 14321 | neo-soul 二線（Soulquarians 周邊、UK neo-soul：Omar、Lewis Taylor 一類） | |
 | ml6 | 14401 | quiet storm／slow jam 80s–90s 二線 | |
 | ml7 | 14481 | 70s 慢板靈魂：Philly／Chicago／Memphis 弦樂慢盤二線 | |
