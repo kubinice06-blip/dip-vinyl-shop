@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **329** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 91、已退回 1）。
+共 **336** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 98、已退回 1）。
 最後更新：2026-10-22
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -178,6 +178,23 @@
 | Altan Urag 《Mongol》 | [#11344614](https://www.discogs.com/release/11344614) | 2010 | Not On Label | none | 唯一版本、主線目視與盤名相符 | ok |
 | Аясын Салхи 《Coffin Town Under the Moon》 | [#6659975](https://www.discogs.com/release/6659975) | 2008 | Hi-Fi Label | none | Discogs master 1227241 的版本、主線目視與盤名相符 | ok |
 | Аясын Салхи 《Eastern Wind》 | [#33491165](https://www.discogs.com/release/33491165) | 2023 | Not On Label (Аясын Салхи Self-released) | none | 唯一版本、主線目視與盤名相符 | ok |
+
+## add-20261022-mc3（5 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Connie Crothers 《Perception》 | [#3908495](https://www.discogs.com/release/3908495) | 1975 | SteepleChase | RJ -7103 | 主線目視與盤名相符 | ok |
+| Howard Riley 《Angle》 | [#659850](https://www.discogs.com/release/659850) | 1969 | CBS | 52669 | 主線目視與盤名相符 | ok |
+| Howard Riley 《Synopsis》 | [#2326955](https://www.discogs.com/release/2326955) | 1974 | Incus | INCUS 13 | 主線目視與盤名相符 | ok |
+| Lennie Tristano 《Note to Note》 | [#6282551](https://www.discogs.com/release/6282551) | 1993 | Jazz Records | JR-10CD | 主線目視與盤名相符 | ok |
+| Warne Marsh 《Ne Plus Ultra》 | [#3098029](https://www.discogs.com/release/3098029) | 1970 | Revelation Records (3) | Revelation 12 | 主線目視與盤名相符 | ok |
+
+## add-20261022-mc4（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Arditti Quartet 《Xenakis: ST/4 / Dikhthas / Ikhoor / Embellie / Kottos / Mikka / Mikka S》 | [#2427567](https://www.discogs.com/release/2427567) | 1983 | RCA Red Seal | RS 9009 | 主線目視與盤名相符 | ok |
+| Conlon Nancarrow 《Studies for Player Piano》 | [#989614](https://www.discogs.com/release/989614) | 1969 | Columbia Masterworks | MS 7222 | 主線目視與盤名相符 | ok |
 
 ## add-20261022-ml4（3 張）
 
