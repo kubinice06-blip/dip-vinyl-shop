@@ -41,3 +41,16 @@
 - **14028**（Hugh Mundell《Time and Place》）：推翻策展層——Discogs 製作人是 Hugh Mundell 本人（Mun Rock），Pablo 是編曲、旋律口琴、弦樂與木琴；Pablo 製作的是 Mundell 首張《Africa Must Be Free by 1983》。工程師 King Tubby、Scientist 等五位，與預估（霧、暖）大致相符，濕度為推論。1980 一致。1983 遇害晚於發行，寫作層從簡。
 - **14029**（Junior Delgado《Taste of the Young Heart》）：推翻策展層——Discogs 與維基指向 Dennis Brown（DEB 廠牌）製作，非 Pablo（Pablo 合作在 1983 年出獄後）。錄音地 Joe Gibbs、Channel One、Harry J，Errol Thompson 與 Sylvan Morris remix；年份 1979（Discogs；維基文字 1978）。聲音可能偏飽滿明亮，「霧狀低頻」存疑。
 - **14030**：保留未用。
+
+## 研究 b 組
+- **14011**（Rita Marley《Who Feels It Knows It》）：推翻策展層廠牌——Shanachie 是美國 1981 年起的發行商，原盤 1980 Tuff Gong（牙買加；英國 Trident TLP 001、德國 Strand 同年）。年份 1980 對。維基把它記成 1981 Shanachie 並另列 1980 自題專輯 Trident，實為同一張（Discogs 1980 Trident 版標題即此盤）。名單無 Marcia Griffiths／Judy Mowatt，寫作層不得寫 I Threes 和聲。moodGuess 輕度存疑（曲速與濕度未證）。
+- **14012**（Maxi Priest and Caution《You're Safe》）：推翻策展層廠牌——LP 實為 10 Records（Virgin）DIX 11，版面註明 produced for Level Vibes Ltd；建議卡單廠牌改 10 Records。年份 1985 對。Discogs 風格標 Reggae-Pop，y 偏輕風險高，moodGuess 存疑。
+- **14013**（Kofi《Black... With Sugar》）：年份 1989 Ariwa（MB 2008 日版是再版，不必改）；curatorRisk 解除。**moodGuess 中度存疑**——來源只證實鼓機、合成器與稀疏貝斯的數位製作（〈Didn't I〉），「dub 回聲墊」查無來源。
+- **14014**（Deborahe Glasgow《Deborahe Glasgow》）：1989 Greensleeves 對。Music Works 錄混、Steely 與 Clevie 伴奏、Gussie Clarke 製作；維基明言〈Champion Lover〉聲音硬朗往 dancehall 靠，**moodGuess 中度存疑**（偏明晰數位，非濕霧）。
+- **14015**（Jimmy Riley《Rydim Driven》）：1981 Taxi 對（Apple 1982 是再版）。Channel One 錄混，Sly 加 Syndrums、鋼琴與銅管、十首六首翻唱美式靈魂；慢拍與厚貝斯無來源，**moodGuess 中度存疑**（偏緊湊明亮）。
+- **14016**（Gregory Isaacs《Out Deh》）：1983 Island 對（正名帶驚嘆號）。維基明載合成器與疊錄在倫敦後補、樂評稱「金屬感合成器」、〈Love Me with Feeling〉帶 disco 元素，混音 Godwin Logie 與 Groucho Smykle；**moodGuess 中度存疑**（Island 打磨過的明亮）。
+- **14017**（John Holt《Police in Helicopter》）：1983 Greensleeves GREL 58 對。Greensleeves 官方稱 Rub-A-Dub 與早期 dancehall 的沉重聲音，方向相符；風險在池中同藝人 y 偏輕與銅管、〈I Got Caught〉近 rocksteady，輕度存疑。Rough Trade 頁 429 開不了，引文只來自搜尋摘要。
+- **14018**（Wayne Jarrett《Bubble Up》）：**推翻策展層盤名層面**——原盤 1982 US Wackie's WACK 191 正名《Showcase Vol. 1》，《Bubble Up》是英國版改名（Discogs 英國版 1984，WR 191 為 1998 重發）。年份 1982 為原盤年，卡單可保留；寫作層須寫明原名與改名。LargeUp 證實彈簧殘響、煙霧、重貝斯，是 b 組混音最濕的一張，不存疑（但該評是針對單曲〈Bubble Up〉）。
+- **14019**（Aswad《Not Satisfied》）：1982 CBS 對。製作 Aswad 與 Reuben Campbell（非 Mad Professor）、附贈 dub 10 吋；策展層「銅管墊」無來源，寫作層不得寫銅管。混音濕度無文字證據，輕度存疑。
+- **14020**：保留未用。
+- **b 組總結**：推翻策展層 3 處（Rita 廠牌、Maxi 廠牌、Jarrett 盤名）；moodGuess 存疑 8 張（Wayne Jarrett 除外；其中中度存疑 4 張：Kofi、Deborahe、Jimmy Riley、Gregory Isaacs），共同現象是 1981–1989 年的英國與牙買加 lovers rock 多為數位／合成器／鼓機製作，偏乾淨明亮。
