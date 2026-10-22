@@ -3026,4 +3026,9 @@ window.DipPreviewStatus = Object.freeze({
   "lunatic|mauvais œil": "unavailable",
   "113|les princes de la ville": "unavailable",
   "bones|garbage": "unavailable",
+  "lull|cold summer": "unavailable",
+  "final|one": "unavailable",
+  "troum|tjukurrpa, part one: harmonies": "unavailable",
+  "zoviet france|shouting at the ground": "unavailable",
+  "dale cooper quartet & the dictaphones|métamanoir": "unavailable",
 });
