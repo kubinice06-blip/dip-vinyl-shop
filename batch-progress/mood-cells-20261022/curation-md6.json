@@ -10,7 +10,7 @@
   {
    "id": "touch",
    "zh": "Touch 系電聲 drone／唱盤與田野",
-   "count": 18,
+   "count": 22,
    "why": "Touch／Mego 系電聲 drone、唱盤顆粒與田野低頻，無鼓、厚、冷"
   },
   {
@@ -22,19 +22,19 @@
   {
    "id": "room40",
    "zh": "Room40 系厚重 drone",
-   "count": 8,
+   "count": 10,
    "why": "Room40 系飽和長音與低頻霧牆"
   },
   {
    "id": "type",
    "zh": "Type／Miasmah 系暗色 drone 與音塊",
-   "count": 13,
+   "count": 14,
    "why": "Type／Miasmah 系弓弦黑霧與暗色音塊"
   },
   {
    "id": "subbass",
    "zh": "外延：低頻音塊／暗色電聲（Subtext、Modern Love、Mego 系）",
-   "count": 3,
+   "count": 8,
    "why": "場景外延：Subtext、Modern Love、isolationist 的低頻音塊"
   }
  ],
@@ -1607,6 +1607,354 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": ""
+  },
+  {
+   "artist": "Thomas Köner",
+   "album": "Aubrite",
+   "year": 1996,
+   "label": "Barooni",
+   "country": "de",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Köner isolationist 三部曲之一，鑼聲放慢成深不見底的次低頻轟鳴，極地般死寂",
+   "moodGuess": {
+    "x": 1.1,
+    "y": 1.5,
+    "z": -1.5,
+    "why": "無鼓，次低頻鑼聲轟鳴，極冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/09afefb0-ea63-3f57-8f9a-7438318c8f74",
+    "https://coverartarchive.org/release-group/09afefb0-ea63-3f57-8f9a-7438318c8f74/front"
+   ],
+   "mbRgMbid": "09afefb0-ea63-3f57-8f9a-7438318c8f74",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Thomas Köner",
+   "album": "Kaamos",
+   "year": 1998,
+   "label": "Mille Plateaux",
+   "country": "de",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "以極夜為題的 Mille Plateaux 作，厚重低頻與冰風雜訊，無光的冷",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.5,
+    "z": -1.6,
+    "why": "無鼓，低頻轟鳴與冰風噪，極冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/466fad89-3077-342c-8fa1-e16bd78be28e",
+    "https://coverartarchive.org/release-group/466fad89-3077-342c-8fa1-e16bd78be28e/front"
+   ],
+   "mbRgMbid": "466fad89-3077-342c-8fa1-e16bd78be28e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Thomas Köner",
+   "album": "Unerforschtes Gebiet",
+   "year": 2002,
+   "label": "Die Stadt",
+   "country": "de",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "「未探勘之地」，極地探險為題的長篇低頻 drone，濃殘響、無人",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.4,
+    "z": -1.5,
+    "why": "無鼓，低頻長音與濃殘響，極冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/23123ea3-2a63-38dd-a668-0c5da475553d",
+    "https://coverartarchive.org/release-group/23123ea3-2a63-38dd-a668-0c5da475553d/front"
+   ],
+   "mbRgMbid": "23123ea3-2a63-38dd-a668-0c5da475553d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Thomas Köner",
+   "album": "Tiento de las Nieves",
+   "year": 2014,
+   "label": "Denovali Records",
+   "country": "de",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "雪為題的晚期作，管風琴取樣被凍結成厚重低頻長音與霧",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "無鼓，凍結管風琴長音與低頻霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e71f5c78-db2d-49b6-8536-e96ea1f0b856",
+    "https://coverartarchive.org/release-group/e71f5c78-db2d-49b6-8536-e96ea1f0b856/front"
+   ],
+   "mbRgMbid": "e71f5c78-db2d-49b6-8536-e96ea1f0b856",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kevin Drumm",
+   "album": "Imperial Horizon",
+   "year": 2009,
+   "label": "Hospital Productions",
+   "country": "us",
+   "faction": "subbass",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Drumm 的靜態長篇：一道持續的厚重嗡鳴牆，無起伏、無鼓、冰冷",
+   "moodGuess": {
+    "x": 1.1,
+    "y": 1.6,
+    "z": -1,
+    "why": "無鼓，持續厚嗡鳴牆不刺耳，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0d35bd8d-bb5f-428b-857b-1b23f0fdd4bc",
+    "https://coverartarchive.org/release-group/0d35bd8d-bb5f-428b-857b-1b23f0fdd4bc/front"
+   ],
+   "mbRgMbid": "0d35bd8d-bb5f-428b-857b-1b23f0fdd4bc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kevin Drumm",
+   "album": "Tannenbaum",
+   "year": 2013,
+   "label": "Hospital Productions",
+   "country": "us",
+   "faction": "subbass",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "冬季為題的長篇 drone，低頻嗡鳴緩慢起伏、濃殘響，灰白寒冷",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.4,
+    "z": -1,
+    "why": "無鼓，低頻嗡鳴與殘響，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/03123762-6a3b-4dba-b2cc-0ee18514761c",
+    "https://coverartarchive.org/release-group/03123762-6a3b-4dba-b2cc-0ee18514761c/front"
+   ],
+   "mbRgMbid": "03123762-6a3b-4dba-b2cc-0ee18514761c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kevin Richard Martin",
+   "album": "Return to Solaris",
+   "year": 2021,
+   "label": "Phantom Limb",
+   "country": "gb",
+   "faction": "room40",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "為 Tarkovsky《Solaris》重配的次低頻 drone，深海般的壓迫與孤寂",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.7,
+    "z": -1.3,
+    "why": "無鼓，次低頻轟鳴與霧，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/121e5ca6-378b-4653-9e5a-a3c7dbf455af",
+    "https://coverartarchive.org/release-group/121e5ca6-378b-4653-9e5a-a3c7dbf455af/front"
+   ],
+   "mbRgMbid": "121e5ca6-378b-4653-9e5a-a3c7dbf455af",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kevin Richard Martin",
+   "album": "Frequencies for Leaving Earth, Volume 1",
+   "year": 2020,
+   "label": "Intercranial Recordings",
+   "country": "gb",
+   "faction": "room40",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "延續《Sirens》的次低頻夜曲，厚重合成器低頻與殘響霧，無人的冷",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.6,
+    "z": -1.2,
+    "why": "無鼓，次低頻與殘響霧，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6637d63b-ab2e-4126-8714-d4cc387bed86",
+    "https://coverartarchive.org/release-group/6637d63b-ab2e-4126-8714-d4cc387bed86/front"
+   ],
+   "mbRgMbid": "6637d63b-ab2e-4126-8714-d4cc387bed86",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Elegi",
+   "album": "Sistereis",
+   "year": 2007,
+   "label": "Miasmah",
+   "country": "no",
+   "faction": "type",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Miasmah 早期作，低頻嗡鳴、弓弦與雜訊霧，挪威冬夜的暗",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "無鼓，低頻嗡鳴與雜訊霧，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d50535c8-182a-3b67-a8d9-f87480a886e3",
+    "https://coverartarchive.org/release-group/d50535c8-182a-3b67-a8d9-f87480a886e3/front"
+   ],
+   "mbRgMbid": "d50535c8-182a-3b67-a8d9-f87480a886e3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Paul Jebanasam",
+   "album": "Continuum",
+   "year": 2016,
+   "label": "Subtext",
+   "country": "gb",
+   "faction": "subbass",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "與影像藝術家 Tarik Barri 合作，龐大的失真長音與低頻音塊，宇宙般冷峻",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.8,
+    "z": -1.1,
+    "why": "無鼓，巨大失真長音與低頻，冷峻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/19093d18-a04f-4108-82c6-54d339ff66a8",
+    "https://coverartarchive.org/release-group/19093d18-a04f-4108-82c6-54d339ff66a8/front"
+   ],
+   "mbRgMbid": "19093d18-a04f-4108-82c6-54d339ff66a8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bass Communion",
+   "album": "Ghosts on Magnetic Tape",
+   "year": 2004,
+   "label": "Headphone Dust",
+   "country": "gb",
+   "faction": "subbass",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Steven Wilson 的 drone 計畫，以 EVP 磁帶為題的幽暗低頻長音與磁帶嘶聲",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.4,
+    "z": -1.2,
+    "why": "無鼓，磁帶嘶聲與低頻長音，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ecd8b40f-a400-383d-b575-b31378eceb90",
+    "https://coverartarchive.org/release-group/ecd8b40f-a400-383d-b575-b31378eceb90/front"
+   ],
+   "mbRgMbid": "ecd8b40f-a400-383d-b575-b31378eceb90",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bass Communion",
+   "album": "Molotov and Haze",
+   "year": 2008,
+   "label": "Important Records",
+   "country": "gb",
+   "faction": "subbass",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Bass Communion 最厚的長篇之一，層疊低頻長音糊成不透光的霧",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.5,
+    "z": -1,
+    "why": "無鼓，層疊低頻長音霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/af3a76ff-ad92-33ad-a6a1-355f43b0e48d",
+    "https://coverartarchive.org/release-group/af3a76ff-ad92-33ad-a6a1-355f43b0e48d/front"
+   ],
+   "mbRgMbid": "af3a76ff-ad92-33ad-a6a1-355f43b0e48d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
   }
  ],
  "notes": [
@@ -1619,6 +1967,7 @@
   "MB 查無而放棄：Svarte Greiner《Devouring Mother》、Jasper TX《Black Sails》《Singing Sadness》（Jasper TX《An Index of Failure》MB 首發 2013 疑為再版日期，未提）。",
   "label 填原盤廠牌；Jacaszek《Treny》MB 首發為波蘭 Gusstaff（非 Miasmah），Black to Comm《Seven Horses》為 Thrill Jockey、Irisarri《Peripeteia》為 Dais、Köner《Teimo》為 Barooni，屬場景外延。",
   "疑點：Black to Comm 同名作 MB 首發 2014（印象中 Type 2012），年份照 MB；Svarte Greiner《Black Tie》MB 首發 2013-04；Vladislav Delay Quartet 有鼓刷但稀疏不兇，照 BRIEF 判靜；最薄 y 邊距為 Oren Ambarchi《Grapes from the Estate》0.9 與 Jacaszek《Treny》1.0。",
-  "WebSearch 使用 0 次（全走 MB API、CAA、iTunes Search、Bandcamp）。"
+  "WebSearch 使用 0 次（全走 MB API、CAA、iTunes Search、Bandcamp）。",
+  "候補 12 張（研究層汰 9 張後追加，albums 第 55–66 筆）：全 MB 釘住、CAA 有封面、去重 seed 與全部 curation-*.json（含 md5）0 撞；只收無鼓、厚低頻／失真長音、z ≤ −1.0、y ≥ 1.3 的寬邊距盤。Köner 四張歸 touch faction（Touch 系藝人，原盤在 Barooni／Mille Plateaux／Die Stadt／Denovali）。考慮過但不提：Phill Niblock《Touch Strings》（z 恐偏中性）、Ben Frost & Bjarnason《Sólaris》（細緻、y 不夠寬）、Lawrence English《Observation of Breath》、Irisarri《Midnight Colours》、ELEH《Location Momentum》（純音、y 貼邊）、Main《Firmament II》《Ablation》（CAA 無封面，iTunes 暫查不到）。"
  ]
 }
