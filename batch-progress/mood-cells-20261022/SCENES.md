@@ -9,6 +9,40 @@
 **條號**：每批 80 條，照表；同批內：研究 a–e 各 10、鉤子 10、寫作 10、主線 10。
 **評分目錄**：`batch-progress/mood-axes/score-<批>/`（如 `score-mc3/`），`build-priors.mjs` 會自動讀所有 `score*/scored-*.json`，不用改它。
 
+## 第 2 輪起的調整（2026-10-22 店主選「收窄到大場景、降低並行」）
+
+**第 1 輪實測**：冷冽 mc1–mc4 只上架 22／15／19／19（落格 17／8／16／9），恍惚 ml3／ml4 上架 27／11——**小眾場景挖不到 45 張**，而每個子工作階段約花 40–55 美元額度，且本週額度已出現接近上限的警告。頹靡 md 線產量正常（每批 43–45、落格九成以上）。
+**新規矩**：
+1. **並行降到 3 個**（每個 2 批）；本週額度重置後再視情況加。
+2. **只派下面的優先序**；其他列（小眾場景）暫停，不派。
+3. **一批可以合併相鄰的大場景湊滿 45 張**：指派時寫「主場景＋可擴寫場景」，策展代理先挖主場景，不夠再往擴寫場景補，仍要過 moodGuess 邊距。
+4. 冷冽線教訓：**帶吉他的樂團、中速 synth 常判重落亢奮；無拍點的古典判靜落平靜**——只收「快、薄、乾、有機械脈動或明確節拍」的。
+
+**優先序**（由上往下派；頹靡已穩定，冷冽與恍惚往大池子集中）：
+
+| 順位 | 批 | 主場景＋可擴寫場景 |
+|---:|---|---|
+| 1 | md9 | 冷的 trip-hop／Bristol 二線 ＋ md17 暗 R&B |
+| 2 | mc9 | 80s synth-pop 二線 ＋ mc10 new wave 冷盤 ＋ mc20 港台日 80s synth-pop |
+| 3 | ml5 | neo-soul 二線 ＋ ml8 alt R&B 2010s–20s |
+| 4 | mc6 | Detroit techno／electro 二線 ＋ mc12 electroclash ＋ mc29 electro-funk 機械那半 |
+| 5 | ml6 | quiet storm／slow jam ＋ ml7 70s 慢板靈魂弦樂盤 |
+| 6 | md10 | 冷的 shoegaze／drone pop ＋ md25 冷的 ambient／art pop 慢盤 |
+| 7 | mc5 | 日本 techno-pop ＋ mc17 日本 techno ＋ mc25 J-pop／K-pop 冷系 |
+| 8 | ml9 | 暖 dub／roots dub 二線 ＋ ml25 80s 慢板 reggae 歌 |
+| 9 | mc7 | minimal techno 快而薄 ＋ mc8 IDM 快而乾 |
+| 10 | ml15 | 暖 trip-hop／downtempo ＋ ml23 ambient dub／ambient house 暖盤 |
+| 11 | md16 | cloud rap／sad rap 冷盤 ＋ md24 嘻哈 instrumental 冷盤 |
+| 12 | ml16 | jazz-rap／boom bap 暖盤 ＋ ml17 G-funk 慢盤 ＋ ml18 chopped & screwed |
+| 13 | mc11 | krautrock motorik 快盤 ＋ mc16 Italo／space disco 冷盤 ＋ mc27 70s 前衛電子快作 |
+| 14 | ml11 | chillwave／hypnagogic ＋ ml12 bedroom／dream pop 濕的那一路 |
+| 15 | md14 | 暗色電影／遊戲配樂 ＋ md13 現代古典暗黑音塊 |
+| 16 | ml19 | city pop／AOR 濕的慢歌 ＋ ml28 70s soft rock 慢而濕 |
+| 17 | mc26 | synthwave 冷而薄 ＋ mc19 東歐／蘇聯 synth |
+| 18 | md11 | 工業 old-school 慢盤／ritual ＋ md12 neoclassical darkwave |
+
+**暫停**（第 1 輪證實產量低，或池子太小）：mc13 math rock、mc14 前衛 hard bop、mc21 post-punk revival、mc22 當代爵士、mc28 歐陸自由即興、mc30 minimalism、mc4 系古典快作續集、ml4 系東亞續集、ml13、ml22、ml26、ml27。
+
 狀態欄：空白＝待派；`派→<工作階段標題>`；`✅ 上線 N／落格 M`。
 
 ## 頹靡 md（靜＋重＋冷；門檻 x ≤ 2.7、y ≥ +0.8、z ≤ −0.3）

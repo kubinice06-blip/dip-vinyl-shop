@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-22｜dip-vinyl-shop｜情緒薄格線第 1 輪檢討：收窄到大場景、並行降到 3
+
+- **內容**：第 1 輪完成 mc1–mc4、ml3、ml4（md5–md8、ml1、ml2 仍在跑）。冷冽四批只上架 22／15／19／19（落格 17／8／16／9）、恍惚 ml3／ml4 上架 27／11——小眾場景挖不到 45 張，每個子工作階段約 40–55 美元額度，且本週額度出現接近上限警告。回報店主，店主選「收窄到大場景、降低並行」。`SCENES.md` 加「第 2 輪起的調整」：並行降到 3、一批可合併相鄰大場景湊滿 45、18 個優先序（頹靡 trip-hop／shoegaze／cloud rap、冷冽 synth-pop／Detroit／日本 techno-pop／minimal、恍惚 neo-soul／quiet storm／dub／jazz-rap）、暫停 12 個小眾場景、冷冽線教訓（吉他樂團與中速 synth 判重、無拍點古典判靜）。目前八格 恍惚 821、冷冽 924、頹靡 1,120。
+- **主要檔案**：`batch-progress/mood-cells-20261022/SCENES.md`。
+- **驗證**：文件改動；八格數字取自 origin/main 上 `build-card-moods.mjs` 輸出。
+
 ### 2026-10-22｜dip-vinyl-shop｜頻率選歌喇叭鈕與頂欄「自動試聽」開關連動
 
 - **改動**：店主切去聽串流後站上會自動把網頁音源（頂欄自動試聽開關）關掉，頻率選歌就沒聲音、按左上角喇叭也沒反應——喇叭原本只是模組內的布林。現在 `dip-tune.js` 以 `cfg.audioPref()`（`DipPlayer.autoplayPreference() !== 'off'`）進場同步、喇叭按下走 `cfg.setAudioPref(on)` 回寫站上開關並武裝播放器、新增 `DipTune.setAudio(on)` 給頁面推；`index.html` 頂欄開關的 `onToggle` 與 `onAutoplayRevoked` 都呼叫 `DipTune.setAudio`。開關是關的時候轉輪子不再 `grant`（不搶串流）；沒表態過的裝置第一次碰輪子寫成開，頂欄圖示跟著亮。`dip-tune.js?v=6`。
