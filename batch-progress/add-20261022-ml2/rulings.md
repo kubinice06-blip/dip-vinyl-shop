@@ -16,3 +16,14 @@
 - 跨場景：Men I Trust、The Marías、Youth Lagoon 可能與 ml12 重疊；Nick Hakim、Kadhja Bonet 可能與 ml10 重疊；Harold Budd 合作盤、Jónsi & Alex 可能與 ml30 重疊——照「SCENES.md 先出現的批為準」歸本批。
 - 研究層每支 WebSearch ≤3；facts 必含 2–3 條聲音事實（鼓、速度、殘響、合成器墊、冷暖）；與 moodGuess 不符的標「moodGuess 存疑」。
 
+
+## 研究 b 組
+- **14091**　Songs in A&E 的 moodGuess 明顯存疑：維基稱這張是樂團史上「噪音場景最少、歌最精簡」，18 首中 6 首不到 2 分鐘，另有 garage 快歌（〈Yeah Yeah〉）與慢歌（〈Baby I'm Just a Fool〉），節奏與厚度未必落恍惚格。卡單廠牌 Spaceland 與維基的 Sanctuary／Fontana 不一致，MB 未核對，facts 採維基。
+- **14092**　Ulrich Schnauss《Goodbye》標 thin：聲音第一手描述查無（Pitchfork、Domino、Bandcamp 抓取失敗），卡單「殘響牆淹沒拍子」的節拍與速度無來源，moodGuess 存疑；市面常見 2008 修訂版（12 首、66 分，加 Chapterhouse 客座），寫作以 2007 原版 10 首為準。
+- **14093**　Helado Negro《Far In》標 thin（官網、Guardian、Pitchfork、NPR 抓取失敗，聲音僅 Guardian 一句與 Bandcamp 留言）；樂評說「要大聲播」「groovy」，暗示律動比卡單「慢、霧化」活。《This Is How You Smile》y 0.9 存疑：來源皆未講速度，編制含電子班卓、顫音琴，被稱 synth-folk，質地可能偏輕。
+- **14094**　Pure X《Pleasure》色溫存疑：同期 BPM 樂評明寫「strikingly cold, yet colorful」，後評才說吉他邊緣「柔軟而溫暖」；質地（慢、厚、殘響）與預估相符。
+- **14095**　Terno Rei《Violeta》y 存疑：維基與樂評都說偏流行、合成器變多、吉他轉輕巧、聽感比前作更振奮，質地可能偏輕而非厚霧。
+- **14096**　Yo La Tengo《Riot》y 輕度存疑：無鼓組重擊（手打打擊樂為主），FACT 稱部分小品單薄低語。製作人搜尋摘要稱 James McNew，但兩篇原文未點名，單一來源不寫。
+- **14097**　Spiritualized《And Nothing Hurt》輕度存疑：〈Let's Dance〉〈The Morning After〉有銅管與搖滾推進，偏動；色溫暖、質地厚有 NME 支撐。聲音事實來自 NME、Flood（維基未描述聲音）。
+- **14098**　Youth Lagoon 發行日 MB 9-26、維基 9-27，facts 並列不下斷言；聲音與 moodGuess 相符（Alesis SR16 鼓機、車庫／淋浴間殘響室）。
+- **14099**　全組 9 張 facts 9–10 條、全 https、無推翻身分；無千分位逗號、無簡體字。QA（`qa-batch.mjs research`）b 組零標記。
