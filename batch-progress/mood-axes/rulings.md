@@ -143,3 +143,14 @@
 - **代理事故**：chunk-03 代理把輔助腳本放在共用 scratchpad 同名檔，前 10 筆一度寫進 out/chunk-05，已由它自行移除；合併時逐份核對 id 一一對應、無外來 id。日後派工要求各代理腳本放自己的子資料夾。
 - **代理回報的卡池疑點**（未處理）：Exists《Exist》子曲風標 shoegaze（疑為九〇年代馬來流行搖滾）、Slam《Kesan Terbukti》標 punk（疑為馬來慢搖滾抒情）、Amateur Takes Control 標 no-wave（實為器樂後搖滾）、Instinct《อินเนอร์》標 black metal（疑為旋律硬搖滾）。
 - **全池**：錨點 104＋模型評分 19,354＝19,458，暫估 0；錨點 104/104 同格。八格 放鬆 5,155、平靜 1,333、恍惚 596、頹靡 983、雀躍 5,943、冷冽 874、沸騰 1,983、亢奮 2,591。`data/mood/card-moods.json` 重建（頻率選歌星圖讀它），`card-moods-v0.json`（星圖實驗頁讀它）同步。
+
+## 2026-10-22｜能量軸改標準：「兇不兇」優先於「快不快」，重判 60 張
+
+- **店主**：承《Monotheist》改判，「所以要重新訂定標準」；追問 drone 類去向，裁定「Sunn O))) 算頹靡，依此制定標準」。
+- **標準**（已寫進 `score500/BRIEF.md` X 軸硬規則）：躁 ＝ 攻擊性（失真牆／嘶吼／刺耳／音壓）**且**有打擊在推（鼓或拍子，再慢也算）；速度只決定高低。缺一不算：有拍沒攻擊性（dub、dub techno、trip-hop、dubstep、slowcore、shoegaze、cloud rap）留靜；有攻擊沒拍（drone、噪音牆、暗黑 ambient、現代古典音塊、工業 drone）留靜。
+- **重判範圍**：靜而極重（能量 <3、質地 ≥1.5）共 267 張（`intensity-rejudge/candidates.json`，含評分者原理由）。另掃質地 0.8–1.5 帶金屬／工業字眼的 22 張，無一需動（Agalloch《The Mantle》民謠金屬留靜）。
+- **移到躁的 60 張**（`overrides.json`，質地／色溫不動，能量 3.1–3.6）：doom／stoner（Candlemass 4、Electric Wizard 4、Sleep 4、Saint Vitus 2、Cathedral 2、My Dying Bride 3、Paradise Lost 3、Type O Negative 2、Melvins、Randy Holden、Marijannah、Estranged、Katatonia）、sludge／噪音龐克（Eyehategod 4、Flipper、Drunks with Guns、Killdozer、Alice in Chains s/t）、後金屬（Neurosis 2、Cult of Luna 2、Isis、Jesu、The Body）、工業（Godflesh 2、Dälek 5、Techno Animal、Swans《Cop》《Filth》）、黑金屬（Burzum《Filosofem》、Bathory《Hammerheart》、Alcest《Écailles》）、噪音搖滾（裸のラリーズ《'77 Live》《Oz Tapes》、Nick Cave《From Her to Eternity》）。
+- **留在靜的典型**：Sunn O))) 3 張、Earth 2、Khanate 2、Boris《Altar》、Ben Frost、Haxan Cloak、Penderecki、Decasia、Arrival、Chernobyl、Throbbing Gristle 3、Nurse With Wound、Swans《Soundtracks for the Blind》、Coil、所有 dub／dub techno／Pole／Gas／Burial／Portishead／Tricky／Massive Attack、MBV 3、Slowdive、Low、Fennesz、Tim Hecker、MONO、GY!BE（後搖漸強不算，後金屬才算）、Alcest《Souvenirs》（清唱為主）、Om、Tom Waits《Bone Machine》、Kid Cudi。
+- **邊界判例**：The Body《I Shall Die Here》有電子拍與尖叫 → 躁 3.1；Khanate 鼓極稀、每擊間死寂 → 照 Sunn O))) 留靜；Colin Stetson《Sorrow》只在高潮有鼓與失真 → 留靜；Armand Hammer 刺耳但嘻哈節拍不「打」→ 留靜，Dälek 是工業噪音牆 → 躁。
+- **結果**：八格 頹靡 982→926、恍惚 596→592、沸騰 1983→1987、亢奮 2592→2648；錨點 104/104 同格（60 張無一是錨點）。
+- **沒做**：舊批次評分檔不回改（v0 不動，覆寫層承擔）；日後新卡照新 BRIEF 評。
