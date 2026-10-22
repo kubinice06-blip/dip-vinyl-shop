@@ -1,5 +1,31 @@
 # 情緒三格補充計畫：恍惚／頹靡／冷冽（2026-10-16 雲端草擬；2026-10-22 重掃更新）
 
+## 2026-10-22 v2 定案（店主：「可以開始補缺少的頻率了 再策一次計畫」）——開跑
+
+**現況**（質地尺改判＋ts5／ts6 上線後）：恍惚 **779**、冷冽 **874**、頹靡 **952**；平靜 1,328、沸騰 2,004、亢奮 2,664、放鬆 4,985、雀躍 5,962。
+
+**三條線、12 批、每批 45 張，順序 頹靡 md → 冷冽 mc → 恍惚 ml**。頹靡先跑是因為命中率最高（dub techno 59%、slowcore 57%、dark ambient 51%、drone 50%）；恍惚放最後是因為質地尺剛改、先看新卡評分怎麼落再定場景（dream pop 已從 33% 升到 40%、neo-soul 42%）。
+
+| 線 | 批 | 場景 | 落格率預估 |
+|---|---|---|---:|
+| md | md1 | dark ambient／isolationist／drone／工業 drone | ~55% |
+| | md2 | slowcore／sadcore 二線＋dark jazz | ~50% |
+| | md3 | darkwave／goth 慢盤＋**無鼓** drone metal／funeral doom（#114 後有鼓的 doom 判躁，不收） | ~45% |
+| | md4 | 暗色嘻哈／cloud rap／暗 R&B＋dub techno 二線＋亞洲 | ~45% |
+| mc | mc1–mc4 | 照 §2.3（minimal synth／coldwave、post-punk／no wave、冷爵士、當代古典＋亞洲 synth-pop） | 30–40% |
+| ml | ml1–ml4 | 照 §2.2，但 ml2（暖 shoegaze／dream pop）與 ml4（東亞 dream pop／lo-fi R&B）命中率已因新尺上升，可排前面 | 40–50% |
+
+**跟薄細項線不同的四件事**（已寫進 `batch-progress/mood-cells-20261022/CUR-DISPATCH.md`、`RES-DISPATCH.md`、`HANDOFF-mood-cells-line.md`）：
+1. 策展層每張填 `moodGuess`，三軸都要過門檻**且留邊距**（頹靡 x ≤ 2.7、y ≥ +0.8、z ≤ −0.3），貼邊不提；`build-cards` 把它帶進卡單。
+2. 研究層 facts 必含 2–3 條聲音事實（鼓、速度、失真、殘響、冷暖），發現與 moodGuess 不符就標「存疑」，主線直接汰換。
+3. 上線當天評分（照 BRIEF 含 10-22 兩條新規則），**落格率寫進 rulings 與交接表**：<40% 換場景、<30% 停線回報。
+4. 藝人介紹只切批不寫（店主：用別的對話做）。
+
+**規模**：每批淨增目標格約 20–25 張；12 批跑完預估 頹靡 ~1,050、冷冽 ~950、恍惚 ~880。要再往上就是第二輪，或再動尺。
+**執行**：每個工作階段 2 批；md1–md2、md3–md4 各開一個子工作階段並行（各自用 `master-override-<組>.json`，避免撞檔）。條號 md1 從 10681 起，每批 80。
+
+---
+
 ## 2026-10-22 重掃（店主：「掃描頻率 把專輯分佈較少的頻率補齊……先掃描給我計畫」）
 
 **現況**（`build-card-moods` 輸出，全池 19,458 張皆有座標，已含 ts1–ts11 與 #114 能量軸改判）：
