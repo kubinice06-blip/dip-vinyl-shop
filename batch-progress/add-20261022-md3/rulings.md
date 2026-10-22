@@ -50,3 +50,15 @@
 - **10878**：Zola Jesus《Stridulum II》廠牌保留 Sacred Bones（美國原發行；德國 Souterrain Transmissions 2010-08-23 為歐洲版），年份同為 2010。
 - **10879**：Zola Jesus《The Spoils》、Pain Is Beauty、Okovi 等 Pitchfork／Quietus 全文無法開啟（pitchfork.com 被擋），樂評引文一律轉自 Wikipedia 並在 src 標 Wikipedia。Treble 頁 403，內容取自搜尋摘要的原文引述。
 - **10880**：九張全數無推翻年份／廠牌／盤名；皆原創錄音室專輯，無選輯。WebSearch 用 3 次（Arcana、Marked for Death、Apokalypsis）。
+
+## 研究 c 組
+- **10861**：九張全數身分對得上（MB RG、Discogs master、Projekt 官網三方一致），皆原創錄音室專輯，年份與廠牌無推翻。Ashes in the Brittle Air 的 Discogs 主發行是 CD 再版（年份欄 0），年份採 1989（維基、Projekt 原版頁、MB）。
+- **10862**：【推翻策展層】Black Tape for a Blue Girl《Ashes in the Brittle Air》策展層寫「Oscar Herrera 低沉男聲、大提琴」；Discogs 與 Projekt 演出名單無大提琴，另一主角是英國女歌手 Sue-Kenny Smith（民謠嗓音、吉他），Herrera 被描述為「強烈」。facts 已改。
+- **10863**：【推翻策展層】Cindytalk《Camouflage Heart》策展層寫「鋼琴」；找不到來源（鋼琴屬後來的《The Wind Is Strong…》），不寫。
+- **10864**：moodGuess 存疑（高風險）：Clan of Xymox《Medusa》（Trouser Press 稱 Eurodisco gloom、〈Michelle〉彈跳，Post-Punk.com 稱暖質感合成器，〈Masquerade〉以 Atari ST MIDI 編程；節奏推進偏舞曲，x 可能過 2.6、z 偏暖）。
+- **10865**：moodGuess 存疑（高風險）：Cindytalk《Camouflage Heart》（Post-Punk.com 2025 稱打擊樂結巴猛衝、吉他嘎啦突刺、人聲撕裂，Cinder 自述憤怒猶在；策展層「大部分慢而無拍」證據不足，可能落躁）。
+- **10866**：moodGuess 存疑（中）：Black Tape for a Blue Girl《The Rope》（Projekt 稱開場〈Memory, Uncaring Friend〉rhythmic, hard-hitting，Kraut 打鼓與鼓機；策展層「幾乎無鼓」只適用後段）。
+- **10867**：moodGuess 存疑（中）：Black Tape for a Blue Girl《Ashes in the Brittle Air》（開場最強最複雜，民謠暖色，Projekt 稱重製後 warm；z −1.2 可能偏冷、y 可能偏輕）。Love Spirals Downwards《Idylls》（Projekt 文案稱 watery, warm, sweet，Opus Zine 稱鼓機冷；z −0.7 冷暖互有證據）。
+- **10868**：moodGuess 存疑（輕）：Lycia《The Burning Circle and Then Dust》（Pandamonium 稱〈Pray〉可跳舞、整體偏 darkpop 歌曲化）。Lycia《Cold》、Black Tape《Remnants》、HNIA《Livonia》未存疑。
+- **10869**：來源取捨：AllMusic 全部 403，樂評引文改取 Projekt 官網（轉引）、維基、Trouser Press、Post-Punk.com、ReGen、Opus Zine（lovespiralsdownwards.com 摘錄）。Uncut 榜名次、「darkwave 一詞由 John Peel 創」（單源）、Type O Negative 暖場（僅維基）只進 notes 或降權。Black Tape 成立地點維基（加州）與 Projekt 另頁（佛州）衝突，facts 不寫地點。
+- **10870**：WebSearch 用 3 次（Cindytalk Camouflage Heart、Medusa、Idylls 各一）；其餘走 Wikipedia API、Projekt 商店頁、Discogs API、Trouser Press、MB。九張 facts 各 10–12 條，皆 https src，每張 3 條以上聲音事實。
