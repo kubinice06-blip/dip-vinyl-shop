@@ -92,3 +92,16 @@
 - **10757**　試聽 41 ready／4 unavailable（`preview-override.json`）。人工指定 9 張：Heresy（Apple Part 1–6 vs MB Part I–VI）、Nunatak Gongamur（Apple 收錄名《Nunatak》11 軌）、Nostromo（人工卡，A-Deck）、Salt Marie Celeste（1/1）、Living Torch（2/2）、Prazision（藝人目錄 12 軌）、Basinski 取第 2 軌（Apple 軌序顛倒，原盤首曲〈A Shadow in Time〉）、Caretaker Stage 4（曲名多 Stage 4 字樣）、Mika Vainio（去變音 9/9）。無來源：Lull、Final、Troum、Zoviet France（Apple 藝人目錄皆無本盤）。
 - **10758**　封面：CAA release-group front 44 張，縮圖表目視與盤名相符；Alessandro Cortini《Sonno》CAA 250 縮圖 500 但 front／front-500 皆 200，仍用 front（上線前 live-check）。Sleep Research Facility《Nostromo》人工卡走 Apple 600px（`covers.json`）。
 - **10759**　三軸照機器基線（Last.fm listeners＋worker），經典 5（Caretaker 三張）由 build-manifest 壓 4；冷門軸人工 1 張（`ratings-override.json`）：Mika Vainio 5→4（芬蘭文全題 listeners 22 失真）。
+
+## 寫作層（writer-2）
+- **10746**　交件：`desc-tools/batches/output/add-20261022-md1-out-2.json` 22 張（c6–c9、d1–d9、e1–e9），key 逐字同序。full 17 張 199–237、thin 5 張 136–179（Myein 136、Troum 148、Stoke 177、Monument Builders 179、Aftertime 179）。零超標、零掉下限；初稿只 Cruel Optimism 貼 240，刪兩字收進。`qa-batch out`（45 張合計）全部通過、`qa-check-research` 標記 0、`fix-spacing` 待補 0；轉述引導詞、平台名、媒體名、禁語 grep 皆 0。
+- **10747**　第二句全照鉤子層 note 指派領句；唯一改字：Stage 6 指派句「也就是終章」改「也是終章」（writer-base 禁「也就是」式注解）。日期「日」後一字全照 10739（c7 以、d1 交、d2 由、d3 在、d8 推、d9 於／上、e1 登、e2 裝、e3 從、e4 首、e5 編、e6 至、e7 出、e8 面、e9 同），其餘只寫到月或年的卡，年月句改成廠牌領句或倒裝（Submers「年月，Kranky 讓它上架」、Stoke「由 Touch 經手，年月面市」、Zoviet「那是年月的事」、Above All Dreams「發行的是 Ecstatic，時間在年月」）避開「年月發行／年月由發行」。
+- **10748**　樂種補述（開頭兩句讓外行知道是什麼）：note 未給樂種的卡，第二句補「drone」一詞——Cruel Optimism（取自 sound 欄「drone 是核心」，可逆）；其餘卡的樂種都已在 note 指派句內（Abul Mogard、loscil、Maeror Tri）或身分自明。Haxan Cloak 照 10754 寫「擴音小提琴」，不寫大提琴；Abul Mogard 兩說並陳；Maeror Tri 研究稿「三人據說是同學」改寫成「成員多半是⋯同學」，不用「據說」；Troum「不用採樣機與電腦」改正面寫法「全程避開」；Pan Daijing 照羅馬字、不補漢字。
+- **10749**　不複述 hook：Troum note 首格（題詞釋義）與 hook 同義，整格不寫，第二句直接身分；Cortini 第二句原「旅館房間錄成」與 hook 撞，改「把下榻的房間當成錄音室」；Monument Builders「空拍工業」改「從空中拍下的工業景觀」；Basinski、Roly Porter、Zoviet France 第二句改成替 hook 代稱具名（兩條帶子各錄什麼、演奏者 Cynthia Millar、三天＝4 月 3 日至 5 日）。
+- **10750**　自掃（han() 4-gram，本檔×out-1 合掃，out-1 寫作中會變）：四輪共拆約 40 條殘片（廠牌發行、個人專輯、首張個人、年月把它、年月發行、分鐘年月、在年月推、的小提琴、的大提琴、人聲與鼓、分鐘左右、自己掛名、這張起步等），本檔側全數改掉；定稿剩 `模組合成器`（器材名）、`田野錄音`（錄音手法名）2 類，均為樂器／器材名不算。hook 原文對本檔正文 0 條（自身 hook 重疊 2 處已改）。out-1 後續若再動，請主線收件時再合掃一次。
+
+## 寫作層（writer-1）
+- **10741**　交件：`desc-tools/batches/output/add-20261022-md1-out-1.json` 23 張（full 19：202–240；thin 4：In Sadness 179、Cold Summer 159、One 160、Kiri No Oto 158），初稿零超標、零掉下限。`qa-batch out`（45 張對上卡單）、`qa-check-research`、`fix-spacing` 皆 0 處；正文 grep「據／維基／Discogs／Bandcamp」0；媒體名與榜單名次整句不寫（Scorn 的年度榜、Stalker 星等皆未進）。
+- **10742**　第二句全照 note 指派領句，三處微調：Permafrost「第三張個人專輯」→「獨自發表的第三張」、Kiri No Oto「這張是日文的…」→「這張的盤名是日文「霧之音」，出自…」（原句不通順）、Living Torch 在 Malone 前補「作曲家」（開頭兩句要交代身分，facts 有電聲作曲學歷；可逆）。Raison d'être 照卡單藝人欄大寫，不照 note 的小寫。日期「日」後一字照 10731：Monstrous 日發、Stalker 日問、Morals 日與、Cold Summer 日到。
+- **10743**　跨張 4-gram（han() 剝英數標點，連 out-2 現稿合掃）四輪收斂：初掃「首約分鐘」×5、「個人專輯」×4（含 out-2 兩張）、「推出編號」×3、「共約分鐘」×3、「年月把它」「年月發行」「到分鐘的」各 3，另拆 2 張殘片二十餘條（我方先交、照 writer-base 第 5 條當 3 張處理）。定稿本側 3 張以上 0 條，2 張只剩樂器名「模組合成器」（Living Torch × out-2 Above All Dreams）。out-2 仍在改，主線收件時請再合掃一次。
+- **10744**　note 自身的否定句：Nunatak「沒有打擊樂也沒有鼓機」照 note 寫（鉤子層 10735 已判內容描述保留）；其餘未新增否定句。Knive「廠方說」由 hook 帶出，正文只寫說法所在的重發頁，不再加轉述引導；Starwheel 的「第二部冥想」寫成「被廠方列為」。In Sadness 為撐到 thin 下限，補寫該曲全名〈In Abscence Of Light〉（收 hook 懸念，facts 有）。Belong 寫「評論與讀者事後的聯想」，「事後」是依錄於災前推得的時序措辭，可逆。
