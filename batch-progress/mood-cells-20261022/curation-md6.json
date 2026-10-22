@@ -1,0 +1,1624 @@
+{
+ "group": "md6",
+ "factions": [
+  {
+   "id": "kranky",
+   "zh": "Kranky 系 drone／dub ambient",
+   "count": 10,
+   "why": "Kranky 系的 dub ambient／drone：低頻脈衝＋霧殘響，冷"
+  },
+  {
+   "id": "touch",
+   "zh": "Touch 系電聲 drone／唱盤與田野",
+   "count": 18,
+   "why": "Touch／Mego 系電聲 drone、唱盤顆粒與田野低頻，無鼓、厚、冷"
+  },
+  {
+   "id": "12k",
+   "zh": "12k 系顆粒極簡（低頻那半）",
+   "count": 2,
+   "why": "12k 少數有低頻與顆粒的那半，乾淨極簡不收"
+  },
+  {
+   "id": "room40",
+   "zh": "Room40 系厚重 drone",
+   "count": 8,
+   "why": "Room40 系飽和長音與低頻霧牆"
+  },
+  {
+   "id": "type",
+   "zh": "Type／Miasmah 系暗色 drone 與音塊",
+   "count": 13,
+   "why": "Type／Miasmah 系弓弦黑霧與暗色音塊"
+  },
+  {
+   "id": "subbass",
+   "zh": "外延：低頻音塊／暗色電聲（Subtext、Modern Love、Mego 系）",
+   "count": 3,
+   "why": "場景外延：Subtext、Modern Love、isolationist 的低頻音塊"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "loscil",
+   "album": "Triple Point",
+   "year": 2001,
+   "label": "Kranky",
+   "country": "ca",
+   "faction": "kranky",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Loscil 在 Kranky 的首作，dub techno 骨架拆成水下低頻脈衝與微顆粒，冷調溫哥華極簡的起點",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.1,
+    "z": -0.9,
+    "why": "無鼓僅低頻脈動，深海殘響與微顆粒，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b26fcf1e-ef39-3d04-8c6f-d1303575660c",
+    "https://coverartarchive.org/release-group/b26fcf1e-ef39-3d04-8c6f-d1303575660c/front"
+   ],
+   "mbRgMbid": "b26fcf1e-ef39-3d04-8c6f-d1303575660c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "loscil",
+   "album": "First Narrows",
+   "year": 2004,
+   "label": "Kranky",
+   "country": "ca",
+   "faction": "kranky",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Kranky 時期代表作，以港口命名的低頻潮汐與數位雜訊，霧濛而疏離",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.1,
+    "z": -0.8,
+    "why": "拍子極稀，厚低頻墊與顆粒霧，灰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/499ae12a-be68-3aeb-9281-e8836e82d502",
+    "https://coverartarchive.org/release-group/499ae12a-be68-3aeb-9281-e8836e82d502/front"
+   ],
+   "mbRgMbid": "499ae12a-be68-3aeb-9281-e8836e82d502",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "loscil",
+   "album": "Plume",
+   "year": 2006,
+   "label": "Kranky",
+   "country": "ca",
+   "faction": "kranky",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "加入樂手採樣仍維持低頻脈衝主導，海霧般包覆、冷灰色調",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1,
+    "z": -0.7,
+    "why": "鬆散脈衝，厚殘響墊與嘶聲，偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/74d3f914-1502-34cf-950d-191773f849fd",
+    "https://coverartarchive.org/release-group/74d3f914-1502-34cf-950d-191773f849fd/front"
+   ],
+   "mbRgMbid": "74d3f914-1502-34cf-950d-191773f849fd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "loscil",
+   "album": "Endless Falls",
+   "year": 2010,
+   "label": "Kranky",
+   "country": "ca",
+   "faction": "kranky",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "以雨聲開場的長殘響低頻 drone，Loscil 最陰鬱的一張",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.2,
+    "z": -1,
+    "why": "幾乎無拍，雨聲顆粒與深沉低頻，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d01f1c12-80d5-42b3-8e1f-faa452ad8c7d",
+    "https://coverartarchive.org/release-group/d01f1c12-80d5-42b3-8e1f-faa452ad8c7d/front"
+   ],
+   "mbRgMbid": "d01f1c12-80d5-42b3-8e1f-faa452ad8c7d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "loscil",
+   "album": "Sea Island",
+   "year": 2014,
+   "label": "Kranky",
+   "country": "ca",
+   "faction": "kranky",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "延續海洋主題的 dub ambient，低頻脈衝與霧狀合成器墊，冷而沉",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1,
+    "z": -0.8,
+    "why": "低頻緩脈，合成器霧墊，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/87f7c0aa-aa72-4f1e-b03c-f01a1a0bb0fd",
+    "https://coverartarchive.org/release-group/87f7c0aa-aa72-4f1e-b03c-f01a1a0bb0fd/front"
+   ],
+   "mbRgMbid": "87f7c0aa-aa72-4f1e-b03c-f01a1a0bb0fd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "loscil",
+   "album": "Equivalents",
+   "year": 2019,
+   "label": "Kranky",
+   "country": "ca",
+   "faction": "kranky",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "以 Stieglitz 雲攝影為題的長篇 drone，沉重合成器塊與雜訊，Loscil 晚期最厚的一張",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.2,
+    "z": -0.7,
+    "why": "無拍，厚合成器塊與低頻，灰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c572f025-87c1-4a73-bc33-0aeeb447d88a",
+    "https://coverartarchive.org/release-group/c572f025-87c1-4a73-bc33-0aeeb447d88a/front"
+   ],
+   "mbRgMbid": "c572f025-87c1-4a73-bc33-0aeeb447d88a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tim Hecker",
+   "album": "An Imaginary Country",
+   "year": 2009,
+   "label": "Kranky",
+   "country": "ca",
+   "faction": "kranky",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Hecker 中期招牌：失真糊化的合成器霧牆與數位裂紋，冷冽而厚",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.6,
+    "z": -0.8,
+    "why": "無鼓，失真霧牆與數位顆粒，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0f9f17d2-50c4-372f-b51d-43b58fa9f0dd",
+    "https://coverartarchive.org/release-group/0f9f17d2-50c4-372f-b51d-43b58fa9f0dd/front"
+   ],
+   "mbRgMbid": "0f9f17d2-50c4-372f-b51d-43b58fa9f0dd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Pan•American",
+   "album": "Pan•American",
+   "year": 1998,
+   "label": "Kranky",
+   "country": "us",
+   "faction": "kranky",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Labradford 的 Mark Nelson 個人計畫首作，極簡 dub 低頻與霧化吉他，冷調",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1,
+    "z": -0.8,
+    "why": "稀疏 dub 拍，厚低頻與霧殘響，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4de52e9d-e4e6-3d49-bc6b-4efc783a6a89",
+    "https://coverartarchive.org/release-group/4de52e9d-e4e6-3d49-bc6b-4efc783a6a89/front"
+   ],
+   "mbRgMbid": "4de52e9d-e4e6-3d49-bc6b-4efc783a6a89",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Earthen Sea",
+   "album": "An Act of Love",
+   "year": 2017,
+   "label": "Kranky",
+   "country": "us",
+   "faction": "kranky",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Jacob Long 的 Kranky 作品，dub ambient 低頻脈動被磁帶霧裹住，夜裡的冷",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": -0.6,
+    "why": "稀疏 dub 拍，低頻厚、磁帶霧，偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f16ecd58-1e5e-4c0f-a52d-163cbcb95f00",
+    "https://coverartarchive.org/release-group/f16ecd58-1e5e-4c0f-a52d-163cbcb95f00/front"
+   ],
+   "mbRgMbid": "f16ecd58-1e5e-4c0f-a52d-163cbcb95f00",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Oren Ambarchi",
+   "album": "Grapes From the Estate",
+   "year": 2004,
+   "label": "Touch",
+   "country": "au",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Touch 代表作，吉他化為低頻正弦波與鐘聲泛音，深沉長音",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 0.9,
+    "z": -0.6,
+    "why": "無鼓，低頻正弦吉他與共振，偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/826e9978-1ccc-3340-b6ad-b6d2242b5aa0",
+    "https://coverartarchive.org/release-group/826e9978-1ccc-3340-b6ad-b6d2242b5aa0/front"
+   ],
+   "mbRgMbid": "826e9978-1ccc-3340-b6ad-b6d2242b5aa0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Oren Ambarchi",
+   "album": "In the Pendulum's Embrace",
+   "year": 2007,
+   "label": "Touch",
+   "country": "au",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "三段長篇，吉他處理成深海般的低頻脈動與嗡鳴，極慢、厚",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.1,
+    "z": -0.7,
+    "why": "無鼓，低頻脈動嗡鳴，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e3cd007f-c31f-3064-98b2-ec9f198b623b",
+    "https://coverartarchive.org/release-group/e3cd007f-c31f-3064-98b2-ec9f198b623b/front"
+   ],
+   "mbRgMbid": "e3cd007f-c31f-3064-98b2-ec9f198b623b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Oren Ambarchi",
+   "album": "Suspension",
+   "year": 2001,
+   "label": "Touch",
+   "country": "au",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Touch 首作，吉他完全抽象成次低頻與微顆粒，isolationist 色彩",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1,
+    "z": -0.9,
+    "why": "無拍，次低頻與顆粒，疏離冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9ef29454-b7b9-393c-b498-262d19ca6688",
+    "https://coverartarchive.org/release-group/9ef29454-b7b9-393c-b498-262d19ca6688/front"
+   ],
+   "mbRgMbid": "9ef29454-b7b9-393c-b498-262d19ca6688",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "BJ Nilsen",
+   "album": "The Invisible City",
+   "year": 2010,
+   "label": "Touch",
+   "country": "se",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "以城市低頻環境聲加工的 drone，厚重嗡鳴與工業質地，陰冷",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "無鼓，城市低頻嗡鳴與雜訊，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7ff4d665-a046-453f-84e2-10be0ce2e688",
+    "https://coverartarchive.org/release-group/7ff4d665-a046-453f-84e2-10be0ce2e688/front"
+   ],
+   "mbRgMbid": "7ff4d665-a046-453f-84e2-10be0ce2e688",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "BJ Nilsen",
+   "album": "The Short Night",
+   "year": 2007,
+   "label": "Touch",
+   "country": "se",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "北歐夏至夜為題，田野錄音與厚低頻 drone 交疊，冷而沉",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.2,
+    "z": -1.1,
+    "why": "無拍，低頻 drone 與田野顆粒，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a11539fa-8168-31ef-b5ec-92adbd2f3311",
+    "https://coverartarchive.org/release-group/a11539fa-8168-31ef-b5ec-92adbd2f3311/front"
+   ],
+   "mbRgMbid": "a11539fa-8168-31ef-b5ec-92adbd2f3311",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Philip Jeck",
+   "album": "7",
+   "year": 2003,
+   "label": "Touch",
+   "country": "gb",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "唱盤拼貼大師的 Touch 代表作，黑膠爆音顆粒與低頻循環，憂鬱灰冷",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -0.6,
+    "why": "無鼓，黑膠爆音顆粒與低頻循環，灰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b738a8ff-9781-323e-b754-8ce8646f1c7b",
+    "https://coverartarchive.org/release-group/b738a8ff-9781-323e-b754-8ce8646f1c7b/front"
+   ],
+   "mbRgMbid": "b738a8ff-9781-323e-b754-8ce8646f1c7b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Philip Jeck",
+   "album": "Sand",
+   "year": 2008,
+   "label": "Touch",
+   "country": "gb",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "唱盤與低音吉他構成的磨損 drone，顆粒厚、殘響深",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.4,
+    "z": -0.7,
+    "why": "無鼓，爆音顆粒厚、低頻循環，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/eef05e7c-fcc5-34da-b6de-7b4dfcfc0835",
+    "https://philipjeck.bandcamp.com/album/sand",
+    "https://f4.bcbits.com/img/a4158040133_5.jpg"
+   ],
+   "mbRgMbid": "eef05e7c-fcc5-34da-b6de-7b4dfcfc0835",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Philip Jeck",
+   "album": "An Ark for the Listener",
+   "year": 2010,
+   "label": "Touch",
+   "country": "gb",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "以 Hopkins 詩為題的唱盤 drone，糊爛顆粒與悲涼長音",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.3,
+    "z": -0.7,
+    "why": "無鼓，黑膠顆粒糊化長音，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/25abc135-b5ab-4a5a-b03e-1ca366f28701",
+    "https://coverartarchive.org/release-group/25abc135-b5ab-4a5a-b03e-1ca366f28701/front"
+   ],
+   "mbRgMbid": "25abc135-b5ab-4a5a-b03e-1ca366f28701",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jana Winderen",
+   "album": "Energy Field",
+   "year": 2010,
+   "label": "Touch",
+   "country": "no",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "水下與冰層錄音加工成低頻壓力 drone，極地般的冷",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1,
+    "z": -1.3,
+    "why": "無拍，水下低頻與冰裂顆粒，極冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/25986f88-059f-47e8-8e2c-26aa996ce9cf",
+    "https://coverartarchive.org/release-group/25986f88-059f-47e8-8e2c-26aa996ce9cf/front"
+   ],
+   "mbRgMbid": "25986f88-059f-47e8-8e2c-26aa996ce9cf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Thomas Köner",
+   "album": "Novaya Zemlya",
+   "year": 2012,
+   "label": "Touch",
+   "country": "de",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "以北極群島為題的 Touch 作品，深海般次低頻與冰風雜訊，極冷",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.4,
+    "z": -1.6,
+    "why": "無鼓，次低頻轟鳴與風噪，極冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/747ca196-c3dc-439d-bd82-fb5025d460fb",
+    "https://coverartarchive.org/release-group/747ca196-c3dc-439d-bd82-fb5025d460fb/front"
+   ],
+   "mbRgMbid": "747ca196-c3dc-439d-bd82-fb5025d460fb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Phill Niblock",
+   "album": "Touch Food",
+   "year": 2003,
+   "label": "Touch",
+   "country": "us",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "Niblock 微分音巨牆：多軌疊錄的長音互相拍頻，厚重而無情",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.6,
+    "z": -0.8,
+    "why": "無拍，微分音疊錄牆、拍頻厚，冷硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8779e364-3b38-388e-9be0-c463fd504cc9",
+    "https://coverartarchive.org/release-group/8779e364-3b38-388e-9be0-c463fd504cc9/front"
+   ],
+   "mbRgMbid": "8779e364-3b38-388e-9be0-c463fd504cc9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Phill Niblock",
+   "album": "Touch Three",
+   "year": 2006,
+   "label": "Touch",
+   "country": "us",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "三片長篇集，吉他／管樂長音疊成密不透風的拍頻音牆",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.6,
+    "z": -0.8,
+    "why": "無拍，密集長音牆，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2e46c7e2-07bd-3f3c-8b8e-e3644fa9bbb7",
+    "https://coverartarchive.org/release-group/2e46c7e2-07bd-3f3c-8b8e-e3644fa9bbb7/front"
+   ],
+   "mbRgMbid": "2e46c7e2-07bd-3f3c-8b8e-e3644fa9bbb7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jacob Kirkegaard",
+   "album": "4 Rooms",
+   "year": 2006,
+   "label": "Touch",
+   "country": "dk",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "在車諾比廢棄房間錄下並層疊的房間共振，低沉、幽閉、無人",
+   "moodGuess": {
+    "x": 1.1,
+    "y": 1,
+    "z": -1.6,
+    "why": "無拍，房間共振低嗡與嘶聲，死寂冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e26e6d22-ad65-3820-8e22-0fb107a907a9",
+    "https://coverartarchive.org/release-group/e26e6d22-ad65-3820-8e22-0fb107a907a9/front"
+   ],
+   "mbRgMbid": "e26e6d22-ad65-3820-8e22-0fb107a907a9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Claire M Singer",
+   "album": "Solas",
+   "year": 2016,
+   "label": "Touch",
+   "country": "gb",
+   "faction": "touch",
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "why": "管風琴與大提琴的長音 drone，蘇格蘭冷光下的厚重低頻",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.1,
+    "z": -0.6,
+    "why": "無鼓，管風琴低頻長音厚，偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4853d3d6-ede8-41bb-84b4-8ce352af7974",
+    "https://coverartarchive.org/release-group/4853d3d6-ede8-41bb-84b4-8ce352af7974/front"
+   ],
+   "mbRgMbid": "4853d3d6-ede8-41bb-84b4-8ce352af7974",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Simon Scott",
+   "album": "Below Sea Level",
+   "year": 2012,
+   "label": "12k",
+   "country": "gb",
+   "faction": "12k",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Slowdive 鼓手的 12k 作品，沼澤田野錄音與吉他 drone 糊成低頻霧，灰冷",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.1,
+    "z": -0.6,
+    "why": "無鼓，吉他 drone 霧與田野顆粒，灰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a0f8f940-d139-4b36-a6c3-11a775f993aa",
+    "https://coverartarchive.org/release-group/a0f8f940-d139-4b36-a6c3-11a775f993aa/front"
+   ],
+   "mbRgMbid": "a0f8f940-d139-4b36-a6c3-11a775f993aa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kane Ikin",
+   "album": "Sublunar",
+   "year": 2012,
+   "label": "12k",
+   "country": "au",
+   "faction": "12k",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "12k 少見的重低頻：磁帶飽和的 dub 脈衝與顆粒霧，陰鬱",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "稀疏慢拍，磁帶飽和低頻與顆粒，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b54578da-01aa-4069-a731-c5f6c34b2aa7",
+    "https://coverartarchive.org/release-group/b54578da-01aa-4069-a731-c5f6c34b2aa7/front"
+   ],
+   "mbRgMbid": "b54578da-01aa-4069-a731-c5f6c34b2aa7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kane Ikin",
+   "album": "Modern Pressure",
+   "year": 2016,
+   "label": "Type",
+   "country": "au",
+   "faction": "type",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Type 時期作，低頻壓力與失真顆粒的暗 ambient，近工業",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.4,
+    "z": -1,
+    "why": "拍極稀，低頻壓力與失真顆粒，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4dae7b26-282d-48c0-a120-11353d09169b",
+    "https://coverartarchive.org/release-group/4dae7b26-282d-48c0-a120-11353d09169b/front"
+   ],
+   "mbRgMbid": "4dae7b26-282d-48c0-a120-11353d09169b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mika Vainio",
+   "album": "Fe₃O₄ – Magnetite",
+   "year": 2012,
+   "label": "Touch",
+   "country": "fi",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Pan Sonic 成員的 Touch 個人作，磁鐵礦為題的金屬共振與次低頻嗡鳴，冷硬工業 drone",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.5,
+    "z": -1.5,
+    "why": "無鼓，金屬共振與次低頻，極冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2159d4bb-2844-4261-946b-f6e50d42196b",
+    "https://coverartarchive.org/release-group/2159d4bb-2844-4261-946b-f6e50d42196b/front"
+   ],
+   "mbRgMbid": "2159d4bb-2844-4261-946b-f6e50d42196b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lawrence English",
+   "album": "Wilderness of Mirrors",
+   "year": 2014,
+   "label": "Room40",
+   "country": "au",
+   "faction": "room40",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Room40 主理人最厚的一張：失真音塊層層堆疊，壓迫的低頻霧牆",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.7,
+    "z": -0.8,
+    "why": "無鼓，失真音塊牆與低頻，灰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e4bfd9e5-e9e8-475f-8794-b7b3b7f14058",
+    "https://coverartarchive.org/release-group/e4bfd9e5-e9e8-475f-8794-b7b3b7f14058/front"
+   ],
+   "mbRgMbid": "e4bfd9e5-e9e8-475f-8794-b7b3b7f14058",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lawrence English",
+   "album": "Lassitude",
+   "year": 2020,
+   "label": "Room40",
+   "country": "au",
+   "faction": "room40",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "向 Niblock 等長音傳統致意的管風琴／合成器長篇，低頻包覆、沉滯",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.3,
+    "z": -0.6,
+    "why": "無拍，長音管風琴低頻厚，偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/581a7acb-85d5-44be-9585-88d87c2b66ac",
+    "https://coverartarchive.org/release-group/581a7acb-85d5-44be-9585-88d87c2b66ac/front"
+   ],
+   "mbRgMbid": "581a7acb-85d5-44be-9585-88d87c2b66ac",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Rafael Anton Irisarri",
+   "album": "Solastalgia",
+   "year": 2019,
+   "label": "Room40",
+   "country": "us",
+   "faction": "room40",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "以環境哀悼為題的 Room40 作品，磁帶飽和吉他 drone 成為厚重灰霧",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.5,
+    "z": -0.8,
+    "why": "無鼓，飽和吉他 drone 霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0baa1374-600a-497d-861f-0bd48d118fe1",
+    "https://coverartarchive.org/release-group/0baa1374-600a-497d-861f-0bd48d118fe1/front"
+   ],
+   "mbRgMbid": "0baa1374-600a-497d-861f-0bd48d118fe1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Rafael Anton Irisarri",
+   "album": "Peripeteia",
+   "year": 2020,
+   "label": "Dais Records",
+   "country": "us",
+   "faction": "room40",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Irisarri 最暗的一張，失真長音與低頻轟鳴，近 drone metal 的重量卻無鼓",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.7,
+    "z": -1,
+    "why": "無鼓，失真長音與低頻轟鳴，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0c2dbef3-6e9b-49b7-933d-cfaaa386ce9e",
+    "https://coverartarchive.org/release-group/0c2dbef3-6e9b-49b7-933d-cfaaa386ce9e/front"
+   ],
+   "mbRgMbid": "0c2dbef3-6e9b-49b7-933d-cfaaa386ce9e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ben Frost",
+   "album": "Steel Wound",
+   "year": 2003,
+   "label": "Room40",
+   "country": "au",
+   "faction": "room40",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Ben Frost 的 Room40 首作，吉他與電子處理成冷硬的長音與嘶聲",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "無鼓，吉他長音與嘶聲，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bd1e2991-5639-36af-a22f-70abb5bf625c",
+    "https://coverartarchive.org/release-group/bd1e2991-5639-36af-a22f-70abb5bf625c/front"
+   ],
+   "mbRgMbid": "bd1e2991-5639-36af-a22f-70abb5bf625c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kevin Richard Martin",
+   "album": "Sirens",
+   "year": 2019,
+   "label": "Room40",
+   "country": "gb",
+   "faction": "room40",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "The Bug 主腦的 Room40 個人作，次低頻與霧化合成器記錄失眠的夜，陰沉",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.6,
+    "z": -1.2,
+    "why": "無鼓，次低頻轟鳴與霧，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8480782b-1db9-4969-b97a-ba33d6f93b1f",
+    "https://coverartarchive.org/release-group/8480782b-1db9-4969-b97a-ba33d6f93b1f/front"
+   ],
+   "mbRgMbid": "8480782b-1db9-4969-b97a-ba33d6f93b1f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Norman Westberg",
+   "album": "MRI",
+   "year": 2016,
+   "label": "Room40",
+   "country": "us",
+   "faction": "room40",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Swans 吉他手的 Room40 個人作，吉他循環疊成緩慢厚重的嗡鳴",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.2,
+    "z": -0.6,
+    "why": "無鼓，吉他循環嗡鳴厚，偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/50c5f365-9392-4619-bd5d-b9be2a03e24a",
+    "https://coverartarchive.org/release-group/50c5f365-9392-4619-bd5d-b9be2a03e24a/front"
+   ],
+   "mbRgMbid": "50c5f365-9392-4619-bd5d-b9be2a03e24a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Xela",
+   "album": "The Dead Sea",
+   "year": 2006,
+   "label": "Type",
+   "country": "gb",
+   "faction": "type",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Type 主理人 John Twells 的暗色 drone 作，恐怖片般的長音與低吼雜訊",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.4,
+    "z": -1.4,
+    "why": "無鼓，陰森長音與低頻雜訊，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b1ef23dd-2206-325d-aea5-851d6ecf6436",
+    "https://coverartarchive.org/release-group/b1ef23dd-2206-325d-aea5-851d6ecf6436/front"
+   ],
+   "mbRgMbid": "b1ef23dd-2206-325d-aea5-851d6ecf6436",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Svarte Greiner",
+   "album": "Kappe",
+   "year": 2009,
+   "label": "Type",
+   "country": "no",
+   "faction": "type",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Erik Skodvin 的 Type 作品，弓弦與吉他雜訊糊成黑霧，極慢極暗",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.4,
+    "z": -1.3,
+    "why": "無鼓，弓弦雜訊黑霧，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/623b2e11-f447-3036-9c5b-a95754237c6e",
+    "https://coverartarchive.org/release-group/623b2e11-f447-3036-9c5b-a95754237c6e/front"
+   ],
+   "mbRgMbid": "623b2e11-f447-3036-9c5b-a95754237c6e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Svarte Greiner",
+   "album": "Black Tie",
+   "year": 2013,
+   "label": "Miasmah",
+   "country": "no",
+   "faction": "type",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Miasmah 主理人的長篇 drone，吉他與大提琴音塊緩緩沉沒",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.5,
+    "z": -1.3,
+    "why": "無鼓，大提琴音塊與低頻，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9a63d519-fff9-43fd-8434-2ccef338aebe",
+    "https://svartegreiner.bandcamp.com/album/black-tie",
+    "https://f4.bcbits.com/img/a1306975261_5.jpg"
+   ],
+   "mbRgMbid": "9a63d519-fff9-43fd-8434-2ccef338aebe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Black to Comm",
+   "album": "Seven Horses for Seven Kings",
+   "year": 2019,
+   "label": "Thrill Jockey",
+   "country": "de",
+   "faction": "type",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Dekorder 主理人的暗黑代表作，扭曲取樣與低頻音塊，噩夢般冷",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.6,
+    "z": -1.2,
+    "why": "無穩定拍，扭曲音塊與低頻，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/58eef18e-94d3-410c-bfe2-c660ae9c55ef",
+    "https://coverartarchive.org/release-group/58eef18e-94d3-410c-bfe2-c660ae9c55ef/front"
+   ],
+   "mbRgMbid": "58eef18e-94d3-410c-bfe2-c660ae9c55ef",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Black to Comm",
+   "album": "Black to Comm",
+   "year": 2014,
+   "label": "Type",
+   "country": "de",
+   "faction": "type",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Type 時期同名作，霧化取樣、長音與磨損顆粒，幽暗而沉",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.5,
+    "z": -1,
+    "why": "無鼓，磨損顆粒與長音霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b6f01832-e5dd-4f95-bd66-31654c527e79",
+    "https://coverartarchive.org/release-group/b6f01832-e5dd-4f95-bd66-31654c527e79/front"
+   ],
+   "mbRgMbid": "b6f01832-e5dd-4f95-bd66-31654c527e79",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kreng",
+   "album": "Grimoire",
+   "year": 2011,
+   "label": "Miasmah",
+   "country": "be",
+   "faction": "type",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "Pepijn Caudron 的 Miasmah 作品，劇場配樂般的弦樂音塊與低頻，陰森",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -1.3,
+    "why": "鼓極稀，弦樂音塊與低頻，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f796ef36-a67e-4181-b9d3-ef8e4db02e5b",
+    "https://coverartarchive.org/release-group/f796ef36-a67e-4181-b9d3-ef8e4db02e5b/front"
+   ],
+   "mbRgMbid": "f796ef36-a67e-4181-b9d3-ef8e4db02e5b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kreng",
+   "album": "The Summoner",
+   "year": 2015,
+   "label": "Miasmah",
+   "country": "be",
+   "faction": "type",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "延續 Grimoire 的暗黑音塊，取樣管弦樂被糊成沉重的灰霧",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.3,
+    "z": -1.3,
+    "why": "無穩定拍，音塊灰霧低頻，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b0a2e956-f873-43a9-90d3-bf28bb8d8ef9",
+    "https://coverartarchive.org/release-group/b0a2e956-f873-43a9-90d3-bf28bb8d8ef9/front"
+   ],
+   "mbRgMbid": "b0a2e956-f873-43a9-90d3-bf28bb8d8ef9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jacaszek",
+   "album": "Treny",
+   "year": 2008,
+   "label": "Gusstaff Records",
+   "country": "pl",
+   "faction": "type",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "以文藝復興悼亡詩為題，合唱與弦樂經電子處理成冰冷殘響霧",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1,
+    "z": -1,
+    "why": "無鼓，處理過的合唱弦樂殘響霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/97575679-9608-34c6-b3d7-fa05f957b111",
+    "https://coverartarchive.org/release-group/97575679-9608-34c6-b3d7-fa05f957b111/front"
+   ],
+   "mbRgMbid": "97575679-9608-34c6-b3d7-fa05f957b111",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Elegi",
+   "album": "Varde",
+   "year": 2009,
+   "label": "Miasmah",
+   "country": "no",
+   "faction": "type",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Miasmah 旗下挪威暗色 ambient，鋼琴碎片沉在低頻與雜訊霧裡",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.2,
+    "z": -1.2,
+    "why": "無鼓，低頻雜訊霧，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/88966528-88af-3204-a987-f1830d37f3f0",
+    "https://elegi.bandcamp.com/album/varde",
+    "https://f4.bcbits.com/img/a3037788595_5.jpg"
+   ],
+   "mbRgMbid": "88966528-88af-3204-a987-f1830d37f3f0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mokira",
+   "album": "Persona",
+   "year": 2009,
+   "label": "Type",
+   "country": "se",
+   "faction": "type",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Andreas Tilliander 的 Type 作，dub 低頻與磁帶顆粒的暗 ambient",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.2,
+    "z": -0.9,
+    "why": "稀疏脈衝，dub 低頻與磁帶顆粒，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fd2260e1-d15a-34c0-a86c-d9d10f699b4f",
+    "https://coverartarchive.org/release-group/fd2260e1-d15a-34c0-a86c-d9d10f699b4f/front"
+   ],
+   "mbRgMbid": "fd2260e1-d15a-34c0-a86c-d9d10f699b4f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Paul Jebanasam",
+   "album": "Rites",
+   "year": 2013,
+   "label": "Subtext",
+   "country": "gb",
+   "faction": "subbass",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Subtext 代表作，管弦取樣被擴張成巨大的低頻音塊，宗教般冷峻",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.8,
+    "z": -1,
+    "why": "無鼓，巨大低頻音塊，冷峻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fcee9578-2103-4b9c-836d-dcbf8e449b51",
+    "https://coverartarchive.org/release-group/fcee9578-2103-4b9c-836d-dcbf8e449b51/front"
+   ],
+   "mbRgMbid": "fcee9578-2103-4b9c-836d-dcbf8e449b51",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lucy Railton",
+   "album": "Paradise 94",
+   "year": 2018,
+   "label": "Modern Love",
+   "country": "gb",
+   "faction": "subbass",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "大提琴手的 Modern Love 作品，大提琴長音、低頻電子與磨損質地，陰冷",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "無穩定拍，大提琴長音與低頻電子，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bf7f0eac-cbb3-4445-9368-ed9110999fbb",
+    "https://coverartarchive.org/release-group/bf7f0eac-cbb3-4445-9368-ed9110999fbb/front"
+   ],
+   "mbRgMbid": "bf7f0eac-cbb3-4445-9368-ed9110999fbb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Vladislav Delay Quartet",
+   "album": "Vladislav Delay Quartet",
+   "year": 2011,
+   "label": "Honest Jon's Records",
+   "country": "fi",
+   "faction": "subbass",
+   "genres": [
+    "electronic",
+    "jazz"
+   ],
+   "why": "Sasu Ripatti 的四重奏，即興鼓刷與電子低頻糊成冷暗的 drone 爵士",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.3,
+    "z": -1.1,
+    "why": "鼓刷稀疏不兇，低頻電子霧，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b1c11aee-871d-4ad7-a50f-97227ba88155",
+    "https://coverartarchive.org/release-group/b1c11aee-871d-4ad7-a50f-97227ba88155/front"
+   ],
+   "mbRgMbid": "b1c11aee-871d-4ad7-a50f-97227ba88155",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "BJ Nilsen",
+   "album": "Eye of the Microphone",
+   "year": 2013,
+   "label": "Touch",
+   "country": "se",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "以麥克風為眼的田野與電聲 drone，低頻嗡鳴與環境顆粒，冷",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.2,
+    "z": -1,
+    "why": "無鼓，低頻嗡鳴與環境顆粒，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/57978b1a-54a4-44b4-b4f7-54711f4cc1c8",
+    "https://coverartarchive.org/release-group/57978b1a-54a4-44b4-b4f7-54711f4cc1c8/front"
+   ],
+   "mbRgMbid": "57978b1a-54a4-44b4-b4f7-54711f4cc1c8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Philip Jeck",
+   "album": "Surf",
+   "year": 1999,
+   "label": "Touch",
+   "country": "gb",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Touch 早期唱盤作，黑膠循環糊成潮汐般的低頻與爆音霧",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -0.6,
+    "why": "無鼓，黑膠爆音霧與低頻循環，灰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2e0b7a33-d978-35af-99d4-b71cb0752f54",
+    "https://coverartarchive.org/release-group/2e0b7a33-d978-35af-99d4-b71cb0752f54/front"
+   ],
+   "mbRgMbid": "2e0b7a33-d978-35af-99d4-b71cb0752f54",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "loscil",
+   "album": "Clara",
+   "year": 2021,
+   "label": "Kranky",
+   "country": "ca",
+   "faction": "kranky",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "弦樂錄音經顆粒合成撕碎重組，Loscil 少見的厚重陰暗",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "無鼓，顆粒化弦樂音塊，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1413ddaa-9ed0-4f6f-8b14-b0f78ddd2fcf",
+    "https://coverartarchive.org/release-group/1413ddaa-9ed0-4f6f-8b14-b0f78ddd2fcf/front"
+   ],
+   "mbRgMbid": "1413ddaa-9ed0-4f6f-8b14-b0f78ddd2fcf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Thomas Köner",
+   "album": "Teimo",
+   "year": 1992,
+   "label": "Barooni",
+   "country": "de",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Köner 首作，鑼聲放慢成無底的低頻轟鳴，isolationist 原點",
+   "moodGuess": {
+    "x": 1.1,
+    "y": 1.5,
+    "z": -1.5,
+    "why": "無鼓，鑼聲低頻轟鳴，極冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d5d58beb-f2bc-3cea-9dcf-cc2fd4569b2e",
+    "https://coverartarchive.org/release-group/d5d58beb-f2bc-3cea-9dcf-cc2fd4569b2e/front"
+   ],
+   "mbRgMbid": "d5d58beb-f2bc-3cea-9dcf-cc2fd4569b2e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Svarte Greiner",
+   "album": "Moss Garden",
+   "year": 2016,
+   "label": "Miasmah",
+   "country": "no",
+   "faction": "type",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "兩段長篇弓弦 drone，緩慢腐蝕的低頻與嘶聲，Svarte Greiner 最沉的作品之一",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.5,
+    "z": -1.2,
+    "why": "無鼓，弓弦低頻長音與嘶聲，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e0080a9f-9547-4e8b-8402-5e5fe51dc5c2",
+    "https://coverartarchive.org/release-group/e0080a9f-9547-4e8b-8402-5e5fe51dc5c2/front"
+   ],
+   "mbRgMbid": "e0080a9f-9547-4e8b-8402-5e5fe51dc5c2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Svarte Greiner",
+   "album": "Penpals Forever (And Ever)",
+   "year": 2008,
+   "label": "Digitalis Limited",
+   "country": "no",
+   "faction": "type",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Knive 與 Kappe 之間的長篇，吉他回授與弓弦糊成黑色霧牆",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.5,
+    "z": -1.3,
+    "why": "無鼓，回授與弓弦霧牆，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3bc8ee4f-e3bd-48ff-8ba2-b302abe728ab",
+    "https://coverartarchive.org/release-group/3bc8ee4f-e3bd-48ff-8ba2-b302abe728ab/front"
+   ],
+   "mbRgMbid": "3bc8ee4f-e3bd-48ff-8ba2-b302abe728ab",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Rafael Anton Irisarri",
+   "album": "The North Bend",
+   "year": 2010,
+   "label": "Room40",
+   "country": "us",
+   "faction": "room40",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Room40 時期作，鋼琴與吉他沉入磁帶飽和的長殘響，灰色太平洋西北",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.1,
+    "z": -0.6,
+    "why": "無鼓，飽和長殘響吉他，灰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/580b3d9e-8ac8-4d6e-9b9f-8ea7ec03c781",
+    "https://coverartarchive.org/release-group/580b3d9e-8ac8-4d6e-9b9f-8ea7ec03c781/front"
+   ],
+   "mbRgMbid": "580b3d9e-8ac8-4d6e-9b9f-8ea7ec03c781",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "54 張全數 MB 釘住（primary-type=Album，無 secondary type）；人工身分 0 張。",
+  "封面：51 張 CAA release-group front 307；Philip Jeck《Sand》、Svarte Greiner《Black Tie》、Elegi《Varde》CAA 404，改用 Bandcamp og:image（bcbits）。",
+  "去重：照派工指令的 normalize＋子字串規則對 seed_cards.json 全跑，0 撞；另掃 batch-progress 下 37 份 curation-*.json，0 張同盤。與 md1 同藝人（loscil、Hecker、Jeck、Köner、Vainio、English、Irisarri、Frost、Svarte Greiner、Kreng）皆為不同專輯，md1 已收工、同一藝人無張數上限。",
+  "撞池剔除：Yellow Swans《Going Places》、Main《Motion Pool》已在池。",
+  "判貼邊不提：Labradford《A Stable Reference》《Labradford》（y 估 0.9、空曠乾淨，怕落平靜；也較屬 md7 Kranky post-rock）、Jacaszek《Glimmer》（大鍵琴清亮）、Richard Skelton《Landings》（z 可能中性）、Hecker & Lopatin《Instrumental Tourist》（z 貼邊）、Murcof《Remembranza》（有拍、y 貼邊）、Oren Ambarchi《Audience of One》（含人聲歌曲段）、Erik K Skodvin《Flare》（原聲偏乾）。",
+  "排除非正規專輯：Thomas Köner《Daikan》（MB=Live）、Main《Hydra-Calm》（MB=Compilation）、Kreng《Works for Abattoir Fermé》（Soundtrack 合集）、Simon Scott《Floodlines》（MB=Live）。",
+  "MB 查無而放棄：Svarte Greiner《Devouring Mother》、Jasper TX《Black Sails》《Singing Sadness》（Jasper TX《An Index of Failure》MB 首發 2013 疑為再版日期，未提）。",
+  "label 填原盤廠牌；Jacaszek《Treny》MB 首發為波蘭 Gusstaff（非 Miasmah），Black to Comm《Seven Horses》為 Thrill Jockey、Irisarri《Peripeteia》為 Dais、Köner《Teimo》為 Barooni，屬場景外延。",
+  "疑點：Black to Comm 同名作 MB 首發 2014（印象中 Type 2012），年份照 MB；Svarte Greiner《Black Tie》MB 首發 2013-04；Vladislav Delay Quartet 有鼓刷但稀疏不兇，照 BRIEF 判靜；最薄 y 邊距為 Oren Ambarchi《Grapes from the Estate》0.9 與 Jacaszek《Treny》1.0。",
+  "WebSearch 使用 0 次（全走 MB API、CAA、iTunes Search、Bandcamp）。"
+ ]
+}
