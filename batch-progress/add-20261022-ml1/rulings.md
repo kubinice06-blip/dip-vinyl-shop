@@ -68,3 +68,23 @@
 - **14050**：保留未用。
 
 **主線需決定**：14047 建議重評或汰換；14043、14048 弱存疑；14044、14045、14046 班底與策展層敘述不符，鉤子層別寫 Scientist／Roots Radics 於後兩張。
+
+## 研究 d 組
+- **14031**（Pure Ranking）：年份 1979 成立（MB／Discogs／Apple 1979，維基 1978）；Discogs 備註 Bullwackie's／King Tubby's 署名；聲音只有 Apple 編輯文字（cavernous congas、嗓音輕飄），thin。moodGuess 存疑（輕度，y 無證）。
+- **14032**（Natty Dread a Weh She Want）：原盤廠牌是 Stars（Tappa Zukie 自家），卡單填 New Star 可能是後版，建議主線核對；年份 1978（MB／Discogs），維基寫 1980，寫作層不寫月份。班底含銅管與管風琴，無樂評，thin；moodGuess 輕度存疑。
+- **14033**（I Love Marijuana）：年份 1978 無落差；Thompson 自製，Bunny Lee 無署名，卡單 curatorWhy 該句不成立；聲音僅署名推論，thin。
+- **14034**（Hulet）：年份 MB／Discogs／Apple 版權 1979、維基與 Apple 發行日 1978，分歧未定，寫作層寫「1970 年代末」；貝斯手身分 Discogs 與維基對不上不寫；thin。moodGuess 輕度存疑。
+- **14035**（Miracle）：1996 無落差；孟買弦樂團＋tabla＋On-U 製作；Discogs 標 Dub／Ambient；moodGuess 存疑（中，y 可能不夠重），建議實聽後定；thin。
+- **14036**（Jordan）：1976 無落差；製作人是 Pete Weston、非 Perry，多錄音室單曲拼成；moodGuess 輕度存疑；thin。
+- **14037**（Tuff Selection）：推翻策展層——無 Roots Radics、非 rub-a-dub；實為 Island／Grove 英國版、King Sounds 製作、Aswad 成員伴奏、帶薩克斯風小號與女聲和聲；卡單 label 填 Taxi、國家 jm 皆與 Discogs 不符。**moodGuess 存疑（強），強烈建議汰換**。
+- **14038**（Colombia Colly）：1976 無落差；Black Ark、Perry 製作、念唱盤；Frere-Jones 文的器材描述針對《Arkology》選輯、不專指本盤；status full，濕度為推論，無推翻。
+- **14039**（Mundell）：1982 無落差；推翻 curatorWhy「遺作級」——此後還有錄音（維基稱過世時已錄五張），寫作層不寫遺作；Greensleeves 頁「22 歲」與生年對不上，不寫年齡；與 moodGuess 相符，本組最有把握。
+- **WebSearch 用量**：3/3（Pure Ranking、Mundell、Colombia Colly 各 1）。其餘靠 Discogs／MB／維基／Apple／Greensleeves 頁。
+- **主線需決定**：14037 建議汰換；14035 建議實聽；14031／14032／14034／14036 輕度存疑；14032 卡單 label 改 Stars。
+
+## 主線裁定（研究層交件後）
+- **14071**：照研究層的聲音事實汰 10 張（研究稿已從 a–e 檔移除，卡單移到 `dropped-cards.json`）。共同原因：**80 年代 lovers rock 多是合成器、鼓機的數位製作，乾淨明亮**，與池中同類被評輕（y<0.5）一致：
+  - Gregory Isaacs《Mr. Isaacs》（a：militant roots、伴奏 high-stepping 不停歇）、《Out Deh》（b：倫敦後補合成器與疊錄、「金屬感合成器」）；Sugar Minott《Good Thing Going》（a：英國 RCA 靈魂翻唱盤、無濕混音跡象）；Matumbi《Point of View》（a：EMI 英倫製作、crisp、polished、帶 swing 與銅管）；Maxi Priest and Caution《You're Safe》（b：Reggae-Pop）；Kofi《Black... With Sugar》（b：鼓機、合成器、稀疏貝斯，Ariwa 回聲墊查無來源）；Deborahe Glasgow（b：硬朗、往 dancehall 靠）；The Mighty Diamonds《Changes》（c：Music Works 中速偏乾淨輕快）；Sandra Cross《Country Life》（e：唯一聲音描述 light、urban-elegant、clean；年份亦未定）；Tony Tuff《Tuff Selection》（d：不是 Roots Radics／rub-a-dub，Island／Grove 英國版、Aswad 成員伴奏＋銅管；卡單廠牌國別亦錯）。
+- **14072**：留下但標存疑的（評分照聲音打）：Gregory Isaacs《Cool Ruler》（Channel One rockers、十首短曲）、Dennis Brown《Joseph's Coat》（roots 盤非情歌盤）、Susan Cadogan《Hurt So Good》（靈魂翻唱、嗓音輕柔；Black Ark 錄音無來源）、Sugar Minott《Ghetto-ology》《Wicked Ago Feel It》（後者銅管多）、Rita Marley、Jimmy Riley、John Holt、Aswad 兩張、Burning Spear《Dry & Heavy》（z 風險）、Bunny Wailer（rockers 影響）、Linval Thompson 三張、Johnny Osbourne 兩張、Wailing Souls、Junior Delgado、Bim Sherman《Miracle》、Horace Andy 兩張、Junior Byles、Barrington Levy、Keith Hudson（z 查無）。研究層普遍查不到混音濕度的樂評，存疑多是「無來源」而非「被推翻」，不全汰。最有把握：Wayne Jarrett（彈簧殘響、煙霧、重貝斯）、Hugh Mundell《Mundell》（Scientist 在 King Tubby's 混音）、George Faith（Black Ark）、Jah Lion（Black Ark）。
+- **14073**：照研究層改卡單：Rita Marley 廠牌 Shanachie → Tuff Gong（1980 牙買加原盤；Shanachie 是 1981 美國版）；Horace Andy《Natty Dread a Weh She Want》廠牌 New Star → Stars（Tappa Zukie 自家原盤廠牌）；Johnny Osbourne《Folly Ranking》廠牌 Jah Guidance → Positive Sounds（Discogs 主版 JAM1000）。Wayne Jarrett《Bubble Up》原盤 1982 Wackie's《Showcase Vol. 1》、英國版改名——卡面照 MB 盤名，正文交代原名。Bunny Wailer《Sings the Wailers》在 Harry J、Sly & Robbie 伴奏；Hugh Mundell《Time and Place》Mundell 自製、Pablo 編曲；Junior Delgado《Taste of the Young Heart》Dennis Brown 製作；Junior Byles《Jordan》Pete Weston 製作；Linval Thompson《I Love Marijuana》自製；《Fally Lover》混音 Barnabas、《Look How Me Sexy》混音 Soldgie（皆非 Scientist）；Hugh Mundell《Mundell》不寫「遺作」。日期各源不一致的（Mr. Isaacs 已汰、To Be a Lover、Hurt So Good、Pure Ranking、Natty Dread、Hulet）正文只寫年代或不寫年。
+- **14074**：本批 **35 張**（不足 45：場景裡 80 年代 lovers rock 那半大多是乾淨數位製作，濕混音人聲盤再往下挖多半找不到封面——Wayne Wade 兩張、Michael Prophet《Righteous Are the Conqueror》——寧缺）。
