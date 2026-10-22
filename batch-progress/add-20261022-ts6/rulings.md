@@ -41,3 +41,14 @@
 - **10636**　Carl Perkins《Dance Album of Carl Perkins》：MB／Discogs 1957（Sun LP-1225）、維基 1958，採 1957。維基頁標「來源不可靠」，錄音日期為單源。寫作層須點明是 Sun 的 rockabilly Carl Perkins，非池中同名爵士鋼琴手。
 - **10637**　The Platters《The Platters》：策展層寫收〈Only You〉〈The Great Pretender〉，MB／Discogs 的 MG 20146 曲目表無此二曲；推翻。〈I'm Sorry〉維基標 1957 年單曲，與 1956 年 LP 曲目時序矛盾，專輯內容列 uncertain，策展層「商業頂峰」「1959 King 同名 LP」無來源不寫。
 - **10638**　Everly Brothers 首作：1958-01、Cadence CLP-3003 確認；「影響 Beatles／Simon & Garfunkel」無來源，不寫。
+
+## 研究 e 組
+- **10641**　Drifters《Rockin' & Driftin'》：MB／Discogs 一致（Atlantic 8022、1958）。找不到來源說明是單曲集成或專為 LP 錄製，也無錄音日期；寫作層只寫 Johnny Moore 時期曲目、不斷言錄音背景。〈Drip Drop〉主唱 Bobby Hendricks 為維基單源。
+- **10642**　Coasters 同名專輯：維基目錄把 Atco 33-101 同時列在 Studio 與 Compilation，實為 1955–57 單曲集成；寫作層不稱全新錄製。〈Riot in Cell Block Number Nine〉歸屬未查，不寫。
+- **10643**　McPhatter《Love Ballads》：出生年有 1931／32／33 爭議，墓碑 1932。〈Lucille〉1953 年第一代 Drifters 錄音與本 LP 版本是否同一錄音未證實，正文不斷言。
+- **10644**　Penguins《The Cool, Cool Penguins》：推翻策展層「收〈Earth Angel〉」的暗示——Discogs 與 BSN Pubs 曲目 12 首皆無此曲（它在 1955 EP 與 DL-204 split LP）。年份 1958（Discogs master、BSN），Discogs release 備註「1959」不採。12 首同時拆成三張 EP（EPD-241／243／244）。
+- **10645**　Five Satins《The 5 Satins Sing》：確認 Ember ELP-100、1957。Standord 單曲與 Ember 重發的年份描述維基自相出入，正文只寫「1956 年單曲」。
+- **10646**　Del-Vikings：MB 有 8／10 首兩版本，正文不寫死曲數；LP 為示範清唱補伴奏、未經團方授權（維基單源），不寫「廠牌第一張」。
+- **10647**　Clovers：推翻策展層——曲目 14 首實際不含〈One Mint Julep〉〈Fool, Fool, Fool〉，且最新曲為 1956 年 3 月錄，非「1951–55」；Atlantic 1248（1956）、1957 重發 8009。
+- **10648**　Cadillacs《The Fabulous Cadillacs》：Jubilee JLP 1045、1957 確認。〈Speedoo〉單曲為 1955（Josie），LP 不為其錄製；Josie 與 Jubilee 關係查無來源，不寫。
+- **10649**　LaVern Baker：Atlantic 8007、1957、14 首確認。維基另列 1956《LaVern》，故不寫「首張 LP」。
