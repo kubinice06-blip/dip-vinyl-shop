@@ -32,3 +32,38 @@
 - **11175**（Stratus Seekers）：未推翻；速度／拍速無來源，z −0.4 弱存疑（Blues in Orbit、A Lonely Place）。〈Kige's Tune〉Al Kiger 是作曲者非團員。
 - **11176**（Braxton Seven Compositions 1978）：錄音實為 1979-11 巴黎（專輯名 1978）；Ray Anderson 以 Discogs＋英維為準列成員（德維作品表未列，不採）。聲音事實僅編制與曲長，速度音色無專文，moodGuess 無法證實也無法推翻；AllMusic 星等兩源矛盾，不寫。
 - WebSearch 用 2 次；其餘走 Discogs API 與 Wikipedia；AllMusic／Discogs 網頁／NPR／Jazzwise／Squidco 頁面 403／503，相關說法只入 notes。
+
+## 研究 c 組
+- 11181：Don Ellis《How Time Passes》錄音 1960 年 10 月、Candid 原盤 1961 年發行（維基稱 1960 專輯）；卡片年份維持 1961。
+- 11182：Cecil Taylor《Looking Ahead!》錄音實為 1958 年 6 月，1959 年發行；年份維持 1959。Penguin Guide 稱「最沉思」，moodGuess 的 y 可能更靜，存疑。
+- 11183：Cecil Taylor《The World of Cecil Taylor》五首中兩首為抒情標準曲（10:51、14:52），AllMusic 強調藍調脈動；moodGuess 存疑（偏緩偏暖），建議主線降優先或汰換。
+- 11184：Paul Bley《Barrage》錄音日 10/15（Discogs）與 10/20（維基）不一，facts 只寫 10 月；y 偏重風險成立（Graves 鼓密、Allen 尖嘯），〈And Now the Queen〉為抒情例外。
+- 11185：Joe Harriott《Free Form》London Jazz News 指節奏組維持規則脈動、〈Calypso Sketches〉帶加勒比律動，z 輕微偏暖，存疑。
+- 11186：Don Ellis《New Ideas》聲音面樂評證據偏薄（聲音欄的顫音琴冷光屬編制推論）；Prestige 為 New Jazz 子廠牌發行，身分無誤。
+
+## 研究 e 組
+- 11201：Schoof《Voices》年份、廠牌（CBS S 62 621、1966-05-02 Walldorf）核實無誤；status thin，因聲音面只能證編制與曲長，樂評、BPM、律動查無。moodGuess 輕度存疑（1966 年 Liebezeit 的鼓可能帶 swing）。
+- 11202：Crothers《Perception》curatorWhy 寫「獨奏與三重奏」不實：Discogs／維基人員欄全盤鋼琴三重奏（《Solo》是同年另一張）。年份存疑：維基稱 1974 年發行（SCS 1022），Discogs master／MB 為 1975；暫沿用 1975，寫作層寫「1974 年夏錄成」。含兩首標準曲，moodGuess 輕度存疑。
+- 11203：Cecil Taylor《Cell Walk for Celeste》curatorWhy 的 Jimmy Lyons 不在人員欄，改 Shepp／Neidlinger／Denis Charles。**moodGuess 明顯存疑**：兩個〈Jumpin' Punkins〉take（約 16 分鐘，Mercer Ellington 曲、Clark Terry 小號、Billy Higgins 鼓的九人編制）偏後咆勃、偏暖；建議主線列汰換候選。
+- 11204：Riley《Synopsis》**年份／廠牌建議改 1974／Incus**（INCUS 13，錄音 1973-10-19）；卡單 2000／Emanem 是 MB 的 CD 再版（Emanem 4044，多收〈Runes〉）。比照 11163 先例，未改卡單，交主線。Guy 與 Oxley 用踏板擴音（Discogs 備註），y 輕度存疑。
+- 11205：Revolutionary Ensemble《The People's Republic》**moodGuess 明顯存疑**：AllMusic「beautiful, fragile」、Giddins 稱〈Ponderous Planets〉末段三拍子搖擺、多種音色樂器（拇指琴、鑼、巴拉風、鋸子），節奏常只剩脈動，x 可能低於 3.0、z 偏中性到暖；建議汰換候選。Quincy Jones 軼事僅 Sirone 單方回憶。
+- WebSearch 用 2 次（Schoof、Riley）；其餘走 Discogs／MB／維基 raw。
+
+## 研究 d 組（11191–11197）
+- 11191：Harriott《Abstract》**年份建議改 1963**：Discogs Columbia 33SX 1477 原版 1963 年 2 月（1963-01-31《Jazz News & Review》有預告）、Wikipedia 年表亦列 1963；卡單 1962 是 MB rg 日期與 Harriott 封套文字年。錄音 B 面 1961-11-22、A 面 1962（Discogs 備註日期「5 10 62」英式讀法有 5 月／10 月兩可，不寫月）。facts 寫兩個年份並存，由主線定。
+- 11192：Mike Taylor《Pendulum》**moodGuess 存疑**：curatorWhy 的「Monk 曲」不實，曲目表無 Monk；A 面是三首標準曲（〈But Not For Me〉〈Exactly Like You〉〈A Night In Tunisia〉），B 面三首自創。前半可能偏 swing／硬咆勃，暖度與 groove 高於預估。聲音面來源取不到（Jazzwise／AAJ／Everything Jazz 後半被擋），status thin。
+- 11193：Riley《Angle》輕微存疑：Penguin「thoughtful and rather reserved」、McCann 稱〈Fragment〉tender、〈Gill〉帶福音味，可能偏柔。身分與年份（1969 CBS 52669）無誤。
+- 11194：Riley《The Day Will Come》**moodGuess 中度存疑**：Penguin「tender and melancholic」、McCann「pensive」「less urgency」，曲名多為 Funeral／Sad／Winter，可能偏靜（y）、能量不及 3.5。身分與年份（1970 CBS S 64077）無誤。
+- 11195：SME《Challenge》**moodGuess 存疑**：查不到任何談速度音量的文字，早期管樂期是否「快而冷」未證；status thin。錄音日期以 Discogs 為準（1966-03-05／12／19），推翻 Wikipedia「1966 年 2 月」；演出名單以 Discogs 為準（Watts／Wheeler／Rutherford／Stevens＋Cale／Clyne），不列 Evan Parker。
+- 11196：Hampel《Heartplants》**moodGuess 中高存疑**：Wikipedia「impressionist and relaxed」、部落格稱大半旋律性且留言說「swings」，x 3.4 與 z −0.6 都可能偏離（偏柔、偏暖）。錄音日期 Discogs 1965-01-30 vs 部落格「1964」，採 Discogs；專輯年 1965 無誤。AllMusic 的 DownBeat 五星與「第一張歐洲自由爵士」說法為單一來源，不採。
+- 11197：WebSearch 用 3 次（Taylor、Hampel、Riley）；其餘走 Discogs／MB／維基。Wikipedia API 429，改抓 HTML。
+
+## 主線：研究層後汰換與更正（不佔條號）
+- 研究層聲音存疑，主線汰 10 張（不補候補：策展兩輪已挖盡，第一輪汰下的 8 張都是貼邊或色溫 −0.4 加另一軸風險，補回只會拉低落格率），**本批定案 19 張**：
+  - **偏暖（swing／標準曲／藍調／抒情）6 張**：Braxton《Eight (+3) Tristano Compositions 1989》（11164：樂評稱 lyrical、含兩首抒情標準曲、節奏組有彈性）、George Russell《George Russell Sextet in K.C.》（11176：副標 Original Swinging Instrumentals、咆勃標準曲佔近半）、Cecil Taylor《The World of Cecil Taylor》（c 組：兩首抒情標準曲約 26 分鐘、藍調脈動）、Cecil Taylor《Cell Walk for Celeste》（e 組：Jumpin' Punkins 兩個 take 約 16 分鐘、九人後咆勃編制）、Mike Taylor《Pendulum》（d 組：A 面三首標準曲）、Gunter Hampel《Heartplants》（d 組：impressionist and relaxed、留言稱 swings）。
+  - **偏靜 3 張**：George Russell《The Outer View》（11174：12 分鐘人聲慢曲佔近三成＋藍調）、Howard Riley《The Day Will Come》（d 組：tender、pensive、less urgency）、Revolutionary Ensemble《The People's Republic》（e 組：beautiful, fragile、三拍子搖擺、節奏常只剩脈動）。
+  - **偏重 1 張**：Paul Bley《Barrage》（c 組：Graves 密鼓＋Allen 尖嘯，y 偏重風險成立）。
+- 研究稿同步刪去上述 10 張；`qa-batch research` 19 張全過。
+- 年份／廠牌更正（卡單已改）：Howard Riley《Synopsis》→ **1974／Incus**（e 組：Incus INCUS 13 原盤，1973-10-19 BBC Maida Vale 錄音；MB 唯一的 release-group 只掛 2000 Emanem 4044 CD 再版，照 Warne Marsh《Ne Plus Ultra》先例以原盤年為準）；Joe Harriott《Abstract》→ **1963**（d 組：Columbia 33SX 1477 原版 1963 年 2 月，MB 1962 是錄音／封套年）。
+- 策展層敘述錯誤（寫作層以研究稿為準）：《Note to Note》是 1964–65 鋼琴＋貝斯原帶、1993 Carol Tristano 補鼓；Rivers《The Quest》是 1976 米蘭現場；《Cell Walk》已汰；Crothers《Perception》全盤三重奏；Mike Taylor 已汰。
+- 邊緣張留用：Braxton《Six Compositions: Quartet》、Braxton《Five Pieces 1975》、Rivers《The Quest》、Cecil Taylor《Looking Ahead!》、Joe Harriott《Free Form》、SME《Challenge》、Schoof《Voices》、Crothers《Perception》、Riley《Synopsis》《Angle》——上線評分驗證。
