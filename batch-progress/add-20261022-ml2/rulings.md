@@ -17,6 +17,19 @@
 - 研究層每支 WebSearch ≤3；facts 必含 2–3 條聲音事實（鼓、速度、殘響、合成器墊、冷暖）；與 moodGuess 不符的標「moodGuess 存疑」。
 
 
+## 研究 a 組
+
+- **14081**　Hope Sandoval《Until the Hunter》：身分無誤（Tendril Tales TT 03；MB 歐洲 2016-11-03、英美 11-04）。聲音：Martello 塔自然殘響、Philicorda 風琴 drone、踏板鋼棍吉他、稀疏鼓；**moodGuess 存疑 y／z**（整體偏空偏輕，僅〈Into the Trees〉、〈Let Me Get There〉偏厚）。
+- **14082**　Cocteau Twins《Milk & Kisses》：身分無誤（Fontana 532 363-2；維基英國 1996-04-15）。疊層液態吉他、鼓機、Raymonde 自評錄音「悶悶的」，與 moodGuess 相符。解散年兩條目互相矛盾（1997／兩年後），facts 不寫年份。
+- **14083**　Cocteau Twins《Four-Calendar Café》：身分無誤（維基 1993-10-18 Fontana，MB 美國 Capitol 版 11-02）。**moodGuess 存疑 y**：Guthrie 自述減少疊錄、歌詞清晰，質地乾淨有空氣。
+- **14084**　Beach House《Devotion》：身分無誤；**年份差**：卡單 2007 取自 MB 歐洲 Bella Union 版（2007-12），美國 Carpark 2008-02-26。建議主線決定顯示年份。首週銷量兩條目矛盾（3000／5000），不寫。
+- **14085**　Widowspeak《Widowspeak》：身分無誤（CT-118）。**moodGuess 存疑 z、y**：Diffuser 稱「較冷的首作」、Beats Per Minute 稱「cool and subdued」，鼓稀疏、洞穴感。建議 z −0.2–0.3。Pitchfork／AllMusic 無法取得。
+- **14086**　Widowspeak《Almanac》：身分無誤（CT-170；維基 2013-01-22，MB 數位版 2012-11-27，卡單 2012 取自後者）。穀倉錄音、Kevin McMahon 製作三處互證。**moodGuess 存疑 y**：Diffuser 稱離開首作慢燒、吉他乾淨高飛。ink19「album has no drums」未採信。
+- **14087**　Men I Trust《Untourable Album》：身分無誤，但**廠牌**：首發是數位自行發行（8/25），Return to Analog 為黑膠（RTA-120）。**moodGuess 存疑 y（重）**：無任何來源支持厚墊殘響，曲短（平均不到 3 分鐘）、「saccharine」「headphones record」；建議首要汰換候選。status thin。
+- **14088**　The Marías《CINEMA》：身分無誤（Atlantic／Nice Life）。**moodGuess 存疑 x、y**：真鼓手、爵士打擊、號角，無來源證實霧化厚墊；Alternative Press／Pitchfork／AllMusic 全無法取得。Grammy 為入圍（非得獎）。status thin。
+- **14089**　Korallreven《An Album by Korallreven》：身分無誤（Acéphale ACE019）。**推翻策展層**：「唯一長作」錯，2014-11 有《Second Comin'》。**moodGuess 存疑 y**：柔和拍子、冒泡合成器、輕快彈跳，建議 y 0.3–0.8。Bergsman 曲數三來源不一，facts 採 Discogs 三首。
+- **14090**　全組 9 張 facts 8–11 條、全 https、無千分位逗號、無簡體字；`qa-batch.mjs research` a 組零標記。WebSearch 用 3 次（Widowspeak 兩次、Korallreven 一次）；維基 API 被限流，改用 WebFetch。整組色溫排序：Korallreven、Almanac、Hope Sandoval、Milk & Kisses 偏暖；Widowspeak 首作偏冷；Cinema 與 Untourable 無來源可判。**建議汰換候選**：Untourable Album、CINEMA（聲音無證據落恍惚）；邊緣：Four-Calendar Café、Widowspeak 首作、Almanac。
+
 ## 研究 b 組
 - **14091**　Songs in A&E 的 moodGuess 明顯存疑：維基稱這張是樂團史上「噪音場景最少、歌最精簡」，18 首中 6 首不到 2 分鐘，另有 garage 快歌（〈Yeah Yeah〉）與慢歌（〈Baby I'm Just a Fool〉），節奏與厚度未必落恍惚格。卡單廠牌 Spaceland 與維基的 Sanctuary／Fontana 不一致，MB 未核對，facts 採維基。
 - **14092**　Ulrich Schnauss《Goodbye》標 thin：聲音第一手描述查無（Pitchfork、Domino、Bandcamp 抓取失敗），卡單「殘響牆淹沒拍子」的節拍與速度無來源，moodGuess 存疑；市面常見 2008 修訂版（12 首、66 分，加 Chapterhouse 客座），寫作以 2007 原版 10 首為準。
