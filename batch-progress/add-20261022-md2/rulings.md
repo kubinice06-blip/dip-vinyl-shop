@@ -93,3 +93,17 @@
 - **10838**　試聽 44 ready／1 unavailable（`preview-override.json`）。人工指定 5 張：Midnight Radio（Apple Track 1–11 vs MB 1–11）、Duster《Together》（藝人目錄 13 軌）、Philophobia（取 13 軌版、不取 23 軌 Deluxe）、The Red Thread（10 軌）、Elephant Shoe（us 無、gb 1443204953 11 軌）。無來源：Dale Cooper Quartet《Métamanoir》。
 - **10839**　封面：CAA release-group front 45 張，縮圖表目視與盤名相符；Bowery Electric 同名 CAA 250 縮圖 500 但 front／front-500 皆 200，仍用 front（上線前 live-check）。
 - **10840**　三軸照機器基線；冷門軸人工 1 張（`ratings-override.json`）：Badalamenti《Fire Walk With Me》原聲 obscurity 5→3、accessibility 2→3（Last.fm 長副題對不上、listeners 73 失真）。
+
+## 寫作層（writer-1）
+- **10821**　交件：`desc-tools/batches/output/add-20261022-md2-out-1.json` 23 張（a1–a9、b1–b9、c1–c5），key 逐字同序。full 17 張 184–239、thin 6 張 151–180（Midnight Radio 179、Succubus 180、Anthropomorphic 179、Piano Nights 151、Astrild 162；Gore Motel 研究稿 status ok，照 full 222）。`qa-batch out`、`qa-check-research`、`fix-spacing` 皆 0 處；媒體名、媒體榜名次、「據」、資料平台名 grep 0。
+- **10822**　初稿超標 9 張（最高 Black Earth 266），一律整格捨去：Black Earth 的（一句）「慢速難演奏」整格捨去；Quatorze 的（一句）「封面與攝影由樂團自己來」整格捨去；Anthropomorphic 刪「陣容」（hook 已說三組不同的人）；其餘只壓贅字。Cover the Windows 初稿 170 低於下限，補足句構至 184（未加 note 外事實）。
+- **10823**　第二句全照鉤子層 10814 句型；「日」後一字照 10811（a7 日在、a9 日於、b2 日先、b5 日為、b6 日以／日開）。避複述 hook：Métamanoir 第二句不重列三位歌者與雙簧管單簧管，只補「管樂客座還多了一支薩克斯風」；Quatorze 第二句改以法文原題領句、不重寫「十四件威脅」；Duster 復出場次不重寫「十八年」。Year After Year／This Way Out 的樂評觀察寫成陳述（「節奏緩如輓歌」「聽起來像待在密封的房間」）；Gore Motel 的「有樂評形容」改「聽來被比作」。
+- **10824**　跨張 han() 4-gram 自掃（含 out-2 當下版本）：3 張以上只剩樂器名「薩克斯風」；途中拆掉「首約分鐘」「德國發行」「年月由發行」「錄音室專輯」「長達分秒」「樂團的第」「專輯年月」「年月發行」「的第三張」「的錄音室」「德國四人團」「與掛名作曲」「發表作品」「出自他手」「一首就佔」「自家廠牌」「年月上架」等殘片。剩 2 張的：地名（德國魯爾區、布雷斯特）、樂器（低音提琴、四弦吉他、次中音薩克斯風、吉他貝斯）、器材（磁帶循環，對 out-2）、hook 原文「德國專輯榜第 49 名」對 out-2 的「專輯榜第名」（hook 改不動，留主線合掃判）。out-2 仍在改動中，主線收件時請再合掃一次。
+- **10825**　研究層禁區照辦：Midnight Radio 只寫 1995、不寫 1997；Gore Motel 只寫 1994 年錄成；FWWM 不寫 Grady Tate／Buster Williams 與〈The Pink Room〉；Together 鼓手只寫發行後離團（標時序）；Grouper 三張的公社藝名只在 AIA。
+
+## 寫作層（writer-2）（條號 10826–10830）
+- **10826**　交件：`desc-tools/batches/output/add-20261022-md2-out-2.json` 22 張，key 逐字同序。full／ok 16 張 200–238；thin 6 張 160–178（Giles Corey 160、Leaving 178、Rustic Houses 170、Sauna 165、Even in Silence 177、Hour of the Trace 170）。初稿零超標、零掉下限，無整格捨去。`qa-batch out`（45 張合計）全部通過；`qa-check-research` 標記 0；`fix-spacing` 待補 0。
+- **10827**　第二句句型全照 10814／10818；Red Thread 預先改走 10814 的備案（不寫「這是…第四張錄音室專輯」，改「第四次進錄音室做專輯」），避開 b6 與「錄音室專輯」×4。New Lands 的「第三張錄音室專輯」改「在樂團錄音室作品裡排第三」，同理。「日」後一字照 10819：Leaving 日自、Desideratum 日交、Way Their Crept 日，、New Lands 日問、Ocean Roar 日接、Hour 日面、Elephant Shoe 日轉；Elephant Shoe 日期前一字改「家」（拆掉與 out-1 Duster《Together》的「張年月日」）。
+- **10828**　跨兩檔合掃（out-1 已在檔，後交件）han() 4-gram：拆掉「長達分秒」×4、「錄音室專輯」×4、「聽到的是」×3、「年月發行」×3、「年月推出」×3、「的第三張」×3、「樂團的第」×3、「專輯年月」×3，以及 2 張殘片「把它推出」「出自他手」「在整張裡」（撞 Cycle hook）「用這個名」「製作人是」「同年月由」「年月上市」「行評論說」「在年月替」「一首就佔」「自家廠牌」等。定稿只剩地名（印第安納州、布里斯托、俄亥俄州）、器材名（磁帶循環）與榜名（專輯榜第 N 名）。
+- **10829**　禁語自掃：正文無媒體名、無媒體榜名次、無「據說／據傳」、無資料平台名；唯一例外是 Leaving 的 hook 原文帶 Bandcamp（首句照抄、無權改），正文不再提。Luminol 單源的疫情錄音一格寫成「評論提到，…」（note 要求照評論說法寫，避「據」字型引導）。Forever 的 Colin Ward 詩作出處寫「唱片附註」，不寫來源平台。
+- **10830**　小裁定（可逆）：Low 第二句把「核心是」改「以…為核心」，避 Forever hook「整張的核心」；Geek the Girl 的〈Frascilita〉改「前後貫穿整張」，避 Cycle hook「在整張裡」；Way Their Crept「2005 年起她才掛出這個名字」，避 out-1 Wide 的「用這個名字發表」。Ghost Tropic、Bowery、Luminol 第二句只補身分，note 未給樂種，照 note 不補。
