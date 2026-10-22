@@ -5,6 +5,12 @@
 - **內容**：店主「落日飛車確實是恍惚（dream pop 大部分也都是恍惚）重新評斷」。評分說明書 Y 軸加「包覆感算重」（dream pop 殘響霧、夢幻吉他與合成器墊、慢板靈魂厚低頻與弦樂、chillwave 糊濾波）；落日飛車《Jinji Kikko》與《Let's Get It On》錨點移恍惚；放鬆／平靜 705 張候選由 9 支代理只重判質地，主線退回 4 張，195 張寫進 `data/mood/overrides.json`（放鬆→恍惚 178、平靜→頹靡 17）。ts5／ts6 另開工作階段在跑。
 - **主要檔案**：`batch-progress/mood-axes/{score500/BRIEF.md,anchors-src.mjs,anchors-v1.json,rulings.md,priors-v0-report.json,scale-v0-report.json}`、`batch-progress/mood-axes/texture-rejudge/*`、`data/mood/{overrides.json,card-moods.json,card-moods-v0.json,scale-v0.json}`。
 - **驗證**：merge 9/9 份、0 錯誤；`build-card-moods.mjs` gate 綠（19,458/19,458、錨點 104/104、改判 256）；八格 放鬆 4,975、平靜 1,316、恍惚 772、頹靡 943。
+### 2026-10-22｜dip-vinyl-shop｜藝人介紹 ar-d-129、ar-d-130：薄細項策展線上架卡補介紹 79 位
+
+- **內容**：ALBUM_ONBOARDING §11，ts1–ts11 上架卡缺介紹的藝人。ar-d-129（越南、柬埔寨、菲律賓、泰國、馬來西亞、新加坡搖滾）40 位全上（30 full／10 thin）；ar-d-130（馬來西亞、南亞、蒙古、印尼搖滾、剛果倫巴）39 位上架（31 full／8 thin），Noori 只有維基單源、skipped。補洞 WebSearch 每位 ≤2 次。
+- **主線審稿**：修 13 位（129 五位、130 八位），細節見 `batch-progress/artist-intro/ar-c-rulings.md` 的 ar-d-129／130 段；2026 年事實（UDD〈Tadhana〉破 5 億、Warfaze Ekushey Padak）以 WebSearch 核實。
+- **主要檔案**：`desc-tools/batches/artist/{progress.json,facts,research,output}/ar-d-129*｜ar-d-130*`、`data/artist-intros/*`、`audits/ARTIST-PUB-ISSUES.md`、`batch-progress/artist-intro/ar-c-rulings.md`。
+- **驗證**：`qa-artist.mjs out` 129 0 處、130 只剩「缺 Noori」；`build-artist-intros.mjs` 326 份成品、6,177 位藝人。ar-d-131～134 留給下一個工作階段。
 
 ### 2026-10-22｜dip-vinyl-shop｜情緒薄格重掃：恍惚 592／頹靡 926／冷冽 874，更新補充計畫
 
