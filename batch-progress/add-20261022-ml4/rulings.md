@@ -74,3 +74,12 @@
 - **14304** 媒體名與媒體榜單照辦：신해경 正文只寫「樂評則形容整張最親切、也最舒服」，無媒體名、無年度榜名次、無星等；Oricon 第 7 名（銷售榜）照 14297 保留。The Fur. 的自我形容轉成間接敘述（不加引號）。
 - **14305** 14314 禁寫照辦：Polaris 兩張無《Long Season》、Yusuke Oya 不連 Fishmans；Eclectic 只寫 funk、soul、R&B 路線；Oki 寫「2004 年就已有《Dub Ainu》」，不寫首作；Town 寫高雄；LITTLE TEMPO 照卡單大寫，Henry Holder 只寫掛副名與 dub 混音職務。Hiding Place 美國巡演只寫「橫越美國巡演」（facts 的「開車」note 未列，不寫），並以「隨後」標時序。
 - **14306** 給主線看一眼：Oki 的 hook「後來才得知自己有阿伊努血統」，note 沒有給得知的時點，正文第二句直接接生年、出生地與 tonkori，沒有另寫收尾；若審稿認為懸念未收，可由主線在 note 補上時點。
+
+## 主線審稿（2026-10-22；條號 14315–14318）
+- **14315**　逐張審 11 張，逐句對回研究稿。改 3 張（皆為刪句，不動事實，研究／鉤子／輸入三層不需同步）：
+  - `desc4:신해경|속꿈, 속꿈`：「；樂評則形容整張最親切、也最舒服」→ 刪（單一媒體評語句，研究稿出處是 IZM 單評）。
+  - `desc2:Doodle|Endless Dreamless`：「，旋律性強、人聲輕，常被拿來和 Ride 比較」→ 刪（研究稿唯一出處是 Noise Artists 一篇導覽，「常被」不成立，屬單源評價）。
+  - `desc2:The Fur.|Town`：「這張也入圍了第 30 屆金曲獎最佳新人獎。」→ 刪（研究稿自註單一來源中文維基，獎項未交叉驗證；且最佳新人是頒給藝人而非專輯）。
+- **14316**　Oki 鉤子「後來才得知自己有阿伊努血統」出處日文維基即無時點，照原句保留，不補臆測時點。小沢健二「Oricon 最高第 7 名」是銷售榜，非媒體年終榜，保留。
+- **14317**　其餘 8 張逐張審過，未改字。
+- **14318**　試聽：7 ready／4 unavailable（Dry & Heavy、신해경、Oki Dub Ainu Band、LITTLE TEMPO：Apple jp／us／kr／tw 以藝人目錄逐盤核對均無對得上 MB 曲目的條目；Oki 的 Apple《Dub Ainu Deluxe》2006-12-03 同日但 8 首曲名全不同，不硬配）。封面：6 張 CAA、2 張 Apple 官方圖（Polaris《Home》、小沢健二《Eclectic》）、3 張 Discogs（Dry & Heavy CAA 500、신해경、LITTLE TEMPO），縮圖表目視全數與盤名相符。冷門軸全批照 §0.8 錨點制人工評（`ratings-override.json`）。

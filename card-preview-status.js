@@ -3043,4 +3043,8 @@ window.DipPreviewStatus = Object.freeze({
   "dean blunt|the narcissist ii": "unavailable",
   "cv313|analogue oceans": "unavailable",
   "cv313|baring stars": "unavailable",
+  "dry & heavy|dry & heavy": "unavailable",
+  "신해경|속꿈, 속꿈": "unavailable",
+  "oki dub ainu band|oki dub ainu band": "unavailable",
+  "little tempo|ザ・ウェイ・バック・ホーム・イン・ダブ": "unavailable",
 });
