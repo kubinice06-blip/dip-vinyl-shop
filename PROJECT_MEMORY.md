@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-22｜dip-vinyl-shop｜情緒薄格線擴大：三格各補到 2,000、6 個工作階段並行
+
+- **內容**：店主「新增的專輯數太少了 與雀躍嚴重不平衡」→ 選「各補到約 2,000、一批 45 張、6 個並行」。md1–md4 落格率 91–98%，每批淨增約 40；缺口 頹靡 +881、冷冽 +1,126、恍惚 +1,216，約 80 批。新增 `batch-progress/mood-cells-20261022/SCENES.md`（md5–md25、mc1–mc30、ml1–ml30 場景與條號）；`CUR-DISPATCH.md` 改三線共用（冷冽 x≥3.3／y≤0.2／z≤−0.3、恍惚 x≤2.7／y≥0.8／z≥0.3、各線反例）；`build-priors.mjs` 改自動讀所有 `score*/scored-*.json`（輸出與改前逐位元相同）；HANDOFF 加並行合併規矩（產生檔取 main 版＋重跑）、子工作階段不切藝人介紹。第 1 輪開 6 個子工作階段：md5–md8、mc1–mc4、ml1–ml4。
+- **主要檔案**：`batch-progress/mood-cells-20261022/{SCENES.md,CUR-DISPATCH.md}`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/EXPANSION-PLAN-mood-thin-cells.md`、`batch-progress/mood-axes/build-priors.mjs`。
+- **驗證**：build-priors＋build-scale 重跑後 `card-moods-v0.json` 與改前 cmp 相同；目前八格 頹靡 1,119、冷冽 874、恍惚 784。
+
 ### 2026-10-22｜dip-vinyl-shop｜情緒薄格策展線 md3／md4：darkwave／goth 慢盤＋無鼓 drone metal 45＋暗嘻哈／暗 R&B／dub techno／亞洲 43 張上線，落頹靡 83/88，頹靡 1,036 → 1,119
 
 - **內容**：店主「可以開始補缺少的頻率了」。頹靡線後兩批（與 md1／md2 工作階段並行）。md3（`add-20261022-md3`）：無鼓 drone metal 19（Sunn O))) 6＋Terrestrials＋Soused、Earth《Phase 3》、Khanate 2、Jesu《Conqueror》、KTL 3、Æthenor、Menace Ruine 2）、80–90 年代 goth／darkwave／ethereal 20（Lycia 4、Black Tape for a Blue Girl 5、Dead Can Dance、Cranes、His Name Is Alive、Love Spirals Downwards、Arcana 2、Current 93 2、Diamanda Galás）、2010 後暗黑歌謠 6（Chelsea Wolfe、Zola Jesus 2、Anna von Hausswolff 4、Ulver、Darkher）。md4（`add-20261022-md4`）：暗嘻哈 11（Armand Hammer、billy woods 2、BRASS、Yung Lean 3、Bladee、Archy Marshall…）、暗 R&B／trip-hop 14（Tirzah、HTDW、Sevdaliza、Klein、Holy Other、King Krule、Dean Blunt 2、Hype Williams、Tricky、Nearly God、King Midas Sound 2）、dub techno 與英國暗低頻 15（Space Afrika 2、Rod Modell、cv313 3、Echospace、Deepchord 3、Yagya、Fluxion、Andy Stott、Actress、Lee Gamble、The Bug vs Earth、Scorn）、亞洲 2（夢東《向位》、sogumm）＋Akira Yamaoka 原聲帶 2（照 c101 SH2 先例走一般 Album）。
