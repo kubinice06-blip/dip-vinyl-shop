@@ -3,8 +3,8 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **324** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 86、已退回 1）。
-最後更新：2026-10-21
+共 **325** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 87、已退回 1）。
+最後更新：2026-10-22
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
 `matchedOn` 欄記的就是實際對上哪幾項。圖片沿用 Discogs 圖床網址，
@@ -178,6 +178,12 @@
 | Altan Urag 《Mongol》 | [#11344614](https://www.discogs.com/release/11344614) | 2010 | Not On Label | none | 唯一版本、主線目視與盤名相符 | ok |
 | Аясын Салхи 《Coffin Town Under the Moon》 | [#6659975](https://www.discogs.com/release/6659975) | 2008 | Hi-Fi Label | none | Discogs master 1227241 的版本、主線目視與盤名相符 | ok |
 | Аясын Салхи 《Eastern Wind》 | [#33491165](https://www.discogs.com/release/33491165) | 2023 | Not On Label (Аясын Салхи Self-released) | none | 唯一版本、主線目視與盤名相符 | ok |
+
+## add-20261022-ts6（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| The Penguins 《The Cool, Cool Penguins》 | [#7756803](https://www.discogs.com/release/7756803) | 1958 | Dooto Records | DTL 242 | Discogs master 923710 的版本、主線目視與盤名相符 | ok |
 
 ## c49（3 張）
 

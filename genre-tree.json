@@ -1,11 +1,11 @@
 {
- "產出日期": "2026-10-21",
+ "產出日期": "2026-10-22",
  "minNode": 20,
  "genres": [
   {
    "id": "rock",
    "zh": "搖滾",
-   "count": 4863,
+   "count": 4874,
    "children": [
     {
      "id": "indie-alt",
@@ -285,17 +285,17 @@
     {
      "id": "classic",
      "zh": "老搖滾",
-     "count": 593,
+     "count": 604,
      "children": [
       {
        "id": "50s",
        "zh": "50 年代",
-       "count": 14
+       "count": 25
       },
       {
        "id": "60s",
        "zh": "60 年代",
-       "count": 92
+       "count": 93
       },
       {
        "id": "70s",
@@ -635,17 +635,17 @@
   {
    "id": "electronic",
    "zh": "電子",
-   "count": 1944,
+   "count": 1956,
    "children": [
     {
      "id": "ambient",
      "zh": "Ambient / Drone",
-     "count": 738,
+     "count": 740,
      "children": [
       {
        "id": "idm",
        "zh": "偏 IDM",
-       "count": 201
+       "count": 202
       },
       {
        "id": "ambient-techno",
@@ -677,7 +677,7 @@
     {
      "id": "techno",
      "zh": "Techno",
-     "count": 492,
+     "count": 493,
      "children": [
       {
        "id": "minimal",
@@ -687,7 +687,7 @@
       {
        "id": "ambient-techno",
        "zh": "Ambient Techno",
-       "count": 182
+       "count": 183
       },
       {
        "id": "detroit",
@@ -766,12 +766,12 @@
     {
      "id": "idm",
      "zh": "IDM / Glitch",
-     "count": 348,
+     "count": 349,
      "children": [
       {
        "id": "ambient-idm",
        "zh": "Ambient IDM",
-       "count": 195
+       "count": 196
       },
       {
        "id": "glitch",
@@ -845,12 +845,12 @@
     {
      "id": "synth",
      "zh": "Synthpop / Electro",
-     "count": 343,
+     "count": 344,
      "children": [
       {
        "id": "synthpop",
        "zh": "Synthpop",
-       "count": 158
+       "count": 159
       },
       {
        "id": "electro",
@@ -979,17 +979,17 @@
     {
      "id": "trance",
      "zh": "Trance / Goa",
-     "count": 61,
+     "count": 73,
      "children": [
       {
        "id": "progressive",
        "zh": "Progressive / Uplifting",
-       "count": 31
+       "count": 33
       },
       {
        "id": "psy",
        "zh": "Psy / Goa",
-       "count": 14
+       "count": 26
       }
      ]
     },
@@ -1004,7 +1004,7 @@
   {
    "id": "soul",
    "zh": "靈魂放克",
-   "count": 1589,
+   "count": 1599,
    "children": [
     {
      "id": "funk",
@@ -1046,7 +1046,7 @@
     {
      "id": "classic-rnb",
      "zh": "經典 R&B / Doo-wop",
-     "count": 803,
+     "count": 813,
      "children": [
       {
        "id": "funk",
@@ -1056,7 +1056,7 @@
       {
        "id": "motown",
        "zh": "Motown / Northern",
-       "count": 125
+       "count": 126
       },
       {
        "id": "southern",
@@ -1086,7 +1086,7 @@
       {
        "id": "doo-wop",
        "zh": "50s R&B / Doo-wop",
-       "count": 16
+       "count": 26
       }
      ]
     },
@@ -1099,7 +1099,7 @@
     {
      "id": "motown",
      "zh": "Motown / Northern",
-     "count": 189,
+     "count": 190,
      "children": []
     },
     {
@@ -1448,7 +1448,7 @@
   {
    "id": "folk",
    "zh": "民謠",
-   "count": 1323,
+   "count": 1335,
    "children": [
     {
      "id": "songwriter",
@@ -1532,12 +1532,12 @@
     {
      "id": "folk-rock",
      "zh": "民謠搖滾",
-     "count": 209,
+     "count": 210,
      "children": [
       {
        "id": "psych",
        "zh": "迷幻與前衛",
-       "count": 66
+       "count": 67
       },
       {
        "id": "british",
@@ -1554,7 +1554,7 @@
     {
      "id": "psych-folk",
      "zh": "迷幻與怪奇民謠",
-     "count": 191,
+     "count": 203,
      "children": [
       {
        "id": "british",
@@ -1562,19 +1562,19 @@
        "count": 90
       },
       {
+       "id": "prog",
+       "zh": "前衛民謠",
+       "count": 37
+      },
+      {
        "id": "freak",
        "zh": "Freak Folk / New Weird America",
        "count": 36
       },
       {
-       "id": "prog",
-       "zh": "前衛民謠",
-       "count": 36
-      },
-      {
        "id": "dark",
        "zh": "Neofolk / Dark Folk",
-       "count": 12
+       "count": 24
       }
      ]
     },
@@ -1657,7 +1657,7 @@
     {
      "id": "world-folk",
      "zh": "各地傳統民謠",
-     "count": 109,
+     "count": 110,
      "children": [
       {
        "id": "latin",
