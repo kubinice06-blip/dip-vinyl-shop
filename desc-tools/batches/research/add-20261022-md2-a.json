@@ -436,5 +436,65 @@
   "status": "thin",
   "coverage": "thin",
   "notes": "moodGuess 存疑：卡單寫無鼓 drone，但 Discogs 人員欄列 Ron Goris 鼓與 Charlotte Cegarra 人聲，三場陣容各異，無法確認哪些段落有鼓；建議主線視為「可能有鼓」。找不到樂評單獨評這張。Discogs 版本備註限量數量為 100 + 100 + 300 = 500。無獎項。"
+ },
+ {
+  "key": "desc2:Bohren & der Club of Gore|Gore Motel",
+  "artist": "Bohren & der Club of Gore",
+  "album": "Gore Motel",
+  "facts": [
+   {
+    "f": "Bohren & der Club of Gore 來自德國魯爾區的米爾海姆（Mülheim an der Ruhr），成員 Thorsten Benning、Morten Gass、Robin Rodenberg、Reiner Henseleit 最初在 hardcore punk 樂團裡打底。",
+    "src": "https://en.wikipedia.org/wiki/Bohren_%26_der_Club_of_Gore"
+   },
+   {
+    "f": "樂團 1992 年轉向把爵士與氛圍音樂混在一起，自述是『慢爵士抒情曲、Black Sabbath 式 doom 與調低音的 Autopsy 聲響的不神聖混合』；1993 年改用現名，向荷蘭樂團 Gore 致敬。",
+    "src": "https://en.wikipedia.org/wiki/Bohren_%26_der_Club_of_Gore"
+   },
+   {
+    "f": "《Gore Motel》是樂團首張全長，Discogs 載 Epistrophy 目錄號 EPI 008、CD、1995 年 3 月；MusicBrainz 首發日期記 1994。",
+    "src": "https://www.discogs.com/release/323657"
+   },
+   {
+    "f": "Discogs 的內頁註記寫明『錄於 1994 年 8 月 2 日，杜伊斯堡（Duisburg）』；所有曲目署名 Thorsten Benning 作曲，四位成員同列演奏。",
+    "src": "https://www.discogs.com/release/323657"
+   },
+   {
+    "f": "陣容是 Thorsten Benning 鼓、Morten Gass 吉他／鋼琴／Mellotron、Robin Rodenberg 貝斯、Reiner Henseleit 吉他；這時還沒有薩克斯風，Christoph Clöser 1997 年才接替 Henseleit 入團。",
+    "src": "https://en.wikipedia.org/wiki/Gore_Motel"
+   },
+   {
+    "f": "Capsule 的入門文章說這張仍是『較傳統的搖滾結構：吉他、貝斯、鼓（當然還有 Mellotron）』，聽起來像『爵士味的 Earth』，是帶一點爵士裝飾的調低音輓歌。",
+    "src": "https://www.capsule.org.uk/2012/10/13/an-introduction-to-bohren-der-club-of-gore/"
+   },
+   {
+    "f": "維基形容它以『極簡、氛圍、吉他與貝斯主導的歌』為主，與樂團後來以 dark jazz 聞名的面貌不同。",
+    "src": "https://en.wikipedia.org/wiki/Gore_Motel"
+   },
+   {
+    "f": "共 12 首，曲名半是德語玩笑半是B級片口吻，如〈Sabbat Schwarzer Highway〉〈Conway Twitty zieh mit mir〉〈Die Fulci Nummer〉〈Der Maggot Tango〉；最長〈Cairo Keller〉9 分鐘。",
+    "src": "https://www.discogs.com/release/323657"
+   },
+   {
+    "f": "多數曲子 4 到 8 分鐘，全盤約 74 分鐘；Discogs 把 CD 分成『Autoseite（車側）』與『Messerseite（刀側）』兩段。",
+    "src": "https://www.discogs.com/release/323657"
+   },
+   {
+    "f": "MusicBrainz 使用者給這張的曲風標籤是 dark ambient 與 dark jazz；Discogs 風格為 Dark Ambient、Dark Jazz。",
+    "src": "https://musicbrainz.org/release-group/6c217e75-9a00-324e-933e-49304b5a889d"
+   }
+  ],
+  "hookCandidates": [
+   "從 hardcore 退到極慢的樂團，第一張就用吉他、貝斯、鼓把爵士壓成低音輓歌。",
+   "曲名是德語B級片玩笑，聲音卻是調低音的慢板。"
+  ],
+  "sound": "吉他、貝斯、鼓加 Mellotron 的傳統編制，調低音的慢板輓歌帶一點爵士裝飾，被形容像『爵士味的 Earth』；有鼓（Benning），無薩克斯風；偏極簡、氛圍。",
+  "keyTracks": [
+   "Sabbat Schwarzer Highway",
+   "Gore Motel",
+   "Cairo Keller"
+  ],
+  "status": "ok",
+  "notes": "【身分】MB RG 6c217e75（1994、Epistrophy）與 Discogs master 60850、release 323657（EPI 008）吻合。【年份分歧】MB 1994；Discogs master／release 1995（3 月）；英維基同頁寫 1993 又寫 1995，德維基 1994。Discogs 內頁註記錄於 1994-08-02（維基『錄於 1992』與之不符，不採）。卡單 year 1994 保留，正文建議只寫『1994 年錄成、1995 年初前後發行』或避開發行年，勿寫 1993。【moodGuess】x 1.7 慢鼓無攻擊、y 1.1 低頻厚、z -1.2 陰：慢與暗有來源（調低音輓歌、Earth 比喻），但『殘響長』無直接來源；有鼓是確定的（Benning），不是無鼓，只是慢；主體仍是靜重冷，不構成汰換理由。【Bohren 與卡單文字】curatorWhy『吉他與貝斯沉在殘響裡』的殘響無來源，寫作層只寫調低音與慢。Discogs 載曲目 12 首，英維基長度 1:14:56。獎項無。【推翻策展層】未推翻身分；年份標註分歧。",
+  "coverage": "ok"
  }
 ]
