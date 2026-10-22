@@ -144,3 +144,6 @@
 
 ## 本批新藝人（無介紹，6 個並行時不切，留調度工作階段統一切批）
 Pan•American、Bass Communion、Oren Ambarchi、BJ Nilsen、Phill Niblock、Jacob Kirkegaard、Kane Ikin、Kevin Richard Martin、Xela、Elegi、Black to Comm、Kreng、Mokira、Paul Jebanasam（14 位）
+
+## 並行撞卡（合併前）
+- **17157m**　合併前 published gate 報 Thomas Köner《Aubrite》《Kaamos》`/album-desc` 不符：並行的 md7／md8 工作階段（`claude/mood-cells-md7-md8`，md8 卡單）也收了這兩張、寫了 KV 蓋掉本批文字（尚未進 main）。卡池以先合併者為準：本批先上 seed，故把本批兩鍵 KV 寫回（`publish-stage/kv-md6fix-20261022md6.json`，回讀 45/45）、card_catalog 重推 45/45，gate 回 0 error。另一邊的 Aubrite 文字寫「1995 年發行」與本卡年份（MB 1996）不一致，也是不採用的理由之一。**md8 合併 main 時這兩張會被 build-cards／seed 去重擋下，應從 md8 卡單汰除，不要再寫 KV。**
