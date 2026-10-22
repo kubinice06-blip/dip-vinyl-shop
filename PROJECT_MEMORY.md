@@ -1,5 +1,18 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-21｜dip-vinyl-shop｜店主改判 Celtic Frost《Monotheist》→ 亢奮；build-card-moods 加 --allow-missing
+
+- **改動**：店主在頻率選歌抽到《Monotheist》落頹靡，裁定「要去躁的那一端」。`data/mood/overrides.json`（首筆）能量 2.6→3.4，質地 2、色溫 −2 不動，落亢奮（與 To Mega Therion、Morbid Tales 同格）。同速同重的 Godflesh、Candlemass 不連動。`scripts/build-card-moods.mjs` 新增 `--allow-missing`：342 張新上架卡還沒評分讓 gate 紅、改判寫不進前台檔，加旗標照樣寫（缺的存 null，前端雜湊對卡跳過）。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`scripts/build-card-moods.mjs`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：重建後前台檔該卡 [3.4, 2, −2, 3]，判式算得亢奮；錨點 104/104 同格；八格 頹靡 970→969、亢奮 2506→2507。
+
+### 2026-10-21｜dip-vinyl-shop＋dip-vinyl-worker｜缺 Spotify 連結的真正根源：掃描狂打把 Spotify 配額打爆，429 期間 KV 被永久污染
+
+- **根源**：PR #111 只止住了掃描狂打，但傷害已造成——worker 的 Spotify app 被打到 `429 QUOTA_EXCEEDED`（`retry-after` 約 4.5 小時，token 正常）。429 期間 `/spotify-search` 退到 Cover Art Archive 仍補得到封面，舊寫法見到封面就**永久**寫進 KV，`spotifyUrl` 永遠空白；`/spotify-album-link` 備援也一起 429。掃 KV：`cover6:*` 12,191 個鍵只有 3,252 有 Spotify，**8,644 個是 CAA 無 Spotify（8,502 在卡池）**，U2《Achtung Baby》、Billy Joel、Justin Bieber 都灰掉——不是頻率選歌獨有，所有抽卡線都受影響，只是頻率選歌抽得多先被看到。
+- **改動**：(1) worker `/spotify-search`：Spotify 沒走完（非 200 或沒 token）→ 結果帶 `spotifyUnchecked`、只存 6 小時；`/spotify-album-link` 沒回 200 的空結果不進邊緣快取（分支 `claude/spotify-429-kv-poison`，**要店主合併並 `npx wrangler deploy`**）。(2) 新增 `scripts/kv-spotify-link-repair.mjs`：列 KV 候選（CAA 無 Spotify、未查過、卡池內），拿卡池原寫法直接問 Spotify 一次，**只收與 worker 同一套「完全吻合」判定**的連結、模糊命中維持灰（沒有 MusicBrainz 覆核層，寧缺勿錯），查過的寫 `spotifyChecked` 不再查；1.2 秒一張、每輪上限 2,000、遇 429 存進度退出可續跑；進度在 `batch-progress/spotify-link-repair/state.json`。
+- **主要檔案**：`dip-vinyl-worker/src/index.js`、`scripts/kv-spotify-link-repair.mjs`
+- **驗證**：直接拿 worker token 打 Spotify 得 429 `QUOTA_EXCEEDED`；`--dry-run` 候選 8,502；worker `node --check` 過。
+- **實跑結果（同日）**：配額 11:00 UTC 重置後 Spotify 直查只撐 691 張（補上 531、無完全吻合 160）就再撞 429、`retry-after` 23.7 小時——**這個 app 每日配額約千次，正式站也在用同一份，不能再拿它跑批次**。改走 MusicBrainz（鍵裡的 `rgMbid` → 發行版 url-rels，免配額、1.1 秒一張）：三段共 8,299 張，補上 3,954、MB 沒有 3,851、殘餘 503 錯誤 12。**累計補回 4,485 張**，U2／Billy Joel／Justin Bieber 在正式站驗過按鈕亮。剩 3,851 張 MB 也沒有的（Kacey Musgraves、Donald Byrd 這種明明在 Spotify 的也在內）待店主定：Odesli（Apple collectionId 換 Spotify 連結，每分鐘 10 筆）或第二個 Spotify app。前端 `resolveSpotifyBtn` 看到 KV 已標 `spotifyChecked` 就不再打 `/spotify-album-link` 燒配額。
 ### 2026-10-21｜dip-vinyl-shop｜頻率選歌：ts1–ts11 新卡 342 張補情緒座標、上星圖；§11 藝人介紹排入 6 批
 
 - **內容**：店主「頻率也要做 前面沒做的補上 也放上星圖中」。薄細項策展線上架的 342 張補打情緒三軸（`batch-progress/mood-axes/score-ts/`，6 份、6 支代理），重跑 priors／scale／`build-card-moods`，全池 19,458 張都有座標，頻率選歌與星圖不再略過新卡。conf 低 74%（地區冷門盤）。另依 §11 把 212 位缺介紹的藝人補進 roster、切 `ar-d-129`～`ar-d-134`（state: cut），待新工作階段跑。

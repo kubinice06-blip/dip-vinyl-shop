@@ -4534,8 +4534,11 @@ ${seenList}
     if (!btn || btn.hasAttribute('href')) return;
     const q = `artist=${encodeURIComponent(artist)}&album=${encodeURIComponent(album)}`;
     const get = path => fetch(`${WORKER_URL}/${path}?${q}`).then(x => x.ok ? x.json() : {}).catch(() => ({}));
-    let url = (await get('spotify-search')).spotifyUrl;
-    if (!url) url = (await get('spotify-album-link')).url;
+    const sr = await get('spotify-search');
+    let url = sr.spotifyUrl;
+    // 2026-10-21：Spotify 配額很小（每日千次上下）。KV 已標 spotifyChecked 的是修復腳本拿卡名問過 Spotify、
+    // 確定沒有完全吻合的，不要再為它打 /spotify-album-link 多燒一次配額；維持灰。
+    if (!url && !sr.spotifyChecked) url = (await get('spotify-album-link')).url;
     if (url && btn.isConnected) {
       btn.href = url; btn.target = '_blank'; btn.rel = 'noopener'; btn.removeAttribute('disabled');
     }
