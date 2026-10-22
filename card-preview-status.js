@@ -3026,4 +3026,8 @@ window.DipPreviewStatus = Object.freeze({
   "lunatic|mauvais œil": "unavailable",
   "113|les princes de la ville": "unavailable",
   "bones|garbage": "unavailable",
+  "æthenor|deep in ocean sunk the lamp of light": "unavailable",
+  "ktl|ktl 2": "unavailable",
+  "menace ruine|alight in ashes": "unavailable",
+  "menace ruine|union of irreconcilables": "unavailable",
 });

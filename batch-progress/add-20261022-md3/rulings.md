@@ -109,3 +109,11 @@
 - **10903** 聲音事實只寫 note 列的：無鼓（ØØ「無鼓也無打擊」、Flight 前四首無拍、Pyroclasts 無鼓無拍、Æthenor／Serpent's Egg／Remnants 無鼓手）、有鼓（Flight 末曲 Aspirin Feast、White1〈Gates of Ballard〉鼓機、Kannon 一記音樂會大鼓、Soused Ian Thomas 四首、Earth Carlson 兼打擊、Khanate 鼓收斂、Jesu 奧斯陸另錄、KTL〈Paratrooper〉Atsuo、Cranes 鼓精準有力、Lycia 鼓機、Rope 開場鼓與鼓機）、長音／殘響／低頻（ØØ、Flight、White1、White2 回授、Kannon、Terrestrials、Remnants 持續音）。KTL note「鼓只寫在這一首」寫成「整張只有這一首有鼓」，依據該卡 sound 欄（多數段落無鼓、只有一首靠 Atsuo 的鼓）；若主線判為只限寫法、非聲音事實，刪這半句即可（可逆）。note 沒列的冷暖形容一律不補。
 - **10904** 用語：note 裡的「英國後龐克」依房規改成 post-punk（次類型英文）；Earth「樂評形容安撫又令人不安」、Rope「當年一則評語」都改成被動「被形容為／被形容成」，不寫出處、不留引號；Terrestrials 的 O'Malley 引語、Stark Corner 的 Peter Steele 引語轉間接敘述（hook 內引號不動）。Stark Corner 的懸念收在結尾「說出那句話的是 Type O Negative 的 Peter Steele」。Serpent's Egg 照 note 寫「兩人還是情侶時做的最後一張」（不寫成「最後一次合作」，兩人之後仍合作）；Soused「生前最後」只在本張。
 - **10905** 自掃（han() 4-gram，本檔＋writer-2 定稿 out-2 合掃）：3 張以上只剩樂器名與地名（電子樂器 ×4、降弦吉他 ×3、亞利桑那 ×3）；2 張殘留只剩失真吉他、回音吉他、與大提琴、利桑那州。途中拆掉：團名取自 ×3、彈電子樂 ×3、在同年月、年由發行、在年發行、首約分鐘、合計約分鐘、超過分鐘、的低頻長音、音藝術家、張錄音室、在年月替、低頻吉他牆、發行的這張、在倫敦的、最後一張、的錄音室、彈吉他也、自家錄音、這是第二、的第一張、把它發行、這是他們、年月發行、月由發行、第二張年、個人計畫、用四軌錄、在亞利桑、的合成器、錄音在年、樂團的第、靈感來自、錄音並混音、月進錄音、專輯也是他、第五張專輯。`qa-batch out add-20261022-md3`（全批 45）全部通過、thin 全部 ≤180；`qa-check-research` 0 標記；`fix-spacing` 待補 0；媒體名、資料平台名、「據說／據傳」grep 0。
+
+## 主線審稿（2026-10-22）
+- **10911-R**：逐張審 45 篇（全文印出、逐句對研究稿），改 3 張（`desc-override.json`）；無媒體名、無媒體榜名次、無「據說／據傳」、無資料平台名；卡面年份與正文發行年一致。
+  - Earth《Phase 3》刪尾句「整體被形容為既安撫又令人不安」——研究 a 組註明出自 Spin 單篇樂評（AllMusic 評價相反），單源評價句不進正文。221→205 字。
+  - KTL《IV》刪「整張只有這一首有鼓」——研究 b 組只寫〈Paratrooper〉由 Atsuo 錨定，未證其他三首無鼓（writer-1 自報 10903）。221→210 字。
+  - Black Tape for a Blue Girl《The Rope》刪「發行那年，它被形容成神經崩潰的音樂版本」——Projekt 商品頁轉述 1986 年 Star Hits 單篇評語，單源評價句。215→196 字。
+  - 用語：Chelsea Wolfe《Pain Is Beauty》hook「哥特搖滾」改「哥德搖滾」（池中既有 8 檔用「哥德」），hooks-d／input／out-2 三層同步。writer-2 把 note 的「工業音樂」寫成 industrial、「黑金屬」寫成 black metal，照次類型英文房規，不改。
+- **10912-R**：保留的單源句：Scott Walker《Soused》「生前最後以個人名義發表的專輯」（維基，事實非評價）；Lycia《A Day in the Stark Corner》Peter Steele 引語（研究 b 組有來源、屬人物引語非媒體評價）；Chelsea Wolfe《Pain Is Beauty》「樂評聽見 Swans 式…」（ts1 先例：媒體名改「樂評」可留）；Menace Ruine「被比作更 doom 的 Nico」（Discogs 團體簡介的描述）。
