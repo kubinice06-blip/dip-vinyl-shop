@@ -36,3 +36,11 @@
 - **11273**：Chin Kairos 版為 2011 再版，原版 2005 DG（維基單源）；年份由主線裁定。
 - **11274**：moodGuess 存疑四張：Ferneyhough 1（41 分鐘《奏鳴曲》占 57%，速度無源）、Ferneyhough 2（獨奏與女高音，僅 Terrain 較可能快）、Chin（Xi／Akrostichon 無速度源，確證機械快作僅約 46%）、Holzman（慢或偏慢段約 35%）。Hodges 大致可，z（冷）無直接來源。
 - **11275**：Boosey／Wolpe 樂評／Holzman 生平頁多次 403／404／503，三張 sound 只能靠編制與樂章速度標示，status 標 partial。
+
+## 研究 e 組
+- **11281**：Howarth《Birtwistle》身分對得上（Etcetera KTC 1052、1987-01 Conway Hall 錄音）。moodGuess 存疑：僅 Carmen（約 9 分）是永動機械式快推進，Silbury Air 為靜態音塊並置、Air 段獨立慢速，Secret Theatre（約 26 分，佔近半）無速度來源，x 3.5 無法證實。Secret Theatre 首演資料未取得（維基無頁、Gramophone 403），不寫。
+- **11282**：Schleiermacher《The Bad Boys!》策展層漏報：23 軌中 13 首是 Cowell（非 Antheil／Ornstein 為主）。moodGuess 存疑：開場〈Tides of Manaunaun〉為低音區大音塊、緩慢安靜，〈Aeolian Harp〉〈Banshee〉為琴箱內刮撥琴弦（幽靈音色），質地混合；錄音 1993-11-13／14 柏林 SFB、1994 hat ART 首發。Tides 日期有爭議（Cowell 自稱 1912、維基 1917），facts 不寫年份。曲名 MB／Discogs 拼 Mamaunaun，正名 Manaunaun。
+- **11283**：Surinach《Antheil: Ballet mécanique…》身分對得上（Columbia ML 4956、1955-01、單聲道）；本盤為 1953 縮編版（4 鋼琴、4 木琴等），非原版 16 自動鋼琴。Discogs 錄音監製欄 A 面記 Antheil、B 面記 Brant。錄音日期與 4 位鋼琴手名未取得。與池中 Antheil《Ballet mécanique》(2014) 為不同錄音，不撞。moodGuess 無不符。
+- **11284**：NEM《Carter》正名為《Elliott Carter》（ATMA ACD2 2280、2002），卡單盤名為自擬，寫作層宜以作曲家與作品稱之。moodGuess 存疑（速度）：協奏曲含 Tranquillo、Largo，6 首小品無速度來源，只有 Triple Duo 與 Presto／Agitato 段可證快；整張可能中速偏上。協奏曲獨奏者 Discogs 未標，不寫。
+- **11285**：Hodges & Hind《Ferneyhough》身分對得上（NEOS 11501-02、2015，Hind 僅彈最後一首雙鋼琴奏鳴曲）。moodGuess 存疑：密度有來源（記譜）但速度無來源；第二片約 47 分鐘為 1960 年代短小早期作（Epigrams 各 1–2 分），疏密不均；Opus Contra Naturam 含人聲（取自《Shadowtime》），非純鋼琴。
+- **11286**：本組五張皆查無建議移除項；皆為原創專輯（Surinach 為 LP 專輯、其餘為 CD），無重複卡。WebSearch 實用 8 次（超出每支 3 次上限，因 Wikimedia 直連被擋、改以搜尋補來源），Wikimedia API 對代理 403／429，改以 WebFetch、MusicBrainz、Discogs API。
