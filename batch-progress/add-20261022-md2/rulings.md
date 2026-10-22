@@ -25,3 +25,10 @@
 - 10806：Midwife《Forever》《Luminol》：樂評說吉他「明亮／shimmering」，「冷」缺直接證據，可能落恍惚而非頹靡；Colin Ward 去世與疫情新墨西哥錄音皆為評論轉述、單一來源，facts 用「評論指出」。
 - 10807：Bowery Electric 首作有真人鼓手 Michael Johngren（Wikipedia 列為前成員），The Wire 稱「蹣跚遲緩」的打擊，與慢相符；鼓機是否出現查不到。
 - 10808：Pitchfork／AllMusic／Kranky 頁面抓取被擋；Wikipedia API 不通，改用 WebFetch 讀頁。WebSearch 用 3 次（Bowery、Bailiff、Midwife）。
+
+## 研究 a 組
+- 10761：Bohren《Midnight Radio》年份：MB 1995、版權頁℗1995 且錄音於 1995-10-20／21，但 Discogs 該 CD 發行日 1997-01、維基 Sunset Mission 條目亦稱 1997。研究層不改卡單，facts 兩說並陳，建議主線維持 1995（錄音年＋MB）並在簡介避免寫「1997」。
+- 10762：Midnight Radio 聲音面僅有曲長（11 首無名、22:33 起、合計約 2 小時 14 分）與 Discogs 標籤 Drone／Dark Ambient，無樂評；status thin，moodGuess 的「極慢鼓」無法驗證。
+- 10763：moodGuess 存疑兩張：Succubus 與 Anthropomorphic 卡單寫「無鼓」，但 Discogs 人員欄分別列 Gideon Kiers（鼓）、Ron Goris（鼓）＋Charlotte Cegarra（人聲）；鼓的用法無來源。Here Be Dragons（x 2.0）有「誘人的節拍／滾動打擊」，並取樣 Venetian Snares，貼邊。
+- 10764：Geisterfaust 的合唱團錄音僅見 Discogs 人員欄，成品中位置無樂評證實；專輯名中譯有兩說，建議不譯。
+- 10765：Sunset Mission 與 Black Earth 未找到逐字的鼓法描述，聲音事實以編制與團史為主。
