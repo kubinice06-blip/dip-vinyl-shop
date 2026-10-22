@@ -659,11 +659,11 @@
   "manualEvidenceUrls": [],
   "releaseException": "",
   "queryAlias": "The Works for String Quartet, Vol. II: Quartets 2 & 3 / Elegy",
-  "uncertain": "MB RG 首發記 2004-03-22（Etcetera KTC 1066），印象中 Etcetera 首版為 1988，需主線核實年份；同作品池中有 Juilliard 版",
+  "uncertain": "MB 只有 2004 Etcetera KTC 1066 一個 release，查不到 1988 首發 release，依 MB release-group 年份改 2004（錄音本身可能較早）；同作品池中有 Juilliard 版",
   "artist": "Arditti Quartet",
   "album": "Carter: String Quartets 2 & 3 / Elegy",
   "composer": "Elliott Carter",
-  "year": 1988,
+  "year": 2004,
   "label": "Etcetera",
   "faction": "strings",
   "why": "Arditti 的 Carter 四重奏第 2、3 號：多聲部各走各的速度，第三號是 Pulitzer 得獎作，密而乾；與池中 Juilliard 2014 版不同錄音",
@@ -954,6 +954,163 @@
    "sec": [],
    "date": "1987",
    "credit": "Harrison Birtwistle; The London Sinfonietta, Elgar Howarth"
+  }
+ },
+ {
+  "country": "de",
+  "genres": [
+   "classical"
+  ],
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "Cowell 以前臂砸的音塊低頻轟響，質地可能被評到 +0.3；多作曲家盤，composer 留 null",
+  "artist": "Steffen Schleiermacher",
+  "album": "The Bad Boys!",
+  "composer": null,
+  "year": 1994,
+  "label": "hat ART",
+  "faction": "keyboard-mech",
+  "round": 2,
+  "why": "hat ART 1994：Antheil《Airplane Sonata》《Sonata Sauvage》、Ornstein《Wild Men's Dance》、Cowell 音塊曲，1920 年代美國未來主義鋼琴的代表合集式錄音",
+  "moodGuess": {
+   "x": 4,
+   "y": 0,
+   "z": -0.6,
+   "why": "快：未來主義的機械連打與觸技；輕：獨奏鋼琴乾錄；冷：機器、飛機、工業意象，不抒情"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/09e50dcd-5e87-4aba-8a7c-8355df461ddc",
+   "https://coverartarchive.org/release-group/09e50dcd-5e87-4aba-8a7c-8355df461ddc/front"
+  ],
+  "mbRgMbid": "09e50dcd-5e87-4aba-8a7c-8355df461ddc",
+  "group": "mc4",
+  "factionZh": "鍵盤快作：練習曲／觸技／自動鋼琴／大鍵琴",
+  "mb": {
+   "title": "The Bad Boys!",
+   "type": "Album",
+   "sec": [],
+   "date": "1994",
+   "credit": "George Antheil, Henry Cowell, Leo Ornstein; Steffen Schleiermacher"
+  }
+ },
+ {
+  "country": "us",
+  "genres": [
+   "classical"
+  ],
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "George Antheil: Ballet mécanique / Henry Brant: Signs & Alarms / Galaxy 2 (1954)",
+  "uncertain": "B 面 Brant 兩首管樂小品較短；池中 George Antheil《Ballet mécanique》(2014) 為同作品另一錄音",
+  "artist": "Carlos Surinach",
+  "album": "Antheil: Ballet mécanique / Brant: Signs and Alarms / Galaxy 2",
+  "composer": "Antheil",
+  "year": 1955,
+  "label": "Columbia Masterworks",
+  "faction": "percussion",
+  "round": 2,
+  "why": "Columbia 1955 ML 4956：Surinach 指揮 New York Percussion Group 的 Ballet mécanique 1953 修訂室內版（四鋼琴＋打擊），乾而機械；與池中 2014 大編制版不同錄音",
+  "moodGuess": {
+   "x": 4.3,
+   "y": 0,
+   "z": -0.7,
+   "why": "快：鋼琴與木琴、鐘的機械連打不停；輕：室內版編制、50 年代乾錄音；冷：機械崇拜、無旋律溫度"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/377d618a-cdfb-411f-80c2-d358e5a8c2e3",
+   "https://www.discogs.com/master/810026",
+   "https://coverartarchive.org/release-group/377d618a-cdfb-411f-80c2-d358e5a8c2e3/front"
+  ],
+  "mbRgMbid": "377d618a-cdfb-411f-80c2-d358e5a8c2e3",
+  "group": "mc4",
+  "factionZh": "打擊樂快作",
+  "mb": {
+   "title": "George Antheil: Ballet mécanique / Henry Brant: Signs & Alarms / Galaxy 2 (1954)",
+   "type": "Album",
+   "sec": [],
+   "date": "1955-01",
+   "credit": "George Antheil, Henry Brant; Carlos Surinach conducting the New York Percussion Group, Henry Brant conducting Chamber Ensemble"
+  }
+ },
+ {
+  "country": "ca",
+  "genres": [
+   "classical"
+  ],
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "Elliott Carter",
+  "uncertain": "MB 原盤名只寫 Elliott Carter；晚期 Carter 帶機智幽默，色溫可能偏 −0.3；收 90+ 一首與 Oppens 盤重疊（小品，不影響）",
+  "artist": "Nouvel Ensemble Moderne",
+  "album": "Carter: Triple Duo / Clarinet Concerto / Gra / Enchanted Preludes",
+  "composer": "Elliott Carter",
+  "year": 2002,
+  "label": "ATMA Classique",
+  "faction": "ensemble",
+  "round": 2,
+  "why": "Vaillancourt 指揮 NEM 的晚期 Carter 室內作品：Triple Duo、單簧管協奏曲與一組快而輕的獨奏小品，「輕盈而沉思」的晚期快作",
+  "moodGuess": {
+   "x": 3.6,
+   "y": -0.6,
+   "z": -0.6,
+   "why": "快：Triple Duo 三組二重奏互搶的急促對話；輕：小編制、聲部分離；冷：抽象理性、不抒情"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/aeafb4b4-f7f1-4253-8331-efc82a215718",
+   "https://coverartarchive.org/release-group/aeafb4b4-f7f1-4253-8331-efc82a215718/front"
+  ],
+  "mbRgMbid": "aeafb4b4-f7f1-4253-8331-efc82a215718",
+  "group": "mc4",
+  "factionZh": "點描與機械室內樂團",
+  "mb": {
+   "title": "Elliott Carter",
+   "type": "Album",
+   "sec": [],
+   "date": "2002-01-15",
+   "credit": "Elliott Carter; Nouvel Ensemble Moderne, Lorraine Vaillancourt"
+  }
+ },
+ {
+  "country": "gb",
+  "genres": [
+   "classical"
+  ],
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "早期 Invention、Epigrams 較疏；CAA 無封面，封面取 Apple Music",
+  "artist": "Nicolas Hodges & Rolf Hind",
+  "album": "Ferneyhough: Complete Piano Works",
+  "composer": "Ferneyhough",
+  "year": 2015,
+  "label": "NEOS",
+  "faction": "keyboard-mech",
+  "round": 2,
+  "why": "NEOS 2015 Ferneyhough 鋼琴全集：Lemma-Icon-Epigram、Opus contra naturam 等新複雜主義鋼琴極限之作",
+  "moodGuess": {
+   "x": 3.6,
+   "y": -0.5,
+   "z": -1.2,
+   "why": "快：極高密度、速度層疊的連打；輕：獨奏鋼琴乾硬；冷：智性碎裂、無人味"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/aeed3a20-0429-4dcc-a5d9-2d9e4c83e174",
+   "https://music.apple.com/us/album/ferneyhough-complete-piano-works/1203081591"
+  ],
+  "mbRgMbid": "aeed3a20-0429-4dcc-a5d9-2d9e4c83e174",
+  "group": "mc4",
+  "factionZh": "鍵盤快作：練習曲／觸技／自動鋼琴／大鍵琴",
+  "mb": {
+   "title": "Complete Piano Works",
+   "type": "Album",
+   "sec": [],
+   "date": "2015-06-30",
+   "credit": "Brian Ferneyhough; Nicolas Hodges, Rolf Hind"
   }
  }
 ]
