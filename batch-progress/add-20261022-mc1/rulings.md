@@ -26,3 +26,22 @@
 - **11007**（Gina X《Nice Mover》moodGuess 存疑）：真鼓手 László Czigány 加 Rhodes／Hammond／鋼琴等層次，維基稱混有迪斯可節奏；年份 Discogs／MB 1978，維基專輯 1979，以 1978 為準。
 - **11008**（Gina X《X-Traordinaire》moodGuess 存疑）：維基稱比首張『更溫暖、更傳統』，掛名吉他手與真鼓手，與預想方向相反，建議汰換候選。
 - **11009**（WebSearch 用量）：本組用了 3 次（KaS 一次無結果、Charles de Goal 兩次）。
+
+## 研究 c 組
+- 11021：Taxi Girl《Seppuku》年份 MB／Discogs 為 1981、法文維基為 1982-01-05；不推翻卡單 1981，facts 並陳。
+- 11022：Taxi Girl moodGuess 存疑（有 Jet Black 真鼓、Mirwais 電吉他、真貝斯，Air Studios 製作，質地偏厚偏暖，曲長 4.5–5.75 分居多）；建議評分後再決定去留。
+- 11023：Krisma《Cathode Mamma》moodGuess 存疑（兩位真貝斯手取代吉他，Polydor／Trident 專業混音，偏厚）；鼓機或真鼓、BPM 查不到。〈Many Kisses〉百萬銷量為維基「據稱」，不入 facts。
+- 11024：Snowy Red 速度（BPM）查不到；〈The Wild Boys〉Demo 22 分鐘暗示重複式長曲，x 3.4 存疑。
+- 11025：Rational Youth、Xeno & Oaklander moodGuess 輕微存疑（旋律甜度與聲碼器／回音偏暖，速度未能驗證）。
+- 11026：El Aviador Dro 兩張：節奏機、聲碼器確認，機型與 BPM 僅 Tesis 有 MXR 鼓電腦；Tesis 的 Rock de Lux 前 20 名為單一轉述，不入 facts。
+- 11027：Units 鼓為真人（Brad Saunders），與 moodGuess 相容但質地比純機械稍暖；Far Out 稱音色飽滿而非薄。
+- 本組推翻策展層：無（盤名、年份、廠牌、掛名皆吻合；Taxi Girl 年份僅標註分歧）。
+
+## 研究 d 組
+- **11031**（Automelodi《Automelodi》moodGuess 存疑）：首張有真鼓手 Guillaume Ethier 與吉他 Mauricio Lobos，Igloo 樂評稱「warm analogue」「warm electro pop melt」，速度不一（〈Limite Malade〉偏沉）；與預估『快鼓機、乾、冷』相反，建議汰換候選。
+- **11032**（Automelodi《Surlendemains acides》moodGuess 存疑）：2014 訪談明說無實體鼓、質地有機、含 2012 白天錄的街頭噪音；鼓機與速度無證據，『乾淨』與環境噪音抵觸。
+- **11033**（Lust for Youth《International》moodGuess 存疑）：樂評主調是『light, polished, ambient』『nothing lo-fi』、有熱帶彈跳與迪斯可拍，偏亮偏暖；產地來源不一（瑞典／哥本哈根），建議汰換候選。
+- **11034**（Linea Aspera 兩張、Sally Dige、Xeno & Oaklander《Par Avion》）：找不到可靠的速度／鼓機／低頻來源（Bandcamp 擋爬蟲、Pitchfork 被擋），四張中 Linea Aspera 首張、Par Avion、Sally Dige 標 thin；LP II 有 I Die, You Die 樂評（motorik 鼓編程、朦朧光澤），輕度存疑偏有空間感。
+- **11035**（Sally Dige 產地）：策展層／其他說法的『柏林』無來源，廠方稱加拿大；Linea Aspera 成立於倫敦（維基），Bandcamp 自述 Berlin-based，寫作層用『倫敦成立』。
+- **11036**（WebSearch 用量）：本組用了 3 次（Lust for Youth、Sally Dige、Automelodi 各一）。
+- **11037**（Pitchfork 引文）：Xeno & Oaklander 兩張引用 Larry Fitzmaurice 的評語，經維基轉引，原文未能開啟，且是對團體整體的描述；寫作層須寫『評論人形容』，不可當成專指某張。
