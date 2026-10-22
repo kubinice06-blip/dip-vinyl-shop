@@ -59,3 +59,22 @@
 - **14368**　Jesse Boykins III《Love Apparatus》：**moodGuess 強烈存疑（高）**。實為 Machinedrum 主製（14 首中 11 首）的電子製作：808、心跳節奏、Discogs 標籤 Neo Soul＋House、豪華版加碼曲 lounge-house 中速；NPR 稱放克味新世紀。建議優先汰換。廠牌無法補出：MB 4/22 版標 Nomadic Music，Discogs 主版本為 2014-11-04 豪華版 Empire；建議留空或 Nomadic Music，勿寫 Empire。維基出生地矛盾（芝加哥／牙買加），facts 不寫出生地。
 - **14369**　Brainstory《Buck》：**moodGuess 存疑（中）**。聲音來源只有 Big Crown 廠方文案與 Discogs 工程名單（無獨立樂評）。假音（Kevin）成立；「磁帶糊與殘響」無來源，廠方明講 G-Funk 律動、穩定 backbeat、朋克／硬核出身，Discogs 標 Rock／Indie Rock，偏乾中速。
 - **14370**　本組推翻策展層年份／廠牌／掛名／盤名：0 處（待補項：Love Apparatus 廠牌補不出，如 14368；Gabriels 年份僅需寫作層註明兩階段發行）。
+
+## 研究 b 組
+- **14331**　Muldrow《Seeds》：moodGuess 輕度存疑。Exclaim! 寫的是放克／boogie／「搖櫃子的鼓」，無速度與殘響來源；Madlib 全盤製作、SomeOthaShip Connect 屬實（MB 首發為加拿大 eOne，如 curatorRisk）。
+- **14332**　Eric Lau《New Territories》：moodGuess 輕度存疑（短歌、多女聲客唱）。**推翻策展層客唱名單**：Discogs／維基無 Fatima，只有 Rahel、Sarina Leah、Tawiah、Tosin、Meshach Brown、Annabel；「Dilla 式拖拍」無來源。發行日 MB／Discogs 3/25、維基 3/18，寫「2008 年 3 月」。
+- **14333**　Children of Zeus《Travel Light》：moodGuess 存疑（中）。Bandcamp：低頻重、Rhodes 帶動的 hip hop soul 帶 reggae；有 MC 客座與〈Sling Shot Riddim〉，可能偏有勁的說唱，無速度來源。
+- **14334**　Children of Zeus《Balance》：moodGuess 輕度存疑。聲音僅有廠方文案（hip hop／neo-soul／福音／R&B、低頻重而精煉），無獨立樂評。
+- **14335**　KeiyaA《Forever, Ya Girl》：moodGuess 輕度存疑（z）。KEXP「woozy、immersive」支持；Esquire「downcast grime」、Pitchfork「解構式 club」偏冷或躁。廠牌：原始為自行發行，Quik Language 為 CD／卡帶版，卡單可用。
+- **14336**　Yazmin Lacey《Voice Notes》：聲音大致支持預估（dub、即興合奏、保留破音、溫和如聊天、長曲）。**策展層「諾丁罕」「Mercury 長名單」查無來源**（Bandcamp 標倫敦），不入文。
+- **14337**　Jesse Boykins III & Melo X《Zulu Guru》：**moodGuess 存疑（中）、status thin**。專輯本身的聲音描述完全查不到；MeLo-X 個人風格 dancehall／EDM，策展層「鬆拍、霧合成器、假音」無來源。建議主線抽查或降級。
+- **14338**　Joi《The Pendulum Vibe》：**moodGuess 存疑（中）**。維基描述 funk／迷幻靈魂／acid jazz、警笛、層疊鼓、現場錄成、低頻「清晰」，非單一慢霧；**推翻策展層製作人**：Discogs 為 Dallas Austin，無 Organized Noize。
+- **14339**　Society of Soul《Brainchild》：年份 1995、廠牌 LaFace 由 Discogs master 304820 與維基專輯條目證實（補 MB 缺日期）。**「唯一專輯」兩源衝突**（Dungeon Family 條目記第二張《Even in Darkness》2001），facts 不寫「唯一」。moodGuess 存疑（中）：無速度／鼓描述，有 George Clinton 客座。
+- **14340**　本組推翻策展層：Eric Lau 客唱名單（Fatima）、Yazmin Lacey 出身與 Mercury、Joi 製作人（Organized Noize）、Society of Soul「唯一專輯」，共 4 處；年份與廠牌無一推翻。
+
+## 主線裁定（研究層交件後）
+- **14391**：照研究層的聲音事實汰 12 張（研究稿已從 a–e 檔移除，卡單移到 `dropped-cards.json`）。共同原因：**來源證實不夠慢霧**（中速以上、明亮乾淨、電子／house／trap 成分、木吉他主導）：
+  - Sa-Ra《The Hollywood Recordings》（a：boom-bap 鼓、快板〈Feel the Bass〉、19 首拼合輯）；Georgia Anne Muldrow《King's Ballad》（d：迷幻放克、電子放克鼓、龐克曲）；Yaya Bey《Ten Fold》（c：輕快、薄 house 拍、dancehall）、《Remember Your North Star》（c：18 首 34 分鐘多片段、ska dub 段）；Jesse Boykins III《Love Apparatus》（e：Machinedrum 主製、808、house）；Jesse Boykins III & Melo X《Zulu Guru》（b：查無聲音來源、MeLo-X 偏 dancehall／EDM，策展 z 估 0.6）；Laura Mvula《Sing to the Moon》（c：明亮歡快、doo-wop 搖擺）；Andreya Triana《Lost Where I Belong》（c：低調打擊＋木吉他、爵士流行——ml2 前例原聲吉他判輕）；Greentea Peng《Man Made》（c：轉向乾淨原音鼓、grunge 段）；Mereba（d：scattershot、trap hi-hat）；Brainstory《Buck》（e：G-funk backbeat、Discogs 標 Indie Rock）；Joi《The Pendulum Vibe》（b：funk／acid jazz、層疊鼓、低頻清晰）。
+- **14392**：留下但標存疑的（評分照聲音打）：Bilal、Spacek／Steve Spacek 三張（broken beat、chrome 光澤）、Muldrow《Overload》《Umsindo》《Seeds》、Les Nubians（breakbeat 成分）、The Midnight Hour（z 偏冷風險）、Children of Zeus《Travel Light》、KeiyaA（z 風險）、Society of Soul、Nick Hakim 兩張、Gabriels、Baby Rose 兩張、Bobby Oroza、Sabrina Claudio 兩張、Fatima、Goapele、Raveena《Butterflies》、Charlotte Day Wilson《ALPHA》。研究層多是「查無慢霧來源」而非被推翻，不全汰。最有把握：Foreign Exchange 兩張、Greentea Peng《TELL DEM IT'S SUNNY》、Yazmin Lacey、Kali Uchis、Raveena《Lucid》。
+- **14393**：卡單更正照研究層：Fatima 製作人改 Floating Points、Theo Parrish 等（非 Funkineven／Alfa Mist）；Eric Lau 客唱無 Fatima；Joi 製作人 Dallas Austin（已汰）；Society of Soul 不寫「唯一專輯」、年份 1995 由 Discogs master 304820 與維基證實；Gabriels 寫兩階段發行（2022 Part I／2023-07-07 完整版），年份維持 2022；Goapele 2002 確認。
+- **14394**：回頭叫策展代理補 12 張「有來源證實慢霧暖」的候補（SendMessage 續跑同一支），替入後派補研究 append 進各組檔。
