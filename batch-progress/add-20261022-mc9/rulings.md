@@ -91,3 +91,6 @@
   - 抽核：Front 242「2.5 公尺見方的房間」（研究 a 組，Discogs 版本註記）、Camouflage 團名借自 YMO 歌（研究 c 組）、達明一派II 是第一張全長專輯（主線 11713）、Ultravox「冷得簡樸、疏離」是 Ure 自述（研究 e 組）、Berlin 白金時序 1993（標時序）。單曲／專輯排行（英國、德國、Billboard Dance Club Songs）是銷售榜，不是媒體年終榜，保留。無「據說／據傳」、無資料平台名。qa-batch out、qa-check-research、fix-spacing 全過。
 - **11716-P**：上線（2026-10-22）：card_catalog 12／12、KV 13 鍵回讀逐字一致、靜態試聽 10＋負面 2（DIN A Testbild、Trans-X：Apple 只有重錄／他盤，曲目對不上原盤）、seed +12、published gate 0 error。封面 CAA 11、Apple 1（Psyche：CAA front-250 連續 500），上線前 live-check 全 200。冷門軸覆寫 3 張（達明一派II 2、DIN A Testbild 3、Interplay 3，§0.8）。跨分支 seed 去重 0。
 - **11717-M**：上線當天情緒評分（`batch-progress/mood-axes/score-mc9/`，一支 Opus 照 BRIEF 含 10-22 兩條新規則、不上網）：conf mid 6／low 6。**落冷冽 9／12（75%）**；出格 3 張全是**能量判靜落平靜**：Camouflage《Methods of Silence》2.7（更慢更抒情）、Twice a Man 2.6（節奏鬆慢）、達明一派II 2.9（快慢參半）。質地與色溫全部守住（y −0.6～0.4、z −1.5～−0.4）——研究層把樂團編制的 13 張汰掉後，判重的風險確實沒出現；剩下的風險是中速 synth 的 x，與第一輪教訓一致（評分 x 比策展估值平均低 0.5）。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+John Foxx and the Maths、Camouflage、DIN A Testbild、Trans-X、Psyche、Berlin、Twice a Man（7 位；其餘藝人已有介紹或已在排隊）。

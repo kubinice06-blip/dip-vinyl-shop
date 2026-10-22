@@ -103,3 +103,9 @@
   - `desc2:Recoil|Liquid`：第二句「開車的是 Recoil 的 Alan Wilder」→「開車的是以 Recoil 之名做電子音樂的 Alan Wilder」——開頭兩句要讓不懂的人知道是誰（樂種）；寫作層已回報這個缺口。不新增專名（Depeche Mode 留在 Unsound Methods 那張），研究／hooks 不必改。228 字。
   - `desc2:PJ Harvey|Is This Desire?`：「她在英國最大的單曲」→「她在英國排名最高的單曲」——研究 c 組的 facts 指的是單曲榜名次，「最大」會被讀成銷量。
   - 抽核：Scorn 各盤廠牌（Earache→KK／Invisible→Hymen，主線 17393）、Plan B「第八張錄音室專輯」（研究 b 組，維基）、Lull《Journey》廠牌 Sentrax 與 Earache 授權（研究 d 組）、Archive《Lights》法國榜 15、《Controlling Crowds》法國榜 7 是銷售榜不是媒體榜（保留）、Life Cycle「評者從中聽出恐懼、死亡與個體的渺小」是內容描述非褒貶（保留）。無媒體名、無媒體年終榜、無「據說／據傳」、無資料平台名。qa-batch out、qa-check-research（兩檔 0 標記）、fix-spacing 全過。
+
+- **17396-P**：上線（2026-10-22）：card_catalog 23／23、KV 23 鍵回讀逐字一致、靜態試聽 20＋負面 3（Vex'd《Cloud Seed》、Scorn《Logghi Barogghi》、Lull《Continue》Apple 查無原盤）；人工指定 2 張：PJ Harvey 原盤 us 1440912742（自動候選是 2020 Demos 版）、Archive《Lights》us 1360590125（正規 11 軌）。seed +23、published gate 0 error。封面 23 張全 CAA，上線前 live-check 全 200、主線縮圖表目視全對。跨分支 seed 與並行批卡單（mc6、ml5、md10、ml6）去重 0。
+- **17397-M**：上線當天情緒評分（`batch-progress/mood-axes/score-md9/`，一支 Opus 照 BRIEF 含 10-22 兩條新規則、不上網）：conf high 2／mid 14／low 7。**落頹靡 23／23（100%）**。Scorn 三張評 x 2.4–2.6（有拍無失真攻擊，照新規則判靜）、Anika《Change》y +1.0 貼邊、PJ Harvey x 2.6。研究層汰掉的 13 張（兇拍、暖靈魂／爵士放克、乾淨輕盈）若留下，按聲音大概率出格。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Anika、DJ Spooky、Emika、Ghostpoet、Recoil、Young Echo（6 位；其餘藝人已有介紹或已在排隊）。
