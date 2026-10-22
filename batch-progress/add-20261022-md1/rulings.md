@@ -15,3 +15,10 @@
 - 研究層特別要核的聲音存疑：Lawrence English《Kiri No Oto》、Abul Mogard 兩張（z −0.9，合成器霧是否偏暖）、Kali Malone《Living Torch》（y 1.0，銅管合成器是否夠「重」）、loscil 兩張（拍稀但有脈動）、Tim Hecker《No Highs》（合成器脈動）。
 - 同組順序：md2 策展先交件、先開研究；md1 研究在 md2 研究交件後派（同時代理 ≤6）。
 
+
+## 研究 a 組
+- 10681　Lustmord《Heresy》廠牌：MB／Discogs 1990 首發全是 Soleilmoon（SOL 9），查無 Side Effects 版；推翻卡單 label，建議卡面改 Soleilmoon Recordings。
+- 10682　Deathprod《Treetop Drive》廠牌：1994 首發是 Metal Art Disco MAD 004，Rune Grammofon 2004 才發 4CD 盒裝；推翻卡單 label，建議改 Metal Art Disco。
+- 10683　聲音存疑（輕）：Monstrous Soul（刮擦／脈動無來源）、Prospectus I（Andersson 手法含打擊演奏）、Morals and Dogma（弦樂／鋸琴／簧風琴偏木質，z 可能偏溫）、Treetop Drive（磁帶回聲小提琴）、Permafrost（部分曲目偏水感溫潤）。存疑（中）：In Sadness, Silence and Solitude（Discogs 風格含 Tribal）。
+- 10684　In Sadness 查無可靠聲音描述，status 標 thin；Permafrost 未證實用鑼（鑼是前作 Nunatak Gongamur），facts 不寫成本張。
+- 10685　Wikipedia 於本環境多半被限流，改以 MB／Discogs API、廠牌／作者 Bandcamp、Fact、Igloo、Smalltown Supersound 為主。
