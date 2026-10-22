@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-22｜dip-vinyl-shop｜「就這張」特效改版：線框飛到整個螢幕、掃描出一螢幕的專輯畫面、再無縫過渡成專輯資訊頁
+
+- **改動**（店主：「先飛出來剛好全螢幕的大小，掃描線揭露專輯時也是剛好螢幕大小，揭露之後再無縫漸變放大成專輯資訊」）：`dip-tune.js` 的 `warpStart` 重寫——線框飛到視窗大小（留 8px 邊）；揭露的是一層黑底覆蓋畫面（大封面＋藝人／專輯名／年份，骨架線量這四個元素）；揭露完 `land(cardEl)` 用 FLIP 把封面與三行文字各自平移縮放到真卡裡 `.quiz-result-cover`／`-artist`／`-album`／`-year` 的位置，黑底同時淡成白頁，真卡其餘資訊淡入，最後拆掉覆蓋層。API：`setCover(url)`（封面到了先放）、`reveal()`（等封面載好最多 1.5 秒→骨架→閃白→掃描）、`land(cardEl)`、`cancel()`。`index.html` onResult 改成 `setCover`→`await reveal()`→切結果頁（卡先 opacity 0）→`await land`。`dip-tune.js?v=8`。
+- **主要檔案**：`dip-tune.js`、`index.html`
+- **驗證**：本機 Playwright 桌機／手機：掃描中截圖確認一螢幕大封面畫面、結束後覆蓋層拆掉、卡 opacity 還原、同頻率再抽一張正常；0 pageerror。
+
 ### 2026-10-22｜dip-vinyl-shop｜情緒薄格策展線第 2 輪 md9／mc9：冷 trip-hop 23＋80s synth-pop 12 張上線，落格 23/23、9/12
 
 - **內容**：店主「三個薄格各補到約 2,000；第 2 輪收窄到大場景、3 個工作階段並行」，本工作階段負責 md9、mc9。md9（`add-20261022-md9`，冷 trip-hop／Bristol 二線＋暗 R&B）：Archive 4、Scorn 4、Lull 2、Anika 2、Roly Porter 2、Recoil 2、Vex'd、DJ Spooky、Emika、PJ Harvey《Is This Desire?》、Ghostpoet、Bohren《Dolores》、Young Echo。mc9（`add-20261022-mc9`，80s synth-pop 二線＋new wave 冷盤＋港台日 synth-pop）：Visage、Front 242《Geography》、John Foxx and the Maths、達明一派II、Camouflage 2、DIN A Testbild、Trans-X、Psyche、Berlin、Twice a Man、Ultravox《Rage in Eden》。兩批場景都挖不到 45，照實上架。

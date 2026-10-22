@@ -283,14 +283,24 @@
       o.connect(g).connect(a.destination); o.start(t); o.stop(t + 0.2);
     }
   }
-  function warpStart({ color = '#5ee6f0', from = null } = {}) {
+  function warpStart({ color = '#5ee6f0', from = null, artist = '', album = '', year = '' } = {}) {
     const RM = global.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
     const easeOut = t => 1 - Math.pow(1 - t, 3);
     const { W, H } = warpCanvasEl(); const ctx = warpCtx;
-    const FLY = 900, SNAP = 180, SKEL = 320, FLASH = 120, REVEAL = 480, OUT = 240;
-    // 飛行目標先用結果頁卡片的大概位置（內容寬最多 560、頂欄約 50px），真卡量到再貼過去
-    const cw = Math.min(560, W), guess = { x: (W - cw) / 2 + 20, y: 50 + 32, w: cw - 40, h: Math.min(H - 110, (cw - 40) * 1.55) };
-    let rect = guess, target = guess, snapFrom = null, snapT0 = 0, shapes = [], cardEl = null, phase = 'fly', t0 = performance.now(), landT0 = 0, trails = [], raf = 0, done = null, backdrop = from ? 0 : 1, cancelled = false;
+    const FLY = 900, SKEL = 320, FLASH = 120, REVEAL = 520, HOLD = 160, MORPH = 520, FADE = 220;
+    // 一、線框飛到「剛好一個螢幕」的大小
+    const R = { x: 8, y: 8, w: W - 16, h: H - 16 };
+    // 二、揭露的是一張剛好一螢幕的專輯畫面：大封面＋藝人／專輯／年份（黑底，與星圖同世界）
+    const intro = document.createElement('div');
+    intro.style.cssText = 'position:fixed;inset:0;z-index:2147482999;background:#060609;color:#e9e2c8;display:grid;place-content:center;justify-items:center;gap:10px;padding:24px;box-sizing:border-box;font-family:ui-monospace,"SF Mono",Menlo,Consolas,"Courier New",monospace;text-align:center;pointer-events:none;clip-path:inset(0 0 100% 0);-webkit-clip-path:inset(0 0 100% 0)';
+    const side = Math.round(Math.min(W - 48, H * 0.56));
+    const cover = document.createElement('img'); cover.alt = ''; cover.style.cssText = `width:${side}px;height:${side}px;object-fit:cover;display:block;border:1px solid rgba(233,226,200,.25);background:#111;transform-origin:0 0`;
+    const ph = document.createElement('div'); ph.style.cssText = `width:${side}px;height:${side}px;display:none;place-items:center;border:1px solid rgba(233,226,200,.25);color:#6a7058;font-size:12px;transform-origin:0 0`; ph.textContent = '沒有封面';
+    const mk = (txt, css) => { const d = document.createElement('div'); d.textContent = txt; d.style.cssText = css + ';transform-origin:0 0;white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis'; return d; };
+    const tArtist = mk(artist, `font-size:15px;letter-spacing:.06em;color:${color};margin-top:6px`), tAlbum = mk(album, 'font-size:22px;font-weight:700;line-height:1.4'), tYear = mk(year ? String(year) : '', 'font-size:13px;letter-spacing:.14em;color:#8d9478');
+    intro.append(cover, ph, tArtist, tAlbum, tYear); document.body.appendChild(intro);
+    let hasCover = false; cover.style.display = 'none'; ph.style.display = 'grid';
+    let shapes = [], phase = 'fly', t0 = performance.now(), pt0 = 0, trails = [], raf = 0, cancelled = false, backdrop = from ? 0 : 1, revealDone = null;
     const origin = from || { x: W / 2, y: H / 2 };
     const quad = (p, tr, breathe) => {
       const cx = origin.x + (tr.x + tr.w / 2 - origin.x) * p, cy = origin.y + (tr.y + tr.h / 2 - origin.y) * p;
@@ -299,6 +309,13 @@
       return { pts };
     };
     const strokeQuad = (q, alpha, width, glow) => { ctx.save(); ctx.globalAlpha = alpha; ctx.lineWidth = width; ctx.strokeStyle = glow ? color : '#fff'; if (glow) { ctx.shadowColor = color; ctx.shadowBlur = 14; } ctx.beginPath(); q.pts.forEach(([x, y], i) => i ? ctx.lineTo(x, y) : ctx.moveTo(x, y)); ctx.closePath(); ctx.stroke(); ctx.restore(); };
+    // 骨架線＝揭露畫面裡那四個元素的實際位置（封面方框、三條文字線）
+    const measureIntro = () => {
+      const rel = n => { const q = n.getBoundingClientRect(); return { u0: (q.left - R.x) / R.w, v0: (q.top - R.y) / R.h, u1: (q.right - R.x) / R.w, v1: (q.bottom - R.y) / R.h, w: q.width, h: q.height }; };
+      shapes = [];
+      const c = hasCover ? cover : ph; const cq = rel(c); shapes.push({ t: 'rect', u0: cq.u0, v0: cq.v0, u1: cq.u1, v1: cq.v1 });
+      for (const n of [tArtist, tAlbum, tYear]) { const q = rel(n); if (q.w < 4 || q.h < 4) continue; shapes.push({ t: 'line', u0: q.u0, u1: q.u1, v: (q.v0 + q.v1) / 2 }); }
+    };
     const skeleton = (q, alpha, draw) => {
       if (!shapes.length) return; const [a, b, c, d] = q.pts;
       const P = (u, v) => { const top = [a[0] + (b[0] - a[0]) * u, a[1] + (b[1] - a[1]) * u], bot = [d[0] + (c[0] - d[0]) * u, d[1] + (c[1] - d[1]) * u]; return [top[0] + (bot[0] - top[0]) * v, top[1] + (bot[1] - top[1]) * v]; };
@@ -309,59 +326,75 @@
       ctx.stroke(); ctx.restore();
     };
     const scanlines = (alpha) => { if (alpha <= 0) return; ctx.save(); ctx.globalAlpha = alpha * 0.28; ctx.fillStyle = '#000'; for (let y = 0; y < H; y += 3) ctx.fillRect(0, y, W, 1); ctx.restore(); };
-    const measure = (el) => {
-      const r = el.getBoundingClientRect(); rect = { x: r.left, y: r.top, w: r.width, h: r.height };
-      const rel = n => { const q = n.getBoundingClientRect(); return { u0: (q.left - r.left) / r.width, v0: (q.top - r.top) / r.height, u1: (q.right - r.left) / r.width, v1: (q.bottom - r.top) / r.height, w: q.width, h: q.height }; };
-      shapes = [];
-      el.querySelectorAll('img, .quiz-result-artist, .quiz-result-album, .quiz-result-year, .album-ratings-slot > *, .quiz-tier-slot > *, .gp-match-note, .quiz-result-reason, .streaming-btn, .quiz-collect-btn, .quiz-share-btn, .quiz-another-btn, .quiz-retry-btn, .gt-back-top, [data-gp-action="preview"]').forEach(n => {
-        if (shapes.length > 48) return; const q = rel(n); if (q.w < 4 || q.h < 4 || q.v0 > 1 || q.v1 < 0) return;
-        const boxy = n.tagName === 'IMG' || n.tagName === 'BUTTON' || n.tagName === 'A' || q.h > 60;
-        shapes.push(boxy ? { t: 'rect', u0: q.u0, v0: q.v0, u1: q.u1, v1: q.v1 } : { t: 'line', u0: q.u0, u1: q.u1, v: (q.v0 + q.v1) / 2 });
-      });
-    };
     const clear = () => { ctx.clearRect(0, 0, W, H); if (backdrop > 0) { ctx.save(); ctx.globalAlpha = backdrop; ctx.fillStyle = '#060609'; ctx.fillRect(0, 0, W, H); ctx.restore(); } };
-    const finish = () => { cancelAnimationFrame(raf); if (cardEl) { cardEl.style.clipPath = ''; cardEl.style.webkitClipPath = ''; } if (warpCanvas) { ctx.clearRect(0, 0, W, H); warpCanvas.style.display = 'none'; } if (done) done(); };
+    const clipIntro = pct => { const v = `inset(0 0 ${pct.toFixed(2)}% 0)`; intro.style.clipPath = v; intro.style.webkitClipPath = v; };
+    const teardown = () => { cancelAnimationFrame(raf); if (warpCanvas) { ctx.clearRect(0, 0, W, H); warpCanvas.style.display = 'none'; } intro.remove(); };
     if (!RM && state.audioOn) warpSound('sweep', FLY / 1000);
     function frame(now) {
       if (cancelled) return;
       const e = now - t0;
-      if (phase === 'fly') { // 飛到大概位置，還沒拿到資料就在那裡呼吸等著
-        const p = easeOut(Math.min(1, e / FLY)); const breathe = e > FLY ? 1 + 0.015 * Math.sin((e - FLY) / 180) : 1;
-        clear(); const q = quad(p, guess, breathe); trails.push(q); if (trails.length > 7) trails.shift();
+      if (phase === 'fly') { // 飛到整個螢幕，資料還沒到就在那裡呼吸等
+        const p = easeOut(Math.min(1, e / FLY)); const breathe = e > FLY ? 1 + 0.006 * Math.sin((e - FLY) / 180) : 1;
+        clear(); const q = quad(p, R, breathe); trails.push(q); if (trails.length > 7) trails.shift();
         trails.forEach((tq, i) => strokeQuad(tq, 0.08 + 0.12 * i / trails.length, 1, false)); strokeQuad(q, 1, 2, true);
-      } else if (phase === 'snap') { // 貼到真卡的位置
-        const p = easeOut(Math.min(1, (now - snapT0) / SNAP)); clear();
-        const lerpQ = { pts: snapFrom.pts.map(([x, y], i) => { const [tx, ty] = quad(1, rect).pts[i]; return [x + (tx - x) * p, y + (ty - y) * p]; }) };
-        strokeQuad(lerpQ, 1, 2, true); if (p >= 1) { phase = 'skel'; landT0 = now; }
-      } else if (phase === 'skel') { // 畫骨架
-        const p = Math.min(1, (now - landT0) / SKEL); clear(); const q = quad(1, rect); strokeQuad(q, 1, 2, true); skeleton(q, 1, p);
-        if (p >= 1) { phase = 'flash'; landT0 = now; warpSound('land'); }
+      } else if (phase === 'skel') { // 黑底、畫骨架
+        const p = Math.min(1, (now - pt0) / SKEL); backdrop = 1; clear(); const q = quad(1, R); strokeQuad(q, 1, 2, true); skeleton(q, 1, p);
+        if (p >= 1) { phase = 'flash'; pt0 = now; warpSound('land'); }
       } else if (phase === 'flash') {
-        const p = Math.min(1, (now - landT0) / FLASH); clear(); const q = quad(1, rect); strokeQuad(q, 1, 2 + (1 - p) * 3, true); strokeQuad(q, 1 - p, 1, false); skeleton(q, 1 - p, 1); scanlines(p);
-        if (p >= 1) { phase = 'reveal'; landT0 = now; }
-      } else if (phase === 'reveal') { // 掃描線由上往下掃出真卡；黑底同時淡掉，露出結果頁
-        const p = Math.min(1, (now - landT0) / REVEAL); backdrop = 1 - p; clear();
-        if (cardEl) { const cp = `inset(0 0 ${(100 - p * 100).toFixed(2)}% 0)`; cardEl.style.clipPath = cp; cardEl.style.webkitClipPath = cp; }
-        const q = quad(1, rect), y = rect.y + rect.h * p; strokeQuad(q, 1 - p * 0.7, 2, true); scanlines(1 - p);
-        if (y > -10 && y < H + 10) { ctx.save(); ctx.strokeStyle = '#fff'; ctx.shadowColor = color; ctx.shadowBlur = 16; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(rect.x - 6, y); ctx.lineTo(rect.x + rect.w + 6, y); ctx.stroke(); ctx.restore(); }
-        if (p >= 1) { phase = 'out'; landT0 = now; if (cardEl) { cardEl.style.clipPath = ''; cardEl.style.webkitClipPath = ''; } }
-      } else if (phase === 'out') {
-        const p = Math.min(1, (now - landT0) / OUT); clear(); strokeQuad(quad(1, rect), 1 - p, 2, true);
-        if (p >= 1) { finish(); return; }
-      }
+        const p = Math.min(1, (now - pt0) / FLASH); clear(); const q = quad(1, R); strokeQuad(q, 1, 2 + (1 - p) * 3, true); strokeQuad(q, 1 - p, 1, false); skeleton(q, 1 - p, 1); scanlines(p);
+        if (p >= 1) { phase = 'reveal'; pt0 = now; backdrop = 0; }
+      } else if (phase === 'reveal') { // 掃描線由上往下掃出一螢幕的專輯畫面（intro 自己是黑底，畫布不再蓋黑）
+        const p = Math.min(1, (now - pt0) / REVEAL); clear(); clipIntro(100 - p * 100);
+        const q = quad(1, R), y = R.y + R.h * p; strokeQuad(q, 1, 2, true); scanlines(1 - p);
+        ctx.save(); ctx.strokeStyle = '#fff'; ctx.shadowColor = color; ctx.shadowBlur = 16; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(R.x - 6, y); ctx.lineTo(R.x + R.w + 6, y); ctx.stroke(); ctx.restore();
+        if (p >= 1) { phase = 'hold'; pt0 = now; clipIntro(0); }
+      } else if (phase === 'hold') {
+        const p = Math.min(1, (now - pt0) / HOLD); clear(); strokeQuad(quad(1, R), 1 - p, 2, true);
+        if (p >= 1) { phase = 'wait'; clear(); if (revealDone) revealDone(); }
+      } else { return; }
       raf = requestAnimationFrame(frame);
     }
     if (!RM) raf = requestAnimationFrame(frame);
-    return {
-      // 卡渲染好、還沒切到結果頁：先把卡藏起來（整張剪掉），切頁後才不會先閃一下
-      prepare(el) { cardEl = el; if (!RM && el) { el.style.clipPath = 'inset(0 0 100% 0)'; el.style.webkitClipPath = 'inset(0 0 100% 0)'; backdrop = 1; clear(); strokeQuad(quad(easeOut(Math.min(1, (performance.now() - t0) / FLY)), guess), 1, 2, true); } },
-      // 結果頁已顯示：量真卡、貼過去、骨架、掃描；回傳完成的 Promise
-      land(el) {
-        cardEl = el || cardEl;
-        return new Promise(res => { done = res; if (RM || !cardEl) { finish(); return; } measure(cardEl); const now = performance.now(); backdrop = 1; snapFrom = quad(easeOut(Math.min(1, (now - t0) / FLY)), guess); snapT0 = now; phase = 'snap'; });
+    const api = {
+      // 封面網址到了就放進揭露畫面（可能比卡渲染早）
+      setCover(url) { if (!url) return; hasCover = true; cover.src = url; cover.style.display = 'block'; ph.style.display = 'none'; },
+      // 卡資料到了：等封面載好（最多 1.5 秒）→ 骨架 → 閃白 → 掃描揭露；回傳揭露完成的 Promise
+      reveal() {
+        return new Promise(res => {
+          if (RM || cancelled) { res(); return; }
+          const go = () => { if (cancelled) { res(); return; } measureIntro(); revealDone = res; phase = 'skel'; pt0 = performance.now(); };
+          if (hasCover && !cover.complete) { let done = false; const once = () => { if (!done) { done = true; go(); } }; cover.addEventListener('load', once, { once: true }); cover.addEventListener('error', once, { once: true }); setTimeout(once, 1500); } else go();
+        });
       },
-      cancel() { cancelled = true; finish(); },
+      // 三、結果頁已顯示（還沒看得到）：封面與三行文字各自飛到真卡的位置、黑底淡成白頁、其餘資訊淡入
+      land(cardEl) {
+        return new Promise(res => {
+          if (RM || cancelled || !cardEl) { teardown(); if (cardEl) cardEl.style.opacity = ''; res(); return; }
+          const pairs = [[hasCover ? cover : ph, cardEl.querySelector('.quiz-result-cover')], [tArtist, cardEl.querySelector('.quiz-result-artist')], [tAlbum, cardEl.querySelector('.quiz-result-album')], [tYear, cardEl.querySelector('.quiz-result-year')]];
+          const moves = [];
+          for (const [src, dst] of pairs) {
+            const a = src.getBoundingClientRect(); if (a.width < 1) continue;
+            if (!dst) { moves.push([src, null]); continue; }
+            const b = dst.getBoundingClientRect(); if (b.width < 1 || b.height < 1) { moves.push([src, null]); continue; }
+            const isImg = src === cover || src === ph;
+            const sx = isImg ? b.width / a.width : b.height / a.height, sy = isImg ? b.height / a.height : b.height / a.height;
+            // 文字等比縮放，水平對齊到目標的中心
+            const dx = isImg ? b.left - a.left : (b.left + b.width / 2) - (a.left + a.width / 2 * sx), dy = b.top - a.top;
+            moves.push([src, `translate(${dx}px,${dy}px) scale(${sx},${sy})`]);
+          }
+          cardEl.style.opacity = '0'; cardEl.style.transition = `opacity ${FADE}ms ease`;
+          intro.style.transition = `background-color ${MORPH}ms ease`;
+          requestAnimationFrame(() => {
+            intro.style.backgroundColor = 'rgba(6,6,9,0)';
+            for (const [src, tf] of moves) { src.style.transition = `transform ${MORPH}ms cubic-bezier(.2,.8,.2,1), opacity ${FADE}ms ease`; if (tf) src.style.transform = tf; else src.style.opacity = '0'; }
+            setTimeout(() => { cardEl.style.opacity = '1'; for (const [src] of moves) src.style.opacity = '0'; }, MORPH - 60);
+            setTimeout(() => { teardown(); cardEl.style.opacity = ''; cardEl.style.transition = ''; res(); }, MORPH + FADE);
+          });
+        });
+      },
+      cancel() { cancelled = true; teardown(); },
     };
+    return api;
   }
 
   // ── 滾筒與讀數 ──────────────────────────────────────────────────────

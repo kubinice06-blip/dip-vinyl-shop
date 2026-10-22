@@ -1070,7 +1070,7 @@
 <script src="dip-player.js?v=49"></script>
 <script src="dip-draw-anim.js?v=4"></script>
 <script src="dip-genre-tree.js?v=5"></script>
-<script src="dip-tune.js?v=7"></script>
+<script src="dip-tune.js?v=8"></script>
 <script src="dip-artist-intro.js?v=2"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -5883,7 +5883,7 @@ ${seenList}
       _tuneWarp?.cancel();
       const warpColor = DipTune.CELL_COLOR?.[cell] || '#888';
       const appVisible = !document.getElementById('tuneApp').hidden;
-      const warp = _tuneWarp = DipTune.warpStart({ color: warpColor, from: appVisible ? DipTune.litScreenPos() : null });
+      const warp = _tuneWarp = DipTune.warpStart({ color: warpColor, from: appVisible ? DipTune.litScreenPos() : null, artist: card.artist, album: card.album, year: releaseYearOf(card.artist, card.album) || card.year || '' });
       if (!appVisible) { tuneShowApp(false); window.scrollTo(0, 0); }
       host.innerHTML = '';
       const st = window.DipPreviewStatus?.[cardIdOf(card.artist, card.album)] || '';
@@ -5909,8 +5909,12 @@ ${seenList}
         _matchNote: note, _mode: 'tune', _streaming: true,
       });
       if (seq !== _tuneSeq) { warp.cancel(); return; }
+      // 揭露的是一螢幕大的專輯畫面（覆蓋層），揭露完才把結果頁切出來、封面與文字各自飛到真卡的位置
+      warp.setCover(assets.coverUrl);
+      await warp.reveal();
+      if (seq !== _tuneSeq) { warp.cancel(); return; }
       const cardEl = host.querySelector('.quiz-result');
-      warp.prepare(cardEl);
+      if (cardEl) cardEl.style.opacity = '0';
       tuneShowApp(false);
       window.scrollTo(0, 0);
       await warp.land(cardEl);
