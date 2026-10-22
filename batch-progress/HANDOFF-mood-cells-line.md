@@ -14,6 +14,8 @@
 | md2 | slowcore／sadcore 二線＋dark jazz | 頹靡 | ✅ 2026-10-22 上線 45；落頹靡 41/45＝91.1%（4 張乾編制 sadcore 落平靜：Arab Strap ×2、Germano、Songs: Ohia） |
 | md3 | darkwave／goth 慢盤＋無鼓 drone metal／funeral doom | 頹靡 | ✅ 2026-10-22 上線 45；落頹靡 44/45＝97.8%（Ulver《Shadows of the Sun》弦樂＋鋼琴判輕落平靜） |
 | md4 | 暗色嘻哈／cloud rap／暗 R&B＋dub techno＋亞洲 | 頹靡 | ✅ 2026-10-22 上線 43（候補挖不到 45）；落頹靡 39/43＝90.7%（Tirzah、HTDW、sogumm 色溫判微溫落恍惚；The Bug vs Earth 兇＋拍落亢奮） |
+| md7 | 冷調 post-rock／鼓少器樂＋冷配樂＋無鼓吉他 drone | 頹靡 | ✅ 2026-10-22 上線 41（場景挖不到 45）；落頹靡 35/41＝85.4%（乾淨鋼琴弦樂配樂與 Labradford 後期判輕落平靜 5、Silver Wheel 色溫中性落恍惚 1） |
+| md8 | dub techno／ambient techno 三線（Silent Season、Echocord、Chain Reaction 系） | 頹靡 | ✅ 2026-10-22 上線 41（研究層汰 15、讓 Köner 2 張給 md6）；落頹靡 40/41＝97.6%（Purl《Stillpoint》色溫中性落恍惚） |
 | mc1–mc4 | 冷冽線（minimal synth／coldwave、post-punk／no wave、冷爵士、當代古典＋亞洲 synth-pop） | 冷冽 | 待寫 `CUR-DISPATCH-mc.md`（場景見計畫 §2.3） |
 | ml1–ml4 | 恍惚線（lovers rock／roots、暖 shoegaze／dream pop、beats／dusty 饒舌、東亞恍惚） | 恍惚 | 待寫 `CUR-DISPATCH-ml.md`（場景見計畫 §2.2；質地尺改判後 dream pop／neo-soul 命中率升到 40%+） |
 
@@ -64,3 +66,4 @@
 - md3／md4 實跑（2026-10-22）：研究層汰 md3 7 張（真鼓＋兇：Rundle ×2、Chelsea Wolfe《Ἀποκάλυψις》、Cindytalk、Locrian、Okovi；Eurodisco：Medusa）、md4 9 張（拍子推進：Revelator、False Idols、The Ooz、King Night、秘神、Topdown；暖：Will I Dream；輕：腰；無來源：BONES），各回頭叫原策展代理補 7–10 張候補（SendMessage 續跑同一支，不用重讀派工）、再派一支補研究 append 進各組檔。**md4 暗 R&B 的色溫是最大風險**（出格 4 張有 3 張是色溫判微溫），下一輪同場景只挑明顯陰冷的，lo-fi R&B 不要再提。有鼓的 goth／darkwave（Zola Jesus、Chelsea Wolfe《Pain Is Beauty》、Anna von Hausswolff）評分都留在靜，鼓機推進但無攻擊性照新規則確實判靜。
 - 同時開兩個工作階段各跑兩批會撞：`ar-d-137` 兩邊都切（本線改切 `ar-d-138`）、`build-priors.mjs` 來源層各加一行（兩行都留）、`seed_cards.json`／`card-preview-status.js`／`data/apple-audio-map-v1.json` 兩邊都 append（取 main 版再對自己的 manifest 重跑 `--write-preview`／`--write-pool`，腳本會略過已有的列）、`genre-l3-artist-map.json` JSON 層合併、樹／抽卡封面／mood 檔全部重建。`cut-artist-intros-md.mjs` 接批名參數、冪等。
 - mc1／mc2 實跑（2026-10-22，冷冽線第一輪）：冷冽線的研究汰換率遠高於頹靡線——mc1 策展 47 汰到 22（研究層一查就偏暖／偏厚：樂團後期往 pop 或擴編走的盤）、mc2 31 汰到 15。落格 mc1 17/22（77%）、mc2 8/15（53%）。**評分對「吉他＋鼓機」冷浪潮與 post-punk 的 y 比策展估高 0.6–1.0（BRIEF 表 post-punk＝+1），中速 minimal synth 的 x 比估值低 0.3–0.4**；冷冽線策展邊距建議 x ≥ 3.6、有失真吉他的一律 y 估 +0.3 起跳。吉他樂團場景（mc21 post-punk revival）預期低命中，優先排電子類。
+- md7／md8 實跑（2026-10-22）：**跨工作階段撞卡**——md8 候補時對 origin 各分支去重為 0，但 md6 之後才收進同兩張（Thomas Köner《Kaamos》《Aubrite》），上線時 KV／card_catalog 互蓋。**寫 card_catalog／KV 前再對 origin 所有 `claude/*` 分支的 seed 跑一次去重**（`git show <br>:seed_cards.json`）；撞了就讓給場景正位的那批，並用對方 manifest 重推 card_catalog 與 KV（`publish-manifest` 乾跑產 patches → `push-card-catalog-patches` → `kv-from-manifest` → bulk put → `verify-wave-kv`）。冷調 post-rock／配樂場景的風險在**質地**（乾淨鋼琴弦樂配樂判輕落平靜），不在能量；dub techno 三線研究層汰 15 張（暖 reggae 人聲、new age、舞池拍、EP）後落格 98%。CAA 原圖常連續 500：rg `front-500`、release `-500.jpg` 也可能同時 500，最後改 Apple 官方圖。
