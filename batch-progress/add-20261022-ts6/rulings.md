@@ -14,6 +14,18 @@
 - Death in June：派工單點名，收《Nada!》《But, What Ends…》兩張音樂史地位明確的；寫作層寫音樂與歷史，政治爭議照事實一句帶過即可，不迴避也不渲染。
 - 策展層自報待核：Forseti《Windzeit》廠牌、Fire + Ice《Gilded by the Sun》廠牌（策展憑記憶）、Ordo Rosarius Equilibrio 同年前篇／續篇——交研究層逐條查。
 
+## 研究 a 組
+- **10601**　Death in June《Nada!》：策展層「neofolk 語彙成形的分水嶺」不成立——維基把本作歸為「對舞曲的調情」期，轉向木吉他是 1984《Burial》與 1992 之後；寫作層寫「保留民謠元素的偏舞曲過渡作」。Tibet 為 Discogs「未具名演出者」，具體分工未取得。首版棕／藍封面各 2000 張、B5 曲名封套與內袋不同（Crush My Love／Soul）可用。
+- **10602**　Death in June《But, What Ends…》：策展層「與 David Tibet 合作的木吉他時期代表作」錯——Discogs 署名與維基皆無 Tibet，其合作期為 1985《Nada!》至 1995《Rose Clouds of Holocaust》；寫作層不得寫他參與。四首改編自 People's Temple Choir 1973《He's Able》（Discogs＋維基兩源）。「neofolk 最高峰」無樂評來源，不採。
+- **10603**　Sol Invictus《Trees in Winter》：年份 MB／維基 1990、Discogs 1991-07、內冊 ©1990，維持 1990，正文避月份。策展層「早期定調之作」改為「Tursa 廠牌第一張」（樂團首張是 1988《Against the Modern World》）。Wakeford 曾加入國民陣線、2007 自陳後悔，一句帶過。
+- **10604**　Ordo Rosarius Equilibrio《Wedlock of Roses》：策展層「同年續篇」不成立——續篇《Wedlock of Equilibrium》（CMI.94）MB 2001-03-30，是隔年春天；本作 MB 2000-10-13（維基作品表寫 2001，不採）。「最受推崇」無來源，不寫。
+- **10605**　Forseti《Windzeit》：**卡單 label「Auerbach Tonträger」錯**——MB 與 Discogs 的 2002 年原版皆為 Goeart（另掛 Grunwald，GOEART IX），版本清單中沒有任何 Auerbach 版；主線改卡單廠牌為 Goeart。2025 Death Is a Drummer LP 為 Discogs 標「非官方」重發。Pearce 客座見維基兩處，Discogs 人員表無。
+- **10606**　Sonne Hagal《Helfahrt》：策展層「首張正規專輯」成立（德文維基列首張錄音室專輯，前為 EP／split）；英文維基把 2001 Sinister Practices 列 LP，寫作層用「第一張完整專輯」。成員刻意匿名。曲詞源（疑含 Blake）未取得，不寫。
+- **10607**　:Of the Wand & the Moon:《:Emptiness:Emptiness:Emptiness:》：策展層「公認最完整、最具代表性」無來源（維基反稱 2011《The Lone Descent》為傑作），不寫「代表作」；是第二張（首張 1999《Nighttime Nightrhymes》）。與同名丹麥歌手 Kim Larsen（Gasolin'）是不同人，正文須點明 Saturnus 出身。
+- **10608**　Rome《Flowers From Exile》：西班牙內戰題材維基／Brainwashed／onlydeathisreal 三處一致；「Reuter 家人曾參戰」只有 Brainwashed 一源且帶「supposedly」，寫作層帶「據說」或略。2025 重錄版《Revisited》是另一張，不混。
+- **10609**　Tenhi《Maaäet》：年份廠牌確認（Prophecy PRO 081，2006-02-10）；「第 N 張」因 mcd 與 Harmaa 名義算法不一，不寫序數。Salminen 1998–2008 主唱、Saarikko 1997 起唱，不寫「誰接任」。早期壓片小冊錯排（Discogs）可用。
+- **10610**　（預留未用）
+
 ## 研究 b 組
 - 10611 Fire + Ice《Gilded by the Sun》廠牌：策展層記 Fremdheit，查 Discogs master 39890 版本表，1992 年原版是 New European Recordings（BAD VC CD144），Fremdheit（FREMD CD 144）是 2004 年再版。建議卡單 label 改 New European Recordings（主線改）；正文不寫「首作」（來源未明寫）。
 - 10612 Infected Mushroom 兩張、Astral Projection、Juno Reactor 的發行日期各來源不一致（MB／Discogs／Wikipedia 差數日至數月），一律建議寫作層只寫年份或季節。
@@ -52,3 +64,8 @@
 - **10647**　Clovers：推翻策展層——曲目 14 首實際不含〈One Mint Julep〉〈Fool, Fool, Fool〉，且最新曲為 1956 年 3 月錄，非「1951–55」；Atlantic 1248（1956）、1957 重發 8009。
 - **10648**　Cadillacs《The Fabulous Cadillacs》：Jubilee JLP 1045、1957 確認。〈Speedoo〉單曲為 1955（Josie），LP 不為其錄製；Josie 與 Jubilee 關係查無來源，不寫。
 - **10649**　LaVern Baker：Atlantic 8007、1957、14 首確認。維基另列 1956《LaVern》，故不寫「首張 LP」。
+
+## 主線裁定（研究層交件後）
+- **10671**：照研究層推翻改卡單廠牌：Forseti《Windzeit》Auerbach Tonträger → Goeart（10601–10609 a 組，MB／Discogs 2002 原版 GOEART IX）；Fire + Ice《Gilded by the Sun》Fremdheit → New European Recordings（b 組，1992 原版 BAD VC CD144；Fremdheit 為 2004 再版）。年份皆不動。
+- **10672**：Rome「Reuter 家人曾參戰」單源且帶 supposedly——**不寫**（本線規則：不用「據說」）。研究層建議「帶據說或略去」一律取略去。
+- **10673**：序數衝突的卡（Fats Domino《This Is…》、Tenhi、LaVern Baker、Etnica、Vibrasphere）正文不寫序數；Carl Perkins 正文點明是 Sun 唱片的 rockabilly 歌手。
