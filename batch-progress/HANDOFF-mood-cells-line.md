@@ -7,10 +7,10 @@
 
 | 批 | 場景 | 目標格 | 狀態 |
 |---|---|---|---|
-| md1 | dark ambient／drone／工業 drone | 頹靡 | 策展派工已寫 |
-| md2 | slowcore／sadcore 二線＋dark jazz | 頹靡 | 策展派工已寫 |
-| md3 | darkwave／goth 慢盤＋無鼓 drone metal／funeral doom | 頹靡 | 策展派工已寫 |
-| md4 | 暗色嘻哈／cloud rap／暗 R&B＋dub techno＋亞洲 | 頹靡 | 策展派工已寫 |
+| md1 | dark ambient／drone／工業 drone | 頹靡 | ✅ 2026-10-22 上線 45；落頹靡 43/45＝95.6%（2 張落恍惚：Basinski、Belong 色溫判中性） |
+| md2 | slowcore／sadcore 二線＋dark jazz | 頹靡 | ✅ 2026-10-22 上線 45；落頹靡 41/45＝91.1%（4 張乾編制 sadcore 落平靜：Arab Strap ×2、Germano、Songs: Ohia） |
+| md3 | darkwave／goth 慢盤＋無鼓 drone metal／funeral doom | 頹靡 | ✅ 2026-10-22 上線 45；落頹靡 44/45＝97.8%（Ulver《Shadows of the Sun》弦樂＋鋼琴判輕落平靜） |
+| md4 | 暗色嘻哈／cloud rap／暗 R&B＋dub techno＋亞洲 | 頹靡 | ✅ 2026-10-22 上線 43（候補挖不到 45）；落頹靡 39/43＝90.7%（Tirzah、HTDW、sogumm 色溫判微溫落恍惚；The Bug vs Earth 兇＋拍落亢奮） |
 | mc1–mc4 | 冷冽線（minimal synth／coldwave、post-punk／no wave、冷爵士、當代古典＋亞洲 synth-pop） | 冷冽 | 待寫 `CUR-DISPATCH-mc.md`（場景見計畫 §2.3） |
 | ml1–ml4 | 恍惚線（lovers rock／roots、暖 shoegaze／dream pop、beats／dusty 饒舌、東亞恍惚） | 恍惚 | 待寫 `CUR-DISPATCH-ml.md`（場景見計畫 §2.2；質地尺改判後 dream pop／neo-soul 命中率升到 40%+） |
 
@@ -37,9 +37,15 @@
 11. PROJECT_MEMORY → 逐檔 git add → commit → push → 開 PR → 自己合併 → 退訂 PR。
 
 ## 三、坑（沿用薄細項線）
+- md1／md2 實跑（2026-10-22）：研究層聲音存疑是真的有用——md2 汰 7 張（鼓機／碎拍／synthwave）、md1 汰 4 張（KTL、Kreng、Desiderii、Hecker 有拍又兇），補位從 master 候補同位置替入、再派一支補研究 append 進各組檔（qa-batch 只認 a–e 五組，不要開第六組）。上線後評分 84/90 落格，遠高於預估；下一批可以把 45 張的 20% 汰換額度降到 10%。
+- 評分工單 `batch-progress/mood-axes/score-md/`（select／merge 仿 score-ts2；`build-priors.mjs` 來源層已加 `scored-md.json`），md3／md4 直接 `select.mjs <批>` 切 chunk、派 Opus 照 BRIEF 打分、`merge.mjs` → priors → scale v0 → `build-card-moods`。
+- 藝人介紹切批用 `cut-artist-intros.mjs`（已改成讀 `onboarding-manifest-add-2026102?-md?-*.json`，批序 md1→md4），md3／md4 上線後再跑一次會接著切 ar-d-138 起（冪等，roster 已有的鍵不重加）。
+- 乾編制 sadcore（Arab Strap、Lisa Germano、Songs: Ohia 那型）質地判輕落平靜；slowcore 要收霧狀 lo-fi／doomgaze 與 dark jazz 才落頹靡。
 - 容器會重啟：派工都加「每做完 N 筆寫檔」「已有內容就接續」；代理腳本放各自的 scratchpad 子資料夾。
 - `push-card-catalog-patches` 要吃 `publish-stage/<manifest 名>/card-catalog-patches.json`，不是 manifest。
 - Apple 專輯搜尋常回空：走 `entity=musicArtist` → `lookup?id=<artistId>&entity=album`。
 - 同名藝人上線前查 `data/artist-intros`（Carl Perkins 先例）。
 - 正文不點名資料平台、媒體名、媒體年度榜——寫作層仍會漏，主線審稿要掃。
 - 封面上線前 live-check（ts10／ts11 各換過 1–2 張 CAA 500）。
+- md3／md4 實跑（2026-10-22）：研究層汰 md3 7 張（真鼓＋兇：Rundle ×2、Chelsea Wolfe《Ἀποκάλυψις》、Cindytalk、Locrian、Okovi；Eurodisco：Medusa）、md4 9 張（拍子推進：Revelator、False Idols、The Ooz、King Night、秘神、Topdown；暖：Will I Dream；輕：腰；無來源：BONES），各回頭叫原策展代理補 7–10 張候補（SendMessage 續跑同一支，不用重讀派工）、再派一支補研究 append 進各組檔。**md4 暗 R&B 的色溫是最大風險**（出格 4 張有 3 張是色溫判微溫），下一輪同場景只挑明顯陰冷的，lo-fi R&B 不要再提。有鼓的 goth／darkwave（Zola Jesus、Chelsea Wolfe《Pain Is Beauty》、Anna von Hausswolff）評分都留在靜，鼓機推進但無攻擊性照新規則確實判靜。
+- 同時開兩個工作階段各跑兩批會撞：`ar-d-137` 兩邊都切（本線改切 `ar-d-138`）、`build-priors.mjs` 來源層各加一行（兩行都留）、`seed_cards.json`／`card-preview-status.js`／`data/apple-audio-map-v1.json` 兩邊都 append（取 main 版再對自己的 manifest 重跑 `--write-preview`／`--write-pool`，腳本會略過已有的列）、`genre-l3-artist-map.json` JSON 層合併、樹／抽卡封面／mood 檔全部重建。`cut-artist-intros-md.mjs` 接批名參數、冪等。
