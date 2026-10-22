@@ -26,3 +26,19 @@
 - 11443 dynArec 人物：Discogs 寫法籍、生於史特拉斯堡，策展層寫荷蘭 Hague 系，Hague 說法查無來源，facts 只寫 Discogs 說法並註明未獲第二來源。
 - 11444 聲音面證據極薄：九張只有 Lowfish《1000 Corrections》為 full（器材與錄音地有 Discogs 說明）；其餘皆 thin。WebSearch 用 2 次，Delsin 頁 503、Wikipedia 多數人物頁 404。
 - 11445 moodGuess 存疑（主線請試聽或汰換）：Optic Nerve 兩張（曲長 5–9 分鐘、Harp／Dream Mix、後期被評溫暖有靈魂，疑落恍惚）；Exos 兩張（父親 Octal 為 dub techno、Thule 圈、MB 標 minimal，疑中速克制，非快打）；The Hacker（曲長 5–8 分鐘、維基稱像 New Order，疑偏旋律）；Lowfish《Frozen & Broken》（曲長偏長、標 IDM）。輕度存疑：Lowfish 首張（synth-pop 標籤）、dynArec 兩張（無聲音來源）。
+
+## 研究 b 組
+- 11411：Rother《Art Is a Technology》moodGuess 嚴重存疑，建議汰換：Discogs 唯一風格 Ambient、英文維基列為 ambient 作品、11 段無曲名 Part I–XI，與「乾 electro 節拍」不符，疑落靜格。
+- 11412：AUX 88《Counterparts》與 Dynamik Bass System《The Mighty Machine》存疑（暖／厚低頻風險）：前者曲名〈Electro In Key Of Funk〉、自稱 techno-bass、至少一首有清唱版；後者廠牌 Dominance Electricity 自述 electrofunk／bass／technobreaks，曲名偏 funk／hip hop。兩張皆無樂評與 BPM 來源，status thin，請主線試聽把關。
+- 11413：Ectomorph《Stalker》存疑：Bandcamp 稱整張一兩次演奏現場錄成、不剪輯，現場演出無鼓機（模組＋Moog），曲長 6–8.5 分鐘；機械脈動與「快」無法證實，y 風險仍在。MB 除合輯外只有 EP，推測首張專輯但無來源明說，不寫成事實。
+- 11414：Rother 其餘五張（Sex With the Machines、Hacker、Popkiller、Super Space Model、Netzwerk der Zukunft）：「冷、重複、復古」有 RA 與維基佐證，但「快」皆無 BPM 來源；Popkiller 為 synthpop／neoelectro 混合、人聲份量較重，x／z 有往中間掉的風險。
+- 11415：日期矛盾：Sex With the Machines Bandcamp 1997-09-29 vs Discogs／MB 1997-11-01；Netzwerk der Zukunft Discogs 2014-07-01 vs MB 2014-04-29；寫作層只寫年份。Rother 出生地德維基內文（Friedberg）與 infobox（Frankfurt）矛盾，不寫。
+- 11416：標籤：卡單 AUX 88《Counterparts》label「Direct Beat」，Discogs 實為 Direct Beat Classics（母廠牌 Direct Beat），未視為推翻。其餘八張年份、廠牌、盤名核對一致，未推翻策展層。
+- 11417：WebSearch 用 3 次皆未找到逐張樂評；Discogs 與 MB API、Bandcamp、維基、RA、XLR8R、FAZEmag 為主。XLR8R 錄音室訪談為 Rother 工作方式泛述（年份不明），已在 facts 標明不特指該盤。status：full 3（Stalker、Sex With the Machines、Super Space Model）、thin 6。
+
+## 研究 c 組
+- 11421 c 組九張身分核對無誤（MB RG／Discogs 年份、廠牌、目錄號一致）；Rother 出生地 Discogs／de.wikipedia 寫 Friedberg，en.wikipedia 資訊框寫 Frankfurt，facts 取 Friedberg。
+- 11422 Ultradyne《Antartica》推翻策展層兩處：「唯一專輯」不成立（Discogs 有 Futurist 2000 等多張後續發行；IGLOO 2017 稱 first and only album，兩說衝突，鉤子勿寫「唯一」）；版本含糊——Pi Gao Movement PGM-001 原版是 12 吋 6 首約 28 分鐘（EP 長度），MP3.com CDr 與 2017 Exterminador 雙黑膠是 12 首。facts 兩版並列，卡上取哪版由主線定。
+- 11423 聲音面證據：full 僅 Rother（Bandcamp 完整器材與錄法）、Ultradyne（IGLOO：BPM 超過 150、失真鼓機）、Dixon（Forced Exposure／Gridface／Textura）；Silicon Scally 六張皆 thin（無單張樂評、無 BPM；僅 Discogs 風格標籤、曲長、藝人說明）。WebSearch 用 3 次。Bandcamp 部分頁面被擋（Client Challenge）。
+- 11424 moodGuess 存疑（主線請試聽或汰換）：Terrence Dixon《Train of Thought》高度存疑——Forced Exposure 稱含 Cybotron 式電子、精簡 techno、和弦溫暖的 house，Juno Daily／Textura 提爵士質地、顫音琴，曲長 4–6 分鐘，與「快、薄、乾」不符，建議汰換。Ultradyne《Antartica》中度存疑偏重——樂評明講鼓機失真、粗硬，易判重落亢奮（z 冷仍成立）。Silicon Scally《Field Lines》中度存疑——同廠牌前後作被稱 machine-funk，有中速與低沉合成器放克。Silicon Scally《Bioroid》中度存疑（無曲長、無樂評，僅 Electro 標籤）。其餘 Scally 四張與 Rother《3L3C7RO COMMANDO》輕度存疑（BPM 無來源、Rother 聲碼器人聲與憂鬱未來感）。
+- 11425 單一來源已在 notes 註明：Finlow 1993 Warp 首張（僅其 Bandcamp 自述）、Yore 首張完整專輯與 Juno「jazz-infused」（搜尋摘要，Forced Exposure 頁面直接擷取為空）、Dixon 與 Juan Atkins 合作 Skynet（僅 Gridface）、Psi49net 1998 創立（僅 Discogs）。
