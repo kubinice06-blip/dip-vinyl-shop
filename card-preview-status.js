@@ -3115,4 +3115,6 @@ window.DipPreviewStatus = Object.freeze({
   "rod modell|northern michigan snowstorms": "unavailable",
   "cv313|depths of perception : submerging waves": "unavailable",
   "rod modell|frequencies in the fog": "unavailable",
+  "din a testbild|programm 2": "unavailable",
+  "trans-x|living on video": "unavailable",
 });

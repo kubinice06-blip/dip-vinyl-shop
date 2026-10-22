@@ -75,3 +75,17 @@
 - **11698** 主線 11713 照辦：達明一派II note 寫「第一張全長專輯」、廠牌寶麗金旗下 Philips；Front 242 → New Dance、DIN A → Innovative Communication、Trans-X → ATCO／Mirage、Psyche → New Rose、Twice a Man → Silence Records、Berlin → Enigma 與 M.A.O.（Geffen 1983 重發），全部寫進 note。達明一派II 研究 thin：聲音一格不指派（研究稿要求勿延伸）。Twice a Man 鼓源未註明：note 只寫「合成器與電子效果為主」，不寫鼓機。Psyche「707」照原文、不補 Roland。
 - **11699** 時序：Berlin 1993 RIAA 白金屬作品成績（與作品綁定），note 標「標時序」；Interplay 的 1980〈Metal Beat〉屬前史；Trans-X 的 ambient 前身標（一句）。Visage「Ure 最後一張」已捨去。
 - **11700** 自查：hook 之間中文 4-gram 0 條；hook 對他張 note 4-gram 0 條；hook 與自己 note 無 8 字以上逐字重複（只有專名 Schulze、Lacksman）。`node qa-batch.mjs hooks add-20261022-mc9` 全部通過；`node chk-hook-crossgroup.mjs add-20261022-mc9` 全部通過（hook 加權 17–22.5、note 170–239）。
+
+## 寫作層（writer-1）
+- **11701** 交件：`desc-tools/batches/output/add-20261022-mc9-out-1.json` 12 張（full 11：221–238；thin 1：達明一派II 172）。逐張：Visage 236、Front 242 236、Interplay 234、達明一派II 172、Voices & Images 231、Programm 2 235、Trans-X 221、Psyche 238、Berlin 237、Twice a Man 235、Rage in Eden 238、Methods 223。`qa-batch out`、`qa-check-research`（標記 0）、`fix-spacing`（0）皆過；「據」字 grep 0。
+- **11702** 初稿超標 4 張（Voices & Images 247、Berlin 241、Twice a Man 248、Rage in Eden 243），整格／子句捨去：Voices 砍「Billboard 的」與「一路」、榜單句縮短；Berlin 砍 KROQ 前的「洛杉磯」重出；Twice 改寫廠牌句並砍「這張唱片」；Rage 砍「一件」、「轉錄到新的多軌帶上」縮為「轉到新帶上」。
+- **11703** 第二句領句全照鉤子層 note 指派，唯一改動：Twice a Man 的「這是首張專輯」改寫成「這是出道專輯」——Front 242 與 Voices & Images 的指派領句已各含「首張專輯」，三張會成 4-gram 同構；Psyche 的「首張出版後」也改成「首作出版後」。Visage 的「這是第二張」改成「這張是他們的第二張專輯」（避開與 Front 242 hook 尾＋領句黏成「樂團這是」）。
+- **11704** 日期「日」後一字照 11696：Interplay 日由、達明 日推、Voices 日在、Berlin 日重／日獲、Rage 日上、Methods 日交。Berlin 白金句以「到了」領句標時序。
+- **11705** 自掃 han() 4-gram：定稿 3 張以上 0 條；2 張只剩「首張專輯」（兩處皆為鉤子層指派的領句）。途中拆掉「國專輯榜」×3（Rage 改「英國的專輯榜上」、Methods 改「專輯在德國排到」、Voices 改「德國專輯排行」）、「兼打鼓與電子」（Berlin 改「也打鼓、敲電子打擊」）、「聲音以合成器與」（Twice 改「合成器和電子效果是主要的聲音來源」）、「長達分秒」（Psyche 改「就有…長」）、「是他們的／這張唱片」。
+- **11706** 派工加規照辦：媒體名與媒體榜單名次整句不寫（12 張 note 本就未指派，正文 0 處）；不用「據說／據傳」。Visage 的 Helmut Newton 封面「據傳 4000 英鎊」未指派、不寫。
+- **11707** 達明一派II 照 11713 寫「第一張全長專輯」、Philips（寶麗金旗下）；Rage in Eden hook 已用「長出」，正文改寫「就由此發展成形」避免複述 hook；Rage 不寫 Warren Cann 的樂器（note 未列）。
+
+## 主線審稿（2026-10-22）
+- **11715-R**：逐張審 12 篇（全文印出、逐句對 note 與研究稿）。改 1 處：
+  - `desc2:Berlin|Pleasure Victim`：「寫來爭取 KROQ 電台的播放」→「寫來爭取洛杉磯一家電台的播放」。依據：正文不點名媒體名（研究 d 組 facts 有 KROQ，事實不變，只去名，研究／hooks／input 不必改）。
+  - 抽核：Front 242「2.5 公尺見方的房間」（研究 a 組，Discogs 版本註記）、Camouflage 團名借自 YMO 歌（研究 c 組）、達明一派II 是第一張全長專輯（主線 11713）、Ultravox「冷得簡樸、疏離」是 Ure 自述（研究 e 組）、Berlin 白金時序 1993（標時序）。單曲／專輯排行（英國、德國、Billboard Dance Club Songs）是銷售榜，不是媒體年終榜，保留。無「據說／據傳」、無資料平台名。qa-batch out、qa-check-research、fix-spacing 全過。
