@@ -1,0 +1,1586 @@
+{
+ "group": "md8",
+ "factions": [
+  {
+   "id": "echocord",
+   "zh": "Echocord 線",
+   "count": 15,
+   "why": "Echocord 系 dub techno（Fluxion、Quantec、Mikkel Metal、Echospace 等）"
+  },
+  {
+   "id": "chain-reaction",
+   "zh": "Chain Reaction 線",
+   "count": 4,
+   "why": "Basic Channel 旗下 Chain Reaction 的專輯級作品；Fluxion《Vibrant Forms》系列在 MB 屬 Compilation，不收"
+  },
+  {
+   "id": "silent-season",
+   "zh": "Silent Season 線",
+   "count": 21,
+   "why": "Silent Season 的 ambient techno／dub ambient"
+  },
+  {
+   "id": "astral-industries",
+   "zh": "Astral Industries 線",
+   "count": 7,
+   "why": "Astral Industries 的冷色 ambient techno"
+  },
+  {
+   "id": "other",
+   "zh": "其他 dub techno",
+   "count": 8,
+   "why": "Prologue／Styrax 無合格專輯級作品，補其他 dub techno"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Fluxion",
+   "album": "Bipolar Defect",
+   "year": 2000,
+   "label": "Chain Reaction",
+   "country": "de",
+   "faction": "chain-reaction",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Chain Reaction 時期 dub techno，低頻厚、殘響長、拍子偏懶",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.3,
+    "z": -0.9,
+    "why": "Chain Reaction 時期 dub techno，低頻厚、殘響長、拍子偏懶"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a60e786d-2cc9-3bb9-840b-946e2bdf118b",
+    "https://coverartarchive.org/release-group/a60e786d-2cc9-3bb9-840b-946e2bdf118b/front"
+   ],
+   "mbRgMbid": "a60e786d-2cc9-3bb9-840b-946e2bdf118b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Fluxion",
+   "album": "Spaces",
+   "year": 2001,
+   "label": "",
+   "country": "",
+   "faction": "chain-reaction",
+   "genres": [
+    "electronic"
+   ],
+   "why": "偏 ambient 的 dub techno，和弦霧為主、鼓退後",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "偏 ambient 的 dub techno，和弦霧為主、鼓退後"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fe5f9b62-4258-3ddb-b115-d742ebac4aab",
+    "https://coverartarchive.org/release-group/fe5f9b62-4258-3ddb-b115-d742ebac4aab/front"
+   ],
+   "mbRgMbid": "fe5f9b62-4258-3ddb-b115-d742ebac4aab",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Substance",
+   "album": "Session Elements",
+   "year": 1998,
+   "label": "Chain Reaction",
+   "country": "de",
+   "faction": "chain-reaction",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Basic Channel 系 Peter Kuschnereit；乾冷的 dub 和弦、鼓稀、全盤陰",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.3,
+    "z": -1.0,
+    "why": "Basic Channel 系 Peter Kuschnereit；乾冷的 dub 和弦、鼓稀、全盤陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e2f52f90-fac8-3d6b-8a15-0a926a792c4b",
+    "https://coverartarchive.org/release-group/e2f52f90-fac8-3d6b-8a15-0a926a792c4b/front"
+   ],
+   "mbRgMbid": "e2f52f90-fac8-3d6b-8a15-0a926a792c4b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "拍子比 Fluxion 清楚，x 可能貼 2.7"
+  },
+  {
+   "artist": "Hallucinator",
+   "album": "Landlocked",
+   "year": 1999,
+   "label": "Chain Reaction",
+   "country": "de",
+   "faction": "chain-reaction",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Chain Reaction 的 dub ambient techno；霧狀和弦與遠處的鼓",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "Chain Reaction 的 dub ambient techno；霧狀和弦與遠處的鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/546c16cd-47bd-3752-b4f4-80def4f363d2",
+    "https://coverartarchive.org/release-group/546c16cd-47bd-3752-b4f4-80def4f363d2/front"
+   ],
+   "mbRgMbid": "546c16cd-47bd-3752-b4f4-80def4f363d2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "資料少，聲音依印象判"
+  },
+  {
+   "artist": "Fluxion",
+   "album": "Perfused",
+   "year": 2010,
+   "label": "",
+   "country": "",
+   "faction": "echocord",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Echocord 的 Fluxion；厚殘響和弦與鬆散低頻拍",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "Echocord 的 Fluxion；厚殘響和弦與鬆散低頻拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/75003e79-6a12-41cf-afa4-cc17e7cccafa",
+    "https://coverartarchive.org/release-group/75003e79-6a12-41cf-afa4-cc17e7cccafa/front"
+   ],
+   "mbRgMbid": "75003e79-6a12-41cf-afa4-cc17e7cccafa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Fluxion",
+   "album": "Traces",
+   "year": 2012,
+   "label": "",
+   "country": "",
+   "faction": "echocord",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Fluxion 後期，更深的 dub 和弦霧，拍子淡",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "Fluxion 後期，更深的 dub 和弦霧，拍子淡"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e058635a-2881-47d4-84c6-8d24ab534daa",
+    "https://coverartarchive.org/release-group/e058635a-2881-47d4-84c6-8d24ab534daa/front"
+   ],
+   "mbRgMbid": "e058635a-2881-47d4-84c6-8d24ab534daa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Fluxion",
+   "album": "Broadwalk Tales",
+   "year": 2014,
+   "label": "",
+   "country": "",
+   "faction": "echocord",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Echocord；dub 和弦與柔拍，色調偏灰",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": -0.7,
+    "why": "Echocord；dub 和弦與柔拍，色調偏灰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/daa1d1a3-0498-4590-8f23-5d36dca1058c",
+    "https://coverartarchive.org/release-group/daa1d1a3-0498-4590-8f23-5d36dca1058c/front"
+   ],
+   "mbRgMbid": "daa1d1a3-0498-4590-8f23-5d36dca1058c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Fluxion",
+   "album": "Constant Limber",
+   "year": 2009,
+   "label": "",
+   "country": "",
+   "faction": "echocord",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Fluxion 中期，殘響層疊、拍子退後",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": -0.7,
+    "why": "Fluxion 中期，殘響層疊、拍子退後"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/905287dd-8d83-44f8-831b-fd8a8a20ac0b",
+    "https://coverartarchive.org/release-group/905287dd-8d83-44f8-831b-fd8a8a20ac0b/front"
+   ],
+   "mbRgMbid": "905287dd-8d83-44f8-831b-fd8a8a20ac0b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Fluxion",
+   "album": "Perspectives",
+   "year": 2020,
+   "label": "",
+   "country": "",
+   "faction": "echocord",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Fluxion 2020；遠、霧、緩的 dub techno",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.2,
+    "z": -0.7,
+    "why": "Fluxion 2020；遠、霧、緩的 dub techno"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/935d63b0-1b1a-4564-886e-e61f960b88c2",
+    "https://coverartarchive.org/release-group/935d63b0-1b1a-4564-886e-e61f960b88c2/front"
+   ],
+   "mbRgMbid": "935d63b0-1b1a-4564-886e-e61f960b88c2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Quantec",
+   "album": "Unusual Signals",
+   "year": 2008,
+   "label": "",
+   "country": "",
+   "faction": "echocord",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Echocord 的 Quantec（Pole 一脈的暗 dub）；和弦霧、鼓鈍",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": -0.9,
+    "why": "Echocord 的 Quantec（Pole 一脈的暗 dub）；和弦霧、鼓鈍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e49250e5-b51e-3fea-95c5-0e19e17c8301",
+    "https://coverartarchive.org/release-group/e49250e5-b51e-3fea-95c5-0e19e17c8301/front"
+   ],
+   "mbRgMbid": "e49250e5-b51e-3fea-95c5-0e19e17c8301",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Quantec",
+   "album": "Cauldron Subsidence",
+   "year": 2009,
+   "label": "",
+   "country": "",
+   "faction": "echocord",
+   "genres": [
+    "electronic"
+   ],
+   "why": "低頻沉、殘響深的 dub techno，無人味",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.4,
+    "z": -1.0,
+    "why": "低頻沉、殘響深的 dub techno，無人味"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0847fa26-e75c-4631-b01b-674b8170b5c5",
+    "https://coverartarchive.org/release-group/0847fa26-e75c-4631-b01b-674b8170b5c5/front"
+   ],
+   "mbRgMbid": "0847fa26-e75c-4631-b01b-674b8170b5c5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Quantec",
+   "album": "Journey of Mind",
+   "year": 2009,
+   "label": "Silent Season",
+   "country": "ca",
+   "faction": "echocord",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Silent Season 發行，偏 ambient techno 的緩慢和弦流",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "Silent Season 發行，偏 ambient techno 的緩慢和弦流"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/27daa677-f2df-45ed-8600-d779f0daf1a7",
+    "https://coverartarchive.org/release-group/27daa677-f2df-45ed-8600-d779f0daf1a7/front"
+   ],
+   "mbRgMbid": "27daa677-f2df-45ed-8600-d779f0daf1a7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Quantec",
+   "album": "Thought Experiment",
+   "year": 2010,
+   "label": "",
+   "country": "",
+   "faction": "echocord",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Quantec 實驗向 dub；糊、冷、拍子弱",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": -0.9,
+    "why": "Quantec 實驗向 dub；糊、冷、拍子弱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/517189b2-a984-4caa-bab9-8049552e4d4d",
+    "https://music.apple.com/us/album/thought-experiment/1662513601"
+   ],
+   "mbRgMbid": "517189b2-a984-4caa-bab9-8049552e4d4d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Silent Harbour",
+   "album": "Silent Harbour",
+   "year": 2012,
+   "label": "",
+   "country": "",
+   "faction": "echocord",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Boris Bunnik 的 dub techno 專輯；深和弦與鈍拍",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": -0.9,
+    "why": "Boris Bunnik 的 dub techno 專輯；深和弦與鈍拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1abdf1ef-66f4-4a72-a0c2-abb2d1032280",
+    "https://coverartarchive.org/release-group/1abdf1ef-66f4-4a72-a0c2-abb2d1032280/front"
+   ],
+   "mbRgMbid": "1abdf1ef-66f4-4a72-a0c2-abb2d1032280",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Resoe",
+   "album": "The Black Void of Space...",
+   "year": 2011,
+   "label": "",
+   "country": "",
+   "faction": "echocord",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Echocord 的黑暗 dub ambient；空間感大、拍子稀",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.3,
+    "z": -1.1,
+    "why": "Echocord 的黑暗 dub ambient；空間感大、拍子稀"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e44ba916-4022-4a36-b721-f1b6ce7535d9",
+    "https://coverartarchive.org/release-group/e44ba916-4022-4a36-b721-f1b6ce7535d9/front"
+   ],
+   "mbRgMbid": "e44ba916-4022-4a36-b721-f1b6ce7535d9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Onmutu Mechanicks",
+   "album": "Nocturne",
+   "year": 2010,
+   "label": "",
+   "country": "",
+   "faction": "echocord",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Echocord 夜色 dub techno；和弦霧下的穩拍",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": -0.9,
+    "why": "Echocord 夜色 dub techno；和弦霧下的穩拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/96bf05cd-a4d6-4dae-9028-7e75a2ea2cfc",
+    "https://coverartarchive.org/release-group/96bf05cd-a4d6-4dae-9028-7e75a2ea2cfc/front"
+   ],
+   "mbRgMbid": "96bf05cd-a4d6-4dae-9028-7e75a2ea2cfc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mathimidori",
+   "album": "Akebono",
+   "year": 2020,
+   "label": "",
+   "country": "",
+   "faction": "echocord",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Echocord 日本 dub ambient；霧狀和弦、拍子隱約",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.1,
+    "z": -0.5,
+    "why": "Echocord 日本 dub ambient；霧狀和弦、拍子隱約"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/004f3984-ec57-4688-9e34-1b58bf0f3d5b",
+    "https://coverartarchive.org/release-group/004f3984-ec57-4688-9e34-1b58bf0f3d5b/front"
+   ],
+   "mbRgMbid": "004f3984-ec57-4688-9e34-1b58bf0f3d5b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能近中性"
+  },
+  {
+   "artist": "Mikkel Metal",
+   "album": "Peaks and Troughs",
+   "year": 2008,
+   "label": "",
+   "country": "",
+   "faction": "echocord",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Echocord 的 Mikkel Metal；偏 minimal dub、拍子淡",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.0,
+    "z": -0.8,
+    "why": "Echocord 的 Mikkel Metal；偏 minimal dub、拍子淡"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/458701ad-3a6d-3f39-90b1-7c475d91af46",
+    "https://coverartarchive.org/release-group/458701ad-3a6d-3f39-90b1-7c475d91af46/front"
+   ],
+   "mbRgMbid": "458701ad-3a6d-3f39-90b1-7c475d91af46",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 可能貼 2.7"
+  },
+  {
+   "artist": "Echospace",
+   "album": "Sea Shell City",
+   "year": 2016,
+   "label": "",
+   "country": "",
+   "faction": "echocord",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Echospace 2016；深水般的和弦與殘響，拍子淡",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.4,
+    "z": -0.8,
+    "why": "Echospace 2016；深水般的和弦與殘響，拍子淡"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9fb1c1a5-b5e6-40a2-9c20-f6292f661860",
+    "https://coverartarchive.org/release-group/9fb1c1a5-b5e6-40a2-9c20-f6292f661860/front"
+   ],
+   "mbRgMbid": "9fb1c1a5-b5e6-40a2-9c20-f6292f661860",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "ASC",
+   "album": "Time Heals All",
+   "year": 2013,
+   "label": "Silent Season",
+   "country": "ca",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Silent Season 的 ASC；暗 ambient techno，低頻氛圍為主",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.2,
+    "z": -0.7,
+    "why": "Silent Season 的 ASC；暗 ambient techno，低頻氛圍為主"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dd809e7d-ddf0-4e7d-8c23-441c1692cafd",
+    "https://coverartarchive.org/release-group/dd809e7d-ddf0-4e7d-8c23-441c1692cafd/front"
+   ],
+   "mbRgMbid": "dd809e7d-ddf0-4e7d-8c23-441c1692cafd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能近中性"
+  },
+  {
+   "artist": "ASC",
+   "album": "The Light That Burns Twice as Bright",
+   "year": 2011,
+   "label": "Silent Season",
+   "country": "xw",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "ASC 的冷色 ambient；鼓極稀、和弦墊厚",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "ASC 的冷色 ambient；鼓極稀、和弦墊厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2e46d513-0085-46f0-acc9-1255dc344c86",
+    "https://coverartarchive.org/release-group/2e46d513-0085-46f0-acc9-1255dc344c86/front"
+   ],
+   "mbRgMbid": "2e46d513-0085-46f0-acc9-1255dc344c86",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "ASC",
+   "album": "Truth Be Told",
+   "year": 2014,
+   "label": "Silent Season",
+   "country": "ca",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "ASC；dub 低頻與 ambient 墊，緩",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "ASC；dub 低頻與 ambient 墊，緩"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a6ee5a33-88c8-449c-9d04-65b379bd5f4a",
+    "https://coverartarchive.org/release-group/a6ee5a33-88c8-449c-9d04-65b379bd5f4a/front"
+   ],
+   "mbRgMbid": "a6ee5a33-88c8-449c-9d04-65b379bd5f4a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "ASC",
+   "album": "No Stars Without Darkness",
+   "year": 2016,
+   "label": "Silent Season",
+   "country": "ca",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "ASC 標題即色調；暗、深、緩",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -1.0,
+    "why": "ASC 標題即色調；暗、深、緩"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a8e8fe13-f866-40bf-8ac2-62852f7b356e",
+    "https://coverartarchive.org/release-group/a8e8fe13-f866-40bf-8ac2-62852f7b356e/front"
+   ],
+   "mbRgMbid": "a8e8fe13-f866-40bf-8ac2-62852f7b356e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "ASC",
+   "album": "Fervent Dream",
+   "year": 2015,
+   "label": "Silent Season",
+   "country": "xw",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "ASC；dub 層與殘響，鼓遠",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "ASC；dub 層與殘響，鼓遠"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/98a2701a-9be7-4a0e-9087-1e48b7dd8aba",
+    "https://coverartarchive.org/release-group/98a2701a-9be7-4a0e-9087-1e48b7dd8aba/front"
+   ],
+   "mbRgMbid": "98a2701a-9be7-4a0e-9087-1e48b7dd8aba",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Axs",
+   "album": "Arctic Circle",
+   "year": 2011,
+   "label": "Silent Season",
+   "country": "ca",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Silent Season 的 Axs；冰冷的 dub techno 與殘響",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.2,
+    "z": -1.1,
+    "why": "Silent Season 的 Axs；冰冷的 dub techno 與殘響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/86a5e9a4-003e-4e48-a820-8fe15a43e433",
+    "https://coverartarchive.org/release-group/86a5e9a4-003e-4e48-a820-8fe15a43e433/front"
+   ],
+   "mbRgMbid": "86a5e9a4-003e-4e48-a820-8fe15a43e433",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tdel",
+   "album": "The Overlook",
+   "year": 2016,
+   "label": "Silent Season",
+   "country": "xw",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Silent Season 的 Tdel；暗 ambient 與遠方拍子",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.2,
+    "z": -0.9,
+    "why": "Silent Season 的 Tdel；暗 ambient 與遠方拍子"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d7624330-476d-48dc-8756-06e4b08d178d",
+    "https://coverartarchive.org/release-group/d7624330-476d-48dc-8756-06e4b08d178d/front"
+   ],
+   "mbRgMbid": "d7624330-476d-48dc-8756-06e4b08d178d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Faru",
+   "album": "Through Darkness Comes Light",
+   "year": 2017,
+   "label": "Silent Season",
+   "country": "xw",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Silent Season；drone/ambient 墊，幾乎無拍",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "Silent Season；drone/ambient 墊，幾乎無拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1f13bf82-fee3-48a2-9939-b53b33298ef7",
+    "https://coverartarchive.org/release-group/1f13bf82-fee3-48a2-9939-b53b33298ef7/front"
+   ],
+   "mbRgMbid": "1f13bf82-fee3-48a2-9939-b53b33298ef7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Purl",
+   "album": "Stillpoint",
+   "year": 2015,
+   "label": "Silent Season",
+   "country": "xw",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Purl 的深 ambient dub；厚低頻墊、拍子淡",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "Purl 的深 ambient dub；厚低頻墊、拍子淡"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/716c14fe-40a0-44d8-b710-959609a827ca",
+    "https://coverartarchive.org/release-group/716c14fe-40a0-44d8-b710-959609a827ca/front"
+   ],
+   "mbRgMbid": "716c14fe-40a0-44d8-b710-959609a827ca",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Purl",
+   "album": "Deep Ground",
+   "year": 2011,
+   "label": "Silent Season",
+   "country": "ca",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Purl；地底般的低頻與殘響",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.4,
+    "z": -0.9,
+    "why": "Purl；地底般的低頻與殘響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ff87e36b-ef04-400d-ab32-eac6fa29edb6",
+    "https://coverartarchive.org/release-group/ff87e36b-ef04-400d-ab32-eac6fa29edb6/front"
+   ],
+   "mbRgMbid": "ff87e36b-ef04-400d-ab32-eac6fa29edb6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Federsen",
+   "album": "Echo Relics",
+   "year": 2011,
+   "label": "Silent Season",
+   "country": "ca",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Silent Season；dub 和弦回聲、鼓鈍",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "Silent Season；dub 和弦回聲、鼓鈍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cb6b098c-7b25-4f9b-a4f0-57d543309fd0",
+    "https://coverartarchive.org/release-group/cb6b098c-7b25-4f9b-a4f0-57d543309fd0/front"
+   ],
+   "mbRgMbid": "cb6b098c-7b25-4f9b-a4f0-57d543309fd0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Submersion",
+   "album": "Cicada",
+   "year": 2008,
+   "label": "Silent Season",
+   "country": "xw",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Silent Season 的 Submersion；水下和弦霧的 dub",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.2,
+    "z": -0.7,
+    "why": "Silent Season 的 Submersion；水下和弦霧的 dub"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2041a9e9-afe6-4660-914b-94eb2ac6faf7",
+    "https://coverartarchive.org/release-group/2041a9e9-afe6-4660-914b-94eb2ac6faf7/front"
+   ],
+   "mbRgMbid": "2041a9e9-afe6-4660-914b-94eb2ac6faf7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mind over MIDI",
+   "album": "Habitat",
+   "year": 2009,
+   "label": "Silent Season",
+   "country": "ca",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Silent Season；ambient techno 墊與低速拍",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.1,
+    "z": -0.5,
+    "why": "Silent Season；ambient techno 墊與低速拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0f01a7ea-0a55-4fab-9b2a-50d8a7e405a6",
+    "https://coverartarchive.org/release-group/0f01a7ea-0a55-4fab-9b2a-50d8a7e405a6/front"
+   ],
+   "mbRgMbid": "0f01a7ea-0a55-4fab-9b2a-50d8a7e405a6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能近中性；資料少"
+  },
+  {
+   "artist": "Shaded Explorer",
+   "album": "Between The Blue",
+   "year": 2014,
+   "label": "Silent Season",
+   "country": "ca",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Silent Season；偏藍灰的 ambient dub",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.1,
+    "z": -0.5,
+    "why": "Silent Season；偏藍灰的 ambient dub"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/72d6bfca-86de-4268-b653-4277c426f374",
+    "https://coverartarchive.org/release-group/72d6bfca-86de-4268-b653-4277c426f374/front"
+   ],
+   "mbRgMbid": "72d6bfca-86de-4268-b653-4277c426f374",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能近中性；資料少"
+  },
+  {
+   "artist": "Blazej Malinowski",
+   "album": "Factors",
+   "year": 2013,
+   "label": "Silent Season",
+   "country": "ca",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Silent Season；ambient techno，拍子隱",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.1,
+    "z": -0.7,
+    "why": "Silent Season；ambient techno，拍子隱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b52dc584-931a-445f-89a8-ae1b51f51e67",
+    "https://coverartarchive.org/release-group/b52dc584-931a-445f-89a8-ae1b51f51e67/front"
+   ],
+   "mbRgMbid": "b52dc584-931a-445f-89a8-ae1b51f51e67",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "資料少"
+  },
+  {
+   "artist": "Sonitus Eco",
+   "album": "It Is Loneliness That Makes The Loudest Noise",
+   "year": 2012,
+   "label": "Silent Season",
+   "country": "ca",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Silent Season；孤寂的 ambient drone，鼓幾無",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.1,
+    "z": -0.7,
+    "why": "Silent Season；孤寂的 ambient drone，鼓幾無"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b7339284-6ae5-47d7-80a1-0682d28126b9",
+    "https://coverartarchive.org/release-group/b7339284-6ae5-47d7-80a1-0682d28126b9/front"
+   ],
+   "mbRgMbid": "b7339284-6ae5-47d7-80a1-0682d28126b9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Seraphim Rytm",
+   "album": "Aeterna",
+   "year": 2015,
+   "label": "Silent Season",
+   "country": "ca",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Silent Season；ambient 墊與低速 dub",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.1,
+    "z": -0.5,
+    "why": "Silent Season；ambient 墊與低速 dub"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e6c8afd9-1fae-44bc-9f1f-bd9243d42af1",
+    "https://coverartarchive.org/release-group/e6c8afd9-1fae-44bc-9f1f-bd9243d42af1/front"
+   ],
+   "mbRgMbid": "e6c8afd9-1fae-44bc-9f1f-bd9243d42af1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能近中性；資料少"
+  },
+  {
+   "artist": "Waveform Transmission",
+   "album": "V2.0–2.9",
+   "year": 2017,
+   "label": "Astral Industries",
+   "country": "xw",
+   "faction": "astral-industries",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Astral Industries 的 ambient techno；機械感和弦與殘響",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.3,
+    "z": -0.9,
+    "why": "Astral Industries 的 ambient techno；機械感和弦與殘響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f5aabd9f-b0f7-4a86-971e-6d956b122923",
+    "https://coverartarchive.org/release-group/f5aabd9f-b0f7-4a86-971e-6d956b122923/front"
+   ],
+   "mbRgMbid": "f5aabd9f-b0f7-4a86-971e-6d956b122923",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Waveform Transmission",
+   "album": "V 3.0–3.9",
+   "year": 2020,
+   "label": "Astral Industries",
+   "country": "xw",
+   "faction": "astral-industries",
+   "genres": [
+    "electronic"
+   ],
+   "why": "續集，冷色合成器墊與稀拍",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.3,
+    "z": -0.9,
+    "why": "續集，冷色合成器墊與稀拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2ae87f52-9f69-466b-b787-d396c36e23ad",
+    "https://coverartarchive.org/release-group/2ae87f52-9f69-466b-b787-d396c36e23ad/front"
+   ],
+   "mbRgMbid": "2ae87f52-9f69-466b-b787-d396c36e23ad",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Multicast Dynamics",
+   "album": "Ancient Circuits",
+   "year": 2020,
+   "label": "Astral Industries",
+   "country": "xw",
+   "faction": "astral-industries",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Astral Industries 的 ambient dub techno；電路般冷色",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "Astral Industries 的 ambient dub techno；電路般冷色"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ed720369-8426-451a-bd2b-1bd9f66763b2",
+    "https://coverartarchive.org/release-group/ed720369-8426-451a-bd2b-1bd9f66763b2/front"
+   ],
+   "mbRgMbid": "ed720369-8426-451a-bd2b-1bd9f66763b2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Multicast Dynamics",
+   "album": "Metamorphosis",
+   "year": 2021,
+   "label": "Astral Industries",
+   "country": "gb",
+   "faction": "astral-industries",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Multicast Dynamics；霧狀 dub 和弦",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "Multicast Dynamics；霧狀 dub 和弦"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2eec6d55-a049-4c82-88d1-8dee47a5a85d",
+    "https://coverartarchive.org/release-group/2eec6d55-a049-4c82-88d1-8dee47a5a85d/front"
+   ],
+   "mbRgMbid": "2eec6d55-a049-4c82-88d1-8dee47a5a85d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "LF58",
+   "album": "Alterazione",
+   "year": 2020,
+   "label": "Astral Industries",
+   "country": "xw",
+   "faction": "astral-industries",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Astral Industries；深 ambient techno，鼓遠",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.3,
+    "z": -0.9,
+    "why": "Astral Industries；深 ambient techno，鼓遠"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d57a2848-5f49-4d3c-8fd9-e11a5c0f0da7",
+    "https://coverartarchive.org/release-group/d57a2848-5f49-4d3c-8fd9-e11a5c0f0da7/front"
+   ],
+   "mbRgMbid": "d57a2848-5f49-4d3c-8fd9-e11a5c0f0da7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Rod Modell",
+   "album": "Ghost Lights",
+   "year": 2023,
+   "label": "Astral Industries",
+   "country": "xw",
+   "faction": "astral-industries",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Rod Modell 2023；幽暗 dub 和弦霧",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.4,
+    "z": -0.8,
+    "why": "Rod Modell 2023；幽暗 dub 和弦霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1629c2d4-1a9a-4709-bc4e-9d7b143b8cfe",
+    "https://coverartarchive.org/release-group/1629c2d4-1a9a-4709-bc4e-9d7b143b8cfe/front"
+   ],
+   "mbRgMbid": "1629c2d4-1a9a-4709-bc4e-9d7b143b8cfe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能偏中性"
+  },
+  {
+   "artist": "Robert Henke",
+   "album": "Layering Buddha",
+   "year": 2006,
+   "label": "Astral Industries",
+   "country": "xw",
+   "faction": "astral-industries",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Monolake 的 Henke 以錄音帶疊加出的 drone 層；無拍、低頻厚",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "Monolake 的 Henke 以錄音帶疊加出的 drone 層；無拍、低頻厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/403cdfd0-d4c4-3a04-81e2-4c0965ed3b43",
+    "https://coverartarchive.org/release-group/403cdfd0-d4c4-3a04-81e2-4c0965ed3b43/front"
+   ],
+   "mbRgMbid": "403cdfd0-d4c4-3a04-81e2-4c0965ed3b43",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Topdown Dialectic",
+   "album": "Vol. 2",
+   "year": 2019,
+   "label": "",
+   "country": "",
+   "faction": "other",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Topdown Dialectic 延續首張；dub 和弦、鼓軟",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.2,
+    "z": -0.7,
+    "why": "Topdown Dialectic 延續首張；dub 和弦、鼓軟"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d382b573-ee22-441c-955a-34783a27ea85",
+    "https://coverartarchive.org/release-group/d382b573-ee22-441c-955a-34783a27ea85/front"
+   ],
+   "mbRgMbid": "d382b573-ee22-441c-955a-34783a27ea85",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Submersion",
+   "album": "Inward",
+   "year": 2020,
+   "label": "",
+   "country": "",
+   "faction": "other",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Submersion 2020；水下般 dub techno",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "Submersion 2020；水下般 dub techno"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/660cc55f-bcd5-4f7d-b6f1-fe203ae34555",
+    "https://coverartarchive.org/release-group/660cc55f-bcd5-4f7d-b6f1-fe203ae34555/front"
+   ],
+   "mbRgMbid": "660cc55f-bcd5-4f7d-b6f1-fe203ae34555",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Submersion",
+   "album": "Egress",
+   "year": 2021,
+   "label": "",
+   "country": "",
+   "faction": "other",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Submersion 2021；殘響深、拍緩",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "Submersion 2021；殘響深、拍緩"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/07a9234b-1f6d-489b-8122-8e111607c9ac",
+    "https://coverartarchive.org/release-group/07a9234b-1f6d-489b-8122-8e111607c9ac/front"
+   ],
+   "mbRgMbid": "07a9234b-1f6d-489b-8122-8e111607c9ac",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Segue",
+   "album": "Harbour Cove Dubs",
+   "year": 2023,
+   "label": "",
+   "country": "",
+   "faction": "other",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Segue 的 dub 專輯；海港霧氣般的和弦",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": -0.4,
+    "why": "Segue 的 dub 專輯；海港霧氣般的和弦"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4bb2c304-e5ae-4226-9ad5-f99966151659",
+    "https://coverartarchive.org/release-group/4bb2c304-e5ae-4226-9ad5-f99966151659/front"
+   ],
+   "mbRgMbid": "4bb2c304-e5ae-4226-9ad5-f99966151659",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能近中性"
+  },
+  {
+   "artist": "Intrusion",
+   "album": "Amongst The Stars",
+   "year": 2017,
+   "label": "",
+   "country": "",
+   "faction": "other",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Intrusion；深 dub 和弦，偏 ambient",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.3,
+    "z": -0.4,
+    "why": "Intrusion；深 dub 和弦，偏 ambient"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ff853af4-ed46-45bb-a5c1-5a9029790a20",
+    "https://coverartarchive.org/release-group/ff853af4-ed46-45bb-a5c1-5a9029790a20/front"
+   ],
+   "mbRgMbid": "ff853af4-ed46-45bb-a5c1-5a9029790a20",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能偏溫"
+  },
+  {
+   "artist": "Intrusion",
+   "album": "A Gentle Embrace",
+   "year": 2015,
+   "label": "",
+   "country": "",
+   "faction": "other",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Intrusion；柔和 dub 和弦霧",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.3,
+    "z": -0.3,
+    "why": "Intrusion；柔和 dub 和弦霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b55a79e9-1a1e-4fe2-9413-71e7a85c5459",
+    "https://coverartarchive.org/release-group/b55a79e9-1a1e-4fe2-9413-71e7a85c5459/front"
+   ],
+   "mbRgMbid": "b55a79e9-1a1e-4fe2-9413-71e7a85c5459",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能偏溫，貼邊"
+  },
+  {
+   "artist": "Topdown Dialectic",
+   "album": "Vol. 3",
+   "year": 2021,
+   "label": "",
+   "country": "",
+   "faction": "other",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Topdown Dialectic 第三卷；dub 和弦霧、鼓軟",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.2,
+    "z": -0.7,
+    "why": "Topdown Dialectic 第三卷；dub 和弦霧、鼓軟"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/76b109e7-d7b9-4685-9f79-eea383016b72",
+    "https://coverartarchive.org/release-group/76b109e7-d7b9-4685-9f79-eea383016b72/front"
+   ],
+   "mbRgMbid": "76b109e7-d7b9-4685-9f79-eea383016b72",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Edanticonf",
+   "album": "Forest Echo",
+   "year": 2012,
+   "label": "Silent Season",
+   "country": "ca",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Silent Season；回聲堆疊的 dub ambient",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.2,
+    "z": -0.6,
+    "why": "Silent Season；回聲堆疊的 dub ambient"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e5cb8aed-f664-4cf1-8a89-a54c7065f073",
+    "https://coverartarchive.org/release-group/e5cb8aed-f664-4cf1-8a89-a54c7065f073/front"
+   ],
+   "mbRgMbid": "e5cb8aed-f664-4cf1-8a89-a54c7065f073",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "資料少；z 可能近中性"
+  },
+  {
+   "artist": "Alteria Percepsyne",
+   "album": "Intangible Flutter",
+   "year": 2010,
+   "label": "Silent Season",
+   "country": "ca",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Silent Season；顫動的 ambient techno 墊",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.1,
+    "z": -0.6,
+    "why": "Silent Season；顫動的 ambient techno 墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/563bf2c9-7351-4726-9e43-083bd183333f",
+    "https://coverartarchive.org/release-group/563bf2c9-7351-4726-9e43-083bd183333f/front"
+   ],
+   "mbRgMbid": "563bf2c9-7351-4726-9e43-083bd183333f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "資料少；z 可能近中性"
+  },
+  {
+   "artist": "Djorvin Clain",
+   "album": "Pattern of Thought",
+   "year": 2012,
+   "label": "Silent Season",
+   "country": "ca",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Silent Season；ambient dub techno",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.1,
+    "z": -0.6,
+    "why": "Silent Season；ambient dub techno"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d288dfcb-83a6-49de-ab99-7c60b522f6b3",
+    "https://coverartarchive.org/release-group/d288dfcb-83a6-49de-ab99-7c60b522f6b3/front"
+   ],
+   "mbRgMbid": "d288dfcb-83a6-49de-ab99-7c60b522f6b3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "資料少"
+  },
+  {
+   "artist": "Mr. Cloudy",
+   "album": "Light in My Head",
+   "year": 2010,
+   "label": "Silent Season",
+   "country": "ca",
+   "faction": "silent-season",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Mr. Cloudy；霧狀 ambient dub",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.1,
+    "z": -0.5,
+    "why": "Mr. Cloudy；霧狀 ambient dub"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5050ab4e-9fad-491e-8ee4-85457f4893be",
+    "https://coverartarchive.org/release-group/5050ab4e-9fad-491e-8ee4-85457f4893be/front"
+   ],
+   "mbRgMbid": "5050ab4e-9fad-491e-8ee4-85457f4893be",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "資料少；z 可能近中性"
+  },
+  {
+   "artist": "The Nautilus Project",
+   "album": "20000 Miles Below",
+   "year": 2008,
+   "label": "",
+   "country": "",
+   "faction": "other",
+   "genres": [
+    "electronic"
+   ],
+   "why": "深海意象的 dub techno；殘響深、拍子緩",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "深海意象的 dub techno；殘響深、拍子緩"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b35ed909-7b33-3fe6-9469-afd21e3bf7e6",
+    "https://coverartarchive.org/release-group/b35ed909-7b33-3fe6-9469-afd21e3bf7e6/front"
+   ],
+   "mbRgMbid": "b35ed909-7b33-3fe6-9469-afd21e3bf7e6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "資料少"
+  }
+ ],
+ "notes": [
+  "共 55 張，全部 MB 釘住（primary-type=Album、無 secondary type）；達標 54＋1。",
+  "封面：除《Thought Experiment》用 iTunes 外都有 CAA。丟棄：1000 Vacuum Tubes、Just Enough Light、Die Faser（CAA 無封面）。",
+  "不收：Vibrant Forms 1／2（MB 屬 Compilation）、Sowing Paranoia《Research Music Lab》（Live）、Atheus《Compile》（MB 查無）。",
+  "Prologue 目錄多為工業／硬 techno 舞池盤（Cassegrain、Edit Select、Claudio PRC、Alan Backdrop），拍子清楚往前推，判躁，不收；Styrax 無專輯級條目（僅 Arne Weinberg《Son of the Sun》與合輯）；Astral Industries 的 Chi Factory、Heavenly Music Corporation、J.Derwort 等 new age／bamboo 系偏暖，歸 ml 線。",
+  "Intrusion、Segue、Mind over MIDI、Shaded Explorer 等 z 可能近中性，已標 uncertain；Silent Season 的小廠藝人（Edanticonf、Alteria Percepsyne、Djorvin Clain、Mr. Cloudy）聲音資料少，靠場景印象判，列為汰換優先。",
+  "已在池／已在其他 curation 的由去重腳本排除（Fluxion《Vibrant Forms III》、Deepchord 7、Intrusion《The Seduction of Silence》、Echospace 兩張、md4 的 cv313／Yagya 等）。",
+  "WebSearch 0 次；以 MB API 為主。"
+ ]
+}
