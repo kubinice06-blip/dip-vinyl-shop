@@ -3043,4 +3043,6 @@ window.DipPreviewStatus = Object.freeze({
   "dean blunt|the narcissist ii": "unavailable",
   "cv313|analogue oceans": "unavailable",
   "cv313|baring stars": "unavailable",
+  "el aviador dro|tesis": "unavailable",
+  "absolute body control|figures": "unavailable",
 });

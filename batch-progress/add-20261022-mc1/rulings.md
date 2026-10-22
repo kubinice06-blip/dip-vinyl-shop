@@ -86,3 +86,23 @@
 - **11058**　同藝人分軸與引入法：**Xeno & Oaklander 三張**（c5 為 a–c 所有）——c5 帶錄音法與兩人身分（11051）；d1 帶曲目速度結構＋內頁只署兩人，第二句「X 是 A 與 B，A 先前以 Martial Canterel 之名做…」（名字＋前身）；d2 帶換廠牌＋Serge／聯覺，第二句「以 Serge 合成器領句，帶出…」（器物）。Wierd 派對、八軌、三年、Wendelbo 法挪裔只在 c5；d1／d2 不寫。「他／她」：Sally Dige 用「她」；Xeno & Oaklander、Linea Aspera、Body of Light 用「兩人」；Moskwa TV、Absolute Body Control 用團名。第二句句型逐張配死：d1「X 是 A 與 B，A 先前以…之名」、d2「以器物領句帶出 X」、d3「X 是年地成立的樂種搭檔，A 唱、B 掌…」、d4「X 是國籍藝術家，創作跨…」、e1「X 是 A 與 B 兄弟，歸在…」、e2「X 是樂種團」、e3「X 是 A 領軍的國籍樂種團」。hook 只帶身分不帶名字的 7 張，第二句都補了名字與地點／樂種。
 - **11059**　「日」後一字（尺 `/[年月]\s*\d{1,2}\s*日(.)/`）：d2 日換、d3 日面；其餘 5 張只寫到年或月。與 11051 a–c 的日由／日上／日的／日首不撞（初稿 d3「日由」、d4「日首」撞 a–c，已改）。hook 四型：懸疑 d3 e2（收尾：note 寫 2013 年 1 月散團／車諾比與「被當成預言」）／斷言 d2／場景 d1 e3／人物定調 d4 e1。
 - **11060**　自查與腳本：hook 開頭前四字 7 張互異，也與已交 a 組及 `batches/hooks/` 歷來 hook 開頭不撞（初稿 d1「布魯克林」撞 nj5 c 組，已改）。hook 對 hook、hook 對全批已交 note 的中文 4-gram 0 條（初稿 e1 hook「上合成器」撞 d2 note「用上」，改「動用」）；hook 對自身 note 的逐字重疊已拆（d3 北美巡演、d4 自製服裝、e2 寫核電廠事故）。note 對 note 清掉「管合成器」（撞 a1）、「年由發行」（撞 a1／a4）、「的第三張」（撞 a3）；剩下全是指派句樣板（第二句寫、主故事年、標時序）。`node qa-batch.mjs hooks add-20261022-mc1`：d、e 無標記（只報缺 b、c 檔）；`node chk-hook-crossgroup.mjs add-20261022-mc1`：全部通過（只報不擋：d1「〈Untitled〉沒有拍子」是聲音內容）。b、c 交件後需再合掃一次 4-gram 與開頭。
+
+## 寫作層（writer-1）（條號 11061–11065）
+- **11061**　交件 `desc-tools/batches/output/add-20261022-mc1-out-1.json`，11 張，key 逐字同序。字數（Array.from）：Try Out 239、By Pass 239、Ego Eye 176（thin）、Nice Mover 224、Voyeur 239、Rheingold 238、R. 238、Night Full of Tension 240、Electric Cafe 228、Tour de France Soundtracks 236、Digital Stimulation 225。初稿 By Pass 246、R. 242、Görl 251、Try Out／Voyeur 241，一律整格或整詞捨去（「擔綱」「親手」「骨幹」、改寫掛名句），未動 note 指派的事實。
+- **11062**　第二句一律照鉤子層指派的領句；Ego Eye 為拆跨檔 4-gram「專輯年月」（對 writer-2 Linea Aspera），領句在日期前加一個「在」，其餘不動。寫作層只寫 note 列的項目，facts 有、note 沒列的（Birth Control 的「搖滾團」、曲長、工程師、樂評評語等）不寫；note 無媒體名，正文無媒體名、無轉述引導詞。
+- **11063**　Electric Cafe 改名後的盤名照卡池寫《Electric Cafe》（無重音，主線策展裁定照 MB），不照 note 的《Electric Café》，免卡片標題與簡介對不上。
+- **11064**　「日」後一字照鉤子層：Görl 改為「日發」（原「日由」，為拆「專輯年月」把句子改成 Mute 領句）、Tour de France「日上」、R.「日首」；其餘只寫到年或月。Voyeur「沒有發行單曲」是 note 指派的內容，照寫。
+- **11065**　自掃（han() 4-gram，含 hook，跨 out-1／out-2 兩檔）：本檔 3 張以上 0 條；2 張只剩地名「杜塞道夫」（Rheingold × Görl，兩句皆為鉤子層指派的領句，專名不算）。拆掉的 2 張殘片：負責合成器與、比前兩張、與聲碼器、專輯在德國、用合成器、專輯年月。`qa-batch out`：全部通過（22 張與卡單相符）；`qa-check-research`：標記 0；`fix-spacing`：無需修正。
+
+## 寫作層（writer-2）（條號 11066–11070）
+- **11066**　交件：`desc-tools/batches/output/add-20261022-mc1-out-2.json` 11 張，key 逐字同序。full 6 張 216–237（Rational Youth 237、Alas 216、Tesis 228、Sentinelle 217、Sets & Lights 233、Moskwa TV 230）；thin 5 張 137–174（Par Avion 157、Linea Aspera 166、Hard to Please 137、Let Me Go 174、Figures 167）。無超標、無掉下限，未整格捨去。`qa-batch out`（22 張全部通過）、`qa-check-research`（標記 0）、`fix-spacing`（待補 0）。
+- **11067**　第二句全照鉤子層 11054／11058 指派領句。代稱收尾：Tesis 的「錄音師」第三句具名 Jesús N. Gómez（只補藝術製作，不重提鼓電腦）；Moskwa TV 的「一首歌」具名〈Generator 7/8〉，hook 已寫的核電廠事故不重述，只補車諾比與「被當成預言」；Linea Aspera 不重提北美與簽證，只寫巡演取消與 2013 年 1 月散團（標時序）；Par Avion 的聯覺不重述。
+- **11068**　轉述與媒體：Sets & Lights 的唱片行說法、Hard to Please 的廠方文案一律改直述（不寫「唱片行說／廠方說」）；Sentinelle 的 Wendelbo 引語轉間接（「Wendelbo 說它是…」，當事人自述非轉述引導詞）；無媒體名、無榜單名次、無「據說／據傳」；rulings「主線：研究後汰換」未進正文。Figures 第二句的「比利時」與 hook 重一詞，屬指派原文，保留。
+- **11069**　日期語序與「日」後一字：Par Avion 日換、Linea Aspera 日面（照 11059）；其餘只寫到年或月，領頭名詞逐張不同（時間是年月／年月掛牌的／年月八首歌在／在年接下發行／年月第三張仍落在／首作年月日／年交給／年落腳／首張年交到／在年把）。為避開近批已上架常見殘片，初稿改掉：年月推出、年月樂團、在年發行、合計約分鐘、片年月日、錄音混音、製作人是、專輯發行、一路走到。
+- **11070**　自掃（han() 4-gram，含 hook，跨 out-1／out-2）：本檔涉及的跨張殘片只剩 2 張的「的錄音室」與樂器名「合成器節奏機」，3 張的只有地名「布魯克林」（Xeno & Oaklander 三張，其中一處在 d1 hook）；3 張以上通用殘片 0 條。
+
+## 主線審稿（11071–11080）
+- **11071**　2026-10-22 雲端主線逐張審 22 張，逐句對回研究稿。改 2 張，其餘未改字。
+- **11072**　`desc2:KaS Product|By Pass`：「評論說 KaS Product 這組二人把冷浪潮推得更冰冷，RCA 這回照樣發行。」→「法國冷浪潮二人組 KaS Product 的這張續作，1983 年 2 月由 Mona Soyoc 與 Spatsz 帶進紐約 Sorcerer Sound…」。依據：原句是 James Greene 對樂團整體的單源評價（研究 b 第 10 條，出自維基 Cold wave 條目轉引），不是對本盤，照審稿規則刪；「RCA 照樣發行」與末句重複一併刪。只刪不增事實，研究／鉤子層不用同步。
+- **11073**　`desc2:Xeno & Oaklander|Par Avion`：第二句「Serge 合成器的音色，出自復興冷浪潮的布魯克林二人組 Xeno & Oaklander 之手。」→「Xeno & Oaklander 是復興冷浪潮的布魯克林二人組，成員 Sean McBride 與 Liz Wendelbo。」依據：原句與 hook 重複 Serge 合成器、語意不通；成員名見研究 d 第 9 條。
+- **11074**　其餘逐張核過的點：Try Out「la vague froide」出處（研究 a 第 10 條，維基 Cold wave）、Voyeur「沒有發行單曲／歐洲幾城宣傳演出」（研究 b 第 3 條）、Rheingold 西德前 20 首例（德文維基）、Görl 與 Annie Lennox 相識經過（Electricity Club）、Tour de France 未趕上賽事與德國首張冠軍（研究 b）、Units「安非他命般的速度」為聲音描述保留、Tesis「節奏簡單、旋律好記」（西文維基）。Electric Cafe 盤名照卡池不帶重音。
