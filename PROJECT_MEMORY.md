@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-22｜dip-vinyl-shop｜情緒薄格策展線 ml3／ml4（恍惚線首跑）：beats／dusty 饒舌 27＋東亞恍惚 11 張上線，落恍惚 37/38，恍惚 784 → 821
+
+- **內容**：店主「新增的專輯數太少了 與雀躍嚴重不平衡」，6 個並行之一。ml3（`add-20261022-ml3`）：Knxwledge 4、Navy Blue 4、Onra 2＋Onra & Quetzal、Madlib Beat Konducta 5／6、Dudley Perkins 2、Ta-ku 2、Pink Siifu《ensley》、FlySiifu's、L’Orange、Illa J、Maxo、Suff Daddy、tomppabeats、Georgia Anne Muldrow、Liv.e、Medhane。ml4（`add-20261022-ml4`）：sugar plant 2、Polaris 2、小沢健二《Eclectic》、Dry & Heavy、Oki Dub Ainu Band、LITTLE TEMPO dub 版、신해경《속꿈, 속꿈》、Doodle《Endless Dreamless》、The Fur.《Town》。**兩批都挖不到 45，照實上架不湊數**：ml3 策展兩輪 36 → 主線汰 4 → 研究汰 5；ml4 策展兩輪 35 → 主線用池中同藝人既有評分汰 15（Mute Beat／こだま和文 判冷、wave to earth／?te／HYUKOH 判輕…）→ 研究汰 9。
+- **主線審稿**：ml3 刪 3 句（L’Orange 廠牌宣傳評語、Maxo 單源樂評 buttery、Medhane 單源 Al Green 比喻）；ml4 刪 3 句（신해경 單源樂評、Doodle「常被拿來和 Ride 比較」、The Fur. 單源金曲入圍）。試聽 ml3 22／ml4 7 ready（ml3 11 張改走 Apple 藝人目錄逐盤核對）；封面 ml4 2 張 Apple＋3 張 Discogs（Dry & Heavy CAA 500）；冷門軸 §0.8 人工 ml3 6 張、ml4 全批。
+- **落格率**：`batch-progress/mood-axes/score-ml3／score-ml4/`。ml3 26/27＝96%（Medhane z −0.1 落頹靡）、ml4 11/11＝100%（sugar plant、Oki 色溫評 0.0–0.2 貼線）。給下一輪：東亞色溫策展普遍高估 0.4–0.6；池中同藝人既有評分是最有效的篩子。
+- **類型樹**：`genre-l3-artist-map.json` 補 6 張（Ta-ku ×2、tomppabeats、Onra & Quetzal、L’Orange、小沢健二）；`rock-asia-country-map.json` 補 Doodle、The Fur.（tw）＋腳本自動判 sugar plant、Polaris、신해경。台灣流行卡 0 張（不動 `tw-pop-artists.json`）。藝人介紹未切（6 個並行），新藝人 16 位列在兩批 rulings 末尾。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`onboarding-manifest-add-20261022-ml{3,4}-20261022.json`、`batch-progress/add-20261022-ml{3,4}/*`、`batch-progress/mood-cells-20261022/{curation,master}-ml{3,4}.json`、`SCENES.md`、`desc-tools/batches/*/add-20261022-ml{3,4}-*`、`batch-progress/mood-axes/score-ml{3,4}/*`、`data/mood/*`、`genre-l3-artist-map.json`、`rock-asia-country-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`。
+- **驗證**：併 main（mc3／mc4 等）後重跑試聽／seed／樹／mood；`verify-album-onboarding --published` ml3 27／ml4 11 皆 0 error；KV 回讀 27/27、14/14 逐字一致；card_catalog 27/27、11/11；`build-card-moods` 錨點 104/104、seed 19,802；八格 恍惚 821、頹靡 1,120、冷冽 899。
+
 ### 2026-10-22｜dip-vinyl-shop｜情緒薄格策展線 mc3／mc4（冷冽線首跑）：冷爵士 19＋當代古典快作 19 張上線，落冷冽 25/38，冷冽 874 → 899
 
 - **內容**：店主「新增的專輯數太少了 與雀躍嚴重不平衡」→ 6 個並行之一（mc3、mc4）。mc3（`add-20261022-mc3`）：Tristano 派（Tristano 2、Marsh、Crothers）、Braxton 3、Rivers 2、George Russell、Don Ellis 2、Cecil Taylor、Harriott 2、Howard Riley 2、SME、Schoof。mc4（`add-20261022-mc4`）：Ligeti（Driver）、Nancarrow、Boulez 4（Kontarsky《Structures》、自指 2、Kawka）、Varèse（Craft）、Xenakis 4（Chojnacka、Carneiro、高橋悠治、Arditti）、Carter 2、Ferneyhough 2、陳銀淑、Wolpe、Birtwistle、Antheil《Ballet mécanique》（Surinach）；古典卡照 §0.6／§0.7（composer 欄、錄音層錨點制人工三軸）。

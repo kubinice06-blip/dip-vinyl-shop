@@ -86,8 +86,8 @@
 |---|---|---|---|
 | ml1 | 14001 | lovers rock＋80s rub-a-dub＋roots 二線 |  派→情緒薄格 ml1、ml2（第 1 輪） |
 | ml2 | 14081 | 暖 shoegaze／dream pop／新迷幻 |  派→情緒薄格 ml1、ml2（第 1 輪） |
-| ml3 | 14161 | beats／lo-fi hip-hop／dusty 地下饒舌 |  派→情緒薄格 ml3、ml4（第 1 輪） |
-| ml4 | 14241 | 東亞恍惚：台日韓 dream pop／shoegaze／lo-fi R&B |  派→情緒薄格 ml3、ml4（第 1 輪） |
+| ml3 | 14161 | beats／lo-fi hip-hop／dusty 地下饒舌 | ✅ 上線 27／落格 26（場景挖不到 45） |
+| ml4 | 14241 | 東亞恍惚：台日韓 dream pop／shoegaze／lo-fi R&B | ✅ 上線 11／落格 11（核心已在池、色溫多貼邊，挖不到 45） |
 | ml5 | 14321 | neo-soul 二線（Soulquarians 周邊、UK neo-soul：Omar、Lewis Taylor 一類） | |
 | ml6 | 14401 | quiet storm／slow jam 80s–90s 二線 | |
 | ml7 | 14481 | 70s 慢板靈魂：Philly／Chicago／Memphis 弦樂慢盤二線 | |
