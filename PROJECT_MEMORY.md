@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-22｜dip-vinyl-shop｜情緒薄格策展線第 2 輪 md9／mc9：冷 trip-hop 23＋80s synth-pop 12 張上線，落格 23/23、9/12
+
+- **內容**：店主「三個薄格各補到約 2,000；第 2 輪收窄到大場景、3 個工作階段並行」，本工作階段負責 md9、mc9。md9（`add-20261022-md9`，冷 trip-hop／Bristol 二線＋暗 R&B）：Archive 4、Scorn 4、Lull 2、Anika 2、Roly Porter 2、Recoil 2、Vex'd、DJ Spooky、Emika、PJ Harvey《Is This Desire?》、Ghostpoet、Bohren《Dolores》、Young Echo。mc9（`add-20261022-mc9`，80s synth-pop 二線＋new wave 冷盤＋港台日 synth-pop）：Visage、Front 242《Geography》、John Foxx and the Maths、達明一派II、Camouflage 2、DIN A Testbild、Trans-X、Psyche、Berlin、Twice a Man、Ultravox《Rage in Eden》。兩批場景都挖不到 45，照實上架。
+- **策展→研究汰換**：md9 策展 51、主線汰 15（偏暖、拍子推進、判輕）、研究汰 13（drill'n'bass／Scorn 後期兇拍、Archive 情歌與交響暖、Krush 爵士放克、Recoil 藍調、HÆLOS 偏亮、Shabrang 輕）。mc9 策展 55、主線汰 30（依池中同藝人已評分三軸：Yello／Telex 暖、DAF／Wire／P-Model 重…）、研究汰 13（80s synth-pop 二線多是真鼓＋吉他＋管樂樂團編制）。mc10、mc20、md17 併入，不再單獨派。
+- **主線審稿**：md9 改 3 處（Scorn「似乎都不滿意」單源推測刪、Recoil《Liquid》第二句補樂種、PJ Harvey「最大單曲」改「排名最高」），mc9 改 1 處（Berlin 去電台名）。廠牌照研究層更正 15 張。
+- **上線**：card_catalog 23＋12、KV 23＋13 鍵回讀逐字一致、試聽 20＋10 ready（人工指定 PJ Harvey 原盤、Archive《Lights》、Psyche 封面改 Apple）、seed +35、published gate 兩批 0 error；類型樹、抽卡封面、card-moods 重建。
+- **情緒評分**：`score-md9`、`score-mc9`。**md9 落頹靡 23/23（100%）；mc9 落冷冽 9/12（75%）**，出格 3 張全是中速 synth 的 x 判靜落平靜。八格：頹靡 1,307、冷冽 933、恍惚 891。
+- **藝人介紹**：未切（並行規矩）；新藝人名單在兩批 rulings.md 末尾（md9 6 位、mc9 7 位）。
+- **主要檔案**：`batch-progress/add-20261022-{md9,mc9}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{md9,mc9}.json`、`batch-progress/mood-axes/score-{md9,mc9}/`、`onboarding-manifest-add-20261022-{md9,mc9}-20261022.json`、`seed_cards.json`、`data/apple-audio-map-v1.json`、`data/mood/*`、`SCENES.md`、`HANDOFF-mood-cells-line.md`。
+- **驗證**：prepare／published gate 兩批 0 error；KV 回讀 36/36；qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research 全過；build-card-moods 寫入 20,120 張。
+
 ### 2026-10-22｜dip-vinyl-shop｜八格配色定稿（八色相）＋「就這張」復古向量線框特效上線
 
 - **配色**（店主：「只有四個顏色分亮暗太單調」→ 八色相照色相環排，「頹靡比較適合紫色」「冷冽更冷一點」）：暖半邊 放鬆金黃 `#f2cf5b`→雀躍橙 `#ff9a3c`→沸騰朱紅 `#ff4d3a`→恍惚洋紅 `#e8578f`；冷半邊 平靜青 `#5ee6f0`→冷冽冰藍白 `#bfe8ff`→亢奮電藍 `#4f8dff`→頹靡紫 `#9b6bff`。單一來源 `dip-tune.js` 的 `CELL_COLOR`（也掛成 `DipTune.CELL_COLOR`），星圖、命中光暈、結果頁「頻率 ●」、線框都用它。對照預覽：星圖 https://claude.ai/artifact/9vPKZDCc6W3XUWBDxjn8zH 、特效 https://claude.ai/artifact/StoRtt71YL6igbkzMwQZoL 。
