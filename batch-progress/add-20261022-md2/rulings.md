@@ -15,3 +15,13 @@
 - 同組順序：md2 策展先交件，先開 md2 研究（HANDOFF 寫「md1 寫作時才開 md2 研究」是併行上限，不是固定先後；同時代理數仍 ≤6）。
 - 研究層特別要核的聲音存疑：Have a Nice Life《Deathconsciousness》（x 2.5）、Lisa Germano《Geek the Girl》（lo-fi 乾吉他比例，y 0.9 貼邊）、Low《Drums and Guns》（失真迴圈）、Songs: Ohia《Ghost Tropic》（y 0.9）。
 
+
+## 研究 e 組
+- 10801：Flying Saucer Attack《Mirror》label 推翻卡單：卡單 Domino，實為美國 Drag City（DC177CD）、英國 FSA Records（Wikipedia＋Discogs）；年份 2000 無誤。建議主線改 label。
+- 10802：《Mirror》moodGuess 存疑：Rocker 的取樣機帶出明顯鼓拍與 drum and bass 影響（後半集中），x 1.8 恐偏低；建議主線汰換或降級。
+- 10803：Third Eye Foundation《Little Lost Soul》moodGuess 存疑：打擊樂編排是評價重點、Discogs 風格含 Drum n Bass，節奏感可能高於「慢碎拍無攻擊」。
+- 10804：Mount Eerie《Clear Moon》輕度存疑：〈Through the Trees Pt. 2〉有打擊樂、〈Lone Bell〉有薩克斯與金屬 riff、〈The Place I Live〉近 grunge 收尾；整體基調仍是合成器墊。
+- 10805：Jessica Bailiff《Even in Silence》聲音無樂評全文可核，標 thin；錄音脈絡以 Discogs 版本備註為準（德盧斯 20 Below／達拉斯／托利多），Sparhawk 角色以 Discogs 署名（工程師、製作人、演奏者）為準。
+- 10806：Midwife《Forever》《Luminol》：樂評說吉他「明亮／shimmering」，「冷」缺直接證據，可能落恍惚而非頹靡；Colin Ward 去世與疫情新墨西哥錄音皆為評論轉述、單一來源，facts 用「評論指出」。
+- 10807：Bowery Electric 首作有真人鼓手 Michael Johngren（Wikipedia 列為前成員），The Wire 稱「蹣跚遲緩」的打擊，與慢相符；鼓機是否出現查不到。
+- 10808：Pitchfork／AllMusic／Kranky 頁面抓取被擋；Wikipedia API 不通，改用 WebFetch 讀頁。WebSearch 用 3 次（Bowery、Bailiff、Midwife）。
