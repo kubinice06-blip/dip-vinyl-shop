@@ -56,7 +56,7 @@
   ],
   "status": "full",
   "coverage": "full",
-  "notes": "身分一致：MB RG b2670965 / Discogs master 958678，2015-05-05 Malignant TumorCD85。moodGuess 大致有支持：無鼓為『文案未提鼓』，非第一手證實；重度（工業翻攪＋巨大音場）有支持，冷度靠『dark／menacing』間接，無直接冷色描述。『第三張』說法：Bandcamp 只說『首張全長在十五年以上之後』，未查到前兩張的確切編號，facts 不寫序數。無晚於發行的事件。"
+  "notes": "身分一致：MB RG b2670965 / Discogs master 958678，2015-05-05 Malignant TumorCD85。moodGuess 大致有支持：『無鼓』僅為文案與頁面未提鼓，非第一手證實；重度（工業翻攪＋巨大音場）有支持；冷度只靠『menacing／暗』間接，無直接冷色描述。策展層稱『第三張』：Bandcamp 只說首張全長以來十五年以上，未查到前兩張，facts 不寫序數。"
  },
  {
   "key": "desc2:Hazard|Lech",
@@ -111,61 +111,277 @@
   ],
   "status": "full",
   "coverage": "full",
-  "notes": "moodGuess 存疑：策展層『無鼓』——廠方文案明言部分曲目有『slight rhythms』與循環，聲音含節奏元素（輕微，非鼓組，但 x 可能略高）；『金屬共鳴』無來源；『田野錄音』靠 Scaruffi 的『自然聲響數位處理』（針對整個系列）。年份：Bandcamp 與 MB 為 1996，一則樂評稱 1997，採 1996。Lustmord 以外無衝突。無晚於發行的事件（BJ Nilsen 之名與 Ash International 為後續，僅作人物脈絡，屬『與作品無關的後續生平』，寫作層若提只簡寫）。WebSearch 兩次用於 Inade／Hazard，無果的一次為 Hall of Mirrors。"
+  "notes": "身分一致：MB RG 313de15a / Discogs 73333，Malignant Tumor CD05，1996（Bandcamp 發行日 1996-08-08；一則樂評稱 1997，採 1996）。**moodGuess 存疑**：策展層『無鼓』——廠方文案明言部分曲目用循環、輕微節奏與電子處理，不是通體無節奏（輕微，非鼓組，x 可能略高）；『金屬共鳴』無來源；Scaruffi 的『自然聲響數位處理』是對整個四張系列的描述。BJ Nilsen 之名與後來的 Ash International 為後續生平，與本作無關，寫作層不宜多寫。"
  },
  {
-  "key": "desc2:Lustmord|Paradise Disowned",
-  "artist": "Lustmord",
-  "album": "Paradise Disowned",
+  "key": "desc2:Hall of Mirrors|Reflections on Black",
+  "artist": "Hall of Mirrors",
+  "album": "Reflections on Black",
   "facts": [
    {
-    "f": "1986 年由英國的 Side Effects 發行黑膠 LP，目錄號 SER 07；Soleilmoon 在 2000 年再版 CD，換了封面。",
-    "src": "https://www.discogs.com/release/121405"
+    "f": "Hall of Mirrors 是義大利的 dark ambient／實驗計畫，2005 年由 Andrea Marutti（以 Amon 之名著稱）與 Giuseppe Verticchio（以 Nimh 之名著稱）組成，起因是兩人先前合作過一張署名 Amon 與 Nimh 的 CD《Sator》。",
+    "src": "https://www.discogs.com/artist/875519"
    },
    {
-    "f": "Lustmord 即威爾斯出身的 Brian Williams，在倫敦 Lambeth 的占屋生活期間結識 Throbbing Gristle 的 Cosey Fanni Tutti 與 Chris Carter，受他們鼓勵開始做自己的音樂；這是他的第二張專輯。",
-    "src": "https://en.wikipedia.org/wiki/Lustmord"
+    "f": "《Reflections on Black》2007 年 7 月 7 日由義大利廠牌 Silentes Minimal Editions 發行，目錄號 sme 0713，CD 版。",
+    "src": "https://www.discogs.com/release/1039639"
    },
    {
-    "f": "專輯的現場錄音在 1983 至 1984 年冬天進行，地點包括法國沙特爾主教座堂的地下聖堂、威爾斯 Craig Y Ddinas 的洞穴、英國克魯的深層防空洞、班戈的 Dunster 屠宰場，以及舊 Bedlam 精神病院舊址。",
-    "src": "https://www.discogs.com/release/121405"
+    "f": "Discogs 註明這張是 2005 年 6 月至 2006 年 1 月在米蘭作曲、演奏並錄成。",
+    "src": "https://www.discogs.com/release/1039639"
    },
    {
-    "f": "1984 年 2 月錄音、1986 年 7 月混音；標籤上列有深海錄音（Dr N. Newby-Carter），並以金屬母帶刻片。",
-    "src": "https://www.discogs.com/release/121405"
+    "f": "母帶由 Verticchio 本人處理；封面由 Afe Creative Laboratories、Akifumi Nakajima 與 G.R.O.S.S. 設計。Marutti 是 Afe Records 的主理人。",
+    "src": "https://www.discogs.com/artist/55759"
    },
    {
-    "f": "參與者還有 John Murphy（噪音、電子、人聲、鑼、嗩吶類樂器 shawm 與音弓），以及 Roy Batty，他負責節奏發生器的鼓編程與砌磚、錘擊、電鋸類噪音。",
-    "src": "https://www.discogs.com/release/121405"
+    "f": "Verticchio 1965 年生於羅馬，電腦程式設計師出身，1994 年開始做電子音樂；1996 年移居泰國蘇美島約一年，接觸傳統東方音樂並開始收集各種民族樂器，這些樂器出現在他的一些唱片裡。",
+    "src": "https://www.discogs.com/artist/415886"
    },
    {
-    "f": "聲音：Discogs 的製作名單登載 Roy Batty 擔任鼓編程（節奏發生器），也就是說這張並非沒有節奏元素。",
-    "src": "https://www.discogs.com/release/121405"
+    "f": "全盤四首長曲，曲名依序是〈Entrance〉15 分 1 秒、〈Descent〉16 分 56 秒、〈Transmutation〉13 分 21 秒、〈Recovery〉8 分 21 秒，全長約 53 分鐘，像一趟下降再回返的過程。",
+    "src": "https://www.discogs.com/release/1039639"
    },
    {
-    "f": "聲音：維基百科說這張和 Lustmord 後來的作品不同，用的是「傳統樂器」——人聲、管、打擊與機械噪音——同時帶有 drone 質地。",
-    "src": "https://en.wikipedia.org/wiki/Paradise_Disowned"
+    "f": "聲音：Discogs 對 Hall of Mirrors 的藝人介紹是「典型的 dark ambient 聲響加上民族儀式元素，有時進入更吵的、接近工業的地帶，但也常發展出較平靜、甚至柔和旋律化的氛圍」；這是整個計畫的描述，不是專指這張。",
+    "src": "https://www.discogs.com/artist/875519"
    },
    {
-    "f": "聲音：封套上印有警語，說錄音使用了很特定的頻率與音量強度，必須以非常大的音量重播才能真正發揮作用。",
-    "src": "https://www.discogs.com/release/121405"
+    "f": "聲音：這張專輯的 Discogs 風格標為 Dark Ambient 與 Experimental，製作名單只有母帶與美術，沒有列出打擊樂手或樂器名目。",
+    "src": "https://www.discogs.com/release/1039639"
    },
    {
-    "f": "全盤九首（Discogs 版分 Latent／Manifest 兩面，含〈Dreams of Dead Names〉〈Terror Against Terror〉〈Pure〉等），AllMusic 評四星。",
-    "src": "https://en.wikipedia.org/wiki/Paradise_Disowned"
+    "f": "Discogs 的藝人介紹提到，計畫前三張 CD 都找了多位合作者（Nefelheim、Subinterior、Andrea Ferraris、K11、New Risen Throne、Vestigial 等），到 2018 年《When Only Shades Remain》才改由兩人獨力完成。",
+    "src": "https://www.discogs.com/artist/875519"
    }
   ],
   "hookCandidates": [
-   "在沙特爾主教座堂的地下聖堂、威爾斯洞穴與屠宰場裡收集聲音，再用高音量警語叫人播放。",
-   "卡上的藝人名稱 Lustmord 在 MB 上登載的是早期寫法 Lustmørd。"
+   "羅馬出身的電腦程式設計師 Verticchio 在泰國蘇美島收集民族樂器，回義大利和米蘭的 Marutti 組了這個計畫。",
+   "四首曲子的名字——進入、下降、轉化、回復——排成一趟往黑暗裡去再回來的路。"
   ],
-  "sound": "洞穴與地下聖堂的錄音混著粗糙工業噪音，有管、人聲、鑼與打擊，並非後期那種純 drone。",
+  "sound": "厚重的 dark ambient 長曲，帶有儀式與民族樂器氣質，整體偏緩慢的低頻氛圍。",
   "keyTracks": [
-   "Dreams of Dead Names",
-   "Terror Against Terror"
+   "Descent",
+   "Transmutation"
+  ],
+  "status": "thin",
+  "coverage": "thin",
+  "notes": "身分一致：MB RG 4c9865e3 / Discogs release 1039639，Silentes sme 0713，2007-07-07。**聲音證據薄**：找不到這張的獨立樂評（WebSearch 一次無果），聲音事實只有藝人層級的 Discogs 介紹。moodGuess 存疑：藝人介紹明講含『民族儀式元素』，儀式／民族元素常伴隨打擊或手鼓，『無鼓』未證；『厚 drone、長殘響』無來源直接支持。建議耳驗。Discogs 藝人介紹稱『前三張 CD 找了合作者』，本盤製作名單未列合作者，是否為前三張之一未查，facts 不寫序數。"
+ },
+ {
+  "key": "desc2:Inade|The Crackling of the Anonymous",
+  "artist": "Inade",
+  "album": "The Crackling of the Anonymous",
+  "facts": [
+   {
+    "f": "Inade 是來自德國萊比錫的雙人組，成員為 Knut Enderlein 與 René Lehmann，Discogs 給的自我定位是「Deep Ambient」。",
+    "src": "https://www.discogs.com/artist/14545"
+   },
+   {
+    "f": "《The Crackling of the Anonymous》2001 年 1 月 5 日由德國 Loki Foundation 發行，目錄號 LOKI 29，CD 為六折頁 Digipak。",
+    "src": "https://www.discogs.com/release/238639"
+   },
+   {
+    "f": "封套寫明所有素材都在 Light Channel 雕塑而成，素材涵蓋 1997 至 2001 年間為 Loki 錄的 Inade 作品。",
+    "src": "https://www.discogs.com/release/238639"
+   },
+   {
+    "f": "母帶（未掛名）由 Andreas Wahnmann 處理；他同樣出現在 Inade 後來的《Samadhi State》製作名單。",
+    "src": "https://www.discogs.com/release/649641"
+   },
+   {
+    "f": "全盤十首，曲名只用羅馬數字編號（I 到 X），並各附標題，如〈Eternity's Crevice〉〈Chapel Perilious〉〈Caldera〉〈Titan in Shivering Sand〉〈The Engine of Space〉；全長約 66 分鐘。",
+    "src": "https://www.discogs.com/master/39562"
+   },
+   {
+    "f": "曲子長度相當平均，多數在 6 分半到 7 分半之間，只有第 V 首〈To Those...〉只有 3 分 22 秒。",
+    "src": "https://www.discogs.com/master/39562"
+   },
+   {
+    "f": "聲音：找不到這張專輯的第一手樂評；製作名單只有 Inade 本人「雕塑」與母帶，沒有任何鼓手、打擊或外部樂手，風格標籤為 Dark Ambient。",
+    "src": "https://www.discogs.com/release/238639"
+   },
+   {
+    "f": "在 Loki Foundation 的目錄裡，這張是 LOKI 29（2001 年），Inade 五年後的《Samadhi State》已是 LOKI 41（2006 年）。",
+    "src": "https://www.discogs.com/release/649641"
+   }
+  ],
+  "hookCandidates": [
+   "十首曲子只用羅馬數字當編號，每首都是六七分鐘的長度。",
+   "德國萊比錫的兩個人，在自己的 Light Channel 工作室裡把 1997 到 2001 年的錄音雕塑成一張。"
+  ],
+  "sound": "無鼓編制的 dark ambient 長曲，由兩人在工作室合成與處理，偏深沉的低頻氣氛（待耳驗）。",
+  "keyTracks": [
+   "Eternity's Crevice",
+   "The Engine of Space"
+  ],
+  "status": "thin",
+  "coverage": "thin",
+  "notes": "身分一致：MB RG 9816de81 / Discogs master 39562，Loki Foundation LOKI 29，2001-01-05。**聲音證據極薄**：Wikipedia／Bandcamp／Chain D.L.K. 皆 404／403，WebSearch 一次無果（關鍵字被當成梵文 samadhi）。策展層『宇宙厚 drone 與金屬殘響』完全無來源，moodGuess 存疑，建議耳驗或汰換。Loki 與 Inade 的關係（自營廠牌）各處皆如此稱，但本批未取得頁面，facts 不寫。"
+ },
+ {
+  "key": "desc2:Inade|Samadhi State",
+  "artist": "Inade",
+  "album": "Samadhi State",
+  "facts": [
+   {
+    "f": "Inade 是來自德國萊比錫的雙人組，成員為 Knut Enderlein 與 René Lehmann，Discogs 給的自我定位是「Deep Ambient」。",
+    "src": "https://www.discogs.com/artist/14545"
+   },
+   {
+    "f": "《Samadhi State》2006 年 3 月 21 日由德國 Loki Foundation 發行，目錄號 LOKI 41，CD 為 Digipak；MB 另登載 2008 年 7 月的德國再版。",
+    "src": "https://www.discogs.com/release/649641"
+   },
+   {
+    "f": "封套說明這批素材是 2000 至 2002 年在 Light Channel 工作室錄下的，之後 2005 至 2006 年由 Inade 重新混音並剪輯，2006 年在 Secretlab 母帶處理（Andreas Wahnmann）。",
+    "src": "https://www.discogs.com/release/649641"
+   },
+   {
+    "f": "全盤八首，約 56 分鐘；其中〈Samadhi State〉分成 Part One 到 Part Four 四段，穿插在〈Ghost Sector〉〈Legion of God〉〈Uninhabited Red〉〈Cages〉之間。",
+    "src": "https://www.discogs.com/master/391"
+   },
+   {
+    "f": "最長的一段是〈Samadhi State Part Three〉12 分 52 秒，其次是〈Legion of God〉9 分 2 秒；第一首〈Ghost Sector〉5 分 45 秒。",
+    "src": "https://www.discogs.com/master/391"
+   },
+   {
+    "f": "Discogs 的風格標為 Dark Ambient 與 Industrial，與 2001 年《The Crackling of the Anonymous》的 Dark Ambient／Experimental 略有不同。",
+    "src": "https://www.discogs.com/master/391"
+   },
+   {
+    "f": "聲音：製作名單只有 Inade 的剪輯／混音與母帶，沒有掛名打擊樂手；Industrial 的風格標籤暗示可能有工業質地，但沒有任何文字描述節奏。",
+    "src": "https://www.discogs.com/release/649641"
+   },
+   {
+    "f": "在 Loki Foundation 的目錄裡，這張是 LOKI 41（2006 年）；五年前 Inade 的《The Crackling of the Anonymous》是 LOKI 29（2001 年）。",
+    "src": "https://www.discogs.com/release/238639"
+   }
+  ],
+  "hookCandidates": [
+   "錄音在 2000 到 2002 年完成，卻擱到 2005 年才重新混音，2006 年才出版。",
+   "〈Samadhi State〉被拆成四段，穿插在其他曲子之間。"
+  ],
+  "sound": "八首緩慢推移的 dark ambient／industrial 質地長曲，偏深低頻（待耳驗）。",
+  "keyTracks": [
+   "Samadhi State Part Three",
+   "Legion of God"
+  ],
+  "status": "thin",
+  "coverage": "thin",
+  "notes": "身分一致：MB RG 897f1d88 / Discogs master 391，Loki 41，2006-03-21。**聲音證據極薄**，同《Crackling》。Discogs 風格含 Industrial；moodGuess『最靜的一張、深低頻共振』與『冷』皆無來源，存疑。Samadhi 為梵文冥想深定狀態屬常識、無頁面來源，不入 facts。2008 年再版細節未查。"
+ },
+ {
+  "key": "desc2:Netherworld|Mørketid",
+  "artist": "Netherworld",
+  "album": "Mørketid",
+  "facts": [
+   {
+    "f": "Netherworld 是羅馬的 Alessandro Tedeschi 的名義，Discogs 的簡介稱他是來自羅馬的「stern ambient wright」。",
+    "src": "https://www.discogs.com/artist/186564"
+   },
+   {
+    "f": "Tedeschi 同時是義大利廠牌 Glacial Movements 的創辦人；《Mørketid》是該廠牌目錄號 GM002，也就是廠牌最早期的一張。",
+    "src": "https://www.discogs.com/release/1102129"
+   },
+   {
+    "f": "2007 年 4 月發行，CD 為單折 Digipak 搭透明托盤，限量 500 張。",
+    "src": "https://www.discogs.com/release/1102129"
+   },
+   {
+    "f": "CD 上的說明文字寫道：Mørketid 是挪威語，指北極冬季寒冷包覆一切、太陽不升出地平線的那段時期。",
+    "src": "https://www.discogs.com/release/1102129"
+   },
+   {
+    "f": "聲音：同一段說明稱音樂是用在北極地區找到的短小聲音片段製成，經過記錄、取樣，再完全轉化成新的形態，因此是對北極的新視野；也就是說素材是被採集再重塑的現場聲響。",
+    "src": "https://www.discogs.com/release/1102129"
+   },
+   {
+    "f": "由 Netherworld 本人作曲並混音，母帶由 Oöphoi 於 2007 年 4 月在 The Kiva 處理；封面攝影為 Bjarne Riesto，版面設計是 Studio Scisma。",
+    "src": "https://www.discogs.com/release/1102129"
+   },
+   {
+    "f": "全盤六首約 59 分鐘：〈Dreaming Arctic Expanses〉9 分 16 秒、〈New Horizons〉9 分 24 秒、〈Mørketid〉12 分 33 秒、〈Jøkul〉7 分 28 秒、〈North Pole〉7 分 58 秒、〈Virgin Lands〉12 分 47 秒。",
+    "src": "https://www.discogs.com/release/1102129"
+   },
+   {
+    "f": "聲音：Discogs 風格標為 Dark Ambient 與 Ambient（2018 版同標），製作名單沒有任何樂手或打擊樂器。",
+    "src": "https://www.discogs.com/release/13990525"
+   },
+   {
+    "f": "2018 年 6 月 11 日有 FLAC 數位版重發，發行方包括 Glacial Movements、Easyreplica 與 The Kiva。",
+    "src": "https://www.discogs.com/release/13990525"
+   },
+   {
+    "f": "Glacial Movements 在 Bandcamp 上自述是「為了用聲音描寫與傳遞這些想法與影像而生」的廠牌，主題圍繞冰冷、被遺忘的地景。",
+    "src": "https://glacialmovements.bandcamp.com/"
+   }
+  ],
+  "hookCandidates": [
+   "曲名取自挪威語：太陽整季不升起的北極冬夜，Tedeschi 把在北極找到的聲音片段取樣、再整個改造。",
+   "限量 500 張，母帶由 Oöphoi 在 The Kiva 處理，是 Tedeschi 自己創辦的 Glacial Movements 的第二個目錄號。"
+  ],
+  "sound": "由北極採集的聲音片段取樣再徹底改造成的冰層氛圍長曲，無節奏樂器記載，偏冷。",
+  "keyTracks": [
+   "Mørketid",
+   "Dreaming Arctic Expanses"
+  ],
+  "status": "thin",
+  "coverage": "thin",
+  "notes": "身分一致：MB RG 4f86f04b / Discogs release 1102129，Glacial Movements GM002，2007-04，限量 500。**聲音證據薄**：無獨立樂評（Bandcamp 專輯頁 404、web.archive 無法取用），聲音事實全來自 CD 封套文字與 Discogs 風格。moodGuess：『無鼓、冰層 drone、長殘響』與封套說的『取樣再轉化』方向相容，但鼓的有無與殘響長度無來源；『極寒』只有主題層（北極冬夜）。Discogs 稱 Tedeschi 是創辦人，但 Glacial Movements 的成立年未查到，不寫『最早期』以外的序數。"
+ },
+ {
+  "key": "desc2:Lull|Like a Slow River",
+  "artist": "Lull",
+  "album": "Like a Slow River",
+  "facts": [
+   {
+    "f": "Lull 是 Mick Harris 的 dark ambient 計畫，1990 年起步時只有一台取樣機、一個殘響踏板和一台四軌錄音機。",
+    "src": "https://en.wikipedia.org/wiki/Lull_(band)"
+   },
+   {
+    "f": "Mick Harris 1985 年接替創團成員 Miles Ratledge 成為 Napalm Death 的鼓手，被認為是 grindcore 一詞的提出者，1991 年離團；同年他創立 Scorn，之後也加入 Painkiller。",
+    "src": "https://en.wikipedia.org/wiki/Mick_Harris"
+   },
+   {
+    "f": "《Like a Slow River》是 Glacial Movements 的 GM004；Discogs 登載 2008 年 5 月發行，CD 為六折頁 Digipak，Bandcamp 數位版則標 2009 年 4 月 27 日。",
+    "src": "https://www.discogs.com/release/1359281"
+   },
+   {
+    "f": "Discogs 的註記寫明這張是 2008 年 2 至 3 月專為 Glacial Movements 創作並混音；Harris 一人掛名創作與混音，封面攝影 Bjarne Riesto（與 Netherworld《Mørketid》是同一位），美術設計 Oleg Galay。",
+    "src": "https://www.discogs.com/release/1359281"
+   },
+   {
+    "f": "全盤五首約 60 分鐘：〈Whiteout〉14 分 30 秒、〈The Sheet〉14 分 37 秒、〈Like a Slow River〉14 分 2 秒、〈Treeless Grounds〉12 分 25 秒，最後〈Illusion of Unbroken Surface〉只有 4 分 31 秒。",
+    "src": "https://www.discogs.com/release/1359281"
+   },
+   {
+    "f": "聲音：廠方稱這是「以尖銳而極簡的氛圍，包裹在黑暗、冰冷而巨大的音景裡」的作品，並說是這位工業氛圍先驅「最冷、最黑的作品」。",
+    "src": "https://glacialmovements.bandcamp.com/album/like-a-slow-river"
+   },
+   {
+    "f": "聲音：Discogs 風格標為 Dark Ambient、Drone 與 Minimal；封套引言寫著讀者會帶著遠方冰河流動的回聲沉入最深的睡眠。",
+    "src": "https://www.discogs.com/release/1359281"
+   },
+   {
+    "f": "廠方把這張接在 Lull 較早的《Cold Summer》《Continue》，以及和 Martin Bates 合作的《Murder Ballads》三部曲之後。",
+    "src": "https://glacialmovements.bandcamp.com/album/like-a-slow-river"
+   },
+   {
+    "f": "Harris 在 Scorn 時期後來專注於極低而大聲的低頻，維基稱他的作品預示了 dubstep；Lull 與 Scorn 並列為他自 1990 年代中期以來的主要計畫，偏電子、氛圍與 dub。",
+    "src": "https://en.wikipedia.org/wiki/Mick_Harris"
+   }
+  ],
+  "hookCandidates": [
+   "前 Napalm Death 鼓手 Mick Harris 這張完全不碰鼓，五首曲子有四首超過 12 分鐘。",
+   "廠方稱這是 Lull 最冷、最黑的作品：2008 年 2 至 3 月專為 Glacial Movements 做的。"
+  ],
+  "sound": "五首長曲的極簡 drone，被廠方形容為黑暗、冰冷而巨大的音景。",
+  "keyTracks": [
+   "Whiteout",
+   "Like a Slow River"
   ],
   "status": "full",
   "coverage": "full",
-  "notes": "身分一致：MB RG f8a39d37（掛名 Lustmørd）/ Discogs master 40147，Side Effects SER 07，1986。**moodGuess 存疑（重要）**：策展層『無鼓、drone、洞穴殘響』——Discogs 製作名單明列『Drum Programming [Rhythm Generators]』Roy Batty，維基稱用『傳統樂器』含打擊與機械，Discogs 風格 Industrial／Experimental 而非 Dark Ambient；實際比較接近早期工業，x 可能偏高、不一定是靜止 drone。建議汰換或耳驗。Discogs 曲目表分 Latent／Manifest 兩半共 10 筆，維基稱 9 首，facts 不寫確切曲數的主張以『九首』來自維基，Discogs 為 10 筆含分面標題；寫作層勿寫曲數。『第一張 dark ambient』類說法查無來源，不採。"
+  "notes": "身分一致：MB RG 80aa3044 / Discogs master 1129843，Glacial Movements GM004，2008-05。**聲音證據偏廠方文案**，無獨立樂評（WebSearch 本組用完，沒用在這張）。moodGuess：『無鼓、冷、靜止、重』——廠方明確說冷、黑、巨大、極簡，與預估一致；『無鼓』未明講，但曲長與風格（Drone／Minimal）相容。Harris 的鼓手背景是與作品無關的前史，寫作層可點到，勿多寫 Scorn 低頻（那是另一個計畫）。Harris 在 Napalm Death 的年份依維基；其『grindcore 一詞提出者』為維基用語『credited with』，寫作層寫『被認為』。"
  }
 ]

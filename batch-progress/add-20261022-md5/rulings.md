@@ -52,3 +52,16 @@
 - 17035 Kammarheit 兩張聲音面向分開：《Asleep and Well Hidden》（2002–03 冬天、荒地廢墟、夢遊式 drone）對《The Nest》（2009–15 錄製、地底廳堂、『最複雜』）。策展層『比《The Starwheel》更黑更厚』無來源，未入 facts。
 - 17036 Yen Pox《Blood Music》卡單年 1995 是原版；2010 Malignant TumorCD41 為雙碟重混版（Hensley 重混、新封面），卡片身分不變。
 - 17037 WebSearch 用 3 次（Yen Pox 樂評、Troum 合作〔無果〕、Svartsinn）；其餘走 Discogs／MB API 與 WebFetch。
+
+## 研究 e 組
+- 17041 Lustmord《Paradise Disowned》moodGuess 嚴重存疑：Discogs 製作名單有 Roy Batty 擔任 Drum Programming [Rhythm Generators]，維基稱用傳統樂器（人聲、管、打擊、機械），風格標 Industrial／Experimental，並非後期的靜止 drone；建議汰換或耳驗。
+- 17042 Lustmord《Purifying Fire》是選輯（封底 collected works 1995–1998，Discogs 標 Compilation），有歷史定位（首度彙整 12 吋單曲、DeepNet、Seedmouth 與未發行曲），保留；聲音無第一手描述，moodGuess 僅推論，〈Deep Calls to Dub〉暗示 dub 但鼓有無未知。策展層『Ant-Zen 再版』未取得證實，facts 不寫。
+- 17043 Hazard《Lech》moodGuess 存疑：廠方文案明言部分曲目有循環與輕微節奏；『金屬共鳴』無來源。
+- 17044 Hall of Mirrors、Inade ×2、Netherworld 四張聲音事實僅有 Discogs 風格／封套文字／藝人簡介（無獨立樂評，status thin）。Hall of Mirrors 藝人簡介含『民族儀式元素』，『無鼓』未證；Inade 兩張『宇宙厚 drone／深低頻』完全無來源，建議耳驗或汰換。
+- 17045 Yen Pox 與 Lull 聲音有廠方文案支持（Yen Pox 巨大音場＋工業翻攪、未提鼓；Lull『最冷最黑』），與預估相容。Yen Pox 策展層『第三張』未證，不寫序數。
+- 17046 WebSearch 用 3 次（Inade 兩張〔被誤判為梵文，無果〕、Hazard《Lech》、Hall of Mirrors〔無果〕）；其餘走 MB／Discogs API、Bandcamp、Wikipedia。Discogs 網頁 403、Inade／Glacial Movements 多數 Bandcamp 專輯頁 404、web.archive 不可用。
+
+## 主線（研究層後汰換）
+- **17071**　研究層後汰 2 張（e 組研究稿條目已刪）：Lustmord《Purifying Fire》（e：封底標 collected works 1995–1998，彙整 12 吋與合輯曲目＝選輯，非正規錄音室專輯；MB 未掛 Compilation）、Lustmord《Paradise Disowned》（e：Discogs 列鼓編程、維基稱傳統打擊與機械，早期工業期有拍）。同位置替入 master 候補、組別不變：Atrium Carceri《Kapnobatai》（策展汰的「勻一勻」名額收回，Atrium Carceri 個人盤 5 張）、Netherworld《Alchemy of Ice》（y 1.3，與《Mørketid》同型）。補研究由一支代理 append 進 e 組檔。
+- **17072**　其餘存疑不汰：Atrium Carceri、Sabled Sun、Inade、Hall of Mirrors、Netherworld、Yen Pox 等「無鼓未證實／聲音來源薄」屬於 dark ambient 廠牌文案通常不寫「無鼓」的資料缺口，不是反證；Desiderii Marginis《Songs Over Ruins》與 Sephiroth《Cathedron》的慢軍鼓／儀式鼓無攻擊性，照 10-22 規則仍靜；Randal Collier-Ford《The Architects》的 drum hits 同理；Hazard《Lech》輕循環節奏同理。評分後看落格。
+- **17073**　研究層更正策展層的說法（Majak＝Mayak 鈽廠非燈塔、Eye of Tunguska 題材是 1990 年代遇難事件、Within Ruins 非首張、2147 非廢棄太空站、Void 非創廠旗艦）全照研究稿，寫作層以研究稿為準。Cities Last Broadcast《The Cancelled Earth》年份照 MB 2009（Bandcamp 2008-04-22 為數位先行；facts 並列，正文只寫 2009 或不寫日期）。
