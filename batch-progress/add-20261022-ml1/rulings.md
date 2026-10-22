@@ -54,3 +54,17 @@
 - **14019**（Aswad《Not Satisfied》）：1982 CBS 對。製作 Aswad 與 Reuben Campbell（非 Mad Professor）、附贈 dub 10 吋；策展層「銅管墊」無來源，寫作層不得寫銅管。混音濕度無文字證據，輕度存疑。
 - **14020**：保留未用。
 - **b 組總結**：推翻策展層 3 處（Rita 廠牌、Maxi 廠牌、Jarrett 盤名）；moodGuess 存疑 8 張（Wayne Jarrett 除外；其中中度存疑 4 張：Kofi、Deborahe、Jimmy Riley、Gregory Isaacs），共同現象是 1981–1989 年的英國與牙買加 lovers rock 多為數位／合成器／鼓機製作，偏乾淨明亮。
+
+## 研究 e 組
+- **14041**（Across the Red Sea）：原盤 1982 成立（MB 1998 是德國 CD 再版）。與 moodGuess 大致相符；Berry Street 與 Channel One／Harry J 兩地錄混，Sherwood＋Jarrett Tomlinson 署名。濕度為推論。
+- **14042**（Showcase）：1982 W-1382 無落差。curatorRisk 的「每首接 dub 段」查無來源（只有六首、無 dub 曲名）。聲音僅 Wackie's 通論（lo-fi），status thin。
+- **14043**（Wicked Ago Feel It）：1984 無落差。樂手有 Mittoo 鋼琴與兩支薩克斯風、兩支長號，可能偏明亮，moodGuess「糊厚低頻」存疑（弱）。曲名〈Good Thing Going〉與另一卡同名，勿混。
+- **14044**（Fally Lover）：1980 無落差。推翻 moodGuess.why 的「Scientist 混音」：Discogs 混音署 Barnabas，Channel One 錄混，Junjo 製作、Roots Radics 伴奏。聲音為班底通論推論，thin。
+- **14045**（Look How Me Sexy）：1982 無落差。推翻「Scientist」：專輯製作人 Linval 自己、混音署 Soldgie；Junjo 只在同名單曲。聲音無樂評，thin。
+- **14046**（Suffering）：1981 無落差。推翻「Roots Radics／Channel One」：Discogs 署製作 Flako Palmer、Lloyd Parks／Horsemouth／Junior Marvin、混音 Errol Brown；結構是每首人聲接 dub，支持濕與低頻但無樂評。thin。
+- **14047**（Country Life）：年份 1985（Discogs）或 1986（Newtone）未定，建議卡單維持 1985、寫作層不寫確切年。**moodGuess 存疑（強）**：唯一聲音描述是「light, urban-elegant, mellow, clean」，建議重評或汰換。
+- **14048**（Shaolin Temple）：1979 無落差。Junjo／Roots Radics／Scientist 僅 Discogs 單源，維基未點名此盤。Levy 當時十五歲、嗓音高亢，慢拍重低頻無證據，moodGuess 存疑（中）。
+- **14049**（Playing It Cool & Playing It Right）：1981 無落差。人聲＋dub 交錯、重度疊錄有兩源；z 色溫查無證據，不背書也不推翻。Lloyd Barnes（執行製作）與 Wackie's 的是否同人未證實。
+- **14050**：保留未用。
+
+**主線需決定**：14047 建議重評或汰換；14043、14048 弱存疑；14044、14045、14046 班底與策展層敘述不符，鉤子層別寫 Scientist／Roots Radics 於後兩張。
