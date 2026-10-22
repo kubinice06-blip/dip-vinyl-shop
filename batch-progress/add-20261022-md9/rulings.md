@@ -32,3 +32,32 @@
 - 17362：《Call to Arms & Angels》屬實。moodGuess 存疑：plattentests、laut.de 提到快節拍（Gary Numan 式）、驅動的〈Numbers〉、轟然吉他尾聲、舞曲流行的〈Enemy〉，且合成器「比前作更暖」，推進與冷度皆不符；17 首、100 分鐘以上，內部差異大。建議汰換或降信心。Keeler 治療致巡演延後屬發行後、與宣傳綁定事件，若寫入須標時序。
 - 17363：《Kistvaen》屬實，發行日 MB／Discogs 2020-05-29、Quietus 6 月 5 日，年份不影響。聲音（電子顫動、深埋無詞人聲、田野錄音、無穩定鼓）支持原估，低頻與殘響厚度無明文。
 - 17364：《Nexus》廠牌 Young Echo → Ramp Recordings（Discogs、RA、FACT）；預告日 5 月 27 日，實際 2013 年 6 月底至 7 月初。Dummy：巨大低頻、暗、略欠歡愉，支持 y、z；14 首風格異質，x 恐有幾首 3.0 以上。
+
+## 研究 b 組
+- **17331**（Zander／Greetings from Birmingham／Plan B 廠牌）：卡單廠牌 Earache／Earache／Ohm Resistance 與 MB、Wikipedia 不符。實為 Zander＝KK Records（比利時）／Invisible（美）、Greetings＝Hymen、Plan B＝Hymen。Earache 只到 Logghi Barogghi（1996）。年份皆對。研究稿 facts 照實寫，請主線改卡單廠牌。
+- **17332**（Stealth 廠牌）：Ad Noiseam（2007-10-12）與 Ohm Resistance（2007-10-22）並存，非推翻；Wikipedia 的 11-19 與 MB／Bandcamp 不符不採。
+- **17333**（moodGuess 存疑・Stealth）：Textura 評「shotgun snare cracks」「humongous bass wobble」，軍鼓攻擊性強，2007 年式 dubstep 重擊，x 2.4 恐偏低。建議主線複核，必要時汰換。
+- **17334**（moodGuess 存疑・Refuse Start Fires）：廠牌文案稱「perhaps the angriest」、加入現場鼓手，標籤含 drum & bass／noise；本層無專業樂評可佐證，x 與「極簡慢拍」存疑。鼓手姓名 Wikipedia 拼法不一（Yan Treasey／Ian Treacy），facts 不寫。
+- **17335**（moodGuess 存疑・Anika 兩張）：首作 y 1.0 無低頻厚度來源；《Change》為現場鼓與貝斯、「driving bass lines」、少稜角、較首作乾淨，x／z 邊距薄。
+- **17336**（Logghi／Zander／GfB／Plan B）：Scorn 這幾張來源只有風格標籤與「極簡節拍、非常深的貝斯線」，無逐曲速度；無人聲嘶吼（Bullen 1995 離團）。GfB 曲目名單未取得，keyTracks 留空。
+
+## 研究 c 組
+- **17341**（moodGuess 存疑・Emika《DVA》）：布拉格愛樂弦樂、小號、女高音、Chris Isaak 翻唱，編制比首作豐富，色溫可能偏暖、x 2.6 可能越線。
+- **17342**（moodGuess 存疑・Anja Garbarek《Smiling & Waving》）：管弦樂編制（弦樂、銅管、木管）＋少量電子，鼓輕或悶，低頻厚度無來源，y 0.9 恐不足；z／x 有「glacial、minimalist」佐證。
+- **17343**（moodGuess 存疑・PJ Harvey《Is This Desire?》）：來源只證吉他退場、鍵盤貝斯電子鋪底，無逐曲鼓機／低頻資料，質地偏輕風險未排除。
+- **17344**（moodGuess 存疑・Sevdaliza《Shabrang》）：Beats Per Minute 稱質地「soft, airy」，鋼琴主奏曲與弦樂多，y／z 存疑；無 trap／重低頻來源。
+- **17345**（moodGuess 存疑・Ghostpoet）：〈Plastic Bag Brain〉為 Afrobeat riff＋Tony Allen 的鼓，結尾曲 gospel 暖意；其餘 glitch、末日鋼琴支持冷。
+- **17346**（Bohren《Dolores》）：編制有鼓手與兩把貝斯，非「無鼓」；慢與暗僅有團體自述，無逐曲速度。廠牌卡單 Ipecac 為美版，歐版 PIAS。
+- **17347**（DJ Spooky）：「慢板」無來源，僅 illbient 風格標籤與 NYT「殘響／失真」；Fact 榜名次與星等不入 facts。
+
+## 研究 d 組（條號 17351–17360）
+- 17351：Recoil《Unsound Methods》屬實（Mute，1997-10-27）。來源只有維基與 Discogs，無樂評講拍子／失真／低頻；moodGuess 存疑：〈Control Freak〉〈Stalker〉有無推進機械拍、〈Red River Cargo〉福音素材偏暖，皆無證據，低信心。
+- 17352：Recoil《Liquid》屬實。moodGuess 存疑：官方歷史站稱「憤怒與暴力」「像 NIN 但更輕」，Galás 嘶喊人聲、〈Jezebel〉黑人福音四重唱偏暖；鼓為真人即興錄後剪貼，非純程式。「靜」站不住證據。
+- 17353：Recoil《subHuman》屬實。moodGuess 存疑：主唱為紐奧良藍調歌手（口琴、吉他）＋真人鼓與貝斯＋奧斯汀錄音，偏暖（z 邊距中等已知）。
+- 17354：Recoil《Bloodline》屬實，status thin。錄音日期維基與 Discogs 版權頁矛盾，採 Discogs。moodGuess 存疑：〈Faith Healer〉單曲混音陣容（LFO、trance mix、Moby）偏舞池，x 2.7 邊緣；建議低信心或汰。
+- 17355：HÆLOS《Full Circle》屬實（Matador，2016）。推翻策展層：「Portishead 脈絡」無任何來源，不寫。moodGuess 強烈存疑：維基稱 dark euphoria／拿 Depeche Mode、OMD 比，Discogs 標 Breaks、Ethereal、Rock，真人鼓與吉他、Mark Ralph 混音，疑為有推進的偏亮流行電子；建議優先汰換。
+- 17356：Lull《Continue》屬實（Release Entertainment，1996-10-01，單曲 62 分鐘）。無樂評；「無鼓」由 Discogs 風格（Dark Ambient／Minimal／Drone）推論，status thin。
+- 17357：Lull《Journey Through Underworlds》推翻廠牌：卡單 Release Entertainment → 1993 原版為 Sentrax（SET 4 CD）；2024 再版 Cold Spring。三首長曲（16:43／12:10／45:45），Justin K. Broadrick 經手混音。聲音無樂評，無鼓為推論，thin。
+- 17358：DJ Krush《Butterfly Effect》屬實（Es.U.Es，2015）。moodGuess 強烈存疑：Igloo 評論描述 jazz-funk、小號／薩克斯風／鋼琴、弦樂背景的饒舌（Divine Styler 三首、Tha Boss）、MC Crosby Bolani 的 dancehall 式唸唱；Discogs 標 Jazzy Hip-Hop、Broken Beat。偏暖有律動有人聲，建議汰換。
+- 17359：WebSearch 用 3 次（Liquid、Continue、Butterfly Effect）。Wikipedia curl 429、AllMusic 403、recoil19 單張頁 404、Pitchfork 被封、Sputnik 503；Discogs API 與 MB 直連可用。
+- 17360：本組 8 張無選輯或重複卡。建議汰換候選（主線裁）：HÆLOS、Krush、Bloodline（低信心）；Liquid、subHuman、Unsound Methods 為存疑留用。
