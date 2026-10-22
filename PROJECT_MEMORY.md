@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-22｜dip-vinyl-shop｜能量軸改標準「兇不兇優先於快不快」，60 張慢而兇的重判到躁
+
+- **改動**：店主裁定 Sunn O))) 留頹靡、依此定標準。躁 ＝ 攻擊性且有打擊在推（再慢也算）；缺一留靜（dub／trip-hop 有拍沒攻擊，drone／噪音牆有攻擊沒拍）。標準寫進 `batch-progress/mood-axes/score500/BRIEF.md`；靜而極重 267 張逐張重判，60 張移到躁（`data/mood/overrides.json` 共 61 筆，含前一日《Monotheist》），doom／sludge／後金屬／工業／黑金屬為主；判例與留靜清單在 `rulings.md`。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/score500/BRIEF.md`、`batch-progress/mood-axes/rulings.md`、`batch-progress/mood-axes/intensity-rejudge/candidates.json`
+- **驗證**：重建 gate 過，錨點 104/104；八格 頹靡 982→926、亢奮 2592→2648、沸騰 1983→1987、恍惚 596→592。
+
 ### 2026-10-21｜dip-vinyl-shop｜店主改判 Celtic Frost《Monotheist》→ 亢奮；build-card-moods 加 --allow-missing
 
 - **改動**：店主在頻率選歌抽到《Monotheist》落頹靡，裁定「要去躁的那一端」。`data/mood/overrides.json`（首筆）能量 2.6→3.4，質地 2、色溫 −2 不動，落亢奮（與 To Mega Therion、Morbid Tales 同格）。同速同重的 Godflesh、Candlemass 不連動。`scripts/build-card-moods.mjs` 新增 `--allow-missing`：342 張新上架卡還沒評分讓 gate 紅、改判寫不進前台檔，加旗標照樣寫（缺的存 null，前端雜湊對卡跳過）。

@@ -38,6 +38,7 @@
 | 4 | 快、密、會讓人想跳或甩頭 | 山下達郎、Chic、The Clash、techno |
 | 5 | 極快極密極大音壓、不給喘息 | Slayer、Merzbow、Coltrane《Interstellar Space》、Melt-Banana |
 硬規則：合輯以收錄曲**中位數**判；一張盤有快有慢取整體印象，不取最快的一首；慢但極大聲（Sunn O)))）是 1–1.5，音壓不等於能量。
+**2026-10-22 店主改標準——「兇不兇」優先於「快不快」**：躁（≥3.0）要同時有 (A) 攻擊性：失真 riff 牆、嘶吼／咆哮、刺耳噪音、音壓貼臉；(B) 有打擊在推：鼓或拍子在敲，再慢也算。兩樣都有就是躁，速度只決定高低：慢而兇（doom、sludge、慢速黑金屬、工業碾壓）3.1–3.4，中速 3.5–3.9，快 4 以上。只有一樣不算躁：**有拍沒攻擊性**（dub、dub techno、trip-hop、dubstep、slowcore、shoegaze 柔牆、cloud rap）照原表 2–2.9；**有攻擊沒拍**（Sunn O)))、Earth 2、Khanate、drone doom、噪音牆、暗黑 ambient、現代古典音塊、工業 drone）照原表 1–2，Sunn O))) 仍是 1–1.5。先例：Celtic Frost《Monotheist》2.6→3.4、Electric Wizard《Dopethrone》1.8→3.1、Godflesh《Streetcleaner》2.6→3.4；Sunn O)))、Khanate、Ben Frost、Penderecki 不動。
 
 **Y 質地（輕 −2 ↔ 重 +2）**：「聲音是乾淨輕盈、還是厚重糊爛」
 | 分 | 聽起來 | 例 |
