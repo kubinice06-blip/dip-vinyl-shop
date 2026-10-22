@@ -22,3 +22,22 @@
 - 10615 Shpongle《Tales of the Inexpressible》策展層「公認高峰」無可驗證來源，facts 不收；曲名〈Room 2ॐ〉含天城體 Om 符號，QA 若擋可改寫 Room 2 Om。
 - 10616 Wardruna《Runaljod – Yggdrasil》排行榜與獎項未取得；Fimbulljóð Productions 僅見維基專輯頁，正文寫 Indie Recordings。
 - 10617 Hexvessel《No Holier Temple》前作名與成團史未取得（維基未能開啟），僅用 MB 的 2009 成立年；Kvohst 別名單源，不寫。
+
+## 研究 c 組
+- **10621**　Etnica《Alien Protein》策展層寫「首張專輯」不成立：維基、MB、Discogs 皆列 1995《The Juggeling Alchemists Under The Black Light》（High Society）在前，本作是第二張；寫作層不得寫首作。
+- **10622**　Hux Flux《Cryptic Crunch》：Koyote Records 是英國布萊頓廠牌（Dara Lee 經營），非瑞典。編制維基（Tapper 一人）與 Discogs（1998 成軍的團體，專輯後三人離開）矛盾，兩邊並存，寫作層不斷言誰做了專輯；2018 年 Tapper 過世不寫。
+- **10623**　Buddy Holly：發行日 MB 1958-07、Discogs 1958-03、維基 1958-02-20 三者不一，寫作層只寫「1958 年初」。「奠定吉他貝斯鼓編制」無來源，不寫。
+- **10624**　Jerry Lee Lewis：策展層「Sun 時期唯一當年發行的正規專輯」無來源，不寫「唯一」。專輯刻意沒收〈Great Balls of Fire〉與〈Whole Lotta Shakin'〉（維基）可寫。
+- **10625**　Gene Vincent《Bluejean Bop!》：〈Be-Bop-A-Lula〉不在專輯內（Discogs 曲目＋維基交叉）；錄音在納許維爾 Bradley Film & Recording Studio，三輪錄音日期出自 Gallup 維基頁，單一來源。
+- **10626**　Vibrasphere：本作為第二張（前有 2000《Echo》）；Elster 專輯後約半年離團可寫，2009 年後的人事不寫。Digital Structures 的 Discogs label 頁簡介為美國加州，疑同名他廠，廠牌沿革不寫。
+- **10627**　X-Dream、GMS、Cosmosis：英文維基無 X-Dream／Cosmosis 條目，X-Dream 標 thin；Rough & Rush 與成員關係未證實，不寫成化名。GMS 黑膠／CD 差一首（〈5th Rezeptor〉vs〈Jaws〉），寫曲目以黑膠為準。
+
+## 研究 d 組
+- **10631**　Gene Vincent and His Blue Caps 同名專輯：Discogs T 811 發行日 1957-03-04；維基無獨立專輯條目。Cliff Gallup 返團錄第二張 LP 的說法來自 Gallup／Vincent 維基頁，具體場次（1956-10-15 至 18）與本盤的對應未明寫，列 uncertain。
+- **10632**　Bill Haley《Rock Around the Clock》：維基與 MB 皆 1955-12-19，解決 curatorRisk，年份用 1955。為單曲彙整的當年原版 LP，有定位（最早上 Billboard 專輯榜的搖滾專輯之一），保留。
+- **10633**　Fats Domino 兩張：《Rock and Rollin'》維基稱單曲 1950–1956 彙整、同頁錄音年寫 1949–1955，自相出入，寫作層只寫「早期單曲」；《This Is Fats Domino!》維基稱第三張（策展層寫第二張），條目帶可信度標記，不寫序數、銷量單源。
+- **10634**　Wanda Jackson《Rockin' with Wanda》：策展層寫收〈Let's Have a Party〉不成立，曲目表（維基、Discogs）無此曲；推翻。
+- **10635**　Johnny Burnette Trio：年份 MB／Discogs 1956-12，維基藝人條目 1957，採 1956；失真吉他音色來源（Burlison 鬆管說 vs Grady Martin 彈奏說）並存；錄音室名稱各源不一，只寫納許維爾；製作人 Discogs 為 Owen Bradley、維基寫 Bob Thiele，製作人不寫。
+- **10636**　Carl Perkins《Dance Album of Carl Perkins》：MB／Discogs 1957（Sun LP-1225）、維基 1958，採 1957。維基頁標「來源不可靠」，錄音日期為單源。寫作層須點明是 Sun 的 rockabilly Carl Perkins，非池中同名爵士鋼琴手。
+- **10637**　The Platters《The Platters》：策展層寫收〈Only You〉〈The Great Pretender〉，MB／Discogs 的 MG 20146 曲目表無此二曲；推翻。〈I'm Sorry〉維基標 1957 年單曲，與 1956 年 LP 曲目時序矛盾，專輯內容列 uncertain，策展層「商業頂峰」「1959 King 同名 LP」無來源不寫。
+- **10638**　Everly Brothers 首作：1958-01、Cadence CLP-3003 確認；「影響 Beatles／Simon & Garfunkel」無來源，不寫。
