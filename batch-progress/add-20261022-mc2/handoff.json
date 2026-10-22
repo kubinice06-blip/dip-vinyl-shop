@@ -1,0 +1,39 @@
+{
+ "batch": "add-20261022-mc2",
+ "cards": 15,
+ "written": {
+  "cardCatalog": 15,
+  "kvKeys": 16,
+  "seedRows": 15,
+  "previewReady": 12,
+  "previewUnavailable": 3
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 15,
+  "changed": [
+   "desc2:Contortions|Buy",
+   "desc2:Wetdog|Frauhaus!",
+   "desc2:100 Flowers|100 Flowers"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "prepareGate": "0 error",
+  "publishedGate": "0 error"
+ },
+ "mood": {
+  "target": "冷冽",
+  "landed": "8/15",
+  "scored": "batch-progress/mood-axes/score-mc2/scored-mc2.json"
+ },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "無"
+ }
+}

@@ -1,0 +1,1403 @@
+{
+ "group": "mc1",
+ "factions": [
+  {
+   "id": "fr-be",
+   "zh": "法比冷浪潮／minimal synth",
+   "count": 9,
+   "why": "鼓機＋單薄合成器、法語冷淡人聲；吉他樂團型的冷浪潮留給 mc2"
+  },
+  {
+   "id": "de",
+   "zh": "德語區冷合成器（NDW 電子、杜塞道夫）",
+   "count": 9,
+   "why": "序列器與鼓機的機械冷，比 DAF 輕"
+  },
+  {
+   "id": "uk-us",
+   "zh": "英美加 minimal synth 原典",
+   "count": 9,
+   "why": "純合成器時期與 synth punk，乾而冷"
+  },
+  {
+   "id": "eu",
+   "zh": "歐陸周邊與蘇聯 coldwave／tecno-pop",
+   "count": 8,
+   "why": "西、義、荷、蘇聯的鼓機冷浪潮"
+  },
+  {
+   "id": "revival",
+   "zh": "2009 後 minimal wave／coldwave 復興",
+   "count": 12,
+   "why": "Wierd／Dark Entries／Dais 系類比合成器復興，製作乾"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "KaS Product",
+   "album": "Try Out",
+   "year": 1981,
+   "label": "RCA",
+   "country": "fr",
+   "faction": "fr-be",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "法國南錫二人組首張、法語區冷浪潮代表作；鼓機＋粗糙序列器快跑，Mona Soyoc 冷硬人聲，薄而尖",
+   "moodGuess": {
+    "x": 3.9,
+    "y": -0.2,
+    "z": -0.9,
+    "why": "鼓機快拍、單薄序列器，乾、冷硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6ede25d9-e03a-3ddd-b1ac-c7b92dfa0773",
+    "https://coverartarchive.org/release-group/6ede25d9-e03a-3ddd-b1ac-c7b92dfa0773/front"
+   ],
+   "mbRgMbid": "6ede25d9-e03a-3ddd-b1ac-c7b92dfa0773",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "人聲有點兇，但編制單薄，不像失真牆"
+  },
+  {
+   "artist": "KaS Product",
+   "album": "By Pass",
+   "year": 1983,
+   "label": "RCA",
+   "country": "fr",
+   "faction": "fr-be",
+   "genres": [
+    "electronic"
+   ],
+   "why": "KaS Product 第二張，冷浪潮轉向較精緻的合成器流行；拍子快、聲部清楚、氣氛疏離",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.4,
+    "z": -0.8,
+    "why": "鼓機中快、合成器乾淨分明，疏離"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/11f0d47f-16d2-3d19-b247-c8c7e5b2eca6",
+    "https://coverartarchive.org/release-group/11f0d47f-16d2-3d19-b247-c8c7e5b2eca6/front"
+   ],
+   "mbRgMbid": "11f0d47f-16d2-3d19-b247-c8c7e5b2eca6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "KaS Product",
+   "album": "Ego Eye",
+   "year": 1987,
+   "label": "Disc'Az",
+   "country": "fr",
+   "faction": "fr-be",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "KaS Product 後期合成器流行盤，延續冷浪潮的機械拍子與冷調旋律",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -0.6,
+    "why": "機械鼓機＋合成器流行，乾淨、偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/544d77bc-87e9-3104-8ff8-1106fdd89611",
+    "https://coverartarchive.org/release-group/544d77bc-87e9-3104-8ff8-1106fdd89611/front"
+   ],
+   "mbRgMbid": "544d77bc-87e9-3104-8ff8-1106fdd89611",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "對這張熟悉度中等，色溫可能略回中性"
+  },
+  {
+   "artist": "Mathématiques Modernes",
+   "album": "Les Visiteurs du soir",
+   "year": 1981,
+   "label": "Dorian",
+   "country": "fr",
+   "faction": "fr-be",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "巴黎 minimal synth 原典唯一長作；快速鼓機、跳動合成器與法語冷淡人聲，乾而輕",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.7,
+    "z": -0.6,
+    "why": "快鼓機、跳動合成器，乾薄，冷淡人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2d26b4dc-9c02-3dc4-af32-1b97c8c3e95c",
+    "https://music.apple.com/us/album/les-visiteurs-du-soir/430174655"
+   ],
+   "mbRgMbid": "2d26b4dc-9c02-3dc4-af32-1b97c8c3e95c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無封面，封面走 Apple Music"
+  },
+  {
+   "artist": "Charles de Goal",
+   "album": "Algorythmes",
+   "year": 1980,
+   "label": "New Rose Records",
+   "country": "fr",
+   "faction": "fr-be",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "法國冷浪潮先驅 Patrick Blain 首張；鼓機推進、冷硬合成器與吉他碎片，機械疏離",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.2,
+    "z": -1.1,
+    "why": "鼓機推進、合成器＋少量吉他，薄而陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5ed26db4-7f15-4223-bd40-6a41162e615a",
+    "https://coverartarchive.org/release-group/5ed26db4-7f15-4223-bd40-6a41162e615a/front"
+   ],
+   "mbRgMbid": "5ed26db4-7f15-4223-bd40-6a41162e615a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有吉他但以鼓機與合成器為主，歸 mc1"
+  },
+  {
+   "artist": "Charles de Goal",
+   "album": "Ici l'ombre",
+   "year": 1982,
+   "label": "New Rose Records",
+   "country": "fr",
+   "faction": "fr-be",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Charles de Goal 第二張，法國冷浪潮核心盤；更陰暗的鼓機與合成器，節奏仍緊",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.1,
+    "z": -1.2,
+    "why": "鼓機中快、冷合成器，陰暗但製作單薄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/33063f2a-83f9-4ee5-a1e1-992e351d7059",
+    "https://coverartarchive.org/release-group/33063f2a-83f9-4ee5-a1e1-992e351d7059/front"
+   ],
+   "mbRgMbid": "33063f2a-83f9-4ee5-a1e1-992e351d7059",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 中快，略貼 3.3；殘響不厚"
+  },
+  {
+   "artist": "Gina X Performance",
+   "album": "Nice Mover",
+   "year": 1978,
+   "label": "EMI Electrola",
+   "country": "de",
+   "faction": "de",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "德國 Zeus B. Held 製作的早期冷合成器流行；〈No G.D.M.〉為 minimal synth 經典，冷淡念白人聲",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.6,
+    "z": -0.9,
+    "why": "鼓機＋序列器快拍，乾淨、冷淡念白"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ebd1c983-805a-35bb-94fa-9330d6e2a675",
+    "https://coverartarchive.org/release-group/ebd1c983-805a-35bb-94fa-9330d6e2a675/front"
+   ],
+   "mbRgMbid": "ebd1c983-805a-35bb-94fa-9330d6e2a675",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Gina X Performance",
+   "album": "X-Traordinaire",
+   "year": 1980,
+   "label": "EMI Electrola",
+   "country": "de",
+   "faction": "de",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "Gina X 第二張，延續 Zeus B. Held 的冰冷合成器流行與機械拍子",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.5,
+    "z": -0.8,
+    "why": "序列器與鼓機推進，乾、冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4029e7c9-e2ae-453c-a78b-f6a9c5c96764",
+    "https://coverartarchive.org/release-group/4029e7c9-e2ae-453c-a78b-f6a9c5c96764/front"
+   ],
+   "mbRgMbid": "4029e7c9-e2ae-453c-a78b-f6a9c5c96764",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 正規名用 U+2010 連字號，這裡改 ASCII"
+  },
+  {
+   "artist": "Gina X Performance",
+   "album": "Voyeur",
+   "year": 1981,
+   "label": "Electrola",
+   "country": "de",
+   "faction": "de",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "Gina X 第三張，冷調合成器流行收尾作；鼓機中快、聲部清楚",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -0.7,
+    "why": "中快鼓機、合成器分明，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4df95604-90f8-42d2-b98c-36fb46bb53a0",
+    "https://coverartarchive.org/release-group/4df95604-90f8-42d2-b98c-36fb46bb53a0/front"
+   ],
+   "mbRgMbid": "4df95604-90f8-42d2-b98c-36fb46bb53a0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "熟悉度中等"
+  },
+  {
+   "artist": "Rheingold",
+   "album": "Rheingold",
+   "year": 1980,
+   "label": "Welt-Rekord",
+   "country": "de",
+   "faction": "de",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "杜塞道夫 NDW 冷電子代表作（〈Dreiklangsdimensionen〉）；motorik 鼓機＋乾吉他與合成器，機械冷",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": -0.8,
+    "why": "motorik 拍子、乾吉他與合成器，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/28ff0f90-e32c-3cc7-9a95-1690c213d901",
+    "https://coverartarchive.org/release-group/28ff0f90-e32c-3cc7-9a95-1690c213d901/front"
+   ],
+   "mbRgMbid": "28ff0f90-e32c-3cc7-9a95-1690c213d901",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Rheingold",
+   "album": "R.",
+   "year": 1982,
+   "label": "Welt-Rekord",
+   "country": "de",
+   "faction": "de",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Rheingold 第二張，杜塞道夫學派的冷合成器與機械節奏延續",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -0.7,
+    "why": "機械鼓機、合成器乾淨，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/05453705-cea5-3f21-884d-71f309e3d955",
+    "https://coverartarchive.org/release-group/05453705-cea5-3f21-884d-71f309e3d955/front"
+   ],
+   "mbRgMbid": "05453705-cea5-3f21-884d-71f309e3d955",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "熟悉度中等"
+  },
+  {
+   "artist": "Robert Görl",
+   "album": "Night Full of Tension",
+   "year": 1984,
+   "label": "Mute",
+   "country": "de",
+   "faction": "de",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "DAF 鼓手的 Mute 個人盤，把 DAF 的序列器骨架改成冷調合成器流行，比 DAF 輕薄",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.3,
+    "z": -0.6,
+    "why": "序列器快拍、合成器流行，比 DAF 薄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/41a4d2ec-fa93-3dce-8947-1cea232021db",
+    "https://coverartarchive.org/release-group/41a4d2ec-fa93-3dce-8947-1cea232021db/front"
+   ],
+   "mbRgMbid": "41a4d2ec-fa93-3dce-8947-1cea232021db",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "DAF 本體評分判重，這張較精緻但仍有低頻序列器"
+  },
+  {
+   "artist": "Kraftwerk",
+   "album": "Electric Cafe",
+   "year": 1986,
+   "label": "Kling Klang / EMI",
+   "country": "de",
+   "faction": "de",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "Kraftwerk 第九張（又名 Techno Pop）；數位化的冷機械合成器流行，乾淨極簡",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.5,
+    "z": -1.0,
+    "why": "機械鼓機、數位合成器，乾淨極簡，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2b04bde9-1bbc-3f6b-b67d-24ad473d8912",
+    "https://coverartarchive.org/release-group/2b04bde9-1bbc-3f6b-b67d-24ad473d8912/front"
+   ],
+   "mbRgMbid": "2b04bde9-1bbc-3f6b-b67d-24ad473d8912",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Kraftwerk 本人非 mc11『系二線』範圍"
+  },
+  {
+   "artist": "Kraftwerk",
+   "album": "Tour de France Soundtracks",
+   "year": 2003,
+   "label": "Kling Klang / EMI",
+   "country": "de",
+   "faction": "de",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Kraftwerk 最後一張錄音室專輯；極簡 techno-pop 的機械脈動，薄而冷",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.4,
+    "z": -0.9,
+    "why": "穩定快拍、極簡合成器，乾、機械"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e963cb1e-ec72-303d-9a3f-9fcb89188436",
+    "https://coverartarchive.org/release-group/e963cb1e-ec72-303d-9a3f-9fcb89188436/front"
+   ],
+   "mbRgMbid": "e963cb1e-ec72-303d-9a3f-9fcb89188436",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "原標籤 Kling Klang／EMI；MB 首發 label 空白"
+  },
+  {
+   "artist": "The Human League",
+   "album": "Reproduction",
+   "year": 1979,
+   "label": "Virgin",
+   "country": "gb",
+   "faction": "uk-us",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "Sheffield 純合成器時期首張，英國 minimal synth 原典；冰冷類比合成器與鼓機",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.2,
+    "z": -1.2,
+    "why": "類比合成器＋鼓機中快，乾、冰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1d41c0ad-ceb4-39bc-9885-4bb3c9cc27af",
+    "https://coverartarchive.org/release-group/1d41c0ad-ceb4-39bc-9885-4bb3c9cc27af/front"
+   ],
+   "mbRgMbid": "1d41c0ad-ceb4-39bc-9885-4bb3c9cc27af",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有幾首慢歌，x 中位數略貼邊"
+  },
+  {
+   "artist": "The Human League",
+   "album": "Travelogue",
+   "year": 1980,
+   "label": "Virgin",
+   "country": "gb",
+   "faction": "uk-us",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "Human League 分裂前第二張，〈Being Boiled〉〈The Black Hit of Space〉的冷機械合成器",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.1,
+    "why": "類比合成器快拍、聲部清楚，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e30d6387-674f-3489-8b57-138735f5f9cf",
+    "https://coverartarchive.org/release-group/e30d6387-674f-3489-8b57-138735f5f9cf/front"
+   ],
+   "mbRgMbid": "e30d6387-674f-3489-8b57-138735f5f9cf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Fad Gadget",
+   "album": "Fireside Favourites",
+   "year": 1980,
+   "label": "Mute",
+   "country": "gb",
+   "faction": "uk-us",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Mute 首位簽約藝人的首張，minimal synth 與工業流行的原典；鼓機、噪音合成器、冷嘲人聲",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.1,
+    "z": -1.0,
+    "why": "鼓機中快、單薄合成器＋工業音效，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ac4532c4-2934-3420-943d-42a099dbb26a",
+    "https://coverartarchive.org/release-group/ac4532c4-2934-3420-943d-42a099dbb26a/front"
+   ],
+   "mbRgMbid": "ac4532c4-2934-3420-943d-42a099dbb26a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Incontinent 評 y 0.4，這張更單薄但需留意"
+  },
+  {
+   "artist": "Chris & Cosey",
+   "album": "Exotika",
+   "year": 1987,
+   "label": "Nettwerk",
+   "country": "gb",
+   "faction": "uk-us",
+   "genres": [
+    "electronic"
+   ],
+   "why": "前 Throbbing Gristle 二人的舞池期；序列器快拍、冷調合成器與 Cosey 冷淡人聲",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.2,
+    "z": -0.7,
+    "why": "序列器快拍、乾淨合成器，冷淡"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/faa26526-83b8-3a58-8af3-ef1ebdda76a3",
+    "https://coverartarchive.org/release-group/faa26526-83b8-3a58-8af3-ef1ebdda76a3/front"
+   ],
+   "mbRgMbid": "faa26526-83b8-3a58-8af3-ef1ebdda76a3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Heartbeat 判靜，這張是舞曲期"
+  },
+  {
+   "artist": "Section 25",
+   "album": "From the Hip",
+   "year": 1984,
+   "label": "Factory",
+   "country": "gb",
+   "faction": "uk-us",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Bernard Sumner 製作的 Factory 電子轉向盤（〈Looking from a Hilltop〉）；鼓機與序列器，冷",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.0,
+    "z": -0.6,
+    "why": "鼓機＋序列器快拍，製作偏薄，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5d6ebde5-bdac-3cb2-bb56-c5e0e68e9ff6",
+    "https://coverartarchive.org/release-group/5d6ebde5-bdac-3cb2-bb56-c5e0e68e9ff6/front"
+   ],
+   "mbRgMbid": "5d6ebde5-bdac-3cb2-bb56-c5e0e68e9ff6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Always Now 判重落頹靡，這張已轉電子"
+  },
+  {
+   "artist": "Depeche Mode",
+   "album": "A Broken Frame",
+   "year": 1982,
+   "label": "Mute",
+   "country": "gb",
+   "faction": "uk-us",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "Vince Clarke 離團後第一張，Martin Gore 寫的冷調 minimal synth-pop；薄合成器、鼓機",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.1,
+    "z": -0.8,
+    "why": "鼓機中快、薄合成器，憂鬱偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0214b97e-30de-3c7f-8a00-d2a402e8902d",
+    "https://coverartarchive.org/release-group/0214b97e-30de-3c7f-8a00-d2a402e8902d/front"
+   ],
+   "mbRgMbid": "0214b97e-30de-3c7f-8a00-d2a402e8902d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "中慢歌數首，x 略貼邊"
+  },
+  {
+   "artist": "Units",
+   "album": "Digital Stimulation",
+   "year": 1980,
+   "label": "415 Records",
+   "country": "us",
+   "faction": "uk-us",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "舊金山 synth punk 先驅首張；快速鼓點、尖銳合成器，無吉他",
+   "moodGuess": {
+    "x": 4.0,
+    "y": -0.3,
+    "z": -0.8,
+    "why": "快鼓、尖銳合成器，薄、機械"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6a8765ce-00c2-3c56-8561-9aa2d6b48ca9",
+    "https://coverartarchive.org/release-group/6a8765ce-00c2-3c56-8561-9aa2d6b48ca9/front"
+   ],
+   "mbRgMbid": "6a8765ce-00c2-3c56-8561-9aa2d6b48ca9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Rational Youth",
+   "album": "Cold War Night Life",
+   "year": 1982,
+   "label": "Yul Records",
+   "country": "ca",
+   "faction": "uk-us",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "加拿大首張全合成器專輯、北美 coldwave 代表作；快拍序列器、冷戰意象",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": -0.9,
+    "why": "序列器快拍、乾淨合成器，冷戰疏離"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f156afcc-4459-3092-802c-d13b26e29a9e",
+    "https://coverartarchive.org/release-group/f156afcc-4459-3092-802c-d13b26e29a9e/front"
+   ],
+   "mbRgMbid": "f156afcc-4459-3092-802c-d13b26e29a9e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Minny Pops",
+   "album": "Drastic Measures, Drastic Movement",
+   "year": 1979,
+   "label": "Plurex Records",
+   "country": "nl",
+   "faction": "eu",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "荷蘭 minimal wave 先驅首張；簡陋鼓機與合成器、冷硬念唱",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.5,
+    "z": -1.0,
+    "why": "簡陋鼓機、稀疏合成器，乾、冷硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/130b7403-6427-3d4e-9fef-7b383e8fc61a",
+    "https://coverartarchive.org/release-group/130b7403-6427-3d4e-9fef-7b383e8fc61a/front"
+   ],
+   "mbRgMbid": "130b7403-6427-3d4e-9fef-7b383e8fc61a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼邊，部分曲子偏中速"
+  },
+  {
+   "artist": "Snowy Red",
+   "album": "Snowy Red",
+   "year": 1981,
+   "label": "Dirty Dance",
+   "country": "be",
+   "faction": "fr-be",
+   "genres": [
+    "electronic"
+   ],
+   "why": "比利時 Micky Mike 一人計畫首張，歐陸 minimal synth 經典；鼓機與冷合成器",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -1.2,
+    "why": "鼓機推進、冷合成器，乾薄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7fd3fc7b-a314-411f-bc1f-ee5fd8b3a057",
+    "https://coverartarchive.org/release-group/7fd3fc7b-a314-411f-bc1f-ee5fd8b3a057/front"
+   ],
+   "mbRgMbid": "7fd3fc7b-a314-411f-bc1f-ee5fd8b3a057",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "熟悉度中等"
+  },
+  {
+   "artist": "Taxi Girl",
+   "album": "Seppuku",
+   "year": 1981,
+   "label": "Mankin Records",
+   "country": "fr",
+   "faction": "fr-be",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "JJ Burnel 製作的 Taxi Girl 唯一專輯，法國 new wave／冷浪潮名盤；合成器與鼓推進、Daniel Darc 冷淡人聲",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.0,
+    "z": -0.9,
+    "why": "中快鼓、合成器主導，偏薄，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5896de98-5aa5-3476-a0e3-cdc5717c6f87",
+    "https://coverartarchive.org/release-group/5896de98-5aa5-3476-a0e3-cdc5717c6f87/front"
+   ],
+   "mbRgMbid": "5896de98-5aa5-3476-a0e3-cdc5717c6f87",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有貝斯與吉他，y 可能略上"
+  },
+  {
+   "artist": "Krisma",
+   "album": "Cathode Mamma",
+   "year": 1980,
+   "label": "Polydor",
+   "country": "it",
+   "faction": "eu",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "義大利電子 new wave 二人組，冷硬合成器與機械節奏",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.3,
+    "z": -0.6,
+    "why": "機械節奏、冷合成器，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/30bce6ec-f315-48dc-af7c-dab225afca25",
+    "https://coverartarchive.org/release-group/30bce6ec-f315-48dc-af7c-dab225afca25/front"
+   ],
+   "mbRgMbid": "30bce6ec-f315-48dc-af7c-dab225afca25",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "熟悉度中等"
+  },
+  {
+   "artist": "El Aviador Dro",
+   "album": "Alas sobre el mundo",
+   "year": 1982,
+   "label": "DRO",
+   "country": "es",
+   "faction": "eu",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "西班牙 tecno-pop 先驅首張；快速序列器與機械人聲，科幻冷感",
+   "moodGuess": {
+    "x": 3.9,
+    "y": -0.6,
+    "z": -0.6,
+    "why": "快速序列器、薄合成器，機械"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f83250e2-5b0f-43e5-b7cd-61d3de4c5fd3",
+    "https://coverartarchive.org/release-group/f83250e2-5b0f-43e5-b7cd-61d3de4c5fd3/front"
+   ],
+   "mbRgMbid": "f83250e2-5b0f-43e5-b7cd-61d3de4c5fd3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "El Aviador Dro",
+   "album": "Tesis",
+   "year": 1983,
+   "label": "DRO",
+   "country": "es",
+   "faction": "eu",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "El Aviador Dro 第二張，延續機械 tecno-pop 的快拍與冷硬音色",
+   "moodGuess": {
+    "x": 3.8,
+    "y": -0.5,
+    "z": -0.6,
+    "why": "快拍序列器、乾合成器"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0aeccbc7-41d7-47a3-8ac7-79f476d20348",
+    "https://coverartarchive.org/release-group/0aeccbc7-41d7-47a3-8ac7-79f476d20348/front"
+   ],
+   "mbRgMbid": "0aeccbc7-41d7-47a3-8ac7-79f476d20348",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 該盤署名 El Aviador Dro Y Sus Obreros Especializados；熟悉度中等"
+  },
+  {
+   "artist": "Кино",
+   "album": "Начальник Камчатки",
+   "year": 1984,
+   "label": "",
+   "country": "ru",
+   "faction": "eu",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Kino 鼓機＋合成器的冷浪潮時期代表作，蘇聯地下 coldwave 原典",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.1,
+    "z": -1.0,
+    "why": "鼓機中快、合成器與 chorus 吉他，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/434837dc-fd44-3d55-b8be-f886a7e20560",
+    "https://coverartarchive.org/release-group/434837dc-fd44-3d55-b8be-f886a7e20560/front"
+   ],
+   "mbRgMbid": "434837dc-fd44-3d55-b8be-f886a7e20560",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Ночь 評 3.3/0.2/-1.0；有吉他，但非 post-punk 牆"
+  },
+  {
+   "artist": "Кино",
+   "album": "Это не любовь...",
+   "year": 1985,
+   "label": "Yanshiva Studio",
+   "country": "ru",
+   "faction": "eu",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Kino 最快、最舞池的一張；鼓機快拍、乾淨合成器，冷浪潮節奏",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.2,
+    "z": -0.5,
+    "why": "鼓機快拍、乾淨合成器，偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/47d38327-c1f9-37b0-9524-4890bb24a2a1",
+    "https://coverartarchive.org/release-group/47d38327-c1f9-37b0-9524-4890bb24a2a1/front"
+   ],
+   "mbRgMbid": "47d38327-c1f9-37b0-9524-4890bb24a2a1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫可能略回中性"
+  },
+  {
+   "artist": "Xeno & Oaklander",
+   "album": "Sentinelle",
+   "year": 2009,
+   "label": "Wierd Records",
+   "country": "us",
+   "faction": "revival",
+   "genres": [
+    "electronic"
+   ],
+   "why": "紐約 Wierd 廠牌 minimal wave 復興代表；全類比合成器、法英雙語冷淡人聲",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -1.0,
+    "why": "類比序列器中快、乾淨，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3544afd2-ce41-463a-b43d-6c2f9425c15e",
+    "https://coverartarchive.org/release-group/3544afd2-ce41-463a-b43d-6c2f9425c15e/front"
+   ],
+   "mbRgMbid": "3544afd2-ce41-463a-b43d-6c2f9425c15e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Xeno & Oaklander",
+   "album": "Sets & Lights",
+   "year": 2011,
+   "label": "Wierd Records",
+   "country": "us",
+   "faction": "revival",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Xeno & Oaklander 第三張，類比 minimal synth 的冷硬序列器與鼓機",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -0.8,
+    "why": "類比鼓機與序列器，乾、冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a5452659-ea1b-4cd1-bd02-79b3051c72b4",
+    "https://coverartarchive.org/release-group/a5452659-ea1b-4cd1-bd02-79b3051c72b4/front"
+   ],
+   "mbRgMbid": "a5452659-ea1b-4cd1-bd02-79b3051c72b4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "熟悉度中等"
+  },
+  {
+   "artist": "Xeno & Oaklander",
+   "album": "Par Avion",
+   "year": 2014,
+   "label": "Ghostly International",
+   "country": "us",
+   "faction": "revival",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "Ghostly 發行、較流行化的類比 minimal synth；節拍較快、仍是冷調",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -0.7,
+    "why": "快拍類比合成器，乾淨，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1afffeda-ce4f-4992-b674-5967b016a97b",
+    "https://coverartarchive.org/release-group/1afffeda-ce4f-4992-b674-5967b016a97b/front"
+   ],
+   "mbRgMbid": "1afffeda-ce4f-4992-b674-5967b016a97b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Automelodi",
+   "album": "Automelodi",
+   "year": 2010,
+   "label": "Wierd Records",
+   "country": "ca",
+   "faction": "revival",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "蒙特婁 Xavier Paradis 首張，法語 coldwave／minimal synth 復興；快鼓機、冷淡法語人聲",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.5,
+    "z": -0.6,
+    "why": "快鼓機、類比合成器，乾、冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ef337c8e-de21-4aae-b438-5fe2855949c5",
+    "https://coverartarchive.org/release-group/ef337c8e-de21-4aae-b438-5fe2855949c5/front"
+   ],
+   "mbRgMbid": "ef337c8e-de21-4aae-b438-5fe2855949c5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Automelodi",
+   "album": "Surlendemains acides",
+   "year": 2013,
+   "label": "Hidden Treasure Music",
+   "country": "ca",
+   "faction": "revival",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "Automelodi 第二張，延續法語冷浪潮合成器流行",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -0.7,
+    "why": "鼓機快拍、合成器分明，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e1c55ea9-2593-42bf-8eed-01d268a14da2",
+    "https://coverartarchive.org/release-group/e1c55ea9-2593-42bf-8eed-01d268a14da2/front"
+   ],
+   "mbRgMbid": "e1c55ea9-2593-42bf-8eed-01d268a14da2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "熟悉度中等"
+  },
+  {
+   "artist": "Linea Aspera",
+   "album": "Linea Aspera",
+   "year": 2012,
+   "label": "Dark Entries",
+   "country": "gb",
+   "faction": "revival",
+   "genres": [
+    "electronic"
+   ],
+   "why": "英國二人組 Dark Entries 發行的 minimal synth 復興名盤；類比序列器、冷淡女聲",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -1.0,
+    "why": "類比序列器中快、乾，冷淡女聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fa4ec336-43ca-4880-9693-4eed3b74dd8d",
+    "https://coverartarchive.org/release-group/fa4ec336-43ca-4880-9693-4eed3b74dd8d/front"
+   ],
+   "mbRgMbid": "fa4ec336-43ca-4880-9693-4eed3b74dd8d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Linea Aspera",
+   "album": "LP II",
+   "year": 2020,
+   "label": "",
+   "country": "gb",
+   "faction": "revival",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Linea Aspera 重組後第二張，延續冷硬類比序列器",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -1.0,
+    "why": "類比序列器、鼓機，乾、冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/80aabd9f-88ac-4abd-b1d6-1e2e80c2785c",
+    "https://coverartarchive.org/release-group/80aabd9f-88ac-4abd-b1d6-1e2e80c2785c/front"
+   ],
+   "mbRgMbid": "80aabd9f-88ac-4abd-b1d6-1e2e80c2785c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "熟悉度中等；MB 無廠牌（自主發行）"
+  },
+  {
+   "artist": "Sally Dige",
+   "album": "Hard to Please",
+   "year": 2015,
+   "label": "Night School Records",
+   "country": "ca",
+   "faction": "revival",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "柏林的加拿大藝人 Sally Dige 首張，minimal synth-pop；鼓機與類比合成器，冷",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -0.8,
+    "why": "鼓機快拍、類比合成器，乾、冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8f78ea6e-0715-4e40-a9d8-99ed250deae9",
+    "https://coverartarchive.org/release-group/8f78ea6e-0715-4e40-a9d8-99ed250deae9/front"
+   ],
+   "mbRgMbid": "8f78ea6e-0715-4e40-a9d8-99ed250deae9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Martial Canterel",
+   "album": "You Today",
+   "year": 2011,
+   "label": "Wierd Records",
+   "country": "us",
+   "faction": "revival",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Xeno & Oaklander 成員 Sean McBride 的個人計畫，全類比 coldwave",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.3,
+    "z": -1.0,
+    "why": "類比鼓機與序列器，乾、陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ebe21a12-145e-45ec-97f9-dad71609b1c4",
+    "https://coverartarchive.org/release-group/ebe21a12-145e-45ec-97f9-dad71609b1c4/front"
+   ],
+   "mbRgMbid": "ebe21a12-145e-45ec-97f9-dad71609b1c4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼邊"
+  },
+  {
+   "artist": "Lust for Youth",
+   "album": "International",
+   "year": 2014,
+   "label": "Sacred Bones Records",
+   "country": "se",
+   "faction": "revival",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "瑞典／哥本哈根的 Sacred Bones 冷合成器流行；鼓機快拍、北歐疏離",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.2,
+    "z": -0.6,
+    "why": "鼓機快拍、合成器流行，偏薄，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e0e1c3f9-9ddb-462b-82b2-25dc687b4a85",
+    "https://coverartarchive.org/release-group/e0e1c3f9-9ddb-462b-82b2-25dc687b4a85/front"
+   ],
+   "mbRgMbid": "e0e1c3f9-9ddb-462b-82b2-25dc687b4a85",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "殘響中等"
+  },
+  {
+   "artist": "Body of Light",
+   "album": "Let Me Go",
+   "year": 2016,
+   "label": "Dais Records",
+   "country": "us",
+   "faction": "revival",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "亞利桑那 Jarvis 兄弟的 Dais 冷合成器流行；鼓機與序列器推進",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.0,
+    "z": -0.8,
+    "why": "鼓機快拍、序列器，偏乾，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c4ef86ea-b787-4867-b55b-1d3eb5ef860c",
+    "https://coverartarchive.org/release-group/c4ef86ea-b787-4867-b55b-1d3eb5ef860c/front"
+   ],
+   "mbRgMbid": "c4ef86ea-b787-4867-b55b-1d3eb5ef860c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "熟悉度低；可能帶 EBM 低頻"
+  },
+  {
+   "artist": "Riki",
+   "album": "Riki",
+   "year": 2020,
+   "label": "Dais Records",
+   "country": "us",
+   "faction": "revival",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "Niff Nawor 的 Riki 首張，italo／coldwave 交界的冷調合成器流行",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.0,
+    "z": -0.5,
+    "why": "鼓機快拍、合成器流行，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/89fec59f-aacb-4163-bd7a-c32154867479",
+    "https://coverartarchive.org/release-group/89fec59f-aacb-4163-bd7a-c32154867479/front"
+   ],
+   "mbRgMbid": "89fec59f-aacb-4163-bd7a-c32154867479",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "熟悉度低；色溫可能回中性"
+  },
+  {
+   "artist": "El Aviador Dro",
+   "album": "Cromosomas Salvajes",
+   "year": 1985,
+   "label": "DRO",
+   "country": "es",
+   "faction": "eu",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "El Aviador Dro 中期 tecno-pop 盤；快速序列器與機械人聲，延續科幻冷感",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.4,
+    "z": -0.6,
+    "why": "快拍序列器、乾淨合成器，機械"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/192550dc-ee53-45a9-b6ab-2b3e2eb26686",
+    "https://coverartarchive.org/release-group/192550dc-ee53-45a9-b6ab-2b3e2eb26686/front"
+   ],
+   "mbRgMbid": "192550dc-ee53-45a9-b6ab-2b3e2eb26686",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 署名 El Aviador Dro Y Sus Obreros Especializados；熟悉度中等",
+   "round": 2
+  },
+  {
+   "artist": "El Aviador Dro",
+   "album": "Ciudadanos del Imperio",
+   "year": 1986,
+   "label": "DRO",
+   "country": "es",
+   "faction": "eu",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "El Aviador Dro 1986 年盤，機械 tecno-pop 的快拍與冷硬音色",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.4,
+    "z": -0.6,
+    "why": "快拍鼓機與序列器，乾、機械"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1275b885-e2aa-4d6d-8f34-3ec9c2ee1d8f",
+    "https://coverartarchive.org/release-group/1275b885-e2aa-4d6d-8f34-3ec9c2ee1d8f/front"
+   ],
+   "mbRgMbid": "1275b885-e2aa-4d6d-8f34-3ec9c2ee1d8f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "熟悉度中等",
+   "round": 2
+  },
+  {
+   "artist": "Moskwa TV",
+   "album": "Dynamics & Discipline",
+   "year": 1985,
+   "label": "Westside Music",
+   "country": "de",
+   "faction": "de",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "法蘭克福 Talla 2XLC 與 Torsten Fenslau 的電子流行首張（〈Generator 7/8〉）；快速序列器與鼓機",
+   "moodGuess": {
+    "x": 3.8,
+    "y": -0.1,
+    "z": -0.7,
+    "why": "快速序列器＋鼓機，乾淨，機械冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bffbf801-c5ed-31b0-a027-8e664cdd07f8",
+    "https://coverartarchive.org/release-group/bffbf801-c5ed-31b0-a027-8e664cdd07f8/front"
+   ],
+   "mbRgMbid": "bffbf801-c5ed-31b0-a027-8e664cdd07f8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有 electro／EBM 色彩，低頻序列器要留意",
+   "round": 2
+  },
+  {
+   "artist": "Chris & Cosey",
+   "album": "Trust",
+   "year": 1989,
+   "label": "Nettwerk",
+   "country": "gb",
+   "faction": "uk-us",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Chris & Cosey 晚期 techno-pop 盤；序列器快拍、乾淨合成器與 Cosey 冷淡人聲",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.2,
+    "z": -0.6,
+    "why": "序列器快拍、合成器乾淨，冷淡"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6d9a3622-b72f-3c13-859b-7901a0b8bcff",
+    "https://coverartarchive.org/release-group/6d9a3622-b72f-3c13-859b-7901a0b8bcff/front"
+   ],
+   "mbRgMbid": "6d9a3622-b72f-3c13-859b-7901a0b8bcff",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "熟悉度中等",
+   "round": 2
+  },
+  {
+   "artist": "Absolute Body Control",
+   "album": "Figures",
+   "year": 1983,
+   "label": "Body Records",
+   "country": "be",
+   "faction": "fr-be",
+   "genres": [
+    "electronic"
+   ],
+   "why": "比利時 Dirk Ivens 早期 minimal synth 計畫的卡帶長作；鼓機快拍、冷硬合成器",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.0,
+    "why": "鼓機快拍、單薄合成器，乾、冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9685fd1d-66e9-3845-855d-b438b78ed8e4",
+    "https://coverartarchive.org/release-group/9685fd1d-66e9-3845-855d-b438b78ed8e4/front"
+   ],
+   "mbRgMbid": "9685fd1d-66e9-3845-855d-b438b78ed8e4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "原為卡帶正規長作（9 首）；熟悉度中等",
+   "round": 2
+  }
+ ],
+ "notes": [
+  "場景挖到 42 張夠格的就停，不湊 54：minimal synth 原盤多是卡帶／單曲／EP 與後製合輯（Minimal Wave 廠牌 retrospective 不收），中慢速（Solid Space、Ike Yard、Chris & Cosey《Heartbeat》《Trance》、Trisomie 21、Martin Rev）與厚殘響或兇的（DAF、Liaisons Dangereuses、Severed Heads、Clan of Xymox、Molchat Doma、She Past Away、Boy Harsher、TR/ST、Cold Cave）排除。",
+  "校正：池中同場景已評分卡 Grauzone 3.3/0.4、Metamatic 3.3/0.2、Oppenheimer 3.0/-0.6、Sympathy Nervous 3.4/-0.2、DAF 4.2/0.8、Severed Heads City Slab Horror 3.4/0.8；據此避開評分器常判 y≥0.5 的 EBM／工業舞曲那半。",
+  "身分 42/42 MB 釘住；封面 41 張 CAA release-group front 307，Mathématiques Modernes CAA 404，改用 Apple Music 封面（collection 430174655）。",
+  "跨組：Polyrock 兩張已在 curation-mc2，本組撤下；Marquis de Sade 留給 mc2。Kino 兩張以鼓機＋合成器為主，歸本組。",
+  "Polyphonic Size《Live for Each Moment》CAA 與 iTunes 都找不到封面，撤下。",
+  "貼邊而保留（x 估 3.3）：Human League《Reproduction》、Fad Gadget《Fireside Favourites》、Depeche Mode《A Broken Frame》、Minny Pops、Martial Canterel、Kino《Начальник Камчатки》——主線汰換時可先砍這幾張。",
+  "第二輪（邊距 x≥3.5、y≤0、z≤−0.5）只補 5 張：Aviador Dro ×2、Moskwa TV、Chris & Cosey《Trust》、Absolute Body Control《Figures》（卡帶正規長作）。Oppenheimer《New Mexico》已在池；Ruth、Soft Riot、Martial Canterel 其他盤估 x 不到 3.5；Gaznevada 偏吉他 post-punk；Nuovo Testamento、Azul y Negro、Rational Youth《Heredity》、Xeno & Oaklander 後期偏暖或流行化；Doris Norton 池中同類評 x 3.3；北歐（Page、Twice a Man）MB 查不到 80s 正規 LP 或聲音不熟，不提。"
+ ]
+}
