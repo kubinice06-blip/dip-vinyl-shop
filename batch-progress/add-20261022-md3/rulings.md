@@ -22,3 +22,10 @@
 - **10882**：status：full 5（Ceremony、The Miraculous、Shadows of the Sun、Realms、To Be Cruel）、thin 4（Some Heavy Ocean、Dead Magic、All Thoughts Fly、Saint of the Pit）；thin 的原因是缺樂評對速度／殘響／低頻的直述，聲音事實靠編制與曲風標籤。
 - **10883**：moodGuess 存疑：Rundle《Some Heavy Ocean》（鼓手 Common 兼打擊，吉他民謠搖滾歌曲集，查無回授／殘響佐證）；von Hausswolff《Ceremony》（維基稱 gothic pop，〈Mountains Crave〉808 拍手、〈Sova〉雷鳴般的鼓，x 2.1 偏低）；Khanate《To Be Cruel》（評論稱鼓為「殘暴雷鳴」，與「鼓極稀」只部分相符，另有嘶吼）；Galás《Saint of the Pit》（第五首〈Cris d'aveugle〉約 12 分鐘有鼓，並非全盤無鼓）；《Dead Magic》有完整樂團與鼓手，〈Ugly and Vengeful〉16 分鐘高潮段可能不靜。
 - **10884**：沒有推翻年份／廠牌／盤名。Darkher 主腦姓名來源有 Wissenberg／Maiven 兩寫法，facts 用 Wissenberg 並註明；《Ceremony》原版 Kning Disk、2013 City Slang 重發；MB 對 Saint of the Pit 登記的是 Intravenal Sound Operations 數位版，原版 Mute 1986。
+
+## 研究 a 組
+- **10841**：a 組 9 張 facts 9–10 條；來源 Wikipedia（WebFetch）、PopMatters、Your Last Rites、metalmusicarchives、Audiopile。MB API 回 busy、Pitchfork／Guardian 擋抓，故評論性聲音事實靠 PopMatters 與 YLR。WebSearch 用 3 次（Earth Phase 3、ØØ Void、White2）。
+- **10842**：status：full 8、thin 1（Terrestrials：只確認一首曲名，聲音多為單一維基與引述）。
+- **10843**：推翻策展層 2 處：(1) ØØ Void 製作人是 Scott Reeder（Kyuss 前貝斯手），「Nick Cave 製作人加持」查無來源，不可入簡介；(2) Flight of the Behemoth 的 Merzbow 只混音第三、四首（單一來源），不是共同演出。
+- **10844**：moodGuess 存疑（要主線看）：Soused（Ian Thomas 四首真人鼓＋鼓編程＋牛鞭＋管樂，鼓不是「極稀」，貼邊）；Phase 3（Spin 稱「安撫」、AllMusic 嫌缺打擊，y1.7 恐偏高，可能落平靜）；Pyroclasts（音色偏亮、Albini 類比有機，z-0.9 恐更近 0）。輕度：Flight（末曲 F.W.T.B.T. 有鼓機與鼓）、White1（〈Gates of Ballard〉鼓機）、Terrestrials（列有鼓手 Tomas Pettersen、小號弦樂偏暖）。
+- **10845**：日期差異不改年份：ØØ Void MB 06-05 對維基 06-26；Kannon MB 11-27 對維基 12-04；Pyroclasts MB 10-23 對維基 10-25。White1 與 Terrestrials 互相矛盾的「Ulver 是否參與 White1」兩邊各單一來源，未寫入 facts。
