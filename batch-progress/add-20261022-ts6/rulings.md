@@ -69,3 +69,5 @@
 - **10671**：照研究層推翻改卡單廠牌：Forseti《Windzeit》Auerbach Tonträger → Goeart（10601–10609 a 組，MB／Discogs 2002 原版 GOEART IX）；Fire + Ice《Gilded by the Sun》Fremdheit → New European Recordings（b 組，1992 原版 BAD VC CD144；Fremdheit 為 2004 再版）。年份皆不動。
 - **10672**：Rome「Reuter 家人曾參戰」單源且帶 supposedly——**不寫**（本線規則：不用「據說」）。研究層建議「帶據說或略去」一律取略去。
 - **10673**：序數衝突的卡（Fats Domino《This Is…》、Tenhi、LaVern Baker、Etnica、Vibrasphere）正文不寫序數；Carl Perkins 正文點明是 Sun 唱片的 rockabilly 歌手。
+- **10674**：試聽 41 ready／4 unavailable（`preview-override.json`）。人工指定 5 張：ORE 取 2012 前後篇合併版第 1 軌（＝原開場曲）、Tenhi 取芬蘭文曲名版第 2 軌〈Varpuspäivä〉（＝MB 首曲〈Sparrow-Day〉）、Hallucinogen（Apple 曲名拼字誤植但 8 首相符）、Five Satins 取 2025 擴充版《Sing》第 1 軌〈In the Still of the Night〉（原盤首曲）、Everly Brothers 1958 原盤 11/12。無來源：Fats Domino 兩張、Penguins、Del-Vikings（Apple 只有精選）。
+- **10675**：封面縮圖表 45 張逐張目視（2026-10-22）：CAA 44 張與盤名相符（Buddy Holly 首輪下載逾時，重抓 200）；Penguins 走 Discogs 7756803 正面 225px（600px 那張是背面，不取）。
