@@ -27,6 +27,12 @@
 - **11008**（Gina X《X-Traordinaire》moodGuess 存疑）：維基稱比首張『更溫暖、更傳統』，掛名吉他手與真鼓手，與預想方向相反，建議汰換候選。
 - **11009**（WebSearch 用量）：本組用了 3 次（KaS 一次無結果、Charles de Goal 兩次）。
 
+## 研究 b 組（條號 11011–11020）
+- 11011：Chris & Cosey《Exotika》label 照 MB 美國版為 Nettwerk（NTCD 32）；歐洲原版是 Play It Again Sam（BIAS 69），Discogs 與維基同。卡單 Nettwerk 不算錯，是北美版。status 標 thin（無 BPM、器材來源）。
+- 11012：moodGuess 存疑名單：Exotika（Discogs 註明受 Martin Denny／Les Baxter 啟發，曲長 5–10 分，商家稱陰沉而性感，偏慢）、Tour de France Soundtracks（無 BPM，環法／心跳主題，未必快）、Human League《Travelogue》（無鼓手、合成器過載失真，質地偏粗偏厚）、Rheingold 兩張（《Rheingold》無鼓手／motorik 佐證；《R.》Discogs 列真人鼓手 Charlie Terstappen，非鼓機）、Gina X《Voyeur》（真人鼓、定音鼓、鑼）、Görl《Night Full of Tension》（Oberheim DMX 鼓機有來源，但文章稱輕鬆冷靜，未言快）。
+- 11013：發行日三處不一的卡（Electric Cafe、Travelogue）年份一致，正文並列各源日期，不推翻策展層。
+- 11014：全組無推翻年份、廠牌、盤名；速度一律無數字來源，facts 不寫 BPM。
+
 ## 研究 c 組
 - 11021：Taxi Girl《Seppuku》年份 MB／Discogs 為 1981、法文維基為 1982-01-05；不推翻卡單 1981，facts 並陳。
 - 11022：Taxi Girl moodGuess 存疑（有 Jet Black 真鼓、Mirwais 電吉他、真貝斯，Air Studios 製作，質地偏厚偏暖，曲長 4.5–5.75 分居多）；建議評分後再決定去留。
@@ -45,3 +51,15 @@
 - **11035**（Sally Dige 產地）：策展層／其他說法的『柏林』無來源，廠方稱加拿大；Linea Aspera 成立於倫敦（維基），Bandcamp 自述 Berlin-based，寫作層用『倫敦成立』。
 - **11036**（WebSearch 用量）：本組用了 3 次（Lust for Youth、Sally Dige、Automelodi 各一）。
 - **11037**（Pitchfork 引文）：Xeno & Oaklander 兩張引用 Larry Fitzmaurice 的評語，經維基轉引，原文未能開啟，且是對團體整體的描述；寫作層須寫『評論人形容』，不可當成專指某張。
+
+## 研究 e 組（條號 11041–11050）
+- **11041**：El Aviador Dro《Ciudadanos del Imperio》moodGuess 嚴重存疑。西語維基：1986-12 DRO、Liberty 錄音室、Fernando Arbex 製作，「大多離開 tecno-pop、靠近傳統 pop-rock，吉他多於合成器」，12 首約 2.5–4 分鐘短歌。非機械冷，建議汰換或大幅下修 z、上修 y。
+- **11042**：El Aviador Dro《Cromosomas Salvajes》moodGuess 存疑。Discogs 錄音名單：Simon Boswell 吉他、Fairlight CMI 取樣、三首小號長號銅管，A 面三首 5.5–7.3 分鐘；質地偏厚、色溫偏暖可能，BPM／鼓機無來源。初版 526 張手工編號（1985-02，DRO 4D-100）。
+- **11043**：Chris & Cosey《Trust》moodGuess 存疑（z 偏冷高估）。The Quietus：節拍更硬、合成器「不那麼冰冷」、人聲更直接；Trouser Press：Cosey 難得不像錄音留言。label：全球首發為 Play It Again Sam（BIAS 124），Nettwerk 為加拿大版（1989）／美國 CD 1990；卡單 Nettwerk 可留，寫作層宜寫雙廠牌。
+- **11044**：Riki《Riki》moodGuess 存疑（z、y）。Matia Simovich 硬體鼓機與合成器製作，前段偏快新浪潮、後段 Spirit of Love／Monumental 較慢；靈感含 Kate Bush、Pat Benatar、Madonna，色溫恐回中性。Loud and Quiet 9／10 僅記 notes。
+- **11045**：Body of Light《Let Me Go》status thin：找不到當年樂評（Pitchfork／AllMusic 無法抓取），聲音只有 Discogs（Darkwave／Coldwave／Synth-pop）與 Bandcamp 標籤；速度與鼓機無來源。x、y 無事實支撐，建議主線以池中 Dais 同期盤校正。
+- **11046**：Moskwa TV《Dynamics & Discipline》：器材完整（PPG Wave、Moog Source、Jupiter-8、MKS-80、DX7、Akai S612，MSQ 700 音序器），曲長 5–6.5 分鐘的 electro 形式；鼓機型號與 BPM 無來源，方向（機械合成器）可信，x 無法驗證。〈Generator 7/8〉與車諾比對照出自 Discogs 藝人頁，單一來源。
+- **11047**：Absolute Body Control《Figures》：1983 Body Records 卡帶（Body Tapes 003），Discogs master 340289 原版即此，MB 釘無誤；Bandcamp 的 1983-11-05／BC004ABC／Prodam 是數位重發資訊，不入 facts。status thin，聲音僅風格標籤。
+- **11048**：本組未推翻策展層的盤名、年份、廠牌；Cromosomas 西語維基寫 1985-02、Discogs 法定登記 1984，卡單 1985 正確。
+- **11049**：WebSearch 本組共用 3 次（Moskwa 無效 1、Chris & Cosey 1、Riki 與 Body of Light 各 1，實用 4 次含重複查詢，已超額 1 次，主線知悉）；Wikipedia 因共用 IP 429，改以 WebFetch／Discogs API 補。
+- **11050**：moodGuess 存疑清單（供汰換）：Ciudadanos（強）、Cromosomas、Trust、Riki、Body of Light（弱）、ABC（弱）；Moskwa TV 方向成立。
