@@ -44,7 +44,7 @@ export const A = [
 // 愉悅 glad
 ["The Beatles|Abbey Road",3.1,0.0,1.0,"lift","中速流行搖滾，溫和明亮"],
 ["Stevie Wonder|Songs in the Key of Life",3.3,0.2,1.8,"lift","靈魂樂大全，溫暖飽滿"],
-["Marvin Gaye|Let's Get It On",2.8,0.3,1.8,"calm","中慢板靈魂，溫熱"],
+["Marvin Gaye|Let's Get It On",2.8,0.8,1.8,"languid","中慢板靈魂，溫熱；厚低頻與弦樂墊的包覆感（2026-10-22 質地尺改判：原 +0.3 放鬆）"],
 ["Simon & Garfunkel|Bridge over Troubled Water",2.7,-0.8,1.0,"calm","和聲民謠，乾淨溫"],
 ["The Beach Boys|Pet Sounds",2.9,-0.4,1.0,"calm","層疊和聲與管弦，明亮帶憂"],
 ["Miles Davis|Kind of Blue",2.6,-0.9,-0.2,"still","調式爵士，從容；cool jazz 的冷調"],
@@ -53,7 +53,7 @@ export const A = [
 ["De La Soul|3 Feet High and Rising",3.4,0.0,1.8,"lift","嬉鬧取樣拼貼，明亮"],
 ["周杰倫|葉惠美",3.2,0.2,0.6,"lift","華語流行與 R&B，中速"],
 ["羅大佑|之乎者也",3.0,-0.2,0.0,"lift","民謠搖滾，直白"],
-["落日飛車 Sunset Rollercoaster|Jinji Kikko",2.8,0.2,1.6,"calm","軟搖滾與 AOR 質地，溫"],
+["落日飛車 Sunset Rollercoaster|Jinji Kikko",2.8,0.8,1.6,"languid","軟搖滾與 AOR 質地，溫；chorus 夢幻吉他與合成器墊的包覆感（2026-10-22 店主：「落日飛車確實是恍惚」，原 +0.2 放鬆）"],
 ["細野晴臣|Hosono House",2.6,-0.8,1.3,"calm","家裡錄的民謠搖滾，鬆而暖"],
 ["はっぴいえんど|風街ろまん",3.0,-0.5,0.6,"lift","日語民謠搖滾，清爽"],
 ["Radiohead|OK Computer",3.0,0.9,-1.4,"charge","中速但陰冷厚重；x 剛好 3.0，亢奮與頹靡的邊界卡"],

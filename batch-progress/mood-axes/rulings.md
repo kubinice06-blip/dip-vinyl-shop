@@ -154,3 +154,14 @@
 - **邊界判例**：The Body《I Shall Die Here》有電子拍與尖叫 → 躁 3.1；Khanate 鼓極稀、每擊間死寂 → 照 Sunn O))) 留靜；Colin Stetson《Sorrow》只在高潮有鼓與失真 → 留靜；Armand Hammer 刺耳但嘻哈節拍不「打」→ 留靜，Dälek 是工業噪音牆 → 躁。
 - **結果**：八格 頹靡 982→926、恍惚 596→592、沸騰 1983→1987、亢奮 2592→2648；錨點 104/104 同格（60 張無一是錨點）。
 - **沒做**：舊批次評分檔不回改（v0 不動，覆寫層承擔）；日後新卡照新 BRIEF 評。
+
+## 2026-10-22｜質地尺改判：暖慢的包覆感算重（恍惚 592 → 772）
+
+- **店主**：「落日飛車確實是恍惚（dream pop 大部分也都是恍惚）重新評斷」——選了 10-16 補充計畫 §5 的 (b)：改尺，不靠補卡。
+- **規則**（寫進 `score500/BRIEF.md` Y 軸）：質地也看「是不是一層包住人的霧」。dream pop／shoegaze 殘響霧、chorus 夢幻吉他＋合成器墊的軟搖滾／AOR／city pop 慢歌、慢板靈魂／quiet storm／neo-soul 的厚低頻與弦樂墊、chillwave／lo-fi R&B 的糊濾波，沒有失真也給 +0.6～+1.3。乾淨、有空氣、聲部分明的（bossa、原聲民謠、Motown／disco 快歌、明亮 city pop 快歌如山下達郎《For You》）維持輕。能量與色溫不動。
+- **錨點**：落日飛車《Jinji Kikko》y +0.2→+0.8、Marvin Gaye《Let's Get It On》+0.3→+0.8，兩張由放鬆改恍惚（後者在 10-16 計畫列為店主心中的恍惚典型）。`anchors-src.mjs`、BRIEF 校正表同步，`build-anchors` 重跑。
+- **重判範圍**（`texture-rejudge/select.mjs`）：目前落放鬆／平靜的非錨點卡，子曲風屬 dream pop／shoegaze／chillwave／city pop／soft rock／慢板靈魂與 R&B／neo-soul，或點名藝人，共 705 張、9 份，代理只重判 y。
+- **結果**：抬重 199 張；主線審稿退回 4 張（Sigur Rós《Liminal Sleep》是 ambient 長音，與校正表 ambient 偏輕衝突；Sade《Stronger Than Pride》編制稀疏、只因點名才抬；Beyoncé《Dangerously in Love》製作光滑不霧；American Music Club《Mercury》非四類之一）。定案 **195 張寫進 `data/mood/overrides.json`**（只改 y，x、z 沿用；#114 已在 overrides 的卡保留其 x）：放鬆→恍惚 178、平靜→頹靡 17（冷色的 dream pop／slowcore，如 Echo & the Bunnymen《Ocean Rain》、Low《I Could Live in Hope》、Red House Painters《Down Colorful Hill》）。
+- **同藝人分判的例**：Al Green Hi 時期抬、福音與原聲盤不抬；Mac DeMarco《Salad Days》《Another One》抬、《2》《Here Comes the Cowboy》不抬；Stylistics 前兩張慢板抬、後期輕 disco 不抬；Cleo Sol 只抬《Rose in the Dark》。
+- **全池八格**：放鬆 5,155→4,975、平靜 1,333→1,316、**恍惚 592→772**、**頹靡 926→943**，其餘不變；錨點 104/104 同格，gate 綠。
+- **後續**：新卡評分照新 BRIEF 打，不必再走 overrides；恍惚若還要長，再跑 ml 策展線（補充計畫 §2.2）。
