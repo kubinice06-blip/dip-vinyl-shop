@@ -8,12 +8,12 @@
  ],
  "sideAgree": [
   83,
-  83,
+  82,
   80
  ],
  "accFit": [
   0.074,
-  0.182,
+  0.174,
   -0.245
  ],
  "coverage": {
@@ -25,13 +25,13 @@
  },
  "cells": {
   "沸騰": 1983,
-  "放鬆": 5155,
+  "放鬆": 5153,
   "雀躍": 5943,
   "平靜": 1333,
   "頹靡": 983,
   "亢奮": 2591,
   "冷冽": 874,
-  "恍惚": 596
+  "恍惚": 598
  },
  "misses": [
   "Brian Eno《Discreet Music》 錨點 放鬆 → 先驗 平靜",
@@ -41,9 +41,9 @@
   "Miles Davis《In a Silent Way》 錨點 平靜 → 先驗 亢奮",
   "Bill Evans《Waltz for Debby》 錨點 放鬆 → 先驗 雀躍",
   "João Gilberto《Chega de Saudade》 錨點 放鬆 → 先驗 雀躍",
-  "Marvin Gaye《Let's Get It On》 錨點 放鬆 → 先驗 雀躍",
+  "Marvin Gaye《Let's Get It On》 錨點 恍惚 → 先驗 雀躍",
   "Beastie Boys《Paul's Boutique》 錨點 沸騰 → 先驗 恍惚",
-  "De La Soul《3 Feet High and Rising》 錨點 雀躍 → 先驗 放鬆",
+  "De La Soul《3 Feet High and Rising》 錨點 雀躍 → 先驗 恍惚",
   "Nightmares on Wax《Smokers Delight》 錨點 恍惚 → 先驗 頹靡",
   "Massive Attack《Mezzanine》 錨點 頹靡 → 先驗 恍惚",
   "Boards of Canada《Music Has the Right to Children》 錨點 恍惚 → 先驗 平靜",
@@ -57,7 +57,7 @@
   "Nujabes《Modal Soul》 錨點 恍惚 → 先驗 放鬆",
   "草東沒有派對 No Party For Cao Dong《醜奴兒》 錨點 亢奮 → 先驗 沸騰",
   "deca joins《Go Slow》 錨點 頹靡 → 先驗 沸騰",
-  "落日飛車 Sunset Rollercoaster《Jinji Kikko》 錨點 放鬆 → 先驗 沸騰",
+  "落日飛車 Sunset Rollercoaster《Jinji Kikko》 錨點 恍惚 → 先驗 沸騰",
   "羅大佑《之乎者也》 錨點 雀躍 → 先驗 放鬆",
   "椎名林檎《勝訴ストリップ》 錨點 亢奮 → 先驗 沸騰",
   "Pole《2》 錨點 頹靡 → 先驗 亢奮",
