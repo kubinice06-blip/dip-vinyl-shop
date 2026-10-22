@@ -1,14 +1,24 @@
 # dip vinyl 專案備忘錄
 
-### 2026-10-22｜dip-vinyl-shop｜情緒薄格冷冽線 mc1／mc2：minimal synth／coldwave 22＋post-punk／no wave 15 張上線，落冷冽 25/37，冷冽 874 → 899
+### 2026-10-22｜dip-vinyl-shop｜情緒薄格冷冽線 mc1／mc2：minimal synth／coldwave 22＋post-punk／no wave 15 張上線，落冷冽 25/37，冷冽 899 → 924
 
 - **內容**：店主「新增的專輯數太少了 與雀躍嚴重不平衡」，6 個並行工作階段之一，冷冽線第一輪。mc1（`add-20261022-mc1`）：法比冷浪潮（KaS Product 3）、德語區（Gina X Performance 2、Rheingold 2、Robert Görl、Kraftwerk《Electric Cafe》《Tour de France Soundtracks》）、英美加（Units、Rational Youth）、西班牙（El Aviador Dro 2）、復興（Xeno & Oaklander 3、Linea Aspera、Sally Dige、Body of Light、Moskwa TV、Absolute Body Control）。mc2（`add-20261022-mc2`）：Polyrock、Contortions《Buy》、Wall of Voodoo、Suburban Lawns、Erase Errata 2、Numbers 2、Wetdog、にせんねんもんだい、Josef K《Sorry for Laughing》、100 Flowers、As Mercenárias、Purrkur Pillnikk、Q and Not U。
 - **場景挖不到 45**：策展兩輪 mc1 47、mc2 31（乾冷正典多已在池、minimal wave 原盤多為卡帶／EP／合輯）；主線先汰同藝人池中判重或 x 貼邊的 8＋6，研究層聲音存疑再汰 17＋10（偏暖／擴編／post-hardcore／drone），不補位、不湊數。年份改 2 張（KaS Product《Try Out》1982、《Ego Eye》1986）；Method Actors《Luxury》取 1983（已汰）。
 - **主線審稿**：mc1 改 2 張（By Pass 單源評價句、Par Avion 第二句）、mc2 改 3 張（Buy 單源評價句、Wetdog 語序、100 Flowers 秒數）。試聽 mc1 20／mc2 12 ready（人工指定 8 張，Apple 藝人目錄逐首核對）；封面 36 張 CAA live-check 200＋Purrkur Pillnikk 走 Apple。冷門軸人工 3 張（Last.fm 掛名／盤名對不上）。
-- **落格率（本線驗收）**：`batch-progress/mood-axes/score-mc1/`、`score-mc2/`（select 改自動讀所有 `score*/scored-*.json`）。mc1 17/22＝77%（KaS Product 2 張與 Units 判重落亢奮；Xeno & Oaklander 2 張 x 2.8–2.9 落平靜）；mc2 8/15＝53%（7 張全判重落亢奮：評分說明書 post-punk 質地 +1，刮耳吉他＋喊唱一律 ≥0.5），原因與下一輪建議寫進兩批 rulings 與 HANDOFF 第四節。八格 冷冽 899、亢奮 2,675。
+- **落格率（本線驗收）**：`batch-progress/mood-axes/score-mc1/`、`score-mc2/`（select 改自動讀所有 `score*/scored-*.json`）。mc1 17/22＝77%（KaS Product 2 張與 Units 判重落亢奮；Xeno & Oaklander 2 張 x 2.8–2.9 落平靜）；mc2 8/15＝53%（7 張全判重落亢奮：評分說明書 post-punk 質地 +1，刮耳吉他＋喊唱一律 ≥0.5），原因與下一輪建議寫進兩批 rulings 與 HANDOFF 第四節。併 main（mc3／mc4）後八格 冷冽 924、亢奮 2,676。
 - **類型樹**：預熱 37 張；`genre-l3-artist-map.json` 補 Robert Görl、Xeno & Oaklander、Linea Aspera（electronic/synth/synthpop）、にせんねんもんだい（rock/punk-wave/no-wave）；`rock-asia-country-map.json` 補にせんねんもんだい（jp）。§11 新藝人 25 位列在兩批 rulings 末尾（並行期間不切）。
 - **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`onboarding-manifest-add-20261022-mc{1,2}-20261022.json`、`batch-progress/add-20261022-mc{1,2}/*`、`batch-progress/mood-cells-20261022/{curation,master}-mc{1,2}.json`、`SCENES.md`、`desc-tools/batches/*/add-20261022-mc{1,2}-*`、`batch-progress/mood-axes/{score-mc1/*,score-mc2/*,priors-v0-report.json,scale-v0-report.json}`、`data/mood/*`、`genre-l3-artist-map.json`、`rock-asia-country-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`、`batch-progress/HANDOFF-mood-cells-line.md`。
 - **驗證**：`verify-album-onboarding --published` mc1／mc2 皆 0 error；KV 回讀 22/22、16/16 逐字一致；card_catalog 22/22、15/15；`build-card-moods` 錨點 104/104。
+
+### 2026-10-22｜dip-vinyl-shop｜情緒薄格策展線 mc3／mc4（冷冽線首跑）：冷爵士 19＋當代古典快作 19 張上線，落冷冽 25/38，冷冽 874 → 899
+
+- **內容**：店主「新增的專輯數太少了 與雀躍嚴重不平衡」→ 6 個並行之一（mc3、mc4）。mc3（`add-20261022-mc3`）：Tristano 派（Tristano 2、Marsh、Crothers）、Braxton 3、Rivers 2、George Russell、Don Ellis 2、Cecil Taylor、Harriott 2、Howard Riley 2、SME、Schoof。mc4（`add-20261022-mc4`）：Ligeti（Driver）、Nancarrow、Boulez 4（Kontarsky《Structures》、自指 2、Kawka）、Varèse（Craft）、Xenakis 4（Chojnacka、Carneiro、高橋悠治、Arditti）、Carter 2、Ferneyhough 2、陳銀淑、Wolpe、Birtwistle、Antheil《Ballet mécanique》（Surinach）；古典卡照 §0.6／§0.7（composer 欄、錄音層錨點制人工三軸）。
+- **張數不到 45，照實上架**：策展兩輪 mc3 37／mc4 29 張（冷爵士正典多已在池；當代古典快作多在厚管弦盤上無邊距），主線先汰貼邊，研究層聲音存疑再汰 mc3 10（偏暖 6、偏靜 3、偏重 1）、mc4 6，不補候補。年份更正：Riley《Synopsis》1974／Incus、Harriott《Abstract》1963、Arditti《Carter》1988、Hodges《Birtwistle》2005、陳銀淑 2005（DG 首發）。
+- **主線審稿**：mc3 刪 5 句單源樂評評價；mc4 改 4 張（單源評價、金貝鼓譯名、懸空指涉、Chin 年份句）。封面 38 張 live-check 200；CAA 404 改 Discogs 6 張／Apple 3 張（`apple-verified-collection`），Nancarrow CAA 是 1750 Arch 全集再版封面、改 Discogs Columbia MS 7222；Discogs 7 筆登錄 `data/discogs-cover-registry.json`。試聽 mc3 14／mc4 13 ready。
+- **落格率**：`batch-progress/mood-axes/score-mc3/`、`score-mc4/`（select 改成自動讀所有 score*/scored-*.json 當已評分集）。mc3 16/19＝84%（Tristano《Note to Note》、Riley《Angle》、Crothers 鋼琴主導無強鼓落平靜）、mc4 9/19＝47%（**新能量規則把無拍點的點描／複節奏現代作品壓到靜**：Boulez、Carter、Ferneyhough、Wolpe、陳銀淑落平靜；落冷冽的全是機械脈動或打擊推進的）。建議下一輪當代古典只收打擊與機械律動作品，mc30 minimalism 有穩定脈動。gate 綠、錨點 104/104；八格 冷冽 899、平靜 1,345。
+- **共用腳本**：`build-cards.mjs`／`build-manifest.mjs` 傳遞古典 `composer` 欄（對既有批無影響）。`genre-l3-artist-map.json` 補 Connie Crothers → jazz/cool。新藝人 16 位（mc3 2、mc4 14）列在各批 rulings 末尾，未切藝人介紹（6 個並行不切）。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`onboarding-manifest-add-20261022-mc{3,4}-20261022.json`、`batch-progress/add-20261022-mc{3,4}/*`、`batch-progress/mood-cells-20261022/{curation,master}-mc{3,4}.json`、`build-cards.mjs`、`build-manifest.mjs`、`SCENES.md`、`desc-tools/batches/*/add-20261022-mc{3,4}-*`、`batch-progress/mood-axes/{score-mc3,score-mc4}/*`、`priors-v0-report.json`、`scale-v0-report.json`、`data/mood/*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`。
+- **驗證**：`verify-album-onboarding --published` mc3／mc4 皆 0 error；KV 回讀 19/19、19/19 逐字一致；card_catalog 19/19、19/19；`build-card-moods` gate 綠（錨點 104/104）。
 
 ### 2026-10-22｜dip-vinyl-shop｜情緒薄格線擴大：三格各補到 2,000、6 個工作階段並行
 

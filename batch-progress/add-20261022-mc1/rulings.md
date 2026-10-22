@@ -111,7 +111,7 @@
 - 2026-10-22 上線 **22 張**：card_catalog 22/22、KV 22 鍵逐字一致、試聽 ready 20／unavailable 2（Tesis、Figures：Apple 只有合輯或重錄版，不硬配）、封面 22 張 CAA live-check 200；`verify-album-onboarding --published` 0 error。冷門軸人工 1 張（Tesis：Last.fm 掛名對不上）。
 - 情緒評分 `batch-progress/mood-axes/score-mc1/`（Opus 一支，conf high 2／mid 9／low 11）：**落冷冽 17/22＝77%**；亢奮 3（KaS Product《Try Out》y 0.6、《By Pass》y 0.7、Units y 0.5：判重，評者聽出刺耳吉他／殘響／龐克攻擊性）、平靜 2（Xeno & Oaklander《Sentinelle》x 2.8、《Sets & Lights》x 2.9：判靜，中速稀疏鼓機）。
 - **給下一輪參考**：評分的 x 普遍比策展估低 0.3–0.4（中速 minimal synth 很容易掉到 3.0 以下），y 對「吉他＋鼓機」的冷浪潮比策展估高 0.6–1.0。下一輪冷冽電子場景，策展邊距的 x 應抬到 3.6、帶吉他的冷浪潮 y 估值要再加 0.5。
-- 冷冽格 874 → 899（mc1＋mc2 合計 +25）。
+- 冷冽格 899 → 924（mc1＋mc2 合計 +25；併 main 的 mc3／mc4 後）。
 
 ## 本批新藝人（無介紹，§11 待調度工作階段統一切批）
 KaS Product、Gina X Performance、Rheingold、Robert Görl、Units、Rational Youth、El Aviador Dro、Xeno & Oaklander、Linea Aspera、Sally Dige、Body of Light、Moskwa TV、Absolute Body Control（13 位；皆不在 roster 與 progress.json 佇列）。

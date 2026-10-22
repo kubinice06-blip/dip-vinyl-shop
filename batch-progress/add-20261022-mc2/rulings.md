@@ -96,7 +96,7 @@
 - 情緒評分 `batch-progress/mood-axes/score-mc2/`（Opus 一支，conf high 1／mid 8／low 6）：**落冷冽 8/15＝53%，低於 60%**。
 - **原因：判重**。出格 7 張全落亢奮、沒有一張判暖或判靜：にせんねんもんだい《Destination Tokyo》y 1.4（延遲噪音層層堆疊）、As Mercenárias y 1.2、Purrkur Pillnikk y 1.2（粗糙失真）、Contortions y 0.6、Wall of Voodoo y 0.6、Erase Errata《At Crystal Palace》y 0.5、100 Flowers y 0.5。評分說明書 Y 軸把 post-punk 放在 +1、龐克 +2，評者對「刮耳吉他＋喊唱」一律給到 +0.5 以上；策展估的 y −0.2～−0.6 系統性偏輕。色溫判斷大致準（全部 z < 0）。
 - **給下一輪換場景參考**：吉他樂團的 post-punk／no wave／龐克邊緣在現行質地尺下很難落冷冽，只有極乾淨的 art-pop 化新浪潮（Polyrock、Suburban Lawns、Q and Not U、Josef K 這型）留得住。**mc21（post-punk revival）建議改場景或只收合成器佔主體的盤**；冷冽線優先排電子類（mc5–mc9、mc12、mc16、mc17）。
-- 冷冽格 874 → 899（mc1＋mc2 合計 +25）。
+- 冷冽格 899 → 924（mc1＋mc2 合計 +25；併 main 的 mc3／mc4 後）。
 
 ## 本批新藝人（無介紹，§11 待調度工作階段統一切批）
 Polyrock、Contortions、Wall of Voodoo、Suburban Lawns、Erase Errata、Numbers、Wetdog、にせんねんもんだい、100 Flowers、As Mercenárias、Purrkur Pillnikk、Q and Not U（12 位；皆不在 roster 與 progress.json 佇列）。
