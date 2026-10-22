@@ -34,3 +34,18 @@
 - **14272** The Fur.《Serene Reminder》：2020-12-10 Hove HSS002，無年份爭議。標籤 indie folk rock／synthpop，Discogs 僅標 Indie Rock／Pop，無霧狀吉他或慢拍的證據；status 標 thin，moodGuess 強烈存疑，建議汰換。Freshmusic Awards 的『獲獎』說法太含糊，不引用。
 - **14273** U.TA屋塔（§1 人工身分核對）：Discogs 33801504（2015-12，CD Album，Hove UTA001）與 Bandcamp（首張專輯，2015 年 12 月）一致，盤名、年份、廠牌對得上；廠牌只見 Discogs。**推翻策展『唯一全長』**：另有 2009《good,night》、2014《捲 / Roll》、2018 三張發行，2020 年預告第二張。成立年 2006（Noise Artists）與 2013（Bandcamp）兩說並存。影響源含 Portishead／Massive Attack，色溫冷風險屬實，moodGuess 強烈存疑，status thin。
 - **14274** Oki Dub Ainu Band：身分無誤（Discogs 5609015／MB 69cff270，2006-12-03，Chikar Studio CKR0112）。**補卡單 label 空白**。『首作』不成立（2004《Dub Ainu》、1990 年代個人專輯在先）。有真鼓、兩位打擊樂手與貝斯，Naoyuki Uchida 混音（與 Dry & Heavy 首作同一人），曲長平均約 5 分半；拍速、色溫無直接來源，後期陣容樂評提到 trip hop 比較，moodGuess 輕度存疑。
+
+## 研究 a 組（14241–14250）
+- **14241** sugar plant《Hiding Place》：卡單 label 寫 Pop Narcotic，實為美版（NARC 010）；日本原版是 Wonder Release Records（W.R.R.-29，1995-02-24）。facts 兩者並寫，建議上卡 label 註明；年份 1995 不動。Bandcamp 稱 1994 年錄音。
+- **14242** sugar plant《Hiding Place》moodGuess 存疑：來源標籤是 slowcore／shoegazer（Galaxie 500、Low 一路），z 0.6 偏暖與 y 低頻厚度皆無來源，鼓與低頻只能推斷。
+- **14243** sugar plant《after after hours》：英文維基列 1997（美版年），採 1996-08-21 Pony Canyon（MB／Discogs）。費城 Studio Red／Adam Lasus／1996-04 錄音、Sota Takagi 首度加入出自 Discogs 備註與唱片行再版文案。sound 有電子與 downtempo 取向，moodGuess 大致可信。
+- **14244** UA《turbo》：moodGuess 存疑（x 2.5 恐破 2.7、y 薄）。查到 reggae-pop 標籤、倫敦錄音、dubwise 混音兩首，但另有 Disco Style 〈リンゴ追分〉與浅井健一寫的搖滾味曲；策展層『轉向 dub／迷幻的關鍵作』無來源，不可寫成 dub 專輯。第三張專輯、Oricon 6 位。
+- **14245** bonobos《HOVER HOVER》：推翻策展『Fishmans 之後最像的承繼者』——只查到參加 2004 年 Fishmans 致敬盤，無樂評支持，上卡不得寫。聲音層 thin（無樂評），標 thin；moodGuess 存疑（有 groove 取向曲名，x、y 皆靠邊）。label MB 為 Teenage Symphony（Dreamusic 旗下）。
+- **14246** WebSearch 本組共用額度：a、b 合計用 5 次（sugar plant、UA、bonobos、Polaris、Hotel Mexico），均已使用完畢。
+
+## 研究 b 組（14251–14260）
+- **14251** Hotel Mexico《His Jewelled Letter Box》：moodGuess 嚴重存疑——英文樂評明講有真鼓與滑順貝斯、可跳舞、不同於內向 chillwave，OTOTOY 也說易於跳舞；x 很可能 > 2.7、y 輕。建議汰換。年份：2010-08 限定店鋪首版，2011-03-09 全國再發行（MB／Discogs 取後者，卡單 2011 不動）。
+- **14252** Polaris《Family》：原版 2003-11-06（MTCA-9004），另 2004-07-22（MTCA-5010）、2011 再版；性質未明。『Fishmans 貝斯手柏原譲』成立（ja 維基 Fishmans 條），オオヤユウスケ 是否 Fishmans 成員查無，不可寫。status thin（無樂評）。
+- **14253** Polaris《Home》：2002-11-07 無爭議；策展層『承 Long Season 的漂浮感』無來源。10 首約 65 分鐘、4 首逾 10 分鐘。status thin；moodGuess 存疑（Discogs 標籤含 jazz-rock、post rock，鼓或偏活）。
+- **14254** 小沢健二《Eclectic》：推翻策展『慢板 R&B、耳語唱腔、quiet storm、lo-fi R&B 先聲』——日文維基只寫 funk／soul／R&B，無慢板與耳語描述；原曲〈今夜はブギーバック〉中速，x 恐 2.5–3.0。label 補：EASTWORLD（東芝EMI）TOCT-24711（卡單 label 空）。Oricon 7 位。
+- **14255** jp-proper-names.json 已 append 25 筆（本批日文專名）；未改既有項。
