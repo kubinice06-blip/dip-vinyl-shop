@@ -65,7 +65,10 @@ const subKey = (a, b) => a + '|' + b;
 const rows = seed.map(r => ({ artist: r[0], album: r[1], acc: r[4], genres: r[5] || [], id: idOf(r[0], r[1]), sk: subKey(r[0], r[1]) }));
 const anchorById = new Map(anchors.anchors.map(a => [idOf(a.artist, a.album), a]));
 let scored = [];
-for (const f of ['./score500/scored-500.json', './score3000/scored-3000.json', './score10k/scored-10k.json', './score-rest/scored-rest.json', './score-ts/scored-ts.json', './score-ts2/scored-ts2.json', './score-md/scored-md.json', './score-md34/scored-md34.json']) { try { scored.push(...JSON.parse(fs.readFileSync(R(f), 'utf8'))); } catch {} }
+// 來源層：score*/ 底下每個 scored-*.json 都讀（2026-10-22 起 6 個工作階段並行上架，各自建 score-<批>/，不再改這行）
+const scoreFiles = fs.readdirSync(R('./')).filter(d => /^score/.test(d) && fs.statSync(R('./' + d)).isDirectory()).sort()
+  .flatMap(d => fs.readdirSync(R('./' + d)).filter(f => /^scored-.*\.json$/.test(f)).map(f => `./${d}/${f}`));
+for (const f of scoreFiles) { try { scored.push(...JSON.parse(fs.readFileSync(R(f), 'utf8'))); } catch {} }
 const scoredById = new Map(scored.map(s => [s.id, s]));
 
 // 擬合硬蕊度係數：殘差 = 錨點 − 子曲風先驗，對 (acc−3) 做無截距最小平方
