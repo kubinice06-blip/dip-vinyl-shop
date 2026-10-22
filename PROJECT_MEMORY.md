@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-22｜dip-vinyl-shop｜情緒薄格策展線 mc3／mc4（冷冽線首跑）：冷爵士 19＋當代古典快作 19 張上線，落冷冽 25/38，冷冽 874 → 899
+
+- **內容**：店主「新增的專輯數太少了 與雀躍嚴重不平衡」→ 6 個並行之一（mc3、mc4）。mc3（`add-20261022-mc3`）：Tristano 派（Tristano 2、Marsh、Crothers）、Braxton 3、Rivers 2、George Russell、Don Ellis 2、Cecil Taylor、Harriott 2、Howard Riley 2、SME、Schoof。mc4（`add-20261022-mc4`）：Ligeti（Driver）、Nancarrow、Boulez 4（Kontarsky《Structures》、自指 2、Kawka）、Varèse（Craft）、Xenakis 4（Chojnacka、Carneiro、高橋悠治、Arditti）、Carter 2、Ferneyhough 2、陳銀淑、Wolpe、Birtwistle、Antheil《Ballet mécanique》（Surinach）；古典卡照 §0.6／§0.7（composer 欄、錄音層錨點制人工三軸）。
+- **張數不到 45，照實上架**：策展兩輪 mc3 37／mc4 29 張（冷爵士正典多已在池；當代古典快作多在厚管弦盤上無邊距），主線先汰貼邊，研究層聲音存疑再汰 mc3 10（偏暖 6、偏靜 3、偏重 1）、mc4 6，不補候補。年份更正：Riley《Synopsis》1974／Incus、Harriott《Abstract》1963、Arditti《Carter》1988、Hodges《Birtwistle》2005、陳銀淑 2005（DG 首發）。
+- **主線審稿**：mc3 刪 5 句單源樂評評價；mc4 改 4 張（單源評價、金貝鼓譯名、懸空指涉、Chin 年份句）。封面 38 張 live-check 200；CAA 404 改 Discogs 6 張／Apple 3 張（`apple-verified-collection`），Nancarrow CAA 是 1750 Arch 全集再版封面、改 Discogs Columbia MS 7222；Discogs 7 筆登錄 `data/discogs-cover-registry.json`。試聽 mc3 14／mc4 13 ready。
+- **落格率**：`batch-progress/mood-axes/score-mc3/`、`score-mc4/`（select 改成自動讀所有 score*/scored-*.json 當已評分集）。mc3 16/19＝84%（Tristano《Note to Note》、Riley《Angle》、Crothers 鋼琴主導無強鼓落平靜）、mc4 9/19＝47%（**新能量規則把無拍點的點描／複節奏現代作品壓到靜**：Boulez、Carter、Ferneyhough、Wolpe、陳銀淑落平靜；落冷冽的全是機械脈動或打擊推進的）。建議下一輪當代古典只收打擊與機械律動作品，mc30 minimalism 有穩定脈動。gate 綠、錨點 104/104；八格 冷冽 899、平靜 1,345。
+- **共用腳本**：`build-cards.mjs`／`build-manifest.mjs` 傳遞古典 `composer` 欄（對既有批無影響）。`genre-l3-artist-map.json` 補 Connie Crothers → jazz/cool。新藝人 16 位（mc3 2、mc4 14）列在各批 rulings 末尾，未切藝人介紹（6 個並行不切）。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`onboarding-manifest-add-20261022-mc{3,4}-20261022.json`、`batch-progress/add-20261022-mc{3,4}/*`、`batch-progress/mood-cells-20261022/{curation,master}-mc{3,4}.json`、`build-cards.mjs`、`build-manifest.mjs`、`SCENES.md`、`desc-tools/batches/*/add-20261022-mc{3,4}-*`、`batch-progress/mood-axes/{score-mc3,score-mc4}/*`、`priors-v0-report.json`、`scale-v0-report.json`、`data/mood/*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`。
+- **驗證**：`verify-album-onboarding --published` mc3／mc4 皆 0 error；KV 回讀 19/19、19/19 逐字一致；card_catalog 19/19、19/19；`build-card-moods` gate 綠（錨點 104/104）。
+
 ### 2026-10-22｜dip-vinyl-shop｜情緒薄格線擴大：三格各補到 2,000、6 個工作階段並行
 
 - **內容**：店主「新增的專輯數太少了 與雀躍嚴重不平衡」→ 選「各補到約 2,000、一批 45 張、6 個並行」。md1–md4 落格率 91–98%，每批淨增約 40；缺口 頹靡 +881、冷冽 +1,126、恍惚 +1,216，約 80 批。新增 `batch-progress/mood-cells-20261022/SCENES.md`（md5–md25、mc1–mc30、ml1–ml30 場景與條號）；`CUR-DISPATCH.md` 改三線共用（冷冽 x≥3.3／y≤0.2／z≤−0.3、恍惚 x≤2.7／y≥0.8／z≥0.3、各線反例）；`build-priors.mjs` 改自動讀所有 `score*/scored-*.json`（輸出與改前逐位元相同）；HANDOFF 加並行合併規矩（產生檔取 main 版＋重跑）、子工作階段不切藝人介紹。第 1 輪開 6 個子工作階段：md5–md8、mc1–mc4、ml1–ml4。
