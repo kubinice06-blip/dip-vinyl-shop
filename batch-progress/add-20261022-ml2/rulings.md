@@ -89,3 +89,7 @@
 
 ## 研究 候補 9 張
 > 條號 14156–14158（主線區間借用）。研究稿 append 進 a／b／e 組既有檔。
+- **14156**　候補 9 張研究稿已 append（a 3、b 1、e 5，facts 8–10 條，全 https）。身分全無誤；**推翻策展層一處**：Richard Hawley《Lowedges》是第三張（維基），不是卡單寫的第二張。日期差：Light in You 維基 09-18／MB 10-02；Wakin 維基 04-09／MB 04-08；At Dawn 維基 04-06／MB 04-05；Truelove's Gutter 維基 09-21／卡單 MB 07-13；年份皆無誤。status thin：Tarnation《Gentle Creatures》、Mercury Rev《Born Horses》《The Light in You》、Hawley《Lowedges》（維基無聲音描述，樂評全文皆抓不到）。WebSearch 用 2 次（Antlers、Tarnation）。
+- **14157**　moodGuess 存疑：Hawley《Truelove's Gutter》y、z（Hawley 自稱最黑暗，Pitchfork「更暗、更偏氛圍、更內縮」，色溫恐偏中性，質地偏空）；Kurt Vile《Wakin》x、y（短歌有拍子與鼓機，來源只有「寬敞、平靜」）；My Morning Jacket《At Dawn》x（維基稱鬆散龐雜的搖滾，建議 x 2.5–3.2）；Tarnation、Light in You、Lowedges 的 x、y（曲短、無殘響來源）；Born Horses 的「低語敘述」「極慢」查無來源。成立：Antlers《Familiars》（小號主角、殘響縱深、極慢長曲）、Hawley《Coles Corner》大致成立。
+- **14158**　建議汰換優先序（聲音證據弱）：Tarnation《Gentle Creatures》、Mercury Rev《The Light in You》《Born Horses》、Hawley《Lowedges》；Truelove's Gutter 視色溫決定。最穩的暖霧候選：Antlers《Familiars》、My Morning Jacket《At Dawn》（筒倉殘響有來源）。
+- **14159**（主線，候補研究後）：再汰 Richard Hawley《Truelove's Gutter》（候補研究：本人自稱最黑暗、更暗更內縮，色溫恐近中性）。其餘候補存疑多是「查無殘響來源」，照主線聽感判斷留下（Tarnation 殘響鄉村、Mercury Rev 兩張弦樂墊、《Lowedges》、《At Dawn》筒倉殘響有來源、Kurt Vile）。《Lowedges》是 Hawley 第三張（卡單誤記第二張，寫作只認研究稿）。**本批定為 39 張**（研究 a 9、b 8、c 7、d 7、e 8）。
