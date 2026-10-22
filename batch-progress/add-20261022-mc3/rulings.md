@@ -1,0 +1,16 @@
+# add-20261022-mc3 裁定（情緒薄格策展線・冷冽：冷爵士——Tristano 派、60s 前衛二線、歐陸早期自由爵士乾硬快的那半）
+
+> 店主 2026-10-22「新增的專輯數太少了 與雀躍嚴重不平衡」→ 三格各補到約 2,000；場景佇列 `batch-progress/mood-cells-20261022/SCENES.md`、交接 `batch-progress/HANDOFF-mood-cells-line.md`。目標格：**冷冽＝躁（x≥3.0）＋輕（y<+0.5）＋冷（z<0）**；策展邊距 x ≥ 3.3、y ≤ +0.2、z ≤ −0.3。冷冽線第一次跑。
+> 策展：`curation-mc3.json`（兩輪共 37 張：Tristano 派 6、美國前衛冷調 9、結構化前衛 8、歐陸乾硬 13、M-Base 1）→ `master-mc3.json`（MB 回查 37/37 釘住、人工 0）→ `pick.json`（29）→ `build-cards.mjs`。
+> 本批卡單：`desc-tools/batches/cards/add-20261022-mc3-cards.json`（29 張；研究 a–d 各 6、e 5）。身分：MB 釘住 29、§1 人工 0。
+> **預留：研究 a 11161–11170、b 11171–11180、c 11181–11190、d 11191–11200、e 11201–11210、鉤子 11211–11220、寫作 11221–11230、主線 11231–11240。**
+---
+
+## 主線策展（不佔條號）
+- **場景挖不到 45 張，照實上架 29 張、不湊數**。主因是這個場景的正典已在池：Tristano／Konitz 主盤、Braxton 十餘張、Hutcherson 與 Shorter 60 年代 Blue Note 全部、Russell《Ezz-thetics》、Rivers、早期 Cecil Taylor 主盤、Schlippenbach《Payan》、SME《Karyobin》、Riley《Flight》。第二輪放寬到 Tristano 圈二三線、Third Stream、M-Base 早期、Lacy、Paul Bley、日本與歐陸只多 8 張：Osby 早期與電聲 M-Base（池中 y 0.3、電貝斯＋合成器判重）、富樫雅彥（池中判靜）、山下洋輔三重奏（池中判重）、Mangelsdorff（判暖或貼邊）、Sal Mosca／Peter Ind／Ted Brown（MB 只有合輯或查無）、Billy Bauer、Konitz《with Warne Marsh》（x 只到 3.3）不收；全力自由合奏與 Evan Parker 循環換氣池中判重（《Monoceros》y 0.6、《Pakistani Pomade》y 0.9），歐陸即興只收乾薄的。mc14／mc22／mc28 點名的藝人（Hill、Dolphy、Booker Little、McLean、ICP、Globe Unity、Mengelberg、Schweizer 等）留給該批。
+- 37 張全過邊距檢查（x 3.3–4.0、y −1.2～0.0、z −0.8～−0.4）。主線汰 8 張：
+  - **能量貼門檻 3 張**（x 3.3）：Warne Marsh《Jazz of Two Cities》、Mike Taylor《Trio》、Howard Riley《Discussions》。
+  - **色溫 z −0.4 且另有一軸風險 5 張**（寧缺，不讓第一批冷冽線落格率被拖低）：Steve Coleman《Motherland Pulse》（人聲曲＋放克底，z 可能 −0.2）、Steve Lacy《Disposability》（池中 Lacy x 2.6–3.0）、McLaughlin 等《Where Fortune Smiles》（電吉他 y 可能 +0.3）、Barry Altschul《You Can't Name Your Own Tune》（齊吹 y 可能 +0.3）、Jimmy Lyons《Other Afternoons》（BYG 錄音粗、Bowie 小號戲謔，y／z 皆貼）。
+- **留下的邊緣張**（研究層要特別寫聲音事實）：Braxton《Six Compositions: Quartet》（Ed Blackwell 鼓帶紐奧良彈性，z）、Paul Bley《Barrage》（Graves 鼓密、Allen 尖嘯，y）、George Russell《The Stratus Seekers》、Joe Harriott 兩張（z −0.4）、Revolutionary Ensemble《The People's Republic》（x 依曲目起伏）。
+- 年份：照原盤首發年；MB release-group 日期是 CD 再版的（Warne Marsh《Ne Plus Ultra》MB 2006、George Russell《The Outer View》《The Stratus Seekers》MB 1991）照原盤 1970／1962。
+- 研究層每支 WebSearch ≤3；facts 必含 2–3 條聲音事實（速度、編制、音色、錄音）；聽起來偏暖（swing 律動、藍調味、抒情慢板）或偏靜、偏重的標「moodGuess 存疑」。
