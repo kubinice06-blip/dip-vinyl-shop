@@ -986,3 +986,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 審稿修 1 處：「2023 年疫情解封後首度出國」→「2023 年疫情解封後的海外首站是香港」。來源（VERSE、MeMeOn）只說解封後海外首站是香港，沒說之前沒出過國。
 - 保留：〈我想和你一起〉900 萬點閱（中文維基引 VERSE，非獨立來源；樂團走紅核心，必要例外，寫成「後來」）；2023 夏中國 11 城（MeMeOn＋中文維基）。
 - 不寫：2026-12-25 香港麥花臣場（尚未發生）、新專輯《House Of》（未發行、單源）、成員加入先後（兩源不一）、獎項（查無金曲／金音紀錄）、製作人姓名（未證）。
+
+## ar-d-129（2026-10-22，薄細項策展線 ts1–ts11 補介紹：越南、柬埔寨、菲律賓、泰國、馬來西亞、新加坡搖滾）
+
+- 40 位上架（30 full、10 thin：Chillies、Thủy Triều Đỏ、Sàigòn Soul Revival、Raditori、Wolfgang、Parokya ni Edgar、The Jerks、Humpback Oak、Western Union Band、Wings (Malaysia)），0 位不寫。補洞 WebSearch 每位 ≤2 次。
+- 主線審稿修 5 位：Microwave「最好入耳」改「最易入耳」；Parokya ni Edgar 原稿只有英文維基一源，主線補 iHeart 樂團簡介（雅典耀高中、前身 Comic Relief 專唱惡搞翻唱）為第二源，刪團名由來（單源）、改寫成 139 字；Loso 刪「被視為泰國唱片業的紀錄」（維基單源、意思含糊）；Moderndog 末句四重轉述的讚詞壓成一句；Humpback Oak「從餘燼中組成的新樂團」改「樂團散夥後，Leslie Low 另組 The Observatory」。
+- 截止日後事實：Up Dharma Down〈Tadhana〉2026 年 2 月成為首首 Spotify 破 5 億次的菲律賓錄音，Philstar 2026-02-15 報導＋英文維基兩源，保留。
+- 保留：Silly Fools《Mint》卡帶逾百萬卷（MGR Online＋維基兩源；「起初銷量不如 Loso、後來翻身」是這團的故事核心，必要例外）；bodyslam 2010 拉加曼加拉體育場「當時泰國規模最大的演唱會」（The Standard＋維基）；The Quests〈Shanty〉首首登上新加坡榜首的本地樂團歌（維基＋NLB BiblioAsia）；IV of Spades〈Mundo〉Spotify Viral 50 第一（破圈核心）。
+- 不寫：Cambodian Space Project 主唱 Channthy Kak 2018 年辭世（只在 notes；主線派工特注誤寫成 2023，補洞層已更正）；Bức Tường 早期銷量與到場人數、Loso 逾百萬卷、Ngọt CD 銷量、Wolfgang 白金、各團單源的「第一支」（The Jerks、Microwave、Electrico、The Great Spy Experiment SXSW）。
+- 身分：Microwave（微波）、Slot Machine（賭博機）、Wolfgang（人名頁）維基預抓錯頁已作廢；Western Union Band 經 Reggie Verghese 條目確認是新加坡同名團。
+- 已上線專輯簡介待修（pubIssues）：Thủy Triều Đỏ 成軍年 1998／1999、The Great Spy Experiment 成軍年、Rusty Blade「Stadium Negara 場場爆滿」、The Jerks NU Rock 得獎專輯；Butterfingers「demo 被誤認為 Nirvana 未發行專輯」查無來源。

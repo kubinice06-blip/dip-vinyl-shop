@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 954 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 964 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -958,3 +958,13 @@
 | ar-d-127 | Mocca | My Diary | 《My Diary》的銷量將近 15 萬張 | 只有英文維基寫『估計約 15 萬張，是 2000 年代印尼最暢銷的獨立專輯』，屬單源估計值，找不到第二源；建議改成『據估計』或刪去數字 | https://en.wikipedia.org/wiki/Mocca_(band) |
 | ar-d-127 | Fridge | Happiness | Fridge 成團於 1995 年 | 維基與 Wikidata 為 1995 年，RA 2023 年重發評論寫 1996 年，兩說並存；年份是否保留請店主斟酌，改成『1990 年代中期』最穩。 | https://ra.co/reviews/35511 |
 | ar-d-127 | Houses | A Quiet Darkness | 德州的 Sonic Ranch Studios 包辦錄音與混音 | 維基寫錄音含加州 Desert Center 廢棄房屋、學校、小屋的田野錄音，Sonic Ranch 是『完成』專輯之處；『包辦錄音』可能說過頭，建議改為『在德州 Sonic Ranch 完成』或查 Discogs 製作名單再定 | https://en.wikipedia.org/wiki/Dexter_Tortoriello |
+| ar-d-129 | Thủy Triều Đỏ | Sau cơn mưa | Thủy Triều Đỏ 1999 年成軍於河內 | 與同團《Nắng mới》簡介（1998 年成軍，VnExpress 2003 年原始報導）不一致；以 VnExpress 為準應為 1998 年（越南文維基寫 1999）。 | https://vnexpress.net/nang-moi-qua-tang-giang-sinh-cua-thuy-trieu-do-1878780.html |
+| ar-d-129 | The Jerks | The Jerks | 1998 年 NU Rock 把年度最佳專輯頒給這張同名作 | 維基正文稱 1998 年 NU Rock 最佳專輯得主是《Haligi Ng Maynila》系的 1998 大廠專輯，Lopito 條稱得獎者為『Reklamo ng Reklamo』；卡池的 1997 同名專輯與 1998 得獎專輯是否同一張，維基自身表述不一，建議本機核對 | https://en.wikipedia.org/wiki/The_Jerks |
+| ar-d-129 | The Great Spy Experiment | Flower Show Riots | 2004 年成軍 | 其他來源說 2006 年成軍或約十年，成軍年不一致，建議改成不寫年份 | https://www.bandwagon.asia/articles/invading-the-esplanade-step-into-the-house-of-riot |
+| ar-d-129 | Rusty Blade | Awas! | 1987 年巡演到吉隆坡的 Stadium Negara，場場爆滿 | 維基只寫該場演出被媒體讚為最佳，沒有『場場爆滿』的來源 | https://ms.wikipedia.org/wiki/Rusty_Blade |
+| ar-d-130 | Estranged | Remain Unknown | 首張的重發版另加了馬來文歌〈Itu Kamu〉，它在 2007 年奪得 AJL 年度歌曲 | 〈Itu Kamu〉的獎是第 22 屆 Anugerah Juara Lagu 的 Best Song；維基獎項欄列在 2008 年，Borneo Post 也寫 2008 年，維基導言則寫 2007，年份兩邊不一致，建議改寫成『第 22 屆 AJL 年度歌曲』避免年份。 | https://nst.com.my/amp/lifestyle/groove/2018/03/344950/showbiz-estranged-light-sabah-and-sarawak |
+| ar-d-130 | Motherjane | Maktub | 2008 年 9 月發表第二張《Maktub》 | The News Minute 記為 2009；MusicBrainz 與維基為 2008，來源不一致，上線寫法有依據，僅供店主知悉 | https://www.thenewsminute.com/article/how-motherjane-carved-out-niche-itself-kerala-s-rock-scene-164710 |
+| ar-d-130 | Peter Cat Recording Co. | Bismillah | 團名借自村上春樹在東京開過的爵士吧 | Sawhney 受訪說名字來自加爾各答一間咖啡館，事後才得知村上春樹開過同名爵士吧；『借自』過強，建議改為『與村上春樹開過的爵士吧同名』 | https://openthemagazine.com/art-culture/new-kids-on-the-block |
+| ar-d-130 | Hurd | Монголд төрсөн | 原定 10 月 30 日的首場在呼和浩特一所大學，當天現場來了數百名警察 | NYT 轉載稿（smhric）稱呼和浩特場是三日巡演最後一站，日期 11 月 1 日，警方包圍校園、驅散約 2,000 人；各報 10 月 30 日／11 月 1 日不一。『首場』『數百名警察』無來源，建議改『原定巡演的呼和浩特場』並刪『數百名警察』 | https://www.smhric.org/news_68.htm |
+| ar-d-130 | Haranga | The Sound of the Century | 找來 Mercedes-Benz 與 Siemens Nixdorf 等德國企業出資 | 維基寫 Daimler-Chrysler 與 Siemens Nixdorf；ub.life 三者皆列，且文章自己也前後不一（稱當時沒專輯又稱出版專輯）。Mercedes-Benz 為 Daimler 旗下，寫法可接受，僅供店主知悉 | https://www.ub.life/p/14551 |
+| ar-d-130 | Warfaze | Warfaze | 受到前 Feedback 主唱 Maqsud 啟發 | Prothom Alo 寫的是資深樂手 Maksud ul Haque 建議改寫孟加拉語歌，未提 Feedback；若 Maqsud 即 Maksud ul Haque（Feedback 主唱）則一致，此處身分未經第二源確認，僅供店主知悉 | https://www.prothomalo.com/entertainment/song/iezzx6w78i |
