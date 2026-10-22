@@ -29,3 +29,15 @@
 - **14009**（Point of View）：年份 1979-10-12 無落差；製作人是 Errol Thompson 與 Matumbi 自己，非 Bovell；樂評形容節奏俐落、帶 swing 與銅管、polished——moodGuess 存疑（強），建議汰換。Jo-Ann Greene 評論取自轉載頁。
 
 **主線需決定**：14002、14005、14009 建議汰換；14003、14007 建議重評。
+
+## 研究 c 組
+- **14021**（Don Carlos《Day to Day Living》）：1982 Greensleeves GREL 45 無落差。Junjo 製作、Roots Radics、Scientist 混音（Discogs）；Greensleeves 頁與 unitedreggae 描述：〈Street Life〉稀疏鼓貝斯、〈Hey Mr. Babylon〉有管風琴與號角、較明亮；y、z 可能略低於預估，邊緣。
+- **14022**（Linval Thompson《Baby Father》）：1983 GREL 51 一致。聲音事實薄（status thin）：無樂評，Discogs 無混音署名，moodGuess 的「Scientist 混音」未證實，存疑。
+- **14023**（Johnny Osbourne《Folly Ranking》）：年份 1980 一致，但卡單廠牌「Jah Guidance」未證實（Discogs 主版 Positive Sounds JAM1000，roots-archives 列 Jammys JAM 1000），主線核對；Roots Radics 伴奏、厚貝斯殘響皆無來源，thin，moodGuess 存疑。
+- **14024**（Wailing Souls《Inchpinchers》）：原盤 1983（Discogs GREL 47，標籤版權 1982、封面 1983；英文維基寫 1982；MB 1996 為再版），維持 1983。混音署名 Errol Thompson 與 Oswald Palmer，非 Scientist，y 可能偏樂觀，存疑（弱）。
+- **14025**（The Mighty Diamonds《Changes》）：1981 無落差。Gussie Clarke 製作、Sly & Robbie、Willie Lindo 編曲、雙鍵盤，〈Pass the Kouchie〉的原版；曲目中速偏乾淨輕快，moodGuess 存疑（強），建議汰換或重評。
+- **14026**（Bunny Wailer《Sings the Wailers》）：推翻策展層——英文維基寫 Harry J 錄音室、Sly & Robbie 伴奏，非 Channel One。原盤 1980（MB 1990 為再版；Discogs master 被綁到 Dancing Shoes 單曲 1981，不可引）。維基稱 dancehall／rockers 影響最明顯，moodGuess 存疑；thin。
+- **14027**（Burning Spear《Dry & Heavy》）：1977 一致。自製（Rodney 製作）、雙貝斯雙鍵盤雙吉他加四人號角，Sylvan Morris 錄音；題名「Dry」與「殘響深」不合，z 風險，moodGuess 存疑。
+- **14028**（Hugh Mundell《Time and Place》）：推翻策展層——Discogs 製作人是 Hugh Mundell 本人（Mun Rock），Pablo 是編曲、旋律口琴、弦樂與木琴；Pablo 製作的是 Mundell 首張《Africa Must Be Free by 1983》。工程師 King Tubby、Scientist 等五位，與預估（霧、暖）大致相符，濕度為推論。1980 一致。1983 遇害晚於發行，寫作層從簡。
+- **14029**（Junior Delgado《Taste of the Young Heart》）：推翻策展層——Discogs 與維基指向 Dennis Brown（DEB 廠牌）製作，非 Pablo（Pablo 合作在 1983 年出獄後）。錄音地 Joe Gibbs、Channel One、Harry J，Errol Thompson 與 Sylvan Morris remix；年份 1979（Discogs；維基文字 1978）。聲音可能偏飽滿明亮，「霧狀低頻」存疑。
+- **14030**：保留未用。
