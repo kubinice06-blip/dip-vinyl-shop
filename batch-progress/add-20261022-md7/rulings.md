@@ -27,3 +27,22 @@
 - **17178**（Aarktica《No Solace in Sleep》）：聲音事實（吉他加效果器、無鼓）與失聰起源皆僅 Chain D.L.K. 單一評者加 Discogs 內頁；Penny Black 樂評頁 403 未採。facts 已標為評者說法，寫作層宜保守。
 - **17179**（Pan American《Quiet City》）：Textura 評論提到的 Smallholding、Christo en Pilsen 不在本盤曲目表，疑為他張，整篇不採；鼓只在 Inside Elevation、Skylight（Mulvenna）、Het Volk（Hess）三首出現，其餘為電子織體，moodGuess 大致成立。
 - **17180**（來源與分數）：Pitchfork、AllMusic、BBC 頁工具抓不到或僅由維基轉述；分數、星等、Metacritic、榜次一律不入 facts。WebSearch 用 3 次（Pan American、Aarktica、Evpatoria）。Barn Owl 封面攝影師 David Muench 不寫「沙漠」（無來源）。九張皆為原創專輯，無選輯、無重複卡、無未發行。
+
+## 研究 e 組
+- **17201**（Thisquietarmy《Hex Mountains》moodGuess 嚴重存疑，建議汰換）：預估「失真吉他 drone、無鼓」，但 Discogs 與 Bandcamp credits 皆有 Scotty Rooney 打鼓，廠方文案寫 uplifting rhythms、vocal screams、heaviest and darkest，兩首為現場錄音，另有 Monarch 兩位成員人聲與銅管；能量軸多半不是靜，易判躁。
+- **17202**（Thisquietarmy《Vessels》《Aftermath》moodGuess 存疑）：《Vessels》文案明寫 epic percussion、industrial in percussive force，Discogs 列鼓機程式；《Aftermath》Discogs 列 Drum Programming，文案稱 light and heavy。兩張都不是無鼓，是否偏躁無樂評可證，建議主線試聽再定；《Hex Mountains》優先汰換。
+- **17203**（Aidan Baker《Green & Cold》moodGuess 存疑）：Bandcamp 與 Discogs 皆列 drums、vocals、bass、flute，Bandcamp 稱 ambient/shoegazer/post-rock「songs」，非無鼓 drone；Bandcamp 曲長與 MB CD-R 版不同，facts 不寫曲長。《Ice Against My Skin》（電吉他、voice、tape loops，無鼓）與《Field of Drones》（單吉他、2003 Om Festival 三小時演出節錄）與預估相符。
+- **17204**（Windy & Carl《Consciousness》z 色溫存疑）：無鼓三處一致（維基、Discogs 簡介、Prog Archives），但 Tape Op 寫 warm thawing guitar、廠商轉引 Boomkat 稱 bright airy，整體偏暖或中性，與預估 z −0.6 的冷有落差；可能更近恍惚（ml）。Roy Montgomery 兩張：《Allegory》credits 僅吉他與管風琴、四軌錄音，無鼓為推測；《Camera Melancholia》聲音來源只有藝人層級描述，status thin。
+- **17205**（來源限制）：Wikipedia 429、AllMusic 403、Grapefruit／Midheaven 頁 404／429；WebSearch 用 3 次（Allegory、Camera Melancholia、Consciousness）。《Camera Melancholia》零售商「雙專輯、愛與失去的冥想」文案來源頁已失效，不入 facts；獻詞僅寫日期。Roy Montgomery 生地維基（倫敦）與 Discogs（基督城）不一致，採維基並只寫遷居。評分、星等不入 facts（AllMusic 4.5 僅維基轉述）。
+
+## 研究 a 組
+- **17161**（moodGuess 存疑：Labradford《fixed::context》）：Pitchfork 明說吉他音色「溫暖」、早期 60 年代納許維爾味，z 預估 −1.0 恐偏冷、可能落微暖；〈Up to Pizmo〉另有貫穿的低音重擊（非鼓）。無鼓成立（Discogs 人員表僅三人）。
+- **17162**（年份：fixed::context）：卡單 2000＝英國 Blast First 首發（Discogs 版本表），美國 Kranky 版與維基百科為 2001（Pitchfork 樂評 2001-02-20）。維持 2000 或改 2001 由主線定；錄音者為 Steve Albini、2000-07 錄於芝加哥 Electrical Audio（Discogs 註記與 credits，單源）。
+- **17163**（moodGuess 輕微存疑：Labradford《E luxo so》）：原聲鋼琴、弦樂四人、洋琴使質地偏乾淨，y 可能偏輕；第三首被 Pitchfork 稱「福音色彩」，色溫或微暖。
+- **17164**（moodGuess 存疑：Roy Montgomery《Temple IV》）：〈Departing the Body〉後半與〈Jaguar Meets Snake〉（約 8 分鐘）被 Pitchfork 形容為龍捲風般靜電與「白指節」回授噪音，能量軸有判躁風險；其餘曲目偏柔，色溫非單一冷。無鼓成立（吉他、四軌、部分 Moog）。年份 1996（Kranky 首發）對，錄於 1995-01。
+- **17165**（moodGuess 存疑：Pan American《The River Made No Sound》）：Exclaim! 稱 Nelson 為「rhythmic ambient」分身、goout.net 稱專輯以「脈動極簡節奏」為特色，Nelson 自述「更多演奏、更少編程」並加入鋼琴音色；並非無鼓／鼓稀，x 預估 2.0 恐偏低，建議主線聽軌後決定汰換。
+- **17166**（Roy Montgomery《Silver Wheel of Prayer》thin）：樂評正文取不到（Bandcamp／Discogs 頁／Wikipedia 受阻，WebSearch 一次無果）；僅有 MB 曲目、Discogs 錄音註記與人員表（1998-10 Lyttelton 四軌、2000-01 Nightshift 混音、Rickenbacker 十二弦、Teisco、E-Bow、Farfisa）。無鼓由人員表歸納，聽感無佐證；status 標 thin。
+- **17167**（Windy & Carl《Antarctica》）：維基二人組條稱 maxi-EP，專輯條與 Discogs／MB 為 Album（三首 41 分、第三張專輯），卡單 Album 成立。z（冷）僅有「冰川」比喻佐證，為推論。Scaruffi 認為鍵盤居前景、吉他退後（單一異見，未採）。Pitchfork 評分與 2016 榜次只寫 notes。
+- **17168**（Roy Montgomery 三張卡掛 country us）：藝人為紐西蘭人（基督城）；卡單 country 欄只影響商店分區，非本層職責，供主線知悉。《Scenes From the South Island》的「簡樸、電氣干擾」描述出自 Pitchfork 對同公寓同期《Temple IV》的文章，facts 已明寫。
+- **17169**（Labradford 四張）：A Stable Reference 發行日 MB 5/26、維基 5/23，facts 只寫年份；英國版 Discogs 列 Flying Nun。Labradford 自題專輯與 A Stable Reference 的「無鼓」由 Discogs／維基人員表歸納（只列 Brown、Donne、Nelson）。AllMusic、Kranky 官網（403）、Bandcamp 抓不到，Raggett 句引自維基轉述。
+- **17170**（來源與用量）：WebSearch 用 3 次（Labradford 自題、Roy Montgomery Silver Wheel〔無果〕、Pan American River）。九張皆為原創專輯，無選輯、無重複卡、無未發行；年份、廠牌僅 fixed::context 年份一處待定，無推翻廠牌。分數、星等、榜次一律不入 facts。
