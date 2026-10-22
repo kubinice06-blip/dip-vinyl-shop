@@ -16,3 +16,9 @@
 - **盤名照 MB 正規名**：Chelsea Wolfe《Ἀποκάλυψις》（queryAlias Apokalypsis）、Sunn O)))《3:Flight of the Behemoth》（queryAlias Flight of the Behemoth）。Chelsea Wolfe 那張 MB first-release-date 2010 是一筆可疑的早期數位條目，正式首發 2011（Pendu Sound），卡面年份取 2011；研究層核。
 - 策展層剔除且主線同意：Boris《Absolutego》（MB Single）、Khanate《Capture & Release》（MB EP）、Om 全部（池中《Advaitic Songs》z +0.2 偏暖）。
 - 研究層每支 WebSearch ≤3；facts 必含 2–3 條聲音事實（鼓、速度、失真、殘響、冷暖）；與 moodGuess 不符的標「存疑」。
+
+## 研究 e 組
+- **10881**：e 組 9 張 facts 8–9 條；來源 Wikipedia API、MB API、Angry Metal Guy、Echoes and Dust、Sputnik 等。WebSearch 用 3 次（Darkher、Khanate、Ulver）。
+- **10882**：status：full 5（Ceremony、The Miraculous、Shadows of the Sun、Realms、To Be Cruel）、thin 4（Some Heavy Ocean、Dead Magic、All Thoughts Fly、Saint of the Pit）；thin 的原因是缺樂評對速度／殘響／低頻的直述，聲音事實靠編制與曲風標籤。
+- **10883**：moodGuess 存疑：Rundle《Some Heavy Ocean》（鼓手 Common 兼打擊，吉他民謠搖滾歌曲集，查無回授／殘響佐證）；von Hausswolff《Ceremony》（維基稱 gothic pop，〈Mountains Crave〉808 拍手、〈Sova〉雷鳴般的鼓，x 2.1 偏低）；Khanate《To Be Cruel》（評論稱鼓為「殘暴雷鳴」，與「鼓極稀」只部分相符，另有嘶吼）；Galás《Saint of the Pit》（第五首〈Cris d'aveugle〉約 12 分鐘有鼓，並非全盤無鼓）；《Dead Magic》有完整樂團與鼓手，〈Ugly and Vengeful〉16 分鐘高潮段可能不靜。
+- **10884**：沒有推翻年份／廠牌／盤名。Darkher 主腦姓名來源有 Wissenberg／Maiven 兩寫法，facts 用 Wissenberg 並註明；《Ceremony》原版 Kning Disk、2013 City Slang 重發；MB 對 Saint of the Pit 登記的是 Intravenal Sound Operations 數位版，原版 Mute 1986。
