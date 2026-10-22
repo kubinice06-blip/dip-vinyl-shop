@@ -14,3 +14,11 @@
 - 同作品另一錄音（可收）：Driver《Ligeti: The 18 Études》（池中 Aimard 版）、Arditti Carter 2&3（池中 Juilliard 全集）、Surinach《Ballet mécanique》1953 室內版（池中 George Antheil《Ballet mécanique》2014）。
 - 掛名：作曲家自演自指（Boulez ×3、Nancarrow）artist 放作曲家、album 用原盤名、composer 欄留空；多作曲家盤（Schleiermacher《The Bad Boys!》）composer 留空。
 - 研究層每支 WebSearch ≤3；facts 必含 2–3 條聲音事實（速度、密度、音色、錄音）；與 moodGuess 不符的標「存疑」。
+
+## 研究 a 組
+- 11241　Charial & Hocker《Ligeti: Mechanical Music》：錄音 1995-10-31～11-02 Funkhaus Köln（Discogs 單源），首發 1997 不變。MB 掛名的 Terrioux 在 Discogs 只是手搖風琴調音技術員，不寫成演奏者；《Poème symphonique》（約 20 分鐘，占全盤約三成）執行者查無。moodGuess 存疑：節拍器一軌與 Musica ricercata 慢板拉低能量，x 3.8 偏高；Sony 自動鋼琴錄音評為「金屬、偏遠」，冷度成立。
+- 11242　Driver《Ligeti: The 18 Études》：2019-10 倫敦 St Silas 錄、2021-03 Hyperion 首發，無推翻。第三冊與 Arc-en-ciel、Automne à Varsovie 等慢曲拉低能量，x 3.9 輕微存疑；教堂殘響與「溫暖」評語使 z −0.7 也可能偏中性。維基稱 Driver 2001 年同時拿 BBC Young Musician，存疑未採。
+- 11243　Nancarrow《Studies for Player Piano》：Columbia MS 7222 收 12 首，1969 首發無誤；錄音在墨西哥城工作室、Nancarrow 監督（NYPL 摘要），錄音日期查無。第 2 號慢藍調、第 7 號六分鐘等，z −0.5 合理偏樂觀，速度主要由 15、19、21、25、33 號撐起。Ligeti 讚語為維基單源，寫作層若用須標「據引述」。
+- 11244　Kontarsky《Boulez: Structures pour deux pianos》：年份取 Discogs master／Wergo WER 60011 原版 1965；維基另列 Kontarsky 1960 與 1965 兩次錄音，關係未釐清，故不寫錄音年。Structures I／II 以點描為主、有慢靜段，x 3.6 輕微存疑，是汰換候選；冷度 −1.4 成立。
+- 11245　Boulez《sur Incises / Messagesquisse / Anthèmes 2》：Discogs 2000 DG 463 475-2，1999-10／12 巴黎（Cité de la musique、IRCAM）錄音；MB 釘的是 2007 再版同錄音。Messagesquisse 與 Anthèmes 2 的編制、Queyras／Kang 各對應哪一曲未取得來源，facts 不寫。Sur Incises 占全盤約五成六，其餘含數個 Très lent，輕微存疑但整體可留。
+- 推翻策展層：0 處。WebSearch 本組共用 4 次（Ligeti 盤、Nancarrow、Boulez Structures、Sur Incises 各 1），超出每支 3 次上限 1 次，其餘走 MB／Discogs API 與 WebFetch。
