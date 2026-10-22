@@ -106,3 +106,12 @@
 - **11072**　`desc2:KaS Product|By Pass`：「評論說 KaS Product 這組二人把冷浪潮推得更冰冷，RCA 這回照樣發行。」→「法國冷浪潮二人組 KaS Product 的這張續作，1983 年 2 月由 Mona Soyoc 與 Spatsz 帶進紐約 Sorcerer Sound…」。依據：原句是 James Greene 對樂團整體的單源評價（研究 b 第 10 條，出自維基 Cold wave 條目轉引），不是對本盤，照審稿規則刪；「RCA 照樣發行」與末句重複一併刪。只刪不增事實，研究／鉤子層不用同步。
 - **11073**　`desc2:Xeno & Oaklander|Par Avion`：第二句「Serge 合成器的音色，出自復興冷浪潮的布魯克林二人組 Xeno & Oaklander 之手。」→「Xeno & Oaklander 是復興冷浪潮的布魯克林二人組，成員 Sean McBride 與 Liz Wendelbo。」依據：原句與 hook 重複 Serge 合成器、語意不通；成員名見研究 d 第 9 條。
 - **11074**　其餘逐張核過的點：Try Out「la vague froide」出處（研究 a 第 10 條，維基 Cold wave）、Voyeur「沒有發行單曲／歐洲幾城宣傳演出」（研究 b 第 3 條）、Rheingold 西德前 20 首例（德文維基）、Görl 與 Annie Lennox 相識經過（Electricity Club）、Tour de France 未趕上賽事與德國首張冠軍（研究 b）、Units「安非他命般的速度」為聲音描述保留、Tesis「節奏簡單、旋律好記」（西文維基）。Electric Cafe 盤名照卡池不帶重音。
+
+## 上線與落格率（本線驗收）
+- 2026-10-22 上線 **22 張**：card_catalog 22/22、KV 22 鍵逐字一致、試聽 ready 20／unavailable 2（Tesis、Figures：Apple 只有合輯或重錄版，不硬配）、封面 22 張 CAA live-check 200；`verify-album-onboarding --published` 0 error。冷門軸人工 1 張（Tesis：Last.fm 掛名對不上）。
+- 情緒評分 `batch-progress/mood-axes/score-mc1/`（Opus 一支，conf high 2／mid 9／low 11）：**落冷冽 17/22＝77%**；亢奮 3（KaS Product《Try Out》y 0.6、《By Pass》y 0.7、Units y 0.5：判重，評者聽出刺耳吉他／殘響／龐克攻擊性）、平靜 2（Xeno & Oaklander《Sentinelle》x 2.8、《Sets & Lights》x 2.9：判靜，中速稀疏鼓機）。
+- **給下一輪參考**：評分的 x 普遍比策展估低 0.3–0.4（中速 minimal synth 很容易掉到 3.0 以下），y 對「吉他＋鼓機」的冷浪潮比策展估高 0.6–1.0。下一輪冷冽電子場景，策展邊距的 x 應抬到 3.6、帶吉他的冷浪潮 y 估值要再加 0.5。
+- 冷冽格 874 → 899（mc1＋mc2 合計 +25）。
+
+## 本批新藝人（無介紹，§11 待調度工作階段統一切批）
+KaS Product、Gina X Performance、Rheingold、Robert Görl、Units、Rational Youth、El Aviador Dro、Xeno & Oaklander、Linea Aspera、Sally Dige、Body of Light、Moskwa TV、Absolute Body Control（13 位；皆不在 roster 與 progress.json 佇列）。

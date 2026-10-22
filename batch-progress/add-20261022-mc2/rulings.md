@@ -90,3 +90,13 @@
 - **11153**　`desc2:Wetdog|Frauhaus!`：「後龐克三人團，鼓手 Sarah Datblygu，常被拿來和 The Fall 相比」語序讓人誤讀成鼓手被比作 The Fall，刪鼓手名（hook 與後文已交代貝斯），改「後龐克三人團，常被拿來和 The Fall 相比」。
 - **11154**　`desc2:100 Flowers|100 Flowers`：「長則 244 秒」→「長則 4 分 4 秒」（同一事實改寫法，研究 d 第 4 條）。
 - **11155**　其餘核過：Polyrock 由 Philip Glass 與 Kurt Munkacsi 製作、Suburban Lawns 的 Demme 錄影帶上 SNL、Q and Not U 2001 年 11 月請走 Borlik（研究 e「被請走」）、Josef K「平板、像被消毒過」為團員自述、にせんねんもんだい「三人女子」有來源（鉤子層 11136）。
+
+## 上線與落格率（本線驗收）
+- 2026-10-22 上線 **15 張**：card_catalog 15/15、KV 16 鍵逐字一致（含別名鍵）、試聽 ready 12／unavailable 3（Numbers 兩張、100 Flowers：Apple 查無原盤）、封面 14 張 CAA live-check 200＋Purrkur Pillnikk 1 張 Apple（CAA 404，曲序逐首核對、主線目視）；`verify-album-onboarding --published` 0 error。冷門軸人工 2 張（にせんねんもんだい、Purrkur Pillnikk：Last.fm 掛名／盤名對不上）。
+- 情緒評分 `batch-progress/mood-axes/score-mc2/`（Opus 一支，conf high 1／mid 8／low 6）：**落冷冽 8/15＝53%，低於 60%**。
+- **原因：判重**。出格 7 張全落亢奮、沒有一張判暖或判靜：にせんねんもんだい《Destination Tokyo》y 1.4（延遲噪音層層堆疊）、As Mercenárias y 1.2、Purrkur Pillnikk y 1.2（粗糙失真）、Contortions y 0.6、Wall of Voodoo y 0.6、Erase Errata《At Crystal Palace》y 0.5、100 Flowers y 0.5。評分說明書 Y 軸把 post-punk 放在 +1、龐克 +2，評者對「刮耳吉他＋喊唱」一律給到 +0.5 以上；策展估的 y −0.2～−0.6 系統性偏輕。色溫判斷大致準（全部 z < 0）。
+- **給下一輪換場景參考**：吉他樂團的 post-punk／no wave／龐克邊緣在現行質地尺下很難落冷冽，只有極乾淨的 art-pop 化新浪潮（Polyrock、Suburban Lawns、Q and Not U、Josef K 這型）留得住。**mc21（post-punk revival）建議改場景或只收合成器佔主體的盤**；冷冽線優先排電子類（mc5–mc9、mc12、mc16、mc17）。
+- 冷冽格 874 → 899（mc1＋mc2 合計 +25）。
+
+## 本批新藝人（無介紹，§11 待調度工作階段統一切批）
+Polyrock、Contortions、Wall of Voodoo、Suburban Lawns、Erase Errata、Numbers、Wetdog、にせんねんもんだい、100 Flowers、As Mercenárias、Purrkur Pillnikk、Q and Not U（12 位；皆不在 roster 與 progress.json 佇列）。
