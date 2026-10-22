@@ -14,3 +14,15 @@
 - 同一藝人沒有張數上限（2026-09-04）：Fluxion 7（Chain Reaction 2＋Echocord 5）、ASC 5、Quantec 4、Submersion 3。
 - 研究層要核：Robert Henke《Layering Buddha》原版廠牌（卡單寫 Astral Industries，疑為重發；原版 Imbalance Computer Music 2006）；各 Silent Season 盤的首發年與格式；色溫——有「溫暖」「陽光」「海灘」字眼的樂評照實寫存疑。
 - 研究層每支 WebSearch ≤3；facts 必含 2–3 條聲音事實（拍子埋多深、速度、殘響、低頻、冷暖）；與 moodGuess 不符的標「存疑」。
+
+## 研究 a 組
+- **17241** Fluxion《Bipolar Defect》：實體是 2000 年 Chain Reaction CR-32 雙 12 吋黑膠（非 CD），曲目後來整組成為 CD《Vibrant Forms II》（CRD-11）第二碟，另有 2016 Subwax Bcn 重發。有先例（原創黑膠長度發行、歷史定位成立）→ 保留，facts 寫明與 VF II 的關係。
+- **17242** Fluxion《Spaces》：卡單 label 空白，實為 Vibrant Music VMD-01。聲音只有 Minimal／Ambient 標籤與概念（重現空間聲響）可證，鼓與冷暖無來源，status 標 thin；moodGuess「鼓退後」未驗證，存疑。
+- **17243** Hallucinator《Landlocked》：1999、Chain Reaction CRD-08 屬實。團員 Edward George／Anna Piva／Trevor Mathison（George、Mathison 為 Black Audio Film Collective 成員）。把 Chain Reaction 單曲彙整成專輯，有歷史定位，保留。Stephen Lawrence 題獻僅零售商單一來源，不入 facts。RA 描述含工業與電聲質地，moodGuess 部分存疑。
+- **17244** Fluxion《Perfused》：Echocord cd07；Echocord 文案「穩定 dub 節拍」、Gridface「全程四四拍」，與 moodGuess「拍子偏懶、鬆散」不符，標存疑（動感偏高，x 偏上沿）。
+- **17245** Fluxion《Traces》：文案含沙漠搖滾與 dub 混合、Dennis Brown 未發表人聲版、MB 標籤含 house。moodGuess「和弦霧、拍子淡」存疑，建議主線降權或汰換。
+- **17246** Fluxion《Broadwalk Tales》：雷鬼／dub 根源、牙買加歌手 Teddy Selassie 人聲、電影式結構。moodGuess「色調偏灰、柔拍」存疑偏重（色溫偏暖、有人聲），建議主線汰換或降權。
+- **17247** Fluxion《Constant Limber》：專輯版是 Resopal Schallware RSPDUB001（2009 年 8 月數位版／CD）；MB release-group 首發日 2009-05-04 其實是先行 12 吋〈Breath Mode / Fickle〉，年份仍為 2009，不改卡單。評論有「復古 dub」「Detroit 合成器鋪底」「海灘」字眼，色溫存疑偏暖，照實寫存疑。
+- **17248** Fluxion《Perspectives》：Vibrant Music VMR006（卡單 label 空白）。找不到逐軌樂評，聲音只有 MB 的 downtempo＋dub techno 標籤與訪談，status 仍標 full 但在 notes 註明聲音薄；moodGuess「霧」無來源，存疑。
+- **17249** Quantec《Unusual Signals》：Echocord 030 雙 12 吋；XLR8R「陰鬱、被悶住、心跳底鼓」、Gridface「溫暖脈衝」，大致吻合 moodGuess，輕微存疑（拍子比「鼓鈍」明確）。「Quantec 首張全長」僅搜尋摘要單一來源，不入 facts。
+- **17250** 本組 9 張 label 欄卡單多為空白，實際廠牌已在各張 facts 查明（Echocord／Vibrant Music／Resopal Schallware／Chain Reaction）；WebSearch 用 3 次（Fluxion 背景、Quantec、Hallucinator）。
