@@ -88,3 +88,23 @@
 
 ## 主線（鉤子層後）
 - **17074**　Kapnobatai（e8）hook 原稿「古希臘人筆下行走於煙中的人，據說只靠乳品和蜂蜜維生。」帶「據說」，寫作層首句照抄會撞禁語，改為「古希臘地理書裡行走於煙中的人，以乳品和蜂蜜為食。」（斯特拉波記載，研究稿 e 組）；note 刪「故事線留給聽的人去拼湊」一格（與 a4 The Untold 骨架同義，鉤子 a–c 建議二擇一，捨 e8）。
+
+## 寫作層（writer-2）
+- **17066**　交件：`desc-tools/batches/output/add-20261022-md5-out-2.json` 22 張（full 12：206–239；thin 10：154–180）。`qa-batch out` 全部通過（兩檔合計 45 張）、`qa-check-research` 標記 0、`fix-spacing` 0 處；轉述引導詞（據…）、媒體名、資料平台名 grep 0。初稿超標 6 張（The Nest 244、Blood Music 253、Sadalmelik 185、Svartsinn 192、New Dark Age 181、Reflections on Black 190；最高 253），整格捨去或縮句：Blood Music 把 Hensley 的引述併成一句、Svartsinn 改成「原曲／新版」兩名並列、Reflections 錄製期改一句、The Nest 縮廳堂與地名句。
+- **17067**　第二句全照鉤子層 note 指派；日期「日」後一字照 17054／17059（Metamorphyses 擴、Sadalmelik 壓、Prisoners Cinema 在、Between 由、Lech 那、Alchemy 出），其餘只寫到年或月。Kapnobatai 以 input 檔（17074 改過的 hook、已刪「故事線」一格）為準。note 裡的「廠方說／在廠方眼中／依廠方介紹」一律改寫成直述或被動（「它被形容為」），不留轉述引導；Lull 只有一處「被形容為」。
+- **17068**　廠牌與編號引入法逐張錯開（Cyclic Law 6 張：編進目錄／排 73rd Cycle／成了 3rd Cycle／列為 78th Cycle／交給排在／以…的編號出版；Malignant 5 張：發出／的出版方是／掛在名下／日由／那天發行了它；Cold Meat 4 張：成為 cmi.56／經上市／交…發行／在年出了它）。避開 md1 已上架的 Starwheel「獨自經營的計畫」、Cold Summer「1991 年離開 Napalm Death」句型。
+- **17069**　自掃（han() 4-gram，本檔＋out-1＋md1–md4、md6、ts5–ts6 已交正文）：本檔內部 2 張以上 0 條；與 out-1 合掃 3 張以上只剩「田野錄音」「教堂鐘聲」「印第安納」（術語／聲音名／地名）。途中拆掉「首約分鐘」×4、「唱片年月」×3、「的計畫那」（跨句）、「的盤名是」（跨句）、「這個名義」、「的限量張」、「人的計畫」、「被形容為」、「出版六首」、「首各長到」、「在到分鐘之間」、「長約分鐘／加起來約／合計約」（撞 out-1）、「發行這張」（撞 out-1 Neuroplasticity）。跨批的通用片語（「的第三張」「年月日由」等）屬鉤子層指派或泛用語，保留。
+- **17070**　可逆措辭：Sadalmelik 第二句寫「以 Moljebka Pvlse 為名做實驗音樂」（facts「實驗音樂計畫」）；Mnemonic 第二句補「兩組都是雙人組」（facts 兩方皆雙人組）；Cathedron、Asleep、The Nest、Lull、Kapnobatai 第二句補「dark ambient」當樂種（facts 風格標籤），照「開頭兩句讓不懂的人知道是誰」。Endessiah「整張不用鍵盤」、Mørketid「太陽不升出地平線」是 note 指定的內容描述，非校對痕跡，保留。
+
+## 寫作層（writer-1）
+- **17061**　交件：`desc-tools/batches/output/add-20261022-md5-out-1.json` 23 張（full 19：196–233；thin 4：Diagnosis 166、Majak 175、How Cold Is the Sun 166、Within the Depths 151），key 逐字同序。首句全照 input 檔 hook（未改標點）；第二句領句全照 17053 配表。初稿 0 張出界，無整格捨去。`qa-batch out`（out-1 段 0 標記）、`qa-check-research` 0、`fix-spacing` 0；轉述引導詞（據說／據傳／據報導）與否定句 grep 0。
+- **17062**　日期「日」後一字全照 17054（交改為「日把它交給」以維持 a1 的交、面、換、排、只、編、上、推、問、成、登、發、「，」）；日期前一漢字逐張互異（院／它／到了／弧／章／張／辦／原／到／過／手／的／首）。日期前避開「在」：a1、a7、a15 原稿「在年月日」三處拆成以人名或名詞領句。
+- **17063**　自掃 han() 4-gram：本檔內 ≥2 張只剩「田野錄音」（術語）、「葛利果聖詠」（c3、c5 樂種詞，c5 是 hook 原文）。與 out-2 合掃 ≥2 只剩「田野錄音」「教堂鐘聲」（聲音名）。途中拆掉：首約分鐘 ×3、長約分鐘、編號年月、場的人聲、加起來約、計約分鐘、九首曲子、用的名義、合計約分、發行這張 ×2、分鐘左右、曲名取自、錄下的聲、年由發行、月日推出、曲長分秒、指的是一、的這張年、月在發行、它是一趟、計畫取名、首的長度、單人計畫、年月推出、製作人是。田野錄音降到兩張：a7 改「實地收來的聲響」、c2 改「實地收錄的素材」。另掃 md1–md6、ts5–ts6 已上正文：a1 避開 md1 Prospectus I 的「…的個人計畫，常把聖歌錄音帶混進自己的鍵盤」（a1 改「背後只有…一個人」，c3 改「把葛利果聖詠的錄音帶，跟自己彈奏的鍵盤與打擊疊在一起」）。
+- **17064**　note 指派的轉述：「廠方說／廠方形容／樂評聽到」照 note 保留為不具名的「廠方」「樂評」，不點媒體名、不寫媒體榜單；b2 Eye of Tunguska 的事件照 17011 以「廠方簡介記下的」引入（單一來源）。b8 Dredge Portals「人聲唱法」照 note 不寫。c4 Requiem 的「拿掉打擊樂」照 17054 只在本張寫。
+- **17065**　b2 第二句後不再複述「迷路」（hook 已說），改寫健行與遺體尋獲地；a7 hook 已說鳥鳴腳步，正文改補「那是實地收來的聲響」；b7 Dredge Portals 末句「醫院場景與儀器聲是廠方點名的細節」與 hook 意思相近，照 note 保留作收尾，主線審稿可視需要捨去（捨後 full 約 170，會掉出下限，需補一格）。
+
+## 主線審稿（2026-10-22，cloud-main）
+- **17075**　逐張審 45 張（印全文逐句對研究稿）。改 2 處：
+  1. `desc2:Netherworld|Alchemy of Ice`：「那是南冰洋難抵極的座標」→「那是南極洲難抵極的座標」。85°50'S 65°47'E 是南極難抵極（Southern Pole of Inaccessibility），在南極大陸冰原上、距南冰洋最遠的一點，不在海上；研究 e 組原 facts 誤譯，research／hooks e／input／out 四層同步。
+  2. `desc2:Dark Matter|How Cold Is the Sun`：刪「登記為德國藝人」（只有資料平台登記，不是事實陳述，正文不點名資料平台）；out、input 同步。
+- 其餘逐張審過未改字：媒體名、媒體榜單、「據說／據報導」掃 0；Kapnobatai 首句照 17074 新 hook；Lull「被認為提出了 grindcore 一詞」研究 e 組兩源、保留歸屬語氣。

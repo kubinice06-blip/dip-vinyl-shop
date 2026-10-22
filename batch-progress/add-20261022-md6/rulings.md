@@ -124,3 +124,16 @@
 - **17148** 不複述 hook：Solastalgia note 第二格「盤名指環境改變引起的壓力與痛苦」與 hook 同義，整格不寫；Teimo「評者描述播放時近乎無聲」同理不寫；Penpals 的虛構文案改寫成收尾句「那段通信是文案編出來的故事」；Kappe／Black Tie／Sistereis／Black to Comm 第二、三句替 hook 代稱具名（開場曲、標題曲、〈Fyrtårnet〉、〈Hands〉）。Frequencies note 的「據報導」改直述（封城期間在布魯塞爾新家完成）；Summoner「評者認為」改被動「被看作」；Rites「評者說揉合」改成 hook 之外補「還摻進 drone 與噪音」。否定式聲音描述改正面：Solaris「節拍稀少」、Sirens「穩定的鼓拍大致缺席」、Teimo「旋律、節奏與循環一概捨去」。
 - **17149** 跨檔合掃（han() 中文 4-gram，對 out-1 交件中版本動態合掃四輪）：out-1 並行改稿期間撞出的 2 張殘片逐一拆掉（年由發行×4、首約分鐘×4、在年月日×4、長約分鐘×3、加起來約、合計約、約分鐘年、年推出這、交給發行、盤名借自、的次低頻、這張同名、個人計畫、年月日發、那段日子、這是他以等）。定稿剩：`田野錄音`×3（通名，Steel Wound 對 out-1 兩張）、`二人組的`（Kappe 指派句原文）、`國音樂人`（Frequencies 指派句原文）各 2 張，皆不改。out-1 交件時只有 10 張，**主線收件請再統一合掃一次**。對 10-20～22 已上架 out 檔：只剩日期樣板與通名（錄音室專輯、薩克斯風、低音提琴），未另改。
 - **17150** （保留未用）
+
+## 寫作層（writer-1）
+- **17141** 交件：`desc-tools/batches/output/add-20261022-md6-out-1.json` 23 張（full 19：186–239；thin 4：Pan•American 153、Kaamos 143、Imperial Horizon 147、Modern Pressure 126）。`qa-batch out`、`qa-check-research`（標記 0）、`fix-spacing`（待補 0）皆過；轉述引導詞、媒體名、媒體榜名次 grep 0。初稿只 Endless Falls 243（整格捨「作響的」並改日期句）與 Tannenbaum 174（主故事往下挖一層：該廠系列、篇幅、〈Winter Ice〉占時）兩張出界，已修回。
+- **17142** 第二句全照鉤子層 17133 指派（名字由來／三件樂器分工／Kranky 第四張序位／Destroyer 鼓手／那座島／取樣來歷／生年出生地／Nelson 領句／Porcupine Tree 主腦／家世／錄音年份與地點／定居地國籍／兩個舊化名／Mille Plateaux／Porter Ricks／出生地與基金會／作曲家與那支麥克風／學歷／prepared guitar 名聲／芝加哥／Solo Andata／轉投 Type／Pan Sonic）。日後一字照 17134：推、發、由、釋、問、正；Molotov 區間形「14 至 17 日，」。不複述 hook：Plume 第二句原寫回「次原子、水下、水面」，改成「前三張各寫一層，這張落在最上面」；Touch Food「要小心喇叭」只補原因（鋼琴低音極大）。
+- **17143** 跨檔合掃（han() 剝非漢字後的 4-gram，對 out-2 交件中版本與 md1–md5 已上架 out 檔的前兩句）：途中拆掉 是溫哥華×3、在溫哥華、溫哥華的、的第三張、首約分鐘、約分鐘的、盤名借自、國音樂人×2、交給發行、年推出這、推出這張、這張同名、以之名做、首加起來／合計約、曲約分鐘、的次低頻、發行的這、二人組的×2、首張專輯×2、是他在的、成員之一、這家廠牌、長達分鐘、是年月日、美國作曲、曲的低音、各約分鐘、處理過的、音樂人年、三張專輯。定稿剩 田野錄音（通名）與 薩克斯風／低音單簧管（樂器名），3 張以上無非專名殘片。out-2 若再動，請主線收件時再合掃一次。
+- **17144** 否定句：note 內的「不走回授噪音與獨奏炫技」改寫成「他捨開回授噪音與獨奏炫技，讓聲場緩慢聚集、演化」；Equivalents「全程無鼓」、Magnetite「沒有用鼓」、Touch Three「錄音與混音都不加電子處理」是聲音／方法事實照留。Novaya Zemlya「一種廣大的空」、Molotov「超凡美麗」引語改間接（他口中／被他形容為）。Kaamos、Novaya Zemlya 為避開 Aubrite 已用的「德國的」，前者寫「德國 drone 音樂家」、後者只以 Porter Ricks 定身分。
+- **17145** （保留未用）
+
+## 主線審稿（2026-10-22，cloud-main）
+- **17155m**　逐張審 45 張（印全文逐句對研究稿）。改 2 處：
+  1. `desc2:Jacob Kirkegaard|4 Rooms`：「車諾比疏離區」→「車諾比隔離區」（Zone of Alienation 台灣通行譯法；研究 b 組、hooks b、input、out 四層同步）。
+  2. `desc2:Kevin Richard Martin|Sirens`：首句「長子出生頭一個月，就連動了兩次危及生命的手術」→「長子出生後頭一個月，就接連動了兩次危及生命的手術」（「連動」易誤讀為連動機制；hooks d、input、out 三層同步）。
+- 其餘逐張審過未改字：媒體名、媒體榜單、「據說／據報導」掃 0；Frequencies note 的「據報導」寫作層已改直述；年份對卡單 44/45 字面一致（Kreng《The Summoner》只寫錄音日期，不寫發行年，不算錯）。loscil「Destroyer 鼓手」研究 a 組兩源（維基、Pitchfork）。
