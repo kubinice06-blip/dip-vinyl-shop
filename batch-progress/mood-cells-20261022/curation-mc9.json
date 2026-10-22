@@ -4,13 +4,13 @@
   {
    "id": "synthpop2",
    "zh": "80s synth-pop 二線",
-   "count": 15,
+   "count": 29,
    "why": ""
   },
   {
    "id": "newwave-cold",
    "zh": "new wave 冷盤",
-   "count": 3,
+   "count": 5,
    "why": ""
   },
   {
@@ -22,18 +22,30 @@
   {
    "id": "ndw",
    "zh": "德國 NDW 電子",
-   "count": 4,
+   "count": 7,
    "why": ""
   },
   {
    "id": "jp-newwave",
    "zh": "日本 new wave／techno-pop",
-   "count": 5,
+   "count": 7,
    "why": ""
   },
   {
    "id": "hk-synth",
    "zh": "港台 synth-pop",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "ca-synth",
+   "zh": "加拿大冷 synth",
+   "count": 4,
+   "why": ""
+  },
+  {
+   "id": "jp-eu-wave",
+   "zh": "義大利 new wave",
    "count": 1,
    "why": ""
   }
@@ -878,6 +890,706 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": ""
+  },
+  {
+   "artist": "Spoons",
+   "album": "Arias & Symphonies",
+   "year": 1982,
+   "label": "Ready",
+   "country": "ca",
+   "faction": "ca-synth",
+   "genres": [
+    "electronic"
+   ],
+   "why": "加拿大 Spoons 的 synth-pop 名盤，Kraftwerk 影響的乾淨電子",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -0.4,
+    "why": "鼓機與合成器為主，乾淨輕薄，微冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4d50aa10-6912-374d-95b4-7bd526cabc82",
+    "https://coverartarchive.org/release-group/4d50aa10-6912-374d-95b4-7bd526cabc82"
+   ],
+   "mbRgMbid": "4d50aa10-6912-374d-95b4-7bd526cabc82",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分曲帶吉他，z 可能偏 0"
+  },
+  {
+   "artist": "Men Without Hats",
+   "album": "Rhythm of Youth",
+   "year": 1982,
+   "label": "Statik",
+   "country": "ca",
+   "faction": "ca-synth",
+   "genres": [
+    "electronic"
+   ],
+   "why": "加拿大 Men Without Hats 首作，《Safety Dance》所在的 synth-pop",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": -0.1,
+    "why": "合成器與鼓機，快、輕薄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bc8adfb6-8247-42e9-b1d9-27f51e84726d",
+    "https://coverartarchive.org/release-group/bc8adfb6-8247-42e9-b1d9-27f51e84726d"
+   ],
+   "mbRgMbid": "bc8adfb6-8247-42e9-b1d9-27f51e84726d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫貼邊：趣味感可能判暖"
+  },
+  {
+   "artist": "Psyche",
+   "album": "Unveiling the Secret",
+   "year": 1986,
+   "label": "Dark Entries",
+   "country": "ca",
+   "faction": "ca-synth",
+   "genres": [
+    "electronic"
+   ],
+   "why": "加拿大 Psyche 的 dark synth-pop 代表作，sequencer 脈動",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.0,
+    "z": -1.0,
+    "why": "sequencer 與乾鼓機，冷、暗但不厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/496df937-c210-392a-bbe1-357f254c5fa5",
+    "https://coverartarchive.org/release-group/496df937-c210-392a-bbe1-357f254c5fa5"
+   ],
+   "mbRgMbid": "496df937-c210-392a-bbe1-357f254c5fa5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Strange Advance",
+   "album": "Worlds Away",
+   "year": 1982,
+   "label": "Capitol",
+   "country": "ca",
+   "faction": "ca-synth",
+   "genres": [
+    "electronic"
+   ],
+   "why": "加拿大 Strange Advance 首作，合成器新浪潮",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.2,
+    "z": -0.5,
+    "why": "合成器與鼓機推進，乾淨，偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a9f1fb30-51a5-3264-80e8-4f7945c117b1",
+    "https://coverartarchive.org/release-group/a9f1fb30-51a5-3264-80e8-4f7945c117b1"
+   ],
+   "mbRgMbid": "a9f1fb30-51a5-3264-80e8-4f7945c117b1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼邊，部分曲偏流行抒情"
+  },
+  {
+   "artist": "Landscape",
+   "album": "From the Tea Rooms of Mars… to the Hell-holes of Uranus",
+   "year": 1981,
+   "label": "RCA",
+   "country": "gb",
+   "faction": "synthpop2",
+   "genres": [
+    "electronic"
+   ],
+   "why": "英國 Landscape 的合成器加銅管實驗 synth-pop",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.3,
+    "z": -0.3,
+    "why": "Linn 鼓機與 synth 琶音，乾、薄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bc43d2cc-d7f5-371b-8738-0e05450fc734",
+    "https://coverartarchive.org/release-group/bc43d2cc-d7f5-371b-8738-0e05450fc734"
+   ],
+   "mbRgMbid": "bc43d2cc-d7f5-371b-8738-0e05450fc734",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有管樂與爵士色彩，z 可能偏 0"
+  },
+  {
+   "artist": "Berlin",
+   "album": "Pleasure Victim",
+   "year": 1982,
+   "label": "Geffen",
+   "country": "us",
+   "faction": "synthpop2",
+   "genres": [
+    "electronic"
+   ],
+   "why": "洛杉磯 Berlin 首作，Giorgio Moroder 之前的冷面 synth 夜店 pop",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.2,
+    "z": -0.4,
+    "why": "合成器與鼓機節拍，乾、都市夜"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/12ba5fac-46d0-3ddf-be1c-c88e1524fd41",
+    "https://coverartarchive.org/release-group/12ba5fac-46d0-3ddf-be1c-c88e1524fd41"
+   ],
+   "mbRgMbid": "12ba5fac-46d0-3ddf-be1c-c88e1524fd41",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "人聲戲劇性，z 可能偏 0"
+  },
+  {
+   "artist": "Book of Love",
+   "album": "Book of Love",
+   "year": 1986,
+   "label": "Sire",
+   "country": "us",
+   "faction": "synthpop2",
+   "genres": [
+    "electronic"
+   ],
+   "why": "紐約 Book of Love 首作，玩具琴感的 synth-pop",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.5,
+    "z": -0.3,
+    "why": "鼓機與輕薄 synth，乾淨"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e07e7061-adef-362e-bec6-51edc74e544d",
+    "https://coverartarchive.org/release-group/e07e7061-adef-362e-bec6-51edc74e544d"
+   ],
+   "mbRgMbid": "e07e7061-adef-362e-bec6-51edc74e544d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "可愛感可能判暖"
+  },
+  {
+   "artist": "Gaznevada",
+   "album": "Sick Soundtrack",
+   "year": 1980,
+   "label": "Harpo",
+   "country": "it",
+   "faction": "jp-eu-wave",
+   "genres": [
+    "rock"
+   ],
+   "why": "義大利 Gaznevada，bologna 電子 new wave／funk-punk",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.3,
+    "z": -0.4,
+    "why": "合成器加乾吉他，快"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e9f968ff-cab7-4be1-bc6e-b019841be1c8",
+    "https://coverartarchive.org/release-group/e9f968ff-cab7-4be1-bc6e-b019841be1c8"
+   ],
+   "mbRgMbid": "e9f968ff-cab7-4be1-bc6e-b019841be1c8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有吉他，y 貼邊"
+  },
+  {
+   "artist": "Neonbabies",
+   "album": "Neonbabies",
+   "year": 1981,
+   "label": "Dark Star",
+   "country": "de",
+   "faction": "ndw",
+   "genres": [
+    "electronic"
+   ],
+   "why": "德國 Neonbabies 首作，冷面女聲 NDW 電子",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.0,
+    "z": -0.8,
+    "why": "合成器與鼓機，薄、冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5d0a71d4-0917-4ce4-85f9-84f10fc8cbcd",
+    "https://coverartarchive.org/release-group/5d0a71d4-0917-4ce4-85f9-84f10fc8cbcd"
+   ],
+   "mbRgMbid": "5d0a71d4-0917-4ce4-85f9-84f10fc8cbcd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Twice a Man",
+   "album": "Music for Girls",
+   "year": 1982,
+   "label": "Mistlur",
+   "country": "se",
+   "faction": "synthpop2",
+   "genres": [
+    "electronic"
+   ],
+   "why": "瑞典 Twice a Man 的冷調電子",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.0,
+    "z": -0.8,
+    "why": "sequencer 與冷 synth，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8caac6b6-c904-4f2d-98ec-f7a25fc24920",
+    "https://coverartarchive.org/release-group/8caac6b6-c904-4f2d-98ec-f7a25fc24920"
+   ],
+   "mbRgMbid": "8caac6b6-c904-4f2d-98ec-f7a25fc24920",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼邊，可能偏慢"
+  },
+  {
+   "artist": "Ministry",
+   "album": "With Sympathy",
+   "year": 1983,
+   "label": "Arista",
+   "country": "us",
+   "faction": "synthpop2",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Ministry 的 synth-pop 時期首作，與後來工業完全不同",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.3,
+    "z": -0.4,
+    "why": "鼓機與合成器，乾淨輕薄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1ea0c5a9-38dc-3907-9a0e-31a63cc6c4a3",
+    "https://coverartarchive.org/release-group/1ea0c5a9-38dc-3907-9a0e-31a63cc6c4a3"
+   ],
+   "mbRgMbid": "1ea0c5a9-38dc-3907-9a0e-31a63cc6c4a3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏流行，z 可能判暖"
+  },
+  {
+   "artist": "高橋幸宏",
+   "album": "What, Me Worry?",
+   "year": 1982,
+   "label": "Yen",
+   "country": "jp",
+   "faction": "jp-newwave",
+   "genres": [
+    "electronic"
+   ],
+   "why": "高橋幸宏的英語 techno-pop 作品",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.4,
+    "z": -0.1,
+    "why": "鼓機與合成器，乾淨"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/caf6bf71-085f-30a9-a95e-6a8d1ae3b5bf",
+    "https://coverartarchive.org/release-group/caf6bf71-085f-30a9-a95e-6a8d1ae3b5bf"
+   ],
+   "mbRgMbid": "caf6bf71-085f-30a9-a95e-6a8d1ae3b5bf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 音楽殺人 z +0.3 判暖，z 貼邊"
+  },
+  {
+   "artist": "Pyrolator",
+   "album": "Ausland",
+   "year": 1981,
+   "label": "Ata Tak",
+   "country": "de",
+   "faction": "ndw",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Der Plan 成員 Pyrolator 的電子專輯",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.0,
+    "z": -0.9,
+    "why": "鼓機與 synth 迴圈，乾、薄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5521b236-0be3-39d9-95a1-11832b164dc4",
+    "https://coverartarchive.org/release-group/5521b236-0be3-39d9-95a1-11832b164dc4"
+   ],
+   "mbRgMbid": "5521b236-0be3-39d9-95a1-11832b164dc4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼邊"
+  },
+  {
+   "artist": "Holger Hiller",
+   "album": "Oben im Eck",
+   "year": 1986,
+   "label": "Mute",
+   "country": "de",
+   "faction": "ndw",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Hiller 的取樣器流行，拼貼節奏",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.2,
+    "z": -0.4,
+    "why": "取樣與鼓機，輕、乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/800ba6f4-b769-4d9f-8e4c-72856f586b5d",
+    "https://coverartarchive.org/release-group/800ba6f4-b769-4d9f-8e4c-72856f586b5d"
+   ],
+   "mbRgMbid": "800ba6f4-b769-4d9f-8e4c-72856f586b5d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼邊，趣味感"
+  },
+  {
+   "artist": "Ultravox",
+   "album": "Rage in Eden",
+   "year": 1981,
+   "label": "Chrysalis",
+   "country": "gb",
+   "faction": "synthpop2",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Ultravox 在 Conny Plank 製作下的冷面電子",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.2,
+    "z": -0.9,
+    "why": "合成器與電子鼓，緊密、偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/46636393-805f-3cdf-a018-214921c90cb5",
+    "https://coverartarchive.org/release-group/46636393-805f-3cdf-a018-214921c90cb5"
+   ],
+   "mbRgMbid": "46636393-805f-3cdf-a018-214921c90cb5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊（Plank 製作較厚）"
+  },
+  {
+   "artist": "Eurythmics",
+   "album": "In the Garden",
+   "year": 1981,
+   "label": "RCA",
+   "country": "gb",
+   "faction": "synthpop2",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Eurythmics 首作，Conny Plank 製作的電子新浪潮",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.1,
+    "z": -0.5,
+    "why": "合成器與鼓，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/91604bc5-4b88-316d-bdd7-03ac0cc4e453",
+    "https://coverartarchive.org/release-group/91604bc5-4b88-316d-bdd7-03ac0cc4e453"
+   ],
+   "mbRgMbid": "91604bc5-4b88-316d-bdd7-03ac0cc4e453",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼邊"
+  },
+  {
+   "artist": "Simple Minds",
+   "album": "Sons and Fascination",
+   "year": 1981,
+   "label": "Virgin",
+   "country": "gb",
+   "faction": "newwave-cold",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Simple Minds 的歐陸電子時期，sequencer 脈動",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.3,
+    "z": -0.9,
+    "why": "sequencer 與乾鼓，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/93fdc76b-32d2-4d80-bb2a-f43f330d521c",
+    "https://coverartarchive.org/release-group/93fdc76b-32d2-4d80-bb2a-f43f330d521c"
+   ],
+   "mbRgMbid": "93fdc76b-32d2-4d80-bb2a-f43f330d521c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同藝人 y 0.2–0.9，y 貼邊"
+  },
+  {
+   "artist": "Pete Shelley",
+   "album": "Homosapien",
+   "year": 1981,
+   "label": "Genetic",
+   "country": "gb",
+   "faction": "synthpop2",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Buzzcocks 主唱的電子 pop 單飛作",
+   "moodGuess": {
+    "x": 3.9,
+    "y": -0.4,
+    "z": -0.2,
+    "why": "合成器與鼓機，快、輕薄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6ad45bc8-7a42-3189-8366-bda99d9e3684",
+    "https://coverartarchive.org/release-group/6ad45bc8-7a42-3189-8366-bda99d9e3684"
+   ],
+   "mbRgMbid": "6ad45bc8-7a42-3189-8366-bda99d9e3684",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼邊"
+  },
+  {
+   "artist": "Re-Flex",
+   "album": "The Politics of Dancing",
+   "year": 1983,
+   "label": "EMI",
+   "country": "gb",
+   "faction": "synthpop2",
+   "genres": [
+    "electronic"
+   ],
+   "why": "英國 Re-Flex 的舞曲 synth-pop",
+   "moodGuess": {
+    "x": 3.9,
+    "y": -0.3,
+    "z": -0.2,
+    "why": "快的 synth bass 與鼓機"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9d3fd456-8850-3622-9d4a-ee5b9261b12d",
+    "https://coverartarchive.org/release-group/9d3fd456-8850-3622-9d4a-ee5b9261b12d"
+   ],
+   "mbRgMbid": "9d3fd456-8850-3622-9d4a-ee5b9261b12d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼邊，吉他與銅管少量"
+  },
+  {
+   "artist": "Propaganda",
+   "album": "A Secret Wish",
+   "year": 1985,
+   "label": "ZTT",
+   "country": "de",
+   "faction": "synthpop2",
+   "genres": [
+    "electronic"
+   ],
+   "why": "德國 Propaganda 的 ZTT 時期華麗電子",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0.2,
+    "z": -0.6,
+    "why": "sequencer 與鼓機，偏厚製作"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0f127b3b-6d3e-316f-948f-fc81721cdd83",
+    "https://coverartarchive.org/release-group/0f127b3b-6d3e-316f-948f-fc81721cdd83"
+   ],
+   "mbRgMbid": "0f127b3b-6d3e-316f-948f-fc81721cdd83",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊（Trevor Horn 製作厚）"
+  },
+  {
+   "artist": "Clock DVA",
+   "album": "Advantage",
+   "year": 1983,
+   "label": "Polydor",
+   "country": "gb",
+   "faction": "newwave-cold",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Clock DVA 轉向電子的冷面作品",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.3,
+    "z": -1.3,
+    "why": "電子鼓與 sampler，冷、偏硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/966f3c33-048a-36b6-a50e-632035eae555",
+    "https://coverartarchive.org/release-group/966f3c33-048a-36b6-a50e-632035eae555"
+   ],
+   "mbRgMbid": "966f3c33-048a-36b6-a50e-632035eae555",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Clock DVA 偏重；y 貼邊"
+  },
+  {
+   "artist": "Soft Cell",
+   "album": "The Art of Falling Apart",
+   "year": 1983,
+   "label": "Some Bizzare",
+   "country": "gb",
+   "faction": "synthpop2",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Soft Cell 第二張，更暗更快的電子",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.2,
+    "z": -0.6,
+    "why": "合成器與鼓機，夜店感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c27e9077-55ce-3d54-b01f-79d0ca99fe7d",
+    "https://coverartarchive.org/release-group/c27e9077-55ce-3d54-b01f-79d0ca99fe7d"
+   ],
+   "mbRgMbid": "c27e9077-55ce-3d54-b01f-79d0ca99fe7d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊"
+  },
+  {
+   "artist": "Camouflage",
+   "album": "Methods of Silence",
+   "year": 1989,
+   "label": "Metronome",
+   "country": "de",
+   "faction": "synthpop2",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Camouflage 第二張，Depeche Mode 路線 synth-pop",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.2,
+    "z": -0.4,
+    "why": "合成器與鼓機，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/07e03649-2534-3d54-8b02-1329f9ee792e",
+    "https://coverartarchive.org/release-group/07e03649-2534-3d54-8b02-1329f9ee792e"
+   ],
+   "mbRgMbid": "07e03649-2534-3d54-8b02-1329f9ee792e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼邊，抒情多"
+  },
+  {
+   "artist": "Peter Schilling",
+   "album": "Error in the System",
+   "year": 1983,
+   "label": "WEA",
+   "country": "de",
+   "faction": "synthpop2",
+   "genres": [
+    "electronic"
+   ],
+   "why": "德國 Peter Schilling 的太空 synth-pop",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.4,
+    "z": -0.2,
+    "why": "快的 synth 與鼓機，輕薄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/26fb8869-fe95-396f-928d-128ce3bdbca4",
+    "https://coverartarchive.org/release-group/26fb8869-fe95-396f-928d-128ce3bdbca4"
+   ],
+   "mbRgMbid": "26fb8869-fe95-396f-928d-128ce3bdbca4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼邊"
+  },
+  {
+   "artist": "Cold Cave",
+   "album": "Cherish the Light Years",
+   "year": 2011,
+   "label": "Matador",
+   "country": "us",
+   "faction": "synthpop2",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Cold Cave 的冷面 synth-pop",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.2,
+    "z": -0.9,
+    "why": "合成器與鼓機，快、冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/aa095d89-2ff9-4060-b327-3e1285729dda",
+    "https://coverartarchive.org/release-group/aa095d89-2ff9-4060-b327-3e1285729dda"
+   ],
+   "mbRgMbid": "aa095d89-2ff9-4060-b327-3e1285729dda",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊，部分有吉他"
   }
  ],
  "notes": [
@@ -885,6 +1597,8 @@
   "mc1 已提名 Human League Reproduction／Travelogue、Fad Gadget Fireside Favourites、DM A Broken Frame、Units、KaS Product 等，已避開。",
   "刻意不提：OMD Junk Culture（MB 查無且 z 偏暖）、Heaven 17／Yazoo 後作、Thomas Dolby、Ultravox Rage in Eden／Quartet（y 估 +0.2 以上或偏暖）、Simple Minds 早期（y≥0.3）、Plastics（池中 Welcome Plastics z +0.2）、Sparks Terminal Jive（z 估≥0）。",
   "未做 WebSearch；身分全部 MB 釘住，封面以 CAA release-group（HTTP 307 確認有圖）為證。DAF 藝人名依 MB 正規名 Deutsch Amerikanische Freundschaft（池中既有卡同名）。",
-  "mc20 港台日僅收 P-Model 四張、ヒカシュー、達明一派II；立花ハジメ H／Hm、ゲルニカ、Ippu-do、Hikashu 其他盤 MB 有但估值 z 或 x 貼邊，未提。"
+  "mc20 港台日僅收 P-Model 四張、ヒカシュー、達明一派II；立花ハジメ H／Hm、ゲルニカ、Ippu-do、Hikashu 其他盤 MB 有但估值 z 或 x 貼邊，未提。",
+  "第二批補候補 26 張（主線汰 16 張後，門檻放寬為 x≥3.0／y<0.5／z<0）。MB 查無未提：Ceramic Hello、Naked Lunch、Elli et Jacno、Moonriders、立花ハジメ 部分。Rational Youth、Section 25、Krisma、Rheingold 已在 mc1。",
+  "Ippu-do《Radio Fantasy》CAA 無封面，已移除。"
  ]
 }
