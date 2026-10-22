@@ -3021,4 +3021,9 @@ window.DipPreviewStatus = Object.freeze({
   "fats domino|this is fats domino!": "unavailable",
   "the penguins|the cool, cool penguins": "unavailable",
   "the del-vikings|come go with the del vikings": "unavailable",
+  "谢帝|人、社会、钱": "unavailable",
+  "廿四味|24herbs": "unavailable",
+  "lunatic|mauvais œil": "unavailable",
+  "113|les princes de la ville": "unavailable",
+  "bones|garbage": "unavailable",
 });

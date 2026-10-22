@@ -1137,12 +1137,12 @@
   {
    "id": "hiphop",
    "zh": "嘻哈 R&B",
-   "count": 1364,
+   "count": 1408,
    "children": [
     {
      "id": "east-coast",
      "zh": "東岸 / Boom Bap",
-     "count": 359,
+     "count": 360,
      "children": [
       {
        "id": "hardcore",
@@ -1169,7 +1169,7 @@
     {
      "id": "rnb",
      "zh": "當代 R&B",
-     "count": 354,
+     "count": 357,
      "children": [
       {
        "id": "contemporary",
@@ -1189,7 +1189,7 @@
       {
        "id": "alt",
        "zh": "Alternative R&B",
-       "count": 50
+       "count": 51
       },
       {
        "id": "asia",
@@ -1201,12 +1201,12 @@
     {
      "id": "underground",
      "zh": "地下與抽象",
-     "count": 283,
+     "count": 290,
      "children": [
       {
        "id": "abstract",
        "zh": "抽象與實驗",
-       "count": 125
+       "count": 128
       },
       {
        "id": "east-coast",
@@ -1231,56 +1231,56 @@
       {
        "id": "cloud",
        "zh": "Cloud / Emo Rap",
-       "count": 19
+       "count": 24
       }
      ]
     },
     {
      "id": "south",
      "zh": "南方 / Trap",
-     "count": 262,
+     "count": 274,
      "children": [
       {
        "id": "dirty-south",
        "zh": "Dirty South / Crunk",
-       "count": 143
+       "count": 148
       },
       {
        "id": "trap",
        "zh": "Trap / Drill",
-       "count": 116
+       "count": 120
       },
       {
        "id": "cloud",
        "zh": "Cloud / Emo Rap",
-       "count": 32
+       "count": 35
       },
       {
        "id": "memphis",
        "zh": "Memphis / Horrorcore",
-       "count": 26
+       "count": 27
       },
       {
        "id": "new-orleans",
        "zh": "New Orleans / Bounce",
-       "count": 16
+       "count": 23
       }
      ]
     },
     {
      "id": "conscious",
      "zh": "Jazz Rap / Conscious",
-     "count": 215,
+     "count": 217,
      "children": [
       {
        "id": "jazz-rap",
        "zh": "Jazz Rap",
-       "count": 89
+       "count": 90
       },
       {
        "id": "alternative",
        "zh": "Alternative Hip-hop",
-       "count": 88
+       "count": 89
       },
       {
        "id": "conscious",
@@ -1297,7 +1297,7 @@
     {
      "id": "gangsta",
      "zh": "Gangsta",
-     "count": 208,
+     "count": 210,
      "children": [
       {
        "id": "east",
@@ -1307,12 +1307,34 @@
       {
        "id": "south",
        "zh": "南方 / Trap",
-       "count": 81
+       "count": 83
       },
       {
        "id": "west",
        "zh": "西岸 / G-Funk",
        "count": 37
+      }
+     ]
+    },
+    {
+     "id": "asia-rap",
+     "zh": "亞洲嘻哈",
+     "count": 84,
+     "children": [
+      {
+       "id": "kr",
+       "zh": "韓國",
+       "count": 21
+      },
+      {
+       "id": "tw-cn",
+       "zh": "台灣與華語",
+       "count": 21
+      },
+      {
+       "id": "jp",
+       "zh": "日本",
+       "count": 20
       }
      ]
     },
@@ -1325,35 +1347,13 @@
     {
      "id": "pop-rap",
      "zh": "Pop Rap",
-     "count": 67,
+     "count": 68,
      "children": []
-    },
-    {
-     "id": "asia-rap",
-     "zh": "亞洲嘻哈",
-     "count": 63,
-     "children": [
-      {
-       "id": "jp",
-       "zh": "日本",
-       "count": 20
-      },
-      {
-       "id": "kr",
-       "zh": "韓國",
-       "count": 11
-      },
-      {
-       "id": "tw-cn",
-       "zh": "台灣與華語",
-       "count": 10
-      }
-     ]
     },
     {
      "id": "uk-euro",
      "zh": "英國與歐陸",
-     "count": 50,
+     "count": 60,
      "children": [
       {
        "id": "uk",
@@ -1363,7 +1363,7 @@
       {
        "id": "french",
        "zh": "法語嘻哈",
-       "count": 10
+       "count": 20
       }
      ]
     }

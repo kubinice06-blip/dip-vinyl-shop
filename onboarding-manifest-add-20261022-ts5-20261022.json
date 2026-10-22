@@ -1,0 +1,3225 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-ts5",
+ "batchNote": "薄細項策展線（add-20261022-ts5）",
+ "createdAt": "2026-10-22T03:26:29Z",
+ "albums": [
+  {
+   "artist": "國蛋",
+   "album": "GDNA",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "55c65aa4-9563-4371-b0bd-8ecc74542605",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "台灣與華語嘻哈：顏社招牌 MC 國蛋 GorDoN 歷經多張 mixtape／EP 後的第一張正規錄音室專輯（11 首），把他招牌的 boom bap 律動與台式幽默歌詞收成完整長篇，是台灣地下饒舌走進成熟期的代表作。｜⚠ MB 唯一標 Album 的作品；早期 Dr. Paper 系列 MB 未分類、維基未區分 mixtape。MB release 標廠牌為飛碟企業（發行商），維基記顏社，取顏社。｜MB release-group 55c65aa4-9563-4371-b0bd-8ecc74542605：title「GDNA」、Album、first-release-date 2023-02-22、artist-credit「國蛋」。證據：https://musicbrainz.org/release-group/55c65aa4-9563-4371-b0bd-8ecc74542605 https://zh.wikipedia.org/wiki/國蛋",
+    "queryAlias": "GorDoN 國蛋"
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop",
+    "rnb"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/55c65aa4-9563-4371-b0bd-8ecc74542605/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 717,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 717）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "〈SOUR〉先出成一張同名專輯，隔年又收進《GDNA》。出身臺南、念台大化學系的國蛋，2007 年加入饒舌廠牌顏社。2023 年 2 月 22 日顏社發行《GDNA》，這是他的第 10 張專輯，11 首歌約 43 分鐘。那張同名專輯面世於 2022 年 4 月 30 日。客座只有兩位：〈White Noise〉的蛋堡與〈Painkiller〉的 Karencici。本作與〈White Noise〉都入圍了第 14 屆金音創作獎。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/國蛋",
+     "https://musicbrainz.org/release-group/55c65aa4-9563-4371-b0bd-8ecc74542605",
+     "https://musicbrainz.org/ws/2/release/540dd945-e2ad-44f2-9fa1-12c2e5361a15?inc=recordings+artist-credits&fmt=json"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f3/ea/10/f3ea10dc-8e4c-14a4-4546-7cc1ba36717b/mzaf_852707852702460647.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1671993254",
+    "storefront": "TW",
+    "collectionExplicitness": "explicit",
+    "note": "Apple tw 1671993254「國蛋《GDNA》」：Apple tw 1671993254：藝人目錄查得，曲目與 MB 原盤逐首核對相符，取第 1 軌。，取第 1 軌〈My Sh*t〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ØZI",
+   "album": "ØZI: The Album",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "78a9468c-4126-4437-89ff-b2c0e714fb6d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "台灣與華語嘻哈：ØZI 首張專輯，以 trap／R&B 混血的製作與雙語唱法打開新一代台灣饒舌的主流市場，入圍第 30 屆金曲獎六項並拿下最佳新人。｜策展無疑點｜MB release-group 78a9468c-4126-4437-89ff-b2c0e714fb6d：title「ØZI: The Album」、Album、first-release-date 2018-07-10、artist-credit「ØZI」。證據：https://musicbrainz.org/release-group/78a9468c-4126-4437-89ff-b2c0e714fb6d https://en.wikipedia.org/wiki/%C3%98ZI",
+    "queryAlias": "OZI The Album 王詩安"
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop",
+    "rnb"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1407720075",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f2/9f/a1/f29fa15c-188a-0473-f603-366d351bdc15/193017001181.jpg/600x600bb.jpg",
+    "note": "CAA release-group 404；取已釘定試聽的 Apple 1407720075 官方圖，主線 2026-10-22 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 19934,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 2/4/2（Last.fm listeners 19934）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "金曲獎入圍六項，ØZI 抱回的是最佳新人。歌手葉璦菱是 ØZI 的母親，他 1997 年生在洛杉磯、兩歲回臺灣。《ØZI: The Album》2018 年 7 月 10 日線上首發，由新樂園（Forbidden Paradise）發行，10 首，約莫 31 分鐘。〈頭銜〉〈奪愛〉是 2017 年就發表的單曲，前導曲〈鑽石〉隔年 6 月放出。唯一客座是〈B.O.〉的 9m88；這首歌也讓他在 2019 年第 30 屆金曲獎入圍最佳單曲製作人與最佳編曲人。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/ØZI",
+     "https://musicbrainz.org/release-group/78a9468c-4126-4437-89ff-b2c0e714fb6d",
+     "https://musicbrainz.org/ws/2/release/d20539ec-7781-4bd0-babe-73d873ffc408?inc=recordings+artist-credits&fmt=json",
+     "https://en.wikipedia.org/wiki/%C3%98ZI",
+     "https://itunes.apple.com/search?term=ØZI+If+Only&entity=album&country=tw"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7b/70/7d/7b707dde-ef90-da10-e813-0d0a020f00b4/mzaf_16189652526507425813.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1407720075",
+    "storefront": "TW",
+    "collectionExplicitness": "explicit",
+    "note": "Apple tw 1407720075「ØZI《ØZI: The Album》」：Apple tw 1407720075：藝人目錄查得，曲目與 MB 原盤逐首核對相符，取第 1 軌。，取第 1 軌〈Øzymandias (Intro)〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "高爾宣 OSN",
+   "album": "#osnrap",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6a1ae1ac-b8b4-4ad1-a3e8-a37e530e57fe",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "台灣與華語嘻哈：高爾宣首張正規專輯，以旋律饒舌與 R&B 唱腔走紅，入圍第 31 屆金曲獎最佳新人與第 10 屆金音獎最佳嘻哈專輯，並獲 MAMA 最佳亞洲新人（台灣）。｜⚠ 發行日 MB 與維基傳記記 2019-04-30，維基唱片表記 2019-05-08；年份同為 2019。｜MB release-group 6a1ae1ac-b8b4-4ad1-a3e8-a37e530e57fe：title「#osnrap」、Album、first-release-date 2019-04-30、artist-credit「高爾宣 OSN」。證據：https://musicbrainz.org/release-group/6a1ae1ac-b8b4-4ad1-a3e8-a37e530e57fe https://zh.wikipedia.org/wiki/高爾宣",
+    "queryAlias": "OSN osnrap"
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop",
+    "rnb"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6a1ae1ac-b8b4-4ad1-a3e8-a37e530e57fe/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 25482,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 2/3/2（Last.fm listeners 25482）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "高爾宣的唱片約，來自和謝和弦合唱的一首單曲。台北文山是高爾宣的出生地，他高中畢業後赴美留學。2018 年，謝和弦在 Instagram 分享了他的音樂；退伍後，他與謝和弦、李杰明合唱〈我不是白馬王子〉，因此簽進陶山音樂。2019 年 4 月 1 日，〈Without You〉讓他爆紅，同年推出《#osnrap》。專輯以〈Without You〉開場，收尾是邀陳忻玥合唱的原聲版。他後來入圍第 31 屆金曲最佳新人，本作也入圍第 10 屆金音最佳嘻哈專輯。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/高爾宣",
+     "https://musicbrainz.org/ws/2/release/bf341c0d-dd3a-41dd-88fe-83ff52be9916?inc=recordings+artist-credits&fmt=json",
+     "https://musicbrainz.org/release-group/6a1ae1ac-b8b4-4ad1-a3e8-a37e530e57fe"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/79/0f/9a790ff8-272d-ddd9-0883-afefa4c21d92/mzaf_13412409919501015231.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1460167114",
+    "storefront": "TW",
+    "collectionExplicitness": "explicit",
+    "note": "Apple tw 1460167114「高爾宣《#osnrap》」：Apple tw 1460167114：藝人目錄查得 2019-04-30 原版 10 首，取第 1 軌。，取第 1 軌〈Without You〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "瘦子 E.SO",
+   "album": "Outta Body 靈魂出竅",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "8bd5593c-20af-4f1b-86b3-7a87318bed58",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "台灣與華語嘻哈：頑童 MJ116 成員瘦子的首張個人專輯（14 首），把團體的 old school 底色推向更陰暗內省的 trap 聲響，獲 Hit FM 年度十大專輯與 Hito 聲猛新人。｜⚠ MB 藝人名為「瘦子」、credit 寫「瘦子E.SO」（無空格）；掛名比照池中「蛋堡 Soft Lipa」雙名寫法加空格。｜MB release-group 8bd5593c-20af-4f1b-86b3-7a87318bed58：title「Outta Body 靈魂出竅」、Album、first-release-date 2020-07-10、artist-credit「瘦子E.SO」。證據：https://musicbrainz.org/release-group/8bd5593c-20af-4f1b-86b3-7a87318bed58 https://zh.wikipedia.org/wiki/瘦子E.SO",
+    "queryAlias": "E.SO 瘦子E.SO Outta Body"
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8bd5593c-20af-4f1b-86b3-7a87318bed58/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "worker /album-rating（obscurity:ai）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 3/4/2（Last.fm listeners 查無）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "瘦子原本跳 B-boy，車禍後才被童年玩伴拉去寫饒舌。拉他的是小春與大淵，三人就是頑童 MJ116。單飛之前，他已在 2009、2012 年出過兩捲 mixtape。2020 年 7 月 10 日，滾石唱片替他發行《Outta Body 靈魂出竅》，這是他以自己名字出的首張錄音室專輯，長度約 40 分鐘的 14 首歌裡沒有客座。〈CHANGE〉〈太陽〉〈她沒在看我〉等五首先當單曲推出。第 32 屆金曲獎，他入圍最佳國語男歌手、年度歌曲（〈伯父〉）與最佳作詞人。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/瘦子E.SO",
+     "https://musicbrainz.org/release-group/8bd5593c-20af-4f1b-86b3-7a87318bed58",
+     "https://musicbrainz.org/ws/2/release/4437dca9-3bc2-4a67-9c82-d5aa7a1a6683?inc=recordings+artist-credits&fmt=json"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/75/b8/e4/75b8e4ce-bb8a-8371-247c-4f9f16b97c9b/mzaf_11634541061239279397.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1521809924",
+    "storefront": "TW",
+    "collectionExplicitness": "explicit",
+    "note": "Apple tw 1521809924「瘦子E.SO《Outta Body 靈魂出竅》」：Apple tw 1521809924：藝人目錄查得，曲目與 MB 原盤逐首核對相符，取第 1 軌。，取第 1 軌〈INTRO〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Higher Brothers",
+   "album": "Black Cab",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f1271777-2354-4c2e-b469-9aacce611a7c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "台灣與華語嘻哈：成都四人組的首張錄音室專輯（14 首），以四川話 trap 把中國西南饒舌推上國際，88rising 簽約與北美巡演由此開始，是華語 trap 的分水嶺。｜⚠ 2016 同名作英文維基標 mixtape，故取 Black Cab 為首張錄音室專輯。｜MB release-group f1271777-2354-4c2e-b469-9aacce611a7c：title「Black Cab」、Album、first-release-date 2017-05-31、artist-credit「Higher Brothers」。證據：https://musicbrainz.org/release-group/f1271777-2354-4c2e-b469-9aacce611a7c https://en.wikipedia.org/wiki/Higher_Brothers",
+    "queryAlias": "海尔兄弟 Black Cab"
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f1271777-2354-4c2e-b469-9aacce611a7c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 41685,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 3/3/2（Last.fm listeners 41685）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "盤名 Black Cab 就是黑車，中國街頭非法載客的那種。Higher Brothers 以成都為根據地，四人裡的隊長是馬思唯。2015 年，馬思唯、KnowKnow 與 Psy.P 合出單曲〈海爾兄弟〉，名稱取自舊款海爾標誌，三人就此組團。2016 年加入 88rising 後，第一次登上廠牌 YouTube 頻道的歌，就叫〈Black Cab〉。2017 年 5 月 31 日專輯數位發行，14 首、歷時約 54 分鐘，幾乎全用四川話錄，連中國聽眾也難懂。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/更高兄弟",
+     "https://en.wikipedia.org/wiki/Higher_Brothers",
+     "https://musicbrainz.org/release-group/f1271777-2354-4c2e-b469-9aacce611a7c",
+     "https://musicbrainz.org/ws/2/release/4f1b2903-31ce-4c6f-b2e8-1bf9781fad8a?inc=recordings+artist-credits&fmt=json"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/73/6b/56/736b5634-ac12-ef48-7455-49fcde822925/mzaf_13948808318475774431.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1876351929",
+    "storefront": "US",
+    "collectionExplicitness": "cleaned",
+    "note": "Apple us 1876351929「Higher Brothers《Black Cab》」：Apple us 1876351929：14/14 相符；Apple 只上架 cleaned 版（無 explicit 版），依 §6 收並註明。取第 1 軌。，取第 1 軌〈WeChat (feat. Keith Ape)〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "GAI",
+   "album": "光宗耀祖",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c0ea25f7-ccdb-4bd0-b863-02c59dcda3c0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "台灣與華語嘻哈：重慶饒舌手 GAI 周延在《中國有嘻哈》奪冠後的首張個人專輯（9 首），把重慶方言、京劇與民樂素材揉進 trap，是「中國風嘻哈」走進主流的標竿作。｜⚠ MB 與 Apple 皆未記原發行廠牌（Apple 現為 ℗2026 Dream Music Group 重上架），label 留空待查；英文維基無唱片目錄，第二證據取 Apple＋maigoo。｜MB release-group c0ea25f7-ccdb-4bd0-b863-02c59dcda3c0：title「光宗耀祖」、Album、first-release-date 2018-10-10、artist-credit「GAI」。證據：https://musicbrainz.org/release-group/c0ea25f7-ccdb-4bd0-b863-02c59dcda3c0 https://music.apple.com/tw/album/%E5%85%89%E5%AE%97%E8%80%80%E7%A5%96/1883006190 https://m.maigoo.com/citiao/267414.html",
+    "queryAlias": "GAI周延 光宗耀祖"
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c0ea25f7-ccdb-4bd0-b863-02c59dcda3c0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 451,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 451）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "壓軸的〈我愛王斯然〉，主角是 GAI 那年娶的妻子。四川人 GAI 在重慶念書，後來在重慶夜店當 MC 起家。2017 年他在《中國有嘻哈》與 PG One 並列總冠軍，100 萬元人民幣獎金捐給希望工程。實體版由台灣福茂唱片出的《光宗耀祖》，發行日為 2018 年 10 月 10 日，無人客座，9 首歌大約 29 分鐘。他與王斯然的婚禮辦在同年。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/GAI",
+     "https://musicbrainz.org/ws/2/release/8c7ed8f7-323a-4a7a-a9ad-6c1a5a77f3c1?inc=recordings+artist-credits&fmt=json",
+     "https://musicbrainz.org/release-group/c0ea25f7-ccdb-4bd0-b863-02c59dcda3c0"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/5e/5b/045e5b65-9a82-5901-aea8-95f186ad8c24/mzaf_870093104666704855.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1883006190",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1883006190「GAI《光宗耀祖》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈光宗耀祖〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "艾福杰尼",
+   "album": "楼兰",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d1c8be43-930b-4a0f-a5f9-d48a0b977150",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "台灣與華語嘻哈：《中國有嘻哈》人氣饒舌手艾福杰尼的第一張完整長度專輯（10 首），以新疆身世與西域意象為題的概念作，代表 2017 選秀後中國嘻哈的商業高峰期。｜⚠ 原本想收首作《五亿探长》，但 Apple 標 EP（6 首），改收 MB 標 Album 的《楼兰》（10 首、2018-12-05）；『新疆身世／西域概念』僅據專輯名與其維吾爾族背景推論，待研究層核實。｜MB release-group d1c8be43-930b-4a0f-a5f9-d48a0b977150：title「楼兰」、Album、first-release-date 2018-12-05、artist-credit「艾福杰尼」。證據：https://musicbrainz.org/release-group/d1c8be43-930b-4a0f-a5f9-d48a0b977150 https://music.apple.com/tw/album/%E6%A5%BC%E5%85%B0/1690356163",
+    "queryAlias": "艾福傑尼 樓蘭"
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1690356163",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a5/36/ee/a536eeae-71e7-8f5d-6776-cdc8d44a8df1/4894944131885.jpg/600x600bb.jpg",
+    "note": "CAA release-group 404；取已釘定試聽的 Apple 1690356163 官方圖，主線 2026-10-22 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 94,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 94）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "古樓蘭的傳說，給了艾福杰尼整盤的靈感。他 1992 年生於新疆庫爾勒，在《中國有嘻哈》與黃旭組成 DMOB 沙漠兄弟。2018 年 12 月 5 日當天推出的《楼兰》，版權欄記百納娛樂，詞曲由他包辦。〈西域公主〉〈四十大盜〉直接帶出西域意象；約 1 分 26 秒的〈把電視聲音關小點〉，是整張最短的一首。",
+    "sourceUrls": [
+     "https://www.sohu.com/a/900868924_121373236",
+     "https://zh.wikipedia.org/wiki/說散就散",
+     "https://zh.wikipedia.org/wiki/青春有你_(第一季)",
+     "https://itunes.apple.com/lookup?id=1690356163&entity=song&country=tw",
+     "https://musicbrainz.org/release-group/d1c8be43-930b-4a0f-a5f9-d48a0b977150"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/39/4e/fa/394efa25-5b6c-83d1-699d-35152e2d19d6/mzaf_668965186247762501.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1690356163",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1690356163「艾福杰尼《楼兰》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Thanks For Waiting (feat. 雨馨)〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "熊仔",
+   "album": "夢想成真 Sisyphus' Dream",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e712e7a6-3b4a-4df3-8f6f-a36818063517",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "台灣與華語嘻哈：台北饒舌手熊仔 Kumachan 的第二張專輯（14 首），以薛西弗斯神話寫追夢者的困頓，拿下第 10 屆金音創作獎最佳嘻哈專輯，是 2010 年代末台灣饒舌的代表長篇。｜策展無疑點｜MB release-group e712e7a6-3b4a-4df3-8f6f-a36818063517：title「夢想成真 Sisyphus' Dream」、Album、first-release-date 2019-04-17、artist-credit「熊仔」。證據：https://musicbrainz.org/release-group/e712e7a6-3b4a-4df3-8f6f-a36818063517 https://zh.wikipedia.org/wiki/熊仔",
+    "queryAlias": "Kumachan 夢想成真"
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1456096821",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b7/81/a9/b781a9a0-3397-480d-ed7f-53cdb75a7f3b/886447610480.jpg/600x600bb.jpg",
+    "note": "CAA release-group 404；取已釘定試聽的 Apple 1456096821 官方圖，主線 2026-10-22 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 2）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "最後四首各取一個字，〈夢〉〈想〉〈成〉〈真〉拼回盤名。台北饒舌手熊仔的首張《∞無限》，2015 年就拿過金音最佳嘻哈專輯。2018 年他以「BOWZ 豹子膽」新形象推出〈給愛麗絲〉。2019 年 4 月 17 日，Sony Music 為他發行本作，共 14 首，第 10 首〈…夢中夢中夢中夢中…〉找來蛋堡、大支、ØZI 等九人。副題指希臘神話裡反覆推石上山的薛西弗斯。專輯拿下第 10 屆金音最佳嘻哈專輯，〈禁愛令〉也入圍最佳嘻哈單曲。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/熊仔",
+     "https://musicbrainz.org/release-group/e712e7a6-3b4a-4df3-8f6f-a36818063517",
+     "https://zh.wikipedia.org/wiki/西西弗斯"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/74/0f/54/740f5471-2f09-6819-7ccb-d5372031640f/mzaf_10285327805531722889.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1456096821",
+    "storefront": "TW",
+    "collectionExplicitness": "explicit",
+    "note": "Apple tw 1456096821「熊仔 & 豹子膽《夢想成真》」：Apple tw 1456096821：藝人目錄查得，曲目與 MB 原盤逐首核對相符（曲名去掉英譯副題，14 首逐首對應），取第 1 軌。，取第 1 軌〈Intro (夢想成真)〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "LMF",
+   "album": "大懶堂",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b784dd87-fa38-4c22-9b99-21e76e7bb582",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "台灣與華語嘻哈：香港 LMF（大懶堂）首張正規專輯，把融合 rap metal 的編制與粵語粗口街頭語言帶進主流唱片業，開啟香港本土嘻哈的時代，MC 仁、DJ Tommy 等都由此出道。｜⚠ MB 標題用簡體「大懒堂」，香港原盤封面應為繁體，依 ts5 規則掛「大懶堂」；Apple 英文標題 Lazy Clan。1999 同名 EP 不收。同日 MB 另有一個 RG『Aroom Represents』（維基記 2001），非此張。｜MB release-group b784dd87-fa38-4c22-9b99-21e76e7bb582：title「大懒堂」、Album、first-release-date 2000-05-23、artist-credit「LMF」。證據：https://musicbrainz.org/release-group/b784dd87-fa38-4c22-9b99-21e76e7bb582 https://zh.wikipedia.org/wiki/LMF https://music.apple.com/tw/album/lazy-clan/367988349",
+    "queryAlias": "大懒堂 Lazy Clan Lazy Mutha Fucka；大懒堂"
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "367988349",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/15/02/a0/1502a055-6f6a-d218-633e-a9175bc920b2/mzi.ayfebhto.jpg/600x600bb.jpg",
+    "note": "CAA release-group 404；取已釘定試聽的 Apple 367988349 官方圖，主線 2026-10-22 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 297,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 4/5/4（Last.fm listeners 297）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "滿嘴粗口的歌詞，讓電台編輯拒播了 LMF 的訪問。1999 年在香港成軍的 LMF，混合 rap metal 與 hardcore 嘻哈。Warner Music Hong Kong 於 2000 年 5 月 23 日替他們發行第一張錄音室專輯《大懶堂》，收 11 首。粗口也讓部分歌曲另外出了淨版。同年，他們拿下叱咤樂壇組合金獎。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/LMF",
+     "https://musicbrainz.org/release-group/b784dd87-fa38-4c22-9b99-21e76e7bb582",
+     "https://musicbrainz.org/ws/2/release/eef5c5ba-aa32-4b69-a007-9d9d8b13f64c?inc=recordings+artist-credits&fmt=json"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9e/6f/7c/9e6f7c76-b2c9-3e55-312c-c20548e0bf8e/mzaf_9630292234702098367.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "367988349",
+    "storefront": "HK",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple hk 367988349「LMF《Lazy Clan》」：Apple hk 367988349：藝人目錄查得，曲目與 MB 原盤逐首核對相符，取第 1 軌。，取第 1 軌〈LMF〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Miss Ko 葛仲珊",
+   "album": "皇后區的皇后",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c523b264-a105-49df-8536-a916d356e6e8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "台灣與華語嘻哈：葛仲珊第二張錄音室專輯，台灣女性饒舌代表作（主線換盤：原提名《Knock Out 葛屁》Apple／Discogs 皆核不到）｜⚠ 主線換盤；年份、廠牌待研究層核｜MB release-group c523b264-a105-49df-8536-a916d356e6e8：title「皇后區的皇后」、Album、first-release-date 2016-12-22、artist-credit「Miss Ko」。證據：https://musicbrainz.org/release-group/c523b264-a105-49df-8536-a916d356e6e8 https://en.wikipedia.org/wiki/Miss_Ko https://zh.wikipedia.org/wiki/葛仲珊",
+    "queryAlias": "葛仲珊 Miss Ko Knock Out；Miss Ko"
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c523b264-a105-49df-8536-a916d356e6e8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 141,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 141）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "〈搞定小姐〉是最後完成的一首，卻被排在第一首。在紐約皇后區長大的葛仲珊，出道隔年便奪得金曲最佳新人。2016 年她改簽環球音樂，本作是換東家後的第一份作品、第三張錄音室專輯，發行日定在 12 月 22 日，11 首加總約 40 分鐘，盤名直指她成長的那個區。把〈搞定小姐〉排第一首象徵堅持，MV 回紐約拍，2017 年 1 月在臉書首播。同年第 28 屆金曲獎，她入圍最佳國語女歌手。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/c523b264-a105-49df-8536-a916d356e6e8",
+     "https://en.wikipedia.org/wiki/Miss_Ko",
+     "https://zh.wikipedia.org/wiki/葛仲珊",
+     "https://www.mirrormedia.mg/story/amp/20170615ent006",
+     "https://www.marieclaire.com.tw/entertainment/news/14243"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e4/fc/72/e4fc720e-4d1c-b428-ff3c-546184d04a83/mzaf_10434398761170246460.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1443069908",
+    "storefront": "TW",
+    "collectionExplicitness": "explicit",
+    "note": "Apple tw 1443069908「Miss Ko 葛仲珊《皇后區的皇后》」：Apple tw 1443069908：2016-12-22 原版 11 首（另一筆為 Special Edition，不取），取第 1 軌。，取第 1 軌〈搞定小姐〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "谢帝",
+   "album": "人、社会、钱",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ed070490-2899-45d4-ab27-2402eee048ff",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "台灣與華語嘻哈：成都 CDC 說唱會館核心人物謝帝的首張個人專輯（CD 15 首），以四川話寫街頭與社會現實，比《中國有嘻哈》早兩年確立了川渝方言饒舌的地下正統。｜⚠ MB 未記廠牌（label 留空）；維基標題寫「人，社会，钱」（全形逗號），MB 用頓號「人、社会、钱」，照 MB。｜MB release-group ed070490-2899-45d4-ab27-2402eee048ff：title「人、社会、钱」、Album、first-release-date 2015、artist-credit「谢帝」。證據：https://musicbrainz.org/release-group/ed070490-2899-45d4-ab27-2402eee048ff https://zh.wikipedia.org/wiki/谢帝",
+    "queryAlias": "謝帝 人社會錢 Xie Di"
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ed070490-2899-45d4-ab27-2402eee048ff/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 1）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "〈坝坝球〉〈四川全兴〉，谢帝把成都日常寫成了曲名。谢帝本名蔡鎮鴻，1989 年生於成都，以四川話與普通話饒舌。《人、社会、钱》是他 2015 年的首張個人專輯，CD 收 15 首，曲名裡也夾著〈豁老子〉〈有莫得〉這類四川方言。末曲〈你坐最后一排，我坐讲台旁边〉約 5 分鐘長。那年 10 月 1 日他在成都開了「好耍」巡迴演唱會。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/ed070490-2899-45d4-ab27-2402eee048ff",
+     "https://zh.wikipedia.org/wiki/谢帝",
+     "https://m.maigoo.com/citiao/283492.html"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "Apple tw 谢帝藝人目錄無本盤。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "廿四味",
+   "album": "24HERBS",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d4da4824-1198-429f-9fc9-e0ca3323f063",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "台灣與華語嘻哈：香港嘻哈組合廿四味（24Herbs）的首張同名專輯，以粵語饒舌結合中樂與功夫片意象，主打〈Respect 就 OK〉拿下叱咤樂壇生力軍組合銅獎，是 LMF 之後香港嘻哈的第二波代表。｜⚠ MB 此 RG credit 寫「24味」、藝人主名「廿四味」；封面主文字可能是英文 24HERBS，若封面以英文為主則掛名改 24Herbs。MB release 為 2CD（9+12 首），可能是含 bonus 的版本。『中樂與功夫片意象』待研究層核實。｜MB release-group d4da4824-1198-429f-9fc9-e0ca3323f063：title「24HERBS」、Album、first-release-date 2008、artist-credit「24味」。證據：https://musicbrainz.org/release-group/d4da4824-1198-429f-9fc9-e0ca3323f063 https://zh.wikipedia.org/wiki/廿四味_(樂隊)",
+    "queryAlias": "24Herbs 24味；24味"
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "13838407",
+    "url": "https://i.discogs.com/oxcCPHBtXzRlOhrp5nscZglfWX1omXc3CxzBCfdo4n0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzODM4/NDA3LTE1NjIyNjYz/MjAtMTUxOC5qcGVn.jpeg",
+    "note": "CAA 無圖、Apple 無本盤；取 Discogs 13838407（East Asia Music EACD269，2008 香港 CD）圖；主線 2026-10-22 目視：章魚插畫、24HERBS 字樣。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 117,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 117）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "廿四味的六名成員裡，Phat 和 Kit 出身 LMF。六人組廿四味來自香港，2006 年成軍。2008 年，他們的首作以團名命名，交東亞唱片出版。正規版 9 首，從〈Superstar〉排到〈24Herbs〉；首支單曲〈Respect 頭 PK〉打進電台榜。豪華版另加收與 MC Jin 合作的〈照做〉混音。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/d4da4824-1198-429f-9fc9-e0ca3323f063",
+     "https://en.wikipedia.org/wiki/24Herbs",
+     "https://zh.wikipedia.org/wiki/廿四味_(樂隊)"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "Apple 廿四味藝人目錄只有 2011《Bring It On》，無本盤。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Drunken Tiger",
+   "album": "Year of the Tiger",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "8d856072-67ff-33fa-8ea9-c5cd549c8a15",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "韓國嘻哈：Tiger JK 與 DJ Shine 的出道專輯，被視為韓國第一張正統嘻哈專輯，把美式 boom bap 與韓英雙語饒舌帶進 1990 年代末的韓國主流，奠定 K-hiphop 的起點。｜⚠ maniadb 網址為 http（MB 所附）；https 證據另有 MB 與英文維基（未直接開啟維基頁）。池中已有該團 2000 年《위대한 탄생》。｜MB release-group 8d856072-67ff-33fa-8ea9-c5cd549c8a15：title「Year of the Tiger」、Album、first-release-date 1999-02、artist-credit「Drunken Tiger」。證據：https://musicbrainz.org/release-group/8d856072-67ff-33fa-8ea9-c5cd549c8a15 http://www.maniadb.com/album/121187 https://en.wikipedia.org/wiki/Drunken_Tiger",
+    "queryAlias": "드렁큰 타이거 Year of the Tiger 1집"
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8d856072-67ff-33fa-8ea9-c5cd549c8a15/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5169,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 4/4/2（Last.fm listeners 5169）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "不跳編舞的 Drunken Tiger，歌詞全由自己寫。Tiger JK 和 DJ Shine 都是韓裔美國人，1998 年開始搭檔。1999 年，Doremi 發行了兩人的出道專輯《Year of the Tiger》，CD 與卡帶並出。兩人立場反體制，與同期 K-pop 路線相反，露骨的歌詞也惹出爭議。單曲〈난 널 원해〉（I Want You）與〈너희가 힙합을 아느냐?〉（Do You Know Hip-Hop?）如今被視為韓國嘻哈經典。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Drunken_Tiger",
+     "https://musicbrainz.org/release-group/8d856072-67ff-33fa-8ea9-c5cd549c8a15"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/5d/15/945d159e-0aea-94b6-17d5-116cc931b415/mzaf_9622023889597561826.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1449537138",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1449537138「Drunken Tiger《Year of the Tiger》」：Apple us 1449537138：韓文曲名版 13 首與 MB 前 13 首逐首對應（缺隱藏軌 I Want You (uncut)），取第 1 軌。，取第 1 軌〈하늘에서 내려오는 계단〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jazzyfact",
+   "album": "Lifes Like",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "48336d48-3a62-4b8f-985a-64bb97d0e906",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "韓國嘻哈：Beenzino 與製作人 Shimmy Twice 的雙人組唯一專輯，以爵士取樣與 Beenzino 的英韓混語 flow 定義了 2010 年代韓國地下嘻哈的美學，常列韓國嘻哈歷代名盤前段。｜⚠ MB 與英文維基皆寫「Lifes Like」（無撇號），照此；部分韓國資料寫 Life's Like。｜MB release-group 48336d48-3a62-4b8f-985a-64bb97d0e906：title「Lifes Like」、Album、first-release-date 2010-10-26、artist-credit「Jazzyfact」。證據：https://musicbrainz.org/release-group/48336d48-3a62-4b8f-985a-64bb97d0e906 https://en.wikipedia.org/wiki/Jazzyfact",
+    "queryAlias": "재지팩트 Life's Like"
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop",
+    "rnb"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/48336d48-3a62-4b8f-985a-64bb97d0e906/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 10415,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 2/4/2（Last.fm listeners 10415）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "團員都放棄了音樂，兩人才合組 Jazzyfact。饒舌手是 Beenzino，製作人是 Shimmy Twice。兩人 2008 年組團，隔年先放出單曲〈Addicted 2〉。2010 年 10 月 26 日，兩人經 Hiphop Playa 推出《Lifes Like》，開場曲〈A Tribe Called Jazzyfact〉字面近似 A Tribe Called Quest。2017 年兩人只再出 EP《Waves Like》，錄音室專輯僅此一張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/48336d48-3a62-4b8f-985a-64bb97d0e906",
+     "https://en.wikipedia.org/wiki/Jazzyfact"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/63/d1/af/63d1af55-328e-7817-8b0f-ebe71ce9d3eb/mzaf_7013564999633417345.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1609042844",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 1609042844「Jazzyfact《Lifes Like》」：Apple us 1609042844：藝人目錄查得，曲目與 MB 原盤逐首核對相符，取第 1 軌。，取第 1 軌〈A Tribe Called Jazzyfact〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Deepflow",
+   "album": "양화",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "dca05f10-c699-4a77-84ee-37a0f9ea83f0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "韓國嘻哈：VMC 主腦 Deepflow 的第三張正規專輯，收錄獲韓國大眾音樂獎最佳嘻哈歌曲的〈Cut Cut Cut〉（feat. Nucksal、Huckleberry P），本人同屆獲年度音樂人，是 2010 年代韓國硬派嘻哈的代表作。｜⚠ 『獲 KMA 最佳饒舌專輯』未能證實（英文維基只列年度音樂人與最佳嘻哈歌曲），why 只寫已證實部分。｜MB release-group dca05f10-c699-4a77-84ee-37a0f9ea83f0：title「양화」、Album、first-release-date 2015-04-13、artist-credit「Deepflow」。證據：https://musicbrainz.org/release-group/dca05f10-c699-4a77-84ee-37a0f9ea83f0 https://en.wikipedia.org/wiki/Deepflow",
+    "queryAlias": "딥플로우 Yanghwa"
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/dca05f10-c699-4a77-84ee-37a0f9ea83f0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 80,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 80）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "饒舌手、製作人兼廠牌老闆，Deepflow 一人扛三個身分。柳尚求是他的本名，1984 年生，2007 年起活動。《양화》2015 年 4 月 13 日以他的 VMC 名義出版，收 15 首，〈작두〉（Cut Cut Cut）找來 넉살 客座。隔年的韓國大眾音樂獎，他拿下年度音樂人，〈Cut Cut Cut〉也獲最佳嘻哈歌曲。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/dca05f10-c699-4a77-84ee-37a0f9ea83f0",
+     "https://en.wikipedia.org/wiki/Deepflow",
+     "https://en.wikipedia.org/wiki/Nucksal"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a5/db/ea/a5dbeaef-aa63-a152-5d11-b991a4d33706/mzaf_7987242672308624085.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1448668773",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 1448668773「Deepflow《Yanghwa》」：Apple us 1448668773：藝人目錄查得，曲目與 MB 原盤逐首核對相符（曲名為英譯（Nirvana＝열반、Fire＝불구경、Old Shoes＝낡은 신발），15 首逐首對應），取第 1 軌。，取第 1 軌〈Nirvana〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "넉살",
+   "album": "작은 것들의 신",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6db5607f-ba1d-4e26-a138-53a939db2739",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "韓國嘻哈：VMC 饒舌手 Nucksal 的首張正規專輯，以老派敘事與幽默自嘲寫小人物生活，拿下 2017 韓國嘻哈大獎年度嘻哈專輯，是他走紅《Show Me the Money》之前的地下代表作。｜⚠ 原考慮 KMA 獲獎的《당신께》（與樂團 Cadejo，2022），但英文維基標 EP，改收此張。掛名依 MB 韓文主名；封面主文字是否為 NUCKSAL 英文待封面確認。｜MB release-group 6db5607f-ba1d-4e26-a138-53a939db2739：title「작은 것들의 신」、Album、first-release-date 2016-02-04、artist-credit「넉살」。證據：https://musicbrainz.org/release-group/6db5607f-ba1d-4e26-a138-53a939db2739 https://en.wikipedia.org/wiki/Nucksal",
+    "queryAlias": "Nucksal The God of Small Things"
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6db5607f-ba1d-4e26-a138-53a939db2739/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 294,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 294）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "넉살 出這張首作時，還要再等一年才在選秀拿下亞軍。首爾出身的 넉살，2009 年以雙人組 Future Heaven 成員出道。2016 年 2 月 4 日，VMC 送出《작은 것들의 신》，英文名 The God of Small Things，12 首裡的〈악당출현〉找來 Deepflow 等四人。2017 年的韓國嘻哈大獎，年度嘻哈專輯頒給了它。也是 2017 年，他在《Show Me the Money 6》拿第二名，這才受到主流關注。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/6db5607f-ba1d-4e26-a138-53a939db2739",
+     "https://en.wikipedia.org/wiki/Nucksal"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/04/2c/9f/042c9f93-ebb7-0b3a-3bb8-7da95538492b/mzaf_1422025759100377940.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1081249481",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 1081249481「Nucksal《The God of Small Things》」：Apple us 1081249481：藝人目錄查得，曲目與 MB 原盤逐首核對相符（部分曲名英譯（NFS＝팔지 않아），12 首逐首對應），取第 1 軌。，取第 1 軌〈NFS〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Changmo",
+   "album": "Boyhood",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "8d55cf10-2a5d-4669-a630-4bf55dfdf860",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "韓國嘻哈：創作型饒舌手兼製作人 Changmo 的首張正規專輯，收錄獲金唱片獎最佳 R&B／嘻哈與韓國嘻哈大獎年度單曲的〈Meteor〉，入圍年度嘻哈專輯，是韓國旋律 trap 世代的標竿。｜⚠ MB 藝人主名「창모」，release credit 寫 Changmo，掛名依 credit。｜MB release-group 8d55cf10-2a5d-4669-a630-4bf55dfdf860：title「Boyhood」、Album、first-release-date 2019-11-29、artist-credit「Changmo」。證據：https://musicbrainz.org/release-group/8d55cf10-2a5d-4669-a630-4bf55dfdf860 https://en.wikipedia.org/wiki/Changmo",
+    "queryAlias": "창모 Boyhood"
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8d55cf10-2a5d-4669-a630-4bf55dfdf860/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 29944,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 2/3/2（Last.fm listeners 29944）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兩度考上柏克萊，Changmo 都因為拿不到獎學金作罷。韓國歌手 Changmo 1994 年出生，本名具昌模。2016 年 10 月他加入 Ambition Musik，出道專輯是同年的《MOTOWN》。2019 年 11 月 29 日以串流上架的《Boyhood》收 12 首，其中〈Meteor〉登上 Gaon 數位榜第 1 名。2020 年的 Golden Disc Awards，這首單曲獲最佳 R&B／嘻哈。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/8d55cf10-2a5d-4669-a630-4bf55dfdf860",
+     "https://en.wikipedia.org/wiki/Changmo"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1d/24/54/1d24543a-1e65-4f14-f0cc-11c00bb86f79/mzaf_6508122848853179523.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1580386180",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 1580386180「CHANGMO《Boyhood》」：Apple us 1580386180：藝人目錄查得，曲目與 MB 原盤逐首核對相符，取第 1 軌。，取第 1 軌〈wish〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "pH-1",
+   "album": "HALO",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "be6c9e39-02ff-4f1a-b8fd-5c71234a363a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "韓國嘻哈：Jay Park 旗下 H1GHR MUSIC 的紐約長大饒舌手 pH-1 的首張錄音室專輯，以溫潤的英韓雙語旋律饒舌代表 2010 年代末 K-hiphop 的 R&B 化走向。｜⚠ 無重大獎項（維基只列單曲提名），收錄理由偏『世代代表』。｜MB release-group be6c9e39-02ff-4f1a-b8fd-5c71234a363a：title「HALO」、Album、first-release-date 2019-03-28、artist-credit「pH-1」。證據：https://musicbrainz.org/release-group/be6c9e39-02ff-4f1a-b8fd-5c71234a363a https://en.wikipedia.org/wiki/PH-1_(rapper)",
+    "queryAlias": "피에이치원 HALO"
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop",
+    "rnb"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/be6c9e39-02ff-4f1a-b8fd-5c71234a363a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 68053,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 2/3/2（Last.fm listeners 68053）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "藝名 pH-1 拼的是 Park、Harry 與 Won。12 歲那年，他隨家人從韓國搬到紐約長島。藝名的三段分別取自他的本姓、英文名與韓文名。2016 年他以單曲〈Wavy〉出道，2017 年 5 月簽進 H1GHR MUSIC，2018 年參加《Show Me the Money 777》後知名度大增。《HALO》是他 2019 年 3 月 28 日端出的首張錄音室專輯，數位版收 12 首，先行單曲〈Malibu〉找來 The Quiett 與 Mokyo。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/be6c9e39-02ff-4f1a-b8fd-5c71234a363a",
+     "https://en.wikipedia.org/wiki/PH-1_(rapper)"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ca/e7/fc/cae7fc52-c889-c9da-ebf6-6498bca2eef9/mzaf_6071438532144323978.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1635085857",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 1635085857「pH-1《HALO》」：Apple us 1635085857：藝人目錄查得，曲目與 MB 原盤逐首核對相符，取第 1 軌。，取第 1 軌〈Alright〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Beenzino",
+   "album": "NOWITZKI",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "92302b5f-7df7-4ab2-9a5b-5989b4a8b3fa",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "韓國嘻哈：Beenzino 退伍後的第二張正規專輯，拿下第 21 屆韓國大眾音樂獎最佳饒舌與嘻哈專輯，延續 Jazzyfact 以來的爵士取樣與英韓混語 flow，寫成熟期的自我回顧。｜⚠ 池中已有 Beenzino《12》（1 張），未達 2 張門檻。｜MB release-group 92302b5f-7df7-4ab2-9a5b-5989b4a8b3fa：title「NOWITZKI」、Album、first-release-date 2023-06-03、artist-credit「Beenzino」。證據：https://musicbrainz.org/release-group/92302b5f-7df7-4ab2-9a5b-5989b4a8b3fa https://en.wikipedia.org/wiki/21st_Korean_Music_Awards",
+    "queryAlias": "빈지노 Nowitzki"
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/92302b5f-7df7-4ab2-9a5b-5989b4a8b3fa/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 13000,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 3/4/2（Last.fm listeners 13000）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Beenzino 把入伍前到 2022 年的經歷收成一張。從雙人組 Jazzyfact 起家的 Beenzino，當年搭檔的是製作人 Shimmy Twice。他 2017 年入伍、2019 年 2 月退伍，自述專輯收的是入伍前到 2022 年之間的事、想法與一些瞬間。《NOWITZKI》2023 年 7 月 3 日透過 BANA 發行，18 首歌約有 58 分鐘，距正規首張《12》整整七年。在第 21 屆韓國大眾音樂獎，本作同獲年度專輯與最佳饒舌與嘻哈專輯。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Beenzino",
+     "https://ko.wikipedia.org/wiki/%EB%B9%88%EC%A7%80%EB%85%B8",
+     "https://sbsstar.net/article/N1007257485/beenzino-thinks-one-should-engage-in-marriage-as-they-do-with-any-other-job",
+     "https://liftedasia.com/article/beenzino-returns",
+     "https://en.wikipedia.org/wiki/21st_Korean_Music_Awards",
+     "https://musicbrainz.org/release-group/92302b5f-7df7-4ab2-9a5b-5989b4a8b3fa"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/29/41/7e/29417ea4-8454-938f-38d0-64f122b2ee9d/mzaf_7357449505578126790.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1694479639",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 1694479639「Beenzino《NOWITZKI》」：Apple us 1694479639：藝人目錄查得，曲目與 MB 原盤逐首核對相符，取第 1 軌。，取第 1 軌〈Stinky Kiss (Intro)〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Quiett",
+   "album": "Q Train",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "da1aa6e5-75fc-4f80-a579-8f51078bce30",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "韓國嘻哈：製作人兼饒舌手 The Quiett 的第二張專輯，以爵士與靈魂樂取樣的抒情 boom bap 成為 Soul Company 時期韓國地下嘻哈的代表聲響，後來更在 Illionaire 時期出了續作《Q Train 2》。｜⚠ 英文維基記 Brownie Entertainment 發行（2006-02-07），MB 列 Mnet Media／Soul Company／Tyle Music（2006-02-03），label 取 Soul Company 待核。維基無獎項記載；『代表聲響』屬策展判斷。｜MB release-group da1aa6e5-75fc-4f80-a579-8f51078bce30：title「Q Train」、Album、first-release-date 2006-02-03、artist-credit「The Quiett」。證據：https://musicbrainz.org/release-group/da1aa6e5-75fc-4f80-a579-8f51078bce30 https://en.wikipedia.org/wiki/The_Quiett http://www.maniadb.com/album/157701",
+    "queryAlias": "더 콰이엇 Q Train"
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop",
+    "rnb"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/da1aa6e5-75fc-4f80-a579-8f51078bce30/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 844,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 844）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Notorious Kid 是 Dok2 的聲音變調而成。The Quiett 在 2004 年參與創立獨立嘻哈廠牌 Soul Company，1985 年生於安養。《Q Train》2006 年 2 月面世，算他第二張正規專輯，距首張《Music》約半年。全盤 14 首，Notorious Kid 掛在〈뭐〉，DJ Silent 客座兩首，〈Interlude〉則是 Mad Clown 的出道曲。2007 年，本作拿到第 4 屆韓國大眾音樂獎最佳嘻哈專輯。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Quiett",
+     "https://ko.wikipedia.org/wiki/%EC%86%8C%EC%9A%B8_%EC%BB%B4%ED%8D%BC%EB%8B%88",
+     "https://ko.wikipedia.org/wiki/Q_Train",
+     "https://musicbrainz.org/release-group/da1aa6e5-75fc-4f80-a579-8f51078bce30",
+     "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85%EC%83%81",
+     "https://ko.wikipedia.org/wiki/%EB%8D%94_%EC%BD%B0%EC%9D%B4%EC%97%87"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cf/73/15/cf731544-9e97-00cd-b973-2040d1bc0074/mzaf_6838107356026340186.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1089792149",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 1089792149「The Quiett《Q Train (Remaster)》」：Apple us 1089792149：藝人目錄查得，曲目與 MB 原盤逐首核對相符，取第 1 軌。，取第 1 軌〈Go〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dok2",
+   "album": "Multillionaire",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "01437269-3f64-41c1-b92c-2abec94df84a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "韓國嘻哈：Illionaire Records 創辦人 Dok2 在《Show Me the Money》爆紅高峰期的正規專輯，把『財富炫耀』式美式 trap 美學全面帶進韓國主流，是 Illionaire 時代的代表作。｜⚠ 評論界更常提的是 2011《Hustle Real Hard》（英文維基列為正規專輯，Hiphopplaya），但 MB 查無（artist:\"Dok2\" AND releasegroup:\"Hustle Real Hard\" count=0）、Apple 查詢失敗，故取 MB 可釘的此張；若研究層能補 Hustle Real Hard 的 Discogs／Apple 證據，可改走 §1 人工身分換掉。無獎項記載。｜MB release-group 01437269-3f64-41c1-b92c-2abec94df84a：title「Multillionaire」、Album、first-release-date 2015-06-23、artist-credit「Dok2」。證據：https://musicbrainz.org/release-group/01437269-3f64-41c1-b92c-2abec94df84a https://en.wikipedia.org/wiki/Dok2",
+    "queryAlias": "도끼 Multillionaire"
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/01437269-3f64-41c1-b92c-2abec94df84a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5495,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 2/4/2（Last.fm listeners 5495）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Dok2 把標題曲交給了美國製作人 DJ Mustard。發行時 Dok2 25 歲，和 The Quiett 合創 Illionaire Records 已經四年。《Multillionaire》2015 年 6 月 23 日公開，收 13 首，在 Gaon 專輯榜最高來到第 9 名。另一首〈Spirit Of Ecstasy〉則由 Jahlil Beats 操刀。專輯與單曲〈1llusion〉雙雙上榜，讓他走進了主流。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Dok2",
+     "https://musicbrainz.org/release-group/01437269-3f64-41c1-b92c-2abec94df84a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cf/89/0e/cf890e7a-75d0-98ed-95cc-b7b07f76255b/mzaf_14192907599073385941.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1623954488",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 1623954488「DOK2《Multillionaire》」：Apple us 1623954488：藝人目錄查得，曲目與 MB 原盤逐首核對相符，取第 1 軌。，取第 1 軌〈Chikichakachokocho〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Khundi Panda",
+   "album": "GAROSAWK",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "504010e0-3472-4333-aef4-3064a1578b95",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "韓國嘻哈：以高密度押韻著稱的 Khundi Panda 首張正規專輯，拿下韓國大眾音樂獎最佳饒舌專輯（他繼 2017 年與製作人 Viann 合作的《Reconstruction》後第二度獲此獎），是韓國 lyricist 派的當代代表。｜⚠ 《Reconstruction》（Viann X Khundi Panda，2017）MB 查無，未收；soompi 網址為該張獲獎佐證。『高密度押韻』屬一般評價，待研究層核實。｜MB release-group 504010e0-3472-4333-aef4-3064a1578b95：title「GAROSAWK」、Album、first-release-date 2020-07-26、artist-credit「Khundi Panda」。證據：https://musicbrainz.org/release-group/504010e0-3472-4333-aef4-3064a1578b95 https://en.wikipedia.org/wiki/Khundi_Panda https://www.soompi.com/article/1132953wpp/winners-15th-korean-music-awards",
+    "queryAlias": "쿤디판다 가로사옥 Garosawk"
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1525166402",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/19/4d/d2/194dd20f-8f0d-d14f-2e91-6e9a4e3ab86f/cover_-_resized.jpg/600x600bb.jpg",
+    "note": "CAA release-group 404；取已釘定試聽的 Apple 1525166402 官方圖，主線 2026-10-22 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 1854,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 2/5/4（Last.fm listeners 1854）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Khundi Panda 為每首歌做的視覺，後來辦成展覽。1997 年生的 Khundi Panda，是聽了 Epik High 才迷上音樂的南韓饒舌手。Dejavu Group 出版的《GAROSAWK》是他首張正規作品，內頁印著他替各曲設計的視覺，2020 年 7 月 26 日先行發表。他在訪談中說，這是一趟尋找精神避風港的家的內在旅程，也是三部曲的終章。2021 年第 18 屆韓國大眾音樂獎頒給《GAROSAWK》最佳饒舌與嘻哈專輯，是他第二度得到這個獎。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Khundi_Panda",
+     "https://www.soompi.com/article/1132953wpp/winners-15th-korean-music-awards",
+     "https://www.gqkorea.co.kr/?p=167836",
+     "https://musicbrainz.org/release-group/504010e0-3472-4333-aef4-3064a1578b95",
+     "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85%EC%83%81"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/87/93/7b8793cc-673d-6882-c169-9908f9fe4835/mzaf_4569798833607019230.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1525166402",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1525166402「Khundi Panda《Garosawk》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Blackbox〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Oxmo Puccino",
+   "album": "Opéra Puccino",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b5110151-68b3-3f70-bd51-3e9c2d23de25",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "法語嘻哈：Oxmo Puccino 首張專輯，出自 Time Bomb 集團：以「Black Desperado」黑色電影式的敘事寫巴黎北區街頭，〈L'Enfant seul〉成為法語饒舌最常被引用的文學性歌詞之一——90 年代法語嘻哈黃金期的正典。｜策展無疑點｜MB release-group b5110151-68b3-3f70-bd51-3e9c2d23de25：title「Opéra Puccino」、Album、first-release-date 1998-04-27、artist-credit「Oxmo Puccino」。證據：https://musicbrainz.org/release-group/b5110151-68b3-3f70-bd51-3e9c2d23de25 https://www.discogs.com/master/179751 https://www.abcdrduson.com/chroniques/opera-puccino/",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b5110151-68b3-3f70-bd51-3e9c2d23de25/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5947,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 4/4/2（Last.fm listeners 5947）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "叫好的 Opéra Puccino，八年後才賣成金唱片。Oxmo Puccino 生於馬利塞古，出自巴黎 19 區的饒舌集團 Time Bomb。他的首作《Opéra Puccino》1998 年 4 月由 Delabel 與 Time Bomb 發行，節拍全由 DJ Mars 與 DJ Sek 包辦。樂評稱它毫無疑問是經典，銷量卻走得慢，金唱片認證要等到 2006 年。封面上，他戴著一張面具。",
+    "sourceUrls": [
+     "https://fr.wikipedia.org/wiki/Oxmo_Puccino",
+     "https://fr.wikipedia.org/wiki/Op%C3%A9ra_Puccino",
+     "https://musicbrainz.org/release-group/b5110151-68b3-3f70-bd51-3e9c2d23de25",
+     "https://www.abcdrduson.com/chroniques/opera-puccino/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/00/4d/15004d05-87d8-3ca4-7ed5-f3129ce68554/mzaf_9393897255775548858.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1369254515",
+    "storefront": "FR",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple fr 1369254515「Oxmo Puccino《Opéra Puccino (Edition Collector)》」：曲目 17/18 對上 MB 原盤（Apple 共 39 軌），取第 1 軌〈Visions de vie (Remasterisé)〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Rohff",
+   "album": "La Vie avant la mort",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "961908c1-6e99-3322-8c99-57759cfeae59",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "法語嘻哈：Vitry-sur-Seine、Mafia K'1 Fry 成員 Rohff 的第二張專輯，〈Qui est l'exemple ?〉讓他從地下躍上主流；硬派的 banlieue 敘事與密集押韻，是 2000 年代初法國街頭饒舌的標竿。｜策展無疑點｜MB release-group 961908c1-6e99-3322-8c99-57759cfeae59：title「La Vie avant la mort」、Album、first-release-date 2001-09-11、artist-credit「Rohff」。證據：https://musicbrainz.org/release-group/961908c1-6e99-3322-8c99-57759cfeae59 https://www.discogs.com/master/97211 https://www.wikidata.org/wiki/Q958969",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/961908c1-6e99-3322-8c99-57759cfeae59/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 21942,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 3/3/2（Last.fm listeners 21942）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "初版第 10 軌是〈V〉，再壓時已換成另一首歌。童年在科摩羅度過的 Rohff，1989 年起住在 Vitry-sur-Seine；這位法國饒舌歌手 2001 年 9 月經 Hostile Records 與 Delabel 推出他的二專。〈V〉的歌詞指責警察濫權；到了 2002 年 8 月那一批再壓，第 10 軌的位置改放〈Get down samedi soir〉。單曲〈Qui est l'exemple ?〉則在 Top 50 連續三週拿下冠軍。",
+    "sourceUrls": [
+     "https://fr.wikipedia.org/wiki/Rohff",
+     "https://fr.wikipedia.org/wiki/La_Vie_avant_la_mort",
+     "https://musicbrainz.org/release-group/961908c1-6e99-3322-8c99-57759cfeae59"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/af/34/f1/af34f113-1d16-1731-3342-f976000068f4/mzaf_6891171981357968192.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "695752023",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 695752023「Rohff《La vie avant la mort》」：曲目 15/16 對上 MB 原盤（Apple 共 17 軌），取第 1 軌〈L'introhff〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Diam's",
+   "album": "Dans ma bulle",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c23d7036-7964-3625-9469-78e154cb6e3c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "法語嘻哈：Diam's 第三張專輯，〈La Boulette〉〈Jeune demoiselle〉橫掃電台，成為 2006 年法國最暢銷專輯之一並獲 Victoires de la musique 年度饒舌專輯——法語嘻哈最具影響力的女性 MC 代表作。｜⚠ Victoires 獎項名稱寫作階段再核｜MB release-group c23d7036-7964-3625-9469-78e154cb6e3c：title「Dans ma bulle」、Album、first-release-date 2006-02-06、artist-credit「Diam’s」。證據：https://musicbrainz.org/release-group/c23d7036-7964-3625-9469-78e154cb6e3c https://www.discogs.com/master/108435 https://www.wikidata.org/wiki/Q3015551",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c23d7036-7964-3625-9469-78e154cb6e3c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 78998,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 3/3/2（Last.fm listeners 78998）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Diam's 的冠軍單曲，唱到了巴黎郊區暴動。Diam's 在塞浦路斯出生、兩歲隨家人搬到巴黎，是以法文饒舌的女歌手，《Dans ma bulle》是她第三張專輯，2006 年 2 月由 EMI 發行。〈La Boulette〉4 月 8 日開售，拿下單曲榜冠軍；歌詞裡的暴動是 2005 年那一場，也點到 Sarkozy 的 racaille 說法。2007 年 1 月整張升上鑽石唱片，同年入圍 Victoires de la musique 的年度城市音樂專輯。",
+    "sourceUrls": [
+     "https://fr.wikipedia.org/wiki/Diam%27s",
+     "https://musicbrainz.org/release-group/c23d7036-7964-3625-9469-78e154cb6e3c",
+     "https://fr.wikipedia.org/wiki/La_Boulette",
+     "https://fr.wikipedia.org/wiki/Victoires_de_la_musique_2007"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/a1/05/34a1056e-fd3d-6811-7b34-3ba60eae2026/mzaf_6769650550782059129.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "693378524",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 693378524「Diam's《Dans ma bulle (Edition Collector)》」：曲目 21/21 對上 MB 原盤（Apple 共 21 軌），取第 1 軌〈Introduction〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kery James",
+   "album": "Si c'était à refaire...",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4198220c-6a5d-34e0-8bba-ec78cded43ff",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "法語嘻哈：前 Ideal J、Mafia K'1 Fry 核心 Kery James 的首張個人專輯，改信伊斯蘭後回望街頭暴力，〈28 décembre 1977〉等自傳式作品奠定他「法語饒舌良心」的地位。｜策展無疑點｜MB release-group 4198220c-6a5d-34e0-8bba-ec78cded43ff：title「Si c'était à refaire...」、Album、first-release-date 2001-10-25、artist-credit「Kery James」。證據：https://musicbrainz.org/release-group/4198220c-6a5d-34e0-8bba-ec78cded43ff https://www.discogs.com/master/156901 https://www.abcdrduson.com/chroniques/si-c-etait-a-refaire/",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4198220c-6a5d-34e0-8bba-ec78cded43ff/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 2215,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 4/5/2（Last.fm listeners 2215）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Kery James 拿掉管樂與弦樂，改用打擊樂和木琴。海地裔的 Kery James 生在瓜德魯普，七歲被父親送到法國本土；這樣的配器，出於他自己對宗教的詮釋。1999 年童年好友 Las Montana 遇害，Ideal J 解散，他暫別音樂，22 歲皈依伊斯蘭。2001 年 10 月 25 日經 WEA 推出的《Si c'était à refaire...》，是團散後的首張個人作。末曲〈28 décembre 1977〉長 9 分 41 秒，曲名就是他的生日。",
+    "sourceUrls": [
+     "https://fr.wikipedia.org/wiki/Kery_James",
+     "https://musicbrainz.org/release-group/4198220c-6a5d-34e0-8bba-ec78cded43ff",
+     "https://www.abcdrduson.com/chroniques/si-c-etait-a-refaire/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/14/b4/1f/14b41f07-a513-5de3-fd40-286024a98c50/mzaf_12632011688781918400.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1536174952",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1536174952「Kery James《Si c'était à refaire...》」：曲目 11/11 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Si c'était à refaire〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Damso",
+   "album": "Ipséité",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b61b58cb-2bf3-4363-bdb1-e2afb19f5287",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "法語嘻哈：布魯塞爾饒舌手 Damso 在 Booba 的 92i 旗下發行的第二張專輯，以陰暗內省與露骨自剖重寫法語 trap，〈Macarena〉大熱，是比利時饒舌崛起、反攻法國市場的里程碑。｜策展無疑點｜MB release-group b61b58cb-2bf3-4363-bdb1-e2afb19f5287：title「Ipséité」、Album、first-release-date 2017-04-28、artist-credit「Damso」。證據：https://musicbrainz.org/release-group/b61b58cb-2bf3-4363-bdb1-e2afb19f5287 https://www.wikidata.org/wiki/Q30738957 https://fr.wikipedia.org/wiki/Damso",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b61b58cb-2bf3-4363-bdb1-e2afb19f5287/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 106849,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 3/2/2（Last.fm listeners 106849）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "14 首歌用掉 14 個希臘字母，剩下 10 個留到四年後。生在金夏沙的 Damso 九歲到比利時，後來簽進 Booba 創辦的饒舌集團 92i 旗下；2017 年 4 月 28 日這天，二專《Ipséité》上架，廠牌同樣是 92i。沒用到的字母，補進了 2021 年 4 月 28 日的《QALF infinity》。盤名是現象學詞彙，意指自我的獨特性；歌裡他自剖當爸爸的恐懼，也談剛果出身。首週就在法國專輯榜奪冠，一年半後達到鑽石唱片。",
+    "sourceUrls": [
+     "https://fr.wikipedia.org/wiki/Damso",
+     "https://fr.wikipedia.org/wiki/Ips%C3%A9it%C3%A9",
+     "https://musicbrainz.org/release-group/b61b58cb-2bf3-4363-bdb1-e2afb19f5287"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/37/d6/57/37d65713-5f14-78fa-c50d-1711b2717922/mzaf_7109925248615807785.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1440888455",
+    "storefront": "FR",
+    "collectionExplicitness": "explicit",
+    "note": "Apple fr 1440888455「Damso《Ipséité》」：Apple fr 1440888455：藝人目錄查得，曲目與 MB 原盤逐首核對相符，取第 1 軌。，取第 1 軌〈Α. Nwaar Is The New Black〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "La Rumeur",
+   "album": "L'Ombre sur la mesure",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9e1975b8-292a-38a1-8504-8f150a7319f1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "法語嘻哈：La Rumeur（Hamé、Ekoué 等）的首張正式專輯：冷硬的 boom bap 與後殖民、警察暴力的政治批判，同期 Hamé 一篇文章引來內政部長期訴訟，使這張碟成為法國「politique」饒舌的代表。｜策展無疑點｜MB release-group 9e1975b8-292a-38a1-8504-8f150a7319f1：title「L’Ombre sur la mesure」、Album、first-release-date 2002-04、artist-credit「La Rumeur」。證據：https://musicbrainz.org/release-group/9e1975b8-292a-38a1-8504-8f150a7319f1 https://www.discogs.com/master/56779 https://www.wikidata.org/wiki/Q3204538",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9e1975b8-292a-38a1-8504-8f150a7319f1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 18698,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 18698）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一本附贈小冊裡的文章，讓內政部告了 Hamé 八年。La Rumeur 是 1995 年成形於巴黎西郊伊夫林省的饒舌團，四位饒舌手加兩位 DJ。2002 年 4 月，團體第一張全長專輯由 EMI Music France 推出，隨盤附一本 18 頁小冊；團員 Hamé 在文章裡寫，內政部的報告不會記下被警察打死的人。內政部以誹謗國家警察為由提告，2004 年一審判他無罪，之後幾度上訴，直到 2010 年最高法院駁回才結案。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/940680",
+     "https://www.discogs.com/master/56779",
+     "https://fr.wikipedia.org/wiki/L'Ombre_sur_la_mesure",
+     "https://fr.wikipedia.org/wiki/La_Rumeur_(groupe)",
+     "https://musicbrainz.org/release-group/9e1975b8-292a-38a1-8504-8f150a7319f1"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/4a/74/b7/4a74b789-5b60-eeef-e59b-674cf4917dec/mzaf_17636790733675299019.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "896712841",
+    "storefront": "FR",
+    "collectionExplicitness": "explicit",
+    "note": "Apple fr 896712841「La Rumeur《L'ombre sur la mesure》」：Apple fr 896712841：藝人目錄查得，曲目與 MB 原盤逐首核對相符，取第 1 軌。，取第 1 軌〈Entrée〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lunatic",
+   "album": "Mauvais œil",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "1d23a921-c604-3964-b942-69434fd0ac25",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "法語嘻哈：Booba 與 Ali 組成的 Lunatic 唯一一張專輯，由獨立廠牌 45 Scientific 自行發行仍賣出金唱片，陰鬱的製作與冷峻的街頭寫實被奉為法語 hardcore 饒舌的聖典。｜策展無疑點｜MB release-group 1d23a921-c604-3964-b942-69434fd0ac25：title「Mauvais Œil」、Album、first-release-date 2000-10-25、artist-credit「Lunatic」。證據：https://musicbrainz.org/release-group/1d23a921-c604-3964-b942-69434fd0ac25 https://www.discogs.com/master/97133 https://www.abcdrduson.com/chroniques/mauvais-oeil/",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1d23a921-c604-3964-b942-69434fd0ac25/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 4611,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 2/4/4（Last.fm listeners 4611）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Booba 與 Ali 的 Lunatic，只出過一張專輯。兩人 1994 年在巴黎西南郊的上塞納省組成這個法語饒舌團，1996 年投入 Time Bomb 旗下。2000 年 10 月，《Mauvais œil》交給 45 Scientific 這家獨立公司發行；出片後不久，兩人因理念分歧散夥，Booba 轉向個人生涯。製作人前後有六組，樂評聽到的卻是同一種聲音，壓迫感從頭貫穿到尾。走獨立發行，它仍拿下金唱片認證，法國榜最高是第 10 名。",
+    "sourceUrls": [
+     "https://fr.wikipedia.org/wiki/Mauvais_Œil_(album)",
+     "https://www.abcdrduson.com/chroniques/mauvais-oeil/",
+     "https://musicbrainz.org/release-group/1d23a921-c604-3964-b942-69434fd0ac25"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "Apple fr 藝人目錄無本盤（只有同名他團單曲）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Booba",
+   "album": "Panthéon",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a47efde0-ca84-34ee-8ac8-65b475166ade",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "法語嘻哈：Booba 第二張個人專輯（池中已有首張《Temps mort》），自家 Tallac 廠牌出品，確立他冷硬、格言式的寫法與商業主導地位，是 2000 年代法語饒舌由 boom bap 走向新街頭美學的轉捩點。｜策展無疑點｜MB release-group a47efde0-ca84-34ee-8ac8-65b475166ade：title「Panthéon」、Album、first-release-date 2004、artist-credit「Booba」。證據：https://musicbrainz.org/release-group/a47efde0-ca84-34ee-8ac8-65b475166ade https://www.discogs.com/master/97113 https://www.abcdrduson.com/chroniques/pantheon/",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2004,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a47efde0-ca84-34ee-8ac8-65b475166ade/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 24506,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 3/3/2（Last.fm listeners 24506）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "〈Tallac〉打頭陣，與 Booba 自家的廠牌同名。法國饒舌手 Booba 原是 Lunatic 的一員；2004 年 5 月上市的《Panthéon》是他單飛後第二張個人作，廠牌欄掛的正是 Tallac Records，再經 Barclay 發行。開場那首〈Tallac〉取樣了 Bernard Herrmann 的〈Max〉；〈Mon son〉用的則是 Toto〈Hold the Line〉。專輯在法國專輯榜攀上第 3 名，約一個月便達金唱片門檻。",
+    "sourceUrls": [
+     "https://fr.wikipedia.org/wiki/Panthéon_(album)",
+     "https://fr.wikipedia.org/wiki/Mauvais_Œil_(album)",
+     "https://www.discogs.com/release/2927904",
+     "https://musicbrainz.org/release-group/a47efde0-ca84-34ee-8ac8-65b475166ade"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4a/23/d4/4a23d480-c3f5-1921-54bb-4f977d7972ce/mzaf_4458323427419662114.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1443812873",
+    "storefront": "FR",
+    "collectionExplicitness": "explicit",
+    "note": "Apple fr 1443812873「Booba《Panthéon》」：Apple fr 1443812873：藝人目錄查得，曲目與 MB 原盤逐首核對相符，取第 1 軌。，取第 1 軌〈Tallac〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ärsenik",
+   "album": "Quelques gouttes suffisent…",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7e66079e-d7cc-35fc-b23a-bc868eaeed81",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "法語嘻哈：Villiers-le-Bel 兄弟 Lino 與 Calbo（Secteur Ä）的首張專輯，Lino 被公認為法語饒舌最強的技術型 MC 之一；本作贏得 1999 年 Victoires de la musique，是 90 年代末法國嘻哈黃金期的核心作品。｜⚠ Victoires 得獎項目與 Lino／Calbo 出身地（Villiers-le-Bel）寫作階段再核｜MB release-group 7e66079e-d7cc-35fc-b23a-bc868eaeed81：title「Quelques gouttes suffisent…」、Album、first-release-date 1998-06-08、artist-credit「Ärsenik」。證據：https://musicbrainz.org/release-group/7e66079e-d7cc-35fc-b23a-bc868eaeed81 https://www.discogs.com/master/140497 https://www.wikidata.org/wiki/Q3414136",
+    "queryAlias": "Arsenik"
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7e66079e-d7cc-35fc-b23a-bc868eaeed81/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 74,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 4/5/3（Last.fm listeners 74）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兄弟檔 Ärsenik 把 IAM 的一句刮進了自己的歌。Lino 與 Calbo 是兄弟，1992 年組了這個饒舌團，出身巴黎北郊的 Villiers-le-Bel。1998 年 6 月，首作由 Hostile Records／Delabel 端出，〈Partout la même〉刮的是那首〈Demain, c'est loin〉。製作多出自 Djimi Finger；專輯入圍 1999 年 Victoires de la musique 的饒舌／groove 專輯類。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1072703",
+     "https://fr.wikipedia.org/wiki/Ärsenik",
+     "https://fr.wikipedia.org/wiki/Victoires_de_la_musique_1999",
+     "https://musicbrainz.org/release-group/7e66079e-d7cc-35fc-b23a-bc868eaeed81"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b9/a7/c2/b9a7c2a5-4757-2dcb-3314-366019dab2c4/mzaf_13545842126897012544.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "710466738",
+    "storefront": "FR",
+    "collectionExplicitness": "explicit",
+    "note": "Apple fr 710466738「Ärsenik《Quelques gouttes suffisent》」：Apple fr 710466738：1998-11-24 原版 16 首，取第 1 軌。，取第 1 軌〈Intro〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "113",
+   "album": "Les Princes de la ville",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f5345164-322d-323c-ba76-12e836a07ff9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "法語嘻哈：Vitry-sur-Seine 三人組 113（Rim'K、AP、Mokobé）的首張專輯，〈Tonton du bled〉〈Les Princes de la ville〉把北非移民家庭的郊區生活帶進主流，2000 年拿下 Victoires de la musique 年度饒舌專輯與新人獎。｜策展無疑點｜MB release-group f5345164-322d-323c-ba76-12e836a07ff9：title「Les Princes de la ville」、Album、first-release-date 1999-10、artist-credit「113」。證據：https://musicbrainz.org/release-group/f5345164-322d-323c-ba76-12e836a07ff9 https://www.discogs.com/master/97184 https://www.radiofrance.fr/mouv/il-y-a-20-ans-113-sortait-l-un-des-plus-grands-albums-du-rap-francais-4827572",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f5345164-322d-323c-ba76-12e836a07ff9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 11332,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 2/4/2（Last.fm listeners 11332）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "113 的得獎唱片，為何在串流上消失了十五年？來自巴黎東南郊 Vitry-sur-Seine 的三人饒舌團 113，是 Mafia K'1 Fry 集團的一員。1999 年 10 月，唱片交由 Small 發行；問題出在取樣授權卡關，2009 至 2024 年各大串流都聽不到它，直到 DJ Mehdi 的紀錄片之後才重新上架。至於獎，是 2000 年 Victoires de la musique 的兩座：饒舌／reggae／groove 專輯，以及年度新人。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/580620",
+     "https://fr.wikipedia.org/wiki/Les_Princes_de_la_ville_(album)",
+     "https://www.discogs.com/master/97184",
+     "https://fr.wikipedia.org/wiki/Victoires_de_la_musique_2000",
+     "https://musicbrainz.org/release-group/f5345164-322d-323c-ba76-12e836a07ff9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "Apple fr 113 藝人目錄只有 2002 後專輯，無本盤。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Big Freedia",
+   "album": "Just Be Free",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e099adee-42aa-4a5c-b8dc-9c99fb6ae6ca",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "New Orleans／Bounce／No Limit／Cash Money：「Bounce 女王」Big Freedia 的首張正式錄音室專輯：把紐奧良 Triggerman 節拍、call-and-response 與 sissy bounce 帶上全國舞台，Pitchfork 7.8、Metacritic 79——bounce 走出地方派對的代表作。｜策展無疑點｜MB release-group e099adee-42aa-4a5c-b8dc-9c99fb6ae6ca：title「Just Be Free」、Album、first-release-date 2014-06-17、artist-credit「Big Freedia」。證據：https://musicbrainz.org/release-group/e099adee-42aa-4a5c-b8dc-9c99fb6ae6ca https://www.discogs.com/master/847266 https://en.wikipedia.org/wiki/Just_Be_Free_(Big_Freedia_album)",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e099adee-42aa-4a5c-b8dc-9c99fb6ae6ca/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 25316,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 3/3/2（Last.fm listeners 25316）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Big Freedia 讓 bounce 靠近了電音。本名 Freddie Ross Jr. 的 Big Freedia 1978 年生於紐奧良，1998 年先在 Katey Red 的 bounce 演出中當伴舞。2014 年 6 月，她用自創的廠牌 Queen Diva Music 發表《Just Be Free》，用意是把這種紐奧良的 bounce 帶向偏電音的主流聽眾。全張約 33 分鐘、共 10 首，製作主要交給 Thomas McElroy。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7027139",
+     "https://en.wikipedia.org/wiki/Just_Be_Free_(Big_Freedia_album)",
+     "https://en.wikipedia.org/wiki/Big_Freedia",
+     "https://www.discogs.com/master/847266",
+     "https://en.wikipedia.org/wiki/Bounce_music",
+     "https://musicbrainz.org/release-group/e099adee-42aa-4a5c-b8dc-9c99fb6ae6ca"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cf/89/1a/cf891a35-1d8f-81ef-7526-090164783020/mzaf_7681547870824502016.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "868127183",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 868127183「Big Freedia《Just Be Free》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Turn da Beat Up〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Partners-N-Crime",
+   "album": "Pump tha Party (Puttin' in Work)",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f5163d6f-e2ab-3bac-a0cf-efe2afec4bc9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "New Orleans／Bounce／No Limit／Cash Money：17th Ward 二人組 Kango Slimm 與 Mr. Meana 在紐奧良 bounce 重鎮 Big Boy Records 的專輯，同名〈Pump tha Party〉是 90 年代中期 bounce 派對的招牌曲，代表 Cash Money／No Limit 全國化之前的在地 bounce 現場。｜⚠ MB 掛名為 Partners-N-Crime featuring Prime Time；同期另有《PNC 3》《P.N.C》，選此張因同名曲最具代表性，研究層宜再核張數長度（MB 標 Album）｜MB release-group f5163d6f-e2ab-3bac-a0cf-efe2afec4bc9：title「Pump tha Party (Puttin' in Work)」、Album、first-release-date 1995、artist-credit「Partners‐N‐Crime feat. Prime Time」。證據：https://musicbrainz.org/release-group/f5163d6f-e2ab-3bac-a0cf-efe2afec4bc9 https://en.wikipedia.org/wiki/Partners-N-Crime",
+    "queryAlias": "PNC；Partners‐N‐Crime feat. Prime Time"
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f5163d6f-e2ab-3bac-a0cf-efe2afec4bc9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 12,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 12）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Precise 一人包下了製作、錄音與混音。紐奧良的饒舌搭檔 Partners-N-Crime 由 17th Ward 長大的 Kango Slimm 與 Mr. Meana 組成。1995 年，他們這張由 Kenner 的 Big Boy Records 發行；Precise 本名 Leroy Edwards，正是這家廠牌的三位創辦人之一。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/62efabbf-7e8f-437f-98cd-0c15d84b7080",
+     "https://www.discogs.com/release/3568132",
+     "https://en.wikipedia.org/wiki/Partners-N-Crime",
+     "https://en.wikipedia.org/wiki/Big_Boy_Records",
+     "https://en.wikipedia.org/wiki/PNC_3",
+     "https://musicbrainz.org/release/22e5f0f9-7f01-4ec1-96f0-6cba12255499",
+     "https://musicbrainz.org/release-group/f5163d6f-e2ab-3bac-a0cf-efe2afec4bc9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b0/17/31/b0173166-49e9-9e97-fb1a-3c80e1717bb0/mzaf_12553620564110109436.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1450895496",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 1450895496「Partners N Crime《Pump Tha Party》」：Apple us 1450895496：藝人目錄查得，曲目與 MB 原盤逐首核對相符，取第 1 軌。，取第 1 軌〈Handle That!〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "DJ Jubilee",
+   "album": "Take It to the St. Thomas",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "438c8d61-4f06-4171-99ce-d7c01d53e2ea",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "New Orleans／Bounce／No Limit／Cash Money：被認為最早在錄音中使用「twerk」一詞的 bounce 先驅 DJ Jubilee 的代表專輯，Take Fo' Records 出品並打進 Billboard R&B 專輯榜 #61，以 St. Thomas 國宅為名，是 bounce 舞曲化、指令式唱法的典範。｜策展無疑點｜MB release-group 438c8d61-4f06-4171-99ce-d7c01d53e2ea：title「Take It to the St. Thomas」、Album、first-release-date 1998、artist-credit「DJ Jubilee」。證據：https://musicbrainz.org/release-group/438c8d61-4f06-4171-99ce-d7c01d53e2ea https://en.wikipedia.org/wiki/DJ_Jubilee",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/438c8d61-4f06-4171-99ce-d7c01d53e2ea/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 131,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 131）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兩首同題的歌，誰抄了誰？自稱「King of Bounce」的 DJ Jubilee 出身紐奧良 St. Thomas 國宅區；他 1998 年在 Take Fo' Records 的專輯，收進 1997 年 11 月錄下的〈Back That Ass Up〉。同年 11 月 Juvenile 也出了〈Back That Azz Up〉，Take Fo' 的母公司為此提告。官司一路纏訟，2004 年 12 月 17 日判決出爐，上訴法院認定 Juvenile 的歌沒有侵權。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2412603",
+     "https://en.wikipedia.org/wiki/DJ_Jubilee",
+     "https://en.wikipedia.org/wiki/Back_That_Azz_Up",
+     "https://www.quimbee.com/cases/positive-black-talk-inc-v-cash-money-records-inc",
+     "https://en.wikipedia.org/wiki/Bounce_music",
+     "https://en.wikipedia.org/wiki/Take_Fo%27_Records",
+     "https://musicbrainz.org/release-group/438c8d61-4f06-4171-99ce-d7c01d53e2ea"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/33/74/ac337413-c64c-b0dd-66bb-451a646e4412/mzaf_3224869939931749912.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1460324671",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1460324671「DJ Jubilee《Take It to the St Thomas》」：曲目 11/15 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Take Fo' Mega Mix〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "U.N.L.V.",
+   "album": "6th & Baronne",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e8e76715-596b-466f-88b4-52e49585048b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "New Orleans／Bounce／No Limit／Cash Money：Cash Money 早期 bounce 招牌團 U.N.L.V.（Lil Ya、Tec-9、Yella Boy）的首張專輯，Mannie Fresh 操刀 bounce 節拍，雖只在地方流通卻被視為紐奧良饒舌經典——Cash Money 走向全國前的原點。｜⚠ 原提名 Magnolia Shorty《Monkey on tha D$ck》在 MB 為 EP，依規不收，改提本張｜MB release-group e8e76715-596b-466f-88b4-52e49585048b：title「6th & Baronne」、Album、first-release-date 1993、artist-credit「U.N.L.V.」。證據：https://musicbrainz.org/release-group/e8e76715-596b-466f-88b4-52e49585048b https://en.wikipedia.org/wiki/U.N.L.V._(group)",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1835095295",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/22/37/0d2237c4-5675-f821-679d-beb034151ad6/717340198471.png/600x600bb.jpg",
+    "note": "CAA release-group 404；取已釘定試聽的 Apple 1835095295 官方圖，主線 2026-10-22 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 563,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 3/5/2（Last.fm listeners 563）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "只在本地流通，卻替 Cash Money 打響名號。U.N.L.V. 的成員是 Lil Ya、Tec-9 與 Yella Boy，這個紐奧良三人組成團於 1992 年。隔年的《6th & Baronne》交給 1991 年創立的 Cash Money 發行，流通範圍就是紐奧良一地。11 軌的製作與混音，只掛 Mannie Fresh 一人。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/742298",
+     "https://en.wikipedia.org/wiki/U.N.L.V._(group)",
+     "https://en.wikipedia.org/wiki/Cash_Money_Records",
+     "https://musicbrainz.org/release/49465bdd-4b5e-4158-b1da-f6fb4235cfb3",
+     "https://musicbrainz.org/release/2773059b-4b1f-47e7-b755-a12b9d0e3d61",
+     "https://musicbrainz.org/release-group/e8e76715-596b-466f-88b4-52e49585048b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/2c/c6/042cc6bf-65a8-2905-3e72-65b8af9da231/mzaf_1791064319637120199.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1835095295",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 1835095295「U.N.L.V.《6th & Baronne》」：Apple us 1835095295：藝人目錄查得，曲目與 MB 原盤逐首核對相符，取第 1 軌。，取第 1 軌〈Crack out Show〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Soulja Slim",
+   "album": "Give It 2 'Em Raw",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "cf921860-9946-3079-b9a7-ab33b7360b69",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "New Orleans／Bounce／No Limit／Cash Money：Magnolia 國宅出身的 Soulja Slim 在 No Limit 的首張專輯，首週 Billboard 200 #13，生猛的街頭寫實讓他成為紐奧良最受敬重的硬派 MC 之一，是 No Limit 黃金期的核心作品。｜策展無疑點｜MB release-group cf921860-9946-3079-b9a7-ab33b7360b69：title「Give It 2 ’Em Raw」、Album、first-release-date 1998-05-19、artist-credit「Soulja Slim」。證據：https://musicbrainz.org/release-group/cf921860-9946-3079-b9a7-ab33b7360b69 https://en.wikipedia.org/wiki/Give_It_2_%27Em_Raw https://www.wikidata.org/wiki/Q5565622",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cf921860-9946-3079-b9a7-ab33b7360b69/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 47541,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 3/3/2（Last.fm listeners 47541）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "專輯空降第 13 名不久，Soulja Slim 就入獄了。1977 年出生的紐奧良人 Soulja Slim，1995 年一首歌收進 No Limit 合輯，外地聽眾才第一次聽到這位饒舌新人。1998 年 5 月 19 日掛 No Limit 與 Priority 交出的首作，空降的榜是 Billboard 200；入獄原因是違反假釋，他要到三年後才回 No Limit 出下一張。2003 年，他遭槍殺身亡。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Soulja_Slim",
+     "https://en.wikipedia.org/wiki/Give_It_2_%27Em_Raw",
+     "https://musicbrainz.org/release-group/cf921860-9946-3079-b9a7-ab33b7360b69"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/06/c0/81/06c08181-fca4-8fd0-8595-fefb39d6b6b0/mzaf_1175633399336214420.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "718998678",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 718998678「Soulja Slim《Give It 2 'Em Raw》」：Apple us 718998678：藝人目錄查得，曲目與 MB 原盤逐首核對相符，取第 1 軌。，取第 1 軌〈From What I Was Told〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mia X",
+   "album": "Unlady Like",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e36105a5-6b81-306e-a694-b34455fc7349",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "New Orleans／Bounce／No Limit／Cash Money：No Limit「第一夫人」Mia X 的第二張專輯，Beats By the Pound 製作、Billboard 200 #21 並獲 RIAA 金唱片，是紐奧良女性饒舌的代表作。｜策展無疑點｜MB release-group e36105a5-6b81-306e-a694-b34455fc7349：title「Unlady Like」、Album、first-release-date 1997-06-24、artist-credit「Mia X」。證據：https://musicbrainz.org/release-group/e36105a5-6b81-306e-a694-b34455fc7349 https://en.wikipedia.org/wiki/Unlady_Like",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e36105a5-6b81-306e-a694-b34455fc7349/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5347,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 3/4/2（Last.fm listeners 5347）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "No Limit 簽下的第一位女饒舌手，原是唱片行的店員。早在 1992 年間，Mia X 已以回敬 39 Posse 的單曲出道。1995 年 Master P 到 Peaches Records and Tapes 打聽本地女饒舌手，找到了在店裡上班的她。1997 年 6 月 24 日鋪貨的《Unlady Like》，製作是 Beats By the Pound，客座幾乎是 No Limit 全員。它登上 Billboard 200 第 21 名，RIAA 也頒了金唱片。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mia_X",
+     "https://en.wikipedia.org/wiki/Unlady_Like",
+     "https://musicbrainz.org/release-group/e36105a5-6b81-306e-a694-b34455fc7349"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/6d/73/336d73b1-15d2-dd37-9756-ab18f795bd48/mzaf_2640531495896543106.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "713538574",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 713538574「Mia X《Unlady Like》」：Apple us 713538574：藝人目錄查得，曲目與 MB 原盤逐首核對相符，取第 1 軌。，取第 1 軌〈You Don't Wanna Go 2 War〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Turk",
+   "album": "Young & Thuggin'",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d25b6b02-f27a-3a10-b9e9-6a70262e01bd",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "New Orleans／Bounce／No Limit／Cash Money：Hot Boys 成員 Turk 的首張個人專輯，Mannie Fresh 包辦全部製作、Billboard 200 #9，是 Cash Money 千禧年鼎盛期 Hot Boys 系個人專輯的代表。｜策展無疑點｜MB release-group d25b6b02-f27a-3a10-b9e9-6a70262e01bd：title「Young & Thuggin’」、Album、first-release-date 2001-06-05、artist-credit「Turk」。證據：https://musicbrainz.org/release-group/d25b6b02-f27a-3a10-b9e9-6a70262e01bd https://en.wikipedia.org/wiki/Young_%26_Thuggin%27",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d25b6b02-f27a-3a10-b9e9-6a70262e01bd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2754,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 2/5/2（Last.fm listeners 2754）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "21 軌之間，穿插著 Mannie Fresh 參與的短劇。Cash Money 旗下團體 Hot Boys 的成員 Turk 出身紐奧良，當初是 Birdman 在街區派對上聽到他對饒舌，才把他挖掘出來。2001 年 6 月 5 日現身的個人首作由 Cash Money 發行，整張由 Mannie Fresh 製作；客座有 B.G.、Lil Wayne 與 Big Tymers。專輯登上 Billboard 200 第 9 名，在 R&B／嘻哈榜則是第 2 名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Turk_(rapper)",
+     "https://en.wikipedia.org/wiki/Young_%26_Thuggin%27",
+     "https://musicbrainz.org/release-group/d25b6b02-f27a-3a10-b9e9-6a70262e01bd"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6a/90/d9/6a90d930-7637-7f2c-9e9b-ea0cd6517573/mzaf_4962669388236178090.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1453777410",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 1453777410「Turk《Young & Thuggin'》」：Apple us 1453777410：藝人目錄查得，曲目與 MB 原盤逐首核對相符，取第 1 軌。，取第 1 軌〈Intro (feat. Big Tymers) [Skit]〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "SpaceGhostPurrp",
+   "album": "Mysterious Phonk: The Chronicles of SpaceGhostPurrp",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f531247d-5948-4e49-916d-6e4b68e7adef",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cloud／Emo Rap：Raider Klan 首腦 SpaceGhostPurrp 由 4AD 發行的唯一正式專輯，把 Memphis 卡帶饒舌的陰森取樣、低保真與 phonk 美學整理成定本，是 cloud rap 與日後 phonk 熱潮的源頭之一。｜策展無疑點｜MB release-group f531247d-5948-4e49-916d-6e4b68e7adef：title「Mysterious Phonk: The Chronicles of SpaceGhostPurrp」、Album、first-release-date 2012-06-11、artist-credit「SpaceGhostPurrp」。證據：https://musicbrainz.org/release-group/f531247d-5948-4e49-916d-6e4b68e7adef https://www.bbc.co.uk/music/reviews/prq4 https://rateyourmusic.com/release/album/spaceghostpurrp/mysterious_phonk__the_chronicles_of_spvcxxghxztpvrrp/",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f531247d-5948-4e49-916d-6e4b68e7adef/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 64180,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 3/3/4（Last.fm listeners 64180）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "邁阿密的混音帶，重混之後交給英國的 4AD 出版。被視為 phonk 先驅的饒舌手 SpaceGhostPurrp 來自邁阿密 Carol City，2008 年組了團體 Raider Klan。他和 4AD 簽的是一次性合約，時間在 2012 年初；重混的對象是自己早期混音帶裡的歌，成品就是他的出道之作，當年 6 月出版。曲子全由他自己寫作與製作，取樣用到火車汽笛，也用到《Mortal Kombat》這類電玩的音效。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/SpaceGhostPurrp",
+     "https://en.wikipedia.org/wiki/Mysterious_Phonk:_Chronicles_of_SpaceGhostPurrp",
+     "https://musicbrainz.org/release-group/f531247d-5948-4e49-916d-6e4b68e7adef"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/25/ae/ab/25aeabe4-2a76-4ba4-f93a-6615a96dff10/mzaf_11686761487332272770.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "529228634",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 529228634「SpaceGhostPurrp《Mysterious Phonk: The Chronicles of SpaceGhostPurrp (Bonus Track Version)》」：Apple us 529228634：2012 原版（Bonus Track Version，非 Instrumental 版），取第 1 軌。，取第 1 軌〈Mystikal Maze〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "BONES",
+   "album": "Garbage",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ca4148f0-ed21-46f8-ae7a-c591f2d2142e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cloud／Emo Rap：TeamSESH 創辦人 BONES 第一張引來 Complex、The Fader 等主流媒體注意的專輯（The Fader 稱其 boundary-pushing），陰鬱 lo-fi 製作與 DIY 自發行模式是 SoundCloud 地下 emo／cloud rap 的範本。｜⚠ BONES 作品極多，選 Garbage 依維基「首張獲主流媒體關注」；MB 掛名大寫 BONES｜MB release-group ca4148f0-ed21-46f8-ae7a-c591f2d2142e：title「Garbage」、Album、first-release-date 2014-06-08、artist-credit「BONES」。證據：https://musicbrainz.org/release-group/ca4148f0-ed21-46f8-ae7a-c591f2d2142e https://en.wikipedia.org/wiki/Bones_(rapper)",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ca4148f0-ed21-46f8-ae7a-c591f2d2142e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 104841,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 2/2/2（Last.fm listeners 104841）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "九歲那年，BONES 用 iMac 內建麥克風錄起饒舌。這位密西根長大的饒舌手用的是父親的 iMac G3，16 歲輟學後搬到洛杉磯。2012 至 2014 年間他一口氣發了 12 張專輯，直到 2014 年 6 月經 TeamSESH 推出的《Garbage》，才是第一張引來大型音樂媒體注意的作品。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Bones_(rapper)",
+     "https://musicbrainz.org/release-group/ca4148f0-ed21-46f8-ae7a-c591f2d2142e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "Apple us 1447554353 條目存在但 us／jp 皆不回傳曲目（無可播試聽）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Xavier Wulf",
+   "album": "Project X",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d43adc4c-e8a7-4d3a-9753-1912b7da70e5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cloud／Emo Rap：前 Raider Klan、Seshollowaterboyz 成員、Memphis 出身的 Xavier Wulf 首張完整長度作品，把 Memphis 陰森節拍與 cloud rap 的飄浮質地接在一起，是南方地下 cloud rap 的代表。｜⚠ MB 標 Mixtape/Street（維基稱 first full-length album）；2024 年有性侵等指控、被多場演出除名，上架前請主線斟酌｜MB release-group d43adc4c-e8a7-4d3a-9753-1912b7da70e5：title「Project X」、Album＋Mixtape/Street、first-release-date 2015-06-02、artist-credit「Xavier Wulf」。證據：https://musicbrainz.org/release-group/d43adc4c-e8a7-4d3a-9753-1912b7da70e5 https://en.wikipedia.org/wiki/Xavier_Wulf",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d43adc4c-e8a7-4d3a-9753-1912b7da70e5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 238660,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 2/2/3（Last.fm listeners 238660）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Ethelwulf 這名字，留在了 Raider Klan。孟菲斯饒舌手 Xavier Wulf 早年用的是 Ethelwulf 之名，2012 年加入 Raider Klan 時如此，首支混音帶也掛著它。2013 年他離團，改用現名。2015 年 6 月 2 日獨自以數位上架的《Project X》，正是他換名之後頭一部完整長度的作品；隔年 Hollow Squad 再發了一版。曲名裡有〈Akina Speed Star〉與〈Wulf Takahashi〉，低音沉，節奏慢。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Xavier_Wulf",
+     "https://en.wikipedia.org/wiki/Bones_(rapper)",
+     "https://musicbrainz.org/release-group/d43adc4c-e8a7-4d3a-9753-1912b7da70e5",
+     "https://www.discogs.com/master/1166760-Xavier-Wulf-Project-X"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d8/5e/52/d85e5210-f62a-3148-9d4e-261dbdd20af5/mzaf_12551125644960391475.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1247620259",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 1247620259「Xavier Wulf《Project X》」：Apple us 1247620259：藝人目錄查得，曲目與 MB 原盤逐首核對相符（2016 EMPIRE 重發 7 首版（研究層 e 組：原 2015 自發行 10 首），曲目為原版子集），取第 1 軌。，取第 1 軌〈Akina Speed Star〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lil Tracy",
+   "album": "Anarchy",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ba0108c5-9592-4b5e-bb54-8517008304a7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cloud／Emo Rap：GothBoiClique 成員、Lil Peep〈Awful Things〉搭檔 Lil Tracy 的首張專輯，獻給 Lil Peep，把 emo、pop-punk 吉他與 trap 唱腔融合，是 emo rap 世代的代表作之一。｜⚠ 維基列 2014《e m o c e a n》為第一張 studio album，但稱 Anarchy 為 debut album；另一候選為 2017 mixtape《Life of a Popstar》｜MB release-group ba0108c5-9592-4b5e-bb54-8517008304a7：title「Anarchy」、Album、first-release-date 2019-09-20、artist-credit「Lil Tracy」。證據：https://musicbrainz.org/release-group/ba0108c5-9592-4b5e-bb54-8517008304a7 https://en.wikipedia.org/wiki/Lil_Tracy",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ba0108c5-9592-4b5e-bb54-8517008304a7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 192134,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 2/2/2（Last.fm listeners 192134）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Lil Tracy 的專輯，獻給了 Lil Peep。Lil Tracy 的父親是 Digable Planets 的 Ishmael Butler，母親是 SWV 的 Coko。Lil Peep 是他在 GothBoiClique 認識的饒舌搭檔，已經過世；2019 年 9 月的《Anarchy》是為他而做，也被看作 Lil Tracy 正式出道的專輯。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Lil_Tracy",
+     "https://www.discogs.com/master/1624904-Lil-Tracy-Anarchy",
+     "https://en.wikipedia.org/wiki/SpaceGhostPurrp",
+     "https://musicbrainz.org/release-group/ba0108c5-9592-4b5e-bb54-8517008304a7"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ff/2f/6a/ff2f6ab3-b4f1-f182-2e35-83501e02fbe8/mzaf_5129589459905071355.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1482153258",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 1482153258「Lil Tracy《Anarchy》」：Apple us 1482153258：2019-09-20 原版 9 首，取第 1 軌。，取第 1 軌〈Alone In My Castle〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ecco2k",
+   "album": "E",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4d5b83dc-85b6-42c6-977e-46dd9e9d8e58",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cloud／Emo Rap：Drain Gang 成員 Ecco2k 的首張個人專輯，Whitearmor 與 Gud 監製，以失真人聲、ambient 與未來感 pop 把 cloud rap 推向前衛，Pitchfork 7.4、The Fader 列為 2019 年代表作。｜策展無疑點｜MB release-group 4d5b83dc-85b6-42c6-977e-46dd9e9d8e58：title「E」、Album、first-release-date 2019-11-27、artist-credit「Ecco2k」。證據：https://musicbrainz.org/release-group/4d5b83dc-85b6-42c6-977e-46dd9e9d8e58 https://en.wikipedia.org/wiki/E_(Ecco2k_album)",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4d5b83dc-85b6-42c6-977e-46dd9e9d8e58/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 1,
+    "accessibility": 4,
+    "listeners": 526035,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 3/1/4（Last.fm listeners 526035）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 1、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "辭掉設計師正職後，Ecco2k 在六座城市錄完《E》。藝名取自電玩《Ecco the Dolphin》的 Ecco2k，是斯德哥爾摩嘻哈集團 Drain Gang 的創始成員之一。2018 年冬天，他辭去 Eytys 的設計與修圖工作，專心做專輯。錄音地點橫跨斯德哥爾摩、柏林、洛杉磯、倫敦、Falun 與曼谷，期間刻意和朋友隔離。2019 年 11 月 27 日突襲上架，是 Year0001 推出的驚喜專輯；〈Peroxide〉唱的是他自己的膚色。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Ecco2k",
+     "https://en.wikipedia.org/wiki/E_(Ecco2k_album)",
+     "https://musicbrainz.org/release-group/4d5b83dc-85b6-42c6-977e-46dd9e9d8e58"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3d/aa/4f/3daa4fd3-5370-3e91-a67f-143dcd22d248/mzaf_8573080612013802716.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1623781078",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 1623781078「Ecco2k《E》」：Apple us 1623781078：藝人目錄查得，曲目與 MB 原盤逐首核對相符，取第 1 軌。，取第 1 軌〈Aaa Powerline〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "$uicideboy$",
+   "album": "I Want to Die in New Orleans",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "beed277a-c190-42db-86c7-446a39f6a5fd",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cloud／Emo Rap：紐奧良表兄弟 Ruby da Cherry 與 $crim 的首張正式錄音室專輯，自家 G*59 發行、打進 Billboard 200 前十，以 Memphis 低音、陰暗 trap 與憂鬱自毀主題成為南方地下 emo／cloud rap 最大的商業突破。｜⚠ Billboard 200 名次寫作階段再核｜MB release-group beed277a-c190-42db-86c7-446a39f6a5fd：title「I Want to Die in New Orleans」、Album、first-release-date 2018-09-07、artist-credit「$uicideboy$」。證據：https://musicbrainz.org/release-group/beed277a-c190-42db-86c7-446a39f6a5fd https://www.discogs.com/master/1429766 https://www.allmusic.com/album/mw0003200886",
+    "queryAlias": "Suicideboys"
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/beed277a-c190-42db-86c7-446a39f6a5fd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 4,
+    "listeners": 418192,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "note": "機器基線 4/2/4（Last.fm listeners 418192）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "預告時的盤名，原本多了一個 Don't。紐奧良表兄弟 $crim 與 Ruby da Cherry 在 2013 年組成饒舌二人組 $uicideboy$。2017 年 2 月，$crim 預告的盤名是《I Don't Want to Die in New Orleans》。等到 2018 年 9 月，首張正式專輯交由兩人自營的公司出版，14 首全由 $crim 製作，打進 Billboard 200 前十。內容圍繞著憂鬱、藥物與自殺意念。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Suicideboys",
+     "https://en.wikipedia.org/wiki/I_Want_to_Die_in_New_Orleans",
+     "https://musicbrainz.org/release-group/beed277a-c190-42db-86c7-446a39f6a5fd"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fe/af/4d/feaf4dba-3b90-31a7-fea6-0772d2903608/mzaf_6615952569100411646.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-22T03:26:29Z",
+    "appleCollectionId": "1549337069",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 1549337069「$uicideboy$《I Want to Die in New Orleans》」：Apple us 1549337069：藝人目錄查得，曲目與 MB 原盤逐首核對相符，取第 1 軌。，取第 1 軌〈King Tulip〉。主線 2026-10-22 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}
