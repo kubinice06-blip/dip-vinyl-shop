@@ -14,3 +14,12 @@
 - **留下的邊緣張**（研究層要特別寫聲音事實）：Braxton《Six Compositions: Quartet》（Ed Blackwell 鼓帶紐奧良彈性，z）、Paul Bley《Barrage》（Graves 鼓密、Allen 尖嘯，y）、George Russell《The Stratus Seekers》、Joe Harriott 兩張（z −0.4）、Revolutionary Ensemble《The People's Republic》（x 依曲目起伏）。
 - 年份：照原盤首發年；MB release-group 日期是 CD 再版的（Warne Marsh《Ne Plus Ultra》MB 2006、George Russell《The Outer View》《The Stratus Seekers》MB 1991）照原盤 1970／1962。
 - 研究層每支 WebSearch ≤3；facts 必含 2–3 條聲音事實（速度、編制、音色、錄音）；聽起來偏暖（swing 律動、藍調味、抒情慢板）或偏靜、偏重的標「moodGuess 存疑」。
+
+## 研究 a 組
+- 11161：Tristano《Note to Note》curatorWhy 寫「晚年與 Sonny Dallas 家中疊錄三重奏」不實：Discogs 載明原帶是 1964-65 鋼琴＋貝斯，1993 年才由 Carol Tristano 補鼓；facts 照 Discogs，年份 1993 沿用。
+- 11162：Tristano《New York Improvisations》Discogs 鼓手拼 Tom Wayburn、維基拼 Weyburn；facts 用 Discogs 拼法並註明。速度與單／立體聲查無來源，不寫。
+- 11163：Marsh《Ne Plus Ultra》年份照原盤 1970（Revelation REV-12），MB 2006 是 hatOLOGY CD；編制 Marsh 次中音＋Gary Foster 中音＋Parlato＋Tirabasso，錄於 Occidental College 的 Herrick Chapel Lounge。moodGuess 輕度存疑（Fordham 提「穩定鼓點律動」）。
+- 11164：Braxton《Eight (+3)》moodGuess **明顯存疑**：Jurek 評「lyrical brilliance and subtle grace」、全盤約 75 分鐘、含兩首抒情標準曲、McBee／Cyrille 屬有彈性的律動組，偏暖偏靜；建議主線列汰換候選。
+- 11165：Braxton《Five Pieces 1975》輕度存疑（Wheeler 富魯格號偏暖、首曲為標準曲）；速度無來源。
+- 11166：Braxton《Six Compositions: Quartet》輕～中度存疑（Blackwell 鼓、鋼琴）；維基總長 33:41 與 Discogs 曲長加總 41:33 不符，採 Discogs。
+- 11167：研究層刪除自己寫入但未抓取驗證的條目（Peter Ind 生平、Circle 校友、Blackwell／Davis 生平、Antilles 屬 Island），寧缺勿錯；聲音事實以樂評與 Discogs 能證者為限，各盤速度（BPM）全數查無。WebSearch 用 2 次。
