@@ -50,6 +50,14 @@
 | +2 | 失真牆、噪、低頻淹沒、糊到分不出樂器 | Pole、MBV、Sunn O)))、Merzbow、龐克 |
 硬規則：看低頻、失真、殘響、壓縮，**不看「重不重要」也不看硬蕊度**；2000 年後母帶音壓高是年代效應，不算重；
 流行取樣 hip-hop（De La Soul）是 0，不因為是 hip-hop 就 +1。
+**2026-10-22 店主改標準——暖慢的「包覆感」算重**（店主：「落日飛車確實是恍惚（dream pop 大部分也都是恍惚）」）：
+質地不只看失真與髒，也看**聲音是不是一層把人包住的霧**。下列四種，就算沒有失真也給 **+0.6～+1.3**：
+(1) **dream pop／shoegaze** 的殘響霧與柔牆（Beach House、Cocteau Twins、Mazzy Star、Slowdive 一類，大部分都算）；
+(2) **chorus／reverb 夢幻吉他＋厚合成器墊的軟搖滾、AOR、city pop 慢歌**（落日飛車、Men I Trust、Mac DeMarco 偏濕的那幾張）；
+(3) **慢板靈魂樂／quiet storm／neo-soul** 的厚低頻、弦樂墊、溫熱混響（Marvin Gaye《Let's Get It On》、Al Green、Anita Baker、Sade、D'Angelo）；
+(4) **chillwave／lo-fi R&B** 的糊濾波與磁帶飽和。
+仍然算**輕**的：乾淨、空氣感、聲部分明——bossa、原聲民謠、Motown 與 disco 的快歌、乾淨明亮的 city pop 快歌（山下達郎《For You》維持 −1）、cool jazz。
+判準一句話：**閉上眼是「被裹住、霧濛濛」→ 重；是「看得清每件樂器、有空氣」→ 輕。** 能量與色溫不因此改。
 
 **Z 色溫（冷 −2 ↔ 暖 +2）**：「這張盤的世界是暖的還是冷的」
 | 分 | 聽起來 | 例 |
@@ -114,7 +122,7 @@
 | Fishmans《Long Season》 | 2.3 | +1.0 | +0.8 | 恍惚 |
 | The Beatles《Abbey Road》 | 3.1 | 0.0 | +1.0 | 雀躍 |
 | Stevie Wonder《Songs in the Key of Life》 | 3.3 | +0.2 | +1.8 | 雀躍 |
-| Marvin Gaye《Let's Get It On》 | 2.8 | +0.3 | +1.8 | 放鬆 |
+| Marvin Gaye《Let's Get It On》 | 2.8 | +0.8 | +1.8 | 恍惚 |
 | Simon & Garfunkel《Bridge over Troubled Water》 | 2.7 | -0.8 | +1.0 | 放鬆 |
 | The Beach Boys《Pet Sounds》 | 2.9 | -0.4 | +1.0 | 放鬆 |
 | Miles Davis《Kind of Blue》 | 2.6 | -0.9 | -0.2 | 平靜 |
@@ -123,7 +131,7 @@
 | De La Soul《3 Feet High and Rising》 | 3.4 | 0.0 | +1.8 | 雀躍 |
 | 周杰倫《葉惠美》 | 3.2 | +0.2 | +0.6 | 雀躍 |
 | 羅大佑《之乎者也》 | 3.0 | -0.2 | 0.0 | 雀躍 |
-| 落日飛車 Sunset Rollercoaster《Jinji Kikko》 | 2.8 | +0.2 | +1.6 | 放鬆 |
+| 落日飛車 Sunset Rollercoaster《Jinji Kikko》 | 2.8 | +0.8 | +1.6 | 恍惚 |
 | 細野晴臣《Hosono House》 | 2.6 | -0.8 | +1.3 | 放鬆 |
 | はっぴいえんど《風街ろまん》 | 3.0 | -0.5 | +0.6 | 雀躍 |
 | Radiohead《OK Computer》 | 3.0 | +0.9 | -1.4 | 亢奮 |

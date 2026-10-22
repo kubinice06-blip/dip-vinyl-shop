@@ -986,3 +986,28 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 審稿修 1 處：「2023 年疫情解封後首度出國」→「2023 年疫情解封後的海外首站是香港」。來源（VERSE、MeMeOn）只說解封後海外首站是香港，沒說之前沒出過國。
 - 保留：〈我想和你一起〉900 萬點閱（中文維基引 VERSE，非獨立來源；樂團走紅核心，必要例外，寫成「後來」）；2023 夏中國 11 城（MeMeOn＋中文維基）。
 - 不寫：2026-12-25 香港麥花臣場（尚未發生）、新專輯《House Of》（未發行、單源）、成員加入先後（兩源不一）、獎項（查無金曲／金音紀錄）、製作人姓名（未證）。
+
+## ar-d-129（2026-10-22，薄細項策展線 ts1–ts11 補介紹：越南、柬埔寨、菲律賓、泰國、馬來西亞、新加坡搖滾）
+
+- 40 位上架（30 full、10 thin：Chillies、Thủy Triều Đỏ、Sàigòn Soul Revival、Raditori、Wolfgang、Parokya ni Edgar、The Jerks、Humpback Oak、Western Union Band、Wings (Malaysia)），0 位不寫。補洞 WebSearch 每位 ≤2 次。
+- 主線審稿修 5 位：Microwave「最好入耳」改「最易入耳」；Parokya ni Edgar 原稿只有英文維基一源，主線補 iHeart 樂團簡介（雅典耀高中、前身 Comic Relief 專唱惡搞翻唱）為第二源，刪團名由來（單源）、改寫成 139 字；Loso 刪「被視為泰國唱片業的紀錄」（維基單源、意思含糊）；Moderndog 末句四重轉述的讚詞壓成一句；Humpback Oak「從餘燼中組成的新樂團」改「樂團散夥後，Leslie Low 另組 The Observatory」。
+- 截止日後事實：Up Dharma Down〈Tadhana〉2026 年 2 月成為首首 Spotify 破 5 億次的菲律賓錄音，Philstar 2026-02-15 報導＋英文維基兩源，保留。
+- 保留：Silly Fools《Mint》卡帶逾百萬卷（MGR Online＋維基兩源；「起初銷量不如 Loso、後來翻身」是這團的故事核心，必要例外）；bodyslam 2010 拉加曼加拉體育場「當時泰國規模最大的演唱會」（The Standard＋維基）；The Quests〈Shanty〉首首登上新加坡榜首的本地樂團歌（維基＋NLB BiblioAsia）；IV of Spades〈Mundo〉Spotify Viral 50 第一（破圈核心）。
+- 不寫：Cambodian Space Project 主唱 Channthy Kak 2018 年辭世（只在 notes；主線派工特注誤寫成 2023，補洞層已更正）；Bức Tường 早期銷量與到場人數、Loso 逾百萬卷、Ngọt CD 銷量、Wolfgang 白金、各團單源的「第一支」（The Jerks、Microwave、Electrico、The Great Spy Experiment SXSW）。
+- 身分：Microwave（微波）、Slot Machine（賭博機）、Wolfgang（人名頁）維基預抓錯頁已作廢；Western Union Band 經 Reggie Verghese 條目確認是新加坡同名團。
+- 已上線專輯簡介待修（pubIssues）：Thủy Triều Đỏ 成軍年 1998／1999、The Great Spy Experiment 成軍年、Rusty Blade「Stadium Negara 場場爆滿」、The Jerks NU Rock 得獎專輯；Butterfingers「demo 被誤認為 Nirvana 未發行專輯」查無來源。
+
+## ar-d-130（2026-10-22，薄細項策展線 ts1–ts11 補介紹：馬來西亞、南亞、蒙古、印尼搖滾、剛果倫巴）
+
+- 39 位上架（31 full、8 thin：Exists、Slam、Strings、Fuzön、Avial、The Local Train、Nepathya、Efek Rumah Kaca），1 位不寫：Noori（事實全出自英文維基一源，第二源五次抓取全失敗，未達兩源；比照 ar-d-125 jinsang 的 skipped 先例）。
+- 主線審稿修 8 位：Hurd 刪《紐約時報》具名與拘留人數、到場人數細節，留「巡演最後一站被警方取消、聽眾遭驅散」；Bozi Boziana 刪 1999 Kora 獎（兩源同屬維基、年份對應不明）；Kanda Bongo Man 刪中央公園「約兩萬五千人」（單源數字），改寫成錄成現場專輯；Efek Rumah Kaca「媒體常稱」改「被稱為」；Exists 句構改正並壓到 156 字；The HU、Seringai、The SIGIT 補半形空格。
+- 截止日後事實：Warfaze 2026 年獲 Ekushey Padak，主線 WebSearch 核實（The Daily Star、TBS News、Dhaka Tribune：2 月 5 日公布、26 日頒發），保留。
+- 放寬額度：Zaïko Langa Langa 262 字（cavacha 由來＋Clan Langa Langa 支系是份量核心）、Sam Mangwana 265 字（安哥拉身世故事是主體），照留。
+- 保留：Sheila on 7〈Dan〉MTV Ampuh 連 29 週第一與「百萬張樂團」稱號（Pantau＋印尼文維基；份量核心）；1974 AD Rock Yatra 約 6 萬人（Himalayan Times＋Kathmandu Post）；Koffi Olomidé 入選《1001 Albums You Must Hear Before You Die》（writer-base 具名書目例外）；Tshala Muana 2022、Pépé Kallé 1998 只寫辭世年。主線派工特注把 Tshala Muana 誤寫成 2024，補洞層照來源更正為 2022。
+- 不寫：Koffi Olomidé 法律爭議、「首位 Bercy 售罄」；Vital Signs、Indus Creed、Haranga、Warfaze、Fuzön 單源「第一」；1974 AD「唯一填滿最大體育場」；Seringai Ricky Siahaan 2025 辭世（單源）；Junaid Jamshed 辭世。
+- 身分：Avial（菜餚）、Navicula（矽藻屬）維基預抓錯頁已作廢；1974 AD 確認是尼泊爾樂團。
+- 已上線專輯簡介待修（pubIssues）：Estranged〈Itu Kamu〉AJL 年份（2007→第 22 屆／2008）、Peter Cat 團名「借自村上春樹」過強、Hurd 呼和浩特日期與警力人數、Haranga 贊助商寫法、Warfaze Maqsud 身分、Dewa 19《Terbaik Terbaik》發行日、M'bilia Bel「結婚」應為訂婚、Nyboma「1972 年起在 Verckys 旗下」無出處。
+
+## ts1–ts11 補介紹（ar-d-129～130）小結
+
+- 80 位排入 2 批，79 位上架（61 full、18 thin）、1 位不寫；藝人介紹 6,098 → 6,177。審稿合計修 13 位。ar-d-131～134 留給下一個工作階段。

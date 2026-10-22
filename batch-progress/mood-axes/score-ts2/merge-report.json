@@ -1,15 +1,15 @@
 {
  "n": 90,
- "reviewed": 0,
+ "reviewed": 1,
  "errors": [],
  "conf": {
   "low": 38,
   "mid": 52
  },
  "cells": {
-  "放鬆": 11,
+  "放鬆": 10,
   "平靜": 12,
-  "恍惚": 6,
+  "恍惚": 7,
   "頹靡": 9,
   "雀躍": 19,
   "冷冽": 0,
@@ -24,7 +24,7 @@
    "max": 4.5
   },
   "y": {
-   "mean": 0.31,
+   "mean": 0.32,
    "sd": 0.76,
    "min": -1.3,
    "max": 1.8
@@ -42,7 +42,7 @@
    "sd": 1.1
   },
   "y": {
-   "mean": 0.52,
+   "mean": 0.54,
    "sd": 1.17
   },
   "z": {
@@ -54,16 +54,16 @@
   "x~classic": 0.22,
   "x~obscurity": -0.1,
   "x~accessibility": -0.09,
-  "y~classic": -0.22,
-  "y~obscurity": -0.08,
-  "y~accessibility": 0.36,
+  "y~classic": -0.2,
+  "y~obscurity": -0.06,
+  "y~accessibility": 0.33,
   "z~classic": 0.34,
   "z~obscurity": 0.07,
   "z~accessibility": -0.75
  },
  "axisCorr": {
-  "x~y": 0.31,
+  "x~y": 0.29,
   "x~z": 0.22,
-  "y~z": -0.52
+  "y~z": -0.51
  }
 }
