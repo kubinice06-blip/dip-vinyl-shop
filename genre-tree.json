@@ -5,17 +5,17 @@
   {
    "id": "rock",
    "zh": "搖滾",
-   "count": 4874,
+   "count": 4902,
    "children": [
     {
      "id": "indie-alt",
      "zh": "獨立另類",
-     "count": 994,
+     "count": 998,
      "children": [
       {
        "id": "indie-rock",
        "zh": "獨立搖滾",
-       "count": 499
+       "count": 502
       },
       {
        "id": "alt-rock",
@@ -35,7 +35,7 @@
       {
        "id": "folk-side",
        "zh": "民謠與創作歌手",
-       "count": 143
+       "count": 146
       },
       {
        "id": "emo",
@@ -206,7 +206,7 @@
     {
      "id": "metal",
      "zh": "金屬",
-     "count": 675,
+     "count": 677,
      "children": [
       {
        "id": "trad",
@@ -236,7 +236,7 @@
       {
        "id": "doom",
        "zh": "厄運與粗厚",
-       "count": 95
+       "count": 97
       },
       {
        "id": "black",
@@ -317,27 +317,27 @@
     {
      "id": "dream-post",
      "zh": "音牆後搖",
-     "count": 229,
+     "count": 251,
      "children": [
       {
        "id": "post-rock",
        "zh": "後搖滾",
-       "count": 108
+       "count": 120
       },
       {
        "id": "shoegaze",
        "zh": "瞪鞋",
-       "count": 96
+       "count": 107
       },
       {
        "id": "dream-pop",
        "zh": "夢幻流行",
-       "count": 81
+       "count": 86
       },
       {
        "id": "slowcore",
        "zh": "慢核",
-       "count": 30
+       "count": 45
       }
      ]
     },
@@ -363,7 +363,7 @@
   {
    "id": "jazz",
    "zh": "爵士",
-   "count": 4671,
+   "count": 4686,
    "children": [
     {
      "id": "bop",
@@ -447,12 +447,12 @@
     {
      "id": "contemporary",
      "zh": "當代與 Nu Jazz",
-     "count": 749,
+     "count": 763,
      "children": [
       {
        "id": "nu-jazz",
        "zh": "Nu / Acid Jazz",
-       "count": 263
+       "count": 271
       },
       {
        "id": "smooth",
@@ -494,7 +494,7 @@
     {
      "id": "free",
      "zh": "自由與前衛",
-     "count": 731,
+     "count": 735,
      "children": [
       {
        "id": "avant",
@@ -509,7 +509,7 @@
       {
        "id": "free-improv",
        "zh": "自由即興",
-       "count": 89
+       "count": 90
       },
       {
        "id": "fusion",
@@ -635,37 +635,37 @@
   {
    "id": "electronic",
    "zh": "電子",
-   "count": 1956,
+   "count": 2003,
    "children": [
     {
      "id": "ambient",
      "zh": "Ambient / Drone",
-     "count": 740,
+     "count": 786,
      "children": [
       {
        "id": "idm",
        "zh": "偏 IDM",
-       "count": 202
-      },
-      {
-       "id": "ambient-techno",
-       "zh": "Ambient Techno / Dub",
-       "count": 116
+       "count": 204
       },
       {
        "id": "drone",
        "zh": "Drone",
-       "count": 96
+       "count": 128
+      },
+      {
+       "id": "ambient-techno",
+       "zh": "Ambient Techno / Dub",
+       "count": 119
       },
       {
        "id": "dark-ambient",
        "zh": "Dark Ambient",
-       "count": 74
+       "count": 104
       },
       {
        "id": "neoclassical",
        "zh": "偏現代古典",
-       "count": 52
+       "count": 55
       },
       {
        "id": "new-age",
@@ -677,17 +677,17 @@
     {
      "id": "techno",
      "zh": "Techno",
-     "count": 493,
+     "count": 500,
      "children": [
       {
        "id": "minimal",
        "zh": "Minimal",
-       "count": 188
+       "count": 195
       },
       {
        "id": "ambient-techno",
        "zh": "Ambient Techno",
-       "count": 183
+       "count": 190
       },
       {
        "id": "detroit",
@@ -705,13 +705,13 @@
        "count": 46
       },
       {
-       "id": "tech-house",
-       "zh": "Tech House",
-       "count": 38
-      },
-      {
        "id": "hard",
        "zh": "Hard / Rave / Industrial",
+       "count": 39
+      },
+      {
+       "id": "tech-house",
+       "zh": "Tech House",
        "count": 38
       },
       {
@@ -724,7 +724,7 @@
     {
      "id": "downtempo",
      "zh": "Trip-hop / Downtempo",
-     "count": 371,
+     "count": 372,
      "children": [
       {
        "id": "chillout",
@@ -734,7 +734,7 @@
       {
        "id": "ambient",
        "zh": "偏 Ambient",
-       "count": 169
+       "count": 170
       },
       {
        "id": "trip-hop",
@@ -766,17 +766,17 @@
     {
      "id": "idm",
      "zh": "IDM / Glitch",
-     "count": 349,
+     "count": 351,
      "children": [
       {
        "id": "ambient-idm",
        "zh": "Ambient IDM",
-       "count": 196
+       "count": 198
       },
       {
        "id": "glitch",
        "zh": "Glitch / Microsound",
-       "count": 129
+       "count": 130
       },
       {
        "id": "warp",
@@ -887,12 +887,12 @@
     {
      "id": "bass",
      "zh": "Dub / Bass",
-     "count": 244,
+     "count": 245,
      "children": [
       {
        "id": "dub",
        "zh": "Dub / Dub Techno",
-       "count": 99
+       "count": 100
       },
       {
        "id": "dubstep",
@@ -914,17 +914,17 @@
     {
      "id": "industrial",
      "zh": "Industrial / EBM",
-     "count": 165,
+     "count": 173,
      "children": [
       {
        "id": "dark-ambient",
        "zh": "Dark Ambient / Post-Industrial",
-       "count": 53
+       "count": 60
       },
       {
        "id": "power-electronics",
        "zh": "Power Electronics / 噪音",
-       "count": 49
+       "count": 50
       },
       {
        "id": "old-school",
@@ -946,27 +946,27 @@
     {
      "id": "noise",
      "zh": "實驗與噪音",
-     "count": 138,
+     "count": 145,
      "children": [
       {
        "id": "harsh",
        "zh": "Harsh Noise / 日本噪音",
-       "count": 93
+       "count": 99
       },
       {
        "id": "drone",
        "zh": "Drone / Dark Ambient",
-       "count": 63
+       "count": 70
       },
       {
        "id": "glitch",
        "zh": "Glitch / Microsound",
-       "count": 39
+       "count": 40
       },
       {
        "id": "concrete",
        "zh": "具象音樂與拼貼",
-       "count": 34
+       "count": 35
       }
      ]
     },
