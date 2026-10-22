@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-22｜dip-vinyl-shop｜情緒薄格恍惚線 ml1／ml2：lovers rock／rub-a-dub／roots 35＋暖 dream pop／新迷幻 39 張上線，落恍惚 67/74，恍惚 784 → 851
+
+- **內容**：店主「新增的專輯數太少了 與雀躍嚴重不平衡」，6 個並行工作階段之一，恍惚線第一輪。ml1（`add-20261022-ml1`）：Black Ark／Wackie's／Junjo＋Scientist／On-U 的濕混音人聲盤與 roots 二線（Gregory Isaacs、George Faith、Susan Cadogan、Wayne Jarrett、Hugh Mundell 2、Linval Thompson 3、Johnny Osbourne 2、Horace Andy 2、Aswad 2、Bim Sherman 2、Burning Spear《Dry & Heavy》、Keith Hudson…）；ml2（`add-20261022-ml2`）：Cocteau Twins 2、Beach House《Devotion》、Hope Sandoval、Brightblack Morning Light 2、Mercury Rev 4、Spiritualized、Robin Guthrie＋Budd 合作盤、Manual、Jónsi & Alex、Peaking Lights 2、Sun Araw 2、Helado Negro 2、Bibio 2、Richard Hawley 2、The Antlers、Kurt Vile…
+- **策展→汰換**：策展各 54 張全在邊距內，主線**對照池中同藝人已評分三軸**發現 lovers rock 池中 y 多 <0.5、dream pop 池中 z 常中性偏冷，第一輪各汰 12／14 張、叫策展代理補 11／12 張；研究層聲音存疑再汰 ml1 10 張（80 年代數位製作的乾淨 lovers rock）、ml2 15 張（乾淨／輕快、有拍推進、偏冷），ml2 再補 9 張。張數不足 45（35／39）照實上架。卡單更正：Rita Marley → Tuff Gong、《Natty Dread a Weh She Want》→ Stars、《Folly Ranking》→ Positive Sounds、Mild High Club → Circle Star。
+- **主線審稿**：ml1 改 3 張（Susan Cadogan 簽約句前後矛盾、Junior Delahaye 資料平台措辭、Don Carlos 單源評價句）、ml2 未改字。試聽 ml1 28／ml2 38 ready（人工指定 3 張，Apple 藝人目錄逐首核對）；封面 74 張 live-check 200（ml1 CAA 無圖 5 張走 Apple `covers.json`）。冷門軸人工 2 張（Ghetto-ology、To Be a Lover：Last.fm 盤名對不上）。
+- **落格率（本線驗收）**：`batch-progress/mood-axes/score-ml12/`。ml1 34/35＝97%（Bim Sherman《Miracle》弦樂不插電判輕落放鬆）、ml2 33/39＝85%（Bibio 2、Helado Negro、Hawley《Lowedges》判輕落放鬆；The Antlers 判冷落頹靡、Tarnation 判冷落平靜）。gate 綠 19,800/19,800、錨點 104/104；八格 恍惚 851、頹靡 1,120、放鬆 4,990。
+- **類型樹**：預熱 74 張；`genre-l3-artist-map.json` 補 9 張（Cadogan、Rita Marley → world/reggae/lovers；Helado Negro 2 → rock/dream-post/dream-pop；Peaking Lights 2、Icon Give Thank、Nick Hakim、Kadhja Bonet → rock/psych-prog/psych）→ 74/74。藝人介紹照 6 並行規矩不切，29 位新藝人列在兩批 rulings 末尾。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`onboarding-manifest-add-20261022-ml{1,2}-20261022.json`、`batch-progress/add-20261022-ml{1,2}/*`、`batch-progress/mood-cells-20261022/{curation,master}-ml{1,2}.json`、`SCENES.md`、`desc-tools/batches/*/add-20261022-ml{1,2}-*`、`batch-progress/mood-axes/{score-ml12/*,priors-v0-report.json,scale-v0-report.json}`、`data/mood/*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`、`batch-progress/HANDOFF-mood-cells-line.md`。
+- **驗證**：`verify-album-onboarding --published` ml1／ml2 皆 0 error；KV 回讀 74/74 逐字一致；card_catalog 35/35、39/39；`build-card-moods` gate 綠。
+
 ### 2026-10-22｜dip-vinyl-shop｜情緒薄格線擴大：三格各補到 2,000、6 個工作階段並行
 
 - **內容**：店主「新增的專輯數太少了 與雀躍嚴重不平衡」→ 選「各補到約 2,000、一批 45 張、6 個並行」。md1–md4 落格率 91–98%，每批淨增約 40；缺口 頹靡 +881、冷冽 +1,126、恍惚 +1,216，約 80 批。新增 `batch-progress/mood-cells-20261022/SCENES.md`（md5–md25、mc1–mc30、ml1–ml30 場景與條號）；`CUR-DISPATCH.md` 改三線共用（冷冽 x≥3.3／y≤0.2／z≤−0.3、恍惚 x≤2.7／y≥0.8／z≥0.3、各線反例）；`build-priors.mjs` 改自動讀所有 `score*/scored-*.json`（輸出與改前逐位元相同）；HANDOFF 加並行合併規矩（產生檔取 main 版＋重跑）、子工作階段不切藝人介紹。第 1 輪開 6 個子工作階段：md5–md8、mc1–mc4、ml1–ml4。
