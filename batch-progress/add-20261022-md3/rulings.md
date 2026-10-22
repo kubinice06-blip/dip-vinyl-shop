@@ -38,3 +38,15 @@
 - **10855**：卡單措辭修正：Æthenor 的「鋼琴」實為 Fender Rhodes 電鋼琴（O'Sullivan）；全盤四首無曲名。Locrian 發行月份 MB 2011-01-11 對 Discogs／維基 2011-11-01，年份不變。Ionia 錄音地點 Discogs 寫 Gauss、維基寫 Lycium（皆 Mesa／Tempe 一帶），寫作層只寫亞利桑那州。
 - **10856**：沒有推翻年份、盤名；所有盤皆原創錄音室專輯，無選輯或重複卡。
 - **10857**：Dalton 貝斯手名字 Discogs 寫 Dermot、維基寫 Diarmuid，facts 只寫姓。Atsuo 只見 Exclaim! 一源，限定〈Paratrooper〉。
+
+## 研究 d 組
+- **10871**：Chelsea Wolfe《Ἀποκάλυψις》年份維持 2011 不改。Wikipedia、God Is in the TV 試聽文（2011-08-16）、Discogs master 379052（2011）、Discogs 黑膠 PSR-0045（Pendu Sound）都指向 2011；MB 那筆 2010 實為 Baby Birch Records BBR-001 的歐洲 CD（Discogs release 4394513 標 2010 但併入同一 master），無法判定是先行小量版或日期誤植，facts 不寫「首發 2010」。Discogs 黑膠登記日 2011-09-23 與 8 月 23 日首發不同，寫作層只寫「2011 年」。
+- **10872**：Chelsea Wolfe《Ἀποκάλυψις》moodGuess 存疑：來源是真鼓組、鼓聲空曠、失真被比作 Black Sabbath 與黑金屬，〈Demons〉偏快，且是她離開 8 軌低傳真、進真錄音室的一張；「低傳真」「慢」兩點被推翻，x 2.4 恐偏低。
+- **10873**：Chelsea Wolfe《Pain Is Beauty》moodGuess 存疑（輕）：Pitchfork 稱「侵略性漸強、Swans 式堆疊」，有真鼓手與循序節拍，冷與重有支持、靜不一定成立。
+- **10874**：Zola Jesus《Okovi》moodGuess 存疑：來源稱「urgent goth-pop」，〈Exhumed〉被用作摔角入場曲，編制含打擊與新增吉他，x 2.4 可能偏低。
+- **10875**：Emma Ruth Rundle《Marked for Death》moodGuess 存疑：有真鼓手 Andrew Clinco，Treble 稱最重最響、重在音量與低頻，God Is in the TV 稱吉他粗礪帶怒氣；並非「鼓少而慢」，有落躁風險。
+- **10876**：Current 93《Nature Unveiled》《Dogs Blood Rising》moodGuess 輕度存疑：專盤聲音來源缺（AllMusic 403），只有 Wikipedia 對早期風格的概述（磨刺磁帶迴圈、嗡鳴合成器、失真人聲）；後者含一首 1983-11-25 Bar Maldoror 現場錄音，並有 Steve Ignorant、Iggi 等人聲名單，是否整盤無鼓未證實。寫作層勿寫具體打擊或低頻。
+- **10877**：Arcana《Dark Age of Reason》鼓稀未證實（Discogs 無打擊樂手、樂評不談鼓），其餘合唱、輕柔飄渺、涼有來源；寫作層勿寫具體打擊樂器。Pettersson 與 Bjärgö 同一人。
+- **10878**：Zola Jesus《Stridulum II》廠牌保留 Sacred Bones（美國原發行；德國 Souterrain Transmissions 2010-08-23 為歐洲版），年份同為 2010。
+- **10879**：Zola Jesus《The Spoils》、Pain Is Beauty、Okovi 等 Pitchfork／Quietus 全文無法開啟（pitchfork.com 被擋），樂評引文一律轉自 Wikipedia 並在 src 標 Wikipedia。Treble 頁 403，內容取自搜尋摘要的原文引述。
+- **10880**：九張全數無推翻年份／廠牌／盤名；皆原創錄音室專輯，無選輯。WebSearch 用 3 次（Arcana、Marked for Death、Apokalypsis）。
