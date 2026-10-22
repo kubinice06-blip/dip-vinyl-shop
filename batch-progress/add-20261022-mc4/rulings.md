@@ -23,6 +23,14 @@
 - 11245　Boulez《sur Incises / Messagesquisse / Anthèmes 2》：Discogs 2000 DG 463 475-2，1999-10／12 巴黎（Cité de la musique、IRCAM）錄音；MB 釘的是 2007 再版同錄音。Messagesquisse 與 Anthèmes 2 的編制、Queyras／Kang 各對應哪一曲未取得來源，facts 不寫。Sur Incises 占全盤約五成六，其餘含數個 Très lent，輕微存疑但整體可留。
 - 推翻策展層：0 處。WebSearch 本組共用 4 次（Ligeti 盤、Nancarrow、Boulez Structures、Sur Incises 各 1），超出每支 3 次上限 1 次，其餘走 MB／Discogs API 與 WebFetch。
 
+## 研究 b 組
+- 11251　Kawka《Boulez: Mémoriale / Dérive 1 / Dérive 2》：推翻策展層「Dérive 2 45 分鐘」，實為 50:40（Discogs／MusicWeb），佔全盤 63:10 的八成。年份 Discogs 記 2011（℗）、MB 記 2012-02、樂評皆 2012，取 2012。moodGuess 大致成立（樂評 breathless、quick-footed），Mémoriale 為 crepuscular，x 略偏高。
+- 11252　Boulez《...explosante-fixe... / Notations / Structures II》：身分對上（DG 445 833-2、1995）。moodGuess 輕度存疑：explosante-fixe 佔 36:43、過半時長，查不到來源描述其速度，Notations 與 Structures 的快、碎、乾成立；建議視為邊緣張。1993 年版世界首錄、1993-06／1994-10 錄於 IRCAM。
+- 11253　Boulez《Répons / Dialogue de l'ombre double》：身分對上（DG 457 605-2、1998、錄於 1996-09）。moodGuess 部分存疑：24 人樂團加六獨奏加電子空間化，y 0 偏高；Dialogue 為單簧管獨奏較靜。葛萊美為第 42 屆最佳古典當代作品得獎（單源 Wikipedia 兩頁互證，grammy.com 404）。
+- 11254　Craft《Varèse》：正名《Music of Edgar Varèse》（Columbia MS 6146／ML 5478，1960），卡單盤名為六首拼接；MB 1983 為 CBS 再版，年份取 1960；Poème électronique 為首度錄音（Discogs 註記）；Ionisation 4:50，重發樂評稱偏快；錄音日期未查到。y 0 疑慮屬實（磁帶電子與銅管音壓）。
+- 11255　Chojnacka《Xenakis: Naama / À l'île de Gorée / Khoaï / Komboï》：身分對上（Erato 2292-45030-2、1990；MB 記 MusiFrance）。錄音 1984-04 Komboï、1987-06／10 其餘。moodGuess 大致成立，Naama 速度標很慢但靠快速音群跳動，輕度保留；Gualda 是否為本盤打擊手僅有 MB 署名與題獻支持，facts 未寫。
+- 推翻策展層：1 處（11251 時長）；年份調整：Craft 取 1960、Kawka 取 2012。五張皆原創專輯，無建議移除，無重複卡。WebSearch 本組實用 3 次（Craft、Gorée、Kawka）。
+
 ## 研究 c 組
 - 11261　Arditti Carter《String Quartets 2 & 3 / Elegy》：年份推翻策展層。Discogs master 691926（Etcetera KTC 1066）著錄 1988 年首發，MB 2004 是 NL 重發；卡片年份建議改 1988（yearVerified 已填）。大提琴 Rohan de Saram、小提琴 David Alberman，非創團名單。
 - 11262　Arditti《Xenakis: ST/4…》：七首只有 ST/4 是四重奏，其餘獨奏、三重奏、小提琴加鋼琴；寫作層寫成『Arditti 成員演出的 Xenakis 弦樂作品』。發行年 MB 1983、賣家頁 1982（錄音）；status thin（無樂評、無 Discogs）。
@@ -44,3 +52,15 @@
 - **11284**：NEM《Carter》正名為《Elliott Carter》（ATMA ACD2 2280、2002），卡單盤名為自擬，寫作層宜以作曲家與作品稱之。moodGuess 存疑（速度）：協奏曲含 Tranquillo、Largo，6 首小品無速度來源，只有 Triple Duo 與 Presto／Agitato 段可證快；整張可能中速偏上。協奏曲獨奏者 Discogs 未標，不寫。
 - **11285**：Hodges & Hind《Ferneyhough》身分對得上（NEOS 11501-02、2015，Hind 僅彈最後一首雙鋼琴奏鳴曲）。moodGuess 存疑：密度有來源（記譜）但速度無來源；第二片約 47 分鐘為 1960 年代短小早期作（Epigrams 各 1–2 分），疏密不均；Opus Contra Naturam 含人聲（取自《Shadowtime》），非純鋼琴。
 - **11286**：本組五張皆查無建議移除項；皆為原創專輯（Surinach 為 LP 專輯、其餘為 CD），無重複卡。WebSearch 實用 8 次（超出每支 3 次上限，因 Wikimedia 直連被擋、改以搜尋補來源），Wikimedia API 對代理 403／429，改以 WebFetch、MusicBrainz、Discogs API。
+
+## 主線：研究層後汰換與更正（不佔條號）
+- 研究層聲音存疑，主線汰 6 張（不補候補：策展兩輪已挖盡，候補都貼邊），**本批定案 19 張**：
+  - Charial & Hocker《Ligeti: Mechanical Music》（11241：約三成以上是 100 台節拍器的《Poème symphonique》加慢板 Musica ricercata，主奏是手搖風琴，x 估過高）
+  - Oppens《Oppens Plays Carter》（11264：Piano Sonata 與 Night Fantasies 合計約六成不快，含 13 分鐘 Andante）
+  - Arditti《Ferneyhough: String Quartet No. 4 / Kurze Schatten II / Trittico per G.S. / Terrain》（11272：多數是吉他、低音提琴獨奏與女高音四重奏，快作只有 Terrain）
+  - Howarth《Birtwistle: Secret Theatre / Silbury Air / Carmen…》（e 組：只有 Carmen 是永動快推進，Silbury Air 靜態音塊）
+  - Schleiermacher《The Bad Boys!》（e 組：開場低音大音塊緩慢、琴箱刮撥幽靈音色、Cowell 前臂音塊低頻，x／y 兩軸都不穩）
+  - Boulez《Répons / Dialogue de l'ombre double》（11253：24 人樂團＋6 獨奏＋電子空間化，y 偏重；Dialogue 單簧管獨奏偏靜）
+- 研究稿同步刪去上述 6 張（a–e 各組檔）；`qa-batch research` 19 張全過。
+- 年份更正（卡單已改）：Arditti《Carter: String Quartets 2 & 3 / Elegy》→ **1988**（11263：Discogs master 691926／release 5733345 記 Etcetera KTC 1066 1988 首發，MB 2004 是重發）；Hodges《Birtwistle: The Axe Manual / Harrison's Clocks》→ **2005**（11274：2004-07 科隆錄音、2005 年發行與評論，原 2000 是作品年）。Ensemble intercontemporain《Chin》維持 2011（2005 DG 原版只有維基單源）。
+- 邊緣張留用：Boulez《...explosante-fixe...》、Craft《Varèse》、Chojnacka《Xenakis: Naama…》、Kontarsky《Boulez: Structures》、Nouvel Ensemble Moderne《Carter》、Hodges & Hind《Ferneyhough》——上線評分驗證。
