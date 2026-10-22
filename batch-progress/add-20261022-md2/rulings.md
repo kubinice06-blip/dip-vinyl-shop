@@ -51,3 +51,17 @@
 - 10785：Songs: Ohia《Ghost Tropic》Shane Aspegren 職司來源未載，「幾乎無鼓」「低音 drone」無法驗證；Lisa Germano《Geek the Girl》僅 4 首（3、5、9、12）有 Aronoff 鼓，其餘家錄，y 0.9 貼邊風險仍在。
 - 10786：Grouper 兩張來源皆未提鼓，「無鼓」為推定；《Wide》標題曲有脈動吉他反覆段。
 - 10787：樂評分數、年終／十年榜名次一律只留 notes，不進 facts。
+
+## 研究 d 組
+- 10791｜Have a Nice Life《Deathconsciousness》：moodGuess 存疑（x 2.5 偏高）。維基與 Vice 引述顯示〈Bloodhail〉鼓機、〈The Big Gloom〉持續打擊、〈Telefony〉金屬小鼓、〈The Future〉輕快合成鼓、〈Holy Fucking Shit: 40,000〉爆成工業噪音；慢 dirge／drone 只是其中一部分。facts 如實寫有鼓，交主線決定留汰。
+- 10792｜Hood 兩張的製作人：維基 Hood 頁寫 Elliott 製作 Rustic Houses 與 Cycle 兩張；Discogs 顯示前者為 Hood＋Elliott 共同製作（PIJ Studios 布里斯托）、後者為 Richard Formby 製作（Hall Place 利茲），Elliott 僅額外製作。facts 採 Discogs。Hood 專輯序數維基互相矛盾，facts 不寫序數。
+- 10793｜Planning for Burial《Leaving》年份／廠牌：2009-09-18 Bandcamp 自發（MB 首發），2010 年 Enemies List EL08 限量 200 CD（Discogs master 記 2010）。卡單 year 2009／label Enemies List 保留，寫作層須寫『2009 自行發布、2010 Enemies List 出實體』。聲音證據偏薄（無專輯評論），status thin。
+- 10794｜Low《The Curtain Hits the Cast》：curatorWhy『十四分鐘 drone 曲』只證實長度 14:39，drone 與『殘響最長』無來源（本盤錄於西雅圖錄音室，製作人 Steve Fisk，非 Kramer）；寫作層只准寫『長曲』。
+- 10795｜Low《Drums and Guns》：moodGuess 存疑（x 2.3）。PopMatters 描述以合成／數位打擊為骨幹、鼓『僵硬直接』、〈Always Fade〉有較複雜節奏，曲短（最長 4:18）；『慢拍、低頻厚』無文字佐證。建議主線評估汰換。
+- 10796｜Giles Corey《Giles Corey》：聲音證據僅有臥室 lo-fi 錄音、EVP 取樣、MB 標 slowcore；無鼓／殘響厚等假設無來源也無反證，status thin。Barrett 自殺相關自述不進 facts。
+- 10797｜Hood《Rustic Houses Forlorn Valleys》：專輯評論全無（維基 stub、Trouser Press 誤回 Hoodoo Gurus），聲音只靠『近似 Bark Psychosis／Talk Talk』一句，status thin。WebSearch 3 次用於 Low D&G、Hood Rustic、PFB Leaving。
+
+## 主線裁定（研究層交件後）
+- **10831**　研究層聲音存疑汰換 7 張（有鼓機／碎拍／synthwave／偏暖，評分後易掉亢奮或恍惚）：Have a Nice Life《Deathconsciousness》（d 組：鼓機、工業噪音爆發段）、Low《Drums and Guns》（d 組：數位打擊骨幹、短曲）、Flying Saucer Attack《Mirror》（e 組：後半 drum and bass 拍）、The Third Eye Foundation《Little Lost Soul》（e 組：Drum n Bass 打擊）、The Lovecraft Sextet《Nights of Lust》（b 組：synthwave 路線、鼓機推定）、Dictaphone《M.=Addiction》（b 組：Bandcamp 自述溫暖、節奏噪音碎片）、The Kilimanjaro Darkjazz Ensemble《Here Be Dragons》（a 組：節拍與 Venetian Snares 取樣）。同位置替入 master 候補，組別不變：Bohren《Gore Motel》(a)、Bohren《Piano Nights》(b)、Dale Cooper Quartet《Astrild Astrild》(b)、Grouper《Way Their Crept》(d)、Mount Eerie《Sauna》(d)、Jessica Bailiff《Hour of the Trace》(e)、Arab Strap《Elephant Shoe》(e)。汰換卡的研究稿條目已從各組檔刪除；補 7 張由補研究代理寫進對應組檔。
+- **10832**　研究層輕度存疑但保留：Idaho《This Way Out》（全盤 Jeff Martin 一人、無鼓——反而更靜）、KDE 首張與《From the Stairwell》（程式化慢拍，有拍沒攻擊性照規則仍是靜）、MFDC 兩張（人員欄列鼓手，但即興 doom drone 質地極重）、Midwife 兩張（吉他 shimmering，z 風險，留給評分驗收）、Mount Eerie《Clear Moon》、Duster《Together》、Lisa Germano《Geek the Girl》、Arab Strap《The Red Thread》。
+- **10833**　卡單事實維持：Early Day Miners《Placer Found》2000（維基、樂團頁、Discogs master 皆 2000）；Bohren《Midnight Radio》1995（℗1995、錄音 1995-10；Discogs CD 1997-01 兩說並陳，正文避 1997）；Planning for Burial《Leaving》2009／Enemies List（2009-09 Bandcamp 自發、2010 EL08 CD，寫作層照兩時點寫）。Low《The Curtain Hits the Cast》製作人 Steve Fisk、非 Kramer。
