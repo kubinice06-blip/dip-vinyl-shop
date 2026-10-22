@@ -9,7 +9,7 @@
 - **藝人介紹**：照 6 並行規矩不切，兩批 rulings 末尾列 md5 24 位、md6 14 位。
 - **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`onboarding-manifest-add-20261022-md{5,6}-20261022.json`、`batch-progress/add-20261022-md{5,6}/*`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-md{5,6}.json`、`SCENES.md`、`desc-tools/batches/*/add-20261022-md{5,6}-*`、`batch-progress/mood-axes/score-md{5,6}/*`、`batch-progress/mood-axes/{priors,scale}-v0-report.json`、`data/mood/*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`。
 - **並行撞卡**：md8（另一工作階段）也收了 Köner《Aubrite》《Kaamos》並寫 KV 蓋掉本批文字；本批先合併，KV 兩鍵寫回、card_catalog 重推，md8 應汰這兩張（rulings 17157m）。
-- **驗證**：`verify-album-onboarding --published` 兩批 0 error；KV 回讀 45/45、45/45 逐字一致；card_catalog 45/45、45/45；`build-card-moods` gate 綠、錨點 104/104（併 main（mc3／mc4、ml3／ml4）後重跑：seed 19,892、頹靡 1,208、冷冽 899、恍惚 822，兩批 published gate 0 error、落格不變）。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；KV 回讀 45/45、45/45 逐字一致；card_catalog 45/45、45/45；`build-card-moods` gate 綠、錨點 104/104（併 main（mc1–mc4、ml3／ml4）後重跑：seed 19,929、頹靡 1,208、冷冽 924、恍惚 822，兩批 published gate 0 error、落格不變）。
 
 ### 2026-10-22｜dip-vinyl-shop｜情緒薄格冷冽線 mc1／mc2：minimal synth／coldwave 22＋post-punk／no wave 15 張上線，落冷冽 25/37，冷冽 899 → 924
 
