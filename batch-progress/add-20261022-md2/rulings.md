@@ -32,3 +32,22 @@
 - 10763：moodGuess 存疑兩張：Succubus 與 Anthropomorphic 卡單寫「無鼓」，但 Discogs 人員欄分別列 Gideon Kiers（鼓）、Ron Goris（鼓）＋Charlotte Cegarra（人聲）；鼓的用法無來源。Here Be Dragons（x 2.0）有「誘人的節拍／滾動打擊」，並取樣 Venetian Snares，貼邊。
 - 10764：Geisterfaust 的合唱團錄音僅見 Discogs 人員欄，成品中位置無樂評證實；專輯名中譯有兩說，建議不譯。
 - 10765：Sunset Mission 與 Black Earth 未找到逐字的鼓法描述，聲音事實以編制與團史為主。
+
+## 研究 b 組
+
+- 10771：Nights of Lust 推翻策展層：『管風琴、薩克斯風、低音 drone 無鼓』無來源支持。Bandcamp 稱 dark jazz 融 synthwave、受 Carpenter 與 Badalamenti 影響，Discogs 只掛 Jason Köhnen 一人作曲與製作；Sextet 是計畫名不是六人團。moodGuess 的『無鼓』高風險（synthwave 通常有鼓機），建議汰換候選。序數：Bandcamp 稱『第二張全長』、MB 為 EP→Album，facts 不寫序數。
+- 10772：Dictaphone《M.=Addiction》moodGuess 存疑：Bandcamp 寫『溫暖、迷人的憂愁』『法國秋天的夢』，並有『節奏性噪音碎片』，Discogs 風格 Abstract／Future Jazz，z（冷）、x（無攻擊）皆可能落空，建議視高風險。
+- 10773：Twin Peaks FWWM 原聲 moodGuess 存疑：credits 多首有完整節奏組（Grady Tate 鼓）、Thought Gang 有 Lynch 打擊樂、〈The Pink Room〉是搖滾樂隊編制，非全程無鼓；主體仍是慢板爵士。獎項（Saturn／Independent Spirit）維基語意不清，不寫；Billboard 173 單一來源，不收。
+- 10774：Dale Cooper Quartet 三張（Parole／Métamanoir／Quatorze）：聲音面皆無提到鼓，慢板氛圍；『冷』無直接評論來源。Quatorze 標題十四件、實際 11 首，不猜原因。團名取自《雙峰》探員屬推斷，樂團說法（Welcome to Twin Peaks 訪談）403，facts 不收。Métamanoir 是否為首度上 Denovali 未查證，不寫。
+- 10775：Duster 同名專輯聲音證據偏薄（Pitchfork 被擋、AllMusic 403，只有風格標籤與 Sendra 一句），moodGuess『磁帶糊、低頻厚、冷』無直接來源；《Together》BPM 評論說節奏冰河般慢但有明亮片刻、整體比聲音暗示的更明亮，z（冷）有判成中性風險。Together 的鼓手：維基稱 Albertini 離團後首發，BPM 稱他打鼓，兩說相左，facts 只寫離團。
+- 10776：Grouper《Alien Observer》：維基轉述評論列 drone、lo-fi、殘響、回音、磁帶循環，未提鼓，支持無鼓；『冷』只有『distant』一詞，無直接來源。2019 Kranky 再發日維基 10/25、MB 10/23，facts 只寫 2019 年 10 月。
+- 10777：推翻策展層年份／廠牌：無。Parole de Navarre 2006 首發（Diesel Combustible DCR #19），2010 黑膠為再發。
+
+## 研究 c 組
+- 10781：Idaho《This Way Out》moodGuess 存疑。Discogs 署名與 Trouser Press 都指出全盤 Jeff Martin 單人（四弦吉他／貝斯／Prophet-5／鋼琴／人聲），無鼓手；「慢拍、失真糊」未證實。
+- 10782：Arab Strap《Philophobia》「鼓機」未獲來源證實（維基僅列 David Gow 第 2 首鼓）；《The Red Thread》〈Turbulence〉有舞池節拍、先前單曲帶 IDM 色彩，「無攻擊」有風險。兩張皆照策展層收，交主線評分時留意。
+- 10783：Idaho《Year After Year》有「摧毀性的原始尖叫」與回授段落（Trouser Press），x 軸風險。
+- 10784：Early Day Miners《Placer Found》年份維持 2000（維基、樂團頁、Discogs master 1698924 皆 2000；MB 2001-04-02 僅單筆美國發行）。有鼓手 Rory Leitch，但來源皆言速度平緩。
+- 10785：Songs: Ohia《Ghost Tropic》Shane Aspegren 職司來源未載，「幾乎無鼓」「低音 drone」無法驗證；Lisa Germano《Geek the Girl》僅 4 首（3、5、9、12）有 Aronoff 鼓，其餘家錄，y 0.9 貼邊風險仍在。
+- 10786：Grouper 兩張來源皆未提鼓，「無鼓」為推定；《Wide》標題曲有脈動吉他反覆段。
+- 10787：樂評分數、年終／十年榜名次一律只留 notes，不進 facts。
