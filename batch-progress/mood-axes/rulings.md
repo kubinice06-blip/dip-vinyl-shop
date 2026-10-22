@@ -154,3 +154,11 @@
 - **邊界判例**：The Body《I Shall Die Here》有電子拍與尖叫 → 躁 3.1；Khanate 鼓極稀、每擊間死寂 → 照 Sunn O))) 留靜；Colin Stetson《Sorrow》只在高潮有鼓與失真 → 留靜；Armand Hammer 刺耳但嘻哈節拍不「打」→ 留靜，Dälek 是工業噪音牆 → 躁。
 - **結果**：八格 頹靡 982→926、恍惚 596→592、沸騰 1983→1987、亢奮 2592→2648；錨點 104/104 同格（60 張無一是錨點）。
 - **沒做**：舊批次評分檔不回改（v0 不動，覆寫層承擔）；日後新卡照新 BRIEF 評。
+
+## 2026-10-22｜薄細項策展線 ts5／ts6 新卡補評（score-ts2）：90 張
+
+- **工單**（`score-ts2/select.mjs <批>`）：每批一份（`chunk-ts6.json`、`chunk-ts5.json` 各 45），各一支代理照 `score500/BRIEF.md`（含 10-22 能量軸新標準）評。`merge.mjs` 改讀資料夾內所有 `chunk-*.json`。
+- **結果**：90 張、0 錯誤。conf：mid 52、low 38。八格：放鬆 11、平靜 12、恍惚 6、頹靡 9、雀躍 19、冷冽 0、沸騰 17、亢奮 16。
+- **判例**：neofolk（含 Wardruna、ORE 的軍鼓）無失真無嘶吼 → 留靜；psy／Goa 比照錨點 techno 判躁 3.8–4.5；cloud／phonk 有拍不兇留靜（SpaceGhostPurrp 2.7、Xavier Wulf 2.4、BONES 2.4、Ecco2k 2.2），$uicideboy$ 失真 808＋嘶吼 3.5；La Rumeur「節拍不打」照 Armand Hammer 留靜 2.8、Lunatic 鼓重咬字兇 3.1；Lil Tracy 3.1（emo rap＋龐克吉他）邊界。主線未改分。
+- **Carl Perkins 拆卡**：工單 id 隨卡改為 `carl perkins (rockabilly)|dance album of carl perkins`。
+- **全池**：`build-priors.mjs` 加 `score-ts2/scored-ts2.json`，scored 19,354→19,444；`build-card-moods.mjs` gate 綠：19,548／19,548、錨點 104/104、店主改判 61。八格 放鬆 5,166、平靜 1,345、恍惚 598、頹靡 935、雀躍 5,962、冷冽 874、沸騰 2,004、亢奮 2,664。

@@ -1,5 +1,859 @@
 [
  {
+  "id": "國蛋|gdna",
+  "artist": "國蛋",
+  "album": "GDNA",
+  "year": 2023,
+  "tier": null,
+  "old": {
+   "classic": 2,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 2.7,
+  "y": 0.6,
+  "z": 0.2,
+  "region": "languid",
+  "why": "顏社式爵士取樣與現代鼓組，中速穩定、溫吞帶點冷靜",
+  "conf": "low"
+ },
+ {
+  "id": "changmo|boyhood",
+  "artist": "Changmo",
+  "album": "Boyhood",
+  "year": 2019,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 2,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 2.8,
+  "y": 0.3,
+  "z": 0.6,
+  "region": "calm",
+  "why": "旋律 trap 與 R&B 唱腔，808 中速、合成器明亮帶情緒",
+  "conf": "mid"
+ },
+ {
+  "id": "deepflow|양화",
+  "artist": "Deepflow",
+  "album": "양화",
+  "year": 2015,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 3,
+   "obscurity": 4,
+   "accessibility": 3
+  },
+  "x": 3.5,
+  "y": 1.2,
+  "z": -1,
+  "region": "charge",
+  "why": "陰暗厚重的鼓與低頻，密集咬字咄咄逼人，壓迫冷硬",
+  "conf": "mid"
+ },
+ {
+  "id": "dok2|multillionaire",
+  "artist": "Dok2",
+  "album": "Multillionaire",
+  "year": 2015,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 2,
+   "obscurity": 4,
+   "accessibility": 2
+  },
+  "x": 3.4,
+  "y": 0.8,
+  "z": -0.2,
+  "region": "charge",
+  "why": "ratchet 與 trap 拍點彈跳，808 低頻飽滿，炫耀式乾硬",
+  "conf": "mid"
+ },
+ {
+  "id": "drunken tiger|year of the tiger",
+  "artist": "Drunken Tiger",
+  "album": "Year of the Tiger",
+  "year": 1999,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 4,
+   "obscurity": 4,
+   "accessibility": 2
+  },
+  "x": 3.2,
+  "y": 1,
+  "z": 0.2,
+  "region": "boil",
+  "why": "九〇年代 boom bap，粗顆粒取樣與硬鼓，嗆聲饒舌",
+  "conf": "mid"
+ },
+ {
+  "id": "gai|光宗耀祖",
+  "artist": "GAI",
+  "album": "光宗耀祖",
+  "year": 2018,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 3,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.4,
+  "y": 0.9,
+  "z": 0.3,
+  "region": "boil",
+  "why": "trap 鼓組夾國風旋律與戲腔，大鳴大放、聲勢浩大",
+  "conf": "low"
+ },
+ {
+  "id": "khundi panda|garosawk",
+  "artist": "Khundi Panda",
+  "album": "GAROSAWK",
+  "year": 2020,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 2,
+   "obscurity": 4,
+   "accessibility": 4
+  },
+  "x": 2.7,
+  "y": 1.1,
+  "z": -0.8,
+  "region": "decay",
+  "why": "抽象陰鬱的取樣與稀疏鼓，密集內省咬字，暗色調",
+  "conf": "low"
+ },
+ {
+  "id": "lmf|大懶堂",
+  "artist": "LMF",
+  "album": "大懶堂",
+  "year": 2000,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 4,
+   "obscurity": 3,
+   "accessibility": 4
+  },
+  "x": 4.3,
+  "y": 1.8,
+  "z": -0.6,
+  "region": "charge",
+  "why": "rap metal，失真吉他牆與重鼓，粗口吼叫、火氣十足",
+  "conf": "mid"
+ },
+ {
+  "id": "miss ko 葛仲珊|皇后區的皇后",
+  "artist": "Miss Ko 葛仲珊",
+  "album": "皇后區的皇后",
+  "year": 2016,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 2,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 3.3,
+  "y": 0.6,
+  "z": 0,
+  "region": "boil",
+  "why": "trap 與流行饒舌，808 緊實、快嘴自信，製作乾淨",
+  "conf": "low"
+ },
+ {
+  "id": "ph-1|halo",
+  "artist": "pH-1",
+  "album": "HALO",
+  "year": 2019,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 2,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 2.6,
+  "y": 0,
+  "z": 1,
+  "region": "calm",
+  "why": "R&B 旋律饒舌，柔軟合成器與輕盈鼓，慵懶溫暖",
+  "conf": "mid"
+ },
+ {
+  "id": "the quiett|q train",
+  "artist": "The Quiett",
+  "album": "Q Train",
+  "year": 2006,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 2,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 2.7,
+  "y": 0.6,
+  "z": 1,
+  "region": "languid",
+  "why": "靈魂樂取樣 boom bap，爵士鋼琴與溫潤鼓，平穩放鬆",
+  "conf": "mid"
+ },
+ {
+  "id": "넉살|작은 것들의 신",
+  "artist": "넉살",
+  "album": "작은 것들의 신",
+  "year": 2016,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 3,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 3.1,
+  "y": 0.8,
+  "z": 0.2,
+  "region": "boil",
+  "why": "boom bap 為主，硬鼓配密集咬字，語氣機敏、中性",
+  "conf": "low"
+ },
+ {
+  "id": "廿四味|24herbs",
+  "artist": "廿四味",
+  "album": "24HERBS",
+  "year": 2008,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 2,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 3.8,
+  "y": 1,
+  "z": 0.4,
+  "region": "boil",
+  "why": "派對式港式饒舌，搖滾吉他與中樂點綴，六人輪番吆喝",
+  "conf": "low"
+ },
+ {
+  "id": "熊仔|夢想成真 sisyphus' dream",
+  "artist": "熊仔",
+  "album": "夢想成真 Sisyphus' Dream",
+  "year": 2019,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 2,
+   "obscurity": 4,
+   "accessibility": 2
+  },
+  "x": 2.8,
+  "y": 0.6,
+  "z": 0.3,
+  "region": "languid",
+  "why": "抒情 boom bap 與現代鼓，鋼琴弦樂鋪底，中速敘事",
+  "conf": "low"
+ },
+ {
+  "id": "瘦子 e.so|outta body 靈魂出竅",
+  "artist": "瘦子 E.SO",
+  "album": "Outta Body 靈魂出竅",
+  "year": 2020,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 3,
+   "obscurity": 4,
+   "accessibility": 2
+  },
+  "x": 2.8,
+  "y": 0.5,
+  "z": 0.3,
+  "region": "languid",
+  "why": "旋律 trap 與 R&B 唱腔，808 中慢速、氛圍合成器",
+  "conf": "mid"
+ },
+ {
+  "id": "艾福杰尼|楼兰",
+  "artist": "艾福杰尼",
+  "album": "楼兰",
+  "year": 2018,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 3,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 3.4,
+  "y": 0.9,
+  "z": -0.1,
+  "region": "charge",
+  "why": "西域旋律疊 trap 鼓組，快嘴連發，硬派帶異域感",
+  "conf": "low"
+ },
+ {
+  "id": "谢帝|人、社会、钱",
+  "artist": "谢帝",
+  "album": "人、社会、钱",
+  "year": 2015,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 3,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 3.3,
+  "y": 0.8,
+  "z": 0.6,
+  "region": "boil",
+  "why": "四川話饒舌配 trap 與 boom bap，拍點彈跳、俏皮市井",
+  "conf": "low"
+ },
+ {
+  "id": "高爾宣 osn|#osnrap",
+  "artist": "高爾宣 OSN",
+  "album": "#osnrap",
+  "year": 2019,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 2,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 2.6,
+  "y": -0.2,
+  "z": 0.6,
+  "region": "calm",
+  "why": "流行饒舌與抒情唱段，吉他鋼琴乾淨，輕鬆甜",
+  "conf": "mid"
+ },
+ {
+  "id": "jazzyfact|lifes like",
+  "artist": "Jazzyfact",
+  "album": "Lifes Like",
+  "year": 2010,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 2,
+   "obscurity": 4,
+   "accessibility": 2
+  },
+  "x": 2.5,
+  "y": 0.6,
+  "z": 1.2,
+  "region": "languid",
+  "why": "爵士取樣、溫潤鋼琴與鬆散鼓，慵懶暖色",
+  "conf": "mid"
+ },
+ {
+  "id": "mia x|unlady like",
+  "artist": "Mia X",
+  "album": "Unlady Like",
+  "year": 1997,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 3,
+   "obscurity": 4,
+   "accessibility": 2
+  },
+  "x": 3.4,
+  "y": 0.9,
+  "z": 0.2,
+  "region": "boil",
+  "why": "Beats By the Pound 南方硬拍，低頻厚、G-funk 合成器，強勢嗓音",
+  "conf": "mid"
+ },
+ {
+  "id": "lil tracy|anarchy",
+  "artist": "Lil Tracy",
+  "album": "Anarchy",
+  "year": 2019,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 2,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 3.1,
+  "y": 1,
+  "z": -0.4,
+  "region": "charge",
+  "why": "emo rap 混龐克吉他與失真，唱腔嘶啞，憂鬱帶衝勁",
+  "conf": "low"
+ },
+ {
+  "id": "diam's|dans ma bulle",
+  "artist": "Diam's",
+  "album": "Dans ma bulle",
+  "year": 2006,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 3,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 3,
+  "y": 0.2,
+  "z": 0.4,
+  "region": "lift",
+  "why": "流行饒舌與 R&B，鋼琴弦樂鋪陳，語氣激昂情緒飽滿",
+  "conf": "mid"
+ },
+ {
+  "id": "øzi|øzi: the album",
+  "artist": "ØZI",
+  "album": "ØZI: The Album",
+  "year": 2018,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 2,
+   "obscurity": 4,
+   "accessibility": 2
+  },
+  "x": 2.6,
+  "y": 0.5,
+  "z": -0.3,
+  "region": "decay",
+  "why": "R&B 與 trap，慢中速 808，暗色合成器、慵懶夜感",
+  "conf": "mid"
+ },
+ {
+  "id": "big freedia|just be free",
+  "artist": "Big Freedia",
+  "album": "Just Be Free",
+  "year": 2014,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 3,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 4.5,
+  "y": 0.8,
+  "z": 1,
+  "region": "boil",
+  "why": "bounce 高速 triggerman 拍與電音，口號式喊唱、熱烈派對",
+  "conf": "mid"
+ },
+ {
+  "id": "damso|ipséité",
+  "artist": "Damso",
+  "album": "Ipséité",
+  "year": 2017,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 3,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.8,
+  "y": 1,
+  "z": -1.1,
+  "region": "decay",
+  "why": "陰暗 trap，低頻厚、旋律憂鬱，冷調自剖",
+  "conf": "mid"
+ },
+ {
+  "id": "dj jubilee|take it to the st. thomas",
+  "artist": "DJ Jubilee",
+  "album": "Take It to the St. Thomas",
+  "year": 1998,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 3,
+   "obscurity": 4,
+   "accessibility": 2
+  },
+  "x": 4.4,
+  "y": 0.6,
+  "z": 1.2,
+  "region": "boil",
+  "why": "bounce 快拍與呼喊口號，鼓機密集、熱鬧街區派對",
+  "conf": "mid"
+ },
+ {
+  "id": "higher brothers|black cab",
+  "artist": "Higher Brothers",
+  "album": "Black Cab",
+  "year": 2017,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 3,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 3.5,
+  "y": 0.9,
+  "z": 0,
+  "region": "boil",
+  "why": "trap 808 轟炸，四人輪番快嘴，玩鬧又硬",
+  "conf": "mid"
+ },
+ {
+  "id": "partners-n-crime|pump tha party (puttin' in work)",
+  "artist": "Partners-N-Crime",
+  "album": "Pump tha Party (Puttin' in Work)",
+  "year": 1995,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 2,
+   "obscurity": 4,
+   "accessibility": 2
+  },
+  "x": 4.2,
+  "y": 0.7,
+  "z": 0.9,
+  "region": "boil",
+  "why": "bounce 快拍、triggerman 取樣與群喊，派對熱度高",
+  "conf": "low"
+ },
+ {
+  "id": "soulja slim|give it 2 'em raw",
+  "artist": "Soulja Slim",
+  "album": "Give It 2 'Em Raw",
+  "year": 1998,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 3,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 3.5,
+  "y": 1,
+  "z": -0.5,
+  "region": "charge",
+  "why": "No Limit 硬拍，低頻厚重、粗嗓兇狠，街頭感冷硬",
+  "conf": "mid"
+ },
+ {
+  "id": "spaceghostpurrp|mysterious phonk: the chronicles of spaceghostpurrp",
+  "artist": "SpaceGhostPurrp",
+  "album": "Mysterious Phonk: The Chronicles of SpaceGhostPurrp",
+  "year": 2012,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 3,
+   "obscurity": 3,
+   "accessibility": 4
+  },
+  "x": 2.7,
+  "y": 1.8,
+  "z": -1.6,
+  "region": "decay",
+  "why": "孟菲斯 phonk，低保真糊爛、深殘響與悶低頻，慢而陰森",
+  "conf": "mid"
+ },
+ {
+  "id": "turk|young & thuggin'",
+  "artist": "Turk",
+  "album": "Young & Thuggin'",
+  "year": 2001,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 2,
+   "obscurity": 4,
+   "accessibility": 2
+  },
+  "x": 3.7,
+  "y": 0.6,
+  "z": 0.4,
+  "region": "boil",
+  "why": "Mannie Fresh 彈跳鼓機與合成器，中快拍、街頭活力",
+  "conf": "mid"
+ },
+ {
+  "id": "u.n.l.v.|6th & baronne",
+  "artist": "U.N.L.V.",
+  "album": "6th & Baronne",
+  "year": 1993,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 3,
+   "obscurity": 4,
+   "accessibility": 2
+  },
+  "x": 4.1,
+  "y": 0.6,
+  "z": 0.6,
+  "region": "boil",
+  "why": "早期 bounce，Mannie Fresh 鼓機快拍與喊唱，粗糙熱鬧",
+  "conf": "low"
+ },
+ {
+  "id": "xavier wulf|project x",
+  "artist": "Xavier Wulf",
+  "album": "Project X",
+  "year": 2015,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 2,
+   "obscurity": 2,
+   "accessibility": 3
+  },
+  "x": 2.4,
+  "y": 1.4,
+  "z": -1,
+  "region": "decay",
+  "why": "孟菲斯 cloud，慢拍、低沉 808 與陰森取樣，有拍不兇",
+  "conf": "low"
+ },
+ {
+  "id": "113|les princes de la ville",
+  "artist": "113",
+  "album": "Les Princes de la ville",
+  "year": 1999,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 2,
+   "obscurity": 4,
+   "accessibility": 2
+  },
+  "x": 3.1,
+  "y": 0.7,
+  "z": 0.6,
+  "region": "boil",
+  "why": "DJ Mehdi 取樣拍點紮實，靈魂與北非旋律，街區暖意",
+  "conf": "mid"
+ },
+ {
+  "id": "ärsenik|quelques gouttes suffisent…",
+  "artist": "Ärsenik",
+  "album": "Quelques gouttes suffisent…",
+  "year": 1998,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 4,
+   "obscurity": 3,
+   "accessibility": 3
+  },
+  "x": 3.3,
+  "y": 1,
+  "z": -1,
+  "region": "charge",
+  "why": "陰暗弦樂取樣與硬鼓，兄弟咆哮式咬字，兇狠冷峻",
+  "conf": "mid"
+ },
+ {
+  "id": "booba|panthéon",
+  "artist": "Booba",
+  "album": "Panthéon",
+  "year": 2004,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 3,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 3.1,
+  "y": 1,
+  "z": -1,
+  "region": "charge",
+  "why": "冷硬極簡節拍與厚低頻，咬字狠戾，壓迫感",
+  "conf": "mid"
+ },
+ {
+  "id": "la rumeur|l'ombre sur la mesure",
+  "artist": "La Rumeur",
+  "album": "L'Ombre sur la mesure",
+  "year": 2002,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 3,
+   "obscurity": 4,
+   "accessibility": 3
+  },
+  "x": 2.8,
+  "y": 1.2,
+  "z": -1.3,
+  "region": "decay",
+  "why": "粗糙陰沉的 boom bap，悶鼓與暗色取樣，肅殺冷",
+  "conf": "mid"
+ },
+ {
+  "id": "lunatic|mauvais œil",
+  "artist": "Lunatic",
+  "album": "Mauvais œil",
+  "year": 2000,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 2,
+   "obscurity": 4,
+   "accessibility": 4
+  },
+  "x": 3.1,
+  "y": 1.2,
+  "z": -1.5,
+  "region": "charge",
+  "why": "壓迫陰暗的取樣與重鼓，咬字兇冷，從頭壓到尾",
+  "conf": "mid"
+ },
+ {
+  "id": "oxmo puccino|opéra puccino",
+  "artist": "Oxmo Puccino",
+  "album": "Opéra Puccino",
+  "year": 1998,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 4,
+   "obscurity": 4,
+   "accessibility": 2
+  },
+  "x": 2.6,
+  "y": 1,
+  "z": -0.6,
+  "region": "decay",
+  "why": "電影感陰鬱取樣，鼓鬆中慢速，低沉從容敘事",
+  "conf": "mid"
+ },
+ {
+  "id": "rohff|la vie avant la mort",
+  "artist": "Rohff",
+  "album": "La Vie avant la mort",
+  "year": 2001,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 3,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 3.4,
+  "y": 0.9,
+  "z": -0.4,
+  "region": "charge",
+  "why": "hardcore 法語饒舌，硬鼓快嘴、氣勢衝，偶夾 R&B",
+  "conf": "mid"
+ },
+ {
+  "id": "$uicideboy$|i want to die in new orleans",
+  "artist": "$uicideboy$",
+  "album": "I Want to Die in New Orleans",
+  "year": 2018,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 4,
+   "obscurity": 2,
+   "accessibility": 4
+  },
+  "x": 3.5,
+  "y": 1.6,
+  "z": -1.6,
+  "region": "charge",
+  "why": "失真 808 與陰森取樣，嘶吼段落，暗黑壓迫",
+  "conf": "mid"
+ },
+ {
+  "id": "beenzino|nowitzki",
+  "artist": "Beenzino",
+  "album": "NOWITZKI",
+  "year": 2023,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 3,
+   "obscurity": 4,
+   "accessibility": 2
+  },
+  "x": 2.4,
+  "y": 0.2,
+  "z": 0.6,
+  "region": "calm",
+  "why": "爵士與 alt R&B 鬆散節拍，輕柔內省、溫和",
+  "conf": "mid"
+ },
+ {
+  "id": "bones|garbage",
+  "artist": "BONES",
+  "album": "Garbage",
+  "year": 2014,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 2,
+   "obscurity": 2,
+   "accessibility": 2
+  },
+  "x": 2.4,
+  "y": 1.5,
+  "z": -1.4,
+  "region": "decay",
+  "why": "低保真 cloud，糊爛殘響與悶低頻，有拍無攻擊、陰冷",
+  "conf": "low"
+ },
+ {
+  "id": "ecco2k|e",
+  "artist": "Ecco2k",
+  "album": "E",
+  "year": 2019,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 3,
+   "obscurity": 1,
+   "accessibility": 4
+  },
+  "x": 2.2,
+  "y": 0.2,
+  "z": -0.6,
+  "region": "still",
+  "why": "空靈自動調音嗓音、閃爍電子與碎拍，晶瑩冷感",
+  "conf": "mid"
+ },
+ {
+  "id": "kery james|si c'était à refaire...",
+  "artist": "Kery James",
+  "album": "Si c'était à refaire...",
+  "year": 2001,
+  "genre": "hiphop",
+  "tier": null,
+  "old": {
+   "classic": 4,
+   "obscurity": 3,
+   "accessibility": 2
+  },
+  "x": 2.6,
+  "y": 0.4,
+  "z": -0.6,
+  "region": "still",
+  "why": "打擊樂與木琴取代管弦，中慢速、肅穆沉重",
+  "conf": "mid"
+ },
+ {
   "id": "juno reactor|bible of dreams",
   "artist": "Juno Reactor",
   "album": "Bible of Dreams",
@@ -494,8 +1348,8 @@
   "conf": "mid"
  },
  {
-  "id": "carl perkins|dance album of carl perkins",
-  "artist": "Carl Perkins",
+  "id": "carl perkins (rockabilly)|dance album of carl perkins",
+  "artist": "Carl Perkins (rockabilly)",
   "album": "Dance Album of Carl Perkins",
   "year": 1957,
   "genre": "rock",
