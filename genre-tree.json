@@ -5,12 +5,12 @@
   {
    "id": "rock",
    "zh": "搖滾",
-   "count": 4954,
+   "count": 4961,
    "children": [
     {
      "id": "indie-alt",
      "zh": "獨立另類",
-     "count": 998,
+     "count": 999,
      "children": [
       {
        "id": "indie-rock",
@@ -25,7 +25,7 @@
       {
        "id": "indie-pop",
        "zh": "獨立流行",
-       "count": 276
+       "count": 277
       },
       {
        "id": "art-exp",
@@ -62,17 +62,17 @@
     {
      "id": "jrock-asia",
      "zh": "日亞搖滾",
-     "count": 981,
+     "count": 988,
      "children": [
       {
        "id": "tw",
        "zh": "台灣",
-       "count": 284
+       "count": 286
       },
       {
        "id": "jp",
        "zh": "日本",
-       "count": 265
+       "count": 269
       },
       {
        "id": "th",
@@ -85,6 +85,11 @@
        "count": 56
       },
       {
+       "id": "kr",
+       "zh": "韓國",
+       "count": 54
+      },
+      {
        "id": "cn",
        "zh": "中國",
        "count": 54
@@ -93,11 +98,6 @@
        "id": "sg",
        "zh": "新加坡",
        "count": 54
-      },
-      {
-       "id": "kr",
-       "zh": "韓國",
-       "count": 53
       },
       {
        "id": "mn",
@@ -317,7 +317,7 @@
     {
      "id": "dream-post",
      "zh": "音牆後搖",
-     "count": 255,
+     "count": 261,
      "children": [
       {
        "id": "post-rock",
@@ -327,17 +327,17 @@
       {
        "id": "shoegaze",
        "zh": "瞪鞋",
-       "count": 109
+       "count": 114
       },
       {
        "id": "dream-pop",
        "zh": "夢幻流行",
-       "count": 88
+       "count": 92
       },
       {
        "id": "slowcore",
        "zh": "慢核",
-       "count": 45
+       "count": 47
       }
      ]
     },
@@ -1004,7 +1004,7 @@
   {
    "id": "soul",
    "zh": "靈魂放克",
-   "count": 1606,
+   "count": 1608,
    "children": [
     {
      "id": "funk",
@@ -1046,7 +1046,7 @@
     {
      "id": "classic-rnb",
      "zh": "經典 R&B / Doo-wop",
-     "count": 816,
+     "count": 817,
      "children": [
       {
        "id": "funk",
@@ -1071,7 +1071,7 @@
       {
        "id": "neo-contemporary",
        "zh": "Neo-Soul / 當代",
-       "count": 92
+       "count": 93
       },
       {
        "id": "smooth",
@@ -1123,7 +1123,7 @@
     {
      "id": "neo-soul",
      "zh": "Neo-Soul",
-     "count": 95,
+     "count": 97,
      "children": []
     },
     {
@@ -1137,12 +1137,12 @@
   {
    "id": "hiphop",
    "zh": "嘻哈 R&B",
-   "count": 1417,
+   "count": 1443,
    "children": [
     {
      "id": "east-coast",
      "zh": "東岸 / Boom Bap",
-     "count": 363,
+     "count": 364,
      "children": [
       {
        "id": "hardcore",
@@ -1157,19 +1157,19 @@
       {
        "id": "abstract",
        "zh": "抽象與地下",
-       "count": 94
+       "count": 95
       },
       {
        "id": "jazz-rap",
        "zh": "Jazz Rap / Conscious",
-       "count": 75
+       "count": 76
       }
      ]
     },
     {
      "id": "rnb",
      "zh": "當代 R&B",
-     "count": 358,
+     "count": 360,
      "children": [
       {
        "id": "contemporary",
@@ -1179,12 +1179,12 @@
       {
        "id": "hiphop-side",
        "zh": "偏嘻哈",
-       "count": 65
+       "count": 66
       },
       {
        "id": "neo-soul",
        "zh": "Neo-Soul",
-       "count": 63
+       "count": 65
       },
       {
        "id": "alt",
@@ -1201,27 +1201,27 @@
     {
      "id": "underground",
      "zh": "地下與抽象",
-     "count": 296,
+     "count": 316,
      "children": [
       {
        "id": "abstract",
        "zh": "抽象與實驗",
-       "count": 134
+       "count": 139
       },
       {
        "id": "east-coast",
        "zh": "東岸地下",
-       "count": 91
+       "count": 92
       },
       {
        "id": "jazz-rap",
        "zh": "Jazz Rap / Conscious",
-       "count": 75
+       "count": 81
       },
       {
        "id": "instrumental",
        "zh": "Instrumental / Beats",
-       "count": 59
+       "count": 69
       },
       {
        "id": "industrial",
@@ -1238,7 +1238,7 @@
     {
      "id": "south",
      "zh": "南方 / Trap",
-     "count": 280,
+     "count": 281,
      "children": [
       {
        "id": "dirty-south",
@@ -1248,7 +1248,7 @@
       {
        "id": "trap",
        "zh": "Trap / Drill",
-       "count": 124
+       "count": 125
       },
       {
        "id": "cloud",
@@ -1270,27 +1270,27 @@
     {
      "id": "conscious",
      "zh": "Jazz Rap / Conscious",
-     "count": 218,
+     "count": 229,
      "children": [
       {
        "id": "jazz-rap",
        "zh": "Jazz Rap",
-       "count": 91
+       "count": 99
       },
       {
        "id": "alternative",
        "zh": "Alternative Hip-hop",
-       "count": 89
+       "count": 90
       },
       {
        "id": "conscious",
        "zh": "Conscious / Political",
-       "count": 67
+       "count": 68
       },
       {
        "id": "neo-soul",
        "zh": "偏 Neo-Soul",
-       "count": 33
+       "count": 35
       }
      ]
     },
@@ -1898,22 +1898,22 @@
   {
    "id": "world",
    "zh": "世界",
-   "count": 950,
+   "count": 953,
    "children": [
     {
      "id": "reggae",
      "zh": "Reggae / Dub",
-     "count": 298,
+     "count": 301,
      "children": [
       {
        "id": "roots",
        "zh": "Roots Reggae",
-       "count": 123
+       "count": 124
       },
       {
        "id": "dub",
        "zh": "Dub",
-       "count": 116
+       "count": 119
       },
       {
        "id": "dancehall",
@@ -1928,7 +1928,7 @@
       {
        "id": "ska",
        "zh": "Ska / Rocksteady",
-       "count": 35
+       "count": 36
       }
      ]
     },
