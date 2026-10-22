@@ -3117,4 +3117,7 @@ window.DipPreviewStatus = Object.freeze({
   "rod modell|frequencies in the fog": "unavailable",
   "din a testbild|programm 2": "unavailable",
   "trans-x|living on video": "unavailable",
+  "vex'd|cloud seed": "unavailable",
+  "scorn|logghi barogghi": "unavailable",
+  "lull|continue": "unavailable",
 });

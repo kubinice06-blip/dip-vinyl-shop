@@ -89,3 +89,17 @@
 - **17383** 評語與來源邊界（派工加註：媒體名與媒體榜名次整句不寫、不用「據說／據傳」、「評者形容」只寫聲音不寫評價）：Plan B 的「評者讚賞製作」與引句整格捨去；Life Cycle 的「讚賞動態範圍」只留聲音（巨大與微小之間的動態範圍），「另一位評者覺得只有末曲到達恐懼與敬畏」整格捨去，主題解讀留「評者從中聽出恐懼、死亡與個體的渺小」（內容描述、非褒貶，可逆）；Change「評者形容它的聲音少有銳利稜角」、DJ Spooky「評者聽到的聲音裹在殘響裡、蒙著失真的面紗」皆為聲音。Anika 的官方說明改被動「被形容成一種不安的輕鬆聆聽」，引號拿掉轉間接。媒體名、資料平台名、「據」字、「也就是」grep 皆 0。
 - **17384** 日期「日」後一字照 17375：You All Look 在、Controlling Crowds 另、Cloud Seed 由、Change 推、Logghi 上、Zander 先、Songs 面；其餘只到月或年。Mick Harris 三張（Logghi／Zander／Greetings＋Plan B）的廠牌引入法逐張不同：「留在 Earache 的終章」／「先在美國交 Invisible 出版」／「交給 Hymen 發行」／「由德國 Hymen 發行」；Archive 三張：「掛的是 Hangman Records 的字標」／「由 Warner Music France 推出」／「經 Dangervisit 問世」。
 - **17385** 自掃 han() 4-gram（本檔＋當時的 out-2 合掃，hook 計入）：拆掉 共同製作、國由發行／美國由發、被歸在與、錄音室專輯（×3 族）、發行廠牌是、這支樂團、這是他的、專輯年月、評者形容（本檔兩張留一）、伯明罕的、在伯明罕、極簡節拍、首長分秒、總長分秒、年月發行、發行的這張、第二張專輯、於伯明罕、世由發行、在同年月、這張是他、到了同年。定稿只剩地名「布里斯托」×3（Life Cycle／w2 Emika／Nexus，專名）與「掛名製作」×2（本檔 Controlling Crowds 為 17374 指派領句；對 w2 PJ Harvey，請 writer-2 或主線收件合掃時處理）。writer-2 定稿後請主線兩檔再合掃一次。
+
+## 寫作層（writer-2）
+- **17386** 交件：`desc-tools/batches/output/add-20261022-md9-out-2.json` 11 張（full 7：214–237；thin 4：Continue 164、Journey 167、Lights 173）。逐張：Emika 223、Is This Desire? 235、Some Say I 234、Dolores 237、Unsound Methods 235、Liquid 220、Continue 164、Journey 167、Lights 173、Kistvaen 230、Nexus 214。初稿超標 2 張（PJ Harvey 245、Dolores 249），整格／子句捨去壓回；`qa-batch out`（兩檔合計 23 張）、`qa-check-research` 標記 0、`fix-spacing` 待補 0。
+- **17387** 第二句領句全照 17374；「日」後一字照 17375（Emika 交、PJ Harvey 出、Ghostpoet 發、Dolores 首、Unsound Methods 於、Kistvaen 問），日期前一字逐張不同（Emika 夫、PJ Harvey 響、Ghostpoet 驗、Dolores 合、Unsound Methods 詞、Kistvaen 身）；Kistvaen 日期前一字避開已知殘片「場年月日」改成「身」。其餘 5 張只寫到月、年或季（Liquid「年月推出」、Lights「年月由」、Continue「年月於」、Journey「年由英國」、Nexus「年夏天由」）。
+- **17388** 評語邊界（派工加註）：正文 0 個媒體名、0 個媒體榜名次、0 個「據」字；「評者形容」類只留聲音描述、不具名說話者——Nexus 捨去 note 末格「略長、稍欠歡愉」（評價），只寫雷鳴重擊兼大鼓、巨大低頻、sound system 傳統；Emika 的「陰暗、誘人而神祕」只留「陰暗而神祕」；Ghostpoet、Kistvaen 的評者語轉成直述的聲音句。
+- **17389** 自掃 han() 4-gram（本檔＋out-1 合掃，hook 計入）：定稿 3 張以上只剩地名「布里斯托」。途中拆掉：「錄音從年／到隔年月」（PJ×Unsound）、「共同製作」×3、「錄音室專輯」×3、「被歸在與」×3、「國由發行」×3、「總長分秒」「掛名製作」「這張是他」「這是他的」「到了同年」「張個人專輯」「世由發行」「年月發行」「發行廠牌是」「首長分秒」（皆對 out-1 的 2 張殘片，照 writer-base 第 5 條當 3 張處理）。對 md1–md8／mc／ml 已上架 out 的通用日期樣板（年月日發／日問世等）屬 17375 鉤子層配表，未再追。
+- **17390** 開頭兩句交代身分：Liquid 第二句照指派只寫「Recoil 的 Alan Wilder」，note 未給樂種，未從 facts 撈 illbient 補（同人身分由 Unsound Methods 那張的 Depeche Mode 交代）；Journey 的 hook 代稱「他」在第二句以 Mick Harris 具名。Continue 的「Relapse 旗下」照 note 寫。
+
+## 主線審稿（2026-10-22）
+- **17395-R**：逐張審 23 篇（全文印出、逐句對 note 與研究稿）。改 3 處：
+  - `desc2:Scorn|Logghi Barogghi`：刪「雙方對這段合作似乎都不滿意」——研究 b 組出處是維基的「似乎」推測句，單源且含糊，不進正文。234 → 220 字。
+  - `desc2:Recoil|Liquid`：第二句「開車的是 Recoil 的 Alan Wilder」→「開車的是以 Recoil 之名做電子音樂的 Alan Wilder」——開頭兩句要讓不懂的人知道是誰（樂種）；寫作層已回報這個缺口。不新增專名（Depeche Mode 留在 Unsound Methods 那張），研究／hooks 不必改。228 字。
+  - `desc2:PJ Harvey|Is This Desire?`：「她在英國最大的單曲」→「她在英國排名最高的單曲」——研究 c 組的 facts 指的是單曲榜名次，「最大」會被讀成銷量。
+  - 抽核：Scorn 各盤廠牌（Earache→KK／Invisible→Hymen，主線 17393）、Plan B「第八張錄音室專輯」（研究 b 組，維基）、Lull《Journey》廠牌 Sentrax 與 Earache 授權（研究 d 組）、Archive《Lights》法國榜 15、《Controlling Crowds》法國榜 7 是銷售榜不是媒體榜（保留）、Life Cycle「評者從中聽出恐懼、死亡與個體的渺小」是內容描述非褒貶（保留）。無媒體名、無媒體年終榜、無「據說／據傳」、無資料平台名。qa-batch out、qa-check-research（兩檔 0 標記）、fix-spacing 全過。
