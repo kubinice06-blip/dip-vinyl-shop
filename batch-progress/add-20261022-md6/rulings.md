@@ -87,3 +87,16 @@
 - **17152**　回頭叫原策展代理補 12 張邊距寬的候補（y ≥ 1.2、z ≤ −0.9、無鼓、非田野錄音），收 9 張同位置替入、組別不變：a Thomas Köner《Aubrite》、Bass Communion《Molotov and Haze》；b Köner《Kaamos》；c Kevin Drumm《Imperial Horizon》《Tannenbaum》；d Elegi《Sistereis》；e Paul Jebanasam《Continuum》、Kevin Richard Martin《Return to Solaris》、Köner《Tiento de las Nieves》。未收 3 張：Köner《Unerforschtes Gebiet》（本批 Köner 已 5 張）、KRM《Frequencies for Leaving Earth, Volume 1》、Bass Communion《Ghosts on Magnetic Tape》（磁帶懷舊感，Jeck 色溫風險同形）。補研究由一支代理 append 進各組檔。
 - **17153**　研究層其餘存疑不汰：loscil 各張（md1 兩張評分 z −0.8／−1.2，同一人的「亮」「cozy」是相對前作而言）、Kane Ikin《Modern Pressure》與 Black to Comm 同名盤（有拍無攻擊性，照 10-22 規則仍靜）、Svarte Greiner《Black Tie》、Kreng《The Summoner》（單曲段落有鼓，整盤中位數靜）、Irisarri《Solastalgia》（md1 同人同型評 z −0.7）、Xela《The Dead Sea》、Mika Vainio、Ambarchi《In the Pendulum's Embrace》（輕刷鼓不兇）。評分後看落格。
 - **17154**　Svarte Greiner《Penpals Forever (And Ever)》年份 2008 → 2010、廠牌 Digitalis Limited → Digitalis Recordings（e 組：帶「(And Ever)」的是 2010 CD／LP 版；MB 把卡帶原版併進同一 release-group 才得 2008）。`master-override-md6.json` 改。
+
+## 補研究（17152 替入 9 張；條號 17155–17160）
+- **17155**｜Köner《Aubrite》：身分屬實（Barooni，MB 1996-03-08；維基寫 1995，不動卡單）。Kaamos：status thin（維基僅曲目背景，聲音描述缺；〈Tabula Smaragdina〉為 1997 羅浮宮現場錄音，音色可能異於另三首）。
+- **17156**｜Kevin Drumm 兩張：《Imperial Horizon》thin（單軌 64:53〈Just Lay Down And Forget It〉，樂評僅 FACT 一句；2016 Bandcamp 版 58:18）；《Tannenbaum》full（Brainwashed「minimal, cold, alienating」、BPM 交叉；約 2.5 小時雙 CD）。
+- **17157**｜Bass Communion《Molotov and Haze》：身分屬實（Important imprec193，2008-07-22，聲源吉他）。moodGuess 輕微存疑：Wilson 自述前兩首 noisy、後兩首 beautiful，色溫可能前冷後暖。
+- **17158**｜Elegi《Sistereis》：thin。Discogs 標 Modern Classical／Ambient，十首多為 3–8 分鐘，聲音描述完全缺；moodGuess「低頻嗡鳴與雜訊霧」中等存疑。
+- **17159**｜Paul Jebanasam《Continuum》：**推翻「無鼓」**。Exclaim! 載第二首開頭「fast, intense beats」、第三首「heavily distorted percussion」，A Closer Listen 亦提「pounding percussion」；失真重吻合。Tarik Barri 與專輯的直接關係未證實（只查到 2018 同名現場作品）。
+- **17160**｜Köner《Tiento de las Nieves》：**推翻聲源（嚴重）**。Igloo、Textura 皆明載為**鋼琴**（Ivana Neimarevic 彈），疏落琴音、平和、近 Budd／Eno，非「管風琴凍結成厚重低頻」；建議主線汰換或評分特別處理。KRM《Return to Solaris》full，Arts Desk 載 largely beatless 吻合，〈Together Again〉較暖，輕微存疑。
+- 總結：9 張 facts 8–9 條、全 https；full 6／thin 3（Kaamos、Imperial Horizon、Sistereis）。WebSearch 3 次，其餘用 WebFetch、MB、Discogs API。
+
+
+## 主線（補研究後再汰換）
+- **17154b**　補研究推翻 2 張替入卡（e 組條目已刪）：Thomas Köner《Tiento de las Nieves》（Igloo、Textura 明寫疏落鋼琴＋靜默、近 Harold Budd，質地輕落平靜）、Paul Jebanasam《Continuum》（Exclaim! 與 A Closer Listen：快速強烈節拍、失真 pounding 打擊＝有拍又兇）。再替入策展補提的另兩張、組別 e：Köner《Unerforschtes Gebiet》（Köner 本批 5 張，無上限）、Kevin Richard Martin《Frequencies for Leaving Earth, Volume 1》。Elegi《Sistereis》（Modern Classical 標籤、短曲）與其餘輕度存疑不汰，評分後看落格。
