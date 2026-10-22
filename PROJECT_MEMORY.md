@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-22｜dip-vinyl-shop｜薄細項策展線 ts5／ts6：嘻哈深度 45＋Neofolk／Psy／50s 搖滾／Doo-wop 45 張上線；全線 11 批完成
+
+- **內容**：店主「還沒做完的批次繼續做」。ts5（`add-20261022-ts5`）：台華 12（國蛋、ØZI、高爾宣、瘦子、Higher Brothers、GAI、艾福杰尼、熊仔、LMF、Miss Ko、谢帝、廿四味）、韓 10、法語 10（Oxmo、Rohff、Diam's、Kery James、Damso、La Rumeur、Lunatic、Booba、Ärsenik、113）、Bounce／No Limit／Cash Money 7、Cloud／emo 6。ts6（`add-20261022-ts6`）：Neofolk 12、Psy／Goa 12、50 年代搖滾原盤 11、Doo-wop 原盤 10。Miss Ko 換盤《皇后區的皇后》（原提名 Apple／Discogs 核不到）。
+- **主線審稿**：ts5 改 4 張（Groove 年度選、Abcdr du Son、Complex 媒體名刪除；Jazzyfact「兩個高中生」與 Beenzino 生年不合）；ts6 改 4 張（Classical Mushroom 待引用句、Hux Flux「維基把…」、Fats Domino 曲名懸空句、Five Satins 主詞）＋鉤子層 Carl Perkins 時序矛盾改骨架。
+- **Carl Perkins 拆卡**：池中已有同名爵士鋼琴手與其藝人介紹，rockabilly 那張改名「Carl Perkins (rockabilly)」（Air (US jazz trio) 先例），KV 3 鍵、card_catalog 1 筆搬移、本機六處同步。
+- **類型樹**：台華 10→21、韓 11→21、法語 10→20、Bounce 16→23、Cloud 南方 32→35／地下 19→24、Neofolk 12→24、Psy／Goa 14→26、50s 搖滾 14→25、Doo-wop 16→26。
+- **收尾**：情緒三軸 90 張（`score-ts2`）併進 priors，併 main 後照質地尺新規則抬 Five Satins 1 張，gate 綠 19,548／19,548；§11 新藝人 71 位補進 roster、切 `ar-d-135`～`136`（只切未寫，連同 129～134 待新工作階段跑）。`meta.mjs` 補台韓法港比瑞商店區；Apple 專輯搜尋多數回空，改走藝人目錄逐首核對（坑記在 HANDOFF 第三節）。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`onboarding-manifest-add-20261022-ts{5,6}-20261022.json`、`batch-progress/add-20261022-ts{5,6}/*`、`batch-progress/thin-sub-20261020/*`、`desc-tools/batches/*/add-20261022-ts{5,6}-*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`、`data/mood/*`、`batch-progress/mood-axes/{build-priors.mjs,score-ts2/*,rulings.md}`、`batch-progress/artist-intro/roster-20260929.json`、`desc-tools/batches/artist/{progress.json,cut/ar-d-135..136.txt}`、`batch-progress/HANDOFF-thin-sub-line.md`。
+- **驗證**：封面 90 張上線前回讀 200；`verify-album-onboarding --published` ts5／ts6 皆 0 error；KV 回讀 ts5 57/57、ts6 45/45；card_catalog 45/45、45/45；`build-card-moods` gate 綠、錨點 104/104。
 ### 2026-10-22｜dip-vinyl-shop｜質地尺改判：暖慢的包覆感算重，恍惚 592 → 772
 
 - **內容**：店主「落日飛車確實是恍惚（dream pop 大部分也都是恍惚）重新評斷」。評分說明書 Y 軸加「包覆感算重」（dream pop 殘響霧、夢幻吉他與合成器墊、慢板靈魂厚低頻與弦樂、chillwave 糊濾波）；落日飛車《Jinji Kikko》與《Let's Get It On》錨點移恍惚；放鬆／平靜 705 張候選由 9 支代理只重判質地，主線退回 4 張，195 張寫進 `data/mood/overrides.json`（放鬆→恍惚 178、平靜→頹靡 17）。ts5／ts6 另開工作階段在跑。

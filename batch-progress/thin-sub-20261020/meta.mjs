@@ -22,7 +22,7 @@ async function mbTracks(rg) {
 async function apple(c, want) {
   const cands = new Map();
   // 地區 storefront 優先（vn／th／ph／my／sg／id／in／pk／mn 等），再 us、jp
-  const SF = { vn: 'vn', kh: 'kh', sg: 'sg', th: 'th', ph: 'ph', my: 'my', id: 'id', in: 'in', pk: 'pk', mn: 'mn', bd: 'bd', lk: 'lk', np: 'np' };
+  const SF = { vn: 'vn', kh: 'kh', sg: 'sg', th: 'th', ph: 'ph', my: 'my', id: 'id', in: 'in', pk: 'pk', mn: 'mn', bd: 'bd', lk: 'lk', np: 'np', tw: 'tw', hk: 'hk', kr: 'kr', fr: 'fr', be: 'be', se: 'se', cn: 'tw' };
   for (const cc of [...new Set([SF[c.country], 'us', 'jp'].filter(Boolean))]) {
     for (const term of [`${c.artist} ${c.album}`, c.album]) {
       await sleep(1600);

@@ -3017,4 +3017,13 @@ window.DipPreviewStatus = Object.freeze({
   "sói đen|chiến tranh và hòa bình": "unavailable",
   "stompin' ground|measured by the richter scale": "unavailable",
   "plainsunset|the gift": "unavailable",
+  "fats domino|rock and rollin' with fats domino": "unavailable",
+  "fats domino|this is fats domino!": "unavailable",
+  "the penguins|the cool, cool penguins": "unavailable",
+  "the del-vikings|come go with the del vikings": "unavailable",
+  "谢帝|人、社会、钱": "unavailable",
+  "廿四味|24herbs": "unavailable",
+  "lunatic|mauvais œil": "unavailable",
+  "113|les princes de la ville": "unavailable",
+  "bones|garbage": "unavailable",
 });

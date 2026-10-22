@@ -155,6 +155,14 @@
 - **結果**：八格 頹靡 982→926、恍惚 596→592、沸騰 1983→1987、亢奮 2592→2648；錨點 104/104 同格（60 張無一是錨點）。
 - **沒做**：舊批次評分檔不回改（v0 不動，覆寫層承擔）；日後新卡照新 BRIEF 評。
 
+## 2026-10-22｜薄細項策展線 ts5／ts6 新卡補評（score-ts2）：90 張
+
+- **工單**（`score-ts2/select.mjs <批>`）：每批一份（`chunk-ts6.json`、`chunk-ts5.json` 各 45），各一支代理照 `score500/BRIEF.md`（含 10-22 能量軸新標準）評。`merge.mjs` 改讀資料夾內所有 `chunk-*.json`。
+- **結果**：90 張、0 錯誤。conf：mid 52、low 38。八格：放鬆 11、平靜 12、恍惚 6、頹靡 9、雀躍 19、冷冽 0、沸騰 17、亢奮 16。
+- **判例**：neofolk（含 Wardruna、ORE 的軍鼓）無失真無嘶吼 → 留靜；psy／Goa 比照錨點 techno 判躁 3.8–4.5；cloud／phonk 有拍不兇留靜（SpaceGhostPurrp 2.7、Xavier Wulf 2.4、BONES 2.4、Ecco2k 2.2），$uicideboy$ 失真 808＋嘶吼 3.5；La Rumeur「節拍不打」照 Armand Hammer 留靜 2.8、Lunatic 鼓重咬字兇 3.1；Lil Tracy 3.1（emo rap＋龐克吉他）邊界。主線未改分。
+- **Carl Perkins 拆卡**：工單 id 隨卡改為 `carl perkins (rockabilly)|dance album of carl perkins`。
+- **併 main 後補質地尺**：本批評分時分支還沒有 10-22 質地尺新規則（#117）。併入後主線對落放鬆／平靜的 22 張逐張照新規則複核，只抬 Five Satins《The 5 Satins Sing》y −0.6→+0.7（理由本身寫「殘響包著和聲」，放鬆→恍惚；`score-ts2/review.json`）。Platters、McPhatter 等 50 年代弦樂慢歌是單聲道乾淨錄音、不霧，neofolk 原聲民謠、韓語 R&B 饒舌皆維持。
+- **全池**：`build-priors.mjs` 加 `score-ts2/scored-ts2.json`；`build-card-moods.mjs` gate 綠：19,548／19,548、錨點 104/104、店主改判 256。八格 放鬆 4,985、平靜 1,328、恍惚 779、頹靡 952、雀躍 5,962、冷冽 874、沸騰 2,004、亢奮 2,664。
 ## 2026-10-22｜質地尺改判：暖慢的包覆感算重（恍惚 592 → 772）
 
 - **店主**：「落日飛車確實是恍惚（dream pop 大部分也都是恍惚）重新評斷」——選了 10-16 補充計畫 §5 的 (b)：改尺，不靠補卡。
