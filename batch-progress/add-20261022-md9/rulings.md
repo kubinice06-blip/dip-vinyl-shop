@@ -61,3 +61,12 @@
 - 17358：DJ Krush《Butterfly Effect》屬實（Es.U.Es，2015）。moodGuess 強烈存疑：Igloo 評論描述 jazz-funk、小號／薩克斯風／鋼琴、弦樂背景的饒舌（Divine Styler 三首、Tha Boss）、MC Crosby Bolani 的 dancehall 式唸唱；Discogs 標 Jazzy Hip-Hop、Broken Beat。偏暖有律動有人聲，建議汰換。
 - 17359：WebSearch 用 3 次（Liquid、Continue、Butterfly Effect）。Wikipedia curl 429、AllMusic 403、recoil19 單張頁 404、Pitchfork 被封、Sputnik 503；Discogs API 與 MB 直連可用。
 - 17360：本組 8 張無選輯或重複卡。建議汰換候選（主線裁）：HÆLOS、Krush、Bloodline（低信心）；Liquid、subHuman、Unsound Methods 為存疑留用。
+
+## 主線裁定（研究層交件後）
+- **17391**：照研究層的聲音事實汰 13 張（卡單與研究 a–e 檔已移除，原卡存 `dropped-cards.json`）：
+  - **有攻擊性＋鼓 → 躁**：The Third Eye Foundation《The Dark》（樂評以 drill'n'bass 描述、破碎鼓、噪音推到極限、尖叫人聲）、Scorn《Stealth》（「shotgun snare cracks」、強攻擊軍鼓）、《Refuse Start Fires》（廠方「perhaps the angriest」、加現場鼓手、drum & bass／noise 標籤）、Recoil《Bloodline》（x 2.7 邊緣、單曲 trance／舞池混音）。
+  - **偏暖（情歌、靈魂、藍調、爵士放克）**：Archive《Take My Head》（流行交響 trip-hop、Hammond＋大提琴、主題溫柔）、《With Us Until You're Dead》（Keeler 自述情歌、靈魂元素）、《Call to Arms & Angels》（快節拍、吉他尾聲、樂評稱合成器更暖）、Emika《DVA》（布拉格愛樂弦樂、小號、女高音）、DJ Krush《Butterfly Effect》（爵士放克、銅管、饒舌、broken beat）、Recoil《subHuman》（紐奧良藍調歌手、口琴、奧斯汀錄音）、HÆLOS《Full Circle》（dark euphoria、breaks、真鼓吉他偏亮）。
+  - **質地判輕**：Sevdaliza《Shabrang》（樂評「soft, airy」、鋼琴弦樂多）、Anja Garbarek《Smiling & Waving》（弦樂銅管木管為主、重無來源）。
+- **17392**：留下但標存疑：Recoil《Liquid》（官方站「憤怒與暴力」、Galás 嘶喊；但整體是電影式慢板拼貼、鼓為剪貼素材，判有攻擊沒推進——評分照聲音打）、Anika《Change》（比首作乾淨）、PJ Harvey《Is This Desire?》（吉他退場、鍵盤電子鋪底，質地缺證）、Ghostpoet《Some Say I…》（〈Plastic Bag Brain〉Afrobeat＋Tony Allen 鼓，其餘 glitch 偏冷）、Vex'd《Cloud Seed》（2006–07 未完成曲目編選，MB Album，保留）、Bohren《Dolores》（有鼓手，極慢）、Lull 兩張（無鼓只靠標籤）、Archive 三張（真人樂團＋管弦，慢而厚；池中《Londinium》落頹靡）。
+- **17393**：照研究層改卡單廠牌：Archive《You All Look the Same to Me》→ Hangman Records、《Controlling Crowds》《Lights》→ Warner Music France、Young Echo《Nexus》→ Ramp Recordings、Scorn《Zander》→ KK Records（美 Invisible）、《Greetings from Birmingham》《Plan B》→ Hymen、Lull《Journey Through Underworlds》→ Sentrax（SET 4，2024 Cold Spring 再版）。HÆLOS 已汰（「Portishead 脈絡」無來源）。
+- **17394**：**全批 23 張**。候補已見底（策展兩輪 51、主線汰 15、研究汰 13）。trip-hop／Bristol 主盤與二線、暗 R&B 主盤大多已在池，二線多帶暖或推進，頹靡線這個場景產量低；建議下一批頹靡改排 md10（冷 shoegaze／drone pop）、md16（cloud rap 冷盤）等仍有池子的場景。
