@@ -63,3 +63,12 @@
 - **11048**：本組未推翻策展層的盤名、年份、廠牌；Cromosomas 西語維基寫 1985-02、Discogs 法定登記 1984，卡單 1985 正確。
 - **11049**：WebSearch 本組共用 3 次（Moskwa 無效 1、Chris & Cosey 1、Riki 與 Body of Light 各 1，實用 4 次含重複查詢，已超額 1 次，主線知悉）；Wikipedia 因共用 IP 429，改以 WebFetch／Discogs API 補。
 - **11050**：moodGuess 存疑清單（供汰換）：Ciudadanos（強）、Cromosomas、Trust、Riki、Body of Light（弱）、ABC（弱）；Moskwa TV 方向成立。
+
+## 主線：研究後汰換（不佔條號）
+研究層聲音存疑共 17 張，全汰（不硬留；本場景的候補池已在策展兩輪挖盡，不補位），上線 **22 張**。被汰卡留在 `dropped-after-research.json`，研究稿同步刪條目，qa-batch research 通過。
+- **偏暖／偏 pop**：Gina X《X-Traordinaire》（維基「更溫暖、更傳統」）、Automelodi 兩張（真鼓手、warm analogue；無實體鼓但有機噪音質地）、Lust for Youth《International》（明亮、熱帶彈跳）、El Aviador Dro《Ciudadanos del Imperio》（轉 pop-rock、吉他多於合成器）、Chris & Cosey《Trust》（「不那麼冰冷」）、《Exotika》（exotica 靈感、5–10 分鐘、陰沉而性感）、Riki（後段慢歌，色溫回中性）。
+- **偏厚／編制豐**：Mathématiques Modernes（真鼓＋銅管＋管絃）、Krisma《Cathode Mamma》（雙真貝斯、Trident 混音）、Taxi Girl《Seppuku》（真鼓、電吉他、Air Studios、曲長 4.5–5.75 分）、El Aviador Dro《Cromosomas Salvajes》（吉他、Fairlight、銅管、A 面 5.5–7.3 分）、The Human League《Travelogue》（合成器過載失真；池中同團色溫偏暖）。
+- **偏 post-punk 吉他／偏慢**：Charles de Goal《Ici l'ombre》（Trouser Press：很少用電子樂器）、《Algorythmes》（x 3.4 貼邊、5 分鐘以上 4 首、無鼓機證據）、Snowy Red（x 3.4、重複式長曲）、Linea Aspera《LP II》（朦朧回聲、4–6 分鐘）。
+- **留下仍存疑**（評分見真章）：Rheingold《R.》（真鼓 Charlie Terstappen）、Gina X《Voyeur》（真鼓＋定音鼓）、Units（真鼓、飽滿）、Robert Görl（「輕鬆冷靜」）、Body of Light、Absolute Body Control、Linea Aspera 首張、Sally Dige、Xeno & Oaklander《Par Avion》（無速度來源）。
+- **年份改卡單**：KaS Product《Try Out》1981 → **1982**（Discogs＋英法維基；1981 年 8 月為錄音）；《Ego Eye》1987 → **1986**（Discogs 1986-10、法文維基）。廠牌 Exotika 已汰；Chris & Cosey 無卡留下。
+- **給下一輪 mc 場景的參考**：minimal synth 的「全長正規專輯」多半是樂團後期往 pop／編制擴充走的盤，研究層一查就偏暖或偏厚；真正冷而機械的多是卡帶／EP／事後合輯，卡池收不進。
