@@ -92,3 +92,12 @@
 - **11303** 媒體名與樂評人名不進正文：高橋悠治卡 note 指派的評論家 Susan Bradshaw **不具名**，寫成「那位評論家舉出的理由之一，是它要求的極端速度」（hook 已用「有評論家說」，具名屬樂評人姓名；可逆）；Kawka「氣喘吁吁卻充滿能量」寫成「樂評形容」不帶出處。Nancarrow 的 Ligeti 讚語鉤子層已捨，未寫。
 - **11304** 合掃（han() 4-gram，本組 10 張 × out-2 九張 × writer-2 hook／note）：拆掉 `鋼琴寫的`、`的鋼琴家`、`推出的這`／`出的這張`、`年發行的`、`在年發行`、`親自指揮`（兩張 Boulez）、`打擊樂手`（Craft 改「打擊手」）、`作曲家在`、`成約分鐘`／`約分鐘的`／`約分鐘占`／`約分鐘年`、`代室內樂`（對 NEM）、`顫音琴與`／`與顫音琴`（對 Chin／Hodges，Kawka 改列舉「顫音琴、馬林巴、豎琴」）、`年的唱片`、`這張唱片`、`拍子互相衝撞`／`拍子彼此`（對 Arditti Carter）。剩 `音樂學院`（皇家／蕭邦，專名）×2、`自動鋼琴`（樂器名，含 out-2 Surinach）×3，不計。
 - **11305** 只寫 note：Driver 錄音只寫 2019 年與「倫敦一座教堂」、不寫月份；sur Incises 錄音只寫 IRCAM、不寫巴黎與月份；Kontarsky 不寫錄音年；Craft 的 Columbia Symphony Orchestra 掛名、Miró 封面不寫；Kawka「十八年」一格因與 hook 重述而捨（hook 已給 2006，note 已給 1988）。
+
+## 主線審稿（11311–11320；雲端主線 2026-10-22，19 張逐張審）
+- **11311** Kawka《Boulez: Mémoriale / Dérive 1 / Dérive 2》：刪單源樂評評價句「樂評形容它聽來氣喘吁吁，卻充滿能量」（研究 b 組 MusicWeb 單一來源）。
+- **11312** Carneiro《Xenakis: Psappha / Rebonds / Okho》：「被形容為少數靠獨奏打出國際事業的打擊樂手」（維基單源評價）改為身分句「1975 年生的葡萄牙獨奏打擊樂手 Pedro Carneiro」；「傑貝鼓」改台灣通行譯名「金貝鼓」（djembé）。
+- **11313** 高橋悠治《Xenakis: Evryali / Herma…》：「那位評論家舉出的理由之一，是它要求的極端速度」語意懸空（寫作層省去評論家名後留下的指涉），改「難處之一在它要求的極端速度」；hook 照留。
+- **11314** Ensemble intercontemporain《Chin…》：卡片年份照原盤改 2005（研究 d 組維基：DG 2005 首發、Kairos 2011 再版；Apple us 1452219235 DG 2005 同四首為第二來源），正文末句「2011 年，德國 Kairos 發行了這份作品集」改「這份錄音 2005 年由 Deutsche Grammophon 首發，2011 年 Kairos 再版」；為壓回 240 字刪「打擊手手邊還有顫音琴與馬林巴」與「她親手做的」。研究稿已有該事實，無需同步。
+- 其餘 15 張逐張對回研究稿，未改字。Craft《Varèse》「Poème électronique 首度錄音」有 Discogs master 64382 註記；Arditti《Carter》1988 Etcetera 與卡片年份一致；Hodges《Birtwistle》2005 一致。
+- 改後 `qa-batch out`、`qa-check-research`、`fix-spacing` 全過；字數 169–240。
+- 封面 live-check 19/19 HTTP 200；縮圖表逐張目視：Nancarrow CAA 圖為 1750 Arch 全集再版封面，改 Discogs 989614（Columbia MS 7222 原盤）並登錄 discogs-cover-registry；Boulez《sur Incises》CAA 為 DG 20/21 再版封面（同錄音）、Chin 為 Kairos 版封面（同錄音），照留。
