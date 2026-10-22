@@ -105,3 +105,6 @@
 - **11235** Connie Crothers《Perception》：刪「樂評聽來，她像 Tristano 的近親，只在部分段落露出自己。」；thin 改後 146 字。
 - 保留：Paragon 的樂評定調句（鉤子層骨架即此、與 hook 同源）、Stratus Seekers／Free Form／Angle 的樂評聲音描述（講節奏組脈動、複節奏、急轉彎，屬聲音事實而非評價）。
 - 其餘 14 張逐張對回研究稿，未改字；年份更正（Abstract 1963、Synopsis 1974／Incus）正文一致。改後 `qa-batch out`、`qa-check-research`、`fix-spacing` 全過。
+
+## 本批新藝人（無介紹；6 個並行不切，留給調度工作階段統一切批）
+Joe Harriott、Connie Crothers（2 位；其餘 Tristano／Marsh／Braxton／Rivers／Russell／Ellis／Cecil Taylor／Howard Riley／SME／Schoof 已有介紹或已排隊）

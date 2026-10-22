@@ -101,3 +101,6 @@
 - 其餘 15 張逐張對回研究稿，未改字。Craft《Varèse》「Poème électronique 首度錄音」有 Discogs master 64382 註記；Arditti《Carter》1988 Etcetera 與卡片年份一致；Hodges《Birtwistle》2005 一致。
 - 改後 `qa-batch out`、`qa-check-research`、`fix-spacing` 全過；字數 169–240。
 - 封面 live-check 19/19 HTTP 200；縮圖表逐張目視：Nancarrow CAA 圖為 1750 Arch 全集再版封面，改 Discogs 989614（Columbia MS 7222 原盤）並登錄 discogs-cover-registry；Boulez《sur Incises》CAA 為 DG 20/21 再版封面（同錄音）、Chin 為 Kairos 版封面（同錄音），照留。
+
+## 本批新藝人（無介紹；6 個並行不切，留給調度工作階段統一切批）
+Danny Driver、Conlon Nancarrow、Alfons & Aloys Kontarsky、Daniel Kawka、Robert Craft、Elisabeth Chojnacka、Pedro Carneiro、Yuji Takahashi、Ensemble intercontemporain、David Holzman、Nicolas Hodges、Carlos Surinach、Nouvel Ensemble Moderne、Nicolas Hodges & Rolf Hind（14 位；古典演奏者，切批時標 classicalPerformer；Hodges 兩鍵可考慮以別名併一）
