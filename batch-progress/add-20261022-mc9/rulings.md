@@ -30,3 +30,11 @@
 - **11654** ヒカシュー《うわさの人類》：卡單 label『Vap』錯，應為 Eastworld（東芝 EMI）。moodGuess **重度存疑**：日文維基明寫由節奏盒換成真人鼓手後『從テクノポップ變成搖滾色彩強』，另有吉他兩位、薩克斯風。建議主線汰換。status partial（單一來源）。
 - **11655** 達明一派《達明一派II》：卡單 label『Warner』錯，應為寶麗金旗下 Philips（830 389-1）；它是第一張全長專輯（前有同名 EP）。聲音查無具體編制證據（只有曲風標籤與劉以達掛結他），status thin，moodGuess 缺證，x 不足風險仍在。
 - **11656** b 組 WebSearch 用 1 次（達明一派II）；兩組合計 3 次。
+
+## 研究 e 組
+- 11681 Pyrolator《Ausland》：MB／Discogs 身分無誤。moodGuess 強存疑——Discogs 列真鼓手、吉他、薩克斯風、長號與多人人聲，廠方稱「buoyant, playful」、受洛杉磯輕音樂影響，曲名戲謔；底軌是 Brontologik 序列系統，非確認的鼓機。建議汰換。
+- 11682 Ultravox《Rage in Eden》：冷度成立（Ure 自述 coldness），但有吉他、真鼓＋電子打擊、小提琴／中提琴、Plank 疊層長序列；質地厚於預估，y 貼邊風險屬實，請以池中同期 Ultravox 的 y 為準裁定。
+- 11683 Simple Minds《Sons and Fascination》：強存疑——吉他（Burchill）、真鼓與貝斯、薩克斯風與小號，Steve Hillage（吉他手）製作、krautrock 律動，維基稱節奏組 loud、heavy。無來源證實 sequencer。建議汰換。
+- 11684 Camouflage《Methods of Silence》：全編程、無吉他掛名，大致成立；輕度存疑在於抒情旋律導向、Dan Lacksman（Telex）製作（池中 Telex 判偏暖），z 可能不到 −0.4。BPM／鼓機音色未取得。
+- 11685 Peter Schilling《Error in the System》：強存疑——Armin Sabol 吉他貫穿全盤、真貝斯與真鼓手（Dicky Tarrach；〈Major Tom〉為 Curt Cress），〈Major Tom〉為主流榜首曲，不冷。建議汰換。卡單廠牌 WEA 對應歐洲版，美國為 Elektra，保留。
+- 未推翻年份、廠牌、盤名；五張 facts 各 10 條、status full。
