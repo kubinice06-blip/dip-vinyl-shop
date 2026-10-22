@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-22｜dip-vinyl-shop｜情緒薄格重掃：恍惚 592／頹靡 926／冷冽 874，更新補充計畫
+
+- **內容**：店主「掃描頻率 把專輯分佈較少的頻率補齊……先掃描給我計畫」。重掃全池八格與各子曲風落格率，更新 `batch-progress/EXPANSION-PLAN-mood-thin-cells.md` 開頭：10-16 計畫候選九成仍未進池、計畫本體有效；#114 能量軸改判後 md3 改收無鼓的 drone／暗黑 ambient（有鼓的 doom 現判躁）；每批 45 張只淨增約 20 張，恍惚靠補卡補不平，規則面的「質地尺」裁定仍待店主。未動卡池。
+- **主要檔案**：`batch-progress/EXPANSION-PLAN-mood-thin-cells.md`。
+- **驗證**：`build-card-moods.mjs` gate 綠（19,458/19,458）；八格數字取自同次輸出。
+
 ### 2026-10-22｜dip-vinyl-shop｜能量軸改標準「兇不兇優先於快不快」，60 張慢而兇的重判到躁
 
 - **改動**：店主裁定 Sunn O))) 留頹靡、依此定標準。躁 ＝ 攻擊性且有打擊在推（再慢也算）；缺一留靜（dub／trip-hop 有拍沒攻擊，drone／噪音牆有攻擊沒拍）。標準寫進 `batch-progress/mood-axes/score500/BRIEF.md`；靜而極重 267 張逐張重判，60 張移到躁（`data/mood/overrides.json` 共 61 筆，含前一日《Monotheist》），doom／sludge／後金屬／工業／黑金屬為主；判例與留靜清單在 `rulings.md`。
