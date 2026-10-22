@@ -42,3 +42,15 @@
 - 10938　Holy Other《Held》：8/27（維基）對 8/28（MB），寫 8 月。鼓緊緻有結構、不是無鼓；Tiny Mix「抖動焦慮」、RA「令人振奮」，「霧冷」未證，小幅存疑。
 - 10939　King Krule《The Ooz》：moodGuess 存疑：標籤含 punk rock／post-punk／jazz-rock、AllMusic「controlled chaos」，19 首 66 分鐘，並非多數段落慢；無速度與低頻來源。標 thin，建議試聽或汰換。
 - 10940　WebSearch 3 次用於 Salem、Klein、How to Dress Well；其餘以 MB API、維基、Tiny Mix Tapes、DIY、Exclaim!、Village Voice、Stereogum、BPM、A.V. Club 取得。Pitchfork／BBC／Guardian／Discogs／RYM 直連被擋。
+
+## 研究 c 組（10941–10950）
+- 10941 King Krule《Space Heavy》：身分照 MB 4505ae3f。廠牌 XL（英國／世界）與 Matador（北美）並列，寫作層寫雙廠牌。Archy Marshall 是 King Krule 本名，本名盤另有一張卡，facts 已交代。moodGuess 部分存疑：有現場鼓與薩克斯風、樂評提到鞭打式猛烈段落與刺耳爆發，x 估 2.2 可能偏低（2.4–2.8）。
+- 10942 Hype Williams《One Nation》：Dean Blunt 與 Inga Copeland 的團體；日期三源差一週內（MB 03-07、Discogs 03-13、維基 03-14），統一寫「2011 年 3 月」。「接力計畫」一律加「據稱」。moodGuess 吻合。
+- 10943 Tricky《Angels With Dirty Faces》：moodGuess 存疑。Christgau（現場樂隊每首、無採樣）、Erlewine（硬派嘻哈與 jungle 節奏）、Browne（節奏更冒險）指向拍子較忙，x 2.5 可能偏低，可能近 3。
+- 10944 Nearly God《Nearly God》：Tricky 的化名盤（Island 合約每年允許以他名再發一張），寫作層要講明是 Tricky 的化名，不是另一組樂團。日期維基 1996-02、MB／Discogs 英國 1996-04-22，只寫「1996 年」。Durban Poison 是 Island 分支。moodGuess 吻合（慢、lo-fi、停滯）。
+- 10945 Tricky《False Idols》：moodGuess 存疑。樂評寫 loping beats、tribal percussion、driving bass，並稱舞池曲、sinister and banging，15 首皆 2–3.5 分鐘，Discogs 風格含 Broken Beat；x 2.3 可能偏低（2.7–3.0），建議主線留意。廠牌為 Tricky 自己的 False Idols，!K7 發行。
+- 10946 King Midas Sound《Waiting for You…》：吻合（稀疏底鼓與小鼓、焦油般次低頻、長殘響）。日期三源 11-09／11-30／11-30，只寫「2009 年 11 月」。Burial 比較為樂評觀點，不當事實。
+- 10947 Space Afrika《Honest Labour》：moodGuess 部分存疑。19 首風格頻繁切換，〈B£E〉有腐蝕 boom-bap，整體平均應仍偏靜偏冷，x 或在 2.0–2.5。RA 年度專輯說法只見搜尋摘要，不寫；DJ Mag 當月最佳專輯出自維基。
+- 10948 Space Afrika《Somewhere Decent to Live》：策展層 curatorWhy 寫「首張」不確切，實為第二張（首張為 2014 年《Above the Concrete/Below the Concrete》）。Boomkat 數位頁日期 2018-09-04 與 MB 03-08 不同，只寫「2018 年」。moodGuess 吻合。
+- 10949 Rod Modell《Incense & Black Light》：推翻策展層廠牌。卡單寫 Mosaic，MB、Discogs、維基三源皆為 Plop（PLOP 3），請主線改卡單 label。moodGuess 存疑且證據單薄（status thin）：無任何來源說明有鼓或無鼓，「嘶聲顆粒、厚殘響墊」為策展層推測；dub techno 類型通常 4/4、110–125 BPM。建議汰換或聽一次再定（候補 Deepchord《Hash-Bar Loops》）。
+- 10950 本組 WebSearch 用 3 次（Honest Labour、Waiting for You、False Idols 的樂評），其餘走 MB／Discogs API、維基 API、RA／DiS／Textura／LOBF／Rocksucker／Boomkat 直接抓頁。Rod Modell 因 AllMusic／Bandcamp／Discogs 網頁被擋、額度用盡而缺樂評。
