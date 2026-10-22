@@ -1,0 +1,558 @@
+{
+ "group": "ml6",
+ "factions": [
+  {
+   "id": "quiet-storm",
+   "zh": "quiet storm（80s–90s 慢情歌＋70s 先驅）",
+   "count": 8,
+   "why": "深夜電台慢情歌，弦墊／合成墊＋溫熱混響；只收慢而厚的"
+  },
+  {
+   "id": "slow-jam",
+   "zh": "90s slow jam",
+   "count": 1,
+   "why": "整張慢歌、低頻厚的"
+  },
+  {
+   "id": "la-strings",
+   "zh": "西岸弦樂靈魂（Barry White／Gene Page 系）",
+   "count": 5,
+   "why": "大弦樂牆＋慢板長曲，最厚的一路"
+  },
+  {
+   "id": "chicago-soul",
+   "zh": "芝加哥弦樂靈魂（Charles Stepney 系）",
+   "count": 3,
+   "why": "迷幻管弦殘響包住和聲"
+  },
+  {
+   "id": "memphis-soul",
+   "zh": "Memphis 弦樂慢板（Stax／Hayes 系）",
+   "count": 1,
+   "why": "Hayes 式長篇慢板厚弦樂"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Sweetback",
+   "album": "Sweetback",
+   "year": 1996,
+   "label": "Epic",
+   "country": "gb",
+   "faction": "quiet-storm",
+   "genres": [
+    "soul",
+    "electronic"
+   ],
+   "why": "Sade 樂隊三人的分支盤，quiet storm 接上 trip-hop 慢拍，暖慢厚低頻，靜重暖",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 1,
+    "why": "慢拍鬆，dub 式厚貝斯與濕殘響，客座人聲溫軟"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3bcc613a-c025-3426-a6aa-4e35a8827c4f",
+    "https://coverartarchive.org/release-group/3bcc613a-c025-3426-a6aa-4e35a8827c4f/front",
+    "https://music.apple.com/us/album/sweetback/190563503"
+   ],
+   "mbRgMbid": "3bcc613a-c025-3426-a6aa-4e35a8827c4f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Will Downing",
+   "album": "A Dream Fulfilled",
+   "year": 1991,
+   "label": "Island",
+   "country": "us",
+   "faction": "quiet-storm",
+   "genres": [
+    "soul"
+   ],
+   "why": "quiet storm 電台主力 Will Downing 的慢歌盤，厚合成弦墊包住低沉男中音",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.8,
+    "z": 1.5,
+    "why": "整張慢情歌，合成弦樂墊＋溫熱混響，嗓音厚暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f26ea704-162e-3eea-8749-bbabd27ec6fa",
+    "https://coverartarchive.org/release-group/f26ea704-162e-3eea-8749-bbabd27ec6fa/front"
+   ],
+   "mbRgMbid": "f26ea704-162e-3eea-8749-bbabd27ec6fa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "90 年代初數位製作，y 可能落 0.6–0.7；同場景 Freddie Jackson 池中 0.6"
+  },
+  {
+   "artist": "Will Downing",
+   "album": "Moods",
+   "year": 1995,
+   "label": "Mercury",
+   "country": "us",
+   "faction": "quiet-storm",
+   "genres": [
+    "soul",
+    "jazz"
+   ],
+   "why": "Will Downing 最慢最爵士的一張，深夜 quiet storm 的典型，暖霧感濃",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 0.8,
+    "z": 1.4,
+    "why": "慢板、薩克斯與電鋼墊、長殘響，低沉嗓音包覆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/37725f86-709a-3ae7-b52d-23ce018fc166",
+    "https://coverartarchive.org/release-group/37725f86-709a-3ae7-b52d-23ce018fc166/front"
+   ],
+   "mbRgMbid": "37725f86-709a-3ae7-b52d-23ce018fc166",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上：數位製作，y 估保守 0.8 仍貼門檻"
+  },
+  {
+   "artist": "Barry White",
+   "album": "The Icon Is Love",
+   "year": 1994,
+   "label": "A&M",
+   "country": "us",
+   "faction": "slow-jam",
+   "genres": [
+    "soul"
+   ],
+   "why": "Barry White 90 年代回春盤，整張 slow jam，弦樂墊與招牌低音嗓，暖厚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 1.7,
+    "why": "慢 groove、厚低頻與弦樂墊，深沉嗓音濃暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c370b681-9b5b-3efb-9840-5cf6b34da120",
+    "https://coverartarchive.org/release-group/c370b681-9b5b-3efb-9840-5cf6b34da120/front"
+   ],
+   "mbRgMbid": "c370b681-9b5b-3efb-9840-5cf6b34da120",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Barry 90s 前作 The Man Is Back! 判 0.6"
+  },
+  {
+   "artist": "Isaac Hayes",
+   "album": "Branded",
+   "year": 1995,
+   "label": "Virgin",
+   "country": "us",
+   "faction": "quiet-storm",
+   "genres": [
+    "soul"
+   ],
+   "why": "Isaac Hayes 90 年代回歸盤，延續 Hot Buttered Soul 式長篇慢板弦樂，厚而暖",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 1.3,
+    "why": "長篇慢板，厚弦樂墊與深低頻，男低音獨白溫熱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1e133456-c2f1-3aa1-b9ef-d0fe9a81e46c",
+    "https://coverartarchive.org/release-group/1e133456-c2f1-3aa1-b9ef-d0fe9a81e46c/front"
+   ],
+   "mbRgMbid": "1e133456-c2f1-3aa1-b9ef-d0fe9a81e46c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Marvin Gaye",
+   "album": "Vulnerable",
+   "year": 1997,
+   "label": "Motown",
+   "country": "us",
+   "faction": "quiet-storm",
+   "genres": [
+    "soul"
+   ],
+   "why": "Marvin 1977–79 錄的抒情標準曲盤，多軌疊唱浮在管弦墊上，夢一般包覆",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.8,
+    "z": 1.3,
+    "why": "無快歌，多層疊唱與弦樂墊成霧，殘響濃，溫柔"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/79476b44-4177-394c-b71e-d29ab182f526",
+    "https://coverartarchive.org/release-group/79476b44-4177-394c-b71e-d29ab182f526/front"
+   ],
+   "mbRgMbid": "79476b44-4177-394c-b71e-d29ab182f526",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "身後出版（1997）；疊唱密度高但管弦偏古典式，y 可能 0.6–0.9"
+  },
+  {
+   "artist": "Barry White",
+   "album": "Stone Gon'",
+   "year": 1973,
+   "label": "20th Century",
+   "country": "us",
+   "faction": "la-strings",
+   "genres": [
+    "soul"
+   ],
+   "why": "Barry White 第二張，Gene Page 大弦樂＋長篇慢板，西岸弦樂靈魂的厚暖原型",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 1.7,
+    "why": "長篇慢板、弦樂牆與深沉低音嗓，溫熱裹人"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5be3d9c3-28d1-3363-9c18-80d02d1d5b0e",
+    "https://coverartarchive.org/release-group/5be3d9c3-28d1-3363-9c18-80d02d1d5b0e/front"
+   ],
+   "mbRgMbid": "5be3d9c3-28d1-3363-9c18-80d02d1d5b0e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Barry White",
+   "album": "I've Got So Much to Give",
+   "year": 1973,
+   "label": "20th Century",
+   "country": "us",
+   "faction": "la-strings",
+   "genres": [
+    "soul"
+   ],
+   "why": "Barry White 首張個人盤，慢板長曲配厚弦樂，Barry & Glodean（池中 y0.9）同一路",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 1.6,
+    "why": "慢、弦樂墊厚、低音嗓貼耳，濃暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e8c4f4a4-8345-348a-988a-cea45b9cfe8f",
+    "https://coverartarchive.org/release-group/e8c4f4a4-8345-348a-988a-cea45b9cfe8f/front"
+   ],
+   "mbRgMbid": "e8c4f4a4-8345-348a-988a-cea45b9cfe8f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Barry White",
+   "album": "Is This Whatcha Wont?",
+   "year": 1976,
+   "label": "20th Century",
+   "country": "us",
+   "faction": "la-strings",
+   "genres": [
+    "soul"
+   ],
+   "why": "Barry White 76 年慢盤，十分鐘級的 I Wanna Lay Down with You，弦樂濃厚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 1.7,
+    "why": "長篇慢 groove、弦樂與低頻堆厚，獨白溫熱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d23ad202-00e0-3898-8511-ed3ec62d95be",
+    "https://coverartarchive.org/release-group/d23ad202-00e0-3898-8511-ed3ec62d95be/front"
+   ],
+   "mbRgMbid": "d23ad202-00e0-3898-8511-ed3ec62d95be",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Love Unlimited",
+   "album": "Under the Influence of… Love Unlimited",
+   "year": 1973,
+   "label": "20th Century",
+   "country": "us",
+   "faction": "la-strings",
+   "genres": [
+    "soul"
+   ],
+   "why": "Barry White 製作的女聲三重唱，Walkin' in the Rain 雨聲＋大弦樂，甜而濕",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 1.8,
+    "why": "慢板、雨聲與弦樂墊、和聲柔霧，甜暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3d074d87-e949-3179-ac59-a55bf4b7af11",
+    "https://coverartarchive.org/release-group/3d074d87-e949-3179-ac59-a55bf4b7af11/front"
+   ],
+   "mbRgMbid": "3d074d87-e949-3179-ac59-a55bf4b7af11",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同製作的 Love Unlimited Orchestra《Rhapsody in White》池中判 −0.6（器樂、輕快）；這張是人聲慢歌但仍可能判輕"
+  },
+  {
+   "artist": "Tom Brock",
+   "album": "I Love You More and More",
+   "year": 1974,
+   "label": "20th Century",
+   "country": "us",
+   "faction": "la-strings",
+   "genres": [
+    "soul"
+   ],
+   "why": "Barry White 製作的唯一個人盤，Barry 式弦樂慢板，冷門但聲音典型",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 1.6,
+    "why": "慢板弦樂墊、厚低頻，溫熱和聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fd787299-1f05-35f3-9929-ad1d5a0448f2",
+    "https://coverartarchive.org/release-group/fd787299-1f05-35f3-9929-ad1d5a0448f2/front"
+   ],
+   "mbRgMbid": "fd787299-1f05-35f3-9929-ad1d5a0448f2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "冷門盤，評分者可能 conf low 憑製作人推"
+  },
+  {
+   "artist": "The Dells",
+   "album": "Love Is Blue",
+   "year": 1969,
+   "label": "Cadet",
+   "country": "us",
+   "faction": "chicago-soul",
+   "genres": [
+    "soul"
+   ],
+   "why": "Charles Stepney 編曲的 Dells 慢盤，迷幻管弦包住和聲，芝加哥弦樂靈魂的厚盤",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 1.2,
+    "why": "整張慢板，Stepney 管弦殘響濃、和聲層疊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4c296db5-c4bc-33be-bddb-2c57af5dc5de",
+    "https://coverartarchive.org/release-group/4c296db5-c4bc-33be-bddb-2c57af5dc5de/front"
+   ],
+   "mbRgMbid": "4c296db5-c4bc-33be-bddb-2c57af5dc5de",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Dells《There Is》判 −0.3（較快較乾）"
+  },
+  {
+   "artist": "The Dells",
+   "album": "Freedom Means",
+   "year": 1971,
+   "label": "Cadet",
+   "country": "us",
+   "faction": "chicago-soul",
+   "genres": [
+    "soul"
+   ],
+   "why": "Stepney 編曲期最後一張，The Love We Had 慢情歌，厚弦樂與迷幻殘響",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 1.2,
+    "why": "慢中速、弦樂墊厚、混響溫熱，和聲包覆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e4be5849-1c38-4abb-879a-aee1db80be8a",
+    "https://www.discogs.com/master/59853",
+    "https://music.apple.com/us/album/freedom-means/1444061445"
+   ],
+   "mbRgMbid": "e4be5849-1c38-4abb-879a-aee1db80be8a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有幾首中速歌，x 可能 2.6–2.7"
+  },
+  {
+   "artist": "Rotary Connection",
+   "album": "Dinner Music",
+   "year": 1970,
+   "label": "Cadet Concept",
+   "country": "us",
+   "faction": "chicago-soul",
+   "genres": [
+    "soul",
+    "rock"
+   ],
+   "why": "Stepney／Minnie Riperton 的 Rotary Connection 最柔的一張，管弦民謠靈魂，霧而暖",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 1.1,
+    "why": "慢、弦樂豎琴層疊、殘響濃，溫柔不冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bf097d3c-8a71-4326-84d0-6b49df25b89b",
+    "https://www.discogs.com/master/997711",
+    "https://music.apple.com/us/album/dinner-music/1591132979"
+   ],
+   "mbRgMbid": "bf097d3c-8a71-4326-84d0-6b49df25b89b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同團《Hey, Love》1.1／1.3、首張 0.9／0.4（z 偏低）"
+  },
+  {
+   "artist": "David Porter",
+   "album": "…Into a Real Thing",
+   "year": 1971,
+   "label": "Enterprise",
+   "country": "us",
+   "faction": "memphis-soul",
+   "genres": [
+    "soul"
+   ],
+   "why": "Stax 詞曲搭檔 David Porter 的 Hayes 式長篇慢板盤，Memphis 弦樂靈魂",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 1.3,
+    "why": "長篇慢板組曲、厚弦樂墊與低頻，溫熱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7b356d2f-a64b-3c58-953c-555481cf5380",
+    "https://coverartarchive.org/release-group/7b356d2f-a64b-3c58-953c-555481cf5380/front"
+   ],
+   "mbRgMbid": "7b356d2f-a64b-3c58-953c-555481cf5380",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "冷門盤，評分者熟悉度可能低"
+  },
+  {
+   "artist": "Jon Lucien",
+   "album": "Rashida",
+   "year": 1973,
+   "label": "RCA Victor",
+   "country": "us",
+   "faction": "quiet-storm",
+   "genres": [
+    "soul",
+    "jazz"
+   ],
+   "why": "quiet storm 先驅 Jon Lucien 的 RCA 首張，低沉男中音浸在大弦樂與巴西律動裡",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.8,
+    "z": 1.5,
+    "why": "慢、厚弦樂墊、深嗓混響，溫熱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ec394f1a-76a0-3a8e-a07a-a62e8e26593b",
+    "https://www.discogs.com/master/196843"
+   ],
+   "mbRgMbid": "ec394f1a-76a0-3a8e-a07a-a62e8e26593b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分歌巴西輕律動，y 可能判 0.6"
+  },
+  {
+   "artist": "Jon Lucien",
+   "album": "Mind's Eye",
+   "year": 1974,
+   "label": "RCA Victor",
+   "country": "us",
+   "faction": "quiet-storm",
+   "genres": [
+    "soul",
+    "jazz"
+   ],
+   "why": "Jon Lucien 第二張，更濃的管弦慢歌，quiet storm 電台前身",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.8,
+    "z": 1.5,
+    "why": "慢板管弦墊、低沉人聲貼耳，溫柔包覆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3647bdc5-cec9-3072-a10f-61c1acc6a09c",
+    "https://www.discogs.com/master/287719",
+    "https://music.apple.com/us/album/minds-eye/366927757"
+   ],
+   "mbRgMbid": "3647bdc5-cec9-3072-a10f-61c1acc6a09c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上"
+  },
+  {
+   "artist": "Jon Lucien",
+   "album": "Song for My Lady",
+   "year": 1975,
+   "label": "Columbia",
+   "country": "us",
+   "faction": "quiet-storm",
+   "genres": [
+    "soul",
+    "jazz"
+   ],
+   "why": "Jon Lucien Columbia 時期慢盤，弦樂與電鋼溫潤，深夜慢情歌",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.8,
+    "z": 1.5,
+    "why": "慢、電鋼弦樂墊與溫熱混響，暖嗓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/944e6301-5373-4e98-ad53-cb1c6ed79d5a",
+    "https://coverartarchive.org/release-group/944e6301-5373-4e98-ad53-cb1c6ed79d5a/front"
+   ],
+   "mbRgMbid": "944e6301-5373-4e98-ad53-cb1c6ed79d5a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 另有 2011 同名條目（d137d3d3…），取 1975 原盤 944e6301"
+  }
+ ],
+ "notes": [
+  "只交 18 張（目標 54）：照實交、不湊數。主場景 quiet storm／slow jam 80s–90s 二線在現行評分下多半判 y 0.6 上下（池中 Isley《Between the Sheets》−0.3、Freddie Jackson《Rock Me Tonight》0.6、Keith Sweat 0.6、112 0.6、Brian McKnight −0.8、Joe −0.4、Babyface −0.7、Shai −0.6、H-Town 0.2），乾淨數位製作判輕，過不了 y≥0.8 邊距；主場景只留 6 張最厚的（Sweetback、Will Downing 兩張、Barry White《The Icon Is Love》、Isaac Hayes《Branded》、Marvin《Vulnerable》）；Jon Lucien 三張是 70s quiet storm 先驅，歸 quiet-storm faction 但屬擴寫年代。",
+  "擴寫場景 70s 慢板靈魂：Philly 的 Stylistics／Delfonics／Chi-Lites／Jerry Butler／Lou Rawls 系池中都判輕（−0.5～−1.1），Philly 慢盤池中最高也只 0.6–0.8（Teddy 0.6–0.7、Harold Melvin《I Miss You》0.6、Major Harris《My Way》0.8），所以 Philly 一張都沒提；Memphis Hi 系（Al Green、Ann Peebles、O.V. Wright、Syl Johnson、Otis Clay）池中已收齊。擴寫場景只收評分者給過高 y 的那一路：Barry White／Gene Page 大弦樂、Stepney 迷幻管弦、Hayes 式長篇慢板。",
+  "考慮過但不提（估 y 0.6–0.7 或 x 偏高）：Will Downing 首張與《Come Together as One》、Lalah Hathaway 兩張、Regina Belle、Miki Howard、Gerald Levert、Keith Washington、Kenny Lattimore、Phyllis Hyman《Prime of My Life》、Teddy 80s 四張、Isley《Smooth Sailin'》《Spend the Night》、Silk 1995、Intro、Rome、Changing Faces、Brownstone、Barry White《Just Another Way…》、Love Unlimited《In Heat》、Gloria Scott、Major Harris《Jealousy》、Dorothy Moore、Johnny Bristol、Sylvia《Pillow Talk》、Curtis《Got to Find a Way》、Dells《Like It Is, Like It Was》、Rotary Connection《Aladdin》。",
+  "去重：18 張全跑過 seed 去重皆 0；Al B. Sure!《Private Times》與 K-Ci & JoJo《Love Always》已在池，剔除。其他組 curation-*.json 無同藝人。",
+  "y 估值偏樂觀風險：18 張中 10 張估 y=0.8（剛好在邊距線），uncertain 欄已逐張註明；主線若要更保守，可只留 y≥0.9 的 8 張（Sweetback、Branded、Stone Gon'、I've Got So Much to Give、Is This Whatcha Wont?、Love Is Blue、Dinner Music、Into a Real Thing）。"
+ ]
+}
