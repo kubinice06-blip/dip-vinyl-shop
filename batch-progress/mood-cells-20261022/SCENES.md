@@ -19,8 +19,8 @@
 | md2 | 10761 | slowcore／sadcore 二線＋dark jazz | ✅ 45／41 |
 | md3 | 10841 | darkwave／goth 慢盤＋無鼓 drone metal／funeral doom | ✅ 45／44 |
 | md4 | 10921 | 暗色嘻哈／cloud rap／暗 R&B＋dub techno＋亞洲 | ✅ 43／39 |
-| md5 | 17001 | dark ambient 二線：Cryo Chamber、Cold Meat Industry、Malignant、Glacial Movements、Ant-Zen 系 |  派→情緒薄格 md5、md6（第 1 輪） |
-| md6 | 17081 | drone／電子極簡：Kranky、Touch、12k、Room40、Type、Miasmah 系（要有低頻與顆粒） |  派→情緒薄格 md5、md6（第 1 輪） |
+| md5 | 17001 | dark ambient 二線：Cryo Chamber、Cold Meat Industry、Malignant、Glacial Movements、Ant-Zen 系 | ✅ 上線 45／落格 45 |
+| md6 | 17081 | drone／電子極簡：Kranky、Touch、12k、Room40、Type、Miasmah 系（要有低頻與顆粒） | ✅ 上線 45／落格 43 |
 | md7 | 17161 | 冷調 post-rock／慢而冷、鼓少的器樂（Constellation、Kranky、Temporary Residence 系的慢盤） |  派→情緒薄格 md7、md8（第 1 輪） |
 | md8 | 17241 | dub techno／ambient techno 三線：Echocord、Chain Reaction、Silent Season、Prologue、Styrax、Astral Industries |  派→情緒薄格 md7、md8（第 1 輪） |
 | md9 | 17321 | 冷的 trip-hop 與 Bristol 二線（陰、慢、低頻厚；溫暖的 lounge 系落恍惚，不收） | |

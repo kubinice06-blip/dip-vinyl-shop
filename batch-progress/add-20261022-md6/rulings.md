@@ -137,3 +137,10 @@
   1. `desc2:Jacob Kirkegaard|4 Rooms`：「車諾比疏離區」→「車諾比隔離區」（Zone of Alienation 台灣通行譯法；研究 b 組、hooks b、input、out 四層同步）。
   2. `desc2:Kevin Richard Martin|Sirens`：首句「長子出生頭一個月，就連動了兩次危及生命的手術」→「長子出生後頭一個月，就接連動了兩次危及生命的手術」（「連動」易誤讀為連動機制；hooks d、input、out 三層同步）。
 - 其餘逐張審過未改字：媒體名、媒體榜單、「據說／據報導」掃 0；Frequencies note 的「據報導」寫作層已改直述；年份對卡單 44/45 字面一致（Kreng《The Summoner》只寫錄音日期，不寫發行年，不算錯）。loscil「Destroyer 鼓手」研究 a 組兩源（維基、Pitchfork）。
+
+## 落格率（上線當天評分，HANDOFF §二第 9 步）
+- **17156m**　`batch-progress/mood-axes/score-md6/`。Opus 一支照 BRIEF 打分，conf high 3／mid 33／low 9。**落頹靡 43/45＝95.6%**。出格 2 張都是 Oren Ambarchi：《Suspension》1.1/0.2/−0.3 落平靜（吉他化成純淨正弦低音、長留白，質地判輕）、《In the Pendulum's Embrace》1.2/0.5/+0.1 落恍惚（玻璃琴泛音、溫潤；研究 b 組已標色溫可能偏中性）。教訓：Ambarchi 的正弦吉他乾淨，下一批同型（正弦波、純音）不提。研究層汰換的 11 張（亮、田野錄音、有拍又兇）若留著，估計再掉 5–8 張。
+- 子曲風：預熱 45 張，全數有節點。
+
+## 本批新藝人（無介紹，6 個並行時不切，留調度工作階段統一切批）
+Pan•American、Bass Communion、Oren Ambarchi、BJ Nilsen、Phill Niblock、Jacob Kirkegaard、Kane Ikin、Kevin Richard Martin、Xela、Elegi、Black to Comm、Kreng、Mokira、Paul Jebanasam（14 位）

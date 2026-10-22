@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-22｜dip-vinyl-shop｜情緒薄格策展線 md5／md6：dark ambient 二線 45＋drone／電子極簡 45 張上線，落頹靡 88/90
+
+- **內容**：店主「新增的專輯數太少了 與雀躍嚴重不平衡」第 1 輪並行之一。md5（`add-20261022-md5`）：Cryo Chamber 系 18（Atrium Carceri 5、Sabled Sun 2、Dronny Darko 2、Ugasanie 2、Alphaxone、Onyx 三方合作…）、Cold Meat Industry 系 9（Raison d'être 4、Desiderii Marginis、Sephiroth、Moljebka Pvlse）、Malignant／isolationist 8（Yen Pox 3＋Troum 合作、Hazard、Hall of Mirrors、Lull）、Cyclic Law 6（Kammarheit 2、Cities Last Broadcast、Apócrýphos、Svartsinn、Treha Sektori）、Loki 2（Inade）、Glacial Movements 2（Netherworld）。md6（`add-20261022-md6`）：Kranky（loscil 7、Pan•American）、Touch（Köner 5、Ambarchi 2、BJ Nilsen 2、Niblock 2、Kirkegaard、Vainio）、Type／Miasmah（Svarte Greiner 4、Kreng 2、Black to Comm、Xela、Elegi 2、Mokira、Kane Ikin 2）、Room40（Lawrence English、Irisarri 2、Ben Frost、KRM《Sirens》）、Kevin Drumm 2、KRM 另 2、Bass Communion、Jebanasam《Rites》。
+- **策展→研究汰換**：策展各 54 全在邊距內，主線各汰 9（md6 汰 Philip Jeck 4 張：md1《Stoke》色溫判中性先例）；研究層汰 md6 11 張（亮／田野錄音為主／有拍又兇：Hecker《An Imaginary Country》、Earthen Sea、Winderen、Singer、Simon Scott、Seven Horses、VDQ、Paradise 94、Eye of the Microphone；補研究再推翻 Köner《Tiento》鋼琴、Jebanasam《Continuum》重擊），回頭叫策展補 12 張邊距寬的候補；md5 汰 2 張 Lustmord（《Purifying Fire》其實是選輯、《Paradise Disowned》有鼓編程），從 master 候補替入。Penpals 年份改 2010（帶 And Ever 的 CD／LP 版）。
+- **主線審稿**：md5 改 2（Alchemy of Ice「南冰洋難抵極」→「南極洲難抵極」四層同步；Dark Matter 刪「登記為德國藝人」）＋鉤子層 Kapnobatai hook 帶「據說」改寫；md6 改 2（4 Rooms「疏離區」→「隔離區」、Sirens 首句「連動」→「接連動」）。試聽 md5 40／md6 36 ready；封面 live-check：Sabled Sun《2147》CAA RG 500 改 release 500px 縮圖、Kreng《Grimoire》改 Apple、Black Tie／Varde 走 Bandcamp。冷門軸人工 2 張（Vainio Fe₃O₄、KRM Volume 1：Last.fm 盤名符號對不上）。
+- **落格率**：`batch-progress/mood-axes/score-md{5,6}/`。md5 45/45＝100%、md6 43/45＝95.6%（Ambarchi 兩張正弦吉他判輕／偏中性）。八格 頹靡 1,119 → 1,207（本工作階段合併前；併 main 後見驗證）。
+- **藝人介紹**：照 6 並行規矩不切，兩批 rulings 末尾列 md5 24 位、md6 14 位。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`onboarding-manifest-add-20261022-md{5,6}-20261022.json`、`batch-progress/add-20261022-md{5,6}/*`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-md{5,6}.json`、`SCENES.md`、`desc-tools/batches/*/add-20261022-md{5,6}-*`、`batch-progress/mood-axes/score-md{5,6}/*`、`batch-progress/mood-axes/{priors,scale}-v0-report.json`、`data/mood/*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；KV 回讀 45/45、45/45 逐字一致；card_catalog 45/45、45/45；`build-card-moods` gate 綠、錨點 104/104。
+
 ### 2026-10-22｜dip-vinyl-shop｜情緒薄格線擴大：三格各補到 2,000、6 個工作階段並行
 
 - **內容**：店主「新增的專輯數太少了 與雀躍嚴重不平衡」→ 選「各補到約 2,000、一批 45 張、6 個並行」。md1–md4 落格率 91–98%，每批淨增約 40；缺口 頹靡 +881、冷冽 +1,126、恍惚 +1,216，約 80 批。新增 `batch-progress/mood-cells-20261022/SCENES.md`（md5–md25、mc1–mc30、ml1–ml30 場景與條號）；`CUR-DISPATCH.md` 改三線共用（冷冽 x≥3.3／y≤0.2／z≤−0.3、恍惚 x≤2.7／y≥0.8／z≥0.3、各線反例）；`build-priors.mjs` 改自動讀所有 `score*/scored-*.json`（輸出與改前逐位元相同）；HANDOFF 加並行合併規矩（產生檔取 main 版＋重跑）、子工作階段不切藝人介紹。第 1 輪開 6 個子工作階段：md5–md8、mc1–mc4、ml1–ml4。

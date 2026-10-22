@@ -108,3 +108,10 @@
   1. `desc2:Netherworld|Alchemy of Ice`：「那是南冰洋難抵極的座標」→「那是南極洲難抵極的座標」。85°50'S 65°47'E 是南極難抵極（Southern Pole of Inaccessibility），在南極大陸冰原上、距南冰洋最遠的一點，不在海上；研究 e 組原 facts 誤譯，research／hooks e／input／out 四層同步。
   2. `desc2:Dark Matter|How Cold Is the Sun`：刪「登記為德國藝人」（只有資料平台登記，不是事實陳述，正文不點名資料平台）；out、input 同步。
 - 其餘逐張審過未改字：媒體名、媒體榜單、「據說／據報導」掃 0；Kapnobatai 首句照 17074 新 hook；Lull「被認為提出了 grindcore 一詞」研究 e 組兩源、保留歸屬語氣。
+
+## 落格率（上線當天評分，HANDOFF §二第 9 步）
+- **17076**　`batch-progress/mood-axes/score-md5/`（select／merge／landing 仿 score-md34；select 改成自動排除所有 `score*/scored-*.json` 已評卡）。Opus 一支照 BRIEF 打分，conf mid 31／low 14。**落頹靡 45/45＝100%**（x 1.0–1.6、y +1.1～+2.0、z −1.2～−1.9）。priors → scale v0 → `build-card-moods` gate 綠、錨點 104/104。
+- 子曲風：預熱 45 張；Cryobiosis、Hall of Mirrors 標籤推不出節點，補進 `genre-l3-artist-map.json` 的 `electronic/ambient/dark-ambient`。
+
+## 本批新藝人（無介紹，6 個並行時不切，留調度工作階段統一切批）
+Sabled Sun、Alphaxone、Dronny Darko、Ugasanie、Randal Collier-Ford、Apocryphos, Kammarheit & Atrium Carceri、Council of Nine、Cryobiosis、God Body Disconnect、Neizvestija、Dark Matter、Northumbria、Aegri Somnia、Desiderii Marginis、Sephiroth、Moljebka Pvlse、Cities Last Broadcast、Apócrýphos、Svartsinn、Treha Sektori、Yen Pox、Troum & Yen Pox、Hall of Mirrors、Netherworld（24 位）
