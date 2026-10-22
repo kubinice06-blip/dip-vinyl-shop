@@ -3068,4 +3068,12 @@ window.DipPreviewStatus = Object.freeze({
   "numbers|numbers life": "unavailable",
   "numbers|in my mind all the time": "unavailable",
   "100 flowers|100 flowers": "unavailable",
+  "dennis brown|joseph's coat of many colours": "unavailable",
+  "sugar minott|ghetto-ology": "unavailable",
+  "hugh mundell|time and place": "unavailable",
+  "junior delgado|taste of the young heart": "unavailable",
+  "horace andy|natty dread a weh she want": "unavailable",
+  "jah lion|colombia colly": "unavailable",
+  "barrington levy|shaolin temple": "unavailable",
+  "sun araw & m. geddes gengras meet the congos|icon give thank": "unavailable",
 });
