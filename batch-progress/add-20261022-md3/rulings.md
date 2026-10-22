@@ -69,3 +69,10 @@
 - **10913**：照研究層改卡單廠牌：Khanate《Clean Hands Go Foul》、Jesu《Conqueror》Daymare Recordings → Hydra Head Records（b 組：Daymare 是日本盤，原版 Hydra Head）。Æthenor 的「鋼琴」實為 Fender Rhodes、Black Tape《Ashes in the Brittle Air》無大提琴且另一主唱為 Sue-Kenny Smith、Cindytalk 鋼琴無來源、ØØ Void 製作人是 Scott Reeder 非 Nick Cave 相關、Flight of the Behemoth 的 Merzbow 只混音兩首、《Ceremony》原版 Kning Disk、《Saint of the Pit》原版 Mute 1986（MB 條目為數位版）：寫作層只認研究稿。
 - **10914**：流程偏離紀錄：md4 研究 5 組在 md3 等候補、尚未進寫作層時先開（同時在飛仍是兩批、代理 6 支＝5 研究＋1 策展候補、WebSearch 累計約 36 次），因 md3 補候補研究會再多一輪，不先開會空等。
 - **10915**（候補）：策展層補 10 張無鼓候補，主線收 7 張補回 45：KTL《KTL 2》《V》、Menace Ruine《Alight in Ashes》《Union of Irreconcilables》、Black Tape for a Blue Girl《A Chaos of Desire》《This Lush Garden Within》、Arcana《Cantar de procella》（MB 回查 7/7 Album；盤名照 MB：Cantar de procella 小寫 p）。不收：Hildur Guðnadóttir《Without Sinking》（大提琴清晰段落、y 估 0.9 貼邊）、Ulver with Tromsø Chamber Orchestra《Messe I.X-VI.X》（管弦為主、y 估 1.0 貼邊、有一首帶電子節拍）、Black Tape《Mesmerized by the Sirens》（同藝人已 5 張）。策展層自報不提的：《The Grimmrobe Demos》MB Demo、《Oracle》與 KTL《3》MB EP、Elend 有嘶吼、Cindytalk《In This World》第一碟有鼓、Lycia《Estrella》與 LSD《Ardor》鼓機偏暖。候補分到 b 1、c 2、d 3、e 1，研究稿追加進各組檔。
+
+## 研究 候補 7 張
+> 借用主線區間條號 10915–10917。WebSearch 3 次用盡（KTL、Menace Ruine〔無結果〕、Black Tape）；其餘用 MB／Discogs API、Bandcamp、維基、樂評頁。稿 append 進 d（KTL 2、KTL V、Alight in Ashes）、c（Union of Irreconcilables、A Chaos of Desire）、b（This Lush Garden Within）、e（Cantar de procella）。
+
+- **10915**：KTL《V》不是「最後一張」（2020 有《VII》），且製作名單與評論都無管風琴／銅管，僅模組合成器、電腦、少量吉他貝斯，終曲有 Capdevielle 人聲。moodGuess 存疑（方向仍無鼓、冷）。
+- **10916**：Menace Ruine 兩張：「無鼓、無嘶吼」只有間接證據（兩人團、無鼓手署名、Discogs 簡介描述嗓音），標 thin；Union 非「首張」轉向（初作 Cult of Ruins 是黑金屬、次作已轉 neo-folk）；Alight in Ashes label SIGE（美雙黑膠）與 Profound Lore（加拿大 CD）並存，卡單 SIGE 不算錯。
+- **10917**：Black Tape 兩張與 Arcana：A Chaos of Desire 製作名單是小提琴（Vicki Richards 即興）非大提琴，且有人聲、單曲最長 9:01；This Lush Garden Within 與 Cantar de procella 的鼓／弦樂／合唱／定音鼓皆無來源可證，維基稱真打擊樂要到 2000 年才引入（推論 1997 年定音鼓為合成）。三張 thin，moodGuess 存疑，建議評分前先聽。

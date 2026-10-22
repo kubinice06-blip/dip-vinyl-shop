@@ -422,5 +422,52 @@
   "status": "thin",
   "notes": "moodGuess 部分存疑：策展層『管風琴長音、無鼓』——來源只確認 Hammond 風琴與合成器，有鼓的曲子是〈Cris d'aveugle〉（Einheit，約 12 分鐘、占全盤約三分之一）；另 MB 的 release 登記為 Intravenal Sound Operations 數位版，原版 Mute 1986（維基百科寫明）。人聲尖嘯的攻擊性如策展層所述。聲音事實缺樂評對速度／殘響／低頻的直述，故 thin。",
   "coverage": "thin"
+ },
+ {
+  "key": "desc2:Arcana|Cantar de procella",
+  "artist": "Arcana",
+  "album": "Cantar de procella",
+  "facts": [
+   {
+    "f": "Arcana 是以瑞典 Eskilstuna 為據點的 Peter Bjärgö（原名 Peter Pettersson）計畫，Discogs 記為 1993 年成立（維基寫 1994），原始女主唱是 Ida Bengtsson；Bjärgö 本人負責所有樂器與人聲。",
+    "src": "https://www.discogs.com/artist/44495"
+   },
+   {
+    "f": "維基稱 Arcana 的音樂大致是器樂，取材自中世紀音樂與中世紀的浪漫面向；1996 年首張《Dark Age of Reason》被拿來與早期 Dead Can Dance 比較。",
+    "src": "https://en.wikipedia.org/wiki/Arcana_(Swedish_band)"
+   },
+   {
+    "f": "《Cantar de procella》是第二張專輯，1997 年 6 月由 Cold Meat Industry 發行，十二首、約 47 分鐘；曲名含〈Chant of the Awakening〉、〈Void of Silence〉、標題曲 6 分 26 秒、〈God of the Winds〉、〈Gathering of the Storm〉、〈The Tree Within〉。",
+    "src": "https://www.discogs.com/master/1725"
+   },
+   {
+    "f": "錄音於 1997 年 2 至 3 月的 Studio Underground；作曲與製作署名 Peter Pettersson。初版為紙盒滑套（foldout 海報、鮮紅色碟面），同期另有 LP 版。",
+    "src": "https://www.discogs.com/release/64106"
+   },
+   {
+    "f": "維基指出「真實的打擊樂與原聲吉他」是 2000 年的《…The Last Embrace》才引入的新元素；以此推論，1997 年這張的鼓與定音鼓聲多半來自合成器或取樣，而不是現場錄的真定音鼓（推論，非來源明言）。",
+    "src": "https://en.wikipedia.org/wiki/Arcana_(Swedish_band)"
+   },
+   {
+    "f": "曲目中有多首短於三分鐘的過場：〈The Song of Preparation〉僅 43 秒、〈Aeterna Doloris〉2 分 55 秒、〈The Song of Solitude (The Cry of Isolde)〉2 分 57 秒，專輯整體以短曲串成，並非長篇 drone。",
+    "src": "https://www.discogs.com/master/1725"
+   },
+   {
+    "f": "聲音證據的限制：維基與 Discogs 都沒有逐軌的聲音描述，沒有樂評取得，因此合唱的比重、定音鼓的出現頻率與速度都沒有來源可證。",
+    "src": "https://www.discogs.com/master/1725"
+   }
+  ],
+  "hookCandidates": [
+   "整張專輯在 1997 年 2、3 月間於 Studio Underground 錄成，初版附摺疊海報與紅色碟面紙盒。",
+   "最短的〈The Song of Preparation〉只有 43 秒。"
+  ],
+  "sound": "以合成器鋪底的中世紀式器樂與吟唱為主，打擊聲偏稀；定音鼓是否為真樂器、合唱比重都缺來源，專輯級樂評未取得。",
+  "keyTracks": [
+   "Cantar de procella",
+   "God of the Winds"
+  ],
+  "status": "thin",
+  "coverage": "thin",
+  "notes": "【身分】MB RG 7116bcca…（Album, 1997-06），Discogs master 1725，Cold Meat Industry，瑞典；未推翻。【moodGuess 存疑：】卡單寫『定音鼓稀落、合唱與厚合成器墊』：查不到任何來源證實定音鼓多或少，也查不到合唱；維基只稱『大致器樂』，並說真實打擊樂 2000 年才引入，所以定音鼓應是合成的，稀不稀未知。『近 dark ambient 的慢』也不能確認：十二首平均約 4 分鐘，不是長篇。若主線需要鼓的把握，建議先聽一輪。status 標 thin。WebSearch 此張未用（已用完 3 次額度，Wikipedia、Discogs API 為主）。"
  }
 ]
