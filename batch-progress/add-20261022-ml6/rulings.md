@@ -22,3 +22,12 @@
 - 14434：moodGuess 存疑（聲音來源不足以確認靜）：Gerald Levert《Groove On》（標題曲／〈Rock Me〉可能偏動感）、Silk《Silk》（前三首 Soulshock & Karlin 程式化製作，樂評只明講後半張偏 slow jam）、Teddy《Truly Blessed》（程式鼓與真人鼓並用、錄音地五處）、Major Harris《Jealousy》（Earl Young 鼓的費城律動）、Keith Washington（七位製作人）、Barry White（Linn Drum 與合成器偏數位）。無任何一張能確認「明顯相反」，主線視同邊緣張。
 - 14435：Love Unlimited《In Heat》是人聲三重唱盤，與池中判輕的器樂盤《Rhapsody in White》結構不同，建議不因同製作人而連坐。
 - 14436：Discogs API 直連可用；Wikipedia API 被限流，改用 WebFetch 讀條目。WebSearch 用 2 次（Gloria Scott、Silk）。
+
+## 研究 e 組
+- 14441：Surface《2nd Wave》moodGuess 嚴重存疑（中度以上）：人員表顯示 drum programming 貫穿 2–8 首、synth bass、orchestral hits（〈I Missed〉）、〈Black Shades〉有饒舌與電腦編程，只有 1、8 兩首配真弦樂，是 80 年代末數位明亮製作，y 恐不到 0.5；建議視評分結果汰換。
+- 14442：Sylvia《Pillow Talk》moodGuess 存疑：小編制律動組（吉他、貝斯、鼓、康加鼓、鋼琴），九首多為 2–4 分鐘短曲，Christgau 稱「沒有製作門面」、Wikipedia 稱單曲為 medium dance number，弦樂墊不厚；y 0.7 恐偏樂觀。
+- 14443：Margie Joseph《Sweet Surrender》推翻策展層場景標籤：非 Memphis／Stax 系，是 Atlantic、紐約 Atlantic Studios、Arif Mardin 製作（Stax／Volt 是她 1969–72）；全盤十首皆 3 分鐘上下、Discogs 標示各曲相連（mixed），moodGuess 中度存疑。
+- 14444：輕度存疑：Billy Paul《When Love Is New》（A 面〈People Power〉舞曲榜 #14）、Manhattans《There's No Me Without You》與《After Midnight》（短曲多、單曲為中速；〈Shining Star〉非慢板）、Ray, Goodman & Brown《II》（重量感待評分）。Minnie Riperton、Peabo Bryson、Billy Paul 標題曲系與預估相符。
+- 14445：Ray, Goodman & Brown《II》：MB first-release-date 1992 為 CD 條目屬實，原盤 Polydor 1980（Discogs master 151215，release 7867821）；facts 一律寫 1980。
+- 14446：已避開的單一／未證實說法（寫作層勿用）：Minnie Riperton 頁「Quincy Jones 描述此計畫」（製作人欄無 Jones）；Manhattans「進 Columbia 後第一支大熱門」；Peabo Bryson〈I'm So Into You〉確切榜位（文字說 R&B #2、Singles 表欄位錯列，建議寫「前段」）；After Midnight 葛萊美僅知「得獎」，類別未取得來源。
+- 14447：Wikipedia API 被限流，改以 curl 抓條目 HTML 轉文字；AllMusic 403。Discogs API、MB API 可用。WebSearch 用 1 次（Manhattans 專輯）。
