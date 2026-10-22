@@ -83,3 +83,11 @@
 - **14316**　Oki 鉤子「後來才得知自己有阿伊努血統」出處日文維基即無時點，照原句保留，不補臆測時點。小沢健二「Oricon 最高第 7 名」是銷售榜，非媒體年終榜，保留。
 - **14317**　其餘 8 張逐張審過，未改字。
 - **14318**　試聽：7 ready／4 unavailable（Dry & Heavy、신해경、Oki Dub Ainu Band、LITTLE TEMPO：Apple jp／us／kr／tw 以藝人目錄逐盤核對均無對得上 MB 曲目的條目；Oki 的 Apple《Dub Ainu Deluxe》2006-12-03 同日但 8 首曲名全不同，不硬配）。封面：6 張 CAA、2 張 Apple 官方圖（Polaris《Home》、小沢健二《Eclectic》）、3 張 Discogs（Dry & Heavy CAA 500、신해경、LITTLE TEMPO），縮圖表目視全數與盤名相符。冷門軸全批照 §0.8 錨點制人工評（`ratings-override.json`）。
+
+## 上線與落格（2026-10-22；條號 14319–14320）
+- **14319**　上線 11 張：card_catalog 11/11、KV 14 鍵（含別名鍵）逐字回讀一致、seed +11、published gate 0 error。子曲風預熱 11/11 tagged；`genre-l3-artist-map.json` 補小沢健二《Eclectic》→ soul/neo-soul；`rock-asia-country-map.json` 補 Doodle、The Fur.（tw），sugar plant、Polaris（jp）、신해경（kr）由腳本自動判。台灣流行卡 0 張（吳卓源、?te 已汰），`tw-pop-artists.json` 不需加。
+- **14320**　**落恍惚 11/11＝100%**（`batch-progress/mood-axes/score-ml4/`，評分 conf mid 7／low 4）。主線審 moodGuess：sugar plant 兩張評 z 0.2／0.0（估 0.6）、Oki z 0.2（估 0.6）——色溫都比策展估得冷、貼在暖冷界線上，但評分依據（slowcore 迴響、tonkori 空弦）與研究層存疑一致，不覆寫；Doodle、신해경、The Fur. 三張評分 conf low（憑曲風推），三軸與 moodGuess 差 ≤0.3。給下一輪：東亞 dream pop／暖 dub 的色溫是最大風險（策展普遍高估 0.4–0.6），z 估 <0.6 的不要提；池中同藝人既有評分是最可靠的篩子（本批靠它汰 15 張）。
+- **場景挖不到 45**：策展兩輪 35 → 主線用池中既有評分汰 15 → 研究汰 9 → 11。台日韓核心已多在池，主流 lo-fi R&B 留給 ml20–22。
+
+## 本批新藝人（無介紹，交調度工作階段統一切批）
+sugar plant、Polaris、신해경、Doodle、The Fur.、Oki Dub Ainu Band

@@ -104,3 +104,11 @@
 - **14235**　核對後保留：Knxwledge 1988 年生（英文維基）、Onra 1981 年生於德國 Trier（英文維基，父母法國人）、Navy Blue 替 Earl Sweatshirt 製作（英文維基）、Liv.e 1998 年生於達拉斯（英文維基）、Dudley Perkins「常唱走音」（Exclaim! 與 The A.V. Club 兩源一致，屬聲音事實）。
 - **14236**　其餘 24 張逐張審過，未改字。
 - **14237**　試聽：22 ready／5 unavailable（Hud.Dreems.PRT.1.5、FlySiifu's、Beat Konducta Vol. 5／6、Onra & Quetzal《Tribute》：Apple us 藝人目錄查無對得上的條目，Tribute 只有《Tribute II》EP，不硬配）；其中 11 張 meta 自動搜尋落空，改走 Apple `entity=musicArtist` → `lookup` 逐盤核對曲目（`preview-override.json`）。封面 27 張全 CAA，縮圖表目視相符。冷門軸 6 張人工（Last.fm 盤名彎引號／分卷寫法對不上致 listeners 失真，§0.8 錨點制給 3；`ratings-override.json`）。
+
+## 上線與落格（2026-10-22；條號 14238–14240）
+- **14238**　上線 27 張：card_catalog 27/27、KV 27 鍵逐字回讀一致、seed +27、published gate 0 error。子曲風預熱 26 tagged／1 empty；`genre-l3-artist-map.json` 以「藝人|專輯」補 5 張（Ta-ku ×2、tomppabeats、Onra & Quetzal → hiphop/underground/instrumental；L’Orange → hiphop/underground/jazz-rap）。
+- **14239**　**落恍惚 26/27＝96.3%**（`batch-progress/mood-axes/score-ml3/`，評分 conf mid 13／low 14）。唯一出格 Medhane《Own Pace》z −0.1 落頹靡（混濁 lo-fi、喃喃低吟偏灰暗；策展 z 0.5 已是本批最貼邊）。主線審評分未覆寫（評分與 moodGuess 三軸差皆 ≤0.6，方向一致）。給下一輪：dusty 靈魂取樣的 beat tape 幾乎全落恍惚，最大風險是 MIKE 圈「灰暗內省」那一路的色溫；乾淨 jazzy chillhop 仍判輕不要提。
+- **14240**　場景挖不到 45：策展兩輪 36 → 主線汰 4 → 研究汰 5 → 27。
+
+## 本批新藝人（無介紹，交調度工作階段統一切批）
+L’Orange、Dudley Perkins、Illa J、Maxo、Pink Siifu & Fly Anakin、Suff Daddy、Ta-ku、Onra & Quetzal、Liv.e、Medhane
