@@ -1,5 +1,10 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-22｜dip-vinyl-shop｜頻率選歌喇叭鈕與頂欄「自動試聽」開關連動
+
+- **改動**：店主切去聽串流後站上會自動把網頁音源（頂欄自動試聽開關）關掉，頻率選歌就沒聲音、按左上角喇叭也沒反應——喇叭原本只是模組內的布林。現在 `dip-tune.js` 以 `cfg.audioPref()`（`DipPlayer.autoplayPreference() !== 'off'`）進場同步、喇叭按下走 `cfg.setAudioPref(on)` 回寫站上開關並武裝播放器、新增 `DipTune.setAudio(on)` 給頁面推；`index.html` 頂欄開關的 `onToggle` 與 `onAutoplayRevoked` 都呼叫 `DipTune.setAudio`。開關是關的時候轉輪子不再 `grant`（不搶串流）；沒表態過的裝置第一次碰輪子寫成開，頂欄圖示跟著亮。`dip-tune.js?v=6`。
+- **主要檔案**：`dip-tune.js`、`index.html`
+- **驗證**：本機 Playwright 八個情境全過：關→進場喇叭關、轉輪子不寫開、按喇叭→頂欄開、頂欄關→喇叭關、頂欄開→喇叭開、離開再進照站上開關、未表態→進場喇叭開、第一次碰輪子→頂欄開；0 pageerror。
 ### 2026-10-22｜dip-vinyl-shop｜情緒薄格策展線 md7／md8：冷調 post-rock 41＋dub techno 三線 41 張上線，落頹靡 75/82
 
 - **內容**：店主「新增的專輯數太少了 與雀躍嚴重不平衡」，6 個並行子工作階段之一。md7（`add-20261022-md7`）：Labradford 4、Roy Montgomery 6、Pan American 2、Tarentel 3、GY!BE 2、Set Fire to Flames 2、Piano Magic 2、TWDY 2、Mogwai 2、Supersilent《6》、NIN《Ghosts I–IV》、冷配樂 6（Reznor/Ross 2、Jóhannsson 2、《Annihilation》、《Only God Forgives》）、無鼓吉他 drone（Windy & Carl、Aarktica、Barn Owl、Thisquietarmy、Aidan Baker 2）。md8（`add-20261022-md8`）：Silent Season 系（ASC 4、Purl 2、Submersion 3、Faru、Axs、Tdel…）、Echocord 系（Fluxion 5、Quantec 3、Silent Harbour、Onmutu Mechanicks）、Chain Reaction（Fluxion《Bipolar Defect》、Hallucinator）、Yagya 3、Rod Modell 3、cv313、Echospace、Porter Ricks《Symbiotics》、bvdub & loscil、Henke《Layering Buddha》、Multicast Dynamics 2。兩批場景都挖不到 45，照實上架。

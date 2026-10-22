@@ -1070,7 +1070,7 @@
 <script src="dip-player.js?v=49"></script>
 <script src="dip-draw-anim.js?v=4"></script>
 <script src="dip-genre-tree.js?v=5"></script>
-<script src="dip-tune.js?v=5"></script>
+<script src="dip-tune.js?v=6"></script>
 <script src="dip-artist-intro.js?v=2"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -5678,7 +5678,7 @@ ${seenList}
       // 只切開關不武裝音訊：切開關本身不該停掉玩家正在聽的串流。真的有東西要播
       //（在結果頁上開啟）才由 onToggle 用同一下手勢起播，起播才搶焦點（2026-10-18）。
       armOnEnable: false,
-      onToggle: (enabled) => enabled && gpPlayCurrentResultFromToggle(),
+      onToggle: (enabled) => { tuneSyncAudio(enabled); return enabled && gpPlayCurrentResultFromToggle(); },
       hints: {
         first: '♪ 點這裡開啟自動試聽',
         auto: '♪ 自動試聽中 · 點這裡可關閉',
@@ -5707,6 +5707,9 @@ ${seenList}
     if (toggle) window.DipPlayer?.showHint?.(toggle.el, '♪ 自動試聽目前關閉 · 點這裡開啟');
     return true;
   }
+  // 頂欄開關切換、或系統偵測到別的音訊而撤銷時，頻率選歌的喇叭鈕要跟著變（DipTune 之後才載入，所以用 window 查）
+  function tuneSyncAudio(on) { try { window.DipTune?.setAudio?.(on); } catch (_) {} }
+  window.DipPlayer?.onAutoplayRevoked?.(() => tuneSyncAudio(false));
   // 頂欄是靜態結構，開站就掛上（module script 已在 dip-player.js 之後執行）。
   mountGlobalAutoplayToggle();
   // 抽卡入口與流程內的每一下點擊（首頁卡片、類型/藝人選項、再一張、特殊抽卡券…）都先解鎖，
@@ -5861,8 +5864,13 @@ ${seenList}
     // 第一次碰輪子＝使用者明確要出聲：武裝播放器並授權這次造訪的自動試聽（停下來就播電台）。
     // 之後每次按下／放開輪子都再武裝一次並拉長 keep-alive：iOS 的 audio session 8 秒內沒真的播就放掉，
     // 轉久了才停下來會變成「沒有試聽」。
-    onFirstGesture: () => gpEnsurePlayer({ grant: true, hold: 30000 }),
-    onGesture: () => gpEnsurePlayer({ grant: true, hold: 30000 }),
+    // 2026-10-22：喇叭鈕與頂欄「自動試聽」開關連動。開關是關的（例如切去聽串流被站上自動關掉）
+    // 就不授權、不武裝，轉輪子不會再搶走串流；喇叭鈕按開＝把頂欄開關打開並武裝。
+    // 沒表態過的裝置第一次碰輪子就寫成開（碰輪子＝明確要出聲），頂欄圖示才會跟著亮。
+    onFirstGesture: (audioOn) => { if (!audioOn) return; if (window.DipPlayer?.autoplayPreference?.() === 'unset') { window.DipPlayer.setAutoplayPreference(true); _autoplayToggle?.sync?.(); } gpEnsurePlayer({ grant: true, hold: 30000 }); },
+    onGesture: (audioOn) => { if (audioOn) gpEnsurePlayer({ grant: true, hold: 30000 }); },
+    audioPref: () => window.DipPlayer?.autoplayPreference?.() !== 'off',
+    setAudioPref: (on) => { window.DipPlayer?.setAutoplayPreference?.(on); _autoplayToggle?.sync?.(); if (on) gpEnsurePlayer({ grant: true, hold: 30000 }); },
     resolveCover: async (card) => (await resolveCardAssets(card.artist, card.album)).coverUrl || '',
     onBack: () => setActiveTab(SHOP_MODE ? 'shop' : 'find'),
     onResult: async ({ card, cell, cellName, targetCellName }) => {

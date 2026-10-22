@@ -6,7 +6,9 @@
  * （tune/tile-*.png）照圓柱投影取樣捲動。星圖用 Three.js（r128，與 starmap-lab 同版）。
  *
  * 用法（index.html 接線）：
- *   DipTune.configure({ host, loadCardPool, onResult, onBack, player, cardIdOf, onFirstGesture, onGesture, resolveCover });
+ *   DipTune.configure({ host, loadCardPool, onResult, onBack, player, cardIdOf, onFirstGesture, onGesture, resolveCover, audioPref, setAudioPref });
+ *   audioPref() → true/false：站上「自動試聽」開關的現值；setAudioPref(on)：喇叭鈕按下時回寫那顆開關。
+ *   DipTune.setAudio(on)：頂欄開關或系統撤銷時由頁面推進來，讓喇叭鈕跟著變。
  *   DipTune.start();     // 進入分頁時呼叫；再次呼叫只會重新顯示，不重建
  *   DipTune.stop();      // 離開分頁：停試聽、停音效
  *   DipTune.pickAgain(); // 結果頁「同頻率再抽一張」：在目前頻率附近加權隨機
@@ -277,9 +279,9 @@
     if (tile) tile.addEventListener('load', draw);
     let drag = null;
     const setV = nv => { const v0 = state.p[axis]; state.p[axis] = Math.max(0, Math.min(100, nv)); node.setAttribute('aria-valuenow', Math.round(state.p[axis])); draw(); sweep(axis, v0, state.p[axis]); scheduleUpdate(); };
-    node.addEventListener('pointerdown', e => { drag = { y: e.clientY, v: state.p[axis] }; node.setPointerCapture(e.pointerId); e.preventDefault(); ensureAudio(); cfg.onGesture?.(); });
+    node.addEventListener('pointerdown', e => { drag = { y: e.clientY, v: state.p[axis] }; node.setPointerCapture(e.pointerId); e.preventDefault(); ensureAudio(); cfg.onGesture?.(state.audioOn); });
     node.addEventListener('pointermove', e => { if (!drag) return; const dy = e.clientY - drag.y; setV(drag.v + dy * (state.fine ? 0.05 : 0.2)); });
-    const end = () => { drag = null; cfg.onGesture?.(); }; node.addEventListener('pointerup', end); node.addEventListener('pointercancel', () => { drag = null; });
+    const end = () => { drag = null; cfg.onGesture?.(state.audioOn); }; node.addEventListener('pointerup', end); node.addEventListener('pointercancel', () => { drag = null; });
     node.addEventListener('wheel', e => { e.preventDefault(); ensureAudio(); setV(state.p[axis] - Math.sign(e.deltaY) * (state.fine ? 0.25 : 1)); }, { passive: false });
     node.addEventListener('keydown', e => { const step = e.shiftKey ? 10 : 1; if (e.key === 'ArrowUp' || e.key === 'ArrowRight') { setV(state.p[axis] + step); e.preventDefault(); } if (e.key === 'ArrowDown' || e.key === 'ArrowLeft') { setV(state.p[axis] - step); e.preventDefault(); } });
     new ResizeObserver(size).observe(node); size();
@@ -356,7 +358,7 @@
   function ensureAudio() {
     if (!state.audioOn) return;
     // 第一次手勢：先讓站上的播放器武裝（同時授權這次造訪的自動試聽），再叫醒音效
-    if (!unlocked) { unlocked = true; try { unlock.play().catch(() => {}); } catch (_) {} cfg.onFirstGesture?.(); }
+    if (!unlocked) { unlocked = true; try { unlock.play().catch(() => {}); } catch (_) {} cfg.onFirstGesture?.(state.audioOn); }
     if (!AC) buildAudio(); if (AC && AC.state !== 'running') AC.resume().catch(() => {});
   }
   function sfxTurn(axis, v0, v1) {
@@ -388,6 +390,18 @@
   // ── 進出 ──────────────────────────────────────────────────────────
   function setModeUI() { const f = state.fine; el.ledTop.classList.toggle('on', !f); el.ledBot.classList.toggle('on', f); el.swTop.classList.toggle('on', !f); el.swBot.classList.toggle('on', f); el.mode.setAttribute('aria-pressed', String(f)); }
   function setAudioUI() { el.spk.setAttribute('aria-pressed', String(state.audioOn)); }
+  // on：開或關；fromSpk：是不是喇叭鈕按出來的（要回寫站上的開關、這一下手勢可以武裝音訊）
+  function setAudio(on, fromSpk = false) {
+    on = !!on;
+    if (fromSpk) { try { cfg.setAudioPref?.(on); } catch (_) {} }
+    if (on === state.audioOn && !fromSpk) { if (el) setAudioUI(); return; }
+    state.audioOn = on;
+    if (el) setAudioUI();
+    if (!on) { stopPreview(); sfxStop(); }
+    else if (fromSpk) { ensureAudio(); armPreview(); }
+  }
+  // 進場時以站上的開關為準（沒表態過的裝置照舊預設開；第一次碰輪子才寫成開）
+  function syncAudioFromPref() { try { const v = cfg.audioPref?.(); if (typeof v === 'boolean') state.audioOn = v; } catch (_) {} }
 
   async function build() {
     const host = cfg.host();
@@ -397,7 +411,9 @@
       dx: host.querySelector('#tuneDx'), dy: host.querySelector('#tuneDy'), dz: host.querySelector('#tuneDz'), dcell: host.querySelector('#tuneDcell'), cellStrip: host.querySelector('#tuneCellStrip'),
       mode: host.querySelector('#tuneMode'), swTop: host.querySelector('#tuneSwTop'), swBot: host.querySelector('#tuneSwBot'), ledTop: host.querySelector('#tuneLedTop'), ledBot: host.querySelector('#tuneLedBot'), draw: host.querySelector('#tuneDraw'), console: host.querySelector('#tuneConsole') };
     el.back.onclick = () => cfg.onBack?.();
-    el.spk.onclick = () => { state.audioOn = !state.audioOn; setAudioUI(); if (!state.audioOn) { stopPreview(); sfxStop(); } else { ensureAudio(); armPreview(); } };
+    // 喇叭鈕與站上頂欄的「自動試聽」開關是同一顆（2026-10-22 店主：切到串流後站上自動關掉網頁音源，
+    // 頻率選歌就沒聲音，按喇叭也沒反應）。按下去先回寫站上的開關，再照新狀態開停。
+    el.spk.onclick = () => { setAudio(!state.audioOn, true); };
     el.mode.onclick = () => { state.fine = !state.fine; setModeUI(); sfxClick(); };
     el.now.onclick = () => { if (previewCard) emit(previewCard); };
     el.draw.onclick = () => { if (previewCard) emit(previewCard); };
@@ -424,10 +440,11 @@
 
   async function start() {
     state.visible = true;
+    syncAudioFromPref();
     if (!state.built) await build();
-    else { el.draw.disabled = false; if (previewCard) armPreview(); }
+    else { setAudioUI(); el.draw.disabled = false; if (previewCard) armPreview(); }
   }
   function stop() { state.visible = false; stopPreview(); sfxStop(); }
 
-  global.DipTune = { configure, start, stop, pickAgain, get state() { return state; } };
+  global.DipTune = { configure, start, stop, pickAgain, setAudio, get state() { return state; } };
 })(window);
