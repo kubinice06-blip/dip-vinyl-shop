@@ -21,7 +21,9 @@
 
   let cfg = { host: null, loadCardPool: null, onResult: null, onBack: null, player: null, cardIdOf: null };
   const ORDER = ['calm', 'still', 'languid', 'decay', 'lift', 'crisp', 'boil', 'charge'];
-  const CELL_COLOR = { calm: '#c9a24a', still: '#3f8f9b', languid: '#b5522e', decay: '#6b4aa8', lift: '#ffd166', crisp: '#5ee6f0', boil: '#ff6b35', charge: '#9b6bff' };
+  // 八格配色（2026-10-22 店主定稿，八個色相照色相環排）：暖半邊 放鬆金黃→雀躍橙→沸騰朱紅→恍惚洋紅；
+  // 冷半邊 平靜青→冷冽冰藍白→亢奮電藍→頹靡紫。星圖、命中光暈、結果頁「頻率 ●」、就這張的線框都用這一套。
+  const CELL_COLOR = { calm: '#f2cf5b', lift: '#ff9a3c', boil: '#ff4d3a', languid: '#e8578f', still: '#5ee6f0', crisp: '#bfe8ff', charge: '#4f8dff', decay: '#9b6bff' };
   const AX = { x: '#f2b341', y: '#8fe0a0', z: '#ff7a6b', cold: '#a08cff' };
   const SIGMA = [0.2, 0.2, 0.3], FLOOR = 0.02, SWEEP_R = 10;   // 距離權重與掃描半徑（MOOD_LAUNCH_PLAN §4.2，σ 0.35 太寬，實測改 0.2）
   const idOf = (a, b) => (cfg.cardIdOf ? cfg.cardIdOf(a, b) : ((a || '') + '|' + (b || '')).toLowerCase().replace(/\//g, '-').trim());
@@ -242,6 +244,126 @@
     const [mx, my, mz] = S3(c); marker.position.set(mx, my, mz); marker.scale.set(.34, .34, 1); marker.material.color.set(CELL_COLOR[c.cell]);
   }
 
+  // 命中那顆星在頁面上的座標（給「就這張」特效當起點）；星圖沒畫或沒命中就回 null
+  function litScreenPos() {
+    if (!THREE_OK || litIdx < 0 || !state.visible || !el?.gl) return null;
+    const r = el.gl.getBoundingClientRect(); if (r.width < 2) return null;
+    const v = new THREE.Vector3(...S3(CARDS[litIdx])).project(camera);
+    if (v.z > 1) return null;
+    return { x: r.left + (v.x + 1) / 2 * r.width, y: r.top + (1 - v.y) / 2 * r.height };
+  }
+
+  // ── 「就這張」特效（2026-10-22 店主：復古向量電玩）──────────────────────
+  // 該格顏色的線框從命中的星飛到眼前（拖磷光殘影），等專輯卡資料到了：貼到真卡的位置、
+  // 把卡裡每個元素的骨架線畫出來、閃白、CRT 掃描線由上往下把卡掃出來，之後就是一般的專輯卡。
+  // 用法：const w = warpStart({ color, from }) → 卡渲染好（還沒顯示）先 w.prepare(cardEl) →
+  //       切到結果頁後 await w.land(cardEl)；中途又抽了一張就 w.cancel()。
+  let warpCanvas = null, warpCtx = null;
+  function warpCanvasEl() {
+    if (!warpCanvas) { warpCanvas = document.createElement('canvas'); warpCanvas.style.cssText = 'position:fixed;inset:0;width:100%;height:100%;z-index:2147483000;pointer-events:none;display:none'; document.body.appendChild(warpCanvas); warpCtx = warpCanvas.getContext('2d'); }
+    const D = Math.min(2, global.devicePixelRatio || 1), W = global.innerWidth, H = global.innerHeight;
+    if (warpCanvas.width !== W * D || warpCanvas.height !== H * D) { warpCanvas.width = W * D; warpCanvas.height = H * D; }
+    warpCtx.setTransform(D, 0, 0, D, 0, 0); warpCanvas.style.display = 'block';
+    return { W, H };
+  }
+  function warpSound(kind, dur) {
+    if (!state.audioOn) return;
+    let a = null; try { a = cfg.player?.audioContext?.() || AC; } catch (_) {}
+    if (!a || a.state !== 'running') return;
+    const t = a.currentTime;
+    if (kind === 'sweep') {
+      const o = a.createOscillator(), g = a.createGain(), f = a.createBiquadFilter();
+      o.type = 'sawtooth'; o.frequency.setValueAtTime(90, t); o.frequency.exponentialRampToValueAtTime(1400, t + dur);
+      f.type = 'lowpass'; f.frequency.setValueAtTime(600, t); f.frequency.exponentialRampToValueAtTime(5000, t + dur);
+      g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(0.08, t + 0.05); g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+      o.connect(f).connect(g).connect(a.destination); o.start(t); o.stop(t + dur + 0.05);
+    } else {
+      const o = a.createOscillator(), g = a.createGain(); o.type = 'square'; o.frequency.setValueAtTime(330, t); o.frequency.exponentialRampToValueAtTime(110, t + 0.14);
+      g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(0.06, t + 0.01); g.gain.exponentialRampToValueAtTime(0.0001, t + 0.16);
+      o.connect(g).connect(a.destination); o.start(t); o.stop(t + 0.2);
+    }
+  }
+  function warpStart({ color = '#5ee6f0', from = null } = {}) {
+    const RM = global.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+    const easeOut = t => 1 - Math.pow(1 - t, 3);
+    const { W, H } = warpCanvasEl(); const ctx = warpCtx;
+    const FLY = 900, SNAP = 180, SKEL = 320, FLASH = 120, REVEAL = 480, OUT = 240;
+    // 飛行目標先用結果頁卡片的大概位置（內容寬最多 560、頂欄約 50px），真卡量到再貼過去
+    const cw = Math.min(560, W), guess = { x: (W - cw) / 2 + 20, y: 50 + 32, w: cw - 40, h: Math.min(H - 110, (cw - 40) * 1.55) };
+    let rect = guess, target = guess, snapFrom = null, snapT0 = 0, shapes = [], cardEl = null, phase = 'fly', t0 = performance.now(), landT0 = 0, trails = [], raf = 0, done = null, backdrop = from ? 0 : 1, cancelled = false;
+    const origin = from || { x: W / 2, y: H / 2 };
+    const quad = (p, tr, breathe) => {
+      const cx = origin.x + (tr.x + tr.w / 2 - origin.x) * p, cy = origin.y + (tr.y + tr.h / 2 - origin.y) * p;
+      const s = (0.06 + 0.94 * p) * (breathe || 1), w = tr.w * s, h = tr.h * s, ay = (1 - p) * 1.1, ax = (1 - p) * -0.45, f = 900;
+      const pts = [[-w / 2, -h / 2], [w / 2, -h / 2], [w / 2, h / 2], [-w / 2, h / 2]].map(([x, y]) => { let z = 0, X = x * Math.cos(ay) - z * Math.sin(ay); z = x * Math.sin(ay) + z * Math.cos(ay); let Y = y * Math.cos(ax) - z * Math.sin(ax); z = y * Math.sin(ax) + z * Math.cos(ax); const k = f / (f + z); return [cx + X * k, cy + Y * k]; });
+      return { pts };
+    };
+    const strokeQuad = (q, alpha, width, glow) => { ctx.save(); ctx.globalAlpha = alpha; ctx.lineWidth = width; ctx.strokeStyle = glow ? color : '#fff'; if (glow) { ctx.shadowColor = color; ctx.shadowBlur = 14; } ctx.beginPath(); q.pts.forEach(([x, y], i) => i ? ctx.lineTo(x, y) : ctx.moveTo(x, y)); ctx.closePath(); ctx.stroke(); ctx.restore(); };
+    const skeleton = (q, alpha, draw) => {
+      if (!shapes.length) return; const [a, b, c, d] = q.pts;
+      const P = (u, v) => { const top = [a[0] + (b[0] - a[0]) * u, a[1] + (b[1] - a[1]) * u], bot = [d[0] + (c[0] - d[0]) * u, d[1] + (c[1] - d[1]) * u]; return [top[0] + (bot[0] - top[0]) * v, top[1] + (bot[1] - top[1]) * v]; };
+      const segs = []; for (const sh of shapes) { if (sh.t === 'rect') segs.push([P(sh.u0, sh.v0), P(sh.u1, sh.v0)], [P(sh.u1, sh.v0), P(sh.u1, sh.v1)], [P(sh.u1, sh.v1), P(sh.u0, sh.v1)], [P(sh.u0, sh.v1), P(sh.u0, sh.v0)]); else segs.push([P(sh.u0, sh.v), P(sh.u1, sh.v)]); }
+      const total = segs.length, upto = Math.floor(draw * total), frac = draw * total - upto;
+      ctx.save(); ctx.globalAlpha = alpha; ctx.strokeStyle = color; ctx.lineWidth = 1; ctx.shadowColor = color; ctx.shadowBlur = 8; ctx.beginPath();
+      segs.forEach(([p, r], i) => { if (i < upto) { ctx.moveTo(p[0], p[1]); ctx.lineTo(r[0], r[1]); } else if (i === upto) { ctx.moveTo(p[0], p[1]); ctx.lineTo(p[0] + (r[0] - p[0]) * frac, p[1] + (r[1] - p[1]) * frac); } });
+      ctx.stroke(); ctx.restore();
+    };
+    const scanlines = (alpha) => { if (alpha <= 0) return; ctx.save(); ctx.globalAlpha = alpha * 0.28; ctx.fillStyle = '#000'; for (let y = 0; y < H; y += 3) ctx.fillRect(0, y, W, 1); ctx.restore(); };
+    const measure = (el) => {
+      const r = el.getBoundingClientRect(); rect = { x: r.left, y: r.top, w: r.width, h: r.height };
+      const rel = n => { const q = n.getBoundingClientRect(); return { u0: (q.left - r.left) / r.width, v0: (q.top - r.top) / r.height, u1: (q.right - r.left) / r.width, v1: (q.bottom - r.top) / r.height, w: q.width, h: q.height }; };
+      shapes = [];
+      el.querySelectorAll('img, .quiz-result-artist, .quiz-result-album, .quiz-result-year, .album-ratings-slot > *, .quiz-tier-slot > *, .gp-match-note, .quiz-result-reason, .streaming-btn, .quiz-collect-btn, .quiz-share-btn, .quiz-another-btn, .quiz-retry-btn, .gt-back-top, [data-gp-action="preview"]').forEach(n => {
+        if (shapes.length > 48) return; const q = rel(n); if (q.w < 4 || q.h < 4 || q.v0 > 1 || q.v1 < 0) return;
+        const boxy = n.tagName === 'IMG' || n.tagName === 'BUTTON' || n.tagName === 'A' || q.h > 60;
+        shapes.push(boxy ? { t: 'rect', u0: q.u0, v0: q.v0, u1: q.u1, v1: q.v1 } : { t: 'line', u0: q.u0, u1: q.u1, v: (q.v0 + q.v1) / 2 });
+      });
+    };
+    const clear = () => { ctx.clearRect(0, 0, W, H); if (backdrop > 0) { ctx.save(); ctx.globalAlpha = backdrop; ctx.fillStyle = '#060609'; ctx.fillRect(0, 0, W, H); ctx.restore(); } };
+    const finish = () => { cancelAnimationFrame(raf); if (cardEl) { cardEl.style.clipPath = ''; cardEl.style.webkitClipPath = ''; } if (warpCanvas) { ctx.clearRect(0, 0, W, H); warpCanvas.style.display = 'none'; } if (done) done(); };
+    if (!RM && state.audioOn) warpSound('sweep', FLY / 1000);
+    function frame(now) {
+      if (cancelled) return;
+      const e = now - t0;
+      if (phase === 'fly') { // 飛到大概位置，還沒拿到資料就在那裡呼吸等著
+        const p = easeOut(Math.min(1, e / FLY)); const breathe = e > FLY ? 1 + 0.015 * Math.sin((e - FLY) / 180) : 1;
+        clear(); const q = quad(p, guess, breathe); trails.push(q); if (trails.length > 7) trails.shift();
+        trails.forEach((tq, i) => strokeQuad(tq, 0.08 + 0.12 * i / trails.length, 1, false)); strokeQuad(q, 1, 2, true);
+      } else if (phase === 'snap') { // 貼到真卡的位置
+        const p = easeOut(Math.min(1, (now - snapT0) / SNAP)); clear();
+        const lerpQ = { pts: snapFrom.pts.map(([x, y], i) => { const [tx, ty] = quad(1, rect).pts[i]; return [x + (tx - x) * p, y + (ty - y) * p]; }) };
+        strokeQuad(lerpQ, 1, 2, true); if (p >= 1) { phase = 'skel'; landT0 = now; }
+      } else if (phase === 'skel') { // 畫骨架
+        const p = Math.min(1, (now - landT0) / SKEL); clear(); const q = quad(1, rect); strokeQuad(q, 1, 2, true); skeleton(q, 1, p);
+        if (p >= 1) { phase = 'flash'; landT0 = now; warpSound('land'); }
+      } else if (phase === 'flash') {
+        const p = Math.min(1, (now - landT0) / FLASH); clear(); const q = quad(1, rect); strokeQuad(q, 1, 2 + (1 - p) * 3, true); strokeQuad(q, 1 - p, 1, false); skeleton(q, 1 - p, 1); scanlines(p);
+        if (p >= 1) { phase = 'reveal'; landT0 = now; }
+      } else if (phase === 'reveal') { // 掃描線由上往下掃出真卡；黑底同時淡掉，露出結果頁
+        const p = Math.min(1, (now - landT0) / REVEAL); backdrop = 1 - p; clear();
+        if (cardEl) { const cp = `inset(0 0 ${(100 - p * 100).toFixed(2)}% 0)`; cardEl.style.clipPath = cp; cardEl.style.webkitClipPath = cp; }
+        const q = quad(1, rect), y = rect.y + rect.h * p; strokeQuad(q, 1 - p * 0.7, 2, true); scanlines(1 - p);
+        if (y > -10 && y < H + 10) { ctx.save(); ctx.strokeStyle = '#fff'; ctx.shadowColor = color; ctx.shadowBlur = 16; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(rect.x - 6, y); ctx.lineTo(rect.x + rect.w + 6, y); ctx.stroke(); ctx.restore(); }
+        if (p >= 1) { phase = 'out'; landT0 = now; if (cardEl) { cardEl.style.clipPath = ''; cardEl.style.webkitClipPath = ''; } }
+      } else if (phase === 'out') {
+        const p = Math.min(1, (now - landT0) / OUT); clear(); strokeQuad(quad(1, rect), 1 - p, 2, true);
+        if (p >= 1) { finish(); return; }
+      }
+      raf = requestAnimationFrame(frame);
+    }
+    if (!RM) raf = requestAnimationFrame(frame);
+    return {
+      // 卡渲染好、還沒切到結果頁：先把卡藏起來（整張剪掉），切頁後才不會先閃一下
+      prepare(el) { cardEl = el; if (!RM && el) { el.style.clipPath = 'inset(0 0 100% 0)'; el.style.webkitClipPath = 'inset(0 0 100% 0)'; backdrop = 1; clear(); strokeQuad(quad(easeOut(Math.min(1, (performance.now() - t0) / FLY)), guess), 1, 2, true); } },
+      // 結果頁已顯示：量真卡、貼過去、骨架、掃描；回傳完成的 Promise
+      land(el) {
+        cardEl = el || cardEl;
+        return new Promise(res => { done = res; if (RM || !cardEl) { finish(); return; } measure(cardEl); const now = performance.now(); backdrop = 1; snapFrom = quad(easeOut(Math.min(1, (now - t0) / FLY)), guess); snapT0 = now; phase = 'snap'; });
+      },
+      cancel() { cancelled = true; finish(); },
+    };
+  }
+
   // ── 滾筒與讀數 ──────────────────────────────────────────────────────
   function roll(d, idx) { const st = d.querySelector('.strip'); const n = st.dataset.n | 0; const h = st.firstElementChild.offsetHeight || 1; const mid = (d.clientHeight - h) / 2; st.style.transform = `translateY(${mid - (idx + n) * h}px)`; }
   const fmt = v => (v < 0 ? '−' : '') + Math.abs(v).toFixed(2);
@@ -446,5 +568,5 @@
   }
   function stop() { state.visible = false; stopPreview(); sfxStop(); }
 
-  global.DipTune = { configure, start, stop, pickAgain, setAudio, get state() { return state; } };
+  global.DipTune = { configure, start, stop, pickAgain, setAudio, litScreenPos, warpStart, CELL_COLOR, get state() { return state; } };
 })(window);
