@@ -24,6 +24,12 @@
    "zh": "暗 R&B 二線（冷霧）",
    "count": 2,
    "why": "暗 R&B 二線（冷霧）"
+  },
+  {
+   "id": "backup",
+   "zh": "候補（主線汰換後補）",
+   "count": 18,
+   "why": "主線汰 9 張後補的候補"
   }
  ],
  "albums": [
@@ -956,6 +962,515 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "中信心"
+  },
+  {
+   "artist": "Recoil",
+   "album": "Unsound Methods",
+   "year": 1997,
+   "label": "Mute",
+   "country": "gb",
+   "faction": "backup",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Alan Wilder 的 Recoil 暗色電影式電子，慢、陰、低頻厚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": -0.9,
+    "why": "無攻擊性的慢拍，厚合成器墊與低頻，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/27f5b70b-8b56-32f0-b353-80d03444ad14",
+    "https://coverartarchive.org/release-group/27f5b70b-8b56-32f0-b353-80d03444ad14/front"
+   ],
+   "mbRgMbid": "27f5b70b-8b56-32f0-b353-80d03444ad14",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Recoil",
+   "album": "Liquid",
+   "year": 2000,
+   "label": "Mute",
+   "country": "gb",
+   "faction": "backup",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Recoil 最緩慢的一張，液態合成器與沉重節奏，近乎配樂",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": -0.8,
+    "why": "極慢拍、合成器霧與低頻，陰沉"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/820c30d1-d872-3c37-a17c-f790f79d9ba1",
+    "https://coverartarchive.org/release-group/820c30d1-d872-3c37-a17c-f790f79d9ba1/front"
+   ],
+   "mbRgMbid": "820c30d1-d872-3c37-a17c-f790f79d9ba1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Recoil",
+   "album": "subHuman",
+   "year": 2007,
+   "label": "Mute",
+   "country": "gb",
+   "faction": "backup",
+   "genres": [
+    "electronic"
+   ],
+   "why": "藍調採樣與電子的暗色結合，沉重緩慢",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": -0.7,
+    "why": "慢拍、厚低頻、沙啞布魯斯取樣，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/26cb84df-2eff-3cf4-9e2c-29cbb61102d2",
+    "https://coverartarchive.org/release-group/26cb84df-2eff-3cf4-9e2c-29cbb61102d2/front"
+   ],
+   "mbRgMbid": "26cb84df-2eff-3cf4-9e2c-29cbb61102d2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 邊距中等"
+  },
+  {
+   "artist": "Recoil",
+   "album": "Bloodline",
+   "year": 1992,
+   "label": "Mute",
+   "country": "gb",
+   "faction": "backup",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Recoil 早期暗色電子，採樣厚、節奏中慢",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1,
+    "z": -0.7,
+    "why": "中慢板機械拍與厚取樣，暗"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/028a5f67-6b9e-3649-b4fb-2062008d34be",
+    "https://coverartarchive.org/release-group/028a5f67-6b9e-3649-b4fb-2062008d34be/front"
+   ],
+   "mbRgMbid": "028a5f67-6b9e-3649-b4fb-2062008d34be",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "低信心：x 邊距薄，部分曲偏舞曲"
+  },
+  {
+   "artist": "Laika",
+   "album": "Sounds of the Satellites",
+   "year": 1997,
+   "label": "Too Pure",
+   "country": "gb",
+   "faction": "backup",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Bristol／倫敦 dub 後搖滾，重複律動與霧狀貝斯",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": -0.4,
+    "why": "重複 dub 律動，貝斯厚、殘響濕，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a8b8e7ac-f921-3ac2-81a3-bda125b76331",
+    "https://coverartarchive.org/release-group/a8b8e7ac-f921-3ac2-81a3-bda125b76331/front"
+   ],
+   "mbRgMbid": "a8b8e7ac-f921-3ac2-81a3-bda125b76331",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "低信心：z、x 邊距薄"
+  },
+  {
+   "artist": "Laika",
+   "album": "Good Looking Blues",
+   "year": 2000,
+   "label": "Too Pure",
+   "country": "gb",
+   "faction": "backup",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Laika 較暗的 dub 後搖滾",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": -0.4,
+    "why": "dub 節奏與厚低頻，疏離人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7343d84a-44d0-3ccc-ae90-df79f56a75f7",
+    "https://coverartarchive.org/release-group/7343d84a-44d0-3ccc-ae90-df79f56a75f7/front"
+   ],
+   "mbRgMbid": "7343d84a-44d0-3ccc-ae90-df79f56a75f7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "低信心：z、x 邊距薄"
+  },
+  {
+   "artist": "Dawn Richard",
+   "album": "Blackheart",
+   "year": 2015,
+   "label": "Our Dawn",
+   "country": "us",
+   "faction": "backup",
+   "genres": [
+    "soul",
+    "electronic"
+   ],
+   "why": "暗色電子 R&B，低頻深、氛圍陰",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1,
+    "z": -0.5,
+    "why": "半拍重低頻，冷色合成器，夜感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c62f654b-2f6f-4d75-923b-1a8c256f9101",
+    "https://coverartarchive.org/release-group/c62f654b-2f6f-4d75-923b-1a8c256f9101/front"
+   ],
+   "mbRgMbid": "c62f654b-2f6f-4d75-923b-1a8c256f9101",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "低信心：x 邊距薄、鼓偏推進"
+  },
+  {
+   "artist": "James Blake",
+   "album": "The Colour in Anything",
+   "year": 2016,
+   "label": "Polydor",
+   "country": "gb",
+   "faction": "backup",
+   "genres": [
+    "electronic",
+    "soul"
+   ],
+   "why": "James Blake 迷霧般的後 dubstep 靈魂，慢、空、低頻沉",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": -0.4,
+    "why": "慢拍、殘響厚、低頻，人聲被霧包住"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bd166f52-cc11-4554-8045-ada94e6b2911",
+    "https://coverartarchive.org/release-group/bd166f52-cc11-4554-8045-ada94e6b2911/front"
+   ],
+   "mbRgMbid": "bd166f52-cc11-4554-8045-ada94e6b2911",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "低信心：z 邊距薄，人聲偏暖"
+  },
+  {
+   "artist": "Bark Psychosis",
+   "album": "Codename: Dustsucker",
+   "year": 2004,
+   "label": "Fire",
+   "country": "gb",
+   "faction": "backup",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "後搖滾先驅的復出作，緩慢霧狀、暗",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": -0.7,
+    "why": "慢速、殘響與電子紋理，鼓稀疏，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cf03de95-3bc3-398e-a768-1bb2262d2461",
+    "https://coverartarchive.org/release-group/cf03de95-3bc3-398e-a768-1bb2262d2461/front"
+   ],
+   "mbRgMbid": "cf03de95-3bc3-398e-a768-1bb2262d2461",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "HÆLOS",
+   "album": "Full Circle",
+   "year": 2016,
+   "label": "Matador",
+   "country": "gb",
+   "faction": "backup",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Portishead 脈絡的暗色 trip-hop，低頻厚、人聲冷",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": -0.7,
+    "why": "慢板鼓機與厚低頻，冷色合成器，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/61902a06-fdf2-4060-b41d-e6c04655a6c8",
+    "https://coverartarchive.org/release-group/61902a06-fdf2-4060-b41d-e6c04655a6c8/front"
+   ],
+   "mbRgMbid": "61902a06-fdf2-4060-b41d-e6c04655a6c8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "中信心"
+  },
+  {
+   "artist": "Lull",
+   "album": "Continue",
+   "year": 1996,
+   "label": "Release Entertainment",
+   "country": "gb",
+   "faction": "backup",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Mick Harris 的暗黑 ambient 孤立系，低頻轟鳴、近無拍",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.4,
+    "z": -1.2,
+    "why": "無鼓，低頻轟鳴與顆粒，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ceef24f8-e322-3d40-97cd-f70988b2d063",
+    "https://coverartarchive.org/release-group/ceef24f8-e322-3d40-97cd-f70988b2d063/front"
+   ],
+   "mbRgMbid": "ceef24f8-e322-3d40-97cd-f70988b2d063",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "年份以 MB 為準"
+  },
+  {
+   "artist": "Lull",
+   "album": "Journey Through Underworlds",
+   "year": 1993,
+   "label": "Release Entertainment",
+   "country": "gb",
+   "faction": "backup",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Lull 的地下世界暗 ambient，緩慢、沉重",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.5,
+    "z": -1.3,
+    "why": "無鼓低頻音塊，幽暗回聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/73b5871d-6770-32cf-8541-d5149468b98b",
+    "https://coverartarchive.org/release-group/73b5871d-6770-32cf-8541-d5149468b98b/front"
+   ],
+   "mbRgMbid": "73b5871d-6770-32cf-8541-d5149468b98b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "DJ Krush",
+   "album": "Butterfly Effect",
+   "year": 2015,
+   "label": "Es.U.Es",
+   "country": "jp",
+   "faction": "backup",
+   "genres": [
+    "electronic"
+   ],
+   "why": "DJ Krush 的暗色抽象 hip-hop／trip-hop",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": -0.5,
+    "why": "慢拍取樣堆疊，暗灰低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bf4bc647-315d-415e-9c92-20ae7cfa45f5",
+    "https://coverartarchive.org/release-group/bf4bc647-315d-415e-9c92-20ae7cfa45f5/front"
+   ],
+   "mbRgMbid": "bf4bc647-315d-415e-9c92-20ae7cfa45f5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "低信心：Krush 池中已多，z 邊距薄"
+  },
+  {
+   "artist": "Arms and Sleepers",
+   "album": "Matador",
+   "year": 2009,
+   "label": "Sleeperhold",
+   "country": "us",
+   "faction": "backup",
+   "genres": [
+    "electronic"
+   ],
+   "why": "電影式冷調電子，慢、暗、厚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": -0.4,
+    "why": "慢拍與厚合成器，冷夜"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/74b9e7d5-398e-48b0-a44c-90131bfe1c01",
+    "https://coverartarchive.org/release-group/74b9e7d5-398e-48b0-a44c-90131bfe1c01/front"
+   ],
+   "mbRgMbid": "74b9e7d5-398e-48b0-a44c-90131bfe1c01",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "低信心：z、y 邊距薄"
+  },
+  {
+   "artist": "Archive",
+   "album": "Lights",
+   "year": 2006,
+   "label": "Dangervisit",
+   "country": "gb",
+   "faction": "backup",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Archive 的長篇暗色史詩，慢、重、冷",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": -0.7,
+    "why": "長曲慢速推進，合成器與吉他霧，陰沉"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2281e3e3-fa8e-3375-abe0-9c96d3bf6ba0",
+    "https://coverartarchive.org/release-group/2281e3e3-fa8e-3375-abe0-9c96d3bf6ba0/front"
+   ],
+   "mbRgMbid": "2281e3e3-fa8e-3375-abe0-9c96d3bf6ba0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "中信心"
+  },
+  {
+   "artist": "Archive",
+   "album": "Call to Arms & Angels",
+   "year": 2022,
+   "label": "Dangervisit",
+   "country": "gb",
+   "faction": "backup",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Archive 晚期暗色電子，慢板、冷調",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": -0.8,
+    "why": "中慢節拍與厚合成器，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/314741d3-8051-4162-94ca-5ec321297fa5",
+    "https://coverartarchive.org/release-group/314741d3-8051-4162-94ca-5ec321297fa5/front"
+   ],
+   "mbRgMbid": "314741d3-8051-4162-94ca-5ec321297fa5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 邊距中等"
+  },
+  {
+   "artist": "Roly Porter",
+   "album": "Kistvaen",
+   "year": 2020,
+   "label": "Subtext",
+   "country": "gb",
+   "faction": "backup",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Roly Porter 的暗黑低頻音塊，近無拍",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.6,
+    "z": -1.2,
+    "why": "低頻轟鳴與稀疏打擊，空曠冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/196ccf90-5ecf-4120-b077-a745a1fb9222",
+    "https://coverartarchive.org/release-group/196ccf90-5ecf-4120-b077-a745a1fb9222/front"
+   ],
+   "mbRgMbid": "196ccf90-5ecf-4120-b077-a745a1fb9222",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "中信心"
+  },
+  {
+   "artist": "Young Echo",
+   "album": "Nexus",
+   "year": 2013,
+   "label": "Young Echo",
+   "country": "gb",
+   "faction": "backup",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bristol 集體 Young Echo 的暗 dub／ambient，低頻深、冷",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "慢速 dub 與噪音鋪底，低頻深，灰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d817a575-d154-4b0a-abc5-5a3897630dea",
+    "https://coverartarchive.org/release-group/d817a575-d154-4b0a-abc5-5a3897630dea/front"
+   ],
+   "mbRgMbid": "d817a575-d154-4b0a-abc5-5a3897630dea",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "中信心"
   }
  ],
  "notes": [
@@ -963,6 +1478,9 @@
   "暗 R&B 多數已在池或落溫（md4 已清過），僅收 HTDW Total Loss 與 Sevdaliza Shabrang。",
   "Bohren Dolores 屬 dark jazz 場景外補位。",
   "已排除：EP／remix 專輯（Andy Stott Passed Me By、Gil Scott-Heron We're New Here、King Midas Sound Without You、Bohren Beileid）、色溫判暖的 Lamb／Hooverphonic／Morcheeba 系、邊距薄的 Banks、Lapalux、Colder、Beak>、Poliça、SOHN。",
-  "MB 年份取 first-release-date；Scorn 的 Greetings from Birmingham 在 MB 為 2000（Discogs 版本可能更早），Zander 在 MB 為 1997。"
+  "MB 年份取 first-release-date；Scorn 的 Greetings from Birmingham 在 MB 為 2000（Discogs 版本可能更早），Zander 在 MB 為 1997。",
+  "候補批：池中已有 Sneaker Pimps《Becoming X》、Hooverphonic《ANSS》、Mono《Formica Blues》、Craig Armstrong、Beth Gibbons《Lives Outgrown》、Alpha 兩張、Andy Stott 全部正規盤、Dälek 多張、Kelela／FKA twigs／Weeknd／Shlohmo／Sevdaliza《ISON》，不再收。",
+  "Jay-Jay Johanson 三張（Whiskey／Tattoo／Poison）判乾淨輕盈（y 低）落平靜，不收；Mandalay、Nicolette、Abra《Rose》、Mark Lanegan 邊距薄不收；Andy Stott《It Should Be Us》、Sevdaliza《Children of Silk》《Raving Dahlia》在 MB 是 EP。",
+  "Monk & Canatella、Statik 在 MB 查無專輯。"
  ]
 }
