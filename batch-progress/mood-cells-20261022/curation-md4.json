@@ -1,0 +1,1573 @@
+{
+ "group": "md4",
+ "factions": [
+  {
+   "id": "dark-hiphop",
+   "zh": "暗色嘻哈／cloud rap",
+   "count": 13,
+   "why": ""
+  },
+  {
+   "id": "dark-rnb",
+   "zh": "暗 R&B／trip-hop",
+   "count": 13,
+   "why": ""
+  },
+  {
+   "id": "dub-techno",
+   "zh": "dub techno／英倫暗低頻",
+   "count": 18,
+   "why": ""
+  },
+  {
+   "id": "asia-gloom",
+   "zh": "亞洲頹靡",
+   "count": 10,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Armand Hammer",
+   "album": "ROME",
+   "year": 2017,
+   "label": "Backwoodz Studioz",
+   "country": "us",
+   "faction": "dark-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "billy woods 與 Elucid 的地下抽象饒舌核心作；拍子拖著走，取樣糊成灰霧，是冷而重的慢嘻哈",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.4,
+    "z": -1.1,
+    "why": "鼓稀而鈍，霧狀取樣與低頻，陰鬱無暖意"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ef662017-8747-4a25-8418-e6e65ce21e14",
+    "https://coverartarchive.org/release-group/ef662017-8747-4a25-8418-e6e65ce21e14/front"
+   ],
+   "mbRgMbid": "ef662017-8747-4a25-8418-e6e65ce21e14",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "billy woods",
+   "album": "Terror Management",
+   "year": 2019,
+   "label": "Backwoodz Studioz",
+   "country": "us",
+   "faction": "dark-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "woods 最陰暗的一張，多位製作人拼出失調、碎裂的取樣地景；慢、糊、不給溫度",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "慢拍、碎裂失調取樣，低頻混濁，壓抑偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0275462a-7c45-4f10-b250-3f51397c1a96",
+    "https://coverartarchive.org/release-group/0275462a-7c45-4f10-b250-3f51397c1a96/front"
+   ],
+   "mbRgMbid": "0275462a-7c45-4f10-b250-3f51397c1a96",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "billy woods",
+   "album": "Today, I Wrote Nothing",
+   "year": 2015,
+   "label": "Backwoodz Studioz",
+   "country": "us",
+   "faction": "dark-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "woods 中期轉向抽象陰暗的關鍵作，Willie Green 等的灰暗取樣墊底，慢而沉",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": -0.9,
+    "why": "慢速鬆拍，髒取樣與噪點，冷峻敘事"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c65afe39-6d59-4fd4-a432-4afc8e1d8a9b",
+    "https://coverartarchive.org/release-group/c65afe39-6d59-4fd4-a432-4afc8e1d8a9b/front"
+   ],
+   "mbRgMbid": "c65afe39-6d59-4fd4-a432-4afc8e1d8a9b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Moor Mother & billy woods",
+   "album": "BRASS",
+   "year": 2020,
+   "label": "Backwoodz Studioz",
+   "country": "us",
+   "faction": "dark-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Moor Mother 與 woods 的合作盤，比 Moor Mother 個人作慢得多，以陰沉取樣與低頻為主，不衝",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": -1.3,
+    "why": "鼓稀疏，工業質感取樣與低鳴，冷而壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ba8f834c-d779-4e28-bc4c-0cac35a84d4e",
+    "https://coverartarchive.org/release-group/ba8f834c-d779-4e28-bc4c-0cac35a84d4e/front"
+   ],
+   "mbRgMbid": "ba8f834c-d779-4e28-bc4c-0cac35a84d4e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Elucid",
+   "album": "Revelator",
+   "year": 2024,
+   "label": "Backwoodz Studioz",
+   "country": "us",
+   "faction": "dark-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Armand Hammer 另一半的個人作，製作厚而失真、拍子鬆散，延續 Backwoodz 的冷重聲響",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.4,
+    "z": -1.1,
+    "why": "拍子破碎慢，噪聲取樣層層糊，冷硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e30d157c-8b0d-4f93-91c1-0a395f3f36dc",
+    "https://coverartarchive.org/release-group/e30d157c-8b0d-4f93-91c1-0a395f3f36dc/front"
+   ],
+   "mbRgMbid": "e30d157c-8b0d-4f93-91c1-0a395f3f36dc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yung Lean",
+   "album": "Unknown Memory",
+   "year": 2014,
+   "label": "Sky Team",
+   "country": "se",
+   "faction": "dark-hiphop",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "cloud rap 的瑞典代表作，Yung Sherman／Gud 的冰冷合成器霧墊住慢拍，冷而包覆",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": -1,
+    "why": "慢 trap 拍，冰冷合成器墊與殘響，霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7109db5e-542c-48f5-8fe1-d68feae236e0",
+    "https://coverartarchive.org/release-group/7109db5e-542c-48f5-8fe1-d68feae236e0/front"
+   ],
+   "mbRgMbid": "7109db5e-542c-48f5-8fe1-d68feae236e0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yung Lean",
+   "album": "Warlord",
+   "year": 2016,
+   "label": "YEAR0001",
+   "country": "se",
+   "faction": "dark-hiphop",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Yung Lean 最黑的一張，製作轉暗、低頻更重，cloud rap 的冷調高峰",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.3,
+    "z": -1.4,
+    "why": "慢拍偏暗，低頻厚、陰沉合成器，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/84595dc8-f297-49f7-bd57-f64a870dfb7c",
+    "https://coverartarchive.org/release-group/84595dc8-f297-49f7-bd57-f64a870dfb7c/front"
+   ],
+   "mbRgMbid": "84595dc8-f297-49f7-bd57-f64a870dfb7c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yung Lean",
+   "album": "Stranger",
+   "year": 2017,
+   "label": "YEAR0001",
+   "country": "se",
+   "faction": "dark-hiphop",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "氛圍化的 cloud rap 成熟作，鋪滿殘響與霧狀合成器，慢而沉",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": -0.9,
+    "why": "拍子鬆慢，大片殘響與合成器霧，憂鬱冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1e530a00-eb5a-464c-b56c-559feaa553f9",
+    "https://coverartarchive.org/release-group/1e530a00-eb5a-464c-b56c-559feaa553f9/front"
+   ],
+   "mbRgMbid": "1e530a00-eb5a-464c-b56c-559feaa553f9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bladee",
+   "album": "Eversince",
+   "year": 2016,
+   "label": "YEAR0001",
+   "country": "se",
+   "faction": "dark-hiphop",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Drain Gang 首張正式專輯，Whitearmor 的冰冷氛圍製作，cloud rap 的冷霧典型",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": -1.1,
+    "why": "慢拍，冰晶合成器與 autotune 霧，疏離"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/535a7922-c3ea-4943-968b-a488504dced2",
+    "https://coverartarchive.org/release-group/535a7922-c3ea-4943-968b-a488504dced2/front"
+   ],
+   "mbRgMbid": "535a7922-c3ea-4943-968b-a488504dced2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "BONES",
+   "album": "Powder",
+   "year": 2015,
+   "label": "TeamSESH",
+   "country": "us",
+   "faction": "dark-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "TeamSESH 的 lo-fi 暗黑 cloud rap，糊濾波與低頻淹沒人聲，冷而重",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.4,
+    "z": -1.4,
+    "why": "慢拍，糊濾波低頻與磁帶雜訊，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6aeca4a5-3cb9-4d27-9d04-0b10c6f85297",
+    "https://coverartarchive.org/release-group/6aeca4a5-3cb9-4d27-9d04-0b10c6f85297/front"
+   ],
+   "mbRgMbid": "6aeca4a5-3cb9-4d27-9d04-0b10c6f85297",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Salem",
+   "album": "King Night",
+   "year": 2010,
+   "label": "IAMSOUND",
+   "country": "us",
+   "faction": "dark-hiphop",
+   "genres": [
+    "electronic",
+    "hiphop"
+   ],
+   "why": "witch house 的定義性專輯，降速饒舌與失真合成器糊成一片，慢、厚、陰森",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.8,
+    "z": -1.4,
+    "why": "拖慢拍、失真合成器牆與降速人聲，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a418259c-edc1-444f-9919-11cb09bd7eaa",
+    "https://coverartarchive.org/release-group/a418259c-edc1-444f-9919-11cb09bd7eaa/front"
+   ],
+   "mbRgMbid": "a418259c-edc1-444f-9919-11cb09bd7eaa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Archy Marshall",
+   "album": "A New Place 2 Drown",
+   "year": 2015,
+   "label": "True Panther Sounds",
+   "country": "gb",
+   "faction": "dark-hiphop",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "King Krule 本名發行的暗嘻哈／trip-hop 盤，拍子慢、取樣糊，南倫敦灰色夜景",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": -0.9,
+    "why": "鬆慢拍、磁帶糊的爵士取樣與低頻，灰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/01bd4a4a-8baa-4cc4-9a6d-d5ca78e080e1",
+    "https://coverartarchive.org/release-group/01bd4a4a-8baa-4cc4-9a6d-d5ca78e080e1/front"
+   ],
+   "mbRgMbid": "01bd4a4a-8baa-4cc4-9a6d-d5ca78e080e1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Boldy James & The Alchemist",
+   "album": "Bo Jackson",
+   "year": 2021,
+   "label": "ALC",
+   "country": "us",
+   "faction": "dark-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Alchemist 的近乎無鼓陰沉迴圈配 Boldy James 冷淡口條，Griselda 時代冷調代表",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": -0.8,
+    "why": "鼓少或無鼓，陰沉迴圈與低頻，冷峻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/576c033a-0304-4a02-875a-6cd025cc9a0f",
+    "https://coverartarchive.org/release-group/576c033a-0304-4a02-875a-6cd025cc9a0f/front"
+   ],
+   "mbRgMbid": "576c033a-0304-4a02-875a-6cd025cc9a0f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Alchemist 迴圈偏乾淨，y 可能 0.7–0.9"
+  },
+  {
+   "artist": "Tirzah",
+   "album": "Colourgrade",
+   "year": 2021,
+   "label": "Domino",
+   "country": "gb",
+   "faction": "dark-rnb",
+   "genres": [
+    "soul",
+    "electronic"
+   ],
+   "why": "Mica Levi 製作，R&B 被拆成失真、糊掉的慢塊，是暗 R&B 的灰冷極端",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "慢、失真糊低頻，人聲埋霧裡，灰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bad48032-c7f9-472f-8324-19b0e11b4060",
+    "https://coverartarchive.org/release-group/bad48032-c7f9-472f-8324-19b0e11b4060/front"
+   ],
+   "mbRgMbid": "bad48032-c7f9-472f-8324-19b0e11b4060",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "How to Dress Well",
+   "album": "Love Remains",
+   "year": 2010,
+   "label": "Lefse",
+   "country": "us",
+   "faction": "dark-rnb",
+   "genres": [
+    "soul",
+    "electronic"
+   ],
+   "why": "lo-fi R&B 的原型之作，人聲埋在磁帶雜訊與巨大殘響裡，像幽靈",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.5,
+    "z": -0.7,
+    "why": "鼓極稀，殘響淹沒人聲與磁帶飽和，幽冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6946f487-e616-43ab-950b-6894c903bebe",
+    "https://coverartarchive.org/release-group/6946f487-e616-43ab-950b-6894c903bebe/front"
+   ],
+   "mbRgMbid": "6946f487-e616-43ab-950b-6894c903bebe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Sevdaliza",
+   "album": "ISON",
+   "year": 2017,
+   "label": "Twisted Elegance",
+   "country": "nl",
+   "faction": "dark-rnb",
+   "genres": [
+    "soul",
+    "electronic"
+   ],
+   "why": "荷蘭伊朗裔歌手的暗 trip-hop／R&B 首張，低頻厚、弦樂陰，冷而重",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "慢拍、厚低頻與暗弦，冷豔疏離"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ce85f83c-62d4-4605-88dc-7db15537f7e5",
+    "https://coverartarchive.org/release-group/ce85f83c-62d4-4605-88dc-7db15537f7e5/front"
+   ],
+   "mbRgMbid": "ce85f83c-62d4-4605-88dc-7db15537f7e5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Klein",
+   "album": "Lifetime",
+   "year": 2019,
+   "label": "Hyperdub",
+   "country": "gb",
+   "faction": "dark-rnb",
+   "genres": [
+    "soul",
+    "electronic"
+   ],
+   "why": "Hyperdub 發行的實驗 R&B 拼貼，福音與 R&B 碎片泡在噪點霧裡，慢而冷",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "幾無鼓，拼貼噪點與糊人聲，陰鬱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ead7abe8-6b19-41f9-91b6-aaa5e39b74fb",
+    "https://coverartarchive.org/release-group/ead7abe8-6b19-41f9-91b6-aaa5e39b74fb/front"
+   ],
+   "mbRgMbid": "ead7abe8-6b19-41f9-91b6-aaa5e39b74fb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Holy Other",
+   "album": "Held",
+   "year": 2012,
+   "label": "Tri Angle",
+   "country": "gb",
+   "faction": "dark-rnb",
+   "genres": [
+    "electronic",
+    "soul"
+   ],
+   "why": "Tri Angle 暗黑 R&B／witch house 名盤，殘響霧極厚，慢而陰",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.6,
+    "z": -1,
+    "why": "慢拍、巨大殘響與切碎人聲，霧冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/df28e9f5-2b5f-4b26-ac36-f05fe3864f9c",
+    "https://coverartarchive.org/release-group/df28e9f5-2b5f-4b26-ac36-f05fe3864f9c/front"
+   ],
+   "mbRgMbid": "df28e9f5-2b5f-4b26-ac36-f05fe3864f9c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "King Krule",
+   "album": "The Ooz",
+   "year": 2017,
+   "label": "True Panther Sounds",
+   "country": "gb",
+   "faction": "dark-rnb",
+   "genres": [
+    "rock",
+    "jazz"
+   ],
+   "why": "King Krule 的長篇夜之作，爵士、trip-hop 與龐克糊在一起，多數段落慢而陰",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": -1,
+    "why": "慢、低頻混濁、爵士和弦泡在殘響裡，夜冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6ee668b0-8d9b-490b-bdf2-1c68cf197891",
+    "https://coverartarchive.org/release-group/6ee668b0-8d9b-490b-bdf2-1c68cf197891/front"
+   ],
+   "mbRgMbid": "6ee668b0-8d9b-490b-bdf2-1c68cf197891",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "King Krule",
+   "album": "Space Heavy",
+   "year": 2023,
+   "label": "Matador",
+   "country": "gb",
+   "faction": "dark-rnb",
+   "genres": [
+    "rock",
+    "jazz"
+   ],
+   "why": "更沉、更霧的 King Krule，吉他與人聲浮在殘響裡，灰色海岸線的冷",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": -0.8,
+    "why": "多數段落慢，霧狀吉他與殘響，灰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4505ae3f-6f4d-4049-a9a3-1151f89ef344",
+    "https://coverartarchive.org/release-group/4505ae3f-6f4d-4049-a9a3-1151f89ef344/front"
+   ],
+   "mbRgMbid": "4505ae3f-6f4d-4049-a9a3-1151f89ef344",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Dean Blunt",
+   "album": "BLACK METAL 2",
+   "year": 2021,
+   "label": "Rough Trade",
+   "country": "gb",
+   "faction": "dark-rnb",
+   "genres": [
+    "rock",
+    "soul"
+   ],
+   "why": "Dean Blunt 的慢核／暗 R&B 續作，粗糙錄音與糊掉的人聲，冷漠、壓低",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.9,
+    "z": -0.9,
+    "why": "幾無鼓，低傳真吉他與糊人聲，冷淡"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/01226309-dc03-4c2e-9ff6-64a92d5eb51b",
+    "https://coverartarchive.org/release-group/01226309-dc03-4c2e-9ff6-64a92d5eb51b/front"
+   ],
+   "mbRgMbid": "01226309-dc03-4c2e-9ff6-64a92d5eb51b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "錄音粗而空，y 可能 0.7–0.9（池中前作 Black Metal 0.6）"
+  },
+  {
+   "artist": "Hype Williams",
+   "album": "One Nation",
+   "year": 2011,
+   "label": "Hippos in Tanks",
+   "country": "gb",
+   "faction": "dark-rnb",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Dean Blunt 與 Inga Copeland 的 hypnagogic 暗盤，dub 與 R&B 碎片糊成夜霧",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.5,
+    "z": -0.9,
+    "why": "鬆慢拍，磁帶糊與失真雜訊，夜冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8a35925f-c27b-4a85-887a-e4c9243bc6ad",
+    "https://coverartarchive.org/release-group/8a35925f-c27b-4a85-887a-e4c9243bc6ad/front"
+   ],
+   "mbRgMbid": "8a35925f-c27b-4a85-887a-e4c9243bc6ad",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tricky",
+   "album": "Angels With Dirty Faces",
+   "year": 1998,
+   "label": "Island",
+   "country": "gb",
+   "faction": "dark-rnb",
+   "genres": [
+    "electronic",
+    "hiphop"
+   ],
+   "why": "接續 Pre-Millennium Tension 的幽閉 trip-hop，低頻厚、氣氛壓迫",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.5,
+    "z": -1.4,
+    "why": "慢拍、厚低頻與失真，幽閉偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3ccc5fcc-93a1-3264-bf04-006186e22378",
+    "https://coverartarchive.org/release-group/3ccc5fcc-93a1-3264-bf04-006186e22378/front"
+   ],
+   "mbRgMbid": "3ccc5fcc-93a1-3264-bf04-006186e22378",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Nearly God",
+   "album": "Nearly God",
+   "year": 1996,
+   "label": "Durban Poison",
+   "country": "gb",
+   "faction": "dark-rnb",
+   "genres": [
+    "electronic",
+    "hiphop"
+   ],
+   "why": "Tricky 的合作計畫專輯，比 Maxinquaye 更慢更暗，trip-hop 最陰的一角",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.5,
+    "z": -1.3,
+    "why": "慢、低頻淹、氣聲人聲，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/744e6bca-0dad-31ec-b044-ffec4758d561",
+    "https://coverartarchive.org/release-group/744e6bca-0dad-31ec-b044-ffec4758d561/front"
+   ],
+   "mbRgMbid": "744e6bca-0dad-31ec-b044-ffec4758d561",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tricky",
+   "album": "False Idols",
+   "year": 2013,
+   "label": "False Idols",
+   "country": "gb",
+   "faction": "dark-rnb",
+   "genres": [
+    "electronic",
+    "hiphop"
+   ],
+   "why": "Tricky 回歸早期陰暗聲響的後期作，慢而低語",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "慢拍、低頻厚、氣聲，陰暗"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/df988f3b-43d0-471c-b756-a66de40e1f13",
+    "https://coverartarchive.org/release-group/df988f3b-43d0-471c-b756-a66de40e1f13/front"
+   ],
+   "mbRgMbid": "df988f3b-43d0-471c-b756-a66de40e1f13",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "King Midas Sound",
+   "album": "Waiting for You…",
+   "year": 2009,
+   "label": "Hyperdub",
+   "country": "gb",
+   "faction": "dark-rnb",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Kevin Martin 的慢 dub 情歌計畫，低頻淹沒、殘響長，冷的戀歌",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.7,
+    "z": -1,
+    "why": "慢 dub 拍、巨大低頻與殘響，冷夜"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a2aa1b0b-63d4-40f7-b5be-6bdc15a4d800",
+    "https://coverartarchive.org/release-group/a2aa1b0b-63d4-40f7-b5be-6bdc15a4d800/front"
+   ],
+   "mbRgMbid": "a2aa1b0b-63d4-40f7-b5be-6bdc15a4d800",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Space Afrika",
+   "album": "Honest Labour",
+   "year": 2021,
+   "label": "Dais",
+   "country": "gb",
+   "faction": "dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "曼徹斯特的 ambient dub 代表作，Burial 之後最冷的城市夜聲",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -1.1,
+    "why": "鼓極稀，dub 殘響、低鳴與城市錄音，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/69f6f70b-fd2f-494d-a1f8-072d951de518",
+    "https://coverartarchive.org/release-group/69f6f70b-fd2f-494d-a1f8-072d951de518/front"
+   ],
+   "mbRgMbid": "69f6f70b-fd2f-494d-a1f8-072d951de518",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Space Afrika",
+   "album": "Somewhere Decent to Live",
+   "year": 2018,
+   "label": "Sferic",
+   "country": "gb",
+   "faction": "dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Space Afrika 首張，dub techno 與 ambient 的灰霧，慢而冷",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.3,
+    "z": -1,
+    "why": "拍子稀，dub 殘響與磁帶霧，灰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ba98b0e6-9b35-47a4-b8c2-3d8b452ceff3",
+    "https://coverartarchive.org/release-group/ba98b0e6-9b35-47a4-b8c2-3d8b452ceff3/front"
+   ],
+   "mbRgMbid": "ba98b0e6-9b35-47a4-b8c2-3d8b452ceff3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Rod Modell",
+   "album": "Incense & Black Light",
+   "year": 2007,
+   "label": "Mosaic",
+   "country": "us",
+   "faction": "dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Deepchord 主腦的個人 dub ambient 作，嘶聲、殘響與暗墊，慢而厚",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.5,
+    "z": -0.9,
+    "why": "鼓近無，厚殘響墊與嘶聲顆粒，暗"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a009b6f8-db2e-372f-b1cd-d0d743e4a97a",
+    "https://coverartarchive.org/release-group/a009b6f8-db2e-372f-b1cd-d0d743e4a97a/front"
+   ],
+   "mbRgMbid": "a009b6f8-db2e-372f-b1cd-d0d743e4a97a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "cv313",
+   "album": "Seconds to Forever",
+   "year": 2010,
+   "label": "Echospace",
+   "country": "us",
+   "faction": "dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Echospace 的 cv313 首張長篇，dub techno 的厚殘響霧，冷",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.5,
+    "z": -0.9,
+    "why": "鬆 4/4、殘響霧與低頻，冷夜"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/98b600d6-a41c-49ce-b7b3-a9e9adae4dda",
+    "https://coverartarchive.org/release-group/98b600d6-a41c-49ce-b7b3-a9e9adae4dda/front"
+   ],
+   "mbRgMbid": "98b600d6-a41c-49ce-b7b3-a9e9adae4dda",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "DeepChord presents Echospace",
+   "album": "Silent World",
+   "year": 2012,
+   "label": "Echospace",
+   "country": "us",
+   "faction": "dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Echospace 的無拍 ambient 長篇，把 dub techno 剝到只剩殘響與低鳴",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.4,
+    "z": -1,
+    "why": "幾無拍，深殘響與低頻墊，冰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/045f3815-87d9-4fc4-8979-ca613a12597b",
+    "https://coverartarchive.org/release-group/045f3815-87d9-4fc4-8979-ca613a12597b/front"
+   ],
+   "mbRgMbid": "045f3815-87d9-4fc4-8979-ca613a12597b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "原聲帶（池中有 SILENT HILL 2 OST 先例）",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Deepchord",
+   "album": "Tonality of Night",
+   "year": 2012,
+   "label": "Soma",
+   "country": "us",
+   "faction": "dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Deepchord 的夜行 dub techno，以殘響與環境錄音鋪陳冷夜",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.5,
+    "z": -1,
+    "why": "鬆拍、深殘響與城市夜錄音，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6ac33666-d5d2-4ed9-b700-e61ff78537e4",
+    "https://coverartarchive.org/release-group/6ac33666-d5d2-4ed9-b700-e61ff78537e4/front"
+   ],
+   "mbRgMbid": "6ac33666-d5d2-4ed9-b700-e61ff78537e4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Deepchord",
+   "album": "Lanterns",
+   "year": 2014,
+   "label": "Soma",
+   "country": "us",
+   "faction": "dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "偏 ambient 的 Deepchord，殘響霧與嘶聲為主，慢而包覆",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.3,
+    "z": -0.7,
+    "why": "拍子稀，霧狀殘響與嘶聲，灰暗"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e5c8332f-1ae0-449f-bd18-1ab6155a1297",
+    "https://coverartarchive.org/release-group/e5c8332f-1ae0-449f-bd18-1ab6155a1297/front"
+   ],
+   "mbRgMbid": "e5c8332f-1ae0-449f-bd18-1ab6155a1297",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Deepchord",
+   "album": "Ultraviolet Music",
+   "year": 2015,
+   "label": "Soma",
+   "country": "us",
+   "faction": "dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Deepchord 中期 dub techno，厚殘響與低頻的典型冷霧",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.4,
+    "z": -0.8,
+    "why": "鬆 4/4、厚殘響與低頻霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dda147d4-1312-4bad-8ad0-875a21973ae6",
+    "https://coverartarchive.org/release-group/dda147d4-1312-4bad-8ad0-875a21973ae6/front"
+   ],
+   "mbRgMbid": "dda147d4-1312-4bad-8ad0-875a21973ae6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yagya",
+   "album": "Rhythm of Snow",
+   "year": 2002,
+   "label": "Force Inc. Music Works",
+   "country": "is",
+   "faction": "dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "冰島 Yagya 的首張，dub techno 的雪地冷霧，慢而柔厚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": -1,
+    "why": "鬆拍、雪霧般殘響與低頻，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/eaf048f1-0271-39ad-a121-d118e8b22343",
+    "https://coverartarchive.org/release-group/eaf048f1-0271-39ad-a121-d118e8b22343/front"
+   ],
+   "mbRgMbid": "eaf048f1-0271-39ad-a121-d118e8b22343",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yagya",
+   "album": "Will I Dream During the Process?",
+   "year": 2006,
+   "label": "Delsin",
+   "country": "is",
+   "faction": "dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Yagya 第二張，延續冰冷 dub techno，殘響更深",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "鬆拍、厚殘響與低頻墊，憂鬱冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/625625a9-37a2-3697-baf1-abaeb9554f41",
+    "https://coverartarchive.org/release-group/625625a9-37a2-3697-baf1-abaeb9554f41/front"
+   ],
+   "mbRgMbid": "625625a9-37a2-3697-baf1-abaeb9554f41",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Moritz Von Oswald Trio",
+   "album": "Fetch",
+   "year": 2012,
+   "label": "Honest Jon's",
+   "country": "de",
+   "faction": "dub-techno",
+   "genres": [
+    "electronic",
+    "jazz"
+   ],
+   "why": "Basic Channel 主腦的即興 dub 三重奏，長段落、殘響回授，冷而沉",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": -0.7,
+    "why": "慢即興拍、dub 回授與低頻，冷靜"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c14571bc-88aa-4c86-97b9-6c041408d339",
+    "https://coverartarchive.org/release-group/c14571bc-88aa-4c86-97b9-6c041408d339/front"
+   ],
+   "mbRgMbid": "c14571bc-88aa-4c86-97b9-6c041408d339",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "即興律動，x 可能 2.7"
+  },
+  {
+   "artist": "Topdown Dialectic",
+   "album": "Topdown Dialectic",
+   "year": 2018,
+   "label": "Peak Oil",
+   "country": "se",
+   "faction": "dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "瑞典匿名計畫的 dub techno 小品集，霧與磁帶糊，慢而冷",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "鬆拍、霧狀 dub 迴圈與磁帶糊，灰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/eca3ff29-8cf7-4046-be20-8ad7feda45a7",
+    "https://coverartarchive.org/release-group/eca3ff29-8cf7-4046-be20-8ad7feda45a7/front"
+   ],
+   "mbRgMbid": "eca3ff29-8cf7-4046-be20-8ad7feda45a7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Andy Stott",
+   "album": "Too Many Voices",
+   "year": 2016,
+   "label": "Modern Love",
+   "country": "gb",
+   "faction": "dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Modern Love 慢沉 techno 的延續，低頻厚、人聲如霧，陰",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.4,
+    "z": -0.7,
+    "why": "慢拍、厚低頻與霧狀人聲，暗"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b592ee38-1e47-41e5-a3c6-51fb8cb282ab",
+    "https://coverartarchive.org/release-group/b592ee38-1e47-41e5-a3c6-51fb8cb282ab/front"
+   ],
+   "mbRgMbid": "b592ee38-1e47-41e5-a3c6-51fb8cb282ab",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Actress",
+   "album": "Ghettoville",
+   "year": 2014,
+   "label": "Werkdiscs",
+   "country": "gb",
+   "faction": "dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Actress 刻意糊、慢、髒的告別之作，灰黑的城市廢墟感",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.5,
+    "z": -1.2,
+    "why": "慢、髒磁帶低頻與拖拍，灰黑"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8ad4ff0b-c2e6-4a7d-a240-f8773202dc80",
+    "https://coverartarchive.org/release-group/8ad4ff0b-c2e6-4a7d-a240-f8773202dc80/front"
+   ],
+   "mbRgMbid": "8ad4ff0b-c2e6-4a7d-a240-f8773202dc80",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Actress",
+   "album": "Hazyville",
+   "year": 2008,
+   "label": "Werkdiscs",
+   "country": "gb",
+   "faction": "dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Actress 首張，濾波糊到看不清的 house／techno，霧與髒",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.5,
+    "z": -0.8,
+    "why": "中慢 4/4、糊濾波與雜訊，霧冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3d80f1b1-f7ab-430b-905d-08273809b7af",
+    "https://coverartarchive.org/release-group/3d80f1b1-f7ab-430b-905d-08273809b7af/front"
+   ],
+   "mbRgMbid": "3d80f1b1-f7ab-430b-905d-08273809b7af",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "4/4 中慢，x 2.6 貼近上限"
+  },
+  {
+   "artist": "Raime",
+   "album": "Tooth",
+   "year": 2016,
+   "label": "Blackest Ever Black",
+   "country": "gb",
+   "faction": "dub-techno",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Raime 第二張，稀疏打擊與低頻、留白巨大，冷硬而緩",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": -1.5,
+    "why": "稀疏鼓、低頻與大量留白，金屬冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/97ffa8b9-d038-4970-b253-0ea177449709",
+    "https://coverartarchive.org/release-group/97ffa8b9-d038-4970-b253-0ea177449709/front"
+   ],
+   "mbRgMbid": "97ffa8b9-d038-4970-b253-0ea177449709",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "打擊比前作明顯，x 可能 2.7"
+  },
+  {
+   "artist": "Lee Gamble",
+   "album": "Diversions 1994–1996",
+   "year": 2012,
+   "label": "PAN",
+   "country": "gb",
+   "faction": "dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "把 90 年代 jungle 混音帶抽掉鼓，只剩殘響與墊子，像記憶的霧",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.2,
+    "z": -0.7,
+    "why": "抽掉鼓的 jungle 混音帶，殘響霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/98f23bd9-0941-4524-beb9-52e94a99c4c1",
+    "https://coverartarchive.org/release-group/98f23bd9-0941-4524-beb9-52e94a99c4c1/front"
+   ],
+   "mbRgMbid": "98f23bd9-0941-4524-beb9-52e94a99c4c1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Bug vs Earth",
+   "album": "Concrete Desert",
+   "year": 2017,
+   "label": "Ninja Tune",
+   "country": "gb",
+   "faction": "dub-techno",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Kevin Martin 與 Earth 的合作，dub 低頻配 drone 吉他，慢而荒涼",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.8,
+    "z": -1.3,
+    "why": "慢拍稀、低頻轟鳴與 drone 吉他，荒冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e254c4c4-90f5-40ca-9ace-74e7d94add2c",
+    "https://coverartarchive.org/release-group/e254c4c4-90f5-40ca-9ace-74e7d94add2c/front"
+   ],
+   "mbRgMbid": "e254c4c4-90f5-40ca-9ace-74e7d94add2c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "夢東 Mong Tong",
+   "album": "秘神",
+   "year": 2020,
+   "label": "自主發行",
+   "country": "tw",
+   "faction": "asia-gloom",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "台灣夢東的首張正式專輯，台式靈異迷幻與磁帶糊，陰而霧",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": -0.9,
+    "why": "慢拍、低傳真迷幻與殘響，陰森"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/802218bc-233c-4578-89c2-b32b937f1b13",
+    "https://coverartarchive.org/release-group/802218bc-233c-4578-89c2-b32b937f1b13/front"
+   ],
+   "mbRgMbid": "802218bc-233c-4578-89c2-b32b937f1b13",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "夢東",
+   "uncertain": ""
+  },
+  {
+   "artist": "夢東 Mong Tong",
+   "album": "向位",
+   "year": 2021,
+   "label": "自主發行",
+   "country": "tw",
+   "faction": "asia-gloom",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "夢東偏 ambient 的長篇，台式靈異音色泡在合成器霧裡，慢而陰",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1,
+    "z": -1,
+    "why": "鼓稀，迷霧合成器 drone 與民俗音色，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/062aba80-a15d-4c52-8747-a6a5fc0a785c",
+    "https://coverartarchive.org/release-group/062aba80-a15d-4c52-8747-a6a5fc0a785c/front"
+   ],
+   "mbRgMbid": "062aba80-a15d-4c52-8747-a6a5fc0a785c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "夢東",
+   "uncertain": ""
+  },
+  {
+   "artist": "きのこ帝国",
+   "album": "eureka",
+   "year": 2013,
+   "label": "UK.PROJECT",
+   "country": "jp",
+   "faction": "asia-gloom",
+   "genres": [
+    "rock"
+   ],
+   "why": "日本 shoegaze／後搖團的首張全長，殘響牆厚、情緒冷",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": -0.9,
+    "why": "中慢、厚殘響吉他牆，冷淡"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4fb53064-968c-4822-ba3b-6a350c4d154e",
+    "https://coverartarchive.org/release-group/4fb53064-968c-4822-ba3b-6a350c4d154e/front"
+   ],
+   "mbRgMbid": "4fb53064-968c-4822-ba3b-6a350c4d154e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有鼓的 shoegaze 吉他牆，x 可能 2.7–2.8"
+  },
+  {
+   "artist": "downy",
+   "album": "無題",
+   "year": 2002,
+   "label": "Bellissima!",
+   "country": "jp",
+   "faction": "asia-gloom",
+   "genres": [
+    "rock"
+   ],
+   "why": "日本後搖 downy 的第二張無題盤，冷灰的殘響吉他與克制節奏",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": -1.1,
+    "why": "鼓繁但收斂、殘響吉他霧，冷灰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/22d06d19-5dc1-32ff-af77-fd3d82ef153e",
+    "https://coverartarchive.org/release-group/22d06d19-5dc1-32ff-af77-fd3d82ef153e/front"
+   ],
+   "mbRgMbid": "22d06d19-5dc1-32ff-af77-fd3d82ef153e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "downy 無題 2002 (2nd)",
+   "uncertain": "鼓編繁複，x 可能貼 2.8；同名『無題』多張，指的是 2002 第二張（MB 22d06d19）"
+  },
+  {
+   "artist": "Asian Glow",
+   "album": "11100011",
+   "year": 2025,
+   "label": "自主發行",
+   "country": "kr",
+   "faction": "asia-gloom",
+   "genres": [
+    "rock"
+   ],
+   "why": "Asian Glow 的慢核轉向之作，糊吉他與低傳真霧，慢而陰",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": -0.6,
+    "why": "慢核、糊吉他與低傳真霧，冷鬱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/acd4e9dd-af0e-4644-8b15-b710049cddb2",
+    "https://coverartarchive.org/release-group/acd4e9dd-af0e-4644-8b15-b710049cddb2/front"
+   ],
+   "mbRgMbid": "acd4e9dd-af0e-4644-8b15-b710049cddb2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "慢核轉向的新作，僅一則 AOTY 使用者評語稱 moody slowcore；若主線聽感偏暖/有推力就汰換"
+  },
+  {
+   "artist": "sogumm",
+   "album": "Sobrightttttttt",
+   "year": 2019,
+   "label": "Balming Tiger",
+   "country": "kr",
+   "faction": "asia-gloom",
+   "genres": [
+    "soul",
+    "electronic"
+   ],
+   "why": "韓國實驗 R&B 新聲，lo-fi 濾波與失調音色，慢而冷",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": -0.6,
+    "why": "鬆拍、糊濾波 lo-fi 與失調音色，疏離"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0cf62904-e153-467f-8e5b-642474c8bef9",
+    "https://coverartarchive.org/release-group/0cf62904-e153-467f-8e5b-642474c8bef9/front"
+   ],
+   "mbRgMbid": "0cf62904-e153-467f-8e5b-642474c8bef9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "lo-fi R&B，色溫可能接近 0"
+  },
+  {
+   "artist": "공중도덕",
+   "album": "공중도덕",
+   "year": 2015,
+   "label": "자체 발매",
+   "country": "kr",
+   "faction": "asia-gloom",
+   "genres": [
+    "rock"
+   ],
+   "why": "韓國匿名臥室錄音計畫的首張，低傳真霧與孤冷",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": -0.7,
+    "why": "鬆慢，臥室低傳真與殘響霧，孤冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b00f20eb-3293-4dfb-a2df-17001f86dee9",
+    "https://coverartarchive.org/release-group/b00f20eb-3293-4dfb-a2df-17001f86dee9/front"
+   ],
+   "mbRgMbid": "b00f20eb-3293-4dfb-a2df-17001f86dee9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "臥室民謠成分，y 可能低於 0.8"
+  },
+  {
+   "artist": "腰",
+   "album": "Better Late Than Never (相見恨晚)",
+   "year": 2014,
+   "label": "自主發行",
+   "country": "cn",
+   "faction": "asia-gloom",
+   "genres": [
+    "rock"
+   ],
+   "why": "昆明樂隊腰的代表作，慢、殘響吉他與低吟，中國獨立搖滾最陰冷的一張",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": -0.9,
+    "why": "慢板、厚殘響吉他與低吟，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/89950cfa-4de2-4108-b16b-47be45bf463f",
+    "https://coverartarchive.org/release-group/89950cfa-4de2-4108-b16b-47be45bf463f/front"
+   ],
+   "mbRgMbid": "89950cfa-4de2-4108-b16b-47be45bf463f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "腰 相見恨晚",
+   "uncertain": "y 估 0.9，留邊距最薄"
+  },
+  {
+   "artist": "Akira Yamaoka",
+   "album": "Silent Hill",
+   "year": 1999,
+   "label": "Konami",
+   "country": "jp",
+   "faction": "asia-gloom",
+   "genres": [
+    "electronic"
+   ],
+   "why": "山岡晃的工業暗黑 ambient 原聲，鏽鐵噪聲與低鳴，冷而重",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.5,
+    "z": -1.7,
+    "why": "多數無拍或慢拍，工業噪聲與低鳴，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b0a1513e-078d-3ed1-a0fd-c93e70f84170",
+    "https://coverartarchive.org/release-group/b0a1513e-078d-3ed1-a0fd-c93e70f84170/front"
+   ],
+   "mbRgMbid": "b0a1513e-078d-3ed1-a0fd-c93e70f84170",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "原聲帶（池中有 SILENT HILL 2 OST 先例）",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Akira Yamaoka",
+   "album": "SILENT HILL 3 ORIGINAL SOUNDTRACKS",
+   "year": 2003,
+   "label": "Konami",
+   "country": "jp",
+   "faction": "asia-gloom",
+   "genres": [
+    "electronic"
+   ],
+   "why": "SH2 的延伸，trip-hop 慢拍與工業噪聲並行，冷而重",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.4,
+    "z": -1.4,
+    "why": "慢 trip-hop 拍與工業噪聲，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fc2d3fc9-7d17-342f-a13a-8cc5c400b786",
+    "https://coverartarchive.org/release-group/fc2d3fc9-7d17-342f-a13a-8cc5c400b786/front"
+   ],
+   "mbRgMbid": "fc2d3fc9-7d17-342f-a13a-8cc5c400b786",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "原聲帶（池中有 SILENT HILL 2 OST 先例）",
+   "queryAlias": "",
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "54 張全部 MB 釘住（primary-type=Album），封面全部 CAA；evidence = MB release-group + CAA front。",
+  "池中已有不重提：Burial 5、Portishead 3、Massive Attack 6、Tricky 5、Armand Hammer 6、Ka 6、Deepchord 7、Pole 8、Gas 6、Andy Stott 4、Clams Casino 3、Shlohmo 3、Weeknd 9、DJ Krush 9、Tha Blue Herb、Archive《Londinium》、Bowery Electric 2、Forest Swords《Engravings》、Kode9、Actress 4 等。",
+  "不提：Ka 其餘盤（池中 Ka 打分 y 0.5–0.7 不過邊距）、冥丁（池中 Komachi y 0.4）、Porter Ricks《Anguilla Electrica》（池中前兩張 x 2.9–3.0）、Monolake（池中 x ≈3.0）、BrokenTeeth（Sputnik 稱冷暖兼具、比作 Parannoul《After the Magic》，池中後者 x 3.6 z +0.2）、Asian Glow《Stalled Flutes, means》（emo／shoegaze 青春感）、王榆鈞（烏德琴＋吟唱，偏輕，資料不足）、草東（池中 x 4.0）、Rhythm & Sound（暖）。",
+  "汰換備選（未放入）：Scorn《Evanescence》、Bladee《Icedancer》(mixtape)、Rod Modell《Captagon》、Deepchord《Hash-Bar Loops》、Shabazz Palaces《Black Up》、Fluxion《Vibrant Forms III》、Dean Blunt《The Redeemer》、きのこ帝国《渦になる》。",
+  "WebSearch 用 3 次。"
+ ]
+}
