@@ -13,3 +13,12 @@
 - `genres` 一律 `soul`。
 - 研究層每支 WebSearch ≤3；facts 必含 2–3 條聲音事實；與 moodGuess 不符的標「moodGuess 存疑」——**特別是製作乾淨明亮、數位鼓機與 DX7 清脆、快歌多的**。
 
+
+## 研究 d 組
+
+- 14431：Silk《Silk》卡單 label「Keia」不對，維基與 MB 皆為 Elektra（Keia 是 Keith Sweat 旗下標籤）；建議卡單改 Elektra，發行日維基 1995-11-28、MB 1995-10-24，正文只寫 1995 年。
+- 14432：Teddy Pendergrass《Truly Blessed》卡單 year 1990 疑為 MB 日期，維基與年終榜皆指 1991（3 月 5 日發行）；建議主線改 1991。
+- 14433：Gloria Scott 的 curatorWhy「Barry White 製作的唯一專輯」不全對：Barry White 製作的 Casablanca 專輯確為此一張，但 Scott 2022 年另有 Acid Jazz 的《So Wonderful》。單曲年份兩源衝突（維基〈Just as Long as We're Together〉、lakeconews〈Too Much Lovemakin'〉），facts 只寫後者的倫敦重發。
+- 14434：moodGuess 存疑（聲音來源不足以確認靜）：Gerald Levert《Groove On》（標題曲／〈Rock Me〉可能偏動感）、Silk《Silk》（前三首 Soulshock & Karlin 程式化製作，樂評只明講後半張偏 slow jam）、Teddy《Truly Blessed》（程式鼓與真人鼓並用、錄音地五處）、Major Harris《Jealousy》（Earl Young 鼓的費城律動）、Keith Washington（七位製作人）、Barry White（Linn Drum 與合成器偏數位）。無任何一張能確認「明顯相反」，主線視同邊緣張。
+- 14435：Love Unlimited《In Heat》是人聲三重唱盤，與池中判輕的器樂盤《Rhapsody in White》結構不同，建議不因同製作人而連坐。
+- 14436：Discogs API 直連可用；Wikipedia API 被限流，改用 WebFetch 讀條目。WebSearch 用 2 次（Gloria Scott、Silk）。
