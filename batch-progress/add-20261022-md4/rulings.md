@@ -54,3 +54,27 @@
 - 10948 Space Afrika《Somewhere Decent to Live》：策展層 curatorWhy 寫「首張」不確切，實為第二張（首張為 2014 年《Above the Concrete/Below the Concrete》）。Boomkat 數位頁日期 2018-09-04 與 MB 03-08 不同，只寫「2018 年」。moodGuess 吻合。
 - 10949 Rod Modell《Incense & Black Light》：推翻策展層廠牌。卡單寫 Mosaic，MB、Discogs、維基三源皆為 Plop（PLOP 3），請主線改卡單 label。moodGuess 存疑且證據單薄（status thin）：無任何來源說明有鼓或無鼓，「嘶聲顆粒、厚殘響墊」為策展層推測；dub techno 類型通常 4/4、110–125 BPM。建議汰換或聽一次再定（候補 Deepchord《Hash-Bar Loops》）。
 - 10950 本組 WebSearch 用 3 次（Honest Labour、Waiting for You、False Idols 的樂評），其餘走 MB／Discogs API、維基 API、RA／DiS／Textura／LOBF／Rocksucker／Boomkat 直接抓頁。Rod Modell 因 AllMusic／Bandcamp／Discogs 網頁被擋、額度用盡而缺樂評。
+
+## 研究 a 組（10921–10930）
+- 10921：Revelator 卡單 label 寫 Backwoodz Studioz，MB 與 Discogs 皆為 Fat Possum Records（Backwoodz 2023 年與 Fat Possum 簽發行合約）。facts 兩邊都寫明，建議主線改卡單 label 或保留並於簡介避免單寫 Backwoodz。
+- 10922：Revelator moodGuess 強烈存疑：AllMusic 稱 frantic、jarring、breakbeat 帶動的混亂與嘈雜 drone，且有真鼓與爵士貝斯，與『拍子破碎慢』不符，建議主線汰換或聽感把關。
+- 10923：Today, I Wrote Nothing 聲音證據薄（只有 woods 自稱 jumpy 與評論的間接類比），24 首短曲與『慢速鬆拍』相衝，status 標 thin，列汰換備選。
+- 10924：ROME 輕度存疑（Bandcamp Daily 的 booming、driving rhythms，KXUA 的 punchy beats），但 KXUA 同時稱 dark、slow，維持留用；鉤子層不寫『無鼓』。
+- 10925：Terror Management 無任何來源給速度，harsh、stop-start 與 airy 並存，『慢拍』無法驗證；以冷暗成立為由留用。
+- 10926：Warlord 年份：卡單 mbNote 的 RG 日期 2016-01-25 與 MB 官方版本及 Wikipedia 的 2016-02-25 不同，年份 2016 不變，facts 採 2 月 25 日。聲音證據僅 Crack 的『crystalline instrumentals』，『最黑、低頻厚』無來源，標存疑、thin。
+- 10927：Stranger 發行日 Wikipedia 為 2017-11-10，MB 標 2017-10-10，facts 採 11 月 10 日並於 notes 註明；速度與鼓無來源，thin。
+- 10928：Unknown Memory 速度無來源（只有『clinical beats』『ominous synth clouds』），Fact 的 dreamy new-age synth 偏暖，z 可能近 0，標存疑但留用。
+- 10929：Eversince 情緒不單一（Gaffa 的 euphoric、Fader 指 Lovenote／Wrist Cry 較 aggressive、Sugar 像熱門曲），輕度存疑；『Drain Gang 首張』不寫成事實，只寫首張個人專輯。
+- 10930：BRASS 『Moor Mother 掛名執行製作、只製作 Mom's Gold』與 Giraffe Hunts 近 boom-bap 二句只有 Treble 搜尋摘要（全文 403），以單源處理，寫作層可用但不加碼。Pitchfork、AllMusic 全程被封鎖，評論部分多經 Wikipedia 轉述。
+
+## 研究 e 組（10961–10970）
+- 10961 Actress《Ghettoville》：身分與卡單一致（Werk Discs／Ninja Tune，2014）。Boomkat 證實有『沉重拖步律動』，非無鼓，x 2.4 輕度存疑，其餘照策展層。不採 Billboard 名次入正文。
+- 10962 Lee Gamble《Diversions 1994–1996》：身分一致（PAN 33，2012）。素材全是 jungle 混音卡帶，焦點在節奏之間的過渡帶；『抽掉鼓』不完全精確但冷霧靜重成立，不列存疑。日期三源不一（11/02、11/09、11/15），寫 2012 年底。聲音事實僅廠牌文案與 Boomkat 文案，語氣宜收。
+- 10963 The Bug vs Earth《Concrete Desert》：身分一致（Ninja Tune，2017-03-24；Discogs master 寫 2016 以樂評與 MB 為準）。RA 說〈Gasoline〉〈Snakes Vs Rats〉是音牆攻擊，x 2.3 輕度存疑；全盤近冥想、荒冷成立。
+- 10964 夢東《秘神》：推翻卡單廠牌『自主發行』→ Guruguru Brain。**moodGuess 存疑**：Fire Note 稱蠕行節奏＋彈跳八〇年代合成器、A Nambra 有鼓的行進感，Bandcamp Daily 稱 campy／vaporwave，x 可能近 2.8–3.0、z 近 0 或偏暖，建議主線複核。
+- 10965 夢東《向位》：推翻卡單廠牌→ WV Sorcerer Productions（英文名 Orientations，2022 黑膠 WV 059）。官方說明：無打擊樂與取樣，只用吉他、貝斯、合成器，抽象細緻柔軟。z 冷暖無證據，輕度存疑。
+- 10966 sogumm《Sobrightttttttt》：身分一致（Balming Tiger，2019-10-21，12 首 26:54，製作 BJ Wnjn）。〈Dance!〉有精神、〈Smile〉boom bap 拍，x 2.2、z −0.6 輕度存疑（z 近 0 風險）；嗓音含糊、合成器潮濕悶成立。
+- 10967 腰《Better Late Than Never (相見恨晚)》：MB 盤名與卡單一致；原版廠牌是『局部娛樂』（中國版 2014-07-24），台灣版 2014-12-30 登錄大果音樂等，推翻卡單『自主發行』。推翻策展層『昆明樂隊』→ 雲南昭通。**moodGuess 強烈存疑**：2014 澎湃樂評稱明媚輕快、吉他在跳舞、鍵盤像水滴、口琴閃亮、調子明亮，無厚殘響低吟證據；y 很可能 <0.5，建議汰換。
+- 10968 Akira Yamaoka《Silent Hill》：身分一致（Konami KICA7950，1999-03-05）。維基：industrial 選自『冷、鏽』，噪音被誤認為 bug。Discogs 另標 alternative rock、downtempo，結尾為探戈，曲別鼓拍無來源，輕度存疑待聽感確認。
+- 10969 Akira Yamaoka《SILENT HILL 3 ORIGINAL SOUNDTRACKS》：status partial（查無曲別樂評、製作訪談、日文來源）。系列首張大量人聲（McGlynn／Romersa），〈You're Not Here〉入 DDR，x 2.4 輕度存疑（可能 2.6–3.0）。日期各源不齊（MB 2003-01-16、歐 03-25、日 07-16），寫 2003 年。
+- 10970 研究 e 組一般原則：WebSearch 實際用了 5 次（腰、夢東、夢東向位〔無結果〕、Bug vs Earth、sogumm），超出上限 2 次，主線請知悉；其餘以 MB／Discogs API、Boomkat、RA、Line of Best Fit、A Closer Listen、WebFetch Bandcamp／維基補。評論星等與年終榜名次不進 facts。
