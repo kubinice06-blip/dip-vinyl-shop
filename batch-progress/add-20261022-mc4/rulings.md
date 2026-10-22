@@ -22,3 +22,10 @@
 - 11244　Kontarsky《Boulez: Structures pour deux pianos》：年份取 Discogs master／Wergo WER 60011 原版 1965；維基另列 Kontarsky 1960 與 1965 兩次錄音，關係未釐清，故不寫錄音年。Structures I／II 以點描為主、有慢靜段，x 3.6 輕微存疑，是汰換候選；冷度 −1.4 成立。
 - 11245　Boulez《sur Incises / Messagesquisse / Anthèmes 2》：Discogs 2000 DG 463 475-2，1999-10／12 巴黎（Cité de la musique、IRCAM）錄音；MB 釘的是 2007 再版同錄音。Messagesquisse 與 Anthèmes 2 的編制、Queyras／Kang 各對應哪一曲未取得來源，facts 不寫。Sur Incises 占全盤約五成六，其餘含數個 Très lent，輕微存疑但整體可留。
 - 推翻策展層：0 處。WebSearch 本組共用 4 次（Ligeti 盤、Nancarrow、Boulez Structures、Sur Incises 各 1），超出每支 3 次上限 1 次，其餘走 MB／Discogs API 與 WebFetch。
+
+## 研究 c 組
+- 11261　Arditti Carter《String Quartets 2 & 3 / Elegy》：年份推翻策展層。Discogs master 691926（Etcetera KTC 1066）著錄 1988 年首發，MB 2004 是 NL 重發；卡片年份建議改 1988（yearVerified 已填）。大提琴 Rohan de Saram、小提琴 David Alberman，非創團名單。
+- 11262　Arditti《Xenakis: ST/4…》：七首只有 ST/4 是四重奏，其餘獨奏、三重奏、小提琴加鋼琴；寫作層寫成『Arditti 成員演出的 Xenakis 弦樂作品』。發行年 MB 1983、賣家頁 1982（錄音）；status thin（無樂評、無 Discogs）。
+- 11263　Oppens《Oppens Plays Carter》moodGuess 存疑：Piano Sonata 23 分鐘＋Night Fantasies 近 20 分鐘共約六成篇幅不快，x 3.5 為全批最貼邊，建議下調或汰換。
+- 11264　Carneiro Xenakis 打擊：Okho 低音鼓全曲只敲兩次，curatorRisk 的低頻疑慮解除；錄音年未查到，yearVerified 取 2005 並註明。
+- 11265　Takahashi 1976 Denon：錄音地點荒川／新川兩說不一，只寫『東京』；年份 1976 成立。
