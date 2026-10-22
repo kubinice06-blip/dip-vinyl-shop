@@ -58,3 +58,19 @@
 - **10548** Kery James《Si c'était à refaire...》：策展層 label「Alariana」查無來源，MB 與目錄號對應 WEA／Warner Music France，建議刪 Alariana；〈28 décembre 1977〉曲名即出生日；「法語饒舌良心」為修辭不寫；無管樂／弦樂的編制取自 fr 維基（單源），Abcdr du son 評為 2001 年最佳法國饒舌專輯。
 - **10549** Damso《Ipséité》：無推翻；希臘字母編號（14 首，餘 10 個補進 QALF infinity）、首週 43116 張／3100 萬串流、鑽石唱片皆 fr 維基（引 Booska-p）；「反攻法國市場的里程碑」屬策展詮釋不寫；Booba 後來決裂、2018 比利時足協事件與本作無直接綁定，不寫。
 - **10550** 保留未用。
+
+## 研究 e 組
+- **10561** Soulja Slim《Give It 2 'Em Raw》：無推翻。入獄原因兩頁維基說法不同（專輯頁：違反假釋；藝人頁：武裝搶劫），採專輯頁；1994 卡帶 9 萬份為單一來源。死亡與〈Slow Motion〉身後冠軍屬藝人身後事，寫作層一句帶過。
+- **10562** Mia X《Unlady Like》：無推翻。同一份維基專輯頁寫 R&B 榜第 2、藝人頁寫第 11，互相矛盾 → 只用 Billboard 200 第 21 與金唱片，R&B 名次不寫。1000 萬美元訴訟為單一來源。
+- **10563** Turk《Young & Thuggin'》：無推翻。這張在 Hot Boys 個人專輯中較晚出（Juvenile、B.G.、Lil Wayne 在前），不可寫成第一張。只取版稅官司一條，2004 開槍案不寫。
+- **10564** SpaceGhostPurrp《Mysterious Phonk》：無推翻。MB 6/11、維基 6/12，年份無歧義；『創造 phonk』為維基自述，寫作層寫『被視為先驅』。與 A$AP Mob 衝突不寫。
+- **10565** BONES《Garbage》：無推翻，但 thin——曲目層級來源缺，keyTracks 留空；『第 14 張』為推算，不可寫。
+- **10566** Xavier Wulf《Project X》：無推翻但補充——2015-06-02 自發行 10 軌、2016-08-27 EMPIRE／Hollow Squad 重發 7 軌（Discogs 曲目為 7 首）；年份用 2015。曲名意象不可寫成向《頭文字D》致敬。2024 指控依主線裁定不寫。
+- **10567** Lil Tracy《Anarchy》：策展層風險未能完全解——除維基外無獨立來源核 2014《e m o c e a n》是否算專輯；寫作層寫『據維基百科的首張專輯』，標 thin。
+- **10568** Ecco2k《E》：**修正策展層**——『The Fader 列為 2019 年代表作』實為日後回顧稱 standout release，非年度榜；『Pitchfork 7.4』未核到，不寫分數。
+- **10569** $uicideboy$《I Want to Die in New Orleans》：策展層待核 Billboard 名次已核——第 9 名、首週 4.9 萬單位（單一來源，寫『前十』）。〈Paris〉不確定收在本張，不列 keyTracks。
+- **10570** 保留未用。
+
+## 主線裁定（研究層交件後）
+- **10591**：照研究層改卡單廠牌：Miss Ko《皇后區的皇后》空白 → Universal Music（b 組，MB 目錄號 8860378）；GAI《光宗耀祖》空白 → 福茂唱片（a 組，維基單源記實體版）；Kery James《Si c'était à refaire...》Alariana → WEA（c 組，MB 目錄號對應 Warner Music France）。谢帝維持空白；The Quiett 三說並存，維持 Soul Company。
+- **10592**：全線規則重申給鉤子／寫作層：媒體榜名次整句不寫（c 組 Oxmo Puccino 的 Abcdr du son 百大名曲第 4 名不寫）、Victoires 只入圍的寫入圍（Ärsenik、Diam's 2007）、單源銷量數字不寫、不用「據說」。
