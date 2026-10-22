@@ -19,3 +19,10 @@
 - 11404：Elecktroids 成員身分：Discogs 稱陣容不明、Warp 2008 文案點名 Stinson；facts 寫成不確定版本，不寫「Drexciya 成員化名」為定論。
 - 11405：moodGuess 存疑清單（主線請決定汰換）。強：Arpanet《Quantum Transposition》（廠牌文字稱更偏氛圍／實驗、Discogs 標 Ambient、前六首不到 3 分半）、Black Tokyo（有日本歌手人聲、Club Mix、RA 稱 bass-heavy）。中至中強：Der Zyklus《Biometry》（Abstract／Ambient 標籤、最長 9:16）、Elecktroids《Elektroworld》（Kraftwerk 致敬式旋律電子，曲長 4–6:40）、AUX 88 同名與《Mad Scientist》（RA 稱 bass-heavy 會判重落亢奮）、Lab Rat XL（5–8 分鐘長曲）。輕：Arpanet《Inertial Frame》（Experimental 標籤）、Japanese Telecom《Virtual Geisha》（無聲音來源，未驗）。
 - 11406：整組聲音證據偏薄：此組在 WebSearch 3 次額度內未找到逐張樂評；status 有 6 張標 thin（聲音細節為主因，身分與故事 facts 皆足 9–11 條）。Quantum Transposition 的 Clone 商品文字只從搜尋摘要看到，頁面事後 404，主線可酌情刪該條。
+
+## 研究 e 組
+- 11441 e 組九張全部身分核對無誤（MB／Discogs 年份、廠牌、盤名一致）；僅盤名 Frozen & Broken 在 Discogs 寫成 Frozen&Broken（格式差異）。
+- 11442 The Hacker《Mélodies en Sous-Sol》廠牌：策展層 Play It Again Sam，Discogs 為 GoodLife（GLCD01）＋[PIAS]；寫作層寫 GoodLife／[PIAS]。年份取 1999（維基內文春季 2000 與其清單 1999 自相矛盾，MB 首發 1999 FR）。
+- 11443 dynArec 人物：Discogs 寫法籍、生於史特拉斯堡，策展層寫荷蘭 Hague 系，Hague 說法查無來源，facts 只寫 Discogs 說法並註明未獲第二來源。
+- 11444 聲音面證據極薄：九張只有 Lowfish《1000 Corrections》為 full（器材與錄音地有 Discogs 說明）；其餘皆 thin。WebSearch 用 2 次，Delsin 頁 503、Wikipedia 多數人物頁 404。
+- 11445 moodGuess 存疑（主線請試聽或汰換）：Optic Nerve 兩張（曲長 5–9 分鐘、Harp／Dream Mix、後期被評溫暖有靈魂，疑落恍惚）；Exos 兩張（父親 Octal 為 dub techno、Thule 圈、MB 標 minimal，疑中速克制，非快打）；The Hacker（曲長 5–8 分鐘、維基稱像 New Order，疑偏旋律）；Lowfish《Frozen & Broken》（曲長偏長、標 IDM）。輕度存疑：Lowfish 首張（synth-pop 標籤）、dynArec 兩張（無聲音來源）。
