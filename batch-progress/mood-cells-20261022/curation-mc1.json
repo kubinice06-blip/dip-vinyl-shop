@@ -4,25 +4,25 @@
   {
    "id": "fr-be",
    "zh": "法比冷浪潮／minimal synth",
-   "count": 8,
+   "count": 9,
    "why": "鼓機＋單薄合成器、法語冷淡人聲；吉他樂團型的冷浪潮留給 mc2"
   },
   {
    "id": "de",
    "zh": "德語區冷合成器（NDW 電子、杜塞道夫）",
-   "count": 8,
+   "count": 9,
    "why": "序列器與鼓機的機械冷，比 DAF 輕"
   },
   {
    "id": "uk-us",
    "zh": "英美加 minimal synth 原典",
-   "count": 8,
+   "count": 9,
    "why": "純合成器時期與 synth punk，乾而冷"
   },
   {
    "id": "eu",
    "zh": "歐陸周邊與蘇聯 coldwave／tecno-pop",
-   "count": 6,
+   "count": 8,
    "why": "西、義、荷、蘇聯的鼓機冷浪潮"
   },
   {
@@ -1241,6 +1241,154 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "熟悉度低；色溫可能回中性"
+  },
+  {
+   "artist": "El Aviador Dro",
+   "album": "Cromosomas Salvajes",
+   "year": 1985,
+   "label": "DRO",
+   "country": "es",
+   "faction": "eu",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "El Aviador Dro 中期 tecno-pop 盤；快速序列器與機械人聲，延續科幻冷感",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.4,
+    "z": -0.6,
+    "why": "快拍序列器、乾淨合成器，機械"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/192550dc-ee53-45a9-b6ab-2b3e2eb26686",
+    "https://coverartarchive.org/release-group/192550dc-ee53-45a9-b6ab-2b3e2eb26686/front"
+   ],
+   "mbRgMbid": "192550dc-ee53-45a9-b6ab-2b3e2eb26686",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 署名 El Aviador Dro Y Sus Obreros Especializados；熟悉度中等",
+   "round": 2
+  },
+  {
+   "artist": "El Aviador Dro",
+   "album": "Ciudadanos del Imperio",
+   "year": 1986,
+   "label": "DRO",
+   "country": "es",
+   "faction": "eu",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "El Aviador Dro 1986 年盤，機械 tecno-pop 的快拍與冷硬音色",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.4,
+    "z": -0.6,
+    "why": "快拍鼓機與序列器，乾、機械"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1275b885-e2aa-4d6d-8f34-3ec9c2ee1d8f",
+    "https://coverartarchive.org/release-group/1275b885-e2aa-4d6d-8f34-3ec9c2ee1d8f/front"
+   ],
+   "mbRgMbid": "1275b885-e2aa-4d6d-8f34-3ec9c2ee1d8f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "熟悉度中等",
+   "round": 2
+  },
+  {
+   "artist": "Moskwa TV",
+   "album": "Dynamics & Discipline",
+   "year": 1985,
+   "label": "Westside Music",
+   "country": "de",
+   "faction": "de",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "法蘭克福 Talla 2XLC 與 Torsten Fenslau 的電子流行首張（〈Generator 7/8〉）；快速序列器與鼓機",
+   "moodGuess": {
+    "x": 3.8,
+    "y": -0.1,
+    "z": -0.7,
+    "why": "快速序列器＋鼓機，乾淨，機械冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bffbf801-c5ed-31b0-a027-8e664cdd07f8",
+    "https://coverartarchive.org/release-group/bffbf801-c5ed-31b0-a027-8e664cdd07f8/front"
+   ],
+   "mbRgMbid": "bffbf801-c5ed-31b0-a027-8e664cdd07f8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有 electro／EBM 色彩，低頻序列器要留意",
+   "round": 2
+  },
+  {
+   "artist": "Chris & Cosey",
+   "album": "Trust",
+   "year": 1989,
+   "label": "Nettwerk",
+   "country": "gb",
+   "faction": "uk-us",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Chris & Cosey 晚期 techno-pop 盤；序列器快拍、乾淨合成器與 Cosey 冷淡人聲",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.2,
+    "z": -0.6,
+    "why": "序列器快拍、合成器乾淨，冷淡"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6d9a3622-b72f-3c13-859b-7901a0b8bcff",
+    "https://coverartarchive.org/release-group/6d9a3622-b72f-3c13-859b-7901a0b8bcff/front"
+   ],
+   "mbRgMbid": "6d9a3622-b72f-3c13-859b-7901a0b8bcff",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "熟悉度中等",
+   "round": 2
+  },
+  {
+   "artist": "Absolute Body Control",
+   "album": "Figures",
+   "year": 1983,
+   "label": "Body Records",
+   "country": "be",
+   "faction": "fr-be",
+   "genres": [
+    "electronic"
+   ],
+   "why": "比利時 Dirk Ivens 早期 minimal synth 計畫的卡帶長作；鼓機快拍、冷硬合成器",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.0,
+    "why": "鼓機快拍、單薄合成器，乾、冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9685fd1d-66e9-3845-855d-b438b78ed8e4",
+    "https://coverartarchive.org/release-group/9685fd1d-66e9-3845-855d-b438b78ed8e4/front"
+   ],
+   "mbRgMbid": "9685fd1d-66e9-3845-855d-b438b78ed8e4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "原為卡帶正規長作（9 首）；熟悉度中等",
+   "round": 2
   }
  ],
  "notes": [
@@ -1249,6 +1397,7 @@
   "身分 42/42 MB 釘住；封面 41 張 CAA release-group front 307，Mathématiques Modernes CAA 404，改用 Apple Music 封面（collection 430174655）。",
   "跨組：Polyrock 兩張已在 curation-mc2，本組撤下；Marquis de Sade 留給 mc2。Kino 兩張以鼓機＋合成器為主，歸本組。",
   "Polyphonic Size《Live for Each Moment》CAA 與 iTunes 都找不到封面，撤下。",
-  "貼邊而保留（x 估 3.3）：Human League《Reproduction》、Fad Gadget《Fireside Favourites》、Depeche Mode《A Broken Frame》、Minny Pops、Martial Canterel、Kino《Начальник Камчатки》——主線汰換時可先砍這幾張。"
+  "貼邊而保留（x 估 3.3）：Human League《Reproduction》、Fad Gadget《Fireside Favourites》、Depeche Mode《A Broken Frame》、Minny Pops、Martial Canterel、Kino《Начальник Камчатки》——主線汰換時可先砍這幾張。",
+  "第二輪（邊距 x≥3.5、y≤0、z≤−0.5）只補 5 張：Aviador Dro ×2、Moskwa TV、Chris & Cosey《Trust》、Absolute Body Control《Figures》（卡帶正規長作）。Oppenheimer《New Mexico》已在池；Ruth、Soft Riot、Martial Canterel 其他盤估 x 不到 3.5；Gaznevada 偏吉他 post-punk；Nuovo Testamento、Azul y Negro、Rational Youth《Heredity》、Xeno & Oaklander 後期偏暖或流行化；Doris Norton 池中同類評 x 3.3；北歐（Page、Twice a Man）MB 查不到 80s 正規 LP 或聲音不熟，不提。"
  ]
 }
