@@ -173,3 +173,9 @@
 - **同藝人分判的例**：Al Green Hi 時期抬、福音與原聲盤不抬；Mac DeMarco《Salad Days》《Another One》抬、《2》《Here Comes the Cowboy》不抬；Stylistics 前兩張慢板抬、後期輕 disco 不抬；Cleo Sol 只抬《Rose in the Dark》。
 - **全池八格**：放鬆 5,155→4,975、平靜 1,333→1,316、**恍惚 592→772**、**頹靡 926→943**，其餘不變；錨點 104/104 同格，gate 綠。
 - **後續**：新卡評分照新 BRIEF 打，不必再走 overrides；恍惚若還要長，再跑 ml 策展線（補充計畫 §2.2）。
+
+## 2026-10-22｜情緒薄格策展線 md3／md4 新卡補評（score-md34）：88 張
+
+- **工單**（`score-md34/select.mjs <批>`，仿 score-ts2；`landing.mjs` 算落格率）：chunk-md3 45、chunk-md4 43，各一支 Opus 照 `score500/BRIEF.md`（含 10-22 兩條新規則）評，不上網。merge 88/88、0 錯誤；conf high 6／mid 56／low 26。
+- **落格**：md3 44/45（98%，Ulver《Shadows of the Sun》y +0.3 落平靜）、md4 39/43（91%：Tirzah、How to Dress Well、sogumm 色溫判微溫落恍惚；The Bug vs Earth 兇＋拍判躁落亢奮）。
+- **全池**：`build-priors.mjs` 來源層加 `score-md34/scored-md34.json`（與 md1／md2 的 `score-md` 並列）；併 main 後 `build-card-moods.mjs` gate 綠 19,726/19,726、錨點 104/104、店主改判 256。八格 放鬆 4,985、平靜 1,333、恍惚 784、頹靡 1,119、雀躍 5,962、冷冽 874、沸騰 2,004、亢奮 2,665。
