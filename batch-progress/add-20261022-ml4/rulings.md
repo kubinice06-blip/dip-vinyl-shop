@@ -21,3 +21,16 @@
 - **14282**：吳卓源《1994 依舊舊事》moodGuess 嚴重存疑——樂評為 90s 復古 R&B（MIDI／合成鼓、New Jack Swing 重拍舞曲、Boyz II Men 式慢板），非 lo-fi 糊拍；x 恐破 3.0，建議汰換。廠牌華風數位（MB）vs ChynaHouse（zh wiki）未決，寫作層別寫廠牌。發行日取 2018-12-18（zh wiki 的 12-11 疑為預告日）。
 - **14283**：Polaris《空間》moodGuess 部分存疑——Tower（經搜尋摘要）稱節奏組有「疾走感」，鼓手茂木欣一與あらきゆうこ；長曲（55 分 41 秒、8 首）不等於慢拍。tower.jp 403，屬間接來源。
 - **14284**：Oki Dub Ainu Band《Himalayan Dub》為《Sakhalin Rock》（2010）的 dub 版（OKI vs 内田直之混音對決），非新錄音；卡單 label 可補 Chikar Studio（CKR-0117）。聲音事實缺針對本盤的樂評，status thin；z（暖）無來源、tonkori 空弦偏亮，可能判冷。
+
+## 研究 c 組（14261–14270）
+- **14261** Dry & Heavy：身分無誤（MB 47176d68／Discogs 3166216，1997-08-05，Olive Disk TGCS-354）。有人聲（Likkle Mai、Ao Inoue）與管樂（長號、薩克斯風、長笛），每首約 4 分鐘上下，非長 dub；拍速與回音長短查無可引來源。moodGuess 部分存疑（z 無法證實，池中同團 z 0）。七尾茂大、秋本武士的漢字取自策展層，未獨立驗證，寫作建議只用 Dry／Heavy 藝名。
+- **14262** So!YoON!：身分無誤（2019-05-21，Magic Strawberry Sound／Bungabunga 發行）。**moodGuess 強烈存疑**：英文維基稱 indie rock／electronic／dream pop／alternative R&B 混合，採訪稱十首不限曲風，客串含 Zion.T、Sam Kim 等流行／R&B 人，並非統一的慢霧暖；只有收尾曲 Athena 確定是真鼓真貝斯。建議主線實聽或以池中同人評分決定去留。
+- **14263** Shin Hae Gyeong《속꿈, 속꿈》：年份、盤名無誤（2020-06-16）。**廠牌三說矛盾**：卡單 MB 的 YOUNG,GIFTED&WACK、英文維基 Poclanos、Discogs 2020 版自行發行＋2021 Goodtime Media LP，查無第四來源；facts 只寫 Discogs。單人包辦製作與錄混。聲音（鼓、拍速、低頻）查無可引用的評論，moodGuess 輕度存疑。
+- **14264** Doodle《Endless Dreamless》：身分無誤（Discogs 10678646，DG Records DG003，2016-04-08）。唯一直接的樂評證據寫的是前作《Sacrifice of Despair》，已在 facts 標明。有真鼓、長曲（近 10 分鐘），重量可能成立，色溫與拍速無證據；Discogs 標 Psychedelic Rock／Shoegaze，moodGuess 中度存疑。
+- 本組 WebSearch 共用額度 5 次已用完（Shin 評論、So!YoON! 評論、Dry & Heavy、Doodle、Oki），其中 Dry & Heavy 與 Doodle 本張兩次搜尋無果，聲音事實多半只能由信用名單與類型標籤推得。
+
+## 研究 d 組（14271–14280）
+- **14271** The Fur.《Town》：推翻策展『台北』——中文維基為高雄。卡單 label 空白：2018 原版 Bandcamp 自行發行，2020-12-10 Hove 實體版 HSS001。**moodGuess 強烈存疑**：鼓機＋synthpop 標籤，真鼓只在 4 首，曲短（平均約 3 分 31 秒），y 恐不足 0.5，建議汰換。金曲獎最佳新人入圍（單一來源，非得獎）。
+- **14272** The Fur.《Serene Reminder》：2020-12-10 Hove HSS002，無年份爭議。標籤 indie folk rock／synthpop，Discogs 僅標 Indie Rock／Pop，無霧狀吉他或慢拍的證據；status 標 thin，moodGuess 強烈存疑，建議汰換。Freshmusic Awards 的『獲獎』說法太含糊，不引用。
+- **14273** U.TA屋塔（§1 人工身分核對）：Discogs 33801504（2015-12，CD Album，Hove UTA001）與 Bandcamp（首張專輯，2015 年 12 月）一致，盤名、年份、廠牌對得上；廠牌只見 Discogs。**推翻策展『唯一全長』**：另有 2009《good,night》、2014《捲 / Roll》、2018 三張發行，2020 年預告第二張。成立年 2006（Noise Artists）與 2013（Bandcamp）兩說並存。影響源含 Portishead／Massive Attack，色溫冷風險屬實，moodGuess 強烈存疑，status thin。
+- **14274** Oki Dub Ainu Band：身分無誤（Discogs 5609015／MB 69cff270，2006-12-03，Chikar Studio CKR0112）。**補卡單 label 空白**。『首作』不成立（2004《Dub Ainu》、1990 年代個人專輯在先）。有真鼓、兩位打擊樂手與貝斯，Naoyuki Uchida 混音（與 Dry & Heavy 首作同一人），曲長平均約 5 分半；拍速、色溫無直接來源，後期陣容樂評提到 trip hop 比較，moodGuess 輕度存疑。
