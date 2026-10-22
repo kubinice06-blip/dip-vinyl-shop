@@ -454,5 +454,57 @@
   "status": "thin",
   "coverage": "thin",
   "notes": "聲音事實不足：未找到樂評（WebSearch 只命中同廠 Stillpoint 的評論），只有 Discogs／MB 風格標籤、Bandcamp 標籤與曲長。moodGuess 存疑：策展層『地底般的低頻與殘響』無來源佐證；風格標籤含 IDM 與 minimal techno，可能有清楚的節奏，x 與冷暖皆待聽感核對。第 6 條『我們自然狀態中的寧靜與深度』為 Discogs 簡介原句的意譯。Discogs 曲長為 3:46 起，Bandcamp 寫最短 3:34（是〈Watts〉），兩者並存。年份 2011-07-31 一致（Bandcamp 頁面寫『31th』為錯字）。無推翻策展層。"
+ },
+ {
+  "key": "desc2:Yagya|Stars and Dust",
+  "artist": "Yagya",
+  "album": "Stars and Dust",
+  "facts": [
+   {
+    "f": "2016 年 11 月 28 日數位首發，荷蘭廠牌 Delsin Records 發行，目錄號 118DSR；12 月 9 日出 CD（118dsr-cd）。",
+    "src": "https://musicbrainz.org/release-group/2306b6e2-f322-47bc-b279-e5f4cd3da112"
+   },
+   {
+    "f": "十首曲子，全盤約 54 分 37 秒，每首約 5 到 6 分半，只有〈Through the Zodiacal Cloud〉短到約 3 分 11 秒。",
+    "src": "https://musicbrainz.org/release-group/2306b6e2-f322-47bc-b279-e5f4cd3da112"
+   },
+   {
+    "f": "曲名全是天文意象：〈Train Station's Dustlight〉〈Crepuscular Rays Over the Horizon〉〈Motes in the Moonlight〉〈Substorms on a Winter Night〉〈Through the Zodiacal Cloud〉〈Young Suns of NGC 7129〉〈The Great Attractor〉〈Through the Sculptor Group〉〈Laniakea's Redshift〉〈The Observable Universe〉。",
+    "src": "https://musicbrainz.org/release-group/2306b6e2-f322-47bc-b279-e5f4cd3da112"
+   },
+   {
+    "f": "曲名的順序由地面的光（車站的塵光、暮光）走向星雲、星系團、超星系團（Laniakea）直到可觀測宇宙，由近而遠。",
+    "src": "https://musicbrainz.org/release-group/2306b6e2-f322-47bc-b279-e5f4cd3da112"
+   },
+   {
+    "f": "MusicBrainz 社群標籤給 dub techno（兩票）、ambient、dub 與 electronic。",
+    "src": "https://musicbrainz.org/release-group/2306b6e2-f322-47bc-b279-e5f4cd3da112"
+   },
+   {
+    "f": "Yagya 本名 Aðalsteinn Guðmundsson，Discogs 在《Stormur》的製作名單把他列為作曲與製作人。",
+    "src": "https://www.discogs.com/master/1545113"
+   },
+   {
+    "f": "廠牌 A Strangely Isolated Place 稱 Yagya 的《Rigning》是氛圍 dub techno 的名作，風格是「緩慢搖擺」；本盤比它晚數年，比《Stormur》早三年。",
+    "src": "https://astrangelyisolatedplace.com/blog/2019/4/21/preorder-yagya-stormur"
+   },
+   {
+    "f": "本盤 CD 版（118dsr-cd）在荷蘭發行。",
+    "src": "https://musicbrainz.org/release-group/2306b6e2-f322-47bc-b279-e5f4cd3da112"
+   }
+  ],
+  "hookCandidates": [
+   "Yagya 在荷蘭 Delsin 的十首天文曲名，從車站的塵光一路寫到可觀測宇宙。",
+   "〈Laniakea's Redshift〉：由近而遠的十首。"
+  ],
+  "sound": "MB 標籤為 dub techno、ambient、dub；曲長中等、十首曲子整齊分布，推測有穩定骨架但無樂評證實；鼓聲、拍子深度、殘響與色溫皆無來源，冷色只能引用天文意象。",
+  "keyTracks": [
+   "Crepuscular Rays Over the Horizon",
+   "The Great Attractor",
+   "The Observable Universe"
+  ],
+  "status": "thin",
+  "coverage": "thin",
+  "notes": "【聲音事實薄】無樂評；MB 標籤含 dub（單票），與策展層「鼓退後」的說法無法互證，moodGuess 存疑：Yagya 一貫以 dub techno 的穩定律動為主，『鼓退後』可能不成立。策展層寫「冰島式冷色」，來源只有 Yagya 為冰島人這一點（廠牌文案提到他的冰島脈絡）（本批研究沒有查到 Stars and Dust 的錄製地點），冷暖仍無來源。建議主線視為候選但需降權。"
  }
 ]
