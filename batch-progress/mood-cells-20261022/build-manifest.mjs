@@ -37,7 +37,7 @@ const albums = cards.map(c => {
     : { status: pk.status, source: 'none', checkedAt: NOW, note: pk.note };
   const src = [...new Set([...(r?.facts || []).map(f => f.src).filter(u => /^https:/.test(u || '')), ...(c.rgMbid ? [`https://musicbrainz.org/release-group/${c.rgMbid}`] : (c.manualEvidenceUrls || []))])];
   return {
-    artist: c.artist, album: c.album,
+    artist: c.artist, album: c.album, ...(c.composer ? { composer: c.composer } : {}),
     identity: { releaseType: c.releaseType || 'Album', identitySource: c.identitySource, rgMbid: c.rgMbid, upc: '', aliasesChecked: true,
       ...(c.identitySource === 'manual' ? { mbAbsenceProof: c.mbAbsenceProof, manualEvidenceUrls: c.manualEvidenceUrls,
         manualRuling: `雲端主線 ${NOW.slice(0, 10)} 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 ${batch}）`,

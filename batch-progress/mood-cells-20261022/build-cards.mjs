@@ -20,7 +20,7 @@ const cards = list.map((a, j) => {
   const alias = [...new Set([a.queryAlias, a.mb?.title, a.mb?.credit].flatMap(x => String(x || '').split('；')).filter(x => x && n(x) !== n(a.album) && n(x) !== n(a.artist)))];
   return {
     key: `${pre}:${a.artist}|${a.album}`, artist: a.artist, album: a.album, year: a.year,
-    genre: a.genres[0], genres: a.genres, label: a.label, country: a.country, moodGuess: a.moodGuess || null,
+    genre: a.genres[0], genres: a.genres, label: a.label, country: a.country, ...(a.composer ? { composer: a.composer } : {}), moodGuess: a.moodGuess || null,
     rgMbid: a.mbRgMbid || '', identitySource: manual ? 'manual' : 'pinned',
     ...(manual ? { mbAbsenceProof: a.mbAbsenceProof, manualEvidenceUrls: a.manualEvidenceUrls } : {}),
     curatorWhy: `${a.factionZh}：${a.why}`,
