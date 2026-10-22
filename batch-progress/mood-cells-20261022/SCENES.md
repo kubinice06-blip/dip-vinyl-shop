@@ -47,8 +47,8 @@
 
 | 批 | 條號 | 場景 | 狀態 |
 |---|---|---|---|
-| mc1 | 11001 | minimal synth／coldwave／minimal wave |  派→情緒薄格 mc1、mc2（第 1 輪） |
-| mc2 | 11081 | post-punk／no wave／funk-punk（乾、尖、不厚） |  派→情緒薄格 mc1、mc2（第 1 輪） |
+| mc1 | 11001 | minimal synth／coldwave／minimal wave | ✅ 上線 22／落格 17（策展 47、研究後汰 17；中速 x 偏低、帶吉他判重） |
+| mc2 | 11081 | post-punk／no wave／funk-punk（乾、尖、不厚） | ✅ 上線 15／落格 8（53%：7 張判重落亢奮；吉他樂團場景產出低，mc21 建議改場景） |
 | mc3 | 11161 | 冷爵士：Tristano 派、60s 前衛 Blue Note 二線、歐陸自由即興裡快而乾的 | ✅ 上線 19／落格 16（場景挖不到 45；鋼琴主導無強鼓的落平靜） |
 | mc4 | 11241 | 當代古典快而冷（Ligeti、Xenakis、Varèse、Boulez、Stockhausen、Lutosławski 的快作） | ✅ 上線 19／落格 9（47%：無拍點的點描／複節奏作品照新能量規則落平靜；只收機械脈動或打擊推進的） |
 | mc5 | 11321 | 日本 techno-pop／synth-pop（YMO 系、P-Model、Hikashu、capsule、Perfume 系、tofubeats 冷盤） | |
