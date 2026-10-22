@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-22｜dip-vinyl-shop｜頻率選歌喇叭鈕與頂欄「自動試聽」開關連動
+
+- **改動**：店主切去聽串流後站上會自動把網頁音源（頂欄自動試聽開關）關掉，頻率選歌就沒聲音、按左上角喇叭也沒反應——喇叭原本只是模組內的布林。現在 `dip-tune.js` 以 `cfg.audioPref()`（`DipPlayer.autoplayPreference() !== 'off'`）進場同步、喇叭按下走 `cfg.setAudioPref(on)` 回寫站上開關並武裝播放器、新增 `DipTune.setAudio(on)` 給頁面推；`index.html` 頂欄開關的 `onToggle` 與 `onAutoplayRevoked` 都呼叫 `DipTune.setAudio`。開關是關的時候轉輪子不再 `grant`（不搶串流）；沒表態過的裝置第一次碰輪子寫成開，頂欄圖示跟著亮。`dip-tune.js?v=6`。
+- **主要檔案**：`dip-tune.js`、`index.html`
+- **驗證**：本機 Playwright 八個情境全過：關→進場喇叭關、轉輪子不寫開、按喇叭→頂欄開、頂欄關→喇叭關、頂欄開→喇叭開、離開再進照站上開關、未表態→進場喇叭開、第一次碰輪子→頂欄開；0 pageerror。
+
 ### 2026-10-22｜dip-vinyl-shop｜情緒薄格策展線 md5／md6：dark ambient 二線 45＋drone／電子極簡 45 張上線，落頹靡 88/90
 
 - **內容**：店主「新增的專輯數太少了 與雀躍嚴重不平衡」第 1 輪並行之一。md5（`add-20261022-md5`）：Cryo Chamber 系 18（Atrium Carceri 5、Sabled Sun 2、Dronny Darko 2、Ugasanie 2、Alphaxone、Onyx 三方合作…）、Cold Meat Industry 系 9（Raison d'être 4、Desiderii Marginis、Sephiroth、Moljebka Pvlse）、Malignant／isolationist 8（Yen Pox 3＋Troum 合作、Hazard、Hall of Mirrors、Lull）、Cyclic Law 6（Kammarheit 2、Cities Last Broadcast、Apócrýphos、Svartsinn、Treha Sektori）、Loki 2（Inade）、Glacial Movements 2（Netherworld）。md6（`add-20261022-md6`）：Kranky（loscil 7、Pan•American）、Touch（Köner 5、Ambarchi 2、BJ Nilsen 2、Niblock 2、Kirkegaard、Vainio）、Type／Miasmah（Svarte Greiner 4、Kreng 2、Black to Comm、Xela、Elegi 2、Mokira、Kane Ikin 2）、Room40（Lawrence English、Irisarri 2、Ben Frost、KRM《Sirens》）、Kevin Drumm 2、KRM 另 2、Bass Communion、Jebanasam《Rites》。
