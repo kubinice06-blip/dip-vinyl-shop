@@ -88,3 +88,19 @@
 - **14228**　跨兩檔合掃（han() 4-gram，對 out-1 交件中版本）：拆掉 `首約分鐘`（本組 Gin／Arcade／Klouds 三張全改句式，out-1 另有四張同形，請主線收件時再看一次 out-1 那一側）、`長約分鐘`、`人聲取樣`、`手年月日`、`年月由發`、`年月日正`、`製作人致`、`過年月日`、`是製作人`、`製作人的`、`分鐘上下`、`於洛杉磯`。定稿 3 張以上 0 條；2 張只剩 `阿拉巴馬`（地名）、`薩克斯風`（樂器）、`饒舌歌手`（Own Pace 照 note 指派的領句，對 out-1 LIL BIG MAN）。
 - **14229**　事實限制照辦：Olesi 只寫「混濁」（14233）；Own Pace 只寫 MIKE 客串〈Looking 4 Runtz〉；Ta-ku 兩張只寫 Day 編號、Vol. 1 聲音只到「帶爵士與靈魂成分的器樂拍子」；Tribute 不連 Dilla；BK6 不寫 Withers；Arcade 寫「捲菸紙」照 note、德國廠牌不具名；Liv.e 錄音期「一個月」已在 hook，正文不再複述（原稿「錄了約一個月」刪去）；FlySiifu’s 評價分歧、媒體分數與 Ras G 獻詞未寫（不在 note）。J Dilla 逝世以「已故的」「留下的」「逝世三週年」平實帶過。
 - **14230**　小判斷（可逆）：Olesi 第二句改成「是洛杉磯人，1983 年出生」以避開 out-1 的「生於洛杉磯」；Tribute 第二次出現的「法國」（Bo Bun Records 前）刪去避免同句重複；Ta-ku Vol. 2 第二句把 note 的「致敬 J Dilla」改成「向 J Dilla 致敬」以拆 `製作人致`。
+
+## 寫作層（writer-1）（14221–14225）
+- **14221**　交件：`desc-tools/batches/output/add-20261022-ml3-out-1.json` 14 張，key 逐字同序。full 10 張 201–238（1988 223、Kauliflowr 211、Reprise 235、Ways 222、Ch2 238、Ch3 201、Orchid 220、A Lil' Light 231、Yancey 222、LIL BIG MAN 238）；thin 4 張 129–158（Hud 129、Song of Sage 158、Memoirs 143、Expressions 132）。初稿 0 張出界；合掃改寫後 Maxo 一度 242，整格把主詞「Maxo 的饒舌」換成「他的唱腔」壓回 238。`qa-batch out`（兩檔 27 張）全部通過、`qa-check-research` 標記 0、`fix-spacing` 0 處；「據」「也就是」「磁帶糊」「這張專輯」grep 0。
+- **14222**　第二句全照 note 指派（生年盤名／Bandcamp 發表量／上傳日期／本名與《Cherry》／替 Earl Sweatshirt 製作／掛名與授權／簽約解約時間線／生年出生地／那台 MPC1000／本名與取樣來源／舊名 Declaime／Oxnard 與入行年／親屬／Def Jam 出道作）。「日」後一字照 14214，兩處因合掃改：Ways「日掛」→「日開賣」（避 `手年月日`×3，掛名改到前句「掛在自家 Freedom Sounds 名下」）、LIL BIG MAN「日正」→「日亮相」（撞 out-2 BK6 的 `年月日正`）。
+- **14223**　合掃（han() 4-gram，對 out-2 交件版）：拆掉 `首約分鐘`×10（本組 10 張各換一種曲數／片長寫法：收／共約／歌長／軌總長／合計／跑了／收錄／計／共／長度）、`洛杉磯饒舌手`×5（Navy Blue 四張與 Maxo 各用不同鋪法：以饒舌為業住洛杉磯／在洛杉磯饒舌／出身洛杉磯的饒舌手／洛城的…是饒舌手／從洛杉磯出身唱饒舌）、`人聲取樣`×3、`長約分鐘`、`張由製作`、`月由發行`、`作年月日`、`過年月日`、`分鐘左右`、`洛杉磯人`、`在洛杉磯`、`的製作人`、`他的饒舌`。定稿 2 張以上只剩樂器名「薩克斯風」與 out-2 內部的「阿拉巴馬」（地名）。
+- **14224**　事實限制：媒體名與媒體評語出處 0（1988 的 Exclaim!／Q／Pitchfork 只取「打擊推進、讓人想跳舞」「暖而 lo-fi」內容句）；L’Orange「廠牌說他用暗色調工作」改寫成陳述句「他習慣用暗色調工作，這張卻是他最坦露的一張」，不掛轉述詞；Maxo 的 buttery 用被動「被形容為」；Illa J 一條逝者照 note 克制，只寫「Dilla 過世後」；Expressions 的伴侶關係時序由 hook「後來」承擔，正文只具名 Muldrow。14232 推翻項照辦（Ways＝Budgie、Orchid 有六位人聲、Hud 為 2013 自發）。
+- **14225**　小判斷（可逆）：Kauliflowr 初稿「整張沒有人聲」為否定句，改「整張全是器樂」；Ch3 hook 已有「嘶嘶作響」，正文改寫成「嘶聲之外還有劈啪聲」避免複述；Song of Sage 第二句為避開 hook 的「職業滑手」，寫「在滑板圈轉為職業」；Memoirs 用「洛城」替代「洛杉磯」以拆同構（台灣慣用簡稱）。
+
+## 主線審稿（2026-10-22；條號 14234–14237）
+- **14234**　逐張審 27 張，逐句對回研究稿。改 3 張（皆為刪句，不動事實，研究／鉤子／輸入三層不需同步）：
+  - `desc2:L’Orange|The Orchid Days`：「他習慣用暗色調工作，這張卻是他最坦露的一張，主題是愛。」→「整張的主題是愛。」（研究稿出處是 Bandcamp 廠牌宣傳文，寫作層把宣傳評語改成陳述句；只留主題事實）。
+  - `desc2:Maxo|LIL BIG MAN`：「他的唱腔流動被形容為 buttery。」→ 刪（單一樂評〔KZSC〕評語句、且為英文形容詞）。
+  - `desc2:Medhane|Own Pace`：「其中一段康加鼓取樣，像 Al Green 最隨性的時候。」→ 刪（單一樂評〔The Quietus〕比喻句）。
+- **14235**　核對後保留：Knxwledge 1988 年生（英文維基）、Onra 1981 年生於德國 Trier（英文維基，父母法國人）、Navy Blue 替 Earl Sweatshirt 製作（英文維基）、Liv.e 1998 年生於達拉斯（英文維基）、Dudley Perkins「常唱走音」（Exclaim! 與 The A.V. Club 兩源一致，屬聲音事實）。
+- **14236**　其餘 24 張逐張審過，未改字。
+- **14237**　試聽：22 ready／5 unavailable（Hud.Dreems.PRT.1.5、FlySiifu's、Beat Konducta Vol. 5／6、Onra & Quetzal《Tribute》：Apple us 藝人目錄查無對得上的條目，Tribute 只有《Tribute II》EP，不硬配）；其中 11 張 meta 自動搜尋落空，改走 Apple `entity=musicArtist` → `lookup` 逐盤核對曲目（`preview-override.json`）。封面 27 張全 CAA，縮圖表目視相符。冷門軸 6 張人工（Last.fm 盤名彎引號／分卷寫法對不上致 listeners 失真，§0.8 錨點制給 3；`ratings-override.json`）。

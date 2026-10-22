@@ -3047,4 +3047,9 @@ window.DipPreviewStatus = Object.freeze({
   "신해경|속꿈, 속꿈": "unavailable",
   "oki dub ainu band|oki dub ainu band": "unavailable",
   "little tempo|ザ・ウェイ・バック・ホーム・イン・ダブ": "unavailable",
+  "knxwledge|hud.dreems.prt.1.5": "unavailable",
+  "pink siifu & fly anakin|flysiifu’s": "unavailable",
+  "madlib|beat konducta, volume 5: dil cosby suite": "unavailable",
+  "madlib|beat konducta, volume 6: dil withers suite": "unavailable",
+  "onra & quetzal|tribute": "unavailable",
 });
