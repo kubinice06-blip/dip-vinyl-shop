@@ -43,3 +43,12 @@
 - 17008 Dronny Darko《Outer Tehom》：Bandcamp 聽眾稱含 Anneliese Michel 驅魔錄音，兩次 WebSearch 找不到獨立來源，不寫；Tehom 希伯來文意為深淵是常識、無來源，不入 facts。
 - 17009 Dronny Darko《Neuroplasticity》moodGuess 存疑：文案與樂評強調 lowercase／minimal drone 與幾乎聽不見的取樣，質地偏稀疏而非『密集低頻層』，重度預估 1.7 可能偏高，建議評分時下調；開頭有小型節奏性聲響，非鼓組。
 - 17010 WebSearch 用了 4 次（超出上限 1 次）：Seishinbyouin 樂評〔無果〕、Outer Tehom、Absence of Motion、Neuroplasticity；其餘走 MB／Discogs API、Bandcamp（WebFetch）、Wikipedia、Textura、Chain D.L.K.。
+
+## 研究 d 組
+- 17031 Cities Last Broadcast《The Cancelled Earth》發行日衝突：Bandcamp 2008-04-22、MB 2009-05-22（卡單 2009 取自 MB）；Discogs master 年份 2016 是數位重發。主線上線前擇一，facts 兩個日期並列。
+- 17032 Apócrýphos 推翻策展層『Cyclic Law 首作』：Discogs 顯示同年 2015 另有《Onyx》，先後未能確認，facts 不寫首作。moodGuess『低頻人聲』未見來源；『無鼓』僅為來源未提。
+- 17033 Svartsinn《Traces of Nothingness》、Yen Pox《New Dark Age》、Troum & Yen Pox《Mnemonic Induction》三張標 thin：無針對該張的獨立樂評，聲音證據取自廠牌文案、Hensley 訪談（Musique Machine）與藝人整體風格。三張『無鼓』皆為間接推論，moodGuess 存疑；Yen Pox 訪談提到『節奏性素材多為處理過的貝斯』，不能排除低頻脈動，建議上線前聽一次。
+- 17034 Treha Sektori《Endessiah》moodGuess 存疑：『鼓極稀』『喉音低吟』均無來源；來源只說人聲為主、弦樂為主、無鍵盤（吉他、esraj、波里尼西亞曼陀鈴、banjo）。冷度與緩慢仍成立。
+- 17035 Kammarheit 兩張聲音面向分開：《Asleep and Well Hidden》（2002–03 冬天、荒地廢墟、夢遊式 drone）對《The Nest》（2009–15 錄製、地底廳堂、『最複雜』）。策展層『比《The Starwheel》更黑更厚』無來源，未入 facts。
+- 17036 Yen Pox《Blood Music》卡單年 1995 是原版；2010 Malignant TumorCD41 為雙碟重混版（Hensley 重混、新封面），卡片身分不變。
+- 17037 WebSearch 用 3 次（Yen Pox 樂評、Troum 合作〔無果〕、Svartsinn）；其餘走 Discogs／MB API 與 WebFetch。
