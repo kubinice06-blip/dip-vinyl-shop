@@ -13,6 +13,17 @@
 - **主要檔案**：`dip-vinyl-worker/src/index.js`、`scripts/kv-spotify-link-repair.mjs`
 - **驗證**：直接拿 worker token 打 Spotify 得 429 `QUOTA_EXCEEDED`；`--dry-run` 候選 8,502；worker `node --check` 過。
 - **實跑結果（同日）**：配額 11:00 UTC 重置後 Spotify 直查只撐 691 張（補上 531、無完全吻合 160）就再撞 429、`retry-after` 23.7 小時——**這個 app 每日配額約千次，正式站也在用同一份，不能再拿它跑批次**。改走 MusicBrainz（鍵裡的 `rgMbid` → 發行版 url-rels，免配額、1.1 秒一張）：三段共 8,299 張，補上 3,954、MB 沒有 3,851、殘餘 503 錯誤 12。**累計補回 4,485 張**，U2／Billy Joel／Justin Bieber 在正式站驗過按鈕亮。剩 3,851 張 MB 也沒有的（Kacey Musgraves、Donald Byrd 這種明明在 Spotify 的也在內）待店主定：Odesli（Apple collectionId 換 Spotify 連結，每分鐘 10 筆）或第二個 Spotify app。前端 `resolveSpotifyBtn` 看到 KV 已標 `spotifyChecked` 就不再打 `/spotify-album-link` 燒配額。
+### 2026-10-21｜dip-vinyl-shop｜頻率選歌：ts1–ts11 新卡 342 張補情緒座標、上星圖；§11 藝人介紹排入 6 批
+
+- **內容**：店主「頻率也要做 前面沒做的補上 也放上星圖中」。薄細項策展線上架的 342 張補打情緒三軸（`batch-progress/mood-axes/score-ts/`，6 份、6 支代理），重跑 priors／scale／`build-card-moods`，全池 19,458 張都有座標，頻率選歌與星圖不再略過新卡。conf 低 74%（地區冷門盤）。另依 §11 把 212 位缺介紹的藝人補進 roster、切 `ar-d-129`～`ar-d-134`（state: cut），待新工作階段跑。
+- **主要檔案**：`data/mood/{card-moods.json,card-moods-v0.json,scale-v0.json}`、`batch-progress/mood-axes/{build-priors.mjs,priors-v0-report.json,scale-v0-report.json,rulings.md}`、`batch-progress/mood-axes/score-ts/*`、`batch-progress/artist-intro/roster-20260929.json`、`desc-tools/batches/artist/{progress.json,cut/ar-d-129..134.txt}`、`batch-progress/thin-sub-20261020/cut-artist-intros.mjs`。
+- **驗證**：merge 342/342、0 錯誤；`build-card-moods.mjs` gate 綠（19,458/19,458、錨點 104/104）。
+
+### 2026-10-21｜dip-vinyl-shop｜雲端工作階段改為開 PR 後自己合併
+
+- **內容**：店主指示「不用再等了 直接合併」。雲端工作階段開完 PR 就自己合併，取代 2026-10-10 的「由店主合併」；仍不直接 push `main`。合併前條件：草稿轉 ready、已併 `origin/main` 無衝突、published gate 0 error 且 KV 回讀一致；`pendingLocal` 還有 KV／seed 沒寫的批不合併。PR #103（ts1–ts11）已依此合併。
+- **主要檔案**：`CLAUDE.md`（工作流程、PR 不追蹤節、雲端邊界）、`REMOTE_RUNBOOK.md`（總則第 3 點、分工表、分支與 PR、本機接手、串聯）。
+- **驗證**：純文件改動；`grep` 確認兩檔已無「由店主合併／不自己合併」字樣。
 
 ### 2026-10-21｜dip-vinyl-shop｜薄細項策展線 ts10／ts11：越南 25＋新加坡 13＋蒙古 28 張上線（放寬門檻）；越泰新蒙線收尾
 
