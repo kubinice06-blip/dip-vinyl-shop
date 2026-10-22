@@ -46,3 +46,15 @@
 - **17168**（Roy Montgomery 三張卡掛 country us）：藝人為紐西蘭人（基督城）；卡單 country 欄只影響商店分區，非本層職責，供主線知悉。《Scenes From the South Island》的「簡樸、電氣干擾」描述出自 Pitchfork 對同公寓同期《Temple IV》的文章，facts 已明寫。
 - **17169**（Labradford 四張）：A Stable Reference 發行日 MB 5/26、維基 5/23，facts 只寫年份；英國版 Discogs 列 Flying Nun。Labradford 自題專輯與 A Stable Reference 的「無鼓」由 Discogs／維基人員表歸納（只列 Brown、Donne、Nelson）。AllMusic、Kranky 官網（403）、Bandcamp 抓不到，Raggett 句引自維基轉述。
 - **17170**（來源與用量）：WebSearch 用 3 次（Labradford 自題、Roy Montgomery Silver Wheel〔無果〕、Pan American River）。九張皆為原創專輯，無選輯、無重複卡、無未發行；年份、廠牌僅 fixed::context 年份一處待定，無推翻廠牌。分數、星等、榜次一律不入 facts。
+
+## 研究 c 組
+- **17181**（Supersilent《1–3》moodGuess 嚴重存疑，建議汰換）：策展預估「電子低鳴、打擊稀、陰冷」，但 Scaruffi 與 Wikipedia 均描述為暴力嘈雜的爵士搖滾，有噪音牆、痙攣式鼓聲，鼓手 Vespestad 為正式成員；188 分鐘大半判躁，僅 2.1、3.3 前段安靜。
+- **17182**（Supersilent《4》moodGuess 存疑，建議汰換或降級）：Scaruffi 寫 4.2 堆成部落式狂歡、4.3 強調打擊、4.6 歡快如拉丁海灘，非陰冷；比首張克制但鼓仍是主成分。
+- **17183**（Supersilent 年份與「廠牌第一張」）：《1–3》Wikipedia 寫 1997，MB／Discogs 首發 1998-01-12（版權標 1997），卡單 1998 不推翻。團條稱 1–3 為 Rune Grammofon 首發，廠牌條卻寫 1998 年成立，依規退成只寫目錄號 RCD 2001。《4》Wikipedia 內文日期誤植，取 Discogs／MB 的 1998-11-23。
+- **17184**（Calla《Scavengers》廠牌推翻）：卡單 Quatermass 只是比利時 2001 再版（QS 106 lp，換掉第 9、10 首）；原版與 MB 首發為 Young God Records（YG15，2001-01-16）。建議卡面改 Young God；Discogs 主發行年 2000 與 MB 2001 不一致，以 MB 為準。聲音來源僅 Wire 現場評，facts 已註明。
+- **17185**（Piano Magic《Writers Without Homes》廠牌推翻）：卡單「Labels」是歐陸 Virgin 系壓片；原版為 4AD（CAD 2209 CD，2002-06-10）。建議卡面改 4AD，年份不變。
+- **17186**（Piano Magic《Part Monster》多廠牌並存，未推翻）：MB 首發義大利 Homesleep（05-14），Wikipedia／Bandcamp 為 Important Records（05-29），Discogs 主版為西班牙 Green UFOs（05-21），皆真實；卡面取哪個由主線定。「輕、弦樂」小幅存疑：實際為完整樂隊加小號、低音大提琴。
+- **17187**（Tarentel 兩張 moodGuess 小幅存疑）：《From Bone to Satellite》有鼓手（trap kit），Scaruffi 點出〈For Carl Sagan〉鼓聲強勁；《We Move Through Weather》Discogs 風格為 Experimental／Ambient，編制含鼓與小提琴，長曲後半被評為嘈雜。皆建議主線聽過再定。《FBTS》發行量 Discogs 4500 對 Wikipedia 1000，未寫進 facts。
+- **17188**（This Will Destroy You《Tunnel Blanket》）：暗、drone、厚成立；「慢鼓」小幅存疑（〈Black Dunes〉長漸強後有強烈高潮，僅聽眾評論佐證）。Monotreme 為 MB 首發，卡單成立。訪談取 Punknews（Brian Shultz），成員自述需標明。
+- **17189**（Mogwai《Les Revenants》）：鼓少、不爆發成立，但 Observer 評語提到「一些溫暖」，z 預估可能偏冷。配樂走一般 Album，不標 §5.6。評論全轉述自 Wikipedia，Pitchfork／AllMusic 此環境抓不到。
+- **17190**（來源與用量）：WebSearch 用 3 次（Tarentel FBTS、Supersilent 1–3、Calla Scavengers）。Pitchfork、AllMusic、Guardian、BBC、web.archive.org 皆抓不到；Wikipedia raw 與 MB 偶發限流已重試。九張皆為原創專輯（Mogwai 為原聲帶），無選輯、無重複卡，各 11–12 條 facts。
