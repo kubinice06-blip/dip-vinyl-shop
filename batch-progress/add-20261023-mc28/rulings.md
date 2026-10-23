@@ -59,3 +59,25 @@
 - 13188　**Bailey《Lot 74》**：年份取原盤 1974（MB 2009 是 CD 重發）。錄於私人住宅（Catford 與 Hackney），非現場；A 面立體聲電聲、B 面未擴音 19 弦吉他，疏密不一致。Squidco 兩台擴大機／兩個踏板一條取自搜尋摘要，頁面 403 未親見。
 - 13189　**推翻策展層**：0 處（年份、廠牌、掛名皆與卡單一致）。無選輯、無重複卡；8 張全為原創專輯，無建議移除。
 - 13190　**WebSearch 用量**：本組 19 次（含 1 次報錯；每張 ≤3 次），WebFetch 另計；Discogs／MB API 直連可用，Squidco、AllMusic 多為 403。
+
+## 研究 b 組（13171–13180；Parker 獨奏／電聲 5＋Company 3）
+- 13171　**Snake Decides 年份**：Discogs／MB／維基藝人頁皆 1986（錄音 1986-01-30），維基專輯條目寫 1988-05 發行（引 EFI 目錄，EFI 網站連不上無法核對）。取卡單 1986，notes 標 uncertain，facts 只寫錄音日與 Incus 49，不寫發行年。
+- 13172　**Process and Reality 多軌疊錄**：只有 All About Jazz 一則搜尋摘要（網頁 403）說獨奏薩克斯風採多軌疊錄，Discogs 只列高音薩克斯風。curatorRisk「含次中音」未獲證實，推翻一處（待證）；疊錄寫進 facts 並標來源為 AAJ，notes 標 uncertain，y 風險留給主線。
+- 13173　**Chicago Solo 是純次中音**：Discogs 載明首張完整次中音獨奏，音色較厚重（Penguin Guide 稱「音色重量」），moodGuess y -0.2 存疑（尖細預設不符）。錄音地點（Airwave Studios）與廠牌所在地沒查到可靠來源，facts 不寫「芝加哥」。
+- 13174　**Toward the Margins**：moodGuess x、y 皆存疑。有疏的段落與小組合短篇，樂評提到漫無目的；六人加電子處理比獨奏厚。錄音 1996-05 Gateway Studios（Surrey），非現場。
+- 13175　**Company 4 x 嚴重存疑，建議降權或汰換**：Potter（Contact 19，1978）明寫「Much of the playing on Incus 26 is much sparser than on Bailey's previous duo records」，兩條細線加大量留白，x 3.4 很可能被判靜。錄音日取 Discogs 1976-11-11（MB 關係日期 1977-11-11 疑為錯植），卡單年份 1977 為發行年，保留。
+- 13176　**Company 5 是現場錄音，MB 未標 Live**：Discogs 載明 1977-05-26 ICA 錄成，Potter 證實取自首屆 Company Week。依本批「MB 標 Live 才排除」的規則它不在排除之列，但實質為現場，交主線自行決定保留與否。
+- 13177　**推翻策展層（Company 5 掛名）**：curatorWhy 列 Wachsmann，Discogs、維基、Contact 評論皆是 Leo Smith、Altena、Honsinger、Braxton、Bailey、Lacy、Parker 七人，無 Wachsmann。Company 5 的 MB rg 首發日 2001 為誤植，Discogs master 1978，取 1978。
+- 13178　**Company 2**：錄音 1976-08-22 Riverside Studios（錄音室），Incus 23，發行 1977（MB、Discogs），維基 Bailey 頁列 1976，卡單 1977 保留。編制 Bailey＋Braxton＋Parker 與策展層一致，低音單簧管讓低頻不全尖細，y 有小幅風險。
+- 13179　**推翻策展層合計**：2 處（Process and Reality 次中音疊錄、Company 5 的 Wachsmann）；存疑 4 處（Company 4 x、Chicago Solo y、Toward the Margins x／y、Process and Reality y）。無選輯、無重複卡，8 張皆原創專輯，無建議移除。MB 標 Live 的盤：0 張（Company 5 為實質現場，見 13176）。
+- 13180　**WebSearch 用量**：本組 3 次（Process and Reality 2、Company 4 1）；Wikipedia API 頻繁 429，改用 Discogs／MB API 直連，WebFetch 對 AAJ、EFI 403／連不上。Contact 期刊 PDF 以 pdftotext 讀出，作為 Company 4、5 的主要樂評來源。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- **汰 17 張**（研究層聲音或錄音形態反證；冷冽線最怕「靜」與「旋律清楚」，存疑一律汰）：
+  - 現場演出錄音（共同規則只收正規專輯、不收現場；MB 未標 Live 但研究層查實）：Company《Company 5》（1977 首屆 Company Week ICA 現場）、Bailey & Bennink《Han》（1986 巡演四場剪輯、含觀眾私錄）、Schweizer《Chicago Piano Solo》（Empty Bottle 現場；另有可哼唱的 Don Cherry 曲與 Monk 式切分）、Schweizer & Carl《The Very Centre of Middle Europe》（巴塞爾劇院現場）、Schweizer《Hexensabbat》（A 面柏林現場；樂評稱 folkish、oneiric）。
+  - x 判靜風險（稀疏、極弱、低音量）：Company《Company 4》（Contact 期刊：比 Bailey 先前二重奏更稀疏）、Malfatti 等《News From the Shed》（音量極低、沉默佔大比重）、Sven-Åke Johansson《Schlingerland》（多家樂評：出乎意料地低調安靜）、大友良英《Anode》（超安靜、聽覺邊緣）《Cathode》（頭尾只有笙＋正弦波、稀疏比重大）、King Übü Örchestrü《Binaurality》（低音量點描）、Schweizer《Piano Solo, Volume 1》（冥想般的靜止）《Many and One Direction》（強度調低、收 Monk／Carla Bley 旋律曲）、EPEAE《Toward the Margins》（疏段多、六人加電子偏厚）。
+  - 三軸皆疑：Léandre《Les Douze Sons》（實為二／三重奏與人聲拼盤、含歌舞廳橋段）、Reichel《Wichlinghauser Blues》（滑稽、甘美朗與散拍的叮噹質地，z 往暖）、Phil Minton Quartet《Mouthfull Of Ecstasy》（有鼓、密集吵鬧，y 判重）。
+- **留下的存疑張**：Mengelberg《Impromptus》（Monk 動機無法文字確認）、Parker《Chicago Solo》（純次中音、音色重量）《Process and Reality》（疊錄）、Butcher（四首疊錄）、Oxley 同名（擴音金屬＋環形調變）、SME《So, What Do You Think?》（打擊主導混音）、《Topography of the Lungs》、Lytton《The Inclined Stick》（第二首 1977 現場，其餘家中錄音，整張算錄音室）、Alterations（錄於兩地演出場所，無來源寫明現場，正文只寫「錄於」）——評分看實測。
+- **研究層推翻策展層照改**：《Instant Composers Pool》是 ICP 002（ICP 001 是 Bennink／Breuker《New Acoustic Swing Duo》），正文不寫「第一號」；Company 5 已汰。年份維持卡單（研究層核對 1974／1992／1977／1973 原盤年成立）。
+- 不補位：策展候補多為 MB 標現場或同型稀疏，再補也是貼邊。
+- 定案 **22 張**（a 7、b 5、c 7、d 2、e 1）。日本這半只剩吉田アミ《Tiger Thrush》1 張（音響派多判靜）。汰除卡存 `dropped-cards.json`，研究稿條目移出研究檔。研究 qa-batch 全過。
