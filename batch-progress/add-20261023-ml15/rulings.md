@@ -78,3 +78,24 @@
 - **15178** 同人分軸與第二句句型（一張一種）：Kaya ×2——Elixir＝創辦人引入「發起 Kaya Project 的英國人 Seb Taylor 做電子融合」（帶起源與遠地混音）、ASIG＝曲目引入「被取樣的是 Tripswitch 的〈Deer Park〉」（帶掛名作曲製作與編制）；Gaudi ×2——Dub Qawwali＝身分＋動作「義大利出身的 dub 製作人 Gaudi 拿到這批帶子」（帶錄音細節）、BS&T＝「他叫 Daniele Cenacchi，1963 年生於波隆那」（帶生平與 theremin）；Sounds ×2——Kin＝作者欄「寫 demo 的 Elliot Morgan Jones 出身 dub，搭檔 Nick Woolfson」（帶成團）、Mosaic＝地名＋樂種「倫敦的 ambient dub 二人組」（帶低頻與美版）。其餘：Loop Guru＝「兩個英國人做的 Loop Guru，靠的是取樣循環」、Cheb i Sabbah＝出道作「出道就拿印度古典樂做 dub」、Ott＝合作關係「曾與 Shpongle 的 Simon Posford 合作的英國製作人」、Boozoo Bajou＝「這對搭檔，早年做電子 downtempo」。避撞 a–c：Elixir 原「X 是…」撞 Tosca、Duniya 原「由…組成」撞 Fila、Ott 原「本名」撞 Yppah、再擬「生於倫敦的」撞 NoW，皆改。Ott 不帶 Hallucinogen《In Dub》（前批 Blumenkraft 已用）；Grains 不用「紐倫堡雙人組」（前批 Dust My Broom 已用）。10 張第二句皆補了哪裡人或樂種。
 - **15179** hook 四型：懸疑（e4、e5）／斷言（d2、d3）／場景（d1、d4、e2）／人物定調（d5、e1、e3）。開頭前四字 10 張互異、對 a–c 互異，也對 2026-10 起已上架 1,633 段正文開頭不撞（初稿 Duniya「最後一首」、再擬「收尾那首」、Kin「一首 d」皆撞前批，已改）。「日」後一字：d2 交、e1 以，其餘只寫到年或月；與 a–c 的由／問／在／意／，／發合計 8 處互異。媒體名、媒體榜名次、評分一律未進 note（Exclaim!、Ambient Music Guide、PopMatters 的描述改寫成聲音事實，不具名）；Dub Qawwali 的 BBC Radio 3 入圍不指派。
 - **15180** 自查：全批 28 句 hook 中文 4-gram 0 撞；d–e hook 對全批 note 0 撞；hook 與自身 note 無 6 字以上逐字重複。對前批正文掃 hook 4-gram，改掉「一台筆電」「由他自己」「錄音與混音」「的一首歌」「曲長分秒」，剩「巴基斯坦」（地名）與 1 次的散撞。note 無否定句（研究稿的「美版少一首」寫成「少了〈Snow〉、改收…」正面句）。`node qa-batch.mjs hooks add-20261023-ml15` 全部通過 ✓；`node chk-hook-crossgroup.mjs add-20261023-ml15`（5 組 28 張）✓ 全部通過。研究層注意事項照辦：Kin 年份寫 1995、Mosaic 不寫「前作同年」（研究稿 e 組那句與 d 組 Kin 1995 矛盾，不指派）且不點名《Kin》以免互指；Mosaic 錄音室兩說不指派；Dub Qawwali 的錄音年代照 facts 寫進 g1（單一來源，可逆）。
+
+## 寫作層（writer-2）
+- **15186** 交件：`desc-tools/batches/output/add-20261023-ml15-out-2.json` 14 張（full 11：211–240；thin 3：Elixir 167、Duniya 170、Kin 180）。逐張：Mish Mash 228、Eighty One 227、Sunset 211、Orb 239、Elixir 167、Duniya 170、Dub Qawwali 230、Shri Durga 231、Kin 180、Fairchildren 240、Grains 233、BS&T 240、ASIG 234、Mosaic 240。`qa-batch out`（合計 28 張與卡單相符、全部通過）、`qa-check-research`（標記 0）、`fix-spacing`（待補 0）。無超標、無回頭整格捨去。
+- **15187** 第二句全照鉤子層 note 指派（MC 是／本名／先在…出過兩張／找來／發起…的英國人／兩個英國人做的…靠的是／義大利出身的…拿到／出道就拿／寫 demo 的…出身／曾與…合作的英國製作人／這對搭檔早年做／他叫／被取樣的是／倫敦的…二人組）。hook 代稱具名：Eighty One 的「女聲」第三句具名 Anomie Belle；Elixir 的筆電由 Natasha Chamberlain 具名；Kin 的「兩個倫敦人」第二句具名 Jones 與 Woolfson。Sunset 第二句加「第五張改由 Future Archive Recordings 經手」補身分（note 已列）。
+- **15188** 「日」後一字照 15175：Duniya 日交、Fairchildren 日，以（d、e 組指定的「交」「以」）；Orb 日推、Sunset 日上。note 的媒體名整句未進正文（Dub Qawwali 的錄音年代、Shri Durga 的 sarangi／sarod 受稱讚皆寫成陳述句、不掛出處）；無「據說／據傳」。
+- **15189** 自掃（只取漢字的 4-gram，跨 out-1／out-2 合掃）：3 張以上 0 條；2 張只剩「田野錄音」（Orb／Shri Durga）、「小提琴與」（樂器名）。途中拆掉與 out-1 撞的「張錄音室」「錄音室專輯」「專輯年月」「長約分鐘」「在年月日」「於年月日」「是年月日」「發行年月」「張專輯年」「作年月日」「成年月日」「在年月推」「手法是把」「在孟買錄」「只有分秒」「味的貝斯」等；Orb 的「第十二張錄音室專輯」因任何寫法都與 out-1 撞「張錄音室」，改寫成「在他們錄音室長片的序列裡排第十二」（可逆）。out-1 交件期間仍在變動，主線收件時請再合掃一次。
+- **15190** Dub Qawwali note 的「錄音室場次」正文寫「錄音場次」（避同構，事實不變）；Gaudi BS&T 的 1995 搬倫敦照 note 寫年份，「那三年半」照 hook 收尾為專輯製作期。
+
+## 寫作層（writer-1）
+- **15181** 交件：`desc-tools/batches/output/add-20261023-ml15-out-1.json` 14 張（full 10：210–240；thin 4：Tosca 180、BDO 首作 174、《3 Cities》159、《Tales》172）。`qa-batch out`、`qa-check-research`、`fix-spacing` 皆 0 處。初稿超標 2 張（Fila 266、Trinity《Home, Land and Sea》245），整格捨去：Fila 砍「約 64 分鐘」與廣播句的贅字，Home 砍首作版本的重複曲名與「由樂團」。
+- **15182** 第二句句型全照鉤子層 15174 配表（生於…的／製作欄寫的是／以…為據點／在…組成／是／由…組成／起於／錄進／身分領句／樂器分工／合用這個名義／分工／廠牌定位／綽號）。「日」後一字：Mind Elevation 照 15175 用「由」；Thievery 改成日期收句（「問世日期為…」，日後接句號），FFD《Based on》改成「上架的…日那週」——兩張都是為了避開與 writer-2 同時長出的 `成年月日`／`作年月日`／`發行年月日`／`於年月日`，拆法是把日期整個移到句尾或改領頭名詞，不是只換動詞。FFD《SLO MO》辭世日寫「隔年 7 月 16 日」（前句已有 2024 年，時序明確）。
+- **15183** 跨兩檔合掃（han() 中文 4-gram）：3 張以上 0 條；2 張只剩「小提琴與」（樂器名）一條跨 writer-2。途中拆掉：`張錄音室`／`錄音室專`／`音室專輯`（NoW 第五張保留「錄音室專輯」，FFD《SLO MO》改「正規專輯」、Home 改「錄音室裡的最後成果」）、`專輯年月`×4、`在紐西蘭`／`紐西蘭榜`（Home 改「國內榜單」）、`自己發行`／`賣到白金`／`張全長專`（hook 原文命中，改 Home 正文）、`味的貝斯`、`的錄音室`、`手法是把`、`英國的與`、`在孟買錄`、`只有分秒`、`張專輯在年`／`張專輯交`／`張專輯發`。
+- **15184** note 照辦：Rockers 的「據訪談」不留轉述引導詞，照 hook 的口吻直述成事實（Pablo 開價、Island 不付、改名）；Trinity《True》不寫年份，只寫「首張全長專輯」；《True》兩位創團者 note 未具名，正文寫「兩位學生」；Home 三人只寫姓（照 note）；BDO《Tales》cymbalum 不加註解（note 無）。全卡無媒體名、無媒體榜名次，只留英國專輯榜第 93 名、英國舞曲專輯榜第 21 名、紐西蘭榜（官方榜）。
+- **15185** 「開頭兩句讓不懂的人知道是誰」：NoW 三張靠 George Evelyn＋名義（Feelin' Good 加「Ibiza 為據點」）；樂種在第三句才落地的有 NoW《In a Space》（hip-hop 鼓點／dub-reggae）、Rockers（dub 套進 house）——note 第二句是綽號／生地，未在前兩句硬塞樂種，主線審稿可再看。
+
+## 主線審稿（2026-10-23，雲端主線，28 張逐張對研究稿）
+- **15195**：審 28 張，改 3 處（只動正文措辭，事實層未變，research／hooks／input 不需同步）：
+  - Nightmares on Wax《In a Space Outta Sound》：「以 Nightmares on Wax 為名發片。」→「以 Nightmares on Wax 為名做 downtempo。」（寫作層 15185 提出：前兩句未交代樂種；研究稿 a 組 Warp downtempo 先驅）。246 字（硬上限 280 內）。
+  - Rockers Hi-Fi《Rockers to Rockers》：「伯明罕的 Glyn…」→「伯明罕的 dub 二人組 Glyn…」（同上，前兩句補樂種；研究稿 c 組 dub-house）。
+  - DJ Cheb i Sabbah《Shri Durga》：「sarangi 與 sarod 最受稱讚」→「sarangi 與 sarod 都在其中」（單源樂評評價句，研究稿 d 組 Exclaim! 一家之言）。
+- **15196**：逐條核對過的高風險事實：Mind Elevation 拿掉〈Night's Interlude〉（研究 a 組 PopMatters）、SLO MO 的 Faiumu 2025-07-16 辭世（研究 b 組維基）、Eighty One 第三張且 Ninja Tune（研究 c 組 Bandcamp）、Dub Qawwali 人聲帶年代（研究 d 組，直述錄音年代不帶評價）。全文無「據說／據傳」、無媒體名與媒體年終榜。
