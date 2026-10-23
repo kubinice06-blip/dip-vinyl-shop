@@ -27,3 +27,13 @@
 
 ## 主線（研究後汰換）
 - 20431：研究 a 組存疑汰 6（體感標準）：判躁——Michael Gordon《Dystopia》（狂亂、非常大聲、首演現場）、Penderecki《Utrenja》（刺耳、侵略性、近乎尖叫的爆發）、Scelsi《Quattro pezzi / Anahit / Uaxuctum》（大量打擊與銅管、哀號不協和）、Valgeir《Architecture of Loss》（突發鼓、爆裂電子，另有民謠旋律）、Dennehy《Tessellatum》（pseudo-symphonic onslaught）；判輕／暖——Jóhannsson《Drone Mass》（清澈複調人聲、神聖極簡）。留 Valgeir《Dissonance》、Scelsi 兩張（Pfhat、Chukrum 有亮段但中位數長音塊，池中 Scelsi 落頹靡）、Gordon《Rushes》。
+
+## 研究 e 組（條號 20401–20410）
+- 20401：Miners' Hymns moodGuess 存疑：銅管聖詠與管風琴和弦調性清楚，結尾標明 transcendent／hope，z 恐偏暖（-0.7 偏冷過頭）；有 crushing chords 與打擊爆點，無尖叫，不判躁。
+- 20402：Dark: Cycle 3 廠牌文案稱「解體的銅管與木管、Eno 式氛圍」，傾向更靜更輕；廠牌欄卡單 Invada，數位首發實為 Lakeshore（2020-07-24）。選輯 15 首，有定位。
+- 20403：1899 moodGuess 存疑：Frost 自述以節奏／打擊為重、kinetic and noisy，Tangram 打擊與原始希臘人聲可能讓神經繃緊，建議實聽，可能判躁。
+- 20404：Fortitude III 中譯名未查到用原名；Guardian 評語 urgent／unsettling／alarming（針對整體 Fortitude 配樂），列緊張度存疑。僅第三季 10 首，非三季合集。
+- 20405：Broken Spectre 為影像裝置聲音專輯、無廠牌（MB）；大火爆裂、Cry Hope Cry Fury 等曲名暗示有激烈段，列緊張度存疑。
+- 20406：Darkwood 聲音來源完全查不到（Bandcamp／Discogs 403／404），status thin；專輯 2020 為 MB 日期，遊戲 2017 年上市、原聲帶可能更早以 Steam DLC 發行，年份待核。
+- 20407：WebSearch 超用（共 6 次，限 3 次），用於 Miners/Dark/1899/Fortitude/Broken/Darkwood 的聲音與編制來源。
+- 20432：研究 e 組存疑汰 3：Jóhannsson《The Miners’ Hymns》（銅管聖詠調性清楚、結尾 hope，判暖）、Ben Frost《1899》（自述 kinetic and noisy、打擊為重，判躁）、Artur Kordas《Darkwood》（聲音零來源，thin）。留 Ben Frost《Dark: Cycle 3》《Fortitude III》《Broken Spectre》（池中《Dark》前兩季與《Fortitude》落頹靡；Fortitude 的 unsettling 是整體配樂評語）。
