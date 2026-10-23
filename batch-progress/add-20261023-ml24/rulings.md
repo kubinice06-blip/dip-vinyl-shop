@@ -71,3 +71,9 @@
 ## 主線試聽、三軸（條號 15911–15912）
 - **15911** 試聽 11/11 ready：10 張 meta 自動配對曲目全中；Flaming Lips《American Head》搜尋 API 對盤名回空，改走藝人目錄 lookup（artistId 156604）人工配 us 1516243970（13 軌、2020-09-11）。Schnauss《A Long Way to Fall》與 Hammock《Oblivion Hymns》Apple 條目為 Deluxe Edition，首軌即原盤首軌，照用（不是 2019 重錄的《Rebound》）。封面 CAA front-500 live-check 11/11 HTTP 200。
 - **15912** 三軸：Mercury Rev《Bobbie Gentry's the Delta Sweete Revisited》meta 以彎撇號盤名查 Last.fm 得 listeners 34、obscurity 5（失真），主線改以直撇號重查 worker `/album-rating` 得 listeners 37,065、obscurity 3，meta.json 改寫成重查值。其餘 10 張照 worker 機器值（classic 3、obscurity 2–4）。
+
+## 寫作層（writer-2）
+- **15906** 交件 `desc-tools/batches/output/add-20261023-ml24-out-2.json`（5 張，key 逐字同序）。字數：Peaking Lights 222｜Acetone 223｜Hammock 208｜Casino Versus Japan 152（thin）｜Manual 188；全部一稿入帶，無超標、無回頭刪節。首句照抄 hook 5/5；第二句照鉤子層 15895 配表（「由」領句／主唱名字／「Hammock 是」／本名／國籍＋本名）。
+- **15907** 日期「日」後一字照 15896：以／辭／交；日期前一字三張互異（品／在／片），Casino、Manual 只寫年。Acetone 的遺作只寫逝世日與得年，不寫與發行相隔多久（發行日 2000／2001 歧義，研究 15874）。Casino 的 Hummer 廣告寫成「兩年後的夏天」標時序。
+- **15908** 媒體名與媒體榜單名次全數不寫（Acetone、Manual 的樂評寫成「樂評稱／樂評聽來」不具名）；無「據說／據傳」。Casino 的第二句不複述 hook 的「獨力寫彈錄」，改補發表名義與地下電子圈身分。
+- **15909** 自掃中文 4-gram（本檔＋writer-1 全部 hook；另掃 ml11 已上架兩檔）：本批內 3 次以上 0 條；初稿 2 次殘片「發表作品」（Casino×Manual）、「在年月日」（Acetone×Hammock）已拆。writer-1 out 交件時尚未存在，跨檔合掃留給主線收件時跑。腳本：`qa-batch out` 本檔 5 張 152–223、thin ≤180 ✓（張數 5 vs 11 為 out-1 未交）；`qa-check-research` 標記 0；`fix-spacing` 待補 0。輔助腳本在 scratchpad `wr-ml24-2/`。
