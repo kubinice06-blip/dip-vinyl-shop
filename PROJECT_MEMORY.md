@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 5 輪 ml24／md21：暖 dream folk＋暖 ambient 11＋goth 慢盤／hauntology 34 張上線，落格 11/11、33/34
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 5 輪，本工作階段負責 ml24、md21（評分照 10-23 體感標準）。ml24（`add-20261023-ml24`，恍惚：暖 dream folk／slowcore＋ml30 暖 ambient 厚墊）：Mercury Rev《Delta Sweete Revisited》、Flaming Lips《American Head》、Jim James《Regions…》、Connan Mockasin《Jassbusters》、Matthew E. White《Big Inner》、Schnauss《A Long Way to Fall》、Peaking Lights、Acetone《York Blvd.》、Hammock《Oblivion Hymns》、Casino Versus Japan、Manual《Bajamar》。md21（`add-20261023-md21`，頹靡：goth／coldwave 慢盤二線＋md15 hauntology／witch house）：The Caretaker ×6、Leyland Kirby ×2、The Stranger ×2、Cranes《Future Songs》、Lowlife、Kirlian Camera《Still Air》、Sopor Aeternus ×2、Lacrimosa ×2、Dark Sanctuary ×2、Trance to the Sun ×2、Esben and the Witch、Trees of Eternity、Ghost Box 系（MVAL、Pye Corner Audio）、oOoOO、Holy Other 等。
+- **策展→研究汰換**：ml24 策展兩輪 24、主線汰 2、研究汰 11（原聲判輕、推進判躁、陰冷）→ 11，場景見底，ml24／ml30 不再派。md21 策展 48、主線汰 4（Demdike 兩張 EP、Lebanon Hanover 貼邊、Basinski 色溫先例）、研究汰 21（有鼓推進、乾淨室內樂、暖）、補 10 → 34；md15 併入。
+- **主線審稿**：ml24 改 6 處（樂評轉述改直述）；md21 改 3 處（單源銷量刪、錯字、單源樂評比較刪）；事實層未動。
+- **上線**：card_catalog 11＋34、KV 11＋34 鍵回讀逐字一致、試聽 11＋23 ready（American Head、Dark Sanctuary、Rabelais、Fragments of Nothing 人工配；V/Vm 系 Apple 無條目 11 張）、seed +45、published gate 兩批 0 error；封面 CAA 45，live-check 全 200。上線前對 origin 各分支與 main 的 seed 去重 0 撞。Mercury Rev 盤名彎撇號致 Last.fm 查錯，直撇號重查改正。
+- **情緒評分**：`score-ml24`、`score-md21`。**ml24 落恍惚 11/11（100%）**；**md21 落頹靡 33/34（97%）**，出格 The Caretaker《Persistent Repetition of Phrases》舞廳旋律清楚判暖落恍惚。八格：恍惚 1,163、頹靡 1,368、冷冽 1,334。
+- **類型樹**：`genre-l3-artist-map.json` 補 5 張（Jim James、Matthew E. White、Acetone、Love Is Colder Than Death、Pye Corner Audio），45/45 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 27 個掛名列在兩批 rulings.md 末尾（ml24 6、md21 21）。
+- **主要檔案**：`batch-progress/add-20261023-{ml24,md21}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml24,md21}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml24,md21}/`、`onboarding-manifest-add-20261023-{ml24,md21}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml24,md21}*`、seed／試聽地圖／card-preview-status／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 45/45；build-card-moods 錨點 104/104。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 4 輪 ml20／mc31：東亞 R&B／dream pop 17＋AACM／loft 自由爵士 33 張上線，落格 17/17、33/33
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」，本工作階段負責 ml20、mc31（體感標準）。ml20（`add-20261023-ml20`，恍惚：台灣／華語 R&B＋ml21 韓國 R&B／indie＋ml29 華語／日本 dream pop）：LINION 2、方大同 2、Hoody 2、OFFONOFF、죠지、SUMIN、問題總部、DSPS、The fin.、pasteboard、岡田拓郎、森は生きている、声音玩具、cero。mc31（`add-20261023-mc31`，冷冽：AACM／loft／美國自由爵士小編制＋mc14）：Braxton 5、Roscoe Mitchell 4、AEC 3、Air 3、Revolutionary Ensemble 3、Carter & Bradford 3、Oliver Lake 2、Abrams 2、Sam Rivers 2、Jimmy Lyons 2、Leroy Jenkins、WSQ、Marion Brown《Porto Novo》、Chick Corea《Is》。

@@ -128,3 +128,11 @@
   - `desc2:The Stranger|Watching Dead Empires in Decay`：刪「被拿來和《Eraserhead》以及早坂文雄替黑澤明寫的配樂相比」（單源樂評比較；227→194）。
 - **18356** 其餘 31 張逐張審過未改字。保留項：Caretaker／Kirby 本人自述（下載數、「陰鬱的論文」「溫暖許多」）屬當事人說法、以「他說／他自稱」引出；Bleaklow「多年以後被看成 Raime 的前身」為 thin 卡唯一的地位句，刪了會掉到 thin 下限，保留被動式不具名。事實抽查（Hyperium 1991 紐倫堡創立、Fassbinder《愛比死更冷》1969、Aleah Stanbridge 2016-04-18 病逝、Take Care 收益捐 Mind）與研究稿一致。
 - **18357** 三軸：機器值照用（classic 3、obscurity 2–5）；obscurity 5 的 12 張 listeners 147–2,400，未觸遺珠門檻（不自行判 pearl）。Kirlian Camera《Still Air [Aria Immobile]》Last.fm 盤名方括號拆分，listeners 206 偏低（直接查《Still Air》為 1,013），obscurity 仍為 5，不覆寫。試聽 23 ready／11 unavailable（The Caretaker、Leyland Kirby、The Stranger、Trance to the Sun《Ghost Forest》、Sopor《Spiral Traveller》、MVAL 等 V/Vm、HAFTW、Tess、Apocalyptic Vision 系 Apple 無條目；Dark Sanctuary《Les Mémoires blessées》Apple 只有同名單曲）；人工配 3 張（Dark Sanctuary 2000、Rabelais、Fragments of Nothing，曲目逐首核對）。封面 CAA front-500 live-check 34/34 HTTP 200。
+
+## 上線與評分（2026-10-23，主線）（條號 18358–18360）
+- **18358**：上線 34 張：card_catalog 34／34、KV 34 鍵回讀逐字一致（stamp 202610230930）、試聽 23 ready／11 unavailable、seed +34、published gate 0 error（34 warning 皆 upc 盡力而為）。封面 CAA 34，live-check 全 200。上線前對 origin 各 `claude/*` 分支與 main 的 seed 去重 0 撞。
+- **18359**：類型樹 34／34 落位（warm 標籤 34 張；`genre-l3-artist-map.json` 補 Love Is Colder Than Death《Teignmouth》→ electronic/ambient/dark-ambient、Pye Corner Audio《Stasis》→ electronic/synth/synthwave）；抽卡封面重建。
+- **18360**：**落格率 33/34＝97%**（`batch-progress/mood-axes/score-md21/`，照 10-23 體感標準評分；conf mid 23、low 11）。出格 1 張：The Caretaker《Persistent Repetition of Phrases》z +0.2 落恍惚（舞廳旋律短句清楚＝往暖；Kirby 自述「溫暖許多」，研究層已列輕度存疑）。貼邊：Pinkcourtesyphone y 0.6、Esben and the Witch x 2.8。**產量**：策展 48＋補 11、主線汰 4、研究汰 21 → 34。goth／darkwave 二線研究層一查多半有鼓推進或是乾淨室內樂；能穩落頹靡的是無鼓的 hauntology（Caretaker 失憶系列、Kirby、The Stranger）、無鼓 ethereal（Kirlian《Still Air》、Dark Sanctuary、Lacrimosa《Angst》）與 gothic doom 慢盤。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Lowlife、Kirlian Camera、The Caretaker、Leyland Kirby、Sopor Aeternus & The Ensemble of Shadows、Love Is Colder Than Death、Lacrimosa、Trance to the Sun、The Stranger、Black Tape for a Blue Girl、Dark Sanctuary、Esben and the Witch、Trees of Eternity、Jon Collin & Demdike Stare、Mount Vernon Arts Lab、Pye Corner Audio、Akira Rabelais、oOoOO、Pinkcourtesyphone、Holy Other、Mike VanPortfleet（21 個掛名）。
