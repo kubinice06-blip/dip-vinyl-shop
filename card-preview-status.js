@@ -3343,4 +3343,5 @@ window.DipPreviewStatus = Object.freeze({
   "dead neanderthals|life": "unavailable",
   "dead neanderthals|craters": "unavailable",
   "mohn|mohn": "unavailable",
+  "dave hollister|ghetto hymns": "unavailable",
 });
