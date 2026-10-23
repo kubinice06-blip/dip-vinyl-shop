@@ -69,3 +69,13 @@
 - **20708**　Butcher／van der Schyff《Points, Snags And Windings》：Blue Wave Studio（溫哥華）錄音室，日期「7/2/00」讀法不明故只寫 2000 年；僅 6 條 facts（來源單薄）。moodGuess 存疑：63 分鐘、多首 6–9 分鐘，非短曲急停；打擊是否碎拍未驗。
 - **20709**　McPhee《Tenor》：維基標「live solo」，Soundohm 描述為晚飯後在大提琴家農舍的即興 recital（非正式、非音樂會），判為私人場合現場獨奏。Discogs 另列 Ntshoko（鼓）與 Snyder（合成器、人聲），與維基「唯一人員 McPhee」相左，疑為 Discogs 誤植，建議核對封底。moodGuess 存疑：〈Knox〉〈Good-Bye Tom B.〉抒情有輪廓、〈Tenor〉23 分鐘長篇無主題。
 - **20710**　預留未用。本組 WebSearch 用 3 次（McPhee Tenor、Brötzmann No Nothing、Brötzmann Solo）；AllMusic、Discogs 網頁、JMA、Squidco 皆 403，Wikipedia 專輯條目多不存在，改用 Discogs／MB API、Butcher 官網、Soundohm、de.wikipedia。
+
+## 主線：研究後汰換（不佔條號）
+- 研究層聲音／錄音場合與 moodGuess 不符，直接汰 17（卡單、研究稿、`pick.json` 同步移除，45 → 28）：
+  - 現場或音樂會（mc28 先例）：Braxton／Larner《11 Compositions (Duo) 1995》（Crowell Concert Hall 音樂會，維基列現場）、Parker／Lewis《From Saxophone & Trombone》（維基 live duo、會館殘響長）、Mitchell《Sound Songs》（三首現場約三成）、Butcher／Minton《Apples of Gomorrah》（混 live 素材、樂評「出乎意料地浪漫」）、McPhee《Tenor》（農舍私人場合現場、抒情段）。
+  - 留白安靜／克制（判靜，mc31 留白型 x 3.0–3.1 已是下緣）：Tchicai & Parker《Clapham Duos》（內省愉快）、Mitchell／Aoki《First Look》（很少刺耳）、Mitchell《Duets with Sorey》（柔和稀疏）、McPhee & Heward《Voices》（飄、空靈、氣音與水碗）、Rothenberg《Intervals》（尺八本曲式靜默、〈Melody Won〉）、Perelman／Shipp《The Art of the Duet》《Callas》（克制、安靜、歌唱性）、Smith／Golia／Turetzky《Prataksis》（「安靜的傑作」、杜杜克與英國管偏暖）。
+  - 疊錄／低音管厚（判重）：Brötzmann《Solo - Right as Rain》（低音薩克斯風＋低音單簧管）、Butcher《Invisible Ear》（八支薩克斯風疊錄＋合成器）。
+  - 旋律／標準曲（判暖）：Braxton《Alto Saxophone Improvisations 1979》（三首標準曲約四分之一）、Vandermark et al.《Collected Fiction》（bop 與作曲主題）。
+- 候補 9 都是同型風險（Lacy 主題輪廓、留白、現場、鼓推進、低音厚），不補位；照實上架 28。
+- 留下但存疑、交評分裁定：Stevens & Parker《Corner to Corner》（整套鼓組）、Parker／Rothenberg《Monkey Puzzle》（低音單簧管）、Parker／Shipp《Abbey Road Duos》（留白）、Parker／McPhee《Chicago Tenor Duets》（線性抒情）、Gustafsson《Parrot Fish Eye》（前 8 首對打擊、後 5 首三重奏，推翻策展「無鼓二重奏」）、Rothenberg《Trespass》（含 Zorn 二重奏，推翻「純獨奏＋尺八」）、Rothenberg《World of Odd Harmonics》（全單簧管）、Perelman／Mahall《Kindred Spirits》（低音單簧管，推翻策展「雙簧管」）、《Corpo》（動態大）。
+- 研究推翻照研究稿：Stevens 1994 辭世距錄音約一年多（非兩年）、Monkey Puzzle 無雙簧管、Abbey Road Duos 第二組實為高音薩克斯風組曲、Incision 年份 1981（維基 1980 不採）；McPhee《Voices》MB 無日期 flag 隨汰換結案。
