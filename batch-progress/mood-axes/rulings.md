@@ -179,3 +179,12 @@
 - **工單**（`score-md34/select.mjs <批>`，仿 score-ts2；`landing.mjs` 算落格率）：chunk-md3 45、chunk-md4 43，各一支 Opus 照 `score500/BRIEF.md`（含 10-22 兩條新規則）評，不上網。merge 88/88、0 錯誤；conf high 6／mid 56／low 26。
 - **落格**：md3 44/45（98%，Ulver《Shadows of the Sun》y +0.3 落平靜）、md4 39/43（91%：Tirzah、How to Dress Well、sogumm 色溫判微溫落恍惚；The Bug vs Earth 兇＋拍判躁落亢奮）。
 - **全池**：`build-priors.mjs` 來源層加 `score-md34/scored-md34.json`（與 md1／md2 的 `score-md` 並列）；併 main 後 `build-card-moods.mjs` gate 綠 19,726/19,726、錨點 104/104、店主改判 256。八格 放鬆 4,985、平靜 1,333、恍惚 784、頹靡 1,119、雀躍 5,962、冷冽 874、沸騰 2,004、亢奮 2,665。
+
+## 2026-10-23｜酸冷重判：「酸」＝冷＋硬，157 張改判
+
+- **店主**：Marion Brown《Geechee Recollections》落放鬆（2.6, −0.4, +0.6）：「這種自由爵士類的、或是現代音樂類的（比如 Ligeti）都很酸冷難聽又硬蕊，絕對不會是輕鬆，再優化現在的標準」。
+- **規則**（寫進 `score500/BRIEF.md` Z 軸）：不和諧、無調性、自由即興、噪音質地、刺耳張力 → 色溫一律 ≤ −1.2；有鼓／律動在推、或音塊密集刺耳有張力（Ligeti、Penderecki）→ 能量 ≥ 3.1（自由爵士／no wave／harsh 3.2）；質地不動。溫暖的靈性／調式爵士、後咆勃、ECM 抒情、cool jazz、極簡、新古典與配樂不算酸；同一張酸暖並存，酸優先。
+- **範圍**：標籤（子曲風 jazz/free/avant、free-improv、classical/contemporary/avant、electronic/noise、no-wave；Last.fm free jazz／avant-garde jazz／free improvisation／noise／contemporary classical／modern classical）或評語有酸味、且目前落暖格或靜格的非錨點卡，共 1,208 張、8 份；標籤本身不可靠（Last.fm 把 Köln Concert、Jimmy Giuffre 3 也標 free jazz），所以逐張判，8 支代理（`sour-rejudge/out/`）。
+- **結果**：判酸 200、主線退回 5（Pharoah《Karma》《Elevation》以吟唱與律動為主、酸只是爆發段；光束夜三張沿用 10-22 能量軸裁定留靜）；實際改值 157：雀躍→冷冽 23、平靜→冷冽 20、沸騰→亢奮 37、頹靡→亢奮 43、放鬆→冷冽 2（含 Geechee）、放鬆→平靜 2、同格只調值 30。八格 冷冽 936→978、亢奮 2,672→2,756、沸騰 2,004→1,967、雀躍 5,962→5,939、放鬆 4,990→4,986、頹靡 1,314→1,264；錨點 104/104。
+- **判例**：Penderecki《Threnody》、Galás、Haas、Saunders、Kronos《Black Angels》依「音塊密集刺耳＝躁」進亢奮（10-22 曾留頹靡，店主 Ligeti 一句改了這條）；Throbbing Gristle 四張有脈衝 → 亢奮；Sunn O)))、Khanate、Earth、Boris《Altar》維持頹靡（店主 10-22 裁定，drone 不算推力）；Feldman、Kurtág、Bill Dixon、Derek Bailey 是「安靜的酸」：冷但靜（平靜）；Ornette 全系列進冷冽；Alice Coltrane《Journey in Satchidananda》、Lonnie Liston Smith、Köln Concert 不酸不動。
+- **沒把握、留給店主翻案的**：Tim Buckley《Starsailor》→冷冽；Jonny Greenwood《There Will Be Blood》→冷冽（配樂但 Penderecki 式）；Fennesz《Hotel Paral.lel》→亢奮；Sun Ra《Astro Black》→亢奮；Boredoms《Super ae》、Melt-Banana《Fetch》、Fuck Buttons《Tarot Sport》判不酸（旋律大調）。
