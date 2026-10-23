@@ -97,9 +97,10 @@
 - 其餘 13 張逐張審過，未改字。AIR 的英國專輯下載榜第 2 名是官方榜，不屬媒體年終榜，保留。qa-batch out、fix-spacing 重跑全過。
 
 ## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-ml10/`）
-- 上線 19；**落恍惚 18/19＝95%**。出格 1：Lewis Taylor《NUMB》2.8/1.1/−0.2 色溫判冷落頹靡（評分理由「吉他偏重、情緒陰鬱」；研究稿已寫歌詞談憂鬱）——前例「研究稿出現陰冷字眼的落頹靡」再次應驗。
-- 評分 conf：mid 11、low 8。x 全在 1.3–2.8、y 0.5–1.3；Les McCann、Jardín y 0.5–0.6 貼邊、SAULT《AIR》z 0.2 貼邊但仍落格。
-- 產量教訓：古典 psychedelic soul 與 spiritual jazz 池中多判輕或躁，本批主力是當代 cosmic soul（Muldrow、Shafiq、Matt Martians）與 psych-soul 復興；策展 32、主線汰 3、研究汰 10 → 19。
+- 第一次評分照舊 BRIEF（存 `out-pre-felt/`）落恍惚 18/19；合併 main 時店主已改「能量＝體感、色溫＝聲響溫度＋旋律清楚度」並註明新卡照新標準評，故整批重評（`out/`），以重評為準。
+- 上線 19；**落恍惚 16/19＝84%**。出格 3 張全落頹靡：Alice Coltrane《Lord of Lords》2.3/1.2/−0.3、Miguel Atwood-Ferguson《Les Jardins Mystiques Vol.1》2.2/0.9/−0.5（新色溫規則：靈性即興、旋律不明往冷）；Lewis Taylor《NUMB》2.9/1.3/−0.4（失真厚牆、陰鬱）。
+- 教訓：**新標準下 spiritual jazz 不再適合恍惚線**（旋律不明一律往冷）；ml14 應視為頹靡候選而不是恍惚。評分 conf：mid 12、low 7。
+- 產量：古典 psychedelic soul 與 spiritual jazz 池中多判輕，主力是當代 cosmic soul（Muldrow、Shafiq、Matt Martians）與 psych-soul 復興；策展 32、主線汰 3、研究汰 10 → 19。
 
 ## 本批新藝人（無介紹，未切；並行時子工作階段不切）
 Matt Martians、Salami Rose Joe Louis、Gabriel Garzón-Montano、Monophonics、Adrian Quesada、Meshell Ndegeocello、Miguel Atwood-Ferguson、Les McCann（8 位；其餘藝人已有介紹或已在排隊）。

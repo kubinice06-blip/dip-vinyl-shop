@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 4 輪 ml10／mc15：cosmic soul／psych soul 19＋冷浪潮／輕 EBM／冷快電子 19 張上線，落格 16/19、18/19
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 4 輪，本工作階段負責 ml10、mc15。ml10（`add-20261023-ml10`，恍惚：psychedelic／cosmic soul＋ml14 spiritual jazz）：Georgia Anne Muldrow《Vweto》《VWETO II》、Shafiq Husayn《The Loop》、Matt Martians 2、Salami Rose Joe Louis、Gabriel Garzón-Montano《Jardín》、Monophonics《Sage Motel》、Adrian Quesada《Boleros psicodélicos》I／II、Lewis Taylor《Lewis II》《NUMB》、Meshell Ndegeocello《Comfort Woman》《Bitter》、SAULT《AIR》《Acts of Faith》、Alice Coltrane《Lord of Lords》、Miguel Atwood-Ferguson《Les Jardins Mystiques Vol.1》、Les McCann《Invitation to Openness》。mc15（`add-20261023-mc15`，冷冽：法比冷浪潮／輕 EBM＋mc24 dnb＋mc18 冷快電子）：The Neon Judgement、Snowy Red、The Weathermen、Moskwa TV、And One 2、Welle: Erdball 3、Marie Davidson、Essaie pas、Komputer 2、Gábor Lázár 3、Mark Fell《Manitutshu》、Mark Fell & Gábor Lázár、UnderViewer。兩批都挖不到 45，照實上架。
+- **策展→研究汰換**：ml10 策展 32、主線汰 3（池中同人判輕）、研究汰 10（funk／boom-bap 推進、bop、EP、乾製作、breakbeat）；mc15 策展 28、主線汰 1、研究汰 8（glitch 無鼓點、dubstep 低音、真鼓樂團、翻唱盤）。dnb、footwork 池中判重或判暖 0 張，mc24、mc18 併入 mc15；ml14 併入 ml10。
+- **主線審稿**：mc15 改 3 處、ml10 改 7 處，全是樂評轉述改直述聲音、資料平台標籤改寫、guarded 誤譯；事實層未動。
+- **上線**：card_catalog 19＋19、KV 38 鍵回讀逐字一致、試聽 16＋19 ready（人工配 3＋4；Welle: Erdball 3 張 Apple 無）、seed +38、published gate 兩批 0 error；封面 CAA 36、Apple 2（Manitutshu 無 CAA、SAULT《AIR》CAA 500），live-check 38/38。上線前對 origin 各分支 seed 去重 0 撞。類型樹 38/38 落位（`genre-l3-artist-map.json` 補 4 位）。
+- **情緒評分**：`score-ml10`、`score-mc15`。合併 main 時店主已改「能量＝體感、色溫加看旋律清楚度」，兩批照新標準重評（舊評分存 `out-pre-felt/`）。**ml10 落恍惚 16/19（84%）**，出格 3 張落頹靡：Alice Coltrane、Atwood-Ferguson（spiritual jazz 旋律不明往冷）、Lewis Taylor《NUMB》；**mc15 落冷冽 18/19（95%）**，出格 The Neon Judgement《Mafu Cage》（吉他 y 0.5 判重落亢奮）。八格（併 main 體感重判後）：恍惚 1,126、冷冽 1,287、頹靡 1,279。
+- **藝人介紹**：未切（並行規矩）；新藝人 20 位列在兩批 rulings.md 末尾（ml10 8、mc15 12）。
+- **主要檔案**：`batch-progress/add-20261023-{ml10,mc15}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml10,mc15}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml10,mc15}/`、`onboarding-manifest-add-20261023-{ml10,mc15}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml10,mc15}-*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/mood/*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`。
+- **驗證**：prepare／published gate 兩批 0 error；KV 回讀 38/38；qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；build-card-moods 錨點 104/104、seed 20,535。
+
 ### 2026-10-23｜dip-vinyl-shop｜體感標準全池重判：20,446 張逐張看，1,343 張改判
 
 - **改動**：店主「用新標準全部重判（躁靜看體感、冷暖加看旋律清楚度）」。全池切 52 份、52 支代理照 `batch-progress/mood-axes/felt-rejudge/BRIEF.md` 判，1,343 張寫進 `overrides.json`（累計 1,795）。八格：放鬆 5,141、平靜 1,018、恍惚 1,110、頹靡 1,276、雀躍 5,917、冷冽 1,269、沸騰 1,921、亢奮 2,845。主線撤回 Khanate 4 張的能量（doom 比照 Sunn O))) 留靜）；`score500/BRIEF.md` 能量、色溫改成體感＋旋律標準，新卡照新標準評。

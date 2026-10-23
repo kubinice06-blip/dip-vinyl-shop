@@ -90,9 +90,10 @@
 - 其餘 16 張逐張審過，未改字。qa-batch out 重跑全過。
 
 ## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-mc15/`）
-- 上線 19；**落冷冽 18/19＝95%**。出格 1：Komputer《Synthetik》2.6/−0.6/−1.0 能量判靜落平靜（評分代理自承不熟此盤、受子曲風 ambient 標籤牽引；研究稿說回到首張 electro 聲音，主線不改分，照實記）。
-- 貼邊仍落格：The Neon Judgement《Mafu Cage》y 0.4、Snowy Red《The Right to Die》x 3.0、UnderViewer x 3.0。評分 conf：mid 7、low 12。
-- 產量教訓：mc15 主場景（比利時 coldwave／new beat／輕 EBM）正規全長少、二線多厚；mc24 dnb、mc18 footwork 池中判重或判暖，0 張。冷快電子（Gábor Lázár、Mark Fell）研究層汰 3（無鼓點、dubstep 低音、無資料），留下的全落格。策展 28、主線汰 1、研究汰 8 → 19。
+- 第一次評分照舊 BRIEF（存 `out-pre-felt/`）落冷冽 18/19（Komputer《Synthetik》被 ambient 子曲風標籤牽引判靜）；合併 main 時店主已改「能量＝體感、色溫＝聲響溫度＋旋律清楚度」，整批照新標準重評（`out/`，派工註明子曲風標籤可能不準），以重評為準。
+- 上線 19；**落冷冽 18/19＝95%**。出格 1：The Neon Judgement《Mafu Cage》3.7/0.5/−1.0，EBM 鼓機加後龐克吉他，y 剛好 0.5 判重落亢奮——「帶吉他判重」前例再次應驗。
+- 貼邊仍落格：Mark Fell《Manitutshu》x 3.1、UnderViewer x 3.2。評分 conf：mid 12、low 7。
+- 產量：mc15 主場景（比利時 coldwave／new beat／輕 EBM）正規全長少、二線多厚；mc24 dnb、mc18 footwork 池中判重或判暖，0 張。冷快電子（Gábor Lázár、Mark Fell）研究層汰 3 後全落格。策展 28、主線汰 1、研究汰 8 → 19。
 
 ## 本批新藝人（無介紹，未切；並行時子工作階段不切）
 The Neon Judgement、Snowy Red、The Weathermen、Moskwa TV、And One、Welle: Erdball、Marie Davidson、Essaie pas、Komputer、Gábor Lázár、Mark Fell、UnderViewer（12 位；Mark Fell & Gábor Lázár 合作盤掛名另計）。

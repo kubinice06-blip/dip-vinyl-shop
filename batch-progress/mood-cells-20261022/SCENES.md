@@ -40,7 +40,7 @@
 | 16 | ml19 | city pop／AOR 濕的慢歌 ＋ ml28 70s soft rock 慢而濕 | 派→情緒薄格 md14、ml19（第 4 輪） |
 | 17 | mc26 | synthwave 冷而薄 ＋ mc19 東歐／蘇聯 synth | 派→情緒薄格 mc26、md11（第 4 輪） |
 | 18 | md11 | 工業 old-school 慢盤／ritual ＋ md12 neoclassical darkwave | 派→情緒薄格 mc26、md11（第 4 輪） |
-| 19 | ml10 | psychedelic soul／cosmic soul ＋ ml14 spiritual jazz 慢而厚 | ✅ 上線 19／落格 18 |
+| 19 | ml10 | psychedelic soul／cosmic soul ＋ ml14 spiritual jazz 慢而厚 | ✅ 上線 19／落格 16 |
 | 20 | mc15 | 法比冷浪潮／new beat、EBM 輕的那半 ＋ mc24 drum & bass 冷而薄 ＋ mc18 footwork／juke 冷盤 | ✅ 上線 19／落格 18 |
 | 21 | ml20 | 台灣／華語 R&B 與 neo-soul ＋ ml21 韓國 R&B／indie 恍惚 ＋ ml29 華語／日本 dream pop 二線 |  |
 | 22 | md21 | goth rock／coldwave 慢盤二線 ＋ md15 witch house／hauntology |  |
@@ -135,11 +135,11 @@
 | ml7 | 14481 | 70s 慢板靈魂：Philly／Chicago／Memphis 弦樂慢盤二線 | 併入 ml6（Barry White 系、Philly 二線已收） |
 | ml8 | 14561 | alt R&B 2010s–20s（霧而暖） | |
 | ml9 | 14641 | 暖 dub／roots dub 二線（dt1 之外） | ✅ 上線 33／落格 33（併 ml25；策展 71、主線汰 20、研究汰 18） |
-| ml10 | 14721 | psychedelic soul／cosmic soul（Shuggie Otis、Terry Callier 一類） | ✅ 上線 19／落格 18（併 ml14；策展 32、主線汰 3、研究汰 10；古典 psych soul 與 spiritual jazz 池中判輕，主力改當代 cosmic soul） |
+| ml10 | 14721 | psychedelic soul／cosmic soul（Shuggie Otis、Terry Callier 一類） | ✅ 上線 19／落格 16（併 ml14；策展 32、主線汰 3、研究汰 10；古典 psych soul 與 spiritual jazz 池中判輕，主力改當代 cosmic soul） |
 | ml11 | 14801 | chillwave／hypnagogic pop（Toro y Moi、Washed Out、Neon Indian、Small Black） | ✅ 上線 26／落格 23（併 ml12；策展 54、主線汰 16、研究汰 11、EP 汰 1；出格 3 張色溫判冷） |
 | ml12 | 14881 | bedroom pop／dream pop 2010s–20s 濕的那一路 | 併入 ml11（Papercuts、Vansire、Men I Trust 早期已收；多判躁或輕，不再單獨派） |
 | ml13 | 14961 | 暖而慢的迷幻搖滾（Kikagaku Moyo 系、不兇的 desert／stoner 慢盤） | |
-| ml14 | 15041 | spiritual jazz 慢而厚（Pharoah 慢盤、Alice Coltrane、Lonnie Liston Smith） | 併入 ml10（池中 spiritual jazz 多判輕；收 3 張，不再單獨派） |
+| ml14 | 15041 | spiritual jazz 慢而厚（Pharoah 慢盤、Alice Coltrane、Lonnie Liston Smith） | 併入 ml10（池中 spiritual jazz 多判輕；10-23 新色溫規則下旋律不明往冷，收的 2 張落頹靡；恍惚線不再派） |
 | ml15 | 15121 | 暖 trip-hop／downtempo（Morcheeba、Thievery Corporation、Nightmares on Wax 的厚盤） | ✅ 上線 28／落格 28（併 ml23；策展 38、主線汰 3、研究汰 7；核心已在池、lounge 判輕） |
 | ml16 | 15201 | jazz-rap／boom bap 暖盤（Pete Rock、Digable Planets 系） | ✅ 上線 27／落格 25（併 ml17、ml18；策展 38、研究汰 11；G-funk 0） |
 | ml17 | 15281 | G-funk／西岸慢盤（低頻厚、慢、暖） | 併入 ml16（池中 G-funk 判躁或判輕，挖不到；不再單獨派） |
