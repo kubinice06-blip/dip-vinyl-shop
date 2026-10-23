@@ -13,3 +13,19 @@
 - 邊緣張交研究層查聲音：Alice Coltrane《Lord of Lords》x（同系《Universal Consciousness》x 3.0）；Salami Rose Joe Louis z；Lewis Taylor《Lewis II》z（首張 z 0.3）；SAULT《AIIR》正規性與《Acts of Faith》y（《Untitled (God)》判輕）；Curtis Harding《Face Your Fear》中速曲。
 - `genres`：靈魂類 `soul`、spiritual jazz `jazz` 起頭。
 - 研究層每支 WebSearch ≤3；facts 必含 2–3 條聲音事實；與 moodGuess 不符的標「moodGuess 存疑」——**特別是乾淨明亮的製作、funk 推進、自由即興嘶吼段（10-23 酸冷規則）、色溫偏太空冷**。
+
+## 研究 a 組
+- **14721**（moodGuess 存疑・高）Vweto III：Bandcamp／Grammy／RA 描述為 off-kilter、urgent funk、boom-bap、吉他迷幻放克，曲多 2–4 分半，靜度恐不足；建議主線三軸重估或汰換。暖與重（粗底鼓、fuzz 低音、顆粒混音）成立。
+- **14722**（moodGuess 存疑・高）Dudley Perkins《Holy Smokes》：PopMatters 稱拍子與合成器 extremely danceable、P-funk、24 首、偏執；與「慢而糊低保真鍵盤」不符，建議重審或汰換。
+- **14723** Vweto 年份：Bandcamp 2010-12-14，MB 2011-01-07；卡單維持 2011，簡介避免精確日期。標題語源 Ki-Kongo（Grammy、Bandcamp）與 Swahili（Bandcamp Daily、Bandcamp II 頁）並陳。
+- **14724** VWETO II：低頻 G-funk、放克／浩室混合，鍵盤為鋼琴與搖晃合成器、未見 Rhodes；輕度存疑，整體偏暖偏重屬實。Vweto（第一張）聲音僅官方文案可考，鼓速無證據、moodGuess 輕度存疑。
+- **14725** Shafiq Husayn《The Loop》：曲數各源不同（16／17），簡介不寫曲數；發行 3/28 與 3/29 並陳；label 維持 Nature Sounds（Eglo 合發）。Drum Chord Theory：大致成立，鼓取樣「有力」略存疑。
+- 推翻策展層：0 處（年份、廠牌、盤名皆未推翻）。
+
+## 研究 c 組
+- 14741：c 組 6 張全數核對 MB rg 與 Bandcamp／維基，年份、廠牌皆未推翻。SAULT 卡單盤名 AIR 正確；SCENES 提的《AIIR》是 2022-11 另一張 EP，不是本卡。
+- 14742：Curtis Harding《Face Your Fear》moodGuess 明顯存疑（〈On and On〉節奏明快、〈Need Your Love〉有搖滾底子、整體「響亮而興奮」，x 恐 ≥2.8），建議主線汰換或交上線評分裁定。
+- 14743：Lewis Taylor《Lewis II》發行日兩源不同（維基 2000-08-28、MB 2000-09-25），facts 只寫 2000 年；錄音與演奏者名單查無，status thin；z 與 y 存疑（鼓機 groove、較俐落的 R&B 律動）。
+- 14744：SAULT《AIR》無鼓無任何一篇樂評明寫，facts 不寫「無鼓」；銅管響亮占主導、高處偏稀薄，與預估「暖、糊成一片」不全合，z／y 略存疑。
+- 14745：Quesada 兩集：策展層的 Farfisa 查無來源，未入 facts；第二集聲音事實少（無正式樂評）status thin，速度與鼓未證實。
+- 14746：Ndegeocello《Comfort Woman》與預估大致相符（dub、精簡、情歌），未推翻。
