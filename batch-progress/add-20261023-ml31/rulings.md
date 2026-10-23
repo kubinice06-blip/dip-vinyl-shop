@@ -25,3 +25,21 @@
 - 16443：Mahalia《Sings the Gospel Right Out of the Church》moodGuess 存疑（高）：Discogs 各版演出人員欄只有 Mahalia（演唱／編曲）、製作 Irving Townsend、錄音 Jack Lattig／William E. Brittan、內頁 Leonard Feather，無任何管弦樂團、合唱團、指揮署名，策展層『合唱＋管風琴＋管弦厚』無來源；曲目多為 2–3 分傳統福音短曲，恐偏教堂小編制，建議排最後、優先汰換。status thin。
 - 16444：Lyreka 頁總長 24 分有誤（十首加總 35:17），發行月份單源不採。
 - 16445：WebSearch 全批用 3 次（Blackmagic 樂評 1、Power and the Glory 1、Great Songs／1969 盤 1）。
+
+## 研究 a 組
+- 16401：Sade《Lovers Rock》moodGuess 存疑（高）：WP 與 Rolling Stone／Spin／EW 引句一致說『稀疏、簡單到像 demo、airy、groove 輕、有些歌只剩原聲吉他、無薩克斯風』；dub 殘響／回音有來源，『低頻厚』無來源。判重風險高，y 可能 0.3–0.6。弦樂只有〈King of Sorrow〉一首。年份 2000 確認（WP 11-13、MB 11-03，僅差日）。
+- 16402：Anita Baker《Rhythm of Love》身分與 1994 確認；WP 人員表證實合成墊、弦樂墊、Synclavier、鼓機、合成貝斯，但夾真樂手與三首標準曲，多製作人故各曲質地不一。速度無來源，x 2.2 為推測（中度存疑）。WP 『首張非 Powell 製作自 1983』疑誤植，facts 不採。
+## 研究 b 組
+- 16411：Kem《Kemistry》moodGuess 存疑（高）：人員表是小號×2、次中音薩克斯風、真貝斯真鼓、打擊樂，無合成墊／弦樂來源，判輕。年份 2002 保留（MB 2002 自費版＋2003-02-25 Motown 重發），寫作層寫兩個年份。status thin（facts 8，聲音證據只有人員表）。
+- 16412：Kem《Album II》年份核定 2005-05-17（WP 兩條目＋MB 2005 兩筆一致）；MB 的 2004 US 一筆未能查證，不推翻。moodGuess 存疑（高）：AllMusic Kellman 明說『sparse arrangements』『bedroom whisper』，人員表僅一位合成器、無弦樂，判輕風險高。
+- 16413：b 組 AllMusic（403）、NPR（503）、BBC 未能開，引文皆 WP 轉述。
+## 研究 c 組
+- 16421：Kem《Intimacy: Album III》2010-08-17 確認；moodGuess 存疑（高）：『弦樂墊＋厚合成』無任何來源，WP 無人員表；唯一聲音證據為 Kellman 對前三張『smooth and quiet ballads』之總評。y 估 0.4–0.7。status thin。
+- 16422：Kem《Promise to Love》2014-08-25 確認；WP 兩條目序數矛盾（五 vs 四），facts 不寫序數。moodGuess 存疑（高）：Kellman『smooth and quiet ballads』，11 首曲長短（兩首不到 3 分），無弦樂／厚墊來源。status thin。
+- 16423：a/b/c 三組 WebSearch 未獨立計次（與 d/e 共用 4 次額度，全批共 4 次；a–c 的聲音證據主要來自 WP 人員表、Discogs API、MB API，WebFetch 補查）。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- **汰 3 張**：Sade《Lovers Rock》（研究 a：多家樂評一致寫稀疏、像 demo、airy、部分只剩原聲吉他，弦樂只一首，y 恐 0.3–0.6）、José James《Blackmagic》（研究 d：多製作人 beat 拼盤、有 groove 推進、鼓輕偏乾淨）、Mahalia Jackson《Sings the Gospel Right Out of the Church》（研究 e：各版人員欄無管弦、合唱、指揮署名，十首短曲，小編制風險高）。
+- **留 Kem 四張**：研究層找不到合成墊／弦樂墊的來源、樂評寫 sparse；但 Kem 是 quiet storm 正宗，BRIEF 質地 2026-10-22 規則 (3)「慢板靈魂／quiet storm 的厚低頻、溫熱混響」給 +0.6～+1.3，ml6 quiet storm 先例落格 38/40，照規則留；評分若判輕就照實記出格。
+- 留 Anita Baker《Rhythm of Love》（人員表證實合成墊、弦樂墊、Synclavier、合成貝斯）、Mahalia《The Power and the Glory》（Percy Faith 管弦＋合唱，樂評寫弦樂銅管淹沒）、《Great Songs of Love and Faith》（Johnny Williams 管弦＋合唱、慢）。
+- **定案 7 張**（a 1、b 2、c 2、d 1、e 1）。研究稿同步移除，`qa-batch research` 通過。場景見底：主場景 with strings 爵士 0 張可收，ml33 福音只剩 Mahalia 管弦盤；ml31 不再派，ml33 剩餘併 ml35。
