@@ -21,3 +21,15 @@
 - 20726：Vandermark《Collected Fiction》評述含兇猛、bop、很克制三種；moodGuess 存疑：x、z 皆可能偏離。錄音師 Bob Weston 僅出自搜尋摘要（AAJ 403），不寫；Discogs 第 2-7 與 2-11 同名〈Torus IV〉疑為登錄錯誤；「少量作曲主題」無來源。
 - 20727：Rothenberg／Feldman／Courvoisier《In Cahoots》錄音室（Studio Lulu）、全即興、無鼓無貝斯；細線室內樂，moodGuess 存疑：x 恐偏低。
 - 20728：Fuchs 出生資料只有 Squid's Ear 摘要一處（頁面 403），status 標 thin；本盤無直接評述，聲音為樂器與同人另一張 FMP 專輯評述的間接推論。
+
+## 研究 d 組（20711–20720）
+- **20711**　McPhee & Heward《Voices》：Discogs／Mode 官頁皆 2008（MB rg 無日期），年份照策展；錄音 2006-06-15/16 The Pines, Montreal，錄音室二重奏、非現場。moodGuess 存疑：樂評一致形容飄、空靈、克制、氣音與輕敲（卡林巴、水碗），僅第三段強力對話，躁度可能不到 x 3.0，屬稀疏留白型；請主線聽感評分，必要時汰換。薩克斯風種類 Mode 寫中音、Free Jazz Blog 寫高音，facts 採中音。
+- **20712**　Gustafsson《Parrot Fish Eye》：推翻策展 scene：前 8 首是對打擊樂（Zerang）二重奏、後 5 首與低音單簧管＋吉他／手風琴／打擊三重奏，並非無鼓純管樂二重奏；moodGuess 存疑（有打擊推進、音色層次多）。錄音室（Sparrow Sound, 1994-10）非現場。樂評原文全無，status thin。
+- **20713**　Gustafsson《Impropositions》：1996-06 斯德哥爾摩 Radiohuset Studio 2 雙軌錄音，非現場；樂器含 alto flute／flageolet／fluteophone，並非全薩克斯風尖嘯。不得寫『無疊錄』（記事只寫 20-bit two track）。樂評原文全無，status thin，聲音預估無法證實。
+- **20714**　Gustafsson & Guy《Frogging》：Maya 官網證實 1997-06-19 AirWave Studios 錄音室一個下午，非現場（前一晚 WNUR 電台現場是另一場）。樂評：身體感強、緊張、不吵、無旋律主題；與預估大致相符，y（輕）取決低音提琴低頻份量，輕度存疑。
+- **20715**　Rothenberg《Trials of the Argo》：1980–81 紐約錄音室，單人中音薩克斯風，記事明寫原聲即時、無磁帶／電子加工；兩首各約 20 分鐘長篇。樂評無，status thin，緊繃或留白無從驗證。
+- **20716**　Rothenberg《Trespass》：推翻策展層：Discogs 無尺八，但多列 John Zorn（中音薩克斯風）→ 至少部分為二重奏而非純獨奏；moodGuess 存疑（獨奏假設與尺八假設皆不成立）。Zorn 出現在哪幾首未能確認。status thin。
+- **20717**　Rothenberg《The Crux》：封底原文『direct to 2-track digital, no overdubbing』，可寫無疊錄；Brooklyn 錄音室非現場。moodGuess 輕度存疑：〈Maceo〉〈Epistrophical Notions〉致意放克／Monk 可能帶律動與旋律輪廓，尺八段（〈Sokaku Reibo〉11 分＋〈Do Omoi〉）約 1/3，躁度可能被拉低。
+- **20718**　Rothenberg《Intervals》：雙 CD 19 首（尺八／單簧管／低音單簧管 11＋中音薩克斯風 8）約兩小時；2001 錄、2002 發行（Discogs／MB），官網寫 2001 為錄音年。moodGuess 存疑：曲名標〈Melody Won/Too〉、〈T.C.〉悼念曲；Ned 自述受尺八本曲靜默與空間啟發，稀疏留白型證據，躁度可能低於預估。
+- **20719**　Rothenberg《World of Odd Harmonics》：全是單簧管與低音單簧管（無薩克斯風）；錄於 Academy of Arts and Letters，有無觀眾未證實，Discogs 無 Live，有 Edited／Mixed By，**不寫『無疊錄』**；樂評稱有穩定脈動、響亮有力段、結尾像合成器，並非稀疏留白，躁度成立但音色未必尖細。
+- **20720**　預留未用。本組 WebSearch 用 3 次（Odd Harmonics、Frogging、Voices）；AAJ、AllMusic、Squidco、Discogs 網頁均 403，引言多轉自 Mode／Maya／Ned 官網，非原文。
