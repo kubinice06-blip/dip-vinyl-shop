@@ -3152,4 +3152,11 @@ window.DipPreviewStatus = Object.freeze({
   "barrington levy|run come ya!": "unavailable",
   "barrington levy|shine eye gal": "unavailable",
   "barrington levy|doh ray me": "unavailable",
+  "love unlimited|under the influence of… love unlimited": "unavailable",
+  "tom brock|i love you more and more": "unavailable",
+  "the dells|love is blue": "unavailable",
+  "ray, goodman & brown|ray, goodman & brown ii": "unavailable",
+  "final|the first millionth of a second": "unavailable",
+  "amp|bliss out, volume 4: perception": "unavailable",
+  "grouper|grouper": "unavailable",
 });

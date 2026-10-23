@@ -5,12 +5,12 @@
   {
    "id": "rock",
    "zh": "搖滾",
-   "count": 5028,
+   "count": 5052,
    "children": [
     {
      "id": "indie-alt",
      "zh": "獨立另類",
-     "count": 1006,
+     "count": 1007,
      "children": [
       {
        "id": "indie-rock",
@@ -55,7 +55,7 @@
       {
        "id": "neo-psych",
        "zh": "新迷幻",
-       "count": 80
+       "count": 81
       }
      ]
     },
@@ -154,7 +154,7 @@
     {
      "id": "punk-wave",
      "zh": "龐克新浪潮",
-     "count": 932,
+     "count": 942,
      "children": [
       {
        "id": "punk",
@@ -164,7 +164,7 @@
       {
        "id": "post-punk",
        "zh": "後龐克",
-       "count": 344
+       "count": 347
       },
       {
        "id": "new-wave",
@@ -174,12 +174,12 @@
       {
        "id": "hardcore",
        "zh": "硬蕊",
-       "count": 179
+       "count": 180
       },
       {
        "id": "no-wave",
        "zh": "No Wave",
-       "count": 91
+       "count": 92
       },
       {
        "id": "pop-punk",
@@ -189,7 +189,7 @@
       {
        "id": "goth",
        "zh": "哥德暗潮",
-       "count": 65
+       "count": 74
       },
       {
        "id": "garage",
@@ -199,7 +199,7 @@
       {
        "id": "industrial",
        "zh": "工業",
-       "count": 33
+       "count": 34
       }
      ]
     },
@@ -248,7 +248,7 @@
     {
      "id": "psych-prog",
      "zh": "迷幻前衛",
-     "count": 684,
+     "count": 687,
      "children": [
       {
        "id": "prog",
@@ -258,7 +258,7 @@
       {
        "id": "psych",
        "zh": "迷幻搖滾",
-       "count": 289
+       "count": 290
       },
       {
        "id": "art-rock",
@@ -278,7 +278,7 @@
       {
        "id": "space-rock",
        "zh": "太空搖滾",
-       "count": 34
+       "count": 35
       }
      ]
     },
@@ -317,27 +317,27 @@
     {
      "id": "dream-post",
      "zh": "音牆後搖",
-     "count": 308,
+     "count": 319,
      "children": [
       {
        "id": "post-rock",
        "zh": "後搖滾",
-       "count": 151
+       "count": 154
       },
       {
        "id": "shoegaze",
        "zh": "瞪鞋",
-       "count": 126
+       "count": 134
       },
       {
        "id": "dream-pop",
        "zh": "夢幻流行",
-       "count": 110
+       "count": 115
       },
       {
        "id": "slowcore",
        "zh": "慢核",
-       "count": 49
+       "count": 55
       }
      ]
     },
@@ -635,12 +635,12 @@
   {
    "id": "electronic",
    "zh": "電子",
-   "count": 2289,
+   "count": 2305,
    "children": [
     {
      "id": "ambient",
      "zh": "Ambient / Drone",
-     "count": 967,
+     "count": 983,
      "children": [
       {
        "id": "idm",
@@ -650,22 +650,22 @@
       {
        "id": "drone",
        "zh": "Drone",
-       "count": 189
+       "count": 199
       },
       {
        "id": "dark-ambient",
        "zh": "Dark Ambient",
-       "count": 181
+       "count": 185
       },
       {
        "id": "ambient-techno",
        "zh": "Ambient Techno / Dub",
-       "count": 159
+       "count": 160
       },
       {
        "id": "neoclassical",
        "zh": "偏現代古典",
-       "count": 65
+       "count": 67
       },
       {
        "id": "new-age",
@@ -677,17 +677,17 @@
     {
      "id": "techno",
      "zh": "Techno",
-     "count": 602,
+     "count": 604,
      "children": [
       {
        "id": "minimal",
        "zh": "Minimal",
-       "count": 253
+       "count": 255
       },
       {
        "id": "ambient-techno",
        "zh": "Ambient Techno",
-       "count": 248
+       "count": 250
       },
       {
        "id": "detroit",
@@ -914,22 +914,22 @@
     {
      "id": "industrial",
      "zh": "Industrial / EBM",
-     "count": 211,
+     "count": 214,
      "children": [
       {
        "id": "dark-ambient",
        "zh": "Dark Ambient / Post-Industrial",
-       "count": 88
+       "count": 91
       },
       {
        "id": "power-electronics",
        "zh": "Power Electronics / 噪音",
-       "count": 59
+       "count": 62
       },
       {
        "id": "old-school",
        "zh": "老派工業",
-       "count": 55
+       "count": 58
       },
       {
        "id": "ebm",
@@ -939,24 +939,24 @@
       {
        "id": "industrial-rock",
        "zh": "Industrial Rock / Metal",
-       "count": 35
+       "count": 36
       }
      ]
     },
     {
      "id": "noise",
      "zh": "實驗與噪音",
-     "count": 170,
+     "count": 175,
      "children": [
       {
        "id": "harsh",
        "zh": "Harsh Noise / 日本噪音",
-       "count": 122
+       "count": 127
       },
       {
        "id": "drone",
        "zh": "Drone / Dark Ambient",
-       "count": 94
+       "count": 99
       },
       {
        "id": "glitch",
@@ -1004,22 +1004,22 @@
   {
    "id": "soul",
    "zh": "靈魂放克",
-   "count": 1646,
+   "count": 1686,
    "children": [
     {
      "id": "funk",
      "zh": "Funk / P-Funk",
-     "count": 906,
+     "count": 915,
      "children": [
       {
        "id": "soul-side",
        "zh": "偏靈魂樂",
-       "count": 254
+       "count": 260
       },
       {
        "id": "disco-funk",
        "zh": "Disco Funk / Boogie",
-       "count": 200
+       "count": 202
       },
       {
        "id": "jazz-funk",
@@ -1046,37 +1046,37 @@
     {
      "id": "classic-rnb",
      "zh": "經典 R&B / Doo-wop",
-     "count": 840,
+     "count": 869,
      "children": [
       {
        "id": "funk",
        "zh": "偏 Funk",
-       "count": 438
+       "count": 443
       },
       {
        "id": "motown",
        "zh": "Motown / Northern",
-       "count": 126
+       "count": 129
       },
       {
        "id": "southern",
        "zh": "Southern / Stax / Deep",
-       "count": 118
+       "count": 120
       },
       {
        "id": "neo-contemporary",
        "zh": "Neo-Soul / 當代",
-       "count": 107
-      },
-      {
-       "id": "chicago",
-       "zh": "Chicago Soul",
-       "count": 102
+       "count": 111
       },
       {
        "id": "smooth",
        "zh": "Smooth / Philly / Quiet Storm",
-       "count": 88
+       "count": 105
+      },
+      {
+       "id": "chicago",
+       "zh": "Chicago Soul",
+       "count": 105
       },
       {
        "id": "gospel",
@@ -1086,38 +1086,38 @@
       {
        "id": "doo-wop",
        "zh": "50s R&B / Doo-wop",
-       "count": 26
+       "count": 27
       }
      ]
     },
     {
      "id": "disco",
      "zh": "Disco / Boogie",
-     "count": 264,
+     "count": 268,
      "children": []
     },
     {
      "id": "motown",
      "zh": "Motown / Northern",
-     "count": 190,
+     "count": 194,
      "children": []
     },
     {
      "id": "southern",
      "zh": "Southern / Stax",
-     "count": 168,
+     "count": 170,
      "children": []
     },
     {
      "id": "philly",
      "zh": "Philly / Quiet Storm",
-     "count": 145,
+     "count": 163,
      "children": []
     },
     {
      "id": "neo-soul",
      "zh": "Neo-Soul",
-     "count": 123,
+     "count": 124,
      "children": []
     },
     {

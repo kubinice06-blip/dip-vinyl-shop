@@ -1,0 +1,1635 @@
+{
+ "group": "md10",
+ "factions": [
+  {
+   "id": "drone-pop",
+   "zh": "冷 drone pop／霧中人聲（Grouper 系）",
+   "count": 16,
+   "why": "主場景核心：Liz Harris 周邊、Kranky 女聲 drone pop、Flenser 的 heaven metal"
+  },
+  {
+   "id": "cold-shoegaze",
+   "zh": "冷 shoegaze／慢霧吉他（有拍但不兇）",
+   "count": 15,
+   "why": "主場景：有鼓但慢而柔的冷 shoegaze／霧 techno，鼓不兇、霧厚"
+  },
+  {
+   "id": "guitar-drone",
+   "zh": "冷吉他 drone（FSA／Final／Main 系）",
+   "count": 10,
+   "why": "主場景：Bristol／Broadrick／Hampson 一系的無鼓吉他霧"
+  },
+  {
+   "id": "ethereal-darkwave",
+   "zh": "冷 ethereal darkwave（Projekt 系）",
+   "count": 7,
+   "why": "主場景延伸：Lycia 與 Tropic of Cancer 的慢鼓機荒冷 drone pop"
+  },
+  {
+   "id": "dark-art-pop",
+   "zh": "冷暗 art pop 慢盤（擴寫場景 md25）",
+   "count": 6,
+   "why": "擴寫場景 md25：只收殘響／管弦厚、y 有餘裕的；Julia Holter、Jenny Hval 池中 y<0.5，不收"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Nivhek",
+   "album": "After Its Own Death / Walking in a Spiral Towards the House",
+   "year": 2019,
+   "label": "Yellowelectric",
+   "country": "us",
+   "faction": "drone-pop",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Liz Harris 以 Nivhek 名義的雙組曲長作，人聲與風琴、磁帶迴圈糊成無拍霧牆，比 Grouper 更抽象更冷",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.5,
+    "z": -0.8,
+    "why": "無鼓，磁帶迴圈與殘響霧，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a23791fe-603b-48ae-aebb-3991886a2b6e",
+    "https://coverartarchive.org/release-group/a23791fe-603b-48ae-aebb-3991886a2b6e/front",
+    "https://www.discogs.com/master/1501254"
+   ],
+   "mbRgMbid": "a23791fe-603b-48ae-aebb-3991886a2b6e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mirrorring",
+   "album": "Foreign Body",
+   "year": 2012,
+   "label": "kranky",
+   "country": "us",
+   "faction": "drone-pop",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Liz Harris 與 Tiny Vipers 的 Jesy Fortino 合作，Kranky 出版，兩把吉他與人聲泡進殘響 drone，慢而陰",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "無鼓，吉他 drone 與殘響人聲，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/69cab670-e4c7-47e6-ae3b-b8125d9a161d",
+    "https://coverartarchive.org/release-group/69cab670-e4c7-47e6-ae3b-b8125d9a161d/front",
+    "https://www.discogs.com/master/420011",
+    "https://www.wikidata.org/wiki/Q20926305"
+   ],
+   "mbRgMbid": "69cab670-e4c7-47e6-ae3b-b8125d9a161d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Raum",
+   "album": "Event of Your Leaving",
+   "year": 2013,
+   "label": "Glass, house",
+   "country": "us",
+   "faction": "drone-pop",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Liz Harris 與 Jefre Cantu-Ledesma 的 Raum 唯一專輯，磁帶嘶聲、風琴與遠方人聲疊成灰霧",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.5,
+    "z": -0.8,
+    "why": "無鼓，磁帶嘶聲與長殘響，灰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/94ddea53-4604-4fff-bdfe-e14140023bcf",
+    "https://coverartarchive.org/release-group/94ddea53-4604-4fff-bdfe-e14140023bcf/front"
+   ],
+   "mbRgMbid": "94ddea53-4604-4fff-bdfe-e14140023bcf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jefre Cantu-Ledesma",
+   "album": "A Year With 13 Moons",
+   "year": 2015,
+   "label": "Mexican Summer",
+   "country": "us",
+   "faction": "guitar-drone",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Cantu-Ledesma 最陰暗的一張，失真吉他與合成器被磨成噪聲霧，無拍、糊、冷",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.8,
+    "z": -0.7,
+    "why": "無鼓，失真吉他噪聲霧，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/774d33dd-3ef4-457c-b7fc-3f6942f00121",
+    "https://coverartarchive.org/release-group/774d33dd-3ef4-457c-b7fc-3f6942f00121/front",
+    "https://www.allmusic.com/album/mw0002798354",
+    "https://www.discogs.com/master/817005"
+   ],
+   "mbRgMbid": "774d33dd-3ef4-457c-b7fc-3f6942f00121",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "lovesliescrushing",
+   "album": "Bloweyelashwish",
+   "year": 1992,
+   "label": "Lullaby",
+   "country": "us",
+   "faction": "drone-pop",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "lovesliescrushing 首作，吉他回授與人聲被處理成無形的嗡鳴霧，ambient shoegaze 的原型之一",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.8,
+    "z": -0.5,
+    "why": "無鼓，吉他回授糊成霧牆，偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/34a7dfca-20a4-3321-8a08-5a72b3ca56d6",
+    "https://coverartarchive.org/release-group/34a7dfca-20a4-3321-8a08-5a72b3ca56d6/front",
+    "https://www.allmusic.com/album/mw0000080587",
+    "https://www.discogs.com/master/113320"
+   ],
+   "mbRgMbid": "34a7dfca-20a4-3321-8a08-5a72b3ca56d6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫：空靈女聲可能被判中性，z 邊距較小"
+  },
+  {
+   "artist": "lovesliescrushing",
+   "album": "Xuvetyn",
+   "year": 1996,
+   "label": "Projekt",
+   "country": "us",
+   "faction": "drone-pop",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Projekt 時期代表作，Melissa Arpin 的人聲被拉成長音，吉他完全化為嗡鳴與殘響",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.8,
+    "z": -0.5,
+    "why": "無鼓，吉他嗡鳴與長殘響，偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4bcad25e-d6c9-3d0a-ab78-3789f5c328ef",
+    "https://coverartarchive.org/release-group/4bcad25e-d6c9-3d0a-ab78-3789f5c328ef/front"
+   ],
+   "mbRgMbid": "4bcad25e-d6c9-3d0a-ab78-3789f5c328ef",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫：同上，z 邊距較小"
+  },
+  {
+   "artist": "Clear Horizon",
+   "album": "Clear Horizon",
+   "year": 2003,
+   "label": "kranky",
+   "country": "us",
+   "faction": "drone-pop",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Jessica Bailiff 與 Flying Saucer Attack 的 Dave Pearce 合作，Kranky 出版，FSA 式吉他霧加女聲，無拍而冷",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.6,
+    "z": -0.7,
+    "why": "幾乎無鼓，吉他回授霧與低語，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f3371b97-e2a3-3788-acc4-e67172ac9428",
+    "https://coverartarchive.org/release-group/f3371b97-e2a3-3788-acc4-e67172ac9428/front",
+    "https://www.discogs.com/master/157931"
+   ],
+   "mbRgMbid": "f3371b97-e2a3-3788-acc4-e67172ac9428",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jessica Bailiff",
+   "album": "Jessica Bailiff",
+   "year": 2002,
+   "label": "kranky",
+   "country": "us",
+   "faction": "drone-pop",
+   "genres": [
+    "rock"
+   ],
+   "why": "Kranky 同名第三張，慢到幾乎停住的吉他與鼓刷，人聲埋在殘響裡，池中兩張同期作皆落頹靡",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "鼓極稀，殘響吉他與低語人聲，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d25fb38e-f1f5-3a4c-b47b-dc6be876d24a",
+    "https://coverartarchive.org/release-group/d25fb38e-f1f5-3a4c-b47b-dc6be876d24a/front",
+    "https://www.discogs.com/master/157926"
+   ],
+   "mbRgMbid": "d25fb38e-f1f5-3a4c-b47b-dc6be876d24a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jessica Bailiff",
+   "album": "Feels Like Home",
+   "year": 2006,
+   "label": "kranky",
+   "country": "us",
+   "faction": "drone-pop",
+   "genres": [
+    "rock"
+   ],
+   "why": "Bailiff 第四張，更多 drone 與回授的慢歌，人聲依舊埋在霧裡",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.2,
+    "z": -0.7,
+    "why": "鼓稀，吉他 drone 與殘響，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1b99286a-b49a-3773-9091-4cc890eddeb1",
+    "https://coverartarchive.org/release-group/1b99286a-b49a-3773-9091-4cc890eddeb1/front",
+    "https://www.discogs.com/master/444153"
+   ],
+   "mbRgMbid": "1b99286a-b49a-3773-9091-4cc890eddeb1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jessica Bailiff",
+   "album": "At the Down-Turned Jagged Rim of the Sky",
+   "year": 2012,
+   "label": "kranky",
+   "country": "us",
+   "faction": "drone-pop",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Bailiff 2012 年回歸作，吉他霧牆與合唱式人聲層疊，慢而灰",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.4,
+    "z": -0.8,
+    "why": "鼓極稀，吉他霧牆與層疊人聲，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/90814497-59b4-434a-a51f-9706303e7238",
+    "https://coverartarchive.org/release-group/90814497-59b4-434a-a51f-9706303e7238/front",
+    "https://www.discogs.com/master/486780"
+   ],
+   "mbRgMbid": "90814497-59b4-434a-a51f-9706303e7238",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Valet",
+   "album": "Blood Is Clean",
+   "year": 2007,
+   "label": "kranky",
+   "country": "us",
+   "faction": "drone-pop",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Honey Owens 的 Valet 首張 Kranky 作，迷幻吉他 drone 與飄忽人聲，霧濃而陰",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.6,
+    "z": -0.6,
+    "why": "鼓稀，迷幻吉他 drone 與殘響，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e0cd1d8b-b83d-3b13-9e12-4db85f153d9b",
+    "https://coverartarchive.org/release-group/e0cd1d8b-b83d-3b13-9e12-4db85f153d9b/front",
+    "https://www.discogs.com/master/186893"
+   ],
+   "mbRgMbid": "e0cd1d8b-b83d-3b13-9e12-4db85f153d9b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Valet",
+   "album": "Naked Acid",
+   "year": 2008,
+   "label": "kranky",
+   "country": "us",
+   "faction": "drone-pop",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Valet 第二張，緩慢迷幻吉他霧與遠聲，比首作更糊更暗",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.7,
+    "z": -0.6,
+    "why": "慢鼓偶現，吉他霧糊、低頻厚，偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e23a69c3-907c-384b-8165-6b42181d3566",
+    "https://i.discogs.com/cFe3J2uRia5fMjqqivrmzJ6zy5SfuH2RgAWanOWPNwQ/rs:fit/g:sm/q:90/h:515/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNTY3/MzItMTIwNDIyMDkw/NS5qcGVn.jpeg",
+    "https://www.discogs.com/master/186892"
+   ],
+   "mbRgMbid": "e23a69c3-907c-384b-8165-6b42181d3566",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Scala",
+   "album": "Beauty Nowhere",
+   "year": 1996,
+   "label": "Touch",
+   "country": "gb",
+   "faction": "cold-shoegaze",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Seefeel 的 Mark Clifford 與 Sarah Peacock 組成，Touch 出版，冷調吉他回授與慢 dub 拍子",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "慢拍無攻擊，吉他回授霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5de66b9b-7e31-329d-ac61-7deff2355529",
+    "https://coverartarchive.org/release-group/5de66b9b-7e31-329d-ac61-7deff2355529/front",
+    "https://www.discogs.com/master/32887"
+   ],
+   "mbRgMbid": "5de66b9b-7e31-329d-ac61-7deff2355529",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Scala",
+   "album": "To You in Alpha",
+   "year": 1998,
+   "label": "Too Pure",
+   "country": "gb",
+   "faction": "cold-shoegaze",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Scala 在 Too Pure 的長作，Peacock 的耳語人聲浮在冷灰吉他霧與慢拍上",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "慢拍輕、吉他霧墊，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a05c93b3-4b2e-3fee-b1c0-f179241ea150",
+    "https://i.discogs.com/TCVZuR18MVCBZMFDzIT07nE8IG6WK-1WaehUGPlMVn0/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMjc3/MS0xMjYyNDg2MDE3/LmpwZWc.jpeg",
+    "https://www.discogs.com/master/32893"
+   ],
+   "mbRgMbid": "a05c93b3-4b2e-3fee-b1c0-f179241ea150",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tamaryn",
+   "album": "The Waves",
+   "year": 2010,
+   "label": "Mexican Summer",
+   "country": "us",
+   "faction": "cold-shoegaze",
+   "genres": [
+    "rock"
+   ],
+   "why": "Tamaryn 首作，Rex Shelverton 的吉他牆慢而厚，人聲冷淡遠置，暗色 shoegaze",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.6,
+    "z": -0.6,
+    "why": "慢鼓無攻擊，吉他柔牆厚，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d7d4dec1-baac-40ed-873e-61d13c41c8d1",
+    "https://coverartarchive.org/release-group/d7d4dec1-baac-40ed-873e-61d13c41c8d1/front",
+    "https://www.discogs.com/master/285502",
+    "https://www.bbc.co.uk/music/reviews/dvb6"
+   ],
+   "mbRgMbid": "d7d4dec1-baac-40ed-873e-61d13c41c8d1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "能量：有鼓的慢 shoegaze，x 邊距約 0.3"
+  },
+  {
+   "artist": "Drowse",
+   "album": "Cold Air",
+   "year": 2018,
+   "label": "The Flenser",
+   "country": "us",
+   "faction": "cold-shoegaze",
+   "genres": [
+    "rock"
+   ],
+   "why": "Kyle Bates 的 Drowse 在 The Flenser 的首作，磁帶糊的吉他 drone 與破碎人聲，名副其實的冷",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.5,
+    "z": -1,
+    "why": "鼓稀，磁帶糊吉他 drone，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4ad59a4d-170a-4845-a37b-9f746ca6f6e2",
+    "https://coverartarchive.org/release-group/4ad59a4d-170a-4845-a37b-9f746ca6f6e2/front"
+   ],
+   "mbRgMbid": "4ad59a4d-170a-4845-a37b-9f746ca6f6e2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Drowse",
+   "album": "Light Mirror",
+   "year": 2019,
+   "label": "The Flenser",
+   "country": "us",
+   "faction": "cold-shoegaze",
+   "genres": [
+    "rock"
+   ],
+   "why": "Drowse 第二張，slowcore 與噪聲霧交疊，慢、灰、壓抑",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.4,
+    "z": -1,
+    "why": "鼓稀慢，噪聲霧與殘響，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c3e86830-1607-4502-ac99-ee36203e013e",
+    "https://coverartarchive.org/release-group/c3e86830-1607-4502-ac99-ee36203e013e/front"
+   ],
+   "mbRgMbid": "c3e86830-1607-4502-ac99-ee36203e013e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Drowse",
+   "album": "Wane Into It",
+   "year": 2022,
+   "label": "The Flenser",
+   "country": "us",
+   "faction": "cold-shoegaze",
+   "genres": [
+    "rock"
+   ],
+   "why": "Drowse 2022 年作，更厚的吉他霧與低語，慢到近乎 drone",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.5,
+    "z": -0.9,
+    "why": "鼓稀，吉他霧厚、低語，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/26f3bfe0-827d-4d25-8c24-013d5f7b2f00",
+    "https://coverartarchive.org/release-group/26f3bfe0-827d-4d25-8c24-013d5f7b2f00/front"
+   ],
+   "mbRgMbid": "26f3bfe0-827d-4d25-8c24-013d5f7b2f00",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Infinite Body",
+   "album": "Carve Out the Face of My God",
+   "year": 2010,
+   "label": "Post Present Medium",
+   "country": "us",
+   "faction": "guitar-drone",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Infinite Body 首張正規作，噪聲吉他被泡成甜而冷的霧牆，無拍，Kranky 系 drone 的後繼",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.8,
+    "z": -0.6,
+    "why": "無鼓，噪聲吉他霧牆，偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/577a6f97-213d-4cf1-9496-98bdc6f48189",
+    "https://coverartarchive.org/release-group/577a6f97-213d-4cf1-9496-98bdc6f48189/front"
+   ],
+   "mbRgMbid": "577a6f97-213d-4cf1-9496-98bdc6f48189",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Sight Below",
+   "album": "Glider",
+   "year": 2008,
+   "label": "Ghostly International",
+   "country": "us",
+   "faction": "cold-shoegaze",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Rafael Anton Irisarri 以 The Sight Below 名義在 Ghostly 的首作，shoegaze 吉他霧壓在悶 kick 上，冷霧 techno",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.5,
+    "z": -0.9,
+    "why": "悶 kick 慢、無攻擊，吉他霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/653c600e-308f-33c5-ac85-a09a4df272bd",
+    "https://coverartarchive.org/release-group/653c600e-308f-33c5-ac85-a09a4df272bd/front",
+    "https://www.discogs.com/master/221500"
+   ],
+   "mbRgMbid": "653c600e-308f-33c5-ac85-a09a4df272bd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Sight Below",
+   "album": "It All Falls Apart",
+   "year": 2010,
+   "label": "Ghostly International",
+   "country": "us",
+   "faction": "cold-shoegaze",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "The Sight Below 第二張，加入 Slowdive 的 Simon Scott，拍子更稀、霧更暗",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.5,
+    "z": -1,
+    "why": "拍子稀，吉他霧與低頻墊，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9c12c474-7f7b-474e-a00b-cb7b8a0738c7",
+    "https://coverartarchive.org/release-group/9c12c474-7f7b-474e-a00b-cb7b8a0738c7/front",
+    "https://www.discogs.com/master/241715"
+   ],
+   "mbRgMbid": "9c12c474-7f7b-474e-a00b-cb7b8a0738c7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "SIANspheric",
+   "album": "Somnium",
+   "year": 1995,
+   "label": "Sonic Unyon Records",
+   "country": "ca",
+   "faction": "cold-shoegaze",
+   "genres": [
+    "rock"
+   ],
+   "why": "加拿大 SIANspheric 首作，慢速吉他霧牆與遠聲，space rock 式的冷空曠",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.6,
+    "z": -0.6,
+    "why": "慢鼓稀，吉他柔牆厚，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0fd1be29-279b-3544-9010-58b966623ae2",
+    "https://coverartarchive.org/release-group/0fd1be29-279b-3544-9010-58b966623ae2/front",
+    "https://www.discogs.com/master/688567"
+   ],
+   "mbRgMbid": "0fd1be29-279b-3544-9010-58b966623ae2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "SIANspheric",
+   "album": "There's Always Someplace You'd Rather Be",
+   "year": 1998,
+   "label": "Sonic Unyon Records",
+   "country": "ca",
+   "faction": "cold-shoegaze",
+   "genres": [
+    "rock"
+   ],
+   "why": "SIANspheric 第二張，更多 drone 段落與殘響，慢而荒",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.6,
+    "z": -0.6,
+    "why": "慢鼓稀，drone 與殘響，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4dcea94b-c43f-32ff-8f6e-dae0bb3cf637",
+    "https://coverartarchive.org/release-group/4dcea94b-c43f-32ff-8f6e-dae0bb3cf637/front"
+   ],
+   "mbRgMbid": "4dcea94b-c43f-32ff-8f6e-dae0bb3cf637",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Final",
+   "album": "3",
+   "year": 2006,
+   "label": "Neurot Recordings",
+   "country": "gb",
+   "faction": "guitar-drone",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Justin Broadrick 的 Final 第三張，Neurot 出版，吉他 drone 與低頻轟鳴，Jesu 的 ambient 源頭",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.5,
+    "z": -1,
+    "why": "無鼓，吉他 drone 與低頻，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9bf381cb-2587-3361-9aa1-618abf6c1cb5",
+    "https://coverartarchive.org/release-group/9bf381cb-2587-3361-9aa1-618abf6c1cb5/front"
+   ],
+   "mbRgMbid": "9bf381cb-2587-3361-9aa1-618abf6c1cb5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Final",
+   "album": "The First Millionth of a Second",
+   "year": 1997,
+   "label": "Manifold Records",
+   "country": "gb",
+   "faction": "guitar-drone",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Final 1997 年作，Broadrick 的孤寂吉他迴圈與嗡鳴，池中《One》落頹靡",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.4,
+    "z": -1,
+    "why": "無鼓，吉他迴圈嗡鳴，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/20b3680f-cd6f-3d32-8d2c-a24305cfbba6",
+    "https://coverartarchive.org/release-group/20b3680f-cd6f-3d32-8d2c-a24305cfbba6/front"
+   ],
+   "mbRgMbid": "20b3680f-cd6f-3d32-8d2c-a24305cfbba6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Amp",
+   "album": "Astralmoonbeamprojections",
+   "year": 1997,
+   "label": "kranky",
+   "country": "gb",
+   "faction": "guitar-drone",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Bristol 的 Amp（Richard Walker）在 Kranky 的作，與 FSA 同城同系，吉他與人聲溶成太空霧",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.6,
+    "z": -0.7,
+    "why": "無鼓，吉他與人聲溶成霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/96d0cdd9-954b-3ade-b317-1767ed9a364f",
+    "https://coverartarchive.org/release-group/96d0cdd9-954b-3ade-b317-1767ed9a364f/front",
+    "https://www.discogs.com/master/52935"
+   ],
+   "mbRgMbid": "96d0cdd9-954b-3ade-b317-1767ed9a364f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Amp",
+   "album": "Bliss Out, Volume 4: Perception",
+   "year": 1997,
+   "label": "Darla Records",
+   "country": "gb",
+   "faction": "guitar-drone",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Darla《Bliss Out》系列的 Amp 篇，長篇吉他 drone 與 Karine Charff 的遠聲",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.6,
+    "z": -0.7,
+    "why": "無鼓，長篇吉他 drone，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b2363028-7255-3c43-9b4c-cdede5cfd39a",
+    "https://coverartarchive.org/release-group/b2363028-7255-3c43-9b4c-cdede5cfd39a/front"
+   ],
+   "mbRgMbid": "b2363028-7255-3c43-9b4c-cdede5cfd39a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Grouper",
+   "album": "Grouper",
+   "year": 2005,
+   "label": "",
+   "country": "us",
+   "faction": "drone-pop",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Grouper 2005 年自發行首作，人聲與吉他在磁帶嘶聲中糊成 drone，池中其他盤皆落頹靡",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.4,
+    "z": -0.7,
+    "why": "無鼓，磁帶糊與殘響霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/28a347a4-60a8-368e-985a-481bb4535346",
+    "https://coverartarchive.org/release-group/28a347a4-60a8-368e-985a-481bb4535346/front"
+   ],
+   "mbRgMbid": "28a347a4-60a8-368e-985a-481bb4535346",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "身分：自發行 CD-R 首作，MB 列為 Album"
+  },
+  {
+   "artist": "Midwife",
+   "album": "Like Author, Like Daughter",
+   "year": 2017,
+   "label": "Whited Sepulchre Records",
+   "country": "us",
+   "faction": "drone-pop",
+   "genres": [
+    "rock"
+   ],
+   "why": "Madeline Johnston 的 Midwife 首作，「heaven metal」——慢吉他霧牆與麻木人聲，池中後兩張皆落頹靡",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.4,
+    "z": -0.6,
+    "why": "鼓稀慢，吉他霧牆，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e32a2300-e661-4f1d-be11-87aff69e1deb",
+    "https://coverartarchive.org/release-group/e32a2300-e661-4f1d-be11-87aff69e1deb/front",
+    "https://www.discogs.com/master/1497601"
+   ],
+   "mbRgMbid": "e32a2300-e661-4f1d-be11-87aff69e1deb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Midwife",
+   "album": "No Depression in Heaven",
+   "year": 2024,
+   "label": "The Flenser",
+   "country": "us",
+   "faction": "drone-pop",
+   "genres": [
+    "rock"
+   ],
+   "why": "Midwife 2024 年作，The Flenser 出版，失真吉他霧與遠聲更沉",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.5,
+    "z": -0.6,
+    "why": "鼓稀慢，失真霧與殘響，偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0874aab0-548b-49f9-861f-c7a6f530506f",
+    "https://coverartarchive.org/release-group/0874aab0-548b-49f9-861f-c7a6f530506f/front",
+    "https://www.discogs.com/master/3588122"
+   ],
+   "mbRgMbid": "0874aab0-548b-49f9-861f-c7a6f530506f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "port-royal",
+   "album": "Flares",
+   "year": 2005,
+   "label": "Resonant",
+   "country": "it",
+   "faction": "cold-shoegaze",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "義大利 port-royal 首作，n5MD 系冷調 ambient／shoegaze 電子，長篇吉他墊與稀疏拍子",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": -0.6,
+    "why": "拍子稀、無攻擊，吉他墊厚，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c3e2535a-3cec-39a1-b3fe-1e984279bc76",
+    "https://coverartarchive.org/release-group/c3e2535a-3cec-39a1-b3fe-1e984279bc76/front",
+    "https://www.allmusic.com/album/mw0001029125"
+   ],
+   "mbRgMbid": "c3e2535a-3cec-39a1-b3fe-1e984279bc76",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "能量：部分段落有電子拍，x 邊距 0.4"
+  },
+  {
+   "artist": "port-royal",
+   "album": "dying in time",
+   "year": 2009,
+   "label": "n5MD",
+   "country": "it",
+   "faction": "cold-shoegaze",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "port-royal 第三張，ambient 段落佔多，霧狀合成器與吉他，冷灰",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.3,
+    "z": -0.7,
+    "why": "拍子稀，合成器與吉他霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3e522cd0-73cb-48e6-a76d-475fbb7144ed",
+    "https://coverartarchive.org/release-group/3e522cd0-73cb-48e6-a76d-475fbb7144ed/front",
+    "https://www.discogs.com/master/209411",
+    "https://genius.com/albums/Port-royal/Dying-in-time"
+   ],
+   "mbRgMbid": "3e522cd0-73cb-48e6-a76d-475fbb7144ed",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lycia",
+   "album": "Wake",
+   "year": 1989,
+   "label": "Orphanage Records",
+   "country": "us",
+   "faction": "ethereal-darkwave",
+   "genres": [
+    "rock"
+   ],
+   "why": "Lycia 首作，慢鼓機、殘響吉他與厚墊，Projekt 荒冷 darkwave 的起點；池中四張皆深落頹靡",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.2,
+    "z": -1.5,
+    "why": "慢鼓機、殘響吉他與墊，荒冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0fa05d05-8eb2-35bc-a3bd-d9c4c4e1cdd4",
+    "https://coverartarchive.org/release-group/0fa05d05-8eb2-35bc-a3bd-d9c4c4e1cdd4/front",
+    "https://www.discogs.com/master/61449",
+    "https://www.wikidata.org/wiki/Q7960895"
+   ],
+   "mbRgMbid": "0fa05d05-8eb2-35bc-a3bd-d9c4c4e1cdd4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lycia",
+   "album": "Estrella",
+   "year": 1998,
+   "label": "Projekt",
+   "country": "us",
+   "faction": "ethereal-darkwave",
+   "genres": [
+    "rock"
+   ],
+   "why": "Lycia 1998 年作，Tara VanFlower 女聲與殘響吉他，延續《Cold》的荒涼",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.3,
+    "z": -1.5,
+    "why": "慢鼓機稀，殘響霧與低語，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/09b33d3b-492b-3203-8218-35ea310802b4",
+    "https://coverartarchive.org/release-group/09b33d3b-492b-3203-8218-35ea310802b4/front",
+    "https://www.discogs.com/master/61431",
+    "https://www.wikidata.org/wiki/Q16835747"
+   ],
+   "mbRgMbid": "09b33d3b-492b-3203-8218-35ea310802b4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lycia",
+   "album": "Empty Space",
+   "year": 2003,
+   "label": "Silber Records",
+   "country": "us",
+   "faction": "ethereal-darkwave",
+   "genres": [
+    "rock"
+   ],
+   "why": "Lycia 2003 年作，更接近 dark ambient 的殘響墊與低語",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.3,
+    "z": -1.5,
+    "why": "鼓稀，厚墊與殘響，冰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0fd9f5e4-14bf-3858-9642-1976d7796504",
+    "https://coverartarchive.org/release-group/0fd9f5e4-14bf-3858-9642-1976d7796504/front",
+    "https://www.wikidata.org/wiki/Q20813357"
+   ],
+   "mbRgMbid": "0fd9f5e4-14bf-3858-9642-1976d7796504",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lycia",
+   "album": "Quiet Moments",
+   "year": 2013,
+   "label": "Handmade Birds",
+   "country": "us",
+   "faction": "ethereal-darkwave",
+   "genres": [
+    "rock"
+   ],
+   "why": "Lycia 2013 年回歸作，慢鼓機與殘響吉他，荒冷依舊",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -1.4,
+    "why": "慢鼓機、殘響吉他霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/76b75dd7-0600-4c8f-b7b6-f3a4afda3b48",
+    "https://coverartarchive.org/release-group/76b75dd7-0600-4c8f-b7b6-f3a4afda3b48/front",
+    "https://www.wikidata.org/wiki/Q19895337"
+   ],
+   "mbRgMbid": "76b75dd7-0600-4c8f-b7b6-f3a4afda3b48",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lycia",
+   "album": "A Line That Connects",
+   "year": 2015,
+   "label": "Lycium Music",
+   "country": "us",
+   "faction": "ethereal-darkwave",
+   "genres": [
+    "rock"
+   ],
+   "why": "Lycia 2015 年作，回到早期的荒漠 darkwave 質地",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.3,
+    "z": -1.4,
+    "why": "慢鼓機、殘響墊，荒冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/abf378fa-b443-4b54-9011-5a21b4b33ba0",
+    "https://coverartarchive.org/release-group/abf378fa-b443-4b54-9011-5a21b4b33ba0/front",
+    "https://www.wikidata.org/wiki/Q20813223"
+   ],
+   "mbRgMbid": "abf378fa-b443-4b54-9011-5a21b4b33ba0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lycia",
+   "album": "In Flickers",
+   "year": 2018,
+   "label": "Projekt",
+   "country": "us",
+   "faction": "ethereal-darkwave",
+   "genres": [
+    "rock"
+   ],
+   "why": "Lycia 2018 年作，Projekt 出版，殘響吉他與低語，慢而陰",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -1.4,
+    "why": "慢鼓機稀，殘響霧，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4644d233-420f-49d8-baae-dce3a73a4a43",
+    "https://coverartarchive.org/release-group/4644d233-420f-49d8-baae-dce3a73a4a43/front",
+    "https://www.discogs.com/master/1444083",
+    "https://www.wikidata.org/wiki/Q104901885"
+   ],
+   "mbRgMbid": "4644d233-420f-49d8-baae-dce3a73a4a43",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Main",
+   "album": "Firmament II",
+   "year": 1994,
+   "label": "Beggars Banquet",
+   "country": "gb",
+   "faction": "guitar-drone",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Robert Hampson 的 Main 由 Loop 吉他噪音轉入 drone 的長篇，Beggars 出版；池中《Motion Pool》深落頹靡",
+   "moodGuess": {
+    "x": 1.1,
+    "y": 1.6,
+    "z": -1.3,
+    "why": "無鼓，吉他噪聲 drone，金屬冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dbbd729e-1123-351f-991c-4ebff7d8a6c4",
+    "https://i.discogs.com/zRo4ESRHGbECDlcG3OIPyxSD2Rm_ErK5aI8o77aFo0o/rs:fit/g:sm/q:90/h:538/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcxOTc2/LTExNjI0OTE5ODgu/anBlZw.jpeg",
+    "https://www.discogs.com/master/406091"
+   ],
+   "mbRgMbid": "dbbd729e-1123-351f-991c-4ebff7d8a6c4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Main",
+   "album": "Ablation",
+   "year": 2013,
+   "label": "Editions Mego",
+   "country": "gb",
+   "faction": "guitar-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Main 2013 年於 Editions Mego 的復出作，電聲處理的低頻 drone 與顆粒，冷硬",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.4,
+    "z": -1.3,
+    "why": "無鼓，低頻 drone 與顆粒，冷硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9849801c-396f-4cf9-bd2d-679fefb8fee1",
+    "https://i.discogs.com/6FKe2s-O1HF08FMPeUm5MXStQ_DQvd0cXIjee1WDQq8/rs:fit/g:sm/q:90/h:350/w:350/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzNjE3/MTMtMTM2Mjg0MTky/MS02MjUzLmpwZWc.jpeg",
+    "https://www.discogs.com/master/530751"
+   ],
+   "mbRgMbid": "9849801c-396f-4cf9-bd2d-679fefb8fee1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Cindytalk",
+   "album": "The Crackle of My Soul",
+   "year": 2009,
+   "label": "Editions Mego",
+   "country": "gb",
+   "faction": "guitar-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Cindytalk 在 Editions Mego 的噪聲 drone 作，嘶聲與低頻層疊，荒涼",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.8,
+    "z": -1.2,
+    "why": "無鼓，噪聲嘶聲與低頻層，荒冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/03938a5a-bafd-4782-851c-cbd3b5de0290",
+    "https://coverartarchive.org/release-group/03938a5a-bafd-4782-851c-cbd3b5de0290/front",
+    "https://www.discogs.com/master/186608"
+   ],
+   "mbRgMbid": "03938a5a-bafd-4782-851c-cbd3b5de0290",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Esben and the Witch",
+   "album": "Violet Cries",
+   "year": 2011,
+   "label": "High Note Records",
+   "country": "gb",
+   "faction": "dark-art-pop",
+   "genres": [
+    "rock"
+   ],
+   "why": "Esben and the Witch 首作，Matador 出版，殘響吉他、低沉鼓與 Rachel Davies 的冷聲，哥德式暗 art pop",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.4,
+    "z": -1.2,
+    "why": "慢鼓無攻擊，殘響吉他與厚墊，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bf063ec5-95ed-44ec-bfb9-432689dd85a9",
+    "https://coverartarchive.org/release-group/bf063ec5-95ed-44ec-bfb9-432689dd85a9/front",
+    "https://www.allmusic.com/album/mw0002087544",
+    "https://www.discogs.com/master/305478"
+   ],
+   "mbRgMbid": "bf063ec5-95ed-44ec-bfb9-432689dd85a9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "能量：有鼓，x 邊距約 0.3"
+  },
+  {
+   "artist": "Esben and the Witch",
+   "album": "Hold Sacred",
+   "year": 2023,
+   "label": "Nostromo Records",
+   "country": "gb",
+   "faction": "dark-art-pop",
+   "genres": [
+    "rock"
+   ],
+   "why": "Esben and the Witch 2023 年作，幾乎去鼓的慢歌，殘響吉他與人聲懸浮",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.1,
+    "z": -1,
+    "why": "鼓極稀，殘響吉他霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/aecfec52-10af-43fb-8673-e3c9786a5d38",
+    "https://coverartarchive.org/release-group/aecfec52-10af-43fb-8673-e3c9786a5d38/front"
+   ],
+   "mbRgMbid": "aecfec52-10af-43fb-8673-e3c9786a5d38",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "質地：較疏的一張，y 邊距 0.3"
+  },
+  {
+   "artist": "Gazelle Twin",
+   "album": "The Entire City",
+   "year": 2011,
+   "label": "Anti‐Ghost Moon Ray Records",
+   "country": "gb",
+   "faction": "dark-art-pop",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "Gazelle Twin 首作，冷調電子 art pop，被處理的人聲、厚合成器墊與慢拍，城市廢墟感",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.2,
+    "z": -1.3,
+    "why": "慢拍無攻擊，厚合成器墊，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/26cf8e44-0295-46ef-bfc4-8bafe3225046",
+    "https://coverartarchive.org/release-group/26cf8e44-0295-46ef-bfc4-8bafe3225046/front",
+    "https://www.discogs.com/master/372418",
+    "https://www.bbc.co.uk/music/reviews/22b6"
+   ],
+   "mbRgMbid": "26cf8e44-0295-46ef-bfc4-8bafe3225046",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Circuit des Yeux",
+   "album": "-io",
+   "year": 2021,
+   "label": "Matador",
+   "country": "us",
+   "faction": "dark-art-pop",
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "why": "Circuit des Yeux 的哀悼之作，Haley Fohr 的低沉嗓音與厚管弦、銅管，Matador 出版",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "鼓稀，厚管弦與低沉人聲，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7dd62aef-d342-482d-90ed-6548f507f3f0",
+    "https://coverartarchive.org/release-group/7dd62aef-d342-482d-90ed-6548f507f3f0/front",
+    "https://www.discogs.com/master/2350294"
+   ],
+   "mbRgMbid": "7dd62aef-d342-482d-90ed-6548f507f3f0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "質地：池中《Reaching for Indigo》y 0.8 貼邊，此張更厚但仍須留意"
+  },
+  {
+   "artist": "Circuit des Yeux",
+   "album": "Overdue",
+   "year": 2013,
+   "label": "Ba Da Bing!",
+   "country": "us",
+   "faction": "dark-art-pop",
+   "genres": [
+    "rock"
+   ],
+   "why": "Circuit des Yeux 早期作，低傳真吉他 drone 與破碎人聲，糊而陰",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.4,
+    "z": -1,
+    "why": "鼓稀，低傳真吉他 drone，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c6b6658c-9b3b-4472-9acb-4614e0bd25eb",
+    "https://coverartarchive.org/release-group/c6b6658c-9b3b-4472-9acb-4614e0bd25eb/front",
+    "https://www.discogs.com/master/612460"
+   ],
+   "mbRgMbid": "c6b6658c-9b3b-4472-9acb-4614e0bd25eb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tropic of Cancer",
+   "album": "Restless Idylls",
+   "year": 2013,
+   "label": "Blackest Ever Black",
+   "country": "us",
+   "faction": "ethereal-darkwave",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Camella Lobo 的 Tropic of Cancer 首張正規作，Blackest Ever Black 出版，慢鼓機與殘響人聲的冷 drone pop",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.4,
+    "z": -1.3,
+    "why": "慢鼓機、殘響吉他與人聲霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9f9e05cf-cad2-499f-a249-4b1cbf4725ea",
+    "https://coverartarchive.org/release-group/9f9e05cf-cad2-499f-a249-4b1cbf4725ea/front",
+    "https://www.discogs.com/master/598591"
+   ],
+   "mbRgMbid": "9f9e05cf-cad2-499f-a249-4b1cbf4725ea",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Matt Elliott",
+   "album": "Drinking Songs",
+   "year": 2005,
+   "label": "Ici d’ailleurs",
+   "country": "gb",
+   "faction": "dark-art-pop",
+   "genres": [
+    "rock"
+   ],
+   "why": "Matt Elliott（Third Eye Foundation）的「歌曲三部曲」首作，層疊合唱、手風琴與殘響，東歐式的陰鬱",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.1,
+    "z": -1.2,
+    "why": "無鼓，層疊合唱與殘響，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9674ad1e-25de-3455-ad57-b95b59e9f084",
+    "https://coverartarchive.org/release-group/9674ad1e-25de-3455-ad57-b95b59e9f084/front",
+    "https://www.allmusic.com/album/mw0000418218",
+    "https://www.discogs.com/master/72271"
+   ],
+   "mbRgMbid": "9674ad1e-25de-3455-ad57-b95b59e9f084",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "質地：原聲器樂為主，y 依賴層疊合唱與殘響"
+  },
+  {
+   "artist": "Zelienople",
+   "album": "His/Hers",
+   "year": 2007,
+   "label": "Type",
+   "country": "us",
+   "faction": "cold-shoegaze",
+   "genres": [
+    "rock"
+   ],
+   "why": "芝加哥 Zelienople 在 Type 的作，慢到停滯的吉他、單簧管與 drone，鼓極稀、灰而冷",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "鼓極稀，吉他 drone 與殘響，灰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c1605f66-1726-35a5-ab72-e05d21edcb8e",
+    "https://coverartarchive.org/release-group/c1605f66-1726-35a5-ab72-e05d21edcb8e/front"
+   ],
+   "mbRgMbid": "c1605f66-1726-35a5-ab72-e05d21edcb8e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Zelienople",
+   "album": "Give It Up",
+   "year": 2009,
+   "label": "Type",
+   "country": "us",
+   "faction": "cold-shoegaze",
+   "genres": [
+    "rock"
+   ],
+   "why": "Zelienople 2009 年作，緩慢的吉他霧與低沉人聲，slowcore 化的 drone",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "慢鼓稀，吉他霧與 drone，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6b1c318b-2850-4870-9fa0-acead352ee71",
+    "https://coverartarchive.org/release-group/6b1c318b-2850-4870-9fa0-acead352ee71/front",
+    "https://www.discogs.com/master/217733"
+   ],
+   "mbRgMbid": "6b1c318b-2850-4870-9fa0-acead352ee71",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Zelienople",
+   "album": "The World Is a House on Fire",
+   "year": 2012,
+   "label": "Type",
+   "country": "us",
+   "faction": "cold-shoegaze",
+   "genres": [
+    "rock"
+   ],
+   "why": "Zelienople 2012 年作，Type 出版，更厚的嗡鳴與殘響，陰沉慢歌",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.4,
+    "z": -0.8,
+    "why": "鼓稀，嗡鳴與殘響厚，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/07b5d8e2-2bac-40ef-9b24-34b70180ab12",
+    "https://i.discogs.com/9oHIlALJZLW2g52MLWEc4iC8SNC8rlBvtfZTWhmqBqU/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2Nzgw/OTUtMTM0MDAxNzU1/MC05NjQ2LmpwZWc.jpeg",
+    "https://www.discogs.com/master/446832"
+   ],
+   "mbRgMbid": "07b5d8e2-2bac-40ef-9b24-34b70180ab12",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Dirty Beaches",
+   "album": "Stateless",
+   "year": 2014,
+   "label": "Zoo Music",
+   "country": "ca",
+   "faction": "drone-pop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Alex Zhang Hungtai 以 Dirty Beaches 名義的告別作，ambient 器樂長篇，殘響薩克斯與 drone，孤絕",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.2,
+    "z": -1,
+    "why": "無鼓，殘響 drone 與薩克斯，孤冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6869a013-3309-4a30-b4e6-b1f246b74251",
+    "https://coverartarchive.org/release-group/6869a013-3309-4a30-b4e6-b1f246b74251/front",
+    "https://www.allmusic.com/album/mw0002730093",
+    "https://www.discogs.com/master/761280"
+   ],
+   "mbRgMbid": "6869a013-3309-4a30-b4e6-b1f246b74251",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ekin Fil",
+   "album": "Ghosts Inside",
+   "year": 2017,
+   "label": "The Helen Scarsdale Agency",
+   "country": "tr",
+   "faction": "drone-pop",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "土耳其 Ekin Fil 的作，Grouper 系的人聲與吉他泡在磁帶霧裡，無拍而遠",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.4,
+    "z": -0.6,
+    "why": "無鼓，磁帶霧人聲，偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/82be19d6-767f-4ef8-b44c-0742686edd12",
+    "https://coverartarchive.org/release-group/82be19d6-767f-4ef8-b44c-0742686edd12/front"
+   ],
+   "mbRgMbid": "82be19d6-767f-4ef8-b44c-0742686edd12",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫：同 Grouper 系，z 估 −0.6"
+  },
+  {
+   "artist": "Cindytalk",
+   "album": "Hold Everything Dear",
+   "year": 2011,
+   "label": "Editions Mego",
+   "country": "gb",
+   "faction": "guitar-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Cindytalk 2011 年作，Gordon Sharp 的電子 drone 與殘響碎片，陰冷",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.5,
+    "z": -1.1,
+    "why": "無鼓，電子 drone 與殘響，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6a7b4fcc-d744-47b5-9d54-c6aab96fbfb5",
+    "https://coverartarchive.org/release-group/6a7b4fcc-d744-47b5-9d54-c6aab96fbfb5/front",
+    "https://www.discogs.com/master/359392"
+   ],
+   "mbRgMbid": "6a7b4fcc-d744-47b5-9d54-c6aab96fbfb5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "主場景（冷 shoegaze／drone pop）先挖，主力藝人 Grouper、FSA、Bowery Electric、Seefeel、Low、Lycia 舊盤、Jessica Bailiff 舊盤多已在池或已被 md2／md3 提過，故往 Liz Harris 周邊、Kranky 二線、Flenser、Bristol／Broadrick／Hampson 系與 Lycia 晚期盤挖。",
+  "擴寫場景 md25 只收 6 張（另 Tropic of Cancer 歸入 ethereal-darkwave）：Julia Holter《Tragedy》池中 y 0.4、Jenny Hval 兩張 y −0.2、Laurel Halo《Quarantine》y 0.5——冷 art pop 多判輕，只收殘響或管弦厚的。",
+  "刻意不收（風險）：Jesu 其他盤（池中《Jesu》x 3.1、《Conqueror》z −0.4，Pale Sketches 在 MB 為合輯）；Jefre Cantu-Ledesma《Love Is a Stream》（偏暖）；Pjusk（12k 微聲，y 恐輕）；Soap&Skin《Narrow》、Lucrecia Dalt《No era sólida》、Julia Kent（y 貼邊）；Ian William Craig（磁帶合唱恐判中性 z，Basinski 先例 z +0.1）；Cranes 後期盤（較乾淨）；Tamaryn《Tender New Signs》、Anika（x 貼邊）；Vyva Melinkolya（z 不確定）。",
+  "封面：49 張 CAA；5 張 CAA 無圖改用 Discogs master 主圖（Valet《Naked Acid》、Scala《To You in Alpha》、Main《Firmament II》《Ablation》、Zelienople《The World Is a House on Fire》）。",
+  "同藝人已有池中盤者，池中三軸皆落頹靡（Lycia z −1.6~−1.8、Jessica Bailiff z −0.7、Midwife z −0.6/−0.7、Grouper z −0.5~−0.9、Final、Amp、Main、Circuit des Yeux y 0.8 貼邊已標註）。"
+ ]
+}
