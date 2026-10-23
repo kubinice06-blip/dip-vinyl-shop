@@ -12,3 +12,9 @@
 - moodGuess 邊距檢查 24/24 全過（x 1.7–2.6、y 0.8–1.3、z 0.4–1.1）。
 - **主線汰 2**：Kurt Vile《(watch my moves)》（池中《Wakin on a Pretty Daze》y 0.6，同路線晚期製作更乾淨，質地貼邊；留《Bottle It In》一張）；Hammock《Everything and Nothing》（ml2／ml11 主線曾以 z 中性汰過 Hammock；新標準下旋律不明的 ambient 往冷，兩張只留旋律較明確、有弦樂合唱的《Oblivion Hymns》）。
 - 研究層重點查：**質地**——Kurt Vile《Bottle It In》、Dennis Wilson《Pacific Ocean Blue》、Matthew E. White《Big Inner》、Acetone、Pure X；**色溫**——Ray LaMontagne《Ouroboros》（池中《Till the Sun Turns Black》z −0.2）、Acetone《York Blvd.》、Mojave 3、Hammock、Manual、Casino Versus Japan（策展層只估 z 0.5）；**能量**——Spiritualized《Everything Was Beautiful》、Schnauss《No Further Ahead Than Today》《A Long Way to Fall》（x 2.6，貼 2.7）。Peaking Lights 近 dub-psych，場景外圍但池中同人全落恍惚，收。
+
+## 研究 a 組
+- 15841：Jassbusters 錄音地（巴黎 Studio Ferber，2016 年 8 月）只有維基藝人條目單一來源，寫作層寫「2016 年錄於巴黎」不寫日。
+- 15842：Jassbusters Two 錄音年 2016 年 10 月僅 Bandcamp 單一來源且該頁自相矛盾（另說 2017 年成形），facts 不寫錄音年，只寫「現場長段即興」。
+- 15843：Pitchfork／Guardian／Independent 等站 WebFetch 被擋，聲音事實改取 DIY、Crack、mxdwn、Paste、Line of Best Fit、PopMatters、American Songwriter、Consequence；Regions 的殘響／合成墊查無來源，不寫。
+- 15844：moodGuess 存疑彙整——Jassbusters（z 0.9 偏高：Crack 無假音、DIY 憂鬱陰沉；y 缺「重」的證據）；Jassbusters Two（y／z 皆無文字支持、mxdwn 評混濁、全盤僅 27 分鐘鬆散即興，建議汰換或降分）；Bottle It In（x 2.4 偏低：多曲有真人鼓搖滾推進；y 的「厚」證據間接）；Regions（無穀倉殘響或厚合成墊來源，y 1.0 風險）；Eternally Even（相對最貼，但 American Songwriter 用 chilly／aloof、AAJ 說合成器質感表面）。
