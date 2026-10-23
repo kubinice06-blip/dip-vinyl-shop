@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 11 輪 ml51／md28：lo-fi beat tape 第三波 31 張、dark ambient 第三波 34 張上線，落格 31/31、34/34
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 11 輪，本工作階段負責 ml51、md28（評分照 10-23 體感標準）。ml51（`add-20261023-ml51`，恍惚：lo-fi／beat tape 第三波＋ml47 剩餘）：Knxwledge《Old.Klouds.LP》、Ohbliv ×4＋Fitz Ambro$e & Ohbliv、Wun Two ×3＋與 Boora 合作、mt. fujitive ×2＋與 Smuv、oofoe 合作、Purrple Cat ×6、less.people、Ta-ku ×4、Onra《Nosthaigia》、Elaquent ×2、Stan Forebee ×2、BROCKBEATS《Tranquilizook》。md28（`add-20261023-md28`，頹靡：dark ambient 第三波）：Cryo Chamber 洛夫克拉夫特合寫 ×3、protoU、Dronny Darko 系 ×4、Ugasanie 系 ×4、Alphaxone 系 ×2、Kolhoosi 13、Council of Nine、Sabled Sun《2148》、Aegri Somnia、Cities Last Broadcast、Mystified、Metatron Omega、Apocryphos／Kammarheit／Atrium Carceri《Echo》、Atrium Carceri《Metropolis》、New Risen Throne ×2、Visions、Funerary Call、Psychomanteum、Gustaf Hildebrand、Moljebka Pvlse、Netherworld、Necrophorus ×2、Ab Intra、Arecibo、Sleep Research Facility《Deep Frieze》。
+- **策展→研究汰換**：ml51 策展 54、主線汰 8、研究汰 16（boom bap 彈跳、house／trap／glitch、人聲合輯、散裝草稿集、EP 長度）、補 1 → 31。md28 策展 54、主線汰 8、研究汰 12（拍點／打擊、溫暖明亮、旋律樂器或人聲領奏）、補 3 再汰 3 → 34。兩場景主場景見底，不再派。
+- **主線審稿**：ml51 改 2 處（Scenic Route 單源比較評價刪、kyoto 第二句與 hook 重複改寫）；md28 改 3 處（Aftermath hook 單源「先行者」改寫，Sanctum hook 語句，Exit Earth 語句；hooks／input 同步）。
+- **上線**：card_catalog 31＋34、KV 65 鍵回讀逐字一致、試聽 24＋31 ready（md28 人工配 5）、seed +65、published gate 兩批 0 error；封面 CAA 61（6 張改 front-500）、Apple 2、Discogs 2（registry 400 筆），live-check 全 200、目視相符。上線前對 origin 92 個 `claude/*` 分支 seed＋卡單去重 0 撞。
+- **情緒評分**：`score-ml51`、`score-md28`。**ml51 落恍惚 31/31（100%）**、**md28 落頹靡 34/34（100%）**。八格（併 main 前）：恍惚 1,492、頹靡 1,467、冷冽 1,445。
+- **類型樹**：`genre-l3-artist-map.json` 補 hiphop/underground/instrumental 6、electronic/ambient/dark-ambient 3，65/65 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 40 個掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{ml51,md28}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml51,md28}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml51,md28}/`、`onboarding-manifest-add-20261023-{ml51,md28}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml51,md28}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 65/65；build-card-moods 錨點 104/104。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格線第 11 輪派工：優先序 52–58
 
 - **起因**：第 10 輪收工（ml46 5／4、mc37 26／16、ml47 23／23、ml48 12／12、ml49 28／28、mc38 27／27，上線／落格）。恍惚 1,461、頹靡 1,433、冷冽 1,445，頹靡轉為最薄。
