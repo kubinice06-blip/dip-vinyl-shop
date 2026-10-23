@@ -41,3 +41,14 @@
 - 19766：Ensemble Pearl moodGuess 存疑：Atsuo 的 tom-tom「manic bang-and-howl」與〈Painting on a Corpse〉急迫重複鼓點，有打擊推進；The Sound Projector 稱製作清晰帶輕微回音，y 可能低於 1.6。z 冷、靜成立（陰暗莊重、克制慢堆）。country 卡單填 jp，成員跨美日、Drag City 為美廠，建議主線核對。舞蹈（Gisèle Vienne）來源 Sound Projector，另有搜尋摘要寫 theatre play，取 dance 待核。
 - 19767：Sankt Otten《Wunden gibt es immer wieder》moodGuess 存疑：Hidden Shoal 新聞稿稱承接 trip hop，有節拍，且 Rhodes 與吉他旋律可能清楚，有判暖／輕風險。年份：Hidden Shoal 2007-12-11 已預告數位版、Apple 列 2007、Luna Kafé 2008-01 評論；MB 首發 2008（bluNoise 12 吋）。卡單 2008 依 MB，數位首發可能 2007 年底，主線可酌改。Hidden Shoal 稱「第二張」、Apple 稱「第三張」、Textura 稱後來另一張為第四張，序數互相衝突，不寫序數。
 - 19768：WebSearch 共用 5 次（Bersarin 2、Ensemble Pearl 1、Mohn 1、Sankt Otten 1），超過每支 3 次上限（本組 8 張、查證來源稀薄，WebFetch 多遇 403／404 才補搜）。
+
+## 研究 b 組
+- 19731：卡單廠牌推翻三處：Night Coercion 原版是樂團自行發行的 3 片 CDr（限量 22 套，Discogs「Not On Label」），Students of Decay 發的是同年 Sunlit Stone 等 CDr，2012 年 Ba Da Bing 重發；Daughter of Darkness 原版是 Blackest Rainbow 卡帶盒裝（2013 年 Ba Da Bing 重發），非 Ruralfaune；Shadow Kingdom 原版是 Blackest Rainbow（BRR140CD），非 Students of Decay。建議卡單 label 改為各自原版廠牌。
+- 19732：Natural Snow Buildings 四張（Night Coercion、Daughter of Darkness、Shadow Kingdom、Waves of the Random Sea）找不到專門樂評，聲音證據只有 Ba Da Bing 廠牌文案、維基、Discogs 風格標籤與錄音備註，全標 thin。「無鼓、霧般殘響、弓弦」均無直接來源，moodGuess 一律存疑待評分實聽；Waves of the Random Sea Discogs 風格不含 Drone、歌曲段較多，有判暖／輕風險，列汰換候選。
+- 19733：Terror's Horns moodGuess 存疑：Ba Da Bing 文案稱情緒在「極樂、沉思、威脅」之間、聽者說可能是樂團「最容易入耳、最精緻」，曲目多為 3–5 分鐘而非長 drone，有判暖／輕風險；弦樂器、鑼、回授、近單音調人聲、緩慢下沉則支持靜與冷。發行日 Discogs／MB 為 9 月 1 日、Bandcamp 頁為 9 月 4 日，簡介寫 2015 年即可。
+- 19734：Fursaxa《Alone in the Dark Wood》moodGuess 存疑（x、y）：PopMatters 明寫有鼓、手搖打擊與慢速行進節奏（〈Rattling the Calabash〉），一首失真電吉他、哨笛，吉他緊繃偏原聲，y 可能低於 1.1；z 冷（「colder and more discordant」）證據強。黑膠首發為 Eclipse（2007-01），ATP CD 為 2007-04。
+- 19735：Fursaxa《Kobold Moon》查無樂評，聲音只能引藝人通論，thin；歌詞兩首改編自童書《Flower Fairies of the Autumn》，moodGuess 存疑（可能偏輕、暖），curatorRisk 的 y 邊距 0.3 視為高風險。MB 釘住無誤（75deb30c，2008）。
+- 19736：Fursaxa《Mycorrhizae Realm》moodGuess 存疑：Sonicabuse 稱新世紀質地、超凡之美與古老世界氣息，錄音有大提琴（Helena Espvall）與豎琴（Mary Lattimore），未證實有簧風琴，無鼓描述；z 可能偏暖、y 偏輕。Discogs master 風格欄標 Folk Rock（已覆核）。
+- 19737：Fovea Hex《Here Is Where We Used to Sing》moodGuess 存疑（強）：樂評一致描述鋼琴與人聲領銜、旋律清楚的室內歌曲（Mellow Candle 出身，近 This Mortal Coil／Dead Can Dance），鼓僅〈A Hymn To Sulphur〉遠處一擊（Discogs 另載有 Fabrizio Modonese 的鼓與打擊樂錄音署名）；有判輕或暖的風險，若評分 z≥0 或 y<0.5 建議汰換。維基內文 2011、discography 2012，以 Discogs／MB 的 2011-04-18 為準。
+- 19738：WebSearch 共用 3 次（Natural Snow Buildings 查無、Fursaxa、Fovea Hex）；NSB 的 Bandcamp、Pitchfork、last.fm、Discogs 網頁多為 403／404／JS 牆，改以 Discogs API、Ba Da Bing Bandcamp、維基取得，故四張 NSB 樂評層證據缺。
+- 19739：Terror's Horns 曲名〈King In Yellow〉與 Chambers 同名作品的連結僅為推斷，已從 facts 移除，寫作層不得使用。

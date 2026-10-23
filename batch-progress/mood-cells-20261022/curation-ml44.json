@@ -17,7 +17,7 @@
    "id": "warm-dreampop-2010s",
    "zh": "2010s–20s 暖 dream pop 二線",
    "why": "第二輪：池中同藝人已穩落恍惚者的其他慢盤與暖 dream pop 二線",
-   "count": 12
+   "count": 13
   },
   {
    "id": "warm-slowcore",
@@ -1434,6 +1434,36 @@
    "queryAlias": "",
    "uncertain": "MB 另有同名單曲 RG，取 Album",
    "round": 2
+  },
+  {
+   "artist": "Michael Seyer",
+   "album": "A Good Fool",
+   "year": 2021,
+   "label": "self-released",
+   "country": "us",
+   "faction": "warm-dreampop-2010s",
+   "genres": [
+    "rock",
+    "soul"
+   ],
+   "why": "洛杉磯 Michael Seyer 的第三張專輯，臥室製作的靈魂 dream pop：磁帶糊的吉他、柔焦鍵盤與慵懶情歌旋律，溫熱濕潤，落恍惚。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 1,
+    "why": "慢板輕鼓，磁帶糊吉他＋柔焦鍵盤，慵懶柔聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d4e60fdd-c10e-4181-9e71-912b06d947d8",
+    "https://coverartarchive.org/release-group/d4e60fdd-c10e-4181-9e71-912b06d947d8/front"
+   ],
+   "mbRgMbid": "d4e60fdd-c10e-4181-9e71-912b06d947d8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中《Bad Bonez》x2.4 y0.8 z1.2；y 可能貼 0.8；自發行",
+   "round": 2
   }
  ],
  "notes": [
@@ -1442,6 +1472,7 @@
   "刻意排除：Lush 全部（池中 x 2.9–3.0）；Mazzy Star／Hope Sandoval／Galaxie 500／Damon & Naomi／Cigarettes After Sex／Sugar Plant 同型（池中 z ≤ 0.3）；Mojave 3（ml2 主線已以色溫中性汰 Ask Me Tomorrow）；Alcest 其餘、Lantlôs、Slow Crush、Kinoko Teikoku、Luminous Orange、For Tracy Hyde（推進或噪＝躁）；Goldfrapp《Seventh Tree》（池中 Felt Mountain y 0）；Widowspeak 其餘、Wild Nothing、Japanese House、Pale Saints 首作（躁或輕）；His Name Is Alive、The Verve《A Storm in Heaven》、Radio Dept.、Antlers（池中判冷）。",
   "日本 shoegaze 暖盤：Sugar Plant、pasteboard、Fishmans 已在池，For Tracy Hyde 在 ml4；其餘（Luminous Orange、Kinoko Teikoku、Tokyo Shoegazer 等）偏快偏亮或 MB 查無，未提。",
   "同型集中可擇一：Guthrie & Budd 四張（After the Night Falls／Before the Day Breaks／Bordeaux／Mysterious Skin）、Violet Indiana 兩張、AmAnSet 三張、Clientele 四張、Jesse Sykes 兩張、Novo Amor 兩張、Starflyer 59 兩張、Landing 兩張。",
+  "第二輪（round:2，15 張）：依主線指示，先掃池中 x≤2.7、y≥0.8、z≥0.4 的 dream pop／迷幻藝人，補同人未收的慢盤（Pure Bathing Culture、Nightlands、Ducktails、BMSR、Teen Daze、Small Black、Brightblack、Michael Seyer），再補 2010s–20s 暖 dream pop 二線（Night Moves、Strawberry Guy）與樂評明說 lush／warm／hazy 的 dream folk（Mutual Benefit）。4AD／Projekt ethereal 線查過但不提：池中 Love Spirals Downwards z −0.3、Black Tape for a Blue Girl z −0.8～−1.3、His Name Is Alive z −0.4，同型盤會落頹靡。Nightlands《Oak Island》CAA 無圖，封面用 Apple Music。",
   "風險最高（建議優先汰）：Auburn Lull、Landing 兩張（旋律不明、靠音色撐，新標準下 z 可能貼 0）；AmAnSet 三張與 Clientele（y 可能 < 0.8）；Starflyer 59 同名作（牆厚但情緒偏憂）；Peaking Lights《Cosmic Logic》（x 可能 2.8）。WebSearch 用 2 次。"
  ]
 }
