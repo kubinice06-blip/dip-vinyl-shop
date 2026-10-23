@@ -97,3 +97,11 @@
   - `Orville Peck|Pony`：「Orville Peck 這個藝名屬於南非出生的 Daniel Pitout，他 2003 年移民加拿大。」→「南非出生的 Orville Peck，2003 年移民加拿大。」（Peck 以面罩隱藏身分、本人未公開證實本名，研究稿只引 Wikipedia 一源；本名不進正文）→ 212 字。
 - 16793：核過但未改——Heart Shaped World「雙白金」（RIAA，Wikipedia）、Ingénue「第二張個人專輯」與葛萊美最佳女流行歌手演唱（研究稿兩條）、Tindersticks「四首超過六分鐘」（8:55／7:34／7:11／6:06）、Waterfall II「擱了六年」（2013–14 錄、2020 發）、Smart Flesh「100 至 200 英尺外收音」、Natalie Prass「維吉尼亞聯邦大學爵士系」皆有研究稿出處。Pale Sun「歌依舊放慢來唱」出自 Tim Bray 一源，屬聲音描述非評價，保留。
 - 16794：qa-batch out、qa-check-research（兩檔）、fix-spacing 皆 0 標記；正文無媒體名、無榜單名次、無「據」字。
+
+## 上線與評分（2026-10-23，主線）（條號 16795–16797）
+- **16795**：上線 14 張：card_catalog 14／14、KV 14 鍵回讀逐字一致、試聽 14 ready（picks 自動配對全中）、seed +14、published gate 0 error（14 warning 皆 UPC 盡力而為）。封面 CAA 12、CAA front-500 縮圖 1（Pony 原圖 500）、Apple 1（Mahalia，CAA 404）；兩張主線目視相符。ratings-override 3 張 classic 3→4（Heart Shaped World、Ingénue、Ghosteen），頂點 0。
+- **16796**：子曲風 warm-batch 14／14 有標籤。
+- **16797**：**落格率 13/14＝93%**（`batch-progress/mood-axes/score-ml35/`，照 10-23 體感標準）。評分 x 1.4–2.6、y 0.5–1.0、z 0.2–1.3；出格 Mahalia Jackson《Let's Pray Together》y 0.4 判輕落放鬆（ml31 Mahalia 管弦盤 y 0.5–0.6 貼格線，這張沒過）。z 0.2 貼邊 4 張（Pale Sun、FLOTUS、Ghosteen、Hot Dreams）。**研究後汰 18 張是落格率的關鍵**——中速搖滾、乾淨明亮與陰冷的全數擋下。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Cowboy Junkies、The Low Anthem、Chris Isaak、Orville Peck、k.d. lang、Natalie Prass、Tindersticks、Timber Timbre（8 個掛名；Lambchop、My Morning Jacket、Willie Nelson、Mahalia Jackson、Nick Cave & the Bad Seeds 已有介紹或在排隊）。
