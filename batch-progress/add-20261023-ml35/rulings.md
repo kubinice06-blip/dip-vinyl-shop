@@ -76,3 +76,24 @@
 - **16778** 媒體名與媒體榜名次不進 note：Billboard／RPM／英國榜名次、Metacritic、樂評刊名全數不指派；Smart Flesh 的「幾乎成了一件樂器」寫成廠牌形容；成績只用 RIAA 雙白金（Heart Shaped）與葛萊美（Ingénue）。研究稿 notes 的 moodGuess 存疑不進 note。Orville Peck 照研究稿寫「自製、Koop 錄音混音」；Mahalia 合唱（單源）與 1963 說不寫，寫 1964。
 - **16779** 時序：Heart Shaped 的 1990 電影翻紅標「作品流傳，標時序」；Ghosteen 喪子在專輯之前、標涉逝者克制。
 - **16780** 自查：hook 之間中文 4-gram 0 條；hook 對他張 note 0 條；hook 對自己 note 初掃 3 條（大聲的歌、隨機播放、西岸爵士）已改 note 用字；hook 與 note 無逐字重複句。`node qa-batch.mjs hooks add-20261023-ml35` 全部通過；`node chk-hook-crossgroup.mjs add-20261023-ml35` 全部通過（hook 加權 14–27、note 158–232）。
+
+## 寫作層（writer-1）
+- **16781** 交件：`desc-tools/batches/output/add-20261023-ml35-out-1.json` 7 張（full 6：206–237；thin 1：Waterfall II 174）。逐張：Trinity 219、Pale Sun 212、FLOTUS 237、Smart Flesh 206、Waterfall II 174、Heart Shaped World 226、Pony 234。`qa-batch out`（兩檔合跑全過）、`qa-check-research` 標記 0、`fix-spacing` 0 處；「據」字 grep 0；媒體名與媒體榜名次 0。
+- **16782** 初稿 2 張超標（Heart Shaped 246、Pony 250），整格捨去：Heart Shaped 拿掉第二句裡重複的盤名；Pony 把寫歌／自製／彈奏三件事併成一個子句、尾句改用「唱片」領句。
+- **16783** 第二句領句與「日」後一字全照鉤子層 16776／16777：Trinity「Cowboy Junkies 是加拿大樂團」＋日在；Pale Sun「這支多倫多樂團 Cowboy Junkies」＋日交；FLOTUS 以「身為…唯一不變的成員」＋日由；Smart Flesh 州名接團名、只寫到月；Waterfall II 團名領句＋日先；Heart Shaped 以「以重殘響 rockabilly 復興見稱的歌手」領句、只寫年；Pony「Orville Peck 這個藝名屬於…Daniel Pitout」＋日經。Trinity 錄音日只寫「錄音」，不寫「一夜」（facts 無時段）。
+- **16784** 跨兩檔 han() 4-gram 合掃：初掃 2 張殘片 11 條（共同製作、先以數位形式、交由發行、由與製作、稀疏的鋼〔跨逗號黏合〕、專輯年月、首張專輯、的鋼琴與），途中又長出「製作人是」「擔任製作」兩條（對方同時在改），全在本檔這側拆掉（整個名詞換掉：數位版、掛名、交給推出、搭配製作、稀疏節拍、唱片領句、首作、彈鋼琴與風琴、自己製作）。定稿合掃 2 張以上 0 條。writer-2 若再改，請主線收件時重跑一次。
+- **16785** 研究層禁區照辦：Pale Sun 不寫鋼棒；Trinity 不寫 Moore 設備說法；Pony 寫「自製、Koop 錄音混音」，不稱 Koop 製作人；Heart Shaped 不寫 Chesnut 名、Billboard 名次，成績只寫雙白金，1990 電影翻紅以「轉機在 1990 年」標時序；Smart Flesh 的「幾乎成了一件樂器」寫成廠牌形容。
+
+## 寫作層（writer-2）
+- **16786** 交件：`desc-tools/batches/output/add-20261023-ml35-out-2.json` 7 張（full 6：212–238；thin 1：Mahalia 150）。Ingénue 232、Teatro 238、Prass 233、Mahalia 150、Tindersticks 224、Ghosteen 215、Hot Dreams 225。初稿 Teatro 245 超標，整格捨去「此番重新錄過」改成「舊作重錄」並刪「名叫」「這回」。`qa-batch out`、`qa-check-research`（標記 0）、`fix-spacing`（待補 0）全過；「據」「也就是」grep 0。
+- **16787** 第二句全照鉤子層 16776 配表：國籍接名字（Ingénue「加拿大歌手 k.d. lang」）／樂種接名字（Teatro「鄉村樂的 Willie Nelson」）／前職（Prass）／首位簽約身分（Mahalia）／成軍城市（Tindersticks 以「Nottingham 是…成軍的地方」領句）／團名接雙專輯（Ghosteen）／國籍接團名（Hot Dreams 寫「來自加拿大的 Timber Timbre」，避開 Trinity 的「是加拿大樂團」撞 `拿大樂團`）。Ingénue 第二、三句替 hook 的「合作者」具名 Ben Mink；Ghosteen 的鼓手名不在 note，不具名，第二句補團名與主題。
+- **16788** 「日」後一字照 16777：Ingénue 日上、Prass 日才、Hot Dreams 日問；Teatro、Mahalia 只寫年／月，Tindersticks、Ghosteen 只寫月。Ghosteen 實體版改「在 11 月面世」，避免與 Prass 的「才」同形。
+- **16789** 自掃（han() 4-gram，合掃 out-1 現況＋writer-1 hooks）：拆掉 `製作人是`（Teatro 對 FLOTUS）、`共同製作`（Ghosteen 對 Ingénue）、`擔任製作`（Ghosteen 對 Pale Sun），定稿 2 張以上 0 條。out-1 若之後再動，請主線收件時再合掃一次。
+- **16790** 媒體與否定句：note 未指派媒體名與媒體榜名次，正文 0 處；成績只寫葛萊美（Ingénue）。Prass 初稿「弦樂沒有另請樂團」屬否定句，已刪。
+
+## 主線審稿（16791–16800；2026-10-23）
+- 16791：逐張審 14 張（out-1 7、out-2 7），逐句對回研究稿 facts；事實層未改。
+- 16792：改 1 處（hook 未動，研究稿保留）：
+  - `Orville Peck|Pony`：「Orville Peck 這個藝名屬於南非出生的 Daniel Pitout，他 2003 年移民加拿大。」→「南非出生的 Orville Peck，2003 年移民加拿大。」（Peck 以面罩隱藏身分、本人未公開證實本名，研究稿只引 Wikipedia 一源；本名不進正文）→ 212 字。
+- 16793：核過但未改——Heart Shaped World「雙白金」（RIAA，Wikipedia）、Ingénue「第二張個人專輯」與葛萊美最佳女流行歌手演唱（研究稿兩條）、Tindersticks「四首超過六分鐘」（8:55／7:34／7:11／6:06）、Waterfall II「擱了六年」（2013–14 錄、2020 發）、Smart Flesh「100 至 200 英尺外收音」、Natalie Prass「維吉尼亞聯邦大學爵士系」皆有研究稿出處。Pale Sun「歌依舊放慢來唱」出自 Tim Bray 一源，屬聲音描述非評價，保留。
+- 16794：qa-batch out、qa-check-research（兩檔）、fix-spacing 皆 0 標記；正文無媒體名、無榜單名次、無「據」字。

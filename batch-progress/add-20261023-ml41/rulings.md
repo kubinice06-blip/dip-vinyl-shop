@@ -14,6 +14,15 @@
 - Polaris《Union》《Music》ml4 曾因「同團留三張」汰掉，非聲音理由；池中同團兩張 y、z 0.9–1.0，收。
 - 跨分支去重：對 origin 前 40 個 `claude/*` 分支與 main 的 seed 與卡單，除 Hollie Cook《Twice》外 0 撞（ml38 分支尚未推出，寫入前再查一次）。
 
+## 研究 d 組
+- 19271：BudaMunk《Movin' Scent》**推翻卡單年份**：MB 2019-08-29 為筆誤，Discogs 實物 CD（Dogear DERCD-071）2018-08-29、iTunes ℗ 2018、OTOTOY 與 P-Vine 黑膠新聞皆 2018，year 應改 2018、label 填 Dogear Records；curatorWhy 的「沖繩民謠 dub」為場景樣板、與本盤無關。**moodGuess 存疑：z**（廠方稱先行曲 dark、5 首有 rapper 來賓；機器分析多為 80–90 BPM 半拍、低頻厚，x／y 相符）。
+- 19272：mabanua《Done Already》身分無誤（2008，日期 MB 10-10／iTunes 11-19 兩說，寫 2008 年即可）。**moodGuess 存疑：x／y**（人聲曲佔多、頻譜偏亮、低頻佔比比 beat 盤低；BPM 集中 92；z 暖成立）。
+- 19273：《masta》**不是 Tsutchie 個人曲為主**：前 9 首 Force of Nature、後 10 首 Tsutchie（MB 曲目藝人欄與 Wikipedia 一致）。**moodGuess 存疑：整張偏動**（Wikipedia 稱 Masta 為 Departure 的「陽」、高速高能，FoN 曲用於打鬥；機器分析前半能量與頻譜重心都高於 Playlist），建議汰換或降優先。
+- 19274：《playlist》全盤 Tsutchie 一人（含〈Fly〉feat. AZUMA RIKI），非合輯；機器分析低頻佔比高、rms 全組最低、多數 85–100 BPM，是本組最穩的一張；〈Strike Back〉等 129–136 BPM 少數偏快曲。
+- 19275：Tsutchie《THANKS FOR LISTENING》與 19276《this is a recording》**聲音完全查無來源**（未上 Apple／Spotify 無法機器分析；Discogs 僅風格標籤 Downtempo／Instrumental,Breaks,Abstract；tower.jp 403、CDJournal 503）。status thin，**moodGuess 存疑：全盤無事證**，《this is a recording》的 Breaks／Abstract 標籤與 x 2.5 有衝突風險，建議列「無法驗證」優先汰換。
+- 19277：聲音機器分析（librosa 對 iTunes 30 秒試聽片段，只進 notes 不進 facts）：Movin' Scent 中位約 83 BPM；Done Already 約 92；Masta 前半 86–99 且有 129 的偏快曲；Playlist 85–100。報告的 150–200 BPM 數值多為倍速誤判。
+- 19278：研究層 WebSearch 共用 8 次（超過每張 3 次的總量不致，卡數 6）；Discogs API、MB、iTunes lookup 可用，ja Wikipedia 部分頁 404。
+
 ## 研究 e 組
 - 19281：DJ Deckstream《Soundtracks》《Soundtracks 2》兩張實際都是「每曲一位美國 MC／歌手領唱」的 jazzy hip-hop／R&B 企劃盤（Discogs 風格含 Contemporary R&B、RnB/Swing），不是器樂 beat 盤；BPM、取樣 dusty 程度、低頻、殘響、類比或數位皆查無樂評，facts 只寫可考的客座、混音、曲長與風格標籤，status thin，兩張都寫「moodGuess 存疑」。
 - 19282：Likkle Mai《MW》身分核對無誤（2007-07-21、MK Starliner、MKD-001、9 曲）；Discogs 風格標 Dub，但無來源證實有 dub 版曲目（curatorWhy 的「dub 混音」存疑）；編制為樂團＋銅管，多首用 drum programming，「重」與速度無來源。likklemai.com 已被賭博站接管，不當來源。
@@ -45,3 +54,13 @@
 - **19245**：《Shimadelica》身分過關（RES-110，2006-04-26）。AllMusic 頁 403 讀不到；**moodGuess 存疑**：「慢 dub 拍、迷幻回音厚」無文字佐證，Discogs 標 Ambient／Downtempo 可能更空靈。
 - **19246**：《Umui》（ウムイ）身分過關（RES-148，2009-04-15）；Ryukyu Shimpo 2022 年的《ウムイ》是大城美佐子 best of，同名不同碟已排除。**moodGuess 存疑**：Discogs 風格不含 Dub（只 Ambient／Downtempo），10 首僅〈East Town Dub〉明寫 Dub，「島唄歌手人聲為主」查無客座歌手署名；低頻厚、殘響長缺證據，可能偏空靈偏輕。
 - **19247**：Ryukyu Underground 四張共通——日文來源（CDJournal 搜尋無結果、Tower 403、Apple 無編輯評論）查不到專輯評論，聲音 facts 只到曲風標籤、曲名與宣傳文字；status 一律標 thin，建議主線視評分結果再決定是否保留這組（四張中 moodGuess 皆存疑）。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- **汰 15 張**（研究層聲音反證或聲音零來源；恍惚線存疑且有反證的一律汰，不硬留）：
+  - 拍子快、club 化（x 風險）：Ryukyu Underground 首作（jungle、hip-hop、Afrobeat、drum'n'bass 混編）、《Mo Ashibi》（House 標籤、Extended Mix 開場）、Force of Nature / Tsutchie《masta》（前半 Force of Nature 為打鬥場面高能曲，Wikipedia 稱它是《Departure》的「陽」）、Likkle Mai《mairation》（躍動的 roots rock reggae、人力樂團）。
+  - 輕、空靈、乾淨（y 風險）：Ryukyu Underground《Umui》（Discogs 不含 Dub、偏空靈）、Likkle Mai《Roots Candy》（約半數近 bossa 與流行曲）、《MW》（多首鼓機程式、dub 混音查無）、BudaMunk & J.Lamotta《Searching Skies》（airy、floating）、mabanua《Done Already》（人聲曲多、頻譜亮、低頻佔比低）、松永孝義《The Main Man》（夏威夷、探戈、烏克麗麗、單簧管，非慢 reggae）。
+  - 偏冷：BudaMunk《Movin' Scent》（廠方自稱「ドープでダークでグルーヴィ」；年份另有 MB 筆誤 2019→2018）。
+  - 性質不符或聲音零來源：DJ Deckstream《Soundtracks》《Soundtracks 2》（每曲美國 MC／R&B 歌手領唱的企劃盤，不是器樂 beat 盤）、Tsutchie《THANKS FOR LISTENING》《this is a recording》（聲音無任何來源、無 Apple 試聽，後者 Discogs 標 Breaks）。
+- **留下的存疑張**：LITTLE TEMPO《Ron Riddim In Dub》（原盤池中 y 0.2，dub 版查無聲音來源；同團 dub 盤《ザ・ウェイ・バック・ホーム・イン・ダブ》池中 y 1.3 落恍惚）、Ryukyu Underground《Shimadelica》（Ambient／Downtempo，殘響無證）、Likkle Mai《Dub Is the Universe》（只兩首 Scientist 混音）、Polaris《Union》（新鼓手律動較紮實）、Mad Professor 兩張 lovers dub（只有內頁定性）、Horace Andy《Midnight Rocker》（joyous、skank 鍵盤）、《From the Roots》（somber）、Hollie Cook（〈That Very Night〉黑暗迷幻）。評分看實測。
+- 不補位：策展兩輪已回報日本 dub／downtempo 見底。
+- 定案 **12 張**（a 3、b 4、c 4、d 1、e 0）。汰除卡存 `dropped-cards.json`，研究稿條目移到 `dropped-research.json`。研究 qa-batch 全過。跨分支去重（含 `claude/mood-cells-ml38-md22`、`claude/mood-cells-ml40-mc22`）0 撞。
