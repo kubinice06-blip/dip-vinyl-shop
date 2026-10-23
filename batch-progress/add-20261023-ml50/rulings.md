@@ -31,3 +31,15 @@
 - 20324：Stick Figure《Set in Stone》Billboard 200 名次採維基（101），不採宣傳稿「65」（那是 Top Album Sales）；「賣出一萬張」單一宣傳來源，寫作層不用。dub 證據有具體樂評（〈Shadow〉dubwise 段、滾動貝斯、帶殘響小鼓）。
 - 20325：Stick Figure《World on Fire》moodGuess 存疑：ReadJunk upbeat／energetic、銅管、傳統 live reggae，Rebel Base reggae-rock、easygoing；無任何一篇談 dub 低頻。母帶 Bernie Grundman 與「30 萬張」皆單一來源，不寫。
 - 20326：Trinity Roots《Citizen》第三位成員 Ben Lemi（三源）對 Ben Wood（維基資訊框、Songlines）：facts 採 Ben Lemi，寫作層可不點名。moodGuess 存疑：〈Bully〉重金屬段、〈Haiku〉rocks out、Songlines 稱偏靈魂進步搖滾、迷幻。
+
+## 研究 c 組
+- 20301：Mark McGuire《Living With Yourself》身分保留（Editions Mego eMEGO 107，2010；MB 08-17／Discogs 10-01 日期不同，寫作層只寫年）。moodGuess 存疑：策展「無鼓」但終曲〈Brothers (For Matt)〉約 10 分鐘有打擊樂、被稱最響最 punky；PopMatters 有「snowy electronic dissonance」一句冷字眼，整體仍是暖／懷舊。
+- 20302：Mark McGuire《Get Lost》身分保留（EMEGO 123，2011-09）。RA 與 PopMatters 皆未提鼓，無鼓成立；開場曲轉厚重 fuzz；NYT 稱 warm。moodGuess 輕度存疑：人聲／mantra 使旋律性升高、y 或低於 1.0。
+- 20303：Jefre Cantu-Ledesma《On the Echoing Green》moodGuess 存疑（偏重）：有 tom／hi-hat 真鼓與 click、西班牙語人聲，作者自述「像春天」「more overt pop」，偏明亮輕快；〈Autumn〉吉他薄、高頻帶噪。x 恐不止 2.2、y 恐低於 1.4，建議列汰換候補。無 cold／dark 字眼。
+- 20304：Jefre Cantu-Ledesma《Love Is a Stream》moodGuess 存疑：Textura 稱「blinding guitar inferno」「seething hailstorm of fuzz」，45 分鐘噪音牆，x 1.7 恐偏低；字眼全是 molten／volcanic（熱），無 cold，melancholy 旋律。確認無鼓無貝斯。發行日 MB 10-01／Discogs 10-29／Textura 12 月，只寫 2010。
+- 20305：Chuck Johnson《Balsams》moodGuess 存疑：Pitchfork 轉述摘錄「mournful hymn」、NPR「edge of dusk」，Relix 用 round／lava-lamp 偏暖；z 恐貼 0。Pitchfork 全文被封鎖，「mournful」未入 facts。2019 tak:til CD 多兩首是再版，卡以原版六首為準。
+- 20306：Chuck Johnson《The Cinder Grove》moodGuess 存疑（重）：自稱「suite of requiems for lost places」，Textura 用 forlorn／melancholic／lamentation／reverent，〈The Laurel〉被稱 lamentation，〈Red Branch Bell〉受 Pärt 啟發，屬 mournful／elegiac 類。無 dark／cold 字樣；有電子琴墊與弦樂，溫厚。無鼓。建議列汰換候補或降 z 預期。
+- 20307：Luke Schneider《Altar of Harmony》身分保留（Third Man，2020-05-15；MB 末曲 Derelictico、Third Man 寫 Derelicto，facts 採 MB）。mood 詞全為 calming／steadying／reassuring，無冷字眼；〈Umbra〉有 glitch 節奏（非鼓）；Stars of the Lid 只作比較對象。moodGuess 不存疑（輕）。戒斷故事與作品綁定，寫作層克制。
+- 20308：SUSS《High Line》moodGuess 存疑：Qobuz 摘要稱「darker second full-length」（單一、未見原文）；Americana UK 稱 hazy、「fail to get hot and sweaty」、pulse never rises，y 恐不足；z 可能貼 0。無鼓。人數（廠方 quintet 對 bio trio）與 High Line 陣容未證實，facts 不寫。
+- 20309：SUSS《Ghost Box》身分保留（EVP Recordings 2018-02 自發；Northern Spy 2018-11-16 加長版 11 首是再版，卡以原版七首為準）。無鼓；AAJ 評論僅取自搜尋摘要（頁面 403），Eno／Lanois／Morricone 比較單一來源，寫作層慎用。moodGuess 輕度不存疑，無冷字眼。
+- 20310：c 組整體：未推翻策展層的年份、廠牌、盤名；無任何 facts 引用到 cold／bleak／glacial／ominous 逐字。WebSearch 共用 10 次（每張 3 次內為原則，c 組 9 張合計超出 27 次上限內，未超）。Pitchfork 被 WebFetch 封鎖、AllMusic 403。
