@@ -21,3 +21,8 @@
 - 19831：Port Blue 國別定 us（MB 藝人 country=US、消歧義 Adam Young；維基 Adam Young 頁稱 Port Blue 為其 2006 年器樂計畫、Owatonna MN 人）。《The Airship》自發行（MB 無廠牌）。聲音僅有 Sputnik 樂迷評論（『帶節拍的 Eluvium』）一源，status thin；厚度 y 無證據，moodGuess 存疑（有明確拍子，x 有被推高風險）。
 - 19832：Inventions《Maze of Woods》moodGuess 存疑：Drowned in Sound『mechanical rhythms』、廠牌『beats, chants, bursts of noise』、樂評『chilling, but comforting』，x／z 貼邊；鋼琴被疊在節拍與取樣下、非乾淨前置。無弦樂與磁帶來源。
 - 19833：Inventions 首作推翻策展層『磁帶質感取樣弦樂』——無來源，實為吉他（倒放／殘響）＋電子音景＋打擊樂；兩首有快速打擊樂（x 有升高風險）；色溫溫暖，旋律『simple and accessible』（推翻策展層『旋律碎』顧慮）。
+
+## 研究 b 組（條號 19811–19820）
+- 19811：Olan Mill《Pine》身分無衝突（MB 釘住、Discogs Serein SERE002）。無鼓；小教堂分次錄音；Bandcamp 自述殘響 heavy／slowly decaying、romantic、very human，但同時用 dirge-like 形容管風琴與吉他 drone——色溫字眼有陰鬱成分，z 貼邊風險部分證實。聲音僅 Bandcamp 單一來源（查無獨立樂評），status full 但聲音面偏單源。非現場錄音。
+- 19812：Bing & Ruth 身分無衝突（RVNGNL27）。無固定鼓手（打擊僅一首短暫）；磁帶延遲有（Mike Effenberger）。moodGuess 存疑：樂評稱鋼琴領軍，反覆音型清楚在前，與策展層「鋼琴不在前」不符，y 可能低於 0.9；動態在近乎寂靜與明亮大聲響間，z 有掉中性風險。樂評無陰鬱／冰冷字眼（calm、meditative、warmest playing）。Pitchfork 原文拿不到，只寫其 2016 氛圍名單收錄。
+- 19813：Virðulegu Forsetar 身分一致，MB 日期 2004-11-22 與 Touch／維基 2004-10-03 不同，卡面年份 2004 不受影響。確認是教堂（Hallgrímskirkja）現場錄音、樂手前後分置；無鼓、鋼琴極少、殘響極長、主體銅管＋兩部管風琴。色溫：Musique Machine 偏暖莊重，另一則樂評（僅搜尋摘要）稱電子為冰冷底色、foreboding；z 貼邊風險（0–0.4）部分證實，列 moodGuess 存疑（z）。AllMusic 星等來源互有出入，不寫分數。
