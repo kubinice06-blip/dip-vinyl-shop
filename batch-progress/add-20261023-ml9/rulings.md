@@ -35,3 +35,29 @@
 - **14686**（Wailing Souls《Baby Come Rock》）：身分疑點：MB 為牙買加 1981 Joe Gibbs 版，Discogs 主版本是 1983 美國 Joe Gibbs Music；製作人 Junjo、伴奏 Roots Radics；九首中四首與 Greensleeves《Inchpinchers》重疊，疑為同批錄音以 Joe Gibbs 廠牌另發。無獨立樂評，聲音由鄰近專輯評述（AllMusic：Radics 稀疏留白）推論，status thin。主線可考慮汰換。
 - **14687**（Bob Marley & The Wailers《Soul Revolution Part II》）：Discogs 批註：『Part II』母帶是器樂／dub 版，人聲版為《Soul Revolution》，兩者同封面；卡片以人聲版為主。曲短（2–3 分鐘居多）、Perry 在 Randy's 調音台加殘響與延遲；y 1.0 可信度偏低（低頻厚度無來源）。full。
 - 全組 status：6 張 full、1 張 thin（Wailing Souls）。推翻策展層：Rico 廠牌、Gringo 速度與曲風、Drunken Gambler 速度、Wailing Souls 年份與來歷，共 4–5 處。
+
+## 研究 b 組
+- **14651**（Jacob Miller《Tenement Yard》）：製作人 Lewis Brothers（Inner Circle）；無樂評，聲音只有 Wikipedia「rockers 風格」與 12 首短曲（≤3:30）；moodGuess 存疑（x 可能偏快、z 無來源）。thin。
+- **14652**（Tetrack《Let's Get Started》）：年份衝突——Discogs 依封底日期認定 1980（稱無 1978 版），MB／卡單 1978，無第三來源，交主線裁；Pablo 親彈 melodica／風琴／鋼琴／木琴、Robbie Shakespeare 與 Horsemouth 在班底；「濕回音」無來源。thin。
+- **14653**（Wackies Rhythm Force《African Roots Act 1》）：Discogs 備註原版為 1977 Five Arts，1980 為 Wackie's 重發（年份由主線裁）；Discogs 署 Bullwackies All Stars、MB 署 Wackies Rhythm Force；有無人聲與旋律樂器查無來源；moodGuess 存疑（慢拍、暖皆無支持）。thin。
+- **14654**（Love Joys《Reggae Vibes》）：Bullwackie 錄音室 1981、Top Ranking（Florida）發行；雙女聲和聲、長笛、lovers rock 與 roots 交替有樂評支持，厚低頻與濕混音無來源。與 moodGuess 大致相符，暖度可信。thin。
+- **14655**（Prince Fatty《Prince Fatty vs. Mungo's Hi-Fi》）：實為雙掛名、互相替對方重混音的合作盤；Discogs 與 MB 客串名單不一致，採 MB 與 Mr Bongo 頁；Wikipedia 稱 Prince Fatty 慣把速度調快、樂評稱開場帶派對氣氛，moodGuess 存疑，建議汰換或降為候補。full。
+- **14656**（The Itals《Give Me Power》）：Wikipedia 標 Ital Music，Discogs 與卡單 Nighthawk 307，採 Discogs；管樂組與 God's Children 伴奏有來源；慢與低頻厚無來源，moodGuess 存疑。thin。
+- **14657**（Triston Palma《Presenting Triston Palma》）：製作人 Lincoln Minott 即 Sugar Minott（Black Roots）；只有 6 首、Discogs 註全為延伸版本；完全無樂評，moodGuess 無支持，建議汰換。thin。
+- **14658**（Little John《Reggae Dance》）：推翻策展層——製作人是 Nkrumah Thomas（Jah Thomas），非 Junjo；Roots Radics 伴奏，Channel One 與 King Tubby's 錄混；風格標 dancehall，含管樂組；moodGuess 存疑。thin。
+- **14659**（Little John《Ghetto Youth》）：Junjo 製作、Roots Radics 全班伴奏屬實；速度與混音濕度無來源；moodGuess 存疑。thin。
+- **14660**（Barrington Levy《Poor Man Style》與《Teach Me Culture》，共用此條）：推翻策展層——《Poor Man Style》label 是 Trojan（TRLS 209，MB 1982；另有 Clocktower 加拿大版），製作人 Linval Thompson 與 Brad Osborne、Scientist 混音、Channel One 錄音，非 Junjo、非 Greensleeves；《Teach Me Culture》製作人是 Levy 本人與 Helena Hall，Roots Radics 伴奏、1983 Channel One，非 Junjo。兩張都無聲音樂評，moodGuess 存疑。thin。
+- 全組 status：1 張 full（Prince Fatty）、10 張 thin。推翻策展層：Tetrack 年份（疑）、Wackies 年份（疑）、Little John《Reggae Dance》製作人、Levy《Poor Man Style》廠牌與製作人、Levy《Teach Me Culture》製作人，共 5–6 處。建議主線汰換：Prince Fatty vs Mungo's、Triston Palma；其餘 moodGuess 皆待聽感複核。
+
+## 研究 a 組
+- **14641**（Augustus Pablo《Rockers Meets King Tubbys in a Fire House》）：Shanachie 1980 美版，Dubblog 稱 melodica 收得少、Tubby 回音延遲、氣氛神祕誘人；moodGuess z 輕度存疑（神祕而非純暖），其餘符合。Prince Jammy 封面未列名。full。
+- **14642**（Pablo《Rising Sun》）：moodGuess 存疑（x、z）。Trouser Press：由 Scientist 混音、多首 uptempo、令人失望；Spin 8/10、AllMusic 與 Encyclopedia 各 1 星。卡單 label 填 Rockers，Discogs 主版為 Greensleeves GREL 90。建議降級或汰換。full。
+- **14643**（Pablo《Earth’s Rightful Ruler》）：推翻年份，卡單 1988 是 Shanachie CD 年，原版 1982 牙買加 Message（美版 1983），請改 1982。非 dub 而是 roots 專輯，含 Hugh Mundell 人聲、無管樂（卡單 why 有誤）。full。
+- **14644**（Pablo《Africa Must Be Free… by 1983 Dub》）：Prince Jammy 在 King Tubby 錄音室混音的人聲專輯 dub 版，八首（Discogs 牙買加首版），樂評僅「adequate companion」，無聲音描述；z 存疑，status thin。
+- **14645**（Lee Perry《Musical Bones》）：實為 Vin Gordon 長號專輯，Perry 製作且「played it very straight」，非濕 dub；moodGuess 存疑，建議降級。Dip 白標、傳說 300 張（單一來源）。full。
+- **14646**（Lee Perry《Kung Fu Meets the Dragon》）：功夫電影題材、含口白與打擊樂、單曲 2–3 分半，Pablo 吹 melodica；moodGuess 的「慢、霧」缺證據，x、z 存疑，建議降級或汰換。原始首刷十首，1995 再版補成十三首。full。
+- **14647**（Lee Perry & Mad Professor《Mystic Warrior》）：推翻年份，卡單 1990 取 MB（CD、卡帶年），原版 Ariwa ARILP054 黑膠 1989，請改 1989。Perry 主唱、Ariwa 80 年代末層疊製作，無「慢、暖、厚低頻」明文；moodGuess 存疑。full。
+- **14648**（Mad Professor《Dub Me Crazy, Part 3》）：Discogs 標 Dub／Downtempo／Experimental，含 Johnny Clarke、Sandra Cross 等人聲與馬林巴、鋼鼓、笛子、合成器，編制熱鬧彩色；低頻厚有 Ransom Note 支持，z、x 待聽，moodGuess 存疑。full。
+- **14649**（Mad Professor《Dub You Crazy With Love》）：lovers rock 曲目的器樂 dub，內頁文案支持浪漫暖調，速度與低頻無明文，1997 CD 類比或數位未明；輕度存疑。full。
+- **14650**（Bob Andy《Bob Andy's Dub Book》與 The Aggrovators《Kaya Dub》）：兩張皆無聲音描述，status thin，建議主線聽過再決定。Dub Book 1989（維基誤寫 1994），原曲含〈Unchained〉〈Going Home〉，維基稱是 Song Book 的 dub 但發行單列〈Freely〉，來源專輯未明；Kaya Dub 撞名 2007 Attack CD（另一張），卡單釘 1978 Third World LP 十首。
+- 全組 status：8 張 full、3 張 thin（Africa Dub、Bob Andy、Kaya Dub）。推翻策展層：年份 2 處（Earth’s Rightful Ruler、Mystic Warrior）；moodGuess 存疑 10 張（僅 Fire House 輕度），建議汰換或降級者以 Musical Bones、Kung Fu、Rising Sun 為首。
