@@ -22,3 +22,12 @@
 - 18297｜研究 b｜Trance to the Sun《Ghost Forest》：Discogs 樂手只有 Sain 與 Wakefield、無鼓手，前身是獨奏電吉他加環境效果，末三首為現場；策展層「慢鼓」無來源，**moodGuess 存疑：鼓有無**（x 偏靜不變）。
 - 18298｜研究 b｜年份／國別／廠牌：9 張全部與卡單一致，未推翻。Discogs master 年份與 MB 差一年者（Face Two 2000、Songs 2001）是黑膠版發行年，沿用卡單。
 - 18299｜研究 b｜來源限制：AllMusic、Metal Archives、Progarchives、Discogs 網頁直連 403，Discogs 改走 API；WebSearch 用 3 次（Sopor、LICTD、Lacrimosa），Trance to the Sun 聲音事實靠維基與 Discogs 註記。
+
+## 研究 a 組
+- 18281：Cranes《Particles & Waves》卡單 label 寫 M10；MB 與 Discogs 皆為 Dadaphonic（UK DADA 003），美國版 Manifesto。以 Dadaphonic 為準，卡單 label 建議改。
+- 18282：moodGuess 存疑（建議主線複核或汰換）：Cranes《Particles & Waves》（來源寫輕電子、原聲吉他撥弦、鳥鳴，偏輕盈乾淨，y 恐 ≤0.5）、Cranes《Cranes》2008（無鋼琴，輕鼓、風琴／豎琴鍵盤，y 恐 0.3–0.8）、Cranes《Future Songs》（鼓輕，y 邊緣 0.5–0.9，z 恐 −0.5～−0.8）。
+- 18283：moodGuess 存疑（能量）：Dead Can Dance 首張（Trouser Press 與維基皆稱 drum-driven）、Fields of the Nephilim《Mourning Sun》（樂評稱延續《Zoon》而非《Elizium》，有程式鼓與 driving rhythm，x 恐 ≥3.0）、Lowlife《Permanent Sleep》（有律動的後龐克編制，鼓型無來源，x 可能 2.7–3.0）。
+- 18284：moodGuess 存疑（三軸）：Skin《Blood, Women, Roses》——策展層預估『幾乎無鼓』，來源（Quietus）寫鼓硬而有衝擊力（Gira 程式鼓），〈Come Out〉有舞池律動；Skin《Shame, Humility, Revenge》——樂手名單是原聲吉他、鋼琴、真人弦樂與印度雙簧管，無鼓手，編制是室內樂，y 恐偏輕；該張找不到單篇聲音描述的樂評，status 標 thin。
+- 18285：Kirlian Camera《Still Air》大致成立（唱片冊註明『No sampled rhythms』）；chaindlk 評的是同年 Absentee EP 的〈Still Air〉（driving beats），不是本專輯，facts 未引用，勿混淆。
+- 18286：WebSearch 本組用了 7 次，超過每支 3 次的上限（Skin、Cranes、Kirlian 的聲音描述網站多為 403／503，只能靠搜尋找替代來源）；已記錄，勿再追加。
+- 18287：Skin 兩張『同為 1986 年 10–12 月錄音』僅 Discogs 與維基兩來源，寫作層若寫須保留『約』。
