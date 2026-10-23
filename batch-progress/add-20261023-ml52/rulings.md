@@ -1,0 +1,121 @@
+# add-20261023-ml52 裁定（情緒薄格策展線・恍惚：2000s R&B ballad／slow jam 續集＋ml49 剩餘 quiet storm 成人抒情、女聲慢板 R&B）
+
+> 店主 2026-10-23「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 11 輪，本工作階段負責 ml52、mc39（評分照 10-23 體感標準）。場景與條號 `batch-progress/mood-cells-20261022/SCENES.md`（ml52 列；可擴寫：ml49 剩餘的 quiet storm 成人抒情、2000s 慢板 neo-soul、女聲慢板 R&B），交接 `batch-progress/HANDOFF-mood-cells-line.md`。目標格：**恍惚＝靜（x<3.0）＋重（y≥0.5）＋暖（z≥0）**；策展邊距 x≤2.7、y≥0.8、z≥0.3。
+> 策展：`curation-ml52.json`（54）→ 主線汰 0（`master-override-ml52.json` 空）→ `master-ml52.json`（MB 回查 54/54 釘住、人工 0；flag 1 見下）→ `pick.json`（45，候補 9）→ `build-cards.mjs`。
+> 本批卡單：`desc-tools/batches/cards/add-20261023-ml52-cards.json`（45 張；研究 a–e 各 9）。身分：MB 釘住 45、§1 人工 0。
+> **預留：研究 a 20521–20530、b 20531–20540、c 20541–20550、d 20551–20560、e 20561–20570、鉤子 20571–20580、寫作 20581–20590、主線 20591–20600。**
+---
+
+## 主線策展（不佔條號）
+- 策展 54（2000s 男聲 slow jam 二線 26、老將 2000s quiet storm 慢盤 15、女聲慢板 R&B 13）；moodGuess 全過邊距（x 2.0–2.6、y 0.8–1.0、z 1.0–1.6），y 有 40 張正好 0.8。去重：seed 與所有 curation-*.json 0 撞。
+- **頭牌不提**：Joe、Dru Hill、Brian McKnight、Donell Jones、112、Ginuwine、Musiq Soulchild、Tyrese、Monica、Brandy、Tamia、Faith Evans 池中判輕、x≈3 或快慢各半。主力為池中同人已落恍惚（y 0.6–0.9）的歌手其他盤與池中沒有的二線。
+- **候補 9（不入 pick，研究汰換時從這裡補）**：Avant《The Letter》《Face the Music》（同人勻量；池中 y 0.6）、Ronald Isley《Here I Am: Isley Meets Bacharach》（管弦乾淨判輕風險）、Will Downing《After Tonight》（smooth jazz 風險，ml49 先例）、Jaheim《Appreciation Day》、Anthony Hamilton《What I'm Feelin'》（同人勻量、聲音資料少）、Jon B.《Pleasures U Like》（製作乾淨）、Tank《One Man》（數位製作、同人勻量）、Angie Stone《Stone Love》（中板數首）。
+- **MB flag**：Lalah Hathaway《Where It All Begins》MB 首發 2010-01-01 為佔位值，策展填 2011（Concord／Stax 2011-10），研究層核對。'Bout It、Baby Makin' Music、Ain't Nobody Worryin' MB 正題彎引號，卡用 ASCII 撇號。
+
+## 研究 e 組
+- 20561：Lalah《Where It All Begins》年份核對：MB 2010-01-01 為佔位值，維基與 Stax 發行為 2011-10-18，策展填 2011 正確。
+- 20562：moodGuess 存疑（快慢各半或乾淨數位，建議汰換）：Regina Belle《Believe in Me》（E-Smooth／Mike & Manni 節奏製作，AllMusic 稱生涯節奏推力最強）、Lalah（AllMusic：harder beats、disco-funk 最佳曲，九組製作人）、Vivian Green《Vivian》（Storch 數位鼓點，兩支單曲舞曲榜冠軍）、Keke Wyatt《Soul Sista》（Huff 的 groove／中板，樂評稱公式化）、Syleena Johnson《Chapter 2》（〈Guess What〉約 82 BPM 中速，Hi-Tek 等拼盤，含 Busta Rhymes 混音）、Miki Howard《Pillow Talk》（AllMusic：drum loops 或 smooth jazz 編曲，含 Which Way Is Up 等快板）。
+- 20563：輕度存疑：Vivian Green《Beautiful》（AllMusic：heavily synthesized、programmed，So Far Gone 為中板，慢歌比例無來源）、Marsha Ambrosius《Friends & Lovers》（前段為 slow jam，後段有〈Stronger〉Dr. Dre／DJ Premier 式硬拍，19 首含 5 段插曲，約六成慢，可保留）。
+- 20564：大致成立：Kelly Price《Soul of a Woman》（NYT：多數為 languorous ballads；但有 R. Kelly／Stevie J. 中板單曲與 2 段插曲）。
+- 20565：推翻策展層一處：Keke Wyatt curatorWhy 稱本盤有〈My First Love〉；該曲是 Avant 的單曲、Keke 客串，不在本盤，Avant 在本盤客串為 Nothing in This World、I Can't Wait、Bad Boy 三首。
+- 20566：日期與銷量衝突取捨：Regina Belle MB 1998-09-22 對維基 1998-06-09，Kelly Price MB 1998-01-01（佔位）對維基 1998-08-11，寫作層一律只寫年份；Keke Wyatt 藝人頁稱逾百萬張，專輯頁為 RIAA 金唱片／SoundScan 約 56.6 萬，採專輯頁；Kelly Price 廠牌寫 T-Neck（Island 發行）最穩。
+- 20567：Vivian、Vivian Green《Beautiful》、Miki Howard 標 status thin（聲音的逐首速度查不到來源，其餘身分、年份、廠牌皆對）；AllMusic／SoulTracks 全文 403，未取 Discogs。
+
+## 研究 d 組
+- 20551：Silk《Always and Forever》：翻唱專輯，Houston Press 稱編曲逐音忠於原版；原版含 new jack（Nite and Day 1988）、合成器放克（Don't Disturb This Groove 1987）、舞曲（A Night to Remember 1982）三首中快板，其餘六七首慢歌。moodGuess 存疑（慢歌約六七成、製作承襲八〇年代數位鍵盤，非厚暖）。無逐曲 BPM 來源。
+- 20552：Kenny Lattimore《Uncovered / Covered》：MB 單一發行為兩碟 24 軌，第二碟《Covered》11 首為 Fred Hammond 製作的福音（含 Rejoice (Clap Your Hands)、No Limit）；第一碟含 Tonight (2 Step)、Figure It Out。moodGuess 嚴重存疑，建議降級或汰換；MB 掛名「Kenny Lattimore & Chanté Moore」，留意池中重複。
+- 20553：Kenny Lattimore《Timeless》：Barry J. Eastmond 一人製作的 11 首翻唱，Verve，Smooth Jazz Airplay 單曲；慢歌占多數但無逐曲速度，製作偏拋光，z 可能低於預估。小存疑。
+- 20554：Will Downing《Emotions》：GRP、Jazz 與 Contemporary Jazz 專輯榜雙第 2；查無專輯級樂評與製作名單（AllMusic、SoulTracks、Discogs 403，Wikipedia 無獨立條目），status thin。與 ml49 汰掉 Downing 的 smooth jazz 盤同屬風險，moodGuess 存疑，建議降 z 或換候補。
+- 20555：Freddie Jackson《Life After 30》：Orpheus 1999，製作人有 Force MDs 成員 Shawn Waters、Bayyan 兄弟、Paul Laurence；篇名與含混音版單曲顯示前半偏中速 R&B，後半 Laurence 四首較像慢歌；無樂評，status thin，moodGuess 存疑，建議降級或汰換。
+- 20556：Phil Perry《The Heart of the Man》：推翻策展層「Perri 樂團」（實為 The Montclairs，1980 年代初與 Kevin Sanlin 雙人檔）；「假音」未見來源，不寫。Duke、Porcaro、Ritenour 等錄音室樂手，Call Me 登 Hot R&B Singles 第 1 名（單站互證）。大致成立，x 可能略偏低。
+- 20557：Angie Stone《The Art of Love & War》：評論稱許多歌偏慢，同時稱「現代、數位質感」；Baby 為 Adult R&B 冠軍的中板單曲，Pop Pop、Play Wit It 等為中板。慢歌估七至九首，z 偏高，可降到 1.0–1.2；小存疑。
+- 20558：Angie Stone《Unexpected》：推翻策展層「慢板為主、厚低頻合成墊」——Wikipedia 稱轉向舞曲流行、放克、上揚，Apple Music 評論稱 I Ain't Hearin' U、Hey Mr. DJ 是舞曲、Tell Me 是 Auto-Tune 夜店曲；製作為乾淨數位。moodGuess 嚴重存疑，建議汰換。MB 首發日 2009-01-01 為佔位，美國實際 2009-11-23。
+- 20559：Chanté Moore《Love the Woman》：AllMusic Kellman 稱慢歌「彼此相似」並稱製作滑順，George Duke 製作 Give Me Time 與 Guess Who I Saw Today；Can't Do It 風格不搭、Special 可能為中板。大致成立，小存疑；R&B 榜名次專輯頁 14、藝人頁 15，採專輯頁。
+- 20560：備註：本組可靠度——Silk 與 Downing 缺逐曲 BPM；Downing、Jackson 標 thin。SoulTracks（Silk 評論）僅來自搜尋摘要，不入 facts。
+
+## 研究 c 組
+- 20541：9 張 moodGuess 逐張核對，Rahsaan／Dwele／Stroke of Genius／Body Kiss／Baby Makin' Music／Mr. I 六張 notes 標「moodGuess 存疑」（快慢各半或中快板／R. Kelly、JD 式數位製作、嘻哈硬拍）；In My Songs 聲音證據薄（thin）；Do I Speak、Love Session 大致成立。
+- 20542：《Do I Speak for the World》美國首發廠牌為 Elektra（2004-11-30），卡單 Atlantic 取自 MB 英國版；建議主線改 Elektra。年份不變。
+- 20543：Body Kiss MB 首發 2003-01-01 為佔位，實際 2003-05-06；Rahsaan 美國版 2004-10-26 為 Artistry Music，卡單 Dome 為英國首發，兩者並存。
+- 20544：Mr. I 年份 2010 屬 2000s 場景邊緣，留給主線。
+
+## 研究 b 組
+- 20531：9 張逐張核 moodGuess。存疑偏嚴重（建議汰換）：Dave Hollister《Real Talk》（hip-hop infused、開場取樣 James Brown 硬拍、Karma 鼓更硬，慢歌證據僅 Pleased Tonight／Almost）、Raheem DeVaughn《Love & War MasterPeace》（概念盤，三段口白＋Ludacris／Wale 合作，無慢板為主的來源）、Tank《Force of Nature》（Timbaland 掛七首、EW 稱 leaden beats、快慢各半、乾淨數位）、Jesse Powell《'Bout It》（AllMusic 明寫 hip-hop-ish 製作＋medium-tempo groove，Rodney Jerkins；策展「慢板為主」不成立）。
+- 20532：輕度存疑（快慢／製作乾淨）：Anthony Hamilton《The Point of It All》（Boston Phoenix 稱 clinical、programmed beats、一首接一首 mid-tempo；EW 稱 midtempo simmer；Vibe 稱 upbeat）、《Back to Love》（Hamilton 自述要 brighter、more mainstream；曲長短）、Case《Open Letter》（無任何速度來源，製作 Tim & Bob 偏數位）。
+- 20533：大致成立：Anthony Hamilton《Ain't Nobody Worryin'》（dreamy／dreary／swampy hot、福音、Delta blues；但 Sista Big Bones 俏皮，非整張慢板）、Tank《Sex, Love & Pain》（roller coaster of ballads、Adult R&B 冠軍單曲、四首逾 5 分鐘；smooth urban contemporary 製作仍有乾淨數位風險）。
+- 20534：推翻／更正策展層：(1) Point of It All 卡單 label「BMG」→ Wikipedia／MB 皆為 So So Def／Zomba／Mister's Music，建議改 So So Def；(2) 'Bout It 的 curatorWhy「慢板 ballad 為主」不成立；(3) 'Bout It 為 1998，屬 2000s 場景外延；MB 廠牌 MCA、Wikipedia Silas／MCA，卡單 Silas，並存。
+- 20535：日期衝突：Case《Open Letter》MB 2001-04-04、Wikipedia 2001-04-24，寫作層只寫「2001 年 4 月」；Point of It All MB 兩個 release 12-15／12-16，Wikipedia 12-16，取 12-16。
+- 20536：各盤的 AllMusic、SoulTracks 皆 403／503，評論多為 Wikipedia 轉述或搜尋摘要；NPR（Raheem、Hamilton Back to Love）503，未入 facts。無法逐曲核速度，曲名推測速度的句子只留在 notes（Force of Nature），不入 facts。
+- 20537：Jesse Powell 的銷量認證（Wikipedia 內文 70 萬 vs 表格 50 萬）互相衝突，不寫；Powell 逝世屬無關後續事件，不寫。
+- 20538：moodGuess 汰換建議優先序（高→低）：Jesse Powell、Tank Force of Nature、Raheem DeVaughn、Dave Hollister、Anthony Hamilton Point of It All、Anthony Hamilton Back to Love；保留：Hamilton Ain't Nobody Worryin'、Tank Sex Love & Pain、Case Open Letter（輕度）。
+
+## 研究 a 組
+- 20521：9 張 moodGuess 逐張核對，**九張全標「moodGuess 存疑」**，無一能證實「全盤慢歌」。重度：Still Ghetto（嘻哈客串與取樣硬拍多，慢歌約四到五首）、Makings of a Man（PopMatters 直指前半 R&B thug 取向，I've Changed 為加速取樣；慢歌約三首）、Things in the Game Done Changed（維基明言比前作更多 uptempo，It's Okay／No One Else／Baby Do Those Things 為中快板，慢歌約三分之一到一半）、Director（多製作人、Lil Wayne／Lloyd Banks／Dupri 客串，Avant 自言加了嘻哈）。中度：Ghetto Classics（Like a DJ 為 Storch 俱樂部硬拍，後三四首才是慢歌）、Let's Talk About It（AllMusic 稱更 upbeat、更光滑，17 位製作人偏光滑數位）、Private Room（The Pitch 稱慵懶但「central iciness」，Vibe 稱 midtempo，偏冷與乾淨合成器）。輕度：Another Round（Boston.com 稱拋光、克制、steady groove，標題曲衝榜取向）、So Much Better（AllMusic 稱 hip-hop-spiced grooves，Baby Cham 版 Oh No）。建議主線依此汰換或降級；Jaheim 前三張與 Hollister 製作屬取樣厚暖，不是乾淨數位，若入池至少 z 無虞。
+- 20522：Director 推翻策展層：curatorWhy 寫「Steve Huff 製作的厚鍵盤墊」，實際 Huff 僅做約三首，其餘為 Dupri、Cox、Jerkins、The Underdogs、Ron Fair 等。
+- 20523：發行日兩邊不一，年份皆不變：Still Ghetto（MB 11-04／維基 11-05）、Ghetto Classics（MB 2006-01-06／美版維基 2006-02-13）、Another Round（MB 02-08／維基 02-09）、Hollister（維基 2002-09-17／MB 10-15）。
+- 20524：Carl Thomas《So Much Better》廠牌：MB 為 umbrella records、維基為 Umbrella Recordings 與 Unsung Entertainment（Bungalo／Universal 負責通路），卡單 Bungalo Records；建議卡面維持 Bungalo 或改 Umbrella，主線定奪。
+- 20525：Another Round、Private Room、Let's Talk About It、So Much Better 四張因逐曲速度與慢歌比例查無來源，status 標 thin；AllMusic 全站 403、NYT／Vibe／BBC／EW 不可抓，已改用 PopMatters、Boston.com、The Pitch、DJBooth、Urban Bridgez 與維基引文。
+- 20526：補研究 4 張（Hamilton《What I'm Feelin'》、Jaheim《Appreciation Day》、Tank《One Man》、Angie Stone《Stone Love》）逐張核 moodGuess。Tank《One Man》嚴重存疑（建議汰換）：AllMusic 明言前半抒情、後半 up-tempo，Jazze Pha／Mannie Fresh 製作，Baby Da #1 Stunna 客串，18 軌含短曲，慢歌不到全盤。Stone《Stone Love》中度存疑：自述要更 upbeat，首單曲 Dance Club 冠軍加 Snoop 客串；取樣老派溫暖，z 成立。
+- 20527：Hamilton《What I'm Feelin'》輕度至中度存疑：NPR 與 Gulf News 皆稱開場〈Save Me〉upbeat、〈Never Letting Go〉gently driving，僅〈Ain't No Shame〉明確 downtempo；策展層的「號角、厚低頻」查無來源，未入 facts；樂評無陰冷字眼，教堂風琴與藍調吉他偏暖，〈I Want You〉被稱 inorganic。status thin。
+- 20528：Jaheim《Appreciation Day》輕度至中度存疑：〈Age Ain't a Factor〉為中板，〈Sexting〉為 boom bap 鼓軌加弦樂取樣，其餘逐曲速度查無來源；14 軌皆在 3:11–4:48，無長板抒情；無饒舌客串。status thin。
+- 20529：發行日並存：Hamilton MB 3-18（歐洲等地）／美國 3-25；Jaheim MB 9-02（加拿大）／維基 9-03；Tank MB 10-29／維基 10-28；Stone MB 06-10 為佔位、英國 06-28、美國 07-05（維基 07-06）。年份與廠牌皆不推翻（Stone 英國版為 Arista，美國 J Records）。Tank 維基內文與表格 R&B 榜名次不一（4 與 5），facts 不寫。Hamilton 維基稱第六張、PopMatters 稱第五張，寫作層別寫序數。
+- 20530：來源限制：AllMusic、SoulTracks 403，NPR 原頁 503（改用 WFAE 轉載頁）；BET Rundown 抓取只回首頁，Jaheim 的 Sexting 描述來自搜尋摘要，單站。評分星等一律不入 facts。汰換建議優先序（高→低）：Tank《One Man》、Angie Stone《Stone Love》、Jaheim《Appreciation Day》、Hamilton《What I'm Feelin'》。
+
+## 主線：研究後汰換（不佔條號）
+- 研究五組 45 張幾乎全標存疑（逐曲速度無來源）。照 ml49 結論「中板照樣落格，只擋明確舞曲與 hip-hop 硬拍取樣」放寬中板，汰 20（卡單、研究稿、`pick.json` 同步移除）：
+  - hip-hop 硬拍取樣／饒舌客串多、快慢各半（判躁）：Jaheim《Still Ghetto》《Ghetto Classics》《The Makings of a Man》、Avant《Director》（Lil Wayne、Lloyd Banks 客串）、Carl Thomas《Let's Talk About It》（upbeat、LL Cool J）、Jesse Powell《'Bout It》（hip-hop-ish 中板 groove）、Tank《Force of Nature》（Timbaland 七首）、Raheem DeVaughn《The Love & War MasterPeace》（Ludacris、Wale、口白）、Dave Hollister《Real Talk》（James Brown 取樣、hip-hop infused）、Dwele《Sketches of a Man》（嘻哈放克拼貼、短曲過半）、Ronald Isley《Mr. I》（T.I.、顫動底鼓）、Rahsaan Patterson《After Hours》（派對快歌約半）。
+  - 舞曲／disco-funk／夜店（判躁）：Angie Stone《Unexpected》（轉向舞曲流行，推翻策展）、Vivian Green《Vivian》（舞曲榜冠軍單曲）、Lalah Hathaway《Where It All Begins》（harder beats、disco-funk）、Regina Belle《Believe in Me》（生涯節奏推力最強）。
+  - smooth jazz／drum loop（判輕）：Will Downing《Emotions》（GRP、爵士榜；ml49 先例）、Miki Howard《Pillow Talk》（drum loops／smooth jazz、含快板）。
+  - 色溫：Avant《Private Room》（樂評「central iciness」，研究稿陰冷字眼先例）。
+  - 身分／重複：Kenny Lattimore《Uncovered / Covered》（MB 掛名 Kenny Lattimore & Chanté Moore、第二碟 11 首福音）。
+- 留下但存疑、交評分裁定：Jaheim《Another Round》、Carl Thomas《So Much Better》、Dave Hollister《Things in the Game Done Changed》（較多中快板但製作厚暖）、Isley《Body Kiss》《Baby Makin' Music》（池中《Eternal》同期 R. Kelly 製作落恍惚）、Levert《Stroke of Genius》、Silk《Always and Forever》、Freddie Jackson《Life After 30》、Hamilton《The Point of It All》《Back to Love》。
+- 候補補 4（a 組，派一支補研究 append 進 a 檔）：Anthony Hamilton《What I'm Feelin'》、Jaheim《Appreciation Day》、Tank《One Man》、Angie Stone《Stone Love》；其餘候補（Avant ×2、Isley Meets Bacharach、Downing《After Tonight》、Jon B.）與汰換理由同型，不補。
+- 研究推翻照研究稿改卡單廠牌：Hamilton《The Point of It All》BMG→So So Def、Levert《Do I Speak for the World》Atlantic（英國版）→Elektra、Carl Thomas《So Much Better》Bungalo→Umbrella（MB、維基）、Kelly Price《Soul of a Woman》Island→T-Neck。Lalah flag 隨汰換結案。
+- 補研究後再汰 2：Tank《One Man》（後半 up-tempo、Mannie Fresh／Baby 客串、〈Party Like a Thug〉〈Club〉）、Angie Stone《Stone Love》（自述更上揚、首單曲 Dance Club 冠軍、Snoop Dogg 客串）。Hamilton《What I'm Feelin'》、Jaheim《Appreciation Day》（快慢混合但無硬拍取樣／饒舌客串）留下交評分。**定案 27 張**（a 5、b 5、c 6、d 6、e 5），候補用罄、不湊數。
+
+## 鉤子層（a–c）（20571–20575）
+- **20571** 交件：`desc-tools/batches/hooks/add-20261023-ml52-hooks-a.json`（5）、`-b.json`（5）、`-c.json`（6），key 逐字、順序同研究稿（汰換後 16 張）。預算公式照 1793-B：`Array.from(hook)+Array.from(note) − 主故事： − 所有 → − 正文只寫上列各項。 − 這條骨架全批只走本張。`；thin（Another Round、So Much Better、What I'm Feelin'、Appreciation Day、In My Songs）上限 170，其餘 230。逐筆（預算／hook 加權／hook 原始字元）：Another Round 142／21／24｜So Much Better 158／20／23｜Things in the Game 228／23／27｜What I'm Feelin' 162／20／20｜Appreciation Day 169／20／28｜Ain't Nobody Worryin' 219／20／20｜Point of It All 225／20／20｜Back to Love 228／21／21｜Sex, Love & Pain 217／18／18｜Open Letter 224／20／30｜Stroke of Genius 226／19／25｜Do I Speak 229／16／22｜In My Songs 165／20／20｜Body Kiss 225／23.5／28｜Baby Makin' Music 216／17／17｜Love Session 213／13／13。初稿 16 張中 15 張超標（最高 335），整格捨去：Another Round 單曲名；Carl Thomas〈You Ain't Right〉與客席三人（含同批 Hollister，免互指）；Hollister 首週銷量、〈It's Okay〉、回 DreamWorks；What I'm Feelin' 的 Batson 與葛萊美入圍；Appreciation Day 的 Shirley Murdock、Isley 引用（免互指）、名次、製作人；Ain't Nobody 的 Zomba 與 RIAA 金唱片；Point of It All 的廠牌句；Back to Love 的「粗礪嗓子」；Tank 的 Underdogs 與 R&B 榜冠軍；Case 的 Tim & Bob 與「更土更厚實」；Stroke of Genius 的取樣曲名、Tamia／〈Close to You〉、R&B 榜冠軍；Do I Speak 的 6 分鐘開場與 Trey Songz；In My Songs 的葛萊美獎；Body Kiss 的 DreamWorks 句、首週登頂首例、「人聲線條」；Baby Makin' 的簽約月份與 R. Kelly 對唱；Love Session 的 7 首逾 4 分半、Rick James／Smokey 原唱、Allamby 製作（ml49《Tonight》已用同軸）。壓完回核 hook 依賴：Point of It All 首週最佳前移 g2、Case 的 Stevie Wonder 前移 g2、Stroke of Genius 悼念前移 g2、In My Songs 名次前移 g2、Another Round 專輯名次併入 g2、Back to Love 補回「當了爸爸」進 g2（初稿 note 漏了，hook 踩空）。hook 自驗改字：Body Kiss「整張交給 R. Kelly」→「包下近乎全盤」（有一首是 Tim & Bob）。
+- **20572** 骨架歸屬（16 張 16 條，只在擁有者 note 寫歸屬句）：Another Round＝單曲同卡一個名次、專輯反衝高位；So Much Better＝早年成名曲的製作人回鍋包辦七首；Things in the Game＝在只待一張的廠牌拿下生涯唯一前十；What I'm Feelin'＝換到安靜城市寫錄（納許維爾）；Appreciation Day＝跨樂種借老歌（Sinatra）；Ain't Nobody Worryin'＝單曲編曲由簡到滿；Point of It All＝八間錄音室拼裝；Back to Love＝為人父後求亮求大眾；Sex, Love & Pain＝第三張才第一次貼家長警告；Open Letter＝被聽出 70 年代 Stevie Wonder＋廠牌末張；Stroke of Genius＝悼念同年過世的前輩；Do I Speak＝訪談當過場；In My Songs＝身後發行反成生涯最高；Body Kiss＝老團把整張交給一位製作人、睽違近三十年冠軍；Baby Makin' Music＝廠牌被併後的自由身與延期上市；Love Session＝長曲盤＋五人編制最後一張。d／e 請避開以上 16 條（尤其「離開某廠牌後第一張」本側未用，留給 d／e）。hook 四型：懸疑（Do I Speak、In My Songs、Things）／斷言（Another Round、Appreciation Day、Point of It All、Open Letter、Body Kiss）／場景（Ain't Nobody、What I'm Feelin'、Stroke of Genius、Love Session）／人物定調（So Much Better、Back to Love、Sex Love & Pain、Baby Makin'）。
+- **20573** 同藝人分軸與「他／她」引入：**Hamilton ×4**——What I'm Feelin' 帶錄音地＋吉他客串（hook「他」，第二句和聲班底 The HamilTones 具名）；Ain't Nobody 帶單曲編曲與福音（第二句以單曲領句、帶「南方靈魂唱腔」）；Point of It All 帶錄音室與銷量（第二句製作班底：Batson、Remi）；Back to Love 帶自述與廠牌轉換（hook「他」，第二句共同寫歌）。**Jaheim ×2**——Another Round 帶成績（第二句發行日＋廠牌）、Appreciation Day 帶取樣（第二句序數）。**Levert ×3**——Stroke of Genius 作者欄（Barry White）；Do I Speak 親屬（與父 Eddie 同唱，避開池中《Groove On》的「父親是 O'Jays 主唱」句）；In My Songs 辭世時序（克制）；男中音、LeVert／LSG 已用於池中，三張皆不指派。**Isley ×2**——Body Kiss 年代跨度（上一張冠軍 1975）；Baby Makin' 綽號（Ronald Isley＝Mr. Biggs，hook「他們」）。Hollister 第二句以前作領句（避開池中「芝加哥／Blackstreet 四人之一」與「自製」）；Silk 以編制（五人）領句（避開池中「亞特蘭大／Keith Sweat」「五部和聲」）；Tank 嗓音（帶福音味的男高音）；Case 獎項；Carl Thomas 廠牌經歷（剛走出 Bad Boy）。第二句句型 16 種逐張配死：發行日／廠牌經歷／前作／和聲班底／序數／單曲／製作班底／共同寫歌／嗓音／獎項／作者欄／親屬／辭世時序／年代跨度／綽號／編制。
+- **20574** 日期「日」後一字（尺 `/[年月]\s*\d{1,2}\s*日(.)/`）：Another Round 經、So Much Better 由、Things 面、What I'm Feelin' 交、Appreciation Day 推、Ain't Nobody 發、Point of It All 在、Back to Love 問、Tank 正、Do I Speak 於、In My Songs 才、Body Kiss 出、Baby Makin' 終、Love Session 透；Open Letter、Stroke of Genius 只寫到月（日期來源互相衝突）。d／e 請避開以上 14 字。研究層禁區照辦：速度比例、厚低頻、風琴墊、號角等無來源聲音不進 note；Open Letter 只寫到 2001 年 4 月；What I'm Feelin' 不寫序數；Back to Love 不寫曲數版本；Ronald Isley 入獄（後續事件）為壓預算整格捨去。媒體名與媒體榜單名次（含年終榜）一律不進 note，樂評內容只寫「樂評在…聽到」或直述聲音；分數星等 0；排行只寫 R&B 單曲榜／R&B 專輯榜／Adult R&B 榜／美國專輯總榜與 RIAA、葛萊美。
+- **20575** 自查：開頭前四字 16 張互異，對 hooks 目錄全部他批 0 撞（初稿「在 Mo」撞 c81、「到了第三」撞 dt1、「兩支單曲」為舊批常見開頭，已改）。hook 之間中文 4-gram（數字剝除後）0 條（初稿「出的這張」Point of It All × In My Songs 已改）；hook 對全批 note 0 條（初稿 Another Round「第名專輯」數字剝除殘片撞 Back to Love／Baby Makin' 已改）；hook 與自卡 note 只共用專名「納許維爾」，無逐字句重複（初稿「是他唯一」「八間錄音」「亮更主流」「家長警告」「生涯最高」「當了爸爸」已改）；對他批 hook 剩各 ×1–2 的泛用殘片（「了五個月」「裡說話的」「的人這回」「個錄音室」「拼成一張」等），改掉的有「間錄音室」×35、「才第一次」×16、「的製作人」×11、「之後他們」×7、「六分五十」×4、「最長那首」×3。`node qa-batch.mjs hooks add-20261023-ml52`：a–c 無標記，只報 d、e 缺檔（總標記 2）；`node chk-hook-crossgroup.mjs add-20261023-ml52`：✓ 全部通過（3 組 16 張，hook 加權 13–23.5、note 144–234）。輔助腳本：scratchpad `hook-ml52-abc/`（ml52-abc-measure.mjs、ml52-abc-gram.mjs）。
+
+## 鉤子層（d、e）
+- **20576** 交件：`desc-tools/batches/hooks/add-20261023-ml52-hooks-d.json`（6）、`-hooks-e.json`（5），key 逐字照研究稿、順序不變。公式照 1793-B：`Array.from(hook)+Array.from(note) − 主故事： − 所有 → − 正文只寫上列各項。 − 這條骨架全批只走本張。`；full 上限 230、thin 上限 170（d3 Freddie Jackson、e1 Vivian Green）。逐筆（預算／hook 加權／hook 原始字元）：d1 Always and Forever 223／18／18、d2 Timeless 219／20／24、d3 Life After 30 166／24.5／30（thin）、d4 The Heart of the Man 230／23／23、d5 The Art of Love & War 229／20.5／27、d6 Love the Woman 220／24／30、e1 Beautiful 168／15／15（thin）、e2 Soul of a Woman 226／22／29、e3 Soul Sista 228／20／20、e4 Chapter 2 206／21／27、e5 Friends & Lovers 224／23／23。初稿 7 張超標，整格捨去：Lattimore 的 2001 年後首張個人作；Jackson 的 Shearin 共寫者、Laurence 夜店舊識（同時避開 a 組 Carl Thomas「舊製作人重聚」骨架）；Perry 的〈Hey You〉、Ritenour；Angie 的離開 J Records、自製比例、R&B 專輯榜冠軍；Chanté 的 Saadiq／Campbell；Kelly 的 B.I.G. 未掛名和聲；Syleena 的 Seals and Crofts 取樣、Carvin & Ivan。壓完回核：hook 依賴全在 g1／g2（Jackson 原 hook「前半張交給 Force MDs」與 facts 不符——前半另有 Bayyan 兄弟——改成「開場單曲」）。媒體名、樂評人名、媒體榜單名次、星等一律不進 note，評語只留「樂評說」＋聲音描述；排行寫 R&B 專輯榜／R&B 單曲榜／Adult R&B 榜／Smooth Jazz Airplay／美國專輯總榜。
+- **20577** 骨架歸屬（11 張 11 條；只有擁有者寫歸屬句）：d1＝整張翻唱、編曲逐音照原版；d2＝翻唱單曲首次打進 smooth jazz 榜前十；d3＝開場單曲與後半張分交兩組製作；d4＝出道二十多年才有個人首作；d5＝在前輩（Marvin Gaye）錄音室錄、復業 Stax 的第一張；d6＝老搭檔做爵士標準曲、避開當代潮流；e1＝寫給孩子的歌；e2＝和聲歌手走到台前；e3＝一首對唱換來合約、兩週錄完；e4＝名門之後（Syl Johnson 之女）；e5＝過場串成的概念盤。與 a–c 對照：Jackson 拿掉 Laurence 舊識格（同 a2 Carl Thomas）、Syleena hook 原稿「到第二張才」與 b4 Tank「到第三張，他才」同形已改；R. Kelly 包辦骨架歸 c4 Body Kiss，Syleena 只帶〈Guess What〉一首。hook 四型：懸疑 d3、e1／斷言 d1、d2、e3／場景 d5、d6、e5／人物定調 d4、e2、e4。
+- **20578** 「他／她」引入法與第二句句型配表：同藝人跨張只有 Silk（c6 Love Session 帶編制、長曲、五人最後一張；d1 帶翻唱與換廠牌，不帶 Gary Jenkins 離團）——c6 編制領句、d1 沉寂期領句。Lattimore 與 Chanté 是夫妻，兩張 note 互不點名（Chanté 只寫「夫婿」，Lattimore 不帶二重唱專輯）。第二句：d1 沉寂期、d2 專輯類型（第一張個人翻唱）、d3 前東家 Capitol、d4 出道年、d5 前作成績、d6 時間間隔、e1 合作老友、e2 生年、e3 年齡、e4 出生地、e5 團體出身；避開 a–c 的發行日與廠牌／廠牌經歷／前作與廠牌／和聲班底／序數／單曲／製作班底／共同寫歌／嗓音／獎項／作者欄／親屬／辭世時序／年代跨度／綽號／編制，以及已上架 Silk（ml6 亞特蘭大＋Keith Sweat、ml49 和聲）、Freddie Jackson（ml6 哈林區＋福音）、Lattimore（ml49 Howard、自稱）、Chanté（ml49 生年、作曲欄、暫別）、Marsha（ml49 國籍）。「日」後一字：d1 換、d2 落、d4 以、d5 釋、d6 起、e2 亮、e3 上、e4 登、e5 開，d3／e1 只寫到年或年月；與 a 經／由／面／交／推、b 發／在／問／正、c 於／才／出／終／透互異。
+- **20579** 自查：開頭前四字對全 hooks 目錄互異（初稿「錄音地點」撞 6 檔、「這回她唱」撞 c143、「全盤最長」撞 nj4、「Marv」撞 c154、Angie／Kelly 改稿後「在 Ma」自撞，皆已改）。hook 之間中文 4-gram：本組 11 張對全批 27 張 hook 0 條；本組 hook 對全批 note 0 條（初稿 Silk「編曲幾乎」、Chanté「爵士標準」、Vivian「全盤最長」、Keke「首張約兩」、Marsha「非常概念」、Angie「在洛杉磯」對 b2 note，皆已改）；對其他批 hook 剩「二十多年」×3、「等了二十」×2 等泛用殘片（初稿 Silk「別人的歌」×6 已改）。note 無否定校對痕跡。
+- **20580** 腳本：`node qa-batch.mjs hooks add-20261023-ml52`：全部通過 ✓（5 組 27 張）；`node chk-hook-crossgroup.mjs add-20261023-ml52`：全部通過 ✓（hook 加權 13–24.5、note 144–236）。輔助腳本：scratchpad `hook-ml52-de/ml52de-chk.py`。
+
+## 寫作層（writer-2）
+- **20586** 交件：`desc-tools/batches/output/add-20261023-ml52-out-2.json` 13 張，key 逐字同序。full 11：204–239（Isley 236、Love Session 212、Always and Forever 225、Timeless 225、Heart of the Man 233、Art of Love & War 239、Love the Woman 227、Soul of a Woman 204、Soul Sista 220、Chapter 2 212、Friends & Lovers 211）；thin 2：Life After 30 168、Beautiful 174。無超標、無掉下限，未整格捨去 note 項目。
+- **20587** 第二句全照 20573／20578 配表（綽號、編制、沉寂期、專輯類型、前東家、出道年、前作成績、時間間隔、老友、生年、年齡、出生地、團體出身）。hook 已說過的事不複述：Love Session 的「四首逾 6 分 50 秒」改寫成「最長 7 分 28 秒、其餘三首 6 分 50 秒以上」；Keke 的「約兩週錄完」、Kelly 的「1992 至 1997 年」、Vivian 的「獻給兒子」、Marsha 的「概念性」只留在 hook，正文不重寫。identity 補字：Isley 補「R&B 團體」、Keke 與 Marsha 用「R&B 女聲」、Syleena 用「R&B 歌手」（避開「的 R&B 女歌手」三張同形）。
+- **20588** 「日」後一字照 20578／20574：終、透、換、落、以、釋、起、亮、上、登、開；Life After 30、Beautiful 只寫到年／年月。日期前一字（han 剝除後）逐張相異：月、輯、它、唱、後、間、行、進、作、定；Friends & Lovers 只寫月日（前一字「在」）；拆掉的殘片：「唱片年月」×3（Love Session 對 w1 Back to Love／Open Letter）、「它年月日」、「的年月日」、「專輯年月」、「作年月日」、「交由發行」、「拿下金唱片」、「登上美國」×3、「總榜第名」×4、「第名專輯」、「的第三張」×4（Vivian 對 w1 三張）、「在美國專」×3、「首週在美」、「的女歌手」、「男歌手的」。
+- **20589** 自掃（`han()` 4-gram，對 out-1 定稿 14 張合掃）：3 張以上只剩榜名「美國專輯總榜」（專名，不改）；2 張只剩「最高名次」（Art of Love & War × w1 In My Songs）。正文 0 媒體名、0 榜單名次出處、0「據」、0 分數星等；樂評只寫「樂評聽見／樂評說」＋內容。
+- **20590** 腳本：`node qa-batch.mjs out add-20261023-ml52` 全部通過 ✓（out 合計 27 張與卡單相符、thin 全 ≤180）；`node qa-check-research.mjs …writer-2.json …out-2.json` 標記 0；`node fix-spacing.mjs …out-2.json` 0 處。輔助腳本：scratchpad `wr-ml52-2/ml52-w2-scan.mjs`。
+
+## 寫作層（writer-1）（20581–20585）
+- **20581** 交件：`desc-tools/batches/output/add-20261023-ml52-out-1.json` 14 張（thin 5：Another Round 163、So Much Better 158、What I'm Feelin' 179、Appreciation Day 178、In My Songs 166；full 9：Things in the Game 237、Ain't Nobody Worryin' 239、Point of It All 239、Back to Love 201、Sex, Love & Pain 237、Open Letter 233、Stroke of Genius 218、Do I Speak 228、Body Kiss 225）。`qa-batch out`、`qa-check-research`、`fix-spacing` 皆 0 處；「據」grep 0。初稿超標 6 張（Things 257、What I'm Feelin' 181、Appreciation Day 190、Point of It All 245、Stroke of Genius 250、Do I Speak 275），整格或子句捨去：Hollister 的廠牌宣傳句縮寫、Appreciation Day 製作句縮寫、Do I Speak 第二句拿掉盤名（卡面已有）、Stroke of Genius 悼念句改成替 hook 代稱具名（「壓軸的〈Last Stroke〉就是那首悼念」）。
+- **20582** 第二句領句全照鉤子層 note（20573 配表）；「日」後一字全照 20574（經／由／面／交／推／發／在／問／正／於／才／出；Open Letter、Stroke of Genius 只寫到月）。Tank 原 note「第三張」與 hook 重複，正文只在 hook 出現一次，第二句改寫「出自 Blackground 旗下」；Body Kiss 的 1975 冠軍拆成「那張叫《The Heat Is On》」以免「年的年月日」跨句黏合。
+- **20583** 媒體名、媒體榜單名次、年終榜、星等 0；樂評內容只留 Open Letter 一處「樂評在…聽到」（note 指派）。Back to Love 葛萊美入圍、Open Letter〈Missing You〉入圍皆標「後來」。In My Songs 辭世寫法克制，不另寫「生涯最好名次」以免複述 hook。
+- **20584** 自掃（han() 4-gram，跨 out-1／out-2 合掃）：3 張以上只剩榜名「美國專輯總榜」（out-1 ×5、out-2 ×3，榜名當專名處理；已把 out-1 的 Hollister、Case 改用「全美專輯榜」分流）；2 張殘片剩「全美專輯／美專輯榜」（榜名）、「葛萊美最佳」（獎名）、「輯總榜第」（榜名＋第）。途中拆掉「首週賣出」×3（改「開賣第一週賣出／首週銷量／上市頭一週就賣掉」）、「的第三張」×4、「唱片年月」×3、「也是他在」、「登上美國」、「在美國專」、「總榜排第」、「打頭陣的」、「發行製作」、「在年月日」、「的年月日」、「張專輯年」、「品年月日」、「出的這張」、「排到第名」、「歌手的第」、「的作者欄」。
+- **20585** 給主線：「最高名次」是 In My Songs **hook 原文**對 out-2 第 7 張正文的 2 張殘片，writer-1 無權改 hook，需由 out-2 那側改。另避開池中 Levert《Gerald's World》的「多數曲目由 Levert 與 Nicholas 包辦」「美國專輯總榜衝到第 6 名」句形（Stroke of Genius 同為第 6 名，改寫成「一起寫、一起製作」「最高升到」）。輔助腳本：scratchpad `wr-ml52-1/ml52-1-chk.mjs`。
+
+## 主線審稿（2026-10-23，雲端主線，27 張逐張讀過、對回研究稿）
+- **20591** `desc2:Chanté Moore|Love the Woman`：刪「樂評說它避開了當代 R&B 的潮流」（單源評價句；hook 的標準曲事實保留）。
+- **20592** `desc2:Angie Stone|The Art of Love & War`：「是她的最高名次。」→「創下她的個人紀錄。」（與 In My Songs hook「生涯最高名次」撞 4-gram；字數 240 內）。
+- 其餘 25 張逐張審過，未改字（樂評句只留聲音描述：Kelly Price 慵懶慢歌、Silk 和聲與弦樂、Case 的 Stevie Wonder 式靈魂樂、Body Kiss 絲滑嘻哈拍子）。qa-batch out、qa-check-research（兩檔標記 0）、fix-spacing（0）重跑全過。
+
+## 上線（不佔條號）
+- 上線 27：card_catalog 27/27、KV 27 鍵回讀逐字一致、試聽 25 ready（主線人工配對 3：Carl Thomas《So Much Better》jp、Tank《Sex, Love & Pain》、Case《Open Letter》以藝人目錄 lookup；6 張第 1 軌是 intro／interlude 改取第 2 軌；Freddie Jackson《Life After 30》、Chanté Moore《Love the Woman》Apple 無上架）、seed +27、published gate 0 error。
+- 封面：CAA 27，主線縮圖表逐張目視、live-check 全 200。上線前對 origin 92 個 `claude/*` 分支 seed＋卡單去重 0 撞。
+- 冷門軸：機器基線（Last.fm listeners 139–165,155），未人工改（Freddie Jackson《Life After 30》139 屬實冷門，同人池中舊盤冷門 4–5）。
+- 類型樹：Last.fm 標籤 27/27；Keke Wyatt 未落位，`genre-l3-artist-map.json` 補 `soul/classic-rnb/neo-contemporary`。
+
+## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-ml52/`）
+- 照 10-23 體感標準評分（conf mid 12、low 15）。**上線 27；落恍惚 25/27＝93%**。評分 x 2.0–2.7、y 0.3–0.9、z 0.8–1.6。出格 2 張判輕落放鬆：Kenny Lattimore《Timeless》（y 0.4，原聲樂團＋弦樂聲部分明）、Phil Perry《The Heart of the Man》（y 0.3，90 年代初數位製作乾淨）。
+- 八格（build-card-moods 後）：恍惚 1,486、冷冽 1,469、頹靡 1,433。
+- 產量：策展 54、研究汰 20、補 4 再汰 2 → 27。**2000s slow jam 男歌手的盤研究一查多是 hip-hop soul**（饒舌客串、硬拍取樣、Timbaland／Jazze Pha 製作），Jaheim、Avant、Tank、Carl Thomas、Hollister 中後期都是快慢各半；能收的是老將 quiet storm 慢盤（Levert、Isley 的 R. Kelly 期、Silk、Lattimore）與女聲慢板。**乾淨翻唱／爵士電台型（Lattimore《Timeless》）與 90 年代初數位成人抒情判輕**，同型下一批不收。主場景見底，ml52 不再派。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Dave Hollister、Tank、Case、Gerald Levert、Kenny Lattimore、Phil Perry、Chanté Moore、Kelly Price、Keke Wyatt、Syleena Johnson、Marsha Ambrosius（11 個掛名；`data/artist-intros` 與 progress.json 皆無；其中 Hollister、Case、Levert、Lattimore、Moore、Ambrosius 是 ml49 已列過、尚未切的）

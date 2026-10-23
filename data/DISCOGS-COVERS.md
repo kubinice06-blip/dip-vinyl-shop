@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **392** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 154、已退回 1）。
+共 **401** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 163、已退回 1）。
 最後更新：2026-10-23
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -269,6 +269,17 @@
 | Tom Cora, David Moss 《Cargo Cult Revival》 | [#1003533](https://www.discogs.com/release/1003533) | 1983 | Rift | RIFT 5 | Discogs master 2089672 的版本、主線目視與盤名相符 | ok |
 | Zeena Parkins 《Nightmare Alley》 | [#661500](https://www.discogs.com/release/661500) | 1993 | Table Of The Elements | H 1 | Discogs master 87550 的版本、主線目視與盤名相符 | ok |
 
+## add-20261023-mc37（6 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| eRikm 《Lux Payllettes》 | [#2330889](https://www.discogs.com/release/2330889) | 2010 | Entr'acte | E94 | 唯一版本、主線目視與盤名相符 | ok |
+| Morton Subotnick 《Touch》 | [#4245425](https://www.discogs.com/release/4245425) | 1969 | Columbia Masterworks | MS 7316 | Discogs master 64355 的版本、主線目視與盤名相符 | ok |
+| Nate Wooley, Seymour Wright 《About Trumpet And Saxophone》 | [#5078273](https://www.discogs.com/release/5078273) | 2013 | Fataka | Fataka 8 | 唯一版本、主線目視與盤名相符 | ok |
+| Peter Evans 《More Is More》 | [#1043693](https://www.discogs.com/release/1043693) | 2006 | psi (3) | psi 06.08 | 唯一版本、主線目視與盤名相符 | ok |
+| Peter Evans / Tom Blancarte 《{Sparks}》 | [#2382587](https://www.discogs.com/release/2382587) | 2008 | Creative Sources | CS 119 cd | 唯一版本、主線目視與盤名相符 | ok |
+| Thomas Lehn & Marcus Schmickler 《Bart》 | [#73238](https://www.discogs.com/release/73238) | 2000 | Erstwhile Records | erstwhile 012 | 唯一版本、主線目視與盤名相符 | ok |
+
 ## add-20261023-mc38（3 張）
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
@@ -276,6 +287,14 @@
 | Jane Rigler & Agustí Fernández 《Mandorla》 | [#2801532](https://www.discogs.com/release/2801532) | 2002 | Dewdrop Recordings | DDR 002 | 唯一版本、主線目視與盤名相符 | ok |
 | Marilyn Crispell / Doug James 《And Your Ivory Voice Sings》 | [#573522](https://www.discogs.com/release/573522) | 1985 | Leo Records | LR 126 | 唯一版本、主線目視與盤名相符 | ok |
 | Matthew Shipp 《Magnetism》 | [#4504830](https://www.discogs.com/release/4504830) | 1999 | Bleu Regard | CT 1957 | 唯一版本、主線目視與盤名相符 | ok |
+
+## add-20261023-mc39（3 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| John Butcher / Dylan van der Schyff 《Points, Snags And Windings》 | [#2209586](https://www.discogs.com/release/2209586) | 2001 | Meniscus | MNSCS 010 | Discogs master 1513824 的版本、主線目視與盤名相符 | ok |
+| Ned Rothenberg 《Trials of the Argo》 | [#1685802](https://www.discogs.com/release/1685802) | 1981 | Lumina Records Ltd. | L001 | 唯一版本、主線目視與盤名相符 | ok |
+| Ned Rothenberg 《Trespass》 | [#2395156](https://www.discogs.com/release/2395156) | 1986 | Lumina Records Ltd. | L011 | Discogs master 2914531 的版本、主線目視與盤名相符 | ok |
 
 ## add-20261023-md11（4 張）
 
