@@ -3353,4 +3353,8 @@ window.DipPreviewStatus = Object.freeze({
   "evan parker & agustí fernández|tempranillo": "unavailable",
   "jane rigler & agustí fernández|mandorla": "unavailable",
   "denman maroney|hyperpiano": "unavailable",
+  "philanthrope & devaloop|cloudfiles": "unavailable",
+  "blue wednesday|beat tape 3": "unavailable",
+  "jezzreel|rockers showcase volume 2": "unavailable",
+  "audley rollens|showcase prevail": "unavailable",
 });
