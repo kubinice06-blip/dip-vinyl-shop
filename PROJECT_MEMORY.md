@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格線第 10 輪派工：優先序 46–53
+
+- **起因**：第 9 輪三個工作階段全部收工（ml42 26／26、ml45 17／17、ml43 21／17、mc36 20／18、ml44 10／9、md26 28／28，上線／落格）。恍惚約 1,394、頹靡約 1,433，恍惚仍最薄。
+- **新場景**：ml47 chillhop／jazzhop 第二波（ml42 高產）、ml48 dub 第三波（Wackies、Lee Perry 周邊；店主要多 dub）、ml49 90s R&B slow jam 二線（ml6 高產）、mc38 前衛爵士鋼琴緊繃那路；排隊 ml50 暖 drone、md27 暗色現代古典慢板厚弦。
+- **派工**：ml46＋mc37、ml47＋ml48、ml49＋mc38；52–53 留給下一輪。
+- **主要檔案**：`batch-progress/mood-cells-20261022/SCENES.md`。
+- **驗證**：純佇列文件變更；新條號 19961–20440 不與既有重疊。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 9 輪 ml44／md26：暖 shoegaze／dream pop 10 張、暗色 neofolk＋doom jazz 28 張上線，落格 9/10、28/28
 
 - **內容**：店主「三個情緒薄格各補到約 2,000」第 9 輪，本工作階段負責 ml44、md26（評分照 10-23 體感標準）。ml44（`add-20261023-ml44`，恍惚：暖 shoegaze／dream pop 厚牆＋暖 slowcore）：Engineers ×2、Guthrie & Budd《After the Night Falls》、Acetone《Cindy》、Sound of Ceres《Nostalgia for Infinity》、Tears Run Rings《Distance》、Simon Raymonde《Blame Someone Else》、The Telescopes（1992）、Nightlands ×2。md26（`add-20261023-md26`，頹靡：暗色 neofolk／dark folk＋doom jazz 二線＋無鼓暗色室內 ambient）：Wardruna ×2、Steve von Till ×3、Natural Snow Buildings ×4、Fursaxa、The Hare and the Moon、Darkher、Radare ×3、Mansur、The Thing With Five Eyes、Dead Neanderthals ×3、Bersarin Quartett ×3、Mohn、Thomas Köner《Tiento de la Luz》、Svarte Greiner《Devolving Trust》、Elegi《Bånsull》、Richard Skelton《Landings》。
