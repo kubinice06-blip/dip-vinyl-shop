@@ -94,3 +94,13 @@
 - **20023** 四張合作盤第二句照 20012 掛名逐字並列：Dreams（＋英國／瑞典）、Monothrope（＋兩位奧地利製作人、Mono:Massive 九〇年代中期起）、Blurred（＋柏林製作人／本名 Simon Leidner 奧地利人）、Cloudfiles（＋同為奧地利嘻哈製作人、Devaloop 薩爾茨堡）。Cloudfiles 的 hook 已寫「100 卷」「多收 10 首」，正文只寫錄音帶 2016 年先出、擴充版 500 套 28 首，不重複兩個數字。
 - **20024** 「開頭兩句讓人知道是誰」的補法：Dreams 補「beat 合作盤」、Vibes 3 補「beatmaker」、Beat Tape 3 補「做的 beat 受⋯影響」——三處都是 note 鄰近欄位的身分詞，非新事實；Spacetime 第二句只寫奧斯汀錄音＋全由他創作，樂種交給後面的聲音清單。Psalm Trees 卡「器樂嘻哈」是 note 指派的樂種，與 w2 Zodiacs／Night Trip 同詞（樂種名，視同專名不改）。
 - **20025** 自掃（han() 4-gram，含 w2 現行 out 11 張＋w2 hooks）：3 張以上 0 條；2 張只剩地名「英國南部」（Psalm Trees／You Don’t Know，同人兩卡）。途中拆掉：「首約分鐘」×4、「年月推出」×4、「長約分鐘」×3、「落在年月」×3、「混音與母」「製作混音」「在年月替」「加起來約」「長度約分」「膠在年月」「分鐘左右」「兼製作人」「自己發行」「本名做的」「大約分鐘」「年月面世」「到年月才」「分鐘廠牌」等，一律整個名詞換掉或日期句改由他詞領句。輔助腳本：scratchpad `wr-ml47-1/`（chk-ml47-1.mjs、write-ml47-1.py、descs-ml47-1.json）。w2 若再改動，合掃需主線收件時重跑。
+
+## 主線審稿（20031–20040；2026-10-23）
+- 20031：逐張審 23 張（out-1 12、out-2 11），逐句對回研究稿 facts；qa-batch out、qa-check-research（兩檔）、fix-spacing 皆 0 標記；正文無媒體名、無榜單名次、無「據」字。
+- 20032：改 3 處（已同步 hooks-b 與 writer-1 input 的 hook 欄）：
+  - `The Deli|Vibes 3`：整則重寫。原稿 hook「〈Flowers〉播放數約 1400 萬次」與「樂評把 The Deli 和 J Dilla、Pete Rock、Madlib、MF Doom 放在一起比較」都只出自一篇部落格（研究 b 組已標單一來源），單源評價句與單源數字一併刪；新 hook 改用 Bandcamp 曲長「18 首裡，最短的〈1B4W〉只有 49 秒。」，正文改寫奧斯汀、本名、發行、廠牌文案、曲長、曲名、再版 → 231 字。
+  - `Psalm Trees|You Don’t Know What Love Is`：「南非那 7 個月是 Psalm Trees 音樂生涯的起點」→「Psalm Trees 出身英國南部，曾在南非住過 7 個月」——同人另一張卡（With Absence）寫「從倫敦外圍一間臥室起步」（Musicbed），兩個「起點」說法互斥，研究 a 組已標出身來源不一 → 204 字。
+  - `Psalm Trees|With Absence, the Heart Grows Fonder`：「的起點是倫敦外圍一間臥室」→「從倫敦外圍一間臥室起步」（同上理由）→ 202 字。
+- 20033：核過未改——Psalm Trees Hove 錄音與 100 張天藍綠 LP（Discogs 11823539）、自稱拼貼藝術家（Musicbed 自述）、Mono:Massive 九〇年代中期（Discogs 藝人頁）、Ta-ku RBMA 2008 與 Nujabes 卒年（維基）、Blue in Green 2026 雙黑膠 300 張（Experience Vinyl）、L'Indécis 概念與 dusty loop（Turntable Lab 文案，正文寫成陳述）、jinsang 舊金山（Bandcamp 地點）。writer-1 自補的身分詞「beat 合作盤」「做的 beat」取自同批 facts，可。
+- 20034：**合作掛名改卡**：MB release-group credit 為合作的 4 張，卡單 artist 與 key 改成 MB 掛名（cards／research／hooks／input／out／meta／preview-picks 一併改，qa 全過）：Psalm Trees & Moose Dawa《Dreams From the Shore》、Mono:Massive & Philanthrope《Monothrope》、B-Side & Philanthrope《Blurred Nightscapes》、Philanthrope & Devaloop《Cloudfiles》；正文第二句本來就照 note 兩人並列。
+- 20035：Last.fm 基線：《You Don’t Know What Love Is》盤名彎引號查得 22 listeners，改 ASCII 撇號重查 76,634，meta 已改。試聽 21 ready／2 unavailable（Philanthrope & Devaloop《Cloudfiles》、Blue Wednesday《Beat Tape 3》Apple 未上架）。封面 23 張 CAA release-group front，front-500 live-check 全 200，主線縮圖表目視全部相符（Dreams 封面印 Psalm Trees & Moose Dawa、Monothrope 印 Mono:Massive／Philanthrope、Cloudfiles 印 Philanthrope Devaloop，正是改掛名的依據）。
