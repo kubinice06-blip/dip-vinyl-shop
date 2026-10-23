@@ -1,0 +1,2860 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-md11",
+ "batchNote": "薄細項策展線（add-20261023-md11）",
+ "createdAt": "2026-10-23T07:15:33Z",
+ "albums": [
+  {
+   "artist": "SPK",
+   "album": "Zamia Lehmanni: Songs of Byzantine Flowers",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ffa7880c-0c86-3992-a51e-374fc795bff7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業儀式 drone：SPK 從噪音轉向的儀式／新古典慢盤，拜占庭聖詠與重殘響鼓樂，是工業 old-school 慢盤的標準例｜策展無疑點｜MB release-group ffa7880c-0c86-3992-a51e-374fc795bff7：title「Zamia Lehmanni: Songs of Byzantine Flowers」、Album、first-release-date 1986、artist-credit「SPK」。證據：https://musicbrainz.org/release-group/ffa7880c-0c86-3992-a51e-374fc795bff7 https://www.discogs.com/master/13567 https://coverartarchive.org/release/4d8fb1aa-11f0-4fbe-b8de-96c183246205/17918705338.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ffa7880c-0c86-3992-a51e-374fc795bff7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 1797,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 2/5/4（Last.fm listeners 1797）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 5、accessibility 4；obscurity=5 但沒有遺珠級證據（listeners 1797），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Revell 嫌工業音樂僵化了，想把它推向「後工業」。SPK 是 1978 年在雪梨成立的噪音工業樂團，Graeme Revell 是創辦人，這番話出自他 2019 年的回顧。1986 年發行的唱片成了 SPK 最後一張核心專輯，樂器、錄音與製作全由他自己來。男聲合唱低低吟誦，女聲唱腔空靈，弦樂透著哀傷，到了結尾只剩緩慢的打擊與鐘聲。封面是聖家堂的局部。三年後，〈In Flagrante Delicto〉被他用進 1989 年的電影《Dead Calm》。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/76551",
+     "https://www.discogs.com/master/13567",
+     "https://en.wikipedia.org/wiki/SPK_(band)",
+     "https://coldspring.bandcamp.com/album/zamia-lehmanni-songs-of-byzantine-flowers-csr274cd-lp",
+     "https://regenmag.com/reviews/review-spk-zamia-lehmanni-songs-of-byzantine-flowers/",
+     "https://www.side-line.com/spk-zamia-lehmanni-songs-of-byzantine-flowers-cd-album-cold-spring/",
+     "https://stalker-magazine.rocks/en/2019/12/04/spk-zamia-lehmanni-songs-of-byzantine-flowers-2/",
+     "https://musicbrainz.org/release-group/ffa7880c-0c86-3992-a51e-374fc795bff7"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/15/93/0c/15930c5f-cbf7-ff23-cdc7-1c32e89a8808/mzaf_1679071697984535569.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "appleCollectionId": "1480404285",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1480404285「SPK《Zamia Lehmanni (Songs of Byzantine Flowers)》」：曲目 9/9 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Invocation to Secular Heresies〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Organum",
+   "album": "Submission",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d67f8dcc-7002-3d17-8a8f-d068cb75f6c8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業儀式 drone：David Jackman 的 Organum 招牌金屬摩擦 drone，英國工業儀式 drone 的原型｜策展無疑點｜MB release-group d67f8dcc-7002-3d17-8a8f-d068cb75f6c8：title「Submission」、Album、first-release-date 1988、artist-credit「Organum」。證據：https://musicbrainz.org/release-group/d67f8dcc-7002-3d17-8a8f-d068cb75f6c8 https://www.discogs.com/master/108231 https://coverartarchive.org/release/3ba615b2-34cc-4dcf-bbc7-448b4de362da/41486450165.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d67f8dcc-7002-3d17-8a8f-d068cb75f6c8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 904,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 904）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 904），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "金屬刮擦聲，來自少年時夜裡的火車煞車。Organum 是 David Jackman 1983 年起用的名字，這段來歷是他 1988 年受訪時講的；他還曾把鬧鐘外殼按在生鏽的腳踏車輪圈上，刮了約二十分鐘。聲音多出自非電子的發聲體，以持續音為底。唱片由 United Dairies 在 1988 年出版，限量 1000 張。四首共約 38 分鐘，〈Renunciate〉一首就占了 18 分 23 秒，Steven Stapleton 等人也參與其中。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/91537",
+     "https://www.discogs.com/release/154718",
+     "https://en.wikipedia.org/wiki/David_Jackman_(musician)",
+     "https://4ibrecords.com/2013/04/22/organum-david-jackman-interview-by-paul-lemos-1988/",
+     "https://musicbrainz.org/release-group/d67f8dcc-7002-3d17-8a8f-d068cb75f6c8"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Organum",
+   "album": "Vacant Lights",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c65763da-d97e-3f6e-ae80-7e852949e5e2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業儀式 drone：Organum 與 Nurse With Wound 合作的長篇 drone，磨擦金屬與低頻轟鳴｜策展無疑點｜MB release-group c65763da-d97e-3f6e-ae80-7e852949e5e2：title「Vacant Lights」、Album、first-release-date 1987、artist-credit「Organum」。證據：https://musicbrainz.org/release-group/c65763da-d97e-3f6e-ae80-7e852949e5e2 https://www.discogs.com/master/108235 https://coverartarchive.org/release/dd4d280c-56c4-499a-b41b-ff0c6740b214/45511164042.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c65763da-d97e-3f6e-ae80-7e852949e5e2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 188,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 188）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 188），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "第一版卡帶，只做了九或十卷。做 drone 的 Organum 由 David Jackman 主持，Aeroplane 是他自己的廠牌。卡帶 1987 年在 Aeroplane 首發，第二版也只有約 50 卷。音樂只分兩個部分，長 17 分 01 秒與 15 分 17 秒，製作交給 Steven Stapleton。等到隔年 10 月，美國的 Dom America 才首度把它壓成黑膠。樂評說它非常單純，音源是金屬一類的日常物件，Jackman 則稱之為 humane。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/119826",
+     "https://www.discogs.com/release/354220",
+     "https://www.discogs.com/release/98690",
+     "https://musicbrainz.org/release-group/c65763da-d97e-3f6e-ae80-7e852949e5e2",
+     "https://en.wikipedia.org/wiki/David_Jackman_(musician)",
+     "https://decayke.wordpress.com/2013/12/20/review-organum-vacant-lightsrara-avis/",
+     "https://4ibrecords.com/2013/04/22/organum-david-jackman-interview-by-paul-lemos-1988/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Organum",
+   "album": "Sphyx",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4a060930-69f1-3f13-b41a-7b61afea1dbc",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業儀式 drone：Organum 90 年代 drone 高峰，鐘聲與金屬長音層疊成儀式感｜策展無疑點｜MB release-group 4a060930-69f1-3f13-b41a-7b61afea1dbc：title「Sphyx」、Album、first-release-date 1994、artist-credit「Organum」。證據：https://musicbrainz.org/release-group/4a060930-69f1-3f13-b41a-7b61afea1dbc https://www.discogs.com/master/175619 https://coverartarchive.org/release/d0b14896-4bf3-46a2-aa6c-0c907d422a35/1966711144.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4a060930-69f1-3f13-b41a-7b61afea1dbc/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 921,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 921）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 921），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "AMM 的打擊樂手，也在 Organum 的名單上。這是 David Jackman 以 Organum 為名的 1994 年黑膠，初版 546 張。三首加總約 36 分鐘，開頭的〈Aurora〉就有 16 分 34 秒。那位打擊樂手是 1965 年共同創立 AMM 的 Eddie Prévost，他和 Jim O'Rourke 一起列名參與。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/121431",
+     "https://en.wikipedia.org/wiki/Eddie_Pr%C3%A9vost",
+     "https://www.discogs.com/release/132507",
+     "https://en.wikipedia.org/wiki/David_Jackman_(musician)",
+     "https://4ibrecords.com/2013/04/22/organum-david-jackman-interview-by-paul-lemos-1988/",
+     "https://musicbrainz.org/release-group/4a060930-69f1-3f13-b41a-7b61afea1dbc"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Organum",
+   "album": "Veil of Tears",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3dae51c0-e1b4-301e-90bd-8b343281847f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業儀式 drone：Organum 最純粹的 drone 盤之一，單一長音緩慢變形｜策展無疑點｜MB release-group 3dae51c0-e1b4-301e-90bd-8b343281847f：title「Veil of Tears」、Album、first-release-date 1994、artist-credit「Organum」。證據：https://musicbrainz.org/release-group/3dae51c0-e1b4-301e-90bd-8b343281847f https://www.discogs.com/master/482328 https://coverartarchive.org/release/7d8bbadc-b4db-4015-b979-4f1ff8888ebe/38792518588.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3dae51c0-e1b4-301e-90bd-8b343281847f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 419,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 419）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 419），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "開頭與結尾，取自一卷只印 25 份的現場卡帶。作曲與內頁都出自 Organum 的 David Jackman。頭尾兩首錄成於 1990 年，先收進 1992 年的《Live Vol. 1》。中間的〈Obon〉更早，1985 年錄下，1994 年重混。Matchless 在 1994 年把五首編成一張約 57 分鐘的 CD。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3958937",
+     "https://www.discogs.com/release/571338",
+     "https://en.wikipedia.org/wiki/Eddie_Pr%C3%A9vost",
+     "https://www.discogs.com/release/354220",
+     "https://4ibrecords.com/2013/04/22/organum-david-jackman-interview-by-paul-lemos-1988/",
+     "https://www.discogs.com/master/482328",
+     "https://musicbrainz.org/release-group/3dae51c0-e1b4-301e-90bd-8b343281847f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Organum",
+   "album": "Sanctus",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d88f60d4-8e7a-3732-ba6f-8b3cefa8a8a4",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業儀式 drone：Organum 晚期宗教儀式三部曲之一，管風琴式長音與鐘｜⚠ 晚期較靜，y 估 1.1–1.4｜MB release-group d88f60d4-8e7a-3732-ba6f-8b3cefa8a8a4：title「Sanctus」、Album、first-release-date 2006-01、artist-credit「Organum」。證據：https://musicbrainz.org/release-group/d88f60d4-8e7a-3732-ba6f-8b3cefa8a8a4 https://www.discogs.com/release/624361 https://i.discogs.com/MJ3BBb_IcxXH6JwMZG12ot-ORfmRZ3ixtcfp2ciSPIo/rs:fit/g:sm/q:90/h:539/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDM2/MS0xMzA4NTk3NjI1/LmpwZWc.jpeg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "624361",
+    "url": "https://i.discogs.com/MJ3BBb_IcxXH6JwMZG12ot-ORfmRZ3ixtcfp2ciSPIo/rs:fit/g:sm/q:90/h:539/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDM2/MS0xMzA4NTk3NjI1/LmpwZWc.jpeg",
+    "note": "Discogs release 624361 primary 圖（CAA release-group 無圖 404）；主線 2026-10-23 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 194,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 194）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 194），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "四段一樣長，每段都是 10 分 59 秒。drone 計畫 Organum 由 David Jackman 主持。Robot Records 2006 年 1 月推出的 CD 只做了 600 張。一套三部曲由它開篇，後兩部分別在 2006 年與 2007 年問世。說明頁上留著給一位逝者的題獻。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/624361",
+     "https://www.discogs.com/release/1232047",
+     "https://en.wikipedia.org/wiki/David_Jackman_(musician)",
+     "https://4ibrecords.com/2013/04/22/organum-david-jackman-interview-by-paul-lemos-1988/",
+     "https://musicbrainz.org/release-group/d88f60d4-8e7a-3732-ba6f-8b3cefa8a8a4"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Organum",
+   "album": "Amen",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d9079f3c-e599-44a7-8a2c-972b136b7410",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業儀式 drone：Organum 晚期儀式 drone，Die Stadt 出版，長音與遠鐘｜⚠ 晚期較靜，y 估 1.1–1.4｜MB release-group d9079f3c-e599-44a7-8a2c-972b136b7410：title「Amen」、Album、first-release-date 2006-11、artist-credit「Organum」。證據：https://musicbrainz.org/release-group/d9079f3c-e599-44a7-8a2c-972b136b7410 https://www.discogs.com/release/885225 https://i.discogs.com/RP8VT_ntebU4b6ZaO6HFs4Zr6x6DnMXNYxWRUmSOch4/rs:fit/g:sm/q:90/h:538/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg4NTIy/NS0xMzYyODU1MzMx/LTQ0NzIuanBlZw.jpeg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "885225",
+    "url": "https://i.discogs.com/RP8VT_ntebU4b6ZaO6HFs4Zr6x6DnMXNYxWRUmSOch4/rs:fit/g:sm/q:90/h:538/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg4NTIy/NS0xMzYyODU1MzMx/LTQ0NzIuanBlZw.jpeg",
+    "note": "Discogs release 885225 primary 圖（CAA release-group 無圖 404）；主線 2026-10-23 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 145,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 145）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 145），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "內頁引了一句 Unto The Aeon Of Aeons。Holy 三部曲的第二部，出自 David Jackman 的 drone 計畫 Organum。Die Stadt 於 2006 年 11 月出版，印量 600 張。音樂只有兩段，長度都接近 20 分鐘。第三部《Omega》則留到 2007 年才跟上。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/885225",
+     "https://www.discogs.com/release/1232047",
+     "https://en.wikipedia.org/wiki/David_Jackman_(musician)",
+     "https://4ibrecords.com/2013/04/22/organum-david-jackman-interview-by-paul-lemos-1988/",
+     "https://musicbrainz.org/release-group/d9079f3c-e599-44a7-8a2c-972b136b7410"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Zoviet France",
+   "album": "Eostre",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0527b3bc-062c-3987-801a-b0c51963f09e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 tape music／磁帶迴圈：:zoviet*france: 早期磁帶迴圈經典，紙板包裝時期的儀式 drone｜策展無疑點｜MB release-group 0527b3bc-062c-3987-801a-b0c51963f09e：title「Eostre」、Album、first-release-date 1984、artist-credit「:zoviet*france:」。證據：https://musicbrainz.org/release-group/0527b3bc-062c-3987-801a-b0c51963f09e https://www.discogs.com/master/26203 https://coverartarchive.org/release/074cda1f-4a7a-429b-b61c-fe9d398b4039/21362344512.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0527b3bc-062c-3987-801a-b0c51963f09e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 464,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 464）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 464），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "像站在碼頭上，看巨船在濃霧裡叮噹漂過。Zoviet France 1980 年在英格蘭新堡成立，刻意匿名，署名只見 Ben Ponton、Paolo Di Paolo 與 Robin Storey。碼頭那幅畫面出自樂評，甲板上還有人在唱，聽來深深不安。1984 年問世的是 Red Rhino 的雙 LP，初版的〈Shout The Storm〉未經剪輯，第二版才剪短。他們用磁帶迴圈與民族樂器做出循環的長音，它與 1983 年的《Mohnomishe》並列兩部雙專輯代表作。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/29382949",
+     "https://www.discogs.com/release/100554",
+     "https://www.discogs.com/master/26203",
+     "https://en.wikipedia.org/wiki/Zoviet_France",
+     "https://trouserpress.com/reviews/zoviet-france/",
+     "https://www.scaruffi.com/vol4/zoviet.html",
+     "https://musicbrainz.org/release-group/0527b3bc-062c-3987-801a-b0c51963f09e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Zoviet France",
+   "album": "Misfits, Loony Tunes and Squalid Criminals",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "dcfb7d61-91c6-310d-8733-3dfd08756809",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 tape music／磁帶迴圈：:zoviet*france: 中期拼貼盤，磁帶迴圈與異國樂器碎片化成霧｜⚠ 偶有手鼓迴圈，x 估 1.8–2.4｜MB release-group dcfb7d61-91c6-310d-8733-3dfd08756809：title「Misfits, Loony Tunes and Squalid Criminals」、Album、first-release-date 1986、artist-credit「:zoviet-france:」。證據：https://musicbrainz.org/release-group/dcfb7d61-91c6-310d-8733-3dfd08756809 https://www.discogs.com/master/26282 https://coverartarchive.org/release/d6149c1b-60ea-412a-8e2c-d041ccff43e6/38011096211.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/dcfb7d61-91c6-310d-8733-3dfd08756809/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1228,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1228）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1228），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "紙袋背面印著警告：內含歐洲原產材料。標籤上的團名拼成 :zoviet-france:，這群新堡樂手從不具名。LP 於 1986 年 9 月上架，由 Red Rhino 發行，是「Charm, Ceremony, Chance, Prophecy」系列的第一部分。他們用的是廉價錄音機與自製原聲樂器。九首當中，短短的〈Signal〉出現了三次。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/100551",
+     "https://www.discogs.com/master/26282",
+     "https://www.discogs.com/release/100546",
+     "https://en.wikipedia.org/wiki/Zoviet_France",
+     "https://forma.org.uk/artists/zoviet-france",
+     "https://en.wikipedia.org/wiki/Red_Rhino_Records",
+     "https://www.soleilmoon.com/shop/zoviet-france-misfits-loony-tunes-and-squalid-criminals/",
+     "https://musicbrainz.org/release-group/dcfb7d61-91c6-310d-8733-3dfd08756809"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Zoviet France",
+   "album": "Look Into Me",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c24f851c-9b34-3795-a620-1f7c44cf55d9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 tape music／磁帶迴圈：:zoviet*france: 90 年代初的暗色 ambient 長篇，磁帶嗡鳴主導｜策展無疑點｜MB release-group c24f851c-9b34-3795-a620-1f7c44cf55d9：title「Look Into Me」、Album、first-release-date 1990、artist-credit「:zoviet*france:」。證據：https://musicbrainz.org/release-group/c24f851c-9b34-3795-a620-1f7c44cf55d9 https://www.discogs.com/master/26312 https://coverartarchive.org/release/d03e2a01-2660-48fb-be70-794fa268108f/19029505517.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c24f851c-9b34-3795-a620-1f7c44cf55d9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 363,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 363）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 363），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "A 面一首就長 24 分 9 秒，後面跟著 13 首短曲。Charrm 是不具名英國團體 Zoviet France 自設的廠牌，唱片 1990 年由它發行。錄音其實更早，從 1987 年 9 月錄到 1988 年 3 月。A 面那首〈Cair Camouflet〉裡的一段，先在 1987 年用進電影《Loud Visual Noises》。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/216526",
+     "https://www.discogs.com/master/26312",
+     "https://en.wikipedia.org/wiki/Zoviet_France",
+     "https://forma.org.uk/artists/zoviet-france",
+     "https://www.soleilmoon.com/shop/zoviet-france-look-into-me/",
+     "https://musicbrainz.org/release-group/c24f851c-9b34-3795-a620-1f7c44cf55d9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Zoviet France",
+   "album": "Shadow, Thief of the Sun",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f8fa7764-81e7-3570-8534-5eb8b9179fcb",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 tape music／磁帶迴圈：:zoviet*france: 最接近 dark ambient 的一張，長段 drone 與遠聲｜策展無疑點｜MB release-group f8fa7764-81e7-3570-8534-5eb8b9179fcb：title「Shadow, Thief of the Sun」、Album、first-release-date 1991、artist-credit「:zoviet*france:」。證據：https://musicbrainz.org/release-group/f8fa7764-81e7-3570-8534-5eb8b9179fcb https://www.discogs.com/master/299251 https://coverartarchive.org/release/3abff5ba-00de-4b34-b5fe-efc367df3043/19065370540.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f8fa7764-81e7-3570-8534-5eb8b9179fcb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 642,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 642）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 642），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "後工業者、drone 研究者，也是偽民族音樂學家。這個新堡團體長期匿名，作品探索難以定位的虛構文化，那串頭銜是廠牌替 Zoviet France 下的。DOVe 於 1991 年出了 CD。十首曲子長短懸殊，〈Come Infinite〉約 20 分 46 秒，〈The Silver Gate〉只有約 1 分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/63689",
+     "https://www.discogs.com/master/299251",
+     "https://www.soleilmoon.com/shop/zoviet-france-shadow-thief-of-the-sun/",
+     "https://en.wikipedia.org/wiki/Zoviet_France",
+     "https://forma.org.uk/artists/zoviet-france",
+     "https://www.soleilmoon.com/shop/zoviet-france-chasse/",
+     "https://musicbrainz.org/release-group/f8fa7764-81e7-3570-8534-5eb8b9179fcb"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Zoviet France",
+   "album": "A Flock of Rotations",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b841f23e-5cf0-3094-86b2-848f2ad2f646",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 tape music／磁帶迴圈：:zoviet*france: 87 年迴圈盤，噪音紋理與旋轉迴圈｜策展無疑點｜MB release-group b841f23e-5cf0-3094-86b2-848f2ad2f646：title「A Flock of Rotations」、Album、first-release-date 1987、artist-credit「:zoviet*france:」。證據：https://musicbrainz.org/release-group/b841f23e-5cf0-3094-86b2-848f2ad2f646 https://www.discogs.com/master/26180 https://coverartarchive.org/release/f9f6c973-fa37-3e39-8a34-ec493dd3c9a3/38011114792.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b841f23e-5cf0-3094-86b2-848f2ad2f646/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 397,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 397）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 397），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "法文標語寫著：一場會說話的動物大會。Robin Storey 一人掛名作曲、演奏與製作，他是 Zoviet France 的成員，後來以 Rapoon 之名單飛。1987 年 6 月，LP 由 Red Rhino 推出。封面標語的下半句是「地平線上的一次碰撞」。14 首的曲名多是自創詞，像〈Skritha〉與〈Drifan〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/326327",
+     "https://www.discogs.com/master/26180",
+     "https://www.soleilmoon.com/shop/zoviet-france-a-flock-of-rotations/",
+     "https://www.discogs.com/release/321625",
+     "https://en.wikipedia.org/wiki/Zoviet_France",
+     "https://forma.org.uk/artists/zoviet-france",
+     "https://musicbrainz.org/release-group/b841f23e-5cf0-3094-86b2-848f2ad2f646"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Zoviet France",
+   "album": "Assault and Mirage",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "af0ec82b-e3e0-3007-b741-8df71b2f71a9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 tape music／磁帶迴圈：:zoviet*france: 87 年拼貼盤，磁帶與原聲碎片混成霧｜⚠ 偶有打擊迴圈，x 估 1.8–2.4｜MB release-group af0ec82b-e3e0-3007-b741-8df71b2f71a9：title「Assault and Mirage」、Album、first-release-date 1987、artist-credit「:zoviet*france:」。證據：https://musicbrainz.org/release-group/af0ec82b-e3e0-3007-b741-8df71b2f71a9 https://www.discogs.com/master/26181 https://coverartarchive.org/release/b9c107e6-57c0-372c-b71b-0270edba2e63/38011123700.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/af0ec82b-e3e0-3007-b741-8df71b2f71a9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 400,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 400）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 400），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "以〈Siege〉開場，以〈Siege Retreat〉收場。這卷卡帶出自隱姓埋名的 Zoviet France，記在 Robin Storey 名下。1987 年 6 月 22 日以卡帶形式由 Red Rhino 發行，紙板盒面貼著一張照片，同一天廠牌也出了一張 LP。中段有一首〈Fire Sticks〉。黑膠是後來才有的重發。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/321625",
+     "https://www.soleilmoon.com/shop/zoviet-france-assault-and-mirage/",
+     "https://www.discogs.com/master/26181",
+     "https://www.discogs.com/release/326327",
+     "https://en.wikipedia.org/wiki/Zoviet_France",
+     "https://forma.org.uk/artists/zoviet-france",
+     "https://musicbrainz.org/release-group/af0ec82b-e3e0-3007-b741-8df71b2f71a9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Zoviet France",
+   "album": "Loh Land",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f5825676-5a23-3a8f-80f8-1957a580f169",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 tape music／磁帶迴圈：:zoviet*france: 87 年荷蘭出版長盤，迴圈 drone 與低語｜策展無疑點｜MB release-group f5825676-5a23-3a8f-80f8-1957a580f169：title「Loh Land」、Album、first-release-date 1987、artist-credit「:zoviet*france:」。證據：https://musicbrainz.org/release-group/f5825676-5a23-3a8f-80f8-1957a580f169 https://www.discogs.com/master/26273 https://coverartarchive.org/release/b84c6161-164f-45ad-9b5f-e762dba4f25c/38011147808.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f5825676-5a23-3a8f-80f8-1957a580f169/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 407,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 407）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 407），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "帶子在 1985 年 4 月錄好，兩年後才在荷蘭出版。阿姆斯特丹的 Staalplaat 簽下了 Zoviet France，一支成員從不露面的英國樂團。1987 年經手的是旗下卡帶系列 Staaltape，帶子裝在 PVC 套裡，副標是一長串荷蘭語。曲目分成 Side 0 與 Side 1。1992 年，Staalplaat 再出了 CD 版。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/125543",
+     "https://www.discogs.com/master/26273",
+     "https://en.wikipedia.org/wiki/Staalplaat",
+     "https://www.soleilmoon.com/shop/zoviet-france-loh-land/",
+     "https://www.soleilmoon.com/shop/zoviet-france-chasse/",
+     "https://musicbrainz.org/release-group/f5825676-5a23-3a8f-80f8-1957a580f169"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Nurse With Wound",
+   "album": "Echo Poeme: Sequence No. 2",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9f44456b-ae4c-3f98-b0cd-7529fe43575a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業儀式 drone：Nurse With Wound 長篇 drone，回授與共鳴緩慢流轉｜策展無疑點｜MB release-group 9f44456b-ae4c-3f98-b0cd-7529fe43575a：title「Echo Poeme: Sequence No. 2」、Album、first-release-date 2005-06、artist-credit「Nurse With Wound」。證據：https://musicbrainz.org/release-group/9f44456b-ae4c-3f98-b0cd-7529fe43575a https://www.discogs.com/master/57646 https://coverartarchive.org/release/6ef3e9e2-1e72-4dfa-9738-c7d357ddaa0b/22221116892.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2005,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9f44456b-ae4c-3f98-b0cd-7529fe43575a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 719,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/5（Last.fm listeners 719）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 719），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一首 48 分 55 秒，起點是《去年在馬倫巴》。Nurse With Wound 是 Steven Stapleton 的計畫，根在 musique concrète。那部電影出自 Resnais 之手。2005 年 6 月，加拿大的 United Jnana 推出 CD，列為 Echo Poeme 系列第二篇，錄音裡請來兩位女聲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/477972",
+     "https://brainwashed.com/nww",
+     "https://chaindlk.com/reviews/7026",
+     "https://www.discogs.com/master/57646",
+     "https://en.wikipedia.org/wiki/Nurse_with_Wound",
+     "https://musicbrainz.org/release-group/9f44456b-ae4c-3f98-b0cd-7529fe43575a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music2/v4/ea/bf/3b/eabf3b17-091b-9eb5-3852-3f3e9029c3cc/mzaf_8408403888711043953.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "appleCollectionId": "93544072",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 93544072「Nurse With Wound《Echo Poeme: Sequence No. 2》」：Apple《Echo Poeme: Sequence No. 2》單軌全長，與 MB 原盤 1 軌一致，取第 1 軌〈Echo Poeme〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Nurse With Wound",
+   "album": "Space Music",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7813b1ec-0f9b-44ec-90c9-219630a4f6ee",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業儀式 drone：Nurse With Wound 長篇宇宙 drone，低頻轟鳴整片｜策展無疑點｜MB release-group 7813b1ec-0f9b-44ec-90c9-219630a4f6ee：title「Space Music」、Album、first-release-date 2009-11-02、artist-credit「Nurse With Wound」。證據：https://musicbrainz.org/release-group/7813b1ec-0f9b-44ec-90c9-219630a4f6ee https://www.discogs.com/master/207909 https://coverartarchive.org/release/83b1cc09-8ff9-49f6-8bcf-e619f81cabd6/22221160267.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7813b1ec-0f9b-44ec-90c9-219630a4f6ee/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 1026,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 4/5/5（Last.fm listeners 1026）；主線：機器基線 classic 4 偏高：天文館委託的單曲長篇，非 NWW 代表作，壓為 3"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 1026），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "天文館的節目單說，大霹靂共振在升 F。墨爾本天文館 2009 年的 Science In The Dark 系列，委託 Nurse With Wound 寫了這首曲子。整張就一首曲子，時長 54 分 39 秒，同年 11 月由 Beta-lactam Ring 出成 CD，演奏者是 Steven Stapleton 等三人。樂評說開頭像小行星相撞，隨後多半低調沉靜，音色冷而金屬，比他以往的氛圍作品更放鬆。封套還印著一句警語：本錄音使用潛意識效果。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2027079",
+     "https://brainwashed.com/common/htdocs/discog/mt080b.php?site=nww",
+     "https://brainwashed.com/nww",
+     "https://www.discogs.com/master/207909",
+     "https://en.wikipedia.org/wiki/Nurse_with_Wound",
+     "https://musicbrainz.org/release-group/7813b1ec-0f9b-44ec-90c9-219630a4f6ee"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/68/81/91/mzm.txmmybge.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "appleCollectionId": "386464424",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 386464424「Nurse With Wound《Space Music》」：Apple《Space Music》單軌全長，與 MB 原盤 1 軌一致，取第 1 軌〈Space Music〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Coil",
+   "album": "Astral Disaster",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4b224d12-0bf1-35ad-99a3-79a2d7136d46",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業儀式 drone：Coil 月亮音樂時期的長篇 drone，儀式性合成器長音｜策展無疑點｜MB release-group 4b224d12-0bf1-35ad-99a3-79a2d7136d46：title「Astral Disaster」、Album、first-release-date 1999-01、artist-credit「Coil」。證據：https://musicbrainz.org/release-group/4b224d12-0bf1-35ad-99a3-79a2d7136d46 https://www.discogs.com/master/21454 https://coverartarchive.org/release/fa9d2718-a121-40a0-85f0-501c5a9f4000/45118698140.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4b224d12-0bf1-35ad-99a3-79a2d7136d46/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 15140,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 2/4/5（Last.fm listeners 15140）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "只壓 99 張，只賣給訂了整套 Drug 系列的人。Coil 是 John Balance 與 Peter Christopherson 1982 年在倫敦組成的團。1999 年 1 月面世的版本由 Prescription 發行，封套貼著兩人簽名編號的貼紙。B 面整面是 23 分 03 秒的〈The Mothership And The Fatherland〉。Moog、Hammond 風琴與 Mellotron 鋪出長音，唯一的打擊聲來自指鈸。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/234986",
+     "https://www.discogs.com/master/21454",
+     "https://en.wikipedia.org/wiki/Astral_Disaster",
+     "https://en.wikipedia.org/wiki/Coil_(band)",
+     "https://musicbrainz.org/release-group/4b224d12-0bf1-35ad-99a3-79a2d7136d46"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/74/4d/a8/744da8f0-e000-547a-9443-e3952967b03d/mzaf_3025065877774354516.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "appleCollectionId": "1440560299",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1440560299「Coil《Astral Disaster (Prescription Edition)》」：曲目 4/5 對上 MB 原盤（Apple 共 5 軌），取第 1 軌〈The Sea Priestess (Prescription Edition)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ELpH vs Coil",
+   "album": "Worship the Glitch",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "11a7ae94-8576-341f-b5a9-3b88edd1a676",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 tape music／磁帶迴圈：Coil 化名 ELpH 的故障音樂實驗，機器噪音與 drone 交織｜⚠ 少數段落有機器脈衝，x 估 2.0–2.5｜MB release-group 11a7ae94-8576-341f-b5a9-3b88edd1a676：title「Worship the Glitch」、Album、first-release-date 1995、artist-credit「ELpH vs Coil」。證據：https://musicbrainz.org/release-group/11a7ae94-8576-341f-b5a9-3b88edd1a676 https://www.discogs.com/master/7703 https://coverartarchive.org/release/8519725a-afc6-4294-ade3-0229406835ef/15344230200.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/11a7ae94-8576-341f-b5a9-3b88edd1a676/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 7225,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 7225）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "盒上貼紙寫著：未經人手觸碰。ELpH 是 Coil 替自家設備隨機生成的音樂取的名字。Eskaton 在 1995 年推出 CD，三位成員掛名。16 首合起來有 54 分鐘，〈The Halliwell Hammers〉有三個版本。〈Mono〉翻玩 Nancy Sinatra 的〈Bang Bang〉，是一段大量處理過的吉他獨奏。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/185636",
+     "https://en.wikipedia.org/wiki/Worship_the_Glitch",
+     "https://www.discogs.com/master/7703",
+     "https://en.wikipedia.org/wiki/Coil_(band)",
+     "https://musicbrainz.org/release-group/11a7ae94-8576-341f-b5a9-3b88edd1a676"
+    ],
+    "note": "薄細項策展線卡牌版：研究（partial）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/90/0d/34/900d3433-0d64-b742-4369-e721ac85304c/mzaf_15728695363217641099.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "appleCollectionId": "1473859719",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1473859719「Coil《ELpH vs Coil : Worship the Glitch》」：曲目 16/16 對上 MB 原盤（Apple 共 16 軌），取第 1 軌〈Dark Start〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Coil presents Black Light District",
+   "album": "A Thousand Lights in a Darkened Room",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "92acb506-2d3a-3c87-9d8a-30a407047887",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業儀式 drone：Coil 以 Black Light District 名義的暗黑 drone 盤｜策展無疑點｜MB release-group 92acb506-2d3a-3c87-9d8a-30a407047887：title「A Thousand Lights in a Darkened Room」、Album、first-release-date 1996-10、artist-credit「Coil presents Black Light District」。證據：https://musicbrainz.org/release-group/92acb506-2d3a-3c87-9d8a-30a407047887 https://www.discogs.com/master/6807 https://coverartarchive.org/release/1bf53dfe-1b35-4631-972e-67ed280a379c/45179778808.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/92acb506-2d3a-3c87-9d8a-30a407047887/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 405,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 405）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 405），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "小冊子說，那個冬天溫暖又潮濕。由 Coil 掛名呈獻的 Black Light District，做的是 drone 實驗。錄音在倫敦完成，1996 年交給 Eskaton 出成 CD。11 首以〈Unprepared Piano〉開場，封面畫作出自 Steven Stapleton。追思名單裡有 Derek Jarman。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/183462",
+     "https://www.discogs.com/master/6807",
+     "https://en.wikipedia.org/wiki/Coil_(band)",
+     "https://musicbrainz.org/release-group/92acb506-2d3a-3c87-9d8a-30a407047887"
+    ],
+    "note": "薄細項策展線卡牌版：研究（partial）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/6d/0a/77/6d0a7741-865e-a54b-e9b7-217f9ba74d91/mzaf_1147304552354610607.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "appleCollectionId": "1473859543",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1473859543「Coil《Coil Presents Black Light District: A Thousand Lights in a Darkened Room》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Unprepared Piano〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Throbbing Gristle",
+   "album": "In the Shadow of the Sun",
+   "identity": {
+    "releaseType": "Compilation",
+    "identitySource": "pinned",
+    "rgMbid": "b8924725-ac01-3031-a7d0-2e22df6fdaae",
+    "upc": "",
+    "aliasesChecked": true,
+    "exceptionReason": "Soundtrack：為 Jarman 短片全新創作的錄音室配樂盤，非選集",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/b8924725-ac01-3031-a7d0-2e22df6fdaae",
+     "https://www.discogs.com/master/10294",
+     "https://coverartarchive.org/release/2192941e-d187-429d-8997-943caecb0015/17198549481.jpg"
+    ],
+    "aliasReview": "工業儀式 drone：Throbbing Gristle 為 Derek Jarman 片所作的慢 drone 配樂，迴圈與嗡鳴｜⚠ 原聲帶（全新創作的配樂盤）｜MB release-group b8924725-ac01-3031-a7d0-2e22df6fdaae：title「In the Shadow of the Sun」、Album＋Soundtrack、first-release-date 1984、artist-credit「Throbbing Gristle」。證據：https://musicbrainz.org/release-group/b8924725-ac01-3031-a7d0-2e22df6fdaae https://www.discogs.com/master/10294 https://coverartarchive.org/release/2192941e-d187-429d-8997-943caecb0015/17198549481.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b8924725-ac01-3031-a7d0-2e22df6fdaae/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 1825,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 4/5/5（Last.fm listeners 1825）；主線：機器基線 classic 4 偏高：解散後出版的影片配樂，非 TG 核心專輯，壓為 3"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 1825），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "四個人即興，替 Derek Jarman 的影片配樂。樂團是 Throbbing Gristle，這份配樂 1980 年錄成。Genesis P-Orridge 稱那部片是 ambient video。1981 年 6 月，樂團寄出明信片宣告任務終結；直到 1984 年 2 月，Illuminated 才把配樂出成 LP。樂評聽到的是黑暗與哀傷。2007 年，他們在 Tate Modern 與合唱團重演了這份配樂。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/101810",
+     "https://en.wikipedia.org/wiki/In_the_Shadow_of_the_Sun_(album)",
+     "https://en.wikipedia.org/wiki/Throbbing_Gristle",
+     "https://musicbrainz.org/release-group/b8924725-ac01-3031-a7d0-2e22df6fdaae"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Controlled Bleeding",
+   "album": "Golgotha",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "11a9b830-87c2-37b0-93de-a67e5f1de5b1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業儀式 drone：Controlled Bleeding 轉向的聖樂暗黑 ambient，合唱與長音｜策展無疑點｜MB release-group 11a9b830-87c2-37b0-93de-a67e5f1de5b1：title「Golgotha」、Album、first-release-date 1991、artist-credit「Controlled Bleeding」。證據：https://musicbrainz.org/release-group/11a9b830-87c2-37b0-93de-a67e5f1de5b1 https://www.discogs.com/master/216166 https://coverartarchive.org/release/2b3614b4-3a14-4cec-a4db-5468c08e972c/24622230763.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/11a9b830-87c2-37b0-93de-a67e5f1de5b1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 937,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 937）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 937），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "工業舞曲樂團的兩個人，分出去做中世紀味的 ambient。Controlled Bleeding 由 Paul Lemos 領軍，這張是他和鼓手 Joe Papa 的支線。1991 年，荷蘭廠牌 Staalplaat 把它出成 CD。盤上只排了五首，加起來約 51 分鐘，光是〈Scourge〉就長達 26 分 11 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/308880",
+     "https://en.wikipedia.org/wiki/Controlled_Bleeding",
+     "https://en.wikipedia.org/wiki/Staalplaat",
+     "https://trouserpress.com/reviews/controlled-bleeding/",
+     "https://musicbrainz.org/release-group/11a9b830-87c2-37b0-93de-a67e5f1de5b1"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/16/59/7c/mzm.aetwdzto.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "appleCollectionId": "206164071",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 206164071「Controlled Bleeding《Golgotha》」：曲目 5/5 對上 MB 原盤（Apple 共 5 軌），取第 1 軌〈Swoon〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Zero Kama",
+   "album": "The Secret Eye of L.A.Y.L.A.H.",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4c0a4e9a-0ca4-36bd-8f4c-0f8ed130fbe0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業儀式 drone：Zero Kama 以骨笛人骨樂器做的儀式錄音，工業儀式的極端原型｜⚠ 儀式打擊段 x 估 1.9–2.4｜MB release-group 4c0a4e9a-0ca4-36bd-8f4c-0f8ed130fbe0：title「The Secret Eye of L.A.Y.L.A.H.」、Album、first-release-date 1984-09、artist-credit「Zero Kama」。證據：https://musicbrainz.org/release-group/4c0a4e9a-0ca4-36bd-8f4c-0f8ed130fbe0 https://www.discogs.com/master/36768 https://coverartarchive.org/release/a344d5c5-f5a1-4f8c-b624-af76c79ab63e/18701841446.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4c0a4e9a-0ca4-36bd-8f4c-0f8ed130fbe0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 5211,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 5211）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "照 Dewitt 自己的說法，樂器全是人骨與頭骨。Zero Kama 是奧地利人 Zoe Dewitt 的化名之一。1984 年 5 月 5 日至 28 日錄音，同年 9 月以 C60 卡帶問世，兩面印的是 O 與 Z。專輯名和其中兩個曲名，都指向 Aleister Crowley。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/185015",
+     "https://en.wikipedia.org/wiki/Nekrophile_Rekords",
+     "https://musicbrainz.org/release-group/4c0a4e9a-0ca4-36bd-8f4c-0f8ed130fbe0",
+     "https://en.wikipedia.org/wiki/Zos_Kia"
+    ],
+    "note": "薄細項策展線卡牌版：研究（partial）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Endura",
+   "album": "Liber Leviathan",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "44e35a79-c8ae-33f2-99d6-1221bad0978d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業儀式 drone：Endura 的魔法儀式暗黑 ambient，長音與吟誦｜策展無疑點｜MB release-group 44e35a79-c8ae-33f2-99d6-1221bad0978d：title「Liber Leviathan」、Album、first-release-date 1996、artist-credit「Endura」。證據：https://musicbrainz.org/release-group/44e35a79-c8ae-33f2-99d6-1221bad0978d https://www.discogs.com/master/46644 https://coverartarchive.org/release/4d86448a-83f5-4339-9305-cbf5400cb0c1/14365659866.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/44e35a79-c8ae-33f2-99d6-1221bad0978d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 676,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 676）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 676），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "曲名裡有 Cthulhu，也有 Dagon。Endura 是一支暗黑 ambient 二人組，這張 CD 在 1996 年交英國 Aesthetic Death 出版。那些曲名來自 H.P. Lovecraft 筆下的克蘇魯神話，盤名《Liber Leviathan》則是拉丁文的「利維坦之書」。團名借自 Cathar 教派的 endura，一種儀式性的斷食。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/430613",
+     "https://www.discogs.com/master/46644",
+     "https://en.wikipedia.org/wiki/Endura_(band)",
+     "https://de.wikipedia.org/wiki/Aesthetic_Death",
+     "https://musicbrainz.org/release-group/44e35a79-c8ae-33f2-99d6-1221bad0978d"
+    ],
+    "note": "薄細項策展線卡牌版：研究（partial）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "John Duncan & Max Springer",
+   "album": "The Crackling",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "747d83b5-6446-33a0-a567-64fa495fbd9f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 tape music／磁帶迴圈：John Duncan 與 Max Springer 的特斯拉線圈放電錄音，電流嗡鳴整片｜策展無疑點｜MB release-group 747d83b5-6446-33a0-a567-64fa495fbd9f：title「The Crackling」、Album、first-release-date 1996、artist-credit「John Duncan & Max Springer」。證據：https://musicbrainz.org/release-group/747d83b5-6446-33a0-a567-64fa495fbd9f https://www.discogs.com/release/725796 https://i.discogs.com/og6tCafaZs5Mcttp1uMVqxD2qB-_0F4r9bRrChmrw_g/rs:fit/g:sm/q:90/h:297/w:299/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyNTc5/Ni0xMTUzNDMyNzgz/LmpwZWc.jpeg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "725796",
+    "url": "https://i.discogs.com/og6tCafaZs5Mcttp1uMVqxD2qB-_0F4r9bRrChmrw_g/rs:fit/g:sm/q:90/h:297/w:299/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyNTc5/Ni0xMTUzNDMyNzgz/LmpwZWc.jpeg",
+    "note": "Discogs release 725796 primary 圖（CAA release-group 無圖 404）；主線 2026-10-23 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 20,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 20）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 20），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "素材錄自史丹佛的直線加速器中心。堪薩斯州出身的 John Duncan，1982 年移居東京，是日本噪音音樂的早期人物。那是一座研究亞原子粒子的設施，他錄下現場聲響，Max Springer 再寫成電腦序列。樂評形容那裡也許是史上最大的樂器。1996 年 trente oiseaux 推出 CD，裡頭有九首，約 49 分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/725796",
+     "https://en.wikipedia.org/wiki/John_Duncan_(American_artist)",
+     "https://musicbrainz.org/release-group/747d83b5-6446-33a0-a567-64fa495fbd9f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（partial）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Maurizio Bianchi",
+   "album": "Regel",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4af4fed1-4592-4326-acf9-0533ed477326",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 tape music／磁帶迴圈：Maurizio Bianchi 早期磁帶迴圈盤，義大利工業 tape music 經典｜策展無疑點｜MB release-group 4af4fed1-4592-4326-acf9-0533ed477326：title「Regel」、Album、first-release-date 1982、artist-credit「M.B.」。證據：https://musicbrainz.org/release-group/4af4fed1-4592-4326-acf9-0533ed477326 https://www.discogs.com/master/41037 https://coverartarchive.org/release/7b324883-2f5b-4b84-9cb0-c020935bac8d/38659485542.jpg",
+    "queryAlias": "M.B."
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4af4fed1-4592-4326-acf9-0533ed477326/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 199,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 199）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 199），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "有些封套裡，夾著一頁俄文醫學書。那是義大利工業噪音先驅 Maurizio Bianchi 在 1982 年自行發行的白標 LP，限量 300 張。A、B 兩面各錄一首無題長曲，各有 23 分鐘多，當年 5 月在米蘭構思並演奏，他自述那是週期性合成器與「血色波浪」。1983 年底，他退出了音樂。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/421369",
+     "https://www.discogs.com/master/41037",
+     "https://www.discogs.com/release/36023431",
+     "https://www.discogs.com/release/30122000",
+     "https://en.wikipedia.org/wiki/Maurizio_Bianchi",
+     "https://musicbrainz.org/release-group/4af4fed1-4592-4326-acf9-0533ed477326"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Maurizio Bianchi",
+   "album": "Menses",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "fc0a6b04-f3e9-43fe-baa1-db66bc68fcd9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 tape music／磁帶迴圈：Maurizio Bianchi 82 年磁帶迴圈盤，緩慢重複的工業嗡鳴｜策展無疑點｜MB release-group fc0a6b04-f3e9-43fe-baa1-db66bc68fcd9：title「Menses」、Album、first-release-date 1982-01、artist-credit「M.B.」。證據：https://musicbrainz.org/release-group/fc0a6b04-f3e9-43fe-baa1-db66bc68fcd9 https://www.discogs.com/master/39087 https://www.discogs.com/master/39087",
+    "queryAlias": "M.B."
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "2929621",
+    "url": "https://i.discogs.com/Xl3Mf9ihp7TAuTDxJ-5CYoSgAPgG1NNnXW5_nqHiZiw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5Mjk2/MjEtMTQyMTA1NzIx/My00MTE0LmpwZWc.jpeg",
+    "note": "Discogs release 2929621（MB release 9f1d7bb3 的 Discogs 連結；1982 自主發行限量 LP） primary 圖（CAA release-group 無圖 404）；主線 2026-10-23 縮圖表目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 249,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 249）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 249），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Bianchi 把這兩首曲子，稱作對扭曲上層結構的反叛。1955 年生的 Maurizio Bianchi，1979 年以 Sacher-Pelz 起步，〈Yra〉與〈Scent〉則是他 1981 年秋在米蘭錄下的，先出成卡帶。卡帶封底那段宣言，大意是順從本能，並說這不算墮落。隔年初他自壓約 250 張黑膠，逐張蓋章編號。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2929621",
+     "https://www.discogs.com/release/143374",
+     "https://www.discogs.com/release/10596864",
+     "https://en.wikipedia.org/wiki/Maurizio_Bianchi",
+     "https://musicbrainz.org/release-group/fc0a6b04-f3e9-43fe-baa1-db66bc68fcd9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Maurizio Bianchi",
+   "album": "Mectpyo Bakterium",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "70ae7501-6f6a-4a0e-a7a5-873ca31abc13",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 tape music／磁帶迴圈：Maurizio Bianchi 早期名作，細菌主題的迴圈噪 drone｜策展無疑點｜MB release-group 70ae7501-6f6a-4a0e-a7a5-873ca31abc13：title「Mectpyo Bakterium」、Album、first-release-date 1982、artist-credit「Maurizio Bianchi」。證據：https://musicbrainz.org/release-group/70ae7501-6f6a-4a0e-a7a5-873ca31abc13 https://www.discogs.com/master/38868 https://coverartarchive.org/release/0100c474-2c0a-481f-9db2-63923ddf104f/20771190909.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/70ae7501-6f6a-4a0e-a7a5-873ca31abc13/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 412,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 412）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 412），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "科羅拉多的小廠，把他的米蘭錄音壓成一千張黑膠。他是米蘭 industrial 圈的 Maurizio Bianchi，那家小廠叫 Dys Records，唱片在 1982 年發行。製作從 1981 年 8 月做到 10 月，地點是 Mectpyo Studio，電子聲、作曲到錄音全署他的名字。A 面與 B 面都只有一首，各近 25 分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/420582",
+     "https://www.discogs.com/release/121427",
+     "https://www.discogs.com/release/5767310",
+     "https://en.wikipedia.org/wiki/Maurizio_Bianchi",
+     "https://musicbrainz.org/release-group/70ae7501-6f6a-4a0e-a7a5-873ca31abc13"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Archon Satani",
+   "album": "Mind of Flesh & Bones",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4f352146-cb4f-326e-bc54-4c90604f8123",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業儀式 drone：Archon Satani 的死亡工業／儀式 ambient，低頻轟鳴與吟誦｜策展無疑點｜MB release-group 4f352146-cb4f-326e-bc54-4c90604f8123：title「Mind of Flesh & Bones」、Album、first-release-date 1993、artist-credit「Archon Satani」。證據：https://musicbrainz.org/release-group/4f352146-cb4f-326e-bc54-4c90604f8123 https://www.discogs.com/master/17433 https://coverartarchive.org/release/1abe03bd-de15-431c-a1d2-9b8f9ea9a90d/46197027785.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4f352146-cb4f-326e-bc54-4c90604f8123/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 2898,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2898）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 2898），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "五首曲子，其實是同一件作品的五個部分。Archon Satani 是 Tomas Pettersson 與 Mikael Stavöstrand 的暗黑氛圍工業計畫，這組作品叫〈Mental Shiver Dispersal〉，從 I 編到 V，約莫 45 分鐘長。1993 年錄成後，交給荷蘭的 Staalplaat 出版。同一年，兩人的合作畫下句點。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/188149",
+     "https://www.discogs.com/master/17433",
+     "https://www.discogs.com/artist/42367",
+     "https://www.discogs.com/release/613666",
+     "https://en.wikipedia.org/wiki/Staalplaat",
+     "https://musicbrainz.org/release-group/4f352146-cb4f-326e-bc54-4c90604f8123"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/a9/e2/47/mzm.aeceasxi.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "appleCollectionId": "504952747",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 504952747「Archon Satani《Mind Of Flesh & Bones》」：曲目 5/5 對上 MB 原盤（Apple 共 5 軌），取第 1 軌〈I〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Daniel Menche",
+   "album": "Static Burn",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f9b222bd-a3f9-4bac-acc3-ddb72da3bf16",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "工業 tape music／磁帶迴圈：Daniel Menche 的靜電噪 drone 名作，整片電流糊牆｜⚠ 噪牆音壓大但無拍，依 10-22 規則留靜｜MB release-group f9b222bd-a3f9-4bac-acc3-ddb72da3bf16：title「Static Burn」、Album、first-release-date 1994、artist-credit「Daniel Menche」。證據：https://musicbrainz.org/release-group/f9b222bd-a3f9-4bac-acc3-ddb72da3bf16 https://www.discogs.com/master/58907 https://coverartarchive.org/release/6bed22e2-2279-47b5-8b42-bb6464d57d96/20176356518.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f9b222bd-a3f9-4bac-acc3-ddb72da3bf16/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 346,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 346）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 346），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "素材清單裡，有被摧毀的人聲與一首被遺忘的舊歌。Daniel Menche 是波特蘭的噪音音樂家，1969 年生，自學出身，1989 年開始錄音。封套上列的素材還有類比與數位處理、受折磨的電子聲，並請聽者把音量開到最大，同時當心別弄壞喇叭。1994 年春夏，他在 Skunkworks Studios 錄下這些聲音，同年 Soleilmoon 出成限量 CD，裝進手工紙做的三折封套，七段的總時長約 62 分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/224470",
+     "https://danielmenche.bandcamp.com/album/static-burn-remaster-edition",
+     "https://www.discogs.com/release/5161524",
+     "https://en.wikipedia.org/wiki/Daniel_Menche",
+     "https://en.wikipedia.org/wiki/Soleilmoon",
+     "https://www.discogs.com/master/58907",
+     "https://musicbrainz.org/release-group/f9b222bd-a3f9-4bac-acc3-ddb72da3bf16"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/90/e5/7b/mzm.nsvydofk.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "appleCollectionId": "40777729",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 40777729「Daniel Menche《Static Burn》」：Apple《Static Burn》Soleilmoon 1994、7 軌全 Untitled，與 MB 原盤 7 首 [untitled] 一致（自動比對 0/7 為曲名空白），取第 1 軌〈Untitled〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Elend",
+   "album": "Leçons de ténèbres",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2d3a746b-b9c2-3fa0-a34c-b9933b24280b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "黑暗新古典：Elend 首張，黑暗新古典：合唱、弦樂墊與定音鼓轟｜⚠ 偶有嘶吼段，x 估 2.0–2.5｜MB release-group 2d3a746b-b9c2-3fa0-a34c-b9933b24280b：title「Leçons de ténèbres」、Album、first-release-date 1994、artist-credit「Elend」。證據：https://musicbrainz.org/release-group/2d3a746b-b9c2-3fa0-a34c-b9933b24280b https://www.discogs.com/master/260925 https://coverartarchive.org/release/15e86754-858d-495f-9784-af3b73821f86/5525363986.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2d3a746b-b9c2-3fa0-a34c-b9933b24280b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 4582,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 4582）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "四首歌詞，取材自 John Milton 的《失樂園》。Elend 1993 年在法國成立，把當代古典與哥德接在一起，這是他們的首張專輯。1994 年 9 月，三人在法國 Dreux 錄音，用取樣器與合成器疊出管弦樂聲。四首中有的照用原詩、有的改編過，〈Lucifer〉便是一例。唱片於 1994 年 11 月 21 日交由 Holy Records 發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4218267",
+     "https://en.wikipedia.org/wiki/Le%C3%A7ons_de_t%C3%A9n%C3%A8bres_(album)",
+     "https://en.wikipedia.org/wiki/Elend_(band)",
+     "https://www.discogs.com/master/260925",
+     "https://musicbrainz.org/release-group/2d3a746b-b9c2-3fa0-a34c-b9933b24280b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Elend",
+   "album": "Weeping Nights",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "dde7afa9-9deb-36ac-986a-9ae496c0eecf",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "黑暗新古典：Elend 最安靜的 ambient 新古典盤，人聲與弦樂霧｜策展無疑點｜MB release-group dde7afa9-9deb-36ac-986a-9ae496c0eecf：title「Weeping Nights」、Album、first-release-date 1997、artist-credit「Elend」。證據：https://musicbrainz.org/release-group/dde7afa9-9deb-36ac-986a-9ae496c0eecf https://www.discogs.com/master/219516 https://coverartarchive.org/release/6f0064c7-ceb2-4abe-a2d7-67985e1a741c/5525235632.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/dde7afa9-9deb-36ac-986a-9ae496c0eecf/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 11433,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 11433）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "前作的所有男聲被抽掉，重混成後半六首。Elend 是法國的哥德古典團體，女高音此時是 Nathalie Barbary；被拿來重混的，是 1996 年的《Les Ténèbres du dehors》。開頭三首則是新寫的，其中兩首改編自 Henry Purcell。它在 1997 年 6 月 23 日發行，獨立於樂團的三部曲外。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/300936",
+     "https://en.wikipedia.org/wiki/Weeping_Nights",
+     "https://en.wikipedia.org/wiki/Elend_(band)",
+     "https://www.discogs.com/master/219516",
+     "https://musicbrainz.org/release-group/dde7afa9-9deb-36ac-986a-9ae496c0eecf"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Elend",
+   "album": "Winds Devouring Men",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "56f8b78c-60e3-312c-9165-a1974ff1240c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "黑暗新古典：Elend 復出作，室內管弦與電子低頻的暗黑新古典｜策展無疑點｜MB release-group 56f8b78c-60e3-312c-9165-a1974ff1240c：title「Winds Devouring Men」、Album、first-release-date 2003-04-14、artist-credit「Elend」。證據：https://musicbrainz.org/release-group/56f8b78c-60e3-312c-9165-a1974ff1240c https://www.discogs.com/master/27860 https://coverartarchive.org/release/ab766c2b-42f6-4651-b33a-bee92e4b0b6f/1433416162.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2003,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/56f8b78c-60e3-312c-9165-a1974ff1240c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 10380,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 10380）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "取樣器退到後面，換真人樂手吹小號、拉小提琴。這是法國新古典樂團 Elend 的第五張，2003 年問世，多數段落改由室內樂手以原聲演奏，電腦效果只留下一部分。Klaus Amann 包辦小號、法國號與長號，Shinji Chihara 與 David Kempf 拉小提琴，女高音則有兩位。工業景觀與噪音另外採錄，再交給 Iskandar Hasnawi 編程。十首正曲約 60 分鐘，由〈The Poisonous Eye〉揭幕。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Winds_Devouring_Men",
+     "https://www.discogs.com/release/300225",
+     "https://elend-music.bandcamp.com/album/winds-devouring-men",
+     "https://musicbrainz.org/release-group/56f8b78c-60e3-312c-9165-a1974ff1240c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/22/40/ca/2240ca9b-c3ce-d24b-bd36-ebc39c26a1c8/mzaf_4205190655396478917.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "appleCollectionId": "1528412538",
+    "storefront": "FR",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple fr 1528412538「Elend《Winds Devouring Men》」：曲目 10/10 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈The Poisonous Eye〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Die Verbannten Kinder Evas",
+   "album": "Die verbannten Kinder Evas",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "367f455f-78ad-3d6d-8ad5-0652bcb07490",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "黑暗新古典：Die Verbannten Kinder Evas 首張，奧地利黑暗新古典：合成器管弦與女聲｜策展無疑點｜MB release-group 367f455f-78ad-3d6d-8ad5-0652bcb07490：title「Die verbannten Kinder Evas」、Album、first-release-date 1995、artist-credit「Die Verbannten Kinder Evas」。證據：https://musicbrainz.org/release-group/367f455f-78ad-3d6d-8ad5-0652bcb07490 https://www.discogs.com/release/317624 https://coverartarchive.org/release/8d0aef48-38d7-4613-990b-052366cc8afa/42135323698.jpg",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/367f455f-78ad-3d6d-8ad5-0652bcb07490/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 4490,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 4490）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兩位 Summoning 團員，在維也納另開了一條線。新樂團走的是緩慢憂鬱的 darkwave，1993 年由同在黑金屬圈的 Richard Lederer 與 Michael Gregor 組成。首張 1995 年 4 月 15 日推出，排了 14 首，長度約 67 分鐘。兩人都彈鍵盤，Lederer 兼唱男聲，女聲交給 Julia Lederer 與 Nora El Shammah，署名欄裡沒有鼓手。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/317624",
+     "https://en.wikipedia.org/wiki/Die_Verbannten_Kinder_Evas",
+     "https://musicbrainz.org/release-group/367f455f-78ad-3d6d-8ad5-0652bcb07490",
+     "https://soniccathedral.com/zine/index.php/cd-reviews/655-Die%20Verbannten%20Kinder%20Evas%20-%20Dusk%20and%20Void%20Became%20Alive"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Die Verbannten Kinder Evas",
+   "album": "Come Heavy Sleep",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b9ad4d4f-1019-318a-8efb-b8508598499d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "黑暗新古典：Die Verbannten Kinder Evas 第二張，詩作配樂的暗黑新古典｜策展無疑點｜MB release-group b9ad4d4f-1019-318a-8efb-b8508598499d：title「Come Heavy Sleep」、Album、first-release-date 1997、artist-credit「Die Verbannten Kinder Evas」。證據：https://musicbrainz.org/release-group/b9ad4d4f-1019-318a-8efb-b8508598499d https://www.discogs.com/master/311778 https://coverartarchive.org/release/463ec37a-51a5-442d-8fe8-db7ce04dbe59/42135394821.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b9ad4d4f-1019-318a-8efb-b8508598499d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 6341,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 6341）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "首版第二首的 5 分 53 秒處，會冒出一聲爆音。這是由 Richard Lederer 作曲的奧地利 darkwave 樂團第二張，1997 年由 M.O.S. Records 推出 digipak 首版，第三、八首也各藏著一處，後來換了母帶就消失了。雪萊的詩被譜成歌詞，Lederer 彈鍵盤、唱男聲，Julia Lederer 唱女聲，封面也出自她手。錄音則在瑞士布克斯的 Tonspur AG 完成，收十首，全長 57 分鐘左右。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/317606",
+     "https://www.discogs.com/master/311778",
+     "https://www.discogs.com/release/322171",
+     "https://en.wikipedia.org/wiki/Die_Verbannten_Kinder_Evas",
+     "https://soniccathedral.com/zine/index.php/cd-reviews/655-Die%20Verbannten%20Kinder%20Evas%20-%20Dusk%20and%20Void%20Became%20Alive",
+     "https://musicbrainz.org/release-group/b9ad4d4f-1019-318a-8efb-b8508598499d"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Die Verbannten Kinder Evas",
+   "album": "In Darkness Let Me Dwell",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "41b09c56-abe6-386c-b247-af49400ace32",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "黑暗新古典：Die Verbannten Kinder Evas 第三張，最濃的暗色合成器管弦｜策展無疑點｜MB release-group 41b09c56-abe6-386c-b247-af49400ace32：title「In Darkness Let Me Dwell」、Album、first-release-date 1999-11-22、artist-credit「Die Verbannten Kinder Evas」。證據：https://musicbrainz.org/release-group/41b09c56-abe6-386c-b247-af49400ace32 https://www.discogs.com/master/183267 https://coverartarchive.org/release/0343f3f6-9926-4345-b681-3e9781f99c3e/42136013882.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/41b09c56-abe6-386c-b247-af49400ace32/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 7706,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 7706）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "這一次，站到最前面唱的是 Tania Borsky。在這支維也納的 darkwave 樂團裡，前兩張的男聲都由 Richard Lederer 擔綱，到了第三張，主角換成 Borsky 的女聲，他的男聲退居輔助。標題曲的詞取自文藝復興作曲家兼詩人 John Dowland，另外也配上雪萊詩作。1999 年 11 月 22 日由 Draenor Productions 發行，共九首、58 分鐘上下，步調像一場緩慢的送葬行進。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/322171",
+     "https://soniccathedral.com/zine/index.php/cd-reviews/655-Die%20Verbannten%20Kinder%20Evas%20-%20Dusk%20and%20Void%20Became%20Alive",
+     "https://darkitalia.com/reviews/album/folk/in-darkness-let-me-dwell",
+     "https://www.discogs.com/master/183267",
+     "https://en.wikipedia.org/wiki/Die_Verbannten_Kinder_Evas",
+     "https://musicbrainz.org/release-group/41b09c56-abe6-386c-b247-af49400ace32"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f1/ef/60/f1ef6052-7e26-b52c-03d2-a5553e948dfa/mzaf_6571989352375418033.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "appleCollectionId": "1345611360",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1345611360「Die Verbannten Kinder Evas《In Darkness Let Me Dwell》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Intro〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "sToa",
+   "album": "Urthona",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "1c4a8cc0-2ddc-31e7-ab3e-2aade0e759df",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "ethereal 暗色長音：sToa 首張，德國 Hyperium ethereal 新古典：女聲、合成器墊｜策展無疑點｜MB release-group 1c4a8cc0-2ddc-31e7-ab3e-2aade0e759df：title「Urthona」、Album、first-release-date 1993、artist-credit「sToa」。證據：https://musicbrainz.org/release-group/1c4a8cc0-2ddc-31e7-ab3e-2aade0e759df https://www.discogs.com/master/113318 https://coverartarchive.org/release/78b28812-1134-39af-99eb-8b44047395cd/5091970624.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1c4a8cc0-2ddc-31e7-ab3e-2aade0e759df/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 33259,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 33259）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "十一首裡最長的一首，也只有 5 分 53 秒。德國哈勒的新古典 darkwave 計畫 sToa，1991 年成立，兩年後由德國 Hyperium Records 發行了這張，全盤約 42 分鐘，撐到最長的是〈Stoa〉。錄音在 Tonstudio Hiltpoltstein 進行，音樂署名 Olaf Parusel。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/113318",
+     "https://www.discogs.com/release/202848",
+     "https://www.discogs.com/artist/69882",
+     "https://sonichits.com/artist/sToa",
+     "https://en.wikipedia.org/wiki/Hyperium_Records",
+     "https://musicbrainz.org/release-group/1c4a8cc0-2ddc-31e7-ab3e-2aade0e759df",
+     "https://releasemagazine.net/Onrecord/orstoaz.htm"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/85/06/f2/8506f2be-8c70-5fa0-121a-5f1c8e800d0d/mzaf_6038178767167026410.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "appleCollectionId": "168599247",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 168599247「sToa《Urthona》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Candide〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "sToa",
+   "album": "Porta VIII",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "63fa06ec-c263-309e-a685-c53a053456c4",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "ethereal 暗色長音：sToa 第二張，更濃的 ethereal 合成器霧與女聲｜策展無疑點｜MB release-group 63fa06ec-c263-309e-a685-c53a053456c4：title「Porta VIII」、Album、first-release-date 1994、artist-credit「sToa」。證據：https://musicbrainz.org/release-group/63fa06ec-c263-309e-a685-c53a053456c4 https://www.discogs.com/master/113317 https://coverartarchive.org/release/e0bacfaf-ed35-4fdd-a625-62f19449f023/37771083753.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/63fa06ec-c263-309e-a685-c53a053456c4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 16468,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 16468）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "梅特林克的一齣童話劇，被改編成整張唱片。sToa 是 Olaf Parusel 作曲的 darkwave 樂團，Hyperium Records 1994 年把它出版，共九首。其中〈Urthona〉〈Luvah〉〈Tharmas〉〈Urizen〉四個曲名，是英國詩人布萊克的神話《四天神》裡的四位神祇。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/616768",
+     "https://en.wikipedia.org/wiki/The_Four_Zoas",
+     "https://www.discogs.com/master/113317",
+     "https://musicbrainz.org/release-group/63fa06ec-c263-309e-a685-c53a053456c4",
+     "https://sonichits.com/artist/sToa",
+     "https://releasemagazine.net/Onrecord/orstoaz.htm"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c8/16/b5/c816b55c-97ee-80a6-e7a2-0f9cd6437ba3/mzaf_1572037406211413178.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "appleCollectionId": "168600612",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 168600612「sToa《Porta VIII》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Introitus〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dargaard",
+   "album": "In Nomine Aeternitatis",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b597af1d-3ffa-3fea-b873-d1160b84e6cb",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "黑暗新古典：Dargaard 的暗黑新古典：定音鼓轟、合成器合唱與管弦墊｜策展無疑點｜MB release-group b597af1d-3ffa-3fea-b873-d1160b84e6cb：title「In Nomine Aeternitatis」、Album、first-release-date 2000-03-06、artist-credit「Dargaard」。證據：https://musicbrainz.org/release-group/b597af1d-3ffa-3fea-b873-d1160b84e6cb https://www.discogs.com/master/546463 https://coverartarchive.org/release/dced79c0-5d3b-49d1-bfdf-b1acb63ea980/12463437866.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b597af1d-3ffa-3fea-b873-d1160b84e6cb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 16426,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 16426）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "團名取自《龍槍》裡那座受詛咒的要塞。黑金屬 Abigor 的前鍵盤手 Tharen 在 1997 年創立 Dargaard，想從黑金屬轉向環境與古典音樂；那座要塞叫 Dargaard Keep，屬於小說裡的一位死亡騎士。1998 至 1999 年，他先在 Stronghold Dargaard 作曲、編程，然後才進錄音室，合唱與定音鼓全出自鍵盤。2000 年由 Draenor Productions 發行，一共 11 首，51 分鐘長。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/604392",
+     "https://en.wikipedia.org/wiki/Dargaard",
+     "https://de.wikipedia.org/wiki/Dargaard",
+     "https://www.discogs.com/artist/215666",
+     "https://www.discogs.com/master/546463",
+     "https://musicbrainz.org/release-group/b597af1d-3ffa-3fea-b873-d1160b84e6cb"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5a/07/65/5a0765ec-5004-f5bf-1446-043f4fff1a70/mzaf_5031905673536587439.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "appleCollectionId": "1184008033",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1184008033「Dargaard《In Nomine Aeternitatis》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Dark Horizons〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dargaard",
+   "album": "Rise and Fall",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "68809d8a-92d3-3380-a892-b48c6725ff68",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "黑暗新古典：Dargaard 後期作，史詩式合成器管弦與女聲｜策展無疑點｜MB release-group 68809d8a-92d3-3380-a892-b48c6725ff68：title「Rise and Fall」、Album、first-release-date 2004-03-22、artist-credit「Dargaard」。證據：https://musicbrainz.org/release-group/68809d8a-92d3-3380-a892-b48c6725ff68 https://www.discogs.com/master/83968 https://coverartarchive.org/release/e0f303f5-8dcd-4aa7-8c91-916e6eeed2d3/27796148982.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2004,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/68809d8a-92d3-3380-a892-b48c6725ff68/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 48652,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 48652）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "開場的同名曲，一口氣走了 10 分 47 秒。Dargaard 是 Tharen 用鍵盤模擬管弦的古典取向計畫，全盤八首，跑完約 50 分鐘。這次署名了三位真人合唱，前作的合唱只是合成音色。Elisabeth Toriser 擔任人聲，寫下旋律並改編拉丁文歌詞，英文詞則由 Tharen 執筆。2004 年 3 月 22 日，Draenor Productions 讓它上市。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1285381",
+     "https://www.discogs.com/release/604392",
+     "https://en.wikipedia.org/wiki/Dargaard",
+     "https://de.wikipedia.org/wiki/Dargaard",
+     "https://www.discogs.com/master/83968",
+     "https://musicbrainz.org/release-group/68809d8a-92d3-3380-a892-b48c6725ff68"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/d0/b4/2ad0b4e2-5da8-b510-613b-873595d2399e/mzaf_13028990627380315509.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "appleCollectionId": "1184132744",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1184132744「Dargaard《Rise and Fall》」：曲目 8/8 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Rise and Fall〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Arcana",
+   "album": "Inner Pale Sun",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "89f2dde0-b5d8-311c-96de-717abba8452d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "黑暗新古典：Arcana 黑暗新古典中期作，合唱、低音墊與遠鼓｜策展無疑點｜MB release-group 89f2dde0-b5d8-311c-96de-717abba8452d：title「Inner Pale Sun」、Album、first-release-date 2002-12-08、artist-credit「Arcana」。證據：https://musicbrainz.org/release-group/89f2dde0-b5d8-311c-96de-717abba8452d https://www.discogs.com/master/1758 https://coverartarchive.org/release/a90fcbea-f149-48c8-be31-9482b414b245/1748384200.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/89f2dde0-b5d8-311c-96de-717abba8452d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 31085,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 31085）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "錘下揚琴，定音鼓與程式鼓在後頭滾動。瑞典埃斯基爾斯蒂納的 Arcana 以 Peter Pettersson 為首，他唱歌、敲定音鼓、彈吉他，揚琴也由他錘擊；Stefan Eriksson 負責鼓與程式，Ann-Mari Thim 吟唱女聲。評論形容它比 Dead Can Dance 更暗，混進了 dark ambient 與儀式音樂。2002 年交 Cold Meat Industry 發行，是 Arcana 在這家廠牌的收尾之作。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/92253",
+     "https://side-line.com/?p=26516",
+     "https://www.sputnikmusic.com/album/29390/Arcana-Inner-Pale-Sun/",
+     "https://customers.mvdb2b.com/s/ArcanaInnerPaleSun/159THCYCLELP",
+     "https://en.wikipedia.org/wiki/Arcana_(Swedish_band)",
+     "https://www.discogs.com/artist/44495",
+     "https://www.discogs.com/master/1758",
+     "https://musicbrainz.org/release-group/89f2dde0-b5d8-311c-96de-717abba8452d"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3a/c7/06/3ac706f4-c289-049c-cb23-8f1ed4c26383/mzaf_13188774155193047075.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:15:33Z",
+    "appleCollectionId": "1803831091",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 1803831091「Arcana《Inner Pale Sun》」：曲目 8/8 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈My Cold Sea〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

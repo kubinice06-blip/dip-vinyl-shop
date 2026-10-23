@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 4 輪 mc26／md11：東歐 synth-pop＋冷 synthwave 14＋工業 tape music／neoclassical darkwave 40 張上線，落格 14/14、37/40
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 4 輪，本工作階段負責 mc26、md11。mc26（`add-20261023-mc26`，冷冽：synthwave 冷而薄＋mc19 東歐 synth）：Технология 4、Bonanza Banzai 5、Waveshaper《Exploration 84》《Mainframe》、Dynatron《Aeternus》、Lost Years《Amplifier》、Vector Hold《Mechanized》。md11（`add-20261023-md11`，頹靡：工業 old-school 慢盤／tape music＋md12 neoclassical darkwave）：Organum 6、Zoviet France 7、Maurizio Bianchi 3、NWW 2、Coil 系 3、TG《In the Shadow of the Sun》、SPK《Zamia Lehmanni》、Controlled Bleeding、Zero Kama、Endura、Duncan & Springer、Archon Satani、Menche、Elend 3、DVKE 3、sToa 2、Dargaard 2、Arcana《Inner Pale Sun》。
+- **策展→研究汰換**：mc26 策展兩輪 36、研究汰 20（dreamwave 懷舊判暖、darksynth 判重、混音輯／精選、真鼓銅管樂團）→ 14，場景見底照實上架。md11 策展 54、主線汰 9（池中同人判輕、z 貼邊）、研究汰 5（有鼓：C93《In Menstrual Night》、NWW《Insect…》；暖：Cyclobe、Arcana《Raspail》、Heemann）→ 40。md12 併入 md11；mc19 部分併入 mc26。
+- **主線審稿**：mc26 改 2 處（Bonanza Banzai 單源銷量數字刪）；md11 逐張審過未改字。
+- **上線**：card_catalog 14＋40、KV 54 鍵回讀逐字一致、seed +54、published gate 兩批 0 error；試聽 ready 12＋16（Технология ru 重發、Menche／NWW 單軌盤人工配）；封面 CAA 50、Discogs 4（已登錄 registry）。上線前對 origin 各分支 seed／curation 去重 0 撞。NWW《Space Music》、TG 配樂 classic 4→3。
+- **情緒評分**：`score-mc26`、`score-md11`；合併 main 後照 10-23 體感標準重評（舊評分留 `out-pre-felt/`）。**mc26 落冷冽 14/14**；**md11 落頹靡 37/40**，出格 Organum《Submission》《Vacant Lights》金屬刮擦、Menche《Static Burn》噪牆判躁落暴躁。八格（併 main 後）：頹靡 1,316、冷冽 1,301、恍惚 1,126。
+- **順手修**：「亢奮→暴躁」改名只改了產生檔 `scale-v0.json`，來源 `batch-progress/mood-axes/anchors-v1.json` 的 `_regionRule.names.charge` 仍是「亢奮」，任何人重跑 `build-scale.mjs` 就會蓋回去；已把來源改成「暴躁」，重建後 names 正確。
+- **類型樹**：`genre-l3-artist-map.json` 補 Dynatron（synthwave）、Coil presents Black Light District、Duncan & Springer、Arcana（rock/goth），54/54 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 20 位列在兩批 rulings.md 末尾（mc26 6、md11 14）。
+- **主要檔案**：`batch-progress/add-20261023-{mc26,md11}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{mc26,md11}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{mc26,md11}/`、`onboarding-manifest-add-20261023-{mc26,md11}-20261023.json`、`desc-tools/batches/*/add-20261023-{mc26,md11}-*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`data/mood/*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`。
+- **驗證**：prepare／published gate 兩批 0 error；KV 回讀 54/54；qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；build-card-moods 錨點 104/104、seed 20,589。
 ### 2026-10-23｜dip-vinyl-shop｜情緒八格「亢奮」改名「暴躁」（charge）
 
 - **改動**：店主指示把躁・重・冷那一格改名「暴躁」。來源 `data/mood/scale-v0.json` 的 `names.charge`，重建 `card-moods.json`（只改名，座標 0 張變動）；`starmap-lab.html`、`dip-tune.js` 註解、`score500/BRIEF.md` 同步。內部代號仍是 `charge`；舊批次文件（含情緒薄格線 SCENES.md）裡的「亢奮」＝暴躁，不回頭改。
