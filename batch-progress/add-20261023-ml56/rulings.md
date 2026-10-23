@@ -36,3 +36,15 @@
 - 21288：Blundetto《World of Dub》是自家《World Of》（2015）的 dub 重製，Heavenly Sweetness HS135VL，限量 1000，九首共約 33 分鐘；無樂評，原版含 funk／Kabyle／搖滾／reggae 拼貼，輕度存疑（funk 律動）。
 - 21289：Aim《Flight 602》廠牌實為 ATIC Records（自家新廠牌首發），Aim 2005 年初已離開 Grand Central（卡單錯）；Discogs 風格 Trip Hop／Downtempo／Breaks，Niko 人聲約半數曲目、單曲導向，歌曲型成分中等，中到強存疑。ATIC 成立年各條目互相矛盾（2005／2006），facts 不寫。
 - 21290：e 組彙整：九張中廠牌被我推翻 7 張（Gaudi ×2、Dub Colossus《Will Tear》、Halftribe ×2、Heights、Aim）；建議汰換優先序：Backwater Revisited、No Prisoners；其次 Heights、Dub Will Tear Us Apart、Flight 602。Penny Black 全文與 AllMusic 取不到，No Prisoners 樂評句取自搜尋摘要。本組 WebSearch 用 3 次。
+
+## 研究 a 組
+- 21241：廠牌推翻 5 處（卡單標錯）：Fila《A Touch of Cloth》1999 原版是自家 Tritone（T001，後因法律問題改名 Twentythree），《Jump Leads》是 Twentythree（TT010LP），Money Mark《Change Is Coming》是 Emperor Norton（EMN 7045）、《Father Demo Square》是日本 Rush! Production（ACCR-10039），Mo' Wax 當時已近尾聲（2002 結束）。Wikipedia《A Touch of Cloth》專輯頁誤寫 Pork，以 Discogs／MB 為準。
+- 21242：Money Mark《Change Is Coming》moodGuess 強烈存疑：Wikipedia 稱「tropical yet danceable disco and funk」，Houston Press 用 drunk with funk／blasts into life／jazz-funk／墨西哥聲響，客席多（Sean Lennon、Los Lobos 五人）。建議汰換。
+- 21243：Money Mark《Push the Button》moodGuess 強烈存疑：有主唱的歌曲型盤（維基 guitar pop，Discogs 含 Pop Rock／Indie Rock／Synth-pop／Hip Hop），客席樂手眾多（Sean Lennon、Jim Keltner、Russell Simins 等），單曲上英國榜。建議汰換。
+- 21244：Money Mark《Father Demo Square》聲音證據為零（日本限量發行、無樂評），標 thin，moodGuess 無從證實；曲名偏歌曲型。建議汰換或上架後聽感再判。
+- 21245：Fila《A Touch of Cloth》Exclaim! 評：far mellower than Power Clown、類 Moog 鍵盤、爵士銅管、拉丁節奏、dub-style bass lines、1970s disco／funk 暖旋律——偏暖但有 funk／disco 律動，x 恐 2.7–3.0。唯一確切 dub 低頻原句來源。
+- 21246：Fila《Power Clown》唯一聲音證據是 Exclaim! 的對照語（比後作更硬、更偏 funk 與吉他）；曲名單曲偏 funk（Bovine Funk、Throwing Down a Shape），moodGuess 存疑，y 邊距薄的可能性高。
+- 21247：Fila《Old Codes New Chaos》Wikipedia 標 breakbeat，Discogs 風格含 House，〈Mermaids〉有 house 拍、〈Fila Funk〉18 分鐘上揚；ghostdeep 有 echoing dubby textures 與貝斯為重心，但非全程慢拍。存疑中等。
+- 21248：Fila《Mess》《Luck Be a Weirdo Tonight》《Jump Leads》僅有 Discogs 風格標籤（Downtempo；Luck 另含 Leftfield、Breaks），查無樂評；全數標 thin。Luck 的 Breaks 標籤是有 breaks 拍的風險。三者 dub／warm／hazy 原句皆無。
+- 21249：全組無任何樂評用 dark／cold／eerie／melancholic 等陰冷字眼；Jack Hawkins 電影對白採樣之外無人聲客串（Fila 全組）。Luck 唯一客席是 Bernard Moss（薩克斯風、長笛）。
+- 21250：日期不一致已取保守：Luck（MB 1997-05-05／維基 6 月 23 日／Discogs 6 月）、Push the Button（MB 1998-05-19／維基 5 月 4 日）、Jump Leads（MB 2002-02 美／2002-03-05 英）；facts 只寫年或標英版。Exclaim!、Houston Press、衛報全文 WebFetch 取不到，僅用摘要與維基收錄短語。WebSearch 用 3 次。建議汰換優先序：Push the Button、Change Is Coming、Father Demo Square；其次 Power Clown、Luck。
