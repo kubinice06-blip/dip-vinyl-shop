@@ -97,3 +97,17 @@
 - 核過的事實：Below Beyond Above 錄於 1997-10-06 Zack Studio、1998 年 Uhlang；infra_red 與 Shock_Late 同日錄音；Double_Wash 1999-12 錄、2000 夏里昂重編、2001 GROB；21 Situations 1997-12-01～03 Radio-Canada Studio 12；Studio—Analogique—Numérique 2000-11-01 New 28 Studio、三張 8 公分 CD；La nuit 3 台唱盤 1 唱頭 25 張 LP、Audioview 1997；East of Where? 2016-11-14 柏林 Yan Jun 工作室；Rabbit Run 41 分鐘切 42 軌、2002-06-19～20 科隆；Bart 〈Du / Function〉29:45；Touch 哥倫比亞委託、序列器脈衝；Sidewinder 包絡跟隨器；Microphone 1973 錄、1978 Cramps；Brt Vrt MSLKH 001；Döner Kebab 2017-02-28 錄、2022 發行；Solo Trumpet 2.1 錄 2016、2019 Discrepant；More Is More 2005-11-09 Fairchild Chapel、Evans 時年 24（1981-10-02 生）；{Sparks} 北齋《雷神》封面；dR 2018 Éditions Piednu；Gloire à... 1991-11-09 COREAM 首演、1992 Metamkine。
 - 樂評的聲音描述（Rabbit Run、Bart、What a Wonderful World、Brt Vrt、Döner Kebab、Wooley/Wright）都未點名媒體，屬聲音事實，保留；評價語（「驚人的即興演奏家」等）寫作層已未寫。
 - 其餘 24 張逐張審過，未改字。qa-batch research／hooks／out、qa-check-research（兩檔 0 標記）、fix-spacing 重跑全過；「據」字 0。
+
+## 上線（不佔條號）
+- 上線 26：card_catalog 26/26、KV 26 鍵回讀逐字一致、試聽 3 ready（Apple 自動 2、主線人工配對 1：Subotnick《Touch》取 Wergo《Touch / Jacob's Room》第 1 軌，同為 1969 原錄音）、23 張 Apple 查無標 unavailable（Erstwhile、Uhlang、For 4 Ears、Ambiances Magnétiques、Al Maslakh 等廠牌幾乎不上架；《Döner Kebab》Apple 有條目但無試聽軌）、seed +26、published gate 0 error（26 warning：UPC 查無）。
+- 封面：CAA 20、Discogs 6（Lux Payllettes 2330889、Bart 73238、Touch 4245425 取 Columbia MS 7316 原版、About Trumpet And Saxophone 5078273、More Is More 1043693、{Sparks} 2382587；已登錄 registry），主線逐張目視、manifest 封面 URL live-check 26/26 200。上線前對 origin 近 40 個 `claude/*` 分支 seed＋近期卡單去重 0 撞。
+- 子曲風：`warm-batch` 19 張有標籤、7 張無；`genre-l3-artist-map.json` 補 `electronic/noise/concrete` 6（大友／Tétreault ×2、Rowe/Lehn/Schmickler、Müller/Möslang、Kerbaj／中村、Moor/Lehn/Butcher）、`jazz/free/free-improv` 2（Dörner/Kerbaj、Wooley/Wright）；重建後 31/31 落位。
+
+## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-mc37/`）
+- 照 10-23 體感標準評分（conf mid 5、low 21）。**上線 26；落冷冽 16/26＝62%**。
+- 出格 10 張全部判重落暴躁（y 0.5–0.9，x 與 z 都在冷冽側）：Voice Crack ×2、Double_Wash、What a Wonderful World、Möslang《lat_nc》、Müller/Möslang《Vlan_Voilà》、Rowe/Lehn/Schmickler《Rabbit Run》、Lehn/Schmickler《Bart》、Noetinger《dR》《Gloire à...》——**cracked electronics、類比合成器噪音堆疊與盤帶 concrète 評分聽成「糊厚」**，策展估 y −0.3～0 全部高估了輕度。
+- 落冷冽的是唱盤（大友／Tétreault、eRikm《Zygosis》、Tétreault 獨奏）、管樂擴展技法（Kerbaj ×3、Wooley/Wright、Peter Evans ×2）、Buchla（Subotnick ×2）、回授（Tudor、中村）與 Thermal；x 3.0–4.2、y −0.6～+0.4。安靜型 x 3.0–3.2 剛好過線（East of Where?、Microphone、Döner Kebab）。
+- 產量：策展 54、主線汰 9、研究汰 19 → 26。**下一批冷冽同型只收管樂擴展技法、唱盤與 Buchla／序列器型，cracked electronics 與盤帶噪音拼貼不收**；EAI 主場景（Erstwhile 系）研究汰換主因是安靜／催眠（判靜）與現場，見底，mc37 不再派。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Voice Crack、Marchetti / Voice Crack / Noetinger、Otomo Yoshihide & Martin Tétreault、eRikm、Jérôme Noetinger & eRikm、Norbert Möslang、Martin Tétreault、Mazen Kerbaj – Toshimaru Nakamura、Keith Rowe & Thomas Lehn & Marcus Schmickler、Günter Müller / Norbert Möslang、Thomas Lehn & Marcus Schmickler、Andy Moor, Thomas Lehn & John Butcher、Morton Subotnick、David Tudor（兩人池中已有他盤但仍無介紹）、Mazen Kerbaj、Axel Dörner & Mazen Kerbaj、Nate Wooley, Seymour Wright、Peter Evans、Peter Evans / Tom Blancarte、Jérôme Noetinger（20 個掛名）

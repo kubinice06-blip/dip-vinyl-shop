@@ -67,8 +67,8 @@
 | 43 | mc36 | no wave／薄而尖的 noise rock（DNA、Mars、Teenage Jesus、Theoretical Girls、Glenn Branca 早期、Ut、Sonic Youth 最早期） | ✅ 上線 20／落格 18 |
 | 44 | ml44 | 暖的 shoegaze／dream pop 厚牆（Slowdive 周邊、Mazzy Star 系、Galaxie 500、Lush 慢盤、Asobi Seksu、日本 shoegaze 暖盤） | ✅ 上線 10／落格 9 |
 | 45 | md26 | 暗色 neofolk／dark folk 慢盤（Current 93、Sol Invictus、Ain Soph、Forseti、Hexvessel 慢盤；避開有極右爭議的團） ＋ doom jazz 二線 | ✅ 上線 28／落格 28 |
-| 46 | ml46 | 暖的 neoclassical／post-classical 弦樂＋鋼琴厚墊（Ólafur Arnalds、A Winged Victory 周邊、Dustin O'Halloran、Hania Rani 慢盤；獨奏鋼琴偏輕不收） | 派→情緒薄格 ml46、mc37（第 10 輪） |
-| 47 | mc37 | EAI／onkyo／電聲即興（AMM、Keith Rowe、Sachiko M、Otomo 電聲期、Toshimaru Nakamura；安靜但讓神經繃緊的算躁） | 派→情緒薄格 ml46、mc37（第 10 輪） |
+| 46 | ml46 | 暖的 neoclassical／post-classical 弦樂＋鋼琴厚墊（Ólafur Arnalds、A Winged Victory 周邊、Dustin O'Halloran、Hania Rani 慢盤；獨奏鋼琴偏輕不收） | ✅ 上線 5／落格 4 |
+| 47 | mc37 | EAI／onkyo／電聲即興（AMM、Keith Rowe、Sachiko M、Otomo 電聲期、Toshimaru Nakamura；安靜但讓神經繃緊的算躁） | ✅ 上線 26／落格 16 |
 | 48 | ml47 | chillhop／jazzhop 第二波（Chillhop Records、Bonus Points、Philanthrope、Psalm Trees、Saib、L'Indécis）＋ 日韓 lo-fi beat tape ＋ ml42 剩餘 | 派→情緒薄格 ml47、ml48（第 10 輪） |
 | 49 | ml48 | dub 第三波：Wackies／Bullwackie 紐約慢盤、Lee Perry 周邊、Prince Jammy、Niney、Joe Gibbs／Errol Thompson、Linval Thompson | 派→情緒薄格 ml47、ml48（第 10 輪） |
 | 50 | ml49 | 90s R&B slow jam／ballad 二線（ml6 收 40 張、高產；Jodeci、Silk、H-Town、Intro、Shai、Changing Faces 系慢歌） | 派→情緒薄格 ml49、mc38（第 10 輪） |
@@ -154,7 +154,7 @@
 | mc34 | 13641 | 日本前衛／即興（高柳昌行、阿部薫、大友良英、Sachiko M、ONJO） | 部分併入 mc28（只收吉田アミ 1 張；大友 Cathode／Anode、Sachiko M 正弦波極靜判靜、高柳／阿部噪音轟炸判重或 MB 標現場，不再單獨派） |
 | mc35 | 13721 | RIO／前衛搖滾尖細那半（Henry Cow、Art Bears、Etron Fou Leloublan、Thinking Plague、Univers Zero 薄盤） | 併入 mc33（Henry Cow、Art Bears、Étron Fou ×3、Skeleton Crew、5uu's ×2、Doctor Nerve、Yugen 落冷冽；Cassiber 與 Thinking Plague《In Extremis》判重） |
 | mc36 | 19641 | no wave／薄而尖的 noise rock（DNA、Mars、Teenage Jesus、Theoretical Girls、Glenn Branca 早期、Ut、Sonic Youth 最早期；厚牆轟炸落暴躁） | ✅ 上線 20／落格 18（2026-10-23；策展 39、主線汰 7、研究汰 12；no wave 本體多 EP，主力改 Downtown 即興；帶吉他的 Mars＆DNA、Ut 判重落暴躁；不再派） |
-| mc37 | 19881 | EAI／onkyo／電聲即興（AMM、Keith Rowe、Sachiko M、Otomo 電聲期、Toshimaru Nakamura） | 派→情緒薄格 ml46、mc37（第 10 輪） |
+| mc37 | 19881 | EAI／onkyo／電聲即興（AMM、Keith Rowe、Sachiko M、Otomo 電聲期、Toshimaru Nakamura） | ✅ 上線 26／落格 16（2026-10-23；策展 54、主線汰 9、研究汰 19（安靜／催眠判靜 8、現場 4、鼓 4）；cracked electronics 與盤帶噪音拼貼 10 張判重落暴躁；唱盤、管樂擴展技法、Buchla 全中；見底不再派） |
 | mc38 | 20201 | 前衛爵士鋼琴緊繃那路（Cecil Taylor 獨奏、Matthew Shipp、Sylvie Courvoisier、Kris Davis、Marilyn Crispell、Schlippenbach） | 派→情緒薄格 ml49、mc38（第 10 輪） |
 
 ## 恍惚 ml（靜＋重＋暖；門檻 x ≤ 2.7、y ≥ +0.8、z ≥ +0.3）
@@ -208,7 +208,7 @@
 | ml43 | 19401 | 暖的 post-rock／ambient post-rock（Hammock、Helios、Eluvium 暖盤、Sigur Rós 周邊、Caspian 慢盤） | ✅ 上線 21／落格 17（2026-10-23；策展 40、主線汰 4、研究汰 15；併 ml46 厚墊 1 張（Olan Mill）；鋼琴／鐘琴在前的判輕落放鬆 4；主場景見底，不再派） |
 | ml44 | 19481 | 暖的 shoegaze／dream pop 厚牆（Slowdive 周邊、Mazzy Star 系、Galaxie 500、Lush 慢盤、Asobi Seksu、日本 shoegaze 暖盤） | ✅ 上線 10／落格 9（策展兩輪 50、主線汰 18、研究汰 22；shoegaze 二線色溫多貼 0，場景見底，不再派） |
 | ml45 | 19561 | rocksteady／early reggae 慢歌（Treasure Isle、Studio One 慢板、Alton Ellis、Ken Boothe、Phyllis Dillon 二線） | ✅ 上線 17／落格 17 |
-| ml46 | 19801 | 暖的 neoclassical／post-classical 弦樂＋鋼琴厚墊（獨奏鋼琴偏輕不收） | 派→情緒薄格 ml46、mc37（第 10 輪） |
+| ml46 | 19801 | 暖的 neoclassical／post-classical 弦樂＋鋼琴厚墊（獨奏鋼琴偏輕不收） | ✅ 上線 5／落格 4（2026-10-23；策展兩輪 26、研究汰 7（elegiac 判冷、鋼琴領軍判輕、現場）；池中 post-classical 全判輕，死池不再派；Port Blue 判輕落放鬆） |
 | ml47 | 19961 | chillhop／jazzhop 第二波（Chillhop Records、Bonus Points、Philanthrope、Psalm Trees、Saib、L'Indécis）＋ 日韓 lo-fi | 派→情緒薄格 ml47、ml48（第 10 輪） |
 | ml48 | 20041 | dub 第三波：Wackies／Bullwackie 紐約慢盤、Lee Perry 周邊、Prince Jammy、Niney、Joe Gibbs／Errol Thompson、Linval Thompson | 派→情緒薄格 ml47、ml48（第 10 輪） |
 | ml49 | 20121 | 90s R&B slow jam／ballad 二線（Jodeci、Silk、H-Town、Intro、Shai、Changing Faces 系慢歌） | 派→情緒薄格 ml49、mc38（第 10 輪） |

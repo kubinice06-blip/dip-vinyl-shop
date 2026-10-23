@@ -363,7 +363,7 @@
   {
    "id": "jazz",
    "zh": "爵士",
-   "count": 4820,
+   "count": 4826,
    "children": [
     {
      "id": "bop",
@@ -447,22 +447,22 @@
     {
      "id": "free",
      "zh": "自由與前衛",
-     "count": 855,
+     "count": 861,
      "children": [
       {
        "id": "avant",
        "zh": "前衛與 New Thing",
-       "count": 448
+       "count": 452
+      },
+      {
+       "id": "free-improv",
+       "zh": "自由即興",
+       "count": 150
       },
       {
        "id": "post-bop",
        "zh": "偏 Post-Bop",
        "count": 146
-      },
-      {
-       "id": "free-improv",
-       "zh": "自由即興",
-       "count": 144
       },
       {
        "id": "fusion",
@@ -635,27 +635,27 @@
   {
    "id": "electronic",
    "zh": "電子",
-   "count": 2593,
+   "count": 2616,
    "children": [
     {
      "id": "ambient",
      "zh": "Ambient / Drone",
-     "count": 1165,
+     "count": 1174,
      "children": [
       {
        "id": "dark-ambient",
        "zh": "Dark Ambient",
-       "count": 273
+       "count": 274
       },
       {
        "id": "drone",
        "zh": "Drone",
-       "count": 262
+       "count": 268
       },
       {
        "id": "idm",
        "zh": "偏 IDM",
-       "count": 246
+       "count": 247
       },
       {
        "id": "ambient-techno",
@@ -665,7 +665,7 @@
       {
        "id": "neoclassical",
        "zh": "偏現代古典",
-       "count": 84
+       "count": 86
       },
       {
        "id": "new-age",
@@ -766,17 +766,17 @@
     {
      "id": "downtempo",
      "zh": "Trip-hop / Downtempo",
-     "count": 442,
+     "count": 443,
      "children": [
       {
        "id": "chillout",
        "zh": "Chillout / Lounge",
-       "count": 250
+       "count": 251
       },
       {
        "id": "ambient",
        "zh": "偏 Ambient",
-       "count": 210
+       "count": 211
       },
       {
        "id": "trip-hop",
@@ -808,17 +808,17 @@
     {
      "id": "idm",
      "zh": "IDM / Glitch",
-     "count": 430,
+     "count": 432,
      "children": [
       {
        "id": "ambient-idm",
        "zh": "Ambient IDM",
-       "count": 239
+       "count": 240
       },
       {
        "id": "glitch",
        "zh": "Glitch / Microsound",
-       "count": 176
+       "count": 178
       },
       {
        "id": "warp",
@@ -914,7 +914,7 @@
     {
      "id": "industrial",
      "zh": "Industrial / EBM",
-     "count": 267,
+     "count": 269,
      "children": [
       {
        "id": "dark-ambient",
@@ -924,7 +924,7 @@
       {
        "id": "power-electronics",
        "zh": "Power Electronics / 噪音",
-       "count": 85
+       "count": 87
       },
       {
        "id": "old-school",
@@ -946,27 +946,27 @@
     {
      "id": "noise",
      "zh": "實驗與噪音",
-     "count": 222,
+     "count": 240,
      "children": [
       {
        "id": "harsh",
        "zh": "Harsh Noise / 日本噪音",
-       "count": 172
+       "count": 182
       },
       {
        "id": "drone",
        "zh": "Drone / Dark Ambient",
-       "count": 137
+       "count": 143
       },
       {
        "id": "glitch",
        "zh": "Glitch / Microsound",
-       "count": 58
+       "count": 60
       },
       {
        "id": "concrete",
        "zh": "具象音樂與拼貼",
-       "count": 44
+       "count": 59
       }
      ]
     },
@@ -1372,27 +1372,27 @@
   {
    "id": "classical",
    "zh": "古典",
-   "count": 1359,
+   "count": 1361,
    "children": [
     {
      "id": "contemporary",
      "zh": "當代與極簡",
-     "count": 578,
+     "count": 579,
      "children": [
       {
        "id": "avant",
        "zh": "前衛與現代",
-       "count": 164
+       "count": 165
       },
       {
        "id": "neoclassical",
        "zh": "新古典 / 氛圍鋼琴",
-       "count": 93
+       "count": 94
       },
       {
        "id": "film-score",
        "zh": "偏配樂",
-       "count": 61
+       "count": 62
       },
       {
        "id": "minimal",
@@ -1428,7 +1428,7 @@
     {
      "id": "film",
      "zh": "電影配樂",
-     "count": 93,
+     "count": 94,
      "children": []
     },
     {
