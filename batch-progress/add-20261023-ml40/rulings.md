@@ -50,3 +50,23 @@
 - 19177：Guts《Paradise for All》moodGuess 存疑高：Discogs credits 無客串人聲（登錄 Instrumental），「加勒比溫度」只有曲名與 Beach Diggin' 旁證，曲子短（11 首約 42 分鐘），找不到樂評，status thin。Pura Vida 2011 數位首發、Heavenly Sweetness 2012 實體。
 - 19178：WebSearch 本組用 12 次（超過 3 次上限，7 張各自缺樂評而補查；樂評類頁面 Guardian／EW／Drowned in Sound／AllMusic／Juno／Discogs 網頁多為 403 或工具封鎖）；其餘走 Discogs API、MB、Wikipedia、Bandcamp、RA、Arcana、mxdwn、Skiddle。
 - 19179：本組建議汰換候選（聲音證據不足且存疑高）：Mellowdramatic、We're Just Waiting for You Now、Paradise for All；Hinterland 與 Mickey Mouse Operation 視實聽。Finistère 最貼恍惚，《4》視暖度實聽。
+
+## 研究 e 組
+- **19201** Hollie Cook《Twice》：身分對上（Mr Bongo、2014）；發行日三源不一（5/12、5/27、6/10），年份一致。moodGuess 存疑：Exclaim! 稱低音搏動、dub 影響成立，但〈Ari Up〉ska 彈跳、較暗俱樂部聲響與 Moroder 式電子效果，有判躁風險；無 dusty 取樣或磁帶糊。status full。
+- **19202** Hollie Cook《Vessel of Love》：策展層「dub 殘響、弦樂」未獲證實（來源只有銅管、合成器、夢幻感），曲短多為 3–4 分半歌曲，PopMatters 稱 breezy，moodGuess 存疑偏輕。Pitchfork／AllMusic 無法開，評語取自維基轉述。status thin。
+- **19203** Fat Freddy's Drop《Dr. Boondigga & The Big BW》：dub 取樣朦朧氛圍（PopMatters，King Tubby／Scientist）、長曲成立，與策展層吻合；後半（hi-life、prog、techno 取向）與〈Big BW〉俱樂部律動有輕度判躁風險。銷量張數單一來源，不寫。status full。
+- **19204** Fat Freddy's Drop《Blackbird》：Bays（舊教會）房間聲與豐厚鋪排成立；樂團自述含 disco 與電子放克，低頻厚度與慢 dub 無樂評直接描述，輕度存疑。status full。
+- **19205** Lord Echo《Melodies》：推翻策展層「lovers 甜旋律」無來源；來源描述是 Afrobeat、拉丁、放克、disco、DJ 友善，Discogs 標 Dub／Downtempo 但無低頻或殘響敘述。moodGuess 存疑，建議試聽。status thin。
+- **19206** Lord Echo《Curiosities》：推翻策展層「lovers rock 翻唱、整體仍慢」——新聞稿是 boogie 放克、disco 化 dub、Afrobeat，為 DJ 舞池而做，Discogs 無 Dub 標籤；moodGuess 存疑偏躁，建議汰換或試聽。卡單 label Jakarta 為歐洲／南美發行商，Economy 為紐西蘭本地，兩者皆對，不必改。status thin。
+- 本組 WebSearch 用 3 次；Pitchfork／AllMusic／Merge／Bandcamp 皆無法取得。
+
+## 主線：研究後汰換（不佔條號）
+- 研究層一查，這個場景的二線多半**沒有 dub 低頻／慢拍的來源證據**，或證據指向輕快、breaks、funk、饒舌、舞池，照「聲音跟預估不符直接汰換」汰 24（卡單、研究稿、`pick.json` 同步移除，34 → 10）：
+  - 判輕／躁（breaks、house、funk 拼布、舞池）：The Solid Doctor《Beats Means Highs》（house 取向）、Baby Mammoth《10,000 Years Beneath the Street》（Pork 標 beats & breaks）、《Swimming》（真鼓吉他、Future Jazz）、Jon Kennedy《We're Just Waiting for You Now》（Breaks 標籤）、Little People《Mickey Mouse Operation》（bouncy breaks、陰鬱詭異）、Blundetto《Bad Bad Things》（3–5 分鐘 funk 短曲）、《World Of》（funk／卡比爾／搖滾拼布）、《Warm My Soul》（鼓機、嘻哈拉丁、饒舌客串）、《Good Good Things》（巴西拉丁嘻哈混血）、《Slow Dance》（陽光、3 分鐘人聲歌）、Guts《Eternal》（真人 funk＋MC）、Dub Colossus《Addis to Omega》（快雷鬼、dancehall、ska）、Lord Echo《Curiosities》（boogie、disco dub、為舞池而做）、《Melodies》（Afrobeat／disco、DJ 友善）、Hollie Cook《Vessel of Love》（breezy 短歌）。
+  - 判冷：Aim《Hinterland》（同名曲陰暗、饒舌與森巴混雜）、Boozoo Bajou《4》（自稱 darker、ambient dub）。
+  - 無聲音證據：Purple Penguin《De-tuned》《Question》（廠牌自述 weirdelic 拼貼，實驗）、A Forest Mighty Black《Mellowdramatic》、Guts《Paradise for All》、Tosca《Osam》（全無樂評）。
+  - 判輕（歌曲化）：Tosca《Odeon》。
+  - 非正規錄音室專輯：Thievery Corporation《Treasures From the Temple》（Discogs 註明為《The Temple of I & I》同期混音、dubplate 與稀有曲集）。
+- 留下 10：Heights of Abraham《Humidity》《Electric Hush》（subsonic／soul-food bass，存疑 lounge 輕快，交評分）、Boozoo Bajou《Finistère》（slow dub-infused beats）、Tosca《No Hassle》（低能量、dub delay、木質貝斯；雙 CD 以 CD1 錄音室 12 首為準）、Almamegretta《Sanacore》、Blundetto & Liam Bailey《Heavy Soul》、Dub Colossus《A Town Called Addis》（重低音、回音、dub groove）、Hollie Cook《Twice》（低音搏動、dub 影響）、Fat Freddy's Drop 兩張。
+- **廠牌更正**：Dub Colossus《A Town Called Addis》Society of Sound → **Real World Records**（主發行 CDRW155；研究 d 組）。
+- 場景嚴重見底，叫回策展代理補 15 張「有樂評明講 dub 低音／回音／慢拍＋溫暖」的候補（見下節）。
