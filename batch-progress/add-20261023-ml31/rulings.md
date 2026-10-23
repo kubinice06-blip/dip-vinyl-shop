@@ -60,3 +60,14 @@
 - 試聽 6 ready／1 unavailable：Kem《Intimacy》《Promise to Love》盤名帶副標，搜尋對不上，改藝人目錄 lookup 人工配標準版（1443073511、1443594075）；Mahalia《Great Songs of Love and Faith》Apple 藝人目錄無條目 → unavailable。
 - 封面：CAA 6；Mahalia《The Power and the Glory》CAA 404，改 Apple 190183806 同錄音官方圖，主線目視相符。
 - Last.fm：Kem 兩張以帶副標盤名查錯（listeners 5,772／22），改用 Last.fm 正名「Intimacy」「Promise To Love」重查（29,880／9,112），meta.json 的機器基線改正。Mahalia《Great Songs》listeners 28 為真實低量，照機器值。
+
+## 寫作層（writer-1；條號 16461–16470）
+- **16461** 交件：`desc-tools/batches/output/add-20261023-ml31-out-1.json` 7 張（full 4：211–223；thin 3：154–176）。初稿 0 張出界；Rhythm of Love 初稿貼上限 240，整格捨去自加的「程式墊底與現場節奏組並排」一句後 218。`qa-batch out`、`qa-check-research`、`fix-spacing` 皆 0 處；「據」grep 0。
+- **16462** 第二句全照鉤子層 16456：Rhythm of Love「Anita Baker 是 R&B 歌手」；Kemistry 本名領句；Album II「R&B 歌手 Kem 交出第二張時」；Intimacy 日期領句＋「R&B 唱將」；Promise「替」字句＋R&B 歌手；Power and the Glory 女低音＋成名曲領句；Great Songs「第一位」領句。「日」後一字照 16457：Album II 日由、Intimacy 日問、Promise 日發。
+- **16463** 派工補充照辦：媒體名、媒體榜單名次整句不寫；樂評觀察三處（Album II 編曲稀疏與深夜電台、Promise 的 Snoop 收斂、Power and the Glory 弦樂銅管淹沒）只以「樂評說」或直述轉述、不具名；Billboard 200 名次為官方榜照寫。
+- **16464** 自掃 han() 4-gram：本檔跨張初稿 2 條（「歌手的第」「登上第名」，Album II 對 Intimacy），拆名詞後 0。另掃已上架 out 檔開頭兩句：「的第二張」×18、「的第三張」×17 改寫（Album II 改「交出第二張時」、Intimacy 改「第三度出手的錄音室作品」），餘「出第二張」10、「的錄音室」11 屬通用片語，未再動。
+
+## 主線審稿（2026-10-23，cloud-main，7 張逐張讀過、對回研究稿）（條號 16471–16473）
+- 16471｜Kem《Album II》：刪「放進 70 年代末的深夜靈魂電台也不顯突兀」（單源樂評比較）；hook 的「臥室耳語」是聲音描述、有研究稿來源，保留。14 萬張／Billboard 第 5 名有研究稿來源（維基），保留。
+- 16472｜Kem《Promise to Love》：刪「樂評說他表現得相當收斂」（單源評價）。
+- 16473｜Mahalia《The Power and the Glory》：「樂評說，每一首都被弦樂與銅管淹沒」改直述「每一首都被弦樂與銅管團團包住」。其餘 4 張未改；事實層未動。Townsend 偏愛 Johnny Williams 有 Frémeaux 解說來源。
