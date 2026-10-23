@@ -24,3 +24,15 @@
 - 21265：《The Third Chamber》全為 ambient（Eno／Hassell 比較、drones／甘美朗），無 dub 低頻證據，y 0.9 存疑，留主線聽感再判。
 - 21266：《Part 11》年份採 MB／Discogs 的 1991（維基 Ariwa 條寫 1992）；Ransom Note 訪談引句無法開啟（503），不進 facts。
 - 21267：moodGuess 存疑彙整：Prince Fatty《Viper's Shadow》為客串歌手多的歌曲型盤，樂評用 upbeat groove 與 melancholic chords；Mad Professor 各盤 Discogs 皆有多名 DJ／人聲客串。AllMusic 403、Wayback 不可抓，無 warm／hazy 樂評原句。
+
+## 研究 e 組
+- 21281：Gaudi《No Prisoners》moodGuess 強烈存疑：Gaudi 自家 Bandcamp 明寫「離開一貫的 down-tempo、明顯更 up-tempo」，主力為 breakbeat 疊粗低音，客串多（Franti、Bunny Wailer、Elisa 等）；廠牌實為 Six Degrees（卡單 Gaudi 錯）。建議汰換。
+- 21282：Gaudi《Earthbound》廠牌實為 Antenna／Bustin' Loose（卡單錯）；年份 MB／Discogs 1999，Bandcamp 自相矛盾（1997／1998），採 1999。Discogs 風格含 jungle／drum n bass、曲目有 General Levy，整盤節奏型態無樂評佐證，moodGuess 中度存疑。
+- 21283：Dub Colossus《Dub Me Tender》是自家兩張舊作的 dub 重混（加四首未發表），Dubblog 稱演奏輕、像現場、豐富多變，非極簡厚 dub；策展層引的 PopMatters／Metro 原文取不到，不進 facts。輕度存疑。
+- 21284：Dub Colossus《Dub Will Tear Us Apart》實為 2010-12 Society of Sound Music 下載版（Discogs），非 Real World 實體（卡單廠牌錯）；曲目大量與 2011《Addis Through the Looking Glass》重疊，樂評稱同名曲是 dub 最淡的幾首。中到強存疑；若池中已有《Addis…》建議查重。
+- 21285：Halftribe《Luxia》廠牌實為 Archives；僅有標籤（ambient／deep／electronica；Discogs Ambient／IDM／Dub），無鼓點與低頻描述，moodGuess 缺佐證。
+- 21286：Halftribe《Backwater Revisited》廠牌實為 Dronarivm；文案「Melancholia laid bare」、聽眾稱 desolate and disturbing，標籤 ambient／modern classical，非 dub-downtempo。強烈存疑，建議汰換（可能落輕或冷）。
+- 21287：Heights of Abraham《Two Thousand and Six》廠牌實為 Twentythree（卡單錯）；Discogs 風格標 Deep House／Downtempo，可能有四拍推進，無樂評，中到強存疑。年份 MB／Discogs 2005，Wikipedia 寫 2006。
+- 21288：Blundetto《World of Dub》是自家《World Of》（2015）的 dub 重製，Heavenly Sweetness HS135VL，限量 1000，九首共約 33 分鐘；無樂評，原版含 funk／Kabyle／搖滾／reggae 拼貼，輕度存疑（funk 律動）。
+- 21289：Aim《Flight 602》廠牌實為 ATIC Records（自家新廠牌首發），Aim 2005 年初已離開 Grand Central（卡單錯）；Discogs 風格 Trip Hop／Downtempo／Breaks，Niko 人聲約半數曲目、單曲導向，歌曲型成分中等，中到強存疑。ATIC 成立年各條目互相矛盾（2005／2006），facts 不寫。
+- 21290：e 組彙整：九張中廠牌被我推翻 7 張（Gaudi ×2、Dub Colossus《Will Tear》、Halftribe ×2、Heights、Aim）；建議汰換優先序：Backwater Revisited、No Prisoners；其次 Heights、Dub Will Tear Us Apart、Flight 602。Penny Black 全文與 AllMusic 取不到，No Prisoners 樂評句取自搜尋摘要。本組 WebSearch 用 3 次。
