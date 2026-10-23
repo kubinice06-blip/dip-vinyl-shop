@@ -109,3 +109,13 @@
   - Stewart Walker《Stabiles》：「後來的評論提到稀疏推進的低音線、殘響與 dub 質地，力道收在低調、讓人點頭的程度。」→「低音線稀疏推進，帶著殘響與 dub 質地，力道收得低調。」（研究 a 組：出處是評精選輯的單篇樂評，改成直述聲音，不轉述評論）。201 字。
   - Elektro Guzzi《Parquet》：「真樂器保住了機器般的精準，也替冷硬的 techno 添了一點危險感。」→「真樂器保住了機器般的精準。」（研究 b 組：「危險感」是單源樂評評價句）。198 字。
 - **11557**：寫作層提出的三處：(1) Super.Trigger「專攻電子聲響」、Multistability「做電子音樂」，研究稿沒有更精確的樂種來源，維持；(2) Drift「2010 年冬天錄於柏林」與「9 月 27 日上市」不矛盾（年初冬天錄、秋天發），維持；(3) Multistability「沒有單一讀法」是盤名概念的內容，維持。The Power 開場曲序照研究稿（主題曲後接〈Microbe〉），正確。全文無「據說／據傳」、無媒體名與媒體年終榜。
+
+## 上線與評分（2026-10-23，主線）
+- **11558**：上線 31 張：card_catalog 31／31、KV 31 鍵回讀逐字一致、試聽 22 ready／9 unavailable（Brinkmann 兩張、Houle《Drift》、Jeff Mills 三張、Oliver Ho、Pacou 兩張在 Apple 藝人目錄查無；Rian Treanor《ATAXIA》、SND、Sutekh 人工指定藝人目錄條目）、seed +31、published gate 0 error。封面 CAA 28＋Apple 官方圖 3（Live Extracts、False Light、Elektro Guzzi 首作，CAA 404），縮圖表目視、live-check 31／31 200；Marc Houle《Restore》CAA 圖是 Minus 圓標式封面，與 Apple 官方圖同款，保留。上線前對 origin 各 `claude/*` 分支 seed 去重 0 撞。冷門軸人工 2 張（Jeff Mills《The Power》《The Jungle Planet》）。
+- **11559**：**落格率 25/31＝81%**（`batch-progress/mood-axes/score-mc7/`；conf mid 16、low 15）。出格 6 張：
+  - 判靜落平靜 3：Efdemin（柔和 minimal house）、Marc Houle《Drift》（抒情 minimal）、Beatrice Dillon《Workaround》（乾稀疏打擊、留白多）——有拍沒攻擊性、推力不足。
+  - 判重落亢奮 3：Richard Devine《Lipswitch》（失真故障音塊）、Jeff Mills《From the 21st》（Axis 硬派快鼓機，y 0.6）、Brinkmann《Tokyo + 1》（粗糙失真鼓循環，y 0.5 貼線）。
+  - 教訓：minimal techno 的 x 風險在「柔和、抒情、house 化」那一路（Dial、Minus 後期）；y 風險在 Axis／Warp 的硬派與 glitch 音塊。乾而快、click 為主的（Brinkmann《Klick》、Stewart Walker、Gaiser、Pacou、Rian Treanor、Mark Fell、SND）全落冷冽。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Thomas Brinkmann、Stewart Walker、Marc Houle、Gaiser、Troy Pierce、Elektro Guzzi、Brandt Brauer Frick、Efdemin、Mark Fell、SND、Beatrice Dillon、Funkstörung、Richard Devine、Sutekh、Rian Treanor、Damon Wild、Oliver Ho、Pacou（18 位；其餘藝人已有介紹或已在排隊）。
