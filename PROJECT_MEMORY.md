@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格線第 12 輪派工：優先序 58–63
+
+- **起因**：第 11 輪收工（ml50 22／21、md27 15／13、ml51 31／31、md28 34／34、ml52 27／25、mc39 28／24，上線／落格）。恍惚 1,538、頹靡 1,480、冷冽 1,469，冷冽轉為最薄。
+- **新場景**（高產路線開續集）：mc40 自由即興弦樂、mc41 電子原音尖細那半、ml54 lo-fi 第四波、ml55 女聲 R&B ballad、md29 dark ambient 第四波。
+- **派工**：ml53＋mc40、ml54＋md29、ml55＋mc41（冷冽 2 批）。
+- **主要檔案**：`batch-progress/mood-cells-20261022/SCENES.md`。
+- **驗證**：純佇列文件變更；新條號 20841–21240 不與既有重疊。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 11 輪 ml51／md28：lo-fi beat tape 第三波 31 張、dark ambient 第三波 34 張上線，落格 31/31、34/34
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 11 輪，本工作階段負責 ml51、md28（評分照 10-23 體感標準）。ml51（`add-20261023-ml51`，恍惚：lo-fi／beat tape 第三波＋ml47 剩餘）：Knxwledge《Old.Klouds.LP》、Ohbliv ×4＋Fitz Ambro$e & Ohbliv、Wun Two ×3＋與 Boora 合作、mt. fujitive ×2＋與 Smuv、oofoe 合作、Purrple Cat ×6、less.people、Ta-ku ×4、Onra《Nosthaigia》、Elaquent ×2、Stan Forebee ×2、BROCKBEATS《Tranquilizook》。md28（`add-20261023-md28`，頹靡：dark ambient 第三波）：Cryo Chamber 洛夫克拉夫特合寫 ×3、protoU、Dronny Darko 系 ×4、Ugasanie 系 ×4、Alphaxone 系 ×2、Kolhoosi 13、Council of Nine、Sabled Sun《2148》、Aegri Somnia、Cities Last Broadcast、Mystified、Metatron Omega、Apocryphos／Kammarheit／Atrium Carceri《Echo》、Atrium Carceri《Metropolis》、New Risen Throne ×2、Visions、Funerary Call、Psychomanteum、Gustaf Hildebrand、Moljebka Pvlse、Netherworld、Necrophorus ×2、Ab Intra、Arecibo、Sleep Research Facility《Deep Frieze》。
