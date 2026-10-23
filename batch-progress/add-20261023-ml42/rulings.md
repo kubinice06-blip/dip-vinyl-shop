@@ -89,3 +89,11 @@
   - `SwuM.|Swimming`：「SwuM. 在 2018 年開始替 Chillhop Records 發單曲」→「也替」——研究稿只說同年在 Chillhop 發單曲、之後長期以 Chillhop 為主，「開始」無出處 → 172 字。
   - `Hoogway|Slow Motion`：刪「布魯塞爾」——城市只有 Last.fm 單源，研究 e 組已標人物與城市來源衝突 → 160 字。
 - 19393：核過但未改——Kupla 赫爾辛基與本名（Discogs）、jinsang 加州（Bandcamp 標籤）與首張《Kona Park》2014（Apple 簡介）、Guaraldi 比喻明寫為聽眾說法、Ohbliv 本名與母親取樣（RVA Mag、Microchop）、Pirata 國際版口白 Ugly God（Bandcamp）、mt. fujitive 雷克雅維克與《Aeon》合作（Bandcamp、Discogs）、Purrple Cat 目錄十多張（Bandcamp）皆有出處。Blossoms 兩人名分開寫（SwuM.、jinsang），照卡單掛名各自字形，可。
+
+## 上線與評分（2026-10-23，主線）（條號 19394–19396）
+- **19394**：上線 26 張：card_catalog 26／26、KV 26 鍵回讀逐字一致、試聽 25 ready／1 unavailable（Ohbliv《Raw Spirit Jewels》Apple 未上架）、seed +26、published gate 0 error。封面 CAA 25、Apple 1（SwuM. & Jinsang《Blossoms》CAA /front 與 front-500 皆 500，改 Apple 1466422612 官方圖，目視相符）；live-check 全 200；SwuM.《Swimming》CAA 圖上的「スモーク」字樣經 Apple 官方圖比對確為本盤封面。上線前對 origin 前 60 個 `claude/*` 分支 seed＋卡單再去重 0 撞。
+- **19395**：子曲風 warm-batch 25／26 有標籤；類型樹與抽卡封面重建。
+- **19396**：**落格率 26/26＝100%**（`batch-progress/mood-axes/score-ml42/`，照 10-23 體感標準）。評分 x 1.7–2.6、y 0.9–1.5、z 0.5–1.4；conf mid 9、low 17。最貼邊：sleepy fish《Beneath Your Waves》z 0.5、less.people《One Day It's Over》z 0.6、Ohbliv《Rugged Tranquility》x 2.6。**研究稿全 thin 也照樣落格**——lo-fi／jazzhop 暖盤的關鍵是主線先汰掉有反證的（trap 化、乾淨輕盈、哀傷、EP 長度、身分不清），不是靠研究證實。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Kupla、sleepy fish、SwuM.、SwuM. & Jinsang（合掛名）、Wun Two（卡池另有小寫 `wun two` 掛名一張，需別名鍵）、Ohbliv、mt. fujitive、Purrple Cat、Hoogway、less.people（10 個掛名；jinsang 已在排隊）。

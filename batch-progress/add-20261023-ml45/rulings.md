@@ -81,3 +81,11 @@
 - 19631：逐張審 17 張（out-1 9、out-2 8），逐句對回研究稿 facts；qa-batch out、qa-check-research（兩檔）、fix-spacing 皆 0 標記；正文無媒體名、無榜單名次、無「據」字。
 - 19632：**逐張審過，未改字**。核過：Holt 生年／Paragons／Junjo 時期最暢銷（Wikipedia）、〈Stick By Me〉1972 年牙買加最暢銷（Wikipedia）、A1 Disco Showcase 的 Bronx Taurus 與 Blank Tapes／D. Spear（Discogs）、Wailing Souls 四人掛名（Discogs）、Channel 4《Deep Roots Music》1982 年 5 月拍攝 King Tubby's（reggae.be）、Delroy「牙買加第一位童星」（Wikipedia）、Tad Dawkins 布朗克斯唱片行（同篇報導）、Alton Ellis 1972 定居英國與「Godfather of Rocksteady」（Wikipedia）、Cornell Campbell 11 歲由 Rico 帶進 Dodd 錄音室（Wikipedia）、Dan Klein 2016-06 漸凍症過世與 3D 限量版（Daptone／Discogs）、Prince Fatty 藝名致意 King Tubby（Wikipedia）。
 - 19633：writer-2 19628 提問「雷鬼歌手」「唱雷鬼的」取自研究稿 Reggae 標籤、note 只寫「歌手」——事實無誤、身分句需要樂種，保留。
+
+## 上線與評分（2026-10-23，主線）（條號 19634–19636）
+- **19634**：上線 17 張：card_catalog 17／17、KV 17 鍵回讀逐字一致、試聽 8 ready／9 unavailable（John Holt 6 張、Wailing Souls、Alton Ellis、Cornell Campbell《Rock My Soul》Apple 無原盤；Delroy《Worth Your Weight in Gold》Apple 只有 2024 Deluxe 重製且曲長與原 1984 延長版不符，不硬配）、seed +17、published gate 0 error。封面 CAA 8、Discogs 9（已登錄 registry，384 筆）；Hollie Cook《Happy Hour in Dub》CAA /front 與 front-500 連續 500，改 Discogs 27903378。live-check 全 200、主線目視 17 張相符。上線前跨分支再去重 0 撞。
+- **19635**：子曲風 warm-batch 16／17 有標籤；類型樹與抽卡封面重建。
+- **19636**：**落格率 17/17＝100%**（`batch-progress/mood-axes/score-ml45/`，照 10-23 體感標準）。評分 x 2.2–2.8、y 0.6–1.6、z 0.3–1.6；conf mid 3、low 14。貼邊：lovers／人聲盤 y 0.6–0.9（格線 0.5）、Timeless Roots z 0.3、Sweetie Come Brush Me x 2.8。**rocksteady 主場景是死池**：60 年代原錄音池中全判輕，能收的只有 rocksteady 歌手 1977–84 的 Channel One／Tubby's／Junjo 濕混音盤與 dub 版；研究層再擋 flying cymbals、明亮復興盤、彙編。**ml45 不再派**。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+The Frightnrs、Horace Andy & Jah Wobble（合掛名）（2 個掛名；Hollie Cook 已在 ar-d-124、Cornell Campbell 與 Justin Hinds 已在 roster-20260929；John Holt、Delroy Wilson、Horace Andy、Alton Ellis、Wailing Souls 已有介紹）。
