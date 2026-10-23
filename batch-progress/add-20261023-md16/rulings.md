@@ -125,3 +125,11 @@
   - `desc2:Yung Lean|Frost God`：刪「樂評說」。
 - 寫作層提問 `G*59` 星號：前台不渲染 markdown（全站無 markdown 函式庫），廠牌原名照留。
 - 其餘 32 張逐張審過未改字；Sixtoo《Jackals》「廠牌形容它」為廠牌文案、保留。
+
+## 上線與評分（2026-10-23，主線）
+- **17954**：上線 38 張：card_catalog 38／38、KV 38 鍵回讀逐字一致、試聽 31 ready／7 unavailable（Black Kray、BONES ×2、Odd Nosdam《No More Wig》、Sixtoo ×2 Apple 查無；LUCKI《Freewave 3》Apple 15 軌與 MB 22 軌對不上）、seed +38、published gate 0 error。封面 CAA 35（BONES《Rotten》改 release 500 縮圖）、Apple 3（Ghostpoet《Dark Days》、Tha Blue Herb、Odd Nosdam《Burner》CAA 500／404），live-check 全 200、目視相符。上線前對 origin 54 個分支 seed 去重 0 撞。
+- **17955**：類型樹 38／38 落位（`genre-l3-artist-map.json` 補 Coby Sey → hiphop/uk-euro/uk；Sixtoo ×2、Blue Sky Black Death ×2、Req ×2 → hiphop/underground/instrumental）。
+- **17956**：**落格率 37/38＝97%**（`batch-progress/mood-axes/score-md16/`）。出格 1 張：Mr. Mitch《Parallel Memories》y 0.4 落平靜（weightless grime 留白大判輕）——器樂 grime 的「無重量」那一路判輕，下次不收。cloud rap／sad rap／冷 beat tape 全落頹靡，x 1.8–2.8、z 全負。研究層汰 12 張（偏暖亮、兇、舞曲 BPM、無聲音來源）是命中率高的主因。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Night Lovell、Black Kray、Corbin、M Huncho、Babyfather、Ghostpoet、Wicca Phase Springs Eternal、LUCKI、Coby Sey、Odd Nosdam、Sixtoo、Req、Mr. Mitch、Wen、Alexander Chen（15 位；其餘藝人已有介紹或已在排隊）。

@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 3 輪 md16／ml16：冷 cloud rap／beat tape 38＋暖 jazz-rap／南方慢饒舌 27 張上線，落格 37/38、25/27
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 3 輪，本工作階段負責 md16、ml16。md16（`add-20261023-md16`，頹靡：cloud rap／sad rap 冷盤＋md24 冷 beat tape）：Lil Peep 4、Night Lovell 3、Yung Lean 3、DJ Krush 2、Sixtoo 2、Odd Nosdam 2、BONES 2、Ghostpoet 2、Req 2、Blue Sky Black Death 3（含 & Alexander Chen）、Kid Cudi《Man on the Moon II》、billy woods《Dour Candy》、Tha Blue Herb《Sell Our Soul》、Shabazz Palaces《Quazarz vs. The Jealous Machines》、Coby Sey、Corbin、M Huncho、Babyfather、Wicca Phase、LUCKI、Black Kray、Mr. Mitch、Wen。ml16（`add-20261023-ml16`，恍惚：jazz-rap 暖盤＋ml17 G-funk＋ml18 南方慢饒舌）：P.M. Dawn 2、Q-Tip《Kamaal》、Talib Kweli & Madlib《Liberation》、Quelle Chris & Chris Keys《Innocent Country 2》、The Nonce、S.L.A.C.K. 3、蛋堡 3、Mac Miller《The Divine Feminine》、Isaiah Rashad、Maxo、Domo Genesis、Big Moe 3、E.S.G. 2、MJG、Curren$y 3、Devin the Dude 2。
+- **策展→研究汰換**：md16 策展 48＋補 5、主線汰 3（Drake、Bladee《Red Light》、M Huncho《DNA》）、研究汰 12（Bladee 兩張偏暖亮／高速 808、Night Lovell 失真聲牆、Joji 偏流行、Lukid 舞曲 BPM、Logos／Telephone Jim Jesus 偏暖等）。ml16 策展 38、研究汰 11（P.M. Dawn《Jesus Wept》吉他搖滾、DJ Day 彙整輯、Jazz Liberatorz 乾淨現場樂手、Witchdoctor 暗色、VICES 霓虹 synth 等）；G-funk 0 張、screwed 版不收，場景見底照實上架 27。ml17、ml18、md24 併入，不再單獨派。
+- **主線審稿**：md16 改 6 處、ml16 改 4 處，全是單源樂評轉述改成聲音陳述，MJG「Billboard 200」改「美國專輯榜」；事實層未動。
+- **上線**：card_catalog 38＋27、KV 38＋31 鍵回讀逐字一致 69/69、試聽 31＋23 ready（Apple 藝人目錄人工配 18＋13；screwed 版一律不配）、seed +65、published gate 兩批 0 error；封面 CAA 62、Apple 3（CAA 500／404），live-check 全 200。上線前對 origin 54 個分支 seed 去重 0 撞。冷門軸人工 6 張（ml16，非拉丁掛名與 Last.fm 盤名對不上）。
+- **情緒評分**：`score-md16`、`score-ml16`。**md16 落頹靡 37/38（97%）**，出格 Mr. Mitch《Parallel Memories》判輕落平靜；**ml16 落恍惚 25/27（93%）**，出格 蛋堡《踩腳踏車》判輕落放鬆、Curren$y×Alchemist《Covert Coup》判冷落頹靡。八格（本分支併 main 後）：恍惚 1,022、頹靡 1,352、冷冽 1,035。
+- **類型樹**：`genre-l3-artist-map.json` 補 10 張（Coby Sey、Sixtoo、BSBD、Req、Quelle Chris & Chris Keys、MJG、Covert Coup），65/65 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 29 位列在兩批 rulings.md 末尾（md16 15、ml16 14）。
+- **主要檔案**：`batch-progress/add-20261023-{md16,ml16}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{md16,ml16}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{md16,ml16}/`、`onboarding-manifest-add-20261023-{md16,ml16}-20261023.json`、`desc-tools/batches/*/add-20261023-{md16,ml16}-*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/mood/*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`。
+- **驗證**：prepare／published gate 兩批 0 error；KV 回讀 69/69；qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；build-card-moods 錨點 104/104、seed 20,396。
+
 ### 2026-10-23｜dip-vinyl-shop｜更正：「驟然爆裂」不算推力，94 張酸卡能量撤回（《The Drift》回頹靡）
 
 - **改動**：店主「The Drift 頹靡沒錯」。兩輪酸冷重判把「爆裂／音塊／drone」當推力，違反 10-22 能量標準（要有打擊在推），連 Sunn O))) 都被推到亢奮。152 張被拉高能量的逐張看，94 張沒有鼓／節拍在推的能量回原值、寒氣（冷色溫）保留；58 張真有節拍的留躁。BRIEF 改成「安靜但有寒氣也算酸；推力只看打擊」。

@@ -103,3 +103,12 @@
   - `desc2:Curren$y & Harry Fraud|The OutRunners`：「樂評稱製作 soulful，」→「製作帶著 soul 味，」（同上）。
   - `desc2:Devin the Dude|To tha X-Treme`：刪「在樂評耳裡，」（同上）。
 - 其餘 23 張逐張審過未改字；查核過的事實：MJG 盤名 Glory 指邦聯旗（研究稿）、Isaiah Rashad「差點三次被 TDE 放棄」（研究稿）、蛋堡《家常音樂》第 32 屆金曲最佳華語專輯與男歌手、P.M. Dawn〈Set Adrift on Memory Bliss〉1991-11-30 當週冠軍。
+
+## 上線與評分（2026-10-23，主線）
+- **15273**：上線 27 張：card_catalog 27／27、KV 31 鍵（含 desc4 雙鍵）回讀逐字一致、試聽 23 ready／4 unavailable（S.L.A.C.K.《MY SPACE》《WHALABOUT?》、蛋堡《Winter Sweet》《家常音樂》Apple 查無；screwed 版一律不配，取原版）、seed +27、published gate 0 error。封面 CAA 27，live-check 全 200。冷門軸人工 6 張（`ratings-override.json`：Last.fm 盤名對不上或非拉丁掛名）。
+- **15274**：類型樹 27／27 落位（`genre-l3-artist-map.json` 補 Quelle Chris & Chris Keys → hiphop/underground/jazz-rap、MJG → hiphop/south/memphis、Curren$y x The Alchemist《Covert Coup》→ hiphop/south/new-orleans）。
+- **15275**：**落格率 25/27＝93%**（`batch-progress/mood-axes/score-ml16/`）。出格 2 張：蛋堡《踩腳踏車》y 0.4 落放鬆（明亮乾淨的爵士取樣判輕）、Curren$y x The Alchemist《Covert Coup》z −0.2 落頹靡（Alchemist 陰沉電影感取樣判冷；同組合《Continuance》紐奧良暖色仍落恍惚）。南方慢饒舌、P.M. Dawn、Devin、Big Moe 全落恍惚。
+- **15276**：場景產量：策展兩輪 38、研究汰 11 → 27。jazz-rap／boom bap 頭牌已在池且多判 x≥2.9；G-funk 池中不是判躁就是判輕，0 張。**恍惚嘻哈這個池子已見底**，後續不再排 ml17、ml18 單獨批。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+P.M. Dawn、Q-Tip、Quelle Chris、Chris Keys、The Nonce、S.L.A.C.K.、蛋堡、Maxo、Domo Genesis、Big Moe、MJG、Curren$y、The Alchemist、Harry Fraud（14 位；其餘藝人已有介紹或已在排隊）。
