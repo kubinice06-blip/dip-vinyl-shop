@@ -5,13 +5,19 @@
    "id": "jp-dub",
    "zh": "日本暖 dub（dub 版／人聲 roots）",
    "why": "Little Tempo dub 版、Likkle Mai 等：管樂／鋼鼓／人聲有旋律，類比濕混音",
-   "count": 6
+   "count": 7
   },
   {
    "id": "jp-downtempo",
    "zh": "日本 downtempo 暖盤（沖繩民謠 dub、慢 dub pop）",
    "why": "琉球民謠人聲＋dub 低頻、Polaris 慢 dub pop",
    "count": 9
+  },
+  {
+   "id": "jp-beats",
+   "zh": "日本 jazzy／器樂 hip-hop 暖盤（第二輪）",
+   "why": "Tsutchie、Nomak、DJ Deckstream、Michita：dusty 慢拍＋爵士／靈魂取樣，旋律清楚",
+   "count": 8
   },
   {
    "id": "uk-dub",
@@ -661,6 +667,268 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "y 0.9 邊界、x 可能 2.8；聲音細節要研究層查"
+  },
+  {
+   "artist": "Force of Nature / Tsutchie",
+   "album": "samurai champloo music record: masta",
+   "year": 2004,
+   "label": "Victor",
+   "country": "jp",
+   "faction": "jp-beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "《Samurai Champloo》原聲第二集（Force of Nature 與 Tsutchie），同系列第一集 Nujabes／Fat Jon《departure》池中落恍惚（2.6/0.9/0.8）；dusty 慢拍＋爵士取樣",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "鬆慢 boom bap、dusty 取樣糊，爵士旋律溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1b6101ec-146c-33e4-871d-048ad3557f62",
+    "https://coverartarchive.org/release-group/1b6101ec-146c-33e4-871d-048ad3557f62/front"
+   ],
+   "mbRgMbid": "1b6101ec-146c-33e4-871d-048ad3557f62",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Tsutchie",
+   "uncertain": "原聲帶（MB Album+Soundtrack），先例同系列《departure》已在池；Force of Nature 曲偏 funky，x 可能 2.8"
+  },
+  {
+   "artist": "Tsutchie",
+   "album": "samurai champloo music record: playlist",
+   "year": 2004,
+   "label": "Victor",
+   "country": "jp",
+   "faction": "jp-beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "《Samurai Champloo》原聲第四集，Tsutchie 主導的 lo-fi 爵士 beat，鬆拍與溫暖取樣，與池中《departure》同型",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "鬆慢拍、dusty 低頻糊，爵士／靈魂取樣溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/655400ef-8e44-3604-8fe5-86c9565b5aa5",
+    "https://coverartarchive.org/release-group/655400ef-8e44-3604-8fe5-86c9565b5aa5/front"
+   ],
+   "mbRgMbid": "655400ef-8e44-3604-8fe5-86c9565b5aa5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "原聲帶（Album+Soundtrack）；y 0.9 邊界"
+  },
+  {
+   "artist": "Tsutchie",
+   "album": "THANKS FOR LISTENING",
+   "year": 2002,
+   "label": "cutting edge",
+   "country": "jp",
+   "faction": "jp-beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Shakkazombie 製作人 Tsutchie 的器樂首作，爵士 beat 鬆慢、取樣顆粒糊，Champloo 聲音的前身",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.7,
+    "why": "鬆慢拍、取樣顆粒糊、低頻厚，爵士和弦溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9f56fb1a-5414-31c8-8a70-077eccaf837e",
+    "https://coverartarchive.org/release-group/9f56fb1a-5414-31c8-8a70-077eccaf837e/front"
+   ],
+   "mbRgMbid": "9f56fb1a-5414-31c8-8a70-077eccaf837e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "聲音細節無來源（憑製作人風格推），研究層要查；z 器樂 beat 可能往 0.4 收"
+  },
+  {
+   "artist": "Tsutchie",
+   "album": "this is a recording",
+   "year": 2003,
+   "label": "1138",
+   "country": "jp",
+   "faction": "jp-beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Tsutchie 第二張器樂作，延續 dusty 爵士 beat 與鬆拍",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.7,
+    "why": "鬆慢拍、dusty 糊，爵士取樣溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/893b82da-82dd-4caa-96b0-e16b89f32c40",
+    "https://coverartarchive.org/release-group/893b82da-82dd-4caa-96b0-e16b89f32c40/front"
+   ],
+   "mbRgMbid": "893b82da-82dd-4caa-96b0-e16b89f32c40",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上，聲音細節待查"
+  },
+  {
+   "artist": "Nomak",
+   "album": "Calm",
+   "year": 2007,
+   "label": "Huge Soul",
+   "country": "jp",
+   "faction": "jp-beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "日本 jazzy hip-hop 製作人 Nomak 的首張原創專輯，弦樂與鋼琴旋律清楚、鬆拍",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 1.1,
+    "why": "鬆慢拍、取樣弦樂墊，鋼琴旋律清楚暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d0912658-703b-364b-a90b-4aeeee1f9f06",
+    "https://coverartarchive.org/release-group/d0912658-703b-364b-a90b-4aeeee1f9f06/front"
+   ],
+   "mbRgMbid": "d0912658-703b-364b-a90b-4aeeee1f9f06",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.8 貼門檻：Nujabes 系乾淨鋼琴盤池中 y 0.5–0.7 先例，主線可優先汰換；與池中 CALM 同名專輯不同人"
+  },
+  {
+   "artist": "DJ Deckstream",
+   "album": "Soundtracks",
+   "year": 2007,
+   "label": "Lexington",
+   "country": "jp",
+   "faction": "jp-beats",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "日本 beat 製作人的首張，靈魂取樣＋客座女聲的慢板 jazzy hip-hop，旋律溫熱",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 1.1,
+    "why": "鬆慢拍、靈魂取樣與低頻，女聲旋律暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/31ccee96-3229-345c-81d7-24a0c44af574",
+    "https://coverartarchive.org/release-group/31ccee96-3229-345c-81d7-24a0c44af574/front",
+    "https://www.wikidata.org/wiki/Q11196697"
+   ],
+   "mbRgMbid": "31ccee96-3229-345c-81d7-24a0c44af574",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "聲音細節待查；y、x 都可能貼邊"
+  },
+  {
+   "artist": "DJ Deckstream",
+   "album": "Soundtracks 2",
+   "year": 2009,
+   "label": "Lexington",
+   "country": "jp",
+   "faction": "jp-beats",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "續作，同樣靈魂取樣＋客座人聲的慢板 beat",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 1,
+    "why": "鬆慢拍、靈魂取樣，人聲旋律暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7b09b95a-0ffe-3fed-a763-04e53e5cdf9a",
+    "https://coverartarchive.org/release-group/7b09b95a-0ffe-3fed-a763-04e53e5cdf9a/front"
+   ],
+   "mbRgMbid": "7b09b95a-0ffe-3fed-a763-04e53e5cdf9a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上；兩張同團主線可擇一"
+  },
+  {
+   "artist": "Michita",
+   "album": "Dawning",
+   "year": 2009,
+   "label": "ILL DANCE MUSIC.",
+   "country": "jp",
+   "faction": "jp-beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "日本 jazzy beat 製作人 Michita 的器樂作，鋼琴與爵士取樣的鬆拍",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 1,
+    "why": "鬆慢拍、鋼琴爵士取樣，旋律溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/95e90321-f794-4092-b5c4-091e3a70b88e",
+    "https://coverartarchive.org/release-group/95e90321-f794-4092-b5c4-091e3a70b88e/front"
+   ],
+   "mbRgMbid": "95e90321-f794-4092-b5c4-091e3a70b88e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.8 貼門檻（乾淨鋼琴 beat 判輕風險），conf low"
+  },
+  {
+   "artist": "Likkle Mai",
+   "album": "MW",
+   "year": 2007,
+   "label": "MK Starliner",
+   "country": "jp",
+   "faction": "jp-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "第二張、自營 MK Starliner 首發，roots 慢拍＋dub 混音，女聲旋律清楚（含〈The Harder They Come〉翻唱）",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.9,
+    "why": "慢 roots 拍、dub 回音厚貝斯，女聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/193bda9d-7986-494d-aa0b-30e31c254927",
+    "https://coverartarchive.org/release-group/193bda9d-7986-494d-aa0b-30e31c254927/front",
+    "https://www.discogs.com/release/2059838-Likkle-Mai-MW"
+   ],
+   "mbRgMbid": "193bda9d-7986-494d-aa0b-30e31c254927",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "人聲 reggae 盤 y 邊界；9 曲全長"
   }
  ],
  "notes": [
@@ -672,6 +940,9 @@
   "人工身分 3 張（MB 查無）：Little Tempo《Ron Riddim In Dub》（Discogs 2×12\" Album）、Likkle Mai《Dub Is the Universe》、松永孝義《The Main Man》。其餘 18 張 MB 釘住，皆 primary-type=Album 無次類型。",
   "封面：CAA 有 12 張；Little Tempo《KEDACO IS BORN》、Ryukyu Underground 4 張、Mad Professor《Bitter Sweet Dub》、松永孝義用 iTunes；《Ron Riddim In Dub》《Dub Is the Universe》用 Discogs 圖。",
   "跨組：ml38 同時收 UK dub，Mad Professor 兩張、Horace Andy 兩張、Hollie Cook 兩張可能撞提，以先合併者為準。去重：每張用原文名／羅馬字／別名跑過 seed 去重與 curation-*.json＋desc-tools 卡單，全 0。",
-  "色溫風險：ml4 主線結論「東亞暖 dub 色溫策展普遍高估 0.4–0.6」，本組 z 估 ≥0.6；仍然最可能掉格的是 Horace Andy 兩張（z0.6）、BudaMunk《Movin' Scent》、Polaris《Music》與 mabanua（y 0.9 邊界）。WebSearch 用 2 次。"
+  "色溫風險：ml4 主線結論「東亞暖 dub 色溫策展普遍高估 0.4–0.6」，本組 z 估 ≥0.6；仍然最可能掉格的是 Horace Andy 兩張（z0.6）、BudaMunk《Movin' Scent》、Polaris《Music》與 mabanua（y 0.9 邊界）。WebSearch 用 2 次。",
+  "第二輪（主線裁定擴到日本 beat 與 reggae 人聲）append 9 張：jp-beats 8（Tsutchie 4 含 Samurai Champloo 原聲 2、Nomak《Calm》、DJ Deckstream 2、Michita《Dawning》）＋jp-dub 1（Likkle Mai《MW》）。合計 30 張。全部 MB 釘住、CAA 有圖，去重（含 ml3／ml4、dt1–dt5、desc-tools 卡單）全 0。",
+  "第二輪池中參照：日本 beat 圈幾乎都不在池；同型參照 Nujabes y0.5–1.0、Uyama Hiroto 0.7、Fat Jon 0.6、Emancipator 0.5–0.6、Mndsgn 0.6–1.1、Substantial 0.8——這一型 y 普遍貼邊，Nomak、Michita（y 估 0.8）最可能判輕，Champloo 原聲有《departure》2.6/0.9/0.8 先例最穩。",
+  "第二輪沒提：Kenichiro Nishihara、re:plus（乾淨鋼琴／lounge，判輕）；DJ Mitsu the Beats、Shing02、Grooveman Spot（boom bap／饒舌，x≈3）；Kan Sano、Ovall（neo-soul，y 估 0.6，且屬 ml22 範圍）；Kuniyuki Takahashi（deep house，聲音把握不足）；Robert de Boron（CAA 無圖、同 Michita 型）；Force of Nature《Dig and Edit》（edit 集）；Ta-shi、Monorale（MB 查不到對應藝人）。reggae 人聲：Bagdad Cafe the trench town（《Love Sunset》7 曲、《Movin' On》Victor 大廠製作偏乾淨，y 風險）、asuka ando、Iria《Japanese Lovers》（MB 無 RG、聲音無把握）、Pushim／Rankin 系 dancehall 都沒提。WebSearch 第二輪 1 次。"
  ]
 }

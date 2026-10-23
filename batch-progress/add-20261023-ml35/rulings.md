@@ -37,3 +37,11 @@
 - **16724**　Lambchop《FLOTUS》：來源支持「暖、催眠」，但有鼓機驅動且「近乎堅持的律動」曲目（躁風險）與「數位失真、異質」字眼（冷風險），y 0.8 無來源；保留但標不確定。
 - **16725**　最穩兩張：Trinity Session（教堂單麥、極慢；z 唯一疑慮，「noir」與「燭光」並存）、Smart Flesh（遠距收音、巨大房間殘響、安靜曲為重；z 風險：Nonesuch 文案「eerie／chilling」偏冷）。
 - **16726**　單源不採：Lay It Down 銷量 60 萬（加拿大百科全書摘要）；Trinity Session 的 Moore 設備說法只有 Wikipedia 轉述，facts 已加「依 Moore 的說法」。
+
+## 研究 c 組
+- 16741：Heavy Sun 卡單 label「Modern Recordings」查無出處，MB 為 eOne（EMC-CD-28392），Wikipedia／American Blues Scene 稱 Lanois 自有品牌 Maker Series 經 eOne 發行；建議卡面改 eOne 或 Maker Series。年份 2021 不變。
+- 16742：Here Is What Is 年份：Wikipedia 2007-12-15 先以下載發行、2008-03-18 出 CD；MB 的 2007-03-18（XW）疑為筆誤。卡單 2007 可成立（下載首發），實體首發為 2008，主線決定卡面取哪個。
+- 16743：Teatro 卡單 why 的「鋼棒」查無——人員表無 pedal steel，只有 Brian Griffiths 的 slide guitar；Wikipedia 稱聲音「spare, yet drum-heavy and atmospheric」，三位鼓手加 Cyril Neville 康加鼓，躁風險。
+- 16744：moodGuess 存疑（偏嚴重，建議優先汰換或復判）：Drag（AllMusic 稱 tone considerably lighter and more humorous）、Heavy Sun（拉丁打擊與放克律動、官方主調 uplifting／joyous）、Fresh Blood（Exclaim!／DIY 稱 warm、feel-good、celebratory，且〈Fruit Trees〉bombastic）。
+- 16745：moodGuess 存疑（中度）：Ingénue（Miss Chatelaine 俏皮、有編程節奏、EW 給 C）、Here Is What Is（OC Weekly 稱 pristine 光潔而非濕；含實驗即興）、Natalie Prass（rock-hard rhythm、muscular，非全程慢板）。
+- 16746：全組找不到任何樂評或訪談明講「殘響／混音濕度」，卡單「濕」的描述皆為推測；Drag 因 Wikipedia 無錄音資料（Craig Street 條目 404、AllMusic 403、Pitchfork 被工具擋）只有 7 條 facts，標 thin。
