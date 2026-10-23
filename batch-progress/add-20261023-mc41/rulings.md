@@ -42,3 +42,21 @@
 - 21093　Brün《Wayfaring Sounds》身分相符（EMF CD 0624，1998）。status thin：找不到任何逐曲聽感描述，moodGuess 的「鋸齒波、刺耳、急切切換」無來源可證；全盤約 71 分，含 18 分鐘中提琴加磁帶與 14 分鐘室內樂加磁帶。Wayfaring Sounds 年份 Discogs 1959、Wikipedia 1962（Klänge unterwegs）不一致，facts 兩邊並陳。Discogs 該 CD 標 Mispress，不影響身分。
 - 21094　Roads《Point Line Cloud》身分相符（Asphodel ASP 3000，2005-03-30，CD+DVD；MB 另有 2019 數位重發）。moodGuess 存疑（偏重）：唯一聽感來源寫「粒子雪崩」「液態細流」「模糊聲團」，是密集流動質地，無來源寫尖銳或乾；Sculptor 把鼓拆成一片粒子。
 - 21095　Ankersmit《Homage to Dick Raaijmakers》身分相符（Shelter Press SP096，2018-09-07）。moodGuess 存疑（兩側皆不符）：單曲 34 分鐘，Fluid Radio 寫中段「混亂暴力」「thick burning noise」寬頻噪音爆發（判重），後段轉持續嗡鳴與懸浮（判靜）；僅前段快速嗶聲疊絆符合神經質。建議汰換。
+
+## 研究 c 組
+- 21101　Wishart《Tongues of Fire》身分相符（Orpheus the Pantomime OTP001，1994，單曲 24:33；MB 列 Album、Discogs 列 Maxi-Single，facts 並寫）。非現場。Soundohm 頁標 2003 不採。moodGuess 輕度存疑：有來源的聲音描述只有咕噥→鼓／水／金屬共鳴／煙火＋聲音切碎，缺逐段樂評證實「急促切換、尖銳高頻」，25 分鐘長篇含較長演化段；整體仍判符合可收。
+- 21102　A_dontigny《Geisteswissenschaften》身分相符（No Type IMNT 0715，2007，17 首 60:29）。「首張個人作」：廠牌、Octopus、Liability 寫 first solo，Neural 寫 second album，facts 取廠牌說法。Prix Opus 2006-07 年度唱片僅 Finaliste（electrocd 頁）。moodGuess 存疑（z 偏暖）：Octopus 寫 breakbeat＋甜膩爵士取樣，Dolden 電貝斯／電吉他有厚度；cut-up 切換符合 x。建議主線視為邊緣，z 以 −0.5～−1.0 看。
+- 21103　Stavropoulos《Micro-lieux》身分相符（empreintes DIGITALes IMED 19159，2019，首張專輯，收 2003–2017 舊作，各曲完成年已寫入）。Chain DLK 證實「急促無節奏有機噪音、脆弱合成音、刮擦」符合冷冽；但〈Granicus〉有進行曲節奏與厚重低音持續音、〈Atropos〉有次低頻吼聲，Toneshift 寫 gently／introspective elegy 的柔和段。moodGuess 輕度存疑，整體可收。
+- 21104　Manoury《Pluton》年份 1998 為 Ondine 錄音首發（錄於 1995 IRCAM）；作品 1988–89。Philharmonie 節目冊「1988–89 創作」與「1988-07-14 首演」自相矛盾，facts 不寫首演日期；法文維基寫 1991，疑誤不採。status thin：聲音面只有技術描述（鋼琴被喇叭環繞、即時變形），無逐段樂評。moodGuess 存疑：策展標的慢共鳴段與「碎句、閃爍」皆無來源可證，建議待試聽或汰換。
+- 21105　Stroppa《Traiettoria / Spirali》年份 2009（Discogs 2009-08-03；官網稱 Milano 2008）。演奏者查無（Discogs／MB 無，AllMusic 403），facts 不寫。推翻卡單 curatorWhy：Traiettoria 電子部分製作於帕多瓦計算音響中心，非 IRCAM；Spirali 的電腦音樂設計才是 IRCAM（Serge Lemouton）。status thin。moodGuess 存疑：「點描、乾、碎句」無來源，Spirali 為空間投射弦樂，可能含長音，建議待試聽或汰換。
+- 21106　WebSearch 本組用 5 次（Wishart 2、Dontigny 1、Pluton 1、Stroppa 1），超過每支 3 次上限（Manoury、Stroppa 的演奏者與聲音描述難查），餘為 WebFetch／API；主線若計全工作階段 200 次額度請扣。
+
+## 主線：研究後汰換（不佔條號）
+- 研究五組 24 張，汰 13（卡單、研究稿、`pick.json` 同步移除）：
+  - 飄浮／長音／音詩（判靜）：Subotnick《4 Butterflies》（"floating, mysterious electronic landscape"）、《Ascent Into Air》（兩首 19–24 分鐘音詩，B 面靜收）、Koenig 雙 CD（〈Funktion〉系列 6–21 分鐘持續音）、Maresz（IRCAM 稱流動交織、兩首無電子逾 10 分鐘）、Normandeau《Figures》（笑聲疊層、宇宙感、Sérénité，只三分之一符合）。
+  - 厚密／噪音爆發（判重）：Ankersmit《Homage to Dick Raaijmakers》（中段 thick burning noise、後段嗡鳴）、Roads《Point Line Cloud》（粒子雪崩、模糊聲團，無尖乾來源）、Manoury《La Partition du ciel et de l'enfer》（雙 MIDI 鋼琴＋樂團 40 分鐘）。
+  - 聲音零來源：Brün《Wayfaring Sounds》、Pousseur《Electronic Works》（近六成篇幅無描述）、Manoury《Pluton》、Stroppa《Traiettoria / Spirali》。
+  - 現場：Davidovsky《Synchronisms》（巴塞爾 Gare du Nord 演出錄音）。
+- 留下交評分：Vaggione 兩張、Harrison（邊距薄）、Justel（y 可能略升）、Davidovsky《Vol. 3》（半數器樂、點描室內樂）、Wishart、A_dontigny（z 邊緣）、Stavropoulos、Roy《Kaleidos》（神經質、不穩定）、Thibault《Volt》（急停急起、機械序列）、Subotnick《A Sky of Cloudless Sulphur》（脈衝驅動，x 3.0–3.4 邊緣）。**定案 11 張**（a 4、b 1、c 3、d 1、e 2）。
+- 不補：策展已掃約 160 張 empreintes 目錄，候補用罄；acousmatic 主場景池中多判靜／判重，照實上架、不湊數。
+- 研究推翻：Normandeau 原盤 1999（隨汰換結案）；Stroppa 電子部分在帕多瓦（隨汰換結案）；Harrison 2000、Thibault 1990 原盤年份確認。
