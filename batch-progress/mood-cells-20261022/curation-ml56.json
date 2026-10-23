@@ -1,0 +1,1102 @@
+{
+ "group": "ml56",
+ "factions": [
+  {
+   "id": "pork-downtempo",
+   "zh": "Pork／Mo' Wax 式暖 downtempo",
+   "count": 11,
+   "why": ""
+  },
+  {
+   "id": "warm-triphop-vocal",
+   "zh": "暖 trip-hop 女聲／人聲",
+   "count": 15,
+   "why": ""
+  },
+  {
+   "id": "soul-downtempo",
+   "zh": "soul 系 downtempo",
+   "count": 5,
+   "why": ""
+  },
+  {
+   "id": "world-downtempo",
+   "zh": "世界 downtempo／dub",
+   "count": 7,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Fila Brazillia",
+   "album": "Old Codes New Chaos",
+   "year": 1994,
+   "label": "Pork Recordings",
+   "country": "gb",
+   "faction": "pork-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Pork 招牌首作：blunted 慢拍、厚低音與溫鍵盤墊，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.5,
+    "why": "懶拍子、厚貝斯、暖電鋼"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b53ae963-29fa-3abc-840a-9a5b12bb0e37",
+    "https://coverartarchive.org/release-group/b53ae963-29fa-3abc-840a-9a5b12bb0e37/front"
+   ],
+   "mbRgMbid": "b53ae963-29fa-3abc-840a-9a5b12bb0e37",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Pork 二線，ml40 指 UK 90s Pork 常查無 dub 低頻證據"
+  },
+  {
+   "artist": "Fila Brazillia",
+   "album": "Mess",
+   "year": 1996,
+   "label": "Pork Recordings",
+   "country": "gb",
+   "faction": "pork-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "延續 Black Market Gardening 的懶拍＋dub 低頻＋暖鍵盤，Pork 代表作",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.5,
+    "why": "懶拍、dub 低頻、暖墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8f410b7d-4948-30c9-8840-cf2196305d40",
+    "https://coverartarchive.org/release-group/8f410b7d-4948-30c9-8840-cf2196305d40/front"
+   ],
+   "mbRgMbid": "8f410b7d-4948-30c9-8840-cf2196305d40",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上；池中兩張已判恍惚(y0.9)"
+  },
+  {
+   "artist": "Fila Brazillia",
+   "album": "Luck Be a Weirdo Tonight",
+   "year": 1997,
+   "label": "Pork Recordings",
+   "country": "gb",
+   "faction": "pork-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Fila 中期，funk 吉他＋慢 groove＋厚貝斯，仍偏慢暖",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "慢 funk groove、厚貝斯"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/011daef9-5653-33b9-9cdb-b34f87afc0a5",
+    "https://coverartarchive.org/release-group/011daef9-5653-33b9-9cdb-b34f87afc0a5/front"
+   ],
+   "mbRgMbid": "011daef9-5653-33b9-9cdb-b34f87afc0a5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分曲偏 funk，x 可能 2.8"
+  },
+  {
+   "artist": "Fila Brazillia",
+   "album": "Power Clown",
+   "year": 1998,
+   "label": "Pork Recordings",
+   "country": "gb",
+   "faction": "pork-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Fila 中期代表：爵士鍵盤、dub 化低頻、懶洋洋拍子",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "dub 低頻、爵士鍵盤、懶拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/241c0a03-6b53-3049-b7dc-9b16bee38099",
+    "https://coverartarchive.org/release-group/241c0a03-6b53-3049-b7dc-9b16bee38099/front"
+   ],
+   "mbRgMbid": "241c0a03-6b53-3049-b7dc-9b16bee38099",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 邊距薄"
+  },
+  {
+   "artist": "Fila Brazillia",
+   "album": "A Touch of Cloth",
+   "year": 1999,
+   "label": "Pork Recordings",
+   "country": "gb",
+   "faction": "pork-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Fila 晚 90s 慢盤，柔和 Rhodes 與厚低頻，暖",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "Rhodes、厚低頻、慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/46cd8775-ed8d-32e3-8f49-3be0c7727d75",
+    "https://coverartarchive.org/release-group/46cd8775-ed8d-32e3-8f49-3be0c7727d75/front"
+   ],
+   "mbRgMbid": "46cd8775-ed8d-32e3-8f49-3be0c7727d75",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 邊距薄"
+  },
+  {
+   "artist": "Fila Brazillia",
+   "album": "Jump Leads",
+   "year": 2002,
+   "label": "Pork Recordings",
+   "country": "gb",
+   "faction": "pork-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Fila 2000s 盤，慢拍＋dub 感貝斯，溫暖",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "慢拍、dub 貝斯"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/51ca293e-33ed-35f4-b1f4-f1e331b9bebf",
+    "https://coverartarchive.org/release-group/51ca293e-33ed-35f4-b1f4-f1e331b9bebf/front"
+   ],
+   "mbRgMbid": "51ca293e-33ed-35f4-b1f4-f1e331b9bebf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 邊距薄"
+  },
+  {
+   "artist": "Money Mark",
+   "album": "Push the Button",
+   "year": 1998,
+   "label": "Mo' Wax",
+   "country": "us",
+   "faction": "pork-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Money Mark 的 lo-fi 風琴與鼓機，糊、暖、拍子懶，延續池中《Mark's Keyboard Repair》恍惚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 1.1,
+    "why": "lo-fi 風琴、糊鼓機、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2d8c0aed-a875-3982-b2a6-e624af2aac0f",
+    "https://coverartarchive.org/release-group/2d8c0aed-a875-3982-b2a6-e624af2aac0f/front"
+   ],
+   "mbRgMbid": "2d8c0aed-a875-3982-b2a6-e624af2aac0f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Money Mark 部分曲偏 funk 快"
+  },
+  {
+   "artist": "Money Mark",
+   "album": "Change Is Coming",
+   "year": 2001,
+   "label": "Mo' Wax",
+   "country": "us",
+   "faction": "pork-downtempo",
+   "genres": [
+    "rock"
+   ],
+   "why": "風琴＋磁帶糊的慢 groove，溫暖的 Beastie 系 lo-fi 靈魂",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 1.1,
+    "why": "磁帶糊風琴、慢 groove"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/504e4a1b-dd2f-3dd8-9d90-084059f1a82c",
+    "https://coverartarchive.org/release-group/504e4a1b-dd2f-3dd8-9d90-084059f1a82c/front"
+   ],
+   "mbRgMbid": "504e4a1b-dd2f-3dd8-9d90-084059f1a82c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上"
+  },
+  {
+   "artist": "Money Mark",
+   "album": "Father Demo Square",
+   "year": 2005,
+   "label": "Mo' Wax",
+   "country": "us",
+   "faction": "pork-downtempo",
+   "genres": [
+    "rock"
+   ],
+   "why": "家庭錄音感的暖風琴 lo-fi 小品，糊而柔",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 1.1,
+    "why": "家錄糊質、暖風琴"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6526a761-8d7b-4eb2-a203-aad1c30172a7",
+    "https://coverartarchive.org/release-group/6526a761-8d7b-4eb2-a203-aad1c30172a7/front"
+   ],
+   "mbRgMbid": "6526a761-8d7b-4eb2-a203-aad1c30172a7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 邊距薄"
+  },
+  {
+   "artist": "Rustin Man",
+   "album": "Drift Code",
+   "year": 2019,
+   "label": "Domino",
+   "country": "gb",
+   "faction": "warm-triphop-vocal",
+   "genres": [
+    "rock"
+   ],
+   "why": "Talk Talk／Portishead 製作人 Paul Webb 的溫暖慢板，木管弦樂與厚低音包覆",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "慢、弦與低音包覆、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f94d44bb-acf0-4e28-b91b-bdadb21936d7",
+    "https://coverartarchive.org/release-group/f94d44bb-acf0-4e28-b91b-bdadb21936d7/front"
+   ],
+   "mbRgMbid": "f94d44bb-acf0-4e28-b91b-bdadb21936d7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "可能判輕(木質乾淨)；z 偏有把握"
+  },
+  {
+   "artist": "Beth Gibbons & Rustin Man",
+   "album": "Out of Season",
+   "year": 2002,
+   "label": "Go! Beat",
+   "country": "gb",
+   "faction": "warm-triphop-vocal",
+   "genres": [
+    "rock"
+   ],
+   "why": "Gibbons 與 Webb 的慢板，弦樂與厚低音墊，人味、暖，Portishead 之外的暖面",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "慢、弦樂墊、低音厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/20c64f88-7893-3ff1-8ec2-ff53ac7fcf33",
+    "https://coverartarchive.org/release-group/20c64f88-7893-3ff1-8ec2-ff53ac7fcf33/front"
+   ],
+   "mbRgMbid": "20c64f88-7893-3ff1-8ec2-ff53ac7fcf33",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Gibbons《Lives Outgrown》判平靜，風險中"
+  },
+  {
+   "artist": "Lamb",
+   "album": "What Sound",
+   "year": 2001,
+   "label": "Mercury",
+   "country": "gb",
+   "faction": "warm-triphop-vocal",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Lamb 最厚最暖的一張：大提琴／弦樂、深貝斯與 Lou Rhodes 的暖嗓",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "深貝斯、弦樂墊、暖嗓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a8adc5f5-b343-40d8-b9a2-7998e9ef5cc3",
+    "https://coverartarchive.org/release-group/a8adc5f5-b343-40d8-b9a2-7998e9ef5cc3/front"
+   ],
+   "mbRgMbid": "a8adc5f5-b343-40d8-b9a2-7998e9ef5cc3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Lamb 首作頹靡、Lamb III 放鬆，風險中"
+  },
+  {
+   "artist": "Lamb",
+   "album": "Between Darkness and Wonder",
+   "year": 2003,
+   "label": "Mercury",
+   "country": "gb",
+   "faction": "warm-triphop-vocal",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Lamb 慢盤：鋼琴與弦樂鋪底、貝斯低沉，旋律清楚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 0.5,
+    "why": "慢、鋼琴弦樂、貝斯"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fe2fc56e-4a57-3f25-a9b1-b345a76687dd",
+    "https://coverartarchive.org/release-group/fe2fc56e-4a57-3f25-a9b1-b345a76687dd/front"
+   ],
+   "mbRgMbid": "fe2fc56e-4a57-3f25-a9b1-b345a76687dd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊風險"
+  },
+  {
+   "artist": "Lamb",
+   "album": "Fear of Fours",
+   "year": 1999,
+   "label": "Mercury",
+   "country": "gb",
+   "faction": "warm-triphop-vocal",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Lamb 第二張，breakbeat 與 Lou Rhodes 暖聲，低頻厚",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1,
+    "z": 0.5,
+    "why": "breakbeat 軟、低頻厚、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6c172395-29df-3053-9e3b-071e97b4dd9d",
+    "https://coverartarchive.org/release-group/6c172395-29df-3053-9e3b-071e97b4dd9d/front"
+   ],
+   "mbRgMbid": "6c172395-29df-3053-9e3b-071e97b4dd9d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼 2.7，可能 2.9"
+  },
+  {
+   "artist": "Lamb",
+   "album": "5",
+   "year": 2011,
+   "label": "Lamb Records",
+   "country": "gb",
+   "faction": "warm-triphop-vocal",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Lamb 重組後作，厚電子貝斯＋暖嗓，節奏鬆",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "電子貝斯厚、鬆拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c8c68b39-55f8-4842-a5e1-25eb0c5517dd",
+    "https://coverartarchive.org/release-group/c8c68b39-55f8-4842-a5e1-25eb0c5517dd/front"
+   ],
+   "mbRgMbid": "c8c68b39-55f8-4842-a5e1-25eb0c5517dd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 邊距薄"
+  },
+  {
+   "artist": "Hooverphonic",
+   "album": "The Magnificent Tree",
+   "year": 2000,
+   "label": "Epic",
+   "country": "be",
+   "faction": "warm-triphop-vocal",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Hooverphonic 管弦化的暖盤，弦樂墊厚、慢",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.5,
+    "why": "厚弦樂墊、慢、Liesje 暖嗓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/90f6407b-91f9-3378-a0b0-360eefe8debc",
+    "https://coverartarchive.org/release-group/90f6407b-91f9-3378-a0b0-360eefe8debc/front"
+   ],
+   "mbRgMbid": "90f6407b-91f9-3378-a0b0-360eefe8debc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Blue Wonder 放鬆、ANSS 頹靡，風險中"
+  },
+  {
+   "artist": "Morcheeba",
+   "album": "Fragments of Freedom",
+   "year": 2000,
+   "label": "Sire",
+   "country": "gb",
+   "faction": "warm-triphop-vocal",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Morcheeba 最厚低頻的一張，hip-hop 取樣＋Skye 暖嗓",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "嘻哈鼓、厚貝斯、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/46737baf-db59-3d37-887a-4b335ed0926f",
+    "https://coverartarchive.org/release-group/46737baf-db59-3d37-887a-4b335ed0926f/front"
+   ],
+   "mbRgMbid": "46737baf-db59-3d37-887a-4b335ed0926f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ml40 指 Morcheeba 其餘 y 不比池中厚；風險中"
+  },
+  {
+   "artist": "Morcheeba",
+   "album": "Dive Deep",
+   "year": 2008,
+   "label": "PIAS",
+   "country": "gb",
+   "faction": "warm-triphop-vocal",
+   "genres": [
+    "electronic"
+   ],
+   "why": "慢板藍調吉他＋厚貝斯與暖嗓，Morcheeba 後期最沉的一張",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.7,
+    "why": "慢、藍調吉他、厚貝斯"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7738bff5-f71e-3917-92d9-9aaf3bd6827c",
+    "https://coverartarchive.org/release-group/7738bff5-f71e-3917-92d9-9aaf3bd6827c/front"
+   ],
+   "mbRgMbid": "7738bff5-f71e-3917-92d9-9aaf3bd6827c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊，Escape the Chaos 判放鬆"
+  },
+  {
+   "artist": "Skye",
+   "album": "Back to Now",
+   "year": 2012,
+   "label": "Skye",
+   "country": "gb",
+   "faction": "warm-triphop-vocal",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Skye Edwards 個人作，慢拍電子＋暖嗓與吉他",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 0.7,
+    "why": "慢拍、暖嗓、厚墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e64a0509-9174-4d7a-ba90-b911151ef7db",
+    "https://coverartarchive.org/release-group/e64a0509-9174-4d7a-ba90-b911151ef7db/front"
+   ],
+   "mbRgMbid": "e64a0509-9174-4d7a-ba90-b911151ef7db",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x/y 把握低；MB 年份 2012"
+  },
+  {
+   "artist": "Alice Russell",
+   "album": "Under the Munka Moon",
+   "year": 2004,
+   "label": "Tru Thoughts",
+   "country": "gb",
+   "faction": "soul-downtempo",
+   "genres": [
+    "soul"
+   ],
+   "why": "Alice Russell 首作，Bristol 式 soul-downtempo，厚 Rhodes 與低音、慢",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 1.2,
+    "why": "慢 soul、Rhodes、貝斯厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c3044312-4d0c-3965-8f0a-74233515f0df",
+    "https://coverartarchive.org/release-group/c3044312-4d0c-3965-8f0a-74233515f0df/front"
+   ],
+   "mbRgMbid": "c3044312-4d0c-3965-8f0a-74233515f0df",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ml40：Tru Thoughts 二線常查無低頻證據"
+  },
+  {
+   "artist": "Alice Russell",
+   "album": "My Favourite Letters",
+   "year": 2005,
+   "label": "Tru Thoughts",
+   "country": "gb",
+   "faction": "soul-downtempo",
+   "genres": [
+    "soul"
+   ],
+   "why": "Russell 的暖 soul-downtempo，鼓點鬆、貝斯厚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 1.2,
+    "why": "鬆拍、厚貝斯、暖嗓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/02d8bd37-7364-308b-b4e6-2c0df7059408",
+    "https://coverartarchive.org/release-group/02d8bd37-7364-308b-b4e6-2c0df7059408/front"
+   ],
+   "mbRgMbid": "02d8bd37-7364-308b-b4e6-2c0df7059408",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上"
+  },
+  {
+   "artist": "Alice Russell",
+   "album": "Pot of Gold",
+   "year": 2008,
+   "label": "Little Poppet",
+   "country": "gb",
+   "faction": "soul-downtempo",
+   "genres": [
+    "soul"
+   ],
+   "why": "Quantic 製作，厚實 funk-soul 慢中板，暖",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.9,
+    "z": 1.3,
+    "why": "慢中板、厚貝斯、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3e2a62e8-94fb-35a6-bffa-647bda3f9d49",
+    "https://coverartarchive.org/release-group/3e2a62e8-94fb-35a6-bffa-647bda3f9d49/front"
+   ],
+   "mbRgMbid": "3e2a62e8-94fb-35a6-bffa-647bda3f9d49",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼邊，可能 2.9"
+  },
+  {
+   "artist": "Alice Russell",
+   "album": "To Dust",
+   "year": 2013,
+   "label": "Differ-ent",
+   "country": "gb",
+   "faction": "soul-downtempo",
+   "genres": [
+    "soul"
+   ],
+   "why": "Russell 後期，電子與 soul 混合，低頻厚、拍子緩",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 1,
+    "why": "緩拍、電子低頻、暖嗓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a5685c02-0e19-4952-87a4-1ad2080093a8",
+    "https://coverartarchive.org/release-group/a5685c02-0e19-4952-87a4-1ad2080093a8/front"
+   ],
+   "mbRgMbid": "a5685c02-0e19-4952-87a4-1ad2080093a8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 邊距薄"
+  },
+  {
+   "artist": "Quantic",
+   "album": "Apricot Morning",
+   "year": 2002,
+   "label": "Tru Thoughts",
+   "country": "gb",
+   "faction": "pork-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Quantic 早期慢 groove 器樂，Rhodes、厚貝斯、懶拍",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 1,
+    "why": "懶 groove、Rhodes、貝斯"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3c0e312f-06c9-3074-b11e-5b3224e78aad",
+    "https://coverartarchive.org/release-group/3c0e312f-06c9-3074-b11e-5b3224e78aad/front"
+   ],
+   "mbRgMbid": "3c0e312f-06c9-3074-b11e-5b3224e78aad",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中《The 5th Exotic》0.6 恍惚邊緣"
+  },
+  {
+   "artist": "Quantic",
+   "album": "Mishaps Happening",
+   "year": 2004,
+   "label": "Tru Thoughts",
+   "country": "gb",
+   "faction": "pork-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Quantic 中期，溫暖的 funk/dub 慢板，低頻厚",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.9,
+    "z": 1,
+    "why": "慢 funk/dub、低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6e5edfb4-0905-3bc8-bbbb-19cbd8c39cca",
+    "https://coverartarchive.org/release-group/6e5edfb4-0905-3bc8-bbbb-19cbd8c39cca/front"
+   ],
+   "mbRgMbid": "6e5edfb4-0905-3bc8-bbbb-19cbd8c39cca",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼邊"
+  },
+  {
+   "artist": "Soul II Soul",
+   "album": "1990 a New Decade, Volume II",
+   "year": 1990,
+   "label": "Virgin",
+   "country": "gb",
+   "faction": "soul-downtempo",
+   "genres": [
+    "soul"
+   ],
+   "why": "Soul II Soul 慢拍 groove，厚貝斯與弦樂墊，延續池中 Club Classics 恍惚",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.9,
+    "z": 1.1,
+    "why": "慢 groove、厚貝斯、弦樂"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3de6e622-ccc0-319d-86c0-432998009f58",
+    "https://coverartarchive.org/release-group/3de6e622-ccc0-319d-86c0-432998009f58/front"
+   ],
+   "mbRgMbid": "3de6e622-ccc0-319d-86c0-432998009f58",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Club Classics 2.9，x 貼邊"
+  },
+  {
+   "artist": "Neneh Cherry",
+   "album": "Man",
+   "year": 1996,
+   "label": "Hut",
+   "country": "gb",
+   "faction": "warm-triphop-vocal",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Neneh Cherry 偏 trip-hop 的暖盤，慢拍、厚低音、人味嗓音",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "慢拍、厚低音、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2f155172-f4bd-36c5-9303-1751acb6197e",
+    "https://coverartarchive.org/release-group/2f155172-f4bd-36c5-9303-1751acb6197e/front"
+   ],
+   "mbRgMbid": "2f155172-f4bd-36c5-9303-1751acb6197e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼邊"
+  },
+  {
+   "artist": "Neneh Cherry",
+   "album": "Homebrew",
+   "year": 1992,
+   "label": "Virgin",
+   "country": "gb",
+   "faction": "warm-triphop-vocal",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Homebrew 的 Massive Attack 系慢嘻哈，低頻厚、暖",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1,
+    "z": 0.7,
+    "why": "慢嘻哈、低頻厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/92b0574f-2ad5-39c2-a6c3-f3c042feec04",
+    "https://coverartarchive.org/release-group/92b0574f-2ad5-39c2-a6c3-f3c042feec04/front"
+   ],
+   "mbRgMbid": "92b0574f-2ad5-39c2-a6c3-f3c042feec04",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼邊"
+  },
+  {
+   "artist": "Susheela Raman",
+   "album": "Salt Rain",
+   "year": 2001,
+   "label": "Narada",
+   "country": "gb",
+   "faction": "world-downtempo",
+   "genres": [
+    "world"
+   ],
+   "why": "南印度嗓＋藍調吉他的慢板，厚低音與暖聲",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "慢、低音厚、暖嗓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c62b42b4-7d42-381b-b0e8-dff679a541c4",
+    "https://coverartarchive.org/release-group/c62b42b4-7d42-381b-b0e8-dff679a541c4/front"
+   ],
+   "mbRgMbid": "c62b42b4-7d42-381b-b0e8-dff679a541c4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 把握低"
+  },
+  {
+   "artist": "Susheela Raman",
+   "album": "Love Trap",
+   "year": 2003,
+   "label": "Narada",
+   "country": "gb",
+   "faction": "world-downtempo",
+   "genres": [
+    "world"
+   ],
+   "why": "延續 Salt Rain 的暖、慢、厚低頻",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "慢、低音厚、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/13fedb67-42ba-3215-bfd5-c6a173cccc8f",
+    "https://coverartarchive.org/release-group/13fedb67-42ba-3215-bfd5-c6a173cccc8f/front"
+   ],
+   "mbRgMbid": "13fedb67-42ba-3215-bfd5-c6a173cccc8f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 把握低"
+  },
+  {
+   "artist": "Nitin Sawhney",
+   "album": "Beyond Skin",
+   "year": 1999,
+   "label": "Outcaste",
+   "country": "gb",
+   "faction": "world-downtempo",
+   "genres": [
+    "world"
+   ],
+   "why": "塔布拉＋電子低頻的暖 downtempo，旋律清楚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "塔布拉、低頻、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4a65b47b-8ef9-3295-ad4e-a7c93294259b",
+    "https://coverartarchive.org/release-group/4a65b47b-8ef9-3295-ad4e-a7c93294259b/front"
+   ],
+   "mbRgMbid": "4a65b47b-8ef9-3295-ad4e-a7c93294259b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "可能判輕"
+  },
+  {
+   "artist": "Nitin Sawhney",
+   "album": "Prophesy",
+   "year": 2001,
+   "label": "Outcaste",
+   "country": "gb",
+   "faction": "world-downtempo",
+   "genres": [
+    "world"
+   ],
+   "why": "慢 downtempo，西塔琴與厚貝斯、暖",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "慢、貝斯厚、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ee1b5d06-e960-343b-bc88-2c2079bca6d5",
+    "https://coverartarchive.org/release-group/ee1b5d06-e960-343b-bc88-2c2079bca6d5/front"
+   ],
+   "mbRgMbid": "ee1b5d06-e960-343b-bc88-2c2079bca6d5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "可能判輕"
+  },
+  {
+   "artist": "Natacha Atlas",
+   "album": "Halim",
+   "year": 1997,
+   "label": "Beggars Banquet",
+   "country": "gb",
+   "faction": "world-downtempo",
+   "genres": [
+    "world"
+   ],
+   "why": "中東弦與 dub 貝斯，慢而暖；池中 Diaspora 判沸騰邊緣",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "dub 貝斯、阿拉伯弦、慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b29a81ad-31b5-3694-b010-fdcce3eea86e",
+    "https://coverartarchive.org/release-group/b29a81ad-31b5-3694-b010-fdcce3eea86e/front"
+   ],
+   "mbRgMbid": "b29a81ad-31b5-3694-b010-fdcce3eea86e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼邊"
+  },
+  {
+   "artist": "Sia",
+   "album": "Colour the Small One",
+   "year": 2004,
+   "label": "Go! Beat",
+   "country": "au",
+   "faction": "warm-triphop-vocal",
+   "genres": [
+    "soul"
+   ],
+   "why": "Sia 早期慢 soul-downtempo，Zero 7 系暖嗓，墊厚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "慢、暖嗓、厚墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2caa6415-bf30-3870-bf7a-0b1db8b16d48",
+    "https://coverartarchive.org/release-group/2caa6415-bf30-3870-bf7a-0b1db8b16d48/front"
+   ],
+   "mbRgMbid": "2caa6415-bf30-3870-bf7a-0b1db8b16d48",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊，可能判放鬆"
+  },
+  {
+   "artist": "Sia",
+   "album": "Healing Is Difficult",
+   "year": 2001,
+   "label": "Go! Beat",
+   "country": "au",
+   "faction": "warm-triphop-vocal",
+   "genres": [
+    "soul"
+   ],
+   "why": "Sia 首作 trip-hop soul，慢拍、貝斯與弦",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "慢拍、貝斯、弦"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5a8b9ff2-6686-362b-9bf5-c99bfcd7ee67",
+    "https://coverartarchive.org/release-group/5a8b9ff2-6686-362b-9bf5-c99bfcd7ee67/front"
+   ],
+   "mbRgMbid": "5a8b9ff2-6686-362b-9bf5-c99bfcd7ee67",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上"
+  },
+  {
+   "artist": "Rickie Lee Jones",
+   "album": "Ghostyhead",
+   "year": 1997,
+   "label": "Reprise",
+   "country": "us",
+   "faction": "warm-triphop-vocal",
+   "genres": [
+    "soul"
+   ],
+   "why": "Rickie Lee Jones 與 trip-hop 製作人合作，慢拍、厚貝斯、暖嗓",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "trip-hop 慢拍、暖嗓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/16c28966-143a-3e95-962c-702e2e56c994",
+    "https://coverartarchive.org/release-group/16c28966-143a-3e95-962c-702e2e56c994/front"
+   ],
+   "mbRgMbid": "16c28966-143a-3e95-962c-702e2e56c994",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中無 RLJ；y 把握低"
+  },
+  {
+   "artist": "Loop Guru",
+   "album": "Amrita (… All These and the Japanese Soup Warriors)",
+   "year": 1995,
+   "label": "Nation",
+   "country": "gb",
+   "faction": "world-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "世界 dub 循環，印度取樣＋厚低頻，慢暖",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1,
+    "z": 0.6,
+    "why": "dub 低頻、取樣、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ecc117a4-0a64-382f-90fd-f598a40fea29",
+    "https://coverartarchive.org/release-group/ecc117a4-0a64-382f-90fd-f598a40fea29/front"
+   ],
+   "mbRgMbid": "ecc117a4-0a64-382f-90fd-f598a40fea29",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中《Duniya》2.6 0.8 0.6；x 貼邊"
+  },
+  {
+   "artist": "Loop Guru",
+   "album": "The Third Chamber",
+   "year": 1994,
+   "label": "Nation",
+   "country": "gb",
+   "faction": "world-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Loop Guru 迴旋 dub，低頻厚、暖",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "dub 迴旋、低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c5d2c898-0b33-3224-8136-67ef5e2029e5",
+    "https://coverartarchive.org/release-group/c5d2c898-0b33-3224-8136-67ef5e2029e5/front"
+   ],
+   "mbRgMbid": "c5d2c898-0b33-3224-8136-67ef5e2029e5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼邊"
+  }
+ ],
+ "notes": [
+  "提名 38 張（目標 54，照實交不湊數）：主場景（Hooverphonic／Morcheeba／Lamb／Olive／Laika）已被池與 md9、ml15、ml40、ml53 挖空；池中同人已評分結果顯示冷的 Bristol 落頹靡、乾淨 lounge 落放鬆，故 Olive（Trickle 偏 drum n bass）、Laika（md9 已提）、Mandalay／Esthero／Jhelisa（池中 y 貼邊或他組已處理）、Hooverphonic《Jackie Cane》《No More Sweet Music》不收。",
+  "擴寫場景補：Fila Brazillia（池中兩張已判恍惚 y0.9）、Money Mark（池中《Keyboard Repair》恍惚）、Rustin Man／Gibbons、Alice Russell、Quantic、Soul II Soul、Neneh Cherry、世界 downtempo（Susheela、Nitin、Natacha、Loop Guru）。",
+  "所有 moodGuess 為憑藝人聲音知識估計，y 多在 0.8–1.0 貼近門檻，主線評分後落放鬆的比例可能偏高；WebSearch 0 次，故未附樂評原句，why 為依聲音描述。",
+  "身分全部 MB 釘住（Album、非 Compilation／Live），CAA release-group front 皆回 307（有封面）。Hooverphonic《The Night Before》在 MB 為 Single，已剔除。",
+  "跨組避讓：Boozoo Bajou（ml15／ml40）、Fila《Black Market Gardening》《Maim That Tune》（已在池）、Bombay Dub／Cheb i Sabbah（ml15）未重提。MB 年份：Lamb《The Secret of Letting Go》2019、Backspace Unwind 2014、Hooverphonic《In Wonderland》2016，皆未收。"
+ ]
+}
