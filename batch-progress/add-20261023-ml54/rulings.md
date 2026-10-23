@@ -43,3 +43,20 @@
 - 20872：Skinshape《Umoja》Bandcamp credits 完整：10 首中 6 首有客座人聲（葡、斯、沃洛夫語）、Malcolm Catto 真鼓、加納打擊樂；與策展『靜、一滴鼓』不符，標 moodGuess 存疑（高），建議汰換；《Nostalgia》無 credits、是否有人聲未證，標存疑（中），thin。
 - 20873：Pachyman《In Dub》廠牌：Bandcamp 寫 Permanent Records（2019-06），Apple 版權為 ATO（再版）；卡單廠牌空白，建議填 Permanent Records。Bandcamp 12 首、Apple 13 首（多〈Meet With Friends〉）。
 - 20874：Laffey《After the Rain》總長 27.3 分，低於 28 分門檻；文案為吉他加鋼琴，無雨聲取樣來源；廠牌 Lofi Records（Lofi Girl）。delayde 兩張自行發行、無文字描述，thin；《finding solitude》28.3 分貼線。WebSearch 共用 3 次（Glimlip 1、Pachyman 1，另 Glimlip 查無）。
+
+## 研究 e 組
+- 20881：Pachyman《Switched-On》Bandcamp 署名「played, sang」，有人聲（〈Sale el Sol〉只反覆唱曲名），GRAMMY／AllMusic 稱旋律 uplifting，作者自述刻意跳出純 dub；策展層「合成器與風琴 dub」不準，moodGuess 存疑（中），建議主線聽過再決定。At 333 House、The Return of... 為全器樂 roots dub，不存疑。
+- 20882：Dubmatix《The Dub Sessions Vol. 1》無樂評，聲音依藝人自述：UK steppers、electro、Jungle DnB／dancehall 標籤，x 邊距存疑（中）；版本分歧：Bandcamp 2023-08-25 共 17 首，Apple 2023-12-22 共 19 首。
+- 20883：Teebs《Collections 01》29.5 分鐘貼門檻，〈Cook, Clean…〉樂評用 breezy／drive，輕度存疑；Wikipedia 稱 compilation，MB 為 Album。
+- 20884：Natureboy Flako《Natureboy》自己的聲音貫穿全張＋客串人聲、cumbia 節奏，moodGuess 存疑（中～高）；《Theme For A Dream》總長 28.4 分貼門檻、無樂評，status thin，Chant 標籤與「heart-pounding rhythm」文案存疑。兩張廠牌卡單空白，可補 Five Easy Pieces（Natureboy 的 Apple ℗ 為 Materialized Moments）；Pachyman 可補 Mock Records（333 House）／ATO Records。
+- 20885：WebSearch 本組用 3 次，其餘 Bandcamp／Discogs／MB／iTunes API 與樂評頁直連。AllMusic 4 星、Libera 入圍、NPR 榜等取自 Wikipedia 轉述，未回查原頁。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- 照 ml42／ml47／ml51 先例**只憑「查無」不汰、有反證才汰**（Mondo Loops《Golden Age》、Bcalm《Close to Home》、Freddie Joachim《Study Guide》零聲音來源但無反證，留）。
+- **汰 13 張**（存 `dropped-cards.json`／`dropped-research.json`）：
+  - 人聲／饒舌客串：Glimlip, Søren Søstrom & Soul Food Horns《Twelve Chapters》（14 首中 8 首掛 MC 客串）、Skinshape《Umoja》（6/10 首客座人聲、真鼓＋加納打擊、Afro-Beat）、Natureboy Flako《Natureboy》（自唱貫穿全張、cumbia／民謠混合）、Pachyman《Switched-On》（自唱、uplifting、Lovers Rock 取向，刻意離開 dub）。
+  - 律動推進：Natureboy Flako《Theme For A Dream》（文案 heart-pounding rhythm、28.4 分）、Dubmatix《The Dub Sessions, Vol. 1》（UK steppers／electro、Jungle DnB 標籤、數位，器樂 steppers 池中判冷）、Tall Black Guy《Airplane Mode》（house progressive 標籤、5 位客串）、Sweatson Klank《Good Days》（funk 標籤、Apple Rock）、Jazzinuf《Audio Bartending》（jazz fusion／nujazz 標籤、玩笑曲名與插話）、Skinshape《Nostalgia》（psychedelic rock／funk）。
+  - 質地輕／色溫：Laffey《After the Rain》（吉他＋鋼琴乾淨清亮、27.3 分）、《The Moon and the Mind》（睡眠題材 z 貼 0、25.8 分）。
+  - 身分：Freddie Joachim《Dust》（MB 2010 原版只 5 首 10 分鐘 Bandcamp 小品，20 首版是 2015 擴充版，與卡單不符）。
+- 卡單更正：補廠牌（研究層查證）——Jazzinuf 兩張 Etymology Records、Bcalm／Mondo Loops／Laffey《A Day at a Time》Lofi Records、Laffey《Forever Changing》ChilledCow（發行時舊名）、Aviino Chillhop Music、Sweatson Klank《Postcards》Friends of Friends、Pachyman《In Dub》Permanent Records、《At 333 House》Mock Records、《The Return Of...》ATO Records、Teebs Brainfeeder、Freddie Joachim《Study Guide》Milk Dipper（實為與 Question 的雙人器樂盤，掛名照 MB）。NOGYMX 三張 country kr→ie（旅居首爾的愛爾蘭製作人 Jimmy Dunne）。
+- 定案 **22 張**（a 6、b 6、c 4、d 3、e 3）。主場景只有 lo-fi 本體 16 張、dub 化 downtempo 3 張（Pachyman）、暖 beat 2 張（Teebs、Sweatson Klank）＋jazzy ihh 1 張；不補候補（主線先汰的 19 張風險未解）。

@@ -42,3 +42,13 @@
 - 21163：moodGuess 存疑清單（研究層建議）：強烈＝Dead Melodies《Murken Hollow》（credits 明列打擊、人聲、薩克斯風、吉他）、Ruptured World《Archeoplanetary》（旁白口述＋鋼琴，Discogs 標 Spoken Word）；中高＝Dead Melodies《Fabled Machines of Old》（奇幻吟遊、三首客座，聲音無第三方證據）；中度＝Mount Shrine《Winter Restlessness》《Ghosts on Broken Pavement》《Shortwave Ruins》（廠牌與樂評寫 warm／peaceful，色溫偏暖至中性）、Hilyard《Division Cycle》（Igloo 寫 dense, warm）、Dead Melodies《The Foundations of Ruin》（旁證有鋼琴、Discogs 稱 post-rock）；輕度＝Hilyard《Furthermore》（太空 ambient 色溫中性，同 Ionosphere 先例）；不明＝Ager Sonus《Necropolis》（埃及主題、無任何聲音描述）。
 - 21164：WebSearch 3 次用完（Mount Shrine、Dead Melodies、Ruptured World／Hilyard／Ager Sonus 各一組合查詢）；Ager Sonus 與 Hilyard《Furthermore》、Dead Melodies 兩張後作無第三方樂評，status 標 thin（Shortwave Ruins、Fabled Machines、Necropolis、Furthermore）。
 - 21165：Sputnikmusic 樂評（Foundations of Ruin）WebFetch 503、curl 空回應，內容僅以搜尋摘要轉述，已寫進 facts 但於 notes 標單源；寫作層用時建議降為氛圍形容。
+
+## 研究 e 組
+- 21201：Vestigial《Translucent Communion》推翻策展層廠牌——2008 首發為 Cold Meat Industry（Discogs、Release Magazine、Musique Machine 一致），Cyclic Law 是 2025-07-04 再版；卡單廠牌建議改 Cold Meat Industry，年份 2008 不變。另 moodGuess 輕度存疑：Musique Machine 稱有細微工業節奏、Discogs 製作欄有 percussion，Release Magazine 稱鼓僅末曲結尾。
+- 21202：BSE《Faint》moodGuess 存疑（輕）——廠方文案「entrancing melodies」「salient samples」。
+- 21203：BSE《The End of It All》moodGuess 存疑（中）——廠方「lush ominous melodies」，標籤含 piano、ritual。
+- 21204：Hoarfrost《Ground Zero》moodGuess 存疑（輕）——工業題材，可能有金屬撞擊／脈衝；無逐曲樂評。
+- 21205：Strom Noir《Glaciology》基本吻合；輕疑點為吉他旋律出身，z 可能偏中性。
+- 21206：Inner Vision Laboratory《Austeros》moodGuess 存疑（輕）——廣播／日常取樣，文案有「strike」字樣，可能有突發聲響。
+- 21207：Inner Vision Laboratory《Perpetua》moodGuess 存疑（中）——廠方稱樂器超出類型慣例，Discogs 加列 Modern Classical／Darkwave；建議聽過再定，必要時汰換。
+- 通則：本組僅 Vestigial 有獨立樂評（status full），其餘六張只有廠方文案與 Discogs（thin）；WebSearch 用 3 次。年份、盤名與卡單吻合。
