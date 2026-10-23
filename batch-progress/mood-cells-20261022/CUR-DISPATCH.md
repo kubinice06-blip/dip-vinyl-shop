@@ -7,29 +7,31 @@
 
 ## 共通：照「規則會判進這格的聲音」挑，不照場景名字挑
 
-評分規則在 `batch-progress/mood-axes/score500/BRIEF.md`（先把 X／Y／Z 三節含 2026-10-22 的兩條新規則讀完：**能量＝兇不兇優先**——攻擊性＋有鼓在推才算躁，再慢也躁；沒攻擊性的快歌照速度判；**質地＝暖慢的包覆感算重**）。
+評分規則在 `batch-progress/mood-axes/score500/BRIEF.md`（X／Y／Z 三節全讀，**以 2026-10-23 店主的「體感標準」為準**：**能量＝體感**——讓神經繃起來的是躁（安靜但緊繃也算），被安撫、被往下拉的是靜，速度只是線索；**色溫＝聲響溫度＋旋律清楚度**——旋律明確好入耳往暖，旋律不明、靠即興／音色／噪音撐往冷；**質地**——尖細高頻輕、厚密低沉重，暖慢的包覆感也算重）。
 每張都要填 `moodGuess` 並**留邊距**（各線門檻見下），貼邊的不提——門檻是硬切，貼邊卡評分後一半掉到隔壁格。md1–md4 照這個做法，落格率 91–98%。
 
 ## 頹靡 md（靜＋重＋冷）
 
 評分規則在 `batch-progress/mood-axes/score500/BRIEF.md`（先把 X／Y／Z 三節含 2026-10-22 的兩條新規則讀完）。要落頹靡，三軸都得過：
 
-1. **能量要靜（x ≤ 2.7）**。2026-10-22 能量軸改「兇不兇優先於快不快」：**攻擊性（失真牆／嘶吼／音壓）＋有鼓在推 → 躁**，再慢也躁。所以 **有鼓的 doom／sludge／黑金屬一律不收**（Windhand、Bell Witch、YOB、Pallbearer、Thou、Electric Wizard 全判躁，落亢奮）。收得進來的是：**沒有鼓或鼓極稀**的 drone metal（Sunn O)))、Earth《Earth 2》、Khanate 是先例，店主已裁定 Sunn O))) 算頹靡）、暗黑 ambient、drone、工業 drone、慢而不兇的 slowcore／dark jazz／dub techno／cloud rap。
+1. **能量要靜（x ≤ 2.7）＝被往下拉、被包住、被催眠**（2026-10-23 體感標準）。很大聲但把人往下壓的是靜：Sunn O)))、Earth 2、Boris《Altar》、Khanate、Low《Double Negative》、Scott Walker《The Drift》都在頹靡；慢的 doom 若是壓人下沉也可收，但嘶吼暴烈、讓人繃緊的落亢奮，不收。**安靜但讓神經緊繃的是躁**（Feldman《Rothko Chapel》、Ligeti、Penderecki、恐怖配樂的驚嚇段多的盤）→ 冷冽或亢奮，不收。
 2. **質地要重（y ≥ +0.8）**：低頻厚、失真、殘響長、糊。2026-10-22 新規則：**包覆感也算重**——殘響霧、厚合成器墊、磁帶糊，沒有失真也行。乾淨、有空氣、聲部分明的（純淨極簡古典、乾木吉他 sadcore、ECM 式北歐爵士）會判輕而落**平靜**，不收。
 3. **色溫要冷（z ≤ −0.3）**：陰、疏離、金屬、都市夜、沒有人味。溫暖的 dub、靈魂、dream pop 會落**恍惚**（那是 ml 線的事），不收。
 
 **每張都要填 `moodGuess`**：`{"x":2.2,"y":1.4,"z":-1.2,"why":"≤30 字講聲音：有沒有鼓、失真、殘響、低頻、冷暖"}`。照 BRIEF 的尺估、**留邊距**：x ≤ 2.7、y ≥ +0.8、z ≤ −0.3 三條都過才提；貼邊的（x 2.9、y 0.6、z −0.1）不提——門檻是硬切，貼邊卡評分後一半掉到隔壁格。
-**反例（別提）**：Talk Talk《Spirit of Eden》、Max Richter、Pärt、Feldman、Red House Painters《Rollercoaster》、Mono 的乾淨段落多的盤 → 平靜；Whitehouse、Prurient、Pharmakon、有鼓的 doom、Swans《Cop》→ 亢奮；Burial、Portishead、Massive Attack 已在池且本來就落頹靡，不必重提。
+**反例（別提）**：Talk Talk《Spirit of Eden》、Max Richter、Pärt、Red House Painters《Rollercoaster》、Mono 的乾淨段落多的盤 → 平靜；Whitehouse、Prurient、Pharmakon、暴烈的 doom、Swans《Cop》→ 亢奮；Feldman、Ligeti、Galás → 冷冽／亢奮（安靜但緊繃）；Burial、Portishead、Massive Attack 已在池且本來就落頹靡，不必重提。
 
 
 ## 冷冽 mc（躁＋輕＋冷）
 
+**2026-10-23 起照店主的「體感標準」**（`score500/BRIEF.md` X／Z 軸最新兩段，取代下面舊版的「要快、要有機械脈動」）。
 門檻（留邊距）：**x ≥ 3.3、y ≤ +0.2、z ≤ −0.3**。
-1. **能量要躁**：快、密、想動。沒有攻擊性的快歌照速度判（Kraftwerk、YMO、bebop 快板、techno 都算）。
-2. **質地要輕**：製作乾淨、薄、乾、聲部清楚、低頻不淹。**厚重的 techno、失真牆、厚殘響的 post-punk 牆（Interpol 那種）會判重落亢奮，不收**；techstep、darksynth、EBM 重的那半也是。
-3. **色溫要冷**：機械、金屬、都市夜、疏離、沒有人味。**溫暖律動（funk、disco、多數 swing／hard bop 的暖、bossa、math rock 的明亮）落雀躍，不收**——爵士與 math rock 最容易判暖，只收真的冷的（Tristano 派、前衛 Blue Note、Dolphy、Hill、歐陸自由即興的乾硬那半）。
-**反例（別提）**：Plastikman、Surgeon、Underground Resistance 重盤、Pan Sonic、Cabaret Voltaire 重盤、Interpol、Squarepusher、LFO → 亢奮（判重）；toe、大象體操、Steve Reich 暖盤、Chic、山下達郎 → 雀躍（判暖）；Neu! 慢段、Jimmy Giuffre 3、e.s.t.、Dry Cleaning → 平靜（判靜）。
-`genres` 第一個照場景：synth／techno／electro `electronic`；post-punk／new wave／math rock `rock`；爵士 `jazz`；當代古典 `classical`；synth-pop `pop` 或 `electronic`。
+1. **能量要躁＝讓神經繃起來**：緊張、不安、刺激、坐不住、被推著走。**安靜但讓人緊繃的也是躁**（Feldman《Rothko Chapel》、Ligeti《Atmosphères》、Penderecki、Kancheli 都在冷冽）。速度只是線索；把人往下壓、催眠的（drone、Sunn O)))、slowcore）是靜，不收。
+2. **質地要輕＝尖、細、高頻、薄、乾**。厚、密、低沉、失真牆的落亢奮（大編制 fire music、厚重 techno、噪音牆、EBM 重的那半），不收。
+3. **色溫要冷＝旋律不明、靠即興／音色／噪音撐、無調、硬蕊**，不管樂器多溫潤、多「靈性」（Pharoah《Karma》、A Love Supreme 也算冷）。**旋律清楚、唱得出來、好入耳的往暖**——所以 synth-pop、new wave 金曲、旋律明確的 techno-pop、主流硬咆勃／靈魂爵士／風琴 groove 都會落雀躍，不收。
+**最適合的場景**（第 4 輪起主力）：自由爵士小編制、AACM／loft jazz、歐陸自由即興、無調現代古典／序列主義／新複雜主義、glitch／microsound、日本前衛即興、RIO／前衛搖滾的尖細那半、現代前衛爵士（Tim Berne、Steve Lehman、Mary Halvorson 一路）。
+**反例（別提）**：Sunn O)))、Earth 2、Boris《Altar》、Khanate、Scott Walker《The Drift》→ 頹靡（壓人下沉＝靜）；Brötzmann《Machine Gun》、Merzbow、Pan Sonic 重盤、大編制 fire music → 亢奮（厚＝重）；Jimmy Smith、Lee Morgan《The Sidewinder》、OMD 金曲、YMO 旋律盤 → 雀躍（旋律清楚＝暖）；Köln Concert → 雀躍。
+`genres` 第一個照場景：爵士 `jazz`；現代古典 `classical`；glitch／實驗電子 `electronic`；RIO／前衛搖滾 `rock`。
 
 ## 恍惚 ml（靜＋重＋暖）
 

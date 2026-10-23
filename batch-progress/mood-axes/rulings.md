@@ -208,3 +208,31 @@
 - **回頹靡／平靜的**：Scott Walker 四張、Sunn O)))、Penderecki《Threnody》《St Luke Passion》、Ligeti、Galás 三張、Current 93、AMM、Kevin Drumm、KTL、Lustmord、Ben Frost、Low《Double Negative》、Swans《Soundtracks for the Blind》、Feldman 以外的現代古典（Boulez、Berio、Stockhausen、Saariaho、Carter、Ferneyhough）等。
 - **八格**：冷冽 1,064→1,035、亢奮 2,818→2,753、頹靡 1,249→1,314、平靜 1,320→1,349；錨點 104/104。
 - **規則已改**：`score500/BRIEF.md` 酸的段落改成「安靜但有寒氣也算酸；推力只看打擊」。
+
+## 2026-10-23｜店主試聽點選 50 張爭議盤，歸納出的標準
+
+- **做法**：試聽頁 https://claude.ai/artifact/JD9bmK2ramyoC6UsmTrt8L ，50 張逐張試聽、店主點格。原判同格 20、改格 29、不確定 1（Scott Walker《The Drift》）。29 張照點選寫進 overrides（`owner-review/apply.mjs`，只動翻過去的軸、推到門檻另一側中度值），`owner-review/picks.json` 存原始點選。
+- **翻得最多的是能量（20 張）**，而且一面倒是「靜→躁」：Feldman《Rothko Chapel》、George Lewis、Ligeti、Penderecki、Kancheli、Tim Hecker《Konoyo》→冷冽；Mica Levi、Galás、《藍鬍子城堡》、Weinberg、蕭士塔高維契 8、PJ Harvey《White Chalk》、Velvet Underground & Nico、光束夜 →亢奮。同時這些維持靜：Sunn O)))／Boris《Altar》、Earth 2、Bohren、Nico《Desertshore》、Jóhannsson《Arrival》、Low《Double Negative》、Harold Budd、Slint、Sigur Rós《Von》。
+  → **店主的能量軸是「張力、不安定」，不是「有沒有鼓」**：不和諧、尖、不可預測、讓人坐不住的，再安靜也是躁；沉、慢、把人包住往下拉的（drone、doom、dark ambient、slowcore）才是靜。這推翻了 10-22「躁要有打擊在推」與今天 drive-fix 的撤回邏輯（Ligeti、Penderecki、Galás 被店主拉回躁）。
+- **色溫翻 10 張，幾乎都是暖→冷**：Pharoah《Karma》《Elevation》、Alice Coltrane《Journey in Satchidananda》、Boredoms《Super ae》、Fuck Buttons、Brotherhood of Breath、Nicole Mitchell、Enrico Rava。同時 Mingus《Black Saint》、Melt-Banana、Cecil Taylor《Hard Driving Jazz》留暖，Lankum 反而冷→暖（恍惚）。
+  → 跟店主自己說的一致：**色溫看旋律清不清楚**。有唱得出來的旋律、調性明確 → 暖；旋律不明、靠即興、音色、噪音撐的 → 冷，不管樂器多溫潤、多「靈性」。
+- **質地翻 9 張**：Penderecki、Ligeti、Tim Hecker、Reznor/Ross 被判輕（尖細高音、冷光）；Don Cherry、PJ Harvey、Rava、Alice Coltrane、Psycho 被判重。→ 尖、細、高頻的算輕，厚、密、低沉的算重。
+- **離群值**：Herrmann《Psycho》店主選沸騰（暖）；Keith Jarrett《Köln Concert》選雀躍（躁）——旋律明確且頑固低音在推，符合「旋律＝暖」「推進感＝躁」。
+
+## 2026-10-23｜體感標準全池重判：20,446 張逐張看，1,343 張改判
+
+- **店主指示**：「用新標準全部重判。是讓人聽得很躁還是靜，是體感，不是音樂本身。」＋「旋律性也是冷暖標準之一。」
+- **做法**：`batch-progress/mood-axes/felt-rejudge/`，seed 依藝人排序切 52 份（每份 400，鎖住店主點過的 50 張＋Celtic Frost《Monotheist》），52 支代理照 `BRIEF.md` 逐張判，只輸出要改的（差 0.4 以上或換格才改）。`merge.mjs` 寫進 `overrides.json`，why 加註「2026-10-23 體感重判：…。原 (x, y, z)」以便日後撤回。
+- **結果**：改 1,343 張（z 動 1,052、x 動 315、y 動 107）。八格：放鬆 4,987→5,141、平靜 1,348→1,018、恍惚 1,074→1,110、頹靡 1,344→1,276、雀躍 5,932→5,917、冷冽 1,082→1,269、沸騰 1,959→1,921、亢奮 2,771→2,845。最大流向：平靜→放鬆 260（旋律清楚的民謠、歌謠、抒情回暖）、平靜→冷冽 147、雀躍→冷冽 100（緊繃現代音樂、噪音轉躁；自由／靈性爵士轉冷）、冷冽→雀躍 92、沸騰→亢奮 82、頹靡→亢奮 56。錨點 104/104 同格。
+- **主線裁定**：
+  1. **Khanate 4 張的能量撤回**（代理改躁，主線維持靜）：比照店主「Sunn O))) 算頹靡」，極慢 doom 的嗡鳴把人往下壓，屬靜。
+  2. **中途補一條：主流硬咆勃／靈魂爵士／風琴 groove 不算旋律不明**（chunk-20 看到 Jimmy Smith、Lovano 被往冷推）。補在 BRIEF 後派出的 chunk-29 以後照新條判；之前的已交件不回頭重派——抽查往冷的 60 張幾乎全是調式／靈性／鼓樂盤，符合店主 Pharoah、Alice Coltrane 的方向；Joe Lovano《Vanguard》、MMW 兩張屬邊緣，留著，可逆。
+  3. 頹靡→躁的 56 張逐張看過：都是緊繃的現代音樂、噪音、恐怖配樂、Galás／Swans／Tim Hecker 一類，與店主點的 Feldman、Ligeti、Konoyo、Galás 同方向，不撤。
+- **說明書同步**：`score500/BRIEF.md` 的能量、色溫加「店主再改標準」兩段，取代 10-22「有打擊在推」、10-23「驟然爆裂不算推力」與「不是酸」那串（A Love Supreme 等改判冷），新卡評分照新標準。
+
+## 2026-10-23｜店主：Eminem《Revival》不該在暴躁 → 主流 pop-rap 有唱的副歌＝暖，9 張改判
+
+- 《Revival》原是 v0 先驗 (3.2, 0.6, −0.3)，三軸都卡邊，體感重判時差不到 0.4 沒動。整張靠 Beyoncé、Ed Sheeran、P!nk、Alicia Keys 的流行副歌撐，照「旋律清楚＝暖」應在沸騰。
+- 同形狀一起改（z 拉到 +0.3～+0.6，x、y 不動，全落沸騰）：Eminem《Revival》《The Eminem Show》《MMLP2》、Kendrick《GNX》、Stray Kids《KARMA》、G-DRAGON《COUP D'ETAT》、Roddy Ricch、Polo G《Hall of Fame》、Trippie Redd《LIFE'S A TRIP》。
+- 不動：《The Marshall Mathers LP》（陰冷 Dre 製作，−1.2）、Wu-Tang、Public Enemy、Carti、JPEGMAFIA、Travis Scott、drill／trap 主流（Future、Chief Keef、21 Savage）、Illmatic 等 boom-bap——聲響本身就冷硬。
+- 說明書 score500/BRIEF 色溫段補一句。

@@ -40,6 +40,8 @@
 硬規則：合輯以收錄曲**中位數**判；一張盤有快有慢取整體印象，不取最快的一首；慢但極大聲（Sunn O)))）是 1–1.5，音壓不等於能量。
 **2026-10-22 店主改標準——「兇不兇」優先於「快不快」**：躁（≥3.0）要同時有 (A) 攻擊性：失真 riff 牆、嘶吼／咆哮、刺耳噪音、音壓貼臉；(B) 有打擊在推：鼓或拍子在敲，再慢也算。兩樣都有就是躁，速度只決定高低：慢而兇（doom、sludge、慢速黑金屬、工業碾壓）3.1–3.4，中速 3.5–3.9，快 4 以上。只有一樣不算躁：**有拍沒攻擊性**（dub、dub techno、trip-hop、dubstep、slowcore、shoegaze 柔牆、cloud rap）照原表 2–2.9；**有攻擊沒拍**（Sunn O)))、Earth 2、Khanate、drone doom、噪音牆、暗黑 ambient、現代古典音塊、工業 drone）照原表 1–2，Sunn O))) 仍是 1–1.5。先例：Celtic Frost《Monotheist》2.6→3.4、Electric Wizard《Dopethrone》1.8→3.1、Godflesh《Streetcleaner》2.6→3.4；Sunn O)))、Khanate、Ben Frost、Penderecki 不動。
 
+**2026-10-23 店主再改標準——能量＝體感，取代上面 10-22「有打擊在推」與 10-23「驟然爆裂不算推力」**（店主：「是讓人聽得很躁還是靜，是體感，不是音樂本身」）：躁＝神經被挑起來（緊張、不安、刺激、坐不住、被推著走）；靜＝被安撫、被往下拉（放鬆、沉下去、被包住、被催眠）。**安靜但讓神經緊繃的是躁**：Feldman《Rothko Chapel》、Ligeti《Atmosphères》、Penderecki《Threnody》、Kancheli、Reznor/Ross《Dragon Tattoo》、Diamanda Galás 都在冷冽／暴躁。**很大聲但把人往下壓的是靜**：Sunn O)))、Earth 2、Boris《Altar》、Khanate、Low《Double Negative》、Scott Walker《The Drift》都在頹靡。速度只是線索。分數：明顯躁 3.4–4.5、邊緣躁 3.0–3.3、邊緣靜 2.5–2.9、明顯靜 1–2.4。
+
 **Y 質地（輕 −2 ↔ 重 +2）**：「聲音是乾淨輕盈、還是厚重糊爛」
 | 分 | 聽起來 | 例 |
 |---|---|---|
@@ -71,12 +73,14 @@
 大調≠暖、小調≠冷（Joy Division 有大調歌仍是 −2）。
 **2026-10-23 店主改標準——「酸」＝冷＋硬**（店主：「自由爵士類的、或是現代音樂類的（比如 Ligeti）都很酸冷難聽又硬蕊，絕對不會是輕鬆」）：不和諧、無調性、自由即興、噪音質地、刺耳張力的音樂，不管樂器原聲或電子、混音溫不溫潤，色溫一律 ≤ −1.2；**安靜但有寒氣的也算酸**（陰森、駭人、無調、疏離）。能量照 10-22 標準：有鼓／律動在推才算躁（≥ 3.1）；音塊、drone、長段留白後的驟然爆裂都**不算推力**——Ligeti《Atmosphères》、Penderecki《Threnody》、Scott Walker《The Drift》（店主 10-23：「The Drift 頹靡沒錯」）、Sunn O))) 都留靜。自由爵士（Ayler、Cecil Taylor、Brötzmann、AACM、歐洲自由即興）、無調現代音樂（Ligeti、Penderecki、Xenakis、Stockhausen）、noise／power electronics、musique concrète、no wave、嘶吼的 fire music 都是酸。**不是酸**：溫暖的靈性／調式爵士（A Love Supreme、Journey in Satchidananda）、後咆勃、ECM 抒情、cool jazz、極簡（Reich、Glass、Pärt）、新古典與配樂、印象派與浪漫派。同一張有酸有暖（Pharoah《Karma》）酸優先。先例：Marion Brown《Geechee Recollections》放鬆→冷冽。
 
+**2026-10-23 店主再改標準——色溫＝聲響溫度＋旋律清楚度，取代上面「不是酸」那一串**（店主：「旋律性也是評斷冷暖標準之一，越冷越硬蕊、旋律不明確；越暖易入耳的，旋律會更明確」）：旋律明確、調性清楚、好入耳、唱得出來 → 往暖；旋律不明、靠即興／音色／噪音／律動撐、無調、硬蕊 → 往冷，**不管樂器多溫潤、多「靈性」**——Pharoah《Karma》、Alice Coltrane《Journey in Satchidananda》、A Love Supreme、Fuck Buttons、Boredoms 都是冷。冷色調但旋律很清楚的民謠或歌（Lankum《False Lankum》）可以往暖。**主流咆勃／硬咆勃／靈魂爵士／風琴 groove 不算旋律不明**：有主題、搖擺律動、好入耳的，長段獨奏也不往冷。原本的聲響溫度仍算數，旋律清楚度是第二個依據。**主流 pop-rap 有唱的副歌、好入耳的也是暖**（店主 10-23 指 Eminem《Revival》不該在暴躁）；boom-bap、trap、drill、hardcore、實驗 hip-hop 照聲響判，不因有 hook 就往暖。
+
 
 
 ## 八格（供你對照，不必輸出）
 
 能量 x ≥ 3.0 為「躁」否則「靜」；質地 y ≥ 0.5 為「重」否則「輕」；色溫 z ≥ 0 為「暖」否則「冷」。
-放鬆＝靜輕暖、平靜＝靜輕冷、恍惚＝靜重暖、頹靡＝靜重冷、雀躍＝躁輕暖、冷冽＝躁輕冷、沸騰＝躁重暖、亢奮＝躁重冷。
+放鬆＝靜輕暖、平靜＝靜輕冷、恍惚＝靜重暖、頹靡＝靜重冷、雀躍＝躁輕暖、冷冽＝躁輕冷、沸騰＝躁重暖、暴躁＝躁重冷。
 **格子是結果，不是目標**：照聲音打分，不要為了湊進某一格調數字。
 
 ## 校正表：104 張人工錨點（店主審過，這就是尺）
@@ -136,7 +140,7 @@
 | 落日飛車 Sunset Rollercoaster《Jinji Kikko》 | 2.8 | +0.8 | +1.6 | 恍惚 |
 | 細野晴臣《Hosono House》 | 2.6 | -0.8 | +1.3 | 放鬆 |
 | はっぴいえんど《風街ろまん》 | 3.0 | -0.5 | +0.6 | 雀躍 |
-| Radiohead《OK Computer》 | 3.0 | +0.9 | -1.4 | 亢奮 |
+| Radiohead《OK Computer》 | 3.0 | +0.9 | -1.4 | 暴躁 |
 | Curtis Mayfield《Superfly》 | 3.6 | +0.6 | +0.9 | 沸騰 |
 | Herbie Hancock《Head Hunters》 | 3.6 | +0.9 | +1.2 | 沸騰 |
 | Talking Heads《Remain in Light》 | 3.9 | +0.6 | +0.3 | 沸騰 |
@@ -157,32 +161,32 @@
 | Fela Kuti《Zombie》 | 4.2 | +0.6 | +1.0 | 沸騰 |
 | James Brown《Say It Loud: I’m Black and I’m Proud》 | 4.3 | +0.3 | +1.5 | 雀躍 |
 | Ramones《Ramones》 | 4.6 | +1.6 | +0.2 | 沸騰 |
-| Sex Pistols《Never Mind the Bollocks, Here's the Sex Pistols》 | 4.4 | +1.8 | -0.6 | 亢奮 |
-| Dead Kennedys《Fresh Fruit for Rotting Vegetables》 | 4.7 | +1.5 | -0.5 | 亢奮 |
-| Black Flag《My War》 | 4.0 | +2.0 | -1.6 | 亢奮 |
-| Jeff Mills《Waveform Transmission Vol. 1》 | 4.7 | +1.4 | -1.6 | 亢奮 |
-| 戸川純《玉姫様》 | 4.1 | +1.0 | -0.5 | 亢奮 |
-| ヤプーズ《Dadada-ism》 | 4.5 | +1.5 | -0.4 | 亢奮 |
-| Joy Division《Unknown Pleasures》 | 3.5 | +1.6 | -1.9 | 亢奮 |
-| The Velvet Underground《White Light/White Heat》 | 4.2 | +2.0 | -1.0 | 亢奮 |
+| Sex Pistols《Never Mind the Bollocks, Here's the Sex Pistols》 | 4.4 | +1.8 | -0.6 | 暴躁 |
+| Dead Kennedys《Fresh Fruit for Rotting Vegetables》 | 4.7 | +1.5 | -0.5 | 暴躁 |
+| Black Flag《My War》 | 4.0 | +2.0 | -1.6 | 暴躁 |
+| Jeff Mills《Waveform Transmission Vol. 1》 | 4.7 | +1.4 | -1.6 | 暴躁 |
+| 戸川純《玉姫様》 | 4.1 | +1.0 | -0.5 | 暴躁 |
+| ヤプーズ《Dadada-ism》 | 4.5 | +1.5 | -0.4 | 暴躁 |
+| Joy Division《Unknown Pleasures》 | 3.5 | +1.6 | -1.9 | 暴躁 |
+| The Velvet Underground《White Light/White Heat》 | 4.2 | +2.0 | -1.0 | 暴躁 |
 | The Clash《London Calling》 | 4.2 | +1.0 | +0.5 | 沸騰 |
-| Nirvana《Nevermind》 | 4.2 | +1.7 | -0.3 | 亢奮 |
-| The Prodigy《The Fat of the Land》 | 4.7 | +1.7 | -0.8 | 亢奮 |
-| Black Sabbath《Paranoid》 | 3.9 | +2.0 | -1.0 | 亢奮 |
-| 草東沒有派對 No Party For Cao Dong《醜奴兒》 | 4.0 | +1.5 | -1.2 | 亢奮 |
-| NUMBER GIRL《School Girl Distortional Addict》 | 4.6 | +1.7 | -0.3 | 亢奮 |
+| Nirvana《Nevermind》 | 4.2 | +1.7 | -0.3 | 暴躁 |
+| The Prodigy《The Fat of the Land》 | 4.7 | +1.7 | -0.8 | 暴躁 |
+| Black Sabbath《Paranoid》 | 3.9 | +2.0 | -1.0 | 暴躁 |
+| 草東沒有派對 No Party For Cao Dong《醜奴兒》 | 4.0 | +1.5 | -1.2 | 暴躁 |
+| NUMBER GIRL《School Girl Distortional Addict》 | 4.6 | +1.7 | -0.3 | 暴躁 |
 | 伍佰 & China Blue《樹枝孤鳥》 | 3.8 | +1.3 | +0.2 | 沸騰 |
-| Can《Tago Mago》 | 3.6 | +1.3 | -0.6 | 亢奮 |
-| 椎名林檎《勝訴ストリップ》 | 4.2 | +1.5 | -0.3 | 亢奮 |
-| Swans《The Seer》 | 3.3 | +2.0 | -1.8 | 亢奮 |
-| Merzbow《Pulse Demon》 | 5.0 | +2.0 | -1.5 | 亢奮 |
-| John Coltrane《Interstellar Space》 | 5.0 | +0.8 | -0.4 | 亢奮 |
-| John Coltrane《Ascension》 | 4.9 | +1.6 | -0.2 | 亢奮 |
-| Slayer《Reign in Blood》 | 5.0 | +2.0 | -1.4 | 亢奮 |
-| Darkthrone《Transilvanian Hunger》 | 4.9 | +2.0 | -2.0 | 亢奮 |
+| Can《Tago Mago》 | 3.6 | +1.3 | -0.6 | 暴躁 |
+| 椎名林檎《勝訴ストリップ》 | 4.2 | +1.5 | -0.3 | 暴躁 |
+| Swans《The Seer》 | 3.3 | +2.0 | -1.8 | 暴躁 |
+| Merzbow《Pulse Demon》 | 5.0 | +2.0 | -1.5 | 暴躁 |
+| John Coltrane《Interstellar Space》 | 5.0 | +0.8 | -0.4 | 暴躁 |
+| John Coltrane《Ascension》 | 4.9 | +1.6 | -0.2 | 暴躁 |
+| Slayer《Reign in Blood》 | 5.0 | +2.0 | -1.4 | 暴躁 |
+| Darkthrone《Transilvanian Hunger》 | 4.9 | +2.0 | -2.0 | 暴躁 |
 | Melt-Banana《Scratch or Stitch》 | 5.0 | +1.8 | 0.0 | 沸騰 |
 | BOREDOMS《Vision Creation Newsun》 | 4.8 | +1.6 | +0.8 | 沸騰 |
-| 閃靈 CHTHONIC《賽德克巴萊》 | 4.8 | +2.0 | -1.4 | 亢奮 |
+| 閃靈 CHTHONIC《賽德克巴萊》 | 4.8 | +2.0 | -1.4 | 暴躁 |
 | 溫蒂漫步 Wendy Wander《Spring Spring》 | 2.4 | +1.0 | +1.0 | 恍惚 |
 | 溫蒂漫步 Wendy Wander《Midnight Blue》 | 3.2 | +0.4 | +0.6 | 雀躍 |
 | Cigarettes After Sex《Cry》 | 1.6 | +1.2 | +0.2 | 恍惚 |
