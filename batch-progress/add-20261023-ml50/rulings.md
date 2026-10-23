@@ -31,6 +31,10 @@
 - 20324：Stick Figure《Set in Stone》Billboard 200 名次採維基（101），不採宣傳稿「65」（那是 Top Album Sales）；「賣出一萬張」單一宣傳來源，寫作層不用。dub 證據有具體樂評（〈Shadow〉dubwise 段、滾動貝斯、帶殘響小鼓）。
 - 20325：Stick Figure《World on Fire》moodGuess 存疑：ReadJunk upbeat／energetic、銅管、傳統 live reggae，Rebel Base reggae-rock、easygoing；無任何一篇談 dub 低頻。母帶 Bernie Grundman 與「30 萬張」皆單一來源，不寫。
 - 20326：Trinity Roots《Citizen》第三位成員 Ben Lemi（三源）對 Ben Wood（維基資訊框、Songlines）：facts 採 Ben Lemi，寫作層可不點名。moodGuess 存疑：〈Bully〉重金屬段、〈Haiku〉rocks out、Songlines 稱偏靈魂進步搖滾、迷幻。
+- 20327（補件）：Hollie Kenniff《For Forever》、Halftribe《For the Summer, or Forever》身分保留。Kenniff：ACL 寫 warm vibe of belonging，Igloo 寫 beatless、melancholy、muted piano，中段〈The Way of the Wind〉有一小段穩定拍子；moodGuess 輕度存疑（鋼琴／鍵音為主、非吉他殘響）。Halftribe：Dronarivm 文案 warm、dreamy、droning 為原字；Bandcamp 顯示 2026-07-10 是 Dronarivm＋Fonodroom 再版，原版 2018-05-18 為準；不存疑。
+- 20328（補件）：Halftribe《Archipelago》thin、moodGuess 存疑（中）：暖字僅 Bandcamp 歌迷留言，無樂評；『搖籃曲式』查無來源；Discogs／MB 風格含 Shoegaze。卡單 label 空白可補 Sound In Silence（Discogs 限量 CDr）。Wil Bolton《Rusted in the Salt Air》full、輕度存疑：ACL 原句 warm、sunny loops 與 percussive droplets 支持暖，但同篇有 dark clouds、聽眾留言 haunting、〈Ghost Signals〉遠處警報；無鼓組。
+- 20329（補件）：David Cordero & Rhucle《Summer Chronicles》thin、輕度存疑：warm 僅聽眾留言『warmer times』，廠牌用 gentle、organic；鼓、鋼琴皆無來源。't Geruis《The Kindest Encounters》partial、不存疑為主：廠牌原字 deeply warm、analog warmth，Textura 為懷舊；『噪聲』一語表示質地可能粗糙，y 要聽感確認。
+- 20330（補件）：citrine《line of sight》partial、輕度存疑：無 warm 原字（lush strings、deep、organic；聽眾 fragile、calm、healing），throbbing bass 與 slowly rhythmic gongs 有規律低頻脈動。Polypores《I Wish There Was a Place Like That》thin、moodGuess 存疑（中）：全無 warm／cosy／lush 原字，廠牌 psychedelic、kaleidoscopic、audio hallucinations，聽眾比作 Tangerine Dream；方向偏迷幻輕盈，建議列汰換候補。補件整體：8 張未推翻年份、廠牌、盤名；無 cold／bleak／glacial／mournful 字眼；Pitchfork 以外 Nettwerk 官網擋抓取；WebSearch 用 3 次。
 
 ## 研究 c 組
 - 20301：Mark McGuire《Living With Yourself》身分保留（Editions Mego eMEGO 107，2010；MB 08-17／Discogs 10-01 日期不同，寫作層只寫年）。moodGuess 存疑：策展「無鼓」但終曲〈Brothers (For Matt)〉約 10 分鐘有打擊樂、被稱最響最 punky；PopMatters 有「snowy electronic dissonance」一句冷字眼，整體仍是暖／懷舊。
