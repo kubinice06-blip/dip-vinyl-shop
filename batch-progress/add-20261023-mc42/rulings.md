@@ -20,3 +20,11 @@
 - 21402　moodGuess 存疑（交主線）：Nakatani《Abiogenesis》INDY Week 專訪明說是 37–40 吋巨鑼低頻、錄音者不適、『比部分金屬更具壓迫感』，與策展層『尖細高頻』相反，傾向判重；《Primal Communication》57 分鐘單軌，同樣可能判重或靜；Lê Quan Ninh 含頌缽、風鈴、大鼓共鳴，可能判靜；Hauser 七秒殘響與策展層『乾』相左，可能偏靜或偏飄；Cyrille《The Loop》可能有節奏動機或律動，偏暖風險；Corsano《Another Dull Dawn》Discogs 類別含 Electronic，聲音資料最薄。
 - 21403　Cyrille《The Loop》與 Corsano《Another Dull Dawn》標 thin：無可讀樂評（AllMusic、RYM、Discogs master 皆 403）；聲音 facts 僅 Discogs 記事與曲名。
 - 21404　Hot Cars Warp 為 Corsano 自營廠牌，依據 Discogs 藝人頁『Operated』標示（單一來源，已入 facts 並以 Discogs 為 src）；Dennis Tyfus 與 Ultra Eczema 關係未驗證，不入 facts。
+
+## 研究 b 組
+- 21411　8 張皆非現場（Discogs 記事與 Bandcamp／廠牌頁皆為錄音室或廳內逐位錄音）；Dialogues 只有 2020 重發版多一首現場曲 PWP Music，不在本盤。身分（盤名、廠牌）全數吻合。
+- 21412　推翻卡單年份：Eleven Ghosts 錄音 1994、Discogs 盤面與維基皆 1997 發行，MB 1996，建議卡片改 1997。Percussion Ensemble 錄音 1965、維基稱 1966 發行（單一來源），卡片可維持 1965。
+- 21413　moodGuess 存疑（強烈，建議汰換或待聽感覆核）：Eleven Ghosts（含 Leroy Carr 的 How Long Blues、Joplin 的 Maple Leaf Rag，AllMusic 稱起點是藍調／boogie／stride、比預期好聽，疑判暖）；Serpentine（13 首含 Too Close For Comfort、Young And Foolish、Cherokee 三首標準曲，Alap 11 分半被評內省，疑判暖或部分靜）；Dissonant Characters（Discogs 作曲欄列 Monk，Let's Cool One、Brilliant Corners 為 Monk 曲，卡單『無主題』與之衝突）。
+- 21414　moodGuess 存疑（中）：Percussion Ensemble（不規則拍號疊層、鈴與鑼，Graves 先例疑判暖，或稀疏段判靜）；Cedarhead（七首中電子／錄音帶兩首約 27 分鐘、nay 與 darbuka，大廳殘響，疑判重或靜）；Dialogues 與 Abanaba（大量鑼鈸殘響，疑判靜或重；Abanaba 無任何樂評，標 thin）。
+- 21415　Directly to Pyjamas 標 thin：找不到專輯樂評，聲音靠編制與兩人風格；長號／小提琴／Casio keyboard 與滑稽感疑偏輕鬆。Cedarhead 的 Raed Yassin 樂器，Discogs 寫雙低音提琴、廠牌 Bandcamp 寫錄音帶與電子，採廠牌版本。
+- 21416　WebSearch 3 次已用完；AllMusic、Discogs 網頁、MB 網頁 403，改走 Discogs API／MB API／Wikipedia／廠牌頁。
