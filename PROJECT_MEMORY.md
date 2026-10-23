@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 9 輪 ml42／ml45：lo-fi jazzhop 暖盤 26 張、rocksteady 歌手濕混音慢板盤＋lovers dub 17 張上線，落格 26/26、17/17
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 9 輪＋「恍惚可以多增加一點 downtempo 與 dub」，本工作階段負責 ml42、ml45（評分照 10-23 體感標準）。ml42（`add-20261023-ml42`，恍惚：lo-fi hip-hop／jazzhop 暖盤＋暖的 instrumental hip-hop）：Kupla ×2、sleepy fish、jinsang ×5、SwuM. & Jinsang、SwuM.、Wun Two ×4、Ohbliv ×4、mt. fujitive ×3、Purrple Cat ×2、Hoogway、less.people ×2。ml45（`add-20261023-ml45`，恍惚：rocksteady／early reggae 慢歌＋lovers 剩餘）：John Holt ×6（Junjo／Channel One 期）、Justin Hinds、Wailing Souls、Delroy Wilson ×2、Horace Andy《Showcase》、Alton Ellis《A New Day》、Cornell Campbell《Rock My Soul》、Horace Andy & Jah Wobble、Frightnrs《More To Say Versions》、Hollie Cook dub 版 ×2。
+- **策展→研究汰換**：ml42 策展 54（MB 全釘）、主線汰 9（y／z 貼邊）、研究汰 19（trap 化、乾淨輕盈、哀傷、EP 長度、Nohidea 身分不清）→ 26；研究稿幾乎全 thin，採「有反證才汰」。ml45 策展 25（池中 60 年代 rocksteady 與 lovers rock 全判輕，主場景見底）、研究汰 8（flying cymbals、樂評稱明亮、彙編、Cleopatra 企劃盤）→ 17。
+- **主線審稿**：ml42 改 2 處（SwuM.「開始」→「也」、Hoogway 單源城市刪）；ml45 逐張審過未改字。
+- **上線**：card_catalog 26＋17、KV 26＋17 鍵回讀逐字一致、試聽 25＋8 ready、seed +43、published gate 兩批 0 error；封面 CAA 33、Apple 1、Discogs 9（已登錄 registry 384 筆），live-check 全 200、目視相符。上線前對 origin 前 60 個 `claude/*` 分支 seed＋卡單去重 0 撞。
+- **情緒評分**：`score-ml42`、`score-ml45`。**ml42 落恍惚 26/26（100%）**、**ml45 落恍惚 17/17（100%）**。八格（併 main 後，含 main 的 edge-rejudge）：恍惚 1,368、頹靡 1,404、冷冽 1,384。
+- **類型樹**：43/43 落位；`genre-l3-artist-map.json` 補 hiphop instrumental 12 個掛名、reggae dub 1 個；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 12 個掛名列在兩批 rulings.md 末尾。ml42、ml45 不再派。
+- **主要檔案**：`batch-progress/add-20261023-{ml42,ml45}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml42,ml45}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml42,ml45}/`、`onboarding-manifest-add-20261023-{ml42,ml45}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml42,ml45}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 43/43；build-card-moods 錨點 104/104。
+
 ### 2026-10-23｜dip-vinyl-shop｜邊界卡重判：3,120 張卡門檻邊的卡，255 張換格
 
 - **改動**：店主「挑出來改」（起因 한영애《바라본다》放鬆→雀躍）。`batch-progress/mood-axes/edge-rejudge/` 選從沒改判過、兩軸以上卡門檻邊的 3,120 張，8 支代理逐張明確選邊，255 張換格寫進 `overrides.json`（why 標「2026-10-23 邊界卡重判」）。主要是冷翻暖（主流饒舌／硬咆勃／旋律流行）與輕翻重（大編制管弦、慢板靈魂包覆感）。
