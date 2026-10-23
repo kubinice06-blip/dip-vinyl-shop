@@ -15,3 +15,16 @@
   - 策展自標疑點：Dead Melodies《Primal Destination》、Ager Sonus《Book of the Black Earth》。
   - 色溫中性風險（太空 ambient、Basinski／Belong 中性先例）：Ionosphere《The Stellar Winds》《Nightscape》。
   - 勻量：Mount Shrine《Homeless Rooms》（同人留 3）、Maëror Tri《Hypnobasia》（1992 早期，聲音資料少）。
+
+## 研究 b 組
+- 21171：Ruptured World《Interplanetary》moodGuess 存疑——有口白朗讀，且第 1、4、7 首 ft. In Quantum，廠方文案自述「爆裂賽博龐克能量」，可能有節奏突起；僅有文案，無逐曲評論證實有鼓。status full。
+- 21172：Sphäre Sechs《Particle Void》moodGuess 存疑（色溫）——廠方自述「warm saturated atmosphere with cold spacey overtones」「warm cozy spacesuit」，可能中性偏暖；無鼓、器樂吻合。無獨立樂評。
+- 21173：Sphäre Sechs《Transient Lunar Phenomenon》moodGuess 存疑（色溫）——廠方「warm cocoon in cold space」；即興錄音室現場演奏、類比器材清單已入 facts。
+- 21174：Phonothek《Lost in Fog》moodGuess 存疑（強）——小號領奏旋律（Chain D.L.K.）、〈Clown is Dead〉結尾軍樂式鼓擊、廠方「warm sounds contrast the cold」；建議汰換或降候補。Nina 為妻子的說法僅 Discogs 簡介單一來源。
+- 21175：Phonothek《Red Moon》moodGuess 存疑（強）——小號／長號／中提琴／法國號領奏，Cities Last Broadcast 假音人聲客串；Keosz、Cities Last Broadcast 客串採 This Is Darkness 說法（Bandcamp 曲名未標 ft.）。
+- 21176：Phonothek《Styx》moodGuess 存疑——小號為聲音商標、冷爵士段落、片段低沉人聲；三張 Phonothek 若只留一張，優先 Styx（最冷）。
+- 21177：Keosz《Be Left to Oneself》moodGuess 存疑——Chain D.L.K. 寫旋律、小提琴線條、近管弦樂、「更接近現代古典」；From Corners Unknown 則偏 drone 與沮喪，兩評分歧。
+- 21178：Creation VI《Beringia》moodGuess 存疑（強）——廠方「Drums and flutes」「Voices」，Discogs 稱以原聲樂器與人聲為主音源，部落式 ambient；建議汰換。Side-Line 另文稱 Deus Sive Natura 為其 Cryo Chamber 首作，與 2019 年本作矛盾，疑該文有誤，未採用。
+- 21179：Sjellos《Lifeless Ground》moodGuess 存疑（輕）——MMM 提到〈Coma State〉有細微打擊式節奏、Side-Line 提到偶現近旋律段落；「像更華麗的 Lustmord」可能能量偏高。
+- 21180：Gdanian《Submersion》moodGuess 存疑——「retro basslines」「throbbing pads and hammering tones」顯示有低音律動／錘擊音色，無明確鼓組記載；弦樂為鋪底。
+- 通則：facts 不寫查證過程；各卡 notes 內寫明 moodGuess 存疑理由。年份、廠牌、盤名十張全數與卡單吻合，未推翻策展層。
