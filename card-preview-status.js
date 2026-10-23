@@ -3252,4 +3252,5 @@ window.DipPreviewStatus = Object.freeze({
   "the caretaker|deleted scenes - forgotten dreams": "unavailable",
   "leyland kirby|sadly, the future is no longer what it was": "unavailable",
   "mount vernon arts lab|the seance at hobs lane": "unavailable",
+  "mahalia jackson|great songs of love and faith": "unavailable",
 });
