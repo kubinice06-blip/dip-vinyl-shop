@@ -3292,4 +3292,7 @@ window.DipPreviewStatus = Object.freeze({
   "phil minton|a doughnut in one hand": "unavailable",
   "paul lytton|the inclined stick": "unavailable",
   "吉田アミ|tiger thrush": "unavailable",
+  "little tempo|ron riddim in dub": "unavailable",
+  "likkle mai|dub is the universe": "unavailable",
+  "horace andy & mad professor|from the roots": "unavailable",
 });

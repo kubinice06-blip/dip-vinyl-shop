@@ -82,3 +82,19 @@
 - **19308** 媒體名與榜單名次整句不寫：Hot Press、PopMatters、BBC、Erik Magni、Mark Harris 全未進正文，評價只留 note 指派的內容，以「在樂評筆下」「評論把它聽成」陳述；BBC「2011 年至今最好聽的 reggae 專輯之一」與 PopMatters 分數不寫。無「據說／據傳」。日本人名照原文（渡辺信一郎）。
 - **19309** 跨兩檔合掃中文 4-gram：我方 2 張殘片先當 3 張拆掉（`發行了這`、`由發行收`／`發行收首`、`樂評形容`、`樂評說它`、`的錄音室`）；定稿 3 張以上只剩 `日本樂團`（全在 writer-1 的 KEDACO／Ron Riddim／Music，本檔不涉）。
 - **19310** 腳本：`qa-batch out` 全過（out-2 166–239，thin ≤180）；`qa-check-research` 標記 0；`fix-spacing` 待補 0。只寫 note 項目：Part 2 未寫 Are We Mad 錄音室與班底；Hollie Cook 未寫 Mr Bongo、Dennis Bovell；Playlist 未寫 Geneon／黑膠重發。
+
+## 寫作層（writer-1）
+- **19301** 交件 `desc-tools/batches/output/add-20261023-ml41-out-1.json`（6 張）：KEDACO 199、Ron Riddim In Dub 176（thin）、Shimadelica 170（thin）、Dub Is the Universe 158（thin）、Union 215、Music 213；首句全照抄 hook，qa-batch／qa-check-research／fix-spacing 全過。
+- **19302** ⚠ 人名字形衝突：KEDACO 的 hook 寫「內田直之」（台灣字形），卡池既有掛名為日文字形「内田直之」（data/artist-intros 3 處）。寫作層無權改 hook，正文第二句起改以「那位團員」代稱、不再重寫名字；**請主線把 hook 與 desc 首句改成「内田直之」**（可逆）。其餘日本人名照原文：柏原譲、坂田学（note 的「坂田學」改回日文字形）、荒木ゆうこ、原田郁子、藪原正史、松田タダシ。
+- **19303** 日期句照鉤子層 19296：「日」後一字 由（KEDACO）／在（Ron Riddim）／交（Shimadelica）／推（Dub Is the Universe）／發（Union，寫「同年 8 月 3 日」）／問（Music）；日期前一字逐張不同（音／團／返／風／年／動）。
+- **19304** 媒體名與名次整句不寫；評價改被動（「被形容成」「被評為」），不用「樂評形容／樂評說它」（與 out-2 撞 4-gram）。Music 的「溜め」不寫假名，轉成「貝斯拖足了拍子」。note 未列的 facts（目錄號、System Vertigo、Scientist 曲名、ZAK 以外人員、Fishmans dub pop 定性）一律不寫。
+- **19305** 跨兩檔 4-gram 自掃：3 張以上 0 條；2 張只剩專名「大谷友介」。初掃拆掉 日本樂團×3、顫音琴與、發行了這、由發行收、樂評形容、樂評說它。
+
+## 主線審稿（19311–19320；2026-10-23）
+- 19311：逐張審 12 張（out-1 6、out-2 6），逐句對回研究稿 facts。
+- 19312：改 4 處：
+  - `LITTLE TEMPO|KEDACO IS BORN`：hook 與首句「內田直之」→「内田直之」（日本人名用原文字形，writer-1 19302 提請；hooks-a、writer-1 輸入同步改），第二句「那位團員在這張」→「他在這張」；末句「顫音琴 輪番」去掉多餘空格 → 195 字。
+  - `Polaris|Music`：末句「他的貝斯也拖足了拍子」研究稿無出處（facts 只有「被形容有 rocksteady 風格的低頻線條」）→「他的貝斯被形容帶著 rocksteady 式的低頻線條」→ 230 字。
+  - `Horace Andy|Midnight Rocker`：「唱〈Safe From Harm〉的是牙買加歌手 Horace Andy」會被讀成原唱是他（原曲主唱是 Shara Nelson）→「重唱〈Safe From Harm〉的是…」→ 236 字。
+- 19313：核過但未改——Mad Professor「13 歲移居倫敦」「電器維修技師」、From the Roots「1992、1994 年合作過兩張」、Hollie Cook「倫敦與曼谷錄音」、Shimadelica「沖繩錄、洛杉磯混」、Dub Is the Universe「第四張個人專輯」、Playlist「〈Fly〉為〈Baseball Blues〉那集所做」皆有研究稿出處。Union「輕飄飄地飛向宇宙」與 Dub Is the Universe「憤怒包在寬大的愛裡」是樂評對聲音／態度的描述，寫成「被評為／被形容」，不具名媒體，保留。
+- 19314：qa-batch out／hooks、qa-check-research（兩檔）、fix-spacing 皆 0 標記；正文無媒體名、無榜單名次、無「據」字。
