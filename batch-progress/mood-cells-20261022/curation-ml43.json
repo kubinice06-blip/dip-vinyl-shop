@@ -1,0 +1,1221 @@
+{
+ "group": "ml43",
+ "factions": [
+  {
+   "id": "ambient-postrock",
+   "zh": "暖 ambient post-rock（無鼓／少鼓的殘響吉他牆與厚墊）",
+   "count": 15,
+   "why": "主場景：Hammock、Eluvium 暖盤、Sigur Rós 周邊、Mountains、Hugar"
+  },
+  {
+   "id": "melodic-postrock",
+   "zh": "慢而厚的旋律型暖 post-rock（有鼓、緩升、不爆裂）",
+   "count": 19,
+   "why": "主場景：Caspian 慢盤、Yndi Halda、The American Dollar、Saxon Shore、Immanu El、Epic45、Rhian Sheehan、Lights & Motion"
+  },
+  {
+   "id": "postclassical-pad",
+   "zh": "暖 post-classical 弦樂＋合成器厚墊（擴寫場景 2，留給 ml46 的別碰太多）",
+   "count": 6,
+   "why": "擴寫場景 2，上限 10，只取最貼近 ambient post-rock 的 6 張"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Hammock",
+   "album": "Universalis",
+   "year": 2018,
+   "label": "Hammock Music",
+   "country": "us",
+   "faction": "ambient-postrock",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Hammock 中後期最明亮的一張：殘響吉他牆＋弦樂墊鋪成大調讚歌，正是暖 ambient post-rock 的本家聲音；無鼓慢漂、厚霧包覆、旋律清楚而溫",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "無鼓慢漂，殘響吉他牆＋弦樂墊，大調明亮"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/052afb59-087d-43e8-892a-c6f32ec0e301",
+    "https://coverartarchive.org/release-group/052afb59-087d-43e8-892a-c6f32ec0e301/front",
+    "https://music.apple.com/us/album/universalis/1577257612"
+   ],
+   "mbRgMbid": "052afb59-087d-43e8-892a-c6f32ec0e301",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Hammock 池中三張 z 0–0.4，色溫可能被評貼邊；這張是該團最 hopeful 的一張"
+  },
+  {
+   "artist": "Hammock",
+   "album": "Elsewhere",
+   "year": 2021,
+   "label": "Hammock Music",
+   "country": "us",
+   "faction": "ambient-postrock",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Hammock 2021 年的全長：比早期更多歌唱與旋律線，吉他與合成器殘響厚牆包住輕柔人聲，暖 post-rock 的成熟期代表",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "慢、少鼓，厚殘響吉他＋合成器墊，輕柔人聲旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3e715932-085e-45d5-8ba7-9c8da5860f35",
+    "https://coverartarchive.org/release-group/3e715932-085e-45d5-8ba7-9c8da5860f35/front",
+    "https://music.apple.com/us/album/elsewhere/1582873795"
+   ],
+   "mbRgMbid": "3e715932-085e-45d5-8ba7-9c8da5860f35",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Hammock 色溫池中偏貼邊（0–0.4）"
+  },
+  {
+   "artist": "Eluvium",
+   "album": "Copia",
+   "year": 2007,
+   "label": "Temporary Residence Limited",
+   "country": "us",
+   "faction": "ambient-postrock",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "Eluvium 公認的代表作：管風琴、銅管與弦樂迴圈層層疊成溫熱的聖詠式長音，和《Similes》的乾淨鋼琴不同，是厚墊包覆的暖 ambient",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "無鼓，銅管弦樂迴圈疊成厚墊，大調聖詠感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/971992fe-8405-3c92-9422-4249bc343f0c",
+    "https://coverartarchive.org/release-group/971992fe-8405-3c92-9422-4249bc343f0c/front",
+    "https://music.apple.com/us/album/copia/319144519"
+   ],
+   "mbRgMbid": "971992fe-8405-3c92-9422-4249bc343f0c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同藝人《Similes》池中判輕（y −0.6），但那張是鋼琴＋人聲；本張是厚管弦迴圈牆，主線可斟酌"
+  },
+  {
+   "artist": "Eluvium",
+   "album": "Talk Amongst the Trees",
+   "year": 2005,
+   "label": "Temporary Residence Limited",
+   "country": "us",
+   "faction": "ambient-postrock",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Eluvium 吉他長音時期的代表：處理過的吉他化成一整片暖光霧，長曲緩慢膨脹，是 ambient post-rock 吉他牆一路的經典",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.4,
+    "z": 0.4,
+    "why": "無鼓，吉他長音化成厚霧，緩慢膨脹、溫光"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/aaca290b-0d6c-3ed7-9743-106b17bb0621",
+    "https://coverartarchive.org/release-group/aaca290b-0d6c-3ed7-9743-106b17bb0621/front",
+    "https://music.apple.com/us/album/talk-amongst-the-trees/319355240"
+   ],
+   "mbRgMbid": "aaca290b-0d6c-3ed7-9743-106b17bb0621",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同藝人池中《Similes》判輕；本張是吉他 drone 牆，y 應高，z 估 0.4 略近邊"
+  },
+  {
+   "artist": "Eluvium",
+   "album": "(Whirring Marvels In) Consensus Reality",
+   "year": 2023,
+   "label": "Temporary Residence Limited",
+   "country": "us",
+   "faction": "ambient-postrock",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "Eluvium 十年磨成的管弦大作：管弦樂團、合唱與電子處理交織成厚實溫熱的長音敘事，旋律開闊，延續《Copia》的暖墊路線",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "無鼓，管弦＋合唱厚墊，旋律開闊溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5b8c8414-383d-4f1c-9ab2-a2a7e4a99918",
+    "https://coverartarchive.org/release-group/5b8c8414-383d-4f1c-9ab2-a2a7e4a99918/front",
+    "https://music.apple.com/us/album/whirring-marvels-in-consensus-reality/1651021397"
+   ],
+   "mbRgMbid": "5b8c8414-383d-4f1c-9ab2-a2a7e4a99918",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同藝人池中《Similes》判輕；本張管弦厚"
+  },
+  {
+   "artist": "Jónsi & Alex",
+   "album": "Lost and Found",
+   "year": 2019,
+   "label": "Krúnk",
+   "country": "is",
+   "faction": "ambient-postrock",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "《Riceboy Sleeps》同期素材整理成的正規專輯：弦樂、玩具樂器與磁帶飽和的長音墊，Sigur Rós 周邊最溫柔的那一路",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "無鼓，弦樂＋磁帶長音墊，柔暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2505dfd4-7d90-4151-8210-3a8e2c4eed3c",
+    "https://coverartarchive.org/release-group/2505dfd4-7d90-4151-8210-3a8e2c4eed3c/front",
+    "https://music.apple.com/us/album/lost-and-found/1481623402"
+   ],
+   "mbRgMbid": "2505dfd4-7d90-4151-8210-3a8e2c4eed3c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 6 首；姊妹作《Riceboy Sleeps》池中 y 0.8 落恍惚，本張 y 可能也只 0.8 左右"
+  },
+  {
+   "artist": "Sigur Rós",
+   "album": "ÁTTA",
+   "year": 2023,
+   "label": "BMG",
+   "country": "is",
+   "faction": "ambient-postrock",
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "why": "Sigur Rós 十年後的回歸：倫敦管弦樂團厚弦樂包住 Jónsi 假音，幾乎無鼓、慢而厚，是樂團最溫柔的一張",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.3,
+    "z": 0.4,
+    "why": "幾乎無鼓，厚弦樂墊包住假音，慢而溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7a6e4394-1bbe-434c-a8e0-679d5d58e649",
+    "https://coverartarchive.org/release-group/7a6e4394-1bbe-434c-a8e0-679d5d58e649/front",
+    "https://music.apple.com/us/album/%C3%A1tta-deluxe-video-edition/1715937646"
+   ],
+   "mbRgMbid": "7a6e4394-1bbe-434c-a8e0-679d5d58e649",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同團《( )》《Von》判冷；ÁTTA 情緒偏感傷，z 可能評在 0.2–0.5"
+  },
+  {
+   "artist": "Alex Somers",
+   "album": "Siblings",
+   "year": 2021,
+   "label": "Krúnk",
+   "country": "is",
+   "faction": "ambient-postrock",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Sigur Rós 長期製作人 Alex Somers 的個人全長：磁帶飽和的弦樂、鋼琴與合成器長音，延續 Riceboy 的暖霧美學",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "無鼓，磁帶糊的弦樂合成器長音，柔暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/25282e67-6bd6-4f21-bbd6-d7f2e4294f09",
+    "https://coverartarchive.org/release-group/25282e67-6bd6-4f21-bbd6-d7f2e4294f09/front",
+    "https://music.apple.com/us/album/siblings/1552046089"
+   ],
+   "mbRgMbid": "25282e67-6bd6-4f21-bbd6-d7f2e4294f09",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "與 Siblings 2 同日發行；鋼琴段落若多，y 可能被評偏輕"
+  },
+  {
+   "artist": "Mountains",
+   "album": "Choral",
+   "year": 2009,
+   "label": "Thrill Jockey",
+   "country": "us",
+   "faction": "ambient-postrock",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "布魯克林雙人組 Mountains 的代表作：原聲吉他、手風琴與電子長音慢慢膨脹成溫暖的音牆，ambient post-rock 的田園暖色一路",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "無鼓，吉他手風琴長音膨脹成暖牆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5dc720ce-c82f-334b-b4df-f30b171fbe5d",
+    "https://coverartarchive.org/release-group/5dc720ce-c82f-334b-b4df-f30b171fbe5d/front",
+    "https://music.apple.com/us/album/choral/304477137"
+   ],
+   "mbRgMbid": "5dc720ce-c82f-334b-b4df-f30b171fbe5d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "器樂 drone 色溫預設偏 0，z 估 0.4 略近邊"
+  },
+  {
+   "artist": "Mountains",
+   "album": "Centralia",
+   "year": 2013,
+   "label": "Thrill Jockey",
+   "country": "us",
+   "faction": "ambient-postrock",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Mountains 的晚期大作：長曲中吉他、合成器與大提琴層層累加成厚實暖霧，比《Choral》更厚",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.3,
+    "z": 0.3,
+    "why": "無鼓，吉他合成器大提琴層層累成厚霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/029b2f3b-df54-4439-9f37-3334235e4d40",
+    "https://coverartarchive.org/release-group/029b2f3b-df54-4439-9f37-3334235e4d40/front",
+    "https://music.apple.com/us/album/centralia/591533441"
+   ],
+   "mbRgMbid": "029b2f3b-df54-4439-9f37-3334235e4d40",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能偏中性（0–0.3），貼邊風險；主線可汰"
+  },
+  {
+   "artist": "Lowercase Noises",
+   "album": "This Is for Our Sins",
+   "year": 2014,
+   "label": "Lowercase Noises",
+   "country": "us",
+   "faction": "ambient-postrock",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Andy Othling 的 Lowercase Noises 代表作：殘響吉他長音、小號與慢鼓鋪成溫柔的 ambient post-rock，旋律清楚溫暖",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "慢、少鼓，殘響吉他＋小號長音，溫柔旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8da715d8-447a-42a4-a618-1807005f0764",
+    "https://coverartarchive.org/release-group/8da715d8-447a-42a4-a618-1807005f0764/front",
+    "https://music.apple.com/us/album/this-is-for-our-sins/871698781"
+   ],
+   "mbRgMbid": "8da715d8-447a-42a4-a618-1807005f0764",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Christopher Willits",
+   "album": "Surf Boundaries",
+   "year": 2006,
+   "label": "Ghostly International",
+   "country": "us",
+   "faction": "ambient-postrock",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Willits 在 Ghostly 的突破作：切片處理的吉他化成陽光般的暖光牆，有輕拍但整體慢漂，是暖色 ambient 吉他的代表",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.0,
+    "z": 0.8,
+    "why": "輕拍慢漂，吉他切片化成陽光暖牆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/07b31c1b-4006-333f-b125-6aadae1c6467",
+    "https://coverartarchive.org/release-group/07b31c1b-4006-333f-b125-6aadae1c6467/front",
+    "https://music.apple.com/us/album/surf-boundaries/682566158"
+   ],
+   "mbRgMbid": "07b31c1b-4006-333f-b125-6aadae1c6467",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏 glitch／ambient pop 而非傳統 post-rock，屬主場景外緣"
+  },
+  {
+   "artist": "Christopher Willits",
+   "album": "Horizon",
+   "year": 2017,
+   "label": "Ghostly International",
+   "country": "us",
+   "faction": "ambient-postrock",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Willits 的長曲冥想之作：吉他與合成器長音緩慢展開成溫暖厚墊，延續《Surf Boundaries》的暖光聲響",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.0,
+    "z": 0.6,
+    "why": "無鼓，吉他合成器長音厚墊，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b57eaa4d-6bbf-4366-b224-b81911479556",
+    "https://coverartarchive.org/release-group/b57eaa4d-6bbf-4366-b224-b81911479556/front",
+    "https://music.apple.com/us/album/horizon/1221452117"
+   ],
+   "mbRgMbid": "b57eaa4d-6bbf-4366-b224-b81911479556",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏 ambient 而非 post-rock"
+  },
+  {
+   "artist": "Hugar",
+   "album": "Hugar",
+   "year": 2014,
+   "label": "Hugar",
+   "country": "is",
+   "faction": "ambient-postrock",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "冰島雙人組 Hugar 自發行首作：鋼琴、銅管、弦樂與合成器殘響堆成 Sigur Rós／Hammock 式的暖霧，冰島暖 ambient 新一代",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "無鼓，銅管弦樂＋合成器殘響墊，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/747f0c2b-ad1a-47bf-911d-7fab3104a686",
+    "https://coverartarchive.org/release-group/747f0c2b-ad1a-47bf-911d-7fab3104a686/front",
+    "https://music.apple.com/us/album/hugar/912844859"
+   ],
+   "mbRgMbid": "747f0c2b-ad1a-47bf-911d-7fab3104a686",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "鋼琴段落若多 y 可能偏輕；自發行，主線看封面"
+  },
+  {
+   "artist": "Hugar",
+   "album": "Varða",
+   "year": 2019,
+   "label": "Masterworks",
+   "country": "is",
+   "faction": "ambient-postrock",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "Hugar 在 Sony Masterworks 的第二張：弦樂四重奏、銅管與合成器把聲音推得更厚，樂評直指最像 Hammock 的暖管弦 ambient",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "無鼓，弦樂銅管合成器厚墊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f8375aad-5ed3-4e10-b53d-cc5f04566e14",
+    "https://coverartarchive.org/release-group/f8375aad-5ed3-4e10-b53d-cc5f04566e14/front",
+    "https://music.apple.com/us/album/var%C3%B0a/1469866464"
+   ],
+   "mbRgMbid": "f8375aad-5ed3-4e10-b53d-cc5f04566e14",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yndi Halda",
+   "album": "Under Summer",
+   "year": 2016,
+   "label": "Burnt Toast Vinyl",
+   "country": "gb",
+   "faction": "melodic-postrock",
+   "genres": [
+    "rock"
+   ],
+   "why": "英國 Yndi Halda 苦等九年的正規首張：小提琴、班鳩琴與合唱在長曲中緩慢升溫，是暖 post-rock 最夏日、最 hopeful 的一張",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.7,
+    "why": "慢長曲緩升，小提琴吉他厚牆，大調溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/911f9075-f32a-44dd-9cc7-52f226b001fc",
+    "https://coverartarchive.org/release-group/911f9075-f32a-44dd-9cc7-52f226b001fc/front",
+    "https://music.apple.com/us/album/under-summer/1073688882"
+   ],
+   "mbRgMbid": "911f9075-f32a-44dd-9cc7-52f226b001fc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "4 首長曲（約 50 分鐘）；有漸強段，x 可能 2.5"
+  },
+  {
+   "artist": "Caspian",
+   "album": "Waking Season",
+   "year": 2012,
+   "label": "Triple Crown Records",
+   "country": "us",
+   "faction": "melodic-postrock",
+   "genres": [
+    "rock"
+   ],
+   "why": "Caspian 最慢、最氛圍化的一張：長殘響吉他層與合成器墊取代爆裂推進，溫暖而厚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.5,
+    "z": 0.4,
+    "why": "中慢、鼓不猛，殘響吉他層＋合成器墊，偏暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6d1618ff-4b04-4cb8-8578-ac1b28e46112",
+    "https://coverartarchive.org/release-group/6d1618ff-4b04-4cb8-8578-ac1b28e46112/front",
+    "https://music.apple.com/us/album/waking-season/1278422113"
+   ],
+   "mbRgMbid": "6d1618ff-4b04-4cb8-8578-ac1b28e46112",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Caspian 整體偏漸強；本張是最慢的，但 z 可能被評中性、x 可能近 2.8"
+  },
+  {
+   "artist": "The American Dollar",
+   "album": "The Technicolour Sleep",
+   "year": 2007,
+   "label": "The American Dollar",
+   "country": "us",
+   "faction": "melodic-postrock",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "紐約雙人組的突破作：穩定慢鼓上鋪滿殘響吉他與合成器墊，旋律明亮溫暖，是氛圍系 post-rock 的入門代表",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "中慢穩鼓，殘響吉他＋合成器厚墊，明亮旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/57fa4dee-fb9e-32ec-a71a-d53b9529c0b2",
+    "https://coverartarchive.org/release-group/57fa4dee-fb9e-32ec-a71a-d53b9529c0b2/front",
+    "https://music.apple.com/us/album/the-technicolour-sleep/251768674"
+   ],
+   "mbRgMbid": "57fa4dee-fb9e-32ec-a71a-d53b9529c0b2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 可能被評 2.6–2.8"
+  },
+  {
+   "artist": "The American Dollar",
+   "album": "A Memory Stream",
+   "year": 2008,
+   "label": "Yesh Music",
+   "country": "us",
+   "faction": "melodic-postrock",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "The American Dollar 的第三張：更厚的合成器墊與層疊吉他，柔和推進、懷舊暖光",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "中慢穩鼓，厚合成器墊＋層疊吉他，懷舊暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/544e2041-7dc6-34c2-9f5e-caa35080a70e",
+    "https://coverartarchive.org/release-group/544e2041-7dc6-34c2-9f5e-caa35080a70e/front",
+    "https://music.apple.com/us/album/a-memory-stream/279279307"
+   ],
+   "mbRgMbid": "544e2041-7dc6-34c2-9f5e-caa35080a70e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 可能被評 2.6–2.8"
+  },
+  {
+   "artist": "The American Dollar",
+   "album": "Atlas",
+   "year": 2010,
+   "label": "Yesh Music",
+   "country": "us",
+   "faction": "melodic-postrock",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "The American Dollar 規模最大的一張：14 首長氛圍曲，合成器與殘響吉他牆更厚，旋律清楚溫柔",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "中慢鼓，合成器殘響吉他厚牆，溫柔旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8dbddb80-79e4-4266-940d-0618e9c74d9d",
+    "https://coverartarchive.org/release-group/8dbddb80-79e4-4266-940d-0618e9c74d9d/front",
+    "https://music.apple.com/us/album/atlas/343115941"
+   ],
+   "mbRgMbid": "8dbddb80-79e4-4266-940d-0618e9c74d9d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Saxon Shore",
+   "album": "The Exquisite Death of Saxon Shore",
+   "year": 2005,
+   "label": "Burnt Toast Vinyl",
+   "country": "us",
+   "faction": "melodic-postrock",
+   "genres": [
+    "rock"
+   ],
+   "why": "Dave Fridmann 製作的代表作：鐵琴、電子與厚吉他層溫柔推進，Fridmann 的暖飽和混音讓整張像被裹在光裡",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.3,
+    "z": 0.5,
+    "why": "中慢、鼓不兇，鐵琴電子＋飽和吉他層，溫光"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7ee36f4d-7212-3750-8668-9d94e0584f89",
+    "https://coverartarchive.org/release-group/7ee36f4d-7212-3750-8668-9d94e0584f89/front",
+    "https://music.apple.com/us/album/the-exquisite-death-of-saxon-shore/1459427104"
+   ],
+   "mbRgMbid": "7ee36f4d-7212-3750-8668-9d94e0584f89",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有漸強段，x 可能 2.6–2.8"
+  },
+  {
+   "artist": "Saxon Shore",
+   "album": "It Doesn’t Matter",
+   "year": 2009,
+   "label": "Broken Factory",
+   "country": "us",
+   "faction": "melodic-postrock",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Saxon Shore 的第四張：電子節拍與合成器墊加重，長殘響吉他依舊溫柔，旋律清楚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.0,
+    "z": 0.4,
+    "why": "中慢電子拍，合成器墊＋殘響吉他，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/044f8b67-a9ad-35cd-a80d-ed935b3bb440",
+    "https://coverartarchive.org/release-group/044f8b67-a9ad-35cd-a80d-ed935b3bb440/front",
+    "https://music.apple.com/us/album/it-doesnt-matter/312611121"
+   ],
+   "mbRgMbid": "044f8b67-a9ad-35cd-a80d-ed935b3bb440",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 估 0.4，可能偏中性"
+  },
+  {
+   "artist": "Immanu El",
+   "album": "They’ll Come, They Come",
+   "year": 2007,
+   "label": "And the Sound",
+   "country": "se",
+   "faction": "melodic-postrock",
+   "genres": [
+    "rock"
+   ],
+   "why": "瑞典 Immanu El 首張：迴響吉他牆、鐘琴與遙遠的輕柔人聲，慢而空靈的暖 post-rock",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "慢、輕鼓，迴響吉他牆＋鐘琴，遙遠柔聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4ab7436f-da47-3200-a053-899ab4ac6075",
+    "https://coverartarchive.org/release-group/4ab7436f-da47-3200-a053-899ab4ac6075/front",
+    "https://music.apple.com/us/album/theyll-come-they-come/1454846406"
+   ],
+   "mbRgMbid": "4ab7436f-da47-3200-a053-899ab4ac6075",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有人聲但非 shoegaze；z 可能偏中性"
+  },
+  {
+   "artist": "Immanu El",
+   "album": "Moen",
+   "year": 2009,
+   "label": "Thomason Sounds",
+   "country": "se",
+   "faction": "melodic-postrock",
+   "genres": [
+    "rock"
+   ],
+   "why": "Immanu El 第二張：弦樂與管樂加入，殘響吉他層更厚、氣氛更溫暖",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "慢、輕鼓，弦管加入的殘響吉他厚層"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/70fb322f-80c4-4038-9fd4-dc73a1004ffb",
+    "https://coverartarchive.org/release-group/70fb322f-80c4-4038-9fd4-dc73a1004ffb/front"
+   ],
+   "mbRgMbid": "70fb322f-80c4-4038-9fd4-dc73a1004ffb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "iTunes 查無，封面以 CAA 為準"
+  },
+  {
+   "artist": "Immanu El",
+   "album": "In Passage",
+   "year": 2011,
+   "label": "And the Sound",
+   "country": "se",
+   "faction": "melodic-postrock",
+   "genres": [
+    "rock"
+   ],
+   "why": "Immanu El 第三張：製作更飽滿，殘響吉他與鋼琴、合成器墊交織，旋律開闊溫柔",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "中慢，殘響吉他＋鋼琴合成器墊，開闊溫柔"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/74e3f41d-d113-40df-a2b7-91c7f01abb48",
+    "https://coverartarchive.org/release-group/74e3f41d-d113-40df-a2b7-91c7f01abb48/front",
+    "https://music.apple.com/us/album/in-passage/1454844058"
+   ],
+   "mbRgMbid": "74e3f41d-d113-40df-a2b7-91c7f01abb48",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Epic45",
+   "album": "May Your Heart Be the Map",
+   "year": 2007,
+   "label": "Make Mine Music",
+   "country": "gb",
+   "faction": "melodic-postrock",
+   "genres": [
+    "rock"
+   ],
+   "why": "英國 Epic45 的代表作：英格蘭田園 post-rock，類比糊的吉他層、磁帶霧與輕柔人聲，懷舊而溫暖",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.0,
+    "z": 0.5,
+    "why": "慢、輕鼓，類比糊吉他層＋磁帶霧，懷舊暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6bdaebdf-4cb4-3ffa-bb08-500d0145d382",
+    "https://coverartarchive.org/release-group/6bdaebdf-4cb4-3ffa-bb08-500d0145d382/front",
+    "https://music.apple.com/us/album/may-your-heart-be-the-map/368029682"
+   ],
+   "mbRgMbid": "6bdaebdf-4cb4-3ffa-bb08-500d0145d382",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有人聲但非 shoegaze；懷舊憂傷感可能拉低 z"
+  },
+  {
+   "artist": "Epic45",
+   "album": "Through Broken Summer",
+   "year": 2018,
+   "label": "Wayside and Woodland Recordings",
+   "country": "gb",
+   "faction": "melodic-postrock",
+   "genres": [
+    "rock"
+   ],
+   "why": "Epic45 的回歸作：夏日記憶為題，殘響吉他、合成器墊與輕柔人聲包出溫暖的田園霧",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.0,
+    "z": 0.6,
+    "why": "慢、輕鼓，殘響吉他＋合成器墊，夏日暖霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/97ee7e84-210a-4308-8681-45e0a1f8aac7",
+    "https://coverartarchive.org/release-group/97ee7e84-210a-4308-8681-45e0a1f8aac7/front",
+    "https://music.apple.com/us/album/through-broken-summer/1436221323"
+   ],
+   "mbRgMbid": "97ee7e84-210a-4308-8681-45e0a1f8aac7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Rhian Sheehan",
+   "album": "Standing in Silence",
+   "year": 2008,
+   "label": "LOOP Recordings Aot(ear)oa",
+   "country": "nz",
+   "faction": "melodic-postrock",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "紐西蘭 Rhian Sheehan 的代表作：音樂盒、弦樂與殘響吉他在慢拍上鋪成電影般的暖色 ambient post-rock",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.0,
+    "z": 0.7,
+    "why": "慢拍，弦樂殘響吉他厚墊＋音樂盒，溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e37cd355-1e50-4ce1-9b18-2f6ce6c73f4a",
+    "https://coverartarchive.org/release-group/e37cd355-1e50-4ce1-9b18-2f6ce6c73f4a/front",
+    "https://music.apple.com/us/album/standing-in-silence/1644011664"
+   ],
+   "mbRgMbid": "e37cd355-1e50-4ce1-9b18-2f6ce6c73f4a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "音樂盒段落多時 y 可能偏輕"
+  },
+  {
+   "artist": "Rhian Sheehan",
+   "album": "Stories From Elsewhere",
+   "year": 2013,
+   "label": "LOOP Recordings Aot(ear)oa",
+   "country": "nz",
+   "faction": "melodic-postrock",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Rhian Sheehan 的第二張大型作品：管弦、合成器墊與殘響吉他構成溫柔的電影感長篇，旋律清楚",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.1,
+    "z": 0.7,
+    "why": "慢拍，管弦＋合成器墊厚，旋律溫柔"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/43c2f52b-2acc-4da8-a811-c1ce829602d2",
+    "https://coverartarchive.org/release-group/43c2f52b-2acc-4da8-a811-c1ce829602d2/front",
+    "https://music.apple.com/us/album/stories-from-elsewhere/1644006857"
+   ],
+   "mbRgMbid": "43c2f52b-2acc-4da8-a811-c1ce829602d2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Rhian Sheehan",
+   "album": "A Quiet Divide",
+   "year": 2018,
+   "label": "LOOP Recordings Aot(ear)oa",
+   "country": "nz",
+   "faction": "melodic-postrock",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Rhian Sheehan 較 ambient 的一張：長音合成器墊與弦樂主導，鼓更少，溫柔包覆",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.0,
+    "z": 0.6,
+    "why": "少鼓，長音合成器墊＋弦樂，溫柔包覆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/65f59456-e15d-4c5a-b733-eb342d2e06c4",
+    "https://coverartarchive.org/release-group/65f59456-e15d-4c5a-b733-eb342d2e06c4/front",
+    "https://music.apple.com/us/album/a-quiet-divide/1644011898"
+   ],
+   "mbRgMbid": "65f59456-e15d-4c5a-b733-eb342d2e06c4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lights & Motion",
+   "album": "Reanimation",
+   "year": 2013,
+   "label": "Deep Elm Records",
+   "country": "se",
+   "faction": "melodic-postrock",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "瑞典 Christoffer Franzén 的首張：合成器墊、鐘琴與殘響吉他慢慢堆疊，電影感的 hopeful 暖 post-rock",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": 0.7,
+    "why": "中慢，合成器墊＋殘響吉他慢堆，hopeful"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/69ae887c-670e-466d-b98c-62650a5bc48b",
+    "https://coverartarchive.org/release-group/69ae887c-670e-466d-b98c-62650a5bc48b/front",
+    "https://music.apple.com/us/album/reanimation/585750047"
+   ],
+   "mbRgMbid": "69ae887c-670e-466d-b98c-62650a5bc48b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有漸強段，x 可能 2.6–2.8"
+  },
+  {
+   "artist": "Lights & Motion",
+   "album": "Chronicle",
+   "year": 2015,
+   "label": "Deep Elm Records",
+   "country": "se",
+   "faction": "melodic-postrock",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Lights & Motion 第三張：更厚的弦樂與合成器包覆，曲式以緩升為主，明亮溫暖",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.3,
+    "z": 0.7,
+    "why": "中慢緩升，弦樂合成器厚包覆，明亮"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fbbb7b51-695f-43d7-907c-4364cfd457d6",
+    "https://coverartarchive.org/release-group/fbbb7b51-695f-43d7-907c-4364cfd457d6/front",
+    "https://music.apple.com/us/album/chronicle/935454503"
+   ],
+   "mbRgMbid": "fbbb7b51-695f-43d7-907c-4364cfd457d6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "漸強段落多，x 貼近 2.7 的風險較高"
+  },
+  {
+   "artist": "Lights & Motion",
+   "album": "The Great Wide Open",
+   "year": 2020,
+   "label": "Deep Elm Records",
+   "country": "se",
+   "faction": "melodic-postrock",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Lights & Motion 較 ambient 的一張：長音弦樂與合成器墊為主、鼓退後，溫柔開闊",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": 0.7,
+    "why": "少鼓，長音弦樂合成器墊，開闊溫柔"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4181519e-8e06-4618-b724-8443dca7c696",
+    "https://coverartarchive.org/release-group/4181519e-8e06-4618-b724-8443dca7c696/front",
+    "https://music.apple.com/us/album/the-great-wide-open/1501377274"
+   ],
+   "mbRgMbid": "4181519e-8e06-4618-b724-8443dca7c696",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ef",
+   "album": "Mourning Golden Morning",
+   "year": 2010,
+   "label": "And the Sound Records",
+   "country": "se",
+   "faction": "melodic-postrock",
+   "genres": [
+    "rock"
+   ],
+   "why": "瑞典 Ef 的代表作：銅管、合唱與殘響吉他牆長曲緩升，帶金色晨光感的暖 post-rock",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.4,
+    "z": 0.4,
+    "why": "中慢長曲緩升，銅管合唱＋吉他牆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6319240a-d2ed-485c-8f08-d441d9d6fdc7",
+    "https://coverartarchive.org/release-group/6319240a-d2ed-485c-8f08-d441d9d6fdc7/front",
+    "https://music.apple.com/us/album/mourning-golden-morning-bonus-track-version/361381838"
+   ],
+   "mbRgMbid": "6319240a-d2ed-485c-8f08-d441d9d6fdc7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有漸強爆發段，x 可能 2.7–2.9；主線可汰"
+  },
+  {
+   "artist": "Slow Meadow",
+   "album": "Slow Meadow",
+   "year": 2015,
+   "label": "Hammock Music",
+   "country": "us",
+   "faction": "postclassical-pad",
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "why": "Hammock Music 旗下 Matt Kidd 的首張：弦樂、鋼琴與吉他殘響墊交織，是最貼近 Hammock 的 post-classical 暖墊",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "無鼓，弦樂吉他殘響墊＋鋼琴，柔暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a57d4121-9f19-4f2d-818d-12a8b7adb5e7",
+    "https://coverartarchive.org/release-group/a57d4121-9f19-4f2d-818d-12a8b7adb5e7/front",
+    "https://music.apple.com/us/album/slow-meadow-deluxe-edition/1577250382"
+   ],
+   "mbRgMbid": "a57d4121-9f19-4f2d-818d-12a8b7adb5e7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ml46 場景；鋼琴若被聽成主體 y 會偏輕"
+  },
+  {
+   "artist": "Slow Meadow",
+   "album": "Costero",
+   "year": 2017,
+   "label": "Hammock Music",
+   "country": "us",
+   "faction": "postclassical-pad",
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "why": "Slow Meadow 第二張：海岸為題，弦樂四重奏與合成器長音墊更厚，溫柔包覆",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.0,
+    "z": 0.6,
+    "why": "無鼓，弦樂四重奏＋合成器長音墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3f53787d-991e-455b-a5b7-92873bb97a7a",
+    "https://coverartarchive.org/release-group/3f53787d-991e-455b-a5b7-92873bb97a7a/front",
+    "https://music.apple.com/us/album/costero/1577248768"
+   ],
+   "mbRgMbid": "3f53787d-991e-455b-a5b7-92873bb97a7a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ml46 場景"
+  },
+  {
+   "artist": "Slow Meadow",
+   "album": "Happy Occident",
+   "year": 2019,
+   "label": "Hammock Music",
+   "country": "us",
+   "faction": "postclassical-pad",
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "why": "Slow Meadow 第三張：殘響吉他、弦樂與合成器墊更接近 ambient post-rock，溫暖慢漂",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.0,
+    "z": 0.6,
+    "why": "無鼓，殘響吉他弦樂合成器墊，慢漂"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/928c2d99-8a76-491d-b05f-f28fd9badf4f",
+    "https://coverartarchive.org/release-group/928c2d99-8a76-491d-b05f-f28fd9badf4f/front",
+    "https://music.apple.com/us/album/happy-occident/1577242038"
+   ],
+   "mbRgMbid": "928c2d99-8a76-491d-b05f-f28fd9badf4f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ml46 場景"
+  },
+  {
+   "artist": "Ben Lukas Boysen",
+   "album": "Spells",
+   "year": 2016,
+   "label": "Erased Tapes Records",
+   "country": "de",
+   "faction": "postclassical-pad",
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "why": "Erased Tapes 的 Boysen 代表作：鋼琴、弦樂與厚合成器墊互相纏繞，殘響深、溫暖而開闊",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.0,
+    "z": 0.5,
+    "why": "慢拍少鼓，鋼琴弦樂＋厚合成器墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/404e8a3b-14b9-400b-b83c-00f2141197c6",
+    "https://coverartarchive.org/release-group/404e8a3b-14b9-400b-b83c-00f2141197c6/front",
+    "https://music.apple.com/us/album/spells-special-edition/1451159130"
+   ],
+   "mbRgMbid": "404e8a3b-14b9-400b-b83c-00f2141197c6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ml46 場景；鋼琴比重高"
+  },
+  {
+   "artist": "Ben Lukas Boysen",
+   "album": "Gravity",
+   "year": 2013,
+   "label": "Erased Tapes Records",
+   "country": "de",
+   "faction": "postclassical-pad",
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "why": "Boysen 首張：電子處理的鋼琴與弦樂被長音合成器包住，暖色 post-classical 與 ambient 的交界",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.0,
+    "z": 0.4,
+    "why": "無鼓，處理鋼琴弦樂＋長音合成器墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1bbb31ad-84df-497c-a745-3fd640772883",
+    "https://coverartarchive.org/release-group/1bbb31ad-84df-497c-a745-3fd640772883/front",
+    "https://music.apple.com/us/album/gravity-special-edition/1451167699"
+   ],
+   "mbRgMbid": "1bbb31ad-84df-497c-a745-3fd640772883",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ml46 場景；z 估 0.4 略近邊"
+  },
+  {
+   "artist": "Olan Mill",
+   "album": "Paths",
+   "year": 2012,
+   "label": "Facture",
+   "country": "gb",
+   "faction": "postclassical-pad",
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "why": "英國 Alex Smalley 的 Olan Mill：弦樂與吉他長音在磁帶溫度裡緩慢交疊，暖色 drone 與 post-classical 之間",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "無鼓，弦樂吉他長音磁帶暖霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/39c86f2e-34d4-4ae3-b714-81dc426eca6b",
+    "https://coverartarchive.org/release-group/39c86f2e-34d4-4ae3-b714-81dc426eca6b/front"
+   ],
+   "mbRgMbid": "39c86f2e-34d4-4ae3-b714-81dc426eca6b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "iTunes 查無，封面以 CAA 為準；z 可能中性"
+  }
+ ],
+ "notes": [
+  "共 40 張，未達 54：主場景挖完後只剩冷調（md7 已收）、爆裂漸強或池中同藝人已判輕／判冷的，不湊數。",
+  "擴寫場景 1（東亞暖 post-rock）0 張：MONO 池中五張全判冷落頹靡、haruka nakamura 兩張判輕、world's end girlfriend 偏暗亂、toe／LITE 類 math 不收；台韓暖 post-rock 找不到 MB 釘得住又確定暖厚的正規全長。",
+  "擴寫場景 2（post-classical 厚墊）6 張：Slow Meadow ×3、Ben Lukas Boysen ×2、Olan Mill ×1；Hugar 兩張歸 ambient-postrock，但也接近 ml46 場景，主線可改派。",
+  "跨組去重排除：Hammock《Kenotic》(ml2)《Chasing After Shadows》(ml11)《Everything and Nothing》《Oblivion Hymns》(ml24)、ml34 三張 Hammock、Riceboy Sleeps(ml2)、Schnauss & Munk《Passage》(ml2)；Gregor Samsa、Tarentel、Windy & Carl 已在 md7 判冷。",
+  "依池中先例排除：Helios（《Eingya》判輕）、Balmorhea、Goldmund、The Album Leaf（《In a Safe Place》判輕）、Do Make Say Think（兩張判輕）、MONO（全判冷）、This Will Destroy You、Stars of the Lid、Sigur Rós《Valtari》（疑冷）、Explosions in the Sky（漸強為主，池中已有五張）、Amiina（偏輕）、Stafrænn Hákon《Gummi》（樂評比 GY!BE／Radiohead，偏冷）、Bersarin Quartett（憂鬱）、Jóhann Jóhannsson《Fordlândia》（悲歌感）。",
+  "Eluvium 三張例外提名：池中《Similes》判輕是鋼琴＋人聲盤；《Copia》《Talk Amongst the Trees》《Consensus Reality》是管弦／吉他長音厚牆，主線若嚴守「同藝人判輕不提」可整組汰除。",
+  "排除 EP：Lowercase Noises《Passage》(iTunes 標 EP、5 首)、Yndi Halda《Enjoy Eternal Bliss》(MB EP)、Helios《Ayres》(EP)；Christopher Willits《Sunset》(5 首) 未提以免踩 EP 線。"
+ ]
+}
