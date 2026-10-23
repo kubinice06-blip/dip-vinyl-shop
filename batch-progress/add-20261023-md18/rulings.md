@@ -49,3 +49,19 @@
 - 18058　畠山地平 & Dirk Serries《Black Frost》full：廠牌文案「荒涼又美麗」北歐冷景、dark ambient 標籤；三張畠山中冷色證據最強，維持。
 - 18059　Deathprod《Imaginary Songs…》：1996 dBUT 限量 500 編號；四短曲加 30:38 長曲；聲音只有英維 Audio Virus／磁帶延遲／特雷門等工具描述，低頻嗡鳴無來源，thin。
 - 18060　小結：推翻策展層 0 處（年份、廠牌皆對）。moodGuess 存疑：不失者（爆裂）、MONO 三張（Nowhere 中、Requiem／WaCRS 弱）、Wada（弱）、畠山 Requiem／Black Swallow（z 偏暖）。WebSearch 用 3 次。
+
+## 研究 a 組（條號 18041–18050）
+- 18041：Funeral Moth《Funeral Moth》（2008）Discogs 登記為 EP、兩首共約 27 分鐘，樂團訪談稱 2014《Dense Fog》為首張專輯；推翻卡單「首作」。卡單身分仍成立（MB Album、WT009），建議鉤子與簡介寫成「兩首的小型出版」，不寫全長首作。
+- 18042：Funeral Moth《Dense Fog》卡單「第二張」不成立（依訪談是首張專輯），文案避開序數。
+- 18043：Corrupted《Garten der Unbewusstheit》curatorWhy「鋼琴」查無來源，署名只有原音／古典吉他，facts 改寫為原音與古典吉他。聲音層 thin。
+- 18044：Corrupted《Pray for the Hollow Sun》查無任何樂評，聲音依樂團一貫路線推估；Discogs 大類含 Electronic。標 thin，moodGuess 存疑。
+- 18045：Corrupted《Llenandose de gusanos》曲目結構維基（兩片各一首）與 MB／Spirit of Metal（第一片兩首＋第二片〈VIII - El Mundo〉73:54）衝突，採後者。第二片為氛圍、無鼓。
+- 18046：Boris 兩張 moodGuess「無鼓」不精確：Dronevil 的 Evil 碟、fade 序章後段都有 Atsuo 的鼓，但稀疏且全器樂／大半器樂，仍判靜。fade 評者用「warming nostalgic」，z 建議略放暖（約 -0.8）。
+- 18047：Corrupted／Funeral Moth 嘶吼：Corrupted Hevi 招牌為野獸般低吼（bestial roar），《El Mundo Frio》末段改沙啞低語；Funeral Moth 為粗啞低吼＋低語，Transience 評者提到短暫『驚恐尖叫』。皆低沉壓迫、非尖銳，照 Khanate 先例判靜；Transience 略有起伏。
+- 18048：Sputnik Music、Concrete Web、Pitchfork 本次抓取失敗（503／521／被擋），相關評語改由搜尋摘要與維基轉引，已於各卡 notes 註明。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- **汰 9 張**：Supersilent《8》（研究 c：全團最有鼓、最搖滾的一張，前三首鼓擊明顯、〈8.7〉噪音搖滾，x 恐 2.8–3.5）；Ø《Oleva》（研究 e：樂評寫 pounding minimal beats、tight rhythmic components）；Klara Lewis《Ett》《Too》（研究 e：兩張都有反覆／抖動節拍，《Too》廠牌自述 aggressive、pop 結構）；MONO《Nowhere Now Here》（研究 b：雷鳴打擊、推進吉他、刺耳噪音，旋律清楚往暖）；MONO《Requiem for Hell》（研究 b：漸強長曲、吉他弦樂旋律清楚，z 恐 −0.3～−0.7、x 貼邊）；畠山地平《Black Swallow》（研究 b：無聲音描述，三段〈Warm Rain in June〉，z 恐 −0.3～−0.6）；Funeral Moth《Funeral Moth》（研究 a：Discogs 登記 EP、兩首約 27 分鐘，樂團自述《Dense Fog》才是首張專輯——EP 不開例外）；Corrupted《Pray for the Hollow Sun》（研究 a：2024 自行數位發行的單曲、無任何聲音資料，Discogs 大類標 Electronic）。
+- 留：Boris《fade》（評者寫溫暖懷舊，z 估 −0.8 仍過邊距）、Westerhus《The Matriarch》（x 估 2.3）、Biosphere／Deathprod《Nordheim Transformed》（y 邊界交評分）、Ø《Konstellaatio》（氛圍為主、少節拍）、Skepticism（funeral doom 極慢，Khanate 先例）、Yoshi Wada《Earth Horns》（大音量持續音＝壓人，Sunn O))) 先例判靜）。
+- 研究層推翻策展層照研究稿：Funeral Moth《Dense Fog》不寫序數；Corrupted《Garten》無鋼琴；Svartsinn《Of Darkness》不寫「第二張」。
+- **定案 36 張**（a 7、b 6、c 8、d 9、e 6）。研究稿同步移除，`qa-batch research` 通過。md19 0 張、md20 撐起一半以上；md18 主場景日本暗色已挖到底（灰野獨奏、downy 系都不合格），不再派。
