@@ -25,3 +25,19 @@
 - 20483：Stan Forebee《Jazz Sessions》卡單 year 2013／Digi Crates 為 MB 首發版（已 withdrawn）；現行可聽版為 2018-03-07 Stan Forebee Music 重發，年份取捨由主線裁。
 - 20484：BROCKBEATS《Tranquilizook》16 首 31:33（卡單 15 首 30 分略有出入）；Bandcamp 聽眾稱 warm and lethargic，為本組聲音證據最正面者。
 - 20485：策展稱 Fitz Ambro$e 與 Ohbliv 合作《Zen Vapors》未查到來源，未採用。
+
+## 研究 a 組（20441–20450）
+- 20441：a 組十張 facts 各 8 條；status full 7／thin 3（Old.Klouds.LP、SLPHNC III、Zen Vapors）。Knxwledge 三張頁面皆無簡介，聲音證據來自 Bandcamp Daily 導覽與 Okayplayer；Ohbliv 靠 RVA Magazine 訪談；Wun Two《Ships》靠 The Find 的風格描述。
+- 20442：**年份推翻**——Fitz Ambro$e & Ohbliv《Zen Vapors》卡單與 MB 為 2014（2014-09-03），但 Dandigs 發行貼文日期 2013-09-03 並稱「released today」，應為 2013；Cascade Records、14 首、約 35.2 分與卡單一致。**同日，20485 說策展稱的合作盤『未查到來源』——此處查到了**（Dandigs、MB 皆有），e 組若已據此汰換請主線核。
+- 20443：moodGuess 存疑名單——Ohbliv《Up》（HW&W 官方文案寫 warm 但 **bouncy**，x 恐偏高）；Ohbliv《Anima Mundi》（標籤含 dance music、作者自稱 sometimes experimental，但同時有 healing、dreamy，不建議汰換）；Knxwledge《SKRAWBERRiES.》（標籤含 house、jungle|drum & bass|njklub，Bandcamp Daily 稱鼓『不精準』，x 恐 2.7–3.0）；Knxwledge《TodaysAlreadYesterday.》（Okayplayer 明講 glitchy，曲平均約 70 秒）；Knxwledge《Old.Klouds.LP》（無任何簡介樂評，MB 使用者標籤 grime 不可靠）；Wun Two《Ships》（boom bap 取向，非專指本張）。
+- 20444：Ohbliv《Rugged Tranquility Volume 2》Bandcamp 只有 Vol.1&2 合併頁（36 首、Paxico Records、2021-04-02）；卡單 16 首取 MB 的 Vol.2，廠牌欄實為 Paxico Records。
+- 20445：日期差異（年份一致，不影響）——Ships 的 Bandcamp 9/27、MB 9/10。
+- 20446：本組無 <28 分、無精選集；總長 33–43 分。Zen Vapors 合作盤的分曲方式未查（thin）。
+
+## 研究 b 組（20451–20460）
+- 20451：b 組十張 facts 各 8 條；status full 3（Dream Cruise、afterlife、Adventure Island）／thin 7。Wun Two 系（Nautiqua、Cashmere Dreams、forest folks）、Wonderland、aeon、kyoto、Oasis 頁面皆無簡介，只有標籤與聽眾留言。
+- 20452：**moodGuess 存疑（建議汰換候選）**——Wun Two & Knowsum《Dream Cruise》：Sichtexot 文案寫 funky、soothing、**optimistic**，標籤 boombap／funk／psychbap，另有 weegee 的人聲段落與三段 skit，與靜重暖有出入。mt. fujitive《kyoto》：2025-10 新盤，零文案零樂評，聲音完全無證據，建議汰換或降優先。
+- 20453：moodGuess 存疑（輕度）——Purrple Cat《Adventure Island》（Lofi Girl 背景音樂型、熱帶島嶼冒險主題、曲名童趣，y 恐偏輕）；Purrple Cat《Oasis》（標籤 piano／lounge／ambient、曲名明亮，y 恐偏輕，31.2 分近邊界）；Wun Two《forest folks》（卡單『Low Bap』查無來源，30.2 分近邊界）；Smuv & mt. fujitive《Wonderland》（無聲音描述，曲名偏明亮夢幻）。
+- 20454：mt. fujitive《afterlife》策展擔心偏惆悵——查證零售文案為 meditative／dreamy／nostalgic、『warmer』，未見 melancholic／dark／cold，**不存疑**（證據僅零售商文案，Bandcamp 頁取不到）。
+- 20455：日期差異（年份一致）——Cashmere Dreams Bandcamp 2023-07-28、MB 2023-06-09；Oasis Bandcamp 8/2、MB 7/2；afterlife 三個日期（10/25、10/28、11/29）。Nautiqua 的 Boora、aeon 的 oofoe 身分皆查不到。
+- 20456：本組無 <28 分；最短 forest folks 30.2 分、Oasis 31.2 分。無精選集、無年份推翻、無需移除。
