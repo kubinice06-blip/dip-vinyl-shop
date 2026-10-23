@@ -11,6 +11,15 @@
 - **主要檔案**：`batch-progress/add-20261023-{mc5,ml9}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{mc5,ml9}.json`、`batch-progress/mood-axes/score-{mc5,ml9}/`、`onboarding-manifest-add-20261023-{mc5,ml9}-20261023.json`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`data/mood/*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`、`SCENES.md`、`HANDOFF-mood-cells-line.md`。
 - **驗證**：prepare／published gate 兩批 0 error；KV 回讀 58/58；qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research 全過；build-card-moods 錨點 104/104、seed 20,169。
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線 ml5／mc6：neo-soul 二線 38＋Detroit／Euro electro 44 張上線，落格 35／43
+
+- **內容**：第 2 輪、3 並行之一（接續因額度中斷的工作階段）。ml5（`add-20261022-ml5`，恍惚）：Bilal、Spacek／Steve Spacek、Foreign Exchange、Georgia Anne Muldrow、Children of Zeus、Yazmin Lacey、Greentea Peng、Kali Uchis、Raveena、Nick Hakim、Baby Rose、GIVĒON、SiR 等 38 張（研究層以「不夠慢霧」汰 12）。mc6（`add-20261022-mc6`，冷冽）：Gerald Donald 系（Japanese Telecom、Arpanet、Elecktroids）、Lab Rat XL、AUX 88 系 5、Anthony Rother 10、Silicon Scally 8、Cygnus 4、Lowfish 3、Exos 2、Optic Nerve 2、dynArec 2、Ectomorph、The Hacker 等 44 張（研究層以「不快不機械」汰 10）。
+- **主線審稿**：ml5 改 1 處（上一工作階段）；mc6 改 3 處（Dynamik Bass System「東德」→「德國東部」、Popkiller 刪單源樂評句改補曲序、The Hacker 刪單源比較句）。mc6 試聽 26 ready（藝人目錄人工配 3）；封面 CAA 37、Discogs 5（已登錄 registry）、Apple 2，live-check 全 200。
+- **落格率（本線驗收）**：`batch-progress/mood-axes/score-{ml5,mc6}/`。ml5 落恍惚 35/38＝92%（3 張色溫判冷落頹靡）；mc6 落冷冽 43/44＝98%（Black Tokyo 日本女聲落雀躍）。併 main（md9、mc9 等）後 gate 綠 20,202 張、錨點 104/104；八格 恍惚 926、冷冽 1,021、頹靡 1,267。
+- **寫入**：card_catalog ml5 38＋mc6 44、KV 38＋44 鍵逐字回讀一致、seed +82、published gate 0 error；類型樹／card-subgenres／抽卡封面重建（`genre-l3-artist-map.json` 補 3 張）。藝人介紹未切，新藝人名單列在兩批 rulings.md 末尾（25＋16 位）。
+- **主要檔案**：`batch-progress/add-20261022-{ml5,mc6}/`、`onboarding-manifest-add-20261022-ml5-20261022.json`、`onboarding-manifest-add-20261022-mc6-20261023.json`、`seed_cards.json`、`data/mood/*`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`、`data/discogs-cover-registry.json`、`SCENES.md`、`HANDOFF-mood-cells-line.md`。
+- **驗證**：兩份 manifest `verify-album-onboarding --published` 0 error；`verify-wave-kv` 44/44；`build-card-moods` 錨點 104/104。
+
 ### 2026-10-23｜dip-vinyl-shop｜酸冷重判：「酸」＝冷＋硬，157 張改判（Marion Brown《Geechee》放鬆→冷冽）
 
 - **改動**：店主裁定自由爵士、無調現代音樂（Ligeti）這類「酸冷難聽又硬蕊」的不能落放鬆。規則寫進 `score500/BRIEF.md` Z 軸：酸 → 色溫 ≤ −1.2，有推力或音塊密集刺耳 → 能量 ≥ 3.1。候選 1,208 張（標籤或評語有酸味、落暖格或靜格）8 支代理逐張判（`batch-progress/mood-axes/sour-rejudge/`，工單 BRIEF.md、合併 merge.mjs、報告 merge-report.json），判酸 200、主線退回 5，改值 157 筆進 `overrides.json`（累計 413 筆）。判例與留給店主翻案的清單在 `rulings.md`。
