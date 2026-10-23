@@ -12,3 +12,15 @@
 - **古典卡（§0.7）**：Thorvaldsdottir、Dumitrescu 是作曲家肖像盤，掛作曲家（池中 Haas《in vain》先例）；Sólaris 掛 Ben Frost & Daníel Bjarnason。三軸走錨點制人工（`manual:classical-rubric`）。
 - **汰 9 張**（質地判輕風險＋同人勻量）：純原聲不和諧弦樂、池中同型現代古典 y 只 0.6–0.8 的——Korven《The Witch》、Bishara《Insidious》、Bensi & Jurriaans《Enemy》、Graves《Dead Space》、Kurzel《The Babadook》、Hildur《Saman》、Ligeti Project II、Scelsi《Natura renovatur》；Reitzell《Hannibal》三張留兩張（汰 Season 1 Vol. 2）。
 - 研究層重點查：有沒有鼓在推（SH4、SIGNALIS、Control、Sicario 悶鼓、Macbeth 悶擊）、乾淨弦樂佔比（Joker 2、A Haunting in Venice、Last and First Men、End of Summer、Thorvaldsdottir 室內樂）、色溫是否真冷。
+
+## 研究 a 組
+- 17721：Sicario 原聲 moodGuess 存疑——維基專輯條目明寫配樂「從一開頭就倚重打擊與節奏元素」，〈The Beast〉為低頻擊打；x 2.3 恐偏低，評分往 2.8–3.2 看；維基無 drone 描述，facts 不寫 drone。
+- 17722：Hereditary 策展層寫「低音薩克斯循環呼吸」，維基專輯條目樂器為單簧管群＋低音單簧管＋銅管＋人聲（麥克風放大按鍵聲），無低音薩克斯；facts 以條目為準，不寫低音薩克斯主奏。
+- 17723：Blade Runner 2049 moodGuess 存疑——專輯收 Sinatra、Presley 歌曲與 Lauren Daigle 一首（黑膠版刪 Sinatra／Presley），全盤 93:44 共 24 軌，〈Sea Wall〉有推進感；z 可能被拉暖，評分取全專輯中位數。
+- 17724：The Revenant moodGuess 存疑——專輯夾 John Luther Adams、Messiaen 等乾淨管弦作品，另有 Frantic Percussion 與〈Final Fight〉6:35；乾淨有空氣的弦樂段落可能判輕落平靜，y 1.2 偏樂觀。
+- 17725：Color Out of Space moodGuess 存疑——Exclaim! 寫「暴力爆發穿插詭異氛圍」，Fluid Radio 點名〈Contact〉閃爍式合成器；x 2.0 恐偏低（2.5–3.2）。
+- 17726：Monos 輕度存疑（樂評皆稱 percussive，有定音鼓動機，x 1.0 偏保守）；策展層「管風琴」維基與專輯條目均未提，facts 不寫。Sicario: Soldado 輕度存疑（動作場景較有打擊）。
+- 17727：The Zone Of Interest MB 無廠牌，「A24 Music」僅卡單標示未驗證；曲目表未取得，keyTracks 留空；status partial。
+- 17728：Lighthouse 策展層「水聲 drone」維基專輯條目未提水聲（只有霧號般、海螺、Apprehension Engine），facts 不寫水聲。
+- 17729：Sicario 與 Jóhannsson-Villeneuve 關係以「繼 Prisoners 第二度合作」寫，來源 Blade Runner 2049 維基條目。
+- 本組推翻策展層 2 處（Hereditary 樂器、Lighthouse 水聲）；moodGuess 存疑 6 張。WebSearch 用 1 次（Color Out of Space 樂評）。
