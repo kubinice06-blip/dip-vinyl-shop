@@ -124,3 +124,17 @@
 - **20992** `desc2:Leela James|Loving You More... In the Spirit of Etta James`：「樂評稱讚她把 Etta 的歌重新編排過一遍。」→「她把 Etta 的歌重新編排過一遍。」（拿掉單源讚語，留兩源互證的「重新編排」事實）。
 - **20993** `desc2:Sabrina Claudio|Based on a Feeling`：「2022 年 5 月 6 日重新發片。」→「2022 年 5 月 6 日發行。」（「重新發片」易誤讀為重發）。
 - 其餘 19 張逐張審過，未改字；抽核：Mirror Mirror 前作破百萬、Oleta《Moving On》英美各停一週與第 39 屆葛萊美入圍、Celeste 為 Jess Glynne 以來首位、Miki Howard 替 Cameo 開場——與研究稿一致。Kelly Price 控告 T-Neck、Sabrina Claudio 推特言論皆未進正文。只改正文，hooks／input 不受影響。qa-batch out、qa-check-research（標記 0）、fix-spacing（0）重跑全過。
+
+## 上線（不佔條號）
+- 上線 22：card_catalog 22/22、KV 22 鍵回讀逐字一致、試聽 22 ready（主線人工配對 8：Love Unlimited Apple 盤名「Love Unlimited」、Oleta《Movin' On》、Raveena 改取第 3 軌避開饒舌客串、Alina Baraz；Mirror Mirror、Priceless、Syleena、Goapele 第 1 軌是 intro 改取第 2 軌）、seed +22、published gate 0 error。
+- 封面：CAA 21、Apple 1（Aisha《The High Priestess》，apple-verified-collection），縮圖表逐張目視、live-check 全 200（Miki Howard 原圖一度 500，重試 3 次皆 200）。上線前對 origin 各 `claude/*` 分支 seed＋卡單去重 0 撞（候補階段撞 ml53 三張已處理）。
+- 冷門軸：機器基線（Last.fm listeners 51–240,976），未人工改。
+- 類型樹：`genre-l3-artist-map.json` 補 `soul/classic-rnb/neo-contemporary` Alina Baraz、`world/reggae/roots` Aisha《High Priestess》，22/22 落位。
+
+## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-ml55/`）
+- 照 10-23 體感標準評分（conf high 1、mid 15、low 6）。**上線 22；落恍惚 22/22＝100%**。評分 x 1.9–2.7、y 0.5–1.3、z 0.4–1.6；y 貼邊：Miki Howard《Love Confessions》0.5、Kelly Price／Leela James／Syleena 0.6。
+- 八格（build-card-moods 後）：恍惚 1,560、頹靡 1,480、冷冽 1,479。
+- 產量：策展兩輪 44、主線汰 3（含讓 ml53 一張）、研究汰 19 → 22。**主流 90s 女聲 R&B 頭牌池中全判輕、二線研究一查多是 new jack／饒舌客串／舞曲單曲／smooth jazz**；能穩收的是 quiet storm 老將慢盤（Oleta Adams、Miki Howard、Phyllis Hyman 後期）、Kelly Price 系福音靈魂、2010s–20s 慢板 neo-soul（Sabrina Claudio、Raveena、Alina Baraz）與 Jah9 jazz-on-dub。**ml55 主場景見底，不再派**。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Kelly Price、Syleena Johnson、Oleta Adams、Miki Howard、Mica Paris、Leela James、Goapele、Raveena、Sabrina Claudio、Alina Baraz、Celeste、Andra Day、Aisha、Love Unlimited、Jah9（15 個掛名；`data/artist-intros` 與 progress.json 皆無。Celeste、Aisha 與池中 Celeste Legaspi、Maisha 子字串相近，切批時留意鍵名）

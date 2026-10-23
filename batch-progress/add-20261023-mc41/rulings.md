@@ -82,3 +82,16 @@
 
 ## 主線審稿（2026-10-23，雲端主線，11 張逐張讀過、對回研究稿）
 - 逐張審過，未改字。抽核事實：Harrison〈Surface Tension〉冰箱包裝素材、〈Klang〉1992 Euphonie d'or；Davidovsky No. 6 1970-08-19 Tanglewood 首演、1971 普立茲；Wishart 1995 Ars Electronica 金尼卡；Thibault 1982 Radio-Canada 青年作曲家獎、導讀「豔陽下的跑車」——皆與研究稿 facts 一致。樂評句只留聲音描述（Stavropoulos 蟻群、Roy 神經質、A_dontigny 保持清醒），無媒體名、無「據」。寫作層自補的「作曲家」（Justel、Davidovsky）有 facts 支撐，保留。
+
+## 上線（不佔條號）
+- 上線 11：card_catalog 11/11、KV 11 鍵回讀逐字一致、試聽 2 ready（主線人工配對：Davidovsky Bridge《Vol. 3》取 Synchronisms No. 6、Subotnick 同作品收於 Mode《Electronic Works, Vol. 1》取 Dance 段）、9 unavailable（empreintes DIGITALes／GRM／Orpheus 系 Apple 不上架）、seed +11、published gate 0 error。
+- 封面：CAA 8、Discogs 2（Wishart 776947、A_dontigny 4010943，已登錄 registry）、Apple 1（Davidovsky），縮圖表逐張目視、live-check 全 200。上線前對 origin 各 `claude/*` 分支 seed＋卡單去重 0 撞。
+- 冷門軸：機器基線（Last.fm listeners 2–474），未人工改。
+- 類型樹：Last.fm 標籤 8/11；Wishart、A_dontigny、Stavropoulos、Roy、Thibault 補 `genre-l3-artist-map.json` `electronic/noise/concrete`，11/11 落位。
+
+## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-mc41/`）
+- 照 10-23 體感標準評分（conf mid 7、low 4）。**上線 11；落冷冽 10/11＝91%**。評分 x 2.9–3.9、y −0.9～+0.4、z −1.7～−1.3。出格 1 張判靜落平靜：Stavropoulos《Micro-lieux》（x 2.9，空間化顆粒紋理偏慢）。x 貼邊 3.0：Subotnick《Sky》、Roy《Kaleidos》。
+- 產量：策展 28（掃 empreintes 約 160 張）、主線汰 4、研究汰 13（飄浮長音 5、厚密噪音 3、聲音零來源 4、現場 1）→ 11。**acousmatic 主場景是小池子**：長篇音景與突發爆裂交替的判靜或判重，能穩落冷冽的是微剪接／點描（Vaggione）、物件聲碎裂（Harrison、Justel）、人聲變形（Wishart）、cut-up 數位碎裂（A_dontigny）、電聲衝擊序列（Thibault）與器樂對磁帶點描（Davidovsky）。**mc41 主場景見底，不再派**。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Horacio Vaggione、Jonty Harrison、Elsa Justel、Mario Davidovsky、Trevor Wishart、A_dontigny、Nikos Stavropoulos、Stéphane Roy、Alain Thibault（9 個掛名；`data/artist-intros` 與 progress.json 皆無）
