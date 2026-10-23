@@ -37,3 +37,16 @@
 - 20406：Darkwood 聲音來源完全查不到（Bandcamp／Discogs 403／404），status thin；專輯 2020 為 MB 日期，遊戲 2017 年上市、原聲帶可能更早以 Steam DLC 發行，年份待核。
 - 20407：WebSearch 超用（共 6 次，限 3 次），用於 Miners/Dark/1899/Fortitude/Broken/Darkwood 的聲音與編制來源。
 - 20432：研究 e 組存疑汰 3：Jóhannsson《The Miners’ Hymns》（銅管聖詠調性清楚、結尾 hope，判暖）、Ben Frost《1899》（自述 kinetic and noisy、打擊為重，判躁）、Artur Kordas《Darkwood》（聲音零來源，thin）。留 Ben Frost《Dark: Cycle 3》《Fortitude III》《Broken Spectre》（池中《Dark》前兩季與《Fortitude》落頹靡；Fortitude 的 unsettling 是整體配樂評語）。
+
+## 研究 c 組（條號 20381–20390）
+- 20381：Emanate 整張查不到聲音描述（AllMusic 403，無樂評），status thin。策展層「合唱長音」「教堂」不成立：人聲只有 Sara Fors，錄於 Bonello Studio；編制含木魚、齊特琴。「兩人第二張合作」推翻：雙掛名專輯 Emanate 是第一張（下一張 2025 Glory Fades），Erlandsson 2015 已是《Études》的錄音者之一。標 moodGuess 存疑（無聲音來源）。
+- 20382：Études 發行日採 7 月 17 日（MB／Discogs／XLR8R），維基寫 7 月 25 日不採。XLR8R 稱「打擊性的碎片」「震到骨頭的共振」，十首短曲 1.6–5.3 分鐘，moodGuess 存疑（可能有繃緊段，躁邊緣）。
+- 20383：Compound 與策展層明顯不符：實為低音提琴＋鋼琴（Rieko Okuda）＋打擊（Marcello Silvio Busato）三重奏即興、後製疊成兩首約 21 分鐘長篇；廠方稱節奏為 pattern-based driving force，XLR8R 稱 menacing。找不到「電子低頻」來源。moodGuess 存疑（有打擊與節奏推進，疑非靜）。
+- 20384：Vast 廠方說明是五首即興，強調刮擦、喀喀聲、琴橋嗡鳴與轟隆 sub bass，曲名〈Eruption〉〈Splatters〉；非單純寬闊 drone，moodGuess 存疑（刺耳質地／爆發段）。僅數位發行。Árnason 拉小提琴與中提琴。
+- 20385：Experience of Repetition as Death 來源指向偏暖：Chain DLK 稱 velvet-like、comforting，Bandcamp 稱有 warmer, euphoric 段落，〈Holy Mother〉建立戲劇強度、結尾 pure and majestic；moodGuess 存疑（z 可能不冷）。Jóhannsson 影響僅單一評論詮釋，facts 不當創作動機；創作動機寫母親病逝（Jensen 自述頁）。
+- 20386：For This From That Will Be Filled 無第三方樂評，只有概念文案；〈BC〉掛名與 Jóhannsson 合作、〈Cello Constellations〉為 Michael Harrison 為 Jensen 所寫（含正弦波），非選輯。moodGuess 無法證實（冷、低頻、有無尖高頻）。發行日採 4 月 6 日（Bandcamp／MB），Discogs 黑膠寫 2018-03。
+- 20387：Schlingen-Blängen 卡單年份 1999 為 CD 首發；錄音 1988（荷蘭北海邊小教堂，Discogs 拼作 Famsum Delftzijl），1998 年 Ingram Marshall 重混。NWR 文案稱「relentless and uncompromising」且「活動量極大」，並非單和弦靜止，管風琴音色明亮；moodGuess 存疑（躁邊緣；z 偏暖疑慮成立）。
+- 20388：Saor 來源（Bandcamp 轉載 Touch 資料）顯示編制含梅洛特朗、簧風琴、小號、單簧管、法國號；Singer 個人網站引用評語偏 celestial／euphoric／divinity（針對整體作品）；moodGuess 存疑（可能判輕、偏暖）。touchmusic.org.uk 會 301 轉到可疑網域 paymentpayout.com，未開啟，不採。
+- 20389：Second Childhood 完全查不到聲音描述（Boomkat／Staubgold／AllMusic／last.fm／Bandcamp 皆空），status thin；moodGuess 存疑（無來源，建議聽感複核或汰換）。Discogs 備註：背面印七首、實際六軌。
+- 20390：WebSearch 本組用了 3 次（Compound、Emanate、Experience of Repetition），未超用；其餘為 Discogs／MB API 與 WebFetch。Mount A 發行年維基 2006、Discogs 2007，facts 採維基。
+- 20433：研究 c 組存疑汰 8：聲音零來源（Glotman & Erlandsson《Emanate》、《Second Childhood》）；判躁（Glotman《Compound》即興三重奏 driving pattern＋menacing、《Études》打擊碎片短曲、Árnason & Glotman《Vast》刮擦喀喀與〈Eruption〉、Palestine《Schlingen-Blängen》relentless、明亮管風琴）；判暖（Clarice Jensen《The Experience of Repetition as Death》velvet-like、comforting、近乎狂喜）；Clarice Jensen《Esthesis》研究代理漏做，同人已留《For This From That Will Be Filled》，不補研究、直接汰。留 Clarice Jensen《For This From That Will Be Filled》、Claire M Singer《Saor》（celestial 評語指整體作品，非本張）。
