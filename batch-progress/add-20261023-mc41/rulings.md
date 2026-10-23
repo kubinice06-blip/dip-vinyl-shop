@@ -20,3 +20,18 @@
 - 21123　Thibault《Volt》年份維持 1990（IMED 9003 原盤；MB 2023 為數位版）。聲音證據（起音對比、機械序列、情感缺席）支持躁輕冷；Discogs 註記首版限量 20 張手編號，不影響年份。
 - 21124　Roy《Kaleidos》年份 1996 原盤相符；moodGuess 大致成立，Paysages intérieurs 偏陰暗夢境為唯一保留。
 - 21125　Mimetismo「thick combinations」樂評語未查得出處，不入 facts；Normandeau 的 Prix Opus 1998-99 類別與是否專指本盤不明，不入 facts（Golden Nica 僅寫為 Le renard et la rose 一曲）。
+
+## 研究 d 組
+- 21111 Maresz：聲音面 moodGuess 存疑（IRCAM 形容流動交織、Sul segno 共鳴延展、Eclipse／Entrelacs 無電子各逾 10 分鐘，無急促點描來源）；建議 x 重估 2.5–3.0。年份 2005 原盤，無重發問題。
+- 21112 Subotnick《4 Butterflies》：Mode／soundohm 明寫「floating, mysterious electronic landscape」，約 35 分鐘四段加兩間奏，判靜，建議汰換；年份 LP 1974、作曲 1973（兩者並寫）。
+- 21113 Subotnick《Sky／After the Butterfly》：Sky 為「長段脈衝驅動演進」，After 為小號＋樂團＋ghost score 電子，18 分鐘；急速翻飛、尖銳短句無來源，列邊緣（x 約 3.0–3.4）。年份 LP 1980（作曲 1978／1979）。
+- 21114 Manoury：Jupiter 13 短段（貼碎片），但 Partition 為雙 MIDI 鋼琴＋長笛＋樂團約 40 分鐘，偏厚；整張高風險，建議優先汰換。Jupiter 年份來源矛盾（1986／1987），facts 只寫 Discogs 標示 1986；無樂評，status thin。
+- 21115 Pousseur：Scambi 有「不規則、突然斷裂＋長持續音」證據（僅 6 分半）；佔近六成的 Paraboles-Mix（約 41 分）與 Trois visages 聲音描述查無，「人聲碎片」無出處；部分存疑，建議降優先。原盤 1990 CD（MB 另有 2005 版同 rg，不影響）。
+- 通則：以上聲音 facts 僅用來源明寫的描述，不採策展層推測；樂評皆未取得（搜尋無結果）。
+
+## 研究 a 組
+- 21081　Vaggione《Musiques pour piano et électroacoustique》年份 1995 與廠牌 Mnémosyne 相符（MB／Discogs 714493）。曲目年份兩邊矛盾（Wikipedia 與 Discogs 內頁除〈Till〉1991 外皆不同），facts 只寫〈Till〉。moodGuess 不存疑，但聲音證據僅為 Mead 對 Vaggione 鋼琴風格的描述（點描、靜默）與 HHV 對另一張選集的旁證，無逐曲樂評。
+- 21082　Vaggione《Points critiques》年份 2012-01-13 INA-GRM 相符；〈Ash〉年份三處互異不寫。status 標 thin：無專輯評論，聲音靠手法描述旁證。moodGuess 不存疑，單曲 10–16 分鐘是否有持續音層未證實。
+- 21083　Harrison《Évidence matérielle》年份取原盤 2000（IMED 0052，廠牌頁），MB 2022 為數位重發；cards year 2000 不動。moodGuess 部分存疑：〈Streams〉（以持續波浪起伏為結構）與〈Sorties〉（標題性、具象指涉）偏流動連續；〈Surface Tension〉（dry, brittle）、〈Splintering〉、〈Klang〉符合。整體偏符合但邊距薄。
+- 21084　Justel《Mâts》年份 2007 相符。moodGuess 部分存疑（y）：Nordin 樂評寫到迴響洞穴感、泥流與石牆崩落，但主體仍是細小快變碎片；策展層的 didgeridoo 查無來源，不入 facts。Justel 移居法國年份 Wikipedia 自相矛盾（1988／1998），不寫。
+- 21085　Koenig 雙 CD 年份 1990（BVHaast CD 9001/2）相符，收 1955–1979 作品。moodGuess 存疑：〈Funktion〉系列五首長 6–21 分，用函數產生器直接生成「生硬而直接」的音色，Soundohm 與 noise／drone 並論，可能判持續音；CD I 的 WDR 點描作（Klangfiguren II、Essay、Terminus I）符合。〈Funktion Grün〉不在本套（在 1970 DG LP），已避免混寫。status thin：無逐曲樂評。
