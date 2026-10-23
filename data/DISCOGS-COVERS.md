@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **392** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 154、已退回 1）。
+共 **400** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 162、已退回 1）。
 最後更新：2026-10-23
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -269,6 +269,17 @@
 | Tom Cora, David Moss 《Cargo Cult Revival》 | [#1003533](https://www.discogs.com/release/1003533) | 1983 | Rift | RIFT 5 | Discogs master 2089672 的版本、主線目視與盤名相符 | ok |
 | Zeena Parkins 《Nightmare Alley》 | [#661500](https://www.discogs.com/release/661500) | 1993 | Table Of The Elements | H 1 | Discogs master 87550 的版本、主線目視與盤名相符 | ok |
 
+## add-20261023-mc37（6 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| eRikm 《Lux Payllettes》 | [#2330889](https://www.discogs.com/release/2330889) | 2010 | Entr'acte | E94 | 唯一版本、主線目視與盤名相符 | ok |
+| Morton Subotnick 《Touch》 | [#4245425](https://www.discogs.com/release/4245425) | 1969 | Columbia Masterworks | MS 7316 | Discogs master 64355 的版本、主線目視與盤名相符 | ok |
+| Nate Wooley, Seymour Wright 《About Trumpet And Saxophone》 | [#5078273](https://www.discogs.com/release/5078273) | 2013 | Fataka | Fataka 8 | 唯一版本、主線目視與盤名相符 | ok |
+| Peter Evans 《More Is More》 | [#1043693](https://www.discogs.com/release/1043693) | 2006 | psi (3) | psi 06.08 | 唯一版本、主線目視與盤名相符 | ok |
+| Peter Evans / Tom Blancarte 《{Sparks}》 | [#2382587](https://www.discogs.com/release/2382587) | 2008 | Creative Sources | CS 119 cd | 唯一版本、主線目視與盤名相符 | ok |
+| Thomas Lehn & Marcus Schmickler 《Bart》 | [#73238](https://www.discogs.com/release/73238) | 2000 | Erstwhile Records | erstwhile 012 | 唯一版本、主線目視與盤名相符 | ok |
+
 ## add-20261023-mc38（3 張）
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
@@ -351,6 +362,13 @@
 |---|---|---:|---|---|---|---|
 | I Kong 《The Way It Is》 | [#1211110](https://www.discogs.com/release/1211110) | 1979 | Top Ranking | TC-082 | Discogs master 317637 的版本、主線目視與盤名相符 | ok |
 | Michael Prophet 《Jah Love》 | [#847976](https://www.discogs.com/release/847976) | 1983 | Live & Learn Records | LL LP 004 | Discogs master 195378 的版本、主線目視與盤名相符 | ok |
+
+## add-20261023-ml51（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Ta-ku 《DUSTY Vol.1》 | [#5337929](https://www.discogs.com/release/5337929) | 2012 | Not On Label (Ta-Ku Self-Released) | none | 唯一版本、主線目視與盤名相符 | ok |
+| Ta-ku 《DUSTY Vol. 2》 | [#5337950](https://www.discogs.com/release/5337950) | 2012 | Not On Label (Ta-Ku Self-Released) | none | 唯一版本、主線目視與盤名相符 | ok |
 
 ## c49（3 張）
 

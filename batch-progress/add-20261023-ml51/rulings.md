@@ -99,3 +99,17 @@
 - **20503** 不複述 hook：Adventure Island 的「頁面註明可免費用於影片與直播」與 hook 重疊，正文略去；kyoto 的「發行國別登記冰島」為 note 指定的地理反差領句，與 hook「冰島發行」部分重疊，改寫成「這張的發行國別也登記為冰島」並以 mt. fujitive 具名承接，主線審稿可再看。thin 卡一律不加 note 沒列的聲音細節。
 - **20504** 跨張自掃（han() 中文 4-gram，本組 16 張＋writer-2 已交 15 張＋全批 hooks）：初稿掉出「長約分鐘」×10、「約分鐘曲」「分鐘曲名」「首長約分」×4、「德國製作人」×3 等，整個名詞拆掉、時長句十二種寫法（長度約／時長上下／播放時間約／加起來約／共⋯左右／前後約／播完約需／全卷約／擠在約⋯裡／合計約／長約／走完約）；與 writer-2 撞的「自己發行」「年月問世」「聽眾留言」「標籤寫著」「年月放上」「這個計畫」「年月推出」由本組讓開。定稿 3 張以上只剩專名「雷克雅維克」；2 張只剩「里奇蒙的」「在里奇蒙」（地名）。日期領句逐張不同：年月他把／年月續作由／年月登上／年月日當天／年月首上傳／年月把本作／年月的／年月掛上／是年的作品／年月發布在／在年月貼出／年月出現在／時間是年月／年月他在／年月旗下的／年月在上架。
 - **20505** 輔助腳本：scratchpad `wr-ml51-1/`（ml51w1-draft.mjs 產稿、ml51w1-gram.mjs 跨檔 4-gram）。writer-2 若再改稿，合掃結果會變，請主線收件時再跑一次。
+
+## 寫作層（writer-2）（20506–20510）
+- **20506** 交件：`desc-tools/batches/output/add-20261023-ml51-out-2.json`（15 張，key 逐字同序）。字數（Array.from）：House in the Woods 173｜Sands of Time 163｜Sleep Tight 165｜respect.her 174｜DUSTY Vol.1 179｜DUSTY Vol. 2 162｜Dowhatyoulove 166｜TRIBUTE 174｜Nosthaigia（full）210｜The Scenic Route（full）215｜Oldies 174｜Jazz Sessions 144｜Retrospection 176｜Tranquilizook 145｜Tranquil Trails 167；thin 13 張 144–179、full 2 張 210–215，無超標、無回頭整格捨去。首句逐字照抄 hook；第二句照鉤子層 20498 配表（作品量／標籤／命名習慣／版權欄／本名／發行方式／製作欄／致敬對象／居住經歷／所在地／器材／成長地／樂器／樂種／標語），代稱照 note（Sands「這個計畫」、Sleep「作者」、Scenic「他」）。
+- **20507** 只寫 note：thin 卡一律不加 note 沒列的聲音細節（facts 的標籤全表、曲長區間、D'Angelo reprise、紅牛之後的合作者、Shuko 母帶、〈Walkin'〉46 秒、〈Forevans〉、Nomads／Beatsofreen、〈Volfied〉皆未用）。媒體名、平台名一律不進正文：Nosthaigia 的文案內容寫成陳述句；Scenic Route 寫「樂評形容」不具名；Tranquilizook 的 Vinyl-Digital 名單去掉平台名、留言寫成「有聽眾在留言裡形容」。無「據說／據傳」。Dowhatyoulove 的製作欄 credit 拼法 Ta-Ku 統一照卡單寫 Ta-ku；ARIA 名次標「同年 10 月」時序。Jazz Sessions 第二句原稿有「那一版後來撤下」複述 hook，已刪，只具名首發廠牌與年月。Sleep Tight 初稿對曲名的意譯延伸（入睡過程的形容）不在 note，已刪。
+- **20508** 日期領句（「日」後一字照鉤子層 20499：日放／日交／日才／日落／日改）逐張配不同：月親手放出／在年月上架／作者年月自家發行／於年月面世／日放出／年月接著端出／秒年月日交給／年用自己的名義／日才公開／作品年月日落腳／在年月替他推出／年月先把／日改掛／年月以他名下／年月他交出／年月放上網路。
+- **20509** 跨張自掃（han() 中文 4-gram；本組 15＋writer-1 16＋全批 hooks 31）：初稿 2 張以上殘片 12 條（自己發行、計畫這回、全長分秒、首長分秒、製作人把、總長分秒、這張專輯×3、首分秒的、在年月日、首共分秒、器樂嘻哈、這批曲子），整個名詞拆掉後定稿只剩地名「澳洲伯斯」×2（DUSTY 兩張，專名）。另對已上架的 ml40–ml49 out 合掃，改掉 3 張以上的「這批曲子」「最短的只有」「年月推出」「在年月日」「一位聽眾」「自家廠牌」「年月問世」「一路排到」「分半到分」「是其中一」「正式發行」等；剩下的「年月日交」（鉤子層指定的日交）與樂種名「器樂嘻哈」不再改。
+- **20510** 腳本：`node qa-batch.mjs out add-20261023-ml51` 全部通過 ✓（out-2 15 張 144–215、thin 全 ≤180、合計 31 張與卡單相符）；`qa-check-research` 15 張標記 0；`fix-spacing` 待補 0。輔助腳本：scratchpad `wr-ml51-2/ml51w2-scan.mjs`（字數＋跨檔 4-gram）。
+
+## 主線審稿（20511–20515；2026-10-23）
+- 20511：逐張審 31 張（out-1 16、out-2 15），逐句對回研究稿 facts；qa-batch out、qa-check-research（兩檔）、fix-spacing 皆 0 標記；正文無媒體名、無據字。
+- 20512：改 2 處（皆正文，hook 未動，不需同步 hooks／input）：
+  - `Elaquent|The Scenic Route`：刪「樂評形容他的編曲比前作更細、疊層更多，遊戲音效也收斂了。」——單一樂評的比較評價句（研究 d 組 Exclaim! 一篇），照審稿規則刪 → 190 字。
+  - `mt. fujitive|kyoto`：「mt. fujitive 住在雷克雅維克，這張的發行國別也登記為冰島。」→「mt. fujitive 是住在雷克雅維克的 lofi 製作人。」——與 hook「冰島發行」重複（writer-1 自己標出），第二句改補身分 → 156 字。
+- 20513：核過未改——Knxwledge「現居日本」（英文維基現行版 currently based in Japan，引 Complex）；Ta-ku 毛利背景與《Songs to Break Up To》ARIA 第 18 名（英文維基；銷售榜非媒體年終榜，可寫）；Onra 泰國取樣與 MPC1000（Bandcamp 作者自述）；BROCKBEATS Vinyl-Digital 名單六百餘人（廠牌 Bandcamp 名冊頁）；Wun Two Ships 26 個植物學名曲名（MB 曲目）；Stan Forebee 首發撤下與 2018 重發（研究 e 組）。
