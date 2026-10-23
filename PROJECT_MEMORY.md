@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜原聲帶簡介重寫 ost-2：電影＋音樂劇 50 張上線，整條線收尾（共 95 張）
+
+- **內容**：ost-2 照 dip-desc-restyle 產線跑完（研究 5→鉤子 2→寫作 2→QA→主線逐張審稿），50 張好萊塢歌曲原聲、經典配樂、音樂劇、華語與歐洲電影的新簡介寫進 KV。整條線：196 張分流，重寫 95（ost-1 45＋ost-2 50）、不動 101。
+- **研究層推翻**：《魔戒三部曲》卡實為 2004 年 City of Prague Philharmonic 選粹（舊稿寫成 Shore 指揮的原聲，錯）；《Le Mépris》卡是 1991 年法國電影配樂合輯；《少年吔，安啦！》不是林強配樂起點；聶隱娘金馬只入圍；Star Wars「合成器年代反潮流」、獅子王「Zimmer 首部動畫／南非經驗」、Enya、Jason Bentley 等查無來源不寫。
+- **主線審稿**：改 1 處（名揚四海去掉逐字歌詞），見 `rulings.md`「ost-2 主線審稿」。
+- **留給店主**：魔戒卡藝人欄、Le Mépris 合輯卡去留（`handoff-ost-2.json` poolNotes），本線未動 seed。
+- **主要檔案**：`batch-progress/ost-desc-20261023/{rulings.md,handoff-ost-2.json}`、`desc-tools/batches/{cards,research,hooks,input,output}/ost-2*`、`publish-stage/kv-ost-2-20261023.json`。
+- **驗證**：kv-token-check exit 0；wrangler@4 bulk put `Success!`；verify-wave-kv 50/50 逐字一致。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格線第 9 輪派工：優先序 40–47（恍惚 5 批＋冷冽 2＋頹靡 1）
 
 - **起因**：第 8 輪三個工作階段（ml38/md22、ml40/mc22、ml41/ml35）全部收工，優先序 1–39 派完（ml39 歐陸 dub 場景見底、併入 ml40）。目前恍惚 1,268、頹靡 1,430、冷冽 1,429。

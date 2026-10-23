@@ -92,3 +92,10 @@ hook 前提逐張對研究稿 facts 核過（Chrono Cross 加藤指名、Radical
 - 《刺客聶隱娘》：「不要配樂」、自然聲、唐代音樂查無來源；金馬獎只入圍；Cannes Soundtrack Award 是記者評審團的獎，正文寫成坎城影展期間頒發的原聲帶獎、不寫成官方獎；thin 卡。
 - 早坂：最後一部是《生きものの記録》，佐藤勝在《七武士》只負責編曲；《波麗露》式段落在《羅生門》、是黑澤明要求的。
 - 《First Reformed》用原名＋描述（伊森霍克飾牧師）；《Marketa Lazarová》用原名；《輕蔑》原名必附。《Macbeth》不寫風笛。DJ Fish＝黃凱宇不連寫。
+
+## ost-2 主線審稿（2026-10-23，cloud-main，50 張逐張讀）
+機器 QA：qa-batch out 通過（Wagner 互指為專名誤報）；qa-check-research 1 標記（Wagner，誤報）、0 標記。
+改動 1 處：
+1. 名揚四海：「詞作者 Dean Pitchford 即興寫下「I'm gonna live forever」」→「詞作者 Dean Pitchford 當場即興寫出副歌」（不逐字引歌詞）。
+放行說明：《千禧曼波》hook 的「《娛樂世界》只賣出約 5 萬張」是生涯轉折的敘事事實，不是榜單名次，保留。《Sound of Music》與《無間道》兩句 hook 共用「最後一首」，hook 互撞、兩張都屬招牌事實，保留。
+hook 前提逐張對研究稿 facts 核過；魔戒（布拉格樂團選粹）、北西北（Laurie Johnson 重錄）、輕蔑（合輯）三張的版本性質都已在正文正面寫明。
