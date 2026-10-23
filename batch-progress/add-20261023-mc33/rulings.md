@@ -18,3 +18,10 @@
 - 13603　moodGuess 存疑清單（聲音描述的樂評全數被擋：Progarchives 403、Cuneiform 503、RYM 403、AllMusic 僅得星等）：U Totem（三首 10–15 分鐘長篇、西塔琴／長笛／低音巴松管，疑偏靜或暖，x 應下修）、Yugen（Mellotron／Moog／風琴／曼陀林／魯特琴，疑偏暖）、Debile Menthol（四人演唱法文歌、曲名俏皮，疑判暖或靜）、Doctor Nerve（管樂前線＋雙貝斯，疑 y 偏重）；5uu's 兩張依編制與曲長支持躁，但尖細／無調無樂評可驗，待評分驗收。
 - 13604　WebSearch 本組用 4 次（超額 1 次，因頭兩輪結果空白）；Yugen 兩條廠方／網友評語僅取自搜尋摘要，標 uncertain 於 notes。
 - 13605　facts 不寫分數；5uu's 兩張的錄音年／重組年有衝突（維基稱 1994 重組後錄，Discogs 稱 1992–93 製作），facts 只寫 Discogs 版權欄的實際記載並於 notes 註明。
+
+## 研究 d 組
+- 13591　Skeleton Crew《The Country of Blinds》廠牌：原版 1986 LP 為 Edition No Man's Land（NML 8609），卡單 RecRec Music 是 1990 年合輯 CD 的廠牌；《Learn To Talk》原版為 Recommended Music rm 02（Rift／Rec Rec 授權），卡單 Recommended Records 近似可用。
+- 13592　Cassiber 成員：卡單『Rodelius』查無，第四人是 Christoph Anders；Harth 離團年份 1985／1986 兩說，facts 只寫『這張之後離團』。《Perfect Worlds》策展層『Cutler 說唱式人聲』不成立，吼唱者是 Anders。
+- 13593　moodGuess 存疑：Thinking Plague《In This Life》（樂評：悲傷、葬禮般慢、幽閉，恐落頹靡）；《In Extremis》（廠方稱厚重激烈、編制密，恐判重）；《A History of Madness》（Cuneiform 稱 warm、organic，且有音景段，恐判暖／靜）；Aksak Maboul（B 面 22 分鐘氛圍即興＋探戈，恐判靜）；Fred Frith《Speechless》（維基稱最美、有華爾滋抒情曲與風笛，恐偏暖）；Skeleton Crew《The Country of Blinds》（Frith 自稱像普通搖滾、節奏更豐富，恐偏暖）。Cassiber 三張與 Skeleton Crew《Learn To Talk》大致符合預估。
+- 13594　WebSearch 本組用 3 次；Progarchives、Allmusic、Discogs 網頁、Cuneiform 官網皆 403／503，改走 Discogs API、MB API、Wikipedia、Cuneiform Bandcamp。聲音事實多半是樂評片段，缺鼓聲與殘響的直接描述，已在 notes 註明。
+- 13595　發行日衝突：《In Extremis》MB 1998-12-08 vs Cuneiform 1998-09-08；《A History of Madness》MB 2003-09-19 vs Cuneiform 09-16，facts 只寫年或月。
