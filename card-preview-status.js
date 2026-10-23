@@ -3161,4 +3161,13 @@ window.DipPreviewStatus = Object.freeze({
   "grouper|grouper": "unavailable",
   "rockers hi-fi|mish mash": "unavailable",
   "gaudi + nusrat fateh ali khan|dub qawwali": "unavailable",
+  "thomas brinkmann|klick": "unavailable",
+  "thomas brinkmann|tokyo + 1": "unavailable",
+  "marc houle|drift": "unavailable",
+  "jeff mills|from the 21st": "unavailable",
+  "jeff mills|the power": "unavailable",
+  "jeff mills|the jungle planet": "unavailable",
+  "oliver ho|universal": "unavailable",
+  "pacou|symbolic language": "unavailable",
+  "pacou|no computer involved": "unavailable",
 });
