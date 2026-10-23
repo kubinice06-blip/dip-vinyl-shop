@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格線第 9 輪派工：優先序 40–47（恍惚 5 批＋冷冽 2＋頹靡 1）
+
+- **起因**：第 8 輪三個工作階段（ml38/md22、ml40/mc22、ml41/ml35）全部收工，優先序 1–39 派完（ml39 歐陸 dub 場景見底、併入 ml40）。目前恍惚 1,268、頹靡 1,430、冷冽 1,429。
+- **新場景**：ml42 lo-fi／jazzhop 暖盤、ml43 暖 post-rock、ml44 暖 shoegaze／dream pop 厚牆、ml45 rocksteady／early reggae 慢歌（店主要多 dub／reggae 系）、ml46 暖 neoclassical 厚墊；mc36 no wave／薄而尖 noise rock、mc37 EAI／onkyo；md26 暗色 neofolk＋doom jazz 二線。
+- **派工**：第 9 輪 3 個工作階段：ml42＋ml45、ml43＋mc36、ml44＋md26；46–47 留待下一輪。
+- **主要檔案**：`batch-progress/mood-cells-20261022/SCENES.md`。
+- **驗證**：純佇列文件變更；新條號 19321–19960 與既有條號不重疊。
+
 ### 2026-10-23｜dip-vinyl-shop｜久石讓《風之谷》：搜尋日台異體字對照＋補試聽
 
 - **起因**：店主「久石讓缺最重要的風之谷」。查證：卡池其實有《風の谷のナウシカ サウンドトラック はるかな地へ…》（1984），但藝人欄寫日文新字體「久石譲」，台灣輸入的「久石讓」NFKC 不視為同字，搜尋只跑出掛在「Joe Hisaishi 久石讓」名下的《Piano Stories》；這張卡也標 `unavailable` 沒有試聽。
