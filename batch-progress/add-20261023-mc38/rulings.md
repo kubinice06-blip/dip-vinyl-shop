@@ -38,3 +38,15 @@
 - 20223：moodGuess 存疑清單見各卡 notes：Signs and Epigrams（AllMusic 用 violence／ferocity，y 風險；Soliloquy 慢段）、Time Gone Out（Intakt 文案含 weary、tender 與 loud free bursts，z／x 都有風險）、To Fly to Steal（Fordham：reworked lyricism、dancing melody，旋律比預估清楚，z 暖風險）、Hôtel Du Nord（ethereal、introspective、sublime，靜風險）、Lockdown（reflexive、introspective、cinematic，靜風險高）、Aeriol Piano（All the Things You Are 抽象版、romantic musings、thunderous drama）、City of Asylum（straight-ahead with experimental elements、Monk 與 Jarrett 各一首、Prayer 為慢曲）。
 - 20224：Massive Threads、City of Asylum 聲音層證據偏薄（樂評原文 403／404，維基轉述）；Massive Threads 含 Monk〈Evidence〉一首。
 - 20225：AllMusic、AAJ、Squidco 全文 403；Intakt／Clean Feed 頁取其文案，星等一律不寫。
+
+## 研究 e 組（20241–20250）
+- 20241：《VicissEtudes》推翻策展層：Discogs 註記『Recorded live at LOFT /Cologne on March 21, 1992』＝實為科隆現場演出；樂器欄只有 Gratkowski 的 alto sax（無單簧管），策展層『簧管尖嘯』未證實。建議主線依 16 張現場盤同標準汰換；聲音層查無樂評，status thin。
+- 20242：《The Lives of Many Others》高度疑似現場：Discogs『Recorded at Cankarjev Dom, Ljubljana on July 2nd, 2013』、標籤印 Ljubljana Jazz Series，Improvised Music 簡介稱第一個獨奏計畫在 Jazz Festival Ljubljana 首演、同年由 Clean Feed 發行；無任何來源明寫 live，故 facts 只寫註記與簡介，不寫『現場』。另有靜（Free Jazz Blog：silence、eery and quiet）與暖（almost Jarrett-like、結尾回到傳統爵士）風險。建議汰換。
+- 20243：《Mirror Me》『live to two-track』＝錄音室直錄（2001-06-24 紐約 The Studio），非現場。Jazzword 樂評稱比 Malaby 的盤更抒情、作曲直白、有輕聲量低頻慢曲，moodGuess 存疑（傾向暖／靜）。
+- 20244：《Hyperpiano》錄音日期、地點、是否現場全查不到（Bandcamp、Discogs、官網皆無）；三首各二十分鐘以上，不排除現場，無證據。Mon$ey Music＝Maroney 自己的版權標記（自發行）。Gallanter 的聲音摘句評的是第二張同名盤，不當本盤評語。
+- 20245：《Six Studies for Piano Solo》Discogs『Recorded Live At FMP-Studio Berlin (West), Febr. 1987』＝FMP 錄音室（錄音 Jost Gebers），判錄音室直錄；Organic Music 稱〈Study I〉為緩緩演變的極簡重複音（12 分鐘占全盤三成），靜風險中高；樂評缺，status thin。商品頁『Gräwe 首張專輯』與 Qobuz 衝突，不採。
+- 20246：《Hidden Voices》與同廠牌的《Live in Zurich》不同盤；錄音 2015-03-21 Sear Sound，封面 2016、MB 2016-01，facts 寫 2016。評語含 accessible、lithe and spirited、danceability 與三首借曲（Ornette 兩首併一、Monk〈Skippy〉、傳統曲），moodGuess『旋律不明』存疑，暖／重風險中。
+- 20247：《Iron Into Wind》錄音室（蘇黎世 Radio Studio 2018-09-22/23），發行 2019；訪談自述刻意更節制，但 Jazzword 稱不稀疏，另有福音風句型與 Sun Ra 變奏，靜／暖風險低到中。
+- 20248：《Shards and Constellations》錄音室（Challow Park 2019-04-13）；樂評反覆用 lyricism、lovely、serene and playful，兩首借曲（Abrams、Jenkins）；暖風險中偏高。MB 曲名『Alber Ayler (His live…)』為拼寫錯，facts 用 Albert Ayler (His Life Was Too Short)。
+- 20249：《Cub(an)ism》錄音室（蘇黎世電台 2016-12），樂評聲音混合（sparse／dense ostinati／intensity and restraint），無明顯推翻。Jazzwise／AAJ 頁 403，引文取自搜尋摘要與 Intakt 評論彙整頁。
+- 20250：本組 WebSearch 使用超過 3 次（派工誤解為每張 3 次），之後改用 WebFetch／API；其餘 notes 內有各卡 moodGuess 存疑清單。星等一律不寫。
