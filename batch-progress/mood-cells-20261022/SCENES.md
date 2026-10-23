@@ -42,8 +42,8 @@
 | 18 | md11 | 工業 old-school 慢盤／ritual ＋ md12 neoclassical darkwave | 派→情緒薄格 mc26、md11（第 4 輪） |
 | 19 | ml10 | psychedelic soul／cosmic soul ＋ ml14 spiritual jazz 慢而厚 | ✅ 上線 19／落格 16 |
 | 20 | mc15 | 法比冷浪潮／new beat、EBM 輕的那半 ＋ mc24 drum & bass 冷而薄 ＋ mc18 footwork／juke 冷盤 | ✅ 上線 19／落格 18 |
-| 21 | ml20 | 台灣／華語 R&B 與 neo-soul ＋ ml21 韓國 R&B／indie 恍惚 ＋ ml29 華語／日本 dream pop 二線 | 派→情緒薄格 ml20、mc31（第 4 輪） |
-| 22 | mc31 | AACM／loft jazz／美國自由爵士小編制二線 ＋ mc14 前衛 hard bop 尖而無調的那半 | 派→情緒薄格 ml20、mc31（第 4 輪） |
+| 21 | ml20 | 台灣／華語 R&B 與 neo-soul ＋ ml21 韓國 R&B／indie 恍惚 ＋ ml29 華語／日本 dream pop 二線 | ✅ 上線 17／落格 17 |
+| 22 | mc31 | AACM／loft jazz／美國自由爵士小編制二線 ＋ mc14 前衛 hard bop 尖而無調的那半 | ✅ 上線 33／落格 33 |
 | 23 | ml24 | 暖的 dream folk／slowcore ＋ ml30 暖 ambient／new age 厚墊（旋律要清楚） |  |
 | 24 | md21 | goth rock／coldwave 慢盤二線 ＋ md15 witch house／hauntology |  |
 | 25 | mc32 | 無調現代古典／序列主義／新複雜主義（室內樂、獨奏，尖細的） ＋ mc4 續集 |  |
@@ -107,7 +107,7 @@
 | mc11 | 11801 | krautrock motorik／kosmische 快盤（Neu! 以外的 La Düsseldorf、Harmonia、Kraftwerk 系二線） | ✅ 上線 16／落格 14（併 mc16、mc27；策展 61、主線汰 26、研究汰 19：krautrock 判暖／靜、Italo 單曲多、法義電子多真鼓樂團） |
 | mc12 | 11881 | electroclash／2000s electro（Miss Kittin、Ladytron、Fischerspooner、Adult.、Chicks on Speed、Client） | |
 | mc13 | 11961 | math rock／器樂後硬核的冷盤（Don Caballero、早期 Battles、Hella、乾淨的那一路） | |
-| mc14 | 12041 | 60s 前衛 hard bop／post-bop 快而冷（Andrew Hill、Eric Dolphy、Booker Little、Jackie McLean 前衛期） | |
+| mc14 | 12041 | 60s 前衛 hard bop／post-bop 快而冷（Andrew Hill、Eric Dolphy、Booker Little、Jackie McLean 前衛期） | 併入 mc31（頭牌已在池，收 1） |
 | mc15 | 12121 | 法比冷浪潮與 new beat、EBM 輕的那半（Front 242 早期以外的冷而不重） | ✅ 上線 19／落格 18（併 mc24、mc18；策展 28、主線汰 1、研究汰 8；dnb／footwork 0，改收冷快電子 Lázár／Fell） |
 | mc16 | 12201 | Italo／space disco 冷盤（Moroder 柏林期、Kano、Klein & MBO、Doctor's Cat；溫的 disco 落雀躍） | 併入 mc11（Laserdance、Proxyon、Hipnosis 已收；人聲 Italo 判暖，不再單獨派） |
 | mc17 | 12281 | 日本 techno（Ken Ishii、Fumiya Tanaka、Susumu Yokota 快盤、電気グルーヴ 冷盤） | 併入 mc5（田中フミヤ、石野卓球、Flare 已收；不再單獨派） |
@@ -124,7 +124,7 @@
 | mc28 | 13161 | 歐陸自由即興快而乾（ICP Orchestra、Globe Unity、Misha Mengelberg、Irène Schweizer） | |
 | mc29 | 13241 | 冷的 new jack／electro-funk 機械那半（Mantronix、Cybotron、Hashim 系） | |
 | mc30 | 13321 | minimalism 快作（Glass 早期、Reich 冷的那幾張、Michael Nyman 快盤、Terry Riley 電子快盤；暖的落雀躍） | |
-| mc31 | 13401 | AACM／loft jazz／美國自由爵士小編制二線（Art Ensemble of Chicago、Anthony Braxton、Roscoe Mitchell、Henry Threadgill、Julius Hemphill、Oliver Lake） | |
+| mc31 | 13401 | AACM／loft jazz／美國自由爵士小編制二線（Art Ensemble of Chicago、Anthony Braxton、Roscoe Mitchell、Henry Threadgill、Julius Hemphill、Oliver Lake） | ✅ 上線 33／落格 33（併 mc14） |
 | mc32 | 13481 | 無調現代古典／序列主義／新複雜主義（Boulez、Berio、Stockhausen、Carter、Ferneyhough、Xenakis 室內樂；尖細的，厚重音塊落亢奮） | |
 | mc33 | 13561 | glitch／microsound／尖細實驗電子（Oval、Ryoji Ikeda、Alva Noto、Mille Plateaux、raster-noton 薄盤） | |
 | mc34 | 13641 | 日本前衛／即興（高柳昌行、阿部薫、大友良英、Sachiko M、ONJO） | |
@@ -155,8 +155,8 @@
 | ml17 | 15281 | G-funk／西岸慢盤（低頻厚、慢、暖） | 併入 ml16（池中 G-funk 判躁或判輕，挖不到；不再單獨派） |
 | ml18 | 15361 | Houston chopped & screwed／南方慢饒舌（DJ Screw、UGK 慢盤） | 併入 ml16（Big Moe、E.S.G.、MJG、Devin 已收；screwed 版 MB 屬 Remix 不收） |
 | ml19 | 15441 | city pop／AOR 濕的慢歌（新尺下會判重的那些） | |
-| ml20 | 15521 | 台灣／華語 R&B 與 neo-soul | |
-| ml21 | 15601 | 韓國 R&B／indie 恍惚（Colde、Zion.T、offonoff 一類） | |
+| ml20 | 15521 | 台灣／華語 R&B 與 neo-soul | ✅ 上線 17／落格 17（併 ml21、ml29） |
+| ml21 | 15601 | 韓國 R&B／indie 恍惚（Colde、Zion.T、offonoff 一類） | 併入 ml20 |
 | ml22 | 15681 | 日本 neo-soul／R&B（Mabanua、Ovall、SIRUP、Kan Sano、iri） | |
 | ml23 | 15761 | ambient dub／ambient house 暖盤（The Orb、Global Communication、Higher Intelligence Agency） | 併入 ml15（指名藝人池中判輕或判冷，改收暖 world／psy-dub；不再單獨派） |
 | ml24 | 15841 | 暖的 dream folk／slowcore（殘響厚、溫） | |
@@ -164,5 +164,5 @@
 | ml26 | 16001 | 非洲與巴西的慢而厚（MPB 濕的盤、desert blues 慢盤、afro-soul 慢盤） | |
 | ml27 | 16081 | 暖的 vaporwave 之外的 sample-based ambient pop | |
 | ml28 | 16161 | 70s soft rock／yacht 慢而濕的（新尺下會判重的） | |
-| ml29 | 16241 | 華語／日本 dream pop 二線 | |
+| ml29 | 16241 | 華語／日本 dream pop 二線 | 併入 ml20 |
 | ml30 | 16321 | 暖 ambient／new age 厚墊（溫而霧，不是空氣感的極簡） | |

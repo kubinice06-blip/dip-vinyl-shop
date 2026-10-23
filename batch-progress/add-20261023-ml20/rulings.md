@@ -93,3 +93,17 @@
 - **15592** `desc2:SUMIN|Your Home`：「2019 年 SUMIN 憑它拿下韓國大眾音樂獎最佳 R&B 靈魂歌曲獎。」→「2019 年，這張拿下韓國嘻哈獎的最佳 R&B 靈魂專輯獎。」依據：研究稿同條，歌曲獎掛在專輯上語意不準，改用研究稿同條的專輯獎。
 - **15593** 核對 LINION《Leisurely》第 12 屆金音創作獎最佳節奏藍調專輯：中文維基得獎表 {{won}} 確認，保留。
 - 其餘 15 張逐張審過，未改字。qa-batch out、qa-check-research（兩檔 0 標記）、fix-spacing 重跑全過。
+
+## 上線（不佔條號）
+- 上線 17：card_catalog 17/17、KV 25 鍵（含別名鍵）回讀逐字一致、試聽 15 ready（人工配 3；LINION《Leisurely》Apple 查無、1 張未配）、seed +17、published gate 0 error。封面 CAA 16＋Discogs 1（LINION《Leisurely》人工身分，已登錄 `data/discogs-cover-registry.json`），live-check 17/17。上線前對 origin 63 分支 seed 去重 0 撞。
+- 冷門軸：非拉丁掛名與台灣藝人 10 張照 §0.8 錨點制人工（`ratings-override.json`，source `manual:regional-rubric`）。
+- 類型樹 17/17 落位：`rock-asia-country-map.json` 補 DSPS（tw）、声音玩具（cn）、The fin.／pasteboard／cero／岡田拓郎／森は生きている（jp）；`genre-l3-artist-map.json` 的 `soul/neo-soul` 補問題總部。台灣卡無流行大類，`tw-pop-artists.json` 不需加（同 ml4 先例）。
+
+## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-ml20/`）
+- 照 10-23 體感標準評分（conf mid 9、low 8）。**上線 17；落恍惚 17/17＝100%**。
+- 邊界：方大同《橙月》y 0.5（剛好過重的門檻）；声音玩具 z 0.2、cero《e o》z 0.3、OFFONOFF z 0.4、The fin. z 0.4（色溫貼邊）；SUMIN x 2.8。評分 low 占一半，東亞 R&B／indie 評分把握度低，下輪同場景不宜放寬邊距。
+- 產量：**主場景見底**——策展兩輪 36、主線汰 11（EP、色溫貼邊、能量貼邊）、研究汰 8（搖滾／jangle、爵士放克、嘻哈推進、bright pop、短而乾的 smooth R&B）→ 17。華語主流 R&B 池中多判輕、韓國 mini album 居多，ml20／ml21／ml29 三列合併後已無大池子。
+- 八格（本分支，build-card-moods 後）：恍惚 1,143、冷冽 1,320、頹靡 1,279。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+LINION、方大同、OFFONOFF、Hoody、죠지、DSPS、The fin.、pasteboard、岡田拓郎、森は生きている、声音玩具、cero、問題總部（13 位）。

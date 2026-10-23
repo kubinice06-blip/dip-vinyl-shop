@@ -122,3 +122,17 @@
   - `desc2:Air|Open Air Suit`：刪「音樂複雜卻終究合乎邏輯」（單源評語）。
 - **13472** `desc2:Anthony Braxton|3 Compositions of New Jazz` hook 語序：「標題是一串圖形的，三首裡占了兩首。」→「三首裡有兩首，標題是一串圖形。」（原句「圖形的」懸空）。已同步 hooks-a 與 writer-1 輸入。
 - 其餘 27 張逐張審過，未改字。qa-batch out／hooks、qa-check-research（兩檔 0 標記）、fix-spacing 重跑全過。
+
+## 上線（不佔條號）
+- 上線 33：card_catalog 33/33、KV 33 鍵回讀逐字一致、試聽 29 ready（主線人工配對 10；Congliptious、Lifea Blinec、Shine!、Point of No Return Apple 查無）、seed +33、published gate 0 error。封面 CAA 28＋Apple 官方圖 5（CAA 缺），live-check 33/33。上線前對 origin 63 分支 seed 去重 0 撞。
+- 三軸覆寫：Leroy Jenkins《Ai Glatson》classic 1→2；Roscoe Mitchell《3 x 4 Eye》機器 4/5/5 失真→classic 3、accessibility 4（避免誤成 legendary）。
+- 類型樹 33/33 落位；`genre-l3-artist-map.json` 的 `jazz/free/avant` 補 4 個合掛名＋`Chick Corea|Is`（藝人層標籤把本張掛進 fusion/smooth，加掛 free/avant；smooth 誤標留給本機整理標籤）。
+
+## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-mc31/`）
+- 照 10-23 體感標準評分（conf high 1、mid 24、low 8）。**上線 33；落冷冽 33/33＝100%**。
+- 邊界：x 3.0–3.1 的 6 張全是 AACM 留白／點描型（Braxton《For Trio》《3 Compositions》、Mitchell《Sound》《Duets》《Congliptious》、AEC《Reese》）——「安靜但讓人發毛」照體感算躁，剛好過線。下一批 AACM 留白型仍可收，但不能再更靜。
+- 產量：策展 54、主線汰 9、研究汰 12 → 33。研究汰換主因是標準曲／藍調主題明確（判暖）與室內樂／冥想段（判靜）。mc14 前衛 hard bop 頭牌已在池，只收 1 張。
+- 八格（本分支，build-card-moods 後）：冷冽 1,320、恍惚 1,143、頹靡 1,279。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Leroy Jenkins、Revolutionary Ensemble、Jimmy Lyons、John Carter & Bobby Bradford（4 位）。另有合掛名變體需要別名鍵指回既有藝人：Roscoe Mitchell Sextet／The Roscoe Mitchell Art Ensemble／Roscoe Mitchell and The Sound Ensemble／Roscoe Mitchell, Anthony Braxton（→ Roscoe Mitchell）、Jimmy Lyons & Sunny Murray Trio／Jimmy Lyons / Andrew Cyrille（→ Jimmy Lyons）、John Carter & Bobby Bradford Quartet／John Carter / Bobby Bradford（→ John Carter & Bobby Bradford）。

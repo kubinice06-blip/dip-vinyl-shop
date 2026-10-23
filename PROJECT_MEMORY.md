@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 4 輪 ml20／mc31：東亞 R&B／dream pop 17＋AACM／loft 自由爵士 33 張上線，落格 17/17、33/33
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」，本工作階段負責 ml20、mc31（體感標準）。ml20（`add-20261023-ml20`，恍惚：台灣／華語 R&B＋ml21 韓國 R&B／indie＋ml29 華語／日本 dream pop）：LINION 2、方大同 2、Hoody 2、OFFONOFF、죠지、SUMIN、問題總部、DSPS、The fin.、pasteboard、岡田拓郎、森は生きている、声音玩具、cero。mc31（`add-20261023-mc31`，冷冽：AACM／loft／美國自由爵士小編制＋mc14）：Braxton 5、Roscoe Mitchell 4、AEC 3、Air 3、Revolutionary Ensemble 3、Carter & Bradford 3、Oliver Lake 2、Abrams 2、Sam Rivers 2、Jimmy Lyons 2、Leroy Jenkins、WSQ、Marion Brown《Porto Novo》、Chick Corea《Is》。
+- **策展→研究汰換**：ml20 策展兩輪 36、主線汰 11（Colde 兩張實為 EP、色溫／能量貼邊）、研究汰 8 → 17（場景見底）；mc31 策展 54、主線汰 9、研究汰 12（標準曲判暖、室內樂判靜、人聲／厚低頻判重）→ 33。年份更正：Braxton《Quartet (London) 1985》→1988、Marion Brown《Porto Novo》→1969。
+- **主線審稿**：ml20 改 2（죠지《FRR》研究稿把翻唱 EP 與正規專輯先後寫反，hook／研究／輸入三層同步；SUMIN 獎項改專輯獎）；mc31 改 6（5 處單源評價句、1 處 hook 語序）。
+- **上線**：card_catalog 17＋33、KV 25＋33 鍵回讀逐字一致、試聽 15＋29 ready（人工配 3＋10）、seed +50、published gate 兩批 0 error；封面 CAA 44、Apple 5、Discogs 1（LINION《Leisurely》，已登錄 registry），live-check 50/50。上線前對 origin 63 分支 seed 去重 0 撞。冷門軸 ml20 10 張照 §0.8 人工。
+- **情緒評分**：`score-ml20`、`score-mc31`。**ml20 落恍惚 17/17、mc31 落冷冽 33/33**。八格（本分支）：恍惚 1,143、冷冽 1,320、頹靡 1,279。
+- **類型樹**：50/50 落位；`rock-asia-country-map.json` 補 7 個亞洲團、`genre-l3-artist-map.json` 補 `jazz/free/avant`（4 個合掛名＋Corea《Is》）與 `soul/neo-soul`（問題總部）。台灣卡無流行大類，`tw-pop-artists.json` 不動。
+- **藝人介紹**：未切（並行規矩）；新藝人 17 位列在兩批 rulings.md 末尾（ml20 13、mc31 4，另 mc31 有 7 個合掛名需別名鍵）。
+- **主要檔案**：`batch-progress/add-20261023-{ml20,mc31}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml20,mc31}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml20,mc31}/`、`onboarding-manifest-add-20261023-{ml20,mc31}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml20,mc31}-*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`data/mood/*`、`genre-l3-artist-map.json`、`rock-asia-country-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`。
+- **驗證**：prepare／published gate 兩批 0 error；KV 回讀 58/58；qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；build-card-moods 錨點 104/104、seed 20,585。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格線改依店主「體感標準」：冷冽轉向自由爵士／現代古典／glitch，拿掉旋律清楚的 synth-pop
 
 - **內容**：店主「我已經改標準了 你檢視一下」→「可以」。檢視時發現評分說明書更新與全池重判已由另一工作階段完成（`felt-rejudge`，1,343 張；能量＝體感、色溫＝聲響溫度＋旋律清楚度），本工作階段只做補卡佇列與派工單：`CUR-DISPATCH.md` 共通節、頹靡節、冷冽節改依體感標準（冷冽＝讓神經繃起來＋尖細＋旋律不明；旋律清楚的 synth-pop 落雀躍；安靜但緊繃也算躁；壓人下沉的 doom 可收進頹靡）；`SCENES.md` 優先序改排 21–31，新增冷冽場景 mc31 AACM／loft jazz、mc32 無調現代古典、mc33 glitch／microsound、mc34 日本前衛即興、mc35 RIO 尖細那半，重開 mc4／mc14／mc22／mc28，暫停 synth-pop／new wave／K-pop／synthwave 續集與 ml14 spiritual jazz（體感標準判冷）。目前八格 恍惚 1,126、頹靡 1,279、冷冽 1,287。
