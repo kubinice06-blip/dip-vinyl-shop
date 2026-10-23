@@ -95,3 +95,7 @@
 - 19555：`desc2:Robin Guthrie & Harold Budd|After the Night Falls` 刪「樂評拿兩張相比，認為本張較響，也較不朦朧。」——單源比較評價（Erasing Clouds）；事實層未動。
 - 19556：其餘 8 張逐句對回研究稿（Engineers 2010-02-01 離團、Pedigree Cuts、Acetone 1992 成軍／Spinout、Telescopes 1992-05-25 Creation／Untitled 命名、Oak Island 四層人聲、Tears Run Rings 三城）無誤，未改字。正文無媒體名、榜單、據說。
 - 試聽 10/10 ready（Telescopes、Raymonde 主線人工配，見 `preview-override.json`）；封面 CAA 8、Apple 2（Oak Island CAA 404、After the Night Falls CAA 連續 500），兩張 Apple 圖主線目視相符。冷門軸 10 張皆有 Last.fm listeners，照機器基線。
+
+## 情緒評分（上線當天，`batch-progress/mood-axes/score-ml44/`）
+- 10 張照 10-23 體感標準打分（conf mid 6、low 4）→ merge → build-priors → build-scale v0 → build-card-moods（錨點 104/104）。
+- **落恍惚 9/10（90%）**；出格 Engineers《In Praise of More》z −0.1 落頹靡（「略帶疏離」，柔牆 shoegaze 色溫貼 0）。z 貼邊：Engineers《Always Returning》0.0、Tears Run Rings 0.0、Acetone 0.1——shoegaze 二線色溫果然多貼 0，同場景下一批只收甜旋律、明顯暖的 dream pop。
