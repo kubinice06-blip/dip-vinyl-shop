@@ -36,3 +36,28 @@
 - 21424　moodGuess 存疑（中）：Tsktsking（Soundohm 稱細膩帶旋律感、不爆發，Norman 稱 bebop 式互動與律動，x 可能不足、z 偏暖）；Wisdom in Time（Free Jazz Blog 稱部族色彩與舞蹈感節奏，另有〈Pure Stillness〉等標題暗示極弱留白，且 Discogs 與樂評皆未提悶音）；Most Materiall（138 分鐘、單曲最長 29 分鐘，疑判靜或重）；Explore（曲名〈South Africa February Dance〉〈Moonstone〉等，旋律是否抒情無樂評可證，Battaglia 維基稱兼具浪漫旋律）；Imponderable Evidence（Prévost 鈸擦、長曲 15 分鐘，疑判靜）。
 - 21425　thin：Fingerprints、Dada Da、Imponderable Evidence、Most Materiall、Explore 五張找不到樂評（AllAboutJazz、JazzMusicArchives、Squidco、Discogs 網頁 403；Free Jazz Blog 與 Leo／Intakt 站查無對應條目），聲音 facts 僅 Discogs 記事、曲名與藝人一般技法。All About Jazz 另有一筆同名《Fingerprints》D'Agaro（Setola di Maiale）是另一張，勿混。
 - 21426　WebSearch 3 次已用完（Fingerprints、Tsktsking、Duology 各一）。本組只有 8 張（派工寫 9 張，卡單 c 組實為 8）。
+
+## 研究 d 組
+- 21431　8 張皆為錄音室錄音（Discogs 記事皆有錄音日期／棚名：Lumps 1974-09 STEIM 器材、4 Compositions 1970-02-07、Carpathes 1975 兩段柏林、Trap Street 2002-08-12 Gateway、Kochuu 2013-04 studioboerne45、And 1997-08 Moat、Synopsis 1974-04 AMIGA-Studio）；Ichnos 維基只寫 1969–70 錄音，無現場註記。身分（盤名、廠牌、年份）全數吻合；And 的 1999（Rectangle 維基與 Les presses du réel 寫 CD／出版 1999）為晚出版本，卡單 1997 照 Discogs LP／MB 不動。
+- 21432　推翻策展層：And, 並非「吉他、鋼琴、鼓」——Discogs 與出版商皆寫 Steve Noble 只玩唱盤（Turntables）、Pat Thomas 為鍵盤／電子裝置，Discogs 風格 Noise／Experimental／Electronic。moodGuess 存疑（強烈，建議汰換或重聽）：電子／唱盤噪音疑判重，z、y 與預估差距大。
+- 21433　moodGuess 存疑（強烈，建議汰換）：Synopsis，〈Kommt, Ihr G'spielen〉Discogs 作曲欄標 Traditional（借曲／民歌），〈Wenn Der Kleine Finger Nicht Wär〉標題似民謠語彙，〈Traumtänzer〉〈Post Aus Vogelsang〉可能有主題旋律，疑判暖。
+- 21434　moodGuess 存疑（中）：Carpathes（低音單簧管音域低、木質偏暖，Pilz 掛名五首作曲可能有可辨主題；找不到樂評，聲音靠編制，未能確認是否現場，傾向棚錄）；Lumps（Lacy 作曲主題與 Bennink 有音高樂器 Wailophone、Vibra Pan，疑 z 偏暖；STEIM 合成器為脆裂噪音型，未見厚重）；Ichnos（Discogs 標 Amplified Percussion，疑 y 偏重，但 Ben Watson 評語偏音色與噪音而非音量）。
+- 21435　thin：Trap Street（emanemdisc.com 頁面 503，Discogs 登錄 Beresford 為 Electronics／Objects，卡單 curatorRisk 的「玩具鋼琴」未得證；Beresford 諧趣傾向若出現可能偏暖）、Kochuu（聲音靠編制推論；curatorRisk 的長音／極弱靜態段無法驗證，若多為弓擦長音可能判靜，請聽感核對）。
+- 21436　團員來歷有出入：Synopsis 的 Discogs 團體簡介說 1974 年創始成員退出後 Bauer 與 Petrowsky 才加入，Petrowsky 維基與個人簡介卻稱他為 1973 年共同創辦人；facts 只寫成立年，不寫誰是創始成員。Lovens 的 Po Torch 創立年 Discogs 寫 1976、維基寫 1967，採 Discogs。
+- 21437　WebSearch 3 次已用完（And,、Synopsis、Lumps 各一）；Squidco、AllMusic、jazzmusicarchives、Discogs 網頁 403，改走 Discogs API 與 Wikipedia。
+
+## 研究 e 組
+- 21441　5 張皆為錄音室錄音：C/D/E 1998-10-30 Pilot Recording Studios（Discogs、MB 錄音關係）；Beyond Quantum 2008-05-11 Laswell 的 Orange Music 棚內即興（樂評稱 impromptu session）；AGiiiiR 2005-10-04/05 VRT Studio Toots 布魯塞爾；Born to Be Wild 無錄音日期，Discogs 無 live 註記（判棚錄）；Nakamura 2007–08 慕尼黑 BR Studio 2（僅 UNT 圖書館紀錄）。身分（盤名、年份、廠牌）全吻合。
+- 21442　推翻策展層：C/D/E 實為 10 首（非『十二段』），Ehrlich 吹高音與中音薩克斯風、單簧管、長笛（非只單簧管）；AGiiiiR 是四人並列，打擊手是 Lê Quan Ninh，Goudbeek 兼低音單簧管；Beyond Quantum 的 Orange Music 棚是錄音兼混音，不只混音。
+- 21443　moodGuess 存疑（強烈，建議汰換）：C/D/E——Jazzword 稱『出奇地抒情』，Ehrlich 中音薩克斯風像 Cannonball Adderley、〈A Simple Melody〉〈Aubade〉旋律清楚、〈BBJC〉Dixieland 風，Cyrille 鼓如現代藍調樂團，疑判暖。Born to Be Wild——收尾是 John Kay 搖滾歌（Steppenwolf 名曲）David Lang 打擊改編（借曲、旋律清楚），另有兩首要演奏者朗誦（Toucher、To the Earth 用四個花盆）、Rebonds A 兩面大鼓、Anvil Chorus 重擊廢金屬，疑判暖或重。
+- 21444　moodGuess 存疑（中）：Beyond Quantum（63 分鐘、Braxton 吹到 contrabass 薩克斯風、Graves 非洲複節奏與人聲呼喊、樂評多處講 groove 與 bop 藍調，疑判重或判暖，Graves 先例）；AGiiiiR（〈Jawadde〉近 24 分鐘含低音單簧管低顫音與低音提琴 pedal point ostinato，疑 y 偏重；Ninh 刮擦段落若判靜）；Nakamura（Eötvös《Thunder》低音踏板定音鼓、Rebonds 大鼓，疑 y 偏重；Kagel〈Solo〉含人聲與鈴鼓）。
+- 21445　WebSearch 3 次已用完（Schick、Nakamura、Beyond Quantum 各一）；AllMusic、AAJ、Squidco、Discogs 網頁 403，改走 Discogs API、MB API、DuckDuckGo 摘要、Jazzword、廠牌／作曲家官網、silent-watcher 轉錄的 AAJ／AllMusic 原文。C/D/E 的 Jazzword 評語（Waxman，2001）與 AGiiiiR 小冊子（Waxman，2008）為主要聲音來源。Nakamura 生平單一來源（Neos 廠方文案經 Europadisc 轉載），Schick 錄音首作之說未能驗證、未採。
+
+## 主線：研究後汰換（不佔條號）
+- 研究五組 37 張，汰 24（卡單、研究稿、`pick.json` 同步移除；a 6、b 6、c 4、d 3、e 5）：
+  - 長音／殘響／冥想留白（判靜；池中 Cyrille 獨奏《What About?》x 2.9 落平靜、Oxley《February Papers》x 2.6 先例）：Fritz Hauser《Solodrumming》（空中庭七秒殘響）、Lê Quan Ninh《Ustensiles》（頌缽、風鈴、大鼓共鳴）、Pierre Favre《Abanaba》（鑼鈸殘響）、Andrew Cyrille《The Loop》（節奏動機、獨奏先例）、Parker & Prévost《Most Materiall》（138 分鐘、長曲）、John Edwards / Chris Corsano《Tsktsking》（細膩、不爆發）、Smith / Sommer《Wisdom in Time》（〈Pure Stillness〉等極弱段、部族舞蹈節奏）。
+  - 厚重／電子（判重）：Tatsuya Nakatani《Abiogenesis》（37–40 吋巨鑼低頻）、《Primal Communication》（57 分鐘單軌、Rhythmic Noise）、Corsano《Another Dull Dawn》（Electronic、零樂評）、Zerang《Cedarhead》（錄音帶／電子 27 分鐘、大廳殘響）、Bailey／Thomas／Noble《And,》（唱盤＋電子噪音，非原聲三重奏）、Braxton／Graves／Parker《Beyond Quantum》（63 分鐘高密度、contrabass 薩克斯風）、Steven Schick《Born to Be Wild》（兩面大鼓、廢金屬重擊、Steppenwolf 改編、朗誦）、Isao Nakamura（低音定音鼓〈Thunder〉、Rebonds 大鼓）、Goudbeek 等《AGiiiiR》（低音單簧管 pedal point、24 分鐘長曲）。
+  - 借曲／旋律／搖擺（判暖）：Eskelin & Bennink《Dissonant Characters》（Monk 曲）、Melford & Bennink《Eleven Ghosts》（Leroy Carr、Joplin、boogie／stride）、Bennink + Douglas《Serpentine》（三首標準曲）、Cyrille《Duology》（旋律線、swing；實為 Ted Daniel／Michael Marcus 雙人組）、Lacy 等《Lumps》（Lacy 作曲主題、有音高樂器；池中 Lacy 多判靜）、Synopsis《Synopsis》（Traditional 借曲）、Cyrille／Dresser／Ehrlich《C/D/E》（「出奇地抒情」、Dixieland 曲）、Graves《Percussion Ensemble》（Graves 手鼓判暖先例）。
+- 研究推翻（正文以研究稿為準，卡單欄位不動）：Explore 十三首；Imponderable Evidence Parker 吹次中音；Born to Be Wild、C/D/E 已汰。
+- 留下但存疑、交評分裁定：Corsano《Cut》（改造簧管、弓拉持續音）、Favre & Centazzo《Dialogues》（鑼鈸）、Parker & Prévost《Imponderable Evidence》（鈸擦、15 分鐘）、Battaglia & Oxley《Explore》（Battaglia 兼浪漫旋律）、Pilz／Kowald／Lovens《Carpathes》（低音單簧管）、Oxley《Ichnos》（擴音打擊）、thin 多張（Fingerprints、Dada Da、Directly to Pyjamas、Trap Street、Kochuu 聲音只靠編制）。
+- **定案 13 張**（a 2、b 2、c 4、d 5、e 0），不湊數。主場景見底：鼓獨奏多是現場（策展擋約 40）、或長音冥想（判靜）、或大鼓金屬（判重）；Graves／Cyrille 的手鼓與搖擺語彙往暖。能穩收的是**鼓＋單一尖細樂器的乾二重奏、鼓手領軍的歐陸自由即興小編制（Oxley、Turner、Lovens 系）**。**mc42 不再派**。
