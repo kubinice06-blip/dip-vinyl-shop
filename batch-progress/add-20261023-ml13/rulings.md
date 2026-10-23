@@ -46,3 +46,9 @@
 ## 研究 e 組
 - 15001：Spiritualized《Sweet Heart Sweet Light》moodGuess 存疑：BBC 稱 grandiose and muscular、Pitchfork 稱最 uplifting，且有 Les Paul／Jazzmaster 吉他牆與 6 到 9 分鐘長曲，推進感可能高於「慢中板」，x 偏高風險；廠牌卡單 Fat Possum 為美版，英歐版 Double Six。
 - 15002：Flaming Lips《American Head》moodGuess 有 Consequence「mid-tempo balladry／relatively languid pace」支持；鼓與 riff 推進無描述，殘響乾濕無直接描述（Pitchfork 被擋），留作主線判斷。廠牌 Warner（美）／Bella Union（英）並存；MB 最早 2020-08-28 為數位，實體 9 月 10–11 日，年份 2020 不變。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- **汰 12 張**（研究層聲音反證）：Brant Bjork《Keep Your Cool》（中速 blues／funk riff 推進）、Dead Meadow《Feathers》（樂團自述 intentionally dark and murky，色溫判冷風險）、《Shivering King and Others》（短而有勁的歌）、Colour Haze《Tempel》（中段推進＋shuffle）、Kikagaku Moyo《Forest of Lost Children》（jam／blues、慢速 fuzz 無來源）、Jonathan Wilson《Fanfare》（crisp hi-fi、鋼琴核心，判輕）、Jim James《Regions of Light and Sound of God》（放克／迪斯可鼓、stop-start 律動）、Spiritualized《Sweet Heart Sweet Light》（grandiose and muscular）、Bo Hansson《Sagan om ringen》（管風琴 quiet yet sinister，色溫判冷）、Dirtmusic《Troubles》（propulsive Afro-rock）、Som Imaginário（fuzz／wah 律動盤，慢曲只兩首小品）、FoDM《Retrograde》（短曲＋衝浪翻奏，殘響無來源）。研究稿條目移出研究檔，卡單存 `dropped-cards.json`。不補位（策展候補全是同型或池中同人判輕）。
+- **廠牌照研究層改**：Brant Bjork《Jalamanta》Mammoth→Man's Ruin Records；Besnard Lakes《…Last of the Great Thunderstorm Warnings》Fat Possum→Flemish Eye；Lord Huron《Long Lost》→Whispering Pines / Republic。
+- 定案 **14 張**（a 2、b 4、c 3、d 4、e 1）。ml13 場景（暖慢迷幻搖滾）與 ml26（非洲／巴西慢而厚）都見底：desert blues 與 MPB 池中判輕，stoner／desert rock 多有 riff 推進，能穩落恍惚的只剩殘響厚、旋律清楚的 psych-pop／dream-psych（Besnard Lakes、Lord Huron、Flaming Lips 後期、Lanois）。**ml13、ml26 不再派。**
+- **跨工作階段撞卡（上線前去重）**：Jim James《Eternally Even》、The Flaming Lips《American Head》也在 ml24 工作階段（`claude/mood-ml24-md21`）的卡單裡；ml24 優先序在前，讓給 ml24，本批移出（存 `dropped-cards.json`）。定案 **12 張**（a 2、b 4、c 3、d 3、e 0）。對 origin 65 個分支 seed 去重 0 撞。
