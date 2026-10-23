@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 9 輪 ml43／mc36：暖 post-rock 21 張、no wave＋Downtown 即興 20 張上線，落格 17/21、18/20
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 9 輪，本工作階段負責 ml43、mc36（評分照 10-23 體感標準）。ml43（`add-20261023-ml43`，恍惚：暖 post-rock／ambient post-rock）：Hammock《Elsewhere》、Eluvium ×2、Jónsi & Alex《Lost and Found》、Mountains《Choral》、Christopher Willits ×2、Hugar ×2、The American Dollar ×3、Immanu El ×3、Epic45 ×2、Rhian Sheehan ×2、Lights & Motion《Chronicle》、Olan Mill《Paths》。mc36（`add-20261023-mc36`，冷冽：no wave＋Downtown 即興／skronk＋尖細後裔）：Mars & DNA《John Gavanti》、Ut《Conviction》、John Zorn《Pool》《Classic Guide》×2《Cobra》、Bailey／Lewis／Zorn《Yankees》、Zorn & 佐藤通弘《Ganryu Island》、Chadbourne & Zorn《School》、《Environment for Sextet》、David Moss《Full House》、Cora & Moss《Cargo Cult Revival》、Zeena Parkins《Nightmare Alley》、Ostertag ×2、Lithics ×2、Zs、Cheval de Frise ×2。
+- **策展→研究汰換**：ml43 策展 40、主線汰 4、研究汰 15（偏冷字眼、鼓＋漸強爆發、乾淨鋼琴）→ 21；mc36 策展 39、主線汰 7、研究汰 12（鼓組＋貝斯判重、現場；no wave 本體多 EP）→ 20。
+- **主線審稿**：ml43 改 1 處（單源樂評評價句刪）；mc36 改 4 處（〈Aoyama Michi〉誤譯「青山通」→青山ミチ，四層同步；單源評價 3 句刪）。
+- **上線**：card_catalog 21＋20、KV 41 鍵回讀逐字一致、試聽 19＋12 ready（人工配 5）、seed +41、published gate 兩批 0 error；封面 CAA 36、Discogs 3（已登錄 registry）、Apple 2，live-check 全 200。上線前對 origin 近期分支 seed＋卡單去重 0 撞。冷門軸 3 張 Last.fm 異常改人工。
+- **情緒評分**：`score-ml43`、`score-mc36`。**ml43 落恍惚 17/21（81%）**（出格 4 張鋼琴／鐘琴在前判輕落放鬆）、**mc36 落冷冽 18/20（90%）**（Mars & DNA、Ut 噪音吉他判重落暴躁）。八格（併 main 後，含 main 的邊界卡重判）：恍惚 1,385、冷冽 1,402、頹靡 1,404。
+- **類型樹**：41/41 落位；mc36 4 張多人合掛名 Last.fm 無標籤，seed 曲風欄補 jazz（＋electronic），`genre-l3-artist-map.json` 補 jazz/free 4 筆；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 26 個掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{ml43,mc36}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml43,mc36}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml43,mc36}/`、`onboarding-manifest-add-20261023-{ml43,mc36}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml43,mc36}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 41/41；build-card-moods 寫入成功。
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 9 輪 ml42／ml45：lo-fi jazzhop 暖盤 26 張、rocksteady 歌手濕混音慢板盤＋lovers dub 17 張上線，落格 26/26、17/17
 
 - **內容**：店主「三個情緒薄格各補到約 2,000」第 9 輪＋「恍惚可以多增加一點 downtempo 與 dub」，本工作階段負責 ml42、ml45（評分照 10-23 體感標準）。ml42（`add-20261023-ml42`，恍惚：lo-fi hip-hop／jazzhop 暖盤＋暖的 instrumental hip-hop）：Kupla ×2、sleepy fish、jinsang ×5、SwuM. & Jinsang、SwuM.、Wun Two ×4、Ohbliv ×4、mt. fujitive ×3、Purrple Cat ×2、Hoogway、less.people ×2。ml45（`add-20261023-ml45`，恍惚：rocksteady／early reggae 慢歌＋lovers 剩餘）：John Holt ×6（Junjo／Channel One 期）、Justin Hinds、Wailing Souls、Delroy Wilson ×2、Horace Andy《Showcase》、Alton Ellis《A New Day》、Cornell Campbell《Rock My Soul》、Horace Andy & Jah Wobble、Frightnrs《More To Say Versions》、Hollie Cook dub 版 ×2。

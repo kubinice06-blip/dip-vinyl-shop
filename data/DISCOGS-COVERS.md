@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **384** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 146、已退回 1）。
+共 **387** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 149、已退回 1）。
 最後更新：2026-10-23
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -260,6 +260,14 @@
 | Ensemble Recherche 《Lachenmann: Streichtrio / temA / Trio fluido》 | [#8452244](https://www.discogs.com/release/8452244) | 1994 | Montaigne | MO 782023 | 唯一版本、主線目視與盤名相符 | ok |
 | musikFabrik 《Saunders: Quartet / Into the Blue / Molly's Song 3 / Dichroic Seventeen》 | [#28193908](https://www.discogs.com/release/28193908) | 2001 | Kairos | 0012182KAI | Discogs master 3231034 的版本、主線目視與盤名相符 | ok |
 | Nieuw Ensemble 《Ferneyhough: La Chute d'Icare / Superscriptio / Intermedio alla Ciaccona / Études transcendantales / Mnemosyne》 | [#10520400](https://www.discogs.com/release/10520400) | 1989 | Etcetera (3) | KTC 1070 | 唯一版本、主線目視與盤名相符 | ok |
+
+## add-20261023-mc36（3 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Mars & DNA 《John Gavanti: An Operetta》 | [#404849](https://www.discogs.com/release/404849) | 1980 | Hyrax Records | HY-101 | Discogs master 280023 的版本、主線目視與盤名相符 | ok |
+| Tom Cora, David Moss 《Cargo Cult Revival》 | [#1003533](https://www.discogs.com/release/1003533) | 1983 | Rift | RIFT 5 | Discogs master 2089672 的版本、主線目視與盤名相符 | ok |
+| Zeena Parkins 《Nightmare Alley》 | [#661500](https://www.discogs.com/release/661500) | 1993 | Table Of The Elements | H 1 | Discogs master 87550 的版本、主線目視與盤名相符 | ok |
 
 ## add-20261023-md11（4 張）
 

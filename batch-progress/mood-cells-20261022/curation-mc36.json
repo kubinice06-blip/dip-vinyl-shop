@@ -1,0 +1,1175 @@
+{
+ "group": "mc36",
+ "factions": [
+  {
+   "id": "no-wave",
+   "zh": "no wave 正統與東京",
+   "count": 6,
+   "why": "核心 no wave 正規專輯極少（DNA／Teenage Jesus／Theoretical Girls 無正規專輯），收能釘住的"
+  },
+  {
+   "id": "downtown-skronk",
+   "zh": "Downtown 即興／skronk",
+   "count": 19,
+   "why": "Zorn、Sharp、Moss、Ostertag、Marclay 等乾尖型"
+  },
+  {
+   "id": "nowave-descendant",
+   "zh": "no wave 後裔（薄 art-punk／skronk）",
+   "count": 14,
+   "why": "乾淨或木吉他、低頻少的後裔"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Mars & DNA",
+   "album": "John Gavanti: An Operetta",
+   "year": 1980,
+   "label": "Hyrax",
+   "country": "us",
+   "faction": "no-wave",
+   "genres": [
+    "rock",
+    "experimental"
+   ],
+   "why": "Mars 成員與 DNA 的 Ikue Mori 合作的 no wave 歌劇，被稱為最難聽的唱片之一；刮擦弦樂、斷裂人聲，緊張無調",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -1.8,
+    "why": "刮擦大提琴與小號、零碎打擊，乾薄無低頻，無調駭人"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bcfda955-b2a1-34f1-b8f8-f130a4ab2ad6",
+    "https://en.wikipedia.org/wiki/John_Gavanti",
+    "https://trouserpress.com/?p=2439"
+   ],
+   "mbRgMbid": "bcfda955-b2a1-34f1-b8f8-f130a4ab2ad6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 條目無日期與廠牌（年份照維基 1980，Trouser Press 記 1981）；封面僅維基／Discogs 可得"
+  },
+  {
+   "artist": "Ut",
+   "album": "Conviction",
+   "year": 1985,
+   "label": "Out",
+   "country": "gb",
+   "faction": "no-wave",
+   "genres": [
+    "rock",
+    "post-punk"
+   ],
+   "why": "倫敦的紐約 no wave 樂團 Ut 首張正規專輯；三人輪換樂器，吉他刮擦尖細、節奏斷裂",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.1,
+    "z": -1.4,
+    "why": "乾瘦刮擦吉他與斷裂鼓，錄音薄，低頻少，旋律不明"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/08360478-b04d-4c28-8ad1-42a9993c34bc",
+    "https://coverartarchive.org/release-group/08360478-b04d-4c28-8ad1-42a9993c34bc/front",
+    "https://www.discogs.com/master/282007"
+   ],
+   "mbRgMbid": "08360478-b04d-4c28-8ad1-42a9993c34bc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "吉他偶有破音，評分 y 可能偏高到 0.4–0.5"
+  },
+  {
+   "artist": "Ut",
+   "album": "In Gut's House",
+   "year": 1988,
+   "label": "Blast First",
+   "country": "gb",
+   "faction": "no-wave",
+   "genres": [
+    "rock",
+    "post-punk"
+   ],
+   "why": "Ut 第二張，Blast First 發行；延續 no wave 的不協和雙吉他互咬與冷硬念唱",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.2,
+    "z": -1.4,
+    "why": "不協和雙吉他互刮、乾鼓，緊繃，冷而無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/821371a0-6bf2-3789-994e-e7b2f6225f33",
+    "https://coverartarchive.org/release-group/821371a0-6bf2-3789-994e-e7b2f6225f33/front"
+   ],
+   "mbRgMbid": "821371a0-6bf2-3789-994e-e7b2f6225f33",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼近邊距（估 0.2），主線汰換先看這張"
+  },
+  {
+   "artist": "Phew",
+   "album": "A New World",
+   "year": 2015,
+   "label": "Bereket",
+   "country": "jp",
+   "faction": "no-wave",
+   "genres": [
+    "electronic",
+    "experimental"
+   ],
+   "why": "日本 no wave 代表 Phew 的極簡電子回歸作；節奏機脈衝、類比合成器嗶聲與冷硬人聲",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -1.6,
+    "why": "乾節奏機脈衝與細碎合成器，薄，人聲疏離冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/318968e5-2966-43da-86c6-60da3aef70a1",
+    "https://coverartarchive.org/release-group/318968e5-2966-43da-86c6-60da3aef70a1/front"
+   ],
+   "mbRgMbid": "318968e5-2966-43da-86c6-60da3aef70a1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 估 3.4；池中 Phew 首作評 3.2，可能貼邊"
+  },
+  {
+   "artist": "Phew",
+   "album": "New Decade",
+   "year": 2021,
+   "label": "Mute",
+   "country": "jp",
+   "faction": "no-wave",
+   "genres": [
+    "electronic",
+    "experimental"
+   ],
+   "why": "Phew 在 Mute 的作品，脈衝電子與切碎人聲，延續 no wave 的不安感",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.2,
+    "z": -1.6,
+    "why": "急促合成器脈衝、尖細雜訊，乾，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d303e754-d395-4f71-9dc9-33579879aa1f",
+    "https://music.apple.com/us/album/new-decade/1576606028"
+   ],
+   "mbRgMbid": "d303e754-d395-4f71-9dc9-33579879aa1f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 同上可能貼邊"
+  },
+  {
+   "artist": "Arto Lindsay Trio",
+   "album": "Aggregates 1-26",
+   "year": 1995,
+   "label": "Knitting Factory Works",
+   "country": "us",
+   "faction": "no-wave",
+   "genres": [
+    "rock",
+    "experimental"
+   ],
+   "why": "DNA 的 Arto Lindsay 以三人編制錄下 26 段短噪音即興，未調音十二弦刮擦是 no wave 吉他原型",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.1,
+    "z": -1.6,
+    "why": "刮擦未調音吉他碎片、乾鼓，短促緊繃"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0ec63bd8-c898-35de-bb0b-cbd297f928b8",
+    "https://www.discogs.com/release/1450438"
+   ],
+   "mbRgMbid": "0ec63bd8-c898-35de-bb0b-cbd297f928b8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Melvin Gibbs 貝斯可能讓評分 y 偏高"
+  },
+  {
+   "artist": "John Zorn",
+   "album": "Pool",
+   "year": 1980,
+   "label": "Parachute",
+   "country": "us",
+   "faction": "downtown-skronk",
+   "genres": [
+    "jazz",
+    "free improvisation"
+   ],
+   "why": "Zorn 早期遊戲曲，Downtown 即興圈的乾尖原型",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.7,
+    "z": -1.8,
+    "why": "原聲小編制的碎片化尖叫與刮擦，乾，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/21020571-ad95-488e-ac8c-0860185e6689",
+    "https://coverartarchive.org/release-group/21020571-ad95-488e-ac8c-0860185e6689/front"
+   ],
+   "mbRgMbid": "21020571-ad95-488e-ac8c-0860185e6689",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "John Zorn",
+   "album": "Archery",
+   "year": 1981,
+   "label": "Parachute",
+   "country": "us",
+   "faction": "downtown-skronk",
+   "genres": [
+    "jazz",
+    "free improvisation"
+   ],
+   "why": "Zorn 遊戲曲大編制版，Arto Lindsay 等 no wave 圈成員參與，碎裂急促",
+   "moodGuess": {
+    "x": 4,
+    "y": 0,
+    "z": -1.8,
+    "why": "十餘人的碎片化尖聲、鳥哨與刮弦，密而不厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7b0f7331-eabc-46bf-8686-b167fee7c8d5",
+    "https://coverartarchive.org/release-group/7b0f7331-eabc-46bf-8686-b167fee7c8d5/front",
+    "https://en.wikipedia.org/wiki/Archery_(album)"
+   ],
+   "mbRgMbid": "7b0f7331-eabc-46bf-8686-b167fee7c8d5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "編制大，評分 y 可能 0.2–0.4"
+  },
+  {
+   "artist": "Derek Bailey, George Lewis & John Zorn",
+   "album": "Yankees",
+   "year": 1982,
+   "label": "Celluloid",
+   "country": "fr",
+   "faction": "downtown-skronk",
+   "genres": [
+    "jazz",
+    "free improvisation"
+   ],
+   "why": "Bailey／George Lewis／Zorn 三人即興，Downtown 與英式自由即興的交會",
+   "moodGuess": {
+    "x": 3.8,
+    "y": -0.8,
+    "z": -1.8,
+    "why": "吉他點刺、長號噗聲、薩克斯尖鳴，乾而空"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e29ecb85-39df-30ce-90e1-4bd6ff7029a9",
+    "https://coverartarchive.org/release-group/e29ecb85-39df-30ce-90e1-4bd6ff7029a9/front",
+    "https://en.wikipedia.org/wiki/Yankees_(album)"
+   ],
+   "mbRgMbid": "e29ecb85-39df-30ce-90e1-4bd6ff7029a9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Derek Bailey 屬 mc28 藝人；此為三人共同署名，另列"
+  },
+  {
+   "artist": "John Zorn",
+   "album": "Locus Solus",
+   "year": 1983,
+   "label": "Rift",
+   "country": "us",
+   "faction": "downtown-skronk",
+   "genres": [
+    "jazz",
+    "experimental"
+   ],
+   "why": "Zorn 與 Arto Lindsay、Ikue Mori、Christian Marclay 等的短曲即興，no wave 與即興的接點",
+   "moodGuess": {
+    "x": 4.1,
+    "y": 0,
+    "z": -1.6,
+    "why": "鼓機、唱盤刮擦、尖叫人聲的極短碎片，乾薄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5df90594-52a6-34b7-b8b4-8912a5e148c0",
+    "https://coverartarchive.org/release-group/5df90594-52a6-34b7-b8b4-8912a5e148c0/front",
+    "https://en.wikipedia.org/wiki/Locus_Solus_(album)"
+   ],
+   "mbRgMbid": "5df90594-52a6-34b7-b8b4-8912a5e148c0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分軌有 Anton Fier 鼓，y 可能 0.3"
+  },
+  {
+   "artist": "John Zorn",
+   "album": "The Classic Guide To Strategy - Volume One",
+   "year": 1983,
+   "label": "Lumina",
+   "country": "us",
+   "faction": "downtown-skronk",
+   "genres": [
+    "jazz",
+    "free improvisation"
+   ],
+   "why": "Zorn 無伴奏薩克斯與吹嘴、鳥笛獨奏，尖銳刺耳的即興語彙總整理",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -1.1,
+    "z": -1.9,
+    "why": "獨奏吹嘴尖鳴與鳥哨，極乾，高頻刺"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/650404b5-325f-4212-8770-3850d4e02eef",
+    "https://coverartarchive.org/release-group/650404b5-325f-4212-8770-3850d4e02eef/front"
+   ],
+   "mbRgMbid": "650404b5-325f-4212-8770-3850d4e02eef",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "John Zorn",
+   "album": "The Classic Guide to Strategy - Volume Two",
+   "year": 1986,
+   "label": "Lumina",
+   "country": "us",
+   "faction": "downtown-skronk",
+   "genres": [
+    "jazz",
+    "free improvisation"
+   ],
+   "why": "Classic Guide 續篇，同樣是無伴奏的尖嘯、咬簧與呼吸聲",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -1.1,
+    "z": -1.9,
+    "why": "獨奏薩克斯尖鳴與鳥笛，乾，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/69ee82f3-3ffb-40ed-9a20-30c5812b7a4f",
+    "https://coverartarchive.org/release-group/69ee82f3-3ffb-40ed-9a20-30c5812b7a4f/front"
+   ],
+   "mbRgMbid": "69ee82f3-3ffb-40ed-9a20-30c5812b7a4f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "John Zorn & Sato Michihiro",
+   "album": "Ganryu Island",
+   "year": 1985,
+   "label": "Yukon",
+   "country": "us",
+   "faction": "downtown-skronk",
+   "genres": [
+    "jazz",
+    "free improvisation"
+   ],
+   "why": "Zorn 與津輕三味線佐藤通弘的二重即興，撥弦與吹嘴互刺",
+   "moodGuess": {
+    "x": 3.8,
+    "y": -1.2,
+    "z": -1.6,
+    "why": "三味線硬撥與薩克斯尖叫對打，極乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3267f90b-311d-31c8-907b-553645e00e78",
+    "https://coverartarchive.org/release-group/3267f90b-311d-31c8-907b-553645e00e78/front",
+    "https://www.discogs.com/master/15498"
+   ],
+   "mbRgMbid": "3267f90b-311d-31c8-907b-553645e00e78",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Eugene Chadbourne & John Zorn",
+   "album": "School",
+   "year": 1978,
+   "label": "Parachute",
+   "country": "us",
+   "faction": "downtown-skronk",
+   "genres": [
+    "jazz",
+    "free improvisation"
+   ],
+   "why": "Chadbourne 與 Zorn 的早期作曲／即興分面盤，Downtown 即興的起點之一",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -1,
+    "z": -1.7,
+    "why": "原聲吉他刮弦與吹嘴尖音，零碎，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0cb3cdea-75ad-419e-b271-02a38a3d9fa0",
+    "https://coverartarchive.org/release-group/0cb3cdea-75ad-419e-b271-02a38a3d9fa0/front"
+   ],
+   "mbRgMbid": "0cb3cdea-75ad-419e-b271-02a38a3d9fa0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 估 3.4，偏獨奏的段落可能被評 3.2"
+  },
+  {
+   "artist": "Polly Bradfield, Andrea Centazzo, Eugene Chadbourne, Tom Cora, Toshinori Kondo, John Zorn",
+   "album": "Environment for Sextet",
+   "year": 1979,
+   "label": "Ictus",
+   "country": "it",
+   "faction": "downtown-skronk",
+   "genres": [
+    "jazz",
+    "free improvisation"
+   ],
+   "why": "Chadbourne、Zorn、Polly Bradfield、Tom Cora、近藤等人六重奏，Downtown 第一代即興同場",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.6,
+    "z": -1.8,
+    "why": "小提琴、大提琴、吉他、吹嘴的尖細碎片互撞，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bb5a3b86-a9c8-422e-a6fb-ad2a3c8de203",
+    "https://coverartarchive.org/release-group/bb5a3b86-a9c8-422e-a6fb-ad2a3c8de203/front"
+   ],
+   "mbRgMbid": "bb5a3b86-a9c8-422e-a6fb-ad2a3c8de203",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "John Zorn",
+   "album": "Cobra",
+   "year": 1987,
+   "label": "hat ART",
+   "country": "ch",
+   "faction": "downtown-skronk",
+   "genres": [
+    "jazz",
+    "experimental"
+   ],
+   "why": "Zorn 最著名的遊戲曲，Arto Lindsay、Elliott Sharp 等 Downtown 噪音圈群奏",
+   "moodGuess": {
+    "x": 4.2,
+    "y": 0.1,
+    "z": -1.6,
+    "why": "急切換的碎片：尖吉他、唱盤、豎琴與電子，跳接"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cd2918ce-9eee-3a47-960a-1df4d745f8cb",
+    "https://coverartarchive.org/release-group/cd2918ce-9eee-3a47-960a-1df4d745f8cb/front",
+    "https://www.discogs.com/master/55553"
+   ],
+   "mbRgMbid": "cd2918ce-9eee-3a47-960a-1df4d745f8cb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "電聲多，y 可能 0.3–0.5"
+  },
+  {
+   "artist": "Elliott Sharp",
+   "album": "Nots",
+   "year": 1982,
+   "label": "Glass",
+   "country": "gb",
+   "faction": "downtown-skronk",
+   "genres": [
+    "jazz",
+    "experimental"
+   ],
+   "why": "Elliott Sharp 早期多軌獨作，雙頸吉他刮擦、薩克斯與磁帶，Downtown 噪音吉他乾尖型",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.3,
+    "z": -1.7,
+    "why": "刮弦泛音、吹嘴尖音與磁帶碎片，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/43b57d0c-7598-47fb-85f0-4c8a249fb741",
+    "https://coverartarchive.org/release-group/43b57d0c-7598-47fb-85f0-4c8a249fb741/front",
+    "https://www.discogs.com/master/32910"
+   ],
+   "mbRgMbid": "43b57d0c-7598-47fb-85f0-4c8a249fb741",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Elliott Sharp",
+   "album": "(T)here",
+   "year": 1983,
+   "label": "Zoar",
+   "country": "us",
+   "faction": "downtown-skronk",
+   "genres": [
+    "jazz",
+    "experimental"
+   ],
+   "why": "Sharp 自營 Zoar 早期作，不和諧的金屬刮擦與尖細管樂",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.3,
+    "z": -1.7,
+    "why": "雙頸吉他敲擊、管樂尖鳴，薄而刺"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/603a95bf-212a-47af-9fb1-df8461dbd0f7",
+    "https://music.apple.com/us/album/t-here/1535325192"
+   ],
+   "mbRgMbid": "603a95bf-212a-47af-9fb1-df8461dbd0f7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "對聲音細節把握中等"
+  },
+  {
+   "artist": "Elliott Sharp",
+   "album": "Virtual Stance",
+   "year": 1986,
+   "label": "Dossier",
+   "country": "de",
+   "faction": "downtown-skronk",
+   "genres": [
+    "jazz",
+    "experimental"
+   ],
+   "why": "Sharp 以吉他、低音單簧管與電子做的碎形結構即興",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.2,
+    "z": -1.6,
+    "why": "敲弦點描與尖細電子，乾，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c88b03e1-9c47-4dbc-a769-5f9804c1f815",
+    "https://www.discogs.com/release/577563"
+   ],
+   "mbRgMbid": "c88b03e1-9c47-4dbc-a769-5f9804c1f815",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "對聲音細節把握中等"
+  },
+  {
+   "artist": "David Moss",
+   "album": "Full House",
+   "year": 1984,
+   "label": "Moers Music",
+   "country": "de",
+   "faction": "downtown-skronk",
+   "genres": [
+    "jazz",
+    "free improvisation"
+   ],
+   "why": "鼓手兼人聲 David Moss 與 Arto、Zorn、Frith、Cora 等的二／三重奏，躁動的打擊與怪聲",
+   "moodGuess": {
+    "x": 3.8,
+    "y": -0.6,
+    "z": -1.6,
+    "why": "急促打擊與尖叫人聲、刮弦，乾而空"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a4fba4d9-4c39-40e1-9159-129b15d20805",
+    "https://coverartarchive.org/release-group/a4fba4d9-4c39-40e1-9159-129b15d20805/front"
+   ],
+   "mbRgMbid": "a4fba4d9-4c39-40e1-9159-129b15d20805",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tom Cora, David Moss",
+   "album": "Cargo Cult Revival",
+   "year": 1983,
+   "label": "Rift",
+   "country": "us",
+   "faction": "downtown-skronk",
+   "genres": [
+    "jazz",
+    "free improvisation"
+   ],
+   "why": "Tom Cora 大提琴與 David Moss 打擊的二重即興，Downtown 即興圈早期錄音",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.8,
+    "z": -1.6,
+    "why": "大提琴刮弓與打擊碎點，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d75b1d7c-4f44-4fc9-810c-99f88bd947d4",
+    "https://www.discogs.com/release/1003533"
+   ],
+   "mbRgMbid": "d75b1d7c-4f44-4fc9-810c-99f88bd947d4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Zeena Parkins",
+   "album": "Nightmare Alley",
+   "year": 1993,
+   "label": "Table of the Elements",
+   "country": "us",
+   "faction": "downtown-skronk",
+   "genres": [
+    "jazz",
+    "experimental"
+   ],
+   "why": "Zeena Parkins 電豎琴與 Ikue Mori 鼓機等的 Downtown 噪音室內樂",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.5,
+    "why": "電豎琴刮弦、鼓機點刺，尖細，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9138a606-6bd0-39ce-bf55-35cb6501539a",
+    "https://www.discogs.com/release/661500"
+   ],
+   "mbRgMbid": "9138a606-6bd0-39ce-bf55-35cb6501539a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 估 3.5；對聲音細節把握中等"
+  },
+  {
+   "artist": "Ostertag with Zorn with Frith",
+   "album": "Attention Span",
+   "year": 1990,
+   "label": "RecRec Music",
+   "country": "ch",
+   "faction": "downtown-skronk",
+   "genres": [
+    "electronic",
+    "experimental"
+   ],
+   "why": "Ostertag 取樣機與 Zorn、Frith 的剪接式即興，極端跳接",
+   "moodGuess": {
+    "x": 4.3,
+    "y": 0,
+    "z": -1.8,
+    "why": "取樣碎片急切、尖吹嘴與刮弦，薄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c487288c-3ba9-44c9-94dd-624d8c07b85b",
+    "https://coverartarchive.org/release-group/c487288c-3ba9-44c9-94dd-624d8c07b85b/front"
+   ],
+   "mbRgMbid": "c487288c-3ba9-44c9-94dd-624d8c07b85b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Frith 屬 mc33 藝人；此為 Ostertag 主名，另列"
+  },
+  {
+   "artist": "Bob Ostertag",
+   "album": "Say No More",
+   "year": 1993,
+   "label": "RecRec Music",
+   "country": "gb",
+   "faction": "downtown-skronk",
+   "genres": [
+    "electronic",
+    "experimental"
+   ],
+   "why": "Ostertag 把 Phil Minton、Joey Baron 等人的獨奏錄音剪成新樂隊，碎裂躁動",
+   "moodGuess": {
+    "x": 4,
+    "y": 0,
+    "z": -1.8,
+    "why": "人聲尖嚎、鼓與低音提琴碎片高速拼接"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fb2ed379-cfd0-3671-aa96-345568084017",
+    "https://music.apple.com/us/album/say-no-more-vol-1/618601398"
+   ],
+   "mbRgMbid": "fb2ed379-cfd0-3671-aa96-345568084017",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Christian Marclay",
+   "album": "More Encores",
+   "year": 1989,
+   "label": "No Man's Land",
+   "country": "de",
+   "faction": "downtown-skronk",
+   "genres": [
+    "electronic",
+    "experimental"
+   ],
+   "why": "Christian Marclay 以唱盤拼貼名家錄音的經典作，刮盤與跳針",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0,
+    "z": -1,
+    "why": "唱盤刮擦、跳接碎片、黑膠雜訊，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/af25a80e-2439-3e1c-87a9-4aa78f5ebad1",
+    "https://www.discogs.com/master/61484"
+   ],
+   "mbRgMbid": "af25a80e-2439-3e1c-87a9-4aa78f5ebad1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有可辨旋律片段，z 可能只到 −0.6"
+  },
+  {
+   "artist": "Storm and Stress",
+   "album": "Storm&Stress",
+   "year": 1997,
+   "label": "Touch and Go",
+   "country": "us",
+   "faction": "nowave-descendant",
+   "genres": [
+    "rock",
+    "experimental"
+   ],
+   "why": "Ian Williams（Don Caballero、Battles）的 no wave 後裔，吉他點描與失序鼓",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.6,
+    "z": -1.6,
+    "why": "乾淨點弦泛音、碎鼓，低頻極少，旋律不明"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6bc43616-3600-33c1-b466-7415d0e8df03",
+    "https://coverartarchive.org/release-group/6bc43616-3600-33c1-b466-7415d0e8df03/front"
+   ],
+   "mbRgMbid": "6bc43616-3600-33c1-b466-7415d0e8df03",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Storm and Stress",
+   "album": "Under Thunder and Fluorescent Light",
+   "year": 2000,
+   "label": "Touch and Go",
+   "country": "us",
+   "faction": "nowave-descendant",
+   "genres": [
+    "rock",
+    "experimental"
+   ],
+   "why": "Storm and Stress 第二張，更碎裂的點描式吉他與鼓",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.8,
+    "z": -1.6,
+    "why": "稀疏刮弦與鼓點，留白多，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c46f3cc4-96fb-3b26-8f28-27c0f8da99e2",
+    "https://coverartarchive.org/release-group/c46f3cc4-96fb-3b26-8f28-27c0f8da99e2/front"
+   ],
+   "mbRgMbid": "c46f3cc4-96fb-3b26-8f28-27c0f8da99e2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "留白多，x 可能被評 3.0–3.2"
+  },
+  {
+   "artist": "The Scissor Girls",
+   "album": "We People Space With Phantoms",
+   "year": 1996,
+   "label": "",
+   "country": "us",
+   "faction": "nowave-descendant",
+   "genres": [
+    "rock",
+    "post-punk"
+   ],
+   "why": "芝加哥 90 年代 no wave 復興的核心樂團 Scissor Girls 首張，尖叫與痙攣節奏",
+   "moodGuess": {
+    "x": 4.2,
+    "y": 0.2,
+    "z": -1.4,
+    "why": "尖細刮擦吉他、尖叫、痙攣鼓，錄音薄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/705e70a8-bfaf-3564-82c7-cdc1a797169d",
+    "https://coverartarchive.org/release-group/705e70a8-bfaf-3564-82c7-cdc1a797169d/front"
+   ],
+   "mbRgMbid": "705e70a8-bfaf-3564-82c7-cdc1a797169d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "吉他有破音，評分 y 可能 0.4–0.6"
+  },
+  {
+   "artist": "The Scissor Girls",
+   "album": "Here Is the Is-Not",
+   "year": 1997,
+   "label": "",
+   "country": "us",
+   "faction": "nowave-descendant",
+   "genres": [
+    "rock",
+    "post-punk"
+   ],
+   "why": "Scissor Girls 第二張，更機械、更尖銳的 no wave 復興",
+   "moodGuess": {
+    "x": 4.2,
+    "y": 0.2,
+    "z": -1.4,
+    "why": "尖鋸齒吉他與機械鼓，薄，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b82b5e96-640c-3628-a369-887d63786d7f",
+    "https://music.apple.com/us/album/here-is-the-is-not/1032772638"
+   ],
+   "mbRgMbid": "b82b5e96-640c-3628-a369-887d63786d7f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上 y 風險"
+  },
+  {
+   "artist": "Lake of Dracula",
+   "album": "Lake of Dracula",
+   "year": 1997,
+   "label": "Skin Graft",
+   "country": "us",
+   "faction": "nowave-descendant",
+   "genres": [
+    "rock",
+    "post-punk"
+   ],
+   "why": "Skin Graft 旗下芝加哥 no wave 復興樂團唯一專輯，尖細神經質",
+   "moodGuess": {
+    "x": 4.2,
+    "y": 0.2,
+    "z": -1.3,
+    "why": "尖細不協和吉他與急鼓，乾瘦"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c9e678ca-b220-3e29-a347-813a898fa837",
+    "https://coverartarchive.org/release-group/c9e678ca-b220-3e29-a347-813a898fa837/front"
+   ],
+   "mbRgMbid": "c9e678ca-b220-3e29-a347-813a898fa837",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 風險同 Scissor Girls"
+  },
+  {
+   "artist": "Lithics",
+   "album": "Borrowed Floors",
+   "year": 2016,
+   "label": "Water Wing",
+   "country": "us",
+   "faction": "nowave-descendant",
+   "genres": [
+    "rock",
+    "post-punk"
+   ],
+   "why": "波特蘭的 no wave 後裔，乾瘦的不協和吉他與冷淡念唱",
+   "moodGuess": {
+    "x": 3.8,
+    "y": -0.3,
+    "z": -0.9,
+    "why": "乾淨尖細雙吉他交錯、乾鼓，無低頻厚度"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/18896573-e172-4623-b113-b2fee348296b",
+    "https://lithics.bandcamp.com/album/borrowed-floors"
+   ],
+   "mbRgMbid": "18896573-e172-4623-b113-b2fee348296b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lithics",
+   "album": "Mating Surfaces",
+   "year": 2018,
+   "label": "Kill Rock Stars",
+   "country": "us",
+   "faction": "nowave-descendant",
+   "genres": [
+    "rock",
+    "post-punk"
+   ],
+   "why": "Lithics 第二張，更緊的切分與刮擦吉他",
+   "moodGuess": {
+    "x": 3.9,
+    "y": -0.3,
+    "z": -0.9,
+    "why": "乾刮吉他與跳拍鼓，薄，面無表情"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1bd6eed4-b96c-4ba0-9d7b-d74016698bdc",
+    "https://coverartarchive.org/release-group/1bd6eed4-b96c-4ba0-9d7b-d74016698bdc/front"
+   ],
+   "mbRgMbid": "1bd6eed4-b96c-4ba0-9d7b-d74016698bdc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Zs",
+   "album": "Zs",
+   "year": 2003,
+   "label": "",
+   "country": "us",
+   "faction": "nowave-descendant",
+   "genres": [
+    "rock",
+    "experimental"
+   ],
+   "why": "Zs 首張六重奏：雙薩克斯、雙吉他、雙鼓的斷奏作曲，當代 Downtown no wave 後裔",
+   "moodGuess": {
+    "x": 4,
+    "y": -0.2,
+    "z": -1.6,
+    "why": "斷奏薩克斯尖鳴與乾吉他齊奏，急停急起"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/349ebe1a-3322-46f5-b3a6-54596c695fde",
+    "https://coverartarchive.org/release-group/349ebe1a-3322-46f5-b3a6-54596c695fde/front"
+   ],
+   "mbRgMbid": "349ebe1a-3322-46f5-b3a6-54596c695fde",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Zs",
+   "album": "Arms",
+   "year": 2007,
+   "label": "Planaria",
+   "country": "us",
+   "faction": "nowave-descendant",
+   "genres": [
+    "rock",
+    "experimental"
+   ],
+   "why": "Zs 四重奏代表作，極端斷奏與重複的尖細室內噪音",
+   "moodGuess": {
+    "x": 4.1,
+    "y": -0.1,
+    "z": -1.6,
+    "why": "薩克斯、吉他的斷奏尖刺與乾鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/48b9c0e4-7a23-31dc-9ff0-8ee04cbf92be",
+    "https://coverartarchive.org/release-group/48b9c0e4-7a23-31dc-9ff0-8ee04cbf92be/front",
+    "https://www.discogs.com/master/53394"
+   ],
+   "mbRgMbid": "48b9c0e4-7a23-31dc-9ff0-8ee04cbf92be",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Cheval de Frise",
+   "album": "Cheval de Frise",
+   "year": 2000,
+   "label": "",
+   "country": "fr",
+   "faction": "nowave-descendant",
+   "genres": [
+    "rock",
+    "experimental"
+   ],
+   "why": "法國二人組：尼龍弦木吉他＋鼓的極速無調拼貼，no wave 的乾尖後裔",
+   "moodGuess": {
+    "x": 4.3,
+    "y": -0.8,
+    "z": -1.4,
+    "why": "木吉他極速撥弦與急鼓，無貝斯，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f24511d0-f164-3164-92fa-d762d962e769",
+    "https://coverartarchive.org/release-group/f24511d0-f164-3164-92fa-d762d962e769/front",
+    "https://www.discogs.com/master/137088"
+   ],
+   "mbRgMbid": "f24511d0-f164-3164-92fa-d762d962e769",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Cheval de Frise",
+   "album": "Fresques sur les parois secrètes du crâne",
+   "year": 2003,
+   "label": "Sickroom",
+   "country": "us",
+   "faction": "nowave-descendant",
+   "genres": [
+    "rock",
+    "experimental"
+   ],
+   "why": "Cheval de Frise 第二張，同樣是木吉他與鼓的高速碎片",
+   "moodGuess": {
+    "x": 4.3,
+    "y": -0.8,
+    "z": -1.4,
+    "why": "木吉他尖細碎撥、急鼓，無低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bbe163f6-200b-33cd-a11c-63211e69a309",
+    "https://coverartarchive.org/release-group/bbe163f6-200b-33cd-a11c-63211e69a309/front"
+   ],
+   "mbRgMbid": "bbe163f6-200b-33cd-a11c-63211e69a309",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ahleuchatistas",
+   "album": "What You Will",
+   "year": 2006,
+   "label": "Cuneiform",
+   "country": "us",
+   "faction": "nowave-descendant",
+   "genres": [
+    "rock",
+    "experimental"
+   ],
+   "why": "Ahleuchatistas 的 skronk 數學搖滾，乾淨吉他刺耳不協和",
+   "moodGuess": {
+    "x": 4,
+    "y": 0,
+    "z": -1.3,
+    "why": "乾淨尖吉他不協和琶音、急鼓，薄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cf3d9a93-29d8-32fa-9a25-49df92867c0b",
+    "https://coverartarchive.org/release-group/cf3d9a93-29d8-32fa-9a25-49df92867c0b/front"
+   ],
+   "mbRgMbid": "cf3d9a93-29d8-32fa-9a25-49df92867c0b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有貝斯，y 可能 0.3"
+  },
+  {
+   "artist": "Ahleuchatistas",
+   "album": "The Same and the Other",
+   "year": 2004,
+   "label": "Cuneiform",
+   "country": "us",
+   "faction": "nowave-descendant",
+   "genres": [
+    "rock",
+    "experimental"
+   ],
+   "why": "Ahleuchatistas 早期作，自由即興與數學搖滾混種",
+   "moodGuess": {
+    "x": 4,
+    "y": 0,
+    "z": -1.3,
+    "why": "刮弦泛音、斷裂切分，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bdce70b6-3971-3130-a59e-91c3d30c766b",
+    "https://coverartarchive.org/release-group/bdce70b6-3971-3130-a59e-91c3d30c766b/front",
+    "https://www.discogs.com/master/189567"
+   ],
+   "mbRgMbid": "bdce70b6-3971-3130-a59e-91c3d30c766b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上"
+  },
+  {
+   "artist": "Ahleuchatistas",
+   "album": "On the Culture Industry",
+   "year": 2003,
+   "label": "",
+   "country": "us",
+   "faction": "nowave-descendant",
+   "genres": [
+    "rock",
+    "experimental"
+   ],
+   "why": "Ahleuchatistas 首張，尖細不協和吉他三重奏",
+   "moodGuess": {
+    "x": 4,
+    "y": 0,
+    "z": -1.3,
+    "why": "尖吉他、乾鼓、斷裂結構"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/56761e7d-eb36-3120-b40e-5c3e8f3fc231",
+    "https://coverartarchive.org/release-group/56761e7d-eb36-3120-b40e-5c3e8f3fc231/front"
+   ],
+   "mbRgMbid": "56761e7d-eb36-3120-b40e-5c3e8f3fc231",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上"
+  }
+ ],
+ "notes": [
+  "場景挖不到 54 張，照實交 39 張（不湊數）。核心 no wave 幾乎沒有正規錄音室專輯：DNA、Teenage Jesus、Theoretical Girls、Glenn Branca 早期、Sonic Youth 首作都是 EP／合輯；Mars 只有《John Gavanti》。",
+  "池中先例校正：mc2 同類 post-punk 估 y −0.3 評到 0.4–0.6（Erase Errata、Contortions、Aunt Sally 0.9），所以有搖滾鼓組＋破音吉他的一律不提；改以 Downtown 即興（池中 Skeleton Crew、Bailey、Parker 小編制都落冷冽 y ≤ 0.2）與乾淨／木吉他後裔為主。",
+  "x 校正：池中獨奏即興（Bailey 獨奏 3.2–3.3、Butcher 3.1）貼邊，所以獨奏吉他／小提琴／大提琴（Chadbourne 獨奏、Polly Bradfield、Tom Cora《Gumption in Limbo》、Henry Kaiser 獨奏）不提；只收有打擊或極躁的獨奏（Zorn 吹嘴）。",
+  "刻意不收：Y Pants《Beat It Down》（旋律明確、z 風險）、Palberta（齊唱旋律、z 風險）、U.S. Maple（緩慢留白、x 風險）、Talk Normal、Orthrelm、Hella、Arab on Radar、XBXRX、Pill、Little Women（破音吉他或厚，y 風險）、Ut《Griller》（Albini 錄音偏厚）、Rhys Chatham、8 Eyed Spy、Lydia Lunch《13.13》（厚）、Dark Day、Tolerance（靜）、Mofungo、Die Tödliche Doris（把握不夠）、Ikue Mori／Fred Frith／Skeleton Crew／Massacre／Erase Errata／Ex Models／Numbers／Aunt Sally（他組已收）、EAI 一張都沒補（留給 mc37）。",
+  "跨組藝人：Yankees（Bailey 共同署名，mc28）、Attention Span（Frith 共同署名，mc33）均為合作盤、主名不同，列 uncertain 由主線決定。",
+  "WebSearch 用 1 次（John Gavanti 身分）。"
+ ]
+}
