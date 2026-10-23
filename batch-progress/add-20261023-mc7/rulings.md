@@ -74,3 +74,4 @@
 - **11552**：留下但標存疑（評分照聲音打）：Gaiser 兩張、Troy Pierce、Elektro Guzzi 首作（dub 貝斯）、Brandt Brauer Frick、Efdemin、Bretschneider《Super.Trigger》（大鼓震窗）、Funkstörung（說唱）、Beatrice Dillon（原聲打擊）、SND、Mark Fell、Rian Treanor《File Under UK Metaplasm》、Robert Hood《Paradygm Shift》（house 底鼓）、Jeff Mills《From the 21st》《The Power》《The Jungle Planet》、Damon Wild、Oliver Ho 兩張、Pacou 兩張、Marc Houle 三張、Brinkmann 兩張。
 - **11553**：照研究層改卡單：Marc Houle《Restore》label 補 M_nus。Gaiser 國籍不寫（只寫起始地 Grand Rapids）、《False Light》是第三張（非第二張）；Richard Devine《Lipswitch》Schematic／Warp 聯合發行（Discogs 標 Mini-Album，MB 列 Album，收）；Jeff Mills《From the 21st》首發年 1998／1999 並陳不寫死；《The Jungle Planet》實體是 400 套 USB 方塊；Oliver Ho《Prima Materia》寫雙 12 吋——寫作層照研究稿。
 - **11554**：**全批 32 張**（策展 49、主線汰 4、研究汰 13）。候補只剩 Elektro Guzzi《Observatory》等主線汰除者，不回補；照實上架。
+- **11555**：再汰 Oliver Ho《Prima Materia》（Discogs master 1974 為 12 吋 EP、MB 首發 release 無 CAA 圖；研究 e 組已提醒「雙 12 吋」）。**全批 31 張**。
