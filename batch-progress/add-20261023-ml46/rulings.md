@@ -41,3 +41,11 @@
 - 留下但存疑、交評分裁定：Siblings 2（bright strings，y 可能偏低）、Olan Mill《Pine》（dirge-like 一詞）、Port Blue《The Airship》（thin、有輕拍）、Inventions 首作（兩首快打擊）。
 - 叫回策展代理補第二輪（門檻：樂評／廠方明講 warm／lush／enveloping，無 elegiac／mournful／sparse；鋼琴領軍、拍子推進、現場一律不提）。
 - 策展第二輪查 14 張、0 張過關（Olan Mill 其他盤無暖字、Craig《Slow Vessels》EP 長度、Somers 其他配樂短片段或現場、Dead Texan／McBride／Vantzou／K. B. Dunn 樂評 melancholy／haunting／ominous）→ **主場景見底，ml46 不再派**。qa-batch research：5 張 key 一致、全過。
+
+## 鉤子層（a–d）
+- **19851** 交件：`desc-tools/batches/hooks/add-20261023-ml46-hooks-{a,b,c,d}.json`（1／1／1／2，共 5，key 與順序照研究稿）。公式照 hook-base 第 1793-B 條：`Array.from(hook)+Array.from(note) − 主故事： − 所有 → − 正文只寫上列各項。 − 這條骨架全批只走本張。`。逐筆（hook 原始字元／加權／預算）：Siblings 2 27／22.5／230、Pine 17／17／215、Centres 18／18／229、The Airship（thin）21／21／166（上限 170）、Inventions 21／21／221。初稿 5 張全超標（326／280／314／250／368），一律整格捨去：Siblings 的四位弦樂手名單與 2014–2016 寫作年、55 分鐘；Pine 的 SERE002 與 Flume 長度；Centres 的多地點錄音、偏壓失真、13 首／72 分鐘；The Airship 的 2006 成立年、自行發行、曲序首尾兩首、樂迷「帶節拍的 Eluvium」（單源、未親見全文）、13 首；Inventions 的〈Envenom Mettle〉起因、8 首、共同製作、〈Flood Poems〉倒放、Panda Bear 取樣。壓完回核 hook 依賴格全在 g1／g2（幕後搭檔＝g1、同日＝g3 但 hook 本身即事實；小教堂與十首＝g2；懸念收尾＝g2；曲序＝g2；互傳音檔＝g2）。
+- **19852** 骨架歸屬（5 張 5 條，只擁有者寫歸屬句）：Siblings 2＝幕後製作人以本名出道、兩部曲同日；Pine＝小教堂分次錄音；Centres＝改裝卡座的劣化延遲當樂器；The Airship＝成名計畫之前的器樂分身（Owl City 標時序）；Inventions＝兩地互傳音檔＋海灘屋收尾的跨團合作。「首張即代表作」不用。
+- **19853** hook 四型：人物定調（Siblings 2）／場景（Pine）／懸疑（Centres，note g2 收尾）／斷言（The Airship、Inventions）。開頭前四字互異（Sigu／一間小教／磁帶循環／整張是一／波特蘭與）。hook 間中文 4-gram 自掃 0 條；hook 與 note 無逐字重複句。
+- **19854** 第二句句型配表（避開 ml43 已上架「1984 年生於巴爾的摩的 Alex Somers」「生於田納西的 Matthew Cooper」「Eluvium 是 Matthew Cooper 的藝名」與 ml43 Olan Mill《Paths》的「兩人名字＋此時組成」）：Siblings 2＝「兩張都出自 Alex Somers」（掛名欄＋身分）；Pine＝「Olan Mill 由⋯兩人組成」（由）；Centres＝「受過古典聲樂訓練的」（訓練／身分）；The Airship＝「Port Blue 是」（是）；Inventions＝「來自」（樂團關係）。無藝人跨兩張，「他／她」引入法不需分軸；各張首次代稱照上列領句。
+- **19855** 「日」後一字配死：與（Siblings 2）／由（Pine）／成（Centres）／推（The Airship）／交（Inventions），並避開 ml43 Hammock 的「日自」。媒體名、榜單名次、樂評分數一律不指派（Billboard Heatseekers、Metacritic、Pitchfork、mxdwn、A Closer Listen、Sputnik 皆未進 note）；聲音描述寫成「樂評說」或「兩人形容」。研究稿 sound 欄的 The Airship「弦樂取樣與暖合成器墊」不在 facts，不指派；Siblings 的「磁帶」照研究層不寫。
+- **19856** 腳本：`node qa-batch.mjs hooks add-20261023-ml46` 全部通過；`node chk-hook-crossgroup.mjs add-20261023-ml46` 全部通過（4 組 5 張，hook 加權 17–22.5、note 172–238；只報不擋的一般否定句 2 筆＝Siblings「沒有鼓」、Pine「沒有打擊樂」，屬聲音內容非校對痕跡，保留）。
