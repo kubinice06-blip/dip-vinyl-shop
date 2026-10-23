@@ -715,7 +715,6 @@ window.DipPreviewStatus = Object.freeze({
   "高橋幸宏|音楽殺人": "unavailable",
   "矢野顕子|ごはんができたよ": "unavailable",
   "プラスチックス|welcome plastics": "unavailable",
-  "久石譲|風の谷のナウシカ サウンドトラック はるかな地へ…": "unavailable",
   "すぎやまこういち|伝説巨神イデオン 総音楽集": "unavailable",
   "宮川泰|交響組曲 宇宙戦艦ヤマト": "unavailable",
   "青木望|交響詩 銀河鉄道999": "unavailable",
