@@ -23,3 +23,18 @@
 - 11803：Grosskopf《Synthesist》z 存疑（RVNG／Fact 稱有溫度與 new age 色彩，Sonic Immersion 稱 airy、lush），Karl Bartos《Communication》x 存疑（Exclaim! 稱許多曲子 mid-tempo，AllMusic 比 OMD／Pet Shop Boys 的旋律流行）；《The Mix》y 可能比預估重（Christgau：低頻加強）。這三張維持 full、不列建議移除，由主線依 moodGuess 邊距決定。
 - 11804：Kraftwerk《The Mix》依主線既有裁定視為重錄新編專輯（MB Album＋Remix），歷史定位明確（Wire 1991 年度第一、成為其後現場版本）；Bartos 稱全部編程是他做的，facts 標為他的說法。
 - 11805：本組 WebSearch 實際用了 4 次（Synthesist、Communication、Transhuman、Time Pie 各一），超出每支 3 次的上限一次；其餘走 Wikipedia raw、MB、Discogs API 與 WebFetch。AllMusic、Pitchfork、BBC 無法抓取，評論引述改由 Wikipedia 評論段轉述。
+
+## 研究 d 組
+- 11831：Rockets《Plasteroïd》卡單 label「Dischi Ricordi」查無依據，首版為 Rockland Records（法 900.500／義 RKL 20137）；寫作層勿寫 Ricordi。且為吉他、貝斯、真鼓、人聲的完整樂團，moodGuess 存疑（y 偏厚），建議汰換或降級。
+- 11832：Radiorama《Desires and Vampires》卡單 label「Ricordi」查無依據（Discogs 義大利原版 Out OUT 3066、MB 版 Ariola）。聲音層來源全缺，status thin，moodGuess 無法驗證（Italo 人聲歌曲，z 可能偏暖）。
+- 11833：Doctor's Cat《Gee Wiz》Discogs 署名有真鼓、薩克斯風與女主唱，非純機器；moodGuess 存疑（z 偏暖、y 偏厚）。與 Radiorama 同為 Zanini／Martinelli 班底。
+- 11834：Laserdance 四張（Future Generation、Around the Planet、Discovery Trip、Technological Mind）卡單 label 空白，補 Hotsound Records。FG 包裝標 119–126 BPM（中速，非高速），x 預估存疑；Technological Mind 為 1992 年且含 Technoid House Version，鼓偏厚風險；Discovery Trip 的 Discogs 器材清單含 2010 年產品 Monotron，不採。
+- 11835：Laserdance 影子名「Laser Dance」（MB 藝人名）沿用主線統一的 Laserdance；不影響身分。
+
+## 研究 c 組
+- 11821：Années laser（Marouani）推翻 moodGuess：Discogs 署名為歌曲式編制（真鼓、貝斯、吉他、薩克斯風、弦樂、和聲，風格 Chanson／Synth-pop），無 sequencer／vocoder 署名；label 為 Trema 非 Warner。建議汰換。
+- 11822：Paris France Transit moodGuess 存疑：真鼓（Joe Hammer）、兩位吉他、貝斯、合唱團，風格含 Pop Rock／Disco；label 為 Vogue。建議降級或汰換。
+- 11823：Space Art 署名鼓手 Rizzitelli（真鼓），非鼓機；卡單 label Island 查無（IF Records／Carrere）；年份 1977／1978 來源矛盾，維持 1977。
+- 11824：Black Devil Disco Club 有鼓手（Rephlex 新聞稿）、節拍自述 earthy；卡單 label Pole Position 查無（原版 RCA Victor／Out）。
+- 11825：Hipnosis 查無 vocoder／速度來源，status thin；label 卡單 Baby Records 查無（Memory／ZYX）。
+- 11826：Optical Race、Chronologie 速度皆無 BPM 來源；Chronologie 有署名吉他（Patrick Rondat）。
