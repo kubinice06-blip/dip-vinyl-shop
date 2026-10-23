@@ -27,3 +27,13 @@
 - **19484** Engineers 兩張：未推翻身分。卡單《Always Returning》稱「第三作」，維基與樂評稱第四作（同名首作、Folly 小專輯計法不同），facts 不寫序數；《In Praise of More》〈Subtober〉有明確律動，x 可能 2.4–2.8 但無攻擊性，moodGuess 不推翻；《Always Returning》Popdose 稱慢、催眠、氣音人聲，且非傳統 shoegaze 的回授牆，y 約 0.8–1.2。
 - **19485** 日期出入：Guthrie & Budd 2007 對輯 MB 為 2007-06-11，維基與 Starsend 為 2007-07-16；寫作層只寫「2007 年」。
 - **19486** 流程偏離（誠實記錄）：WebSearch 用了 6 次（超過每支 3 次的上限，起因是三組並行查詢各算一次），其餘為 WebFetch；Pitchfork 被工具封鎖、AllMusic 403、PopMatters《Hush》404、Sputnik 503、Penny Black 403，Louder 被付費牆擋，這些聲音細節只能引搜尋摘要，不進 facts。
+
+## 研究 b 組
+- **19491** Acetone《Cindy》moodGuess 存疑：樂評（Trouser Press 與商家文案）稱其一半是「loud distorted guitars、heavy stomp」的 semi-gunge、有 Neil Young 式大聲吉他，且是「最接近主流」的一張，不是整張慢板；色溫與旋律清晰度查無直接證據。標籤：英國 Hut（HUTLP 13／CDHUT 13）、美國 Vernon Yard（YARD CD 4），卡單填 Hut 不算錯，但維基只列 Vernon Yard；年份 1993 確認。
+- **19492** Sound of Ceres《Nostalgia for Infinity》moodGuess 存疑：PopMatters 寫 driving beats 與俱樂部式貝斯，x 可能比 2.1 高；y 視合成器乾淨度，可能低於 1.2。身分確認（2016-03-04、JNR187）。
+- **19493** Sound of Ceres《The Twin》moodGuess 存疑：Alex Somers 製作，電子與鍵盤為主、氣音人聲（有首幾乎聽不清詞），旋律不明，y 恐偏輕、z 恐貼 0。聲音證據僅 Hellbound 單篇。
+- **19494** The Clientele《Suburban Light》實為 1997–2000 單曲彙整（compilation-like），但有歷史定位（Pitchfork 2000s 榜），保留；英國 Pointy 與美國 Merge 版曲目不同。moodGuess 存疑：y——僅維基「殘響豐富」，乾淨 jangle 成分高，剝掉殘響可能判輕。
+- **19495** The Clientele《Strange Geometry》推翻策展層：是第三張錄音室專輯（非第二作）；維基明寫聲音比前作乾淨、殘響減少、首度加弦樂 → moodGuess 存疑：y 恐只有 0–0.5，建議主線優先汰換。Louis Philippe 編弦樂僅 Clientele 條單一來源。
+- **19496** Jesse Sykes & The Sweet Hereafter《Reckless Burning》推翻策展層：卡單 label Devil in the Woods 只是黑膠版，首發 CD 是 Barsuk BARK30＋Burn Burn Burn BBB005；Barsuk 簡介把 bark030 標 2002，年份有疑，寫作層保守。moodGuess 存疑：gothic country、NYT「rapt in fatalism and sorrow」、比 Marianne Faithfull → z 恐為負，建議視為頹靡／平靜候選，主線可汰換。
+- **19497** Novo Amor《Birthplace》status thin：聲音層只有 Bandcamp 聽者標籤，卡單的「殘響假聲合唱＋管樂＋合成器墊」無來源證實；y 恐偏輕（單人 indie folk）。身分確認（2018-10-19、AP034CD）。
+- **19498** 流程：WebSearch 本組用 3 次（Acetone 2、Sound of Ceres 1），其餘靠 WebFetch（維基、Merge、Barsuk、Bandcamp、Trouser Press、PopMatters）；Pitchfork、AllMusic、Uncut、Guardian 被工具擋，Clientele 兩張缺樂評原文。
