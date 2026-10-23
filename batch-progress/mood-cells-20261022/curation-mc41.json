@@ -16,7 +16,7 @@
   {
    "id": "computer",
    "zh": "電腦音樂／演算法作曲的尖細那半",
-   "count": 2,
+   "count": 3,
    "why": "粒子／脈衝合成、心理聲學高頻、網路演算法的急促碎音；薄、乾、無旋律"
   }
  ],
@@ -825,7 +825,46 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "同人跨組（mc37）；封面來源 Discogs（CAA 無）；A Fluttering of Wings 為純弦樂四重奏"
+  },
+  {
+   "artist": "Alain Thibault",
+   "album": "Volt",
+   "year": 1990,
+   "label": "empreintes DIGITALes",
+   "country": "ca",
+   "faction": "computer",
+   "genres": [
+    "electronic"
+   ],
+   "why": "empreintes DIGITALes 第三號（IMED 9003）：Thibault 的 Fairlight／MIDI 電子作（Volt、OUT、MIDI 鋼琴協奏曲），魁北克『都市 acousmatic』",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.1,
+    "z": -0.7,
+    "why": "超快速序列與合成打擊連發、刺耳的取樣斷切，緊張、乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/83e67e88-e9ec-4993-8c15-2c0d714db9d9",
+    "https://coverartarchive.org/release-group/83e67e88-e9ec-4993-8c15-2c0d714db9d9/front",
+    "https://www.discogs.com/release/245048",
+    "https://electrocd.com/en/album/2374"
+   ],
+   "mbRgMbid": "83e67e88-e9ec-4993-8c15-2c0d714db9d9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 只有 2023 數位版 RG，原盤 1990 IMED 9003；樂評說帶 studio pop／Art of Noise 色彩、近作更重旋律，z 估 −0.7 是全批最貼暖的"
   }
  ],
- "notes": []
+ "notes": [
+  "共 28 張（目標 54，照實交、不湊數）：acousmatic 11、早期電子工作室／混合媒體 14、電腦音樂 3。主場景（GRM／empreintes acousmatic）大多是『長段地景＋驟爆』或厚密噪音湯，池中 Parmegiani／Bayle／Dhomont 一路已判靜，真正從頭到尾讓神經繃著的盤很少；用 electrocd 樂評逐張掃過約 160 張 IMED 盤，只留樂評明說急促、碎裂、乾、尖的。",
+  "全數 MB 釘住 27 張、人工身分 1 張（A_dontigny《Geisteswissenschaften》，Discogs 4010943＋electrocd）。封面：CAA 20、Discogs／Bandcamp／廠牌 8。",
+  "同人跨組（已在 uncertain 標明，主線可刪）：Subotnick 3 張（mc37 已提另三張；池中 Touch 3.7、Sidewinder 3.6 判冷冽，是本批最穩的先例）、Thomas Ankersmit《Homage to Dick Raaijmakers》（mc37 已提《Figueroa Terrace》，本組原本也想提，撞了已刪）。",
+  "擋掉（判靜）：Dhomont 全系（樂評多『contemplative／dark／dense soup』）、Bayle、Parmegiani 其餘盤、Smalley《Impacts intérieurs》（作曲家自述 texture『standing still』）、Normandeau《Clair de terre》（冥想）、Adrian Moore《Traces》（自稱 electroacoustic ambient）、Tremblay《La marée》、Berezan、Calon、Daoust、Bouchard《Fractures》（low-level ambient）、Charles Dodge／Hiller／Lansky／Chowning（池中先例判靜）、Kim Cascone、Agostino Di Scipio、Eimert（Epitaph 稀疏）。",
+  "擋掉（判重）：Paul Dolden 全系（樂評『rolling walls of sound』『maximal density』）、Normandeau《Puzzles》（『thick soup』）、Martin Bédard《Topographies》（dark ambient＋noise）、Gilles Gobeil、Tremblay《Alter ego》（樂評說偏 heavy）、Andrew Lewis《Miroirs obscurs》、Xenakis GENDY3／UPIC 類（池中 Xenakis 電子作 y 1.9–2.0）、erikm（池中 y 0.4）、Schmickler《Altars of Science》（Discogs 標 Drone/Noise）、Haswell。",
+  "擋掉（現場或格式）：The Hub 兩張（AllMusic 載錄音地點為 Fylkingen、Mills、The Lab 等場館＝演出錄音）、Bernhard Lang《Differenz/Wiederholung 2》（Konzerthaus Wien 錄音）、Takasugi《Sideshow》（藍光，含 46 分鐘訪談）、Amacher《Sound Characters 2》（洞穴演出錄音）、Hecker《Triadex Muse Treks》（MIT 演出錄音、展覽 CD）、Hecker《Articulação》（人聲 chimera 段多、且屬 mc33）、Rashad Becker Vol. II（Vol. I 池中 x 3.0）、Wuorinen《Time's Encomium》（mc4 已判貼邊）、Raaijmakers《Complete Tape Music》與 WDR／Columbia-Princeton 多人合輯（合輯）。",
+  "x 風險：池中同類先例普遍 2.3–3.1（acousmatic 判靜、Babbitt Philomel 2.6、Kontakte 3.0），本批 x 估 3.3 的 14 張都在下緣；最可能掉平靜的是 Parmegiani《Violostries》、Babbitt、Koenig、Pousseur、Normandeau《Figures》、Stéphane Roy、Vaggione《Fluides》、Manoury《Jupiter》。較穩的是 Subotnick、Thibault、Davidovsky、Vaggione 前兩張、Dontigny。",
+  "年份註記：Jonty Harrison《Évidence matérielle》、Normandeau《Figures》、Thibault《Volt》的 MB RG 只有 2022–2023 數位版，year 填原盤年（2000／2009／1990），上架前主線請確認 RG 首發日期要不要改。"
+ ]
 }
