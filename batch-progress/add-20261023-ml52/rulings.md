@@ -11,3 +11,12 @@
 - **頭牌不提**：Joe、Dru Hill、Brian McKnight、Donell Jones、112、Ginuwine、Musiq Soulchild、Tyrese、Monica、Brandy、Tamia、Faith Evans 池中判輕、x≈3 或快慢各半。主力為池中同人已落恍惚（y 0.6–0.9）的歌手其他盤與池中沒有的二線。
 - **候補 9（不入 pick，研究汰換時從這裡補）**：Avant《The Letter》《Face the Music》（同人勻量；池中 y 0.6）、Ronald Isley《Here I Am: Isley Meets Bacharach》（管弦乾淨判輕風險）、Will Downing《After Tonight》（smooth jazz 風險，ml49 先例）、Jaheim《Appreciation Day》、Anthony Hamilton《What I'm Feelin'》（同人勻量、聲音資料少）、Jon B.《Pleasures U Like》（製作乾淨）、Tank《One Man》（數位製作、同人勻量）、Angie Stone《Stone Love》（中板數首）。
 - **MB flag**：Lalah Hathaway《Where It All Begins》MB 首發 2010-01-01 為佔位值，策展填 2011（Concord／Stax 2011-10），研究層核對。'Bout It、Baby Makin' Music、Ain't Nobody Worryin' MB 正題彎引號，卡用 ASCII 撇號。
+
+## 研究 e 組
+- 20561：Lalah《Where It All Begins》年份核對：MB 2010-01-01 為佔位值，維基與 Stax 發行為 2011-10-18，策展填 2011 正確。
+- 20562：moodGuess 存疑（快慢各半或乾淨數位，建議汰換）：Regina Belle《Believe in Me》（E-Smooth／Mike & Manni 節奏製作，AllMusic 稱生涯節奏推力最強）、Lalah（AllMusic：harder beats、disco-funk 最佳曲，九組製作人）、Vivian Green《Vivian》（Storch 數位鼓點，兩支單曲舞曲榜冠軍）、Keke Wyatt《Soul Sista》（Huff 的 groove／中板，樂評稱公式化）、Syleena Johnson《Chapter 2》（〈Guess What〉約 82 BPM 中速，Hi-Tek 等拼盤，含 Busta Rhymes 混音）、Miki Howard《Pillow Talk》（AllMusic：drum loops 或 smooth jazz 編曲，含 Which Way Is Up 等快板）。
+- 20563：輕度存疑：Vivian Green《Beautiful》（AllMusic：heavily synthesized、programmed，So Far Gone 為中板，慢歌比例無來源）、Marsha Ambrosius《Friends & Lovers》（前段為 slow jam，後段有〈Stronger〉Dr. Dre／DJ Premier 式硬拍，19 首含 5 段插曲，約六成慢，可保留）。
+- 20564：大致成立：Kelly Price《Soul of a Woman》（NYT：多數為 languorous ballads；但有 R. Kelly／Stevie J. 中板單曲與 2 段插曲）。
+- 20565：推翻策展層一處：Keke Wyatt curatorWhy 稱本盤有〈My First Love〉；該曲是 Avant 的單曲、Keke 客串，不在本盤，Avant 在本盤客串為 Nothing in This World、I Can't Wait、Bad Boy 三首。
+- 20566：日期與銷量衝突取捨：Regina Belle MB 1998-09-22 對維基 1998-06-09，Kelly Price MB 1998-01-01（佔位）對維基 1998-08-11，寫作層一律只寫年份；Keke Wyatt 藝人頁稱逾百萬張，專輯頁為 RIAA 金唱片／SoundScan 約 56.6 萬，採專輯頁；Kelly Price 廠牌寫 T-Neck（Island 發行）最穩。
+- 20567：Vivian、Vivian Green《Beautiful》、Miki Howard 標 status thin（聲音的逐首速度查不到來源，其餘身分、年份、廠牌皆對）；AllMusic／SoulTracks 全文 403，未取 Discogs。
