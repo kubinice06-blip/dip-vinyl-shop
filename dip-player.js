@@ -1190,7 +1190,7 @@
     disposePreviewBuffer(source);
     if (previewElementActive) {
       previewElementActive = false;
-      try { if (previewAudio) { previewAudio.onended = null; previewAudio.pause(); } } catch (_) {}
+      try { if (previewAudio) { previewAudio.onended = null; previewAudio.onpause = null; previewAudio.pause(); } } catch (_) {}
     }
   }
 
@@ -1218,6 +1218,13 @@
         emit({ status:'stopped', provider:null });
       };
       audio.onended = finish;
+      // 元素模式也要能被串流搶走時閉嘴（2026-10-23 店主：預設開啟後，玩家有在用串流就優先停網頁聲音）。
+      // 別的 App 拿走音訊焦點時，系統會把 <audio> 暫停；我們自己停（stopPreviewBuffer）會先把
+      // previewElementActive 清掉，切到背景的 visibilitychange 也是先 stop()，所以這裡只剩「被搶」這一種。
+      audio.onpause = () => {
+        if (token !== requestId || !previewElementActive || document.visibilityState !== 'visible') return;
+        revokeAutoplayByInterruption('element-paused');
+      };
       previewTimer = setTimeout(finish, playMs + 500);
       return true;
     } catch (_) { return false; }

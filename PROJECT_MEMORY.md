@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜串流優先：元素模式試聽被搶走也會自動關網頁聲音
+
+- **改動**：店主「玩家有使用串流就優先停止網頁聲音」。原本只有 Web Audio 路徑被系統中斷（iOS interrupted／Android suspended）會判定「玩家去聽串流」並把自動試聽記成關；`<audio>` 元素後備路徑被串流搶走時（系統暫停元素）沒偵測。補上 `onpause`：畫面在前景、不是我們自己停的就走同一條 `revokeAutoplayByInterruption`（含 4 秒手動播放寬限）。我們自己停、換張、切背景都先清旗標或換 token，不會誤判。`dip-player.js?v=51`。
+- **限制**：網頁沒有 API 能在出聲前知道玩家正在聽串流，預設開啟後第一次抽卡可能打斷一次串流；串流搶回來時網頁就閉嘴並記住關。
+- **主要檔案**：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`、`shop-all.html`
+- **驗證**：`node --check`；逐一核對其他 `previewAudio.pause()` 呼叫點都在新 requestId 之後或先清 `previewElementActive`。
+
 ### 2026-10-23｜dip-vinyl-shop｜自動試聽預設改開啟
 
 - **改動**：店主「預設聲音改開啟」。`dip-player.js` 沒表態過的裝置（localStorage 沒記 on/off）由「當成關」改成「當成開」：`autoplayPreference()` 回 'on'、載入時即有自動試聽授權；按過關閉或偵測到串流搶焦點仍記成 'off' 並保留。已經記成 'off' 的裝置不受影響（要自己按一下開）。四頁 `dip-player.js?v=50`。
