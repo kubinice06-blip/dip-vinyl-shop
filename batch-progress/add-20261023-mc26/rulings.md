@@ -49,3 +49,14 @@
 - 13016：Lost Years《Wave Breach》Discogs／Bandcamp 皆無，僅 MB、Apple（歸 Electronica）；廠牌空白屬實，寫作層勿補廠牌。聲音全無證據，建議視為未證實、優先汰換。
 - 13017：本組 moodGuess 存疑總計 6 張全部：Origins、Visitors 證據最強（樂評明講慢），Lost Years 三張與 Aeternus 為證據不足或部分不符；建議主線留 Aeternus 為最可能入格者，其餘待聲音評分。
 - 13018：Bandcamp 頁面直連被擋機器人驗證，改用 WebFetch 讀取；Wikipedia 直連 429 改走 WebFetch。WebSearch 用 3 次（Dynatron、Lazerhawk、Lost Years 各一）。
+
+## 主線汰換（研究層交件後，13071）
+- 13071：研究層 a–e 交件，**汰 17 張**（`master-override-mc26.json`）：
+  - **dreamwave／懷舊溫暖（z、x 不符）**：Waveshaper《Artifact》（樂評 warm, nostalgic, dreamy）、《Station Nova》（廠牌標 dreamwave／synthpop、甜亮）、《Retro Future》（無樂評、z 邊距小）；Lazerhawk《Visitors》（樂評稱比 Redline 慢、夢幻懷舊）；Phaserland《Electric Atlantic》（女聲、吉他、fresh, positive）；Starforce《Omniversal Oscillations》（chillwave／dreamwave 標籤）。
+  - **darksynth 厚（y 不符）**：Dynatron《Escape Velocity》（作者自標 darksynth）、Absolute Valentine《Police Heartbreaker》（darksynth／darkwave）、《American Nightmares》（dark ambient／witch house 過場曲多）、Vector Hold《Element 115》（neurofunk 低頻重壓、4 軌 18 分近 EP）。
+  - **速度沉穩＋管弦合唱**：Dynatron《Origins》（三份樂評 calm、methodical）。
+  - **Italo disco 暖／無聲音證據**：Lost Years《Black Waves》（Discogs Italo-Disco／Disco、〈The Funk〉）、《Wave Breach》（無任何聲音來源）。
+  - **非原創專輯**：Технология《Мне не нужна информация》（混音輯）、《Нажми на кнопку》（Discogs Compilation，前 10 首即首張全曲）。
+  - **真鼓＋銅管／new romantic 暖**：Kapitan Nemo《Kapitan Nemo》、Beograd《Remek Depo》（薩克斯風、小號、soul／funk 色彩）。
+- 留 9 張；研究層粗估 synthwave 多在 95–125 BPM（iTunes 試聽自相關，未進 facts），x 風險照記，評分時驗。叫策展代理第二輪補 mc19 東歐冷 synth-pop 與 electro 式 synthwave。
+- 13072：策展第二輪補 10 張（全為 mc19 東歐 synth；synthwave 因 Bandcamp／iTunes 擋腳本存取無法查聲音，策展層不硬補），主線再汰 2：Bonanza Banzai《Elmondatott》（雙碟、抒情曲多）、Denis & Denis《Čuvaj se!》（Yazoo 式女聲，z 近 0）。定案 17 張；卡單重建時保留原研究分組（a 2、b 2、c 1、d 4），補位 8 張全排 e 組、派一支補研究。被汰 17 張的研究稿移到 `dropped-cards.json`。

@@ -4,14 +4,26 @@
   {
    "id": "industrial-ritual",
    "zh": "工業儀式 drone",
-   "count": 19,
+   "count": 22,
    "why": "無鼓或鼓極稀的工業儀式 drone（Organum、Current 93 drone 期、Coil drone 盤、Endura）：低頻長音與殘響厚、陰冷"
   },
   {
    "id": "tape-music",
    "zh": "工業 tape music／磁帶迴圈",
-   "count": 11,
+   "count": 17,
    "why": "磁帶迴圈與拼貼（:zoviet*france:、NWW、M.B.、Menche）：糊、無拍、疏離"
+  },
+  {
+   "id": "neoclassical-dark",
+   "zh": "黑暗新古典",
+   "count": 12,
+   "why": "只收殘響厚、合成器管弦墊／定音鼓轟的暗黑新古典（Elend、DVKE、Dargaard、Arcana）"
+  },
+  {
+   "id": "ethereal",
+   "zh": "ethereal 暗色長音",
+   "count": 3,
+   "why": "Projekt／Hyperium 系 ethereal：女聲與合成器霧厚、無鼓"
   }
  ],
  "albums": [
@@ -208,7 +220,8 @@
    },
    "evidence": [
     "https://musicbrainz.org/release-group/d88f60d4-8e7a-3732-ba6f-8b3cefa8a8a4",
-    "https://www.discogs.com/release/624361"
+    "https://www.discogs.com/release/624361",
+    "https://i.discogs.com/MJ3BBb_IcxXH6JwMZG12ot-ORfmRZ3ixtcfp2ciSPIo/rs:fit/g:sm/q:90/h:539/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDM2/MS0xMzA4NTk3NjI1/LmpwZWc.jpeg"
    ],
    "mbRgMbid": "d88f60d4-8e7a-3732-ba6f-8b3cefa8a8a4",
    "mbAbsenceProof": null,
@@ -236,7 +249,8 @@
    },
    "evidence": [
     "https://musicbrainz.org/release-group/d9079f3c-e599-44a7-8a2c-972b136b7410",
-    "https://www.discogs.com/release/885225"
+    "https://www.discogs.com/release/885225",
+    "https://i.discogs.com/RP8VT_ntebU4b6ZaO6HFs4Zr6x6DnMXNYxWRUmSOch4/rs:fit/g:sm/q:90/h:538/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg4NTIy/NS0xMzYyODU1MzMx/LTQ0NzIuanBlZw.jpeg"
    ],
    "mbRgMbid": "d9079f3c-e599-44a7-8a2c-972b136b7410",
    "mbAbsenceProof": null,
@@ -264,7 +278,8 @@
    },
    "evidence": [
     "https://musicbrainz.org/release-group/4bb992db-68fd-428e-a6b7-a8d37b473e51",
-    "https://www.discogs.com/release/1232047"
+    "https://www.discogs.com/release/1232047",
+    "https://i.discogs.com/-kDOHk4aXueoHubjoc1jBdICFjDTv-pvGjl4QTgpiVA/rs:fit/g:sm/q:90/h:538/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMzIw/NDctMTM2Mjg1NzI3/MS0zMzcyLmpwZWc.jpeg"
    ],
    "mbRgMbid": "4bb992db-68fd-428e-a6b7-a8d37b473e51",
    "mbAbsenceProof": null,
@@ -332,7 +347,7 @@
    "uncertain": "朗誦比重高，y 估 0.9–1.3"
   },
   {
-   "artist": ":zoviet*france:",
+   "artist": "Zoviet France",
    "album": "Eostre",
    "year": 1984,
    "label": "Red Rhino Records",
@@ -357,11 +372,11 @@
    "mbAbsenceProof": null,
    "manualEvidenceUrls": [],
    "releaseException": "",
-   "queryAlias": "",
+   "queryAlias": ":zoviet*france:",
    "uncertain": ""
   },
   {
-   "artist": ":zoviet-france:",
+   "artist": "Zoviet France",
    "album": "Misfits, Loony Tunes and Squalid Criminals",
    "year": 1986,
    "label": "Red Rhino Records",
@@ -386,11 +401,11 @@
    "mbAbsenceProof": null,
    "manualEvidenceUrls": [],
    "releaseException": "",
-   "queryAlias": "",
+   "queryAlias": ":zoviet-france:",
    "uncertain": "偶有手鼓迴圈，x 估 1.8–2.4"
   },
   {
-   "artist": ":zoviet*france:",
+   "artist": "Zoviet France",
    "album": "Look Into Me",
    "year": 1990,
    "label": "Charrm",
@@ -415,11 +430,11 @@
    "mbAbsenceProof": null,
    "manualEvidenceUrls": [],
    "releaseException": "",
-   "queryAlias": "",
+   "queryAlias": ":zoviet*france:",
    "uncertain": ""
   },
   {
-   "artist": ":zoviet*france:",
+   "artist": "Zoviet France",
    "album": "Shadow, Thief of the Sun",
    "year": 1991,
    "label": "DOVe",
@@ -444,11 +459,11 @@
    "mbAbsenceProof": null,
    "manualEvidenceUrls": [],
    "releaseException": "",
-   "queryAlias": "",
+   "queryAlias": ":zoviet*france:",
    "uncertain": ""
   },
   {
-   "artist": ":zoviet*france:",
+   "artist": "Zoviet France",
    "album": "A Flock of Rotations",
    "year": 1987,
    "label": "Red Rhino Records",
@@ -473,11 +488,11 @@
    "mbAbsenceProof": null,
    "manualEvidenceUrls": [],
    "releaseException": "",
-   "queryAlias": "",
+   "queryAlias": ":zoviet*france:",
    "uncertain": ""
   },
   {
-   "artist": ":zoviet*france:",
+   "artist": "Zoviet France",
    "album": "Assault and Mirage",
    "year": 1987,
    "label": "Red Rhino Records",
@@ -502,11 +517,11 @@
    "mbAbsenceProof": null,
    "manualEvidenceUrls": [],
    "releaseException": "",
-   "queryAlias": "",
+   "queryAlias": ":zoviet*france:",
    "uncertain": "偶有打擊迴圈，x 估 1.8–2.4"
   },
   {
-   "artist": ":zoviet*france:",
+   "artist": "Zoviet France",
    "album": "Loh Land",
    "year": 1987,
    "label": "Staaltape",
@@ -531,7 +546,7 @@
    "mbAbsenceProof": null,
    "manualEvidenceUrls": [],
    "releaseException": "",
-   "queryAlias": "",
+   "queryAlias": ":zoviet*france:",
    "uncertain": ""
   },
   {
@@ -880,9 +895,728 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": ""
+  },
+  {
+   "artist": "Zero Kama",
+   "album": "The Secret Eye of L.A.Y.L.A.H.",
+   "year": 1984,
+   "label": "Nekrophile Rekords",
+   "country": "at",
+   "faction": "industrial-ritual",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Zero Kama 以骨笛人骨樂器做的儀式錄音，工業儀式的極端原型",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.3,
+    "z": -1.7,
+    "why": "儀式打擊稀而慢，骨笛嗡與殘響，陰森"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4c0a4e9a-0ca4-36bd-8f4c-0f8ed130fbe0",
+    "https://www.discogs.com/master/36768",
+    "https://coverartarchive.org/release/a344d5c5-f5a1-4f8c-b624-af76c79ab63e/18701841446.jpg"
+   ],
+   "mbRgMbid": "4c0a4e9a-0ca4-36bd-8f4c-0f8ed130fbe0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "儀式打擊段 x 估 1.9–2.4"
+  },
+  {
+   "artist": "Endura",
+   "album": "Liber Leviathan",
+   "year": 1996,
+   "label": "Aesthetic Death",
+   "country": "gb",
+   "faction": "industrial-ritual",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Endura 的魔法儀式暗黑 ambient，長音與吟誦",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.4,
+    "z": -1.6,
+    "why": "無鼓，吟誦與低頻長音，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/44e35a79-c8ae-33f2-99d6-1221bad0978d",
+    "https://www.discogs.com/master/46644",
+    "https://coverartarchive.org/release/4d86448a-83f5-4339-9305-cbf5400cb0c1/14365659866.jpg"
+   ],
+   "mbRgMbid": "44e35a79-c8ae-33f2-99d6-1221bad0978d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "John Duncan & Max Springer",
+   "album": "The Crackling",
+   "year": 1996,
+   "label": "trente oiseaux",
+   "country": "us",
+   "faction": "tape-music",
+   "genres": [
+    "electronic"
+   ],
+   "why": "John Duncan 與 Max Springer 的特斯拉線圈放電錄音，電流嗡鳴整片",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.6,
+    "z": -1.8,
+    "why": "無鼓，電流嗡與放電噪，冷硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/747d83b5-6446-33a0-a567-64fa495fbd9f",
+    "https://www.discogs.com/release/725796",
+    "https://i.discogs.com/og6tCafaZs5Mcttp1uMVqxD2qB-_0F4r9bRrChmrw_g/rs:fit/g:sm/q:90/h:297/w:299/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyNTc5/Ni0xMTUzNDMyNzgz/LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "747d83b5-6446-33a0-a567-64fa495fbd9f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Maurizio Bianchi",
+   "album": "Regel",
+   "year": 1982,
+   "label": "Mectpyo Sounds",
+   "country": "it",
+   "faction": "tape-music",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Maurizio Bianchi 早期磁帶迴圈盤，義大利工業 tape music 經典",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.8,
+    "z": -1.9,
+    "why": "無鼓，糊爛迴圈與嗡鳴，冷死"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4af4fed1-4592-4326-acf9-0533ed477326",
+    "https://www.discogs.com/master/41037",
+    "https://coverartarchive.org/release/7b324883-2f5b-4b84-9cb0-c020935bac8d/38659485542.jpg"
+   ],
+   "mbRgMbid": "4af4fed1-4592-4326-acf9-0533ed477326",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "M.B.",
+   "uncertain": ""
+  },
+  {
+   "artist": "Maurizio Bianchi",
+   "album": "Menses",
+   "year": 1982,
+   "label": "[no label]",
+   "country": "it",
+   "faction": "tape-music",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Maurizio Bianchi 82 年磁帶迴圈盤，緩慢重複的工業嗡鳴",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.8,
+    "z": -1.9,
+    "why": "無鼓，糊迴圈與低頻嗡，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fc0a6b04-f3e9-43fe-baa1-db66bc68fcd9",
+    "https://www.discogs.com/master/39087",
+    "https://www.discogs.com/master/39087"
+   ],
+   "mbRgMbid": "fc0a6b04-f3e9-43fe-baa1-db66bc68fcd9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "M.B.",
+   "uncertain": ""
+  },
+  {
+   "artist": "Maurizio Bianchi",
+   "album": "Mectpyo Bakterium",
+   "year": 1982,
+   "label": "Dys",
+   "country": "it",
+   "faction": "tape-music",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Maurizio Bianchi 早期名作，細菌主題的迴圈噪 drone",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.8,
+    "z": -1.9,
+    "why": "無鼓，迴圈噪 drone 糊爛，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/70ae7501-6f6a-4a0e-a7a5-873ca31abc13",
+    "https://www.discogs.com/master/38868",
+    "https://coverartarchive.org/release/0100c474-2c0a-481f-9db2-63923ddf104f/20771190909.jpg"
+   ],
+   "mbRgMbid": "70ae7501-6f6a-4a0e-a7a5-873ca31abc13",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Archon Satani",
+   "album": "Mind of Flesh & Bones",
+   "year": 1993,
+   "label": "Staalplaat",
+   "country": "se",
+   "faction": "industrial-ritual",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Archon Satani 的死亡工業／儀式 ambient，低頻轟鳴與吟誦",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.7,
+    "z": -1.9,
+    "why": "無鼓，低頻轟鳴與低吟，陰森"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4f352146-cb4f-326e-bc54-4c90604f8123",
+    "https://www.discogs.com/master/17433",
+    "https://coverartarchive.org/release/1abe03bd-de15-431c-a1d2-9b8f9ea9a90d/46197027785.jpg"
+   ],
+   "mbRgMbid": "4f352146-cb4f-326e-bc54-4c90604f8123",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Christoph Heemann",
+   "album": "Invisible Barrier",
+   "year": 1993,
+   "label": "Extreme",
+   "country": "de",
+   "faction": "tape-music",
+   "genres": [
+    "electronic"
+   ],
+   "why": "H.N.A.S.／Mirror 的 Heemann 個人磁帶拼貼與 drone",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.1,
+    "z": -1.2,
+    "why": "無鼓，磁帶拼貼與 drone，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2a727ec1-3b1c-37cb-84d0-612c8b76bc14",
+    "https://www.discogs.com/release/212102",
+    "https://i.discogs.com/tHvdoLHfi9OCGaW50ryEEHskz5wAbK8vxLWxztJNIpQ/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMjEw/Mi0xNTMxNTk4MTQx/LTMwMTYuanBlZw.jpeg"
+   ],
+   "mbRgMbid": "2a727ec1-3b1c-37cb-84d0-612c8b76bc14",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Daniel Menche",
+   "album": "Static Burn",
+   "year": 1994,
+   "label": "Soleilmoon Recordings",
+   "country": "us",
+   "faction": "tape-music",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Daniel Menche 的靜電噪 drone 名作，整片電流糊牆",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.9,
+    "z": -1.5,
+    "why": "無鼓，靜電噪牆與低頻，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f9b222bd-a3f9-4bac-acc3-ddb72da3bf16",
+    "https://www.discogs.com/master/58907",
+    "https://coverartarchive.org/release/6bed22e2-2279-47b5-8b42-bb6464d57d96/20176356518.jpg"
+   ],
+   "mbRgMbid": "f9b222bd-a3f9-4bac-acc3-ddb72da3bf16",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "噪牆音壓大但無拍，依 10-22 規則留靜"
+  },
+  {
+   "artist": "Elend",
+   "album": "Leçons de ténèbres",
+   "year": 1994,
+   "label": "Holy Records",
+   "country": "fr",
+   "faction": "neoclassical-dark",
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "why": "Elend 首張，黑暗新古典：合唱、弦樂墊與定音鼓轟",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.2,
+    "z": -1.5,
+    "why": "無爵士鼓，合唱弦樂墊殘響厚，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2d3a746b-b9c2-3fa0-a34c-b9933b24280b",
+    "https://www.discogs.com/master/260925",
+    "https://coverartarchive.org/release/15e86754-858d-495f-9784-af3b73821f86/5525363986.jpg"
+   ],
+   "mbRgMbid": "2d3a746b-b9c2-3fa0-a34c-b9933b24280b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偶有嘶吼段，x 估 2.0–2.5"
+  },
+  {
+   "artist": "Elend",
+   "album": "Les Ténèbres du dehors",
+   "year": 1996,
+   "label": "Holy Records",
+   "country": "fr",
+   "faction": "neoclassical-dark",
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "why": "Elend 第二張，黑暗新古典與合成器管弦的厚霧",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.3,
+    "z": -1.6,
+    "why": "定音鼓偶轟、不推，管弦墊厚，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cebf4b82-9853-3065-b377-73c63d3bdacb",
+    "https://www.discogs.com/master/27844",
+    "https://coverartarchive.org/release/92eb7271-6430-4eff-b96d-12c6bb1c3791/33716780378.jpg"
+   ],
+   "mbRgMbid": "cebf4b82-9853-3065-b377-73c63d3bdacb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偶有嘶吼段，x 估 2.0–2.6"
+  },
+  {
+   "artist": "Elend",
+   "album": "Weeping Nights",
+   "year": 1997,
+   "label": "Holy Records",
+   "country": "fr",
+   "faction": "neoclassical-dark",
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "why": "Elend 最安靜的 ambient 新古典盤，人聲與弦樂霧",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.1,
+    "z": -1.4,
+    "why": "無鼓，弦樂與人聲殘響霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dde7afa9-9deb-36ac-986a-9ae496c0eecf",
+    "https://www.discogs.com/master/219516",
+    "https://coverartarchive.org/release/6f0064c7-ceb2-4abe-a2d7-67985e1a741c/5525235632.jpg"
+   ],
+   "mbRgMbid": "dde7afa9-9deb-36ac-986a-9ae496c0eecf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Elend",
+   "album": "Winds Devouring Men",
+   "year": 2003,
+   "label": "Holy Records",
+   "country": "fr",
+   "faction": "neoclassical-dark",
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "why": "Elend 復出作，室內管弦與電子低頻的暗黑新古典",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1,
+    "z": -1.2,
+    "why": "鼓稀，管弦與低頻墊，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/56f8b78c-60e3-312c-9165-a1974ff1240c",
+    "https://www.discogs.com/master/27860",
+    "https://coverartarchive.org/release/ab766c2b-42f6-4651-b33a-bee92e4b0b6f/1433416162.jpg"
+   ],
+   "mbRgMbid": "56f8b78c-60e3-312c-9165-a1974ff1240c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Die Verbannten Kinder Evas",
+   "album": "Die verbannten Kinder Evas",
+   "year": 1995,
+   "label": "General Inquisitor Torquemado’s Releases",
+   "country": "at",
+   "faction": "neoclassical-dark",
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "why": "Die Verbannten Kinder Evas 首張，奧地利黑暗新古典：合成器管弦與女聲",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1,
+    "z": -1.2,
+    "why": "無鼓，合成器弦墊與殘響，悲冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/367f455f-78ad-3d6d-8ad5-0652bcb07490",
+    "https://www.discogs.com/release/317624",
+    "https://coverartarchive.org/release/8d0aef48-38d7-4613-990b-052366cc8afa/42135323698.jpg"
+   ],
+   "mbRgMbid": "367f455f-78ad-3d6d-8ad5-0652bcb07490",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Die Verbannten Kinder Evas",
+   "album": "Come Heavy Sleep",
+   "year": 1997,
+   "label": "M.O.S. Records Ltd.",
+   "country": "at",
+   "faction": "neoclassical-dark",
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "why": "Die Verbannten Kinder Evas 第二張，詩作配樂的暗黑新古典",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1,
+    "z": -1.2,
+    "why": "無鼓，合成器管弦墊與人聲霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b9ad4d4f-1019-318a-8efb-b8508598499d",
+    "https://www.discogs.com/master/311778",
+    "https://coverartarchive.org/release/463ec37a-51a5-442d-8fe8-db7ce04dbe59/42135394821.jpg"
+   ],
+   "mbRgMbid": "b9ad4d4f-1019-318a-8efb-b8508598499d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Die Verbannten Kinder Evas",
+   "album": "In Darkness Let Me Dwell",
+   "year": 1999,
+   "label": "Draenor Productions",
+   "country": "at",
+   "faction": "neoclassical-dark",
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "why": "Die Verbannten Kinder Evas 第三張，最濃的暗色合成器管弦",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1,
+    "z": -1.2,
+    "why": "無鼓，厚合成器墊與殘響，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/41b09c56-abe6-386c-b247-af49400ace32",
+    "https://www.discogs.com/master/183267",
+    "https://coverartarchive.org/release/0343f3f6-9926-4345-b681-3e9781f99c3e/42136013882.jpg"
+   ],
+   "mbRgMbid": "41b09c56-abe6-386c-b247-af49400ace32",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "sToa",
+   "album": "Urthona",
+   "year": 1993,
+   "label": "Hyperium Records",
+   "country": "de",
+   "faction": "ethereal",
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "why": "sToa 首張，德國 Hyperium ethereal 新古典：女聲、合成器墊",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1,
+    "z": -1,
+    "why": "鼓極稀，女聲與合成器墊殘響霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1c4a8cc0-2ddc-31e7-ab3e-2aade0e759df",
+    "https://www.discogs.com/master/113318",
+    "https://coverartarchive.org/release/78b28812-1134-39af-99eb-8b44047395cd/5091970624.jpg"
+   ],
+   "mbRgMbid": "1c4a8cc0-2ddc-31e7-ab3e-2aade0e759df",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "sToa",
+   "album": "Porta VIII",
+   "year": 1994,
+   "label": "Hyperium Records",
+   "country": "de",
+   "faction": "ethereal",
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "why": "sToa 第二張，更濃的 ethereal 合成器霧與女聲",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1,
+    "z": -1,
+    "why": "鼓極稀，合成器霧與女聲，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/63fa06ec-c263-309e-a685-c53a053456c4",
+    "https://www.discogs.com/master/113317",
+    "https://coverartarchive.org/release/e0bacfaf-ed35-4fdd-a625-62f19449f023/37771083753.jpg"
+   ],
+   "mbRgMbid": "63fa06ec-c263-309e-a685-c53a053456c4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Dargaard",
+   "album": "In Nomine Aeternitatis",
+   "year": 2000,
+   "label": "Draenor Productions",
+   "country": "at",
+   "faction": "neoclassical-dark",
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "why": "Dargaard 的暗黑新古典：定音鼓轟、合成器合唱與管弦墊",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -1.3,
+    "why": "定音鼓轟不推，合成器合唱墊厚，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b597af1d-3ffa-3fea-b873-d1160b84e6cb",
+    "https://www.discogs.com/master/546463",
+    "https://coverartarchive.org/release/dced79c0-5d3b-49d1-bfdf-b1acb63ea980/12463437866.jpg"
+   ],
+   "mbRgMbid": "b597af1d-3ffa-3fea-b873-d1160b84e6cb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Dargaard",
+   "album": "Rise and Fall",
+   "year": 2004,
+   "label": "Draenor Productions",
+   "country": "at",
+   "faction": "neoclassical-dark",
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "why": "Dargaard 後期作，史詩式合成器管弦與女聲",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -1.3,
+    "why": "定音鼓轟不推，合成器管弦墊厚，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/68809d8a-92d3-3380-a892-b48c6725ff68",
+    "https://www.discogs.com/master/83968",
+    "https://coverartarchive.org/release/e0f303f5-8dcd-4aa7-8c91-916e6eeed2d3/27796148982.jpg"
+   ],
+   "mbRgMbid": "68809d8a-92d3-3380-a892-b48c6725ff68",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mortiis",
+   "album": "Ånden som gjorde opprør",
+   "year": 1994,
+   "label": "Cold Meat Industry",
+   "country": "no",
+   "faction": "neoclassical-dark",
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "why": "Mortiis 首張長篇，Cold Meat 圈暗色合成器管弦",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1,
+    "z": -1,
+    "why": "鼓稀，合成器弦墊與殘響，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e21901ca-0f9b-306b-b6aa-699a273ff6d5",
+    "https://www.discogs.com/master/29859",
+    "https://coverartarchive.org/release/ee938310-2b1e-45cd-aef9-90af05a48adb/22271139410.jpg"
+   ],
+   "mbRgMbid": "e21901ca-0f9b-306b-b6aa-699a273ff6d5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "dungeon synth 偏童話，z 估 −0.7～−1.2"
+  },
+  {
+   "artist": "Arcana",
+   "album": "Inner Pale Sun",
+   "year": 2002,
+   "label": "Cold Meat Industry",
+   "country": "se",
+   "faction": "neoclassical-dark",
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "why": "Arcana 黑暗新古典中期作，合唱、低音墊與遠鼓",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1,
+    "z": -1.1,
+    "why": "遠鼓稀，合唱與低頻墊殘響厚，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/89f2dde0-b5d8-311c-96de-717abba8452d",
+    "https://www.discogs.com/master/1758",
+    "https://coverartarchive.org/release/a90fcbea-f149-48c8-be31-9482b414b245/1748384200.jpg"
+   ],
+   "mbRgMbid": "89f2dde0-b5d8-311c-96de-717abba8452d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Arcana",
+   "album": "Raspail",
+   "year": 2008,
+   "label": "Gravitator Records",
+   "country": "se",
+   "faction": "neoclassical-dark",
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "why": "Arcana 後期作，管弦墊與聖詠的暗色儀式感",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1,
+    "z": -1.1,
+    "why": "鼓稀，聖詠與管弦墊厚，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e9e984ba-a575-3d48-84d8-0474d5a0a56e",
+    "https://www.discogs.com/master/1876",
+    "https://coverartarchive.org/release/37f62dcc-632b-371e-a642-4a187c97cd57/2024985944.jpg"
+   ],
+   "mbRgMbid": "e9e984ba-a575-3d48-84d8-0474d5a0a56e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Steve Roach & Vidna Obmana",
+   "album": "Ascension of Shadows: Meditations for the Millennium",
+   "year": 1998,
+   "label": "Projekt",
+   "country": "us",
+   "faction": "ethereal",
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "why": "Projekt 出版，Steve Roach 與 Vidna Obmana 的暗色長篇 ambient",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.2,
+    "z": -0.9,
+    "why": "手鼓稀，長音墊與深殘響，幽暗"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/50887aa6-efab-3150-a562-01a262e6e381",
+    "https://www.discogs.com/master/1637657",
+    "https://coverartarchive.org/release/f7a48d75-bb37-4c93-a4e9-c2761cf238e4/14769116452.jpg"
+   ],
+   "mbRgMbid": "50887aa6-efab-3150-a562-01a262e6e381",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分段落有部落手鼓，z 估 −0.6～−1.2"
   }
  ],
  "notes": [
-  "進行中"
+  "主場景（工業 old-school 慢盤／ritual／tape music）挖到 39 張，擴寫場景（neoclassical darkwave／ethereal）補 15 張，合計 54。",
+  "全數 MB 釘住（54/54），無人工身分；去重：seed_cards 0 撞、其他組 curation-*.json 未提過同張（md3 已提 Arcana 前兩張、Current 93 drone 期兩張、Black Tape／Lycia 全線，本組避開）。",
+  "刻意排除：SPK 有鼓盤、Current 93 民謠期與《Christ and the Pale Queens》（民謠與 drone 各半）、:zoviet*france:《Popular Soviet Songs》（手鼓迴圈多）、MZ.412／Sophia（軍鼓推＋攻擊性，恐落亢奮）、Elend《The Umbersun》（嘶吼＋定音鼓推）、Ataraxia／Autumn Tears／Penitent（中世紀或乾淨鋼琴判輕）、Arcana《Le Serpent Rouge》（中世紀＋部落鼓偏暖）、Dead Can Dance 首張（有搖滾鼓）、Lisa Gerrard 個人盤（z 貼邊）、Maeror Tri（池中《Myein》z −0.2 貼邊）、The Hafler Trio《Masturbatorium》（找不到封面來源）。",
+  "封面：44 張 CAA；10 張無 CAA，改用 Discogs master／release 圖（Organum 晚期三張、Revell、Duncan、Heemann、DVKE 首張、M.B.《Menses》等），evidence 中已附 Discogs 網址。",
+  "年份：MB 與 Discogs 不一致者取 MB，唯 Current 93《In Menstrual Night》依原盤取 1986（MB 標 1985）；Organum《Submission》Discogs 1987／MB 1988、Mortiis《Ånden》Discogs 1995／MB 1994、Roach/Obmana Discogs 1999／MB 1998，主線可複核。",
+  "genres：工業／tape music 一律 electronic；neoclassical darkwave／ethereal 依 CUR-DISPATCH「goth／darkwave → rock」取 rock，第二類 classical。",
+  "藝人名統一：MB 正名 :zoviet*france:／M.B. 在池中已以 Zoviet France／Maurizio Bianchi 立卡，故 artist 沿用池中寫法、MB 正名放 queryAlias（Zoviet France 7 張、Maurizio Bianchi《Regel》《Menses》）。",
+  "Organum 收 6 張、:zoviet*france: 收 7 張、Nurse With Wound 4 張——同藝人無上限，都是無鼓 drone／迴圈盤，給主線汰換空間。",
+  "WebSearch 使用 0 次（全走 MB／Discogs／CAA API）。"
  ]
 }

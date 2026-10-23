@@ -55,57 +55,6 @@
   "notes": "聲音查證：速度（BPM）與鼓機型號查無可靠來源，未寫入 facts。credits 顯示有吉他（客座＋Ryabtsev），但無真鼓、無薩克斯風列名，鼓聲應為編程。速度與人聲甜度屬 moodGuess 未驗證；moodGuess 大致可信（合成器流行、疏離男聲、無實體鼓）但 x 3.6 的速度部分未證實。身分：MB／Discogs 一致（1991、SNC Records、ME 1811）。Discogs 盤名為「Всё, Что Ты Хочешь!!!」。"
  },
  {
-  "key": "desc2:Технология|Мне не нужна информация",
-  "artist": "Технология",
-  "album": "Мне не нужна информация",
-  "facts": [
-   {
-    "f": "1992 年 Gala Records 發行，ru 與 en 維基都把它歸為混音專輯（remix album），多數曲目是首張專輯歌曲的新混音，並非全新創作的錄音室專輯。",
-    "src": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F_(%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0)"
-   },
-   {
-    "f": "ru 維基列出的 1992 年作品《Мне не нужна информация》屬於混音專輯，發行在塔林音樂節之後，同一時期團員已開始做下一張《Рано или поздно》。",
-    "src": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F_(%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0)"
-   },
-   {
-    "f": "1992 年版 MB 曲目含〈Полчаса (New Mix/Gala Mix)〉〈Информация〉〈Шутник (Mega Mix)〉〈Песни ни о чём (House Mix)〉〈Холодный след (Metal mix)〉〈Шутник (Sympho Mix)〉等，混音名稱本身就點出 house、mega、metal、sympho 幾種取向。",
-    "src": "https://musicbrainz.org/release/dfc33905-f94e-45aa-83ef-151c4f6427b7"
-   },
-   {
-    "f": "多首混音偏長：2003 年版中〈Песни ни о чём (house mix)〉約 7 分 28 秒，〈Шутник (mega mix)〉約 6 分 22 秒，〈Всё, что ты хочешь (big mix)〉約 6 分 38 秒，是舞廳用的加長混音。",
-    "src": "https://musicbrainz.org/release/ddecabd6-9234-453a-a0cc-84d1d176e953"
-   },
-   {
-    "f": "2003 年 JAM Group International 發行重製 CD（編號 010 254-2），加入〈Дискотеки〉〈Иди со мной〉〈Нажми на кнопку (Show Mix)〉等 bonus 曲目。",
-    "src": "https://www.discogs.com/release/1403826"
-   },
-   {
-    "f": "Discogs 備註說明 2003 版〈Нажми На Кнопку (Show Mix)〉也被稱為 New Mix，原專輯為 1992 年發行。",
-    "src": "https://www.discogs.com/release/1403826"
-   },
-   {
-    "f": "2023 年 1 月 30 日有數位重發版（Maschina Records），共十一首。",
-    "src": "https://musicbrainz.org/release/0296df43-4f7b-46be-88fc-a4fd5f1034c2"
-   },
-   {
-    "f": "樂團成員同樣是 Velichkovsky、Kokhaev、Ryabtsev 與主唱 Nechitaylo；1992 年秋季與製作人 Aizenshpis 結束合作。",
-    "src": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F_(%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0)"
-   }
-  ],
-  "hookCandidates": [
-   "一張把首張專輯拆開重混的舞廳混音集"
-  ],
-  "sound": "首張專輯曲目的加長舞曲混音（house、mega、sympho、metal 等），速度偏舞曲，但多為 6 分鐘上下的長混音。",
-  "keyTracks": [
-   "Шутник (Mega Mix)",
-   "Песни ни о чём (House Mix)",
-   "Холодный след (Metal mix)"
-  ],
-  "status": "thin",
-  "coverage": "thin",
-  "notes": "moodGuess 存疑：這張是混音專輯，不是原創專輯；「機械鼓機、乾淨、疏離冷」是首張專輯的描述，混音版含 Metal mix（可能加入吉他取樣）與 Sympho mix（可能加入弦樂取樣），均查無來源證實，聲音不可保證與預估一致。BPM 查無。建議汰換：混音專輯、曲目與《Всё, что ты хочешь》大幅重疊，無獨立歷史定位（常設裁定：選輯／混音無定位者列建議移除）。身分：MB release-group 064f81fa 1992、Gala Records 相符。卡單 label Gala Records 與 MB 一致。"
- },
- {
   "key": "desc2:Технология|Рано или поздно",
   "artist": "Технология",
   "album": "Рано или поздно",
@@ -159,57 +108,6 @@
   "status": "full",
   "coverage": "full",
   "notes": "聲音查證：BPM 與樂評描述查無（WebSearch 查無評論）；僅憑 credits 判定無真鼓、無吉他、無薩克斯風，屬於推論，不寫入 facts。moodGuess 無明顯衝突，但 x 3.6（快拍）與 z（冷暖）未證實。時序：樂團離團事件屬「與作品直接綁定」類，已標明晚於發行。身分：MB 1993、label 空白，Discogs 查得 Gala Records，可補 label。卡單 label 空白建議填 Gala Records。"
- },
- {
-  "key": "desc2:Технология|Нажми на кнопку",
-  "artist": "Технология",
-  "album": "Нажми на кнопку",
-  "facts": [
-   {
-    "f": "1994 年 7 月由 Russkoe Snabzhenie（Russian Supply）發行的 CD，目錄號 RS-94020，Discogs 與 MB 都歸為合輯／重發，樂團官網頁標題為 1994 年重發（reissue）。",
-    "src": "https://musicbrainz.org/release/9a0318f0-f513-44e6-9e4f-56c3483ccd8b"
-   },
-   {
-    "f": "共十五首，前十首與 1991 年首張專輯《Всё, что ты хочешь》曲目相同（依序為〈Нажми на кнопку〉〈Всё, что ты хочешь〉〈Странные танцы〉……〈Полчаса〉），之後附上〈Шутник (House-Mix)〉〈Холодный след (16'-Mix)〉〈Полчаса (New-Mix)〉〈Песни ни о чём (House-Mix)〉〈Информация〉等混音。",
-    "src": "https://musicbrainz.org/release/9a0318f0-f513-44e6-9e4f-56c3483ccd8b"
-   },
-   {
-    "f": "全長約 1 小時 10 分鐘；聲音後製與剪接在 Igor Babenko 的 SBI RECORDS 電腦工作站完成，由 Russkoe Snabzhenie 與 Mastersound 公司聯合出品。",
-    "src": "https://www.discogs.com/release/1469003"
-   },
-   {
-    "f": "Discogs 註記第 4 曲〈Холодный След〉在封底誤印為〈Холодный Лёд〉。",
-    "src": "https://www.discogs.com/release/1469003"
-   },
-   {
-    "f": "封面設計 Aleksandr Gavrilov，攝影 Sergey Bermenyev。",
-    "src": "https://www.discogs.com/release/1469003"
-   },
-   {
-    "f": "標題曲〈Нажми на кнопку〉是 1991 年首張專輯的開場曲，並非這張的新作。",
-    "src": "https://musicbrainz.org/release/9a0318f0-f513-44e6-9e4f-56c3483ccd8b"
-   },
-   {
-    "f": "樂團成立於 1990 年莫斯科，被稱為蘇聯與俄羅斯 synth-pop 代表，常與 Depeche Mode 相比。",
-    "src": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F_(%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0)"
-   },
-   {
-    "f": "1994 年時樂團處於人員流動期：Ryabtsev 與 Kokhaev 已在 1993 年先後離團，此時 Nechitaylo 與 Velichkovsky 是核心。",
-    "src": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F_(%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0)"
-   }
-  ],
-  "hookCandidates": [
-   "把首張專輯與加長混音裝進同一張 CD 的 1994 年重發"
-  ],
-  "sound": "內容是首張專輯的合成器流行加數首混音版，聲音同 1991 年首張。",
-  "keyTracks": [
-   "Нажми на кнопку",
-   "Странные танцы",
-   "Информация"
-  ],
-  "status": "thin",
-  "coverage": "thin",
-  "notes": "moodGuess 存疑／身分存疑：這張不是原創專輯，而是 1994 年的重發合輯，前十首即 1991 年首張專輯的全部曲目，與 d 組第一張重複。官網標題寫「переиздание」，Discogs 標 Compilation。建議汰換（無獨立定位；常設裁定：重發／合輯無定位者列建議移除）。聲音與首張相同，BPM 查無。身分：MB 1994-07、Russkoe Snabzhenie 與卡單一致。"
  },
  {
   "key": "desc2:Bonanza Banzai|Induljon a banzáj!",
