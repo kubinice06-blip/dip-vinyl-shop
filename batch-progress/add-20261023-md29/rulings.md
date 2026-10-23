@@ -35,3 +35,10 @@
 - **21183**　moodGuess 存疑（中度，需聽感）：Apocryphos《Phantoms Received》（文案推薦給 ritual percussion 愛好者，Side-Line 聽到線性類工業打擊）；Council of Nine《Trinity》（鋼琴線條、和聲色調、文案自稱 between dark and light；curatorRisk 的鐘鼓元素則查無）；Ugasanie《Cold World of Eternity》（曲名 Tambourine of the Underworld、Seid near the River，文字來源皆未描述音響，無法證實）。
 - **21184**　輕度：Crypthios《Vestigium》（slow rhythmic parts、背景吟誦與耳語人聲、文案 soothing）；Shrine《Ordeal 26.04.86》（thunderous 聲浪，噪牆程度待聽）。Council of Nine《Davidian》與 Ugasanie《Freedom and Loneliness》大致成立。
 - **21185**　facts 不寫 Bandcamp 以外未驗證的字詞：seid 的語義、Uråldrig Sorg 的瑞典語意皆只放 notes 或略去。
+
+## 研究 a 組
+- 21161：a 組 10 張全數身分與年份、廠牌、目錄號核對無誤（MB／Discogs／Bandcamp 三處一致），未推翻策展層年份、廠牌、盤名。
+- 21162：Mount Shrine（Cesar Alexandre）2021-04-15 辭世，MB 與 Discogs 一致；但其遺作是 2022《All Roads Lead Home》（廠牌頁已證），故 a 組三張都不寫成「最後一張」。辭世屬與作品無直接綁定事件，寫作層一筆帶過、克制。
+- 21163：moodGuess 存疑清單（研究層建議）：強烈＝Dead Melodies《Murken Hollow》（credits 明列打擊、人聲、薩克斯風、吉他）、Ruptured World《Archeoplanetary》（旁白口述＋鋼琴，Discogs 標 Spoken Word）；中高＝Dead Melodies《Fabled Machines of Old》（奇幻吟遊、三首客座，聲音無第三方證據）；中度＝Mount Shrine《Winter Restlessness》《Ghosts on Broken Pavement》《Shortwave Ruins》（廠牌與樂評寫 warm／peaceful，色溫偏暖至中性）、Hilyard《Division Cycle》（Igloo 寫 dense, warm）、Dead Melodies《The Foundations of Ruin》（旁證有鋼琴、Discogs 稱 post-rock）；輕度＝Hilyard《Furthermore》（太空 ambient 色溫中性，同 Ionosphere 先例）；不明＝Ager Sonus《Necropolis》（埃及主題、無任何聲音描述）。
+- 21164：WebSearch 3 次用完（Mount Shrine、Dead Melodies、Ruptured World／Hilyard／Ager Sonus 各一組合查詢）；Ager Sonus 與 Hilyard《Furthermore》、Dead Melodies 兩張後作無第三方樂評，status 標 thin（Shortwave Ruins、Fabled Machines、Necropolis、Furthermore）。
+- 21165：Sputnikmusic 樂評（Foundations of Ruin）WebFetch 503、curl 空回應，內容僅以搜尋摘要轉述，已寫進 facts 但於 notes 標單源；寫作層用時建議降為氛圍形容。

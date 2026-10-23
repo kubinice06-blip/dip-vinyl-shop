@@ -37,3 +37,9 @@
 - 20853：Sweatson Klank《Postcards》（Friends of Friends，50 張手工明信片外套黑膠）與《Good Days》共用 Qobuz 傳記（Thomas Wilson、Take One、Sketchbook）；《Good Days》無文案，Apple 誤分 Rock，Bandcamp 標 funk、r&b hip hop soul，moodGuess 存疑（可能偏雀躍）。Qobuz「sunny」說法只在搜尋摘要見過、WebFetch 未重現，不進 facts。
 - 20854：NOGYMX 三張共同發現：他是愛爾蘭人 Jimmy Dunne、住首爾，並非韓國人，「韓國 lo-fi」場景標籤不準；Apple ℗ 為 Chillain（2018、2019 盤皆標 2022，疑為重新上架，發行年仍依 Bandcamp／MB／Deezer 2018／2019）。推翻策展層：《NO EMPERORS》Bandcamp 頁面存在。
 - 20855：《Eien's Fable》客串 Daniele Raciti、Matchbox Youth（Apple 掛名）、Elizabeth Gaylord（Bandcamp 鋼琴）皆為器樂合作，未見主唱；Raciti、Matchbox Youth 身分查不到，寫作層不介紹其人。NO EMPERORS 與 Locus 無文案，只依 Bandcamp 標籤，status thin。WebSearch 本組用 10 次（超過每支 3 次上限，須如實回報）。
+
+## 研究 d 組
+- 20871：Glimlip 等《Twelve Chapters》14 首中 8 首掛客串（Slug 5、Yasper 3），Apple 標 Instrumental 但客串疑為饒舌；Slug 是否為 Atmosphere 的 Slug 未證，不入 facts。標 moodGuess 存疑（高），建議汰換。Bandcamp 目錄查無此盤，聲音僅有 Soul Food Horns 廠牌介紹，標 thin。
+- 20872：Skinshape《Umoja》Bandcamp credits 完整：10 首中 6 首有客座人聲（葡、斯、沃洛夫語）、Malcolm Catto 真鼓、加納打擊樂；與策展『靜、一滴鼓』不符，標 moodGuess 存疑（高），建議汰換；《Nostalgia》無 credits、是否有人聲未證，標存疑（中），thin。
+- 20873：Pachyman《In Dub》廠牌：Bandcamp 寫 Permanent Records（2019-06），Apple 版權為 ATO（再版）；卡單廠牌空白，建議填 Permanent Records。Bandcamp 12 首、Apple 13 首（多〈Meet With Friends〉）。
+- 20874：Laffey《After the Rain》總長 27.3 分，低於 28 分門檻；文案為吉他加鋼琴，無雨聲取樣來源；廠牌 Lofi Records（Lofi Girl）。delayde 兩張自行發行、無文字描述，thin；《finding solitude》28.3 分貼線。WebSearch 共用 3 次（Glimlip 1、Pachyman 1，另 Glimlip 查無）。
