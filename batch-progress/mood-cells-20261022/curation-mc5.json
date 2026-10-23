@@ -4,13 +4,13 @@
   {
    "id": "jp-technopop",
    "zh": "日本 techno-pop／synth-pop",
-   "count": 30,
+   "count": 36,
    "why": ""
   },
   {
    "id": "jp-techno",
    "zh": "日本 techno",
-   "count": 12,
+   "count": 26,
    "why": ""
   },
   {
@@ -1280,12 +1280,573 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "低頻厚，可能判重"
+  },
+  {
+   "artist": "Logic System",
+   "album": "LOGIC",
+   "year": 1981,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-technopop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 techno-pop／synth-pop代表／延伸作；Moog 程式化機械音列，快、乾、無人聲，落冷冽（快、薄、乾、冷）",
+   "moodGuess": {
+    "x": 3.8,
+    "y": -0.2,
+    "z": -0.9,
+    "why": "Moog 程式化機械音列，快、乾、無人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8808853d-e067-35d7-8ff3-0ed810de6b8d",
+    "https://coverartarchive.org/release-group/8808853d-e067-35d7-8ff3-0ed810de6b8d"
+   ],
+   "mbRgMbid": "8808853d-e067-35d7-8ff3-0ed810de6b8d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Logic System",
+   "album": "東方快車",
+   "year": 1982,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-technopop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 techno-pop／synth-pop代表／延伸作；合成器音列，節拍機械乾薄，無人聲，落冷冽（快、薄、乾、冷）",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.2,
+    "z": -0.8,
+    "why": "合成器音列，節拍機械乾薄，無人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f0d5fd7f-d59b-33ed-8569-96034f5b4651",
+    "https://coverartarchive.org/release-group/f0d5fd7f-d59b-33ed-8569-96034f5b4651"
+   ],
+   "mbRgMbid": "f0d5fd7f-d59b-33ed-8569-96034f5b4651",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "松武秀樹",
+   "album": "007 DIGITAL MOON",
+   "year": 1979,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-technopop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 techno-pop／synth-pop代表／延伸作；Moog 程式化音列，機械脈動，無人聲，落冷冽（快、薄、乾、冷）",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.1,
+    "z": -0.7,
+    "why": "Moog 程式化音列，機械脈動，無人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ab7dc2cc-cad1-4037-86c2-d465158315d4",
+    "https://coverartarchive.org/release-group/ab7dc2cc-cad1-4037-86c2-d465158315d4"
+   ],
+   "mbRgMbid": "ab7dc2cc-cad1-4037-86c2-d465158315d4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "中速，x 風險"
+  },
+  {
+   "artist": "Flare",
+   "album": "Reference to Difference",
+   "year": 1994,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 techno代表／延伸作；90s techno，乾薄機械脈動，無人聲，落冷冽（快、薄、乾、冷）",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 0,
+    "z": -0.7,
+    "why": "90s techno，乾薄機械脈動，無人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/370af669-0083-3ea5-b592-50a1903b8ee5",
+    "https://coverartarchive.org/release-group/370af669-0083-3ea5-b592-50a1903b8ee5"
+   ],
+   "mbRgMbid": "370af669-0083-3ea5-b592-50a1903b8ee5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Flare",
+   "album": "Grip",
+   "year": 1996,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 techno代表／延伸作；乾而快的 techno，金屬感，落冷冽（快、薄、乾、冷）",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 0,
+    "z": -0.7,
+    "why": "乾而快的 techno，金屬感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/92abffd3-a66f-317d-9a8c-a6a9537cde56",
+    "https://coverartarchive.org/release-group/92abffd3-a66f-317d-9a8c-a6a9537cde56"
+   ],
+   "mbRgMbid": "92abffd3-a66f-317d-9a8c-a6a9537cde56",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "青木孝允",
+   "album": "Indigo Rose",
+   "year": 2002,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 techno代表／延伸作；微 glitch 點狀節拍，乾薄冷，落冷冽（快、薄、乾、冷）",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.3,
+    "z": -0.9,
+    "why": "微 glitch 點狀節拍，乾薄冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/575aa32a-93f9-31eb-9413-548f0528fda9",
+    "https://coverartarchive.org/release-group/575aa32a-93f9-31eb-9413-548f0528fda9"
+   ],
+   "mbRgMbid": "575aa32a-93f9-31eb-9413-548f0528fda9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "青木孝允",
+   "album": "come and play in our backyard",
+   "year": 2003,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 techno代表／延伸作；精密電子節奏，薄而乾，落冷冽（快、薄、乾、冷）",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.3,
+    "z": -0.8,
+    "why": "精密電子節奏，薄而乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/62ff120c-3d9f-33df-a97c-d2db7728c753",
+    "https://coverartarchive.org/release-group/62ff120c-3d9f-33df-a97c-d2db7728c753"
+   ],
+   "mbRgMbid": "62ff120c-3d9f-33df-a97c-d2db7728c753",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "青木孝允",
+   "album": "Parabolica",
+   "year": 2006,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 techno代表／延伸作；極簡電子脈動，乾冷，落冷冽（快、薄、乾、冷）",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.2,
+    "z": -0.8,
+    "why": "極簡電子脈動，乾冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/aed6837f-7e87-3231-8964-3fdc669aed74",
+    "https://coverartarchive.org/release-group/aed6837f-7e87-3231-8964-3fdc669aed74"
+   ],
+   "mbRgMbid": "aed6837f-7e87-3231-8964-3fdc669aed74",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "青木孝允",
+   "album": "28",
+   "year": 2005,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 techno代表／延伸作；極簡 techno，乾薄金屬感，落冷冽（快、薄、乾、冷）",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.2,
+    "z": -0.8,
+    "why": "極簡 techno，乾薄金屬感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0cd27093-5e23-3c4d-b084-2f046f098e25",
+    "https://coverartarchive.org/release-group/0cd27093-5e23-3c4d-b084-2f046f098e25"
+   ],
+   "mbRgMbid": "0cd27093-5e23-3c4d-b084-2f046f098e25",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "青木孝允",
+   "album": "RV8",
+   "year": 2013,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 techno代表／延伸作；精密電子節拍，薄乾，落冷冽（快、薄、乾、冷）",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.1,
+    "z": -0.8,
+    "why": "精密電子節拍，薄乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0fcf49fc-6a9a-408e-9608-fb238f3abf6a",
+    "https://coverartarchive.org/release-group/0fcf49fc-6a9a-408e-9608-fb238f3abf6a"
+   ],
+   "mbRgMbid": "0fcf49fc-6a9a-408e-9608-fb238f3abf6a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "田中フミヤ",
+   "album": "Right Moment",
+   "year": 2019,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 techno代表／延伸作；極簡 techno，乾冷點狀節奏，落冷冽（快、薄、乾、冷）",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0,
+    "z": -0.8,
+    "why": "極簡 techno，乾冷點狀節奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6530f285-0571-4c3e-b741-043f97e8ee66",
+    "https://coverartarchive.org/release-group/6530f285-0571-4c3e-b741-043f97e8ee66"
+   ],
+   "mbRgMbid": "6530f285-0571-4c3e-b741-043f97e8ee66",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "田中フミヤ",
+   "album": "You Find the Key",
+   "year": 2016,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 techno代表／延伸作；極簡 techno，乾薄機械，落冷冽（快、薄、乾、冷）",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0,
+    "z": -0.8,
+    "why": "極簡 techno，乾薄機械"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c0ede10b-0811-442f-a4e5-3d08e848a97c",
+    "https://coverartarchive.org/release-group/c0ede10b-0811-442f-a4e5-3d08e848a97c"
+   ],
+   "mbRgMbid": "c0ede10b-0811-442f-a4e5-3d08e848a97c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "石野卓球",
+   "album": "TITLE#1",
+   "year": 2004,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 techno代表／延伸作；冷色電子 techno，機械快拍，落冷冽（快、薄、乾、冷）",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 0.1,
+    "z": -0.5,
+    "why": "冷色電子 techno，機械快拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a37d116e-55d0-40fd-b3a5-03ac216cd361",
+    "https://coverartarchive.org/release-group/a37d116e-55d0-40fd-b3a5-03ac216cd361"
+   ],
+   "mbRgMbid": "a37d116e-55d0-40fd-b3a5-03ac216cd361",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同藝人人味風險"
+  },
+  {
+   "artist": "石野卓球",
+   "album": "TITLE#2+#3",
+   "year": 2004,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 techno代表／延伸作；冷硬電子節拍，無搞笑人聲，落冷冽（快、薄、乾、冷）",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 0.1,
+    "z": -0.5,
+    "why": "冷硬電子節拍，無搞笑人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/def752aa-2aae-448d-9b3e-53e1eff5eba8",
+    "https://coverartarchive.org/release-group/def752aa-2aae-448d-9b3e-53e1eff5eba8"
+   ],
+   "mbRgMbid": "def752aa-2aae-448d-9b3e-53e1eff5eba8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同藝人人味風險"
+  },
+  {
+   "artist": "清水靖晃",
+   "album": "Subliminal",
+   "year": 1987,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-technopop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 techno-pop／synth-pop代表／延伸作；電子節奏加薩克斯，乾薄冷，落冷冽（快、薄、乾、冷）",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.1,
+    "z": -0.7,
+    "why": "電子節奏加薩克斯，乾薄冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/75589f4e-182c-4ae2-ac6e-b850939a5f13",
+    "https://coverartarchive.org/release-group/75589f4e-182c-4ae2-ac6e-b850939a5f13"
+   ],
+   "mbRgMbid": "75589f4e-182c-4ae2-ac6e-b850939a5f13",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "中速，x 風險"
+  },
+  {
+   "artist": "Kaito",
+   "album": "Hundred Million Light Years",
+   "year": 2006,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 techno代表／延伸作；快速 techno，冷色合成器音墊，落冷冽（快、薄、乾、冷）",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.1,
+    "z": -0.3,
+    "why": "快速 techno，冷色合成器音墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e254ee0e-525c-3fb5-9c9c-cf36f1abebd0",
+    "https://coverartarchive.org/release-group/e254ee0e-525c-3fb5-9c9c-cf36f1abebd0"
+   ],
+   "mbRgMbid": "e254ee0e-525c-3fb5-9c9c-cf36f1abebd0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "旋律性冷色音墊，z 可能貼邊"
+  },
+  {
+   "artist": "坂本龍一",
+   "album": "Esperanto",
+   "year": 1985,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-technopop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 techno-pop／synth-pop代表／延伸作；打擊與取樣機械節奏，薄而乾，落冷冽（快、薄、乾、冷）",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.2,
+    "z": -0.4,
+    "why": "打擊與取樣機械節奏，薄而乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3adbc288-c27e-35e2-9c09-3a00e753b8ac",
+    "https://coverartarchive.org/release-group/3adbc288-c27e-35e2-9c09-3a00e753b8ac"
+   ],
+   "mbRgMbid": "3adbc288-c27e-35e2-9c09-3a00e753b8ac",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "打擊樂偏厚，y 可能偏高"
+  },
+  {
+   "artist": "田中フミヤ",
+   "album": "Unknown Possibility, Volume 2",
+   "year": 2000,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 techno代表／延伸作；極簡 techno，乾冷點狀節奏，落冷冽（快、薄、乾、冷）",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0,
+    "z": -0.8,
+    "why": "極簡 techno，乾冷點狀節奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/53afff08-a061-3dfc-ab17-90ed8437a47e",
+    "https://www.discogs.com/master/3004-Fumiya-Tanaka-Unknown-Possibility-Vol-2"
+   ],
+   "mbRgMbid": "53afff08-a061-3dfc-ab17-90ed8437a47e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面來源為 Discogs 圖，非 CAA"
+  },
+  {
+   "artist": "田中フミヤ",
+   "album": "Unknown 3",
+   "year": 2008,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 techno代表／延伸作；極簡 techno，薄乾金屬感，落冷冽（快、薄、乾、冷）",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0,
+    "z": -0.8,
+    "why": "極簡 techno，薄乾金屬感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c25721ab-497e-4a61-b81b-258e5388b95e",
+    "https://www.discogs.com/release/1542908-Fumiya-Tanaka-Unknown-3"
+   ],
+   "mbRgMbid": "c25721ab-497e-4a61-b81b-258e5388b95e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面來源為 Discogs 圖，非 CAA"
+  },
+  {
+   "artist": "Shi-Shonen",
+   "album": "Singing Circuit",
+   "year": 1985,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-technopop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 techno-pop／synth-pop代表／延伸作；新浪潮電子節拍，薄而冷，落冷冽（快、薄、乾、冷）",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0,
+    "z": -0.4,
+    "why": "新浪潮電子節拍，薄而冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b9642f16-7001-4d62-a9ab-7f235276ad3b",
+    "https://www.discogs.com/master/370304-Shi-Shonen-Singing-Circuit"
+   ],
+   "mbRgMbid": "b9642f16-7001-4d62-a9ab-7f235276ad3b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面來源為 Discogs 圖，非 CAA；帶吉他風險"
   }
  ],
  "notes": [
   "場景挖不到 54：日本 techno-pop／techno／J-pop 池中已大量收錄且 mc9 已取走 P-Model×4、ヒカシュー、高橋幸宏；K-pop（aespa／f(x)）池中已有，其餘 K-pop 估 x<3.6 不提；相対性理論為吉他樂團 y 高風險不提；高橋幸宏、坂本龍一、細野晴臣其餘盤判暖或判重不提。",
   "IQ-179（清水靖晃）已在池；Unknown Possibility Vol.2、Unknown 3、Shi-Shonen Singing Circuit 在 CAA 無封面，未提（Discogs 圖需另查）。",
   "label 欄未填（留空）；evidence 為 MB RG＋CAA 封面。",
-  "uncertain 欄有字者為 moodGuess 貼邊或風格有暖／重風險，主線可優先汰換。"
+  "uncertain 欄有字者為 moodGuess 貼邊或風格有暖／重風險，主線可優先汰換。",
+  "第二輪（2026-10-23）：append 新增 20 張；封面補 Discogs 圖者（Unknown Possibility Vol.2／Unknown 3／Singing Circuit）evidence 第二條為 Discogs 網址。"
  ]
 }
