@@ -47,3 +47,23 @@
 - 19506 Jesse Sykes《Like, Love, Lust…》：荒涼（frostbit）、含 Crazy Horse 式搖滾與快曲，x、z 存疑；歐洲首發 2006 Fargo、美國 2007-02-06 Barsuk，卡單年份維持 2006。
 - 19507 Simon Raymonde《Blame Someone Else》：聲音面資料極少，status thin；Bella Union 目錄第一號 BELLA CD 1；sound 欄為推測，鉤子層勿當事實。
 - 推翻策展層：Starflyer 59 Mellotron 一處；其餘無年份、廠牌、盤名更動。
+
+## 研究 d 組（條號 19511–19520）
+- 19511 The Telescopes《The Telescopes》推翻策展層：Discogs 全樂手名單只有吉他、鋼琴（Guy Fixsen）、貝斯、鼓，查無長笛與弦樂；Lawrie 稱此盤「始於對溫暖的抽象執迷」支持暖，但 PopMatters 提〈Ocean Drive〉律動較有侵略性、整體近 Spaceman 3 迷幻搖滾 → moodGuess 輕度存疑（x）。
+- 19512 The American Analog Set《The Golden Band》：Exclaim! 稱鼓刷奏、吉他不再火爆、somnambulistic／claustrophobic／melancholic；維基有顫音琴、電鋼琴長音，清透而非殘響霧 → moodGuess 存疑（y 恐 <0.5，z 恐貼 0）。策展層「Farfisa」維基未載，不寫。Kenny 攻讀博士僅單一二手來源，不採。
+- 19513 Pure Bathing Culture《Pray for Rain》status thin：Pitchfork、AllMusic 擋抓，僅 Guardian 一篇詳評（gauzy、旋律清楚、隱隱不安、琶音吉他）；y 恐偏輕、x 無直接證據 → moodGuess 存疑。
+- 19514 Nightlands《Oak Island》：Pitchfork 稱 intentionally android、robotic soft rock，和聲疊至少四層；人造感使 z 恐貼 0（moodGuess 輕度存疑），y 有包覆證據。Discogs 無製作人與錄音地登錄，不寫。
+- 19515 Nightlands《I Can Feel the Night Around Me》：兩篇樂評一致 hazy／mellow／reverb-coated harmonies／gentle rhythms，支持慢暖包覆；後段 Fear of Flying（power-pop）與巴西律動使 x 可能略高，前段 melancholic 使 z 未必高 → 輕度存疑。曲名 Moonbathin／Moonbathing 兩寫法並存，採 Pitchfork／MB。
+- 19516 Ducktails《St. Catherine》：moodGuess 存疑——Pitchfork 明寫 appealingly clean sounding、brightly-lit 木吉他、perfectly EQ'd 鼓，lo-fi 殘響已拋棄，y 恐判輕；wistful／melancholic 使 z 未必暖。
+- 19517 Teen Daze《Glacier》：**moodGuess 強烈存疑，建議汰換**——Best Fit、34th Street、Consequence 三方一致為 ambient、幾乎無人聲、旋律不明、調性冷（icy、glacial purity）；策展層「殘響人聲、dream pop、柔暖」與來源不符，z 恐為負、x 恐 <2.0。黑膠 8 首、日本 CD 12 首。
+- 推翻策展層：Telescopes 長笛／弦樂一處；Teen Daze 聲音定性一處；AmAnSet Farfisa 一處。年份、廠牌、盤名皆無更動。
+- 流程：WebSearch 本組 3 次（Telescopes、Teen Daze、AmAnSet），其餘靠 WebFetch、Discogs API、MB API、curl 取 Pitchfork／Guardian／Exclaim! 頁面；AllMusic、Spin 被擋。
+
+## 主線（研究後汰換）
+- 19551：研究層「moodGuess 存疑」照先例直接汰換 22 張（卡存 `dropped-cards.json`、研究稿移 `dropped-research.json`）：
+  - 判輕（乾淨 jangle、原聲、剝掉殘響、清透）：Clientele《Strange Geometry》、Dean Wareham、Starflyer 59《The Fashion Focus》（鍵盤取代吉他牆）、AmAnSet《The Golden Band》、Ducktails《St. Catherine》、Pure Bathing Culture《Pray for Rain》、Strawberry Guy、Brightblack《Ala.Cali.Tucky》、Novo Amor《Birthplace》（無聲音來源）、Guthrie & Budd《Bordeaux》（limpid／sparse）、Vanishing Twin（輕透 library 配樂＋motorik）。
+  - 判冷（樂評 icy／glacial／frostbit／fatalism）：Jesse Sykes ×2、Teen Daze《Glacier》、Guthrie & Budd《Before the Day Breaks》（nocturnal／somber，姊妹作只留一張）、Violet Indiana ×2（icy sultriness、暗嗓）、Sound of Ceres《The Twin》（旋律不明）。
+  - 判躁（推進／噪音）：Asobi Seksu《Hush》（stuttering 鼓、harsh noise）、Night Moves（disco 律動）、Small Black《Best Blues》（new wave 鼓機）。
+  - 非正規專輯：Clientele《Suburban Light》（1997–2000 單曲彙整）。
+- 19552：定案 **10 張**（a 3、b 2、c 2、d 3、e 0）。場景見底：shoegaze／dream pop 暖盤核心已在池，二線一查多是乾淨 jangle、冷色或推進；不再叫回策展。**ml44 不再派**。
+- 19553：保留但有風險：Acetone《Cindy》（半張失真厚重 semi-gunge）、Sound of Ceres《Nostalgia for Infinity》（driving beats）、Nightlands《Oak Island》（android 感，z 恐貼 0）、Tears Run Rings、Simon Raymonde（聲音 thin）。
