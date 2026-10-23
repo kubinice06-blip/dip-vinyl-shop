@@ -72,3 +72,12 @@
 - **17448** Dirty Beaches《Stateless》：人員表只有次中音薩克斯風、合成器、中提琴，無鼓，與預估相符；Discogs 曲名〈Time Washes Away Everything〉（維基寫法不同），寫作層用 Discogs 版。Last Lizard 後續生平不寫。
 - **17449** Cindytalk《Hold Everything Dear》：廠方文案講鋼琴、現場錄音、近乎無聲的抽象配樂，不是持續 drone；無鼓、靜相符，y 重有風險，標 moodGuess 存疑（電子 drone），中風險。署名用 Cindy Sharp／Cinder，Kinnison 為共同作者（2008 辭世，專輯獻給他）。
 - **17450** 研究限制：WebSearch 3 次用盡（Tropic、Zelienople、Circuit des Yeux 各一）；Pitchfork／BBC／Guardian／Discogs 網頁 403，Discogs 改走 API。
+
+## 主線裁定（研究層交件後，2026-10-23）
+- **17471**：照研究層的聲音事實汰 7 張（卡單與研究檔已移除，原卡存 `dropped-cards.json`）：
+  - **有拍推進／電子流行**：Scala《To You in Alpha》（Discogs synth-pop／leftfield、樂評稱 trip-hop 與 noise，整張有拍）、《Beauty Nowhere》（house／techno／breaks 標籤、鼓機明講）、port-royal《dying in time》（IDM／synth-pop 標籤、四位客座人聲，「拍子稀、冷灰」無任何來源）、Circuit des Yeux《Overdue》（三位鼓手＋三位鼓機、punk／folk，預估的 lo-fi drone 被推翻）。
+  - **質地判輕或色溫偏亮**：Jessica Bailiff《Feels Like Home》（樂評兩處都寫成安靜簡單的民謠小品，非 drone）、Drowse《Wane Into It》（真鼓＋扭曲鼓、樂評稱質地「閃爍明亮」）、Cindytalk《Hold Everything Dear》（廠方文案是鋼琴、現場錄音與近乎無聲的抽象配樂）。
+- **17472**：留下但標存疑（評分照聲音打）：Circuit des Yeux《-io》（轟鼓開場、24 人管弦，但慢而沉；池中同藝人落頹靡）、The Sight Below 兩張（dub techno 悶拍，md8 同型 98% 落頹靡）、Drowse《Light Mirror》（四首真鼓）、Clear Horizon（少數曲目有切分鼓）、Infinite Body（噪音低吼）、Zelienople 兩張與 Valet 兩張、Raum、Cantu-Ledesma（聲音無來源，非反證）、Final《3》、SIANspheric 兩張、Amp 兩張、Gazelle Twin、Tropic of Cancer、Esben《Violet Cries》。
+- **17473**：補 2 張（master 候補，主線策展原汰的貼邊張中池中同藝人最穩的）：Lycia《A Line That Connects》（池中 Lycia 四張全落頹靡、y 1.3／z −1.6）、lovesliescrushing《Xuvetyn》（z −0.5 原判貼邊；同藝人《Bloweyelashwish》研究稿聲音相符）。歸 b 組，補研究 append 進 b 組檔。
+- **17474**：照研究層改卡單：Esben and the Witch《Violet Cries》label High Note Records（MB 臺灣版）→ Matador。Scala 成員無 Mark Clifford（已汰）；Lycia《Wake》是 1989 年 50 份四軌卡帶 EP 小樣、Amp 是倫敦創團、《Bliss Out Vol. 4》演奏者為 Walker 與 Mitchell——寫作層照研究稿。
+- **17475**：**全批 40 張**（策展 54、主線汰 9、研究汰 7、補 2）。
