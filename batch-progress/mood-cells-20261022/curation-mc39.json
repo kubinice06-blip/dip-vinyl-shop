@@ -1,0 +1,1622 @@
+{
+ "group": "mc39",
+ "factions": [
+  {
+   "id": "solo-horn",
+   "zh": "管樂獨奏（薩克斯／單簧管／小號，無伴奏）",
+   "count": 22,
+   "why": "錄音室獨奏盤：擴展技法、循環換氣、多音與尖嘯，無節奏組"
+  },
+  {
+   "id": "horn-duo",
+   "zh": "管樂二重奏（對管樂、弦樂、鋼琴、低音提琴、人聲）",
+   "count": 24,
+   "why": "無鼓的原聲二重奏與少數室內三重奏：線條互刮、無調對話"
+  },
+  {
+   "id": "horn-perc",
+   "zh": "管樂＋打擊二重奏／輕編制",
+   "count": 8,
+   "why": "自由即興鼓手的碎拍與鈸聲配管樂，輕而尖，不是 fire music 轟炸"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Anthony Braxton",
+   "album": "Saxophone Improvisations, Series F.",
+   "year": 1972,
+   "label": "America",
+   "country": "fr",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "《For Alto》之後第二張中音薩克斯獨奏盤，巴黎 Decca 錄音室錄，全是圖形編號作品，Braxton 獨奏語法成形的關鍵",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.5,
+    "z": -1.5,
+    "why": "獨奏中音，尖叫、急促顫音與斷句，無伴奏乾聲、無主旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/571f44fe-ead5-36fe-92d3-3ca67af75286",
+    "https://www.discogs.com/master/62249",
+    "https://www.discogs.com/release/568171",
+    "https://i.discogs.com/lOMdm1zkYEo3jL5SvJt_ovHQpXsMuCknNpVmkOhRKpw/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2ODE3/MS0xNTQ3NzM1MzA5/LTc2NTQuanBlZw.jpeg"
+   ],
+   "mbRgMbid": "571f44fe-ead5-36fe-92d3-3ca67af75286",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Anthony Braxton",
+   "album": "Alto Saxophone Improvisations 1979",
+   "year": 1979,
+   "label": "Arista",
+   "country": "us",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Arista 雙 LP 獨奏，Big Apple 錄音室錄，Comp. 26／77 系列的音型練習與爆裂長句",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.6,
+    "z": -1.2,
+    "why": "獨奏中音，鋸齒音型與尖嘯，乾、薄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/26419370-fd48-408a-8eac-f2e083cf9cde",
+    "https://www.discogs.com/master/202646",
+    "https://www.discogs.com/release/2012448",
+    "https://i.discogs.com/yvcq9Dc3QsGs4BsJ6LEOcqDU8n9_8U8o2YaZ-GnaEBs/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMTI0/NDgtMTUxNTY4MzMw/My0zMTA0LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "26419370-fd48-408a-8eac-f2e083cf9cde",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "含三首標準曲（Red Top、Along Came Betty、Giant Steps）佔約四分之一，但被拆成碎片；z 若評分偏暖可汰"
+  },
+  {
+   "artist": "Anthony Braxton featuring John Lindberg",
+   "album": "Six Duets (1982)",
+   "year": 1982,
+   "label": "Cecma",
+   "country": "it",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "與低音提琴手 Lindberg 的錄音室二重奏，Composition 6／23／69 系列，鋸齒主題接自由對話",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.6,
+    "z": -1.4,
+    "why": "薩克斯單簧管對低音提琴，急促斷句、無鼓，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fc59ed69-6903-416c-818f-306eb7059fed",
+    "https://www.discogs.com/master/350276",
+    "https://www.discogs.com/release/1951238",
+    "https://i.discogs.com/1uxTaHxoB8FwhmjFA2m1r_evXocWUugBsH-LijWQdq4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NTEy/MzgtMTI2NzIwMTM0/My5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "fc59ed69-6903-416c-818f-306eb7059fed",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Andrew Voigt & Anthony Braxton",
+   "album": "Kol Nidre",
+   "year": 1990,
+   "label": "Sound Aspects",
+   "country": "de",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "兩支薩克斯（ROVA 的 Voigt）錄音室二重奏，從低音薩克斯到 sopranino 互相刮擦",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -1.3,
+    "why": "雙薩克斯尖鳴對撞、無節奏組，酸"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5bca3216-0380-4c80-a64d-3b44da3b7762",
+    "https://www.discogs.com/release/3913670",
+    "https://i.discogs.com/h3nwSAG2L4G_Y6DibuqLwox6Z9AN9ncRNu5SY9nHPgQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MTM2/NzAtMTY4MDUxMzk0/MS0zNTg4LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "5bca3216-0380-4c80-a64d-3b44da3b7762",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "末曲 Break'n Rag 帶拉格泰姆影子，佔 8 分鐘"
+  },
+  {
+   "artist": "Anthony Braxton / Brett Larner",
+   "album": "11 Compositions (Duo) 1995",
+   "year": 1997,
+   "label": "Leo",
+   "country": "gb",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "與日本箏手 Larner 的二重奏，箏的撥弦刮弦對上 Braxton 的鋸齒線條，Wesleyan 錄",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -1.0,
+    "z": -1.6,
+    "why": "箏撥刮與薩克斯尖音，乾、尖、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c62f7a28-3a05-40a3-b2e4-ad4401cc9e98",
+    "https://www.discogs.com/release/2477775",
+    "https://i.discogs.com/nhmCEgOU8DTNd10sOsuA2uUvlSYZRxN2ndLm7twr8jg/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0Nzc3/NzUtMTQyMjU2NTY1/My02ODg2LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "c62f7a28-3a05-40a3-b2e4-ad4401cc9e98",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "錄於 Crowell Concert Hall，Discogs 未寫 live，研究層核是否公開演出"
+  },
+  {
+   "artist": "John Stevens & Evan Parker",
+   "album": "The Longest Night, Vol. 1",
+   "year": 1977,
+   "label": "Ogun",
+   "country": "gb",
+   "faction": "horn-perc",
+   "genres": [
+    "jazz"
+   ],
+   "why": "SME 鼓手 Stevens 與 Parker 在 Riverside 錄音室徹夜二重奏，英式自由即興的經典對話",
+   "moodGuess": {
+    "x": 3.8,
+    "y": -0.3,
+    "z": -1.6,
+    "why": "高音薩克斯快速多音配小鼓組碎拍，尖、細、緊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/33cc0cee-56bc-4430-b556-28e4ce9bd7d3",
+    "https://www.discogs.com/release/424108",
+    "https://i.discogs.com/Nej0Q13u3D1EYKwQOQtUuqGlvo7d-15_TA7Aqx9Hz44/rs:fit/g:sm/q:90/h:400/w:410/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQyNDEw/OC0xMjMxNzI4NzQ0/LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "33cc0cee-56bc-4430-b556-28e4ce9bd7d3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "John Stevens & Evan Parker",
+   "album": "The Longest Night, Vol. 2",
+   "year": 1978,
+   "label": "Ogun",
+   "country": "gb",
+   "faction": "horn-perc",
+   "genres": [
+    "jazz"
+   ],
+   "why": "同一夜的後半，五段更短更密的交鋒",
+   "moodGuess": {
+    "x": 3.8,
+    "y": -0.3,
+    "z": -1.6,
+    "why": "高音薩克斯循環換氣配碎鈸，緊繃無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/25389801-6ea7-4079-88ea-1ef8d9b3887d",
+    "https://www.discogs.com/release/424111",
+    "https://i.discogs.com/zxtuisOPZXK7b2QqKOabRVYvZ1LNKOiRtn5QWmR6aPg/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQyNDEx/MS0xMzkyOTA0NTI1/LTk3NjAuanBlZw.jpeg"
+   ],
+   "mbRgMbid": "25389801-6ea7-4079-88ea-1ef8d9b3887d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Evan Parker / George Lewis",
+   "album": "From Saxophone & Trombone",
+   "year": 1980,
+   "label": "Incus",
+   "country": "gb",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Parker 與 AACM 長號手 Lewis 的二重奏，英美兩路擴展技法正面相遇",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -1.7,
+    "why": "薩克斯多音與長號噴氣、咆音互撞，乾冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/97270aa6-db6b-45d4-a946-9f6d87875bf9",
+    "https://www.discogs.com/master/204914",
+    "https://www.discogs.com/release/1668004",
+    "https://i.discogs.com/iOjJw_y90Sc8VP6LD25LZj7LmbZW5McYY6tx7YsPtFI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2Njgw/MDQtMTM0Njc5OTM0/OS00MTg2LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "97270aa6-db6b-45d4-a946-9f6d87875bf9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "錄於 Art Workers' Guild（倫敦會館），Discogs 未寫 live，研究層核"
+  },
+  {
+   "artist": "Evan Parker & Barry Guy",
+   "album": "Incision",
+   "year": 1981,
+   "label": "FMP",
+   "country": "de",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Parker 與低音提琴手 Guy 的第一張二重奏，FMP 柏林錄",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.0,
+    "z": -1.6,
+    "why": "高音薩克斯螺旋與低音提琴弓刮、敲擊，密而尖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/25d2509a-2838-4590-90b6-e77d3607d346",
+    "https://www.discogs.com/master/1735951",
+    "https://www.discogs.com/release/1791047",
+    "https://i.discogs.com/K60hSQsT7j7qNvuQsEkGU6Ara1orgA7iPccBJTQ7pSg/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3OTEw/NDctMTI0MzY4NTUy/Mi5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "25d2509a-2838-4590-90b6-e77d3607d346",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Evan Parker & Barry Guy",
+   "album": "Obliquities",
+   "year": 1995,
+   "label": "Maya",
+   "country": "gb",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Gateway 錄音室二重奏，九段長短交錯，Guy 的弓與 Parker 次中音／高音交替",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0.0,
+    "z": -1.6,
+    "why": "薩克斯多音對低音提琴刮弓，緊、乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2870ead1-5a3f-4869-8cbe-a5e31f10de40",
+    "https://www.discogs.com/master/3734439",
+    "https://www.discogs.com/release/2507597",
+    "https://i.discogs.com/l-4wQ1xrwgRGI1yP1P7DWgY1OSYHGt81RpIq3_z4-Nw/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MDc1/OTctMTQxMTMwMTA2/My00NzU5LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "2870ead1-5a3f-4869-8cbe-a5e31f10de40",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Evan Parker / John Stevens",
+   "album": "Corner to Corner",
+   "year": 1995,
+   "label": "Ogun",
+   "country": "gb",
+   "faction": "horn-perc",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Stevens 去世前兩年與 Parker 的錄音室二重奏，直錄雙軌",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.3,
+    "z": -1.6,
+    "why": "薩克斯快速顫音配輕鼓碎拍，尖、細"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ea1bb89a-1353-4522-a473-817ff411d5bf",
+    "https://www.discogs.com/release/2735546",
+    "https://i.discogs.com/Q9iubbmXd4AgKO0cGPQxpq0zJu_57MyviRV_u-qBZlY/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3MzU1/NDYtMTc3NDUzOTYy/My0xMjI4LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "ea1bb89a-1353-4522-a473-817ff411d5bf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Evan Parker / Ned Rothenberg",
+   "album": "Monkey Puzzle",
+   "year": 1997,
+   "label": "Leo",
+   "country": "gb",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "兩位循環換氣大師的簧管二重奏，Gateway 錄音室，八首以字謎家命名",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.5,
+    "z": -1.6,
+    "why": "雙簧管多音交纏、尖嘯，無節奏組，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c8022c85-f2c2-4536-bf39-cd59460dee53",
+    "https://www.discogs.com/release/516206",
+    "https://i.discogs.com/8rA8_aN6_lp9J4EASZyIOP-DTEcPber8TNAI5eW9j9A/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxNjIw/Ni0xNDIyODE5ODg4/LTc1NjMuanBlZw.jpeg"
+   ],
+   "mbRgMbid": "c8022c85-f2c2-4536-bf39-cd59460dee53",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Evan Parker / Matthew Shipp",
+   "album": "Abbey Road Duos",
+   "year": 2007,
+   "label": "Treader",
+   "country": "gb",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Abbey Road 錄音室一日錄成的薩克斯鋼琴二重奏，次中音組曲與中音組曲各四段",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.5,
+    "z": -1.5,
+    "why": "鋼琴音簇配薩克斯碎句，乾、緊、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/773aed53-bbcf-4e80-b011-a9d5223ccb46",
+    "https://www.discogs.com/release/1362876",
+    "https://i.discogs.com/Aj1CVjeV9LEItdTnSoHz5vL2A-NaGxPBwFB3f_sGvv4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjI4/NzYtMTI4NzA4OTkw/NS5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "773aed53-bbcf-4e80-b011-a9d5223ccb46",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Evan Parker & Joe McPhee",
+   "album": "Chicago Tenor Duets",
+   "year": 2002,
+   "label": "Okka Disk",
+   "country": "us",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "兩支次中音的錄音室二重奏，Airwave 錄，英式擴展技法對美式自由爵士",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.2,
+    "z": -1.4,
+    "why": "雙次中音粗糙音色、尖嘯對話，無伴奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d3006fdd-d2b7-4344-ae99-0116fd2a4364",
+    "https://www.discogs.com/release/2544248",
+    "https://i.discogs.com/xqrH5bZYg-bi9p8g7xOkXT9oLIJaRQg51hQdw0kChW8/rs:fit/g:sm/q:90/h:447/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NDQy/NDgtMTY0NTIwMjYx/NC04ODAxLnBuZw.jpeg"
+   ],
+   "mbRgMbid": "d3006fdd-d2b7-4344-ae99-0116fd2a4364",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "John Tchicai & Evan Parker",
+   "album": "Clapham Duos",
+   "year": 2015,
+   "label": "Treader",
+   "country": "gb",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Tchicai 晚年與 Parker 的雙薩克斯錄音室對話，Sonic Studio 錄",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -1.3,
+    "why": "雙薩克斯交錯短句，無伴奏、乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2a594338-0612-40bd-bb96-56f57b1cc293",
+    "https://www.discogs.com/release/8041724",
+    "https://i.discogs.com/r740R1WxqRgha4gBqxK_BBF7PTKt2BRZcGynpbm21Gk/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgwNDE3/MjQtMTQ1NDAxNDc3/Ny05NTIwLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "2a594338-0612-40bd-bb96-56f57b1cc293",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Tchicai 句子較有旋律感，z 可能偏近 −1"
+  },
+  {
+   "artist": "Roscoe Mitchell",
+   "album": "L-R-G / The Maze / S II Examples",
+   "year": 1978,
+   "label": "Nessa",
+   "country": "us",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "AACM 經典：與 Leo Smith、George Lewis 的管樂三人作品、八人打擊《The Maze》、高音薩克斯獨奏《S II Examples》",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.7,
+    "z": -1.8,
+    "why": "管樂尖鳴、打擊金屬碎響與獨奏刮擦音，乾冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1b924676-ff9c-4cf7-bbcf-786ac401173f",
+    "https://www.discogs.com/master/235779",
+    "https://www.discogs.com/release/797330",
+    "https://i.discogs.com/hHp4aKWd6Sp3AI4052Z6oMp4o44jJY-tScoTA-BYf2U/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc5NzMz/MC0xNDQxODE0ODg5/LTc0MzIuanBlZw.jpeg"
+   ],
+   "mbRgMbid": "1b924676-ff9c-4cf7-bbcf-786ac401173f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "The Maze 段落稀疏；整體仍緊繃"
+  },
+  {
+   "artist": "Roscoe Mitchell",
+   "album": "Sound Songs",
+   "year": 1997,
+   "label": "Delmark",
+   "country": "us",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "雙 CD 管樂獨奏集，Mitchell 用各種簧管與打擊做聲音歌曲",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.6,
+    "z": -1.6,
+    "why": "獨奏簧管尖鳴、循環換氣與刮擦，無伴奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e20658e5-3854-4750-8a19-4dccdcd41df2",
+    "https://www.discogs.com/release/4780324",
+    "https://i.discogs.com/32mQ1iGW0cJBMm9HuGkwhkZDzlUCLPHsGoHrEQ2fEsU/rs:fit/g:sm/q:90/h:529/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3ODAz/MjQtMTc2MDc4MjE2/NC05OTg5LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "e20658e5-3854-4750-8a19-4dccdcd41df2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "雙 CD 中 3 首標明現場，其餘芝加哥錄音室"
+  },
+  {
+   "artist": "Roscoe Mitchell",
+   "album": "Solo [3]",
+   "year": 2003,
+   "label": "Mutable Music",
+   "country": "us",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "三 CD 獨奏：薩克斯、長笛、打擊，Audio for the Arts 錄音室為主",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.6,
+    "z": -1.7,
+    "why": "獨奏管樂長段持續音與爆裂，乾、尖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f8c787a9-fe21-41cc-b6bb-2fb4e18919fe",
+    "https://www.discogs.com/release/3188261",
+    "https://i.discogs.com/n-rjPPMdW7AHPFhQCfjbwsGgqyywF8Vk1jQSsich4pE/rs:fit/g:sm/q:90/h:360/w:397/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxODgy/NjEtMTMxOTcwMTI5/MS5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "f8c787a9-fe21-41cc-b6bb-2fb4e18919fe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "2 首錄自 November Music 現場；長笛段可能偏靜"
+  },
+  {
+   "artist": "Roscoe Mitchell / Tatsu Aoki",
+   "album": "First Look: Chicago Duos",
+   "year": 2005,
+   "label": "Southport",
+   "country": "us",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "與低音提琴手青木達生的錄音室二重奏，芝加哥 Sparrow Sound Design 錄",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.5,
+    "why": "薩克斯尖音配低音提琴撥弓，無鼓、乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/132d6c24-b707-4e64-9801-c835abcf1882",
+    "https://www.discogs.com/release/5454235",
+    "https://i.discogs.com/oRYGKotewyqUo1gitAmX4VtTFCJlZAnzUlWU7_6pRhk/rs:fit/g:sm/q:90/h:494/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU0NTQy/MzUtMTQyNDIwMDc1/MS0yMTEwLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "132d6c24-b707-4e64-9801-c835abcf1882",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Roscoe Mitchell",
+   "album": "Duets with Tyshawn Sorey and Special Guest Hugh Ragin",
+   "year": 2013,
+   "label": "Wide Hive",
+   "country": "us",
+   "faction": "horn-perc",
+   "genres": [
+    "jazz"
+   ],
+   "why": "與 Sorey（鋼琴、打擊）的二重奏，Ragin 小號客串，作曲與即興交錯",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -1.6,
+    "why": "薩克斯長笛與打擊鋼琴碎片，尖、乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6b93c54e-ed10-4193-9edd-2e04889649cd",
+    "https://www.discogs.com/release/4424867",
+    "https://i.discogs.com/VzWFt4Loe-8hC4L4ay-VEc7mxHx_uLsU3DsSnRKv8_Y/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0MjQ4/NjctMTM2NDUxNzQ4/NS0yMzk5LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "6b93c54e-ed10-4193-9edd-2e04889649cd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Peter Brötzmann",
+   "album": "Solo",
+   "year": 1976,
+   "label": "FMP",
+   "country": "de",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Brötzmann 第一張獨奏，FMP 柏林錄，多支單簧管、薩克斯短曲，粗礪但不轟炸",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.1,
+    "z": -1.4,
+    "why": "獨奏簧管嘶吼與尖鳴，短曲急停，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dceb9aa0-eaff-4b95-88cc-db2a3b81afc7",
+    "https://www.discogs.com/master/316054",
+    "https://www.discogs.com/release/779276",
+    "https://i.discogs.com/eoNJxlj8MN6bc6oozeD6lCrZ0oU3CfSjBtmHCxZRVKg/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc3OTI3/Ni0xNTg4NDExOTU3/LTY0ODcuanBlZw.jpeg"
+   ],
+   "mbRgMbid": "dceb9aa0-eaff-4b95-88cc-db2a3b81afc7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Brötzmann 音色粗，y 可能到 +0.3"
+  },
+  {
+   "artist": "Peter Brötzmann",
+   "album": "14 Love Poems",
+   "year": 1984,
+   "label": "FMP",
+   "country": "de",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "柏林錄音室獨奏，十四首各換一支樂器（上低音、單簧管、tarogato），Brötzmann 最內省的獨奏",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.1,
+    "z": -1.0,
+    "why": "獨奏簧管粗啞長句與尖叫，無伴奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4e17c68e-9dfa-4462-a7ad-fe09ea759136",
+    "https://www.discogs.com/master/316288",
+    "https://www.discogs.com/release/923020",
+    "https://i.discogs.com/p-4bYERKtQNZIlIB-iKBhaWYVBL-YQMJ0ozSw9vZ2CE/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkyMzAy/MC0xNDQwMzgxMTkx/LTU4MjAuanBlZw.jpeg"
+   ],
+   "mbRgMbid": "4e17c68e-9dfa-4462-a7ad-fe09ea759136",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "開頭 Lonely Woman 主題較有旋律；z 可能 −0.8"
+  },
+  {
+   "artist": "Peter Brötzmann",
+   "album": "No Nothing",
+   "year": 1991,
+   "label": "FMP",
+   "country": "de",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "FMP 錄音室獨奏，十二首短曲，標題陰鬱、音色刺耳",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.1,
+    "z": -1.4,
+    "why": "獨奏薩克斯單簧管尖嘯、粗礪，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9aa77f4b-9d7a-36de-a284-2ebdd4f4209d",
+    "https://www.discogs.com/master/1197781",
+    "https://www.discogs.com/release/10458504",
+    "https://i.discogs.com/RZQcawNNZEM6z8HxXHOdPSB86sHMyUHlvb_lU8hV_a0/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNDU4/NTA0LTE0OTc4NTU5/OTgtOTc0OC5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "9aa77f4b-9d7a-36de-a284-2ebdd4f4209d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Peter Brötzmann",
+   "album": "Nothing to Say: A Suite of Breathless Motion Dedicated to Oscar Wilde",
+   "year": 1996,
+   "label": "FMP",
+   "country": "de",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "獻給王爾德的獨奏組曲，柏林錄",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.1,
+    "z": -1.3,
+    "why": "獨奏簧管嘶吼、斷續，無伴奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/aa15562f-1a14-49d2-95b8-1bd2bf6258e4",
+    "https://www.discogs.com/master/1693488",
+    "https://www.discogs.com/release/1045859",
+    "https://i.discogs.com/Ez86drIiVi-qYlErQLBGuJici0124inXfqv5Nez7ROg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNDU4/NTktMTI2Nzk2NTU1/Mi5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "aa15562f-1a14-49d2-95b8-1bd2bf6258e4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Peter Brötzmann",
+   "album": "Solo - Right as Rain",
+   "year": 2001,
+   "label": "FMP",
+   "country": "de",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "獻給 Werner Lüdi 的獨奏盤，柏林錄",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.1,
+    "z": -1.3,
+    "why": "獨奏簧管粗啞尖嘯，長段即興，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/30f6ad07-bce5-49fd-a74b-00168c15a186",
+    "https://www.discogs.com/release/2770300",
+    "https://i.discogs.com/bBK7Qay1V9n_m7euEfvfpQsdSZ9_7wrnie8cDV26Yj4/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3NzAz/MDAtMTM4ODQwMTY0/MC03ODUwLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "30f6ad07-bce5-49fd-a74b-00168c15a186",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "John Butcher",
+   "album": "Invisible Ear",
+   "year": 2003,
+   "label": "Fringes",
+   "country": "it",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "近距收音與擴大回授的薩克斯獨奏，倫敦錄，Butcher 把音色顯微化的代表作",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.8,
+    "why": "薩克斯回授尖鳴、氣音、刮擦，細、冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/98364835-0809-323b-a833-f4387fe09c43",
+    "https://www.discogs.com/master/259490",
+    "https://www.discogs.com/release/1340363",
+    "https://i.discogs.com/X8LgG6OjS4bGV5G9fuz0NP862A8KuAMfMFE6IkB8Zn4/rs:fit/g:sm/q:90/h:173/w:239/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNDAz/NjMtMTIxMTA0MTI3/MC5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "98364835-0809-323b-a833-f4387fe09c43",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分曲目用多軌疊錄與擴大回授（無電子處理器）"
+  },
+  {
+   "artist": "John Butcher / Phil Minton",
+   "album": "Apples of Gomorrah",
+   "year": 2002,
+   "label": "GROB",
+   "country": "de",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "薩克斯與人聲即興家 Minton 的二重奏，Gateway 錄音室為主，短曲以雜草命名",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.5,
+    "z": -1.8,
+    "why": "人聲咕嚕尖叫對薩克斯怪音，短、刺、無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bb53bb15-3db0-3af0-a3aa-b78ef1047845",
+    "https://www.discogs.com/master/1271765",
+    "https://www.discogs.com/release/1327890",
+    "https://i.discogs.com/PgwS17LCKgJv9fo2bRI-NqHuNycfvFAvtCpI3R-3ijE/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMjc4/OTAtMTIwOTk5MzE3/Ny5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "bb53bb15-3db0-3af0-a3aa-b78ef1047845",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "17 首中 tr13–17 錄於 LMC、Red Rose（可能現場），主體是錄音室"
+  },
+  {
+   "artist": "John Butcher / Georg Graewe",
+   "album": "Light's View",
+   "year": 1999,
+   "label": "Nuscope",
+   "country": "us",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "薩克斯與鋼琴的十二段短二重奏，柏林藝術學院錄",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.7,
+    "z": -1.7,
+    "why": "薩克斯氣音尖鳴配點描鋼琴，乾、尖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1bc4612d-f121-3e60-88a9-c27dd412343f",
+    "https://www.discogs.com/release/1328145",
+    "https://i.discogs.com/ktjA90MC-TcRaaeFVgcT9kjuLLQjb2-Ai1eyAoCa1io/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMjgx/NDUtMTIxMDAxMDc3/OC5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "1bc4612d-f121-3e60-88a9-c27dd412343f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "錄於 Akademie der Künste，未標 live"
+  },
+  {
+   "artist": "John Butcher / Dylan van der Schyff",
+   "album": "Points, Snags And Windings",
+   "year": 2001,
+   "label": "Meniscus",
+   "country": "us",
+   "faction": "horn-perc",
+   "genres": [
+    "jazz"
+   ],
+   "why": "與溫哥華鼓手 van der Schyff 的錄音室二重奏",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": -1.7,
+    "why": "薩克斯刮擦尖音配碎拍打擊，緊、細"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/85a1bdc6-882d-4447-917c-cda739de2888",
+    "https://www.discogs.com/master/1513824",
+    "https://www.discogs.com/release/2209586",
+    "https://i.discogs.com/hIB8fXKG5bwvII_vKGH3OgdbwbHIcBu0zN3t-lm0Fxs/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMDk1/ODYtMTU5NzYxMDc4/OS0zMTI2LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "85a1bdc6-882d-4447-917c-cda739de2888",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "John Butcher, Phil Durrant & Peggy Lee",
+   "album": "Intentions",
+   "year": 2001,
+   "label": "Nuscope",
+   "country": "us",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "薩克斯、小提琴、大提琴的錄音室三重奏，弦樂刮弓與簧管擊鍵交織",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.8,
+    "z": -1.7,
+    "why": "弦樂刮弓與薩克斯氣音尖鳴，薄、乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5c9eb4a4-5e72-44c2-a0f6-f4a1f283e571",
+    "https://www.discogs.com/release/1665674",
+    "https://i.discogs.com/0dk1bRQqSftVHEBaEJ6yt1fA2P6c7HWqs_WaiIr-yRo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NjU2/NzQtMTI4NTYxODE5/Ny5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "5c9eb4a4-5e72-44c2-a0f6-f4a1f283e571",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "三重奏非二重奏；安靜段落多，x 貼邊風險"
+  },
+  {
+   "artist": "Joe McPhee",
+   "album": "Tenor",
+   "year": 1977,
+   "label": "Hat Hut",
+   "country": "ch",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "hat Hut 早期經典，瑞士農舍錄的次中音獨奏，23 分鐘標題曲",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.0,
+    "z": -1.1,
+    "why": "獨奏次中音粗啞尖叫與長句，無伴奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8607aacb-dab9-46a0-9081-9f9786d1c96e",
+    "https://www.discogs.com/master/441583",
+    "https://www.discogs.com/release/1796127",
+    "https://i.discogs.com/UwOcE3vaDCgD5hTLaG9e3QHw7fcEmHwrxRArvGRG6og/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3OTYx/MjctMTYzOTMyMzkx/NC0zMDUyLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "8607aacb-dab9-46a0-9081-9f9786d1c96e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Good-Bye Tom B 段落抒情；z 可能 −0.8"
+  },
+  {
+   "artist": "Joe McPhee & John Heward",
+   "album": "Voices: 10 Improvisations",
+   "year": 2008,
+   "label": "Mode Avant",
+   "country": "us",
+   "faction": "horn-perc",
+   "genres": [
+    "jazz"
+   ],
+   "why": "與蒙特婁鼓手畫家 Heward 的錄音室二重奏",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "薩克斯小號碎句配鼓的刷擊與敲擊，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9b3f31a3-5fa2-4f18-b160-460c29eb396d",
+    "https://www.discogs.com/release/1618097",
+    "https://i.discogs.com/qUCrBcQ4iRwQW3xSKE4CJtlCuwQhMmeqSWp2cMjXsLM/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MTgw/OTctMTMyMDk1NjAz/My5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "9b3f31a3-5fa2-4f18-b160-460c29eb396d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mats Gustafsson",
+   "album": "Parrot Fish Eye",
+   "year": 1995,
+   "label": "Okka Disk",
+   "country": "us",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "芝加哥 Sparrow Sound 錄的二重奏與三重奏，Gustafsson 首張美國盤",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.2,
+    "z": -1.7,
+    "why": "薩克斯怪音尖嘯與小編制碎片對話，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/04dfeb84-89b1-3438-a653-1e6374afde17",
+    "https://www.discogs.com/release/1781634",
+    "https://i.discogs.com/pUftxJ6_ms39hJBZ60y9fiQGmNtzgLfxSDb3Twqics4/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3ODE2/MzQtMTUxMDIzMDAx/Ny05Njc4LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "04dfeb84-89b1-3438-a653-1e6374afde17",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mats Gustafsson, Barry Guy & Paul Lovens",
+   "album": "Mouth Eating Trees and Related Activities",
+   "year": 1996,
+   "label": "Okka Disk",
+   "country": "us",
+   "faction": "horn-perc",
+   "genres": [
+    "jazz"
+   ],
+   "why": "瑞典廣播電台錄音室的歐陸即興三重奏，Lovens 碎打擊",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.1,
+    "z": -1.7,
+    "why": "薩克斯尖嘯、低音提琴刮弓、鈸聲碎響，密而尖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c0b8686b-6bc7-4139-826e-8cc1eceb103f",
+    "https://www.discogs.com/release/1907820",
+    "https://i.discogs.com/LtHDQi5XWouDU200joGw0bBRwj5uxYMSbCpwLk-qQyM/rs:fit/g:sm/q:90/h:240/w:240/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MDc4/MjAtMTI1MTY2MjUy/NS5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "c0b8686b-6bc7-4139-826e-8cc1eceb103f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "三重奏；Guy 低音可能讓 y 到 +0.3"
+  },
+  {
+   "artist": "Mats Gustafsson",
+   "album": "Impropositions",
+   "year": 1997,
+   "label": "Phono Suecia",
+   "country": "se",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "斯德哥爾摩廣播大樓錄音室錄的薩克斯獨奏，附八十頁書，擴展技法集大成",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.8,
+    "why": "獨奏薩克斯鍵聲、氣音、尖嘯，乾、酸"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7391355e-9298-3690-a7c8-30be815f9515",
+    "https://www.discogs.com/master/3054419",
+    "https://www.discogs.com/release/579134",
+    "https://i.discogs.com/_8OBqZ-zCOvEx2bCjjrKjcG932rcHZUoeTANnZ43R10/rs:fit/g:sm/q:90/h:500/w:497/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3OTEz/NC0xMjg1MzIyOTAz/LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "7391355e-9298-3690-a7c8-30be815f9515",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mats Gustafsson & Barry Guy",
+   "album": "Frogging",
+   "year": 1997,
+   "label": "Maya",
+   "country": "gb",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "以蛙種命名的九段薩克斯低音提琴二重奏，芝加哥 Airwave 錄",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0.0,
+    "z": -1.7,
+    "why": "薩克斯蛙鳴怪音對低音提琴弓刮，緊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e4432d00-a3e7-41d1-bb76-433e93187ba2",
+    "https://www.discogs.com/release/2275690",
+    "https://i.discogs.com/fAGOi6rVEIVYErtRFByjDDy0DQmw9kngxAXqjUHEfHE/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNzU2/OTAtMTQxMTU2Njgx/Mi0xOTE2LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "e4432d00-a3e7-41d1-bb76-433e93187ba2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ned Rothenberg",
+   "album": "Trials of the Argo",
+   "year": 1981,
+   "label": "Lumina",
+   "country": "us",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Rothenberg 首張獨奏，紐約錄音室，全即時原聲無疊錄，循環換氣多音",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.5,
+    "z": -1.6,
+    "why": "獨奏中音循環換氣多音旋轉，尖、細"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/da54322e-4e60-4301-a2df-1375ba1e8850",
+    "https://www.discogs.com/release/1685802",
+    "https://i.discogs.com/ygjjB3-fgRC90SkFnGuK_Ed-jNfFDTDbvF1HtpR2yFU/rs:fit/g:sm/q:90/h:585/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2ODU4/MDItMTY1NjUzMzk2/Mi03NDA3LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "da54322e-4e60-4301-a2df-1375ba1e8850",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ned Rothenberg",
+   "album": "Trespass",
+   "year": 1986,
+   "label": "Lumina",
+   "country": "us",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Radio City 錄音室獨奏，中音薩克斯、低音單簧管、尺八",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.5,
+    "z": -1.5,
+    "why": "獨奏簧管多音與敲鍵，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b62e4c79-cdf2-48ac-a15c-d02351ccb000",
+    "https://www.discogs.com/master/2914531",
+    "https://www.discogs.com/release/2395156",
+    "https://i.discogs.com/ZakGunEUb_eMRrAtA1p7w-Ou7lKfndwKQlyYvrAkX7Y/rs:fit/g:sm/q:90/h:596/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzOTUx/NTYtMTI4MjY1OTg2/Mi5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "b62e4c79-cdf2-48ac-a15c-d02351ccb000",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Kakeai 組曲含尺八段"
+  },
+  {
+   "artist": "Ned Rothenberg",
+   "album": "The Crux: Selected Solo Wind Works (1989–1992)",
+   "year": 1993,
+   "label": "Leo",
+   "country": "gb",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "直錄雙軌無疊錄的獨奏管樂集，布魯克林錄音室",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.5,
+    "z": -1.5,
+    "why": "獨奏中音、單簧管循環換氣與多音，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/df692367-4f3d-4a2e-86ae-7fc965170cae",
+    "https://www.discogs.com/master/1392839",
+    "https://www.discogs.com/release/12258167",
+    "https://i.discogs.com/1lOLBFOrOtpi1-XwPHG8IETv5sjT6M_PH_pa_d-qEFs/rs:fit/g:sm/q:90/h:586/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMjU4/MTY3LTE1MzE1ODg2/MDgtMjU4Mi5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "df692367-4f3d-4a2e-86ae-7fc965170cae",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "末曲 Sokaku Reibo 為尺八本曲，較靜"
+  },
+  {
+   "artist": "Ned Rothenberg",
+   "album": "Intervals",
+   "year": 2002,
+   "label": "Animul",
+   "country": "us",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "2001 年錄的木管獨奏集，中音、低音單簧管、尺八",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -1.4,
+    "why": "獨奏簧管多音、斷音，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1959853f-52d3-4581-93e5-0c3bb5632068",
+    "https://www.discogs.com/release/2524117",
+    "https://i.discogs.com/JDIc3OnlvrM9M6WP3KFzXu0lrGliAdfickegNC77B5E/rs:fit/g:sm/q:90/h:564/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MjQx/MTctMTcwNjkwNTA3/MC0zMDA5LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "1959853f-52d3-4581-93e5-0c3bb5632068",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有幾首短曲較有旋律輪廓"
+  },
+  {
+   "artist": "Ned Rothenberg",
+   "album": "World of Odd Harmonics",
+   "year": 2012,
+   "label": "Tzadik",
+   "country": "us",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Tzadik 獨奏盤，美國藝術文學院錄，奇數泛音的簧管獨奏",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -1.6,
+    "why": "獨奏簧管泛音尖鳴、多音，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b48263d8-fd8c-4262-90a5-218eb98bf11a",
+    "https://www.discogs.com/release/5708612",
+    "https://i.discogs.com/BImLIFMMnlvjzTLI94NFuvmyhdNKC7ejyC9FQz72ENI/rs:fit/g:sm/q:90/h:579/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3MDg2/MTItMTcxMTM5NzE0/Ni01NDE4LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "b48263d8-fd8c-4262-90a5-218eb98bf11a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ned Rothenberg, Mark Feldman & Sylvie Courvoisier",
+   "album": "In Cahoots",
+   "year": 2016,
+   "label": "Clean Feed",
+   "country": "pt",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "單簧管、小提琴、鋼琴的錄音室三重奏，紐約下城室內即興",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.8,
+    "z": -1.5,
+    "why": "單簧管小提琴尖細線條配鋼琴音簇，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c2ba5a08-82d1-4ee4-b7eb-6fdb5fb9888f",
+    "https://www.discogs.com/release/9382687",
+    "https://i.discogs.com/Y7PDj08YU9p89x9t7qELFJqoTs7uIac2nO9oNSi60S8/rs:fit/g:sm/q:90/h:587/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkzODI2/ODctMTQ3OTU4OTc1/NC0zOTI2LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "c2ba5a08-82d1-4ee4-b7eb-6fdb5fb9888f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "三重奏；Courvoisier 已在池，此盤未見"
+  },
+  {
+   "artist": "Wadada Leo Smith & Louis Moholo-Moholo",
+   "album": "Ancestors",
+   "year": 2012,
+   "label": "TUM",
+   "country": "fi",
+   "faction": "horn-perc",
+   "genres": [
+    "jazz"
+   ],
+   "why": "小號與南非鼓手 Moholo 的錄音室二重奏，芬蘭 Espoo 錄",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "小號尖亮長音配自由鼓滾，乾、緊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/aa1dac6a-91e5-481f-bcce-c744f6f35c0f",
+    "https://www.discogs.com/release/3946624",
+    "https://i.discogs.com/IIyIcfvnDmpCZ12I7XN9OiWJJ68C6l73r9dmn0jubf0/rs:fit/g:sm/q:90/h:540/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NDY2/MjQtMTM1MDE0Mzc0/OS0yMDc2LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "aa1dac6a-91e5-481f-bcce-c744f6f35c0f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Wadada 有留白段落；Moholo 鼓推力強"
+  },
+  {
+   "artist": "Wadada Leo Smith, Vinny Golia & Bertram Turetzky",
+   "album": "Prataksis",
+   "year": 1997,
+   "label": "Nine Winds",
+   "country": "us",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "小號、木管、低音提琴的西岸室內自由即興，UCSD 錄音室",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.6,
+    "z": -1.6,
+    "why": "小號尖音、單簧管與低音提琴刮弓，無鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dfcae41d-4247-47bd-a632-bb6fc39c50cc",
+    "https://www.discogs.com/release/1606958",
+    "https://i.discogs.com/POsOmjeh3E5fYiCrVK4ei-EX5-KFdZXKuoOZiSszttQ/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MDY5/NTgtMTY1NDYxNzMx/NS0zNDMxLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "dfcae41d-4247-47bd-a632-bb6fc39c50cc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "三重奏"
+  },
+  {
+   "artist": "Ivo Perelman / Matthew Shipp",
+   "album": "The Art of the Duet",
+   "year": 2013,
+   "label": "Leo",
+   "country": "gb",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Perelman 與 Shipp 系列二重奏的起點，Parkwest 錄音室",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -1.5,
+    "why": "次中音高音區尖叫配鋼琴音簇，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1a7c2922-00a2-4809-9768-ce34771d95ff",
+    "https://www.discogs.com/release/4416735",
+    "https://i.discogs.com/WuHsrHGylu2QM-cNsS7xt6WlsSMANYDNQrCRzxti6G8/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0MTY3/MzUtMTQyNzMyMDgw/Ni03MDM5LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "1a7c2922-00a2-4809-9768-ce34771d95ff",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ivo Perelman / Matthew Shipp",
+   "album": "Callas",
+   "year": 2015,
+   "label": "Leo",
+   "country": "gb",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "雙 CD 二重奏，以卡拉絲角色命名，Perelman 的極高音區尖嘯",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -1.4,
+    "why": "次中音超高音尖鳴配鋼琴碎和弦"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/72e60826-0383-44a0-9fc9-30c3f8de691a",
+    "https://www.discogs.com/master/1727568",
+    "https://www.discogs.com/release/7032109",
+    "https://i.discogs.com/OdlXgay9SogESklM_wpqrRJ0xeUMxVv6QRSTYNsthds/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcwMzIx/MDktMTQzMjExNDc5/Ni00Nzg4LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "72e60826-0383-44a0-9fc9-30c3f8de691a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "命名取自歌劇但全為即興"
+  },
+  {
+   "artist": "Ivo Perelman / Matthew Shipp",
+   "album": "Corpo",
+   "year": 2016,
+   "label": "Leo",
+   "country": "gb",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "十二段身體主題的二重奏，Parkwest 錄",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -1.5,
+    "why": "次中音尖嘯與鋼琴低音音簇，緊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/24d121cb-45f2-473a-9f2f-de29a35afe4c",
+    "https://www.discogs.com/release/8392690",
+    "https://i.discogs.com/0TkmdSMthmlyCP79dAcRhKXD39yky8eq-gslWTUYLvg/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgzOTI2/OTAtMTQ2MDczODkz/Ni05ODM2LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "24d121cb-45f2-473a-9f2f-de29a35afe4c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ivo Perelman / Mat Maneri",
+   "album": "Two Men Walking",
+   "year": 2014,
+   "label": "Leo",
+   "country": "gb",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "次中音與微分音中提琴的錄音室二重奏，Systems Two 錄",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.9,
+    "z": -1.7,
+    "why": "薩克斯尖音與中提琴微分音刮弓，細、酸"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e2261e1e-751b-4fac-b773-d8d6981e60b2",
+    "https://www.discogs.com/release/5545761",
+    "https://i.discogs.com/KdgBAMKCy5C3h0ypR1x4qXl1HrJk8T_T66Bdcelj83Q/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU1NDU3/NjEtMTM5NjE3MDA5/OC0xOTkyLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "e2261e1e-751b-4fac-b773-d8d6981e60b2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ivo Perelman / Rudi Mahall",
+   "album": "Kindred Spirits",
+   "year": 2018,
+   "label": "Leo",
+   "country": "gb",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "次中音與低音單簧管的雙簧管二重奏，Parkwest 錄",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -1.6,
+    "why": "雙簧管尖嘯纏鬥，無伴奏、乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cfd71cad-4dbb-48f9-96ba-d9c8d8735483",
+    "https://www.discogs.com/release/12448381",
+    "https://i.discogs.com/cqA0cKUXa6Ss8QvVcqtJTBH4F1afeA51k81YB2MucMU/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNDQ4/MzgxLTE1MzU0ODI1/MzQtNTcxNi5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "cfd71cad-4dbb-48f9-96ba-d9c8d8735483",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Steve Lacy",
+   "album": "Straws",
+   "year": 1977,
+   "label": "Cramps",
+   "country": "it",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Cramps 高音薩克斯獨奏，米蘭 Fono-Roma 錄，Lacy 自作短曲拆解",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.7,
+    "z": -1.3,
+    "why": "獨奏高音薩克斯尖細斷句、高音哨音，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4bac4737-7cdb-4a97-95c0-abe7272430f0",
+    "https://www.discogs.com/master/247715",
+    "https://www.discogs.com/release/2880674",
+    "https://i.discogs.com/TsrydtnRd7M45T2TSJ8_qZI3PVWokOmg_PUmls6Oxag/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4ODA2/NzQtMTY0MDUyMTgy/OS02NTkxLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "4bac4737-7cdb-4a97-95c0-abe7272430f0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Lacy 主題有輪廓，z 可能 −1"
+  },
+  {
+   "artist": "Steve Lacy",
+   "album": "Hocus Pocus - Book 'H' of \"Practitioners\"",
+   "year": 1986,
+   "label": "Les Disques du Crépuscule",
+   "country": "be",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "《Practitioners》系列獨奏書之 H 冊，比利時修道院錄，獻給各領域人物的短曲",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.7,
+    "z": -1.2,
+    "why": "獨奏高音薩克斯斷音與跳音，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a9a56fa4-9504-4577-a207-8bc8c3a03417",
+    "https://www.discogs.com/master/1135889",
+    "https://www.discogs.com/release/3979229",
+    "https://i.discogs.com/bq6QUEewuibupZLkngzsRWsZaMM-8rdWuFp9TYpj3ss/rs:fit/g:sm/q:90/h:225/w:225/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5Nzky/MjktMTM1MTI0NDQz/My04NzEyLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "a9a56fa4-9504-4577-a207-8bc8c3a03417",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB release-group 日期 2008（CD 再版），原盤 1986；Lacy 主題有輪廓"
+  },
+  {
+   "artist": "Wolfgang Fuchs",
+   "album": "So - und? So!",
+   "year": 1986,
+   "label": "Uhlklang",
+   "country": "de",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "柏林 FMP 錄音室獨奏，sopranino、單簧管、低音與倍低音單簧管輪替，歐陸最尖的獨奏之一",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.5,
+    "z": -1.8,
+    "why": "sopranino 尖嘯與低音單簧管喀擦，短曲、乾、酸"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3f3670d3-07b5-43b9-a3ec-cb4c8b44967a",
+    "https://www.discogs.com/master/1677154",
+    "https://www.discogs.com/release/2655115",
+    "https://i.discogs.com/QYUkFkpB3Nqewvscj3rb3Wb7THOv_nuJy0OPlqyuxyg/rs:fit/g:sm/q:90/h:585/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2NTUx/MTUtMTMzNzcyNDA1/Mi04MjAzLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "3f3670d3-07b5-43b9-a3ec-cb4c8b44967a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ken Vandermark",
+   "album": "Furniture Music",
+   "year": 2003,
+   "label": "Okka Disk",
+   "country": "us",
+   "faction": "solo-horn",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Vandermark 第一張獨奏，每首獻給一位藝術家（Parker、Tristano、Mondrian）",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.3,
+    "why": "獨奏次中音單簧管短曲，多音與斷句，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3c7b860d-a0a9-42bf-9a85-99755c6f7c26",
+    "https://www.discogs.com/release/2544321",
+    "https://i.discogs.com/g3zD0WUV81QpUuDlO1cc_wiIMkUb6jj0ydWe_gvNQtg/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NDQz/MjEtMTUxOTkxNDUy/Mi0zNDY5LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "3c7b860d-a0a9-42bf-9a85-99755c6f7c26",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "18 首中 tr14–18 錄於 3030 現場，主體 13 首是客廳錄音"
+  },
+  {
+   "artist": "Ken Vandermark et al.",
+   "album": "Collected Fiction",
+   "year": 2009,
+   "label": "Okka Disk",
+   "country": "us",
+   "faction": "horn-duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "雙 CD，Vandermark 輪流與四位低音提琴手（Kessler、Håker Flaten、McBride、de Joode）二重奏",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.3,
+    "why": "簧管對低音提琴撥弓，無鼓、乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/31dd1ae0-c978-49e2-9534-0a41d5733fe4",
+    "https://www.discogs.com/release/2542722",
+    "https://i.discogs.com/YdxS5-gP8V9QJJQnCRhgUrUqsnMYPRo9w_iv57cmL-M/rs:fit/g:sm/q:90/h:215/w:215/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NDI3/MjItMTI4OTY1MzQy/NS5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "31dd1ae0-c978-49e2-9534-0a41d5733fe4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 未寫錄音地點；有少量作曲主題"
+  }
+ ],
+ "notes": [
+  "提名 54 張，全部 MB 釘住（mbRgMbid 皆有、primary-type 皆 Album），無人工身分；WebSearch 用 0 次，身分走 MB API、錄音地點與是否現場走 Discogs API release notes，封面用 Discogs 圖（evidence 最後一條）。artist 欄用可讀的合作掛名，album 用 MB 正規名。",
+  "池中原有：Braxton 23 張（For Alto、Duets with Mitchell 等）、Evan Parker 10 張、Roscoe Mitchell 9 張、Brötzmann 3 張（皆轟炸型）、Butcher 2、McPhee 1（Nation Time）、Vandermark 1（Dual Pleasure 2，評分 y 0.9 判重）；本批避開這些與 mc28／mc31／mc22／mc37／mc38 已提的盤（Company 4、Trio and Duet、Together Alone、Tempranillo、2-Z 等）。Gustafsson、Rothenberg、Perelman、Fuchs 池中原本 0 張。",
+  "因現場不收而排除：Braxton《Duo 1/2》（w/ Bailey，Wigmore Hall）、《Solo (London) 1988》（ICA）、《Duets 1987》（w/ Robair）、《Two Lines》、《Composition 192》；Parker《Arch Duo》《Rangirua》《Lines Burnt in Light》《Whitstable Solo》《At the Finger Palace》；Brötzmann《Lost & Found》《Wie das Leben so Spielt》《Pica Pica》《The Ink Is Gone》《Fragments》《Ouroboros》；Butcher《Fixations (14)》《Cavern with Nightlife》《Geometry of Sentiment》《Optic》《Concentric》《Secret Measures》《Low Yellow》；McPhee《Glasses》《Dream Book》《Sonic Elements》《A Parallax View》《Intimate Conversations》；Lacy《Chirps》（w/ Parker，Haus am Waldsee）《Clangs》；Gratkowski《Artikulationen》；Lazro《Entrance Gates of Tshee Park》；Vandermark/Wooley《East by Northwest》（Okka Fest）。",
+  "判軸／判暖排除：含標準曲或抒情主題的 McPhee《Old Eyes》《As Serious as Your Life》《Sweet Freedom》《Specific Gravity》（含 After the Rain）、Braxton《Duets 1995》（w/ Fonda，All of You）、《Duets 1976》（Maple Leaf Rag）、George Lewis《Solo Trombone Record》（Lush Life＋疊錄）；稀疏留白怕判靜：Wadada 獨奏盤（Creative Music-1、Red Sulphur Sky、Kulture Jazz、Tao-Njia）、Braxton《Composition 113》、Doneda《Anatomie des clefs》、Butcher《Resonant Spaces》、Parker/Tilbury《Two Chapters》；厚重或電聲：Brötzmann 與 Caspar《Last Home》、與 Heather Leigh、Lonberg-Holm 電聲盤、Dunmall 鼓二重奏（靈性密吹）、Gustafsson 倍低音獨奏、Parker/Prati《Hall of Mirrors》、Butcher《Equation》。",
+  "身分／年份疑點：Lacy《Hocus Pocus》MB release-group 首發日期 2008（CD 再版合併），原盤 1986 Crépuscule LP，year 填 1986；Ab Baars《Verderame》MB 查無且廠牌／Bandcamp 頁取不到，未提。",
+  "部分現場混入（主體錄音室，已在 uncertain 註明，研究層裁定）：Mitchell《Sound Songs》（3 首現場）、《Solo [3]》（2 首）、Butcher/Minton《Apples of Gomorrah》（tr13–17）、Vandermark《Furniture Music》（tr14–18）。場館未標 live 待核：Braxton/Larner（Crowell Concert Hall）、Parker/Lewis（Art Workers' Guild）、Butcher/Graewe（Akademie der Künste）。",
+  "擴寫場景只用了少量：三重奏 6 張（Mouth Eating Trees、Intentions、In Cahoots、Prataksis、L-R-G 部分、Collected Fiction 為多位低音提琴輪替二重奏）。主場景二線（Perelman 二重奏、Rothenberg、Gustafsson、Fuchs）仍有餘量：Perelman 另有 Tenorhood、Oneness、Efflorescence 等 Leo 錄音室二重奏未提。"
+ ]
+}

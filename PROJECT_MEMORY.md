@@ -6,11 +6,20 @@
 - **策展→研究汰換**：ml51 策展 54、主線汰 8、研究汰 16（boom bap 彈跳、house／trap／glitch、人聲合輯、散裝草稿集、EP 長度）、補 1 → 31。md28 策展 54、主線汰 8、研究汰 12（拍點／打擊、溫暖明亮、旋律樂器或人聲領奏）、補 3 再汰 3 → 34。兩場景主場景見底，不再派。
 - **主線審稿**：ml51 改 2 處（Scenic Route 單源比較評價刪、kyoto 第二句與 hook 重複改寫）；md28 改 3 處（Aftermath hook 單源「先行者」改寫，Sanctum hook 語句，Exit Earth 語句；hooks／input 同步）。
 - **上線**：card_catalog 31＋34、KV 65 鍵回讀逐字一致、試聽 24＋31 ready（md28 人工配 5）、seed +65、published gate 兩批 0 error；封面 CAA 61（6 張改 front-500）、Apple 2、Discogs 2（registry 400 筆），live-check 全 200、目視相符。上線前對 origin 92 個 `claude/*` 分支 seed＋卡單去重 0 撞。
-- **情緒評分**：`score-ml51`、`score-md28`。**ml51 落恍惚 31/31（100%）**、**md28 落頹靡 34/34（100%）**。八格（併 main 前）：恍惚 1,492、頹靡 1,467、冷冽 1,445。
+- **情緒評分**：`score-ml51`、`score-md28`。**ml51 落恍惚 31/31（100%）**、**md28 落頹靡 34/34（100%）**。八格（併 main 後，含 ml52／mc39）：恍惚 1,517、頹靡 1,467、冷冽 1,469。
 - **類型樹**：`genre-l3-artist-map.json` 補 hiphop/underground/instrumental 6、electronic/ambient/dark-ambient 3，65/65 落位；抽卡封面重建。
 - **藝人介紹**：未切（並行規矩）；新藝人 40 個掛名列在兩批 rulings.md 末尾。
 - **主要檔案**：`batch-progress/add-20261023-{ml51,md28}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml51,md28}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml51,md28}/`、`onboarding-manifest-add-20261023-{ml51,md28}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml51,md28}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
 - **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 65/65；build-card-moods 錨點 104/104。
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 11 輪 ml52／mc39：2000s slow jam 27 張、管樂獨奏／二重奏 28 張上線，落格 25/27、24/28
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 11 輪，本工作階段負責 ml52、mc39（評分照 10-23 體感標準）。ml52（`add-20261023-ml52`，恍惚）：Jaheim ×2、Carl Thomas、Dave Hollister、Anthony Hamilton ×4、Tank、Case、Gerald Levert ×3、Isley Brothers ×2、Silk ×2、Kenny Lattimore、Freddie Jackson、Phil Perry、Angie Stone、Chanté Moore、Vivian Green、Kelly Price、Keke Wyatt、Syleena Johnson、Marsha Ambrosius。mc39（`add-20261023-mc39`，冷冽）：Braxton ×2、Stevens & Parker ×3、Parker & Guy ×2、Parker 與 Rothenberg／Shipp／McPhee 二重奏、Roscoe Mitchell《L-R-G》、Brötzmann 獨奏 ×3、Butcher 二重奏 ×2、Gustafsson ×3、Rothenberg ×5、Perelman 二重奏 ×3、Wolfgang Fuchs。
+- **策展→研究汰換**：ml52 策展 54、主線挑 45、研究汰 20（hip-hop 硬拍取樣／饒舌客串、舞曲、smooth jazz、陰冷、身分）、補 4 再汰 2 → 27；mc39 策展 54、主線挑 45、研究汰 17（現場、留白冥想、疊錄／低音管厚、標準曲）→ 28。兩個主場景見底，不再派。
+- **主線審稿**：ml52 改 2 處（Chanté Moore 單源評價句刪、Angie Stone 撞 hook 4-gram 改寫）；mc39 改 1 處（Light's View hook 撞 Monkey Puzzle，hooks／input／out 同步）。
+- **上線**：card_catalog 27＋28、KV 27＋28 鍵回讀逐字一致、試聽 25＋8 ready（人工配 6）、seed +55、published gate 兩批 0 error；封面 CAA 52、Discogs 3（已登錄 registry），live-check 全 200。上線前對 origin 92 個 `claude/*` 分支 seed＋卡單去重 0 撞。
+- **情緒評分**：ml52 落恍惚 25/27（93%，Lattimore《Timeless》、Phil Perry 判輕）；mc39 落冷冽 24/28（86%，Brötzmann 獨奏 ×2 判重、Butcher／Graewe 與 Rothenberg 單簧管獨奏判靜）。八格：恍惚 1,486、冷冽 1,469、頹靡 1,433。
+- **主要檔案**：`batch-progress/add-20261023-{ml52,mc39}/`、`batch-progress/mood-axes/score-{ml52,mc39}/`、`desc-tools/batches/*/add-20261023-{ml52,mc39}*`、`onboarding-manifest-add-20261023-{ml52,mc39}-20261023.json`、seed／試聽／mood／類型樹產生檔、`genre-l3-artist-map.json`、SCENES.md、HANDOFF-mood-cells-line.md。
+- **驗證**：verify-album-onboarding --published 兩批 0 error；build-card-moods 錨點 104/104 同格；新藝人 28 個掛名列在兩批 rulings 末尾（未切藝人介紹）。
 
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格線第 11 輪派工：優先序 52–58
 

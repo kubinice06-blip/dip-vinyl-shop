@@ -77,8 +77,8 @@
 | 53 | md27 | 暗色現代古典慢板厚弦（Górecki、Kancheli、Vasks、Penderecki 慢作、Silvestrov 冷盤；要往下壓） | 派→情緒薄格 ml50、md27（第 11 輪） |
 | 54 | ml51 | lo-fi／beat tape 第三波（Knxwledge、Mndsgn、Ta-ku、Elaquent、Kiefer 慢盤、日本 jazzhop 二線）＋ ml47 剩餘 | ✅ 上線 31／落格 31 |
 | 55 | md28 | dark ambient 第三波（md5 收 45／45 高產；Cryo Chamber、Cyclic Law、Glacial Movements、Malignant 二線藝人） | ✅ 上線 34／落格 34 |
-| 56 | ml52 | 2000s R&B ballad／slow jam 續集（ml49 收 28 高產；Joe、112、Avant、Dru Hill、Musiq Soulchild、Brian McKnight 慢盤） | 派→情緒薄格 ml52、mc39（第 11 輪） |
-| 57 | mc39 | 自由爵士管樂獨奏與二重奏（Anthony Braxton、Evan Parker、Roscoe Mitchell、Brötzmann、Wadada Leo Smith 獨奏盤；mc38 鋼琴路高產） | 派→情緒薄格 ml52、mc39（第 11 輪） |
+| 56 | ml52 | 2000s R&B ballad／slow jam 續集（ml49 收 28 高產；Joe、112、Avant、Dru Hill、Musiq Soulchild、Brian McKnight 慢盤） | ✅ 上線 27／落格 25 |
+| 57 | mc39 | 自由爵士管樂獨奏與二重奏（Anthony Braxton、Evan Parker、Roscoe Mitchell、Brötzmann、Wadada Leo Smith 獨奏盤；mc38 鋼琴路高產） | ✅ 上線 28／落格 24 |
 | 58 | ml53 | 爵士人聲 torch song／深夜 ballad（Julie London、Chet Baker sings 以外的二線；弦樂或厚編曲才收） | |
 
 **暫停**：mc13 math rock、mc21 post-punk revival、mc30 minimalism（旋律清楚＝暖）、mc9／mc10／mc20／mc25／mc26 系的 synth-pop／new wave／K-pop／synthwave 續集（2026-10-23 體感標準：旋律清楚往暖，落雀躍）、mc23 art pop、ml4 系東亞續集、ml14 spiritual jazz（體感標準判冷，不是恍惚）、ml22、ml27。**重開**（體感標準下會落冷冽）：mc4、mc14、mc22、mc28。
@@ -162,7 +162,7 @@
 | mc36 | 19641 | no wave／薄而尖的 noise rock（DNA、Mars、Teenage Jesus、Theoretical Girls、Glenn Branca 早期、Ut、Sonic Youth 最早期；厚牆轟炸落暴躁） | ✅ 上線 20／落格 18（2026-10-23；策展 39、主線汰 7、研究汰 12；no wave 本體多 EP，主力改 Downtown 即興；帶吉他的 Mars＆DNA、Ut 判重落暴躁；不再派） |
 | mc37 | 19881 | EAI／onkyo／電聲即興（AMM、Keith Rowe、Sachiko M、Otomo 電聲期、Toshimaru Nakamura） | ✅ 上線 26／落格 16（2026-10-23；策展 54、主線汰 9、研究汰 19（安靜／催眠判靜 8、現場 4、鼓 4）；cracked electronics 與盤帶噪音拼貼 10 張判重落暴躁；唱盤、管樂擴展技法、Buchla 全中；見底不再派） |
 | mc38 | 20201 | 前衛爵士鋼琴緊繃那路（Cecil Taylor 獨奏、Matthew Shipp、Sylvie Courvoisier、Kris Davis、Marilyn Crispell、Schlippenbach） | ✅ 上線 27／落格 27（2026-10-23；策展 54、研究汰 18：現場 3、旋律清楚判暖 8、留白判靜 3、鼓組合奏判重 3、掛名 1；原聲前衛鋼琴小編制全中，Cecil Taylor 剩現場盤，主場景見底） |
-| mc39 | 20681 | 自由爵士管樂獨奏與二重奏（Braxton、Evan Parker、Roscoe Mitchell、Brötzmann、Wadada Leo Smith） | 派→情緒薄格 ml52、mc39（第 11 輪） |
+| mc39 | 20681 | 自由爵士管樂獨奏與二重奏（Braxton、Evan Parker、Roscoe Mitchell、Brötzmann、Wadada Leo Smith） | ✅ 上線 28／落格 24（2026-10-23；策展 54、研究汰 17：現場 5、留白判靜 7、疊錄／低音管判重 2、旋律／標準曲 3；出格 Brötzmann 獨奏 ×2 判重落暴躁、Butcher／Graewe 與 Rothenberg 單簧管獨奏判靜；主場景見底，不再派） |
 
 ## 恍惚 ml（靜＋重＋暖；門檻 x ≤ 2.7、y ≥ +0.8、z ≥ +0.3）
 
@@ -221,5 +221,5 @@
 | ml49 | 20121 | 90s R&B slow jam／ballad 二線（Jodeci、Silk、H-Town、Intro、Shai、Changing Faces 系慢歌） | ✅ 上線 28／落格 28（2026-10-23；策展 53、主線汰 1、研究汰 17：new jack 中快板／乾淨數位製作；頭牌池中判輕，收 quiet storm 成人抒情與 2000s 慢板 neo-soul，主場景見底） |
 | ml50 | 20281 | 暖 drone／厚墊 ambient（Celer、Chihei Hatakeyama、Taylor Deupree 暖盤、Benoît Pioulard） | 派→情緒薄格 ml50、md27（第 11 輪） |
 | ml51 | 20441 | lo-fi／beat tape 第三波（Knxwledge、Mndsgn、Ta-ku、Elaquent、Kiefer 慢盤、日本 jazzhop 二線） | ✅ 上線 31／落格 31（2026-10-23；策展 54、主線汰 8、研究汰 16、補 1；boom bap 彈跳、house／glitch、人聲合輯、散裝草稿集汰；Ohbliv、Wun Two、Purrple Cat、mt. fujitive 池中同人錨點可靠；主場景見底，不再派） |
-| ml52 | 20521 | 2000s R&B ballad／slow jam 續集（Joe、112、Avant、Dru Hill、Musiq Soulchild、Brian McKnight 慢盤） | 派→情緒薄格 ml52、mc39（第 11 輪） |
+| ml52 | 20521 | 2000s R&B ballad／slow jam 續集（Joe、112、Avant、Dru Hill、Musiq Soulchild、Brian McKnight 慢盤） | ✅ 上線 27／落格 25（2026-10-23；策展 54、研究汰 22：hip-hop 硬拍取樣／饒舌客串 12、舞曲 5、smooth jazz 2、陰冷 1、身分 1、補 4 再汰 2；出格 Lattimore《Timeless》、Phil Perry 乾淨製作判輕落放鬆；主場景見底，不再派） |
 | ml53 | 20761 | 爵士人聲 torch song／深夜 ballad 二線（弦樂或厚編曲） | |
