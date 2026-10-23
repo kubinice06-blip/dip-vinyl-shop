@@ -53,3 +53,15 @@
 - 19657 Environment for Sextet（Ictus 1979）：身分對上（MB 4 軌，六人），但無維基專頁與樂評，聲音事實只有編制，標 thin；兩段獨奏是誰未查證，判靜風險。
 - 19658 研究 b 組方法：WebSearch 與 a 組合計 4 次（Phew 兩張、School、Aggregates 各一）；全部 src 為完整 https。
 - 19659–19660 未使用。
+
+## 研究 d 組
+- 19671 Ostertag with Zorn with Frith《Attention Span》：Zorn、Frith 是 1989-09 Knitting Factory 的錄音素材，由 Ostertag 取樣機重彈；Ostertag 內頁自述動態範圍極大、〈Sleepless〉要開大聲才聽得到安靜聲音，moodGuess 存疑（靜風險；x 恐 <3.0）。Discogs 兩首長曲（23:19＋19:57）vs 維基 32 段，寫作層擇一不混。
+- 19672 Bob Ostertag《Say No More》：兩首長篇（21:01＋17:22），Minton 人聲、Dresser 貝斯、Baron／Hemingway 打擊，被剪接重組。MB 無廠牌、地區 GB，維基與 RecRec 皆瑞士（ReCDec 59），建議 country 改 ch、label 填 RecRec Music；年份 1993 照維基（MB flag 已解）。moodGuess 存疑（重：貝斯＋打擊）。
+- 19673 Storm and Stress 首作：貝斯 Eric Emm（非創團 Draguns）、Albini 錄音、七首四首逾 10 分鐘；第 4 首〈Micah Gaugh Sings All Is All〉有人聲與鋼琴，**暖風險**；策展層「低頻極少」無來源，moodGuess 存疑（重）。
+- 19674 Lithics 兩張皆 thin：Bandcamp 只有曲目、錄音（Borrowed Floors：2015-11、Evan Mersky、Red Lantern）與廠方文案，無樂手分工、無獨立樂評；sound 欄為推估，鉤子層勿據以寫細節。Mating Surfaces 不寫「第幾張」（Bandcamp 稱第二張全長，與 Discogs 發行序矛盾）。moodGuess 存疑（重／破音無證）。
+- 19675 Zs《Zs》（2003）：六人（雙薩克斯、雙吉他、雙鼓）、托盤印「請用能忍受的最大音量聽」；卡單 label 空白，填 Troubleman Unlimited（TMU 117）。moodGuess 存疑（重／破音）。Qobuz 簡介把《Arms》稱「全長首作」，與 2003 年《Zs》衝突，以 Discogs／維基為準。
+- 19676 Zs《Arms》：Colin Marston 於 The Pain Cave 錄音（2006-05），兩把電吉他（其一兼男中音吉他）＋雙鼓＋次中音薩克斯風，四人皆有人聲；Howard Stern 2007-11 事件記入。moodGuess 存疑（重／破音；另靜風險：〈Woodworking〉開頭、〈I Can't Concentrate〉近 11 分）。CD 為 Planaria，LP 為 Gilgongo。
+- 19677 未使用（d 組 7 張，保留）。
+- 19678 WebSearch 合計 4 次（Lithics、Zs Arms、Sharp Nots、Parkins Nightmare Alley），其中 Lithics 搜尋無果；AllMusic／Pitchfork／jazzmusicarchives 皆不可取。
+- 19679 未使用。
+- 19680 未使用。
