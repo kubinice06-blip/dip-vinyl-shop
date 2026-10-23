@@ -20,3 +20,15 @@
 - 20565：推翻策展層一處：Keke Wyatt curatorWhy 稱本盤有〈My First Love〉；該曲是 Avant 的單曲、Keke 客串，不在本盤，Avant 在本盤客串為 Nothing in This World、I Can't Wait、Bad Boy 三首。
 - 20566：日期與銷量衝突取捨：Regina Belle MB 1998-09-22 對維基 1998-06-09，Kelly Price MB 1998-01-01（佔位）對維基 1998-08-11，寫作層一律只寫年份；Keke Wyatt 藝人頁稱逾百萬張，專輯頁為 RIAA 金唱片／SoundScan 約 56.6 萬，採專輯頁；Kelly Price 廠牌寫 T-Neck（Island 發行）最穩。
 - 20567：Vivian、Vivian Green《Beautiful》、Miki Howard 標 status thin（聲音的逐首速度查不到來源，其餘身分、年份、廠牌皆對）；AllMusic／SoulTracks 全文 403，未取 Discogs。
+
+## 研究 d 組
+- 20551：Silk《Always and Forever》：翻唱專輯，Houston Press 稱編曲逐音忠於原版；原版含 new jack（Nite and Day 1988）、合成器放克（Don't Disturb This Groove 1987）、舞曲（A Night to Remember 1982）三首中快板，其餘六七首慢歌。moodGuess 存疑（慢歌約六七成、製作承襲八〇年代數位鍵盤，非厚暖）。無逐曲 BPM 來源。
+- 20552：Kenny Lattimore《Uncovered / Covered》：MB 單一發行為兩碟 24 軌，第二碟《Covered》11 首為 Fred Hammond 製作的福音（含 Rejoice (Clap Your Hands)、No Limit）；第一碟含 Tonight (2 Step)、Figure It Out。moodGuess 嚴重存疑，建議降級或汰換；MB 掛名「Kenny Lattimore & Chanté Moore」，留意池中重複。
+- 20553：Kenny Lattimore《Timeless》：Barry J. Eastmond 一人製作的 11 首翻唱，Verve，Smooth Jazz Airplay 單曲；慢歌占多數但無逐曲速度，製作偏拋光，z 可能低於預估。小存疑。
+- 20554：Will Downing《Emotions》：GRP、Jazz 與 Contemporary Jazz 專輯榜雙第 2；查無專輯級樂評與製作名單（AllMusic、SoulTracks、Discogs 403，Wikipedia 無獨立條目），status thin。與 ml49 汰掉 Downing 的 smooth jazz 盤同屬風險，moodGuess 存疑，建議降 z 或換候補。
+- 20555：Freddie Jackson《Life After 30》：Orpheus 1999，製作人有 Force MDs 成員 Shawn Waters、Bayyan 兄弟、Paul Laurence；篇名與含混音版單曲顯示前半偏中速 R&B，後半 Laurence 四首較像慢歌；無樂評，status thin，moodGuess 存疑，建議降級或汰換。
+- 20556：Phil Perry《The Heart of the Man》：推翻策展層「Perri 樂團」（實為 The Montclairs，1980 年代初與 Kevin Sanlin 雙人檔）；「假音」未見來源，不寫。Duke、Porcaro、Ritenour 等錄音室樂手，Call Me 登 Hot R&B Singles 第 1 名（單站互證）。大致成立，x 可能略偏低。
+- 20557：Angie Stone《The Art of Love & War》：評論稱許多歌偏慢，同時稱「現代、數位質感」；Baby 為 Adult R&B 冠軍的中板單曲，Pop Pop、Play Wit It 等為中板。慢歌估七至九首，z 偏高，可降到 1.0–1.2；小存疑。
+- 20558：Angie Stone《Unexpected》：推翻策展層「慢板為主、厚低頻合成墊」——Wikipedia 稱轉向舞曲流行、放克、上揚，Apple Music 評論稱 I Ain't Hearin' U、Hey Mr. DJ 是舞曲、Tell Me 是 Auto-Tune 夜店曲；製作為乾淨數位。moodGuess 嚴重存疑，建議汰換。MB 首發日 2009-01-01 為佔位，美國實際 2009-11-23。
+- 20559：Chanté Moore《Love the Woman》：AllMusic Kellman 稱慢歌「彼此相似」並稱製作滑順，George Duke 製作 Give Me Time 與 Guess Who I Saw Today；Can't Do It 風格不搭、Special 可能為中板。大致成立，小存疑；R&B 榜名次專輯頁 14、藝人頁 15，採專輯頁。
+- 20560：備註：本組可靠度——Silk 與 Downing 缺逐曲 BPM；Downing、Jackson 標 thin。SoulTracks（Silk 評論）僅來自搜尋摘要，不入 facts。
