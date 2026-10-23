@@ -61,12 +61,12 @@
 | 37 | ml40 | downtempo 暖盤三線 ＋ ml39 歐陸 dub／dubtronica 暖盤 | ✅ 上線 10／落格 10 |
 | 38 | ml41 | 日本 dub／downtempo 暖盤 ＋ ml37 剩餘 | ✅ 上線 12／落格 12 |
 | 39 | ml39 | 歐陸 dub／dubtronica 暖盤 ＋ ml40 剩餘 | 併入 ml40（場景見底，不再派） |
-| 40 | ml42 | lo-fi hip-hop／jazzhop 暖盤（Nujabes 周邊、Uyama Hiroto、Hydeout、Tomppabeats、Kudasai、Jinsang 系 beat tape） ＋ ml45 | 派→情緒薄格 ml42、ml45（第 9 輪） |
-| 41 | ml45 | rocksteady／early reggae 慢歌（Treasure Isle、Studio One 慢板、Alton Ellis、Ken Boothe、Phyllis Dillon 二線） ＋ lovers rock 剩餘 | 派→情緒薄格 ml42、ml45（第 9 輪） |
+| 40 | ml42 | lo-fi hip-hop／jazzhop 暖盤（Nujabes 周邊、Uyama Hiroto、Hydeout、Tomppabeats、Kudasai、Jinsang 系 beat tape） ＋ ml45 | ✅ 上線 26／落格 26 |
+| 41 | ml45 | rocksteady／early reggae 慢歌（Treasure Isle、Studio One 慢板、Alton Ellis、Ken Boothe、Phyllis Dillon 二線） ＋ lovers rock 剩餘 | ✅ 上線 17／落格 17 |
 | 42 | ml43 | 暖的 post-rock／ambient post-rock（Hammock、Helios、Eluvium 暖盤、Sigur Rós 周邊、Caspian 慢盤、慢而厚、旋律清楚） | 派→情緒薄格 ml43、mc36（第 9 輪） |
 | 43 | mc36 | no wave／薄而尖的 noise rock（DNA、Mars、Teenage Jesus、Theoretical Girls、Glenn Branca 早期、Ut、Sonic Youth 最早期） | 派→情緒薄格 ml43、mc36（第 9 輪） |
-| 44 | ml44 | 暖的 shoegaze／dream pop 厚牆（Slowdive 周邊、Mazzy Star 系、Galaxie 500、Lush 慢盤、Asobi Seksu、日本 shoegaze 暖盤） | 派→情緒薄格 ml44、md26（第 9 輪） |
-| 45 | md26 | 暗色 neofolk／dark folk 慢盤（Current 93、Sol Invictus、Ain Soph、Forseti、Hexvessel 慢盤；避開有極右爭議的團） ＋ doom jazz 二線 | 派→情緒薄格 ml44、md26（第 9 輪） |
+| 44 | ml44 | 暖的 shoegaze／dream pop 厚牆（Slowdive 周邊、Mazzy Star 系、Galaxie 500、Lush 慢盤、Asobi Seksu、日本 shoegaze 暖盤） | ✅ 上線 10／落格 9 |
+| 45 | md26 | 暗色 neofolk／dark folk 慢盤（Current 93、Sol Invictus、Ain Soph、Forseti、Hexvessel 慢盤；避開有極右爭議的團） ＋ doom jazz 二線 | ✅ 上線 28／落格 28 |
 | 46 | ml46 | 暖的 neoclassical／post-classical 弦樂＋鋼琴厚墊（Ólafur Arnalds、A Winged Victory 周邊、Dustin O'Halloran、Hania Rani 慢盤；獨奏鋼琴偏輕不收） | |
 | 47 | mc37 | EAI／onkyo／電聲即興（AMM、Keith Rowe、Sachiko M、Otomo 電聲期、Toshimaru Nakamura；安靜但讓神經繃緊的算躁） | |
 
@@ -103,7 +103,7 @@
 | md23 | 18441 | 暗黑 lo-fi／tape loops／Basinski 系 | 部分併入 md22（Bass Communion ×3、Jasper TX ×2、Mathieu 收；懷舊溫暖的 tape loop 多判暖，Philip Jeck、Andrew Chalk 不收） |
 | md24 | 18521 | 嘻哈 instrumental 冷盤（暗色 beat tape、冷的 abstract hip-hop） | 併入 md16（Sixtoo、Odd Nosdam、BSBD、Req、DJ Krush 已收；不再單獨派） |
 | md25 | 18601 | 冷的 ambient pop／art pop 慢盤（Julia Holter 冷盤、Jenny Hval 慢盤、Kate Bush 以外的暗 art pop） | 併入 md10（池中冷 art pop 多判輕，只收到 6 張） |
-| md26 | 19721 | 暗色 neofolk／dark folk 慢盤（Current 93、Sol Invictus、Ain Soph、Forseti、Hexvessel 慢盤；避開有極右爭議的團）＋ doom jazz 二線 | 派→情緒薄格 ml44、md26（第 9 輪） |
+| md26 | 19721 | 暗色 neofolk／dark folk 慢盤（Current 93、Sol Invictus、Ain Soph、Forseti、Hexvessel 慢盤；避開有極右爭議的團）＋ doom jazz 二線 | ✅ 上線 28／落格 28（策展兩輪 61、主線汰 3、研究汰 30；neofolk 只剩 drone／儀式型，極右爭議團不收，場景見底） |
 
 ## 冷冽 mc（躁＋輕＋冷；門檻 x ≥ 3.3、y ≤ +0.2、z ≤ −0.3）
 
@@ -196,8 +196,8 @@
 | ml39 | 19081 | 歐陸 dub 與 dubtronica 暖盤（Dreadzone、Kruder & Dorfmeister、Tosca、Thievery Corporation 其他、Smith & Mighty、Dub Pistols 慢盤） | 併入 ml40（頭牌已在池或判輕判冷，不再派） |
 | ml40 | 19161 | downtempo 暖盤三線（Ninja Tune／Compost／Pussyfoot 暖盤、Bonobo 早期、Blockhead、Emancipator、Nightmares on Wax 其他、Fila Brazillia 以外） | ✅ 上線 10／落格 10（併 ml39；策展 36、主線汰 1、研究汰 24，場景見底） |
 | ml41 | 19241 | 日本 dub／downtempo 暖盤（Little Tempo、Dry & Heavy、Audio Active、Mute Beat、Gota、Kyoto Jazz Massive 慢盤、Cro-Magnon） | ✅ 上線 12／落格 12（併 ml37 lovers dub 那半；策展兩輪 30、主線汰 3（撞 ml40 1）、研究汰 15；日本 dub 池中多判冷、KJM 系落雀躍，場景見底，不再派） |
-| ml42 | 19321 | lo-fi hip-hop／jazzhop 暖盤（Nujabes 周邊、Uyama Hiroto、Hydeout、Tomppabeats、Kudasai、Jinsang 系 beat tape；要暖、慢、低頻厚） | 派→情緒薄格 ml42、ml45（第 9 輪） |
+| ml42 | 19321 | lo-fi hip-hop／jazzhop 暖盤（Nujabes 周邊、Uyama Hiroto、Hydeout、Tomppabeats、Kudasai、Jinsang 系 beat tape；要暖、慢、低頻厚） | ✅ 上線 26／落格 26 |
 | ml43 | 19401 | 暖的 post-rock／ambient post-rock（Hammock、Helios、Eluvium 暖盤、Sigur Rós 周邊、Caspian 慢盤） | 派→情緒薄格 ml43、mc36（第 9 輪） |
-| ml44 | 19481 | 暖的 shoegaze／dream pop 厚牆（Slowdive 周邊、Mazzy Star 系、Galaxie 500、Lush 慢盤、Asobi Seksu、日本 shoegaze 暖盤） | 派→情緒薄格 ml44、md26（第 9 輪） |
-| ml45 | 19561 | rocksteady／early reggae 慢歌（Treasure Isle、Studio One 慢板、Alton Ellis、Ken Boothe、Phyllis Dillon 二線） | 派→情緒薄格 ml42、ml45（第 9 輪） |
+| ml44 | 19481 | 暖的 shoegaze／dream pop 厚牆（Slowdive 周邊、Mazzy Star 系、Galaxie 500、Lush 慢盤、Asobi Seksu、日本 shoegaze 暖盤） | ✅ 上線 10／落格 9（策展兩輪 50、主線汰 18、研究汰 22；shoegaze 二線色溫多貼 0，場景見底，不再派） |
+| ml45 | 19561 | rocksteady／early reggae 慢歌（Treasure Isle、Studio One 慢板、Alton Ellis、Ken Boothe、Phyllis Dillon 二線） | ✅ 上線 17／落格 17 |
 | ml46 | 19801 | 暖的 neoclassical／post-classical 弦樂＋鋼琴厚墊（獨奏鋼琴偏輕不收） | |

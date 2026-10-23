@@ -5,7 +5,7 @@
   {
    "id": "rock",
    "zh": "搖滾",
-   "count": 5153,
+   "count": 5163,
    "children": [
     {
      "id": "indie-alt",
@@ -154,7 +154,7 @@
     {
      "id": "punk-wave",
      "zh": "龐克新浪潮",
-     "count": 967,
+     "count": 968,
      "children": [
       {
        "id": "punk",
@@ -177,14 +177,14 @@
        "count": 180
       },
       {
-       "id": "no-wave",
-       "zh": "No Wave",
+       "id": "goth",
+       "zh": "哥德暗潮",
        "count": 94
       },
       {
-       "id": "goth",
-       "zh": "哥德暗潮",
-       "count": 93
+       "id": "no-wave",
+       "zh": "No Wave",
+       "count": 94
       },
       {
        "id": "pop-punk",
@@ -285,7 +285,7 @@
     {
      "id": "classic",
      "zh": "老搖滾",
-     "count": 605,
+     "count": 606,
      "children": [
       {
        "id": "50s",
@@ -310,34 +310,34 @@
       {
        "id": "later",
        "zh": "90 年代之後",
-       "count": 74
+       "count": 75
       }
      ]
     },
     {
      "id": "dream-post",
      "zh": "音牆後搖",
-     "count": 342,
+     "count": 351,
      "children": [
       {
        "id": "post-rock",
        "zh": "後搖滾",
-       "count": 159
+       "count": 162
       },
       {
        "id": "shoegaze",
        "zh": "瞪鞋",
-       "count": 144
+       "count": 149
       },
       {
        "id": "dream-pop",
        "zh": "夢幻流行",
-       "count": 125
+       "count": 133
       },
       {
        "id": "slowcore",
        "zh": "慢核",
-       "count": 56
+       "count": 57
       }
      ]
     },
@@ -363,7 +363,7 @@
   {
    "id": "jazz",
    "zh": "爵士",
-   "count": 4798,
+   "count": 4806,
    "children": [
     {
      "id": "bop",
@@ -447,7 +447,7 @@
     {
      "id": "free",
      "zh": "自由與前衛",
-     "count": 838,
+     "count": 841,
      "children": [
       {
        "id": "avant",
@@ -484,7 +484,7 @@
     {
      "id": "contemporary",
      "zh": "當代與 Nu Jazz",
-     "count": 779,
+     "count": 784,
      "children": [
       {
        "id": "nu-jazz",
@@ -635,22 +635,22 @@
   {
    "id": "electronic",
    "zh": "電子",
-   "count": 2573,
+   "count": 2583,
    "children": [
     {
      "id": "ambient",
      "zh": "Ambient / Drone",
-     "count": 1145,
+     "count": 1155,
      "children": [
       {
        "id": "dark-ambient",
        "zh": "Dark Ambient",
-       "count": 270
+       "count": 273
       },
       {
        "id": "drone",
        "zh": "Drone",
-       "count": 256
+       "count": 260
       },
       {
        "id": "idm",
@@ -660,12 +660,12 @@
       {
        "id": "ambient-techno",
        "zh": "Ambient Techno / Dub",
-       "count": 166
+       "count": 167
       },
       {
        "id": "neoclassical",
        "zh": "偏現代古典",
-       "count": 77
+       "count": 81
       },
       {
        "id": "new-age",
@@ -677,17 +677,17 @@
     {
      "id": "techno",
      "zh": "Techno",
-     "count": 655,
+     "count": 659,
      "children": [
       {
        "id": "minimal",
        "zh": "Minimal",
-       "count": 296
+       "count": 300
       },
       {
        "id": "ambient-techno",
        "zh": "Ambient Techno",
-       "count": 268
+       "count": 272
       },
       {
        "id": "detroit",
@@ -766,7 +766,7 @@
     {
      "id": "downtempo",
      "zh": "Trip-hop / Downtempo",
-     "count": 439,
+     "count": 441,
      "children": [
       {
        "id": "chillout",
@@ -776,7 +776,7 @@
       {
        "id": "ambient",
        "zh": "偏 Ambient",
-       "count": 207
+       "count": 209
       },
       {
        "id": "trip-hop",
@@ -1137,7 +1137,7 @@
   {
    "id": "hiphop",
    "zh": "嘻哈 R&B",
-   "count": 1510,
+   "count": 1536,
    "children": [
     {
      "id": "rnb",
@@ -1201,12 +1201,17 @@
     {
      "id": "underground",
      "zh": "地下與抽象",
-     "count": 333,
+     "count": 359,
      "children": [
       {
        "id": "abstract",
        "zh": "抽象與實驗",
        "count": 143
+      },
+      {
+       "id": "instrumental",
+       "zh": "Instrumental / Beats",
+       "count": 103
       },
       {
        "id": "east-coast",
@@ -1217,11 +1222,6 @@
        "id": "jazz-rap",
        "zh": "Jazz Rap / Conscious",
        "count": 84
-      },
-      {
-       "id": "instrumental",
-       "zh": "Instrumental / Beats",
-       "count": 77
       },
       {
        "id": "cloud",
@@ -1448,7 +1448,7 @@
   {
    "id": "folk",
    "zh": "民謠",
-   "count": 1342,
+   "count": 1352,
    "children": [
     {
      "id": "songwriter",
@@ -1554,7 +1554,7 @@
     {
      "id": "psych-folk",
      "zh": "迷幻與怪奇民謠",
-     "count": 203,
+     "count": 209,
      "children": [
       {
        "id": "british",
@@ -1562,26 +1562,26 @@
        "count": 90
       },
       {
+       "id": "freak",
+       "zh": "Freak Folk / New Weird America",
+       "count": 39
+      },
+      {
        "id": "prog",
        "zh": "前衛民謠",
        "count": 37
       },
       {
-       "id": "freak",
-       "zh": "Freak Folk / New Weird America",
-       "count": 36
-      },
-      {
        "id": "dark",
        "zh": "Neofolk / Dark Folk",
-       "count": 24
+       "count": 30
       }
      ]
     },
     {
      "id": "indie-folk",
      "zh": "獨立與室內民謠",
-     "count": 178,
+     "count": 180,
      "children": [
       {
        "id": "lo-fi",
@@ -1596,7 +1596,7 @@
       {
        "id": "chamber",
        "zh": "Chamber / Baroque",
-       "count": 39
+       "count": 40
       },
       {
        "id": "psych",
@@ -1657,7 +1657,7 @@
     {
      "id": "world-folk",
      "zh": "各地傳統民謠",
-     "count": 110,
+     "count": 112,
      "children": [
       {
        "id": "latin",
@@ -1898,37 +1898,37 @@
   {
    "id": "world",
    "zh": "世界",
-   "count": 1074,
+   "count": 1091,
    "children": [
     {
      "id": "reggae",
      "zh": "Reggae / Dub",
-     "count": 419,
+     "count": 436,
      "children": [
-      {
-       "id": "dub",
-       "zh": "Dub",
-       "count": 202
-      },
       {
        "id": "roots",
        "zh": "Roots Reggae",
-       "count": 197
+       "count": 210
+      },
+      {
+       "id": "dub",
+       "zh": "Dub",
+       "count": 209
       },
       {
        "id": "lovers",
        "zh": "Lovers Rock",
-       "count": 74
-      },
-      {
-       "id": "dancehall",
-       "zh": "Dancehall / Ragga",
-       "count": 69
+       "count": 88
       },
       {
        "id": "ska",
        "zh": "Ska / Rocksteady",
-       "count": 62
+       "count": 76
+      },
+      {
+       "id": "dancehall",
+       "zh": "Dancehall / Ragga",
+       "count": 70
       }
      ]
     },

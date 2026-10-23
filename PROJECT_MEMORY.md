@@ -1,5 +1,49 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 9 輪 ml44／md26：暖 shoegaze／dream pop 10 張、暗色 neofolk＋doom jazz 28 張上線，落格 9/10、28/28
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 9 輪，本工作階段負責 ml44、md26（評分照 10-23 體感標準）。ml44（`add-20261023-ml44`，恍惚：暖 shoegaze／dream pop 厚牆＋暖 slowcore）：Engineers ×2、Guthrie & Budd《After the Night Falls》、Acetone《Cindy》、Sound of Ceres《Nostalgia for Infinity》、Tears Run Rings《Distance》、Simon Raymonde《Blame Someone Else》、The Telescopes（1992）、Nightlands ×2。md26（`add-20261023-md26`，頹靡：暗色 neofolk／dark folk＋doom jazz 二線＋無鼓暗色室內 ambient）：Wardruna ×2、Steve von Till ×3、Natural Snow Buildings ×4、Fursaxa、The Hare and the Moon、Darkher、Radare ×3、Mansur、The Thing With Five Eyes、Dead Neanderthals ×3、Bersarin Quartett ×3、Mohn、Thomas Köner《Tiento de la Luz》、Svarte Greiner《Devolving Trust》、Elegi《Bånsull》、Richard Skelton《Landings》。
+- **策展→研究汰換**：ml44 策展兩輪 50、主線汰 18（池中 shoegaze 色溫貼 0、乾淨 jangle、推進）、研究汰 22 → 10，場景見底不再派。md26 策展兩輪 61、主線汰 3（Heilung 民族主義意象疑慮＋儀式鼓推進）、研究汰 30（原聲歌曲判輕暖、有鼓組推進、現場／DJ mix）→ 28。極右／法西斯爭議團一律不提（名單在 md26 rulings）。
+- **主線審稿**：ml44 改 2 處（單源評價句刪）；md26 改 2 處（Im Argen 單源比喻刪、Dead Neanderthals《Life》「半小時」→「三十多分鐘」並同步 hooks／input）。
+- **上線**：card_catalog 10＋28、KV 10＋28 鍵回讀逐字一致、試聽 10＋21 ready（人工配 6）、seed +38、published gate 兩批 0 error；封面 CAA 34（含 release 層縮圖 2）、Apple 4，主線目視。Wardruna《Ragnarok》en dash 盤名 listeners 查錯，改 ASCII 重查。上線前對 origin 所有 `claude/*` 分支 seed＋卡單去重 0 撞。
+- **情緒評分**：`score-ml44`、`score-md26`。**ml44 落恍惚 9/10（90%）**（Engineers《In Praise of More》z −0.1 落頹靡）、**md26 落頹靡 28/28（100%）**。八格（併 main 後）：恍惚 1,377、頹靡 1,433、冷冽 1,384。
+- **類型樹**：38/38 落位（`genre-l3-artist-map.json` jazz/contemporary 補 Radare、Mansur、The Thing With Five Eyes）；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 20 個掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{ml44,md26}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml44,md26}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml44,md26}/`、`onboarding-manifest-add-20261023-{ml44,md26}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml44,md26}*`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 38/38；build-card-moods 錨點 104/104。
+
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 9 輪 ml42／ml45：lo-fi jazzhop 暖盤 26 張、rocksteady 歌手濕混音慢板盤＋lovers dub 17 張上線，落格 26/26、17/17
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 9 輪＋「恍惚可以多增加一點 downtempo 與 dub」，本工作階段負責 ml42、ml45（評分照 10-23 體感標準）。ml42（`add-20261023-ml42`，恍惚：lo-fi hip-hop／jazzhop 暖盤＋暖的 instrumental hip-hop）：Kupla ×2、sleepy fish、jinsang ×5、SwuM. & Jinsang、SwuM.、Wun Two ×4、Ohbliv ×4、mt. fujitive ×3、Purrple Cat ×2、Hoogway、less.people ×2。ml45（`add-20261023-ml45`，恍惚：rocksteady／early reggae 慢歌＋lovers 剩餘）：John Holt ×6（Junjo／Channel One 期）、Justin Hinds、Wailing Souls、Delroy Wilson ×2、Horace Andy《Showcase》、Alton Ellis《A New Day》、Cornell Campbell《Rock My Soul》、Horace Andy & Jah Wobble、Frightnrs《More To Say Versions》、Hollie Cook dub 版 ×2。
+- **策展→研究汰換**：ml42 策展 54（MB 全釘）、主線汰 9（y／z 貼邊）、研究汰 19（trap 化、乾淨輕盈、哀傷、EP 長度、Nohidea 身分不清）→ 26；研究稿幾乎全 thin，採「有反證才汰」。ml45 策展 25（池中 60 年代 rocksteady 與 lovers rock 全判輕，主場景見底）、研究汰 8（flying cymbals、樂評稱明亮、彙編、Cleopatra 企劃盤）→ 17。
+- **主線審稿**：ml42 改 2 處（SwuM.「開始」→「也」、Hoogway 單源城市刪）；ml45 逐張審過未改字。
+- **上線**：card_catalog 26＋17、KV 26＋17 鍵回讀逐字一致、試聽 25＋8 ready、seed +43、published gate 兩批 0 error；封面 CAA 33、Apple 1、Discogs 9（已登錄 registry 384 筆），live-check 全 200、目視相符。上線前對 origin 前 60 個 `claude/*` 分支 seed＋卡單去重 0 撞。
+- **情緒評分**：`score-ml42`、`score-ml45`。**ml42 落恍惚 26/26（100%）**、**ml45 落恍惚 17/17（100%）**。八格（併 main 後，含 main 的 edge-rejudge）：恍惚 1,368、頹靡 1,404、冷冽 1,384。
+- **類型樹**：43/43 落位；`genre-l3-artist-map.json` 補 hiphop instrumental 12 個掛名、reggae dub 1 個；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 12 個掛名列在兩批 rulings.md 末尾。ml42、ml45 不再派。
+- **主要檔案**：`batch-progress/add-20261023-{ml42,ml45}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml42,ml45}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml42,ml45}/`、`onboarding-manifest-add-20261023-{ml42,ml45}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml42,ml45}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 43/43；build-card-moods 錨點 104/104。
+
+### 2026-10-23｜dip-vinyl-shop｜邊界卡重判：3,120 張卡門檻邊的卡，255 張換格
+
+- **改動**：店主「挑出來改」（起因 한영애《바라본다》放鬆→雀躍）。`batch-progress/mood-axes/edge-rejudge/` 選從沒改判過、兩軸以上卡門檻邊的 3,120 張，8 支代理逐張明確選邊，255 張換格寫進 `overrides.json`（why 標「2026-10-23 邊界卡重判」）。主要是冷翻暖（主流饒舌／硬咆勃／旋律流行）與輕翻重（大編制管弦、慢板靈魂包覆感）。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/edge-rejudge/*`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：8 份 done 到齊、bad 0；`build-card-moods.mjs` 錨點 104/104 同格。
+
+### 2026-10-23｜dip-vinyl-shop｜한영애《바라본다》放鬆→雀躍
+
+- **改動**：店主指定。(2.7, 0.3, 0.2) → (3.3, 0.0, 0.6)。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：`build-card-moods.mjs` 錨點 104/104 同格。
+### 2026-10-23｜dip-vinyl-shop｜原聲帶簡介重寫 ost-2：電影＋音樂劇 50 張上線，整條線收尾（共 95 張）
+
+- **內容**：ost-2 照 dip-desc-restyle 產線跑完（研究 5→鉤子 2→寫作 2→QA→主線逐張審稿），50 張好萊塢歌曲原聲、經典配樂、音樂劇、華語與歐洲電影的新簡介寫進 KV。整條線：196 張分流，重寫 95（ost-1 45＋ost-2 50）、不動 101。
+- **研究層推翻**：《魔戒三部曲》卡實為 2004 年 City of Prague Philharmonic 選粹（舊稿寫成 Shore 指揮的原聲，錯）；《Le Mépris》卡是 1991 年法國電影配樂合輯；《少年吔，安啦！》不是林強配樂起點；聶隱娘金馬只入圍；Star Wars「合成器年代反潮流」、獅子王「Zimmer 首部動畫／南非經驗」、Enya、Jason Bentley 等查無來源不寫。
+- **主線審稿**：改 1 處（名揚四海去掉逐字歌詞），見 `rulings.md`「ost-2 主線審稿」。
+- **留給店主**：魔戒卡藝人欄、Le Mépris 合輯卡去留（`handoff-ost-2.json` poolNotes），本線未動 seed。
+- **主要檔案**：`batch-progress/ost-desc-20261023/{rulings.md,handoff-ost-2.json}`、`desc-tools/batches/{cards,research,hooks,input,output}/ost-2*`、`publish-stage/kv-ost-2-20261023.json`。
+- **驗證**：kv-token-check exit 0；wrangler@4 bulk put `Success!`；verify-wave-kv 50/50 逐字一致。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格線第 9 輪派工：優先序 40–47（恍惚 5 批＋冷冽 2＋頹靡 1）
 
 - **起因**：第 8 輪三個工作階段（ml38/md22、ml40/mc22、ml41/ml35）全部收工，優先序 1–39 派完（ml39 歐陸 dub 場景見底、併入 ml40）。目前恍惚 1,268、頹靡 1,430、冷冽 1,429。
@@ -28,6 +72,14 @@
 - **藝人介紹**：未切（並行規矩）；新藝人 26 個掛名列在兩批 rulings.md 末尾。
 - **主要檔案**：`batch-progress/add-20261023-{ml38,md22}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml38,md22}.json`、`master-override-ml38.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml38,md22}/`、`onboarding-manifest-add-20261023-{ml38,md22}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml38,md22}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
 - **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 52/52；build-card-moods 錨點 104/104。
+### 2026-10-23｜dip-vinyl-shop｜原聲帶簡介重寫 ost-1：遊戲＋日本動畫 45 張上線（含《Chrono Cross》）
+
+- **內容**：店主要原聲帶簡介「多說作品相關的故事」。196 張逐張分流：重寫 95、不動 101（`triage.json`）。ost-1 跑完研究 5→鉤子 2→寫作 2→QA→主線逐張審稿，45 張新簡介寫進 KV（`desc2:`／`desc4:` 舊鍵覆寫）：前兩句點出作品台灣中文名＋原名＋類型，正文講作品與音樂的故事。
+- **譯名裁定**：《Chrono Cross》寫《超時空之鑰 次元之旅》（巴哈姆特與中文維基台灣正體；「超時空之輪」在中文維基是 Chrono Trigger 的別名），並寫明是《超時空之鑰》續作。另：《異域神兵》《聖劍傳說 瑪那傳奇》《薩爾達傳說 姆吉拉的假面》《東京殘響》《聖天空戰記》《蒼鷺與少年》。
+- **研究層推翻**：宮川泰交響組曲不是「日本第一」；鋼彈是 52→43 話；999 不寫松本參與配樂；〈I AM THE WIND〉是原版片尾曲；舊稿多條（米良美一廣播起用、波妞 481 銀幕、台灣盜版四家等）查無來源刪除。研究稿 d 組兩張 facts 錯位，主線換回。
+- **主線審稿**：改 7 處（三處 Oricon 名次刪除、川村ゆみ、Akira Yamaoka 兩張 hook 補原名、《蒼鷺與少年》），見 `rulings.md`。
+- **主要檔案**：`batch-progress/ost-desc-20261023/{triage.json,rulings.md,handoff-ost-1.json,DISPATCH-*.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/ost-1*`、`publish-stage/kv-ost-1-20261023.json`。
+- **驗證**：kv-token-check exit 0；wrangler@4 bulk put `Success!`；verify-wave-kv 45/45 逐字一致。
 
 ### 2026-10-23｜dip-vinyl-shop｜原聲帶簡介重寫：開工準備（候選 196 張）＋寫作／研究規則加「原聲帶先點出作品」
 
