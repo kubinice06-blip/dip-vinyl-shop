@@ -5,7 +5,7 @@
   {
    "id": "rock",
    "zh": "搖滾",
-   "count": 5068,
+   "count": 5075,
    "children": [
     {
      "id": "indie-alt",
@@ -62,17 +62,17 @@
     {
      "id": "jrock-asia",
      "zh": "日亞搖滾",
-     "count": 988,
+     "count": 995,
      "children": [
       {
        "id": "tw",
        "zh": "台灣",
-       "count": 286
+       "count": 287
       },
       {
        "id": "jp",
        "zh": "日本",
-       "count": 269
+       "count": 274
       },
       {
        "id": "th",
@@ -85,13 +85,13 @@
        "count": 56
       },
       {
-       "id": "kr",
-       "zh": "韓國",
-       "count": 54
-      },
-      {
        "id": "cn",
        "zh": "中國",
+       "count": 55
+      },
+      {
+       "id": "kr",
+       "zh": "韓國",
        "count": 54
       },
       {
@@ -317,22 +317,22 @@
     {
      "id": "dream-post",
      "zh": "音牆後搖",
-     "count": 320,
+     "count": 324,
      "children": [
       {
        "id": "post-rock",
        "zh": "後搖滾",
-       "count": 154
+       "count": 155
       },
       {
        "id": "shoegaze",
        "zh": "瞪鞋",
-       "count": 134
+       "count": 136
       },
       {
        "id": "dream-pop",
        "zh": "夢幻流行",
-       "count": 116
+       "count": 119
       },
       {
        "id": "slowcore",
@@ -363,7 +363,7 @@
   {
    "id": "jazz",
    "zh": "爵士",
-   "count": 4709,
+   "count": 4742,
    "children": [
     {
      "id": "bop",
@@ -373,12 +373,12 @@
       {
        "id": "hard-bop",
        "zh": "Hard Bop",
-       "count": 421
+       "count": 422
       },
       {
        "id": "post-bop",
        "zh": "Post-Bop / 現代爵士",
-       "count": 395
+       "count": 397
       },
       {
        "id": "bebop",
@@ -405,7 +405,7 @@
     {
      "id": "fusion",
      "zh": "Fusion / Jazz-Funk",
-     "count": 870,
+     "count": 871,
      "children": [
       {
        "id": "jazz-funk",
@@ -415,7 +415,7 @@
       {
        "id": "smooth",
        "zh": "Smooth / 當代",
-       "count": 156
+       "count": 157
       },
       {
        "id": "acid-nu",
@@ -445,71 +445,24 @@
      ]
     },
     {
-     "id": "contemporary",
-     "zh": "當代與 Nu Jazz",
-     "count": 764,
-     "children": [
-      {
-       "id": "nu-jazz",
-       "zh": "Nu / Acid Jazz",
-       "count": 272
-      },
-      {
-       "id": "smooth",
-       "zh": "Smooth / Lounge",
-       "count": 251
-      },
-      {
-       "id": "post-bop",
-       "zh": "偏 Post-Bop",
-       "count": 158
-      },
-      {
-       "id": "piano",
-       "zh": "鋼琴",
-       "count": 102
-      },
-      {
-       "id": "free",
-       "zh": "偏前衛",
-       "count": 83
-      },
-      {
-       "id": "euro",
-       "zh": "ECM / 歐陸",
-       "count": 65
-      },
-      {
-       "id": "vocal",
-       "zh": "人聲",
-       "count": 64
-      },
-      {
-       "id": "world",
-       "zh": "世界與靈性",
-       "count": 52
-      }
-     ]
-    },
-    {
      "id": "free",
      "zh": "自由與前衛",
-     "count": 751,
+     "count": 786,
      "children": [
       {
        "id": "avant",
        "zh": "前衛與 New Thing",
-       "count": 374
+       "count": 398
       },
       {
        "id": "post-bop",
        "zh": "偏 Post-Bop",
-       "count": 144
+       "count": 146
       },
       {
        "id": "free-improv",
        "zh": "自由即興",
-       "count": 99
+       "count": 109
       },
       {
        "id": "fusion",
@@ -525,6 +478,53 @@
        "id": "euro",
        "zh": "歐陸自由爵士",
        "count": 49
+      }
+     ]
+    },
+    {
+     "id": "contemporary",
+     "zh": "當代與 Nu Jazz",
+     "count": 766,
+     "children": [
+      {
+       "id": "nu-jazz",
+       "zh": "Nu / Acid Jazz",
+       "count": 272
+      },
+      {
+       "id": "smooth",
+       "zh": "Smooth / Lounge",
+       "count": 251
+      },
+      {
+       "id": "post-bop",
+       "zh": "偏 Post-Bop",
+       "count": 159
+      },
+      {
+       "id": "piano",
+       "zh": "鋼琴",
+       "count": 103
+      },
+      {
+       "id": "free",
+       "zh": "偏前衛",
+       "count": 84
+      },
+      {
+       "id": "euro",
+       "zh": "ECM / 歐陸",
+       "count": 65
+      },
+      {
+       "id": "vocal",
+       "zh": "人聲",
+       "count": 64
+      },
+      {
+       "id": "world",
+       "zh": "世界與靈性",
+       "count": 52
       }
      ]
     },
@@ -1004,7 +1004,7 @@
   {
    "id": "soul",
    "zh": "靈魂放克",
-   "count": 1701,
+   "count": 1711,
    "children": [
     {
      "id": "funk",
@@ -1046,7 +1046,7 @@
     {
      "id": "classic-rnb",
      "zh": "經典 R&B / Doo-wop",
-     "count": 876,
+     "count": 885,
      "children": [
       {
        "id": "funk",
@@ -1066,7 +1066,7 @@
       {
        "id": "neo-contemporary",
        "zh": "Neo-Soul / 當代",
-       "count": 115
+       "count": 117
       },
       {
        "id": "smooth",
@@ -1117,7 +1117,7 @@
     {
      "id": "neo-soul",
      "zh": "Neo-Soul",
-     "count": 134,
+     "count": 137,
      "children": []
     },
     {
