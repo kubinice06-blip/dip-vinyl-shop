@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜久石讓《風之谷》：搜尋日台異體字對照＋補試聽
+
+- **起因**：店主「久石讓缺最重要的風之谷」。查證：卡池其實有《風の谷のナウシカ サウンドトラック はるかな地へ…》（1984），但藝人欄寫日文新字體「久石譲」，台灣輸入的「久石讓」NFKC 不視為同字，搜尋只跑出掛在「Joe Hisaishi 久石讓」名下的《Piano Stories》；這張卡也標 `unavailable` 沒有試聽。
+- **搜尋**：`index.html` 搜尋專輯的鬆散比對層（`_asLoose`，同時用於拍封面搜尋）加日文新字體→台灣正體對照約 180 組（譲讓、沢澤、竜龍、姫姬、楽樂…），並把「の」折成「之」。逐字層不動。
+- **試聽**：Apple TW 881802202（Nausicaä of the Valley of the Wind (Original Soundtrack)，1984-03-25，13 軌）取第 1 軌〈風之谷的娜烏西卡〉，寫進 `data/apple-audio-map-v1.json` 並重建 runtime；`card-preview-status.js` 刪掉 unavailable 行。
+- **沒做**：藝人字串不統一（改卡鍵會連動 KV、card_catalog、收藏），用搜尋對照解決。中文片名（「神隱少女」「龍貓」）仍搜不到，要另做片名別名。
+- **主要檔案**：`index.html`、`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、`card-preview-status.js`。
+- **驗證**：用卡池跑鬆散比對：「久石讓」14 張（原 1 張）、「風之谷」命中風之谷原聲帶、「坂本龍一」12 張不變；試聽檔 HTTP 206；runtime 16,108 筆 matched、0 invalid。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 7 輪 ml38／md22：roots dub＋Ariwa lovers 26 張、無鼓 drone metal＋暗色 tape loop 26 張上線，落格 26/26、26/26
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 7 輪＋「恍惚可以多增加一點 downtempo 與 dub 這類的」，本工作階段負責 ml38、md22（評分照 10-23 體感標準）。ml38（`add-20261023-ml38`，恍惚：70s roots dub 二線＋ml37 UK dub）：Harry Mudie《In Dub Conference》×3、Rico《Wareika Dub》、Michael Prophet ×2、Wayne Wade、Hugh Mundell、Linval Thompson ×2、Barry Brown ×3、Viceroys、Lacksley Castell、Don Carlos、Tyrone Evans、John Clarke、Meditations、Roland Alphonso、Horace Andy ×2、Ariwa《Dub Showcase》×2、Wayne Jarrett、Bunny Wailer《Dubd’sco Vol. 1》。md22（`add-20261023-md22`，頹靡：無鼓 drone metal／post-metal ambient＋md23 tape loop）：Tribes of Neurot ×2、Æthenor、Mamiffer & Circle、Burial Chamber Trio、O’Malley《Éternelle Idole》、KTL、Barn Owl《V》、Jodis、Final ×3、Fear Falls Burning ×3、Aidan Baker、Lustmord ×4、Bass Communion ×3、Jasper TX ×2、Mathieu《Before Nostromo》。

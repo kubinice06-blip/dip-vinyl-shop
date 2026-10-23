@@ -2387,8 +2387,15 @@
   let _asPoolRows = null;
 
   const _asNorm = s => String(s || '').normalize('NFKC').toLowerCase().trim();
+  // 日文新字體 → 台灣正體（2026-10-23 店主：打「久石讓」只搜到 Piano Stories，
+  // 卡池的吉卜力原聲帶全寫日文「久石譲」，NFKC 不會把兩者視為同字）。
+  // 「の」也折成「之」，讓「風之谷」對得上「風の谷のナウシカ」。只用在鬆散比對層。
+  const _AS_JP_TW = '譲讓沢澤広廣竜龍斉齊辺邊浜濱桜櫻恵惠栄榮来來気氣楽樂図圖国國黒黑売賣読讀歩步戦戰鉄鐵薬藥蔵藏駅驛円圓声聲学學絵繪伝傳転轉対對単單関關険險験驗剣劍応應帰歸写寫実實権權歓歡観觀発發様樣横橫縄繩麺麵鶏雞亜亞悪惡圧壓囲圍隠隱営營駆驅区區経經継繼軽輕県縣検檢姫姬涙淚戸戶争爭静靜謡謠揺搖遥遙渋澀拝拜緑綠録錄蛍螢猫貓雑雜数數稲稻総總聴聽帯帶弾彈団團断斷虫蟲灯燈当當徳德独獨乗乘脳腦拡擴覚覺巻卷旧舊挙舉暁曉恋戀芸藝撃擊号號済濟斎齋参參残殘糸絲歯齒児兒寿壽従從獣獸処處将將焼燒証證条條状狀嬢孃触觸尽盡酔醉穂穗随隨瀬瀨銭錢双雙荘莊捜搜巣巢装裝騒騷増增臓臟属屬続續体體滝瀧択擇担擔遅遲昼晝点點悩惱髪髮抜拔晩晚蛮蠻払拂仏佛変變宝寶豊豐没沒万萬満滿黙默訳譯誉譽頼賴乱亂覧覽両兩猟獵塁壘励勵礼禮霊靈齢齡炉爐労勞楼樓湾灣亀龜戻戾歳歲説說鋭銳悦悅脱脫税稅の之';
+  const _asJpTwMap = new Map();
+  for (let i = 0; i + 1 < _AS_JP_TW.length; i += 2) _asJpTwMap.set(_AS_JP_TW[i], _AS_JP_TW[i + 1]);
+  const _asFoldVariants = s => s.replace(/[぀-ヿ㐀-鿿]/g, ch => _asJpTwMap.get(ch) || ch);
   // 比對用的鬆散正規化：去括號內容、再版字樣與所有標點，讓「拍到的字」對得上卡池寫法
-  const _asLoose = s => _asNorm(s)
+  const _asLoose = s => _asFoldVariants(_asNorm(s))
     .replace(/\([^)]*\)|\[[^\]]*\]/g, ' ')
     .replace(/\b(remaster|remastered|deluxe|expanded|edition|reissue|mono|stereo|version|anniversary|original|soundtrack)\b/g, ' ')
     .replace(/[^\p{L}\p{N}]+/gu, ' ')
