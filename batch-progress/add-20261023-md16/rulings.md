@@ -61,3 +61,15 @@
 - **17918**｜Sixtoo《Jackals and Vipers》：暗旋律合成器＋鼓機＋film noir 成立，但 Ninja Tune 說 aggressive、tough as nails，慢拍無來源；小存疑 x 偏高。發行日 MB 09-10 與維基 10-10 衝突，只寫 2007。facts 8 條 full。
 - **17919**｜Lukid《Lonely at the Top》：**推翻「鬆拍」**——黑膠封套自印 BPM 77–147，多數 108–130；Bandcamp 標籤 dance。霧／厚低頻／冷無評論來源。facts 8 條 thin。強烈建議汰換或先聽。
 - **17920**｜工具限制：Pitchfork、AllMusic、Guardian 被擋或 403，相關評語經 Wikipedia 轉述；WebSearch 用 3 次。
+
+## 研究 c 組（條號 17901–17910）
+- **17901**｜Ghostpoet《I Grow Tired…》：身分相符（2020-05-01 PIAS）。聲音證據足（NME 鼓極少、LoBF 繃緊貝斯加尖銳吉他、自己首次製作）；**moodGuess 輕度存疑**：開場與標題曲帶 post-punk／alt-rock 推進感，y、z 可能略低。facts 10 條 full。
+- **17902**｜WPSE《Suffer On》：身分相符。聲音只有 DIY 一篇（木吉他掃弦＋低調 808、trance 轉折）加維基；DIY 稱音樂「鬆弛自在」，**y 1.2 小存疑**。速度、殘響無來源未寫。facts 9 條 full。
+- **17903**｜BONES《TeenWitch》：身分相符（MB 02-25，維基 02-24，兩日並列）。**聲音無任何樂評來源**；僅 Discogs 署名（Greaf 等多位製作人、17 首 26 分、曲極短）與風格標籤（Trap／Cloud Rap／Emo／Horrorcore）。**moodGuess 存疑（無來源）**，建議列「聲音來源薄」。科倫拜題材已克制。facts 8 條 thin。
+- **17904**｜BONES《Rotten》：同上。18 首 43 分（末首 Sesh Radio 9:32），製作人署名眾多；**「lo-fi 糊、慢拍」毫無來源，標籤含 Hardcore Hip-Hop／Trap，恐偏兇**。facts 8 條 thin。
+- **17905**｜nothing,nowhere.《Reaper》：身分相符（2017-10-20 DCD2）。維基兩頁衝突（「第二張」vs「商業首張」）故不寫序數。聲音為「吉他底 emo rap／rap rock」、Erik Ron 混音，無速度殘響；**moodGuess 存疑**：rap rock 標籤暗示吉他明顯且推進，y、z 恐偏亮。Equal Vision 僅單源未寫。facts 9 條 thin。
+- **17906**｜LUCKI《Freewave 3》：身分相符（2019-02-15，藝人頁寫 02-14，採 MB）。聲音僅 Pitchfork 一句（經維基轉述）與 trap 標籤、十位製作人署名；「霧合成器、麻木低語」無證據，**moodGuess 存疑**。本名 Lucki Camel Jr. 單源。facts 8 條 thin。
+- **17907**｜Shabazz《Don of Diamond Dreams》：身分相符（2020-04-17 Sub Pop）。**推翻 moodGuess 方向**：AllMusic 稱 Butler 比 2017 更溫暖、更放克更有人味，Sub Pop 引文「New Age 混 90s R&B」、有薩克斯風與打擊；z -0.7 很可能不成立，**建議汰換候選**。facts 8 條 full。
+- **17908**｜Shabazz《Quazarz vs. Jealous Machines》：身分相符（2017-07-14，SP1185）。**找不到任何來源說這張比姊妹作更暗**；編制含長笛、低音單簧管、吉他，偏器樂感。聲音事實僅編制與曲長，**moodGuess 存疑（無來源）**。facts 8 條 thin。
+- **17909**｜Tha Blue Herb《Sell Our Soul》：身分相符（2002-05-22 TBHR-CD-003）。聲音僅「O.N.O 取樣加工＋複雜鼓組」「DJ Dye 轉盤」；**「冷電子 beat、陰」無來源**，**moodGuess 存疑**。日文維基自標出處不足，Mummy-D 一事單源且用「被視為」。facts 8 條 thin。
+- **17910**｜工具限制：Pitchfork、AllMusic、Guardian、Metacritic 擋或 403，評語經維基轉述；WebSearch 3 次（Ghostpoet、WPSE、BONES），BONES 那次只回電視劇《Bones》；DuckDuckGo 遇機器人驗證，未繞過。
