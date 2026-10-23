@@ -1,5 +1,48 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜Goodie Mob《Still Standing》恍惚→暴躁
+
+- **改動**：店主指定。(2.9, 0.9, 0.4) → (3.3, 0.9, −0.5)。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：`build-card-moods.mjs` 錨點 104/104 同格。
+
+### 2026-10-23｜dip-vinyl-shop｜頻率選歌／類型挑片結果頁的試聽鈕、分享鈕沒反應
+
+- **改動**：店主回報頻率選歌結果頁試聽鈕按了沒反應。原因：`[data-gp-action="preview"]`／`share` 只在 `#artistContent`（猜你喜歡）與心情選歌接了點擊，類型挑片（`#genreContent`）與頻率選歌（`#tuneModal`）共用 showGpResult 卻沒接。兩處補上；`_gpSetPreviewIcon` 改找開著的 modal 裡那顆鈕（別的分頁結果頁留在 DOM 時，全域第一顆不一定是畫面上的）。
+- **主要檔案**：`index.html`
+- **驗證**：本機 Playwright：頻率選歌抽一張 → 按試聽鈕 → `DipPlayer.playAlbum` 收到手動（auto=false）呼叫；無頁面錯誤。
+
+### 2026-10-23｜dip-vinyl-shop｜串流優先：元素模式試聽被搶走也會自動關網頁聲音
+
+- **改動**：店主「玩家有使用串流就優先停止網頁聲音」。原本只有 Web Audio 路徑被系統中斷（iOS interrupted／Android suspended）會判定「玩家去聽串流」並把自動試聽記成關；`<audio>` 元素後備路徑被串流搶走時（系統暫停元素）沒偵測。補上 `onpause`：畫面在前景、不是我們自己停的就走同一條 `revokeAutoplayByInterruption`（含 4 秒手動播放寬限）。我們自己停、換張、切背景都先清旗標或換 token，不會誤判。`dip-player.js?v=51`。
+- **限制**：網頁沒有 API 能在出聲前知道玩家正在聽串流，預設開啟後第一次抽卡可能打斷一次串流；串流搶回來時網頁就閉嘴並記住關。
+- **主要檔案**：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`、`shop-all.html`
+- **驗證**：`node --check`；逐一核對其他 `previewAudio.pause()` 呼叫點都在新 requestId 之後或先清 `previewElementActive`。
+
+### 2026-10-23｜dip-vinyl-shop｜自動試聽預設改開啟
+
+- **改動**：店主「預設聲音改開啟」。`dip-player.js` 沒表態過的裝置（localStorage 沒記 on/off）由「當成關」改成「當成開」：`autoplayPreference()` 回 'on'、載入時即有自動試聽授權；按過關閉或偵測到串流搶焦點仍記成 'off' 並保留。已經記成 'off' 的裝置不受影響（要自己按一下開）。四頁 `dip-player.js?v=50`。
+- **主要檔案**：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`、`shop-all.html`
+- **驗證**：本機 Playwright 清空儲存載入首頁：偏好 on、頂欄 🔊；按一下變 🔇 且重新整理後維持關；無頁面錯誤。
+
+### 2026-10-23｜dip-vinyl-shop｜《Carmina Burana》(Jochum) 沸騰→暴躁
+
+- **改動**：店主同意比照《Axion Esti》改暴躁：(3.6, 1.0, −0.5)。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：`build-card-moods.mjs` 錨點 104/104 同格。
+
+### 2026-10-23｜dip-vinyl-shop｜《Axion Esti》沸騰→暴躁
+
+- **改動**：店主指定改暴躁：(3.5, 1.0, −0.6)。《Carmina Burana》維持沸騰。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：`build-card-moods.mjs` 錨點 104/104 同格。
+
+### 2026-10-23｜dip-vinyl-shop｜Theodorakis《Axion Esti》放鬆→沸騰、Jochum《Carmina Burana》雀躍→沸騰
+
+- **改動**：店主指《Axion Esti》壓迫感很強、不是放鬆。改 (3.5, 1.0, 0.2) 沸騰；同形狀的《Carmina Burana》(Jochum) 質地改重、落沸騰。規則記進 `batch-progress/mood-axes/rulings.md`：大編制合唱／清唱劇的壓迫音牆算重。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：`build-card-moods.mjs` 錨點 104/104 同格。
+
 ### 2026-10-23｜dip-vinyl-shop｜頻率選歌：FINE 改一格一張、SCAN／FINE 撥桿動畫、新增搜尋列
 
 - **改動**：店主反映 FINE 沒有「小範圍慢慢掃」的感覺。FINE 改成每撥一格（拖 14px／滾一下／方向鍵）就跳到這條軸上附近的下一張，輪子跟著咔一格、有咔噠聲；SCAN 照舊連續掃。開關撥桿照原稿槽位做三格（上／中／下，`tune/switch.png`，SCAN 在上、FINE 在下）。新增搜尋列模組（`tune/panel-search.png`，配色與螺絲取自原稿，`scripts/build-tune-sprites.py` 產生）：輸入藝人或專輯，清單從星圖底部浮出，選了之後三顆輪子依序轉過去（能量→質地→色溫），停在那張並試聽。面板改成貼底、搜尋列在最上；頻率選歌開著時頁面底色改成面板深灰 `#2c3037`。店主看預覽後再改：手機直放時面板放大塞滿寬度（星圖讓出高度，最小 200px）；FREQUENCY 的兩顆螺絲疊上與輪子模組同大小的螺絲（`tune/screw.png`）。店主回報點搜尋列跳出鍵盤時整台版面變成左右並排：鍵盤讓 100dvh 縮、直式被判成橫式。改用 JS 記的視窗高 `--tvh`（搜尋框有焦點時不更新），橫式並排另加 `min-width:560px`。`dip-tune.js?v=11`。店主再報 A Love Supreme、My Favourite Things 找不到：頻率選歌只吃 `pool.cards`，頂級牌（殿堂 692、遺珠 109、異端 116，共 917 張）放在 `pool.apex`，從上線起就沒進星圖；改成一併載入，結果頁帶 `_hall/_pearl/_heresy` 照頂級卡樣式顯示。搜尋英式拼法照美式比（favourite＝favorite）。`dip-tune.js?v=12`。店主再要「下面的面板整合成一個像素面板、拿掉抽屜讓星圖變大」：`scripts/build-tune-panel.py` 從原稿拼出 `tune/panel-all.png`（輪子稿的外框與側軌、FREQUENCY 內容抽掉滾筒窗中段 195px 讓出就這張、欄間溝轉橫當分隔、名牌吊在分隔槽上、搜尋列畫在面板上；同一比例不縮放），所有活件位置改成這張的百分比；舊的 `panel-search.png` 與 FREQUENCY 補螺絲撤掉。389×652 星圖 238→274px。`dip-tune.js?v=13`。

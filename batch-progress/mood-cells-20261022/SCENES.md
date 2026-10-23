@@ -18,7 +18,7 @@
 3. **一批可以合併相鄰的大場景湊滿 45 張**：指派時寫「主場景＋可擴寫場景」，策展代理先挖主場景，不夠再往擴寫場景補，仍要過 moodGuess 邊距。
 4. 冷冽線教訓（2026-10-23 改依體感標準）：**旋律清楚的 synth-pop／new wave／techno-pop 落雀躍**（mc9、mc5 落格偏低的原因）；**緊繃、尖細、旋律不明的**自由爵士小編制、無調現代古典、glitch 才是冷冽大宗——安靜但緊繃也算躁，不必有鼓。厚、密、低沉的仍落亢奮。
 
-**優先序**（2026-10-23 依店主「體感標準」改排 21–31，再補 32–35 恍惚大池（恍惚每批只挖到 11–17 張，最薄）；冷冽改走自由爵士／現代古典／glitch 等「緊繃、尖細、旋律不明」的大池，拿掉旋律清楚的 synth-pop；由上往下派；頹靡已穩定，冷冽與恍惚往大池子集中）：
+**優先序**（2026-10-23 依店主「體感標準」改排 21–31，再補 32–35 恍惚大池（恍惚每批只挖到 11–17 張，最薄）；**2026-10-23 店主：「恍惚可以多增加一點 downtempo 與 dub 這類的」→ 補 36–39 dub／downtempo，接下來派工優先派 36–39，每個工作階段配一批**；dt1–dt5（downtempo 線 222 張）、ml9、ml15 已收過很多，去重要仔細；冷冽改走自由爵士／現代古典／glitch 等「緊繃、尖細、旋律不明」的大池，拿掉旋律清楚的 synth-pop；由上往下派；頹靡已穩定，冷冽與恍惚往大池子集中）：
 
 | 順位 | 批 | 主場景＋可擴寫場景 | 狀態 |
 |---:|---|---|---|
@@ -57,6 +57,10 @@
 | 33 | ml32 | 拉丁 bolero／慢板浪漫 ＋ ml25 80s 慢板 reggae 歌 | 派→情緒薄格 ml32、mc28（第 6 輪） |
 | 34 | ml34 | 華語／日語／韓語抒情 ballad 厚編曲 ＋ ml36 Balearic／ambient pop 暖盤 | 派→情緒薄格 ml34、mc33（第 6 輪） |
 | 35 | ml35 | alt-country／Americana 濕而慢 ＋ ml33 剩餘 |  |
+| 36 | ml38 | 70s roots dub 二線 ＋ ml37 UK dub／digital dub 90s |  |
+| 37 | ml40 | downtempo 暖盤三線 ＋ ml39 歐陸 dub／dubtronica 暖盤 |  |
+| 38 | ml41 | 日本 dub／downtempo 暖盤 ＋ ml37 剩餘 |  |
+| 39 | ml39 | 歐陸 dub／dubtronica 暖盤 ＋ ml40 剩餘 |  |
 
 **暫停**：mc13 math rock、mc21 post-punk revival、mc30 minimalism（旋律清楚＝暖）、mc9／mc10／mc20／mc25／mc26 系的 synth-pop／new wave／K-pop／synthwave 續集（2026-10-23 體感標準：旋律清楚往暖，落雀躍）、mc23 art pop、ml4 系東亞續集、ml14 spiritual jazz（體感標準判冷，不是恍惚）、ml22、ml27。**重開**（體感標準下會落冷冽）：mc4、mc14、mc22、mc28。
 
@@ -176,3 +180,8 @@
 | ml34 | 16641 | 華語／日語／韓語抒情 ballad 厚編曲（90s 弦樂、殘響厚、旋律清楚的慢歌盤） | |
 | ml35 | 16721 | alt-country／Americana 濕而慢（Cowboy Junkies、Lambchop、Mazzy Star 系） | |
 | ml36 | 16801 | Balearic／ambient pop 暖盤（溫而霧、旋律清楚） | |
+| ml37 | 16881 | UK dub／digital dub 90s（Mad Professor、Zion Train、Iration Steppas、Jah Shaka、Dub Syndicate、Alpha & Omega 二線） | |
+| ml38 | 19001 | 70s roots dub 二線（Scientist、King Jammy、Augustus Pablo、Yabby You、Keith Hudson、Black Ark 周邊、Errol Thompson） | |
+| ml39 | 19081 | 歐陸 dub 與 dubtronica 暖盤（Dreadzone、Kruder & Dorfmeister、Tosca、Thievery Corporation 其他、Smith & Mighty、Dub Pistols 慢盤） | |
+| ml40 | 19161 | downtempo 暖盤三線（Ninja Tune／Compost／Pussyfoot 暖盤、Bonobo 早期、Blockhead、Emancipator、Nightmares on Wax 其他、Fila Brazillia 以外） | |
+| ml41 | 19241 | 日本 dub／downtempo 暖盤（Little Tempo、Dry & Heavy、Audio Active、Mute Beat、Gota、Kyoto Jazz Massive 慢盤、Cro-Magnon） | |
