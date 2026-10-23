@@ -1,0 +1,1551 @@
+{
+ "group": "mc31",
+ "factions": [
+  {
+   "id": "aacm",
+   "zh": "AACM 芝加哥圈",
+   "count": 25,
+   "why": "AEC、Braxton、Mitchell、Air、Muhal、Jenkins 的乾小編制無調作品"
+  },
+  {
+   "id": "bag-loft",
+   "zh": "BAG／紐約 loft 小編制",
+   "count": 15,
+   "why": "Hemphill、Lake、WSQ、Rivers loft 期、Billy Bang、String Trio of NY、Altschul、Anthony Davis"
+  },
+  {
+   "id": "free-small",
+   "zh": "美國自由爵士小編制二線",
+   "count": 12,
+   "why": "Jimmy Lyons、Revolutionary Ensemble、Carter／Bradford、Charles Tyler、Marion Brown 等無調小編制"
+  },
+  {
+   "id": "avant-postbop",
+   "zh": "前衛 post-bop 尖而無調的那半",
+   "count": 2,
+   "why": "mc14 擴寫：Dolphy、Paul Bley ESP、Corea 自由期"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Art Ensemble of Chicago",
+   "album": "Tutankhamun",
+   "year": 1974,
+   "label": "Freedom",
+   "country": "fr",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "AEC 巴黎時期無鼓手四重奏的代表盤；小號、蘆管與「小樂器」叮噹互刺，乾而尖、無主題，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0,
+    "z": -1.2,
+    "why": "無鼓手四重奏，小號蘆管尖叫與小物件打擊，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d44b07b4-a4e7-47e4-855a-427db9073c17",
+    "https://coverartarchive.org/release/29c3328b-49e1-42f8-b884-f3a8aba67e31/31369358596.jpg"
+   ],
+   "mbRgMbid": "d44b07b4-a4e7-47e4-855a-427db9073c17",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "1969 錄音、1974 Freedom 首發；AEC 池中 y 0–0.6，本盤無鼓手，估輕"
+  },
+  {
+   "artist": "Art Ensemble of Chicago",
+   "album": "Reese and the Smooth Ones",
+   "year": 1969,
+   "label": "BYG Records",
+   "country": "fr",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "AEC 1969 巴黎 BYG 時期兩段長篇即興；鈴鐺、口琴、蘆管碎片式堆疊，緊繃不安、旋律不明，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.1,
+    "z": -1.2,
+    "why": "無鼓手長篇即興，鈴與蘆管碎響，緊而散"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c6a998d0-a24c-310c-accb-2736e5ebd96f",
+    "https://coverartarchive.org/release/1f877867-bef1-46c5-8dff-75c871389323/31413533825.jpg"
+   ],
+   "mbRgMbid": "c6a998d0-a24c-310c-accb-2736e5ebd96f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "AEC 部分盤 y 0.5–0.6 落亢奮；本盤無鼓手，估 0.1"
+  },
+  {
+   "artist": "Art Ensemble of Chicago",
+   "album": "Chi-Congo",
+   "year": 1972,
+   "label": "Decca Records",
+   "country": "fr",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "AEC 1970 巴黎錄音（Decca 1972 發行）；短促號角、蘆管尖鳴與零散打擊交錯，緊繃而乾，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.1,
+    "z": -1.2,
+    "why": "巴黎期四重奏，尖蘆管與零碎打擊，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9e67b543-03ab-3df4-bf03-7b74a2a65982",
+    "https://coverartarchive.org/release/3fd9b33a-7647-431f-9252-4ef98dc2e43f/31360646516.jpg"
+   ],
+   "mbRgMbid": "9e67b543-03ab-3df4-bf03-7b74a2a65982",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "1970 錄音 1972 首發；AEC y 邊距較窄"
+  },
+  {
+   "artist": "Anthony Braxton",
+   "album": "3 Compositions of New Jazz",
+   "year": 1968,
+   "label": "Delmark Records",
+   "country": "us",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Braxton 首張專輯，與 Leroy Jenkins、Leo Smith 的無鼓三人小組；尖細的中音、小提琴與小號切割，無調而緊繃，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.2,
+    "why": "中音薩克斯風、小提琴、小號乾小編制，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/deff8e06-6ba9-337a-b229-e59aea2db364",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/90/31/41/903141ce-f64e-e892-7258-6d5a55be9d8d/193483652283.jpg/600x600bb.jpg"
+   ],
+   "mbRgMbid": "deff8e06-6ba9-337a-b229-e59aea2db364",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無封面，封面取 Apple Music"
+  },
+  {
+   "artist": "Anthony Braxton",
+   "album": "Trio and Duet",
+   "year": 1974,
+   "label": "Sackville",
+   "country": "ca",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Braxton 1974 Sackville 盤，Leo Smith／Richard Teitelbaum 三重奏一面＋與 Dave Holland 二重奏；乾而稀薄、旋律零碎，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -0.8,
+    "why": "三重奏＋二重奏，乾錄音、蘆管尖而碎"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/54616251-aed3-4423-ba15-e1da371e114c",
+    "https://coverartarchive.org/release/76d4b8ac-42eb-4cac-8613-cf55adec6a5b/41706472204.jpg"
+   ],
+   "mbRgMbid": "54616251-aed3-4423-ba15-e1da371e114c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "B 面兩首標準曲（Embraceable You 等）略暖，整體仍以作曲即興為主"
+  },
+  {
+   "artist": "Joseph Jarman / Anthony Braxton",
+   "album": "Together Alone",
+   "year": 1974,
+   "label": "Delmark Records",
+   "country": "us",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Jarman 與 Braxton 的 AACM 雙人蘆管對話（Delmark）；薩克斯風、長笛、單簧管尖細互刺，無節奏組、無調，落冷冽。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.6,
+    "z": -1.2,
+    "why": "雙蘆管二重奏，尖鳴與長音對峙，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/90c3b4d9-4a3c-41f7-8685-f320cf1c99fd",
+    "https://coverartarchive.org/release/94d5f36e-02be-43ce-8300-168a85e9bac5/13477643179.jpg"
+   ],
+   "mbRgMbid": "90c3b4d9-4a3c-41f7-8685-f320cf1c99fd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "兩人掛名，MB 藝人為 Joseph Jarman / Anthony Braxton；x 估 3.3 貼邊，有長音段"
+  },
+  {
+   "artist": "Anthony Braxton",
+   "album": "For Trio",
+   "year": 1978,
+   "label": "Arista",
+   "country": "us",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Braxton 與 Jarman、Roscoe Mitchell 的三人「多樂器」作曲（Arista）；上百件管樂與小打擊點描，尖細無調，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -1.2,
+    "why": "三人多管樂與打擊，點狀音色，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/25724ff9-49a3-4ade-837b-66f877bbf909",
+    "https://coverartarchive.org/release/8aa17f2a-573d-4653-815a-0be22b66f0fe/19964204878.jpg"
+   ],
+   "mbRgMbid": "25724ff9-49a3-4ade-837b-66f877bbf909",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有大量留白，x 估 3.4，可能下修"
+  },
+  {
+   "artist": "Anthony Braxton",
+   "album": "Composition 98",
+   "year": 1981,
+   "label": "hat ART",
+   "country": "ch",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Braxton 1981 hat ART 作曲盤，Hugh Ragin、Ray Anderson、Marilyn Crispell 同台；結構化無調線條與硬蕊即興，落冷冽。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1,
+    "why": "四重奏＋鋼琴，序列化作曲，尖而硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c3ac3366-0fc7-4973-978f-10ad776b7afb",
+    "https://coverartarchive.org/release/8ec0076a-5940-4610-ba45-c9cd8d340afd/41706490862.jpg"
+   ],
+   "mbRgMbid": "c3ac3366-0fc7-4973-978f-10ad776b7afb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Anthony Braxton",
+   "album": "The Montreux/Berlin Concerts",
+   "year": 1977,
+   "label": "Arista",
+   "country": "us",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Braxton 1976 年 Montreux／柏林現場（Arista 正規發行），Kenny Wheeler／George Lewis 四重奏；疾奔的無調線條，乾而緊，落冷冽。",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.2,
+    "z": -0.9,
+    "why": "快速四重奏，中音薩克斯風急促尖線，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/23baee8d-600c-400f-a362-5d74e45dad14",
+    "https://coverartarchive.org/release/c6e56ce0-745d-4f26-a602-6d652368d49f/19897244828.jpg"
+   ],
+   "mbRgMbid": "23baee8d-600c-400f-a362-5d74e45dad14",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 標 Live（Arista 正規全長發行）"
+  },
+  {
+   "artist": "Anthony Braxton",
+   "album": "Quartet (London) 1985",
+   "year": 1990,
+   "label": "Leo Records",
+   "country": "gb",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Braxton 85 年經典四重奏英國巡演（Leo）；與池中 Compositions 系列同編制，密而尖的無調高速，落冷冽。",
+   "moodGuess": {
+    "x": 3.8,
+    "y": -0.1,
+    "z": -0.8,
+    "why": "經典四重奏，Crispell 快觸鍵，無調疾奔"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b85f72b3-3c03-391d-87d6-72337d81660e",
+    "https://coverartarchive.org/release/66117bb0-92dc-47b9-b100-9d45e1b466ec/25480698392.png"
+   ],
+   "mbRgMbid": "b85f72b3-3c03-391d-87d6-72337d81660e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 標 Live；1985 錄音、1990 Leo 首發"
+  },
+  {
+   "artist": "Roscoe Mitchell Sextet",
+   "album": "Sound",
+   "year": 1966,
+   "label": "Delmark Records",
+   "country": "us",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "AACM 第一張唱片之一（Delmark 1966）；Mitchell、Bowie、Lester Lashley 的尖鳴點描與突然停頓，旋律不明、神經緊繃，落冷冽。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.4,
+    "z": -1.2,
+    "why": "稀疏小編制，突刺尖鳴與留白，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4e93c13e-131e-3620-9e90-f35d894aca5f",
+    "https://coverartarchive.org/release/39873b37-251b-4ed6-9d52-ab068f3e3fd3/31697053552.jpg"
+   ],
+   "mbRgMbid": "4e93c13e-131e-3620-9e90-f35d894aca5f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "大量留白，x 估 3.3 貼邊"
+  },
+  {
+   "artist": "The Roscoe Mitchell Art Ensemble",
+   "album": "Congliptious",
+   "year": 1968,
+   "label": "Nessa Records",
+   "country": "us",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Mitchell 與 Bowie、Favors 的 AEC 前身三重奏（Nessa 1968），含各人獨奏段；乾、尖、碎，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -1.2,
+    "why": "獨奏＋三重奏，薩克斯風尖嘯與零碎打擊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/71f35408-d829-3462-b574-00ad2fe4d661",
+    "https://coverartarchive.org/release/c4f4f54a-1f77-4ed0-87c4-dbed45c454db/14032148662.jpg"
+   ],
+   "mbRgMbid": "71f35408-d829-3462-b574-00ad2fe4d661",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Roscoe Mitchell, Anthony Braxton",
+   "album": "Roscoe Mitchell Duets with Anthony Braxton",
+   "year": 1978,
+   "label": "Sackville",
+   "country": "ca",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Mitchell 與 Braxton 的蘆管二重奏（Sackville）；兩條尖細無調線糾纏，乾而緊，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.6,
+    "z": -1.2,
+    "why": "雙蘆管二重奏，高音尖鳴交錯，無節奏組"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/41ec501c-7155-4f64-a465-cf6b9344b0d1",
+    "https://coverartarchive.org/release/6c8dae42-d6e0-4cf8-9746-079b0bb70b17/31882175696.jpg"
+   ],
+   "mbRgMbid": "41ec501c-7155-4f64-a465-cf6b9344b0d1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Roscoe Mitchell and The Sound Ensemble",
+   "album": "3 x 4 Eye",
+   "year": 1981,
+   "label": "Black Saint",
+   "country": "it",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Mitchell 與 Sound Ensemble（Black Saint 1981）；Spencer Barefield 吉他與薩克斯風的稜角線條在鼓上推，乾而冷，落冷冽。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0,
+    "z": -0.9,
+    "why": "五重奏有鼓推進，吉他與蘆管尖角線條"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/084447d6-3c64-4194-ba43-4aea21d05cff",
+    "https://coverartarchive.org/release/61daf7fc-7714-4de0-adcb-212ecbbf8a7b/18893738180.jpg"
+   ],
+   "mbRgMbid": "084447d6-3c64-4194-ba43-4aea21d05cff",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Air",
+   "album": "Air Raid",
+   "year": 1976,
+   "label": "Trio",
+   "country": "jp",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Air 1976 首作（Trio 唱片），Threadgill、Fred Hopkins、Steve McCall 三重奏；尖嘯中音與快速鼓組，乾小而無調，落冷冽。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -0.9,
+    "why": "三重奏，Threadgill 高音尖嘯與快鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1fdd2768-405d-499f-9d47-6c28f3042bcf",
+    "https://coverartarchive.org/release/a7552b1c-50eb-47b0-b0fe-c6b9f3f2dc97/42591399846.jpg"
+   ],
+   "mbRgMbid": "1fdd2768-405d-499f-9d47-6c28f3042bcf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Air 盤 x 3.0–3.2；本盤較快，估 3.5"
+  },
+  {
+   "artist": "Air",
+   "album": "Open Air Suit",
+   "year": 1978,
+   "label": "Arista Novus",
+   "country": "us",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Air 的 Arista Novus 組曲盤；長笛、低音提琴與鼓三角互推，旋律零碎稜角，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -0.8,
+    "why": "三重奏組曲，長笛與薩克斯風稜角線條"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5cc728ef-d7f6-4a01-8685-ccadb2d4a31a",
+    "https://coverartarchive.org/release/4af3b672-5f53-453d-ac08-8eac3e83da9a/42566790035.jpg"
+   ],
+   "mbRgMbid": "5cc728ef-d7f6-4a01-8685-ccadb2d4a31a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Air 池中盤多在 x 3.1–3.2"
+  },
+  {
+   "artist": "Air",
+   "album": "80° Below ’82",
+   "year": 1982,
+   "label": "Antilles",
+   "country": "us",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Air 1982 Antilles 盤；Threadgill 的稜角作曲與 McCall 碎拍，乾而緊，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -0.9,
+    "why": "三重奏，蘆管尖角與碎拍，無主題"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4e2f710b-58ee-43a4-a3e3-986069b0c2e0",
+    "https://coverartarchive.org/release/6400deef-2831-464c-837e-f9c737cbfad0/7141629153.jpg"
+   ],
+   "mbRgMbid": "4e2f710b-58ee-43a4-a3e3-986069b0c2e0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Air",
+   "album": "Live Air",
+   "year": 1980,
+   "label": "Black Saint",
+   "country": "it",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Air 早期現場（Black Saint 1980）；三重奏全速即興，薩克斯風尖嘯、低音提琴拉弓，乾而冷，落冷冽。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.2,
+    "z": -0.9,
+    "why": "三重奏現場，快速高音即興"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f12c2355-d683-45dc-bad0-36e53973158d",
+    "https://coverartarchive.org/release/ea146d59-3a63-404b-9c30-a6def65b60a9/42573762824.jpg"
+   ],
+   "mbRgMbid": "f12c2355-d683-45dc-bad0-36e53973158d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "現場專輯（MB 未標 Live）"
+  },
+  {
+   "artist": "Muhal Richard Abrams",
+   "album": "1-OQA+19",
+   "year": 1978,
+   "label": "Black Saint",
+   "country": "us",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Muhal 1977 五重奏（Braxton、Threadgill、Hopkins、McCall）；雙中音尖刺與快鼓推進，落冷冽。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0,
+    "z": -1,
+    "why": "Braxton＋Threadgill 雙蘆管，快鼓，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0b1bb80d-f8c8-46d2-aa12-ff6725bc8e40",
+    "https://coverartarchive.org/release/1e6ad632-7851-404d-bdf3-94b1d8903311/16827182948.jpg"
+   ],
+   "mbRgMbid": "0b1bb80d-f8c8-46d2-aa12-ff6725bc8e40",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Muhal Richard Abrams",
+   "album": "Lifea Blinec",
+   "year": 1978,
+   "label": "Arista",
+   "country": "us",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Muhal 1978 Arista Novus 小編制（Jarman、Ewart、Barker）；多管樂點描與打擊，無調稀疏而緊，落冷冽。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.2,
+    "z": -1.2,
+    "why": "多蘆管與打擊點描，序列感作曲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d6371d8a-b459-417f-91be-6e0d9d7ea0c1",
+    "https://coverartarchive.org/release/4fcfc45c-4d67-4f92-aa51-e3a6e2f9b2d7/18745474559.jpg"
+   ],
+   "mbRgMbid": "d6371d8a-b459-417f-91be-6e0d9d7ea0c1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 掛 The Muhal Richard Abrams Orchestra，實為七人小編制；有留白，x 估貼邊"
+  },
+  {
+   "artist": "Leroy Jenkins",
+   "album": "The Legend of Ai Glatson",
+   "year": 1978,
+   "label": "Black Saint",
+   "country": "it",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Leroy Jenkins 三重奏（Black Saint 1978）；小提琴尖細拉弓、低音提琴與鼓互推，旋律不明，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -1,
+    "why": "小提琴三重奏，尖細弓弦與快鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/61db1081-587b-4f3c-8bc1-186095bd2889",
+    "https://coverartarchive.org/release/882ee053-e118-40e8-881f-110021152f92/18887394614.jpg"
+   ],
+   "mbRgMbid": "61db1081-587b-4f3c-8bc1-186095bd2889",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Leroy Jenkins",
+   "album": "Space minds, New worlds, Survival of America",
+   "year": 1979,
+   "label": "Tomato",
+   "country": "us",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Jenkins 1978 Tomato 盤，小編制與弦樂作曲；尖細無調弦樂、乾而緊，落冷冽。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.6,
+    "z": -1,
+    "why": "小提琴與室內樂組合，無調弦樂"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a801345a-60ab-4a7c-be78-595611c1ab63",
+    "https://coverartarchive.org/release/e13dbb15-0b79-4a9d-b5a2-fdd25becfee6/26324969537.jpg"
+   ],
+   "mbRgMbid": "a801345a-60ab-4a7c-be78-595611c1ab63",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分段落室內樂較安靜，x 貼邊"
+  },
+  {
+   "artist": "Leroy Jenkins feat. Muhal Richard Abrams",
+   "album": "Lifelong Ambitions",
+   "year": 1981,
+   "label": "Black Saint",
+   "country": "it",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Jenkins 與 Muhal 的二重奏（Black Saint 1981）；小提琴尖弓與鋼琴碎塊互答，旋律不明，落冷冽。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.7,
+    "z": -1,
+    "why": "小提琴＋鋼琴二重奏，尖弓與碎鍵"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/91f36ed3-3b42-4f61-9a8c-5fc2d0c65ae9",
+    "https://coverartarchive.org/release/e42e3519-385e-48bb-bef8-2a893e955e48/18890532886.jpg"
+   ],
+   "mbRgMbid": "91f36ed3-3b42-4f61-9a8c-5fc2d0c65ae9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "二重奏有慢段，x 貼邊"
+  },
+  {
+   "artist": "Oliver Lake, Julius Hemphill",
+   "album": "Buster Bee",
+   "year": 1978,
+   "label": "Sackville",
+   "country": "ca",
+   "faction": "bag-loft",
+   "genres": [
+    "jazz"
+   ],
+   "why": "BAG 兩位核心 Oliver Lake 與 Julius Hemphill 的二重奏（Sackville）；兩支中音尖細交纏、無節奏組，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.6,
+    "z": -1,
+    "why": "雙中音薩克斯風二重奏，乾而尖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f8b7762e-ff65-485d-8191-11e38eac2148",
+    "https://coverartarchive.org/release/a9e51b23-e827-4ecb-82c3-c076e052c3d6/39153677843.jpg"
+   ],
+   "mbRgMbid": "f8b7762e-ff65-485d-8191-11e38eac2148",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 只收 2002 CD，原盤為 1978 Sackville LP，年份取 1978"
+  },
+  {
+   "artist": "Julius Hemphill Quartet",
+   "album": "Flat-Out Jump Suite",
+   "year": 1980,
+   "label": "Black Saint",
+   "country": "it",
+   "faction": "bag-loft",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Hemphill 1980 四重奏（Olu Dara、Abdul Wadud、Warren Smith）；乾小的稜角組曲，大提琴代貝斯，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -0.8,
+    "why": "四重奏，小號與中音稜角線條，乾鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/aa07019e-c1df-4943-90f6-49f1fbb743e0",
+    "https://coverartarchive.org/release/e2776451-19cf-4307-ae2e-3fc8afb1cc0b/18892499416.jpg"
+   ],
+   "mbRgMbid": "aa07019e-c1df-4943-90f6-49f1fbb743e0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Hemphill 帶藍調味，z 估 -0.8"
+  },
+  {
+   "artist": "Oliver Lake",
+   "album": "Holding Together",
+   "year": 1976,
+   "label": "Black Saint",
+   "country": "it",
+   "faction": "bag-loft",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Oliver Lake 1976 Black Saint 首作（Michael Gregory Jackson、Paul Maddox）；尖嘯中音與吉他碎線，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.2,
+    "z": -0.9,
+    "why": "五重奏，中音尖嘯與快速鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7230ddf9-c661-4a2c-a6d0-6f6fecd13342",
+    "https://coverartarchive.org/release/709dfd2f-ec04-4fea-9d69-f1fae1d7340f/46470903754.jpg"
+   ],
+   "mbRgMbid": "7230ddf9-c661-4a2c-a6d0-6f6fecd13342",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Oliver Lake",
+   "album": "Shine!",
+   "year": 1979,
+   "label": "Arista Novus",
+   "country": "us",
+   "faction": "bag-loft",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Lake 1978 Arista Novus 盤；尖細中音與緊繃節奏組，旋律零碎，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.1,
+    "z": -0.8,
+    "why": "小編制，中音尖線與小提琴，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/451318fb-dcd6-4be0-978f-5c1a032860d0",
+    "https://coverartarchive.org/release/297e4546-c3aa-4bf9-b460-97bc9bc20398/18727615409.jpg"
+   ],
+   "mbRgMbid": "451318fb-dcd6-4be0-978f-5c1a032860d0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Oliver Lake Quintet",
+   "album": "Prophet",
+   "year": 1981,
+   "label": "Black Saint",
+   "country": "it",
+   "faction": "bag-loft",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Lake 向 Dolphy 致敬的五重奏（Black Saint）；大跳音程、尖細蘆管，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -0.7,
+    "why": "五重奏致敬 Dolphy，跳躍無調線"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/36c01153-83b6-434c-8037-7ccf75885b6d",
+    "https://coverartarchive.org/release/68c027f8-9e30-4de2-a5e2-3e63fe1d61a9/3529939112.jpg"
+   ],
+   "mbRgMbid": "36c01153-83b6-434c-8037-7ccf75885b6d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Dolphy 曲有主題，z 估 -0.7"
+  },
+  {
+   "artist": "Revolutionary Ensemble",
+   "album": "Vietnam",
+   "year": 1972,
+   "label": "ESP‐Disk’",
+   "country": "us",
+   "faction": "free-small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Revolutionary Ensemble 首作（ESP 1972）；Leroy Jenkins 小提琴、Sirone 貝斯、Jerome Cooper 鼓的無調三重奏，乾而尖，落冷冽。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -1.2,
+    "why": "小提琴＋貝斯＋鼓，尖弓與碎打"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/804fe8bf-c651-3dee-b18c-668428cd2041",
+    "https://coverartarchive.org/release/24253a6d-5ee8-429c-90b4-6566d00e076c/41487444793.jpg"
+   ],
+   "mbRgMbid": "804fe8bf-c651-3dee-b18c-668428cd2041",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "現場錄音（MB 未標 Live）"
+  },
+  {
+   "artist": "Revolutionary Ensemble",
+   "album": "The Psyche",
+   "year": 1975,
+   "label": "RE: Records",
+   "country": "us",
+   "faction": "free-small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Revolutionary Ensemble 自主廠牌 1975 盤；小提琴、貝斯拉弓與碎鼓的無調對話，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.2,
+    "why": "弦樂三重奏即興，尖弓、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/600d645d-ddbc-385a-a15b-e74baf5e76d1",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/5e/b3/8b/5eb38b3c-e66a-e36d-aac0-173e118e4cb8/803680574003.jpg/600x600bb.jpg"
+   ],
+   "mbRgMbid": "600d645d-ddbc-385a-a15b-e74baf5e76d1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無封面，封面取 Apple Music"
+  },
+  {
+   "artist": "Revolutionary Ensemble",
+   "album": "Revolutionary Ensemble",
+   "year": 1977,
+   "label": "enja",
+   "country": "de",
+   "faction": "free-small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Revolutionary Ensemble 1977 Enja 盤；三人無調即興，尖細弦音與零散打擊，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.2,
+    "why": "小提琴三重奏，尖細拉弓與打擊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a16cabb4-558f-46e5-97dc-0771bc6d22e5",
+    "https://coverartarchive.org/release/b208d517-ee54-4f88-a9e8-dae11de5cfe1/28812987801.jpg"
+   ],
+   "mbRgMbid": "a16cabb4-558f-46e5-97dc-0771bc6d22e5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "World Saxophone Quartet",
+   "album": "Point of No Return",
+   "year": 1977,
+   "label": "Moers Music",
+   "country": "de",
+   "faction": "bag-loft",
+   "genres": [
+    "jazz"
+   ],
+   "why": "WSQ 1977 Moers 首錄；Hemphill、Lake、Bluiett、Murray 四支薩克斯風無節奏組，尖嘯對位、無調，落冷冽。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0,
+    "z": -1,
+    "why": "四支薩克斯風無節奏組，尖嘯對位"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0797db30-553e-45f0-9d67-61beb320cfeb",
+    "https://coverartarchive.org/release/5eec0906-36e6-4587-ac7b-ce3a1401d516/18409347695.jpg"
+   ],
+   "mbRgMbid": "0797db30-553e-45f0-9d67-61beb320cfeb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 標 Live（Moers 正規首作）"
+  },
+  {
+   "artist": "World Saxophone Quartet",
+   "album": "Steppin’ With the World Saxophone Quartet",
+   "year": 1979,
+   "label": "Black Saint",
+   "country": "it",
+   "faction": "bag-loft",
+   "genres": [
+    "jazz"
+   ],
+   "why": "WSQ 1979 錄音室首作（Black Saint）；四支薩克斯風稜角對位，無節奏組、乾而尖，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.2,
+    "z": -0.6,
+    "why": "四薩克斯風對位，尖角作曲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2db0b559-5c75-4ccd-9d8f-5ce34b3e2ae3",
+    "https://coverartarchive.org/release/52ec9600-be4a-4bf4-95b4-65533075aee7/18409455769.jpg"
+   ],
+   "mbRgMbid": "2db0b559-5c75-4ccd-9d8f-5ce34b3e2ae3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "WSQ 池中盤有判暖（Revue），本盤較硬，z 估 -0.6"
+  },
+  {
+   "artist": "Sam Rivers",
+   "album": "Hues",
+   "year": 1975,
+   "label": "impulse!",
+   "country": "gb",
+   "faction": "bag-loft",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Sam Rivers loft 時期三重奏（Impulse）；高音薩克斯風、長笛、鋼琴輪替的高速即興，旋律不明，落冷冽。",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.1,
+    "z": -0.9,
+    "why": "三重奏，高音薩克斯風與長笛快速即興"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/10bf95ac-12ed-4d2e-b66c-024d9486b006",
+    "https://coverartarchive.org/release/c63db23e-ee26-4342-a077-5d6da4bdfdc5/18510092446.jpg"
+   ],
+   "mbRgMbid": "10bf95ac-12ed-4d2e-b66c-024d9486b006",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Sam Rivers",
+   "album": "Waves",
+   "year": 1979,
+   "label": "Tomato",
+   "country": "us",
+   "faction": "bag-loft",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Rivers 1978 Tomato 四重奏（Joe Daley、Dave Holland、Thurman Barker）；高速無調線條，乾而尖，落冷冽。",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.1,
+    "z": -0.9,
+    "why": "四重奏含大提琴，快速無調即興"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/53efd1a7-1d94-441a-abb1-9812f394762a",
+    "https://coverartarchive.org/release/87b66e3d-7b5d-4c4f-a0a6-bd9a7d9882c2/22211940132.jpg"
+   ],
+   "mbRgMbid": "53efd1a7-1d94-441a-abb1-9812f394762a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Sam Rivers",
+   "album": "Contrasts",
+   "year": 1980,
+   "label": "ECM Records",
+   "country": "de",
+   "faction": "bag-loft",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Rivers 1979 ECM 四重奏（George Lewis、Holland、Barker）；稜角無調對話，乾淨尖細，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -0.9,
+    "why": "四重奏，長號與高音薩克斯風稜角對話"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c5ed527a-43c3-4889-84d0-2615581e4962",
+    "https://coverartarchive.org/release/8856fe79-95eb-4958-b5d4-be1bea8c7cc4/17982067444.jpg"
+   ],
+   "mbRgMbid": "c5ed527a-43c3-4889-84d0-2615581e4962",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ECM 製作偏空靈，x 可能下修"
+  },
+  {
+   "artist": "Billy Bang Quintet",
+   "album": "Rainbow Gladiator",
+   "year": 1981,
+   "label": "Soul Note",
+   "country": "it",
+   "faction": "bag-loft",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Billy Bang 1981 Soul Note 五重奏；尖細小提琴與 Charles Tyler 上低音對刺，旋律碎，落冷冽。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.1,
+    "z": -0.8,
+    "why": "小提琴五重奏，尖弓與快鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a5ed88ad-226b-42d5-b3b8-7101aa696c02",
+    "https://coverartarchive.org/release/6638eee4-57c6-40c1-9256-e51a37839538/7706594677.jpg"
+   ],
+   "mbRgMbid": "a5ed88ad-226b-42d5-b3b8-7101aa696c02",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Billy Bang Quintet",
+   "album": "Invitation",
+   "year": 1982,
+   "label": "Soul Note",
+   "country": "it",
+   "faction": "bag-loft",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Billy Bang 1982 Soul Note 盤；尖細小提琴領奏的 loft 小編制，乾而緊，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.2,
+    "z": -0.7,
+    "why": "小提琴小編制，尖弓與碎拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/468e0fd3-9042-4188-8716-ef5674151237",
+    "https://coverartarchive.org/release/4c314154-1b88-4832-87e9-76b72ecff8f9/36378568376.jpg"
+   ],
+   "mbRgMbid": "468e0fd3-9042-4188-8716-ef5674151237",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "String Trio of New York",
+   "album": "First String",
+   "year": 1979,
+   "label": "Black Saint",
+   "country": "it",
+   "faction": "bag-loft",
+   "genres": [
+    "jazz"
+   ],
+   "why": "String Trio of New York 首作（Black Saint 1979）；Billy Bang、James Emery、John Lindberg 的乾弦三重奏，稜角無調，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.6,
+    "z": -0.8,
+    "why": "小提琴＋吉他＋貝斯，乾弦三重奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/579cad78-1df8-43a8-a3f6-8b0a8c82a636",
+    "https://coverartarchive.org/release/17893507-3c60-46fe-b1b5-1a70f545410e/18890266661.jpg"
+   ],
+   "mbRgMbid": "579cad78-1df8-43a8-a3f6-8b0a8c82a636",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "String Trio of New York",
+   "album": "Area Code 212",
+   "year": 1981,
+   "label": "Black Saint",
+   "country": "it",
+   "faction": "bag-loft",
+   "genres": [
+    "jazz"
+   ],
+   "why": "String Trio of New York 1980 第二作；乾、薄、尖的弦樂即興，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.6,
+    "z": -0.7,
+    "why": "乾弦三重奏，撥弦與尖弓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1ec3682d-16e4-41e2-a48f-8268643955bb",
+    "https://coverartarchive.org/release/29286230-4a3c-472c-8384-ee29e3bc587c/18893643655.jpg"
+   ],
+   "mbRgMbid": "1ec3682d-16e4-41e2-a48f-8268643955bb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Andrew Cyrille / Jeanne Lee / Jimmy Lyons",
+   "album": "Nuba",
+   "year": 1979,
+   "label": "Black Saint",
+   "country": "it",
+   "faction": "free-small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Cyrille、Jeanne Lee、Jimmy Lyons 三人盤（Black Saint）；抽象人聲、尖中音與碎鼓，無調而緊繃，落冷冽。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.6,
+    "z": -1.2,
+    "why": "人聲、中音與鼓三人，抽象尖細"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7d31b6db-9780-3b13-bae6-4eb526fab835",
+    "https://coverartarchive.org/release/44c228f4-0b6f-418c-87cf-9bde02dd3e9d/35901869240.jpg"
+   ],
+   "mbRgMbid": "7d31b6db-9780-3b13-bae6-4eb526fab835",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 主名 Andrew Cyrille / Jeanne Lee / Jimmy Lyons；Jeanne Lee 人聲可能讓 z 回暖"
+  },
+  {
+   "artist": "Jimmy Lyons Quintet",
+   "album": "Wee Sneezawee",
+   "year": 1984,
+   "label": "Black Saint",
+   "country": "it",
+   "faction": "free-small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Jimmy Lyons 五重奏（Black Saint）；中音與巴松管的尖細快線，乾而硬，落冷冽。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.2,
+    "z": -0.9,
+    "why": "五重奏含巴松管，尖細快速線條"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/65a5bf71-f7c6-4339-af71-b31e705b9002",
+    "https://coverartarchive.org/release/cabc7998-f3d9-40f7-8604-5294f05e19b7/46244725200.jpg"
+   ],
+   "mbRgMbid": "65a5bf71-f7c6-4339-af71-b31e705b9002",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jimmy Lyons & Sunny Murray Trio",
+   "album": "Jump Up",
+   "year": 1981,
+   "label": "hatOLOGY",
+   "country": "ch",
+   "faction": "free-small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Lyons 與 Sunny Murray 三重奏（hat Hut 1981）；尖細中音線在 Murray 的碎拍上狂奔，落冷冽。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.2,
+    "z": -1,
+    "why": "中音＋鼓三重奏，快速尖線"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2d7ddd63-9773-4d01-ba60-6c33822a3cf1",
+    "https://coverartarchive.org/release/12737f4a-105e-4aee-a7fb-bfbe40c53769/43395744443.jpg"
+   ],
+   "mbRgMbid": "2d7ddd63-9773-4d01-ba60-6c33822a3cf1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "可能為現場錄音（MB 未標 Live）"
+  },
+  {
+   "artist": "Jimmy Lyons / Andrew Cyrille",
+   "album": "Something in Return",
+   "year": 1988,
+   "label": "Black Saint",
+   "country": "it",
+   "faction": "free-small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Lyons 與 Andrew Cyrille 的二重奏（Black Saint）；只有中音與鼓，尖細快速、無調，落冷冽。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.6,
+    "z": -1.1,
+    "why": "中音＋鼓二重奏，乾而尖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ba2d5b22-41d2-4157-9aab-69bd00d2c99e",
+    "https://coverartarchive.org/release/9446346a-b566-4367-8428-76d808092eab/30876243299.jpg"
+   ],
+   "mbRgMbid": "ba2d5b22-41d2-4157-9aab-69bd00d2c99e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "1981 錄音、1988 首發；MB 主名 Jimmy Lyons / Andrew Cyrille"
+  },
+  {
+   "artist": "John Carter & Bobby Bradford Quartet",
+   "album": "Flight for Four",
+   "year": 1969,
+   "label": "Flying Dutchman",
+   "country": "us",
+   "faction": "free-small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "西岸自由爵士 John Carter／Bobby Bradford 四重奏（Flying Dutchman 1969）；無鋼琴、蘆管與小號尖線交錯，落冷冽。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -1,
+    "why": "單簧管／小號四重奏，無鋼琴，尖線"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/48f4cc3b-d3b3-4e75-b849-dc4ad00ec178",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/f9/d8/9a/f9d89a7d-3f0e-70ce-24cd-aa7bbe3ba26a/29667817882.jpg/600x600bb.jpg"
+   ],
+   "mbRgMbid": "48f4cc3b-d3b3-4e75-b849-dc4ad00ec178",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無封面，封面取 Apple Music"
+  },
+  {
+   "artist": "John Carter / Bobby Bradford",
+   "album": "Self Determination Music",
+   "year": 1970,
+   "label": "Flying Dutchman",
+   "country": "us",
+   "faction": "free-small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Carter／Bradford 1970 第二作；Ornette 式無鋼琴四重奏，尖細無調線條，落冷冽。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -1,
+    "why": "無鋼琴四重奏，Ornette 式無調線"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a65a9542-ac86-4f6a-9669-9aa75ce7bfd8",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c8/68/b2/c868b295-3c67-a00c-269c-3a960bd75bf7/29667528689.jpg/600x600bb.jpg"
+   ],
+   "mbRgMbid": "a65a9542-ac86-4f6a-9669-9aa75ce7bfd8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無封面，封面取 Apple Music"
+  },
+  {
+   "artist": "Anthony Davis",
+   "album": "Of Blues And Dreams",
+   "year": 1979,
+   "label": "Sackville",
+   "country": "ca",
+   "faction": "bag-loft",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Anthony Davis 1979 Sackville 盤（Leroy Jenkins、Abdul Wadud、Pheeroan akLaff）；室內樂式無調作曲，乾而尖，落冷冽。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.6,
+    "z": -0.8,
+    "why": "鋼琴＋小提琴＋大提琴，室內樂式無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/42d5f8ee-94ec-490d-8233-bca59d6f3aad",
+    "https://coverartarchive.org/release/0fca4d1c-db29-4df5-bfba-bd1624115514/46196869740.jpg"
+   ],
+   "mbRgMbid": "42d5f8ee-94ec-490d-8233-bca59d6f3aad",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "室內樂氣質，x 貼邊"
+  },
+  {
+   "artist": "Charles Tyler",
+   "album": "Eastern Man Alone",
+   "year": 1967,
+   "label": "ESP‐Disk’",
+   "country": "us",
+   "faction": "free-small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Ayler 搭檔 Charles Tyler 的 ESP 盤；中音尖嘯配大提琴與雙低音提琴，無鼓、無調，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.2,
+    "why": "中音＋大提琴＋雙貝斯，無鼓，尖嘯"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/afc17375-22d0-4297-84ad-2a23cf3d9610",
+    "https://coverartarchive.org/release/1e7c13ac-2be2-4018-a718-486116f4760e/27227601308.jpg"
+   ],
+   "mbRgMbid": "afc17375-22d0-4297-84ad-2a23cf3d9610",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Marion Brown",
+   "album": "Porto Novo",
+   "year": 1968,
+   "label": "Polydor",
+   "country": "gb",
+   "faction": "free-small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Marion Brown 1967 荷蘭錄的三重奏（Han Bennink）；中音尖叫與碎拍，比池中《Georgia Faun》躁，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.2,
+    "why": "中音＋貝斯＋鼓三重奏，尖叫與碎拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5674098f-6985-475b-b3a3-797d6cc854ec",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music/1a/60/67/mzi.hxhucvyp.jpg/600x600bb.jpg"
+   ],
+   "mbRgMbid": "5674098f-6985-475b-b3a3-797d6cc854ec",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 1969（Polydor UK），Apple 標 1968（荷蘭 Polydor 首發）；CAA 無封面，封面取 Apple Music"
+  },
+  {
+   "artist": "Eric Dolphy",
+   "album": "Conversations",
+   "year": 1963,
+   "label": "FM",
+   "country": "us",
+   "faction": "avant-postbop",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Dolphy 1963 FM 盤；含與 Richard Davis 的低音單簧管二重奏，大跳音程、尖角，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -0.6,
+    "why": "Dolphy 低音單簧管二重奏與小編制，大跳音程"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0e6b5434-8d3d-3f28-be0a-683f0b048987",
+    "https://coverartarchive.org/release/42f7b410-da6d-47a1-a744-19d5dcbb5023/36332325103.jpg"
+   ],
+   "mbRgMbid": "0e6b5434-8d3d-3f28-be0a-683f0b048987",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有標準曲（Alone Together、Love Me），z 估 -0.6"
+  },
+  {
+   "artist": "Chick Corea",
+   "album": "Is",
+   "year": 1969,
+   "label": "Solid State Records",
+   "country": "us",
+   "faction": "avant-postbop",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Chick Corea 1969 自由期（Woody Shaw、Hubert Laws、Bennie Maupin、Holland、DeJohnette）；長篇無調集體即興，尖碎，落冷冽。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -0.9,
+    "why": "長篇自由即興，長笛小號鋼琴尖碎"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4049e1d5-6397-4f49-8488-af31d7cf062d",
+    "https://coverartarchive.org/release/46a851db-dcf8-467c-ba21-8cd4a637893c/22231611824.jpg"
+   ],
+   "mbRgMbid": "4049e1d5-6397-4f49-8488-af31d7cf062d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Corea 自由期盤落冷冽（A.R.C.、The Song of Singing、The Sun）"
+  },
+  {
+   "artist": "Art Ensemble of Chicago",
+   "album": "Go Home",
+   "year": 1970,
+   "label": "Galloway",
+   "country": "fr",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "AEC 1969 巴黎錄音的 Galloway 盤；Bowie 小號、Jarman／Mitchell 蘆管與小樂器碎響，無調緊繃，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.1,
+    "z": -1.2,
+    "why": "無鼓手巴黎期，號角尖鳴與小打擊碎響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d424563f-cd73-3b41-9e35-840cff8731c3",
+    "https://coverartarchive.org/release/df868d33-17d7-4e11-ba45-6d532e7fa325/31327011899.jpg"
+   ],
+   "mbRgMbid": "d424563f-cd73-3b41-9e35-840cff8731c3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "AEC y 邊距較窄"
+  },
+  {
+   "artist": "John Carter & Bobby Bradford",
+   "album": "Seeking",
+   "year": 1969,
+   "label": "Revelation",
+   "country": "ch",
+   "faction": "free-small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Carter／Bradford New Art Jazz Ensemble 首作（Revelation 1969）；Ornette 式無鋼琴四重奏，乾而尖、無調，落冷冽。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -1,
+    "why": "無鋼琴四重奏，中音與小號尖線"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/67302da7-2481-4c0c-a247-d062a6be8598",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/6a/79/81/6a798162-c42e-265d-b20f-bb28077c94c3/191773465636.jpg/600x600bb.jpg"
+   ],
+   "mbRgMbid": "67302da7-2481-4c0c-a247-d062a6be8598",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 只收 1991 hat ART 重發，原盤 1969 Revelation LP，年份與廠牌取原盤；CAA 無封面，封面取 Apple Music"
+  },
+  {
+   "artist": "Joseph Jarman - Don Moye",
+   "album": "Earth Passage - Density",
+   "year": 1981,
+   "label": "Black Saint",
+   "country": "it",
+   "faction": "aacm",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Jarman／Moye 四重奏（Black Saint 1981，含 Johnny Dyani、Hilton Ruiz）；蘆管尖鳴與 Moye 打擊，旋律零碎，落冷冽。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.1,
+    "z": -0.9,
+    "why": "蘆管＋鋼琴＋貝斯＋鼓，尖鳴與打擊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/edfbaa3f-33c0-42e2-b6c8-3de297e58196",
+    "https://coverartarchive.org/release/af233ce5-5e49-43ba-8a6d-48332d3a3fa9/31490400597.jpg"
+   ],
+   "mbRgMbid": "edfbaa3f-33c0-42e2-b6c8-3de297e58196",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Moye 打擊可能讓 y 上到 0.3；Jarman 偏靈性，z 估 -0.9"
+  }
+ ],
+ "notes": [
+  "主場景 AACM／BAG／loft 能挖的池中已有大半（Braxton Compositions 系列、AEC 名盤、Sam Rivers loft 名盤、Oliver Lake 早期、Air 三張都已在池；mc3 已提 Braxton 4 張、Rivers 2 張、Revolutionary Ensemble《The People's Republic》、Jimmy Lyons《Other Afternoons》、Altschul《You Can't Name Your Own Tune》、Paul Bley《Barrage》），本批避開這些。",
+  "刻意不提：Braxton 獨奏中音盤（池中《For Alto》x 3.2，貼邊）、Leo Smith（池中兩張皆 x<2 判靜）、Frank Lowe／Jemeel Moondoc／Charles Gayle（池中判重落亢奮）、David Murray 早期（池中多判暖落雀躍）、Threadgill Sextett（池中判暖）、AEC 1970 年 Moye 加入後的盤（y 0.4–0.6 貼亢奮）、Corea《A.R.C.》《The Song of Singing》（已在池）。",
+  "mc14 擴寫：Andrew Hill、Jackie McLean 前衛期、Booker Little、Moncur、Tony Williams《Life Time》、Hutcherson 冷盤幾乎全已在池，只補 Dolphy《Conversations》、Corea《Is》兩張（Paul Bley《Barrage》mc3 已提）。",
+  "AACM／loft 盤池中評分 x 常落 3.0–3.3（舊能量標準）；本批 moodGuess 依 10-23 體感標準估，最低 3.3，貼邊者已在 uncertain 註明。",
+  "Elements of Surprise（Braxton/Lewis）、Leroy Jenkins《Solo Concert》、Jimmy Lyons《Push Pull》無可用封面來源，未提；Oliver Lake《Passin' Thru》《Life Dance of Is》MB 查無，未走人工身分。",
+  "全部 MB 釘住；年份兩處與 MB 不同：Buster Bee 取 1978 原 LP、Seeking 取 1969 Revelation 原 LP、Porto Novo 取 1968。"
+ ]
+}
