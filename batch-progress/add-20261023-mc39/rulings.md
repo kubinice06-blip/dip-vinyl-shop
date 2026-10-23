@@ -33,3 +33,27 @@
 - **20718**　Rothenberg《Intervals》：雙 CD 19 首（尺八／單簧管／低音單簧管 11＋中音薩克斯風 8）約兩小時；2001 錄、2002 發行（Discogs／MB），官網寫 2001 為錄音年。moodGuess 存疑：曲名標〈Melody Won/Too〉、〈T.C.〉悼念曲；Ned 自述受尺八本曲靜默與空間啟發，稀疏留白型證據，躁度可能低於預估。
 - **20719**　Rothenberg《World of Odd Harmonics》：全是單簧管與低音單簧管（無薩克斯風）；錄於 Academy of Arts and Letters，有無觀眾未證實，Discogs 無 Live，有 Edited／Mixed By，**不寫『無疊錄』**；樂評稱有穩定脈動、響亮有力段、結尾像合成器，並非稀疏留白，躁度成立但音色未必尖細。
 - **20720**　預留未用。本組 WebSearch 用 3 次（Odd Harmonics、Frogging、Voices）；AAJ、AllMusic、Squidco、Discogs 網頁均 403，引言多轉自 Mode／Maya／Ned 官網，非原文。
+
+## 研究 b 組（20691–20700）
+- **20691**　Parker／Stevens《Corner to Corner》：1993-06-08 Angel Studio 錄音室、直錄 U-Matic 母帶，非現場；推翻策展層：Stevens 1994-09-13 辭世，距錄音約一年多（策展寫「兩年」），且 Discogs 只寫 direct to U-Matic、未寫雙軌。Stevens 兼吹小號（Discogs 稱 trumpet、Waxman 稱 cornet）。moodGuess 存疑：整套鼓組在打、曲子偏短、鼓「更鈍更尖」，y 可能比預估更動。
+- **20692**　Parker／Rothenberg《Monkey Puzzle》：推翻策展層：沒有雙簧管，Rothenberg 吹低音單簧管＋中音薩克斯風；錄音室（Gateway Studio，1997-05-17），Cafe OTO 稱 studio live，無聽眾證據。moodGuess 存疑：低音單簧管與次中音偏厚，尖細感弱。曲名是英國謎題填字出題者筆名（Ximenes、Araucaria、Afrit 等，維基交叉證實；Custos 未證）。無專門樂評，status thin。Gateway Studio 地點查不到不寫。
+- **20693**　Parker／Shipp《Abbey Road Duos》：2006-07-19 Abbey Road Studios 錄音室，非現場。策展寫「中音組曲」：曲名確實印 Alto Suite，但兩位樂評稱 soprano suite，Discogs 樂器欄只有 tenor／soprano，曲名與樂器對不上，facts 照曲名寫並以樂評說法描述。moodGuess 存疑：次中音組曲有鋼琴「節拍器般重擊」，整體沉暗、靜默多，偏重與留白而非尖細。
+- **20694**　Parker／McPhee《Chicago Tenor Duets》：1998-05-11 Airwave Studio 錄音室、2002 Okka Disk 首發（策展 2002 正確）；Dusty Groove 的 Chicago Cultural Center 現場文案屬 2003 年《Sweet Nothings》，不可混入。moodGuess 存疑：Taylor 稱「最線性、最抒情」，Litweiler 稱有「漫遊」段落，兩支次中音偏低偏厚，非尖細緊繃。
+- **20695**　Tchicai／Parker《Clapham Duos》：2005-05-18 Sonic Studio Clapham 錄音室，非現場；發行年各源不一（MB 2015-12、Soundohm 2016、Bandcamp 2023-09-26 疑數位版），照卡單 2015。零售商稱九首，Discogs／Bandcamp 皆八首，採八首。Tchicai 2012 辭世，專輯為身後發行。moodGuess 存疑：商品說明稱「內省又愉快」，Tchicai 兼低音單簧管，音色與句子比預估柔。
+- **20696**　Mitchell《L-R-G / The Maze / S II Examples》：1978 Nessa，三件作品分別在 Van Gelder 錄音室、Columbia（CBS 30th Street）、Streeterville Studios 錄音，皆非公開演出；〈The Maze〉為八位打擊樂手一次錄成。moodGuess 存疑：非單人獨奏，是管樂銅管三重奏（含低音銅管）＋八人打擊＋單人高音薩克斯風三種質地，是有結構的作品而非純自由爵士。AllMusic 星等取自維基整理，未直接核對原頁。
+- **20697**　Mitchell《Sound Songs》：雙 CD 26 首約 122 分鐘，三首標明現場（Full Frontal Saxophone、Near And Far、Closer，約 37 分鐘，約三成）；moodGuess 存疑：含現場、含打擊與竹製薩克斯風、長度鬆散。AllMusic 錄音地點（Hot House、Riverside Studio、威斯康辛大學）來自搜尋摘要，原頁 403，未逐曲對應。Clouds and Clocks 的「first overdub」指《Solo [3]》而非本盤；疊錄與否查不到。status thin（7 條）。
+- **20698**　Mitchell／Aoki《First Look: Chicago Duos》：Sparrow Sound Design 錄音室三天（Discogs 末日 2004-02-14，維基 2004-02-12，facts 並列），非現場；無鼓。moodGuess 存疑：Kelman 說「很少變得刺耳」，兼長笛與鈴、風鈴，動態範圍寬，較預估溫和。
+- **20699**　Mitchell《Duets with Tyshawn Sorey and Special Guest Hugh Ragin》：推翻策展層：名為二重奏實為三人（Ragin 為來賓、部分曲目三人共同署名）；Sorey 維基列為鼓，策展寫鋼琴與打擊，樂器欄 Discogs 註明「未列入」，facts 並列；製作人維基寫 Steve Lake、Discogs 寫 Gregory Howe，衝突故不寫。Wide Hive 錄音室，非現場。moodGuess 存疑：AllMusic 稱「耐心、破碎、漂浮」、「比攻擊性更多的是玩心」，有鼓，偏柔和稀疏。
+- **20700**　預留未用。本組 WebSearch 共用 7 次（超出 3 次上限：Corner、L-R-G、Abbey Road、Monkey Puzzle、Chicago Tenor、Clapham、Sound Songs），之後改用 WebFetch／API；AAJ、AllMusic、Discogs 網頁、Delmark 官頁均 403／404。無重大推翻年份／廠牌。
+
+## 研究 a 組（20681–20690）
+- **20681**　Braxton《Saxophone Improvisations, Series F.》：身分吻合（America 1972，Studio Decca 巴黎錄音室，非現場）；Discogs 與 Wikipedia 只寫 saxophone，未指中音，facts 不寫『中音』；Penguin／Rolling Stone 星等兩處轉述互相矛盾，不寫星等。聲音無直接樂評佐證形容詞（AllMusic／AAJ 403），無矛盾。
+- **20682**　Braxton《Alto Saxophone Improvisations 1979》：身分吻合；moodGuess 存疑（旋律辨識度）：含〈Red Top〉〈Along Came Betty〉〈Giant Steps〉三首標準曲約 20 分半（佔約四分之一），策展層『被拆成碎片』找不到來源證實；z 若評分偏暖可汰。Big Apple 錄音室，非現場。
+- **20683**　Braxton／Lindberg《Six Duets (1982)》：身分吻合（Cecma 1005，Natali Sound Studios 佛羅倫斯，錄音室）；Discogs 末曲 6N 與 Wikipedia 末曲 No. 52 出入，facts 只列兩邊一致的編號；CD 再版加的兩段〈Four〉不屬原版 LP。『鋸齒主題』未證實。
+- **20684**　Braxton／Larner《11 Compositions (Duo) 1995》：推翻策展層 curatorRisk 的未定：Wikipedia 稱 live album（1995-03-24 Crowell Concert Hall 音樂會），moodGuess 存疑（現場），建議主線汰換或降級；Loewy 評語為『精心編排』『略歪斜的 bop 感』，非純無調。Larner 國籍僅 Discogs 單一來源，不寫。
+- **20685**　Stevens & Parker《The Longest Night, Vol. 1》：身分吻合；Discogs／Bandcamp 只寫錄於 Riverside Studios（倫敦展演場地），現場與否未證實，主線聽過再定；Jazzword 稱 Stevens『低調脆弱、音量克制』，與 y 偏輕相符，鼓為小件打擊與鈸鏈鈴，與『小鼓組碎拍』大致吻合。
+- **20686**　Stevens & Parker《The Longest Night, Vol. 2》：推翻策展層『五段更短更密』：五首前三首 5–6 分，後兩首 10–12 分，並非整體更短；其餘同 Vol. 1。曲名時刻（21.25–23.40）是否鐘點來源未明寫，寫作層只寫『曲名是時刻』。
+- **20687**　Parker／Lewis《From Saxophone & Trombone》：推翻策展層『乾冷』：錄於 Art Workers' Guild（喬治亞式大廳，挑高硬木地板、殘響長而亮），Wikipedia 稱 live duo album，Cafe Oto 未言有無觀眾。moodGuess 存疑（現場、殘響、z）。Cafe Oto 稱原版 LP 切錯轉速，曲長有出入，facts 僅寫約略長短。
+- **20688**　Parker & Guy《Incision》：身分吻合（FMP SAJ-35，1981-03-14／15 柏林）；MB rg 端點讀取為空，但 release 清單對得上；Wikipedia 的 Parker 條目寫 1980，其餘來源皆 1981，採 1981。錄音性質（錄音室或現場）查無明文，不寫進 facts；策展層 y 0 偏高，要聽才知道。
+- **20689**　Parker & Guy《Obliquities》：身分吻合（Maya MCD9501，Gateway Studio 錄音室，非現場）；錄音日 12 月 2 日（Parker 本人）與冊子 12 月 3 日有出入；Lake 內頁以『舞動、呼吸』描述互動，與策展層『緊、乾、無調』有落差，moodGuess 輕度存疑（z）。
+- **20690**　預留未用。WebSearch 實用 7 次（超出每支 3 次上限，原因：多數卡需查現場與否與聲音，Discogs／AllMusic／AAJ 網頁 403 只能靠搜尋摘要）；引言多轉自 Wikipedia 與 Cafe Oto、Maya、Jazzword 頁面。
