@@ -13,3 +13,51 @@
 - **留下的邊緣張**（研究層寫聲音事實，重點查）：z 貼中性——Bladee《Gluee》、Joji《BALLADS 1》、LUCKI《Freewave 3》、Odd Nosdam《No More Wig for Ohio》、Req ×2、DJ Krush《MiLiGHT》；x 偏高——M Huncho、Night Lovell《GOODNIGHT LOVELL》、Shabazz《Jealous Machines》；y 偏輕——nothing,nowhere.《Reaper》、Mr. Mitch《Parallel Memories》；聲音來源薄——BONES ×2、Black Kray、Telephone Jim Jesus。
 - `genres` 一律 `hiphop` 起頭（grime 器樂照池中 Wiley、Dizzee 先例）。
 - 研究層每支 WebSearch ≤3；facts 必含 2–3 條聲音事實；與 moodGuess 不符的標「moodGuess 存疑」——**特別是 soul 取樣暖 beat、trap 808 兇拍、乾淨明亮製作**。
+
+## 研究 b 組
+- 17891：Bladee《Working On Dying》moodGuess 存疑（高）。聽友評論稱衝勁足、少氛圍與旋律歌唱，合作的 Working on Dying 製作團體招牌是高速 808（tread）；Discogs 標 Cloud Rap／Trap。無專業樂評，x 很可能偏高（亢奮），建議主線視為汰換候選。status thin。
+- 17892：Yung Lean《Poison Ivy》moodGuess 存疑（中）。FADER／Fordham Ram／Mancunion 皆無失真吉他描述，聲音是 Whitearmor 的鈴聲式 hi-hat、未來感打擊與合成器；策展『grunge 吉他霧』無證據。冷、重（沙啞人聲、封閉感）有證據。
+- 17893：Yung Lean《Unknown Death 2002》聲音來源薄，facts 只寫類型標籤與樂評語（C− 的『背景音』評語）；無明顯與 moodGuess 不符，但證據不足。卡單 label 欄為俄文拼寫 Mishka，來自 Discogs，英文維基為 Mishka NYC。
+- 17894：Corbin《Mourn》類型實為另類／當代 R&B，非 cloud rap；moodGuess 弱存疑（有響亮鼓與牛鈴、合成流行開場）。
+- 17895：Corbin《Ghost With Skin》聲音證據幾乎為零（維基無條目、Bandcamp 路徑 404、Discogs 無 credits）；策展『吉他霧』未證實。status thin，建議上線後以評分為準或汰換。
+- 17896：Joji《BALLADS 1》moodGuess 存疑（中）。維基與 Pitchfork 轉述明講走『更偏流行、電台風格』，Discogs 另標 Synth-pop、Trap；z 可能貼中性、x 約 2.5–3.0。
+- 17897：M Huncho《Huncholini the 1st》日期衝突：維基 2020-01-31，MB／Discogs 2020-01-24，同年無礙。Clash 只證實〈Bando Ballads〉慢拍與整體『光滑』；其內文的 drill／trap 指的是 Headie One 而非 M Huncho。moodGuess 弱存疑。
+- 17898：Babyfather《BBF Hosted by DJ Escrow》RA 證實拖行嘻哈／digi-dub 節奏、粗礪失真、警笛與噪音、23 首短曲；『低頻厚』無直接證據，x 可能偏高。Mica Levi＝Micachu。
+- 17899：Ghostpoet《Dark Days + Canapés》moodGuess 存疑（中）：實為另類搖滾編制（現場鼓、吉他、弦樂與合唱），Discogs 風格 Abstract／Indie Rock／Trip Hop／Spoken Word，非嘻哈拍；陰鬱成立。樂評多經維基轉述，Guardian 抓不到。
+- 17900：方法裁定——Pitchfork、Guardian 在此環境無法抓取，改引 Wikipedia 轉述、RA、TMM、FADER、Discogs API；WebSearch 用 3 次（Babyfather、Poison Ivy、Bladee）。未推翻年份、廠牌、盤名。
+
+## 研究 a 組（條號 17881–17890）
+- **17881** Lil Peep 三張的標示：卡單 label（GBC／Death Note Music／AWAL）都是後來重發的發行商，原版皆自行發行或無廠牌；facts 寫原版事實，重發另列，年份取 2015／2016／2016。寫作層別寫成「GBC 發行」。
+- **17882** 日期差異：《Part One》MB 9/19 vs 維基 9/18；《Hellboy》MB 9/27 vs 維基 9/25；《Red Teenage Melody》MB 6/14 vs 維基 6/13；《JSYDC》維基內文 5/6 vs MB 5/7。facts 一律寫月份或「中旬／下旬」，不寫具體日。
+- **17883** 維基《Hellboy》頁稱「第五張也是最後一張」、Lil Peep 頁稱「第四張也是最後一張個人 mixtape」，互相矛盾；不寫序數。
+- **17884** moodGuess 存疑（偏高）：《GOODNIGHT LOVELL》（樂評：轟隆低音、失真、聲牆）、《Hellboy》（pop-punk／screamo 取樣、Nirvana 式咆哮）、《Crybaby》（Scaruffi：比前作更有力更快）。建議 x 偏高，主線評分時從嚴。
+- **17885** moodGuess 無從驗證（聲音來源薄）：《Just Say You Don't Care》、《Goth Luv》、《Gluee》、《Part One》、《Red Teenage Melody》。其中《Gluee》維基描述偏暖亮（「夏日頌歌」），與預估的冷有張力，建議列為最先汰換的候選。
+- **17886** 維基把單曲〈Still Cold / Pathway Private〉列在《Concept Vague》下，MB 曲目表卻在《Red Teenage Melody》第 11 首；單曲〈Give Me The Keys〉不在 MB 曲目表。facts 只採 MB 曲目表。
+- **17887** 《Goth Luv》Bandcamp 頁顯示發行日 2005，判為誤植；曲數 MB 11、Bandcamp 12，寫作層寫「十多首」。
+- **17888** 《Gluee》製作人名單（Whitearmor、Yung Sherman、Curtis Heron、Blank Body）只見於 Drain Gang 維基頁，Bladee 頁反說未載；單一來源，寫作層只點名前兩位較穩。
+- **17889** 來源限制：Pitchfork、Genius、AllMusic、RYM、Sputnik 皆被擋；WebSearch 3 次用盡，未找到針對 Part One／Gluee／JSYDC 的樂評。晚於發行事件（Peep 2017 辭世、Night Lovell 與 Corpse Husband 合作、Black Kray 後續合作）一律不寫。
+
+## 研究 e 組
+- 17921：身分九張全部對上 MB／Discogs（盤名、年份、廠牌），無推翻策展層。性質皆為原創錄音室專輯。
+- 17922：BSBD《NOIR》moodGuess 存疑（輕）：樂評寫的是巨大合成器旋律、華麗弦樂、中速鼓程式與 M83 式宏大，非極慢；x 恐近 2.7 邊緣、z 未必到 -0.8。
+- 17923：BSBD《Glaciers》五首 8–14 分鐘長篇、Discogs 標 Instrumental／Ambient；冷暖與鼓速無樂評直接引述，聲音證據偏薄但 status full。
+- 17924：Telephone Jim Jesus moodGuess 存疑（中）：Cokemachineglow 聽到『大致歡欣、勝利感、半憂鬱』與 80 年代式閃亮吉他，非純陰暗；稀疏悶鼓、冰河管樂音色支持靜與冷，z 恐不到 -0.8。
+- 17925：Req《One》Fact 描述『鈍、近乎環境、吵雜後房』，Tascam 四軌 lo-fi 錄成；支持靜與暗，標籤含 big beat 故 y 由主線聽感定。
+- 17926：Req《Car Paint Scheme》status thin：找不到任何針對本作的樂評，聲音只剩 Discogs 標籤與曲名；moodGuess 無佐證，建議主線聽過再定，不能確認就汰換。
+- 17927：Mr. Mitch《Parallel Memories》聲音來源僅 Boomkat 文案（近半速、柔軟合成器、夢幻冰冷憂傷）；y 策展已標偏輕，仍存疑。『peace grime』一詞無來源，不用。
+- 17928：Logos《Cold Mission》moodGuess 存疑（重）：Fact 說冷而乾淨且浪漫，XLR8R 說把 eski 寒意『調暖』、低頻 punchy heavy、鼓是骨架、有底噪與自然錄音；z 遠不到 -1.4，是否仍屬頹靡格請主線聽過再定。曲數黑膠 7／CD 11 分寫。
+- 17929：Wen《Signals》status thin：查無樂評／廠牌文案（Pitchfork、Boomkat、Juno、Bandcamp 皆取不到或無頁，維基無 Wen 條目），facts 僅 6 條（低於 8，因查不到更多可靠事實不補）；moodGuess 無佐證，建議聽過再定或汰換。
+- 17930：Wen《EPHEM:ERA》moodGuess 存疑（重）：Boomkat 描述是 techno／jungle／garage／hardcore 的舞池材料與『想跳舞的衝動』，恐偏亢奮（x 可能 ≥3）；facts 僅 6 條，聲音來源僅一篇零售文案。發行日 MB／Discogs 7/6，Boomkat 7/5，採 7/6。
+- 方法：WebSearch 用 3 次（Logos、TJJ、Req），其餘走 Discogs API、MB、維基、Fact、XLR8R、TMM、CMG、Boomkat（WebFetch）。Pitchfork、Allmusic、RYM、web.archive.org 皆無法抓取。
+
+## 研究 d 組（條號 17911–17920）
+- **17911**｜Coby Sey《Conduit》：身分吻合（AD 93、2022-09-09）。唸唱非標準饒舌，寫作層勿稱饒舌專輯；z 可能偏中性（結尾鋼琴曲平靜、有發亮段落）。facts 10 條 full。
+- **17912**｜DJ Krush《MiLiGHT》：moodGuess 存疑——客席饒舌／歌手至少 8 位（Mos Def、Tragedy、DJ Cam 等），人聲曲多，z 可能中性、x 可能偏高。廠牌：英版 Mo Wax、美版 FFRR＋Mo Wax、日版 1996-11-01 先發；卡單 FFRR 對美版成立。錄音地點查無，勿寫紐約。facts 9 條 full。
+- **17913**｜DJ Krush《Trickster》：全器樂 14 首（Es.U.Es Corporation，2020），但無任何樂評，**聲音事實僅「全器樂、短曲」**，moodGuess（暗合成器、厚低頻、冷）無法驗證。facts 8 條 thin。建議主線決定保留與否或先聽。
+- **17914**｜Odd Nosdam《No More Wig for Ohio》：2002 自發、2003 Anticon 重發；24 首全 Untitled（keyTracks 空）。聲音只證實拼貼、現成聲音、MPC2000＋8 軌，**無拍速／低頻／冷暖來源**，moodGuess（磁帶糊、偏冷）存疑，z 中性（策展層自標成立）。facts 8 條 thin。建議汰換候選。
+- **17915**｜Odd Nosdam《Burner》：低頻沉重、霧、靜電取樣成立（Pitchfork 轉述）；『失真吉他取樣』『慢拍』無來源，鼓是 scattershot，另有 Mike Patton 噪音。小存疑：x 可能偏高。facts 8 條 full。
+- **17916**｜Sixtoo《Chewing on Glass》：陰暗成立（AllMusic dread-laden），但**這張是錄真人樂手再切碎、有搖滾吉他與粗礪貝斯**（Damo Suzuki 一首人聲），非「暗弦樂取樣」；x 可能偏高。facts 9 條 full。
+- **17917**｜Sixtoo《Antagonist Survival Kit》：**推翻策展層「器樂 beat 作」**——維基稱含麥克風人聲，器樂版是另一張 Instrumentals；年份採 2003（Discogs／MB），維基 2001 疑誤植；曲數 10 首（非策展層 8 首）。聲音事實僅 synth-based、抽象／實驗標籤，moodGuess 無法驗證。facts 8 條 thin。建議汰換候選。
+- **17918**｜Sixtoo《Jackals and Vipers》：暗旋律合成器＋鼓機＋film noir 成立，但 Ninja Tune 說 aggressive、tough as nails，慢拍無來源；小存疑 x 偏高。發行日 MB 09-10 與維基 10-10 衝突，只寫 2007。facts 8 條 full。
+- **17919**｜Lukid《Lonely at the Top》：**推翻「鬆拍」**——黑膠封套自印 BPM 77–147，多數 108–130；Bandcamp 標籤 dance。霧／厚低頻／冷無評論來源。facts 8 條 thin。強烈建議汰換或先聽。
+- **17920**｜工具限制：Pitchfork、AllMusic、Guardian 被擋或 403，相關評語經 Wikipedia 轉述；WebSearch 用 3 次。
