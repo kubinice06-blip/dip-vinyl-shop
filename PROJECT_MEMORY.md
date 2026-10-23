@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜更正：「驟然爆裂」不算推力，94 張酸卡能量撤回（《The Drift》回頹靡）
+
+- **改動**：店主「The Drift 頹靡沒錯」。兩輪酸冷重判把「爆裂／音塊／drone」當推力，違反 10-22 能量標準（要有打擊在推），連 Sunn O))) 都被推到亢奮。152 張被拉高能量的逐張看，94 張沒有鼓／節拍在推的能量回原值、寒氣（冷色溫）保留；58 張真有節拍的留躁。BRIEF 改成「安靜但有寒氣也算酸；推力只看打擊」。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/score500/BRIEF.md`、`batch-progress/mood-axes/sour-rejudge-2/{BRIEF.md,drive-revert.json}`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：gate 綠、錨點 104/104；The Drift／Tilt／Sunn O)))／Penderecki／Ligeti 回頹靡，Geechee、Ornette 仍冷冽；冷冽 1,035、亢奮 2,753、頹靡 1,314、平靜 1,349。
+
 ### 2026-10-23｜dip-vinyl-shop｜酸冷重判第二輪：「寒氣」也算酸，123 張改判（Scott Walker《The Drift》頹靡→亢奮）
 
 - **改動**：店主指出第一輪漏太多、《The Drift》可能歸錯。第一輪只抓窄標籤，《The Drift》（art-rock＋experimental）沒進候選。第二輪抓廣義實驗／前衛／art-rock／現代古典／dark ambient 標籤或評語有寒氣字眼、不在冷冽／亢奮的 2,397 張，8 支代理逐張判（`batch-progress/mood-axes/sour-rejudge-2/`），補「安靜但有寒氣也算酸」「驟然爆裂算推力」。判酸 234、主線退回 17（調性還在的陰暗作品），改值 123 進 `overrides.json`（累計 536）。

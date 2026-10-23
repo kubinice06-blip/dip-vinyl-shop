@@ -199,3 +199,12 @@
 - **Scott Walker**：《Tilt》《The Drift》《Bish Bosch》《Soused》都進亢奮（3.1, 1.0–1.2, −2）——長段留白後的駭人爆裂算張力。
 - **放鬆格**：這輪 652 張放鬆格候選一張都沒判酸（多是古典、爵士抒情、新古典），兩輪合計放鬆格移出 4 張。寒氣型的卡原本大多就在平靜／頹靡（冷＋靜），問題是沒進冷冽／亢奮，不是被判成放鬆。
 - **八格（兩輪合計，含同期新上架卡）**：冷冽 936→1,064、亢奮 2,672→2,818、頹靡 1,314→1,249、平靜 1,339→1,320；錨點 104/104。
+
+## 2026-10-23｜更正：「驟然爆裂」不算推力，撤回 94 張的能量（Scott Walker《The Drift》回頹靡）
+
+- **店主**：「The Drift 頹靡沒錯欸」。
+- **錯在哪**：第二輪我自己加了「驟然爆裂、極端張力算推力」，第一輪也把「音塊密集刺耳」當推力。兩條都違反 10-22 能量標準（躁＝攻擊性**且有打擊在推**；Sunn O)))、現代古典音塊、drone 留靜），連 Sunn O)))《Monoliths & Dimensions》都被推到亢奮。
+- **處理**：兩輪被拉高能量的 152 張逐張看，沒有鼓／節拍在推的 94 張能量回原值、**色溫（寒氣）保留**（`sour-rejudge-2/drive-revert.json`）。留在躁的 58 張是真的有鼓、節拍、工業脈衝或放克律動在推的（Ornette、Marion Brown《Geechee》、Throbbing Gristle 有脈衝的三張、This Heat《Repeat》、Swans《Children of God》、Neubauten、Univers Zero、Silent Hill 等）。
+- **回頹靡／平靜的**：Scott Walker 四張、Sunn O)))、Penderecki《Threnody》《St Luke Passion》、Ligeti、Galás 三張、Current 93、AMM、Kevin Drumm、KTL、Lustmord、Ben Frost、Low《Double Negative》、Swans《Soundtracks for the Blind》、Feldman 以外的現代古典（Boulez、Berio、Stockhausen、Saariaho、Carter、Ferneyhough）等。
+- **八格**：冷冽 1,064→1,035、亢奮 2,818→2,753、頹靡 1,249→1,314、平靜 1,320→1,349；錨點 104/104。
+- **規則已改**：`score500/BRIEF.md` 酸的段落改成「安靜但有寒氣也算酸；推力只看打擊」。
