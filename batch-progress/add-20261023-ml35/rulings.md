@@ -12,3 +12,10 @@
 - **主線汰 1**：Great Lake Swimmers《Bodies and Minds》（原聲為主，y 估 0.8 已貼邊，ml24 原聲盤判輕先例）。
 - **留給研究層判**：Mahalia Jackson《Let's Pray Together》y 估 0.7（ml31 Mahalia 管弦盤 y 0.5–0.6 落格先例，查伴奏是否真為管弦）；Willie《Teatro》、Lambchop《FLOTUS》同人池中判輕（賭 Lanois／自動調音濕製作翻案）；Chris Isaak 三張的色溫；Hawley《Lady's Bridge》、Kurt Vile《Smoke Ring》y 貼邊。
 - 跨分支去重：對 origin 前 40 個 `claude/*` 分支與 main 的 seed 與卡單 0 撞。
+
+## 研究 e 組
+- 16761：Ghosteen 首發日 MB 記 2019-10-03、維基與樂評記 10-04（網路版），實體 11-08 由 Bad Seed Ltd 發行；facts 兩說並寫，卡單 label「Ghosteen Ltd」不推翻。製作人為 Cave 與 Warren Ellis，維基未列 Nick Launay。moodGuess 成立，z 為風險：Petridis、Brown 稱暖，Line of Best Fit 仍用「pitch-black」「murk」。
+- 16762：Kurt Vile《Smoke Ring》moodGuess 存疑：有「peppy and propulsive」曲目與重鼓（〈Society Is My Friend〉），主體卻是回音原聲指彈；x 可能高過 2.3、y 輕盈傾向。錄音棚與類比／數位說法查無可靠來源，不寫。
+- 16763：Timber Timbre《Hot Dreams》moodGuess 大致成立（官方簡介 balmy、velvet、neon and haze；Guardian 標題 smoky）。Kirk 本人打多數鼓，〈Curtains!?〉有明確拍子；Phares 仍用 menace，z 貼邊。Polaris 為短名單入圍、未得獎。
+- 16764：The Paper Kites《On the Corner Where You Live》moodGuess 存疑：評論稱 midtempo、有鼓與電吉他推進，x 可能高於 2.2、y 有輕盈傾向；Central Trend 稱暖，z 有利。錄音棚名維基兩說（Tarquin／Joaquin），不引用。合成器是否使用查無來源，不寫。
+- 以上皆無推翻年份、廠牌、盤名；無選輯／重複卡。
