@@ -12,3 +12,10 @@
 - **主線汰 18**：旋律不明、色溫貼 0（Auburn Lull、Landing ×2）；乾淨 jangle／Farfisa 律動 y 風險（AmAnSet《Fun of Watching Fireworks》《From Our Living Room》、Clientele《Bonfires》《Age of Miracles》、Teen Daze《A World Away》、Mutual Benefit、Michael Seyer《A Good Fool》）；牆厚但陰鬱（Starflyer 59 同名《Silver》）；x 風險（Peaking Lights《Cosmic Logic》、Pale Saints《Slow Buildings》、Pure Bathing Culture《Night Pass》、Night Moves《Pennied Days》、Black Moth Super Rainbow 2025）；同型集中（Novo Amor 留一張）；配樂專輯（Guthrie & Budd《Mysterious Skin》MB Soundtrack）。
 - 跨分支去重：策展代理對 seed、全部 curation／master／cards 檔、origin `claude/*` 分支（含第 9 輪 ml42/45、ml43）0 撞。
 
+
+## 研究 e 組
+- **19521** Night Moves《Can You Really Find Me》moodGuess 存疑：Domino／Piccadilly 描述為光滑流行質感、節奏鬆弛帶 disco 味的流行大曲、「為夏天設計」，找不到殘響霧的來源；y 預估 1.0 偏重風險、x 在 disco 曲目可能 2.7–3.0。色溫偏暖（wistful、甜帶憂鬱）成立。建議主線視為汰換候選。
+- **19522** Small Black《Best Blues》moodGuess 存疑：Exclaim! 寫 bright glossy synths、upbeat、〈Boys Life〉偏舞曲、〈Checkpoints〉new wave 鼓機推進，x 2.5 有偏低風險（2.7–3.2）；開頭有迴響 riff＋鈸牆、色溫偏暖成立。邊緣，建議評分時以 x 為關鍵。
+- **19523** Brightblack《Ala.Cali.Tucky》年份出入：MB 2003、AllMusic／Wikipedia 專輯條目為 2004；facts 寫 AllMusic 日期，年份欄由主線決定（可逆）。樂評用詞 forlorn／sallow（落寞枯黃），色溫與 y（編制偏原聲）存疑；status thin（AllMusic、Discogs 403，僅搜尋摘要）。
+- **19524** Strawberry Guy《Sun Outside My Window》moodGuess 存疑：Post-Trash 稱 sunshine pop、披頭四式旋律、編制不塞滿，y 1.0 有偏輕風險；lo-fi 鋼琴＋疊層弦樂、夏末暖感支持暖與靜（x 建議 2.3–2.6）。
+- **19525** 本組未推翻身分（四張 MB 釘住對得上廠牌與年份，僅 Brightblack 年份如上）。
