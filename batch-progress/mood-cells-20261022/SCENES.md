@@ -73,8 +73,13 @@
 | 49 | ml48 | dub 第三波：Wackies／Bullwackie 紐約慢盤、Lee Perry 周邊、Prince Jammy、Niney、Joe Gibbs／Errol Thompson、Linval Thompson | ✅ 上線 12／落格 12 |
 | 50 | ml49 | 90s R&B slow jam／ballad 二線（ml6 收 40 張、高產；Jodeci、Silk、H-Town、Intro、Shai、Changing Faces 系慢歌） | ✅ 上線 28／落格 28 |
 | 51 | mc38 | 前衛爵士鋼琴緊繃那路（Cecil Taylor 獨奏、Matthew Shipp、Sylvie Courvoisier、Kris Davis、Marilyn Crispell、Alexander von Schlippenbach） | ✅ 上線 27／落格 27 |
-| 52 | ml50 | 暖 drone／厚墊 ambient（Celer、Chihei Hatakeyama、Taylor Deupree 暖盤、Benoît Pioulard、Hotel Neon；旋律要聽得出來） | |
-| 53 | md27 | 暗色現代古典慢板厚弦（Górecki、Kancheli、Vasks、Penderecki 慢作、Silvestrov 冷盤；要往下壓） | |
+| 52 | ml50 | 暖 drone／厚墊 ambient（Celer、Chihei Hatakeyama、Taylor Deupree 暖盤、Benoît Pioulard、Hotel Neon；旋律要聽得出來） | 派→情緒薄格 ml50、md27（第 11 輪） |
+| 53 | md27 | 暗色現代古典慢板厚弦（Górecki、Kancheli、Vasks、Penderecki 慢作、Silvestrov 冷盤；要往下壓） | 派→情緒薄格 ml50、md27（第 11 輪） |
+| 54 | ml51 | lo-fi／beat tape 第三波（Knxwledge、Mndsgn、Ta-ku、Elaquent、Kiefer 慢盤、日本 jazzhop 二線）＋ ml47 剩餘 | 派→情緒薄格 ml51、md28（第 11 輪） |
+| 55 | md28 | dark ambient 第三波（md5 收 45／45 高產；Cryo Chamber、Cyclic Law、Glacial Movements、Malignant 二線藝人） | 派→情緒薄格 ml51、md28（第 11 輪） |
+| 56 | ml52 | 2000s R&B ballad／slow jam 續集（ml49 收 28 高產；Joe、112、Avant、Dru Hill、Musiq Soulchild、Brian McKnight 慢盤） | 派→情緒薄格 ml52、mc39（第 11 輪） |
+| 57 | mc39 | 自由爵士管樂獨奏與二重奏（Anthony Braxton、Evan Parker、Roscoe Mitchell、Brötzmann、Wadada Leo Smith 獨奏盤；mc38 鋼琴路高產） | 派→情緒薄格 ml52、mc39（第 11 輪） |
+| 58 | ml53 | 爵士人聲 torch song／深夜 ballad（Julie London、Chet Baker sings 以外的二線；弦樂或厚編曲才收） | |
 
 **暫停**：mc13 math rock、mc21 post-punk revival、mc30 minimalism（旋律清楚＝暖）、mc9／mc10／mc20／mc25／mc26 系的 synth-pop／new wave／K-pop／synthwave 續集（2026-10-23 體感標準：旋律清楚往暖，落雀躍）、mc23 art pop、ml4 系東亞續集、ml14 spiritual jazz（體感標準判冷，不是恍惚）、ml22、ml27。**重開**（體感標準下會落冷冽）：mc4、mc14、mc22、mc28。
 
@@ -110,7 +115,8 @@
 | md24 | 18521 | 嘻哈 instrumental 冷盤（暗色 beat tape、冷的 abstract hip-hop） | 併入 md16（Sixtoo、Odd Nosdam、BSBD、Req、DJ Krush 已收；不再單獨派） |
 | md25 | 18601 | 冷的 ambient pop／art pop 慢盤（Julia Holter 冷盤、Jenny Hval 慢盤、Kate Bush 以外的暗 art pop） | 併入 md10（池中冷 art pop 多判輕，只收到 6 張） |
 | md26 | 19721 | 暗色 neofolk／dark folk 慢盤（Current 93、Sol Invictus、Ain Soph、Forseti、Hexvessel 慢盤；避開有極右爭議的團）＋ doom jazz 二線 | ✅ 上線 28／落格 28（策展兩輪 61、主線汰 3、研究汰 30；neofolk 只剩 drone／儀式型，極右爭議團不收，場景見底） |
-| md27 | 20361 | 暗色現代古典慢板厚弦（Górecki、Kancheli、Vasks、Penderecki 慢作、Silvestrov 冷盤） | |
+| md27 | 20361 | 暗色現代古典慢板厚弦（Górecki、Kancheli、Vasks、Penderecki 慢作、Silvestrov 冷盤） | 派→情緒薄格 ml50、md27（第 11 輪） |
+| md28 | 20601 | dark ambient 第三波（Cryo Chamber、Cyclic Law、Glacial Movements、Malignant 二線藝人） | 派→情緒薄格 ml51、md28（第 11 輪） |
 
 ## 冷冽 mc（躁＋輕＋冷；門檻 x ≥ 3.3、y ≤ +0.2、z ≤ −0.3）
 
@@ -156,6 +162,7 @@
 | mc36 | 19641 | no wave／薄而尖的 noise rock（DNA、Mars、Teenage Jesus、Theoretical Girls、Glenn Branca 早期、Ut、Sonic Youth 最早期；厚牆轟炸落暴躁） | ✅ 上線 20／落格 18（2026-10-23；策展 39、主線汰 7、研究汰 12；no wave 本體多 EP，主力改 Downtown 即興；帶吉他的 Mars＆DNA、Ut 判重落暴躁；不再派） |
 | mc37 | 19881 | EAI／onkyo／電聲即興（AMM、Keith Rowe、Sachiko M、Otomo 電聲期、Toshimaru Nakamura） | ✅ 上線 26／落格 16（2026-10-23；策展 54、主線汰 9、研究汰 19（安靜／催眠判靜 8、現場 4、鼓 4）；cracked electronics 與盤帶噪音拼貼 10 張判重落暴躁；唱盤、管樂擴展技法、Buchla 全中；見底不再派） |
 | mc38 | 20201 | 前衛爵士鋼琴緊繃那路（Cecil Taylor 獨奏、Matthew Shipp、Sylvie Courvoisier、Kris Davis、Marilyn Crispell、Schlippenbach） | ✅ 上線 27／落格 27（2026-10-23；策展 54、研究汰 18：現場 3、旋律清楚判暖 8、留白判靜 3、鼓組合奏判重 3、掛名 1；原聲前衛鋼琴小編制全中，Cecil Taylor 剩現場盤，主場景見底） |
+| mc39 | 20681 | 自由爵士管樂獨奏與二重奏（Braxton、Evan Parker、Roscoe Mitchell、Brötzmann、Wadada Leo Smith） | 派→情緒薄格 ml52、mc39（第 11 輪） |
 
 ## 恍惚 ml（靜＋重＋暖；門檻 x ≤ 2.7、y ≥ +0.8、z ≥ +0.3）
 
@@ -212,4 +219,7 @@
 | ml47 | 19961 | chillhop／jazzhop 第二波（Chillhop Records、Bonus Points、Philanthrope、Psalm Trees、Saib、L'Indécis）＋ 日韓 lo-fi | ✅ 上線 23／落格 23（2026-10-23；策展 46、主線汰 11、研究汰 12；Chillhop 拋光盤、future funk、帶饒舌、broken beat 汰；韓國 lo-fi 0；場景見底，不再派） |
 | ml48 | 20041 | dub 第三波：Wackies／Bullwackie 紐約慢盤、Lee Perry 周邊、Prince Jammy、Niney、Joe Gibbs／Errol Thompson、Linval Thompson | ✅ 上線 12／落格 12（2026-10-23；策展 31、主線汰 11、研究汰 8（含改名重發撞池 2）；Mighty Two／Niney 池中判輕、器樂 dub 判冷，場景見底，不再派） |
 | ml49 | 20121 | 90s R&B slow jam／ballad 二線（Jodeci、Silk、H-Town、Intro、Shai、Changing Faces 系慢歌） | ✅ 上線 28／落格 28（2026-10-23；策展 53、主線汰 1、研究汰 17：new jack 中快板／乾淨數位製作；頭牌池中判輕，收 quiet storm 成人抒情與 2000s 慢板 neo-soul，主場景見底） |
-| ml50 | 20281 | 暖 drone／厚墊 ambient（Celer、Chihei Hatakeyama、Taylor Deupree 暖盤、Benoît Pioulard） | |
+| ml50 | 20281 | 暖 drone／厚墊 ambient（Celer、Chihei Hatakeyama、Taylor Deupree 暖盤、Benoît Pioulard） | 派→情緒薄格 ml50、md27（第 11 輪） |
+| ml51 | 20441 | lo-fi／beat tape 第三波（Knxwledge、Mndsgn、Ta-ku、Elaquent、Kiefer 慢盤、日本 jazzhop 二線） | 派→情緒薄格 ml51、md28（第 11 輪） |
+| ml52 | 20521 | 2000s R&B ballad／slow jam 續集（Joe、112、Avant、Dru Hill、Musiq Soulchild、Brian McKnight 慢盤） | 派→情緒薄格 ml52、mc39（第 11 輪） |
+| ml53 | 20761 | 爵士人聲 torch song／深夜 ballad 二線（弦樂或厚編曲） | |
