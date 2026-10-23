@@ -25,3 +25,12 @@
 - 13593　moodGuess 存疑：Thinking Plague《In This Life》（樂評：悲傷、葬禮般慢、幽閉，恐落頹靡）；《In Extremis》（廠方稱厚重激烈、編制密，恐判重）；《A History of Madness》（Cuneiform 稱 warm、organic，且有音景段，恐判暖／靜）；Aksak Maboul（B 面 22 分鐘氛圍即興＋探戈，恐判靜）；Fred Frith《Speechless》（維基稱最美、有華爾滋抒情曲與風笛，恐偏暖）；Skeleton Crew《The Country of Blinds》（Frith 自稱像普通搖滾、節奏更豐富，恐偏暖）。Cassiber 三張與 Skeleton Crew《Learn To Talk》大致符合預估。
 - 13594　WebSearch 本組用 3 次；Progarchives、Allmusic、Discogs 網頁、Cuneiform 官網皆 403／503，改走 Discogs API、MB API、Wikipedia、Cuneiform Bandcamp。聲音事實多半是樂評片段，缺鼓聲與殘響的直接描述，已在 notes 註明。
 - 13595　發行日衝突：《In Extremis》MB 1998-12-08 vs Cuneiform 1998-09-08；《A History of Madness》MB 2003-09-19 vs Cuneiform 09-16，facts 只寫年或月。
+
+## 研究 b 組
+- 13571　EVOL 非單人：Mego 頁、Discogs 都顯示 EVOL 是 Roc Jiménez de Cisneros 與 Stephen Sharp 的雙人組（Alloa／巴塞隆納），卡單與策展層寫成 Roc 單人；三張 EVOL 的 facts 寫雙人。
+- 13572　moodGuess 存疑（偏暖或偏靜）：Ikue Mori《Hex Kitchen》實為鼓機＋取樣加多位原聲／電聲客席（電豎琴、手風琴、小提琴、單簧管、風笛、長號）與 Catherine Jauniaux 人聲三首，非純尖細電子，恐判暖；《Garden》五首 7–11 分鐘長篇、Scaruffi 稱「冥想」，恐偏靜；《Myrninerest》只有 Scaruffi「最情感、最個人化」一句，無尖細／緊繃證據，恐判暖，status thin。
+- 13573　moodGuess 存疑（偏靜或偏重）：EVOL《Wormhole Shubz》Discogs 風格 Noise／Abstract／Drone、最長軌 16:43，與預估的「高速翻滾」不符；EVOL《Ligeti Continuum》聲音面零來源，預估是從 Ligeti 原曲推論，限量 100 卷展場卡帶，串流可能不存在，兩張 status thin；Rashad Becker 有「稀疏精確、像人聲與蟬鳴」但無點擊脈衝證據，x 最弱。
+- 13574　Hecker《Speculative Solution》：尖細高頻嘯叫與碎屑符合冷，但樂評稱段落長短不一、無穩定節拍、中段約一分鐘靜默、末十分鐘轉平靜嗶聲，x 與判靜風險標存疑；母帶是 Rashad Becker，EVOL《Proper Headshrinker》刻片也是 Becker，已寫進 facts 當交叉線索。
+- 13575　Yasunao Tone 兩張：《Solo for Wounded CD》曲名只推定為兩部分、無官方曲名；Debussy《前奏曲集》底片一說僅 Another Mag 一源，寫作層寫「據報導」。《MP3 Deviations #6+7》只有 Mego 製作說明與 Sound Projector 一句評語，「高頻尖細」屬推論，可能偏重。
+- 13576　日期衝突：Becker MB 2013-07-29／Discogs 07-30／Bandcamp 09-10，只寫年；Hecker MB 5/24 vs 零售搜尋摘要 5/23，取 MB。
+- 13577　WebSearch 本組用了 6 次（超出每支 3 次上限）：前半誤以為可補樂評；後半改走 MB／Discogs API 與 WebFetch。Pitchfork 被擋、Tzadik／AllMusic／Discogs 網頁 403、Quietus 404。
