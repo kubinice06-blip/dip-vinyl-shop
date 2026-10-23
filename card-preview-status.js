@@ -3415,4 +3415,6 @@ window.DipPreviewStatus = Object.freeze({
   "mystified|eschate thule": "unavailable",
   "necrophorus|elinrós": "unavailable",
   "necrophorus|drifting in motion": "unavailable",
+  "hoarfrost|ground zero": "unavailable",
+  "strom noir|glaciology": "unavailable",
 });
