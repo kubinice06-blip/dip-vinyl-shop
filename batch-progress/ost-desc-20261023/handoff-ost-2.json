@@ -1,0 +1,8 @@
+{
+ "batch": "ost-2", "cards": 50,
+ "written": { "cardCatalog": 0, "kvKeys": 50, "seedRows": 0, "previewReady": 0, "previewUnavailable": 0 },
+ "review": { "by": "cloud-main", "cards": 50, "changed": ["desc2:michael gore|fame (the original soundtrack from the motion picture)"] },
+ "qa": { "research": "pass", "hooks": "pass", "out": "pass（專名誤報放行）", "prepareGate": "不適用（只改既有卡簡介）", "publishedGate": "不適用" },
+ "pendingLocal": { "kv": "無", "listeners": [], "apexEvidence": [], "genreTree": "不適用", "albumOverrides": "無",
+   "poolNotes": ["desc2:howard shore|the lord of the rings trilogy 實為 City of Prague Philharmonic 2004 選粹（藝人欄可再議）", "desc2:georges delerue|le mépris 實為 1991 Hortensia 法國電影配樂合輯（是否移除待卡池整頓）"] }
+}
