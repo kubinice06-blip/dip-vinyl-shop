@@ -98,3 +98,12 @@
 - **16543** 避免複述 hook：Oroza 第三格不再寫「營建工」，只寫放下自我、歌轉向自省擔責；Morrison 的「放下以吉他為軸心的寫法」與 hook 同義，整格捨去，改以「那趟巡演跑的正是這張」替 hook 的巡演具名；Río Arriba 的「常規打擊樂一件都沒用」改正面句「通盤捨棄常規打擊樂」（避否定句）。
 - **16544** Sinseers 正文用 `Joey Quiñones`（note／facts 的人名拼法，帶 ñ），未照卡單藝人欄的 `Joey Quinones`：正文指的是團長這個人而非掛名字串，拉丁變音照原文保留；可逆，主線若要與標題逐字一致改一字即可。Amansará 正文只寫 note 的「上市」，未寫黑膠（note 未列）。
 - **16545** 自掃（han() 4-gram，本檔＋writer-2 卡單 hook／note＋writer-2 現有 out 檔）：3 次以上 0 條；2 次只剩地名「聖地牙哥」（同團兩張）、「玻利維亞」。途中拆掉：「這張第二」「由發行伴」「發行伴奏」（撞 writer-2 卡單 Exclusively／Morning Glory note）、「首張專輯」（Sinseers 對 Morrison）、「的阿根廷」（Río Arriba 跨句黏 hook 尾字，改以「ZZK Records 這家阿根廷廠牌」領句）、Río Arriba 內「整張」「這家廠牌」重複。輔助腳本：scratchpad `wr-ml32-1/ml32w1-chk.mjs`。
+
+## 主線審稿（16551–16560；2026-10-23）
+- 16551：逐張審 16 張（out-1 8、out-2 8），逐句對回研究稿；事實層未改。
+- 16552：改 3 處（hook 同步改 hooks-c／hooks-d 與 writer-2 輸入檔，qa-check-research 0 標記）：
+  - `Don Carlos & Gold`：hook「第一個數位雷鬼節奏出現之前，每一拍都還是真人打的。」→「這張唱片面世時，數位雷鬼節奏還要再等三年。」（研究稿只說「應屬類比錄製、無來源直接寫明」，「每一拍都是真人打的」超出來源；改成 1982→1985 的年份事實）→ 221 字。
+  - `Sugar Minott|Sufferer’s Choice`：hook 與第三句是單一樂評（Christgau）把本作與《Black Roots》對照聽出「雷鬼轉向」的評價句，整段拿掉；hook 改走製作欄 Lincoln Minott＝本人，第二句補身分與距《Black Roots》四年 → 198 字。
+  - `Johnny Osbourne|Nightfall`：「最重這個評語來自樂評，著眼點在格外突出的低音。」→「樂評著眼的是格外突出的低音。」（來源兩家，保留評語但去掉後設說明）→ 221 字。
+- 16553：未改但記錄——Sinseers 正文用 `Joey Quiñones`（正確拼法），卡池鍵維持 MB 的 `Joey Quinones`；Lacksley Castell 早逝 thin 卡放不下，不補；Oroza「開闊的類比聲響」是聲音描述不是評價，保留。
+- 16554：上線前檢查——prepare gate 0 error（16 warning 皆 UPC 盡力而為）；封面 live-check 16/16 HTTP 200（CAA 14、Apple 2）；對 origin 65 個 `claude/*` 分支與 main 的 seed＋卡單再去重 0 撞。
