@@ -49,3 +49,12 @@
 - **16645**：Icebreaker International & Manual《Into Forever》推翻策展年份與廠牌：Sound of a Handshake（Morr 子廠牌）首發，Boomkat／Discogs 2003-07-07，MB 2002-07、Morr 官網 2002-08-26 互相衝突，傾向 2003，建議年份改 2003、廠牌改 Sound of a Handshake。moodGuess 存疑：樂評用 pristine／hopeful／chiming，偏乾淨明亮，y≥0.8 恐不達；有稀疏鼓點。
 - **16646**：來源：MB API、Discogs API（release／master／artist）、Wikipedia、Darla、Morr、Textura、Tiny Mix Tapes、Boomkat、Exclaim!、This Side Japan。WebSearch 用 Lily 1、UA 2、Golden Sun 1、Drowned 1、Into Forever 2（含一次 extended）。
 - 結果：5 張 facts 12／11／10／10／10 條，全 full，qa-batch research a 組通過；推翻策展層 2 處（Drowned 廠牌、Into Forever 年份＋廠牌），moodGuess 存疑 5 張全列。
+
+## 主線：研究層後汰換（不佔條號）
+- **汰 10 張**（研究層聲音反證；研究稿條目移出研究檔，卡單存 `dropped-cards.json`）：
+  - 判輕（乾淨、有空氣、無厚殘響證據）：Icebreaker International & Manual《Into Forever》（樂評 pristine／chiming）、Daniel Lanois《Shine》（製作 beyond clean、鼓機清脆）、Bibio《Fi》（短而素的指彈迴圈，無殘響證據）、Mark Peters《Innerland》（近無鼓的單吉他田園）。
+  - 判躁（拍子推進）：UA《AMETORA》（Discogs 風格 Soul-Jazz／Broken Beat／Acid Jazz，dub 只在單曲混音）、Manual & Syntaks《Golden Sun》（前半 hip hop 粗鼓＋深低音）、Hammock《Departure Songs》（三位鼓手、作者自述接近流行搖滾、樂評 euphoric）、Teebs《E S T A R A》（每首都有 boom-bap 鼓、取樣乾）。
+  - 判冷／判輕：Daniel Lanois《Belladonna》（有沉鼓與 dub 節拍、乾燥沙漠聲景、樂評 dark and moody）、M83《Digital Shades [vol. I]》（無鼓鋼琴合成墊，樂評多輓歌哀愁字眼；池中 M83 器樂首作落頹靡）。
+- **留**：Lily Chou-Chou《呼吸》（空靈、旋律清楚，有鼓但繞圈不推進）、Manual《Confluence》（色溫兩說並存，池中 Manual 全落恍惚）、Hammock 早期兩張（z 0–0.4 風險記下，池中《Oblivion Hymns》z 0.3 落恍惚）、Engineers（z 貼邊）、Sonic Boom（鼓機脈動，作者自述要合成器溫暖）。
+- 定案 **12 張**。卡單改：Lily Chou-Chou 廠牌補 Toshiba EMI；Manual《Drowned in Light》廠牌 → Make Mine Music；Hammock 早期兩張廠牌 → Darla（原發行 DRL 176／196）；Robin Guthrie《Fortune》廠牌 → Soleil après minuit。
+- 不補位：策展層說明主場景與擴寫場景都已見底（池中同型全判輕）。**ml34、ml36 不再派。**
