@@ -118,3 +118,17 @@
 - **20194** `desc2:Regina Belle|Reachin' Back`：「這回向費城靈魂樂致敬，挑了 Al Green、The Spinners 等人的名曲重唱。」→「這回整張重唱 Al Green、The Spinners 等人的靈魂名曲。」（Al Green 是曼菲斯 Hi Records，不屬費城靈魂樂；研究稿兩條並列互相矛盾，取曲目事實）。研究稿未改（facts 原文保留，矛盾記於此）。
 - **20195** `desc2:Gerald Levert|Gerald's World`：「在美國的排行上，它衝到第 6 名」→「它在美國專輯總榜衝到第 6 名」（研究稿：Billboard 200 第 6 名；原句榜名不明）。
 - 其餘 23 張逐張審過，未改字。qa-batch out、qa-check-research（兩檔標記 0）、fix-spacing（0）重跑全過。
+
+## 上線（不佔條號）
+- 上線 28：card_catalog 28/28、KV 28 鍵回讀逐字一致、試聽 27 ready（主線人工配對 1：Case《Personal Conversation》以藝人目錄 lookup；5 張第 1 軌是 intro／interlude 改取第 2 軌；Dave Hollister《Ghetto Hymns》Apple 無上架）、seed +28、published gate 0 error。
+- 封面：CAA 27、Apple 1（Lalah Hathaway《Self Portrait》，`apple-verified-collection`），主線縮圖表逐張目視、live-check 全 200（New Life CAA 一度逾時，重測 200）。上線前對 origin 近 40 個 `claude/*` 分支 seed＋卡單去重 0 撞。
+- 冷門軸：機器基線（Last.fm listeners 2,286–173,040），未人工改。
+- 類型樹：Last.fm 標籤 28/28 有值；重建後 2 張未落位（Brownstone《Still Climbing》、Frank McComb《Love Stories》），`genre-l3-artist-map.json` 補 `soul/classic-rnb/neo-contemporary`、`soul/neo-soul` 各 1，重建後 28/28 落位；抽卡封面重建。
+
+## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-ml49/`）
+- 照 10-23 體感標準評分（conf mid 18、low 10）。**上線 28；落恍惚 28/28＝100%**。評分 x 2.2–2.7、y 0.7–1.0、z 1.0–1.7——BRIEF 質地規則 (3)「慢板靈魂／quiet storm 的厚低頻與溫熱混響算重」穩定把這型送進恍惚；y 下緣 0.7 離格線 0.5 有 0.2 餘裕。
+- 八格（build-card-moods 後）：恍惚 1,422、冷冽 1,429、頹靡 1,433。
+- 產量：策展 53、主線汰 1、研究汰 17 → 28。**主場景頭牌（Jodeci、H-Town、Shai、Jade、Dru Hill、Blackstreet、Keith Sweat、Joe、112 等）池中多判輕，二線 new jack 合唱團研究層一查多半快慢各半**；能穩收的是 quiet storm 成人抒情歌手（Chanté Moore、Regina Belle、Will Downing、Kenny Lattimore、Lalah Hathaway）與 2000s 慢板 neo-soul 後裔（DeVaughn、Glenn Lewis、McComb、Ambrosius）。同場景下一批若再派，只收成人抒情與慢板 neo-soul，new jack 團體不收；ml49 主場景見底。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Intro、Brownstone、Aaron Hall、Case、Dave Hollister、Gerald Levert、Kenny Lattimore、Chanté Moore、Kenny Lattimore & Chanté Moore、Regina Belle、Will Downing、Miki Howard、Angela Winbush、Lalah Hathaway、Raheem DeVaughn、Marsha Ambrosius、Glenn Lewis、Frank McComb（18 個掛名；`data/artist-intros` 與 progress.json 皆無）

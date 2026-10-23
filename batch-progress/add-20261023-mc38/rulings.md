@@ -106,3 +106,17 @@
 - **20272** `desc2:Aki Takase & Alexander von Schlippenbach|Four Hands Piano Pieces`：刪「〈Stoneblock〉兩首被比作 Nancarrow 的自動鋼琴曲。」（單一樂評比喻）。
 - **20273** `desc2:Aruán Ortiz|Cub(an)ism`：刪「最長的〈Cuban Cubism〉被連到古巴畫家 Wifredo Lam 的〈叢林〉」（單一樂評的聯想），〈Monochrome (Yubá)〉句改「整首停在一個反覆敲擊的音上」。
 - 其餘 24 張逐張審過，未改字。qa-batch out、qa-check-research（兩檔 0）、fix-spacing（0）、chk-hook-crossgroup 重跑全過。
+
+## 上線（不佔條號）
+- 上線 27：card_catalog 27/27、KV 27 鍵回讀逐字一致、試聽 18 ready（9 張 Apple 查無：Shipp《2-Z》《Circular Temple》《Symbolic Reality》《Magnetism》、Crispell & James、Van Hove、Parker & Fernández、Rigler & Fernández、Maroney——藝人目錄 lookup 亦無）、seed +27、published gate 0 error。
+- 封面：CAA 18、Apple 6（`apple-verified-collection`：《Symbol Systems》《The Piano Equation》《Signs and Epigrams》《Time Gone Out》《Music for Violin and Piano》《Twelve Tone Tales Vol. 1》）、Discogs 3（《Magnetism》4504830、《And Your Ivory Voice Sings》573522、《Mandorla》2801532，已登錄 registry 390 筆並重繪 DISCOGS-COVERS.md）；主線縮圖表逐張目視、live-check 全 200。上線前對 origin 近 40 個 `claude/*` 分支 seed＋卡單去重 0 撞。
+- 冷門軸：機器基線（Last.fm listeners 0–1,756，obscurity 全 5），未人工改。
+- 類型樹：Last.fm 8 張無標籤，重建後 8 張未落位，`genre-l3-artist-map.json` 的 `jazz/free/avant` 補 6、`jazz/free/free-improv` 補 2，重建後 27/27 落位；抽卡封面重建。
+
+## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-mc38/`）
+- 照 10-23 體感標準評分（conf mid 19、low 8）。**上線 27；落冷冽 27/27＝100%**。評分 x 3.0–3.9、y −1.3～−0.3、z −1.8～−1.2。
+- 八格（build-card-moods 後）：恍惚 1,422、冷冽 1,429、頹靡 1,433。
+- 產量：策展 54、主線留候補 9、研究汰 18（現場 3、旋律清楚判暖 8、留白判靜 3、鼓組全力合奏判重 3、掛名 1）→ 27。**原聲前衛鋼琴小編制是冷冽的穩池**：Shipp 獨奏／二重奏／弦樂三重奏、Courvoisier、Crispell 小編制、Intakt／hatOLOGY／Leo 系獨奏全中；研究層要擋的是「抒情改編」（Kris Davis Kern、Fernández 西班牙鋼琴曲、Ortiz 借曲）與「現場」。x 下緣 3.0 剛好過線的是留白型獨奏，不能再收更靜的。Cecil Taylor 主盤已在池（剩下多是現場），主場景見底。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Matthew Shipp、Matthew Shipp Duo with William Parker、Matthew Shipp Duo with Roscoe Mitchell、Matthew Shipp “String” Trio、Matthew Shipp String Trio、Matthew Shipp Duo、Matthew Shipp Trio、Marilyn Crispell / Doug James、Barry Guy / Marilyn Crispell / Paul Lytton、Sylvie Courvoisier、Sylvie Courvoisier & Mark Feldman、Sylvie Courvoisier - Mark Feldman Quartet、Mark Feldman & Sylvie Courvoisier、Aki Takase & Alexander von Schlippenbach、Fred Van Hove、Evan Parker & Agustí Fernández、Agustí Fernández / Barry Guy、Jane Rigler & Agustí Fernández、The Angelica Sanchez Trio, Michael Formanek, Tyshawn Sorey、Alexander Hawkins、Aruán Ortiz、Denman Maroney（22 個掛名）

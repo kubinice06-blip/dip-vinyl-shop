@@ -71,8 +71,8 @@
 | 47 | mc37 | EAI／onkyo／電聲即興（AMM、Keith Rowe、Sachiko M、Otomo 電聲期、Toshimaru Nakamura；安靜但讓神經繃緊的算躁） | 派→情緒薄格 ml46、mc37（第 10 輪） |
 | 48 | ml47 | chillhop／jazzhop 第二波（Chillhop Records、Bonus Points、Philanthrope、Psalm Trees、Saib、L'Indécis）＋ 日韓 lo-fi beat tape ＋ ml42 剩餘 | 派→情緒薄格 ml47、ml48（第 10 輪） |
 | 49 | ml48 | dub 第三波：Wackies／Bullwackie 紐約慢盤、Lee Perry 周邊、Prince Jammy、Niney、Joe Gibbs／Errol Thompson、Linval Thompson | 派→情緒薄格 ml47、ml48（第 10 輪） |
-| 50 | ml49 | 90s R&B slow jam／ballad 二線（ml6 收 40 張、高產；Jodeci、Silk、H-Town、Intro、Shai、Changing Faces 系慢歌） | 派→情緒薄格 ml49、mc38（第 10 輪） |
-| 51 | mc38 | 前衛爵士鋼琴緊繃那路（Cecil Taylor 獨奏、Matthew Shipp、Sylvie Courvoisier、Kris Davis、Marilyn Crispell、Alexander von Schlippenbach） | 派→情緒薄格 ml49、mc38（第 10 輪） |
+| 50 | ml49 | 90s R&B slow jam／ballad 二線（ml6 收 40 張、高產；Jodeci、Silk、H-Town、Intro、Shai、Changing Faces 系慢歌） | ✅ 上線 28／落格 28 |
+| 51 | mc38 | 前衛爵士鋼琴緊繃那路（Cecil Taylor 獨奏、Matthew Shipp、Sylvie Courvoisier、Kris Davis、Marilyn Crispell、Alexander von Schlippenbach） | ✅ 上線 27／落格 27 |
 | 52 | ml50 | 暖 drone／厚墊 ambient（Celer、Chihei Hatakeyama、Taylor Deupree 暖盤、Benoît Pioulard、Hotel Neon；旋律要聽得出來） | |
 | 53 | md27 | 暗色現代古典慢板厚弦（Górecki、Kancheli、Vasks、Penderecki 慢作、Silvestrov 冷盤；要往下壓） | |
 
@@ -155,7 +155,7 @@
 | mc35 | 13721 | RIO／前衛搖滾尖細那半（Henry Cow、Art Bears、Etron Fou Leloublan、Thinking Plague、Univers Zero 薄盤） | 併入 mc33（Henry Cow、Art Bears、Étron Fou ×3、Skeleton Crew、5uu's ×2、Doctor Nerve、Yugen 落冷冽；Cassiber 與 Thinking Plague《In Extremis》判重） |
 | mc36 | 19641 | no wave／薄而尖的 noise rock（DNA、Mars、Teenage Jesus、Theoretical Girls、Glenn Branca 早期、Ut、Sonic Youth 最早期；厚牆轟炸落暴躁） | ✅ 上線 20／落格 18（2026-10-23；策展 39、主線汰 7、研究汰 12；no wave 本體多 EP，主力改 Downtown 即興；帶吉他的 Mars＆DNA、Ut 判重落暴躁；不再派） |
 | mc37 | 19881 | EAI／onkyo／電聲即興（AMM、Keith Rowe、Sachiko M、Otomo 電聲期、Toshimaru Nakamura） | 派→情緒薄格 ml46、mc37（第 10 輪） |
-| mc38 | 20201 | 前衛爵士鋼琴緊繃那路（Cecil Taylor 獨奏、Matthew Shipp、Sylvie Courvoisier、Kris Davis、Marilyn Crispell、Schlippenbach） | 派→情緒薄格 ml49、mc38（第 10 輪） |
+| mc38 | 20201 | 前衛爵士鋼琴緊繃那路（Cecil Taylor 獨奏、Matthew Shipp、Sylvie Courvoisier、Kris Davis、Marilyn Crispell、Schlippenbach） | ✅ 上線 27／落格 27（2026-10-23；策展 54、研究汰 18：現場 3、旋律清楚判暖 8、留白判靜 3、鼓組合奏判重 3、掛名 1；原聲前衛鋼琴小編制全中，Cecil Taylor 剩現場盤，主場景見底） |
 
 ## 恍惚 ml（靜＋重＋暖；門檻 x ≤ 2.7、y ≥ +0.8、z ≥ +0.3）
 
@@ -211,5 +211,5 @@
 | ml46 | 19801 | 暖的 neoclassical／post-classical 弦樂＋鋼琴厚墊（獨奏鋼琴偏輕不收） | 派→情緒薄格 ml46、mc37（第 10 輪） |
 | ml47 | 19961 | chillhop／jazzhop 第二波（Chillhop Records、Bonus Points、Philanthrope、Psalm Trees、Saib、L'Indécis）＋ 日韓 lo-fi | 派→情緒薄格 ml47、ml48（第 10 輪） |
 | ml48 | 20041 | dub 第三波：Wackies／Bullwackie 紐約慢盤、Lee Perry 周邊、Prince Jammy、Niney、Joe Gibbs／Errol Thompson、Linval Thompson | 派→情緒薄格 ml47、ml48（第 10 輪） |
-| ml49 | 20121 | 90s R&B slow jam／ballad 二線（Jodeci、Silk、H-Town、Intro、Shai、Changing Faces 系慢歌） | 派→情緒薄格 ml49、mc38（第 10 輪） |
+| ml49 | 20121 | 90s R&B slow jam／ballad 二線（Jodeci、Silk、H-Town、Intro、Shai、Changing Faces 系慢歌） | ✅ 上線 28／落格 28（2026-10-23；策展 53、主線汰 1、研究汰 17：new jack 中快板／乾淨數位製作；頭牌池中判輕，收 quiet storm 成人抒情與 2000s 慢板 neo-soul，主場景見底） |
 | ml50 | 20281 | 暖 drone／厚墊 ambient（Celer、Chihei Hatakeyama、Taylor Deupree 暖盤、Benoît Pioulard） | |

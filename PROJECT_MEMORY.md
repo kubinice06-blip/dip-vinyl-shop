@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 10 輪 ml49／mc38：90s R&B 慢歌二線 28 張、前衛爵士鋼琴 27 張上線，落格 28/28、27/27
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 10 輪，本工作階段負責 ml49、mc38（評分照 10-23 體感標準）。ml49（`add-20261023-ml49`，恍惚：90s R&B slow jam／quiet storm 成人抒情二線＋2000s 慢板 neo-soul）：Intro《New Life》、Silk《Tonight》、Brownstone《Still Climbing》、Aaron Hall《Inside of You》、Case《Personal Conversation》、Dave Hollister ×2、Gerald Levert ×2、Kenny Lattimore ×2、Chanté Moore ×3、Lattimore & Moore、Regina Belle ×2、Will Downing、Phyllis Hyman、Miki Howard、Angela Winbush、Lalah Hathaway ×2、Raheem DeVaughn ×2、Marsha Ambrosius、Glenn Lewis、Frank McComb。mc38（`add-20261023-mc38`，冷冽：前衛爵士鋼琴緊繃那路）：Matthew Shipp ×10（獨奏、與 Parker／Mitchell／Morris 二重奏、弦樂三重奏 ×3、Trio、《Magnetism》）、Crispell & James、Guy／Crispell／Lytton《Ithaca》、Courvoisier ×4、Kris Davis《Massive Threads》、Schlippenbach《Twelve Tone Tales Vol. 1》、Takase & Schlippenbach、Van Hove、Fernández ×3、Sanchez Trio、Hawkins、Ortiz《Cub(an)ism》、Maroney《Hyperpiano》。
+- **策展→研究汰換**：ml49 策展 53、主線汰 1（Rome 同名不同人）、研究汰 17（new jack 中快板、乾淨數位鼓機、alt R&B 陰冷、無聲音來源）→ 28；mc38 策展 54、研究汰 18（現場 3、旋律清楚判暖 8、留白判靜 3、鼓組全力合奏判重 3、掛名 1）→ 27。兩批候補都帶同型風險，不補位、照實上架。
+- **主線審稿**：ml49 改 5 處（單源評價句刪 3、Reachin' Back「費城靈魂樂」與 Al Green 矛盾改寫、Gerald's World 補榜名）；mc38 改 3 處（Expansion hook「被樂評比作」改編制事實，hooks／input 同步；單源比喻 2 句刪）。
+- **上線**：card_catalog 28＋27、KV 55 鍵回讀逐字一致、試聽 27＋18 ready、seed +55、published gate 兩批 0 error；封面 CAA 45、Apple 7、Discogs 3（registry 390 筆），live-check 全 200、目視相符。上線前對 origin 近 40 個 `claude/*` 分支 seed＋卡單去重 0 撞。
+- **情緒評分**：`score-ml49`、`score-mc38`。**ml49 落恍惚 28/28（100%）**、**mc38 落冷冽 27/27（100%）**。八格：恍惚 1,422、冷冽 1,429、頹靡 1,433。
+- **類型樹**：Last.fm 無標籤或推不出節點 10 張，`genre-l3-artist-map.json` 補 soul 2、jazz/free 8，重建後 55/55 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 40 個掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{ml49,mc38}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml49,mc38}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml49,mc38}/`、`onboarding-manifest-add-20261023-{ml49,mc38}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml49,mc38}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 55/55；build-card-moods 錨點 104/104。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格線第 10 輪派工：優先序 46–53
 
 - **起因**：第 9 輪三個工作階段全部收工（ml42 26／26、ml45 17／17、ml43 21／17、mc36 20／18、ml44 10／9、md26 28／28，上線／落格）。恍惚約 1,394、頹靡約 1,433，恍惚仍最薄。
