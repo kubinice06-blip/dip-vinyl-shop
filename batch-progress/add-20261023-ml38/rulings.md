@@ -87,3 +87,19 @@
 - **19063** 日期＋領頭名詞逐張配死：本作年出版／Moodisc 於年推出／唱片年問世／版本…年份是年／原版 LP／單曲年一推出／LP 年交由／年在英國廠牌上市／英國於年發行／地點…時間是年／年，他在自家廠牌／原盤年掛／英國的 Trojan 讓它年上架。
 - **19064** note 外的取捨：Wade note 的「栽培一說出自 Jean Williams」不進正文（屬消息來源交代；hook 已直述栽培一事，正文不掛出處）。Jah Fire 的曲目歸屬寫「哪幾首歸他，說法並不一致」，不點各家媒體名。全檔不出現媒體名、媒體榜單名次、「據說／據傳」；樂評內容只寫成「樂評形容」「被形容得」。Mudie Vol.1 不寫 Tubby 本人坐檯（研究層存疑格）。
 - **19065** 自掃：檔內跨張中文 4-gram 0；對 writer-2 卡單的 hook＋note 預掃，先拆掉 2 張的通用殘片「伴奏混音」「英國發行」「在牙買加」「牙買加的」「從牙買加」（先交件一方按 3 張處理）。`node qa-batch.mjs out add-20261023-ml38`：out-1 13 張 141–239、thin 7 張全 ≤180（僅報總張數 13 vs 26，待 out-2）；`qa-check-research` 標記 0；`fix-spacing` 待補 0。輔助腳本：scratchpad `wr-ml38-1/`（gen-ml38-1.py、chk-ml38-1.mjs）。
+
+## 寫作層（writer-2）（19066–19070）
+- **19066** 交件：`desc-tools/batches/output/add-20261023-ml38-out-2.json`（13 張，key 逐字同序）。字數（Array.from）：Princess Lady 226｜Spread Out 238｜Tyrone Evans（thin）152｜Visions of John Clarke 238｜I Love Jah（thin）174｜Roll On（thin）166｜Life Is for Living（thin）168｜Sandra Cross Dub Showcase（thin）177｜Susan Cadogan Dub Showcase（thin）165｜Chip In 218｜Roots and Branches（thin）151｜Dubd'sco Vol. 1 225｜Serious Reasoning 205。full 6 張 205–238、thin 7 張 151–177。初稿 2 張出界，整格處理：Spread Out 249（砍「重發」二字與「三個版本背後」整句改成 Bunny Lee 經手製作）、Sandra 194（捨「廠牌賣得好的幾張之一」——hook 已說拉抬銷量，留著等於複述）。
+- **19067** 第二句照 19053／19058 配表逐張走：廠牌關係／生年＋城市＋樂種／所屬老團／移居紐約／和聲資歷／組團資歷／出道年／樂種地位／成名曲與榜位／童年玩伴／嗓音／各自開廠牌／出道場所。hook 代稱具名：Tyrone 的「廠主」＝Lloyd Barnes；Cadogan 的「當中一首」＝〈You Turn Me On〉；Sandra 的《Country Life》補年代與製作人；Prophet 的翻唱補曲名〈Fight It To The Top〉；Dubd'sco 的「他」由第二句 Bunny Wailer 領句。hook 只帶代稱、身分沒寫出的兩張補身分詞：Roots and Branches、Life Is for Living 各加「歌手」，Cadogan 也加「歌手」（皆不出 note 範圍）。
+- **19068** 日期＋領頭名詞逐張配死（han() 剝數字與拉丁後實測）：年交出（Castell）／年這批歌先在（Carlos）／Wackie's 在年把這張（Evans）／本作在年面世（Clarke）／年錄成（Meditations）／發行本作是年的事（Alphonso）／Ariwa 在年的出品（Life）／年的《…》共收（Sandra）／年本作問世（Cadogan）／年本作交由…於英國出版（Chip In）／年由 Ariwa 出版（Roots）／由 Solomonic 在年發行（Dubd'sco）／年英國讓這張出道作上市（Prophet）。「日」全批未出現。
+- **19069** note 範圍與禁區：媒體名、媒體榜單名次一律未寫（note 本就無；Roots 的「顫抖假音」出自轉載短評，寫成直述、不掛出處）。保留兩個榜：Cadogan「英國單曲榜第 4 名」（官方榜）、Life「〈Skylarking〉登上牙買加榜首」（note 指派、未具名媒體，屬銷售／播放榜而非媒體選單；主線若判為媒體榜可整句刪，刪後 168→約 150 仍在 thin 帶內）。Clarke「與 Johnny Clarke 是兩個人」寫成正面句。無「據說／據傳」、無否定句；QA 互指 1 處（Dubd'sco 的 Bob Marley）為本卡 note 事實，同 19059 保留。
+- **19070** 自掃：與 out-1 合掃（writer-1 已定稿）跨張中文 4-gram 0；途中拆掉「京斯敦的」「在京斯敦」「牙買加的」「在年推出」「的製作人」「本作在年」「他自己的」「發行本作」「推出七首」「英國發行」「於年發行」「是錄音室」「製作人是」「掛名製作」「英國廠牌」「在年發行」「擔任製作」「牙買加和聲團」「歌手在年」等殘片（一律整個名詞換掉）。對池中既有 add-2026102* out 的命中只剩通用語（「第二張專輯」「錄音與混音」「薩克斯風」等），同藝人舊卡（ml1／ml9／ml32／c57）開頭句型 0 撞。`node qa-batch.mjs out add-20261023-ml38`：全部通過（out-2 151–238）；`qa-check-research`：標記 0；`fix-spacing`：0 處。輔助腳本：scratchpad `wr-ml38-2/`（draft-ml38-2.mjs、scan-ml38-2.mjs）。
+
+## 主線審稿（19071–19080；2026-10-23）
+- 19071：逐張審 26 張（out-1 13、out-2 13），逐句對回研究稿；事實層未改，改的是單源評價句與無法核實的數字。hook 未動，research／hooks／input 不需同步。
+- 19072：改 3 處：
+  - `Hugh Mundell|Jah Fire`：刪「Mundell 唱的標題曲，用的是 Jammy 最好的節奏之一。」（唯一來源是 Global Groove 零售頁的評價句）→ 207 字。
+  - `Barry Brown|Far East`：「〈Step It Up Youthman〉讓 Barry Brown 在 1979 年成名，他也被視為早期 dancehall 最成功的歌手之一。」→「〈Step It Up Youthman〉讓 reggae 歌手 Barry Brown 在 1979 年成名。」（「最成功的歌手之一」只有維基單源評價）→ 212 字。
+  - `Horace Andy|Life Is for Living`：「《Mezzanine》裡有五首由他主唱，〈Angel〉也在其中。」→「《Mezzanine》的〈Angel〉就是他唱的。」（「五首」只見維基一處，《Mezzanine》署名主唱與此不符，拿掉數字）→ 161 字。
+- 19073：未改但記錄——Viceroys〈They Can't Stop Us Now〉「又硬又重」是樂評部落格的聲音描述（非評價），保留；Horace Andy〈Skylarking〉牙買加榜首屬銷售榜、未點名媒體，保留；Tyrone Evans 封面用圓標（原盤 Wackie's 通用封套）。
+- 19074：上線前檢查——`qa-batch out`、`qa-check-research`（兩檔各 0 標記）、`fix-spacing`（0）全過。
