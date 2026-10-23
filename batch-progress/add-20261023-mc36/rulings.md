@@ -110,3 +110,19 @@
 - **19714** `desc2:Lithics|Mating Surfaces`：刪「嚴厲而可以跳舞，是它得到的評語」（單一樂評引語；刪後 148 字，thin 帶內）。
 - 核過的事實：《John Gavanti》改寫《唐喬望尼》與 Sear Sound 真空管錄音、Ut 1981 遷倫敦、《Pool》Parachute 私壓 1000 張、《Yankees》Celluloid 1982、《Ganryu Island》1984-11-23 錄音、《School》實為五人〈Lacrosse〉WKCR 錄音、Cobra 1984-10-09 寫成與 hat ART 雙 LP、TOTE 1 對應氫、Zs 托盤叮嚀與兩回錄音日期。
 - 其餘 16 張逐張審過，未改字。qa-batch research／hooks／out、qa-check-research（兩檔 0 標記）、fix-spacing 重跑全過。
+
+## 上線（不佔條號）
+- 上線 20：card_catalog 20/20、KV 20 鍵回讀逐字一致、試聽 12 ready（主線人工配對 4：Zorn《Pool》、《Classic Guide》兩集取 Tzadik 合輯不同軌、Ostertag《Say No More, Vol. 1》；其餘 8 張 Apple 查無）、seed +20、published gate 0 error。
+- 封面：CAA 16、Discogs 3（《John Gavanti》404849、《Cargo Cult Revival》1003533、《Nightmare Alley》661500，已登錄 registry）、Apple 1（《Say No More》），主線逐張目視、live-check 全 200。上線前對 origin 近期 `claude/*` 分支去重 0 撞。
+- 冷門軸：Lithics《Borrowed Floors》Last.fm 349 與同團 22,753 落差 → 人工 4（`ratings-override.json`）。
+- 類型樹：4 張 Last.fm 無標籤（《Yankees》《Environment for Sextet》《Cargo Cult Revival》《Attention Span》）seed 曲風欄補 jazz（Attention Span 加 electronic），`genre-l3-artist-map.json` 的 `jazz/free/free-improv` 補 3 張、`jazz/free/avant` 補 1 張；重建後 20/20 落位，抽卡封面重建。
+
+## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-mc36/`）
+- 照 10-23 體感標準評分（conf mid 7、low 13）。**上線 20；落冷冽 18/20＝90%**。
+- 出格 2 張都判重落暴躁（y 1.0）：Mars & DNA《John Gavanti》（評分者聽成噪音吉他＋嘶喊；研究稿為大提琴、低音號、長號）、Ut《Conviction》（不和諧噪音吉他交纏）——**no wave 本體帶吉他的盤照舊判重**，與池中 Branca、早期 SY、Contortions 同型。
+- 落冷冽的是 Downtown 即興（Zorn 遊戲曲與獨奏、Bailey／Lewis、Moss、Cora、Ostertag 取樣拼貼）與乾瘦後裔（Lithics、Zs、Cheval de Frise 尼龍弦吉他），x 3.2–4.2、y −1.4～+0.3；獨奏與稀疏型 x 3.2–3.3 剛好過線。
+- 八格（評分後）：恍惚 1,285、冷冽 1,447、頹靡 1,430。
+- 產量：策展 39、主線汰 7、研究汰 12 → 20。no wave 本體多是 EP／彙編，主力改 Downtown 即興；研究汰換主因是鼓組＋貝斯（判重）與現場。**下一批冷冽同型可收 Downtown 即興／Tzadik 早期與無貝斯的尖細後裔，帶失真吉他的 no wave 不收**；mc36 主場景見底，不再派。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Mars & DNA、Ut、Derek Bailey, George Lewis & John Zorn、John Zorn & Sato Michihiro、Eugene Chadbourne & John Zorn、Polly Bradfield, Andrea Centazzo, Eugene Chadbourne, Tom Cora, Toshinori Kondo, John Zorn、David Moss、Tom Cora, David Moss、Zeena Parkins、Ostertag with Zorn with Frith、Bob Ostertag、Lithics、Zs、Cheval de Frise（14 個掛名）

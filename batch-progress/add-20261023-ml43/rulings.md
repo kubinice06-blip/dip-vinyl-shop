@@ -103,3 +103,18 @@
 - **19471** `desc2:Immanu El|They’ll Come, They Come`：刪「樂評聽出電影感的 post-rock，Claes 的人聲夾在樂器之間，收尾的〈...In Valleys〉壯闊而優雅。」（單一部落格樂評 ITSATRAP 的評價句；刪後 177 字，qa 通過；事實刪減，研究層無須同步）
 - 核過的事實：Alex Somers 1984 生於巴爾的摩、Willits 學歷與 Mills College 指導老師、Hugar 首作鼓手 Arnalds、Epic45 第五張與村民會堂錄鼓、Lights & Motion《Chronicle》為第三張（2013、2014、2015）、Dave Cooley 母帶、Rhian Sheehan 弦樂錄於 Stella Maris Chapel、Olan Mill 兩場現場多軌重組。
 - 其餘 20 張逐張審過，未改字。qa-batch out、qa-check-research（0 標記）、fix-spacing 重跑全過。
+
+## 上線（不佔條號）
+- 上線 21：card_catalog 21/21、KV 21 鍵回讀逐字一致、試聽 19 ready（主線人工配對 1：Rhian Sheehan《Standing in Silence》Pt.／Part 寫法不同；Immanu El《Moen》、Olan Mill《Paths》Apple 查無）、seed +21、published gate 0 error。
+- 封面：CAA 20、Apple 1（Mountains《Choral》CAA front 與 front-500 連續 500，改已釘定試聽的 Apple 圖），live-check 全 200。上線前對 origin 所有近期 `claude/*` 分支 seed＋卡單＋curation 去重 0 撞。
+- 冷門軸：Jónsi & Alex《Lost and Found》Last.fm 117 疑查錯實體 → 人工 3；Immanu El《They’ll Come, They Come》163 與同團 23,859 落差 → 人工 4（`ratings-override.json`）。
+- 類型樹 21/21 落位；抽卡封面重建。
+
+## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-ml43/`）
+- 照 10-23 體感標準評分（conf high 2、mid 11、low 8）。**上線 21；落恍惚 17/21＝81%**。
+- 出格 4 張全判輕落放鬆（y 0.3–0.4）：Eluvium《Copia》（鋼琴銅管旋律清楚、殘響適中）、Christopher Willits《Surf Boundaries》（切碎吉他明亮、輕拍）、Hugar 首作（鋼琴弦樂主旋律）、Rhian Sheehan《Standing in Silence》（音樂盒鐘琴、輕電子拍）。**暖 post-rock 的風險在質地不在色溫**：色溫全落 0.1–0.8 暖側，但鋼琴／鐘琴旋律在前、牆不夠厚的判輕；落恍惚的是吉他回授柔牆、磁帶長音、殘響吉他＋鼓機厚墊（American Dollar、Immanu El、Epic45）。
+- 八格（評分後）：恍惚 1,285、冷冽 1,447、頹靡 1,430。
+- 產量：策展 40、主線汰 4、研究汰 15 → 21。研究汰換主因：樂評字眼偏冷（glacial、despair、mournful）、鼓＋漸強爆發、乾淨鋼琴／弦樂四重奏為主。**暖 post-rock 主場景已見底**（池中頭牌已收、二線多偏冷或偏輕），ml43 不再派。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Hammock、Eluvium、Jónsi & Alex、Mountains、Christopher Willits、Hugar、The American Dollar、Immanu El、Epic45、Rhian Sheehan、Lights & Motion、Olan Mill（12 個掛名）
