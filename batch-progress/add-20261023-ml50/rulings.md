@@ -12,6 +12,18 @@
 - 池中同人：Hollie Cook 4 張、Easy Star《Dub Side of the Moon》、Trinity Roots 2 張、The Orb 5/7 落恍惚；Cortini《Sonno》、Cantu-Ledesma《13 Moons》落頹靡（本批兩人選的是更暖的盤，研究層查色溫）。
 - 研究層重點：main 的 drone 盤 z 貼邊風險（Celer、Pioulard、Marcus Fischer、Dettinger、Triola、Hotel Neon）——**樂評或廠牌出現 cold／dark／bleak／glacial／mournful／elegiac 的列 moodGuess 存疑**；ext-b 查 dub 低頻證據、是否有 breaks／舞池推進、是否乾淨數位。
 
+## 研究 a 組
+- 20281：Hotel Neon《Context》推翻策展層廠牌：首發是 Fluid Audio（UK，040，限量 300 CD），不是 Archives；Archives 是後兩張。label 欄改 Fluid Audio。moodGuess 存疑：Star's End 寫 introspective and somewhat dark、threatening forces（ambientblog 反說 not necessarily dark）。
+- 20282：Hotel Neon《Means of Knowing》聲音證據薄（樂評全文 403），status thin。moodGuess 存疑：Archives 標籤含 IDM、dub techno，可能有脈動，來源未證實。
+- 20283：Hotel Neon《Vanishing Forms》moodGuess 不存疑：Fluid Radio 無鼓（rhythm without percussion）、低頻搏動、calm／sanctuary，無冷字眼。
+- 20284：Celer《Engaged Touches》身分保留（Home Normal n002，2009-04-17，錄音 2006-06 與 2008-05）。Danielle Baquet-Long 2009-07-08 辭世，歸「與作品綁定可寫」，寫作層標時序、克制。moodGuess 輕度存疑：樂評 haunting，曲名偏哀。
+- 20285：Celer《Two Days and One Night》推翻策展層「日本旅行」：題材是突尼西亞（舅公 1984 年 Hammamet 溺亡、2015 年重走路線），東京只是錄音地之一。卡單 label 空白可補 Sequel（SQ05）。moodGuess 存疑：以家人之死為題、短場景錄音多。
+- 20286：Pioulard《Sonnet》moodGuess 存疑（中度）：Drowned in Sound 寫 melancholic、forlorn、murkier side；Fluid Radio 寫 warm、cosy；The Skinny 寫重度延遲與失真。三篇皆未提鼓。
+- 20287：Pioulard《Lignin Poise》label 以 Beacon Sound（BNSD022）為主、Disques d'Honoré 為共同；錄音含人聲與貝斯，shoegaze 取向，moodGuess 輕度存疑。
+- 20288：Green Kingdom《Expanses》曲名全 Untitled。moodGuess 存疑：向 ambient techno 致意、Discogs 風格含 Dub Techno，是否有拍子未證實；樂評全文找不到，status thin。
+- 20289：Green Kingdom《Incidental Music》moodGuess 存疑：廠方明講原聲吉他是核心、含 percussive sounds，y 有判輕風險（與 curatorRisk 吻合），建議列汰換候補；status thin。
+- 20290：a 組整體：無任何來源出現 cold／bleak／glacial／ominous 逐字；WebSearch 用 3 次。Pitchfork、Headphone Commute 擋抓取，Pitchfork 評語僅採 Beacon Sound 頁面引述。
+
 ## 研究 e 組
 - 20321：Entheogenic《Spontaneous Illumination》身分保留。MB／Discogs／維基三方：2003-06 Universal Symbiosis 先發，2003-11 C.O.R.N. Recordings 實體 CD；寫作層寫「2003 年」，廠牌不點名或並列。dub 證據只有 Discogs 風格標籤與重發版 psydub 標籤，無樂評，status partial。
 - 20322：Shulman《In Search of a Meaningful Moment》身分保留（Aleph Zero，2003-12-17 以色列版；2012 數位版 Bandcamp 日期不採）。Bandcamp 描述是迷幻 downtempo、催眠節拍、原聲樂器，無吉他、無 dub 低頻說法，Dub 只在 Discogs 標籤；moodGuess 列存疑，status partial。
