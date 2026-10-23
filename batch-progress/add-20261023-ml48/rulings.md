@@ -69,3 +69,26 @@
 - **20103** 自掃 han() 4-gram（本檔＋writer-2 現行 out 5 張）：拆掉本檔內「在金斯敦」「全是人聲」×2（Noel 改「金斯敦長大」「清一色人聲」），與 writer-2 的 2 張殘片「的第一號」（Love Joys 改「計畫便從它起頭」）、「的牙買加」（Audley 改「牙買加 reggae 歌手」）、「交給發行」（Noel 改「掛在 Jammy's Records 名下出版」）；定稿與 writer-2 交齊的 6 張合掃，2 張以上 0 條。另把 Love Joys 的「放下唱針」改掉（ml1 hook 用過「唱針放下」）。
 - **20104** note 外不補：Love Joys 只寫「二重唱」不寫女聲／表姊妹（20094 避撞池中《Reggae Vibes》）；Audley 只寫錄音進 Wackie's，不寫 Bullwackie 掛工程、Frano's；I Kong 製作只寫執行製作 Mikey Lee、Perry 只寫列在工程名單；Noel 不寫 1980／Starlight，〈Lazy Body〉標 1985 時序一句。媒體名、榜單、轉述引導詞 0。
 - **20105** 輔助腳本：scratchpad `wr-ml48-1/`（ml48-1-gen.mjs、ml48-1-len.mjs、ml48-1-scan.mjs）。
+
+## 寫作層（writer-2）（20106–20110）
+- **20106** 交件：`desc-tools/batches/output/add-20261023-ml48-out-2.json` 6 張（full 5：216–239；thin 1：Jah Love 180）。逐張：No More Friend 217｜Barry 216｜More She Love It - Showcase 239｜Prison Life 232｜Wise Man 237｜Jah Love（thin）180。`qa-batch out add-20261023-ml48`：12 張全部通過 ✓（out-1 177–239、out-2 180–239）；`qa-check-research` 標記 0；`fix-spacing` 0。初稿 5 張超標（Delgado、Devon 各 259，Winston 246，Barry 241，Jah Love 203），一律整格縮寫或捨去：Delgado 拿掉「到了」「兩人分擔」、Pablo 改「彈鋼琴」；Devon 盤名改「本作」、錄音句併成「在 Aquarius 錄音」；Winston 拿掉「該廠牌」、錄混音句改並列；Barry 拿掉「英國廠牌」「替他」；Jah Love 拿掉 Henry 與綽號引號、「1980 年代」改「八〇年代」、Junjo 句縮短。Meditations 拿掉自加的「整盤的重心落在這支樂團身上」（note 外的框架語）。
+- **20107** 第二句全照鉤子層 20095 配表：三位成員名（Meditations）／嗓音與歌詞題材（Barry）／本名＋歌手身分（Delgado）／Tartans 團名領句（Devon）／出生地聖安娜教區（Winston）／替多家製作人錄音（Prophet）。日期只寫到年；年前一字與年後一字逐張不同（年 Linval 替／年代末離開＋年由英國／年在 DEB＋年他進／年代待過＋年份是／年生＋年代初＋年經＋年同一批／年代前半＋年交）。
+- **20108** 自掃 han() 4-gram：本檔 6 張＋writer-1 定稿 6 張合掃，2 張以上 0 條（第一輪即 0）。另對 add-2026102[0-3] 既有 out 降低高頻通用串：Barry「擔任製作」（池中 16 張）「於年發行」（11）改「製作人是…，1983 年由英國的 Vista Sounds 推出」；Devon「唱片在年問世」（14）改「發行年份是 1983 年」。
+- **20109** note 照辦：Meditations 的評論觀察寫成直述（Style Scott 鼓有分量、Flabba Holt 低音持續震動），不具名、不用「有評論」轉述引導，hook 已交代的「沒有迪斯可化」不重述；Devon 寫「Roots Radics 的創團班底」兩人，不寫成 Radics 伴奏；Prophet 製作人寫 Junjo Lawes（不帶 Henry 與綽號引號，字數）。媒體名、榜單名次、「據說／據傳」0。
+- **20110** 輔助腳本：scratchpad `wr-ml48-2/`（ml48-2-scan.mjs：長度帶＋hook 首句＋兩檔合掃＋近期 out 高頻串）。
+
+## 主線審稿（20111–20120；2026-10-23）
+- 20111：逐張審 12 張（out-1 6、out-2 6），逐句對回研究稿 facts；qa-batch out、qa-check-research（兩檔）、fix-spacing 皆 0 標記；正文無媒體名、無榜單名次、無「據」字。
+- 20112：改 2 處：
+  - `Barry Brown|Barry`：「他在 1970 年代末離開 King Tubby 的團隊，成了那裡的首席工程師」→「Scientist 在 1970 年代末離開 King Tubby 的團隊，成了 Channel One 的首席工程師」——原句主詞「他」緊接在 Barry Brown 介紹之後，讀起來像在講歌手，事實屬於 Scientist（研究 d 組）→ 236 字。
+  - `The Meditations|No More Friend`：刪「Style Scott 的鼓聲依舊有分量，Flabba Holt 的低音從頭到尾持續震動」——只出自一篇評論轉載頁（研究 d 組已標單一來源），單源評價句；改寫為「1978 年成軍的 Roots Radics，鼓手 Style Scott、貝斯手 Flabba Holt 都是創團成員」（維基）→ 220 字。hook「團員自稱舞曲專輯，節奏卻與迪斯可無關」保留（團員自述＋評論觀察，寫成直述、不具名）。
+- 20113：核過未改——Wackie's 鋁箔鼓間／低音送延遲（Jahtari 史文）、Love Joys 曲序印錯與 Rhythm & Sound 再版計畫首張（Discogs、Honest Jons）、I Kong 十位吹管與浪費錢（United Reggae 訪談自述）、Echo Minott 生年與〈Lazy Body〉、Delgado〈Tition〉、Devon Russell 隨 Congos 巡演、Winston Jarrett 改名重發、Junjo 慣用 Roots Radics（維基）皆有出處。
+- 20114：試聽 10 ready／2 unavailable（Jezzreel《Rockers Showcase Volume 2》、Audley Rollens《Showcase Prevail》Apple 未上架）；人工配 2（Jezzreel《Great Jah Jah》Basic Channel 2006 重發、Junior Delgado Apple《More She Love It》）。封面 CAA 10（front-500 全 200）、Discogs 2（I Kong 1211110、Michael Prophet 847976，CAA 404；I Kong 的 Apple 圖是 VP 重發加印章，不用），主線縮圖表目視全部相符。
+
+## 上線與評分（2026-10-23，主線）（條號 20115–20117）
+- **20115**：上線 12 張：card_catalog 12／12、KV 12 鍵回讀逐字一致、試聽 10 ready／2 unavailable、seed +12、published gate 0 error；Discogs 封面 2 張登錄 `data/discogs-cover-registry.json`（389 筆）。上線前對 origin 近 40 個 `claude/*` 分支去重 0 撞。
+- **20116**：子曲風 warm-batch 11／12 有標籤；Jezzreel、Audley Rollens、Noel Phillips、Winston Jarrett 補進 `genre-l3-artist-map.json` 的 world/reggae/roots；Audley Rollens《Showcase Prevail》Last.fm 無標籤，seed 曲風欄手補 `world`。12／12 落位。
+- **20117**：**落格率 12/12＝100%**（`batch-progress/mood-axes/score-ml48/`）。評分 x 2.3–2.7、y 0.9–1.4、z 0.4–1.1；conf mid 4、low 8。最貼邊：Devon Russell《Prison Life》z 0.4。**dub 第三波主場景幾乎見底**：Mighty Two（Joe Gibbs／Errol Thompson）與 Niney 製作的歌手盤池中判輕，器樂 dub 判冷，剩下的是 1979–83 類比人聲盤；而且**改名重發會騙過 MB 去重**（Wayne Jarrett、Sugar Minott 兩張撞池），reggae 一律對 Discogs master 再查池。八格（本分支）：恍惚 1,429、頹靡 1,433、冷冽 1,402。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Jezzreel、Love Joys、Audley Rollens、I Kong、Noel Phillips、Barry Brown、Junior Delgado、Devon Russell、Winston Jarrett、Michael Prophet（10 個掛名，名冊與排隊皆查無）。

@@ -104,3 +104,11 @@
 - 20033：核過未改——Psalm Trees Hove 錄音與 100 張天藍綠 LP（Discogs 11823539）、自稱拼貼藝術家（Musicbed 自述）、Mono:Massive 九〇年代中期（Discogs 藝人頁）、Ta-ku RBMA 2008 與 Nujabes 卒年（維基）、Blue in Green 2026 雙黑膠 300 張（Experience Vinyl）、L'Indécis 概念與 dusty loop（Turntable Lab 文案，正文寫成陳述）、jinsang 舊金山（Bandcamp 地點）。writer-1 自補的身分詞「beat 合作盤」「做的 beat」取自同批 facts，可。
 - 20034：**合作掛名改卡**：MB release-group credit 為合作的 4 張，卡單 artist 與 key 改成 MB 掛名（cards／research／hooks／input／out／meta／preview-picks 一併改，qa 全過）：Psalm Trees & Moose Dawa《Dreams From the Shore》、Mono:Massive & Philanthrope《Monothrope》、B-Side & Philanthrope《Blurred Nightscapes》、Philanthrope & Devaloop《Cloudfiles》；正文第二句本來就照 note 兩人並列。
 - 20035：Last.fm 基線：《You Don’t Know What Love Is》盤名彎引號查得 22 listeners，改 ASCII 撇號重查 76,634，meta 已改。試聽 21 ready／2 unavailable（Philanthrope & Devaloop《Cloudfiles》、Blue Wednesday《Beat Tape 3》Apple 未上架）。封面 23 張 CAA release-group front，front-500 live-check 全 200，主線縮圖表目視全部相符（Dreams 封面印 Psalm Trees & Moose Dawa、Monothrope 印 Mono:Massive／Philanthrope、Cloudfiles 印 Philanthrope Devaloop，正是改掛名的依據）。
+
+## 上線與評分（2026-10-23，主線）（條號 20036–20038）
+- **20036**：上線 23 張：card_catalog 23／23、KV 23 鍵回讀逐字一致、試聽 21 ready／2 unavailable、seed +23、published gate 0 error。上線前對 origin 近 40 個 `claude/*` 分支的 seed 與 10-22 起卡單去重 0 撞。
+- **20037**：子曲風 warm-batch 21／23 有標籤；Last.fm 標籤推不出節點的 11 個掛名（Psalm Trees、Psalm Trees & Moose Dawa、Mono:Massive & Philanthrope、B-Side & Philanthrope、Philanthrope & Devaloop、Blue Wednesday、The Deli、L'Indécis、BROCKBEATS、Blue in Green、Ta-ku）補進 `genre-l3-artist-map.json` 的 hiphop/underground/instrumental，23／23 落位；類型樹與抽卡封面重建。
+- **20038**：**落格率 23/23＝100%**（`batch-progress/mood-axes/score-ml47/`，照 10-23 體感標準）。評分 x 1.8–2.6、y 0.8–1.3、z 0.0–1.2；conf mid 3、low 20。最貼邊：BROCKBEATS《Night Trip》z 0.0、The Deli《Spacetime》與 B-Side & Philanthrope《Blurred Nightscapes》z 0.3（夜色／太空合成器拉冷）。**chillhop 第二波可收的只有「有反證就汰」後剩下的一半**：Chillhop 拋光盤、future funk、帶饒舌或人聲、broken beat 都要擋。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Psalm Trees、Psalm Trees & Moose Dawa（合掛名）、Mono:Massive & Philanthrope（合掛名）、B-Side & Philanthrope（合掛名）、Philanthrope & Devaloop（合掛名）、Blue Wednesday、The Deli、L'Indécis、BROCKBEATS、Blue in Green、Ta-ku（11 個掛名；jinsang 已在排隊）。

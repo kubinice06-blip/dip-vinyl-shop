@@ -3345,4 +3345,6 @@ window.DipPreviewStatus = Object.freeze({
   "mohn|mohn": "unavailable",
   "philanthrope & devaloop|cloudfiles": "unavailable",
   "blue wednesday|beat tape 3": "unavailable",
+  "jezzreel|rockers showcase volume 2": "unavailable",
+  "audley rollens|showcase prevail": "unavailable",
 });
