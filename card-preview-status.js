@@ -3188,4 +3188,7 @@ window.DipPreviewStatus = Object.freeze({
   "s.l.a.c.k.|whalabout?": "unavailable",
   "蛋堡|winter sweet": "unavailable",
   "蛋堡|家常音樂": "unavailable",
+  "welle: erdball|der sinn des lebens": "unavailable",
+  "welle: erdball|die wunderwelt der technik": "unavailable",
+  "welle: erdball|tanzmusik für roboter": "unavailable",
 });
