@@ -11,6 +11,7 @@
 - **藝人介紹**：未切（並行規矩）；新藝人 26 個掛名列在兩批 rulings.md 末尾。
 - **主要檔案**：`batch-progress/add-20261023-{ml38,md22}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml38,md22}.json`、`master-override-ml38.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml38,md22}/`、`onboarding-manifest-add-20261023-{ml38,md22}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml38,md22}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
 - **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 52/52；build-card-moods 錨點 104/104。
+
 ### 2026-10-23｜dip-vinyl-shop｜原聲帶簡介重寫：開工準備（候選 196 張）＋寫作／研究規則加「原聲帶先點出作品」
 
 - **內容**：店主看到《Chrono Cross Original Soundtrack》簡介只談曲名寫法與盤號：「乍看不知道是超時空之鑰原聲帶很可惜，其他原聲帶也是，盡量多說一點相關的故事」（《Chrono Cross》台灣通稱《超時空之輪》，是《超時空之鑰》續作）。掃卡池＋KV 簡介，整理 196 張遊戲／電影／動畫／音樂劇原聲帶到 `batch-progress/ost-desc-20261023/candidates.json`（含現有簡介與 KV 鍵；關鍵字粗篩 111 張偏資料庫口吻，僅供參考），`BRIEF.md` 寫分流與重寫規則；`writer-base.md`、`research-base.md` 加「原聲帶：前兩句點出作品（台灣通行中文名＋原名＋類型、系列關係），講作品與音樂的故事，盤號版本最多一句」。重寫另開工作階段照 dip-desc-restyle 產線跑，《Chrono Cross》排第一批。
