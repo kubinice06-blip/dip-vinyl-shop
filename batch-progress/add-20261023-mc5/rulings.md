@@ -42,3 +42,13 @@
 - **11356**（青木孝允《RV8》，moodGuess 存疑）：Raster-Noton R-N 148，八首 Rhythm Variation，Voice 掛 Tujiko Noriko、母帶砂原良徳；Tech House 標籤並存，人聲處理與暖度未知。Raster-Noton 成立年維基自相矛盾，只寫『1990 年代末』。
 - **11357**（田中フミヤ《Right Moment》，moodGuess 存疑）：Perlon PERL124CD，2019-11-29，八首長曲（六首近或逾 9 分鐘），標籤 Minimal／Tech House；曲名偏人味，z −0.8 缺佐證。Perlon 官方頁 503、維基 404，廠牌沿革未寫。
 - **本組 WebSearch 用 3 次**（Logic System、007 Digital Moon、RV8；其中 007 與 RV8 沒搜到相關頁）。其餘走 MB／Discogs API 與維基。七張皆 thin，樂評缺口是日本 80 年代電子與冷門 techno 的共同問題，主線若要保留請當風險卡看待。
+
+## 研究 e 組
+- 11361：《Subliminal》（清水靖晃）moodGuess 嚴重不符。多來源（Banbantonton、insheepsclothinghifi、Vinyl Factory 摘要、Discogs 風格 African）指向四語人聲（英法日沃洛夫）、非洲流行／afro 舞曲律動、sax jazz-funk 爆發、傳統樂器、大製作高傳真，是人味重、色彩暖的世界融合電子，不是乾薄冷。建議主線汰換。facts 只引原盤確有曲名；2018《(Re)Subliminal》的 Mustt Mustt、Yeke Yeke、Re-Edit 不屬原盤，不入 facts。
+- 11362：《Singing Circuit》（Shi-Shonen）moodGuess 存疑。商品說明稱色彩繽紛 synth-pop、Mikiki 稱旋律性 techno pop，編制含真鼓、小提琴、薩克斯風、長號與和聲，z 偏暖、y 可能偏重。策展層『帶吉他』無來源。無日文維基頁，人名維持 Discogs 羅馬字。建議列風險。
+- 11363：《You Find the Key》（田中フミヤ）moodGuess 存疑。RA 與廠方皆稱偏柔、帶 funk 與 deep house 味、貝斯厚、有詭異人聲片段、多數大鼓不突出；y 可能偏重、z 偏暖。BPM 兩源皆無。曲名拼法 MB 作 Munich Uncertain（RA 作 Munique），facts 用 MB；RA 寫曲長 7–12 分，MB 最短 6 分 28 秒，寫作層勿寫『每首超過七分鐘』。
+- 11364：《Unknown Possibility, Volume 2》日本原版是 2CD（第一片 Drive 系列六首、第二片 Singles 1995-1999 十二首，MB 標題如此），歐洲版 2001；寫作層需說明雙片組。聲音方面 RAG 稱硬派金屬質地極簡 techno 支持冷，但 Orlando Weekly 聽出世界節奏與 funky groove、Discogs 細項 Tribal，『點狀冷』存疑。
+- 11365：《Unknown 3》無針對本張的樂評，聲音證據僅 Discogs 風格（Techno／Tech House／Minimal）與曲長；facts 第 8、9 條是藝人整體描述，寫作層只能寫『他一貫的聲音』。『Sundance 第一張』只有搜尋摘要、無可開頁面，facts 只寫目錄號 SNDCD001，不寫廠牌第一張。status 標 partial。
+- 11366：《TITLE#1》與《TITLE#2+#3》（石野卓球）找不到任何描述鼓、速度、冷暖的來源（Natalie 403、Sony 簡介只有發行事實），聲音只有 Discogs 風格標籤與曲長；moodGuess 無法證實也無法推翻，status thin，主線視為高風險（池中同藝人人味）。兩張皆為原創專輯；2005 的《TITLES》才是海外編集盤。〈Electronic Cock Sucker〉曲名不引。
+- 11367：卡單 label 欄七張皆空白，實為 Perlon／Dream Machine（日本原版）／Sundance／Ki/oon Music＋Loopa／Invitation／Non-Standard，寫作層用 facts 所列。
+- 11368：後續事件一律不寫（2018《(Re)Subliminal》重製只作版本脈絡）。
