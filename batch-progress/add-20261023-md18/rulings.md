@@ -105,3 +105,11 @@
 - 18113｜Northaunt《Horizons》：刪「，也是 Northaunt 至今最令人不安的作品」；Svartsinn《Of Darkness and Re-Creation》：刪「廠牌也把它列為…經典之一」（廠牌自評最高級）。
 - 18114｜其餘 32 張逐張審過未改字；第四張（Elegies、Thronal）、第三張全長（Horizons）、Puma（Westerhus）皆有研究稿來源。事實層未動，research／hooks／input 無須同步。
 - 封面補記：Funeral Moth《Transience》CAA 原圖與 front-500 連續 500，改 Apple 1080634793 官方圖（目視相符）；Yoshi Wada CAA 一次 000 後重試 200，保留 CAA。最終 CAA 34、Apple 1、Discogs 1。
+
+## 上線與評分（2026-10-23，主線）（條號 18115–18117）
+- 18115｜上線：card_catalog 36／36、KV 37 鍵（含不失者 desc4 別名鍵）回讀逐字一致、試聽 27 ready（3 張人工配）＋9 unavailable、seed +36、published gate 0 error；封面 CAA 34、Apple 1、Discogs 1（已登錄 registry），live-check 36/36 200。上線前對 origin 75 個分支與 main 的 seed 去重 0 撞。類型樹 36/36 落位。
+- 18116｜評分 `score-md18`（照 10-23 體感標準）：**落頹靡 34/36（94%）**；出格 2 張落暴躁：不失者《すでに用意されていた想い》x 3.2（灰野尖嘯人聲＋噪音吉他判緊繃）、Stian Westerhus《The Matriarch…》x 3.1（弓拉與破音刮擦判緊繃）——兩張都是研究層已點出「爆裂段／尖叫弦音」的。北歐 dark ambient（raison d'être、Svartsinn、Northaunt、Kammarheit、Atrium Carceri）、Deathprod、Corrupted、Funeral Moth、Boris drone 盤全中。八格：頹靡 1,403。
+- 18117｜場景結論：**日本暗色只剩 drone doom（Boris、Corrupted、Funeral Moth）與畠山冷盤能穩落**，灰野／不失者系與吉他即興刮擦（Westerhus）照體感標準判躁，不再收；md19 華語／韓國 0 張（主盤在池或判躁／判輕）。md18、md19 不再派；md20 北歐 dark ambient（Cyclic Law／Cold Meat Industry 系）是頹靡線最穩的池子，還有餘量可併入 md22。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+- （17 個掛名，含 4 個合掛名）Corrupted、Funeral Moth、Yoshi Wada、Chihei Hatakeyama、Chihei Hatakeyama & Dirk Serries、Deathprod、Biosphere / Deathprod、Supersilent、Stian Westerhus、raison d'être、Svartsinn、Northaunt、Northaunt & Svartsinn、Kammarheit、Atrium Carceri & Kammarheit、Skepticism、Ø

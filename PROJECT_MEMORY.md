@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 6 輪 ml31／md18：爵士靈魂 ballad＋管弦福音 7＋日本／北歐暗色 drone 36 張上線，落格 7/7、34/36
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 6 輪，本工作階段負責 ml31、md18（評分照 10-23 體感標準）。ml31（`add-20261023-ml31`，恍惚：爵士弦樂抒情盤＋ml33 福音慢板）：Anita Baker《Rhythm of Love》、Kem ×4、Mahalia Jackson《The Power and the Glory》《Great Songs of Love and Faith》。md18（`add-20261023-md18`，頹靡：日本暗色 drone＋md20 北歐暗色＋md19）：Boris ×2、Corrupted ×3、Funeral Moth ×2、不失者、MONO、Yoshi Wada、畠山地平 ×2、Deathprod ×5（含 Biosphere 拆分）、Supersilent ×2、Westerhus、raison d'être ×5、Svartsinn ×3、Northaunt ×3、Kammarheit ×2、Skepticism、Ø。
+- **策展→研究汰換**：ml31 策展 14、主線汰 4、研究汰 3 → 7（池中 with strings 爵士盤 y 一律 −1.0～−1.4，主場景死池；ml31 不再派、ml33 剩餘併 ml35）。md18 策展 54（md19 0 張）、主線汰 9（MB Single、池中同人判輕、貼邊）、研究汰 9（有節拍、有鼓搖滾段、旋律清楚、EP、無聲音資料）→ 36；md18／md19 不再派。
+- **主線審稿**：ml31 改 3 處、md18 改 4 處（單源樂評比較／軼事、廠牌自評最高級、最高級評價）；事實層未動。
+- **上線**：card_catalog 7＋36、KV 7＋37 鍵回讀逐字一致、試聽 6＋27 ready（Kem 兩張、Funeral Moth、Borrowed World、Daemonum 人工配）、seed +43、published gate 兩批 0 error；封面 CAA 40、Apple 2、Discogs 1（Deathprod《Let Me Be Forever Animal》，已登錄 registry），live-check 全 200。上線前對 origin 75 個分支 seed 去重 0 撞。Last.fm 盤名副標／en dash／合掛名查錯 4 張，改寫重查。
+- **情緒評分**：`score-ml31`、`score-md18`。**ml31 落恍惚 7/7（100%）**（Mahalia 兩張 y 0.5／0.6 貼格線）；**md18 落頹靡 34/36（94%）**，不失者、Westerhus 刮擦尖嘯判躁落暴躁。八格：恍惚 1,181、頹靡 1,403、冷冽 1,363。
+- **類型樹**：43/43 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人列在兩批 rulings 末尾（ml31 1、md18 17 個掛名）。
+- **主要檔案**：`batch-progress/add-20261023-{ml31,md18}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml31,md18}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml31,md18}/`、`onboarding-manifest-add-20261023-{ml31,md18}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml31,md18}*`、seed／試聽地圖／Discogs 名單／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 0 error；KV 回讀 44/44；`build-card-moods` 錨點 104/104。
+
 ### 2026-10-23｜dip-vinyl-shop｜頻率選歌：FINE 改一格一張、SCAN／FINE 撥桿動畫、新增搜尋列
 
 - **改動**：店主反映 FINE 沒有「小範圍慢慢掃」的感覺。FINE 改成每撥一格（拖 14px／滾一下／方向鍵）就跳到這條軸上附近的下一張，輪子跟著咔一格、有咔噠聲；SCAN 照舊連續掃。開關撥桿照原稿槽位做三格（上／中／下，`tune/switch.png`，SCAN 在上、FINE 在下）。新增搜尋列模組（`tune/panel-search.png`，配色與螺絲取自原稿，`scripts/build-tune-sprites.py` 產生）：輸入藝人或專輯，清單從星圖底部浮出，選了之後三顆輪子依序轉過去（能量→質地→色溫），停在那張並試聽。面板改成貼底、搜尋列在最上；頻率選歌開著時頁面底色改成面板深灰 `#2c3037`。店主看預覽後再改：手機直放時面板放大塞滿寬度（星圖讓出高度，最小 200px）；FREQUENCY 的兩顆螺絲疊上與輪子模組同大小的螺絲（`tune/screw.png`）。店主回報點搜尋列跳出鍵盤時整台版面變成左右並排：鍵盤讓 100dvh 縮、直式被判成橫式。改用 JS 記的視窗高 `--tvh`（搜尋框有焦點時不更新），橫式並排另加 `min-width:560px`。`dip-tune.js?v=11`。店主再報 A Love Supreme、My Favourite Things 找不到：頻率選歌只吃 `pool.cards`，頂級牌（殿堂 692、遺珠 109、異端 116，共 917 張）放在 `pool.apex`，從上線起就沒進星圖；改成一併載入，結果頁帶 `_hall/_pearl/_heresy` 照頂級卡樣式顯示。搜尋英式拼法照美式比（favourite＝favorite）。`dip-tune.js?v=12`。店主再要「下面的面板整合成一個像素面板、拿掉抽屜讓星圖變大」：`scripts/build-tune-panel.py` 從原稿拼出 `tune/panel-all.png`（輪子稿的外框與側軌、FREQUENCY 內容抽掉滾筒窗中段 195px 讓出就這張、欄間溝轉橫當分隔、名牌吊在分隔槽上、搜尋列畫在面板上；同一比例不縮放），所有活件位置改成這張的百分比；舊的 `panel-search.png` 與 FREQUENCY 補螺絲撤掉。389×652 星圖 238→274px。`dip-tune.js?v=13`。
