@@ -50,3 +50,24 @@
 - 21508　Poll《Berio / Schnittke / Boulez: Solo Violin Works》thin：EMI Digital Debut 數位專輯（MB 格式 Digital Media，2012-02-20），查無樂評與錄音細節；Boulez Anthèmes 實際有長而靜止的和聲音與激動段落交替，非全程急促。moodGuess 無法驗證，列汰換候補。
 - 21509　Descharmes《Saariaho: L'œuvre pour violoncelle》moodGuess 存疑：MusicWeb 描述海景、波浪、漸弱、易逝的蝴蝶，僅 Près 中段詼諧曲有力量，與策展自陳「x 3.4 貼邊」一致；列汰換候補。錄音 2004-09 IRCAM。
 - 21510　本組 WebSearch 共 13 次（Machinations 2、Finnissy 1、Ruck 1、Veale 2、asamisimasa 1、Mouvement 1、Got Lost 1、Poll 2、Saariaho 1，另有一次與 Ruck 同卡），每張皆未逾 3 次；Discogs 403、DuckDuckGo 被驗證擋，主要靠 WebFetch 與 MB API。
+
+## 研究 e 組
+- 21521　Klangforum Wien《Reiter》thin：聲音面查無樂評或廠方描述，只有編制（五首接電子／踏板／transducer）；moodGuess 存疑——策展寫的「古大提琴」六首編制裡沒有（實為低音直笛、低音長笛、單弦琴 dan bao、踏板），「氣音、刮擦、碎拍」無來源。Allmusic 標 2019-01-04，廠方與 MB 為 2018-12，取 2018。
+- 21522　Bieri《Contrechant》moodGuess 存疑：MusicWeb 稱整體「大多相當輕柔、短慢稀疏、旋律近乎缺席」，屬極弱稀疏型為主，僅 Holliger〈Contrechant〉與 Carter〈Gra〉急促炫技；x 3.5 偏高，建議降或視邊緣。專輯正式名《Contrechant: Music for clarinet solo》，ECM 2209，2010-09 錄於 Propstei St. Gerold。
+- 21523　Damiens 專輯：原版是 1988 Adda 581066（Discogs），MB 掛的 Accord 為 1996 再版，名稱以 Adda 為準；Discogs 標 Donatoni〈Clair〉為 1972 疑誤，facts 不寫其年份。聲音面無樂評，靠作品資料（Domaines 游移電聲般音效與顫音、In Freundschaft pp／ff 兩層）；Stravinsky 三首與 Berio〈Lied〉偏旋律，輕度存疑。
+- 21524　Yejin Gil《Fulgurances》推翻策展層：Boulez 實為〈Incises〉（1994／2001），非奏鳴曲；Ligeti 為練習曲第三集四首，Messiaen 為《四首節奏練習曲》加《二十凝視》第六首。聲音大致成立（陳銀淑、Messiaen 快密硬），Ligeti 第三集與 Messiaen 末曲偏稀疏。
+- 21525　Dillon《The Soadie Waste》：演奏者 Noriko Kawai、Hiroaki Takenouchi、Irvine Arditti、Arditti Quartet（MB 只掛作曲家）。「強奏頻繁、有力圖形織體」支持躁；「冷」「無旋律」只靠新複雜主義標籤，標題曲是舞廳意象，色溫存疑；Traumwerk、black/nebulae 查無樂評。
+- 21526　Meta4《Saariaho Vol.1》moodGuess 強烈存疑，建議汰換：評論明指全盤「輕柔開始、輕柔結束、缺乏節奏能量」，Tocar 旋律性、Vent nocturne 抒情、Calices 有奏鳴曲式，錄音溫暖平衡；且只有 Nymphéa 是四重奏。推翻策展層：《Terra Memoria》在第二集（ODE 1242-2，2016），不在本集。
+- 21527　Oslo Sinfonietta《Chambered Music》thin：Praesens 噪音質地、標題曲含近乎聽不見的舞台外長號（極弱）；Amid、Besides 聲音查無描述。2026 Premio Abbiati 得獎、2025 Charles Cros Coup de Coeur。部分 moodGuess 存疑。
+- 21528　Aleph《Recital》thin、moodGuess 存疑：「刮弦與碎拍」無來源；Haas 一首是純泛音和弦對微分音拍頻，偏迷濛震盪；Furrer 含女高音、Hechtle 含單簧管、Oehring 含預錄帶，並非純四把吉他；聲音面查無樂評。
+- 21529　Poppe《Interzone》：artist 掛作曲家，演奏者 Omar Ebrahim、Neue Vocalsolisten、ensemble mosaik、Stockhammer。錄於 2004-09 Haus der Berliner Festspiele，是否現場未能確認（策展說錄音室未證實）。MusicWeb 負評，描述音高彎曲、音群、碎小重複，但有相對平靜的引子與 12 分鐘長木管線條的〈Broken Pieces〉；「微分音人聲」未證實，輕度存疑。
+- 21530　本組 WebSearch 共 13 次，每張皆不超過 3 次；皆為錄音室專輯、無選輯或重複卡、無建議移除。thin 為 Reiter、Oslo、Aleph（聲音面無樂評）。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- 照 md28／md29 先例：**來源自己寫出稀疏極弱、抒情旋律、厚重大編制、現場錄音的汰**；只是查無樂評（thin）的留給評分驗收。**45 張汰 13**（存 `dropped-cards.json`／`dropped-research.json`）：
+  - 稀疏極弱／緩慢（體感判靜，mc32 Kurtág 格言小品先例）：Zehetmair《Holliger: Lieder ohne Worte》（多為極弱短章、安靜輓歌）、Arditti《Haas: Ein Schattenspiel…》（電子延遲疊影與持續音場、三首各 23–26 分）、Kreutzer《Finnissy: 2nd & 3rd》（第三號碎裂遲疑、鳥聲收尾）、Sugawara《Lachenmann: Got Lost》（氣息低語、30 分鐘鋼琴獨奏）、Descharmes《Saariaho: 大提琴》（海景、漸弱、蝴蝶）、Meta4《Saariaho Vol.1》（評者：輕柔開始輕柔結束、缺乏節奏能量）、Bieri《Contrechant》（大多輕柔、短慢稀疏）、Aleph《Haas / Furrer…》（泛音拍頻迷濛震盪、含女高音與預錄帶，無聲音來源）、Arditti《Harvey: Complete String Quartets & Trio》（頻譜式長線條、32 分鐘第四號＋電子）。
+  - 抒情／旋律：Ruck《Mahnkopf: Hommage à Kurtág》（63 分鐘吉他協奏曲、憂鬱回顧）、Swiss Chamber Soloists《Happy Birthday Elliott Carter!》（女高音與長笛大提琴抒情段多）。
+  - 厚重大編制：Klangforum Wien《Neuwirth: Vampyrotheone…》（二十多人、五支銅管＋電吉他＋手風琴＋電子，判重）。
+  - 現場錄音：Michel-Dansac《Aperghis: 14 Récitations》（Wien Modern 2001-11-16 首次完整演出實況，研究 b 組）。
+- 卡單更正：Damiens《Stravinsky / Boulez / Denisov / Stockhausen / Berio》廠牌 Accord→**Adda**（1988 原版 Adda 581066，Accord 是 1996 再版；研究 e 組）。研究 a 組：Reynolds 盤實為 2CD 五首；研究 c 組：Lachenmann《Mouvement》演奏另含 Ensemble Aisthesis＋Schola Heidelberg、指揮 Hans Zender；研究 e 組：Gil 盤的 Boulez 是〈Incises〉。下游以研究稿為準。
+- 留 32（a 7、b 7、c 5、d 7、e 6）；叫回策展代理補 12 張候補（密集刮擦、急促炫技型，每張附文案／樂評原句證明緊繃密集）。
