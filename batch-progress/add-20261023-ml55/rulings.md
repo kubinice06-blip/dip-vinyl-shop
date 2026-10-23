@@ -78,3 +78,15 @@
 - 研究推翻照研究稿：Vesta《Relationships》廠牌 Ichiban→i.e. Music（隨汰換結案）；Syleena 年份 2001 維持；Aisha 年份 1987 維持（來源 1986–1988 不一，facts 不寫年份）；Quadron 隨汰換結案。
 - 剩 19，叫回策展代理補第二輪候補（避開上列汰換型態）。
 - 第二輪策展補 5（Love Unlimited《From a Girl's Point of View》、Jah9《New Name》《9》、Alex Isley & Jack Dine《Marigold》、Alice Smith《She》）；跨分支去重撞 ml53 卡單 3 張（Marigold 讓 ml53；Lalah《Honestly》、YEBBA《Dawn》本批已汰）→ 補 4，卡單 23（a 4、b 5、c 4、d 6、e 4），派一支補研究 append 進 a／c／e。
+
+## 研究補位（a／c／e 組）
+- 20929：Love Unlimited《From a Girl's Point of View We Give to You》（a）——聲音合恍惚：AllMusic 稱「最溫暖的製作環境之一」「鼓被馴成中速慢爬」，Barry White 製作、Gene Page 編曲；9 首 36 分 18 秒，無舞曲單曲或饒舌客串（單曲〈Walkin' in the Rain〉為中板電話對白）。不給存疑。年份 1972、廠牌 Uni 與卡單相符；Apple 查無，證據用 MB＋維基。8 條 facts，full。
+- 20930：a 組補位小結——無推翻年份、廠牌、盤名；逐首速度無來源（〈Together〉3:10、〈Another Chance〉2:51 較短），不影響判定。AllMusic、Q 內容經維基轉述。
+- 20949：Jah9《New Name》（c）——Rory Gilligan（Stone Love 選曲人）製作，真樂手 riddim＋銅管，M&G 稱「厚重低音、包覆感的節奏」，色溫暖；Protoje 為 singjay 非饒舌，Cedric Myton 客串〈Taken〉。逐首速度未證、無弦樂，故 dub 回音只部分有證，不給存疑。廠牌 Rorystonelove（MB）吻合卡單，維基 Jah9 條寫 VP Records，不採。9 條 facts，full。
+- 20950：c 組補位小結——年份 2013 無誤；Reggaeville、AllMusic 403，改用 Rebelbase、Jamaica Observer、Mail & Guardian。
+- 20966：Jah9《9》（e）moodGuess 部分存疑——「bass-driven」只見於搜尋摘要轉述的宣傳稿，VP 官方稿與 United Reggae 皆未提低音或速度；United Reggae 的「challenging」可能偏冷峻。長曲結構（七首逾 5 分鐘、一首 9 分）支持靜重。Vaughn Benjamin（Akae Beka）為唯一客串。年份 2016、廠牌 VP 吻合。8 條 facts，thin（無獨立樂評談聲音）。
+- 20967：Alice Smith《She》（e）moodGuess 存疑——Compulsive Reader 逐首：快或重拍者〈Cabaret〉〈Another Love〉〈Shot〉〈Fool for You〉，標題曲激烈；慢板抒情僅〈Ocean〉〈The One〉〈Loyalty〉〈With You〉〈Be Easy〉約四成五。y 0.9 偏靜，建議評分時降 y 或汰換。色溫偏暖：「haunting」僅 SoulTracks 一處且只形容中板，其餘為 sweet and bright、warm strings、soothing，不陰冷。8 條 facts，full。
+- 20968：推翻策展層——Alice Smith 卡單 label「Self-released」不精確：Fader 為 Rainwater／Thirty Tigers，MB 為 RainWater Recordings Inc.；建議卡單改 RainWater Recordings。「被唱片公司退件」未在可開來源找到，facts 與 hook 不依賴，寫作層勿寫成退件。
+- 20969：Jah9 兩張 facts 中的 Vaughn Benjamin＝Akae Beka 依 United Reggae；「Midnite 主唱」一語查無第二來源，未寫。
+- 20970：來源限制——WebSearch 用 3 次（Alice Smith、New Name、9）；英文維基 API 被限流（429），改用 WebFetch／MB API；SoulTracks、Reggaeville 403，SoulTracks 引句取自搜尋摘要。qa-batch research 全通過。
+- 補研究後汰 1：Alice Smith《She》（逐首四首快板／重拍、標題曲激烈，慢歌約四成五）。Love Unlimited、Jah9 ×2 留下（Jah9《9》thin，交評分）。**定案 22 張**（a 4、b 5、c 4、d 6、e 3），候補用罄、不湊數。
