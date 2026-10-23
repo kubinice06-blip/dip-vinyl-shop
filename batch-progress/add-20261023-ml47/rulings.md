@@ -49,3 +49,26 @@
 - 19975　聲音事實 thin：《Blurred Nightscapes》《Cloudfiles》《Beat Tape 2》《Beat Tape 3》無樂評或廠方音色描述，僅標籤與藝人自述（Blue Wednesday 以鋼琴為核心）；皆非 EP（37／約 71／43／33 分）。無一張出現 trap 化、clean／crisp／bright 自稱。
 - 19976　The Deli 單一來源處理：《Vibes 3》『出道作』與〈Flowers〉約 1400 萬次播放僅出自 Derek's Music Blog（2018）；NTS 頁面稱 The Deli 是 Moka Only 與 Baptiste Hayden 合作，與其他來源衝突，不採；Vibes 3 是否 Cold Busted 第一張查無來源，寫作層勿寫首作。
 - 19977　WebSearch 用 3 次（Philanthrope、Blue Wednesday、The Deli 各一），其餘為 Bandcamp、Discogs／MB API、Chillhop 頁；Philanthrope 的 Bandcamp 專輯頁、Dezi Belle、Vinyl Digital 商品頁皆 404／401 未取得。
+
+## 研究 e 組（20001–20010）
+- 20001　moodGuess 存疑（高）：Ta-ku & Raashan Ahmad《Low Fidelity, High Quality》全程有 Raashan Ahmad 饒舌（Bandcamp 明載 raps），Discogs 類型 Hip Hop／Funk-Soul 非 Instrumental，標籤 future beats／funk；16 首約 28 分、多數不到 2 分鐘。非塵感器樂 beat tape，x 恐 ≥3，建議汰換。發行日 Discogs 2013-07-05（Jakarta 061、限量 250 張）與 Bandcamp 2014-09-03 不一致，年份仍以 2013 保留。
+- 20002　moodGuess 存疑（高）：Onra《Nobody Has to Know》Discogs 風格 New Jack Swing／Funk／Vaporwave／Contemporary R&B，Atwood Magazine 評為八〇年代合成器 future funk、重鼓與放克貝斯，氣氛 dreamy and exciting；非靈魂取樣黑膠迴圈。x、y、z 皆缺 dusty 證據，建議汰換。13 首約 32 分。廠牌 All City Records（卡單 label 空白，補上）。
+- 20003　moodGuess 存疑（中）：Blue in Green《Gravity》廠牌自述『breezy、染著霓虹色』『振奮人心』，開場 snappy snares、切分合成器和弦、八〇年代夜行感，偏輕快明亮；無 dusty／磁帶糊說法。約 39.8 分。卡單『Nujabes 系』查無任何來源，不入正文。
+- 20004　moodGuess 存疑（中）：Mndsgn《NoMaps》Bandcamp 自述含 hard bops 與 softsynth sketch、tag experimental，多首僅 1 分上下；約 30.8 分貼線。Wikipedia 稱 EP，與 Bandcamp 15 首不合，以 Bandcamp 為準。
+- 20005　聲音事實 thin：Blue in Green《The Break of Dawn》（僅零售文案：unhurried、gentle piano and guitar、subtle horns、warm analog）、jinsang《kona park.》（Bandcamp 標籤與『smooth textures from california』）、Ta-ku《25 Nights for Nujabes》（僅 Discogs 風格與 Bandcamp 標籤）皆無樂評；三張都不算反證，moodGuess 照舊。
+- 20006　Ta-ku《25 Nights for Nujabes》年份：MB 首發 2013-01-09 為單一來源，官方正式發行為 2018-12-21（823／Jakarta，27 首約 68 分，含 Matt McWaters bonus）；卡單 2013 保留，正文宜寫『最初 2013 年、2018 年正式發行』。這是致敬 Nujabes 之作，非 Nujabes 作品。總長 68 分為長 beat tape，非 EP。
+- 20007　Blue in Green《The Break of Dawn》年份：MB 首發 2011-08-03 與 Cold Busted 重發文案『originally released 2011』一致；Discogs master 年 2015 為黑膠版年。卡單 2011 保留。
+- 20008　jinsang《kona park.》：25.5 分（Discogs 曲目加總；Bandcamp 頁面估讀 23 分不採），貼長度線；身分無本名來源，寫作層不得寫本名。Blind Love Tapes 2016 卡帶 50 捲。
+- 20009　WebSearch 用 3 次（Blue in Green Gravity、Break of Dawn、Ta-ku／Raashan Ahmad 各一），其餘為 Discogs／MB API、Bandcamp、Wikipedia、Atwood Magazine、零售頁；Discogs 網頁 403，改用 API。
+- 20010　Blue in Green 與 Nujabes 的關聯查無來源；若寫作層需要『Nujabes 系』說法一律不可用。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- 研究層 35 張無一篇獨立樂評，聲音多只有 Discogs／Bandcamp 標籤與廠牌文案；照 ml42 先例**只憑「查無」不汰、有反證才汰**。
+- **汰 12 張**：
+  - 拍子推進／放克（x 風險）：Bonus Points《Eventide》（作者自稱 14 upbeat grooves、future funk 標籤）、Onra《Nobody Has to Know》（Discogs New Jack Swing／Funk、樂評稱 80 年代合成器 future funk、重鼓放克貝斯）、Olive Oil《Space in Space》（樂評稱 fluid broken、glitchy abstract）、《Far From Yesterday》（Broken Beat／Future Jazz）、Mndsgn《NoMaps》（自述含 hard bops、experimental）。
+  - 非器樂 beat tape：Ta-ku & Raashan Ahmad《Low Fidelity, High Quality》（全程饒舌、Funk 標籤、28 分）、Olive Oil《Left&Right》（三位詞作者，有人聲／說唱）。
+  - 輕快明亮（y／z 風險）：Blue in Green《Gravity》（廠牌稱 breezy、霓虹、振奮、snappy snares）、BROCKBEATS《Sugar》（indie pop 標籤）、Psalm Trees & Guillaume Muschalle《We Must Believe in Spring》（吉他 lofi jazz fusion＋Chillhop 拋光，ml42 先例）。
+  - 色溫冷：Philanthrope《Clockwork》（Chillhop 自稱 melancholic、聽眾 moody）。
+  - 長度＋零來源：Psalm Trees《Autumn Turned Winter》（25.3 分 mixtape、聲音全無來源）。
+- 不補位（候補都是主線先汰的拋光／彈跳盤）。定案 **23 張**（a 5、b 6、c 6、d 3、e 3）。汰除卡存 `dropped-cards.json`，研究稿條目移 `dropped-research.json`；研究 qa-batch 全過。
+- 卡單更正（研究層提出）：Philanthrope 三張 country de→at（因斯布魯克人）、Blue Wednesday 兩張 nl→ca（溫哥華）、L'Indécis nl→fr（格勒諾布爾）、Psalm Trees 四張 de→空（出身來源不一）、《You Don’t Know What Love Is》《Zodiacs》label 補 self-released。Philanthrope《Cloudfiles》卡單廠牌 Vinyl Digital 對應 2LP 擴充版、MB 掛的是卡帶版，寫作層照研究稿講版本。
