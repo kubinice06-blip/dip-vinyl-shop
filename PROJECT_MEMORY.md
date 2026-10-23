@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 3 輪 mc7／ml15：minimal techno／IDM 31＋暖 downtempo／world dub 28 張上線，落格 25/31、28/28
+
+- **內容**：店主「三個薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 3 輪，本工作階段負責 mc7、ml15。mc7（`add-20261023-mc7`，minimal techno 快而薄＋mc8 IDM 快而乾）：Marc Houle 3、Jeff Mills 3、Brinkmann 2、Stewart Walker 2、Gaiser 2、Elektro Guzzi 2、Rian Treanor 2、Pacou 2、Robert Hood《Paradygm Shift》、Troy Pierce、Brandt Brauer Frick、Efdemin、Bretschneider、Mark Fell、SND、Beatrice Dillon、Funkstörung、Richard Devine、Sutekh、Damon Wild、Oliver Ho。ml15（`add-20261023-ml15`，暖 trip-hop／downtempo＋ml23 ambient dub 暖盤）：Nightmares on Wax 3、Bombay Dub Orchestra 3、Fat Freddy's Drop 2、Trinity Roots 2、Rockers Hi-Fi 2、Yppah 2、Kaya Project 2、Sounds From the Ground 2、Thievery《The Temple of I & I》、Tosca《J.A.C.》、Fila Brazillia、The Orb、Loop Guru、Gaudi 2（含與 Nusrat 合作）、Cheb i Sabbah、Ott、Boozoo Bajou《Grains》。兩批都挖不到 45，照實上架。
+- **策展→研究汰換**：mc7 策展 49（第一輪 34 把 Hood／Mills 全排掉，主線依池中同人三軸放寬後補 15）、主線汰 4（變奏再製、月刊合集、Mixed CD、樂團第三張）、研究汰 14（dub 化／ambient 長篇／厚 kick／人聲暖／EP）。ml15 策展 38、主線汰 3（White Swan 梵唱重製、Laswell 再製）、研究汰 7（Terra Firma 即 Mosaic 美版、Liquid Bloom、Kalya Scintilla、Salmonella Dub 等無低頻證據或拍子推進）。卡單更正：Yppah《Eighty One》→ Ninja Tune、Marc Houle《Restore》補 M_nus。
+- **主線審稿**：ml15 改 3 處（NoW、Rockers Hi-Fi 前兩句補樂種，Shri Durga 刪單源評價句）；mc7 改 2 處（Stabiles 樂評轉述改直述聲音、Parquet 刪單源評價句）。
+- **上線**：card_catalog 28＋31、KV 28＋31 鍵回讀逐字一致（59/59）、試聽 26＋22 ready、seed +59、published gate 兩批 0 error；封面 CAA 56＋Apple 官方圖 3，縮圖表目視、live-check 59/59。上線前對 origin 各 `claude/*` 分支 seed 去重 0 撞。類型樹 59/59 落位（`genre-l3-artist-map.json` 補 Gaudi + Nusrat）。
+- **情緒評分**：`score-ml15`、`score-mc7`。**ml15 落恍惚 28/28（100%）；mc7 落冷冽 25/31（81%）**，出格：柔和 minimal house 判靜 3（Efdemin、Houle《Drift》、Workaround）、硬派／glitch 判重 3（Mills《From the 21st》、Devine《Lipswitch》、Brinkmann《Tokyo + 1》）。八格：恍惚 1,025、冷冽 1,060、頹靡 1,314。
+- **藝人介紹**：未切（並行規矩）；新藝人 28 位列在兩批 rulings.md 末尾（ml15 10、mc7 18）。
+- **主要檔案**：`batch-progress/add-20261023-{mc7,ml15}/`、`batch-progress/mood-cells-20261022/{curation,master}-{mc7,ml15}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{mc7,ml15}/`、`onboarding-manifest-add-20261023-{mc7,ml15}-20261023.json`、`desc-tools/batches/*/add-20261023-{mc7,ml15}-*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/mood/*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`。
+- **驗證**：prepare／published gate 兩批 0 error；verify-wave-kv 59/59；qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；build-card-moods 錨點 104/104、寫入 20,390 張。
+
 ### 2026-10-23｜dip-vinyl-shop｜更正：「驟然爆裂」不算推力，94 張酸卡能量撤回（《The Drift》回頹靡）
 
 - **改動**：店主「The Drift 頹靡沒錯」。兩輪酸冷重判把「爆裂／音塊／drone」當推力，違反 10-22 能量標準（要有打擊在推），連 Sunn O))) 都被推到亢奮。152 張被拉高能量的逐張看，94 張沒有鼓／節拍在推的能量回原值、寒氣（冷色溫）保留；58 張真有節拍的留躁。BRIEF 改成「安靜但有寒氣也算酸；推力只看打擊」。
