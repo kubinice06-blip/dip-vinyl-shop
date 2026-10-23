@@ -1,0 +1,13 @@
+# add-20261023-ml50 裁定（情緒薄格策展線・恍惚：暖 drone／厚墊 ambient）
+
+> 店主 2026-10-23「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 11 輪，本工作階段負責 ml50、md27（評分照 10-23 體感標準；店主同日：「恍惚可以多增加一點 downtempo 與 dub 這類的」）。場景與條號 `batch-progress/mood-cells-20261022/SCENES.md`（ml50 列；可擴寫：(a) 磁帶迴圈／吉他殘響暖 ambient、(b) 暖 ambient dub／dub 化慢 downtempo），交接 `batch-progress/HANDOFF-mood-cells-line.md`。目標格：**恍惚＝靜（x<3.0）＋重（y≥0.5）＋暖（z≥0）**；策展邊距 x≤2.7、y≥0.8、z≥0.3。
+> 策展：`curation-ml50.json`（46）→ 主線汰 4 → `master-ml50.json`（MB 回查 42/42 釘住）→ `pick.json`（42）→ `build-cards.mjs`。
+> 本批卡單：`desc-tools/batches/cards/add-20261023-ml50-cards.json`（42 張；研究 a–d 各 9、e 6）。身分：MB 釘住 42、§1 人工 0。
+> **預留：研究 a 20281–20290、b 20291–20300、c 20301–20310、d 20311–20320、e 20321–20330、鉤子 20331–20340、寫作 20341–20350、主線 20351–20360。**
+---
+
+## 主線策展（不佔條號）
+- 策展 46（main 暖 drone 19、ext-a 磁帶／吉他殘響 14、ext-b 暖 ambient dub 13），MB 46/46 釘住；moodGuess x 1.2–2.6、y 0.9–1.6、z 0.4–1.4。挖不到 54：池中 Chihei Hatakeyama、Lawrence English、bvdub、Stars of the Lid、Gas 大半落頹靡，Eno／Budd／Yokota／Steve Roach 判輕；Hammock、Manual、Guthrie & Budd、Tosca、Prince Fatty 已被他組收走。
+- 主線汰 4：Easy Star All-Stars《Lonely Hearts Dub Band》（翻《Sgt. Pepper》，原曲輕快、判躁風險）、Stick Figure《Burial Ground》《Wisdom》（四張同型擇二）、Hotel Neon 同名首作（廉價吉他、磁帶薄，四張擇三）。
+- 池中同人：Hollie Cook 4 張、Easy Star《Dub Side of the Moon》、Trinity Roots 2 張、The Orb 5/7 落恍惚；Cortini《Sonno》、Cantu-Ledesma《13 Moons》落頹靡（本批兩人選的是更暖的盤，研究層查色溫）。
+- 研究層重點：main 的 drone 盤 z 貼邊風險（Celer、Pioulard、Marcus Fischer、Dettinger、Triola、Hotel Neon）——**樂評或廠牌出現 cold／dark／bleak／glacial／mournful／elegiac 的列 moodGuess 存疑**；ext-b 查 dub 低頻證據、是否有 breaks／舞池推進、是否乾淨數位。

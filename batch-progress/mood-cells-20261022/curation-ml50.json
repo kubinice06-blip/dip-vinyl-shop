@@ -1,0 +1,1407 @@
+{
+ "group": "ml50",
+ "factions": [
+  {
+   "id": "main",
+   "zh": "暖 drone／厚墊 ambient",
+   "count": 19,
+   "why": "溫、慢、厚、和聲聽得出來的長音／loop ambient"
+  },
+  {
+   "id": "ext-a",
+   "zh": "磁帶 loop／吉他殘響暖 ambient",
+   "count": 14,
+   "why": "吉他、鋼棉、shoegaze 霧的暖 ambient，旋律清楚"
+  },
+  {
+   "id": "ext-b",
+   "zh": "暖 ambient dub／dub 化慢 downtempo",
+   "count": 13,
+   "why": "溫暖＋重低音＋回音、有旋律的慢 dub／psy-dub"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Hotel Neon",
+   "album": "Context",
+   "year": 2017,
+   "label": "Archives",
+   "country": "us",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "費城三人組暖 drone 代表作：處理過的吉他與合成器長音一層層鋪開，和聲進行聽得出來，溫而包覆。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "無鼓，吉他殘響長音層疊成厚墊，和聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b53e0982-ae97-4564-bf29-ab2dc3c9aaea",
+    "https://coverartarchive.org/release-group/b53e0982-ae97-4564-bf29-ab2dc3c9aaea/front",
+    "https://music.apple.com/us/album/context/1292813093"
+   ],
+   "mbRgMbid": "b53e0982-ae97-4564-bf29-ab2dc3c9aaea",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Hotel Neon",
+   "album": "Means of Knowing",
+   "year": 2018,
+   "label": "Archives",
+   "country": "us",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Archives 廠牌時期作品，延續吉他長音＋磁帶飽和的厚墊，旋律動機反覆浮現，溫暖不陰。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "無鼓，吉他與弦樂感長音厚霧，和聲清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4a66dd30-4245-40e0-8b7b-81f2dd1a728b",
+    "https://coverartarchive.org/release-group/4a66dd30-4245-40e0-8b7b-81f2dd1a728b/front",
+    "https://music.apple.com/us/album/means-of-knowing/1381500231"
+   ],
+   "mbRgMbid": "4a66dd30-4245-40e0-8b7b-81f2dd1a728b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Hotel Neon",
+   "album": "Vanishing Forms",
+   "year": 2019,
+   "label": "Archives",
+   "country": "us",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "2019 年作，處理吉他與鍵盤長音構成厚實和聲雲，慢、溫、包覆，屬 Home Normal／Archives 一路暖 drone。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "無鼓，暖色長音和聲層層堆疊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fd30cda4-3758-4507-9a09-9782de65ee22",
+    "https://coverartarchive.org/release-group/fd30cda4-3758-4507-9a09-9782de65ee22/front",
+    "https://music.apple.com/us/album/vanishing-forms/1459135150"
+   ],
+   "mbRgMbid": "fd30cda4-3758-4507-9a09-9782de65ee22",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Hotel Neon",
+   "album": "Hotel Neon",
+   "year": 2013,
+   "label": "Fluid Audio",
+   "country": "us",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "首作；2015 年 Home Normal 再版以磁帶飽和重做母帶、補厚低頻，吉他長音溫柔有和聲。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1,
+    "z": 0.4,
+    "why": "無鼓，廉價吉他＋效果器長音，磁帶飽和低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7d216597-ee50-4646-af43-714f1843d909",
+    "https://coverartarchive.org/release-group/7d216597-ee50-4646-af43-714f1843d909/front",
+    "https://music.apple.com/us/album/hotel-neon/962077690"
+   ],
+   "mbRgMbid": "7d216597-ee50-4646-af43-714f1843d909",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "2013 原版 Fluid Audio，MB 首版無廠牌；年份取 2013。"
+  },
+  {
+   "artist": "Celer",
+   "album": "Engaged Touches",
+   "year": 2009,
+   "label": "Home Normal",
+   "country": "us",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Will Long 與 Danielle Baquet 夫妻檔時期的浪漫暖 loop drone，Home Normal 發行，取樣和聲清楚、包覆感厚。",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1,
+    "z": 0.4,
+    "why": "無鼓，弦樂與管樂取樣 loop 慢慢暈開，溫柔"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/06fef59e-9119-3157-9ba1-06d37a23345f",
+    "https://coverartarchive.org/release-group/06fef59e-9119-3157-9ba1-06d37a23345f/front",
+    "https://music.apple.com/us/album/engaged-touches-expanded-and-remastered-2024/1728900319",
+    "https://www.discogs.com/master/266958"
+   ],
+   "mbRgMbid": "06fef59e-9119-3157-9ba1-06d37a23345f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Celer 偏 drone，旋律清楚度中等，z 可能被評 0.2–0.4；研究層請查樂評冷暖字。"
+  },
+  {
+   "artist": "Celer",
+   "album": "Two Days and One Night",
+   "year": 2016,
+   "label": "",
+   "country": "us",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Will Long 以日本旅行為題的長篇 loop 作品，溫柔和聲反覆緩慢展開，典型暖 drone。",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1,
+    "z": 0.4,
+    "why": "無鼓，暖色 loop 長音，懷舊柔霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6047d3c3-1992-4127-8860-6e1884a85500",
+    "https://coverartarchive.org/release-group/6047d3c3-1992-4127-8860-6e1884a85500/front",
+    "https://music.apple.com/us/album/two-days-and-one-night/1132862920"
+   ],
+   "mbRgMbid": "6047d3c3-1992-4127-8860-6e1884a85500",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上：drone 盤，z 有貼邊風險；首版無廠牌。"
+  },
+  {
+   "artist": "Benoît Pioulard",
+   "album": "Sonnet",
+   "year": 2015,
+   "label": "kranky",
+   "country": "us",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Thomas Meluch 在 Kranky 的純器樂 ambient 轉向作：磁帶飽和、吉他與人聲長音成霧，溫而厚。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.2,
+    "z": 0.4,
+    "why": "無鼓，磁帶糊吉他與人聲長音，嘶聲溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f2007ad7-02ae-45b6-be69-c4dd69199efa",
+    "https://coverartarchive.org/release-group/f2007ad7-02ae-45b6-be69-c4dd69199efa/front",
+    "https://music.apple.com/us/album/sonnet/959135962"
+   ],
+   "mbRgMbid": "f2007ad7-02ae-45b6-be69-c4dd69199efa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Pioulard 偶有憂鬱字眼，研究層查樂評。"
+  },
+  {
+   "artist": "Benoît Pioulard",
+   "album": "Lignin Poise",
+   "year": 2017,
+   "label": "Disques d'Honoré",
+   "country": "us",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "2017 年 ambient 盤，延續《Sonnet》的磁帶 loop 暖霧，和聲片段清楚。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "無鼓，磁帶 loop 長音，溫暖顆粒"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9bc249b9-b8f5-4343-830a-fb77e9992f94",
+    "https://coverartarchive.org/release-group/9bc249b9-b8f5-4343-830a-fb77e9992f94/front",
+    "https://music.apple.com/us/album/lignin-poise/1436889195"
+   ],
+   "mbRgMbid": "9bc249b9-b8f5-4343-830a-fb77e9992f94",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Green Kingdom",
+   "album": "Expanses",
+   "year": 2014,
+   "label": "Dronarivm",
+   "country": "us",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Michael Cottone 的暖 ambient：吉他與鍵盤 loop 疊在磁帶塵埃與長音墊上，旋律清楚、懷舊溫暖。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1,
+    "z": 0.5,
+    "why": "無鼓或極輕，吉他 loop＋磁帶塵埃墊，旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/11aa72ad-f303-47cc-9209-3a61be2eefd2",
+    "https://coverartarchive.org/release-group/11aa72ad-f303-47cc-9209-3a61be2eefd2/front",
+    "https://music.apple.com/us/album/expanses/1210864316",
+    "https://www.discogs.com/master/648049"
+   ],
+   "mbRgMbid": "11aa72ad-f303-47cc-9209-3a61be2eefd2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Green Kingdom",
+   "album": "Incidental Music",
+   "year": 2012,
+   "label": "Tench",
+   "country": "us",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Dusty 吉他 loop 與柔焦合成墊構成的暖 ambient，旋律動機清楚、聲音糊而溫。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "吉他 loop、dusty 取樣墊，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/50cfb724-c75a-4489-9902-3fe712306997",
+    "https://coverartarchive.org/release-group/50cfb724-c75a-4489-9902-3fe712306997/front",
+    "https://music.apple.com/us/album/incidental-music/545112594"
+   ],
+   "mbRgMbid": "50cfb724-c75a-4489-9902-3fe712306997",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "原聲吉他比例若高，y 有判輕風險。"
+  },
+  {
+   "artist": "The Green Kingdom",
+   "album": "The North Wind and the Sun",
+   "year": 2017,
+   "label": "Lost Tribe Sound",
+   "country": "us",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Lost Tribe Sound 發行，吉他旋律浮在暖長音與磁帶嘶聲上，溫柔包覆。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "吉他旋律＋長音墊與磁帶嘶聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b2003c2a-ce87-4acb-80cf-8a0bbdb72312",
+    "https://coverartarchive.org/release-group/b2003c2a-ce87-4acb-80cf-8a0bbdb72312/front",
+    "https://music.apple.com/us/album/the-north-wind-and-the-sun/1238518016"
+   ],
+   "mbRgMbid": "b2003c2a-ce87-4acb-80cf-8a0bbdb72312",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上，y 風險。"
+  },
+  {
+   "artist": "Marcus Fischer",
+   "album": "Monocoastal",
+   "year": 2010,
+   "label": "12k",
+   "country": "us",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "12k 廠牌暖盤：磁帶 loop、吉他與鐘聲片段在溫暖嘶聲裡慢慢旋轉，和聲片段清楚。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1,
+    "z": 0.4,
+    "why": "無鼓，磁帶 loop 與吉他長音，暖嘶聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/78fca9a6-ebbb-4ebd-9d27-4fa7bd254fd2",
+    "https://coverartarchive.org/release-group/78fca9a6-ebbb-4ebd-9d27-4fa7bd254fd2/front",
+    "https://music.apple.com/us/album/monocoastal/399323533"
+   ],
+   "mbRgMbid": "78fca9a6-ebbb-4ebd-9d27-4fa7bd254fd2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "12k 廠牌整體偏極簡，若研究層查到 sparse 字眼可汰。"
+  },
+  {
+   "artist": "Dettinger",
+   "album": "Intershop",
+   "year": 1999,
+   "label": "Kompakt",
+   "country": "de",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Kompakt「Pop Ambient」一路代表作：濾波過的暖色 loop 與厚墊，旋律化和聲反覆，霧濛濛。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "輕拍或無拍，濾波暖霧 loop，和聲甜"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8540f528-f92d-389b-80cb-0ac06e6cc34b",
+    "https://coverartarchive.org/release-group/8540f528-f92d-389b-80cb-0ac06e6cc34b/front",
+    "https://music.apple.com/us/album/intershop-remastered-2024/1735946893"
+   ],
+   "mbRgMbid": "8540f528-f92d-389b-80cb-0ac06e6cc34b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Dettinger",
+   "album": "Oasis",
+   "year": 2000,
+   "label": "Kompakt",
+   "country": "de",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Dettinger 第二張，更明亮的暖霧 loop，和聲旋律清楚，包覆感厚。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "無拍為主，陽光般暖霧和聲 loop"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d0835eb2-77ad-38d5-a9c4-19548857996e",
+    "https://coverartarchive.org/release-group/d0835eb2-77ad-38d5-a9c4-19548857996e/front",
+    "https://music.apple.com/us/album/oasis-remastered-2024/1736023282",
+    "https://www.discogs.com/master/62381"
+   ],
+   "mbRgMbid": "d0835eb2-77ad-38d5-a9c4-19548857996e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Triola",
+   "album": "Triola im Fünftonraum",
+   "year": 2004,
+   "label": "Kompakt",
+   "country": "de",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Jörg Burger 化名的 Kompakt pop ambient 全長，五聲音階的溫暖和弦長音，柔焦厚墊。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1,
+    "z": 0.5,
+    "why": "無鼓，Rhodes 般溫暖和弦長音霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7d75e5ff-b7dd-35fe-a2eb-bf6161205dc8",
+    "https://coverartarchive.org/release-group/7d75e5ff-b7dd-35fe-a2eb-bf6161205dc8/front",
+    "https://music.apple.com/us/album/triola-im-f%C3%BCnftonraum/282224876"
+   ],
+   "mbRgMbid": "7d75e5ff-b7dd-35fe-a2eb-bf6161205dc8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 正規名為「Triola im Fünftonraum」。"
+  },
+  {
+   "artist": "Alessandro Cortini",
+   "album": "AVANTI",
+   "year": 2017,
+   "label": "The Point of Departure Recording Company",
+   "country": "it",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "以家族 8mm 家庭錄影為題的合成器 drone，和弦旋律清楚、飽和溫厚、懷舊。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.3,
+    "z": 0.4,
+    "why": "無鼓，飽和合成器長音和弦，懷舊溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d3313ad7-83ca-4e06-b7a9-08602de7ed0a",
+    "https://coverartarchive.org/release-group/d3313ad7-83ca-4e06-b7a9-08602de7ed0a/front",
+    "https://music.apple.com/us/album/avanti/1267405189"
+   ],
+   "mbRgMbid": "d3313ad7-83ca-4e06-b7a9-08602de7ed0a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人《Sonno》落頹靡（-0.4）；本作明顯更暖（懷舊和弦），但仍有冷判風險。"
+  },
+  {
+   "artist": "Hollie Kenniff",
+   "album": "The Gathering Dawn",
+   "year": 2019,
+   "label": "n5MD",
+   "country": "us",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Mint Julep 成員的個人 ambient：殘響吉他、哼唱與合成長音疊成暖霧，旋律清楚。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1,
+    "z": 0.5,
+    "why": "無鼓，殘響吉他與人聲長音墊，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3907a016-75ae-44ab-8c3e-7900002d21ea",
+    "https://coverartarchive.org/release-group/3907a016-75ae-44ab-8c3e-7900002d21ea/front",
+    "https://music.apple.com/us/album/the-gathering-dawn/1483932149"
+   ],
+   "mbRgMbid": "3907a016-75ae-44ab-8c3e-7900002d21ea",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Hollie Kenniff",
+   "album": "The Quiet Drift",
+   "year": 2021,
+   "label": "Western Vinyl",
+   "country": "us",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Western Vinyl 發行，延續吉他殘響＋人聲長音的暖 ambient，和聲清楚。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1,
+    "z": 0.5,
+    "why": "無鼓，吉他殘響與合成墊，溫柔"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/462b9fc0-0e4c-4057-be46-14167d6cb8ad",
+    "https://coverartarchive.org/release-group/462b9fc0-0e4c-4057-be46-14167d6cb8ad/front",
+    "https://music.apple.com/us/album/the-quiet-drift/1565223965"
+   ],
+   "mbRgMbid": "462b9fc0-0e4c-4057-be46-14167d6cb8ad",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Hollie Kenniff",
+   "album": "We All Have Places That We Miss",
+   "year": 2023,
+   "label": "Western Vinyl",
+   "country": "us",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "以懷舊與思念為題的暖 ambient，吉他殘響與長音墊溫柔包覆。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1,
+    "z": 0.5,
+    "why": "無鼓，懷舊吉他殘響霧，旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b07a0447-8d32-45c1-8538-3e91419dfda6",
+    "https://coverartarchive.org/release-group/b07a0447-8d32-45c1-8538-3e91419dfda6/front",
+    "https://music.apple.com/us/album/we-all-have-places-that-we-miss/1651716777",
+    "https://www.allmusic.com/album/mw0003865873"
+   ],
+   "mbRgMbid": "b07a0447-8d32-45c1-8538-3e91419dfda6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mark McGuire",
+   "album": "Living With Yourself",
+   "year": 2010,
+   "label": "Editions Mego",
+   "country": "us",
+   "faction": "ext-a",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Emeralds 吉他手個人代表作：吉他 loop 層疊與家庭錄音片段，旋律清楚、懷舊溫暖。",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1,
+    "z": 0.7,
+    "why": "無鼓，吉他 loop 層疊、家庭錄音片段，溫暖懷舊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/11cf3bca-b7d5-4518-80b2-46c9c5d1b77c",
+    "https://coverartarchive.org/release-group/11cf3bca-b7d5-4518-80b2-46c9c5d1b77c/front",
+    "https://music.apple.com/us/album/living-with-yourself/1799294560",
+    "https://www.discogs.com/master/274430"
+   ],
+   "mbRgMbid": "11cf3bca-b7d5-4518-80b2-46c9c5d1b77c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "吉他 loop 分層清楚，y 可能被評 0.6–0.8。"
+  },
+  {
+   "artist": "Mark McGuire",
+   "album": "Get Lost",
+   "year": 2011,
+   "label": "Editions Mego",
+   "country": "us",
+   "faction": "ext-a",
+   "genres": [
+    "electronic"
+   ],
+   "why": "延續吉他 loop 暖 ambient，加入合成墊與人聲，旋律清楚、溫暖迷濛。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": 0.6,
+    "why": "無鼓，延遲吉他 loop 與合成墊，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3995e85f-acd7-485f-bbea-7c6243dcfe26",
+    "https://coverartarchive.org/release-group/3995e85f-acd7-485f-bbea-7c6243dcfe26/front",
+    "https://music.apple.com/us/album/get-lost/1825327204"
+   ],
+   "mbRgMbid": "3995e85f-acd7-485f-bbea-7c6243dcfe26",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上 y 風險。"
+  },
+  {
+   "artist": "Jefre Cantu-Ledesma",
+   "album": "On the Echoing Green",
+   "year": 2017,
+   "label": "Mexican Summer",
+   "country": "us",
+   "faction": "ext-a",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "比《A Year with 13 Moons》明亮許多的 shoegaze ambient，吉他糊霧裡有清楚旋律，溫暖。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.4,
+    "z": 0.5,
+    "why": "輕鼓機，shoegaze 吉他霧＋合成墊，溫柔有旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9746960b-71fe-4cbd-add7-17ceeec44076",
+    "https://coverartarchive.org/release-group/9746960b-71fe-4cbd-add7-17ceeec44076/front",
+    "https://music.apple.com/us/album/on-the-echoing-green/1775788365",
+    "https://www.allmusic.com/album/mw0003040895"
+   ],
+   "mbRgMbid": "9746960b-71fe-4cbd-add7-17ceeec44076",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人《A Year with 13 Moons》落頹靡（z -0.4）；本作是公認較明亮的一張，仍需研究層查樂評。"
+  },
+  {
+   "artist": "Jefre Cantu-Ledesma",
+   "album": "Love Is a Stream",
+   "year": 2010,
+   "label": "Type",
+   "country": "us",
+   "faction": "ext-a",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Type 發行的 shoegaze drone 代表作：糊化吉他牆與甜美和聲長音，厚而溫柔。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.6,
+    "z": 0.4,
+    "why": "無鼓，糊化吉他與合成牆，甜美長音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a7a06806-48ec-457f-a8de-d70a5858b6ee",
+    "https://coverartarchive.org/release-group/a7a06806-48ec-457f-a8de-d70a5858b6ee/front",
+    "https://music.apple.com/us/album/love-is-a-stream/394777086",
+    "https://www.allmusic.com/album/mw0002059569",
+    "https://www.discogs.com/master/284676"
+   ],
+   "mbRgMbid": "a7a06806-48ec-457f-a8de-d70a5858b6ee",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上：同人前例落冷；本作 blissful 取向但為噪音糊牆，z 有冷判風險。"
+  },
+  {
+   "artist": "Chuck Johnson",
+   "album": "Balsams",
+   "year": 2017,
+   "label": "VDSQ",
+   "country": "us",
+   "faction": "ext-a",
+   "genres": [
+    "electronic",
+    "folk"
+   ],
+   "why": "踏板鋼棉 ambient 代表作：鋼棉長音與殘響鋪成暖墊，和聲緩緩移動。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1,
+    "z": 0.5,
+    "why": "無鼓，踏板鋼棉長音殘響，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3ebe2c5b-cdbc-4182-be83-1307e7a75290",
+    "https://coverartarchive.org/release-group/3ebe2c5b-cdbc-4182-be83-1307e7a75290/front",
+    "https://music.apple.com/us/album/balsams/6804002847"
+   ],
+   "mbRgMbid": "3ebe2c5b-cdbc-4182-be83-1307e7a75290",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Chuck Johnson",
+   "album": "The Cinder Grove",
+   "year": 2021,
+   "label": "tak:til",
+   "country": "us",
+   "faction": "ext-a",
+   "genres": [
+    "electronic",
+    "folk"
+   ],
+   "why": "踏板鋼棉加弦樂與合成長音，比《Balsams》更厚的暖 ambient，旋律清楚。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1,
+    "z": 0.5,
+    "why": "無鼓，鋼棉＋弦樂長音，溫厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/167b511f-50c1-471b-9529-40a86d37dd96",
+    "https://coverartarchive.org/release-group/167b511f-50c1-471b-9529-40a86d37dd96/front",
+    "https://music.apple.com/us/album/the-cinder-grove/1792625312"
+   ],
+   "mbRgMbid": "167b511f-50c1-471b-9529-40a86d37dd96",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Luke Schneider",
+   "album": "Altar of Harmony",
+   "year": 2020,
+   "label": "Third Man Records",
+   "country": "us",
+   "faction": "ext-a",
+   "genres": [
+    "electronic",
+    "folk"
+   ],
+   "why": "納許維爾鋼棉手的 ambient 全長，鋼棉長音與殘響疊成溫暖和聲雲。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1,
+    "z": 0.5,
+    "why": "無鼓，踏板鋼棉殘響長音，溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/123c566a-4a31-495d-a42a-4e56edce4559",
+    "https://coverartarchive.org/release-group/123c566a-4a31-495d-a42a-4e56edce4559/front",
+    "https://music.apple.com/us/album/altar-of-harmony/1854881147",
+    "https://www.discogs.com/master/1760918"
+   ],
+   "mbRgMbid": "123c566a-4a31-495d-a42a-4e56edce4559",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "SUSS",
+   "album": "High Line",
+   "year": 2019,
+   "label": "Northern Spy",
+   "country": "us",
+   "faction": "ext-a",
+   "genres": [
+    "electronic",
+    "folk"
+   ],
+   "why": "「ambient country」代表團：鋼棉、口琴與合成長音在殘響裡飄，旋律清楚溫暖。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "無鼓，鋼棉、口琴與合成墊殘響，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f7693398-fed6-4846-b370-7074b881a85f",
+    "https://coverartarchive.org/release-group/f7693398-fed6-4846-b370-7074b881a85f/front",
+    "https://music.apple.com/us/album/high-line/1476594461"
+   ],
+   "mbRgMbid": "f7693398-fed6-4846-b370-7074b881a85f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能貼 0.8。"
+  },
+  {
+   "artist": "SUSS",
+   "album": "Ghost Box",
+   "year": 2018,
+   "label": "EVP Recordings",
+   "country": "us",
+   "faction": "ext-a",
+   "genres": [
+    "electronic",
+    "folk"
+   ],
+   "why": "首張全長，西部吉他與合成墊的 ambient country，溫暖慢。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "無鼓，西部吉他與合成墊殘響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b342d63f-6d06-4f1d-b7dc-65b624de9466",
+    "https://coverartarchive.org/release-group/b342d63f-6d06-4f1d-b7dc-65b624de9466/front",
+    "https://music.apple.com/us/album/ghost-box-expanded/1436080100"
+   ],
+   "mbRgMbid": "b342d63f-6d06-4f1d-b7dc-65b624de9466",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上。"
+  },
+  {
+   "artist": "Michael Brook",
+   "album": "Hybrid",
+   "year": 1985,
+   "label": "Editions EG",
+   "country": "ca",
+   "faction": "ext-a",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Eno、Lanois 共製的 infinite guitar ambient，吉他長音延音與殘響厚，旋律清楚。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1,
+    "z": 0.4,
+    "why": "輕打擊，infinite guitar 長音殘響，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1696441a-25cd-32df-aad8-9ba367ea658c",
+    "https://coverartarchive.org/release-group/1696441a-25cd-32df-aad8-9ba367ea658c/front",
+    "https://music.apple.com/us/album/hybrid/714609028",
+    "https://www.discogs.com/master/32575"
+   ],
+   "mbRgMbid": "1696441a-25cd-32df-aad8-9ba367ea658c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Eno 系 ambient 池中多判輕；若評輕可汰。MB 掛名含 Eno & Lanois。"
+  },
+  {
+   "artist": "Robin Guthrie and Mark Gardener",
+   "album": "Universal Road",
+   "year": 2015,
+   "label": "soleil après minuit",
+   "country": "gb",
+   "faction": "ext-a",
+   "genres": [
+    "rock"
+   ],
+   "why": "Guthrie 與 Ride 的 Mark Gardener 合作，Cocteau 式 chorus 吉他霧配柔聲，池中 Guthrie 器樂盤全落恍惚。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "慢鼓，chorus 吉他殘響牆＋柔聲，旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bd64944a-0cb1-4d0c-85ee-e3d1322ebbc0",
+    "https://coverartarchive.org/release-group/bd64944a-0cb1-4d0c-85ee-e3d1322ebbc0/front",
+    "https://music.apple.com/us/album/universal-road/969057004",
+    "https://www.allmusic.com/album/mw0002815413",
+    "https://www.discogs.com/master/857017"
+   ],
+   "mbRgMbid": "bd64944a-0cb1-4d0c-85ee-e3d1322ebbc0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Robin Guthrie",
+   "album": "Pearldiving",
+   "year": 2021,
+   "label": "soleil après minuit",
+   "country": "gb",
+   "faction": "ext-a",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Guthrie 器樂 ambient 吉他盤，延續《Emeralds》《Fortune》（池中恍惚）的暖 chorus 霧。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "輕鼓或無鼓，chorus 吉他殘響，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/745e6f17-b644-41d8-88c3-d342870f3145",
+    "https://coverartarchive.org/release-group/745e6f17-b644-41d8-88c3-d342870f3145/front",
+    "https://music.apple.com/us/album/pearldiving/1590850222",
+    "https://www.allmusic.com/album/mw0003612480",
+    "https://www.discogs.com/master/2377801"
+   ],
+   "mbRgMbid": "745e6f17-b644-41d8-88c3-d342870f3145",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jonas Munk",
+   "album": "Pan",
+   "year": 2012,
+   "label": "El Paraiso Records",
+   "country": "dk",
+   "faction": "ext-a",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Manual 本人以本名發的暖迷幻 ambient，吉他與類比合成厚墊，池中 Manual 多張落恍惚。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "輕律動，迷幻吉他與類比合成墊，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e1a818fb-4ecd-46f4-b9c9-6784f7d2bc1b",
+    "https://coverartarchive.org/release-group/e1a818fb-4ecd-46f4-b9c9-6784f7d2bc1b/front",
+    "https://music.apple.com/us/album/pan/522549192",
+    "https://www.allmusic.com/album/mw0002359871",
+    "https://www.discogs.com/master/439669"
+   ],
+   "mbRgMbid": "e1a818fb-4ecd-46f4-b9c9-6784f7d2bc1b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lights Out Asia",
+   "album": "Tanks and Recognizers",
+   "year": 2007,
+   "label": "n5MD",
+   "country": "us",
+   "faction": "ext-a",
+   "genres": [
+    "electronic"
+   ],
+   "why": "n5MD 的 ambient／shoegaze 電子，吉他殘響與合成墊厚，有柔聲旋律。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "輕電子拍，吉他殘響＋合成墊與柔聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cc7c0037-8b2f-3b91-b90f-fd75806dd8f8",
+    "https://coverartarchive.org/release-group/cc7c0037-8b2f-3b91-b90f-fd75806dd8f8/front",
+    "https://music.apple.com/us/album/tanks-and-recognizers/258829933",
+    "https://www.discogs.com/master/181172"
+   ],
+   "mbRgMbid": "cc7c0037-8b2f-3b91-b90f-fd75806dd8f8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能貼 0.3。"
+  },
+  {
+   "artist": "The Orb featuring David Gilmour",
+   "album": "Metallic Spheres",
+   "year": 2010,
+   "label": "Sony Music",
+   "country": "gb",
+   "faction": "ext-b",
+   "genres": [
+    "electronic"
+   ],
+   "why": "The Orb 與 David Gilmour 的長篇 ambient dub，dub 低音與回音配 Gilmour 溫暖吉他旋律。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "慢 dub 律動，Gilmour 滑音吉他旋律＋厚墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/02050e51-32a2-4fb2-a2ac-90a4f1e8b585",
+    "https://coverartarchive.org/release-group/02050e51-32a2-4fb2-a2ac-90a4f1e8b585/front",
+    "https://music.apple.com/us/album/metallic-spheres/395507386",
+    "https://www.allmusic.com/album/mw0002037815",
+    "https://www.discogs.com/master/280395"
+   ],
+   "mbRgMbid": "02050e51-32a2-4fb2-a2ac-90a4f1e8b585",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Orb 池中冷暖不一；以 Gilmour 旋律主導判暖。"
+  },
+  {
+   "artist": "Easy Star All-Stars",
+   "album": "Radiodread",
+   "year": 2006,
+   "label": "Easy Star Records",
+   "country": "us",
+   "faction": "ext-b",
+   "genres": [
+    "world"
+   ],
+   "why": "以 roots／dub 改編《OK Computer》，重低音與回音，旋律清楚；姊妹作《Dub Side of the Moon》池中恍惚。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "one-drop 慢拍，重低音、回音，旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a78c934c-81a7-3117-83fa-f9c379c1a68b",
+    "https://coverartarchive.org/release-group/a78c934c-81a7-3117-83fa-f9c379c1a68b/front",
+    "https://music.apple.com/us/album/radiodread-special-edition/1124258071",
+    "https://www.allmusic.com/album/mw0000778669",
+    "https://www.discogs.com/master/63030"
+   ],
+   "mbRgMbid": "a78c934c-81a7-3117-83fa-f9c379c1a68b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "原曲冷調，z 可能被拉低。"
+  },
+  {
+   "artist": "Easy Star All-Stars",
+   "album": "Easy Star’s Lonely Hearts Dub Band",
+   "year": 2009,
+   "label": "Easy Star Records",
+   "country": "us",
+   "faction": "ext-b",
+   "genres": [
+    "world"
+   ],
+   "why": "以 reggae／dub 改編《Sgt. Pepper》，Beatles 旋律配重低音與回音，暖。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 0.9,
+    "why": "one-drop 慢拍，重低音、回音，甜旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3adcb2c5-2f70-35f1-9b4e-e8765acf3177",
+    "https://coverartarchive.org/release-group/3adcb2c5-2f70-35f1-9b4e-e8765acf3177/front",
+    "https://music.apple.com/us/album/easy-stars-lonely-hearts-dub-band-bonus-track-version/309072993",
+    "https://www.allmusic.com/album/mw0000813322",
+    "https://www.discogs.com/master/195398"
+   ],
+   "mbRgMbid": "3adcb2c5-2f70-35f1-9b4e-e8765acf3177",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分曲為 ska 快板，x 可能 2.7–2.8。"
+  },
+  {
+   "artist": "Hol Baumann",
+   "album": "Human",
+   "year": 2008,
+   "label": "Ultimae Records",
+   "country": "fr",
+   "faction": "ext-b",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Ultimae 廠牌的暖 downtempo：dub 低音與回音，旋律清楚的合成器與民族取樣。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 0.5,
+    "why": "慢拍 dub 低音，溫暖合成墊與旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/76cb6202-ffe6-39c0-829a-552907fc9c9a",
+    "https://coverartarchive.org/release-group/76cb6202-ffe6-39c0-829a-552907fc9c9a/front"
+   ],
+   "mbRgMbid": "76cb6202-ffe6-39c0-829a-552907fc9c9a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首版無廠牌，Ultimae 憑記憶。"
+  },
+  {
+   "artist": "Bluetech",
+   "album": "Sines and Singularities",
+   "year": 2005,
+   "label": "Aleph Zero Records",
+   "country": "us",
+   "faction": "ext-b",
+   "genres": [
+    "electronic"
+   ],
+   "why": "psy-dub 代表作：dub 低音與回音、glitch 細節，合成旋律溫暖。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "慢 dub 拍，重低音、glitch、溫暖合成旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fa730f7a-aa32-3f37-8036-3f60689b3a71",
+    "https://coverartarchive.org/release-group/fa730f7a-aa32-3f37-8036-3f60689b3a71/front",
+    "https://music.apple.com/us/album/sines-and-singularities-2020-remastered/1797789661"
+   ],
+   "mbRgMbid": "fa730f7a-aa32-3f37-8036-3f60689b3a71",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "glitch 細節多，z 可能中性。"
+  },
+  {
+   "artist": "Entheogenic",
+   "album": "Spontaneous Illumination",
+   "year": 2003,
+   "label": "Universal Symbiosis Records",
+   "country": "",
+   "faction": "ext-b",
+   "genres": [
+    "electronic"
+   ],
+   "why": "psychill／psy-dub 名盤：dub 低音、回音與厚合成墊，旋律清楚。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "慢拍，dub 低音與回音，暖合成墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e6776a62-4ab9-3075-8c08-63562205b3a1",
+    "https://coverartarchive.org/release-group/e6776a62-4ab9-3075-8c08-63562205b3a1/front",
+    "https://music.apple.com/us/album/spontaneous-illumination/292299211",
+    "https://www.discogs.com/master/138533",
+    "https://en.wikipedia.org/wiki/Spontaneous_Illumination"
+   ],
+   "mbRgMbid": "e6776a62-4ab9-3075-8c08-63562205b3a1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Shulman",
+   "album": "In Search of a Meaningful Moment",
+   "year": 2003,
+   "label": "Aleph Zero Records",
+   "country": "il",
+   "faction": "ext-b",
+   "genres": [
+    "electronic"
+   ],
+   "why": "以色列 psy-chill 代表作，dub 低音與回音配吉他旋律，溫暖。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "慢拍，dub 低音、吉他與溫暖合成墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2af1ce84-629c-32a0-9708-ddbee68b5d53",
+    "https://coverartarchive.org/release-group/2af1ce84-629c-32a0-9708-ddbee68b5d53/front",
+    "https://www.discogs.com/master/13908"
+   ],
+   "mbRgMbid": "2af1ce84-629c-32a0-9708-ddbee68b5d53",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Hollie Cook",
+   "album": "Happy Hour",
+   "year": 2022,
+   "label": "Merge Records",
+   "country": "gb",
+   "faction": "ext-b",
+   "genres": [
+    "world"
+   ],
+   "why": "熱帶 lovers rock 與 dub 製作，重低音與回音、甜美旋律；池中同人四張全落恍惚。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 1.4,
+    "why": "one-drop 慢拍，重低音、回音，甜嗓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/21264482-c6d0-4c0c-8abf-2efbdaa40e4f",
+    "https://coverartarchive.org/release-group/21264482-c6d0-4c0c-8abf-2efbdaa40e4f/front",
+    "https://music.apple.com/us/album/happy-hour/1839174011",
+    "https://www.allmusic.com/album/mw0003693548",
+    "https://www.discogs.com/master/2681483"
+   ],
+   "mbRgMbid": "21264482-c6d0-4c0c-8abf-2efbdaa40e4f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Stick Figure",
+   "album": "Burial Ground",
+   "year": 2012,
+   "label": "Stickfigure Records",
+   "country": "us",
+   "faction": "ext-b",
+   "genres": [
+    "world"
+   ],
+   "why": "美國 dub-reggae：慢拍、厚低音、大量 dub 回音，旋律溫暖好入耳。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.9,
+    "why": "慢 one-drop，厚低音、dub 回音，旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dc62b06d-0faa-455a-92e0-9d9b673404d6",
+    "https://coverartarchive.org/release-group/dc62b06d-0faa-455a-92e0-9d9b673404d6/front",
+    "https://music.apple.com/us/album/burial-ground/533496775",
+    "https://www.allmusic.com/album/mw0002403541",
+    "https://www.discogs.com/master/1105366"
+   ],
+   "mbRgMbid": "dc62b06d-0faa-455a-92e0-9d9b673404d6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Stick Figure",
+   "album": "Set in Stone",
+   "year": 2015,
+   "label": "Ruffwood Records",
+   "country": "us",
+   "faction": "ext-b",
+   "genres": [
+    "world"
+   ],
+   "why": "Stick Figure 突破作，慢而厚的 dub-reggae，重低音與回音、旋律清楚。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.9,
+    "why": "慢 one-drop，厚低音、回音，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e91c47f1-a21a-448c-98f2-b2b2e4ee2ffc",
+    "https://coverartarchive.org/release-group/e91c47f1-a21a-448c-98f2-b2b2e4ee2ffc/front",
+    "https://music.apple.com/us/album/set-in-stone/1045767173",
+    "https://www.allmusic.com/album/mw0002881566",
+    "https://www.discogs.com/master/1002624"
+   ],
+   "mbRgMbid": "e91c47f1-a21a-448c-98f2-b2b2e4ee2ffc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Stick Figure",
+   "album": "World on Fire",
+   "year": 2019,
+   "label": "Ruffwood Records",
+   "country": "us",
+   "faction": "ext-b",
+   "genres": [
+    "world"
+   ],
+   "why": "延續厚低音＋回音的慢 dub-reggae，溫暖旋律。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.9,
+    "why": "慢 one-drop，厚低音、dub 回音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8a729172-ae18-4ab2-b883-6517a694b13e",
+    "https://coverartarchive.org/release-group/8a729172-ae18-4ab2-b883-6517a694b13e/front",
+    "https://music.apple.com/us/album/world-on-fire/1474970495",
+    "https://www.allmusic.com/album/mw0003316583",
+    "https://www.discogs.com/master/1739097"
+   ],
+   "mbRgMbid": "8a729172-ae18-4ab2-b883-6517a694b13e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Stick Figure",
+   "album": "Wisdom",
+   "year": 2022,
+   "label": "Ruffwood Records",
+   "country": "us",
+   "faction": "ext-b",
+   "genres": [
+    "world"
+   ],
+   "why": "2022 年作，同型慢 dub-reggae，重低音溫暖。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.9,
+    "why": "慢 one-drop，厚低音、dub 回音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9215e9b9-f726-4068-ab33-23843b0c8be4",
+    "https://coverartarchive.org/release-group/9215e9b9-f726-4068-ab33-23843b0c8be4/front",
+    "https://music.apple.com/us/album/wisdom/1632936282"
+   ],
+   "mbRgMbid": "9215e9b9-f726-4068-ab33-23843b0c8be4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同人四張同型，主線可擇二。"
+  },
+  {
+   "artist": "Trinity Roots",
+   "album": "Citizen",
+   "year": 2015,
+   "label": "",
+   "country": "nz",
+   "faction": "ext-b",
+   "genres": [
+    "world",
+    "soul"
+   ],
+   "why": "紐西蘭 roots／dub 靈魂樂團第三張，慢律動、dub 低音、溫暖人聲；前兩張池中恍惚。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 1.1,
+    "why": "慢 roots 律動，dub 低音、靈魂人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/813cd781-3fa5-47fa-889c-fa83a2ce5d2c",
+    "https://coverartarchive.org/release-group/813cd781-3fa5-47fa-889c-fa83a2ce5d2c/front",
+    "https://music.apple.com/us/album/citizen/1774615936"
+   ],
+   "mbRgMbid": "813cd781-3fa5-47fa-889c-fa83a2ce5d2c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "製作較前作乾淨則 y 可能貼 0.8。"
+  }
+ ],
+ "notes": [
+  "只交 46 張（目標 54）：主場景在池中幾乎都是反例——Chihei Hatakeyama、Lawrence English、Stars of the Lid、Gas、bvdub（與 loscil 合作）落頹靡；Steve Roach、Michael Stearns、Eno、Budd、Gigi Masin、Yokota 等旋律 ambient／new age 全判輕；Carbon Based Lifeforms 判冷輕。能過三條邊距的只剩『吉他／鋼棉／磁帶 loop＋和聲清楚』與『dub 重低音＋旋律』兩型，不湊數。",
+  "不提（池中同人反例）：Chihei Hatakeyama 暖盤（池中兩張頹靡，md18 已收《Minima Moralia》）、Lawrence English《A Colour for Autumn》（池中三張頹靡）、Taylor Deupree（12k 極簡、稀疏，判輕風險；《Northern》題名冷）、Federico Durand（音樂盒高頻，判輕）、Eluvium 其他 drone（池中《Talk Amongst the Trees》z0.2）、Fennesz《Mosaic》（池中同型 z0.2–0.3 貼邊）、Kaito（mc5 已提）。",
+  "跨組去重排除：Hammock 剩下的主盤（Kenotic、Departure Songs、Universalis、Everything and Nothing 都已在其他組被提過並汰）、Guthrie & Budd《Before the Day Breaks》《Bordeaux》（ml44 判冷／判輕已汰）、Guthrie《Imperial》（ml2 汰）、Manual 全部（ml2／ml24／ml34）、Lanois《Belladonna》《Shine》（ml34）、Tosca／Dub Colossus／Prince Fatty／Boozoo Bajou 剩餘盤（ml9／ml15／ml40 已提）、Hollie Cook《Vessel of Love》（ml40）、Fat Freddy's Drop 前四張（ml15／ml40）、Kaya Project 三張（ml15）。",
+  "考慮後不提：Fat Freddy's Drop《Bays》（電子舞曲感、x 恐 ≥2.9）、《Special Edition Part 1》（MB 為 EP）、《Wairunga》（MB 為 Live）；Salmonella Dub 兩張（有 dnb／breaks 推進）；Jah Wobble《Chinese Dub》《Japanese Dub》（池中同人 z0.1–0.4 貼邊）；Pioulard《Avocationals》（MB 為與 Sean Curtis Patrick 合作）；Bluetech《Phoenix Arising》（MB 查無）；Casino Versus Japan 其他盤（池中 z0.4–0.6 貼邊、《Frozen Geometry》題冷）；Hotel Neon《Inward》（6 首、長度近 EP）；Celer《Capri》（29 段短片段）；Harold Budd & Robin Guthrie《Another Flower》（Budd 鋼琴領軍＋姊妹作已判冷）。",
+  "主要風險：main 派系的 drone 盤（Celer、Pioulard、Marcus Fischer、Hotel Neon、Dettinger、Triola）模型對冷門 ambient 多給 z≈0–0.3，預期落格率低於 ext-b；Cortini《Avanti》與 Cantu-Ledesma 兩張有同人落冷先例。研究層請優先查這幾張的樂評冷暖字（cold／bleak／elegiac 出現就汰）。ext-b 的 Stick Figure 四張同型，主線可擇二。",
+  "46 張全部 MB 釘住（Album、無 secondary type），0 張人工身分；CAA release-group 封面 HEAD 皆 307（有圖）。WebSearch 用 2 次（查無有用樂評）。"
+ ]
+}
