@@ -114,3 +114,11 @@
 - **20663** hook 代稱與複述：Humming Tapes 的開盤機、走音、降靈會已在 hook，正文只補「題目出自他對舊式降靈會與那個年代的興趣」；Border 的「穿梭各界」與 hook 同義，改寫成「出神之後重生，回來替族人治病」；Forsaken 的瑞典→奧勒岡已在 hook，正文改補廠牌名、Simon Heath 2011 創辦與合作重心；Ice Breath 的「紛亂中安靜」與 hook 同義，整格不寫。Border、Black Hive、Arctic Gates、Monuments 的 note 無樂種字，開頭兩句以 hook 的 drone／音景與國別帶出身分，未從 facts 撈 dark ambient。Sanctum 的 Scorpio V 性別未載，全文不用代名詞。
 - **20664** 派工補充照辦：媒體名、樂評、分數、榜單整句不寫；全檔「據」字 0。無鼓類只留 Cthulhu「整首沒有鼓」（note 指派）、Azathoth「找不到任何拍點」、Black Hive「全程無拍」、Sanctum「不靠節拍推進」四種不同句；「低頻」只在 Cthulhu、Forsaken、Eschate Thule，drone／嗡聲／持續音／長音／音墊輪用，避免逐張同句。來源平台名不進正文（Bandcamp 頁一律寫「文案」）。Nyarlathotep「瘋狂而非毀滅」照 note 的對照語，非更正式否定。
 - **20665** 自掃（scratchpad `wr-md28-1/chk-md28-1.mjs`，han() 4-gram，合掃 out-1＋out-2 34 張含 hook）：初稿撞「首約分鐘」×9、「年月推出」×3、「長約分鐘」×3、「以之名做／個人計畫」、「年月出版」、「他另一個身分是」、「沉的嗡鳴」等，逐條整名詞改掉；定稿 3 張以上只剩術語「田野錄音」與地名「白俄羅斯」，2 張殘片只剩規定用語「二十多位」（Azathoth hook × Nyarlathotep 正文）、地名「烏克蘭的／俄羅斯的」（其一在 hook）。`node qa-batch.mjs out add-20261023-md28` 34 張與卡單相符、全部通過；`qa-check-research` 17 張標記 0；`fix-spacing` 待補 0。
+
+## 主線審稿（20671–20675；2026-10-23）
+- 20671：逐張審 34 張（out-1 17、out-2 17），逐句對回研究稿 facts；qa-batch hooks／out、chk-hook-crossgroup、qa-check-research（兩檔）、fix-spacing 皆 0 標記；正文無媒體名、無據字。
+- 20672：改 3 處：
+  - `Alphaxone & Xerxes The Dark|Aftermath`：hook「他被稱為伊朗實驗場景的先行者，這回寫起外星訊號。」→「外星世界的一座黑色巨石，不停發出訊號。」——「先行者」只出自 Discogs 藝人簡介（單源評價），且「他」指涉不明；正文「文案寫的是一則科幻故事：外星世界有一座黑色巨石不斷發出訊號，四周伴著嗡嗡低鳴。」→「這是文案寫的科幻故事，巨石四周還伴著嗡嗡低鳴。」避免與新 hook 重複。hooks-c、writer-2 input 的 hook 欄已同步。
+  - `Metatron Omega|Sanctum`：hook「向來描繪」→「常被拿來描繪」（語意不通順；事實照研究 c 組 Discogs 簡介）。hooks-c、writer-1 input 已同步。
+  - `Council of Nine|Exit Earth`：「Olivier 全名 Maximillian Olivier，在加州經營」→「Maximillian Olivier 在加州經營」（語句不通）。
+- 20673：核過未改——Ugasanie 在 Cryo Chamber 第五張（研究 a 組）、Aegri Somnia 克羅埃西亞與 Jurica Santek（Bandcamp 署名）、Echo 的 Kozletsky angelic choirs（廠牌文案）、Psychomanteum「通道」頭銜（Discogs 名單）、Necrophorus《Drifting in Motion》只寫 2000 年首版（未提重錄版與 Beksiński）、Sleep Research Facility 格拉斯哥與 2000 年起（Discogs／Cold Spring）、Arecibo NASA 深空網路素材（原版內頁）。天堂之門題材筆調克制、無細節。
