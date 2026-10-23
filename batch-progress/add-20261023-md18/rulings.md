@@ -22,3 +22,18 @@
 - 18065　Deathprod 三張：《Occulting Disk》有 mxdwn 樂評（無鼓，合成器低頻＋靜電噪音層）；卡單「失真小提琴」查無來源未採用。《Sow Your Gold》為 Harry Partch 樂器的音響配樂，Partch 樂器偏敲擊撥弦，是否有清楚敲擊無評論，thin；《Let Me Be Forever Animal》是孟克美術館委託的四聲道作品之立體聲版，限量 300 張黑膠、無數位版，卡單「Tired Light／Fugue」查無來源未採用，thin，且試聽可能取得困難。
 - 18066　raison d'être：原標題拼寫「Lonelienes」依 MB；有評者說這是最「明亮」的一張，z 可能比池中同人略暖。
 - 推翻策展層：2 處（《Let Me Be Forever Animal》曲名、《Occulting Disk》小提琴）；moodGuess 存疑：1 張強（Supersilent《8》）、2 張輕（Westerhus、raison d'être）。
+
+## 研究 d 組
+- 18071　d 組九張（raison d'être 四、Svartsinn 三、Northaunt 二）專輯層級的聲音來源幾乎只有廠牌 Bandcamp 文案與標籤，無職業樂評；Stains／Daemonum／Svartsinn 兩張／Ominous Silence 標 thin，其餘 full。WebSearch 兩組合計 4 次已用盡（e 組用）。
+- 18072　Svartsinn《Of Darkness and Re-Creation》發行日 Bandcamp 標 2003-12-01、MB 2003-05，取年份 2003；卡單「第二張」無來源，寫作勿寫序數。
+- 18073　moodGuess 存疑（d 組）：Northaunt《The Ominous Silence》Discogs 明載 Ketil Søraker 全部吉他、聽眾稱「旋律性」，z 可能比 −1.5 暖；Svartsinn《Mørkets Variabler》有大提琴（Amund Ulvestad），色溫可能偏暖；《Elegies for the End》廠牌稱「較旋律化」且第二碟為他人混音。三張建議 z 往 −1.0 看。
+- 18074　其餘 d 組（Stains、Mise en abyme、Alchymeia、Daemonum、Horizons）與無拍、冷的預估不衝突；Alchymeia 文案稱 drone「有時輕如羽毛」。推翻策展層 0 處。
+
+## 研究 e 組
+- 18081　Skepticism《Lead and Aether》：查無專輯層級樂評談嘶吼與鼓；Alloy 樂評（同團另一張）提到死亡／厄運式低吼與柔軟鼓棒，不寫進 facts。只憑 funeral doom 類型常態推斷極慢，無證據顯示繃緊，標 thin，建議留。
+- 18082　Ø《Oleva》：Headphone Commute 明說「pounding minimal beats」「tight rhythmic components」，RA 稱「stripped-down beats」。與卡單「幾乎無拍」衝突，moodGuess 存疑（強），建議汰換或重評為偏躁。
+- 18083　Ø《Konstellaatio》：RA 評語「sorrowful and hypnotic」、氛圍為主，較無節拍，y 厚度無來源，thin；維持，邊界卡交評分。Vainio 辭世屬發行後事件未入 facts。
+- 18084　Klara Lewis《Ett》：廠牌文案列「repetition」，Forced Exposure 稱早期作品有 pulsing core，文案強調人性溫度與玩心、「譫妄到溫柔」；卡單「磁帶糊與低頻霧」查無。moodGuess 存疑（強），建議重評或汰換。《Too》：廠牌稱「blurred／jittered rhythms」「dour and aggressive elements」「pop like structures」，與卡單「無鼓、厚殘響」不符，moodGuess 存疑（強），優先汰換。
+- 18085　Kammarheit《Thronal》：聽眾評「鐵與石、infra-bass、不落入 loop」，卡單「低頻循環」不確定，視為無拍重 drone。Atrium Carceri & Kammarheit《Colossus》：文案有 throbbing pulses／pulsating subs，無鼓組，但脈動是否繃緊不明，取邊緣值。
+- 18086　Northaunt《Istid I–II》full；Northaunt & Svartsinn《The Borrowed World》thin（僅標籤與靈感來自《The Road》）。推翻策展層 0 處。
+- moodGuess 存疑小結（e 組）：強 3 張（Ø《Oleva》、Klara Lewis《Ett》《Too》）；輕 1 張（Colossus 脈衝）。d 組輕 3 張（見 18073）。
