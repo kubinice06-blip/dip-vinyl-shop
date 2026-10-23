@@ -16,3 +16,10 @@
 - 更正：`Laser Dance｜Technological Mind` 藝人名統一為 MB 正規 `Laserdance`。Kraftwerk《The Mix》MB 為 Album＋Remix（重錄新編，非精選），收。
 - **場景挖不到 45**：Italo／space disco 多為 12 吋單曲無正規專輯（Klein & MBO、Mr. Flagio、Charlie、Droids）；Moroder 柏林期主盤、Kraftwerk 主盤已在池；Tomita 快作 MB 查無。照實上架，不湊數。
 - 研究層要核：有無吉他／真鼓、速度、厚薄、人聲甜不甜；與 moodGuess 不符的標存疑。
+
+## 研究 a 組（條號 11801–11810；七張 Kraftwerk 系周邊與 Grosskopf）
+- 11801：Yamo《Time Pie》與 Wolfgang Flür／U96《Transhuman》兩張 moodGuess 重度存疑。Time Pie 是 Mouse on Mars 製作的 IDM／downtempo 電子流行、多位女歌手客唱（評論用 bouncy／melodic）；Transhuman 是 U96 舞曲取向 16 首（house 搏動低音、Europop 歌曲、EDM 混音），y 很可能 ≥ 0.3。建議主線汰換或以聽感重評。
+- 11802：卡單廠牌與年份推翻——Time Pie 廠牌應為 EMI Electrola（德國 1996），非 Mutant Pop，卡單 mbNote 的 Discogs release/26055 是 1997 年美國 Hypnotic 版；Esperanto 廠牌應為 SPV（歐 East West、美 Atlantic），非 Rykodisc；Transhuman 廠牌 UNLTD Recordings／Radikal Records，非「Flür」，且是 U96 與 Flür 合作專輯、不是 Flür 個人盤（MB 署名 U96 / Wolfgang Flür）。facts 只寫查證後的版本。
+- 11803：Grosskopf《Synthesist》z 存疑（RVNG／Fact 稱有溫度與 new age 色彩，Sonic Immersion 稱 airy、lush），Karl Bartos《Communication》x 存疑（Exclaim! 稱許多曲子 mid-tempo，AllMusic 比 OMD／Pet Shop Boys 的旋律流行）；《The Mix》y 可能比預估重（Christgau：低頻加強）。這三張維持 full、不列建議移除，由主線依 moodGuess 邊距決定。
+- 11804：Kraftwerk《The Mix》依主線既有裁定視為重錄新編專輯（MB Album＋Remix），歷史定位明確（Wire 1991 年度第一、成為其後現場版本）；Bartos 稱全部編程是他做的，facts 標為他的說法。
+- 11805：本組 WebSearch 實際用了 4 次（Synthesist、Communication、Transhuman、Time Pie 各一），超出每支 3 次的上限一次；其餘走 Wikipedia raw、MB、Discogs API 與 WebFetch。AllMusic、Pitchfork、BBC 無法抓取，評論引述改由 Wikipedia 評論段轉述。

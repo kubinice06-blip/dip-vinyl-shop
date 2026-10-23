@@ -70,3 +70,10 @@
 - **14828** 本組 8 張身分均 MB 釘住且盤名、年份一致，無 §1 人工卡；無選輯、無重複卡。BMSR《Dandelion Gum》大致成立（downtempo、Rhodes／vocoder／鼓機／長笛循環），為本組最穩。
 - **14829** Tobacco「polished a turd」與「Twin of Myself」偏好出自 Wikipedia 轉引的 Reddit AMA，原帖未取得，寫作層請以「他後來說」處理，不加引號當逐字。
 - **14830** WebSearch 本組用 5 次（超出 3 次上限）：Pitchfork、AllMusic、Tiny Mix Tapes（部分）擋 WebFetch，Discogs API／MB API／Bandcamp／Wikipedia 為主。
+
+## 主線：研究後汰換（不佔條號）
+- 研究層 moodGuess 存疑，主線**直接汰 11 張**（移入 `dropped-cards.json`，研究稿同步刪條）：Yellow Days《A Day in a Yellow Beat》（自稱 upbeat dance、disco／psych funk、乾淨）、Small Black《Limits of Desire》（真鼓電吉他小號、clubby 光潔）、Youth Lagoon《Savage Hills Ballroom》（殘響拿掉、人聲乾、冷峻）、Vansire《After Fillmore County》（EP、往舞曲放克走）、Blackbird Blackbird《Summer Heart》（輕快夏日舞會）、Black Moth Super Rainbow《Panic Blooms》（bouncy 鼓機、尖冷合成器）、Puro Instinct《Headbangers in Ecstasy》（kinetic disco 律動、明亮吉他）、Washed Out《Notes from a Quiet Life》（groovy、Italo disco 取向）、Cuco《Para mi》（808 與真鼓、rhythmically punchy）、Homeshake《Midnight Snack》（精簡乾淨、鼓機清脆）、《Helium》（本人稱 dry, pristine digital）。
+- 存疑但保留：Washed Out《Mister Mellow》（dense 取樣但整體慢而鬆）、Teen Daze《The Inner Mansions》（局部 house 拍）、BMSR《Falling Through a Field》（z 可能偏陰）、Peaking Lights《Imaginary Falcons》（證據薄）。評分後看落格。
+- 卡單更正（依研究稿）：Ducktails《Landscapes》→ Olde English Spelling Bee、《Ducktails》→ Not Not Fun；Yellow Days 兩張早期作 → Good Years；Papercuts《You Can Have What You Want》→ Gnomonsong；Vansire《Angel Youth》→ Spirit Goth Records；BMSR《Falling Through a Field》《Start a People》→ 70s Gymnastics Recording Co.、《Dandelion Gum》《Eating Us》→ Graveface Records；Peaking Lights《Imaginary Falcons》→ Night People。
+- 定案 **27 張**（研究 a 5、b 6、c 7、d 5、e 4）。`qa-batch research` 全過。
+- 研究 b、c 組 WebSearch 各超 3 次上限（6、5 次；Pitchfork／AllMusic 擋 WebFetch），已記。
