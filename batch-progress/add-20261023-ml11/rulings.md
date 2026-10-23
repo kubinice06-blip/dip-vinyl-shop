@@ -35,3 +35,38 @@
 - **14818** Blackbird Blackbird《Hearts》標 thin：只有 Bandcamp 曲目與 MB 標籤，查無樂評；moodGuess 三軸皆缺證據，存疑。另 MB 有 2020-01-15 LP 版，同一 release-group。
 - **14819** 本組 8 張身分均 MB 釘住且盤名、年份一致，無 §1 人工卡；無選輯或重複卡。
 - **14820** WebSearch 本組用了約 6 次（超出 3 次上限），因 Pitchfork、AllMusic、Discogs 皆擋 WebFetch。
+
+## 研究 a 組（14801–14810）
+- **14801** Small Black《Limits of Desire》：推翻策展層聲音。Jagjaguwar 文案稱加入真鼓、電吉他、小號；Tiny Mix Tapes 稱 production gloss、電子貝斯如加快的心跳、〈No Stranger〉clubby，與首作 lo-fi 相反。moodGuess「糊濾波」存疑，x 恐 ≥ 3.0，建議汰換。
+- **14802** Washed Out《Notes from a Quiet Life》：moodGuess 存疑。Beats Per Minute 稱比《Purple Noon》更 groovy、jaunty，〈The Hardest Part〉為 Italo disco 取向；找不到鋼琴的來源，x 2.2 可能估低。
+- **14803** Washed Out《Mister Mellow》：moodGuess 存疑。Stones Throw 文案稱 dense、chaotic，混入 house、hip-hop 取樣，29 分鐘 12 軌中 7 首短於 2.5 分，無「磁帶糊」來源；策展 curatorRisk 的「拼貼偏快」被證實。
+- **14804** Washed Out《Purple Noon》：大致成立（慢、人聲前置、暖），輕度存疑：有真鼓手（HB Brown）與「bolder beats」，非 lo-fi 糊；y=1.0 的「濕」只有 Paste 的 haze 可佐證。
+- **14805** Ducktails《Landscapes》：推翻策展層廠牌。卡單 Not Not Fun，實際為 Olde English Spelling Bee（MB release 03f15c18、Discogs 1901836）。聲音：僅有 lo-fi／卡帶習慣與「soft-focus」描述，無速度或鼓的來源，moodGuess 無法驗證。
+- **14806** Ducktails《Ducktails》：推翻策展層廠牌。卡單 Release the Bats，實際首作為 Not Not Fun（MB e043c3b4、Discogs 1768157）；Release the Bats 發的是另一張 2009 CD 選輯《Backyard》。卡單 label 須改。聲音：AllMusic 稱 beach-time ambience，MB 標 drone／lo-fi，無速度來源。
+- **14807** Puro Instinct《Headbangers in Ecstasy》：moodGuess「慢拍」無來源，反有 kinetic、disco 式律動（〈No Mames〉）、鼓機（〈Stilyagi〉）與 bright guitars，殘響濕有來源；x、z 存疑。MB 首發 2011-10-03，Discogs 最早限量黑膠 2011-02，並存。
+- **14808** Cuushe《Butterfly Case》：身分無誤（Flau、2013-09-11 日本版）。人聲疊層、朦朧、軟 synth 有來源，「低密度拍子」無逐曲來源，無證據推翻。2017 年與作品無關的騷擾事件依規則不寫。
+- **14809** 本組 8 張身分均 MB 釘住、年份一致，無 §1 人工卡；無選輯、無重複卡。
+- **14810** WebSearch 本組用 3 次；Pitchfork、Guardian、AllMusic、Slant 皆擋 WebFetch，評論多取 Wikipedia 與廠牌頁間接引述。
+
+## 研究 d 組
+- **14831**（Papercuts《You Can Have What You Want》廠牌）：卡單 label 寫 Sub Pop 錯。美國版是 Gnomonsong、英國版 Memphis Industries（American Songwriter、Tiny Mix Tapes、Atlanta Music Guide、維基一致）；Sub Pop 是下一張《Fading Parade》。facts 照實寫，請主線改卡單 label。
+- **14832**（moodGuess 存疑，Homeshake《Midnight Snack》）：來源強調 bare bones、clean basslines、crisp 鼓機、33 分鐘小編制，y 0.9 恐偏高；mid-tempo subtly groovy，x 可能略高。策展 why 寫 Rhodes，來源無，寫作層勿寫。
+- **14833**（moodGuess 存疑，Homeshake《Helium》）：Sagar 自己在《Under the Weather》Bandcamp 稱前作為「dry, pristine digital sound」，y 恐不足；Future Music 說 hazy／gauzy 為相反證據，兩面並陳。
+- **14834**（Homeshake《Under the Weather》）：聲音證據僅 Bandcamp 一頁（hazy、moody、slow、回到類比質感），標 thin；三張 Homeshake 以這張最貼格。
+- **14835**（moodGuess 存疑，Papercuts《Fading Parade》）：AllMusic 用 big and bright，Sub Pop 說 wall of sound、完整樂團，z 暖與 x 靜的證據弱於前作；若取捨留《You Can Have What You Want》。
+- **14836**（Men I Trust《Headroom》）：找不到樂評，聲音事實只有樂團整體風格，三軸皆無本張證據，標 thin。MB 該 RG 的 Discogs 關係指向 master 2272510（實為《Untourable Album》），不採。總長 Bandcamp 寫約 38 分鐘、曲長加總約 30 分鐘，facts 不寫總長。
+- **14837**（Vansire《Angel Youth》）：卡單 label 寫 Vansire，實為 Spirit Goth Records（SG23）；17 首含多位饒舌客席，標 thin，三軸存疑。
+- **14838**（moodGuess 存疑，強；Vansire《After Fillmore County》）：維基歸為 EP（7 首約 20 分鐘，卡單為 Album）；Augustin 自述該時期往 dance-oriented／funk 走，與「靜」衝突；label 同樣應為 Spirit Goth。建議主線汰換或實聽後再定。
+- **14839**（WebSearch 用量與工具限制）：本組 WebSearch 用 3 次（Homeshake 兩張、Papercuts）；AllMusic／Discogs／Last.fm／Pitchfork／Guardian 拒絕或無法連線，其餘靠 WebFetch 抓維基、Bandcamp、Sub Pop、各評論站。
+
+## 研究 c 組（14821–14830）
+- **14821** 推翻策展層廠牌（BMSR 四張＋Peaking Lights）：卡單 BMSR 前四張標 Rad Cult，實際首發為《Falling Through a Field》2003 與《Start a People》2004＝70s Gymnastics Recording Co.（後者與 Graveface 合作，GRAVE009）、《Dandelion Gum》2007 與《Eating Us》2009＝Graveface Records（GRAVE030／GRAVE045）；Rad Cult 是樂團後來的廠牌，僅 2015 數位版與 2018／2024 重發。《Panic Blooms》Rad Cult 成立。Peaking Lights《Imaginary Falcons》實為 Night People（LP NP058）與 Not Not Fun（卡帶），非「Peaking Lights」。卡單 label 須改。年份全數成立。
+- **14822** BMSR《Eating Us》moodGuess 存疑（y）：Dave Fridmann 製作（Tarbox），XLR8R 稱首張「fully hi-fi」，Tobacco 自稱被「polished a turd」，比前作乾淨；但仍有 fuzzy、暖、melted，x 慢／靜（「curiously static」）。建議 y 略降，仍可留。
+- **14823** BMSR《Panic Blooms》moodGuess 存疑（x、z）：SLUG 稱有「bouncy drum machines」「upbeat, poppy」曲目、tempo 高低混合；SLUG 與 Relix 皆有冷面（尖銳合成器、cold and distant）。本組風險最高，建議最先汰換。
+- **14824** BMSR《Falling Through a Field》標 thin 且 z 存疑（沿用策展 ⚠）：查無任何專業樂評談聲音，只有歌迷評語「腐爛 CD、憂鬱」偏陰。Wikipedia 正文稱「satanstompingcaterpillars 精選」，與 Bandcamp「debut album」及 Discogs 衝突；facts 只採 debut，並註明封底著作權年份 2001–2002（收錄更早錄音）。MB 另列 Graveface 為 2003 CD 的廠牌，疑為後補登記，不採。
+- **14825** Peaking Lights《Imaginary Falcons》標 thin 且 x、y 存疑：無任何專談樂評，「dub 迴音、鬆拍」僅有 2020 Bandcamp 標籤與《936》條目一句回顧（home-recorded noisy psychedelic jamming）；速度、鼓型無資料，僅由 9–11 分鐘長曲推斷鬆散漂移。「noisy」也可能偏躁，建議備選。
+- **14826** Foxes in Fiction 兩張：身分、年份、廠牌（Orchid Tapes OCT001／OCT045）成立。《Swung》作者自述四軌開盤機＋循環踏板＋取樣機、無鼓組，但暖度證據弱，z 輕度存疑；《Ontario Gothic》Exclaim! 稱「warm embrace」，z 有佐證，但全評不談鼓。
+- **14827** Exclaim! 評《Ontario Gothic》寫 Owen Pallett 小提琴，與 Bandcamp 作者自述（Ansel Cohen 大提琴）衝突；facts 只採 Bandcamp，Pallett 不寫。
+- **14828** 本組 8 張身分均 MB 釘住且盤名、年份一致，無 §1 人工卡；無選輯、無重複卡。BMSR《Dandelion Gum》大致成立（downtempo、Rhodes／vocoder／鼓機／長笛循環），為本組最穩。
+- **14829** Tobacco「polished a turd」與「Twin of Myself」偏好出自 Wikipedia 轉引的 Reddit AMA，原帖未取得，寫作層請以「他後來說」處理，不加引號當逐字。
+- **14830** WebSearch 本組用 5 次（超出 3 次上限）：Pitchfork、AllMusic、Tiny Mix Tapes（部分）擋 WebFetch，Discogs API／MB API／Bandcamp／Wikipedia 為主。
