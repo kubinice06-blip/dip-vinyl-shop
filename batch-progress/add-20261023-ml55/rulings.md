@@ -53,3 +53,27 @@
 - 20957：Alina Baraz《The Color of You》**性質存疑**：維基、NME、聖地牙哥校報稱 EP（9 首約 31 分），FADER 稱 nine-track project，MB／LOBF 當專輯。建議主線裁定是否收 EP；不收則汰換（同藝人 It Was Divine 已在本批）。status thin（無正式樂評與製作人名單，僅 FADER 預告式描述），moodGuess 無聲音樂評可驗。年份 2018-04-06、Mom+Pop 無誤。
 - 20958：Celeste《Not Your Muse》moodGuess 存疑（curatorRisk 成立）——〈Love Is Back〉銅管中快板、〈Stop This Flame〉鋼琴 vamp「floor-filling」、〈Tonight Tonight〉流行耳蟲，LOBF 稱有 glitter-funk／rollicking neo soul；12 首約四首非慢歌。厚暖（弦樂、銅管、煙嗓）成立，無陰冷字眼。藝人名與池中 Celeste Legaspi 撞名（維基條目為 Celeste (singer)）。Mercury 2021 與 Brit 2021 皆只入圍，已逐項標明。
 - 推翻策展層：無年份／廠牌／盤名推翻；性質存疑 1（Color of You EP）。WebSearch 共用 6 次（Goapele 1、Sabrina 2、Alina 2、Celeste 1），另用 Wikipedia raw、MB API、樂評頁直連。
+
+## 研究 b 組
+- 20931：Vesta Williams《Distant Lover》moodGuess 存疑：10 首翻唱含 Withers〈Use Me〉、Babyface〈Whip Appeal〉、Sly Stone〈If You Want Me To Stay〉等有律動的中板，非整張慢歌；來源（SoulTracks Rizik）只稱製作「低調、不機械」，無弦樂墊或厚低頻佐證，z 1.5 恐偏高。年份廠牌相符（MB 2007-01-30、Shanachie SH 5764）。
+- 20932：Oleta Adams《Circle of One》curatorRisk 回覆：真樂手（Palladino 貝斯、Cushon 鼓、Hammond、銅管）＋Real World 錄音室，質地不算英式數位乾淨；但開場〈Rhythm of Life〉與標題曲有 Orzabal 的 Fairlight 編程、〈I've Got a Right〉有銅管與 sax solo，非整張慢歌（moodGuess 輕度存疑）。歐洲版 1990-05-14／美國 1990-06-19 兩日都寫進 facts；1991 登頂英國榜為重發版，已標明。
+- 20933：Oleta Adams《Evolution》moodGuess 存疑：Stewart Levine 製作的洛杉磯棚內名手路線（Sanborn／Tom Scott 薩克斯風、Landau 吉他），Wikipedia 標 jazz／soul，近 smooth jazz 邊緣；弦樂墊是 Zigman 的合成器編程而非真弦樂；4、7、11、12 號含 drum programming。偏暖成立、厚度與陰冷無證據。日期只寫「1993 年夏」（Wikipedia 07-26 與 MB 08-15 不一致）。
+- 20934：Oleta Adams《Moving On》moodGuess 輕度存疑：來源明講轉向「更直接的 R&B」，Benford 兩首（Never Knew Love、Once in a Lifetime）以 drum programming 為主，非全慢；無饒舌客串、無取樣記載。盤名以 MB「Moving On」為準（Apple「Movin' On」）。葛萊美為入圍未得（第 39 屆最佳 R&B 專輯）。
+- 20935：Oleta Adams《All the Love》status thin：無獨立百科頁、AllMusic 403，聲音僅 Wikipedia 一句「回到 R&B／成人當代」加 Discogs 製作人與錄音地點（Ricky Peterson 7 首、Peter Wolf 3 首、Oleta 2 首；Simi Valley／Minneapolis／Lenexa）。弦樂、殘響、低頻查無來源，卡單「鋼琴弦樂，暖」未獲支持也未被推翻。年份 2001（荷蘭 BMG）／2002（美國 Pioneer），卡單 2001 成立。曲目含 Lee Ann Womack 的〈I Hope You Dance〉與基督教詞曲圈歌曲。
+- 20936：Lisa Fischer《So Intense》**moodGuess 重大存疑，建議汰換或降級**：〈Save Me〉登美國舞曲榜第 2 名（Albumism：primal、heat turned up）、〈So Intense〉被稱 pop-framed、〈Some Girls〉與〈So Tender〉含饒舌段落（Albumism 與搜尋摘要一致）、Walden 三首是明亮流行 R&B、Marcus Miller／Vandross 的〈Get Back to Love〉偏 funk；只有〈How Can I Ease the Pain〉、〈Send the Message of Love〉、〈Last Goodbye〉等少數慢板。弦樂僅 Arif Mardin 那首可能有。符合「舞曲單曲＋饒舌客串」的剔除條件。
+- 20937：Miki Howard《Love Confessions》curatorRisk 回覆：確為 80s 數位 R&B（Marc Gordon drum programming、鐘聲、合成器），但〈You've Changed〉為單簧管＋弦樂爵士編制，Rolling Stone Album Guide 稱爵士面最佳、The Gazette 稱「深夜靈魂」，偏暖成立（輕度存疑，慢歌占比無曲速資料）。Wikipedia 內部矛盾：〈That's What Love Is〉名次兩頁不一致，facts 只寫一致的〈Baby, Be Mine〉R&B 第 5 名。發行日 10-26／11 月不一致，只寫「1987 年秋」。
+- 20938：Phyllis Hyman《Forever With You》moodGuess 輕度存疑：身後遺作集，Wikipedia 明講含 smooth jazz 取向與 uptempo 曲目，多位製作人（Wansel、Martinelli、Eastmond、Hawes、Sigler、Gamble & Huff），鍵盤與 drum programming 質地與真弦樂（Jack Faith 編弦）並存；非整張慢歌。身後專輯事實已依「作品直接綁定」寫，辭世細節克制不寫。
+- 20939（空）、20940（空）。
+- 推翻策展層：無年份／廠牌／盤名推翻；So Intense 推翻「大抒情慢歌」整體判斷（建議汰換）；Vesta、Evolution、All the Love 為輕度至中度存疑。身分釘住 8/8 一致。WebSearch 共用 3 次（Vesta、Fischer、Oleta CoO），另用 Wikipedia raw、MB API、Discogs API、SoulTracks／Albumism 抓取。
+
+## 主線：研究後汰換（不佔條號）
+- 研究五組 37 張，照 ml49／ml52 結論（中板照樣落格，只擋舞曲、饒舌客串／hip-hop 硬拍、smooth jazz、乾淨翻唱、陰冷）汰 18（卡單、研究稿、`pick.json` 同步移除）：
+  - 舞曲單曲／new jack／饒舌客串／hip-hop 鼓與取樣（判躁）：Vesta《Special》（New Jack Swing、Mr. Lee 饒舌）、《Everything -n- More》（New Jack Swing／Hip Hop、Daddy-O 製作）、Kelly Price《Kelly》（house 取樣舞曲、溜冰 funk）、Lisa Fischer《So Intense》（〈Save Me〉舞曲榜第 2、兩首饒舌段）、Chanté Moore《Exposed》（Jermaine Dupri 執行製作、Da Brat 客串、快歌主打）、《Moore Is More》（自述 aggressive, happy, bubbly）、Marsha《Nyla》（trap 鼓、銅管快歌）、《Casablanco》（Dr. Dre 嘻哈鼓與取樣）、YEBBA《Dawn》（A$AP Rocky、Smino 客串）、Goapele《Break of Dawn》（Auto-Tune、Drumma Boy 電子、brooding）。
+  - smooth jazz／名手爵士電台路線（判輕）：Vesta《Relationships》（Lee Ritenour 製作）、Oleta《Evolution》（Sanborn、Tom Scott、合成器弦樂）。
+  - 乾淨翻唱集（Lattimore《Timeless》先例判輕）：Vesta《Distant Lover》。
+  - 冷／數位：Lalah《Honestly》（trap 鼓、16 位元合成器、樂評稱暗沉）、Quadron（樂評「數位而冷」、Motown 快拍）。
+  - 場景不符：Shara Nelson《What Silence Knows》（pop-soul，主打 dance-pop）。
+  - 類型：Kelly Price《This Is Who I Am》（教會現場福音盤）、Alina Baraz《The Color of You》（多數來源稱 EP，9 首 31 分）。
+- 留下但存疑、交評分裁定：Kelly Price《Mirror Mirror》（Method Man 客串一首、R. Kelly 製作）、《Priceless》（Stevie J 兩首嘻哈拍，整體老派暖）、Goapele《Change It All》（一首饒舌客串）、Celeste《Not Your Muse》（慢歌約六成）、Raveena《Asha's Awakening》（慢歌約一半）、Leela James 兩張（慢歌占比未證）、Oleta《Circle of One》《Moving On》《All the Love》、Miki Howard《Love Confessions》、Phyllis Hyman《Forever With You》（遺作集，MB Album）。
+- 研究推翻照研究稿：Vesta《Relationships》廠牌 Ichiban→i.e. Music（隨汰換結案）；Syleena 年份 2001 維持；Aisha 年份 1987 維持（來源 1986–1988 不一，facts 不寫年份）；Quadron 隨汰換結案。
+- 剩 19，叫回策展代理補第二輪候補（避開上列汰換型態）。

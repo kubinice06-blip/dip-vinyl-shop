@@ -4,19 +4,19 @@
   {
    "id": "acousmatic",
    "zh": "電子原音／acousmatic 尖細那半（GRM 系、empreintes DIGITALes、BEAST）",
-   "count": 8,
+   "count": 11,
    "why": "微剪接、碎片短音事件密集交錯、乾而尖的摩擦與撞擊；不收飄浮長音與厚密噪音堆疊"
   },
   {
    "id": "early-studio",
    "zh": "早期電子工作室點描／序列作與混合媒體（WDR、Columbia-Princeton、Utrecht）",
-   "count": 10,
+   "count": 14,
    "why": "正弦波與脈衝的點描、序列式跳躍、樂器對磁帶的神經質對答；乾、薄、無調"
   },
   {
    "id": "computer",
    "zh": "電腦音樂／演算法作曲的尖細那半",
-   "count": 1,
+   "count": 2,
    "why": "粒子／脈衝合成、心理聲學高頻、網路演算法的急促碎音；薄、乾、無旋律"
   }
  ],
@@ -589,6 +589,242 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "Eclipse／Entrelacs 為無電子的室內樂團曲；z 估 −1.2，音色亮、色溫可能偏回中性"
+  },
+  {
+   "artist": "Morton Subotnick",
+   "album": "4 Butterflies",
+   "year": 1974,
+   "label": "Columbia Masterworks",
+   "country": "us",
+   "faction": "early-studio",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Subotnick Buchla 系列第五張，承《Sidewinder》的序列器脈動，四段蝴蝶組曲",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.2,
+    "z": -1.2,
+    "why": "Buchla 序列脈衝急促跳動、尖細電子嗶聲，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a67e5e01-da68-482d-b1cb-9e2126b8eaf6",
+    "https://coverartarchive.org/release-group/a67e5e01-da68-482d-b1cb-9e2126b8eaf6/front",
+    "https://musicbrainz.org/release/132953ca-3cbc-4850-a931-72922fcf0303"
+   ],
+   "mbRgMbid": "a67e5e01-da68-482d-b1cb-9e2126b8eaf6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同人跨組：mc37 已提 Subotnick《Silver Apples》《Touch》《Sidewinder》，本張不同盤；池中 Touch 3.7、Sidewinder 3.6 判冷冽"
+  },
+  {
+   "artist": "Morton Subotnick",
+   "album": "A Sky of Cloudless Sulphur / After the Butterfly",
+   "year": 1980,
+   "label": "Nonesuch",
+   "country": "us",
+   "faction": "early-studio",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "Nonesuch 出版：純電子《A Sky of Cloudless Sulphur》與小號＋室內樂＋電子『ghost score』的《After the Butterfly》",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.2,
+    "why": "Buchla 尖亮音點急速翻飛，小號尖銳短句與電子處理對撞"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d1b50431-1620-4dab-a87b-87a0089cbd70",
+    "https://coverartarchive.org/release-group/d1b50431-1620-4dab-a87b-87a0089cbd70/front",
+    "https://www.discogs.com/release/1710765"
+   ],
+   "mbRgMbid": "d1b50431-1620-4dab-a87b-87a0089cbd70",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同人跨組：mc37 已提 Subotnick《Silver Apples》《Touch》《Sidewinder》，本張不同盤；池中 Touch 3.7、Sidewinder 3.6 判冷冽"
+  },
+  {
+   "artist": "Philippe Manoury",
+   "album": "La Partition du ciel et de l'enfer / Jupiter",
+   "year": 1997,
+   "label": "Accord",
+   "country": "fr",
+   "faction": "early-studio",
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "why": "Manoury《Sonus ex machina》系列兩作：長笛＋4X 即時電子《Jupiter》與 EIC／Boulez 的《La Partition du ciel et de l'enfer》",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.3,
+    "z": -1.3,
+    "why": "長笛急促碎句觸發電子迴旋與閃點，室內樂尖亮，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7c176052-cdb0-44ae-90a3-ace735710bb7",
+    "https://coverartarchive.org/release-group/7c176052-cdb0-44ae-90a3-ace735710bb7/front",
+    "https://www.discogs.com/release/15235511"
+   ],
+   "mbRgMbid": "7c176052-cdb0-44ae-90a3-ace735710bb7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Partition 為雙鋼琴＋樂團編制，可能偏厚；與 Pluton 同人擇一亦可"
+  },
+  {
+   "artist": "Henri Pousseur",
+   "album": "Electronic Works",
+   "year": 1990,
+   "label": "BVHaast",
+   "country": "be",
+   "faction": "early-studio",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Acousmatrix 4：Pousseur 的《Scambi》（米蘭 Studio di Fonologia 濾波白噪音開放作）、《Trois visages de Liège》《Paraboles-Mix》",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.0,
+    "z": -1.5,
+    "why": "濾波噪音短爆與電子點描快速交換，人聲碎片，乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f0a35c5b-639e-4fca-87c0-95d00793b121",
+    "https://www.discogs.com/master/171035",
+    "https://www.discogs.com/release/248170"
+   ],
+   "mbRgMbid": "f0a35c5b-639e-4fca-87c0-95d00793b121",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面來源 Discogs（CAA 無）；Scambi 以白噪音為素材，y 可能偏 0.3"
+  },
+  {
+   "artist": "Stéphane Roy",
+   "album": "Kaleidos",
+   "year": 1996,
+   "label": "empreintes DIGITALes",
+   "country": "ca",
+   "faction": "acousmatic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "魁北克 acousmatic 二線 Roy 的首張（Mimetismo、Crystal Music、Ondes / Arborescences）：作曲家自述『群聚、爆裂、對比與透明』",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.0,
+    "z": -1.4,
+    "why": "神經質交錯平移的顆粒、自近乎無聲中猛爆的短促手勢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4054a582-8886-46d9-a82b-7a28de5ab100",
+    "https://coverartarchive.org/release-group/4054a582-8886-46d9-a82b-7a28de5ab100/front",
+    "https://electrocd.com/en/album/2400-stephane-roy-kaleidos"
+   ],
+   "mbRgMbid": "4054a582-8886-46d9-a82b-7a28de5ab100",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Mimetismo 以吉他為素材、樂評有『thick combinations』一語；Paysages intérieurs 較陰暗，x、y 都只是勉強過"
+  },
+  {
+   "artist": "Bernard Parmegiani",
+   "album": "Violostries / Bidule en ré / Capture éphémère",
+   "year": 1969,
+   "label": "Philips",
+   "country": "fr",
+   "faction": "acousmatic",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "Philips『Prospective 21e siècle』原盤：小提琴＋磁帶的《Violostries》與急剪拼貼的《Bidule en ré》，Parmegiani 最尖急的一張",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.2,
+    "z": -1.6,
+    "why": "小提琴刮弦尖叫對磁帶碎片、跳剪短音事件，乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/660ce251-ac33-4f8f-9e61-4ad03d2faf9c",
+    "https://coverartarchive.org/release-group/660ce251-ac33-4f8f-9e61-4ad03d2faf9c/front",
+    "https://www.discogs.com/release/322889"
+   ],
+   "mbRgMbid": "660ce251-ac33-4f8f-9e61-4ad03d2faf9c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Parmegiani 四張 x 2.2–2.4 判靜；本張提名依據是 Violostries 刮弦與 Bidule en ré 跳剪較急，但 Capture éphémère 偏飄浮，主線可視 Parmegiani 先例刪"
+  },
+  {
+   "artist": "Robert Normandeau",
+   "album": "Figures",
+   "year": 2009,
+   "label": "empreintes DIGITALes",
+   "country": "ca",
+   "faction": "acousmatic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "魁北克 acousmatic 代表人物 Normandeau 的《Figures》：Ellipse（古典吉他噪音）、Figures de rhétorique、Venture",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.1,
+    "z": -1.4,
+    "why": "吉他刮擦敲擊組成躁動複節奏、昆蟲般發癢的碎響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dae76a6f-836b-48b0-9a4f-a9c938110988",
+    "https://coverartarchive.org/release-group/dae76a6f-836b-48b0-9a4f-a9c938110988/front",
+    "https://electrocd.com/en/album/2365-robert-normandeau-figures"
+   ],
+   "mbRgMbid": "dae76a6f-836b-48b0-9a4f-a9c938110988",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 只有 2009 數位版；《Le renard et la rose》為人聲敘事段較緩，x 貼門檻"
+  },
+  {
+   "artist": "Morton Subotnick",
+   "album": "Ascent Into Air / A Fluttering Of Wings",
+   "year": 1984,
+   "label": "Nonesuch",
+   "country": "us",
+   "faction": "computer",
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "why": "Subotnick 進入電腦即時處理期的作品（《The Double Life of Amphibians》兩段）：大提琴、管樂與電腦即時電子",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.2,
+    "z": -1.2,
+    "why": "器樂急促碎句經電腦即時處理成閃爍顫音，弦樂四重奏神經質"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0155c686-ac40-475d-b763-86e43b413854",
+    "https://www.discogs.com/release/2696204",
+    "https://musicbrainz.org/release/86f09339-f39c-4ee0-ad17-fd20df77f4be"
+   ],
+   "mbRgMbid": "0155c686-ac40-475d-b763-86e43b413854",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同人跨組（mc37）；封面來源 Discogs（CAA 無）；A Fluttering of Wings 為純弦樂四重奏"
   }
  ],
  "notes": []
