@@ -48,3 +48,11 @@
 - **15874**：Acetone《York Blvd.》發行日 MB／Discogs 2000-10-17 與 Wikipedia 2001-01-16 不一；年份沿用卡單 2000。吉他音色被形容 bone-dry，管風琴僅數首，略低於策展的「霧」，但暖、慢仍有樂評支持。
 - **15875**：Casino Versus Japan《Go Hawaii》無可讀樂評，標 thin；磁帶糊無法證實，Bandcamp 標籤有 beats。
 - WebSearch 用 3 次（Schnauss、Mojave 3、Casino）；Pitchfork 403／不可取，AllMusic 403。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- **汰 11 張**（研究層聲音反證，照 HANDOFF §二第 3 步直接汰、不硬留）：
+  - 判輕（乾淨、有空氣、原聲）：Pure X《Angel》（樂評＋團員訪談：剝掉殘響失真、原聲吉他輕刷、現場錄）、Mojave 3《Ask Me Tomorrow》（acoustic-based、克制留白）、Flaming Lips《King's Mouth》（stripped-down、bright、breezy）、Kurt Vile《Bottle It In》（樂評多用 airy，厚度只有間接證據）、Connan Mockasin《Jassbusters Two》（27 分鐘鬆散即興，厚殘響／墊無證據）。
+  - 判躁（推進、爆發）：Spiritualized《Everything Was Beautiful》（propulsive、train rhythms、管弦爆發）、Ulrich Schnauss《No Further Ahead Than Today》（motorik 鼓機、euphoric、full-pelt wall of sound）、Schnauss & Peters《Tomorrow Is Another Day》（鼓機電子節拍、uplifting，質地偏輕）。
+  - 判冷或冷暖不定：Ray LaMontagne《Ouroboros》（過載噪音牆、angst、haunting，x 2.8–3.2、z 中性偏冷；池中同人亦判冷）、Dennis Wilson《Pacific Ocean Blue》（brooding、chillingly lovely、定音鼓銅管爆發）、Jim James《Eternally Even》（chilly、aloof、放克推進；同人留《Regions》一張）。
+- **定案 11 張**（a 2、b 2、c 3、d 3、e 1）：Connan Mockasin《Jassbusters》、Jim James《Regions of Light and Sound of God》、Matthew E. White《Big Inner》、Flaming Lips《American Head》、Mercury Rev《Delta Sweete Revisited》、Schnauss《A Long Way to Fall》、Peaking Lights《The Fifth State of Consciousness》、Acetone《York Blvd.》、Hammock《Oblivion Hymns》、Casino Versus Japan《Go Hawaii》、Manual《Bajamar》。場景見底、不湊數。
+- 留下的存疑張：Big Inner（x 2.6–3.2）、Peaking Lights（beats，x 2.8–3.3；池中同人 3 張全落恍惚，留給評分判）、Hammock（glacial 一詞，z 存疑）、Manual（z 0.2–0.3 風險）、Jassbusters（z 0.3–0.6）。卡存 `dropped-cards.json`；研究稿同步移除，`qa-batch research` 通過。
