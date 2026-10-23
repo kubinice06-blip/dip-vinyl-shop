@@ -119,3 +119,11 @@
   - `Phil Minton|A Doughnut in One Hand`：刪 Kenneth Goldsmith 的單源評價句；補「同年 6 月由柏林的自由即興廠牌 FMP 發行」（研究稿 Discogs／MB）→ 195 字。
   - `Spontaneous Music Ensemble|So, What Do You Think?`：末句「Emanem 那邊認為鼓聲主導了音樂，拒絕替它重發，則是出版之後的事」與 hook 重複，刪 → 193 字。
 - 13233：未改但記錄——Six of One「樂評認為…早期草稿」是骨架本體（日後《Lines Burnt in Light》），保留；Barry Guy「樂評形容…擴充了低音提琴能發出的聲音」是技法描述，保留；Tempo Comodo hook「曲名直接」與 Alterations 正文 2 張殘片，不改。
+
+## 上線與評分（2026-10-23，主線）（條號 13234–13236）
+- **13234**：上線 22 張：card_catalog 22／22、KV 23 鍵（吉田アミ desc2＋desc4）回讀逐字一致、試聽 1 ready／21 unavailable（Incus／FMP／ICP 目錄幾乎不在 Apple；Butcher 用 Unsounds 2004 同錄音再發）、seed +22、published gate 0 error。封面 CAA 15、Discogs 7（已登錄 registry：Impromptus、Company 2、Lot 74、Tony Oxley、Alterations、Doughnut、Tiger Thrush，皆年份＋廠牌＋目錄號三項對上）。
+- **13235**：類型樹 22／22 落位（ICP 三重奏、Minton、吉田アミ 補進 `jazz/free/free-improv`）；抽卡封面重建。
+- **13236**：**落格率 19/22＝86%**（`batch-progress/mood-axes/score-mc28/`，照 10-23 體感標準）。出格 3：Mengelberg《Impromptus》x 2.7 落平靜（Monk 式歪斜、留白、沉思）；《Topography of the Lungs》y 0.8、Parker《Process and Reality》y 0.7 落暴躁（三人全力噪刮、多軌疊錄聲團糊）。極弱點描型（SME、Butcher、Bailey《Lot 74》、Conic Sections）評 x 3.0–3.3 貼邊仍落冷冽。**同場景下一批：獨奏與二重奏的乾、尖型最穩；疊錄、三人以上全力合奏判重；鋼琴獨奏帶 Monk 動機判靜。**
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Misha Mengelberg、Han Bennink、Barry Guy、John Butcher、Alterations、Phil Minton、Paul Lytton、吉田アミ（8 位）；另有 3 個合掛名需別名鍵：Derek Bailey & Han Bennink、Han Bennink / Misha Mengelberg / John Tchicai、Evan Parker, Derek Bailey & Han Bennink。

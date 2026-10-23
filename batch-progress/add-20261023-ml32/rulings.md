@@ -107,3 +107,11 @@
   - `Johnny Osbourne|Nightfall`：「最重這個評語來自樂評，著眼點在格外突出的低音。」→「樂評著眼的是格外突出的低音。」（來源兩家，保留評語但去掉後設說明）→ 221 字。
 - 16553：未改但記錄——Sinseers 正文用 `Joey Quiñones`（正確拼法），卡池鍵維持 MB 的 `Joey Quinones`；Lacksley Castell 早逝 thin 卡放不下，不補；Oroza「開闊的類比聲響」是聲音描述不是評價，保留。
 - 16554：上線前檢查——prepare gate 0 error（16 warning 皆 UPC 盡力而為）；封面 live-check 16/16 HTTP 200（CAA 14、Apple 2）；對 origin 65 個 `claude/*` 分支與 main 的 seed＋卡單再去重 0 撞。
+
+## 上線與評分（2026-10-23，主線）（條號 16555–16557）
+- **16555**：上線 16 張：card_catalog 16／16、KV 16 鍵回讀逐字一致、試聽 16 ready（Oroza 改取原版、Kali Uchis 藝人目錄 lookup 人工配，第 1 軌 bolero 翻唱）、seed +16、published gate 0 error。封面 CAA 14、Apple 2（Don Carlos & Gold、Sufferer's Choice，CAA release-group 404）。
+- **16556**：類型樹 16／16 落位（`genre-l3-artist-map.json` 補 Sinseers→soul/classic-rnb、Carla Morrison→world/latin/latin-pop、Lacksley Castell→world/reggae/roots）；抽卡封面重建。
+- **16557**：**落格率 16/16＝100%**（`batch-progress/mood-axes/score-ml32/`，照 10-23 體感標準）。評分 x 2.0–2.7、y 0.7–1.5、z 0.6–1.7；Sacred Souls 兩張 y 0.7 最貼邊。**研究後汰掉的 15 張是這批落格率的關鍵**——乾淨、推進、80s 中後期電子鼓的全數擋下。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Thee Sacred Souls、Bobby Oroza、Thee Sinseers（掛名 Thee Sinseers & Joey Quinones）、Kali Uchis、Carla Morrison、Chancha Vía Circuito、Don Carlos & Gold（合掛名，Don Carlos 本人需別名鍵）、Milton Henry、The Viceroys、Lacksley Castell（10 個掛名）。
