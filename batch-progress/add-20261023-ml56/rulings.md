@@ -78,3 +78,14 @@
 - 研究推翻照改卡單：label——A Touch of Cloth→Tritone、Jump Leads→Twentythree、Amrita→North South、Clearvoiant→Night People（限量 50 卷錄音帶，正規全長）、Desert Phase→Interchill Records、Natural Selection→Nettwerk（year 2003→2002 英國首發）、Luxia→Archives。
 - 留下但存疑、交評分裁定：Fila《Mess》《Jump Leads》（只有 Discogs 標籤）、《A Touch of Cloth》（dub-style bass，但有 70s disco／funk 取向）、Dub Colossus《Dub Me Tender》（演奏輕）、Blundetto《World of Dub》（原版含 funk）、Halftribe《Luxia》（只有標籤）、Kaya《Desert Phase》（haunting 字眼）、Loop Guru《Amrita》（Western dance beats）。
 - 策展第三輪補 7（器樂類比 dub，池中同系列 Part 1–3 全落恍惚）：Mad Professor《Dub Me Crazy》Part 4／5／6／12、《Black Liberation Dub, Chapter 4》、Sounds From the Ground《Luminal》《Brightwhitelight》。分入 b 組 5、e 組 2，另派一支補研究 append 進 b、e 研究稿。Part 7–9、BLD Chapter 2 無任何封面來源，不收。
+
+## 補研究（b、e 組補位）
+- 21258：Mad Professor《Dub Me Crazy》Part 4／5／6／12 與《Black Liberation Dub, Chapter 4》五張全是 Ariwa 的 Discogs／MB 登錄，身分與年份無推翻（Part 12 的 RG 首發 1992 美國版、英國 MB 日期 1993-03-30，年份維持 1992）。聲音證據只有系列層級（Ransom Note「sparse rhythms and depth charge bass」、First Avenue 稱幫助 dub 進入數位時代、1980 年代後半實驗性高峰、1990 年代初 creative burnout），**五張都查不到專屬樂評**，無 warm／dubby 專屬原句，status 其實是靠 Discogs 信用撐起的 full。
+- 21259：Mad Professor 五張 moodGuess 存疑分級：Part 6（只有和聲、無主唱）與 BLD4（信用只有 Mad Professor）人聲風險最低；Part 4 掛名 Ranking Ann、Sandra Cross 等五位人聲、曲名有〈DJ Choice〉；Part 5 的 Voice 欄八人；Part 12 精簡到 Black Steel／Denis Nolan／Kate Holmes 三位樂手但掛 Carroll Thompson、Susan Cadogan、Alan King Pin 等六位人聲，曲名〈Acid Meets Dub〉〈Rusty Computor〉暗示數位化，風險最高，建議若要汰先汰 Part 12，其次 BLD4（〈Internet Spy〉〈Robotronic〉，1995 年起走電子化）。各張區分特徵（錄音年、目錄號、樂手、曲名）已寫進各自 facts。Part 5 的 The Orb〈Blue Room〉取樣為 Discogs 單一備註。
+- 21260：本補研究 WebSearch 用 2 次（Dub Me Crazy 系列、Sounds From the Ground），WebFetch 補 Ransom Note、維基 Mad Professor、First Avenue、Waveform Bandcamp；維基 Sounds From the Ground 與 waveformrecords.com/sfg 為 404。
+- 21289：Sounds From the Ground《Luminal》moodGuess 存疑（中到強）：卡單「器樂 dubby」不符——九首中四首有客席人聲（Calladine〈Stampede〉、Tanya Tagaq Gillis〈As The Day Goes By〉、Dillinger 的 DJ 客串〈Ten Tons Of Dope〉、Taz〈Move On〉），廠牌自述「spacious and sometimes gritty」「less lounge and more fat and dirty」，無 warm／deep bass 原句。版本：Discogs 主版為英國 Amboworld AMBOCD02（2004，曲序封面不同），卡單 Waveform 對應美國版 04102-2，年份一致不改。卡單引用的「sometimes dubby, sometimes dreamy, chill-out music」在本次抓到的 Waveform 頁面核不到，未寫入 facts。
+- 21290：Sounds From the Ground《Brightwhitelight》無客席／人聲信用，是兩張中較支持器樂的一張，但只有廠牌自述（reflective、mesmerizing、shimmering；shimmering 可能偏輕），無第三方樂評、無鼓與速度描述，status thin；卡單引的「dubby, dreamy」在頁面核不到。
+
+## 主線：補位後汰換（不佔條號）
+- 補研究 7 張汰 3：Mad Professor《Dub Me Crazy, Part 12》（六位人聲、數位化曲名，池中數位盤《A Caribbean Taste of Technology》z −0.1 落頹靡先例）、《Black Liberation Dub, Chapter 4》（1995 起電子化，〈Internet Spy〉〈Robotronic〉，同一先例）、Sounds From the Ground《Luminal》（九首四首人聲、廠牌自述「fat and dirty」）。留 Part 4／5／6、《Brightwhitelight》。
+- **定案 20 張**（a 3、b 4、c 5、d 4、e 4），不湊數。主場景（暖 trip-hop 女聲二線）見底：研究層一查，女聲 trip-hop 二線多是歌曲型、jungle／house 拍或原聲化，只剩 Alice Russell《My Favourite Letters》；產量主要靠池中已落恍惚的 downtempo／dub 藝人目錄。
