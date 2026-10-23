@@ -54,3 +54,25 @@
 - 18398：Bass Communion《Loss》status thin，moodGuess 存疑：僅 Wikipedia／Discogs／Steven Wilson 官網的版本與格式資料及 Igloo 一句「鬼魅、消散」；Forced Exposure、Progarchives 取不到內文，sound 全屬推斷。一首題名曲分兩部（各約 19 分鐘，曲長各源 19:26–19:52），首發為 2006-01 黑膠限量 450 張，CD＋DVD-Audio 為同年 11 月；MB 2006-01-09 吻合。
 - 18399：WebSearch 本組用 9 次（Lustmord 5、Cylene 1、Bass Communion 2、其餘 1），超過每支 3 次的建議，原因是 Lustmord 五張共用 Wikipedia 與零散來源、樂評多被擋；請主線留意額度。Bass Communion 兩張因查無樂評，建議主線聽過再決定去留，Cenotaph 本組未涉及。
 - 18400：全組 8 張，facts 條數 9／9／9／9／10／9／8／8；status 5 full、3 thin（Carbon/Core、Indicates Void、Loss）；身分資料（年份、廠牌、盤名）推翻 0 處；聲音存疑 5 張（Carbon/Core 弱、The Word as Power、Cylene、Indicates Void、Loss）。
+
+## 研究 b 組
+- 18371：Burial Chamber Trio 同名盤：Discogs 記 Recorded in Europe January 2007，但沒有任何來源直說是現場錄音，不寫成現場；Discogs 名單無鼓、人聲標 Vokills, Invokations。status thin（樂評全抓不到）。moodGuess 存疑（輕）：Csihar 若有尖嘯會偏緊繃，無法證實。
+- 18372：Stephen O’Malley《Éternelle Idole》：2008 年錄、2015 年出黑膠的舞作配樂；名單無鼓，有 Jesse Sykes 人聲曲；curatorRisk 的鋼琴與合唱 Discogs／維基皆未列，無法證實也無法排除。status thin，moodGuess 存疑（色溫，Modern Classical 標籤）。
+- 18373：KTL《KTL》：Discogs 腰封文字佐證堡壘與冬季花園的錄音環境；無鼓；Noise 標籤，乾淨度未知。status thin。
+- 18374：KTL《VII》：推翻 curatorRisk「實體只有 100 捲卡帶」，另有黑膠 LP。Bandcamp 明寫〈Lee’s Garlic〉3 分 04 秒有刺耳回授與撞擊聲，〈Silver Lining〉是蜂群般滑音，整張非全程緩慢低頻。moodGuess 存疑（中度，x／y 可能偏躁），主線評分實聽或下修。status full。
+- 18375：Menace Ruine《Venus Armata》：MB 標題帶 2023 remix，原版 2014 成立。搜尋摘要稱 S. 負責 beats、評論稱有噪音與 power electronics 傾向，原文皆 403 無法開啟，故只寫進 notes。moodGuess 存疑（重度，建議評分前實聽或汰換）。status thin。
+- 18376：Barn Owl《V》：名單無鼓，吉他、合成器、鋼琴、人聲，樂評形容更不祥、霧狀、內斂；無明顯不符。status full。
+- 18377：Jodis《Secret House》：鼓極稀疏成立（PopMatters、TMT、Scene Point Blank 一致：只在樂句頭尾打重音），可收。Plotkin 究竟是吉他或貝斯 Discogs 與 TMT 互相矛盾，facts 兩邊標明。title track 唱法較粗暴，僅此一首可能繃緊。status full。
+- 18378：Final《2》：1993–95 錄成成立，維基稱 1993 復活為「無節拍」ambient；第 4、5、8 首創作者 Discogs 條目未標；G. C. Green 合作的說法無佐證，不寫；「isolationist」無來源，不寫。status thin（失真、低頻、殘響皆無第一手描述）。
+- 18379：WebSearch 本組用 3 次（Burial Chamber Trio、Jodis、Menace Ruine），其餘靠 Discogs API、MB、維基、Bandcamp（KTL VII）與樂評站 WebFetch；Pitchfork、CVLT Nation、AllMusic、RYM 403 或不可用。
+- 18380：全組 8 張，facts 9／9／8／9／8／8／9／8；status 3 full、5 thin；推翻策展層 1 處（KTL《VII》實體版本），身分資料（年份、廠牌、盤名）0 處不符；聲音存疑 5 張（Burial Chamber Trio、Éternelle Idole、KTL VII、Menace Ruine、Final 為色溫或噪音疑慮，Menace Ruine 最重）。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- **汰 12 張**（研究層聲音反證；體感標準下頹靡線最怕「讓人繃緊」與「偏暖」，存疑的一律汰，不硬留）：
+  - 有鼓推進或刺耳爆裂（x 風險）：Ascend《Ample Fire Within》（Andy Patterson 錘擊式推進鼓、刺耳嘶吼）、House of Low Culture《Poisoned Soil》（打擊樂手 drum buildup）、Menace Ruine《Venus Armata》（beats＋噪音／power electronics 推到極限）、KTL《VII》（刺耳回授與撞擊、蜂群滑音）、Final《Dead Air》（承接 harsh noise／PE、過載噪音）、Aidan Baker & Tim Hecker《Fantasma Parastasie》（hyper-distorted、音量到身體不適）。
+  - 偏暖或旋律清楚（z 風險）：Wolves in the Throne Room《Celestite》（兩家樂評稱偏亮偏暖）、Mamiffer《The World Unseen》（清楚鋼琴、angelic 人聲）、Lustmord《The Word as Power》（人聲旋律清楚、哀悼式暖意）、Bonnet & O’Malley《Cylene》（樂評稱溫暖金色、絲絨）、Final《What We Don’t See》（遠處工業節拍、整體「莊嚴而帶安慰」）。
+  - 彙集：Jasper TX《An Index of Failure》（2006–2011 遺落曲目彙集、無聲音來源）。
+- **留下的存疑張**：Bass Communion《Indicates Void》《Loss》（thin，聲音靠推斷；池中同人全落頹靡）、Tribes of Neurot《Meridian》（兩曲刺耳嘶響，整體 ambient）、Burial Chamber Trio（未證實現場）、O’Malley《Éternelle Idole》（Modern Classical 標籤）、Aidan Baker《Noise of Silence》（拼貼質地）、Final《Afar》《Burning Bridges》（thin）、Jasper TX《A Darkness》《Black Sleep》（無磁帶證據，實為 Korg／器樂，陰暗幽閉）、Mathieu《Before Nostromo》（y 可能偏低）。Bass Communion《Cenotaph》CD 版只有稀疏處理大鼓，寫作層寫「稀疏鼓點」不寫「無鼓」。
+- **更正**：KTL《VII》已汰，「只有卡帶」的策展說法（另有黑膠）不入卡。
+- 不補位：策展層已回報主場景見底。
+- 定案 **26 張**（a 4、b 6、c 6、d 6、e 4）。汰除卡存 `dropped-cards.json`，研究稿條目移出研究檔。研究 qa-batch 全過。
