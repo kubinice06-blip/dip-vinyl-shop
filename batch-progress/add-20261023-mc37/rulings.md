@@ -28,3 +28,12 @@
 - **19893**　Dusted Machinery 聲音存疑（可能判靜）：John Butcher 官網、FREQ、Chain D.L.K. 皆稱多半安靜低音量、有靜默與動態、不是全力轟炸，Free Jazz Blog 稱催眠。錄音室作品（Dave Hunt，2009-01-20，採官網日期；Discogs 記事自相矛盾）。
 - **19894**　La nuit où j'ai dit non 年份：Discogs 1997（比利時 Audioview AUDIO 003）、MB 1998；卡單 1998，建議主線決定。
 - **19895**　East of Where? 兩首 16–19 分鐘長曲，無評論可證有無留白；Yan Jun 柏林工作室錄音，非現場。聲音面查不到樂評者（Zygosis、lat_nc、Tétreault、Studio、East of Where）status 標 thin 或在 notes 註明。
+
+## 研究 a 組
+- **19881**　年份：Bits, Bots and Signs 取 2000（Erstwhile 官方頁與 japanimprov 皆為 2000，錄音 2000-03-27）；英文維基 Otomo 條列 1999 不採。
+- **19882**　Earflash 的 moodGuess「無鼓」存疑：Discogs 明列 Knut Remond Big Drum 與 Dr. Rhythm 鼓機編程；Poire_z 的 Günter Müller 有精選打擊樂、維基引評論稱底下有穩定節奏推進。兩張報主線。
+- **19883**　現場查核：九張 Discogs 記事皆為錄音室（Zack Studio、Sound & Vision、Radio-Canada Studio 12），無疑似現場；Taken and Changed 無任何錄音資訊（僅 MP3 數位發行），標未證實。
+- **19884**　身分：infra_red 與 Shock_Late 同日（1998-11-18）同錄音室但曲目不同，確為兩張獨立專輯；「紅外線感應器」說法無來源，facts 不寫。
+- **19885**　Shock_Late Discogs 風格含 Ambient、Bits Bots Signs 廠牌文案有 gently pulsing rumbles／sparser／fragile，兩張可能偏靜；Taken and Changed 風格標 Illbient 亦有偏暗沉風險。報主線。
+- **19886**　Double_Wash 錄音日期：Discogs 記事 1999-12-12，另有摘要稱素材取自 1998 年冬，未驗證，採 Discogs。
+- **19887**　大半專輯缺獨立樂評（Squidco、Forced Exposure、AllMusic、Bandcamp 被擋），聲音事實以 Discogs 風格標籤、曲長結構、廠牌文案與維基通則描述支撐，標 thin；低頻與長段留白皆查無證據，非證實為無。
