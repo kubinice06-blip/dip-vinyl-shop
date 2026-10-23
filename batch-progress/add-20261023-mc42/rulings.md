@@ -28,3 +28,11 @@
 - 21414　moodGuess 存疑（中）：Percussion Ensemble（不規則拍號疊層、鈴與鑼，Graves 先例疑判暖，或稀疏段判靜）；Cedarhead（七首中電子／錄音帶兩首約 27 分鐘、nay 與 darbuka，大廳殘響，疑判重或靜）；Dialogues 與 Abanaba（大量鑼鈸殘響，疑判靜或重；Abanaba 無任何樂評，標 thin）。
 - 21415　Directly to Pyjamas 標 thin：找不到專輯樂評，聲音靠編制與兩人風格；長號／小提琴／Casio keyboard 與滑稽感疑偏輕鬆。Cedarhead 的 Raed Yassin 樂器，Discogs 寫雙低音提琴、廠牌 Bandcamp 寫錄音帶與電子，採廠牌版本。
 - 21416　WebSearch 3 次已用完；AllMusic、Discogs 網頁、MB 網頁 403，改走 Discogs API／MB API／Wikipedia／廠牌頁。
+
+## 研究 c 組
+- 21421　8 張全為錄音室錄音（Discogs 記事皆有棚名與錄音日期），無現場；身分（盤名、年份、廠牌）全部吻合。Tsktsking 的 Soundohm 頁寫 2010，以 Discogs master／MB 2009 為準。
+- 21422　推翻策展層：(1) Explore 實為十三首（非『九段』）；(2) Imponderable Evidence Discogs 只列 tenor sax，非『高音』薩克斯風；(3) Duology 的『Duology』是 Ted Daniel／Michael Marcus 雙人組名，Cyrille 掛名領軍僅依 MB artist-credit，Discogs 製作人署名為 Daniel 與 Marcus，寫作層別寫成 Cyrille 邀請兩位吹奏者。
+- 21423　moodGuess 存疑（強烈，建議汰換）：Duology，Free Jazz Blog 稱開場旋律線明顯、Ornette／Cherry 式、〈Eclectic Autumns〉會 swing，疑判暖。
+- 21424　moodGuess 存疑（中）：Tsktsking（Soundohm 稱細膩帶旋律感、不爆發，Norman 稱 bebop 式互動與律動，x 可能不足、z 偏暖）；Wisdom in Time（Free Jazz Blog 稱部族色彩與舞蹈感節奏，另有〈Pure Stillness〉等標題暗示極弱留白，且 Discogs 與樂評皆未提悶音）；Most Materiall（138 分鐘、單曲最長 29 分鐘，疑判靜或重）；Explore（曲名〈South Africa February Dance〉〈Moonstone〉等，旋律是否抒情無樂評可證，Battaglia 維基稱兼具浪漫旋律）；Imponderable Evidence（Prévost 鈸擦、長曲 15 分鐘，疑判靜）。
+- 21425　thin：Fingerprints、Dada Da、Imponderable Evidence、Most Materiall、Explore 五張找不到樂評（AllAboutJazz、JazzMusicArchives、Squidco、Discogs 網頁 403；Free Jazz Blog 與 Leo／Intakt 站查無對應條目），聲音 facts 僅 Discogs 記事、曲名與藝人一般技法。All About Jazz 另有一筆同名《Fingerprints》D'Agaro（Setola di Maiale）是另一張，勿混。
+- 21426　WebSearch 3 次已用完（Fingerprints、Tsktsking、Duology 各一）。本組只有 8 張（派工寫 9 張，卡單 c 組實為 8）。
