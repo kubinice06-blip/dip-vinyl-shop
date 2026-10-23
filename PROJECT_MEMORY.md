@@ -1,5 +1,33 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格線第 9 輪派工：優先序 40–47（恍惚 5 批＋冷冽 2＋頹靡 1）
+
+- **起因**：第 8 輪三個工作階段（ml38/md22、ml40/mc22、ml41/ml35）全部收工，優先序 1–39 派完（ml39 歐陸 dub 場景見底、併入 ml40）。目前恍惚 1,268、頹靡 1,430、冷冽 1,429。
+- **新場景**：ml42 lo-fi／jazzhop 暖盤、ml43 暖 post-rock、ml44 暖 shoegaze／dream pop 厚牆、ml45 rocksteady／early reggae 慢歌（店主要多 dub／reggae 系）、ml46 暖 neoclassical 厚墊；mc36 no wave／薄而尖 noise rock、mc37 EAI／onkyo；md26 暗色 neofolk＋doom jazz 二線。
+- **派工**：第 9 輪 3 個工作階段：ml42＋ml45、ml43＋mc36、ml44＋md26；46–47 留待下一輪。
+- **主要檔案**：`batch-progress/mood-cells-20261022/SCENES.md`。
+- **驗證**：純佇列文件變更；新條號 19321–19960 與既有條號不重疊。
+
+### 2026-10-23｜dip-vinyl-shop｜久石讓《風之谷》：搜尋日台異體字對照＋補試聽
+
+- **起因**：店主「久石讓缺最重要的風之谷」。查證：卡池其實有《風の谷のナウシカ サウンドトラック はるかな地へ…》（1984），但藝人欄寫日文新字體「久石譲」，台灣輸入的「久石讓」NFKC 不視為同字，搜尋只跑出掛在「Joe Hisaishi 久石讓」名下的《Piano Stories》；這張卡也標 `unavailable` 沒有試聽。
+- **搜尋**：`index.html` 搜尋專輯的鬆散比對層（`_asLoose`，同時用於拍封面搜尋）加日文新字體→台灣正體對照約 180 組（譲讓、沢澤、竜龍、姫姬、楽樂…），並把「の」折成「之」。逐字層不動。
+- **試聽**：Apple TW 881802202（Nausicaä of the Valley of the Wind (Original Soundtrack)，1984-03-25，13 軌）取第 1 軌〈風之谷的娜烏西卡〉，寫進 `data/apple-audio-map-v1.json` 並重建 runtime；`card-preview-status.js` 刪掉 unavailable 行。
+- **沒做**：藝人字串不統一（改卡鍵會連動 KV、card_catalog、收藏），用搜尋對照解決。中文片名（「神隱少女」「龍貓」）仍搜不到，要另做片名別名。
+- **主要檔案**：`index.html`、`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、`card-preview-status.js`。
+- **驗證**：用卡池跑鬆散比對：「久石讓」14 張（原 1 張）、「風之谷」命中風之谷原聲帶、「坂本龍一」12 張不變；試聽檔 HTTP 206；runtime 16,108 筆 matched、0 invalid。
+
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 7 輪 ml38／md22：roots dub＋Ariwa lovers 26 張、無鼓 drone metal＋暗色 tape loop 26 張上線，落格 26/26、26/26
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 7 輪＋「恍惚可以多增加一點 downtempo 與 dub 這類的」，本工作階段負責 ml38、md22（評分照 10-23 體感標準）。ml38（`add-20261023-ml38`，恍惚：70s roots dub 二線＋ml37 UK dub）：Harry Mudie《In Dub Conference》×3、Rico《Wareika Dub》、Michael Prophet ×2、Wayne Wade、Hugh Mundell、Linval Thompson ×2、Barry Brown ×3、Viceroys、Lacksley Castell、Don Carlos、Tyrone Evans、John Clarke、Meditations、Roland Alphonso、Horace Andy ×2、Ariwa《Dub Showcase》×2、Wayne Jarrett、Bunny Wailer《Dubd’sco Vol. 1》。md22（`add-20261023-md22`，頹靡：無鼓 drone metal／post-metal ambient＋md23 tape loop）：Tribes of Neurot ×2、Æthenor、Mamiffer & Circle、Burial Chamber Trio、O’Malley《Éternelle Idole》、KTL、Barn Owl《V》、Jodis、Final ×3、Fear Falls Burning ×3、Aidan Baker、Lustmord ×4、Bass Communion ×3、Jasper TX ×2、Mathieu《Before Nostromo》。
+- **策展→研究汰換**：ml38 策展 36、主線汰 3（色溫貼邊 1、讓並行 ml41 的 Mad Professor 2）、研究汰 7（冷硬器樂 dub 3、合成器 boogie、精選 2、改名重發）→ 26；池中器樂重低音 dub 與 UK steppers 全判冷落頹靡，只收旋律型 dub 與濕混音人聲盤。md22 策展 38、研究汰 12（有鼓推進／刺耳爆裂 6、偏暖 5、彙集 1）→ 26。
+- **主線審稿**：ml38 改 3 處（單源評價「Jammy 最好的節奏之一」「最成功的歌手之一」刪、《Mezzanine》五首數字拿掉）；md22 改 4 處（單源樂評比喻 2、單源「唯一用上吉他」、KTL「抗戰」譯詞失準）；事實層未動、hook 未動。
+- **上線**：card_catalog 26＋26、KV 26＋26 鍵回讀逐字一致、試聽 16＋18 ready（人工配 12）、seed +52、published gate 兩批 0 error；封面 CAA 40、Apple 4、Discogs 8（已登錄 registry），live-check 全 200。上線前對 origin 77 個分支 seed＋卡單去重 0 撞。
+- **情緒評分**：`score-ml38`、`score-md22`。**ml38 落恍惚 26/26（100%）**、**md22 落頹靡 26/26（100%）**。八格（併 main 後）：恍惚 1,268、頹靡 1,430、冷冽 1,429。
+- **類型樹**：52/52 落位；Last.fm 誤標的 4 張 reggae（Rico jazz/rock、Wade、兩張 Showcase 空）seed 曲風欄改回 world；`genre-l3-artist-map.json` 補 reggae dub／roots 5 位、rock/metal/doom 5 位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 26 個掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{ml38,md22}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml38,md22}.json`、`master-override-ml38.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml38,md22}/`、`onboarding-manifest-add-20261023-{ml38,md22}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml38,md22}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 52/52；build-card-moods 錨點 104/104。
 ### 2026-10-23｜dip-vinyl-shop｜原聲帶簡介重寫 ost-1：遊戲＋日本動畫 45 張上線（含《Chrono Cross》）
 
 - **內容**：店主要原聲帶簡介「多說作品相關的故事」。196 張逐張分流：重寫 95、不動 101（`triage.json`）。ost-1 跑完研究 5→鉤子 2→寫作 2→QA→主線逐張審稿，45 張新簡介寫進 KV（`desc2:`／`desc4:` 舊鍵覆寫）：前兩句點出作品台灣中文名＋原名＋類型，正文講作品與音樂的故事。

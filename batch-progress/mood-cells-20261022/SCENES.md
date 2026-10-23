@@ -51,16 +51,24 @@
 | 27 | md18 | 日本暗色 drone／ambient／暗色獨立 ＋ md20 北歐暗色電子與配樂 ＋ md19 華語／韓國暗色獨立 | ✅ 上線 36／落格 34 |
 | 28 | mc28 | 歐陸自由即興（ICP、Globe Unity、Misha Mengelberg、Irène Schweizer） ＋ mc34 日本前衛即興 | ✅ 上線 22／落格 19 |
 | 29 | mc33 | glitch／microsound／尖細實驗電子 ＋ mc35 RIO／前衛搖滾尖細那半 | ✅ 上線 28／落格 20 |
-| 30 | md22 | 無鼓 drone metal／post-metal ambient 二線 ＋ md23 暗黑 lo-fi／tape loops | 派→情緒薄格 ml38、md22（第 7 輪） |
+| 30 | md22 | 無鼓 drone metal／post-metal ambient 二線 ＋ md23 暗黑 lo-fi／tape loops | ✅ 上線 26／落格 26 |
 | 31 | mc22 | 當代前衛爵士（Tim Berne、Steve Lehman、Mary Halvorson、Craig Taborn、Tyshawn Sorey） ＋ mc31 剩餘 | ✅ 上線 31／落格 27 |
 | 32 | ml31 | 爵士弦樂抒情盤／慢板 ballad ＋ ml33 福音慢板／靈魂聖詩 | ✅ 上線 7／落格 7 |
 | 33 | ml32 | 拉丁 bolero／慢板浪漫 ＋ ml25 80s 慢板 reggae 歌 | ✅ 上線 16／落格 16 |
 | 34 | ml34 | 華語／日語／韓語抒情 ballad 厚編曲 ＋ ml36 Balearic／ambient pop 暖盤 | ✅ 上線 12／落格 11 |
 | 35 | ml35 | alt-country／Americana 濕而慢 ＋ ml33 剩餘 | ✅ 上線 14／落格 13 |
-| 36 | ml38 | 70s roots dub 二線 ＋ ml37 UK dub／digital dub 90s | 派→情緒薄格 ml38、md22（第 7 輪） |
+| 36 | ml38 | 70s roots dub 二線 ＋ ml37 UK dub／digital dub 90s | ✅ 上線 26／落格 26 |
 | 37 | ml40 | downtempo 暖盤三線 ＋ ml39 歐陸 dub／dubtronica 暖盤 | ✅ 上線 10／落格 10 |
 | 38 | ml41 | 日本 dub／downtempo 暖盤 ＋ ml37 剩餘 | ✅ 上線 12／落格 12 |
 | 39 | ml39 | 歐陸 dub／dubtronica 暖盤 ＋ ml40 剩餘 | 併入 ml40（場景見底，不再派） |
+| 40 | ml42 | lo-fi hip-hop／jazzhop 暖盤（Nujabes 周邊、Uyama Hiroto、Hydeout、Tomppabeats、Kudasai、Jinsang 系 beat tape） ＋ ml45 | 派→情緒薄格 ml42、ml45（第 9 輪） |
+| 41 | ml45 | rocksteady／early reggae 慢歌（Treasure Isle、Studio One 慢板、Alton Ellis、Ken Boothe、Phyllis Dillon 二線） ＋ lovers rock 剩餘 | 派→情緒薄格 ml42、ml45（第 9 輪） |
+| 42 | ml43 | 暖的 post-rock／ambient post-rock（Hammock、Helios、Eluvium 暖盤、Sigur Rós 周邊、Caspian 慢盤、慢而厚、旋律清楚） | 派→情緒薄格 ml43、mc36（第 9 輪） |
+| 43 | mc36 | no wave／薄而尖的 noise rock（DNA、Mars、Teenage Jesus、Theoretical Girls、Glenn Branca 早期、Ut、Sonic Youth 最早期） | 派→情緒薄格 ml43、mc36（第 9 輪） |
+| 44 | ml44 | 暖的 shoegaze／dream pop 厚牆（Slowdive 周邊、Mazzy Star 系、Galaxie 500、Lush 慢盤、Asobi Seksu、日本 shoegaze 暖盤） | 派→情緒薄格 ml44、md26（第 9 輪） |
+| 45 | md26 | 暗色 neofolk／dark folk 慢盤（Current 93、Sol Invictus、Ain Soph、Forseti、Hexvessel 慢盤；避開有極右爭議的團） ＋ doom jazz 二線 | 派→情緒薄格 ml44、md26（第 9 輪） |
+| 46 | ml46 | 暖的 neoclassical／post-classical 弦樂＋鋼琴厚墊（Ólafur Arnalds、A Winged Victory 周邊、Dustin O'Halloran、Hania Rani 慢盤；獨奏鋼琴偏輕不收） | |
+| 47 | mc37 | EAI／onkyo／電聲即興（AMM、Keith Rowe、Sachiko M、Otomo 電聲期、Toshimaru Nakamura；安靜但讓神經繃緊的算躁） | |
 
 **暫停**：mc13 math rock、mc21 post-punk revival、mc30 minimalism（旋律清楚＝暖）、mc9／mc10／mc20／mc25／mc26 系的 synth-pop／new wave／K-pop／synthwave 續集（2026-10-23 體感標準：旋律清楚往暖，落雀躍）、mc23 art pop、ml4 系東亞續集、ml14 spiritual jazz（體感標準判冷，不是恍惚）、ml22、ml27。**重開**（體感標準下會落冷冽）：mc4、mc14、mc22、mc28。
 
@@ -91,10 +99,11 @@
 | md19 | 18121 | 華語／韓國暗色獨立與實驗（落差草原系、Mong Tong 系、韓國 post-rock 冷盤） | 併入 md18（0 張：主盤在池、惘聞／Jambinai 判躁；不再派） |
 | md20 | 18201 | 北歐暗色電子與配樂（Biosphere 冷盤、Deathprod 系、Rune Grammofon 慢盤） | 併入 md18（收 19 張，Cyclic Law／Cold Meat Industry dark ambient 全中；Biosphere 判輕不收；餘量可併 md22） |
 | md21 | 18281 | goth rock／coldwave 慢盤二線（會跳舞的快歌落冷冽或亢奮，不收） | ✅ 上線 34／落格 33（2026-10-23，併 md15） |
-| md22 | 18361 | 無鼓 drone metal／post-metal ambient 二線 | |
-| md23 | 18441 | 暗黑 lo-fi／tape loops／Basinski 系 | |
+| md22 | 18361 | 無鼓 drone metal／post-metal ambient 二線 | ✅ 上線 26／落格 26（併 md23；策展 38、研究汰 12：有鼓推進／刺耳爆裂 6、偏暖 5、彙集 1；Lustmord、Bass Communion、Jasper TX 收進） |
+| md23 | 18441 | 暗黑 lo-fi／tape loops／Basinski 系 | 部分併入 md22（Bass Communion ×3、Jasper TX ×2、Mathieu 收；懷舊溫暖的 tape loop 多判暖，Philip Jeck、Andrew Chalk 不收） |
 | md24 | 18521 | 嘻哈 instrumental 冷盤（暗色 beat tape、冷的 abstract hip-hop） | 併入 md16（Sixtoo、Odd Nosdam、BSBD、Req、DJ Krush 已收；不再單獨派） |
 | md25 | 18601 | 冷的 ambient pop／art pop 慢盤（Julia Holter 冷盤、Jenny Hval 慢盤、Kate Bush 以外的暗 art pop） | 併入 md10（池中冷 art pop 多判輕，只收到 6 張） |
+| md26 | 19721 | 暗色 neofolk／dark folk 慢盤（Current 93、Sol Invictus、Ain Soph、Forseti、Hexvessel 慢盤；避開有極右爭議的團）＋ doom jazz 二線 | 派→情緒薄格 ml44、md26（第 9 輪） |
 
 ## 冷冽 mc（躁＋輕＋冷；門檻 x ≥ 3.3、y ≤ +0.2、z ≤ −0.3）
 
@@ -137,6 +146,8 @@
 | mc33 | 13561 | glitch／microsound／尖細實驗電子（Oval、Ryoji Ikeda、Alva Noto、Mille Plateaux、raster-noton 薄盤） | ✅ 上線 28／落格 20（併 mc35；策展 50、主線汰 4、研究汰 18；飄浮型判靜已擋，高密度噪聲型與 Cassiber 判重落暴躁 8） |
 | mc34 | 13641 | 日本前衛／即興（高柳昌行、阿部薫、大友良英、Sachiko M、ONJO） | 部分併入 mc28（只收吉田アミ 1 張；大友 Cathode／Anode、Sachiko M 正弦波極靜判靜、高柳／阿部噪音轟炸判重或 MB 標現場，不再單獨派） |
 | mc35 | 13721 | RIO／前衛搖滾尖細那半（Henry Cow、Art Bears、Etron Fou Leloublan、Thinking Plague、Univers Zero 薄盤） | 併入 mc33（Henry Cow、Art Bears、Étron Fou ×3、Skeleton Crew、5uu's ×2、Doctor Nerve、Yugen 落冷冽；Cassiber 與 Thinking Plague《In Extremis》判重） |
+| mc36 | 19641 | no wave／薄而尖的 noise rock（DNA、Mars、Teenage Jesus、Theoretical Girls、Glenn Branca 早期、Ut、Sonic Youth 最早期；厚牆轟炸落暴躁） | 派→情緒薄格 ml43、mc36（第 9 輪） |
+| mc37 | 19881 | EAI／onkyo／電聲即興（AMM、Keith Rowe、Sachiko M、Otomo 電聲期、Toshimaru Nakamura） | |
 
 ## 恍惚 ml（靜＋重＋暖；門檻 x ≤ 2.7、y ≥ +0.8、z ≥ +0.3）
 
@@ -180,8 +191,13 @@
 | ml34 | 16641 | 華語／日語／韓語抒情 ballad 厚編曲（90s 弦樂、殘響厚、旋律清楚的慢歌盤） | ✅ 上線 12／落格 11（併 ml36；策展 22、研究汰 10；池中 CJK 抒情全判輕、真 Balearic 判輕，場景見底，不再派） |
 | ml35 | 16721 | alt-country／Americana 濕而慢（Cowboy Junkies、Lambchop、Mazzy Star 系） | ✅ 上線 14／落格 13（併 ml33；策展兩輪 33（放寬地域到英加澳濕 crooner）、主線汰 1、研究汰 18；池中 alt-country 全判輕，主場景見底，不再派） |
 | ml36 | 16801 | Balearic／ambient pop 暖盤（溫而霧、旋律清楚） | 併入 ml34（真 Balearic 池中判輕；暖吉他殘響 ambient pop 收 10；不再派） |
-| ml37 | 16881 | UK dub／digital dub 90s（Mad Professor、Zion Train、Iration Steppas、Jah Shaka、Dub Syndicate、Alpha & Omega 二線） | |
-| ml38 | 19001 | 70s roots dub 二線（Scientist、King Jammy、Augustus Pablo、Yabby You、Keith Hudson、Black Ark 周邊、Errol Thompson） | |
+| ml37 | 16881 | UK dub／digital dub 90s（Mad Professor、Zion Train、Iration Steppas、Jah Shaka、Dub Syndicate、Alpha & Omega 二線） | 部分併入 ml38（Ariwa lovers 收 4；steppers 全判冷落頹靡；Mad Professor《Dub You Crazy With Love》Part 2／3 讓 ml41） |
+| ml38 | 19001 | 70s roots dub 二線（Scientist、King Jammy、Augustus Pablo、Yabby You、Keith Hudson、Black Ark 周邊、Errol Thompson） | ✅ 上線 26／落格 26（併 ml37；策展 36、主線汰 3、研究汰 7；器樂重低音 dub 池中全判冷，收旋律型 dub 與二線製作人濕混音人聲盤） |
 | ml39 | 19081 | 歐陸 dub 與 dubtronica 暖盤（Dreadzone、Kruder & Dorfmeister、Tosca、Thievery Corporation 其他、Smith & Mighty、Dub Pistols 慢盤） | 併入 ml40（頭牌已在池或判輕判冷，不再派） |
 | ml40 | 19161 | downtempo 暖盤三線（Ninja Tune／Compost／Pussyfoot 暖盤、Bonobo 早期、Blockhead、Emancipator、Nightmares on Wax 其他、Fila Brazillia 以外） | ✅ 上線 10／落格 10（併 ml39；策展 36、主線汰 1、研究汰 24，場景見底） |
 | ml41 | 19241 | 日本 dub／downtempo 暖盤（Little Tempo、Dry & Heavy、Audio Active、Mute Beat、Gota、Kyoto Jazz Massive 慢盤、Cro-Magnon） | ✅ 上線 12／落格 12（併 ml37 lovers dub 那半；策展兩輪 30、主線汰 3（撞 ml40 1）、研究汰 15；日本 dub 池中多判冷、KJM 系落雀躍，場景見底，不再派） |
+| ml42 | 19321 | lo-fi hip-hop／jazzhop 暖盤（Nujabes 周邊、Uyama Hiroto、Hydeout、Tomppabeats、Kudasai、Jinsang 系 beat tape；要暖、慢、低頻厚） | 派→情緒薄格 ml42、ml45（第 9 輪） |
+| ml43 | 19401 | 暖的 post-rock／ambient post-rock（Hammock、Helios、Eluvium 暖盤、Sigur Rós 周邊、Caspian 慢盤） | 派→情緒薄格 ml43、mc36（第 9 輪） |
+| ml44 | 19481 | 暖的 shoegaze／dream pop 厚牆（Slowdive 周邊、Mazzy Star 系、Galaxie 500、Lush 慢盤、Asobi Seksu、日本 shoegaze 暖盤） | 派→情緒薄格 ml44、md26（第 9 輪） |
+| ml45 | 19561 | rocksteady／early reggae 慢歌（Treasure Isle、Studio One 慢板、Alton Ellis、Ken Boothe、Phyllis Dillon 二線） | 派→情緒薄格 ml42、ml45（第 9 輪） |
+| ml46 | 19801 | 暖的 neoclassical／post-classical 弦樂＋鋼琴厚墊（獨奏鋼琴偏輕不收） | |
