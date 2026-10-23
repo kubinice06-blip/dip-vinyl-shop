@@ -12,3 +12,13 @@
 - **候補 9（不入 pick，研究汰換時補位）**：z 風險（作曲主題清楚／變形標準曲）Courvoisier Trio《D'Agala》《Free Hoops》、Schlippenbach《Twelve Tone Tales Vol. 2》（Monk 改編）、Takase & Schlippenbach《Iron Wedding》；Kris Davis 三重奏《Rye Eclipse》《Good Citizen》（池中 Davis《Diatom Ribbons》y 0.6，三重奏留獨奏兩張）；y 風險（全力合奏／鈸浪）《Natives and Aliens》、Schlippenbach & Murray《Smoke》（mc28 先例三人全力合奏判重）；Shipp《Codebreaker》（與《The Piano Equation》同型晚期獨奏，擇一）。
 - 研究層待核：Crispell《Spirit Music》（Soundscape 是否公開演出）、「live to two-track」三張是否錄音室直錄、Shipp《Magnetism》編制、《Wo der Kopf sitzt》正規掛名、《Ithaca》年份。
 
+
+## 研究 a 組（20201–20210）
+- 20201：九張（Shipp 1990–2001）全查為錄音室專輯，無現場、無選輯（Discogs 錄音註記與維基錄音棚地點可證）。
+- 20202：《Thesis》卡單 label 空白，Discogs／維基皆 hatOLOGY（Hat Hut），建議補；掛名 Matthew Shipp Duo（MB）實為 Shipp 與 Joe Morris。
+- 20203：策展寫『中提琴』的兩張（《By the Law of Music》《Gravitational Systems》）及 String Trio 一張，Mat Maneri 一律是 violin（小提琴），facts 寫小提琴；『微分音』『刮弦』無來源不寫。
+- 20204：《Zo》策展『弓拉貝斯』查無證據（維基只寫 juddering bass vamps）；facts 不寫弓拉。
+- 20205：《Points》年份衝突：MB 1990（即錄音年）／維基 1992 發行；1992 單一來源標 uncertain，facts 寫錄音 1990、發行年交主線裁卡單 year。
+- 20206：《Critical Mass》策展『鼓刷輕』無證據，實為有鼓有貝斯的四人編制、三首長曲（最長約 21 分），不寫刷。
+- 20207：moodGuess 存疑清單見各卡 notes：Zo（Summertime 標準曲、dark/dreariest）、By the Law（Solitude 標準曲，旋律清楚）、Gravitational Systems（Greensleeves、Naima 改編）、Thesis（lyrical、dark and beautiful，吉他未證實原聲）、Points（四人有鼓、34 分鐘長曲，y 風險）、Symbol Systems（pensive、有 boogie／bop 語彙）、2-Z（Mitchell 留白，可能判靜）、Critical Mass 與 Expansion（聲音證據薄）。
+- 20208：AllMusic、Jazzwise、AAJ、jazzmusicarchives 全文 403／503，樂評僅由維基轉述；星等一律不寫。
