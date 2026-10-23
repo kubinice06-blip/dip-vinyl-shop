@@ -86,3 +86,15 @@
 - **20828** 媒體名與榜單：正文 0 個媒體名；Marigold 樂評只寫內容（「樂評說他替曲子做出空心、帶回音的聲音」），Uproxx 年度榜不寫；Kan Sano 寫「訪問者形容」；mabanua 的發行方文案改成直述聲音（不寫「文案寫」，避轉述引導詞）；Groundation 樂評與零售商說法整條未用（note 未列）。「據」字 grep 0。日本人名：mabanua、Chara、Achico、Kan Sano 皆照原文（本即拉丁字）。
 - **20829** 自掃（han() 中文 4-gram，本檔 8 張＋writer-1 當時已交 5 張）：3 張以上只剩獎名「葛萊美最佳」（Liniker、Luedji、Ventriloquism，專名不算）。途中拆掉：「客座人聲」×2（Groundation 改「客座歌手」）、「由樂團自」×2（Groundation 改「交給」、Black Roots 改「都掛樂團自己的名字」）、「個人專輯」×2（mabanua 改「個人作品」）、「在年月日」（Marigold 對 w1 Kem，日期句改以日期領句）、「發行這張」「推出這張」「合作整張」（Marigold 改寫成「一起自行發行，製作全交給 Dine」）、「於年月日」（Leon 對 w1 Kem，刪「則於」）。⚠ writer-1 交件時只有 5／9 張，**主線收件時請兩檔合掃一次**。
 - **20830** 腳本：`node qa-check-research.mjs`（writer-2）標記 0；`node fix-spacing.mjs` 待補 0；`node qa-batch.mjs out add-20261023-ml53` 本檔 174–240、0 標記（另報的 thin 超標與張數 13 vs 17 屬 writer-1 進行中）。輔助腳本：scratchpad `wr-ml53-2/ml53w2-measure.mjs`。
+
+## 寫作層（writer-1）
+- **20821** 交件：`desc-tools/batches/output/add-20261023-ml53-out-1.json` 9 張（full 6：Compositions 229、Morning Dove White 232、Tough Love 228、Dawn 231、Honey for Wounds 240、Feel Good 223；thin 3：Love Always Wins 177、Convergence 179、Ventriloquism 177）。key 逐字同序。被主線汰換的卡不在輸入、未寫。初稿超標 5 張（Kem／Malia 190、Meshell 181、One Dove 254、Ware 268），整格捨去：Ware 砍 Miguel／Ed Sheeran 參與寫歌一格與「BenZel 兼整張執行製作」改併入一句；One Dove 第二句改短、「全數進榜」縮寫；thin 三張縮句（Malia 合併出生與移居、Meshell「一組鼓與一把吉他」改「鼓與吉他」）。
+- **20822** 第二句領句全照鉤子層 20813：Anita＝Powell 領句、Kem＝作曲欄（詞曲由 Kem 掛名）、Malia＝團體身分（替 hook「一半」具名 Boris Blank）、Meshell＝序數、One Dove＝樂團出身＋主唱、Ware＝國籍（替「主打歌」具名〈Tough Love〉）、YEBBA＝外人之口（Ronson，帶「製作人」身分）、Ego＝名字由來、Internet＝廠牌關係。日期「日」後一字照 20814：Kem 推、Malia 面、Meshell 交、Ware 在、YEBBA 由、Ego 亮、Internet 上；Anita、One Dove 只寫年。Ego 日期句改成以日期領句（前一字「自」），避開 writer-2 Electric Dusk 的「專輯年月日」。
+- **20823** 媒體名與媒體榜單：正文 0 個媒體名，Mixmag 名單、Heatseekers、分數星等皆未寫；樂評內容寫成「樂評說／樂評把它形容成／評論在裡頭聽出」。無「據說／據傳」、無否定句。Anita 不寫現場合錄與錄音室數、YEBBA 不寫弦樂與福音、Kem 不寫序數、Ware 只寫英國上架日；YEBBA 母親一句平敘（克制）；Ego 的 MOBO 寫「同年」標時序。One Dove 的 dub 深回音照 note 掛在〈White Love〉之後，寫成評論聽出、不寫成直述音色。
+- **20824** 自掃（han() 中文 4-gram，本檔 9 張＋writer-2 已交 out 8 張＋writer-2 hooks）：3 次以上 0 條。途中拆掉「葛萊美最佳」×3（Meshell 改「在葛萊美入圍最佳」）、「交給發行」×2（Anita 改「發行商是」）、「於年月日」、「在年月日」、「張錄音室」（One Dove 改「錄音室作品」）、「英國專輯榜」×2（Ware 改「英國的專輯排行」）、「歌手的名字」×2（Kem 改「由 Kem 掛名」）、「她拿下最」×2（Ego 改「頒給了她」）。剩 2 張殘片「錄音室專輯」（Meshell／Ware，兩張 note 都指定此詞，通用詞保留）。
+- **20825** 腳本：`node qa-batch.mjs out add-20261023-ml53` 全部通過（out-1 177–240、out-2 174–240，thin 4 張皆 ≤180，合計 17 張符卡單）；`node qa-check-research.mjs`（writer-1）標記 0；`node fix-spacing.mjs` 待補 0。輔助腳本：scratchpad `wr-ml53-1/ml53w1-scan.py`、`ml53w1-d1.py`、`ml53w1-d2.py`。
+
+## 主線審稿（2026-10-23，雲端主線，17 張逐張讀過、對回研究稿）
+- **20831** `desc2:YEBBA|Dawn`：「製作人 Mark Ronson 說，YEBBA 是他錄過最偉大的歌手之一。」→「美國歌手 YEBBA 的首作，由製作人 Mark Ronson 與她一起掌舵。」（單源讚語句刪；改寫成研究稿 Wikipedia 製作人名單事實，並補身分）。
+- **20832** `desc2:Jessie Ware|Tough Love`：「是她最大的一首。」→「是她名次最高的單曲。」（語意不清；研究稿「她最大的單曲」指英國榜名次）。
+- 其餘 15 張逐張審過，未改字（樂評句只留聲音描述：Kem 律動更粗礪、One Dove dub 深回音、Ego Ella May 鬆散開闊、Alex Isley 空心回音、YEBBA 電鋼琴與爵士融合）。qa-batch out、qa-check-research（兩檔標記 0）、fix-spacing（0）重跑全過。
