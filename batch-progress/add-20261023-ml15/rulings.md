@@ -38,3 +38,13 @@
 - 15134：moodGuess 存疑（輕到中度）：BDO 三張。首作第一碟為孟買弦樂＋downtempo、dub 在第二碟；《3 Cities》為弦樂團＋復古合成器＋downtempo，電影感、非重低頻；《Tales》僅有 Discogs 風格標籤含 Dub／Downtempo／Ambient，無樂評可驗，金斯敦與 Sly & Robbie 為維基單句。三張的「dub 低頻厚」皆缺乎證據；西塔琴／土耳其樂手的策展層描述亦無來源。
 - 15135：Trinity Roots《True》年份並存：MB／Discogs 2002，AudioCulture／維基 2001；沿用卡單 2002，寫作層避免寫死。2003 最佳 Roots 專輯為樂團獎項，不歸本盤。FFD《SLO MO》發行日各源不一（黑膠 10/18 或 10/25、MB 數位 11/08），只寫月份；Faiumu 2025 年辭世僅寫其為本盤錄音混音（Discogs），「最後一張」查無來源不寫。
 - 15136：本組 WebSearch 用 3 次（FFD SLO MO、BDO 3 Cities、Salmonella Dub）；Discogs／MB API 直連可用；Tales 第 9 條原擬寫的伊斯坦堡地名詮釋已刪（無來源）。
+
+## 研究 e 組
+- 15161：Boozoo Bajou《Grains》moodGuess 存疑（中度）：樂評（Cyclic Defrost、PopMatters）與廠牌文案一致說這張轉向原聲民謠、更輕更亮、更有機（Laurel Canyon 靈感，客座 Rumer 等），非策展層寫的「厚低頻 dub 拍」；速度「懶洋洋地慢」、暖度成立，但 y 可能只有 0.5–0.9 貼邊距。PopMatters 6/10、AllMusic 3.5 星。發行日各源不一（2-20／2-24／3-3），facts 只寫 2009 年 2 月。
+- 15162：Liquid Bloom《Heart of the Shamans》moodGuess 存疑（中到重度）：來源無任何一處提 dub 或厚低頻，實為冥想／儀式取向的新世紀世界融合（長笛、吟唱、didgeridoo、自然錄音），前六首節奏稀疏甚至無鼓，最後兩首才是 Medicina 重混的穩定心跳節律；y 可能 0.3–0.7，建議主線評分時審慎。另更正：發行廠牌是 White Swan Records（Boulder），Global Dragon 是版權與錄音室名；此碟與主線已汰的 Desert Dwellers／White Swan 梵唱目錄同廠牌、同製作人 Amani Friend，建議主線考量一致性。專輯全名《Heart of the Shamans: Ceremonial Medicine Songs》。
+- 15163：Kalya Scintilla《Gaian Code》moodGuess 存疑（中度）：樂評明說「aggressive drums」、突出的低音，Discogs 標 Glitch Hop／Tribal，Bandcamp 標 tribal house／dubstep，20 首（約 100 分鐘）節奏不少相當明顯，能量可能 2.7 以上；暖度與厚度成立。藝人生平查無（MB／維基皆無），國籍僅依廠牌地點為澳洲，facts 不寫生平。
+- 15164：Gaudi《Bass, Sweat & Tears》moodGuess 輕度存疑：Bandcamp 自述 dub 與 nu-beat、Discogs 標 Latin／Tribal，曲目節奏不一（Dub It、Babylon Flamenco 有明確拍），x 可能 2.8–3.0；curatorRisk 的「色溫 0.3–0.5」無來源可驗。原發行日兩說（MB 與 Discogs 10-29、藝人 Bandcamp 5-20），年份 2004 一致。2014 年 Six Degrees 另出雙碟重發（加 Dub, Sweat & Tears），本卡以 2004 原版為準。
+- 15165：Kaya Project《And So It Goes》moodGuess 輕度存疑：17 首長盤，樂評說速度「忽上忽下」、含 breakbeat 與部落鼓（曲名 Saranghi Breaks、Obsidian Beats），無來源提厚低頻或回音；暖度成立，x 可能 2.7–3.2。策展層「第三張」成立（維基文字誤寫第四張）。
+- 15166：Sounds From the Ground《Mosaic》：同一批曲子 2000 年在美國以《Terra Firma》（Waveform，曲目有兩首不同、少一首 Snow）發行，兩者重疊度極高，建議主線查重池中是否另有 Terra Firma 的卡。moodGuess 大致成立（ambient dub 低頻確有來源：Ambient Music Guide 稱 bass-heavy），但暖度偏「暗暖」（Bandcamp 提 darker element），民族取樣無佐證。「第二張」成立（前作 Kin）。
+- 15167：Ott《Fairchildren》無推翻、moodGuess 大致成立（慢、厚、暖的 psy-dub，真樂器多、有機）；僅有使用者提到部分曲目有 glitch 質地。
+- 15168：本組 WebSearch 共 8 次（每張 1 次，Sounds From the Ground 2 次）；MB／Discogs API 直連可用，Discogs release 頁面 WebFetch 403 改用 API。AllMusic 頁面全部 403，psyreviews.net 與 ambientmusicguide.com 容器 DNS 失敗（後者內容引自搜尋摘要）。未推翻任何年份、盤名；廠牌僅 Liquid Bloom 一處更正。無選輯／重發問題，無建議移除。
