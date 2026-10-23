@@ -17,3 +17,24 @@
 - 19442：Ben Lukas Boysen《Spells》moodGuess 存疑——有真鼓（Achim Färber）、鋼琴為基底、Bandcamp 自述「更輕盈、更有能量」、〈Golden Times I〉鼓漸重、〈Nocturne 4〉轉快板；「厚合成器墊」無來源。建議 x 上調、y 下調或汰換。
 - 19443：Ben Lukas Boysen《Gravity》——原始首發 2013 Ad Noiseam（ADN168CD），Erased Tapes 為 2016 重發（ERATP084），卡單廠牌請主線確認；Erased Tapes 頁面明載鼓手 Färber 與 Frahm 的合成器，「無鼓」預估不成立，暖無樂評證據，列汰換候選。
 - 19444：Olan Mill《Paths》——Paths 時期為二人組（Smalley＋Samoylenko），非獨奏；「磁帶暖霧」無來源，實為處理吉他＋管風琴＋小提琴、2010 年底兩場現場多軌重組；無鼓符合；Bandcamp 國別標 Germany 與 MB（GB）不一致，採 MB。z 無樂評可證。
+
+## 研究 a 組
+- 19401：Hammock《Universalis》moodGuess 存疑——樂評用字 glacial／brooding／blissful misery（僅 Bandcamp 自述 hopeful）；樂評皆未提鼓（無鼓為推論）；z 0.6 可能偏高。
+- 19402：Hammock《Elsewhere》moodGuess 存疑——卡單「輕柔人聲」不實，全器樂無主唱（有人聲的是下一張 Love in the Void）；樂評 sullen／poignant／glacial。
+- 19403：Eluvium《Copia》status thin——僅維基「銅管與弦樂」，無樂評字句可證暖度（Pitchfork 被工具擋）；暖度無法驗證。
+- 19404：Eluvium《Talk Amongst the Trees》status thin——來源皆未說樂器／鼓；XLR8R 用 pathos 偏感傷；暖度存疑。榜單名次只放 notes。
+- 19405：Jónsi & Alex《Lost and Found》status thin——無針對本張樂評；無鼓與磁帶墊無法證實；與 Somers 分手事不寫。
+- 19406：Sigur Rós《ÁTTA》moodGuess 存疑（色溫）——Pitchfork 讀出 despair／depression，Hólm「更內向」；少鼓成立（僅四首有打擊樂）。
+- 19407：Alex Somers《Siblings》moodGuess 存疑（嚴重）——mxdwn 明說 Siblings 是兩張中較暗、窒悶（低沉不祥合成器、Deathbed）；明亮的是 Siblings 2。建議汰換或改 Siblings 2。
+- 19408：Mountains《Choral》吻合——無鼓（冰水書頁微打擊）、暖質地出自廠牌文案（單一來源）；Thrill Jockey 稱 third album 與維基列表（第 4 張）衝突，facts 不寫序數。
+
+## 研究 b 組
+- 19411：Lowercase Noises《This Is for Our Sins》moodGuess 存疑（嚴重）——13 首中 7 首有實鼓、有人聲、有大提琴；主題為 Lykov 家族饑荒與死亡；小號 Bandcamp 未列。發行日 Bandcamp 4/30 vs MB 5/14 並陳。建議汰換。
+- 19412：Christopher Willits《Surf Boundaries》status thin——聲音證據為零（Ghostly 頁 404）；暖度與鼓皆存疑。
+- 19413：Christopher Willits《Horizon》status thin——僅 8 首 87 分長曲與生平；暖度與鼓存疑。
+- 19414：Hugar《Hugar》moodGuess 存疑——推翻「無鼓」：維基載明鼓由 Ólafur Arnalds 演奏；其餘聲音無來源。
+- 19415：Hugar《Varða》status thin——14 首 48 分短篇編排與「厚墊」預期不符；弦樂銅管無來源。
+- 19416：Yndi Halda《Under Summer》moodGuess 存疑（x）——有鼓、四首長曲安靜與爆發交替（Record Collector「slap with a cudgel」、Stereogum「might burst」）；非「不爆裂」。「隔八年／十年」兩說並陳為「近十年」。
+- 19417：The American Dollar《The Technicolour Sleep》status thin——有真人鼓；無樂評；發行日 MB 4/8、Apple 1/1 衝突。
+- 19418：The American Dollar《A Memory Stream》status thin——有真人鼓；無樂評；發行日 MB 7/15、Apple 8/18 衝突。
+- 本批共通：WebSearch 用 4 次；MB／維基 API 被 429 擋，改用 WebFetch；Pitchfork 被工具擋。
