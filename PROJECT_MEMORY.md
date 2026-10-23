@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜頻率選歌：FINE 改一格一張、SCAN／FINE 撥桿動畫、新增搜尋列（預覽中）
+
+- **改動**：店主反映 FINE 沒有「小範圍慢慢掃」的感覺。FINE 改成每撥一格（拖 14px／滾一下／方向鍵）就跳到這條軸上附近的下一張，輪子跟著咔一格、有咔噠聲；SCAN 照舊連續掃。開關撥桿照原稿槽位做三格（上／中／下，`tune/switch.png`，SCAN 在上、FINE 在下）。新增搜尋列模組（`tune/panel-search.png`，配色與螺絲取自原稿，`scripts/build-tune-sprites.py` 產生）：輸入藝人或專輯，清單從星圖底部浮出，選了之後三顆輪子依序轉過去（能量→質地→色溫），停在那張並試聽。面板改成貼底、搜尋列在最上；頻率選歌開著時頁面底色改成面板深灰 `#2c3037`。`dip-tune.js?v=9`。
+- **主要檔案**：`dip-tune.js`、`index.html`、`tune/switch.png`、`tune/panel-search.png`、`scripts/build-tune-sprites.py`
+- **驗證**：本機 Playwright（桌機 1400×900、手機 400×820）：搜「eminem revival」→ 三軸依序轉到 Revival、小卡顯示沸騰；FINE 拖 70px 依序換 5 張；撥桿 上→中→下；無頁面錯誤。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 4 輪 md14／ml19：暗色配樂 42＋city pop／AOR 濕慢歌復興盤 10 張上線，體感標準落格 19/42、8/10
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 4 輪，本工作階段負責 md14、ml19。md14（`add-20261023-md14`，頹靡：暗色電影／遊戲／影集配樂＋md13 現代古典暗黑音塊）：Jóhannsson《Sicario》、Hildur《Day of the Soldado》、Mica Levi《Monos》、Levi & Burn《The Zone Of Interest》、Stetson《Hereditary》《Color Out of Space》、Korven《The Lighthouse》《The Witch》、Zimmer & Wallfisch《Blade Runner 2049》、Lustmord《First Reformed》、Reitzell《Hannibal》×3、山岡晃 SH4／Homecoming／SH2 2024、Tarmia《Amnesia》×2《SOMA》、《Control》、《Hellblade》、《Doom 64》、Aethek & Lustmord《Scorn》、《Texas Chain Saw Massacre》、Ben Frost《Dark》×2《Fortitude》、Graves《Dead Space》、Kurzel《Snowtown》《Macbeth》、Hecker《Infinity Pool》、Young《Sinister》、《Saint Maud》、《Possessor》、《Enemy》、Jóhannsson & Glotman《Last and First Men》、Frost & Bjarnason《Sólaris》、Thorvaldsdottir ×4、Scelsi《Natura renovatur》（ECM）。ml19（`add-20261023-ml19`，恍惚：city pop／AOR 濕慢歌＋ml28 soft rock 復興盤）：Drugdealer、Sean Nicholas Savage ×2、Lewis ×2、Ducktails《Jersey Devil》、Mndsgn《Body Wash》、Pure Bathing Culture《Moon Tides》、Sweetback《Stage [2]》、Michael Seyer《Bad Bonez》。
