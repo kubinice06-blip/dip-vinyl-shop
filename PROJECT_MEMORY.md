@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜「頻率選歌」改名「頻率光譜」
+
+- **改動**：店主指定改名。看得到的地方全換：首頁入口卡（`index.html` 分頁清單）、紀錄徽章、PWA 捷徑（`manifest.json`）、`tune/index.html` 標題與 og:title、分享縮圖 `og-tune.png` 的大標（Noto Sans TC 350 重繪，字級、位置、顏色照原圖）。程式內部代號仍是 `tune`，舊紀錄的 type 不變；程式註解不改。
+- **主要檔案**：`index.html`、`manifest.json`、`tune/index.html`、`og-tune.png`
+- **驗證**：`grep` 確認面向使用者的字串已無「頻率選歌」；縮圖新舊並排比對字重與位置一致。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 7 輪 ml41／ml35：日本 dub＋UK lovers dub 12 張、濕慢 alt-country／crooner 14 張上線，落格 12/12、13/14
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 7 輪＋10-23「恍惚可以多增加一點 downtempo 與 dub」，本工作階段負責 ml41、ml35（評分照 10-23 體感標準）。ml41（`add-20261023-ml41`，恍惚：日本 dub／downtempo＋ml37 UK dub）：LITTLE TEMPO 2（KEDACO IS BORN、Ron Riddim In Dub）、Ryukyu Underground《Shimadelica》、Likkle Mai《Dub Is the Universe》、Polaris 2、Mad Professor《Dub You Crazy With Love》Part 2／3、Hollie Cook、Horace Andy 2（Midnight Rocker、From the Roots）、Tsutchie《samurai champloo: playlist》。ml35（`add-20261023-ml35`，恍惚：alt-country／Americana 濕而慢＋ml33 福音剩餘，主線放寬到英加澳濕 crooner）：Cowboy Junkies 2、Lambchop《FLOTUS》、Low Anthem《Smart Flesh》、MMJ《The Waterfall II》、Chris Isaak《Heart Shaped World》、Orville Peck《Pony》、k.d. lang《Ingénue》、Willie Nelson《Teatro》、Natalie Prass、Mahalia《Let's Pray Together》、Tindersticks《Can Our Love...》、Ghosteen、Timber Timbre《Hot Dreams》。
