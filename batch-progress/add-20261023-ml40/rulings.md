@@ -97,3 +97,14 @@
 - **19233** `desc2:Boozoo Bajou|Finistère`：「Steve Spacek 唱的〈Sparks〉，律動被比作 Sade。」→「〈Sparks〉請來 Steve Spacek 演唱。」（單源比較）
 - **19234** `desc2:Fat Freddy's Drop|Dr. Boondigga & The Big BW`：「做出朦朧的氣氛，讓樂評想起 King Tubby 與 Scientist；」→「做出朦朧的 dub 氣氛；」（單源比較）
 - 以上皆為刪減評語，事實未變，研究層無須同步。其餘 6 張逐張審過，未改字。qa-batch out、qa-check-research（0 標記）、fix-spacing 重跑全過。
+
+## 上線（不佔條號）
+- 上線 10：card_catalog 10/10、KV 10 鍵回讀逐字一致、試聽 10/10 ready、seed +10、published gate 0 error。封面 CAA 9＋Apple 官方圖 1（Dub Colossus 改 Real World 版），縮圖表目視 10/10。上線前對 origin 所有 `claude/*` 分支去重 0 撞。
+- 類型樹 10/10 落位；`genre-l3-artist-map.json` 的 `electronic/bass/dub` 補 Almamegretta、Blundetto & Liam Bailey。
+
+## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-ml40/`）
+- 照 10-23 體感標準評分（conf mid 7、low 3）。**上線 10；落恍惚 10/10＝100%**。色溫貼邊：Almamegretta z +0.2、Heights of Abraham 兩張 z +0.3／+0.4。
+- 產量：策展 35＋補 1、主線汰 1、研究汰 24 → 10。**downtempo 暖盤三線與歐陸 dub 已見底**：二線多半查無 dub 低頻證據或指向 breaks／funk／舞池；有樂評明講「重低音＋回音＋溫暖」的才收，收了就全中。**ml40、ml39 不再派。**
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Heights of Abraham、Blundetto & Liam Bailey（合掛名）、Almamegretta、Hollie Cook、Fat Freddy's Drop（池中已有卡但無介紹）。（Tosca、Boozoo Bajou、Dub Colossus 已有介紹。）

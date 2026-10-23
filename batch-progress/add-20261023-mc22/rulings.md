@@ -111,3 +111,16 @@
 - **12752** `desc2:Peter Evans Quintet|Destination: Void`：刪「Jim Black 的鼓點落得遲卻精準，被拿來跟 Monk 相比。」（單篇樂評的比較評語；刪後 200 字仍在 full 帶）
 - 核過的事實：Big Satan「侵略性／幽默感」（維基樂團條目）、Shell Game「質地與支撐」（維基轉引）、Tamarindo 後以團名續錄（jazzword）、Codebook 曲名取自 Samuel Morse（Pi 頁）、Blood Sutra「極其有力、卻收得很緊」（Pi 文案）、Webber 2018 古根漢獎（維基）、Braxton 1994 麥克阿瑟獎（hook 層引研究稿）——成立，未改。
 - 其餘 29 張逐張審過，未改字。qa-batch out、qa-check-research（兩檔 0 標記）、fix-spacing 重跑全過。
+
+## 上線（不佔條號）
+- 上線 31：card_catalog 31/31、KV 31 鍵回讀逐字一致、試聽 27 ready（主線人工配對 1：Mitchell《Conversations I》；Berne《Fractured Fairy Tales》《Sanctified Dreams》、Big Satan《I Think They Liked It, Honey》、Gentile《Mannequins》Apple 查無）、seed +31、published gate 0 error。封面 CAA 23＋Apple 官方圖 8（CAA 404），縮圖表目視 31/31、live-check 31/31。上線前對 origin 所有 `claude/*` 分支 seed 與 10-22／10-23 卡單去重 0 撞。
+- 類型樹 31/31 落位；`genre-l3-artist-map.json` 的 `jazz/free/avant` 補 Fieldwork、Mary Halvorson Trio、Rudresh Mahanthappa、Tim Berne, Craig Taborn & Tom Rainey（藝人層無標籤）。
+
+## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-mc22/`）
+- 照 10-23 體感標準評分（conf mid 23、low 8）。**上線 31；落冷冽 27/31＝87%**。
+- 出格 4 張全判重落暴躁：Big Satan《I Think They Liked It, Honey》《Souls Saved Hear》（Ducret 電吉他）、Berne／Taborn／Rainey《The Shell Game》（電子低頻）、Peter Evans Quintet《Destination: Void》（電子噪音、y 0.5）。**當代前衛爵士要收原聲、無電吉他／電子的小編制**；帶失真吉他或現場電子的照 mc1 教訓 y 估 +0.3 起跳。
+- 邊界：Tom Rainey Trio 三張 x 3.0–3.1 剛好過線（無貝斯三重奏、作曲短曲）。
+- 產量：策展 54、主線汰 9、研究汰 14 → 31。研究汰換主因是翻奏／旋律清楚（判暖）、groove（判重）、獨奏留白（判靜）。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Fieldwork、Mary Halvorson Trio（→ Mary Halvorson）、Thumbscrew、Tom Rainey Trio、Ingrid Laubrock Anti-House、Tony Malaby、Matt Mitchell、Kate Gentile、Rudresh Mahanthappa、Henry Threadgill Zooid（→ Henry Threadgill）、Peter Evans Quintet、Anna Webber、Ellery Eskelin with Andrea Parkins & Jim Black、Big Satan、Steve Lehman Quintet（→ Steve Lehman）、Tim Berne, Craig Taborn & Tom Rainey（合掛名）、Roscoe Mitchell with Craig Taborn and Kikanju Baku（→ Roscoe Mitchell）。（Tim Berne、Vijay Iyer、Anthony Braxton、Steve Lehman、Mary Halvorson、Henry Threadgill、Roscoe Mitchell 已有介紹。）
