@@ -3120,4 +3120,7 @@ window.DipPreviewStatus = Object.freeze({
   "vex'd|cloud seed": "unavailable",
   "scorn|logghi barogghi": "unavailable",
   "lull|continue": "unavailable",
+  "tanzmuzik|sinsekai": "unavailable",
+  "田中フミヤ|right moment": "unavailable",
+  "田中フミヤ|unknown 3": "unavailable",
 });
