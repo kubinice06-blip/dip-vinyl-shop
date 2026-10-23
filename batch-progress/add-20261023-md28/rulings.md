@@ -122,3 +122,7 @@
   - `Metatron Omega|Sanctum`：hook「向來描繪」→「常被拿來描繪」（語意不通順；事實照研究 c 組 Discogs 簡介）。hooks-c、writer-1 input 已同步。
   - `Council of Nine|Exit Earth`：「Olivier 全名 Maximillian Olivier，在加州經營」→「Maximillian Olivier 在加州經營」（語句不通）。
 - 20673：核過未改——Ugasanie 在 Cryo Chamber 第五張（研究 a 組）、Aegri Somnia 克羅埃西亞與 Jurica Santek（Bandcamp 署名）、Echo 的 Kozletsky angelic choirs（廠牌文案）、Psychomanteum「通道」頭銜（Discogs 名單）、Necrophorus《Drifting in Motion》只寫 2000 年首版（未提重錄版與 Beksiński）、Sleep Research Facility 格拉斯哥與 2000 年起（Discogs／Cold Spring）、Arecibo NASA 深空網路素材（原版內頁）。天堂之門題材筆調克制、無細節。
+
+## 上線與評分（2026-10-23，主線）（條號 20676–20678）
+- **20676**：上線 34 張：card_catalog 34／34、KV 34 鍵回讀逐字一致（stamp 20261023r11）、試聽 31 ready／3 unavailable（Mystified《Eschate Thule》、Necrophorus《Elinrós》未上架；《Drifting in Motion》Apple 只有 2008 redux 重錄版，不配）；洛夫克拉夫特系列三張、Funerary Call、Deep Frieze 長曲／曲名格式不同，人工配（`preview-override.json`）。seed +34、published gate 0 error。封面 CAA 33（其中 6 張原圖 live-check 回 500／逾時，改 front-500 縮圖）、Apple 1（New Risen Throne《Crossing the Withered Regions》），縮圖表目視全部相符。上線前對 origin 92 個 `claude/*` 分支 seed＋10-22 起卡單去重 0 撞。
+- **20677**：子曲風 warm-batch 34／34 有標籤；推不出節點的 3 個掛名（Dronny Darko & protoU、Kolhoosi 13、Metatron Omega）補進 electronic/ambient/dark-ambient，34／34 落位；類型樹與抽卡封面重建。

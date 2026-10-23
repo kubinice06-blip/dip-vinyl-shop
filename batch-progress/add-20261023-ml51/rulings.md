@@ -113,3 +113,7 @@
   - `Elaquent|The Scenic Route`：刪「樂評形容他的編曲比前作更細、疊層更多，遊戲音效也收斂了。」——單一樂評的比較評價句（研究 d 組 Exclaim! 一篇），照審稿規則刪 → 190 字。
   - `mt. fujitive|kyoto`：「mt. fujitive 住在雷克雅維克，這張的發行國別也登記為冰島。」→「mt. fujitive 是住在雷克雅維克的 lofi 製作人。」——與 hook「冰島發行」重複（writer-1 自己標出），第二句改補身分 → 156 字。
 - 20513：核過未改——Knxwledge「現居日本」（英文維基現行版 currently based in Japan，引 Complex）；Ta-ku 毛利背景與《Songs to Break Up To》ARIA 第 18 名（英文維基；銷售榜非媒體年終榜，可寫）；Onra 泰國取樣與 MPC1000（Bandcamp 作者自述）；BROCKBEATS Vinyl-Digital 名單六百餘人（廠牌 Bandcamp 名冊頁）；Wun Two Ships 26 個植物學名曲名（MB 曲目）；Stan Forebee 首發撤下與 2018 重發（研究 e 組）。
+
+## 上線與評分（2026-10-23，主線）（條號 20516–20518）
+- **20516**：上線 31 張：card_catalog 31／31、KV 31 鍵回讀逐字一致（stamp 20261023r11）、試聽 24 ready／7 unavailable（Knxwledge《Old.Klouds.LP》、Ohbliv《MindGarden》《SLPHNC III》、Fitz Ambro$e & Ohbliv《Zen Vapors》、Ta-ku《DUSTY》兩卷與《TRIBUTE》Apple 未上架；藝人目錄 lookup 複查亦無）、seed +31、published gate 0 error。封面 CAA 28、Apple 1（Rugged Tranquility Vol. 2）、Discogs 2（DUSTY 兩卷，已登錄 registry 400 筆；Discogs 格式欄標 EP，但 19／16 首、36／33 分且 MB 為 Album，照 MB），live-check 全 200、縮圖表目視相符。上線前對 origin 92 個 `claude/*` 分支 seed＋10-22 起卡單去重 0 撞。
+- **20517**：子曲風 warm-batch 27／31 有標籤；推不出節點的 6 個掛名（Fitz Ambro$e & Ohbliv、Wun Two & Boora、Smuv, mt. fujitive、mt. fujitive & oofoe、Elaquent、Stan Forebee）補進 `genre-l3-artist-map.json` 的 hiphop/underground/instrumental，31／31 落位；類型樹與抽卡封面重建。
