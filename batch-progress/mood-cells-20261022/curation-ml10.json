@@ -1,0 +1,951 @@
+{
+ "group": "ml10",
+ "factions": [
+  {
+   "id": "la-cosmic-soul",
+   "zh": "LA／當代 cosmic soul 霧盤（Muldrow 圈、Stones Throw、Brainfeeder）",
+   "count": 13,
+   "why": "慢拍、磁帶糊、合成器／Rhodes 霧、厚低頻"
+  },
+  {
+   "id": "psych-soul-revival",
+   "zh": "迷幻 soul 復興與慢厚盤（Monophonics、Quesada、Lewis Taylor、Ndegeocello、SAULT）",
+   "count": 11,
+   "why": "殘響霧、fuzz／phaser、弦樂墊糊成一片"
+  },
+  {
+   "id": "spiritual-thick",
+   "zh": "ml14 spiritual jazz 慢而厚（弦樂／風琴／drone 墊）",
+   "count": 8,
+   "why": "大片 drone 或弦樂墊、長殘響、無 fire 嘶吼段"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Georgia Anne Muldrow",
+   "album": "Vweto",
+   "year": 2011,
+   "label": "Mello Music Group",
+   "country": "us",
+   "faction": "la-cosmic-soul",
+   "genres": [
+    "soul",
+    "hiphop"
+   ],
+   "why": "Muldrow 的器樂 cosmic soul 拍子集，SomeOthaShip 一路的代表；dusty 鼓、厚低頻合成器與磁帶糊，慢而暖，同藝人池中 6 張全落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "慢 dusty 鼓，厚合成器低頻，磁帶糊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/aa980625-638b-445e-a393-1cae28dce7ca",
+    "https://coverartarchive.org/release-group/aa980625-638b-445e-a393-1cae28dce7ca/front"
+   ],
+   "mbRgMbid": "aa980625-638b-445e-a393-1cae28dce7ca",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Georgia Anne Muldrow",
+   "album": "VWETO II",
+   "year": 2019,
+   "label": "Mello Music Group",
+   "country": "us",
+   "faction": "la-cosmic-soul",
+   "genres": [
+    "soul",
+    "jazz"
+   ],
+   "why": "Vweto 續篇，偏爵士和聲的 Rhodes／合成器墊，鼓更鬆更慢；霧而暖的 cosmic soul 器樂",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.9,
+    "why": "鬆慢鼓，Rhodes 與合成器墊糊成一片，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a91002a6-d1ef-4a1c-862d-9ac2d201006f",
+    "https://coverartarchive.org/release-group/a91002a6-d1ef-4a1c-862d-9ac2d201006f/front"
+   ],
+   "mbRgMbid": "a91002a6-d1ef-4a1c-862d-9ac2d201006f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Georgia Anne Muldrow",
+   "album": "Vweto III",
+   "year": 2021,
+   "label": "Foreseen Entertainment",
+   "country": "us",
+   "faction": "la-cosmic-soul",
+   "genres": [
+    "soul",
+    "jazz"
+   ],
+   "why": "Vweto 三部曲收尾，同一路的慢拍、厚低頻與層疊鍵盤霧，暖色",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "慢拍厚低頻，層疊鍵盤霧，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0503744a-18f8-4ac6-84e2-b5fc44c40dc2",
+    "https://coverartarchive.org/release-group/0503744a-18f8-4ac6-84e2-b5fc44c40dc2/front"
+   ],
+   "mbRgMbid": "0503744a-18f8-4ac6-84e2-b5fc44c40dc2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Dudley Perkins",
+   "album": "Holy Smokes",
+   "year": 2009,
+   "label": "SomeOthaShip Connect",
+   "country": "us",
+   "faction": "la-cosmic-soul",
+   "genres": [
+    "soul",
+    "hiphop"
+   ],
+   "why": "Muldrow 全程製作的 Declaime 靈魂唱片，慢、煙霧、低保真鍵盤與厚低頻；同藝人池中兩張皆落恍惚（y 1.3）",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 1,
+    "why": "Muldrow 製作，慢而糊的低保真鍵盤，暖人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dcbdf842-63fb-4c53-a73c-09c0b14654c0",
+    "https://coverartarchive.org/release-group/dcbdf842-63fb-4c53-a73c-09c0b14654c0/front"
+   ],
+   "mbRgMbid": "dcbdf842-63fb-4c53-a73c-09c0b14654c0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Shafiq Husayn",
+   "album": "The Loop",
+   "year": 2019,
+   "label": "Nature Sounds",
+   "country": "us",
+   "faction": "la-cosmic-soul",
+   "genres": [
+    "soul"
+   ],
+   "why": "Sa-Ra 成員的 cosmic soul 大盤，迷幻合成器與弦樂墊、厚低頻，慢而包覆；前作池中落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.9,
+    "why": "迷幻合成器墊，厚低頻，慢，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c2de07fd-29e2-4cd7-aa80-13113aa91cb5",
+    "https://coverartarchive.org/release-group/c2de07fd-29e2-4cd7-aa80-13113aa91cb5/front"
+   ],
+   "mbRgMbid": "c2de07fd-29e2-4cd7-aa80-13113aa91cb5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Matt Martians",
+   "album": "The Drum Chord Theory",
+   "year": 2017,
+   "label": "Three Quarter",
+   "country": "us",
+   "faction": "la-cosmic-soul",
+   "genres": [
+    "soul"
+   ],
+   "why": "The Internet／Odd Future 圈的迷幻 funk-soul 獨奏盤，低保真 phaser 鍵盤與糊鼓、懶拍，暖",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.8,
+    "why": "懶拍糊鼓，phaser 鍵盤，lo-fi 飽和，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/45bf2853-a78c-480f-b70e-47eceb7c830e",
+    "https://coverartarchive.org/release-group/45bf2853-a78c-480f-b70e-47eceb7c830e/front"
+   ],
+   "mbRgMbid": "45bf2853-a78c-480f-b70e-47eceb7c830e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Matt Martians",
+   "album": "The Last Party",
+   "year": 2019,
+   "label": "3qtr",
+   "country": "us",
+   "faction": "la-cosmic-soul",
+   "genres": [
+    "soul"
+   ],
+   "why": "同一路的迷幻臥室 soul，合成器霧更厚、拍子更慢",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.8,
+    "why": "慢拍，合成器霧，飽和低頻，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/531b2c66-7bc1-499f-b3b3-9743b2e7465f",
+    "https://coverartarchive.org/release-group/531b2c66-7bc1-499f-b3b3-9743b2e7465f/front"
+   ],
+   "mbRgMbid": "531b2c66-7bc1-499f-b3b3-9743b2e7465f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mndsgn",
+   "album": "Rare Pleasure",
+   "year": 2021,
+   "label": "Stones Throw Records",
+   "country": "us",
+   "faction": "la-cosmic-soul",
+   "genres": [
+    "soul",
+    "electronic"
+   ],
+   "why": "Stones Throw 的 70s cosmic soul 致敬盤，Rhodes、合成器與磁帶溫暖飽和，慢；同藝人池中兩張皆落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 1,
+    "why": "慢，Rhodes 與合成器墊，磁帶暖飽和"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0c65a9ea-7d36-4a15-a603-83ec04e1b8ff",
+    "https://coverartarchive.org/release-group/0c65a9ea-7d36-4a15-a603-83ec04e1b8ff/front"
+   ],
+   "mbRgMbid": "0c65a9ea-7d36-4a15-a603-83ec04e1b8ff",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "比 Breatharian 乾淨些，y 可能 0.7–0.9"
+  },
+  {
+   "artist": "Silk Rhodes",
+   "album": "Silk Rhodes",
+   "year": 2014,
+   "label": "Stones Throw Records",
+   "country": "us",
+   "faction": "la-cosmic-soul",
+   "genres": [
+    "soul"
+   ],
+   "why": "巴爾的摩二人組的低保真迷幻 soul，假音人聲浸在磁帶糊與厚殘響裡，慢而暖",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.7,
+    "why": "慢，磁帶糊，厚殘響，假音暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ba98e581-8558-4805-b9c5-127b420424a9",
+    "https://coverartarchive.org/release-group/ba98e581-8558-4805-b9c5-127b420424a9/front"
+   ],
+   "mbRgMbid": "ba98e581-8558-4805-b9c5-127b420424a9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Salami Rose Joe Louis",
+   "album": "Zdenka 2080",
+   "year": 2019,
+   "label": "Brainfeeder",
+   "country": "us",
+   "faction": "la-cosmic-soul",
+   "genres": [
+    "electronic",
+    "soul"
+   ],
+   "why": "Brainfeeder 的 cosmic 臥室 soul，低保真合成器霧、爵士和聲、慢拍與糊濾波",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "慢拍，合成器霧與糊濾波，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/24d9f42b-704b-4fcf-8aca-11b82b566091",
+    "https://coverartarchive.org/release-group/24d9f42b-704b-4fcf-8aca-11b82b566091/front"
+   ],
+   "mbRgMbid": "24d9f42b-704b-4fcf-8aca-11b82b566091",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫有點太空感，z 可能只到 0.3"
+  },
+  {
+   "artist": "Gabriel Garzón-Montano",
+   "album": "Jardín",
+   "year": 2017,
+   "label": "Stones Throw Records",
+   "country": "us",
+   "faction": "la-cosmic-soul",
+   "genres": [
+    "soul"
+   ],
+   "why": "Stones Throw 的類比迷幻 soul，厚類比貝斯與合成器、層疊人聲，慢而暖",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "慢，厚類比低頻，層疊人聲墊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e4f061f9-fd76-4f1b-870c-4cba4d12912c",
+    "https://coverartarchive.org/release-group/e4f061f9-fd76-4f1b-870c-4cba4d12912c/front"
+   ],
+   "mbRgMbid": "e4f061f9-fd76-4f1b-870c-4cba4d12912c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bilal",
+   "album": "A Love Surreal",
+   "year": 2013,
+   "label": "eOne",
+   "country": "us",
+   "faction": "la-cosmic-soul",
+   "genres": [
+    "soul"
+   ],
+   "why": "Bilal 最迷幻的一張，phaser 吉他、Rhodes 霧與厚低頻，慢；同藝人池中 3 張皆落恍惚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "慢，phaser 與 Rhodes 霧，厚低頻，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b6a0c387-bd62-447a-b896-51a03a2b9cdf",
+    "https://coverartarchive.org/release-group/b6a0c387-bd62-447a-b896-51a03a2b9cdf/front"
+   ],
+   "mbRgMbid": "b6a0c387-bd62-447a-b896-51a03a2b9cdf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Monophonics",
+   "album": "Sage Motel",
+   "year": 2022,
+   "label": "Colemine Records",
+   "country": "us",
+   "faction": "psych-soul-revival",
+   "genres": [
+    "soul",
+    "rock"
+   ],
+   "why": "灣區迷幻靈魂樂團的電影感慢盤，弦樂墊、厚殘響與 fuzz 吉他，暖",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.6,
+    "why": "慢，弦樂墊加厚殘響與 fuzz，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/39920b61-4cab-4a0f-af9f-c7a21cb5f5d5",
+    "https://coverartarchive.org/release-group/39920b61-4cab-4a0f-af9f-c7a21cb5f5d5/front"
+   ],
+   "mbRgMbid": "39920b61-4cab-4a0f-af9f-c7a21cb5f5d5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Adrian Quesada",
+   "album": "Boleros psicodélicos",
+   "year": 2022,
+   "label": "ATO Records",
+   "country": "us",
+   "faction": "psych-soul-revival",
+   "genres": [
+    "world",
+    "soul"
+   ],
+   "why": "Black Pumas 吉他手的 70s 迷幻 bolero 致敬，Farfisa、深殘響與磁帶溫度，慢而暖",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 1.1,
+    "why": "慢 bolero，深殘響與風琴墊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0ab6cfde-530c-4ea5-8ee1-96f8dda230bf",
+    "https://coverartarchive.org/release-group/0ab6cfde-530c-4ea5-8ee1-96f8dda230bf/front"
+   ],
+   "mbRgMbid": "0ab6cfde-530c-4ea5-8ee1-96f8dda230bf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Adrian Quesada",
+   "album": "Boleros psicodélicos II",
+   "year": 2025,
+   "label": "ATO Records",
+   "country": "us",
+   "faction": "psych-soul-revival",
+   "genres": [
+    "world",
+    "soul"
+   ],
+   "why": "續篇，同樣的慢 bolero、殘響霧與風琴墊",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 1.1,
+    "why": "慢 bolero，殘響霧，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9c49d744-b47c-4eb3-8165-945c55d4b846",
+    "https://coverartarchive.org/release-group/9c49d744-b47c-4eb3-8165-945c55d4b846/front"
+   ],
+   "mbRgMbid": "9c49d744-b47c-4eb3-8165-945c55d4b846",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Curtis Harding",
+   "album": "Face Your Fear",
+   "year": 2017,
+   "label": "Anti-",
+   "country": "us",
+   "faction": "psych-soul-revival",
+   "genres": [
+    "soul"
+   ],
+   "why": "Danger Mouse 與 Sam Cohen 製作的迷幻 soul，厚殘響與 fuzz、弦樂，中慢板，暖",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "中慢，殘響與 fuzz 糊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/eda9533e-9efd-4057-bc95-96dd92025617",
+    "https://coverartarchive.org/release-group/eda9533e-9efd-4057-bc95-96dd92025617/front"
+   ],
+   "mbRgMbid": "eda9533e-9efd-4057-bc95-96dd92025617",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有幾首中速，x 可能貼 2.8"
+  },
+  {
+   "artist": "Lewis Taylor",
+   "album": "Lewis II",
+   "year": 2000,
+   "label": "Island",
+   "country": "gb",
+   "faction": "psych-soul-revival",
+   "genres": [
+    "soul",
+    "rock"
+   ],
+   "why": "英國迷幻 soul 怪才的第二張，層疊和聲、厚吉他與鍵盤牆，慢而濕；首張池中落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "慢，層疊和聲與鍵盤牆，濕，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dcae50e0-2b0e-3a16-a78b-d9d80fbc05fb",
+    "https://coverartarchive.org/release-group/dcae50e0-2b0e-3a16-a78b-d9d80fbc05fb/front"
+   ],
+   "mbRgMbid": "dcae50e0-2b0e-3a16-a78b-d9d80fbc05fb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "首張 z 只 0.3；此張較暖但仍需留意"
+  },
+  {
+   "artist": "Meshell Ndegeocello",
+   "album": "Comfort Woman",
+   "year": 2003,
+   "label": "Maverick",
+   "country": "us",
+   "faction": "psych-soul-revival",
+   "genres": [
+    "soul",
+    "world"
+   ],
+   "why": "dub 化的迷幻 soul，厚 dub 貝斯、殘響與 phaser，慢而煙霧；Ndegeocello 最霧的一張",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.3,
+    "z": 0.8,
+    "why": "慢 dub 低頻，殘響與 phaser 霧，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7e9eee9b-b63d-3a89-8a8e-eac6dc89edde",
+    "https://coverartarchive.org/release-group/7e9eee9b-b63d-3a89-8a8e-eac6dc89edde/front"
+   ],
+   "mbRgMbid": "7e9eee9b-b63d-3a89-8a8e-eac6dc89edde",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "SAULT",
+   "album": "AIR",
+   "year": 2022,
+   "label": "Forever Living Originals",
+   "country": "gb",
+   "faction": "psych-soul-revival",
+   "genres": [
+    "soul",
+    "classical"
+   ],
+   "why": "SAULT 的合唱管弦盤，無鼓，大片弦樂與人聲合唱墊糊成一片，慢而暖",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1,
+    "z": 0.8,
+    "why": "無鼓，弦樂與合唱墊糊成一片，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8185d872-3e73-4445-8af8-03afbda05f32",
+    "https://coverartarchive.org/release-group/8185d872-3e73-4445-8af8-03afbda05f32/front"
+   ],
+   "mbRgMbid": "8185d872-3e73-4445-8af8-03afbda05f32",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "SAULT",
+   "album": "AIIR",
+   "year": 2022,
+   "label": "Forever Living Originals",
+   "country": "gb",
+   "faction": "psych-soul-revival",
+   "genres": [
+    "soul",
+    "classical"
+   ],
+   "why": "AIR 的姊妹篇，延續合唱與弦樂大墊、近乎無拍",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1,
+    "z": 0.7,
+    "why": "近無拍，弦樂合唱墊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ae2bd795-cd4c-4cd0-bd01-6828ab8ca438",
+    "https://coverartarchive.org/release-group/ae2bd795-cd4c-4cd0-bd01-6828ab8ca438/front"
+   ],
+   "mbRgMbid": "ae2bd795-cd4c-4cd0-bd01-6828ab8ca438",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "surprise 釋出（五張同日），確認是否正規專輯"
+  },
+  {
+   "artist": "SAULT",
+   "album": "Acts of Faith",
+   "year": 2024,
+   "label": "Forever Living Originals",
+   "country": "gb",
+   "faction": "psych-soul-revival",
+   "genres": [
+    "soul"
+   ],
+   "why": "慢板福音 soul，厚弦樂墊、溫熱混響與鬆鼓",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 0.9,
+    "z": 1,
+    "why": "慢，弦樂墊與溫熱混響，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/33698c6d-811f-469c-9046-e88181806a1f",
+    "https://coverartarchive.org/release-group/33698c6d-811f-469c-9046-e88181806a1f/front"
+   ],
+   "mbRgMbid": "33698c6d-811f-469c-9046-e88181806a1f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同團 Untitled (God) 判輕；此張較慢較濕"
+  },
+  {
+   "artist": "Alice Coltrane",
+   "album": "Lord of Lords",
+   "year": 1972,
+   "label": "Impulse!",
+   "country": "us",
+   "faction": "spiritual-thick",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Alice Coltrane 弦樂團三部曲末章，Wurlitzer 風琴、豎琴與大弦樂墊，慢而厚、無 fire 嘶吼段",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "慢，風琴與大弦樂墊，厚殘響，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bd079082-6102-3b6f-9159-5cbce90322ca",
+    "https://coverartarchive.org/release-group/bd079082-6102-3b6f-9159-5cbce90322ca/front"
+   ],
+   "mbRgMbid": "bd079082-6102-3b6f-9159-5cbce90322ca",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同系 Universal Consciousness 判 x 3.0；此張較靜，但有戲劇性弦樂起伏"
+  },
+  {
+   "artist": "Miguel Atwood-Ferguson",
+   "album": "Les Jardins Mystiques Vol.1",
+   "year": 2023,
+   "label": "Brainfeeder",
+   "country": "us",
+   "faction": "spiritual-thick",
+   "genres": [
+    "jazz"
+   ],
+   "why": "LA 靈性爵士巨作，大編制弦樂與合成器墊、長殘響，慢而溫",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "慢，大弦樂與合成器墊，長殘響，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2edb2930-8f4f-451f-aa37-98613678ab64",
+    "https://coverartarchive.org/release-group/2edb2930-8f4f-451f-aa37-98613678ab64/front"
+   ],
+   "mbRgMbid": "2edb2930-8f4f-451f-aa37-98613678ab64",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Joshua Abrams & Natural Information Society",
+   "album": "Mandatory Reality",
+   "year": 2019,
+   "label": "Eremite Records",
+   "country": "us",
+   "faction": "spiritual-thick",
+   "genres": [
+    "jazz"
+   ],
+   "why": "芝加哥 drone 靈性爵士，guimbri 低頻、風琴長音 drone 一路鋪滿，慢而催眠",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": 0.4,
+    "why": "低頻 guimbri 與風琴 drone，慢，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9c5b8281-351b-4e2b-b5c8-1c1978084b84",
+    "https://coverartarchive.org/release-group/9c5b8281-351b-4e2b-b5c8-1c1978084b84/front"
+   ],
+   "mbRgMbid": "9c5b8281-351b-4e2b-b5c8-1c1978084b84",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫偏中性，z 可能 0.2–0.5"
+  },
+  {
+   "artist": "Sun Ra",
+   "album": "Strange Celestial Road",
+   "year": 1980,
+   "label": "Rounder",
+   "country": "us",
+   "faction": "spiritual-thick",
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "why": "Sun Ra 晚期最像 cosmic soul 的一張，June Tyson 人聲、長篇慢 groove 與合成器霧",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "慢長 groove，合成器霧，暖人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/458b514c-8ccb-34d7-840e-703bd106821b",
+    "https://coverartarchive.org/release-group/458b514c-8ccb-34d7-840e-703bd106821b/front"
+   ],
+   "mbRgMbid": "458b514c-8ccb-34d7-840e-703bd106821b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發記 1982，Rounder 原盤 1980；Sleeping Beauty 判輕"
+  },
+  {
+   "artist": "Jyoti",
+   "album": "Mama, You Can Bet!",
+   "year": 2020,
+   "label": "SomeOthaShip Connect",
+   "country": "us",
+   "faction": "spiritual-thick",
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "why": "Muldrow 化名的靈性爵士盤，自錄的厚鍵盤與低頻、磁帶糊，慢而暖",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.8,
+    "why": "慢，自錄磁帶糊，厚低頻，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/51904819-4c1a-422a-b375-45039de171c1",
+    "https://coverartarchive.org/release-group/51904819-4c1a-422a-b375-45039de171c1/front"
+   ],
+   "mbRgMbid": "51904819-4c1a-422a-b375-45039de171c1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jyoti",
+   "album": "Ocotea",
+   "year": 2010,
+   "label": "SomeOthaShip Connect",
+   "country": "us",
+   "faction": "spiritual-thick",
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "why": "Jyoti 首作，低保真靈性爵士拼貼，dusty 鼓與鍵盤霧",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.7,
+    "why": "dusty 鼓，鍵盤霧，低保真，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4ed5cf38-95e8-4242-8a5a-04e8c41d5144",
+    "https://coverartarchive.org/release-group/4ed5cf38-95e8-4242-8a5a-04e8c41d5144/front"
+   ],
+   "mbRgMbid": "4ed5cf38-95e8-4242-8a5a-04e8c41d5144",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Les McCann",
+   "album": "Invitation to Openness",
+   "year": 1972,
+   "label": "Atlantic",
+   "country": "us",
+   "faction": "spiritual-thick",
+   "genres": [
+    "jazz"
+   ],
+   "why": "McCann 的長篇迷幻靈性爵士，Moog、電鋼琴與層層打擊慢慢堆，霧而溫",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "慢慢堆的長篇，Moog 與電鋼琴霧，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/74b6b243-f097-3d01-83f5-3cb10a355330",
+    "https://coverartarchive.org/release-group/74b6b243-f097-3d01-83f5-3cb10a355330/front"
+   ],
+   "mbRgMbid": "74b6b243-f097-3d01-83f5-3cb10a355330",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發記 1971；原盤一般記 1972"
+  },
+  {
+   "artist": "Josef Leimberg",
+   "album": "Astral Progressions",
+   "year": 2016,
+   "label": "World Galaxy",
+   "country": "us",
+   "faction": "spiritual-thick",
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "why": "Kamasi 圈小號手的 cosmic jazz-soul，合成器墊、殘響與厚低頻，慢",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "慢，合成器墊與殘響，厚低頻，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8adc1528-e65f-4ed6-bcc8-6f82b37e64fd",
+    "https://music.apple.com/us/album/astral-progressions/1835188649",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/38/6a/45/386a45f3-22ca-59ff-1caf-daa6ab171217/artwork.jpg/600x600bb.jpg"
+   ],
+   "mbRgMbid": "8adc1528-e65f-4ed6-bcc8-6f82b37e64fd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無封面，用 Apple Music（2025 重發）封面"
+  },
+  {
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "artist": "Liv.e",
+   "album": "Girl in the Half Pearl",
+   "year": 2023,
+   "label": "In Real Life",
+   "country": "us",
+   "faction": "la-cosmic-soul",
+   "genres": [
+    "soul"
+   ],
+   "why": "Wikipedia 列為 psychedelic soul；Bandcamp Album of the Day 評「a psychedelic collection of jazz-infused, soulful tracks」，樂評寫「methodical beats, otherworldly production… hazy vocals」；前作池中 2.4/1.3/1.0 落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.3,
+    "z": 0.6,
+    "why": "慢而沉的拍子，霧狀人聲與糊製作，暖"
+   },
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Girl_in_the_Half_Pearl",
+    "https://musicbrainz.org/release-group/fe55a441-e0f3-409a-b06b-c7c008d17631",
+    "https://coverartarchive.org/release-group/fe55a441-e0f3-409a-b06b-c7c008d17631/front"
+   ],
+   "mbRgMbid": "fe55a441-e0f3-409a-b06b-c7c008d17631",
+   "uncertain": "樂評也提到「chaotic clashes of melody」，比前作暗；z 可能落 0.3–0.6"
+  },
+  {
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "artist": "Lewis Taylor",
+   "album": "NUMB",
+   "year": 2022,
+   "label": "Slow Reality",
+   "country": "gb",
+   "faction": "psych-soul-revival",
+   "genres": [
+    "soul"
+   ],
+   "why": "沉寂 17 年後的回歸作，Be With 重發文案稱「lush, late-night psychedelic soul」，Mojo 形容「Brian Wilson-channels-Smokey Robinson atmospheres」；首張池中 2.6/1.0/0.3 落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "深夜慢板，層疊和聲與厚鍵盤霧，溫但帶憂鬱"
+   },
+   "evidence": [
+    "https://www.forcedexposure.com/catalog/BEWITH.139LP.html",
+    "https://albumism.com/features/lewis-taylor-eponymous-debut-album-anniversary",
+    "https://musicbrainz.org/release-group/07f79309-d978-4775-8cf7-effa424a96c7",
+    "https://coverartarchive.org/release-group/07f79309-d978-4775-8cf7-effa424a96c7/front"
+   ],
+   "mbRgMbid": "07f79309-d978-4775-8cf7-effa424a96c7",
+   "uncertain": "主題談憂鬱，色溫可能判中性偏冷（z 0–0.4）"
+  },
+  {
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "artist": "Meshell Ndegeocello",
+   "album": "Bitter",
+   "year": 1999,
+   "label": "Maverick",
+   "country": "us",
+   "faction": "psych-soul-revival",
+   "genres": [
+    "soul"
+   ],
+   "why": "Craig Street 製作的慢板弦樂靈魂盤，47 分；NYT：「its rhythms flow in circulatory patterns… guitars, strings and her guarded vocals intertwine like brain waves」，Chicago Tribune：「one long bittersweet downer」",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "通篇慢板，弦樂與吉他交纏成墊，溫而憂"
+   },
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Bitter_(Meshell_Ndegeocello_album)",
+    "https://www.nytimes.com/1999/10/08/movies/album-of-the-week.html",
+    "https://musicbrainz.org/release-group/78db76a3-81e8-3a60-9e21-939819549915",
+    "https://coverartarchive.org/release-group/78db76a3-81e8-3a60-9e21-939819549915/front"
+   ],
+   "mbRgMbid": "78db76a3-81e8-3a60-9e21-939819549915",
+   "uncertain": "Craig Street 偏原聲、有空間感，y 可能只到 0.5–0.7；「downer」也可能拉低色溫"
+  }
+ ],
+ "notes": [
+  "場景挖不到 54：只交 29 張，不湊數。池中 psychedelic／cosmic soul 經典（Shuggie、Callier、Rotary、Minnie、Hutson、Isaac Hayes、Leon Ware、Smokey、Isleys、Al Green、Curtis）多判輕或判躁；Muldrow／Nick Hakim／Kadhja／Sa-Ra／Dudley 等霧盤主體已在池或被 ml2／ml3／ml5 提過。",
+  "spiritual jazz 池中幾乎全判輕（Lonnie Liston Smith、Matthew Halsall、Charles Lloyd、Nala Sinephro、Ancient Infinity Orchestra、Resavoir）；只提有弦樂／風琴／drone 大墊或磁帶糊的 8 張，Pharoah 慢盤（Pharoah 1977 等）質地偏薄未提，Alice 卡帶期（Divine Songs 等）因同類 Turiya Sings 判 y −0.3 未提。",
+  "剔除：Charles Stepney《Step on Step》MB 屬 Compilation；Beautiful Mindz 實為 2tall 製作盤且無封面；Liv.e《Girl in the Half Pearl》色溫貼邊；Inc.、Snoh Aalegra 類 alt R&B 留給 ml8。",
+  "全部 MB 釘住；封面除 Astral Progressions 用 Apple Music 外皆 CAA。",
+  "2026-10-23 主線回饋後補 3 張（Liv.e《Girl in the Half Pearl》、Lewis Taylor《NUMB》、Meshell Ndegeocello《Bitter》），每張附樂評原文聲音證據；目標 6–10 張未達：查過但無 slow／hazy 證據或判速度偏快而不提——Shafiq《So Gold》（Bandcamp 寫 world sampler、beats-and-rhymes）、Meshell《The World Has Made Me…》（PopMatters：driving drum breaks、snappy pop）、Meshell《Comet, Come to Me》（uncluttered）、Bobby Oroza《Get On the Otherside》（punchy 樂團）、Ramsey Lewis《Mother Nature's Son》（同藝人池中判輕、無 slow 證據）、Muldrow《A Thoughtiverse Unmarred》（饒舌盤）、Joi《The Pendulum Vibe》（ml5 範圍）。WebSearch 6 次已用完。 serpentwithfeet《DEACON》有 lush/laid-back 證據但全長 29:09 未達 30 分，剔除。"
+ ]
+}
