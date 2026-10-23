@@ -27,3 +27,13 @@
 - **19003**　Rico Rodriguez《Wareika Dub》：身分核對通過（Ghetto Rockers PRE LP 1, UK, 1977，與 Island 原專輯《Man from Wareika》九曲一一對應）；Discogs 註記為宣傳用預先發行版（plain stamped card sleeve）。與池中原版是不同張，不重複。原專輯：Karl Pitterson 製作，1976 年 5 月 Hammersmith＋9 月京斯敦 Joe Gibbs／Randy's 錄音，Basing Street 混音（來自 Wikipedia）；dub 版由誰混無來源，不寫。Wikipedia 該條『唯一在 Blue Note 發行的 roots reggae』與 Island 矛盾，疑為錯，未採。聲音無獨立樂評，moodGuess 存疑（y 1.3 可能偏高）。
 - **19004**　Gregory Isaacs《Slum (In dub)》（回答 curatorRisk『混音是否偏冷硬』）：發行商文案（非獨立樂評）稱 Revolutionaries 伴奏『精簡』、〈Slum〉厚重、〈Reform Institution〉較亮、曲子前後流動；無混音者署名，無法就冷硬與否下結論。〈Public Eyes〉出自《Cool Ruler》的〈John Public〉；〈Leggo Beast〉沿用 Studio One 節奏。第七首曲名含冒犯字眼，facts 不引，寫作層請避開。moodGuess 存疑（z 0.4 邊距窄，無色溫來源），列為可汰換候選。
 - **19005**　Linval Thompson《Negrea Love Dub》：身分核對通過（Trojan TRLS 153, UK, 1978）。**推翻策展層**：不是『交給 Tubby 混』，Kudos 文案稱節奏由 Revolutionaries 於 Channel One 錄成、在 King Tubby 的錄音室由 Prince Jammy 混；且它是同年人聲專輯《I Love Marijuana》（TRLS 151）的 dub 對應版，曲名（Natty Dread、Jah Jah Children、Roots、Africa Love）偏 roots，不是『情歌 love dub』。Roots-archives 稱無伴奏團登錄，與 Discogs 積分、Kudos 文案不全一致，facts 採後兩者。**moodGuess 存疑**：『情歌旋律殘片、甜』前提不成立，z 0.5 無來源；Channel One rockers 節奏偏硬，建議主線保守，必要時汰換。
+
+## 研究 d 組
+- 19031：Meditations《I Love Jah》年份存疑。Discogs 有 1982 US L&L 510 黑膠（一版 White Label、一版註 Original 1982 release），但維基與 Forced Exposure 皆稱 2002 Wackies CD 為首度發行、錄於 1982。facts 只寫『錄於 1982』與兩說並陳；請主線裁定卡片 year 是否改 2002（可逆，改卡單值）。
+- 19032：Annette Brissett《Love Power》年份採 1983（Discogs master、MB、Honest Jon's），不採維基的 1986。聲音是 Fabian Cooke 一人用鼓、合成器、合成貝斯的 boogie／迪斯可雷鬼 lovers rock，與策展『厚霧低頻』不符，列 moodGuess 存疑（建議降 y 或汰）。
+- 19033：Roland Alphonso《Roll On》1984 無任何聲音文字來源，Discogs 名單無 synthesizer／drum machine 標註；moodGuess 存疑（未證實，非已推翻）。
+- 19034：Horace Andy《Life Is for Living》（策展疑點：90s Ariwa 偏數位）查無樂評，類比／數位無從判定，y 1.1 無證據；moodGuess 存疑，建議對照池中其他 Ariwa Horace 盤。
+- 19035：Mad Professor & Sandra Cross《Dub Showcase》（策展疑點：是否舊錄音集結）未見舊錄音證據，樂手為當代班底，判為 2023 新製作、保留；但是 2023 現代 crisp 錄混，非類比濕混音，moodGuess 存疑。日期兩說（Bandcamp 8/9、MB 10/12），寫作層只寫 2023。
+- 19036：John Clarke 是 Wackie's 旗下歌手、非 Johnny Clarke（Hardwax 明說）；1979 類比時代，無推翻。Tyrone Evans 無配器文字，三軸全靠廠牌通論，thin。
+- 19037：Meditations 混音濕度（池中同團 y 0.4–0.5）：只有行銷文案『Black Ark 氣氛、更柔』支持比池中其他盤更濕，無殘響量／速度來源，方向可信、數字未證實。
+- 19038：研究層搜尋次數已超每支 3 次（共 4 次 WebSearch），其餘用 WebFetch 與 Discogs／MB API。
