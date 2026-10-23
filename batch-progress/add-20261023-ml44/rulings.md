@@ -76,3 +76,9 @@
 - **19535** 第二句句型配表：新成員名／三人組／琴風／出身年份／夫妻／樂種／樂器／出身地／樂團關係／錄音地點，一張一種。「日」後一字：日兩・日由（In Praise）、日上（Always Returning）、日交（Ceres）、日先・日跟（Distance）、日經（Telescopes）、日發（Oak Island）、日，（I Can Feel）；Guthrie & Budd（MB 與維基日期不一）只寫到 2007 年、Raymonde（10/6 與 10/7 不一）只寫到 1997 年 10 月、Cindy 只寫年。
 - **19536** 派工補充照辦：媒體名與榜單名次不進 note（一律寫「樂評」）；星等、分數不指派。整格捨去：Acetone 的 Hope Sandoval 引句與巡演搭檔（廠牌文案單一來源）、Sound of Ceres 製作人（單一來源）與 Candy Claws 解散年（維基自相矛盾）、Tears Run Rings 與 Raymonde 的 sound 欄（推估）、Tears Run Rings 的 Slowdive 比較（屬首張）與《In Surges》旁證、Raymonde 的 Melody Maker 宣傳語、Telescopes 策展層的長笛／弦樂、Always Returning 卡單「第三作」（note 寫第四張）。
 - **19537** n-gram 自查：hook 對 hook 中文 4-gram 0 條；hook 與自己 note 無逐字重複句；hook 對他張 note 0 命中。`node qa-batch.mjs hooks add-20261023-ml44` 全部通過；`node chk-hook-crossgroup.mjs add-20261023-ml44` 全部通過（5 組 10 張，hook 加權 14–24 區間內）。
+
+## 寫作層（writer-1）
+- **19541** 交件：`desc-tools/batches/output/add-20261023-ml44-out-1.json` 5 張（全 full）：In Praise of More 207、Always Returning 223、After the Night Falls 234、Cindy 228、Nostalgia for Infinity 218。初稿零超標、零回頭刪節。`qa-batch out` 唯一標記是「5 vs 10」（writer-2 未交件，屬預期）；`qa-check-research` 0、`fix-spacing` 待補 0；「據」grep 0。
+- **19542** 第二句全照鉤子層配表：Schnauss 領句（「就是那一位」，不複述 hook 的「德國電子音樂人」）／三人組／Budd 琴風／Spinout 出身／夫妻。日期：In Praise「日兩」照配、發行句改「新作…日由」；Always Returning「日上」照配（前一字「晨」）；Ceres 原配「日交」照用（前導「專輯」）；Guthrie & Budd 只寫 2007 年、Cindy 只寫 1993 年。
+- **19543** 自掃：本檔 5 張＋writer-2 五條 hook 的 han() 中文 4-gram 跨張 0 條。動筆前先拆掉「專輯年月日」×3 的潛在樣板（In Praise 的發行句領頭名詞改「新作」、Always Returning 以日期獨立成句、Ceres 保留「首張專輯」）。給 writer-2 的提醒：「年月日」前的「輯」「作」「晨」已被本檔用掉。
+- **19544** Cindy：note「同名曲收在同年 EP《Acetone》」寫成「那張 EP 就以團名為題」，避免「同名」與 hook 重字；媒體名、名次、星等一律未寫（Guthrie & Budd「較響、較不朦朧」與 Cindy 兩條樂評都以「樂評」帶出，未具名）。Always Returning 照 note 寫「第四張」，未沿用卡單「第三作」。
