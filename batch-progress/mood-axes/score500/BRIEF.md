@@ -73,7 +73,7 @@
 大調≠暖、小調≠冷（Joy Division 有大調歌仍是 −2）。
 **2026-10-23 店主改標準——「酸」＝冷＋硬**（店主：「自由爵士類的、或是現代音樂類的（比如 Ligeti）都很酸冷難聽又硬蕊，絕對不會是輕鬆」）：不和諧、無調性、自由即興、噪音質地、刺耳張力的音樂，不管樂器原聲或電子、混音溫不溫潤，色溫一律 ≤ −1.2；**安靜但有寒氣的也算酸**（陰森、駭人、無調、疏離）。能量照 10-22 標準：有鼓／律動在推才算躁（≥ 3.1）；音塊、drone、長段留白後的驟然爆裂都**不算推力**——Ligeti《Atmosphères》、Penderecki《Threnody》、Scott Walker《The Drift》（店主 10-23：「The Drift 頹靡沒錯」）、Sunn O))) 都留靜。自由爵士（Ayler、Cecil Taylor、Brötzmann、AACM、歐洲自由即興）、無調現代音樂（Ligeti、Penderecki、Xenakis、Stockhausen）、noise／power electronics、musique concrète、no wave、嘶吼的 fire music 都是酸。**不是酸**：溫暖的靈性／調式爵士（A Love Supreme、Journey in Satchidananda）、後咆勃、ECM 抒情、cool jazz、極簡（Reich、Glass、Pärt）、新古典與配樂、印象派與浪漫派。同一張有酸有暖（Pharoah《Karma》）酸優先。先例：Marion Brown《Geechee Recollections》放鬆→冷冽。
 
-**2026-10-23 店主再改標準——色溫＝聲響溫度＋旋律清楚度，取代上面「不是酸」那一串**（店主：「旋律性也是評斷冷暖標準之一，越冷越硬蕊、旋律不明確；越暖易入耳的，旋律會更明確」）：旋律明確、調性清楚、好入耳、唱得出來 → 往暖；旋律不明、靠即興／音色／噪音／律動撐、無調、硬蕊 → 往冷，**不管樂器多溫潤、多「靈性」**——Pharoah《Karma》、Alice Coltrane《Journey in Satchidananda》、A Love Supreme、Fuck Buttons、Boredoms 都是冷。冷色調但旋律很清楚的民謠或歌（Lankum《False Lankum》）可以往暖。**主流咆勃／硬咆勃／靈魂爵士／風琴 groove 不算旋律不明**：有主題、搖擺律動、好入耳的，長段獨奏也不往冷。原本的聲響溫度仍算數，旋律清楚度是第二個依據。
+**2026-10-23 店主再改標準——色溫＝聲響溫度＋旋律清楚度，取代上面「不是酸」那一串**（店主：「旋律性也是評斷冷暖標準之一，越冷越硬蕊、旋律不明確；越暖易入耳的，旋律會更明確」）：旋律明確、調性清楚、好入耳、唱得出來 → 往暖；旋律不明、靠即興／音色／噪音／律動撐、無調、硬蕊 → 往冷，**不管樂器多溫潤、多「靈性」**——Pharoah《Karma》、Alice Coltrane《Journey in Satchidananda》、A Love Supreme、Fuck Buttons、Boredoms 都是冷。冷色調但旋律很清楚的民謠或歌（Lankum《False Lankum》）可以往暖。**主流咆勃／硬咆勃／靈魂爵士／風琴 groove 不算旋律不明**：有主題、搖擺律動、好入耳的，長段獨奏也不往冷。原本的聲響溫度仍算數，旋律清楚度是第二個依據。**主流 pop-rap 有唱的副歌、好入耳的也是暖**（店主 10-23 指 Eminem《Revival》不該在暴躁）；boom-bap、trap、drill、hardcore、實驗 hip-hop 照聲響判，不因有 hook 就往暖。
 
 
 

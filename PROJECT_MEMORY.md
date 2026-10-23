@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜Eminem《Revival》等 9 張主流 pop-rap 由暴躁改沸騰
+
+- **改動**：店主指《Revival》不該在暴躁。主流 pop-rap 有唱的副歌、好入耳＝暖，9 張 z 改正（Eminem 三張、Kendrick《GNX》、Stray Kids、G-DRAGON、Roddy Ricch、Polo G、Trippie Redd），全落沸騰；`score500/BRIEF.md` 色溫段補規則。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/rulings.md`、`batch-progress/mood-axes/score500/BRIEF.md`
+- **驗證**：`build-card-moods.mjs` 錨點同格、9 張落沸騰。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 4 輪 mc26／md11：東歐 synth-pop＋冷 synthwave 14＋工業 tape music／neoclassical darkwave 40 張上線，落格 14/14、37/40
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 4 輪，本工作階段負責 mc26、md11。mc26（`add-20261023-mc26`，冷冽：synthwave 冷而薄＋mc19 東歐 synth）：Технология 4、Bonanza Banzai 5、Waveshaper《Exploration 84》《Mainframe》、Dynatron《Aeternus》、Lost Years《Amplifier》、Vector Hold《Mechanized》。md11（`add-20261023-md11`，頹靡：工業 old-school 慢盤／tape music＋md12 neoclassical darkwave）：Organum 6、Zoviet France 7、Maurizio Bianchi 3、NWW 2、Coil 系 3、TG《In the Shadow of the Sun》、SPK《Zamia Lehmanni》、Controlled Bleeding、Zero Kama、Endura、Duncan & Springer、Archon Satani、Menche、Elend 3、DVKE 3、sToa 2、Dargaard 2、Arcana《Inner Pale Sun》。

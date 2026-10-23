@@ -229,3 +229,10 @@
   2. **中途補一條：主流硬咆勃／靈魂爵士／風琴 groove 不算旋律不明**（chunk-20 看到 Jimmy Smith、Lovano 被往冷推）。補在 BRIEF 後派出的 chunk-29 以後照新條判；之前的已交件不回頭重派——抽查往冷的 60 張幾乎全是調式／靈性／鼓樂盤，符合店主 Pharoah、Alice Coltrane 的方向；Joe Lovano《Vanguard》、MMW 兩張屬邊緣，留著，可逆。
   3. 頹靡→躁的 56 張逐張看過：都是緊繃的現代音樂、噪音、恐怖配樂、Galás／Swans／Tim Hecker 一類，與店主點的 Feldman、Ligeti、Konoyo、Galás 同方向，不撤。
 - **說明書同步**：`score500/BRIEF.md` 的能量、色溫加「店主再改標準」兩段，取代 10-22「有打擊在推」、10-23「驟然爆裂不算推力」與「不是酸」那串（A Love Supreme 等改判冷），新卡評分照新標準。
+
+## 2026-10-23｜店主：Eminem《Revival》不該在暴躁 → 主流 pop-rap 有唱的副歌＝暖，9 張改判
+
+- 《Revival》原是 v0 先驗 (3.2, 0.6, −0.3)，三軸都卡邊，體感重判時差不到 0.4 沒動。整張靠 Beyoncé、Ed Sheeran、P!nk、Alicia Keys 的流行副歌撐，照「旋律清楚＝暖」應在沸騰。
+- 同形狀一起改（z 拉到 +0.3～+0.6，x、y 不動，全落沸騰）：Eminem《Revival》《The Eminem Show》《MMLP2》、Kendrick《GNX》、Stray Kids《KARMA》、G-DRAGON《COUP D'ETAT》、Roddy Ricch、Polo G《Hall of Fame》、Trippie Redd《LIFE'S A TRIP》。
+- 不動：《The Marshall Mathers LP》（陰冷 Dre 製作，−1.2）、Wu-Tang、Public Enemy、Carti、JPEGMAFIA、Travis Scott、drill／trap 主流（Future、Chief Keef、21 Savage）、Illmatic 等 boom-bap——聲響本身就冷硬。
+- 說明書 score500/BRIEF 色溫段補一句。
