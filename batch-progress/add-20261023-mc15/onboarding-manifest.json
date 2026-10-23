@@ -1,0 +1,1372 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-mc15",
+ "batchNote": "薄細項策展線（add-20261023-mc15）",
+ "createdAt": "2026-10-23T07:07:05Z",
+ "albums": [
+  {
+   "artist": "The Neon Judgement",
+   "album": "Mafu Cage",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "70bc26c4-fc9d-350b-9c88-a5f2c2971e4e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "比利時冷浪潮（PIAS／Antler 系）：比利時冷浪潮旗手的首張正規專輯，PIAS 早期招牌；鼓機與 sequencer 驅動、人聲冷淡，處於 coldwave 與 EBM 交界｜⚠ 有細吉他，y 若被判 +0.3 以上會掉亢奮；池中無同人三軸｜MB release-group 70bc26c4-fc9d-350b-9c88-a5f2c2971e4e：title「Mafu Cage」、Album、first-release-date 1986-05-19、artist-credit「The Neon Judgement」。證據：https://musicbrainz.org/release-group/70bc26c4-fc9d-350b-9c88-a5f2c2971e4e https://coverartarchive.org/release-group/70bc26c4-fc9d-350b-9c88-a5f2c2971e4e",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/70bc26c4-fc9d-350b-9c88-a5f2c2971e4e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 8138,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 8138）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "布魯塞爾一間錄音室，兩個人從二月錄到三月，製作欄只寫自己。那兩個人是 Dirk Da Davo 與 TB Frank，1981 年在魯汶組成比利時二人組 The Neon Judgement，被視為 EBM 先驅。Da Davo 管鍵盤，TB Frank 管吉他，兩人都兼主唱，全部歌曲由兩人共署。帶子 1986 年交給 Play It Again Sam 發行。聲音以合成器和鼓機為主，節奏冰冷而機械，最長的〈Voodoo Nipplefield〉有 5 分 55 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/66500",
+     "https://en.wikipedia.org/wiki/The_Neon_Judgement",
+     "https://en.wikipedia.org/wiki/Play_It_Again_Sam_(record_label)",
+     "https://musicbrainz.org/release-group/70bc26c4-fc9d-350b-9c88-a5f2c2971e4e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0e/6e/93/0e6e933f-1bed-0c47-7870-3b33dc72bf05/mzaf_9697500194012852921.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "appleCollectionId": "561527936",
+    "storefront": "BE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple be 561527936「The Neon Judgement《Mafu Cage》」：曲目 10/12 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈The Man〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Snowy Red",
+   "album": "The Right to Die",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "46afe72c-c870-3f5b-b64e-ad9b605cfc77",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "比利時冷浪潮（PIAS／Antler 系）：Micky Mike 的比利時 minimal synth 代表作之一（同名首作已由 mc1 提名）；單人鼓機＋單音合成器，冷硬機械｜⚠ minimal synth 中速曲若多，x 可能掉到 3.2 左右｜MB release-group 46afe72c-c870-3f5b-b64e-ad9b605cfc77：title「The Right to Die」、Album、first-release-date 1982、artist-credit「Snowy Red」。證據：https://musicbrainz.org/release-group/46afe72c-c870-3f5b-b64e-ad9b605cfc77 https://coverartarchive.org/release-group/46afe72c-c870-3f5b-b64e-ad9b605cfc77",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/46afe72c-c870-3f5b-b64e-ad9b605cfc77/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 11092,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 11092）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "後封套印著一行字：整張是在家裡用一台八軌 Teac 錄的。Snowy Red 這個電子計畫背後只有 Micky Mike 一人，人聲、電子樂器、吉他和貝斯全由他包辦。1982 年 2 月，這張在比利時上市，最早的橘標版是私人壓製。混音移到鹿特丹完成，聲音屬 minimal 電子，〈Lies In Your Eyes〉約 7 分 45 秒，為全碟之最。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/212745",
+     "https://www.discogs.com/master/211435",
+     "https://musicbrainz.org/release-group/46afe72c-c870-3f5b-b64e-ad9b605cfc77"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/84/e4/6b/84e46ba4-8c89-f066-7dc5-44692bb55d4a/mzaf_14038880479711753098.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "appleCollectionId": "1635560993",
+    "storefront": "BE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple be 1635560993「Snowy Red《The Right to Die》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Euroshima (Wardance)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Weathermen",
+   "album": "Ten Deadly Kisses",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6515fbfd-ef34-38f3-bc24-391602d376f9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "比利時冷浪潮（PIAS／Antler 系）：PIAS 旗下比利時 body music／new beat 時期組合的首張專輯；鼓機與合成器 riff 乾脆，Bruce Geduldig 冷淡念唱｜⚠ 冷面幽默可能被判 z 接近 0；池中無同人三軸｜MB release-group 6515fbfd-ef34-38f3-bc24-391602d376f9：title「Ten Deadly Kisses」、Album、first-release-date 1987-01-01、artist-credit「The Weathermen」。證據：https://musicbrainz.org/release-group/6515fbfd-ef34-38f3-bc24-391602d376f9 https://coverartarchive.org/release-group/6515fbfd-ef34-38f3-bc24-391602d376f9",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6515fbfd-ef34-38f3-bc24-391602d376f9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 135,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 135）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 135），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兩個比利時人假扮成美國藝人寄出樣帶，廠牌竟然信了。這場惡作劇成了電子團 The Weathermen 的開端，簽下他們的正是 Play It Again Sam。主唱由 Tuxedomoon 的 Bruce Geduldig 化名 Chuck B 擔任，鍵盤與編程歸 Jean-Marc Lederman。首張專輯到 1987 年 1 月才面世，承接先前的三張 EP，把舊錄音和新曲混編在一起。歌詞是辛辣的社會評論，底下墊著由節拍帶動的旋律，被歸為帶諷刺味的流行 EBM。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/295935",
+     "https://www.discogs.com/master/56684",
+     "https://en.wikipedia.org/wiki/The_Weathermen_(band)",
+     "https://nts.live/artists/14173-the-weathermen",
+     "https://musicbrainz.org/release-group/6515fbfd-ef34-38f3-bc24-391602d376f9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/97/8c/48/978c4839-2579-b20b-f6fd-18888a3330fa/mzaf_8381854862228447108.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "appleCollectionId": "57425460",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 57425460「The Weathermen《10 Deadly Kisses》」：主線人工配對：iTunes 藝人目錄《10 Deadly Kisses》10 軌 1987，即原盤，取第 1 軌〈Deep Down South〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Moskwa TV",
+   "album": "Blue Planet",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b397ec49-7409-3db9-aef3-4b4dd688ade0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "EBM 輕的那半／機械 electro-pop：Talla 2XLC 的 Moskwa TV 第二張；德國 body music 與 techno-pop 之間的冷 sequencer 盤，池中首作《Dynamics & Discipline》判冷冽 3.8/0.3/−1.3｜策展無疑點｜MB release-group b397ec49-7409-3db9-aef3-4b4dd688ade0：title「Blue Planet」、Album、first-release-date 1987、artist-credit「Moskwa TV」。證據：https://musicbrainz.org/release-group/b397ec49-7409-3db9-aef3-4b4dd688ade0 https://coverartarchive.org/release-group/b397ec49-7409-3db9-aef3-4b4dd688ade0",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b397ec49-7409-3db9-aef3-4b4dd688ade0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1661,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1661）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1661），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "創團的 DJ 想換掉主唱，這張錄完，走的卻是他自己。法蘭克福的 Moskwa TV 是 DJ Talla 2XLC 等人組成的 techno 與 synth-pop 團。錄音地點選在 Dynaton Studio，工期從 1986 年 9 月拉到隔年 3 月；1987 年 Westside 把它推出，九首都落在 4 分鐘上下。錄完之後，Talla 嫌主唱 Ion Javelin 的影響力過大，卻找不到合適的替手，只好讓他回來；最後 Talla 因為歌曲權利問題離團。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/145645",
+     "https://en.wikipedia.org/wiki/Moskwa_TV",
+     "https://www.discogs.com/master/57625",
+     "https://musicbrainz.org/release-group/b397ec49-7409-3db9-aef3-4b4dd688ade0"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/24/f2/92/24f2920c-4ed6-3d1f-9757-26271782e2bf/mzaf_7761415990559460220.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "appleCollectionId": "375793900",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 375793900「Moskwa TV《Blue Planet》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Moskwa Electronic〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "And One",
+   "album": "Anguish",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e5dc9874-f3d5-3ea0-b5a6-64c2ecc37526",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "EBM 輕的那半／機械 electro-pop：德國 EBM-pop 代表團首作；早期 And One 是極簡、乾的 body music，比 Nitzer Ebb 薄得多｜⚠ EBM 低音若被判厚 y 會上 0.4；池中無同人三軸｜MB release-group e5dc9874-f3d5-3ea0-b5a6-64c2ecc37526：title「Anguish」、Album、first-release-date 1991-01-01、artist-credit「And One」。證據：https://musicbrainz.org/release-group/e5dc9874-f3d5-3ea0-b5a6-64c2ecc37526 https://coverartarchive.org/release-group/e5dc9874-f3d5-3ea0-b5a6-64c2ecc37526",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e5dc9874-f3d5-3ea0-b5a6-64c2ecc37526/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 50776,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "機器基線 2/3/2（Last.fm listeners 50776）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "柏林一間俱樂部裡認識的兩個人，靠兩台鍵盤加一台節奏機起家。他們是 Steve Naghavi 與 Chris Ruiz，1989 年組成德國 EBM 團 And One，打定主意要學 Depeche Mode。1990 年的單曲〈Metalhammer〉成了俱樂部熱門曲，隔年 7 月收進出道專輯，交給柏林的 Machinery 發行。Naghavi 一手包辦主唱、機器與音樂。十二首長短懸殊，短的〈Menschen〉才 1 分 46 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/419018",
+     "https://en.wikipedia.org/wiki/And_One",
+     "https://en.wikipedia.org/wiki/Machinery_Records",
+     "https://musicbrainz.org/release-group/e5dc9874-f3d5-3ea0-b5a6-64c2ecc37526",
+     "https://www.discogs.com/master/12920"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6f/10/95/6f1095f2-94ff-efc0-f332-4321c25fa275/mzaf_17006375478070348409.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "appleCollectionId": "1435677068",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1435677068「And One《Anguish》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Devil Airlines〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "And One",
+   "album": "Flop!",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d97087c2-be8d-3561-bdc7-5aadd26d50f8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "EBM 輕的那半／機械 electro-pop：And One 第二張，〈Techno Man〉所在；EBM 往 synth-pop 走、仍以乾 sequencer 為骨｜⚠ 同上，EBM 低音厚度｜MB release-group d97087c2-be8d-3561-bdc7-5aadd26d50f8：title「Flop!」、Album、first-release-date 1992-03-30、artist-credit「And One」。證據：https://musicbrainz.org/release-group/d97087c2-be8d-3561-bdc7-5aadd26d50f8 https://coverartarchive.org/release-group/d97087c2-be8d-3561-bdc7-5aadd26d50f8",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d97087c2-be8d-3561-bdc7-5aadd26d50f8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 49460,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "機器基線 2/3/2（Last.fm listeners 49460）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "整張十一首，最長那首也只有 4 分 11 秒。這是柏林 EBM 團 And One 在 Machinery 的第二張作品，1992 年 3 月 30 日發行。〈Kindergarden〉只有 2 分 2 秒，最長是〈Die Mitte〉，整張約 35 分鐘。曲名德英並用，〈Erste Liebe〉這類德文標題，對上〈Techno Man〉這類英文標題。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/233322",
+     "https://www.discogs.com/master/4769",
+     "https://en.wikipedia.org/wiki/And_One",
+     "https://de.wikipedia.org/wiki/And_One",
+     "https://musicbrainz.org/release-group/d97087c2-be8d-3561-bdc7-5aadd26d50f8"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/eb/0d/49/eb0d49ed-90e8-65cc-4f07-2b2c5cf32fd5/mzaf_2299034271248130468.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "appleCollectionId": "1437002280",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1437002280「And One《Flop!》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈G.U.S. Airlines〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Welle: Erdball",
+   "album": "Der Sinn des Lebens",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d7362ff4-c755-3e94-a654-d039802c348f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "EBM 輕的那半／機械 electro-pop：德國 minimal electro 團用 C64 晶片聲與 Kraftwerk 式機械美學做的代表作；聲音薄、乾、8-bit｜⚠ 有幾首復古慢歌與俏皮感，z 可能往 −0.3 靠｜MB release-group d7362ff4-c755-3e94-a654-d039802c348f：title「Der Sinn des Lebens」、Album、first-release-date 1998、artist-credit「Welle: Erdball」。證據：https://musicbrainz.org/release-group/d7362ff4-c755-3e94-a654-d039802c348f https://coverartarchive.org/release-group/d7362ff4-c755-3e94-a654-d039802c348f",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d7362ff4-c755-3e94-a654-d039802c348f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 11400,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 11400）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一台 Commodore 64，在製作名單上掛名演出。團名取自 1928 年一齣德國廣播劇，Welle: Erdball 1990 年在下薩克森成立，把自己包裝成一座虛構的電台。那台家用電腦在小冊子裡負責的是音與詞，A.L.F. 掛編程，Honey 演唱並寫詞。1998 年出版的 CD 以 SID 晶片音色為骨幹，間或加進 theremin，男女聲用德語輪流念唱。歌詞諷刺消費、媒體與對科技的崇拜。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/131518",
+     "https://de.wikipedia.org/wiki/Welle:Erdball",
+     "https://en.wikipedia.org/wiki/Welle:_Erdball",
+     "https://musicbrainz.org/release-group/d7362ff4-c755-3e94-a654-d039802c348f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "iTunes 藝人目錄無此盤"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Welle: Erdball",
+   "album": "Die Wunderwelt der Technik",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "636e09b2-8f65-3fce-80e6-fbc2205fb2f2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "EBM 輕的那半／機械 electro-pop：Welle: Erdball 最受肯定的一張，以科技烏托邦為題的 C64 minimal electro；乾薄機械｜⚠ 同上｜MB release-group 636e09b2-8f65-3fce-80e6-fbc2205fb2f2：title「Die Wunderwelt der Technik」、Album、first-release-date 2002-03-25、artist-credit「Welle: Erdball」。證據：https://musicbrainz.org/release-group/636e09b2-8f65-3fce-80e6-fbc2205fb2f2 https://coverartarchive.org/release-group/636e09b2-8f65-3fce-80e6-fbc2205fb2f2",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/636e09b2-8f65-3fce-80e6-fbc2205fb2f2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 21598,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 21598）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "金龜車、Super 8 和戰鬥機，排進同一張曲目表。排這份清單的是德國團 Welle: Erdball，他們用 Commodore 64 的 SID 晶片做 minimal electro。2002 年 3 月 25 日推出的這張是以科技為題的概念專輯，曲目還點名了 V2、Transrapid 等戰後物件。金龜車與 Super 8 在詞裡被當成完美產品讚美，戰機則和沙利竇邁一起挨批。把第 1 軌倒轉到負 3 分 26 秒，還能聽見藏起來的 00 軌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/636e09b2-8f65-3fce-80e6-fbc2205fb2f2",
+     "https://api.discogs.com/releases/254945",
+     "https://de.wikipedia.org/wiki/Welle:Erdball",
+     "https://en.wikipedia.org/wiki/Welle:_Erdball"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "iTunes 藝人目錄無此盤"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Marie Davidson",
+   "album": "Adieux au Dancefloor",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "82fe4749-ad5c-42bc-bff4-d57dee5145b2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "new beat／minimal EBM 復興（2010s）：蒙特婁 minimal EBM／cold wave 復興的代表作（Cititrax＝Minimal Wave 子牌）；乾的 sequencer 與法語念白｜策展無疑點｜MB release-group 82fe4749-ad5c-42bc-bff4-d57dee5145b2：title「Adieux au Dancefloor」、Album、first-release-date 2016-10-03、artist-credit「Marie Davidson」。證據：https://musicbrainz.org/release-group/82fe4749-ad5c-42bc-bff4-d57dee5145b2 https://coverartarchive.org/release-group/82fe4749-ad5c-42bc-bff4-d57dee5145b2",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/82fe4749-ad5c-42bc-bff4-d57dee5145b2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 33896,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 33896）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "第一張完全瞄準舞池的唱片，盤名卻是向舞池道別。1987 年生於蒙特婁的 Marie Davidson 玩的是電子樂，這是她的第三張個人專輯。長年巡演讓她對夜店既著迷又厭惡，她決定把那股負面能量轉進音樂裡。2016 年 10 月 3 日由 Cititrax 發行，合成器搭配 sequencer 和鼓機避開標準的 techno 底鼓，打擊彈跳又結巴，人聲半念半唱、法語英語各半。收尾的同名曲轉成輕柔感傷的香頌式合成流行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/82fe4749-ad5c-42bc-bff4-d57dee5145b2",
+     "https://www.minimalwave.com/releases/release/adieux-au-dancefloor",
+     "https://en.wikipedia.org/wiki/Marie_Davidson",
+     "https://www.thefader.com/2016/10/07/marie-davidson-adieux-au-dancefloor-interview",
+     "https://pt-br.ra.co/reviews/19990"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/66/11/ab661113-683b-27b8-cf03-c80e3e6dc47c/mzaf_15727481845550418570.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "appleCollectionId": "1167674969",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1167674969「Marie Davidson《Adieux Au Dancefloor》」：主線人工配對：Apple 同名專輯 9 軌、Cititrax 2016，曲名大小寫差異，9/9 對上 MB 原盤，取第 1 軌〈I Dedicate My Life〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Essaie pas",
+   "album": "Demain Est Une Autre Nuit",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "80c7eef1-2582-48ad-8c7e-32e1f71e3b24",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "new beat／minimal EBM 復興（2010s）：Marie Davidson 與 Pierre Guerineau 的雙人組在 DFA 的專輯，直承比利時 new beat／EBM 的冷而慢熱的律動｜⚠ new beat 速度偏中，x 可能 3.3｜MB release-group 80c7eef1-2582-48ad-8c7e-32e1f71e3b24：title「Demain Est Une Autre Nuit」、Album、first-release-date 2016-02-19、artist-credit「Essaie pas」。證據：https://musicbrainz.org/release-group/80c7eef1-2582-48ad-8c7e-32e1f71e3b24 https://coverartarchive.org/release-group/80c7eef1-2582-48ad-8c7e-32e1f71e3b24",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/80c7eef1-2582-48ad-8c7e-32e1f71e3b24/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 24221,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 24221）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一個炎熱的夏夜，一對蒙特婁夫妻開始了這個計畫。那就是雙人組 Essaie pas，2010 年成立，Pierre Guerineau 本行是錄音工程師，妻子是 Marie Davidson。專輯 2016 年 2 月 19 日交 DFA Records 發行，走的是暗調的 minimal synth pop，帶著恐怖片配樂的氣味，法語口白一男一女，男聲低沉、女聲輕柔。〈Retox〉裡有 glitch 節拍與防空警報聲，〈Facing The Music〉節拍最快。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/80c7eef1-2582-48ad-8c7e-32e1f71e3b24",
+     "https://en.wikipedia.org/wiki/Essaie_pas",
+     "https://theplayground.co.uk/review-essaie-pas-demain-est-une-autre-nuit/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music49/v4/df/58/6d/df586dac-80d2-eb73-0384-7cbb355fafc1/mzaf_4708351044550572251.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "appleCollectionId": "1064095917",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1064095917「Essaie Pas《Demain est une autre nuit》」：曲目 6/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Demain est une autre nuit〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Komputer",
+   "album": "The World of Tomorrow",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d11cf325-d433-3882-82fc-f3a255316f34",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "EBM 輕的那半／機械 electro-pop：Mute 旗下向 Kraftwerk 致敬的英國雙人組首作；冷硬機械 synth-pop，聲部乾淨｜⚠ 中速曲多，x 是主要風險｜MB release-group d11cf325-d433-3882-82fc-f3a255316f34：title「The World of Tomorrow」、Album、first-release-date 1997-11-18、artist-credit「Komputer」。證據：https://musicbrainz.org/release-group/d11cf325-d433-3882-82fc-f3a255316f34 https://coverartarchive.org/release-group/d11cf325-d433-3882-82fc-f3a255316f34",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d11cf325-d433-3882-82fc-f3a255316f34/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 14107,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 14107）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "看不慣英國的吉他獨立樂，兩個北倫敦人轉回德國電子樂。Simon Leonard 與 David Baker 先叫 I Start Counting，1984 年簽進 Mute，後改名 Fortran 5 做 techno，再定名 Komputer。首張《The World of Tomorrow》美國版 1997 年 11 月 18 日問世，類比合成器配 vocoder 人聲，緊貼 Kraftwerk。最長的〈Terminus Interminus〉拖到 7 分 40 秒。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/d11cf325-d433-3882-82fc-f3a255316f34",
+     "https://api.discogs.com/releases/2307",
+     "https://www.qobuz.com/us-en/interpreter/komputer/612888",
+     "https://en.wikipedia.org/wiki/Komputer",
+     "https://en.wikipedia.org/wiki/I_Start_Counting"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/d4/7e/47/d47e475b-dd55-9b66-08aa-a11756b60d82/mzaf_6394130424745638506.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "appleCollectionId": "831353952",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 831353952「Komputer《The World of Tomorrow》」：曲目 13/13 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈The World of Tomorrow〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gábor Lázár",
+   "album": "Unfold",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3ee39e18-9337-4c4a-9494-187baf52e34e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "冷的快節奏電子（mc18 擴寫）：The Death of Rave 發行；把 rave 合成器音色拆成連發節奏切片，冷而快｜策展無疑點｜MB release-group 3ee39e18-9337-4c4a-9494-187baf52e34e：title「Unfold」、Album、first-release-date 2018-05-02、artist-credit「Gábor Lázár」。證據：https://musicbrainz.org/release-group/3ee39e18-9337-4c4a-9494-187baf52e34e https://coverartarchive.org/release-group/3ee39e18-9337-4c4a-9494-187baf52e34e",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3ee39e18-9337-4c4a-9494-187baf52e34e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 3237,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 3237）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "個人首張黑膠只壓了 250 張，膠片是透明的。Gábor Lázár 來自匈牙利，《Unfold》2018 年 5 月由英國廠牌 The Death of Rave 發行。他早期的作品冷冽、帶金屬質感，極簡而偏向耳機聆聽；這一張轉往舞池，把 2-step、grime 與 electro 扭成切分、帶放克感的俱樂部律動。這種稜角分明的聲音，後來一路延續到《Source》。",
+    "sourceUrls": [
+     "https://gaborlazar.bandcamp.com/album/unfold",
+     "https://www.discogs.com/release/11978243",
+     "https://thequietus.com/?p=28580",
+     "https://factmag.com/2020/04/16/gabor-lazar-source",
+     "https://musicbrainz.org/release-group/3ee39e18-9337-4c4a-9494-187baf52e34e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7a/8b/c2/7a8bc2e3-bde2-1f1e-3120-e454a26c4175/mzaf_15860624371552368972.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "appleCollectionId": "1378407191",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1378407191「Gábor Lázár《Unfold》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Unfold〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gábor Lázár",
+   "album": "Boundary Object",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "cd002f67-4a65-4379-88c2-53a64bc3f755",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "冷的快節奏電子（mc18 擴寫）：Planet Mu 第二張，延續演算法式合成器節奏，冷硬抽象｜策展無疑點｜MB release-group cd002f67-4a65-4379-88c2-53a64bc3f755：title「Boundary Object」、Album、first-release-date 2022-02-25、artist-credit「Gábor Lázár」。證據：https://musicbrainz.org/release-group/cd002f67-4a65-4379-88c2-53a64bc3f755 https://coverartarchive.org/release-group/cd002f67-4a65-4379-88c2-53a64bc3f755",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cd002f67-4a65-4379-88c2-53a64bc3f755/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1799,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1799）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1799），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "布達佩斯與布拉格兩地錄下的八首，一刀都沒剪。Gábor Lázár 是 1989 年出生的布達佩斯人，做實驗性的電子樂。Planet Mu 先替他出過《Source》，這張接著 2022 年 2 月 25 日上架，八首都是即時演奏，靠他自己設計的作曲介面完成。《Source》那層光滑的表面在這裡向內塌陷，脈動仍在。",
+    "sourceUrls": [
+     "https://planet.mu/?p=6102",
+     "https://www.discogs.com/master/2526097",
+     "https://thequietus.com/?p=28580",
+     "https://musicbrainz.org/release-group/cd002f67-4a65-4379-88c2-53a64bc3f755"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/50/c8/d3/50c8d3ef-3f36-2b77-ca6a-b731023f13b1/mzaf_1995609245361821792.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "appleCollectionId": "1598493678",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1598493678「Gábor Lázár《Boundary Object》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Boundary Object I〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mark Fell",
+   "album": "Manitutshu",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "50b934a0-260e-467d-9c21-3765cb333c75",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "冷的快節奏電子（mc18 擴寫）：Mark Fell 在 Editions Mego 的長作，把 house 與芝加哥 footwork 式節奏拆成演算法切片｜⚠ MB 正規名為「Manitutshu *」（含星號），這裡取不帶星號；CAA 無圖，封面用 Apple Music。池中《Multistability》x 3.0 貼邊，此張 x 為主要風險｜MB release-group 50b934a0-260e-467d-9c21-3765cb333c75：title「Manitutshu *」、Album、first-release-date 2011-05、artist-credit「Mark Fell」。證據：https://musicbrainz.org/release-group/50b934a0-260e-467d-9c21-3765cb333c75 https://music.apple.com/us/album/manitutshu/1825328924",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1825328924",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/16/69/04/166904cd-482d-e37a-62aa-8783e99b65f0/880918276366.jpg/600x600bb.jpg",
+    "note": "CAA 無圖；取已釘定試聽的 Apple 1825328924 官方圖，主線 2026-10-23 目視：封面印「Manitutshu * / Mark Fell」、Mego 116，與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 2310,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2310）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 2310），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "40 個合成器音色全數落選，後來成了一張雙 12 吋的原料。做音色的是英格蘭電子製作人 Mark Fell。2011 年 1 月，Errorsmith 替 Native Instruments 開發軟體合成器 Razor，找他做預設音色。他把這批音色拿去重做自己《UL8》的素材，得到八首重製曲，Editions Mego 在同年 5 月推出。聲音極簡、碎裂跳動，音色冰冷，錄音極為清脆；標題曲以一段日語取樣開場。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mark_Fell_(artist)",
+     "https://exclaim.ca/music/article/mark_fell-manitutshu",
+     "https://www.cyclicdefrost.com/2011/07/mark-fell-%E2%80%93-manitutshu-editions-mego/",
+     "https://musicbrainz.org/release/6f1dbb01-a81b-4c48-a752-b195ae2e5c9b",
+     "https://musicbrainz.org/release-group/50b934a0-260e-467d-9c21-3765cb333c75"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1b/a1/58/1ba158c6-c6ad-776d-7d1b-5b1cb82deb95/mzaf_9517826765277434140.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "appleCollectionId": "1825328924",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1825328924「Mark Fell《Manitutshu》」：曲目 9/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Acids In The... thin razor, attack noise hat, Linn〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Welle: Erdball",
+   "album": "Tanzmusik für Roboter",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b6606d17-75e5-4b51-a5ea-5df32a8daefd",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "EBM 輕的那半／機械 electro-pop：「給機器人的舞曲」，Welle: Erdball 最舞池導向的一張 minimal electro｜⚠ 同上｜MB release-group b6606d17-75e5-4b51-a5ea-5df32a8daefd：title「Tanzmusik für Roboter」、Album、first-release-date 2014-02-21、artist-credit「Welle: Erdball」。證據：https://musicbrainz.org/release-group/b6606d17-75e5-4b51-a5ea-5df32a8daefd https://coverartarchive.org/release-group/b6606d17-75e5-4b51-a5ea-5df32a8daefd",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b6606d17-75e5-4b51-a5ea-5df32a8daefd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 513,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 513）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 513），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "女聲成員為了學業離團，新專輯與巡演一起延到隔年初。從 1993 年起，德國 electro 樂團 Welle: Erdball 就在 Synthetic Symphony 出片，這回離團的是 Frl. Plastique。團體公開徵選新的女聲，新成員直到發行前一週才公布。《Tanzmusik für Roboter》拖到 2014 年 2 月 21 日終於發行。整張以 Commodore 64 的 SID 音源為底，播音員式的男聲配上兩位女聲，諷刺地寫電腦、機器人與塑膠。",
+    "sourceUrls": [
+     "https://de.wikipedia.org/wiki/Welle:_Erdball",
+     "https://musicbrainz.org/release/1b01b54b-2907-4d73-8643-383d31039354",
+     "https://www.discogs.com/master/659253",
+     "https://musicbrainz.org/release-group/b6606d17-75e5-4b51-a5ea-5df32a8daefd"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "iTunes 藝人目錄無此盤"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Komputer",
+   "album": "Synthetik",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ca8586ea-898c-3f0c-a500-ce2b21aa5ae2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "EBM 輕的那半／機械 electro-pop：Komputer 第三張，延續 Kraftwerk 式冷 electro-pop，乾淨機械｜⚠ 中速曲比例是 x 風險｜MB release-group ca8586ea-898c-3f0c-a500-ce2b21aa5ae2：title「Synthetik」、Album、first-release-date 2007-06-25、artist-credit「Komputer」。證據：https://musicbrainz.org/release-group/ca8586ea-898c-3f0c-a500-ce2b21aa5ae2 https://coverartarchive.org/release-group/ca8586ea-898c-3f0c-a500-ce2b21aa5ae2",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2007,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ca8586ea-898c-3f0c-a500-ce2b21aa5ae2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 7475,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 7475）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "新歌得先在舞台上過關，沒過的就丟掉或回錄音室重做。Mute 旗下的倫敦電子雙人組 Komputer，第三張專輯《Synthetik》就這樣做出來。它回到兩人首張的傳統 electro 聲音，再加進更多實驗電子。唱片 2007 年 6 月 25 日在 Mute 出版，廠牌創辦人 Daniel Miller 掛名追加製作。聲音介於 IDM、synth-pop 與 electro 之間，12 軌裡有 8 軌超過 3 分半。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Komputer",
+     "https://musicbrainz.org/release/332064bd-cee3-4bbc-8545-b0722525bd6a",
+     "https://www.discogs.com/release/1005461",
+     "https://www.discogs.com/artist/2735",
+     "https://musicbrainz.org/release-group/ca8586ea-898c-3f0c-a500-ce2b21aa5ae2"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/6e/a8/88/6ea8888d-e786-b8ba-6344-a0cdf6343000/mzaf_8504951699036874840.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "appleCollectionId": "827829313",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 827829313「Komputer《Synthetik》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈International Space Station〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "UnderViewer",
+   "album": "Wonders & Monsters",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d0c40fd0-4262-443b-953c-afe20caf567f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "比利時冷浪潮（PIAS／Antler 系）：Front 242 前身：Jean-Luc De Meyer 與 Patrick Codenys 1979–82 的 minimal synth 計畫，此為首張正式全長；比 Front 242 更薄更乾｜⚠ 2016 年才發的早期素材重錄，中速曲是 x 風險｜MB release-group d0c40fd0-4262-443b-953c-afe20caf567f：title「Wonders & Monsters」、Album、first-release-date 2016-12-16、artist-credit「Underviewer」。證據：https://musicbrainz.org/release-group/d0c40fd0-4262-443b-953c-afe20caf567f https://coverartarchive.org/release-group/d0c40fd0-4262-443b-953c-afe20caf567f",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d0c40fd0-4262-443b-953c-afe20caf567f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 680,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 680）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 680），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "四軌卡帶擱了三十多年，救不回的聲音只好照原貌重建。那是布魯塞爾雙人組 UnderViewer 在 1980 至 1981 年間的錄音，主唱是 Jean-Luc De Meyer，音樂出自 Patrick Codenys。兩人隨即加入 Front 242，UnderViewer 就此擱置。重建時人聲重新錄過，曲式約保留一半。2016 年 12 月 16 日，這批歌經 Alfa Matrix 出成 CD。編制只有貝斯、合成器與節奏盒，比後來的 Front 242 更極簡。",
+    "sourceUrls": [
+     "https://spillmagazine.com/22035",
+     "https://www.reflectionsofdarkness.com/artists-u-z/16766-interview-underviewer-september-2016",
+     "https://www.discogs.com/release/9576258",
+     "https://musicbrainz.org/release/81c15350-ab64-4a0f-ad4d-c188cea56ea0",
+     "https://musicbrainz.org/release-group/d0c40fd0-4262-443b-953c-afe20caf567f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/82/c6/98/82c698f8-8423-697c-a743-a09f114c7fdb/mzaf_8487366145747903288.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "appleCollectionId": "1178688562",
+    "storefront": "BE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple be 1178688562「Underviewer《Wonders & Monsters》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Was Soll Ich Tun ?〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mark Fell & Gábor Lázár",
+   "album": "The Neurobiology of Moral Decision Making",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "88a2ce68-c913-4bb4-9919-2aa53c5cd95d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "冷的快節奏電子（mc18 擴寫）：Mark Fell 與 Gábor Lázár 合作盤，演算法合成器節奏的冷快範本｜策展無疑點｜MB release-group 88a2ce68-c913-4bb4-9919-2aa53c5cd95d：title「The Neurobiology of Moral Decision Making」、Album、first-release-date 2015-04-30、artist-credit「Mark Fell & Gábor Lázár」。證據：https://musicbrainz.org/release-group/88a2ce68-c913-4bb4-9919-2aa53c5cd95d https://coverartarchive.org/release-group/88a2ce68-c913-4bb4-9919-2aa53c5cd95d",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/88a2ce68-c913-4bb4-9919-2aa53c5cd95d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 646,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 646）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 646），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "在斯德哥爾摩 EMS 駐村的匈牙利人，遇上了客座作曲家。匈牙利人名叫 Gábor Lázár，客座作曲家則是英國的 Mark Fell。這是兩人第一次合作，唱片由 The Death of Rave 在 2015 年推出。他們想重新校準電子樂裡傳統的節拍與音色：鼓的編排過度亢奮，帶著 jungle 與 footwork 的影子；Lázár 彩色音符般的合成器，一再被 Fell 的 Linn 鼓爆裂聲打斷。十軌全都叫 Untitled。",
+    "sourceUrls": [
+     "https://de.ra.co/news/29207",
+     "https://www.juno.co.uk/reviews/2014/10/01/gabor-lazar-joins-the-death-of-rave-with-ep16/",
+     "https://musicbrainz.org/release-group/88a2ce68-c913-4bb4-9919-2aa53c5cd95d",
+     "https://forcedexposure.com/Catalog/RAVE.010LP.html",
+     "https://www.discogs.com/release/6963719",
+     "https://en.wikipedia.org/wiki/Mark_Fell_(artist)"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2a/c8/09/2ac80925-5b4d-25aa-df18-8d173a0ca006/mzaf_9619610081079704693.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "appleCollectionId": "1008453441",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1008453441「Mark Fell & Gábor Lázár《The Neurobiology of Moral Decision Making》」：主線人工配對：Apple 同名專輯 10 軌（Untitled 1–10）、The Death of Rave 2015，與 MB 原盤 10 首無題曲一致，取第 1 軌〈Untitled 1〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gábor Lázár",
+   "album": "Reflex",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f3d8145e-6a46-44a7-b5ad-fa6d5299168f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "冷的快節奏電子（mc18 擴寫）：Lázár 在 raster 的首張，把演算法節奏推向 techno（廠牌：percussion 擴充、較貼舞池）｜⚠ 打擊比前作厚，y 可能 0.2｜MB release-group f3d8145e-6a46-44a7-b5ad-fa6d5299168f：title「Reflex」、Album、first-release-date 2024-09-20、artist-credit「Gábor Lázár」。證據：https://musicbrainz.org/release-group/f3d8145e-6a46-44a7-b5ad-fa6d5299168f https://coverartarchive.org/release-group/f3d8145e-6a46-44a7-b5ad-fa6d5299168f",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f3d8145e-6a46-44a7-b5ad-fa6d5299168f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1177,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1177）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1177），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "七軌從不可預測的有機結構，一路走到線性的 techno。Gábor Lázár 這位匈牙利製作人把這張交給 raster，是他在該廠牌的首張，2024 年 9 月 20 日面世。他擴充了打擊樂與合成器，把 techno 推到前面，弧線也從居家聆聽走向俱樂部。七軌從〈Event〉排到〈Execute〉，總長約 31 分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/artist/3031454",
+     "https://www.juno.co.uk/reviews/2014/10/01/gabor-lazar-joins-the-death-of-rave-with-ep16/",
+     "https://raster-raster.bandcamp.com/album/reflex",
+     "https://musicbrainz.org/release-group/f3d8145e-6a46-44a7-b5ad-fa6d5299168f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1c/db/aa/1cdbaa29-d267-5b75-9c0a-7bc67a060123/mzaf_5492058680619330982.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:07:05Z",
+    "appleCollectionId": "1760050365",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1760050365「Gábor Lázár《Reflex》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Event〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  }
+ ]
+}

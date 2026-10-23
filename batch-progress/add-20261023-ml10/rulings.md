@@ -77,3 +77,21 @@
 - **14773** 同藝人分軸：Muldrow——Vweto 帶標題與系列起點、VWETO II 帶錄音細節（Mello、G-funk、悼曲），生年與父母不派（店內 Umsindo／Olesi 已用「1983 生於洛杉磯、父親是爵士吉他手」，避開同形）。Martians——DCT 帶團籍與概念，Last Party 帶「自打嘴巴」與 The Internet 團員客席；Steve Lacy 只留 Last Party。Quesada——I 帶起源故事與疫情，II 帶共同製作與客座。跨組：Lewis II 帶 Island／金曲壓力／被擱的續作，NUMB（e）帶退圈與復出；Comfort Woman 帶 Woodstock 錄音與 Maverick 最後一張，Bitter（e）帶西柏林與 go-go；AIR 帶第六張與管弦轉向，Acts of Faith（d）帶免費 WAV。Tokio Aoyama（VWETO II、The Loop 兩張研究稿都有）兩張皆不派。
 - **14774** 第二句句型配表（含 d–e 已交六張一起排）：Vweto「取這個名字的」回指標題／VWETO II「這是」系列位置／Loop「身為」組合身分／DCT 團籍頭銜＋名字／Last Party「說這話的是」／Zdenka 本名／Jardín 母親的身分（親屬修飾語）／Sage Motel 掛名欄／Boleros「停車的人是」回指 hook／Boleros II「由」製作人句／Lewis II 廠牌關係（「簽下…的是 Island」）／Comfort Woman 樂器／AIR 日期。「日」後一字：VWETO II 推、DCT 問、Zdenka 由、Sage Motel 上、Comfort Woman 面、AIR 釋；其餘七張只寫到月或年；與 d–e 的 以／交／進 不撞。尺 `/[年月]\s*\d{1,2}\s*日(.)/`。
 - **14775** 自查：hook 間中文 4-gram 0；hook 對全批 note 4-gram 0（原「個人專輯」×3、「張個人作」×1 已改字拆掉）；hook 與自己 note 無 8 字以上逐字重複；開頭前四字 19 張互異。媒體名與媒體榜單名次未進 hook／note（樂評一律寫「樂評」，AIR 只留英國專輯下載榜第 2 名）。`qa-batch hooks` 全部通過、`chk-hook-crossgroup`（5 組 19 張）全部通過，hook 加權 13–27、note 158–238。
+
+## 寫作層（writer-1）
+- **14781** 交件：`desc-tools/batches/output/add-20261023-ml10-out-1.json` 10 張（full 8：205–237；thin 2：Last Party 171、Boleros II 156）。初稿只 Boleros psicodélicos 241 超 1 字，整格捨去「做一張唱片的」修飾語回到 237；無掉下限。`qa-batch out`、`qa-check-research`、`fix-spacing` 皆 0 處；「據」字 grep 0；媒體名與榜單名次 0。
+- **14782** 第二句照鉤子層配表（14774）：取這個名字的／這是／身為／團籍頭銜＋名字／說這話的是／本名／母親的身分／製作人欄掛名／停車的人是／由。「日」後一字照配：VWETO II 推、DCT 問、Zdenka 由、Sage Motel 上，其餘只寫到年或月。
+- **14783** 跨兩檔合掃（han() 中文 4-gram）：本組內途中拆掉「首約分鐘」（Vweto×Last Party，Last Party 改成先寫全長再寫曲數）、「與合成器」（Vweto×DCT）、「交出第二」「出第二張」（Loop×Last Party）；對 writer-2 拆掉「在年月日」（DCT×Comfort Woman，DCT 刪「在」）、「唱片年月」「片年月日」（VWETO II×Sage Motel，Sage Motel 改以日期領句）、「電鋼琴與」（Loop×Invitation，Loop 樂器序改成銅管領頭）。定稿只剩 writer-2 內部的「多樂器手」（NUMB×Lewis II，同人身分名詞）與「在年月日」（Invitation×Comfort Woman，兩張皆 writer-2），本組 0 條。
+- **14784** note 外的字一律不寫：Last Party 初稿「一起進錄音室」note 無據，刪；Jardín「順手」刪。Sage Motel 的汽車旅館主題 hook 已說，第二段只補 note 裡 hook 沒說的「單戀」，不複述框架。
+
+## 寫作層（writer-2）
+- **14786** 交件：`desc-tools/batches/output/add-20261023-ml10-out-2.json` 9 張（full 5：187–228；thin 4：142–177）。逐張：Lewis II 177、Comfort Woman 221、AIR 187、Acts of Faith 154、Lord of Lords 218、Les Jardins Mystiques 218、Invitation to Openness 228、NUMB 142、Bitter 159。初稿只 Lewis II 超 thin 上限（186），整格縮掉「交出⋯就此」子句後 177。`qa-batch out`（合計 19 張與卡單相符、全部通過）、`qa-check-research` 0 標記、`fix-spacing` 0 處；轉述引導詞 grep 0（「占據」為正文用字）。
+- **14787** 第二句全照鉤子層配表：Lewis II 廠牌關係（簽下⋯的是 Island）／Comfort Woman 樂器（彈貝斯也唱歌的）／AIR 日期領句／Acts of Faith「SAULT 由」／Lord of Lords 名字領句／Atwood-Ferguson 生年與出生地／McCann「Les McCann 是」／NUMB「Lewis Taylor 是」／Bitter「生於西柏林的」。「日」後一字照 14779／14774：面、釋、以、交、進。
+- **14788** 自掃（han() 4-gram，跨 out-1＋out-2 19 張合掃）：3 張以上 0。途中拆掉「在年月日」×3（Comfort Woman、McCann 改成以日期領句的名詞子句，前一字為「輯」「鐘」）、「張專輯製作人」×2（Bitter 改「由 Craig Street 製作」）、預防性拆掉 Lord of Lords 的「唱片年」（out-1 有「唱片年月」×2）。剩 2 張：「多樂器手」（Lewis Taylor 同人身分名詞，14780 已判不改）、「電鋼琴與」（樂器名，McCann×The Loop）。對 out-1 卡單的 hook／note 再掃一次，只命中「電鋼琴與」。
+- **14789** 評語寫法：媒體名、星等、媒體榜單名次整句不寫；官方榜只留 AIR 英國專輯下載榜第 2 名（照 note）。四張評語各用一種：Comfort Woman「樂評把它歸為」、Lord of Lords「評論聽到的是」、NUMB「被形容為」、Bitter「被評為」。McCann 年份照 note：錄音 1971-05-04、發行寫 1972 年。Lewis II 只寫 2000 年。
+
+## 主線審稿（2026-10-23，雲端主線，19 張逐張讀過、對回研究稿）
+- **14791** `desc2:Georgia Anne Muldrow|Vweto`：「文案要求節拍對嘻哈聽眾夠硬」→「官方說明寫道，這些節拍要讓嘻哈聽眾覺得夠硬」。依據：研究稿官方 Bandcamp 文案條；原句「文案要求」主語不清。事實未變。
+- **14792** 四處樂評轉述改直述聲音（照線規，事實未變、不需同步研究層）：VWETO II「樂評把整張形容為低頻驅動的 G-funk」→「整張是低頻驅動的 G-funk」；Comfort Woman「樂評把它歸為精簡、帶 dub 影響的靈魂樂」→「聲音精簡，是帶著 dub 影響的靈魂樂」；Lord of Lords「評論聽到的是緩慢堆疊」→「音樂緩慢堆疊」；NUMB「音樂卻被形容為意外地振奮」→「音樂卻意外地振奮」。
+- **14793** `desc2:Meshell Ndegeocello|Bitter`：「整張被評為苦甜的低迷之作」→「整張苦甜而低迷」（單源評價句改直述）；「保守的人聲」→「內斂的人聲」（guarded 誤譯）。
+- 其餘 13 張逐張審過，未改字。AIR 的英國專輯下載榜第 2 名是官方榜，不屬媒體年終榜，保留。qa-batch out、fix-spacing 重跑全過。
