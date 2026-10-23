@@ -38,3 +38,14 @@
 - **13488**：Carter Arditti 盤採 Etcetera 1988 原版（MB 2004 為再版）；第四號「世界首錄」為 Discogs 註記，首演為 1986 年 Composers String Quartet，兩者不衝突。moodGuess 輕微存疑：「快速、乾、薄」只能證實聲部各自獨立與加速終樂章。
 - **13489**：WebSearch 共用 3 次（Haas、Sciarrino、Xenakis）。Discogs API 直連可用（search 與 release），MB API 直連可用；Kairos 網站、Discogs 網頁、Sussex PDF、UE 皆無法開啟。
 - **推翻策展層**：Sciarrino 第八號聲音特性（部分）、Haas 動態與強度（部分，單一弱來源）、Kurtág 靜默比重，共 3 處列 moodGuess 存疑；年份、廠牌、掛名全數核對無誤，無需改卡單。
+
+## 研究 e 組
+- **13521**：Wolpe（Naxos 8.559262）是 Koch 1993／1996 兩張舊盤的 2006 年 Naxos 合併再版，yearVerified 填 2006（卡單 2005 無依據）；雙簧管件年份 Naxos 1954 vs 維基 1955，facts 採 1954；評論（lafolia）含 Oboe Quartet 與 Stephen Taylor，可能混入同系列他盤，演奏者只寫「評論列出」。
+- **13522**：Donatoni《Portrait》（Accord 206232，1997）的 Portrait 是專輯名、非單曲（IRCAM 另有 1976–77 大鍵琴與樂團的 Portrait，不在本盤）；Ensemble FA 創辦年與 For Grilly／Lumen 年份單源或有疑，不寫入 facts。Etwas ruhiger 約 12 分（IRCAM）vs 本盤 14:12，並列。列 moodGuess 存疑（Etwas ruhiger、Lumen 較安靜）。
+- **13523**：Donatoni 2e2m 盤（Adda 581133，© 1987 ℗ 1989）：維基作品表的 Alamari（1983、大提琴低音大提琴鋼琴）與 Nidi（piccolo）編制與本盤對不上，facts 只寫曲名、長度與 Discogs 署名者；2e2m 創立年維基自相矛盾（1972 vs 總監 1971–2003），facts 寫 1972。聲音只有時期定位與音樂節文案，無專屬樂評。
+- **13524**：Carter《Eight Compositions》Bridge 9044（1994）：演奏者只有 Boosey 頁證實 Gra＝Neidich、Scrivo in Vento＝Sollberger，其餘依編制推定、寫作層勿分配；Gra 1993（Bridge／Discogs）vs 維基 1994 並列；大提琴奏鳴曲與 Enchanted Preludes 評價偏柔，列 moodGuess 存疑。
+- **13525**：Arditti 的 Kurtág／Lutosławski／Gubaidulina 盤推翻卡單年份：Discogs 主發行是 Montaigne MO 789007，1991（錄於 1990-07 科隆），卡單 2001／MO 782147 是後版，yearVerified 填 1991。Gubaidulina SQ2 委託與首演未查到不寫；Officium breve 結尾與 Op.13 第 5 首極弱列 moodGuess 存疑。
+- **13526**：Saunders《Solo》2021-01（HNE／Discogs）vs MB 2020-01-01，採 2021，錄於 2020-08。是六位獨奏者的獨奏、非樂團合奏。Hauch II（中提琴）的技法描述不套到本盤 Hauch。整體偏靜、稀疏，列 moodGuess 存疑（x 可能低於 3.0）。
+- **13527**：Rihm《Fetzen》（Winter & Winter，2011，錄於 2009-06）：手風琴色溫偏暖、表現主義熱度，列 moodGuess 存疑；音響描述只有文案的回收技法，無樂評，延伸技法未有獨立來源不寫。
+- **13528**：WebSearch 共用 8 次（Saunders 2、Wolpe 1、Rihm 1、Kurtág 1、Gubaidulina 1、Ensemble FA 1、Carter 1）；Discogs API 直連可用，網頁 403；Universal Edition、Schott、Gramophone 頁 403 未採。
+- **13529**：本組全 full、無建議移除。推翻策展層共 2 處年份（Wolpe 2005→2006、Kurtág 2001→1991）＋ 5 處列 moodGuess 存疑（Portrait、Carter、Kurtág、Saunders、Rihm）。
