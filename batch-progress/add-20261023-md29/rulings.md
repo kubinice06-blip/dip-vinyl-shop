@@ -28,3 +28,10 @@
 - 21179：Sjellos《Lifeless Ground》moodGuess 存疑（輕）——MMM 提到〈Coma State〉有細微打擊式節奏、Side-Line 提到偶現近旋律段落；「像更華麗的 Lustmord」可能能量偏高。
 - 21180：Gdanian《Submersion》moodGuess 存疑——「retro basslines」「throbbing pads and hammering tones」顯示有低音律動／錘擊音色，無明確鼓組記載；弦樂為鋪底。
 - 通則：facts 不寫查證過程；各卡 notes 內寫明 moodGuess 存疑理由。年份、廠牌、盤名十張全數與卡單吻合，未推翻策展層。
+
+## 研究 c 組
+- **21181**　c 組 10 張全數 MB 身分核對一致（盤名、年份、廠牌），0 推翻。Bandcamp 文案以 curl 預設 UA 讀 cryochamber.bandcamp.com 成功；Cyclic Law 的 Ordeal 頁 404，改用 Musique Machine／Side-Line。
+- **21182**　moodGuess 存疑（建議汰換）：Remnants（Chain D.L.K. 明寫 rhythms、軍樂改寫、Pale Horse 噪取樣、Revelations dance beat）；Lacrimae Mundi（Musique Machine：Abyss 部落鼓、Amorphous Structure 持續鼓點、吟誦與口白、58 分）；Somnia（文案 acoustic music、Igloo「a bringer of light」、開場管風琴，色溫偏暖／明亮）。
+- **21183**　moodGuess 存疑（中度，需聽感）：Apocryphos《Phantoms Received》（文案推薦給 ritual percussion 愛好者，Side-Line 聽到線性類工業打擊）；Council of Nine《Trinity》（鋼琴線條、和聲色調、文案自稱 between dark and light；curatorRisk 的鐘鼓元素則查無）；Ugasanie《Cold World of Eternity》（曲名 Tambourine of the Underworld、Seid near the River，文字來源皆未描述音響，無法證實）。
+- **21184**　輕度：Crypthios《Vestigium》（slow rhythmic parts、背景吟誦與耳語人聲、文案 soothing）；Shrine《Ordeal 26.04.86》（thunderous 聲浪，噪牆程度待聽）。Council of Nine《Davidian》與 Ugasanie《Freedom and Loneliness》大致成立。
+- **21185**　facts 不寫 Bandcamp 以外未驗證的字詞：seid 的語義、Uråldrig Sorg 的瑞典語意皆只放 notes 或略去。

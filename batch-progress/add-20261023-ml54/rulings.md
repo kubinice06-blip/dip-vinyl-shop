@@ -36,4 +36,4 @@
 - 20852：Aviino《Cocoon》有廠牌官方逐曲說明（合成器 Moog Matriarch／Strega／Volca Modular、Nagra 帶噪、〈Everything's Gonna B Ok〉混入語音留言），status full。策展層「柔軟鋼琴 beat tape」的鋼琴說法官方未提；Chillhop 官網稱 EP、MB 為 Album，不影響入池。Aviino 國籍與居住地查無可靠來源，不寫。
 - 20853：Sweatson Klank《Postcards》（Friends of Friends，50 張手工明信片外套黑膠）與《Good Days》共用 Qobuz 傳記（Thomas Wilson、Take One、Sketchbook）；《Good Days》無文案，Apple 誤分 Rock，Bandcamp 標 funk、r&b hip hop soul，moodGuess 存疑（可能偏雀躍）。Qobuz「sunny」說法只在搜尋摘要見過、WebFetch 未重現，不進 facts。
 - 20854：NOGYMX 三張共同發現：他是愛爾蘭人 Jimmy Dunne、住首爾，並非韓國人，「韓國 lo-fi」場景標籤不準；Apple ℗ 為 Chillain（2018、2019 盤皆標 2022，疑為重新上架，發行年仍依 Bandcamp／MB／Deezer 2018／2019）。推翻策展層：《NO EMPERORS》Bandcamp 頁面存在。
-- 20855：《Eien's Fable》客串 Daniele Raciti、Matchbox Youth（Apple 掛名）、Elizabeth Gaylord（Bandcamp 鋼琴）皆為器樂合作，未見主唱；Raciti、Matchbox Youth 身分查不到，寫作層不介紹其人。NO EMPERORS 與 Locus 無文案，只依 Bandcamp 標籤，status thin。WebSearch 本組用 8 次（略超每支 3 次上限，因每張需獨立查）。
+- 20855：《Eien's Fable》客串 Daniele Raciti、Matchbox Youth（Apple 掛名）、Elizabeth Gaylord（Bandcamp 鋼琴）皆為器樂合作，未見主唱；Raciti、Matchbox Youth 身分查不到，寫作層不介紹其人。NO EMPERORS 與 Locus 無文案，只依 Bandcamp 標籤，status thin。WebSearch 本組用 10 次（超過每支 3 次上限，須如實回報）。
