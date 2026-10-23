@@ -68,8 +68,13 @@
   function buildCards({ moods, byHash, pool }) {
     DATA = moods; T = moods.thresholds; BR = moods.breaks; NAMES = moods.names;
     CARDS = [];
-    for (const c of pool.cards) {
-      const m = byHash.get(fnv(idOf(c.artist, c.album)));
+    // 頂級牌（殿堂／遺珠／異端）在卡池裡另放在 pool.apex，一般抽卡不碰；頻率選歌要全部都在星圖上
+    // （2026-10-23 店主：A Love Supreme 不見了——917 張頂級牌從頻率選歌上線起就沒進來）
+    const rows = [...pool.cards], seenId = new Set();
+    for (const t of ['hall', 'pearl', 'heresy']) for (const [artist, album, genres, year] of (pool.apex?.[t] || [])) rows.push({ artist, album, genres: genres || [], year: year || 0, tier: t });
+    for (const c of rows) {
+      const h = fnv(idOf(c.artist, c.album)); if (seenId.has(h)) continue; seenId.add(h);
+      const m = byHash.get(h);
       if (!m) continue;
       const i = CARDS.length;
       CARDS.push({ i, card: c, x: m[0], y: m[1], z: m[2], conf: m[3], cell: cellOf(m[0], m[1], m[2]),
@@ -546,7 +551,8 @@
     };
     leg();
   }
-  const norm = s => String(s || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[\s\-_.,'’"!?:;()\[\]\/&+*~]+/g, '');
+  // 英式拼法照美式比（favourite＝favorite、colour＝color）：兩邊都換，不會漏
+  const norm = s => String(s || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/our/g, 'or').replace(/[\s\-_.,'’"!?:;()\[\]\/&+*~]+/g, '');
   let SEARCH = null;
   function findCards(q) {
     const toks = String(q).trim().split(/\s+/).map(norm).filter(Boolean); if (!toks.length) return [];
