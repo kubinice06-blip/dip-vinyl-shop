@@ -11,7 +11,7 @@
    "id": "jp-downtempo",
    "zh": "日本 downtempo 暖盤（沖繩民謠 dub、慢 dub pop）",
    "why": "琉球民謠人聲＋dub 低頻、Polaris 慢 dub pop",
-   "count": 6
+   "count": 9
   },
   {
    "id": "uk-dub",
@@ -133,10 +133,10 @@
    ],
    "why": "第二張，延續沖繩民謠人聲＋dub 低頻與回音的做法，慢而濕，島唄旋律清楚",
    "moodGuess": {
-    "x": 2.4,
-    "y": 1.1,
+    "x": 2.6,
+    "y": 1,
     "z": 0.8,
-    "why": "慢拍 dub 低頻、回音，民謠人聲溫"
+    "why": "慢拍 dub 低頻、回音，民謠人聲溫；有一兩首 house 拍"
    },
    "evidence": [
     "https://musicbrainz.org/release-group/d66d2bef-80af-3837-a9a6-4c2c22f18507",
@@ -148,7 +148,7 @@
    "manualEvidenceUrls": [],
    "releaseException": "",
    "queryAlias": "",
-   "uncertain": "CAA 無圖，封面用 iTunes"
+   "uncertain": "CAA 無圖，封面用 iTunes；Discogs 另標 House，x 可能偏 2.7"
   },
   {
    "artist": "Ryukyu Underground",
@@ -571,7 +571,107 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "On-U 混音色溫常往 0 收（池中 Sherwood／AHC 偏冷），z 邊界"
+  },
+  {
+   "artist": "BudaMunk & J.Lamotta",
+   "album": "Searching Skies",
+   "year": 2021,
+   "label": "Jakarta Records",
+   "country": "jp",
+   "faction": "jp-downtempo",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "東京 beat 圈製作人 BudaMunk 的 dusty 慢拍配 J.Lamotta すずめ 的 neo-soul 女聲，Dilla 系鬆拍＋磁帶糊，旋律溫柔清楚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 1,
+    "why": "鬆慢 boom bap、dusty 低頻糊，neo-soul 女聲暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f18cd727-12fd-4f7b-87e3-99a18a185042",
+    "https://coverartarchive.org/release-group/f18cd727-12fd-4f7b-87e3-99a18a185042/front",
+    "https://music.apple.com/jp/album/searching-skies/1592943524"
+   ],
+   "mbRgMbid": "f18cd727-12fd-4f7b-87e3-99a18a185042",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "BudaMunk",
+   "uncertain": "日本 downtempo 的 beat 支線；池中同型（Nujabes 系）y 0.5–1.0 不穩"
+  },
+  {
+   "artist": "BudaMunk",
+   "album": "Movin' Scent",
+   "year": 2019,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-downtempo",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "BudaMunk 的器樂 beat 專輯，爵士／靈魂取樣磨成煙霧狀的鬆拍，低頻厚、糊",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.7,
+    "why": "鬆慢拍、dusty 取樣糊、低頻厚，爵士和弦溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/693f72f9-3b54-4401-b84a-f92151bb0e51",
+    "https://coverartarchive.org/release-group/693f72f9-3b54-4401-b84a-f92151bb0e51/front",
+    "https://music.apple.com/jp/album/movin-scent/1414901259"
+   ],
+   "mbRgMbid": "693f72f9-3b54-4401-b84a-f92151bb0e51",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "器樂 beat 色溫可能往 0.4 收（Quasimoto z0.3 先例）；iTunes 標 2018-08-22，MB 2019-08-29，首發年待研究層確認"
+  },
+  {
+   "artist": "mabanua",
+   "album": "Done Already",
+   "year": 2008,
+   "label": "origami PRODUCTIONS",
+   "country": "jp",
+   "faction": "jp-downtempo",
+   "genres": [
+    "soul",
+    "hiphop"
+   ],
+   "why": "鼓手兼製作人 mabanua 的首張，自彈自唱的 lo-fi soul／beat，慢拍、磁帶糊的鼓與溫熱人聲",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 1,
+    "why": "鬆慢拍、lo-fi 糊鼓與低頻，人聲旋律暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e0149eb2-e9c4-47cd-bc35-7d07f13790fd",
+    "https://coverartarchive.org/release-group/e0149eb2-e9c4-47cd-bc35-7d07f13790fd/front",
+    "https://www.discogs.com/release/2578763"
+   ],
+   "mbRgMbid": "e0149eb2-e9c4-47cd-bc35-7d07f13790fd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.9 邊界、x 可能 2.8；聲音細節要研究層查"
   }
  ],
- "notes": []
+ "notes": [
+  "只交 21 張（目標 54），照實交不湊數。主場景（日本 dub／downtempo）15 張：jp-dub 6（Little Tempo dub 版 2、Likkle Mai 3、松永孝義 1）＋jp-downtempo 9（Ryukyu Underground 4、Polaris 2、BudaMunk 2、mabanua 1）；擴寫 UK dub 6（Mad Professor lovers dub 2、Hollie Cook 2、Horace Andy 2）。",
+  "池中同藝人三軸擋下（不提）：Mute Beat（《Flower》《Dub Wise》z−0.4）、こだま和文（兩張 z−0.4／−0.6；含 Kodama & Dub Station 系）、Dry & Heavy（z 0／−0.4，含《One Punch》《From Creation》《Jaws of the Tiger》）、Oki Dub Ainu Band（z−0.3）、Audio Active（x2.9 貼邊）、Kyoto Jazz Massive／Sextet、Cro-Magnon、Jazztronik、Mondo Grosso、FreeTEMPO（全落雀躍）、CALM（y−0.3／−0.4 判輕）、Rei Harakami、砂原良徳（判輕）、sugar plant（z 0.0–0.2 貼邊）、DJ Krush（全冷）、Uyama Hiroto（y0.7 貼邊，其餘盤未提）。UK 端：Zion Train、Dub Syndicate、Alpha & Omega、Bush Chemists、Disciples、Rootsman、Rockers Hi-Fi、African Head Charge 主線盤、Jah Shaka 全落頹靡；Banco de Gaia y0.6–0.7 貼邊。",
+  "Little Tempo 只收 dub 版：原盤《Ron Riddim》池中 y0.2、dub 版兩張 y0.8–1.3，所以《Kedaco Sounds》《Super Tempo》《Fireblender》（Space Mambo／Safari Skank 偏輕快）《山と海》《太陽の花嫁》不提；《Musical Brain Food》ml9 已汰。",
+  "重提 ml4 的 Polaris《Union》《Music》：ml4 主線汰的理由是「同團留三張」而非聲音，池中《Family》《Home》y0.9–1.0 z0.9–1.0；同藝人無張數上限。",
+  "考慮過沒提：Silent Poets（《Dawn》有 The Bug＋Miss Red、整體憂鬱，《To Come…》abstract，z 估 <0.5）；Gota／屋敷豪太（acid jazz／soul groove，x≈3）；Sly Mongoose（funk／disco）；Hakase-Sun《A Little Bit of Slumber》（器樂 lovers 翻唱，y 估 0.6–0.7）；Bagdad Cafe the trench town、Pushim（人聲 lovers，y 風險）；DJ Okawari、Cradle Orchestra、Ovall、Nomak（乾淨爵士嘻哈，y 貼邊）；Kenmochi Hidefumi（實為 footwork／club）；Gak Sato、Chari Chari、Ram Jam World（聲音把握不足）；Pecker《21st Century Dub》、Jah Wobble《Japanese Dub》（池中 Wobble z0.1–0.4）；Dubsensemania、Rub-a-Dub Market、Undefined（digital／冷硬）；Little Tempo《Latitude》（5 曲迷你盤）、Polaris《Tide》（6 曲）；Hollie Cook《Vessel of Love》、各 in Dub 版（MB 次類型 Remix）。",
+  "人工身分 3 張（MB 查無）：Little Tempo《Ron Riddim In Dub》（Discogs 2×12\" Album）、Likkle Mai《Dub Is the Universe》、松永孝義《The Main Man》。其餘 18 張 MB 釘住，皆 primary-type=Album 無次類型。",
+  "封面：CAA 有 12 張；Little Tempo《KEDACO IS BORN》、Ryukyu Underground 4 張、Mad Professor《Bitter Sweet Dub》、松永孝義用 iTunes；《Ron Riddim In Dub》《Dub Is the Universe》用 Discogs 圖。",
+  "跨組：ml38 同時收 UK dub，Mad Professor 兩張、Horace Andy 兩張、Hollie Cook 兩張可能撞提，以先合併者為準。去重：每張用原文名／羅馬字／別名跑過 seed 去重與 curation-*.json＋desc-tools 卡單，全 0。",
+  "色溫風險：ml4 主線結論「東亞暖 dub 色溫策展普遍高估 0.4–0.6」，本組 z 估 ≥0.6；仍然最可能掉格的是 Horace Andy 兩張（z0.6）、BudaMunk《Movin' Scent》、Polaris《Music》與 mabanua（y 0.9 邊界）。WebSearch 用 2 次。"
+ ]
 }
