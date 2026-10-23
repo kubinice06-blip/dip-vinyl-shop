@@ -13,3 +13,9 @@
 - 邊緣張交研究層查聲音：x 風險——Snowy Red 兩張、Komputer 三張、Essaie pas、UnderViewer（中速曲多）；y 風險——The Neon Judgement《Mafu Cage》（吉他）、And One 兩張（EBM 低音）、Byetone、Lázár《Reflex》；z 風險——The Weathermen 兩張（冷面幽默）、Welle: Erdball（俏皮復古）。Moskwa TV 池中《Dynamics & Discipline》3.8/0.3/−1.3 落冷冽，《Blue Planet》照收。
 - `genres` 一律 `electronic` 起頭。
 - 研究層每支 WebSearch ≤3；facts 必含 2–3 條聲音事實；與 moodGuess 不符的標「moodGuess 存疑」——**特別是中速、厚 kick／失真人聲、吉他、俏皮或溫暖的流行人聲**。
+
+## 研究 a 組
+- **12121**　Anguish 廠牌：德國原版與 Discogs 皆 Machinery（MA 05-2／MA 5-1），MB 1991-01-01 全球版掛 Noise Records；Machinery 1991 年併入 Noise 旗下，兩者並存。facts 以 Machinery 為主、併述 Noise 緣由。年份 1991 不變（真實發行 1991-07-09）。
+- **12122**　Ten Deadly Kisses 年份：Discogs／MB 1987-01，英維基樂團頁寫 1986；採 1987。
+- **12123**　六張皆查無本盤樂評（WebSearch 3 次用完、Discogs 網頁／AllMusic 403），聲音事實來自維基樂團層級描述、Discogs 風格標籤／錄音欄／時長；Snowy Red、Flop! status 標 thin。
+- **12124**　moodGuess 存疑（列給主線）：Mafu Cage（y，吉他）、Snowy Red（x、y，兼吉他貝斯、曲長 3–5 分）、Weathermen（z，諷刺俏皮）、Blue Planet（x，曲長整齊 4 分上下、有主唱流行取向）、Anguish（y，Discogs 含 Industrial）、Flop!（y、z，短曲流行取向）。
