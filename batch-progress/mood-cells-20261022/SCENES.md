@@ -51,15 +51,15 @@
 | 27 | md18 | 日本暗色 drone／ambient／暗色獨立 ＋ md20 北歐暗色電子與配樂 ＋ md19 華語／韓國暗色獨立 | ✅ 上線 36／落格 34 |
 | 28 | mc28 | 歐陸自由即興（ICP、Globe Unity、Misha Mengelberg、Irène Schweizer） ＋ mc34 日本前衛即興 | ✅ 上線 22／落格 19 |
 | 29 | mc33 | glitch／microsound／尖細實驗電子 ＋ mc35 RIO／前衛搖滾尖細那半 | ✅ 上線 28／落格 20 |
-| 30 | md22 | 無鼓 drone metal／post-metal ambient 二線 ＋ md23 暗黑 lo-fi／tape loops |  |
-| 31 | mc22 | 當代前衛爵士（Tim Berne、Steve Lehman、Mary Halvorson、Craig Taborn、Tyshawn Sorey） ＋ mc31 剩餘 |  |
+| 30 | md22 | 無鼓 drone metal／post-metal ambient 二線 ＋ md23 暗黑 lo-fi／tape loops | 派→情緒薄格 ml38、md22（第 7 輪） |
+| 31 | mc22 | 當代前衛爵士（Tim Berne、Steve Lehman、Mary Halvorson、Craig Taborn、Tyshawn Sorey） ＋ mc31 剩餘 | 派→情緒薄格 ml40、mc22（第 7 輪） |
 | 32 | ml31 | 爵士弦樂抒情盤／慢板 ballad ＋ ml33 福音慢板／靈魂聖詩 | ✅ 上線 7／落格 7 |
 | 33 | ml32 | 拉丁 bolero／慢板浪漫 ＋ ml25 80s 慢板 reggae 歌 | ✅ 上線 16／落格 16 |
 | 34 | ml34 | 華語／日語／韓語抒情 ballad 厚編曲 ＋ ml36 Balearic／ambient pop 暖盤 | ✅ 上線 12／落格 11 |
-| 35 | ml35 | alt-country／Americana 濕而慢 ＋ ml33 剩餘 |  |
-| 36 | ml38 | 70s roots dub 二線 ＋ ml37 UK dub／digital dub 90s |  |
-| 37 | ml40 | downtempo 暖盤三線 ＋ ml39 歐陸 dub／dubtronica 暖盤 |  |
-| 38 | ml41 | 日本 dub／downtempo 暖盤 ＋ ml37 剩餘 |  |
+| 35 | ml35 | alt-country／Americana 濕而慢 ＋ ml33 剩餘 | 派→情緒薄格 ml41、ml35（第 7 輪） |
+| 36 | ml38 | 70s roots dub 二線 ＋ ml37 UK dub／digital dub 90s | 派→情緒薄格 ml38、md22（第 7 輪） |
+| 37 | ml40 | downtempo 暖盤三線 ＋ ml39 歐陸 dub／dubtronica 暖盤 | 派→情緒薄格 ml40、mc22（第 7 輪） |
+| 38 | ml41 | 日本 dub／downtempo 暖盤 ＋ ml37 剩餘 | 派→情緒薄格 ml41、ml35（第 7 輪） |
 | 39 | ml39 | 歐陸 dub／dubtronica 暖盤 ＋ ml40 剩餘 |  |
 
 **暫停**：mc13 math rock、mc21 post-punk revival、mc30 minimalism（旋律清楚＝暖）、mc9／mc10／mc20／mc25／mc26 系的 synth-pop／new wave／K-pop／synthwave 續集（2026-10-23 體感標準：旋律清楚往暖，落雀躍）、mc23 art pop、ml4 系東亞續集、ml14 spiritual jazz（體感標準判冷，不是恍惚）、ml22、ml27。**重開**（體感標準下會落冷冽）：mc4、mc14、mc22、mc28。
