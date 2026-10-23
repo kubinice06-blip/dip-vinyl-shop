@@ -1,5 +1,72 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 6 輪 ml32／mc28：拉丁 sweet soul＋80s roots 人聲 16 張、歐陸自由即興 22 張上線，落格 16/16、19/22
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 6 輪，本工作階段負責 ml32、mc28（評分照 10-23 體感標準）。ml32（`add-20261023-ml32`，恍惚：拉丁 bolero／慢板浪漫＋ml25 80s 慢板 reggae）：Thee Sacred Souls ×2、Bobby Oroza、Thee Sinseers、Kali Uchis《Sin miedo》、Carla Morrison《Amor supremo》、Chancha Vía Circuito ×2、Horace Andy《Exclusively》、Don Carlos & Gold、Milton Henry、Sugar Minott ×2、The Viceroys、Lacksley Castell、Johnny Osbourne《Nightfall》。mc28（`add-20261023-mc28`，冷冽：歐陸自由即興＋mc34 日本即興）：Evan Parker 獨奏 ×5、Han Bennink ×2、Bailey & Bennink、ICP 三重奏、《Topography of the Lungs》、Company ×2、Bailey《Lot 74》、Tony Oxley、SME、Barry Guy、John Butcher、Alterations、Phil Minton、Paul Lytton、Mengelberg《Impromptus》、吉田アミ《Tiger Thrush》。
+- **策展→研究汰換**：ml32 策展 31、研究汰 15（乾淨／crisp、boogaloo 中速、80s 中後期電子鼓、刻意乾的復古錄音、近彙整重混）→ 16；經典 bolero 池中全判輕，主場景見底，ml32 不再派。mc28 策展 44、主線汰 5（讓並行的 mc33 Ikue Mori 2 張、x 貼邊 3）、研究汰 17（實為現場 5、稀疏低音量判靜 9、三軸皆疑 3）→ 22；Globe Unity／ICP Orchestra 大編制 0 張。
+- **主線審稿**：ml32 改 3 處（超出來源的「每一拍都是真人打的」改年份事實、單源樂評對照句拿掉、後設說明收短；hook 同步）；mc28 改 7 處（單源評價句刪 4、重複句刪 1、補研究稿事實 2）。
+- **上線**：card_catalog 16＋22、KV 16＋23 鍵回讀逐字一致、試聽 16＋1 ready（Incus／FMP 幾乎不在 Apple）、seed +38、published gate 兩批 0 error；封面 CAA 29、Apple 2、Discogs 7（已登錄 registry），live-check 全 200。上線前對 origin 65 個分支 seed＋卡單去重 0 撞。
+- **情緒評分**：`score-ml32`、`score-mc28`。**ml32 落恍惚 16/16（100%）**；**mc28 落冷冽 19/22（86%）**，出格 Mengelberg《Impromptus》判靜落平靜、《Topography of the Lungs》與 Parker《Process and Reality》判重落暴躁。八格（併 main 後）：恍惚 1,200、冷冽 1,402、頹靡 1,370。
+- **類型樹**：`genre-l3-artist-map.json` 補 6 張（Sinseers、Carla Morrison、Lacksley Castell、ICP 三重奏、Minton、吉田アミ），38/38 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 18 個掛名＋3 個合掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{ml32,mc28}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml32,mc28}.json`、`master-override-mc28.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml32,mc28}/`、`onboarding-manifest-add-20261023-{ml32,mc28}-20261023.json`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261023-{ml32,mc28}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 39/39；`build-card-moods` 錨點 104/104、seed 20,857。
+
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 6 輪 mc33／ml34：glitch＋RIO 28 張、暖吉他殘響 ambient pop 12 張上線，落格 20/28、11/12
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 6 輪，本工作階段負責 mc33、ml34（評分照 10-23 體感標準）。mc33（`add-20261023-mc33`，冷冽：glitch／microsound＋mc35 RIO 尖細那半）：Cyclo.《Cyclo.》、Farmers Manual ×3、Hecker ×3、刀根康尚 ×2、EVOL、Rashad Becker、Amacher、Gescom、Schmickler、Henry Cow《Western Culture》、Art Bears《The World as It Is Today》、Étron Fou Leloublan ×3、Thinking Plague《In Extremis》、Cassiber ×3、Skeleton Crew《Learn To Talk》、5uu's ×2、Doctor Nerve、Yugen。ml34（`add-20261023-ml34`，恍惚：CJK 抒情 ballad＋ml36 Balearic／ambient pop）：Lily Chou-Chou《呼吸》、Manual ×3、Hammock ×2、Robin Guthrie ×3、Sonic Boom《All Things Being Equal》、Schnauss & Peters《Underrated Silence》、Engineers。
+- **策展→研究汰換**：mc33 策展 50、主線汰 4、研究汰 18（飄浮／長篇判靜、厚低頻判重、旋律或滑稽判暖）→ 28。ml34 策展 22（池中 CJK 抒情全判輕、真 Balearic 判輕，主場景只收 2）、研究汰 10（乾淨製作、推進鼓、輓歌字眼）→ 12；**ml34、ml36 不再派**，mc35 併入 mc33。
+- **主線審稿**：mc33 改 3 處（Fennesz 單源評價刪換聲音事實、刀根「源頭文件」評價句刪、Henry Cow 樂評引語改直述）；ml34 改 1 處（Engineers hook 的樂評比喻改直述，hooks／input／out 三層同步）；事實層未動。
+- **上線**：card_catalog 28＋12、KV 28＋13 鍵回讀逐字一致、試聽 20＋11 ready、seed +40、published gate 兩批 0 error；封面 CAA 38＋Apple 2（Cyclo. CAA 500、MP3 Deviations CAA 404），live-check 全 200。上線前對 origin 各分支 seed 與卡單去重 0 撞。
+- **情緒評分**：`score-mc33`、`score-ml34`。**mc33 落冷冽 20/28（71%）**：全判躁、全判冷，出格 8 張全是質地判重落暴躁（刀根 ×2、EVOL、Hecker《Acid》、Cassiber ×3、Thinking Plague）。**ml34 落恍惚 11/12（92%）**，出格 Manual《Confluence》z −0.4 落頹靡。八格：冷冽 1,383、恍惚 1,184、頹靡 1,370。
+- **類型樹**：子曲風預熱 40/40；`genre-l3-artist-map.json` 補 EVOL → `electronic/idm/glitch`、Amacher → `electronic/noise/concrete`，40/40 落位；抽卡封面重建。台灣流行卡 0，`tw-pop-artists.json` 不動。
+- **藝人介紹**：未切（並行規矩）；新藝人 24 個掛名列在兩批 rulings.md 末尾（mc33 16、ml34 8）。
+- **主要檔案**：`batch-progress/add-20261023-{mc33,ml34}/`、`batch-progress/mood-cells-20261022/{curation,master}-{mc33,ml34}.json`、`master-override-mc33.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{mc33,ml34}/`、`onboarding-manifest-add-20261023-{mc33,ml34}-20261023.json`、`desc-tools/batches/*/add-20261023-{mc33,ml34}*`、seed／試聽地圖／card-preview-status／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 41 鍵回讀一致；build-card-moods 錨點 104/104 同格。
+
+### 2026-10-23｜dip-vinyl-shop｜Goodie Mob《Still Standing》恍惚→暴躁
+
+- **改動**：店主指定。(2.9, 0.9, 0.4) → (3.3, 0.9, −0.5)。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：`build-card-moods.mjs` 錨點 104/104 同格。
+
+### 2026-10-23｜dip-vinyl-shop｜頻率選歌／類型挑片結果頁的試聽鈕、分享鈕沒反應
+
+- **改動**：店主回報頻率選歌結果頁試聽鈕按了沒反應。原因：`[data-gp-action="preview"]`／`share` 只在 `#artistContent`（猜你喜歡）與心情選歌接了點擊，類型挑片（`#genreContent`）與頻率選歌（`#tuneModal`）共用 showGpResult 卻沒接。兩處補上；`_gpSetPreviewIcon` 改找開著的 modal 裡那顆鈕（別的分頁結果頁留在 DOM 時，全域第一顆不一定是畫面上的）。
+- **主要檔案**：`index.html`
+- **驗證**：本機 Playwright：頻率選歌抽一張 → 按試聽鈕 → `DipPlayer.playAlbum` 收到手動（auto=false）呼叫；無頁面錯誤。
+
+### 2026-10-23｜dip-vinyl-shop｜串流優先：元素模式試聽被搶走也會自動關網頁聲音
+
+- **改動**：店主「玩家有使用串流就優先停止網頁聲音」。原本只有 Web Audio 路徑被系統中斷（iOS interrupted／Android suspended）會判定「玩家去聽串流」並把自動試聽記成關；`<audio>` 元素後備路徑被串流搶走時（系統暫停元素）沒偵測。補上 `onpause`：畫面在前景、不是我們自己停的就走同一條 `revokeAutoplayByInterruption`（含 4 秒手動播放寬限）。我們自己停、換張、切背景都先清旗標或換 token，不會誤判。`dip-player.js?v=51`。
+- **限制**：網頁沒有 API 能在出聲前知道玩家正在聽串流，預設開啟後第一次抽卡可能打斷一次串流；串流搶回來時網頁就閉嘴並記住關。
+- **主要檔案**：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`、`shop-all.html`
+- **驗證**：`node --check`；逐一核對其他 `previewAudio.pause()` 呼叫點都在新 requestId 之後或先清 `previewElementActive`。
+
+### 2026-10-23｜dip-vinyl-shop｜自動試聽預設改開啟
+
+- **改動**：店主「預設聲音改開啟」。`dip-player.js` 沒表態過的裝置（localStorage 沒記 on/off）由「當成關」改成「當成開」：`autoplayPreference()` 回 'on'、載入時即有自動試聽授權；按過關閉或偵測到串流搶焦點仍記成 'off' 並保留。已經記成 'off' 的裝置不受影響（要自己按一下開）。四頁 `dip-player.js?v=50`。
+- **主要檔案**：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`、`shop-all.html`
+- **驗證**：本機 Playwright 清空儲存載入首頁：偏好 on、頂欄 🔊；按一下變 🔇 且重新整理後維持關；無頁面錯誤。
+
+### 2026-10-23｜dip-vinyl-shop｜《Carmina Burana》(Jochum) 沸騰→暴躁
+
+- **改動**：店主同意比照《Axion Esti》改暴躁：(3.6, 1.0, −0.5)。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：`build-card-moods.mjs` 錨點 104/104 同格。
+
+### 2026-10-23｜dip-vinyl-shop｜《Axion Esti》沸騰→暴躁
+
+- **改動**：店主指定改暴躁：(3.5, 1.0, −0.6)。《Carmina Burana》維持沸騰。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：`build-card-moods.mjs` 錨點 104/104 同格。
+
+### 2026-10-23｜dip-vinyl-shop｜Theodorakis《Axion Esti》放鬆→沸騰、Jochum《Carmina Burana》雀躍→沸騰
+
+- **改動**：店主指《Axion Esti》壓迫感很強、不是放鬆。改 (3.5, 1.0, 0.2) 沸騰；同形狀的《Carmina Burana》(Jochum) 質地改重、落沸騰。規則記進 `batch-progress/mood-axes/rulings.md`：大編制合唱／清唱劇的壓迫音牆算重。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：`build-card-moods.mjs` 錨點 104/104 同格。
+
 ### 2026-10-23｜dip-vinyl-shop｜頻率選歌：FINE 改一格一張、SCAN／FINE 撥桿動畫、新增搜尋列
 
 - **改動**：店主反映 FINE 沒有「小範圍慢慢掃」的感覺。FINE 改成每撥一格（拖 14px／滾一下／方向鍵）就跳到這條軸上附近的下一張，輪子跟著咔一格、有咔噠聲；SCAN 照舊連續掃。開關撥桿照原稿槽位做三格（上／中／下，`tune/switch.png`，SCAN 在上、FINE 在下）。新增搜尋列模組（`tune/panel-search.png`，配色與螺絲取自原稿，`scripts/build-tune-sprites.py` 產生）：輸入藝人或專輯，清單從星圖底部浮出，選了之後三顆輪子依序轉過去（能量→質地→色溫），停在那張並試聽。面板改成貼底、搜尋列在最上；頻率選歌開著時頁面底色改成面板深灰 `#2c3037`。店主看預覽後再改：手機直放時面板放大塞滿寬度（星圖讓出高度，最小 200px）；FREQUENCY 的兩顆螺絲疊上與輪子模組同大小的螺絲（`tune/screw.png`）。店主回報點搜尋列跳出鍵盤時整台版面變成左右並排：鍵盤讓 100dvh 縮、直式被判成橫式。改用 JS 記的視窗高 `--tvh`（搜尋框有焦點時不更新），橫式並排另加 `min-width:560px`。`dip-tune.js?v=11`。店主再報 A Love Supreme、My Favourite Things 找不到：頻率選歌只吃 `pool.cards`，頂級牌（殿堂 692、遺珠 109、異端 116，共 917 張）放在 `pool.apex`，從上線起就沒進星圖；改成一併載入，結果頁帶 `_hall/_pearl/_heresy` 照頂級卡樣式顯示。搜尋英式拼法照美式比（favourite＝favorite）。`dip-tune.js?v=12`。店主再要「下面的面板整合成一個像素面板、拿掉抽屜讓星圖變大」：`scripts/build-tune-panel.py` 從原稿拼出 `tune/panel-all.png`（輪子稿的外框與側軌、FREQUENCY 內容抽掉滾筒窗中段 195px 讓出就這張、欄間溝轉橫當分隔、名牌吊在分隔槽上、搜尋列畫在面板上；同一比例不縮放），所有活件位置改成這張的百分比；舊的 `panel-search.png` 與 FREQUENCY 補螺絲撤掉。389×652 星圖 238→274px。`dip-tune.js?v=13`。

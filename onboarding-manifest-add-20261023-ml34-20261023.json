@@ -1,0 +1,897 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-ml34",
+ "batchNote": "薄細項策展線（add-20261023-ml34）",
+ "createdAt": "2026-10-23T11:23:37Z",
+ "albums": [
+  {
+   "artist": "Lily Chou-Chou",
+   "album": "呼吸",
+   "identity": {
+    "releaseType": "Compilation",
+    "identitySource": "pinned",
+    "rgMbid": "ede29a8a-d53d-3fa5-a16b-fcb42cc8123e",
+    "upc": "",
+    "aliasesChecked": true,
+    "exceptionReason": "MB secondary-type: Soundtrack",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/ede29a8a-d53d-3fa5-a16b-fcb42cc8123e",
+     "https://coverartarchive.org/release-group/ede29a8a-d53d-3fa5-a16b-fcb42cc8123e/front",
+     "https://music.apple.com/us/album/kokyuu/1297925080"
+    ],
+    "aliasReview": "華語／日語／韓語抒情 ballad 厚編曲：岩井俊二《青春電幻物語》裡虛構歌手（Salyu 演唱、小林武史製作）的全長專輯：Cocteau 式吉他霧裹住清楚的慢歌旋律，是日語抒情 dream pop 化的代表｜⚠ MB 標 Soundtrack 次類型（電影衍生的虛構歌手正規專輯），主線決定收不收；色溫是空靈偏感傷，z 可能被評在 0.2–0.5｜MB release-group ede29a8a-d53d-3fa5-a16b-fcb42cc8123e：title「呼吸」、Album＋Soundtrack、first-release-date 2001-10-17、artist-credit「Lily Chou‐Chou」。證據：https://musicbrainz.org/release-group/ede29a8a-d53d-3fa5-a16b-fcb42cc8123e https://coverartarchive.org/release-group/ede29a8a-d53d-3fa5-a16b-fcb42cc8123e/front https://music.apple.com/us/album/kokyuu/1297925080",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ede29a8a-d53d-3fa5-a16b-fcb42cc8123e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 317589,
+    "source": "manual:ambient-pop-rubric",
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 317589）；主線：暖的吉他殘響 ambient pop／抒情：旋律清楚、無攻擊性→硬蕊2；冷門照 Last.fm；經典 4：電影《All About Lily Chou-Chou》歌手專輯，cult 地位"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "虛構的歌手，在電影上映約一週半後出了真唱片。岩井俊二的電影《リリイ・シュシュのすべて》裡的 Lily Chou-Chou，現實中由出道前的 Salyu 演唱。她的歌從 2000 年 4 月的單曲〈Glide〉開始釋出，專輯九首全由小林武史作曲。2001 年 10 月 17 日交給 Toshiba EMI 發行，聲音是空靈的 dream pop：吉他直上天際，鼓繞著圈打轉，Salyu 想把聲音唱得像在吹管樂器。2003 年，〈回復する傷〉被用進《追殺比爾》第一集。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Koky%C5%AB_(album)",
+     "https://en.wikipedia.org/wiki/Salyu",
+     "https://en.wikipedia.org/wiki/Lily_Chou-Chou",
+     "https://thissidejapan.substack.com/p/issue-60-breathe",
+     "https://musicbrainz.org/release-group/ede29a8a-d53d-3fa5-a16b-fcb42cc8123e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6a/86/fa/6a86faf6-79ce-c2cd-165c-335c1fd8a784/mzaf_9327064591981343216.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "appleCollectionId": "1297925080",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1297925080「Lily Chou-Chou《Kokyuu》」：Apple jp《Kokyuu》（呼吸 羅馬拼音）9 軌＝MB 原盤 9 首，取第 1 軌〈アラベスク〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Manual",
+   "album": "Drowned in Light",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "cccf57b8-7773-4f39-b5cb-e7baf7e6cd5c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Balearic／ambient pop 暖盤：Manual 最濃的一張：shoegaze 化的吉他牆與合成墊，霧厚但旋律清楚，延續 Azure Vista 的暖色海景｜策展無疑點｜MB release-group cccf57b8-7773-4f39-b5cb-e7baf7e6cd5c：title「Drowned in Light」、Album、first-release-date 2010-04-19、artist-credit「Manual」。證據：https://musicbrainz.org/release-group/cccf57b8-7773-4f39-b5cb-e7baf7e6cd5c https://coverartarchive.org/release-group/cccf57b8-7773-4f39-b5cb-e7baf7e6cd5c/front https://music.apple.com/us/album/drowned-in-light/355975262",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cccf57b8-7773-4f39-b5cb-e7baf7e6cd5c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 10385,
+    "source": "manual:ambient-pop-rubric",
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 10385）；主線：暖的吉他殘響 ambient pop／抒情：旋律清楚、無攻擊性→硬蕊2；冷門照 Last.fm"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "前段幾乎聽不到鼓，到〈Blood Run〉才踩出結實鼓點。丹麥奧登塞的 Jonas Munk 用 Manual 這個名字發片，製作與作曲全掛在他一人名下。這回他回到類比器材，以鼓機循環配上電吉他、木吉他、十二弦與佛朗明哥吉他，全浸在類比合成器裡。多數曲子緩慢朦朧，泡在大量殘響中，根在 dream pop 與 shoegaze；到了〈Issa〉，腳步同樣加快。專輯在 2010 年 4 月 19 日問世，原版廠牌是 Make Mine Music。",
+    "sourceUrls": [
+     "https://darla.com/collections/mp3s/products/manual-drowned-in-light",
+     "https://www.discogs.com/release/2228964",
+     "https://exclaim.ca/music/article/manual_-_drowned_in_light",
+     "https://www.discogs.com/master/241645",
+     "https://en.wikipedia.org/wiki/Manual_(musician)",
+     "https://musicbrainz.org/release-group/cccf57b8-7773-4f39-b5cb-e7baf7e6cd5c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/24/a8/de/24a8de69-9a25-cd4f-161c-6d97faa26ae8/mzaf_11307704890346344889.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "appleCollectionId": "355975262",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 355975262「Manual《Drowned In Light》」：曲目 11/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Warm Circuits〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Manual",
+   "album": "Confluence",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0a0df39f-a5b7-32df-bd4b-6c8545888803",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Balearic／ambient pop 暖盤：Manual 後期長曲盤：層層吉他殘響與合成墊鋪成暖霧，旋律線清楚｜策展無疑點｜MB release-group 0a0df39f-a5b7-32df-bd4b-6c8545888803：title「Confluence」、Album、first-release-date 2008-10-28、artist-credit「Manual」。證據：https://musicbrainz.org/release-group/0a0df39f-a5b7-32df-bd4b-6c8545888803 https://coverartarchive.org/release-group/0a0df39f-a5b7-32df-bd4b-6c8545888803/front https://music.apple.com/us/album/confluence/294884913",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0a0df39f-a5b7-32df-bd4b-6c8545888803/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 14995,
+    "source": "manual:ambient-pop-rubric",
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 14995）；主線：暖的吉他殘響 ambient pop／抒情：旋律清楚、無攻擊性→硬蕊2；冷門照 Last.fm"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "剛發行時乏人注意，多年後串流播了一百萬次以上。2006 到 2008 年間，Manual 背後的 Jonas Munk 獨自錄音、製作，完成他第三張純氛圍專輯。全盤無鼓、無拍號，聲音幾乎全是處理過的吉他，鋪成持續音的瀑布，偶爾冒出鋼琴。標題曲與〈Oracle Night〉都超過 13 分鐘。2008 年 10 月 28 日由 Darla 推出，共八首，質地溫暖有機，色調卻出奇地暗、極簡。2025 年它首度做成黑膠。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Manual_(musician)",
+     "https://www.discogs.com/release/1503155",
+     "https://darla.com/products/manual-confluence",
+     "https://pitchfork.com/features/interview/5875-manual/",
+     "https://musicbrainz.org/release-group/0a0df39f-a5b7-32df-bd4b-6c8545888803"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/17/08/6d/17086d10-3cc5-9fc8-a6a0-257af8a1d228/mzaf_5612718908646536499.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "appleCollectionId": "294884913",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 294884913「Manual《Confluence》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Blue Stone〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Manual with Jess Kahr",
+   "album": "Bliss Out, Volume 20: The North Shore",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "07862ec9-60d0-3fa5-98f8-75c2a5dc3758",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Balearic／ambient pop 暖盤：Darla《Bliss Out》系列第 20 集（Manual 與 Jess Kahr）：北岸海景主題的吉他霧 ambient pop，溫而霧｜⚠ MB 署名「Manual with Jess Kahr」；無 iTunes 條目，封面用 CAA｜MB release-group 07862ec9-60d0-3fa5-98f8-75c2a5dc3758：title「Bliss Out, Volume 20: The North Shore」、Album、first-release-date 2004-03-22、artist-credit「Manual with Jess Kahr」。證據：https://musicbrainz.org/release-group/07862ec9-60d0-3fa5-98f8-75c2a5dc3758 https://coverartarchive.org/release-group/07862ec9-60d0-3fa5-98f8-75c2a5dc3758/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2004,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/07862ec9-60d0-3fa5-98f8-75c2a5dc3758/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 46,
+    "source": "manual:ambient-pop-rubric",
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 46）；主線：暖的吉他殘響 ambient pop／抒情：旋律清楚、無攻擊性→硬蕊2；冷門照 Last.fm"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 2；obscurity=5 但沒有遺珠級證據（listeners 46），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "系列最後一集，交給 Manual 與兒時玩伴。Jess Kahr 八、九歲就和丹麥的 Jonas Munk（Manual）一起玩鍵盤和鼓，後來兩人同組樂團 Limp。Darla 的 Bliss Out 系列從 1996 年起步，第 20 集也是收尾的一集，2004 年 3 月推出，七首約 45 分鐘。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Darla_Records",
+     "https://www.discogs.com/release/295884",
+     "https://darla.com/products/manual-the-north-shore-bliss-out-v-20",
+     "https://darla.com/products/manual-confluence",
+     "https://pitchfork.com/features/interview/5875-manual/",
+     "https://en.wikipedia.org/wiki/Manual_(musician)",
+     "https://musicbrainz.org/release-group/07862ec9-60d0-3fa5-98f8-75c2a5dc3758"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "note": "Apple jp／us 無此盤條目（Darla Bliss Out 系列未上架）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hammock",
+   "album": "Raising Your Voice… Trying to Stop an Echo",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "48ef70f7-a844-3a8d-8660-2961e761ee7e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Balearic／ambient pop 暖盤：Hammock 第二張：吉他殘響牆緩慢鋪展、旋律清楚溫暖，池中《Oblivion Hymns》落恍惚｜⚠ 色溫池中同人 z 0.3，貼邊風險｜MB release-group 48ef70f7-a844-3a8d-8660-2961e761ee7e：title「Raising Your Voice… Trying to Stop an Echo」、Album、first-release-date 2006-11-20、artist-credit「Hammock」。證據：https://musicbrainz.org/release-group/48ef70f7-a844-3a8d-8660-2961e761ee7e https://coverartarchive.org/release-group/48ef70f7-a844-3a8d-8660-2961e761ee7e/front https://music.apple.com/us/album/raising-your-voice-trying-to-stop-an-echo/1577259485",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/48ef70f7-a844-3a8d-8660-2961e761ee7e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 341,
+    "source": "manual:ambient-pop-rubric",
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 341）；主線：暖的吉他殘響 ambient pop／抒情：旋律清楚、無攻擊性→硬蕊2；冷門照 Last.fm"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 2；obscurity=5 但沒有遺珠級證據（listeners 341），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "團名來自院子裡的吊床，Byrd 想的是躺著看星星。Common Children 是 Marc Byrd 與 Andrew Thompson 待過的樂團，2001 年解散後，兩人在 Thompson 家的地下室接著錄，成了納許維爾的吉他雙人組 Hammock。2005 年他們自行發行首張《Kenotic》，之後接上 Darla。第二張專輯則在 2006 年 11 月登場，開頭兩首有人聲，其後由吉他、鍵盤與潛流般的打擊疊成一波波聲浪。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Hammock_(band)",
+     "https://www.discogs.com/release/856696",
+     "https://echoes.org/2016/09/22/hammocks-raising-your-voice-trying-to-stop-an-echo-10th-anniversary/",
+     "https://en.wikipedia.org/wiki/Raising_Your_Voice_Trying_to_Stop_an_Echo",
+     "https://pitchfork.com/reviews/albums/11500-maybe-they-will-sing-for-us-tomorrow/",
+     "https://musicbrainz.org/release-group/48ef70f7-a844-3a8d-8660-2961e761ee7e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c7/42/f6/c742f606-6dc7-a48a-b349-ec316d3d38cf/mzaf_10949547039513920446.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "appleCollectionId": "1577254456",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1577254456「Hammock《Raising Your Voice... Trying to Stop an Echo (Deluxe Edition)》」：曲目 18/18 對上 MB 原盤（Apple 共 26 軌），取第 1 軌〈I Can Almost See You〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hammock",
+   "album": "Maybe They Will Sing for Us Tomorrow",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "da6c2eb4-ef4a-325e-9ce5-abc835d5a640",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Balearic／ambient pop 暖盤：Hammock 中期：吉他霧與弦樂墊包覆，慢而溫的 ambient post-rock｜⚠ 同上，z 貼邊風險｜MB release-group da6c2eb4-ef4a-325e-9ce5-abc835d5a640：title「Maybe They Will Sing for Us Tomorrow」、Album、first-release-date 2008-05-05、artist-credit「Hammock」。證據：https://musicbrainz.org/release-group/da6c2eb4-ef4a-325e-9ce5-abc835d5a640 https://coverartarchive.org/release-group/da6c2eb4-ef4a-325e-9ce5-abc835d5a640/front https://music.apple.com/us/album/maybe-they-will-sing-for-us-tomorrow/1577259097",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/da6c2eb4-ef4a-325e-9ce5-abc835d5a640/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 127268,
+    "source": "manual:ambient-pop-rubric",
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 127268）；主線：暖的吉他殘響 ambient pop／抒情：旋律清楚、無攻擊性→硬蕊2；冷門照 Last.fm；經典 4：Hammock 代表作（Last.fm 12 萬聽眾）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Hammock 頭一回登台，是致敬冰島二人組的會後派對。Byrd 與 Thompson 是組成 Hammock 的氛圍二人組；2007 年 8 月 3 日在阿肯色州溫泉城那一場，派對致敬的是 Jónsi & Alex。兩人為那晚寫了新曲，用循環踏板一人分飾多角，這批曲子成了本作的基礎，幾乎是現場一次錄成。2008 年 5 月由 Darla 發行，整體近乎 drone；〈Mono No Aware〉以倒錄聲開場、大提琴收尾。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Maybe_They_Will_Sing_for_Us_Tomorrow",
+     "https://www.discogs.com/release/1314787",
+     "https://en.wikipedia.org/wiki/Hammock_(band)",
+     "https://pitchfork.com/reviews/albums/11500-maybe-they-will-sing-for-us-tomorrow/",
+     "https://www.hammockmusic.com/departure-songs",
+     "https://musicbrainz.org/release-group/da6c2eb4-ef4a-325e-9ce5-abc835d5a640"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c4/2d/99/c42d99fa-8447-cd23-0a24-ff516a5f3367/mzaf_6801616275254323858.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "appleCollectionId": "1577259097",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1577259097「Hammock《Maybe They Will Sing for Us Tomorrow》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Gold Star Mothers〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Robin Guthrie",
+   "album": "Carousel",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "087609e8-41af-4498-890b-680554faf00b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Balearic／ambient pop 暖盤：Cocteau Twins 吉他手的器樂盤：招牌 chorus／殘響吉他霧，旋律明亮溫暖，池中《Continental》落恍惚｜策展無疑點｜MB release-group 087609e8-41af-4498-890b-680554faf00b：title「Carousel」、Album、first-release-date 2009-09-01、artist-credit「Robin Guthrie」。證據：https://musicbrainz.org/release-group/087609e8-41af-4498-890b-680554faf00b https://coverartarchive.org/release-group/087609e8-41af-4498-890b-680554faf00b/front https://music.apple.com/us/album/carousel/324230357",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/087609e8-41af-4498-890b-680554faf00b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 53395,
+    "source": "manual:ambient-pop-rubric",
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 53395）；主線：暖的吉他殘響 ambient pop／抒情：旋律清楚、無攻擊性→硬蕊2；冷門照 Last.fm"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "慢曲合作告一段落，Robin Guthrie 想加點骨架。1962 年生於蘇格蘭 Grangemouth 的他，受的是電工訓練，1980 年共組了 Cocteau Twins。當時他剛和 Harold Budd 做完幾張偏慢的作品，想讓聲音更吵一點。一把吉他接上過載、合唱與延遲效果器，就是他的聲音；整張全是器樂，開場曲底下墊著輕巧的電子打擊。2009 年 9 月 1 日先由 Rocket Girl 在英國發行，美國的 Darla 兩週後跟進。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Robin_Guthrie",
+     "https://musicbrainz.org/release-group/087609e8-41af-4498-890b-680554faf00b",
+     "https://somewherecold.net/2009/09/01/robin-guthrie-carousel-darla-2009/",
+     "https://echoes.org/2009/10/28/robin-guthries-carousel-echoes-nov-cd-of-the-month/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/85/e4/ea/85e4ea76-7a42-234c-51d9-e2c01cef1d04/mzaf_8781680645024082683.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "appleCollectionId": "324230357",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 324230357「Robin Guthrie《Carousel》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Some Sort of Paradise〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Robin Guthrie",
+   "album": "Emeralds",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2e21edd4-cb96-4970-8812-68c17e50376d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Balearic／ambient pop 暖盤：Robin Guthrie 器樂盤：層疊殘響吉他與合成墊，溫暖朦朧的 ambient pop｜策展無疑點｜MB release-group 2e21edd4-cb96-4970-8812-68c17e50376d：title「Emeralds」、Album、first-release-date 2011-05-23、artist-credit「Robin Guthrie」。證據：https://musicbrainz.org/release-group/2e21edd4-cb96-4970-8812-68c17e50376d https://coverartarchive.org/release-group/2e21edd4-cb96-4970-8812-68c17e50376d/front https://music.apple.com/us/album/emeralds/434784879",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2e21edd4-cb96-4970-8812-68c17e50376d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 10317,
+    "source": "manual:ambient-pop-rubric",
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 10317）；主線：暖的吉他殘響 ambient pop／抒情：旋律清楚、無攻擊性→硬蕊2；冷門照 Last.fm"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "吉他手的新作，開場挑大樑的卻是電鋼琴。Robin Guthrie 出身 Cocteau Twins，這回交出十首器樂作品，開場〈Digging for Gold〉由電鋼琴領頭，再混進他的招牌吉他推向光亮的高潮。曲子多在四分鐘上下，浸在殘響與回音裡。他照例把鼓埋進混音，聽來溫暖舒適，只有〈Warmed by the Winter Sun〉偷放了 downtempo 節拍。2011 年 5 月 23 日經英國 Rocket Girl 推出。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/2e21edd4-cb96-4970-8812-68c17e50376d",
+     "https://www.textura.org/reviews/guthrie_emeralds.htm",
+     "https://popmatters.com/145992-robin-guthrie-emeralds-2495972792.html",
+     "https://en.wikipedia.org/wiki/Robin_Guthrie"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e5/ec/ba/e5ecba6b-7c66-4b7f-59d3-80136f7c9012/mzaf_7900460409253637075.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "appleCollectionId": "434784879",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 434784879「Robin Guthrie《Emeralds》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Digging for Gold〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Robin Guthrie",
+   "album": "Fortune",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "18653a8d-3647-4382-b937-d5f2794d1876",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Balearic／ambient pop 暖盤：Robin Guthrie 器樂盤：緩拍與 chorus 吉他霧，旋律清楚｜⚠ z 貼邊風險（感傷）｜MB release-group 18653a8d-3647-4382-b937-d5f2794d1876：title「Fortune」、Album、first-release-date 2012-11-26、artist-credit「Robin Guthrie」。證據：https://musicbrainz.org/release-group/18653a8d-3647-4382-b937-d5f2794d1876 https://coverartarchive.org/release-group/18653a8d-3647-4382-b937-d5f2794d1876/front https://music.apple.com/us/album/fortune/572173429",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/18653a8d-3647-4382-b937-d5f2794d1876/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5709,
+    "source": "manual:ambient-pop-rubric",
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 5709）；主線：暖的吉他殘響 ambient pop／抒情：旋律清楚、無攻擊性→硬蕊2；冷門照 Last.fm"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "壓軸是搖籃曲，延續他那張幫孩子入睡的 EP。他就是共組 Cocteau Twins 的 Robin Guthrie，那張 EP 是 2009 年的《Songs to Help My Children Sleep》。這回同樣是私人作品，吉他疊滿 chorus 與回音。2012 年 11 月 26 日上市，由法國廠牌發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/18653a8d-3647-4382-b937-d5f2794d1876",
+     "https://wajobu.com/tag/fortune/",
+     "https://en.wikipedia.org/wiki/Robin_Guthrie"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/79/64/05/79640520-2c25-a2a7-4949-7bc8072e3d83/mzaf_3184685030015022243.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "appleCollectionId": "572173429",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 572173429「Robin Guthrie《Fortune》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Cadence〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sonic Boom",
+   "album": "All Things Being Equal",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c6502b76-94c3-4461-aedb-9297f22dc06c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Balearic／ambient pop 暖盤：Spacemen 3 的 Sonic Boom 睽違 30 年個人盤：類比合成墊與迷幻人聲的暖霧 ambient pop｜⚠ 池中 Spacemen 3 判冷（z −0.5），本盤較亮，z 有風險｜MB release-group c6502b76-94c3-4461-aedb-9297f22dc06c：title「All Things Being Equal」、Album、first-release-date 2020-06-05、artist-credit「Sonic Boom」。證據：https://musicbrainz.org/release-group/c6502b76-94c3-4461-aedb-9297f22dc06c https://coverartarchive.org/release-group/c6502b76-94c3-4461-aedb-9297f22dc06c/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c6502b76-94c3-4461-aedb-9297f22dc06c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 12396,
+    "source": "manual:ambient-pop-rubric",
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 12396）；主線：暖的吉他殘響 ambient pop／抒情：旋律清楚、無攻擊性→硬蕊2；冷門照 Last.fm"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "隔了約 30 年，Sonic Boom 才出第二張個人專輯。上一張個人專輯是 1990 年的《Spectrum》；他本名 Peter Kember，1965 年生於 Rugby，共創迷幻樂團 Spacemen 3。2015 年起他用模組合成器與音序器做單音 jam。Stereolab 的 Tim Gane 建議出器樂版，他仍留下人聲，認為人聲傳得出器樂難傳的情感，也想證明合成器能溫暖、有感情。新作 2020 年 6 月 5 日推出，由 Carpark 發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/All_Things_Being_Equal_(album)",
+     "https://en.wikipedia.org/wiki/Sonic_Boom_(musician)",
+     "https://store.carparkrecords.com/products/cak142-sonic-boom-all-things-being-equal",
+     "https://americansongwriter.com/sonic-boom-returns-from-20-year-hiatus-with-inspiring-and-vibey-new-record/?nb=1",
+     "https://stereogum.com/2078974/sonic-boom-the-way-that-you-live/music",
+     "https://musicbrainz.org/release-group/c6502b76-94c3-4461-aedb-9297f22dc06c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/92/80/ec/9280eca4-e258-8ff5-5310-43cc09e94aea/mzaf_16510870013599786693.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "appleCollectionId": "1583606505",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1583606505「Sonic Boom《All Things Being Equal》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Just Imagine〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ulrich Schnauss & Mark Peters",
+   "album": "Underrated Silence",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d53e8d3a-ce80-4c00-8150-5d6b8ac6cab3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Balearic／ambient pop 暖盤：Ulrich Schnauss 與 Engineers 吉他手 Mark Peters 合作：吉他殘響與合成墊的暖霧 ambient｜策展無疑點｜MB release-group d53e8d3a-ce80-4c00-8150-5d6b8ac6cab3：title「Underrated Silence」、Album、first-release-date 2012-02-03、artist-credit「Ulrich Schnauss & Mark Peters」。證據：https://musicbrainz.org/release-group/d53e8d3a-ce80-4c00-8150-5d6b8ac6cab3 https://coverartarchive.org/release-group/d53e8d3a-ce80-4c00-8150-5d6b8ac6cab3/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d53e8d3a-ce80-4c00-8150-5d6b8ac6cab3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 10387,
+    "source": "manual:ambient-pop-rubric",
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 10387）；主線：暖的吉他殘響 ambient pop／抒情：旋律清楚、無攻擊性→硬蕊2；冷門照 Last.fm"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一個在約克、一個在倫敦，分頭製作與混音。合成器與鋼琴歸 Ulrich Schnauss，吉他與貝斯歸 Mark Peters，前者在倫敦、後者在約克的家中。Peters 出自樂團 Engineers，Schnauss 替該團製作 2010 年的《In Praise of More》之後，兩人開始合作。Schnauss 想把 shoegaze 的美學帶進電子音樂的脈絡。這張合作專輯 2012 年 2 月 3 日發行，廠牌是 Bureau B。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Underrated_Silence",
+     "https://en.wikipedia.org/wiki/Ulrich_Schnauss",
+     "https://www.drownedinsound.org/archive-album-review-ulrich-schnauss-and-mark-peters-underrated-silence-4144386/",
+     "https://www.piccadillyrecords.com/80435/Ulrich-Schnauss-Mark-Peters-Underrated-Silence-Bureau-B",
+     "https://www.astrangelyisolatedplace.com/blog/tag/Mark+Peters",
+     "https://musicbrainz.org/release-group/d53e8d3a-ce80-4c00-8150-5d6b8ac6cab3"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d2/32/03/d2320395-f9ef-fc37-8fc5-c99585e99256/mzaf_16216534127456007612.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "appleCollectionId": "1184941172",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1184941172「Ulrich Schnauss & Mark Peters《Underrated Silence》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈The Messiah Is Falling〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Engineers",
+   "album": "Engineers",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "729dbc7d-9a80-357a-b61d-98f13424fce4",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Balearic／ambient pop 暖盤：Engineers 首張：慢板 dream pop 吉他牆與合成墊，霧厚旋律清楚｜⚠ ml2 已提《Three Fact Fader》；z 貼邊風險｜MB release-group 729dbc7d-9a80-357a-b61d-98f13424fce4：title「Engineers」、Album、first-release-date 2005-03-07、artist-credit「Engineers」。證據：https://musicbrainz.org/release-group/729dbc7d-9a80-357a-b61d-98f13424fce4 https://coverartarchive.org/release-group/729dbc7d-9a80-357a-b61d-98f13424fce4/front",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 2005,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/729dbc7d-9a80-357a-b61d-98f13424fce4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 28104,
+    "source": "manual:ambient-pop-rubric",
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 28104）；主線：暖的吉他殘響 ambient pop／抒情：旋律清楚、無攻擊性→硬蕊2；冷門照 Last.fm"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "〈Home〉以風琴、原音吉他與合唱起頭，隨即沉進大片濕潤殘響。Echo 廠牌在 2004 年簽下 Engineers，這支四人組 2003 年才在倫敦成軍。曲中的吉他、鍵盤與弦樂常混成閃爍的一片，幾乎每首都緩慢堆疊，大量殘響下旋律仍清楚。同名首張 2005 年 3 月 7 日面世，〈Home〉與〈Forgiveness〉另請 Kevin Bacon 與 Jonathan Quarmby 製作。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Engineers_(band)",
+     "https://www.bbc.co.uk/music/reviews/5g3n",
+     "https://en.wikipedia.org/wiki/Engineers_(Engineers_album)",
+     "https://pitchfork.com/reviews/albums/2929-engineers/",
+     "https://musicbrainz.org/release-group/729dbc7d-9a80-357a-b61d-98f13424fce4"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/90/28/00/9028004f-9d92-fbdc-3675-189285553908/mzaf_14816670654771397738.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:37Z",
+    "appleCollectionId": "1438744392",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1438744392「Engineers《Engineers》」：曲目 11/13 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Home〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

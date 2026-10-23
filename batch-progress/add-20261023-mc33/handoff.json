@@ -1,0 +1,34 @@
+{
+ "batch": "add-20261023-mc33",
+ "cards": 28,
+ "written": {
+  "cardCatalog": 28,
+  "kvKeys": 28,
+  "seedRows": 28,
+  "previewReady": 20,
+  "previewUnavailable": 8
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 28,
+  "changed": [
+   "desc2:Farmers Manual|fsck",
+   "desc2:Yasunao Tone|Solo for Wounded CD",
+   "desc2:Henry Cow|Western Culture"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "prepareGate": "0 error",
+  "publishedGate": "0 error"
+ },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "無"
+ }
+}
