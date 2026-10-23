@@ -58,3 +58,27 @@
 - 20138　Kenny Lattimore《From the Soul of Man》：維基稱樂評見『ballads and upbeat grooves』，〈Days Like This〉有 Masters at Work 舞曲混音；日期維基 9/8 對 MB 10/20 並列；策展稱〈Days Like This〉為翻唱，查無來源。存疑（輕）。
 - 20139　Kenny Lattimore《Weekend》：自述『fun, straight-up R&B』、派對快歌、Battlecat／Saadiq 製作、〈Rapture〉貝斯線。moodGuess 存疑（強），建議汰換。
 - 20140　全組共同：AllMusic 回 403（評語取自維基轉述）；WebSearch 用 2 次；樂評無一使用陰暗／冷峻／憂鬱字眼。九張身分、年份、廠牌皆與卡單相符，無推翻。
+
+## 研究 e 組
+- 20161　Raheem DeVaughn《Love Behind the Melody》：PopMatters 8/10 評語指『mellow midtempo suites』（Marvin《I Want You》式假音），明確快歌僅〈Energy〉〈Friday〉（約 2–3 首／17 首含 3 個過門），Empty 合成器『buzzing』偏現代亮；SoulTracks 批缺變化、無陰暗字眼。moodGuess 輕度存疑（y 貼線）。Grammy 只寫提名。
+- 20162　Calvin Richardson《2:35 PM》：Soul Express／PopMatters 一致指向風琴＋吉他＋擊掌的中板『鄉土 Stax』，慢歌僅〈More Than a Woman〉〈Not Like This〉等，PopMatters 稱比首作 less moody。moodGuess 存疑（中強），建議汰換。〈Keep On Pushin'〉製作歸屬兩源互衝，facts 不寫。
+- 20163　Heather Headley《This Is Who I Am》：Windy City Times『ballads, funky tracks and dance numbers』，兩支單曲皆進舞曲榜前五，SoulTracks『churchy』『joyous』，策展層稱〈He Is〉為慢板與來源不符。moodGuess 存疑（中），建議汰換。
+- 20164　Marsha Ambrosius《Late Nights & Early Mornings》：SoulTracks『mid-tempo groove』『sweet and dreamy』『bittersweet』，Ambrosius 自述 sensual/seductive；Slant『drab』指單調非陰暗；缺低頻殘響直接證據，〈Far Away〉7 分多。輕度，不列存疑。Floetry 銷量單源。
+- 20165　Glenn Lewis《World Outside My Window》：BBC『rarely rises above a languorous pace』、〈One More Day〉為少數快歌，Larry Gold 弦樂在 5 首（Discogs 逐軌），SoulTracks『lazy beat』『Moog、cello』。支持原判，不存疑。Juno 說法兩源衝突，取 Wikipedia。
+- 20166　Frank McComb《Love Stories》：Discogs 逐項樂器（Rhodes／Yamaha C7／Moog Prodigy／synth bass）、6 首長達 5–7 分、PopMatters『laid back neo-70s moog groove』；缺逐曲 tempo、無弦樂證據。輕度存疑。錄音年 1998（Discogs）對 1999（Wikipedia）衝突，不寫年份；勿稱出道作（MoJazz 更早錄音被擱置）。
+- 20167　inc.《no world》：Pitchfork 用 velvet／Quiet Storm（暖），也用 grey guitars、cavernous、mystery、Cocteau Twins／This Mortal Coil；〈The Place〉〈5 Days〉有 trap 碎拍；《衛報》對前一張 EP 用 sepulchral／funereal。moodGuess 存疑（z 暖度），恐落頹靡而非恍惚。
+- 20168　JMSN《Velvet》：沒有任何專文評論可查（AllMusic／Pitchfork／RYM／Bandcamp／Genius 皆擋或無頁），只有 Discogs 一人包辦、Apple 14 首／1 小時 3 分、單曲名；status thin，聲音完全無法驗證。建議汰換（候補另補）或先試聽。
+- 20169　Ari Lennox《age/sex/location》：Pitchfork『groovy, upbeat』、Rolling Stone『brighter, full-on thumper』『bounce』『swinging』，慢歌僅〈Stop By〉〈Queen Space〉等；Vulture『hazy beats』偏暖。moodGuess 存疑（中），中快板估近半。
+- 20170　全組共同：身分、年份、廠牌九張皆與卡單相符；AllMusic 全程 403、Slant Cloudflare、Pitchfork（inc.、Ari）改用 https 可讀；WebSearch 用 3 次。無樂評使用陰暗／冷峻字眼，唯 inc.（grey／cavernous）與其前作 EP（sepulchral）例外。
+
+
+## 主線：研究後汰換（不佔條號）
+- 研究層聲音與 moodGuess 不符，直接汰 17（卡單、研究稿、`pick.json` 同步移除，45 → 28）：
+  - 中快板／new jack swing 占半數以上、或硬拍取樣 hip-hop soul（判躁／判輕風險）：Intro《Intro》（前半 new jack）、Men of Vizion《Personal》（bouncy production）、Brownstone《From the Bottom Up》（放克律動交替）、Aaron Hall《The Truth》（Shocklee 製作、快慢各半）、Case《Case》（James Brown／Schoolly D 硬拍取樣）、Kenny Lattimore《Weekend》（派對快歌）、Teddy Pendergrass《A Little More Magic》（new jack、Discogs Electronic／Disco）、Freddie Jackson《Time for Love》（funk／hip-hop）、Heather Headley《This Is Who I Am》（舞曲榜單曲、dance numbers）、Ari Lennox《age/sex/location》（groovy, upbeat；池中同人 y 0.7 貼邊）。
+  - 乾淨數位／聲部分明（判輕）：Changing Faces《All Day All Night》（R. Kelly 稀疏鼓機、smooth urban）、Keith Washington《KW》（high-tech production）、Will Downing《Invitation Only》（smooth jazz）、《All the Man You Need》（neo-soul 乾拍、曲短）、Calvin Richardson《2:35 PM》（中板鄉土 Stax、聲部乾實）。
+  - 色溫判冷：inc.《no world》（grey guitars、cavernous、比 Cocteau Twins；研究稿陰冷字眼的 alt R&B 落頹靡先例）。
+  - 無聲音來源：JMSN《Velvet》（thin）。
+- 候補 7 張同樣是中快板／乾淨製作風險（策展層自己標的），不補位；照實上架 28。
+- 留下但存疑、交評分裁定：Case《Personal Conversation》、Dave Hollister《Ghetto Hymns》、Gerald Levert《Love & Consequences》、Chanté Moore《This Moment Is Mine》、Regina Belle《Passion》《Reachin' Back》（合成器鼓機）、Will Downing《Love's the Place to Be》（中板）——慢歌為主、quiet storm 歌手池中同人 y 0.6–0.9 落格。
+- 研究推翻照研究稿：Brownstone《Still Climbing》美國首發 1997-06-23（MB 1996-12 為日本版），flag 結案、年份 1997 不變；Angela Winbush 同名作盤面確印「Àngela Winbush」，卡用常用拼法、queryAlias 留原題；Lalah Hathaway《Outrun the Sky》廠牌改 Mesa/Bluemoon；Frank McComb《Love Stories》是 Columbia 首作、不是出道作。
+- qa-batch research：28 張 key 一致、全過。
