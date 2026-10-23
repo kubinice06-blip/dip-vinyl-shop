@@ -15,3 +15,11 @@
 - **MB flag**：P.M. Dawn《The Bliss Album…?》MB 首發 1992（宣傳／早發條目），取原盤正式發行 1993；Q-Tip《Kamaal the Abstract》MB 首發 2001 為宣傳片，取 2009 正式發行。
 - `genres` 一律 `hiphop` 起頭。
 - 研究層每支 WebSearch ≤3；facts 必含 2–3 條聲音事實；與 moodGuess 不符的標「moodGuess 存疑」——**特別是中速以上 boom bap、乾淨現場樂團、明亮 G-funk synth、陰暗 screwed 氣氛**。
+
+## 研究 a 組
+- **15201** Liberation 年份：MusicBrainz 免費數位版 2006-12-31、CD 2007-03-20；Wikipedia 稱免費下載始於 2007 年初。卡單 2006 照 MB 保留，主線可改 2007。status thin（聲音面只有三份評論摘要，無速度／鼓聲證據）。Turntable Lab 寫 Monk Hughs 製作，與他源衝突，不採。
+- **15202** Innocent Country（2015）moodGuess 存疑：策展層的「爵士鋼琴、dusty 鼓」查無來源，AllMusic／Fantano 皆把爵士鋼琴與暖節奏當成續作相對首作的改變；首作被描述為斷裂的採樣切碎、較實驗超現實。本張與 Innocent Country 2 的 MB 掛名不一致（前者 Quelle Chris、後者 & Chris Keys），首作實為合作專輯，建議主線知悉。
+- **15203** Ladybug Mecca moodGuess 存疑：Exclaim! 描述含搖滾、流行、電子節拍、森巴、騷莎，非一致的鬆拍爵士；策展層「個人唯一一張」「拉丁取樣」無來源，facts 只寫「首張個人專輯」。status thin。
+- **15204** Q-Tip《Kamaal》y 0.8 可能偏輕：現場樂團鬆散即興、唱多於饒舌；年份 2009 確認（2001 為 Arista 宣傳條目）。
+- **15205** P.M. Dawn《Jesus Wept》moodGuess 存疑：Rolling Stone 稱含吉他搖滾，只有一首直饒舌；製作人署名來源互異（資訊框 Eric Kupper vs 單曲頁 P.M. Dawn），並列不下定論。《The Bliss Album》年份取 1993 確認。
+- 推翻／存疑策展層共 4 處（Innocent Country 鋼琴說、Ladybug 唯一一張／拉丁取樣、Jesus Wept 製作歸屬、Liberation 日期）。
