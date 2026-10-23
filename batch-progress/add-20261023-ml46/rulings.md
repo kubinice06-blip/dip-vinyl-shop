@@ -16,3 +16,8 @@
 - 19801：Siblings 2 身分無衝突（MB 釘住）。聲音查得：無鼓、弦樂為主（樂評 bright strings＋一絲 melancholic dew）、鋼琴僅〈Sooner〉點綴、八音盒；策展層「磁帶飽和」查無來源，facts 不寫，列 moodGuess 存疑（y 可能低於 1.0）。status full。
 - 19802：Honey Boy（Album＋Soundtrack）聲音資料薄：來源只說老玩具＋古怪音色拼貼、LCO 成員合作、苦甜；鋼琴是否在前查無。26 首約 60 分鐘、片段短，判輕風險最高，moodGuess 存疑（y）。status thin。
 - 19803：Fordlândia 無傳統鼓（Hemstock 打擊僅 4 首、電子模擬）；50 人弦樂團＋管風琴＋合唱，教堂錄音，殘響厚。樂評用 elegiac sadness、ominous foreboding、claustrophobic、melancholy、haunting——色溫貼邊風險證實偏高，moodGuess 存疑（z）。status full。
+
+## 研究 d 組（條號 19831–19840）
+- 19831：Port Blue 國別定 us（MB 藝人 country=US、消歧義 Adam Young；維基 Adam Young 頁稱 Port Blue 為其 2006 年器樂計畫、Owatonna MN 人）。《The Airship》自發行（MB 無廠牌）。聲音僅有 Sputnik 樂迷評論（『帶節拍的 Eluvium』）一源，status thin；厚度 y 無證據，moodGuess 存疑（有明確拍子，x 有被推高風險）。
+- 19832：Inventions《Maze of Woods》moodGuess 存疑：Drowned in Sound『mechanical rhythms』、廠牌『beats, chants, bursts of noise』、樂評『chilling, but comforting』，x／z 貼邊；鋼琴被疊在節拍與取樣下、非乾淨前置。無弦樂與磁帶來源。
+- 19833：Inventions 首作推翻策展層『磁帶質感取樣弦樂』——無來源，實為吉他（倒放／殘響）＋電子音景＋打擊樂；兩首有快速打擊樂（x 有升高風險）；色溫溫暖，旋律『simple and accessible』（推翻策展層『旋律碎』顧慮）。
