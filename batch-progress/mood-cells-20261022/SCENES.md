@@ -18,7 +18,7 @@
 3. **一批可以合併相鄰的大場景湊滿 45 張**：指派時寫「主場景＋可擴寫場景」，策展代理先挖主場景，不夠再往擴寫場景補，仍要過 moodGuess 邊距。
 4. 冷冽線教訓：**帶吉他的樂團、中速 synth 常判重落亢奮；無拍點的古典判靜落平靜**——只收「快、薄、乾、有機械脈動或明確節拍」的。
 
-**優先序**（由上往下派；頹靡已穩定，冷冽與恍惚往大池子集中）：
+**優先序**（2026-10-23 補排 19–26；由上往下派；頹靡已穩定，冷冽與恍惚往大池子集中）：
 
 | 順位 | 批 | 主場景＋可擴寫場景 | 狀態 |
 |---:|---|---|---|
@@ -36,10 +36,18 @@
 | 12 | ml16 | jazz-rap／boom bap 暖盤 ＋ ml17 G-funk 慢盤 ＋ ml18 chopped & screwed | ✅ 上線 27／落格 25 |
 | 13 | mc11 | krautrock motorik 快盤 ＋ mc16 Italo／space disco 冷盤 ＋ mc27 70s 前衛電子快作 | ✅ 上線 16／落格 14 |
 | 14 | ml11 | chillwave／hypnagogic ＋ ml12 bedroom／dream pop 濕的那一路 | ✅ 上線 26／落格 23 |
-| 15 | md14 | 暗色電影／遊戲配樂 ＋ md13 現代古典暗黑音塊 |  |
-| 16 | ml19 | city pop／AOR 濕的慢歌 ＋ ml28 70s soft rock 慢而濕 |  |
-| 17 | mc26 | synthwave 冷而薄 ＋ mc19 東歐／蘇聯 synth |  |
-| 18 | md11 | 工業 old-school 慢盤／ritual ＋ md12 neoclassical darkwave |  |
+| 15 | md14 | 暗色電影／遊戲配樂 ＋ md13 現代古典暗黑音塊 | 派→情緒薄格 md14、ml19（第 4 輪） |
+| 16 | ml19 | city pop／AOR 濕的慢歌 ＋ ml28 70s soft rock 慢而濕 | 派→情緒薄格 md14、ml19（第 4 輪） |
+| 17 | mc26 | synthwave 冷而薄 ＋ mc19 東歐／蘇聯 synth | 派→情緒薄格 mc26、md11（第 4 輪） |
+| 18 | md11 | 工業 old-school 慢盤／ritual ＋ md12 neoclassical darkwave | 派→情緒薄格 mc26、md11（第 4 輪） |
+| 19 | ml10 | psychedelic soul／cosmic soul ＋ ml14 spiritual jazz 慢而厚 | 派→情緒薄格 ml10、mc15（第 4 輪） |
+| 20 | mc15 | 法比冷浪潮／new beat、EBM 輕的那半 ＋ mc24 drum & bass 冷而薄 ＋ mc18 footwork／juke 冷盤 | 派→情緒薄格 ml10、mc15（第 4 輪） |
+| 21 | ml20 | 台灣／華語 R&B 與 neo-soul ＋ ml21 韓國 R&B／indie 恍惚 ＋ ml29 華語／日本 dream pop 二線 |  |
+| 22 | md21 | goth rock／coldwave 慢盤二線 ＋ md15 witch house／hauntology |  |
+| 23 | ml24 | 暖的 dream folk／slowcore ＋ ml30 暖 ambient／new age 厚墊 |  |
+| 24 | md18 | 日本暗色 drone／ambient／暗色獨立 ＋ md20 北歐暗色電子與配樂 ＋ md19 華語／韓國暗色獨立 |  |
+| 25 | mc23 | 前衛 art pop／冷的實驗流行 ＋ mc19 東歐／蘇聯 synth 剩餘 |  |
+| 26 | md22 | 無鼓 drone metal／post-metal ambient 二線 ＋ md23 暗黑 lo-fi／tape loops |  |
 
 **暫停**（第 1 輪證實產量低，或池子太小）：mc13 math rock、mc14 前衛 hard bop、mc21 post-punk revival、mc22 當代爵士、mc28 歐陸自由即興、mc30 minimalism、mc4 系古典快作續集、ml4 系東亞續集、ml13、ml22、ml26、ml27。
 
