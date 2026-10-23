@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜自動試聽「預設開啟」改成每次造訪都開
+
+- **改動**：店主回報改成預設開啟後，自己手機進頻率光譜喇叭還是叉叉。原因：裝置以前記過 'off'（localStorage），預設開只管沒記過的裝置。改成開關只記在這次造訪（sessionStorage）：按掉或偵測到串流搶焦點，這個分頁／App 沒關前都是關；重開就回到開。舊的 localStorage 'off' 載入時清掉。四頁 `dip-player.js?v=52`。
+- **主要檔案**：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`、`shop-all.html`
+- **驗證**：本機 Playwright：localStorage 先寫 'off' → 載入變 on、🔊、舊鍵已清；按掉後同分頁重整維持 🔇；開新分頁回 🔊；無頁面錯誤。
+
 ### 2026-10-23｜dip-vinyl-shop｜頻率光譜副標題改「不分類型，以光譜的方式探索音樂」
 
 - **改動**：店主指定。「找一張來聽」入口卡（`index.html` HUB_DEFS）、`tune/index.html` og:description、分享縮圖 `og-tune.png` 副標同步換。
