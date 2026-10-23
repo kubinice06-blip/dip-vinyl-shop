@@ -54,3 +54,17 @@
 - **15245** Curren$y & The Alchemist《Continuance》校正：策展「十年後再合作」不精確（2016 混音帶、2018 EP 在中間），維基稱其為二人第一張錄音室專輯。開場曲 MB 為〈Half Moon Mornings〉，樂評寫〈Half Moon Bay〉。聲音與 moodGuess 相符（鼓貝斯柔軟、Rhodes／吉他暖）。
 - **15246** Curren$y & Harry Fraud《The OutRunners》：策展寫「殘響 soul 取樣與厚低音」查無來源，不採；聲音證據偏薄（soulful、海灘、鬆弛，無鼓／速度／低頻）。moodGuess 輕度存疑，請主線耳聽覆核。
 - 本組 6 張全 status full（facts 11、11、12、11、11、11 條）；推翻策展層 4 處（VICES 合作次序、Dude 的 Mike Dean、X-Treme 的 Rhodes、OutRunners 的殘響低音）；WebSearch 本組共用 3 次（OutRunners、VICES、Continuance）。無年份／廠牌／掛名硬性推翻，無移除建議。
+
+## 研究 b 組
+- **15211** The Day Before（DJ Day）性質：Discogs 標 Compilation，副題「The Backcatalogue 1999-2007」，收單曲、混音、未發行曲與日本限定曲（第 5、6、9、13 首未發行）。Melting Pot Music 官方發行、是他前十年的唯一集中彙整，判有基本定位，**建議保留**（主線可改裁）。moodGuess 存疑：實為 downtempo／funk 器樂彙整，曲源跨 1999–2007、色調不一，並非統一的 jazz-rap；Aloe Blacc 一首有人聲。Apple 上為 2016 年 7T5 重發 18 首，曲目與 2007 CD 不同，曲目曲長以 Discogs CD 為準。
+- **15212** Jazz Liberatorz《Clin d’œil》moodGuess 存疑：策展寫「dusty 爵士取樣厚」，Discogs credits 顯示多首有真人 Rhodes、鼓、貝斯、薩克斯風、長笛，聲音較乾淨；14 首曲長 4 至 7 分鐘、共約 74 分。年份取 2007（MB／Discogs），部分維基頁寫 2008 是日本盤年。團體所在地 Discogs 寫 Meaux（法國），不採 Bandcamp 的 Michigan。
+- **15213** The Nonce《World Ultimate》無推翻：聲音證據足（Wikipedia、Fact、CMJ、Village Voice）。Wikipedia 專輯頁說製作人為 The Nonce 本人，Rubin 僅為 Discogs 的 executive 掛名，寫作層勿寫成 Rubin 製作。2000 年 Yusef 辭世屬與作品無關的後續生平，不寫。
+- **15214** S.L.A.C.K. 三張聲音證據薄：《MY SPACE》只有 credits 與曲長（自製為主、16 Flip 三首、PUNPEE 母帶），status thin，moodGuess 無法證實；《WHALABOUT?》ototoy 稱 beat「ゆるさと鋭さが共存」，x 略存疑，Discogs 對第 10 首同時列 S.L.A.C.K. 與 16 Flip；《我時想う愛》ototoy 稱音質提升並加鍵盤、本人自稱「非 EP 非專輯」，12 首 38 分以專輯收。curatorWhy 的「霧比前作更厚」無來源，不採。
+- **15215** 蛋堡《Winter Sweet》《踩腳踏車》status thin：中文來源無聲音描述，只有 Discogs 的 Jazzy Hip-Hop 標籤，moodGuess（懶拍、爵士取樣）無法證實也無法推翻，請主線上線後以評分為準；《Winter Sweet》入圍第 21 屆金曲獎最佳新人（徐佳瑩得獎，蛋堡未得）。《踩腳踏車》MB 日期 2011-11-25 與 Apple／zh wiki 的 2011-10-25 不符，年份同 2011 不影響；9 首約 27 分短盤，Shin-Ski 是否全盤製作無明文。
+- 本組 8 張：facts 13、10、10、10、9、9、8、10 條；full 5、thin 3（MY SPACE、Winter Sweet、踩腳踏車）；推翻策展層 2 處（Clin d’œil 的「取樣」、The Day Before 的性質），另 moodGuess 存疑 4 張；WebSearch 用 3 次。
+
+## 主線（研究後）
+- **15271**：照研究層聲音事實汰 11 張（卡單與研究檔已移除，原卡存 `dropped-cards.json`；`master-override-ml16.json` 同步）：P.M. Dawn《Jesus Wept》（樂評稱含吉他搖滾、僅一首直饒舌）；Quelle Chris《Innocent Country》（爵士鋼琴是續作特徵，首作是斷裂取樣切碎）；Ladybug Mecca（搖滾、流行、電子節拍、森巴混雜）；Jazz Liberatorz《Clin d’œil》（真人 Rhodes／鼓／管樂、聲音乾淨，判輕）；DJ Day《The Day Before》（副題 The Backcatalogue 1999-2007，實為彙整輯，不收）；蛋堡《內部整修》（樂評稱黑暗，z 偏冷）；Witchdoctor（Organized Noize「最黑暗」的製作之一）；Paul Wall & Chamillionaire（製作多元、彈跳，x 恐 >2.7）；Pimp C《Naked Soul》（身後拼貼、十餘位製作人）；Tela《Piece of Mind》（hardcore／G-funk 標籤、無慢拍來源）；Curren$y & Harry Fraud《VICES》（80s synth 霓虹偏亮）。
+- **不補候補**：策展兩輪已說明場景見底（主線方向 Smoke DZA、Freddie Gibbs、Larry June、Z-Ro、Lil Keke 等全被池中值擋下），本批定為 **27 張**照實上架，比照 ml3（27）、md4（43）先例。
+- **留下的存疑張**：Q-Tip《Kamaal》（y 恐偏輕）、Talib Kweli & Madlib《Liberation》（x 貼邊）、MJG、Big Moe ×3、E.S.G. ×2、Maxo、Isaiah Rashad、Mac Miller、蛋堡 ×3、S.L.A.C.K. ×3 聲音來源薄——寫作層不寫無來源的「慢」「厚」「dusty」。
+- Liberation 年份照 MB 2006（12-31 免費數位首發）。
