@@ -3217,4 +3217,7 @@ window.DipPreviewStatus = Object.freeze({
   "elend|weeping nights": "unavailable",
   "die verbannten kinder evas|die verbannten kinder evas": "unavailable",
   "die verbannten kinder evas|come heavy sleep": "unavailable",
+  "mica levi & johnnie burn|the zone of interest": "unavailable",
+  "akira yamaoka|silent hill: homecoming (soundtrack)": "unavailable",
+  "aethek & lustmord|scorn: original soundtrack": "unavailable",
 });

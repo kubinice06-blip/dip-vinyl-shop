@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 4 輪 md14／ml19：暗色配樂 42＋city pop／AOR 濕慢歌復興盤 10 張上線，體感標準落格 19/42、8/10
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 4 輪，本工作階段負責 md14、ml19。md14（`add-20261023-md14`，頹靡：暗色電影／遊戲／影集配樂＋md13 現代古典暗黑音塊）：Jóhannsson《Sicario》、Hildur《Day of the Soldado》、Mica Levi《Monos》、Levi & Burn《The Zone Of Interest》、Stetson《Hereditary》《Color Out of Space》、Korven《The Lighthouse》《The Witch》、Zimmer & Wallfisch《Blade Runner 2049》、Lustmord《First Reformed》、Reitzell《Hannibal》×3、山岡晃 SH4／Homecoming／SH2 2024、Tarmia《Amnesia》×2《SOMA》、《Control》、《Hellblade》、《Doom 64》、Aethek & Lustmord《Scorn》、《Texas Chain Saw Massacre》、Ben Frost《Dark》×2《Fortitude》、Graves《Dead Space》、Kurzel《Snowtown》《Macbeth》、Hecker《Infinity Pool》、Young《Sinister》、《Saint Maud》、《Possessor》、《Enemy》、Jóhannsson & Glotman《Last and First Men》、Frost & Bjarnason《Sólaris》、Thorvaldsdottir ×4、Scelsi《Natura renovatur》（ECM）。ml19（`add-20261023-ml19`，恍惚：city pop／AOR 濕慢歌＋ml28 soft rock 復興盤）：Drugdealer、Sean Nicholas Savage ×2、Lewis ×2、Ducktails《Jersey Devil》、Mndsgn《Body Wash》、Pure Bathing Culture《Moon Tides》、Sweetback《Stage [2]》、Michael Seyer《Bad Bonez》。
+- **策展→研究汰換**：md14 策展 54、主線汰 9、研究汰 8（Twin Peaks 2017 混歌、Nosferatu／Revenant／A Haunting in Venice 乾淨管弦、End of Summer 暖、SIGNALIS 混雜、Dumitrescu、Joker 2）、補回 5 → 42；策展汰換區《Ligeti Project II》就是池中 Nott《Atmosphères / Lontano》（盤名不同去重沒抓到），攔下。ml19 策展 20（經典 city pop／AOR 池中全判 y ≤ −0.4，一張都不提）、研究汰 9、審稿汰 1 → 10，場景見底。
+- **主線審稿**：md14 改 7 處、ml19 改 2 處，全是單源樂評轉述刪除或改聲音陳述；事實層未動。
+- **上線**：card_catalog 42＋10、KV 42＋10 鍵回讀逐字一致、試聽 39＋10 ready（Zone of Interest、Homecoming、Scorn 無 Apple 條目）、seed +52、published gate 兩批 0 error；封面 CAA 51、Apple 1（Amnesia CAA 連續 500），live-check 全 200。上線前對 origin 59 個分支 seed 去重 0 撞。冷門軸人工：md14 原聲帶 36 張 §0.8、古典 6 張 §0.7；ml19 3 張。
+- **情緒評分**：`score-md14`、`score-ml19`。舊標準初評 42/42、10/10；合併 main 後照 10-23 **體感＋旋律新標準**重評：**md14 落頹靡 19/42（45%）**——22 張恐怖驚嚇型配樂 x 3.0–3.8 落暴躁、Sólaris 判輕落平靜；**ml19 落恍惚 8/10（80%）**，Savage 兩張乾淨 sophisti-pop 判輕落放鬆。八格（併 main 後）：恍惚 1,134、頹靡 1,335、冷冽 1,301。md14 場景下一批只收 dark ambient／drone 型配樂；ml19／ml28 不再派。
+- **類型樹**：`genre-l3-artist-map.json` 補 9 張（4 張配樂 → electronic/ambient/dark-ambient；Lewis ×2、Ducktails → pop/pop-rock/soft-rock；Seyer → bedroom；Mndsgn → downtempo/beats），52/52 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩），兩批 rulings 末尾列新藝人 27 個掛名。
+- **主要檔案**：`batch-progress/add-20261023-{md14,ml19}/`、`batch-progress/mood-cells-20261022/{curation,master}-{md14,ml19}.json`、`batch-progress/mood-axes/score-{md14,ml19}/`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261023-{md14,ml19}*`、`onboarding-manifest-add-20261023-{md14,ml19}-20261023.json`、seed／試聽地圖／類型樹／mood 產生檔、`HANDOFF-mood-cells-line.md`、`SCENES.md`。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 0 error；KV 回讀 52/52；`build-card-moods` 綠。
+
 ### 2026-10-23｜dip-vinyl-shop｜Eminem《Revival》等 9 張主流 pop-rap 由暴躁改沸騰
 
 - **改動**：店主指《Revival》不該在暴躁。主流 pop-rap 有唱的副歌、好入耳＝暖，9 張 z 改正（Eminem 三張、Kendrick《GNX》、Stray Kids、G-DRAGON、Roddy Ricch、Polo G、Trippie Redd），全落沸騰；`score500/BRIEF.md` 色溫段補規則。
