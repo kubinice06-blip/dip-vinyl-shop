@@ -11,3 +11,31 @@
 - 收的是：UK 90s Pork／Cup of Tea／Grand Central／Tru Thoughts 系 blunted 器樂盤 10、法國暖 dub（Blundetto 6、Guts 2）8、歐陸 dubtronica（Tosca 3、Thievery《Treasures From the Temple》、Almamegretta）、世界 dub 暖盤（Dub Colossus 2、Hollie Cook 2）、紐西蘭 dub soul（Fat Freddy's Drop 2、Lord Echo 2；場景外，照 ml15 收 FFD 先例）、新 downtempo（Little People、Boozoo Bajou 2）。池中同人：Tosca《Opera》《Suzuki》《J.A.C.》恍惚、《Dehli9》放鬆；Dub Colossus、FFD、Boozoo Bajou 全落恍惚。
 - **主線汰 1**：Tosca《Going Going Going》（歌曲化、偏亮，恐判輕；Tosca 留 3 張）。
 - Hollie Cook 為 2010s UK lovers rock 暖盤，不屬 ml38（70s roots dub／90s UK digital dub）範圍，留本批。卡單定案後對 origin 所有 `claude/*` 分支 seed 與 10-22／10-23 卡單去重 0 撞。
+
+## 研究 c 組
+- **19181** Guts《Eternal》：查無樂評；來源顯示是真人樂隊 funk／soul 加 MC（Donwill、Von Pea、Tanya Morgan）的嘻哈專輯，moodGuess 存疑（拍子可能偏推進，無 dub 殘響／低頻厚證據）。status thin。
+- **19182** Tosca《No Hassle》：雙 CD（CD2 為 Ars Electronica 現場），上架以 CD1 為準。RA 與 Global Groove 皆描述為低能量環境式 downtempo，有 dub delay、木質貝斯；moodGuess 小存疑（y 恐偏輕，無低頻厚的直接證據）。
+- **19183** Tosca《Odeon》：七首有人聲、歌曲化；無樂評，聲音證據僅風格標記（Downtempo／Ambient），moodGuess 存疑（dub 低音未證實）。Discogs 拼 Sarah Carlier，facts 取 Callier。status thin。
+- **19184** Tosca《Osam》：查不到任何樂評或廠牌文案，facts 6 條且無聲音描述；moodGuess 全未驗證，建議主線以試聽判斷或汰換。status thin。
+- **19185** Thievery《Treasures From the Temple》：Discogs 備註為《The Temple of I & I》同期混音、dubplate 與稀有曲集，非獨立錄音室專輯；有客座陣容與美國舞曲榜第 8，定位偏弱，不列強制移除，請主線裁。「牙買加同場錄音」未能查證，未採。moodGuess 存疑（嘻哈客座與 TC Remix 拍子可能推進）。
+- **19186** Almamegretta《Sanacore》：On-U Sound 的 Sherwood 混音，拿坡里方言、tammurriata 手鼓；dub 與暖成立，x 小存疑（部分曲熱度偏躁）。status full。
+- **19187** Blundetto《Bad Bad Things》：Discogs 風格 Reggae／Electro／Funk，參與者為 Budos Band Horns、Shawn Lee、General Elektriks、Lateef 等，3–5 分鐘 funk 短曲；moodGuess 存疑最重（dub 低音、one-drop 慢拍皆無證據）。「Radio Nova」未能查證，未採。
+- 推翻策展層：Thievery 的「姊妹盤牙買加錄音」、Blundetto 的 Radio Nova 兩處未獲證實；盤名、年份、廠牌七張皆對上。
+
+## 研究 a 組
+- **19161** Heights of Abraham《Humidity》：推翻「Pork 廠牌首張 LP」（PORK 009 屬早期，但 Pork 創立年 Discogs 兩處 1990／1991、Wikipedia 1992，無法證實首張），退成樂團第一張專輯；「慢 breakbeat、爵士取樣」無來源未寫。moodGuess 存疑：Bandcamp 標 lounge、評論稱 airy／bouncy mid-tempo，有判輕風險；低頻（subsonic bass）成立。
+- **19162** Heights of Abraham《Electric Hush》：Select 評語「soul-food bass」、Harries 低沉嗓音、〈E.V.A.〉薩克斯風「summer classic」；「溫鍵盤墊」無來源未寫。moodGuess 存疑：lounge 標籤與夏日名曲的亮度，有判輕風險；dub／磁帶糊無來源。
+- **19163** Solid Doctor《Beats Means Highs》：Discogs master 2913769 存在，推翻 curatorRisk 的「未連結」；AllMusic 描述含 dub、funk、house、舞池與家用音響之間，moodGuess 存疑：house 律動可能偏舞池速度；「懶拍」無來源。
+- **19164** Baby Mammoth《10,000 Years Beneath the Street》：Pork 官方頁標 beats & breaks，「blunted、dusty 鼓、厚 bass」皆無來源未寫；moodGuess 存疑（breaks 推進風險）。Kudos 頁 2006 日期為數位上架日，採 1996。status thin。
+- **19165** Baby Mammoth《Swimming》：回應 curatorRisk「請確認未判輕」——無法確認；Discogs 風格 Future Jazz、MB 標 indie rock、有真人鼓與吉他，Pork 稱 trip-hop，判輕風險明顯；低頻、溫鍵盤墊無來源。Kudos 2001 日期為數位上架日，採 1999。status thin。
+- **19166** Purple Penguin《De-tuned》：Cup of Tea 在 Bristol 確認，團員出身地無來源；「Rhodes、dusty 鼓、爵士」無來源未寫，廠牌自述 weirdelic sound collages 反偏實驗；moodGuess 存疑（偏冷或偏躁皆無法排除）。status thin。
+- **19167** Purple Penguin《Question》：同上，Discogs 風格 Downtempo／Trip Hop，無爵士字眼；曲數標示 16（含 3 首加碼）有資料歧義，facts 取保守寫法。status thin。
+- 本組樂評極少：WebSearch 3 次僅確認 Heights of Abraham 的 Bandcamp／Select 評語；Discogs 網頁、AllMusic 皆 403，Baby Mammoth 與 Purple Penguin 四張查無樂評，建議以試聽判斷，恐有汰換。盤名、年份、廠牌七張皆對上；推翻策展層兩處（Humidity 廠牌首張、Purple Penguin 爵士／Rhodes 描述）。
+
+## 研究 d 組
+- 19191：Dub Colossus《A Town Called Addis》卡單 label 為 Society of Sound，MB 同 RG 內該版僅為 2008-08 數位版，主發行是 Real World Records（CDRW155，2008-08-20）。facts 寫 Real World，建議卡單 label 改 Real World（可逆，manifest 欄位）。
+- 19192：Dub Colossus《Addis to Omega》推翻策展層兩處：非「第三張」而是第四張（London Jazz News）；兩篇樂評都說衣索比亞影響已移除、轉牙買加風格，速度從快雷鬼到慵懶，含 dancehall／ska。moodGuess 存疑高，建議汰換或降次選。
+- 19193：Blundetto《Slow Dance》廠牌文案寫「適合陽光燦爛的日子」，曲長約 3 分鐘、人聲曲為主，moodGuess「極慢」無來源，存疑偏輕；「最慢的一張」不寫。
+- 19194：Blundetto《World Of》（廠牌自稱拼布，含搖滾／卡比爾／放克）與《Good Good Things》（巴西／拉丁／嘻哈混血、有饒舌）、《Warm My Soul》（鼓機與合成器更明顯、嘻哈拉丁味）三張皆 moodGuess 存疑中度；來源均無低頻厚或殘響的直接敘述。
+- 19195：Blundetto & Liam Bailey《Heavy Soul》掛名取聯名；日期三源不一（Bandcamp／MB 2024-07-05、Discogs 2024-01-15、Sound Shelter 2024-11-15），年份一致，採 Bandcamp；全盤 9 首約 27 分鐘（5 歌＋4 dub 版），本組最貼恍惚。
+- 19196：WebSearch 本組用 4 次（略超 3 次上限，7 張合查）；Wikipedia 無 Blundetto／Dub Colossus 條目、Discogs 網頁與 AllMusic 403，改用 Discogs API、MB、廠牌頁、Bandcamp、樂評。

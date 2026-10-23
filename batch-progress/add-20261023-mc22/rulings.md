@@ -54,3 +54,26 @@
 - 12718 Wooley《Knknighgh》：推翻 curatorWhy「尖嘯與噪音技法」（無來源）；Böker 評「lyrical and intimate」「可以很安靜」，moodGuess 存疑偏靜（y 0.1 恐偏高）。
 - 12719 Webber《Clockwise》：curatorWhy 成立且更廣（Xenakis、Feldman、Varèse、Stockhausen、Babbitt、Cage）；無存疑。
 - 12720 預留未用。
+
+## 研究 e 組（12721–12730）
+- 12721 Webber《Shimmer Wince》：無存疑；Intakt 頁標 bass flute，Jazz Journal 寫 baritone flute，採 Intakt。純律加拗拍，局部有搖滾 backbeat（〈Wince〉）與長音開收尾，整體仍落冷冽。
+- 12722 Irabagon《Foxy》：moodGuess 存疑偏暖——Jazz Mann 明載標準曲引句（〈Bewitched, Bothered and Bewildered〉等）與 jump swing 段（〈Biloxi〉）、Free Jazz Blog 稱「bop 樂句與節奏」；同時全盤約 80 分鐘（評論 78–80 不一）持續全速，不靜不重。錄音日期查無，不寫。
+- 12723 Okazaki《Trickster》：moodGuess 存疑偏重——Pi 文案「grooves from beginning to end」、JazzTimes「superhard groove」「see-saw groove」，Tidd／Rickman 有 funk／R&B／hip hop 底子。吉他無失真證據，不寫音色。
+- 12724 Eskelin《One Great Day...》：盤名 MB 兩點、Discogs 三點，採 Discogs 三點；錄音 1996-09-30 Wuppertal Forum（Discogs 備註），發行 1997 hatOLOGY 502。無專屬樂評，聲音描述取自同團 2009 現場盤與後續樂評，已在 notes 標明；〈The Inflated Tear〉為 Roland Kirk 作曲，唯一非 Eskelin 自作，輕度存疑。
+- 12725 Finlayson《Moving Still》：moodGuess 存疑偏暖——PopMatters「most gorgeous, enticing, classic」「gentle chordal intro」「simple melody」「funky but also gentle」。錄音 2016-06-11 Brooklyn Recording（Discogs）。
+- 12726 Finlayson《3 Times Round》：moodGuess 存疑偏暖——Pi 文案「gorgeous harmonies and melodies」、Coleman「impressionistic」；Settles 音色「burry」。錄音 2018-03-05/06。這張是第三張領銜作，前兩張為 Sicilian Defense。Finlayson 與 Coleman 同團年數 Pi 寫 18、JazzTrail 寫 20，採 Pi。
+- 12727 Coleman Natal Eclipse《Morphogenesis》：策展層「無鼓」不精確，是無套鼓、部分曲目有 Neeraj Mehta 打擊。moodGuess 存疑偏靜／輕盈——Pi「more air and transparency」「chamber music」「long lines」，Shyu「ethereal and beautiful」。Pi 頁錯字（Kristen Lee、Moving Still 2015）不採。錄音 2016-09-23 至 25 Systems Two。
+- 12728 Roscoe Mitchell《Conversations I》：棚內錄音 2013-09-13/14 Wide Hive Berkeley，發行 2014-02-04；與 2LP 精選《Conversations》（Discogs 5797300）不同。moodGuess 輕度存疑偏靜（15 分〈Distant Radio Transmission〉、「Sparse」開場），同時有「all hell breaks loose」段。
+- 12729 Braxton《Dortmund (Quartet) 1976》：現場 1976-10-31 Jazz Life Dortmund（WDR 錄音），hat ART 1991 首發，2001／2019 再版改名《Quartet (Dortmund) 1976》；有歷史定位，不建議移除。樂器列表 Discogs 與 Wikipedia 不一致，facts 只寫概稱。Loewy／Jazzwise 評語僅有二手摘要，未入 facts；搜尋摘要有「進行曲式主題」「New Orleans swing」提示，輕度存疑偏暖，建議主線聽感核對。
+- 12730 本組 WebSearch 用 10 次（Webber 1、Irabagon 1、Okazaki 1、Eskelin 2、Finlayson 兩張 2、Coleman 1、Mitchell 1、Braxton 1，每張不超過 2 次，Eskelin 其一為補查）；Wikipedia 429 一次後加延遲；Bandcamp、AllMusic、Jazzwise、jazzmusicarchives 皆被擋（Cloudflare／403）。
+
+## 主線：研究後汰換（不佔條號）
+- 研究層聲音與 moodGuess 不符，直接汰 14（卡單、研究稿、`pick.json` 同步移除，45 → 31）：
+  - 判暖（翻奏／標準曲、旋律清楚、樂評 warm／melodious／gorgeous）：Steve Lehman Trio《Dialect Fluorescent》（九首四首翻奏、grooving）、Lehman Trio + Taborn《The People I Love》（四首他人曲、短插段）、Vijay Iyer《Tragicomic》（以旋律主題為中心、Bud Powell 曲）、Rudresh Mahanthappa《Mother Tongue》（語音轉寫旋律辨識度高）、Zooid《In for a Penny, In for a Pound》（welcomingly warm and melodious）、Jon Irabagon《Foxy》（標準曲引句、jump swing）、Jonathan Finlayson《Moving Still》（gorgeous、gentle）、《3 Times Round》（gorgeous harmonies and melodies）、Tyshawn Sorey《Oblique - I》（電鋼琴、旋律性曲調、開放段偏靜）。
+  - 判重（groove）：Lehman《Demian as Posthuman》（電貝斯穩定律動＋電子低頻）、Miles Okazaki《Trickster》（superhard groove、funk 底）。
+  - 判靜：Peter Evans《Nature/Culture》（獨奏氣流、長停頓、疊錄嗡鳴）、Nate Wooley《Knknighgh》（lyrical and intimate、巨響後靜默）、Steve Coleman's Natal Eclipse《Morphogenesis》（chamber music、ethereal）。
+- 留下但存疑、交評分裁定：Fieldwork 兩張（funky 評語，輕度）、Thumbscrew（局部近金屬，整體原聲低音＋乾淨吉他）、Lehman Quintet《On Meaning》、Big Satan 首作、Laubrock Anti-House 兩張、Malaby《Tamarindo》、Iyer《Blood Sutra》、Matt Mitchell《Vista Accumulation》《Phalanx Ambassadors》、Roscoe Mitchell《Conversations I》、Braxton《Dortmund》、Eskelin《One Great Day...》。
+- **年份更正**：Tim Berne《Sanctified Dreams》1987 → **1988**（1987-10 錄音、1988 Columbia 發行；研究 a 組，研究稿只寫錄音年，無須改）。
+- **現場盤**：Tom Rainey Trio《Hotel Grief》（2013-12-30 Cornelia Street Café）、《Combobulated》（2017-09-15 Firehouse 12）MB 未標 Live，研究 b 組確認為藝人正規全長發行，照 Braxton《Dortmund》與 mc31 自由爵士圈慣例收。
+- 研究推翻編制照研究稿：《Fractured Fairy Tales》有 Dresser 低音提琴（六人）、《Dragon's Head》鼓手 Ches Smith、《Phalanx Ambassadors》吉他 Okazaki、《Codebook》鼓手 Dan Weiss、《Door》為 Fieldwork 第三張。
+- qa-batch research：31 張 key 一致、全過。
