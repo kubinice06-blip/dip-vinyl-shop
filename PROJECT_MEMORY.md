@@ -1,5 +1,10 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜한영애《바라본다》放鬆→雀躍
+
+- **改動**：店主指定。(2.7, 0.3, 0.2) → (3.3, 0.0, 0.6)。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：`build-card-moods.mjs` 錨點 104/104 同格。
 ### 2026-10-23｜dip-vinyl-shop｜原聲帶簡介重寫 ost-2：電影＋音樂劇 50 張上線，整條線收尾（共 95 張）
 
 - **內容**：ost-2 照 dip-desc-restyle 產線跑完（研究 5→鉤子 2→寫作 2→QA→主線逐張審稿），50 張好萊塢歌曲原聲、經典配樂、音樂劇、華語與歐洲電影的新簡介寫進 KV。整條線：196 張分流，重寫 95（ost-1 45＋ost-2 50）、不動 101。
