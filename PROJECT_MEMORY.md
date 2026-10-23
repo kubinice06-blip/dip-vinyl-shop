@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 5 輪 mc32／ml13：無調現代古典室內樂 31＋暖慢迷幻搖滾 12 張上線，落格 29/31、11/12
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 5 輪，本工作階段負責 mc32、ml13（評分照 10-23 體感標準）。mc32（`add-20261023-mc32`，冷冽：無調現代古典／序列主義／新複雜主義室內樂＋mc4 續集；古典卡照 §0.7）：Arditti Quartet ×6（Lachenmann、Dusapin、Berio、Carter Vol. I、Ligeti Edition 1、Kurtág／Lutosławski／Gubaidulina）、Ferneyhough ×5（Ensemble Recherche、Nieuw Ensemble、Ensemble Exposé、Bjarnason、Elision）、Xenakis ×3（JACK、Thomopoulos、Deforce）、Lachenmann ×2（Ensemble Recherche、Aimard）、Sciarrino ×2、Carter ×2（Rosen、Group for Contemporary Music）、Donatoni ×2、Keller《Kurtág》、Parisii《Boulez／Webern》、Rihm、Saunders、Furrer、Barrett、EIC《Berio: Sequenzas》、Stockhausen《Mantra》、Wolpe。ml13（`add-20261023-ml13`，恍惚：暖慢迷幻搖滾＋ml26）：Besnard Lakes ×4、Dead Meadow《Old Growth》、Brant Bjork《Jalamanta》、Colour Haze《She Said》、Sungrazer《Mirador》、Jonathan Wilson《Gentle Spirit》、Lanois《Acadie》、Beta Band《Hot Shots II》、Lord Huron《Long Lost》。
+- **策展→研究汰換**：mc32 策展 50、主線汰 11（撞池 Kronos《Black Angels》盤名不同、極弱音型 x 貼邊、勻量）、研究汰 8 → 31。ml13 策展兩輪 61、主線汰 35（desert blues／MPB 池中判輕、Floyd 判輕、推進）、研究汰 12、讓 ml24 工作階段 2 張（兩邊卡單重複）→ 12，場景見底；ml13、ml26 不再派。
+- **主線審稿**：mc32 刪 3 處單源評價句；ml13 改 5 處（單源評價 2、Billboard 榜名次 1、「鞋凝」→「瞪鞋」、字數補回 1）；事實層未動。
+- **上線**：card_catalog 31＋12、KV 43 鍵回讀逐字一致、試聽 17＋11 ready、seed +43、published gate 兩批 0 error；封面 CAA 30、Apple 7、Discogs 6（已登錄 registry）。上線前對 origin 65 個分支 seed 去重 0 撞。古典三軸全走 §0.7 錨點制。
+- **情緒評分**：`score-mc32`、`score-ml13`。**mc32 落冷冽 29/31（94%）**：Keller《Kurtág》x 2.9 落平靜、JACK《Xenakis 四重奏》y 0.6 落暴躁；**ml13 落恍惚 11/12（92%）**：Besnard Lakes《Until in Excess》z −0.2 落頹靡。八格（併 main 後）：恍惚 1,162、頹靡 1,336、冷冽 1,363。
+- **類型樹**：`genre-l3-artist-map.json` 補 Lord Huron、Lanois 兩張，43/43 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩），兩批 rulings 末尾列新藝人 27 位。
+- **主要檔案**：`batch-progress/add-20261023-{mc32,ml13}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{mc32,ml13}.json`、`batch-progress/mood-axes/score-{mc32,ml13}/`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261023-{mc32,ml13}*`、`onboarding-manifest-add-20261023-{mc32,ml13}-20261023.json`、seed／試聽地圖／Discogs 名單／類型樹／抽卡封面／mood 產生檔、`HANDOFF-mood-cells-line.md`、`SCENES.md`。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 0 error；KV 回讀 43/43；`build-card-moods` 錨點 104/104、seed 20,734。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 4 輪 ml20／mc31：東亞 R&B／dream pop 17＋AACM／loft 自由爵士 33 張上線，落格 17/17、33/33
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」，本工作階段負責 ml20、mc31（體感標準）。ml20（`add-20261023-ml20`，恍惚：台灣／華語 R&B＋ml21 韓國 R&B／indie＋ml29 華語／日本 dream pop）：LINION 2、方大同 2、Hoody 2、OFFONOFF、죠지、SUMIN、問題總部、DSPS、The fin.、pasteboard、岡田拓郎、森は生きている、声音玩具、cero。mc31（`add-20261023-mc31`，冷冽：AACM／loft／美國自由爵士小編制＋mc14）：Braxton 5、Roscoe Mitchell 4、AEC 3、Air 3、Revolutionary Ensemble 3、Carter & Bradford 3、Oliver Lake 2、Abrams 2、Sam Rivers 2、Jimmy Lyons 2、Leroy Jenkins、WSQ、Marion Brown《Porto Novo》、Chick Corea《Is》。
