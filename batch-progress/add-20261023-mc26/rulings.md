@@ -40,6 +40,16 @@
 - **13041**：Beograd《Remek Depo》強存疑：研究層查得 Paul Pignon 薩克斯風（高音與次中音）、Stjepko Gut 小號、定音鼓、〈Kontrolori〉用真鼓；塞爾維亞語維基稱「較溫暖、較易親近、銅管與 soul／funk 色彩」，鼓機為 TR-808 與 CR-78，合成器多台 Korg、Oberheim、Prophet-1。「極簡乾薄機械冷」預估不全成立，可能判暖或判厚；建議主線降信心或汰換。label 採 PGP-RTB（Discogs／MB），en 維基 infobox 的 Jugoton 屬 1982 年單曲。
 - **13042**：Kapitan Nemo《Kapitan Nemo》（Tonpress 1986，SX-T 50）強存疑：credits 有真鼓（Adam Kolarz）、低音提琴、貝斯、吉他與口琴，非純機械鼓機；風格 new romantic，口琴與低音提琴偏暖。建議汰換。BPM 與樂評查無。
 
+## 研究 e 組（補位）
+- **13043**：Bonanza Banzai《1984》《A pillanat emlékműve》《Jóslat》三張身分相符（Favorit SLPM 37498／Pepita SLPM 37552／BMG Ariola Hungary 74321236382，皆原創錄音室專輯）。credits 皆無真鼓手與銅管，只有合成器、Kovács 吉他；《A pillanat》Discogs 把 Kovács 列為 Drums（真鼓或編程未明），B4 為電台現場錄音。curatorWhy 的「#1」「第二張金唱片」查無來源（hu 維基只說《A pillanat》與《Jóslat》為金唱片 5 萬／2.5 萬張），未寫入。BPM、鼓機型號、人聲甜度皆查無，三張 moodGuess 的速度（x 3.5–3.6）均標存疑。
+- **13044**：《Jóslat》curatorRisk「Menczel 已離團」：hu 維基稱他沒有參與這張，Discogs credits 仍列 Menczel 合成器，兩邊矛盾，facts 不寫此點。「techno 化」只有 Hauber／Menczel 側計畫（1994 年初德國 techno 專輯）旁證，專輯本身無證據；《Jóslat》第六首 Pogo '94 為該版本獨有。
+- **13045**：Технология《Это война》（ZeKo ZD-101，1996）原創錄音室專輯（ru 維基列為錄音室第三張），Velichkovsky 製作、Volodin 編曲、Kulikov 編程、Nechitaylo 主唱，錄音室無真鼓與銅管（僅第 5 首客座吉他）；現場鼓手 Mikhailov 屬實。moodGuess 大致可信，x 無證據。
+- **13046**：Технология《Носитель идей》（POPmarket PMR 007PE，2009）原創錄音室專輯，Discogs 風格 Synth-pop／Europop（Europop 偏亮，z 邊距需注意）。推翻策展層：與 Elegant Machinery 主唱 Enforsen 的合作是同期單曲〈Brave New World〉，不是專輯本體；「母帶較滿」查無來源。moodGuess 存疑：母帶響度與冷暖未驗。
+- **13047**：Ночной проспект《Курорты Кавказа》（1987 開盤帶，無廠牌）：「唯一器樂盤」「鼓機為主角、無人聲」皆查無來源（ru 維基與 MB 皆無）；MB 十軌，前五軌 4–9 分鐘。coverage thin。moodGuess 強存疑，建議主線降信心或汰換。
+- **13048**：Ночной проспект《Гуманитарная Жизнь》推翻策展層：（1）不是首張，ru 維基列 1985 年已有至少三張；（2）Discogs 風格 Avantgarde（Electronic／Rock），credits 為吉他、鍵盤、打擊與人聲，MB 掛名 Aguzarova／Borzhomova，非「鼓機＋薄合成器 synth」；（3）可聽到的是 1996 年 Liga 錄音室重混 CD（Electric Records EL77006），1986 為錄製年。強存疑，建議汰換。
+- **13049**：Videosex《Videosex 84》身分相符（ZKP RTVL LD 0938，1984；en 維基拼作 ZKP RTLJ），原創首張。團內有鼓手 Turk，「鼓機」不確定；Discogs 風格含 Hi NRG（x 可能更快）；Rupel 當時為高中生的流行女聲，「冷調女聲」無來源，z 邊距中等。
+- **13050**：WebSearch 用 2 次（Ночной проспект 無果、Videosex 一般背景），其餘走 Discogs／MB API 與維基；Wikimedia API 有限流，已間隔重試。西里爾人名在 facts 改拉丁轉寫，曲名與專名保留原文；兩張 Ночной проспект 無 Discogs master 之外的樂評與 BPM 來源，標 thin。
+
 ## 研究 b 組（條號 13011–13020）
 - 13011：Dynatron《Aeternus》身分相符，但原始發行是 Aphasia Records（Blood Music 為後掛目錄）；〈Not Of This World〉有金屬式吉他切音、鼓有回音，樂評稱陰暗肅穆，無任何 BPM 來源。moodGuess 存疑（非全盤無吉他；『快』無證據）。
 - 13012：Dynatron《Origins》三份樂評（Distorted Sound、At The Barrier、NewRetroWave）一致講速度沉穩、鼓機／軍鼓節拍、合唱與弦樂、厚墊與低頻持續音、吉他式音色，作者自述想要『管弦、更有人味』。moodGuess（x 3.7 快拍）明顯存疑，建議汰換。
@@ -60,3 +70,4 @@
   - **真鼓＋銅管／new romantic 暖**：Kapitan Nemo《Kapitan Nemo》、Beograd《Remek Depo》（薩克斯風、小號、soul／funk 色彩）。
 - 留 9 張；研究層粗估 synthwave 多在 95–125 BPM（iTunes 試聽自相關，未進 facts），x 風險照記，評分時驗。叫策展代理第二輪補 mc19 東歐冷 synth-pop 與 electro 式 synthwave。
 - 13072：策展第二輪補 10 張（全為 mc19 東歐 synth；synthwave 因 Bandcamp／iTunes 擋腳本存取無法查聲音，策展層不硬補），主線再汰 2：Bonanza Banzai《Elmondatott》（雙碟、抒情曲多）、Denis & Denis《Čuvaj se!》（Yazoo 式女聲，z 近 0）。定案 17 張；卡單重建時保留原研究分組（a 2、b 2、c 1、d 4），補位 8 張全排 e 組、派一支補研究。被汰 17 張的研究稿移到 `dropped-cards.json`。
+- 13073：補位研究交件，再汰 3：Ночной проспект《Гуманитарная Жизнь》（Discogs Avantgarde、吉他＋打擊＋人聲，非鼓機薄 synth）、《Курорты Кавказа》（器樂／鼓機主角查無來源、前五軌 4–9 分鐘，x 無證據；同人前一張已推翻，一併汰）、Videosex《Videosex 84》（團內有鼓手、高中生流行女聲、Hi NRG，z／y 風險）。Технология《Носитель идей》（Europop 標籤，z 存疑）留、評分時驗。**定案 14 張**（場景見底，照實上架）。
