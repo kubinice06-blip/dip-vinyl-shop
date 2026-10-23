@@ -31,3 +31,8 @@
 - 14445：Ray, Goodman & Brown《II》：MB first-release-date 1992 為 CD 條目屬實，原盤 Polydor 1980（Discogs master 151215，release 7867821）；facts 一律寫 1980。
 - 14446：已避開的單一／未證實說法（寫作層勿用）：Minnie Riperton 頁「Quincy Jones 描述此計畫」（製作人欄無 Jones）；Manhattans「進 Columbia 後第一支大熱門」；Peabo Bryson〈I'm So Into You〉確切榜位（文字說 R&B #2、Singles 表欄位錯列，建議寫「前段」）；After Midnight 葛萊美僅知「得獎」，類別未取得來源。
 - 14447：Wikipedia API 被限流，改以 curl 抓條目 HTML 轉文字；AllMusic 403。Discogs API、MB API 可用。WebSearch 用 1 次（Manhattans 專輯）。
+
+## 研究 c 組
+- **14421**（Prime of My Life）：〈Don't Wanna Change the World〉是 New Jack Swing 快歌，另兩首 R&B 前十單曲節奏未確認；moodGuess 輕度存疑，不推翻、交主線聽樣。製作人名單只見於搜尋摘要，不寫入 facts。
+- **14422**（Phyllis Hyman 自名首張）：製作班底是 Buddah 紐約的 Larry Alexander／Jerry Peters／John Davis，並非 Gamble-Huff 系，場景標籤「費城弦樂慢盤」不精確；年份、廠牌不動，風格近費城弦樂故仍可留，主線視情況修。
+- **14423**（Teddy It's Time for Love）：發行日 MB 9 月 11 日、維基 9 月 2 日不一致，facts 兩者並列；弦樂墊與 Bobby Martin 編曲無來源，不寫。
