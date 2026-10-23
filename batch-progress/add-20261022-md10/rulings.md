@@ -119,3 +119,11 @@
   - lovesliescrushing《Bloweyelashwish》：「〈Sugaredglowing〉就是這樣寫成的曲名」→「〈Sugaredglowing〉就是這樣黏成的曲名」並改分號（承接 hook 的「字母黏成一串」）。thin 178 字。
   - Cindytalk《The Crackle of My Soul》：刪「原署名 Gordon Sharp 的」（不寫藝人舊名，只用現名 Cinder）；「香港那一站在半山」→「香港的部分錄在半山」。thin 153 字。
 - **17477**：Midwife《No Depression in Heaven》錄音地點句（寫作層把「據廠方資料」改直述）維持：廠方資料是發行方對錄音的陳述，不是評價。全文無「據說／據傳」、無媒體名；「英國獨立專輯榜第 13 名」是銷售榜，照前例保留。
+
+## 上線與評分（2026-10-23，主線）
+- **17478**：上線 40 張：card_catalog 40／40、KV 40 鍵回讀逐字一致、試聽 37 ready／3 unavailable（Final《The First Millionth of a Second》、Amp《Bliss Out, Volume 4》、Grouper 2005 CD-R：Apple 查無原盤）、seed +40、published gate 0 error。封面 live-check 40／40 200；Main 兩張、Valet《Naked Acid》、Zelienople《The World Is a House on Fire》CAA 404 改 Apple 官方圖。Main《Firmament II》試聽人工指定（IX／X 兩軌）。上線前對 origin 49 個分支的 seed 去重 0 撞。
+- **17479**：類型樹 40／40 落位（`genre-l3-artist-map.json` 補 Drowse、Infinite Body → rock/dream-post/shoegaze；Drowse《Cold Air》標籤另帶 punk-wave/hardcore 節點，保留）。
+- **17480**：**落格率 39/40＝98%**（`batch-progress/mood-axes/score-md10/`）。出格 1 張：lovesliescrushing《Bloweyelashwish》z 0.0（甜美人聲＋回授雲，冷暖剛好壓線）落恍惚。貼邊：Valet《Naked Acid》z −0.1、Esben《Violet Cries》x 2.7、Main《Ablation》y 0.6。冷 shoegaze／drone pop 這個場景池子還有，下一批頹靡可續挖（Kranky、Projekt、The Flenser 系）。八格：頹靡 1,307 → 1,346。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Nivhek、Mirrorring、Raum、Jefre Cantu-Ledesma、lovesliescrushing、Clear Horizon、Jessica Bailiff、Valet、Drowse、Infinite Body、The Sight Below、SIANspheric、Final、Midwife、Lycia、Cindytalk、Esben and the Witch、Gazelle Twin、Tropic of Cancer、Zelienople、Dirty Beaches（21 位；其餘藝人已有介紹或已在排隊）。
