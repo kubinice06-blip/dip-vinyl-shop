@@ -3124,4 +3124,7 @@ window.DipPreviewStatus = Object.freeze({
   "tom brock|i love you more and more": "unavailable",
   "the dells|love is blue": "unavailable",
   "ray, goodman & brown|ray, goodman & brown ii": "unavailable",
+  "final|the first millionth of a second": "unavailable",
+  "amp|bliss out, volume 4: perception": "unavailable",
+  "grouper|grouper": "unavailable",
 });
