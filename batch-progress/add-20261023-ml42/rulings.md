@@ -82,3 +82,10 @@
 - **19383** 只寫 note 列的項目；note 沒列的 facts（Kupla 單簧管以外的早期作、gratitude. 曲名的小寫寫法、solitude. 卡帶版、Swimming 曲長等）一律不寫。聽眾話全數掛「聽眾說／聽眾形容／一位聽眾說／有聽眾評它」，Guaraldi 比喻明寫歸聽眾。媒體名、榜單、據說／據傳 0 處。池中《life.》用過的「jinsang 是加州的…」句形避開（in flight 改「jinsang 做的是加州器樂 beat」）。
 - **19384** 日期＋動詞配表（領頭字／動詞逐張不同）：時間是年月（Life Forms）／在年月掛上（Imaginary）／年月面市（Beneath）／他在年月親自放上（solitude.）／年月，加州（gratitude.，日期領句）／的《confessions》裡（confessions）／年月，他自行發行（in flight）／在年月放上（Blossoms）／同年月，由他（Swimming）／於年月幫他發了（Rio）／年月把擺上（Penthouse）／排在年月推出（Pirata）／在年月交由（Ships II）。「自行發行」只留 in flight 一處，其餘改自行端出／親自放上／自發；德國身分四張分寫：來自德國的／做器樂 hip-hop 的德國人／德國 beat 製作人／這位德國 beatmaker；曲長「從…到」只給 Rio，Ships II 改「最短…最長」。
 - **19385** 自掃：與 writer-2 現行 out 檔（13 張）合掃中文 4-gram，凡含本檔者 2 張以上 0 條（初稿 21 條，逐輪拆掉；writer-2 交件過程中仍在改，主線收件時請再合掃一次）。`node qa-batch.mjs out add-20261023-ml42` 全部通過（兩檔 26 張）；`qa-check-research` 標記 0；`fix-spacing` 待補 0。輔助腳本：scratchpad `wr-ml42-1/`（gen-ml42-1.py、scan-ml42-1.py）。
+
+## 主線審稿（19391–19400；2026-10-23）
+- 19391：逐張審 26 張（out-1 13、out-2 13），逐句對回研究稿 facts；qa-batch out、qa-check-research（兩檔）、fix-spacing 皆 0 標記；正文無媒體名、無榜單名次、無「據」字。
+- 19392：改 2 處：
+  - `SwuM.|Swimming`：「SwuM. 在 2018 年開始替 Chillhop Records 發單曲」→「也替」——研究稿只說同年在 Chillhop 發單曲、之後長期以 Chillhop 為主，「開始」無出處 → 172 字。
+  - `Hoogway|Slow Motion`：刪「布魯塞爾」——城市只有 Last.fm 單源，研究 e 組已標人物與城市來源衝突 → 160 字。
+- 19393：核過但未改——Kupla 赫爾辛基與本名（Discogs）、jinsang 加州（Bandcamp 標籤）與首張《Kona Park》2014（Apple 簡介）、Guaraldi 比喻明寫為聽眾說法、Ohbliv 本名與母親取樣（RVA Mag、Microchop）、Pirata 國際版口白 Ugly God（Bandcamp）、mt. fujitive 雷克雅維克與《Aeon》合作（Bandcamp、Discogs）、Purrple Cat 目錄十多張（Bandcamp）皆有出處。Blossoms 兩人名分開寫（SwuM.、jinsang），照卡單掛名各自字形，可。
