@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒八格「亢奮」改名「暴躁」（charge）
+
+- **改動**：店主指示把躁・重・冷那一格改名「暴躁」。來源 `data/mood/scale-v0.json` 的 `names.charge`，重建 `card-moods.json`（只改名，座標 0 張變動）；`starmap-lab.html`、`dip-tune.js` 註解、`score500/BRIEF.md` 同步。內部代號仍是 `charge`；舊批次文件（含情緒薄格線 SCENES.md）裡的「亢奮」＝暴躁，不回頭改。
+- **主要檔案**：`data/mood/scale-v0.json`、`data/mood/card-moods.json`、`starmap-lab.html`、`dip-tune.js`、`batch-progress/mood-axes/score500/BRIEF.md`
+- **驗證**：`build-card-moods.mjs` 八格輸出「暴躁 2846」；cards 陣列與 HEAD 逐張比對 0 差異。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格線改依店主「體感標準」：冷冽轉向自由爵士／現代古典／glitch，拿掉旋律清楚的 synth-pop
 
 - **內容**：店主「我已經改標準了 你檢視一下」→「可以」。檢視時發現評分說明書更新與全池重判已由另一工作階段完成（`felt-rejudge`，1,343 張；能量＝體感、色溫＝聲響溫度＋旋律清楚度），本工作階段只做補卡佇列與派工單：`CUR-DISPATCH.md` 共通節、頹靡節、冷冽節改依體感標準（冷冽＝讓神經繃起來＋尖細＋旋律不明；旋律清楚的 synth-pop 落雀躍；安靜但緊繃也算躁；壓人下沉的 doom 可收進頹靡）；`SCENES.md` 優先序改排 21–31，新增冷冽場景 mc31 AACM／loft jazz、mc32 無調現代古典、mc33 glitch／microsound、mc34 日本前衛即興、mc35 RIO 尖細那半，重開 mc4／mc14／mc22／mc28，暫停 synth-pop／new wave／K-pop／synthwave 續集與 ml14 spiritual jazz（體感標準判冷）。目前八格 恍惚 1,126、頹靡 1,279、冷冽 1,287。
