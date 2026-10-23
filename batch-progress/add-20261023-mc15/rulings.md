@@ -27,3 +27,9 @@
 - **12134**　Die Wunderwelt der Technik 廠牌：MB 為 Energy Rekords ERCD152L 兩片版，Discogs 主發行為 Synthetic Symphony／SPV 085-62512 單片版；兩者並存，卡單 Energy Rekords 有據，facts 兩邊都寫。
 - **12135**　World of Tomorrow 年份：MB 1997-11-18 美版（13 首含混音）、Discogs 母版 1998 英版（11 首）；採卡單 1997，facts 註明兩版。
 - **12136**　Essaie pas 專輯序數 Fader 說第四張、PopMatters 說第二張，維基只列兩張錄音室專輯，facts 不寫序數；Polaris 2016 只寫長名單入圍。Pitchfork 年度榜（Adieux 入選 2016 年 20 張最佳電子專輯）只放 notes。
+
+## 研究 c 組
+- **12141**　Byetone《Death of a Typographer》moodGuess 強烈存疑，建議主線汰換：RA、PopMatters 描述為厚重低頻、溫暖低音線、放克與雷鬼影子、新浪潮旋律、大量遠處殘響，已非『乾 click 與正弦波』；y、z 預估都偏離。發行日 MB 2008-06-11 對 PopMatters 2008-07-22，年份一致。
+- **12142**　Lázár 五張：WebSearch 3 次用完（Source、Boundary Object、Byetone 各一）；其餘靠 WebFetch 開 Bandcamp、Quietus、Loud and Quiet、PopMatters、FACT、RA、Boomkat。《I.L.S.》查不到任何聲音描述（Bandcamp 無說明），status thin，x、y 皆無證據；《Boundary Object》僅有廠牌文字，thin。
+- **12143**　moodGuess 存疑（列給主線）：Crisis of Representation（x，Bandcamp 明說不靠反覆鼓點）、Source（y，Quietus 稱低音凸顯、dubstep 式攻擊感）、Unfold（z，Boomkat 稱 funky、帶旋律）、Boundary Object（y、z 弱，廠牌稱 full-spectrum、fun）、I.L.S.（無法驗證）。身分與年份全部無誤，未推翻卡單事實。
+- **12144**　Unfold、Crisis 的首發日各源差一到數日（Bandcamp／MB／Discogs），年份一致，facts 並列。
