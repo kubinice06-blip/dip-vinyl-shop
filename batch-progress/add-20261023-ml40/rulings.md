@@ -39,3 +39,14 @@
 - 19194：Blundetto《World Of》（廠牌自稱拼布，含搖滾／卡比爾／放克）與《Good Good Things》（巴西／拉丁／嘻哈混血、有饒舌）、《Warm My Soul》（鼓機與合成器更明顯、嘻哈拉丁味）三張皆 moodGuess 存疑中度；來源均無低頻厚或殘響的直接敘述。
 - 19195：Blundetto & Liam Bailey《Heavy Soul》掛名取聯名；日期三源不一（Bandcamp／MB 2024-07-05、Discogs 2024-01-15、Sound Shelter 2024-11-15），年份一致，採 Bandcamp；全盤 9 首約 27 分鐘（5 歌＋4 dub 版），本組最貼恍惚。
 - 19196：WebSearch 本組用 4 次（略超 3 次上限，7 張合查）；Wikipedia 無 Blundetto／Dub Colossus 條目、Discogs 網頁與 AllMusic 403，改用 Discogs API、MB、廠牌頁、Bandcamp、樂評。
+
+## 研究 b 組
+- 19171：A Forest Mighty Black《Mellowdramatic》推翻策展層「慕尼黑雙人」：Discogs 顯示是以 Bernd Kunz 為核心的專案，專輯錄音與混音在弗萊堡（Mighty Tunes、Take One Studios），慕尼黑只是 Compost 所在地。moodGuess「dub 化慢拍、厚低頻」查無任何來源（只有 jazzy downtempo／trip-hop），找不到樂評，status thin，存疑高。
+- 19172：Aim《Hinterland》moodGuess 存疑中高：有 Souls of Mischief、Diamond D 兩首饒舌客串，〈Guimar〉帶森巴輕快、同名曲被評陰暗（RA）；低頻有（Sneaky 貝斯），dub 殘響與 dusty 取樣無直接來源。
+- 19173：Jon Kennedy《We're Just Waiting for You Now》聲音證據幾乎沒有（Discogs／MB 標 Breaks＋Downtempo，唯一直接描述是 Last.fm 簡介「sample and loop」，該頁以搜尋摘要取得），status thin；「黑膠爆音、懶 breaks、暖爵士取樣」皆未證實，breaks 取向恐判躁。年份 Discogs／MB 2001、Last.fm 2000，採 2001。
+- 19174：Little People《Mickey Mouse Operation》弦樂鋼琴是真人演奏（大提琴、低音提琴、Rhodes），非取樣；Cool Hunting 提陰鬱詭異、科幻嗶聲與 bouncy breaks，moodGuess 存疑中高。Bandcamp 的 Illicit Recordings 是 2024 年紐西蘭同名廠牌，非 2006 年英國那個。
+- 19175：Boozoo Bajou《4》官方簡介自稱 darker、ambient dub（Eno／Basic Channel／Jon Hassell），mxdwn 比擬 Eno、Tim Hecker，Discogs 風格標 Ambient；暖度與厚低頻存疑中高，dub 鼓與三連音有來源。第四張錄音室專輯（Wikipedia 序列）。
+- 19176：Boozoo Bajou《Finistère》curatorRisk 處理：Discogs 標 Broken Beat，但 Arcana 說 slow dub-infused beats、通稿 soul／dub／jazz／Latin／blues，無推進式 breaks 來源，拍子判懶慢成立。moodGuess 大致成立，僅厚低頻無來源。
+- 19177：Guts《Paradise for All》moodGuess 存疑高：Discogs credits 無客串人聲（登錄 Instrumental），「加勒比溫度」只有曲名與 Beach Diggin' 旁證，曲子短（11 首約 42 分鐘），找不到樂評，status thin。Pura Vida 2011 數位首發、Heavenly Sweetness 2012 實體。
+- 19178：WebSearch 本組用 12 次（超過 3 次上限，7 張各自缺樂評而補查；樂評類頁面 Guardian／EW／Drowned in Sound／AllMusic／Juno／Discogs 網頁多為 403 或工具封鎖）；其餘走 Discogs API、MB、Wikipedia、Bandcamp、RA、Arcana、mxdwn、Skiddle。
+- 19179：本組建議汰換候選（聲音證據不足且存疑高）：Mellowdramatic、We're Just Waiting for You Now、Paradise for All；Hinterland 與 Mickey Mouse Operation 視實聽。Finistère 最貼恍惚，《4》視暖度實聽。
