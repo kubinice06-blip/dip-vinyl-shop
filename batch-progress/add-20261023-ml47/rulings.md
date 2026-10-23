@@ -32,3 +32,11 @@
 - 19995　Olive Oil《Space in Space》：RA（ra.co/news.aspx?id=11506）寫『fluid broken sound』、與 Flying Lotus 比較、glitchy 與 abstract，另有 Discogs 風格 Abstract；moodGuess 存疑（x 2.5 可能偏低，偏躁／破碎，冷暖不明）。日本版 2009-11-18 與 Mule 國際發行 2010-02-22 並存，卡單 2009 成立。此張是本組唯一有第三方描述者，status full。
 - 19996　Olive Oil《Far From Yesterday》：Discogs 風格 Broken Beat／Future Jazz，〈Pianity Remake12〉有 Aaron Choulai 真人鋼琴（YouTube 官方說明）；『Dilla 式歪拍、Rhodes、厚低頻』無來源。moodGuess 存疑（同上）。
 - 19997　三次 WebSearch 已用盡（BROCKBEATS 一次無果、Olive Oil 兩次）；其餘靠 Discogs／MB API、Apple、Bandcamp、RA、Ototoy 取得。
+
+## 研究 c 組（19981–19990）
+- 19981　c 組全員 MB 釘住、身分與盤名年份對得上；Bandcamp／Discogs／MB 唯一日期衝突是 BROCKBEATS《Night Trip》（Bandcamp 2017-02-19、MB／Apple 2017-02-08），facts 兩者並陳。
+- 19982　Bonus Points《Eventide》推翻策展層 label：卡單寫 Chillhop Records，Discogs 為 Not On Label（Bonus Points Self-released）、Bandcamp 自行發行，查無 Chillhop 證據。moodGuess 存疑（強）：作者自稱 14 upbeat grooves、標籤 future funk／funk／future beats、Discogs 含 Funk／Boom Bap，與『低速夜晚』相悖。
+- 19983　BROCKBEATS《Night Trip》《Soy Milk》：策展層『Rhodes 電鋼琴、塵感』無任何來源；Bandcamp 無作者描述、無 credits，聲音事實僅標籤（lo-fi、boom bap、beat tape，Soy Milk 另有 indie pop），兩張 thin。
+- 19984　The Deli《Spacetime》：官方文案稱太空配樂、shimmering pads、synth lines，色溫可能中性略涼，moodGuess 存疑（弱）；節奏 sparse 支持靜。《Encounters》全長 29.5 分貼 EP 邊界、boom bap 有 x 風險；《Zodiacs》僅標籤、thin，卡單 label 空白實為自行發行。
+- 19985　L'Indécis《Plethoria》：無反證（dusty funk loop、環境聲、40 分）。卡單 country nl 取自發行國，藝人實為法國格勒諾布爾人，請卡面以藝人國籍為準。
+- 19986　WebSearch 用 3 次（Plethoria 樂評、Bonus Points、BROCKBEATS），皆無獨立樂評；多數資料來自 Bandcamp、Discogs／MB API、Cold Busted、Chillhop 官方頁、Turntable Lab 文案。
