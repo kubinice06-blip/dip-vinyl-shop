@@ -1,0 +1,948 @@
+{
+ "group": "ml41",
+ "factions": [
+  {
+   "id": "jp-dub",
+   "zh": "日本暖 dub（dub 版／人聲 roots）",
+   "why": "Little Tempo dub 版、Likkle Mai 等：管樂／鋼鼓／人聲有旋律，類比濕混音",
+   "count": 7
+  },
+  {
+   "id": "jp-downtempo",
+   "zh": "日本 downtempo 暖盤（沖繩民謠 dub、慢 dub pop）",
+   "why": "琉球民謠人聲＋dub 低頻、Polaris 慢 dub pop",
+   "count": 9
+  },
+  {
+   "id": "jp-beats",
+   "zh": "日本 jazzy／器樂 hip-hop 暖盤（第二輪）",
+   "why": "Tsutchie、Nomak、DJ Deckstream、Michita：dusty 慢拍＋爵士／靈魂取樣，旋律清楚",
+   "count": 8
+  },
+  {
+   "id": "uk-dub",
+   "zh": "UK dub 補位（lovers／Ariwa 暖盤）",
+   "why": "ml37 剩餘，只收有人聲旋律、暖的",
+   "count": 6
+  }
+ ],
+ "albums": [
+  {
+   "artist": "LITTLE TEMPO",
+   "album": "KEDACO IS BORN",
+   "year": 2001,
+   "label": "cutting edge",
+   "country": "jp",
+   "faction": "jp-dub",
+   "genres": [
+    "world",
+    "electronic"
+   ],
+   "why": "Little Tempo《Kedaco Sounds》的整張 dubwise 版，鋼鼓主旋律泡在長回音與厚貝斯裡；池中同團 dub 版《The Way Back Home in Dub》落恍惚（y1.3 z1.1）",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": 0.9,
+    "why": "慢 one-drop，長回音厚貝斯，鋼鼓旋律溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0cb4ef61-a5b3-42cf-93e1-2ecb3b45daa6",
+    "https://www.discogs.com/master/435360-Little-Tempo-Kedaco-Is-Born-Dubwise",
+    "https://music.apple.com/jp/album/kedaco-is-born/1436072015"
+   ],
+   "mbRgMbid": "0cb4ef61-a5b3-42cf-93e1-2ecb3b45daa6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無圖，封面用 iTunes／Discogs"
+  },
+  {
+   "artist": "LITTLE TEMPO",
+   "album": "Ron Riddim In Dub",
+   "year": 2000,
+   "label": "Rhythm Republic",
+   "country": "jp",
+   "faction": "jp-dub",
+   "genres": [
+    "world",
+    "electronic"
+   ],
+   "why": "《Ron Riddim》的 dub 版（2×12\" 正規專輯），原盤池中判輕（y0.2），dub 版把鋼鼓旋律拆進回音與低頻，同團 dub 版兩張都落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "慢 dub，回音長、貝斯厚，鋼鼓旋律溫暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/1616405-Little-Tempo-Ron-Riddim-In-Dub",
+    "https://www.discogs.com/artist/10238"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Little Tempo\" AND releasegroup:\"Ron Riddim\" → 只有原盤與 Voices of Flowers 版",
+     "releasegroup:\"Ron Riddim In Dub\" → 0 筆"
+    ],
+    "checkedAt": "2026-10-23",
+    "conclusion": "MB 無此 dub 版 RG；Discogs release 1616405 為 Rhythm Republic RR12-88140 2×12\" Album"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/1616405-Little-Tempo-Ron-Riddim-In-Dub",
+    "https://www.discogs.com/artist/10238"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "只見黑膠版，封面用 Discogs 圖；原盤 y0.2，dub 版能否拉到 0.8 以上要看評分"
+  },
+  {
+   "artist": "Ryukyu Underground",
+   "album": "Ryukyu Underground",
+   "year": 2002,
+   "label": "Respect Record",
+   "country": "jp",
+   "faction": "jp-downtempo",
+   "genres": [
+    "world",
+    "electronic"
+   ],
+   "why": "沖繩民謠人聲與三線取樣疊在 dub／downtempo 慢拍與厚低頻上的首作，旋律明確的島唄＝暖，dub 混音＝包覆",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "慢 dub 拍、厚貝斯回音，島唄人聲旋律溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6001e987-f575-3d18-b909-35af5566041a",
+    "https://www.discogs.com/master/90669-Ryukyu-Underground-Ryukyu-Underground",
+    "https://music.apple.com/jp/album/ryukyu-underground/147195546"
+   ],
+   "mbRgMbid": "6001e987-f575-3d18-b909-35af5566041a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無圖，封面用 iTunes；Discogs 標 Ambient/Dub/Downtempo"
+  },
+  {
+   "artist": "Ryukyu Underground",
+   "album": "Mo Ashibi",
+   "year": 2003,
+   "label": "Respect Record",
+   "country": "jp",
+   "faction": "jp-downtempo",
+   "genres": [
+    "world",
+    "electronic"
+   ],
+   "why": "第二張，延續沖繩民謠人聲＋dub 低頻與回音的做法，慢而濕，島唄旋律清楚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.8,
+    "why": "慢拍 dub 低頻、回音，民謠人聲溫；有一兩首 house 拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d66d2bef-80af-3837-a9a6-4c2c22f18507",
+    "https://www.discogs.com/master/1760048",
+    "https://music.apple.com/jp/album/mo-ashibi/147208043"
+   ],
+   "mbRgMbid": "d66d2bef-80af-3837-a9a6-4c2c22f18507",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無圖，封面用 iTunes；Discogs 另標 House，x 可能偏 2.7"
+  },
+  {
+   "artist": "Ryukyu Underground",
+   "album": "Shimadelica",
+   "year": 2006,
+   "label": "Respect Record",
+   "country": "jp",
+   "faction": "jp-downtempo",
+   "genres": [
+    "world",
+    "electronic"
+   ],
+   "why": "第三張，島唄人聲與三線放進更迷幻的 dub 混音裡，慢拍、回音厚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.7,
+    "why": "慢 dub 拍，迷幻回音厚，民謠旋律溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/edf8282b-afef-4774-893c-97aeae87e3d4",
+    "https://www.discogs.com/release/4820593",
+    "https://music.apple.com/jp/album/shimadelica/163341877"
+   ],
+   "mbRgMbid": "edf8282b-afef-4774-893c-97aeae87e3d4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無圖，封面用 iTunes"
+  },
+  {
+   "artist": "Ryukyu Underground",
+   "album": "Umui",
+   "year": 2009,
+   "label": "Respect Record",
+   "country": "jp",
+   "faction": "jp-downtempo",
+   "genres": [
+    "world",
+    "electronic"
+   ],
+   "why": "第四張，島唄歌手人聲為主、dub 低頻與殘響墊底，最偏抒情慢板的一張",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 0.9,
+    "why": "慢拍、厚低頻殘響，島唄抒情旋律暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ad0e9b91-f0a9-4303-a308-06eca8cec144",
+    "https://www.discogs.com/release/9095472",
+    "https://music.apple.com/jp/album/umui/310536113"
+   ],
+   "mbRgMbid": "ad0e9b91-f0a9-4303-a308-06eca8cec144",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無圖，封面用 iTunes"
+  },
+  {
+   "artist": "Likkle Mai",
+   "album": "Roots Candy",
+   "year": 2006,
+   "label": "Beat Records",
+   "country": "jp",
+   "faction": "jp-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "前 Dry & Heavy 主唱的首張個人作，roots one-drop 加 dub 回音與厚貝斯，女聲旋律溫甜（〈My Old Flame〉等）",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 1,
+    "why": "慢 roots 拍、厚貝斯 dub 回音，女聲甜暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8280f2e8-d778-4f44-a9c8-3a330984e8ba",
+    "https://www.discogs.com/release/2059831-Likkle-Mai-Roots-Candy",
+    "https://music.apple.com/jp/album/roots-candy/257260334"
+   ],
+   "mbRgMbid": "8280f2e8-d778-4f44-a9c8-3a330984e8ba",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "人聲 reggae 盤 y 常被判 0.5–0.8，需評分確認"
+  },
+  {
+   "artist": "Likkle Mai",
+   "album": "mairation",
+   "year": 2009,
+   "label": "MK Starliner",
+   "country": "jp",
+   "faction": "jp-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "第三張，自營廠牌 MK Starliner，roots 慢拍與 dub 混音底，女聲旋律清楚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.9,
+    "why": "慢 roots、dub 低頻回音，女聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f83cd40c-a4ff-4220-9abd-770a8e645fbd",
+    "https://www.discogs.com/release/2059931-Likkle-Mai-Mairation",
+    "https://coverartarchive.org/release-group/f83cd40c-a4ff-4220-9abd-770a8e645fbd/front"
+   ],
+   "mbRgMbid": "f83cd40c-a4ff-4220-9abd-770a8e645fbd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "人聲 reggae 盤 y 邊界"
+  },
+  {
+   "artist": "Likkle Mai",
+   "album": "Dub Is the Universe",
+   "year": 2012,
+   "label": "MK Starliner",
+   "country": "jp",
+   "faction": "jp-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "標題就是 dub 宣言的第四張，人聲 roots 曲全以 dub 混音處理，回音與低頻比前作厚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "慢 dub 拍、長回音厚低頻，女聲旋律溫"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/7733102-Likkle-Mai-Dub-Is-The-Universe",
+    "https://www.discogs.com/artist/677447"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Likkle Mai\" → 只有 Roots Candy／MW／mairation 三個 RG",
+     "releasegroup:\"Dub Is The Universe\" → 0 筆"
+    ],
+    "checkedAt": "2026-10-23",
+    "conclusion": "MB 無此 RG；Discogs release 7733102 為 MK Starliner MKD-003 CD Album"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/7733102-Likkle-Mai-Dub-Is-The-Universe",
+    "https://www.discogs.com/artist/677447"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面用 Discogs 圖；iTunes 查無"
+  },
+  {
+   "artist": "Polaris",
+   "album": "Union",
+   "year": 2005,
+   "label": "Familysong",
+   "country": "jp",
+   "faction": "jp-downtempo",
+   "genres": [
+    "rock"
+   ],
+   "why": "オオヤユウスケ＋前 Fishmans 貝斯手柏原譲的慢 dub pop，殘響吉他霧與厚貝斯；池中同團《Family》《Home》落恍惚（y0.9–1.0 z0.9–1.0）",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.8,
+    "why": "慢拍 dub 底，厚低頻殘響吉他，人聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a865a8ce-9717-4573-bed2-b7ac279ce7a0",
+    "https://coverartarchive.org/release-group/a865a8ce-9717-4573-bed2-b7ac279ce7a0/front",
+    "https://music.apple.com/jp/album/union/77609459"
+   ],
+   "mbRgMbid": "a865a8ce-9717-4573-bed2-b7ac279ce7a0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ml4 曾提、主線以「同團留三張」汰（非聲音理由）；同藝人無張數上限，重提"
+  },
+  {
+   "artist": "Polaris",
+   "album": "Music",
+   "year": 2015,
+   "label": "Familysong",
+   "country": "jp",
+   "faction": "jp-downtempo",
+   "genres": [
+    "rock"
+   ],
+   "why": "暌違多年的全長作，延續慢 dub 拍＋殘響吉他霧的做法，池中同團兩張落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "慢拍、dub 低頻與殘響，人聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/16995b7c-7ed2-44eb-92e7-f992a8b04634",
+    "https://coverartarchive.org/release-group/16995b7c-7ed2-44eb-92e7-f992a8b04634/front"
+   ],
+   "mbRgMbid": "16995b7c-7ed2-44eb-92e7-f992a8b04634",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ml4 曾提、以「同團留三張」汰；y 估 0.9 邊界"
+  },
+  {
+   "artist": "Mad Professor & The Mad Men Band",
+   "album": "Dub You Crazy With Love (Part 2)",
+   "year": 2000,
+   "label": "Ariwa Sounds",
+   "country": "gb",
+   "faction": "uk-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "Ariwa 的 lovers rock dub 系列第二集，情歌旋律留在回音裡；池中第一集《Dub You Crazy With Love》落恍惚（z0.9），是 Mad Professor 最暖的一線",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": 0.8,
+    "why": "慢 lovers 拍，厚低頻長回音，情歌旋律殘片溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c74f9766-66e6-4c1e-be66-d1b4b4276237",
+    "https://coverartarchive.org/release-group/c74f9766-66e6-4c1e-be66-d1b4b4276237/front"
+   ],
+   "mbRgMbid": "c74f9766-66e6-4c1e-be66-d1b4b4276237",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Mad Professor",
+   "uncertain": "ml38 同時收 UK dub，可能撞提"
+  },
+  {
+   "artist": "Mad Professor",
+   "album": "Bitter Sweet Dub (Dub You Crazy With Love) (Part.3)",
+   "year": 2008,
+   "label": "Ariwa",
+   "country": "gb",
+   "faction": "uk-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "lovers dub 系列第三集，同樣以 Ariwa 情歌為底做 dub，旋律保留多",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "慢拍、厚低頻回音，情歌旋律溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5f67d39d-d925-466d-bd06-aea4f64a6aa8",
+    "https://music.apple.com/jp/album/bitter-sweet-dub/299317244"
+   ],
+   "mbRgMbid": "5f67d39d-d925-466d-bd06-aea4f64a6aa8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無圖，封面用 iTunes（Bitter Sweet Dub!）；ml38 可能撞提"
+  },
+  {
+   "artist": "Hollie Cook",
+   "album": "Hollie Cook",
+   "year": 2011,
+   "label": "Mr Bongo",
+   "country": "gb",
+   "faction": "uk-dub",
+   "genres": [
+    "world",
+    "soul"
+   ],
+   "why": "Prince Fatty 製作的倫敦 lovers rock 首作，類比濕混音、dub 回音與厚貝斯包住甜美女聲；池中 Prince Fatty 落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 1.3,
+    "why": "慢 lovers 拍、類比回音厚貝斯，女聲甜暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/57c5d8b7-dd50-4789-b86e-c12197a8d391",
+    "https://coverartarchive.org/release-group/57c5d8b7-dd50-4789-b86e-c12197a8d391/front"
+   ],
+   "mbRgMbid": "57c5d8b7-dd50-4789-b86e-c12197a8d391",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "非 90s digital dub，屬 UK dub 圈的 lovers 延伸；人聲盤 y 邊界"
+  },
+  {
+   "artist": "Hollie Cook",
+   "album": "Twice",
+   "year": 2014,
+   "label": "Mr Bongo",
+   "country": "gb",
+   "faction": "uk-dub",
+   "genres": [
+    "world",
+    "soul"
+   ],
+   "why": "第二張仍由 Prince Fatty 製作，弦樂墊＋dub 回音的「tropical pop」lovers，慢而濕",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 1.3,
+    "why": "慢拍、弦樂墊與 dub 回音，女聲甜暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e86b0f65-243d-4d96-8984-738f9f17f1e3",
+    "https://coverartarchive.org/release-group/e86b0f65-243d-4d96-8984-738f9f17f1e3/front"
+   ],
+   "mbRgMbid": "e86b0f65-243d-4d96-8984-738f9f17f1e3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "人聲盤 y 邊界"
+  },
+  {
+   "artist": "松永孝義",
+   "album": "The Main Man",
+   "year": 2004,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-dub",
+   "genres": [
+    "world",
+    "jazz"
+   ],
+   "why": "Mute Beat 貝斯手的唯一個人錄音室作，roots reggae 慢拍＋爵士與夏威夷曲旋律，貝斯厚、管樂溫；Mute Beat 圈有旋律的那一面",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.9,
+    "why": "慢 reggae 拍，貝斯厚、殘響溫，旋律清楚"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/3833391-Takayoshi-Matsunaga-The-Main-Man",
+    "https://music.apple.com/jp/album/the-main-man/735099638"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Takayoshi Matsunaga\" → 0 筆；MB 有藝人 松永孝義 c3476c5d 但無 release group",
+     "releasegroup:\"The Main Man\" AND artist:\"松永孝義\" → 0 筆"
+    ],
+    "checkedAt": "2026-10-23",
+    "conclusion": "MB 無此 RG；Discogs master 3833391、Apple Music 有 10 曲全長版"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/3833391-Takayoshi-Matsunaga-The-Main-Man",
+    "https://music.apple.com/jp/album/the-main-man/735099638"
+   ],
+   "releaseException": "",
+   "queryAlias": "Takayoshi Matsunaga",
+   "uncertain": "Discogs 只標 Jazz/Reggae，聲音細節靠研究層；label 待查"
+  },
+  {
+   "artist": "Horace Andy & Mad Professor",
+   "album": "From the Roots",
+   "year": 2004,
+   "label": "RAS Records",
+   "country": "gb",
+   "faction": "uk-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "Horace Andy 的顫音旋律配 Mad Professor 的 Ariwa 製作，roots 慢拍＋厚低頻 dub 處理；池中 Horace Andy 多張落恍惚（z0.4–0.7）",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "慢 roots 拍、厚低頻回音，顫音人聲旋律溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/450f8815-fbeb-3484-ad91-95af49c4101a",
+    "https://coverartarchive.org/release-group/450f8815-fbeb-3484-ad91-95af49c4101a/front"
+   ],
+   "mbRgMbid": "450f8815-fbeb-3484-ad91-95af49c4101a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Horace Andy",
+   "uncertain": "z 估 0.6 邊界；ml38 可能撞提"
+  },
+  {
+   "artist": "Horace Andy",
+   "album": "Midnight Rocker",
+   "year": 2022,
+   "label": "On-U Sound",
+   "country": "gb",
+   "faction": "uk-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "Adrian Sherwood／On-U 製作的晚年 roots 盤，慢拍、厚低頻與 dub 回音包住 Horace Andy 的旋律",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": 0.6,
+    "why": "慢拍、厚低頻 dub 回音，人聲旋律溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ef4ceb1b-7e31-4620-a460-59c9054d99bb",
+    "https://coverartarchive.org/release-group/ef4ceb1b-7e31-4620-a460-59c9054d99bb/front"
+   ],
+   "mbRgMbid": "ef4ceb1b-7e31-4620-a460-59c9054d99bb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "On-U 混音色溫常往 0 收（池中 Sherwood／AHC 偏冷），z 邊界"
+  },
+  {
+   "artist": "BudaMunk & J.Lamotta",
+   "album": "Searching Skies",
+   "year": 2021,
+   "label": "Jakarta Records",
+   "country": "jp",
+   "faction": "jp-downtempo",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "東京 beat 圈製作人 BudaMunk 的 dusty 慢拍配 J.Lamotta すずめ 的 neo-soul 女聲，Dilla 系鬆拍＋磁帶糊，旋律溫柔清楚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 1,
+    "why": "鬆慢 boom bap、dusty 低頻糊，neo-soul 女聲暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f18cd727-12fd-4f7b-87e3-99a18a185042",
+    "https://coverartarchive.org/release-group/f18cd727-12fd-4f7b-87e3-99a18a185042/front",
+    "https://music.apple.com/jp/album/searching-skies/1592943524"
+   ],
+   "mbRgMbid": "f18cd727-12fd-4f7b-87e3-99a18a185042",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "BudaMunk",
+   "uncertain": "日本 downtempo 的 beat 支線；池中同型（Nujabes 系）y 0.5–1.0 不穩"
+  },
+  {
+   "artist": "BudaMunk",
+   "album": "Movin' Scent",
+   "year": 2019,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-downtempo",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "BudaMunk 的器樂 beat 專輯，爵士／靈魂取樣磨成煙霧狀的鬆拍，低頻厚、糊",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.7,
+    "why": "鬆慢拍、dusty 取樣糊、低頻厚，爵士和弦溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/693f72f9-3b54-4401-b84a-f92151bb0e51",
+    "https://coverartarchive.org/release-group/693f72f9-3b54-4401-b84a-f92151bb0e51/front",
+    "https://music.apple.com/jp/album/movin-scent/1414901259"
+   ],
+   "mbRgMbid": "693f72f9-3b54-4401-b84a-f92151bb0e51",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "器樂 beat 色溫可能往 0.4 收（Quasimoto z0.3 先例）；iTunes 標 2018-08-22，MB 2019-08-29，首發年待研究層確認"
+  },
+  {
+   "artist": "mabanua",
+   "album": "Done Already",
+   "year": 2008,
+   "label": "origami PRODUCTIONS",
+   "country": "jp",
+   "faction": "jp-downtempo",
+   "genres": [
+    "soul",
+    "hiphop"
+   ],
+   "why": "鼓手兼製作人 mabanua 的首張，自彈自唱的 lo-fi soul／beat，慢拍、磁帶糊的鼓與溫熱人聲",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 1,
+    "why": "鬆慢拍、lo-fi 糊鼓與低頻，人聲旋律暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e0149eb2-e9c4-47cd-bc35-7d07f13790fd",
+    "https://coverartarchive.org/release-group/e0149eb2-e9c4-47cd-bc35-7d07f13790fd/front",
+    "https://www.discogs.com/release/2578763"
+   ],
+   "mbRgMbid": "e0149eb2-e9c4-47cd-bc35-7d07f13790fd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.9 邊界、x 可能 2.8；聲音細節要研究層查"
+  },
+  {
+   "artist": "Force of Nature / Tsutchie",
+   "album": "samurai champloo music record: masta",
+   "year": 2004,
+   "label": "Victor",
+   "country": "jp",
+   "faction": "jp-beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "《Samurai Champloo》原聲第二集（Force of Nature 與 Tsutchie），同系列第一集 Nujabes／Fat Jon《departure》池中落恍惚（2.6/0.9/0.8）；dusty 慢拍＋爵士取樣",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "鬆慢 boom bap、dusty 取樣糊，爵士旋律溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1b6101ec-146c-33e4-871d-048ad3557f62",
+    "https://coverartarchive.org/release-group/1b6101ec-146c-33e4-871d-048ad3557f62/front"
+   ],
+   "mbRgMbid": "1b6101ec-146c-33e4-871d-048ad3557f62",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Tsutchie",
+   "uncertain": "原聲帶（MB Album+Soundtrack），先例同系列《departure》已在池；Force of Nature 曲偏 funky，x 可能 2.8"
+  },
+  {
+   "artist": "Tsutchie",
+   "album": "samurai champloo music record: playlist",
+   "year": 2004,
+   "label": "Victor",
+   "country": "jp",
+   "faction": "jp-beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "《Samurai Champloo》原聲第四集，Tsutchie 主導的 lo-fi 爵士 beat，鬆拍與溫暖取樣，與池中《departure》同型",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "鬆慢拍、dusty 低頻糊，爵士／靈魂取樣溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/655400ef-8e44-3604-8fe5-86c9565b5aa5",
+    "https://coverartarchive.org/release-group/655400ef-8e44-3604-8fe5-86c9565b5aa5/front"
+   ],
+   "mbRgMbid": "655400ef-8e44-3604-8fe5-86c9565b5aa5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "原聲帶（Album+Soundtrack）；y 0.9 邊界"
+  },
+  {
+   "artist": "Tsutchie",
+   "album": "THANKS FOR LISTENING",
+   "year": 2002,
+   "label": "cutting edge",
+   "country": "jp",
+   "faction": "jp-beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Shakkazombie 製作人 Tsutchie 的器樂首作，爵士 beat 鬆慢、取樣顆粒糊，Champloo 聲音的前身",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.7,
+    "why": "鬆慢拍、取樣顆粒糊、低頻厚，爵士和弦溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9f56fb1a-5414-31c8-8a70-077eccaf837e",
+    "https://coverartarchive.org/release-group/9f56fb1a-5414-31c8-8a70-077eccaf837e/front"
+   ],
+   "mbRgMbid": "9f56fb1a-5414-31c8-8a70-077eccaf837e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "聲音細節無來源（憑製作人風格推），研究層要查；z 器樂 beat 可能往 0.4 收"
+  },
+  {
+   "artist": "Tsutchie",
+   "album": "this is a recording",
+   "year": 2003,
+   "label": "1138",
+   "country": "jp",
+   "faction": "jp-beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Tsutchie 第二張器樂作，延續 dusty 爵士 beat 與鬆拍",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.7,
+    "why": "鬆慢拍、dusty 糊，爵士取樣溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/893b82da-82dd-4caa-96b0-e16b89f32c40",
+    "https://coverartarchive.org/release-group/893b82da-82dd-4caa-96b0-e16b89f32c40/front"
+   ],
+   "mbRgMbid": "893b82da-82dd-4caa-96b0-e16b89f32c40",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上，聲音細節待查"
+  },
+  {
+   "artist": "Nomak",
+   "album": "Calm",
+   "year": 2007,
+   "label": "Huge Soul",
+   "country": "jp",
+   "faction": "jp-beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "日本 jazzy hip-hop 製作人 Nomak 的首張原創專輯，弦樂與鋼琴旋律清楚、鬆拍",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 1.1,
+    "why": "鬆慢拍、取樣弦樂墊，鋼琴旋律清楚暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d0912658-703b-364b-a90b-4aeeee1f9f06",
+    "https://coverartarchive.org/release-group/d0912658-703b-364b-a90b-4aeeee1f9f06/front"
+   ],
+   "mbRgMbid": "d0912658-703b-364b-a90b-4aeeee1f9f06",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.8 貼門檻：Nujabes 系乾淨鋼琴盤池中 y 0.5–0.7 先例，主線可優先汰換；與池中 CALM 同名專輯不同人"
+  },
+  {
+   "artist": "DJ Deckstream",
+   "album": "Soundtracks",
+   "year": 2007,
+   "label": "Lexington",
+   "country": "jp",
+   "faction": "jp-beats",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "日本 beat 製作人的首張，靈魂取樣＋客座女聲的慢板 jazzy hip-hop，旋律溫熱",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 1.1,
+    "why": "鬆慢拍、靈魂取樣與低頻，女聲旋律暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/31ccee96-3229-345c-81d7-24a0c44af574",
+    "https://coverartarchive.org/release-group/31ccee96-3229-345c-81d7-24a0c44af574/front",
+    "https://www.wikidata.org/wiki/Q11196697"
+   ],
+   "mbRgMbid": "31ccee96-3229-345c-81d7-24a0c44af574",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "聲音細節待查；y、x 都可能貼邊"
+  },
+  {
+   "artist": "DJ Deckstream",
+   "album": "Soundtracks 2",
+   "year": 2009,
+   "label": "Lexington",
+   "country": "jp",
+   "faction": "jp-beats",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "續作，同樣靈魂取樣＋客座人聲的慢板 beat",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 1,
+    "why": "鬆慢拍、靈魂取樣，人聲旋律暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7b09b95a-0ffe-3fed-a763-04e53e5cdf9a",
+    "https://coverartarchive.org/release-group/7b09b95a-0ffe-3fed-a763-04e53e5cdf9a/front"
+   ],
+   "mbRgMbid": "7b09b95a-0ffe-3fed-a763-04e53e5cdf9a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上；兩張同團主線可擇一"
+  },
+  {
+   "artist": "Michita",
+   "album": "Dawning",
+   "year": 2009,
+   "label": "ILL DANCE MUSIC.",
+   "country": "jp",
+   "faction": "jp-beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "日本 jazzy beat 製作人 Michita 的器樂作，鋼琴與爵士取樣的鬆拍",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 1,
+    "why": "鬆慢拍、鋼琴爵士取樣，旋律溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/95e90321-f794-4092-b5c4-091e3a70b88e",
+    "https://coverartarchive.org/release-group/95e90321-f794-4092-b5c4-091e3a70b88e/front"
+   ],
+   "mbRgMbid": "95e90321-f794-4092-b5c4-091e3a70b88e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.8 貼門檻（乾淨鋼琴 beat 判輕風險），conf low"
+  },
+  {
+   "artist": "Likkle Mai",
+   "album": "MW",
+   "year": 2007,
+   "label": "MK Starliner",
+   "country": "jp",
+   "faction": "jp-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "第二張、自營 MK Starliner 首發，roots 慢拍＋dub 混音，女聲旋律清楚（含〈The Harder They Come〉翻唱）",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.9,
+    "why": "慢 roots 拍、dub 回音厚貝斯，女聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/193bda9d-7986-494d-aa0b-30e31c254927",
+    "https://coverartarchive.org/release-group/193bda9d-7986-494d-aa0b-30e31c254927/front",
+    "https://www.discogs.com/release/2059838-Likkle-Mai-MW"
+   ],
+   "mbRgMbid": "193bda9d-7986-494d-aa0b-30e31c254927",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "人聲 reggae 盤 y 邊界；9 曲全長"
+  }
+ ],
+ "notes": [
+  "只交 21 張（目標 54），照實交不湊數。主場景（日本 dub／downtempo）15 張：jp-dub 6（Little Tempo dub 版 2、Likkle Mai 3、松永孝義 1）＋jp-downtempo 9（Ryukyu Underground 4、Polaris 2、BudaMunk 2、mabanua 1）；擴寫 UK dub 6（Mad Professor lovers dub 2、Hollie Cook 2、Horace Andy 2）。",
+  "池中同藝人三軸擋下（不提）：Mute Beat（《Flower》《Dub Wise》z−0.4）、こだま和文（兩張 z−0.4／−0.6；含 Kodama & Dub Station 系）、Dry & Heavy（z 0／−0.4，含《One Punch》《From Creation》《Jaws of the Tiger》）、Oki Dub Ainu Band（z−0.3）、Audio Active（x2.9 貼邊）、Kyoto Jazz Massive／Sextet、Cro-Magnon、Jazztronik、Mondo Grosso、FreeTEMPO（全落雀躍）、CALM（y−0.3／−0.4 判輕）、Rei Harakami、砂原良徳（判輕）、sugar plant（z 0.0–0.2 貼邊）、DJ Krush（全冷）、Uyama Hiroto（y0.7 貼邊，其餘盤未提）。UK 端：Zion Train、Dub Syndicate、Alpha & Omega、Bush Chemists、Disciples、Rootsman、Rockers Hi-Fi、African Head Charge 主線盤、Jah Shaka 全落頹靡；Banco de Gaia y0.6–0.7 貼邊。",
+  "Little Tempo 只收 dub 版：原盤《Ron Riddim》池中 y0.2、dub 版兩張 y0.8–1.3，所以《Kedaco Sounds》《Super Tempo》《Fireblender》（Space Mambo／Safari Skank 偏輕快）《山と海》《太陽の花嫁》不提；《Musical Brain Food》ml9 已汰。",
+  "重提 ml4 的 Polaris《Union》《Music》：ml4 主線汰的理由是「同團留三張」而非聲音，池中《Family》《Home》y0.9–1.0 z0.9–1.0；同藝人無張數上限。",
+  "考慮過沒提：Silent Poets（《Dawn》有 The Bug＋Miss Red、整體憂鬱，《To Come…》abstract，z 估 <0.5）；Gota／屋敷豪太（acid jazz／soul groove，x≈3）；Sly Mongoose（funk／disco）；Hakase-Sun《A Little Bit of Slumber》（器樂 lovers 翻唱，y 估 0.6–0.7）；Bagdad Cafe the trench town、Pushim（人聲 lovers，y 風險）；DJ Okawari、Cradle Orchestra、Ovall、Nomak（乾淨爵士嘻哈，y 貼邊）；Kenmochi Hidefumi（實為 footwork／club）；Gak Sato、Chari Chari、Ram Jam World（聲音把握不足）；Pecker《21st Century Dub》、Jah Wobble《Japanese Dub》（池中 Wobble z0.1–0.4）；Dubsensemania、Rub-a-Dub Market、Undefined（digital／冷硬）；Little Tempo《Latitude》（5 曲迷你盤）、Polaris《Tide》（6 曲）；Hollie Cook《Vessel of Love》、各 in Dub 版（MB 次類型 Remix）。",
+  "人工身分 3 張（MB 查無）：Little Tempo《Ron Riddim In Dub》（Discogs 2×12\" Album）、Likkle Mai《Dub Is the Universe》、松永孝義《The Main Man》。其餘 18 張 MB 釘住，皆 primary-type=Album 無次類型。",
+  "封面：CAA 有 12 張；Little Tempo《KEDACO IS BORN》、Ryukyu Underground 4 張、Mad Professor《Bitter Sweet Dub》、松永孝義用 iTunes；《Ron Riddim In Dub》《Dub Is the Universe》用 Discogs 圖。",
+  "跨組：ml38 同時收 UK dub，Mad Professor 兩張、Horace Andy 兩張、Hollie Cook 兩張可能撞提，以先合併者為準。去重：每張用原文名／羅馬字／別名跑過 seed 去重與 curation-*.json＋desc-tools 卡單，全 0。",
+  "色溫風險：ml4 主線結論「東亞暖 dub 色溫策展普遍高估 0.4–0.6」，本組 z 估 ≥0.6；仍然最可能掉格的是 Horace Andy 兩張（z0.6）、BudaMunk《Movin' Scent》、Polaris《Music》與 mabanua（y 0.9 邊界）。WebSearch 用 2 次。",
+  "第二輪（主線裁定擴到日本 beat 與 reggae 人聲）append 9 張：jp-beats 8（Tsutchie 4 含 Samurai Champloo 原聲 2、Nomak《Calm》、DJ Deckstream 2、Michita《Dawning》）＋jp-dub 1（Likkle Mai《MW》）。合計 30 張。全部 MB 釘住、CAA 有圖，去重（含 ml3／ml4、dt1–dt5、desc-tools 卡單）全 0。",
+  "第二輪池中參照：日本 beat 圈幾乎都不在池；同型參照 Nujabes y0.5–1.0、Uyama Hiroto 0.7、Fat Jon 0.6、Emancipator 0.5–0.6、Mndsgn 0.6–1.1、Substantial 0.8——這一型 y 普遍貼邊，Nomak、Michita（y 估 0.8）最可能判輕，Champloo 原聲有《departure》2.6/0.9/0.8 先例最穩。",
+  "第二輪沒提：Kenichiro Nishihara、re:plus（乾淨鋼琴／lounge，判輕）；DJ Mitsu the Beats、Shing02、Grooveman Spot（boom bap／饒舌，x≈3）；Kan Sano、Ovall（neo-soul，y 估 0.6，且屬 ml22 範圍）；Kuniyuki Takahashi（deep house，聲音把握不足）；Robert de Boron（CAA 無圖、同 Michita 型）；Force of Nature《Dig and Edit》（edit 集）；Ta-shi、Monorale（MB 查不到對應藝人）。reggae 人聲：Bagdad Cafe the trench town（《Love Sunset》7 曲、《Movin' On》Victor 大廠製作偏乾淨，y 風險）、asuka ando、Iria《Japanese Lovers》（MB 無 RG、聲音無把握）、Pushim／Rankin 系 dancehall 都沒提。WebSearch 第二輪 1 次。"
+ ]
+}
