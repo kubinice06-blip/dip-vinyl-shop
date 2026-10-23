@@ -13,3 +13,8 @@
 - Samurai Champloo 兩張原聲（Tsutchie）MB 為 Album＋Soundtrack：原創配樂專輯、池中同系列《departure》已在，照先例收，不走 §5.6。
 - Polaris《Union》《Music》ml4 曾因「同團留三張」汰掉，非聲音理由；池中同團兩張 y、z 0.9–1.0，收。
 - 跨分支去重：對 origin 前 40 個 `claude/*` 分支與 main 的 seed 與卡單，除 Hollie Cook《Twice》外 0 撞（ml38 分支尚未推出，寫入前再查一次）。
+
+## 研究 e 組
+- 19281：DJ Deckstream《Soundtracks》《Soundtracks 2》兩張實際都是「每曲一位美國 MC／歌手領唱」的 jazzy hip-hop／R&B 企劃盤（Discogs 風格含 Contemporary R&B、RnB/Swing），不是器樂 beat 盤；BPM、取樣 dusty 程度、低頻、殘響、類比或數位皆查無樂評，facts 只寫可考的客座、混音、曲長與風格標籤，status thin，兩張都寫「moodGuess 存疑」。
+- 19282：Likkle Mai《MW》身分核對無誤（2007-07-21、MK Starliner、MKD-001、9 曲）；Discogs 風格標 Dub，但無來源證實有 dub 版曲目（curatorWhy 的「dub 混音」存疑）；編制為樂團＋銅管，多首用 drum programming，「重」與速度無來源。likklemai.com 已被賭博站接管，不當來源。
+- 19283：研究層 WebSearch 用 3 次；樂評站（CDJournal、Tower、Billboard Japan、ototoy 商品頁）多數打不開或無此盤，不硬湊聲音事實。
