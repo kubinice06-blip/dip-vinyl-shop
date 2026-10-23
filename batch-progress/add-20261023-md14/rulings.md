@@ -106,3 +106,11 @@
   - `desc2:Jim Williams|Possessor`：刪「開頭那串形容出自樂評。」（hook 保留，作為聲音陳述）。
   - `desc2:Anna Thorvaldsdottir|Aerial`：刪「樂評說」。
 - 其餘 35 張逐張審過未改字。媒體名、榜單名次、「據說」全批 0。
+
+## 上線與評分（2026-10-23，主線）（條號 17794–17796）
+- **17794**：上線 42 張：card_catalog 42／42、KV 42 鍵回讀逐字一致、試聽 39 ready／3 unavailable、seed +42、published gate 0 error。封面 CAA 41、Apple 1（Tarmia《Amnesia: The Dark Descent》CAA release-group front 與 release 500 縮圖 live-check 連續 500，改 Apple 1501860159 官方圖、目視相符）。上線前對 origin 59 個分支 seed 去重 0 撞。
+- **17795**：類型樹 42／42 落位（`genre-l3-artist-map.json` 補 4 張 → electronic/ambient/dark-ambient：《The Zone Of Interest》《Hellblade》《Scorn》《Sinister》）；抽卡封面重建。
+- **17796**：**落格率 42/42＝100%**（`batch-progress/mood-axes/score-md14/`）。x 1.1–2.4、y +0.5～+1.8、z 全 ≤ −1.0（10-23「酸＝冷」規則：無調、陰森的配樂一律冷）。研究層汰 8（混雜歌曲、乾淨管弦、暖）＋撞池攔 1 是命中率高的主因；配樂場景池子還大（策展 54 只用 42，暗色影集與恐怖遊戲還有二線）。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Mica Levi & Johnnie Burn、Mark Korven、Hans Zimmer & Benjamin Wallfisch、Brian Reitzell、Mikko Tarmia、Petri Alanko & Martin Stig Andersen、David García Díaz、Aubrey Hodges、Aethek & Lustmord、Tobe Hooper and Wayne Bell、Jason Graves、Jed Kurzel、Christopher Young、Adam Janota Bzowski、Jim Williams、Danny Bensi & Saunder Jurriaans、Jóhann Jóhannsson & Yair Elazar Glotman、Ben Frost & Daníel Bjarnason、Anna Thorvaldsdottir、Münchener Kammerorchester & Christoph Poppen（20 個掛名；合署掛名切批時可拆成個人）。

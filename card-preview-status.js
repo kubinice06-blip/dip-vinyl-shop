@@ -3188,4 +3188,7 @@ window.DipPreviewStatus = Object.freeze({
   "s.l.a.c.k.|whalabout?": "unavailable",
   "蛋堡|winter sweet": "unavailable",
   "蛋堡|家常音樂": "unavailable",
+  "mica levi & johnnie burn|the zone of interest": "unavailable",
+  "akira yamaoka|silent hill: homecoming (soundtrack)": "unavailable",
+  "aethek & lustmord|scorn: original soundtrack": "unavailable",
 });

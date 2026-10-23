@@ -85,3 +85,11 @@
   - `desc2:Sean Nicholas Savage|Bermuda Waterfall`：「歌大多在旅途中寫就，一整張寫給朋友們。」→「歌大多在旅途中寫就。」（note 原文是「據說整張寫給朋友」，單一樂評轉述，寫作層改成直述等於把傳聞當事實，整格拿掉；212→203 字）。
   - `desc2:Ducktails|Jersey Devil`：刪「整張被形容成適合配清晨咖啡的音樂。」（單源評價句；203→186 字）。
 - **15515** 其餘 8 張逐張審過未改字。Drugdealer 正文「這回收得清醒」與本批收錄理由（濕）有張力——研究稿列中度存疑，留給上線評分判，出格就記進 HANDOFF 坑。
+
+## 上線與評分（2026-10-23，主線）（條號 15516–15518）
+- **15516**：上線 10 張：card_catalog 10／10、KV 10 鍵回讀逐字一致、試聽 10 ready、seed +10、published gate 0 error。封面 CAA 10，live-check 全 200。上線前對 origin 59 個分支 seed 去重 0 撞。
+- **15517**：類型樹 10／10 落位（`genre-l3-artist-map.json` 補：Lewis ×2、Ducktails → pop/pop-rock/soft-rock；Michael Seyer → pop/indie-pop/bedroom；Mndsgn → electronic/downtempo/beats）。
+- **15518**：**落格率 10/10＝100%**（`batch-progress/mood-axes/score-ml19/`）。貼邊 2 張：Savage《Yummycoma》y 0.5、Drugdealer y 0.6。**但產量極低**：策展 20、研究汰 9、審稿汰 1 → 10。經典 city pop／AOR 在現行質地尺下全判輕，能落恍惚的只有磁帶飽和／殘響淹沒的復興盤與私壓盤，ml19／ml28 場景視為見底，不再派。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Drugdealer、Sean Nicholas Savage、Lewis、Ducktails、Pure Bathing Culture、Sweetback、Michael Seyer（7 位）。

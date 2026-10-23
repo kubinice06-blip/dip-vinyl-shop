@@ -2,7 +2,7 @@
  "schemaVersion": 1,
  "batch": "2026-10-20-md14",
  "batchNote": "薄細項策展線（add-20261023-md14）",
- "createdAt": "2026-10-23T07:24:24Z",
+ "createdAt": "2026-10-23T07:39:19Z",
  "albums": [
   {
    "artist": "Jóhann Jóhannsson",
@@ -28,7 +28,7 @@
     "url": "https://coverartarchive.org/release-group/771042e4-5d18-4f47-a2bf-51bc51b37c2c/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -38,7 +38,7 @@
     "accessibility": 3,
     "listeners": 854,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 854）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：大片配樂、國際正常流通"
    },
    "rarity": "uncommon",
@@ -63,17 +63,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d7/74/2f/d7742f32-c5f7-6cc2-09c9-33250d9c9541/mzaf_11562824078936812222.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1440650889",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1440650889「Jóhann Jóhannsson《Sicario (Original Motion Picture Soundtrack)》」：曲目 18/18 對上 MB 原盤（Apple 共 19 軌），取第 1 軌〈Armoured Vehicle〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -101,7 +101,7 @@
     "url": "https://coverartarchive.org/release-group/30aa0e43-53d7-4d38-b851-20a183749b42/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -111,7 +111,7 @@
     "accessibility": 3,
     "listeners": 9274,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/4/3（Last.fm listeners 9274）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -135,17 +135,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6a/1c/44/6a1c4485-e1de-5ecf-6f1e-b1a4fd390e08/mzaf_6108052651567663098.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1571192392",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1571192392「Hildur Guðnadóttir《Sicario: Day of the Soldado (Original Motion Picture Soundtrack)》」：曲目 14/14 對上 MB 原盤（Apple 共 15 軌），取第 1 軌〈Attack〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -173,7 +173,7 @@
     "url": "https://coverartarchive.org/release-group/67fecb96-fb45-44ab-8281-cdea89762307/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -183,7 +183,7 @@
     "accessibility": 3,
     "listeners": 6,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 6）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -205,14 +205,14 @@
    "preview": {
     "status": "unavailable",
     "source": "none",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "Apple us 以藝人＋盤名與藝人目錄搜尋，無此配樂專輯條目（只有他人同名單曲）。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -240,7 +240,7 @@
     "url": "https://coverartarchive.org/release-group/d2f9a423-f406-4cec-9627-583eda66c0b7/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -250,7 +250,7 @@
     "accessibility": 3,
     "listeners": 3393,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/4/3（Last.fm listeners 3393）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -275,17 +275,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/88/f9/25/88f925f9-ff0b-05e8-a686-947ec19354a6/mzaf_9371374773283648652.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1468968055",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1468968055「Mica Levi《Monos (Original Motion Picture Soundtrack)》」：曲目 15/15 對上 MB 原盤（Apple 共 15 軌），取第 1 軌〈Guerreros〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -313,7 +313,7 @@
     "url": "https://coverartarchive.org/release-group/39ab4698-6409-481f-8533-b9166073a835/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -323,7 +323,7 @@
     "accessibility": 3,
     "listeners": 34,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 34）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：大片配樂、國際正常流通"
    },
    "rarity": "uncommon",
@@ -348,17 +348,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/34/91/0a/34910a2e-57cd-8684-dcf4-b1c4b4c56cc9/mzaf_14037566156737446161.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1497636592",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1497636592「Colin Stetson《Hereditary (Original Soundtrack Album)》」：曲目 23/23 對上 MB 原盤（Apple 共 23 軌），取第 1 軌〈Funeral〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -386,7 +386,7 @@
     "url": "https://coverartarchive.org/release-group/46aa0220-ca4a-4447-ac8c-cbec4c0538ef/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -396,7 +396,7 @@
     "accessibility": 3,
     "listeners": 80,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 80）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -424,17 +424,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f7/b5/96/f7b59605-3f80-4e11-0cac-979140045c63/mzaf_11610425202057886110.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1493809965",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1493809965「Colin Stetson《Color Out of Space (Original Motion Picture Soundtrack)》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈West of Arkham〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -461,7 +461,7 @@
     "url": "https://coverartarchive.org/release-group/c79d2272-1d24-4e4a-beba-54efa152ab6c/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -471,7 +471,7 @@
     "accessibility": 3,
     "listeners": 326,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 326）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -495,17 +495,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/eb/e1/75/ebe17507-df48-d7ed-3b28-7e7ee0d89c2d/mzaf_10965620555092930666.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1481293093",
     "storefront": "FR",
     "collectionExplicitness": "notExplicit",
     "note": "Apple fr 1481293093「Mark Korven《The Lighthouse (Original Motion Picture Soundtrack)》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Arrival (From \"The Lighthouse\" Soundtrack)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -532,7 +532,7 @@
     "url": "https://coverartarchive.org/release-group/22c73225-8a2e-4e92-a00e-68960dc1ff4a/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -542,7 +542,7 @@
     "accessibility": 3,
     "listeners": 3884,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/4/3（Last.fm listeners 3884）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：大片配樂、國際正常流通"
    },
    "rarity": "uncommon",
@@ -566,17 +566,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/63/12/a36312ec-dc5d-26f2-e9d3-3c14a594eec0/mzaf_15506058218403247384.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1291056782",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1291056782「Hans Zimmer & Benjamin Wallfisch《Blade Runner 2049 (Original Motion Picture Soundtrack)》」：曲目 24/24 對上 MB 原盤（Apple 共 24 軌），取第 1 軌〈2049〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -603,7 +603,7 @@
     "url": "https://coverartarchive.org/release-group/7a1f8f60-ab40-4e64-ace4-fc30a4c97b9a/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -613,7 +613,7 @@
     "accessibility": 3,
     "listeners": 527,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 527）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -640,17 +640,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ce/0c/01/ce0c0137-b8f1-7fbb-5723-afe7e342ac47/mzaf_17473537485554940014.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1507014668",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1507014668「Mark Korven《The Witch (Original Motion Picture Soundtrack)》」：曲目 14/16 對上 MB 原盤（Apple 共 16 軌），取第 1 軌〈What Went We〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -677,7 +677,7 @@
     "url": "https://coverartarchive.org/release-group/e852ead2-887b-41be-8370-42d47827b692/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -687,7 +687,7 @@
     "accessibility": 3,
     "listeners": 1,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -715,17 +715,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b4/71/15/b4711563-7325-9ec0-2a54-42235c0e3831/mzaf_12024879369624233111.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1450117483",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1450117483「Lustmord《First Reformed (Extended Motion Picture Soundtrack)》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Revelation〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -752,7 +752,7 @@
     "url": "https://coverartarchive.org/release-group/f1a6217f-b731-43ac-8283-3b500a0944bc/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -762,7 +762,7 @@
     "accessibility": 3,
     "listeners": 44,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 44）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -790,17 +790,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music4/v4/ee/75/85/ee7585b2-5972-4145-7294-aa3c67983ad8/mzaf_9181113460787098391.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "901606314",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 901606314「Brian Reitzell《Hannibal Season 1, Vol. 1 (Original Television Soundtrack)》」：曲目 7/7 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Apéritif〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -827,7 +827,7 @@
     "url": "https://coverartarchive.org/release-group/0d9b31f3-3603-4607-b237-e1517416fdd8/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -837,7 +837,7 @@
     "accessibility": 3,
     "listeners": 25,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 25）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -863,17 +863,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0e/45/5f/0e455f33-ce90-737c-2ef2-6772e12d0518/mzaf_7907812183063603445.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "906227711",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 906227711「Brian Reitzell《Hannibal Season 2, Vol. 1 (Original Television Soundtrack)》」：曲目 6/7 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Kaiseki〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -901,7 +901,7 @@
     "url": "https://coverartarchive.org/release-group/7073bc5c-6b03-3527-9164-0f34c3a5726e/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -911,7 +911,7 @@
     "accessibility": 3,
     "listeners": 232,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 232）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -937,17 +937,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d2/c3/fd/d2c3fd89-87fb-2746-22e1-009feb6159a0/mzaf_15411700121381224192.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "528471384",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 528471384「Akira Yamaoka《Silent Hill 4 - The Room (Original Soundtrack)》」：主線人工配對：Apple 22 軌單碟版，曲目 21 首對上 MB 原盤（MB 版另含特典碟），取第 1 軌〈Tender Sugar〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -975,7 +975,7 @@
     "url": "https://coverartarchive.org/release-group/86bbc702-c851-3a01-9b63-b1f008c28176/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -985,7 +985,7 @@
     "accessibility": 3,
     "listeners": 41,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 41）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -1009,14 +1009,14 @@
    "preview": {
     "status": "unavailable",
     "source": "none",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "Apple us 搜尋只有翻奏與他人單曲，無 Konami 官方原聲條目。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1043,7 +1043,7 @@
     "url": "https://coverartarchive.org/release-group/0512b548-54ff-48fe-b662-923a347ca68c/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -1053,7 +1053,7 @@
     "accessibility": 3,
     "listeners": 83,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 83）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -1078,17 +1078,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ce/97/90/ce97908a-85db-9eca-40e0-fc108afeeef9/mzaf_10269910656911091846.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "6795853099",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 6795853099「Akira Yamaoka《SILENT HILL 2 ORIGINAL SOUNDTRACK -2024-》」：曲目 8/10 對上 MB 原盤（Apple 共 93 軌），取第 1 軌〈Theme Of Laura II〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1113,12 +1113,13 @@
     "classical"
    ],
    "cover": {
-    "url": "https://coverartarchive.org/release-group/01177fc6-2c24-452b-84a2-3fe836b2d94f/front",
-    "source": "caa",
+    "source": "apple-verified-collection",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/aa/fa/04/aafa042c-7f93-3d7d-e7c5-0e531fd3ba58/0859711133503.png/600x600bb.jpg",
+    "note": "CAA release-group front 與 release 500 縮圖 live-check 連續 500；取已釘定試聽的 Apple 1501860159 官方圖，主線 2026-10-23 目視與盤名相符。",
+    "appleCollectionId": "1501860159",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
-    "visuallyVerified": true,
-    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true
    },
    "ratings": {
     "classic": 3,
@@ -1126,7 +1127,7 @@
     "accessibility": 3,
     "listeners": 2207,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 2207）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -1152,17 +1153,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/54/8b/14548bf9-72a5-0369-c5d7-53b140a6c322/mzaf_13514706303029363390.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1501860159",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1501860159「Mikko Tarmia《Amnesia: The Dark Descent (Original Game Soundtrack)》」：曲目 19/19 對上 MB 原盤（Apple 共 19 軌），取第 1 軌〈Menu Theme〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1189,7 +1190,7 @@
     "url": "https://coverartarchive.org/release-group/45ddfa40-c9b2-4f09-a9a2-d11d231666c8/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -1199,7 +1200,7 @@
     "accessibility": 3,
     "listeners": 38,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 38）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -1224,17 +1225,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d5/a2/be/d5a2be14-be84-5bf0-1942-d9a9b433ec85/mzaf_7451620290398843855.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "901603823",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 901603823「Brian Reitzell《Hannibal Season 1, Vol. 2 (Original Television Soundtrack)》」：曲目 6/6 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Fromage〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1261,7 +1262,7 @@
     "url": "https://coverartarchive.org/release-group/d9e23175-ecc1-4bdb-8f30-99f23c0a7274/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -1271,7 +1272,7 @@
     "accessibility": 3,
     "listeners": 662,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 662）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -1297,17 +1298,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0a/a6/73/0aa673ab-1fbd-9c08-faac-985f47949481/mzaf_4158864457391235222.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1504455699",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1504455699「Mikko Tarmia《Soma (Original Video Game Soundtrack)》」：曲目 24/24 對上 MB 原盤（Apple 共 24 軌），取第 1 軌〈Menu Music〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1335,7 +1336,7 @@
     "url": "https://coverartarchive.org/release-group/28f2980e-51fe-495c-8223-bc9149eec7d3/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -1345,7 +1346,7 @@
     "accessibility": 3,
     "listeners": 2593,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 2593）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -1370,17 +1371,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/fd/28/44/fd2844c5-242e-3062-ff72-aaa3e1972e55/mzaf_13846462991016599662.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1542994373",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1542994373「Mikko Tarmia《Amnesia: Rebirth (Original Game Soundtrack)》」：曲目 28/30 對上 MB 原盤（Apple 共 30 軌），取第 1 軌〈Menu Theme〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1407,7 +1408,7 @@
     "url": "https://coverartarchive.org/release-group/c8d11d44-6fac-41b9-9c83-aa28a420350c/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -1417,7 +1418,7 @@
     "accessibility": 3,
     "listeners": 23,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 23）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -1442,17 +1443,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6d/69/35/6d6935e8-113f-b4e9-06c5-727ce79cbbdb/mzaf_5617486111387392408.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1745066604",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1745066604「Petri Alanko & Martin Stig Andersen《Control (Original Soundtrack)》」：曲目 16/16 對上 MB 原盤（Apple 共 16 軌），取第 1 軌〈Et Ratio Principalis〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1479,7 +1480,7 @@
     "url": "https://coverartarchive.org/release-group/c6a0ab26-2cae-4064-b061-4c326692cfdb/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -1489,7 +1490,7 @@
     "accessibility": 3,
     "listeners": 14,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 14）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -1514,17 +1515,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7b/17/27/7b172710-5486-81bc-10f9-1942db9515ce/mzaf_3359374317913705752.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1445069569",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1445069569「David Garcia《Hellblade: Senua's Sacrifice (Original Soundtrack)》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Helheim〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1551,7 +1552,7 @@
     "url": "https://coverartarchive.org/release-group/3c4a907e-b096-4a45-bbdb-8525df3bc13c/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -1561,7 +1562,7 @@
     "accessibility": 3,
     "listeners": 96,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 96）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -1587,17 +1588,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b5/8f/08/b58f0825-afde-9688-bba8-4cf24652beb4/mzaf_4929243338815489036.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1505462710",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1505462710「Aubrey Hodges《Doom 64 (Original Video Game Soundtrack)》」：曲目 27/27 對上 MB 原盤（Apple 共 27 軌），取第 1 軌〈Doom 64 Main Theme〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1624,7 +1625,7 @@
     "url": "https://coverartarchive.org/release-group/f3bf9a52-66ba-4525-bcbf-0583c90c8ba7/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -1634,7 +1635,7 @@
     "accessibility": 3,
     "listeners": 84,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 84）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -1658,14 +1659,14 @@
    "preview": {
     "status": "unavailable",
     "source": "none",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "Apple us 以藝人＋盤名搜尋無條目。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1692,7 +1693,7 @@
     "url": "https://coverartarchive.org/release-group/e0f1638b-ac81-43aa-bd68-f6296be781b5/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -1702,7 +1703,7 @@
     "accessibility": 3,
     "listeners": 1418,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 1418）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -1729,17 +1730,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/82/a2/2a/82a22a2c-b2d1-0c6a-a0a9-9e04fcc5160e/mzaf_3942217009930628849.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1784195680",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1784195680「Tobe Hooper & Wayne Bell《The Texas Chain Saw Massacre (Original Motion Picture Score)》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Main Title〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1766,7 +1767,7 @@
     "url": "https://coverartarchive.org/release-group/3ae01fc5-869b-4867-bc1a-648f4bea964e/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -1776,7 +1777,7 @@
     "accessibility": 3,
     "listeners": 14999,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/4/3（Last.fm listeners 14999）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -1801,17 +1802,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ad/a0/8a/ada08a07-0aef-88ac-acdf-71c91f00d1b5/mzaf_2313068208276540370.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1468966806",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1468966806「Ben Frost《Dark: Cycle 1 (Original Music From The Netflix Series)》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Alles ist miteinander verbunden〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1838,7 +1839,7 @@
     "url": "https://coverartarchive.org/release-group/48f0aed8-eff6-4c55-9e84-8af6eed8224e/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -1848,7 +1849,7 @@
     "accessibility": 3,
     "listeners": 96,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 96）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -1872,17 +1873,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/c9/b6/15/c9b615bb-ec95-854f-5c86-57dfe042c18a/mzaf_13794737599938386637.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1477648521",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1477648521「Jason Graves & EA Games Soundtrack《Dead Space (Original Soundtrack)》」：主線人工配對：Apple「Dead Space (Original Soundtrack)」17 軌，為 EA 官方原聲，取第 1 軌〈Dead Space Theme〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1909,7 +1910,7 @@
     "url": "https://coverartarchive.org/release-group/6f29eac3-2a12-44a4-8832-4b1c3b3fb51a/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -1919,7 +1920,7 @@
     "accessibility": 3,
     "listeners": 5680,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/4/3（Last.fm listeners 5680）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -1943,17 +1944,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/e9/a7/a1/e9a7a1d8-ab82-a994-d83f-cf3c1aa9deaa/mzaf_16277140936247535828.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1476103594",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1476103594「Ben Frost《Dark: Cycle 2 (Original Music from the Netflix Series)》」：曲目 12/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Schwarze Materie〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1980,7 +1981,7 @@
     "url": "https://coverartarchive.org/release-group/f63c3520-2c1f-4ca3-8a79-eb38fdb3be0c/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -1990,7 +1991,7 @@
     "accessibility": 3,
     "listeners": 73,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 73）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：影集配樂、發行有限"
    },
    "rarity": "uncommon",
@@ -2014,17 +2015,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/8f/5f/42/8f5f4257-a1b0-8f43-bc98-561822feba0f/mzaf_2448676847017494782.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1208516582",
     "storefront": "JP",
     "collectionExplicitness": "notExplicit",
     "note": "Apple jp 1208516582「Ben Frost《Music From Fortitude》」：曲目 39/40 對上 MB 原盤（Apple 共 40 軌），取第 1 軌〈This is Not Christmas〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -2051,7 +2052,7 @@
     "url": "https://coverartarchive.org/release-group/001ac5d9-ccda-49e3-b66d-cfe57976c6b2/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -2061,7 +2062,7 @@
     "accessibility": 3,
     "listeners": 860,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 860）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -2086,17 +2087,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/33/2a/ef/332aef09-90ba-c7b1-544e-039c3032321b/mzaf_1213293460327665720.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1641101308",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1641101308「Jed Kurzel《Snowtown》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈The Dream〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -2123,7 +2124,7 @@
     "url": "https://coverartarchive.org/release-group/3175fed9-5252-489b-acd4-305c6f00b700/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -2133,7 +2134,7 @@
     "accessibility": 3,
     "listeners": 38,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 38）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -2157,17 +2158,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/42/73/6c/42736c7a-95be-c28e-bf1b-ba072eb8de3e/mzaf_17823122318803619417.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1442849211",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1442849211「Jed Kurzel《Macbeth (Original Motion Picture Soundtrack)》」：曲目 17/19 對上 MB 原盤（Apple 共 19 軌），取第 1 軌〈The Child, Pt. 1 (From \"Macbeth\" Soundtrack)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -2194,7 +2195,7 @@
     "url": "https://coverartarchive.org/release-group/c9c4c8c6-c41e-4977-acf2-49a327a2604a/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -2204,7 +2205,7 @@
     "accessibility": 4,
     "listeners": 14894,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/4/4（Last.fm listeners 14894）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -2231,17 +2232,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/82/dd/c7/82ddc75b-435a-9c41-b0dd-1840bbc874ca/mzaf_1243984608127484361.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1665303621",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1665303621「Tim Hecker《Infinity Pool (Original Motion Picture Soundtrack)》」：曲目 22/22 對上 MB 原盤（Apple 共 22 軌），取第 1 軌〈Spiral Walk〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -2268,7 +2269,7 @@
     "url": "https://coverartarchive.org/release-group/a02f5c92-702a-480d-a081-3fa1e099fa2c/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -2278,7 +2279,7 @@
     "accessibility": 3,
     "listeners": 15,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 15）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -2302,17 +2303,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3b/26/1f/3b261fe2-16d9-f4ba-a23a-eb9ca67251bf/mzaf_18306858652545178903.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1452842851",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1452842851「Christopher Young《Sinister (Original Motion Picture Soundtrack)》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Portrait of Mr. Boogie〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -2340,7 +2341,7 @@
     "url": "https://coverartarchive.org/release-group/fb5a94a6-b1b0-49e1-9ac3-82416cb34d88/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -2350,7 +2351,7 @@
     "accessibility": 3,
     "listeners": 1,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -2377,17 +2378,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/77/4d/5e/774d5e28-3b89-be16-c4fc-6f95cb7060aa/mzaf_4723770948825496605.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1532783488",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1532783488「Adam Janota Bzowski《Saint Maud (Original Motion Picture Soundtrack)》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Saint Maud Main Theme〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -2414,7 +2415,7 @@
     "url": "https://coverartarchive.org/release-group/eb4a43fe-5479-47ae-827f-1cc05928b65f/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -2424,7 +2425,7 @@
     "accessibility": 3,
     "listeners": 21,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 21）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -2451,17 +2452,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5b/ac/9b/5bac9bb0-067b-585f-f78d-4516c012c812/mzaf_4954198010682861698.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1532494758",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1532494758「Jim Williams《Possessor (Original Motion Picture Soundtrack)》」：曲目 27/27 對上 MB 原盤（Apple 共 27 軌），取第 1 軌〈Introduction〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -2488,7 +2489,7 @@
     "url": "https://coverartarchive.org/release-group/ccedbd03-05a2-4229-9c32-29a08d196645/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -2498,7 +2499,7 @@
     "accessibility": 3,
     "listeners": 114,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 114）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -2524,17 +2525,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/81/a3/00/81a3009a-8c36-bfb5-530e-cde84242ce65/mzaf_7018611795660336194.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1500499794",
     "storefront": "FR",
     "collectionExplicitness": "notExplicit",
     "note": "Apple fr 1500499794「Danny Bensi & Saunder Jurriaans《Enemy (Original Soundtrack Album)》」：曲目 15/16 對上 MB 原盤（Apple 共 16 軌），取第 1 軌〈The Dark Room〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -2562,7 +2563,7 @@
     "url": "https://coverartarchive.org/release-group/a8703f6d-ca24-482e-943a-1e8a0c777064/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -2572,7 +2573,7 @@
     "accessibility": 3,
     "listeners": 703,
     "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 703）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
    },
    "rarity": "uncommon",
@@ -2597,17 +2598,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/35/f3/d0/35f3d00f-943a-c677-649d-98cc887ab7f1/mzaf_17469793472245419109.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1497317345",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1497317345「Jóhann Jóhannsson & Yair Elazar Glotman《Last and First Men》」：曲目 20/20 對上 MB 原盤（Apple 共 21 軌），取第 1 軌〈Prelude〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -2635,7 +2636,7 @@
     "url": "https://coverartarchive.org/release-group/73fd23bd-6e36-495c-bd27-753503d9994b/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -2645,7 +2646,7 @@
     "accessibility": 4,
     "listeners": 16565,
     "source": "manual:classical-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/4/3（Last.fm listeners 16565）；主線：§0.7 錄音層錨點：作曲家肖像／ECM 錄音，愛樂者領域；20 世紀不協和音塊 accessibility 4"
    },
    "rarity": "uncommon",
@@ -2670,17 +2671,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4c/f2/a4/4cf2a413-f50f-7713-a65e-323cf6bba330/mzaf_15251427235684009404.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1862166403",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1862166403「Ben Frost & Daníel Bjarnason《Sólaris》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈We Don't Need Other Worlds, We Need Mirrors〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -2707,7 +2708,7 @@
     "url": "https://coverartarchive.org/release-group/6b5bca7e-bc8b-4017-95b6-c4599be4fe47/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -2717,7 +2718,7 @@
     "accessibility": 4,
     "listeners": 2492,
     "source": "manual:classical-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 2492）；主線：§0.7 錄音層錨點：作曲家肖像／ECM 錄音，愛樂者領域；20 世紀不協和音塊 accessibility 4"
    },
    "rarity": "uncommon",
@@ -2743,17 +2744,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/79/5c/93/795c9309-23d8-8eda-7135-9950827fa0c5/mzaf_8190887972124686141.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1622451669",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1622451669「Various Artists《Aerial (Remastered 2022)》」：主線人工配對：Apple「Aerial (Remastered 2022)」，2022 再版多一首〈Aura〉，其餘曲目同原盤，取第 1 軌〈Into - Second Self (Remastered 2022)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -2780,7 +2781,7 @@
     "url": "https://coverartarchive.org/release-group/df581777-f8c8-4aa5-b4d7-12325696c49f/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -2790,7 +2791,7 @@
     "accessibility": 4,
     "listeners": 83,
     "source": "manual:classical-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 83）；主線：§0.7 錄音層錨點：作曲家肖像／ECM 錄音，愛樂者領域；20 世紀不協和音塊 accessibility 4"
    },
    "rarity": "uncommon",
@@ -2815,17 +2816,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/40/e6/ec/40e6ecb2-405f-7f1c-6e89-8cf6d1db9bb4/mzaf_5484173716523747313.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1025040557",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1025040557「International Contemporary Ensemble《Thorvaldsdottir: In the Light of Air》」：主線人工配對：Apple 掛名 International Contemporary Ensemble，Sono Luminus 同盤，取第 1 軌〈In the Light of Air: I. Luminance〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -2852,7 +2853,7 @@
     "url": "https://coverartarchive.org/release-group/c887dc9d-9788-40f4-aafd-759d1fb654c1/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -2862,7 +2863,7 @@
     "accessibility": 4,
     "listeners": 640,
     "source": "manual:classical-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 640）；主線：§0.7 錄音層錨點：作曲家肖像／ECM 錄音，愛樂者領域；20 世紀不協和音塊 accessibility 4"
    },
    "rarity": "uncommon",
@@ -2887,17 +2888,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/82/8f/8c828f20-5635-6d9c-112e-58a9b376d784/mzaf_2182045777756925184.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1684732565",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1684732565「Iceland Symphony Orchestra & Eva Ollikainen《Thorvaldsdottir: Archora / Aiōn》」：主線人工配對：Apple 掛名 Iceland Symphony Orchestra & Eva Ollikainen，Sono Luminus 同盤，取第 1 軌〈Archora〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -2924,7 +2925,7 @@
     "url": "https://coverartarchive.org/release-group/03ae301b-e4d9-4843-9199-3d374fdcfaf1/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -2934,7 +2935,7 @@
     "accessibility": 4,
     "listeners": 899,
     "source": "manual:classical-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 899）；主線：§0.7 錄音層錨點：作曲家肖像／ECM 錄音，愛樂者領域；20 世紀不協和音塊 accessibility 4"
    },
    "rarity": "uncommon",
@@ -2959,17 +2960,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/b4/3e/b6/b43eb603-f1eb-e973-332e-db4ae4f9a496/mzaf_11187919504563216520.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1535485100",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1535485100「Various Artists《Rhízōma》」：主線人工配對：Apple 掛名 Various Artists，Innova 同盤，取第 1 軌〈Hrím〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -2997,7 +2998,7 @@
     "url": "https://coverartarchive.org/release-group/6a7f238a-f984-4e46-889b-c66e35604ad6/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
@@ -3007,7 +3008,7 @@
     "accessibility": 4,
     "listeners": 1,
     "source": "manual:classical-rubric",
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：§0.7 錄音層錨點：作曲家肖像／ECM 錄音，愛樂者領域；20 世紀不協和音塊 accessibility 4"
    },
    "rarity": "uncommon",
@@ -3031,17 +3032,17 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/bd/76/56/bd7656d5-9237-9d2c-06b7-826577145e9a/mzaf_14587954710407161625.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-10-23T07:24:24Z",
+    "checkedAt": "2026-10-23T07:39:19Z",
     "appleCollectionId": "1452674233",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 1452674233「Christoph Poppen, Frances-Marie Uitti & Munich Chamber Orchestra《Scelsi: Natura Renovatur》」：主線人工配對：ECM 同盤，Apple 曲名分段寫法不同（5/8 字面對上），取第 1 軌〈Ohoi for 16 Strings〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
-    "seedCards": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
     "apexPool": false
    }
   }
