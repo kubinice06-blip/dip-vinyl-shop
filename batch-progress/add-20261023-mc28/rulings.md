@@ -37,3 +37,13 @@
 - **13198**：Lytton《The Inclined Stick》Po Torch 由 Lovens 與 Lytton 1976 合辦（Discogs），非 Lytton 單獨創辦。第二首為 1977-12-16 亞琛 Neue Galerie 現場，其餘 1979 年夏在 Lytton 比利時家中錄成；樂器為自製打擊與現場電子，非傳統鼓組。除 Scaruffi 兩句外無樂評，疏密與安靜段比重無依據，status thin。
 - **13199**：本組 MB 標 Live 的卡 0 張；但實質含現場錄音者 5 張（Hexensabbat A 面、Piano Solo Vol.1 疑、Many and One 疑、Chicago、Very Centre，加 Lytton 一首），已逐張寫進 notes。Discogs／WebFetch 的 AllMusic、Squidco、jazzmusicarchives 一律 403，Discogs API 直連可用。
 - WebSearch 本組共用 8 次（每支 ≤3）。
+
+## 研究 e 組
+- **13201**：Reichel《Wichlinghauser Blues》身分無誤（Discogs master 517789，FMP 0150，1973-11-23）。B2〈Abendlied〉是青年中心現場錄、其餘錄音室或自家錄；MB 未標 Live，整張算錄音室，不汰。z 存疑（滑稽、近似甘美朗與散拍的叮噹質地）留給主線。
+- **13202**：Johansson《Schlingerland》樂評（All About Jazz、Quietus、Exclaim!）一致說「低調安靜、質地導向」，與 moodGuess x 3.6 明顯相反，列為 x 存疑建議降或汰。
+- **13203**：King Übü《Binaurality》1992-06 柏林藝術學院東院錄音、1993 FMP CD 49；十位樂手；樂團做法是「聲音的點描」低音量，x 3.5 存疑，建議主線降 x 或汰。
+- **13204**：Léandre《Les Douze Sons》推翻策展層「低音提琴＋人聲獨奏」：實為與 Barre Phillips、Bailey、Schweizer、Lewis、Reijseger、Nozati 的二、三重奏與人聲拼盤（含歌舞廳式橋段、一隻狗客串）。1983-06 Théâtre Dunois「Carte Noire」系列期間錄成，未能確認有無觀眾，MB 未標 Live。y、z、x 三軸皆存疑，建議複審。
+- **13205**：大友《Cathode》推翻策展層「唱盤、吉他、薩克斯風」：Discogs 逐首名單為笙、正弦波、三味線、弦樂、準備鋼琴、人聲、口哨與電子，大友本人僅作曲、混音、剪輯、製作。頭尾兩首極小編制，x 有被判靜風險。
+- **13206**：大友《Anode》策展層「十人」實為九位列名演奏者（六打擊＋杉本拓＋Sachiko M＋秋山徹次），「圖形指令」查無來源不寫。Olewnick 簡介稱「超安靜、處在聽覺邊緣」，與 x 3.6 方向相反，x 存疑建議降或汰（簡介內容取自搜尋摘要，原頁 403）。
+- **13207**：吉田アミ《Tiger Thrush》日文名《虎鶫》，IMJ-504，2003-07，錄音 2003-01～03（Ftarri 英文頁內文寫 2002，採日文頁與頁首資料）。99 首 Untitled，keyTracks 留空。已讀 Ftarri 日文頁（Shift-JIS 原文）。
+- 組內 WebSearch 用量：8 次（Reichel 1、Johansson 1、King Übü 1、Léandre 1、Cathode 2、Anode 2、Tiger Thrush 1，皆在每支 3 次以內）。
