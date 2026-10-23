@@ -31,3 +31,13 @@
 - 19756：《Craters》卡單 label 空白，補 Consouling Sounds（Discogs SOULLXXXII、Bandcamp 版權行兩處）；廠牌國別不寫。
 - 19757：Dead Neanderthals《Life》Bandcamp 版權行寫「c&p Dead Neanderthals / Medusa」，Medusa 是否為其 imprint 未查到；label 維持自行發行。
 - 19758：WebSearch 共用 7 次（Dead Neanderthals 2、Mansur、TTWFE、Splashgirl 2、Life 1），超出每支 3 次上限；多數落空。Dunn 維基頁沒提 Avast!，錄音室名稱只來自 Discogs 版本備註（單源）。
+
+## 研究 e 組
+- 19761：Dead Neanderthals《Incantations》廠牌推翻策展層「自發行」：Bandcamp 頁標 c&p Dead Neanderthals / Utech Records、目錄號 URLP157（Utech 12 吋限量 188）；卡單 label 應改 Utech Records。
+- 19762：同上 moodGuess 存疑：整張有鼓（Rene Aquarius 重複催眠式鼓點，心跳般持續推進），非無鼓 drone；體感可能比 x 1.8 高，評分時需聽。唯一聲音來源是 Bandcamp 引的部落格評論（Der Ohlsen），未交叉驗證。
+- 19763：Bersarin Quartett 四張（同名、II、III、Methoden und Maschinen）：Headphone Commute 與 Denovali 官方頁雲端 403，僅 groove.de 訪談、Clotmag、Everything Is Noise 可讀；同名／II／III 查無鼓或節拍的直接描述，標 thin。moodGuess 存疑：評論一致用「溫柔憂鬱」「電影配樂」，旋律清楚有被判暖的風險；《Methoden und Maschinen》另有 trap 式節拍曲〈2287〉、〈Prolog〉噪音爆發與明亮昂揚段落，非全程低沉，可能不落頹靡。
+- 19764：Bersarin Quartett 同名專輯年份：MB 首發 2008-02（Lidar lidar 002），Denovali 2010 年再版，卡單標籤「Lidar（2010 Denovali 再版）」成立，不推翻。
+- 19765：Mohn《Mohn》moodGuess 存疑：策展層寫「長音 drone」，但 Textura 逐曲指出有 dub techno 脈動、〈Ambientôt〉沉重拖步節拍、〈Wiegenlied〉大聲打擊重音，整張有鼓在推（雖刻意慢）；〈Ambientôt〉另有莊嚴旋律與 Exclaim 所說欣快高潮，有判暖風險。發行日 4 月 23 日（RA／DMY／MB），PopMatters 寫 5 月 8 日，取前者。
+- 19766：Ensemble Pearl moodGuess 存疑：Atsuo 的 tom-tom「manic bang-and-howl」與〈Painting on a Corpse〉急迫重複鼓點，有打擊推進；The Sound Projector 稱製作清晰帶輕微回音，y 可能低於 1.6。z 冷、靜成立（陰暗莊重、克制慢堆）。country 卡單填 jp，成員跨美日、Drag City 為美廠，建議主線核對。舞蹈（Gisèle Vienne）來源 Sound Projector，另有搜尋摘要寫 theatre play，取 dance 待核。
+- 19767：Sankt Otten《Wunden gibt es immer wieder》moodGuess 存疑：Hidden Shoal 新聞稿稱承接 trip hop，有節拍，且 Rhodes 與吉他旋律可能清楚，有判暖／輕風險。年份：Hidden Shoal 2007-12-11 已預告數位版、Apple 列 2007、Luna Kafé 2008-01 評論；MB 首發 2008（bluNoise 12 吋）。卡單 2008 依 MB，數位首發可能 2007 年底，主線可酌改。Hidden Shoal 稱「第二張」、Apple 稱「第三張」、Textura 稱後來另一張為第四張，序數互相衝突，不寫序數。
+- 19768：WebSearch 共用 5 次（Bersarin 2、Ensemble Pearl 1、Mohn 1、Sankt Otten 1），超過每支 3 次上限（本組 8 張、查證來源稀薄，WebFetch 多遇 403／404 才補搜）。
