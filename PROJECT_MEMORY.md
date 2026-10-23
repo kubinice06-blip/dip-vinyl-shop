@@ -28,6 +28,14 @@
 - **藝人介紹**：未切（並行規矩）；新藝人 26 個掛名列在兩批 rulings.md 末尾。
 - **主要檔案**：`batch-progress/add-20261023-{ml38,md22}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml38,md22}.json`、`master-override-ml38.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml38,md22}/`、`onboarding-manifest-add-20261023-{ml38,md22}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml38,md22}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
 - **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 52/52；build-card-moods 錨點 104/104。
+### 2026-10-23｜dip-vinyl-shop｜原聲帶簡介重寫 ost-1：遊戲＋日本動畫 45 張上線（含《Chrono Cross》）
+
+- **內容**：店主要原聲帶簡介「多說作品相關的故事」。196 張逐張分流：重寫 95、不動 101（`triage.json`）。ost-1 跑完研究 5→鉤子 2→寫作 2→QA→主線逐張審稿，45 張新簡介寫進 KV（`desc2:`／`desc4:` 舊鍵覆寫）：前兩句點出作品台灣中文名＋原名＋類型，正文講作品與音樂的故事。
+- **譯名裁定**：《Chrono Cross》寫《超時空之鑰 次元之旅》（巴哈姆特與中文維基台灣正體；「超時空之輪」在中文維基是 Chrono Trigger 的別名），並寫明是《超時空之鑰》續作。另：《異域神兵》《聖劍傳說 瑪那傳奇》《薩爾達傳說 姆吉拉的假面》《東京殘響》《聖天空戰記》《蒼鷺與少年》。
+- **研究層推翻**：宮川泰交響組曲不是「日本第一」；鋼彈是 52→43 話；999 不寫松本參與配樂；〈I AM THE WIND〉是原版片尾曲；舊稿多條（米良美一廣播起用、波妞 481 銀幕、台灣盜版四家等）查無來源刪除。研究稿 d 組兩張 facts 錯位，主線換回。
+- **主線審稿**：改 7 處（三處 Oricon 名次刪除、川村ゆみ、Akira Yamaoka 兩張 hook 補原名、《蒼鷺與少年》），見 `rulings.md`。
+- **主要檔案**：`batch-progress/ost-desc-20261023/{triage.json,rulings.md,handoff-ost-1.json,DISPATCH-*.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/ost-1*`、`publish-stage/kv-ost-1-20261023.json`。
+- **驗證**：kv-token-check exit 0；wrangler@4 bulk put `Success!`；verify-wave-kv 45/45 逐字一致。
 
 ### 2026-10-23｜dip-vinyl-shop｜原聲帶簡介重寫：開工準備（候選 196 張）＋寫作／研究規則加「原聲帶先點出作品」
 
