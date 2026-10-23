@@ -89,7 +89,7 @@
 ## 上線與評分（2026-10-23，主線）（條號 15516–15518）
 - **15516**：上線 10 張：card_catalog 10／10、KV 10 鍵回讀逐字一致、試聽 10 ready、seed +10、published gate 0 error。封面 CAA 10，live-check 全 200。上線前對 origin 59 個分支 seed 去重 0 撞。
 - **15517**：類型樹 10／10 落位（`genre-l3-artist-map.json` 補：Lewis ×2、Ducktails → pop/pop-rock/soft-rock；Michael Seyer → pop/indie-pop/bedroom；Mndsgn → electronic/downtempo/beats）。
-- **15518**：**落格率 10/10＝100%**（`batch-progress/mood-axes/score-ml19/`）。貼邊 2 張：Savage《Yummycoma》y 0.5、Drugdealer y 0.6。**但產量極低**：策展 20、研究汰 9、審稿汰 1 → 10。經典 city pop／AOR 在現行質地尺下全判輕，能落恍惚的只有磁帶飽和／殘響淹沒的復興盤與私壓盤，ml19／ml28 場景視為見底，不再派。
+- **15518**：**落格率 8/10＝80%**（`batch-progress/mood-axes/score-ml19/`，照 10-23 體感＋旋律新標準重評；舊標準初評 10/10 存 `out-v1-chunk-ml19.json`）。出格 2 張：Sean Nicholas Savage《Bermuda Waterfall》y 0.4、《Yummycoma》y 0.3 判輕落放鬆（乾淨 sophisti-pop、旋律清楚）。**產量極低**：策展 20、研究汰 9、審稿汰 1 → 10。經典 city pop／AOR 在現行質地尺下全判輕，能落恍惚的只有磁帶飽和／殘響淹沒的復興盤與私壓盤，ml19／ml28 場景視為見底，不再派。
 
 ## 本批新藝人（無介紹，未切；並行時子工作階段不切）
 Drugdealer、Sean Nicholas Savage、Lewis、Ducktails、Pure Bathing Culture、Sweetback、Michael Seyer（7 位）。
