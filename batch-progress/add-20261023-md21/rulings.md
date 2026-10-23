@@ -54,3 +54,15 @@
 - 18308 Former Ghosts《Fleurs》：**moodGuess 存疑**：有溫暖有力的合成底鼓、故障電子節拍、『甜美旋律與尖銳混亂交替』，體感可能緊而非沉，x 有 3.0 以上風險；y 的低傳真質感可能低於預估。
 - 18309 Trance to the Sun《Bloom Flowers, Bloom!》：程式鼓（非真鼓）、循環式迷幻，無推翻；z 冷度僅有間接證據。
 - 本組推翻策展層：3 處（Esben 的 Albini、Kælan Mikla 的張次、Dark Sanctuary 2000 的主唱）；moodGuess 存疑 6 張（嚴重：Kælan Mikla；中：Soul Whirling Somewhere、Mors Syphilitica、Former Ghosts；邊緣：Section 25、Dark Sanctuary ×2 的 y）。WebSearch 用 2 次。
+
+## 研究 e 組
+- 18321 Mount Vernon Arts Lab《The Séance at Hobs Lane》：**moodGuess 輕度存疑**：Ghost Box 文案列「VCS3 squalls、howling guitar、skronking sax」，嘶吼類音色可能繃神經；大提琴、鍵盤、大鍵琴旋律清楚，z 恐不到 −1.5。有無鼓所有來源未提，「無鼓」未證實。身分、年份、廠牌對得上。
+- 18322 Mordant Music《Dead Air》：**moodGuess 存疑（重）**：可得來源只有 Fact「Saint Etienne × Throbbing Gristle 超現實車禍」與 Discogs 風格 Leftfield／Grime／Electro／Industrial，無一條支持「慢 dub 拍、低頻」；20 軌中 11 首不足 3 分鐘，屬片段拼貼；Elsmore 播報聲被稱 warm，人聲清楚。建議實聽再定，或列汰換候選。Bandcamp／Norman／Boomkat 被擋。
+- 18323 Pye Corner Audio《Stasis》：**輕度存疑**：Mojo「throbbing sci-fi electronica and luminous synthetic strings」、Shindig「somnambulant」，慢、夢遊成立，但有脈動序列、明亮合成弦樂，色溫與質地恐不如預估冷且霧；curatorRisk 的「無舞池拍」只有間接證據（沒有任何來源寫舞池拍，也沒明寫無鼓）。
+- 18324 Akira Rabelais《Spellewauerynsherde》：**推翻策展層一處**：「冰島古讚美詩」→ 維基與評論為「冰島傳統無伴奏哀歌（lament）」且為 reportedly，寫作層勿寫 hymn。聲音描述除風格標籤（Abstract／Modern Classical）外全部被擋，質地與色溫無從驗證，status thin。
+- 18325 Dalhous《An Ambassador for Laing》：**moodGuess 存疑（重）**：廠方文案「intricately stacked percussion, dubwise bass」＋豎琴、顫音琴、木管、弦樂的和聲織錦；Quietus 稱較 Young Hunting 時期「downright breezy」，比同廠牌 Raime 更偏歌曲式結構。與預估「稀疏拍或無鼓、冷合成器糊」明顯不符，y、z 皆可能偏輕偏暖。成員為 Marc Dall 與 Alex Ander（RA、Quietus 一致）。建議汰換候選。
+- 18326 oOoOO《Without Your Love》：**推翻策展層一處**：「唯一長作」不成立，維基列第二張 LP《Faminine Mystique》（2018，與 Islamiq Grrrls）；本作為正式首張 LP。聲音描述（衛報、Dazed）針對 2010 年 EP 與 witch house 通論，Dazed 稱早期 EP「apocalypse set to a disco beat」，本作是否仍有清楚鼓拍、拍速多慢無直接證據，z、x 已在邊緣，輕度存疑。Nihjgt Feelings 所在地：維基土耳其、Pitchfork 引廠方稱 Bozcaada 島、Discogs 發行國 Germany，facts 取廠方自述。
+- 18327 Pinkcourtesyphone《Elegant & Detached》：**moodGuess 無從驗證**：唯一聲音線索是風格標籤（Ambient／Abstract／Field Recording）與以聲音為隱喻的文案，沒有 drone、低頻、殘響、鼓的描述；Discogs 稱 Pinkcourtesyphone 是 Chartier「更情感、更像音樂」的一面，y 可能偏輕。status thin。發行日 Bandcamp 8/1 與 Discogs CD 9/3 不同，只寫 2012。
+- 18328 Holy Other《Lieve》：**輕度存疑**：有鼓有低音重擊（Clash「heavy, sparse drum sequence」、LOBF「unrelenting bass punch」），但稀疏而緩；薩克斯、小提琴、清晰人聲、〈Groundless〉的 beatific half-melody，Clash 明說「not necessarily gloomy」。靜重成立，冷度可能只到中度（z −0.9 偏冷）。九年間隔、廠牌、年份成立。
+- 18329 Salem《Fires in Heaven》：**moodGuess 存疑**：專輯本身樂評全被擋，只有通論（trap 風格鼓、低頻）；11 首曲長 1–4 分鐘，節奏密度恐高於預估；curatorRisk 要求確認 trap 鼓，結論是通論層確認有 trap 風格鼓、本作速度無證據。Discogs 發行為 Salem 自行發行（SALEM001），〈Starfall〉單曲經 Mad Decent 的 Decent Distribution。Marlatt 被逐爭議與作品直接綁定，已寫入 facts。
+- 本組推翻策展層：2 處（Rabelais 讚美詩→哀歌、oOoOO 唯一長作）；moodGuess 存疑 8／9（重：Dead Air、Dalhous；輕：其餘；僅 Rabelais 因無資料標「無從驗證」）。WebSearch 用 3 次；Bandcamp、Pitchfork、AllMusic、Norman 等被擋，改以 Discogs／MB／維基／Ghost Box 文案／Quietus／Clash／LOBF 補。

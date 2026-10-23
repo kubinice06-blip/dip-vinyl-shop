@@ -18,3 +18,9 @@
 - 15842：Jassbusters Two 錄音年 2016 年 10 月僅 Bandcamp 單一來源且該頁自相矛盾（另說 2017 年成形），facts 不寫錄音年，只寫「現場長段即興」。
 - 15843：Pitchfork／Guardian／Independent 等站 WebFetch 被擋，聲音事實改取 DIY、Crack、mxdwn、Paste、Line of Best Fit、PopMatters、American Songwriter、Consequence；Regions 的殘響／合成墊查無來源，不寫。
 - 15844：moodGuess 存疑彙整——Jassbusters（z 0.9 偏高：Crack 無假音、DIY 憂鬱陰沉；y 缺「重」的證據）；Jassbusters Two（y／z 皆無文字支持、mxdwn 評混濁、全盤僅 27 分鐘鬆散即興，建議汰換或降分）；Bottle It In（x 2.4 偏低：多曲有真人鼓搖滾推進；y 的「厚」證據間接）；Regions（無穀倉殘響或厚合成墊來源，y 1.0 風險）；Eternally Even（相對最貼，但 American Songwriter 用 chilly／aloof、AAJ 說合成器質感表面）。
+
+## 研究 c 組
+- 15861：c 組 5 張全 full（9–10 條 facts）。WebSearch 用 2 次（Schnauss 兩張樂評）。聲音事實全靠樂評原文（Pitchfork、Guardian、PopMatters、Electricity Club、Beats Per Minute 等）。
+- 15862：廠牌並存——Mercury Rev（US Partisan／歐洲 Bella Union）、Spiritualized（全球 Fat Possum／英歐 Bella Union）、Schnauss 2013（歐 Scripted Realities／美加 Domino）、2016（歐 Scripted Realities／美 [PIAS] America）；卡單 label 不推翻。
+- 15863：Schnauss 兩張 2019 年被重錄（Rebound／Tomorrow），卡是原版；試聽須放 2013／2016 原版。
+- 15864：moodGuess 存疑——Spiritualized《Everything Was Beautiful》（推進鼓點、銅管弦樂爆發，x 恐 ≥3）、Schnauss《No Further Ahead Than Today》（energized/up、motorik、響度大，x 恐 ≥3，最強烈）、Peaking Lights（持續 dub 節拍、旋律亮糖，x 2.8–3.3、y 恐 0.5–1.0）、Schnauss《A Long Way to Fall》（y 輕度存疑，晶亮多於濃稠；x、z 成立）。Mercury Rev 成立無存疑。
