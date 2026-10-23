@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜Goodie Mob《Still Standing》恍惚→暴躁
+
+- **改動**：店主指定。(2.9, 0.9, 0.4) → (3.3, 0.9, −0.5)。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：`build-card-moods.mjs` 錨點 104/104 同格。
+
 ### 2026-10-23｜dip-vinyl-shop｜頻率選歌／類型挑片結果頁的試聽鈕、分享鈕沒反應
 
 - **改動**：店主回報頻率選歌結果頁試聽鈕按了沒反應。原因：`[data-gp-action="preview"]`／`share` 只在 `#artistContent`（猜你喜歡）與心情選歌接了點擊，類型挑片（`#genreContent`）與頻率選歌（`#tuneModal`）共用 showGpResult 卻沒接。兩處補上；`_gpSetPreviewIcon` 改找開著的 modal 裡那顆鈕（別的分頁結果頁留在 DOM 時，全域第一顆不一定是畫面上的）。
