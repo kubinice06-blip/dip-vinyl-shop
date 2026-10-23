@@ -24,3 +24,6 @@
 - 20368：Drone Mass 是清澈複調人聲加弦樂四重奏與電子持續音，Pärt／Tavener 式神聖極簡；依 10-23 標準有判輕或偏暖風險，建議汰換候選。曲數 11、約 51 分鐘依 MB。
 - 20369：Tessellatum 掛名：MB 為 Dennehy; Sirota, Byrne，但各家都視為 Nadia Sirota 專輯，建議加註演奏者。卡單「一小時」「古大提琴與小提琴」皆不符（13 軌約 38 分鐘；中提琴＋古大提琴）。Exclaim! 的 pseudo-symphonic onslaught 列存疑。
 - 20370：Utrenja moodGuess 嚴重存疑：MusicWeb 稱這份錄音刺耳、有侵略性，下半部 Psalm with Troparion 是最響最混亂的混戰，結尾有近乎尖叫的爆發；建議汰換。年份 2009 為 Naxos 發行年，錄音為 2008 年 9–12 月。
+
+## 主線（研究後汰換）
+- 20431：研究 a 組存疑汰 6（體感標準）：判躁——Michael Gordon《Dystopia》（狂亂、非常大聲、首演現場）、Penderecki《Utrenja》（刺耳、侵略性、近乎尖叫的爆發）、Scelsi《Quattro pezzi / Anahit / Uaxuctum》（大量打擊與銅管、哀號不協和）、Valgeir《Architecture of Loss》（突發鼓、爆裂電子，另有民謠旋律）、Dennehy《Tessellatum》（pseudo-symphonic onslaught）；判輕／暖——Jóhannsson《Drone Mass》（清澈複調人聲、神聖極簡）。留 Valgeir《Dissonance》、Scelsi 兩張（Pfhat、Chukrum 有亮段但中位數長音塊，池中 Scelsi 落頹靡）、Gordon《Rushes》。

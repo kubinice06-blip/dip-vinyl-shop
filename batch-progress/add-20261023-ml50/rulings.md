@@ -67,3 +67,13 @@
 - 20318：Hol Baumann《Human》thin、moodGuess 存疑（中，推翻「dub 低音」）：Discogs 風格 Downtempo／IDM／Ambient，Orand 自述 downtempo／electronic／ethnic fusion，無任何 dub 證據；速度、breaks、乾淨數位與否皆查無。身分：MB release 有 Ultimae inre 030，策展層「廠牌憑記憶」疑點已解。Hol Baumann＝Olivier Orand（2017 起用本名）。
 - 20319：Bluetech《Sines and Singularities》不存疑為主、列風險（輕）：Bandcamp 稱 relaxed、soothing、spacious、danceable downtempo；Discogs 風格含 Dub；glitch、速度、breaks、數位質感查無。單源（官方文案）。AlephZ04 廠牌無爭議；2020 Behind the Sky 重製為再版。
 - 20320：d 組整體：9 張未推翻年份、廠牌、盤名；WebSearch 用 3 次（只有 Universal Road 有結果）；Pitchfork、AllMusic、Discogs 網頁、BBC、Guardian、NYT 擋抓取，Discogs 與 MB 改走 API。本組 thin 4 張（Pearldiving、Pan、Tanks、Human），聲音證據不足。
+
+## 主線（研究後汰換）
+- 20351：研究層「moodGuess 存疑」照先例直接汰 25（卡存 `dropped-cards.json`、研究稿移 `dropped-research.json`；42 → 17）：
+  - 判冷（樂評／廠牌陰鬱字眼）：Hotel Neon《Context》（somewhat dark、threatening）、Pioulard《Sonnet》（melancholic、forlorn）、Chuck Johnson《The Cinder Grove》（requiems、lamentation）《Balsams》（mournful hymn）、Cortini《AVANTI》（somber；同人《Sonno》落頹靡）、Kenniff《The Gathering Dawn》（icy synths、glacial）、SUSS《High Line》（darker）、Dettinger《Intershop》（brooding、機械節奏）、Celer《Two Days and One Night》（舅公溺亡題材、短場景錄音）。
+  - 有拍／推進：Triola（beat-driven、energetic）、Hotel Neon《Means of Knowing》（thin，標籤 IDM／dub techno）、Green Kingdom《Expanses》（向 ambient techno 致意）、Jonas Munk《Pan》（krautrock，thin）、Lights Out Asia（electronic beats、IDM，thin）、Entheogenic（psytrance 出身）、Hol Baumann（downtempo／IDM，無 dub 證據）。
+  - 判輕（原聲／稀疏）：Green Kingdom《Incidental Music》《The North Wind and the Sun》（原聲吉他為核心、田園昂揚）、Marcus Fischer《Monocoastal》（音符間空間與克制）。
+  - 噪牆／pop：Cantu-Ledesma《Love Is a Stream》（blinding guitar inferno）《On the Echoing Green》（真鼓、more overt pop）。
+  - reggae 輕快或無 dub：Hollie Cook《Happy Hour》（自稱 happiest、breezy、lovers rock 非 dub）、Stick Figure《World on Fire》（upbeat、銅管、無 dub 證據）、Easy Star《Radiodread》（14 軌只 2 軌 dub、全真人樂團）、Trinity Roots《Citizen》（重金屬段、prog rock）。
+- 20352：保留但有風險：Metallic Spheres（研究推翻「慢 dub」，實為無鼓 drone＋lap steel，歸暖 drone）、Michael Brook《Hybrid》（conga 律動）、Universal Road（旋律清楚、jaunty 一首）、Shulman（無 dub 低頻證據，但慢、原聲、催眠）。
+- 20353：剩 17，叫回策展代理補第二輪（只收無鼓、和聲清楚、有 warm／cosy／lush 來源的長音，與有具體 dub 證據的慢 reggae）。
