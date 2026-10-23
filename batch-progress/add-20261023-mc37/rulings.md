@@ -21,3 +21,10 @@
 - 19926：Wooley／Wright 無鼓、錄音室、樂評支持 spiky／raw／tension；唯 Wooley 簡介提「對空間的敏感」，個別曲目留白未驗。全組最穩的一張。
 - 19927：Noetinger《dR》錄音場合未查明（Discogs 僅 Recorded By），不判現場；樂器含鋼琴與 Korg MS20，低頻風險。
 - 19928：曲名／標題典故（〈Un Claquement…〉對馬拉美、{Sparks} 曲名對各地雷神）無來源，只放 notes。
+
+## 研究 b 組
+- **19891**　Stodgy 查證為現場：Mikroton 頁面載明三首為 2002–2005 年歐洲音樂會錄音（MB／Discogs 未標 Live）。研究層建議汰換；裁定權在主線。
+- **19892**　Face Off 列「疑似現場」：錄音地為南特 Les Ateliers de Bitche 與普瓦捷 The Planetarium（2010-05），事後在旅館房間建構；評論亦有「loud, distorted」轟鳴段，另有轟鳴驟停成數位靜音，躁輕冷要留意是否偏重。
+- **19893**　Dusted Machinery 聲音存疑（可能判靜）：John Butcher 官網、FREQ、Chain D.L.K. 皆稱多半安靜低音量、有靜默與動態、不是全力轟炸，Free Jazz Blog 稱催眠。錄音室作品（Dave Hunt，2009-01-20，採官網日期；Discogs 記事自相矛盾）。
+- **19894**　La nuit où j'ai dit non 年份：Discogs 1997（比利時 Audioview AUDIO 003）、MB 1998；卡單 1998，建議主線決定。
+- **19895**　East of Where? 兩首 16–19 分鐘長曲，無評論可證有無留白；Yan Jun 柏林工作室錄音，非現場。聲音面查不到樂評者（Zygosis、lat_nc、Tétreault、Studio、East of Where）status 標 thin 或在 notes 註明。
