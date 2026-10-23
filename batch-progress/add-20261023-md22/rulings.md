@@ -114,3 +114,12 @@
   - `Lustmord|[ O T H E R ]`：刪「也是他唯一用上吉他的一張」（只有廠牌重發文案一處）→ 190 字。
 - 18433：未改但記錄——Dark Matter「每分鐘約六下的極慢脈動」是樂評的聲音描述（非評價），保留；Final《2》150 字照 note 只寫兩格，不從 facts 補；Amplifier Drone 用全名 Dirk Serries（同藝人另兩張研究稿與 MB），保留。
 - 18434：`qa-batch out`、`qa-check-research`（兩檔各 0 標記）、`fix-spacing`（0）全過。
+- 18435：上線前檢查——prepare gate 0 error；封面 live-check 26/26 HTTP 200（CAA 23、Discogs 3，已登錄 registry）；對 origin 77 個 `claude/*` 分支與 main 的 seed＋卡單再去重 0 撞。
+
+## 上線與評分（2026-10-23，主線）（條號 18436–18438）
+- **18436**：上線 26 張：card_catalog 26／26、KV 26 鍵回讀逐字一致、試聽 18 ready（11 張人工配：曲名為符號／時長／編號、藝人名 Aethenor、盤名 Other 等）、8 unavailable（Burial Chamber Trio、KTL、Jodis、Final《Afar》《Burning Bridges》、Bass Communion《Loss》、Jasper TX《A Darkness》、Mathieu：Apple 無對應）、seed +26、published gate 0 error。
+- **18437**：類型樹 26／26 落位（`genre-l3-artist-map.json` 補 Æthenor、Mamiffer & Circle、Stephen O’Malley、Fear Falls Burning、Jodis → rock/metal/doom）；抽卡封面重建。
+- **18438**：**落格率 26/26＝100%**（`batch-progress/mood-axes/score-md22/`，照 10-23 體感標準）。評分 x 1.2–2.6、y 0.9–2.0、z −1.8～−0.2；Mathieu《Before Nostromo》z −0.2、y 0.9 最貼邊，KTL 同名盤 x 2.6。**研究後汰掉的 12 張是落格率的關鍵**——有鼓推進／刺耳爆裂與偏暖的全數擋下。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Tribes of Neurot、Mamiffer & Circle（合掛名）、Burial Chamber Trio、Stephen O’Malley、Barn Owl、Jodis、Fear Falls Burning、Aidan Baker、Bass Communion、Jasper TX、Stephan Mathieu（11 個掛名）。

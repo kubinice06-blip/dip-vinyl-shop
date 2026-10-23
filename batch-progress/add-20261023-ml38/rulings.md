@@ -103,3 +103,12 @@
   - `Horace Andy|Life Is for Living`：「《Mezzanine》裡有五首由他主唱，〈Angel〉也在其中。」→「《Mezzanine》的〈Angel〉就是他唱的。」（「五首」只見維基一處，《Mezzanine》署名主唱與此不符，拿掉數字）→ 161 字。
 - 19073：未改但記錄——Viceroys〈They Can't Stop Us Now〉「又硬又重」是樂評部落格的聲音描述（非評價），保留；Horace Andy〈Skylarking〉牙買加榜首屬銷售榜、未點名媒體，保留；Tyrone Evans 封面用圓標（原盤 Wackie's 通用封套）。
 - 19074：上線前檢查——`qa-batch out`、`qa-check-research`（兩檔各 0 標記）、`fix-spacing`（0）全過。
+- 19075：上線前檢查——prepare gate 0 error（27 warning 皆 UPC 盡力而為等）；封面 live-check 26/26 HTTP 200（CAA 17、Apple 4、Discogs 5，Discogs 已登錄 registry）；對 origin 77 個 `claude/*` 分支與 main 的 seed＋卡單再去重 0 撞。
+
+## 上線與評分（2026-10-23，主線）（條號 19076–19078）
+- **19076**：上線 26 張：card_catalog 26／26、KV 26 鍵回讀逐字一致、試聽 16 ready（Don Carlos《Spread Out》以 Apple《Pass Me The Lazer Beam》人工配）、10 unavailable（Barry Brown 三張、Wade、Tyrone Evans、Alphonso、Bunny Wailer、Prophet《Serious Reasoning》、兩張 Ariwa Showcase：Apple 無對應）、seed +26、published gate 0 error。
+- **19077**：類型樹 26／26 落位。Last.fm 把 4 張標錯（Rico《Wareika Dub》jazz/rock、Wade rock/world、兩張 Ariwa Showcase 空），seed 曲風欄改回 world 為首；`genre-l3-artist-map.json` 補 Rico、兩張 Showcase → world/reggae/dub，Wade、Tyrone Evans → world/reggae/roots。抽卡封面重建。
+- **19078**：**落格率 26/26＝100%**（`batch-progress/mood-axes/score-ml38/`，照 10-23 體感標準）。評分 x 1.9–2.9、y 0.5–1.5、z 0.5–1.3；Roland Alphonso《Roll On》x 2.9／y 0.5 最貼邊。**研究後汰掉的 7 張是落格率的關鍵**——冷硬器樂 dub、合成器 boogie、精選全數擋下。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Harry Mudie、Rico Rodriguez、Michael Prophet、Wayne Wade、Linval Thompson、Barry Brown、The Viceroys、Lacksley Castell、Don Carlos、Tyrone Evans、John Clarke（Wackie's 歌手，非 Johnny Clarke）、Roland Alphonso、Wayne Jarrett、Mad Professor & Sandra Cross、Mad Professor & Susan Cadogan（合掛名）（15 個掛名）。
