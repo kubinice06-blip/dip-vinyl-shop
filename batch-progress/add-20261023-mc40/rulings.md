@@ -10,3 +10,16 @@
 - 策展 51：弦樂獨奏 11、弦樂二重奏 24、弦樂領奏小編制 10、吉他獨奏 3、當代無調弦樂 3；moodGuess 全過邊距（x 3.4–3.8、y −1.6～−0.2、z −1.8～−1.0）。去重：seed 與 mc 系各批 curation 0 撞；《Play 'em as They Fall》池中已有（掛名今井和雄）剔除；Revolutionary Ensemble《The People's Republic》mc3 研究判靜不再提。策展層擋下現場盤 21 張（多數 MB 未標 Live、看 Discogs 記事）。
 - **候補 6（x 貼邊，不入 pick；研究汰換時從這裡補）**：Mat Maneri Trio《Fever Bed》（偏慢幽、末兩曲借 Rollins／Mahler 題）、Dresser & Uitti《Sonomondo》（雙弓長音段）、Nakatani & Kowald《13 Definitions of Truth》（弓擦金屬長音）、Norton／Léandre／Ulrich《Ocean of Earth》（顫音琴柔）、Lytton & Wachsmann《Some Other Season》（即時電子推 y、ECM 殘響）、Friedlander《Maldoror》（慢陰沉段）。
 - **MB flag**：Arditti《Cage: Freeman Etudes》兩冊照 mc32 古典寫法掛演奏者、盤名前加「Cage:」（MB 原名留 queryAlias）；Léandre & Zingaro《Ecritures》MB first-release-date 空，策展填 1990 由研究層核對；Bailey & Honsinger《Duo》MB RG 只有 2018 再版日期，年份取 1976 Incus 原盤。CDr 5 張（Bead 3、Loose Torque、Flying Aspidistra）為廠牌正規編號全長作品。
+
+## 研究 e 組
+- **21041**（Guy／Riley／Wachsmann）盤名年份對不上：卡單盤名「(1977-9)」是 2002 Emanem 擴充版（11 首、含 1979 新增，前八首因母帶遺失由 LP 降噪轉出），year 1978／Vinyl Records 是原版 LP（8 首、無 (1977-9)）。建議主線二選一：盤名保留→year 2002、Emanem；或改原盤名、1978、Vinyl Records。兩把樂器另用踏板擴音／電子，moodGuess 存疑（輕度，可能偏重）。
+- **21042**（Wachsmann／Taylor／Mattos／Brighton《Strings》）策展誤把 Taylor 當弦樂手：實為打擊樂＋電子，另有電吉他，三人信用名單註明 Electronics。moodGuess 存疑（中度，編制偏電聲、長曲 16:37，可能偏重／y 偏高），建議汰換進候補或聽過再收。
+- **21043**（Kowald／Masaoka／Robair）JazzWord 評為「furious, roaring, take-no-prisoners」，moodGuess 存疑（中度，可能偏重）。Kowald 2002 辭世早於 2003 發行，依型 1 標明、不渲染。
+- **21044**（Golia／Léandre／Filiano）Golia 用尺八、笙、陶笛、低音長笛等氣鳴樂器，加兩把低音提琴；moodGuess 存疑（中度，可能偏靜或低頻偏厚）；查無樂評，建議聽過再收。
+- **21045**（Perelman Strings 2）Jazz Trail：比 Strings 1「更暗」、第一首長音嗡鳴、哀號與嘆息；Audiophile Audition：大提琴有「極致纖細」段。moodGuess 存疑（中度，可能偏靜）。補正：另有 Rothenberg 低音單簧管 4 首。
+- **21046**（Frith／Léandre／Segel）Squid's Ear 評為柔和稍縱即逝，moodGuess 存疑（可能偏靜）。Squid's Ear／AllMusic 頁被擋，評語為搜尋摘要轉述，主線引述前需核對。
+- **21047**（Amado／Zíngaro／Filiano）Amado 用上低音薩克斯風，moodGuess 存疑（輕度，可能偏重）。維基「Rodrigo Amado」是同名帆船選手，勿用，身分以 Discogs 簡介為準。
+- **21048**（Léandre／Lenoci）無樂評可引，聲音條為編制推論，status thin；Lenoci 鋼琴兼用 objects。
+- **21049**（Perelman Strings 1）無不符，聲音符合冷冽預估（高音尖叫＋弦簾幕、無鼓）。曲目無標題，keyTracks 為樂評 Track 編號。
+- **21050**（保留）未使用。
+- 本組 WebSearch 用 3 次（Tempted to Smile、Guy/Riley/Wachsmann、Perelman Strings 1）。全 9 張皆為錄音室錄音，無現場盤；無借曲／標準曲。
