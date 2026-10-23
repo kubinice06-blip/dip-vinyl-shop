@@ -124,3 +124,11 @@
   - `desc2:Georgia Anne Muldrow|Overload`：「她自稱這是一場克制的實驗，樂評則說整張大致放鬆、很少慌亂。」→「她自稱這是一場克制的實驗。」依據：單源樂評評價句（研究 a 組該條僅一則樂評），照審稿規則刪；未動事實，研究／鉤子層不需同步。
 - 其餘 37 張逐張審過未改字（Les Nubians 的 Billboard 200 第 100 名、GIVĒON 第 11 名、Kali Uchis 美國專輯榜第 4 名為銷售榜成績，不屬媒體年終榜，保留；Eric Lau〈Im Fine〉照研究稿與發行原名無撇號）。
 - 試聽：37 ready／1 unavailable（The Midnight Hour：Apple 僅有不同作品《Lost Tapes JID028》，0/20）；Apple 搜尋回空的 13 張改走 `entity=musicArtist` → `lookup` 逐盤比曲目（`preview-override.json`）。冷門軸人工 2 張（Sa-Ra 掛名分裂 listeners 失真→4；Gabriels 盤名分兩條→3）。
+
+## 上線當天評分（2026-10-23，`batch-progress/mood-axes/score-ml5/`）
+- 38 張評分（Opus，照 score500/BRIEF.md；mid 30、low 8）→ `scored-ml5.json` → build-priors → scale v0 → build-card-moods gate 綠（錨點 104/104）。
+- **落格率：落恍惚 35/38＝92.1%**。出格 3 張落頹靡（z 判冷）：Greentea Peng《TELL DEM IT'S SUNNY》、Nick Hakim《WILL THIS MAKE ME GOOD》、The Midnight Hour《The Midnight Hour》——研究稿都寫到陰暗／陰森／冷峻。貼邊（z ≤ +0.2）：GIVĒON、KeiyaA、Steve Spacek《Space Shift》。
+- 子曲風：warm-batch 38 張全有標籤；Eric Lau《New Territories》、The Midnight Hour 推不出節點，補進 `genre-l3-artist-map.json` 的 `soul/neo-soul`。
+
+## 本批新藝人（無介紹，未切；6 個並行時子工作階段不切）
+Spacek、Steve Spacek、The Foreign Exchange、Sa-Ra、Eric Lau、Children of Zeus、KeiyaA、Yazmin Lacey、Society of Soul、Les Nubians、Greentea Peng、The Midnight Hour、Fatima、Goapele、Raveena、Kali Uchis、Charlotte Day Wilson、Sabrina Claudio、Nick Hakim、Gabriels、Baby Rose、Bobby Oroza、GIVĒON、SiR、Contour（25 位）。

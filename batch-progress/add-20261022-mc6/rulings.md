@@ -100,3 +100,17 @@
   - `desc2:Anthony Rother|Popkiller`：刪「懂得寫流行鉤子，樂評舉的例子就是〈Father〉」單源樂評評價句（RA 一則），改補曲序事實「從 1 分半的開場短曲〈Day〉排到〈Who Knows〉」（研究 facts Discogs master 22036）。145 → 151 字。
   - `desc2:The Hacker|Mélodies en Sous-Sol`：刪「被形容帶有 New Order 與 Dopplereffekt 的回響。」單源比較評價句（英文維基一則）。179 → 143 字。
 - 其餘 41 張逐張審過未改字（Tesseracter、Newmark Phase 的「樂評聽到…」為聲音描述、非評價，保留；Exos《Strength》父親 Octal 出自 Discogs 藝人頁與作曲欄，保留）。
+
+## 主線上線（2026-10-23）
+- 試聽：26 ready／18 unavailable。meta 預設命中 22；Apple 搜尋回空的改走藝人目錄逐盤比曲目，人工指定 3 張（Popkiller 2 de 1675994007 10/10、Mr Velcro Fastener us 6820047924 10/10、Beuys de 1688086135 主盤 8/9）；Silicon Scally《Crushed》Apple 只有 6 軌不完整版，不配。其餘 17 張（Rother《Sex With the Machines》《Hacker》《Netzwerk》《Verbalizer》《AI SPACE》、Silicon Scally 5 張、Cygnus《Vox Alia》《Voyager VII》、dynArec 2、Boris Divider、The Hacker、AUX 88《Counterparts》）Apple 無此盤。
+- 封面：CAA 37；CAA 不通 7 張——Discogs 5（Boris Divider 860550、Gosub 941764、dynArec《User Input》13746790〔原 CD 版圖僅 200px，取同盤數位再發 600px 同圖〕、《Overland Travelling》615229、Optic Nerve《Children of the Universe》29912，已登錄 `data/discogs-cover-registry.json` reviewed=ok）、Apple 2（Rother《Super Space Model》CAA release front-500 也 500、Mr Velcro Fastener）。上線前 live-check 44 張全 200，縮圖表目視全部與盤名相符。
+- 三軸：照機器基線（Last.fm listeners），冷門軸無人工改；全部 uncommon，apex 無。
+- 跨分支去重：對 origin 49 個分支 seed 去重 0。card_catalog 44／44、KV 44 鍵逐字回讀一致、`--write-preview`、`--write-pool`、build-seed-genres、published gate 0 error。
+
+## 上線當天評分（2026-10-23，`batch-progress/mood-axes/score-mc6/`）
+- 44 張評分（Opus；mid 13、low 31）→ `scored-mc6.json` → build-priors → scale v0 → build-card-moods gate 綠（錨點 104/104）。
+- **落格率：落冷冽 43/44＝97.7%**。出格 1 張：AUX 88 Presents Black Tokyo（日本女聲、俱樂部人聲，z +0.2 落雀躍）。x 3.1–4.0（electro 無攻擊性但節奏快，比照 Kraftwerk／YMO 錨點），y 全 ≤ 0.4。貼邊：Optic Nerve 兩張 z −0.1／−0.2、Cygnus《Vox Alia》z −0.2、Lowfish《Eliminator》x 3.1。
+- 子曲風：warm-batch 43 有標籤、1 空；AUX 88 Presents Black Tokyo 補進 `genre-l3-artist-map.json` 的 `electronic/synth/electro`。
+
+## 本批新藝人（無介紹，未切；6 個並行時子工作階段不切）
+Japanese Telecom、Elecktroids、Lab Rat XL、AUX 88 Presents Black Tokyo、Ectomorph、Dynamik Bass System、Silicon Scally、Boris Divider、Cygnus、Gosub、Lowfish、dynArec、Optic Nerve、Exos、The Hacker、Mr Velcro Fastener（16 位）。
