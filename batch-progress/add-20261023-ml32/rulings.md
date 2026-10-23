@@ -38,3 +38,14 @@
 - **16486** The Altons《Heartache in Room 14》：Discogs 登記 Bosco Mann 製作編曲並混音、含 Tape Op；樂評稱『安靜親密中速』『crisp, modern production』，y 風險（策展層已預警）成立一半——磁帶有，濕糊無。Joey Quiñones 同時在 Altons 專輯名單中。
 - WebSearch 實際用了 6 次（超出每支 3 次：Sinseers／Altons 的維基與廠牌頁全 404，DuckDuckGo 驗證擋住，只能補搜）；其餘走 MB／Discogs API 與 WebFetch。
 - 研究 a 組合計推翻策展層 2 處（Quesada 年份與廠牌、Sinseers 署名性質）、存疑 7 張全列（Marloes 偏高，其餘中度或輕度）。
+
+## 研究 c 組（16501–16510）
+- **16501** Chancha Vía Circuito《Amansará》：訪談證實比前兩張慢、真樂器重錄（採樣無法清授權）、叢林錄音；但 Wonderwheel 文案有『pounding drums』『deep dancefloor』，中段曲 x 可能到 2.5–3.2。查無殘響／類比來源，y 的濕度屬未證實，製作環境是數位（錄音機＋電腦）。
+- **16502** Chancha《Río Arriba》：Sounds and Colours 實證平均約 80 BPM、無常規打擊樂、『hypnotic』，curatorRisk（cumbia 拍判躁）風險低。殘響／低頻厚度無來源，標 uncertain。性質：11 首中 4 首為他人作品重混（維基另有 Río Arriba Mixtape 條目），MB 為 Album，保留；黑膠 2011 年 3 月才出（S&C），卡年 2010 沿用。
+- **16503** Quantic presenta Flowering Inferno《Dog With a Rope》：moodGuess 明顯存疑——BBC 實證是真樂手（UB40／Steel Pulse 鼓手 Conrad Kelly）rocksteady／rumba／cumbia 擺盪、銅管清脆、直立貝斯，刻意做成 1974 前的暖乾老錄音；殘響與延遲只在 dub 版出現，不是整張的厚低頻回聲。x 可能近 3.0，建議主線實聽；z 暖度成立。錄音：Cali Sonido del Valle，銅管在巴拿馬 Panavox（Discogs LP 註記）。維基寫 2009、Discogs／Apple／MB 為 2010，採 2010。
+- **16504** Quantic presenta Flowering Inferno《Death of the Revolution》：標 thin。找不到獨立樂評（AllMusic、RA 403，Tru Thoughts／Bandcamp 404），只確認 Cali 錄、Holland 一人掛滿多種樂器、有 dub／version 曲、Westbound Train 為翻玩。x、y 皆未證實，建議汰換優先序列後段。維基稱首作 self-titled 屬誤。
+- **16505** Horace Andy《Exclusively》：與池中《Dance Hall Style》同源——Wackie's（Bronx）錄音，Lloyd Barnes 製作；維基說兩者是同張，Discogs 分開（DHS 7 首、Exclusively 10 首，共同 3 首）。我不列建議移除，但交主線決定是否留。聲音只證實 lo-fi，Bronx 小室；殘響／低頻厚度無來源。
+- **16506** Don Carlos《Harvest Time》：卡單 label 空，應補 Negus Roots（NERLP 005）。moodGuess 存疑——Discogs 演奏者欄是 Sly Dunbar／Robbie Shakespeare／Lloyd Parks 等 Tuff Gong＋Channel One 班底，兩位鼓手都記 Electric Drums，另有合成器，非 Roots Radics 慢 rub-a-dub，可能偏亮偏推進。查無樂評，標 thin。
+- **16507** Don Carlos & Gold《Them Never Know Natty Dread Have Him Credential》：最有支撐的一張（Roots Radics、Scientist 混音、Channel One、1985 前非數位）。維基記 1981 Channel One，Discogs／MB 為 1982 Hit Bound 美版，年份保守沿用 1982。Gold 身分查無來源，未展開。
+- WebSearch 用了 3 次（Amansará、Río Arriba、Dog With a Rope 各一）；其餘走 MB／Discogs API 與 WebFetch，另用 curl 抓 BBC 樂評頁。
+- 研究 c 組合計推翻策展層 1 處（Harvest Time 廠牌空白與伴奏性質）、moodGuess 存疑 5 張（Dog With a Rope 明顯、Harvest Time 明顯、Death of the Revolution、Exclusively、Amansará 輕度）。
