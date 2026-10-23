@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格線第 13 輪派工：優先序 64–69
+
+- **起因**：第 12 輪收工（ml53 17／17、mc40 29／28、ml54 22／21、md29 33／32、ml55 22／22、mc41 11／10，上線／落格）。恍惚 1,599、頹靡 1,512、冷冽 1,507——恍惚已領先，本輪改冷冽、頹靡優先（一個工作階段不配恍惚）。
+- **新場景**：ml56 暖 trip-hop 女聲（店主要多 downtempo）、ml57 neo-soul 女聲慢盤、mc42 自由即興打擊、mc43 現代室內樂尖細二線、md30 dark ambient 第五波、md31 冷 post-rock 二線。
+- **派工**：ml56＋mc42、ml57＋md30、mc43＋md31。
+- **主要檔案**：`batch-progress/mood-cells-20261022/SCENES.md`。
+- **驗證**：純佇列文件變更；新條號 21241–21720 不與既有重疊。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 12 輪 ml54／md29：lo-fi 第四波 22 張、dark ambient 第四波 33 張上線，落格 21/22、32/33
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 12 輪，本工作階段負責 ml54、md29（評分照 10-23 體感標準；店主同日「恍惚可以多增加一點 downtempo 與 dub」）。ml54（`add-20261023-ml54`，恍惚）：Jazzinuf ×2、eevee、Bcalm ×2、Mondo Loops ×2、Aviino、Sweatson Klank、NOGYMX ×3、Freddie Joachim ×2、Laffey ×2、delayde ×2、Pachyman ×3（dub 化擴寫）、Teebs《Collections 01》。md29（`add-20261023-md29`，頹靡）：Cryo Chamber 晚期／二線（Dead Melodies、Ager Sonus、Hilyard、Phonothek、Keosz、Sjellos、Void Stasis、Crypthios、Council of Nine、Ugasanie ×2）、Cyclic Law 二線（Shrine、Sinke Dûs、Taphephobia、Kave、Altarmang、Shedir、Ajna ×2、Beyond Sensory Experience ×2、Vestigial）、Glacial Movements（Ark Zead、Equal Stones、Philippe Petit、Skare）、Zoharum（Hoarfrost、Strom Noir、Inner Vision Laboratory）、Fractalyst、器樂 dub 擴寫（Jah Shaka、Iration Steppas）。
