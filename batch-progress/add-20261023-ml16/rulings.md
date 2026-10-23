@@ -45,3 +45,12 @@
 - **15227** Big Moe《City of Syrup》校正：卡單曲名〈Mann!〉維基拼作〈Maan!〉（回應 Black Rob〈Whoa!〉）。moodGuess 存疑（中）：來源只證實取樣偏 funk／R&B 暖，〈Maan!〉語氣可能偏硬。Big Moe 2007 年辭世與本作無關，不進 facts。
 - **15228** Big Moe《Purple World》日期 MB 4-22、維基 4-23，年份 2002 不變。moodGuess 存疑（輕）：Grover Washington Jr. 取樣旁證暖，但主打速度無來源。
 - 本組 8 張全有 moodGuess 存疑註記，無硬性推翻年份／廠牌／掛名；status：full 6、thin 2（內部整修、Maxo）。WebSearch 共用 3 次（內部整修 2 次、另 1 次同題），其餘靠 Wikipedia／MB。
+
+## 研究 e 組
+- **15241** VICES 推翻策展層：「兩人第三張合作」不成立，實為至少第五個聯合計畫（Cigarette Boats 2012／The Stage 2013／The Marina 2018／The OutRunners 2020／VICES 2023）；改寫。Stereogum 客座含 Tommy Wright III，與賣場曲目單（G.T.、Vico）不符，facts 採曲目單。moodGuess 輕度存疑：80 年代 synth／邁阿密霓虹偏亮，z 0.7 可能偏中性。
+- **15242** Devin the Dude《The Dude》推翻策展層：製作名單沒有 Mike Dean（他出現在《To tha X-Treme》），主製作是 Domo；「厚 funk 低音」改採 RapReviews 的說法（標題曲 thumping bassline、〈Don't Wait〉深貝斯＋俐落鼓 loop，評為較硬）。moodGuess 輕度存疑：y 0.8 要留意〈Don't Wait〉較硬、全盤 73 分鐘。
+- **15243** Devin《To tha X-Treme》推翻策展層：「Rhodes」查無來源，不採；取樣改用維基清單（Willie Hutch、James Taylor、Rick James）。聲音證據足（慢貝斯、從容、滑棹吉他）。MB 另有 Screwed & Chopped-A-Lot 版（2004-08-03），不是本卡。
+- **15244** Curren$y x The Alchemist《Covert Coup》性質：免費混音帶（原擬零售 EP），約 28 分、十首、七首不到 3 分鐘；MB 2011 版無廠牌，廠牌取維基。moodGuess 輕度存疑：x 2.4 對緊湊短曲＋Prodigy／Freddie Gibbs 客座可能偏保守，BPM 評論稱 Alchemist 顆粒感僅「收斂」。
+- **15245** Curren$y & The Alchemist《Continuance》校正：策展「十年後再合作」不精確（2016 混音帶、2018 EP 在中間），維基稱其為二人第一張錄音室專輯。開場曲 MB 為〈Half Moon Mornings〉，樂評寫〈Half Moon Bay〉。聲音與 moodGuess 相符（鼓貝斯柔軟、Rhodes／吉他暖）。
+- **15246** Curren$y & Harry Fraud《The OutRunners》：策展寫「殘響 soul 取樣與厚低音」查無來源，不採；聲音證據偏薄（soulful、海灘、鬆弛，無鼓／速度／低頻）。moodGuess 輕度存疑，請主線耳聽覆核。
+- 本組 6 張全 status full（facts 11、11、12、11、11、11 條）；推翻策展層 4 處（VICES 合作次序、Dude 的 Mike Dean、X-Treme 的 Rhodes、OutRunners 的殘響低音）；WebSearch 本組共用 3 次（OutRunners、VICES、Continuance）。無年份／廠牌／掛名硬性推翻，無移除建議。
