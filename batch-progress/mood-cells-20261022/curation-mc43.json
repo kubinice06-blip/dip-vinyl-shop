@@ -1,0 +1,1621 @@
+{
+ "group": "mc43",
+ "factions": [
+  {
+   "id": "string-quartet",
+   "zh": "弦樂四重奏／三重奏",
+   "count": 14,
+   "why": "Arditti、Diotima、Kreutzer 等團體演出的二線作曲家四重奏：四把弦刮擦、泛音、微分音滑奏，薄、硬、無旋律"
+  },
+  {
+   "id": "solo-duo",
+   "zh": "獨奏與二重奏",
+   "count": 13,
+   "why": "小提琴、中提琴、大提琴、雙簧管獨奏與二重奏：尖細高頻、技巧爆發，神經繃緊"
+  },
+  {
+   "id": "piano-solo",
+   "zh": "鋼琴獨奏",
+   "count": 6,
+   "why": "Aperghis、Haas 微分音等鋼琴作品：乾、跳進密集、無旋律"
+  },
+  {
+   "id": "ensemble",
+   "zh": "室內樂團",
+   "count": 18,
+   "why": "Neuwirth、Poppe、Cassidy、Posadas、Illés 等小編制團體：密集刮擦、複節奏、聲部清楚、質地乾薄"
+  },
+  {
+   "id": "voice-theatre",
+   "zh": "人聲與器樂劇場",
+   "count": 2,
+   "why": "Aperghis《Récitations》《Machinations》一類：無旋律的音節碎片、快速口技，緊張不安"
+  },
+  {
+   "id": "live-electronics",
+   "zh": "即時電子",
+   "count": 1,
+   "why": "樂器加即時電子的室內作：高頻顆粒與尖細處理，冷"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Arditti Quartet",
+   "album": "Neuwirth: Chamber Music",
+   "composer": "Neuwirth",
+   "year": 2005,
+   "label": "KAIROS",
+   "country": "at",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Neuwirth 室內作合集（Hodges、Irvine Arditti、Knox 與 Arditti 四重奏），刮擦與突刺不停，緊繃尖細、旋律不明",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.6,
+    "z": -1.8,
+    "why": "弦樂、鋼琴、中提琴的尖銳滑奏與噪音碎片，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/71110331-27e2-3a57-b378-68c35f169269",
+    "https://coverartarchive.org/release-group/71110331-27e2-3a57-b378-68c35f169269/front"
+   ],
+   "mbRgMbid": "71110331-27e2-3a57-b378-68c35f169269",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Arditti Quartet",
+   "album": "Nancarrow: Quartets and Studies",
+   "composer": "Nancarrow",
+   "year": 2007,
+   "label": "Wergo",
+   "country": "",
+   "faction": "string-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Nancarrow 自動鋼琴語法移植到弦樂四重奏，多重速度同時跑，被推著走的機械脈動、薄而尖",
+   "moodGuess": {
+    "x": 4.0,
+    "y": -0.7,
+    "z": -1.0,
+    "why": "四把弦飛快的多速度卡農，機械推進，乾薄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/473ab94b-45b2-4697-a990-cfab19faf59e",
+    "https://music.apple.com/us/album/nancarrow-quartets-and-studies/1160724597"
+   ],
+   "mbRgMbid": "473ab94b-45b2-4697-a990-cfab19faf59e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Arditti Quartet",
+   "album": "Haas: Ein Schattenspiel / String Quartets no. 4 & no. 7",
+   "composer": "Haas",
+   "year": 2020,
+   "label": "NEOS",
+   "country": "de",
+   "faction": "string-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Haas 微分音四重奏的 Arditti 錄音，泛音互相摩擦、滑奏不停，耳朵一直被刮，緊張而冷",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.6,
+    "why": "微分音滑奏與泛音摩擦、電子延伸，無旋律、刺耳"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fc259533-ad46-41cc-a454-c3bc1ff891db",
+    "https://coverartarchive.org/release-group/fc259533-ad46-41cc-a454-c3bc1ff891db/front"
+   ],
+   "mbRgMbid": "fc259533-ad46-41cc-a454-c3bc1ff891db",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Arditti Quartet",
+   "album": "Guerrero: Zayin",
+   "composer": "Guerrero",
+   "year": 1999,
+   "label": "Almaviva",
+   "country": "es",
+   "faction": "string-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Francisco Guerrero《Zayin》系列四重奏與三重奏，碎形算法生出的密集弦樂刮擦，西班牙前衛最尖的一支",
+   "moodGuess": {
+    "x": 3.9,
+    "y": -0.5,
+    "z": -1.9,
+    "why": "密集刮擦、碎拍弦樂織體，無旋律，乾硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0bc63991-a956-4b4a-9022-e9c8bacab34c",
+    "https://coverartarchive.org/release-group/0bc63991-a956-4b4a-9022-e9c8bacab34c/front"
+   ],
+   "mbRgMbid": "0bc63991-a956-4b4a-9022-e9c8bacab34c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Arditti Quartet",
+   "album": "Birtwistle: Complete String Quartets",
+   "composer": "Birtwistle",
+   "year": 2012,
+   "label": "Æon",
+   "country": "us",
+   "faction": "string-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Birtwistle《Tree of Strings》與《Nine Movements》等四重奏，四把弦互相撕扯、斷句尖銳，冷硬不入耳",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.5,
+    "why": "粗礪弦樂對話、斷裂的爆發，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8c49a32b-f785-433b-957e-3c53a38276a2",
+    "https://coverartarchive.org/release-group/8c49a32b-f785-433b-957e-3c53a38276a2/front",
+    "https://music.apple.com/us/album/birtwistle-complete-string-quartets/1571803619"
+   ],
+   "mbRgMbid": "8c49a32b-f785-433b-957e-3c53a38276a2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Birtwistle 四重奏偏慢段落多，x 估 3.4 貼邊；MB 未載廠牌，Æon 取自 Apple Music 條目"
+  },
+  {
+   "artist": "Klangforum Wien",
+   "album": "Aperghis: Contratemps / SEESAW / Parlando / Teeter-totter",
+   "composer": "Aperghis",
+   "year": 2012,
+   "label": "KAIROS",
+   "country": "at",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Aperghis 器樂劇場式室內作，句子不停被打斷、口技與器樂互撞，神經質而冷硬",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.4,
+    "z": -1.4,
+    "why": "抽搐式短句、人聲口技與器樂碎拍，乾、無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/111cfc7f-5322-4bb8-b9b3-abd94e937b08",
+    "https://coverartarchive.org/release-group/111cfc7f-5322-4bb8-b9b3-abd94e937b08/front"
+   ],
+   "mbRgMbid": "111cfc7f-5322-4bb8-b9b3-abd94e937b08",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Klangforum Wien",
+   "album": "Neuwirth: Vampyrotheone / Instrumental-Inseln aus „Bählamms Fest“ / Hooloomooloo",
+   "composer": "Neuwirth",
+   "year": 2001,
+   "label": "KAIROS",
+   "country": "at",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Neuwirth 1990 年代室內樂團作品，尖叫似的高音、走音的取樣器與突襲，古怪而緊繃",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.2,
+    "z": -1.5,
+    "why": "尖銳高音、取樣器與失諧音色碎片，緊張不安"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b7dacb93-d7aa-383a-bad2-a7ab7c5787cf",
+    "https://coverartarchive.org/release-group/b7dacb93-d7aa-383a-bad2-a7ab7c5787cf/front"
+   ],
+   "mbRgMbid": "b7dacb93-d7aa-383a-bad2-a7ab7c5787cf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "ELISION Ensemble",
+   "album": "Cassidy: The Crutch of Memory",
+   "composer": "Cassidy",
+   "year": 2012,
+   "label": "NEOS",
+   "country": "de",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Aaron Cassidy 參數化記譜的新複雜主義室內作，ELISION 演出，刮擦、氣音與斷裂動作不停，硬蕊而冷",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.3,
+    "z": -1.9,
+    "why": "新複雜主義的弦樂、銅管氣音與刮擦，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a5b6ef4c-307d-4ebb-b89c-3f778bbcd9c8",
+    "https://music.apple.com/us/album/cassidy-the-crutch-of-memory/673182350"
+   ],
+   "mbRgMbid": "a5b6ef4c-307d-4ebb-b89c-3f778bbcd9c8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "ensemble recherche",
+   "album": "Illés: Watercolors and Psychograms",
+   "composer": "Illés",
+   "year": 2022,
+   "label": "KAIROS",
+   "country": "at",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Márton Illés 的『心理圖譜』室內作，痙攣式的短促手勢與高音滑奏，坐不住的不安感、旋律不明",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.5,
+    "z": -1.5,
+    "why": "痙攣般的手勢、高音滑奏與碎拍，乾薄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ea4d9109-7029-4377-9a67-49862a8744c9",
+    "https://music.apple.com/us/album/m%C3%A1rton-ill%C3%A9s-watercolors-and-psychograms/1624066384"
+   ],
+   "mbRgMbid": "ea4d9109-7029-4377-9a67-49862a8744c9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ensemble Recherche",
+   "album": "Grisey: Vortex temporum / Taléa",
+   "composer": "Grisey",
+   "year": 2001,
+   "label": "Accord",
+   "country": "fr",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Grisey 光譜派裡最快最尖的兩首：《Taléa》粗暴對切、《Vortex temporum》琶音旋渦不停轉，被推著走",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.3,
+    "z": -0.9,
+    "why": "高速琶音漩渦、暴烈對比，五重奏聲部清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/560a0d7d-18c9-3759-a066-b24e091bc5f6",
+    "https://coverartarchive.org/release-group/560a0d7d-18c9-3759-a066-b24e091bc5f6/front"
+   ],
+   "mbRgMbid": "560a0d7d-18c9-3759-a066-b24e091bc5f6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "光譜派和聲偏亮，z 估 −0.9"
+  },
+  {
+   "artist": "Arditti Quartet",
+   "album": "Reynolds: Coconino... A Shattered Landscape / Visions",
+   "composer": "Reynolds",
+   "year": 2000,
+   "label": "Montaigne",
+   "country": "fr",
+   "faction": "string-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Arditti 演出 Roger Reynolds 四重奏《Coconino...》《Visions》與獨奏小提琴《Kokoro》，碎裂、尖細、旋律不明",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.6,
+    "z": -1.6,
+    "why": "碎裂的弦樂段落、尖銳泛音與獨奏小提琴，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0efd4e8d-10f6-423a-a572-eb443ee32c82",
+    "https://music.apple.com/us/album/r-reynolds-coconino-visions-kokoro/309324503"
+   ],
+   "mbRgMbid": "0efd4e8d-10f6-423a-a572-eb443ee32c82",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Nicolas Hodges",
+   "album": "Aperghis: Works for Piano",
+   "composer": "Aperghis",
+   "year": 2010,
+   "label": "NEOS",
+   "country": "",
+   "faction": "piano-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Hodges 彈 Aperghis 鋼琴作品，抽搐式重複與突然斷裂，乾、硬、讓人坐不住",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": -1.6,
+    "why": "神經質的重複音型與斷句，乾鋼琴、無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f4a06ee8-1799-4d5e-874d-898b92a3a26d",
+    "https://coverartarchive.org/release-group/f4a06ee8-1799-4d5e-874d-898b92a3a26d/front"
+   ],
+   "mbRgMbid": "f4a06ee8-1799-4d5e-874d-898b92a3a26d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Thomas Zehetmair",
+   "album": "Holliger: Lieder ohne Worte",
+   "composer": "Holliger",
+   "year": 1997,
+   "label": "ECM Records",
+   "country": "de",
+   "faction": "solo-duo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Holliger 小提琴與鋼琴作品（Zehetmair、Larcher），表現主義式的碎片與高把位尖叫，《Trema》刮擦不停",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.6,
+    "z": -1.2,
+    "why": "小提琴高把位刮擦、碎裂的鋼琴對話，尖細"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2cab3086-2b0e-3f69-85f5-69e087acad10",
+    "https://coverartarchive.org/release-group/2cab3086-2b0e-3f69-85f5-69e087acad10/front"
+   ],
+   "mbRgMbid": "2cab3086-2b0e-3f69-85f5-69e087acad10",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 掛作曲家＋演奏者，取首位演奏者 Zehetmair；含一首豎琴獨奏"
+  },
+  {
+   "artist": "Heinz Holliger",
+   "album": "The spectacular Heinz Holliger plays music by Berio, Castiglioni, Holliger, Huber, Krenek, Lehmann",
+   "composer": "Berio / Castiglioni / Holliger / Huber / Krenek / Lehmann",
+   "year": 1970,
+   "label": "Philips",
+   "country": "gb",
+   "faction": "solo-duo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Holliger 1970 年的現代雙簧管專輯，Berio《Sequenza VII》與他自己的多音研究，雙簧管被逼到極限的尖嘯",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.9,
+    "z": -1.6,
+    "why": "雙簧管多音、循環換氣尖嘯，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8cb1df99-5850-4112-961b-bf72acc77136",
+    "https://coverartarchive.org/release-group/8cb1df99-5850-4112-961b-bf72acc77136/front"
+   ],
+   "mbRgMbid": "8cb1df99-5850-4112-961b-bf72acc77136",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 正規名本身已列作曲家，不另加前綴"
+  },
+  {
+   "artist": "Heinz Holliger",
+   "album": "Carter / Yun: Lauds and Lamentations: Music of Elliott Carter and Isang Yun",
+   "composer": "Carter / Yun",
+   "year": 2003,
+   "label": "ECM Records",
+   "country": "de",
+   "faction": "solo-duo",
+   "genres": [
+    "classical"
+   ],
+   "why": "ECM 的 Carter 獨奏／二重奏小品加尹伊桑，Holliger、Zehetmair、Killius、Demenga 演出，薄而尖、旋律不明",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.6,
+    "z": -1.3,
+    "why": "獨奏小提琴、中提琴、雙簧管的跳進與尖銳裝飾，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/411cc362-009a-3bcd-9033-c050c3937bda",
+    "https://coverartarchive.org/release-group/411cc362-009a-3bcd-9033-c050c3937bda/front"
+   ],
+   "mbRgMbid": "411cc362-009a-3bcd-9033-c050c3937bda",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 掛 Holliger／Zehetmair／Killius／Demenga 四人，取 Holliger"
+  },
+  {
+   "artist": "Quatuor Diotima",
+   "album": "Posadas: Liturgia fractal",
+   "composer": "Posadas",
+   "year": 2009,
+   "label": "KAIROS",
+   "country": "",
+   "faction": "string-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Alberto Posadas 五首四重奏組曲，碎形結構的弦樂顫動與噪音，Diotima 演出，尖細冷硬",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.6,
+    "z": -1.8,
+    "why": "碎形算法生出的弦樂顫動、泛音與刮擦，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1fcb3894-eef0-4709-9ea6-a3288efe6171",
+    "https://coverartarchive.org/release-group/1fcb3894-eef0-4709-9ea6-a3288efe6171/front"
+   ],
+   "mbRgMbid": "1fcb3894-eef0-4709-9ea6-a3288efe6171",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Quatuor Diotima",
+   "album": "Gervasoni / Pesson / Poppe",
+   "composer": "Gervasoni / Pesson / Poppe",
+   "year": 2021,
+   "label": "naïve",
+   "country": "fr",
+   "faction": "string-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Diotima 委約的三位二線作曲家四重奏：Poppe 的微分音扭動、Pesson 的碎屑、Gervasoni 的刮擦，薄而緊",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.6,
+    "z": -1.6,
+    "why": "微分音滑奏、氣音弓與神經質碎拍，薄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6bc71910-0a4b-47ce-a54b-e0a3789f97a8",
+    "https://coverartarchive.org/release-group/6bc71910-0a4b-47ce-a54b-e0a3789f97a8/front"
+   ],
+   "mbRgMbid": "6bc71910-0a4b-47ce-a54b-e0a3789f97a8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Pesson 段落偏弱，x 估 3.4"
+  },
+  {
+   "artist": "Quatuor Diotima",
+   "album": "Simaku: Con-Ri-Sonanza: Chamber Works",
+   "composer": "Simaku",
+   "year": 2020,
+   "label": "BIS",
+   "country": "",
+   "faction": "string-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Thomas Simaku 弦樂四重奏與獨奏作，高張力的爆發與泛音摩擦，Diotima 演出，緊繃冷硬",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -1.5,
+    "why": "高張力的弦樂齊奏爆發與泛音，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3bbeed16-4367-411e-bfca-1aeb24c157ce",
+    "https://coverartarchive.org/release-group/3bbeed16-4367-411e-bfca-1aeb24c157ce/front"
+   ],
+   "mbRgMbid": "3bbeed16-4367-411e-bfca-1aeb24c157ce",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "ensemble mosaik",
+   "album": "Poppe: Chamber Music",
+   "composer": "Poppe",
+   "year": 2005,
+   "label": "col legno",
+   "country": "de",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Poppe 室內作合集（Holz、Tier、Rad、小提琴練習曲），微分音像蟲一樣扭動、節奏一直推，薄而怪",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.5,
+    "z": -1.5,
+    "why": "微分音扭動的弦樂與木管、碎拍推進，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/748c1366-7e43-465f-add1-d179a15f256d",
+    "https://coverartarchive.org/release-group/748c1366-7e43-465f-add1-d179a15f256d/front"
+   ],
+   "mbRgMbid": "748c1366-7e43-465f-add1-d179a15f256d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 只掛作曲家，取主要演奏團 ensemble mosaik"
+  },
+  {
+   "artist": "ensemble mosaik",
+   "album": "Poppe: Schrank",
+   "composer": "Poppe",
+   "year": 2012,
+   "label": "KAIROS",
+   "country": "de",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Poppe《Schrank》等室內樂團作，微分音密集織體一路推進，ensemble mosaik 演出，緊張尖細",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.3,
+    "z": -1.5,
+    "why": "微分音合奏、密集碎拍與尖銳木管，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b94d6853-9f6e-4d6c-bb1c-7956dd24e4bd",
+    "https://coverartarchive.org/release-group/b94d6853-9f6e-4d6c-bb1c-7956dd24e4bd/front"
+   ],
+   "mbRgMbid": "b94d6853-9f6e-4d6c-bb1c-7956dd24e4bd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Donatienne Michel-Dansac",
+   "album": "Aperghis: 14 Récitations",
+   "composer": "Aperghis",
+   "year": 2006,
+   "label": "col legno",
+   "country": "at",
+   "faction": "voice-theatre",
+   "genres": [
+    "classical"
+   ],
+   "why": "Aperghis《Récitations》全本（Michel-Dansac），一個人聲把字拆成碎片越念越快，神經質、無調",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.9,
+    "z": -1.3,
+    "why": "獨唱人聲的音節碎片、加速口技，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c145d972-5713-4df3-a4db-8e71a2f6415d",
+    "https://coverartarchive.org/release-group/c145d972-5713-4df3-a4db-8e71a2f6415d/front"
+   ],
+   "mbRgMbid": "c145d972-5713-4df3-a4db-8e71a2f6415d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Donatienne Michel-Dansac",
+   "album": "Aperghis: Machinations",
+   "composer": "Aperghis",
+   "year": 2003,
+   "label": "Accord",
+   "country": "fr",
+   "faction": "voice-theatre",
+   "genres": [
+    "classical"
+   ],
+   "why": "Aperghis『四個女人與電腦』音樂劇場，音節碎片在人聲與電腦間亂竄，緊張、冷、旋律不明",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.6,
+    "z": -1.5,
+    "why": "四個女聲的音節碎片與電腦處理，尖細冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3535e15e-cbbe-4b00-942c-ff9759eb70a0",
+    "https://coverartarchive.org/release-group/3535e15e-cbbe-4b00-942c-ff9759eb70a0/front"
+   ],
+   "mbRgMbid": "3535e15e-cbbe-4b00-942c-ff9759eb70a0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 掛四位女聲＋電腦，取 Michel-Dansac"
+  },
+  {
+   "artist": "Kreutzer Quartet",
+   "album": "Finnissy: Second & Third String Quartets",
+   "composer": "Finnissy",
+   "year": 2012,
+   "label": "NMC",
+   "country": "gb",
+   "faction": "string-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Finnissy 第二、三號四重奏，英國新複雜主義的密集弦樂糾纏，Kreutzer 演出，硬蕊冷",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.6,
+    "z": -1.6,
+    "why": "新複雜主義式的弦樂糾纏、刮擦與碎句，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2aea80c2-d811-4694-8c59-1fa54acbf9eb",
+    "https://music.apple.com/us/album/finnissy-second-third-string-quartets/1684756764"
+   ],
+   "mbRgMbid": "2aea80c2-d811-4694-8c59-1fa54acbf9eb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jürgen Ruck",
+   "album": "Mahnkopf: Hommage à György Kurtág",
+   "composer": "Mahnkopf",
+   "year": 2013,
+   "label": "NEOS",
+   "country": "",
+   "faction": "solo-duo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Mahnkopf 致 Kurtág 的新複雜主義作品集（Ruck、Càsoli、œnm），撥弦樂器密集刮擦與碎句，硬蕊尖細",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.6,
+    "z": -1.9,
+    "why": "新複雜主義吉他、曼陀林與合奏的密集刮擦，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bc04c25c-b631-44fa-9c4f-ef15a09d5933",
+    "https://music.apple.com/us/album/mahnkopf-hommage-%C3%A0-gy%C3%B6rgy-kurt%C3%A1g-kurt%C3%A1g-duo/1203071512"
+   ],
+   "mbRgMbid": "bc04c25c-b631-44fa-9c4f-ef15a09d5933",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 掛作曲家＋Ruck、Càsoli、œnm，取 Ruck"
+  },
+  {
+   "artist": "Peter Veale",
+   "album": "Mahnkopf: Pynchon Cycle",
+   "composer": "Mahnkopf",
+   "year": 2011,
+   "label": "NEOS",
+   "country": "de",
+   "faction": "live-electronics",
+   "genres": [
+    "classical"
+   ],
+   "why": "Mahnkopf《Pynchon Cycle》，雙簧管與大提琴的新複雜主義獨奏加 SWR 實驗室電子，尖細、刺耳、無旋律",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.4,
+    "z": -1.9,
+    "why": "雙簧管多音尖嘯、大提琴刮擦與即時電子，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/33a006c2-526c-4cc2-9b54-3666aa11193e",
+    "https://music.apple.com/us/album/pynchon-cycle/672951354"
+   ],
+   "mbRgMbid": "33a006c2-526c-4cc2-9b54-3666aa11193e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 掛 Veale、Cox、SWR 實驗室，取 Veale"
+  },
+  {
+   "artist": "asamisimasa",
+   "album": "Steen-Andersen: Pretty Sound: Solo and Chamber Music",
+   "composer": "Steen-Andersen",
+   "year": 2011,
+   "label": "Dacapo",
+   "country": "",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Simon Steen-Andersen 獨奏與室內作，把樂器當機械來敲刮，突停突起、讓人緊張，旋律不明",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.6,
+    "z": -1.5,
+    "why": "具體音樂式的器樂噪音、突停突起，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f8f4456a-2c7b-45f8-8049-2f6c502568fa",
+    "https://coverartarchive.org/release-group/f8f4456a-2c7b-45f8-8049-2f6c502568fa/front"
+   ],
+   "mbRgMbid": "f8f4456a-2c7b-45f8-8049-2f6c502568fa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Klangforum Wien",
+   "album": "Lachenmann: Mouvement (– vor der Erstarrung) / „…zwei Gefühle…“, Musik mit Leonardo / Consolation I / Consolation II",
+   "composer": "Lachenmann",
+   "year": 2001,
+   "label": "KAIROS",
+   "country": "at",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Lachenmann《Mouvement》的器樂具體音樂，Klangforum 演出：刮擦與氣音像機器痙攣，緊張冷硬",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.6,
+    "z": -1.9,
+    "why": "刮擦、氣音、敲擊的器樂噪音，無旋律，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/276fc6db-4f34-42f3-90a6-3f3436b89c9a",
+    "https://coverartarchive.org/release-group/276fc6db-4f34-42f3-90a6-3f3436b89c9a/front"
+   ],
+   "mbRgMbid": "276fc6db-4f34-42f3-90a6-3f3436b89c9a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 只掛作曲家，錄音層演奏者為 Klangforum Wien（Consolation 為 ensemble aisthesis）"
+  },
+  {
+   "artist": "Yukiko Sugawara",
+   "album": "Lachenmann: Got Lost",
+   "composer": "Lachenmann",
+   "year": 2018,
+   "label": "Wergo",
+   "country": "de",
+   "faction": "solo-duo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Lachenmann 晚期《Got Lost》與弦樂三重奏等，人聲碎語加鋼琴內部噪音，尖細刺耳",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.6,
+    "z": -1.8,
+    "why": "女高音碎語、鋼琴內部刮擦與敲擊，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/372f5072-d623-433b-a35f-1fcd6a7e7c1b",
+    "https://coverartarchive.org/release-group/372f5072-d623-433b-a35f-1fcd6a7e7c1b/front"
+   ],
+   "mbRgMbid": "372f5072-d623-433b-a35f-1fcd6a7e7c1b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 掛 Kakuta、Sugawara、Trio Recherche，取 Sugawara"
+  },
+  {
+   "artist": "Mabel Kwan",
+   "album": "Haas: Trois Hommages",
+   "composer": "Haas",
+   "year": 2018,
+   "label": "New Focus Recordings",
+   "country": "",
+   "faction": "piano-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Haas 微分音鋼琴三首致敬（Reich、Ligeti、Hauer），失諧的重複音型互相擦撞，緊繃不安",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -1.2,
+    "why": "兩架調差四分音的鋼琴，重複音型互相擦撞"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/127a8648-3573-46c0-8f98-a47a0df73f44",
+    "https://coverartarchive.org/release-group/127a8648-3573-46c0-8f98-a47a0df73f44/front"
+   ],
+   "mbRgMbid": "127a8648-3573-46c0-8f98-a47a0df73f44",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Reich 致敬段脈動規律，x 估 3.4"
+  },
+  {
+   "artist": "Mari Poll",
+   "album": "Berio / Schnittke / Boulez: Solo Violin Works",
+   "composer": "Berio / Schnittke / Boulez",
+   "year": 2012,
+   "label": "EMI",
+   "country": "us",
+   "faction": "solo-duo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Mari Poll 獨奏小提琴：Berio《Sequenza VIII》、Schnittke《a Paganini》、Boulez《Anthèmes》，尖細高頻、緊繃",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.9,
+    "z": -1.3,
+    "why": "獨奏小提琴雙音跳弓、急促段落，尖細乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b86473ef-e3c4-4a5a-b1fd-44dce1884589",
+    "https://coverartarchive.org/release-group/b86473ef-e3c4-4a5a-b1fd-44dce1884589/front"
+   ],
+   "mbRgMbid": "b86473ef-e3c4-4a5a-b1fd-44dce1884589",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Luciano Berio",
+   "album": "Berio: Sequenzas I-XIV",
+   "composer": "Berio",
+   "year": 2006,
+   "label": "Naxos",
+   "country": "gb",
+   "faction": "solo-duo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Naxos 版 Berio 獨奏《Sequenza》全集，每件樂器被逼到極限，尖、快、旋律不明",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.6,
+    "z": -1.4,
+    "why": "十四件獨奏樂器的技巧極限，碎句與跳進，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ad538368-2e3d-4ca8-85ca-e4c2f9cea9b7",
+    "https://coverartarchive.org/release-group/ad538368-2e3d-4ca8-85ca-e4c2f9cea9b7/front"
+   ],
+   "mbRgMbid": "ad538368-2e3d-4ca8-85ca-e4c2f9cea9b7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池內已有 EIC 的 DG 版《Sequenzas》，此為不同錄音（Naxos 多位演奏者）；MB 只掛作曲家"
+  },
+  {
+   "artist": "Alexis Descharmes",
+   "album": "Saariaho: L'œuvre pour violoncelle",
+   "composer": "Saariaho",
+   "year": 2006,
+   "label": "æon",
+   "country": "fr",
+   "faction": "solo-duo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Saariaho 大提琴全集（Descharmes），泛音、壓弓噪音與電子延伸，緊張的音色作品、旋律不明",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.4,
+    "why": "大提琴泛音、氣聲弓與電子延伸，尖細冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2bbddb1a-6ef5-49fa-b53b-e4ed3a738092",
+    "https://coverartarchive.org/release-group/2bbddb1a-6ef5-49fa-b53b-e4ed3a738092/front"
+   ],
+   "mbRgMbid": "2bbddb1a-6ef5-49fa-b53b-e4ed3a738092",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Saariaho 偏音色緩慢，x 估 3.4"
+  },
+  {
+   "artist": "Pacifica Quartet",
+   "album": "Carter: String Quartets nos. 1 and 5",
+   "composer": "Carter",
+   "year": 2008,
+   "label": "Naxos",
+   "country": "",
+   "faction": "string-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Pacifica 的 Carter 四重奏第一、五號（Naxos），四把弦各自為政的複節奏，密而乾、神經一直繃著",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.6,
+    "z": -1.6,
+    "why": "四聲部各走各的速度、尖銳對話與刮擦，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fe50c061-019f-43ee-9fd7-fbe806613775",
+    "https://coverartarchive.org/release-group/fe50c061-019f-43ee-9fd7-fbe806613775/front"
+   ],
+   "mbRgMbid": "fe50c061-019f-43ee-9fd7-fbe806613775",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "第一號池內已有 Arditti／Juilliard 版，此張為不同錄音且含第五號"
+  },
+  {
+   "artist": "Pacifica Quartet",
+   "album": "Carter: String Quartets nos. 2, 3 and 4",
+   "composer": "Carter",
+   "year": 2009,
+   "label": "Naxos",
+   "country": "us",
+   "faction": "string-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Pacifica 的 Carter 第二至四號四重奏，第三號兩組二重奏同時對撞，密集刮擦型的典型",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.6,
+    "z": -1.7,
+    "why": "兩組二重奏對撞、密集跳弓與尖銳和聲，乾硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7acc7438-81bc-41fe-acf1-f0ed45fa45fe",
+    "https://coverartarchive.org/release-group/7acc7438-81bc-41fe-acf1-f0ed45fa45fe/front"
+   ],
+   "mbRgMbid": "7acc7438-81bc-41fe-acf1-f0ed45fa45fe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "第二、三號池內已有 Arditti 版（不同錄音）；主線若要同作品去重可先汰這張"
+  },
+  {
+   "artist": "Arditti Quartet",
+   "album": "Carter: Chamber Music",
+   "composer": "Carter",
+   "year": 1998,
+   "label": "Auvidis Montaigne",
+   "country": "fr",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Arditti 與 Oppens 的 Carter 室內樂（鋼琴五重奏等），各聲部速度互相拉扯，緊繃、無旋律",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.5,
+    "z": -1.6,
+    "why": "弦樂、鋼琴快速交錯的複節奏，聲部清楚、乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/acd97ef3-b987-35df-b0a6-795a76da619f",
+    "https://coverartarchive.org/release-group/acd97ef3-b987-35df-b0a6-795a76da619f/front"
+   ],
+   "mbRgMbid": "acd97ef3-b987-35df-b0a6-795a76da619f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Swiss Chamber Soloists",
+   "album": "Carter: Happy Birthday Elliott Carter! New Chamber Works",
+   "composer": "Carter",
+   "year": 2008,
+   "label": "NEOS",
+   "country": "de",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Carter 九十多歲後的新室內作，Swiss Chamber Soloists 演出，短促跳躍、聲部稀薄而尖，冷而緊",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.6,
+    "z": -1.5,
+    "why": "晚期 Carter 小編制的跳躍短句與尖銳對話，薄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f4169e8c-3705-467b-bfd3-21df6e26f9da",
+    "https://coverartarchive.org/release-group/f4169e8c-3705-467b-bfd3-21df6e26f9da/front"
+   ],
+   "mbRgMbid": "f4169e8c-3705-467b-bfd3-21df6e26f9da",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Miranda Cuckson",
+   "album": "Carter / Sessions / Eckardt",
+   "composer": "Carter / Sessions / Eckardt",
+   "year": 2014,
+   "label": "Urlicht Audio Visual",
+   "country": "us",
+   "faction": "solo-duo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Cuckson 與 McMillen 的美國硬蕊無調小提琴作品：Carter、Sessions、Eckardt，尖銳跳進、旋律不明",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.6,
+    "z": -1.4,
+    "why": "小提琴與鋼琴的十二音跳進、急促對話，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/229adede-5e50-440e-ac2e-4c13d69caef4",
+    "https://coverartarchive.org/release-group/229adede-5e50-440e-ac2e-4c13d69caef4/front"
+   ],
+   "mbRgMbid": "229adede-5e50-440e-ac2e-4c13d69caef4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Fredrik Ullén",
+   "album": "Ligeti: The Complete Piano Music, Volume I",
+   "composer": "Ligeti",
+   "year": 1996,
+   "label": "BIS",
+   "country": "",
+   "faction": "piano-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Ullén 的 Ligeti 鋼琴全集第一輯（練習曲為主），機械脈動與錯位複節奏一路推，快而冷",
+   "moodGuess": {
+    "x": 3.9,
+    "y": -0.2,
+    "z": -1.2,
+    "why": "機械式複節奏的鋼琴練習曲，快、密、尖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3e995bf2-8eb2-37a4-8cf3-8eda95d2e859",
+    "https://coverartarchive.org/release-group/3e995bf2-8eb2-37a4-8cf3-8eda95d2e859/front"
+   ],
+   "mbRgMbid": "3e995bf2-8eb2-37a4-8cf3-8eda95d2e859",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池內已有 Aimard、Driver 的練習曲，此為不同錄音（BIS）"
+  },
+  {
+   "artist": "LaSalle Quartet",
+   "album": "Ligeti / Brown / Rosenberg: II. Streichquartett / String Quartet / III. Streichquartett",
+   "composer": "Ligeti / Brown / Rosenberg",
+   "year": 1970,
+   "label": "Deutsche Grammophon",
+   "country": "de",
+   "faction": "string-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "LaSalle 四重奏 1970 年 DG 前衛四重奏盤：Ligeti 第二號、Earle Brown、Rosenberg，刮擦與痙攣不停，硬蕊冷",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.7,
+    "z": -1.8,
+    "why": "Ligeti 第二號的痙攣弦樂、Brown 開放形式碎片，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/44b422d2-a066-4933-a4b2-b8dd489cc55a",
+    "https://www.discogs.com/master/588126",
+    "https://rateyourmusic.com/release/album/lasalle-quartett/ii-streichquartett-string-quartet-iii-streichquartett/"
+   ],
+   "mbRgMbid": "44b422d2-a066-4933-a4b2-b8dd489cc55a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ensemble intercontemporain",
+   "album": "Hurel: Six miniatures en trompe-l'œil / Leçon de choses / Opcit / Pour l'image",
+   "composer": "Hurel",
+   "year": 1995,
+   "label": "Disques Adès",
+   "country": "fr",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Philippe Hurel 的 EIC 作品集，快速脈動與錯位節奏一路推進，閃爍尖細、旋律不明",
+   "moodGuess": {
+    "x": 3.8,
+    "y": -0.3,
+    "z": -1.0,
+    "why": "後光譜派的快速脈動、閃爍高音與錯位節奏，亮而冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/39084d77-19ea-488a-8c15-94cd83052010",
+    "https://coverartarchive.org/release-group/39084d77-19ea-488a-8c15-94cd83052010/front"
+   ],
+   "mbRgMbid": "39084d77-19ea-488a-8c15-94cd83052010",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Conlon Nancarrow",
+   "album": "Nancarrow: Player Piano 7, Volume 4: Studies 42-48",
+   "composer": "Nancarrow",
+   "year": 2008,
+   "label": "MDG Scene",
+   "country": "de",
+   "faction": "piano-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Hocker 的 Bösendorfer 自動鋼琴重錄 Nancarrow 第 42–48 號練習曲，速度比卡農加速到非人，機械推進、冷",
+   "moodGuess": {
+    "x": 4.2,
+    "y": -0.4,
+    "z": -1.0,
+    "why": "自動鋼琴超人速度的卡農與速度比，硬、亮、機械"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0c9d92a4-9233-4667-98fb-df94cf08e3b3",
+    "https://coverartarchive.org/release-group/0c9d92a4-9233-4667-98fb-df94cf08e3b3/front"
+   ],
+   "mbRgMbid": "0c9d92a4-9233-4667-98fb-df94cf08e3b3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池內已有 Nancarrow《Studies for Player Piano》1969 原錄音，此為不同錄音的分輯"
+  },
+  {
+   "artist": "Jürgen Hocker",
+   "album": "Nancarrow: Player Piano 5, Volume 3: Studies 33-41c",
+   "composer": "Nancarrow",
+   "year": 2007,
+   "label": "MDG Scene",
+   "country": "de",
+   "faction": "piano-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Hocker 重錄 Nancarrow 第 33–41c 號練習曲（含《Study 37》《40》《41》），多速度同時跑，被推著走的機械脈動",
+   "moodGuess": {
+    "x": 4.1,
+    "y": -0.4,
+    "z": -1.0,
+    "why": "多速度卡農、無理數速度比，飛快硬亮"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b077054e-aaf3-4e9c-96d2-27c0e2a16f78",
+    "https://coverartarchive.org/release-group/b077054e-aaf3-4e9c-96d2-27c0e2a16f78/front"
+   ],
+   "mbRgMbid": "b077054e-aaf3-4e9c-96d2-27c0e2a16f78",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 未載日期，年份取 Discogs 2007"
+  },
+  {
+   "artist": "Garth Knox",
+   "album": "Ligeti / Dusapin / Berio / Kurtág / Dillon / Sciarrino: Works for Solo Viola",
+   "composer": "Ligeti / Dusapin / Berio / Kurtág / Dillon / Sciarrino",
+   "year": 2000,
+   "label": "Montaigne",
+   "country": "fr",
+   "faction": "solo-duo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Garth Knox 獨奏中提琴：Berio《Sequenza VI》的狂亂震音、Dillon、Sciarrino、Dusapin 與 Ligeti 奏鳴曲，緊繃尖細",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.6,
+    "z": -1.4,
+    "why": "獨奏中提琴的震音、雙音與刮擦，乾薄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4b47954d-9f38-3bdf-91c7-5ac48b71fc6f",
+    "https://www.discogs.com/release/11054156"
+   ],
+   "mbRgMbid": "4b47954d-9f38-3bdf-91c7-5ac48b71fc6f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Arditti Quartet",
+   "album": "Harvey: Complete String Quartets & Trio",
+   "composer": "Harvey",
+   "year": 2009,
+   "label": "æon",
+   "country": "fr",
+   "faction": "string-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Arditti 的 Jonathan Harvey 四重奏全集，第一號的泛音滑奏到第四號的即時電子，尖細高頻、旋律不明",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.5,
+    "z": -1.3,
+    "why": "泛音滑奏、快速顫弓與即時電子，尖細"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/12a1622d-726e-4b21-8722-924ec029245a",
+    "https://music.apple.com/us/album/harvey-complete-string-quartets-trio/1571834513"
+   ],
+   "mbRgMbid": "12a1622d-726e-4b21-8722-924ec029245a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Klangforum Wien",
+   "album": "Reiter: Noch sind wir ein Wort…",
+   "composer": "Reiter",
+   "year": 2018,
+   "label": "KAIROS",
+   "country": "at",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Eva Reiter 的 Klangforum 作品集，擴音直笛與古大提琴被當噪音機器，氣音、刮擦、斷句，緊張冷硬",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.3,
+    "z": -1.7,
+    "why": "擴音直笛、古大提琴的氣音噪音與碎拍，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7f0903ec-f0ad-4496-b7af-1d92667a58bb",
+    "https://music.apple.com/us/album/eva-reiter-noch-sind-wir-ein-wort/1656059957"
+   ],
+   "mbRgMbid": "7f0903ec-f0ad-4496-b7af-1d92667a58bb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Reto Bieri",
+   "album": "Berio / Carter / Eötvös / Holliger / Sciarrino / Vajda: Contrechant",
+   "composer": "Berio / Carter / Eötvös / Holliger / Sciarrino / Vajda",
+   "year": 2011,
+   "label": "ECM New Series",
+   "country": "de",
+   "faction": "solo-duo",
+   "genres": [
+    "classical"
+   ],
+   "why": "ECM 的 Reto Bieri 單簧管獨奏：Berio《Lied》、Carter、Holliger、Sciarrino，尖嘯多音與突爆，神經繃緊",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.8,
+    "z": -1.4,
+    "why": "獨奏單簧管多音、尖嘯與極弱到突爆，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8ab4d491-72a8-4bd6-813f-87b0472c0a89",
+    "https://coverartarchive.org/release-group/8ab4d491-72a8-4bd6-813f-87b0472c0a89/front"
+   ],
+   "mbRgMbid": "8ab4d491-72a8-4bd6-813f-87b0472c0a89",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Alain Damiens",
+   "album": "Stravinsky / Boulez / Denisov / Stockhausen / Berio",
+   "composer": "Stravinsky / Boulez / Denisov / Stockhausen / Donatoni / Berio",
+   "year": 1988,
+   "label": "Adda",
+   "country": "fr",
+   "faction": "solo-duo",
+   "genres": [
+    "classical"
+   ],
+   "why": "EIC 單簧管首席 Damiens 的無伴奏專輯：Boulez《Domaines》、Stockhausen、Donatoni《Clair》、Berio《Sequenza IXa》，薄而尖",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.8,
+    "z": -1.2,
+    "why": "獨奏單簧管跳進與尖銳高音，無伴奏、乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6033ee30-8535-48be-a6fc-bec2a213dc32",
+    "https://coverartarchive.org/release-group/6033ee30-8535-48be-a6fc-bec2a213dc32/front"
+   ],
+   "mbRgMbid": "6033ee30-8535-48be-a6fc-bec2a213dc32",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "開頭 Stravinsky 三首小品較有旋律，整張仍以序列與無調為主"
+  },
+  {
+   "artist": "Yejin Gil",
+   "album": "Chin / Boulez / Ligeti / Messiaen: Fulgurances: Works for Piano of the XXth Century",
+   "composer": "Chin / Boulez / Ligeti / Messiaen",
+   "year": 2013,
+   "label": "Solstice Music",
+   "country": "",
+   "faction": "piano-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Yejin Gil 的二十世紀鋼琴：陳銀淑練習曲、Boulez、Ligeti，快速機械跳進與尖銳觸鍵，冷而緊",
+   "moodGuess": {
+    "x": 3.8,
+    "y": -0.2,
+    "z": -1.2,
+    "why": "陳銀淑練習曲與 Boulez 奏鳴曲的快速跳進，硬、亮"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4194fb6c-54ab-4bdf-bd7d-81c790493e61",
+    "https://coverartarchive.org/release-group/4194fb6c-54ab-4bdf-bd7d-81c790493e61/front"
+   ],
+   "mbRgMbid": "4194fb6c-54ab-4bdf-bd7d-81c790493e61",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "James Dillon",
+   "album": "Dillon: The Soadie Waste",
+   "composer": "Dillon",
+   "year": 2008,
+   "label": "NMC",
+   "country": "gb",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Dillon 鋼琴、小提琴、鋼琴二重奏與鋼琴五重奏作品，英國新複雜主義的密集碎句，硬蕊冷",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.3,
+    "z": -1.8,
+    "why": "新複雜主義的鋼琴、小提琴與五重奏密集碎句，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/64c086d8-8922-4941-9167-517f22307e29",
+    "https://coverartarchive.org/release-group/64c086d8-8922-4941-9167-517f22307e29/front"
+   ],
+   "mbRgMbid": "64c086d8-8922-4941-9167-517f22307e29",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 只掛作曲家"
+  },
+  {
+   "artist": "Luciano Berio",
+   "album": "Berio: The Complete Sequenzas, Alternate Sequenzas & Works for Solo Instruments",
+   "composer": "Berio",
+   "year": 2006,
+   "label": "Mode",
+   "country": "",
+   "faction": "solo-duo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Mode 版 Berio 獨奏全集，含另版 Sequenza 與其他獨奏小品，每件樂器都被逼到極限，尖細緊繃",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.7,
+    "z": -1.4,
+    "why": "各獨奏樂器的技巧極限與碎句，乾、無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8456e3b6-8205-4de8-a6af-d2ffe30b7a38",
+    "https://coverartarchive.org/release-group/8456e3b6-8205-4de8-a6af-d2ffe30b7a38/front"
+   ],
+   "mbRgMbid": "8456e3b6-8205-4de8-a6af-d2ffe30b7a38",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "與 Naxos 版同作品（不同演奏者），主線可擇一；MB 只掛作曲家"
+  },
+  {
+   "artist": "Meta4",
+   "album": "Saariaho: Chamber Works for Strings, Vol. 1",
+   "composer": "Saariaho",
+   "year": 2013,
+   "label": "Ondine",
+   "country": "",
+   "faction": "string-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Meta4 的 Saariaho 弦樂室內作（含《Nymphéa》與《Terra Memoria》），泛音與壓弓噪音交織，緊張而冷",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.3,
+    "why": "弦樂泛音、壓弓噪音與顫音層疊，尖細冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f1b7bb70-5eb2-43ca-8305-15a3978dcc10",
+    "https://coverartarchive.org/release-group/f1b7bb70-5eb2-43ca-8305-15a3978dcc10/front"
+   ],
+   "mbRgMbid": "f1b7bb70-5eb2-43ca-8305-15a3978dcc10",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Saariaho 音色緩慢段落多，x 估 3.4 貼邊"
+  },
+  {
+   "artist": "Oslo Sinfonietta",
+   "album": "Steen-Andersen: Chambered Music",
+   "composer": "Steen-Andersen",
+   "year": 2025,
+   "label": "Dacapo",
+   "country": "",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Steen-Andersen 室內樂團作品集（Oslo Sinfonietta），樂器被當機械敲刮、突停突起，緊張不安",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": -1.4,
+    "why": "機械式器樂噪音、突停突起的動作音樂，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/eb2c355a-c142-420f-8864-2beeaed9ec4e",
+    "https://coverartarchive.org/release-group/eb2c355a-c142-420f-8864-2beeaed9ec4e/front"
+   ],
+   "mbRgMbid": "eb2c355a-c142-420f-8864-2beeaed9ec4e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Aleph Gitarrenquartett",
+   "album": "Haas / Furrer / Hidalgo / Oehring / Hechtle",
+   "composer": "Haas / Furrer / Hidalgo / Oehring / Hechtle",
+   "year": 2012,
+   "label": "NEOS",
+   "country": "de",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Aleph 吉他四重奏委約作品：Haas 微分音、Furrer、Hidalgo、Oehring，撥弦尖細、旋律不明、緊繃",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.6,
+    "z": -1.4,
+    "why": "四把吉他的微分音撥弦、刮弦與碎拍，尖細乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4615ff09-59a2-4db0-b5f9-f2c70e42d499",
+    "https://coverartarchive.org/release-group/4615ff09-59a2-4db0-b5f9-f2c70e42d499/front"
+   ],
+   "mbRgMbid": "4615ff09-59a2-4db0-b5f9-f2c70e42d499",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Enno Poppe",
+   "album": "Poppe: Interzone",
+   "composer": "Poppe",
+   "year": 2006,
+   "label": "KAIROS",
+   "country": "",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Poppe《Interzone》（Burroughs 文本的人聲與合奏），微分音人聲與合奏扭動不停，怪異緊張",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "微分音人聲與合奏的扭動碎句，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9292b116-6c33-4b2d-a968-7fbcd4882311",
+    "https://coverartarchive.org/release-group/9292b116-6c33-4b2d-a968-7fbcd4882311/front"
+   ],
+   "mbRgMbid": "9292b116-6c33-4b2d-a968-7fbcd4882311",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 只掛作曲家；作品原為人聲＋合奏＋影像，唱片為錄音室錄音"
+  }
+ ],
+ "notes": [
+  "挖到 54 張（目標 54）：主場景（Neuwirth、Poppe、Aperghis、Lachenmann、Holliger、Haas、Saariaho、Berio Sequenza、Mahnkopf、Cassidy、Finnissy、Dillon、Posadas、Illés、Steen-Andersen、Reiter、Guerrero、Hurel、Reynolds、Harvey 等二線）為主，擴寫場景補 Carter 四重奏與室內樂、Ligeti 鋼琴練習曲與 LaSalle 1970 四重奏盤、Nancarrow 自動鋼琴分輯與 Arditti 四重奏改編、單簧管／中提琴／鋼琴獨奏集。",
+  "照 mc32 回饋優先挑密集刮擦型；極弱點描型（Sciarrino 獨立專輯、Saunders、Furrer、Mark Andre、Klaus Lang、Pesson 鋼琴、Kurtág 格言小品如《Signs, Games and Messages》）沒提，只以合輯曲目形式出現。",
+  "考慮過但沒提（會出格）：Rihm《Gejagte Form》《Chiffre-Zyklus》與鋼琴三重奏（厚密爆裂、或後浪漫偏暖）；Spahlinger《Furioso》、Gander《Bunny Games》、Romitelli《An Index of Metals》《Professor Bad Trip》、Bedrossian、Billone（判重）；Ligeti《Continuum…Volumina》盤（含管風琴音塊）；Finnissy《English Country-Tunes》（鋼琴低音轟鳴，y 有風險）；Bernhard Lang《Differenz/Wiederholung》（律動 loop 偏重且 DW8 無封面）；Schick《Born to Be Wild》（打擊判重）；Ensemble Modern 的 Nancarrow 改編（爵士味偏暖）。",
+  "去重：Irvine Arditti《Caprices》已在 mc40 提過，撤下改提 Reynolds；Aperghis《Récitations》只提 Michel-Dansac 版（未提 Viard 版）；Lachenmann 四重奏不再提 Diotima／Stadler 版；JACK《Ligeti/Pintscher/Cage/Xenakis》與 Arditti《Nancarrow/Ligeti/Dutilleux》是 Wigmore Hall 現場，沒提。Neuwirth《Lonicera caprifolium》找不到封面，沒提。",
+  "同作品不同錄音（主線可擇一汰換）：Pacifica 的 Carter 四重奏兩張（第一至三號池內已有 Arditti／Juilliard 版）、Berio Sequenza 全集 Naxos 與 Mode 兩套（池內已有 EIC DG 版）、Ullén 的 Ligeti 練習曲（池內已有 Aimard、Driver）、Nancarrow 自動鋼琴 MDG 兩輯（池內已有 1969 原錄音）。",
+  "貼邊（x 估 3.4）：Birtwistle 四重奏、Gervasoni/Pesson/Poppe、Haas《Trois Hommages》、Saariaho 兩張（Descharmes 大提琴、Meta4 弦樂）——Saariaho 是場景點名所以各留一張，若評分判靜可先汰。",
+  "藝人欄：MB 只掛作曲家的盤（Berio Naxos／Mode、Nancarrow Vol.4、Dillon、Poppe Interzone）照 MB 填作曲家；Lachenmann《Mouvement》與 Poppe《Chamber Music》MB 群組只掛作曲家，取錄音層主要演奏團（Klangforum Wien、ensemble mosaik），已寫 uncertain。多位演奏者並列者取首位，寫在 uncertain。",
+  "全部 MB 釘住（mbRgMbid），無人工身分；封面：CAA release-group front 或 Apple Music／Discogs 條目（寫在 evidence 第二格）。"
+ ]
+}
