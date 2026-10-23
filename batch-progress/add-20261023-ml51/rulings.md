@@ -18,3 +18,10 @@
   - 長度：Purrple Cat《Tranquil Trails》（28.5 分）、mt. fujitive《old batch》（29 分、無 CAA、封面只有 Bandcamp）。
   - 草稿集：Ta-ku《Beat Sketches, Vol.1》。
 - 同人量偏重照收（2026-09-04 店主裁定同藝人不設上限）：Ohbliv 6（含合作 7）、Purrple Cat 5、Ta-ku 4、Elaquent 5，研究層再擋。
+
+## 研究 e 組（20481–20490）
+- 20481：e 組六張全標 thin（聲音來源多為 Bandcamp 標籤與單則聽眾留言，無樂評／訪談）；身分皆與 MB 釘住相符。
+- 20482：moodGuess 存疑名單——Pandrezz《Soul & Dreams》（Bandcamp／MB 標籤含 trap、phonk、electro，曲名偏明亮，策展稱 jazzhop 查無來源，風險最高）；Fitz Ambro$e《Hypnodical》（Bandcamp 版僅 12 首 24:23，低於 28 分；15 首 32 分為日本 CD 加碼版）；Fitz Ambro$e《Creative Network》（聽眾稱 ethereal、tropical 偏輕）；Stan Forebee《Retrospection》（18 首平均不到 2 分鐘、含 Flying Lotus 改編，散裝短曲性質，輕度）。
+- 20483：Stan Forebee《Jazz Sessions》卡單 year 2013／Digi Crates 為 MB 首發版（已 withdrawn）；現行可聽版為 2018-03-07 Stan Forebee Music 重發，年份取捨由主線裁。
+- 20484：BROCKBEATS《Tranquilizook》16 首 31:33（卡單 15 首 30 分略有出入）；Bandcamp 聽眾稱 warm and lethargic，為本組聲音證據最正面者。
+- 20485：策展稱 Fitz Ambro$e 與 Ohbliv 合作《Zen Vapors》未查到來源，未採用。
