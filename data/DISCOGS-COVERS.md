@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **363** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 125、已退回 1）。
+共 **364** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 126、已退回 1）。
 最後更新：2026-10-23
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -269,6 +269,12 @@
 | Maurizio Bianchi 《Menses》 | [#2929621](https://www.discogs.com/release/2929621) | 1982 | Not On Label (Maurizio Bianchi Self-released) | none | Discogs master 39087 的版本、主線目視與盤名相符 | ok |
 | Organum 《Sanctus》 | [#624361](https://www.discogs.com/release/624361) | 2006 | Robot Records | RR-35 | 唯一版本、主線目視與盤名相符 | ok |
 | Organum 《Amen》 | [#885225](https://www.discogs.com/release/885225) | 2006 | Die Stadt | DS95 | 唯一版本、主線目視與盤名相符 | ok |
+
+## add-20261023-md18（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Deathprod 《Let Me Be Forever Animal》 | [#31026103](https://www.discogs.com/release/31026103) | 2024 | Smalltown Supersound | STS421LP | Discogs 搜尋唯一版本、主線目視與盤名相符 | ok |
 
 ## add-20261023-ml9（2 張）
 

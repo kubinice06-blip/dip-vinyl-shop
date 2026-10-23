@@ -48,12 +48,12 @@
 | 24 | md21 | goth rock／coldwave 慢盤二線 ＋ md15 witch house／hauntology | ✅ 上線 34／落格 33 |
 | 25 | mc32 | 無調現代古典／序列主義／新複雜主義（室內樂、獨奏，尖細的） ＋ mc4 續集 | ✅ 上線 31／落格 29 |
 | 26 | ml13 | 暖而慢的迷幻搖滾（不兇的 desert／stoner 慢盤） ＋ ml26 非洲與巴西的慢而厚 | ✅ 上線 12／落格 11 |
-| 27 | md18 | 日本暗色 drone／ambient／暗色獨立 ＋ md20 北歐暗色電子與配樂 ＋ md19 華語／韓國暗色獨立 || 派→情緒薄格 ml31、md18（第 6 輪） |
+| 27 | md18 | 日本暗色 drone／ambient／暗色獨立 ＋ md20 北歐暗色電子與配樂 ＋ md19 華語／韓國暗色獨立 | ✅ 上線 36／落格 34 |
 | 28 | mc28 | 歐陸自由即興（ICP、Globe Unity、Misha Mengelberg、Irène Schweizer） ＋ mc34 日本前衛即興 | ✅ 上線 22／落格 19 |
 | 29 | mc33 | glitch／microsound／尖細實驗電子 ＋ mc35 RIO／前衛搖滾尖細那半 | ✅ 上線 28／落格 20 |
 | 30 | md22 | 無鼓 drone metal／post-metal ambient 二線 ＋ md23 暗黑 lo-fi／tape loops |  |
 | 31 | mc22 | 當代前衛爵士（Tim Berne、Steve Lehman、Mary Halvorson、Craig Taborn、Tyshawn Sorey） ＋ mc31 剩餘 |  |
-| 32 | ml31 | 爵士弦樂抒情盤／慢板 ballad ＋ ml33 福音慢板／靈魂聖詩 | 派→情緒薄格 ml31、md18（第 6 輪） |
+| 32 | ml31 | 爵士弦樂抒情盤／慢板 ballad ＋ ml33 福音慢板／靈魂聖詩 | ✅ 上線 7／落格 7 |
 | 33 | ml32 | 拉丁 bolero／慢板浪漫 ＋ ml25 80s 慢板 reggae 歌 | ✅ 上線 16／落格 16 |
 | 34 | ml34 | 華語／日語／韓語抒情 ballad 厚編曲 ＋ ml36 Balearic／ambient pop 暖盤 | ✅ 上線 12／落格 11 |
 | 35 | ml35 | alt-country／Americana 濕而慢 ＋ ml33 剩餘 |  |
@@ -87,9 +87,9 @@
 | md15 | 17801 | witch house／hauntology／暗電子（Salem 系、Raime、Ghost Box 冷盤、Demdike 系二線） | 併入 md21（2026-10-23） |
 | md16 | 17881 | cloud rap／sad rap／慢 drill 的冷盤（不兇的；兇＋拍落亢奮） | ✅ 上線 38／落格 37（併 md24；策展 53、主線汰 3、研究汰 12；慢 drill 0） |
 | md17 | 17961 | 暗 R&B／PBR&B 二線（冷而霧；溫的落恍惚） | 併入 md9（池中核心已收，剩下多偏暖） |
-| md18 | 18041 | 日本暗色：drone／noise 靜盤／暗 ambient／暗色獨立（灰野敬二 drone 期、畠山地平冷盤、downy 系） | |
-| md19 | 18121 | 華語／韓國暗色獨立與實驗（落差草原系、Mong Tong 系、韓國 post-rock 冷盤） | |
-| md20 | 18201 | 北歐暗色電子與配樂（Biosphere 冷盤、Deathprod 系、Rune Grammofon 慢盤） | |
+| md18 | 18041 | 日本暗色：drone／noise 靜盤／暗 ambient／暗色獨立（灰野敬二 drone 期、畠山地平冷盤、downy 系） | ✅ 上線 36／落格 34（2026-10-23，併 md20、md19；日本只剩 drone doom 能收，灰野系判躁；不再派） |
+| md19 | 18121 | 華語／韓國暗色獨立與實驗（落差草原系、Mong Tong 系、韓國 post-rock 冷盤） | 併入 md18（0 張：主盤在池、惘聞／Jambinai 判躁；不再派） |
+| md20 | 18201 | 北歐暗色電子與配樂（Biosphere 冷盤、Deathprod 系、Rune Grammofon 慢盤） | 併入 md18（收 19 張，Cyclic Law／Cold Meat Industry dark ambient 全中；Biosphere 判輕不收；餘量可併 md22） |
 | md21 | 18281 | goth rock／coldwave 慢盤二線（會跳舞的快歌落冷冽或亢奮，不收） | ✅ 上線 34／落格 33（2026-10-23，併 md15） |
 | md22 | 18361 | 無鼓 drone metal／post-metal ambient 二線 | |
 | md23 | 18441 | 暗黑 lo-fi／tape loops／Basinski 系 | |
@@ -174,9 +174,9 @@
 | ml28 | 16161 | 70s soft rock／yacht 慢而濕的（新尺下會判重的） | 併入 ml19（池中 70s soft rock 全判輕，只收得到復興盤；不再單獨派） |
 | ml29 | 16241 | 華語／日本 dream pop 二線 | 併入 ml20 |
 | ml30 | 16321 | 暖 ambient／new age 厚墊（溫而霧，不是空氣感的極簡） | 併入 ml24（2026-10-23；有旋律的 new age 池中全判輕，不再派） |
-| ml31 | 16401 | 爵士弦樂抒情盤／慢板 ballad（with strings 系：Clifford Brown with Strings、Ben Webster、Johnny Hartman、Chet Baker 弦樂盤） | |
+| ml31 | 16401 | 爵士弦樂抒情盤／慢板 ballad（with strings 系：Clifford Brown with Strings、Ben Webster、Johnny Hartman、Chet Baker 弦樂盤） | ✅ 上線 7／落格 7（2026-10-23，併 ml33；原聲爵士＋弦樂一律判輕，只收 quiet storm 爵士靈魂與 Mahalia 管弦福音；不再派） |
 | ml32 | 16481 | 拉丁 bolero／慢板浪漫（Los Panchos、Luis Miguel《Romance》、Omara Portuondo 慢盤、bossa 以外的厚弦樂盤） | ✅ 上線 16／落格 16（併 ml25；策展 31、研究汰 15；經典 bolero 池中全判輕，只收 sweet soul 復興、拉丁 dub、80s 前期 roots 人聲；主場景見底，不再派） |
-| ml33 | 16561 | 福音慢板／靈魂聖詩（厚合唱、溫、慢；快板 shout 落雀躍） | |
+| ml33 | 16561 | 福音慢板／靈魂聖詩（厚合唱、溫、慢；快板 shout 落雀躍） | 部分併入 ml31（只 Mahalia 管弦盤判重；四重唱福音池中判輕；剩餘併 ml35） |
 | ml34 | 16641 | 華語／日語／韓語抒情 ballad 厚編曲（90s 弦樂、殘響厚、旋律清楚的慢歌盤） | ✅ 上線 12／落格 11（併 ml36；策展 22、研究汰 10；池中 CJK 抒情全判輕、真 Balearic 判輕，場景見底，不再派） |
 | ml35 | 16721 | alt-country／Americana 濕而慢（Cowboy Junkies、Lambchop、Mazzy Star 系） | |
 | ml36 | 16801 | Balearic／ambient pop 暖盤（溫而霧、旋律清楚） | 併入 ml34（真 Balearic 池中判輕；暖吉他殘響 ambient pop 收 10；不再派） |
