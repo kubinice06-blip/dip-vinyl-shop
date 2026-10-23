@@ -16,13 +16,13 @@
   {
    "id": "vocal-dub-showcase",
    "zh": "人聲＋dub showcase 暖盤（Bunny Wailer、Itals、Pablo Moses、Delgado、Aggrovators）",
-   "count": 10,
+   "count": 11,
    "why": "暖慢、厚低頻、濕混音"
   },
   {
    "id": "uk-new-dub",
    "zh": "UK／新一代暖 dub（Dubkasm、Prince Fatty、Mungo、Bim Sherman）",
-   "count": 4,
+   "count": 9,
    "why": "暖慢、厚低頻、濕混音"
   },
   {
@@ -34,7 +34,13 @@
   {
    "id": "slow-dancehall",
    "zh": "ml25 80s 慢板 dancehall／reggae 人聲盤（Junjo／Roots Radics／Black Roots）",
-   "count": 14,
+   "count": 24,
+   "why": "暖慢、厚低頻、濕混音"
+  },
+  {
+   "id": "japan-dub",
+   "zh": "日本暖 dub（Little Tempo）",
+   "count": 1,
    "why": "暖慢、厚低頻、濕混音"
   }
  ],
@@ -1550,6 +1556,482 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": ""
+  },
+  {
+   "artist": "LITTLE TEMPO",
+   "album": "MUSICAL BRAIN FOOD",
+   "year": 2003,
+   "label": "SPEEDSTAR INTERNATIONAL",
+   "country": "jp",
+   "faction": "japan-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，日本暖 dub，旋律樂器與慢拍低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "日本暖 dub，旋律樂器與慢拍低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7a6bd0a4-17f2-3944-b825-ddb2aa7de069",
+    "https://www.discogs.com/master/794298-Little-Tempo-Musical-Brain-Food"
+   ],
+   "mbRgMbid": "7a6bd0a4-17f2-3944-b825-ddb2aa7de069",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs master 頁當封面來源（CAA 無圖）。"
+  },
+  {
+   "artist": "Michael Prophet",
+   "album": "Righteous Are The Conqueror",
+   "year": 1980,
+   "label": "Greensleeves Records",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Roots Radics 慢 rub-a-dub，濕混音，人聲溫，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.6,
+    "why": "Roots Radics 慢 rub-a-dub，濕混音，人聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1f8599e1-292c-4c61-a4d7-b46d6d6f6dbe",
+    "https://www.discogs.com/master/309906-Michael-Prophet-Righteous-Are-The-Conqueror"
+   ],
+   "mbRgMbid": "1f8599e1-292c-4c61-a4d7-b46d6d6f6dbe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs master 頁當封面來源（CAA 無圖）。z 估值偏低"
+  },
+  {
+   "artist": "Sugar Minott",
+   "album": "More Sugar Minott",
+   "year": 1982,
+   "label": "Studio One",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Black Roots 慢拍，厚低頻暖，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.8,
+    "why": "Black Roots 慢拍，厚低頻暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5ac75e14-169b-4450-84b2-72897ad6eabc",
+    "https://www.discogs.com/master/502915-Sugar-Minott-More-Sugar-Minott"
+   ],
+   "mbRgMbid": "5ac75e14-169b-4450-84b2-72897ad6eabc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs master 頁當封面來源（CAA 無圖）。"
+  },
+  {
+   "artist": "Sugar Minott",
+   "album": "Roots Lovers",
+   "year": 1980,
+   "label": "Black Roots Music",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，慢情歌 Studio One 式暖低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.9,
+    "why": "慢情歌 Studio One 式暖低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4c80cb60-2d32-4499-9e71-de8923459736",
+    "https://www.discogs.com/master/481381-Sugar-Minott-Roots-Lovers"
+   ],
+   "mbRgMbid": "4c80cb60-2d32-4499-9e71-de8923459736",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs master 頁當封面來源（CAA 無圖）。"
+  },
+  {
+   "artist": "Tony Tuff",
+   "album": "Presenting Mr. Tuff",
+   "year": 1981,
+   "label": "Black Roots",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Roots Radics 慢拍，人聲溫，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.7,
+    "why": "Roots Radics 慢拍，人聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ca7a9a61-45c0-473c-bb19-2d34c15480d8",
+    "https://www.discogs.com/master/754428-Tony-Tuff-Presenting-MrTuff"
+   ],
+   "mbRgMbid": "ca7a9a61-45c0-473c-bb19-2d34c15480d8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs master 頁當封面來源（CAA 無圖）。"
+  },
+  {
+   "artist": "Barrington Levy",
+   "album": "Money Move",
+   "year": 1984,
+   "label": "Power House",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Junjo 時期慢拍，厚低頻濕回音，Levy 高音暖，落恍惚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.8,
+    "why": "Junjo 時期慢拍，厚低頻濕回音，Levy 高音暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8fddf282-a186-4207-a249-8cd79db976c0",
+    "https://coverartarchive.org/release-group/8fddf282-a186-4207-a249-8cd79db976c0/front"
+   ],
+   "mbRgMbid": "8fddf282-a186-4207-a249-8cd79db976c0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Barrington Levy",
+   "album": "Run Come Ya!",
+   "year": 1981,
+   "label": "Puff Records",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Roots Radics 慢拍，Scientist 式濕混音，低頻厚，落恍惚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Roots Radics 慢拍，Scientist 式濕混音，低頻厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0bfc049b-2a69-4670-88d9-c103d9a6b0cb",
+    "https://coverartarchive.org/release-group/0bfc049b-2a69-4670-88d9-c103d9a6b0cb/front"
+   ],
+   "mbRgMbid": "0bfc049b-2a69-4670-88d9-c103d9a6b0cb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Barrington Levy",
+   "album": "Shine Eye Gal",
+   "year": 1979,
+   "label": "Burning Sounds",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Channel One 年代慢情歌，厚貝斯，Levy 暖高音，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Channel One 年代慢情歌，厚貝斯，Levy 暖高音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9a374e50-1c90-3a26-842d-eac7f1a34c77",
+    "https://coverartarchive.org/release-group/9a374e50-1c90-3a26-842d-eac7f1a34c77/front"
+   ],
+   "mbRgMbid": "9a374e50-1c90-3a26-842d-eac7f1a34c77",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Barrington Levy",
+   "album": "Doh Ray Me",
+   "year": 1980,
+   "label": "JB Music",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Junjo 製作，Roots Radics 慢拍濕混音，落恍惚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Junjo 製作，Roots Radics 慢拍濕混音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a64e379c-202b-4aa0-85dd-29d3a588faa4",
+    "https://coverartarchive.org/release-group/a64e379c-202b-4aa0-85dd-29d3a588faa4/front"
+   ],
+   "mbRgMbid": "a64e379c-202b-4aa0-85dd-29d3a588faa4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Rico Rodriguez",
+   "album": "That Man Is Forward",
+   "year": 1981,
+   "label": "Reggae Retro Records",
+   "country": "gb",
+   "faction": "uk-new-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，trombone 主旋律，慢 reggae，暖，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 1,
+    "why": "trombone 主旋律，慢 reggae，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/816715df-af50-4e15-a7b9-f35a562ad6ed",
+    "https://coverartarchive.org/release-group/816715df-af50-4e15-a7b9-f35a562ad6ed/front"
+   ],
+   "mbRgMbid": "816715df-af50-4e15-a7b9-f35a562ad6ed",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Prince Fatty",
+   "album": "Return of Gringo!",
+   "year": 2011,
+   "label": "Mr Bongo",
+   "country": "gb",
+   "faction": "uk-new-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Prince Fatty 暖 dub，管樂與厚低頻，慢，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 1,
+    "why": "Prince Fatty 暖 dub，管樂與厚低頻，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6dc699fd-dd70-47b7-8d11-4e6bcce4d9a2",
+    "https://coverartarchive.org/release-group/6dc699fd-dd70-47b7-8d11-4e6bcce4d9a2/front"
+   ],
+   "mbRgMbid": "6dc699fd-dd70-47b7-8d11-4e6bcce4d9a2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Prince Fatty",
+   "album": "Super Size",
+   "year": 2010,
+   "label": "Wrasse Records",
+   "country": "gb",
+   "faction": "uk-new-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Prince Fatty 暖 dub，Hammond 與厚低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 1,
+    "why": "Prince Fatty 暖 dub，Hammond 與厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f9d7a953-a638-49c0-bfe7-7620cfec240a",
+    "https://coverartarchive.org/release-group/f9d7a953-a638-49c0-bfe7-7620cfec240a/front"
+   ],
+   "mbRgMbid": "f9d7a953-a638-49c0-bfe7-7620cfec240a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Prince Fatty",
+   "album": "Prince Fatty Versus the Drunken Gambler",
+   "year": 2012,
+   "label": "Mr Bongo",
+   "country": "gb",
+   "faction": "uk-new-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Prince Fatty 暖 dub，人聲加厚低頻，慢，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 1,
+    "why": "Prince Fatty 暖 dub，人聲加厚低頻，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b3c3e6c8-53a8-40bf-9dfe-1ac8b2868271",
+    "https://coverartarchive.org/release-group/b3c3e6c8-53a8-40bf-9dfe-1ac8b2868271/front"
+   ],
+   "mbRgMbid": "b3c3e6c8-53a8-40bf-9dfe-1ac8b2868271",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Prince Fatty",
+   "album": "In the Kingdom of Dub",
+   "year": 2014,
+   "label": "Tru Thoughts",
+   "country": "gb",
+   "faction": "uk-new-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Prince Fatty 暖 dub，厚貝斯與管樂，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.9,
+    "why": "Prince Fatty 暖 dub，厚貝斯與管樂"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dfc31e40-05ec-4336-bb34-8aaa4eee5770",
+    "https://coverartarchive.org/release-group/dfc31e40-05ec-4336-bb34-8aaa4eee5770/front"
+   ],
+   "mbRgMbid": "dfc31e40-05ec-4336-bb34-8aaa4eee5770",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Gladiators",
+   "album": "Sweet So Till",
+   "year": 1979,
+   "label": "Front Line Records",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Gladiators 和聲，慢 roots，厚低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.8,
+    "why": "Gladiators 和聲，慢 roots，厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/21df8cb7-34e0-3bfe-b6e1-ca7423a41147",
+    "https://coverartarchive.org/release-group/21df8cb7-34e0-3bfe-b6e1-ca7423a41147/front"
+   ],
+   "mbRgMbid": "21df8cb7-34e0-3bfe-b6e1-ca7423a41147",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Wailing Souls",
+   "album": "Baby Come Rock",
+   "year": 1981,
+   "label": "Joe Gibbs",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Junjo 製作，和聲加厚低頻，慢，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.7,
+    "why": "Junjo 製作，和聲加厚低頻，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2fe2b723-74e6-4448-8609-18d6564f4295",
+    "https://coverartarchive.org/release-group/2fe2b723-74e6-4448-8609-18d6564f4295/front"
+   ],
+   "mbRgMbid": "2fe2b723-74e6-4448-8609-18d6564f4295",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bob Marley & The Wailers",
+   "album": "Soul Revolution Part II",
+   "year": 1971,
+   "label": "Upsetter Records",
+   "country": "jm",
+   "faction": "vocal-dub-showcase",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Perry 製作早期 Wailers，慢 rocksteady 轉 roots，暖，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.9,
+    "why": "Perry 製作早期 Wailers，慢 rocksteady 轉 roots，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e664129e-53ba-3866-839c-129465368b70",
+    "https://coverartarchive.org/release-group/e664129e-53ba-3866-839c-129465368b70/front"
+   ],
+   "mbRgMbid": "e664129e-53ba-3866-839c-129465368b70",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
   }
  ],
  "notes": [
@@ -1558,6 +2040,7 @@
   "dub 類 z 我估 0.5–1.0，其中 z<0.7 的 21 張在 uncertain 欄標出（Perry／Mad Prof／Wackie’s／Delgado dub 盤），評分器可能往 0 收，建議主線優先汰換這些。Wackie’s 只提 African Roots Act 1／2（Act 3 未提），Love Joys 為人聲和聲。",
   "ml25 慢歌盤（14 張）多數為 Junjo／Black Roots／Roots Radics 年代：y 估 1.0–1.1 屬邊界，評分器對人聲歌手盤常給 0.4–0.8，落放鬆風險高；Barrington Levy 四張、Sugar Minott 三張最有把握。80 年代中後數位化的盤（Little John Youth of Today、Frankie Paul、Cocoa Tea 等）已刻意不提。",
   "封面 404 而捨棄（CAA 無圖且找不到替代）：Mad Prof《DMC Part 9》、Mute Beat《No. 0 Virgin Dub》、Little Tempo《Musical Brain Food》、Michael Prophet《Righteous Are the Conqueror》、Triston Palma《Joker Lover》、Sugar Minott《More Sugar Minott》《Roots Lovers》、Leroy Sibbles《Strictly Roots》、Tony Tuff《Presenting Mr. Tuff》等；若主線能補 Discogs 圖可再收。",
-  "label 取自 MB 最早有廠牌的 release，部分為重發廠牌（如 Bush Master Revolution 留空、Reggae Thing 標 Trojan 為估計），不影響身分；Kaya Dub 已鎖 1978 原盤 RG（2007 Compilation RG 另有，不要選）。Dubd’sco Vol.1 MB 查無；Triston Palma《Presenting》等盤的製作人歸屬為記憶，why 欄僅作參考。"
+  "label 取自 MB 最早有廠牌的 release，部分為重發廠牌（如 Bush Master Revolution 留空、Reggae Thing 標 Trojan 為估計），不影響身分；Kaya Dub 已鎖 1978 原盤 RG（2007 Compilation RG 另有，不要選）。Dubd’sco Vol.1 MB 查無；Triston Palma《Presenting》等盤的製作人歸屬為記憶，why 欄僅作參考。",
+  "第二輪 append 17 張（舊條目未動）：回收封面 404 者 5 張（Discogs master 頁當封面來源）加 Barrington Levy 4（Money Move／Run Come Ya!／Shine Eye Gal／Doh Ray Me）、Prince Fatty 4、Rico Rodriguez《That Man Is Forward》、Gladiators《Sweet So Till》、Wailing Souls《Baby Come Rock》、Wailers《Soul Revolution Part II》。仍找不到封面而捨棄：Mute Beat《No. 0 Virgin Dub》、Triston Palma《Joker Lover》、Leroy Sibbles《Strictly Roots》、Little Tempo《山と海》、Tommy McCook《Cookin》、Mad Prof《DMC Part 9》（後者另因主題陰不收）。Rico 的 y 估 0.9 偏邊界。"
  ]
 }

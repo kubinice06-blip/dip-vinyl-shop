@@ -52,3 +52,24 @@
 - 11366：《TITLE#1》與《TITLE#2+#3》（石野卓球）找不到任何描述鼓、速度、冷暖的來源（Natalie 403、Sony 簡介只有發行事實），聲音只有 Discogs 風格標籤與曲長；moodGuess 無法證實也無法推翻，status thin，主線視為高風險（池中同藝人人味）。兩張皆為原創專輯；2005 的《TITLES》才是海外編集盤。〈Electronic Cock Sucker〉曲名不引。
 - 11367：卡單 label 欄七張皆空白，實為 Perlon／Dream Machine（日本原版）／Sundance／Ki/oon Music＋Loopa／Invitation／Non-Standard，寫作層用 facts 所列。
 - 11368：後續事件一律不寫（2018《(Re)Subliminal》重製只作版本脈絡）。
+
+## 研究 a 組
+- 11321：P-MODEL《ONE PATTERN》moodGuess 存疑（吉他殘留）：平沢進彈吉他與 MIDI 吉他，荒木康弘列名鼓手（維基稱鼓為打進去的）；搖滾加 techno-pop，非純冷合成器。廠牌 MB 作 ALFA、Discogs 作 Edge Records、維基作 Alfa，寫作層寫 Alfa Records。OH MAMA! 女聲名字日文維基（松本かよ）與 Discogs（Kayo Kokubo）不一致，不寫名字。
+- 11322：P-MODEL《KARKADOR》moodGuess 存疑（聲音偏離）：有吉他、橫川理彦電子小提琴、荒木康弘真鼓，巡迴被形容為史上最 funky；維基無 Fairlight 或取樣機記載。建議汰換或聽後評分。
+- 11323：ヒカシュー《夏》moodGuess 存疑：Toshio Takagi 客座真鼓（十二首中九首）、吉他、電子西塔琴、薩克斯風、Mellotron、Hammond，曲風怪誕流行；y、z 恐偏暖偏厚。建議汰換或聽後評分。人名一律用維基漢字寫法。
+- 11324：一風堂《Night Mirage》moodGuess 存疑（速度與暖度）：維基與見岳章皆稱中速、壓抑、療癒、異國情調、植物與吉普賽主題，有 Steve Jansen 真鼓替換與鋼鼓；x 恐不到 3.6。強烈建議汰換。
+- 11325：Plastics《ORIGATO PLASTICO》status 標 thin：找不到專輯專屬錄音與樂評，聲音來自團體層級來源；上市日 1980-09-21 僅 technopop.info 單源，寫作層寫 1980 年。佐久間器材來源說明不限於這張，不寫成本張所用。輕快明亮（Trouser Press 的 ultra-perky）可能判暖，建議主線對照池中同藝人已評分三軸。
+- 11326：立花ハジメ《H》moodGuess 存疑（聲音偏離）：薩克斯風為主角的爵士化新浪潮，真鼓、貝斯、吉他、鋼琴俱全（Discogs 名單：坂本龍一、高橋幸宏、鈴木さえ子打鼓），非電子節奏。名單與日期取自 Discogs 使用者登錄，寫作層用「據 Discogs 名單」。建議汰換。
+- 11327：立花ハジメ《Hm》推翻卡單年份：卡單 1984 為 MB 的美國 Ralph Records 版；日本原版 Yen YLR-28007 為 1983-04-23（Discogs master 1983、日文維基 1983）。建議年份改 1983。moodGuess 存疑：四位簧管／薩克斯風手加原始風格的鼓，Trouser Press 稱 outside jazz sax，非合成器為主。建議汰換。
+- 11328：本組七張的聲音來源多為日文維基與 Discogs 登錄；寫作層一律不寫榜位與銷量（Night Mirage 的 Oricon 第 61 名與約 0.7 萬張有維基來源，可寫）。後續事件（P-MODEL 凍結與《モンスター》被喊停、KARKADOR 兩團員發行後兩個月離團、一風堂最後原創專輯）屬作品直接綁定，已標時序。
+- 11329：本組七張中五張（P-MODEL ×2、ヒカシュー、一風堂、立花 ×2）聲音與 moodGuess 明顯不符，建議主線優先汰換或重評；Plastics 一張僅色溫存疑。
+
+## 主線裁定（研究層交件後）
+- **11391**：照研究層的聲音事實汰 19 張（卡單與研究 a–e 檔已移除，原卡存 `dropped-cards.json`）——冷冽線教訓第三度應驗：日本 techno-pop 二線多是**真鼓＋吉他＋管樂的樂團編制**，日本 techno 二線多帶 funk／deep house 暖：
+  - **樂團編制（真鼓、吉他、薩克斯風）→ 判重或判暖**：P-MODEL《ONE PATTERN》（平沢進吉他、荒木康弘真鼓，搖滾加 techno-pop）、《KARKADOR》（吉他、電小提琴、真鼓，巡演被形容最 funky）、ヒカシュー《夏》（客座真鼓、吉他、薩克斯風、Mellotron）、一風堂《Night Mirage》（中速、Jansen 真鼓與鋼鼓、異國情調）、立花ハジメ《H》《Hm》（薩克斯風主角、真鼓，爵士化新浪潮）、SOFT BALLET《DOCUMENT》（三吉他手、合唱、原音版曲）、Shi-Shonen《Singing Circuit》（真鼓、小提琴、管樂、和聲）。
+  - **溫暖／世界融合**：清水靖晃《案山子》（真鼓、小號、大提琴、馬林巴，mellow 慵懶）、《Subliminal》（四語人聲、非洲流行律動、jazz-funk sax）、松武秀樹《007 DIGITAL MOON》（Bond 主題曲 disco 翻奏）、Logic System《東方快車》（旅行概念、旋律翻奏）、Ken Ishii《Metal Blue America》（自述「明亮的攻擊性」、funk、吉他 riff、人聲）、田中フミヤ《You Find the Key》（柔、funk 與 deep house、厚貝斯）、青木孝允《RV8》（Tujiko Noriko 人聲、tech house）。
+  - **能量判靜**：SKETCH SHOW《audio sponge》（downtempo／lounge）、青木孝允《Quantum》（ambient／drone）、CAPSULE《CAPS LOCK》（IDM／ambient 半數器樂、重壓縮）。
+  - **身分**：Flare《Reference to Difference》1994 原版掛名 Ken Ishii、六首，Flare 名義是 1995 九首改名重發，卡單把兩版併成「Flare＋1994」，汰。
+- **11392**：留下但標存疑：Logic System《LOGIC》（研究 c：有吉他、電小提琴與人聲，冷感有樂評佐證）、SOFT BALLET《EARTH BORN》（原音與電吉他）、CAPSULE《NEXUS-2060》（人聲甜度未證實）、TESTPATTERN（童趣、x 偏樂觀）、Plastics（ultra-perky，z 風險）、田中フミヤ《Unknown Possibility Vol. 2》（Tribal、funky groove 一說）、石野卓球《TITLE》兩張與青木孝允《SILICOM》兩張、Tanzmuzik（研究 thin，聲音無直接來源）。
+- **11393**：Tanzmuzik《Sinsekai》MB release-group 含英國版（Rising High，11 首）與日本版（Sony，9 首）；寫作照研究 c 組以英國版為主，正文不寫曲數。Flare《Grip》寫作層要點出 Flare 是 Ken Ishii 的別名義。田中フミヤ《Unknown Possibility Vol. 2》日本原版是 2CD（寫作層照研究 e 組）。
+- **11394**：**全批 16 張**，不補位。候補已見底（策展兩輪 65、主線汰 30、研究再汰 19）。日本 techno-pop 主盤（YMO、Perfume、電気、Ken Ishii、池田亮司、細野／坂本／高橋）早已在池，二線不是樂團就是暖。冷冽線之後的日本場景（mc17、mc25）不建議再單獨派。
