@@ -33,3 +33,24 @@
 - **12142**　Lázár 五張：WebSearch 3 次用完（Source、Boundary Object、Byetone 各一）；其餘靠 WebFetch 開 Bandcamp、Quietus、Loud and Quiet、PopMatters、FACT、RA、Boomkat。《I.L.S.》查不到任何聲音描述（Bandcamp 無說明），status thin，x、y 皆無證據；《Boundary Object》僅有廠牌文字，thin。
 - **12143**　moodGuess 存疑（列給主線）：Crisis of Representation（x，Bandcamp 明說不靠反覆鼓點）、Source（y，Quietus 稱低音凸顯、dubstep 式攻擊感）、Unfold（z，Boomkat 稱 funky、帶旋律）、Boundary Object（y、z 弱，廠牌稱 full-spectrum、fun）、I.L.S.（無法驗證）。身分與年份全部無誤，未推翻卡單事實。
 - **12144**　Unfold、Crisis 的首發日各源差一到數日（Bandcamp／MB／Discogs），年份一致，facts 並列。
+
+## 研究 d 組
+- **12151**　WebSearch d、e 兩組合計 4 次用完（Manitutshu 樂評、UnderViewer、Neurobiology 兩次）；其餘靠 MB／Discogs API 直連、WebFetch（Wikipedia、Exclaim、Cyclic Defrost、Trouser Press、RoD 訪談、Spill、RA）。Bandcamp 直連 403，改 WebFetch。維基 API 被 429，改用 WebFetch。
+- **12152**　moodGuess 強烈存疑（建議主線汰換或降級）：Der Kalte Krieg——德語維基稱大半為翻唱、重製交給友人，曲目含〈James Bond-Thema〉〈Karl der Käfer〉〈Ein bißchen Frieden〉，z 與整體音色風險高；The Black Album According to the Weathermen——Trouser Press 稱「比首作更重更瘋、用合成器演奏的搖滾專輯」、節奏多變，維基稱諷刺流行 EBM，與預估的乾薄 new beat 鼓機落差大（z、y）。
+- **12153**　moodGuess 存疑（待驗，無來源給速度）：Komputer《Synthetik》（曲長偏長、IDM／synth-pop 標籤、英式電子流行，x 與 z）；Welle: Erdball《Tanzmusik für Roboter》（歌曲取向、曲偏短、諷刺俏皮，x 與 z）；Snowy Red《Vision》（樂手含真鼓、吉他、bouzouki、小號，x 與 y，且聲音層 thin）。
+- **12154**　moodGuess 大致吻合：Mark Fell《Manitutshu》（樂評稱冰冷電子音色、碎裂偏心的節奏、極乾淨錄音；x 風險是多首一分鐘速寫與 15 分鐘慢進混音）。
+- **12155**　Manitutshu 身分：MB 正規名「Manitutshu *」、Discogs「Manitutshu」，2011 年 5 月 Editions Mego，對得上；發行日 5 月 23／27 日與 6 月 7 日各源不一，facts 不寫日。
+- **12156**　Tanzmusik für Roboter 原擬寫專輯序數，來源不足，退成「緊接在 Der Kalte Krieg 之後」。Snowy Red《Vision》年份各源有 1983／1984，採 Discogs 與 MB 的 1984。Weathermen 專輯 1988，〈Poison〉單曲為 1987。
+- **12157**　Snowy Red 聲音層標 thin（無樂評，只有編制與風格標籤）；其餘五張 full。
+
+## 研究 e 組
+- **12161**　UnderViewer 成立年各源不一（Spill 1978、RoD 訪談 1979、Discogs 簡介約 1981），策展層寫的 1979–82 不採單一年，facts 寫「各源不同」。本盤是 2016 年對 1980–81 年四軌素材的重建與重錄，非原始母帶；寫作層需講清楚。
+- **12162**　UnderViewer moodGuess 存疑：主題偏浪漫、旋律性強（z 可能偏暖）；〈I Remember〉有穩定舞拍、〈A Minor Detail〉像 EBM（x 無速度資料）；y 有編制支持（貝斯、合成器、節奏盒）。
+- **12163**　Mark Fell & Gábor Lázár《Neurobiology》十軌全無曲名，寫作層勿造曲名。發行日 MB 4 月 30 日／RA 5 月 11 日不一，年份 2015 一致。x 有 RA「hyperactive drum programming」支持；y 風險——RA 拿 OG hardcore、jungle、footwork 比擬（與 SCENES 對 footwork 判重的前例相近），建議主線視為邊緣張。
+- **12164**　Lázár《Reflex》moodGuess 存疑：廠牌說明稱走向「linear, playful, techno-infused」「club settings」，y 與 z 可能較預估更高更暖；聲音層 thin（僅廠牌說明，無獨立樂評）。
+- **12165**　Force Exposure 與 Norman Records 的敘述僅取自搜尋摘要，facts 只寫摘要層次。
+
+## 主線：研究後汰換（不佔條號）
+- 研究層聲音與 moodGuess 不符，汰 8：Komputer《Market Led》（取樣長篇 glitch／illbient 音景，非節拍導向）、Byetone《Death of a Typographer》（厚重低頻、溫暖低音線、遠處殘響）、Gábor Lázár《Crisis of Representation》（不靠反覆鼓點，x 風險）、《Source》（dubstep 式低音攻擊，y 風險）、《I.L.S.》（無聲音資料、glitch 短曲，前例 glitch x 常落 2.4–2.9）、Welle: Erdball《Der Kalte Krieg》（大半翻唱、主題曲與流行歌）、The Weathermen《The Black Album…》（「更重更瘋的合成器搖滾」）、Snowy Red《Vision》（真鼓、吉他、bouzouki、小號）。
+- 候補見底（策展代理第二輪已說明 dnb／footwork／比利時二線皆判重），不補。定案 **19 張**。
+- 留下但存疑、交評分裁定：Snowy Red《The Right to Die》、Komputer 兩張、Welle: Erdball 三張、Essaie pas、UnderViewer（x）；Neon Judgement、And One 兩張、Mark Fell & Lázár《Neurobiology》（y）；Weathermen《Ten Deadly Kisses》、Lázár《Reflex》《Unfold》（z）。
