@@ -188,3 +188,14 @@
 - **結果**：判酸 200、主線退回 5（Pharoah《Karma》《Elevation》以吟唱與律動為主、酸只是爆發段；光束夜三張沿用 10-22 能量軸裁定留靜）；實際改值 157：雀躍→冷冽 23、平靜→冷冽 20、沸騰→亢奮 37、頹靡→亢奮 43、放鬆→冷冽 2（含 Geechee）、放鬆→平靜 2、同格只調值 30。八格 冷冽 936→978、亢奮 2,672→2,756、沸騰 2,004→1,967、雀躍 5,962→5,939、放鬆 4,990→4,986、頹靡 1,314→1,264；錨點 104/104。
 - **判例**：Penderecki《Threnody》、Galás、Haas、Saunders、Kronos《Black Angels》依「音塊密集刺耳＝躁」進亢奮（10-22 曾留頹靡，店主 Ligeti 一句改了這條）；Throbbing Gristle 四張有脈衝 → 亢奮；Sunn O)))、Khanate、Earth、Boris《Altar》維持頹靡（店主 10-22 裁定，drone 不算推力）；Feldman、Kurtág、Bill Dixon、Derek Bailey 是「安靜的酸」：冷但靜（平靜）；Ornette 全系列進冷冽；Alice Coltrane《Journey in Satchidananda》、Lonnie Liston Smith、Köln Concert 不酸不動。
 - **沒把握、留給店主翻案的**：Tim Buckley《Starsailor》→冷冽；Jonny Greenwood《There Will Be Blood》→冷冽（配樂但 Penderecki 式）；Fennesz《Hotel Paral.lel》→亢奮；Sun Ra《Astro Black》→亢奮；Boredoms《Super ae》、Melt-Banana《Fetch》、Fuck Buttons《Tarot Sport》判不酸（旋律大調）。
+
+## 2026-10-23｜酸冷重判第二輪：「寒氣」也算酸，123 張改判（Scott Walker《The Drift》頹靡→亢奮）
+
+- **店主**：「增加的太少了吧？是不是有漏，有些自由爵士或實驗音樂可能整首歌沒什麼聲音，但就是有寒氣，可能也被判為節奏慢的輕鬆」「Scott Walker 的 The Drift 歸類在哪？我覺得很有可能歸錯」。
+- **漏的原因**：第一輪只抓窄標籤（jazz/free/avant、noise、no-wave、classical/contemporary/avant），《The Drift》的標籤是 art-rock＋Last.fm experimental，整個沒進候選；dark ambient、isolationist、現代古典的寒氣型也大多沒進。
+- **補充規則**（`sour-rejudge-2/BRIEF.md`）：安靜但陰森、駭人、無調、疏離的也是酸（色溫 ≤ −1.2）；驟然爆裂、極端張力算推力（能量 ≥ 3.1），即使大部分時間很安靜。只有陰森沒有暖意的 dark ambient 算酸，帶憂鬱調性的不算。
+- **範圍**：第一輪沒判過、目前不在冷冽／亢奮的卡，凡廣義實驗／前衛／art-rock／現代古典／dark ambient／industrial 標籤或評語有寒氣字眼的，共 2,397 張、8 份。
+- **結果**：判酸 234、主線退回 17（調性還在、只是陰暗或悲：Slint《Spiderland》、Sigur Rós《Von》、Lankum《False Lankum》、小河、Mravinsky 的蕭士塔高維契 8／11、Weinberg《The Passenger》、兩版《藍鬍子城堡》、Kancheli《Vom Winde beweint》、PJ Harvey《White Chalk》、Reznor/Ross《Dragon Tattoo》、Harold Budd《Abandoned Cities》、Tim Hecker 兩張、Coil《Gold Is the Metal》、Fusco《L'avventura》）；實際改值 123：頹靡→亢奮 57、平靜→冷冽 23、雀躍→冷冽 9、沸騰→亢奮 4、恍惚→亢奮 1、同格調值 29。
+- **Scott Walker**：《Tilt》《The Drift》《Bish Bosch》《Soused》都進亢奮（3.1, 1.0–1.2, −2）——長段留白後的駭人爆裂算張力。
+- **放鬆格**：這輪 652 張放鬆格候選一張都沒判酸（多是古典、爵士抒情、新古典），兩輪合計放鬆格移出 4 張。寒氣型的卡原本大多就在平靜／頹靡（冷＋靜），問題是沒進冷冽／亢奮，不是被判成放鬆。
+- **八格（兩輪合計，含同期新上架卡）**：冷冽 936→1,064、亢奮 2,672→2,818、頹靡 1,314→1,249、平靜 1,339→1,320；錨點 104/104。
