@@ -23,3 +23,10 @@
 - 15156：Gaudi + Nusrat《Dub Qawwali》身分與聲音皆支持 moodGuess；「新發現 1960 年代末至 70 年代初錄音」僅 Exclaim! 單一來源。
 - 15157：Cheb i Sabbah《Shri Durga》大致支持；Discogs 主版本為英國 Nation 版，MB 為美國 Six Degrees 版，兩廠牌並存。Exclaim! 稱 dub 克制，低頻厚度證據不足。
 - 皆無「建議移除」，無選輯／重發問題；未推翻策展層廠牌、年份（Kin 年份並存、Terra Firma 英國原名《Mosaic》為補充而非推翻）。
+
+## 研究 a 組
+- 15121：a 組七張皆無「建議移除」，皆為原創錄音室專輯、無選輯／重發問題；未推翻策展層年份、廠牌（FFD 2005-05-02 The Drop、Tosca 2005 !K7、Fila 1996 Pork 皆吻合；Fila 發行日各處不一，只寫 1996）。
+- 15122：moodGuess 存疑（輕到中度）：NOW《In a Space Outta Sound》（多風格雜燴，僅〈The Sweetest〉明指 dub-reggae 慢拍）、NOW《Feelin' Good》（真樂手、funk／house／Afro-Cuban，非 dub 慢拍；靜度可能偏高）、Fila《Black Market Gardening》（來源只說 future jazz／disco／breakbeat，無 dub 或厚低頻證據）、NOW《Mind Elevation》（分散多風格，僅兩曲標 dub）。Thievery《Temple》、FFD《Based on a True Story》大致成立（Temple 的 hip-hop／dancehall 曲稍輕）。
+- 15123：Tosca《J.A.C.》聲音證據不足、status thin：細部樂評全抓不到（Pitchfork 禁抓、AllMusic 403、WebSearch 額度用盡），聲音只靠 Discogs／MB 標籤與維基的團風格句；moodGuess 的「厚貝斯」無來源，主線評分時需自行聽或汰換。
+- 15124：Thievery《Temple》牙買加錄音僅兩篇評論明說，具體錄音室未查到，facts 只寫「牙買加」。FFD 銷量認證數字 Wikipedia 內部不一致，facts 不寫認證只寫 NZ 12 萬／歐洲 3 萬與榜首紀錄。
+- 15125：本組 WebSearch 用 3 次（Mind Elevation、Feelin' Good、Temple）；Discogs／MB API 直連可用。
