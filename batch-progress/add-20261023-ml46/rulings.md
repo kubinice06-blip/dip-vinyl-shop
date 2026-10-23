@@ -33,10 +33,11 @@
 - 19823：Marsen Jules《Les Fleurs》身分無衝突。moodGuess 存疑（重度）：非弦樂取樣厚牆，是顫音琴、豎琴般的弦、低音、輕擊點與搖擺 beats 混用（Boomkat、Igloo），TMT 稱稀疏荒涼；無鼓組但有拍點，色溫混合。建議列汰換候選。
 
 ## 主線：研究後汰換（不佔條號）
-- 研究層聲音與 moodGuess 不符，直接汰 7（12 → 5；卡單、研究稿、`pick.json` 待第二輪候補到齊後一併同步）：
+- 研究層聲音與 moodGuess 不符，直接汰 7（12 → 5；卡單、研究稿、`pick.json` 已同步移除）：
   - 判冷：Jóhannsson《Fordlândia》（樂評 elegiac sadness、ominous foreboding、claustrophobic）、Kjartan Sveinsson《Der Klang der Offenbarung des Göttlichen》（gloomy、minor key、sorrow）。
   - 現場：Jóhannsson《Virðulegu Forsetar》（Hallgrímskirkja 教堂現場錄音；另有 foreboding 色溫分歧）。
   - 判輕：Bing & Ruth《Tomorrow Was the Golden Age》（樂評明說鋼琴領軍、反覆音型在前）、Alex Somers《Honey Boy》（老玩具音色拼貼、26 首短片段，thin）。
   - 有拍＋稀疏／偏冷：Marsen Jules《Les Fleurs》（顫音琴、輕擊點與搖擺 beats，稀疏荒涼）、Inventions《Maze of Woods》（mechanical rhythms、chilling）。
 - 留下但存疑、交評分裁定：Siblings 2（bright strings，y 可能偏低）、Olan Mill《Pine》（dirge-like 一詞）、Port Blue《The Airship》（thin、有輕拍）、Inventions 首作（兩首快打擊）。
 - 叫回策展代理補第二輪（門檻：樂評／廠方明講 warm／lush／enveloping，無 elegiac／mournful／sparse；鋼琴領軍、拍子推進、現場一律不提）。
+- 策展第二輪查 14 張、0 張過關（Olan Mill 其他盤無暖字、Craig《Slow Vessels》EP 長度、Somers 其他配樂短片段或現場、Dead Texan／McBride／Vantzou／K. B. Dunn 樂評 melancholy／haunting／ominous）→ **主場景見底，ml46 不再派**。qa-batch research：5 張 key 一致、全過。
