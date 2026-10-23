@@ -34,3 +34,14 @@
 - **15237** Tela《Piece of Mind》moodGuess 存疑：維基風格含 hardcore hip hop 與 G-funk，無慢拍或溫熱鍵盤來源；Tela 是孟菲斯人，錄音橫跨孟菲斯與休士頓。status thin。
 - **15238** MJG《No More Glory》moodGuess 存疑（x）：RapReviews 未描述速度與低頻，只有 Stevie Wonder 改寫與 Curtis Mayfield 式唱腔；MJG 是孟菲斯人，非休士頓；製作人維基（Mo-Suave-A）與 RapReviews（T-Mix）不一致並列。status full。
 - 本組推翻／存疑策展層共 8 張全部有 moodGuess 存疑註記，其中硬推翻 2 處（Big Moe 遺作說、Witchdoctor 場景）；WebSearch 用 3 次；AllMusic 全部 403、Pitchfork 被封鎖，聲音事實偏薄。
+
+## 研究 c 組
+- **15221** 蛋堡《內部整修》moodGuess 存疑（高）：只查到 2013 年喀報樂評「黑暗的杜振熙」「輕饒舌、慢嘻哈步曲」，無鼓速、取樣、製作人來源；「黑暗」暗示 z 可能偏冷或中性。status thin。中文維基稱此作獲金音獎最佳嘻哈專輯，屆次與得獎／入圍未交叉驗證，未進 facts。盤名 MB 與卡單用「内」，不影響身分。
+- **15222** 蛋堡《家常音樂》身分核對：MB 2020-02-22 為數位版日，實體預購 2020-01-22；卡單年份 2020 正確。moodGuess 存疑（輕）：卡單風險寫「現場爵士樂手」，來源是蛋堡以 MPC 一人製作，不是現場樂團；有機、淡、有溫度支持暖與靜，重度無來源。金曲獎第 32 屆得獎（最佳華語專輯、男歌手、MV）與入圍未得（年度專輯、作詞人）已分列。專輯不上串流，試聽走無來源狀態。
+- **15223** Mac Miller《The Divine Feminine》moodGuess 存疑（輕）：Dang!／We 屬 funk 彈性節奏、含銅管組，Guardian 稱 cosmic G-funk，x 可能 2.7–3.2；弦樂、小號、Glasper 鋼琴有來源。
+- **15224** Isaiah Rashad《The House Is Burning》moodGuess 存疑：無來源描述鼓速與低頻，僅「朦朧、懷舊」與風格標籤；客串 Duke Deuce、Lil Uzi Vert、Doechii 等，中快速度曲風險高。
+- **15225** Maxo《Even God Has a Sense of Humor》moodGuess 存疑（高）：樂評（Pitchfork／AllMusic／Bandcamp）皆無法開啟，聲音事實只剩曲目長度（14 首、約 42 分、多數短曲）與客串（Pink Siifu、Liv.e、KeiyaA）。facts 6 條、status thin。
+- **15226** Domo Genesis《Genesis》moodGuess 存疑：維基無聲音段，只有取樣（Glasper、Lalah Hathaway、Dexter Wansel）與製作人名單；〈Dapper〉〈Go (Gas)〉（Anderson .Paak、Wiz Khalifa／Juicy J／Tyler 客串）可能偏彈。
+- **15227** Big Moe《City of Syrup》校正：卡單曲名〈Mann!〉維基拼作〈Maan!〉（回應 Black Rob〈Whoa!〉）。moodGuess 存疑（中）：來源只證實取樣偏 funk／R&B 暖，〈Maan!〉語氣可能偏硬。Big Moe 2007 年辭世與本作無關，不進 facts。
+- **15228** Big Moe《Purple World》日期 MB 4-22、維基 4-23，年份 2002 不變。moodGuess 存疑（輕）：Grover Washington Jr. 取樣旁證暖，但主打速度無來源。
+- 本組 8 張全有 moodGuess 存疑註記，無硬性推翻年份／廠牌／掛名；status：full 6、thin 2（內部整修、Maxo）。WebSearch 共用 3 次（內部整修 2 次、另 1 次同題），其餘靠 Wikipedia／MB。
