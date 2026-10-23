@@ -18,7 +18,7 @@
 3. **一批可以合併相鄰的大場景湊滿 45 張**：指派時寫「主場景＋可擴寫場景」，策展代理先挖主場景，不夠再往擴寫場景補，仍要過 moodGuess 邊距。
 4. 冷冽線教訓（2026-10-23 改依體感標準）：**旋律清楚的 synth-pop／new wave／techno-pop 落雀躍**（mc9、mc5 落格偏低的原因）；**緊繃、尖細、旋律不明的**自由爵士小編制、無調現代古典、glitch 才是冷冽大宗——安靜但緊繃也算躁，不必有鼓。厚、密、低沉的仍落亢奮。
 
-**優先序**（2026-10-23 依店主「體感標準」改排 21–31：冷冽改走自由爵士／現代古典／glitch 等「緊繃、尖細、旋律不明」的大池，拿掉旋律清楚的 synth-pop；由上往下派；頹靡已穩定，冷冽與恍惚往大池子集中）：
+**優先序**（2026-10-23 依店主「體感標準」改排 21–31，再補 32–35 恍惚大池（恍惚每批只挖到 11–17 張，最薄）；冷冽改走自由爵士／現代古典／glitch 等「緊繃、尖細、旋律不明」的大池，拿掉旋律清楚的 synth-pop；由上往下派；頹靡已穩定，冷冽與恍惚往大池子集中）：
 
 | 順位 | 批 | 主場景＋可擴寫場景 | 狀態 |
 |---:|---|---|---|
@@ -48,11 +48,15 @@
 | 24 | md21 | goth rock／coldwave 慢盤二線 ＋ md15 witch house／hauntology | ✅ 上線 34／落格 33 |
 | 25 | mc32 | 無調現代古典／序列主義／新複雜主義（室內樂、獨奏，尖細的） ＋ mc4 續集 | ✅ 上線 31／落格 29 |
 | 26 | ml13 | 暖而慢的迷幻搖滾（不兇的 desert／stoner 慢盤） ＋ ml26 非洲與巴西的慢而厚 | ✅ 上線 12／落格 11 |
-| 27 | md18 | 日本暗色 drone／ambient／暗色獨立 ＋ md20 北歐暗色電子與配樂 ＋ md19 華語／韓國暗色獨立 |  |
-| 28 | mc28 | 歐陸自由即興（ICP、Globe Unity、Misha Mengelberg、Irène Schweizer） ＋ mc34 日本前衛即興 |  |
-| 29 | mc33 | glitch／microsound／尖細實驗電子 ＋ mc35 RIO／前衛搖滾尖細那半 |  |
+| 27 | md18 | 日本暗色 drone／ambient／暗色獨立 ＋ md20 北歐暗色電子與配樂 ＋ md19 華語／韓國暗色獨立 || 派→情緒薄格 ml31、md18（第 6 輪） |
+| 28 | mc28 | 歐陸自由即興（ICP、Globe Unity、Misha Mengelberg、Irène Schweizer） ＋ mc34 日本前衛即興 || 派→情緒薄格 ml32、mc28（第 6 輪） |
+| 29 | mc33 | glitch／microsound／尖細實驗電子 ＋ mc35 RIO／前衛搖滾尖細那半 || 派→情緒薄格 ml34、mc33（第 6 輪） |
 | 30 | md22 | 無鼓 drone metal／post-metal ambient 二線 ＋ md23 暗黑 lo-fi／tape loops |  |
 | 31 | mc22 | 當代前衛爵士（Tim Berne、Steve Lehman、Mary Halvorson、Craig Taborn、Tyshawn Sorey） ＋ mc31 剩餘 |  |
+| 32 | ml31 | 爵士弦樂抒情盤／慢板 ballad ＋ ml33 福音慢板／靈魂聖詩 | 派→情緒薄格 ml31、md18（第 6 輪） |
+| 33 | ml32 | 拉丁 bolero／慢板浪漫 ＋ ml25 80s 慢板 reggae 歌 | 派→情緒薄格 ml32、mc28（第 6 輪） |
+| 34 | ml34 | 華語／日語／韓語抒情 ballad 厚編曲 ＋ ml36 Balearic／ambient pop 暖盤 | 派→情緒薄格 ml34、mc33（第 6 輪） |
+| 35 | ml35 | alt-country／Americana 濕而慢 ＋ ml33 剩餘 |  |
 
 **暫停**：mc13 math rock、mc21 post-punk revival、mc30 minimalism（旋律清楚＝暖）、mc9／mc10／mc20／mc25／mc26 系的 synth-pop／new wave／K-pop／synthwave 續集（2026-10-23 體感標準：旋律清楚往暖，落雀躍）、mc23 art pop、ml4 系東亞續集、ml14 spiritual jazz（體感標準判冷，不是恍惚）、ml22、ml27。**重開**（體感標準下會落冷冽）：mc4、mc14、mc22、mc28。
 
@@ -166,3 +170,9 @@
 | ml28 | 16161 | 70s soft rock／yacht 慢而濕的（新尺下會判重的） | 併入 ml19（池中 70s soft rock 全判輕，只收得到復興盤；不再單獨派） |
 | ml29 | 16241 | 華語／日本 dream pop 二線 | 併入 ml20 |
 | ml30 | 16321 | 暖 ambient／new age 厚墊（溫而霧，不是空氣感的極簡） | 併入 ml24（2026-10-23；有旋律的 new age 池中全判輕，不再派） |
+| ml31 | 16401 | 爵士弦樂抒情盤／慢板 ballad（with strings 系：Clifford Brown with Strings、Ben Webster、Johnny Hartman、Chet Baker 弦樂盤） | |
+| ml32 | 16481 | 拉丁 bolero／慢板浪漫（Los Panchos、Luis Miguel《Romance》、Omara Portuondo 慢盤、bossa 以外的厚弦樂盤） | |
+| ml33 | 16561 | 福音慢板／靈魂聖詩（厚合唱、溫、慢；快板 shout 落雀躍） | |
+| ml34 | 16641 | 華語／日語／韓語抒情 ballad 厚編曲（90s 弦樂、殘響厚、旋律清楚的慢歌盤） | |
+| ml35 | 16721 | alt-country／Americana 濕而慢（Cowboy Junkies、Lambchop、Mazzy Star 系） | |
+| ml36 | 16801 | Balearic／ambient pop 暖盤（溫而霧、旋律清楚） | |
