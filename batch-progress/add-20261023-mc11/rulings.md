@@ -38,3 +38,14 @@
 - 11824：Black Devil Disco Club 有鼓手（Rephlex 新聞稿）、節拍自述 earthy；卡單 label Pole Position 查無（原版 RCA Victor／Out）。
 - 11825：Hipnosis 查無 vocoder／速度來源，status thin；label 卡單 Baby Records 查無（Memory／ZYX）。
 - 11826：Optical Race、Chronologie 速度皆無 BPM 來源；Chronologie 有署名吉他（Patrick Rondat）。
+
+## 研究 e 組
+- **11841**：Dopplereffekt《Linear Accelerator》moodGuess 存疑（重要）。六首約 71 分鐘，前三首約 50 分鐘為 drone／噪音／ambient，第四首起才有底特律式節拍，Last.fm 摘述「節拍導向曲子很少」。z 冷成立，x 躁不成立。建議移出冷冽格或降 x。
+- **11842**：Pyrolator《Wunderland》moodGuess 存疑（重要）。維基稱最玩心、旋律性強、帶世界音樂；Discogs 登錄 shaker、hi-hat、刷子鼓；Forced Exposure 與 Bureau B 文案（搜尋摘要，原頁未開）稱拉丁舞曲節奏與 easy listening。非乾冷機械快拍，建議汰換或待聽。
+- **11843**：Rofo《The CD-Album》moodGuess 存疑（重要）。是有主唱（Peter Vriends、John Sauli）的 Hi-NRG／Italo disco 歌曲盤，非 space synth 器樂；曲名多為情歌。MB 與 Discogs master 74379 與德文維基三名同指一張（The Album／The CD-Album／The '88 Remix Album）；同年另有首張《Rofo》專輯，不是本卡。年份 1988 已證實。建議汰換或待聽。
+- **11844**：Proxyon《The Interplanetary Mission》六首與 1989 年《Proxyon》重疊，三首新曲；與《Proxyon》聲音幾乎相同，歷史定位偏弱。MB 與 Discogs 皆列 Album，保留，供主線決定是否汰換其一。
+- **11845**：Proxyon《The Return of Tarah》換製作人 Jay Vee，Discogs 稱聲音與前兩張不同，方向無來源。moodGuess z 稍貼警告成立，待聽確認，建議與前兩張分開評分。
+- **11846**：Proxyon 三張與 Laserdance 的速度、鼓機機型、有無吉他真鼓皆查無文字來源（WebSearch 3 次用盡，只得 Discogs 標籤與曲長），一律不寫 BPM；Proxyon 三卡 status 標 thin。〈Space Fly (Magic Fly)〉對應 Space 樂團〈Magic Fly〉為推論，facts 只寫 Ecama 署名。
+- **11847**：Laserdance《Changing Times》器材與招牌音色名取自 Discogs 製作說明（社群登錄），身分與年份無誤，label 可補 Hotsound Records。Discogs 風格標籤含 Downtempo、音色名含 Brass，與「快拍、輕」略有出入，策展層 z 提醒維持；不到存疑程度。
+- **11848**：卡單 label 空白可補：Laserdance＝Hotsound Records、Proxyon 1989＝Rams Horn Records、Interplanetary Mission 與 Tarah＝Dance Factory、Rofo＝BCM Records（德國版）、Dopplereffekt＝International Deejay Gigolo Records、Pyrolator＝Ata Tak。
+- **11849**：Pyrolator 的 Bureau B 頁面（bureau-b.com/releases_archive_2013.php）與 Forced Exposure 頁面 WebFetch 皆開不起來，facts 內兩條是搜尋摘要轉述，寫作層請淡化或不採。
