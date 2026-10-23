@@ -31,3 +31,10 @@
 - 20215：《The Piano Equation》Discogs 註記『Recorded May 22, 2019』疑為抄自發行日（MB 首發 2020-05-22），錄音日期不寫。
 - 20216：moodGuess 存疑清單見各卡 notes：Circular Temple（Monk／Powell bop 動機疾走、鼓全程在打，y 貼邊）、Piano Equation（中速、低音區延音、一首 stride→藍調，可能判靜／暖）、Symbolic Reality（密度忽疏忽擠、〈Flesh And Bone〉貝斯重得壓過其他聲部，判重風險；結尾哀傷放慢，判靜風險）、Magnetism（二十個短片段含長笛／貝斯／鋼琴獨奏，可能判靜）、And Your Ivory Voice Sings（Taylor 式猛烈二重奏判重；Coltrane〈After the Rain〉與抒情自創曲判暖）、Gaia（兩位鼓手＋全員打擊樂判重；Wire 稱 joyous、hymn 判暖）、Ithaca（沉默、skeletal 判靜）、Any Terrain Tumultuous（spare、stark 判靜）。
 - 20217：樂評全來自維基轉述或搜尋摘要（AllMusic、AAJ、Jazzwise 原文 403 或未開）；星等一律不寫。《Any Terrain》『Song For Jeanne Lee 尚未錄過』與 1985 年 Leo 盤同名曲衝突，facts 只寫事實，不寫首錄。
+
+## 研究 c 組
+- 20221：《To Fly to Steal》《Hôtel Du Nord》策展層寫鼓手 Gerald Cleaver，Discogs 與維基均為 Gerry Hemingway（Cleaver 是 Lonelyville 五重奏）；以來源為準，寫 Hemingway。
+- 20222：《Music for Violin and Piano》Discogs 註『live to stereo』＝錄音室直錄雙聲道，另兩首（1、8）1996 年蘇黎世 DRS 廣播錄音室；無觀眾資訊，判錄音室。樂評全文未取得，status 標 thin。
+- 20223：moodGuess 存疑清單見各卡 notes：Signs and Epigrams（AllMusic 用 violence／ferocity，y 風險；Soliloquy 慢段）、Time Gone Out（Intakt 文案含 weary、tender 與 loud free bursts，z／x 都有風險）、To Fly to Steal（Fordham：reworked lyricism、dancing melody，旋律比預估清楚，z 暖風險）、Hôtel Du Nord（ethereal、introspective、sublime，靜風險）、Lockdown（reflexive、introspective、cinematic，靜風險高）、Aeriol Piano（All the Things You Are 抽象版、romantic musings、thunderous drama）、City of Asylum（straight-ahead with experimental elements、Monk 與 Jarrett 各一首、Prayer 為慢曲）。
+- 20224：Massive Threads、City of Asylum 聲音層證據偏薄（樂評原文 403／404，維基轉述）；Massive Threads 含 Monk〈Evidence〉一首。
+- 20225：AllMusic、AAJ、Squidco 全文 403；Intakt／Clean Feed 頁取其文案，星等一律不寫。
