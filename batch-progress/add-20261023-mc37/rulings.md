@@ -85,3 +85,15 @@
 - **19943** 轉述引導詞一律不用：What a Wonderful World note 的「廠方說」寫成直述「這是兩位法國人第一次以二重奏相遇」；「評語說」改成被動「被比作針尖刮金屬」；Rabbit Run「樂評說」寫成「在樂評筆下」。媒體名、榜單名次、「據說／據傳」0 處。
 - **19944** 自掃 han() 4-gram（含 out-2 定稿當下版本）：跨張 3 次以上只剩專名「大友良英」與樂器「薩克斯風」（後者全在 out-2）。途中拆掉本組參與的 2 張殘片 11 條（唱片在年／在年發行、曲名全是、作曲家在、人年月日、在蒙特婁、只收一首、被形容成、在柏林的、彈類比合、年由英國）；剩下的 2 張殘片只有曲風名「具體音樂」（Double_Wash×Gloire，note 原詞）、「具象音樂」（Zygosis×Lux，同屬 eRikm）與樂器「類比合成器」（Rabbit Run×Thermal），按專名／樂器名豁免。out-2 之間的 2 張殘片（年才由發、小廠發行、完成這部等）屬 writer-2，未動。
 - **19945** 只寫 note：Below Beyond Above note 無「瑞士」，正文不寫（瑞士只在 infra_red 依 note 出現）；infra_red 不寫 CD 載體與廠牌，改「一部分收進本作」；La nuit 年份照 note 寫 1997。
+
+## 寫作層（writer-2）
+- **19946** 交件：`desc-tools/batches/output/add-20261023-mc37-out-2.json` 13 張（full 7：206–238；thin 6：143–178）。逐張：Bart 231、Thermal 170、Touch 232、Sidewinder 230、Microphone 162、Brt Vrt Zrt Krt 238、Döner Kebab 219、Solo Trumpet Vol. 2.1 206、About Trumpet And Saxophone 228、More Is More 156、{Sparks} 143、dR 162、Gloire à... 178。初稿無超標、無掉下限，未整格捨去。`qa-batch out`、`qa-check-research`（標記 0）、`fix-spacing`（0）全過；「據」grep 0；正文無媒體名、無榜單名次。
+- **19947** 第二句領句全照鉤子層 19934／19938 配表（學歷／起家地＋移居／合作關係／學校身分／前身分／成長地／由／駐村身分／是／廠牌關係／樂器／廠牌創辦／師承）。Touch 的 note「操控靠感壓觸控板」與 hook 重疊，正文只補 hook 沒說的「會感應手指壓力」；Microphone 的 hook 已給兩個年份，正文第二句改補 1973 年 5 月與錄音地，出版方只具名 Cramps。Sidewinder 的「解說稱」寫成「唱片解說把這些聲音比作⋯」（唱片本身的解說，非樂評）；Bart 的「樂評形容」轉成陳述句、不掛來源。
+- **19948** 「日」後一字：Döner 日完、Wooley 日地、More Is More 日這、Gloire 日的；與 writer-1 已用的日進／日那／日到／日兩／日在不撞。日期前一字逐張配開（Bart 腦、Touch 磯、Sidewinder 品、Microphone 家、Brt 片／是／在、Döner 音、Solo 手／是、Wooley 是、More Is More 地、Sparks 人、Gloire 在）。
+- **19949** 跨兩檔合掃（han() 4-gram，含 writer-1 現行 out-1）：3 張以上只剩「具體音樂」（樂種名，W1×3＋Gloire）與「薩克斯風」（樂器）。途中拆掉的 2 張殘片：唱片在年、約分鐘的、作曲家在／作曲家年、完成這部、被形容成、小號手年、曲名全是、才由發行／到年才由、在柏林的、年由英國、小廠發行、人年月日、自家工作室、的工作室、的錄音室、在科隆錄、是年月日、在年發行、在年月日、這部作品、唱片年由（後六條為 writer-1 定稿中途變動後重掃才出現）。剩 2 張的「類比合成器」「哥倫比亞」屬樂器／專名。writer-1 若再動，請主線收件時再合掃一次。
+
+## 主線審稿（2026-10-23，雲端主線，26 張逐張讀過、對回研究稿）
+- **19951** `desc2:eRikm|Zygosis`：「風格被歸在實驗與具象音樂」→「實驗與具體音樂」；`desc2:eRikm|Lux Payllettes`：「數位具象音樂」→「數位具體音樂」。musique concrète 台灣通行譯名為「具體音樂」，同批 Double_Wash、Gloire à... 已用「具體音樂」，統一譯名。**已同步改 hooks-b、hooks-c、writer-1 input 與 out-1**（研究稿不動：facts 為轉述）。
+- 核過的事實：Below Beyond Above 錄於 1997-10-06 Zack Studio、1998 年 Uhlang；infra_red 與 Shock_Late 同日錄音；Double_Wash 1999-12 錄、2000 夏里昂重編、2001 GROB；21 Situations 1997-12-01～03 Radio-Canada Studio 12；Studio—Analogique—Numérique 2000-11-01 New 28 Studio、三張 8 公分 CD；La nuit 3 台唱盤 1 唱頭 25 張 LP、Audioview 1997；East of Where? 2016-11-14 柏林 Yan Jun 工作室；Rabbit Run 41 分鐘切 42 軌、2002-06-19～20 科隆；Bart 〈Du / Function〉29:45；Touch 哥倫比亞委託、序列器脈衝；Sidewinder 包絡跟隨器；Microphone 1973 錄、1978 Cramps；Brt Vrt MSLKH 001；Döner Kebab 2017-02-28 錄、2022 發行；Solo Trumpet 2.1 錄 2016、2019 Discrepant；More Is More 2005-11-09 Fairchild Chapel、Evans 時年 24（1981-10-02 生）；{Sparks} 北齋《雷神》封面；dR 2018 Éditions Piednu；Gloire à... 1991-11-09 COREAM 首演、1992 Metamkine。
+- 樂評的聲音描述（Rabbit Run、Bart、What a Wonderful World、Brt Vrt、Döner Kebab、Wooley/Wright）都未點名媒體，屬聲音事實，保留；評價語（「驚人的即興演奏家」等）寫作層已未寫。
+- 其餘 24 張逐張審過，未改字。qa-batch research／hooks／out、qa-check-research（兩檔 0 標記）、fix-spacing 重跑全過；「據」字 0。
