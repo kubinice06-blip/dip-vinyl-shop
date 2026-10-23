@@ -11,3 +11,13 @@
 - 池中同類 x 普遍只到 3.0–3.3（中村《No-Input Mixing Board》3.1、Butcher 3.1、Subotnick《Wild Bull》3.1、Tudor《Rainforest》3.1）→ **x 3.3 貼邊的先汰**。
 - **主線汰 9**：x 貼邊 4——Subotnick《Silver Apples of the Moon》、Tudor《Pulsers / Untitled》、Greg Kelley《Trumpet》、Hautzinger & Kerbaj《Abu Tarek》（留白／氣聲多）；疑似現場或彙整 2——《Sweet Cuts, Distant Curves》（訪首爾演出期間錄）、Seymour Wright《Seymour Wright of Derby》（2005–08 獨奏彙整）；y 貼邊 3——Tricoli/Ankersmit《Forma II》（y 0.1、低頻段）、Kevin Drumm《Second》（y 0、Drumm 池中多判重）、Okkyung Lee《Noisy Love Songs》（編制大、旋律段風險）。
 - 跨組：Peter Evans 見於 mc22（另一張），《More Is More》《{Sparks}》未被提過，收；Evan Parker（mc28 藝人）只以 Parker/Lee/Evans 三人合掛名出現，池中無此作，收。
+
+## 研究 e 組
+- 19921：Okkyung Lee《Nihm》moodGuess 存疑——Scaruffi 與 jazzmusicarchives 摘要列鼓（Hollenbeck／Barnes）、鋼琴、豎琴、單簧管、貝斯、電子，Tzadik 文案稱「細膩組曲」，與「無鼓刮擦尖鳴」不符；與主線汰掉的《Noisy Love Songs》同理（編制大、有旋律段），建議汰換或待驗。逐曲編制未查到。
+- 19922：Parker／Lee／Evans《The Bleeding Edge》疑似現場——英文維基標 live album，Discogs 只寫教堂錄音，無觀眾聲證據；〈Trio 4〉被評為最溫柔、教堂殘響偏柔，躁度可能低於預估。
+- 19923：Marchetti & Noetinger《Mort aux vaches》疑似現場——Staalplaat／VPRO 系列為電台錄音室現場演出（維基該節缺引用，Discogs 記事為《De Avonden》委託，2000-03-29 錄）；發行年 MB 2000／Discogs 2001，寫作層避免寫死。
+- 19924：Joan La Barbara《Tapesongs》年份採 1977（Discogs 錄音 1977-11、Arc Light 重發頁）；Wikipedia 寫 1978。B 面〈Thunder〉約 23 分鐘為六顆定音鼓＋人聲，重低頻風險；moodGuess 存疑。
+- 19925：Peter Evans《More Is More》、Evans／Blancarte《{Sparks}》、Noetinger《dR》《Gloire à...》找不到談聲音的樂評，status thin，moodGuess 的聲音面向皆為編制推測，未驗長段留白與低頻。《{Sparks}》低音提琴撥弦／低音區可能偏重；《Gloire à...》單曲 21 分鐘，安靜段風險高。
+- 19926：Wooley／Wright 無鼓、錄音室、樂評支持 spiky／raw／tension；唯 Wooley 簡介提「對空間的敏感」，個別曲目留白未驗。全組最穩的一張。
+- 19927：Noetinger《dR》錄音場合未查明（Discogs 僅 Recorded By），不判現場；樂器含鋼琴與 Korg MS20，低頻風險。
+- 19928：曲名／標題典故（〈Un Claquement…〉對馬拉美、{Sparks} 曲名對各地雷神）無來源，只放 notes。
