@@ -64,3 +64,24 @@
 - **15495** 媒體與禁區：媒體名與媒體榜單名次全不進 hook／note（Pitchfork、The Guardian、Subbacultcha、NME、Exclaim!、The Line of Best Fit、DIY、LARB、Rush Hour 文案、Vinyl Me, Please 名單、Metacritic 與各家星等一律不派；聲音句不掛出處；Hiett 的 Vogue Paris 改寫「巴黎時尚雜誌」）。研究稿 notes 的時序禁區照辦：Drugdealer 不碰 2019 後續作；Ducktails 不寫合約爭議、也不派 DIY 的「洛杉磯不利處境」與 Real Estate 那格（只寫早期錄音在洛杉磯）。Yummycoma／Sweetback／Bad Bonez／Romantic Times 為 thin，note 只派 credits、規格與廠牌文案，不派聲音形容（研究稿無來源）。
 - **15496** n-gram 自查（CJK 4-gram，hook＋note 全 11 張，扣指派樣板）：定稿跨張 0；hook 對 hook 0。途中拆掉：「原聲吉他」（Drugdealer 對 Moon Tides，Drugdealer 那格捨去）、「的合成器」×3（L'Amour／Romantic Times／Moon Tides）、「卡加利的」（Lewis 兩張，L'Amour 改不寫城市）、「在洛杉磯」（L'Amour 對 Jersey Devil，L'Amour 改「錄於」）。
 - **15497** 腳本：`node qa-batch.mjs hooks add-20261023-ml19` 全部通過 ✓（初跑報 Romantic Times「年份?1983」——1983 屬 L'Amour 的事實，已改成「同一位私壓歌手的第二張」）；`node chk-hook-crossgroup.mjs add-20261023-ml19` 5 組 11 張 ✓ 全部通過（hook 加權 20–24、note 151–234）。`jp-proper-names.json` 未動。
+
+## 寫作層（writer-1）
+- **15501** 交件：`desc-tools/batches/output/add-20261023-ml19-out-1.json` 6 張（full 4：212–229；thin 2：Yummycoma 164、Romantic Times 148）。`qa-batch out`、`qa-check-research`、`fix-spacing` 皆 0 處；禁語／轉述引導詞（據說、據傳、也就是、媒體名）grep 0。初稿零超標、零掉下限。
+- **15502** Bermuda Waterfall 的 note 帶「據說整張寫給朋友」：照店主「不用據說／據傳」改成直述「一整張寫給朋友們」（研究稿出處為評論本身的陳述，非轉述傳聞；骨架歸屬 15493 指定本張走這條）。可逆：主線若嫌單一來源，整格捨去後仍 ≥180。
+- **15503** 第二句全照 15494 指派：Drugdealer 出生地、Bermuda 名字領句、Yummycoma 廠牌關係（寫成「Arbutus 最早簽下的歌手裡，就有 Sean Nicholas Savage」）、Hiett 身分、L'Amour 化名（為避開 hook 末尾 Lewis 緊接 Lewis，改「這個名字是化名」）、Romantic Times 掛名欄。L'Amour 不複述 hook 的跳票，只具名封面攝影 Ed Colver；Hiett「單曲」改寫「只錄了 7 吋」避複述 hook。「日」後一字：由（Drugdealer）／以（Yummycoma）／逝（Hiett）；Bermuda 只寫到月。
+- **15504** 媒體名與媒體榜單名次整句不寫（Pitchfork、Guardian、Subbacultcha、NME、Exclaim!、LARB、Rush Hour 文案、Metacritic、星等），聲音句不掛出處；Hiett 只寫「巴黎替時尚雜誌掌鏡」。
+- **15505** 自掃（合掃 out-1＋out-2、含 hook）途中拆掉：「成整張是」（Bermuda 對 Hiett hook，Bermuda 改「寫就，一整張」）、「交給私壓」與「的合成器」（Lewis 兩張；Romantic Times 改「1985 年的 8 首仍由…私壓」、L'Amour 改「合成器全出自 Philip Lees」）、「在年月日」（Hiett 改「已於」）。定稿跨張 4-gram 2 張以上 0 條。
+
+## 寫作層（writer-2）
+- **15506** 交件：`desc-tools/batches/output/add-20261023-ml19-out-2.json` 5 張（full 3：203–237；thin 2：Stage [2] 178、Bad Bonez 173）。三支腳本皆 0 處。
+- **15507** 超標兩張整格捨去：Moon Tides 初稿 254，捨「〈Pendulum〉下行三和弦由原聲吉他彈出」整格（同時免掉與 Drugdealer 撞「原聲吉他」的風險）→ 237；Stage [2] 初稿 185 → 縮「三人分別是／這個副業的／請到」→ 178。
+- **15508** 第二句全照 15494：Ducktails 名義、Mndsgn 本名、Moon Tides 兩人分工、Sweetback 樂風、Seyer 地點（寫成「來自洛杉磯，做的是 bedroom pop」以避開與 Drugdealer 撞「洛杉磯的」）。「日」後一字：交（Ducktails）／在（Mndsgn）／面（Moon Tides）／經（Seyer）。
+- **15509** 拆殘片：「也就是」（Ducktails，禁注解句型，改「地下室就在他…的老家」）、「名義的第」（Ducktails 對 Drugdealer，改「列為這個名義第六張」）、「的第二張」（Sweetback 對 Romantic Times，改「2004 年這張」）。Ducktails「被形容成適合配清晨咖啡」為被動、不掛出處。
+- **15510** 兩檔合掃定稿：跨張中文 4-gram 2 張以上 0 條（含 hook 原文）。
+
+## 主線審稿（2026-10-23，cloud-main，11 張逐張讀過、對回研究稿）（條號 15513–15515）
+- **15513** 汰 1 張：Steve Hiett《Down on the Road by the Beach》——研究稿第 7 條（Be With 新聞稿）明寫吉他「乾淨清脆」，寫作層也照寫「乾淨清脆的吉他領著一首首海灘器樂」，質地判輕落放鬆的機率高，照 HANDOFF §二第 3 步「聲音跟預估不符直接汰換」。卡單、研究、鉤子、輸入、輸出五層同步移除，卡存 `dropped-cards.json`。**定案 10 張。**
+- **15514** 改 2 處（單源評價／轉述句刪除，事實不動，研究／hooks／input 不必同步）：
+  - `desc2:Sean Nicholas Savage|Bermuda Waterfall`：「歌大多在旅途中寫就，一整張寫給朋友們。」→「歌大多在旅途中寫就。」（note 原文是「據說整張寫給朋友」，單一樂評轉述，寫作層改成直述等於把傳聞當事實，整格拿掉；212→203 字）。
+  - `desc2:Ducktails|Jersey Devil`：刪「整張被形容成適合配清晨咖啡的音樂。」（單源評價句；203→186 字）。
+- **15515** 其餘 8 張逐張審過未改字。Drugdealer 正文「這回收得清醒」與本批收錄理由（濕）有張力——研究稿列中度存疑，留給上線評分判，出格就記進 HANDOFF 坑。
