@@ -26,3 +26,10 @@
 - 19603　Frightnrs《Always》：年份 2022-05-27（Wikipedia Daptone 條寫 2023 為誤）；GRAMMY.com「sparse quality of dub」為唯一聲音證據。
 - 19604　Hollie Cook《…in Dub》：Remix 次類型確認是原製作人 Prince Fatty 自己的 dub 版，收錄成立；DIY 有重低音、強殘響旁證，moodGuess 成立。
 - 19605　Hollie Cook《Happy Hour in Dub》：查不到誰混（Discogs 製作名單 Ben McKone、Luke Allwood、Hollie Cook），不寫混音者；聲音僅有宣傳稿，thin，建議實聽。
+
+## 研究 a 組
+- 19561　Holt《Sweetie Come Brush Me》：身分與年份（Volcano Vol-001、1982）成立；Channel One 錄混、Junjo 製作、Radics 署名皆有 Discogs 證據；英國 Creole 版《Gold》曲序不同，已寫入 facts。「殘響濕、低頻厚」無樂評證據，moodGuess 存疑（僅製作間接證據）。
+- 19562　Holt《For Lovers and Dancers》：Trojan TRLS 223、1984 吻合；Discogs master 年份為 0，以 MB 為準。只有署名（Radics、Sylvan Morris 錄、Blackbeard 混），無樂評，status thin，moodGuess 存疑。Blackbeard 署名為 Rodguel Sinclair，單一來源，不展開。
+- 19563　Holt《Just the Two of Us》：Channel One 1982 年 3 月錄配混，製作人是 David White（策展層未提）；Radics 全班署名。無樂評，moodGuess 存疑（速度與低頻為推定）。
+- 19564　Holt《A1 Disco Showcase》：Discogs 備註節奏在 Channel One 錄、混音與 dub 在美國 Blank Tapes 由 D. Spear 做（非牙買加 Tubby／Jammy）；全盤 41 分鐘，六首 5:57–8:17。年份採 1980（Wikipedia 1981 不採）。moodGuess 存疑：dub 長度、殘響量與拍子不明，Sly & Robbie 的 rockers 拍恐較輕快。
+- 19565　Holt《The John Holt Showcase》：策展層「六首各接 dub 長版」查無證據（Discogs 僅六首、無時長、無 dub 標示）；製作署名 The Now Team，封面 Bunny Lee。moodGuess 存疑：1977 Bunny Lee 製作，flying cymbals 輕快鼓型風險高，建議主線汰換或降先序。
