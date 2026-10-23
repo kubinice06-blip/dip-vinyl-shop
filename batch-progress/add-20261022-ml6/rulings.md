@@ -36,3 +36,18 @@
 - **14421**（Prime of My Life）：〈Don't Wanna Change the World〉是 New Jack Swing 快歌，另兩首 R&B 前十單曲節奏未確認；moodGuess 輕度存疑，不推翻、交主線聽樣。製作人名單只見於搜尋摘要，不寫入 facts。
 - **14422**（Phyllis Hyman 自名首張）：製作班底是 Buddah 紐約的 Larry Alexander／Jerry Peters／John Davis，並非 Gamble-Huff 系，場景標籤「費城弦樂慢盤」不精確；年份、廠牌不動，風格近費城弦樂故仍可留，主線視情況修。
 - **14423**（Teddy It's Time for Love）：發行日 MB 9 月 11 日、維基 9 月 2 日不一致，facts 兩者並列；弦樂墊與 Bobby Martin 編曲無來源，不寫。
+
+## 研究 b 組
+- 14411：Rotary Connection《Dinner Music》moodGuess 嚴重存疑（中度以上）：Discogs 歸 Rock／Psychedelic／Experimental，15 首含 5 首不到 1 分鐘的過場、民謠鄉村與電子實驗，AllMusic 稱其「一串離題」，兩首為翻唱；Discogs 人員表無任何樂手，找不到弦樂與豎琴來源。建議視評分結果汰換。製作人署名 Discogs（Stepney）與維基（Marshall Chess 與 Stepney）不一致，facts 並列。
+- 14412：Jon Lucien《Song for My Lady》moodGuess 中度存疑：Discogs 人員表無弦樂手，只有鍵盤、鋼琴、合成器、電吉他、雙貝斯、雙鼓與多位打擊，曲目含〈Dindi〉〈Maiden Voyage〉，偏爵士律動而非弦樂靈魂；「電鋼」無來源。MB 2011 同名條目未另查，不影響 1975 原盤。
+- 14413：Jon Lucien《Rashida》status 標 thin（Discogs 版本頁無人員表、維基只有生平）；curatorWhy「RCA 首張」不對，首張是 1970 年《I Am Now》，本盤是第二張，建議主線改文案；y 0.8 恐偏樂觀（7 首不到 4 分鐘、風格列森巴巴薩諾瓦騷沙）。
+- 14414：Jon Lucien《Mind's Eye》輕度到中度存疑：人員表有完整鼓組、康加鼓與兩位打擊，10 首中 5 首不到 3 分鐘，y 可能偏低；僅 Grusin 指揮管弦樂一條旁證支持「管弦墊」。
+- 14415：David Porter《…Into a Real Thing》年份兩說（MB 與 Discogs 1971，Ace 重發報導 1970），維持卡單 1971，正文可迴避年份；moodGuess 輕度到中度存疑（原曲 Hang On Sloopy 為中快板，長達 11 分鐘；全張 6 首、非 Hayes 式整張慢板）。報導稱專輯進 R&B 前十名，單一來源不寫。
+- 14416：The Dells《Freedom Means》輕度存疑：無逐首速度，〈Make It With You〉〈Free And Easy〉曲名偏輕快，x 可能 2.6 以上；curatorWhy「Stepney 編曲期最後一張」查無來源，不寫（1972 年尚有兩張 Stepney 製作的 Dells 專輯）。Discogs 盤名為《Freedom Means....》，沿用 MB 的《Freedom Means》。
+- 14417：Discogs API 直連可用；維基 API 被限流，改用 WebFetch，部分專輯頁 404（Freedom Means、David Porter 等無獨立條目，改以 Discogs 與 theseconddisc 報導為主）。WebSearch 本支用 3 次（Porter、Rotary Connection、Dells）。
+
+## 主線裁定（研究層交件後，2026-10-23）
+- **14471**：照研究層的聲音事實汰 5 張（卡單與研究 a–e 檔已移除，原卡存 `dropped-cards.json`）：Surface《2nd Wave》（鼓機程式貫穿、synth bass、orchestral hits，80 年代末數位明亮，質地判輕）、Sylvia《Pillow Talk》（小編制律動組、2–4 分鐘短曲、沒有弦樂墊）、Isaac Hayes《Branded》（funk 推進，樂評點名 propulsive／furious，只有三首慢歌）、Rotary Connection《Dinner Music》（民謠鄉村加電子實驗、5 首不到 1 分鐘，不是弦樂慢盤）、Jon Lucien《Song for My Lady》（人員表無弦樂、偏爵士與巴薩諾瓦，質地判輕；同藝人留兩張）。
+- **14472**：留下但標存疑（池中同型慢板靈魂經質地尺改判後 y 0.6–1.1，評分照聲音打）：Will Downing 兩張、Barry White《The Icon Is Love》《Is This Whatcha Wont?》《Stone Gon'》、Marvin Gaye《Vulnerable》、Billy Paul《When Love Is New》、Manhattans 兩張、Margie Joseph《Sweet Surrender》（池中同為 Mardin 製作的《Margie Joseph》改判 0.6）、Peabo Bryson、Ray, Goodman & Brown《II》、Teddy《Truly Blessed》、Gerald Levert、Silk、Keith Washington、Major Harris、Phyllis Hyman《Prime of My Life》、Jon Lucien《Rashida》《Mind's Eye》、David Porter、Dells。
+- **14473**：照研究層改卡單：Silk《Silk》label Keia → Elektra；Teddy Pendergrass《Truly Blessed》year 1990 → 1991（維基 1991-03-05、年終榜 1991）。Margie Joseph《Sweet Surrender》是 Atlantic／Arif Mardin 紐約錄音（非 Memphis），Phyllis Hyman《Phyllis Hyman》是 Buddah 紐約班底（非費城），Jon Lucien《Rashida》不是 RCA 首張——寫作層照研究稿。
+- **14474**：**全批 40 張**（策展 54、主線汰 9、研究汰 5）。候補已見底，照實上架。
