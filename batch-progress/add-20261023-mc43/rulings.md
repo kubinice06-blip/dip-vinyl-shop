@@ -26,3 +26,27 @@
 - 21498　Poppe《Schrank》：編制混雜（虛擬 Hammond 電風琴、人聲獨唱 Wespe、鋼琴三重奏 Trauben、九人團體十一個極短樂章 Schrank、長曲 Salz），與『密集合奏、尖銳木管』預估有落差。發行年 MB 2012-06 對 Kairos 官網 2013-06，暫取 2012，uncertain。
 - 21499　Michel-Dansac《14 Récitations》：**現場錄音**（Wien Modern 2001-11-16 首次完整演出，col legno 2006 出版，Discogs 明載 live recording），違反『只收錄音室正規專輯』，建議移除；若留，有『首度完整演出實況、Wien Modern Edition 第 1 號』的歷史定位，或改釘 Michel-Dansac 2016 Umlaut 錄音室版（未查 MB）。
 - 21500　本組 WebSearch 用 3 次（Hodges、Posadas、Holliger 1970）；其餘靠 MB／Discogs API 與 WebFetch。Simaku、Poppe 兩張的聲音因額度用盡而 thin，如需補強請另派。
+
+## 研究 a 組
+- 21481　Arditti《Neuwirth: Chamber Music》：moodGuess 存疑。六曲只有兩首弦樂四重奏（約 18 分鐘），其餘為小提琴＋鋼琴、獨奏中提琴達摩爾、兩小提琴＋getabera、鋼琴＋錄音帶；Kairos 只說『斷裂、變形、突轉』，無樂評證實刮擦密集。2001 年 7 月科隆錄音、2005 發行，原創錄音室專輯。Kairos 與 Discogs 對第 4 首編制不一（getabera／鋼琴），facts 採 Kairos。
+- 21482　Arditti《Nancarrow: Quartets and Studies》：moodGuess 部分存疑。14 軌中 4 軌是 Nancarrow 遺產 Ampico 自動鋼琴播放（非弦樂），第 1 號四重奏為早期作品（含 Andante moderato 慢樂章），只有第 3 號與研究曲改編是速度卡農；沒有可開啟的樂評。第 1 號年份來源三處不同（約 1942／1945／1942-45），facts 不寫。
+- 21483　Arditti《Haas: Ein Schattenspiel / SQ 4 & 7》：moodGuess 存疑（x 可能偏高）。來源描述為現場電子延遲疊影、微分音混合、後段七和弦、音團收尾，無任何『刮擦、刺耳』說法；三首各 23-26 分鐘長曲，聽感可能偏持續音場。發行日 2020-02-19（Discogs）採用，搜尋摘要的 2021 視為零售上架日。
+- 21484　Arditti《Guerrero: Zayin》：moodGuess 存疑，『密集刮擦』無來源。八首中三重奏五首、四重奏兩首、獨奏小提琴一首（16 分半）；Guerrero 1997-10-19 辭世，錄音（1997-12 起）為身後錄音。Zayin 各首年份 Discogs 與兩種維基三處不一，facts 只採 Discogs 曲目表標示。西文維基未載跟 Xenakis 學習，不寫師承。
+- 21485　Klangforum Wien《Aperghis: Contratemps…》：status thin。無樂評或聲音文案（Kairos 只說譜面雙譜表、技術艱難）；四曲為女高音＋樂團、樂團兩首、獨奏低音提琴。誰指揮哪首、Michel-Dansac 與 Fussenegger 對應曲目，來源未分，facts 不配對。拼寫 Contretemps（Kairos、Discogs）勝 MB 的 Contratemps。moodGuess『抽搐、口技』未獲本盤證實。
+- 21486　Klangforum Wien《Neuwirth: Vampyrotheone…》：moodGuess 存疑（y）。Discogs 編制二十多位演奏者含銅管五支、電吉他、手風琴、現場電子與 CD 播放器，無取樣器；屬厚重大編制。三段 Instrumental-Inseln 抽自歌劇《Bählamms Fest》。發行月份 Kairos 2001-12、MB 2001-11，年份同為 2001。
+- 21487　Cassidy《The Crutch of Memory》（ELISION）：moodGuess 部分存疑。全盤為獨奏與小型編制（小提琴、人聲、低音單簧管、薩克斯風、長號），非室內樂團合奏；長號 13 分鐘是強音器高音域輕聲哀鳴；樂評確有『鞭打般突轉』『猛烈怪誕』。MusicWeb 負評與 New Music USA 正評並列。
+- 21488　ensemble recherche《Illés: Watercolors and Psychograms》：moodGuess 部分存疑。Kairos 文案確認『身體手勢、能量』，但沒有說快或密；三首 Psychogram 是 10-13 分鐘獨奏，Watercolors 第一樂章僅 1 分鐘，可能極稀疏；找不到獨立樂評。獨奏者與 Psychogram 的對應未見來源，facts 不配對。
+- 21489　Arditti《Reynolds: Coconino… / Visions》：盤名簡化，實為 2 CD 五首（另含 Kokoro 獨奏小提琴、Ariadne's Thread 加電子、Focus a Beam 獨奏大提琴），共 97 分 40 秒；卡單盤名只列前兩首。moodGuess 部分存疑：段落標示一半 Fierce／Relentless／Anguished，一半 Tranquil／Glowing／Floating／Quietest，是動靜交替，非全程緊繃。無獨立樂評。錄音 1994/96、出版 2000，是否首發未查證。
+- 21490　本組 WebSearch 用 3 次（Haas 評論、Cassidy 評論、Nancarrow 評論）；其餘靠 MB／Discogs API 與 WebFetch。九張皆為錄音室正規專輯（無現場、無精選）；推翻策展層：0 處年份／廠牌／盤名，唯 Reynolds 盤名不完整。聲音事實薄的 Aperghis 標 thin，如需補強請另派。
+
+## 研究 c 組
+- 21501　Michel-Dansac《Aperghis: Machinations》：樂評（LaFolia 2006）稱此碟為現場演出的聲音，MB 未標 live；研究稿照實寫「演出聲音」，上線前請主線決定是否標現場。作品 2000-05-06 Witten 首演，唱片 2003-04-29 Accord。聲音符合躁／輕／冷，但樂評亦用「感官、誘人」，非純冰冷。
+- 21502　Kreutzer《Finnissy: Second & Third String Quartets》moodGuess 存疑：第三號占全碟約七成（44 分），逐漸碎裂、遲疑，結尾由錄音鳥聲取代樂手，BBC 樂評稱「令人振奮」；只有第二號（19 分）較貼近粗礪躁動。作曲年份未查到不寫。
+- 21503　Ruck《Mahnkopf: Hommage à György Kurtág》moodGuess 存疑且 thin：查無樂評，只證實 63 分鐘的吉他協奏曲、五位次要獨奏、八分之一音旋律，作曲家描述 Kurtág 為憂鬱、回顧；密度速度無來源。發行日三說（MB 2013、Apple 2013-10-18、Radio Times 2014-01-20）。建議視為可汰換候補。
+- 21504　Veale《Mahnkopf: Pynchon Cycle》：聲音最符合預估（Courier's Tragedy 刮擦嗡鳴、W.A.S.T.E. 靜電嘶聲、D.E.A.T.H. 電子持續音）；唯 Tristero System 為約 14 人厚重編制。Tristero System 年份 MB 曲名 2002、shipwrecklibrary 2001，兩說並存；卡單 Veale 只演第三首，另有 Franklin Cox（大提琴）、SurPlus／Avery（第一首），已寫入 facts。聲音全來自單一部落格轉述樂評，寫作請用「樂評形容」口吻。
+- 21505　asamisimasa《Steen-Andersen: Pretty Sound》moodGuess 部分存疑：貼麥克風的氣音、嘶聲、膠帶鋼琴、擴音器警笛，偏即興稀疏而非持續緊繃；Audiophile Audition 評其「分析多於享受」。發行日 Dacapo 2011-01、Europadisc 2011-02-28，取 2011。
+- 21506　Klangforum Wien《Lachenmann: Mouvement…》：推翻 curatorRisk 的演奏者一節——Mouvement 與 zwei Gefühle 是 Klangforum／Hans Zender，Consolation I/II 是 Ensemble Aisthesis＋Schola Heidelberg（Consolation II 為 Walter Nussbaum 指揮），為人聲合唱曲；zwei Gefühle 有朗讀者。moodGuess 存疑：Mouvement 開頭稀疏點描加靜默，約四分之三處才有塔蘭泰拉式高潮，全碟 1／3 為人聲曲。錄音年份 1995–2000（Wikipedia 稱 1998），首發 MB 2001。
+- 21507　Sugawara《Lachenmann: Got Lost》moodGuess 存疑：Got Lost 是女高音（Yuko Kakuta）與鋼琴，以氣息低語為主；String Trio 是 1965 早期作；Serynade 為 30 分鐘七段鋼琴獨奏。未查到鋼琴內部刮擦的證據。Sugawara 是作曲家妻子、鋼琴手。錄音日期（搜尋片段稱 2016-01）無可開啟頁面佐證，只寫在 notes。
+- 21508　Poll《Berio / Schnittke / Boulez: Solo Violin Works》thin：EMI Digital Debut 數位專輯（MB 格式 Digital Media，2012-02-20），查無樂評與錄音細節；Boulez Anthèmes 實際有長而靜止的和聲音與激動段落交替，非全程急促。moodGuess 無法驗證，列汰換候補。
+- 21509　Descharmes《Saariaho: L'œuvre pour violoncelle》moodGuess 存疑：MusicWeb 描述海景、波浪、漸弱、易逝的蝴蝶，僅 Près 中段詼諧曲有力量，與策展自陳「x 3.4 貼邊」一致；列汰換候補。錄音 2004-09 IRCAM。
+- 21510　本組 WebSearch 共 13 次（Machinations 2、Finnissy 1、Ruck 1、Veale 2、asamisimasa 1、Mouvement 1、Got Lost 1、Poll 2、Saariaho 1，另有一次與 Ruck 同卡），每張皆未逾 3 次；Discogs 403、DuckDuckGo 被驗證擋，主要靠 WebFetch 與 MB API。
