@@ -6,11 +6,46 @@
 - **策展→研究汰換**：ml20 策展兩輪 36、主線汰 11（Colde 兩張實為 EP、色溫／能量貼邊）、研究汰 8 → 17（場景見底）；mc31 策展 54、主線汰 9、研究汰 12（標準曲判暖、室內樂判靜、人聲／厚低頻判重）→ 33。年份更正：Braxton《Quartet (London) 1985》→1988、Marion Brown《Porto Novo》→1969。
 - **主線審稿**：ml20 改 2（죠지《FRR》研究稿把翻唱 EP 與正規專輯先後寫反，hook／研究／輸入三層同步；SUMIN 獎項改專輯獎）；mc31 改 6（5 處單源評價句、1 處 hook 語序）。
 - **上線**：card_catalog 17＋33、KV 25＋33 鍵回讀逐字一致、試聽 15＋29 ready（人工配 3＋10）、seed +50、published gate 兩批 0 error；封面 CAA 44、Apple 5、Discogs 1（LINION《Leisurely》，已登錄 registry），live-check 50/50。上線前對 origin 63 分支 seed 去重 0 撞。冷門軸 ml20 10 張照 §0.8 人工。
-- **情緒評分**：`score-ml20`、`score-mc31`。**ml20 落恍惚 17/17、mc31 落冷冽 33/33**。八格（本分支）：恍惚 1,143、冷冽 1,320、頹靡 1,279。
+- **情緒評分**：`score-ml20`、`score-mc31`。**ml20 落恍惚 17/17、mc31 落冷冽 33/33**。八格（併 main 後）：恍惚 1,151、冷冽 1,334、頹靡 1,335。
 - **類型樹**：50/50 落位；`rock-asia-country-map.json` 補 7 個亞洲團、`genre-l3-artist-map.json` 補 `jazz/free/avant`（4 個合掛名＋Corea《Is》）與 `soul/neo-soul`（問題總部）。台灣卡無流行大類，`tw-pop-artists.json` 不動。
 - **藝人介紹**：未切（並行規矩）；新藝人 17 位列在兩批 rulings.md 末尾（ml20 13、mc31 4，另 mc31 有 7 個合掛名需別名鍵）。
 - **主要檔案**：`batch-progress/add-20261023-{ml20,mc31}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml20,mc31}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml20,mc31}/`、`onboarding-manifest-add-20261023-{ml20,mc31}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml20,mc31}-*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`data/mood/*`、`genre-l3-artist-map.json`、`rock-asia-country-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`。
-- **驗證**：prepare／published gate 兩批 0 error；KV 回讀 58/58；qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；build-card-moods 錨點 104/104、seed 20,585。
+- **驗證**：prepare／published gate 兩批 0 error；KV 回讀 58/58；qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；build-card-moods 錨點 104/104、seed 20,691（併 main 後）。
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 4 輪 md14／ml19：暗色配樂 42＋city pop／AOR 濕慢歌復興盤 10 張上線，體感標準落格 19/42、8/10
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 4 輪，本工作階段負責 md14、ml19。md14（`add-20261023-md14`，頹靡：暗色電影／遊戲／影集配樂＋md13 現代古典暗黑音塊）：Jóhannsson《Sicario》、Hildur《Day of the Soldado》、Mica Levi《Monos》、Levi & Burn《The Zone Of Interest》、Stetson《Hereditary》《Color Out of Space》、Korven《The Lighthouse》《The Witch》、Zimmer & Wallfisch《Blade Runner 2049》、Lustmord《First Reformed》、Reitzell《Hannibal》×3、山岡晃 SH4／Homecoming／SH2 2024、Tarmia《Amnesia》×2《SOMA》、《Control》、《Hellblade》、《Doom 64》、Aethek & Lustmord《Scorn》、《Texas Chain Saw Massacre》、Ben Frost《Dark》×2《Fortitude》、Graves《Dead Space》、Kurzel《Snowtown》《Macbeth》、Hecker《Infinity Pool》、Young《Sinister》、《Saint Maud》、《Possessor》、《Enemy》、Jóhannsson & Glotman《Last and First Men》、Frost & Bjarnason《Sólaris》、Thorvaldsdottir ×4、Scelsi《Natura renovatur》（ECM）。ml19（`add-20261023-ml19`，恍惚：city pop／AOR 濕慢歌＋ml28 soft rock 復興盤）：Drugdealer、Sean Nicholas Savage ×2、Lewis ×2、Ducktails《Jersey Devil》、Mndsgn《Body Wash》、Pure Bathing Culture《Moon Tides》、Sweetback《Stage [2]》、Michael Seyer《Bad Bonez》。
+- **策展→研究汰換**：md14 策展 54、主線汰 9、研究汰 8（Twin Peaks 2017 混歌、Nosferatu／Revenant／A Haunting in Venice 乾淨管弦、End of Summer 暖、SIGNALIS 混雜、Dumitrescu、Joker 2）、補回 5 → 42；策展汰換區《Ligeti Project II》就是池中 Nott《Atmosphères / Lontano》（盤名不同去重沒抓到），攔下。ml19 策展 20（經典 city pop／AOR 池中全判 y ≤ −0.4，一張都不提）、研究汰 9、審稿汰 1 → 10，場景見底。
+- **主線審稿**：md14 改 7 處、ml19 改 2 處，全是單源樂評轉述刪除或改聲音陳述；事實層未動。
+- **上線**：card_catalog 42＋10、KV 42＋10 鍵回讀逐字一致、試聽 39＋10 ready（Zone of Interest、Homecoming、Scorn 無 Apple 條目）、seed +52、published gate 兩批 0 error；封面 CAA 51、Apple 1（Amnesia CAA 連續 500），live-check 全 200。上線前對 origin 59 個分支 seed 去重 0 撞。冷門軸人工：md14 原聲帶 36 張 §0.8、古典 6 張 §0.7；ml19 3 張。
+- **情緒評分**：`score-md14`、`score-ml19`。舊標準初評 42/42、10/10；合併 main 後照 10-23 **體感＋旋律新標準**重評：**md14 落頹靡 19/42（45%）**——22 張恐怖驚嚇型配樂 x 3.0–3.8 落暴躁、Sólaris 判輕落平靜；**ml19 落恍惚 8/10（80%）**，Savage 兩張乾淨 sophisti-pop 判輕落放鬆。八格（併 main 後）：恍惚 1,134、頹靡 1,335、冷冽 1,301。md14 場景下一批只收 dark ambient／drone 型配樂；ml19／ml28 不再派。
+- **類型樹**：`genre-l3-artist-map.json` 補 9 張（4 張配樂 → electronic/ambient/dark-ambient；Lewis ×2、Ducktails → pop/pop-rock/soft-rock；Seyer → bedroom；Mndsgn → downtempo/beats），52/52 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩），兩批 rulings 末尾列新藝人 27 個掛名。
+- **主要檔案**：`batch-progress/add-20261023-{md14,ml19}/`、`batch-progress/mood-cells-20261022/{curation,master}-{md14,ml19}.json`、`batch-progress/mood-axes/score-{md14,ml19}/`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261023-{md14,ml19}*`、`onboarding-manifest-add-20261023-{md14,ml19}-20261023.json`、seed／試聽地圖／類型樹／mood 產生檔、`HANDOFF-mood-cells-line.md`、`SCENES.md`。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 0 error；KV 回讀 52/52；`build-card-moods` 綠。
+
+### 2026-10-23｜dip-vinyl-shop｜Eminem《Revival》等 9 張主流 pop-rap 由暴躁改沸騰
+
+- **改動**：店主指《Revival》不該在暴躁。主流 pop-rap 有唱的副歌、好入耳＝暖，9 張 z 改正（Eminem 三張、Kendrick《GNX》、Stray Kids、G-DRAGON、Roddy Ricch、Polo G、Trippie Redd），全落沸騰；`score500/BRIEF.md` 色溫段補規則。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/rulings.md`、`batch-progress/mood-axes/score500/BRIEF.md`
+- **驗證**：`build-card-moods.mjs` 錨點同格、9 張落沸騰。
+
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 4 輪 mc26／md11：東歐 synth-pop＋冷 synthwave 14＋工業 tape music／neoclassical darkwave 40 張上線，落格 14/14、37/40
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 4 輪，本工作階段負責 mc26、md11。mc26（`add-20261023-mc26`，冷冽：synthwave 冷而薄＋mc19 東歐 synth）：Технология 4、Bonanza Banzai 5、Waveshaper《Exploration 84》《Mainframe》、Dynatron《Aeternus》、Lost Years《Amplifier》、Vector Hold《Mechanized》。md11（`add-20261023-md11`，頹靡：工業 old-school 慢盤／tape music＋md12 neoclassical darkwave）：Organum 6、Zoviet France 7、Maurizio Bianchi 3、NWW 2、Coil 系 3、TG《In the Shadow of the Sun》、SPK《Zamia Lehmanni》、Controlled Bleeding、Zero Kama、Endura、Duncan & Springer、Archon Satani、Menche、Elend 3、DVKE 3、sToa 2、Dargaard 2、Arcana《Inner Pale Sun》。
+- **策展→研究汰換**：mc26 策展兩輪 36、研究汰 20（dreamwave 懷舊判暖、darksynth 判重、混音輯／精選、真鼓銅管樂團）→ 14，場景見底照實上架。md11 策展 54、主線汰 9（池中同人判輕、z 貼邊）、研究汰 5（有鼓：C93《In Menstrual Night》、NWW《Insect…》；暖：Cyclobe、Arcana《Raspail》、Heemann）→ 40。md12 併入 md11；mc19 部分併入 mc26。
+- **主線審稿**：mc26 改 2 處（Bonanza Banzai 單源銷量數字刪）；md11 逐張審過未改字。
+- **上線**：card_catalog 14＋40、KV 54 鍵回讀逐字一致、seed +54、published gate 兩批 0 error；試聽 ready 12＋16（Технология ru 重發、Menche／NWW 單軌盤人工配）；封面 CAA 50、Discogs 4（已登錄 registry）。上線前對 origin 各分支 seed／curation 去重 0 撞。NWW《Space Music》、TG 配樂 classic 4→3。
+- **情緒評分**：`score-mc26`、`score-md11`；合併 main 後照 10-23 體感標準重評（舊評分留 `out-pre-felt/`）。**mc26 落冷冽 14/14**；**md11 落頹靡 37/40**，出格 Organum《Submission》《Vacant Lights》金屬刮擦、Menche《Static Burn》噪牆判躁落暴躁。八格（併 main 後）：頹靡 1,316、冷冽 1,301、恍惚 1,126。
+- **順手修**：「亢奮→暴躁」改名只改了產生檔 `scale-v0.json`，來源 `batch-progress/mood-axes/anchors-v1.json` 的 `_regionRule.names.charge` 仍是「亢奮」，任何人重跑 `build-scale.mjs` 就會蓋回去；已把來源改成「暴躁」，重建後 names 正確。
+- **類型樹**：`genre-l3-artist-map.json` 補 Dynatron（synthwave）、Coil presents Black Light District、Duncan & Springer、Arcana（rock/goth），54/54 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 20 位列在兩批 rulings.md 末尾（mc26 6、md11 14）。
+- **主要檔案**：`batch-progress/add-20261023-{mc26,md11}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{mc26,md11}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{mc26,md11}/`、`onboarding-manifest-add-20261023-{mc26,md11}-20261023.json`、`desc-tools/batches/*/add-20261023-{mc26,md11}-*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`data/mood/*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`。
+- **驗證**：prepare／published gate 兩批 0 error；KV 回讀 54/54；qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；build-card-moods 錨點 104/104、seed 20,589。
+### 2026-10-23｜dip-vinyl-shop｜情緒八格「亢奮」改名「暴躁」（charge）
+
+- **改動**：店主指示把躁・重・冷那一格改名「暴躁」。來源 `data/mood/scale-v0.json` 的 `names.charge`，重建 `card-moods.json`（只改名，座標 0 張變動）；`starmap-lab.html`、`dip-tune.js` 註解、`score500/BRIEF.md` 同步。內部代號仍是 `charge`；舊批次文件（含情緒薄格線 SCENES.md）裡的「亢奮」＝暴躁，不回頭改。
+- **主要檔案**：`data/mood/scale-v0.json`、`data/mood/card-moods.json`、`starmap-lab.html`、`dip-tune.js`、`batch-progress/mood-axes/score500/BRIEF.md`
+- **驗證**：`build-card-moods.mjs` 八格輸出「暴躁 2846」；cards 陣列與 HEAD 逐張比對 0 差異。
 
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格線改依店主「體感標準」：冷冽轉向自由爵士／現代古典／glitch，拿掉旋律清楚的 synth-pop
 

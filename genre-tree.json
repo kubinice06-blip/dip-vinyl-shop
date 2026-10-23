@@ -5,7 +5,7 @@
   {
    "id": "rock",
    "zh": "搖滾",
-   "count": 5062,
+   "count": 5075,
    "children": [
     {
      "id": "indie-alt",
@@ -154,7 +154,7 @@
     {
      "id": "punk-wave",
      "zh": "龐克新浪潮",
-     "count": 942,
+     "count": 953,
      "children": [
       {
        "id": "punk",
@@ -189,7 +189,7 @@
       {
        "id": "goth",
        "zh": "哥德暗潮",
-       "count": 74
+       "count": 84
       },
       {
        "id": "garage",
@@ -199,7 +199,7 @@
       {
        "id": "industrial",
        "zh": "工業",
-       "count": 34
+       "count": 35
       }
      ]
     },
@@ -248,7 +248,7 @@
     {
      "id": "psych-prog",
      "zh": "迷幻前衛",
-     "count": 687,
+     "count": 688,
      "children": [
       {
        "id": "prog",
@@ -258,7 +258,7 @@
       {
        "id": "psych",
        "zh": "迷幻搖滾",
-       "count": 290
+       "count": 291
       },
       {
        "id": "art-rock",
@@ -317,7 +317,7 @@
     {
      "id": "dream-post",
      "zh": "音牆後搖",
-     "count": 323,
+     "count": 324,
      "children": [
       {
        "id": "post-rock",
@@ -332,7 +332,7 @@
       {
        "id": "dream-pop",
        "zh": "夢幻流行",
-       "count": 118
+       "count": 119
       },
       {
        "id": "slowcore",
@@ -635,27 +635,27 @@
   {
    "id": "electronic",
    "zh": "電子",
-   "count": 2415,
+   "count": 2478,
    "children": [
     {
      "id": "ambient",
      "zh": "Ambient / Drone",
-     "count": 1014,
+     "count": 1069,
      "children": [
+      {
+       "id": "dark-ambient",
+       "zh": "Dark Ambient",
+       "count": 232
+      },
       {
        "id": "idm",
        "zh": "偏 IDM",
-       "count": 231
+       "count": 232
       },
       {
        "id": "drone",
        "zh": "Drone",
-       "count": 202
-      },
-      {
-       "id": "dark-ambient",
-       "zh": "Dark Ambient",
-       "count": 186
+       "count": 224
       },
       {
        "id": "ambient-techno",
@@ -665,29 +665,29 @@
       {
        "id": "neoclassical",
        "zh": "偏現代古典",
-       "count": 68
+       "count": 72
       },
       {
        "id": "new-age",
        "zh": "New Age",
-       "count": 53
+       "count": 54
       }
      ]
     },
     {
      "id": "techno",
      "zh": "Techno",
-     "count": 637,
+     "count": 640,
      "children": [
       {
        "id": "minimal",
        "zh": "Minimal",
-       "count": 279
+       "count": 282
       },
       {
        "id": "ambient-techno",
        "zh": "Ambient Techno",
-       "count": 254
+       "count": 257
       },
       {
        "id": "detroit",
@@ -707,7 +707,7 @@
       {
        "id": "hard",
        "zh": "Hard / Rave / Industrial",
-       "count": 47
+       "count": 50
       },
       {
        "id": "tech-house",
@@ -724,17 +724,17 @@
     {
      "id": "synth",
      "zh": "Synthpop / Electro",
-     "count": 456,
+     "count": 461,
      "children": [
       {
        "id": "synthpop",
        "zh": "Synthpop",
-       "count": 214
+       "count": 218
       },
       {
        "id": "electro",
        "zh": "Electro / Electroclash",
-       "count": 204
+       "count": 206
       },
       {
        "id": "techno",
@@ -749,7 +749,7 @@
       {
        "id": "new-wave",
        "zh": "New Wave",
-       "count": 79
+       "count": 80
       },
       {
        "id": "indietronica",
@@ -759,14 +759,14 @@
       {
        "id": "synthwave",
        "zh": "Synthwave / Italo",
-       "count": 24
+       "count": 29
       }
      ]
     },
     {
      "id": "downtempo",
      "zh": "Trip-hop / Downtempo",
-     "count": 426,
+     "count": 430,
      "children": [
       {
        "id": "chillout",
@@ -776,12 +776,12 @@
       {
        "id": "ambient",
        "zh": "偏 Ambient",
-       "count": 197
+       "count": 200
       },
       {
        "id": "trip-hop",
        "zh": "Trip-hop",
-       "count": 164
+       "count": 167
       },
       {
        "id": "nu-jazz",
@@ -791,7 +791,7 @@
       {
        "id": "beats",
        "zh": "Instrumental Hip-hop / Beats",
-       "count": 39
+       "count": 40
       },
       {
        "id": "folktronica",
@@ -808,17 +808,17 @@
     {
      "id": "idm",
      "zh": "IDM / Glitch",
-     "count": 406,
+     "count": 407,
      "children": [
       {
        "id": "ambient-idm",
        "zh": "Ambient IDM",
-       "count": 224
+       "count": 225
       },
       {
        "id": "glitch",
        "zh": "Glitch / Microsound",
-       "count": 157
+       "count": 158
       },
       {
        "id": "warp",
@@ -914,22 +914,22 @@
     {
      "id": "industrial",
      "zh": "Industrial / EBM",
-     "count": 221,
+     "count": 254,
      "children": [
       {
        "id": "dark-ambient",
        "zh": "Dark Ambient / Post-Industrial",
-       "count": 91
+       "count": 122
       },
       {
        "id": "power-electronics",
        "zh": "Power Electronics / 噪音",
-       "count": 62
+       "count": 82
       },
       {
        "id": "old-school",
        "zh": "老派工業",
-       "count": 60
+       "count": 76
       },
       {
        "id": "ebm",
@@ -946,27 +946,27 @@
     {
      "id": "noise",
      "zh": "實驗與噪音",
-     "count": 179,
+     "count": 201,
      "children": [
       {
        "id": "harsh",
        "zh": "Harsh Noise / 日本噪音",
-       "count": 131
+       "count": 152
       },
       {
        "id": "drone",
        "zh": "Drone / Dark Ambient",
-       "count": 100
+       "count": 122
       },
       {
        "id": "glitch",
        "zh": "Glitch / Microsound",
-       "count": 48
+       "count": 49
       },
       {
        "id": "concrete",
        "zh": "具象音樂與拼貼",
-       "count": 40
+       "count": 42
       }
      ]
     },
@@ -1004,7 +1004,7 @@
   {
    "id": "soul",
    "zh": "靈魂放克",
-   "count": 1710,
+   "count": 1711,
    "children": [
     {
      "id": "funk",
@@ -1117,7 +1117,7 @@
     {
      "id": "neo-soul",
      "zh": "Neo-Soul",
-     "count": 136,
+     "count": 137,
      "children": []
     },
     {
@@ -1372,32 +1372,32 @@
   {
    "id": "classical",
    "zh": "古典",
-   "count": 1313,
+   "count": 1327,
    "children": [
     {
      "id": "contemporary",
      "zh": "當代與極簡",
-     "count": 540,
+     "count": 549,
      "children": [
       {
        "id": "avant",
        "zh": "前衛與現代",
-       "count": 133
+       "count": 139
       },
       {
        "id": "neoclassical",
        "zh": "新古典 / 氛圍鋼琴",
-       "count": 86
+       "count": 91
       },
       {
        "id": "film-score",
        "zh": "偏配樂",
-       "count": 59
+       "count": 60
       },
       {
        "id": "minimal",
        "zh": "極簡主義",
-       "count": 38
+       "count": 39
       }
      ]
     },
@@ -1428,7 +1428,7 @@
     {
      "id": "film",
      "zh": "電影配樂",
-     "count": 87,
+     "count": 93,
      "children": []
     },
     {
@@ -1683,7 +1683,7 @@
   {
    "id": "pop",
    "zh": "流行",
-   "count": 1112,
+   "count": 1127,
    "children": [
     {
      "id": "jp-pop",
@@ -1725,12 +1725,12 @@
     {
      "id": "synth",
      "zh": "合成器流行",
-     "count": 242,
+     "count": 251,
      "children": [
       {
        "id": "synthpop",
        "zh": "80s Synthpop / New Wave",
-       "count": 106
+       "count": 115
       },
       {
        "id": "asia",
@@ -1752,12 +1752,12 @@
     {
      "id": "art-pop",
      "zh": "藝術流行",
-     "count": 172,
+     "count": 174,
      "children": [
       {
        "id": "baroque",
        "zh": "Baroque / Chamber / Sunshine",
-       "count": 105
+       "count": 107
       },
       {
        "id": "sophisti",
@@ -1779,7 +1779,7 @@
     {
      "id": "indie-pop",
      "zh": "獨立流行",
-     "count": 154,
+     "count": 157,
      "children": [
       {
        "id": "dream",
@@ -1789,7 +1789,7 @@
       {
        "id": "bedroom",
        "zh": "Bedroom / Indietronica",
-       "count": 43
+       "count": 46
       },
       {
        "id": "chamber",
@@ -1804,14 +1804,14 @@
       {
        "id": "psych",
        "zh": "新迷幻流行",
-       "count": 21
+       "count": 23
       }
      ]
     },
     {
      "id": "pop-rock",
      "zh": "流行搖滾",
-     "count": 131,
+     "count": 134,
      "children": [
       {
        "id": "new-wave",
@@ -1826,7 +1826,7 @@
       {
        "id": "soft-rock",
        "zh": "Soft Rock / AOR",
-       "count": 21
+       "count": 24
       },
       {
        "id": "power-pop",

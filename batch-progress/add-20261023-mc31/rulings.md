@@ -132,7 +132,7 @@
 - 照 10-23 體感標準評分（conf high 1、mid 24、low 8）。**上線 33；落冷冽 33/33＝100%**。
 - 邊界：x 3.0–3.1 的 6 張全是 AACM 留白／點描型（Braxton《For Trio》《3 Compositions》、Mitchell《Sound》《Duets》《Congliptious》、AEC《Reese》）——「安靜但讓人發毛」照體感算躁，剛好過線。下一批 AACM 留白型仍可收，但不能再更靜。
 - 產量：策展 54、主線汰 9、研究汰 12 → 33。研究汰換主因是標準曲／藍調主題明確（判暖）與室內樂／冥想段（判靜）。mc14 前衛 hard bop 頭牌已在池，只收 1 張。
-- 八格（本分支，build-card-moods 後）：冷冽 1,320、恍惚 1,143、頹靡 1,279。
+- 八格（併 main 後）：冷冽 1,334、恍惚 1,151、頹靡 1,335。
 
 ## 本批新藝人（無介紹，未切；並行時子工作階段不切）
 Leroy Jenkins、Revolutionary Ensemble、Jimmy Lyons、John Carter & Bobby Bradford（4 位）。另有合掛名變體需要別名鍵指回既有藝人：Roscoe Mitchell Sextet／The Roscoe Mitchell Art Ensemble／Roscoe Mitchell and The Sound Ensemble／Roscoe Mitchell, Anthony Braxton（→ Roscoe Mitchell）、Jimmy Lyons & Sunny Murray Trio／Jimmy Lyons / Andrew Cyrille（→ Jimmy Lyons）、John Carter & Bobby Bradford Quartet／John Carter / Bobby Bradford（→ John Carter & Bobby Bradford）。

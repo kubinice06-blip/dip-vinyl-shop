@@ -1,0 +1,3050 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-md14",
+ "batchNote": "薄細項策展線（add-20261023-md14）",
+ "createdAt": "2026-10-23T07:39:19Z",
+ "albums": [
+  {
+   "artist": "Jóhann Jóhannsson",
+   "album": "Sicario: Original Motion Picture Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "771042e4-5d18-4f47-a2bf-51bc51b37c2c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代暗色電影配樂（Villeneuve／冰島幫／A24 周邊的 drone 式配樂）：Villeneuve 三部曲的恐懼核心配樂，《The Beast》低頻像地底在震；整張以 drone 與悶擊為主，無旋律、壓得透不過氣，靜重冷｜⚠ 《The Beast》有低頻擊打，整體中位數仍是 drone｜MB release-group 771042e4-5d18-4f47-a2bf-51bc51b37c2c：title「Sicario: Original Motion Picture Soundtrack」、Album＋Soundtrack、first-release-date 2015-09-18、artist-credit「Jóhann Jóhannsson」。證據：https://musicbrainz.org/release-group/771042e4-5d18-4f47-a2bf-51bc51b37c2c https://coverartarchive.org/release-group/771042e4-5d18-4f47-a2bf-51bc51b37c2c/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/771042e4-5d18-4f47-a2bf-51bc51b37c2c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 854,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 854）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：大片配樂、國際正常流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "管弦樂先在現場錄好，他再花一年多剪接、加工。這是冰島作曲家 Jóhann Jóhannsson 替電影《Sicario》寫的配樂，也是他第二度與導演 Denis Villeneuve 合作。電子音則交給 B. J. Nilsen 錄製後再加工，全盤沒有動用合成器。第 2 軌〈The Beast〉以低頻擊打為骨幹，這段擊打在片中一再出現。唱片 2015 年 9 月 18 日隨電影上線，後來入圍奧斯卡最佳原創配樂。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Sicario_(soundtrack)",
+     "https://en.wikipedia.org/wiki/Blade_Runner_2049",
+     "https://en.wikipedia.org/wiki/Sicario:_Day_of_the_Soldado",
+     "https://musicbrainz.org/release-group/771042e4-5d18-4f47-a2bf-51bc51b37c2c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d7/74/2f/d7742f32-c5f7-6cc2-09c9-33250d9c9541/mzaf_11562824078936812222.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1440650889",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1440650889「Jóhann Jóhannsson《Sicario (Original Motion Picture Soundtrack)》」：曲目 18/18 對上 MB 原盤（Apple 共 19 軌），取第 1 軌〈Armoured Vehicle〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hildur Guðnadóttir",
+   "album": "Sicario: Day of the Soldado (Original Motion Picture Soundtrack)",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "30aa0e43-53d7-4d38-b851-20a183749b42",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代暗色電影配樂（Villeneuve／冰島幫／A24 周邊的 drone 式配樂）：Hildur 接手 Jóhannsson 的續作配樂，延續低頻大提琴與電子轟鳴的壓迫感，幾乎無旋律，靜重冷｜策展無疑點｜MB release-group 30aa0e43-53d7-4d38-b851-20a183749b42：title「Sicario: Day of the Soldado (Original Motion Picture Soundtrack)」、Album＋Soundtrack、first-release-date 2018-06-29、artist-credit「Hildur Guðnadóttir」。證據：https://musicbrainz.org/release-group/30aa0e43-53d7-4d38-b851-20a183749b42 https://coverartarchive.org/release-group/30aa0e43-53d7-4d38-b851-20a183749b42/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/30aa0e43-53d7-4d38-b851-20a183749b42/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 9274,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 9274）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "上一集的大提琴獨奏者，這一集坐上作曲的位子。大提琴手出身的 Hildur Guðnadóttir 參與過 2015 年的第一集《Sicario》，續集《Sicario: Day of the Soldado》的配樂便交到她手上。前作作曲者 Jóhann Jóhannsson 在續集上映前四個月過世，電影與原聲都獻給了他。打擊聲取自舊金屬底片盒與披薩盒，另有一把用弓拉奏的豎琴，代表片中角色 Miguel。2018 年，原聲帶由 Varèse Sarabande 發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Sicario:_Day_of_the_Soldado_(soundtrack)",
+     "https://en.wikipedia.org/wiki/Sicario:_Day_of_the_Soldado",
+     "https://musicbrainz.org/release-group/30aa0e43-53d7-4d38-b851-20a183749b42"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6a/1c/44/6a1c4485-e1de-5ecf-6f1e-b1a4fd390e08/mzaf_6108052651567663098.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1571192392",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1571192392「Hildur Guðnadóttir《Sicario: Day of the Soldado (Original Motion Picture Soundtrack)》」：曲目 14/14 對上 MB 原盤（Apple 共 15 軌），取第 1 軌〈Attack〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mica Levi & Johnnie Burn",
+   "album": "The Zone Of Interest",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "67fecb96-fb45-44ab-8281-cdea89762307",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代暗色電影配樂（Villeneuve／冰島幫／A24 周邊的 drone 式配樂）：Mica Levi 與 Johnnie Burn 為集中營題材做的聲音設計式配樂：尖叫般的人聲 drone 與低頻噪聲，無拍、無調、駭人｜⚠ MB artist-credit 為 Mica Levi & Johnnie Burn；14 軌約 28 分鐘｜MB release-group 67fecb96-fb45-44ab-8281-cdea89762307：title「The Zone Of Interest」、Album＋Soundtrack、first-release-date 2023-05-19、artist-credit「Mica Levi & Johnnie Burn」。證據：https://musicbrainz.org/release-group/67fecb96-fb45-44ab-8281-cdea89762307 https://coverartarchive.org/release-group/67fecb96-fb45-44ab-8281-cdea89762307/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/67fecb96-fb45-44ab-8281-cdea89762307/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 6,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 6）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "全黑的銀幕上，先響起的是一團人聲。Mica Levi 先前替導演 Jonathan Glazer 寫過《Under the Skin》，最晚從 2016 年起就替他的新片《The Zone Of Interest》作曲。以人聲為底的緻密音樂，用在電影全黑的開場與結尾。Levi 把人聲和合成器擺在一起，說是最古老與最現代的樂器。同列掛名的 Johnnie Burn 是音效師，以本片拿下奧斯卡最佳音效；Levi 則獲 2023 年坎城影展配樂獎。唱片發行於 2023 年 5 月。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/67fecb96-fb45-44ab-8281-cdea89762307",
+     "https://en.wikipedia.org/wiki/The_Zone_of_Interest_(film)",
+     "https://en.wikipedia.org/wiki/Mica_Levi"
+    ],
+    "note": "薄細項策展線卡牌版：研究（partial）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "Apple us 以藝人＋盤名與藝人目錄搜尋，無此配樂專輯條目（只有他人同名單曲）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mica Levi",
+   "album": "Monos",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d2f9a423-f406-4cec-9627-583eda66c0b7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代暗色電影配樂（Villeneuve／冰島幫／A24 周邊的 drone 式配樂）：Mica Levi 繼《Under the Skin》後最受推崇的配樂，扭曲口哨、管風琴與低音鼓營造叢林裡的瘋狂與恐懼，冷而不和諧｜⚠ 有稀疏定音鼓，不構成律動；y 估 1.0 偏保守｜MB release-group d2f9a423-f406-4cec-9627-583eda66c0b7：title「Monos」、Album＋Soundtrack、first-release-date 2019-08-30、artist-credit「Mica Levi」。證據：https://musicbrainz.org/release-group/d2f9a423-f406-4cec-9627-583eda66c0b7 https://coverartarchive.org/release-group/d2f9a423-f406-4cec-9627-583eda66c0b7/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d2f9a423-f406-4cec-9627-583eda66c0b7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 3393,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 3393）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一聲尖銳的瓶哨，代表山上少年兵頭頂的那個組織。作曲的 Mica Levi 出身樂團 Micachu and the Shapes，是看過《Monos》未完成的粗剪才加入，導演是哥倫比亞的 Alejandro Landes。Levi 的作曲從三樣東西起步：瓶哨、定音鼓，以及一種合成器音色。鳥鳴般的哨音代表少年兵彼此的情誼，定音鼓配上那聲權威的哨音，則是遠處操控他們的力量。2019 年 8 月 30 日交由 Lakeshore 與 Invada 發行，整張約半小時。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Monos_(soundtrack)",
+     "https://en.wikipedia.org/wiki/Monos_(film)",
+     "https://en.wikipedia.org/wiki/Mica_Levi",
+     "https://musicbrainz.org/release-group/d2f9a423-f406-4cec-9627-583eda66c0b7"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/88/f9/25/88f925f9-ff0b-05e8-a686-947ec19354a6/mzaf_9371374773283648652.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1468968055",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1468968055「Mica Levi《Monos (Original Motion Picture Soundtrack)》」：曲目 15/15 對上 MB 原盤（Apple 共 15 軌），取第 1 軌〈Guerreros〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Colin Stetson",
+   "album": "Hereditary: Original Motion Picture Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "39ab4698-6409-481f-8533-b9166073a835",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖片原聲（不和諧弦樂、drone、噪聲）：A24 恐怖片代表配樂，Colin Stetson 用低音薩克斯與單簧管循環換氣疊成低頻 drone，無拍、駭人，典型靜重冷｜策展無疑點｜MB release-group 39ab4698-6409-481f-8533-b9166073a835：title「Hereditary: Original Motion Picture Soundtrack」、Album＋Soundtrack、first-release-date 2018-06-08、artist-credit「Colin Stetson」。證據：https://musicbrainz.org/release-group/39ab4698-6409-481f-8533-b9166073a835 https://coverartarchive.org/release-group/39ab4698-6409-481f-8533-b9166073a835/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/39ab4698-6409-481f-8533-b9166073a835/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 34,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 34）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：大片配樂、國際正常流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一整群單簧管，被他拿來假扮弦樂與合成器。Colin Stetson 本行是管樂手，擅長循環換氣，這回替恐怖片《Hereditary》作曲。編制是大規模的單簧管群、低音單簧管、銅管與人聲，他再用麥克風把木管的按鍵聲放大。Stetson 一天工作約 16 小時，寫出的音樂約有 85 分鐘。全套 2018 年 6 月 8 日由 Milan 發行，以〈Funeral〉開場，最後收在不到 1 分鐘的〈Hail, Paimon!〉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Hereditary_(soundtrack)",
+     "https://en.wikipedia.org/wiki/Colin_Stetson",
+     "https://en.wikipedia.org/wiki/Hereditary_(film)",
+     "https://musicbrainz.org/release-group/39ab4698-6409-481f-8533-b9166073a835"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/34/91/0a/34910a2e-57cd-8684-dcf4-b1c4b4c56cc9/mzaf_14037566156737446161.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1497636592",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1497636592「Colin Stetson《Hereditary (Original Soundtrack Album)》」：曲目 23/23 對上 MB 原盤（Apple 共 23 軌），取第 1 軌〈Funeral〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Colin Stetson",
+   "album": "Color Out of Space: Original Motion Picture Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "46aa0220-ca4a-4447-ac8c-cbec4c0538ef",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖片原聲（不和諧弦樂、drone、噪聲）：Lovecraft 改編片的宇宙恐怖配樂，Stetson 的管樂 drone 疊上合成器噪聲與弦樂墊，厚而陰冷｜策展無疑點｜MB release-group 46aa0220-ca4a-4447-ac8c-cbec4c0538ef：title「Color Out of Space: Original Motion Picture Soundtrack」、Album＋Soundtrack、first-release-date 2020-01-24、artist-credit「Colin Stetson」。證據：https://musicbrainz.org/release-group/46aa0220-ca4a-4447-ac8c-cbec4c0538ef https://coverartarchive.org/release-group/46aa0220-ca4a-4447-ac8c-cbec4c0538ef/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/46aa0220-ca4a-4447-ac8c-cbec4c0538ef/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 80,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 80）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "外星的那團顏色，被寫成一個反覆出現的四音動機。主力是低音與高音薩克斯風的 Colin Stetson，替改編自 H. P. Lovecraft 短篇、Nicolas Cage 主演的電影《Color Out of Space》作曲。木管與自然樂器混進帶未來感的合成音色，〈Contact〉則有合成器閃爍般地刺入，原聲樂器與電子音的轉換難以察覺。數位版在 2020 年 1 月上線，Milan 與 Waxwork 另出黑膠。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/46aa0220-ca4a-4447-ac8c-cbec4c0538ef",
+     "https://en.wikipedia.org/wiki/Color_Out_of_Space_(film)",
+     "https://en.wikipedia.org/wiki/Colin_Stetson",
+     "https://www.popmatters.com/colin-stetson-color-out-space-2644900645.html",
+     "https://exclaim.ca/music/article/colin_stetson-color_out_of_space",
+     "https://www.fluid-radio.co.uk/2020/01/colin-stetson-color-out-of-space/",
+     "https://kitleyskrypt.com/2020/02/16/soundtrack-review-color-out-of-space/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（partial）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f7/b5/96/f7b59605-3f80-4e11-0cac-979140045c63/mzaf_11610425202057886110.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1493809965",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1493809965「Colin Stetson《Color Out of Space (Original Motion Picture Soundtrack)》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈West of Arkham〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mark Korven",
+   "album": "The Lighthouse",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c79d2272-1d24-4e4a-beba-54efa152ab6c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖片原聲（不和諧弦樂、drone、噪聲）：Eggers《The Lighthouse》配樂，Korven 以霧笛般的低音銅管與水聲 drone 堆出幽閉恐懼，無拍、厚重、濕冷｜策展無疑點｜MB release-group c79d2272-1d24-4e4a-beba-54efa152ab6c：title「The Lighthouse」、Album＋Soundtrack、first-release-date 2019-10-18、artist-credit「Mark Korven」。證據：https://musicbrainz.org/release-group/c79d2272-1d24-4e4a-beba-54efa152ab6c https://coverartarchive.org/release-group/c79d2272-1d24-4e4a-beba-54efa152ab6c/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c79d2272-1d24-4e4a-beba-54efa152ab6c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 326,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 326）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "木板、尺、線圈加一支吉他琴頸，拼成全片的關鍵樂器。這件裝置出自 Mark Korven 的要求，名叫 Apprehension Engine，由製琴師 Tony Duggan-Smith 打造。Korven 已是第二次替導演 Robert Eggers 配樂，Eggers 這回不要弦樂，要的是像海、像燈塔霧號的聲音。配樂另外動用號角、海螺、concertina、銅管、低音大提琴與玻璃口琴。2019 年 10 月 18 日與電影《The Lighthouse》同日發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Lighthouse_(soundtrack)",
+     "https://en.wikipedia.org/wiki/The_Lighthouse_(2019_film)",
+     "https://musicbrainz.org/release-group/c79d2272-1d24-4e4a-beba-54efa152ab6c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/eb/e1/75/ebe17507-df48-d7ed-3b28-7e7ee0d89c2d/mzaf_10965620555092930666.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1481293093",
+    "storefront": "FR",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple fr 1481293093「Mark Korven《The Lighthouse (Original Motion Picture Soundtrack)》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Arrival (From \"The Lighthouse\" Soundtrack)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hans Zimmer & Benjamin Wallfisch",
+   "album": "Blade Runner 2049",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "22c73225-8a2e-4e92-a00e-68960dc1ff4a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代暗色電影配樂（Villeneuve／冰島幫／A24 周邊的 drone 式配樂）：Zimmer 與 Wallfisch 延續 Vangelis 的 CS-80 路線，但把低頻與殘響推到極限：巨大 drone、轟鳴，幾乎無鼓，靜重冷｜⚠ 有幾軌較有推進感（〈Sea Wall〉），中位數仍是 drone｜MB release-group 22c73225-8a2e-4e92-a00e-68960dc1ff4a：title「Blade Runner 2049」、Album＋Soundtrack、first-release-date 2017-10-05、artist-credit「Hans Zimmer & Benjamin Wallfisch」。證據：https://musicbrainz.org/release-group/22c73225-8a2e-4e92-a00e-68960dc1ff4a https://coverartarchive.org/release-group/22c73225-8a2e-4e92-a00e-68960dc1ff4a/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/22c73225-8a2e-4e92-a00e-68960dc1ff4a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 3884,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 3884）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：大片配樂、國際正常流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "接手的兩人，搬回 Vangelis 用過的 CS-80。《Blade Runner 2049》的配樂由 Hans Zimmer 與 Benjamin Wallfisch 接手，兩人到 2017 年 7 月才加入。原本這份工作屬於 Jóhann Jóhannsson，導演想走不同的方向，雙方因此結束合作。那台 Yamaha 合成器，正是當年原版配樂用的同一台，Zimmer 看完片後也替配樂定了調：這次不走管弦樂。Epic 唱片 2017 年將它發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Blade_Runner_2049_(soundtrack)",
+     "https://en.wikipedia.org/wiki/Blade_Runner_2049",
+     "https://musicbrainz.org/release-group/22c73225-8a2e-4e92-a00e-68960dc1ff4a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/63/12/a36312ec-dc5d-26f2-e9d3-3c14a594eec0/mzaf_15506058218403247384.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1291056782",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1291056782「Hans Zimmer & Benjamin Wallfisch《Blade Runner 2049 (Original Motion Picture Soundtrack)》」：曲目 24/24 對上 MB 原盤（Apple 共 24 軌），取第 1 軌〈2049〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mark Korven",
+   "album": "The Witch",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7a1f8f60-ab40-4e64-ace4-fc30a4c97b9a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖片原聲（不和諧弦樂、drone、噪聲）：《The Witch》的不和諧弦樂與女聲合唱音塊（加 waterphone、nyckelharpa），近年民俗恐怖片最被模仿的配樂，酸冷駭人｜⚠ 純原聲樂器，y 可能被打低至 0.8–1.0｜MB release-group 7a1f8f60-ab40-4e64-ace4-fc30a4c97b9a：title「The Witch」、Album＋Soundtrack、first-release-date 2016-03-04、artist-credit「Mark Korven」。證據：https://musicbrainz.org/release-group/7a1f8f60-ab40-4e64-ace4-fc30a4c97b9a https://coverartarchive.org/release-group/7a1f8f60-ab40-4e64-ace4-fc30a4c97b9a/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7a1f8f60-ab40-4e64-ace4-fc30a4c97b9a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 527,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 527）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "第一次碰面，導演就立下規矩：不要電子聲，也不要傳統旋律。生於薩克其萬省的 Mark Korven 是加拿大作曲家，被 Robert Eggers 找去，替他第一部長片《The Witch》譜曲。Eggers 想找古老、由人親手做出聲音的樂器。Korven 的主力是 nyckelharpa，他稱之為十五世紀的按鍵小提琴，演奏時按鍵會喀答作響。合唱交給多倫多的 The Element Choir，他一個音符都沒替他們寫。2016 年，Milan 發行了這張配樂。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/0a4d62c2-eca7-4f47-915e-c530bfe6d01f",
+     "https://en.wikipedia.org/wiki/Mark_Korven",
+     "https://thefilmstage.com/composer-mark-korven-discusses-crafting-the-unsettling-sounds-of-the-witch/",
+     "https://factmag.com/2016/02/16/stream-the-witch-score-mark-koven-interview",
+     "https://en.wikipedia.org/wiki/The_Witch_(2015_film)",
+     "https://musicbrainz.org/release-group/7a1f8f60-ab40-4e64-ace4-fc30a4c97b9a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ce/0c/01/ce0c0137-b8f1-7fbb-5723-afe7e342ac47/mzaf_17473537485554940014.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1507014668",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1507014668「Mark Korven《The Witch (Original Motion Picture Soundtrack)》」：曲目 14/16 對上 MB 原盤（Apple 共 16 軌），取第 1 軌〈What Went We〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lustmord",
+   "album": "First Reformed: Extended Motion Picture Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e852ead2-887b-41be-8370-42d47827b692",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代暗色電影配樂（Villeneuve／冰島幫／A24 周邊的 drone 式配樂）：Lustmord 為 Paul Schrader《First Reformed》做的配樂，純 dark ambient 低頻雷鳴與深淵殘響，無拍、厚、冷｜⚠ MB 只有 2019 Extended 版 release-group，年份照 MB 首發 2019｜MB release-group e852ead2-887b-41be-8370-42d47827b692：title「First Reformed: Extended Motion Picture Soundtrack」、Album＋Soundtrack、first-release-date 2019-01-15、artist-credit「Lustmord」。證據：https://musicbrainz.org/release-group/e852ead2-887b-41be-8370-42d47827b692 https://coverartarchive.org/release-group/e852ead2-887b-41be-8370-42d47827b692/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e852ead2-887b-41be-8370-42d47827b692/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "全盤八首，沒有一首短於四分鐘。Lustmord 是威爾斯音樂人 Brian Williams 的藝名，他在倫敦蘭貝斯的占屋裡結識 Throbbing Gristle 的成員，在他們鼓勵下開始做自己的音樂。他後來被視為 dark ambient 的開路者。《First Reformed》是 Paul Schrader 2017 年執導的電影，由 Lustmord 配樂。加長的版本 2019 年 1 月 15 日上線，只有數位形式，長度在 51 分鐘出頭。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Lustmord",
+     "https://filmmusicreporter.com/2019/01/21/first-reformed-soundtrack-released/",
+     "https://musicbrainz.org/release/2578b919-9747-409f-a2fc-63cd47f187b7",
+     "https://www.discogs.com/master/1492730",
+     "https://warped-perspective.com/?p=51753",
+     "https://theplaylist.net/paul-schraders-first-reformed-review-20170831/",
+     "https://musicbrainz.org/release-group/e852ead2-887b-41be-8370-42d47827b692"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b4/71/15/b4711563-7325-9ec0-2a54-42235c0e3831/mzaf_12024879369624233111.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1450117483",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1450117483「Lustmord《First Reformed (Extended Motion Picture Soundtrack)》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Revelation〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Brian Reitzell",
+   "album": "Hannibal: Season 1, Volume 1",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f1a6217f-b731-43ac-8283-3b500a0944bc",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗色影集配樂（Twin Peaks／Hannibal／Dark）：影集《Hannibal》配樂，Reitzell 用金屬刮擦、低頻 drone 與工業質地取代傳統配樂，陰森冷硬｜策展無疑點｜MB release-group f1a6217f-b731-43ac-8283-3b500a0944bc：title「Hannibal: Season 1, Volume 1」、Album＋Soundtrack、first-release-date 2014-08-05、artist-credit「Brian Reitzell」。證據：https://musicbrainz.org/release-group/f1a6217f-b731-43ac-8283-3b500a0944bc https://coverartarchive.org/release-group/f1a6217f-b731-43ac-8283-3b500a0944bc/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f1a6217f-b731-43ac-8283-3b500a0944bc/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 44,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 44）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "每集只看一遍，他邊看邊拿樂器當場回應。替 Sofia Coppola 的電影操刀過音樂的 Brian Reitzell 本行是鼓手，在影集《Hannibal》擔任音樂監製兼作曲。他不讀劇本，全靠現場演奏，一集 43 分鐘的片長裡，可能有約 40 分鐘是配樂。第一季卷一的七首曲子照法式餐點的上菜順序命名，從長達 13 分 52 秒的〈Apéritif〉一路排到〈Sorbet〉。Lakeshore 2014 年替這一卷出版。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Brian_Reitzell",
+     "https://musicbrainz.org/release/7702a734-75ba-4106-81cf-c56dbfddc7e0",
+     "https://daily.redbullmusicacademy.com/2014/05/brian-reitzell-interview",
+     "https://tapeop.com/interviews/107/brian-reitzell",
+     "https://99percentinvisible.org/episode/all-in-your-head/",
+     "https://www.discogs.com/master/760226",
+     "https://musicbrainz.org/release-group/f1a6217f-b731-43ac-8283-3b500a0944bc"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music4/v4/ee/75/85/ee7585b2-5972-4145-7294-aa3c67983ad8/mzaf_9181113460787098391.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "901606314",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 901606314「Brian Reitzell《Hannibal Season 1, Vol. 1 (Original Television Soundtrack)》」：曲目 7/7 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Apéritif〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Brian Reitzell",
+   "album": "Hannibal: Season 2, Volume 1",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0d9b31f3-3603-4607-b237-e1517416fdd8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗色影集配樂（Twin Peaks／Hannibal／Dark）：《Hannibal》第二季第一卷，聲音更暗更厚，日式太鼓悶擊與工業 drone 交疊｜⚠ 同系列第三張，主線可擇一汰換｜MB release-group 0d9b31f3-3603-4607-b237-e1517416fdd8：title「Hannibal: Season 2, Volume 1」、Album＋Soundtrack、first-release-date 2014-08-19、artist-credit「Brian Reitzell」。證據：https://musicbrainz.org/release-group/0d9b31f3-3603-4607-b237-e1517416fdd8 https://coverartarchive.org/release-group/0d9b31f3-3603-4607-b237-e1517416fdd8/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0d9b31f3-3603-4607-b237-e1517416fdd8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 25,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 25）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一部武滿徹紀錄片，讓他訂做了一面 30 磅的銅鼓。這是影集《Hannibal》音樂監製 Brian Reitzell 為第二季做的配樂，這一季的七首改以懷石料理的菜序為名，由〈Kaiseki〉排到〈Yakimono〉。Reitzell 說這讓他得以探索自己對日本電影與音樂的喜愛，點名的影響有武滿徹、小津安二郎與勅使河原宏。那面銅製裂縫鼓擱在一面 40 吋大鼓上共鳴，是漢尼拔這個角色的主要聲音之一。第二季卷一 2014 年 8 月 19 日出版。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Brian_Reitzell",
+     "https://musicbrainz.org/release/f06d14c1-a733-4c86-ac6c-8c22b96c2a1d",
+     "https://daily.redbullmusicacademy.com/2014/05/brian-reitzell-interview",
+     "https://www.discogs.com/master/736721",
+     "https://musicbrainz.org/release-group/0d9b31f3-3603-4607-b237-e1517416fdd8"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0e/45/5f/0e455f33-ce90-737c-2ef2-6772e12d0518/mzaf_7907812183063603445.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "906227711",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 906227711「Brian Reitzell《Hannibal Season 2, Vol. 1 (Original Television Soundtrack)》」：曲目 6/7 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Kaiseki〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Akira Yamaoka",
+   "album": "SILENT HILL 4 –THE ROOM– ORIGINAL SOUNDTRACKS",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7073bc5c-6b03-3527-9164-0f34c3a5726e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖遊戲配樂（Silent Hill 系、Amnesia、dark ambient 遊戲）：山岡晃《Silent Hill 4: The Room》，延續系列的工業噪聲、慢 trip-hop 與鐵鏽質地，池中 SH1–3 皆落頹靡｜⚠ 有慢拍與幾首歌曲；同系列前三作均 x≤2.5；MB 掛名全大寫 AKIRA YAMAOKA，照池中先例寫 Akira Yamaoka；MB 最早 release 為俄國雜誌附贈盤，label 改取 Konami 原盤｜MB release-group 7073bc5c-6b03-3527-9164-0f34c3a5726e：title「SILENT HILL 4 –THE ROOM– ORIGINAL SOUNDTRACKS」、Album＋Soundtrack、first-release-date 2004-06-17、artist-credit「AKIRA YAMAOKA」。證據：https://musicbrainz.org/release-group/7073bc5c-6b03-3527-9164-0f34c3a5726e https://coverartarchive.org/release-group/7073bc5c-6b03-3527-9164-0f34c3a5726e/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2004,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7073bc5c-6b03-3527-9164-0f34c3a5726e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 232,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 232）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "日版多附一張光碟：他的音樂配上日本老故事的朗讀。山岡晃身兼恐怖系列《Silent Hill》遊戲的作曲與音效總監，系列第四作《Silent Hill 4: The Room》2004 年 6 月 17 日在日本發售。日版原聲帶共兩張 CD，曲名借用雅樂十二律式的日文名，像〈壱越〉〈平調〉。第一張把歌曲與器樂混排在一起，其中〈Your Rain〉的混音版，後來收進了《Dance Dance Revolution Extreme》。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Silent_Hill_4:_The_Room",
+     "https://musicbrainz.org/release/d2021e5d-cca4-496e-9638-9eba23ba12ba",
+     "https://www.discogs.com/master/126204",
+     "https://en.wikipedia.org/wiki/Silent_Hill_(series)",
+     "https://musicbrainz.org/release-group/7073bc5c-6b03-3527-9164-0f34c3a5726e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d2/c3/fd/d2c3fd89-87fb-2746-22e1-009feb6159a0/mzaf_15411700121381224192.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "528471384",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 528471384「Akira Yamaoka《Silent Hill 4 - The Room (Original Soundtrack)》」：主線人工配對：Apple 22 軌單碟版，曲目 21 首對上 MB 原盤（MB 版另含特典碟），取第 1 軌〈Tender Sugar〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Akira Yamaoka",
+   "album": "Silent Hill: Homecoming (Soundtrack)",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "86bbc702-c851-3a01-9b63-b1f008c28176",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖遊戲配樂（Silent Hill 系、Amnesia、dark ambient 遊戲）：山岡晃《Silent Hill: Homecoming》，工業 ambient 與噪聲墊為主，夾幾首慢歌，冷而鏽｜⚠ 含 Mary Elizabeth McGlynn 演唱的歌曲，y 可能偏低｜MB release-group 86bbc702-c851-3a01-9b63-b1f008c28176：title「Silent Hill: Homecoming (Soundtrack)」、Album＋Soundtrack、first-release-date 2008-10-07、artist-credit「Akira Yamaoka」。證據：https://musicbrainz.org/release-group/86bbc702-c851-3a01-9b63-b1f008c28176 https://coverartarchive.org/release-group/86bbc702-c851-3a01-9b63-b1f008c28176/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/86bbc702-c851-3a01-9b63-b1f008c28176/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 41,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 41）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "他堅持要找回那位歌迷愛聽的女聲。從 1999 年起替恐怖遊戲《Silent Hill》系列配樂的山岡晃，為第六作《Silent Hill: Homecoming》寫了約 70 分鐘音樂。那位歌手是 Mary Elizabeth McGlynn，她在前作的演唱獲得歌迷好評，這回在本作唱了四首。這款也是系列第一款採用環繞聲的作品。Konami 2008 年 11 月 24 日推出原聲帶，一共 21 首。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Silent_Hill:_Homecoming",
+     "https://musicbrainz.org/release/75b40bb7-0256-44fa-b8cc-7ffcd0bfed42",
+     "https://musicbrainz.org/release-group/86bbc702-c851-3a01-9b63-b1f008c28176",
+     "https://www.discogs.com/master/1042301",
+     "https://en.wikipedia.org/wiki/Silent_Hill_(series)"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "Apple us 搜尋只有翻奏與他人單曲，無 Konami 官方原聲條目。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Akira Yamaoka",
+   "album": "SILENT HILL 2 Original Game Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0512b548-54ff-48fe-b662-923a347ca68c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖遊戲配樂（Silent Hill 系、Amnesia、dark ambient 遊戲）：《Silent Hill 2》2024 重製版原聲，山岡晃重做的霧狀工業 drone 與噪聲質地，比原作更厚｜⚠ 與池中 2001《SILENT HILL 2 ORIGINAL SOUNDTRACKS》為不同作品（重製新錄）；MB 掛名全大寫 AKIRA YAMAOKA，照池中先例寫 Akira Yamaoka｜MB release-group 0512b548-54ff-48fe-b662-923a347ca68c：title「SILENT HILL 2 Original Game Soundtrack」、Album＋Soundtrack、first-release-date 2024-10-08、artist-credit「AKIRA YAMAOKA」。證據：https://musicbrainz.org/release-group/0512b548-54ff-48fe-b662-923a347ca68c https://coverartarchive.org/release-group/0512b548-54ff-48fe-b662-923a347ca68c/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0512b548-54ff-48fe-b662-923a347ca68c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 83,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 83）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "重製《Silent Hill 2》時，山岡晃又回來寫曲。這款以恐怖為主軸的遊戲，原作在 2001 年推出，2024 年的重製版改由波蘭的 Bloober Team 開發。數位版只收 10 首，篇幅約 32 分鐘，最長的一首是 5 分 13 秒的〈Laura Plays the Piano (2024)〉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Silent_Hill_2_(2024_video_game)",
+     "https://musicbrainz.org/release/23da0ddf-4104-47cf-b288-c5835fbf3b08",
+     "https://en.wikipedia.org/wiki/Silent_Hill_(series)",
+     "https://musicbrainz.org/release-group/0512b548-54ff-48fe-b662-923a347ca68c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ce/97/90/ce97908a-85db-9eca-40e0-fc108afeeef9/mzaf_10269910656911091846.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "6795853099",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 6795853099「Akira Yamaoka《SILENT HILL 2 ORIGINAL SOUNDTRACK -2024-》」：曲目 8/10 對上 MB 原盤（Apple 共 93 軌），取第 1 軌〈Theme Of Laura II〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mikko Tarmia",
+   "album": "Amnesia: The Dark Descent",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "01177fc6-2c24-452b-84a2-3fe836b2d94f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖遊戲配樂（Silent Hill 系、Amnesia、dark ambient 遊戲）：Mikko Tarmia《Amnesia: The Dark Descent》，以 dark ambient 墊與低頻弦樂構成的第一人稱恐怖經典｜策展無疑點｜MB release-group 01177fc6-2c24-452b-84a2-3fe836b2d94f：title「Amnesia: The Dark Descent」、Album＋Soundtrack、first-release-date 2011-05-17、artist-credit「Mikko Tarmia」。證據：https://musicbrainz.org/release-group/01177fc6-2c24-452b-84a2-3fe836b2d94f https://coverartarchive.org/release-group/01177fc6-2c24-452b-84a2-3fe836b2d94f/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/aa/fa/04/aafa042c-7f93-3d7d-e7c5-0e531fd3ba58/0859711133503.png/600x600bb.jpg",
+    "note": "CAA release-group front 與 release 500 縮圖 live-check 連續 500；取已釘定試聽的 Apple 1501860159 官方圖，主線 2026-10-23 目視與盤名相符。",
+    "appleCollectionId": "1501860159",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 2207,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2207）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一款只能逃跑躲藏的遊戲，配上十九段短曲。芬蘭電玩配樂家 Mikko Tarmia 透過《Penumbra》系列與 Frictional Games 合作，2010 年發售的《Amnesia: The Dark Descent》同樣由他配樂。這款遊戲拿下 2011 年獨立遊戲節的卓越音效獎。原聲帶隔年由他自己創辦的廠牌 The Sound of Fiction 發行，總共約 34 分鐘。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mikko_Tarmia",
+     "https://en.wikipedia.org/wiki/Amnesia:_The_Dark_Descent",
+     "https://musicbrainz.org/release/0bce60a9-f385-4774-b5de-50927ac4dd72",
+     "https://www.discogs.com/master/1713943",
+     "https://musicbrainz.org/release-group/01177fc6-2c24-452b-84a2-3fe836b2d94f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/54/8b/14548bf9-72a5-0369-c5d7-53b140a6c322/mzaf_13514706303029363390.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1501860159",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1501860159「Mikko Tarmia《Amnesia: The Dark Descent (Original Game Soundtrack)》」：曲目 19/19 對上 MB 原盤（Apple 共 19 軌），取第 1 軌〈Menu Theme〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Brian Reitzell",
+   "album": "Hannibal: Season 1, Volume 2",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "45ddfa40-c9b2-4f09-a9a2-d11d231666c8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗色影集配樂（Twin Peaks／Hannibal／Dark）：《Hannibal》第一季第二卷，延續金屬噪聲與低頻 drone 的聲音設計式配樂｜策展無疑點｜MB release-group 45ddfa40-c9b2-4f09-a9a2-d11d231666c8：title「Hannibal: Season 1, Volume 2」、Album＋Soundtrack、first-release-date 2014-08-05、artist-credit「Brian Reitzell」。證據：https://musicbrainz.org/release-group/45ddfa40-c9b2-4f09-a9a2-d11d231666c8 https://coverartarchive.org/release-group/45ddfa40-c9b2-4f09-a9a2-d11d231666c8/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/45ddfa40-c9b2-4f09-a9a2-d11d231666c8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 38,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 38）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "把一集裡最有意思的聲音，串成近十七分鐘的一首。曾在 Redd Kross 打鼓的 Brian Reitzell，替影集《Hannibal》寫的第一季配樂分成兩卷，這是第二卷。每一首都是一集聲音的長篇拼貼，曲名用〈Fromage〉〈Rôti〉這類烹飪用語。那一首就是長約 16 分 51 秒的〈Rôti〉，重度的延遲效果讓它聽來像無數小生物在腳邊啃咬。三首超過 15 分鐘的長篇構成這一卷的主體。2014 年 8 月 5 日數位發行，黑膠則由 Invada 出成雙 LP。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/a62daaf6-162b-45d8-8ea6-4ad19f1c2b90",
+     "https://filmmusicreporter.com/2014/07/23/hannibal-season-1-soundtracks-details/",
+     "https://www.cyclicdefrost.com/2014/09/brian-reitzell-hannibal-ost-season-1-vol-2-lakeshore-records/",
+     "https://musicbrainz.org/release-group/45ddfa40-c9b2-4f09-a9a2-d11d231666c8"
+    ],
+    "note": "薄細項策展線卡牌版：研究（partial）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d5/a2/be/d5a2be14-be84-5bf0-1942-d9a9b433ec85/mzaf_7451620290398843855.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "901603823",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 901603823「Brian Reitzell《Hannibal Season 1, Vol. 2 (Original Television Soundtrack)》」：曲目 6/6 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Fromage〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mikko Tarmia",
+   "album": "SOMA",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d9e23175-ecc1-4bdb-8f30-99f23c0a7274",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖遊戲配樂（Silent Hill 系、Amnesia、dark ambient 遊戲）：Tarmia《SOMA》，深海機械設施的低頻 drone 與冷合成器墊，孤絕而冷｜策展無疑點｜MB release-group d9e23175-ecc1-4bdb-8f30-99f23c0a7274：title「SOMA」、Album＋Soundtrack、first-release-date 2015-10-25、artist-credit「Mikko Tarmia」。證據：https://musicbrainz.org/release-group/d9e23175-ecc1-4bdb-8f30-99f23c0a7274 https://coverartarchive.org/release-group/d9e23175-ecc1-4bdb-8f30-99f23c0a7274/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d9e23175-ecc1-4bdb-8f30-99f23c0a7274/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 662,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 662）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "被遊戲刪掉的幾首曲子，也收了進來。1978 年生於芬蘭 Mikkeli 的 Mikko Tarmia，為《SOMA》這款科幻與恐怖題材的遊戲作配樂，2015 年出版原聲。24 首曲子合計約 45 分鐘，曲目起於〈Soma Main Theme〉、止於〈Abyss〉，順著遊戲裡的設施往深海走。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/d9e23175-ecc1-4bdb-8f30-99f23c0a7274",
+     "https://en.wikipedia.org/wiki/Mikko_Tarmia",
+     "https://api.discogs.com/releases/9149769",
+     "https://musicbrainz.org/release/aadba4f1-d477-4dda-82ba-31f2ab0596a2",
+     "https://en.wikipedia.org/wiki/Soma_(video_game)"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0a/a6/73/0aa673ab-1fbd-9c08-faac-985f47949481/mzaf_4158864457391235222.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1504455699",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1504455699「Mikko Tarmia《Soma (Original Video Game Soundtrack)》」：曲目 24/24 對上 MB 原盤（Apple 共 24 軌），取第 1 軌〈Menu Music〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mikko Tarmia",
+   "album": "Amnesia: Rebirth (Original Game Soundtrack)",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "28f2980e-51fe-495c-8223-bc9149eec7d3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖遊戲配樂（Silent Hill 系、Amnesia、dark ambient 遊戲）：Tarmia《Amnesia: Rebirth》，比前作更厚的 drone 與低頻弦樂、噪聲質地｜策展無疑點｜MB release-group 28f2980e-51fe-495c-8223-bc9149eec7d3：title「Amnesia: Rebirth (Original Game Soundtrack)」、Album＋Soundtrack、first-release-date 2020-12-04、artist-credit「Mikko Tarmia」。證據：https://musicbrainz.org/release-group/28f2980e-51fe-495c-8223-bc9149eec7d3 https://coverartarchive.org/release-group/28f2980e-51fe-495c-8223-bc9149eec7d3/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/28f2980e-51fe-495c-8223-bc9149eec7d3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 2593,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2593）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "故事設在 1937 年阿爾及利亞的沙漠洞穴。《Amnesia: Rebirth》由《Penumbra》系列的作曲者 Mikko Tarmia 一人配樂，原聲 2020 年發行。主角在洞穴與遺跡之間流浪，開發者選沙漠，是要讓壯闊的景象和幽閉恐懼互相對照。曲名多半是場景，另有追逐用的〈Ghoul Chase〉，30 首曲子的總長約 58 分鐘。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/28f2980e-51fe-495c-8223-bc9149eec7d3",
+     "https://en.wikipedia.org/wiki/Amnesia:_Rebirth",
+     "https://en.wikipedia.org/wiki/Mikko_Tarmia",
+     "https://musicbrainz.org/release/a98a40b2-39e2-469a-9577-989228002b82"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/fd/28/44/fd2844c5-242e-3062-ff72-aaa3e1972e55/mzaf_13846462991016599662.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1542994373",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1542994373「Mikko Tarmia《Amnesia: Rebirth (Original Game Soundtrack)》」：曲目 28/30 對上 MB 原盤（Apple 共 30 軌），取第 1 軌〈Menu Theme〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Petri Alanko & Martin Stig Andersen",
+   "album": "Control: Original Game Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c8d11d44-6fac-41b9-9c83-aa28a420350c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖遊戲配樂（Silent Hill 系、Amnesia、dark ambient 遊戲）：Remedy《Control》原聲，Petri Alanko 與 Martin Stig Andersen 的工業 drone、失真低頻與官僚機構式冷感｜⚠ MB artist-credit 為 Petri Alanko & Martin Stig Andersen；戰鬥曲有脈衝｜MB release-group c8d11d44-6fac-41b9-9c83-aa28a420350c：title「Control: Original Game Soundtrack」、Album＋Soundtrack、first-release-date 2019-08-27、artist-credit「Petri Alanko & Martin Stig Andersen」。證據：https://musicbrainz.org/release-group/c8d11d44-6fac-41b9-9c83-aa28a420350c https://coverartarchive.org/release-group/c8d11d44-6fac-41b9-9c83-aa28a420350c/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c8d11d44-6fac-41b9-9c83-aa28a420350c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 23,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 23）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "為了錄一股敵對力量，他燒掉了一台鋼琴。遊戲《Control》由 Petri Alanko 與 Martin Stig Andersen 分工配樂，Alanko 寫主題與過場，Andersen 寫探索與戰鬥。那股力量叫 Hiss，Alanko 用能錄電磁輻射的麥克風錄下沉重木頭拖過地面的聲響，連同燒鋼琴的錄音一起處理成嘈雜的 droning 聲。Hiss 的六音符動機，則是把舊合唱錄音剝去音高做成。收 16 首的這套原聲，2019 年 8 月 27 日發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/c8d11d44-6fac-41b9-9c83-aa28a420350c",
+     "https://en.wikipedia.org/wiki/Control_(video_game)",
+     "https://musicbrainz.org/release/4a042f5c-0808-44e1-94af-2a7bb1dd6ea8",
+     "https://api.discogs.com/releases/15734609"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6d/69/35/6d6935e8-113f-b4e9-06c5-727ce79cbbdb/mzaf_5617486111387392408.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1745066604",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1745066604「Petri Alanko & Martin Stig Andersen《Control (Original Soundtrack)》」：曲目 16/16 對上 MB 原盤（Apple 共 16 軌），取第 1 軌〈Et Ratio Principalis〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "David García Díaz",
+   "album": "Hellblade: Senua’s Sacrifice",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c6a0ab26-2cae-4064-b061-4c326692cfdb",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖遊戲配樂（Silent Hill 系、Amnesia、dark ambient 遊戲）：《Hellblade: Senua's Sacrifice》配樂，David García Díaz 以低頻 drone、北歐人聲與悶擊描繪精神病的幻聽，陰冷｜⚠ 少數段落有悶擊｜MB release-group c6a0ab26-2cae-4064-b061-4c326692cfdb：title「Hellblade: Senua’s Sacrifice」、Album＋Soundtrack、first-release-date 2018-12-04、artist-credit「David García Díaz」。證據：https://musicbrainz.org/release-group/c6a0ab26-2cae-4064-b061-4c326692cfdb https://coverartarchive.org/release-group/c6a0ab26-2cae-4064-b061-4c326692cfdb/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c6a0ab26-2cae-4064-b061-4c326692cfdb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 14,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 14）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "主角耳邊的低語，是用雙耳錄音錄下的。《Hellblade: Senua's Sacrifice》專輯掛名的作曲者是 David García Díaz。遊戲以這種錄法收下 Furies 的聲音，讓低語帶有 3D 的位置感，遊戲音訊也獲頒 BAFTA 遊戲獎 Audio Achievement。專輯收 13 首，2018 年推出。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/c6a0ab26-2cae-4064-b061-4c326692cfdb",
+     "https://en.wikipedia.org/wiki/Andy_LaPlegua",
+     "https://en.wikipedia.org/wiki/Hellblade:_Senua%27s_Sacrifice",
+     "https://musicbrainz.org/release/b9e7c32c-589e-43e9-90ec-cdc0518884a2"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7b/17/27/7b172710-5486-81bc-10f9-1942db9515ce/mzaf_3359374317913705752.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1445069569",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1445069569「David Garcia《Hellblade: Senua's Sacrifice (Original Soundtrack)》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Helheim〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Aubrey Hodges",
+   "album": "Doom 64",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3c4a907e-b096-4a45-bbdb-8525df3bc13c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖遊戲配樂（Silent Hill 系、Amnesia、dark ambient 遊戲）：Aubrey Hodges《Doom 64》，與 id 系 metal 配樂完全相反的純 dark ambient，低頻、金屬殘響、地獄回聲｜⚠ 遊戲 1997，原聲專輯 2013 首發，年份照 MB｜MB release-group 3c4a907e-b096-4a45-bbdb-8525df3bc13c：title「Doom 64」、Album＋Soundtrack、first-release-date 2013-01-12、artist-credit「Aubrey Hodges」。證據：https://musicbrainz.org/release-group/3c4a907e-b096-4a45-bbdb-8525df3bc13c https://coverartarchive.org/release-group/3c4a907e-b096-4a45-bbdb-8525df3bc13c/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2013,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3c4a907e-b096-4a45-bbdb-8525df3bc13c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 96,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 96）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "整個遊戲只有約 1MB，留給音樂與音效的剩 800KB。Aubrey Hodges 兩年前才替 PlayStation 版《Doom》做過音樂，1997 年 Nintendo 64 的《Doom 64》又由他一人包辦音樂與音效。取樣率低到聲音出現混疊與雜訊，他把這些瑕疵當成反烏托邦的聲音。他刻意找的聲音無調、不和諧，讓沉重的低頻配上輕薄的高頻，強烈段落之間留約 30 秒安靜。這批曲子遲至 2013 年 1 月 12 日自行以 MP3 發行，總長大約 223 分鐘、27 首。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Doom_64",
+     "https://api.discogs.com/releases/7154337",
+     "https://musicbrainz.org/release-group/3c4a907e-b096-4a45-bbdb-8525df3bc13c",
+     "https://www.lacedrecords.co/blogs/blog/doom-64-composer-aubrey-hodges-has-been-to-hell-and-back",
+     "https://musicbrainz.org/release/97baee8d-7eca-4f3b-b588-2c221281bbe8"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b5/8f/08/b58f0825-afde-9688-bba8-4cf24652beb4/mzaf_4929243338815489036.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1505462710",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1505462710「Aubrey Hodges《Doom 64 (Original Video Game Soundtrack)》」：曲目 27/27 對上 MB 原盤（Apple 共 27 軌），取第 1 軌〈Doom 64 Main Theme〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Aethek & Lustmord",
+   "album": "Scorn: Original Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f3bf9a52-66ba-4525-bcbf-0583c90c8ba7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖遊戲配樂（Silent Hill 系、Amnesia、dark ambient 遊戲）：《Scorn》原聲，Aethek 與 Lustmord 合作的生物機械 dark ambient，低頻轟鳴與濕黏噪聲，Giger 式的冷｜⚠ MB artist-credit 為 Aethek & Lustmord；與池中 Lustmord 不撞名｜MB release-group f3bf9a52-66ba-4525-bcbf-0583c90c8ba7：title「Scorn: Original Soundtrack」、Album＋Soundtrack、first-release-date 2022-10-14、artist-credit「Aethek & Lustmord」。證據：https://musicbrainz.org/release-group/f3bf9a52-66ba-4525-bcbf-0583c90c8ba7 https://coverartarchive.org/release-group/f3bf9a52-66ba-4525-bcbf-0583c90c8ba7/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f3bf9a52-66ba-4525-bcbf-0583c90c8ba7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 84,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 84）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "地穴、洞窟、屠宰場，他挑錄音地點只看空間的聲響。與 Aethek 合署的 Lustmord，本名 Brian Williams，兩人一起為遊戲《Scorn》寫音樂，Aethek 則是 Adis Kutkut 的藝名。那些田野錄音裡的原聲音源，被 Lustmord 放進數位擴展的低頻轟鳴底下。17 首長度兩小時出頭，2022 年 10 月 14 日以 MP3 形式推出，出版的廠牌就是遊戲開發商 Ebb Software。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/f3bf9a52-66ba-4525-bcbf-0583c90c8ba7",
+     "https://api.discogs.com/releases/24923663",
+     "https://musicbrainz.org/release/e83ce707-a74d-4856-9afa-55745c470885",
+     "https://en.wikipedia.org/wiki/Lustmord",
+     "https://en.wikipedia.org/wiki/Scorn_(video_game)"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "Apple us 以藝人＋盤名搜尋無條目。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tobe Hooper and Wayne Bell",
+   "album": "The Texas Chain Saw Massacre (Original Motion Picture Score)",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e0f1638b-ac81-43aa-bd68-f6296be781b5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖片原聲（不和諧弦樂、drone、噪聲）：Tobe Hooper 與 Wayne Bell 為《德州電鋸殺人狂》做的具象噪聲配樂：金屬刮擦、動物骨頭敲擊與磁帶噪聲，無調、駭人｜⚠ 片 1974，配樂原盤 2024 首度單獨發行，年份照 MB｜MB release-group e0f1638b-ac81-43aa-bd68-f6296be781b5：title「The Texas Chain Saw Massacre (Original Motion Picture Score)」、Album＋Soundtrack、first-release-date 2024-12-11、artist-credit「Tobe Hooper and Wayne Bell」。證據：https://musicbrainz.org/release-group/e0f1638b-ac81-43aa-bd68-f6296be781b5 https://coverartarchive.org/release-group/e0f1638b-ac81-43aa-bd68-f6296be781b5/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e0f1638b-ac81-43aa-bd68-f6296be781b5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 1418,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1418）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一直被當成遺失的母帶，2023 年在奧斯汀現身。導演 Tobe Hooper 與 Wayne Bell 共同署名這份配樂，寫給 1974 年的電影《德州電鋸殺人狂》。幾十年來坊間只流傳從 VHS 抽出、混著對白的盜版。母帶由 Harry Ransom Center 保存，Bell 親自編排混音，把它整理成能聽的專輯。聲音來自吊鑔、鋁製平底鍋、兒童玩具打擊組、野生動物叫聲與哨子。2024 年 Waxwork 首度正式推出，14 首曲目，全部約 40 分鐘。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Texas_Chain_Saw_Massacre",
+     "https://waxworkrecords.com/products/the-texas-chain-saw-massacre-cd",
+     "https://api.discogs.com/releases/32563440",
+     "https://musicbrainz.org/release/26309600-6fe9-4572-b5a1-138246278595",
+     "https://bloody-disgusting.com/music/3964237/waxwork-records-releases-first-picture-disc-with-the-texas-chain-saw-massacre-original-motion-picture-score/",
+     "https://musicbrainz.org/release-group/e0f1638b-ac81-43aa-bd68-f6296be781b5"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/82/a2/2a/82a22a2c-b2d1-0c6a-a0a9-9e04fcc5160e/mzaf_3942217009930628849.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1784195680",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1784195680「Tobe Hooper & Wayne Bell《The Texas Chain Saw Massacre (Original Motion Picture Score)》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Main Title〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ben Frost",
+   "album": "Dark: Cycle 1 (original music from the Netflix series)",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3ae01fc5-869b-4867-bc1a-648f4bea964e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗色影集配樂（Twin Peaks／Hannibal／Dark）：Ben Frost 為 Netflix《Dark》寫的配樂第一卷，低頻嗡鳴與顆粒噪聲 drone，冷而壓迫｜策展無疑點｜MB release-group 3ae01fc5-869b-4867-bc1a-648f4bea964e：title「Dark: Cycle 1 (original music from the Netflix series)」、Album＋Soundtrack、first-release-date 2019-06-28、artist-credit「Ben Frost」。證據：https://musicbrainz.org/release-group/3ae01fc5-869b-4867-bc1a-648f4bea964e https://coverartarchive.org/release-group/3ae01fc5-869b-4867-bc1a-648f4bea964e/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3ae01fc5-869b-4867-bc1a-648f4bea964e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 14999,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 14999）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "每首曲名都是一句劇中的德文台詞。Ben Frost 的創作以極簡、器樂、實驗為主，Netflix 德國影集《Dark》三季的配樂全出自他手，這是第一卷。全卷 12 首，例子有〈Alles ist miteinander verbunden〉（一切都互相連結）與〈Kein DeLorean〉。曲風被歸為 dark ambient、管弦與極簡三類。這一卷在 2019 年 6 月 28 日問世，由 Invada 發行，全長 40 分 50 秒。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Dark_(TV_series)",
+     "https://en.wikipedia.org/wiki/Ben_Frost",
+     "https://musicbrainz.org/release/574956de-2c17-4562-9eb6-5f227d0bc9d7",
+     "https://musicbrainz.org/release-group/3ae01fc5-869b-4867-bc1a-648f4bea964e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ad/a0/8a/ada08a07-0aef-88ac-acdf-71c91f00d1b5/mzaf_2313068208276540370.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1468966806",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1468966806「Ben Frost《Dark: Cycle 1 (Original Music From The Netflix Series)》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Alles ist miteinander verbunden〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jason Graves",
+   "album": "Dead Space: Original Videogame Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "48f0aed8-eff6-4c55-9e84-8af6eed8224e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖遊戲配樂（Silent Hill 系、Amnesia、dark ambient 遊戲）：Jason Graves《Dead Space》，偶然性弦樂與不和諧音群構成的太空恐怖，近代恐怖遊戲配樂的標竿，酸冷｜⚠ 純管弦，y 估 1.1 有風險；突刺音不算推力｜MB release-group 48f0aed8-eff6-4c55-9e84-8af6eed8224e：title「Dead Space: Original Videogame Soundtrack」、Album＋Soundtrack、first-release-date 2008-11-01、artist-credit「Jason Graves」。證據：https://musicbrainz.org/release-group/48f0aed8-eff6-4c55-9e84-8af6eed8224e https://coverartarchive.org/release-group/48f0aed8-eff6-4c55-9e84-8af6eed8224e/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/48f0aed8-eff6-4c55-9e84-8af6eed8224e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 96,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 96）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "部分弦樂與銅管，讓樂手自己決定要奏哪個音。Jason Graves 替太空恐怖遊戲《Dead Space》作曲，開發團隊向他要的是黑暗、帶偶然性的音樂。Graves 的目標是讓聲響盡量脫離音樂的模樣，只有 Nicole Brennan 的主題用了較傳統的和弦。錄好的聲部被編成四層，隨遊戲情境疊加或抽離。EA 自家平台 2008 年 11 月 1 日先上架，隔年它在 BAFTA 遊戲獎拿下 Original Score 一項。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Music_of_the_Dead_Space_series",
+     "https://musicbrainz.org/release/c082ffee-7964-4a2a-9e2a-e836a35b3630",
+     "https://musicbrainz.org/release-group/48f0aed8-eff6-4c55-9e84-8af6eed8224e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/c9/b6/15/c9b615bb-ec95-854f-5c86-57dfe042c18a/mzaf_13794737599938386637.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1477648521",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1477648521「Jason Graves & EA Games Soundtrack《Dead Space (Original Soundtrack)》」：主線人工配對：Apple「Dead Space (Original Soundtrack)」17 軌，為 EA 官方原聲，取第 1 軌〈Dead Space Theme〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ben Frost",
+   "album": "Dark: Cycle 2 (original music from the Netflix series)",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6f29eac3-2a12-44a4-8832-4b1c3b3fb51a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗色影集配樂（Twin Peaks／Hannibal／Dark）：《Dark》配樂第二卷，延續低頻嗡鳴與噪聲 drone｜策展無疑點｜MB release-group 6f29eac3-2a12-44a4-8832-4b1c3b3fb51a：title「Dark: Cycle 2 (original music from the Netflix series)」、Album＋Soundtrack、first-release-date 2019-08-16、artist-credit「Ben Frost」。證據：https://musicbrainz.org/release-group/6f29eac3-2a12-44a4-8832-4b1c3b3fb51a https://coverartarchive.org/release-group/6f29eac3-2a12-44a4-8832-4b1c3b3fb51a/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6f29eac3-2a12-44a4-8832-4b1c3b3fb51a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 5680,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 5680）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "從古典極簡一路聽到黑金屬的人，寫了《Dark》第二季。Ben Frost 為 Netflix 這部影集的第二季寫了這一卷，他的影響在那兩端之間還夾著龐克。數位版 2019 年 8 月 16 日開賣，13 首、46 分鐘左右；同年 11 月，Invada 與 Lakeshore 再聯名推出 CD 與黑膠。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/6f29eac3-2a12-44a4-8832-4b1c3b3fb51a",
+     "https://en.wikipedia.org/wiki/Ben_Frost",
+     "https://en.wikipedia.org/wiki/Dark_(TV_series)"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/e9/a7/a1/e9a7a1d8-ab82-a994-d83f-cf3c1aa9deaa/mzaf_16277140936247535828.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1476103594",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1476103594「Ben Frost《Dark: Cycle 2 (Original Music from the Netflix Series)》」：曲目 12/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Schwarze Materie〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ben Frost",
+   "album": "Fortitude",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f63c3520-2c1f-4ca3-8a79-eb38fdb3be0c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗色影集配樂（Twin Peaks／Hannibal／Dark）：Ben Frost 為北極驚悚影集《Fortitude》寫的配樂，極地式的低頻 drone 與噪聲，冰冷｜⚠ 2015 另有 Broadcast 類型同名 RG，取 2017 Album｜MB release-group f63c3520-2c1f-4ca3-8a79-eb38fdb3be0c：title「Fortitude」、Album＋Soundtrack、first-release-date 2017-03-16、artist-credit「Ben Frost」。證據：https://musicbrainz.org/release-group/f63c3520-2c1f-4ca3-8a79-eb38fdb3be0c https://coverartarchive.org/release-group/f63c3520-2c1f-4ca3-8a79-eb38fdb3be0c/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f63c3520-2c1f-4ca3-8a79-eb38fdb3be0c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 73,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 73）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：影集配樂、發行有限"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "北極圈的虛構小鎮，在冰島 Reyðarfjörður 取景。配樂由 2005 年起住在雷克雅維克的 Ben Frost 寫，影集是英國的犯罪劇《Fortitude》。故事背景設在 Svalbard，另有部分場景在倫敦拍。唱片於 2017 年 3 月 16 日透過 Mute 發行，40 首、70 分鐘上下，當中一首就叫〈Reyðarfjörður〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/f63c3520-2c1f-4ca3-8a79-eb38fdb3be0c",
+     "https://en.wikipedia.org/wiki/Fortitude_(TV_series)",
+     "https://en.wikipedia.org/wiki/Ben_Frost"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/8f/5f/42/8f5f4257-a1b0-8f43-bc98-561822feba0f/mzaf_2448676847017494782.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1208516582",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1208516582「Ben Frost《Music From Fortitude》」：曲目 39/40 對上 MB 原盤（Apple 共 40 軌），取第 1 軌〈This is Not Christmas〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jed Kurzel",
+   "album": "Snowtown",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "001ac5d9-ccda-49e3-b66d-cfe57976c6b2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖片原聲（不和諧弦樂、drone、噪聲）：Jed Kurzel 為真實連環殺人片《Snowtown》做的 drone 配樂，低頻與失真吉他墊，冷而壓迫｜策展無疑點｜MB release-group 001ac5d9-ccda-49e3-b66d-cfe57976c6b2：title「Snowtown」、Album＋Soundtrack、first-release-date 2011-05-19、artist-credit「Jed Kurzel」。證據：https://musicbrainz.org/release-group/001ac5d9-ccda-49e3-b66d-cfe57976c6b2 https://coverartarchive.org/release-group/001ac5d9-ccda-49e3-b66d-cfe57976c6b2/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/001ac5d9-ccda-49e3-b66d-cfe57976c6b2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 860,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 860）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "藍調搖滾二人團的吉他手，替哥哥的首部長片配樂。Jed Kurzel 2001 年在雪梨組了 The Mess Hall，哥哥是導演 Justin Kurzel，這部《Snowtown》改編自 Snowtown 連環殺人案。Jed 的配樂拿下 2011 年 APRA-AGSC 的年度長片配樂。專輯的 14 首合計 41 分鐘，其中三首以〈Tape〉為名。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/001ac5d9-ccda-49e3-b66d-cfe57976c6b2",
+     "https://en.wikipedia.org/wiki/Snowtown_(film)",
+     "https://en.wikipedia.org/wiki/Jed_Kurzel",
+     "https://en.wikipedia.org/wiki/Macbeth_(2015_film)"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/33/2a/ef/332aef09-90ba-c7b1-544e-039c3032321b/mzaf_1213293460327665720.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1641101308",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1641101308「Jed Kurzel《Snowtown》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈The Dream〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jed Kurzel",
+   "album": "Macbeth: Original Motion Picture Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3175fed9-5252-489b-acd4-305c6f00b700",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代暗色電影配樂（Villeneuve／冰島幫／A24 周邊的 drone 式配樂）：Kurzel《Macbeth》配樂，低音弦樂 drone 與悶擊、蘇格蘭荒原式的陰冷｜⚠ 有幾段戰場悶鼓｜MB release-group 3175fed9-5252-489b-acd4-305c6f00b700：title「Macbeth: Original Motion Picture Soundtrack」、Album＋Soundtrack、first-release-date 2015-12-04、artist-credit「Jed Kurzel」。證據：https://musicbrainz.org/release-group/3175fed9-5252-489b-acd4-305c6f00b700 https://coverartarchive.org/release-group/3175fed9-5252-489b-acd4-305c6f00b700/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3175fed9-5252-489b-acd4-305c6f00b700/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 38,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 38）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "零下 10 度的 Skye 島上，冰雹得靠工業風扇吹開。配樂出自導演的弟弟 Jed Kurzel，導演 Justin Kurzel 把馬克白拍成受創後壓力症候群的人，還在開頭加了一段夫婦埋葬孩子的序幕。電影 2014 年 2 月開拍。Decca Classics 的專輯 2015 年 12 月 4 日首發，19 首、一小時出頭。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/3175fed9-5252-489b-acd4-305c6f00b700",
+     "https://en.wikipedia.org/wiki/Macbeth_(2015_film)",
+     "https://en.wikipedia.org/wiki/Jed_Kurzel"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/42/73/6c/42736c7a-95be-c28e-bf1b-ba072eb8de3e/mzaf_17823122318803619417.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1442849211",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1442849211「Jed Kurzel《Macbeth (Original Motion Picture Soundtrack)》」：曲目 17/19 對上 MB 原盤（Apple 共 19 軌），取第 1 軌〈The Child, Pt. 1 (From \"Macbeth\" Soundtrack)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tim Hecker",
+   "album": "Infinity Pool (Original Motion Picture Soundtrack)",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c9c4c8c6-c41e-4977-acf2-49a327a2604a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代暗色電影配樂（Villeneuve／冰島幫／A24 周邊的 drone 式配樂）：Tim Hecker 為 Cronenberg 之子《Infinity Pool》做的配樂，比《The North Water》更刺耳的失真墊與噪聲顆粒｜策展無疑點｜MB release-group c9c4c8c6-c41e-4977-acf2-49a327a2604a：title「Infinity Pool (Original Motion Picture Soundtrack)」、Album＋Soundtrack、first-release-date 2023-01-27、artist-credit「Tim Hecker」。證據：https://musicbrainz.org/release-group/c9c4c8c6-c41e-4977-acf2-49a327a2604a https://coverartarchive.org/release-group/c9c4c8c6-c41e-4977-acf2-49a327a2604a/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c9c4c8c6-c41e-4977-acf2-49a327a2604a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 14894,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/4/4（Last.fm listeners 14894）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "地中海的蟬鳴，被 Tim Hecker 處理成班鳩般的音色。1974 年生於溫哥華的加拿大電子音樂家，替 Brandon Cronenberg 的《Infinity Pool》配樂，電影 2023 年在 Sundance 首映。他和導演一起做出人聲與合成器的混種音色，既復古、又像反烏托邦的未來。開場在海灘畫面下刮擦、啃咬；黑膠 A 面配著緩慢穩定的拍子，B 面由〈Home Invasion〉帶出部落感的節奏。Milan Records 發行，22 首將近一小時。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/c9c4c8c6-c41e-4977-acf2-49a327a2604a",
+     "https://www.milanrecords.com/release/infinity-pool",
+     "https://en.wikipedia.org/wiki/Infinity_Pool_(film)",
+     "https://thefilmscorer.com/infinity-pool-tim-hecker-2023-score-review/",
+     "https://spidey.kfjc.org/51469/hecker-tim-infinity-pool-milan/",
+     "https://en.wikipedia.org/wiki/Tim_Hecker"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/82/dd/c7/82ddc75b-435a-9c41-b0dd-1840bbc874ca/mzaf_1243984608127484361.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1665303621",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1665303621「Tim Hecker《Infinity Pool (Original Motion Picture Soundtrack)》」：曲目 22/22 對上 MB 原盤（Apple 共 22 軌），取第 1 軌〈Spiral Walk〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Christopher Young",
+   "album": "Sinister: Original Motion Picture Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a02f5c92-702a-480d-a081-3fa1e099fa2c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖片原聲（不和諧弦樂、drone、噪聲）：Christopher Young《Sinister》配樂，放棄管弦改用 dark ambient 與噪聲、扭曲人聲，陰森｜策展無疑點｜MB release-group a02f5c92-702a-480d-a081-3fa1e099fa2c：title「Sinister: Original Motion Picture Soundtrack」、Album＋Soundtrack、first-release-date 2012-10-30、artist-credit「Christopher Young」。證據：https://musicbrainz.org/release-group/a02f5c92-702a-480d-a081-3fa1e099fa2c https://coverartarchive.org/release-group/a02f5c92-702a-480d-a081-3fa1e099fa2c/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a02f5c92-702a-480d-a081-3fa1e099fa2c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 15,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 15）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "寫過《Hellraiser》的作曲家，最早是個爵士鼓手。這位作曲家是 Christopher Young，這次接下 Scott Derrickson 的《Sinister》。他聽了 Bernard Herrmann 的作品，才改走電影配樂這條路。2012 年 10 月 30 日經 Varèse Sarabande 發行的這份原聲，13 首跑完 61 分鐘。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/a02f5c92-702a-480d-a081-3fa1e099fa2c",
+     "https://en.wikipedia.org/wiki/Sinister_(film)",
+     "https://en.wikipedia.org/wiki/Christopher_Young"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3b/26/1f/3b261fe2-16d9-f4ba-a23a-eb9ca67251bf/mzaf_18306858652545178903.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1452842851",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1452842851「Christopher Young《Sinister (Original Motion Picture Soundtrack)》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Portrait of Mr. Boogie〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Adam Janota Bzowski",
+   "album": "Saint Maud: Original Motion Picture Soundtrack",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "fb5a94a6-b1b0-49e1-9ac3-82416cb34d88",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖片原聲（不和諧弦樂、drone、噪聲）：Adam Janota Bzowski《Saint Maud》，扭曲 drone 與低頻殘響描繪宗教狂熱，A24 系恐怖配樂代表｜策展無疑點｜MB release-group fb5a94a6-b1b0-49e1-9ac3-82416cb34d88：title「Saint Maud: Original Motion Picture Soundtrack」、Album＋Soundtrack、first-release-date 2020-10-09、artist-credit「Adam Janota Bzowski」。證據：https://musicbrainz.org/release-group/fb5a94a6-b1b0-49e1-9ac3-82416cb34d88 https://coverartarchive.org/release-group/fb5a94a6-b1b0-49e1-9ac3-82416cb34d88/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fb5a94a6-b1b0-49e1-9ac3-82416cb34d88/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "配樂先寫完，音效設計才進場。作曲的 Adam Janota Bzowski 本身做音效設計，這部片的音效則交給 Paul Davies 接手。電影是 Rose Glass 的長片處女作，寫一名虔誠的安寧看護。導演要觀眾待在 Maud 的腦袋裡，Bzowski 的第一版偏浪漫，後來轉向空靈陌生。低沉的貝斯像心跳般緩慢脈動，靜默之後再被陌生的打擊打破。配樂入圍 2020 年英國獨立電影獎最佳音樂，專輯當年 10 月 9 日正式上市，29 分鐘內排了 13 首。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/fb5a94a6-b1b0-49e1-9ac3-82416cb34d88",
+     "https://vehlinggo.com/2021/03/02/saint-maud-adam-janota-bzowski/",
+     "https://filmupdates.net/?p=6230",
+     "https://cinapse.co/?p=25019",
+     "https://thefilmscorer.com/best-film-scores-of-october-2020/",
+     "https://en.wikipedia.org/wiki/Saint_Maud"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/77/4d/5e/774d5e28-3b89-be16-c4fc-6f95cb7060aa/mzaf_4723770948825496605.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1532783488",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1532783488「Adam Janota Bzowski《Saint Maud (Original Motion Picture Soundtrack)》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Saint Maud Main Theme〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jim Williams",
+   "album": "Possessor",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "eb4a43fe-5479-47ae-827f-1cc05928b65f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖片原聲（不和諧弦樂、drone、噪聲）：Jim Williams《Possessor》，失真合成器 drone 與噪聲質地，冷硬的身體恐怖｜策展無疑點｜MB release-group eb4a43fe-5479-47ae-827f-1cc05928b65f：title「Possessor」、Album＋Soundtrack、first-release-date 2020-10-02、artist-credit「Jim Williams」。證據：https://musicbrainz.org/release-group/eb4a43fe-5479-47ae-827f-1cc05928b65f https://coverartarchive.org/release-group/eb4a43fe-5479-47ae-827f-1cc05928b65f/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/eb4a43fe-5479-47ae-827f-1cc05928b65f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 21,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 21）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "吵、難受、刺耳，重的段落存心把人壓垮。這是英國作曲家兼吉他手 Jim Williams 替《Possessor》寫的配樂，Williams 長年替 Ben Wheatley 配樂，在《A Field in England》就用過 drone。這次極簡的合成器混進扭曲的管弦樂段，旁邊還有中提琴、小提琴與不和諧的合唱。2021 年它拿下 Gérardmer 影展最佳原創配樂。Lakeshore Records 出版，27 首共 64 分鐘。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/eb4a43fe-5479-47ae-827f-1cc05928b65f",
+     "https://mondoshop.com/collections/vinyl-staff-picks/products/possessor-original-soundtrack-vinyl-2xlp",
+     "https://en.wikipedia.org/wiki/Possessor_(film)",
+     "https://vehlinggo.com/2020/11/10/possessor-score-interview-jim-williams/",
+     "https://thefilmscorer.com/best-film-scores-of-october-2020/",
+     "https://en.wikipedia.org/wiki/Jim_Williams_(composer)"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5b/ac/9b/5bac9bb0-067b-585f-f78d-4516c012c812/mzaf_4954198010682861698.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1532494758",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1532494758「Jim Williams《Possessor (Original Motion Picture Soundtrack)》」：曲目 27/27 對上 MB 原盤（Apple 共 27 軌），取第 1 軌〈Introduction〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Danny Bensi & Saunder Jurriaans",
+   "album": "Enemy",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ccedbd03-05a2-4229-9c32-29a08d196645",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "恐怖片原聲（不和諧弦樂、drone、噪聲）：Villeneuve《Enemy》配樂，Bensi 與 Jurriaans 用低音弦樂與不安長音堆出悶霧般的偏執感｜⚠ MB artist-credit 為 Danny Bensi & Saunder Jurriaans；純弦樂，y 有風險｜MB release-group ccedbd03-05a2-4229-9c32-29a08d196645：title「Enemy」、Album＋Soundtrack、first-release-date 2014-03-11、artist-credit「Danny Bensi & Saunder Jurriaans」。證據：https://musicbrainz.org/release-group/ccedbd03-05a2-4229-9c32-29a08d196645 https://coverartarchive.org/release-group/ccedbd03-05a2-4229-9c32-29a08d196645/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ccedbd03-05a2-4229-9c32-29a08d196645/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 114,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 114）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "末曲的曲名，是一種巨型狼蛛的學名。Danny Bensi 與 Saunder Jurriaans 二人組替 Denis Villeneuve 配樂，電影《Enemy》改編 Saramago 的小說，Jake Gyllenhaal 一人飾演兩個相同的男人，結尾揭曉一隻房間大的狼蛛。兩人認為小提琴也可以刮，弦樂像昆蟲爬過老舊的木地板；低音大提琴拉長的 D 音聽來像電子音。配樂 2014 年 3 月 11 日面世，Milan 發行，末曲就是〈Theraphosa Blondi〉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Enemy_(2013_film)",
+     "https://musicbrainz.org/release/0a85f8e6-ddc4-4611-b7fa-5de399b2df5d",
+     "https://www.popmatters.com/179791-danny-bensi-saunder-jurrianns",
+     "https://atthemoviesshop.com/products/enemy",
+     "https://musicbrainz.org/release-group/ccedbd03-05a2-4229-9c32-29a08d196645"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/81/a3/00/81a3009a-8c36-bfb5-530e-cde84242ce65/mzaf_7018611795660336194.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1500499794",
+    "storefront": "FR",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple fr 1500499794「Danny Bensi & Saunder Jurriaans《Enemy (Original Soundtrack Album)》」：曲目 15/16 對上 MB 原盤（Apple 共 16 軌），取第 1 軌〈The Dark Room〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jóhann Jóhannsson & Yair Elazar Glotman",
+   "album": "Last and First Men",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a8703f6d-ca24-482e-943a-1e8a0c777064",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代暗色電影配樂（Villeneuve／冰島幫／A24 周邊的 drone 式配樂）：Jóhannsson 遺作《Last and First Men》，合唱、Moog 低頻與弦樂 drone 的巨碑式寒冷，Tilda Swinton 旁白｜⚠ MB artist-credit 為 Jóhann Jóhannsson & Yair Elazar Glotman｜MB release-group a8703f6d-ca24-482e-943a-1e8a0c777064：title「Last and First Men」、Album＋Soundtrack、first-release-date 2020-02-28、artist-credit「Jóhann Jóhannsson & Yair Elazar Glotman」。證據：https://musicbrainz.org/release-group/a8703f6d-ca24-482e-943a-1e8a0c777064 https://coverartarchive.org/release-group/a8703f6d-ca24-482e-943a-1e8a0c777064/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a8703f6d-ca24-482e-943a-1e8a0c777064/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 703,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 703）；主線：原聲帶在 Last.fm 掛名與盤名（OST 副題）分散，listeners 失真；照 §0.8 錨點：正規廠牌發行、類型圈內流通"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Jóhannsson 唯一執導的長片，由別人替他收尾。作曲家 Jóhann Jóhannsson 2018 年 2 月辭世時片子未完成，後來由聲音藝術家 Yair Elazar Glotman 接手完成。作品源自 2017 年曼徹斯特國際藝術節的一場多媒體演出，用 16mm 拍前南斯拉夫的混凝土紀念碑，旁白取自 Stapledon 1930 年的小說。聲音是極簡的合唱混著合成器質地。Deutsche Grammophon 於 2020 年 2 月 28 日率先推出數位版。",
+    "sourceUrls": [
+     "https://filmmusicreporter.com/2020/02/26/last-and-first-men-soundtrack-details/",
+     "https://en.wikipedia.org/wiki/Last_and_First_Men_(film)",
+     "https://www.bfi.org.uk/sight-and-sound/reviews/last-first-men-review-johann-johannssons-apocalyptic-dispatch-from-future",
+     "https://musicbrainz.org/release-group/a8703f6d-ca24-482e-943a-1e8a0c777064"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/35/f3/d0/35f3d00f-943a-c677-649d-98cc887ab7f1/mzaf_17469793472245419109.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1497317345",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1497317345「Jóhann Jóhannsson & Yair Elazar Glotman《Last and First Men》」：曲目 20/20 對上 MB 原盤（Apple 共 21 軌），取第 1 軌〈Prelude〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ben Frost & Daníel Bjarnason",
+   "album": "Sólaris",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "73fd23bd-6e36-495c-bd27-753503d9994b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "現代古典暗黑音塊（md13 擴寫：Thorvaldsdottir、Scelsi、Ligeti 音雲、頻譜派）：Ben Frost 與 Daníel Bjarnason 以 Tarkovsky《Solaris》為題的音樂，鋼琴、弦樂與電子低頻融成冷 drone，Bedroom Community 經典｜⚠ 非配樂；md13 擴寫場景｜MB release-group 73fd23bd-6e36-495c-bd27-753503d9994b：title「Sólaris」、Album、first-release-date 2011-11-07、artist-credit「Ben Frost & Daníel Bjarnason」。證據：https://musicbrainz.org/release-group/73fd23bd-6e36-495c-bd27-753503d9994b https://coverartarchive.org/release-group/73fd23bd-6e36-495c-bd27-753503d9994b/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/73fd23bd-6e36-495c-bd27-753503d9994b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 16565,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 16565）；主線：§0.7 錄音層錨點：作曲家肖像／ECM 錄音，愛樂者領域；20 世紀不協和音塊 accessibility 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "替 Tarkovsky 的《Solaris》重想一次配樂。Ben Frost 與 Daníel Bjarnason 受波蘭 Unsound Festival 委託，交給 Sinfonietta Cracovia 演出。兩人認為原片的電子配樂忽略了心理層面，先即興回應影片，再用軟體把即興還原成數據，最後由 Bjarnason 配器成管弦總譜並親自指揮。主題從低音域起步，不和諧的複音一層層疊上去推向高潮，再慢慢消散。2011 年由冰島的 Bedroom Community 發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3209044",
+     "https://klofmag.com/2012/03/ben-frost-daniel-bjarnason-solaris",
+     "https://beatsperminute.com/album-review-ben-frost-daniel-bjarnason-solaris/",
+     "https://musicbrainz.org/release-group/73fd23bd-6e36-495c-bd27-753503d9994b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4c/f2/a4/4cf2a413-f50f-7713-a65e-323cf6bba330/mzaf_15251427235684009404.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1862166403",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1862166403「Ben Frost & Daníel Bjarnason《Sólaris》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈We Don't Need Other Worlds, We Need Mirrors〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Anna Thorvaldsdottir",
+   "album": "Aerial",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6b5bca7e-bc8b-4017-95b6-c4599be4fe47",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "現代古典暗黑音塊（md13 擴寫：Thorvaldsdottir、Scelsi、Ligeti 音雲、頻譜派）：Anna Thorvaldsdottir《Aerial》，低音域管弦 drone 與樂器摩擦噪聲，冰島當代音樂的暗黑音塊代表｜⚠ composer: Anna Thorvaldsdottir；作曲家肖像盤，多團演出，artist 照 MB 取作曲家（池中先例 Haas《in vain》）｜MB release-group 6b5bca7e-bc8b-4017-95b6-c4599be4fe47：title「Aerial」、Album、first-release-date 2014-11-10、artist-credit「Anna Thorvaldsdottir」。證據：https://musicbrainz.org/release-group/6b5bca7e-bc8b-4017-95b6-c4599be4fe47 https://coverartarchive.org/release-group/6b5bca7e-bc8b-4017-95b6-c4599be4fe47/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6b5bca7e-bc8b-4017-95b6-c4599be4fe47/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 2492,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2492）；主線：§0.7 錄音層錨點：作曲家肖像／ECM 錄音，愛樂者領域；20 世紀不協和音塊 accessibility 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "六首曲子六種編制，從交響樂團到巴洛克樂器。冰島作曲家 Anna Thorvaldsdottir 在 Deutsche Grammophon 的首張專輯，〈Aeriality〉由 Ilan Volkov 指揮冰島交響樂團。Nordic Affect 用巴洛克樂器演〈Shades of Silence〉，〈Into - Second Self〉則交給長號、法國號與打擊。這些聲音不祥，帶著北國的冷；〈Aeriality〉以一聲拍擊疊上沸騰的弦樂揭幕。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/10261090",
+     "https://musicbrainz.org/release/ec396e95-c6f6-4992-a96d-a28ddaaf587f",
+     "https://acloserlisten.com/2014/12/03/anna-thorvaldsdottir-aerial/",
+     "https://en.wikipedia.org/wiki/Anna_Thorvaldsdottir",
+     "https://musicbrainz.org/release-group/6b5bca7e-bc8b-4017-95b6-c4599be4fe47"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/79/5c/93/795c9309-23d8-8eda-7135-9950827fa0c5/mzaf_8190887972124686141.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1622451669",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1622451669「Various Artists《Aerial (Remastered 2022)》」：主線人工配對：Apple「Aerial (Remastered 2022)」，2022 再版多一首〈Aura〉，其餘曲目同原盤，取第 1 軌〈Into - Second Self (Remastered 2022)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Anna Thorvaldsdottir",
+   "album": "In the Light of Air",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "df581777-f8c8-4aa5-b4d7-12325696c49f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "現代古典暗黑音塊（md13 擴寫：Thorvaldsdottir、Scelsi、Ligeti 音雲、頻譜派）：Thorvaldsdottir《In the Light of Air》，ICE 演出，低頻打擊殘響、弦樂長音與裝置聲響｜⚠ composer: Anna Thorvaldsdottir；MB artist-credit 為作曲家與 ICE；MB artist-credit: Anna Thorvaldsdottir; ICE｜MB release-group df581777-f8c8-4aa5-b4d7-12325696c49f：title「In the Light of Air」、Album、first-release-date 2015-08-28、artist-credit「Anna Thorvaldsdottir; ICE」。證據：https://musicbrainz.org/release-group/df581777-f8c8-4aa5-b4d7-12325696c49f https://coverartarchive.org/release-group/df581777-f8c8-4aa5-b4d7-12325696c49f/front",
+    "queryAlias": "Anna Thorvaldsdottir; ICE"
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/df581777-f8c8-4aa5-b4d7-12325696c49f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 83,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 83）；主線：§0.7 錄音層錨點：作曲家肖像／ECM 錄音，愛樂者領域；20 世紀不協和音塊 accessibility 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "四個樂章從光亮走到回憶，最後一章長達 16 分鐘。Anna Thorvaldsdottir 把這部作品寫給 ICE 的五位樂手，編制是中提琴、大提琴、鋼琴、豎琴與打擊。樂章名從 Luminance 排到 Remembrance。Sono Luminus 2015 年出版，長度接近 48 分鐘，另附一份環繞聲混音。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7701699",
+     "https://musicbrainz.org/release/0ae8fa4f-4c52-4da2-a848-23cdaa43260c",
+     "https://en.wikipedia.org/wiki/Anna_Thorvaldsdottir",
+     "https://musicbrainz.org/release-group/df581777-f8c8-4aa5-b4d7-12325696c49f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/40/e6/ec/40e6ecb2-405f-7f1c-6e89-8cf6d1db9bb4/mzaf_5484173716523747313.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1025040557",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1025040557「International Contemporary Ensemble《Thorvaldsdottir: In the Light of Air》」：主線人工配對：Apple 掛名 International Contemporary Ensemble，Sono Luminus 同盤，取第 1 軌〈In the Light of Air: I. Luminance〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Anna Thorvaldsdottir",
+   "album": "ARCHORA / AIŌN",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c887dc9d-9788-40f4-aafd-759d1fb654c1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "現代古典暗黑音塊（md13 擴寫：Thorvaldsdottir、Scelsi、Ligeti 音雲、頻譜派）：Thorvaldsdottir《ARCHORA / AIŌN》，冰島交響樂團演出，大管弦低頻音塊緩慢翻湧，陰沉巨大｜⚠ composer: Anna Thorvaldsdottir；演出 Iceland SO／Eva Ollikainen；MB artist-credit: Anna Thorvaldsdottir; Sinfóníuhljómsveit Íslands, Eva Ollikainen｜MB release-group c887dc9d-9788-40f4-aafd-759d1fb654c1：title「ARCHORA / AIŌN」、Album、first-release-date 2022-05-22、artist-credit「Anna Thorvaldsdottir; Sinfóníuhljómsveit Íslands, Eva Ollikainen」。證據：https://musicbrainz.org/release-group/c887dc9d-9788-40f4-aafd-759d1fb654c1 https://coverartarchive.org/release-group/c887dc9d-9788-40f4-aafd-759d1fb654c1/front",
+    "queryAlias": "Anna Thorvaldsdottir; Sinfóníuhljómsveit Íslands, Eva Ollikainen"
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c887dc9d-9788-40f4-aafd-759d1fb654c1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 640,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 640）；主線：§0.7 錄音層錨點：作曲家肖像／ECM 錄音，愛樂者領域；20 世紀不協和音塊 accessibility 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兩首大型管弦樂，以 7.1.4 沉浸式聲道原生錄下。Anna Thorvaldsdottir 的這兩首由冰島交響樂團與指揮 Eva Ollikainen 錄下。其中〈AIŌN〉分成三個樂章，2019 年 5 月 24 日的 Point Music Festival 是它首次公開演出的場合。Sono Luminus 在 2022 年把兩首合成一張發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/660e55d5-fb1b-4d5d-8579-2e6d56d3314b",
+     "https://www.discogs.com/release/27253413",
+     "https://en.wikipedia.org/wiki/Anna_Thorvaldsdottir",
+     "https://musicbrainz.org/release-group/c887dc9d-9788-40f4-aafd-759d1fb654c1"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/82/8f/8c828f20-5635-6d9c-112e-58a9b376d784/mzaf_2182045777756925184.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1684732565",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1684732565「Iceland Symphony Orchestra & Eva Ollikainen《Thorvaldsdottir: Archora / Aiōn》」：主線人工配對：Apple 掛名 Iceland Symphony Orchestra & Eva Ollikainen，Sono Luminus 同盤，取第 1 軌〈Archora〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Anna Thorvaldsdottir",
+   "album": "Rhízōma",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "03ae301b-e4d9-4843-9199-3d374fdcfaf1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "現代古典暗黑音塊（md13 擴寫：Thorvaldsdottir、Scelsi、Ligeti 音雲、頻譜派）：Thorvaldsdottir 首張肖像盤《Rhízōma》，室內樂低音 drone 與長殘響，暗黑音塊風格的起點｜⚠ composer: Anna Thorvaldsdottir；y 估 1.1 偏保守｜MB release-group 03ae301b-e4d9-4843-9199-3d374fdcfaf1：title「Rhízōma」、Album、first-release-date 2011-10-25、artist-credit「Anna Thorvaldsdottir」。證據：https://musicbrainz.org/release-group/03ae301b-e4d9-4843-9199-3d374fdcfaf1 https://coverartarchive.org/release-group/03ae301b-e4d9-4843-9199-3d374fdcfaf1/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/03ae301b-e4d9-4843-9199-3d374fdcfaf1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 899,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 899）；主線：§0.7 錄音層錨點：作曲家肖像／ECM 錄音，愛樂者領域；20 世紀不協和音塊 accessibility 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "首張作品專輯，就收著替她拿下北歐理事會音樂獎的曲子。1977 年生、學大提琴出身的 Anna Thorvaldsdottir，2011 年由 Innova 推出這張唱片。得獎的是〈Dreaming〉，由冰島交響樂團演出，2012 年替她贏下獎項。〈Hrím〉交給 Caput Ensemble，低音巴松管與兩把低音提琴佔了很重的份量。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/278baae1-004b-45b0-be3a-078d79d1a7fc",
+     "https://en.wikipedia.org/wiki/Anna_Thorvaldsdottir",
+     "https://acloserlisten.com/2014/12/03/anna-thorvaldsdottir-aerial/",
+     "https://musicbrainz.org/release-group/03ae301b-e4d9-4843-9199-3d374fdcfaf1"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/b4/3e/b6/b43eb603-f1eb-e973-332e-db4ae4f9a496/mzaf_11187919504563216520.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1535485100",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1535485100「Various Artists《Rhízōma》」：主線人工配對：Apple 掛名 Various Artists，Innova 同盤，取第 1 軌〈Hrím〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Münchener Kammerorchester & Christoph Poppen",
+   "album": "Scelsi: Natura renovatur",
+   "composer": "Giacinto Scelsi",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6a7f238a-f984-4e46-889b-c66e35604ad6",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "現代古典暗黑音塊（md13 擴寫：Thorvaldsdottir、Scelsi、Ligeti 音雲、頻譜派）：ECM 的 Scelsi 錄音，《Okanagon》《Anagamìn》等單音微分音作品，弦樂擦出的 drone 與拍頻，陰冷｜⚠ composer: Giacinto Scelsi；MB 盤名 Natura renovatur，同名另有 2001 Klangforum 版；含 Frances-Marie Uitti；MB artist-credit: Giacinto Scelsi; Frances‐Marie Uitti, Münchener Kammerorchester, Christoph Poppen｜MB release-group 6a7f238a-f984-4e46-889b-c66e35604ad6：title「Natura renovatur」、Album、first-release-date 2006-05-09、artist-credit「Giacinto Scelsi; Frances‐Marie Uitti, Münchener Kammerorchester, Christoph Poppen」。證據：https://musicbrainz.org/release-group/6a7f238a-f984-4e46-889b-c66e35604ad6 https://coverartarchive.org/release-group/6a7f238a-f984-4e46-889b-c66e35604ad6/front",
+    "queryAlias": "Natura renovatur；Giacinto Scelsi; Frances‐Marie Uitti, Münchener Kammerorchester, Christoph Poppen"
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6a7f238a-f984-4e46-889b-c66e35604ad6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 1,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：§0.7 錄音層錨點：作曲家肖像／ECM 錄音，愛樂者領域；20 世紀不協和音塊 accessibility 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "大提琴家 Uitti 替 Scelsi 記下數百小時的即興。這張由 Münchener Kammerorchester 與指揮 Christoph Poppen 錄下，Uitti 也在其中擔任獨奏。她記譜的是 Scelsi 在 ondiola（單音電子琴）上的即興。八首裡有五首是大提琴獨奏，〈Ohoi〉則用上 16 把弦樂，微分音的織體始終在流動變化。錄音 2005 年 6 月在慕尼黑的升天堂進行，Manfred Eicher 製作，由 ECM New Series 出版。",
+    "sourceUrls": [
+     "https://ecmrecords.com/product/giacinto-scelsi-natura-renovatur-frances-marie-uitti-munchener-kammerorchester-christoph-poppen/",
+     "https://ecmreviews.com/2012/01/22/natura-renovatur/",
+     "https://musicbrainz.org/release-group/6a7f238a-f984-4e46-889b-c66e35604ad6"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/bd/76/56/bd7656d5-9237-9d2c-06b7-826577145e9a/mzaf_14587954710407161625.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T07:39:19Z",
+    "appleCollectionId": "1452674233",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1452674233「Christoph Poppen, Frances-Marie Uitti & Munich Chamber Orchestra《Scelsi: Natura Renovatur》」：主線人工配對：ECM 同盤，Apple 曲名分段寫法不同（5/8 字面對上），取第 1 軌〈Ohoi for 16 Strings〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

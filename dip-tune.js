@@ -22,7 +22,7 @@
   let cfg = { host: null, loadCardPool: null, onResult: null, onBack: null, player: null, cardIdOf: null };
   const ORDER = ['calm', 'still', 'languid', 'decay', 'lift', 'crisp', 'boil', 'charge'];
   // 八格配色（2026-10-22 店主定稿，八個色相照色相環排）：暖半邊 放鬆金黃→雀躍橙→沸騰朱紅→恍惚洋紅；
-  // 冷半邊 平靜青→冷冽冰藍白→亢奮電藍→頹靡紫。星圖、命中光暈、結果頁「頻率 ●」、就這張的線框都用這一套。
+  // 冷半邊 平靜青→冷冽冰藍白→暴躁電藍→頹靡紫。星圖、命中光暈、結果頁「頻率 ●」、就這張的線框都用這一套。
   const CELL_COLOR = { calm: '#f2cf5b', lift: '#ff9a3c', boil: '#ff4d3a', languid: '#e8578f', still: '#5ee6f0', crisp: '#bfe8ff', charge: '#4f8dff', decay: '#9b6bff' };
   const AX = { x: '#f2b341', y: '#8fe0a0', z: '#ff7a6b', cold: '#a08cff' };
   const SIGMA = [0.2, 0.2, 0.3], FLOOR = 0.02, SWEEP_R = 10;   // 距離權重與掃描半徑（MOOD_LAUNCH_PLAN §4.2，σ 0.35 太寬，實測改 0.2）
