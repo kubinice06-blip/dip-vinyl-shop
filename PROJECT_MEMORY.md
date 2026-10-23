@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜體感標準全池重判：20,446 張逐張看，1,343 張改判
+
+- **改動**：店主「用新標準全部重判（躁靜看體感、冷暖加看旋律清楚度）」。全池切 52 份、52 支代理照 `batch-progress/mood-axes/felt-rejudge/BRIEF.md` 判，1,343 張寫進 `overrides.json`（累計 1,795）。八格：放鬆 5,141、平靜 1,018、恍惚 1,110、頹靡 1,276、雀躍 5,917、冷冽 1,269、沸騰 1,921、亢奮 2,845。主線撤回 Khanate 4 張的能量（doom 比照 Sunn O))) 留靜）；`score500/BRIEF.md` 能量、色溫改成體感＋旋律標準，新卡照新標準評。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/felt-rejudge/*`、`batch-progress/mood-axes/score500/BRIEF.md`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：52 份 done 全到齊、bad 0；`build-card-moods.mjs` 錨點 104/104 同格；店主點過的 51 張鎖住未動。
+
 ### 2026-10-23｜dip-vinyl-shop｜店主試聽點選 50 張爭議盤，29 張改格；歸納出店主的三軸標準
 
 - **改動**：試聽頁（artifact，50 張、db 存點選）店主逐張點格：同格 20、改格 29、不確定 1。29 張寫進 `overrides.json`（累計 556），原始點選存 `batch-progress/mood-axes/owner-review/picks.json`。標準歸納寫在 `rulings.md`：能量＝張力／不安定（不是有沒有鼓）、色溫＝旋律清楚度、質地＝尖細輕／厚密重。**尚未套到全池**——等店主確認標準。
