@@ -24,6 +24,18 @@
    "zh": "dark jazz 周邊暗 ambient",
    "why": "Denovali／doom jazz 周邊的厚墊慢板電子與 drone",
    "count": 7
+  },
+  {
+   "id": "dark-chamber-ambient",
+   "zh": "無鼓暗色室內樂／dark ambient（Miasmah／Denovali 系）",
+   "why": "無鼓、弓弦與低頻 drone、長殘響，陰冷、旋律不明",
+   "count": 11
+  },
+  {
+   "id": "drone-folk-bowed",
+   "zh": "無鼓弓弦 drone folk",
+   "why": "無鼓的層疊弓弦 drone，荒原民謠意象",
+   "count": 3
   }
  ],
  "albums": [
@@ -1426,6 +1438,428 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "有拍，y 邊距 0.2"
+  },
+  {
+   "artist": "Svarte Greiner",
+   "album": "Devolving Trust",
+   "year": 2022,
+   "label": "Miasmah",
+   "country": "no",
+   "faction": "dark-chamber-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Erik K Skodvin 的 Svarte Greiner 名義 2022 作；池中同名 5 張 y0.7–1.6／z−1.2～−1.6 落頹靡",
+   "moodGuess": {
+    "x": 1.1,
+    "y": 1.4,
+    "z": -1.5,
+    "why": "無鼓，弓弦與低頻 drone 長音，陰森"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2151600c-f25d-4ba3-972c-9efa7f0f4c00",
+    "https://www.discogs.com/master/2527906-Svarte-Greiner-Devolving-Trust"
+   ],
+   "mbRgMbid": "2151600c-f25d-4ba3-972c-9efa7f0f4c00",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無封面，封面取 Discogs master",
+   "round": 2
+  },
+  {
+   "artist": "Kreng + Svarte Greiner",
+   "album": "The Night Hag",
+   "year": 2021,
+   "label": "Slaapwel Records",
+   "country": "be",
+   "faction": "dark-chamber-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Miasmah 兩位主將合作，以睡眠癱瘓為題的無鼓 drone；兩人池中盤皆落頹靡",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.4,
+    "z": -1.5,
+    "why": "無鼓，夢魘主題 drone、低頻、殘響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/041b4a93-14f8-4a6b-b01b-2dd32cdfdea6",
+    "https://coverartarchive.org/release-group/041b4a93-14f8-4a6b-b01b-2dd32cdfdea6/front",
+    "https://www.discogs.com/master/1961818-Kreng-Svarte-Greiner-The-Night-Hag"
+   ],
+   "mbRgMbid": "041b4a93-14f8-4a6b-b01b-2dd32cdfdea6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Kreng 有驚嚇段風險，本盤 Discogs 標 Ambient／Drone／Minimal",
+   "round": 2
+  },
+  {
+   "artist": "Erik K Skodvin",
+   "album": "Flame",
+   "year": 2014,
+   "label": "Sonic Pieces",
+   "country": "no",
+   "faction": "dark-chamber-ambient",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "Deaf Center／Svarte Greiner 本人名義的暗色室內樂第二作",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1,
+    "z": -1.1,
+    "why": "無鼓，大提琴、吉他泛音與 drone，暗"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/128a1718-6877-4b2a-afca-b87866838000",
+    "https://coverartarchive.org/release-group/128a1718-6877-4b2a-afca-b87866838000/front"
+   ],
+   "mbRgMbid": "128a1718-6877-4b2a-afca-b87866838000",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有吉他與鋼琴，y 邊距 0.2",
+   "round": 2
+  },
+  {
+   "artist": "Erik K Skodvin",
+   "album": "Schächten",
+   "year": 2022,
+   "label": "Miasmah",
+   "country": "no",
+   "faction": "dark-chamber-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Miasmah 2022 作，更暗更 drone 的室內樂",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.3,
+    "z": -1.4,
+    "why": "無鼓，低頻 drone、弓弦、霧，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a090f075-3c17-4d01-a217-a7e82797c5b8",
+    "https://coverartarchive.org/release-group/a090f075-3c17-4d01-a217-a7e82797c5b8/front"
+   ],
+   "mbRgMbid": "a090f075-3c17-4d01-a217-a7e82797c5b8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "2022 盤，聲音證據較少",
+   "round": 2
+  },
+  {
+   "artist": "Elegi",
+   "album": "Bånsull",
+   "year": 2017,
+   "label": "Dronarivm",
+   "country": "no",
+   "faction": "dark-chamber-ambient",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "挪威 dark ambient；池中《Varde》《Sistereis》y0.9–1.1／z−1.3 落頹靡",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1,
+    "z": -1.2,
+    "why": "無鼓，弦樂墊、低頻 drone，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c09a3da9-9854-4919-a137-68d8b3cbdd6e",
+    "https://coverartarchive.org/release-group/c09a3da9-9854-4919-a137-68d8b3cbdd6e/front",
+    "https://www.discogs.com/master/1915254-Elegi-B%C3%A5nsull"
+   ],
+   "mbRgMbid": "c09a3da9-9854-4919-a137-68d8b3cbdd6e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 參照同人 0.9–1.1，邊距不寬",
+   "round": 2
+  },
+  {
+   "artist": "Petrels",
+   "album": "Haeligewielle",
+   "year": 2011,
+   "label": "Denovali",
+   "country": "gb",
+   "faction": "dark-chamber-ambient",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Oliver Barrett 的 Denovali 首作，長篇 drone 層疊",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.5,
+    "z": -1,
+    "why": "無鼓，吉他與風琴 drone 層疊，厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/91676bad-4c4a-42b1-88fd-393b00252b3e",
+    "https://coverartarchive.org/release-group/91676bad-4c4a-42b1-88fd-393b00252b3e/front",
+    "https://www.discogs.com/master/403351-Petrels-Haeligewielle"
+   ],
+   "mbRgMbid": "91676bad-4c4a-42b1-88fd-393b00252b3e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "round": 2
+  },
+  {
+   "artist": "Petrels",
+   "album": "Onkalo",
+   "year": 2013,
+   "label": "Denovali",
+   "country": "gb",
+   "faction": "dark-chamber-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "以芬蘭核廢料庫為題的暗色 drone／室內樂，Discogs 標 Dark Ambient",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.5,
+    "z": -1.2,
+    "why": "無鼓，核廢料場主題，低頻 drone、弓弦，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/62ebcb65-9516-4d99-a340-7e26edc02466",
+    "https://coverartarchive.org/release-group/62ebcb65-9516-4d99-a340-7e26edc02466/front",
+    "https://www.discogs.com/master/537158-Petrels-Onkalo"
+   ],
+   "mbRgMbid": "62ebcb65-9516-4d99-a340-7e26edc02466",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "round": 2
+  },
+  {
+   "artist": "witxes",
+   "album": "Sorcery/Geography",
+   "year": 2012,
+   "label": "Humanist Records",
+   "country": "fr",
+   "faction": "dark-chamber-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Dale Cooper Quartet 合作者 Maxime Vavasseur 的 dark ambient，Discogs 標 Drone",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.4,
+    "z": -1.3,
+    "why": "無鼓，暗 drone、磁帶糊、低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/61fcc3b1-2297-48bb-a5f2-18c912cd974b",
+    "https://coverartarchive.org/release-group/61fcc3b1-2297-48bb-a5f2-18c912cd974b/front",
+    "https://www.discogs.com/master/563412-Witxes-SorceryGeography"
+   ],
+   "mbRgMbid": "61fcc3b1-2297-48bb-a5f2-18c912cd974b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "2013 Denovali 再版",
+   "round": 2
+  },
+  {
+   "artist": "witxes",
+   "album": "A Fabric of Beliefs",
+   "year": 2013,
+   "label": "Denovali",
+   "country": "fr",
+   "faction": "dark-chamber-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Denovali 首作，更厚的暗 drone",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.4,
+    "z": -1.3,
+    "why": "無鼓，噪聲霧、低頻 drone、陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1f3b4799-5e52-49ae-9684-61238086cc9b",
+    "https://coverartarchive.org/release-group/1f3b4799-5e52-49ae-9684-61238086cc9b/front",
+    "https://www.discogs.com/master/563437-Witxes-A-Fabric-Of-Beliefs"
+   ],
+   "mbRgMbid": "1f3b4799-5e52-49ae-9684-61238086cc9b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "round": 2
+  },
+  {
+   "artist": "Richard Skelton",
+   "album": "Marking Time",
+   "year": 2008,
+   "label": "Sustain-Release",
+   "country": "gb",
+   "faction": "drone-folk-bowed",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "英格蘭荒原弓弦 drone 的首作，提琴與曼陀林層疊成霧",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.1,
+    "z": -0.9,
+    "why": "無鼓，層疊弓弦 drone、殘響，荒涼"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bb391af3-a48a-34a9-aef8-0a739e33ac90",
+    "https://coverartarchive.org/release-group/bb391af3-a48a-34a9-aef8-0a739e33ac90/front",
+    "https://www.discogs.com/master/150269-Richard-Skelton-Marking-Time"
+   ],
+   "mbRgMbid": "bb391af3-a48a-34a9-aef8-0a739e33ac90",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "弓弦有旋律感，z 邊距 0.6",
+   "round": 2
+  },
+  {
+   "artist": "Richard Skelton",
+   "album": "Landings",
+   "year": 2009,
+   "label": "Sustain-Release",
+   "country": "gb",
+   "faction": "drone-folk-bowed",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "代表作，荒原弓弦 drone 與田野錄音",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.2,
+    "z": -1,
+    "why": "無鼓，弓弦 drone 層疊、田野錄音、灰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/48860230-9c7b-4e50-8149-636cbfca67d5",
+    "https://coverartarchive.org/release-group/48860230-9c7b-4e50-8149-636cbfca67d5/front",
+    "https://www.discogs.com/master/212852-Richard-Skelton-Landings"
+   ],
+   "mbRgMbid": "48860230-9c7b-4e50-8149-636cbfca67d5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上",
+   "round": 2
+  },
+  {
+   "artist": "Richard Skelton",
+   "album": "LASTGLACIALMAXIMUM",
+   "year": 2020,
+   "label": "Corbel Stone Press",
+   "country": "gb",
+   "faction": "drone-folk-bowed",
+   "genres": [
+    "electronic"
+   ],
+   "why": "後期轉向純 drone 的冰期主題作",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.4,
+    "z": -1.3,
+    "why": "無鼓，冰期主題低頻 drone、霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/efe9ec58-e53e-409e-9db2-08a28114a299",
+    "https://coverartarchive.org/release-group/efe9ec58-e53e-409e-9db2-08a28114a299/front",
+    "https://www.discogs.com/master/1684749-Richard-Skelton-Lastglacialmaximum"
+   ],
+   "mbRgMbid": "efe9ec58-e53e-409e-9db2-08a28114a299",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "label 依 Corbel Stone Press 推定，MB 無 label",
+   "round": 2
+  },
+  {
+   "artist": "Thomas Köner",
+   "album": "Tiento de la Luz",
+   "year": 2016,
+   "label": "Denovali",
+   "country": "de",
+   "faction": "dark-chamber-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Köner 的 Denovali 作；池中 Köner 7 張 y1.4–1.7／z−1.6～−2.0 全落頹靡",
+   "moodGuess": {
+    "x": 1,
+    "y": 1.5,
+    "z": -1.7,
+    "why": "無鼓，極低頻 drone、霧，冰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/67dc3b7f-1cfd-4582-af18-79c7e6c0f7e5",
+    "https://coverartarchive.org/release-group/67dc3b7f-1cfd-4582-af18-79c7e6c0f7e5/front",
+    "https://www.discogs.com/master/956455-Thomas-K%C3%B6ner-Tiento-De-La-Luz"
+   ],
+   "mbRgMbid": "67dc3b7f-1cfd-4582-af18-79c7e6c0f7e5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "round": 2
+  },
+  {
+   "artist": "Thomas Köner",
+   "album": "Motus",
+   "year": 2020,
+   "label": "Mille Plateaux",
+   "country": "de",
+   "faction": "dark-chamber-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Mille Plateaux 2020 作，Discogs 標 Drone／Dark Ambient",
+   "moodGuess": {
+    "x": 1,
+    "y": 1.6,
+    "z": -1.8,
+    "why": "無鼓，低頻 drone、極簡，冰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/535a6eab-6c86-4943-9228-d85cd5b3b7b0",
+    "https://coverartarchive.org/release-group/535a6eab-6c86-4943-9228-d85cd5b3b7b0/front",
+    "https://www.discogs.com/master/1680534-Thomas-K%C3%B6ner-Motus"
+   ],
+   "mbRgMbid": "535a6eab-6c86-4943-9228-d85cd5b3b7b0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "round": 2
   }
  ],
  "notes": [
@@ -1436,6 +1870,7 @@
   "去重：KDE《Here Be Dragons》md2 已提；Dale Cooper 全四張在池（Witxes split 不收）；Bohren 只剩《Patchouli Blue》；MFDJC《Doomjazz Future Corpses!》《Roadburn》為現場。",
   "擴寫場景挖到 Discogs Dark Jazz 周邊：Radare、Mansur、The Thing With Five Eyes（Köhnen 系）、Dead Neanderthals drone 期、Splashgirl（Randall Dunn 製作）、Bersarin Quartett、Sankt Otten；Mohn、Ensemble Pearl 非爵士但屬同圈暗 ambient／drone doom。",
   "label 已以 MB 最早發行核對；NSB《Dance of the Moon and the Sun》《Night Coercion》《Daughter of Darkness》《Shadow Kingdom》、Darkher、Osi、Mansur《Karma》、Dead Neanderthals《Craters》、Bersarin《Methoden und Maschinen》MB 無發行 label，label 欄為推測或留空，待研究層核。",
-  "所有張 MB 釘住、CAA 有封面；WebSearch 用 1 次（Heilung 爭議查無）。Heilung／Wardruna x 依賴「儀式鼓催眠＝靜」判讀，池中 Wardruna 兩張 x2.4 為先例。"
+  "所有張 MB 釘住、CAA 有封面；WebSearch 用 1 次（Heilung 爭議查無）。Heilung／Wardruna x 依賴「儀式鼓催眠＝靜」判讀，池中 Wardruna 兩張 x2.4 為先例。",
+  "第二輪（round 2）補 14 張：只收無鼓、厚墊／drone／長殘響、陰冷、旋律不明型。不提：Svarte Greiner《Twin》（Discogs 標 Mixed）、Deaf Center《Low Distance》（池中《Owl Splinters》y0.6 判輕）、Jacaszek（池外盤偏輕；《Treny》md6 已提）、Irisarri 其他盤（池中 z −0.5～−0.9 偏邊）、Sylvain Chauveau（判輕）、Kreng《L'Autopsie》（md1 已提）、KDE／Dale Cooper 已無正規專輯可補。"
  ]
 }

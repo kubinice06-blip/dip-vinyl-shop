@@ -19,3 +19,11 @@
 - **19523** Brightblack《Ala.Cali.Tucky》年份出入：MB 2003、AllMusic／Wikipedia 專輯條目為 2004；facts 寫 AllMusic 日期，年份欄由主線決定（可逆）。樂評用詞 forlorn／sallow（落寞枯黃），色溫與 y（編制偏原聲）存疑；status thin（AllMusic、Discogs 403，僅搜尋摘要）。
 - **19524** Strawberry Guy《Sun Outside My Window》moodGuess 存疑：Post-Trash 稱 sunshine pop、披頭四式旋律、編制不塞滿，y 1.0 有偏輕風險；lo-fi 鋼琴＋疊層弦樂、夏末暖感支持暖與靜（x 建議 2.3–2.6）。
 - **19525** 本組未推翻身分（四張 MB 釘住對得上廠牌與年份，僅 Brightblack 年份如上）。
+
+## 研究 a 組
+- **19481** Hush（Asobi Seksu）moodGuess 存疑：Polyvinyl 頁寫 sputtering／stuttering drumming、harsh aggressive noise、bright guitar-driven indie-pop 底盤，x 2.5 偏低，可能 2.8–3.3，有掉出「靜」的風險；y（殘響牆＋噪音）、z（甜女聲旋律清楚）支持。邊緣，建議評分時以 x 為關鍵或汰換。
+- **19482** Guthrie & Budd 三張（After the Night Falls、Before the Day Breaks、Bordeaux）moodGuess 存疑：樂評用 nocturnal／glacial／somber／melancholy／mournful，z 0.5–0.6 可能貼 0 或略冷；殘響雖重但 Bordeaux 被寫 limpid／sparse、ambient 空曠，y 有偏輕風險（剝掉殘響會輕）。x 低無疑。兩張 2007 姊妹作同型，主線擇一即可；三張以 Bordeaux 風險最大（旋律較成形但吉他清澈稀疏）。
+- **19483** Violet Indiana《Roulette》status thin：僅 Ink19 一篇與維基人物頁，無曲目與錄音資料。Ink19 用 cool／icy sultriness，z 0.5 有貼 0 風險（curatorRisk 已預告）。廠牌 MB 為 Bella Union（GB 2001-04-30／US 2001-05-08），Ink19 寫 Instinct，採 MB。
+- **19484** Engineers 兩張：未推翻身分。卡單《Always Returning》稱「第三作」，維基與樂評稱第四作（同名首作、Folly 小專輯計法不同），facts 不寫序數；《In Praise of More》〈Subtober〉有明確律動，x 可能 2.4–2.8 但無攻擊性，moodGuess 不推翻；《Always Returning》Popdose 稱慢、催眠、氣音人聲，且非傳統 shoegaze 的回授牆，y 約 0.8–1.2。
+- **19485** 日期出入：Guthrie & Budd 2007 對輯 MB 為 2007-06-11，維基與 Starsend 為 2007-07-16；寫作層只寫「2007 年」。
+- **19486** 流程偏離（誠實記錄）：WebSearch 用了 6 次（超過每支 3 次的上限，起因是三組並行查詢各算一次），其餘為 WebFetch；Pitchfork 被工具封鎖、AllMusic 403、PopMatters《Hush》404、Sputnik 503、Penny Black 403，Louder 被付費牆擋，這些聲音細節只能引搜尋摘要，不進 facts。

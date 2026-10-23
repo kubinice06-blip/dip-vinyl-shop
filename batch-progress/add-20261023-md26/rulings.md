@@ -70,3 +70,4 @@
   - 非正規錄音室專輯：Mount Fuji《Егор》（2011 莫斯科現場）、Thing With Five Eyes《كون》（播客一小時 DJ mix）。
 - 19792：保留但有風險（研究稿寫明）：Wardruna《Birna》（一首全團鼓段）、Von Till《Alone in a World of Wounds》（鄉村調性）、Fursaxa《Alone in the Dark Wood》（慢速行進節奏）、Dead Neanderthals《Incantations》（催眠式重複鼓點，照體感標準判靜）、Mohn（極慢 dub techno 脈動）、Bersarin 前三張（樂評「溫柔憂鬱」）。
 - 19793：剩 24 張，叫回策展代理補第二輪（只收無鼓／極稀疏、厚墊、陰冷、旋律不明）。
+- 19793（續）：策展第二輪補 14 張（無鼓暗色室內 ambient 11：Thomas Köner《Tiento de la Luz》《Motus》、Svarte Greiner《Devolving Trust》、Kreng＋Svarte Greiner《The Night Hag》、Skodvin《Flame》《Schächten》、Elegi《Bånsull》、Petrels ×2、witxes ×2；弓弦 drone folk 3：Richard Skelton ×3），MB 14/14 釘住；池中 Köner 7 張、Svarte Greiner 5 張、Elegi 2 張全落頹靡。併入卡單 group e（卡單 38 張），另派一支補研究 append 進 e.json。
