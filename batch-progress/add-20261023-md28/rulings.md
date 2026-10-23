@@ -68,3 +68,13 @@
 - 20638：Komoku 用 kangling 與頌缽等原聲樂器、沙漠田野錄音，輕度存疑（色溫）。
 - 20639：Vanishing Lands 說明稱 most complex and dramatic，輕度存疑（起伏）；無鼓證據只是未提及。
 - 20640：Inade 找不到廠牌文案與樂評，status 標 thin；MB 標籤含 industrial、noise，中度存疑，建議優先實聽或汰換。d 組未推翻年份、廠牌、盤名。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- 研究層多數只有廠牌文案；照「有反證才汰」，體感標準下凡文案／樂評提到**鼓、打擊、拍點、溫暖／明亮、旋律樂器或人聲領奏**的一律汰（md1、md18、md22 先例）。
+- **汰 12 張**（存 `dropped-cards.json`／`dropped-research.json`）：
+  - 有鼓／拍點／打擊（x 風險）：God Body Disconnect《Sleeper’s Fate》（鼓點＋後搖滾段）、Atrium Carceri《Codex》（廠牌自寫 industrial beats）、Dronny Darko《Spira igneus》（metal percussion）、NERATERRÆ《The Substance of Perception》（Phurpa 喉音客座、Wicked Pulse）、Inade《The Nine Colours of the Threshold》（industrial／noise、thin）、S.E.T.I.《Baikal》（glitch／techno 標籤）。
+  - 色溫暖／明亮（z 風險）：Alphaxone《Edge of Solitude》（brighter colours、joy）、《Echoes From Outer Silence》（warm and analogue＋拍點）、Apocryphos《Stone Speak》（warm, dark and subtle）。
+  - 旋律／人聲領奏：Enmarta《Sea of Black》（中提琴、笛、鐘琴、喉音）、Halgrath《Out of Time》（歌劇女聲吟誦）、Ruptured World《Exoplanetary》（旁白人聲、melodic）。
+- **補 3 張**（主線先汰的勻量卡，無聲音疑點）：A Cryo Chamber Collaboration《Yog-Sothoth》、Sabled Sun《2149》、Dronny Darko《Abduction》，進 e 組補研究。
+- 定案 **37 張**（a 8、b 6、c 7、d 8、e 8）。
+- 卡單更正：Necrophorus《Drifting in Motion》維持 2000 年首版（六首）；獻給 Beksiński 的〈Untitled〉屬 2008 Old Europa Cafe 重錄版，寫作層不得寫進本卡。

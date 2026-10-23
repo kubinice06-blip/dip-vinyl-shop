@@ -63,3 +63,15 @@
 - 20477：jhfly《sounds and things》：曲名含 drum loop1、crossings (early version)、ukejams.wav，草稿式散裝 beat 集性質；《floating over oceans》含 beat.battle.003。兩張建議列為汰換候選（證據薄且帶散裝性質），由主線決定。
 - 20478：本組無 <28 分（Scenic Route 未知）；最短 Good Karma 31:33、jhfly《sounds and things》32:52。無精選集、無年份推翻。
 - 20479：elaquent.bandcamp.com／huhwhatwhere.bandcamp.com 與 elaquent.com 互相 301／303 重導向，Good Karma／Oldies／Scenic Route 的 Bandcamp 頁無法讀；改以 iTunes lookup（曲目與長度）、Exclaim!、Scratched Vinyl 補。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- 照 ml42／ml47 先例**只憑「查無」不汰、有反證才汰**（mt. fujitive《kyoto》研究 b 建議汰，但只是零來源、同人池中三張全落恍惚，留）。
+- **汰 16 張**（存 `dropped-cards.json`／`dropped-research.json`）：
+  - 拍子推進／舞曲（x 風險）：Wun two & Knowsum《Dream Cruise》（funky／optimistic、boombap／funk、人聲與 skit）、Knxwledge《SKRAWBERRiES.》（house、jungle 標籤）、《TodaysAlreadYesterday.》（樂評 glitchy、曲均 70 秒）、Ohbliv《Up》（warm but bouncy）、Elaquent《Good Karma》（playful、uptempo、bouncy、808）、Tall Black Guy《8 Miles to Moenart》（人聲客座、House 標籤）、FloFilz《Metronom》（Tribe 式爵士 boom bap）、Pandrezz《Soul & Dreams》（trap／phonk／electro 標籤）。
+  - 人聲合輯：Elaquent《Forever Is a Pretty Long Time》（MMG 合輯、9/13 首 MC 客座）。
+  - 色溫冷：Elaquent《Long Drives to Nowhere》（文案 anxiety、pandemic doom、Electro）。
+  - 質地輕：FloFilz《Transit》（UK 爵士真人樂手、人聲曲）、Fitz Ambro$e《Creative Network》（ethereal、tropical、草稿集）。
+  - 長度／型態：Fitz Ambro$e《Hypnodical》（Bandcamp 現行版 24:23）、jhfly《sounds and things》《floating over oceans》（散裝草稿集）、softy & Kendall Miles《Balance》（無可引來源）。
+- **補 1 張**：主線先汰的 Purrple Cat《Tranquil Trails》（28.5 分照同人池中 26 分盤先例可收），進 e 組補研究。其餘主線汰除卡（Kiefer y 0.8、Raw Clipz、Chilled Rooms、Kurio、Lewse Joints、old batch、Beat Sketches）風險未解，不補。
+- 定案 **31 張**（a 7、b 9、c 9、d 2、e 4）。
+- 卡單更正（研究層提出）：Fitz Ambro$e & Ohbliv《Zen Vapors》年份 2014→2013（Dandigs 2013-09-03 發行貼文「released today」，MB 首發日晚於實際發行）；Stan Forebee《Jazz Sessions》維持原盤首發 2013（2018 重發不改年份）。
