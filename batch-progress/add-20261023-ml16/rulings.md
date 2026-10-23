@@ -23,3 +23,14 @@
 - **15204** Q-Tip《Kamaal》y 0.8 可能偏輕：現場樂團鬆散即興、唱多於饒舌；年份 2009 確認（2001 為 Arista 宣傳條目）。
 - **15205** P.M. Dawn《Jesus Wept》moodGuess 存疑：Rolling Stone 稱含吉他搖滾，只有一首直饒舌；製作人署名來源互異（資訊框 Eric Kupper vs 單曲頁 P.M. Dawn），並列不下定論。《The Bliss Album》年份取 1993 確認。
 - 推翻／存疑策展層共 4 處（Innocent Country 鋼琴說、Ladybug 唯一一張／拉丁取樣、Jesus Wept 製作歸屬、Liberation 日期）。
+
+## 研究 d 組
+- **15231** Big Moe《Moe Life》推翻策展層：curatorWhy「生前最後一張」不成立，本作是第三張（2003），遺作是 2008《Unfinished Business》。moodGuess 存疑：可取得來源沒有速度與低頻描述，只有 Club／Chop 版標示與 Dogg Pound、Nate Dogg 元素借用；同班底前作《City of Syrup》被 Sputnik 形容 synth lead 與 bouncy bass，可能偏中速彈跳。status thin。
+- **15232** E.S.G.《Ocean of Funk》moodGuess 存疑：維基標 G-funk，取樣為 Al Green、Isley、Marvin Gaye（支持暖），慢與重沒有直接來源。DJ Screw 只確認剪輯單曲一首。status thin。
+- **15233** E.S.G.《Sailin' da South》moodGuess 存疑：「風琴與慢拍」無來源可證；label 維基列 Perrion 與 Priority 並列，卡單只寫 Perrion。status thin。
+- **15234** Paul Wall & Chamillionaire《Get Ya Mind Correct》moodGuess 存疑（x）：RapReviews 顯示製作多元（厚重鋼琴、髒味彈跳、漂浮旋律、電子味、Mystikal 式硬打），非一致慢拍；銷量兩個條目互相矛盾，不寫。status full。
+- **15235** Pimp C《Naked Soul》moodGuess 存疑：身後拼貼，製作人十餘位、客串約二十位（Drake、Rick Ross、Young Jeezy 等），音響多元，慢拍靈魂取樣只有首曲 Eddie Kendricks 改寫可證。status thin。
+- **15236** Witchdoctor《...a s.w.a.t. healin' ritual》推翻策展層：場景是亞特蘭大 Dungeon Family，非休士頓；XXL 稱 Organized Noize 製作「最黑暗」之一，與 z 0.4 溫衝突，建議主線降低 z 預期。年份 1998 確認（Apple 簡介寫 1997 不採）。status full。
+- **15237** Tela《Piece of Mind》moodGuess 存疑：維基風格含 hardcore hip hop 與 G-funk，無慢拍或溫熱鍵盤來源；Tela 是孟菲斯人，錄音橫跨孟菲斯與休士頓。status thin。
+- **15238** MJG《No More Glory》moodGuess 存疑（x）：RapReviews 未描述速度與低頻，只有 Stevie Wonder 改寫與 Curtis Mayfield 式唱腔；MJG 是孟菲斯人，非休士頓；製作人維基（Mo-Suave-A）與 RapReviews（T-Mix）不一致並列。status full。
+- 本組推翻／存疑策展層共 8 張全部有 moodGuess 存疑註記，其中硬推翻 2 處（Big Moe 遺作說、Witchdoctor 場景）；WebSearch 用 3 次；AllMusic 全部 403、Pitchfork 被封鎖，聲音事實偏薄。
