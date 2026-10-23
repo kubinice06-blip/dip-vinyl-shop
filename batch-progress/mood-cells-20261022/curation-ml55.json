@@ -1,0 +1,1161 @@
+{
+ "group": "ml55",
+ "factions": [
+  {
+   "id": "r90",
+   "zh": "90s–00s 女聲 R&B 慢盤二線",
+   "why": "主場景：池中同人已落恍惚或池中無的二線女聲，整張以慢歌為主",
+   "count": 6
+  },
+  {
+   "id": "qs",
+   "zh": "女聲 quiet storm／成人抒情",
+   "why": "擴寫 1：80s 末–00s 成人抒情，池中同型（Chanté Moore、Lalah、Phyllis Hyman、Miki Howard）多落恍惚",
+   "count": 13
+  },
+  {
+   "id": "ns",
+   "zh": "女聲慢板 neo-soul／暖 R&B 2000s–20s",
+   "why": "擴寫 2：厚低頻、弦樂墊或殘響霧的慢盤",
+   "count": 17
+  },
+  {
+   "id": "dt",
+   "zh": "女聲 downtempo／trip-hop／lovers dub",
+   "why": "擴寫 3：店主 10-23 指示多加 downtempo 與 dub",
+   "count": 3
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Kelly Price",
+   "album": "Mirror Mirror",
+   "year": 2000,
+   "label": "Def Soul",
+   "country": "us",
+   "faction": "r90",
+   "genres": [
+    "soul"
+   ],
+   "why": "《Soul of a Woman》（池中恍惚）後第二張，Def Soul 時期的福音系大嗓抒情盤；慢歌占多數、弦樂墊與教會和聲把聲音撐厚，暖而包覆",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 1.4,
+    "why": "福音式大抒情為主，弦樂與厚貝斯墊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f0bd9bae-06ed-3438-9773-ae74739bd900",
+    "https://coverartarchive.org/release/edd08149-b29a-4059-b1e2-2fafdf60948c/33144304430.jpg",
+    "https://music.apple.com/us/album/mirror-mirror/1440918545"
+   ],
+   "mbRgMbid": "f0bd9bae-06ed-3438-9773-ae74739bd900",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "含〈Love Sets You Free〉等少數中板／嘻哈拍，研究層請核慢歌占比"
+  },
+  {
+   "artist": "Kelly Price",
+   "album": "Priceless",
+   "year": 2003,
+   "label": "Def Soul",
+   "country": "us",
+   "faction": "r90",
+   "genres": [
+    "soul"
+   ],
+   "why": "第三張，〈He Proposed〉一路的成人抒情慢盤；福音腔大嗓配弦樂與厚和聲，整張慢而熱",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 1.4,
+    "why": "慢板抒情為主，管弦墊、教會和聲，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/14e9556d-6e81-3aca-80c5-c4598d36dba5",
+    "https://coverartarchive.org/release/31ae4199-637b-4a7d-a79f-a007f51172a8/28688405192.jpg",
+    "https://music.apple.com/us/album/priceless/1443072518"
+   ],
+   "mbRgMbid": "14e9556d-6e81-3aca-80c5-c4598d36dba5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kelly Price",
+   "album": "This Is Who I Am",
+   "year": 2006,
+   "label": "Gospo Centric",
+   "country": "us",
+   "faction": "r90",
+   "genres": [
+    "soul"
+   ],
+   "why": "轉向福音靈魂的成人抒情盤，風琴、合唱與慢板鼓把大嗓裹住；溫熱、慢、厚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 1.5,
+    "why": "福音靈魂慢歌，風琴與和聲墊厚，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8b2f908d-354c-39bd-be03-41dd3a3bbbba",
+    "https://coverartarchive.org/release/5a75987b-3ea9-40a2-b3c1-d7bcb78ba39d/34157368263.jpg",
+    "https://music.apple.com/us/album/this-is-who-i-am/1308901470"
+   ],
+   "mbRgMbid": "8b2f908d-354c-39bd-be03-41dd3a3bbbba",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "福音成分高，genres 仍放 soul；研究層核是否算 R&B 盤"
+  },
+  {
+   "artist": "Kelly Price",
+   "album": "Kelly",
+   "year": 2011,
+   "label": "My Block",
+   "country": "us",
+   "faction": "r90",
+   "genres": [
+    "soul"
+   ],
+   "why": "2011 年回歸 R&B 的慢盤，〈Not My Daddy〉式對唱慢歌與復古弦樂編曲為主，厚而暖",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 1.5,
+    "why": "復古慢板靈魂，厚低頻與管弦，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bc35ac82-c978-4dc1-8e4f-137dcf8fbe5c",
+    "https://coverartarchive.org/release/dc775d57-0dd2-4d2f-b226-fa86a7c1e455/29994939004.jpg"
+   ],
+   "mbRgMbid": "bc35ac82-c978-4dc1-8e4f-137dcf8fbe5c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 搜尋只回錯盤，證據用 MB＋CAA"
+  },
+  {
+   "artist": "Syleena Johnson",
+   "album": "Chapter 1: Love, Pain & Forgiveness",
+   "year": 2001,
+   "label": "Jive",
+   "country": "us",
+   "faction": "r90",
+   "genres": [
+    "soul"
+   ],
+   "why": "《Chapter 2》（池中恍惚）前作出道盤，芝加哥靈魂底子的慢板 R&B，粗嗓配 Rhodes、厚貝斯與弦樂，溫熱",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 1.2,
+    "why": "芝加哥靈魂慢歌，厚貝斯與 Rhodes，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/62f1700b-cd57-303a-bb43-4451e56c849e",
+    "https://coverartarchive.org/release/bdbb06d7-e879-4607-ab25-e241ea4a9fbf/13666465630.jpg",
+    "https://music.apple.com/us/album/chapter-1-love-pain-and-forgiveness/299673535"
+   ],
+   "mbRgMbid": "62f1700b-cd57-303a-bb43-4451e56c849e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發 2002-03-18（他國版），美國原版 2001；年份取 2001，研究層核"
+  },
+  {
+   "artist": "Vesta Williams",
+   "album": "Special",
+   "year": 1991,
+   "label": "A&M",
+   "country": "us",
+   "faction": "qs",
+   "genres": [
+    "soul"
+   ],
+   "why": "A&M 時期 quiet storm 女聲二線，〈Congratulations〉大抒情代表；合成器墊與厚貝斯把高亢女聲墊住，暖",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.8,
+    "z": 1.4,
+    "why": "quiet storm 抒情為主，合成器墊＋厚貝斯，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9b464cb0-3b51-4760-9eff-c421ee9f9502",
+    "https://coverartarchive.org/release/b309cfe6-71d6-4361-b3a1-6b8637a011e4/26192349113.jpg",
+    "https://music.apple.com/us/album/special/1443932390"
+   ],
+   "mbRgMbid": "9b464cb0-3b51-4760-9eff-c421ee9f9502",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有部分中板 new jack 曲，研究層核占比"
+  },
+  {
+   "artist": "Vesta Williams",
+   "album": "Everything -n- More",
+   "year": 1993,
+   "label": "A&M",
+   "country": "us",
+   "faction": "qs",
+   "genres": [
+    "soul"
+   ],
+   "why": "A&M 第三張，以成人抒情慢歌為主的 quiet storm 盤；弦樂墊、溫熱混響包住人聲",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 1.4,
+    "why": "成人抒情慢盤，弦樂與合成器墊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9dc78e4a-9a79-3b24-9d95-7dfb4110b9e8",
+    "https://coverartarchive.org/release/e59daf7e-e64c-4600-b40f-8198f8672046/34186627548.jpg",
+    "https://music.apple.com/us/album/everything-n-more/1444024126"
+   ],
+   "mbRgMbid": "9dc78e4a-9a79-3b24-9d95-7dfb4110b9e8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "名稱照 MB「Everything -n- More」"
+  },
+  {
+   "artist": "Vesta Williams",
+   "album": "Relationships",
+   "year": 1998,
+   "label": "Ichiban",
+   "country": "us",
+   "faction": "qs",
+   "genres": [
+    "soul"
+   ],
+   "why": "Ichiban 時期的成人 R&B 慢盤，quiet storm 電台型抒情一路到底，慢而濃",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 1.4,
+    "why": "成人抒情慢歌，厚貝斯、溫熱混響，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c5edc9fb-38b8-3fb8-817b-cb8ebcdce304",
+    "https://coverartarchive.org/release/ab11db85-4617-4a5b-8040-25c5bb1a9bc0/34186643847.jpg"
+   ],
+   "mbRgMbid": "c5edc9fb-38b8-3fb8-817b-cb8ebcdce304",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 無此盤，證據用 MB＋CAA"
+  },
+  {
+   "artist": "Vesta Williams",
+   "album": "Distant Lover",
+   "year": 2007,
+   "label": "Shanachie",
+   "country": "us",
+   "faction": "qs",
+   "genres": [
+    "soul"
+   ],
+   "why": "Shanachie 靈魂經典翻唱盤（標題曲為 Marvin Gaye 名曲），慢板靈魂編曲、厚貝斯與弦樂墊，溫熱包覆",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 1.5,
+    "why": "靈魂經典慢歌翻唱，厚低頻弦樂，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/146ed830-e25e-37e8-83d7-260942e88033",
+    "https://coverartarchive.org/release/85c3d622-e6f7-407e-87dc-b8e3e895be5d/34186651338.jpg",
+    "https://music.apple.com/us/album/distant-lover/1564964012"
+   ],
+   "mbRgMbid": "146ed830-e25e-37e8-83d7-260942e88033",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Oleta Adams",
+   "album": "Circle of One",
+   "year": 1990,
+   "label": "Fontana",
+   "country": "us",
+   "faction": "qs",
+   "genres": [
+    "soul"
+   ],
+   "why": "Tears for Fears 引薦的出道大碟，〈Get Here〉代表的鋼琴福音 quiet storm；慢、弦樂與寬殘響把渾厚女中音包住",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 1.2,
+    "why": "鋼琴福音抒情，弦樂與殘響墊厚，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d79ff214-165d-3c36-a887-52e70425cbf2",
+    "https://coverartarchive.org/release/57b8af39-8da1-4338-aeb1-0480d2291e03/16318776876.jpg",
+    "https://music.apple.com/us/album/circle-of-one/1443998239"
+   ],
+   "mbRgMbid": "d79ff214-165d-3c36-a887-52e70425cbf2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "製作人 Orzabal／Bascombe，可能偏英式乾淨；研究層核質地"
+  },
+  {
+   "artist": "Oleta Adams",
+   "album": "Evolution",
+   "year": 1993,
+   "label": "Fontana",
+   "country": "us",
+   "faction": "qs",
+   "genres": [
+    "soul"
+   ],
+   "why": "第二張，延續鋼琴福音抒情的成人慢盤，厚弦樂與溫熱混響，慢而濃",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 1.3,
+    "why": "鋼琴抒情慢盤，弦樂墊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a7e10e97-349d-3711-a80b-d12a18d88d21",
+    "https://coverartarchive.org/release/5cc0a4c6-f983-4436-a074-a6e6b510f542/3176157683.jpg",
+    "https://music.apple.com/us/album/evolution/1443922953"
+   ],
+   "mbRgMbid": "a7e10e97-349d-3711-a80b-d12a18d88d21",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Oleta Adams",
+   "album": "Moving On",
+   "year": 1995,
+   "label": "Fontana",
+   "country": "us",
+   "faction": "qs",
+   "genres": [
+    "soul"
+   ],
+   "why": "轉向成人 R&B 的第三張，慢板與中慢板交替，厚貝斯與合成器墊包住人聲",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 1.3,
+    "why": "成人 R&B 抒情，厚貝斯與合成器墊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ac9cc782-6189-376a-857b-46b168cd0895",
+    "https://coverartarchive.org/release/9e92330e-f237-418b-9aa4-71c5b322e8f3/44829019019.jpg",
+    "https://music.apple.com/us/album/movin-on/1444007922"
+   ],
+   "mbRgMbid": "ac9cc782-6189-376a-857b-46b168cd0895",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 盤名「Movin' On」，以 MB「Moving On」為準"
+  },
+  {
+   "artist": "Oleta Adams",
+   "album": "All the Love",
+   "year": 2001,
+   "label": "Monarch",
+   "country": "us",
+   "faction": "qs",
+   "genres": [
+    "soul"
+   ],
+   "why": "Monarch 時期的成人抒情盤，鋼琴、弦樂與教會和聲一路慢到底，溫熱",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 1.4,
+    "why": "抒情慢歌為主，鋼琴弦樂，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a70bd325-ef5a-3ed4-b96a-248e98daa8e0",
+    "https://coverartarchive.org/release/98432f21-b09f-4288-bcaa-8f0ccc972876/34106950421.jpg",
+    "https://music.apple.com/us/album/all-the-love/383997929"
+   ],
+   "mbRgMbid": "a70bd325-ef5a-3ed4-b96a-248e98daa8e0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lisa Fischer",
+   "album": "So Intense",
+   "year": 1991,
+   "label": "Elektra",
+   "country": "us",
+   "faction": "qs",
+   "genres": [
+    "soul"
+   ],
+   "why": "唯一個人專輯，〈How Can I Ease the Pain〉（葛萊美）代表的 quiet storm 大抒情；弦樂、合成器墊與殘響包住寬廣嗓音",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 1.3,
+    "why": "大抒情慢歌，弦樂與合成器墊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f3c1798e-ce0f-3d54-8979-068f1e1d24c5",
+    "https://coverartarchive.org/release/23598b09-a128-43a5-a6ec-d6f20cacaf64/28330386286.jpg"
+   ],
+   "mbRgMbid": "f3c1798e-ce0f-3d54-8979-068f1e1d24c5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 無此盤，證據用 MB＋CAA"
+  },
+  {
+   "artist": "Miki Howard",
+   "album": "Love Confessions",
+   "year": 1987,
+   "label": "Atlantic",
+   "country": "us",
+   "faction": "qs",
+   "genres": [
+    "soul"
+   ],
+   "why": "《Miki Howard》《Femme Fatale》（池中恍惚）前作，80s 末 quiet storm 女聲，合成器墊、厚貝斯與慢板對唱",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 1.2,
+    "why": "80s 末 quiet storm，合成器墊＋厚貝斯，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/db590140-948e-3708-989a-5f508c09f597",
+    "https://coverartarchive.org/release/ef69c0da-a734-4673-979d-151a0f4eac6f/34162675162.jpg",
+    "https://music.apple.com/us/album/love-confessions/305117423"
+   ],
+   "mbRgMbid": "db590140-948e-3708-989a-5f508c09f597",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "80s 數位製作，研究層核是否偏乾淨"
+  },
+  {
+   "artist": "Phyllis Hyman",
+   "album": "Forever With You",
+   "year": 1998,
+   "label": "Philadelphia International",
+   "country": "us",
+   "faction": "qs",
+   "genres": [
+    "soul"
+   ],
+   "why": "身後發行的最後錄音，延續《I Refuse to Be Lonely》（池中恍惚）的深夜抒情，低沉嗓音配弦樂與合成器墊",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 1.0,
+    "why": "身後發行的抒情慢盤，弦樂墊，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e06ccd04-c83e-3301-bf9a-8732287b05ec",
+    "https://coverartarchive.org/release/c899da38-6a60-495a-aa87-0f23777ba8ad/30151967881.jpg",
+    "https://music.apple.com/us/album/forever-with-you/948137712"
+   ],
+   "mbRgMbid": "e06ccd04-c83e-3301-bf9a-8732287b05ec",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Chanté Moore",
+   "album": "Exposed",
+   "year": 2000,
+   "label": "MCA",
+   "country": "us",
+   "faction": "r90",
+   "genres": [
+    "soul"
+   ],
+   "why": "MCA 時期第四張，Chanté Moore 池中四張皆落恍惚；〈Bitter〉〈Take Care of Me〉一路慢歌，厚貝斯與弦樂墊",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 1.3,
+    "why": "慢歌為主，厚貝斯與弦樂墊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c9ac50ad-1aca-391d-8218-e2c383b498b5",
+    "https://coverartarchive.org/release/42c07976-e7fa-47e0-8da3-cb21468b62c5/38014992212.jpg",
+    "https://music.apple.com/us/album/exposed/1444055752"
+   ],
+   "mbRgMbid": "c9ac50ad-1aca-391d-8218-e2c383b498b5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "〈Straight Up〉為快歌單曲，研究層核快歌占比"
+  },
+  {
+   "artist": "Chanté Moore",
+   "album": "Moore Is More",
+   "year": 2013,
+   "label": "Shanachie",
+   "country": "us",
+   "faction": "qs",
+   "genres": [
+    "soul"
+   ],
+   "why": "Shanachie 時期回歸盤，成人 quiet storm 慢歌為主、弦樂與溫熱混響，延續池中同人落恍惚的質地",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 1.4,
+    "why": "成人抒情慢盤，溫熱弦樂，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ee590812-85fd-4908-9e96-45440d644d93",
+    "https://coverartarchive.org/release/bebbe7ef-475d-4e7f-912e-fc82fe718abc/20134965554.jpg",
+    "https://music.apple.com/us/album/moore-is-more/1588455317"
+   ],
+   "mbRgMbid": "ee590812-85fd-4908-9e96-45440d644d93",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lalah Hathaway",
+   "album": "Honestly",
+   "year": 2017,
+   "label": "Hathaway Entertainment",
+   "country": "us",
+   "faction": "ns",
+   "genres": [
+    "soul"
+   ],
+   "why": "池中三張皆恍惚的 Lalah Hathaway 2017 盤；厚低頻、合成器墊與層疊和聲，慢而濃",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 1.0,
+    "why": "慢板合成器墊、厚低頻，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d0e5b8d9-cbce-4466-ad69-08279778b348",
+    "https://coverartarchive.org/release/ae16ca04-e131-43d6-998d-c41519204568/30011043295.jpg"
+   ],
+   "mbRgMbid": "d0e5b8d9-cbce-4466-ad69-08279778b348",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 搜尋無結果，證據用 MB＋CAA"
+  },
+  {
+   "artist": "Mica Paris",
+   "album": "Whisper a Prayer",
+   "year": 1993,
+   "label": "4th & Broadway",
+   "country": "gb",
+   "faction": "qs",
+   "genres": [
+    "soul"
+   ],
+   "why": "英國靈魂女聲第三張，標題曲福音抒情代表；弦樂墊與溫熱混響撐起慢板 R&B",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 1.2,
+    "why": "英倫靈魂抒情，弦樂墊與殘響，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/baaa75dc-75f6-3dae-b6ce-556972c1471d",
+    "https://coverartarchive.org/release/cc44d040-74a2-4f79-adc0-1ca3502b00d0/34161678761.jpg",
+    "https://music.apple.com/us/album/whisper-a-prayer/1444037625"
+   ],
+   "mbRgMbid": "baaa75dc-75f6-3dae-b6ce-556972c1471d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "中板曲比例不明，研究層核"
+  },
+  {
+   "artist": "Marsha Ambrosius",
+   "album": "Nyla",
+   "year": 2018,
+   "label": "Human Re Sources",
+   "country": "us",
+   "faction": "ns",
+   "genres": [
+    "soul"
+   ],
+   "why": "池中兩張皆恍惚的 Floetry 主唱第三張；慢板、濕混響與厚低頻層層疊，深夜而暖",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "慢板濕混響、厚低頻，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/11a4a0b0-ed1a-467c-9dd2-5377b4a6192b",
+    "https://coverartarchive.org/release/ee3f8481-84ca-408a-83bb-14b470aca50c/21073993999.jpg",
+    "https://music.apple.com/us/album/nyla/1433791503"
+   ],
+   "mbRgMbid": "11a4a0b0-ed1a-467c-9dd2-5377b4a6192b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Marsha Ambrosius",
+   "album": "Casablanco",
+   "year": 2024,
+   "label": "Aftermath",
+   "country": "us",
+   "faction": "ns",
+   "genres": [
+    "soul"
+   ],
+   "why": "Dr. Dre 監製的電影感慢板盤，取樣弦樂、厚貝斯與濕殘響，延續池中同人落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": 1.1,
+    "why": "電影感慢歌，弦樂與厚貝斯，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ad614af0-1851-49fc-86da-e874cf3e9b72",
+    "https://coverartarchive.org/release/8fd78a71-f67b-4256-9061-acb1f7202580/39206950660.jpg",
+    "https://music.apple.com/us/album/casablanco/1753393051"
+   ],
+   "mbRgMbid": "ad614af0-1851-49fc-86da-e874cf3e9b72",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "2024 年，Aftermath 發行"
+  },
+  {
+   "artist": "Leela James",
+   "album": "Loving You More... In the Spirit of Etta James",
+   "year": 2012,
+   "label": "Shanachie",
+   "country": "us",
+   "faction": "ns",
+   "genres": [
+    "soul"
+   ],
+   "why": "向 Etta James 致敬的翻唱盤，〈At Last〉〈I'd Rather Go Blind〉等慢板藍調靈魂，粗嗓配管弦與厚貝斯",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 1.4,
+    "why": "Etta James 慢歌翻唱，管弦厚，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9bbdb099-8114-4891-bea7-2442f83c12ba",
+    "https://coverartarchive.org/release/f63cae0f-32cd-4387-8056-c05170d3bd4d/33477620666.jpg",
+    "https://music.apple.com/us/album/loving-you-more-in-the-spirit-of-etta-james/1566498959"
+   ],
+   "mbRgMbid": "9bbdb099-8114-4891-bea7-2442f83c12ba",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ml49 同人《A Change Is Gonna Come》因中速 groove 未用；本盤以慢歌翻唱為主，研究層核"
+  },
+  {
+   "artist": "Leela James",
+   "album": "Fall for You",
+   "year": 2014,
+   "label": "BMG",
+   "country": "us",
+   "faction": "ns",
+   "genres": [
+    "soul"
+   ],
+   "why": "BMG 時期成人 R&B 盤，標題曲慢板代表，風琴、厚貝斯與教會和聲，溫熱",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 1.4,
+    "why": "成人 R&B 慢歌，厚貝斯風琴，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dfa58b6f-9083-46d1-8e34-551b716a7601",
+    "https://coverartarchive.org/release/f718bfe6-1ab7-436e-b210-c94e04141024/39509806417.jpg",
+    "https://music.apple.com/us/album/fall-for-you/1528521341"
+   ],
+   "mbRgMbid": "dfa58b6f-9083-46d1-8e34-551b716a7601",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "中板曲占比不明，研究層核"
+  },
+  {
+   "artist": "Goapele",
+   "album": "Change It All",
+   "year": 2005,
+   "label": "Skyblaze/Columbia",
+   "country": "us",
+   "faction": "ns",
+   "genres": [
+    "soul"
+   ],
+   "why": "《Even Closer》（池中恍惚）後第二張，灣區慢板 neo-soul，霧狀合成器墊與鬆拍，溫",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 1.0,
+    "why": "灣區慢板 neo-soul，霧狀合成器墊，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f404e8a1-e5fe-3d7e-a003-516574404185",
+    "https://coverartarchive.org/release/5a3f7000-cbb3-43a9-80a6-5af38822e69b/11389531517.jpg",
+    "https://music.apple.com/us/album/change-it-all/1736169338"
+   ],
+   "mbRgMbid": "f404e8a1-e5fe-3d7e-a003-516574404185",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Goapele",
+   "album": "Break of Dawn",
+   "year": 2011,
+   "label": "Skyblaze",
+   "country": "us",
+   "faction": "ns",
+   "genres": [
+    "soul"
+   ],
+   "why": "自主發行的第三張，慢板電子 R&B，濕混響與合成器墊包住輕柔人聲",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.9,
+    "why": "慢板 R&B，濕混響合成器墊，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9719330a-a095-48d1-8059-a0a6437d426c",
+    "https://coverartarchive.org/release/24baa03f-f6f5-429f-86e8-db46f4fd3e57/38411084393.jpg",
+    "https://music.apple.com/us/album/break-of-dawn/1569899183"
+   ],
+   "mbRgMbid": "9719330a-a095-48d1-8059-a0a6437d426c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "質地可能偏乾淨，研究層核"
+  },
+  {
+   "artist": "Raveena",
+   "album": "Asha's Awakening",
+   "year": 2022,
+   "label": "Warner",
+   "country": "us",
+   "faction": "ns",
+   "genres": [
+    "soul"
+   ],
+   "why": "《Lucid》（池中恍惚）後第二張，宇宙公主概念盤，殘響霧、弦樂與寶萊塢取樣，慢而暖",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": 1.2,
+    "why": "夢幻慢板，殘響霧與弦樂，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/834d62b4-cf02-4ae6-9812-0b369102a48c",
+    "https://coverartarchive.org/release/1c325311-042b-4389-a425-50f3c71194a7/32002724950.jpg"
+   ],
+   "mbRgMbid": "834d62b4-cf02-4ae6-9812-0b369102a48c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有少數律動曲，研究層核"
+  },
+  {
+   "artist": "Sabrina Claudio",
+   "album": "No Rain, No Flowers",
+   "year": 2018,
+   "label": "SC Entertainment",
+   "country": "us",
+   "faction": "ns",
+   "genres": [
+    "soul"
+   ],
+   "why": "池中兩張皆恍惚的 Sabrina Claudio 2018 盤，耳語式慢板 R&B，殘響與合成器墊霧濛濛",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "低語慢歌，殘響霧與吉他，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/46b401c4-ff05-4dda-b7b2-ebd01ba10d88",
+    "https://coverartarchive.org/release/24f43fba-0cd5-40c9-a6c7-fa50954f0eff/27932751079.jpg",
+    "https://music.apple.com/us/album/no-rain-no-flowers/1424393374"
+   ],
+   "mbRgMbid": "46b401c4-ff05-4dda-b7b2-ebd01ba10d88",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Sabrina Claudio",
+   "album": "Based on a Feeling",
+   "year": 2022,
+   "label": "Atlantic",
+   "country": "us",
+   "faction": "ns",
+   "genres": [
+    "soul"
+   ],
+   "why": "2022 年專輯，延續低語慢板、厚合成器墊與濕混響",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "慢板 R&B，厚墊與濕混響，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fe8856e5-836b-4a85-a53e-90253a16830b",
+    "https://coverartarchive.org/release/a15681f2-6956-40fe-9d83-d783caf7f5ff/32719645728.jpg",
+    "https://music.apple.com/us/album/based-on-a-feeling/1615098416"
+   ],
+   "mbRgMbid": "fe8856e5-836b-4a85-a53e-90253a16830b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Alina Baraz",
+   "album": "It Was Divine",
+   "year": 2020,
+   "label": "Mom + Pop",
+   "country": "us",
+   "faction": "ns",
+   "genres": [
+    "soul"
+   ],
+   "why": "電子 downtempo 與 R&B 交界的慢盤，霧狀合成器墊、厚低頻與呢喃人聲",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "電子 R&B 慢歌，霧狀合成器與低頻，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/10e6ba98-2645-468f-9aa0-ad2710140dd7",
+    "https://coverartarchive.org/release/f8cb7c4e-386f-4534-ba83-05672a025244/26021571407.jpg"
+   ],
+   "mbRgMbid": "10e6ba98-2645-468f-9aa0-ad2710140dd7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Alina Baraz",
+   "album": "The Color of You",
+   "year": 2018,
+   "label": "Mom + Pop",
+   "country": "us",
+   "faction": "ns",
+   "genres": [
+    "soul"
+   ],
+   "why": "首張全長，電子 downtempo 與 R&B 的慢盤，殘響霧與低頻墊包住人聲",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.0,
+    "z": 0.9,
+    "why": "電子慢板 R&B，殘響霧，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6d6ead6c-3e85-45ce-88a8-8dc9b49e1473",
+    "https://coverartarchive.org/release/d21c3478-291c-440a-a1e9-eb8cdeadb03e/32800970569.jpg",
+    "https://music.apple.com/us/album/the-color-of-you/1881363051"
+   ],
+   "mbRgMbid": "6d6ead6c-3e85-45ce-88a8-8dc9b49e1473",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 列 Album（2018）；研究層核是否被視為 EP"
+  },
+  {
+   "artist": "Celeste",
+   "album": "Not Your Muse",
+   "year": 2021,
+   "label": "Polydor",
+   "country": "gb",
+   "faction": "ns",
+   "genres": [
+    "soul"
+   ],
+   "why": "英國復古靈魂女聲首張，管弦抒情為主，弦樂與溫熱殘響包住煙嗓",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 1.0,
+    "why": "管弦慢歌，溫熱殘響，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/07a41871-12aa-4b90-ac94-9beac1854de2",
+    "https://coverartarchive.org/release/4c840b71-2987-4273-9dad-59f32bc7e079/44217064351.png"
+   ],
+   "mbRgMbid": "07a41871-12aa-4b90-ac94-9beac1854de2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "〈Love Is Back〉等中板；藝人名「Celeste」與他人同名，研究層核身分／介紹撞名"
+  },
+  {
+   "artist": "Andra Day",
+   "album": "Cheers to the Fall",
+   "year": 2015,
+   "label": "Warner Bros.",
+   "country": "us",
+   "faction": "ns",
+   "genres": [
+    "soul"
+   ],
+   "why": "〈Rise Up〉代表的復古爵士靈魂抒情盤，Saadiq 參與；鋼琴、管樂與弦樂厚，慢而暖",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 1.3,
+    "why": "復古靈魂抒情，管樂弦樂厚，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e4e58303-fc2c-4447-8dd7-9accb5f5ba0a",
+    "https://coverartarchive.org/release/38214885-dbc2-44cf-b15d-ccd9a2e1971c/11322660496.jpg",
+    "https://music.apple.com/us/album/cheers-to-the-fall/996787628"
+   ],
+   "mbRgMbid": "e4e58303-fc2c-4447-8dd7-9accb5f5ba0a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "YEBBA",
+   "album": "Dawn",
+   "year": 2021,
+   "label": "RCA",
+   "country": "us",
+   "faction": "ns",
+   "genres": [
+    "soul"
+   ],
+   "why": "Mark Ronson 製作的首張，以喪母為題的慢板靈魂盤，厚弦樂、Rhodes 與殘響",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "慢板悲傷靈魂，厚弦樂與殘響，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/594f931f-d19f-4cdb-98aa-fd4c1b52b966",
+    "https://coverartarchive.org/release/1d111070-f18f-495d-b170-d3eaabbac712/30376354453.jpg"
+   ],
+   "mbRgMbid": "594f931f-d19f-4cdb-98aa-fd4c1b52b966",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫偏憂傷，研究層核樂評字眼"
+  },
+  {
+   "artist": "Quadron",
+   "album": "Quadron",
+   "year": 2010,
+   "label": "Plug Research",
+   "country": "dk",
+   "faction": "ns",
+   "genres": [
+    "soul"
+   ],
+   "why": "丹麥二人組首張，Coco O. 的慢板靈魂配類比合成器墊與溫熱殘響",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.8,
+    "z": 1.0,
+    "why": "丹麥慢板 soul，類比墊與殘響，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2667527f-338a-43b2-88c4-eb75d12f734b",
+    "https://coverartarchive.org/release/9780c05d-7a75-45a5-9810-6c07f5f57609/18208181632.jpg"
+   ],
+   "mbRgMbid": "2667527f-338a-43b2-88c4-eb75d12f734b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "質地可能偏乾淨；MB 2010，丹麥原發 2009？研究層核年份"
+  },
+  {
+   "artist": "Syd",
+   "album": "Broken Hearts Club",
+   "year": 2022,
+   "label": "Columbia",
+   "country": "us",
+   "faction": "ns",
+   "genres": [
+    "soul"
+   ],
+   "why": "The Internet 主唱第二張，情歌慢板為主，濕混響與合成器墊",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 0.7,
+    "why": "慢板 R&B，濕混響合成器墊，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ae8901a0-24f3-4c07-bee0-6d17bb3847fa",
+    "https://coverartarchive.org/release/53d56a2c-9012-4a1d-98a1-d4feaea29801/32205769510.jpg"
+   ],
+   "mbRgMbid": "ae8901a0-24f3-4c07-bee0-6d17bb3847fa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "前作《Fin》偏冷不提；本盤色溫研究層核"
+  },
+  {
+   "artist": "Shara Nelson",
+   "album": "What Silence Knows",
+   "year": 1993,
+   "label": "Cooltempo",
+   "country": "gb",
+   "faction": "dt",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Massive Attack〈Unfinished Sympathy〉主唱的首張個人盤，Bristol 系 trip-hop 靈魂，弦樂、厚低頻與殘響",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "trip-hop 靈魂，弦樂與厚低頻，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/be3b2332-cb32-3d4d-a9e2-271c297146d4",
+    "https://coverartarchive.org/release/cb75e746-4937-4a90-961e-6768c6b69f05/34645731364.jpg",
+    "https://music.apple.com/us/album/what-silence-knows/1629186890"
+   ],
+   "mbRgMbid": "be3b2332-cb32-3d4d-a9e2-271c297146d4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Hollie Cook",
+   "album": "Happy Hour",
+   "year": 2022,
+   "label": "Merge",
+   "country": "gb",
+   "faction": "dt",
+   "genres": [
+    "world"
+   ],
+   "why": "池中三張皆恍惚的 tropical lovers rock 女聲第四張，厚貝斯、回音與夢幻和聲",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.0,
+    "z": 1.4,
+    "why": "lovers rock，回音與厚貝斯，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/21264482-c6d0-4c0c-8abf-2efbdaa40e4f",
+    "https://coverartarchive.org/release/5427d6ef-2302-4457-b7bd-1a38ee855673/32856427145.jpg",
+    "https://music.apple.com/us/album/happy-hour/1839174011"
+   ],
+   "mbRgMbid": "21264482-c6d0-4c0c-8abf-2efbdaa40e4f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Aisha",
+   "album": "High Priestess",
+   "year": 1987,
+   "label": "Ariwa",
+   "country": "gb",
+   "faction": "dt",
+   "genres": [
+    "world"
+   ],
+   "why": "Mad Professor 的 Ariwa 女聲 roots 盤，厚低音、dub 回音與靈性旋律",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "Ariwa roots，厚低音與 dub 回音，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9903fcf4-83f5-46cd-a820-4819797b0d05",
+    "https://www.discogs.com/master/280349-Aisha-High-Priestess",
+    "https://music.apple.com/us/album/the-high-priestess/286618874"
+   ],
+   "mbRgMbid": "9903fcf4-83f5-46cd-a820-4819797b0d05",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs master 1987（UK ARI LP 029），MB 首發 1988（德版）；年份取 1987。藝人名 Aisha 撞名風險，研究層核；CAA 無圖，封面取 Discogs／Apple"
+  }
+ ],
+ "notes": [
+  "共 39 張（目標 54，未湊數）：主場景（90s–00s 女聲 R&B 慢盤）頭牌池中幾乎全判輕，二線能找到整張慢歌、非 new jack／hip-hop 拍的盤很少，主力移到 quiet storm 成人抒情與 2000s–20s 濕暖慢盤。",
+  "主流頭牌依派工不提：Toni Braxton、SWV、Brandy、Monica、Tamia、Faith Evans、Aaliyah、MJB、Xscape、Total、Jade、702、Zhané、Whitney、Jill Scott、Keyshia Cole、Ella Mai、Kehlani、Jazmine Sullivan、Amerie（池中 y ≤ 0.4）；Jhené Aiko、Snoh Aalegra、Cleo Sol、Summer Walker、Angie Stone 前兩張、Tweet、Amel Larrieux、Vivian Green、Yolanda Adams、Anita Baker 其餘盤、Teena Marie 池中判輕，同人其他盤不提。",
+  "研究層已汰的同人／同盤不重提：Changing Faces、Heather Headley、Kindred、Leela James《A Change Is Gonna Come》、Regina Belle《Believe in Me》、Miki Howard《Pillow Talk》、Lalah《Where It All Begins》、Vivian Green、Angie Stone《Unexpected》。Leela James 另提兩張慢歌盤，已在 uncertain 標註。",
+  "不提理由：Deborah Cox（Arista 乾淨數位、舞曲混音多）、Keke Wyatt《Unbelievable!》（同人《Soul Sista》池中 y 0.5 貼線）、Alyson Williams（聲音資料不足）、Angela Winbush《Sharp》《The Real Thing》（中快板 funk）、Shirley Murdock（Zapp 系 funk 混合）、Lovers rock 女聲（Carroll Thompson、Janet Kay、Marcia Griffiths 池中判輕）、Goldfrapp／Morcheeba／Zero 7／Supreme Beings of Leisure 其他盤（池中判輕或冷）、Syd《Fin》、Kali Uchis《Isolation》（偏亮）。 Lady Wray《Piece of Me》ml5 已以 x 貼邊不提，本批照做。",
+  "Apple 搜尋回錯盤或查無的（Kelly Price《Kelly》、Vesta《Relationships》、Lisa Fischer、Lalah《Honestly》、Raveena、Alina《It Was Divine》、Celeste、YEBBA、Quadron、Syd）只用 MB＋CAA 兩條證據；CAA 38/39 有封面，唯 Aisha《High Priestess》CAA 無圖，封面取 Discogs／Apple。藝人名 Aisha 為池中 Maisha 的子字串、Celeste 與 Celeste Legaspi 子字串，去重 0 但藝人介紹鍵請主線留意。",
+  "MB 全數釘住（39/39），人工身分 0；WebSearch 0 次。年份核對：Syleena Johnson 取 2001（MB 2002 為他國版）、Aisha 取 1987（Discogs master，MB 1988 德版）、Quadron MB 2010。",
+  "警示：quiet storm 成人抒情池中同型多落 y 0.7–0.9，本批 moodGuess y 多貼 0.8 下緣（與 ml49 同），研究層請嚴汰中快板與乾淨數位製作。"
+ ]
+}
