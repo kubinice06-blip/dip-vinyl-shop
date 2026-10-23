@@ -80,3 +80,8 @@ hook 前提逐張對研究稿 facts 核過（Chrono Cross 加藤指名、Radical
 - 《Xanadu》台灣片名查無來源：正文用原名《Xanadu》＋「1980 年歌舞奇幻電影」描述。《Footloose》寫《渾身是勁》（Footloose）可，但原名必附。
 - Les Mis 卡是 1985 年倫敦英文原版卡司，不是 1980 法語概念專輯；舊稿「照公式應是失敗之作」查無來源刪除。
 - 單一來源條目（Maureen Crowe 提議、Bryan Adams 婉拒、〈Bring Him Home〉專為 Wilkinson 寫）寫作層可用但不加最高級。
+
+## ost-2 研究層回報的推翻（c 組）
+- **《The Lord of the Rings Trilogy》（Howard Shore 卡）這張是 2004 年 City of Prague Philharmonic Orchestra 演奏的三部曲選粹（iTunes TW、MusicBrainz），不是 Shore 指揮的電影原聲。** 裁定：卡保留、藝人欄不動（本線不碰 seed，另有工作階段在動 seed）；正文講電影與 Shore 配樂的故事，並照 research-base「重錄選輯通則」明寫這張由布拉格樂團演奏、非原始電影錄音。舊稿「Shore 本人指揮、不是後人重錄」是錯的。
+- Desplat《Les Aigles de la République》台灣片名《獨裁大明星》（信心中等，原名必附）；配樂作用查不到，thin 卡。
+- 《偷龍轉鳳》片名 uncertain，原名並列。北西北不寫「kaleidoscopic fandango」原話；迷魂記不把〈Scène d'amour〉寫成確定對應《崔斯坦》；雙峰主題曲與〈Laura Palmer's Theme〉分開；英倫對決不寫用了 Cristal Baschet。
