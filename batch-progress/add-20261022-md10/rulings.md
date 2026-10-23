@@ -49,6 +49,9 @@
 - **17418** Infinite Body《Carve Out the Face of My God》：full。無鼓與預估相符；「甜而冷」「Kranky 系」無來源；評論稱「噪音低吼」「刺耳噪音場景」，**moodGuess 存疑（x 可能偏躁）**。Pitchfork 句僅經搜尋摘要轉引。
 - **17419** The Sight Below《Glider》：full。Dub Techno 確認有拍；「悶 kick、無攻擊」無樂評證實，**moodGuess 存疑（x）**。
 - **17420** 研究限制：WebSearch 3 次用於 Valet、Drowse、Infinite Body；Pitchfork／AllMusic／Kranky Bandcamp／Wikipedia Valet 條目皆不可得，Valet 兩張因此只能 thin。無列「建議移除」。
+- **17420-補1**（派工指定 17418–17420，但三號已被 b 組首輪占用，改用 17420-補N）Lycia《A Line That Connects》：full。**label 與卡單不符**：2015 首發是 Handmade Birds HBDIS-085（500 張 CD），Lycium Music 只是版權欄／Bandcamp 標籤，2019 才是 Projekt PROJEKT 361；建議卡面改 Handmade Birds（主線裁）。鼓為程式（Galas）、樂評稱「極簡的鼓」、步調慢、殘響吉他，與 moodGuess 相符；部分曲目較直接（gothic rock、〈Autumn Moon〉帶 dark folk），x 小風險，不需汰換。Pitchfork／PopMatters 句經廠方宣傳稿轉引。
+- **17420-補2** lovesliescrushing《Xuvetyn》：partial。身分（1996-04-22、Projekt PROJEKT 64、18 軌約 76 分）與卡單相符；錄於 1992-01 至 1995-01，四軌混至 DAT。無鼓成立（Wikipedia 幾乎無鼓、人員表僅吉他／E-bow／人聲）；AllMusic 引文提「brute feedback」，躁度可能略高，標 moodGuess 存疑（x／z 邊距小）。聲音面僅 Wikipedia 單源，未見獨立樂評。
+- **17420-補3** 補研究限制：WebSearch 2 次（Lycia 評論有效、Xuvetyn 無關結果）；改用 MB／Discogs API、Scene Point Blank、Chain D.L.K. 宣傳稿、Wikipedia。推翻策展層 1 處（Lycia label）。
 
 ## 研究 c 組（條號 17421–17430）
 - **17421** The Sight Below《It All Falls Apart》：full。**moodGuess 存疑（拍子稀）**：BPM 樂評稱〈Through the Gaps in the Land〉有穩定推進的拍、〈Burn Me Out…〉有脈動節奏，Discogs 標 Dub Techno；但樂評也說非舞曲、少高潮。建議保留標邊緣。
@@ -79,5 +82,5 @@
   - **質地判輕或色溫偏亮**：Jessica Bailiff《Feels Like Home》（樂評兩處都寫成安靜簡單的民謠小品，非 drone）、Drowse《Wane Into It》（真鼓＋扭曲鼓、樂評稱質地「閃爍明亮」）、Cindytalk《Hold Everything Dear》（廠方文案是鋼琴、現場錄音與近乎無聲的抽象配樂）。
 - **17472**：留下但標存疑（評分照聲音打）：Circuit des Yeux《-io》（轟鼓開場、24 人管弦，但慢而沉；池中同藝人落頹靡）、The Sight Below 兩張（dub techno 悶拍，md8 同型 98% 落頹靡）、Drowse《Light Mirror》（四首真鼓）、Clear Horizon（少數曲目有切分鼓）、Infinite Body（噪音低吼）、Zelienople 兩張與 Valet 兩張、Raum、Cantu-Ledesma（聲音無來源，非反證）、Final《3》、SIANspheric 兩張、Amp 兩張、Gazelle Twin、Tropic of Cancer、Esben《Violet Cries》。
 - **17473**：補 2 張（master 候補，主線策展原汰的貼邊張中池中同藝人最穩的）：Lycia《A Line That Connects》（池中 Lycia 四張全落頹靡、y 1.3／z −1.6）、lovesliescrushing《Xuvetyn》（z −0.5 原判貼邊；同藝人《Bloweyelashwish》研究稿聲音相符）。歸 b 組，補研究 append 進 b 組檔。
-- **17474**：照研究層改卡單：Esben and the Witch《Violet Cries》label High Note Records（MB 臺灣版）→ Matador。Scala 成員無 Mark Clifford（已汰）；Lycia《Wake》是 1989 年 50 份四軌卡帶 EP 小樣、Amp 是倫敦創團、《Bliss Out Vol. 4》演奏者為 Walker 與 Mitchell——寫作層照研究稿。
+- **17474**：照研究層改卡單：Lycia《A Line That Connects》label Lycium Music → Handmade Birds（2015 首發 HBDIS-085）；Esben and the Witch《Violet Cries》label High Note Records（MB 臺灣版）→ Matador。Scala 成員無 Mark Clifford（已汰）；Lycia《Wake》是 1989 年 50 份四軌卡帶 EP 小樣、Amp 是倫敦創團、《Bliss Out Vol. 4》演奏者為 Walker 與 Mitchell——寫作層照研究稿。
 - **17475**：**全批 40 張**（策展 54、主線汰 9、研究汰 7、補 2）。
