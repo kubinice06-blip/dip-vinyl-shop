@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **372** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 134、已退回 1）。
+共 **375** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 137、已退回 1）。
 最後更新：2026-10-23
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -306,6 +306,14 @@
 | Michael Prophet 《Serious Reasoning》 | [#1679909](https://www.discogs.com/release/1679909) | 1980 | Island Records | ILPS 9606 | Discogs master 545164 的版本、主線目視與盤名相符 | ok |
 | Tyrone Evans 《Sings Bullwackie Style》 | [#3666291](https://www.discogs.com/release/3666291) | 1982 | Wackie's | WACKIE 3181 | 唯一版本、主線目視與盤名相符 | ok |
 | Wayne Wade 《Black Is Our Colour》 | [#858370](https://www.discogs.com/release/858370) | 1977 | Vivian Jackson (Yabby You) | none | Discogs master 549693 的版本、主線目視與盤名相符 | ok |
+
+## add-20261023-ml41（3 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Likkle Mai 《Dub Is the Universe》 | [#7733102](https://www.discogs.com/release/7733102) | 2012 | MK Starliner | MKD-003 | 唯一版本、主線目視與盤名相符 | ok |
+| LITTLE TEMPO 《Ron Riddim In Dub》 | [#1616405](https://www.discogs.com/release/1616405) | 2000 | Rhythm Republic | RR12-88140 | 唯一版本、主線目視與盤名相符 | ok |
+| Mad Professor 《Bitter Sweet Dub (Dub You Crazy With Love) (Part.3)》 | [#3250500](https://www.discogs.com/release/3250500) | 2008 | Ariwa | VICP64559 | 唯一版本、主線目視與盤名相符 | ok |
 
 ## c49（3 張）
 

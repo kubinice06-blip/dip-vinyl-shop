@@ -1067,7 +1067,7 @@
 </footer>
 
 <script src="card-preview-status.js?v=1"></script>
-<script src="dip-player.js?v=51"></script>
+<script src="dip-player.js?v=52"></script>
 <script src="dip-draw-anim.js?v=4"></script>
 <script src="dip-genre-tree.js?v=5"></script>
 <script src="dip-tune.js?v=13"></script>
@@ -2796,7 +2796,7 @@
     find: {
       title: '找一張來聽', sub: '不知道從何聽起？<br>挑一種方式，挖出屬於你的那張。',
       cards: [
-        ['tune', '頻率選歌', '轉三顆輪子，在整片唱片星空裡一張張掃過去，停在哪張就是哪張。'],
+        ['tune', '頻率光譜', '不分類型，以光譜的方式探索音樂。'],
         ['quiz', '心情選歌', '回答幾個問題，讓心情帶你找到一張唱片。'],
         ['genre', '類型挑片', '從大類一路選到細分類型，挖出那張。'],
         ['artist', '猜你喜歡', '選個領域，用三位藝人的品味猜出你會喜歡的。'],
@@ -4725,7 +4725,7 @@ ${seenList}
                   : `<div class="history-thumb-placeholder">♪</div>`}
                 <div class="history-item-info">
                   <div class="history-item-meta">
-                    <span class="history-item-badge">${r.type === 'artist' ? '猜你喜歡' : r.type === 'genre' ? 'Genre' : r.type === 'tune' ? '頻率選歌' : 'Quiz'}</span>
+                    <span class="history-item-badge">${r.type === 'artist' ? '猜你喜歡' : r.type === 'genre' ? 'Genre' : r.type === 'tune' ? '頻率光譜' : 'Quiz'}</span>
                     <span class="history-item-date">${r.date}</span>
                   </div>
                   <div class="history-item-artist">${r.artist || ''}</div>
