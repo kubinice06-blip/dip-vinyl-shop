@@ -52,3 +52,25 @@
 - 11518：Jeff Mills《Cycle 30》**建議汰換**：Discogs 為單張 12 吋 Special Cut（A 面 8 段鎖槽加 B 面 3 首），維基作品表標 EP，推翻卡單「專輯」定性；MB 雖列 Album，實質不符專輯卡池。
 - 11519：Jeff Mills《The Power》14 首 CD 專輯（Axis AXCD-042，2011-04-19），附 Mills 寫的 16 頁原創故事；Axis 官網的 The Sleeper 系列有一章叫 The Power，但頁面未明說與這張專輯的關係，facts 只寫並列事實、不寫因果；維基同年另有同名 EP。無聲音描述，moodGuess 存疑（可能含氛圍段），status thin。
 - 11520：本組 WebSearch 用 3 次（Rian Treanor ATAXIA、File Under UK Metaplasm、Paradygm Shift）；Pitchfork 被封鎖、AllMusic／Discogs 網頁／RYM／Sputnikmusic／RA 評論頁皆 403 或無，Discogs 與 MB 改走 API；Richard Devine、Sutekh、Hood《Hoodlum》、Mills 四張因此只有 Discogs 風格與曲目事實，聲音事實（2–3 條）未達要求，已在各卡 notes 與報告列明。
+
+## 研究 b 組
+- 11491：Gaiser《False Light》RA 新聞稿稱這是 Jon Gaiser 的第三張專輯（前兩張亦在 Minus），推翻卡單 curatorWhy「第二張 M_nus 專輯」；找不到本作樂評，聲音事實取 RA 藝人頁風格描述（氣氛感、低頻驅動）與前作《Blank Fade》樂評，status 標 thin；moodGuess 輕度存疑（低頻驅動、曲長七八分鐘，y 可能高於 0）。
+- 11492：Troy Pierce《Gone Astray》RA 樂評收錄標題為「Gone Astray EP」，但評的曲目皆在本專輯曲單（含 Louderbach、Konrad Black 混音曲），照同批發行的評論使用並在 notes 提醒；樂評聽到厚、層疊、抽象、dub 式回音與 acid 線，並說非舞池導向，moodGuess 存疑（x 可能低於 3.6、y 可能高於 0）。
+- 11493：Theorem《Nano》找不到本作樂評，聲音事實來自藝人簡介（近乎 ambient 的 house、ambient 與 dub 一面、Basic Channel 影響）；簡介之間有分歧（另一份稱 dub 轉向在《Nano》之後），facts 只寫 AllMusic 系說法並標為簡介說法；CD 九首／黑膠八首曲單不同（黑膠多〈Outcast〉、少〈Steem〉〈Aslan〉）；status 標 thin；moodGuess 明顯存疑（ambient／dub、73 分鐘長曲），建議評分前列汰換候選。
+- 11494：Sterac《Secret Life of Machines》moodGuess 明顯存疑：RA 稱除〈Axion〉外皆溫暖、旋律導向，Textura 稱柔軟合成器、搖擺低音線，Exclaim! 稱黏稠溫潤的 Yamaha 音色，Discogs 另標 Dub Techno；無 BPM 來源。Exclaim! 寫原版七首，與 Discogs／MB 的 10 首不符，採 Discogs；Textura 稱「廠牌首發」未反查廠牌目錄，不寫。建議汰換或降 z 期望。
+- 11495：Elektro Guzzi《Elektro Guzzi》moodGuess 中度存疑：RA 聽到 dub 影響的貝斯、混濁吉他質地、Pulsinger 混音的空間感、部族式邦戈鼓與低頻隆隆，y 可能偏高；樂評未明說冷暖。「現場錄成、沒有疊錄」來自版權頁註記與 RA 簡介。
+- 11496：Elektro Guzzi《Parquet》RA 樂評明說真樂器未加暖意、保留機器精準並添危險感，且稱「較輕快、較凶猛」，對 x、z 有利；RA 寫 2011 年 10 月、MB 記 CD 11-14，facts 只寫年份與 MB 日期；德語維基列 EBBA Award 2012，單一來源、未查類別與得獎／入圍，不進 facts。
+- 11497：Brandt Brauer Frick《You Make Me Real》RA（血氣溫熱）與 Groove（有機但冷靜克制）對冷暖判讀分歧，兩說並列於 facts；專輯中鋼琴只是預置鋼琴取樣，與 moodGuess why「原聲鋼琴」不盡相符；錄音在威斯巴登 Garage Studios（Discogs），Beathearts 稱母親車庫位於法蘭克福郊區，兩者相容並照來源說法各寫。moodGuess 輕度存疑（z 兩家分歧）。
+- 11498：Efdemin《Efdemin》德語維基稱 Groove 讀者票選為 2007 年度專輯榜第一，屬媒體榜名次，只留 notes；Pitchfork 評論頁無法抓取未引用；RA 同時聽到深沉弦樂（〈La Ratafia〉）與迷幻暖意（〈April Fools〉），moodGuess 輕度存疑（z 有暖點、x 可能不到 3.5），與 curatorRisk 的 house 和弦暖相符。
+- 11499：Audion《Suckfish》moodGuess 明顯存疑：Exclaim!、PopMatters 與 Ghostly 皆描述猛烈如鐵錘的底鼓、303 acid、Hoover 掃音、失真與噪音收尾，屬 kick 厚重、工業硬一類，建議汰換候選。版本三處：卡單 label Spectral Sound（MB SPC-33CD）與 Ghostly 官方頁寫的 Ghostly International 為母廠與分支關係；CD 11 首（含 Kisses、The Pong 與兩首帶粗口曲名，facts 不逐一列出）、雙黑膠 8 首含黑膠獨有〈Chance〉〈New J.〉。
+- 11500：本組 WebSearch 用 3 次（Gaiser、Troy Pierce、Theorem 各一）；主要來源為 Discogs／MB API、Resident Advisor、Brave 搜尋結果頁（經 WebFetch）；AllMusic 與 Pitchfork 被拒（403／封鎖）；ra.co 藝人簡介與樂評頁可抓。
+
+## 主線裁定（研究層交件後，2026-10-23）
+- **11551**：照研究層的聲音事實汰 13 張（卡單與研究 a–e 檔已移除，原卡存 `dropped-cards.json`）：
+  - 不快、ambient 化或 dub 化（x 判靜／y 判重）：Stewart Walker《Grounded in Existence》（Discogs IDM／Downtempo、低調點頭）、Theorem《Nano》（近 ambient 的 house、dub 一面）、Sterac《Secret Life of Machines》（樂評：溫暖旋律導向、柔黏合成器、Dub Techno 標籤）、Phoenecia《Brownout》《Demissions》（廠方稱電子 dub、長曲、tabla 與 bodhrán）、Richard Devine《Aleamapper》（Dark Ambient／Drone 標籤）、Jeff Mills《Chronicles of Possible Worlds》（Abstract／Ambient、後製小提琴）、TV Victor《Timeless Deceleration》（70／55／10 分三首長篇 ambient，且為舊作合併重發）、Kit Clayton《Repetition and Nonsense》（Dub Techno、downtempo 段）。
+  - kick 厚重、工業硬（y 判重）：Audion《Suckfish》（鐵錘底鼓、303 acid、Hoover、失真）。
+  - 人聲與樂團暖：Atom™《HD》（Jamie Lidell 主唱、翻唱〈My Generation〉、吉他貝斯）。
+  - 不是專輯：Jeff Mills《Cycle 30》（單張 12 吋 Special Cut，維基標 EP）、Robert Hood《Hoodlum》（2×12 吋、House 標籤，介於 EP 與專輯）。
+- **11552**：留下但標存疑（評分照聲音打）：Gaiser 兩張、Troy Pierce、Elektro Guzzi 首作（dub 貝斯）、Brandt Brauer Frick、Efdemin、Bretschneider《Super.Trigger》（大鼓震窗）、Funkstörung（說唱）、Beatrice Dillon（原聲打擊）、SND、Mark Fell、Rian Treanor《File Under UK Metaplasm》、Robert Hood《Paradygm Shift》（house 底鼓）、Jeff Mills《From the 21st》《The Power》《The Jungle Planet》、Damon Wild、Oliver Ho 兩張、Pacou 兩張、Marc Houle 三張、Brinkmann 兩張。
+- **11553**：照研究層改卡單：Marc Houle《Restore》label 補 M_nus。Gaiser 國籍不寫（只寫起始地 Grand Rapids）、《False Light》是第三張（非第二張）；Richard Devine《Lipswitch》Schematic／Warp 聯合發行（Discogs 標 Mini-Album，MB 列 Album，收）；Jeff Mills《From the 21st》首發年 1998／1999 並陳不寫死；《The Jungle Planet》實體是 400 套 USB 方塊；Oliver Ho《Prima Materia》寫雙 12 吋——寫作層照研究稿。
+- **11554**：**全批 32 張**（策展 49、主線汰 4、研究汰 13）。候補只剩 Elektro Guzzi《Observatory》等主線汰除者，不回補；照實上架。
