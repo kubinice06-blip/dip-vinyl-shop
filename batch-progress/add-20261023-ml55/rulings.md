@@ -42,3 +42,14 @@
 - 20927：Kelly Price《Priceless》輕度存疑——Keith Murray 客串＋Stevie J 兩首嘻哈拍；WaPo 稱老派、適合晚餐後啜飲葡萄酒，整體仍暖。「第三張」改記：維基列第四張（含 2001 聖誕專輯）。
 - 20928：Syleena Johnson《Chapter 1》基本相符，無推翻。年份取美國原版 2001（維基 2001-05-15；MB 2002-03-18 他國版；Discogs master 2000 為原訂發行年）。NME 用 doom／darkly emotive 描述情緒，屬悲苦熱烈、不判陰冷。Rhodes、厚貝斯策展說法查無來源未寫。
 - 推翻策展層：Relationships 廠牌（Ichiban 不成立）；Kelly Price《Priceless》序數（第三張→維基第四張）。WebSearch 共用 6 次（Vesta 三、Syleena、Mirror Mirror、Kelly 各一，Vesta 每張僅一次）。MB 暫忙後可用，Discogs API 可用，AllMusic、Michigan Citizen、soulinstereo、Slant 不可開。
+
+## 研究 d 組
+- 20951：Goapele《Change It All》基本相符無推翻（MB 2005-12-27、Skyblaze/Columbia、維基「第三張」把 2001 自發行《Closer》算入）。moodGuess 輕—中度存疑——〈Different〉有 Clyde Carson 饒舌客串、〈Intro〉有轉盤與小號、Sa-Ra 與 Bhasker 的電子實驗被 ALARM 評為「有成有敗」，不是整張慢歌（ALARM：慢歌最自在、快歌較不適合她）；厚暖度無一手證據。AllMusic 403、Rolling Stone 存檔打不開，只用 ALARM、維基、Billboard。
+- 20952：Goapele《Break of Dawn》年份廠牌無誤（MB 10-24／維基 10-25）。curatorRisk「質地偏乾淨」成立：合成器耳語、Auto-Tune、Drumma Boy／Dan Electric 製作，〈Tears On My Pillow〉被形容陰沉帶打擊感，〈Money〉仿 Prince、〈Play〉跨曲風——moodGuess 存疑（z 0.9 缺證據、非整張慢板）。專輯原名《Milk & Honey》，錄音 2007–2011。
+- 20953：Raveena《Asha's Awakening》moodGuess 存疑（curatorRisk 成立）——Pitchfork：「舞曲友善的 R&B＋撫慰抒情」，〈Kismet〉〈Secret〉〈Rush〉〈Magic〉為中板律動，維基列 disco／rock；15 首含口白、13 分半冥想與過場，真正慢歌約一半。暖與霧成立、無陰冷字眼。Coachella「首位印度裔女性」單一來源未寫。
+- 20954：Sabrina Claudio《No Rain, No Flowers》基本相符：8 首 28:48，Rolling Stone 稱「接下來 28 分鐘都停在慵懶」，無舞曲無饒舌客串；質地極簡、偏乾淨，暖主要靠氣音人聲。英文維基無此專輯條目（同名條目是 Black Keys 2025），資料取自藝人條目、RS、Hofstra Chronicle、MB。2018-04 歧視性推特言論風波寫成一條 fact（早於發行、與宣傳直接相關），寫作層宜保守，主線決定寫不寫。
+- 20955：Sabrina Claudio《Based on a Feeling》status thin：查無正式樂評（Pitchfork／RS／AllMusic 無），聲音只有 Interview、V Magazine、BroadwayWorld 的「感官的器樂、現場弦樂」與製作人名單。11 首全在 4 分鐘內、未見舞曲與饒舌；moodGuess 無法驗證。Grammy 提名是〈Plastic Off the Sofa〉詞作者身分（Beyoncé 專輯），已標明避免被寫成她自己得獎。
+- 20956：Alina Baraz《It Was Divine》相符無推翻（首張錄音室專輯，MB 2020-04-24，Mom+Pop，16 首約 52 分）。The Floor／LOBF：全盤同一個慢—中板律動、單一取向略嫌單調，NME 批評平淡；Nas、Smino、6lack、Khalid 客串皆輕量，不改變整體慢度。暖字眼（warm、romantic chill），無陰冷字眼。
+- 20957：Alina Baraz《The Color of You》**性質存疑**：維基、NME、聖地牙哥校報稱 EP（9 首約 31 分），FADER 稱 nine-track project，MB／LOBF 當專輯。建議主線裁定是否收 EP；不收則汰換（同藝人 It Was Divine 已在本批）。status thin（無正式樂評與製作人名單，僅 FADER 預告式描述），moodGuess 無聲音樂評可驗。年份 2018-04-06、Mom+Pop 無誤。
+- 20958：Celeste《Not Your Muse》moodGuess 存疑（curatorRisk 成立）——〈Love Is Back〉銅管中快板、〈Stop This Flame〉鋼琴 vamp「floor-filling」、〈Tonight Tonight〉流行耳蟲，LOBF 稱有 glitter-funk／rollicking neo soul；12 首約四首非慢歌。厚暖（弦樂、銅管、煙嗓）成立，無陰冷字眼。藝人名與池中 Celeste Legaspi 撞名（維基條目為 Celeste (singer)）。Mercury 2021 與 Brit 2021 皆只入圍，已逐項標明。
+- 推翻策展層：無年份／廠牌／盤名推翻；性質存疑 1（Color of You EP）。WebSearch 共用 6 次（Goapele 1、Sabrina 2、Alina 2、Celeste 1），另用 Wikipedia raw、MB API、樂評頁直連。

@@ -4,13 +4,13 @@
   {
    "id": "acousmatic",
    "zh": "電子原音／acousmatic 尖細那半（GRM 系、empreintes DIGITALes、BEAST）",
-   "count": 7,
+   "count": 8,
    "why": "微剪接、碎片短音事件密集交錯、乾而尖的摩擦與撞擊；不收飄浮長音與厚密噪音堆疊"
   },
   {
    "id": "early-studio",
    "zh": "早期電子工作室點描／序列作與混合媒體（WDR、Columbia-Princeton、Utrecht）",
-   "count": 6,
+   "count": 10,
    "why": "正弦波與脈衝的點描、序列式跳躍、樂器對磁帶的神經質對答；乾、薄、無調"
   },
   {
@@ -441,6 +441,154 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "取樣含 Satie、Living Strings 等旋律片段，z 估 −1.0 留邊距但較其他張暖"
+  },
+  {
+   "artist": "Nikos Stavropoulos",
+   "album": "Micro-lieux",
+   "year": 2019,
+   "label": "empreintes DIGITALes",
+   "country": "gr",
+   "faction": "acousmatic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Smalley 一路英國學派的希臘作曲家 Stavropoulos 的 empreintes 專輯（Atropos、Granatum、Ballistichory）",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.1,
+    "z": -1.4,
+    "why": "冒泡般急促無節拍的有機碎響、刮擦聲與脆弱合成音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d5698f8a-f983-4e83-8fb5-763897f511ec",
+    "https://coverartarchive.org/release-group/d5698f8a-f983-4e83-8fb5-763897f511ec/front",
+    "https://electrocd.com/en/album/5984-nikos-stavropoulos-micro-lieux"
+   ],
+   "mbRgMbid": "d5698f8a-f983-4e83-8fb5-763897f511ec",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "樂評提到偶有較厚的濕低音與打擊悶響"
+  },
+  {
+   "artist": "Philippe Manoury",
+   "album": "Pluton",
+   "year": 1998,
+   "label": "Ondine",
+   "country": "fr",
+   "faction": "early-studio",
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "why": "IRCAM 即時電子名作：MIDI 鋼琴與 4X 即時處理的《Pluton》，Ilmo Ranta 演奏、IRCAM 錄音",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.3,
+    "why": "鋼琴急速碎句觸發電子回聲與閃爍，乾亮、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ef31999d-d37c-409b-8063-ba1049c7736f",
+    "https://coverartarchive.org/release-group/ef31999d-d37c-409b-8063-ba1049c7736f/front",
+    "https://www.discogs.com/release/8082211"
+   ],
+   "mbRgMbid": "ef31999d-d37c-409b-8063-ba1049c7736f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "單曲長篇（約 50 分鐘），中段有較慢的共鳴段落"
+  },
+  {
+   "artist": "Marco Stroppa",
+   "album": "Traiettoria / Spirali",
+   "year": 2009,
+   "label": "Stradivarius",
+   "country": "it",
+   "faction": "early-studio",
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "why": "Stroppa 的鋼琴與電子三部曲《Traiettoria》（1982–84）加空間化弦樂四重奏《Spirali》，IRCAM 系混合媒體代表作",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.4,
+    "z": -1.5,
+    "why": "鋼琴點描與電子鏡像音交錯閃動，四重奏碎句，乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f3c3c29e-d949-423e-a2d4-24bdeac97ace",
+    "https://www.discogs.com/release/6843789",
+    "https://www.amazon.it/gp/product/B002K8BIQA"
+   ],
+   "mbRgMbid": "f3c3c29e-d949-423e-a2d4-24bdeac97ace",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB RG 無日期，年份取 Discogs 2009；封面來源 Discogs（CAA 無）"
+  },
+  {
+   "artist": "Luciano Berio, Bruno Maderna",
+   "album": "Berio: Momenti / Thema – Omaggio a Joyce / Visage / Maderna: Le Rire / Invenzione su una voce",
+   "year": 1992,
+   "label": "BVHaast",
+   "country": "it",
+   "faction": "early-studio",
+   "genres": [
+    "electronic"
+   ],
+   "why": "米蘭 Studio di Fonologia 電子作合集（Acousmatrix 7）：Berio《Thema》《Visage》與 Maderna 人聲電子作",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.2,
+    "z": -1.6,
+    "why": "人聲被切成嘶聲、喘息與尖叫碎片，夾電子尖鳴，緊張不安"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/551cc4fc-e68e-4bd5-9f2c-bc9e0e72b581",
+    "https://coverartarchive.org/release-group/551cc4fc-e68e-4bd5-9f2c-bc9e0e72b581/front",
+    "https://www.discogs.com/master/154744"
+   ],
+   "mbRgMbid": "551cc4fc-e68e-4bd5-9f2c-bc9e0e72b581",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "兩位作曲家的雙人盤，上架藝人名需主線定；Momenti 段落較稀疏"
+  },
+  {
+   "artist": "Yan Maresz",
+   "album": "Metallics / Eclipse / Entrelacs / Sul segno / Metal Extensions",
+   "year": 2005,
+   "label": "Accord",
+   "country": "fr",
+   "faction": "early-studio",
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "why": "IRCAM 系 Maresz 的作品集：小號與電子《Metallics》、EIC／Jonathan Nott 演出，金屬亮音的混合媒體",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -1.2,
+    "why": "弱音器小號尖亮短句與電子金屬反射急促交錯，乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cd51a487-3e6f-4f15-b878-9ad866fd3616",
+    "https://coverartarchive.org/release-group/cd51a487-3e6f-4f15-b878-9ad866fd3616/front",
+    "https://www.discogs.com/release/12065910"
+   ],
+   "mbRgMbid": "cd51a487-3e6f-4f15-b878-9ad866fd3616",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Eclipse／Entrelacs 為無電子的室內樂團曲；z 估 −1.2，音色亮、色溫可能偏回中性"
   }
  ],
  "notes": []
