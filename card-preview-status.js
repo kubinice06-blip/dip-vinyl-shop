@@ -3448,4 +3448,7 @@ window.DipPreviewStatus = Object.freeze({
   "perelman • maneri • feldman • hwang|strings 1": "unavailable",
   "hoarfrost|ground zero": "unavailable",
   "strom noir|glaciology": "unavailable",
+  "loop guru|amrita (… all these and the japanese soup warriors)": "unavailable",
+  "mad professor|black liberation dub, chapter 3: evolution of dub": "unavailable",
+  "peaking lights|clearvoiant": "unavailable",
 });
