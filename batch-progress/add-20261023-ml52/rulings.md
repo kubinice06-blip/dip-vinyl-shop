@@ -55,6 +55,11 @@
 - 20523：發行日兩邊不一，年份皆不變：Still Ghetto（MB 11-04／維基 11-05）、Ghetto Classics（MB 2006-01-06／美版維基 2006-02-13）、Another Round（MB 02-08／維基 02-09）、Hollister（維基 2002-09-17／MB 10-15）。
 - 20524：Carl Thomas《So Much Better》廠牌：MB 為 umbrella records、維基為 Umbrella Recordings 與 Unsung Entertainment（Bungalo／Universal 負責通路），卡單 Bungalo Records；建議卡面維持 Bungalo 或改 Umbrella，主線定奪。
 - 20525：Another Round、Private Room、Let's Talk About It、So Much Better 四張因逐曲速度與慢歌比例查無來源，status 標 thin；AllMusic 全站 403、NYT／Vibe／BBC／EW 不可抓，已改用 PopMatters、Boston.com、The Pitch、DJBooth、Urban Bridgez 與維基引文。
+- 20526：補研究 4 張（Hamilton《What I'm Feelin'》、Jaheim《Appreciation Day》、Tank《One Man》、Angie Stone《Stone Love》）逐張核 moodGuess。Tank《One Man》嚴重存疑（建議汰換）：AllMusic 明言前半抒情、後半 up-tempo，Jazze Pha／Mannie Fresh 製作，Baby Da #1 Stunna 客串，18 軌含短曲，慢歌不到全盤。Stone《Stone Love》中度存疑：自述要更 upbeat，首單曲 Dance Club 冠軍加 Snoop 客串；取樣老派溫暖，z 成立。
+- 20527：Hamilton《What I'm Feelin'》輕度至中度存疑：NPR 與 Gulf News 皆稱開場〈Save Me〉upbeat、〈Never Letting Go〉gently driving，僅〈Ain't No Shame〉明確 downtempo；策展層的「號角、厚低頻」查無來源，未入 facts；樂評無陰冷字眼，教堂風琴與藍調吉他偏暖，〈I Want You〉被稱 inorganic。status thin。
+- 20528：Jaheim《Appreciation Day》輕度至中度存疑：〈Age Ain't a Factor〉為中板，〈Sexting〉為 boom bap 鼓軌加弦樂取樣，其餘逐曲速度查無來源；14 軌皆在 3:11–4:48，無長板抒情；無饒舌客串。status thin。
+- 20529：發行日並存：Hamilton MB 3-18（歐洲等地）／美國 3-25；Jaheim MB 9-02（加拿大）／維基 9-03；Tank MB 10-29／維基 10-28；Stone MB 06-10 為佔位、英國 06-28、美國 07-05（維基 07-06）。年份與廠牌皆不推翻（Stone 英國版為 Arista，美國 J Records）。Tank 維基內文與表格 R&B 榜名次不一（4 與 5），facts 不寫。Hamilton 維基稱第六張、PopMatters 稱第五張，寫作層別寫序數。
+- 20530：來源限制：AllMusic、SoulTracks 403，NPR 原頁 503（改用 WFAE 轉載頁）；BET Rundown 抓取只回首頁，Jaheim 的 Sexting 描述來自搜尋摘要，單站。評分星等一律不入 facts。汰換建議優先序（高→低）：Tank《One Man》、Angie Stone《Stone Love》、Jaheim《Appreciation Day》、Hamilton《What I'm Feelin'》。
 
 ## 主線：研究後汰換（不佔條號）
 - 研究五組 45 張幾乎全標存疑（逐曲速度無來源）。照 ml49 結論「中板照樣落格，只擋明確舞曲與 hip-hop 硬拍取樣」放寬中板，汰 20（卡單、研究稿、`pick.json` 同步移除）：
@@ -66,3 +71,4 @@
 - 留下但存疑、交評分裁定：Jaheim《Another Round》、Carl Thomas《So Much Better》、Dave Hollister《Things in the Game Done Changed》（較多中快板但製作厚暖）、Isley《Body Kiss》《Baby Makin' Music》（池中《Eternal》同期 R. Kelly 製作落恍惚）、Levert《Stroke of Genius》、Silk《Always and Forever》、Freddie Jackson《Life After 30》、Hamilton《The Point of It All》《Back to Love》。
 - 候補補 4（a 組，派一支補研究 append 進 a 檔）：Anthony Hamilton《What I'm Feelin'》、Jaheim《Appreciation Day》、Tank《One Man》、Angie Stone《Stone Love》；其餘候補（Avant ×2、Isley Meets Bacharach、Downing《After Tonight》、Jon B.）與汰換理由同型，不補。
 - 研究推翻照研究稿改卡單廠牌：Hamilton《The Point of It All》BMG→So So Def、Levert《Do I Speak for the World》Atlantic（英國版）→Elektra、Carl Thomas《So Much Better》Bungalo→Umbrella（MB、維基）、Kelly Price《Soul of a Woman》Island→T-Neck。Lalah flag 隨汰換結案。
+- 補研究後再汰 2：Tank《One Man》（後半 up-tempo、Mannie Fresh／Baby 客串、〈Party Like a Thug〉〈Club〉）、Angie Stone《Stone Love》（自述更上揚、首單曲 Dance Club 冠軍、Snoop Dogg 客串）。Hamilton《What I'm Feelin'》、Jaheim《Appreciation Day》（快慢混合但無硬拍取樣／饒舌客串）留下交評分。**定案 27 張**（a 5、b 5、c 6、d 6、e 5），候補用罄、不湊數。
