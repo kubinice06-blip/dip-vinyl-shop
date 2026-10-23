@@ -57,3 +57,15 @@
 - **20688**　Parker & Guy《Incision》：身分吻合（FMP SAJ-35，1981-03-14／15 柏林）；MB rg 端點讀取為空，但 release 清單對得上；Wikipedia 的 Parker 條目寫 1980，其餘來源皆 1981，採 1981。錄音性質（錄音室或現場）查無明文，不寫進 facts；策展層 y 0 偏高，要聽才知道。
 - **20689**　Parker & Guy《Obliquities》：身分吻合（Maya MCD9501，Gateway Studio 錄音室，非現場）；錄音日 12 月 2 日（Parker 本人）與冊子 12 月 3 日有出入；Lake 內頁以『舞動、呼吸』描述互動，與策展層『緊、乾、無調』有落差，moodGuess 輕度存疑（z）。
 - **20690**　預留未用。WebSearch 實用 7 次（超出每支 3 次上限，原因：多數卡需查現場與否與聲音，Discogs／AllMusic／AAJ 網頁 403 只能靠搜尋摘要）；引言多轉自 Wikipedia 與 Cafe Oto、Maya、Jazzword 頁面。
+
+## 研究 c 組（20701–20710）
+- **20701**　Brötzmann《Solo》：Discogs 記事「Recorded in Berlin, May 1976」、錄音 Jost Gebers，無觀眾字樣，判為錄音室獨奏、非現場；〈Piece For Two Clarinets〉是否疊錄查無來源，未寫。曲名典故（馬雅可夫斯基）無來源，未入 facts。moodGuess 無不符（y 可能 +0.3）。
+- **20702**　Brötzmann《No Nothing》：FMP-Studio Berlin 1990-12-14／15 兩天，錄音室確定；AllMusic 標 1990-08，採 Discogs／MB 的 1991。樂器欄僅 JMA 單一來源（取自搜尋摘要）。moodGuess 無不符。
+- **20703**　Brötzmann《Nothing to Say…》：1994-11-15／16 柏林，無觀眾字樣；樂器、聲音、是否疊錄查無來源，thin；moodGuess 存疑（未驗證，非證偽）。王爾德連結僅副標，曲名是否取自《瑞丁監獄之歌》查無來源，未寫。
+- **20704**　Brötzmann《Solo - Right as Rain》：2000-08-19／20 柏林；獻給 6 月 21 日去世的 Werner Lüdi（de.wikipedia）。thin。moodGuess 存疑：用低音薩克斯風、低音單簧管，聲音可能比預估厚重（y 偏 +0.3 以上）。
+- **20705**　Butcher《Invisible Ear》：Discogs 明載近距收音／擴大回授／多軌疊錄，另有 Korg 合成器；Butcher 站稱〈What remains〉疊五支次中音＋三支高音。moodGuess 存疑：疊錄＋合成器的曲子可能偏厚、偏電子，非純尖細。錄音室、非現場（第 12 首 1999 明斯特場合不明）。
+- **20706**　Butcher／Minton《Apples of Gomorrah》：錄音全為 1999（tr1–12 Gateway Studio、tr13 LMC Sound、tr14–17 Red Rose，約 8 分 39 秒、佔不到兩成；Red Rose 是否公開演出查無來源，Butcher 站稱混有 studio 與 live 素材）。moodGuess 存疑：Penguin Guide 稱「出乎意料地浪漫」、AAJ 稱〈Wormleaf〉有靜止感，非全程尖刺；發行 2002（Discogs 4 月、MB 5 月）。
+- **20707**　Butcher／Graewe《Light's View》：柏林藝術學院 1998-04-11，工程為 FMP 的 Gebers／Scheuermann，倫敦 LMC Sound 混音；是否公開演出查無來源（無觀眾、無 Live 字樣，也無反證）。thin。moodGuess 存疑（現場可能、密度與旋律性未驗）。
+- **20708**　Butcher／van der Schyff《Points, Snags And Windings》：Blue Wave Studio（溫哥華）錄音室，日期「7/2/00」讀法不明故只寫 2000 年；僅 6 條 facts（來源單薄）。moodGuess 存疑：63 分鐘、多首 6–9 分鐘，非短曲急停；打擊是否碎拍未驗。
+- **20709**　McPhee《Tenor》：維基標「live solo」，Soundohm 描述為晚飯後在大提琴家農舍的即興 recital（非正式、非音樂會），判為私人場合現場獨奏。Discogs 另列 Ntshoko（鼓）與 Snyder（合成器、人聲），與維基「唯一人員 McPhee」相左，疑為 Discogs 誤植，建議核對封底。moodGuess 存疑：〈Knox〉〈Good-Bye Tom B.〉抒情有輪廓、〈Tenor〉23 分鐘長篇無主題。
+- **20710**　預留未用。本組 WebSearch 用 3 次（McPhee Tenor、Brötzmann No Nothing、Brötzmann Solo）；AllMusic、Discogs 網頁、JMA、Squidco 皆 403，Wikipedia 專輯條目多不存在，改用 Discogs／MB API、Butcher 官網、Soundohm、de.wikipedia。
