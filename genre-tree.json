@@ -1137,7 +1137,7 @@
   {
    "id": "hiphop",
    "zh": "嘻哈 R&B",
-   "count": 1510,
+   "count": 1536,
    "children": [
     {
      "id": "rnb",
@@ -1201,12 +1201,17 @@
     {
      "id": "underground",
      "zh": "地下與抽象",
-     "count": 333,
+     "count": 359,
      "children": [
       {
        "id": "abstract",
        "zh": "抽象與實驗",
        "count": 143
+      },
+      {
+       "id": "instrumental",
+       "zh": "Instrumental / Beats",
+       "count": 103
       },
       {
        "id": "east-coast",
@@ -1217,11 +1222,6 @@
        "id": "jazz-rap",
        "zh": "Jazz Rap / Conscious",
        "count": 84
-      },
-      {
-       "id": "instrumental",
-       "zh": "Instrumental / Beats",
-       "count": 77
       },
       {
        "id": "cloud",
@@ -1898,37 +1898,37 @@
   {
    "id": "world",
    "zh": "世界",
-   "count": 1074,
+   "count": 1091,
    "children": [
     {
      "id": "reggae",
      "zh": "Reggae / Dub",
-     "count": 419,
+     "count": 436,
      "children": [
-      {
-       "id": "dub",
-       "zh": "Dub",
-       "count": 202
-      },
       {
        "id": "roots",
        "zh": "Roots Reggae",
-       "count": 197
+       "count": 210
+      },
+      {
+       "id": "dub",
+       "zh": "Dub",
+       "count": 209
       },
       {
        "id": "lovers",
        "zh": "Lovers Rock",
-       "count": 74
-      },
-      {
-       "id": "dancehall",
-       "zh": "Dancehall / Ragga",
-       "count": 69
+       "count": 88
       },
       {
        "id": "ska",
        "zh": "Ska / Rocksteady",
-       "count": 62
+       "count": 76
+      },
+      {
+       "id": "dancehall",
+       "zh": "Dancehall / Ragga",
+       "count": 70
       }
      ]
     },

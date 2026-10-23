@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **375** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 137、已退回 1）。
+共 **387** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 149、已退回 1）。
 最後更新：2026-10-23
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -261,6 +261,14 @@
 | musikFabrik 《Saunders: Quartet / Into the Blue / Molly's Song 3 / Dichroic Seventeen》 | [#28193908](https://www.discogs.com/release/28193908) | 2001 | Kairos | 0012182KAI | Discogs master 3231034 的版本、主線目視與盤名相符 | ok |
 | Nieuw Ensemble 《Ferneyhough: La Chute d'Icare / Superscriptio / Intermedio alla Ciaccona / Études transcendantales / Mnemosyne》 | [#10520400](https://www.discogs.com/release/10520400) | 1989 | Etcetera (3) | KTC 1070 | 唯一版本、主線目視與盤名相符 | ok |
 
+## add-20261023-mc36（3 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Mars & DNA 《John Gavanti: An Operetta》 | [#404849](https://www.discogs.com/release/404849) | 1980 | Hyrax Records | HY-101 | Discogs master 280023 的版本、主線目視與盤名相符 | ok |
+| Tom Cora, David Moss 《Cargo Cult Revival》 | [#1003533](https://www.discogs.com/release/1003533) | 1983 | Rift | RIFT 5 | Discogs master 2089672 的版本、主線目視與盤名相符 | ok |
+| Zeena Parkins 《Nightmare Alley》 | [#661500](https://www.discogs.com/release/661500) | 1993 | Table Of The Elements | H 1 | Discogs master 87550 的版本、主線目視與盤名相符 | ok |
+
 ## add-20261023-md11（4 張）
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
@@ -314,6 +322,20 @@
 | Likkle Mai 《Dub Is the Universe》 | [#7733102](https://www.discogs.com/release/7733102) | 2012 | MK Starliner | MKD-003 | 唯一版本、主線目視與盤名相符 | ok |
 | LITTLE TEMPO 《Ron Riddim In Dub》 | [#1616405](https://www.discogs.com/release/1616405) | 2000 | Rhythm Republic | RR12-88140 | 唯一版本、主線目視與盤名相符 | ok |
 | Mad Professor 《Bitter Sweet Dub (Dub You Crazy With Love) (Part.3)》 | [#3250500](https://www.discogs.com/release/3250500) | 2008 | Ariwa | VICP64559 | 唯一版本、主線目視與盤名相符 | ok |
+
+## add-20261023-ml45（9 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Alton Ellis 《A New Day》 | [#3045824](https://www.discogs.com/release/3045824) | 1983 | Body Music (2) | BMZLP10 | 唯一版本、主線目視與盤名相符 | ok |
+| Delroy Wilson 《Go Away Dream》 | [#4410939](https://www.discogs.com/release/4410939) | 1982 | Black Music (2) | BMLP 803 | Discogs master 1184326 的版本、主線目視與盤名相符 | ok |
+| Delroy Wilson 《Worth Your Weight in Gold》 | [#2199896](https://www.discogs.com/release/2199896) | 1984 | Burning Sounds | BS 1060 | Discogs master 235717 的版本、主線目視與盤名相符 | ok |
+| Hollie Cook 《Happy Hour in Dub》 | [#27903378](https://www.discogs.com/release/27903378) | 2023 | Merge Records | MRG788 | Discogs master 3195711 的版本、主線目視與盤名相符 | ok |
+| John Holt 《Sweetie Come Brush Me》 | [#3014839](https://www.discogs.com/release/3014839) | 1982 | Volcano | Vol-001 | Discogs master 479801 的版本、主線目視與盤名相符 | ok |
+| John Holt 《A1 Disco Showcase》 | [#1054066](https://www.discogs.com/release/1054066) | 1980 | Taurus Records (3) | TR 1002 A/B J.H.S | 唯一版本、主線目視與盤名相符 | ok |
+| John Holt 《My Desire》 | [#7401303](https://www.discogs.com/release/7401303) | 1980 | Jackpot (2) | INCLP 102 | Discogs master 898204 的版本、主線目視與盤名相符 | ok |
+| John Holt 《Introspective》 | [#9808771](https://www.discogs.com/release/9808771) | 1980 | No Entry (3) | DSR LP 2552 | 唯一版本、主線目視與盤名相符 | ok |
+| Wailing Souls 《On the Rocks》 | [#602316](https://www.discogs.com/release/602316) | 1983 | Greensleeves Records | GREL 59 | Discogs master 195779 的版本、主線目視與盤名相符 | ok |
 
 ## c49（3 張）
 
