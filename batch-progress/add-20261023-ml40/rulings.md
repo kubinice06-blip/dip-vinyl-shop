@@ -70,3 +70,7 @@
 - 留下 10：Heights of Abraham《Humidity》《Electric Hush》（subsonic／soul-food bass，存疑 lounge 輕快，交評分）、Boozoo Bajou《Finistère》（slow dub-infused beats）、Tosca《No Hassle》（低能量、dub delay、木質貝斯；雙 CD 以 CD1 錄音室 12 首為準）、Almamegretta《Sanacore》、Blundetto & Liam Bailey《Heavy Soul》、Dub Colossus《A Town Called Addis》（重低音、回音、dub groove）、Hollie Cook《Twice》（低音搏動、dub 影響）、Fat Freddy's Drop 兩張。
 - **廠牌更正**：Dub Colossus《A Town Called Addis》Society of Sound → **Real World Records**（主發行 CDRW155；研究 d 組）。
 - 場景嚴重見底，叫回策展代理補 15 張「有樂評明講 dub 低音／回音／慢拍＋溫暖」的候補（見下節）。
+
+## 主線：策展補候補（不佔條號）
+- 叫回策展代理補 15 張「有樂評明講 dub 低音／回音／慢拍＋溫暖」的候補，只交 1 張：Lord Echo《Harmonies》（樂評也點名 disco／Afrobeat／early house，同人兩張已因舞池取向汰）→ **不收**。查過不提：FFD《Bays》（dance-floor）、Trinity Roots《Citizen》（轉前衛搖滾）、Katchafire《Legacy》、Hollie Cook《Happy Hour》、NoW 剩餘三張、Black Seeds／Salmonella Dub（無可引樂評）。
+- **定案 10 張，照實上架、不湊數。ml40 場景見底**；ml39 歐陸 dub／dubtronica 頭牌也多已在池或判輕判冷（策展回報 Smith & Mighty、Sofa Surfers、Peace Orchestra、Rockers Hi-Fi 池中判冷，Dreadzone、Dub Pistols、K&D 無可收），建議 ml39 不再單獨派。
