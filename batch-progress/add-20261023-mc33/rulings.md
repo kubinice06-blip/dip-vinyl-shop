@@ -34,3 +34,12 @@
 - 13575　Yasunao Tone 兩張：《Solo for Wounded CD》曲名只推定為兩部分、無官方曲名；Debussy《前奏曲集》底片一說僅 Another Mag 一源，寫作層寫「據報導」。《MP3 Deviations #6+7》只有 Mego 製作說明與 Sound Projector 一句評語，「高頻尖細」屬推論，可能偏重。
 - 13576　日期衝突：Becker MB 2013-07-29／Discogs 07-30／Bandcamp 09-10，只寫年；Hecker MB 5/24 vs 零售搜尋摘要 5/23，取 MB。
 - 13577　WebSearch 本組用了 6 次（超出每支 3 次上限）：前半誤以為可補樂評；後半改走 MB／Discogs API 與 WebFetch。Pitchfork 被擋、Tzadik／AllMusic／Discogs 網頁 403、Quietus 404。
+
+## 研究 c 組
+- 13581　Henry Cow《Western Culture》年份：MB 首發 1978 是錄音年（Discogs 標 ©／℗ 1978），實際發行 1979 年 9 月（Wikipedia、Discogs UK Broadcast 版 1979）。facts 已寫錄音 1978／發行 1979；建議卡片年份改 1979，主線裁。
+- 13582　Étron Fou Leloublan《Les Trois Fou's Perdégagnent》廠牌：卡單 Gratte-Ciel 有誤（那是首作《Batelages》的廠牌）；1978 原盤是 9H 17 Productions（Discogs 7001），Wikipedia 另寫 Tapioca 未查到對應版本。建議廠牌改 9H 17 Productions；年份 1978 確認。
+- 13583　Étron Fou Leloublan《Batelages》：卡單廠牌欄空，實為 Gratte-Ciel（CIEL 2001）；年份 Discogs 1976 vs MB／Wikipedia 1977（錄於 1976-11），卡單 1977 可留。《Les Sillons de la terre》原盤是瑞士 Turbo Music（TMSA 3302），MB 登錄的是法國 Le Chant du Monde 版；《Face aux éléments déchaînés》原製作為 RecRec Music，AYAA 為法國授權版。廠牌兩者皆可，主線裁。
+- 13584　moodGuess 存疑（重）：General Magic《Frantz!》唯一聲音描述是廠方「明亮、大膽、歡快」，與冷衝突，無第三方樂評；EFL 《Face aux éléments》實為貝斯／鼓／管風琴三人加人聲，無專職管樂，「尖銳管樂」不成立；EFL 整體被描述為朋克＋爵士＋音樂廳＋喜劇諷刺，恐偏滑稽偏暖。三張建議聽盤再決定去留。
+- 13585　moodGuess 存疑（輕～中）：Amacher 證據兩分（Gann 稱刺耳；Free Jazz Blog 稱多半遊走持續、動態早期細微、要開大音量，可能判靜；〈Head Rhythm〉開頭強音可能偏重）；Gescom《Minidisc》Wikipedia 稱約半張 drone／氛圍、半張音響音樂，非全是碎拍，且為碎片拼貼；Schmickler 無任何來源說明有無尖細脈衝或音量；Henry Cow／Art Bears 只確認無調、短曲、黑暗，音色冷暖與尖細無來源，池中同人 x 3.0–3.1，預估 3.4 可能偏高。EFL 其餘三張聲音描述全屬推論（thin）。
+- 13586　WebSearch 本組用 4 次（Amacher、Gescom、Schmickler、General Magic 各 1，超出每支 3 次上限 1 次）：General Magic 與同名矽谷公司混淆，搜尋無用；其餘改走 MB／Discogs API 與 WebFetch。Pitchfork、AllMusic、Discogs 網頁、ProgArchives 被擋。
+- 13587　Art Bears、Henry Cow 的維基來源風格描述有單源風險，已在 notes 標出；General Magic 的 Pieper／Bauer 生平僅 Bandcamp／Discogs 兩處，未做第三源交叉。
