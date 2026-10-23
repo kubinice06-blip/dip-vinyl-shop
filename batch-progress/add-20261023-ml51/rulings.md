@@ -41,3 +41,25 @@
 - 20454：mt. fujitive《afterlife》策展擔心偏惆悵——查證零售文案為 meditative／dreamy／nostalgic、『warmer』，未見 melancholic／dark／cold，**不存疑**（證據僅零售商文案，Bandcamp 頁取不到）。
 - 20455：日期差異（年份一致）——Cashmere Dreams Bandcamp 2023-07-28、MB 2023-06-09；Oasis Bandcamp 8/2、MB 7/2；afterlife 三個日期（10/25、10/28、11/29）。Nautiqua 的 Boora、aeon 的 oofoe 身分皆查不到。
 - 20456：本組無 <28 分；最短 forest folks 30.2 分、Oasis 31.2 分。無精選集、無年份推翻、無需移除。
+
+## 研究 c 組（20461–20470）
+- 20461：**moodGuess 存疑（強，建議汰換）**——Elaquent《Forever Is a Pretty Long Time》：Mello Music Group 的人聲嘻哈合輯，13 首中 9 首有客座（Oddisee、Chester Watson、Guilty Simpson、Cavalier、A L L I E、Blu 等），文案自稱 compilation album、smoke-wreathed jazz cool、urgent immediacy，與靜／無人聲預估不符。
+- 20462：**moodGuess 存疑（輕）**——Purrple Cat 三張（《House in the Woods》《Sands of Time》《Sleep Tight》）：Bandcamp 標籤 piano／jazzhop／ambient／lounge／relax／study，《Sands of Time》另掛 lofi girl，屬乾淨鋼琴讀書背景型，y 恐偏輕；《Sleep Tight》曲名 Weightless、Soft、Zzz 偏漂浮輕盈，且 Bandcamp 帳號頁查不到此盤（只有 Apple／MB），完全無文案。三張皆 thin。
+- 20463：less.people《respect.her》：MB 標籤 experimental，曲名 Frozen Pond、Pale Criminal、Faceless Woman 偏冷，同人池中 z 0.6–0.7，z 存疑；waylesspeople.bandcamp.com 取不到，僅 Apple／MB（15 首、44:36），thin。
+- 20464：Ta-ku《DUSTY Vol.1／Vol. 2》：盤名 dusty 為作者自取，Discogs 只標 Hip Hop，無任何聲音文案；Ta-ku 同期也做明亮 future beats，x／z 無法證實，兩張 thin。Discogs 格式標 EP，實際 19 首 36:09、16 首 32:56，MB 為 Album，不推翻。Bandcamp 對 takuakaflip 403。
+- 20465：Ta-ku《TRIBUTE》：Discogs 盤名為《Tribute: Dilla》（致敬 J Dilla 確認），27 首 45:28，曲名含 No Drum Sunday、Take Care (No Snare)，部分曲目無鼓，y 存疑。日期 Discogs 2010-09-26、MB 2010-08-26，同年。
+- 20466：Ta-ku《Dowhatyoulove》：Discogs 18 首 42:22、Apple 17 首 40:22（缺 Intro），非精選合輯；卡單疑慮「是否收既發 beat」無證據可證實或排除。同年《Songs to Break Up To》走明亮 future beats，鼓可能偏跳，存疑但無反證。Jakarta Records 2013 與卡單一致。
+- 20467：Onra《Nosthaigia》：確認為泰國 7 吋老歌取樣、MPC1000 製作（2017 做、2020 重修），**非 boogie／funk**；文案自稱 somber undertones／longing／warmth，z 有支持、情緒偏哀傷內省。總長 32:58。廠牌卡單 All City Records，Bandcamp 掛 Onra 自己名下，未能直接證實，保留卡單。
+- 20468：本組總長最短為 House in the Woods 29:51，無 <28 分；無精選集、無年份推翻、無需移除。
+- 20469：資料來源：Bandcamp 以 curl（預設 UA，勿帶瀏覽器 UA）可讀（purrplecat、onra、elaquent-mello-catalog、elaquent-urbnet、tallblackguy、flofilzmpm、jhfly）；takuakaflip、waylesspeople 403；elaquent.bandcamp.com 與 elaquent.com 互相重導向無法讀。
+
+## 研究 d 組（20471–20480）
+- 20471：**moodGuess 存疑（強，建議汰換）**——Elaquent《Good Karma》：Exclaim! 寫 playful、optimistic、uptempo、bouncy、sprinkler 808 hi-hats，鼓為真人手感不量化，Apple 風格 Electronica，偏輕快躁動，非靜重。
+- 20472：**moodGuess 存疑（中）**——Tall Black Guy《8 Miles to Moenart》：三首有人聲客座（Malice 與 Mario Sweet、Ozay Moore、Diggs Duke），Bandcamp 標籤含 House Progressive、Soul-Jazz，First Word 說明含 downtempo house，曲名偏暗（The Dark Streets、Funeral Biz、No More Soul），長曲 4–6 分鐘。總長 Bandcamp 37:25 vs Apple 33:11（收尾曲 8:12 vs 3:58）。一則商品頁稱 2016 年首張 LP，與 2013 衝突，不採。
+- 20473：**moodGuess 存疑（中）**——FloFilz《Transit》：UK 爵士取向，Alfa Mist 鍵盤與貝斯、小提琴與吉他等真人樂手，兩首人聲曲（Barney Artist、Biig Piig），y 偏輕。FloFilz《Metronom》：廠方自稱承襲 Tribe（Low End Theory）爵士 boom bap，鼓俐落，y 恐 0.8–0.9。
+- 20474：Elaquent《Long Drives to Nowhere》：文案明寫 anxiety、pandemic doom、mental turbulence，曲名 Anxiety／Move On／Ship Sailed，情緒偏惆悵（呼應卡單疑慮）；16 首中 8 首有客座，標籤含 Electro、ambient electronic，電子成分偏多；z 暖有『warm, honey-like』支持。39:00。
+- 20475：Elaquent《The Scenic Route》：Scratched Vinyl 稱 slow／down-tempo／warm／soulful，與預估吻合；Exclaim! 稱 leftfield beats、Knuckle Sandwich 有電玩感、Black Magic 有 Kae 人聲。**總長查不到**（MB、Bandcamp、iTunes 皆無曲目資料），無法判斷是否 <28 分，主線自行核對。Now Toronto 稱 debut LP 與 Exclaim! 衝突，不採。
+- 20476：Elaquent《Oldies》、softy & Kendall Miles《Balance》、jhfly 兩張：幾乎無聲音證據（Oldies 只有 MB 標籤 neo soul／instrumental hip hop；Balance 只有 Apple／MB，facts 僅 5 條；jhfly 簡介僅『beats from me to you』），全 thin。
+- 20477：jhfly《sounds and things》：曲名含 drum loop1、crossings (early version)、ukejams.wav，草稿式散裝 beat 集性質；《floating over oceans》含 beat.battle.003。兩張建議列為汰換候選（證據薄且帶散裝性質），由主線決定。
+- 20478：本組無 <28 分（Scenic Route 未知）；最短 Good Karma 31:33、jhfly《sounds and things》32:52。無精選集、無年份推翻。
+- 20479：elaquent.bandcamp.com／huhwhatwhere.bandcamp.com 與 elaquent.com 互相 301／303 重導向，Good Karma／Oldies／Scenic Route 的 Bandcamp 頁無法讀；改以 iTunes lookup（曲目與長度）、Exclaim!、Scratched Vinyl 補。

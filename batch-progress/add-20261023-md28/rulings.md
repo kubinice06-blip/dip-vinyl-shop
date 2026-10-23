@@ -44,3 +44,27 @@
 - 20618：Ugasanie & Dronny Darko《Arctic Gates》曲長以 Discogs 53 分 56 秒為準；聲音證據成立（This Is Darkness、文案）。
 - 20619：Side-Line 與 Ghost Cult 數頁抓取失敗或網址無法對應；Ghost Cult（403）與 Dripping 一事（Side-Line p=11513）取自搜尋摘要，Sleeper's Fate 的 notes 已提醒寫作層弱化。WebSearch 兩組合計用 6 次。
 - 20620：b 組無推翻年份、廠牌、盤名；Endtime Psalms 的 MB RG 回應沒有發行日，年份以 Bandcamp、Discogs 為準。
+
+## 研究 c 組（條號 20621–20630）
+- 20621：Forsaken 無推翻；Bandcamp 寫 6-panel digipak、Discogs 寫 3-folder digipak，facts 只寫限量 500 張。聲音證據只有廠牌說明（smooth pads、deep bass、long form drone），無獨立樂評。
+- 20622：Eschate Thule 確認屬正規全長專輯（Discogs 僅數位版）；Bandcamp 聽友留言提到 subtle percussions 與管弦式質地，輕度存疑 moodGuess。
+- 20623：Sanctum 說明寫 Ancient Gothic choirs，Discogs 簡介為 massive choir works，合唱為主體，列輕度存疑（儀式吟唱）。
+- 20624：Stone Speak 廠牌說明自稱 warm, dark and subtle，z（冷）輕度存疑；Kave 在 Discogs 為 Co-producer、Bandcamp 為 Clandestine 音源提供者，facts 並列。
+- 20625：Echo 說明提到 distant piano 與 angelic choirs，輕度存疑；主體仍是隆隆 drone。
+- 20626：Abysmal 無推翻；Discogs 查無 master，身分以 MB 與 Bandcamp 為準；曲長相加約 60 分鐘。
+- 20627：Aftermath 說明含 pulsating shimmers，輕度存疑（脈動）。
+- 20628：Exoplanetary 推薦給 spoken word 聽眾、Rennie 掛名 Vocals、說明有 melodic inferences，存疑（旁白與旋律性）。
+- 20629：Codex 廠牌說明寫 industrial beats 與 brooding choirs，曲長偏短，強烈存疑，建議主線優先汰換。
+- 20630：Metropolis 說明寫 industrial、distorted，無節拍的正面證據，中度存疑，與 Codex 一併裁定。c 組未推翻年份、廠牌、盤名。WebSearch 用 2 次，另 Bandcamp 以 WebFetch、Discogs 與 MB 走 API。
+
+## 研究 d 組（條號 20631–20640）
+- 20631：Whispers 無推翻；Bandcamp 的 2007-01-01 為佔位日，facts 寫 2007 年；聲音證據只有廠牌說明。
+- 20632：Crossing the Withered Regions 找不到任何聲音文字（Bandcamp 皆 404），status 標 thin；Discogs 風格含 Industrial 且 Stielh 掛名 Programmed By，存疑有編程節拍，建議實聽或汰換。
+- 20633：Lapse 無推翻；MB 以 Frédéric Arbour project 消歧，不寫其與 Cyclic Law 的創辦關係（來源未證實）。
+- 20634：The Mirror Reversed, Part 1：Bandcamp 標題無 Part 1，MB 有，單軌 47:34；Discogs 查無，身分以 MB 與 Bandcamp 為準；藝人簡介提到 ritual implements，輕度存疑（打擊質地）。
+- 20635：Oneironaut 日期 Bandcamp 2011-02-15 與 MB／Discogs 2011-04-15 不一致，facts 並列；說明有 melodic drones、processed guitars and keyboards，輕度存疑（旋律與偏暖）。
+- 20636：Primordial Resonance 說明有 distant shrieks of surreal machinery，輕度存疑（刮擦質地，但為遠景）。
+- 20637：NERATERRÆ 客串名單含 Phurpa 的 Alexey Tegin，曲名有 Pulse，中度存疑（吟唱／打擊），建議實聽第 2、4 首。
+- 20638：Komoku 用 kangling 與頌缽等原聲樂器、沙漠田野錄音，輕度存疑（色溫）。
+- 20639：Vanishing Lands 說明稱 most complex and dramatic，輕度存疑（起伏）；無鼓證據只是未提及。
+- 20640：Inade 找不到廠牌文案與樂評，status 標 thin；MB 標籤含 industrial、noise，中度存疑，建議優先實聽或汰換。d 組未推翻年份、廠牌、盤名。
