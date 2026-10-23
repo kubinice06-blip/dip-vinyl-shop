@@ -3159,4 +3159,6 @@ window.DipPreviewStatus = Object.freeze({
   "final|the first millionth of a second": "unavailable",
   "amp|bliss out, volume 4: perception": "unavailable",
   "grouper|grouper": "unavailable",
+  "rockers hi-fi|mish mash": "unavailable",
+  "gaudi + nusrat fateh ali khan|dub qawwali": "unavailable",
 });
