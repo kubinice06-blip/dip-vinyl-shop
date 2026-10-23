@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **403** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 165、已退回 1）。
+共 **416** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 178、已退回 1）。
 最後更新：2026-10-23
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -295,6 +295,24 @@
 | John Butcher / Dylan van der Schyff 《Points, Snags And Windings》 | [#2209586](https://www.discogs.com/release/2209586) | 2001 | Meniscus | MNSCS 010 | Discogs master 1513824 的版本、主線目視與盤名相符 | ok |
 | Ned Rothenberg 《Trials of the Argo》 | [#1685802](https://www.discogs.com/release/1685802) | 1981 | Lumina Records Ltd. | L001 | 唯一版本、主線目視與盤名相符 | ok |
 | Ned Rothenberg 《Trespass》 | [#2395156](https://www.discogs.com/release/2395156) | 1986 | Lumina Records Ltd. | L011 | Discogs master 2914531 的版本、主線目視與盤名相符 | ok |
+
+## add-20261023-mc40（13 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Carlos Zíngaro 《Solo》 | [#624297](https://www.discogs.com/release/624297) | 1992 | In Situ | IS 076 | 唯一版本、主線目視與盤名相符 | ok |
+| David Stackenäs + Fred Lonberg-Holm 《Stackenäs + Lonberg-Holm》 | [#3727737](https://www.discogs.com/release/3727737) | 2004 | Flying Aspidistra | #3 | 唯一版本、主線目視與盤名相符 | ok |
+| Fred Lonberg-Holm 《Site-Specific: Duets for Cello and Guitar》 | [#694237](https://www.discogs.com/release/694237) | 2000 | Explain: | explain:001 | 唯一版本、主線目視與盤名相符 | ok |
+| Joe Morris 《Singularity》 | [#4716405](https://www.discogs.com/release/4716405) | 2001 | AUM Fidelity | AUM018 | 唯一版本、主線目視與盤名相符 | ok |
+| Joëlle Léandre / Gianni Lenoci 《Sur Une Balançoire》 | [#2369598](https://www.discogs.com/release/2369598) | 2004 | Ambiances Magnétiques | AM 126 | 唯一版本、主線目視與盤名相符 | ok |
+| Joëlle Léandre, Carlos Zingaro 《Ecritures》 | [#11729890](https://www.discogs.com/release/11729890) | 1990 | In Situ | 590038 | Discogs master 1332618 的版本、主線目視與盤名相符 | ok |
+| John Russell 《From Next To Last (Improvised Guitar Solos 2001-2)》 | [#2328712](https://www.discogs.com/release/2328712) | 2002 | Emanem | 4071 | 唯一版本、主線目視與盤名相符 | ok |
+| John Russell & Roger Turner 《The Second Sky》 | [#594343](https://www.discogs.com/release/594343) | 2001 | Emanem | 4058 | 唯一版本、主線目視與盤名相符 | ok |
+| Mat Maneri & Randy Peterson 《Light Trigger》 | [#8119592](https://www.discogs.com/release/8119592) | 2000 | No More Records | No.9 | 唯一版本、主線目視與盤名相符 | ok |
+| Philipp Wachsmann / Teppo Hauta-Aho 《August Steps》 | [#2832873](https://www.discogs.com/release/2832873) | 2000 | Bead Records | bead special edition cd 104 | 唯一版本、主線目視與盤名相符 | ok |
+| Philipp Wachsmann, Roger Turner 《Alizarin》 | [#6990420](https://www.discogs.com/release/6990420) | 2015 | Bead Records | Bead Recordssp CD10 | 唯一版本、主線目視與盤名相符 | ok |
+| Rodrigo Amado / Carlos Zíngaro / Ken Filiano 《The Space Between》 | [#2139704](https://www.discogs.com/release/2139704) | 2003 | Clean Feed | CF015CD | 唯一版本、主線目視與盤名相符 | ok |
+| Tom Cora 《Gumption in Limbo》 | [#855100](https://www.discogs.com/release/855100) | 1991 | Sound Aspects Records | SAS CD 042 | 唯一版本、主線目視與盤名相符 | ok |
 
 ## add-20261023-md11（4 張）
 
