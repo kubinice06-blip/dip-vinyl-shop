@@ -2,7 +2,7 @@
  *
  * 資料：data/mood/card-moods.json（scripts/build-card-moods.mjs 產生，每張 [x, y, z, 把握] 加 id 雜湊 _h）；
  * 卡池物件用 id 的 FNV-1a 雜湊對上座標，不靠 seed 順序，舊快取的 seed 或還沒評分的新卡只是被跳過。面板外殼是店主的像素稿
- * tune/panel.jpg，滾筒、輪子、開關、按鍵是疊在上面的活件；輪子的滾花拿稿子裡的銅帶
+ * tune/panel-all.png（scripts/build-tune-panel.py 從稿子拼成一整塊），搜尋框、滾筒、輪子、開關、按鍵是疊在上面的活件；輪子的滾花拿稿子裡的銅帶
  * （tune/tile-*.png）照圓柱投影取樣捲動。星圖用 Three.js（r128，與 starmap-lab 同版）。
  *
  * 用法（index.html 接線）：
@@ -119,54 +119,47 @@
 .tune-app [hidden],#tuneApp[hidden],#tuneResultWrap[hidden]{display:none!important}
 .tune-panel{position:relative;min-width:0;min-height:0;display:grid;place-items:end center;padding:10px 10px 0;background:#2c3037 repeating-linear-gradient(135deg,rgba(255,255,255,.025) 0 2px,transparent 2px 9px);border-top:2px solid #14161a;overflow:hidden}
 @media (orientation:landscape) and (max-height:600px) and (min-width:560px){.tune-panel{border-top:0;border-left:2px solid #14161a;padding:12px}}
-/* 主機由上而下：搜尋列、FREQUENCY（靠左 76% 寬，右側一塊直立的黃銅「就這張」）、輪子模組全寬。整台高 ≈ 1.08 倍寬，依視窗高度反推寬度，一定塞進一個畫面 */
-.tune-console{position:relative;width:min(100%,600px,calc((var(--tvh,100dvh) - 340px) / 1.08));display:flex;flex-direction:column;align-items:stretch;gap:1.2cqw;container-type:inline-size;user-select:none}
-@media (orientation:landscape) and (max-height:600px) and (min-width:560px){.tune-console{width:min(100%,calc((var(--tvh,100dvh) - 24px) / 1.08))}}
+/* 主機是一整塊像素面板（2026-10-23 店主：「下面的面板整合起來變成一個像素面板」，拿掉最下面的抽屜讓星圖長大）：
+   tune/panel-all.png 由 scripts/build-tune-panel.py 從原稿拼成，下列活件位置都是那支腳本印出來的百分比。
+   整台高 ≈ 0.98 倍寬，依視窗高度反推寬度，一定塞進一個畫面 */
+.tune-console{position:relative;width:min(100%,600px,calc((var(--tvh,100dvh) - 340px) / 0.99));aspect-ratio:1438/1413;background:url(tune/panel-all.png) 0 0/100% 100% no-repeat;image-rendering:pixelated;container-type:inline-size;user-select:none}
+@media (orientation:landscape) and (max-height:600px) and (min-width:560px){.tune-console{width:min(100%,calc((var(--tvh,100dvh) - 24px) / 0.99))}}
 /* 手機直放：面板放大塞滿寬度（2026-10-23 店主：左右空位太多），星圖讓出高度。
    高度一律用 --tvh（JS 記下的視窗高，打字時鍵盤彈出不更新）：不然 100dvh 跟著鍵盤縮、直式被判成橫式，整台版面會跳成左右並排 */
-@media (max-width:520px){.tune-console{width:min(100%,calc((var(--tvh,100dvh) - 230px) / 1.08))}.tune-panel{padding:8px 6px 0}}
-.tune-mod{position:relative;background-size:100% 100%;background-repeat:no-repeat;image-rendering:pixelated}
-.tune-row1{display:flex;gap:2cqw;align-items:stretch}
-.tune-mod-freq{width:76%;flex:none;aspect-ratio:1438/499;background-image:url(tune/panel-freq.jpg)}
-.tune-mod-wheels{width:100%;aspect-ratio:1438/983;background-image:url(tune/panel-wheels.jpg)}
-.tune-btncol{flex:1 1 0;min-width:0;display:grid;place-items:center;padding:1cqw 0}
-.tune-draw{height:100%;max-width:100%;aspect-ratio:168/358;background:url(tune/btn-v.png) center/100% 100% no-repeat;image-rendering:pixelated;border:0;padding:0;cursor:pointer;writing-mode:vertical-rl;text-orientation:upright;font-family:var(--pix);font-size:5cqw;letter-spacing:.3em;color:#2a1e07;text-shadow:.15cqw .15cqw 0 rgba(255,236,170,.55);display:grid;place-items:center}
+@media (max-width:520px){.tune-console{width:min(100%,calc((var(--tvh,100dvh) - 220px) / 0.99))}.tune-panel{padding:6px 6px 0}}
+.tune-console .abs{position:absolute}
+.tune-draw{left:79.903%;top:16.631%;width:11.683%;height:25.336%;background:url(tune/btn-v.png) center/100% 100% no-repeat;image-rendering:pixelated;border:0;padding:0;cursor:pointer;writing-mode:vertical-rl;text-orientation:upright;font-family:var(--pix);font-size:5cqw;letter-spacing:.3em;color:#2a1e07;text-shadow:.15cqw .15cqw 0 rgba(255,236,170,.55);display:grid;place-items:center}
 .tune-draw:active{transform:translateY(.4cqw);filter:brightness(1.08)}
 .tune-draw[disabled]{opacity:.55;cursor:default}
-.tune-console .abs{position:absolute}
-.tune-drumwin{left:14.26%;top:36.2%;width:61.2%;height:54.7%;background:#0d0f0d;display:flex;gap:1.1cqw;padding:1.2cqw 1.3cqw;align-items:stretch}
+.tune-drumwin{left:14.117%;top:23.425%;width:47.636%;height:21.939%;background:#0d0f0d;display:flex;gap:1.4cqw;padding:1.6cqw 1.7cqw;align-items:stretch}
 .tune-drum{position:relative;flex:1 1 0;overflow:hidden;background:linear-gradient(180deg,#000 0,#2b2f2a 30%,#3a3f38 50%,#2b2f2a 70%,#000 100%);box-shadow:inset 0 0 0 .3cqw #000}
 .tune-drum.wide{flex:2.3 1 0}
 .tune-drum .strip{transition:transform .5s cubic-bezier(.25,.9,.3,1.08)}
-.tune-drum span{display:block;height:4cqw;line-height:4cqw;text-align:center;font-family:var(--pix);font-size:3cqw;color:var(--w,#e9e2c8);text-shadow:0 0 1cqw var(--w,#e9e2c8)}
-.tune-drum.wide span{font-size:2.6cqw;letter-spacing:.2em;padding-left:.2em}
+.tune-drum span{display:block;height:6cqw;line-height:6cqw;text-align:center;font-family:var(--pix);font-size:4.2cqw;color:var(--w,#e9e2c8);text-shadow:0 0 1cqw var(--w,#e9e2c8)}
+.tune-drum.wide span{font-size:3.5cqw;letter-spacing:.2em;padding-left:.2em}
 .tune-drum::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.85) 0,rgba(0,0,0,.35) 30%,transparent 40%,transparent 60%,rgba(0,0,0,.35) 70%,rgba(0,0,0,.85) 100%);pointer-events:none}
-.tune-sw{left:80.7%;top:40.6%;width:7.6%;height:48.5%;background:transparent;border:0;cursor:pointer;padding:0}
-.tune-swlab{left:77%;width:15%;text-align:center;font-family:var(--pix);font-size:1.9cqw;letter-spacing:.1em;color:#8d9478;pointer-events:none}
-.tune-swlab.top{top:29%}.tune-swlab.bot{top:90.8%}
+.tune-sw{left:66.968%;top:25.195%;width:7.58%;height:19.462%;background:transparent;border:0;cursor:pointer;padding:0}
+.tune-swlab{left:63.282%;width:15.021%;text-align:center;font-family:var(--pix);font-size:2.5cqw;letter-spacing:.1em;color:#8d9478;pointer-events:none}
+.tune-swlab.top{top:20.524%}.tune-swlab.bot{top:44.2%}
 .tune-swlab.on{color:#ffd34d;text-shadow:0 0 .8cqw #ffd34d}
-.tune-led{left:83.3%;width:1.8%;height:2.8%;background:#2b2a1f;pointer-events:none}
-.tune-led.top{top:42.5%}.tune-led.bot{top:84.1%}
+.tune-led{left:69.611%;width:1.808%;height:1.132%;background:#2b2a1f;pointer-events:none}
+.tune-led.top{top:25.973%}.tune-led.bot{top:42.675%}
 .tune-led.on{background:#ffd34d;box-shadow:0 0 .8cqw #ffd34d}
-.tune-wheel{background:transparent;cursor:ns-resize;touch-action:none;overflow:hidden;top:15.36%;height:54.5%}
-.tune-wheel canvas{display:block;width:100%;height:100%;image-rendering:pixelated}
-.tune-wheel[data-axis="x"]{left:15.58%;width:12.66%}.tune-wheel[data-axis="y"]{left:44.78%;width:12.24%}.tune-wheel[data-axis="z"]{left:73.7%;width:12.24%}
-.tune-wheel:focus-visible{outline:2px solid #ffd166;outline-offset:-2px}
 /* SCAN／FINE 撥桿：原稿槽位上疊三格（上｜中｜下），撥的時候走一格中間 */
-/* FREQUENCY 只有 76% 寬又被壓矮，原稿螺絲看起來小一號、扁的；疊上與輪子模組同大小的螺絲 */
-.tune-screw{top:1%;width:6.405%;height:18.458%;background:url(tune/screw.png) center/100% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
-.tune-screw.l{left:.414%}.tune-screw.r{left:93.181%;top:.648%}
-.tune-lever{left:82.197%;top:52.734%;width:4.103%;height:24.162%;background:url(tune/switch.png) 0 0/300% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
+.tune-lever{left:68.498%;top:30.078%;width:4.103%;height:9.696%;background:url(tune/switch.png) 0 0/300% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
 .tune-lever[data-pos="mid"]{background-position:50% 0}.tune-lever[data-pos="down"]{background-position:100% 0}
-/* 搜尋列：照原稿配色畫的模組（scripts/build-tune-sprites.py），名牌、液晶、黃銅鍵上疊 HTML */
-.tune-mod-search{width:100%;aspect-ratio:1440/144;background-image:url(tune/panel-search.png)}
-.tune-search-plate{left:8.75%;top:20.833%;width:23.333%;height:58.333%;display:flex;align-items:center;justify-content:center;gap:.35em;font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;font-weight:700;font-size:2.3cqw;letter-spacing:.04em;color:#2a1e07;white-space:nowrap;pointer-events:none}
+.tune-wheel{background:transparent;cursor:ns-resize;touch-action:none;overflow:hidden;top:55.485%;height:37.933%}
+.tune-wheel canvas{display:block;width:100%;height:100%;image-rendering:pixelated}
+.tune-wheel[data-axis="x"]{left:15.577%;width:12.656%}.tune-wheel[data-axis="y"]{left:44.784%;width:12.239%}.tune-wheel[data-axis="z"]{left:73.713%;width:12.239%}
+.tune-wheel:focus-visible{outline:2px solid #ffd166;outline-offset:-2px}
+/* 搜尋列：名牌、液晶、黃銅鍵畫在面板上，文字、輸入框、按鍵疊 HTML */
+.tune-search-plate{left:8.971%;top:4.388%;width:16.481%;height:5.025%;display:flex;align-items:center;justify-content:center;gap:.35em;font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;font-weight:700;font-size:2.1cqw;letter-spacing:.04em;color:#2a1e07;white-space:nowrap;pointer-events:none}
 .tune-search-plate small{font-family:system-ui,sans-serif;font-weight:500;font-size:.82em;letter-spacing:.06em}
-.tune-search-in{left:34.167%;top:20.833%;width:46.25%;height:58.333%;margin:0;padding:0 1.4cqw;border:0;border-radius:0;outline:0;background:transparent;-webkit-appearance:none;appearance:none;font-family:var(--pix);font-size:16px;line-height:1;color:#ffd34d;text-shadow:0 0 6px rgba(255,211,77,.55);caret-color:#ffd34d}
+.tune-search-in{left:27.051%;top:4.742%;width:54.59%;height:4.317%;margin:0;padding:0 1.4cqw;border:0;border-radius:0;outline:0;background:transparent;-webkit-appearance:none;appearance:none;font-family:var(--pix);font-size:16px;line-height:1;color:#ffd34d;text-shadow:0 0 6px rgba(255,211,77,.55);caret-color:#ffd34d}
 .tune-search-in::placeholder{color:#6d6440;text-shadow:none;opacity:1}
 .tune-search-in::-webkit-search-cancel-button{display:none}
 .tune-search-in:focus{box-shadow:inset 0 0 0 2px rgba(255,211,77,.28)}
-.tune-search-go{left:82.083%;top:16.667%;width:9.167%;height:66.667%;padding:0;border:0;background:transparent;cursor:pointer}
+.tune-search-go{left:83.171%;top:3.963%;width:7.719%;height:5.874%;padding:0;border:0;background:transparent;cursor:pointer}
 .tune-search-go:active{background:rgba(42,30,7,.22)}
 .tune-search-go:focus-visible{outline:2px solid #ffd166;outline-offset:1px}
 .tune-sugg{position:absolute;left:8px;right:8px;bottom:8px;z-index:6;max-height:min(62%,330px);overflow:auto;background:rgba(7,8,7,.95);border:1px solid rgba(233,226,200,.28);box-shadow:0 0 0 1px #000;font-family:var(--pix)}
@@ -197,13 +190,9 @@
     <div class="tune-msg" id="tuneMsg">載入中…</div>
   </div>
   <div class="tune-panel"><div class="tune-console" id="tuneConsole">
-    <div class="tune-mod tune-mod-search">
-      <span class="abs tune-search-plate">搜尋<small>/ SEARCH</small></span>
-      <input class="abs tune-search-in" id="tuneSearch" type="search" enterkeyhint="search" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="藝人或專輯" aria-label="搜尋專輯" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="tuneSugg">
-      <button class="abs tune-search-go" id="tuneSearchGo" type="button" aria-label="搜尋"></button>
-    </div>
-    <div class="tune-row1">
-    <div class="tune-mod tune-mod-freq">
+    <span class="abs tune-search-plate">搜尋<small>/ SEARCH</small></span>
+    <input class="abs tune-search-in" id="tuneSearch" type="search" enterkeyhint="search" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="藝人或專輯" aria-label="搜尋專輯" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="tuneSugg">
+    <button class="abs tune-search-go" id="tuneSearchGo" type="button" aria-label="搜尋"></button>
     <div class="abs tune-drumwin">
       <div class="tune-drum" id="tuneDx" style="--w:${AX.x}"><div class="strip"><span>靜</span><span>躁</span></div></div>
       <div class="tune-drum" id="tuneDy" style="--w:${AX.y}"><div class="strip"><span>輕</span><span>重</span></div></div>
@@ -211,18 +200,13 @@
       <div class="tune-drum wide" id="tuneDcell"><div class="strip" id="tuneCellStrip"></div></div>
     </div>
     <span class="abs tune-swlab top on" id="tuneSwTop">SCAN</span><span class="abs tune-swlab bot" id="tuneSwBot">FINE</span>
-    <i class="abs tune-screw l"></i><i class="abs tune-screw r"></i>
     <i class="abs tune-lever" id="tuneLever" data-pos="up"></i>
     <button class="abs tune-sw" id="tuneMode" type="button" aria-label="SCAN 連續掃描／FINE 一格一張" aria-pressed="false"></button>
     <i class="abs tune-led top on" id="tuneLedTop"></i><i class="abs tune-led bot" id="tuneLedBot"></i>
-    </div>
-    <div class="tune-btncol"><button class="tune-draw" id="tuneDraw" type="button" disabled>就這張</button></div>
-    </div>
-    <div class="tune-mod tune-mod-wheels">
+    <button class="abs tune-draw" id="tuneDraw" type="button" disabled>就這張</button>
     <div class="abs tune-wheel" data-axis="x" role="slider" tabindex="0" aria-label="能量" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25"><canvas></canvas></div>
     <div class="abs tune-wheel" data-axis="y" role="slider" tabindex="0" aria-label="質地" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><canvas></canvas></div>
     <div class="abs tune-wheel" data-axis="z" role="slider" tabindex="0" aria-label="色溫" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><canvas></canvas></div>
-    </div>
   </div></div>
 </div>`;
   }
