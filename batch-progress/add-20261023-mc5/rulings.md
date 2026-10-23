@@ -97,3 +97,8 @@
   - `desc4:田中フミヤ|Unknown 3`：「他一貫的聲音，2018 年被形容為厚實的小鼓、翻滾的貝斯線與粗獷的節拍。」→「他的聲音向來以厚實的小鼓、翻滾的貝斯線與粗獷的節拍為底。」依據：原句是單一 2018 樂評對他整體聲音的轉述，被動「被形容為」等於引述媒體評語；改成聲音陳述、去掉年份與轉述框（研究 e 組 facts 不變，研究／hooks／input 不必改）。
   - `desc2:Flare|Grip`：第二句「Ken Ishii 生在札幌」→「日本 techno 製作人 Ken Ishii 生在札幌」。依據：開頭兩句要交代樂種，note 漏給；研究 d 組 facts 有 techno 標籤（Discogs）。純補身分，不動事實。
   - 抽核：Plastics 成員職業與〈Eight Days a Week〉（研究 a 組，日文維基＋MB 曲目）、TESTPATTERN 2025 倉庫母帶重發（研究 b 組，Sony 官方）、CAPSULE 無客座歌手（研究 b 組，中田訪談）、SILICOM 2001-01-10 與高木正勝合組單位名（研究 c 組）、Silicom Two「Gen Isayama」掛名（研究 c 組，Discogs credits）、石野卓球個人作品「更偏 techno、更極端」（研究 e 組）、Right Moment 2011 起住柏林（研究 d 組）。無「據說／據傳」、無資料平台名、無媒體名。qa-batch out、qa-check-research（標記 0）、fix-spacing（0）全過。
+- **11396-P**：上線（2026-10-23）：card_catalog 16／16、KV 25 鍵回讀逐字一致、靜態試聽 13＋負面 3（田中フミヤ《Unknown 3》《Right Moment》、Tanzmuzik《Sinsekai》：Apple 無本盤）、seed +16、published gate 0 error。封面 CAA 14、Apple 1（《Unknown Possibility Vol. 2》）、Discogs 1（《Unknown 3》，已登錄 `data/discogs-cover-registry.json`），縮圖表目視 16/16。冷門軸覆寫 6 張（田中フミヤ 3、青木孝允 3：Last.fm 日文掛名 listeners 失真，§0.8 給 4）。試聽人工指定 5 張（TESTPATTERN、SILICOM、Silicom Two、Parabolica、LOGIC：Apple 藝人目錄逐首核對）。跨分支 seed 去重 0。`genre-l3-artist-map.json` 補 Plastics、TESTPATTERN、CAPSULE → electronic/synth/synthpop，16/16 落位。
+- **11397-M**：上線當天情緒評分（`batch-progress/mood-axes/score-mc5/`，一支 Opus 照 BRIEF、不上網）：conf mid 6／low 10。**落冷冽 11／16（69%）**；出格 5 張：**能量判靜落平靜 4**（青木孝允《SILICOM》2.4、《Silicom Two》2.5、TESTPATTERN 2.6、Tanzmuzik 2.9——glitch／IDM 與極簡器樂 techno-pop 又是中速 x 的老問題）、**色溫判暖落雀躍 1**（CAPSULE《NEXUS-2060》z +0.2，人聲 shibuya-kei 底）。質地全部守住（y −0.8～+0.2）。研究層汰掉 19 張樂團／暖盤後，剩下的風險只剩 glitch 的 x。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Plastics、TESTPATTERN、CAPSULE、SOFT BALLET、田中フミヤ、青木孝允、Tanzmuzik、Flare（Ken Ishii 別名義，可走別名補鍵）、石野卓球（9 位；Logic System 已有介紹）。
