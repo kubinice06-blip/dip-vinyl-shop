@@ -66,3 +66,11 @@
 - 18328 Holy Other《Lieve》：**輕度存疑**：有鼓有低音重擊（Clash「heavy, sparse drum sequence」、LOBF「unrelenting bass punch」），但稀疏而緩；薩克斯、小提琴、清晰人聲、〈Groundless〉的 beatific half-melody，Clash 明說「not necessarily gloomy」。靜重成立，冷度可能只到中度（z −0.9 偏冷）。九年間隔、廠牌、年份成立。
 - 18329 Salem《Fires in Heaven》：**moodGuess 存疑**：專輯本身樂評全被擋，只有通論（trap 風格鼓、低頻）；11 首曲長 1–4 分鐘，節奏密度恐高於預估；curatorRisk 要求確認 trap 鼓，結論是通論層確認有 trap 風格鼓、本作速度無證據。Discogs 發行為 Salem 自行發行（SALEM001），〈Starfall〉單曲經 Mad Decent 的 Decent Distribution。Marlatt 被逐爭議與作品直接綁定，已寫入 facts。
 - 本組推翻策展層：2 處（Rabelais 讚美詩→哀歌、oOoOO 唯一長作）；moodGuess 存疑 8／9（重：Dead Air、Dalhous；輕：其餘；僅 Rabelais 因無資料標「無從驗證」）。WebSearch 用 3 次；Bandcamp、Pitchfork、AllMusic、Norman 等被擋，改以 Discogs／MB／維基／Ghost Box 文案／Quietus／Clash／LOBF 補。
+
+## 主線研究後汰換與補位（不佔條號；2026-10-23）
+- **汰 18 張**（研究層聲音反證，照 HANDOFF §二第 3 步直接汰）：
+  - 有鼓推進／讓人緊繃（體感判躁）：Dead Can Dance 同名（drum-driven）、Nephilim《Mourning Sun》（延續《Zoon》工業金屬、driving rhythm）、Skin《Blood, Women, Roses》（硬程式鼓、舞池律動）、Sopor《Songs From the Inverted Womb》（現場鼓手、緊繃壓迫）、Kælan Mikla（motorik 鼓機）、Former Ghosts《Fleurs》（底鼓＋故障節拍）、Black Wing（合成鼓全程、舞曲節奏）、Them Are Us Too（鼓機持續推進、旋律清楚）、Salem《Fires in Heaven》（witch house trap 鼓、曲短密）、Dalhous（層疊打擊＋dub 低音、breezy）、Mordant Music《Dead Air》（片段拼貼、grime／electro 標籤，慢 dub 無證據）。
+  - 乾淨／原聲判輕：Cranes《Particles & Waves》（原聲撥弦、空曠）、Cranes《Cranes》2008（輕鼓、風琴豎琴音色）、Skin《Shame, Humility, Revenge》（原聲吉他鋼琴弦樂室內樂）、Sopor《Dead Lovers' Sarabande (Face Two)》（真弦樂銅管木管、少了音牆；同組留 Face One 一張）、Mors Syphilitica《Primrose》（曼陀林、十二弦民謠編制）。
+  - 暖：Love Is Colder Than Death《Mental Traveller》（轉凱爾特民謠）、Soul Whirling Somewhere《Eating the Sea》（搖籃曲、sparse yet warm）。
+- **補位 10 張**（叫回原策展代理補「無鼓、殘響／磁帶糊、陰冷」候補 11 張，主線再汰 William Basinski《Lamentations》——md1 先例 Basinski 色溫判中性落恍惚）：The Caretaker《Persistent Repetition of Phrases》《Additional Amnesiac Memories》《Take Care, It's a Desert Out There...》、Leyland Kirby《Eager to Tear Apart the Stars》《We, So Tired of All the Darkness in Our Lives》、The Stranger《Bleaklow》、Black Tape for a Blue Girl《As One Aflame Laid Bare by Desire》《To Touch the Milky Way》、Tara Vanflower《This Womb Like Liquid Honey》、Mike VanPortfleet《Beyond the Horizon Line》。MB 10/10 釘住。補位卡分入 a 5、b 2、c 2、e 1（卡單 `supplement:true`），由一支補研究代理 append 進各組研究稿。**定案 37 張**（a 8、b 8、c 7、d 7、e 7）。
+- 補位卡研究條號：沿用各組區間剩下的號（a 18288–18290、b 18300、c 18310、e 18330），不夠就寫在主線區間 18351 起。
