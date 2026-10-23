@@ -1,0 +1,447 @@
+{
+ "group": "mc41",
+ "factions": [
+  {
+   "id": "acousmatic",
+   "zh": "電子原音／acousmatic 尖細那半（GRM 系、empreintes DIGITALes、BEAST）",
+   "count": 7,
+   "why": "微剪接、碎片短音事件密集交錯、乾而尖的摩擦與撞擊；不收飄浮長音與厚密噪音堆疊"
+  },
+  {
+   "id": "early-studio",
+   "zh": "早期電子工作室點描／序列作與混合媒體（WDR、Columbia-Princeton、Utrecht）",
+   "count": 6,
+   "why": "正弦波與脈衝的點描、序列式跳躍、樂器對磁帶的神經質對答；乾、薄、無調"
+  },
+  {
+   "id": "computer",
+   "zh": "電腦音樂／演算法作曲的尖細那半",
+   "count": 1,
+   "why": "粒子／脈衝合成、心理聲學高頻、網路演算法的急促碎音；薄、乾、無旋律"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Horacio Vaggione",
+   "album": "Musiques pour piano et électroacoustique",
+   "year": 1995,
+   "label": "Mnémosyne Musique Média",
+   "country": "fr",
+   "faction": "acousmatic",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "Vaggione 微剪接（micromontage）代表盤：Philip Mead 鋼琴對磁帶，含名作《Schall》；GMEB Bourges 製作",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -1.6,
+    "why": "鋼琴碎粒與毫秒級剪接密集爆點，乾、尖、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4e3dd8c5-9847-415f-8862-f3c420045f03",
+    "https://coverartarchive.org/release-group/4e3dd8c5-9847-415f-8862-f3c420045f03/front",
+    "https://www.discogs.com/release/714493"
+   ],
+   "mbRgMbid": "4e3dd8c5-9847-415f-8862-f3c420045f03",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Horacio Vaggione",
+   "album": "Points critiques",
+   "year": 2012,
+   "label": "INA-GRM",
+   "country": "fr",
+   "faction": "acousmatic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "INA-GRM 出版的 Vaggione 作品集（Points critiques、Nodal、Ash、Arenas、Phases），微時間尺度粒子作曲的 GRM 正典",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.2,
+    "z": -1.7,
+    "why": "粒子級短音事件高速交錯、尖銳高頻，無長音墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a1d8d0ae-154a-4f4b-9399-6aa89c4c6a3b",
+    "https://coverartarchive.org/release-group/a1d8d0ae-154a-4f4b-9399-6aa89c4c6a3b/front",
+    "https://www.discogs.com/release/4454264"
+   ],
+   "mbRgMbid": "a1d8d0ae-154a-4f4b-9399-6aa89c4c6a3b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Horacio Vaggione",
+   "album": "Fluides",
+   "year": 2017,
+   "label": "empreintes DIGITALes",
+   "country": "ca",
+   "faction": "acousmatic",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "empreintes DIGITALes 的 Vaggione 晚期盤：Fluid Mechanics、PianoHertz、卷積小提琴，延續微剪接點描",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.4,
+    "z": -1.6,
+    "why": "鋼琴與小提琴被切成細碎顆粒，快速閃爍、乾薄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f171dc2b-e007-4e4f-a75b-0a961f840d35",
+    "https://coverartarchive.org/release-group/f171dc2b-e007-4e4f-a75b-0a961f840d35/front",
+    "https://electrocd.com/en/album/5839-horacio-vaggione-fluides"
+   ],
+   "mbRgMbid": "f171dc2b-e007-4e4f-a75b-0a961f840d35",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 估 3.3 貼門檻；同人前兩張較穩，主線可擇一"
+  },
+  {
+   "artist": "Jonty Harrison",
+   "album": "Évidence matérielle",
+   "year": 2000,
+   "label": "empreintes DIGITALes",
+   "country": "gb",
+   "faction": "acousmatic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BEAST 創辦人 Harrison 的代表盤（Klang、Surface Tension、Splintering）：英式手勢派 acousmatic 的乾摩擦與碎裂能量",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.2,
+    "z": -1.5,
+    "why": "乾的摩擦聲物件、碎裂撞擊各自彈射，稀疏但急"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9dc99e2f-49fc-47bf-b7e7-e6553599b8ba",
+    "https://coverartarchive.org/release-group/9dc99e2f-49fc-47bf-b7e7-e6553599b8ba/front",
+    "https://electrocd.com/en/album/2312-jonty-harrison-evidence-materielle"
+   ],
+   "mbRgMbid": "9dc99e2f-49fc-47bf-b7e7-e6553599b8ba",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 只收 2022 數位版（RG 日期 2022），原盤 IMED 0052 為 2000；Streams 一段較具地景感"
+  },
+  {
+   "artist": "Elsa Justel",
+   "album": "Mâts",
+   "year": 2007,
+   "label": "empreintes DIGITALes",
+   "country": "fr",
+   "faction": "acousmatic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "阿根廷裔 GMEB 系作曲家 Justel 的 empreintes 專輯，《Puntos, comas y refritos》式打擊碎片與急速換景",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.1,
+    "z": -1.5,
+    "why": "細碎刺痛的金屬碎響、急速轉場，高頻尖嘯"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8ef8894e-d930-4e93-a57f-c73a0e71dde9",
+    "https://coverartarchive.org/release-group/8ef8894e-d930-4e93-a57f-c73a0e71dde9/front",
+    "https://electrocd.com/en/album/2348/Elsa_Justel/M%C3%A2ts"
+   ],
+   "mbRgMbid": "8ef8894e-d930-4e93-a57f-c73a0e71dde9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "樂評也提到低沉的 didgeridoo 式段落與『泥流』，y 有偏重風險"
+  },
+  {
+   "artist": "Gottfried Michael Koenig",
+   "album": "Klangfiguren II / Essay / Terminus I–II / Output / Funktionen",
+   "year": 1990,
+   "label": "BVHaast",
+   "country": "nl",
+   "faction": "early-studio",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Koenig 從 WDR 科隆（Klangfiguren II、Essay、Terminus）到 Utrecht 聲學所（Funktion 系列）的電子作雙 CD，序列電子樂的源頭盤",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.2,
+    "z": -1.8,
+    "why": "正弦與脈衝的點描、濾波噪音短爆，乾、薄、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ddafbaca-23eb-4091-82ea-cb6ec18b9920",
+    "https://coverartarchive.org/release-group/ddafbaca-23eb-4091-82ea-cb6ec18b9920/front",
+    "https://www.discogs.com/master/170087"
+   ],
+   "mbRgMbid": "ddafbaca-23eb-4091-82ea-cb6ec18b9920",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Funktion 系列單曲較長、持續調變音，x 可能貼 3.3"
+  },
+  {
+   "artist": "Mario Davidovsky",
+   "album": "The Music of Mario Davidovsky, Volume 3",
+   "year": 2005,
+   "label": "Bridge Records",
+   "country": "us",
+   "faction": "early-studio",
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "why": "Davidovsky《Synchronisms》No. 5、6（普立茲獎作）、9 三首樂器對磁帶，Columbia-Princeton 混合媒體的典範",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.6,
+    "z": -1.6,
+    "why": "鋼琴／打擊與電子嗶聲的短促點描對答，乾、尖、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ee92f00a-83fa-4a54-8669-81e17e6b6fdd",
+    "https://www.discogs.com/release/8768981",
+    "https://bridgerecords.com/products/9171"
+   ],
+   "mbRgMbid": "ee92f00a-83fa-4a54-8669-81e17e6b6fdd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面來源 Discogs／Bridge 官網（CAA 無）；另含 Quartetto、Duo Capriccioso、Chacona 等純器樂"
+  },
+  {
+   "artist": "Mario Davidovsky",
+   "album": "Synchronisms",
+   "year": 2021,
+   "label": "United Phoenix Records",
+   "country": "ch",
+   "faction": "early-studio",
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "why": "Ensemble Phoenix Basel 錄的 Davidovsky《Synchronisms》系列，器樂與磁帶神經質互咬的混合媒體選集",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -1.6,
+    "why": "器樂短句與電子尖鳴急促交錯，乾、薄、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e77d43c3-3fd8-489e-98df-ed9937daf21a",
+    "https://coverartarchive.org/release-group/e77d43c3-3fd8-489e-98df-ed9937daf21a/front",
+    "https://ensemblephoenixbs.bandcamp.com/album/mario-davidovsky-synchronisms"
+   ],
+   "mbRgMbid": "e77d43c3-3fd8-489e-98df-ed9937daf21a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB RG 無日期，年份取 Bandcamp 2021-09-03；與 Bridge Vol. 3 可能有曲目重疊（同作品不同演出）"
+  },
+  {
+   "artist": "Milton Babbitt",
+   "album": "Occasional Variations",
+   "year": 2003,
+   "label": "Tzadik",
+   "country": "us",
+   "faction": "early-studio",
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "why": "Tzadik 出版：RCA Mark II 合成器作《Occasional Variations》加第二、六號弦樂四重奏，Babbitt 序列主義電子與器樂並陳",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.6,
+    "z": -1.6,
+    "why": "合成器點描嗶聲高速跳躍，弦樂四重奏碎句，乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ad946b20-4c64-30c6-8914-cf30af7a3b0a",
+    "https://coverartarchive.org/release-group/ad946b20-4c64-30c6-8914-cf30af7a3b0a/front",
+    "https://www.discogs.com/release/1689027"
+   ],
+   "mbRgMbid": "ad946b20-4c64-30c6-8914-cf30af7a3b0a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Philomel 判 2.6；mc4 對 Babbitt 鋼琴判『碎而不衝』3.4 貼門檻，本張 x 風險同"
+  },
+  {
+   "artist": "Herbert Brün",
+   "album": "Wayfaring Sounds",
+   "year": 1998,
+   "label": "Electronic Music Foundation",
+   "country": "us",
+   "faction": "early-studio",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "電腦音樂先驅 Brün 1959–1997 磁帶與電腦作選（Wayfaring Sounds、Sonoriferous Loops、Infraudibles），Illinois 實驗工作室一線",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.2,
+    "z": -1.7,
+    "why": "鋸齒波電腦音與磁帶短段急切切換，刺耳、乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/aeaddd33-f888-4321-8b7d-eaa026412fe4",
+    "https://www.discogs.com/release/1283306",
+    "https://musicbrainz.org/release/18ebc851-fe82-45e3-98ee-6dc99d80d31a"
+   ],
+   "mbRgMbid": "aeaddd33-f888-4321-8b7d-eaa026412fe4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面來源 Discogs（CAA 無）；含 Non Sequitur VI 器樂＋磁帶"
+  },
+  {
+   "artist": "Curtis Roads",
+   "album": "Point Line Cloud",
+   "year": 2005,
+   "label": "Asphodel",
+   "country": "us",
+   "faction": "computer",
+   "genres": [
+    "electronic"
+   ],
+   "why": "粒子合成理論家 Roads 1999–2003 電腦作品集（Half-life、Volt Air、Sculptor），pulsar／granular 合成的教科書盤",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -1.5,
+    "why": "脈衝粒子與尖點音爆密集噴發，高頻、乾、無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/27e0ba8c-97dc-43d5-be5d-d358eb289252",
+    "https://www.discogs.com/release/455788",
+    "https://prestorecords.bandcamp.com/album/point-line-cloud"
+   ],
+   "mbRgMbid": "27e0ba8c-97dc-43d5-be5d-d358eb289252",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面來源 Discogs／Bandcamp 重發（CAA 無）"
+  },
+  {
+   "artist": "Thomas Ankersmit",
+   "album": "Homage to Dick Raaijmakers",
+   "year": 2018,
+   "label": "Shelter Press",
+   "country": "nl",
+   "faction": "early-studio",
+   "genres": [
+    "electronic"
+   ],
+   "why": "向 Utrecht／Philips 電子工作室先驅 Raaijmakers 致敬，用類比合成器重構其脈衝與機械點擊美學",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.7,
+    "why": "脈衝點擊與尖細正弦斷續跳動，乾、薄、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e6588b4e-6747-45b8-9edb-a15c136c61a2",
+    "https://coverartarchive.org/release-group/e6588b4e-6747-45b8-9edb-a15c136c61a2/front",
+    "https://shelterpress.bandcamp.com/album/homage-to-dick-raaijmakers"
+   ],
+   "mbRgMbid": "e6588b4e-6747-45b8-9edb-a15c136c61a2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同人跨組：mc37 已提 Ankersmit《Figueroa Terrace》，本張不同盤"
+  },
+  {
+   "artist": "Trevor Wishart",
+   "album": "Tongues of Fire",
+   "year": 1994,
+   "label": "Orpheus the Pantomime",
+   "country": "gb",
+   "faction": "acousmatic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Wishart 以 CDP 相位聲碼器把人聲碎裂變形的 25 分鐘長篇，人聲 acousmatic 的代表作",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.2,
+    "z": -1.5,
+    "why": "人聲碎片被急速變形、噴濺與尖叫式轉換，乾、無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3cf34252-f3ff-3fb7-8e5a-70061cb7e6fe",
+    "https://www.discogs.com/release/776947",
+    "https://rateyourmusic.com/release/ep/trevor-wishart/tongues-of-fire/"
+   ],
+   "mbRgMbid": "3cf34252-f3ff-3fb7-8e5a-70061cb7e6fe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 標 Album，Discogs 格式寫 Maxi-Single、RYM 列 EP（單曲 25 分鐘）；封面來源 Discogs"
+  },
+  {
+   "artist": "A_dontigny",
+   "album": "Geisteswissenschaften",
+   "year": 2007,
+   "label": "No Type",
+   "country": "ca",
+   "faction": "acousmatic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "蒙特婁 Napalm Jazz 創團成員 Dontigny 的首張完整個人作，17 首短曲的 cut-up／glitch 拼貼，Prix Opus 年度唱片入圍",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.0,
+    "z": -1.0,
+    "why": "極短碎片高速剪接、故障跳針與取樣斷裂，坐不住"
+   },
+   "evidence": [
+    "https://electrocd.com/en/album/2446-a-dontigny-geisteswissenschaften",
+    "https://www.discogs.com/release/4010943"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "MB artist A_dontigny（a376f2a1-9508-45e4-b193-7ec3621c535a）release-group 列表：只有 La notte fa 與 Sine Fiction EP",
+     "MB release query \"Geisteswissenschaften\"：0 筆"
+    ],
+    "checkedAt": "2026-10-23",
+    "conclusion": "MB 查無此盤；以 Discogs release 4010943（No Type IMNT 0715, 2007, CD Album）與 electrocd 廠牌頁人工定身分"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/4010943",
+    "https://electrocd.com/en/album/2446-a-dontigny-geisteswissenschaften"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "取樣含 Satie、Living Strings 等旋律片段，z 估 −1.0 留邊距但較其他張暖"
+  }
+ ],
+ "notes": []
+}
