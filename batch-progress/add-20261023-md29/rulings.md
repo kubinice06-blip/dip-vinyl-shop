@@ -74,3 +74,8 @@
   - 躁（體感標準）：Ulvestad《Fall》（近乎暴力的強烈、漸強到恐懼頂點）、Taphephobia《Blue Hour》（overwhelming noise waves、boiling）。
 - 卡單更正：Altarmang《Void》2016→**2017**（MB 首發 2016-12-21 是 Hypnagoga Press 兩首卡帶，Cyclic Law 四首正規版 2017-09-22；照研究 d 組）；Vestigial《Translucent Communion》廠牌 Cyclic Law→**Cold Meat Industry**（2008 首發，Cyclic Law 是 2025 再版；研究 e 組）。
 - 留 25 張（a 4、b 3、c 5、d 7、e 6）；叫回策展代理補 15 張候補（擴寫場景：冷硬器樂 dub、無鼓 isolationist），每張要附無鼓／冷的文案原句。
+
+## 主線補候補（不佔條號；2026-10-23）
+- 策展代理補 15 張（擴寫場景：isolationist-drone 10、dub-steppers 5；每張附 `copyQuote` 文案原句），全 MB 釘住、去重 0。
+- 主線再汰 4：Jah Shaka《Commandments of Dub, Chapter 7: Warrior》（Nyabinghi 手鼓，偏暖）、Dub Syndicate《The Pounding System》（African Head Charge 打擊＋薩克斯，z 貼邊）、Line Spectrum《Bruma》（極簡微粒偏輕、y 0.9 貼邊）、Aetherium Nebula《Ephemeral Port》（2026-10-20 發行、CAA 無圖、只有一句玄學文案）。
+- 收 11 張進卡單（a 組追加 6、b 組追加 5），派一支補研究 append 進 a／b 研究稿。卡單共 36 張。
