@@ -53,3 +53,25 @@
 - 17488：Organum《Vacant Lights》首發格式為卡帶（Aeroplane AR10，1987），黑膠為 1988 Dom America；卡單的 Aeroplane／1987 不推翻。curatorWhy「與 NWW 合作」改寫為 Stapleton 擔任製作。
 - 17489：來源限制——Wikipedia API 被限流、AllMusic／Discogs 網頁／RYM 403，Organum 專輯級樂評極少；Organum 六張的聲音面主要靠 Jackman 1988 年訪談（4iB Records 轉載）與 Orlando Weekly 評論，皆為團體整體說法。WebSearch 用了 4 次（含兩次後續重查），略超每支 3 次上限。
 - 17490：facts 已排除榜單、獎項主張；SPK《Dead Calm》（1989）屬作品後世流傳類，已標時序。
+
+## 研究 d 組（條號 17511–17520）
+- 17511：Maurizio Bianchi《Menses》身分：MB 釘住的 1982 LP（Yra／Scent）與 Discogs 1982 LP 一致，但卡單 mbNote 附的 Discogs master 39087 是 1981 卡帶《YRA / SCENT》的 master（同兩首曲）。不推翻卡單，年份取 1982 LP；廠牌依 Discogs／MB 為無廠牌（Wikipedia 稱 Mectpyo Sounds，不採）。
+- 17512：Bianchi 三張（Regel／Menses／Mectpyo Bakterium）無任何專輯級樂評；聲音證據僅 Regel 2026 重發頁作者自述（periodic synth、bloody waves）、Discogs 風格標籤、曲長。status 全標 thin。《Menses》卡帶版署名列 Sounds [Rhythms]，標「moodGuess 存疑（輕度）」，無鼓未獲證實。
+- 17513：《Mectpyo Bakterium》Discogs master 年份 1981（自行發行卡帶），卡單 1982 為 Dys LP 首發黑膠，不推翻。
+- 17514：Archon Satani《Mind of Flesh & Bones》：1993 年同時是 Pettersson／Stavöstrand 合作結束年，Discogs 未說明本作由誰完成，正文不得寫成單人作品。聲音面僅風格標籤與曲長，建議主線聽音訊。
+- 17515：Christoph Heemann《Invisible Barrier》moodGuess 存疑：重（y 1.1）與冷（z −1.2）皆無來源，風格標 Abstract／Minimal／Ambient，曲名意象為自然與「Season of Calm Weather」。年份：Wikipedia 目錄 1991／1993／1992 互相矛盾，Discogs 與 MB 為 1993（錄於 1992），採 1993。
+- 17516：Daniel Menche《Static Burn》moodGuess 存疑（x 輕度）：封套自述最大音量、受折磨的電子聲、被摧毀的人聲，Bandcamp 標籤 heavy／intense／loud／extreme，攻擊性高；無拍判靜為策展規則，風險已在 curatorRisk。年份採 1994（AllMusic 1995 為搜尋摘要）。
+- 17517：Elend《Leçons de ténèbres》：卡單「定音鼓轟」查無來源；「嘶吼段」只有樂團層級 Wikipedia 描述。樂評（Rock Hard／Metal Nightfall）403 取不到。
+- 17518：Elend《Weeping Nights》性質為三首新曲加六首前作去男聲重混，非選輯、有定位，不建議移除；去男聲是「靜」的最強證據。
+- 17519：Elend《Winds Devouring Men》以原聲室內樂為主，「低頻墊」無來源；Bandcamp 聽眾稱戲劇性、宏大，可能比預估暖，輕度存疑。label 保留 Holy Records（MB 法國版）。
+- 17520：來源限制——Wikipedia API 被限流改用 WebFetch，Discogs 網頁／AllMusic／RYM／Metal Archives 403，改用 Discogs API。WebSearch 用 3 次（Archon Satani、Elend、Menche／Bianchi 各一），皆未找到專輯級樂評。facts 無榜單、獎項主張。
+
+## 主線汰換（研究層交件後，17551）
+- 17551：研究層 a–e 交件，**汰 5 張**（研究稿移到 `dropped-cards.json`），定案 40 張：
+  - Current 93《In Menstrual Night》：A 面穩定鼓點貫穿、B 面民謠旋律，比早期溫和（研究 a）→ x、y 都不符。
+  - Nurse With Wound《Insect and Individual Silenced》：鼓手 Trevor Reidy 小鼓＋刺耳噪音密集段（研究 b）→ 判躁風險。
+  - Cyclobe《The Visitors》：手搖琴、小提琴、大提琴，維基稱更溫暖開闊（研究 c）→ z 不符。
+  - Christoph Heemann《Invisible Barrier》：Minimal／Ambient、自然意象，y、z 均無來源（研究 d）→ 平靜風險。
+  - Arcana《Raspail》：R-8 鼓機、手鼓、原聲吉他、warm vocals（研究 e）→ z、x 不符。
+- 留下但記風險：Daniel Menche《Static Burn》（噪牆無拍，依 10-22 規則判靜；評分時驗）、Elend《Weeping Nights》（三首新曲＋前作去男聲重混，MB Album，收）、Organum《Veil of Tears》（1985–94 錄音編成，MB Album，鉤子不寫「單一長音」）。
+- 張數不補：master 剩的 9 張是 pick 階段就判貼邊汰掉的，不回收；照實上架 40。
