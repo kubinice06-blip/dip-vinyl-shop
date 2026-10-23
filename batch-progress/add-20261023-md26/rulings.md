@@ -52,3 +52,13 @@
 - 19737：Fovea Hex《Here Is Where We Used to Sing》moodGuess 存疑（強）：樂評一致描述鋼琴與人聲領銜、旋律清楚的室內歌曲（Mellow Candle 出身，近 This Mortal Coil／Dead Can Dance），鼓僅〈A Hymn To Sulphur〉遠處一擊（Discogs 另載有 Fabrizio Modonese 的鼓與打擊樂錄音署名）；有判輕或暖的風險，若評分 z≥0 或 y<0.5 建議汰換。維基內文 2011、discography 2012，以 Discogs／MB 的 2011-04-18 為準。
 - 19738：WebSearch 共用 3 次（Natural Snow Buildings 查無、Fursaxa、Fovea Hex）；NSB 的 Bandcamp、Pitchfork、last.fm、Discogs 網頁多為 403／404／JS 牆，改以 Discogs API、Ba Da Bing Bandcamp、維基取得，故四張 NSB 樂評層證據缺。
 - 19739：Terror's Horns 曲名〈King In Yellow〉與 Chambers 同名作品的連結僅為推斷，已從 facts 移除，寫作層不得使用。
+
+## 研究 a 組
+- 19721：Osi and the Jupiter《Halls of the Wolf》moodGuess 存疑（強）：維基列樂器為原聲吉他、大提琴、合成器、風琴；樂評稱大提琴＋原聲吉他讓聲音近 Americana 而非典型異教民謠；Bandcamp 標籤含 folk rock、sludge、stonerrock，但無鼓、失真描述可查。原聲吉他為主、旋律可能清楚，有判輕或暖風險，列主線汰換候選。廠牌／年份：2016-10-20 數位首發無廠牌（MB），Eisenwald CD（Eisen138-CD，限量 500）為 2019，寫作層寫「2016 首發、後由 Eisenwald 出 CD」。status thin（無樂評原文，v13.net 403）。
+- 19722：Wardruna《Kvitravn》moodGuess 存疑（輕）：Nöjesguiden 稱比 Runaljod 三部曲更「driven, dynamic, ritualistic」，Selvik 掛 drums／electronics，並有客座女聲 Kirsten Bråten Berg；Aftenposten 說偶有單調。x 可能 2.6–3.0、z 往暖。2019 簽 Sony/Columbia，實際發行廠牌未核，寫作層只寫簽約事實。
+- 19723：Wardruna《Birna》moodGuess 存疑（輕）：At the Barrier 指〈Skuggehesten〉全團段落鼓聲搥打、〈Himinndotter〉「充滿光與希望」，其餘多慢、暗；未見刺耳爆裂段。「心跳約 9 BPM」只見搜尋摘要、來源頁未開，不採。
+- 19724：Steve von Till《A Life Unto Itself》moodGuess 存疑（輕）：Bandcamp 明寫以「稀疏原聲吉他」為中心並「走出」鄉村與凱爾特民謠，加踏板鋼棒、手搖風琴、中提琴、Pat Schowe 打擊樂與 Korg MS-20；原聲吉他成分偏重，y 邊距本就 0.2，有判輕風險。日期：MB 數位 2015-05-11、Bandcamp 5/12、實體 2015-06-23。
+- 19725：Steve von Till《A Deep Voiceless Wilderness》是《No Wilderness Deep Enough》的器樂版（曲長逐首相同、曲名全改），非新錄音；不建議移除（Bandcamp 以獨立專輯上架、有獨立主旨），但寫作層必須明講。
+- 19726：Natural Snow Buildings《The Dance of the Moon and the Sun》推翻策展層兩處：(1) 全長不是「兩小時」，Discogs 25 首秒數加總約 157 分；(2) 卡單 label=Students of Decay 是 2008 重發（SoD-70/71，限量 500，與 Digitalis 合發），2006 原版為樂團自行發行 CDr（兩種封套共 50 張）。身分 MB 釘住無誤。查無樂評（Foxy Digitalis、Sputnikmusic 503），聲音只能依 Discogs 備註（家用 8 軌、Vitré 2004–2005）與風格標籤。
+- 19727：Wardruna《Runaljod – Ragnarok》與 Steve von Till《No Wilderness Deep Enough》、《Alone in a World of Wounds》未推翻 moodGuess；後者「人聲旋律」「美國鄉村調性」在 Bandcamp 文案出現，輕度提醒 z 可能偏暖。
+- 19728：WebSearch 共用 3 次（Birna 1、Osi 1、NSB 1，NSB 查無相關結果）。其餘靠 Discogs/MB API、Bandcamp、維基。
