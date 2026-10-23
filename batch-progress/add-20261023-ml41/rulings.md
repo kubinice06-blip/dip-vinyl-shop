@@ -18,3 +18,12 @@
 - 19281：DJ Deckstream《Soundtracks》《Soundtracks 2》兩張實際都是「每曲一位美國 MC／歌手領唱」的 jazzy hip-hop／R&B 企劃盤（Discogs 風格含 Contemporary R&B、RnB/Swing），不是器樂 beat 盤；BPM、取樣 dusty 程度、低頻、殘響、類比或數位皆查無樂評，facts 只寫可考的客座、混音、曲長與風格標籤，status thin，兩張都寫「moodGuess 存疑」。
 - 19282：Likkle Mai《MW》身分核對無誤（2007-07-21、MK Starliner、MKD-001、9 曲）；Discogs 風格標 Dub，但無來源證實有 dub 版曲目（curatorWhy 的「dub 混音」存疑）；編制為樂團＋銅管，多首用 drum programming，「重」與速度無來源。likklemai.com 已被賭博站接管，不當來源。
 - 19283：研究層 WebSearch 用 3 次；樂評站（CDJournal、Tower、Billboard Japan、ototoy 商品頁）多數打不開或無此盤，不硬湊聲音事實。
+
+## 研究 c 組
+- 19261：Mad Professor《Bitter Sweet Dub》（Part.3）身分核對無誤（2008、Ariwa、日本盤 VICP64559，16 首＋日本盤額外曲 Midnight Dub）。本集查無任何樂評或逐曲聲音描述，聲音只能從系列定位推（第二集內頁寫明橋接 dub 與 lovers 聽眾、1997 第一集有 Carroll Thompson、John McLean 等人聲參與），status thin；寫「moodGuess 存疑」：器樂 dub 是否有旋律主奏與暖度無來源。
+- 19262：Hollie Cook《Hollie Cook》聲音有據（老派 reggae／dub、回音、復古合成器；單曲 That Very Night 被評 pulsating, dark, psychedelic），full；速度無來源。BBC 頁 403，只用 Wikipedia 轉述；母親身分不寫（Wikipedia 寫 Jeni、Culture Club 和聲，與策展常見的 Belle Stars 說法不一致）。
+- 19263：Horace Andy《Midnight Rocker》Hot Press 以 joyous、gentle、skank 鍵盤、銅管爆擊形容，偏輕快；寫「moodGuess 存疑」於 y；2022 年 Midnight Scorchers 為另一張 dub 延伸，勿混。
+- 19264：Horace Andy & Mad Professor《From the Roots》PopMatters 稱 rootsy、somber，帶 dub 質感，是人聲歌曲專輯而非 dub 器樂；2 首俏皮 dancehall。Sly & Robbie 掛名僅 Discogs 單源，facts 以限定語寫。MB 2004-10-18，PopMatters 稱 11 月，寫 2004。
+- 19265：松永孝義《The Main Man》身分核對無誤：Discogs master 3833391／release 8074427，Overheat Records OVE-0091，2004-07-09（Apple 日本站同），10 首約 45 分；卡單 label 欄空白，建議補 Overheat Records。樂評找不到，聲音靠樂手名單（烏克麗麗、鋼棒吉他、曼陀林、單簧管、薩克斯風、長號）、曲目（夏威夷、探戈）與 OTOTOY 對其貝斯 warm 的形容，status partial；速度與 dub 程度「moodGuess 存疑」。
+- 19266：BudaMunk & J.Lamotta《Searching Skies》評論偏 airy、floating、soothing synths，只偶爾有硬小鼓，寫「moodGuess 存疑」：偏輕盈通透，非 dusty 厚糊。實為東京製作人＋柏林歌手的合作盤。
+- 19267：研究層 WebSearch 用 3 次以內（Mad Professor 2 次、Hollie Cook 1 次、Horace Andy 2 次、松永 2 次、BudaMunk 1 次，略超；理由：兩張 Mad Professor 相關卡與日文冷門盤需交叉驗證）；Discogs API 直連可用。
