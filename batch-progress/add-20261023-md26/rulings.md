@@ -21,3 +21,13 @@
 - 19743：moodGuess 存疑（主線決定是否汰換）：Patchouli Blue（樂評稱開闊、夕陽暖意，z 恐 ≥ −0.3）；Wovenhand《Mosaic》（有鼓僵硬推進、〈Dirty Blue〉快、猛烈齊唱，x 恐 ≥ 3.0）；Wovenhand《Consider the Birds》（部落打擊、雷鳴收尾、嚎叫，x 邊緣；鋼琴為核心 y 恐偏輕）；Darkher《The Buried Storm》（弦樂＋原聲為主、重段短暫，y 恐 < 0.8）；The Hare and the Moon《Wood Witch》（無鼓、無電吉他，y 無證據）；Radare 三張與 Egor（樂評無音色描述，需試聽）。
 - 19744：Wood Witch、Egor、Hyrule、Im Argen 查不到樂評層的音色描述，status 標 thin；聲音欄以 credits 與風格標籤如實寫。Darkher《Realms》年份以 MB／樂評 2016 為準。
 - 19745：WebSearch 用了 4 次（Darkher、Bohren、Mosaic、Consider the Birds 各 1），超出每支 3 次的上限；Jazzwise 頁面 503 未讀到，只引搜尋摘要的 Blade Runner／Assault on Precinct 13 比喻未寫入 facts。
+
+## 研究 d 組
+- 19751：《كون》（The Thing With Five Eyes，2015）實為 Discogs 登錄的 DJ Mix（單曲〈Kosmos〉56:56），作者自述「為 Electronic Explorations 播客做的一小時現場即興／混音」，曲子多為未發行片段；MB 雖登成 Album，但推翻策展層「首作」（首作 EP 是 2014《نور》Svart Lava 001）。**建議主線汰換**；若保留，簡介須寫成「一小時現場混音」。
+- 19752：moodGuess 存疑（主線決定是否汰換）：Dead Neanderthals《Life》（只有 Bandcamp 兩則聽者留言「完全靜止」「cosmic ambient」；無來源提到薩克斯風或厚度，y 無證據、恐偏輕）；Splashgirl《Field Day Rituals》（爵士三重奏有鼓有鋼琴旋律，Discogs 只標 Fusion，策展的「drone 與低頻」無來源，x／y 恐偏輕或躁）；Splashgirl《Hibernation》（慢、重殘響、陰暗，支持頹靡，但有真實鼓組、〈Two Degrees〉漸快、〈Bleak Warm Future〉後段較滿並有 Skerik 薩克斯風，x 邊緣；鋼琴與簧風琴偏暖，z 恐近 0）；Dead Neanderthals《Craters》（鼓稀疏重擊、無行軍推進，支持頹靡；回授與「earpiercer」標籤恐有刺耳段，x 邊緣）；Mansur《Karma》（烏德琴與人聲吟唱旋律清楚，恐判暖／恍惚；同年 EP《Temple》樂評提到節拍）；Mansur《Pentatonic Ruins》（Discogs 標 Downtempo，恐有穩定節拍）。Mansur《Oscuras Flores》與 The Thing With Five Eyes《Noirabesque》三人／一人編制無鼓手掛名，暫不存疑，但聲音證據薄，需實聽。
+- 19753：Mansur、TTWFE、Splashgirl《Field Day Rituals》、Dead Neanderthals《Life》查不到單張樂評的音色描述（WebSearch 全落空），status 標 thin；聲音欄以 credits、Bandcamp 說明與風格標籤如實寫。
+- 19754：《Pentatonic Ruins》Bandcamp 明寫「歌曲改編專輯」而非新作，寫作層須寫成改編／重製版。曲名匈牙利文天體的中譯為語言知識，非來源載明；Higany 只寫「水銀」。
+- 19755：Splashgirl《Hibernation》錄音日期衝突（Discogs 2015-01-05 至 11；Derek's blog 寫 2015 年 9 月）、發行日期三處不同（MB 2015-10-09、Discogs 2015-11-06、維基與 blog 2016）、專輯序數各說不同；facts 只採 Discogs 的冰島地點與日期，簡介只寫「2015 年」、不寫月份與序數。
+- 19756：《Craters》卡單 label 空白，補 Consouling Sounds（Discogs SOULLXXXII、Bandcamp 版權行兩處）；廠牌國別不寫。
+- 19757：Dead Neanderthals《Life》Bandcamp 版權行寫「c&p Dead Neanderthals / Medusa」，Medusa 是否為其 imprint 未查到；label 維持自行發行。
+- 19758：WebSearch 共用 7 次（Dead Neanderthals 2、Mansur、TTWFE、Splashgirl 2、Life 1），超出每支 3 次上限；多數落空。Dunn 維基頁沒提 Avast!，錄音室名稱只來自 Discogs 版本備註（單源）。
