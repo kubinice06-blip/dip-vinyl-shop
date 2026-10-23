@@ -1,0 +1,1933 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-mc38",
+ "batchNote": "薄細項策展線（add-20261023-mc38）",
+ "createdAt": "2026-10-23T17:46:55Z",
+ "albums": [
+  {
+   "artist": "Matthew Shipp",
+   "album": "Symbol Systems",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c90f431f-f395-3fc2-a772-47fe527f4e09",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cecil Taylor 一脈的美國無調鋼琴（Shipp、Crispell、Melford、Davis）：Shipp 第一張錄音室獨奏，把 Cecil Taylor 的音簇語法收緊成短小冷硬的幾何片段，九〇年代紐約無調鋼琴的原點｜策展無疑點｜MB release-group c90f431f-f395-3fc2-a772-47fe527f4e09：title「Symbol Systems」、Album、first-release-date 1995、artist-credit「Matthew Shipp」。證據：https://musicbrainz.org/release-group/c90f431f-f395-3fc2-a772-47fe527f4e09 https://i.discogs.com/bDAmIrMLamw3QUCRqr6NuzYbqeSEGD-azuNnzh1Dhn0/rs:fit/g:sm/q:90/h:598/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzNjc3/NzEtMTMyNzYwMzA3/Ni5qcGVn.jpeg https://www.discogs.com/release/3367771",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1360838111",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/52/da/af/52daafa7-f40b-41ef-0494-9257656386c3/752156074922.jpg/600x600bb.jpg",
+    "note": "CAA 無圖；取 Apple 1360838111（Symbol Systems）官方封面 600px；主線 2026-10-23 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 347,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 347）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 347），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "動手前，Shipp 先把構想畫在一張餐巾紙上。跟 Joe Maneri 學過一年的美國鋼琴家 Matthew Shipp，拿這張草圖給製作人看過，1995 年 11 月 22 日只用一天就把十四首自作錄完，錄音室是紐約的 Baby Monster Studios。這是他第一張鋼琴獨奏專輯，No More Records 同年發行。曲子多半只有三到七分鐘：標題曲是緊緊壓在一起的和弦，〈Harmonic Oscillator〉則繞著反覆低音型打轉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3367771",
+     "https://en.wikipedia.org/wiki/Symbol_Systems",
+     "https://somethingelsereviews.com/2018/04/24/matthew-shipp-symbol-systems-1996-2018-reissue/",
+     "https://en.wikipedia.org/wiki/Matthew_Shipp",
+     "https://musicbrainz.org/release-group/c90f431f-f395-3fc2-a772-47fe527f4e09"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/6b/fa/1b/6bfa1bc9-4b5d-0249-2981-113a32aaef53/mzaf_6305385951071919891.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "appleCollectionId": "1360838111",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1360838111「Matthew Shipp《Symbol Systems》」：曲目 12/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Clocks〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Matthew Shipp Duo with William Parker",
+   "album": "Zo",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "8981ae89-f6cb-4df2-a5cd-8b20e479bd59",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cecil Taylor 一脈的美國無調鋼琴（Shipp、Crispell、Melford、Davis）：Shipp 與 William Parker 的鋼琴貝斯二重奏，弓拉低音與尖角音簇互相拉扯，沒有鼓也一路緊繃｜⚠ y 有風險：Parker 弓拉低音若被判厚會往 +0.3｜MB release-group 8981ae89-f6cb-4df2-a5cd-8b20e479bd59：title「Zo」、Album、first-release-date 1994、artist-credit「Matthew Shipp Duo with William Parker」。證據：https://musicbrainz.org/release-group/8981ae89-f6cb-4df2-a5cd-8b20e479bd59 https://coverartarchive.org/release-group/8981ae89-f6cb-4df2-a5cd-8b20e479bd59 https://www.discogs.com/master/366025 https://www.discogs.com/release/3086498",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8981ae89-f6cb-4df2-a5cd-8b20e479bd59/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 19,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 19）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 19），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "獻給 Andrew Hill 的二重奏，只有鋼琴與貝斯。鋼琴手 Matthew Shipp 最喜歡的現代鋼琴家就是 Hill，他自己說，這張正是向這位前輩致敬。彈貝斯的是 William Parker，兩人頭一回合錄二重奏專輯。1993 年 5 月的紐約錄音，隔年交給小廠 Rise Records 發行。全盤只有四首，每首長達十到十四分鐘，其中一首是重新配過和聲的〈Summertime〉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Zo_(album)",
+     "https://www.discogs.com/release/3086498",
+     "https://en.wikipedia.org/wiki/Matthew_Shipp",
+     "https://evgrieve.com/2026/08/two-lower-east-side-jazz-legends.html",
+     "https://musicbrainz.org/release-group/8981ae89-f6cb-4df2-a5cd-8b20e479bd59"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cd/c9/49/cdc9498e-d783-1bb4-170c-90ae668b1fe4/mzaf_291793376936033719.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "appleCollectionId": "6807907587",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 6807907587「The Matthew Shipp Duo with William Parker《Zo》」：曲目 4/4 對上 MB 原盤（Apple 共 4 軌），取第 1 軌〈Zo #1〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Matthew Shipp Duo with Roscoe Mitchell",
+   "album": "2-Z",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "326582fc-12b7-44ad-8f38-d38d2ca06882",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cecil Taylor 一脈的美國無調鋼琴（Shipp、Crispell、Melford、Davis）：AACM 的 Roscoe Mitchell 與 Shipp 對奏，高音薩克斯風的尖細長音對上鋼琴的斷裂音塊，冷而緊｜策展無疑點｜MB release-group 326582fc-12b7-44ad-8f38-d38d2ca06882：title「2-Z」、Album、first-release-date 1996、artist-credit「Matthew Shipp Duo with Roscoe Mitchell」。證據：https://musicbrainz.org/release-group/326582fc-12b7-44ad-8f38-d38d2ca06882 https://coverartarchive.org/release-group/326582fc-12b7-44ad-8f38-d38d2ca06882 https://www.discogs.com/release/3263356",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/326582fc-12b7-44ad-8f38-d38d2ca06882/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 43,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 43）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 43），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "芝加哥 AACM 的薩克斯風，碰上下一代的鋼琴。Roscoe Mitchell 吹中音與高音薩克斯風，Matthew Shipp 彈鋼琴，兩人在 1995 年 8 月 15 日對錄於紐約，一共錄了十一首。隔年，Henry Rollins 的 2.13.61 把這批錄音發行出來。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/2-Z_(album)",
+     "https://www.discogs.com/release/3263356",
+     "https://en.wikipedia.org/wiki/Matthew_Shipp",
+     "https://musicbrainz.org/release-group/326582fc-12b7-44ad-8f38-d38d2ca06882"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Matthew Shipp “String” Trio",
+   "album": "By the Law of Music",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "72916844-6cb1-464d-9877-fd84aacb9613",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cecil Taylor 一脈的美國無調鋼琴（Shipp、Crispell、Melford、Davis）：鋼琴、中提琴、貝斯的無鼓弦樂三重奏，Shipp 九〇年代最室內樂也最緊繃的一張｜策展無疑點｜MB release-group 72916844-6cb1-464d-9877-fd84aacb9613：title「By the Law of Music」、Album、first-release-date 1997、artist-credit「Matthew Shipp “String” Trio」。證據：https://musicbrainz.org/release-group/72916844-6cb1-464d-9877-fd84aacb9613 https://coverartarchive.org/release-group/72916844-6cb1-464d-9877-fd84aacb9613 https://www.discogs.com/master/266927 https://www.discogs.com/release/1214351",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/72916844-6cb1-464d-9877-fd84aacb9613/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 7,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 7）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 7），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "原定十二首的組曲，最後多了一首 Ellington。唱片掛名 Matthew Shipp “String” Trio，是這支弦樂三重奏的首張錄音：Mat Maneri 拉小提琴，William Parker 彈貝斯。補上的是〈Solitude〉，Shipp 彈出旋律，另兩人以無調放開手腳。1997 年經瑞士 hat ART 發行，限量 2000 張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/By_the_Law_of_Music",
+     "https://www.discogs.com/release/1214351",
+     "https://musicbrainz.org/release-group/72916844-6cb1-464d-9877-fd84aacb9613"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music5/v4/81/b3/a0/81b3a0a3-a744-dbfc-fb0b-46fc8b957268/mzaf_6456650990622805241.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "appleCollectionId": "990489464",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 990489464「Matthew Shipp String Trio《By the Law of Music (feat. Matthew Shipp, Mat Maneri & William Parker)》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Signal (feat. Matthew Shipp, Mat Maneri & William Parker)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Matthew Shipp String Trio",
+   "album": "Expansion, Power, Release",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e0be0d1c-94d9-44f5-a1a6-90b46cb0a912",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cecil Taylor 一脈的美國無調鋼琴（Shipp、Crispell、Melford、Davis）：String Trio 第二張，Maneri 與 Parker 的弦樂把鋼琴的碎音包成一團不停翻轉的張力｜策展無疑點｜MB release-group e0be0d1c-94d9-44f5-a1a6-90b46cb0a912：title「Expansion, Power, Release」、Album、first-release-date 2001、artist-credit「Matthew Shipp String Trio」。證據：https://musicbrainz.org/release-group/e0be0d1c-94d9-44f5-a1a6-90b46cb0a912 https://coverartarchive.org/release-group/e0be0d1c-94d9-44f5-a1a6-90b46cb0a912 https://www.discogs.com/release/692144",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e0be0d1c-94d9-44f5-a1a6-90b46cb0a912/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 207,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 207）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 207），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "鋼琴、小提琴、貝斯，十四首多是短篇。這是 Matthew Shipp 弦樂三重奏接著推出的第二張，小提琴仍由 Mat Maneri 擔任，貝斯仍是 William Parker。十四首全是 Shipp 的曲子，只有〈Power〉與〈Release〉長到約 8 分鐘。錄音於 1999 年 11 月 18 日完成，2001 年才由 hatOLOGY 發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Expansion,_Power,_Release",
+     "https://www.discogs.com/release/692144",
+     "https://en.wikipedia.org/wiki/Matthew_Shipp",
+     "https://en.wikipedia.org/wiki/Mat_Maneri",
+     "https://musicbrainz.org/release-group/e0be0d1c-94d9-44f5-a1a6-90b46cb0a912"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music1/v4/e4/c9/58/e4c95871-c216-9a0b-733e-8079a30d7de9/mzaf_2090929648212563550.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "appleCollectionId": "990479789",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 990479789「Matthew Shipp String Trio《Expansion, Power, Release (feat. Matthew Shipp, Mat Maneri & William Parker)》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Organs (feat. Matthew Shipp, Mat Maneri & William Parker)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Matthew Shipp Duo",
+   "album": "Thesis",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d02a4e72-caae-47a9-8de2-ce5f9335b95e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cecil Taylor 一脈的美國無調鋼琴（Shipp、Crispell、Melford、Davis）：Shipp 與 Joe Morris 原聲吉他的對奏，乾撥的吉他點描與鋼琴斷句互咬，無調而尖細｜策展無疑點｜MB release-group d02a4e72-caae-47a9-8de2-ce5f9335b95e：title「Thesis」、Album、first-release-date 1997-10-01、artist-credit「Matthew Shipp Duo」。證據：https://musicbrainz.org/release-group/d02a4e72-caae-47a9-8de2-ce5f9335b95e https://coverartarchive.org/release-group/d02a4e72-caae-47a9-8de2-ce5f9335b95e",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d02a4e72-caae-47a9-8de2-ce5f9335b95e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 36,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 36）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 36），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "先在 Morris 的樂團裡合作，再由 Shipp 領銜。Joe Morris 彈吉他、Matthew Shipp 彈鋼琴；先前兩人一起出現在 Joe Morris Ensemble 的《Elsewhere》。1997 年 1 月 23 日入錄音室，十三首全由 Shipp 寫成，曲名多半借自科學詞彙。同年，hatOLOGY 把它發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1942495",
+     "https://en.wikipedia.org/wiki/Thesis_(Matthew_Shipp_album)",
+     "https://en.wikipedia.org/wiki/Matthew_Shipp",
+     "https://musicbrainz.org/release-group/d02a4e72-caae-47a9-8de2-ce5f9335b95e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music7/v4/83/0a/42/830a42e2-2310-629f-77ca-0b0bd68d98de/mzaf_7768124861419097537.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "appleCollectionId": "989216630",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 989216630「Matthew Shipp Duo《Thesis (feat. Matthew Shipp & Joe Morris)》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Thesis (feat. Matthew Shipp & Joe Morris)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Matthew Shipp Trio",
+   "album": "Circular Temple",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "47db75fb-5cd8-31ce-98ed-5b86385a4d0d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cecil Taylor 一脈的美國無調鋼琴（Shipp、Crispell、Melford、Davis）：Shipp 首張三重奏（Parker、Whit Dickey），音簇旋繞不收束，Taylor 之後最被引用的無調鋼琴三重奏之一｜⚠ y 貼邊：低音區音簇段若被判厚會過 +0.3｜MB release-group 47db75fb-5cd8-31ce-98ed-5b86385a4d0d：title「Circular Temple」、Album、first-release-date 1992、artist-credit「Matthew Shipp Trio」。證據：https://musicbrainz.org/release-group/47db75fb-5cd8-31ce-98ed-5b86385a4d0d https://coverartarchive.org/release-group/47db75fb-5cd8-31ce-98ed-5b86385a4d0d https://www.discogs.com/master/55819 https://www.discogs.com/release/1215309",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/47db75fb-5cd8-31ce-98ed-5b86385a4d0d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 112,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 112）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 112），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "四樂章組曲 1990 年錄好，隔了兩年才出版。製作欄同時列出鋼琴手 Matthew Shipp 和鼓手 Whit Dickey，低音提琴交給 William Parker。1990 年 10 月 16 日這天錄下的組曲，直到 1992 年才由小廠 Quinton 推出。第二樂章副題〈Monk's Nightmare〉，開場的鋼琴動機混了 Bud Powell 與 Monk 的曲子；第四樂章長約 26 分鐘，佔掉全盤一半以上。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1215309",
+     "https://en.wikipedia.org/wiki/Circular_Temple",
+     "https://en.wikipedia.org/wiki/Matthew_Shipp",
+     "https://musicbrainz.org/release-group/47db75fb-5cd8-31ce-98ed-5b86385a4d0d"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Matthew Shipp",
+   "album": "The Piano Equation",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "74b419e0-f250-4654-801f-942e5f7f7ab0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cecil Taylor 一脈的美國無調鋼琴（Shipp、Crispell、Melford、Davis）：Shipp 晚期獨奏，把音簇、斷句與突然的高音碎點拼成方程式，比早年更乾更冷｜⚠ x 偏邊：晚期獨奏有幾段放慢沉思｜MB release-group 74b419e0-f250-4654-801f-942e5f7f7ab0：title「The Piano Equation」、Album、first-release-date 2020-05-22、artist-credit「Matthew Shipp」。證據：https://musicbrainz.org/release-group/74b419e0-f250-4654-801f-942e5f7f7ab0 https://i.discogs.com/JnBp4VMJW_EKEzxghzWtibJu4HjOephohDLAB33Wlv0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MzYw/NTkwLTE1OTAyODkx/MzAtOTk5Ny5wbmc.jpeg https://www.discogs.com/release/15360590",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1502835323",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/c0/58/58/c05858c9-652f-fe6f-5fd1-7af3c9dc111c/642623800126_cover.jpg/600x600bb.jpg",
+    "note": "CAA 無圖；取 Apple 1502835323（The Piano Equation）官方封面 600px；主線 2026-10-23 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1756,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1756）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1756），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "鼓手創的新廠牌，第一號給了 Shipp 的獨奏。鋼琴家 Matthew Shipp 把自己的寫法叫作「cellular」，由細胞般的小單位組成。那位鼓手是 Whit Dickey，他 2020 年創辦 Tao Forms，目錄號 TAO 01 就是這張，製作欄掛著他與 Shipp 兩人。十一首全由 Shipp 作曲，出版那年他剛好滿 60 歲。琴音常停在低音區重重延音，多為中速的音簇，有的曲子會突然收住。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Matthew_Shipp",
+     "https://www.discogs.com/release/15360590",
+     "https://londonjazznews.com/2020/04/30/matthew-shipp-the-piano-equation/",
+     "https://musicbrainz.org/release-group/74b419e0-f250-4654-801f-942e5f7f7ab0"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0e/a9/53/0ea953d1-be6b-86fa-0ebd-9977139467e4/mzaf_16718706756591786875.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "appleCollectionId": "1502835323",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1502835323「Matthew Shipp《The Piano Equation》」：曲目 11/11 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Piano Equation〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Matthew Shipp String Trio",
+   "album": "Symbolic Reality",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ce62b989-7865-4c38-91ad-d1a139ce8a45",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cecil Taylor 一脈的美國無調鋼琴（Shipp、Crispell、Melford、Davis）：String Trio 二十年後重組，Maneri 小提琴與 Parker 貝斯再度把 Shipp 的鋼琴推向尖細的無調｜策展無疑點｜MB release-group ce62b989-7865-4c38-91ad-d1a139ce8a45：title「Symbolic Reality」、Album、first-release-date 2019-10、artist-credit「Matthew Shipp String Trio」。證據：https://musicbrainz.org/release-group/ce62b989-7865-4c38-91ad-d1a139ce8a45 https://coverartarchive.org/release-group/ce62b989-7865-4c38-91ad-d1a139ce8a45 https://www.discogs.com/release/14298827",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ce62b989-7865-4c38-91ad-d1a139ce8a45/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 3,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 3）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 3），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "隔了將近二十年，這組弦樂三重奏再度聚首。三重奏由鋼琴手 Matthew Shipp、拉中提琴的 Mat Maneri 與貝斯手 William Parker 組成，上一張出在 2001 年，成員完全相同。2019 年 8 月 1 日進 Park West Studios，三人錄好六首 Shipp 的作品，同年交由法國 RogueArt 發行。〈Flesh And Bone〉由貝斯以弓與木頭敲擊開場，低音提琴重到幾乎壓過其他聲部。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/14298827",
+     "https://en.wikipedia.org/wiki/Matthew_Shipp",
+     "https://www.freejazzblog.org/2020/03/matthew-shipp-string-trio-symbolic.html",
+     "https://musicbrainz.org/release-group/ce62b989-7865-4c38-91ad-d1a139ce8a45"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Matthew Shipp",
+   "album": "Magnetism",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5722df82-41cd-40bc-adc5-a00f288d2d23",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cecil Taylor 一脈的美國無調鋼琴（Shipp、Crispell、Melford、Davis）：Shipp 與 Rob Brown、William Parker 的法國 Bleu Regard 錄音，中音薩克斯風與鋼琴不斷互相逼近｜⚠ 編制憑記憶（Shipp／Rob Brown／Parker），研究層請核｜MB release-group 5722df82-41cd-40bc-adc5-a00f288d2d23：title「Magnetism」、Album、first-release-date 1999、artist-credit「Matthew Shipp」。證據：https://musicbrainz.org/release-group/5722df82-41cd-40bc-adc5-a00f288d2d23 https://i.discogs.com/fbbZ47tLO8Sh6BGjaUGfAP4ilvSEK7dZyLuSKsPU6go/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1MDQ4/MzAtMTQyMjY2MDgw/My05NTA3LmpwZWc.jpeg https://www.discogs.com/release/4504830",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "4504830",
+    "url": "https://i.discogs.com/fbbZ47tLO8Sh6BGjaUGfAP4ilvSEK7dZyLuSKsPU6go/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1MDQ4/MzAtMTQyMjY2MDgw/My05NTA3LmpwZWc.jpeg",
+    "note": "CAA 無圖；取 Discogs 4504830 原版封面；主線 2026-10-23 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 37,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 37）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 37），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "二十段組曲，最短一段只有 28 秒。Rob Brown 兼吹中音薩克斯風與長笛，William Parker 拉低音提琴，鋼琴是 Matthew Shipp。錄音日期 1999 年 1 月 26 日，地點在紐約 Seltzer Sound，Shipp 帶隊錄下〈Magnetism I〉到〈XX〉，共 58 分 31 秒。內頁逐段標明編制：三人合奏佔 11 段，其餘是鋼琴、長笛、貝斯各自的獨奏，以及幾種二重奏、三重奏組合。同年由法國廠牌 Bleu Regard 推出。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4504830",
+     "https://en.wikipedia.org/wiki/Magnetism_(album)",
+     "https://en.wikipedia.org/wiki/Matthew_Shipp",
+     "https://musicbrainz.org/release-group/5722df82-41cd-40bc-adc5-a00f288d2d23"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Marilyn Crispell / Doug James",
+   "album": "And Your Ivory Voice Sings",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "1dd7939c-3f3c-4778-9a2b-a4a3dbacfcb8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cecil Taylor 一脈的美國無調鋼琴（Shipp、Crispell、Melford、Davis）：Crispell 與鼓手 Doug James 的錄音室二重奏，鋼琴音簇與碎拍一路高速互推，緊到不給喘息｜策展無疑點｜MB release-group 1dd7939c-3f3c-4778-9a2b-a4a3dbacfcb8：title「And Your Ivory Voice Sings」、Album、first-release-date 1985、artist-credit「Marilyn Crispell / Doug James」。證據：https://musicbrainz.org/release-group/1dd7939c-3f3c-4778-9a2b-a4a3dbacfcb8 https://i.discogs.com/4rL0enIdhx3ukt8CKJbIIaeGpKpRF4u0HBCmEvSLHkw/rs:fit/g:sm/q:90/h:404/w:403/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3MzUy/Mi0xMjY2NjEwNDE3/LmpwZWc.jpeg https://www.discogs.com/release/573522",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "573522",
+    "url": "https://i.discogs.com/4rL0enIdhx3ukt8CKJbIIaeGpKpRF4u0HBCmEvSLHkw/rs:fit/g:sm/q:90/h:404/w:403/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3MzUy/Mi0xMjY2NjEwNDE3/LmpwZWc.jpeg",
+    "note": "CAA 無圖；取 Discogs 573522 原版封面；主線 2026-10-23 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 0,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 0）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 0），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "落腳 Woodstock 的鋼琴家，只帶一位鼓手進棚。Marilyn Crispell 當時在 Anthony Braxton 四重奏裡彈鋼琴，1977 年來到 Woodstock 之後就在當地定居。1985 年 3 月 7 日到 9 日，她與鼓手 Doug James 在當地一間錄音室錄成七首。標題曲獻給 Cecil Taylor，壓軸則翻奏 Coltrane 的〈After the Rain〉。同年由英國 Leo Records 發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/573522",
+     "https://en.wikipedia.org/wiki/And_Your_Ivory_Voice_Sings",
+     "https://en.wikipedia.org/wiki/Marilyn_Crispell",
+     "https://musicbrainz.org/release-group/1dd7939c-3f3c-4778-9a2b-a4a3dbacfcb8"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Barry Guy / Marilyn Crispell / Paul Lytton",
+   "album": "Ithaca",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a3760967-485e-43ec-b652-71394176d89a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cecil Taylor 一脈的美國無調鋼琴（Shipp、Crispell、Melford、Davis）：Crispell 與 Barry Guy、Paul Lytton 的錄音室三重奏，貝斯刮弓、碎打擊與鋼琴點描交錯，英美自由即興的交會｜⚠ 年份：MB 首發 2005-03，Intakt 版權年可能是 2004，主線請核｜MB release-group a3760967-485e-43ec-b652-71394176d89a：title「Ithaca」、Album、first-release-date 2005-03-17、artist-credit「Barry Guy / Marilyn Crispell / Paul Lytton」。證據：https://musicbrainz.org/release-group/a3760967-485e-43ec-b652-71394176d89a https://coverartarchive.org/release-group/a3760967-485e-43ec-b652-71394176d89a https://www.discogs.com/release/2310241",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2004,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a3760967-485e-43ec-b652-71394176d89a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 21,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 21）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 21），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Guy 一人寫下十一首裡的九首。鋼琴交給 Marilyn Crispell，打擊交給 Paul Lytton，寫曲的低音提琴手 Barry Guy 自己拉琴，其餘兩首則掛三人合寫。2003 年 1 月 14、15 日連兩天，三人在蘇黎世 Radio Studio DRS 把它錄完，2004 年交給瑞士 Intakt 出版。三首以〈Shard〉為名的短曲各只有一兩分鐘，夾在十分鐘上下的〈Fire And Ice〉與〈Zig Zag〉之間。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Ithaca_(Barry_Guy,_Marilyn_Crispell,_and_Paul_Lytton_album)",
+     "https://www.discogs.com/release/2310241",
+     "https://intaktrec.ch/products/096-barry-guy-marilyn-crispell-paul-lytton-ithaca",
+     "https://musicbrainz.org/release-group/a3760967-485e-43ec-b652-71394176d89a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/d9/f8/ea/d9f8ea40-06cc-5d45-bffe-7310de53929f/mzaf_14459561179511982778.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "appleCollectionId": "1640714509",
+    "storefront": "US",
+    "collectionExplicitness": "cleaned",
+    "note": "Apple us 1640714509「Barry Guy, Marilyn Crispell & Paul Lytton《Ithaca》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Fire and Ice〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sylvie Courvoisier",
+   "album": "Signs and Epigrams",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "35450866-c31c-370e-b590-7aedc15deda9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代紐約／瑞士前衛鋼琴（Courvoisier、Kris Davis、Sanchez、Ortiz、Maroney）：Courvoisier 在 Tzadik 的鋼琴獨奏，預置鋼琴的金屬敲擊與快速無調樂句輪替，乾而尖｜⚠ x 偏邊：有幾首慢的冥想段｜MB release-group 35450866-c31c-370e-b590-7aedc15deda9：title「Signs and Epigrams」、Album、first-release-date 2007-04、artist-credit「Sylvie Courvoisier」。證據：https://musicbrainz.org/release-group/35450866-c31c-370e-b590-7aedc15deda9 https://i.discogs.com/4x7xfxnqfqZeiGyYGVcIQaJNMviFHNqkfKvI8tESv7U/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMDM5/MTgtMTI1MTUzMDUx/OC5qcGVn.jpeg https://www.discogs.com/release/1303918",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2007,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1189727807",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2c/7d/7e/2c7d7e23-9a51-2430-d9e5-fc1e4309d528/68371.jpg/600x600bb.jpg",
+    "note": "CAA 無圖；取 Apple 1189727807（Signs and Epigrams）官方封面 600px；主線 2026-10-23 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 268,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 268）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 268），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Zorn 的廠牌把她的獨奏收進作曲家系列。鋼琴手 Sylvie Courvoisier 在洛桑音樂院學古典、在蒙特勒學爵士。2006 年 12 月 8 日獨自在紐約 Avatar Studios 錄好十首自作，長年搭檔、小提琴手 Mark Feldman 擔任製作。2007 年 4 月，Composer Series 收進這張，是她在 Tzadik 頭一回以個人名義發行。琴音時而細膩輕柔、時而凶猛撞擊，琴弦與琴身也被拿來發聲。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Signs_and_Epigrams",
+     "https://www.discogs.com/release/1303918",
+     "https://en.wikipedia.org/wiki/Sylvie_Courvoisier",
+     "https://musicbrainz.org/release-group/35450866-c31c-370e-b590-7aedc15deda9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/fc/f0/07/fcf00740-39e1-8c64-a955-d98d2807072a/mzaf_8934783397803222971.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "appleCollectionId": "1189727807",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1189727807「Sylvie Courvoisier《Signs and Epigrams》」：曲目 7/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Ricochet〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sylvie Courvoisier & Mark Feldman",
+   "album": "Time Gone Out",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2cd6b99e-1b20-4aa5-9b9d-d9b278c0020f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代紐約／瑞士前衛鋼琴（Courvoisier、Kris Davis、Sanchez、Ortiz、Maroney）：Courvoisier 與小提琴手 Mark Feldman 的二重奏，室內樂寫法裡塞滿急轉與無調爆發｜策展無疑點｜MB release-group 2cd6b99e-1b20-4aa5-9b9d-d9b278c0020f：title「Time Gone Out」、Album、first-release-date 2019-05-17、artist-credit「Sylvie Courvoisier & Mark Feldman」。證據：https://musicbrainz.org/release-group/2cd6b99e-1b20-4aa5-9b9d-d9b278c0020f https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/6f/e8/02/6fe802de-52d5-fbc4-7dbb-c676d12a8cb8/7640120193263_cover.jpg/600x600bb.jpg https://music.apple.com/us/album/time-gone-out/1645165565",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1645165565",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/6f/e8/02/6fe802de-52d5-fbc4-7dbb-c676d12a8cb8/7640120193263_cover.jpg/600x600bb.jpg",
+    "note": "CAA 無圖；取 Apple 1645165565（Time Gone Out）官方封面 600px；主線 2026-10-23 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 34,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 34）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 34），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "小提琴配鋼琴，這對搭檔已一起走了快 20 年。小提琴手是 Mark Feldman，鋼琴手是 Sylvie Courvoisier。兩人的音樂，Intakt 描述為橫跨即興與作曲、傳統與現代。2018 年 9 月 29 日赴紐約州 Oktaven Audio 錄成，隔年 5 月由這家瑞士廠牌發行。第五首同名曲長約 19 分 50 秒，其餘多是三、四分鐘的短曲；有疲憊的段落，也有大聲而自由的爆發。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/13599141",
+     "https://intaktrec.ch/products/326-sylvie-courvoisier-mark-feldman-time-gone-out",
+     "https://en.wikipedia.org/wiki/Mark_Feldman",
+     "https://en.wikipedia.org/wiki/Sylvie_Courvoisier",
+     "https://musicbrainz.org/release-group/2cd6b99e-1b20-4aa5-9b9d-d9b278c0020f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/2e/58/1d/2e581d0b-c253-67bc-97c7-f8b9df7865ef/mzaf_4909194896859932086.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "appleCollectionId": "1645165565",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1645165565「Sylvie Courvoisier & Mark Feldman《Time Gone Out》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Homesick for Another World〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sylvie Courvoisier - Mark Feldman Quartet",
+   "album": "Hôtel Du Nord",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f1726030-7d95-4d5e-a97f-e343e4ec36ba",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代紐約／瑞士前衛鋼琴（Courvoisier、Kris Davis、Sanchez、Ortiz、Maroney）：四重奏第二張，Courvoisier 的作曲更碎更急，小提琴與預置鋼琴在 Cleaver 的碎拍上互撕｜策展無疑點｜MB release-group f1726030-7d95-4d5e-a97f-e343e4ec36ba：title「Hôtel Du Nord」、Album、first-release-date 2011-01-03、artist-credit「Sylvie Courvoisier - Mark Feldman Quartet」。證據：https://musicbrainz.org/release-group/f1726030-7d95-4d5e-a97f-e343e4ec36ba https://coverartarchive.org/release-group/f1726030-7d95-4d5e-a97f-e343e4ec36ba",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f1726030-7d95-4d5e-a97f-e343e4ec36ba/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 39,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 39）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 39），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "巡完歐洲回到紐約，四重奏的默契更深了。這是鋼琴 Sylvie Courvoisier、小提琴 Mark Feldman、貝斯 Thomas Morgan、鼓 Gerry Hemingway 組成的四重奏第二張專輯。在廠牌的描述裡，巡演後的四人有不可思議的集體默契。2011 年 1 月 3 日當天，他們在紐約的 Sear Sound 錄完七首，其中三首署名四人集體創作，其餘由 Feldman 與 Courvoisier 分頭寫成。同年 4 月，唱片交給 Intakt 推出。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/H%C3%B4tel_du_Nord_(album)",
+     "https://www.discogs.com/release/2822049",
+     "https://intaktrec.ch/products/192-sylvie-courvoisier-mark-feldman-quartet-hotel-du-nord",
+     "https://en.wikipedia.org/wiki/Mark_Feldman",
+     "https://musicbrainz.org/release-group/f1726030-7d95-4d5e-a97f-e343e4ec36ba"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/0a/7c/b6/0a7cb6f0-8880-f7d9-399b-e2965e23f2c2/mzaf_10760729591403591871.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "appleCollectionId": "1640783169",
+    "storefront": "US",
+    "collectionExplicitness": "cleaned",
+    "note": "Apple us 1640783169「Sylvie Courvoisier & Mark Feldman《Hôtel du Nord》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Hôtel du Nord〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mark Feldman & Sylvie Courvoisier",
+   "album": "Music for Violin and Piano",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5a338d3e-0d79-4b98-bd60-ebc62d0c0d1b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代紐約／瑞士前衛鋼琴（Courvoisier、Kris Davis、Sanchez、Ortiz、Maroney）：Feldman 與 Courvoisier 夫妻二重奏的起點，錄音室直錄雙軌，小提琴與鋼琴的無調即興尖細乾淨｜⚠ Discogs 註「live to stereo at Clinton Studios」＝錄音室直錄，非現場演出｜MB release-group 5a338d3e-0d79-4b98-bd60-ebc62d0c0d1b：title「Music for Violin and Piano」、Album、first-release-date 1999-05-21、artist-credit「Mark Feldman & Sylvie Courvoisier」。證據：https://musicbrainz.org/release-group/5a338d3e-0d79-4b98-bd60-ebc62d0c0d1b https://i.discogs.com/5Ixy6FkZ8I8F5KTRv1jfW9VZNLbFWUc4Gr1ixG3x1bA/rs:fit/g:sm/q:90/h:581/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMDg3/NzItMTY0NzMyMTE0/NC0yODI1LnBuZw.jpeg https://www.discogs.com/release/1108772",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "6810991841",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/03/7f/13/037f13d2-a77c-ca25-3674-01b93d256473/4988044900653.png/600x600bb.jpg",
+    "note": "CAA 無圖；取 Apple 6810991841（MUSIC FOR VIOLIN AND PIANO）官方封面 600px；主線 2026-10-23 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 71,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 71）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 71），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "蘇黎世兩首、紐約六首，拼成一張二重奏。早年在納許維爾當錄音室樂手的 Mark Feldman 拉的是小提琴，坐鋼琴前的則是 Sylvie Courvoisier。開頭與第八首在 1996 年 6 月錄於蘇黎世廣播錄音室。剩下六首換到紐約，1998 年 12 月 23 日直接錄成雙聲道。Avant 把兩地的錄音合在一起，1999 年問世。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1108772",
+     "https://en.wikipedia.org/wiki/Mark_Feldman",
+     "https://en.wikipedia.org/wiki/Sylvie_Courvoisier",
+     "https://musicbrainz.org/release-group/5a338d3e-0d79-4b98-bd60-ebc62d0c0d1b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/25/de/16/25de16f5-2e98-fe27-5b0a-76e8ea437cb8/mzaf_10409868030329840427.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "appleCollectionId": "6810991841",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 6810991841「Mark Feldman & Sylvie Courvoisier《MUSIC FOR VIOLIN AND PIANO》」：曲目 7/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈SMOKE〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kris Davis",
+   "album": "Massive Threads",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "946e1580-cc81-4b63-bc81-5eb6479dd31f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代紐約／瑞士前衛鋼琴（Courvoisier、Kris Davis、Sanchez、Ortiz、Maroney）：Davis 第二張獨奏，密集的反覆音型與突然的音簇爆發，比 Aeriol Piano 更急｜策展無疑點｜MB release-group 946e1580-cc81-4b63-bc81-5eb6479dd31f：title「Massive Threads」、Album、first-release-date 2013-11-05、artist-credit「Kris Davis」。證據：https://musicbrainz.org/release-group/946e1580-cc81-4b63-bc81-5eb6479dd31f https://coverartarchive.org/release-group/946e1580-cc81-4b63-bc81-5eb6479dd31f https://www.discogs.com/release/5105390",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2013,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/946e1580-cc81-4b63-bc81-5eb6479dd31f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 341,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 341）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 341），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "生在溫哥華的鋼琴手，把現代作曲接上爵士。Kris Davis 在卡加利長大，主修多倫多大學的爵士鋼琴，2001 年到紐約發展。2012 年 10 月 21 日的單日錄音在紐澤西 Paramus 的 Tedesco Studios 完成，八首裡七首是她自己寫的，另一首是 Monk 的〈Evidence〉，製作人也是她自己。2013 年 11 月，Thirsty Ear 將它編入 Blue Series 發行，成為她第二張鋼琴獨奏。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Massive_Threads",
+     "https://www.discogs.com/release/5105390",
+     "https://en.wikipedia.org/wiki/Kris_Davis",
+     "https://musicbrainz.org/release-group/946e1580-cc81-4b63-bc81-5eb6479dd31f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0f/29/64/0f29646c-13a0-627f-c369-dfc41ea1e243/mzaf_16078843603384774679.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "appleCollectionId": "734786830",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 734786830「Kris Davis《Massive Threads》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Ten Exorcists〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Alexander Von Schlippenbach",
+   "album": "Twelve Tone Tales Vol. 1",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e740b2aa-7f7f-474d-8f47-cb2c8e91d8b1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "歐陸自由即興鋼琴（Schlippenbach、Van Hove、Fernández、Gräwe、Agnel、Draksler、Hawkins）：Schlippenbach 以十二音列為素材的即興獨奏，序列主義與自由爵士音簇的交界｜⚠ 年份：MB 2005，Intakt 首發可能 2006，主線請核｜MB release-group e740b2aa-7f7f-474d-8f47-cb2c8e91d8b1：title「Twelve Tone Tales Vol. 1」、Album、first-release-date 2005、artist-credit「Alexander Von Schlippenbach」。證據：https://musicbrainz.org/release-group/e740b2aa-7f7f-474d-8f47-cb2c8e91d8b1 https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d9/61/28/d961289f-b9c9-627a-c996-4cf8c1fab4ed/cover.jpg/600x600bb.jpg https://music.apple.com/us/album/twelve-tone-tales-vol-1/794959755",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1640750743",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/bd/87/f9/bd87f91d-562f-d4b2-53fd-dfa1f5d84c43/7640120191153_cover.jpg/600x600bb.jpg",
+    "note": "CAA 無圖；取 Apple 1640750743（Twelve Tone Tales, Vol. 1）官方封面 600px；主線 2026-10-23 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 99,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 99）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 99），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "同一場獨奏錄音拆成兩張，這一集偏重十二音作曲。彈琴的 Alexander Von Schlippenbach 1938 年生於柏林，創辦過 Globe Unity Orchestra。2005 年 6 月的巴登巴登，德國西南廣播替他連錄三天，另一集多收標準曲。本集則是四首十二音作曲加上幾段曲想，中間夾著 Monk 與 Dolphy 的主題。Intakt Records 在 2006 年出版本集。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Alexander_von_Schlippenbach",
+     "https://intaktrec.ch/products/115-alexander-von-schlippenbach-piano-solo-twelve-tone-tales-vol-1",
+     "https://www.discogs.com/release/1134371",
+     "https://www.discogs.com/release/1134386",
+     "https://musicbrainz.org/release-group/e740b2aa-7f7f-474d-8f47-cb2c8e91d8b1"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/06/2e/e4/062ee467-19fb-1b12-f73d-d0d05ba4a437/mzaf_6179999395968040459.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "appleCollectionId": "1640750743",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1640750743「Alexander von Schlippenbach《Twelve Tone Tales, Vol. 1》」：曲目 8/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Twelve Tone Tales (Invention, Paraphrase)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Aki Takase & Alexander von Schlippenbach",
+   "album": "Four Hands Piano Pieces",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "fa2e515a-1d35-444e-b8dc-93da1829ebcd",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "歐陸自由即興鋼琴（Schlippenbach、Van Hove、Fernández、Gräwe、Agnel、Draksler、Hawkins）：高瀨アキ與 Schlippenbach 的四手聯彈作品集，現代音樂式的作曲與即興交錯｜⚠ x、z 偏邊：作曲成分高｜MB release-group fa2e515a-1d35-444e-b8dc-93da1829ebcd：title「Four Hands Piano Pieces」、Album、first-release-date 2023-04-28、artist-credit「Aki Takase & Alexander von Schlippenbach」。證據：https://musicbrainz.org/release-group/fa2e515a-1d35-444e-b8dc-93da1829ebcd https://coverartarchive.org/release-group/fa2e515a-1d35-444e-b8dc-93da1829ebcd https://www.discogs.com/master/3082547",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fa2e515a-1d35-444e-b8dc-93da1829ebcd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 27,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 27）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 27），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "四手、兩台平台鋼琴，彈琴的是一對夫妻。Aki Takase 是 Alexander von Schlippenbach 的妻子，生於大阪，1988 年起住在柏林。2021 年 9 月，兩人各守一架琴，在 AA Studio 錄了三天。有些曲子是 Schlippenbach 花三十年慢慢寫成，其餘則是純即興，他把兩人的合奏比成特技般的體操。2023 年 Trost Records 推出這份錄音。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/26580461",
+     "https://en.wikipedia.org/wiki/Aki_Takase",
+     "https://www.freejazzblog.org/2023/06/aki-takase-alexander-von-schlippenbach.html",
+     "https://jazzwise.com/review/aki-takase-and-alexander-von-schlippenbach-four-hands-piano-pieces",
+     "https://www.discogs.com/master/3082547",
+     "https://musicbrainz.org/release-group/fa2e515a-1d35-444e-b8dc-93da1829ebcd"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d6/34/53/d63453c1-3a70-0976-85c7-2ba12ae42f48/mzaf_18007213528161555853.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "appleCollectionId": "1683398992",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1683398992「Aki Takase & Alexander von Schlippenbach《Four Hands Piano Pieces》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Jumping Jack〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Fred Van Hove",
+   "album": "Passing Waves",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "048f3a2f-43d9-4555-98f8-fe8184b17b34",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "歐陸自由即興鋼琴（Schlippenbach、Van Hove、Fernández、Gräwe、Agnel、Draksler、Hawkins）：比利時自由鋼琴先驅 Van Hove 在芝加哥錄的錄音室盤，乾硬音簇與快速點描｜⚠ 編制未核（獨奏或與芝加哥樂手合作），研究層請核｜MB release-group 048f3a2f-43d9-4555-98f8-fe8184b17b34：title「Passing Waves」、Album、first-release-date 1998、artist-credit「Fred Van Hove」。證據：https://musicbrainz.org/release-group/048f3a2f-43d9-4555-98f8-fe8184b17b34 https://coverartarchive.org/release-group/048f3a2f-43d9-4555-98f8-fe8184b17b34 https://www.discogs.com/release/2350671",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/048f3a2f-43d9-4555-98f8-fe8184b17b34/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 14,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 14）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 14），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "比利時的教堂管風琴手，一個人在芝加哥彈完十首自由鋼琴。錄音時已經 60 歲的 Fred Van Hove 也是鐘琴手，更是歐洲自由爵士的先驅，1966 年起與 Brötzmann 合作。1997 年 5 月 15 日在錄音室裡，他只用一台 Baldwin 平台鋼琴，錄滿約 71 分鐘。隔年的發行商是美國的 Nuscope。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2350671",
+     "https://www.jazzword.com/reviews/fred-van-hove/",
+     "https://en.wikipedia.org/wiki/Fred_Van_Hove",
+     "https://www.discogs.com/release/746504",
+     "https://musicbrainz.org/release-group/048f3a2f-43d9-4555-98f8-fe8184b17b34"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Evan Parker & Agustí Fernández",
+   "album": "Tempranillo",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "94776d63-64cd-4403-94d4-df7a6e98a820",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "歐陸自由即興鋼琴（Schlippenbach、Van Hove、Fernández、Gräwe、Agnel、Draksler、Hawkins）：Evan Parker 與西班牙自由鋼琴手 Fernández 的錄音室二重奏，高音薩克斯風循環換氣與內部鋼琴互纏｜策展無疑點｜MB release-group 94776d63-64cd-4403-94d4-df7a6e98a820：title「Tempranillo」、Album、first-release-date 1996、artist-credit「Evan Parker & Agustí Fernández」。證據：https://musicbrainz.org/release-group/94776d63-64cd-4403-94d4-df7a6e98a820 https://coverartarchive.org/release-group/94776d63-64cd-4403-94d4-df7a6e98a820 https://www.discogs.com/master/1813259 https://www.discogs.com/release/2470827",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/94776d63-64cd-4403-94d4-df7a6e98a820/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 23,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 23）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 23），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "英國的 Evan Parker 帶薩克斯風到巴塞隆納錄音。Agustí Fernández 1954 年生於馬約卡島帕爾馬，後來定居巴塞隆納，坐在鋼琴前。1995 年 11 月 24 日兩人在 Estudi 84 錄下八段，Parker 吹高音與次中音薩克斯風。唱片 1996 年掛 Música Secreta 的名義問市。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2470827",
+     "https://www.discogs.com/master/1813259",
+     "https://en.wikipedia.org/wiki/Evan_Parker",
+     "https://www.jazzword.com/reviews/agusti-fernandez/",
+     "https://musicbrainz.org/release-group/94776d63-64cd-4403-94d4-df7a6e98a820"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Agustí Fernández / Barry Guy",
+   "album": "Some Other Place",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "cdaa06e9-9ec8-4d7a-bc73-388fe5abdbbc",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "歐陸自由即興鋼琴（Schlippenbach、Van Hove、Fernández、Gräwe、Agnel、Draksler、Hawkins）：Fernández 與 Barry Guy 的錄音室二重奏，貝斯刮弓與內部鋼琴的尖細對話｜策展無疑點｜MB release-group cdaa06e9-9ec8-4d7a-bc73-388fe5abdbbc：title「Some Other Place」、Album、first-release-date 2009、artist-credit「Agustí Fernández / Barry Guy」。證據：https://musicbrainz.org/release-group/cdaa06e9-9ec8-4d7a-bc73-388fe5abdbbc https://coverartarchive.org/release-group/cdaa06e9-9ec8-4d7a-bc73-388fe5abdbbc https://www.discogs.com/release/2521293",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cdaa06e9-9ec8-4d7a-bc73-388fe5abdbbc/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 3,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 3）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 3），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "曲目裡一首慢板，題獻給 Barry Guy 的小提琴家妻子。長年與這位倫敦貝斯手搭檔的 Agustí Fernández，負責鋼琴。那首慢板是〈Blueshift (For M.H.)〉，Guy 與妻子 Maya Homburger 住在瑞士，也經營發行本作的 Maya Recordings。錄音分成 2008 年 5 月與 2009 年 4 月兩段，錄音室選在巴塞隆納的 Rosazul。Guy 靠琴橋拉弓、也撥弦，喧鬧段與極慢的持續音段交替登場。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2521293",
+     "https://www.jazzword.com/reviews/augusti-fernandez-barry-guy/",
+     "https://earholesurfer.wordpress.com/2010/05/17/agusti-fernandez-and-barry-guy-some-other-place/",
+     "https://en.wikipedia.org/wiki/Barry_Guy",
+     "https://musicbrainz.org/release-group/cdaa06e9-9ec8-4d7a-bc73-388fe5abdbbc"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/9d/ca/ab/9dcaab82-4e96-8983-4194-72b705e10402/mzaf_6560419089310952289.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "appleCollectionId": "1617183495",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1617183495「Agustí Fernández & バリー・ガイ《Some Other Place》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Annalisa〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jane Rigler & Agustí Fernández",
+   "album": "Mandorla",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "742081a9-c108-4a08-8e5c-087c54bf9443",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "歐陸自由即興鋼琴（Schlippenbach、Van Hove、Fernández、Gräwe、Agnel、Draksler、Hawkins）：長笛手 Jane Rigler 的延伸技法與 Fernández 鋼琴的錄音室二重奏，氣聲、尖鳴與音簇交錯｜⚠ x 偏邊：延伸技法段可能偏稀疏｜MB release-group 742081a9-c108-4a08-8e5c-087c54bf9443：title「Mandorla」、Album、first-release-date 2002、artist-credit「Jane Rigler & Agustí Fernández」。證據：https://musicbrainz.org/release-group/742081a9-c108-4a08-8e5c-087c54bf9443 https://i.discogs.com/LmydWRHW7nxT5ToGD1KPWPnXO4U-x5YNXuHK8In4D_w/rs:fit/g:sm/q:90/h:356/w:354/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MDE1/MzItMTMwMTY1NDkx/OC5qcGVn.jpeg https://www.discogs.com/release/2801532",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "2801532",
+    "url": "https://i.discogs.com/LmydWRHW7nxT5ToGD1KPWPnXO4U-x5YNXuHK8In4D_w/rs:fit/g:sm/q:90/h:356/w:354/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MDE1/MzItMTMwMTY1NDkx/OC5qcGVn.jpeg",
+    "note": "CAA 無圖；取 Discogs 2801532 原版封面；主線 2026-10-23 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "九首無題，只編號〈Mandorla 1-1〉到〈1-9〉。長笛、中音長笛、短笛與人聲都由美國長笛手 Jane Rigler 包辦，彈鋼琴的是 Agustí Fernández。編制只有兩人，作曲與製作兩欄都掛兩人的名字。錄音從 2001 年 11 月延續到 2002 年 5 月，地點是巴塞隆納，同年的出版者是 DewDrop Recordings。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2801532",
+     "https://www.janerigler.com/",
+     "https://www.janerigler.com/discography/",
+     "https://www.jazzword.com/reviews/agusti-fernandez/",
+     "https://musicbrainz.org/release-group/742081a9-c108-4a08-8e5c-087c54bf9443"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Angelica Sanchez Trio, Michael Formanek, Tyshawn Sorey",
+   "album": "Float the Edge",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b40e9508-48aa-4fb3-b50f-7ea72368fc35",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代紐約／瑞士前衛鋼琴（Courvoisier、Kris Davis、Sanchez、Ortiz、Maroney）：Angelica Sanchez 與 Formanek、Sorey 的三重奏，尖角作曲與自由段交錯｜⚠ z 偏邊｜MB release-group b40e9508-48aa-4fb3-b50f-7ea72368fc35：title「Float the Edge」、Album、first-release-date 2017、artist-credit「The Angelica Sanchez Trio, Michael Formanek, Tyshawn Sorey」。證據：https://musicbrainz.org/release-group/b40e9508-48aa-4fb3-b50f-7ea72368fc35 https://coverartarchive.org/release-group/b40e9508-48aa-4fb3-b50f-7ea72368fc35 https://www.discogs.com/release/9995047",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b40e9508-48aa-4fb3-b50f-7ea72368fc35/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 13,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 13）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 13），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "八首長短懸殊，標題曲還不到三分鐘。移居紐約的 Angelica Sanchez 彈鋼琴，貝斯是 Michael Formanek，鼓是 Tyshawn Sorey。標題曲只有 2 分 55 秒，另有兩首都超過 10 分鐘。2016 年 7 月 12 日錄於 Systems Two，2017 年交給 Clean Feed 發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/9995047",
+     "https://en.wikipedia.org/wiki/Angelica_Sanchez_(musician)",
+     "https://en.wikipedia.org/wiki/Michael_Formanek",
+     "https://en.wikipedia.org/wiki/Tyshawn_Sorey",
+     "https://musicbrainz.org/release-group/b40e9508-48aa-4fb3-b50f-7ea72368fc35"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2c/8e/77/2c8e773a-9a67-aba9-e8d4-17125728e83d/mzaf_7218733346615654973.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "appleCollectionId": "1203007408",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1203007408「The Angelica Sanchez Trio《Float the Edge (feat. Michael Formanek & Tyshawn Sorey)》」：曲目 7/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Shapishico (feat. Michael Formanek & Tyshawn Sorey)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Alexander Hawkins",
+   "album": "Iron Into Wind",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "de4344e6-b1a8-45a7-b03c-b87bc148d5ed",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "歐陸自由即興鋼琴（Schlippenbach、Van Hove、Fernández、Gräwe、Agnel、Draksler、Hawkins）：英國鋼琴手 Hawkins 的 Intakt 獨奏，Cecil Taylor 式的密集音簇與短促斷句｜策展無疑點｜MB release-group de4344e6-b1a8-45a7-b03c-b87bc148d5ed：title「Iron Into Wind」、Album、first-release-date 2019-02-08、artist-credit「Alexander Hawkins」。證據：https://musicbrainz.org/release-group/de4344e6-b1a8-45a7-b03c-b87bc148d5ed https://coverartarchive.org/release-group/de4344e6-b1a8-45a7-b03c-b87bc148d5ed",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/de4344e6-b1a8-45a7-b03c-b87bc148d5ed/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 85,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 85）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 85），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "讀法律與犯罪學出身的 Hawkins，第二度獨自錄鋼琴。Alexander Hawkins 是英國人，1981 年生於牛津，在劍橋一路念到犯罪學博士。他上一張個人獨奏是 2014 年的《Song Singular》。2018 年 9 月，他在瑞士廣播的錄音室待了兩天，錄下十二首自作。他刻意比過去節制，舉 Monk 與 Mal Waldron 為精簡的榜樣，福音風的句型與急促的練習曲並陳。Intakt Records 於 2019 年把它上架。",
+    "sourceUrls": [
+     "https://alexanderhawkinsintakt.bandcamp.com/album/iron-into-wind",
+     "https://londonjazznews.com/2019/02/01/interview-alexander-hawkins-new-solo-piano-album-iron-into-wind-intakt-records/",
+     "https://www.jazzword.com/reviews/alexander-hawkins-2/",
+     "https://jazzwise.com/review/alexander-hawkins-iron-into-wind-pears-from-an-elm",
+     "https://en.wikipedia.org/wiki/Alexander_Hawkins",
+     "https://musicbrainz.org/release-group/de4344e6-b1a8-45a7-b03c-b87bc148d5ed"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/45/45/6a/45456a3a-682b-445a-a2eb-83a87453a664/mzaf_1717061697126579301.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "appleCollectionId": "1640720289",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1640720289「Alexander Hawkins《Iron Into Wind》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Song All the Way〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Aruán Ortiz",
+   "album": "Cub(an)ism",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4768455b-69ab-4678-add1-81041e8263a9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代紐約／瑞士前衛鋼琴（Courvoisier、Kris Davis、Sanchez、Ortiz、Maroney）：古巴裔紐約鋼琴手 Ortiz 的 Intakt 獨奏，以立體主義拆解古巴節奏，無調音塊與尖角重複｜策展無疑點｜MB release-group 4768455b-69ab-4678-add1-81041e8263a9：title「Cub(an)ism」、Album、first-release-date 2017-06-16、artist-credit「Aruán Ortiz」。證據：https://musicbrainz.org/release-group/4768455b-69ab-4678-add1-81041e8263a9 https://coverartarchive.org/release-group/4768455b-69ab-4678-add1-81041e8263a9",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4768455b-69ab-4678-add1-81041e8263a9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 47,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 47）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 47），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Cuban 與 Cubism 擠成一字，拆的是古巴節奏。鋼琴手 Aruán Ortiz 定居布魯克林，生於古巴聖地牙哥。他借立體主義的分面處理民間素材，左手切分、像打擊樂，右手保持流動。2016 年 12 月，十首原創獨奏由蘇黎世電台錄製。〈Monochrome (Yubá)〉整首停在一個反覆敲擊的音上。發行的 Intakt Records 把上市日訂在 2017 年。",
+    "sourceUrls": [
+     "https://intaktrec.ch/products/290-aruan-ortiz-cubanism-piano-solo",
+     "https://intaktrec.ch/rev290-a.htm",
+     "https://www.jazzwise.com/review/aruan-ortiz-cub-an-ism-piano-solo",
+     "https://musicbrainz.org/release-group/4768455b-69ab-4678-add1-81041e8263a9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/06/a9/d9/06a9d9df-1295-3e28-e22d-1690ffcfeb0f/mzaf_7462406445963819492.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "appleCollectionId": "1247929351",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1247929351「Aruán Ortiz《Cub(An)ism [Piano Solo]》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Louverture, Op. 1 (Château De Joux)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Denman Maroney",
+   "album": "Hyperpiano",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "74f212e7-d6e7-4c83-bef3-f5fc87ccbbd6",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代紐約／瑞士前衛鋼琴（Courvoisier、Kris Davis、Sanchez、Ortiz、Maroney）：Maroney 自創「超鋼琴」——在琴弦上壓金屬、橡膠做滑音——的獨奏宣言，尖細金屬音色無調｜⚠ 自發行，研究層請補 Discogs｜MB release-group 74f212e7-d6e7-4c83-bef3-f5fc87ccbbd6：title「Hyperpiano」、Album、first-release-date 1998、artist-credit「Denman Maroney」。證據：https://musicbrainz.org/release-group/74f212e7-d6e7-4c83-bef3-f5fc87ccbbd6 https://coverartarchive.org/release-group/74f212e7-d6e7-4c83-bef3-f5fc87ccbbd6 https://www.discogs.com/release/3278620",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/74f212e7-d6e7-4c83-bef3-f5fc87ccbbd6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 59,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 59）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 59），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "銅棒、頌缽和 CD 盒壓上琴弦，琴鍵同時照彈。這套彈法叫「hyperpiano」，由紐澤西州出身的 Denman Maroney 自創。除了銅棒與藏傳頌缽，他也拿鋼筒、橡膠塊、塑膠盒在弦上停住、滑動、拉奏與敲打。壓住琴弦會把弦分成兩段、生出泛音，滑動則讓音高彎曲。1998 年他以自己的 Mon$ey Music 標記自行發行，只收三首、每首二十多分鐘。評論聽到打擊式的攻擊、和聲嗡鳴與持續音，像板塊移動般堆起一團團音片。",
+    "sourceUrls": [
+     "https://denmanfmaroney.bandcamp.com/album/hyperpiano",
+     "https://www.denmanmaroney.com/Hyper.html",
+     "https://www.jazz.com/encyclopedia/maroney-denman-fowler",
+     "https://www.riverfronttimes.com/arts/key-concept-2472998",
+     "https://www.denmanmaroney.com/Quotes.html",
+     "https://www.denmanmaroney.com/Bio.html",
+     "https://musicbrainz.org/release-group/74f212e7-d6e7-4c83-bef3-f5fc87ccbbd6"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T17:46:55Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：Denman Maroney《Hyperpiano Studies》0/3）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  }
+ ]
+}
