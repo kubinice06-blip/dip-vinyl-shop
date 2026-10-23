@@ -1,0 +1,672 @@
+{
+ "group": "ml34",
+ "factions": [
+  {
+   "id": "cjk-ballad",
+   "zh": "華語／日語／韓語抒情 ballad 厚編曲",
+   "count": 2,
+   "why": "主場景；只收真的被殘響霧包住的慢歌盤"
+  },
+  {
+   "id": "balearic",
+   "zh": "Balearic／ambient pop 暖盤",
+   "count": 20,
+   "why": "擴寫場景；以吉他殘響霧的暖色 ambient pop 為主"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Lily Chou-Chou",
+   "album": "呼吸",
+   "year": 2001,
+   "label": "",
+   "country": "jp",
+   "faction": "cjk-ballad",
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "why": "岩井俊二《青春電幻物語》裡虛構歌手（Salyu 演唱、小林武史製作）的全長專輯：Cocteau 式吉他霧裹住清楚的慢歌旋律，是日語抒情 dream pop 化的代表",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "慢歌為主，吉他牆＋長殘響把人聲包住，旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ede29a8a-d53d-3fa5-a16b-fcb42cc8123e",
+    "https://coverartarchive.org/release-group/ede29a8a-d53d-3fa5-a16b-fcb42cc8123e/front",
+    "https://music.apple.com/us/album/kokyuu/1297925080"
+   ],
+   "mbRgMbid": "ede29a8a-d53d-3fa5-a16b-fcb42cc8123e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "MB secondary-type: Soundtrack",
+   "queryAlias": "",
+   "uncertain": "MB 標 Soundtrack 次類型（電影衍生的虛構歌手正規專輯），主線決定收不收；色溫是空靈偏感傷，z 可能被評在 0.2–0.5"
+  },
+  {
+   "artist": "UA",
+   "album": "AMETORA",
+   "year": 1998,
+   "label": "Victor Speedstar",
+   "country": "jp",
+   "faction": "cjk-ballad",
+   "genres": [
+    "pop",
+    "soul"
+   ],
+   "why": "UA 第二張：朝本浩文一路的 dub／靈魂慢歌，低頻厚、殘響濕，人聲溫熱旋律清楚，是 90s 日語慢而濕 R&B ballad 盤",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.7,
+    "why": "慢板 dub 靈魂，厚低頻＋殘響，人聲溫熱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/37367fad-c72e-3f2b-af93-c5fa7e110e2b",
+    "https://coverartarchive.org/release-group/37367fad-c72e-3f2b-af93-c5fa7e110e2b/front",
+    "https://music.apple.com/us/album/ametora/621162394"
+   ],
+   "mbRgMbid": "37367fad-c72e-3f2b-af93-c5fa7e110e2b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ml4 已提 UA《turbo》，同藝人不同盤"
+  },
+  {
+   "artist": "Manual & Syntaks",
+   "album": "Golden Sun",
+   "year": 2004,
+   "label": "Darla",
+   "country": "dk",
+   "faction": "balearic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Manual 與 Syntaks 合作的 Balearic ambient：海岸陽光感的吉他殘響霧與溫暖旋律，池中 Manual《Azure Vista》《Bajamar》皆落恍惚",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "無鼓或輕拍，吉他殘響霧＋合成墊，陽光暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2212c97f-8763-33c0-8abb-57189d2b41a9",
+    "https://coverartarchive.org/release-group/2212c97f-8763-33c0-8abb-57189d2b41a9/front",
+    "https://music.apple.com/us/album/golden-sun/305285100"
+   ],
+   "mbRgMbid": "2212c97f-8763-33c0-8abb-57189d2b41a9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Manual",
+   "album": "Drowned in Light",
+   "year": 2010,
+   "label": "Azure Vista Records",
+   "country": "dk",
+   "faction": "balearic",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Manual 最濃的一張：shoegaze 化的吉他牆與合成墊，霧厚但旋律清楚，延續 Azure Vista 的暖色海景",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.3,
+    "z": 0.5,
+    "why": "shoegaze 化吉他牆，霧厚，旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cccf57b8-7773-4f39-b5cb-e7baf7e6cd5c",
+    "https://coverartarchive.org/release-group/cccf57b8-7773-4f39-b5cb-e7baf7e6cd5c/front",
+    "https://music.apple.com/us/album/drowned-in-light/355975262"
+   ],
+   "mbRgMbid": "cccf57b8-7773-4f39-b5cb-e7baf7e6cd5c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Icebreaker International & Manual",
+   "album": "Into Forever",
+   "year": 2002,
+   "label": "Morr Music",
+   "country": "de",
+   "faction": "balearic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Manual 與 Icebreaker International 的合作盤：輕拍、糊濾波吉他與合成墊，溫暖朦朧的 ambient pop",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": 0.5,
+    "why": "輕拍，糊濾波吉他＋合成墊，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/481e6770-ebab-3d04-8bdb-3bc36f38376e",
+    "https://coverartarchive.org/release-group/481e6770-ebab-3d04-8bdb-3bc36f38376e/front",
+    "https://music.apple.com/us/album/into-forever/316273114"
+   ],
+   "mbRgMbid": "481e6770-ebab-3d04-8bdb-3bc36f38376e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "年份 MB 2002-07，iTunes 標 2003"
+  },
+  {
+   "artist": "Manual",
+   "album": "Confluence",
+   "year": 2008,
+   "label": "Darla",
+   "country": "dk",
+   "faction": "balearic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Manual 後期長曲盤：層層吉他殘響與合成墊鋪成暖霧，旋律線清楚",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "無鼓長段，吉他殘響層疊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0a0df39f-a5b7-32df-bd4b-6c8545888803",
+    "https://coverartarchive.org/release-group/0a0df39f-a5b7-32df-bd4b-6c8545888803/front",
+    "https://music.apple.com/us/album/confluence/294884913"
+   ],
+   "mbRgMbid": "0a0df39f-a5b7-32df-bd4b-6c8545888803",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Manual with Jess Kahr",
+   "album": "Bliss Out, Volume 20: The North Shore",
+   "year": 2004,
+   "label": "Darla",
+   "country": "dk",
+   "faction": "balearic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Darla《Bliss Out》系列第 20 集（Manual 與 Jess Kahr）：北岸海景主題的吉他霧 ambient pop，溫而霧",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.1,
+    "z": 0.7,
+    "why": "輕拍，吉他霧＋女聲氣聲，海岸暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/07862ec9-60d0-3fa5-98f8-75c2a5dc3758",
+    "https://coverartarchive.org/release-group/07862ec9-60d0-3fa5-98f8-75c2a5dc3758/front"
+   ],
+   "mbRgMbid": "07862ec9-60d0-3fa5-98f8-75c2a5dc3758",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 署名「Manual with Jess Kahr」；無 iTunes 條目，封面用 CAA"
+  },
+  {
+   "artist": "Hammock",
+   "album": "Raising Your Voice… Trying to Stop an Echo",
+   "year": 2006,
+   "label": "Hammock Music",
+   "country": "us",
+   "faction": "balearic",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Hammock 第二張：吉他殘響牆緩慢鋪展、旋律清楚溫暖，池中《Oblivion Hymns》落恍惚",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "無鼓，吉他殘響牆緩慢起伏，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/48ef70f7-a844-3a8d-8660-2961e761ee7e",
+    "https://coverartarchive.org/release-group/48ef70f7-a844-3a8d-8660-2961e761ee7e/front",
+    "https://music.apple.com/us/album/raising-your-voice-trying-to-stop-an-echo/1577259485"
+   ],
+   "mbRgMbid": "48ef70f7-a844-3a8d-8660-2961e761ee7e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫池中同人 z 0.3，貼邊風險"
+  },
+  {
+   "artist": "Hammock",
+   "album": "Maybe They Will Sing for Us Tomorrow",
+   "year": 2008,
+   "label": "Hammock Music",
+   "country": "us",
+   "faction": "balearic",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Hammock 中期：吉他霧與弦樂墊包覆，慢而溫的 ambient post-rock",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "無鼓，吉他霧＋弦樂墊，溫柔"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/da6c2eb4-ef4a-325e-9ce5-abc835d5a640",
+    "https://coverartarchive.org/release-group/da6c2eb4-ef4a-325e-9ce5-abc835d5a640/front",
+    "https://music.apple.com/us/album/maybe-they-will-sing-for-us-tomorrow/1577259097"
+   ],
+   "mbRgMbid": "da6c2eb4-ef4a-325e-9ce5-abc835d5a640",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上，z 貼邊風險"
+  },
+  {
+   "artist": "Hammock",
+   "album": "Departure Songs",
+   "year": 2012,
+   "label": "Hammock Music",
+   "country": "us",
+   "faction": "balearic",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Hammock 雙碟：加入人聲與緩鼓的吉他牆歌曲，霧厚、旋律清楚",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.2,
+    "z": 0.4,
+    "why": "緩鼓，吉他牆＋人聲霧，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0f4fc211-90f5-43fa-adb0-f9d85c3f5dd2",
+    "https://coverartarchive.org/release-group/0f4fc211-90f5-43fa-adb0-f9d85c3f5dd2/front",
+    "https://music.apple.com/us/album/departure-songs/1577256636"
+   ],
+   "mbRgMbid": "0f4fc211-90f5-43fa-adb0-f9d85c3f5dd2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上"
+  },
+  {
+   "artist": "Robin Guthrie",
+   "album": "Carousel",
+   "year": 2009,
+   "label": "Darla",
+   "country": "gb",
+   "faction": "balearic",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Cocteau Twins 吉他手的器樂盤：招牌 chorus／殘響吉他霧，旋律明亮溫暖，池中《Continental》落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": 0.5,
+    "why": "輕拍，chorus 吉他殘響霧，明亮溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/087609e8-41af-4498-890b-680554faf00b",
+    "https://coverartarchive.org/release-group/087609e8-41af-4498-890b-680554faf00b/front",
+    "https://music.apple.com/us/album/carousel/324230357"
+   ],
+   "mbRgMbid": "087609e8-41af-4498-890b-680554faf00b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Robin Guthrie",
+   "album": "Emeralds",
+   "year": 2011,
+   "label": "Darla",
+   "country": "gb",
+   "faction": "balearic",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Robin Guthrie 器樂盤：層疊殘響吉他與合成墊，溫暖朦朧的 ambient pop",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1,
+    "z": 0.5,
+    "why": "輕拍，殘響吉他層疊，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2e21edd4-cb96-4970-8812-68c17e50376d",
+    "https://coverartarchive.org/release-group/2e21edd4-cb96-4970-8812-68c17e50376d/front",
+    "https://music.apple.com/us/album/emeralds/434784879"
+   ],
+   "mbRgMbid": "2e21edd4-cb96-4970-8812-68c17e50376d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Robin Guthrie",
+   "album": "Fortune",
+   "year": 2012,
+   "label": "Soleilmoon",
+   "country": "gb",
+   "faction": "balearic",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Robin Guthrie 器樂盤：緩拍與 chorus 吉他霧，旋律清楚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 0.4,
+    "why": "緩鼓，chorus 吉他霧，溫中帶感傷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/18653a8d-3647-4382-b937-d5f2794d1876",
+    "https://coverartarchive.org/release-group/18653a8d-3647-4382-b937-d5f2794d1876/front",
+    "https://music.apple.com/us/album/fortune/572173429"
+   ],
+   "mbRgMbid": "18653a8d-3647-4382-b937-d5f2794d1876",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼邊風險（感傷）"
+  },
+  {
+   "artist": "Daniel Lanois",
+   "album": "Shine",
+   "year": 2003,
+   "label": "Anti-",
+   "country": "ca",
+   "faction": "balearic",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "Lanois 的 ambient 歌曲盤：踏板鋼棒吉他與長殘響包住溫熱低吟，池中《Acadie》落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "慢歌，踏板鋼棒殘響霧＋低吟，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5c7ccf20-04e7-3d31-bc31-ec69fedff9f9",
+    "https://coverartarchive.org/release-group/5c7ccf20-04e7-3d31-bc31-ec69fedff9f9/front"
+   ],
+   "mbRgMbid": "5c7ccf20-04e7-3d31-bc31-ec69fedff9f9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ml13 已提《Acadie》，同藝人不同盤"
+  },
+  {
+   "artist": "Daniel Lanois",
+   "album": "Belladonna",
+   "year": 2005,
+   "label": "Anti-",
+   "country": "ca",
+   "faction": "balearic",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Lanois 器樂盤：鋼棒吉他與殘響霧的沙漠暖色 ambient，旋律清楚",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "幾乎無鼓，鋼棒吉他＋殘響霧，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b54aba3f-b8bd-3aab-97a4-ab426f08dc0c",
+    "https://coverartarchive.org/release-group/b54aba3f-b8bd-3aab-97a4-ab426f08dc0c/front"
+   ],
+   "mbRgMbid": "b54aba3f-b8bd-3aab-97a4-ab426f08dc0c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "器樂；y 0.9 若被評乾淨會掉放鬆"
+  },
+  {
+   "artist": "Sonic Boom",
+   "album": "All Things Being Equal",
+   "year": 2020,
+   "label": "Carpark",
+   "country": "gb",
+   "faction": "balearic",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Spacemen 3 的 Sonic Boom 睽違 30 年個人盤：類比合成墊與迷幻人聲的暖霧 ambient pop",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "中慢拍，類比合成器糊墊＋迷幻人聲，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c6502b76-94c3-4461-aedb-9297f22dc06c",
+    "https://coverartarchive.org/release-group/c6502b76-94c3-4461-aedb-9297f22dc06c/front"
+   ],
+   "mbRgMbid": "c6502b76-94c3-4461-aedb-9297f22dc06c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Spacemen 3 判冷（z −0.5），本盤較亮，z 有風險"
+  },
+  {
+   "artist": "M83",
+   "album": "Digital Shades [vol. I]",
+   "year": 2007,
+   "label": "Mute",
+   "country": "fr",
+   "faction": "balearic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "M83 的 ambient 小品集：厚合成墊與吉他霧，旋律清楚，接近《Saturdays = Youth》的暖霧",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1,
+    "z": 0.4,
+    "why": "無鼓為主，合成墊＋吉他霧，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3e84bc0f-17fc-329a-a95f-7115d30f691c",
+    "https://coverartarchive.org/release-group/3e84bc0f-17fc-329a-a95f-7115d30f691c/front"
+   ],
+   "mbRgMbid": "3e84bc0f-17fc-329a-a95f-7115d30f691c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Teebs",
+   "album": "E S T A R A",
+   "year": 2014,
+   "label": "Brainfeeder",
+   "country": "us",
+   "faction": "balearic",
+   "genres": [
+    "electronic",
+    "hiphop"
+   ],
+   "why": "Teebs 第二張：慢拍與糊濾波的層疊取樣、暖色旋律，ambient beat 的溫霧",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "慢拍，糊濾波取樣＋弦撥層疊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/48d78fcb-3b92-4343-a3da-ffc5a22a69bc",
+    "https://coverartarchive.org/release-group/48d78fcb-3b92-4343-a3da-ffc5a22a69bc/front",
+    "https://music.apple.com/us/album/e-s-t-a-r-a/814541169"
+   ],
+   "mbRgMbid": "48d78fcb-3b92-4343-a3da-ffc5a22a69bc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中《Ardour》y 0.6，本盤 y 貼邊風險"
+  },
+  {
+   "artist": "Bibio",
+   "album": "Fi",
+   "year": 2005,
+   "label": "Mush",
+   "country": "gb",
+   "faction": "balearic",
+   "genres": [
+    "electronic",
+    "folk"
+   ],
+   "why": "Bibio 首張：磁帶劣化的吉他迴圈、BoC 式溫糊質地，旋律清楚",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "無鼓，磁帶劣化吉他迴圈，溫糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/02f2abd4-155b-36e8-abe8-dc99d3083958",
+    "https://coverartarchive.org/release-group/02f2abd4-155b-36e8-abe8-dc99d3083958/front",
+    "https://music.apple.com/us/album/fi/1047331605"
+   ],
+   "mbRgMbid": "02f2abd4-155b-36e8-abe8-dc99d3083958",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Bibio 原聲盤判輕，本盤較糊；y 風險"
+  },
+  {
+   "artist": "Ulrich Schnauss & Mark Peters",
+   "album": "Underrated Silence",
+   "year": 2012,
+   "label": "Bureau B",
+   "country": "de",
+   "faction": "balearic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Ulrich Schnauss 與 Engineers 吉他手 Mark Peters 合作：吉他殘響與合成墊的暖霧 ambient",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1,
+    "z": 0.5,
+    "why": "無鼓為主，吉他殘響＋合成墊，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d53e8d3a-ce80-4c00-8150-5d6b8ac6cab3",
+    "https://coverartarchive.org/release-group/d53e8d3a-ce80-4c00-8150-5d6b8ac6cab3/front"
+   ],
+   "mbRgMbid": "d53e8d3a-ce80-4c00-8150-5d6b8ac6cab3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mark Peters",
+   "album": "Innerland",
+   "year": 2017,
+   "label": "Sonic Cathedral",
+   "country": "gb",
+   "faction": "balearic",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Mark Peters 器樂盤：英格蘭田園主題的閃爍殘響吉他層疊，溫暖朦朧",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "輕律動，閃爍吉他殘響層疊，田園暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/839a93b9-eac6-4c62-9f1b-9cdbfb523f80",
+    "https://coverartarchive.org/release-group/839a93b9-eac6-4c62-9f1b-9cdbfb523f80/front"
+   ],
+   "mbRgMbid": "839a93b9-eac6-4c62-9f1b-9cdbfb523f80",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Engineers",
+   "album": "Engineers",
+   "year": 2005,
+   "label": "Echo",
+   "country": "gb",
+   "faction": "balearic",
+   "genres": [
+    "rock"
+   ],
+   "why": "Engineers 首張：慢板 dream pop 吉他牆與合成墊，霧厚旋律清楚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "緩拍，dream pop 吉他牆＋合成墊，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/729dbc7d-9a80-357a-b61d-98f13424fce4",
+    "https://coverartarchive.org/release-group/729dbc7d-9a80-357a-b61d-98f13424fce4/front"
+   ],
+   "mbRgMbid": "729dbc7d-9a80-357a-b61d-98f13424fce4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ml2 已提《Three Fact Fader》；z 貼邊風險"
+  }
+ ],
+ "notes": [
+  "主場景見底：池中華語／日語／韓語抒情盤幾乎全判輕（張學友、陳奕迅、林憶蓮、梅艷芳、張國榮多數、鄧麗君、宇多田、MISIA、中島みゆき、松任谷、이문세、신승훈、김현식、IU 皆 y −0.2～−1.3）；連檢罩候選都已在池且判輕：검정치마《TEAM BABY》y 0.4、백예린《Every letter I sent you.》y −0.4、잔나비《전설》、장필순、이상은《공무도하가》、王傑、齊秦、雷光夏、魏如萱《末路狂花》。",
+  "王菲《寓言》《胡思亂想》《只愛陌生人》、張國榮其他盤、中森明菜《歌姫》、YEN TOWN BAND《MONTAGE》、Chara《Junior Sweet》、新居昭乃《そらの庭》：估 y 0.6–0.7 或 z 0–0.2，貼邊不提。",
+  "擴寫場景的 Balearic 本體也判輕：José Padilla、Mark Barrott、Gigi Masin、A Man Called Adam、jj n° 2、Air、Enya、Roxy《Avalon》、Irresistible Force、Susumu Yokota、Rei Harakami 池中皆落放鬆；所以擴寫改收池中已證實會判重的「吉他殘響霧暖色 ambient pop」（Manual、Hammock、Robin Guthrie、Ulrich Schnauss 一系）。",
+  "同藝人跨組：UA（ml4 提過《turbo》）、Daniel Lanois（ml13 提過《Acadie》）、Engineers（ml2 提過《Three Fact Fader》）、Manual／Hammock／Robin Guthrie／Ulrich Schnauss（ml2、ml11、ml24 提過其他盤）——本組只提未被提過的盤。",
+  "台灣流行藝人（主線上線後加進 tw-pop-artists.json）：本組無。",
+  "挖不到 54 張，照實交 22 張。"
+ ]
+}

@@ -236,3 +236,15 @@
 - 同形狀一起改（z 拉到 +0.3～+0.6，x、y 不動，全落沸騰）：Eminem《Revival》《The Eminem Show》《MMLP2》、Kendrick《GNX》、Stray Kids《KARMA》、G-DRAGON《COUP D'ETAT》、Roddy Ricch、Polo G《Hall of Fame》、Trippie Redd《LIFE'S A TRIP》。
 - 不動：《The Marshall Mathers LP》（陰冷 Dre 製作，−1.2）、Wu-Tang、Public Enemy、Carti、JPEGMAFIA、Travis Scott、drill／trap 主流（Future、Chief Keef、21 Savage）、Illmatic 等 boom-bap——聲響本身就冷硬。
 - 說明書 score500/BRIEF 色溫段補一句。
+
+## 2026-10-23｜店主：Theodorakis《Axion Esti》不是放鬆，「這張歌劇壓迫感很強」
+
+- 原 v0 (2.8, 0, 0.6) 放鬆，體感重判沒動到。改 (3.5, 1.0, 0.2) 沸騰：大編制交響＋合唱朗誦把人往前壓＝躁、厚重；laïko 歌段旋律清楚，色溫仍偏暖。
+- 同形狀一併改：Jochum《Carmina Burana》(3.6, 0.3, 0.4) 雀躍 → (3.6, 1.0, 0.4) 沸騰（大合唱＋銅管定音鼓的音牆是重，不是輕）。
+- 規則補一句：大編制合唱／清唱劇／神劇的壓迫音牆算「重」，不因樂器原聲就判輕。
+- 店主追加：《Axion Esti》改暴躁 (3.5, 1.0, −0.6)——壓迫的陰沉感算冷，蓋過旋律的暖。《Carmina Burana》維持沸騰。
+- 店主追加：《Carmina Burana》(Jochum) 也改暴躁 (3.6, 1.0, −0.5)。大編制合唱的壓迫音牆：重＋冷。
+
+## 2026-10-23｜店主：Goodie Mob《Still Standing》是暴躁
+
+- 原 v0 (2.9, 0.9, 0.4) 恍惚 → (3.3, 0.9, −0.5) 暴躁。陰沉厚重的南方製作＋緊繃饒舌：躁、重、冷。同團《Soul Food》(2.6, 1.0, 0.3) 恍惚、《Survival Kit》未動，待店主看。
