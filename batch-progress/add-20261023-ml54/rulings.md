@@ -81,3 +81,17 @@
 - **20908** 句型配表照鉤子層 20893／20894／20898：第二句依 note 指定（計畫原名／收藏者身分／合作夥伴／城市／音樂養成／名字／續作／一人計畫／出生地／樂團身分／本名）；「日」後一字 Locus 推、Beyond 經、A Day 宣／出、Forever Changing 以、finding solitude 自、finding solitude 2 續、At 333 House 先、The Return Of... 交、Collections 01 接；Study Guide、In Dub 只寫到年月。
 - **20909** 自掃（han() 剝非漢字後中文 4-gram，合 out-1）：初稿 3 張以上同構——「首約分鐘」（兩檔 13 張）、「發行首約」、「的愛爾蘭」；本檔把 4 張曲數＋時長句各換一種寫法（曲子共約／全長約／加總約／總長約／長度約／加起來約／播完約），Locus 改「來自愛爾蘭、住在首爾」。另拆 2 張殘片：「多倫多製作人」、「是洛杉磯／洛杉磯樂」、「的第一張」、「這批曲子」、「間年月日」（Teebs 改句序）、「的方向走」（對 out-1 Close to Home）、「器樂嘻哈」（對 out-1 Sun Dance）。定稿本檔 3 張以上 0 條；仍屬 3 張以上的「首約分鐘」×9、「發行首約」×3 全在 out-1。
 - **20910** 腳本：`qa-batch out` 本檔 0 標記（報的 thin 超 180 為 out-1 的 Snow in My Shoe、Sun Dance）；`qa-check-research` 11 張 0 標記；`fix-spacing` 待補 0。輔助腳本：scratchpad `wr-ml54-2/ml54-2-descs.py`、`ml54-2-scan.cjs`。
+
+## 寫作層（writer-1）（20901–20905）
+- **20901** 交件 `desc-tools/batches/output/add-20261023-ml54-out-1.json`（11 張，key 逐字同序）。full 5 張 203–238（Elements 238、Forest Tales 225、Cocoon 236、Postcards 221、Eien's Fable 203）；thin 6 張 156–180（Snow 179、Sun Dance 180、TIME. 179、Close to Home 165、Golden Age 156、NO EMPERORS 161）。初稿 4 張出帶（Snow 195／Sun Dance 185 thin 超 180；Elements 241、Cocoon 243），整格捨去：Snow 的「住在」與三場景複述、Sun Dance 的「這幾條根」與 beatmaker 的城市、Cocoon 的「在同廠牌」改「在該廠牌」並把曲長併成一短語。
+- **20902** 第二句領句全照鉤子層 20893 指派（年份／廠牌／作品數／國籍／日期／樂器身分／地區／發行慣例／DJ 舊名／影響來源／居住年數）；「日」後一字全照 20894（由、，、回、面、上、在、問、放、發；Sun Dance、TIME. 只寫到年）。NOGYMX 兩張只寫愛爾蘭籍、旅居首爾（Eien 照 note 寫「旅韓約八年」），「韓國」只出現在居住地與九尾狐傳說；KUMIHO 只寫「出自韓國傳說」（note 無「民間」二字，已刪）。
+- **20903** 媒體名、媒體榜單、單一樂評評價一律未寫（note 本無）；轉述引導詞 grep「據」0。廠牌文案的比喻（Elements 山頂、Forest Tales 森林）寫成「廠牌把…比作」的陳述句，非轉述引導。Aviino「陪人下班收心」轉成間接敘述「把整張設想成⋯的陪伴」。Postcards 結尾「明信片外套正好接上這個題目」是銜接語，不是新事實；Sun Dance「替古典那一頭留了名字」把曲名指涉接回廠牌宗旨，未寫是否取樣。
+- **20904** 自掃（`han()` 剝非漢字後中文 4-gram，合 out-2 現況＋全批 hooks）：初稿主要撞「首約分鐘」×13（「N 首約 N 分鐘」樣板，連 out-2）、「的愛爾蘭」×3、「在洛杉磯」、「廠牌文案」、「鋼琴和弦」、「的方向走」等；把本檔 9 處曲數＋時長逐張換成不同句型（合計／排進／共⋯左右／排滿／內塞進／9 軌、約／攤開約／拉到約／共收⋯時間約），Close to Home 避開 hook 的「分鐘上下」。定稿與 out-2 現況合掃，涉本檔的 2 張以上 4-gram 0 條。out-2 交件後若再改動，請主線收件時重跑合掃。
+- **20905** 腳本：`node qa-batch.mjs out add-20261023-ml54` 全部通過 ✓；`qa-check-research` 本檔 0 標記；`fix-spacing` 待補 0。輔助腳本：scratchpad `wr-ml54-1/ml54w1-scan.mjs`、`ml54w1-build.py`、`ml54w1-bodies.json`。
+
+## 主線審稿（20911–20913；2026-10-23）
+- 20911：逐張審 22 張（out-1 11、out-2 11），逐句對回研究稿；qa-batch out、qa-check-research（兩檔各 0 標記）、fix-spacing 0 補；正文無媒體名、無「據」字。
+- 20912：改 2 張（`desc-override.json`）：
+  - `Freddie Joachim|Beyond the Sea of Trees`：開頭「樂評說它得耐著性子聽…」是單一樂評（研究 c 組一篇）的評價句，改成不掛來源的聽感描述，並刪掉後文重複的「耐心聽下去…一層層鋪開」→ 218 字。
+  - `Laffey|A Day at a Time`：「掛在法國直播頻道 ChilledCow 名下」與 MB／Apple 廠牌（Lofi Records）不符，改為「交給法國直播頻道旗下的 Lofi Records」並補「從 ChilledCow 改名」；刪「每首都收在 3 分 30 秒以內」壓回 240 內 → 226 字。
+- 20913：核過未改——eevee《Lo-Fi Minnie》（研究 a 組）、Sweatson Klank 生於巴黎（研究 b 組）、Pachyman Libera Awards 入圍（獎項非媒體榜，研究 e 組）、Teebs 豎琴手 Rebekah Raff（研究 e 組）；Sun Dance、Postcards 結尾兩句是寫作層自加的銜接語，不含新事實，留。

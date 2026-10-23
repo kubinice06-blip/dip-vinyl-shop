@@ -79,3 +79,14 @@
 - 策展代理補 15 張（擴寫場景：isolationist-drone 10、dub-steppers 5；每張附 `copyQuote` 文案原句），全 MB 釘住、去重 0。
 - 主線再汰 4：Jah Shaka《Commandments of Dub, Chapter 7: Warrior》（Nyabinghi 手鼓，偏暖）、Dub Syndicate《The Pounding System》（African Head Charge 打擊＋薩克斯，z 貼邊）、Line Spectrum《Bruma》（極簡微粒偏輕、y 0.9 貼邊）、Aetherium Nebula《Ephemeral Port》（2026-10-20 發行、CAA 無圖、只有一句玄學文案）。
 - 收 11 張進卡單（a 組追加 6、b 組追加 5），派一支補研究 append 進 a／b 研究稿。卡單共 36 張。
+
+## 補研究（a、b 組追加）
+- 21208：a 組補 6 張（Ark Zead、Equal Stones、Philippe Petit、Retina.it、Fractalyst、HLAD）、b 組補 5 張（Void Stasis、Jah Shaka、Iration Steppas 兩張、Skare）；身分、盤名皆與卡單相符，唯下列兩處建議更正：(1) Iration Steppas《Original Dub D.A.T.》年份 1997→**1996**（Discogs ℗ 1996、Dubquake 零售商「originally released in 1996」、串流平台 1996-08-19，三源對 MB 1997-08-19）；(2) Iration Steppas《Dubz From de Higher Regionz》廠牌 Dubquake→**Dubhead**（2004 原版 DBHD 033CD；Dubquake 是 2020 雙黑膠再版），年份 2004 不變。另 Retina.it 的 Bandcamp 頁面寫 2011-06，採 MB／Discogs 的 2012-05-09。
+- 21209：moodGuess 存疑清單。中度：Retina.it（Igloo 記載弦樂、鋼琴循環、〈-32°F〉節奏脈動、標題曲刺耳尖嘯與緊張弦樂）；HLAD《Imminent》（標籤含 martial ambient，文案 loop／mechanical，色溫與鼓皆無旁證）；Iration Steppas 兩張（steppers 四拍推進，自述受 hip-hop／house 影響，是否快而硬無速度文字，須聽感核對；《Dubz》另有 6 位 Featuring 客座疑為人聲，曲名〈Talking Bout Jah Love Is Sweet〉〈Africa〉〈Follow Me Come〉像歌曲）。輕～中：Jah Shaka《Imperial Dub》（介紹稱十首皆器樂，但 steppers 拍點與色溫無來源；含 80 年代電子聲與吉他片段）。輕度：Ark Zead（銅鑼＋頌缽音源可能有鐘磬般音高）、Philippe Petit（配樂背景、文案 wide-ranging／dramaturgy）、Fractalyst（文案「toward the light」屬敘事，色溫待聽）、Void Stasis（科幻恐怖 industrial atmospheres 可能有突發撞擊）、Skare（26 分〈Snow Angel Factory〉有無機械性脈動不明）。吻合：Equal Stones《Below Zero》。
+- 21210：來源品質——本批 11 張僅 Retina.it 有獨立樂評（Igloo，status full）；其餘 10 張為廠牌文案＋MB／Discogs（thin），無第三方樂評。2026 新盤 Fractalyst《Ypnos》、HLAD《Imminent》、Void Stasis《Specimen 7》皆零聲音描述，僅憑廠牌敘事，Bandcamp 有串流但研究層未聽，已於 notes 明寫。Jah Shaka 數位版 9 首約 33 分、黑膠 10 首，≥28 分成立；Ark Zead 約 61、Equal Stones 49、Petit 43、Retina.it 52、Fractalyst 55、HLAD 53、Void Stasis 45、Skare 50、Iration 兩張 73／65 分，皆非合輯／EP。WebSearch 用 3 次（Glacial Movements 系三張合查、Jah Shaka、Iration Steppas）。
+
+## 主線補研究後汰換（不佔條號；2026-10-23）
+- 汰 3：Retina.it《Descending Into Crevasse》（弦樂、鋼琴 loop、〈-32°F〉節奏脈動、標題曲刺耳尖嘯）、Iration Steppas《Dubz From de Higher Regionz》（Discogs 列 6 位 Featuring、曲名像歌，疑人聲盤）、HLAD《Imminent》（Bandcamp 標 martial ambient，2026 新盤零聲音來源）。
+- 留三張 2026 新盤 Fractalyst《Ypnos》、Void Stasis《Specimen 7》（廠牌文案有冷／無鼓字眼，無反證）。
+- 卡單更正：Iration Steppas《Original Dub D.A.T.》年份 1997→**1996**（Discogs ℗ 1996、Dubquake 零售文案、串流日期 1996-08-19 三源一致，MB 1997-08-19 疑誤植）。
+- 定案 **33 張**（a 8、b 7、c 5、d 7、e 6）。
