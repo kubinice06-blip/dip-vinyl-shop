@@ -84,3 +84,24 @@
 - 試聽 27 ready／9 unavailable：Funeral Moth《Transience》、Northaunt & Svartsinn《The Borrowed World》全盤 2 軌（自動門檻要 ≥3 軌）、raison d'être《Daemonum》Apple 只上主碟 6 軌，三張人工配；Svartsinn《Elegies for the End》Apple 只有 4 軌、與 MB 雙碟 14 軌對不起來，不硬配。Corrupted ×3、不失者、Yoshi Wada、Boris《dronevil》、Ø《Konstellaatio》、Deathprod《Let Me Be Forever Animal》Apple 無條目。
 - 封面：CAA 35；Deathprod《Let Me Be Forever Animal》CAA 404（只有限量黑膠），取 Discogs 31026103 主圖、主線目視相符，已登錄 `data/discogs-cover-registry.json`（reviewed ok）。
 - Last.fm：Northaunt《Istid I–II》盤名 en dash 查錯（18），改 ASCII 連字號重查 4,365；畠山地平 & Dirk Serries《Black Frost》合掛名查錯（106），改主掛名重查 653；meta.json 機器基線改正。不失者以日文名查得 107、羅馬拼音查無，照機器值。
+
+## 寫作層（writer-2）（條號 18106–18110）
+- **18106** 交件：`desc-tools/batches/output/add-20261023-md18-out-2.json` 18 張（full 8：191–239；thin 10：162–179）。逐張：12 191、Matriarch 226、Enthraled 215、Stains 176、Mise 239、Alchymeia 219、Daemonum 168、Of Darkness 162、Elegies 172、Mørkets 162、Ominous 170、Horizons 220、Istid 219、Borrowed 179、Thronal 164、Colossus 230、Skepticism 168、Konstellaatio 177。初稿超標 1 張（Ominous 188，thin），整格捨去「兩人…做出首張專輯」改寫成一句；Mise 240→239（「儀式般的聲響」縮成「儀式聲響」以容納換字）。`qa-batch out`、`qa-check-research`、`fix-spacing` 皆 0 處；轉述引導詞（據…）0。
+- **18107** 第二句領句全照鉤子層 note；為拆 3 張以上 4-gram，三處領句只加減一個字或換語序（意義不變）：Mise「瑞典的 dark ambient 計畫」（拆「瑞典計畫」×3，與 Alchymeia、Thronal 的領句撞）、Istid「替挪威的 dark ambient 計畫」（拆「挪威計畫」×3）、Mørkets「他參與的是 Svartsinn 這個挪威 dark ambient 計畫」（拆「的是挪威」×3，與 Of Darkness 領句及 writer-1 一張撞）。剩 2 張的「瑞典計畫」「挪威計畫」「是他的計畫」「第四張全長」皆兩端都是領句原文，不再動。
+- **18108** 日期「日」後一字照 18099：12 排、Matriarch「，」、Stains 出、Mise 推、Alchymeia 交、Daemonum 問、Horizons 收、Thronal 起、Colossus 經；其餘只寫到年或月。日期前一字三處拆黏合：Daemonum 改成「發行的是 Cyclic Law，2021 年…問世」、Horizons 把日期句移到最長曲之前（前字「品」）、Borrowed 改「Power & Steel 在 2013 年 12 月把它發行出來」（原三張「分鐘。年月」撞）；Matriarch 句尾改成「哨音與恍惚的浪潮」避「音年月日」。
+- **18109** 自掃（han() 4-gram，跨 out-1／out-2 合掃）：3 張以上只剩「特隆赫姆」（地名）；途中拆掉「電子設備」「長約分鐘」×2、「合計約分」「年月由發」「整張只有」「唱片年月」「共約分鐘」「分鐘左右」「一首就長」「在到年間」等。2 張殘片多為領句原文或樂器名（合成器與、田野錄音）。writer-1 若之後再改，請主線收件時統一重跑一次。
+- **18110** 內容取捨：派工補充照辦——媒體名與榜單名次 0 處（Skepticism 寫「九〇年代末有一位樂評初聽本作」不具名；Konstellaatio 寫成「整張被形容成…」被動句）；年代用中文數字（九〇年代）。Supersilent 的團名在第三句補上（第二句領句只有「這支挪威即興團體」）。Enthraled 只寫原版 1994 與 2013 redux，不寫 2007 數位版與黑膠限量；Of Darkness 不寫序數；Westerhus 不寫「個人專輯」字樣（note 只給「全盤只有他一人」）；Borrowed 寫「唱片裡只有兩首」，不寫兩人各一首的分工。否定字只出現在 note 指派的內容（Thronal「不落入 loop」、Skepticism「不走哥德感」、Elegies「不知身在何處」）與 Istid hook 原文。
+
+## 寫作層（writer-1）（條號 18101–18105）
+- **18101** 交件：`desc-tools/batches/output/add-20261023-md18-out-1.json` 18 張（full 10：197–238；thin 8：149–177）。`qa-batch out`、`qa-check-research`（0 標記）、`fix-spacing`（0）皆過；「據」0 處，媒體名與榜單名次 0 處。初稿超標 2 張（fade 243、Transience 241），整格／整詞捨去：fade 改「這張回到以器樂為主的 drone metal」並刪「自己」、Transience 刪「發行了這張」與「偶爾」。
+- **18102** 第二句領句全照鉤子層 note 指派；「日」後一字照 18094（由／突／登／發／歸／亮／透／上／在／下／於／同／面／以／正／成），Imaginary、Let Me Be 只寫到年或月。日期前一字（han 後）逐張不同：果／的／長／出／年／它／營／團／館／人／作／盤／樂／版／軌（不失者的「月日上」前一字為「鼓」）；本檔 0 撞，與 writer-2 合掃後拆掉的是「片年月日」「在年月日」「張年月日」「音年月日」四處。
+- **18103** 自掃（本檔＋writer-2 out＋writer-2 hooks，han() 4-gram）：3 張以上只剩「西班牙文」（語言名，Corrupted 三張，同 18095）。途中拆掉：合成器與、長約分鐘、張專輯年、電子設備、分鐘左右、由自家廠牌、合計約、一首長約、彈吉他兼、片年月日、曲子各長、這是第二張、只收兩首、整張只有、廠牌推出、分鐘上下、第一張全、在年月日、後的第一、加起來約、發行三首、年月由發、張年月日、音年月日。剩 2 張殘片皆為鉤子層指派的第二句原文（樂團的第／張錄音室／第四張全長／是挪威的即興團體／黑暗氛圍）或指派的「日發」（El Mundo Frio 對 writer-2 Matriarch），不動。
+- **18104** 否定句：Occulting「沒有鼓」、Let Me Be「沒有數位版」是 note 指派的事實（同 18095 保留），其餘 0。El Mundo Frio 不重寫 hook 已給的 71 分鐘；Garten 只寫 note 三格，不補「無意識之園」字義。
+- **18105** 引入法：Deathprod／Helge Sten 五張照鉤子層 18093 配表（Imaginary 名義＋出身、Occulting 製作人身分、Sow「背後是」、Let Me Be 本名＋生年、Nordheim 名義並列），Supersilent《9》成員名領句；與 writer-2《12》「此時是三人編制」不撞。
+
+## 主線審稿（2026-10-23，cloud-main，36 張逐張讀過、對回研究稿）（條號 18111–18114）
+- 18111｜Corrupted《Llenandose de gusanos》：「最重也最陰沉的 doom／sludge」→「極重而陰沉的 doom／sludge」（最高級評價無來源）。
+- 18112｜Skepticism《Lead and Aether》：刪「九〇年代末有一位樂評初聽本作，記得最清楚的就是這風琴聲。」（單源樂評軼事）。
+- 18113｜Northaunt《Horizons》：刪「，也是 Northaunt 至今最令人不安的作品」；Svartsinn《Of Darkness and Re-Creation》：刪「廠牌也把它列為…經典之一」（廠牌自評最高級）。
+- 18114｜其餘 32 張逐張審過未改字；第四張（Elegies、Thronal）、第三張全長（Horizons）、Puma（Westerhus）皆有研究稿來源。事實層未動，research／hooks／input 無須同步。
+- 封面補記：Funeral Moth《Transience》CAA 原圖與 front-500 連續 500，改 Apple 1080634793 官方圖（目視相符）；Yoshi Wada CAA 一次 000 後重試 200，保留 CAA。最終 CAA 34、Apple 1、Discogs 1。

@@ -3253,4 +3253,13 @@ window.DipPreviewStatus = Object.freeze({
   "leyland kirby|sadly, the future is no longer what it was": "unavailable",
   "mount vernon arts lab|the seance at hobs lane": "unavailable",
   "mahalia jackson|great songs of love and faith": "unavailable",
+  "boris|dronevil": "unavailable",
+  "corrupted|llenandose de gusanos": "unavailable",
+  "corrupted|el mundo frio": "unavailable",
+  "corrupted|garten der unbewusstheit": "unavailable",
+  "不失者|すでに用意されていた想い": "unavailable",
+  "yoshi wada|earth horns with electronic drone": "unavailable",
+  "deathprod|let me be forever animal": "unavailable",
+  "svartsinn|elegies for the end": "unavailable",
+  "ø|konstellaatio": "unavailable",
 });

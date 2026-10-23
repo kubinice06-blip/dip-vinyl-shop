@@ -5,7 +5,7 @@
   {
    "id": "rock",
    "zh": "搖滾",
-   "count": 5106,
+   "count": 5116,
    "children": [
     {
      "id": "indie-alt",
@@ -62,7 +62,7 @@
     {
      "id": "jrock-asia",
      "zh": "日亞搖滾",
-     "count": 995,
+     "count": 999,
      "children": [
       {
        "id": "tw",
@@ -72,7 +72,7 @@
       {
        "id": "jp",
        "zh": "日本",
-       "count": 274
+       "count": 278
       },
       {
        "id": "th",
@@ -154,7 +154,7 @@
     {
      "id": "punk-wave",
      "zh": "龐克新浪潮",
-     "count": 964,
+     "count": 965,
      "children": [
       {
        "id": "punk",
@@ -184,7 +184,7 @@
       {
        "id": "no-wave",
        "zh": "No Wave",
-       "count": 92
+       "count": 93
       },
       {
        "id": "pop-punk",
@@ -206,7 +206,7 @@
     {
      "id": "metal",
      "zh": "金屬",
-     "count": 702,
+     "count": 710,
      "children": [
       {
        "id": "trad",
@@ -229,14 +229,14 @@
        "count": 133
       },
       {
+       "id": "doom",
+       "zh": "厄運與粗厚",
+       "count": 124
+      },
+      {
        "id": "prog-metal",
        "zh": "前衛與技術",
        "count": 120
-      },
-      {
-       "id": "doom",
-       "zh": "厄運與粗厚",
-       "count": 117
       },
       {
        "id": "black",
@@ -635,27 +635,27 @@
   {
    "id": "electronic",
    "zh": "電子",
-   "count": 2503,
+   "count": 2529,
    "children": [
     {
      "id": "ambient",
      "zh": "Ambient / Drone",
-     "count": 1091,
+     "count": 1117,
      "children": [
       {
        "id": "dark-ambient",
        "zh": "Dark Ambient",
-       "count": 245
-      },
-      {
-       "id": "idm",
-       "zh": "偏 IDM",
-       "count": 235
+       "count": 262
       },
       {
        "id": "drone",
        "zh": "Drone",
-       "count": 234
+       "count": 246
+      },
+      {
+       "id": "idm",
+       "zh": "偏 IDM",
+       "count": 237
       },
       {
        "id": "ambient-techno",
@@ -665,7 +665,7 @@
       {
        "id": "neoclassical",
        "zh": "偏現代古典",
-       "count": 75
+       "count": 77
       },
       {
        "id": "new-age",
@@ -677,17 +677,17 @@
     {
      "id": "techno",
      "zh": "Techno",
-     "count": 641,
+     "count": 644,
      "children": [
       {
        "id": "minimal",
        "zh": "Minimal",
-       "count": 283
+       "count": 286
       },
       {
        "id": "ambient-techno",
        "zh": "Ambient Techno",
-       "count": 258
+       "count": 260
       },
       {
        "id": "detroit",
@@ -808,17 +808,17 @@
     {
      "id": "idm",
      "zh": "IDM / Glitch",
-     "count": 410,
+     "count": 412,
      "children": [
       {
        "id": "ambient-idm",
        "zh": "Ambient IDM",
-       "count": 228
+       "count": 230
       },
       {
        "id": "glitch",
        "zh": "Glitch / Microsound",
-       "count": 159
+       "count": 161
       },
       {
        "id": "warp",
@@ -914,12 +914,12 @@
     {
      "id": "industrial",
      "zh": "Industrial / EBM",
-     "count": 257,
+     "count": 265,
      "children": [
       {
        "id": "dark-ambient",
        "zh": "Dark Ambient / Post-Industrial",
-       "count": 124
+       "count": 132
       },
       {
        "id": "power-electronics",
@@ -946,22 +946,22 @@
     {
      "id": "noise",
      "zh": "實驗與噪音",
-     "count": 203,
+     "count": 209,
      "children": [
       {
        "id": "harsh",
        "zh": "Harsh Noise / 日本噪音",
-       "count": 154
+       "count": 160
       },
       {
        "id": "drone",
        "zh": "Drone / Dark Ambient",
-       "count": 124
+       "count": 130
       },
       {
        "id": "glitch",
        "zh": "Glitch / Microsound",
-       "count": 49
+       "count": 50
       },
       {
        "id": "concrete",
