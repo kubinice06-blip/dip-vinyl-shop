@@ -120,6 +120,7 @@
 - 照 10-23 體感標準評分（conf mid 23、low 8）。**上線 31；落冷冽 27/31＝87%**。
 - 出格 4 張全判重落暴躁：Big Satan《I Think They Liked It, Honey》《Souls Saved Hear》（Ducret 電吉他）、Berne／Taborn／Rainey《The Shell Game》（電子低頻）、Peter Evans Quintet《Destination: Void》（電子噪音、y 0.5）。**當代前衛爵士要收原聲、無電吉他／電子的小編制**；帶失真吉他或現場電子的照 mc1 教訓 y 估 +0.3 起跳。
 - 邊界：Tom Rainey Trio 三張 x 3.0–3.1 剛好過線（無貝斯三重奏、作曲短曲）。
+- 八格（併 main 後）：恍惚 1,242、冷冽 1,429、頹靡 1,404。
 - 產量：策展 54、主線汰 9、研究汰 14 → 31。研究汰換主因是翻奏／旋律清楚（判暖）、groove（判重）、獨奏留白（判靜）。
 
 ## 本批新藝人（無介紹，未切；並行時子工作階段不切）
