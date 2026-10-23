@@ -40,3 +40,15 @@
 - 11508：Mark Fell《Multistability》curatorWhy 的 FM 音色查無來源，facts 不寫；樂評稱乾淨數位合成加類比打擊，局部有底特律銅管刺音，整體仍乾冷。
 - 11509：Funkstörung《Appetite for Disctruction》含 MC Triple H、Greenwood 說唱與 Carin 人聲，z 可能貼 −0.3 以上（curatorRisk 成立）；樂評層僅 AllMusic、CMJ 的維基轉引，BPM 與低頻查無。
 - 11510：WebSearch 3 次用於 Super.Trigger、Multistability、SND Atavism（其餘六張改用 Discogs／MB／iTunes API、Bandcamp、維基、The Quietus、Igloo、FACT 的 WebFetch）；Pitchfork／Guardian／AllMusic／Discogs 網頁 403 或被擋。thin 四張：Atom™ HD、Brownout、Demissions、Lipswitch；full 五張。無推翻身分，沒有建議移除。
+
+## 研究 d 組
+- 11511：Richard Devine《Aleamapper》原廠牌是 Schematic（美版 2001-12），卡單 label P-VINE 取自 MB 最早的日本盤（2001-09-25，18 首，多〈Itsuko〉〈Pulsion Mirror〉）；建議上架用 Schematic。Discogs 風格含 Dark Ambient／Drone，無樂評與 BPM（Pitchfork、AllMusic、RA 皆無法開啟），moodGuess 存疑，status thin。
+- 11512：Sutekh《periods.make.sense.》全無曲名，只查到 Discogs 風格 Techno／Noise／Experimental 與藝人生平；「click 碎拍、乾」無來源可證，moodGuess 存疑，status thin；hook 只留一條（曾有的「最後一批 LP」說法是推論，已刪）。
+- 11513：Rian Treanor《ATAXIA》Igloo（冷、硬、無鋪底）與 Planet Mu／Quietus（Max/MSP、切分底鼓、16 小節循環）可互證；Igloo 稱十首、Discogs／MB 九首，採九首；Igloo 稱以口語人聲取樣為基礎、Quietus 只有 B2 用人聲，facts 只採 Quietus。BPM 三源皆無，x 3.9 無法證實。
+- 11514：Rian Treanor《File Under UK Metaplasm》烏干達坎帕拉 Boutique Studio 一事採 Quietus 專輯宣布文；樂評文（Quietus、Igloo）描述 dub／dancehall 殘影與滑音式音色，moodGuess 存疑（低頻可能偏厚、z 不明），BPM 無。
+- 11515：Robert Hood《Paradygm Shift》Optimistic Underground 稱「暖的音色」，Exclaim! 稱 house 底鼓與極簡放克，Dekmantel 稱電子放克，moodGuess 存疑（z 可能不到 -1.1、y 可能 0.3–0.4，curatorRisk 成立）。Dekmantel 商品頁顯示 2026-04-19 與曲名 Magnet，與 MB／Rush Hour／FACT 不合，採後三者。
+- 11516：Robert Hood《Hoodlum》2×12 吋 9 首（含 Interlude、Nightime Mix），Discogs 該版無 LP／Album 標記，MB 列 Album，介於長篇 EP 與專輯之間；所有可開的來源都沒有聲音描述（Discogs 風格含 House），聲音事實不足，status thin，moodGuess 存疑。
+- 11517：Jeff Mills《From the 21st》MB 首發日 1999-01-30 為日本盤，碟上 ℗1998 Axis，維基列 1998，首發年有疑，facts 兩者並陳；Discogs 風格含 Ambient，有 1:39、2:38 小品，「快速循環」無來源，moodGuess 存疑，status thin；第 4 首音訊與 Preview（TW-001）B1〈Here〉相同。
+- 11518：Jeff Mills《Cycle 30》**建議汰換**：Discogs 為單張 12 吋 Special Cut（A 面 8 段鎖槽加 B 面 3 首），維基作品表標 EP，推翻卡單「專輯」定性；MB 雖列 Album，實質不符專輯卡池。
+- 11519：Jeff Mills《The Power》14 首 CD 專輯（Axis AXCD-042，2011-04-19），附 Mills 寫的 16 頁原創故事；Axis 官網的 The Sleeper 系列有一章叫 The Power，但頁面未明說與這張專輯的關係，facts 只寫並列事實、不寫因果；維基同年另有同名 EP。無聲音描述，moodGuess 存疑（可能含氛圍段），status thin。
+- 11520：本組 WebSearch 用 3 次（Rian Treanor ATAXIA、File Under UK Metaplasm、Paradygm Shift）；Pitchfork 被封鎖、AllMusic／Discogs 網頁／RYM／Sputnikmusic／RA 評論頁皆 403 或無，Discogs 與 MB 改走 API；Richard Devine、Sutekh、Hood《Hoodlum》、Mills 四張因此只有 Discogs 風格與曲目事實，聲音事實（2–3 條）未達要求，已在各卡 notes 與報告列明。
