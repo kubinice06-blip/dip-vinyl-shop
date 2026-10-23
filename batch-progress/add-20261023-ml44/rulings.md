@@ -99,3 +99,6 @@
 ## 情緒評分（上線當天，`batch-progress/mood-axes/score-ml44/`）
 - 10 張照 10-23 體感標準打分（conf mid 6、low 4）→ merge → build-priors → build-scale v0 → build-card-moods（錨點 104/104）。
 - **落恍惚 9/10（90%）**；出格 Engineers《In Praise of More》z −0.1 落頹靡（「略帶疏離」，柔牆 shoegaze 色溫貼 0）。z 貼邊：Engineers《Always Returning》0.0、Tears Run Rings 0.0、Acetone 0.1——shoegaze 二線色溫果然多貼 0，同場景下一批只收甜旋律、明顯暖的 dream pop。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Engineers、Robin Guthrie & Harold Budd（合掛名）、Acetone、Sound of Ceres、Tears Run Rings、Simon Raymonde、The Telescopes、Nightlands（8 個掛名）。
