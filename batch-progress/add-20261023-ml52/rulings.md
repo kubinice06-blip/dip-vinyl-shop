@@ -32,3 +32,9 @@
 - 20558：Angie Stone《Unexpected》：推翻策展層「慢板為主、厚低頻合成墊」——Wikipedia 稱轉向舞曲流行、放克、上揚，Apple Music 評論稱 I Ain't Hearin' U、Hey Mr. DJ 是舞曲、Tell Me 是 Auto-Tune 夜店曲；製作為乾淨數位。moodGuess 嚴重存疑，建議汰換。MB 首發日 2009-01-01 為佔位，美國實際 2009-11-23。
 - 20559：Chanté Moore《Love the Woman》：AllMusic Kellman 稱慢歌「彼此相似」並稱製作滑順，George Duke 製作 Give Me Time 與 Guess Who I Saw Today；Can't Do It 風格不搭、Special 可能為中板。大致成立，小存疑；R&B 榜名次專輯頁 14、藝人頁 15，採專輯頁。
 - 20560：備註：本組可靠度——Silk 與 Downing 缺逐曲 BPM；Downing、Jackson 標 thin。SoulTracks（Silk 評論）僅來自搜尋摘要，不入 facts。
+
+## 研究 c 組
+- 20541：9 張 moodGuess 逐張核對，Rahsaan／Dwele／Stroke of Genius／Body Kiss／Baby Makin' Music／Mr. I 六張 notes 標「moodGuess 存疑」（快慢各半或中快板／R. Kelly、JD 式數位製作、嘻哈硬拍）；In My Songs 聲音證據薄（thin）；Do I Speak、Love Session 大致成立。
+- 20542：《Do I Speak for the World》美國首發廠牌為 Elektra（2004-11-30），卡單 Atlantic 取自 MB 英國版；建議主線改 Elektra。年份不變。
+- 20543：Body Kiss MB 首發 2003-01-01 為佔位，實際 2003-05-06；Rahsaan 美國版 2004-10-26 為 Artistry Music，卡單 Dome 為英國首發，兩者並存。
+- 20544：Mr. I 年份 2010 屬 2000s 場景邊緣，留給主線。
