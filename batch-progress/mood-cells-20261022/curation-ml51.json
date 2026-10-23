@@ -1,0 +1,1679 @@
+{
+ "group": "ml51",
+ "factions": [
+  {
+   "id": "la-beat-tape",
+   "zh": "LA／Stones Throw 系 beat tape 二線（Knxwledge、Ta-ku、Elaquent、Kiefer、Onra、Tall Black Guy）",
+   "count": 16,
+   "why": "Dilla 系 dusty 取樣、慢拍、暖靈魂取樣；池中同人皆落恍惚"
+  },
+  {
+   "id": "dusty-beat-tape",
+   "zh": "dusty 取樣 beat tape（Ohbliv、Wun Two、FloFilz、Stan Forebee 系）",
+   "count": 17,
+   "why": "厚底鼓、黑膠塵、暖爵士／靈魂取樣，慢拍，池中 Ohbliv／Wun Two 全落恍惚"
+  },
+  {
+   "id": "sleepy-lofi",
+   "zh": "睡意 lo-fi beat tape（mt. fujitive、Purrple Cat、jhfly、less.people、Blue Wednesday 系）",
+   "count": 15,
+   "why": "極慢、糊濾波、溫暖和弦，池中同人 x 1.9–2.3"
+  },
+  {
+   "id": "jp-beat",
+   "zh": "日本 beat tape 二線（BROCKBEATS、Fitz Ambro$e、Gradis Nice）",
+   "count": 6,
+   "why": "日本 lo-fi／jazzhop 的 dusty 那一路"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Knxwledge",
+   "album": "SKRAWBERRiES.",
+   "year": 2010,
+   "label": "Klipmode",
+   "country": "us",
+   "faction": "la-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Knxwledge 早期 Klipmode 時代 22 首 beat tape（Discogs 標 Abstract／Downtempo），池中同人 5 張全落恍惚；切碎靈魂取樣＋糊濾波，慢、厚、暖",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": 0.9,
+    "why": "慢拍歪鼓、糊濾波 R&B 取樣，dusty 暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4c6cb972-61e4-4177-8264-5a3ce006f366",
+    "https://coverartarchive.org/release/1bb46c02-dade-483c-9ddc-c11c2435368a/41414772106.png",
+    "https://gloof.bandcamp.com/album/skr-wberries-funr-isrs-vol-3",
+    "https://knxwledge.bandcamp.com/album/skrawberries",
+    "https://www.discogs.com/release/2364030"
+   ],
+   "mbRgMbid": "4c6cb972-61e4-4177-8264-5a3ce006f366",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 另標 Experimental；早期抽象段落多，色溫可能較 Hud Dreems 中性"
+  },
+  {
+   "artist": "Knxwledge",
+   "album": "Old.Klouds.LP",
+   "year": 2011,
+   "label": "",
+   "country": "us",
+   "faction": "la-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Knxwledge 自發行的 25 首長 beat tape，接在已在池的《Klouds》之後的 dusty 取樣盤；同人池中 y 1.3–1.4、z 0.9–1.3",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.3,
+    "z": 1.0,
+    "why": "懶拍、低頻糊、靈魂取樣迴圈，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7ba7d186-8a54-4c80-bad2-2523789a4467",
+    "https://coverartarchive.org/release/4f2fa05a-d2a4-4680-89b9-7c33a765d79b/43015236530.png",
+    "https://knxwledge.bandcamp.com/album/old-klouds-lp"
+   ],
+   "mbRgMbid": "7ba7d186-8a54-4c80-bad2-2523789a4467",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Knxwledge",
+   "album": "TodaysAlreadYesterday.",
+   "year": 2019,
+   "label": "",
+   "country": "us",
+   "faction": "la-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Knxwledge 2019 年 29 首自發行 beat tape（34 分），Stones Throw 時期的切 R&B 取樣手法，池中《1988》《Hud Dreems》同型落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.3,
+    "z": 1.1,
+    "why": "短迴圈慢拍、R&B 取樣糊濾波，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ed74b135-0740-4bb5-8d48-d1ef9de41e2a",
+    "https://coverartarchive.org/release/835edae4-a48f-441b-805d-2100c99b8486/33886005405.jpg",
+    "https://knxwledge.bandcamp.com/album/todaysalreadyesterday"
+   ],
+   "mbRgMbid": "ed74b135-0740-4bb5-8d48-d1ef9de41e2a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 掛名寫作「Knxwledge.」（帶句點），卡單照池中寫法 Knxwledge"
+  },
+  {
+   "artist": "Ohbliv",
+   "album": "Rugged Tranquility Volume 2",
+   "year": 2021,
+   "label": "",
+   "country": "us",
+   "faction": "dusty-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Ohbliv 2021 年接續 2009 年《Rugged Tranquility》的第二卷，池中第一卷 2.6/1.4/0.9 落恍惚；里奇蒙 beat 圈的 dusty 靈魂取樣",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.4,
+    "z": 1.0,
+    "why": "厚底鼓、黑膠塵、靈魂爵士取樣，慢而暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/77fbe9b0-79cb-4378-ac9f-34d8362bf47d",
+    "https://music.apple.com/us/album/rugged-tranquility-volume-2/1823270247"
+   ],
+   "mbRgMbid": "77fbe9b0-79cb-4378-ac9f-34d8362bf47d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ohbliv",
+   "album": "MindGarden",
+   "year": 2014,
+   "label": "",
+   "country": "us",
+   "faction": "dusty-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Ohbliv 2014 年 19 首 43 分的長 beat tape，同人池中 4 張 y 1.4–1.5、z 0.9–1.1 全落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.4,
+    "z": 1.0,
+    "why": "慢拍、磁帶糊、迷幻靈魂取樣，暖霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b5ac1f21-896e-4e70-b301-cf90db28b96f",
+    "https://coverartarchive.org/release/367b7fa9-c8f2-4285-b389-e0bc5bde7db0/14745380893.jpg",
+    "https://ohbliv.bandcamp.com/album/mindgarden-3"
+   ],
+   "mbRgMbid": "b5ac1f21-896e-4e70-b301-cf90db28b96f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Fitz Ambro$e & Ohbliv",
+   "album": "Zen Vapors",
+   "year": 2014,
+   "label": "Cascade Records",
+   "country": "",
+   "faction": "jp-beat",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "日本 beatmaker Fitz Ambro$e 與 Ohbliv 的合作 beat tape（Cascade Records），盤名即煙霧迷離；Ohbliv 池中全落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": 0.9,
+    "why": "慢拍、煙霧感取樣、低頻厚，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/80ca7a58-73c9-4cdf-a851-058e5c51edf8",
+    "https://coverartarchive.org/release/a4f83ea1-ec3b-4693-8660-48722598ecd3/14741660239.jpg"
+   ],
+   "mbRgMbid": "80ca7a58-73c9-4cdf-a851-058e5c51edf8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "合作盤，兩人分曲或合製未查"
+  },
+  {
+   "artist": "Ohbliv",
+   "album": "Up",
+   "year": 2012,
+   "label": "Huh What & Where Recordings",
+   "country": "us",
+   "faction": "dusty-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Ohbliv 2012 年在 Huh What & Where 發的 16 首 beat tape，同人 dusty 靈魂取樣路線，池中同型落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.4,
+    "z": 1.0,
+    "why": "厚鼓懶拍、靈魂取樣、黑膠塵，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a065ae12-b271-4f97-af5d-cdb96caa069a",
+    "https://coverartarchive.org/release/5e5c7f98-15d2-40b1-9ef4-438949f2a547/2535584616.jpg",
+    "https://huhwhatwhere.bandcamp.com/album/up"
+   ],
+   "mbRgMbid": "a065ae12-b271-4f97-af5d-cdb96caa069a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ohbliv",
+   "album": "SLPHNC III",
+   "year": 2016,
+   "label": "",
+   "country": "us",
+   "faction": "dusty-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Ohbliv「SLPHNC」（Soulphonic）系列第三卷，池中 2019 年《Soulphonic》2.6/1.4/1.1 落恍惚，同系列同手法",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.4,
+    "z": 1.0,
+    "why": "靈魂取樣迴圈、糊濾波、慢拍，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/507154c8-aee2-4a28-919c-e3311b4039a8",
+    "https://coverartarchive.org/release/1d924fa2-040c-4ca3-880b-9aaf4f619fbb/14745483713.jpg",
+    "https://ohbliv.bandcamp.com/album/slphnc-iii"
+   ],
+   "mbRgMbid": "507154c8-aee2-4a28-919c-e3311b4039a8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ohbliv",
+   "album": "Lewse Joints VI",
+   "year": 2017,
+   "label": "",
+   "country": "us",
+   "faction": "dusty-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Ohbliv「Lewse Joints」散裝 beat 系列第六卷，20 首 37 分，dusty 取樣懶拍，同人池中全落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.4,
+    "z": 0.9,
+    "why": "鬆散 beat 草稿、厚底鼓、塵感取樣，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d5414910-2d5a-4ba3-9fd9-ec4fde2a0eea",
+    "https://music.apple.com/us/album/lewse-joints-vi/1289705280"
+   ],
+   "mbRgMbid": "d5414910-2d5a-4ba3-9fd9-ec4fde2a0eea",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "系列名即散裝 beat 集，屬自發行 beat tape 而非精選"
+  },
+  {
+   "artist": "Ohbliv",
+   "album": "Anima Mundi",
+   "year": 2022,
+   "label": "",
+   "country": "us",
+   "faction": "dusty-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Ohbliv 2022 年 12 首 40 分 beat tape，延續《Give Thanks》《Raw Spirit Jewels》的靈性靈魂取樣路線（池中皆落恍惚）",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.4,
+    "z": 1.0,
+    "why": "靈性靈魂取樣、慢拍、厚低頻，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1da66690-9735-4d24-969c-10b21d12e35b",
+    "https://coverartarchive.org/release/03f93219-fccf-417b-942d-1ee315f2915f/40974095091.jpg",
+    "https://music.apple.com/gb/album/1658599456"
+   ],
+   "mbRgMbid": "1da66690-9735-4d24-969c-10b21d12e35b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 掛名小寫 ohbliv"
+  },
+  {
+   "artist": "Wun Two",
+   "album": "Ships",
+   "year": 2013,
+   "label": "HHV.DE",
+   "country": "de",
+   "faction": "dusty-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "德國 beatmaker Wun Two 2013 年 26 首 beat tape（HHV.DE／Radio Juicy），後來《Ships II》池中 2.4/1.1/1.0 落恍惚，本作為系列首卷",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 1.1,
+    "why": "慢拍、爵士鋼琴取樣、黑膠塵，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/59f2da9d-f0ba-418a-9031-d8beb7d959ad",
+    "https://coverartarchive.org/release/77092edf-2a2f-4f9f-89dc-7d8038786885/42472889599.gif",
+    "https://radiojuicy.bandcamp.com/album/ships-lp",
+    "https://www.discogs.com/release/4900781",
+    "https://www.discogs.com/release/9841839"
+   ],
+   "mbRgMbid": "59f2da9d-f0ba-418a-9031-d8beb7d959ad",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Wun two & Knowsum",
+   "album": "Dream Cruise",
+   "year": 2021,
+   "label": "Sichtexot",
+   "country": "de",
+   "faction": "dusty-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Wun Two 與德國製作人 Knowsum 在 Sichtexot 的合作 beat tape，盤名夢遊巡航；Wun Two 池中 5 張全落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 1.1,
+    "why": "慢拍 lo-fi 取樣、溫暖和弦、塵感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a2db534f-636a-46c7-9a77-c59e7ba01ad0",
+    "https://coverartarchive.org/release/a5072172-0d6c-4936-a140-df215de2a120/32998519327.jpg",
+    "https://music.apple.com/us/album/1553065981"
+   ],
+   "mbRgMbid": "a2db534f-636a-46c7-9a77-c59e7ba01ad0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 掛名大小寫為「Wun two & Knowsum」"
+  },
+  {
+   "artist": "Wun Two & Boora",
+   "album": "Nautiqua",
+   "year": 2021,
+   "label": "Vinyl Digital",
+   "country": "de",
+   "faction": "dusty-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Wun Two 與 Boora 合作的 17 首 beat tape（Vinyl Digital），Wun Two 系 lo-fi 取樣懶拍",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 1.0,
+    "why": "水下感濾波、慢拍、暖取樣"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/218809b5-ddbc-4236-85f8-0fb5122bfe52",
+    "https://coverartarchive.org/release/7ddbe31b-cf3b-48d8-92a6-b359434d1ae2/32999415773.jpg",
+    "https://music.apple.com/us/album/1563043167",
+    "https://wuntwo.bandcamp.com/album/nautiqua"
+   ],
+   "mbRgMbid": "218809b5-ddbc-4236-85f8-0fb5122bfe52",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Boora 身分只有 MB 條目，無簡介"
+  },
+  {
+   "artist": "Wun Two",
+   "album": "Cashmere Dreams",
+   "year": 2023,
+   "label": "Vinyl Digital",
+   "country": "de",
+   "faction": "dusty-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Wun Two 2023 年獨立 beat tape（Vinyl Digital，Discogs 標 Lo-Fi），盤名喀什米爾之夢，池中同人全落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 1.2,
+    "why": "柔軟 lo-fi 取樣、慢拍、磁帶暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/535f3640-c498-401c-851a-c09a68bcefc7",
+    "https://coverartarchive.org/release/5508823d-98db-4fbc-b2aa-072aa4d7c7f8/36570318230.jpg",
+    "https://music.apple.com/gb/album/1686391369",
+    "https://music.apple.com/us/album/1878395998",
+    "https://wuntwo.bandcamp.com/album/cashmere-dreams",
+    "https://www.discogs.com/release/27365991"
+   ],
+   "mbRgMbid": "535f3640-c498-401c-851a-c09a68bcefc7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Wun Two",
+   "album": "forest folks",
+   "year": 2024,
+   "label": "Vinyl Digital",
+   "country": "de",
+   "faction": "dusty-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Wun Two 2024 年 16 首 beat tape（Vinyl Digital，Discogs 標 Low Bap），延續同人暖 lo-fi 取樣路線",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 1.0,
+    "why": "Low Bap 慢拍、塵感取樣、溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c82f7ad2-9e74-4e20-9535-ef0733c20b7c",
+    "https://music.apple.com/us/album/1763600831",
+    "https://music.apple.com/us/album/1878343978",
+    "https://wuntwo.bandcamp.com/album/forest-folks",
+    "https://www.discogs.com/release/32439045"
+   ],
+   "mbRgMbid": "c82f7ad2-9e74-4e20-9535-ef0733c20b7c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面來源只有 Bandcamp 頁"
+  },
+  {
+   "artist": "Smuv, mt. fujitive",
+   "album": "Wonderland",
+   "year": 2022,
+   "label": "Vinyl Digital",
+   "country": "",
+   "faction": "sleepy-lofi",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "德國 smuv 與 mt. fujitive 的合作 beat tape（Vinyl Digital），mt. fujitive 池中 3 張 2.1–2.3/1.0/1.0–1.1 落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "極慢、糊濾波和弦、柔鼓，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3b92e361-d1a6-4c6a-b02f-70807e478db2",
+    "https://coverartarchive.org/release/584e25fb-9177-49ac-82c4-7c9249979758/41430685427.jpg",
+    "https://music.apple.com/us/album/1671354185",
+    "https://smuv.bandcamp.com/album/wonderland"
+   ],
+   "mbRgMbid": "3b92e361-d1a6-4c6a-b02f-70807e478db2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 掛名「Smuv, mt. fujitive」"
+  },
+  {
+   "artist": "mt. fujitive & oofoe",
+   "album": "aeon",
+   "year": 2023,
+   "label": "Vinyl Digital",
+   "country": "",
+   "faction": "sleepy-lofi",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "mt. fujitive 與 oofoe 的 20 首合作盤（Vinyl Digital），同人睡意 lo-fi 路線",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "睡意慢拍、柔和取樣、霧濾波"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b648c3c3-5d14-40dc-95ca-c115a906ae78",
+    "https://coverartarchive.org/release/811f1f2b-3e90-447a-8b86-291d3f0cd36a/44908576540.jpg",
+    "https://mtfujitive.bandcamp.com/album/aeon",
+    "https://music.apple.com/us/album/1701424953",
+    "https://www.discogs.com/release/29113975"
+   ],
+   "mbRgMbid": "b648c3c3-5d14-40dc-95ca-c115a906ae78",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "mt. fujitive",
+   "album": "afterlife",
+   "year": 2024,
+   "label": "Alda Music",
+   "country": "",
+   "faction": "sleepy-lofi",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "mt. fujitive 2024 年 22 首 42 分長盤（Alda Music），池中《sanctuary》《Eternal》同型落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.0,
+    "z": 0.9,
+    "why": "極慢、糊濾波、溫暖和弦墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2c234b5d-e631-44b2-ac05-c4df9543713b",
+    "https://coverartarchive.org/release/9d43a97a-8604-4ff8-9eb7-e9f4a2ed839a/40605660726.jpg",
+    "https://music.apple.com/nz/album/1751449654"
+   ],
+   "mbRgMbid": "2c234b5d-e631-44b2-ac05-c4df9543713b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "盤名 afterlife，色溫可能偏惆悵，未查聲音描述"
+  },
+  {
+   "artist": "mt. fujitive",
+   "album": "kyoto",
+   "year": 2025,
+   "label": "Alda Music",
+   "country": "",
+   "faction": "sleepy-lofi",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "mt. fujitive 2025 年 20 首 42 分長盤（Alda Music），日本意象 lo-fi，同人池中全落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "日式意象慢拍、柔和和弦、糊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e4622524-1be1-4190-99b4-13a3c88c4e13",
+    "https://coverartarchive.org/release/ca03ea6a-f9e9-437d-80e0-ae015b9ccd2e/45043871668.jpg",
+    "https://www.discogs.com/release/35537926"
+   ],
+   "mbRgMbid": "e4622524-1be1-4190-99b4-13a3c88c4e13",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "mt. fujitive",
+   "album": "old batch",
+   "year": 2016,
+   "label": "",
+   "country": "",
+   "faction": "sleepy-lofi",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "mt. fujitive 2016 年自發行的早期 beat 集（16 首 29 分），後來《ventures》等池中落恍惚的雛形",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "早期 beat 集、糊濾波慢拍，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1a5d0f1a-06ac-4606-8588-3d44bb65d83a",
+    "https://mtfujitive.bandcamp.com/album/old-batch"
+   ],
+   "mbRgMbid": "1a5d0f1a-06ac-4606-8588-3d44bb65d83a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "29 分貼長度線；MB 無 CAA，封面只有 Bandcamp 頁；封面來源只有 Bandcamp 頁"
+  },
+  {
+   "artist": "Purrple Cat",
+   "album": "Adventure Island",
+   "year": 2021,
+   "label": "Lofi Records",
+   "country": "",
+   "faction": "sleepy-lofi",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Lofi Records 旗下 Purrple Cat 2021 年 14 首 43 分長盤，盤名冒險島的溫暖意象；Purrple Cat 池中《Bloom》《Cat Nap》2.0/1.0/1.0–1.1 落恍惚",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "極慢、糊濾波電鋼琴、柔鼓，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/23ec3633-9cf2-412c-8573-57435b8523a8",
+    "https://coverartarchive.org/release/9ae5dd8d-9540-4ec1-bd44-41d1e1841b1c/36064744808.jpg",
+    "https://lofigirl.bandcamp.com/album/adventure-island",
+    "https://music.apple.com/us/album/1571729107",
+    "https://music.apple.com/us/album/1710113338"
+   ],
+   "mbRgMbid": "23ec3633-9cf2-412c-8573-57435b8523a8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Purrple Cat",
+   "album": "Oasis",
+   "year": 2021,
+   "label": "",
+   "country": "",
+   "faction": "sleepy-lofi",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Purrple Cat 2021 年 11 首 31 分 beat tape，盤名綠洲；Purrple Cat 池中《Bloom》《Cat Nap》2.0/1.0/1.0–1.1 落恍惚",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "慢拍、溫暖和弦墊、磁帶糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/60fab8ce-0b36-4108-8e31-93e4af3421b5",
+    "https://coverartarchive.org/release/acdf0123-330d-46e1-aac4-9f51e2fae086/33727125021.png",
+    "https://music.apple.com/us/album/1575832220"
+   ],
+   "mbRgMbid": "60fab8ce-0b36-4108-8e31-93e4af3421b5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Purrple Cat",
+   "album": "House in the Woods",
+   "year": 2021,
+   "label": "",
+   "country": "",
+   "faction": "sleepy-lofi",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Purrple Cat 2021 年 10 首 30 分 beat tape，林中小屋的居家暖意；Purrple Cat 池中《Bloom》《Cat Nap》2.0/1.0/1.0–1.1 落恍惚",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "林中小屋意象、慢拍、糊濾波，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6b59a816-c835-4e18-8003-c5185ccd7450",
+    "https://coverartarchive.org/release/685cc639-ad70-4795-89c3-37982b249509/33727113840.png",
+    "https://music.apple.com/us/album/1587656924"
+   ],
+   "mbRgMbid": "6b59a816-c835-4e18-8003-c5185ccd7450",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Purrple Cat",
+   "album": "Tranquil Trails",
+   "year": 2023,
+   "label": "",
+   "country": "",
+   "faction": "sleepy-lofi",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Purrple Cat 2023 年 10 首 28.5 分 beat tape，盤名寧靜步道；Purrple Cat 池中《Bloom》《Cat Nap》2.0/1.0/1.0–1.1 落恍惚",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "寧靜小徑意象、慢拍、柔和墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/54d2d610-aad0-4566-9fe5-843efc6192c2",
+    "https://coverartarchive.org/release/e23e7c99-6d51-4ae7-b11d-64a9cfb37317/38584987347.png"
+   ],
+   "mbRgMbid": "54d2d610-aad0-4566-9fe5-843efc6192c2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "28.5 分貼長度線（同人池中 26 分盤已收）"
+  },
+  {
+   "artist": "Purrple Cat",
+   "album": "Sands of Time",
+   "year": 2024,
+   "label": "",
+   "country": "",
+   "faction": "sleepy-lofi",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Purrple Cat 2024 年 14 首 37 分 beat tape，盤名時光之沙；Purrple Cat 池中《Bloom》《Cat Nap》2.0/1.0/1.0–1.1 落恍惚",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "慢拍、沙漠暖色意象、糊濾波"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6ae2ff0e-52b9-4839-9f3b-ff3cc68b7ecf",
+    "https://coverartarchive.org/release/71c31faa-b5f2-4d7b-8ef5-b76b01780675/38584961003.jpg",
+    "https://music.apple.com/gb/album/1737168451"
+   ],
+   "mbRgMbid": "6ae2ff0e-52b9-4839-9f3b-ff3cc68b7ecf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Purrple Cat",
+   "album": "Sleep Tight",
+   "year": 2025,
+   "label": "",
+   "country": "",
+   "faction": "sleepy-lofi",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Purrple Cat 2025 年 15 首 45 分長盤，盤名晚安好眠，睡意 lo-fi 本色；Purrple Cat 池中《Bloom》《Cat Nap》2.0/1.0/1.0–1.1 落恍惚",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "睡前搖籃意象、極慢、柔糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/59ba86fd-0c56-4f77-91fd-77dc776efe9a",
+    "https://coverartarchive.org/release/504bbcd0-d436-4876-a3e3-49d6aa90b7a6/46488495800.png"
+   ],
+   "mbRgMbid": "59ba86fd-0c56-4f77-91fd-77dc776efe9a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "less.people",
+   "album": "respect.her",
+   "year": 2018,
+   "label": "",
+   "country": "",
+   "faction": "sleepy-lofi",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "less.people 2018 年 15 首 45 分 beat tape，池中同人《Origins》《One Day It's Over》2.1–2.2/1.0/0.6–0.7 落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.0,
+    "z": 0.8,
+    "why": "慢拍、溫暖取樣、糊濾波"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1084dd71-ba10-4fb4-906d-9d0813d9e698",
+    "https://coverartarchive.org/release/5cb63ea5-157f-43a3-874a-bd556f42ce35/22602603288.jpg",
+    "https://waylesspeople.bandcamp.com/album/respect-her"
+   ],
+   "mbRgMbid": "1084dd71-ba10-4fb4-906d-9d0813d9e698",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同人池中 z 0.6–0.7，色溫非大幅偏暖"
+  },
+  {
+   "artist": "Ta-ku",
+   "album": "DUSTY Vol.1",
+   "year": 2012,
+   "label": "",
+   "country": "au",
+   "faction": "la-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Ta-ku 2012 年自發行「DUSTY」系列首卷（19 首 36 分），與池中《50 Days For Dilla》同年同手法，後者 2.7/1.1/1.1–1.2 落恍惚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 1.0,
+    "why": "盤名即 dusty：塵感靈魂取樣、慢拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9575f715-4ef4-46a1-b172-55d08219eb65",
+    "https://www.discogs.com/release/5337929"
+   ],
+   "mbRgMbid": "9575f715-4ef4-46a1-b172-55d08219eb65",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 無 CAA，封面只在 Discogs release 頁；MB 掛名 Ta‐ku（Unicode 連字號）；封面來源只有 Bandcamp 頁"
+  },
+  {
+   "artist": "Ta-ku",
+   "album": "DUSTY Vol. 2",
+   "year": 2012,
+   "label": "",
+   "country": "au",
+   "faction": "la-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Ta-ku「DUSTY」系列第二卷（16 首 33 分，自發行），同年《50 Days For Dilla》兩卷池中落恍惚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 1.0,
+    "why": "塵感取樣、慢拍、暖靈魂迴圈"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1df46344-79ce-4ab4-a5b4-247c702bb67c",
+    "https://www.discogs.com/release/5337950"
+   ],
+   "mbRgMbid": "1df46344-79ce-4ab4-a5b4-247c702bb67c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 無 CAA，封面只在 Discogs release 頁；封面來源只有 Bandcamp 頁"
+  },
+  {
+   "artist": "Ta-ku",
+   "album": "Beat Sketches, Vol.1",
+   "year": 2013,
+   "label": "Digi Crates Records",
+   "country": "au",
+   "faction": "la-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Ta-ku 2013 年 Digi Crates 發行的 beat 草稿集（10 首 32 分），Dilla／Nujabes 致敬期同期作品",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 1.0,
+    "why": "beat 草稿、慢拍、暖取樣"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/43a84397-e934-4595-aacf-c746dfc6974d",
+    "https://coverartarchive.org/release/6c67e039-0cd7-4314-8dfd-9f1ececec2e4/14460429269.jpg",
+    "https://itunes.apple.com/fr/album/id591462159"
+   ],
+   "mbRgMbid": "43a84397-e934-4595-aacf-c746dfc6974d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "草稿集性質，聲音無樂評"
+  },
+  {
+   "artist": "Ta-ku",
+   "album": "Dowhatyoulove",
+   "year": 2013,
+   "label": "Jakarta Records",
+   "country": "au",
+   "faction": "la-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Ta-ku 2013 年 Jakarta Records 的 18 首 42 分器樂盤（Discogs 標 Instrumental、Jazz、Funk/Soul），與池中致敬系列同期",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 1.1,
+    "why": "爵士／靈魂取樣器樂、慢拍，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/746f5f0c-d2da-4ce8-b881-e1cde895af58",
+    "https://coverartarchive.org/release/b1a86a91-2431-4e2e-a28e-603af95b8926/13027541682.jpg",
+    "https://takuakaflip.bandcamp.com/album/dowhatyoulove",
+    "https://www.discogs.com/master/573531",
+    "https://www.discogs.com/release/6038279"
+   ],
+   "mbRgMbid": "746f5f0c-d2da-4ce8-b881-e1cde895af58",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "可能收錄部分既發 beat，屬性待研究層確認非精選"
+  },
+  {
+   "artist": "Ta-ku",
+   "album": "TRIBUTE",
+   "year": 2010,
+   "label": "",
+   "country": "au",
+   "faction": "la-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Ta-ku 2010 年自發行 27 首 46 分 beat tape《TRIBUTE》，致敬系列的起點，與池中《50 Days For Dilla》同型",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 1.0,
+    "why": "致敬取樣 beat、慢拍、塵感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/562863d5-d25d-43e5-a037-6b4c5bee2a63",
+    "https://coverartarchive.org/release/4148206f-5351-4233-b034-7c86c0bcd8d0/37935988723.png",
+    "https://takuakaflip.bandcamp.com/album/tribute",
+    "https://www.discogs.com/release/5338003"
+   ],
+   "mbRgMbid": "562863d5-d25d-43e5-a037-6b4c5bee2a63",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "致敬對象未查（推測 Dilla）"
+  },
+  {
+   "artist": "Onra",
+   "album": "Nosthaigia",
+   "year": 2024,
+   "label": "All City Records",
+   "country": "fr",
+   "faction": "la-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Onra 2024 年 All City 的 17 首 33 分盤，盤名即 Thai＋nostalgia，延續《Chinoiseries》亞洲老唱片取樣手法（池中落恍惚）",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 1.0,
+    "why": "東南亞老唱片取樣、慢拍、塵感暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/29db41af-03ac-4490-a46e-5112fa6e9846",
+    "https://coverartarchive.org/release/5c6ccd05-4d08-4e91-8149-5d5225d4636f/38481301765.jpg",
+    "https://onra.bandcamp.com/album/nosthaigia"
+   ],
+   "mbRgMbid": "29db41af-03ac-4490-a46e-5112fa6e9846",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Onra 近年有 boogie／funk 盤（《Nobody Has to Know》已汰），本作取樣路線待研究層確認"
+  },
+  {
+   "artist": "Elaquent",
+   "album": "Forever Is a Pretty Long Time",
+   "year": 2020,
+   "label": "Mello Music Group",
+   "country": "ca",
+   "faction": "la-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "加拿大 beatmaker Elaquent 2020 年 Mello Music Group 的 13 首 38 分 beat tape，盤名「永遠是很長的時間」的懷舊暖意",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "慢拍、靈魂取樣、溫暖鍵盤，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6231ee6f-2ef0-42be-af0c-b5f90cd6c1fe",
+    "https://coverartarchive.org/release/79d92628-697c-4696-a8ca-607f919a133a/36131048406.jpg",
+    "https://elaquent-mello-catalog.bandcamp.com/album/forever-is-a-pretty-long-time"
+   ],
+   "mbRgMbid": "6231ee6f-2ef0-42be-af0c-b5f90cd6c1fe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中無同人錨點；Elaquent 部分作品鼓較彈，x 待研究層確認"
+  },
+  {
+   "artist": "Elaquent",
+   "album": "Long Drives to Nowhere",
+   "year": 2022,
+   "label": "URBNET Records",
+   "country": "ca",
+   "faction": "la-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Elaquent 2022 年 URBNET 的 16 首 39 分 beat tape，長途夜車的鬆拍取樣",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.0,
+    "z": 0.9,
+    "why": "夜路兜風意象、慢拍、暖取樣"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8e5ba05d-b003-44e9-9054-5ebb9fbc62c8",
+    "https://coverartarchive.org/release/70879650-738b-411a-bc57-47dc3bf69234/32804534794.jpg",
+    "https://elaquent-urbnet.bandcamp.com/album/long-drives-to-nowhere"
+   ],
+   "mbRgMbid": "8e5ba05d-b003-44e9-9054-5ebb9fbc62c8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "盤名「無目的的長途駕駛」可能偏惆悵，z 待確認"
+  },
+  {
+   "artist": "Elaquent",
+   "album": "The Scenic Route",
+   "year": 2012,
+   "label": "Stillmuzik",
+   "country": "ca",
+   "faction": "la-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Elaquent 2012 年 Stillmuzik 的 14 首 39 分 beat tape，早期 dusty 取樣路線",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "景觀路線意象、慢拍、靈魂取樣"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/01fa21f0-f92c-406b-ba71-5b348da1ef3b",
+    "https://coverartarchive.org/release/fda51c9b-9c6d-4bcb-9a64-24d3bb63ee5b/7384574466.jpg"
+   ],
+   "mbRgMbid": "01fa21f0-f92c-406b-ba71-5b348da1ef3b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Elaquent",
+   "album": "Good Karma",
+   "year": 2015,
+   "label": "Huh What & Where Recordings",
+   "country": "ca",
+   "faction": "la-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Elaquent 2015 年 Huh What & Where 的 11 首 32 分 beat tape（與 Ohbliv《Up》同廠牌），盤名好業報",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "慢拍、溫暖取樣迴圈、塵感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8aa40a0f-1bc3-4338-a116-b052a7682963",
+    "https://coverartarchive.org/release/62b03450-b303-406e-80e0-3105cfb6d678/39839358072.jpg",
+    "https://elaquent.bandcamp.com/album/good-karma"
+   ],
+   "mbRgMbid": "8aa40a0f-1bc3-4338-a116-b052a7682963",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Elaquent",
+   "album": "Oldies",
+   "year": 2011,
+   "label": "Huh What & Where Recordings",
+   "country": "ca",
+   "faction": "la-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Elaquent 2011 年 Huh What & Where 的 15 首 33 分盤，盤名即老歌，以老靈魂唱片取樣為骨",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 1.1,
+    "why": "老歌取樣、慢拍、黑膠暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/334b12a3-ee54-4d5e-bcd1-a4817d938b74",
+    "https://coverartarchive.org/release/933bba12-f605-473a-b80f-c868fd18b74f/10303382352.jpg",
+    "https://huhwhatwhere.bandcamp.com/album/oldies"
+   ],
+   "mbRgMbid": "334b12a3-ee54-4d5e-bcd1-a4817d938b74",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kiefer",
+   "album": "Happysad",
+   "year": 2018,
+   "label": "Stones Throw Records",
+   "country": "us",
+   "faction": "la-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "爵士鋼琴手兼 beatmaker Kiefer 的 Stones Throw 首作（Discogs 標 Trip Hop／Future Jazz），比池中《Memory Bomb》（2.6/0.8/1.0）更 lo-fi",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 1.0,
+    "why": "爵士鋼琴 beat、磁帶飽和、慢拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/eacf2087-abe3-4ad6-b8ab-ba9d6090276f",
+    "https://coverartarchive.org/release/8650325f-13a4-4638-8d82-b6fcb6d9efc3/20137648428.jpg",
+    "https://kiefer.bandcamp.com/album/happysad",
+    "https://www.discogs.com/master/1376116"
+   ],
+   "mbRgMbid": "eacf2087-abe3-4ad6-b8ab-ba9d6090276f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 有偏輕風險：同人池中 y 0.8，鋼琴主導較乾淨"
+  },
+  {
+   "artist": "Tall Black Guy",
+   "album": "8 Miles to Moenart",
+   "year": 2013,
+   "label": "First World Records",
+   "country": "us",
+   "faction": "la-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "底特律出身、旅英 beatmaker Tall Black Guy 2013 年 First Word 的 10 首 47 分盤，Dilla 嫡系靈魂取樣 beat",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 1.1,
+    "why": "底特律靈魂取樣、Dilla 式歪拍，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e1216847-91dc-49eb-a60e-b413baa0135f",
+    "https://coverartarchive.org/release/cb0b03b3-0495-4ba6-a39f-c00cfa49da1e/6277914487.jpg"
+   ],
+   "mbRgMbid": "e1216847-91dc-49eb-a60e-b413baa0135f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中無同人錨點；x 可能 2.7（Detroit 歪拍較推），研究層確認是否有客座饒舌"
+  },
+  {
+   "artist": "softy & Kendall Miles",
+   "album": "Balance",
+   "year": 2022,
+   "label": "Steezyasfuck",
+   "country": "",
+   "faction": "sleepy-lofi",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "lo-fi 廠牌 Steezyasfuck 的 softy 與 Kendall Miles 合作 12 首 35 分盤，盤名平衡，睡意 lo-fi",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.0,
+    "z": 0.9,
+    "why": "極慢、柔和電鋼琴、糊濾波，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a1437815-2b1f-4b7b-a613-eb9d67391e1a",
+    "https://coverartarchive.org/release/8ebb90e9-baa6-48cb-a656-ac9ce3aaf8ab/41430995600.jpg",
+    "https://music.apple.com/gb/album/1624990389"
+   ],
+   "mbRgMbid": "a1437815-2b1f-4b7b-a613-eb9d67391e1a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "兩人身分只有 MB 條目"
+  },
+  {
+   "artist": "FloFilz",
+   "album": "Metronom",
+   "year": 2014,
+   "label": "Melting Pot Music",
+   "country": "de",
+   "faction": "dusty-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "亞琛 beatmaker FloFilz 在 Melting Pot Music 的首張 LP（Discogs 標 Instrumental／Jazz），德國 jazzhop 代表盤之一",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "爵士取樣、慢拍、溫暖鋼琴與管樂"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a0347f13-e505-4b27-aae5-62e19838523b",
+    "https://coverartarchive.org/release/9814186c-a3dd-4f8c-8128-aedebf2767a8/37722753280.jpg",
+    "https://flofilzmpm.bandcamp.com/album/metronom",
+    "https://music.apple.com/de/album/1881586073",
+    "https://www.discogs.com/release/6027014"
+   ],
+   "mbRgMbid": "a0347f13-e505-4b27-aae5-62e19838523b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中無同人錨點；鼓組較利落，y 可能 0.8–0.9"
+  },
+  {
+   "artist": "FloFilz",
+   "album": "Transit",
+   "year": 2019,
+   "label": "Melting Pot Music",
+   "country": "de",
+   "faction": "dusty-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "FloFilz 2019 年 Melting Pot Music 的 18 首 42 分 beat 盤，延續《Metronom》爵士取樣 jazzhop",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "爵士取樣、鬆拍、溫暖和弦"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/df6424b3-9d72-4ee0-9d66-2aab4ffa43b1",
+    "https://coverartarchive.org/release/17069cd9-f3f0-4d5c-85e2-052a9ae80f93/24453549559.jpg",
+    "https://flofilzmpm.bandcamp.com/album/transit",
+    "https://music.apple.com/us/album/1582129403"
+   ],
+   "mbRgMbid": "df6424b3-9d72-4ee0-9d66-2aab4ffa43b1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 有偏輕風險（真人樂手段落）"
+  },
+  {
+   "artist": "jhfly",
+   "album": "floating over oceans",
+   "year": 2015,
+   "label": "",
+   "country": "",
+   "faction": "sleepy-lofi",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "jhfly 2015 年自發行 16 首 33 分 beat tape，Bandcamp 世代 lo-fi 的夢遊系代表，盤名漂浮海上",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.0,
+    "z": 0.8,
+    "why": "漂浮感、柔和吉他取樣、糊濾波"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6dbe6bb5-e44f-4847-bcac-e27c5accd651",
+    "https://coverartarchive.org/release/fea10f24-20fb-45bb-8756-7e7df3ef0827/35540003660.png",
+    "https://jhfly.bandcamp.com/album/floating-over-oceans"
+   ],
+   "mbRgMbid": "6dbe6bb5-e44f-4847-bcac-e27c5accd651",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中無同人錨點；色溫可能偏惆悵"
+  },
+  {
+   "artist": "jhfly",
+   "album": "sounds and things",
+   "year": 2016,
+   "label": "",
+   "country": "",
+   "faction": "sleepy-lofi",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "jhfly 2016 年自發行 17 首 33 分 beat tape，延續《floating over oceans》夢遊 lo-fi",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.0,
+    "z": 0.8,
+    "why": "慢拍、溫柔取樣、磁帶糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8d8b3916-e6bf-4583-99b8-98cfd5a5fbf4",
+    "https://coverartarchive.org/release/25784b6e-cd26-4646-940a-140d4388dc4f/15952866939.jpg",
+    "https://jhfly.bandcamp.com/album/sounds-and-things"
+   ],
+   "mbRgMbid": "8d8b3916-e6bf-4583-99b8-98cfd5a5fbf4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Stan Forebee",
+   "album": "Jazz Sessions",
+   "year": 2013,
+   "label": "Digi Crates Records",
+   "country": "",
+   "faction": "dusty-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Stan Forebee 2013 年 Digi Crates 的 12 首 33 分 jazzhop beat tape（Discogs 標 Instrumental／Jazz）",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "爵士取樣、慢拍、黑膠塵，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b462898b-63dd-4343-ae53-113b8f5a99d9",
+    "https://coverartarchive.org/release/0092c026-a1b6-4c5d-9bf5-1933727276a2/16418132639.jpg",
+    "https://itunes.apple.com/us/album/id680248685",
+    "https://music.apple.com/us/album/1353584144",
+    "https://stanforebee.bandcamp.com/album/jazz-sessions-lp",
+    "https://stanforebee.bandcamp.com/album/jazz-sessions-lp-2013"
+   ],
+   "mbRgMbid": "b462898b-63dd-4343-ae53-113b8f5a99d9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中無同人錨點"
+  },
+  {
+   "artist": "Stan Forebee",
+   "album": "Retrospection",
+   "year": 2017,
+   "label": "Stan Forebee Music",
+   "country": "",
+   "faction": "dusty-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Stan Forebee 2017 年自發行 19 首 34 分 beat tape，延續《Jazz Sessions》爵士取樣路線",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "回顧感爵士取樣、慢拍、溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0ca40718-7893-4af6-81ca-f238d9be1e06",
+    "https://coverartarchive.org/release/ed1a697c-9080-4576-af19-62ad0e8b5478/31989865438.jpg",
+    "https://music.apple.com/us/album/1388719517",
+    "https://stanforebee.bandcamp.com/album/retrospection-lp"
+   ],
+   "mbRgMbid": "0ca40718-7893-4af6-81ca-f238d9be1e06",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Pandrezz",
+   "album": "Soul & Dreams",
+   "year": 2016,
+   "label": "",
+   "country": "",
+   "faction": "dusty-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Pandrezz 2016 年自發行 9 首 35 分 beat tape，盤名靈魂與夢，Bandcamp jazzhop 圈常客",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "靈魂取樣、慢拍、夢幻糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/acfbd832-2a4c-41a7-92e3-54fd6fc70eaf",
+    "https://coverartarchive.org/release/ee9a8701-e344-4c60-92bd-a00a7b264a64/18119917831.jpg",
+    "https://music.apple.com/us/album/1177668158",
+    "https://pandrezz.bandcamp.com/album/soul-dreams"
+   ],
+   "mbRgMbid": "acfbd832-2a4c-41a7-92e3-54fd6fc70eaf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中無同人錨點；身分只有 MB 與 Bandcamp"
+  },
+  {
+   "artist": "BROCKBEATS",
+   "album": "Tranquilizook",
+   "year": 2016,
+   "label": "Vinyl Digital",
+   "country": "jp",
+   "faction": "jp-beat",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "日本 BROCKBEATS 2016 年 Vinyl Digital 的 15 首 30 分盤，池中同人 3 張 1.8–2.2/1.1–1.2/0.6–0.7 落恍惚",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.1,
+    "z": 0.7,
+    "why": "睡意慢拍、糊濾波、溫和取樣"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5692f33a-0afc-4e1e-9b5d-dc355bbcd4d1",
+    "https://coverartarchive.org/release/ecee4b7a-cf3a-43f2-a206-58e76b3b6855/34993644705.jpg",
+    "https://music.apple.com/us/album/1212498859"
+   ],
+   "mbRgMbid": "5692f33a-0afc-4e1e-9b5d-dc355bbcd4d1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同人池中 z 只有 0.6–0.7"
+  },
+  {
+   "artist": "BROCKBEATS",
+   "album": "Chilled Rooms",
+   "year": 2017,
+   "label": "Vinyl Digital",
+   "country": "jp",
+   "faction": "jp-beat",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "BROCKBEATS 2017 年 Vinyl Digital 的 20 首 44 分盤，盤名即放鬆房間，同人《Calm Life》《Lunch Time Sleeps》同型落恍惚",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.1,
+    "z": 0.7,
+    "why": "放鬆房間意象、慢拍、柔糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5bad66c0-e395-4809-bfa3-bd3bc85a9681",
+    "https://coverartarchive.org/release/caf7c348-3a7b-4e00-9847-2ae2623b4d7a/35107536207.jpg",
+    "https://music.apple.com/us/album/1212452727"
+   ],
+   "mbRgMbid": "5bad66c0-e395-4809-bfa3-bd3bc85a9681",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同人池中 z 只有 0.6–0.7"
+  },
+  {
+   "artist": "Gradis Nice & Fitz Ambro$e",
+   "album": "Raw Clipz",
+   "year": 2020,
+   "label": "PBM",
+   "country": "jp",
+   "faction": "jp-beat",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "日本 beatmaker Gradis Nice 與 Fitz Ambro$e 在 PBM 的 18 首 29 分合作 beat tape，日本地下 dusty beat 二線",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.7,
+    "why": "粗糙取樣切片、慢拍、塵感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/97a18a72-05fd-4ea0-a26c-4387798b4fc6",
+    "https://coverartarchive.org/release/64b67e50-c785-4166-bcbf-1e568a07e7d6/40903302860.jpg",
+    "https://music.apple.com/gb/album/1497682902"
+   ],
+   "mbRgMbid": "97a18a72-05fd-4ea0-a26c-4387798b4fc6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "盤名 Raw，x、z 有偏躁偏冷風險；29 分貼長度線"
+  },
+  {
+   "artist": "Fitz Ambro$e",
+   "album": "Hypnodical",
+   "year": 2018,
+   "label": "PBM",
+   "country": "jp",
+   "faction": "jp-beat",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "日本 beatmaker Fitz Ambro$e 2018 年 PBM 的 15 首 32 分 beat tape，盤名 hypnotic＋melodical，與 Ohbliv 合作過《Zen Vapors》",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "催眠迴圈、慢拍、厚低頻取樣"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cd1393cf-c258-4f3e-b02d-f2848ca7d58d",
+    "https://coverartarchive.org/release/35e5163f-929e-4434-be7d-9bb5bf189536/40903266264.jpg",
+    "https://music.apple.com/gb/album/1371197017"
+   ],
+   "mbRgMbid": "cd1393cf-c258-4f3e-b02d-f2848ca7d58d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中無同人錨點"
+  },
+  {
+   "artist": "Ohbliv",
+   "album": "Kurio",
+   "year": 2026,
+   "label": "Needle to the Groove",
+   "country": "us",
+   "faction": "dusty-beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Ohbliv 2026 年 Needle to the Groove 的 14 首 43 分新盤，同人 dusty 靈魂取樣路線（池中 4 張全落恍惚）",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.4,
+    "z": 1.0,
+    "why": "厚底鼓、靈魂取樣、黑膠塵，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f799305f-1612-48aa-96c5-b75a0c9b5116",
+    "https://coverartarchive.org/release/b94834ec-31dc-4f2a-b5ae-6d08e756882a/45286906673.jpg",
+    "https://ohbliv.bandcamp.com/album/kurio"
+   ],
+   "mbRgMbid": "f799305f-1612-48aa-96c5-b75a0c9b5116",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "2026-05 新盤，聲音無樂評"
+  },
+  {
+   "artist": "Fitz Ambro$e",
+   "album": "Creative Network",
+   "year": 2019,
+   "label": "PBM",
+   "country": "jp",
+   "faction": "jp-beat",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Fitz Ambro$e 2019 年 PBM 的 19 首 34 分 beat tape，日本地下 beat 圈二線，與 Ohbliv、Gradis Nice 互有合作",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "慢拍、厚低頻取樣迴圈、溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5209251a-81af-414a-800a-65d0e0bf47dd",
+    "https://coverartarchive.org/release/df3a45b6-436b-44e5-a0f3-b5d72569ebb0/40903264562.jpg",
+    "https://music.apple.com/gb/album/1475576119"
+   ],
+   "mbRgMbid": "5209251a-81af-414a-800a-65d0e0bf47dd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中無同人錨點，聲音無樂評"
+  }
+ ],
+ "notes": [
+  "主場景大名多已在池：Knxwledge 5 張（含 Klouds、Kauliflowr、1988、Hud Dreems 兩張）、Ta-ku 3 張、Mndsgn 3 張、Onra 4 張、Kiefer《Memory Bomb》；本批只挖剩下的正規全長盤。Mndsgn 剩《Rare Pleasure》（樂團 jazz-funk，偏輕）未提；Onra《1.0.8》（Discogs 標 Disco／House）、《Fundamentals》《Swing Convention》（boogie funk）未提；Onra & Quetzal《Tribute》已在池。",
+  "Knxwledge 大多數盤是 MB 標 Mixtape/Street 的 WT／HX／VGM 系列或 <25 分短盤，只收 3 張 Album 型且 ≥30 分者。",
+  "日本 jazzhop 二線：ml41 先例 Nomak、Michita 因乾淨鋼琴 y 估 0.8 被汰，Uyama Hiroto／Fat Jon 池中 y 0.5–0.7，故 Kenichiro Nishihara、DJ Okawari、re:plus 這類乾淨鋼琴 jazzhop 未提；改收 dusty 的 Fitz Ambro$e、Gradis Nice、BROCKBEATS。BudaMunk 兩張已被 ml41 以「dope／dark」與 airy 汰，其餘盤同為暗色調，未提。",
+  "同人池中三軸已檢：Blockhead（z 0–0.2）、DJ Cam（z −0.4）、Teebs（y 0.6）、Ras G（z 0.1）、Samiyam（z −0.3）、Madlib Beat Konducta 與 J Dilla、Suff Daddy、Damu（x 2.8+）、Fat Jon／Uyama Hiroto（y 0.6–0.7）皆未提同型盤。",
+  "排除的合作盤：帶饒舌者（Wun Two & junclassic《Better Than Fiction Too》、SmooVth & Wun Two《Prussian Blue》、Pufuleti 合作《Perle ai porci》、Kareem Idris X Ohbliv、Sir Froderick X Ohbliv、Wun Two & CoryaYo 身分不明）；Philanthrope & Psalm Trees《Birds of a Feather》（Chillwave、Philanthrope 拋光先例）、Psalm Trees《From Scratch》（Chillhop 2024 拋光）、Cookin' Soul & jinsang《BOA BUNDA》（Cookin' Soul 彈跳 boom bap）、Tall Black Guy《Let's Take a Trip》（Neo Soul 標籤、疑有人聲）。",
+  "Kupla、Hoogway、Blue Wednesday、tomppabeats 剩下的盤都 <28 分（EP 長度）或無封面來源，未提。Purrple Cat 避開 night／space／snow／storm 類盤名（ml42 以 z 汰《Distant Worlds》），只收暖意象盤名且 ≥28 分者。",
+  "downtempo／dub 未補：ml15、ml40、ml41 已挖三輪；beat tape 本身足量。",
+  "身分：54 張全部 MB 釘住（primary Album、無 secondary type），0 張人工身分。聲音全憑同人池中錨點與 Discogs 風格／廠牌推估，無樂評；Bandcamp 頁面被反爬擋住，未取標籤與文案，研究層需補。",
+  "WebSearch 使用 0 次（全用 MB API、Discogs API、CAA、iTunes Search）。"
+ ]
+}

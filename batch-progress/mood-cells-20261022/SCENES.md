@@ -75,8 +75,8 @@
 | 51 | mc38 | 前衛爵士鋼琴緊繃那路（Cecil Taylor 獨奏、Matthew Shipp、Sylvie Courvoisier、Kris Davis、Marilyn Crispell、Alexander von Schlippenbach） | ✅ 上線 27／落格 27 |
 | 52 | ml50 | 暖 drone／厚墊 ambient（Celer、Chihei Hatakeyama、Taylor Deupree 暖盤、Benoît Pioulard、Hotel Neon；旋律要聽得出來） | ✅ 上線 22／落格 21 |
 | 53 | md27 | 暗色現代古典慢板厚弦（Górecki、Kancheli、Vasks、Penderecki 慢作、Silvestrov 冷盤；要往下壓） | ✅ 上線 15／落格 13 |
-| 54 | ml51 | lo-fi／beat tape 第三波（Knxwledge、Mndsgn、Ta-ku、Elaquent、Kiefer 慢盤、日本 jazzhop 二線）＋ ml47 剩餘 | 派→情緒薄格 ml51、md28（第 11 輪） |
-| 55 | md28 | dark ambient 第三波（md5 收 45／45 高產；Cryo Chamber、Cyclic Law、Glacial Movements、Malignant 二線藝人） | 派→情緒薄格 ml51、md28（第 11 輪） |
+| 54 | ml51 | lo-fi／beat tape 第三波（Knxwledge、Mndsgn、Ta-ku、Elaquent、Kiefer 慢盤、日本 jazzhop 二線）＋ ml47 剩餘 | ✅ 上線 31／落格 31 |
+| 55 | md28 | dark ambient 第三波（md5 收 45／45 高產；Cryo Chamber、Cyclic Law、Glacial Movements、Malignant 二線藝人） | ✅ 上線 34／落格 34 |
 | 56 | ml52 | 2000s R&B ballad／slow jam 續集（ml49 收 28 高產；Joe、112、Avant、Dru Hill、Musiq Soulchild、Brian McKnight 慢盤） | ✅ 上線 27／落格 25 |
 | 57 | mc39 | 自由爵士管樂獨奏與二重奏（Anthony Braxton、Evan Parker、Roscoe Mitchell、Brötzmann、Wadada Leo Smith 獨奏盤；mc38 鋼琴路高產） | ✅ 上線 28／落格 24 |
 | 58 | ml53 | 爵士人聲 torch song／深夜 ballad（Julie London、Chet Baker sings 以外的二線；弦樂或厚編曲才收） | |
@@ -116,7 +116,7 @@
 | md25 | 18601 | 冷的 ambient pop／art pop 慢盤（Julia Holter 冷盤、Jenny Hval 慢盤、Kate Bush 以外的暗 art pop） | 併入 md10（池中冷 art pop 多判輕，只收到 6 張） |
 | md26 | 19721 | 暗色 neofolk／dark folk 慢盤（Current 93、Sol Invictus、Ain Soph、Forseti、Hexvessel 慢盤；避開有極右爭議的團）＋ doom jazz 二線 | ✅ 上線 28／落格 28（策展兩輪 61、主線汰 3、研究汰 30；neofolk 只剩 drone／儀式型，極右爭議團不收，場景見底） |
 | md27 | 20361 | 暗色現代古典慢板厚弦（Górecki、Kancheli、Vasks、Penderecki 慢作、Silvestrov 冷盤） | ✅ 上線 15／落格 13（2026-10-23；主場景池中全判輕，改收 Scelsi／低音弦 drone／drone 配樂；策展兩輪 47、研究汰 31；見底不再派） |
-| md28 | 20601 | dark ambient 第三波（Cryo Chamber、Cyclic Law、Glacial Movements、Malignant 二線藝人） | 派→情緒薄格 ml51、md28（第 11 輪） |
+| md28 | 20601 | dark ambient 第三波（Cryo Chamber、Cyclic Law、Glacial Movements、Malignant 二線藝人） | ✅ 上線 34／落格 34（2026-10-23；策展 54、主線汰 8、研究汰 12、補 3 再汰 3；文案寫拍點／溫暖／旋律樂器或人聲領奏的汰；Cryo Chamber 二線已挖到底，Cyclic Law／Old Europa Cafe 還有少量） |
 
 ## 冷冽 mc（躁＋輕＋冷；門檻 x ≥ 3.3、y ≤ +0.2、z ≤ −0.3）
 
@@ -220,6 +220,6 @@
 | ml48 | 20041 | dub 第三波：Wackies／Bullwackie 紐約慢盤、Lee Perry 周邊、Prince Jammy、Niney、Joe Gibbs／Errol Thompson、Linval Thompson | ✅ 上線 12／落格 12（2026-10-23；策展 31、主線汰 11、研究汰 8（含改名重發撞池 2）；Mighty Two／Niney 池中判輕、器樂 dub 判冷，場景見底，不再派） |
 | ml49 | 20121 | 90s R&B slow jam／ballad 二線（Jodeci、Silk、H-Town、Intro、Shai、Changing Faces 系慢歌） | ✅ 上線 28／落格 28（2026-10-23；策展 53、主線汰 1、研究汰 17：new jack 中快板／乾淨數位製作；頭牌池中判輕，收 quiet storm 成人抒情與 2000s 慢板 neo-soul，主場景見底） |
 | ml50 | 20281 | 暖 drone／厚墊 ambient（Celer、Chihei Hatakeyama、Taylor Deupree 暖盤、Benoît Pioulard） | ✅ 上線 22／落格 21（2026-10-23；策展兩輪 61、主線汰 11、研究汰 28；見底不再派） |
-| ml51 | 20441 | lo-fi／beat tape 第三波（Knxwledge、Mndsgn、Ta-ku、Elaquent、Kiefer 慢盤、日本 jazzhop 二線） | 派→情緒薄格 ml51、md28（第 11 輪） |
+| ml51 | 20441 | lo-fi／beat tape 第三波（Knxwledge、Mndsgn、Ta-ku、Elaquent、Kiefer 慢盤、日本 jazzhop 二線） | ✅ 上線 31／落格 31（2026-10-23；策展 54、主線汰 8、研究汰 16、補 1；boom bap 彈跳、house／glitch、人聲合輯、散裝草稿集汰；Ohbliv、Wun Two、Purrple Cat、mt. fujitive 池中同人錨點可靠；主場景見底，不再派） |
 | ml52 | 20521 | 2000s R&B ballad／slow jam 續集（Joe、112、Avant、Dru Hill、Musiq Soulchild、Brian McKnight 慢盤） | ✅ 上線 27／落格 25（2026-10-23；策展 54、研究汰 22：hip-hop 硬拍取樣／饒舌客串 12、舞曲 5、smooth jazz 2、陰冷 1、身分 1、補 4 再汰 2；出格 Lattimore《Timeless》、Phil Perry 乾淨製作判輕落放鬆；主場景見底，不再派） |
 | ml53 | 20761 | 爵士人聲 torch song／深夜 ballad 二線（弦樂或厚編曲） | |

@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **401** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 163、已退回 1）。
+共 **403** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 165、已退回 1）。
 最後更新：2026-10-23
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -370,6 +370,13 @@
 |---|---|---:|---|---|---|---|
 | I Kong 《The Way It Is》 | [#1211110](https://www.discogs.com/release/1211110) | 1979 | Top Ranking | TC-082 | Discogs master 317637 的版本、主線目視與盤名相符 | ok |
 | Michael Prophet 《Jah Love》 | [#847976](https://www.discogs.com/release/847976) | 1983 | Live & Learn Records | LL LP 004 | Discogs master 195378 的版本、主線目視與盤名相符 | ok |
+
+## add-20261023-ml51（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Ta-ku 《DUSTY Vol.1》 | [#5337929](https://www.discogs.com/release/5337929) | 2012 | Not On Label (Ta-Ku Self-Released) | none | 唯一版本、主線目視與盤名相符 | ok |
+| Ta-ku 《DUSTY Vol. 2》 | [#5337950](https://www.discogs.com/release/5337950) | 2012 | Not On Label (Ta-Ku Self-Released) | none | 唯一版本、主線目視與盤名相符 | ok |
 
 ## c49（3 張）
 
