@@ -3120,4 +3120,8 @@ window.DipPreviewStatus = Object.freeze({
   "vex'd|cloud seed": "unavailable",
   "scorn|logghi barogghi": "unavailable",
   "lull|continue": "unavailable",
+  "love unlimited|under the influence of… love unlimited": "unavailable",
+  "tom brock|i love you more and more": "unavailable",
+  "the dells|love is blue": "unavailable",
+  "ray, goodman & brown|ray, goodman & brown ii": "unavailable",
 });

@@ -24,3 +24,40 @@
 - **17437** Cindytalk《The Crackle of My Soul》：無評論，status thin；Discogs 僅 Ambient／Experimental，策展層「噪聲 drone」不被來源證實，曲長 2:22–7:28 的十首較短、〈Troubled Aria〉可能有人聲，標 moodGuess 存疑，建議中等風險。
 - **17438** Midwife《No Depression in Heaven》：評論一致描述極慢、殘響多、人聲遠，但全未提鼓，且「一把不插電電吉他就能彈」與「失真霧」有出入，標 moodGuess 存疑（鼓、失真）；方向仍冷。錄音地新墨西哥州僅經搜尋摘要轉述，寫作層寫「據廠方資料」。
 - **17439** 研究限制：WebSearch 3 次用盡（Midwife、port-royal、Main 各一）；Pitchfork／AllMusic／Treble 403，Editions Mego 官網與 Bandcamp 抓不到。
+
+
+## 研究 a 組（條號 17401–17410）
+- **17401** Raum《Event of Your Leaving》：推翻策展層「Raum 唯一專輯」——Wikipedia（Cantu-Ledesma、Grouper 兩頁）列 2022《Daughter》（Yellow Electric）為第二張，本盤是第一張。MB 只有 Glass, house 數位版；實體版未驗證。完全找不到聲音面來源（Bandcamp／AllMusic／RYM／Wikipedia 專頁皆 404／403），status thin，策展層「磁帶嘶聲、風琴」無一可驗，moodGuess 無法驗證，主線自行評估是否汰換。
+- **17402** Jefre Cantu-Ledesma《A Year With 13 Moons》：十二首中十首短於三分鐘、最短 49 秒，黑膠首版限 1200 張；無任何樂評可開，策展層「最陰暗、失真吉他噪聲霧」無從驗證，status thin，moodGuess 存疑（陰、噪聲霧），建議主線另尋樂評或列汰換候選。
+- **17403** Nivhek：聲音證據充足（Quietus 訪談、Bandcamp Daily、Sputnik）。moodGuess 存疑（細節）：Harris 說用 Ableton 且刻意不用磁帶，樂器是 Mellotron／顫音琴／合成器／吉他、非風琴；人聲只在前段，後段消失。無鼓與冷方向成立。Bandcamp Daily 與 Quietus 對樂器略有出入，兩者分別標出處。
+- **17404** Mirrorring《Foreign Body》：聲音證據充足（PopMatters、Wikipedia）；無鼓成立，但是原聲吉他琶音加電子嗡鳴，不是失真吉他 drone；Fortino 人聲較清楚，色溫可能略偏中性（邊距小，未到存疑）。
+- **17405** lovesliescrushing《Bloweyelashwish》：年份與署名有衝突——Wikipedia 稱 Projekt 1994 年首作且與 1992 卡帶互相矛盾，MB 為 1993-07-07 Projekt CD、1992 Lullaby 卡帶；Discogs 卡帶署名 Alex／Isabel，未證實即 Cortez／Arpin-Duimstra。寫作層寫「1992 年卡帶、其後 Projekt 出 CD」，不寫 1993／1994。聲音面只有 Wikipedia 單源（幾乎無鼓、shoegaze／dream pop），status thin。
+- **17406** Clear Horizon：moodGuess 存疑（鼓）——Scaruffi 明寫〈Open Road〉有轟隆切分鼓、〈Death's Dance〉有喀啦打擊、〈Sunrise Drift〉打擊如雨；多數曲目無鼓，躁度可能高於預估。2000–2002 跨大西洋錄成，Dave Pearce 即 Flying Saucer Attack 的那位。
+- **17407** Jessica Bailiff《Jessica Bailiff》：第三張（1998、1999、2002）成立；Scaruffi 未提鼓，與預估相符，但〈Disappear〉有響亮失真，y 可能略高。單一聲音來源。
+- **17408** Jessica Bailiff《Feels Like Home》：moodGuess 存疑——Exclaim! 與 Scaruffi 都描述為安靜簡單的小品民謠（直笛、弦樂、中世紀味、俄語人聲），並非 drone 主導，Discogs 有貝斯、鈴鼓、打擊，色溫可能偏中性甚至暖；建議主線列風險。Exclaim! 有「Spiritual Dream」筆誤與前作製作人說法，只採有 Discogs 旁證處。
+- **17409** Jessica Bailiff《At the Down-Turned Jagged Rim of the Sky》：status partial——評論引述只有「誠實袒露、放慢、威脅感」，沒有鼓與樂器描述，策展層「吉他霧牆與層疊合唱」無從驗證，moodGuess 存疑；錄於 2011 年自家錄音室，Odd Nosdam 潤飾混音，隔六年回歸。
+- **17410** 研究限制：WebSearch 3 次用於 Mirrorring、Bailiff《Feels Like Home》、Nivhek；Pitchfork 被工具封鎖，Brainwashed／AllMusic／RYM／Treble／Kranky Bandcamp 皆 403／404／連線重置，Wikipedia API 被限流。統計：full 5（Nivhek、Mirrorring、Clear Horizon、Bailiff 2002、Bailiff 2006）、partial 1、thin 3（Raum、Cantu-Ledesma、lovesliescrushing）；推翻策展層 1 處（Raum 唯一專輯）。
+
+## 研究 b 組
+- **17411** Valet《Blood Is Clean》：status thin。2006 Yarnlazer CD-R（限量 100）→ 2007 Kranky krank105（多一首 13 分鐘〈North〉）；年份兩寫。**moodGuess 存疑**：聲音只有 Discogs 曲風（Psychedelic Rock／Experimental）與曲長，樂評皆查不到；curatorWhy「Grouper 系」「霧中人聲」無來源，未採。
+- **17412** Valet《Naked Acid》：status thin。**moodGuess 存疑**：「慢鼓偶現、低頻厚」無證據，曲名〈Drum Movie〉暗示節奏成分；同樣只有 Discogs 資料。
+- **17413** Scala《Beauty Nowhere》：full。**推翻策展層**：Scala 成員是 Peacock／Fletcher／Seymour／Van Hoen，Mark Clifford 不在內（curatorWhy 寫錯）。年份：1996 美國黑膠、1997 CD。**moodGuess 存疑**：Discogs 曲風含 House／Techno／Breaks，Exclaim! 明講鼓機，有拍成分比預估重。
+- **17414** Scala《To You in Alpha》：full。同上推翻 Clifford。**moodGuess 存疑（建議汰換）**：曲風是 Synth-pop／Leftfield，無 Shoegaze，AllMusic 偏 trip-hop／noise，整張偏電子流行。
+- **17415** Drowse《Cold Air》：full。鼓僅〈Put Me to Sleep〉一首鼓循環，與預估相符；「磁帶糊吉他 drone」無來源（改為居家錄音＋人聲＋貝斯），z 冷無直接證據。
+- **17416** Drowse《Light Mirror》：full。**moodGuess 存疑**：四首使用 Anacortes 真鼓 session，鼓不稀；「噪聲霧」無樂評證實。
+- **17417** Drowse《Wane Into It》：full。**moodGuess 存疑**：有真鼓／扭曲鼓／弓擦鈸，評論稱「閃爍明亮的質地」＋鐘琴／顫音琴，色溫可能偏亮。
+- **17418** Infinite Body《Carve Out the Face of My God》：full。無鼓與預估相符；「甜而冷」「Kranky 系」無來源；評論稱「噪音低吼」「刺耳噪音場景」，**moodGuess 存疑（x 可能偏躁）**。Pitchfork 句僅經搜尋摘要轉引。
+- **17419** The Sight Below《Glider》：full。Dub Techno 確認有拍；「悶 kick、無攻擊」無樂評證實，**moodGuess 存疑（x）**。
+- **17420** 研究限制：WebSearch 3 次用於 Valet、Drowse、Infinite Body；Pitchfork／AllMusic／Kranky Bandcamp／Wikipedia Valet 條目皆不可得，Valet 兩張因此只能 thin。無列「建議移除」。
+
+## 研究 c 組（條號 17421–17430）
+- **17421** The Sight Below《It All Falls Apart》：full。**moodGuess 存疑（拍子稀）**：BPM 樂評稱〈Through the Gaps in the Land〉有穩定推進的拍、〈Burn Me Out…〉有脈動節奏，Discogs 標 Dub Techno；但樂評也說非舞曲、少高潮。建議保留標邊緣。
+- **17422** SIANspheric《Somnium》：thin。聲音面只有維基曲風標籤與比較對象，無一手樂評；有鼓手掛名，『慢鼓稀』『冷』無來源。
+- **17423** SIANspheric《There's Always Someplace You'd Rather Be》：thin。**moodGuess 存疑**：有 Korg MS-10 合成器、取樣、曲名帶 rave／jungle，可能比預估更有電子律動；建議視為風險張。
+- **17424** Final《3》：full。無鼓成立（復活期總述 beat-less）；Exclaim! 稱多為短曲、可辨旋律、偶有噪音與 glitch，非純 drone。Dalton 名字 Discogs 作 Dermot、Bandcamp／維基作 Diarmuid，採後者。
+- **17425** Final《The First Millionth of a Second》：thin。**moodGuess 存疑**：『吉他迴圈嗡鳴』無來源，Discogs 為 Dark Ambient／Industrial／Minimal；〈Subatomic〉基底為 1985 與 Guy Pearce 現場錄音。
+- **17426** Amp《Astralmoonbeamprojections》：thin。**推翻策展層**：Amp 是倫敦（1991）創立，非 Bristol；Bristol 只是 Matt Elliott／Matt Jones 後期加入。『無鼓』無來源。
+- **17427** Amp《Bliss Out Vol.4: Perception》：thin。**推翻／存疑策展層**：演奏者登記為 Richard Walker 與 Gareth Mitchell（即興，1997-02-03 錄），Karine Charff 僅列致謝；Discogs 風格只有 Electronic／Ambient，『吉他 drone』『Karine 遠聲』無來源，建議視為風險張。
+- **17428** Grouper《Grouper》(2005)：thin。自發行 CD-R、限量，碟上無曲名（曲名由 Volcanic Tongue 郵購提供）；聲音面僅 Discogs 標籤（Drone／Ethereal）與維基總述。
+- **17429** Midwife《Like Author, Like Daughter》：full。**moodGuess 存疑（鼓稀慢）**：無來源說有無鼓；Bandcamp 原始發行日 6/12、MB 6/16，年份 2017 無誤。
+- **17430** 研究限制：WebSearch 3 次用於 Sight Below、Midwife（結果無關）、Final《3》；Pitchfork／AllMusic／Discogs 頁面不可抓，改用 Discogs／MB API、Bandcamp、維基。6 張因缺一手樂評標 thin。
