@@ -45,6 +45,10 @@
 - 14762：McCann moodGuess（慢慢堆的長篇、Moog 與電鋼琴）：樂器與長度（三首皆 12 分鐘以上）支持，但 Purdie、Dupree 與三位鼓手在場，可能有 groove 段，x 存疑；速度無來源，未推翻。
 - 14763：Josef Leimberg《Astral Progressions》moodGuess 存疑（x）：LA Times「trippy、厚殘響」支持，但 WSJ 稱 jazz-funk、重點是技巧性獨奏，依酸冷規則有 funk 推進越線風險；曲長 4–7 分鐘，14 分半收尾；全盤約 65 分鐘。合成器墊與低頻無來源。
 - 14764：Leimberg 封面：本次未查證 2025 重發，MB 只見 2016 數位版與 2016 日本 Rings CD（RINC017）。
+- 14765：Liv.e《Girl in the Half Pearl》moodGuess 存疑（x、y 高）：The Quietus 寫〈Gardetto〉heavy breakbeats、〈Ghost〉hyper drum breaks，AllMusic 提 drum'n'bass 影響，NPR 稱 mixmaster madness、拼貼式；17 首平均約 2 分 24 秒，與「慢而沉的拍子」不符。霧人聲、lo-fi 糊感成立，暖僅間接支持。建議主線重估或汰換。身分 MB 釘住、2023、In Real Life 對得上。status full。
+- 14766：Lewis Taylor《NUMB》年份：MB 與維基預定日 2022-08-26，維基另記 2022-06-15 提前上線；Be With 實體版 2023–2024；簡介寫 2022、避開精確日期。聲音僅有「mid-tempo」「dub 風銅管」「rich, warm, layered」「curiously uplifting」（Mojo 轉述），未見速度、鼓或鍵盤細節；「厚鍵盤霧」無來源，x 存疑輕度、z 暖有間接支持。Mojo、Be With 頁取不到，轉述自經銷商文案。status thin。
+- 14767：Meshell Ndegéocello《Bitter》與預估大致相符（慢、憂；NYT「intertwine like brain waves」、Tribune「one long bittersweet downer」），未推翻；但無 BPM、色溫來源，策展層的 dub 感未找到明寫；NYT、Pitchfork、EW、AllMusic 無法讀取，引文取自維基轉述。status thin。
+- 14768：e 組補件說明：輸出檔原本只有 McCann 一張（派工訊息提到的 Miguel Atwood-Ferguson 與 14763 的 Leimberg 條目不在檔內，疑為別支代理的內容或誤植），本次只 append 三張、未動既有條目，主線請核對 e 組 2 張是否齊。WebSearch 用 3 次（Liv.e 2 次含一次無關結果、Lewis 1 次）；Ndegéocello 未搜尋，只用 WebFetch。
 
 ## 研究 b 組
 - **14731** Matt Martians《The Last Party》：status thin。本張查無任何樂評或訪談描述聲音（Pitchfork／AllMusic／Bandcamp 皆無法連線，Fader 只講客席與單曲）；moodGuess（慢拍、霧、暖）全無來源，建議上線後實聽評分，不合即汰換。
@@ -57,5 +61,5 @@
 
 ## 主線：研究後汰換（不佔條號）
 - 研究層聲音與 moodGuess 不符，直接汰 9：Muldrow《Vweto III》（urgent funk／boom-bap）、Dudley Perkins《Holy Smokes》（danceable P-funk）、Curtis Harding《Face Your Fear》（明快搖滾底）、Jyoti《Mama, You Can Bet!》（bop、frenetic）、Jyoti《Ocotea》（無聲音證據）、SAULT《AIIR》（25 分鐘五首，維基列 EP，不收）、Josef Leimberg《Astral Progressions》（jazz-funk 獨奏推進）、Silk Rhodes（乾、舞曲放克）、Bilal《A Love Surreal》（樂評稱比前作輕、鼓壓低）。
-- 叫原策展代理補候補（要求附慢／霧／暖的聲音證據、≥30 分鐘），收 3：Liv.e《Girl in the Half Pearl》（池中前作 2.4/1.3/1.0）、Lewis Taylor《NUMB》、Meshell Ndegeocello《Bitter》，放研究 e 組補研究。定案 **20 張**。
+- 叫原策展代理補候補（要求附慢／霧／暖的聲音證據、≥30 分鐘），收 3：Liv.e《Girl in the Half Pearl》（池中前作 2.4/1.3/1.0）、Lewis Taylor《NUMB》、Meshell Ndegeocello《Bitter》，放研究 e 組補研究。定案 20 張；補研究後再汰 Liv.e（樂評：heavy breakbeats、drum'n'bass 影響、短曲），**定案 19 張**。
 - 留下但存疑、交評分裁定：Alice Coltrane《Lord of Lords》（有鼓，x 無速度資料）、Miguel Atwood-Ferguson《Les Jardins Mystiques Vol.1》（210 分鐘組曲）、Les McCann《Invitation to Openness》（多鼓手）、Matt Martians《The Last Party》（thin）、Monophonics《Sage Motel》（一首輕快反拍）、Garzón-Montano《Jardín》（x 邊緣）、Salami Rose Joe Louis（短小品）。
