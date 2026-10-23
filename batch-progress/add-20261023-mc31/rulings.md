@@ -13,3 +13,27 @@
 - **MB flag**：Oliver Lake & Julius Hemphill《Buster Bee》MB 只收 2002 CD，原盤 1978 Sackville LP，卡單取 1978；Marion Brown《Porto Novo》MB 1969（Polydor UK），荷蘭 Polydor 1968 首發，卡單取 1968；John Carter & Bobby Bradford《Seeking》MB 只收 1991 hat ART 重發，原盤 1969 Revelation，卡單取 1969／Revelation。研究層核對。
 - **現場盤**：Braxton《The Montreux/Berlin Concerts》、《Quartet (London) 1985》、WSQ《Point of No Return》MB 標 Live；Air《Live Air》、Revolutionary Ensemble《Vietnam》、Lyons & Murray《Jump Up》為現場錄音。皆為藝人正規全長發行，照自由爵士圈慣例收（現場即正規作品），研究層確認非 bootleg。
 - 研究層每支 WebSearch ≤3；facts 必含 2–3 條聲音事實（編制、有無鼓、速度、留白、旋律／無調、音色）；與 moodGuess 不符的標「moodGuess 存疑」——**特別是大片留白／冥想慢段（判靜）、厚群奏嘶吼（判重）、標準曲／藍調主題明確（判暖）**。
+
+## 研究 d 組
+- **13431**（Revolutionary Ensemble《The Psyche》）：MB／Discogs 一致（RE 3117，1975）；維基稱現場盤但無錄音地點日期，facts 不寫地點。曲名 Collegno（Discogs／維基）與 Col Legno（dramonline）並存，採 Collegno 並註 col legno 技法。moodGuess 輕微存疑：〈Invasion〉26 分鐘前段為長音疊細碎聲響的低密度鋪墊，局部恐判靜。
+- **13432**（Revolutionary Ensemble《Revolutionary Ensemble》）：1977-08-18 奧地利 Moosham Castle 現場，Enja 3003，一致。moodGuess 存疑：AllMusic 稱「較溫和的表親」，編制加長笛、拇指琴、巴拉風、鋼琴，x 與 z 有回落風險。
+- **13433**（WSQ《Point of No Return》）：Moers 1977-06 現場，Moers Music 01034，一致；四支薩克斯風無節奏組屬實。〈Sacred／Scared Sheetless〉兩種拼寫並存。moodGuess 輕微存疑：Murray 長曲加逐漸刺耳的獨奏，有厚群奏嘶吼（判重）風險。樂團名稱來歷、1976 閣樓成軍說未獲來源，不寫。
+- **13434**（Sam Rivers《Hues》）：年份兩說（Discogs 美版與 MB 1975；維基與 8-track 1974），卡單維持 1975。官方現場剪輯盤（四場演出十段，1 到 6 分鐘），非選輯。聲音與預估相符，未列存疑。
+- **13435**（Sam Rivers《Waves》）：錄音 1978-08-08 Big Apple Studio，發行 1979-07（Discogs），維基寫 1978 不採。moodGuess 中度存疑：編制含低音號與上低音號、貝斯兼大提琴，樂評詞為 lucid／approachable／seductive／open-hearted，y 恐不輕、z 恐回暖；卡單「乾而尖」與來源不符。
+- **13436**（Billy Bang Quintet《Rainbow Gladiator》）：1981-06-10、11 米蘭，Soul Note SN 1016，一致；鼓手 Dennis Charles（Discogs 拼 Denis）。moodGuess 中度存疑：樂評詞 bright／warm／good-humored，曲有旋律與舞曲性、有鋼琴，z 恐回暖。刪除未經來源的 Tyler 背景，Bang 小提琴為童年學校分配（非戰後才學）。
+- **13437**（String Trio of New York《First String》）：1979-06 米蘭，BSR 0031，一致；三首各一位團員作曲，無鼓。moodGuess 中度存疑：室內樂式、作曲與即興融合，x 恐貼邊或不足；與主線汰 Area Code 212 同理由，建議備位。
+- **13438**（Cyrille／Lee／Lyons《Nuba》）：1979-06 米蘭 Fontana Studio 7，BSR 0030，一致；無貝斯、無鋼琴。moodGuess 偏重存疑：Lee 人聲詩朗誦主導、Penguin Guide 稱 Lyons「冷靜而堅忍」、「幾乎像迷你歌劇」，x 貼邊且 z 恐回暖，建議優先汰換。
+- **13439**（Jimmy Lyons Quintet《Wee Sneezawee》）：錄音 1983-09 Vanguard Studios，發行 1984（MB／Discogs），維基寫 1983 不採。moodGuess 中度存疑：Penguin Guide 稱「最傳統」、Lyons 旋律感強、巴松管補低頻共鳴，z 恐不夠冷、y 偏重。
+- **13440**（保留，未用）：本組未推翻策展層的年份、廠牌、盤名；MB flag 三張（Buster Bee、Porto Novo、Seeking）不在 d 組。
+
+## 研究 b 組
+- **13411**（Roscoe Mitchell Sextet《Sound》）：身分吻合（Delmark 1966-08 芝加哥 Sound Studios）。編制表只列 Fielder percussion，無 drum kit。**moodGuess 存疑**：評論稱「寬闊的空間」「細小姿態與突然的空白」，整張大片留白，x 3.3 貼邊，恐判靜。
+- **13412**（Roscoe Mitchell Art Ensemble《Congliptious》）：身分吻合（Nessa 1968）。**推翻策展層編制**：實為 Mitchell／Bowie／Favors 三人加鼓手 Robert Crowder 僅在末曲出現；A 面三首為無伴奏獨奏（提琴、薩克斯風、小號）。**moodGuess 存疑**：A 面 21 分鐘獨奏留白多恐判靜，末曲 19 分半全員加鼓才是躁段。錄音日期維基自相矛盾，facts 只寫 1968 年 2–3 月。
+- **13413**（Mitchell／Braxton《Duets》）：盤名為 2017 CD 重發標題，原盤 Sackville 3016（1978 加拿大）；MB flag 不適用。無節奏組、純簧管二重奏。錄音年份 Discogs 1977、維基 1976／1977 不一致，不寫確切年。**moodGuess 存疑（低）**：有 1 分多鐘碎片與稀疏抽象段，並有低音單簧管墊底的暗色段，x 3.4 恐偏高。
+- **13414**（Roscoe Mitchell and The Sound Ensemble《3 x 4 Eye》）：身分吻合（Black Saint BSR 0050，1981-02 米蘭）。有打擊與康加、無 drum kit。**moodGuess 存疑**：AllMusic Wynn 稱「非 Mitchell 最激烈、最具對抗性」，末曲為民謠變奏，x 3.5 偏高、z 有拉暖風險。
+- **13415**（Air《Air Raid》）：身分吻合；廠牌名義為 Why Not（Trio Records 為日本發行方，Discogs 並列），寫作層寫 Why Not。製作人維基 Bob Cummins、Discogs Masahiko Yuh 衝突，facts 採 Discogs。Air 成軍年份維基頁 1971 芝加哥、Hopkins 頁 1975 紐約，不一致，勿寫。『快鼓』無來源證實，僅確定有鼓，moodGuess 無反證。
+- **13416**（Air《Open Air Suit》）：身分吻合（Arista Novus AN 3002，標題為 Suit 非 Suite）。評語僅「複雜卻終究合乎邏輯」，無速度／乾濕描述，x 3.4 依據僅編制推論。Card 命名由來維基未解釋，勿編。
+- **13417**（Air《80° Below ’82》）：身分吻合（Antilles AN-1007）。**moodGuess 存疑（高）**：Yanow 稱偏藍調、「比 Air 以往多數錄音更容易親近」，開場為 Jelly Roll Morton 〈Chicago Breakdown〉主題明確；編制只有中音薩克斯風，無長笛。z -0.9 風險最大，建議優先汰換審視。
+- **13418**（Air《Live Air》）：身分吻合；Discogs 確認 A 面 1976-07-01 Studio Rivbea、B 面 1977-10-28 密西根大學兩場現場，官方正規發行非 bootleg。策展層『拉弓』『快速』無來源。風險低。
+- **13419**（Muhal Richard Abrams《1-OQA+19》）：身分吻合（Black Saint，錄於 1977-11／12 紐約；維基導言 1977、資料欄與 MB 1978，採 1978）。有鼓、快獨奏、和聲密集。**moodGuess 存疑（中）**：鋼琴與合成器、和聲密集恐把 y 推到 0 以上；〈Balladi〉〈Charlie in the Parker〉標題暗示慢段與 bebop 語彙（僅標題推論）。
+- **13420**（保留，未用）：本組未推翻年份、廠牌、盤名；MB flag 三張不在 b 組。WebSearch 用 3 次（Congliptious、Duets、80° Below ’82）。Discogs／MB 站頁面 403 或驗證牆，改用 Discogs API；引文評分多來自維基頁轉述，AllMusic 全文未開。
