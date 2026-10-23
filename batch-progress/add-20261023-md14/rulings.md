@@ -37,3 +37,9 @@
 - 17764　《ARCHORA / AIŌN》：Wikipedia 稱〈ARCHORA〉Proms 首演 2022-08-11（BBC Philharmonic），早於專輯 2022-05 發行的 Iceland SO 錄音，時序矛盾，寫作層勿寫『世界首演』。〈AIŌN〉2019 年 Gothenburg SO 世界首演。
 - 17765　古典卡 yearVerified 已填：Sólaris 2011、Aerial 2014（DG 原版六首，2022 Sono Luminus 再版多一首〈Aura〉）、In the Light of Air 2015、ARCHORA 2022、Rhízōma 2011（2020 Sono Luminus 再版）、Dumitrescu 1991。
 - 17766　WebSearch 本支用了 4 次（超出上限 1 次：Last and First Men、Sólaris、Aerial、Dumitrescu 各 1）；Discogs 直連 403，改走 api.discogs.com，維基 action API 被限流，改走 REST 與 WebFetch。
+
+## 研究 d 組
+- 17751：d 組 9 張（Frost×2、Hildur、Kurzel×2、Hecker、Young、Bzowski、Williams）研究稿 `desc-tools/batches/research/add-20261023-md14-d.json`。WebSearch 用 3 次（Possessor、Saint Maud、Infinity Pool 各一），其餘走 MB API、維基與 WebFetch 樂評頁；filmtracks 503、Mute／Vehlinggo Saint Maud 內文取不到。
+- 17752：聲音事實只有 Infinity Pool、Saint Maud、Possessor 三張有樂評支持（status full）；其餘六張（Dark C2、Fortitude、Joker 2、Snowtown、Macbeth、Sinister）只有 MB 曲目表與維基背景，聲音面標 thin，notes 已寫「聲音未核實」。
+- 17753：moodGuess 存疑——Infinity Pool（KFJC 樂評：A 面慢穩拍子、B 面部落感驅動節奏，可能往躁拉）、Fortitude（40 首約 70 分鐘，含〈…Also Drums and Dancing〉〈Tainted Love〉，疑有鼓／節奏段）、Joker 2（歌舞片，Score 盤 19 首約 34 分鐘，乾淨弦樂佔比未證）、Macbeth（戰場悶鼓未證）、Sinister（〈My Sick Piano〉與 Remix，鋼琴／節奏未證）、Dark C2（維基曲風含 orchestral）。主線需聽感複核。
+- 17754：未推翻策展層年份、廠牌、盤名；補 Infinity Pool 廠牌 Milan Records（卡單空白）。Fortitude 同名 2015 Broadcast RG 已核，本卡取 2017 Album 無誤。
