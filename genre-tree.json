@@ -1137,8 +1137,45 @@
   {
    "id": "hiphop",
    "zh": "嘻哈 R&B",
-   "count": 1536,
+   "count": 1559,
    "children": [
+    {
+     "id": "underground",
+     "zh": "地下與抽象",
+     "count": 382,
+     "children": [
+      {
+       "id": "abstract",
+       "zh": "抽象與實驗",
+       "count": 143
+      },
+      {
+       "id": "instrumental",
+       "zh": "Instrumental / Beats",
+       "count": 126
+      },
+      {
+       "id": "east-coast",
+       "zh": "東岸地下",
+       "count": 93
+      },
+      {
+       "id": "jazz-rap",
+       "zh": "Jazz Rap / Conscious",
+       "count": 84
+      },
+      {
+       "id": "cloud",
+       "zh": "Cloud / Emo Rap",
+       "count": 26
+      },
+      {
+       "id": "industrial",
+       "zh": "Industrial / Noise Rap",
+       "count": 25
+      }
+     ]
+    },
     {
      "id": "rnb",
      "zh": "當代 R&B",
@@ -1195,43 +1232,6 @@
        "id": "jazz-rap",
        "zh": "Jazz Rap / Conscious",
        "count": 77
-      }
-     ]
-    },
-    {
-     "id": "underground",
-     "zh": "地下與抽象",
-     "count": 359,
-     "children": [
-      {
-       "id": "abstract",
-       "zh": "抽象與實驗",
-       "count": 143
-      },
-      {
-       "id": "instrumental",
-       "zh": "Instrumental / Beats",
-       "count": 103
-      },
-      {
-       "id": "east-coast",
-       "zh": "東岸地下",
-       "count": 93
-      },
-      {
-       "id": "jazz-rap",
-       "zh": "Jazz Rap / Conscious",
-       "count": 84
-      },
-      {
-       "id": "cloud",
-       "zh": "Cloud / Emo Rap",
-       "count": 26
-      },
-      {
-       "id": "industrial",
-       "zh": "Industrial / Noise Rap",
-       "count": 25
       }
      ]
     },
@@ -1898,22 +1898,22 @@
   {
    "id": "world",
    "zh": "世界",
-   "count": 1091,
+   "count": 1103,
    "children": [
     {
      "id": "reggae",
      "zh": "Reggae / Dub",
-     "count": 436,
+     "count": 448,
      "children": [
       {
        "id": "roots",
        "zh": "Roots Reggae",
-       "count": 210
+       "count": 221
       },
       {
        "id": "dub",
        "zh": "Dub",
-       "count": 209
+       "count": 213
       },
       {
        "id": "lovers",
@@ -1923,12 +1923,12 @@
       {
        "id": "ska",
        "zh": "Ska / Rocksteady",
-       "count": 76
+       "count": 79
       },
       {
        "id": "dancehall",
        "zh": "Dancehall / Ragga",
-       "count": 70
+       "count": 73
       }
      ]
     },

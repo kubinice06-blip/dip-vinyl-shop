@@ -1,0 +1,904 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-ml48",
+ "batchNote": "薄細項策展線（add-20261023-ml48）",
+ "createdAt": "2026-10-23T17:54:29Z",
+ "albums": [
+  {
+   "artist": "Jezzreel",
+   "album": "Great Jah Jah",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "8b9fb1fb-9a5c-4eeb-a055-b76207961f72",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Wackies／Bullwackie 紐約慢盤：Bullwackie 在布朗克斯自家錄音室的 roots 人聲專輯，Wackie's 樂團的厚低音與濕殘響把慢拍包起來，溫而霧，落恍惚。｜⚠ Discogs 風格含 Dub，若人聲段少於預期可能偏冷；MB 與 Discogs 年份同為 1980。｜MB release-group 8b9fb1fb-9a5c-4eeb-a055-b76207961f72：title「Great Jah Jah」、Album、first-release-date 1980、artist-credit「Jezzreel」。證據：https://musicbrainz.org/release-group/8b9fb1fb-9a5c-4eeb-a055-b76207961f72 https://coverartarchive.org/release-group/8b9fb1fb-9a5c-4eeb-a055-b76207961f72/front https://www.discogs.com/master/293326",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8b9fb1fb-9a5c-4eeb-a055-b76207961f72/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 710,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 710）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 710），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "鼓間貼著鋁箔，低音不做等化就送進延遲。團名借自聖經城市 Jezreel，Jezzreel 是一組 roots reggae 二重唱，主唱 Christopher Harvey 與 Clive Davis。這套錄法出自 Lloyd \"Bullwackie\" Barnes：他 1967 年離開牙買加到紐約，在布朗克斯蓋起八軌錄音室，回音與殘響拉開空間，全程類比。1980 年 Wackie's 發行了它，是兩人在這家廠牌的首張。六首都很長，落在 5 分半到 6 分 45 秒之間。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2596755",
+     "https://www.discogs.com/master/293326",
+     "https://www.honestjons.com/shop/label/Wackies?view=list",
+     "https://www.roots-archives.com/label/463",
+     "https://jahtari.org/archive/magazine/reggae-history/wackies.htm",
+     "https://musicbrainz.org/release-group/8b9fb1fb-9a5c-4eeb-a055-b76207961f72"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/96/76/4a/96764a92-a852-2f3d-47f7-4ffc16c9663c/mzaf_13684025503257946562.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "appleCollectionId": "162542630",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 162542630「Jezzreel《Great Jah Jah》」：Basic Channel 2006 Wackie's 重發，6 首與 Discogs 原盤曲目逐一對上（MB 曲名拼寫差異），取第 3 軌〈Great Jah Jah〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jezzreel",
+   "album": "Rockers Showcase Volume 2",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "8a3c5b29-a1be-48ee-a91f-c1fed099afee",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Wackies／Bullwackie 紐約慢盤：Wackie's 的 showcase 系列，人聲曲與對應 dub 版交替，慢板與濕混音包覆，同廠牌 Wayne Jarrett／Junior Delahaye 那型盤池中已落恍惚。｜⚠ Discogs 無 master，僅 release；dub 版比重待研究層確認。｜MB release-group 8a3c5b29-a1be-48ee-a91f-c1fed099afee：title「Rockers Showcase Volume 2」、Album、first-release-date 1982、artist-credit「Jezzreel」。證據：https://musicbrainz.org/release-group/8a3c5b29-a1be-48ee-a91f-c1fed099afee https://coverartarchive.org/release-group/8a3c5b29-a1be-48ee-a91f-c1fed099afee/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8a3c5b29-a1be-48ee-a91f-c1fed099afee/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 4,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 4）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 4），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "封套寫著 Volume 2，續的是前一張標籤上的編號。1982 年由 Wackie's 推出，唱的仍是 roots 二重唱 Jezzreel。前一張的標籤印著 Volume One；這回 Bullwackie 掛製作，Junior Delahaye 一邊錄音一邊打鼓。鍵盤手有三位，另有長笛。最長的〈I Love You Jah〉唱到 7 分 03 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4506953",
+     "https://www.roots-archives.com/label/463",
+     "https://jahtari.org/archive/magazine/reggae-history/wackies.htm",
+     "https://en.wikipedia.org/wiki/Wackie%27s",
+     "https://musicbrainz.org/release-group/8a3c5b29-a1be-48ee-a91f-c1fed099afee"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Love Joys",
+   "album": "Lovers Rock Reggae Style",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "cec6d8c0-aeaa-3685-9561-4516a862cb19",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Wackies／Bullwackie 紐約慢盤：紐約 Wackie's 的女聲三重唱慢板 lovers rock，同組池中《Reggae Vibes》y 1.4 落恍惚；溫柔人聲壓在厚低音與殘響上。｜⚠ MB rg 首發日 2001（CD 重發）；原盤 1983 取 Discogs master 229319。｜MB release-group cec6d8c0-aeaa-3685-9561-4516a862cb19：title「Lovers Rock Reggae Style」、Album、first-release-date 2001-09-13、artist-credit「Love Joys」。證據：https://musicbrainz.org/release-group/cec6d8c0-aeaa-3685-9561-4516a862cb19 https://coverartarchive.org/release-group/cec6d8c0-aeaa-3685-9561-4516a862cb19/front https://www.discogs.com/master/229319",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cec6d8c0-aeaa-3685-9561-4516a862cb19/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1966,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1966）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1966），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "封套與標籤印的曲序，都和盤上的不一樣。Lovers rock 二重唱 Love Joys 在 1983 年交出它，由 Wackie's 發行、Bullwackie 製作，伴奏掛名 Wackies Rhythm Force。盤上真正的 A 面，先後是〈One Draw〉〈Long Lost Lover〉〈All I Can Say〉。標題曲另外留有一個加長版。多年後，Rhythm & Sound 著手再版 Wackies 的舊盤，整個計畫便從它起頭。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2297015",
+     "https://www.honestjons.com/shop/label/Wackies?view=list",
+     "https://www.turntablelab.com/products/love-joys-lovers-rock-reggae-style-import-vinyl-lp",
+     "https://www.forcedexposure.com/Artists/LOVE.JOYS.html",
+     "https://www.discogs.com/master/229319",
+     "https://jahtari.org/archive/magazine/reggae-history/wackies.htm",
+     "https://musicbrainz.org/release-group/cec6d8c0-aeaa-3685-9561-4516a862cb19"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/00/39/88/003988b5-1b7b-9bc6-ed3d-836eb9e3ec0a/mzaf_547016308586395861.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "appleCollectionId": "81999036",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 81999036「Love Joys《Lovers Rock Raggae Style》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈One Draw〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Audley Rollens",
+   "album": "Showcase Prevail",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "478db991-eea8-402b-bf0a-562ddab816e7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Wackies／Bullwackie 紐約慢盤：Wackie's 旗下歌手 Audley Rollens 的 showcase 盤，人聲與 dub 版交替，樂團是同一批 Wackie's 類比班底，慢而濕。｜⚠ 池中無此人，聲音全憑廠牌班底推估；Discogs 無 master。｜MB release-group 478db991-eea8-402b-bf0a-562ddab816e7：title「Showcase Prevail」、Album、first-release-date 1982、artist-credit「Audley Rollens」。證據：https://musicbrainz.org/release-group/478db991-eea8-402b-bf0a-562ddab816e7 https://coverartarchive.org/release-group/478db991-eea8-402b-bf0a-562ddab816e7/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/478db991-eea8-402b-bf0a-562ddab816e7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 71,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 71）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 71），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Rockstones 散團後，他獨自到紐約補錄。小時候和兄弟在金斯敦表演腳踏車特技的 Audley Rollens，後來成為一位牙買加 reggae 歌手。七〇年代初他移居美國費城，組起樂團 Rockstones，也創辦自家廠牌 Philadelphia Reggae Sounds。樂團留下〈Rasta Banner〉與〈Be Wise〉，其餘曲子除兩首外都進 Wackie's 錄成。1982 年自家廠牌把它發行出來，八首全是人聲歌，製作與詞曲都出自他一人。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3827686-Audley-Rollens-Showcase-Prevail",
+     "https://musicbrainz.org/release-group/478db991-eea8-402b-bf0a-562ddab816e7",
+     "https://www.reggae-vibes.com/articles/2019/11/repatriation-is-a-must-audley-rollen-interview/",
+     "https://en.wikipedia.org/wiki/Wackie%27s",
+     "https://www.thetonearm.com/lloyd-barnes-wackies-studio-and-the-legacy-of-bronx-reggae/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "I Kong",
+   "album": "The Way It Is",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "73efe089-9c32-424a-9a7a-618ee65198d7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Lee Perry／Black Ark 周邊：I Kong 唯一的 1979 年專輯，Discogs 製作名單含 Lee Perry、Geoffrey Chung 與 Sylvan Morris 的錄混，柔嗓配濕潤的 roots 節奏。｜⚠ Discogs 兩個 master（515784／317637）同名同年；CAA 無圖。｜MB release-group 73efe089-9c32-424a-9a7a-618ee65198d7：title「The Way It Is」、Album、first-release-date 1979、artist-credit「I Kong」。證據：https://musicbrainz.org/release-group/73efe089-9c32-424a-9a7a-618ee65198d7 https://www.discogs.com/master/515784 https://www.discogs.com/master/317637",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "1211110",
+    "url": "https://i.discogs.com/QLAKhLz6NZd6YbJFOqKK1l46CxlbTeCMdGThRzhi38k/rs:fit/g:sm/q:90/h:533/w:533/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMTEx/MTAtMTQwNjAyNTY1/My0yMzIwLmpwZWc.jpeg",
+    "note": "CAA release-group 無圖（404）；Apple 版是 VP 重發加印「Reggae Rewind 1978」章，不用；取 Discogs 1211110（Top Ranking TC-082、1979、master 317637 主版）原封，主線 2026-10-23 目視：I Kong 長髮半身照、彩虹與黃字 The Way It Is，與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1972,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1972）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1972），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "十個吹管樂手，旁人都說他在浪費錢。製作人 Leslie Kong 的姪子 I Kong，本名 Errol Kong，早年參與創立 rocksteady 團體 The Jamaicans。Top Ranking 在 1979 年發行這張，錄音分在 Harry J 與 Black Ark 兩處，Lee Perry 列在工程名單上。他從小迷 Bobby Bland 唱片裡的銅管，要的是層疊的聲音，花的是執行製作 Mikey Lee 的錢。標題曲長達 7 分 51 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1211110",
+     "https://unitedreggae.com/articles/n2133/091216/interview-i-kong-in-kingston-part-1",
+     "https://www.discogs.com/artist/500055",
+     "https://www.discogs.com/master/515784",
+     "https://jamaicaobserver.com/news/i-kongs-second-coming",
+     "https://musicbrainz.org/release-group/73efe089-9c32-424a-9a7a-618ee65198d7"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/35/88/92/3588928d-726f-79d2-40bd-dab1adb55973/mzaf_14996868307156793768.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "appleCollectionId": "309141876",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 309141876「I Kong《The Way It Is》」：曲目 8/8 對上 MB 原盤（Apple 共 15 軌），取第 1 軌〈Ghetto Cry〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Noel Phillips",
+   "album": "Youth Man Vibrations",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0b240852-1641-4fa6-b042-4beebeea870b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Jammy／Niney／Thompson／Radics 二線濕混音人聲盤：Prince Jammy 1981 年製作混音的人聲專輯，同年同人 Barry Brown、Michael Prophet 的 Jammy 盤池中 y 1.1–1.4 全落恍惚。｜⚠ 池中無此人。｜MB release-group 0b240852-1641-4fa6-b042-4beebeea870b：title「Youth Man Vibrations」、Album、first-release-date 1981、artist-credit「Noel Phillips」。證據：https://musicbrainz.org/release-group/0b240852-1641-4fa6-b042-4beebeea870b https://coverartarchive.org/release-group/0b240852-1641-4fa6-b042-4beebeea870b/front https://www.discogs.com/master/611166",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0b240852-1641-4fa6-b042-4beebeea870b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 544,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 544）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 544），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "掛著本名的少年作，他當時 17 歲。Echo Minott 是這位歌手後來的藝名，Noel Phillips 生於 1963 年，金斯敦長大。Prince Jammy 一人包辦製作、編曲與混音，1981 年掛在 Jammy's Records 名下出版，十首清一色人聲。鼓由 Sly Dunbar 坐鎮，貝斯是 Robbie Shakespeare，另有兩位管風琴手。要到 1985 年，〈Lazy Body〉才讓他成為國際知名的 dancehall 歌手。",
+    "sourceUrls": [
+     "https://nts.live/artists/25131-noel-phillips",
+     "https://www.discogs.com/release/1723568",
+     "https://www.discogs.com/master/611166",
+     "https://en.wikipedia.org/wiki/King_Jammy",
+     "https://apocalypsevinyl.com/products/youth-man-vibrations-lp",
+     "https://www.vpreggae.com/youthman-vibrations-noel-phillips-lp/",
+     "https://musicbrainz.org/release-group/0b240852-1641-4fa6-b042-4beebeea870b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ad/e5/99/ade599a6-22e6-0e47-65d0-e9249a36301b/mzaf_14727805682765929648.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "appleCollectionId": "677125458",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 677125458「Noel Phillips《Youth Man Vibrations》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Youth Man〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Meditations",
+   "album": "No More Friend",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "256607aa-ced0-45d6-bc88-78692a7b367c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Jammy／Niney／Thompson／Radics 二線濕混音人聲盤：Meditations 的 Linval Thompson 製作盤，Roots Radics 慢拍配和聲；同團《I Love Jah》池中 y 0.9。｜⚠ MB 無首發日（取 Discogs 1983）；同團其他盤 y 0.4–0.9，質地貼邊。｜MB release-group 256607aa-ced0-45d6-bc88-78692a7b367c：title「No More Friend」、Album、first-release-date （空）、artist-credit「The Meditations」。證據：https://musicbrainz.org/release-group/256607aa-ced0-45d6-bc88-78692a7b367c https://coverartarchive.org/release-group/256607aa-ced0-45d6-bc88-78692a7b367c/front https://www.discogs.com/master/195327",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/256607aa-ced0-45d6-bc88-78692a7b367c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 6163,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 6163）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "團員自稱舞曲專輯，節奏卻與迪斯可無關。Ansel Cridland、Danny Clarke 與 Winston Watson 三人組成 The Meditations，是一組唱和聲的牙買加 roots 團體。1983 年 Linval Thompson 替他們製作本作，帶進 Channel One 錄音，伴奏的是 1978 年成軍的 Roots Radics，鼓手 Style Scott、貝斯手 Flabba Holt 都是創團成員。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Meditations",
+     "https://www.discogs.com/master/195327",
+     "https://unitedreggae.com/discographies/1983/meditations-the-no-more-friend;1353/",
+     "https://en.wikipedia.org/wiki/Roots_Radics",
+     "https://valsec.barnesandnoble.com/w/no-more-friend-the-meditations/15004883",
+     "https://www.discogs.com/release/3980398",
+     "https://musicbrainz.org/release-group/256607aa-ced0-45d6-bc88-78692a7b367c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c2/19/a0/c219a0b8-a1bb-d450-163e-ddbe666985ff/mzaf_15460610599275000542.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "appleCollectionId": "383432208",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 383432208「The Meditations《No More Friend》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈No More Friend〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Barry Brown",
+   "album": "Barry",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c8abdbe6-43f4-46a1-b389-14b409ab63ee",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Jammy／Niney／Thompson／Radics 二線濕混音人聲盤：Barry Brown 1983 年 Niney 製作、Scientist 混音的專輯，同人池中三張 y 1.1–1.4 全落恍惚。｜策展無疑點｜MB release-group c8abdbe6-43f4-46a1-b389-14b409ab63ee：title「Barry」、Album、first-release-date 1983、artist-credit「Barry Brown」。證據：https://musicbrainz.org/release-group/c8abdbe6-43f4-46a1-b389-14b409ab63ee https://coverartarchive.org/release-group/c8abdbe6-43f4-46a1-b389-14b409ab63ee/front https://www.discogs.com/master/636090",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c8abdbe6-43f4-46a1-b389-14b409ab63ee/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 116,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 116）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 116），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "唱在 Joe Gibbs，混在 Channel One。Barry Brown 有一副高音男高音，歌詞多寫牙買加貧民區，也寫音響舞會。錄人聲的工程師是 Errol Thompson；帶子進了 Channel One，混音台前換成 Scientist。Scientist 在 1970 年代末離開 King Tubby 的團隊，成了 Channel One 的首席工程師。製作人是 Niney The Observer，1983 年由英國的 Vista Sounds 推出。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Barry_Brown_(singer)",
+     "https://www.discogs.com/master/636090",
+     "https://www.discogs.com/release/1616219",
+     "https://www.vinovelle.com/product/barry-brown-barry/",
+     "https://waitingroomrecords.com/products/barry-brown-stand-firm",
+     "https://en.wikipedia.org/wiki/Scientist_(musician)",
+     "https://musicbrainz.org/release-group/c8abdbe6-43f4-46a1-b389-14b409ab63ee"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b0/fb/f0/b0fbf07a-74de-e610-1302-57684b80fba3/mzaf_9402283435157077579.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "appleCollectionId": "1440161625",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1440161625「Barry Brown《Barry》」：曲目 10/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Are You Ready〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Junior Delgado",
+   "album": "More She Love It - Showcase",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "991720e3-95d7-4904-ab1d-77f8c1307f24",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Jammy／Niney／Thompson／Radics 二線濕混音人聲盤：Junior Delgado 的 1981 showcase，Crucial Bunny 與 Maxie McKenzie 工程，人聲曲配 dub 版。｜⚠ Delgado 嗓音偏悲，z 可能低；Discogs 無 master。｜MB release-group 991720e3-95d7-4904-ab1d-77f8c1307f24：title「More She Love It - Showcase」、Album、first-release-date 1981、artist-credit「Junior Delgado」。證據：https://musicbrainz.org/release-group/991720e3-95d7-4904-ab1d-77f8c1307f24 https://coverartarchive.org/release-group/991720e3-95d7-4904-ab1d-77f8c1307f24/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/991720e3-95d7-4904-ab1d-77f8c1307f24/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 5,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 5）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 5），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Dennis Brown 坐進樂手欄，彈的是節奏吉他。Junior Delgado 本名 Oscar Delgado Hibbert，是牙買加的 reggae 歌手，1975 年在 Dennis Brown 的 DEB 廠牌唱出〈Tition〉。1981 年他進 Channel One 錄下六首歌，由 Yvonne's Special 發行。打鼓的是 Sly Dunbar 與 Santa Davis；Dennis Brown 也唱和聲，Augustus Pablo 彈鋼琴。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2711884",
+     "https://www.discogs.com/release/4564110",
+     "https://en.wikipedia.org/wiki/Channel_One_Studios",
+     "https://en.wikipedia.org/wiki/Junior_Delgado",
+     "https://www.discogs.com/release/9711652",
+     "https://musicbrainz.org/release-group/991720e3-95d7-4904-ab1d-77f8c1307f24"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/27/cb/f5/27cbf543-09ab-df0d-92a3-f84b043194ed/mzaf_8855027888065465341.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "appleCollectionId": "1812617794",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1812617794「Junior Delgado《More She Love It》」：Apple《More She Love It》℗1981，6 首曲名與 MB 原盤逐字相同，取第 1 軌〈More She Love It〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Devon Russell",
+   "album": "Prison Life",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "051b64d5-3beb-456e-8967-fc0b5081879a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Jammy／Niney／Thompson／Radics 二線濕混音人聲盤：Tamoki Wambesi 廠牌 1983 年盤，Roy Cousins 製作，Roots Radics 式慢拍。｜⚠ Discogs 工程名單含 Jeff Chandler；聲音未查證。｜MB release-group 051b64d5-3beb-456e-8967-fc0b5081879a：title「Prison Life」、Album、first-release-date 1983、artist-credit「Devon Russell」。證據：https://musicbrainz.org/release-group/051b64d5-3beb-456e-8967-fc0b5081879a https://coverartarchive.org/release-group/051b64d5-3beb-456e-8967-fc0b5081879a/front https://www.discogs.com/master/846017",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/051b64d5-3beb-456e-8967-fc0b5081879a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 125,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 125）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 125），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "口琴、長笛、合成器，全擠進一張 roots 盤。Tartans 是 Devon Russell 在 1960 年代待過的團，他唱 roots reggae。本作是他第二張個人專輯，由 Roy Cousins 製作，在 Aquarius 錄音。節奏組出自 Roots Radics 的創團班底：Flabba Holt 彈貝斯，Style Scott 打鼓；合成器交給 Michael Martin。發行年份是 1983 年，同年他隨 The Congos 赴歐巡演。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2391994",
+     "https://en.wikipedia.org/wiki/Roots_Radics",
+     "https://en.wikipedia.org/wiki/Roy_Cousins",
+     "https://en.wikipedia.org/wiki/Devon_Russell",
+     "https://musicbrainz.org/release-group/051b64d5-3beb-456e-8967-fc0b5081879a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview19/v4/02/a0/0a/02a00a17-4b0e-8091-5f0f-8d1cdedb1bc9/mzaf_6846320584501738218.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "appleCollectionId": "260744741",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 260744741「Devon Russell《Prison Life》」：曲目 10/10 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Thank You Jah〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Winston Jarrett",
+   "album": "Wise Man",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "87cba03a-3b6b-353d-8881-61d89e6d8c22",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Jammy／Niney／Thompson／Radics 二線濕混音人聲盤：Winston Jarrett 1979 年 Roy Cousins 製作、Scientist 混音的專輯，Discogs 風格 Roots Reggae／Rocksteady。｜⚠ Scientist 混音在池中判冷（器樂 dub），但本盤是人聲專輯。｜MB release-group 87cba03a-3b6b-353d-8881-61d89e6d8c22：title「Wise Man」、Album、first-release-date 1979、artist-credit「Winston Jarrett」。證據：https://musicbrainz.org/release-group/87cba03a-3b6b-353d-8881-61d89e6d8c22 https://coverartarchive.org/release-group/87cba03a-3b6b-353d-8881-61d89e6d8c22/front https://www.discogs.com/master/377684",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/87cba03a-3b6b-353d-8881-61d89e6d8c22/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 261,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 261）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 261），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "同樣八首歌，五年後換了盤名再上架。聖安娜教區出身的 Winston Jarrett 生於 1940 年，1960 年代初已在 Alton Ellis 的 The Flames 唱歌。《Wise Man》由 Roy Cousins 製作，1979 年經 Tamoki Wambesi 推出，目錄號 TWLP 1001 是 LP 系列第一號。錄音在 Channel One，混音交給 Scientist。1984 年，同一批歌改名《Rocking Vibration》重新發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4655625",
+     "https://www.discogs.com/release/1315669",
+     "https://www.discogs.com/release/1662923",
+     "https://www.reggae-vibes.com/reviews/2019/07/winston-flamesjarrett-words-of-wisdom/",
+     "https://en.wikipedia.org/wiki/Winston_Jarrett",
+     "https://en.wikipedia.org/wiki/Scientist_(musician)",
+     "https://en.wikipedia.org/wiki/Roy_Cousins",
+     "https://musicbrainz.org/release-group/87cba03a-3b6b-353d-8881-61d89e6d8c22"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ce/68/9a/ce689abc-f6e2-acdc-5800-97393806f11e/mzaf_3150273809105067956.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "appleCollectionId": "259463902",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 259463902「Winston Jarrett《Wise Man》」：曲目 9/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Never Love Again〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Michael Prophet",
+   "album": "Jah Love",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2c02c7f4-f603-43c8-8d0a-8c35b87f0e79",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Jammy／Niney／Thompson／Radics 二線濕混音人聲盤：Michael Prophet 1983 年 Junjo 製作盤，Roots Radics 慢拍；同人池中三張 y 1.1–1.3、x 2.5–2.8 全落恍惚。｜⚠ 1983 年 Junjo 已近 dancehall 數位化邊緣；CAA 無圖，封面走 Discogs。｜MB release-group 2c02c7f4-f603-43c8-8d0a-8c35b87f0e79：title「Jah Love」、Album、first-release-date 1983、artist-credit「Michael Prophet」。證據：https://musicbrainz.org/release-group/2c02c7f4-f603-43c8-8d0a-8c35b87f0e79 https://www.discogs.com/master/195378",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "847976",
+    "url": "https://i.discogs.com/P-6SOYt0pNCXXQOW9H-GtQcaEsEvpzccogn1cmbCO6g/rs:fit/g:sm/q:90/h:350/w:350/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg0Nzk3/Ni0xMjA1NDk5ODgy/LmpwZWc.jpeg",
+    "note": "CAA release-group 無圖（404）；取 Discogs 847976（Live & Learn LL LP 004、1983）原封，主線 2026-10-23 目視：紅綠黃底、Michael Prophet 戴帽黑白照、Jah Love 字樣，與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 909,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 909）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 909），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "版權頁掛著兩名製作人，伴奏是 Hi-Times Band。Michael Prophet 唱 roots reggae，八〇年代前半替多家製作人錄音。兩位是 Delroy Wright 與 Junjo Lawes，1983 年交 Live & Learn 發行。Junjo 自家製作慣用 Roots Radics，這張由 Chinna Smith 的樂團伴奏。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/847976",
+     "https://www.discogs.com/artist/395180-Hi-Times-Band",
+     "https://www.discogs.com/artist/438583-Delroy-Wright",
+     "https://www.discogs.com/release/11192152",
+     "https://en.wikipedia.org/wiki/Michael_Prophet",
+     "https://en.wikipedia.org/wiki/Henry_%22Junjo%22_Lawes",
+     "https://musicbrainz.org/release-group/2c02c7f4-f603-43c8-8d0a-8c35b87f0e79"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/44/9b/11449b98-2135-ad66-81b2-f2af3c8fb4f1/mzaf_17117687230773265116.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:54:29Z",
+    "appleCollectionId": "287402093",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 287402093「Michael Prophet《Jah Love》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Instruction〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **390** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 152、已退回 1）。
+共 **392** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 154、已退回 1）。
 最後更新：2026-10-23
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -344,6 +344,13 @@
 | John Holt 《My Desire》 | [#7401303](https://www.discogs.com/release/7401303) | 1980 | Jackpot (2) | INCLP 102 | Discogs master 898204 的版本、主線目視與盤名相符 | ok |
 | John Holt 《Introspective》 | [#9808771](https://www.discogs.com/release/9808771) | 1980 | No Entry (3) | DSR LP 2552 | 唯一版本、主線目視與盤名相符 | ok |
 | Wailing Souls 《On the Rocks》 | [#602316](https://www.discogs.com/release/602316) | 1983 | Greensleeves Records | GREL 59 | Discogs master 195779 的版本、主線目視與盤名相符 | ok |
+
+## add-20261023-ml48（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| I Kong 《The Way It Is》 | [#1211110](https://www.discogs.com/release/1211110) | 1979 | Top Ranking | TC-082 | Discogs master 317637 的版本、主線目視與盤名相符 | ok |
+| Michael Prophet 《Jah Love》 | [#847976](https://www.discogs.com/release/847976) | 1983 | Live & Learn Records | LL LP 004 | Discogs master 195378 的版本、主線目視與盤名相符 | ok |
 
 ## c49（3 張）
 

@@ -71,7 +71,7 @@
 - 照 10-23 體感標準評分（conf mid 4、low 1）。**上線 5；落恍惚 4/5＝80%**。
 - 出格 1：Port Blue《The Airship》y 0.3（柔和合成器墊＋鐵琴小旋律、偏透氣）判輕落放鬆——研究稿 thin、厚度無證據的那張。
 - 《Centres》z 0.0 剛好在暖側邊界（盤帶衰變雜訊帶寒氣）。
-- 八格（併 main 後，含 ml49／mc38）：恍惚 1,426、頹靡 1,433、冷冽 1,445。
+- 八格（併 main 後，含 ml47／ml48／ml49／mc38）：恍惚 1,461、頹靡 1,433、冷冽 1,445。
 - 產量：策展兩輪 26（12＋第二輪 14 全不過）、主線汰 0、研究汰 7 → 5。**暖 post-classical 是死池**：池中 Arnalds、AWVFTS、O'Halloran、Rani、Frahm、Richter 全判輕，弦樂團／管風琴厚墊的 Jóhannsson、Kjartan 樂評多 elegiac／ominous 判冷，Bing & Ruth 鋼琴領軍判輕。**ml46 不再派**；能收的只剩「磁帶糊＋旋律清楚」（Somers、Craig）與殘響 drone 托旋律（Olan Mill），與 ml50 暖 drone 重疊，留給 ml50。
 
 ## 本批新藝人（無介紹，未切；並行時子工作階段不切）
