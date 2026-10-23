@@ -1,0 +1,2015 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-mc33",
+ "batchNote": "薄細項策展線（add-20261023-mc33）",
+ "createdAt": "2026-10-23T11:23:57Z",
+ "albums": [
+  {
+   "artist": "Cyclo.",
+   "album": "Cyclo.",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a77fcfa9-0608-359f-a24b-177be7379cc4",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "glitch／microsound／尖細實驗電子（主場景）：池田亮司＋Carsten Nicolai 的 Cyclo. 首作，把示波器圖形化成點擊節奏，raster-noton 薄盤原型｜⚠ MB 盤名為「.」（Cyclo. 首作常被寫作 Cyclo.），上架名需主線定｜MB release-group a77fcfa9-0608-359f-a24b-177be7379cc4：title「.」、Album、first-release-date 2001-04、artist-credit「Cyclo.」。證據：https://musicbrainz.org/release-group/a77fcfa9-0608-359f-a24b-177be7379cc4 https://coverartarchive.org/release-group/a77fcfa9-0608-359f-a24b-177be7379cc4/front",
+    "queryAlias": ".",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/63/82/3b/63823b6f-ba6e-ba42-232b-950f0769d3b5/5056163017589_cover.jpg/600x600bb.jpg",
+    "note": "CAA front-500 回 500；取已釘定試聽的 Apple 1511970784（NOTON 官方數位版）官方圖。",
+    "appleCollectionId": "1511970784",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 107,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 107）；主線：glitch／microsound／聲響藝術：無旋律、純音色與資料噪音→硬蕊5；冷門照 Last.fm"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 107），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兩個人盯著相位監測螢幕，替聲音的圖形作曲。Cyclo. 這個合作計畫由池田亮司與 Carsten Nicolai 在 2000 年發起，兩人借用原本為黑膠刻片檢查相位而設計的立體聲影像監測設備，邊看相位與振幅的圖形邊寫曲。首作在 2001 年 4 月面世，發行者是德國開姆尼茨、主打節奏性極簡電子的 Raster-Noton；十首不取曲名，只編成 C0 到 C9。素材有高頻信號、削波音、正弦波、次低頻脈衝與劈啪聲，節奏鮮明，幾乎不留一點靜默。",
+    "sourceUrls": [
+     "https://www.ryojiikeda.com/project/cyclo/",
+     "https://www.discogs.com/release/11781",
+     "https://www.discogs.com/release/156033",
+     "https://brainwashed.com/weddle/reviews/cyclo.html",
+     "https://en.wikipedia.org/wiki/Raster-Noton",
+     "https://musicbrainz.org/release-group/a77fcfa9-0608-359f-a24b-177be7379cc4"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/ce/9d/01/ce9d01f6-8b9b-0757-3bec-96115e9becf6/mzaf_9354514344565301256.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "appleCollectionId": "1511970784",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1511970784「Cyclo.《.》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈C0〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Farmers Manual",
+   "album": "fsck",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "20a06e28-5a0d-3eaa-be43-72f2e690001d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "glitch／microsound／尖細實驗電子（主場景）：Farmers Manual 維也納 Mego 圈代表作，筆電故障美學的教科書盤｜策展無疑點｜MB release-group 20a06e28-5a0d-3eaa-be43-72f2e690001d：title「fsck」、Album、first-release-date 1997-08、artist-credit「Farmers Manual」。證據：https://musicbrainz.org/release-group/20a06e28-5a0d-3eaa-be43-72f2e690001d https://coverartarchive.org/release-group/20a06e28-5a0d-3eaa-be43-72f2e690001d/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/20a06e28-5a0d-3eaa-be43-72f2e690001d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 232,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 232）；主線：glitch／microsound／聲響藝術：無旋律、純音色與資料噪音→硬蕊5；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 232），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "盤名是一道 Unix 指令，也是一句粗口的諧音。1990 年代初成立於維也納的 Farmers Manual，是兼做電子音樂與視覺藝術的團體；fsck 原是 Unix 用來檢查檔案系統的指令。《fsck》在 1997 年 8 月交由 Ash 旗下的 Tray 發行，原版 CD 設了 99 個索引點，正式曲目之外，還藏進約四十段各 4 秒的噪音小段。十五首正式曲目多以數字編號，最長的〈370 (Magic Leise Mix)〉約 10 分 15 秒，全用軟體合成。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Farmers_Manual",
+     "https://www.discogs.com/release/106658",
+     "https://www.discogs.com/release/11544342",
+     "https://farmersmanual.bandcamp.com/album/fsck-less",
+     "https://en.wikipedia.org/wiki/Editions_Mego",
+     "https://musicbrainz.org/release-group/20a06e28-5a0d-3eaa-be43-72f2e690001d"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "Apple 只有《Fsck Less》《Proto Fsck》兩個 2019–20 重編版，曲目對不上 MB 原盤 99 段。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Farmers Manual",
+   "album": "No Backup",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0579f2fa-aefe-351e-bf70-bc575c41a34e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "glitch／microsound／尖細實驗電子（主場景）：Farmers Manual 首張，Mego 廠牌早期 glitch 原點之一｜策展無疑點｜MB release-group 0579f2fa-aefe-351e-bf70-bc575c41a34e：title「No Backup」、Album、first-release-date 1996-06、artist-credit「Farmers Manual」。證據：https://musicbrainz.org/release-group/0579f2fa-aefe-351e-bf70-bc575c41a34e https://coverartarchive.org/release-group/0579f2fa-aefe-351e-bf70-bc575c41a34e/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0579f2fa-aefe-351e-bf70-bc575c41a34e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 2161,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2161）；主線：glitch／microsound／聲響藝術：無旋律、純音色與資料噪音→硬蕊5；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 2161），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "維也納這群人的首張，連影片與封面都自己做。MEGO 008 這個目錄號，屬於電子組合 Farmers Manual 的首張專輯，1996 年 6 月由同城的 Mego 發行。初版是附電影與 CD-ROM 的互動增強版 CD，創作、影片剪輯與 CD-ROM 規畫全掛團員的名字。八首曲子長短不一，從 2 分 18 秒到 9 分 38 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/11079",
+     "https://farmersmanual.bandcamp.com/album/no-backup",
+     "https://en.wikipedia.org/wiki/Editions_Mego",
+     "https://en.wikipedia.org/wiki/Farmers_Manual",
+     "https://musicbrainz.org/release-group/0579f2fa-aefe-351e-bf70-bc575c41a34e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/9f/50/e79f5082-f6df-d6d4-556c-9a30037c80c9/mzaf_8156712283828879539.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "appleCollectionId": "1799283881",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1799283881「Farmers Manual《No Backup》」：曲目 6/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Macro Woeb〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Farmers Manual",
+   "album": "Explorers_We",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b4313ca2-f8a5-3e4f-9e93-119c0e72f8c7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "glitch／microsound／尖細實驗電子（主場景）：Farmers Manual 在 Or 的單軌拼貼盤，故障碎片不給停頓｜策展無疑點｜MB release-group b4313ca2-f8a5-3e4f-9e93-119c0e72f8c7：title「Explorers_We」、Album、first-release-date 1998-04、artist-credit「Farmers Manual」。證據：https://musicbrainz.org/release-group/b4313ca2-f8a5-3e4f-9e93-119c0e72f8c7 https://coverartarchive.org/release-group/b4313ca2-f8a5-3e4f-9e93-119c0e72f8c7/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b4313ca2-f8a5-3e4f-9e93-119c0e72f8c7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 865,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 865）；主線：glitch／microsound／聲響藝術：無旋律、純音色與資料噪音→硬蕊5；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 865），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "船在凌晨駛過工業港，他們在船上用電腦即興。Farmers Manual 把《Explorers_We》交給 Touch 旗下的 OR，1998 年 4 月上市，主碟只有一條 60 分 3 秒的長軌。首版限量 1000 張，附一張現場 CD，錄的是 1997 年 9 月 Ars Electronica 期間的一場船上夜演，時間約在凌晨 3 到 4 點之間。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/94964",
+     "https://farmersmanual.bandcamp.com/album/explorers-we",
+     "https://farmersmanual.bandcamp.com/album/fsck-less",
+     "https://www.discogs.com/release/1608251",
+     "https://musicbrainz.org/release-group/b4313ca2-f8a5-3e4f-9e93-119c0e72f8c7"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music2/v4/4f/07/88/4f078848-c291-fc7c-cfee-0ebff194a846/mzaf_6678488980425423232.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "appleCollectionId": "203599265",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 203599265「Farmers Manual《Explorers We》」：Apple 為原廠 OR 數位版，單軌 60 分鐘切成 60 段（研究層：2018 數位版同切法），同一錄音，取第 1 軌〈Trail Blazer〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hecker",
+   "album": "Recordings for Rephlex",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "87a48cae-28d9-3d19-b247-e2832d3eb6ff",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "glitch／microsound／尖細實驗電子（主場景）：Hecker 在 Rephlex 的盤，比 Mego 盤更有節奏推力的尖細電子｜策展無疑點｜MB release-group 87a48cae-28d9-3d19-b247-e2832d3eb6ff：title「Recordings for Rephlex」、Album、first-release-date 2006-12-04、artist-credit「Hecker」。證據：https://musicbrainz.org/release-group/87a48cae-28d9-3d19-b247-e2832d3eb6ff https://coverartarchive.org/release-group/87a48cae-28d9-3d19-b247-e2832d3eb6ff/front",
+    "queryAlias": "Florian Hecker"
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/87a48cae-28d9-3d19-b247-e2832d3eb6ff/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 379,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 379）；主線：glitch／microsound／聲響藝術：無旋律、純音色與資料噪音→硬蕊5；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 379），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "為展覽委託做的點擊曲，最後收進 Rephlex。Florian Hecker 1975 年生於德國奧格斯堡；Aphex Twin 參與創辦的英國廠牌 Rephlex 替他出了這張，時間是 2006 年 12 月，八首作於 2002 到 2004 年間。〈Precedence〉起於 Carsten Höller 2004 年在馬賽辦個展時的委託，Hecker 為此研究先行效應：一個聲道的點擊落後、另一個聲道的點擊領先，兩者輪流出現，每隔數秒就把相位倒轉一次。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Florian_Hecker",
+     "https://www.discogs.com/release/847031",
+     "https://en.wikipedia.org/wiki/Rephlex_Records",
+     "https://musicbrainz.org/release-group/87a48cae-28d9-3d19-b247-e2832d3eb6ff"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hecker",
+   "album": "Acid in the Style of David Tudor",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2f46e680-8d2d-4ee6-9e31-42d9720bb10f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "glitch／microsound／尖細實驗電子（主場景）：Hecker 向 David Tudor 致敬的 acid 合成盤，單一音色反覆擰緊｜策展無疑點｜MB release-group 2f46e680-8d2d-4ee6-9e31-42d9720bb10f：title「Acid in the Style of David Tudor」、Album、first-release-date 2009-05-04、artist-credit「Hecker」。證據：https://musicbrainz.org/release-group/2f46e680-8d2d-4ee6-9e31-42d9720bb10f https://coverartarchive.org/release-group/2f46e680-8d2d-4ee6-9e31-42d9720bb10f/front",
+    "queryAlias": "Florian Hecker"
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2f46e680-8d2d-4ee6-9e31-42d9720bb10f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 1691,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1691）；主線：glitch／microsound／聲響藝術：無旋律、純音色與資料噪音→硬蕊5；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 1691），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Buchla 合成器接上類比電腦，一個人錄完整張噪音。Hecker 早在 1998 年就於 Mego 出了第一張專輯；Mego 結束之後，Peter Rehberg 另創 Editions Mego，這張就在 2009 年 5 月由新廠牌發行。合成器是 Buchla 的模組系統，類比電腦則出自 Comdyna。標題把美國實驗作曲家 David Tudor 和 acid 這個字眼擺在一起。六軌全用同一個曲名，步調狂亂，重複的節奏型才一冒出來就被打散。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1723190",
+     "https://popmatters.com/114942-hecker-acid-in-the-style-of-david-tudor-2496112895.html",
+     "https://www.tinymixtapes.com/music-review/hecker-acid-style-david-tudor",
+     "https://editionsmego.kudosrecords.co.uk/release/emego094/hecker-acid-in-the-style-of-david-tudor",
+     "https://en.wikipedia.org/wiki/Editions_Mego",
+     "https://musicbrainz.org/release-group/2f46e680-8d2d-4ee6-9e31-42d9720bb10f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6b/7f/0b/6b7f0b62-3112-ca86-0c5d-89b80a296893/mzaf_10967251686297798619.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "appleCollectionId": "1799286339",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1799286339「Florian Hecker《Acid In The Style Of David Tudor》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Acid In The Style Of David Tudor (I)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hecker",
+   "album": "Speculative Solution",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "48a7912b-7957-405a-995b-6f6c864ca0bb",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "glitch／microsound／尖細實驗電子（主場景）：Hecker 與哲學家 Meillassoux 合作的計算音樂，聲響隨機跳接，神經一直被挑｜策展無疑點｜MB release-group 48a7912b-7957-405a-995b-6f6c864ca0bb：title「Speculative Solution」、Album、first-release-date 2011-05-24、artist-credit「Hecker」。證據：https://musicbrainz.org/release-group/48a7912b-7957-405a-995b-6f6c864ca0bb https://coverartarchive.org/release-group/48a7912b-7957-405a-995b-6f6c864ca0bb/front",
+    "queryAlias": "Florian Hecker"
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/48a7912b-7957-405a-995b-6f6c864ca0bb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 308,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 308）；主線：glitch／microsound／聲響藝術：無旋律、純音色與資料噪音→硬蕊5；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 308），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "盒子裡除了 CD 和一本書，還有五顆金屬球。Hecker 在慕尼黑大學讀過計算語言學與心理語言學，這件壓紋盒裝 2011 年由 Editions Mego 推出；書由 Robin Mackay 編成、英法雙語，金屬球直徑 3.969 毫米。專輯把 Hecker 的心理聲學工作接上哲學家 Quentin Meillassoux 的「超混沌」：自然律本身絕對偶然。32 分鐘的首軌裡，近乎聽不見的細碎雜訊之間會突然爆出尖嘯，中段還有約一分鐘的靜默。",
+    "sourceUrls": [
+     "https://mego.at/release/EMEGO-118",
+     "https://musicbrainz.org/release-group/48a7912b-7957-405a-995b-6f6c864ca0bb",
+     "https://en.wikipedia.org/wiki/Florian_Hecker",
+     "https://www.tinymixtapes.com/music-review/hecker-speculative-solution",
+     "https://www.musiquemachine.com/reviews/florian-hecker-speculative-solution-3375"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Yasunao Tone",
+   "album": "Solo for Wounded CD",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6d4647bf-0312-3232-84da-9e824fa548fa",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "glitch／microsound／尖細實驗電子（主場景）：刀根康尚把刮傷 CD 當樂器，被公認為 glitch 的源頭之一｜策展無疑點｜MB release-group 6d4647bf-0312-3232-84da-9e824fa548fa：title「Solo for Wounded CD」、Album、first-release-date 1997-08-19、artist-credit「Yasunao Tone」。證據：https://musicbrainz.org/release-group/6d4647bf-0312-3232-84da-9e824fa548fa https://coverartarchive.org/release-group/6d4647bf-0312-3232-84da-9e824fa548fa/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6d4647bf-0312-3232-84da-9e824fa548fa/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 1213,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1213）；主線：glitch／microsound／聲響藝術：無旋律、純音色與資料噪音→硬蕊5；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 1213），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "戳了針孔的膠帶貼上 CD 底面，播放器開始讀錯。刀根康尚 1935 年生於東京，1972 年移居紐約，從 1984 年起就把穿孔膠帶貼到 CD 上，測試能否壓過播放器內建的錯誤修正。Tzadik 於 1997 年推出這張，錄下的正是那些讀不穩的播放結果，約 48 分鐘、分成兩部分。他寫道，膠帶連光碟的轉速與方向都改變了；出來的是不規則的靜電雜訊、金屬般的尖叫與刺耳的白噪音。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/6d4647bf-0312-3232-84da-9e824fa548fa",
+     "https://en.wikipedia.org/wiki/Yasunao_Tone",
+     "https://www.anothermag.com/design-living/14750/yasunao-tone-region-of-paramedia-japanese-music-composer",
+     "https://cabinetmagazine.org/issues/7/cdinsert.php",
+     "https://scaruffi.com/avant/tone.html"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/89/96/ad/8996ad3b-67c6-10f3-955c-b3952b93cee3/mzaf_5416475212403093538.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "appleCollectionId": "1189640487",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1189640487「Yasunao Tone《Solo For Wounded》」：曲目 2/2 對上 MB 原盤（Tzadik ℗1997），取第 1 軌〈Minim: Part I〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Yasunao Tone",
+   "album": "MP3 Deviations #6+7",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "647ac2c2-c238-4986-8fcc-ffcc226cfffd",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "glitch／microsound／尖細實驗電子（主場景）：刀根康尚以 MP3 故障演算法生成的晚期名作，Editions Mego 出版｜策展無疑點｜MB release-group 647ac2c2-c238-4986-8fcc-ffcc226cfffd：title「MP3 Deviations #6+7」、Album、first-release-date 2011-09-18、artist-credit「Yasunao Tone」。證據：https://musicbrainz.org/release-group/647ac2c2-c238-4986-8fcc-ffcc226cfffd https://music.apple.com/us/album/mp3-deviations-6-7/1825327612",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a3/e6/73/a3e67316-95a5-546a-d598-4c1ce16f46ae/880918276434.jpg/600x600bb.jpg",
+    "note": "CAA front 404（live-check）；取已釘定試聽的 Apple 1825327612（Editions Mego）官方圖。",
+    "appleCollectionId": "1825327612",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 217,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 217）；主線：glitch／microsound／聲響藝術：無旋律、純音色與資料噪音→硬蕊5；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 217），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "MP3 壞檔吐出的 21 種錯誤，決定了取樣長度。身為 Group Ongaku 核心成員、也是 Fluxus 日本分支的創始成員之一，刀根康尚在 2009 年與英國約克大學的「電腦音樂新美學」研究團隊合作。干擾 MP3 編碼器的做法讓他不滿意；團隊發現損毀的檔案會跳出錯誤訊息，就讓它們自動定出每段取樣切多長，再配上不同的播放速度。兩軌 2011 年 6、7 月錄於紐約，Editions Mego 同年發行。",
+    "sourceUrls": [
+     "https://mego.at/release/eMEGO-125",
+     "https://en.wikipedia.org/wiki/Yasunao_Tone",
+     "https://www.thesoundprojector.com/2016/02/09/tali-tone-sam-k/",
+     "https://www.macba.cat/en/aprendre-investigar/arxiu/yasunao-tone-mp3-deviation-8",
+     "https://editionsmego.kudosrecords.co.uk/release/emego142/russell-haswell-yasunao-tone-convulsive-threshold",
+     "https://musicbrainz.org/release-group/647ac2c2-c238-4986-8fcc-ffcc226cfffd"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4e/cc/7b/4ecc7bc1-b6d3-8c22-66d8-04282a2b7658/mzaf_16996570167149947396.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "appleCollectionId": "1825327612",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1825327612「Yasunao Tone《MP3 Deviations #6+7》」：曲目 2/2 對上 MB 原盤（Editions Mego ℗2011），取第 1 軌〈MP3 Deviation #6〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "EVOL",
+   "album": "Proper Headshrinker",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a084f8b9-d544-44b0-8388-046f56e65959",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "glitch／microsound／尖細實驗電子（主場景）：EVOL（Roc Jiménez de Cisneros）把 rave hoover 音色抽離成純粹刺激｜策展無疑點｜MB release-group a084f8b9-d544-44b0-8388-046f56e65959：title「Proper Headshrinker」、Album、first-release-date 2013-04、artist-credit「EVOL」。證據：https://musicbrainz.org/release-group/a084f8b9-d544-44b0-8388-046f56e65959 https://coverartarchive.org/release-group/a084f8b9-d544-44b0-8388-046f56e65959/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2013,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a084f8b9-d544-44b0-8388-046f56e65959/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 494,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 494）；主線：glitch／microsound／聲響藝術：無旋律、純音色與資料噪音→硬蕊5；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 494），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "十首都約三分鐘，hoover 音色被一點點扭彎。EVOL 由 Roc Jiménez de Cisneros 與 Stephen Sharp 組成，是來自西班牙的實驗電子雙人組。《Proper Headshrinker》是兩人「Rave Synthesis」計畫的第五張長篇，Editions Mego 在 2013 年 4 月發行。聲音剝到只剩最簡的 hoover 與變形的 supersaw，變化全來自細微的相位調變。兩人藉此把 rave 的陳腔濫調拆開，讓裡頭的歪處露出來。",
+    "sourceUrls": [
+     "https://mego.at/release/eMEGO-164",
+     "https://boomkat.com/products/proper-headshrinker",
+     "https://www.discogs.com/artist/11162-Evol",
+     "https://api.discogs.com/artists/11162",
+     "https://www.thewire.co.uk/search?q=EVOL+Rave+Synthesis",
+     "https://musicbrainz.org/release-group/a084f8b9-d544-44b0-8388-046f56e65959"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c5/bd/61/c5bd6129-597e-ffb3-5eae-a7f698b5de28/mzaf_10889915041968689021.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "appleCollectionId": "1799297300",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1799297300「EVOL《Proper Headshrinker》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Proper Headshrinker 1〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Rashad Becker",
+   "album": "Traditional Music of Notional Species, Vol. I",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "efc5d8ba-395b-48b3-af51-3c3762f49ad8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "glitch／microsound／尖細實驗電子（主場景）：Rashad Becker 的 PAN 盤，合成器做出不存在的民俗音樂，聽了一直不安｜⚠ 部分段落合成音較厚，y 可能 +0.3｜MB release-group efc5d8ba-395b-48b3-af51-3c3762f49ad8：title「Traditional Music of Notional Species, Vol. I」、Album、first-release-date 2013-07-29、artist-credit「Rashad Becker」。證據：https://musicbrainz.org/release-group/efc5d8ba-395b-48b3-af51-3c3762f49ad8 https://coverartarchive.org/release-group/efc5d8ba-395b-48b3-af51-3c3762f49ad8/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2013,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/efc5d8ba-395b-48b3-af51-3c3762f49ad8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 80,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 80）；主線：glitch／microsound／聲響藝術：無旋律、純音色與資料噪音→硬蕊5；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 80），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "柏林的刻片工程師，替想像中的物種寫傳統音樂。PAN 這家柏林廠牌在 2013 年替 Rashad Becker 出了首張完整長篇，而他自 1997 年起就在柏林一家刻片與母帶廠擔任母帶與刻片工程師。八軌分成「Themes」與「Dances」兩組，每首約 4 分鐘上下；母帶他自己處理，並在 D&M 刻片。PAN 形容整張完全合成、無所指涉，聲音被拉長、結構不尋常，卻帶著像人聲的音調與像蟬鳴的聲響。續作《Vol. II》2016 年才接著發行。",
+    "sourceUrls": [
+     "https://p-a-n.org/release/pan-34-rashad-becker-traditional-music-of-notional-species-vol-i/",
+     "https://api.discogs.com/artists/166726",
+     "https://mego.at/release/EMEGO-118",
+     "https://www.discogs.com/release/4800577",
+     "https://rashadbecker.bandcamp.com/album/traditional-music-of-notional-species-vol-i",
+     "https://api.discogs.com/artists/166726/releases",
+     "https://musicbrainz.org/release-group/efc5d8ba-395b-48b3-af51-3c3762f49ad8"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3c/1f/5a/3c1f5a5c-efb5-5be8-df6b-f7506537abc0/mzaf_1655039592339552372.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "appleCollectionId": "1501415456",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1501415456「Rashad Becker《Traditional Music of Notional Species Vol. I》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Dances I〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Maryanne Amacher",
+   "album": "Sound Characters (Making the Third Ear)",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3a5dda2d-5ea8-38c3-a860-4c7a36a939b5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "glitch／microsound／尖細實驗電子（主場景）：Maryanne Amacher 的「第三耳」作品，高頻音讓耳朵自己發聲，神經極緊｜⚠ Head Rhythm 段有低頻轟鳴，y 可能偏重｜MB release-group 3a5dda2d-5ea8-38c3-a860-4c7a36a939b5：title「Sound Characters (Making the Third Ear)」、Album、first-release-date 1999-02-16、artist-credit「Maryanne Amacher」。證據：https://musicbrainz.org/release-group/3a5dda2d-5ea8-38c3-a860-4c7a36a939b5 https://coverartarchive.org/release-group/3a5dda2d-5ea8-38c3-a860-4c7a36a939b5/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3a5dda2d-5ea8-38c3-a860-4c7a36a939b5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 892,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 892）；主線：glitch／microsound／聲響藝術：無旋律、純音色與資料噪音→硬蕊5；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 892），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Amacher 要聽者的耳朵自己發出聲音。美國作曲家 Maryanne Amacher 在賓州大學跟 Stockhausen 學作曲，後來與 Cage 合作。1992 年起，她把耳內音改稱耳聲傳射，說那是耳朵裡的小喇叭，副標題「第三隻耳朵」就從這裡來。刺耳的質地正是為了誘發耳聲傳射；另一首聽來像垃圾桶沿著金屬滑槽摔落。她的作品多為特定場地而作，用大量擴音器激發結構傳導聲。1999 年這張由 Tzadik 發行，其中三首是多聲道裝置縮成雙聲道的節錄。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/3a5dda2d-5ea8-38c3-a860-4c7a36a939b5",
+     "https://www.discogs.com/release/22796",
+     "https://en.wikipedia.org/wiki/Maryanne_Amacher",
+     "https://www.villagevoice.com/1999/08/10/consumer-guide-17/",
+     "https://www.freejazzblog.org/2023/11/the-tzadik-stream-is-flood-part-2-of-2.html"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gescom",
+   "album": "Minidisc",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a96442ad-e887-3c0f-850f-07955cd24943",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "glitch／microsound／尖細實驗電子（主場景）：Autechre 成員的 Gescom 為 MiniDisc 隨機播放設計的碎片盤｜策展無疑點｜MB release-group a96442ad-e887-3c0f-850f-07955cd24943：title「Minidisc」、Album、first-release-date 1998-06-08、artist-credit「Gescom」。證據：https://musicbrainz.org/release-group/a96442ad-e887-3c0f-850f-07955cd24943 https://coverartarchive.org/release-group/a96442ad-e887-3c0f-850f-07955cd24943/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a96442ad-e887-3c0f-850f-07955cd24943/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 4114,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 4114）；主線：glitch／microsound／聲響藝術：無旋律、純音色與資料噪音→硬蕊5；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "只出 MiniDisc，設計成用隨機播放來聽。Gescom 背後是 Booth、Brown 與 Haswell 三位未在本盤掛名的樂手，這個英國電子計畫與 Autechre 關係密切。1998 年推出它的 OR，看準的是 MiniDisc 零尋軌時間：當時 CD 機曲與曲之間會有空隙，這裡則把 45 段作品切成 88 個標記。片段往往短到幾秒，〈Cut Begin〉就有 7 個版本。聲音是電子節拍與電腦聲響的短暫爆發，〈Le Shark〉則是一段破碎的 hip-hop 循環。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Minidisc_(album)",
+     "https://en.wikipedia.org/wiki/Gescom",
+     "https://www.discogs.com/release/43153",
+     "https://www.musiquemachine.com/reviews/gescom-minidisc-1012",
+     "https://www.gridface.com/?p=418",
+     "https://musicbrainz.org/release-group/a96442ad-e887-3c0f-850f-07955cd24943"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e2/9b/28/e29b2804-2dad-fa8b-730f-b5bdf5d32a13/mzaf_13081713907443813299.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "appleCollectionId": "203312481",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 203312481「Gescom《Minidisc》」：Touch 再版 88 軌，與 MB 原盤 88 軌同序（曲名寫法差 36 軌），取第 1 軌〈Cut Begin〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Marcus Schmickler",
+   "album": "Palace of Marvels [Queered Pitch]",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d91718fd-de55-47c5-8c57-bb00eec6b682",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "glitch／microsound／尖細實驗電子（主場景）：Marcus Schmickler 的 Mego 盤，心理聲學滑音讓人坐立難安｜策展無疑點｜MB release-group d91718fd-de55-47c5-8c57-bb00eec6b682：title「Palace of Marvels [Queered Pitch]」、Album、first-release-date 2010-11、artist-credit「Marcus Schmickler」。證據：https://musicbrainz.org/release-group/d91718fd-de55-47c5-8c57-bb00eec6b682 https://coverartarchive.org/release-group/d91718fd-de55-47c5-8c57-bb00eec6b682/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d91718fd-de55-47c5-8c57-bb00eec6b682/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 182,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 182）；主線：glitch／microsound／聲響藝術：無旋律、純音色與資料噪音→硬蕊5；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 182），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "音高聽來一路往上爬，卻始終不到頂。1998 年加入即興電子團體 MIMEO 的 Marcus Schmickler，是科隆出身的電子作曲家。全盤以 Shepard 音為核心，這種錯覺讓音高像是永遠在升降；他用琶音重新詮釋，〈Sheps Infinity〉則向發現者致意。錄音與母帶 2010 年在他自己位於科隆的工作室完成，交給 Editions Mego 發行，共 12 首、長約 60 分鐘。標題取自萊布尼茲那座讓屋主聽得見一切的房子。",
+    "sourceUrls": [
+     "https://editionsmego.bandcamp.com/album/palace-of-marvels-queered-pitch",
+     "https://www.discogs.com/release/2571790",
+     "https://mego.at/release/eMEGO-113",
+     "https://www.discogs.com/release/2802097",
+     "https://acousmata.com/tagged/marcus%20schmickler",
+     "https://en.wikipedia.org/wiki/Marcus_Schmickler",
+     "https://musicbrainz.org/release-group/d91718fd-de55-47c5-8c57-bb00eec6b682"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0a/8e/9e/0a8e9e74-dc7e-b04f-e9d7-87d67c343ef1/mzaf_9756372825236695501.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "appleCollectionId": "1825328545",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1825328545「Marcus Schmickler《Palace Of Marvels (queered pitch)》」：曲目 11/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈New Methodical Limits of Ascension〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Henry Cow",
+   "album": "Western Culture",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f7aa2b48-563b-3e0f-b630-5ad983a78b53",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "RIO／前衛搖滾尖細那半（擴寫 mc35）：Henry Cow 最後一張錄音室盤，Hodgkinson／Cooper 的無調室內搖滾，RIO 核心｜⚠ 池中 Henry Cow 他盤 x 3.0–3.1｜MB release-group f7aa2b48-563b-3e0f-b630-5ad983a78b53：title「Western Culture」、Album、first-release-date 1978、artist-credit「Henry Cow」。證據：https://musicbrainz.org/release-group/f7aa2b48-563b-3e0f-b630-5ad983a78b53 https://coverartarchive.org/release-group/f7aa2b48-563b-3e0f-b630-5ad983a78b53/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f7aa2b48-563b-3e0f-b630-5ad983a78b53/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 15590,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 15590）；主線：RIO／前衛搖滾：無調、拐拍、樂團編制仍有搖滾骨架→硬蕊4；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "歌曲與器樂吵不攏，只好拆成兩張唱片。劍橋大學是 Henry Cow 的起點，這支英國前衛搖滾團 1968 年在那裡成軍。1978 年團裡有人嫌歌曲太多，於是把歌曲那張改掛 Art Bears 之名，純器樂這張留給本團。同年夏天在瑞士錄完後，樂團不久便解散，1979 年 9 月才由自家的 Broadcast 發行，成了告別作。第一面由 Hodgkinson 作曲，第二面出自 Lindsay Cooper，低音管、雙簧管與風琴疊在鼓上，作曲者各自寫出無調、變拍號的段落。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Western_Culture_(album)",
+     "https://www.robertchristgau.com/get_artist.php?name=Henry+Cow",
+     "https://en.wikipedia.org/wiki/Henry_Cow",
+     "https://musicbrainz.org/release-group/f7aa2b48-563b-3e0f-b630-5ad983a78b53"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/39/16/3e/39163e64-820e-e2d4-d147-b6c35f8febd8/mzaf_13452021404911234705.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "appleCollectionId": "62459773",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 62459773「Henry Cow《Western Culture》」：曲目 6/7 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈History & Prospects: Industry〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Art Bears",
+   "album": "The World as It Is Today",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2a446bb5-1dd9-3011-a8f7-3f9ff5a10ca2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "RIO／前衛搖滾尖細那半（擴寫 mc35）：Art Bears 最後一張，比前兩張更短更尖的 RIO 歌曲｜⚠ 池中 Art Bears 他盤 x 3.1｜MB release-group 2a446bb5-1dd9-3011-a8f7-3f9ff5a10ca2：title「The World as It Is Today」、Album、first-release-date 1981、artist-credit「Art Bears」。證據：https://musicbrainz.org/release-group/2a446bb5-1dd9-3011-a8f7-3f9ff5a10ca2 https://coverartarchive.org/release-group/2a446bb5-1dd9-3011-a8f7-3f9ff5a10ca2/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2a446bb5-1dd9-3011-a8f7-3f9ff5a10ca2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 14040,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 14040）；主線：RIO／前衛搖滾：無調、拐拍、樂團編制仍有搖滾骨架→硬蕊4；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "主唱拒唱其中一首的暴力歌詞。鼓手 Cutler、吉他手 Frith 加上歌手 Dagmar Krause，就是 Art Bears 的三人編制。他們第三張也是最後一張錄音室專輯從 1980 年 8 月 24 日開錄，全程只有三人上陣。Krause 反對的是〈Albion, Awake!〉詞裡的暴力，於是這首只錄器樂，歌詞照樣印在小冊上。Frith 譜曲、Cutler 寫詞，11 首加起來約 32 分鐘，曲名直指資本與民主。原版 LP 在 1981 年問世，壓成 45 轉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/588129",
+     "https://en.wikipedia.org/wiki/The_World_as_It_Is_Today",
+     "https://en.wikipedia.org/wiki/Art_Bears",
+     "https://musicbrainz.org/release-group/2a446bb5-1dd9-3011-a8f7-3f9ff5a10ca2"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9b/83/8a/9b838aa4-d93a-ce77-4c38-2e2084faa915/mzaf_12363804721442112227.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "appleCollectionId": "1585732397",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1585732397「Art Bears《The World As It Is Today》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈The Song of Investment Capital Ov〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Étron Fou Leloublan",
+   "album": "Batelages",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e904d524-8d22-369d-8ada-7c798ae0c1c6",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "RIO／前衛搖滾尖細那半（擴寫 mc35）：Etron Fou Leloublan 首張，RIO 創始五團之一的法國怪趣搖滾｜策展無疑點｜MB release-group e904d524-8d22-369d-8ada-7c798ae0c1c6：title「Batelages」、Album、first-release-date 1977、artist-credit「Étron Fou Leloublan」。證據：https://musicbrainz.org/release-group/e904d524-8d22-369d-8ada-7c798ae0c1c6 https://coverartarchive.org/release-group/e904d524-8d22-369d-8ada-7c798ae0c1c6/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1977,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e904d524-8d22-369d-8ada-7c798ae0c1c6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 101,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 101）；主線：RIO／前衛搖滾：無調、拐拍、樂團編制仍有搖滾骨架→硬蕊4；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 4；obscurity=5 但沒有遺珠級證據（listeners 101），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "唱片還沒上市，創團的人先走了。演員兼薩克斯風手 Chris Chanet 創立了 Étron Fou Leloublan，一支法國的前衛搖滾三重奏，1973 年 12 月 27 日替 Magma 暖場，完成首演。1976 年 11 月樂團改用現名，以一台四軌錄音機錄下首作，等到 Gratte-Ciel 把它發行時，Chanet 已經離團。五首曲子約 42 分鐘，最長一曲達 18 分鐘。他們的風格把朋克、爵士、法國音樂廳與喜劇諷刺攪在一起。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/920113",
+     "https://www.discogs.com/master/54859",
+     "https://en.wikipedia.org/wiki/Etron_Fou_Leloublan",
+     "https://en.wikipedia.org/wiki/Rock_in_Opposition",
+     "https://www.discogs.com/artist/488540",
+     "https://musicbrainz.org/release-group/e904d524-8d22-369d-8ada-7c798ae0c1c6"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Étron Fou Leloublan",
+   "album": "Les Trois Fou's Perdégagnent (Au Pays Des...)",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f0437b6d-ba20-4e4e-b64f-d7a05080942e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "RIO／前衛搖滾尖細那半（擴寫 mc35）：Etron Fou Leloublan 第二張，1978 首發（MB 只收 2014 再版日期）｜⚠ MB release-group 首發日誤為 2014，原盤 1978｜MB release-group f0437b6d-ba20-4e4e-b64f-d7a05080942e：title「Les Trois Fou's Perdégagnent (Au Pays Des...)」、Album、first-release-date 2014、artist-credit「Étron Fou Leloublan」。證據：https://musicbrainz.org/release-group/f0437b6d-ba20-4e4e-b64f-d7a05080942e https://coverartarchive.org/release-group/f0437b6d-ba20-4e4e-b64f-d7a05080942e/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f0437b6d-ba20-4e4e-b64f-d7a05080942e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 5,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 5）；主線：RIO／前衛搖滾：無調、拐拍、樂團編制仍有搖滾骨架→硬蕊4；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 4；obscurity=5 但沒有遺珠級證據（listeners 5），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "錄音裡，有人念起路易斯·卡羅的文字。Rock in Opposition 的五個創始團之一，就是這個法國樂團 Étron Fou Leloublan。1977 年 11 月，他們在土魯斯用 8 軌錄下第二張專輯，念誦的人是 Michel Grezes。Francis Grand 負責薩克斯風、長笛與口琴，鼓手 Chenevier 還玩起悠悠球。9H 17 Productions 在 1978 年把它推出；那年 3 月 12 日在倫敦一場音樂節上，五團同台，RIO 由此而生。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/423873",
+     "https://www.discogs.com/master/54898",
+     "https://en.wikipedia.org/wiki/Etron_Fou_Leloublan",
+     "https://en.wikipedia.org/wiki/Rock_in_Opposition",
+     "https://musicbrainz.org/release-group/f0437b6d-ba20-4e4e-b64f-d7a05080942e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Étron Fou Leloublan",
+   "album": "Les Sillons de la terre",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d73000f6-7493-3584-a246-00cbcea4e68a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "RIO／前衛搖滾尖細那半（擴寫 mc35）：Etron Fou Leloublan 中期盤，與 Fred Frith 合作後更尖｜策展無疑點｜MB release-group d73000f6-7493-3584-a246-00cbcea4e68a：title「Les Sillons de la terre」、Album、first-release-date 1984、artist-credit「Étron Fou Leloublan」。證據：https://musicbrainz.org/release-group/d73000f6-7493-3584-a246-00cbcea4e68a https://coverartarchive.org/release-group/d73000f6-7493-3584-a246-00cbcea4e68a/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d73000f6-7493-3584-a246-00cbcea4e68a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 21,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 21）；主線：RIO／前衛搖滾：無調、拐拍、樂團編制仍有搖滾骨架→硬蕊4；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 4；obscurity=5 但沒有遺珠級證據（listeners 21），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "鼓手自己坐上製作席，還兼吹薩克斯風。貝斯手 Richard 與鼓手 Chenevier 這組節奏組，是這個來自法國的團從頭待到尾的兩個人。日內瓦的錄音在 1983 年 8 月進行，Chenevier 擔任藝術製作，吹的是次中音薩克斯風；Jo Thirion 彈管風琴與鋼琴。瑞士的 Turbo Music 於 1984 年發行，十首多在 3 到 5 分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/14142528",
+     "https://www.discogs.com/master/54879",
+     "https://en.wikipedia.org/wiki/Etron_Fou_Leloublan",
+     "https://musicbrainz.org/release-group/d73000f6-7493-3584-a246-00cbcea4e68a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Thinking Plague",
+   "album": "In Extremis",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "66570264-45ca-3f7e-8689-1fb19d71e8cb",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "RIO／前衛搖滾尖細那半（擴寫 mc35）：Thinking Plague 公認巔峰，Cuneiform 出版的無調室內搖滾｜⚠ 編制較密，y 可能 +0.3｜MB release-group 66570264-45ca-3f7e-8689-1fb19d71e8cb：title「In Extremis」、Album、first-release-date 1998-12-08、artist-credit「Thinking Plague」。證據：https://musicbrainz.org/release-group/66570264-45ca-3f7e-8689-1fb19d71e8cb https://coverartarchive.org/release-group/66570264-45ca-3f7e-8689-1fb19d71e8cb/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/66570264-45ca-3f7e-8689-1fb19d71e8cb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 2874,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2874）；主線：RIO／前衛搖滾：無調、拐拍、樂團編制仍有搖滾骨架→硬蕊4；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 4；obscurity=5 但沒有遺珠級證據（listeners 2874），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "錄音一拖六年，最後才送去法國混音。吉他手 Mike Johnson 替 Thinking Plague 作曲、寫下大部分歌詞，也負責電腦排序。距上一張約九年，新作 1992 年動工，主體錄在丹佛，部分在加州完成，Bob Drake 則在 1998 年 5 月接手混音。其中兩首長曲靠 Johnson 與 Drake 遠距合作拼成，兩人事後都不喜歡那兩首。〈Les Etudes D'Organism〉中段插進一段馬戲團似的詼諧樂段。Cuneiform 在當年推出了它。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/508738-Thinking-Plague-In-Extremis",
+     "https://www.westword.com/music/the-power-of-positive-thinking-5059453/",
+     "https://en.wikipedia.org/wiki/Thinking_Plague",
+     "https://cuneiformrecords.bandcamp.com/album/in-extremis",
+     "https://musicbrainz.org/release-group/66570264-45ca-3f7e-8689-1fb19d71e8cb"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview62/v4/7c/31/45/7c3145a9-6b00-723e-8e05-e037e2393b2a/mzaf_8559229954632211911.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "appleCollectionId": "1162428310",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1162428310「Thinking Plague《In Extremis》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Dead Silence〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Cassiber",
+   "album": "Beauty and the Beast",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "839176eb-2940-317f-add3-7801af9b37ac",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "RIO／前衛搖滾尖細那半（擴寫 mc35）：Cassiber（Cutler／Goebbels／Harth／Rodelius）第二張，RIO 電子化的尖細那支｜策展無疑點｜MB release-group 839176eb-2940-317f-add3-7801af9b37ac：title「Beauty and the Beast」、Album、first-release-date 1984、artist-credit「Cassiber」。證據：https://musicbrainz.org/release-group/839176eb-2940-317f-add3-7801af9b37ac https://coverartarchive.org/release-group/839176eb-2940-317f-add3-7801af9b37ac/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/839176eb-2940-317f-add3-7801af9b37ac/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 747,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 747）；主線：RIO／前衛搖滾：無調、拐拍、樂團編制仍有搖滾骨架→硬蕊4；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 4；obscurity=5 但沒有遺珠級證據（listeners 747），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "沒有一首事先寫好，全在錄音室當場彈出來。十一天的即興聚會是 Cassiber 的開端，1982 年四位樂手在一間瑞士錄音室裡玩出了這個團，同年 10 月 1 日首度公開演出於法蘭克福。四人是鼓手 Cutler、彈鋼琴與合成器的 Goebbels、薩克斯風樂手 Harth 與玩 Korg 合成器並處理錄音帶的 Anders。1984 年 4 月在法蘭克福錄這張時，內頁聲明全部當場演奏，只補了少量疊錄。他們還把 Chic 的一首歌改成滿是怪噪音的版本。Harth 在這張之後離團。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/310883-Cassiber-Beauty-The-Beast",
+     "https://de.wikipedia.org/wiki/Cassiber",
+     "https://www.freejazzblog.org/2014/03/cassiber-cassiber-box-rer-2013.html",
+     "https://musicbrainz.org/release-group/839176eb-2940-317f-add3-7801af9b37ac"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music3/v4/cc/0d/f3/cc0df307-2805-2ed0-5df8-4a21c0eb1355/mzaf_3553047992171494568.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "appleCollectionId": "68877900",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 68877900「Cassiber《Beauty and the Beast》」：曲目 10/11 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Six Rays〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Cassiber",
+   "album": "Perfect Worlds",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b0d0e5c0-ac13-4004-bfab-6603cc99d5a0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "RIO／前衛搖滾尖細那半（擴寫 mc35）：Cassiber 第三張，取樣器與電子化更明顯｜策展無疑點｜MB release-group b0d0e5c0-ac13-4004-bfab-6603cc99d5a0：title「Perfect Worlds」、Album、first-release-date 1986、artist-credit「Cassiber」。證據：https://musicbrainz.org/release-group/b0d0e5c0-ac13-4004-bfab-6603cc99d5a0 https://coverartarchive.org/release-group/b0d0e5c0-ac13-4004-bfab-6603cc99d5a0/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b0d0e5c0-ac13-4004-bfab-6603cc99d5a0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 2289,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2289）；主線：RIO／前衛搖滾：無調、拐拍、樂團編制仍有搖滾骨架→硬蕊4；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 4；obscurity=5 但沒有遺珠級證據（listeners 2289），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "取樣貝多芬，同時有人用德文朗讀 Defoe。Harth 離團後，Cassiber 只剩作詞兼打鼓的 Cutler，以及負責作曲的 Anders 與 Goebbels。兩件事都發生在〈Crusoe's Landing〉，取樣來自《第三號交響曲》，念出德譯 Defoe 文字的正是 Anders。整張在 1986 年 8 月錄成、交給德國 Riskant 發行，9 首共約 33 分鐘，比前作更有編排。Anders 的聲音與其說是說唱，不如說是吼，Cutler 的鼓帶著龐克式爆發。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/726733-Cassiber-Perfect-Worlds",
+     "https://www.freejazzblog.org/2014/03/cassiber-cassiber-box-rer-2013.html",
+     "https://de.wikipedia.org/wiki/Cassiber",
+     "https://musicbrainz.org/release-group/b0d0e5c0-ac13-4004-bfab-6603cc99d5a0"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/19/cc/88/19cc885b-605f-5ee3-1fcd-2bc376f0a15c/mzaf_15083004301711897551.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "appleCollectionId": "921086572",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 921086572「Cassiber《Perfect Worlds》」：ReR 再版 9 軌，6 軌曲名對上 MB 原盤，取第 1 軌〈Dust and Ashes〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Cassiber",
+   "album": "A Face We All Know",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e2768cce-7e97-3559-b593-df76ac426a33",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "RIO／前衛搖滾尖細那半（擴寫 mc35）：Cassiber 三人編制的最後一張｜策展無疑點｜MB release-group e2768cce-7e97-3559-b593-df76ac426a33：title「A Face We All Know」、Album、first-release-date 1990、artist-credit「Cassiber」。證據：https://musicbrainz.org/release-group/e2768cce-7e97-3559-b593-df76ac426a33 https://coverartarchive.org/release-group/e2768cce-7e97-3559-b593-df76ac426a33/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e2768cce-7e97-3559-b593-df76ac426a33/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 742,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 742）；主線：RIO／前衛搖滾：無調、拐拍、樂團編制仍有搖滾骨架→硬蕊4；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 4；obscurity=5 但沒有遺珠級證據（listeners 742），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "主角是一個睡不著的獨裁者，舊秩序正在外頭崩解。這段劇情出自 Cassiber 打鼓也寫詞的 Chris Cutler，他在 1988 年 7 月構思：那位獨裁者或許被關在一座電台裡，一邊回憶一邊出現幻覺。到了 11 月 28 日，錄音在東柏林的東德藝術學院電子音樂工作室展開，1990 年才在 Goebbels 的地下室組裝完成。其中五軌用上 Pynchon《萬有引力之虹》的段落，授權靠傳真洽詢，一兩天就到手。與早期的集體即興相反，整張預先寫定，18 軌裡有的短到數秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1044823-Cassiber-A-Face-We-All-Know",
+     "https://shipwrecklibrary.com/?p=9193",
+     "https://www.freejazzblog.org/2014/03/cassiber-cassiber-box-rer-2013.html",
+     "https://de.wikipedia.org/wiki/Cassiber",
+     "https://musicbrainz.org/release-group/e2768cce-7e97-3559-b593-df76ac426a33"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/8c/ab/f7/mzm.pehdbthy.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "appleCollectionId": "52161958",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 52161958「Cassiber《A Face We All Know》」：曲目 18/18 對上 MB 原盤（Apple 共 18 軌），取第 1 軌〈This Was the Way It Was〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Skeleton Crew",
+   "album": "Learn To Talk",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "acd185f5-fe9c-4018-95e9-1c6f15f90114",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "RIO／前衛搖滾尖細那半（擴寫 mc35）：Fred Frith 與 Tom Cora 的 Skeleton Crew 首張，邊彈邊打的尖細 RIO｜策展無疑點｜MB release-group acd185f5-fe9c-4018-95e9-1c6f15f90114：title「Learn To Talk」、Album、first-release-date 1984、artist-credit「Skeleton Crew」。證據：https://musicbrainz.org/release-group/acd185f5-fe9c-4018-95e9-1c6f15f90114 https://coverartarchive.org/release-group/acd185f5-fe9c-4018-95e9-1c6f15f90114/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/acd185f5-fe9c-4018-95e9-1c6f15f90114/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 838,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 838）；主線：RIO／前衛搖滾：無調、拐拍、樂團編制仍有搖滾骨架→硬蕊4；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 4；obscurity=5 但沒有遺珠級證據（listeners 838），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兩個人當一整團用，節奏靠腳踩的機關。原本要組四重奏，另兩人卻都因肺部塌陷無法加入，Skeleton Crew 於是只剩吉他手 Fred Frith 與大提琴手 Tom Cora。Frith 彈吉他、拉小提琴也打鼓，Cora 拉大提琴、彈貝斯，兩人用自製鼓組與腳控裝置打出節奏。錄音在跨年假期間於瑞士進行，歌曲與磁帶拼貼交錯出現。〈Victoryville〉裡，一台故障的錄音機把錄音帶兩面同時播了出來。唱片由 Recommended Music 於 1984 年出版。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/760345-Skeleton-Crew-2-Fred-Frith-Tom-Cora-Learn-To-Talk",
+     "https://en.wikipedia.org/wiki/Skeleton_Crew_(band)",
+     "https://musicbrainz.org/release-group/acd185f5-fe9c-4018-95e9-1c6f15f90114"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e2/c2/26/e2c22689-e48e-65aa-d2d1-4fa42dc5bc05/mzaf_17994621364222115044.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "appleCollectionId": "119036038",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 119036038「Skeleton Crew《The Country of Blinds / Learn to Talk (Digital Version)》」：曲目 11/13 對上 MB 原盤（Apple 共 31 軌），取第 1 軌〈Que Viva/ Onward and Upwards〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "5uu's",
+   "album": "Hunger's Teeth",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7edc6fcf-61b0-310a-88c7-9fc9fd74f7f7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "RIO／前衛搖滾尖細那半（擴寫 mc35）：5uu's 的 RēR 代表作，Bob Drake 乾瘦製作的美國 RIO｜策展無疑點｜MB release-group 7edc6fcf-61b0-310a-88c7-9fc9fd74f7f7：title「Hunger's Teeth」、Album、first-release-date 1994、artist-credit「5uu's」。證據：https://musicbrainz.org/release-group/7edc6fcf-61b0-310a-88c7-9fc9fd74f7f7 https://coverartarchive.org/release-group/7edc6fcf-61b0-310a-88c7-9fc9fd74f7f7/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7edc6fcf-61b0-310a-88c7-9fc9fd74f7f7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 1987,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1987）；主線：RIO／前衛搖滾：無調、拐拍、樂團編制仍有搖滾骨架→硬蕊4；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 4；obscurity=5 但沒有遺珠級證據（listeners 1987），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "客席欄寫著餐具、金屬桌子和跳傘用小鳴笛。1984 年的洛杉磯，鼓手兼作曲人 Dave Kerman 組成前衛搖滾樂團 5uu's，樂團受歐洲 RIO 運動影響，被歸為「美國版 RIO」。那些樂器屬於客席樂手 Michelle Bos，名單上還列了一項「便士噴泉」。Kerman 在 1994 年重組樂團，找來鍵盤手 Sanjay Kumar 與 Bob Drake。ReR Megacorp 也在同一年發行，11 首長度多為 2 到 5 分鐘。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/5uu%27s",
+     "https://www.discogs.com/release/4410405-5uus-Hungers-Teeth",
+     "https://en.wikipedia.org/wiki/Hunger%27s_Teeth",
+     "https://musicbrainz.org/release-group/7edc6fcf-61b0-310a-88c7-9fc9fd74f7f7"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/58/89/e7/mzm.fhyfyhpz.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "appleCollectionId": "51882195",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 51882195「5uu's《Hunger's Teeth》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Well...Not Chickenshit〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "5uu's",
+   "album": "Crisis in Clay",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "8138352b-6988-396b-b42e-89e61742765c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "RIO／前衛搖滾尖細那半（擴寫 mc35）：5uu's 與 Bob Drake 的續作，延續 Hunger's Teeth 的尖細寫作｜策展無疑點｜MB release-group 8138352b-6988-396b-b42e-89e61742765c：title「Crisis in Clay」、Album、first-release-date 1997、artist-credit「5uu's」。證據：https://musicbrainz.org/release-group/8138352b-6988-396b-b42e-89e61742765c https://coverartarchive.org/release-group/8138352b-6988-396b-b42e-89e61742765c/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8138352b-6988-396b-b42e-89e61742765c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 929,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 929）；主線：RIO／前衛搖滾：無調、拐拍、樂團編制仍有搖滾骨架→硬蕊4；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 4；obscurity=5 但沒有遺珠級證據（listeners 929），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兩人把一座沒人住的農舍，親手修成錄音室。那兩人是 5uu's 的鼓手 Kerman 與團員 Bob Drake，他們在 1995 年搬進法國南部的這座農舍，屋主之一是 Chris Cutler。整修完成的 Studio Midi-Pyrénées 由 Drake 擔任駐點工程師兼製作人，錄音與混音都在這裡完成。詞曲全部出自 Kerman 之手。16 首都在 5 分鐘以內，最短 42 秒。1997 年 12 月 23 日由 ReR Megacorp 發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Crisis_in_Clay",
+     "https://en.wikipedia.org/wiki/5uu%27s",
+     "https://www.discogs.com/release/5553885-5UUS-Crisis-In-Clay",
+     "https://musicbrainz.org/release-group/8138352b-6988-396b-b42e-89e61742765c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/d3/75/d8/mzm.bxcrwkze.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "appleCollectionId": "186734888",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 186734888「5uu's《Crisis In Clay》」：曲目 16/16 對上 MB 原盤（Apple 共 16 軌），取第 1 軌〈Comeuppance〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Doctor Nerve",
+   "album": "Armed Observation",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "40299e31-9812-4b44-a5a1-bcf6d001189b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "RIO／前衛搖滾尖細那半（擴寫 mc35）：Doctor Nerve 在 Cuneiform 的盤，紐約 RIO 最快最尖的一支｜⚠ 銅管較滿，y 貼 0.2｜MB release-group 40299e31-9812-4b44-a5a1-bcf6d001189b：title「Armed Observation」、Album、first-release-date 1987、artist-credit「Doctor Nerve」。證據：https://musicbrainz.org/release-group/40299e31-9812-4b44-a5a1-bcf6d001189b https://coverartarchive.org/release-group/40299e31-9812-4b44-a5a1-bcf6d001189b/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/40299e31-9812-4b44-a5a1-bcf6d001189b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 144,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 144）；主線：RIO／前衛搖滾：無調、拐拍、樂團編制仍有搖滾骨架→硬蕊4；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 4；obscurity=5 但沒有遺珠級證據（listeners 144），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "10 秒長的一首，曲名是德語「沒有爵士唱片」。紐約吉他手、作曲家 Nick Didkovsky 於 1984 年創立 Doctor Nerve，玩的是前衛搖滾。那首叫〈Keine Jazz Platte〉；另一首〈Wir Sind Dickhäuter〉在德語裡是「我們是厚皮動物」。這是他們第二張 LP，1987 年交給 Cuneiform 出版，收 14 首。鼓與兩把電貝斯撐住底部，高音薩克斯風、小號與低音單簧管組成管樂前線，吹小號的是 Dave Douglas。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Nick_Didkovsky",
+     "https://www.discogs.com/release/1947935-Doctor-Nerve-Armed-Observation",
+     "https://www.discogs.com/release/1786554-Doctor-Nerve-Armed-Observation-Out-To-Bomb-Fresh-Kings",
+     "https://www.discogs.com/release/1039070-Doctor-Nerve-Beta-14-Ok",
+     "https://musicbrainz.org/release-group/40299e31-9812-4b44-a5a1-bcf6d001189b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Yugen",
+   "album": "Labirinto d'acqua",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a303261e-ab95-4d63-b592-9f45d14bf59a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "RIO／前衛搖滾尖細那半（擴寫 mc35）：Yugen 首張，AltrOck 新世代 RIO 代表，Henry Cow 一路的室內無調｜策展無疑點｜MB release-group a303261e-ab95-4d63-b592-9f45d14bf59a：title「Labirinto d'acqua」、Album、first-release-date 2006、artist-credit「Yugen」。證據：https://musicbrainz.org/release-group/a303261e-ab95-4d63-b592-9f45d14bf59a https://coverartarchive.org/release-group/a303261e-ab95-4d63-b592-9f45d14bf59a/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a303261e-ab95-4d63-b592-9f45d14bf59a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 1702,
+    "source": "manual:avant-rubric",
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1702）；主線：RIO／前衛搖滾：無調、拐拍、樂團編制仍有搖滾骨架→硬蕊4；冷門照 Last.fm"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 4；obscurity=5 但沒有遺珠級證據（listeners 1702），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "AltrOck 目錄第一號，是老闆自己參與構想的團。義大利樂團 Yugen 走前衛搖滾，出自 AltrOck 創辦人 Marcello Marinone 與吉他手 Francesco Zago 的共同構想。首作 2006 年問世，目錄號 ALT 001，兩人一起掛名製作。兩位鼓手之一是 5uu's 的 Dave Kerman，編制裡還有倍低音薩克斯風、大鍵琴與尺八。素材取自 Erik Satie 的主題，14 首短則 50 秒，長達 9 分 23 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3910570-Yūgen-Labirinto-DAcqua",
+     "https://www.waysidemusic.com/Music-Products/Yugen-Labirinto-dAcqua-CD__33-ALTROCK-spc-001.aspx",
+     "https://progarchives.com/album.asp?id=14185",
+     "https://musicbrainz.org/release-group/a303261e-ab95-4d63-b592-9f45d14bf59a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/d2/26/fd/d226fd28-c4a6-ecbe-f951-022f4a4193fd/mzaf_4509626765015249761.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T11:23:57Z",
+    "appleCollectionId": "320389982",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 320389982「Yugen《Labirinto d'Acqua》」：曲目 13/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Sévére Réprimande〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  }
+ ]
+}
