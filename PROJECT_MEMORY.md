@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 7 輪 ml38／md22：roots dub＋Ariwa lovers 26 張、無鼓 drone metal＋暗色 tape loop 26 張上線，落格 26/26、26/26
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 7 輪＋「恍惚可以多增加一點 downtempo 與 dub 這類的」，本工作階段負責 ml38、md22（評分照 10-23 體感標準）。ml38（`add-20261023-ml38`，恍惚：70s roots dub 二線＋ml37 UK dub）：Harry Mudie《In Dub Conference》×3、Rico《Wareika Dub》、Michael Prophet ×2、Wayne Wade、Hugh Mundell、Linval Thompson ×2、Barry Brown ×3、Viceroys、Lacksley Castell、Don Carlos、Tyrone Evans、John Clarke、Meditations、Roland Alphonso、Horace Andy ×2、Ariwa《Dub Showcase》×2、Wayne Jarrett、Bunny Wailer《Dubd’sco Vol. 1》。md22（`add-20261023-md22`，頹靡：無鼓 drone metal／post-metal ambient＋md23 tape loop）：Tribes of Neurot ×2、Æthenor、Mamiffer & Circle、Burial Chamber Trio、O’Malley《Éternelle Idole》、KTL、Barn Owl《V》、Jodis、Final ×3、Fear Falls Burning ×3、Aidan Baker、Lustmord ×4、Bass Communion ×3、Jasper TX ×2、Mathieu《Before Nostromo》。
+- **策展→研究汰換**：ml38 策展 36、主線汰 3（色溫貼邊 1、讓並行 ml41 的 Mad Professor 2）、研究汰 7（冷硬器樂 dub 3、合成器 boogie、精選 2、改名重發）→ 26；池中器樂重低音 dub 與 UK steppers 全判冷落頹靡，只收旋律型 dub 與濕混音人聲盤。md22 策展 38、研究汰 12（有鼓推進／刺耳爆裂 6、偏暖 5、彙集 1）→ 26。
+- **主線審稿**：ml38 改 3 處（單源評價「Jammy 最好的節奏之一」「最成功的歌手之一」刪、《Mezzanine》五首數字拿掉）；md22 改 4 處（單源樂評比喻 2、單源「唯一用上吉他」、KTL「抗戰」譯詞失準）；事實層未動、hook 未動。
+- **上線**：card_catalog 26＋26、KV 26＋26 鍵回讀逐字一致、試聽 16＋18 ready（人工配 12）、seed +52、published gate 兩批 0 error；封面 CAA 40、Apple 4、Discogs 8（已登錄 registry），live-check 全 200。上線前對 origin 77 個分支 seed＋卡單去重 0 撞。
+- **情緒評分**：`score-ml38`、`score-md22`。**ml38 落恍惚 26/26（100%）**、**md22 落頹靡 26/26（100%）**。八格（併 main 後）：恍惚 1,268、頹靡 1,430、冷冽 1,429。
+- **類型樹**：52/52 落位；Last.fm 誤標的 4 張 reggae（Rico jazz/rock、Wade、兩張 Showcase 空）seed 曲風欄改回 world；`genre-l3-artist-map.json` 補 reggae dub／roots 5 位、rock/metal/doom 5 位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 26 個掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{ml38,md22}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml38,md22}.json`、`master-override-ml38.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml38,md22}/`、`onboarding-manifest-add-20261023-{ml38,md22}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml38,md22}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 52/52；build-card-moods 錨點 104/104。
+
 ### 2026-10-23｜dip-vinyl-shop｜原聲帶簡介重寫：開工準備（候選 196 張）＋寫作／研究規則加「原聲帶先點出作品」
 
 - **內容**：店主看到《Chrono Cross Original Soundtrack》簡介只談曲名寫法與盤號：「乍看不知道是超時空之鑰原聲帶很可惜，其他原聲帶也是，盡量多說一點相關的故事」（《Chrono Cross》台灣通稱《超時空之輪》，是《超時空之鑰》續作）。掃卡池＋KV 簡介，整理 196 張遊戲／電影／動畫／音樂劇原聲帶到 `batch-progress/ost-desc-20261023/candidates.json`（含現有簡介與 KV 鍵；關鍵字粗篩 111 張偏資料庫口吻，僅供參考），`BRIEF.md` 寫分流與重寫規則；`writer-base.md`、`research-base.md` 加「原聲帶：前兩句點出作品（台灣通行中文名＋原名＋類型、系列關係），講作品與音樂的故事，盤號版本最多一句」。重寫另開工作階段照 dip-desc-restyle 產線跑，《Chrono Cross》排第一批。

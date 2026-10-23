@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **367** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 129、已退回 1）。
+共 **375** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 137、已退回 1）。
 最後更新：2026-10-23
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -276,6 +276,14 @@
 |---|---|---:|---|---|---|---|
 | Deathprod 《Let Me Be Forever Animal》 | [#31026103](https://www.discogs.com/release/31026103) | 2024 | Smalltown Supersound | STS421LP | Discogs 搜尋唯一版本、主線目視與盤名相符 | ok |
 
+## add-20261023-md22（3 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Jasper TX 《A Darkness》 | [#930116](https://www.discogs.com/release/930116) | 2007 | Lidar | lidar_1 | Discogs master 66874 的版本、主線目視與盤名相符 | ok |
+| Jasper TX 《Black Sleep》 | [#1382371](https://www.discogs.com/release/1382371) | 2008 | Miasmah | MIACD008 | 唯一版本、主線目視與盤名相符 | ok |
+| Jodis 《Secret House》 | [#1975816](https://www.discogs.com/release/1975816) | 2009 | Hydra Head Records | HH 666 191 | Discogs master 234049 的版本、主線目視與盤名相符 | ok |
+
 ## add-20261023-ml9（2 張）
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
@@ -288,6 +296,16 @@
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
 | LINION 《Leisurely》 | [#31147562](https://www.discogs.com/release/31147562) | 2020 | 嘿豹工作室 | none | Discogs API：CD、2020-09-22、嘿豹工作室、主線目視與盤名相符 | ok |
+
+## add-20261023-ml38（5 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Bunny Wailer 《Dubd’sco Vol. 1》 | [#681551](https://www.discogs.com/release/681551) | 1978 | Solomonic | 2537 | Discogs master 1126789 的版本、主線目視與盤名相符 | ok |
+| Don Carlos 《Spread Out》 | [#587584](https://www.discogs.com/release/587584) | 1983 | Burning Sounds | BS 1053 | Discogs master 591196 的版本、主線目視與盤名相符 | ok |
+| Michael Prophet 《Serious Reasoning》 | [#1679909](https://www.discogs.com/release/1679909) | 1980 | Island Records | ILPS 9606 | Discogs master 545164 的版本、主線目視與盤名相符 | ok |
+| Tyrone Evans 《Sings Bullwackie Style》 | [#3666291](https://www.discogs.com/release/3666291) | 1982 | Wackie's | WACKIE 3181 | 唯一版本、主線目視與盤名相符 | ok |
+| Wayne Wade 《Black Is Our Colour》 | [#858370](https://www.discogs.com/release/858370) | 1977 | Vivian Jackson (Yabby You) | none | Discogs master 549693 的版本、主線目視與盤名相符 | ok |
 
 ## add-20261023-ml41（3 張）
 

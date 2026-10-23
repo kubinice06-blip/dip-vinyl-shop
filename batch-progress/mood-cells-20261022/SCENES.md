@@ -51,13 +51,13 @@
 | 27 | md18 | 日本暗色 drone／ambient／暗色獨立 ＋ md20 北歐暗色電子與配樂 ＋ md19 華語／韓國暗色獨立 | ✅ 上線 36／落格 34 |
 | 28 | mc28 | 歐陸自由即興（ICP、Globe Unity、Misha Mengelberg、Irène Schweizer） ＋ mc34 日本前衛即興 | ✅ 上線 22／落格 19 |
 | 29 | mc33 | glitch／microsound／尖細實驗電子 ＋ mc35 RIO／前衛搖滾尖細那半 | ✅ 上線 28／落格 20 |
-| 30 | md22 | 無鼓 drone metal／post-metal ambient 二線 ＋ md23 暗黑 lo-fi／tape loops | 派→情緒薄格 ml38、md22（第 7 輪） |
+| 30 | md22 | 無鼓 drone metal／post-metal ambient 二線 ＋ md23 暗黑 lo-fi／tape loops | ✅ 上線 26／落格 26 |
 | 31 | mc22 | 當代前衛爵士（Tim Berne、Steve Lehman、Mary Halvorson、Craig Taborn、Tyshawn Sorey） ＋ mc31 剩餘 | ✅ 上線 31／落格 27 |
 | 32 | ml31 | 爵士弦樂抒情盤／慢板 ballad ＋ ml33 福音慢板／靈魂聖詩 | ✅ 上線 7／落格 7 |
 | 33 | ml32 | 拉丁 bolero／慢板浪漫 ＋ ml25 80s 慢板 reggae 歌 | ✅ 上線 16／落格 16 |
 | 34 | ml34 | 華語／日語／韓語抒情 ballad 厚編曲 ＋ ml36 Balearic／ambient pop 暖盤 | ✅ 上線 12／落格 11 |
 | 35 | ml35 | alt-country／Americana 濕而慢 ＋ ml33 剩餘 | ✅ 上線 14／落格 13 |
-| 36 | ml38 | 70s roots dub 二線 ＋ ml37 UK dub／digital dub 90s | 派→情緒薄格 ml38、md22（第 7 輪） |
+| 36 | ml38 | 70s roots dub 二線 ＋ ml37 UK dub／digital dub 90s | ✅ 上線 26／落格 26 |
 | 37 | ml40 | downtempo 暖盤三線 ＋ ml39 歐陸 dub／dubtronica 暖盤 | ✅ 上線 10／落格 10 |
 | 38 | ml41 | 日本 dub／downtempo 暖盤 ＋ ml37 剩餘 | ✅ 上線 12／落格 12 |
 | 39 | ml39 | 歐陸 dub／dubtronica 暖盤 ＋ ml40 剩餘 | 併入 ml40（場景見底，不再派） |
@@ -91,8 +91,8 @@
 | md19 | 18121 | 華語／韓國暗色獨立與實驗（落差草原系、Mong Tong 系、韓國 post-rock 冷盤） | 併入 md18（0 張：主盤在池、惘聞／Jambinai 判躁；不再派） |
 | md20 | 18201 | 北歐暗色電子與配樂（Biosphere 冷盤、Deathprod 系、Rune Grammofon 慢盤） | 併入 md18（收 19 張，Cyclic Law／Cold Meat Industry dark ambient 全中；Biosphere 判輕不收；餘量可併 md22） |
 | md21 | 18281 | goth rock／coldwave 慢盤二線（會跳舞的快歌落冷冽或亢奮，不收） | ✅ 上線 34／落格 33（2026-10-23，併 md15） |
-| md22 | 18361 | 無鼓 drone metal／post-metal ambient 二線 | |
-| md23 | 18441 | 暗黑 lo-fi／tape loops／Basinski 系 | |
+| md22 | 18361 | 無鼓 drone metal／post-metal ambient 二線 | ✅ 上線 26／落格 26（併 md23；策展 38、研究汰 12：有鼓推進／刺耳爆裂 6、偏暖 5、彙集 1；Lustmord、Bass Communion、Jasper TX 收進） |
+| md23 | 18441 | 暗黑 lo-fi／tape loops／Basinski 系 | 部分併入 md22（Bass Communion ×3、Jasper TX ×2、Mathieu 收；懷舊溫暖的 tape loop 多判暖，Philip Jeck、Andrew Chalk 不收） |
 | md24 | 18521 | 嘻哈 instrumental 冷盤（暗色 beat tape、冷的 abstract hip-hop） | 併入 md16（Sixtoo、Odd Nosdam、BSBD、Req、DJ Krush 已收；不再單獨派） |
 | md25 | 18601 | 冷的 ambient pop／art pop 慢盤（Julia Holter 冷盤、Jenny Hval 慢盤、Kate Bush 以外的暗 art pop） | 併入 md10（池中冷 art pop 多判輕，只收到 6 張） |
 
@@ -180,8 +180,8 @@
 | ml34 | 16641 | 華語／日語／韓語抒情 ballad 厚編曲（90s 弦樂、殘響厚、旋律清楚的慢歌盤） | ✅ 上線 12／落格 11（併 ml36；策展 22、研究汰 10；池中 CJK 抒情全判輕、真 Balearic 判輕，場景見底，不再派） |
 | ml35 | 16721 | alt-country／Americana 濕而慢（Cowboy Junkies、Lambchop、Mazzy Star 系） | ✅ 上線 14／落格 13（併 ml33；策展兩輪 33（放寬地域到英加澳濕 crooner）、主線汰 1、研究汰 18；池中 alt-country 全判輕，主場景見底，不再派） |
 | ml36 | 16801 | Balearic／ambient pop 暖盤（溫而霧、旋律清楚） | 併入 ml34（真 Balearic 池中判輕；暖吉他殘響 ambient pop 收 10；不再派） |
-| ml37 | 16881 | UK dub／digital dub 90s（Mad Professor、Zion Train、Iration Steppas、Jah Shaka、Dub Syndicate、Alpha & Omega 二線） | |
-| ml38 | 19001 | 70s roots dub 二線（Scientist、King Jammy、Augustus Pablo、Yabby You、Keith Hudson、Black Ark 周邊、Errol Thompson） | |
+| ml37 | 16881 | UK dub／digital dub 90s（Mad Professor、Zion Train、Iration Steppas、Jah Shaka、Dub Syndicate、Alpha & Omega 二線） | 部分併入 ml38（Ariwa lovers 收 4；steppers 全判冷落頹靡；Mad Professor《Dub You Crazy With Love》Part 2／3 讓 ml41） |
+| ml38 | 19001 | 70s roots dub 二線（Scientist、King Jammy、Augustus Pablo、Yabby You、Keith Hudson、Black Ark 周邊、Errol Thompson） | ✅ 上線 26／落格 26（併 ml37；策展 36、主線汰 3、研究汰 7；器樂重低音 dub 池中全判冷，收旋律型 dub 與二線製作人濕混音人聲盤） |
 | ml39 | 19081 | 歐陸 dub 與 dubtronica 暖盤（Dreadzone、Kruder & Dorfmeister、Tosca、Thievery Corporation 其他、Smith & Mighty、Dub Pistols 慢盤） | 併入 ml40（頭牌已在池或判輕判冷，不再派） |
 | ml40 | 19161 | downtempo 暖盤三線（Ninja Tune／Compost／Pussyfoot 暖盤、Bonobo 早期、Blockhead、Emancipator、Nightmares on Wax 其他、Fila Brazillia 以外） | ✅ 上線 10／落格 10（併 ml39；策展 36、主線汰 1、研究汰 24，場景見底） |
 | ml41 | 19241 | 日本 dub／downtempo 暖盤（Little Tempo、Dry & Heavy、Audio Active、Mute Beat、Gota、Kyoto Jazz Massive 慢盤、Cro-Magnon） | ✅ 上線 12／落格 12（併 ml37 lovers dub 那半；策展兩輪 30、主線汰 3（撞 ml40 1）、研究汰 15；日本 dub 池中多判冷、KJM 系落雀躍，場景見底，不再派） |
