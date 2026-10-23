@@ -71,3 +71,24 @@
 - **16698** 媒體名與媒體榜單名次一律不進 note（Echoes 當月之碟、各年度榜、評分全捨）；樂評內容只以「樂評」「廠方」口吻指派。Fortune 卡單廠牌已改 Soleil après minuit，note 只寫「法國廠牌」；Drowned 原版廠牌寫 Make Mine Music；Hammock 兩張的原發行寫 Darla。
 - **16699** n-gram 自查：hook 之間中文 4-gram 0 條；hook 與自己的 note 無 8 字以上逐字重複（僅曲名〈Blood Run〉與團名 Hammock 這類專名）；note 無一般否定句、無校對痕跡字串。
 - **16700** 腳本：`node qa-batch.mjs hooks add-20261023-ml34` 全部通過 ✓；`node chk-hook-crossgroup.mjs add-20261023-ml34` 5 組 12 張全部通過 ✓（hook 加權 19–27、note 170–236）。
+
+## 寫作層（writer-1）
+- **16701** 交件：`desc-tools/batches/output/add-20261023-ml34-out-1.json` 12 張（full 10：196–233；thin 2：Bliss Out 20 151、Fortune 160），key 逐字同序。`qa-batch out`、`qa-check-research`、`fix-spacing` 皆 0 處；`據` grep 0。初稿兩張超標（Lily 242、Sonic Boom 245），整格／整詞捨去：Lily 第二句改成「電影裡的 Lily Chou-Chou，現實中由⋯演唱」（同時避開複述 hook 的「虛構歌手」）；Sonic Boom 第二句改「他本名」、人聲理由一句縮短。
+- **16702** 第二句領句全照鉤子層 16696；「日」後一字全照 16697（呼吸 交、Drowned 問、Confluence 由、Maybe 在、Carousel 先、Emeralds 經、Fortune 上、ATBE 推、Underrated 發、Engineers 面；Bliss Out 20 與 Raising 只到月）。han() 4-gram 跨張 3 張以上 0 條；2 張殘片只剩樂器／note 原詞（大量殘響、吉他鍵盤與、合成器與）。途中拆掉「在年月日」「張在年月」「年月推出」「專輯在年」「專輯年月」（Engineers 去「在」、Raising 改「則在⋯登場」）、「發行聲音」（Maybe 改「整體近乎 drone」）、「器樂開場」（Emeralds 改「器樂作品」）。
+- **16703** Emeralds：note 指派「第二句以樂評之口領句：說它像 Cocteau Twins 的器樂專輯」屬單一來源的比較說法，照派工改成直述——第二句寫「Robin Guthrie 出身 Cocteau Twins，這回交出十首器樂作品」，比較句不寫、不轉述評論；也避開已上架句型「Robin Guthrie 是 Cocteau Twins 的吉他手」與 Fortune 的「共組」。
+- **16704** Confluence：note「廠方說它溫暖有機，也說它出奇地暗與極簡」改直述聲音（「質地溫暖有機，色調卻出奇地暗、極簡」），不帶「廠方說」。hook 已寫串流翻紅，note 首項「多年後才在串流上翻紅」不再複述。
+- **16705** Maybe：note「據訪談幾乎現場一次錄成」去掉「據訪談」，直述「幾乎是現場一次錄成」（note 列項、事實限定在「幾乎」）。hook 的代稱「冰島二人組」由第二句具名 Jónsi & Alex。
+- **16706** 否定句：Lily「未出道」改正面「出道前的 Salyu」；Confluence「全盤無鼓、無拍號」照 note 原詞保留（描述聲音，非更正句）。
+- **16707** 不複述 hook：Drowned 首項〈Blood Run〉加快腳步不重寫，只補〈Issa〉一句；Raising 吊床團名不重寫，第二句由 Common Children 領起、帶出納許維爾吉他雙人組 Hammock；Engineers〈Home〉開場不重寫，第三句改寫「曲中的吉他、鍵盤與弦樂」。
+- **16708** 身分補位（開頭兩句讓人知道是誰）：Bliss Out 20 第二句寫「丹麥的 Jonas Munk（Manual）」；Confluence 寫「Manual 背後的 Jonas Munk」（避開已上架「Manual 就是 Jonas Munk」）；Drowned 寫「用 Manual 這個名字發片」。
+- **16709** 媒體名、媒體榜單名次、評分：正文 0 處（樂評／廠方字樣 grep 0）。Fortune 廠牌照 note 只寫「法國廠牌」。
+- **16710** 輔助腳本：`/tmp/claude-0/-home-user-dip-vinyl-shop/f852df7d-fd50-5807-8588-9d2b85fb105f/scratchpad/writer-ml34-1/`（build／bodies／scan，前綴 ml34-1）。
+
+## 主線審稿（16711；2026-10-23，cloud-main 逐張審 12 張）
+- **16711** `desc2:Engineers|Engineers`：首句（hook）「隨即落進滴水洞穴」是樂評的比喻（研究稿 e 組引 Pitchfork「滴水的大洞穴」）→「隨即沉進大片濕潤殘響」；hooks-e、writer-1 input、out-1 三層同步。
+- 其餘 11 張逐張對過研究稿，未改字（寫作層已依派工把 Emeralds 的樂評比較句、Confluence「廠方說」、Maybe They Will Sing「據訪談」改成直述）。改後 `qa-batch hooks／out`、`qa-check-research` 全過。
+
+## 上線（16712–16714）
+- **16712** 封面：CAA 12，live-check 全 200。試聽 11 ready（Lily Chou-Chou《呼吸》人工配 Apple jp 1297925080《Kokyuu》9 軌）／1 unavailable（Bliss Out 20 Apple 無條目）。
+- **16713** 寫入：card_catalog 12/12、KV 13 鍵（含別名鍵）回讀逐字一致（stamp 202610231124）、seed +12、published gate 0 error。上線前跨分支去重 0 撞。三軸：硬蕊 2、經典 Lily Chou-Chou／Hammock《Maybe They Will Sing》4、其餘 3；冷門照 Last.fm。
+- **16714** 類型樹：子曲風預熱 12/12 tagged，12/12 落位，無需補 map；台灣流行卡 0，`tw-pop-artists.json` 不動；抽卡封面重建。

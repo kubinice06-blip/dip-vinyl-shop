@@ -99,3 +99,8 @@
 - **13632** `desc2:Yasunao Tone|Solo for Wounded CD`：刪「這張常被視為 glitch 的源頭文件之一。」（評價句、來源只有維基概括）（210→188 字）。
 - **13633** `desc2:Henry Cow|Western Culture`：「樂評形容它是用搖滾樂器演奏的現代室內樂」（單一樂評人引語）→「作曲者各自寫出無調、變拍號的段落」（研究稿 c 組 sound 欄）。
 - 其餘 25 張逐張對過研究稿，未改字。事實層未動，research／hooks／input 不需同步。改後 `qa-batch out`、`qa-check-research`、`fix-spacing` 全過。
+
+## 上線（13634–13636）
+- **13634** 封面：CAA 26、Apple 官方圖 2（Cyclo.《Cyclo.》CAA front-500 回 500；刀根康尚《MP3 Deviations #6+7》live-check 404，換 Apple 1825327612）；28 張 live-check 全 200。試聽 20 ready／8 unavailable（Hecker《Recordings for Rephlex》《Speculative Solution》、Amacher、Étron Fou ×3、Doctor Nerve Apple 無條目；Farmers Manual《fsck》Apple 只有 2019–20 重編版）。
+- **13635** 寫入：card_catalog 28/28、KV 28 鍵回讀逐字一致（stamp 202610231124）、seed +28、published gate 0 error。上線前對 origin 各 `claude/*` 分支 seed 與 2026-10-22／23 卡單去重 0 撞。三軸：硬蕊 glitch 5、RIO 4，經典 Cyclo.／Henry Cow《Western Culture》／Art Bears 4，其餘 3；冷門照 Last.fm（`ratings-override.json`）。
+- **13636** 類型樹：子曲風預熱 28/28 tagged；`genre-l3-artist-map.json` 補 EVOL《Proper Headshrinker》→ `electronic/idm/glitch`、Amacher《Sound Characters》→ `electronic/noise/concrete`，28/28 落位；抽卡封面重建。

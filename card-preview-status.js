@@ -3252,4 +3252,13 @@ window.DipPreviewStatus = Object.freeze({
   "the caretaker|deleted scenes - forgotten dreams": "unavailable",
   "leyland kirby|sadly, the future is no longer what it was": "unavailable",
   "mount vernon arts lab|the seance at hobs lane": "unavailable",
+  "farmers manual|fsck": "unavailable",
+  "hecker|recordings for rephlex": "unavailable",
+  "hecker|speculative solution": "unavailable",
+  "maryanne amacher|sound characters (making the third ear)": "unavailable",
+  "étron fou leloublan|batelages": "unavailable",
+  "étron fou leloublan|les trois fou's perdégagnent (au pays des...)": "unavailable",
+  "étron fou leloublan|les sillons de la terre": "unavailable",
+  "doctor nerve|armed observation": "unavailable",
+  "manual with jess kahr|bliss out, volume 20: the north shore": "unavailable",
 });
