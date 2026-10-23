@@ -40,3 +40,11 @@
 - 15881：Pure X《Angel》moodGuess 強存疑——PopMatters 樂評與團員訪談兩獨立來源皆稱這張剝掉殘響與失真、為三張中最清楚，主體是輕刷原聲吉他加耳語人聲、多數曲現場錄；「濕殘響吉他、假音」查無來源。體感乾淨有空氣，y 建議降到約 0 或汰換；x、z 尚可。Qobuz 寫 5/5 發行與 Fat Possum／Discogs 的 4/1 不合，不採。
 - 15882：Manual《Bajamar》moodGuess 存疑——Darla 官方稱「幾乎全由處理過的吉他構成」，無合成墊來源；旋律輪廓淡（Brainwashed 缺主導樂器、PopMatters 極簡需適應）。有 Brainwashed「溫暖而夢幻」與 Darla「溫暖有機」支持暖。建議 z 0.2～0.3、y 0.7～0.9 或視標準去留。發行日三處不一致（MB 2006-01 DK／2006-05 US、Darla 頁 07-24），寫作層只寫 2006 年。無鼓為推論，sound 欄寫「沒有明顯節奏」。
 - 15883：e 組 WebSearch 共用 3 次（Pure X、Bajamar 各 1、Pure X 補查 1）；Pitchfork 類站未取得，Pure X 錄音地點與製作人查無來源。
+
+## 研究 d 組
+- **15871**：Mojave 3《Ask Me Tomorrow》實為原聲吉他民謠（Wikipedia：acoustic-based；Big Takeover：原聲吉他領銜、克制、無殘響描述），照體感標準「乾淨原聲有空氣判輕」，moodGuess 存疑，建議汰換候補。
+- **15872**：Schnauss & Peters《Tomorrow Is Another Day》有鼓機與 glitch 節拍、樂評稱 summer breeze／uplifting，不是「無強鼓」，x 可能超 2.7、y 往輕；moodGuess 存疑。
+- **15873**：Hammock《Oblivion Hymns》x／y 無虞，z 存疑（KEXP 用 glacial、曲名與樂評偏悲壯）。
+- **15874**：Acetone《York Blvd.》發行日 MB／Discogs 2000-10-17 與 Wikipedia 2001-01-16 不一；年份沿用卡單 2000。吉他音色被形容 bone-dry，管風琴僅數首，略低於策展的「霧」，但暖、慢仍有樂評支持。
+- **15875**：Casino Versus Japan《Go Hawaii》無可讀樂評，標 thin；磁帶糊無法證實，Bandcamp 標籤有 beats。
+- WebSearch 用 3 次（Schnauss、Mojave 3、Casino）；Pitchfork 403／不可取，AllMusic 403。
