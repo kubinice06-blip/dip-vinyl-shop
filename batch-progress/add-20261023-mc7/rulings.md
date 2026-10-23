@@ -20,3 +20,11 @@
 - 11483：Gaiser 國籍三源衝突（RA 美國、MB 德國、起始地 Grand Rapids），facts 只寫起始地，不寫國籍；「M_nus 首張專輯」查不到，不寫。
 - 11484：Restore 卡單 label 空白，補 M_nus（Minus Inc.）；Houle 三張與 Tokyo+1、Live Extracts 因缺專屬樂評標 thin，聲音事實用藝人整體風格描述並在 facts 內標明非專屬。
 - 11485：WebSearch 3 次用於 Klick、Blank Fade（無結果）、Stabiles；Pitchfork 被封鎖、RA 搜尋頁無內文，Tokyo+1 的人聲切片比例無法證實。
+
+## 研究 e 組
+- 11521：TV Victor《Timeless Deceleration》是 70 分鐘單曲＋55 分鐘＋10 分鐘的雙 CD，兩張皆為更早氛圍專輯（1999 限量 CD、1994 BMG）的重發合併，Discogs 風格 Ambient／Minimal／Trip Hop；列「moodGuess 嚴重存疑・建議汰換」，facts 照實寫。
+- 11522：Jeff Mills《Chronicles of Possible Worlds》Discogs 風格為 Abstract／Ambient 且有後製小提琴，推翻 curatorWhy「快拍 techno」；年份 MB／Discogs 2014，版權行與維基 2013，facts 兩者並陳。
+- 11523：Pacou《No Computer Involved》curatorWhy「全類比硬體」無來源（維基只說是對 Ejay 類預設軟體的聲明），推翻；Pacou 生年採維基 1972，不推算年齡；Tresor 廠牌成立月三源不一（Discogs 7 月、維基 10 月），只寫「同年」。
+- 11524：Damon Wild《Colortheory》RA 小傳寫 1998，Discogs／MB 皆 2001，採 2001；Oliver Ho 兩張與 Damon Wild 因查無針對這張的聲音樂評，聲音事實限於 Discogs 風格標籤與廠牌簡介，status 標 thin。Prima Materia 實為 2×12 吋 EP（MB 列 Album），寫作層寫雙 12 吋。
+- 11525：Kit Clayton《Repetition and Nonsense》Discogs 6 首、Scaruffi 7 首，採 Discogs；風格含 Dub Techno，Scaruffi 稱重點在旋律與動態、含 downtempo 段，x 可能 <3.0，moodGuess 存疑。
+- 11526：WebSearch 3 次用於 TV Victor、Oliver Ho Prima Materia、Kit Clayton（皆無專屬樂評）；Pitchfork／AllMusic／Discogs 網頁 403，RA 評論頁無這幾張，Jeff Mills 兩張 BPM 與 kick 厚薄全組查無來源。
