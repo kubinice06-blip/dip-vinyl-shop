@@ -25,6 +25,8 @@
 - 20483：Stan Forebee《Jazz Sessions》卡單 year 2013／Digi Crates 為 MB 首發版（已 withdrawn）；現行可聽版為 2018-03-07 Stan Forebee Music 重發，年份取捨由主線裁。
 - 20484：BROCKBEATS《Tranquilizook》16 首 31:33（卡單 15 首 30 分略有出入）；Bandcamp 聽眾稱 warm and lethargic，為本組聲音證據最正面者。
 - 20485：策展稱 Fitz Ambro$e 與 Ohbliv 合作《Zen Vapors》未查到來源，未採用。
+- 20486：補位研究——Purrple Cat《Tranquil Trails》追加進 e 組，status thin（僅 Bandcamp 標籤與簡介，無樂評／訪談）；身分與 MB 相符，無廠牌、自行發行，曲長加總 28:32（策展 28.5 分）。
+- 20487：moodGuess 存疑（輕～中）：標籤 lofi girl／piano／sleep／study，簡介『cool breeze』偏清涼，屬乾淨鋼琴讀書背景型，y、z 恐偏輕偏中性；與同人 House in the Woods、Sands of Time 同判斷。無 upbeat、無陰冷字眼。
 
 ## 研究 a 組（20441–20450）
 - 20441：a 組十張 facts 各 8 條；status full 7／thin 3（Old.Klouds.LP、SLPHNC III、Zen Vapors）。Knxwledge 三張頁面皆無簡介，聲音證據來自 Bandcamp Daily 導覽與 Okayplayer；Ohbliv 靠 RVA Magazine 訪談；Wun Two《Ships》靠 The Find 的風格描述。
@@ -75,3 +77,4 @@
 - **補 1 張**：主線先汰的 Purrple Cat《Tranquil Trails》（28.5 分照同人池中 26 分盤先例可收），進 e 組補研究。其餘主線汰除卡（Kiefer y 0.8、Raw Clipz、Chilled Rooms、Kurio、Lewse Joints、old batch、Beat Sketches）風險未解，不補。
 - 定案 **31 張**（a 7、b 9、c 9、d 2、e 4）。
 - 卡單更正（研究層提出）：Fitz Ambro$e & Ohbliv《Zen Vapors》年份 2014→2013（Dandigs 2013-09-03 發行貼文「released today」，MB 首發日晚於實際發行）；Stan Forebee《Jazz Sessions》維持原盤首發 2013（2018 重發不改年份）。
+- 補研究：Purrple Cat《Tranquil Trails》標籤 piano／sleep／study、簡介 cool breeze，屬輕度存疑（無反證級字眼，同人池中兩張 y 1.0、z 1.0–1.1 皆落恍惚），留。定案 **31 張**。

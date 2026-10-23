@@ -20,6 +20,12 @@
 - 20642：Deep Frieze 的專輯序數（維基第四／Sonic Immersion 第三）對不上，facts 不寫序數；Track 2 座標採 CD 版 72°S 49°E。
 - 20643：S.E.T.I.《Baikal》、Necrophorus《Elinrós》、Ab Intra《Aura Imaginalis》三張聲音證據偏薄（無獨立樂評），status 標 thin，notes 寫 moodGuess 存疑；Baikal 另有 Bandcamp 標籤 glitch／techno 與「晶瑩」字眼，疑偏亮偏電子。
 - 20644：Arecibo 的 Brainwashed 樂評只取得搜尋摘要（頁面 404），不進 facts，只寫 notes；Lustmord 整體手法（洞穴／地穴錄音）僅作通例，不得當本盤聲音。
+- 20645：補位研究——Yog-Sothoth、Sabled Sun《2149》、Dronny Darko《Abduction》三張追加進 e 組，皆 full；身分與 MB／Bandcamp 一致，未推翻年份、廠牌、盤名。聲音證據來自廠牌文案、Textura、Igloo Magazine、Chain D.L.K.、This Is Darkness。
+- 20646：Yog-Sothoth moodGuess 存疑（輕～中）：Textura 描述甘美朗色彩段落、受控吉他哀鳴、明亮 ambient 段落、類小提琴旋律與模糊合唱，多人接力使質地不均；無鼓、無刺耳噪音。長度約 1 小時 58 分。
+- 20647：Sabled Sun《2149》moodGuess 存疑（中）：Igloo 稱廠牌最旋律化、最哀歌式的專輯之一，稀疏鋼琴線與合成器湧浪，另有『pulsating grooves』；序數 Bandcamp 稱第五張、Side-Line 摘要稱第三張，facts 採 Bandcamp。
+- 20648：Dronny Darko《Abduction》moodGuess 存疑（輕～中）：Chain D.L.K. 與 This Is Darkness 皆稱少 drone、以小聲響與田野錄音為主（近 lowercase），較稀疏而非持續低頻；有一段 noisy interlude，不構成刺耳噪音專輯。無鼓。
+- 20649：Dronny Darko 為 Oleg Puzan（基輔，Black Room 工作室）；This Is Darkness 頁為標籤彙整頁、摘要截斷，只取讀到的兩句。
+- 20650：WebSearch 用 3 次；Bandcamp、Igloo、Chain D.L.K.、Textura 皆走 WebFetch，MB 走 API。
 
 ## 研究 a 組（條號 20601–20610）
 - 20601：本批 Bandcamp 一律用 WebFetch 取廠牌文案（curl 被擋）；Discogs master／MB API 補曲目、曲長與風格；每張聲音事實 2–3 條，來源分廠牌文案、樂評、樂迷留言三級，樂迷留言只當輔助。
@@ -78,3 +84,4 @@
 - **補 3 張**（主線先汰的勻量卡，無聲音疑點）：A Cryo Chamber Collaboration《Yog-Sothoth》、Sabled Sun《2149》、Dronny Darko《Abduction》，進 e 組補研究。
 - 定案 **37 張**（a 8、b 6、c 7、d 8、e 8）。
 - 卡單更正：Necrophorus《Drifting in Motion》維持 2000 年首版（六首）；獻給 Beksiński 的〈Untitled〉屬 2008 Old Europa Cafe 重錄版，寫作層不得寫進本卡。
+- **補研究後再汰 3**：補位三張研究一查都有反證——Sabled Sun《2149》（最旋律化、哀歌式、鋼琴線）、Dronny Darko《Abduction》（少 drone、lowercase 田野錄音，判輕風險）、A Cryo Chamber Collaboration《Yog-Sothoth》（甘美朗、明亮段、類小提琴旋律）。候補已無乾淨卡，照實上架，**定案 34 張**（a 8、b 6、c 7、d 8、e 5）。
