@@ -71,3 +71,11 @@
 - 16471｜Kem《Album II》：刪「放進 70 年代末的深夜靈魂電台也不顯突兀」（單源樂評比較）；hook 的「臥室耳語」是聲音描述、有研究稿來源，保留。14 萬張／Billboard 第 5 名有研究稿來源（維基），保留。
 - 16472｜Kem《Promise to Love》：刪「樂評說他表現得相當收斂」（單源評價）。
 - 16473｜Mahalia《The Power and the Glory》：「樂評說，每一首都被弦樂與銅管淹沒」改直述「每一首都被弦樂與銅管團團包住」。其餘 4 張未改；事實層未動。Townsend 偏愛 Johnny Williams 有 Frémeaux 解說來源。
+
+## 上線與評分（2026-10-23，主線）（條號 16474–16476）
+- 16474｜上線：card_catalog 7／7、KV 7 鍵回讀逐字一致、試聽 6 ready（Kem 兩張人工配）＋1 unavailable、seed +7、published gate 0 error；封面 CAA 6＋Apple 1，live-check 7/7 200。上線前對 origin 71 個分支與 main 的 seed 去重 0 撞。類型樹 7/7 落位。
+- 16475｜評分 `score-ml31`（照 10-23 體感標準）：**落恍惚 7/7（100%）**。x 1.9–2.4、y 0.5–1.0、z 1.4–1.6；Mahalia 兩張 y 0.5／0.6 貼格線（大編制管弦合唱的包覆感），Kem 四張 y 0.8–0.9 照 quiet storm 規則判重。八格：恍惚 1,181。
+- 16476｜場景結論：**ml31 見底，不再派**——原聲爵士＋弦樂一律判輕（池中 with strings 系 y −1.0～−1.4），可收的只有 quiet storm 爵士靈魂與 Mahalia 管弦福音盤；ml33 福音池中多判輕，剩餘併 ml35。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+- Kem（1 位；Anita Baker、Mahalia Jackson 已有介紹）
