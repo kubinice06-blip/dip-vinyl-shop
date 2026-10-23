@@ -48,3 +48,11 @@
 - 21248：Fila《Mess》《Luck Be a Weirdo Tonight》《Jump Leads》僅有 Discogs 風格標籤（Downtempo；Luck 另含 Leftfield、Breaks），查無樂評；全數標 thin。Luck 的 Breaks 標籤是有 breaks 拍的風險。三者 dub／warm／hazy 原句皆無。
 - 21249：全組無任何樂評用 dark／cold／eerie／melancholic 等陰冷字眼；Jack Hawkins 電影對白採樣之外無人聲客串（Fila 全組）。Luck 唯一客席是 Bernard Moss（薩克斯風、長笛）。
 - 21250：日期不一致已取保守：Luck（MB 1997-05-05／維基 6 月 23 日／Discogs 6 月）、Push the Button（MB 1998-05-19／維基 5 月 4 日）、Jump Leads（MB 2002-02 美／2002-03-05 英）；facts 只寫年或標英版。Exclaim!、Houston Press、衛報全文 WebFetch 取不到，僅用摘要與維基收錄短語。WebSearch 用 3 次。建議汰換優先序：Push the Button、Change Is Coming、Father Demo Square；其次 Power Clown、Luck。
+
+## 研究 d 組
+- 21271：廠牌推翻（卡單 seed label 欄請改）：Peaking Lights《Clearvoiant》2008 原版是 Night People 錄音帶 NP041（限量 50 份，先前自行發行 CD-R），非 Not Not Fun；Chancha《Bienaventuranza》為 Wonderwheel Recordings（WONDERLP29），非 ZZK（ZZK 是《Rodante》）；Kaya《Desert Phase》為 Interchill Records（ICHILLCD038），《Up From the Dust》CD 為 Tribal Shift Records（TRIBE CD 23），皆非「Kaya Project」。
+- 21272：Sounds From the Ground《Footprints》是 2001 年德國 Black Flame／BMG 的選輯（Discogs 註明取自《Kin》《Terra Firma》並加幾首不同曲目），非原創專輯、官網專輯清單未收，廠牌亦非 Waveform；status thin，建議主線汰換（或改上《Kin》《Terra Firma》原專輯）。
+- 21273：Sounds From the Ground《Natural Selection》原始首發 2002（英國 Nettwerk），卡單 2003 是美國 Nū-tone 版；廠牌非 Waveform；年份請主線定（建議 2002）。策展層引的 Waveform 文案「dubby／dreamy／laid back」三處皆未在官網與 Bandcamp 核到，未寫入 facts。
+- 21274：moodGuess 存疑彙整（恍惚格風險）：Peaking Lights《E S C A P E》樂評明寫相對快的拍子、house-heavy dub、techno 味快節奏、upbeat and playful、重度失真，且為 Dunis 主唱的歌曲型盤，Bandcamp 用 melancholic；Chancha《Bienaventuranza》六位客座歌手領唱（約半數曲目屬歌曲型），評論稱 dancefloor friendly drum beats、house、dancehall，用了 haunting／eerie；Kaya《Up From the Dust》多達七位歌手，聽眾稱 lots of groove；Kaya《Desert Phase》有 Shahin Badar 等客座人聲、Bandcamp 用 haunting 形容沙漠氣質；Chancha《Rodante》無任何聲音層級來源，標籤含 Dancehall、Bass Music，策展層預估無法驗證。
+- 21275：支持恍惚的原句：Sounds From the Ground 官網自稱「Warm, deep and Funky Electronic Music」、dub 根源與「lovingly produced basslines」，Bandcamp 稱「bass-heavy downtempo」（皆樂團自述，非第三方樂評；funky、driving rhythms 偏動需主線聽感再判）；《High Rising》僅〈Beautiful Feeling〉有 Taz Alexander 客座人聲，Gaudi 只貢獻合成器（策展層寫「Taz、Gaudi 客演」更正），三張中最符合預估。
+- 21276：Peaking Lights《E S C A P E》Bandcamp 稱 Dekmantel 首發，XLR8R 轉述廠牌稿稱第二次（前有 2018 EP《Sea of Sand》）、第八張專輯（Arcana 稱第六張），facts 採 XLR8R 版並歸屬到來源。Exclaim!「sultry western soundtrack」、NPR 頁面本次抓取失敗（Exclaim! 只回導覽、NPR 503），前者未寫入，後者描述引自搜尋摘要僅作輔證。WebSearch 3 次已用完。
