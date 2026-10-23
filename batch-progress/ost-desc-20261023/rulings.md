@@ -70,3 +70,8 @@ hook 前提逐張對研究稿 facts 核過（Chrono Cross 加藤指名、Radical
 - 獅子王：不寫「Zimmer 第一次寫動畫」「南非經驗」；寫他因先前兩部非洲背景電影被找來、幼年喪父經驗放進木法沙之死。
 - 刺激：1936 年設定對 1902 年出版，寫「三十多年」。神鬼戰士：Holst 基金會提告、庭外和解，不寫金額與否認。
 - keyTracks 未查證的曲名不進正文。
+
+## ost-2 研究層回報的推翻（b 組）
+- Star Wars 不寫「合成器年代的反潮流」，寫「1970 年代末大型交響配樂復興」；盧卡斯想用現成古典樂一說他本人否認，正文不當事實。
+- Titanic「Cameron 原想請 Enya」不寫（uncertain）；Forrest Gump「越戰片必配源頭」屬流行說法、不寫（「據稱」不進正文）。
+- Matrix 不寫 Jason Bentley；BTTF 不寫 Outatime Orchestra 由來。La La Land 榜單屬歌曲盤，不寫進配樂盤。
