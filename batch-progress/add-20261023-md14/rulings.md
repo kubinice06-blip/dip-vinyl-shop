@@ -24,3 +24,8 @@
 - 17728：Lighthouse 策展層「水聲 drone」維基專輯條目未提水聲（只有霧號般、海螺、Apprehension Engine），facts 不寫水聲。
 - 17729：Sicario 與 Jóhannsson-Villeneuve 關係以「繼 Prisoners 第二度合作」寫，來源 Blade Runner 2049 維基條目。
 - 本組推翻策展層 2 處（Hereditary 樂器、Lighthouse 水聲）；moodGuess 存疑 6 張。WebSearch 用 1 次（Color Out of Space 樂評）。
+
+## 研究 b 組
+- 17731　b 組 9 張 facts 8–10 條，皆附 https；WebSearch 3 次（Reitzell／Lustmord／Carolan），其餘走 MB API、維基、Discogs API、Red Bull MA／Range／Musique Fantastique 訪談。AllMusic／Discogs 網頁 403，僅用 Discogs API 取風格標籤。status：SH2 2024 thin（無樂評，只有 MB 曲目），其餘 full。
+- 17732　**moodGuess 存疑**：(a) Twin Peaks 2017（嚴重）——18 首中 6 首非 Badalamenti（Muddy Magnolias 的 American Woman 混音有人聲、Chromatics、Johnny Jewel、Thought Gang、波蘭愛樂的 Penderecki），慢爵士偏暖，非純 drone，建議汰換或降期待；(b) Nosferatu——60 弦＋10 銅管＋40 人合唱，尖叫無調弦樂與大型爆發，Carolan 稱既恐怖又浪漫、刻意避開合成器 drone，乾淨管弦／合唱可能判輕或偏暖；(c) SH4——Discogs Trip Hop／Downtempo／Goth Rock，有慢拍與 McGlynn／Romersa 人聲歌曲與一首現場錄音，第二碟和式質地；(d) Homecoming——4 首人聲歌、Alternative Rock／Downtempo，多為 2–4 分鐘短曲；(e) SH2 2024——僅 10 首 32.5 分鐘選輯，含鋼琴曲〈Laura Plays the Piano (2024)〉5:13（乾淨鋼琴風險）；(f) Hannibal S2——預估『太鼓悶擊』查無，實為甘美朗、小銅鈸、銅裂縫鼓、鈴鐘，鈴鐘泛音偏亮；(g) Hannibal S1 輕度存疑（現場打擊前景明顯）。First Reformed、Amnesia 無不符。
+- 17733　推翻／補正策展層：Homecoming 的 MB 首發 2008-10-07 來自 Unofficial release，官方 Konami 版 2008-11-24（年份仍 2008，label 取 Konami）；Nosferatu 維基稱 43 首、MB CD 51 首，以 MB 為準；SH2 2024 MB 無 label；Twin Peaks 專輯含非 Badalamenti 曲，掛名照 MB 不變。無年份／盤名被推翻。
