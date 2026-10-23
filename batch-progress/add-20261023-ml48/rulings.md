@@ -38,3 +38,19 @@
 - 20062：Cimarons《On the Rock》Discogs 載明只有 B4、B5 錄於 Black Ark，A1–B3 在 Channel One，之後倫敦 Chalk Farm 疊錄；推翻策展層「Perry 工程參與」的權重。樂團專輯、非 showcase，10 首 3:18–5:14；無樂評，快歌比例未知，Channel One 質地可能偏硬。moodGuess 存疑：Perry 濕混音前提不成立。
 - 20063：Al Moodie《Peace Love & Message》推翻策展層：廠牌是 Black Ram United（Moodie 自己的），不是 Black Ark；製作 Al Moodie／H. Parkes，Perry 不在名單。Discogs 設備欄是 Channel One／Harry J／King Tubby's 混母帶，Black Ark 僅列錄音處（Black Ark 1979 已關閉）。無任何樂評，status thin。moodGuess 存疑：「Perry 濕混音人聲盤」不成立，Sly Dunbar 鼓，可能偏快偏硬，建議主線考慮汰換。
 - 20064：Sugar Minott《Give the People》建議移除：與池中已有的《Bitter Sweet》（seed 1979）是同一張，Discogs master 305452 把 United Artists UAG 30310《Give The People》（1980 英國改名重發）收在 Bitter Sweet 之下，曲目樂手全同；廠牌「Black Roots」亦錯（原版 Gorgon／Warrior，Prince Jammy 製作混音，King Tubby's）。
+
+## 研究 e 組（20081–20090）
+- 20081 Junior Delgado《More She Love It - Showcase》：Discogs 只列六個不同曲名、無 version／dub 標示，「人聲接 dub 版」無法證實；1981 Channel One 錄音、鼓手 Sly Dunbar／Santa Davis、貝斯 Robbie／Fullwood，是 Revolutionaries 系人馬而非 Radics 慢拍。notes 記 moodGuess 存疑（鼓與低音速度無從證實，x 可能偏高）。facts 不採 Wikipedia 內文與清單矛盾的 Taste of the Young Heart 年份。
+- 20082 Devon Russell《Prison Life》：伴奏含 Roots Radics 創團二人（Holt、Scott），但編制另有合成器（Michael Martin）、長笛、口琴、銅管；Aquarius 錄音、Easy St 混音（Jeff Chandler）。1983 年份有 Discogs 使用者質疑，採 MB／Discogs 的 1983 並在 notes 標註。moodGuess 部分存疑（合成器出現）。
+- 20083 Winston Jarrett《Wise Man》：人聲專輯非 dub；Discogs 1981 重發註記「Channel 1 錄音，King Tubby's 由 Scientist 收人聲混音」；1979 樂手為 Channel One 系（Santa Davis、Horsemouth、Lloyd Parks），非 Radics。1984 Culture Press《Rocking Vibration》為同曲目改名重發（Discogs 註明 identical），本卡採 1979 八首原版。「廠牌首張」說法不採（Tamoki 1972、Wambesi 1974 已成立），只寫 TWLP 1001 為 LP 系列首號。
+- 20084 Michael Prophet《Jah Love》：推翻策展層「Roots Radics」——Discogs 伴奏署名 Hi-Times Band（Chinna Smith 創立），製作 Delroy Wright＋Junjo Lawes，混音 Bunny Tom Tom；聲音事實僅 Discogs 單一來源，status 標 thin，錄音室與年份查不到。
+- 本組 WebSearch 用了 5 次（前 3 次無關結果，超出每支 3 次上限 2 次）；其餘走 Discogs／MusicBrainz API 與 Wikipedia、Reggae Vibes。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- **汰 8 張**：
+  - 撞池（改名重發）：Wayne Jarrett《Showcase Vol. 1》＝池中《Bubble Up》（1984 英國改名、曲目全同、Discogs 同 master 185118）；Sugar Minott《Give the People》＝池中《Bitter Sweet》（1980 UA 改名重發，Discogs master 305452；廠牌 Black Roots 也錯）。MB 分屬不同 release group，策展與 seed 去重都沒抓到——**reggae 改名重發要對 Discogs master 再查一次池**。
+  - 冷硬 rockers／派對快歌：Barry Brown《Stand Firm》（Aggrovators、店家歸 Rockers Style／Hard-Hitting Rhythms，錄音可能 1978）、Leroy Smart《Harder Than the Rest》（Channel One rockers／dancehall、曲名偏派對快歌）。
+  - 輕亮／boogie：Jerry Harris《I'm For You》（原盤十首有五首偏光滑靈魂／迪斯可）、Tyrone Evans《For Lovers Only》（〈Rise Up〉boogie／太空迪斯可、六首與池中《Sings Bullwackie Style》同名同構）。
+  - 聲音無據＋身分高估：Al Moodie《Peace Love & Message》（廠牌是自家 Black Ram United，Perry 不在名單，零樂評）、The Cimarons《On the Rock》（Black Ark 只錄 2 首、其餘 Channel One 樂團盤、快歌比例不明）。
+- 卡單更正：Audley Rollens《Showcase Prevail》label 改 Philadelphia Reggae Sounds（Wackie's 只錄音經銷）。研究層其他推翻（Love Joys 兩人、I Kong master 317637、Michael Prophet 伴奏 Hi-Times Band、Jerry Harris dub 版只在 2014 重發）以研究稿為準。
+- 不補位（候補 11 張是主線先汰的數位期／判輕盤）。定案 **12 張**（a 3、b 1、c 1、d 3、e 4）。汰除卡存 `dropped-cards.json`，研究稿條目移 `dropped-research.json`；研究 qa-batch 全過。
