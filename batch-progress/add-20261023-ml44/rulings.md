@@ -82,3 +82,16 @@
 - **19542** 第二句全照鉤子層配表：Schnauss 領句（「就是那一位」，不複述 hook 的「德國電子音樂人」）／三人組／Budd 琴風／Spinout 出身／夫妻。日期：In Praise「日兩」照配、發行句改「新作…日由」；Always Returning「日上」照配（前一字「晨」）；Ceres 原配「日交」照用（前導「專輯」）；Guthrie & Budd 只寫 2007 年、Cindy 只寫 1993 年。
 - **19543** 自掃：本檔 5 張＋writer-2 五條 hook 的 han() 中文 4-gram 跨張 0 條。動筆前先拆掉「專輯年月日」×3 的潛在樣板（In Praise 的發行句領頭名詞改「新作」、Always Returning 以日期獨立成句、Ceres 保留「首張專輯」）。給 writer-2 的提醒：「年月日」前的「輯」「作」「晨」已被本檔用掉。
 - **19544** Cindy：note「同名曲收在同年 EP《Acetone》」寫成「那張 EP 就以團名為題」，避免「同名」與 hook 重字；媒體名、名次、星等一律未寫（Guthrie & Budd「較響、較不朦朧」與 Cindy 兩條樂評都以「樂評」帶出，未具名）。Always Returning 照 note 寫「第四張」，未沿用卡單「第三作」。
+
+## 寫作層（writer-2）
+- **19546** 交件：`desc-tools/batches/output/add-20261023-ml44-out-2.json` 5 張：Distance（thin）169、Blame Someone Else（thin）179、The Telescopes 233、Oak Island 221、I Can Feel the Night Around Me 220。初稿兩張 thin 超 180（207／202），整格捨去：Distance 刪自加的「隔著幾百公里寫歌錄音」（note 無此項）與「他們的」，Raymonde 壓縮解散句與動工句；I Can Feel 刪自加的「九首」（note 無曲數）。
+- **19547** 第二句全照鉤子層配表：樂種（Distance）／樂器（Raymonde：「彈貝斯兼鍵盤的」領句）／出身（Telescopes：1987 年 Burton upon Trent）／樂團關係（Oak Island：The War on Drugs 貝斯手）／錄音地點（I Can Feel：費城 The Space）。日期「日」後一字照 19535：日先・日跟、日經、日發、日，；Raymonde 只寫到 1997 年 10 月。避開舊卡 Forget the Mantra 的「Nightlands 是…單人計畫」與「樂評形容」句型，Oak Island 用「樂評稱」。
+- **19548** 自掃：本檔＋out-1 合掃 han() 中文 4-gram 跨張 0 條。途中拆掉「的第二張專輯」×3（Distance 改「第二張《Distance》」、Telescopes 改「樂團第二張全長作品」）、「專輯開」（I Can Feel 改「作品。前幾首」）、「兼彈鋼琴」對 out-1 Always Returning（Telescopes 改「同時負責鋼琴」）。
+- **19549** 派工補充照辦：媒體名、媒體榜單名次、星等整句不寫；無「據說／據傳」；Telescopes 的 Lawrie 原話轉間接敘述（「Lawrie 說…」為本人陳述，非轉述引導詞）。Distance 卡池掛 Quince，正文日美兩版並寫照 note。
+- **19550** 腳本：`qa-batch out` 全部通過（out-2 169–233，thin 2 張 ≤180）；`qa-check-research` 標記 0；`fix-spacing` 待補 0。
+
+## 主線審稿（2026-10-23，雲端主線，10 張逐張對研究稿）
+- 19554：`desc2:Engineers|Always Returning` 刪「樂評形容它慢而催眠，適合慵懶的秋日早晨。」——單一樂評（Popdose）評價句，照審稿規則刪；事實層未動，研究／鉤子不必同步。
+- 19555：`desc2:Robin Guthrie & Harold Budd|After the Night Falls` 刪「樂評拿兩張相比，認為本張較響，也較不朦朧。」——單源比較評價（Erasing Clouds）；事實層未動。
+- 19556：其餘 8 張逐句對回研究稿（Engineers 2010-02-01 離團、Pedigree Cuts、Acetone 1992 成軍／Spinout、Telescopes 1992-05-25 Creation／Untitled 命名、Oak Island 四層人聲、Tears Run Rings 三城）無誤，未改字。正文無媒體名、榜單、據說。
+- 試聽 10/10 ready（Telescopes、Raymonde 主線人工配，見 `preview-override.json`）；封面 CAA 8、Apple 2（Oak Island CAA 404、After the Night Falls CAA 連續 500），兩張 Apple 圖主線目視相符。冷門軸 10 張皆有 Last.fm listeners，照機器基線。
