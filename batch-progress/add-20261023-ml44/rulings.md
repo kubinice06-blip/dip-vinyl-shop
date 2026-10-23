@@ -37,3 +37,13 @@
 - **19496** Jesse Sykes & The Sweet Hereafter《Reckless Burning》推翻策展層：卡單 label Devil in the Woods 只是黑膠版，首發 CD 是 Barsuk BARK30＋Burn Burn Burn BBB005；Barsuk 簡介把 bark030 標 2002，年份有疑，寫作層保守。moodGuess 存疑：gothic country、NYT「rapt in fatalism and sorrow」、比 Marianne Faithfull → z 恐為負，建議視為頹靡／平靜候選，主線可汰換。
 - **19497** Novo Amor《Birthplace》status thin：聲音層只有 Bandcamp 聽者標籤，卡單的「殘響假聲合唱＋管樂＋合成器墊」無來源證實；y 恐偏輕（單人 indie folk）。身分確認（2018-10-19、AP034CD）。
 - **19498** 流程：WebSearch 本組用 3 次（Acetone 2、Sound of Ceres 1），其餘靠 WebFetch（維基、Merge、Barsuk、Bandcamp、Trouser Press、PopMatters）；Pitchfork、AllMusic、Uncut、Guardian 被工具擋，Clientele 兩張缺樂評原文。
+
+## 研究 c 組（條號 19501–19510）
+- 19501 Vanishing Twin《Choose Your Own Adventure》：moodGuess 存疑——來源為顫音琴、豎琴、塔布拉、鼓機與 motorik 律動的輕透 library／科幻配樂，非殘響霧；y、z 風險高，x 可能 2.7–3.1。建議汰換。
+- 19502 Dean Wareham：吉他 jangle／原聲為主、製作「俐落」，剝掉殘響偏輕，y 恐 ≤0.3；moodGuess 存疑。
+- 19503 Tears Run Rings《Distance》：查無針對本張的樂評，聲音靠 Slowdive 比較與《In Surges》旁證，status thin；MB 內 Quince（日本 6/2）、Clairecords（美國 8/24）並存，Big Takeover 稱 Deep Space 為第一版，卡單 Quince 保留。z 風險（Slowdive 系貼 0）。
+- 19504 Starflyer 59《The Fashion Focus》：卡單「Mellotron」查無，編制為 ARP String Ensemble、Rhodes、Farfisa；鍵盤取代疊吉他，y 偏輕，Trouser Press 稱 moody；moodGuess 存疑。
+- 19505 Violet Indiana《Russian Doll》：Ink19 稱比前作少了濃密暴風雨氣氛、更直接；y、z 存疑。
+- 19506 Jesse Sykes《Like, Love, Lust…》：荒涼（frostbit）、含 Crazy Horse 式搖滾與快曲，x、z 存疑；歐洲首發 2006 Fargo、美國 2007-02-06 Barsuk，卡單年份維持 2006。
+- 19507 Simon Raymonde《Blame Someone Else》：聲音面資料極少，status thin；Bella Union 目錄第一號 BELLA CD 1；sound 欄為推測，鉤子層勿當事實。
+- 推翻策展層：Starflyer 59 Mellotron 一處；其餘無年份、廠牌、盤名更動。
