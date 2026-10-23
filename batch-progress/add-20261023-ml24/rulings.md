@@ -77,3 +77,28 @@
 - **15907** 日期「日」後一字照 15896：以／辭／交；日期前一字三張互異（品／在／片），Casino、Manual 只寫年。Acetone 的遺作只寫逝世日與得年，不寫與發行相隔多久（發行日 2000／2001 歧義，研究 15874）。Casino 的 Hummer 廣告寫成「兩年後的夏天」標時序。
 - **15908** 媒體名與媒體榜單名次全數不寫（Acetone、Manual 的樂評寫成「樂評稱／樂評聽來」不具名）；無「據說／據傳」。Casino 的第二句不複述 hook 的「獨力寫彈錄」，改補發表名義與地下電子圈身分。
 - **15909** 自掃中文 4-gram（本檔＋writer-1 全部 hook；另掃 ml11 已上架兩檔）：本批內 3 次以上 0 條；初稿 2 次殘片「發表作品」（Casino×Manual）、「在年月日」（Acetone×Hammock）已拆。writer-1 out 交件時尚未存在，跨檔合掃留給主線收件時跑。腳本：`qa-batch out` 本檔 5 張 152–223、thin ≤180 ✓（張數 5 vs 11 為 out-1 未交）；`qa-check-research` 標記 0；`fix-spacing` 待補 0。輔助腳本在 scratchpad `wr-ml24-2/`。
+
+## 寫作層（writer-1）
+- **15901** 交件 `desc-tools/batches/output/add-20261023-ml24-out-1.json`（6 張全 full）：Jassbusters 228｜Regions 224｜Big Inner 216｜American Head 215｜Delta Sweete Revisited 215｜A Long Way to Fall 212。初稿無超標、無掉下限。`qa-batch out`、`qa-check-research` 標記 0；`fix-spacing` 抓到 1 處（Big Inner「White把」缺空格）已手改，複跑 0。轉述引導詞（據）0。
+- **15902** 第二句領句照 15895、「日」後一字照 15896（由／上／在／問／發／先）。日期前一字：Jassbusters「錄」、Regions「出版的」、Big Inner「號」、American Head「片」、Delta Sweete「的版本」、A Long Way to Fall「之後」（原為「是」，改掉以免長出「是年月日」）。
+- **15903** 不複述 hook：Big Inner 第二句改寫成替廠牌具名（Spacebomb）＋駐廠核心＋另一範本 Motown，不重提閣樓與 Stax；American Head 拿掉「想像樂團和他一起鬼混」（與 hook 同義）；Delta Sweete 拿掉「商業上失利」（hook「賣不動」已說）；A Long Way to Fall 不寫「隔了六年」，改「接在前作《Goodbye》之後」；Regions 不重提「無字木刻小說」，只具名書名與作者。
+- **15904** note 外的事實一律不寫：A Long Way to Fall 初稿的「美國晚一步上架」（facts 有、note 無）刪；《Goodbye》年份不寫。Regions「考慮做個人專輯」寫成「考慮單飛」（同義改寫，可逆）。媒體名與分數全不進正文，樂評只寫「樂評形容／樂評說／評論把…形容成／評論說」四種。
+- **15905** 自掃中文 4-gram：本檔 6 張內部跨張 0 條；對 writer-2 hooks 與 `ml24-out-2` 全文 0 條。對 add-2026102x 全池既有 out 的命中全是日期樣板（照 15896 指派）與「第三張專輯」「首張專輯」「維吉尼亞州里奇蒙」等專名／序數短語，未改。腳本在 scratchpad `wr-ml24-1/`（ml24-1-gen.mjs、ml24-1-ngram.mjs）。
+
+## 主線審稿（2026-10-23，cloud-main，11 張逐張讀過、對回研究稿）（條號 15913–15914）
+- **15913** 改 6 處，全是「樂評／評論說」轉述引導改直述聲音（事實不動，research／hooks／input 不必同步）：
+  - `desc2:Connan Mockasin|Jassbusters`：「樂評形容音色絲滑、心境平靜，開場…」→「音色絲滑、心境平靜，開場…」（228→224）。
+  - `desc2:Matthew E. White|Big Inner`：「評論把聲音形容成絲絨般的 70 年代靈魂」→「聲音是絲絨般的 70 年代靈魂」（216→211）。
+  - `desc2:Mercury Rev|Bobbie Gentry’s the Delta Sweete Revisited`：「評論說慢到近乎爬行」→「慢到近乎爬行」（215→212）。
+  - `desc2:Ulrich Schnauss|A Long Way to Fall`：「樂評說鼓點輕巧從容」→「鼓點輕巧從容」（212→209）。
+  - `desc2:Acetone|York Blvd.`：「樂評稱它 post-surf，溫暖…」→「整張帶著 post-surf 的味道，溫暖…」（223→227）。
+  - `desc2:Manual|Bajamar`：「樂評聽來，它像潮水…」→「整張像潮水…」（188→184）。
+- **15914** 其餘 5 張逐張審過未改字；事實抽查（Lynd Ward《Gods' Man》1929、Mercury Rev 1989 水牛城成軍、Richie Lee 2001-07-23 辭世得年 34）與研究稿一致。`qa-batch out` 全過。
+
+## 上線與評分（2026-10-23，主線）（條號 15915–15917）
+- **15915**：上線 11 張：card_catalog 11／11、KV 11 鍵回讀逐字一致（stamp 202610230911）、試聽 11 ready、seed +11、published gate 0 error（11 warning 皆 upc 盡力而為）。封面 CAA 11，live-check 全 200。上線前對 origin 各 `claude/*` 分支 seed 去重 0 撞。
+- **15916**：類型樹 11／11 落位（`genre-l3-artist-map.json` 補 Jim James → rock/indie-alt/neo-psych、Matthew E. White → soul/southern、Acetone → rock/dream-post/slowcore）；抽卡封面重建。
+- **15917**：**落格率 11/11＝100%**（`batch-progress/mood-axes/score-ml24/`，照 10-23 體感標準評分；conf mid 10、low 1）。貼邊：Connan Mockasin《Jassbusters》y 0.5、Hammock《Oblivion Hymns》z 0.3。**產量極低**：策展兩輪 24、主線汰 2、研究汰 11 → 11。暖 dream folk 主盤已被 ml2／ml11 收走，原聲民謠與有旋律的 new age 池中全判輕；能穩落恍惚的只剩「池中同人已落恍惚」的濕盤（Mercury Rev、Flaming Lips 慢盤、Schnauss 一路的 shoegaze-ambient、IDM 暖盤）。**ml24、ml30 不再派。**
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Jim James、Matthew E. White、Peaking Lights、Acetone、Hammock、Manual（6 位）。

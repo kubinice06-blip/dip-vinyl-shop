@@ -74,3 +74,21 @@
   - 暖：Love Is Colder Than Death《Mental Traveller》（轉凱爾特民謠）、Soul Whirling Somewhere《Eating the Sea》（搖籃曲、sparse yet warm）。
 - **補位 10 張**（叫回原策展代理補「無鼓、殘響／磁帶糊、陰冷」候補 11 張，主線再汰 William Basinski《Lamentations》——md1 先例 Basinski 色溫判中性落恍惚）：The Caretaker《Persistent Repetition of Phrases》《Additional Amnesiac Memories》《Take Care, It's a Desert Out There...》、Leyland Kirby《Eager to Tear Apart the Stars》《We, So Tired of All the Darkness in Our Lives》、The Stranger《Bleaklow》、Black Tape for a Blue Girl《As One Aflame Laid Bare by Desire》《To Touch the Milky Way》、Tara Vanflower《This Womb Like Liquid Honey》、Mike VanPortfleet《Beyond the Horizon Line》。MB 10/10 釘住。補位卡分入 a 5、b 2、c 2、e 1（卡單 `supplement:true`），由一支補研究代理 append 進各組研究稿。**定案 37 張**（a 8、b 8、c 7、d 7、e 7）。
 - 補位卡研究條號：沿用各組區間剩下的號（a 18288–18290、b 18300、c 18310、e 18330），不夠就寫在主線區間 18351 起。
+
+## 補研究（supplement）
+- 18288 Caretaker《Persistent Repetition of Phrases》：維基稱 2008-04-01、MB／Discogs 為 2008-05，且維基同頁對廠牌（HAFTW／Install）前後不一；寫年份與 Install 即可。Kirby 自述『warmer and more gentle』，z 建議 −0.3～−0.7。無鼓，白噪音層。
+- 18289 Caretaker《Additional Amnesiac Memories》：13 首 Memory 73–85 的 MP3 補遺（V/Vm 365 計畫），Wikipedia 歸 compilation、MB 記 Album；本盤無獨立聲音評論，聲音承襲母盤《TPAA》，status thin，z 建議 −0.7～−1.0。
+- 18290 Caretaker《Take Care, It's a Desert Out There...》：單軌 48 分，Fisher 紀念；Discogs 載明 Barbican 現場約 1700 張贈送、750 張線上販售。Scovell『almost weather-like』支持無鼓 drone 與冷；卡單『與 Stage 6 同一路』為策展推論。
+- 18300 The Stranger《Bleaklow》：無鼓、低頻無直接來源，Fisher 提到 Bleaklow 同 Raime 結合 dance-music dynamics，x 不排除偏高；評分以聽感為準。Brainwashed／Quietus 內容僅得搜尋摘要。
+- 18310 Black Tape for a Blue Girl《To Touch the Milky Way》：**moodGuess 存疑（中）**：全無聲音來源；Discogs 風格 Darkwave／Art Rock、名單含 Brian Viglione（Dresden Dolls；樂器未註明），無鼓不可保證。有歌曲式結構或鼓則汰換。
+- 18330 Mike VanPortfleet《Beyond the Horizon Line》：無聲音來源；曲名偏晨光／星空（Morning Sun、Blinding Glare），色溫可能不到 −1.4。Silber 034 對得上。
+- 18351 Leyland Kirby《Eager to Tear Apart the Stars》：無鼓、無取樣，合成器鋼琴＋靜電嘶聲＋次低頻（Quietus／Treble）；旋律性強（Budd／Blade Runner 比喻、Igloo『被托起』），z 建議 −0.3～−0.7。母帶署名 Loop-o／Lupo 衝突，不寫。
+- 18352 Leyland Kirby《We, So Tired of All the Darkness in Our Lives》：**moodGuess 存疑（嚴重）**：Quietus 寫有鬆垮昏沉的鼓＋慵懶鋼琴，維基稱鼓與鋼琴為核心、鼓與合成器模擬行進、downtempo 節奏、比 Caretaker 正面、Kirby 說音樂不該具侵略性、可給安慰。預估『無鼓、合成器墊、磁帶糊』不成立；z 近 −0.3～0，x 約 2.4–3.0 貼邊。**建議汰換候選**。
+- 18353 Black Tape for a Blue Girl《As One Aflame Laid Bare by Desire》：卡單 label Trinity 是德國版（tri 023 cd），首發為 Projekt 美版 PROJEKT 86；寫 Projekt。維基歐洲版寫 Trisol，與 Discogs 衝突，不寫。長笛、小提琴有署名、無大提琴；有無鼓無證據，z 可能偏暖（室內樂器＋人聲），評分以聽感為準。
+- 18354 Tara Vanflower《This Womb Like Liquid Honey》：全無聲音描述；Discogs 風格含 Shoegaze／Industrial，Mike 掛『Programmed』，鼓機不可排除；Ethereal 偏柔，curatorRisk 的 z→0 風險未解。
+- 本批補研究：推翻策展層 1 處（BTFABG 廠牌 Trinity 非首發）；moodGuess 存疑：嚴重 1（We, So Tired…）、中 5（BTFABG×2、Tara、Mike、Stranger）、輕 3。建議汰換候選：We, So Tired…（優先）、To Touch the Milky Way（視聽感）。status thin 6 張（Additional、Bleaklow、Aflame、Milky Way、Womb、Horizon Line）。WebSearch 3 次（We So Tired、Eager、Bleaklow）。
+
+## 主線補研究後汰換（不佔條號；2026-10-23）
+- **汰 3 張**：Leyland Kirby《We, So Tired of All the Darkness in Our Lives》（鼓與鋼琴是核心、downtempo 節奏，作者自述比 Caretaker 正面、給安慰——無鼓陰冷的前提不成立）、Black Tape for a Blue Girl《To Touch the Milky Way》（無任何聲音來源，Discogs 標 Darkwave／Art Rock、名單有鼓手 Brian Viglione，無鼓無從保證）、Tara Vanflower《This Womb Like Liquid Honey》（無聲音描述，Discogs 標 Shoegaze／Industrial、Mike VanPortfleet 掛 Programmed，鼓機不可排除）。
+- 補研究推翻策展層 1 處：BTFABG《As One Aflame…》首發 Projekt（PROJEKT 86），卡單 label「Trinity」是德國版；寫作層照研究稿寫 Projekt。
+- **定案 34 張**（a 7、b 8、c 5、d 7、e 7）。研究稿同步移除，`qa-batch research` 通過。
