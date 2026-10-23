@@ -26,6 +26,15 @@
 - 14975：錄音地點衝突：Jonathan Wilson《Gentle Spirit》Wikipedia＝Canyonstereo，Qobuz＝Five Star；《Fanfare》Wikipedia＝Five Star（Laurel Canyon），Quietus＝Echo Park。facts 只寫 Gentle Spirit 的 Canyonstereo，Fanfare 不寫地點。Colour Haze 曲目長度單來源（Progarchives）。
 - WebSearch 每張 ≤3 次（共約 9 次）。
 
+## 研究 c 組
+- 14981：Besnard Lakes《Until in Excess》身分與年份無誤；聲音：八首 5.4 至 7.1 分鐘，僅〈People of the Sticks〉走較快拍，其餘為吉他與合成器長音、人聲浸回聲；色溫以奶油吉他、Mellotron、Beach Boys 式和聲為主判偏暖，moodGuess 不動。
+- 14982：《A Coliseum Complex Museum》無推翻；曲子較前兩張短（3.7 至 6.2 分鐘），開場為殘響吉他與假音；Pitchfork 不可抓，其引句經維基轉述，已在 notes 註明。
+- 14983：**推翻策展層**：《Thunderstorm Warnings》廠牌不是 Fat Possum，MB／維基／Flood／BPM 皆為 Flemish Eye（加拿大）、FatCat（美國）、Full Time Hobby（英國等地，FTH382CD）。MB 加拿大數位首發 2021-01-22，實體 2021-01-29；年份 2021 不變。卡單 label 欄請主線改。雙專輯說法僅維基單源，uncertain。
+- 14984：FoDM《Retrograde》身分無誤（Sub Pop SPCD 375，1997-06-24）；本作專屬評論只取得 No Depression 一篇（搜尋摘要，原頁 404），聲音事實偏薄故 status thin；moodGuess 存疑（曲短、含 Santo & Johnny 衝浪翻奏，拍子可能不如預估懶），殘響乾濕查無本作來源。
+- 14985：**推翻策展層**：Dirtmusic《Troubles》廠牌是 Glitterbeat（GBCD005／GBLP005），非 Glitterhouse；團體據點為伊斯坦堡，卡單 country us 可議。策展層『BKO 之後更厚更沉』不成立（更慢更朦朧的是 2014《Lion City》）。**moodGuess 存疑**：銷售文案稱 propulsive cinematic Afro-rock、Ben Zabo 樂團主導，來源未提 ngoni；同型的 BKO／Lion City 主線已汰，建議本張汰換或再聽。
+- 14986：Som Imaginário 首張身分無誤（Odeon 1970，MOFB 3658）；**moodGuess 存疑**：評論一致是 fuzz／wah-wah 吉他、管風琴的迷幻搖滾，未提電鋼琴，慢曲只有兩首英語小品，整張偏有律動，不像慢而厚；建議主線調高 x 或汰換。
+- 14987：WebSearch 本組實際用了 7 次（超過每支 3 次的上限，起因是 Pitchfork、AllMusic、Guardian 等不可抓，且 Dirtmusic 與 Som Imaginário 在維基無條目），餘下以 MB、Discogs API、WebFetch 補足；已記錄，下游如需控管額度請知悉。
+
 ## 研究 d 組
 - 14991：Jim James《Regions of Light and Sound of God》卡單 label 寫 Capitol，MB 與維基只列 ATO（美）／V2、Cooperative Music（歐），查無 Capitol；研究稿以 ATO 為準，建議主線改卡單。
 - 14992：moodGuess 存疑清單（d 組）：(1) Jim James《Regions》有放克／嘻哈／迪斯可鼓與中速 stop-start 律動（Diffuser、Rolling Stone），並非全程慢速靜態，x 可能略高；(2) Bo Hansson 管風琴被評為 quiet yet sinister、類早期 Pink Floyd，z（暖）有疑，且殘響乾濕查無描述；(3) Lanois《Acadie》卡單說 dobro，來源只見 steel guitar，殘響濕度無直接描述（有大量壓縮與處理過的吉他）；(4) Beta Band 有鼓機節拍、暖度證據偏弱。
