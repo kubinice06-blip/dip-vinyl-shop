@@ -55,3 +55,8 @@
 - **16458** n-gram 自查（中文 4-gram，剝英數、剝指派樣板）：hook 對 hook 0；全批 hook＋note 跨張 0（初稿 Power and the Glory 與 Great Songs 撞「管弦樂團」「與合唱團」「指揮管弦」，Great Songs 改「帶管弦樂和合唱隊伴奏」；Rhythm of Love hook「自己製作」撞 Intimacy note，改「親製」）。另掃 `batches/output` 既有正文開頭兩句：初稿 hook 撞「位製作人」×14、「其餘八首」×6、「張的製作」×5、「拿下葛萊」「樂評說他」「隔了五年」「樂團的歌」等，五張 hook 改字後 0。
 - **16459** 腳本：`node qa-batch.mjs hooks add-20261023-ml31` 全部通過 ✓；`node chk-hook-crossgroup.mjs add-20261023-ml31` 5 組 7 張 ✓ 全部通過（hook 加權 17–21.5、note 151–225）。`jp-proper-names.json` 未動。
 - **16460** 給寫作層的風險：Promise to Love 預算剛好 170，正文照 note 走、不加料；Promise「本張再收這首合唱」依研究稿兩條 facts 並置（2013 Isley 單曲同台＋本張 Isley 客串同名曲），寫成平敘即可。Kemistry 年份寫「2002 年自費推出、2003 年 Motown 重發」（研究 16411）。Album II 的耳語音量、Promise 的 Snoop 收斂、Power and the Glory 的弦樂銅管淹沒，三處都是樂評的觀察，正文照「樂評⋯」轉述、不具名。
+
+## 主線：試聽、封面、三軸（不佔條號；2026-10-23）
+- 試聽 6 ready／1 unavailable：Kem《Intimacy》《Promise to Love》盤名帶副標，搜尋對不上，改藝人目錄 lookup 人工配標準版（1443073511、1443594075）；Mahalia《Great Songs of Love and Faith》Apple 藝人目錄無條目 → unavailable。
+- 封面：CAA 6；Mahalia《The Power and the Glory》CAA 404，改 Apple 190183806 同錄音官方圖，主線目視相符。
+- Last.fm：Kem 兩張以帶副標盤名查錯（listeners 5,772／22），改用 Last.fm 正名「Intimacy」「Promise To Love」重查（29,880／9,112），meta.json 的機器基線改正。Mahalia《Great Songs》listeners 28 為真實低量，照機器值。
