@@ -3415,4 +3415,13 @@ window.DipPreviewStatus = Object.freeze({
   "mystified|eschate thule": "unavailable",
   "necrophorus|elinrós": "unavailable",
   "necrophorus|drifting in motion": "unavailable",
+  "horacio vaggione|musiques pour piano et électroacoustique": "unavailable",
+  "horacio vaggione|points critiques": "unavailable",
+  "jonty harrison|évidence matérielle": "unavailable",
+  "elsa justel|mâts": "unavailable",
+  "trevor wishart|tongues of fire": "unavailable",
+  "a_dontigny|geisteswissenschaften": "unavailable",
+  "nikos stavropoulos|micro-lieux": "unavailable",
+  "stéphane roy|kaleidos": "unavailable",
+  "alain thibault|volt": "unavailable",
 });

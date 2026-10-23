@@ -60,3 +60,25 @@
 - 留下交評分：Vaggione 兩張、Harrison（邊距薄）、Justel（y 可能略升）、Davidovsky《Vol. 3》（半數器樂、點描室內樂）、Wishart、A_dontigny（z 邊緣）、Stavropoulos、Roy《Kaleidos》（神經質、不穩定）、Thibault《Volt》（急停急起、機械序列）、Subotnick《A Sky of Cloudless Sulphur》（脈衝驅動，x 3.0–3.4 邊緣）。**定案 11 張**（a 4、b 1、c 3、d 1、e 2）。
 - 不補：策展已掃約 160 張 empreintes 目錄，候補用罄；acousmatic 主場景池中多判靜／判重，照實上架、不湊數。
 - 研究推翻：Normandeau 原盤 1999（隨汰換結案）；Stroppa 電子部分在帕多瓦（隨汰換結案）；Harrison 2000、Thibault 1990 原盤年份確認。
+
+## 鉤子層（a–e，單一代理）
+- **21131** 交件：`desc-tools/batches/hooks/add-20261023-mc41-hooks-{a,b,c,d,e}.json`（4／1／3／1／2＝11 張，key 與順序照研究稿）。預算公式：`Array.from(hook)+Array.from(note) − 主故事： − 所有 → − 正文只寫上列各項。 − 這條骨架全批只走本張。`。逐筆（預算／hook 加權）：Vaggione《Musiques pour piano》213／19、《Points critiques》（thin，上限 170）165／21、Harrison 221／22、Justel 214／19、Davidovsky 229／22、Wishart 209／21、A_dontigny 221／21、Stavropoulos 228／22、Subotnick 225／20.5、Roy 228／25、Thibault 228／22。hook 原始字元 19–30。初稿 8 張超標，整格捨去：Vaggione 伊利諾大學一格、〈Arenas〉獻給 Dhomont、Harrison 五首 73 分鐘、Justel 直笛手、Davidovsky 同步規則與主任年份、A_dontigny 的 Dolden 編制、Subotnick 的 Shelley 出處與 CalArts 指揮、Roy 的獎名全稱與 Mimetismo 吉他。壓完後回核 hook 依賴格皆在 g1／g2（Justel、Roy、A_dontigny 的 hook 自足）。
+- **21132** 骨架歸屬（11 條各一）：Vaggione 鋼琴＝專攻此類曲目的演奏者；Points critiques＝手法本身（微剪接）；Harrison＝包裝廢料當素材；Justel＝向師長致意的拼貼；Davidovsky＝普立茲獎作品；Wishart＝一段咕噥衍生全曲＋家用電腦；A_dontigny＝曲名引用藝術史的諷刺小品；Stavropoulos＝植物／種子意象；Subotnick＝唱片公司新錄音技術系列頭一張；Roy＝作曲家自己的四詞導讀；Thibault＝流行／搖滾能量的理想聽法。「首張」只當一格事實（A_dontigny、Stavropoulos），不當骨架。
+- **21133** 店主附加：媒體名與媒體評分一律不進 note（Chain DLK、Neural、Octopus、Terz、La Scena Musicale、Blow Up 等皆改「有樂評」或直述）；Ricci、Nordin 等評者名也不帶。開頭兩句交代哪裡人＋身分：hook 只帶名字或不帶名字的，note「第二句」逐張補國籍／城市與身分。
+- **21134** Vaggione 分軸＋「他」引入法：《Musiques pour piano》帶生平（1943 生於科爾多瓦、1978 起住法國）＋鋼琴寫法（Mead 點描、塊狀和弦、靜默、踏板）；《Points critiques》帶手法與錄音（微剪接＋顆粒合成、GRM 委託、多聲道、乾而劈啪）。HHV「劈啪聲」只給後者，Mead 只給前者。Justel 的 note 帶 Vaggione 為其師與導文作者（研究稿本有，非互指）。
+- **21135** 第二句句型配表（一張一種）：生年出生地（Vaggione 鋼琴）／旅居身分（Points critiques）／職位（Harrison）／名字＋出身地（Justel）／「是阿根廷人」＋移居（Davidovsky）／「由」領句（Wishart）／藝名（A_dontigny）／「生於雅典、在英國受教育」（Stavropoulos）／代表作（Subotnick，避開 mc37 已用的 Buchla 合作者、CalArts 創辦兩式）／師承（Roy）／年份逗號＋獎項（Thibault）。已拆掉的跨卡 4-gram：生於阿根（Davidovsky 改「是阿根廷人」）、電子原音作曲（Harrison 改「作曲教授」）、魁北克作曲家（Thibault 改「魁北克人」）、預錄磁帶（Subotnick 改「事先錄好的磁帶」）。
+- **21136** 「日」後一字：Points critiques 日由、Davidovsky 日於、Thibault 日完；其餘八張 note 只寫到年或月。廠牌＋年份尾巴錯開：Mnémosyne 的 CD／日由 INA-GRM 發行／年由 empreintes DIGITALes 出版／集成本盤／Bridge Records 的 CD／自己的廠牌出 CD／No Type 出版／為他出了首張專輯／8 月發行／這張 CD 集合／原盤是…的 CD。
+- **21137** hook 事實自驗：Harrison 原稿「一台環保冰箱」改「號稱環保的冰箱」（照研究稿措辭）；Justel 原稿「取自桅桿倒影」改「是桅桿，像…倒影」（她的自述是比喻）；Davidovsky hook 的「這首」在 note g1 指明 No. 6；Stavropoulos 的蟻群是樂評聽感，note 標「有樂評聽成」；Thibault 的聽法來自唱片導讀，note 標明出處類型。
+- **21138** 自查：hook 之間中文 4-gram 0 條；hook 與 note 無逐字重複句；note 無「不得／查無」類否定句。`node qa-batch.mjs hooks add-20261023-mc41` 全部通過；`node chk-hook-crossgroup.mjs add-20261023-mc41` 5 組 11 張全部通過（hook 加權 19–25）。
+
+## 寫作層（writer-1）
+- **21141** 交件：`desc-tools/batches/output/add-20261023-mc41-out-1.json` 11 張（full 10：218–237；thin 1：Points critiques 178）。`qa-batch out`、`qa-check-research`（標記 0）、`fix-spacing`（待補 0）全過；「據」字 grep 0；媒體名、媒體榜單名次 0。逐張：Vaggione 鋼琴 237、Points critiques 178、Harrison 234、Justel 218、Davidovsky 235、Wishart 222、A_dontigny 225、Stavropoulos 233、Subotnick 229、Roy 235、Thibault 229。
+- **21142** 超標整格捨去：Subotnick 初稿 278，拿掉 A／B 面的兩個曲名（〈A Sky of Cloudless Sulphur〉〈After the Butterfly〉），改寫「A 面／B 面」；Roy 初稿 243、Points critiques 初稿 189，逐處縮短連接詞（Points critiques 的「聲源難以辨認」縮成「聲源難辨」，事實不減）。
+- **21143** 第二句全照鉤子層 21135 配表；「日」後一字照 21136（Points critiques 日由、Davidovsky 日於、Thibault 日完）。自掃 han() 4-gram 跨張 3 張以上 0 條；拆掉的 2 張殘片：`在年出的`（Vaggione 鋼琴 × Davidovsky，Davidovsky 改成年份領句）、`有樂評說`（A_dontigny × Roy，A_dontigny 改「有評論提醒」）、`作曲家年`（Vaggione × Stavropoulos，Stavropoulos 改廠牌領句）。剩 2 張的只有通用詞與術語（顆粒合成、電子原音、音樂中心、的作曲家）。
+- **21144** 身分補字：Justel、Davidovsky 的第二句 note 未寫職業，各補「作曲家」二字以滿足「開頭兩句交代身分」（facts 支持，可逆）。
+- **21145** 政治人物譯名：Thibault 〈OUT〉的 Reagan 取樣照 writer-base「歷史／政治人物用台灣慣用譯名」寫成「雷根」。
+- **21146** hook 懸念收尾：Harrison、Davidovsky、Stavropoulos 三張以「那首是／曲名是」替 hook 的代稱具名；Davidovsky 的普立茲獎不重述，改寫「得獎是隔年的事」；Thibault 第三句交代聽法出自唱片導讀；Roy 的四詞導讀 hook 自足，第二句走師承。
+- **21147** 引語轉間接：Harrison 的「乾而脆」、Subotnick 的「幽靈總譜」去掉引號，改成「他形容這些聲音乾而脆」「Subotnick 稱之為幽靈總譜」。
+
+## 主線審稿（2026-10-23，雲端主線，11 張逐張讀過、對回研究稿）
+- 逐張審過，未改字。抽核事實：Harrison〈Surface Tension〉冰箱包裝素材、〈Klang〉1992 Euphonie d'or；Davidovsky No. 6 1970-08-19 Tanglewood 首演、1971 普立茲；Wishart 1995 Ars Electronica 金尼卡；Thibault 1982 Radio-Canada 青年作曲家獎、導讀「豔陽下的跑車」——皆與研究稿 facts 一致。樂評句只留聲音描述（Stavropoulos 蟻群、Roy 神經質、A_dontigny 保持清醒），無媒體名、無「據」。寫作層自補的「作曲家」（Justel、Davidovsky）有 facts 支撐，保留。
