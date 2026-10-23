@@ -23,3 +23,29 @@
 - **21049**（Perelman Strings 1）無不符，聲音符合冷冽預估（高音尖叫＋弦簾幕、無鼓）。曲目無標題，keyTracks 為樂評 Track 編號。
 - **21050**（保留）未使用。
 - 本組 WebSearch 用 3 次（Tempted to Smile、Guy/Riley/Wachsmann、Perelman Strings 1）。全 9 張皆為錄音室錄音，無現場盤；無借曲／標準曲。
+
+## 研究 c 組
+- **21021**（Light Trigger）卡單與 moodGuess 寫小提琴，實為中提琴（Discogs credits 與 AAJ 樂評皆證）；正文請寫中提琴。Discogs 另有 Wayne Shorter 掛名 Composed By，疑誤植，未入 facts。聲音符合預估。
+- **21022**（Reaching）無樂評、無聲音描述，status thin；曲名 Sway／Waltzing／Old Style 暗示可能有抒情或舞曲式段落，moodGuess 存疑（偏暖風險），建議主線以聽感為準或汰換。
+- **21023**（August Steps）聲音缺來源 thin；Bead 特別版 CDr；Wachsmann 生平查無可靠來源不寫。
+- **21024**（Alizarin）第 10 首為 2011 Freedom of the City 現場，其餘 2012 Blackbird 錄音室；不推翻卡單 exceptionReason。聲音層無專屬樂評，僅 Turner 二重奏一般作法。
+- **21025**（Imagined Time）Lytton 的 credits 含 Electronics，電子比重可能推 y，moodGuess 存疑；無樂評證實，status thin。
+- **21026**（Sea of Lead）2000 年錄、2006 年發行，Kowald 2002 逝世，寫作以『與作品直接綁定的身後出版』克制處理；聲音僅憑 credits（prepared piano＋bass），thin。
+- **21027**（Elm City Duets）錄於 Firehouse 12 Studios（錄音室），非現場；聲音只有 Clean Feed 文案，無獨立樂評。
+- **21028**（Duologues）曲名含 Pulse Feel／Bendango，可能有律動段，moodGuess 存疑（較躁或偏暖）；無樂評可證。Squid's Ear、Free Jazz Blog 僅採搜尋摘要，頁面未能全文核對。
+- **21029**（Duo）**現場存疑**：Discogs 記事錄音地點為倫敦 Verity's Place（1976-02-07），僅 A1、B2 在 Tangent Studio；MB 未標 Live，建議主線視為大半現場。廠牌文案稱大提琴混入 Bach 與民謠旋律、俏皮好笑，**moodGuess 存疑（旋律性／幽默，z 偏暖）**。年份寫 1976 Incus 原盤、2018 Honest Jon's 重發；MB RG 僅 2018。
+- **21030**（保留）未使用。
+- 本組 WebSearch 用 5 次（c、d 兩組合計額度全用於此：Echoes、Duologues、Elm City Duets、Light Trigger、Duo）。全組無推翻身分／年份／廠牌；卡單 Light Trigger 樂器（中提琴）為唯一事實更正。
+
+## 研究 d 組
+- **21031**（Stretto）卡單 country 寫 us，實為柏林錄音的德國 FMP 廠牌，建議改 de。整張實為一首長篇切 8 軌。聲音缺樂評 thin；吉他是否原聲未證。
+- **21032**（Echoes）**moodGuess 存疑（暖）**：樂評稱 Bang『bluesy』，曲名含 Sweet Irene、Promise You The Moon、Day Dreams，可能有抒情／借曲式主題，建議主線傾向汰換。錄音地點與是否現場未查到。
+- **21033**（Site-Specific）Discogs 無 credits、無記事，搭檔吉他手不明；卡單『多位吉他手』無法證實，status thin。勿寫成『廠牌第一張』。
+- **21034**（Crackle）**moodGuess 存疑（厚）**：大提琴＋低音提琴，低音域疊聲與弓壓可能推 y，無聽感來源證實。2011 錄、2014 發行。
+- **21035**（Stackenäs + Lonberg-Holm）直錄 DAT（Gordon Comstock，2004 秋，Thomas Street）；聲音完全缺來源 thin；Stackenäs 生平不寫、吉他屬卡單推論。
+- **21036**（The Second Sky）錄音室（The Beauchamp Building，2001-01-11），非現場；聲音僅憑 credits 與 Turner 二重奏一般作法。
+- **21037**（The Experiment）『live to 2-track』是棚內直錄，非觀眾現場；曲名含 Messiaen、Black Swan - 'The Dance'、Caribbean Sunrise，**moodGuess 存疑（借曲／旋律風險）**，Duval 低音提琴也可能推厚。
+- **21038**（18 Colors）人聲＋低音提琴＋人聲，直錄 DAT 無疊錄；Lauren Newton 生平查不到可靠來源不寫；非語言人聲段可能有柔和長音，moodGuess 輕度存疑。
+- **21039**（Désordre）兩人皆兼人聲；錄音橫跨 2017-06 至 2018-02；限量 250；Grimal 生平不寫；短篇可能更輕更靜，moodGuess 輕度存疑。
+- **21040**（保留）未使用。
+- 全組 facts 條數 8–11，來源皆 https；無簡體字、無千分位逗號；未動卡單／seed。
