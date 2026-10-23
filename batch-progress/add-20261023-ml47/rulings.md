@@ -16,3 +16,19 @@
   - 身分不清：Kazumi Kaneda 兩張（日裔／日本身分與色溫皆無來源，z 0.6 貼）、TOMC《Liberty》。
   - 長度／型態：Mndsgn《Snaxx》（25.7 分＋synth-funk）、jinsang《Perspective》（42 首 89 分短 loop 彙集型、2025 新盤）。
 - 長度貼線照收：Psalm Trees《Autumn Turned Winter》25.3 分、jinsang《kona park.》25.6 分（首張、MB Album）。
+
+## 研究 a 組
+- 19961：a 組 7 張皆 8–9 條 facts、status full，但「聲音」條多只有 Discogs 風格標籤、Bandcamp 標籤與曲長，無樂評；全組聲音證據薄，鉤子層勿寫音色細節（劈啪、磁帶、厚低頻皆無來源）。
+- 19962：Psalm Trees 的出身來源不一致（Discogs 藝人頁：英國南部、住過南非 7 個月、鹿特丹 6 年；Musicbed：倫敦外圍臥室；Bandcamp 地點標籤 Cape Town）。facts 只用 Discogs 與 Musicbed 兩說，不寫確切城市。
+- 19963：《Monothrope》為 Mono:Massive 與 Philanthrope 合作盤（兩人皆因斯布魯克），卡 artist 欄只寫 Philanthrope，寫作層宜兩者並列；MB 首發 2016-08-15（Urban Waves／radiojuicy 數位）、Discogs 實體 2016-08-26 HHV566，卡單 2016／HHV.DE 可用。
+- 19964：《Autumn Turned Winter》是 mixtape，數位 9 首 25.3 分（貼 EP 線）、黑膠 15 首含 6 首 Bonus；卡單取數位。moodGuess 存疑：聲音全無來源，建議上線評分時以實聽為準。
+- 19965：moodGuess 存疑清單：《Psalm Trees》（Discogs 標 Boom Bap，x 可能偏高）、《We Must Believe in Spring》（吉他為主的 lofi jazz／jazz fusion／trip hop 標籤，Chillhop 廠牌，y 可能偏輕，ml42 先例）、《Monothrope》（Jazzy Hip-Hop 取樣 boom bap，x 有彈跳風險）。未見 trap、自稱 clean／crisp 或哀傷陰冷的證據。
+
+## 研究 d 組（19991–20000）
+- 19991　d 組 7 張（BROCKBEATS 4、Olive Oil 3）：身分全部核對通過（MB／Discogs／Apple／Bandcamp 對得上盤名、年份、廠牌）；未推翻策展層年份與廠牌。BROCKBEATS《Salt》Bandcamp 無頁（404），改以 Discogs／MB／YouTube 為源，status thin（與《Sugar》同）。
+- 19992　BROCKBEATS 四張全無樂評、無自述、無廠牌文案；聲音事實僅 Bandcamp 標籤（lo-fi＋boom bap；《Sugar》另標 indie pop）與 Discogs 風格。四張 notes 皆標 moodGuess 存疑（y／x 無來源驗證、boom bap 可能彈跳）；總長 35–51 分，無 EP 級問題。
+- 19993　日期衝突取向：Calm Life 取 Bandcamp／Discogs 2017-09-25 為 facts 主日期並附 MB 2017-10-02；Lunch Time Sleeps 取 2017-06-23（Bandcamp＋MB），Discogs 卡帶版 2017-08-30 附註。年份皆 2017 不變。
+- 19994　Olive Oil《Left&Right》：Discogs 製作欄列 SNEEEZE、Take-T、emm 為 Lyrics By，部分曲目有人聲／說唱，非純器樂；風格含 Trip Hop。moodGuess 存疑（人聲可能抬高 x、與『Rhodes 迴圈』描述不符）。建議主線評分時降低器樂預設。
+- 19995　Olive Oil《Space in Space》：RA（ra.co/news.aspx?id=11506）寫『fluid broken sound』、與 Flying Lotus 比較、glitchy 與 abstract，另有 Discogs 風格 Abstract；moodGuess 存疑（x 2.5 可能偏低，偏躁／破碎，冷暖不明）。日本版 2009-11-18 與 Mule 國際發行 2010-02-22 並存，卡單 2009 成立。此張是本組唯一有第三方描述者，status full。
+- 19996　Olive Oil《Far From Yesterday》：Discogs 風格 Broken Beat／Future Jazz，〈Pianity Remake12〉有 Aaron Choulai 真人鋼琴（YouTube 官方說明）；『Dilla 式歪拍、Rhodes、厚低頻』無來源。moodGuess 存疑（同上）。
+- 19997　三次 WebSearch 已用盡（BROCKBEATS 一次無果、Olive Oil 兩次）；其餘靠 Discogs／MB API、Apple、Bandcamp、RA、Ototoy 取得。
