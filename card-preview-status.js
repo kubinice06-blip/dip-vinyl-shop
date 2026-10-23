@@ -3302,4 +3302,12 @@ window.DipPreviewStatus = Object.freeze({
   "mad professor & susan cadogan|dub showcase featuring susan cadogan": "unavailable",
   "bunny wailer|dubd’sco vol. 1": "unavailable",
   "michael prophet|serious reasoning": "unavailable",
+  "burial chamber trio|burial chamber trio": "unavailable",
+  "ktl|ktl": "unavailable",
+  "jodis|secret house": "unavailable",
+  "final|afar": "unavailable",
+  "final|burning bridges will light your way": "unavailable",
+  "bass communion|loss": "unavailable",
+  "jasper tx|a darkness": "unavailable",
+  "stephan mathieu|before nostromo": "unavailable",
 });
