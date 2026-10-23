@@ -99,3 +99,10 @@
   - Rockers Hi-Fi《Rockers to Rockers》：「伯明罕的 Glyn…」→「伯明罕的 dub 二人組 Glyn…」（同上，前兩句補樂種；研究稿 c 組 dub-house）。
   - DJ Cheb i Sabbah《Shri Durga》：「sarangi 與 sarod 最受稱讚」→「sarangi 與 sarod 都在其中」（單源樂評評價句，研究稿 d 組 Exclaim! 一家之言）。
 - **15196**：逐條核對過的高風險事實：Mind Elevation 拿掉〈Night's Interlude〉（研究 a 組 PopMatters）、SLO MO 的 Faiumu 2025-07-16 辭世（研究 b 組維基）、Eighty One 第三張且 Ninja Tune（研究 c 組 Bandcamp）、Dub Qawwali 人聲帶年代（研究 d 組，直述錄音年代不帶評價）。全文無「據說／據傳」、無媒體名與媒體年終榜。
+
+## 上線與評分（2026-10-23，主線）
+- **15197**：上線 28 張：card_catalog 28／28、KV 28 鍵回讀逐字一致、試聽 26 ready／2 unavailable（Gaudi + Nusrat《Dub Qawwali》Apple 兩位藝人目錄皆無；Loop Guru、Thievery、NoW《Mind Elevation》人工指定藝人目錄條目）、seed +28、published gate 0 error。封面 28 張全 CAA，縮圖表目視與盤名相符、live-check 28／28 200。上線前對 origin 各 `claude/*` 分支 seed 去重 0 撞。冷門軸人工 3 張（NoW《Feelin' Good》彎引號查詢失真、Trinity Roots《True》、Loop Guru 長盤名失真）。
+- **15198**：**落格率 28/28＝100%**（`batch-progress/mood-axes/score-ml15/`；評分 x 2.1–2.8、y +0.7～+1.4、z +0.2～+1.5）。評分 conf 偏低（high 1、mid 14、low 13），貼邊的是 Rockers Hi-Fi 色溫與 Sounds From the Ground。研究層汰 7 張全是能量或質地證據不足者，汰換後留下的 dub 化 downtempo／world dub 全落格。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Fat Freddy's Drop、Trinity Roots、Bombay Dub Orchestra、Rockers Hi-Fi、Kaya Project、Loop Guru、Gaudi、Gaudi + Nusrat Fateh Ali Khan（合作掛名，介紹可併 Gaudi）、DJ Cheb i Sabbah、Sounds From the Ground（10 位；其餘藝人已有介紹或已在排隊）。
