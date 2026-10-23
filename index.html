@@ -1070,7 +1070,7 @@
 <script src="dip-player.js?v=49"></script>
 <script src="dip-draw-anim.js?v=4"></script>
 <script src="dip-genre-tree.js?v=5"></script>
-<script src="dip-tune.js?v=6"></script>
+<script src="dip-tune.js?v=8"></script>
 <script src="dip-artist-intro.js?v=2"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -5876,11 +5876,16 @@ ${seenList}
     onResult: async ({ card, cell, cellName, targetCellName }) => {
       gpResultHost = 'tuneContent';
       gpStopPreview();
-      tuneShowApp(false);
-      window.scrollTo(0, 0);
       const seq = ++_tuneSeq;
       const host = document.getElementById('tuneContent');
-      host.innerHTML = `<div class="quiz-loading"><div class="spinner"></div><div class="quiz-loading-text">${card.artist}《${card.album}》…</div></div>`;
+      // 就這張特效（2026-10-22）：該格顏色的線框從命中的星飛過來，資料到了才貼上真卡、掃描出來。
+      // 星圖還看得到（從轉輪子按下來）就從那顆星起飛；在結果頁按「同頻率再抽一張」就原地長出來。
+      _tuneWarp?.cancel();
+      const warpColor = DipTune.CELL_COLOR?.[cell] || '#888';
+      const appVisible = !document.getElementById('tuneApp').hidden;
+      const warp = _tuneWarp = DipTune.warpStart({ color: warpColor, from: appVisible ? DipTune.litScreenPos() : null, artist: card.artist, album: card.album, year: releaseYearOf(card.artist, card.album) || card.year || '' });
+      if (!appVisible) { tuneShowApp(false); window.scrollTo(0, 0); }
+      host.innerHTML = '';
       const st = window.DipPreviewStatus?.[cardIdOf(card.artist, card.album)] || '';
       if (st !== 'unavailable' && st !== 'disabled') {
         gpEnsurePlayer();
@@ -5889,13 +5894,13 @@ ${seenList}
       let assets;
       try { assets = await resolveCardAssets(card.artist, card.album); }
       catch (e) { assets = { ov: null, coverUrl: '', spotifyUrl: '', bandcampUrl: '', ytUrl: '', previewUrl: '', previewUnavailable: false }; }
-      if (seq !== _tuneSeq) return;   // 這段期間又抽了一張，舊的不要畫
+      if (seq !== _tuneSeq) { warp.cancel(); return; }   // 這段期間又抽了一張，舊的不要畫
       const ratings = (card.classic && !card.tier) ? {
         classic: assets.ov?.classic || card.classic,
         obscurity: assets.ov?.obscurity || card.obscurity,
         accessibility: assets.ov?.accessibility || card.accessibility,
       } : null;
-      const note = `頻率 <span style="color:${({calm:'#c9a24a',still:'#3f8f9b',languid:'#b5522e',decay:'#6b4aa8',lift:'#ffd166',crisp:'#5ee6f0',boil:'#ff6b35',charge:'#9b6bff'})[cell] || '#888'}">●</span> ${cellName}`;
+      const note = `頻率 <span style="color:${warpColor}">●</span> ${cellName}`;
       await showGpResult({
         artist: card.artist, album: card.album, reason: '', ratings,
         _coverUrl: assets.coverUrl, _spotifyUrl: assets.spotifyUrl,
@@ -5903,6 +5908,17 @@ ${seenList}
         _previewUrl: assets.previewUrl, _previewUnavailable: assets.previewUnavailable,
         _matchNote: note, _mode: 'tune', _streaming: true,
       });
+      if (seq !== _tuneSeq) { warp.cancel(); return; }
+      // 揭露的是一螢幕大的專輯畫面（覆蓋層），揭露完才把結果頁切出來、封面與文字各自飛到真卡的位置
+      warp.setCover(assets.coverUrl);
+      await warp.reveal();
+      if (seq !== _tuneSeq) { warp.cancel(); return; }
+      const cardEl = host.querySelector('.quiz-result');
+      if (cardEl) cardEl.style.opacity = '0';
+      tuneShowApp(false);
+      window.scrollTo(0, 0);
+      await warp.land(cardEl);
+      if (_tuneWarp === warp) _tuneWarp = null;
       const reason = await fillGpDesc(card, assets.ov);
       if (seq !== _tuneSeq) return;
       lastGpResult.reason = reason;
@@ -5912,7 +5928,7 @@ ${seenList}
         .then(() => renderHistorySection(document.getElementById('tuneContent')));
     },
   });
-  let _tuneSeq = 0;
+  let _tuneSeq = 0, _tuneWarp = null;
   document.getElementById('tuneModal').addEventListener('click', (e) => {
     if (e.target.closest('[data-tune-again]')) { gpStopPreview(); DipTune.pickAgain(); }
     else if (e.target.closest('[data-tune-back]')) { gpStopPreview(); tuneShowApp(true); DipTune.start(); }
