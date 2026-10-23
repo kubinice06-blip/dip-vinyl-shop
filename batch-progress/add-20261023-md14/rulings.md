@@ -63,3 +63,7 @@
 - 17768：推翻策展層 1 處——Scelsi 的 curatorWhy 寫《Okanagon》，本盤曲目無此作（Ohoi／Ave Maria／Anâgâmin／Ygghur I–III／Natura renovatur／Alleluja），寫作層勿提。Dead Space 卡單 label 空白，MB 為 E.A.R.S.（EA 自家），可補。Hannibal 策展層所稱『金屬噪聲』本卷查無來源，只證電子 drone、延遲與打擊閃現。
 - 17769：moodGuess 存疑——(a) Witch：純原聲、無鼓，但 1–3 分鐘短 cue、nyckelharpa 喀答與 jouhikko 刮擦為前景，持續低頻僅 waterphone 一項，y 風險；(b) Hannibal S1V2：打擊僅『閃現』、樂評稱『豐潤暖意』，冷度與『重』未證；(c) Dead Space：含頭目戰／追逐曲，突刺與大音量嘈雜段落可能拉躁，y 1.1 風險；(d) Enemy：低音大提琴長音支持靜冷，但有零星打擊、機械金屬質地與飽滿小提琴群，乾淨弦樂比例不低；(e) Scelsi：8 首中 5 首獨奏大提琴，乾淨弦樂佔比高，『drone』『擦弦噪聲』未獲來源，y 風險。
 - 17770：古典卡 yearVerified 已填：Witch 2016、Dead Space 2008、Enemy 2014、Scelsi 2006（錄音 2005-06 Himmelfahrtskirche Sendling，製作 Manfred Eicher）。Enemy 的 PopMatters 提到曲名 Sucker Punch 不在 MB 曲目表，不採。
+
+## 主線試聽、三軸（條號 17791–17792）
+- **17791** 試聽 39 ready／3 unavailable（Mica Levi & Johnnie Burn《The Zone Of Interest》、Yamaoka《Homecoming》、Aethek & Lustmord《Scorn》Apple 查無官方條目）。人工配對 7 張：SH4（Apple 22 軌單碟版）、Dead Space（Apple 17 軌 EA 官方版）、Thorvaldsdottir ×4（Apple 掛演出團體名）、Scelsi（ECM 同盤、曲名分段不同）。Aerial 取 2022 再版（多一首〈Aura〉）。
+- **17792** 三軸：原聲帶 Last.fm 掛名與盤名副題分散（Sicario 854、First Reformed 1、Saint Maud 1），listeners 系統性失真，**36 張配樂冷門軸照 §0.8 錨點人工**（`manual:depth-rubric`）：大片配樂國際流通 2（Sicario、Hereditary、Blade Runner 2049）、影集配樂發行有限 4（Fortitude）、其餘正規廠牌類型圈內流通 3。古典 6 張（Thorvaldsdottir ×4、Scelsi、Sólaris）照 §0.7 錄音層錨點（`manual:classical-rubric`）：經典 2–3、冷門 4、硬蕊 4。Scelsi 卡帶作曲家欄 `Giacinto Scelsi`；Thorvaldsdottir 掛名即作曲家，照池中 Haas《in vain》先例不另帶作曲家欄。
