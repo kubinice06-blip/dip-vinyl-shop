@@ -80,7 +80,7 @@
 
   // ── 畫面 ──────────────────────────────────────────────────────────
   const CSS = `
-.tune-app{--pix:'DotGothic16','Space Mono',monospace;position:relative;display:grid;grid-template-columns:1fr;grid-template-rows:minmax(280px,1fr) auto;width:100%;max-width:720px;margin:0 auto;height:100dvh;background:#0b0c10;color:#e9e2c8;font-family:var(--pix);font-size:11px;letter-spacing:.04em;overflow:hidden}
+.tune-app{--pix:'DotGothic16','Space Mono',monospace;position:relative;display:grid;grid-template-columns:1fr;grid-template-rows:minmax(200px,1fr) auto;width:100%;max-width:720px;margin:0 auto;height:100dvh;background:#0b0c10;color:#e9e2c8;font-family:var(--pix);font-size:11px;letter-spacing:.04em;overflow:hidden}
 /* 轉成橫向（手機側放、矮視窗）才左右並排 */
 @media (orientation:landscape) and (max-height:600px){.tune-app{grid-template-columns:minmax(0,1fr) clamp(300px,calc((100dvh - 24px) / 0.86),48vw);grid-template-rows:minmax(0,1fr);max-width:none}}
 .tune-stage{position:relative;min-width:0;min-height:0;background:#060609;overflow:hidden}
@@ -117,6 +117,8 @@
 /* 主機由上而下：搜尋列、FREQUENCY（靠左 76% 寬，右側一塊直立的黃銅「就這張」）、輪子模組全寬。整台高 ≈ 1.08 倍寬，依視窗高度反推寬度，一定塞進一個畫面 */
 .tune-console{position:relative;width:min(100%,600px,calc((100dvh - 340px) / 1.08));display:flex;flex-direction:column;align-items:stretch;gap:1.2cqw;container-type:inline-size;user-select:none}
 @media (orientation:landscape) and (max-height:600px){.tune-console{width:min(100%,calc((100dvh - 24px) / 1.08))}}
+/* 手機直放：面板放大塞滿寬度（2026-10-23 店主：左右空位太多），星圖讓出高度 */
+@media (max-width:520px) and (orientation:portrait){.tune-console{width:min(100%,calc((100dvh - 230px) / 1.08))}.tune-panel{padding:8px 6px 0}}
 .tune-mod{position:relative;background-size:100% 100%;background-repeat:no-repeat;image-rendering:pixelated}
 .tune-row1{display:flex;gap:2cqw;align-items:stretch}
 .tune-mod-freq{width:76%;flex:none;aspect-ratio:1438/499;background-image:url(tune/panel-freq.jpg)}
@@ -145,6 +147,9 @@
 .tune-wheel[data-axis="x"]{left:15.58%;width:12.66%}.tune-wheel[data-axis="y"]{left:44.78%;width:12.24%}.tune-wheel[data-axis="z"]{left:73.7%;width:12.24%}
 .tune-wheel:focus-visible{outline:2px solid #ffd166;outline-offset:-2px}
 /* SCAN／FINE 撥桿：原稿槽位上疊三格（上｜中｜下），撥的時候走一格中間 */
+/* FREQUENCY 只有 76% 寬又被壓矮，原稿螺絲看起來小一號、扁的；疊上與輪子模組同大小的螺絲 */
+.tune-screw{top:1%;width:6.405%;height:18.458%;background:url(tune/screw.png) center/100% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
+.tune-screw.l{left:.414%}.tune-screw.r{left:93.181%;top:.648%}
 .tune-lever{left:82.197%;top:52.734%;width:4.103%;height:24.162%;background:url(tune/switch.png) 0 0/300% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
 .tune-lever[data-pos="mid"]{background-position:50% 0}.tune-lever[data-pos="down"]{background-position:100% 0}
 /* 搜尋列：照原稿配色畫的模組（scripts/build-tune-sprites.py），名牌、液晶、黃銅鍵上疊 HTML */
@@ -200,6 +205,7 @@
       <div class="tune-drum wide" id="tuneDcell"><div class="strip" id="tuneCellStrip"></div></div>
     </div>
     <span class="abs tune-swlab top on" id="tuneSwTop">SCAN</span><span class="abs tune-swlab bot" id="tuneSwBot">FINE</span>
+    <i class="abs tune-screw l"></i><i class="abs tune-screw r"></i>
     <i class="abs tune-lever" id="tuneLever" data-pos="up"></i>
     <button class="abs tune-sw" id="tuneMode" type="button" aria-label="SCAN 連續掃描／FINE 一格一張" aria-pressed="false"></button>
     <i class="abs tune-led top on" id="tuneLedTop"></i><i class="abs tune-led bot" id="tuneLedBot"></i>

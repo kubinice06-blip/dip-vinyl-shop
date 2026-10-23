@@ -99,3 +99,22 @@ print('panel-search.png', big.size)
 print('名牌', pct(PX0, W), pct(PY0, H), pct(PX1 - PX0, W), pct(PY1 - PY0, H))
 print('液晶', pct(WX0 + 1, W), pct(WY0 + 1, H), pct(WX1 - WX0 - 2, W), pct(WY1 - WY0 - 2, H))
 print('按鍵', pct(BX0, W), pct(BY0, H), pct(BX1 - BX0, W), pct(BY1 - BY0, H))
+
+# ── 螺絲（FREQUENCY 模組用）────────────────────────────────────
+# FREQUENCY 模組顯示時只有 76% 寬、又被壓矮，原稿上的螺絲看起來比別的小、而且扁。
+# 從輪子模組（全寬顯示）左上剪一顆正常大小的螺絲，圓外透明，疊在 FREQUENCY 的兩顆螺絲上。
+wheels = Image.open('tune/panel-wheels.jpg').convert('RGB')
+CX, CY, R = 54, 62, 31
+sc = wheels.crop((CX - 35, CY - 35, CX + 35, CY + 35)).convert('RGBA')
+spx = sc.load()
+for y in range(70):
+    for x in range(70):
+        if (x + .5 - 35) ** 2 + (y + .5 - 35) ** 2 > R * R:
+            spx[x, y] = (0, 0, 0, 0)
+sc.save('tune/screw.png')
+fw, fh = 1438, 567                     # FREQUENCY 原稿尺寸；顯示時寬 = 0.76 台寬、高 = 寬 × 499/1438
+disp_w = 70 / 1438                     # 螺絲該有的顯示寬（台寬比例，與輪子模組同比例）
+wp = disp_w / 0.76 * 100
+hp = disp_w / (0.76 * 499 / 1438) * 100
+for name, (sx, sy) in {'左上': (52, 58), '右上': (1386, 56)}.items():
+    print('螺絲', name, 'left', round(sx / fw * 100 - wp / 2, 3), 'top', round(sy / fh * 100 - hp / 2, 3), 'w', round(wp, 3), 'h', round(hp, 3))
