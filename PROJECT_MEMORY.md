@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜頻率光譜副標題改「不分類型，以光譜的方式探索音樂」
+
+- **改動**：店主指定。「找一張來聽」入口卡（`index.html` HUB_DEFS）、`tune/index.html` og:description、分享縮圖 `og-tune.png` 副標同步換。
+- **主要檔案**：`index.html`、`tune/index.html`、`og-tune.png`
+- **驗證**：grep 舊副標已無；縮圖目視確認。
+
 ### 2026-10-23｜dip-vinyl-shop｜「頻率選歌」改名「頻率光譜」
 
 - **改動**：店主指定改名。看得到的地方全換：首頁入口卡（`index.html` 分頁清單）、紀錄徽章、PWA 捷徑（`manifest.json`）、`tune/index.html` 標題與 og:title、分享縮圖 `og-tune.png` 的大標（Noto Sans TC 350 重繪，字級、位置、顏色照原圖）。程式內部代號仍是 `tune`，舊紀錄的 type 不變；程式註解不改。
