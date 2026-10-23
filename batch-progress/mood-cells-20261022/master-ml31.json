@@ -1,0 +1,392 @@
+[
+ {
+  "artist": "Sade",
+  "album": "Lovers Rock",
+  "year": 2000,
+  "label": "Epic",
+  "country": "gb",
+  "faction": "jazz-soul-ballad",
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "why": "Sade 第五張、2000 年代慢板爵士靈魂的代表；Matthewman 的 dub 式低頻、長殘響與溫暖人聲把人包住，池中 Sade 同類盤 y 0.6–0.9 都落恍惚",
+  "moodGuess": {
+   "x": 2.1,
+   "y": 0.8,
+   "z": 1,
+   "why": "慢、無攻擊；dub 低頻厚、殘響長，人聲溫、旋律清楚"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/d4ec7e03-61fa-3aec-8f3c-fbcda6d3c552",
+   "https://music.apple.com/us/album/lovers-rock/193532145",
+   "https://coverartarchive.org/release-group/d4ec7e03-61fa-3aec-8f3c-fbcda6d3c552/front"
+  ],
+  "mbRgMbid": "d4ec7e03-61fa-3aec-8f3c-fbcda6d3c552",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "編制比《Love Deluxe》稀疏（原聲吉他多），y 可能只到 0.6–0.7；池中 Sade《Stronger Than Pride》曾判 −0.3",
+  "group": "ml31",
+  "factionZh": "爵士靈魂慢板 ballad（厚製作）",
+  "mb": {
+   "title": "Lovers Rock",
+   "type": "Album",
+   "sec": [],
+   "date": "2000-11-03",
+   "credit": "Sade"
+  }
+ },
+ {
+  "artist": "Anita Baker",
+  "album": "Rhythm of Love",
+  "year": 1994,
+  "label": "Elektra",
+  "country": "us",
+  "faction": "jazz-soul-ballad",
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "why": "Anita Baker 爵士靈魂抒情的最後一張大製作，慢板 ballad 配厚弦樂與合成墊；池中她的 Rapture／Songstress／Giving 皆 y 0.6–0.8 落恍惚",
+  "moodGuess": {
+   "x": 2.2,
+   "y": 0.8,
+   "z": 1.5,
+   "why": "慢板 ballad；厚弦樂＋合成墊、溫熱低頻，低沉暖嗓"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/9f16cb4e-f423-3ec5-aad9-a42d0d9fe3f0",
+   "https://music.apple.com/us/album/rhythm-of-love/300205574",
+   "https://en.wikipedia.org/wiki/Rhythm_of_Love_(Anita_Baker_album)"
+  ],
+  "mbRgMbid": "9f16cb4e-f423-3ec5-aad9-a42d0d9fe3f0",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "",
+  "group": "ml31",
+  "factionZh": "爵士靈魂慢板 ballad（厚製作）",
+  "mb": {
+   "title": "Rhythm of Love",
+   "type": "Album",
+   "sec": [],
+   "date": "1994-09-13",
+   "credit": "Anita Baker"
+  }
+ },
+ {
+  "artist": "Kem",
+  "album": "Kemistry",
+  "year": 2002,
+  "label": "Kemistry / Motown",
+  "country": "us",
+  "faction": "jazz-soul-ballad",
+  "genres": [
+   "soul",
+   "jazz"
+  ],
+  "why": "底特律爵士靈魂歌手 Kem 首作，smooth jazz 與 quiet storm 交界的慢板 ballad；Rhodes＋合成墊＋柔低頻的溫熱包覆，與池中 Will Downing（y 0.5–0.8）同型",
+  "moodGuess": {
+   "x": 2.2,
+   "y": 0.8,
+   "z": 1.3,
+   "why": "慢、鬆；Rhodes 與厚合成墊、柔低頻，暖嗓旋律清楚"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/0219183e-1ab4-3dd0-a443-bcfce80f0a65",
+   "https://music.apple.com/us/album/kemistry/1440666922",
+   "https://en.wikipedia.org/wiki/Kemistry_(album)"
+  ],
+  "mbRgMbid": "0219183e-1ab4-3dd0-a443-bcfce80f0a65",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "smooth jazz 製作偏乾淨，評分者可能判 y 0.4–0.6",
+  "group": "ml31",
+  "factionZh": "爵士靈魂慢板 ballad（厚製作）",
+  "mb": {
+   "title": "Kemistry",
+   "type": "Album",
+   "sec": [],
+   "date": "2002",
+   "credit": "Kem"
+  }
+ },
+ {
+  "artist": "Kem",
+  "album": "Album II",
+  "year": 2005,
+  "label": "Motown",
+  "country": "us",
+  "faction": "jazz-soul-ballad",
+  "genres": [
+   "soul",
+   "jazz"
+  ],
+  "why": "Kem 第二張，延續慢板爵士靈魂與教會味的 ballad（〈I Can't Stop Loving You〉）；合成墊與柔低頻厚度高於首作",
+  "moodGuess": {
+   "x": 2.2,
+   "y": 0.8,
+   "z": 1.4,
+   "why": "慢板、厚合成墊與溫低頻，暖嗓"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/e5dc0cb8-2208-3595-b440-a9bd9be84a5f",
+   "https://music.apple.com/us/album/album-ii/1440769946",
+   "https://en.wikipedia.org/wiki/Album_II_(Kem_album)"
+  ],
+  "mbRgMbid": "e5dc0cb8-2208-3595-b440-a9bd9be84a5f",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "MB 最早一筆 2004（應為 promo），零售首發 2005-05-17，年份取 2005；y 風險同 Kemistry",
+  "group": "ml31",
+  "factionZh": "爵士靈魂慢板 ballad（厚製作）",
+  "mb": {
+   "title": "Album II",
+   "type": "Album",
+   "sec": [],
+   "date": "2004",
+   "credit": "Kem"
+  }
+ },
+ {
+  "artist": "Kem",
+  "album": "Intimacy: Album III",
+  "year": 2010,
+  "label": "Motown",
+  "country": "us",
+  "faction": "jazz-soul-ballad",
+  "genres": [
+   "soul",
+   "jazz"
+  ],
+  "why": "Kem 第三張、他最厚的一張：〈Why Would You Stay〉等慢板 quiet storm 加弦樂與厚墊，爵士和聲＋溫熱包覆",
+  "moodGuess": {
+   "x": 2.1,
+   "y": 0.9,
+   "z": 1.4,
+   "why": "慢、弦樂墊＋厚合成、低頻飽滿，旋律清楚溫"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/e8453997-d83b-45ea-951b-913affb2b6a9",
+   "https://music.apple.com/us/album/intimacy/1443073511",
+   "https://en.wikipedia.org/wiki/Intimacy:_Album_III"
+  ],
+  "mbRgMbid": "e8453997-d83b-45ea-951b-913affb2b6a9",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "",
+  "group": "ml31",
+  "factionZh": "爵士靈魂慢板 ballad（厚製作）",
+  "mb": {
+   "title": "Intimacy: Album III",
+   "type": "Album",
+   "sec": [],
+   "date": "2010-08-17",
+   "credit": "Kem"
+  }
+ },
+ {
+  "artist": "Kem",
+  "album": "Promise to Love: Album IV",
+  "year": 2014,
+  "label": "Motown",
+  "country": "us",
+  "faction": "jazz-soul-ballad",
+  "genres": [
+   "soul",
+   "jazz"
+  ],
+  "why": "Kem 第四張，仍是慢板爵士靈魂 ballad 為主，厚合成墊與弦樂、柔低頻的成熟 quiet storm 製作",
+  "moodGuess": {
+   "x": 2.3,
+   "y": 0.8,
+   "z": 1.4,
+   "why": "慢板為主、厚墊與弦樂、低頻溫，暖嗓"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/6bdcb281-18ef-44ae-a590-2cd8de6edbce",
+   "https://coverartarchive.org/release-group/6bdcb281-18ef-44ae-a590-2cd8de6edbce/front",
+   "https://en.wikipedia.org/wiki/Promise_to_Love"
+  ],
+  "mbRgMbid": "6bdcb281-18ef-44ae-a590-2cd8de6edbce",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "有兩三首中速 groove，x 可能到 2.6",
+  "group": "ml31",
+  "factionZh": "爵士靈魂慢板 ballad（厚製作）",
+  "mb": {
+   "title": "Promise to Love: Album IV",
+   "type": "Album",
+   "sec": [],
+   "date": "2014-08-25",
+   "credit": "Kem"
+  }
+ },
+ {
+  "artist": "José James",
+  "album": "Blackmagic",
+  "year": 2010,
+  "label": "Brownswood",
+  "country": "us",
+  "faction": "jazz-soul-ballad",
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "why": "José James 第二張，爵士人聲交給 Flying Lotus、Taylor McFerrin、DJ Mitsu 做 dusty 節拍與濾波霧，慢、低頻厚，比池中他的 While You Were Sleeping（y 0.7）更糊",
+  "moodGuess": {
+   "x": 2.4,
+   "y": 0.9,
+   "z": 0.8,
+   "why": "慢、dusty 節拍與濾波霧、低頻厚，暖嗓旋律清楚"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/93edb1b7-3854-4dab-b360-ac5a32d4692f",
+   "https://coverartarchive.org/release-group/93edb1b7-3854-4dab-b360-ac5a32d4692f/front",
+   "https://www.discogs.com/master/232905"
+  ],
+  "mbRgMbid": "93edb1b7-3854-4dab-b360-ac5a32d4692f",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "",
+  "group": "ml31",
+  "factionZh": "爵士靈魂慢板 ballad（厚製作）",
+  "mb": {
+   "title": "Blackmagic",
+   "type": "Album",
+   "sec": [],
+   "date": "2010-02-01",
+   "credit": "José James"
+  }
+ },
+ {
+  "artist": "Mahalia Jackson",
+  "album": "The Power and the Glory",
+  "year": 1960,
+  "label": "Columbia",
+  "country": "us",
+  "faction": "gospel-orchestral",
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "why": "Mahalia 與 Percy Faith 管弦團合作的聖詩盤，最慢最厚的一張：滿弦樂＋合唱墊＋大殘響包住她的低音",
+  "moodGuess": {
+   "x": 1.8,
+   "y": 0.8,
+   "z": 1.6,
+   "why": "極慢、管弦滿編＋合唱、殘響大，聖詩旋律清楚溫"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/1cc38865-6b02-3698-858f-aac3ca17deda",
+   "https://music.apple.com/us/album/the-power-and-the-glory/190183806",
+   "https://en.wikipedia.org/wiki/Mahalia_Jackson_discography"
+  ],
+  "mbRgMbid": "1cc38865-6b02-3698-858f-aac3ca17deda",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "MB 群組只有 1998 Legacy CD 條目，原盤 1960 Columbia CL 1473；池中 Mahalia y 0.5–0.7，管弦版預期較厚但不保證過 0.8",
+  "group": "ml31",
+  "factionZh": "福音慢板：管弦／合唱厚編",
+  "mb": {
+   "title": "The Power and the Glory",
+   "type": "Album",
+   "sec": [],
+   "date": "1998",
+   "credit": "Mahalia Jackson"
+  }
+ },
+ {
+  "artist": "Mahalia Jackson",
+  "album": "Great Songs of Love and Faith",
+  "year": 1962,
+  "label": "Columbia",
+  "country": "us",
+  "faction": "gospel-orchestral",
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "why": "Mahalia Columbia 中期的管弦慢板聖詩盤，弦樂＋合唱厚編、教堂式殘響",
+  "moodGuess": {
+   "x": 1.9,
+   "y": 0.8,
+   "z": 1.6,
+   "why": "慢、管弦＋合唱厚編、殘響，溫"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/3cf44cbe-4aff-4b28-bd4b-f2fdb2d9657d",
+   "https://coverartarchive.org/release-group/3cf44cbe-4aff-4b28-bd4b-f2fdb2d9657d/front",
+   "https://en.wikipedia.org/wiki/Mahalia_Jackson_discography"
+  ],
+  "mbRgMbid": "3cf44cbe-4aff-4b28-bd4b-f2fdb2d9657d",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "池中 Mahalia y 0.5–0.7",
+  "group": "ml31",
+  "factionZh": "福音慢板：管弦／合唱厚編",
+  "mb": {
+   "title": "Great Songs of Love and Faith",
+   "type": "Album",
+   "sec": [],
+   "date": "1962",
+   "credit": "Mahalia Jackson"
+  }
+ },
+ {
+  "artist": "Mahalia Jackson",
+  "album": "Sings the Gospel Right Out of the Church",
+  "year": 1969,
+  "label": "Columbia",
+  "country": "us",
+  "faction": "gospel-orchestral",
+  "genres": [
+   "jazz",
+   "soul"
+  ],
+  "why": "Mahalia 晚期大製作：合唱團、管風琴、管弦與節奏組，慢板為主，厚而溫",
+  "moodGuess": {
+   "x": 2.2,
+   "y": 0.8,
+   "z": 1.6,
+   "why": "慢板為主、合唱＋管風琴＋管弦厚、殘響，溫"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/4dead59a-a5ce-49b5-b612-40405fbf3335",
+   "https://music.apple.com/us/album/sings-the-gospel-right-out-of-the-church/1032610299",
+   "https://en.wikipedia.org/wiki/Mahalia_Jackson_discography"
+  ],
+  "mbRgMbid": "4dead59a-a5ce-49b5-b612-40405fbf3335",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "有一兩首中速；池中 Mahalia y 0.5–0.7",
+  "group": "ml31",
+  "factionZh": "福音慢板：管弦／合唱厚編",
+  "mb": {
+   "title": "Sings The Gospel Right Out Of The Church",
+   "type": "Album",
+   "sec": [],
+   "date": "1969",
+   "credit": "Mahalia Jackson"
+  }
+ }
+]
