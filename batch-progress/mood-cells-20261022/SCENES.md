@@ -81,8 +81,8 @@
 | 57 | mc39 | 自由爵士管樂獨奏與二重奏（Anthony Braxton、Evan Parker、Roscoe Mitchell、Brötzmann、Wadada Leo Smith 獨奏盤；mc38 鋼琴路高產） | ✅ 上線 28／落格 24 |
 | 58 | ml53 | 爵士人聲 torch song／深夜 ballad（Julie London、Chet Baker sings 以外的二線；弦樂或厚編曲才收） | ✅ 上線 17／落格 17（2026-10-23；策展兩輪 28、研究汰 11（無殘響直錄、house 拍、原聲簡編制、trap、輕快 roots）；torch／with strings 池中全判輕，收 quiet storm 爵士靈魂與霧暖 alt R&B／日本 neo-soul；主場景見底，不再派） |
 | 59 | mc40 | 自由即興弦樂（Leroy Jenkins、Billy Bang 前衛期、Joëlle Léandre、Barry Guy 獨奏、Mat Maneri、Phil Wachsmann；mc38／mc39 路高產） | ✅ 上線 29／落格 28（2026-10-23；策展 51（擋現場 21）、主線挑 45、研究汰 16（借曲／藍調 5、稀疏長音 6、電聲厚重 5）；出格 August Steps 判靜；主場景見底，不再派） |
-| 60 | ml54 | lo-fi／chillhop 第四波（Jazzinuf、Idealism、eevee、Sleepy Fish、韓國 lo-fi 二線；ml51 收 31 仍高產） | 派→情緒薄格 ml54、md29（第 12 輪） |
-| 61 | md29 | dark ambient 第四波（Kammarheit、Northaunt、Sabled Sun、Council of Nine、Cryo Chamber 晚期新人；md28 收 34 仍高產） | 派→情緒薄格 ml54、md29（第 12 輪） |
+| 60 | ml54 | lo-fi／chillhop 第四波（Jazzinuf、Idealism、eevee、Sleepy Fish、韓國 lo-fi 二線；ml51 收 31 仍高產） | ✅ 上線 22／落格 21 |
+| 61 | md29 | dark ambient 第四波（Kammarheit、Northaunt、Sabled Sun、Council of Nine、Cryo Chamber 晚期新人；md28 收 34 仍高產） | ✅ 上線 33／落格 32 |
 | 62 | ml55 | 90s–00s 女聲 R&B ballad（Toni Braxton、SWV、Brandy、Monica、Faith Evans、Tamia 慢盤；ml49／ml52 路高產） | ✅ 上線 22／落格 22 |
 | 63 | mc41 | 電子原音／musique concrète 尖細那半（GRM 系 Parmegiani、Bayle、Xenakis 電子作、Dhomont；厚重往下壓的落頹靡） | ✅ 上線 11／落格 10 |
 
@@ -122,7 +122,7 @@
 | md26 | 19721 | 暗色 neofolk／dark folk 慢盤（Current 93、Sol Invictus、Ain Soph、Forseti、Hexvessel 慢盤；避開有極右爭議的團）＋ doom jazz 二線 | ✅ 上線 28／落格 28（策展兩輪 61、主線汰 3、研究汰 30；neofolk 只剩 drone／儀式型，極右爭議團不收，場景見底） |
 | md27 | 20361 | 暗色現代古典慢板厚弦（Górecki、Kancheli、Vasks、Penderecki 慢作、Silvestrov 冷盤） | ✅ 上線 15／落格 13（2026-10-23；主場景池中全判輕，改收 Scelsi／低音弦 drone／drone 配樂；策展兩輪 47、研究汰 31；見底不再派） |
 | md28 | 20601 | dark ambient 第三波（Cryo Chamber、Cyclic Law、Glacial Movements、Malignant 二線藝人） | ✅ 上線 34／落格 34（2026-10-23；策展 54、主線汰 8、研究汰 12、補 3 再汰 3；文案寫拍點／溫暖／旋律樂器或人聲領奏的汰；Cryo Chamber 二線已挖到底，Cyclic Law／Old Europa Cafe 還有少量） |
-| md29 | 21161 | dark ambient 第四波（Kammarheit、Northaunt、Sabled Sun、Council of Nine、Cryo Chamber 晚期新人） | 派→情緒薄格 ml54、md29（第 12 輪） |
+| md29 | 21161 | dark ambient 第四波（Kammarheit、Northaunt、Sabled Sun、Council of Nine、Cryo Chamber 晚期新人） | ✅ 上線 33／落格 32（2026-10-23；策展 58＋補 15、主線汰 15、研究汰 25；文案寫打擊／溫暖／旋律樂器或口白領奏的汰；Cryo Chamber 晚期與 Cyclic Law 二線已挖到底，主場景見底不再派；器樂 dub 擴寫只收 2 張、Jah Shaka 色溫判 0 落恍惚） |
 
 ## 冷冽 mc（躁＋輕＋冷；門檻 x ≥ 3.3、y ≤ +0.2、z ≤ −0.3）
 
@@ -231,5 +231,5 @@
 | ml51 | 20441 | lo-fi／beat tape 第三波（Knxwledge、Mndsgn、Ta-ku、Elaquent、Kiefer 慢盤、日本 jazzhop 二線） | ✅ 上線 31／落格 31（2026-10-23；策展 54、主線汰 8、研究汰 16、補 1；boom bap 彈跳、house／glitch、人聲合輯、散裝草稿集汰；Ohbliv、Wun Two、Purrple Cat、mt. fujitive 池中同人錨點可靠；主場景見底，不再派） |
 | ml52 | 20521 | 2000s R&B ballad／slow jam 續集（Joe、112、Avant、Dru Hill、Musiq Soulchild、Brian McKnight 慢盤） | ✅ 上線 27／落格 25（2026-10-23；策展 54、研究汰 22：hip-hop 硬拍取樣／饒舌客串 12、舞曲 5、smooth jazz 2、陰冷 1、身分 1、補 4 再汰 2；出格 Lattimore《Timeless》、Phil Perry 乾淨製作判輕落放鬆；主場景見底，不再派） |
 | ml53 | 20761 | 爵士人聲 torch song／深夜 ballad 二線（弦樂或厚編曲） | ✅ 上線 17／落格 17（2026-10-23；策展兩輪 28、研究汰 11（無殘響直錄、house 拍、原聲簡編制、trap、輕快 roots）；torch／with strings 池中全判輕，收 quiet storm 爵士靈魂與霧暖 alt R&B／日本 neo-soul；主場景見底，不再派） |
-| ml54 | 20841 | lo-fi／chillhop 第四波（Jazzinuf、Idealism、eevee、Sleepy Fish、韓國 lo-fi 二線） | 派→情緒薄格 ml54、md29（第 12 輪） |
+| ml54 | 20841 | lo-fi／chillhop 第四波（Jazzinuf、Idealism、eevee、Sleepy Fish、韓國 lo-fi 二線） | ✅ 上線 22／落格 21（2026-10-23；策展 54、主線汰 19、研究汰 13；Sleepy Fish／Idealism／韓國 lo-fi 全是 EP 或已在池，主場景見底不再派；Lofi Records 乾淨鋼琴型 Bcalm《Elements》判輕落放鬆；dub 化擴寫只留 Pachyman 三張） |
 | ml55 | 20921 | 90s–00s 女聲 R&B ballad（Toni Braxton、SWV、Brandy、Monica、Faith Evans、Tamia 慢盤） | ✅ 上線 22／落格 22（2026-10-23；策展兩輪 44、主線汰 3（讓 ml53 一張）、研究汰 19（new jack／饒舌客串／舞曲 10、smooth jazz 2、翻唱、現場福音、EP、冷數位 2、場景不符 1）；主流頭牌池中判輕，見底不再派） |

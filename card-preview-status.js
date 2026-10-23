@@ -3446,4 +3446,6 @@ window.DipPreviewStatus = Object.freeze({
   "john russell & roger turner|the second sky": "unavailable",
   "barry guy - howard riley - philipp wachsmann|improvisations are forever now (1977-9)": "unavailable",
   "perelman • maneri • feldman • hwang|strings 1": "unavailable",
+  "hoarfrost|ground zero": "unavailable",
+  "strom noir|glaciology": "unavailable",
 });
