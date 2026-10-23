@@ -10,6 +10,17 @@
 - **藝人介紹**：未切（並行規矩）；新藝人 28 位列在兩批 rulings.md 末尾（ml15 10、mc7 18）。
 - **主要檔案**：`batch-progress/add-20261023-{mc7,ml15}/`、`batch-progress/mood-cells-20261022/{curation,master}-{mc7,ml15}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{mc7,ml15}/`、`onboarding-manifest-add-20261023-{mc7,ml15}-20261023.json`、`desc-tools/batches/*/add-20261023-{mc7,ml15}-*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/mood/*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`。
 - **驗證**：prepare／published gate 兩批 0 error；verify-wave-kv 59/59；qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；build-card-moods 錨點 104/104、寫入 20,390 張。
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 3 輪 mc11／ml11：Kraftwerk 嫡系＋spacesynth 16＋chillwave／hypnagogic 26 張上線，落格 14/16、23/26
+
+- **內容**：店主「三個薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 3 輪，本工作階段負責 mc11、ml11。mc11（`add-20261023-mc11`，krautrock motorik＋mc16 Italo／space disco＋mc27 70s 前衛電子）：Laserdance 5、Proxyon 2、Karl Bartos《Off the Record》、Elektric Music《Esperanto》、Kraftwerk《The Mix》、Rheingold《Distanz》、Tangerine Dream《Exit》《Optical Race》、Jarre《Chronologie》、Black Devil Disco Club《Disco Club》、Hipnosis。ml11（`add-20261023-ml11`，chillwave／hypnagogic＋ml12 濕的 bedroom／dream pop）：Black Moth Super Rainbow 4、Washed Out 2、Ducktails 2、Cuushe 2、Teen Daze 2、Foxes in Fiction 2、Papercuts 2、SLEEP ∞ OVER、Youth Lagoon《Wondrous Bughouse》、Blackbird Blackbird《Hearts》、Peaking Lights《Imaginary Falcons》、Homeshake《Under the Weather》、Men I Trust《Headroom》、Vansire《Angel Youth》、Rangers、Nightlands、Yellow Days。兩批都挖不到 45，照實上架。
+- **策展→研究汰換**：mc11 策展 61、主線汰 26（池中 TD／Schulze 判靜、krautrock 判暖、Die Krupps／Rockets 判重、Italo 甜人聲）、研究汰 19（真鼓樂團編制、funk／拉丁律動、downtempo、drone）；ml11 策展 54、主線汰 16（池中同藝人判躁或輕）、研究汰 11（舞曲拍、乾淨數位、EP）、鉤子後汰 1（Yellow Days《Harmless Melodies》7 首迷你專輯）。卡單廠牌更正 mc11 10 處、ml11 11 處。
+- **主線審稿**：mc11 改 3（Black Devil Disco Club 掛名、Chronologie 發行日兩說衝突降為年、Proxyon 人名補全）；ml11 改 3（BMSR 刪單源評價句、兩處寫作層病句）。
+- **上線**：card_catalog 16＋26、KV 16＋26 鍵回讀逐字一致、試聽 10＋25 ready（人工指定 1＋2）、seed +42、published gate 兩批 0 error；封面 42 張皆 CAA，live-check 42/42；跨 origin 46 分支 seed 去重 0 撞。
+- **情緒評分**：`score-mc11`、`score-ml11`。**mc11 落冷冽 14/16（88%）**，出格 2 張是 Tangerine Dream（《Exit》判靜、《Optical Race》判暖）；**ml11 落恍惚 23/26（88%）**，出格 3 張色溫判冷落頹靡（SLEEP ∞ OVER、Youth Lagoon、Papercuts《You Can Have What You Want》，研究稿都有陰冷字眼）。併 main（酸冷重判二輪）後八格：恍惚 1,020、冷冽 1,049、頹靡 1,317。
+- **類型樹**：`genre-l3-artist-map.json` 補 4 張（SLEEP ∞ OVER、Homeshake、Nightlands、Yellow Days），42/42 落位。
+- **藝人介紹**：未切（並行規矩）；新藝人 20 位列在兩批 rulings.md 末尾（mc11 7、ml11 13）。
+- **主要檔案**：`batch-progress/add-20261023-{mc11,ml11}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{mc11,ml11}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{mc11,ml11}/`、`onboarding-manifest-add-20261023-{mc11,ml11}-20261023.json`、`desc-tools/batches/*/add-20261023-{mc11,ml11}-*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/mood/*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`。
+- **驗證**：prepare／published gate 兩批 0 error；KV 回讀 42/42；qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；build-card-moods 錨點 104/104。
 
 ### 2026-10-23｜dip-vinyl-shop｜更正：「驟然爆裂」不算推力，94 張酸卡能量撤回（《The Drift》回頹靡）
 
