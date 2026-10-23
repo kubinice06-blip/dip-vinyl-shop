@@ -95,3 +95,14 @@
 - **17783** 跨兩檔 han() 4-gram 合掃（含 out-2 當時版本）：本組 3 張以上 0 條；拆掉的殘片有「首約分鐘」×13（本組 3 張改寫）、「原聲帶年」、「恐怖遊戲」、「長約分鐘」、「在年發行」、「的配樂由與」、「七首曲子／序命名從」、「一路排到」、「加起來約」、「遊戲寫音樂」、「分鐘左右」等。剩下 2 張的：「冰島作曲家」（a1 對 out-2 第 17 張，兩邊都是鉤子層指派領句）、「寫的配樂」（a1 領句）、「奧斯卡最佳／最佳原創配樂」（獎項名）、「大提琴獨奏」（a2 hook）、「低音大提琴」「與合成器」（樂器名／a5 hook）、「音樂監製」（b2、b3 職稱領句）、「恐怖遊戲」（b5 領句）、「的作曲者」（c2、c4 領句），請主線收件合掃時再看一次。
 - **17784** 照補充指示：媒體名與媒體榜單名次 0 處；轉述引導詞 0。note 以外的 facts 未入正文——初稿自查拿掉兩處越界（Sicario「撐起緊繃」、Hereditary「另一層質地」）。hook 已說完的 note 項不重述：SH4 第二張光碟朗讀、Amnesia DD「只能逃或躲」與 19 首、Lustmord 8 首、Soldado 第二句改成「參與過 2015 年的第一集」不再寫「獨奏」。
 - **17785** 小處：Monos 第二句把導演挪到句尾（避「導演這部」與 out-2 撞）；Lustmord 寫「由 Lustmord 配樂」代替代名詞；SH2 第二句領句由「這個恐怖遊戲的原作」改成「這款以恐怖為主軸的遊戲，原作…」（避「恐怖遊戲」×3）；SH4 寫成「恐怖系列《Silent Hill》遊戲」同理；Rebirth 年份只寫 2020、SOMA 只寫 2015；BR2049 Zimmer 的話轉間接敘述。
+
+## 主線審稿（2026-10-23，cloud-main，42 張逐張讀過、對回研究稿）（條號 17793）
+- **17793** 改 7 處（全是單源樂評／評論轉述改成聲音陳述或刪除，事實不動，研究／hooks／input 不必同步）：
+  - `desc2:Colin Stetson|Color Out of Space: Original Motion Picture Soundtrack`：刪「樂評指出，這個四音的外星主題替原本缺乏形狀的配樂撐出輪廓。」（單源評價；240→211）。
+  - `desc2:Mikko Tarmia|Amnesia: The Dark Descent`：「評論稱遊戲的音效與極簡的音樂一起營造出恐懼，這款遊戲也拿下」→「這款遊戲拿下」（217→194）。
+  - `desc2:Lustmord|First Reformed: Extended Motion Picture Soundtrack`：「後來評論把他稱為 dark ambient 的開路者。」→「他後來被視為 dark ambient 的開路者。」
+  - `desc2:Tim Hecker|Infinity Pool (Original Motion Picture Soundtrack)`：刪「樂評說」。
+  - `desc2:Adam Janota Bzowski|Saint Maud: Original Motion Picture Soundtrack`：刪「樂評聽到」。
+  - `desc2:Jim Williams|Possessor`：刪「開頭那串形容出自樂評。」（hook 保留，作為聲音陳述）。
+  - `desc2:Anna Thorvaldsdottir|Aerial`：刪「樂評說」。
+- 其餘 35 張逐張審過未改字。媒體名、榜單名次、「據說」全批 0。
