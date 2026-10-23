@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 6 輪 ml32／mc28：拉丁 sweet soul＋80s roots 人聲 16 張、歐陸自由即興 22 張上線，落格 16/16、19/22
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 6 輪，本工作階段負責 ml32、mc28（評分照 10-23 體感標準）。ml32（`add-20261023-ml32`，恍惚：拉丁 bolero／慢板浪漫＋ml25 80s 慢板 reggae）：Thee Sacred Souls ×2、Bobby Oroza、Thee Sinseers、Kali Uchis《Sin miedo》、Carla Morrison《Amor supremo》、Chancha Vía Circuito ×2、Horace Andy《Exclusively》、Don Carlos & Gold、Milton Henry、Sugar Minott ×2、The Viceroys、Lacksley Castell、Johnny Osbourne《Nightfall》。mc28（`add-20261023-mc28`，冷冽：歐陸自由即興＋mc34 日本即興）：Evan Parker 獨奏 ×5、Han Bennink ×2、Bailey & Bennink、ICP 三重奏、《Topography of the Lungs》、Company ×2、Bailey《Lot 74》、Tony Oxley、SME、Barry Guy、John Butcher、Alterations、Phil Minton、Paul Lytton、Mengelberg《Impromptus》、吉田アミ《Tiger Thrush》。
+- **策展→研究汰換**：ml32 策展 31、研究汰 15（乾淨／crisp、boogaloo 中速、80s 中後期電子鼓、刻意乾的復古錄音、近彙整重混）→ 16；經典 bolero 池中全判輕，主場景見底，ml32 不再派。mc28 策展 44、主線汰 5（讓並行的 mc33 Ikue Mori 2 張、x 貼邊 3）、研究汰 17（實為現場 5、稀疏低音量判靜 9、三軸皆疑 3）→ 22；Globe Unity／ICP Orchestra 大編制 0 張。
+- **主線審稿**：ml32 改 3 處（超出來源的「每一拍都是真人打的」改年份事實、單源樂評對照句拿掉、後設說明收短；hook 同步）；mc28 改 7 處（單源評價句刪 4、重複句刪 1、補研究稿事實 2）。
+- **上線**：card_catalog 16＋22、KV 16＋23 鍵回讀逐字一致、試聽 16＋1 ready（Incus／FMP 幾乎不在 Apple）、seed +38、published gate 兩批 0 error；封面 CAA 29、Apple 2、Discogs 7（已登錄 registry），live-check 全 200。上線前對 origin 65 個分支 seed＋卡單去重 0 撞。
+- **情緒評分**：`score-ml32`、`score-mc28`。**ml32 落恍惚 16/16（100%）**；**mc28 落冷冽 19/22（86%）**，出格 Mengelberg《Impromptus》判靜落平靜、《Topography of the Lungs》與 Parker《Process and Reality》判重落暴躁。八格（併 main 後）：恍惚 1,207、冷冽 1,402、頹靡 1,404。
+- **類型樹**：`genre-l3-artist-map.json` 補 6 張（Sinseers、Carla Morrison、Lacksley Castell、ICP 三重奏、Minton、吉田アミ），38/38 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 18 個掛名＋3 個合掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{ml32,mc28}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml32,mc28}.json`、`master-override-mc28.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml32,mc28}/`、`onboarding-manifest-add-20261023-{ml32,mc28}-20261023.json`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261023-{ml32,mc28}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 39/39；`build-card-moods` 錨點 104/104、seed 20,900。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 6 輪 ml31／md18：爵士靈魂 ballad＋管弦福音 7＋日本／北歐暗色 drone 36 張上線，落格 7/7、34/36
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 6 輪，本工作階段負責 ml31、md18（評分照 10-23 體感標準）。ml31（`add-20261023-ml31`，恍惚：爵士弦樂抒情盤＋ml33 福音慢板）：Anita Baker《Rhythm of Love》、Kem ×4、Mahalia Jackson《The Power and the Glory》《Great Songs of Love and Faith》。md18（`add-20261023-md18`，頹靡：日本暗色 drone＋md20 北歐暗色＋md19）：Boris ×2、Corrupted ×3、Funeral Moth ×2、不失者、MONO、Yoshi Wada、畠山地平 ×2、Deathprod ×5（含 Biosphere 拆分）、Supersilent ×2、Westerhus、raison d'être ×5、Svartsinn ×3、Northaunt ×3、Kammarheit ×2、Skepticism、Ø。

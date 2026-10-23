@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **357** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 119、已退回 1）。
+共 **364** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 126、已退回 1）。
 最後更新：2026-10-23
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -237,6 +237,18 @@
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
 | 田中フミヤ 《Unknown 3》 | [#1542908](https://www.discogs.com/release/1542908) | 2008 | Sundance | SNDCD001 | MB release-group c25721ab 的對應發行（Sundance SNDCD001）、主線目視與盤名相符 | ok |
+
+## add-20261023-mc28（7 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Alterations 《Alterations》 | [#1567557](https://www.discogs.com/release/1567557) | 1978 | Bead Records | BEAD 9 | 年份 1978、廠牌 Bead Records、目錄號 BEAD 9、主線目視與盤名相符 | ok |
+| Company 《Company 2》 | [#470747](https://www.discogs.com/release/470747) | 1977 | Incus | INCUS 23 | 年份 1977、廠牌 Incus、目錄號 INCUS 23、Discogs master 314401 的版本、主線目視與盤名相符 | ok |
+| Derek Bailey 《Lot 74 Solo Improvisations》 | [#807204](https://www.discogs.com/release/807204) | 1974 | Incus | INCUS 12 | 年份 1974、廠牌 Incus、目錄號 INCUS 12、Discogs master 253386 的版本、主線目視與盤名相符 | ok |
+| Misha Mengelberg 《Impromptus》 | [#2337500](https://www.discogs.com/release/2337500) | 1990 | FMP | FMP CD 7 | 年份 1990、廠牌 FMP、目錄號 FMP CD 7、Discogs master 1265909 的版本、主線目視與盤名相符 | ok |
+| Phil Minton 《A Doughnut in One Hand》 | [#1512007](https://www.discogs.com/release/1512007) | 1998 | FMP | FMP CD 91 | 年份 1998、廠牌 FMP、目錄號 FMP CD 91、主線目視與盤名相符 | ok |
+| Tony Oxley 《Tony Oxley》 | [#1581498](https://www.discogs.com/release/1581498) | 1975 | Incus | INCUS 8 | 年份 1975、廠牌 Incus、目錄號 INCUS 8、主線目視與盤名相符 | ok |
+| 吉田アミ 《Tiger Thrush》 | [#532583](https://www.discogs.com/release/532583) | 2003 | Improvised Music From Japan | IMJ-504 | 年份 2003、廠牌 Improvised Music From Japan、目錄號 IMJ-504、Discogs master 2002321 的版本、主線目視與盤名相符 | ok |
 
 ## add-20261023-mc32（6 張）
 
