@@ -103,3 +103,9 @@
   3. `desc2:Proxyon|The Return of Tarah`：「由 Michiel 與 Rob van Eijk 製作」→「由 Michiel van der Kuy 與 Rob van Eijk 製作」（人名補全）。
 - **11872**：其餘 13 張逐張審過未改字；媒體名、榜單名次（只留官方國家榜）、「據說」掃過 0 處。qa-batch out／qa-check-research／fix-spacing 改後重跑全過。
 - **11873**：試聽 10 ready／6 unavailable（Elektric Music《Esperanto》、Rheingold《Distanz》、TD《Optical Race》、Laserdance《Changing Times》、Proxyon 兩張：Apple 藝人目錄查無原盤）；Jarre《Chronologie》人工配 2015 重製版（`preview-override.json`）。封面 16 張皆 CAA release-group front。
+- **11874-P**：上線（2026-10-23）：跨 origin 46 個分支 seed 去重 0 撞；封面 live-check 16/16 200；card_catalog 16／16、KV 16 鍵回讀逐字一致、靜態試聽 10＋無來源 6、seed +16、published gate 0 error（16 warning 皆 UPC 缺）。子曲風 warm 16/16 有標籤、類型樹 16/16 落位。
+- **11875-M**：上線當天情緒評分（`batch-progress/mood-axes/score-mc11/`，一支 Opus 照 BRIEF、不上網）：conf high 1／mid 7／low 8。**落冷冽 14／16（88%）**；出格 2 張都是 Tangerine Dream：《Exit》x 2.9 落平靜（sequencer 段與靜止氛圍段交替）、《Optical Race》z +0.1 落雀躍（數位旋律明亮光潔）——與池中 TD 80 年代盤 x 2.6–3.0 一致，**TD 一律別再提冷冽**。Laserdance 五張、Proxyon 兩張、Hipnosis、Black Devil、Kraftwerk 嫡系（Bartos、Elektric Music、The Mix）、Rheingold 全落冷冽。
+- 場景產量：策展 61 → 主線汰 26 → 研究汰 19 → 上線 16。**這三個場景（krautrock motorik、Italo／space disco、70s 前衛電子）合起來只撐出 16 張**：krautrock 與 kosmische 池中判暖或靜、Italo 多為單曲或人聲甜、法義 70–80 年代電子盤多是真鼓樂團編制。冷冽線剩下的可行方向：荷比 spacesynth 器樂（Laserdance／Proxyon 系其他名號：Koto 原創盤、Cyber People、Rofo 器樂盤需另查 MB）。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Karl Bartos、Elektric Music、Rheingold、Black Devil Disco Club、Hipnosis、Laserdance、Proxyon（7 位）。

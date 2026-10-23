@@ -112,7 +112,7 @@
   3. `desc2:Papercuts|Fading Parade`：「借 Papercuts 為名，此番帶著完整樂團」→「以 Papercuts 為名，這回帶著完整樂團」（同上，語感）。
 - **14872**：其餘 23 張逐張審過未改字；媒體名、榜單名次、「據說」掃過 0 處。qa-batch out／qa-check-research／fix-spacing 改後重跑全過。
 - **14873**：試聽 25 ready／1 unavailable（Teen Daze《My Bedroom Floor》Apple 無條目）；Vansire《Angel Youth》、Yellow Days《Is Everything Okay in Your World?》藝人目錄人工配對（`preview-override.json`）。封面 26 張皆 CAA release-group front（meta HEAD 200）。冷門軸照 Last.fm 機器基線；Vansire《Angel Youth》listeners 139 萬偏高，查為〈Metamodernity〉爆紅帶動，保留。
-- **14874-P**：上線（2026-10-23）：跨 origin 46 個分支 seed 去重 0 撞；封面 live-check 26/26 200；card_catalog 26／26、KV 26 鍵回讀逐字一致、靜態試聽 25＋無來源 1、seed +26、published gate 0 error（26 warning 皆 UPC 缺）。子曲風 warm 26/26 有標籤。
+- **14874-P**：上線（2026-10-23）：跨 origin 46 個分支 seed 去重 0 撞；封面 live-check 26/26 200；card_catalog 26／26、KV 26 鍵回讀逐字一致、靜態試聽 25＋無來源 1、seed +26、published gate 0 error（26 warning 皆 UPC 缺）。子曲風 warm 26/26 有標籤；類型樹 22/26 自動落位，`genre-l3-artist-map.json` 補 4 張（SLEEP ∞ OVER → electronic/downtempo/chillwave、Homeshake《Under the Weather》→ soul/neo-soul、Nightlands → rock/indie-alt/neo-psych、Yellow Days → pop/indie-pop/bedroom）。
 - **14875-M**：上線當天情緒評分（`batch-progress/mood-axes/score-ml11/`，一支 Opus 照 BRIEF、不上網）：conf high 2／mid 21／low 3。**落恍惚 23／26（88%）**；出格 3 張全是色溫判冷落頹靡：SLEEP ∞ OVER《Forever》（研究稿「冰凍的搖籃曲」）、Youth Lagoon《Wondrous Bughouse》（研究稿「不安、心理失調」）、Papercuts《You Can Have What You Want》（暮色、幽靈人聲）——三張都是研究層已寫陰冷字眼的，與 ml5 neo-soul 教訓一致：**研究稿出現陰冷字眼的 dream pop 預期落頹靡**。貼邊：Men I Trust《Headroom》y 0.6、BMSR《Eating Us》x 2.9。
 - 場景產量：chillwave／hypnagogic 策展 54 → 主線汰 16 → 研究汰 11 → 鉤子後汰 1（EP）→ 上線 26。主因：核心盤（Toro y Moi、Neon Indian、Washed Out 主盤、Ariel Pink）已在池或判躁；二線多帶舞曲拍（Small Black 後期、Puro Instinct、Blackbird《Summer Heart》）或乾淨數位（Homeshake 中期）。
 
