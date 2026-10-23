@@ -113,3 +113,18 @@
 - **18343** Bleaklow：note 的「Mark Fisher 後來稱它是 Raime 詭異的前身與雙胞胎」屬樂評人評語，依店主補充（不寫轉述引導）與 writer-base 樂評人姓名不進正文，改成被動「多年以後，它被看成 Raime 那種詭異聲響的前身與雙胞胎」，不具名 Fisher（時序照標）。Take Care 的 Fisher 是悼念對象、屬主故事，照 note 具名。可逆。
 - **18344** 自掃（han() 中文 4-gram，本檔 17 張＋writer-2 卡單 17 個 hook）：拆掉 2 張殘片 9 條（這支樂團、在年創立、聲音轉向、這個名字、英國舞廳唱片、的這張是、就是這個、每一首都〔對 writer-2 TPAA hook〕、張專輯年）；定稿只剩「聖塔芭芭拉」（地名，Trance to the Sun 兩張）。另對 add-202610xx 既有 out 檔掃前兩句，Eager「專輯年月日」改「作品」。日期「日」後一字：Take Care 日以、Eager 日由、Spiral Traveller 日才，其餘只寫到年或月。
 - **18345** 腳本：`qa-batch out` out-1 17 張 139–237、thin 全 ≤180（總標記 1 為 out-2 未齊的張數不符）；`qa-check-research` 初跑標 1（Eager「編造專名? The Caretaker」——note 只寫 Caretaker，改成「以 Caretaker 名義」後 0）；`fix-spacing` 0 處。輔助腳本在 scratchpad `wr-md21-1/`。
+
+## 寫作層（writer-2）
+- **18346** 交件：`desc-tools/batches/output/add-20261023-md21-out-2.json` 17 張（full 13：189–239；thin 4：Deleted Scenes 162、Rabelais 167、Pinkcourtesyphone 166、VanPortfleet 177），key 逐字同序。初稿超標 3 張，整格捨去／改句：De lumière 247（刪「就出自 Dead Can Dance 之手」，末首只具名曲名）、oOoOO 242（刪「到了」「終於」「而」等連接殼）、VanPortfleet thin 194（刪「Lycia 那時剛轉投 Silber」獨立子句，併回 note 原句「由 Lycia 剛轉投的 Silber 發行」）。
+- **18347** 轉述引導詞依派工補充全清：note 裡的「據說」（Patience 78 轉來歷）、「據報導」（Rabelais 冰島哀歌）、「據新聞稿」（Deleted Scenes 低音量刻片）、「樂評說」（Mémoires）、「樂評猜」（Watching）、「Ghost Box 說」（Stasis）、「廠方說」（oOoOO 的 Bozcaada）一律改成直接陳述或被動（「被拿來和…相比」「猜測從…到…都有」「它可以看作…的某種續篇」「廠牌設在…」）。Patience 的 78 轉來歷 hook 已直述，正文不再重提來歷，只寫「那張 Schubert 的 78 轉就是素材」。藝人／導演本人的話（Kirby 的 audio fog、5 萬次下載、an essay in gloom；Gee 的灰塵比喻）保留為間接敘述（「他形容」「他自稱」「Gee 把這聲音比作」），不屬樂評轉述。媒體名與名次 0 處。grep「據／樂評說／評論形容／也就是／這張專輯」0。
+- **18348** 第二句全照鉤子層 note 指派，兩處微調以避同構：Patience「收下唱片的 Kirby 是英國人」→「收下唱片的 Kirby 來自英國」（否則「是英國人」TPAA／Patience／Deleted Scenes 三張命中）；Pinkcourtesyphone 的本名作品改寫成「本名 Richard Chartier 名下的作品」（避開 Sadly 指派句「用本名發表」）。Kirby 本組五張引入法照 18338（化名＋《鬼店》／外人之口＋來自英國／Audio Recalled By 署名／生年出生地＋本名／廠牌關係＋另一個名字）。日期「日」後一字只 Trees「日因」，其餘只到年或月。
+- **18349** 自掃（han() 中文 4-gram，本組 desc＋writer-1 的 hooks 與 out-1 合掃）：3 次以上 0 條。2 次殘留皆屬指派句或術語：「是英國人」（TPAA／Deleted Scenes 指派句）、「英國製作人」（Stasis／Lieve 指派句）、「順行性遺忘症」（TPAA × out-1 AAM，病名）。途中拆掉「年月出版」「年月推出」×3（Trees 改「上市」、Fragments 日期句改以日期領頭、Patience 改「黑膠版面世」）、「限量張的」「膠限量張」「一張專輯」「他的網站」「用本名發表」「電子配上」「首約分鐘」「的第一張」「從年月錄到隔年」「作錄音期」「年月地點」。hook 原文命中 out-1（「每一首都」TPAA hook × Angst）屬對方正文，未動。
+- **18350** 腳本：`qa-batch out add-20261023-md21` 全部通過 ✓（out-1、out-2 各 17、thin 8 張全 ≤180、合計 34 與卡單相符）；`qa-check-research` out-2 標記 0；`fix-spacing` 0 處。輔助腳本在 scratchpad `wr-md21-2/`（draft.py、md21-2-chk.mjs、run.sh）。
+
+## 主線審稿（2026-10-23，cloud-main，34 張逐張讀過、對回研究稿）（條號 18355–18357）
+- **18355** 改 3 處（事實層未動，research／hooks／input 不必同步）：
+  - `desc2:Lacrimosa|Angst`：刪「頭六個月，它只賣出約 1000 張。」（單一來源銷量數字，研究稿只出自英文維基一處；200→182）。
+  - `desc2:Jon Collin & Demdike Stare|Fragments of Nothing`：「DDS 才壓成白膠」→「DDS 才壓成黑膠」（錯字；研究稿寫黑膠）。
+  - `desc2:The Stranger|Watching Dead Empires in Decay`：刪「被拿來和《Eraserhead》以及早坂文雄替黑澤明寫的配樂相比」（單源樂評比較；227→194）。
+- **18356** 其餘 31 張逐張審過未改字。保留項：Caretaker／Kirby 本人自述（下載數、「陰鬱的論文」「溫暖許多」）屬當事人說法、以「他說／他自稱」引出；Bleaklow「多年以後被看成 Raime 的前身」為 thin 卡唯一的地位句，刪了會掉到 thin 下限，保留被動式不具名。事實抽查（Hyperium 1991 紐倫堡創立、Fassbinder《愛比死更冷》1969、Aleah Stanbridge 2016-04-18 病逝、Take Care 收益捐 Mind）與研究稿一致。
+- **18357** 三軸：機器值照用（classic 3、obscurity 2–5）；obscurity 5 的 12 張 listeners 147–2,400，未觸遺珠門檻（不自行判 pearl）。Kirlian Camera《Still Air [Aria Immobile]》Last.fm 盤名方括號拆分，listeners 206 偏低（直接查《Still Air》為 1,013），obscurity 仍為 5，不覆寫。試聽 23 ready／11 unavailable（The Caretaker、Leyland Kirby、The Stranger、Trance to the Sun《Ghost Forest》、Sopor《Spiral Traveller》、MVAL 等 V/Vm、HAFTW、Tess、Apocalyptic Vision 系 Apple 無條目；Dark Sanctuary《Les Mémoires blessées》Apple 只有同名單曲）；人工配 3 張（Dark Sanctuary 2000、Rabelais、Fragments of Nothing，曲目逐首核對）。封面 CAA front-500 live-check 34/34 HTTP 200。
