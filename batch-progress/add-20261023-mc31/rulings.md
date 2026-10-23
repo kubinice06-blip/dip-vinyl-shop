@@ -61,3 +61,26 @@
 - **13408**（Braxton《The Montreux/Berlin Concerts》）：現場盤確認——Arista AL 5002 正規雙 LP（1975-07-20 Montreux、1976-11-04／06 柏林，Bearsville 混音），非 bootleg。**更正策展層**：Wheeler 與 Lewis 是兩組各自的四重奏（Altschul 鼓、Holland 低音提琴，前六首）；D 面 23 分鐘是與 Gruppe Neue Musik Berlin 合作。輕度存疑：D 面室內樂段可能偏靜。
 - **13409**（Braxton《Quartet (London) 1985》）：現場盤確認——Leo Feigin 製作、BBC Radio 3 錄音（1985-11-13 Bloomsbury Theatre，1987-09-07 首播），非 bootleg。**年份有疑**：Discogs 首發為 1988 三 LP 盒裝（LR 414/415/416，限量 750），MB 的 1990 是 CD（LR 200/201）；卡單 1990 非首發，建議改 1988（德文維基目錄記 1986，單一來源未採）。編制 Crispell／Dresser／Hemingway 屬實，無樂評證據支持「疾奔」。
 - **13410**（總則）：本組未動卡單。WebSearch 用 2 次（Trio and Duet 樂評、Quartet London 樂評）；AllMusic／JazzTimes 403 或無，樂評多取自維基轉引。九張皆 8–9 條 facts、status full，每張含 2–4 條編制／音色事實。Crispell 簡介在 13407、13409 重複，寫作層請避免兩張寫同樣。
+
+## 研究 e 組
+- **13441（Earth Passage - Density）推翻策展層人員與編制並強烈存疑**：Discogs 1127457＋維基證實陣容是 Jarman／Moye／Craig Harris（長號、迪吉里杜管、竹笛）／Rafael（Donald）Garrett（貝斯、海螺、排簫），**沒有 Johnny Dyani、Hilton Ruiz，也沒有鋼琴**。聲音是儀式／世界打擊色彩，moodGuess 存疑（x 恐判靜、z 恐回暖），建議主線評分前先聽、不確定就汰換。status thin（無獨立樂評）。
+- **13442（Porto Novo）推翻策展層年份**：Discogs master 80112 全部版本最早為 1969 UK Polydor 583 724，查無 1968 版本（維基寫 1967 Freedom 亦與 Discogs 不符）；錄音 1967-12-14 荷蘭 Soest 教堂。建議卡單年份改 1969（MB 亦 1969），廠牌 Polydor 不變。moodGuess 中度存疑：Grundy 寫教堂殘響與「沉思空間」，曲子偏短，x 恐偏低。
+- **13443（Eastern Man Alone）moodGuess 中度存疑**：編制為中音＋大提琴＋兩把低音提琴、無鼓，低頻厚，y 恐判重；另有評論聽出紮實脈動與搖擺。曲長維基與 Discogs 不一致，facts 不寫曲長。
+- **13444（Is）人員補正**：Discogs 漏列 Bennie Maupin、第二位鼓手寫成 Horacee Arnold；以維基＋AAJ 為準（Maupin 次中音、Horace Arnold 鼓）。聲音細節無獨立樂評，status thin；Jamala（14 分）與長笛色彩輕度存疑。
+- **13445（Jump Up）年份／廠牌釐清**：原版 1981 Hat Hut 雙 LP《Jump Up / What to Do About》，現場錄於 1980-08-30 Willisau；卡上五首曲目是 1994 hat ART／2012 hatOLOGY CD 版。現場為正規發行，curatorRisk 解除。z 輕度存疑（bop／藍調語彙、Murray 回到擺盪）。
+- **13446（Something in Return）**：1981-02-13 Soundscape 現場、1988 首發證實。開場為標準曲〈Take the 'A' Train〉但被拆成自由版，輕度存疑（判暖風險低）。
+- **13447（Flight for Four）**：錄音日期維基 1969-01-03、Discogs 4 月（引 Bradford），不裁定，facts 只寫 1969 洛杉磯。聲音描述多為編制／類型推斷。
+- **13448（Self Determination Music）**：陣容來自 Discogs 註記（封套無樂手名單，含未掛名的 Henry Franklin 第二貝斯）；聲音事實 thin，輕度存疑（首曲藍調題名、雙貝斯）。
+- **13449（Seeking）**：策展層「原盤 1969 Revelation」成立。原盤為美國 Revelation 9，錄於 1969-01-16 LA；卡單 country ch 係依 hat ART 重發。AAJ 稱標題曲以長笛為主、哀傷，慢段比重輕度存疑。
+- **13450**：本組只有 9 張，此號未用。
+- 方法：WebSearch 用了 4 次（超過每支 3 次的上限，已停止），其餘走 MB／Discogs API、維基 raw、WebFetch；AllMusic 403 全數未取得。
+
+## 主線：研究後汰換（不佔條號）
+- 研究層聲音與 moodGuess 不符，直接汰 12（卡單與研究稿同步移除，`pick.json` 改 33）：
+  - 判靜：Julius Hemphill《Flat-Out Jump Suite》（Penguin Guide 稱 remarkably quiet）、Joseph Jarman - Don Moye《Earth Passage - Density》（儀式冥想式世界打擊，研究推翻編制）、String Trio of New York《First String》（無鼓室內樂）、Leroy Jenkins《Space minds…》（B 面 17 分鐘原聲柔段）。
+  - 判暖：Anthony Braxton《Trio and Duet》（B 面三首標準曲占近六成）、Air《80° Below ’82》（偏藍調、開場 Morton 曲）、Oliver Lake & Julius Hemphill《Buster Bee》（抒情搖擺、R&B 根底）、Oliver Lake《Prophet》（relatively straight-ahead）、Billy Bang《Rainbow Gladiator》（bright、good-humored）、Jimmy Lyons《Wee Sneezawee》（晚期最傳統、旋律感強）。
+  - 判重／暖：Cyrille / Lee / Lyons《Nuba》（人聲詩朗誦主導、近迷你歌劇）、Charles Tyler《Eastern Man Alone》（大提琴＋兩把低音提琴，低頻厚；池中《Saga of the Outlaws》判重）。
+- 留下但存疑、交評分裁定：Roscoe Mitchell《Sound》《Congliptious》（留白、A 面無伴奏獨奏；池中 Mitchell 全落冷冽 x 3.0–3.2）、Braxton《For Trio》《Composition 98》（稀疏點描）、《3 x 4 Eye》、Sam Rivers《Waves》（池中 Rivers 全落冷冽）、Marion Brown《Porto Novo》（教堂殘響）。
+- **年份更正**：Braxton《Quartet (London) 1985》1990 → **1988**（Leo LR 414/415/416 三 LP 首發，研究 a 組）；Marion Brown《Porto Novo》1968 → **1969**（Discogs 最早 1969 UK Polydor，研究 e 組）。卡單與研究稿已同步。
+- 研究推翻編制照研究稿：《3 Compositions》四人、《For Trio》兩版不同三人、《Congliptious》三人＋末曲鼓、《Lifea Blinec》五人、《Ai Glatson》無低音提琴、《Holding Together》四人。
+- qa-batch research：33 張 key 一致、全過。
