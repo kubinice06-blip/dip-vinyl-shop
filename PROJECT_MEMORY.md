@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜自動試聽預設改開啟
+
+- **改動**：店主「預設聲音改開啟」。`dip-player.js` 沒表態過的裝置（localStorage 沒記 on/off）由「當成關」改成「當成開」：`autoplayPreference()` 回 'on'、載入時即有自動試聽授權；按過關閉或偵測到串流搶焦點仍記成 'off' 並保留。已經記成 'off' 的裝置不受影響（要自己按一下開）。四頁 `dip-player.js?v=50`。
+- **主要檔案**：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`、`shop-all.html`
+- **驗證**：本機 Playwright 清空儲存載入首頁：偏好 on、頂欄 🔊；按一下變 🔇 且重新整理後維持關；無頁面錯誤。
+
 ### 2026-10-23｜dip-vinyl-shop｜《Carmina Burana》(Jochum) 沸騰→暴躁
 
 - **改動**：店主同意比照《Axion Esti》改暴躁：(3.6, 1.0, −0.5)。
