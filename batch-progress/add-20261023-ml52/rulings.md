@@ -55,3 +55,14 @@
 - 20523：發行日兩邊不一，年份皆不變：Still Ghetto（MB 11-04／維基 11-05）、Ghetto Classics（MB 2006-01-06／美版維基 2006-02-13）、Another Round（MB 02-08／維基 02-09）、Hollister（維基 2002-09-17／MB 10-15）。
 - 20524：Carl Thomas《So Much Better》廠牌：MB 為 umbrella records、維基為 Umbrella Recordings 與 Unsung Entertainment（Bungalo／Universal 負責通路），卡單 Bungalo Records；建議卡面維持 Bungalo 或改 Umbrella，主線定奪。
 - 20525：Another Round、Private Room、Let's Talk About It、So Much Better 四張因逐曲速度與慢歌比例查無來源，status 標 thin；AllMusic 全站 403、NYT／Vibe／BBC／EW 不可抓，已改用 PopMatters、Boston.com、The Pitch、DJBooth、Urban Bridgez 與維基引文。
+
+## 主線：研究後汰換（不佔條號）
+- 研究五組 45 張幾乎全標存疑（逐曲速度無來源）。照 ml49 結論「中板照樣落格，只擋明確舞曲與 hip-hop 硬拍取樣」放寬中板，汰 20（卡單、研究稿、`pick.json` 同步移除）：
+  - hip-hop 硬拍取樣／饒舌客串多、快慢各半（判躁）：Jaheim《Still Ghetto》《Ghetto Classics》《The Makings of a Man》、Avant《Director》（Lil Wayne、Lloyd Banks 客串）、Carl Thomas《Let's Talk About It》（upbeat、LL Cool J）、Jesse Powell《'Bout It》（hip-hop-ish 中板 groove）、Tank《Force of Nature》（Timbaland 七首）、Raheem DeVaughn《The Love & War MasterPeace》（Ludacris、Wale、口白）、Dave Hollister《Real Talk》（James Brown 取樣、hip-hop infused）、Dwele《Sketches of a Man》（嘻哈放克拼貼、短曲過半）、Ronald Isley《Mr. I》（T.I.、顫動底鼓）、Rahsaan Patterson《After Hours》（派對快歌約半）。
+  - 舞曲／disco-funk／夜店（判躁）：Angie Stone《Unexpected》（轉向舞曲流行，推翻策展）、Vivian Green《Vivian》（舞曲榜冠軍單曲）、Lalah Hathaway《Where It All Begins》（harder beats、disco-funk）、Regina Belle《Believe in Me》（生涯節奏推力最強）。
+  - smooth jazz／drum loop（判輕）：Will Downing《Emotions》（GRP、爵士榜；ml49 先例）、Miki Howard《Pillow Talk》（drum loops／smooth jazz、含快板）。
+  - 色溫：Avant《Private Room》（樂評「central iciness」，研究稿陰冷字眼先例）。
+  - 身分／重複：Kenny Lattimore《Uncovered / Covered》（MB 掛名 Kenny Lattimore & Chanté Moore、第二碟 11 首福音）。
+- 留下但存疑、交評分裁定：Jaheim《Another Round》、Carl Thomas《So Much Better》、Dave Hollister《Things in the Game Done Changed》（較多中快板但製作厚暖）、Isley《Body Kiss》《Baby Makin' Music》（池中《Eternal》同期 R. Kelly 製作落恍惚）、Levert《Stroke of Genius》、Silk《Always and Forever》、Freddie Jackson《Life After 30》、Hamilton《The Point of It All》《Back to Love》。
+- 候補補 4（a 組，派一支補研究 append 進 a 檔）：Anthony Hamilton《What I'm Feelin'》、Jaheim《Appreciation Day》、Tank《One Man》、Angie Stone《Stone Love》；其餘候補（Avant ×2、Isley Meets Bacharach、Downing《After Tonight》、Jon B.）與汰換理由同型，不補。
+- 研究推翻照研究稿改卡單廠牌：Hamilton《The Point of It All》BMG→So So Def、Levert《Do I Speak for the World》Atlantic（英國版）→Elektra、Carl Thomas《So Much Better》Bungalo→Umbrella（MB、維基）、Kelly Price《Soul of a Woman》Island→T-Neck。Lalah flag 隨汰換結案。
