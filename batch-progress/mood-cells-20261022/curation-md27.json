@@ -1,0 +1,1358 @@
+{
+ "group": "md27",
+ "factions": [
+  {
+   "id": "main",
+   "zh": "暗色現代古典慢板厚弦（Scelsi 單音管弦音塊、Penderecki 合唱慢作、Gordon 管弦音牆、冰島 Bedroom Community）",
+   "count": 12,
+   "why": "主場景 md27"
+  },
+  {
+   "id": "ext-a",
+   "zh": "催眠式 drone 古典（低音弦／管風琴長音：XKatedral 系、Glotman、Clarice Jensen、Bára Gísladóttir、Miasmah）",
+   "count": 25,
+   "why": "擴寫 (a)：md13 催眠式暗黑音塊／drone 古典"
+  },
+  {
+   "id": "ext-b",
+   "zh": "暗黑 ambient／drone 型影視與遊戲配樂（往下沉的，不收驚嚇型）",
+   "count": 10,
+   "why": "擴寫 (b)：md14 結論後的 dark ambient／drone 型配樂"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Valgeir Sigurðsson",
+   "album": "Dissonance",
+   "year": 2017,
+   "label": "Bedroom Community",
+   "country": "is",
+   "faction": "main",
+   "genres": [
+    "classical"
+   ],
+   "why": "Bedroom Community 掌門的三首長篇；同名曲把一把中提琴疊成 23 分鐘的厚弦牆，慢到幾乎停住，低音弦與電子殘響鋪滿、不給旋律，是往下壓的冷",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.2,
+    "z": -1.1,
+    "why": "無鼓，中提琴多軌疊成厚牆，低頻殘響長，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/aa0447f1-a2a8-4ee4-9089-f9717e78f828",
+    "https://coverartarchive.org/release-group/aa0447f1-a2a8-4ee4-9089-f9717e78f828/front"
+   ],
+   "mbRgMbid": "aa0447f1-a2a8-4ee4-9089-f9717e78f828",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Valgeir Sigurðsson",
+   "album": "Architecture of Loss",
+   "year": 2012,
+   "label": "Bedroom Community",
+   "country": "is",
+   "faction": "main",
+   "genres": [
+    "classical"
+   ],
+   "why": "原為舞作而寫的弦樂與電子組曲，慢板弦樂墊在低頻電子嗡鳴上，灰霧般往下沉，冰島現代古典暗色線的代表盤",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1,
+    "z": -0.8,
+    "why": "弦樂慢板加電子低鳴，殘響霧，灰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/238faf48-4849-47c0-8c4b-cb5f20ac177b",
+    "https://coverartarchive.org/release/498f21cf-4f9d-4de8-9c23-1e9f445ae081/front"
+   ],
+   "mbRgMbid": "238faf48-4849-47c0-8c4b-cb5f20ac177b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有幾段鋼琴旋律較清楚，z 可能回到 −0.5 附近"
+  },
+  {
+   "artist": "Jürg Wyttenbach",
+   "album": "Scelsi: Aion / Pfhat / Konx-Om-Pax",
+   "year": 1988,
+   "label": "Accord",
+   "country": "pl",
+   "faction": "main",
+   "genres": [
+    "classical"
+   ],
+   "why": "Scelsi 大編制的經典錄音：Konx-Om-Pax 以管風琴、合唱與整團管弦圍著單音持續鳴響，結尾的「Om」厚到像地鳴，催眠而陰；池中同作曲家的管弦盤皆落頹靡",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.5,
+    "z": -1.2,
+    "why": "管風琴、合唱、整團管弦繞單音長鳴，厚重催眠"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/525855fc-d0eb-3fd0-a5d4-b85556908131",
+    "https://coverartarchive.org/release-group/525855fc-d0eb-3fd0-a5d4-b85556908131/front"
+   ],
+   "mbRgMbid": "525855fc-d0eb-3fd0-a5d4-b85556908131",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Aion / Pfhat / Konx-Om-Pax",
+   "uncertain": "Aion 有幾記重擊，Pfhat 合唱偏亮；中位數仍是長音塊"
+  },
+  {
+   "artist": "Jürg Wyttenbach",
+   "album": "Scelsi: Hurqualia / Hymnos / Chukrum",
+   "year": 1990,
+   "label": "Accord",
+   "country": "pl",
+   "faction": "main",
+   "genres": [
+    "classical"
+   ],
+   "why": "Hymnos 讓管風琴與兩組樂團在低音區長時間共振，是 Scelsi「單音」美學最厚重的一面；慢、低、無旋律，往下壓",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.5,
+    "z": -1.2,
+    "why": "管風琴與管弦的單音長音塊，低頻厚，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f84312d5-8105-47ec-a8d9-31db07dac682",
+    "https://coverartarchive.org/release-group/f84312d5-8105-47ec-a8d9-31db07dac682/front"
+   ],
+   "mbRgMbid": "f84312d5-8105-47ec-a8d9-31db07dac682",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Hurqualia / Hymnos / Chukrum",
+   "uncertain": "Hurqualia 較響亮刺耳"
+  },
+  {
+   "artist": "Jürg Wyttenbach",
+   "album": "Scelsi: Quattro pezzi per orchestra / Anahit / Uaxuctum",
+   "year": 1989,
+   "label": "Accord",
+   "country": "pl",
+   "faction": "main",
+   "genres": [
+    "classical"
+   ],
+   "why": "《Quattro pezzi》每樂章只圍繞一個音，整團管弦在一個音高上微分音蠕動、銅管低鳴，是音塊式催眠的源頭之作",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": -1.3,
+    "why": "單音管弦音塊、銅管低鳴，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d79fc2f8-aaee-4e5a-a22f-41254690bdf0",
+    "https://coverartarchive.org/release-group/d79fc2f8-aaee-4e5a-a22f-41254690bdf0/front"
+   ],
+   "mbRgMbid": "d79fc2f8-aaee-4e5a-a22f-41254690bdf0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Quattro pezzi per orchestra / Anahit / Uaxuctum",
+   "uncertain": "Uaxuctum 擊樂段較兇，x 可能被拉到 2.6"
+  },
+  {
+   "artist": "Michael Gordon",
+   "album": "Dystopia",
+   "year": 2015,
+   "label": "Cantaloupe Music",
+   "country": "us",
+   "faction": "main",
+   "genres": [
+    "classical"
+   ],
+   "why": "《Decasia》作曲者為洛杉磯寫的城市暗面交響：整團管弦以滑音與失諧堆成低頻轟鳴，無旋律、壓得透不過氣；池中《Decasia》落頹靡",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.7,
+    "z": -1.4,
+    "why": "管弦滑音堆成低頻轟鳴，糊，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/65b7c8c6-0328-423a-82a5-a00641acdb1a",
+    "https://coverartarchive.org/release-group/65b7c8c6-0328-423a-82a5-a00641acdb1a/front"
+   ],
+   "mbRgMbid": "65b7c8c6-0328-423a-82a5-a00641acdb1a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "比 Decasia 動得多，x 可能到 2.6"
+  },
+  {
+   "artist": "Michael Gordon",
+   "album": "Rushes",
+   "year": 2014,
+   "label": "Cantaloupe Music",
+   "country": "us",
+   "faction": "main",
+   "genres": [
+    "classical"
+   ],
+   "why": "七支低音管齊奏一小時的長音與緩慢脈動，木管最低沉的音色疊成嗡鳴，慢、厚、冷",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": -0.9,
+    "why": "七支低音管長音疊合，低頻嗡鳴"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/47aec7f9-0c84-490d-bd8b-1aeec3a573c7",
+    "https://coverartarchive.org/release-group/47aec7f9-0c84-490d-bd8b-1aeec3a573c7/front"
+   ],
+   "mbRgMbid": "47aec7f9-0c84-490d-bd8b-1aeec3a573c7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "中段有規律脈動，x 可能偏高"
+  },
+  {
+   "artist": "Jóhann Jóhannsson",
+   "album": "Drone Mass",
+   "year": 2022,
+   "label": "Deutsche Grammophon",
+   "country": "is",
+   "faction": "main",
+   "genres": [
+    "classical"
+   ],
+   "why": "Jóhannsson 遺作：弦樂 drone、合唱長音與電子低鳴寫成的「當代受難曲」，慢到幾乎停住，灰冷的厚霧",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.1,
+    "z": -0.8,
+    "why": "弦樂 drone、合唱長音、電子低鳴，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4929ded9-0116-496f-910c-bf1d398937ed",
+    "https://coverartarchive.org/release-group/4929ded9-0116-496f-910c-bf1d398937ed/front"
+   ],
+   "mbRgMbid": "4929ded9-0116-496f-910c-bf1d398937ed",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "合唱較清楚的段落可能判輕"
+  },
+  {
+   "artist": "Donnacha Dennehy",
+   "album": "Tessellatum",
+   "year": 2017,
+   "label": "Bedroom Community",
+   "country": "ie",
+   "faction": "main",
+   "genres": [
+    "classical"
+   ],
+   "why": "古大提琴（Liam Byrne）與小提琴多軌疊成泛音持續嗡鳴，一小時低沉、無旋律的弦樂長音，冷而厚",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1,
+    "z": -1,
+    "why": "古大提琴與小提琴泛音疊成持續嗡鳴，低沉"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f558f0a9-a779-480b-b3aa-2ce25a070917",
+    "https://coverartarchive.org/release-group/f558f0a9-a779-480b-b3aa-2ce25a070917/front"
+   ],
+   "mbRgMbid": "f558f0a9-a779-480b-b3aa-2ce25a070917",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "室內樂編制，y 可能只判 0.6–0.8"
+  },
+  {
+   "artist": "Antoni Wit",
+   "album": "Penderecki: Utrenja",
+   "year": 2009,
+   "label": "Naxos",
+   "country": "pl",
+   "faction": "main",
+   "genres": [
+    "classical"
+   ],
+   "why": "Penderecki 東正教晨禱：極低的俄羅斯式男低音、合唱音塊與管弦低鳴，慢、陰、厚；池中 Wit《St Luke Passion》落頹靡（x 2.0）",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.4,
+    "z": -1.7,
+    "why": "低音合唱與管弦音塊，陰森慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/58d135ed-af2b-436d-9280-7465456d7106",
+    "https://coverartarchive.org/release-group/58d135ed-af2b-436d-9280-7465456d7106/front"
+   ],
+   "mbRgMbid": "58d135ed-af2b-436d-9280-7465456d7106",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Utrenja",
+   "uncertain": "第二部有呼喊與鐘聲較緊繃，可能被判躁"
+  },
+  {
+   "artist": "Antoni Wit",
+   "album": "Penderecki: A Polish Requiem",
+   "year": 2004,
+   "label": "Naxos",
+   "country": "pl",
+   "faction": "main",
+   "genres": [
+    "classical"
+   ],
+   "why": "Penderecki 後期新浪漫的大安魂曲：Lacrimosa、Agnus Dei 等慢樂章以大合唱與厚弦低沉推進，陰鬱往下壓",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": -1,
+    "why": "大合唱與厚管弦慢板，低沉陰鬱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8a1cfde3-e389-3234-8160-c856e4d7b061",
+    "https://coverartarchive.org/release/cdafeac4-cd68-4d62-8cc1-1cd659a58554/front",
+    "https://www.discogs.com/master/482457"
+   ],
+   "mbRgMbid": "8a1cfde3-e389-3234-8160-c856e4d7b061",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "A Polish Requiem",
+   "uncertain": "Dies irae 段很大聲；旋律較清楚，z 可能只到 −0.6"
+  },
+  {
+   "artist": "Bára Gísladóttir",
+   "album": "Orchestral Works",
+   "year": 2024,
+   "label": "Dacapo",
+   "country": "is",
+   "faction": "main",
+   "genres": [
+    "classical"
+   ],
+   "why": "冰島低音提琴家作曲者與冰島交響樂團的管弦作品集：整團樂團在低音區摩擦、低鳴，像冰川下的地鳴，無旋律、陰",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.5,
+    "z": -1.5,
+    "why": "管弦在低音區摩擦低鳴，無旋律，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b7fa297d-d023-4526-a2a2-5effaae318d5",
+    "https://coverartarchive.org/release-group/b7fa297d-d023-4526-a2a2-5effaae318d5/front"
+   ],
+   "mbRgMbid": "b7fa297d-d023-4526-a2a2-5effaae318d5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有刺耳張力段，x 可能偏高"
+  },
+  {
+   "artist": "Bára Gísladóttir",
+   "album": "HĪBER",
+   "year": 2020,
+   "label": "Dacapo",
+   "country": "is",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "低音提琴經電子放大、拉成長時間的低頻摩擦與共振，冬眠般緩慢、粗糙厚重，冰島暗色 drone 古典的代表",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.6,
+    "z": -1.4,
+    "why": "放大低音提琴的低頻嗡鳴，粗糙厚重"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/44d1f48a-23f3-4301-a2fe-6a9337e3f1e8",
+    "https://coverartarchive.org/release-group/44d1f48a-23f3-4301-a2fe-6a9337e3f1e8/front"
+   ],
+   "mbRgMbid": "44d1f48a-23f3-4301-a2fe-6a9337e3f1e8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bára Gísladóttir",
+   "album": "SILVA",
+   "year": 2023,
+   "label": "Sono Luminus",
+   "country": "is",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "續《HĪBER》的低音提琴＋電子長篇，森林意象的低頻 drone，慢、糊、冷",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.5,
+    "z": -1.3,
+    "why": "低音提琴與電子低頻 drone，糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8c0b5360-319f-4b58-b8d0-edab391fb512",
+    "https://coverartarchive.org/release-group/8c0b5360-319f-4b58-b8d0-edab391fb512/front"
+   ],
+   "mbRgMbid": "8c0b5360-319f-4b58-b8d0-edab391fb512",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kali Malone + Drew McDowall",
+   "album": "Magnetism",
+   "year": 2025,
+   "label": "Ideologic Organ",
+   "country": "us",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "Kali Malone 的純律長音與 Coil 成員 Drew McDowall 的模組合成器低頻交纏，比她的管風琴盤更厚更暗，往下沉",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.4,
+    "z": -1,
+    "why": "合成器長音與低頻脈衝交纏，厚墊，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/32100b40-45d2-46f1-a7bd-9110e5261b54",
+    "https://coverartarchive.org/release-group/32100b40-45d2-46f1-a7bd-9110e5261b54/front"
+   ],
+   "mbRgMbid": "32100b40-45d2-46f1-a7bd-9110e5261b54",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Kali Malone《The Sacrificial Code》y 0.6；本張合成器低頻明顯更厚"
+  },
+  {
+   "artist": "Maria W Horn",
+   "album": "Kontrapoetik",
+   "year": 2018,
+   "label": "Portals Editions",
+   "country": "se",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "XKatedral 派的管風琴與合成器長音作品，以瑞典北部巫審史為題，低音持續、和聲緩移，厚而陰冷",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.4,
+    "z": -1.3,
+    "why": "管風琴與合成器長音疊層，低頻厚，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0f0a6d79-a0bd-4fb9-a9a7-6dea6f1f9fe5",
+    "https://coverartarchive.org/release-group/0f0a6d79-a0bd-4fb9-a9a7-6dea6f1f9fe5/front"
+   ],
+   "mbRgMbid": "0f0a6d79-a0bd-4fb9-a9a7-6dea6f1f9fe5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Maria W Horn",
+   "album": "Epistasis",
+   "year": 2019,
+   "label": "Hallow Ground",
+   "country": "se",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "弦樂、管風琴與電子的緩慢長音建築，低頻堆疊、幾乎沒有旋律，斯德哥爾摩 drone 圈的暗色力作",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.3,
+    "z": -1.3,
+    "why": "弦樂與電子 drone，慢移，低頻厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/99a118ae-b928-4352-b737-13699e2cd652",
+    "https://coverartarchive.org/release-group/99a118ae-b928-4352-b737-13699e2cd652/front"
+   ],
+   "mbRgMbid": "99a118ae-b928-4352-b737-13699e2cd652",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Maria W Horn",
+   "album": "Panoptikon",
+   "year": 2024,
+   "label": "XKatedral",
+   "country": "se",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "為監獄建築題材寫的管風琴與弦樂長篇，厚重低音持續推移，陰沉、壓迫、往下沉",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.4,
+    "z": -1.4,
+    "why": "管風琴與弦樂低音長音，壓迫，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4497079a-206a-4c1d-b466-3b38c7401c85",
+    "https://coverartarchive.org/release-group/4497079a-206a-4c1d-b466-3b38c7401c85/front"
+   ],
+   "mbRgMbid": "4497079a-206a-4c1d-b466-3b38c7401c85",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mats Erlandsson",
+   "album": "Minnesmärke",
+   "year": 2020,
+   "label": "Hallow Ground",
+   "country": "se",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "「紀念碑」：管風琴與弦樂的純律長音，緩慢起伏、殘響長，XKatedral 一系最肅穆的一張",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.1,
+    "z": -0.9,
+    "why": "管風琴與弦樂長音，殘響厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/aba6ca35-a15a-48b8-ba6c-2b679b94f0b3",
+    "https://coverartarchive.org/release-group/aba6ca35-a15a-48b8-ba6c-2b679b94f0b3/front"
+   ],
+   "mbRgMbid": "aba6ca35-a15a-48b8-ba6c-2b679b94f0b3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "管風琴音色偏亮，y 可能貼 0.8"
+  },
+  {
+   "artist": "Yair Elazar Glotman & Mats Erlandsson",
+   "album": "Negative Chambers",
+   "year": 2017,
+   "label": "Miasmah",
+   "country": "de",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "低音提琴與管風琴在密閉空間裡的低頻共鳴實驗，Miasmah 廠牌的黑色 drone 古典，厚重陰暗",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.6,
+    "z": -1.3,
+    "why": "低音提琴與管風琴低頻共鳴，厚重陰暗"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a0047acc-65fc-429c-9a63-fe1269a2f437",
+    "https://coverartarchive.org/release-group/a0047acc-65fc-429c-9a63-fe1269a2f437/front"
+   ],
+   "mbRgMbid": "a0047acc-65fc-429c-9a63-fe1269a2f437",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yair Elazar Glotman & Mats Erlandsson",
+   "album": "Emanate",
+   "year": 2020,
+   "label": "130701",
+   "country": "de",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "兩人第二張合作，低音提琴、管風琴與合唱長音緩緩膨脹，像霧從地底升起",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.4,
+    "z": -1,
+    "why": "低音弦、管風琴、合唱長音，霧厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1c0c346c-7c94-4e88-bd89-ced045e9ae3e",
+    "https://coverartarchive.org/release-group/1c0c346c-7c94-4e88-bd89-ced045e9ae3e/front"
+   ],
+   "mbRgMbid": "1c0c346c-7c94-4e88-bd89-ced045e9ae3e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yair Elazar Glotman",
+   "album": "Études",
+   "year": 2015,
+   "label": "Subtext",
+   "country": "de",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "Last and First Men 共同作者的低音提琴獨奏研究，經近距收音放大成粗糙的低頻摩擦與共振，無旋律、陰",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.6,
+    "z": -1.5,
+    "why": "放大低音提琴的摩擦與低頻共振，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0cc745f4-35cb-4faf-9dc0-fb0826697f13",
+    "https://coverartarchive.org/release-group/0cc745f4-35cb-4faf-9dc0-fb0826697f13/front"
+   ],
+   "mbRgMbid": "0cc745f4-35cb-4faf-9dc0-fb0826697f13",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yair Elazar Glotman",
+   "album": "Compound",
+   "year": 2017,
+   "label": "Subtext",
+   "country": "de",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "低音提琴與電子處理的長篇，低頻層層堆壓成黑霧，Subtext 一系的厚重冷調",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.6,
+    "z": -1.5,
+    "why": "低音提琴與電子低頻堆壓，黑霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/17051656-1190-4983-9571-df92480c2cfb",
+    "https://coverartarchive.org/release-group/17051656-1190-4983-9571-df92480c2cfb/front"
+   ],
+   "mbRgMbid": "17051656-1190-4983-9571-df92480c2cfb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Viktor Orri Árnason & Yair Elazar Glotman",
+   "album": "Vast",
+   "year": 2019,
+   "label": "Bedroom Community",
+   "country": "is",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "冰島中提琴手與 Glotman 合寫的弦樂＋電子 drone，寬闊、緩慢、冷，低音弦鋪滿整片",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.2,
+    "z": -0.9,
+    "why": "弦樂與電子寬闊 drone，緩慢，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a4d940f5-5a2a-4a6a-a217-df46c385901a",
+    "https://coverartarchive.org/release-group/a4d940f5-5a2a-4a6a-a217-df46c385901a/front"
+   ],
+   "mbRgMbid": "a4d940f5-5a2a-4a6a-a217-df46c385901a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Clarice Jensen",
+   "album": "The Experience of Repetition as Death",
+   "year": 2020,
+   "label": "130701",
+   "country": "us",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "ACME 大提琴手以效果器把大提琴疊成厚重 drone，寫母親病逝的長篇，低頻滿、慢、陰",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.5,
+    "z": -1,
+    "why": "大提琴經效果器層疊成厚 drone，低頻滿"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9f368b01-2d1b-4ae2-a0b9-1091acf13cda",
+    "https://coverartarchive.org/release-group/9f368b01-2d1b-4ae2-a0b9-1091acf13cda/front"
+   ],
+   "mbRgMbid": "9f368b01-2d1b-4ae2-a0b9-1091acf13cda",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Clarice Jensen",
+   "album": "For This From That Will Be Filled",
+   "year": 2018,
+   "label": "Miasmah",
+   "country": "us",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "首張個人盤：大提琴迴圈與效果器堆成持續低鳴，Miasmah 黑色古典一路",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "大提琴迴圈與低鳴，殘響厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2ab9954a-3c2f-41cd-87e1-02d627de086f",
+    "https://coverartarchive.org/release-group/2ab9954a-3c2f-41cd-87e1-02d627de086f/front"
+   ],
+   "mbRgMbid": "2ab9954a-3c2f-41cd-87e1-02d627de086f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Clarice Jensen",
+   "album": "Esthesis",
+   "year": 2022,
+   "label": "FatCat Records",
+   "country": "us",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "大提琴、管風琴式和聲與電子層疊的長篇 drone，比前作更厚更暗",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "大提琴層疊 drone 與電子低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/61d782d0-7345-4220-baaa-311c66138724",
+    "https://coverartarchive.org/release-group/61d782d0-7345-4220-baaa-311c66138724/front"
+   ],
+   "mbRgMbid": "61d782d0-7345-4220-baaa-311c66138724",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Clarice Jensen",
+   "album": "Drone Studies",
+   "year": 2019,
+   "label": "Geographic North",
+   "country": "us",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "大提琴 drone 習作集，單一低音長時間延展、殘響長，最純粹的催眠式低鳴",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.3,
+    "z": -0.7,
+    "why": "大提琴低音長音，殘響長"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2d829cf2-28e4-4020-919a-1302f1759d5b",
+    "https://coverartarchive.org/release-group/2d829cf2-28e4-4020-919a-1302f1759d5b/front"
+   ],
+   "mbRgMbid": "2d829cf2-28e4-4020-919a-1302f1759d5b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "長度接近 EP，MB 列為 Album"
+  },
+  {
+   "artist": "Charlemagne Palestine",
+   "album": "Schlingen-Blängen",
+   "year": 1999,
+   "label": "New World Records",
+   "country": "us",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "教堂管風琴把一個和弦持續七十分鐘，泛音在殘響中層層堆成厚牆，極簡 drone 古典的極端之作",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.5,
+    "z": -0.7,
+    "why": "管風琴單和弦持續，泛音牆厚重"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ba9601c6-3cca-43c4-9d2d-ec0ec208c15e",
+    "https://coverartarchive.org/release-group/ba9601c6-3cca-43c4-9d2d-ec0ec208c15e/front"
+   ],
+   "mbRgMbid": "ba9601c6-3cca-43c4-9d2d-ec0ec208c15e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "管風琴音色明亮，z 可能只到 −0.4"
+  },
+  {
+   "artist": "Claire M Singer",
+   "album": "Saor",
+   "year": 2023,
+   "label": "Touch",
+   "country": "gb",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "蘇格蘭管風琴作曲者在 Touch 的長音作品，管風琴與弦樂低音持續、殘響深，陰冷厚重",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.2,
+    "z": -0.9,
+    "why": "管風琴與低音弦長音，殘響深"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b70a8838-9c1c-432a-8ef8-5b4244c644ae",
+    "https://music.apple.com/us/album/saor/1713289466"
+   ],
+   "mbRgMbid": "b70a8838-9c1c-432a-8ef8-5b4244c644ae",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Hildur Guðnadóttir, BJ Nilsen & Stilluppsteypa",
+   "album": "Second Childhood",
+   "year": 2007,
+   "label": "Quecksilber",
+   "country": "is",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "Hildur 早期與 BJ Nilsen、Stilluppsteypa 的合作：大提琴長音混入電子噪響與低頻 drone，灰暗厚霧",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "大提琴長音混電子 drone，灰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/15f1f258-ed6c-3897-baf0-248e19cd6ab4",
+    "https://coverartarchive.org/release-group/15f1f258-ed6c-3897-baf0-248e19cd6ab4/front"
+   ],
+   "mbRgMbid": "15f1f258-ed6c-3897-baf0-248e19cd6ab4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Paul Corley",
+   "album": "Disquiet",
+   "year": 2012,
+   "label": "Bedroom Community",
+   "country": "gb",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "Ben Frost 合作者的首張個人盤，管弦取樣與電子低頻堆成黑霧，慢、厚、不安但往下沉",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.5,
+    "z": -1.2,
+    "why": "管弦取樣與電子低頻堆疊，黑霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a7421de8-6d20-4af1-b712-7b2f63d10a49",
+    "https://coverartarchive.org/release-group/a7421de8-6d20-4af1-b712-7b2f63d10a49/front"
+   ],
+   "mbRgMbid": "a7421de8-6d20-4af1-b712-7b2f63d10a49",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Liam Byrne",
+   "album": "Concrete",
+   "year": 2019,
+   "label": "Bedroom Community",
+   "country": "gb",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "古大提琴手的個人盤：維奧爾琴經電子處理成低鳴長音與殘響霧，古老音色裡的冷暗 drone",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.1,
+    "z": -1,
+    "why": "古大提琴電子處理，低鳴長音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/800898e7-832c-49d2-95a1-ed15a1f3aaac",
+    "https://coverartarchive.org/release-group/800898e7-832c-49d2-95a1-ed15a1f3aaac/front"
+   ],
+   "mbRgMbid": "800898e7-832c-49d2-95a1-ed15a1f3aaac",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分曲目較清淡，y 可能偏低"
+  },
+  {
+   "artist": "Lustmord + Nicolas Horvath",
+   "album": "The Fall / Dennis Johnson’s November Deconstructed",
+   "year": 2020,
+   "label": "Sub Rosa",
+   "country": "gb",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "Dennis Johnson 極慢鋼琴作品《November》由 Horvath 演奏，再被 Lustmord 的地底低頻吞沒，慢到停住、黑而厚",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.6,
+    "z": -1.4,
+    "why": "極慢鋼琴浸在低頻黑霧裡，殘響深"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ea2de882-eaa5-41ba-9f2c-28a82d249e50",
+    "https://coverartarchive.org/release-group/ea2de882-eaa5-41ba-9f2c-28a82d249e50/front"
+   ],
+   "mbRgMbid": "ea2de882-eaa5-41ba-9f2c-28a82d249e50",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Marcus Fjellström",
+   "album": "Gebrauchsmusik",
+   "year": 2006,
+   "label": "Lampse",
+   "country": "se",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "瑞典作曲者的暗色電影感古典：管弦取樣、低音弦與磁帶霧緩步前行，陰森、霧濛",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": -1.2,
+    "why": "管弦取樣、低音弦與磁帶霧，陰森慢步"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8aada193-dab0-36d8-aefe-b0fc1d010096",
+    "https://music.apple.com/us/album/gebrauchsmusik/1477814801"
+   ],
+   "mbRgMbid": "8aada193-dab0-36d8-aefe-b0fc1d010096",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有音樂盒式的高音點綴，y 可能判 0.7"
+  },
+  {
+   "artist": "Marcus Fjellström",
+   "album": "Schattenspieler",
+   "year": 2010,
+   "label": "Miasmah",
+   "country": "se",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "Miasmah 出版的「影子演員」：慢板弦樂、低音合成器與殘響霧交織的黑色室內配樂",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": -1.2,
+    "why": "慢弦樂、低音合成器、殘響霧，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a3728ac7-003f-4599-919f-ffec733e66de",
+    "https://coverartarchive.org/release-group/a3728ac7-003f-4599-919f-ffec733e66de/front"
+   ],
+   "mbRgMbid": "a3728ac7-003f-4599-919f-ffec733e66de",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Marcus Fjellström",
+   "album": "Skelektikon",
+   "year": 2016,
+   "label": "Miasmah",
+   "country": "se",
+   "faction": "ext-a",
+   "genres": [
+    "classical"
+   ],
+   "why": "Fjellström 最厚重的一張，管弦低鳴與電子噪霧堆疊，緩慢、陰暗、往下壓",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.1,
+    "z": -1.3,
+    "why": "管弦低鳴與電子噪霧，緩慢陰暗"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0f2cb816-51f1-4b63-ab0f-8a5994936027",
+    "https://coverartarchive.org/release-group/0f2cb816-51f1-4b63-ab0f-8a5994936027/front"
+   ],
+   "mbRgMbid": "0f2cb816-51f1-4b63-ab0f-8a5994936027",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lustmord",
+   "album": "Zoetrope",
+   "year": 2002,
+   "label": "Nextera",
+   "country": "gb",
+   "faction": "ext-b",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "Charles Ventura 黑白短片的配樂，Lustmord 典型的地底低頻轟鳴與金屬殘響，無旋律、黑而厚",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.8,
+    "z": -1.8,
+    "why": "地底低頻轟鳴與金屬殘響，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e2cff6a3-ae81-3140-ae6d-0f94fc65ff42",
+    "https://coverartarchive.org/release-group/e2cff6a3-ae81-3140-ae6d-0f94fc65ff42/front"
+   ],
+   "mbRgMbid": "e2cff6a3-ae81-3140-ae6d-0f94fc65ff42",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Christopher Young & Lustmord",
+   "album": "The Empty Man: Original Motion Picture Soundtrack",
+   "year": 2020,
+   "label": "Hollywood Records",
+   "country": "us",
+   "faction": "ext-b",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "恐怖片配樂但以 Lustmord 的低頻黑霧為骨架，Young 的管弦只做暗底，整張往下沉而非驚嚇",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.7,
+    "z": -1.8,
+    "why": "低頻黑霧加暗管弦，陰森"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5d67be66-a1fe-4c56-a98a-7c270a14f85e",
+    "https://coverartarchive.org/release-group/5d67be66-a1fe-4c56-a98a-7c270a14f85e/front"
+   ],
+   "mbRgMbid": "5d67be66-a1fe-4c56-a98a-7c270a14f85e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "恐怖片可能有驚嚇段，x 可能偏高"
+  },
+  {
+   "artist": "Ben Salisbury & Geoff Barrow",
+   "album": "Men: Original Motion Picture Soundtrack",
+   "year": 2022,
+   "label": "Lakeshore Records",
+   "country": "gb",
+   "faction": "ext-b",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "Garland 民俗恐怖片配樂：合唱 loop 與低頻 drone 在深殘響裡迴盪，慢而陰，以壓抑取代驚嚇",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.2,
+    "z": -1.2,
+    "why": "合唱 loop 與低頻 drone，殘響深"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/755596df-70b7-46d2-8042-667b920aa715",
+    "https://coverartarchive.org/release-group/755596df-70b7-46d2-8042-667b920aa715/front"
+   ],
+   "mbRgMbid": "755596df-70b7-46d2-8042-667b920aa715",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同組 Annihilation y 0.6；本張合唱殘響更厚"
+  },
+  {
+   "artist": "Hildur Guðnadóttir, Rutger Hoedemaekers & Jóhann Jóhannsson",
+   "album": "Trapped: Original Television Series Soundtrack",
+   "year": 2019,
+   "label": "Milan",
+   "country": "is",
+   "faction": "ext-b",
+   "genres": [
+    "classical"
+   ],
+   "why": "冰島黑色影集《Trapped》配樂，大提琴低鳴與電子 drone 鋪滿，雪困小鎮的冷與重",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -1.4,
+    "why": "大提琴低鳴與電子 drone，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c9f9e29f-a7e7-4bc6-b9da-32065bf241ad",
+    "https://coverartarchive.org/release-group/c9f9e29f-a7e7-4bc6-b9da-32065bf241ad/front"
+   ],
+   "mbRgMbid": "c9f9e29f-a7e7-4bc6-b9da-32065bf241ad",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jóhann Jóhannsson",
+   "album": "The Miners’ Hymns",
+   "year": 2011,
+   "label": "FatCat Records",
+   "country": "is",
+   "faction": "ext-b",
+   "genres": [
+    "classical"
+   ],
+   "why": "Bill Morrison 礦工紀錄片配樂：銅管樂團、管風琴與電子在杜倫大教堂殘響裡極慢堆高，厚重哀沉",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.3,
+    "z": -0.7,
+    "why": "銅管、管風琴、電子在大殘響中慢堆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/546d3d38-1372-489a-aa4a-2a31d55169b5",
+    "https://coverartarchive.org/release-group/546d3d38-1372-489a-aa4a-2a31d55169b5/front"
+   ],
+   "mbRgMbid": "546d3d38-1372-489a-aa4a-2a31d55169b5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "銅管聖詠調性清楚，z 可能接近 −0.4"
+  },
+  {
+   "artist": "Ben Frost",
+   "album": "Dark: Cycle 3 (original music from the Netflix series)",
+   "year": 2020,
+   "label": "Invada",
+   "country": "de",
+   "faction": "ext-b",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "《Dark》第三季配樂，延續前兩季的低頻 drone 與失真噪霧；池中 Cycle 1、2 皆落頹靡",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.7,
+    "z": -1.8,
+    "why": "低頻 drone、失真噪霧，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3e9ce1e0-a67b-4822-8890-cbb0ac74f6e9",
+    "https://coverartarchive.org/release-group/3e9ce1e0-a67b-4822-8890-cbb0ac74f6e9/front"
+   ],
+   "mbRgMbid": "3e9ce1e0-a67b-4822-8890-cbb0ac74f6e9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中前兩季 x 2.6–2.7，邊距較窄"
+  },
+  {
+   "artist": "Ben Frost",
+   "album": "1899 (Original Music from the Netflix Series)",
+   "year": 2022,
+   "label": "Invada",
+   "country": "de",
+   "faction": "ext-b",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "《Dark》團隊新劇配樂，海上幽閉的低頻轟鳴與弦樂 drone，厚、冷、往下壓",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.6,
+    "z": -1.6,
+    "why": "低頻轟鳴與弦樂 drone，厚冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/10c6b16a-63f4-430f-837f-0c8643536e7a",
+    "https://coverartarchive.org/release-group/10c6b16a-63f4-430f-837f-0c8643536e7a/front"
+   ],
+   "mbRgMbid": "10c6b16a-63f4-430f-837f-0c8643536e7a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ben Frost",
+   "album": "Fortitude III",
+   "year": 2018,
+   "label": "SATV Publishing Ltd",
+   "country": "gb",
+   "faction": "ext-b",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "北極小鎮驚悚劇第三季配樂，冰原般的低頻 drone 與噪霧；池中第一季 Fortitude 落頹靡",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": -1.6,
+    "why": "冰冷低頻 drone 與噪霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6618971f-e236-4c36-acee-ec820a03569e",
+    "https://coverartarchive.org/release-group/6618971f-e236-4c36-acee-ec820a03569e/front"
+   ],
+   "mbRgMbid": "6618971f-e236-4c36-acee-ec820a03569e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ben Frost",
+   "album": "Broken Spectre",
+   "year": 2022,
+   "label": "[no label]",
+   "country": "au",
+   "faction": "ext-b",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "為 Richard Mosse 亞馬遜焚林影像裝置所作的配樂，低頻 drone 與噪聲雲緩慢翻湧，黑而厚",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.8,
+    "z": -1.7,
+    "why": "低頻 drone 與噪聲雲，黑厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5f39f04d-33f9-4503-9d7d-adb3bd2b9859",
+    "https://coverartarchive.org/release-group/5f39f04d-33f9-4503-9d7d-adb3bd2b9859/front"
+   ],
+   "mbRgMbid": "5f39f04d-33f9-4503-9d7d-adb3bd2b9859",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Artur Kordas",
+   "album": "Darkwood (Original Video Game Soundtrack)",
+   "year": 2020,
+   "label": "Ship to Shore PhonoCo.",
+   "country": "pl",
+   "faction": "ext-b",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "波蘭森林求生恐怖遊戲配樂，以低頻嗡鳴、腐朽音色與遠處噪響構成的暗黑 ambient，壓抑往下沉",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.5,
+    "z": -1.6,
+    "why": "低頻嗡鳴、腐朽音色，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2ed4d4ff-41cd-4c68-b8c3-ae9a10a69932",
+    "https://coverartarchive.org/release-group/2ed4d4ff-41cd-4c68-b8c3-ae9a10a69932/front"
+   ],
+   "mbRgMbid": "2ed4d4ff-41cd-4c68-b8c3-ae9a10a69932",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "交 47 張（目標 54）：主場景見底。池中 Kancheli《Vom Winde beweint》、Vasks、Silvestrov、Górecki（兩版）、Tüür、Rautavaara、Pärt 皆判輕（y ≤ 0.5），同路的 Kancheli（Styx、Lament、Abii ne viderem）、Vasks（Musica dolorosa）、Silvestrov（Requiem for Larissa、Symphony 6）、Górecki（Miserere、Symphony 2）、Schnittke、Gubaidulina、Pettersson 7 都屬『乾淨聲部分明的弦樂／合唱』或旋律清楚，照池中先例判輕或落平靜，不提；Kancheli 另在 BRIEF 體感標準被點名為冷冽。",
+  "主場景改挖池中已證實落頹靡的路線：Scelsi（池中 Zender、Arditti、Poppen 三盤 x 1.8–2.0、y 0.6–1.2 皆頹靡）→ 收 Wyttenbach／Accord 三盤；Penderecki 合唱慢作（池中 Wit《St Luke Passion》2.0/0.8/−1.8 頹靡）→ 收 Wit《Utrenja》《A Polish Requiem》；Michael Gordon（池中《Decasia》2.4/1.6/−1.6）→ 收 Dystopia、Rushes。",
+  "去重：已在別組 curation 的不重提——Fordlândia、Virðulegu Forsetar（ml46）、Hildur《Without Sinking》（md3）、Kali Malone《Does Spring Hide Its Joy》《Living Torch》（md1）、Anna von Hausswolff《All Thoughts Fly》（md3）、Thorvaldsdottir 四張與 Scelsi《Natura renovatur》（md14）、Deaf Center、Erik K Skodvin、Bersarin（md1／md26）、Ben Frost《Theory of Machines》（md1）。全部 47 張跑過 seed 去重＝0，rgMbid 也對過 onboarding-manifest／cards 無撞。",
+  "刻意不收：Ben Salisbury & Geoff Barrow《Ex_Machina》（池中同組《Annihilation》y 0.6，本張更清亮）、Hildur & Jóhannsson《Mary Magdalene》（聖樂旋律，怕落恍惚）、Brian Reitzell《Hannibal》其餘三卷（池中同系列 x 3.2–3.3 落暴躁）、Oliveros／Radigue／Stuart Dempster（池中 Deep Listening、Trilogie de la Mort y 0.4 判輕）、Ellen Arkbro、Sarah Davachi、Kali Malone《Cast of Mind》（同人池中判輕或貼邊）、INSIDE（Martin Stig Andersen，MB 無日期且找不到封面）、Ligeti／Penderecki Threnody 式音塊（照派工判躁）。",
+  "古典卡掛名照池中慣例：指揮帶隊的錄音掛指揮、盤名前綴作曲家（Jürg Wyttenbach｜Scelsi: …、Antoni Wit｜Penderecki: …，比照池中 Hans Zender｜Scelsi、Antoni Wit｜Penderecki: St Luke Passion），MB 正規盤名寫在 queryAlias；作曲家領銜的當代盤（Gordon、Dennehy、Jóhannsson《Drone Mass》）掛作曲家。",
+  "封面：43 張 CAA release-group；Architecture of Loss、A Polish Requiem 用 CAA release 層；Saor、Gebrauchsmusik 用 Apple Music。WebSearch 用 0 次。"
+ ]
+}

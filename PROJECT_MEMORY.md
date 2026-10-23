@@ -6,11 +6,22 @@
 - **策展→研究汰換**：ml51 策展 54、主線汰 8、研究汰 16（boom bap 彈跳、house／trap／glitch、人聲合輯、散裝草稿集、EP 長度）、補 1 → 31。md28 策展 54、主線汰 8、研究汰 12（拍點／打擊、溫暖明亮、旋律樂器或人聲領奏）、補 3 再汰 3 → 34。兩場景主場景見底，不再派。
 - **主線審稿**：ml51 改 2 處（Scenic Route 單源比較評價刪、kyoto 第二句與 hook 重複改寫）；md28 改 3 處（Aftermath hook 單源「先行者」改寫，Sanctum hook 語句，Exit Earth 語句；hooks／input 同步）。
 - **上線**：card_catalog 31＋34、KV 65 鍵回讀逐字一致、試聽 24＋31 ready（md28 人工配 5）、seed +65、published gate 兩批 0 error；封面 CAA 61（6 張改 front-500）、Apple 2、Discogs 2（registry 400 筆），live-check 全 200、目視相符。上線前對 origin 92 個 `claude/*` 分支 seed＋卡單去重 0 撞。
-- **情緒評分**：`score-ml51`、`score-md28`。**ml51 落恍惚 31/31（100%）**、**md28 落頹靡 34/34（100%）**。八格（併 main 後，含 ml52／mc39）：恍惚 1,517、頹靡 1,467、冷冽 1,469。
+- **情緒評分**：`score-ml51`、`score-md28`。**ml51 落恍惚 31/31（100%）**、**md28 落頹靡 34/34（100%）**。八格（併 main 後，含 ml50／md27／ml52／mc39）：恍惚 1,538、頹靡 1,480、冷冽 1,469。
 - **類型樹**：`genre-l3-artist-map.json` 補 hiphop/underground/instrumental 6、electronic/ambient/dark-ambient 3，65/65 落位；抽卡封面重建。
 - **藝人介紹**：未切（並行規矩）；新藝人 40 個掛名列在兩批 rulings.md 末尾。
 - **主要檔案**：`batch-progress/add-20261023-{ml51,md28}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml51,md28}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml51,md28}/`、`onboarding-manifest-add-20261023-{ml51,md28}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml51,md28}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
 - **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 65/65；build-card-moods 錨點 104/104。
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 11 輪 ml50／md27：暖 drone 22 張、暗色現代古典／drone 古典 15 張上線，落格 21/22、13/15
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 11 輪＋「恍惚可以多增加一點 downtempo 與 dub」，本工作階段負責 ml50、md27（評分照 10-23 體感標準）。ml50（`add-20261023-ml50`，恍惚：暖 drone／厚墊 ambient＋磁帶／吉他殘響暖 ambient＋暖 ambient dub）：Hotel Neon、Celer、Pioulard、Dettinger、Kenniff、Mark McGuire、Luke Schneider、SUSS、Michael Brook、Robin Guthrie、Metallic Spheres、Bluetech、Shulman、Stick Figure、Halftribe、Wil Bolton 等。md27（`add-20261023-md27`，頹靡：主場景暗色現代古典慢板池中全判輕，改收 Scelsi 音塊、低音弦／管風琴 drone 古典、drone 型配樂）：Valgeir、Scelsi（Wyttenbach／Accord）×2、Gordon《Rushes》、Bára ×2、Maria W Horn、Clarice Jensen、Claire M Singer、Lustmord ×2、Fjellström、Ben Frost ×3。
+- **策展→研究汰換**：ml50 策展兩輪 61、主線汰 11（含 2026 新盤 4）、研究汰 28（陰鬱字眼、有拍、原聲稀疏、reggae 輕快無 dub 證據）→ 22；第二輪要求每張先附 warm 原句，研究只再汰 3。md27 策展兩輪 47（第二輪 0）、主線汰 1、研究汰 31（Penderecki 合唱慢作、Dystopia、Bára《Orchestral Works》等尖叫爆發判躁；清澈聖樂、comforting 判暖輕；聲音零來源）→ 15。新工具 `batch-progress/mood-cells-20261022/pool-axes.mjs`（查池中同人三軸與落格）。
+- **主線審稿**：ml50 改 1 處（Set in Stone hook 拿掉雷鬼榜週數、第二句去複述，hooks／input／out 同步）；md27 改 1 處（Saor 語序，Union Chapel／Forgue Kirk 不再混指）；md27 鉤子 d 組兩則 hook 避既有批 4-gram 改寫。
+- **上線**：card_catalog 22＋15、KV 22＋15 鍵回讀逐字一致、試聽 21＋13 ready（人工配 7；Shulman、Scelsi ×2 無 Apple）、seed +37、published gate 兩批 0 error；封面 CAA 36、Apple 1（Saor），目視相符。上線前對 origin 各 `claude/*` 分支 seed 與 md28／ml51／ml52／mc39 卡單去重 0 撞。
+- **情緒評分**：`score-ml50`、`score-md27`。**ml50 落恍惚 21/22（95%）**（Cordero & Rhucle 判輕落放鬆）、**md27 落頹靡 13/15（87%）**（Scelsi《Hurqualia》、Ben Frost《Broken Spectre》判躁落暴躁）。八格（併 main 後）：恍惚 1,507、頹靡 1,446、冷冽 1,469。
+- **類型樹**：`genre-l3-artist-map.json` 補 electronic/ambient/drone 3、world/reggae/dub 1，重建後 37/37 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 31 個掛名列在兩批 rulings.md 末尾。ml50、md27 場景見底，不再派。
+- **主要檔案**：`batch-progress/add-20261023-{ml50,md27}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml50,md27}.json`、`pool-axes.mjs`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml50,md27}/`、`onboarding-manifest-add-20261023-{ml50,md27}-20261023.json`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/mood/*`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`、`genre-l3-artist-map.json`。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 37/37；build-card-moods 錨點 104/104。
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 11 輪 ml52／mc39：2000s slow jam 27 張、管樂獨奏／二重奏 28 張上線，落格 25/27、24/28
 
 - **內容**：店主「三個情緒薄格各補到約 2,000」第 11 輪，本工作階段負責 ml52、mc39（評分照 10-23 體感標準）。ml52（`add-20261023-ml52`，恍惚）：Jaheim ×2、Carl Thomas、Dave Hollister、Anthony Hamilton ×4、Tank、Case、Gerald Levert ×3、Isley Brothers ×2、Silk ×2、Kenny Lattimore、Freddie Jackson、Phil Perry、Angie Stone、Chanté Moore、Vivian Green、Kelly Price、Keke Wyatt、Syleena Johnson、Marsha Ambrosius。mc39（`add-20261023-mc39`，冷冽）：Braxton ×2、Stevens & Parker ×3、Parker & Guy ×2、Parker 與 Rothenberg／Shipp／McPhee 二重奏、Roscoe Mitchell《L-R-G》、Brötzmann 獨奏 ×3、Butcher 二重奏 ×2、Gustafsson ×3、Rothenberg ×5、Perelman 二重奏 ×3、Wolfgang Fuchs。
