@@ -37,3 +37,11 @@
 - **19885**　Shock_Late Discogs 風格含 Ambient、Bits Bots Signs 廠牌文案有 gently pulsing rumbles／sparser／fragile，兩張可能偏靜；Taken and Changed 風格標 Illbient 亦有偏暗沉風險。報主線。
 - **19886**　Double_Wash 錄音日期：Discogs 記事 1999-12-12，另有摘要稱素材取自 1998 年冬，未驗證，採 Discogs。
 - **19887**　大半專輯缺獨立樂評（Squidco、Forced Exposure、AllMusic、Bandcamp 被擋），聲音事實以 Discogs 風格標籤、曲長結構、廠牌文案與維基通則描述支撐，標 thin；低頻與長段留白皆查無證據，非證實為無。
+
+## 研究 c 組
+- **19901**　現場查核：九張 Discogs 記事皆為錄音室／房間錄音（Becoming Typewriter 為 Motel Junhibin 房間、Rabbit Run 為科隆 Peithopraxis、Bart 同、Thermal 為 OT301 Studio One、Warp Out 為波茨坦電影學院 Studio 3、Figueroa Terrace 為 CalArts、Kevin Drumm 為直接錄磁帶）。Vlan_Voilà 無錄音資訊但有 Engineer 署名，標「疑似現場（未證實）」；Lux Payllettes 為 2005–2008 作曲。
+- **19902**　年份：Bart Discogs 2000／MB 2001（錄音確定 2000-08），建議簡介只寫錄音年；Thermal MB／Discogs 2001 但版權年印 2003，同樣避開確切上市年；Figueroa Terrace Touch 官方 2014-04-28 vs MB 2014-03-21，年份 2014 無爭議。
+- **19903**　moodGuess 存疑（報主線）：Kevin Drumm（維基與 Discogs 小傳皆稱早期錄音疏朗安靜、曲長 17:09，判靜風險）、Becoming Typewriter（50 分鐘兩首長曲、發條喀嗒，留白風險）、Figueroa Terrace（回授持續音強度大與近乎無聲段並存）、Warp Out（小傳稱「沉重搖擺」「過載」＋鼓組，判重風險，亦有近乎無聲持續音）。Rabbit Run 與 Bart 支持預估（近無聲段短、主體尖銳碎裂）。Vlan_Voilà、Lux Payllettes、Thermal 無任何聲音來源，x 全憑推估。
+- **19904**　來源受限：Bandcamp 與 Discogs 網頁、AllMusic、DuckDuckGo 被擋；WebSearch 用 3 次。Erstwhile 官方頁（erstwhilerecords.com/store/pNN）可抓，Rabbit Run 為 p56、Bart 為 p26。thin 五張：Becoming Typewriter、Vlan_Voilà、Kevin Drumm、Lux Payllettes、Thermal，聲音多為推斷；Warp Out 的聲音描述僅有 Discogs 團體小傳（宣傳口吻）單一來源，已在 facts 標明。
+- **19905**　Voice Crack 成立年（維基 Voice Crack 頁：1972）與 Möslang 本人頁「自 1984 年起」不同，兩條分引各自頁面；Möslang 頁稱 Voice Crack 為「二重奏」，後與 eRikm、Müller 擴為 poire_z。
+- **19906**　Keith Rowe 三人組「全明星電子樂團 M.I.M.E.O.」成員之說僅見於設計師 Heike Sperling 作品頁，facts 只寫「三人都是 M.I.M.E.O. 的成員」；Lehn 小傳也將 MIMEO 列為其長期團體（可交叉）。
