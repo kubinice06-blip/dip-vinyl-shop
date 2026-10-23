@@ -40,3 +40,12 @@
 - 19984　The Deli《Spacetime》：官方文案稱太空配樂、shimmering pads、synth lines，色溫可能中性略涼，moodGuess 存疑（弱）；節奏 sparse 支持靜。《Encounters》全長 29.5 分貼 EP 邊界、boom bap 有 x 風險；《Zodiacs》僅標籤、thin，卡單 label 空白實為自行發行。
 - 19985　L'Indécis《Plethoria》：無反證（dusty funk loop、環境聲、40 分）。卡單 country nl 取自發行國，藝人實為法國格勒諾布爾人，請卡面以藝人國籍為準。
 - 19986　WebSearch 用 3 次（Plethoria 樂評、Bonus Points、BROCKBEATS），皆無獨立樂評；多數資料來自 Bandcamp、Discogs／MB API、Cold Busted、Chillhop 官方頁、Turntable Lab 文案。
+
+## 研究 b 組（19971–19980）
+- 19971　Philanthrope 三張推翻策展層 country：卡單 de，但 Philanthrope 本名 Simon Leidner，奧地利因斯布魯克人、定居鹿特丹（Discogs artist 4471339；MB 登 NL）；de 只對廠牌（Dezi Belle、Vinyl Digital、Dirty Beauty）與 B-Side（柏林）成立。Devaloop 為薩爾茨堡人。
+- 19972　Blue Wednesday 兩張推翻 country：卡單 nl，Bandcamp 與 MB 皆為加拿大溫哥華（Gustav Joseph）；卡單 label 空白屬實（自發行）。
+- 19973　Philanthrope《Cloudfiles》：MB RG 只掛 Dirty Beauty 錄音帶（24 首、限量 100）；卡單 Vinyl Digital 對應 Discogs master 的《Extended Edition》雙 LP（28 首、約 71 分、限量 500）。寫作層須講明版本，不是 EP。策展風險欄尾端 UUID 為雜訊。
+- 19974　moodGuess 存疑：《Clockwork》Chillhop 自稱 melancholic、Bandcamp 聽眾稱 moody／deep（z 可能偏冷）、Discogs 標 Boom Bap、15 首平均約 2 分短 loop。《Jazz Cat》部落格稱 snares snap and crackle（x 彈跳風險），Bandcamp 稱 dusty jazz feel、smoky（支持重暖）。《Vibes 3》Discogs 標 Trip Hop／Conscious，與策展『軟 boom bap』不一致。
+- 19975　聲音事實 thin：《Blurred Nightscapes》《Cloudfiles》《Beat Tape 2》《Beat Tape 3》無樂評或廠方音色描述，僅標籤與藝人自述（Blue Wednesday 以鋼琴為核心）；皆非 EP（37／約 71／43／33 分）。無一張出現 trap 化、clean／crisp／bright 自稱。
+- 19976　The Deli 單一來源處理：《Vibes 3》『出道作』與〈Flowers〉約 1400 萬次播放僅出自 Derek's Music Blog（2018）；NTS 頁面稱 The Deli 是 Moka Only 與 Baptiste Hayden 合作，與其他來源衝突，不採；Vibes 3 是否 Cold Busted 第一張查無來源，寫作層勿寫首作。
+- 19977　WebSearch 用 3 次（Philanthrope、Blue Wednesday、The Deli 各一），其餘為 Bandcamp、Discogs／MB API、Chillhop 頁；Philanthrope 的 Bandcamp 專輯頁、Dezi Belle、Vinyl Digital 商品頁皆 404／401 未取得。
