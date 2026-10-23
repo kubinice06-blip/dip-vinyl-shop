@@ -77,3 +77,4 @@
 - 留下但存疑、交評分裁定：Kelly Price《Mirror Mirror》（Method Man 客串一首、R. Kelly 製作）、《Priceless》（Stevie J 兩首嘻哈拍，整體老派暖）、Goapele《Change It All》（一首饒舌客串）、Celeste《Not Your Muse》（慢歌約六成）、Raveena《Asha's Awakening》（慢歌約一半）、Leela James 兩張（慢歌占比未證）、Oleta《Circle of One》《Moving On》《All the Love》、Miki Howard《Love Confessions》、Phyllis Hyman《Forever With You》（遺作集，MB Album）。
 - 研究推翻照研究稿：Vesta《Relationships》廠牌 Ichiban→i.e. Music（隨汰換結案）；Syleena 年份 2001 維持；Aisha 年份 1987 維持（來源 1986–1988 不一，facts 不寫年份）；Quadron 隨汰換結案。
 - 剩 19，叫回策展代理補第二輪候補（避開上列汰換型態）。
+- 第二輪策展補 5（Love Unlimited《From a Girl's Point of View》、Jah9《New Name》《9》、Alex Isley & Jack Dine《Marigold》、Alice Smith《She》）；跨分支去重撞 ml53 卡單 3 張（Marigold 讓 ml53；Lalah《Honestly》、YEBBA《Dawn》本批已汰）→ 補 4，卡單 23（a 4、b 5、c 4、d 6、e 4），派一支補研究 append 進 a／c／e。

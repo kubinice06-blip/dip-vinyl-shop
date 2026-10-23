@@ -13,3 +13,10 @@
 - 留下但 x 風險（研究層查「神經質碎片 vs 飄浮長音」）：Koenig、Pousseur、Normandeau《Figures》、Stéphane Roy《Kaleidos》、Manoury 兩張。Subotnick 三張與 Ankersmit 為 mc37 未收的同人他盤，保留。
 - **MB flag**：Jonty Harrison《Évidence matérielle》（MB rg 2022 數位重發，原 CD 2000 empreintes）、Thibault《Volt》（MB rg 2023，原 1990）、Normandeau《Figures》（原 2009）——年份取原盤首發，研究層核；Davidovsky《Synchronisms》MB 掛名含 Ensemble Phoenix Basel；Stroppa MB 無日期。
 - 現場錄音策展已排除（The Hub ×2、Lang、Amacher、Hecker）。去重：seed、所有 curation-*.json、origin 各 `claude/*` 分支 seed＋卡單 0 撞。
+
+## 研究 e 組
+- 21121　Normandeau《Figures》年份推翻：原盤為 1999 年 IMED 9944（Discogs master 7458、release 245092、Wikipedia 作品表），MB rg 的 2009 與策展層「原 2009」均是 IMED 0944 重發；建議卡片年 1999。moodGuess 存疑（Le renard et la rose 笑聲輕盈、Figures de rhétorique 宇宙感、Venture 末段 Sérénité；只有 Ellipse、Venture 的 Délire／Violence 符合），交主線評分時下修或汰換。
+- 21122　Subotnick《Ascent Into Air / A Fluttering Of Wings》moodGuess 存疑：兩首各 19–24 分鐘音詩，A 面濃密無定形聲團＋慢大提琴＋「雷霆般高潮」（偏重），B 面天國輕盈、質地漸薄、慢速安靜大提琴收尾（偏靜），與「急促碎句、神經質」不符；建議汰換。B 面是否另有電子處理無法確認，不寫。
+- 21123　Thibault《Volt》年份維持 1990（IMED 9003 原盤；MB 2023 為數位版）。聲音證據（起音對比、機械序列、情感缺席）支持躁輕冷；Discogs 註記首版限量 20 張手編號，不影響年份。
+- 21124　Roy《Kaleidos》年份 1996 原盤相符；moodGuess 大致成立，Paysages intérieurs 偏陰暗夢境為唯一保留。
+- 21125　Mimetismo「thick combinations」樂評語未查得出處，不入 facts；Normandeau 的 Prix Opus 1998-99 類別與是否專指本盤不明，不入 facts（Golden Nica 僅寫為 Le renard et la rose 一曲）。

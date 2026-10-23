@@ -11,19 +11,19 @@
    "id": "qs",
    "zh": "女聲 quiet storm／成人抒情",
    "why": "擴寫 1：80s 末–00s 成人抒情，池中同型（Chanté Moore、Lalah、Phyllis Hyman、Miki Howard）多落恍惚",
-   "count": 13
+   "count": 14
   },
   {
    "id": "ns",
    "zh": "女聲慢板 neo-soul／暖 R&B 2000s–20s",
    "why": "擴寫 2：厚低頻、弦樂墊或殘響霧的慢盤",
-   "count": 17
+   "count": 19
   },
   {
    "id": "dt",
    "zh": "女聲 downtempo／trip-hop／lovers dub",
    "why": "擴寫 3：店主 10-23 指示多加 downtempo 與 dub",
-   "count": 3
+   "count": 5
   }
  ],
  "albums": [
@@ -1147,6 +1147,153 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "Discogs master 1987（UK ARI LP 029），MB 首發 1988（德版）；年份取 1987。藝人名 Aisha 撞名風險，研究層核；CAA 無圖，封面取 Discogs／Apple"
+  },
+  {
+   "artist": "Love Unlimited",
+   "album": "From a Girl's Point of View We Give to You",
+   "year": 1972,
+   "label": "Uni",
+   "country": "us",
+   "faction": "qs",
+   "genres": [
+    "soul"
+   ],
+   "why": "Barry White 製作、Gene Page 編曲的女聲三重唱首作（AllMusic John Bush：「a cohesive album-length meditation on the highs and lows of love」）；池中同團《Under the Influence of…》《In Heat》皆 y 1.0 落恍惚，同一套大編制弦樂＋厚貝斯慢板",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.0,
+    "z": 1.6,
+    "why": "Barry White 弦樂墊、厚貝斯慢板，甜暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4235cd34-e931-3985-97e5-bce23742f49d",
+    "https://coverartarchive.org/release/31ddac11-5c26-4e83-b24b-75e3347b6804/34283198423.jpg",
+    "https://en.wikipedia.org/wiki/Love_Unlimited_(Love_Unlimited_album)"
+   ],
+   "mbRgMbid": "4235cd34-e931-3985-97e5-bce23742f49d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "〈Walkin' in the Rain with the One I Love〉為中板單曲但非舞曲；Apple 查無，證據用 MB＋CAA＋維基"
+  },
+  {
+   "artist": "Jah9",
+   "album": "New Name",
+   "year": 2013,
+   "label": "Rorystonelove",
+   "country": "jm",
+   "faction": "dt",
+   "genres": [
+    "world"
+   ],
+   "why": "牙買加女聲「jazz on dub」代表作，Rory Stone Love 製作；樂評：「blends conscious reggae riddims with classic jazz grooves and dub overtones」——重低音 riddim＋dub 回音包住溫厚女中音",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "roots riddim 厚低音、dub 回音，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f1ba3cd4-9bdb-40c4-b5b4-d67dbca14bdc",
+    "https://coverartarchive.org/release/b7074244-ffc7-455f-8a35-f04071982002/13250322203.jpg",
+    "https://music.apple.com/us/album/new-name-deluxe-edition/599702007",
+    "https://www.reggaeville.com/artist-details/jah9/releases/mode/review/release/jah9-new-name"
+   ],
+   "mbRgMbid": "f1ba3cd4-9bdb-40c4-b5b4-d67dbca14bdc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Protoje 客串〈Legitimate〉（singjay，非饒舌）；爵士味可能拉冷，研究層核"
+  },
+  {
+   "artist": "Jah9",
+   "album": "9",
+   "year": 2016,
+   "label": "VP",
+   "country": "jm",
+   "faction": "dt",
+   "genres": [
+    "world"
+   ],
+   "why": "第二張，VP 發行；United Reggae 稱「hypnotic」，宣傳稿「soulful over bass-driven melodies with a jazzy swagger」，九分鐘冥想曲〈In the Spirit〉；重低音催眠 roots，溫",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.7,
+    "why": "bass-driven 慢 riddim，催眠，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/10690aa1-bc30-400b-b4ee-74652295ad16",
+    "https://coverartarchive.org/release/48b21add-eca3-4aa0-87b7-c3d38a92f04b/15584157909.jpg",
+    "https://music.apple.com/us/album/9/1136941275",
+    "https://unitedreggae.com/articles/n2164/010217/jah9-9"
+   ],
+   "mbRgMbid": "10690aa1-bc30-400b-b4ee-74652295ad16",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "爵士味與旋律清楚度研究層核色溫"
+  },
+  {
+   "artist": "Alex Isley & Jack Dine",
+   "album": "Marigold",
+   "year": 2022,
+   "label": "Warner",
+   "country": "us",
+   "faction": "ns",
+   "genres": [
+    "soul"
+   ],
+   "why": "Isley 家族第三代 Alex Isley 與製作人 Jack Dine 的合作盤，全盤慢板、合成器墊與溫熱混響，無饒舌客串",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.8,
+    "z": 1.2,
+    "why": "慢板，合成器墊、溫熱混響，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/62bb9d00-35b5-481b-a390-b837f94a68ca",
+    "https://coverartarchive.org/release/8bc8b63e-be98-44f3-b7b2-eb3455a464bc/32135383404.jpg"
+   ],
+   "mbRgMbid": "62bb9d00-35b5-481b-a390-b837f94a68ca",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無樂評原句（WebSearch 額度用盡）；質地可能偏乾淨輕柔，研究層核；MB 藝人名 Alex Isley & Jack Dine；Apple 搜尋回錯（單曲），證據用 MB＋CAA"
+  },
+  {
+   "artist": "Alice Smith",
+   "album": "She",
+   "year": 2013,
+   "label": "Self-released",
+   "country": "us",
+   "faction": "ns",
+   "genres": [
+    "soul"
+   ],
+   "why": "被唱片公司退件後自發行的第二張，SoulTracks：「lush musical landscapes with haunting mid-tempos」，〈Ocean〉「lush tropical sway」；厚編曲、慢中板、渾厚女中音",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "厚編曲、慢中板、殘響，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/67b37211-adf5-4010-be65-16b793f16fa8",
+    "https://coverartarchive.org/release/e1062f46-a64a-4c8f-afa1-fcb2f5de3550/14845286328.jpg",
+    "https://music.apple.com/us/album/she/1104736547",
+    "https://soultracks.com/review/alice-smith-she-review/"
+   ],
+   "mbRgMbid": "67b37211-adf5-4010-be65-16b793f16fa8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "樂評「haunting」可能拉冷，研究層核色溫"
   }
  ],
  "notes": [
@@ -1156,6 +1303,7 @@
   "不提理由：Deborah Cox（Arista 乾淨數位、舞曲混音多）、Keke Wyatt《Unbelievable!》（同人《Soul Sista》池中 y 0.5 貼線）、Alyson Williams（聲音資料不足）、Angela Winbush《Sharp》《The Real Thing》（中快板 funk）、Shirley Murdock（Zapp 系 funk 混合）、Lovers rock 女聲（Carroll Thompson、Janet Kay、Marcia Griffiths 池中判輕）、Goldfrapp／Morcheeba／Zero 7／Supreme Beings of Leisure 其他盤（池中判輕或冷）、Syd《Fin》、Kali Uchis《Isolation》（偏亮）。 Lady Wray《Piece of Me》ml5 已以 x 貼邊不提，本批照做。",
   "Apple 搜尋回錯盤或查無的（Kelly Price《Kelly》、Vesta《Relationships》、Lisa Fischer、Lalah《Honestly》、Raveena、Alina《It Was Divine》、Celeste、YEBBA、Quadron、Syd）只用 MB＋CAA 兩條證據；CAA 38/39 有封面，唯 Aisha《High Priestess》CAA 無圖，封面取 Discogs／Apple。藝人名 Aisha 為池中 Maisha 的子字串、Celeste 與 Celeste Legaspi 子字串，去重 0 但藝人介紹鍵請主線留意。",
   "MB 全數釘住（39/39），人工身分 0；WebSearch 0 次。年份核對：Syleena Johnson 取 2001（MB 2002 為他國版）、Aisha 取 1987（Discogs master，MB 1988 德版）、Quadron MB 2010。",
-  "警示：quiet storm 成人抒情池中同型多落 y 0.7–0.9，本批 moodGuess y 多貼 0.8 下緣（與 ml49 同），研究層請嚴汰中快板與乾淨數位製作。"
+  "警示：quiet storm 成人抒情池中同型多落 y 0.7–0.9，本批 moodGuess y 多貼 0.8 下緣（與 ml49 同），研究層請嚴汰中快板與乾淨數位製作。",
+  "第二輪（主線研究汰 18 後補）：只補到 5 張（目標 10–15，未湊數）——Love Unlimited 首作、Jah9《New Name》《9》、Alex Isley & Jack Dine《Marigold》、Alice Smith《She》。查過不提：Barry & Glodean（池中已有、y 0.1）、Kelsey Lu《Blood》（disco 元素，ml5 已不提）、UMI《Forest in the City》（electro R&B、ml5 判 minimal）、Ann Peebles／Candi Staton／Millie Jackson／Esther Phillips／Minnie Riperton／Margie Joseph／Jean Carn／Shirley Brown／Etta James 等 70s 女聲（池中同人多判輕）、The Emotions《Flowers》（已在池）、Dorothy Moore《Misty Blue》（南方靈魂池中判輕）、Corinne Bailey Rae《The Sea》（同人判輕）、Love Unlimited《He's All I've Got》（disco 期）、Dee Dee Sharp《What Color Is Love》（MB 查無）。第二輪 WebSearch 6 次（全批累計 6，額度用盡）。"
  ]
 }
