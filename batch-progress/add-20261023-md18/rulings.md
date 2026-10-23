@@ -37,3 +37,15 @@
 - 18085　Kammarheit《Thronal》：聽眾評「鐵與石、infra-bass、不落入 loop」，卡單「低頻循環」不確定，視為無拍重 drone。Atrium Carceri & Kammarheit《Colossus》：文案有 throbbing pulses／pulsating subs，無鼓組，但脈動是否繃緊不明，取邊緣值。
 - 18086　Northaunt《Istid I–II》full；Northaunt & Svartsinn《The Borrowed World》thin（僅標籤與靈感來自《The Road》）。推翻策展層 0 處。
 - moodGuess 存疑小結（e 組）：強 3 張（Ø《Oleva》、Klara Lewis《Ett》《Too》）；輕 1 張（Colossus 脈衝）。d 組輕 3 張（見 18073）。
+
+## 研究 b 組
+- 18051　不失者《すでに用意されていた想い》：MB／Discogs 一致（1998-06-24、單一曲目約 75 分、1998 年 2–4 月東京錄、不疊錄）；廠牌 J-Factory（Discogs 另列 Tokuma Japan Communications 為發行公司）。「有無爆裂段」查不到逐段評論（WebSearch 3 次僅得團級描述：英維「有時走向 Japanoise、多半幽魂沉思」），thin；moodGuess 存疑：x 2.4 有被爆音段推高風險，建議實聽。
+- 18052　MONO《Walking Cloud…》：Albini 錄、Human Highway（日）／TRL（美）／Rykodisc（歐）；58:25 共 8 首，3 首 8 分鐘以上。樂評（Pitchfork／AllMusic／ProgArchives）皆擋，鼓推進感與旋律清楚度查無，thin；moodGuess 存疑：弱。
+- 18053　MONO《Requiem for Hell》full：5 首約 46 分，標題曲 17:49；Drowned in Sound 稱吉他與弦樂「漂浮雲海」、高潮像 Mogwai。moodGuess 存疑：弱（旋律清楚往暖，z −1.0 可能偏冷，建議 −0.3～−0.7；x 2.5 貼邊）。
+- 18054　MONO《Nowhere Now Here》full：Echoes and Dust 明寫標題曲「雷鳴般打擊與推進吉他」、鼓乾而近、有噪音；另有 Breathe 人聲、銅管、合成器。moodGuess 存疑：中（x 恐 2.6–2.9、z 恐偏暖 −0.3～−0.5），邊界卡，交評分。
+- 18055　Yoshi Wada《Earth Horns…》：1974-02-24 Everson Museum 現場錄、2009 EM Records 三張 LP；四人吹管號角＋電子。維基稱 Wada 持續音「以大音量演奏」；音高／明暗無來源。thin；moodGuess 存疑：弱（高音壓可能是壓迫而非催眠；冷與低頻是推斷）。
+- 18056　畠山地平《Requiem for Black Night and Earth Spiders》：單一電吉他音檔做成的三首（65 分），土蜘蛛典故；Bandcamp 標籤含 dream pop。色溫無樂評，thin；moodGuess 存疑：弱（md1 註記畠山偏暖）。
+- 18057　畠山地平《Black Swallow》：數位專輯，8 首約 39 分，Warm Rain in June 三段占約 21%；頁面無描述，樂器未知。thin；moodGuess 存疑：中（z −0.9 傾向 −0.3～−0.6）。
+- 18058　畠山地平 & Dirk Serries《Black Frost》full：廠牌文案「荒涼又美麗」北歐冷景、dark ambient 標籤；三張畠山中冷色證據最強，維持。
+- 18059　Deathprod《Imaginary Songs…》：1996 dBUT 限量 500 編號；四短曲加 30:38 長曲；聲音只有英維 Audio Virus／磁帶延遲／特雷門等工具描述，低頻嗡鳴無來源，thin。
+- 18060　小結：推翻策展層 0 處（年份、廠牌皆對）。moodGuess 存疑：不失者（爆裂）、MONO 三張（Nowhere 中、Requiem／WaCRS 弱）、Wada（弱）、畠山 Requiem／Black Swallow（z 偏暖）。WebSearch 用 3 次。
