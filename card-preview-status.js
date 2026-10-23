@@ -3292,4 +3292,8 @@ window.DipPreviewStatus = Object.freeze({
   "phil minton|a doughnut in one hand": "unavailable",
   "paul lytton|the inclined stick": "unavailable",
   "吉田アミ|tiger thrush": "unavailable",
+  "tim berne|fractured fairy tales": "unavailable",
+  "tim berne|sanctified dreams": "unavailable",
+  "big satan|i think they liked it, honey": "unavailable",
+  "kate gentile|mannequins": "unavailable",
 });

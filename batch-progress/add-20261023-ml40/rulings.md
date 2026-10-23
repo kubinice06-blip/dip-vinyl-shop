@@ -82,3 +82,18 @@
 - **19214** 同藝人分軸與「他們」引入法：Heights of Abraham——Humidity 帶成團（團名直接領句，第二句「Heights of Abraham 是」判斷句），Electric Hush 帶錄音地點與聲音（掛名欄：以製作與工程的 Steve Cobby 領句）。Fat Freddy's Drop——Dr. Boondigga 帶廠牌與成團（廠牌關係：第二句以 The Drop 領句），Blackbird 帶 Bays 錄音室（序數：第二句「第三張錄音室專輯」），Blackbird 的 note 不具名主唱（研究稿兩張主唱名不同形，Dallas Tamaira／Joe Dukie，facts 未互證，Blackbird 這一格不寫）。
 - **19215** 第二句句型配表（一張一種）：判斷句「X 是」（Humidity）／製作人領句（Electric Hush）／出身地「來自紐倫堡的」（Finistère）／「Tosca 是」成員組成（No Hassle）／成團年份「1987 年成立於」（Sanacore）／嗓音「生於諾丁漢的 Liam Bailey，嗓音」（Heavy Soul）／化名「Count Dubulah 是」（Addis）／親屬「父親是」（Twice）／廠牌「The Drop 是」（Dr. Boondigga）／序數「第三張」（Blackbird）。開頭兩句交代哪裡人＋樂種：每張 hook 或第二句都帶城市（Hull、紐倫堡、維也納、拿坡里、諾丁漢、亞的斯亞貝巴、西倫敦、威靈頓）與樂種（dub、雷鬼、靈魂等）。日期「日」後一字：Finistère 日上、No Hassle 日在、Heavy Soul 日以、Addis 日由；其餘六張只寫年或年月（Twice、FFD 兩張依研究稿三源不一只寫年）。
 - **19216** 媒體名照派工不進 note：Melody Maker、Select、RA、Arcana、NPR、United Reggae、Exclaim!、PopMatters 一律寫成「樂評」「通稿」；分數、星等、Billboard 雷鬼榜不指派。研究稿 notes 的 moodGuess 存疑段未取作素材。n-gram 自查：hook 之間漢字 4-gram 0 條；開頭前四字 10 張互異；對 batches/output 全部已上架稿掃開頭，原稿「自家廠牌」（撞 c50a、c51a）、「錄音的地」（撞 c56）兩處改寫為「首週登上」「樂團錄音」，改後 0 撞。hook 與 note 無逐字重複句。
+
+## 寫作層（writer-1）
+- **19221** 交件：`desc-tools/batches/output/add-20261023-ml40-out-1.json`，10 張全 full，字數 227–240（Humidity 227、Electric Hush 240、Finistère 237、No Hassle 238、Sanacore 230、Heavy Soul 233、Addis 228、Twice 227、Dr. Boondigga 237、Blackbird 240）。`qa-batch out` 全過、`qa-check-research` 標記 0、`fix-spacing` 待補 0。首句 10 張逐字等於 hook。
+- **19222** 超標處理：初稿 Electric Hush 275、Finistère 256、No Hassle 246 三張超 240，一律整格縮寫（Hull 重複、「就是 Boozoo Bajou」改「組成」、媒體評語改被動「被比作」、全名改 note 用的姓），未捨 note 項目。
+- **19223** 第二句照鉤子層 19215 配表；日期「日」後一字照 19215（日上／日在／日以／日由）。另配日期前一字：Tosca 原「合作。2009」與 Finistère「首作。2023」撞 `作年月日`，Tosca 改「搭檔」。
+- **19224** 跨張 4-gram 自掃（han 剝數字與拉丁）：初稿 3 張以上 1 條（`張錄音室` 4 hook／9／10），2 張若干；改寫後 3 張以上 0 條。拆法：Dr. Boondigga 改「樂團的錄音室專輯第二作於」、Twice 改「第二張個人專輯」、Blackbird 改「紐西蘭專輯榜登頂」（避 hook 9 的「紐西蘭榜首」）、Addis「聽起來像」改「彷彿」（避 hook 3）、Electric Hush 去「由」（避 Blackbird `年由發行`）、Humidity／Finistère 曲數時長改不同句式（避 `首約分鐘`）。剩 2 張：`薩克斯風`（樂器名）、`張錄音室`（hook 4 對 Blackbird 第二句，兩邊皆指定字）、`樂團的第`、`錄音室專輯`（FFD 兩張）。
+- **19225** Sanacore 的「第二張錄音室專輯」寫成「樂團的第二張專輯」：照寫會讓 `張錄音室` 成 3 張（hook 4、Blackbird 指定第二句），捨「錄音室」三字（facts 前作為 1993《Animamigrante》，序數不變）。主線若要補回「錄音室」屬可逆，改時連帶避開 `張錄音室`。
+- **19226** 媒體名與媒體榜單：note 本來就沒有，正文 0 處；樂評一律寫「樂評」或被動句。無「據說／據傳」、無否定句、無「也就是」。Blackbird 的 Faiumu 照 note 只寫姓（note 未給全名與身分）。
+
+## 主線審稿（2026-10-23，雲端主線，10 張逐張讀過、對回研究稿）
+- **19231** `desc2:Heights of Abraham|Humidity`：刪「首句那個比喻，是當年樂評聽完之後寫下的聽感。」（後設說明、指向媒體評語；刪後 205 字）
+- **19232** `desc2:Heights of Abraham|Electric Hush`：「樂評把它和《Blue Lines》《What's Going On》並列，說有 soul food 般的低音，〈E.V.A.〉被稱為夏日名曲。」→「低音厚實，〈E.V.A.〉是其中一首。」（單篇樂評比較與評價句；保留低音事實；188 字）
+- **19233** `desc2:Boozoo Bajou|Finistère`：「Steve Spacek 唱的〈Sparks〉，律動被比作 Sade。」→「〈Sparks〉請來 Steve Spacek 演唱。」（單源比較）
+- **19234** `desc2:Fat Freddy's Drop|Dr. Boondigga & The Big BW`：「做出朦朧的氣氛，讓樂評想起 King Tubby 與 Scientist；」→「做出朦朧的 dub 氣氛；」（單源比較）
+- 以上皆為刪減評語，事實未變，研究層無須同步。其餘 6 張逐張審過，未改字。qa-batch out、qa-check-research（0 標記）、fix-spacing 重跑全過。
