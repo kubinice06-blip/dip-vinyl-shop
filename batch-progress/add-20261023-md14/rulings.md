@@ -43,3 +43,17 @@
 - 17752：聲音事實只有 Infinity Pool、Saint Maud、Possessor 三張有樂評支持（status full）；其餘六張（Dark C2、Fortitude、Joker 2、Snowtown、Macbeth、Sinister）只有 MB 曲目表與維基背景，聲音面標 thin，notes 已寫「聲音未核實」。
 - 17753：moodGuess 存疑——Infinity Pool（KFJC 樂評：A 面慢穩拍子、B 面部落感驅動節奏，可能往躁拉）、Fortitude（40 首約 70 分鐘，含〈…Also Drums and Dancing〉〈Tainted Love〉，疑有鼓／節奏段）、Joker 2（歌舞片，Score 盤 19 首約 34 分鐘，乾淨弦樂佔比未證）、Macbeth（戰場悶鼓未證）、Sinister（〈My Sick Piano〉與 Remix，鋼琴／節奏未證）、Dark C2（維基曲風含 orchestral）。主線需聽感複核。
 - 17754：未推翻策展層年份、廠牌、盤名；補 Infinity Pool 廠牌 Milan Records（卡單空白）。Fortitude 同名 2015 Broadcast RG 已核，本卡取 2017 Album 無誤。
+
+## 研究 c 組
+- 17741：c 組 9 張（Tarmia×2、SIGNALIS、Control、Hellblade、Doom 64、Scorn、Texas Chain Saw、Dark C1）研究稿 `desc-tools/batches/research/add-20261023-md14-c.json`。WebSearch 用 3 次（Texas、Doom 64、SIGNALIS）；其餘靠 Wikipedia／MB／Discogs API／Waxwork／Laced Records 訪談。
+- 17742：聲音事實有直接來源者：Control（Hiss 用拖行木頭、燒毀鋼琴錄音處理成 droning）、Doom 64（Hodges 訪談：無調、重低頻配輕高頻、低取樣率混疊、主題曲有銅管弦樂加粗糙打擊軌）、Scorn（Lustmord 低頻轟鳴、洞穴地穴殘響）、Texas（吊鑔、鋁鍋、玩具打擊組、動物叫聲）；SOMA、Amnesia: Rebirth、SIGNALIS、Hellblade、Dark C1 查不到任何音色描述（status thin 或僅標籤）。
+- 17743：推翻策展層：Texas Chain Saw 策展寫『動物骨頭敲擊與磁帶噪聲』，Waxwork 實寫吊鑔、鋁鍋、兒童玩具打擊組、野生動物叫聲、哨子、沙鈴，無骨頭；〈Inside Grandpa's (Bones)〉是場景名。Hellblade 配樂 Wikipedia 說 David García 與 Andy LaPlegua，MB 專輯只署 David García Díaz，簡介避免把 LaPlegua 寫成專輯作曲者。
+- 17744：moodGuess 存疑：Amnesia: Rebirth（沙漠洞穴場景未必冷，有 Ghoul Chase 等追逐曲）、SIGNALIS（首發版 117 首 223 分鐘、2023 版 56 首 106 分鐘，內容必混雜，收哪個版本主線定）、Control（Andersen 負責戰鬥主題、Discogs 標籤含 Heavy Metal，戰鬥曲有脈衝／打擊可能）、Hellblade（LaPlegua 工業背景，drone／悶擊無來源）、Texas（零碎擊打刮擦，缺持續低頻，『重』可能不足；14 首含 3 首草稿）、Dark C1（Frost《Aurora》被評更有節奏，本卷無鼓證據）、SOMA（只有 Dark Ambient 標籤，冷不冷無來源）。Doom 64 主題曲含管弦與打擊軌，但整體氛圍為主。
+- 17745：其他：Doom 64 首發版 27 首約 223 分鐘（遊戲 1997、專輯 2013 年份照 MB）；Scorn 17 首約 121 分鐘，Discogs 廠牌 Ebb Software（卡單空白可補）；Control 取自 Wikipedia 的作曲者國籍未查，未寫入。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- **汰 8 張**（研究層聲音反證）：Badalamenti《Twin Peaks 2017》（18 首 6 首非本人署名、含人聲歌與暖慢爵士）、Jóhannsson《End of Summer》（廠牌自述「為冰冷環境添溫度」）、Hildur《A Haunting in Venice》（乾淨室內弦樂、無 drone 證據）、Carolan《Nosferatu》（60 弦＋40 合唱、作曲者自稱恐怖又浪漫、刻意避開合成器 drone）、Sakamoto／Alva Noto／Dessner《The Revenant》（夾乾淨管弦作品與打擊樂團）、《SIGNALIS》（首發版 117 首、內容混雜）、Dumitrescu（混合選集、金屬撞擊打擊多）、Hildur《Joker: Folie à deux》（歌舞片配樂、乾淨弦樂佔比未證）。研究稿條目移出研究檔，卡單存 `dropped-cards.json`。
+- **補回 5 張**（策展汰換區，池中同型現代古典與配樂 y 0.6–1.8 全落頹靡，判輕風險原先高估）：Korven《The Witch》→a、Reitzell《Hannibal S1 Vol. 2》→b、Graves《Dead Space》→c、Bensi & Jurriaans《Enemy》→d、Scelsi《Natura renovatur》→e；派補研究 append。
+- **撞池攔截**：策展層汰換區的《The Ligeti Project II》（Nott／柏林愛樂 2002）就是池中已有的 `Jonathan Nott｜Ligeti: Atmosphères / Lontano`（盤名寫法不同、去重沒抓到），不補回。
+- 留下的存疑張：Sicario（打擊推進，但無失真攻擊性，照 10-22 能量規則仍判靜）、Color Out of Space、Infinity Pool、Fortitude（有節奏段）、SH4／Homecoming（池中 Yamaoka 三張全落頹靡 x 2.2–2.5、y 1.3–1.4）。
+- 定案 **42 張**（a 9、b 8、c 9、d 9、e 7）。
