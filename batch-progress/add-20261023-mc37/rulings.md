@@ -45,3 +45,22 @@
 - **19904**　來源受限：Bandcamp 與 Discogs 網頁、AllMusic、DuckDuckGo 被擋；WebSearch 用 3 次。Erstwhile 官方頁（erstwhilerecords.com/store/pNN）可抓，Rabbit Run 為 p56、Bart 為 p26。thin 五張：Becoming Typewriter、Vlan_Voilà、Kevin Drumm、Lux Payllettes、Thermal，聲音多為推斷；Warp Out 的聲音描述僅有 Discogs 團體小傳（宣傳口吻）單一來源，已在 facts 標明。
 - **19905**　Voice Crack 成立年（維基 Voice Crack 頁：1972）與 Möslang 本人頁「自 1984 年起」不同，兩條分引各自頁面；Möslang 頁稱 Voice Crack 為「二重奏」，後與 eRikm、Müller 擴為 poire_z。
 - **19906**　Keith Rowe 三人組「全明星電子樂團 M.I.M.E.O.」成員之說僅見於設計師 Heike Sperling 作品頁，facts 只寫「三人都是 M.I.M.E.O. 的成員」；Lehn 小傳也將 MIMEO 列為其長期團體（可交叉）。
+
+## 研究 d 組
+- **19911**　moodGuess 存疑（建議汰換候選）：Nmperign《Nmperign》——維基稱該團首作為「安靜抽象的即興」，本張七首含 1:39 短曲，查無樂評，判靜（留白）風險高；Tudor《Microphone》——找不到任何談聲音的來源，單面 27:30，回授尖嘯無佐證；Tudor《Neural Synthesis Nos. 6-9》——四首各約 32 分、約 2 小時，只有器材說明、無聲音描述，持續音風險；Kerbaj/Ulher/Sehnaoui《3:1》——查無樂評，Creative Sources 小組即興常有長留白。
+- **19912**　現場查核：九張 Discogs／MB 均未標 Live，亦無音樂會記事。Touch／Sidewinder 工作室合成；Neural Synthesis 班夫中心設施；Microphone 1973-05 Mills 當代音樂中心；Brt Vrt 紐約 2004-08＋Dahr el Souan 2005-01（地點性質未查，不判現場）；Döner Kebab 柏林 Studio Boerne 2017-02-28；3:1 漢堡 Ulher 公寓 2006-06-09；Solo Trumpet 2.1 柏林 Audio Cue 2016。Nmperign 錄音場合未載明，無現場證據，不標疑似現場。
+- **19913**　年份：Döner Kebab 卡單 mbNote 附的 Discogs 29535457 是 2024 CD 再版，首發 2022-03-04（Al Maslakh MSLKH 024）；Solo Trumpet 2.1 錄音 2016、出版 2019，簡介須寫明；Microphone 錄 1973、出版 1978；Neural Synthesis 錄音年 Discogs 1993 與 Warthman 文章（1994）不一致，簡介避免寫確切年。
+- **19914**　策展層「預置吉他」（3:1）：Discogs 登記 Sehnaoui 為 Acoustic Guitar，facts 只寫吉他。
+- **19915**　來源受限：Discogs 網頁、AllMusic、RYM、davidtudor.org 作品頁（Microphone 無頁）被擋或不存在；WebSearch 3 次用於 Nmperign／Subotnick，Subotnick 兩張聲音面只有 New Music USA 個人文章（且 Touch／Sidewinder 段落混淆，時間與四聲道數字不採）。status：full 4（Touch、Sidewinder、Brt Vrt、Döner Kebab、Solo Trumpet 之聲音皆為單一來源）／thin 4，詳見各卡 notes。
+- **19916**　未推翻策展層的身分、年份、廠牌；僅修正「預置吉他」與標示 Nmperign／Microphone／Neural Synthesis／3:1 聲音面無法證實。
+
+## 主線：研究後汰換（不佔條號）
+- 研究層聲音與 moodGuess 不符，直接汰 19（卡單、研究稿、`pick.json` 同步移除，45 → 26）：
+  - 有鼓／拍子推進（判重或判暖）：Voice Crack《Earflash》（Knut Remond 大鼓＋Dr. Rhythm 鼓機）、Poire_z（Müller 打擊、穩定節奏推進）、Konk Pack《Warp Out》（鼓組、「沉重搖擺」「過載」）、Okkyung Lee《Nihm》（Hollenbeck／Barnes 鼓、鋼琴豎琴單簧管，Tzadik 稱細膩組曲）。
+  - 判靜（安靜／留白／持續音／催眠）：Voice Crack《Shock_Late》（Discogs 標 Ambient）、Otomo & Voice Crack《Bits, Bots and Signs》（輕脈動低鳴、稀疏易碎）、中村としまる & Butcher《Dusted Machinery》（多半安靜低音量、催眠）、Ryu Hankil《Becoming Typewriter》（兩首共 50 分鐘鐘錶喀嗒）、Kevin Drumm 首作（早期疏朗安靜、17 分鐘長曲）、Tudor《Neural Synthesis Nos. 6-9》（四首各約 32 分鐘持續音）、Nmperign 首作（「安靜抽象的即興」）、Kerbaj/Ulher/Sehnaoui《3:1》（公寓錄音、長曲、無樂評）。
+  - 判重：Ankersmit《Figueroa Terrace》（「壓倒性強度」的回授持續音）、La Barbara《Tapesongs》（B 面 23 分鐘六顆定音鼓）。
+  - 現場：eRikm/Möslang《Stodgy》（Mikroton 寫明 2002–05 歐洲音樂會錄音）、Noetinger/Guthrie《Face Off》（2010 巡演場地錄音事後剪輯＋大音量失真段）、Parker/Lee/Evans《The Bleeding Edge》（維基標 live album）、Marchetti & Noetinger《Mort aux vaches》（VPRO 電台錄音室現場系列）。
+  - 無資料：Voice Crack《Taken and Changed》（只有數位版、查無錄音資訊、Discogs 標 Illbient）。
+- 研究推翻照研究稿：Tétreault《La nuit où j'ai dit non》年份 1998 → **1997**（Discogs 比利時 Audioview AUDIO 003 原版；MB 1998 為後登）；《3:1》預置吉他實為原聲吉他（已汰）；《Döner Kebab》首發 2022-03-04（卡單 Discogs 號為 2024 再版）。Lehn/Schmickler《Bart》MB 2001／Discogs 2000（錄音 2000-08）、《Thermal》MB／Discogs 2001（版權年 2003），卡年照 MB，正文只寫錄音年。
+- 留下但存疑、交評分裁定：Tudor《Microphone》（回授尖嘯無佐證）、《Döner Kebab》（長曲、動態）、《East of Where?》（兩首 16–19 分鐘）、Vlan_Voilà／Lux Payllettes／Thermal（聲音無來源）、Peter Evans 兩張與 Noetinger 兩張（thin）。
+- qa-batch research：26 張 key 一致、全過。
