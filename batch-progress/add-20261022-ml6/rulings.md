@@ -87,3 +87,11 @@
   - Barry White《Put Me in Your Mix》：「於 1991 年 10 月 8 日釋出復出後第三張，北美也由該廠發行」→「1991 年 10 月 8 日在北美推出復出後的第三張」（語序；研究稿 d 組：北美 A&M 10 月 8 日、復出第三張）。
   - Gerald Levert《Groove On》：「這已是他第二次有單曲做到這一步」→「這是他第二支跨界打進前 40 名的單曲」（指代不清；研究稿 d 組：第二支跨界前 40 名單曲）。
 - **14476**：Keith Washington「樂評指出他多數歌用顫音演唱」由寫作層改直述，維持（單一樂評描述的是唱法，不是評價）。Billboard 200／專輯榜名次照前例保留（銷售榜不是媒體年終榜）。全文無「據說／據傳」、無媒體名。
+
+## 上線與評分（2026-10-23，主線）
+- **14477**：上線 40 張：card_catalog 40／40、KV 40 鍵回讀逐字一致、試聽 36 ready／4 unavailable（Love Unlimited《Under the Influence of…》、Tom Brock、Dells《Love Is Blue》、Ray, Goodman & Brown《II》Apple 查無原盤）、seed +40、published gate 0 error。封面 live-check 40／40 200；Ray, Goodman & Brown《II》Discogs 圖已入 `data/discogs-cover-registry.json`。上線前對 origin 49 個分支的 seed 去重 0 撞。
+- **14478**：類型樹 40／40 落位（`genre-l3-artist-map.json` 補 Will Downing、Lalah Hathaway → soul/classic-rnb/smooth；Tom Brock、Gloria Scott → soul/classic-rnb）。
+- **14479**：**落格率 38/40＝95%**（`batch-progress/mood-axes/score-ml6/`）。出格 2 張全是 Jon Lucien（《Rashida》y +0.3、《Mind's Eye》y +0.4，巴西味爵士靈魂、原聲通透判輕落放鬆）——和 ml2 的原聲吉他反例同型：爵士／bossa 成分重的靈魂歌手不收。貼邊：Barry White《Is This Whatcha Wont?》x 2.9、Will Downing《Moods》與 Minnie Riperton y 0.5。八格：恍惚 891 → 929。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Sweetback、Will Downing、Love Unlimited、Tom Brock、David Porter、Jon Lucien、Lalah Hathaway、Regina Belle、Miki Howard、Freddie Jackson、Gerald Levert、Keith Washington、Gloria Scott、Peabo Bryson（14 位；其餘藝人已有介紹或已在排隊）。

@@ -61,3 +61,14 @@
 - **17428** Grouper《Grouper》(2005)：thin。自發行 CD-R、限量，碟上無曲名（曲名由 Volcanic Tongue 郵購提供）；聲音面僅 Discogs 標籤（Drone／Ethereal）與維基總述。
 - **17429** Midwife《Like Author, Like Daughter》：full。**moodGuess 存疑（鼓稀慢）**：無來源說有無鼓；Bandcamp 原始發行日 6/12、MB 6/16，年份 2017 無誤。
 - **17430** 研究限制：WebSearch 3 次用於 Sight Below、Midwife（結果無關）、Final《3》；Pitchfork／AllMusic／Discogs 頁面不可抓，改用 Discogs／MB API、Bandcamp、維基。6 張因缺一手樂評標 thin。
+
+## 研究 e 組
+- **17441** Esben and the Witch《Violet Cries》：卡單 label「High Note Records」是 MB 列的臺灣版（2011-01-28，HH827CD）；原始發行 Matador（英國 2011-01-31 OLE-939、美國 02-08），建議卡面改 Matador。有真人鼓與打擊但不搶，樂評稱 drowsy／冷冽吉他，相容 moodGuess，x 邊距風險仍在。
+- **17442** Gazelle Twin《The Entire City》：聲音證據只剩 Discogs 風格（Darkwave／Ethereal／Ambient）、曲長與 NME 一句，無任何來源講拍子與速度，標 moodGuess 存疑（慢拍）；status thin。Anti-Ghost Moon Ray 為其自家廠牌，正確。
+- **17443** Circuit des Yeux《-io》：樂評明指〈Vanishing〉轟鼓開場、〈Dogma〉節奏驅動、24 人管弦幾乎貫穿，推翻預估『鼓稀』，標 moodGuess 存疑（鼓、x），中風險；寫作層不寫無鼓。
+- **17444** Circuit des Yeux《Overdue》：人員表列三位鼓手、三位鼓機操作、合成器與回授噪音，風格含 Punk、Folk，推翻『鼓稀、低傳真 drone』，建議列汰換候選（高風險）。label 補充：CD 版 Ba Da Bing!（BING092）＋L&L，最初 LP 為無廠牌自發行；年份 2013 無誤。status thin（無評論）。
+- **17445** Tropic of Cancer《Restless Idylls》：XLR8R 證實單調鼓機馬達＋drone 吉他霧，兩首改木質滾鼓；與 moodGuess 相符，速度無來源。Discogs：2011–2013 洛杉磯 Sunken City 錄製、Regis（Karl O'Connor）掛 Producer [Studio]。
+- **17446／17447** Zelienople《His/Hers》《The World Is a House on Fire》：無可抓評論（WebSearch 被賓州同名小鎮淹沒），僅 Discogs 風格（Folk Rock／Psychedelic／Experimental）與編制；有專職打擊手，冷暖與失真無證據，標 moodGuess 存疑（shoegaze／霧／冷），status thin，中風險。團名由來不寫。
+- **17448** Dirty Beaches《Stateless》：人員表只有次中音薩克斯風、合成器、中提琴，無鼓，與預估相符；Discogs 曲名〈Time Washes Away Everything〉（維基寫法不同），寫作層用 Discogs 版。Last Lizard 後續生平不寫。
+- **17449** Cindytalk《Hold Everything Dear》：廠方文案講鋼琴、現場錄音、近乎無聲的抽象配樂，不是持續 drone；無鼓、靜相符，y 重有風險，標 moodGuess 存疑（電子 drone），中風險。署名用 Cindy Sharp／Cinder，Kinnison 為共同作者（2008 辭世，專輯獻給他）。
+- **17450** 研究限制：WebSearch 3 次用盡（Tropic、Zelienople、Circuit des Yeux 各一）；Pitchfork／BBC／Guardian／Discogs 網頁 403，Discogs 改走 API。
