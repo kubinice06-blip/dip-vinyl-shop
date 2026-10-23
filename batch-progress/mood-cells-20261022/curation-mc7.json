@@ -4,7 +4,7 @@
   {
    "id": "minimal-techno",
    "zh": "minimal techno／click 快而薄",
-   "count": 26,
+   "count": 41,
    "why": "M_nus、Max Ernst、Force Inc.、Raster-Noton 一路：乾四拍、click、聲部稀、機械冷"
   },
   {
@@ -998,13 +998,446 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "音色明亮，z 可能貼邊"
+  },
+  {
+   "artist": "Robert Hood",
+   "album": "Paradygm Shift",
+   "year": 2017,
+   "label": "Dekmantel",
+   "country": "nl",
+   "faction": "minimal-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Robert Hood 的 Dekmantel 專輯，minimal techno 祖師晚期快盤；乾四拍、單一循環、機械冷（池中同人 y 0.2–0.5 落冷冽）",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 0.2,
+    "z": -1.1,
+    "why": "乾硬極簡四拍循環，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7d88a84b-516e-4ad4-bb72-a27556cc8310",
+    "https://coverartarchive.org/release-group/7d88a84b-516e-4ad4-bb72-a27556cc8310/front"
+   ],
+   "mbRgMbid": "7d88a84b-516e-4ad4-bb72-a27556cc8310",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "技術上屬 Hood 常規厚度，y 可能 0.3–0.4"
+  },
+  {
+   "artist": "Robert Hood",
+   "album": "Omega: Alive",
+   "year": 2011,
+   "label": "M-Plant",
+   "country": "us",
+   "faction": "minimal-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Hood《Omega》的延伸重製盤，連續極簡 techno；快、薄、冷",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 0.2,
+    "z": -1.2,
+    "why": "極簡循環連續推進，乾冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5f35cc94-c5f4-400d-aba2-1d2a8648dd43",
+    "https://www.discogs.com/release/2965712"
+   ],
+   "mbRgMbid": "5f35cc94-c5f4-400d-aba2-1d2a8648dd43",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 標 Mixed CD；若主線視為混音盤可汰"
+  },
+  {
+   "artist": "Robert Hood",
+   "album": "Hoodlum",
+   "year": 1998,
+   "label": "Drama",
+   "country": "us",
+   "faction": "minimal-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Robert Hood 1998 年 9 軌長篇（Drama），Minimal Nation 時期乾瘦一路；快、薄、冷",
+   "moodGuess": {
+    "x": 4,
+    "y": 0.1,
+    "z": -1.2,
+    "why": "極瘦鼓機循環，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e9ae1b3d-dc37-4a27-954e-263adea58378",
+    "https://coverartarchive.org/release-group/e9ae1b3d-dc37-4a27-954e-263adea58378/front",
+    "https://www.discogs.com/release/44156"
+   ],
+   "mbRgMbid": "e9ae1b3d-dc37-4a27-954e-263adea58378",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "格式為 2×12 吋，9 軌；若主線視為 EP 可汰"
+  },
+  {
+   "artist": "Jeff Mills",
+   "album": "From the 21st",
+   "year": 1999,
+   "label": "SMEJ Associated Records",
+   "country": "jp",
+   "faction": "minimal-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Jeff Mills 1999 年 Axis 長篇，招牌循環 techno；快、密、機械冷",
+   "moodGuess": {
+    "x": 4.1,
+    "y": 0.2,
+    "z": -1.1,
+    "why": "快速循環 techno，打擊乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3224456c-6766-3485-9c74-6ed8c29d004c",
+    "https://coverartarchive.org/release-group/3224456c-6766-3485-9c74-6ed8c29d004c/front",
+    "https://www.discogs.com/release/65466"
+   ],
+   "mbRgMbid": "3224456c-6766-3485-9c74-6ed8c29d004c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "首發日本盤；Mills 快盤 y 可能判 0.3–0.4"
+  },
+  {
+   "artist": "Jeff Mills",
+   "album": "Cycle 30",
+   "year": 1994,
+   "label": "Axis",
+   "country": "us",
+   "faction": "minimal-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Jeff Mills 1994 年 Axis 專輯，極簡循環 techno 原型期；快、薄、冷",
+   "moodGuess": {
+    "x": 4.2,
+    "y": 0.2,
+    "z": -1.2,
+    "why": "高速 909 循環，乾冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1d369fe8-1bda-3092-b0d9-47b39a43d711",
+    "https://coverartarchive.org/release-group/1d369fe8-1bda-3092-b0d9-47b39a43d711/front",
+    "https://www.discogs.com/master/5880"
+   ],
+   "mbRgMbid": "1d369fe8-1bda-3092-b0d9-47b39a43d711",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "早期 Axis 盤可能偏硬，y 風險"
+  },
+  {
+   "artist": "Jeff Mills",
+   "album": "The Power",
+   "year": 2011,
+   "label": "Axis",
+   "country": "us",
+   "faction": "minimal-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Jeff Mills 2011 年 Axis 概念盤（非配樂），techno 主體；機械脈動、冷",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.2,
+    "z": -1.4,
+    "why": "科幻概念 techno，脈動冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a526ad56-8846-43f3-8ae4-e569e172579a",
+    "https://coverartarchive.org/release-group/a526ad56-8846-43f3-8ae4-e569e172579a/front",
+    "https://www.discogs.com/release/2809048"
+   ],
+   "mbRgMbid": "a526ad56-8846-43f3-8ae4-e569e172579a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "穿插氛圍段落，x 可能 3.3"
+  },
+  {
+   "artist": "Jeff Mills",
+   "album": "Chronicles of Possible Worlds",
+   "year": 2014,
+   "label": "Axis",
+   "country": "us",
+   "faction": "minimal-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Jeff Mills 2014 年 Axis 概念專輯，快拍 techno 為主；薄、冷",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.2,
+    "z": -1.2,
+    "why": "概念 techno 脈動，冷合成器"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fc281f1c-ae44-4596-a5f5-1d388e869f13",
+    "https://coverartarchive.org/release-group/fc281f1c-ae44-4596-a5f5-1d388e869f13/front",
+    "https://www.discogs.com/release/5276266"
+   ],
+   "mbRgMbid": "fc281f1c-ae44-4596-a5f5-1d388e869f13",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "穿插氛圍段落，x 可能 3.3"
+  },
+  {
+   "artist": "Jeff Mills",
+   "album": "The Jungle Planet",
+   "year": 2013,
+   "label": "Axis",
+   "country": "us",
+   "faction": "minimal-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Jeff Mills 2013 年 Axis 專輯，打擊密集的科幻 techno；快、冷",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0.2,
+    "z": -0.9,
+    "why": "快拍 techno、打擊密，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1a4cbdcd-3851-4483-a8cd-e05012ea05d5",
+    "https://coverartarchive.org/release-group/1a4cbdcd-3851-4483-a8cd-e05012ea05d5/front",
+    "https://www.discogs.com/release/4905984"
+   ],
+   "mbRgMbid": "1a4cbdcd-3851-4483-a8cd-e05012ea05d5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "打擊多，z 可能偏中性"
+  },
+  {
+   "artist": "Damon Wild",
+   "album": "Colortheory",
+   "year": 2001,
+   "label": "Music Man Records",
+   "country": "be",
+   "faction": "minimal-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Damon Wild（Synewave）的 Music Man 專輯，紐約循環 techno 乾瘦一路；快、冷",
+   "moodGuess": {
+    "x": 4,
+    "y": 0.2,
+    "z": -0.9,
+    "why": "快速循環 techno，乾打擊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b4b464b9-6b71-3864-a273-74796d0d566f",
+    "https://coverartarchive.org/release-group/b4b464b9-6b71-3864-a273-74796d0d566f/front",
+    "https://www.discogs.com/master/93520"
+   ],
+   "mbRgMbid": "b4b464b9-6b71-3864-a273-74796d0d566f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Synewave 系偶有硬盤，y 留意"
+  },
+  {
+   "artist": "Oliver Ho",
+   "album": "Prima Materia",
+   "year": 1999,
+   "label": "Meta Records",
+   "country": "gb",
+   "faction": "minimal-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Oliver Ho 的 Meta 專輯，英國打擊循環 techno；乾、快、冷",
+   "moodGuess": {
+    "x": 4,
+    "y": 0.2,
+    "z": -0.8,
+    "why": "打擊循環 techno，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2ee664c6-88c1-328f-a525-47365df3ef57",
+    "https://www.discogs.com/master/1974"
+   ],
+   "mbRgMbid": "2ee664c6-88c1-328f-a525-47365df3ef57",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "打擊部族味，z 可能偏中性"
+  },
+  {
+   "artist": "Oliver Ho",
+   "album": "Universal",
+   "year": 2001,
+   "label": "Meta Records",
+   "country": "gb",
+   "faction": "minimal-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Oliver Ho 2001 年 Meta 專輯，打擊主導的極簡 techno；薄、快",
+   "moodGuess": {
+    "x": 4,
+    "y": 0.1,
+    "z": -0.6,
+    "why": "部族打擊循環，薄而乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cbb069b8-bde6-42d3-bd65-72b3b0c945b6",
+    "https://coverartarchive.org/release-group/cbb069b8-bde6-42d3-bd65-72b3b0c945b6/front",
+    "https://www.discogs.com/release/69253"
+   ],
+   "mbRgMbid": "cbb069b8-bde6-42d3-bd65-72b3b0c945b6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部族打擊，z 可能判中性"
+  },
+  {
+   "artist": "Pacou",
+   "album": "Symbolic Language",
+   "year": 1997,
+   "label": "Tresor",
+   "country": "de",
+   "faction": "minimal-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Pacou 的 Tresor 首張，90 年代柏林極簡 techno；快、乾、機械",
+   "moodGuess": {
+    "x": 4,
+    "y": 0.2,
+    "z": -1,
+    "why": "柏林極簡四拍，乾冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a8dc4ff2-11c9-32ae-bf17-d7d387403c8d",
+    "https://coverartarchive.org/release-group/a8dc4ff2-11c9-32ae-bf17-d7d387403c8d/front",
+    "https://www.discogs.com/master/56886"
+   ],
+   "mbRgMbid": "a8dc4ff2-11c9-32ae-bf17-d7d387403c8d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Tresor 盤可能偏硬，y 留意"
+  },
+  {
+   "artist": "Pacou",
+   "album": "No Computer Involved",
+   "year": 1998,
+   "label": "Tresor",
+   "country": "de",
+   "faction": "minimal-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Pacou 1998 年 Tresor 專輯，全類比硬體極簡 techno；快、薄、冷",
+   "moodGuess": {
+    "x": 4,
+    "y": 0.2,
+    "z": -0.9,
+    "why": "類比硬體循環，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dbef94de-319a-3e30-a707-d98a8ad8d22b",
+    "https://coverartarchive.org/release-group/dbef94de-319a-3e30-a707-d98a8ad8d22b/front",
+    "https://www.discogs.com/master/56903"
+   ],
+   "mbRgMbid": "dbef94de-319a-3e30-a707-d98a8ad8d22b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Tresor 盤可能偏硬，y 留意"
+  },
+  {
+   "artist": "TV Victor",
+   "album": "Timeless Deceleration",
+   "year": 2000,
+   "label": "Tresor",
+   "country": "de",
+   "faction": "minimal-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "TV Victor（Tresor 2000），極簡 techno 的實驗一端；薄、乾、冷",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.2,
+    "z": -1,
+    "why": "極簡脈動、稀疏電子，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fb1b0277-5c14-33f8-8d15-1eefcf6e5d34",
+    "https://coverartarchive.org/release-group/fb1b0277-5c14-33f8-8d15-1eefcf6e5d34/front",
+    "https://www.discogs.com/release/786"
+   ],
+   "mbRgMbid": "fb1b0277-5c14-33f8-8d15-1eefcf6e5d34",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏實驗，x 可能貼 3.3"
+  },
+  {
+   "artist": "Kit Clayton",
+   "album": "Repetition and Nonsense",
+   "year": 1999,
+   "label": "Drop Beat Records",
+   "country": "us",
+   "faction": "minimal-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Kit Clayton（Drop Beat）的 click／極簡 techno 專輯；乾、薄、冷",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.1,
+    "z": -0.8,
+    "why": "click 極簡循環，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c9b23eb0-c571-3258-aa48-14b238206e25",
+    "https://coverartarchive.org/release-group/c9b23eb0-c571-3258-aa48-14b238206e25/front",
+    "https://www.discogs.com/master/60879"
+   ],
+   "mbRgMbid": "c9b23eb0-c571-3258-aa48-14b238206e25",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Clayton 他盤偏 dub，y 與 x 都要留意"
   }
  ],
  "notes": [
   "主場景池中核心已收：Robert Hood 8 張（y 0.2–0.6）、Jeff Mills 10+ 張、Monolake 11 張（y 0.4–1.3）、Richie Hawtin、Plastikman 系、Alva Noto／Ryoji Ikeda 主要盤、Autechre 早期、Plaid（判暖）、Arovane（判靜）均已在池或不合格，故不再提。",
-  "Monolake 池中 y 全 ≥0.4、Hood 普遍 0.4，依規則不提；Jeff Mills 未在池的多為概念／配樂盤，x 貼 3.0–3.3，不提。",
   "池中錨：Frank Bretschneider《Rhythm》3.4/−0.7/−1.5、Objekt《Flatland》3.9/+0.8（清晰的 techno 也會判重）→ 只挑 click／乾瘦一路。",
   "汰除：Thomas Brinkmann《Klick Revolution》（找不到封面）、Geoff White & Stewart Walker《Discord》（合作盤、聲音不確定）、Brandt Brauer Frick Ensemble《Mr. Machine》（x、z 都貼邊）、Richard Devine《Asect:Dsect》（太密，y 風險）、Lorenzo Senni《Scacco matto》（trance 琶音可能判暖）、Byetone／Kangding Ray（失真判重）、Sleeparchive（MB 無正規專輯）、Riow Arai（池中判重）。",
-  "場景挖不到 54 張，照實交 34 張。去重：seed_cards.json 與 origin 42 個 claude/* 分支 seed 全部 0 撞。"
+  "第二輪（主線放寬：同藝人池中 y≤0.4、x≥3.4、z≤−0.5 的，其不在池快盤可提，moodGuess y≤0.2）：追加 15 張——Robert Hood 3、Jeff Mills 5（非配樂快盤）、Damon Wild、Oliver Ho 2、Pacou 2、TV Victor、Kit Clayton。Monolake／Plastikman／Basic Channel／Surgeon 系仍不提；Nighttime World 系不提。",
+  "第二輪汰除：Robert Hood《Variations》（與 Femi Kuti 合作的 afrobeat，判暖）、Circuit Breaker 兩張（MB 該條目是邁阿密 bass 同名藝人，非 Hawtin 化名，身分不符）、Steve Bicknell（只有合輯）、Daniel Bell／Zip／Dimbiman（MB 無正規專輯）、Wolfgang Voigt／Mike Ink（MB 專輯皆 ambient 或 acid 再版，無乾四拍專輯）、Moveable Parts（12 吋系列）。",
+  "總計 49 張（目標 54，照實交）。去重：seed_cards.json 與 origin 42 個 claude/* 分支 seed 全部 0 撞。"
  ]
 }
