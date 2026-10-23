@@ -4,13 +4,13 @@
   {
    "id": "cloud-rap",
    "zh": "cloud rap 冷盤",
-   "count": 13,
+   "count": 14,
    "why": "主場景核心：Sad Boys／Drain Gang／Goth Money／TeamSESH／G*59 的慵懶霧冷盤"
   },
   {
    "id": "sad-rap",
    "zh": "sad rap／emo rap 冷盤",
-   "count": 9,
+   "count": 11,
    "why": "主場景：GothBoiClique 與 emo rap、暗 R&B 化的 sad rap"
   },
   {
@@ -22,13 +22,13 @@
   {
    "id": "abstract-cold",
    "zh": "冷的抽象嘻哈（有饒舌）",
-   "count": 4,
+   "count": 5,
    "why": "主場景延伸：冷的抽象嘻哈，同藝人池中落頹靡"
   },
   {
    "id": "beat-tape",
    "zh": "暗色 beat tape／器樂抽象嘻哈（擴寫 md24）",
-   "count": 13,
+   "count": 14,
    "why": "擴寫場景 md24：器樂嘻哈冷盤，同藝人或同廠牌先例落頹靡"
   },
   {
@@ -1419,6 +1419,177 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": ""
+  },
+  {
+   "artist": "Kid Cudi",
+   "album": "Man on the Moon II: The Legend of Mr. Rager",
+   "year": 2010,
+   "label": "Dream On／GOOD Music／Universal Motown",
+   "country": "us",
+   "faction": "sad-rap",
+   "genres": [
+    "hiphop",
+    "rock"
+   ],
+   "why": "池中 Cudi 四張全落頹靡；本張維基彙整樂評：「eerie, supernatural production」「minimalist beats, somber strings, woozy synths, ghostly samples」、Sputnik「beats are slower… claustrophobic」",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.2,
+    "z": -1,
+    "why": "極簡慢拍、陰沉弦樂、迷濛合成器、失真吉他，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b7717649-9d68-4665-aa4a-6f4ba7b7e0ea",
+    "https://coverartarchive.org/release-group/b7717649-9d68-4665-aa4a-6f4ba7b7e0ea/front",
+    "https://en.wikipedia.org/wiki/Man_on_the_Moon_II:_The_Legend_of_Mr._Rager"
+   ],
+   "soundSources": [
+    "https://en.wikipedia.org/wiki/Man_on_the_Moon_II:_The_Legend_of_Mr._Rager"
+   ],
+   "mbRgMbid": "b7717649-9d68-4665-aa4a-6f4ba7b7e0ea",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "含幾首搖滾化曲（Erase Me），x 可能 2.6–2.8；池中前作 x 2.8",
+   "round": 2
+  },
+  {
+   "artist": "billy woods",
+   "album": "Dour Candy",
+   "year": 2013,
+   "label": "Backwoodz Studioz",
+   "country": "us",
+   "faction": "abstract-cold",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "池中 woods 九張全落頹靡（含同為 Blockhead 製作的 Known Unknowns 2.7/1.2/−0.6）；The Needle Drop：「crying guitar looped over hollow sampled drums… post-apocalyptic」，樂迷評「calmer」",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "空心取樣鼓、哭泣吉他迴圈、低調，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/586132ff-b792-4347-8d66-ea52f8dda7bf",
+    "https://coverartarchive.org/release-group/586132ff-b792-4347-8d66-ea52f8dda7bf/front",
+    "https://www.theneedledrop.com/articles/tag/dour+candy",
+    "https://www.albumoftheyear.org/album/8982-billy-woods-dour-candy.php"
+   ],
+   "soundSources": [
+    "https://www.theneedledrop.com/articles/tag/dour+candy",
+    "https://www.albumoftheyear.org/album/8982-billy-woods-dour-candy.php"
+   ],
+   "mbRgMbid": "586132ff-b792-4347-8d66-ea52f8dda7bf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Blockhead 取樣有時偏暖（Blockhead 自己的器樂盤池中落恍惚），z 留意",
+   "round": 2
+  },
+  {
+   "artist": "Yung Lean",
+   "album": "Frost God",
+   "year": 2016,
+   "label": "YEAR0001",
+   "country": "se",
+   "faction": "cloud-rap",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "池中 Yung Lean 四張落頹靡；The Observer（維基引）：「chilly synths and affectless monotone in torpid, ever-decreasing circles without even the sparks of energy」of Warlord",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": -1.1,
+    "why": "遲緩慢拍、冰冷合成器、無起伏，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/59a0b416-b47c-40da-af0c-b5ec96da5580",
+    "https://coverartarchive.org/release-group/59a0b416-b47c-40da-af0c-b5ec96da5580/front",
+    "https://en.wikipedia.org/wiki/Frost_God"
+   ],
+   "soundSources": [
+    "https://en.wikipedia.org/wiki/Frost_God"
+   ],
+   "mbRgMbid": "59a0b416-b47c-40da-af0c-b5ec96da5580",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "mixtape，8 首 25 分，篇幅短",
+   "round": 2
+  },
+  {
+   "artist": "Blue Sky Black Death & Alexander Chen",
+   "album": "Third Party",
+   "year": 2010,
+   "label": "Fake Four Inc.",
+   "country": "us",
+   "faction": "beat-tape",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "池中 BSBD 落頹靡；AllMusic（維基引）：「the singing is cold and lackluster」「’80s synth pop with the turntable set at too low a speed… weird and dreamy」",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": -0.7,
+    "why": "放慢的 80 年代合成器、夢幻霧、冷淡人聲，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9287b8c2-7fcd-42e4-88f7-48dde233f138",
+    "https://coverartarchive.org/release-group/9287b8c2-7fcd-42e4-88f7-48dde233f138/front",
+    "https://en.wikipedia.org/wiki/Third_Party_(album)"
+   ],
+   "soundSources": [
+    "https://en.wikipedia.org/wiki/Third_Party_(album)"
+   ],
+   "mbRgMbid": "9287b8c2-7fcd-42e4-88f7-48dde233f138",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Blue Sky Black Death",
+   "uncertain": "與 Boy in Static 的 Alexander Chen 合作，聲音偏慢速 synth-pop，genre 第二格可考慮 pop",
+   "round": 2
+  },
+  {
+   "artist": "Lil Peep",
+   "album": "LIVE FOREVER",
+   "year": 2015,
+   "label": "Death Note Music, LLC",
+   "country": "us",
+   "faction": "sad-rap",
+   "genres": [
+    "hiphop",
+    "rock"
+   ],
+   "why": "池中 Peep 三張全落頹靡；Sputnikmusic 評：「brooding atmosphere… like being clouded/surrounded by fog」，emo 吉他 trap",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": -0.9,
+    "why": "慢 trap 拍＋吉他取樣、霧般陰鬱，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ac4a66dc-e8d6-4a49-9f2f-586b96913028",
+    "https://coverartarchive.org/release-group/ac4a66dc-e8d6-4a49-9f2f-586b96913028/front",
+    "https://www.sputnikmusic.com/review/79720/Lil-Peep-Live-Forever"
+   ],
+   "soundSources": [
+    "https://www.sputnikmusic.com/review/79720/Lil-Peep-Live-Forever"
+   ],
+   "mbRgMbid": "ac4a66dc-e8d6-4a49-9f2f-586b96913028",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "mixtape 10 首僅 20 分，篇幅接近 EP；〈haunt u〉較亮",
+   "round": 2
   }
  ],
  "notes": [
@@ -1427,6 +1598,7 @@
   "不提的理由：Ka 池中 y 0.5–0.7（乾、無鼓）落頹靡但貼邊、其他盤不提；Clams Casino 池中 z −0.3～−0.4 貼邊，Instrumentals 3／4、Moon Trip Radio 不提；Ecco2k 池中判輕；Dälek、Cannibal Ox、Techno Animal、El-P、Themselves、Spaceghostpurrp（x 2.7）兇／貼邊；英國 drill（Headie One、Digga D、Central Cee）池中全落亢奮，慢 drill 冷盤挖不到。",
   "撞池／他組已提（去重 ≠0 或在他組）：Tha Blue Herb《Stilling, Still Dreaming》、Kondo × Krush《記憶 Ki-Oku》、DJ Vadim《U.S.S.R. Repertoire》、DJ Spooky《Songs of a Dead Dreamer》已在池；DJ Krush《Butterfly Effect》在 md9 候補，不重提。",
   "暖的、soul 取樣的（Knxwledge、Ras G、Madlib、Blockhead、Navy Blue、MIKE、Roc Marciano 暖盤）歸 ml16，不提。",
-  "BONES、Black Kray、Telephone Jim Jesus 屬冷門地下，研究層可能找不到聲音來源（md4 BONES《Powder》即因此汰除），已在 uncertain 標示。"
+  "BONES、Black Kray、Telephone Jim Jesus 屬冷門地下，研究層可能找不到聲音來源（md4 BONES《Powder》即因此汰除），已在 uncertain 標示。",
+  "第二輪（主線回饋後追加 5 張，標 round:2）：條件為每張至少一個談聲音的來源（soundSources 欄），且池中同藝人已落頹靡。挖不到 12 張——Pitchfork 無法抓取、WebSearch 6 次已用完；試過但不收：Boldy James《Manger on McNichols》（live jazz 樂隊，偏暖）、《Super Tecmo Bo》（樂評稱 soulful）、Visionist《Safe》（有 ballistic／militant 曲，x、y 有風險）、DJ Krush《Saisei》（lush、trap／IDM 拍，x 有風險）、Yung Lean《Starz》（bangers 與 slow-burn 混雜）、Bladee《Exeter》（夢幻偏亮）、PNL《Que la famille》（法文維基稱 EP、無聲音來源）、Armand Hammer《Half Measures》（無聲音來源）。"
  ]
 }
