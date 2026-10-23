@@ -6,11 +6,20 @@
 - **策展→研究汰換**：ml50 策展兩輪 61、主線汰 11（含 2026 新盤 4）、研究汰 28（陰鬱字眼、有拍、原聲稀疏、reggae 輕快無 dub 證據）→ 22；第二輪要求每張先附 warm 原句，研究只再汰 3。md27 策展兩輪 47（第二輪 0）、主線汰 1、研究汰 31（Penderecki 合唱慢作、Dystopia、Bára《Orchestral Works》等尖叫爆發判躁；清澈聖樂、comforting 判暖輕；聲音零來源）→ 15。新工具 `batch-progress/mood-cells-20261022/pool-axes.mjs`（查池中同人三軸與落格）。
 - **主線審稿**：ml50 改 1 處（Set in Stone hook 拿掉雷鬼榜週數、第二句去複述，hooks／input／out 同步）；md27 改 1 處（Saor 語序，Union Chapel／Forgue Kirk 不再混指）；md27 鉤子 d 組兩則 hook 避既有批 4-gram 改寫。
 - **上線**：card_catalog 22＋15、KV 22＋15 鍵回讀逐字一致、試聽 21＋13 ready（人工配 7；Shulman、Scelsi ×2 無 Apple）、seed +37、published gate 兩批 0 error；封面 CAA 36、Apple 1（Saor），目視相符。上線前對 origin 各 `claude/*` 分支 seed 與 md28／ml51／ml52／mc39 卡單去重 0 撞。
-- **情緒評分**：`score-ml50`、`score-md27`。**ml50 落恍惚 21/22（95%）**（Cordero & Rhucle 判輕落放鬆）、**md27 落頹靡 13/15（87%）**（Scelsi《Hurqualia》、Ben Frost《Broken Spectre》判躁落暴躁）。八格：恍惚 1,482、頹靡 1,446、冷冽 1,445。
+- **情緒評分**：`score-ml50`、`score-md27`。**ml50 落恍惚 21/22（95%）**（Cordero & Rhucle 判輕落放鬆）、**md27 落頹靡 13/15（87%）**（Scelsi《Hurqualia》、Ben Frost《Broken Spectre》判躁落暴躁）。八格（併 main 後）：恍惚 1,507、頹靡 1,446、冷冽 1,469。
 - **類型樹**：`genre-l3-artist-map.json` 補 electronic/ambient/drone 3、world/reggae/dub 1，重建後 37/37 落位；抽卡封面重建。
 - **藝人介紹**：未切（並行規矩）；新藝人 31 個掛名列在兩批 rulings.md 末尾。ml50、md27 場景見底，不再派。
 - **主要檔案**：`batch-progress/add-20261023-{ml50,md27}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml50,md27}.json`、`pool-axes.mjs`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml50,md27}/`、`onboarding-manifest-add-20261023-{ml50,md27}-20261023.json`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/mood/*`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`、`genre-l3-artist-map.json`。
 - **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 37/37；build-card-moods 錨點 104/104。
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 11 輪 ml52／mc39：2000s slow jam 27 張、管樂獨奏／二重奏 28 張上線，落格 25/27、24/28
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 11 輪，本工作階段負責 ml52、mc39（評分照 10-23 體感標準）。ml52（`add-20261023-ml52`，恍惚）：Jaheim ×2、Carl Thomas、Dave Hollister、Anthony Hamilton ×4、Tank、Case、Gerald Levert ×3、Isley Brothers ×2、Silk ×2、Kenny Lattimore、Freddie Jackson、Phil Perry、Angie Stone、Chanté Moore、Vivian Green、Kelly Price、Keke Wyatt、Syleena Johnson、Marsha Ambrosius。mc39（`add-20261023-mc39`，冷冽）：Braxton ×2、Stevens & Parker ×3、Parker & Guy ×2、Parker 與 Rothenberg／Shipp／McPhee 二重奏、Roscoe Mitchell《L-R-G》、Brötzmann 獨奏 ×3、Butcher 二重奏 ×2、Gustafsson ×3、Rothenberg ×5、Perelman 二重奏 ×3、Wolfgang Fuchs。
+- **策展→研究汰換**：ml52 策展 54、主線挑 45、研究汰 20（hip-hop 硬拍取樣／饒舌客串、舞曲、smooth jazz、陰冷、身分）、補 4 再汰 2 → 27；mc39 策展 54、主線挑 45、研究汰 17（現場、留白冥想、疊錄／低音管厚、標準曲）→ 28。兩個主場景見底，不再派。
+- **主線審稿**：ml52 改 2 處（Chanté Moore 單源評價句刪、Angie Stone 撞 hook 4-gram 改寫）；mc39 改 1 處（Light's View hook 撞 Monkey Puzzle，hooks／input／out 同步）。
+- **上線**：card_catalog 27＋28、KV 27＋28 鍵回讀逐字一致、試聽 25＋8 ready（人工配 6）、seed +55、published gate 兩批 0 error；封面 CAA 52、Discogs 3（已登錄 registry），live-check 全 200。上線前對 origin 92 個 `claude/*` 分支 seed＋卡單去重 0 撞。
+- **情緒評分**：ml52 落恍惚 25/27（93%，Lattimore《Timeless》、Phil Perry 判輕）；mc39 落冷冽 24/28（86%，Brötzmann 獨奏 ×2 判重、Butcher／Graewe 與 Rothenberg 單簧管獨奏判靜）。八格：恍惚 1,486、冷冽 1,469、頹靡 1,433。
+- **主要檔案**：`batch-progress/add-20261023-{ml52,mc39}/`、`batch-progress/mood-axes/score-{ml52,mc39}/`、`desc-tools/batches/*/add-20261023-{ml52,mc39}*`、`onboarding-manifest-add-20261023-{ml52,mc39}-20261023.json`、seed／試聽／mood／類型樹產生檔、`genre-l3-artist-map.json`、SCENES.md、HANDOFF-mood-cells-line.md。
+- **驗證**：verify-album-onboarding --published 兩批 0 error；build-card-moods 錨點 104/104 同格；新藝人 28 個掛名列在兩批 rulings 末尾（未切藝人介紹）。
 
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格線第 11 輪派工：優先序 52–58
 

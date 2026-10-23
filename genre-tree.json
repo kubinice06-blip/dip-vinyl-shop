@@ -363,7 +363,7 @@
   {
    "id": "jazz",
    "zh": "爵士",
-   "count": 4853,
+   "count": 4881,
    "children": [
     {
      "id": "bop",
@@ -405,17 +405,17 @@
     {
      "id": "free",
      "zh": "自由與前衛",
-     "count": 888,
+     "count": 916,
      "children": [
       {
        "id": "avant",
        "zh": "前衛與 New Thing",
-       "count": 473
+       "count": 489
       },
       {
        "id": "free-improv",
        "zh": "自由即興",
-       "count": 158
+       "count": 180
       },
       {
        "id": "post-bop",
@@ -435,7 +435,7 @@
       {
        "id": "euro",
        "zh": "歐陸自由爵士",
-       "count": 52
+       "count": 55
       }
      ]
     },
@@ -484,7 +484,7 @@
     {
      "id": "contemporary",
      "zh": "當代與 Nu Jazz",
-     "count": 793,
+     "count": 797,
      "children": [
       {
        "id": "nu-jazz",
@@ -504,7 +504,7 @@
       {
        "id": "free",
        "zh": "偏前衛",
-       "count": 105
+       "count": 109
       },
       {
        "id": "piano",
@@ -1004,17 +1004,64 @@
   {
    "id": "soul",
    "zh": "靈魂放克",
-   "count": 1751,
+   "count": 1778,
    "children": [
+    {
+     "id": "classic-rnb",
+     "zh": "經典 R&B / Doo-wop",
+     "count": 943,
+     "children": [
+      {
+       "id": "funk",
+       "zh": "偏 Funk",
+       "count": 452
+      },
+      {
+       "id": "neo-contemporary",
+       "zh": "Neo-Soul / 當代",
+       "count": 147
+      },
+      {
+       "id": "motown",
+       "zh": "Motown / Northern",
+       "count": 130
+      },
+      {
+       "id": "southern",
+       "zh": "Southern / Stax / Deep",
+       "count": 121
+      },
+      {
+       "id": "smooth",
+       "zh": "Smooth / Philly / Quiet Storm",
+       "count": 121
+      },
+      {
+       "id": "chicago",
+       "zh": "Chicago Soul",
+       "count": 105
+      },
+      {
+       "id": "gospel",
+       "zh": "Gospel",
+       "count": 50
+      },
+      {
+       "id": "doo-wop",
+       "zh": "50s R&B / Doo-wop",
+       "count": 27
+      }
+     ]
+    },
     {
      "id": "funk",
      "zh": "Funk / P-Funk",
-     "count": 923,
+     "count": 926,
      "children": [
       {
        "id": "soul-side",
        "zh": "偏靈魂樂",
-       "count": 264
+       "count": 266
       },
       {
        "id": "disco-funk",
@@ -1044,53 +1091,6 @@
      ]
     },
     {
-     "id": "classic-rnb",
-     "zh": "經典 R&B / Doo-wop",
-     "count": 919,
-     "children": [
-      {
-       "id": "funk",
-       "zh": "偏 Funk",
-       "count": 450
-      },
-      {
-       "id": "neo-contemporary",
-       "zh": "Neo-Soul / 當代",
-       "count": 132
-      },
-      {
-       "id": "motown",
-       "zh": "Motown / Northern",
-       "count": 129
-      },
-      {
-       "id": "southern",
-       "zh": "Southern / Stax / Deep",
-       "count": 120
-      },
-      {
-       "id": "smooth",
-       "zh": "Smooth / Philly / Quiet Storm",
-       "count": 115
-      },
-      {
-       "id": "chicago",
-       "zh": "Chicago Soul",
-       "count": 105
-      },
-      {
-       "id": "gospel",
-       "zh": "Gospel",
-       "count": 50
-      },
-      {
-       "id": "doo-wop",
-       "zh": "50s R&B / Doo-wop",
-       "count": 27
-      }
-     ]
-    },
-    {
      "id": "disco",
      "zh": "Disco / Boogie",
      "count": 270,
@@ -1099,25 +1099,25 @@
     {
      "id": "motown",
      "zh": "Motown / Northern",
-     "count": 194,
-     "children": []
-    },
-    {
-     "id": "southern",
-     "zh": "Southern / Stax",
-     "count": 171,
+     "count": 195,
      "children": []
     },
     {
      "id": "philly",
      "zh": "Philly / Quiet Storm",
-     "count": 170,
+     "count": 173,
+     "children": []
+    },
+    {
+     "id": "southern",
+     "zh": "Southern / Stax",
+     "count": 172,
      "children": []
     },
     {
      "id": "neo-soul",
      "zh": "Neo-Soul",
-     "count": 150,
+     "count": 160,
      "children": []
     },
     {
