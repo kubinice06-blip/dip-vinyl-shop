@@ -67,3 +67,7 @@
 - **15897** 媒體名與媒體榜單名次全數不進 note：樂評一律寫「樂評形容／樂評說／評論說／樂評聽來」不具名；Billboard、Heatseekers、英國榜、Echoes 年度榜、洛杉磯時報「墓誌銘」、Metacritic 與各家分數全不指派。Acetone 主唱辭世屬「與作品直接綁定、使本作成遺作」，標時序、寫得克制；Casino 的 Hummer 廣告屬作品流傳，標時序。Jassbusters 錄音地照研究 15841 只寫「2016 年在巴黎」不寫日；American Head 只寫 9 月 11 日（維基／Pitchfork 標準日）；Manual 不寫「加入 Darla 後第一張」（研究層歧義），只寫「替 Darla 做的第二張近乎純氛圍專輯」。
 - **15898** n-gram 自查（中文 4-gram，專名、樂器名不算）：hook×hook 0 條；hook×他卡 note 原有「張個人專」「個人專輯」（Schnauss hook × Jim James note）、「洛杉磯的」（Acetone hook × Peaking Lights note），已改 hook，現 0 條；hook 與自卡 note 逐字重複句 0（Jassbusters「自編自導」、Regions「有人送他」、Delta Sweete「一位女聲」、Hammock「弦樂四重奏／合唱」四處已改 note 措辭避開；剩「木刻小說」「密爾瓦基」屬專名級）。hook 對 add-2026102x 既有 hooks：原撞「唱片行的店員」×3、「最後一張」×2、「他一個人」×1、「德國電子樂」等，已改；剩「出第四張」×1（序數短語，留給主線）。
 - **15899** 腳本：`node qa-batch.mjs hooks add-20261023-ml24` 全部通過；`node chk-hook-crossgroup.mjs add-20261023-ml24` ✓ 全部通過（5 組 11 張，hook 加權 18–26.5、note 167–229）。輔助腳本在 scratchpad `hook-ml24/`（ml24-gen.mjs、ml24-ngram.mjs）。
+
+## 主線試聽、三軸（條號 15911–15912）
+- **15911** 試聽 11/11 ready：10 張 meta 自動配對曲目全中；Flaming Lips《American Head》搜尋 API 對盤名回空，改走藝人目錄 lookup（artistId 156604）人工配 us 1516243970（13 軌、2020-09-11）。Schnauss《A Long Way to Fall》與 Hammock《Oblivion Hymns》Apple 條目為 Deluxe Edition，首軌即原盤首軌，照用（不是 2019 重錄的《Rebound》）。封面 CAA front-500 live-check 11/11 HTTP 200。
+- **15912** 三軸：Mercury Rev《Bobbie Gentry's the Delta Sweete Revisited》meta 以彎撇號盤名查 Last.fm 得 listeners 34、obscurity 5（失真），主線改以直撇號重查 worker `/album-rating` 得 listeners 37,065、obscurity 3，meta.json 改寫成重查值。其餘 10 張照 worker 機器值（classic 3、obscurity 2–4）。
