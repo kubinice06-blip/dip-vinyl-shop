@@ -1,0 +1,868 @@
+{
+ "group": "ml53",
+ "factions": [
+  {
+   "id": "torch-thick",
+   "zh": "厚製作爵士人聲 torch／quiet storm 爵士靈魂",
+   "why": "主場景：只收厚、霧、低頻厚、殘響長的爵士人聲抒情盤（BRIEF 質地規則 (3)），小編制乾淨盤不收",
+   "count": 5
+  },
+  {
+   "id": "torch-downtempo",
+   "zh": "trip-hop／downtempo／dub 製作的 torch 人聲",
+   "why": "擴寫 (1)：帶人聲、暖、慢、低頻厚的 downtempo 與 dub 化人聲盤",
+   "count": 5
+  },
+  {
+   "id": "alt-rnb",
+   "zh": "alt R&B／neo-soul 2010s–20s 霧而暖",
+   "why": "擴寫 (3)：ml8 路線二線，濕、慢、暖",
+   "count": 10
+  },
+  {
+   "id": "jp-neosoul",
+   "zh": "日本 neo-soul／beat 慢盤（ml22）",
+   "why": "第二輪 (1)：濕、慢、暖、低頻厚的日本 neo-soul；池中 SIRUP、iri 判雀躍，只收有『厚／夢幻』聲音來源的",
+   "count": 2
+  },
+  {
+   "id": "vocal-dub",
+   "zh": "lovers／vocal dub 與 roots 人聲二線",
+   "why": "第二輪 (2)：有旋律人聲、暖、慢、類比濕混音或 dub 化的 reggae 人聲盤；器樂冷硬 dub 不收",
+   "count": 6
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Anita Baker",
+   "album": "Compositions",
+   "year": 1990,
+   "label": "Elektra",
+   "country": "us",
+   "faction": "torch-thick",
+   "genres": [
+    "soul",
+    "jazz"
+   ],
+   "why": "Anita Baker 唯一找爵士樂手現場合錄的盤，quiet storm 爵士靈魂的典型；慢板居多、低頻厚、溫熱混響，池中她其餘 5 張錄音室盤全落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 1.4,
+    "why": "慢板爵士靈魂，厚貝斯與 Rhodes 墊，人聲溫熱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/62ca9632-0618-372a-ae6e-f2015f2f6c82",
+    "https://coverartarchive.org/release-group/62ca9632-0618-372a-ae6e-f2015f2f6c82",
+    "https://music.apple.com/us/album/compositions/300313648"
+   ],
+   "mbRgMbid": "62ca9632-0618-372a-ae6e-f2015f2f6c82",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人 y 0.6–1.0；本作比 Rapture 樂手現場感重，y 可能落 0.6–0.8"
+  },
+  {
+   "artist": "Kem",
+   "album": "Love Always Wins",
+   "year": 2020,
+   "label": "Motown",
+   "country": "us",
+   "faction": "torch-thick",
+   "genres": [
+    "soul",
+    "jazz"
+   ],
+   "why": "Kem 第五張錄音室盤，延續爵士化 quiet storm 慢歌：Rhodes、厚低頻、輕刷鼓；池中前四張 y 0.8–0.9 全落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 1.4,
+    "why": "慢板 quiet storm，Rhodes 與厚貝斯包覆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/93699457-58cc-4537-8448-55f5dc5a9d64",
+    "https://coverartarchive.org/release-group/93699457-58cc-4537-8448-55f5dc5a9d64",
+    "https://music.apple.com/us/album/love-always-wins/1524099793"
+   ],
+   "mbRgMbid": "93699457-58cc-4537-8448-55f5dc5a9d64",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lalah Hathaway",
+   "album": "Honestly",
+   "year": 2017,
+   "label": "Hidden Beach",
+   "country": "us",
+   "faction": "torch-thick",
+   "genres": [
+    "soul",
+    "jazz"
+   ],
+   "why": "Lalah Hathaway 爵士靈魂女低音的晚期盤，合成器墊與厚低頻包住低沉人聲；池中她三張全落恍惚（y 0.8–0.9）",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 1.0,
+    "why": "慢中板，合成墊厚、女低音溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d0e5b8d9-cbce-4466-ad69-08279778b348",
+    "https://coverartarchive.org/release-group/d0e5b8d9-cbce-4466-ad69-08279778b348"
+   ],
+   "mbRgMbid": "d0e5b8d9-cbce-4466-ad69-08279778b348",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "本作電子化較重，個別曲中速；色溫預期仍暖"
+  },
+  {
+   "artist": "Malia & Boris Blank",
+   "album": "Convergence",
+   "year": 2014,
+   "label": "Universal Music",
+   "country": "",
+   "faction": "torch-thick",
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "why": "爵士 torch 歌手 Malia 與 Yello 的 Boris Blank 合作：慢、電影感的厚電子墊與長殘響托住煙嗓，正是「厚製作暗夜爵士人聲」",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "無重拍，厚合成墊與長殘響，煙嗓溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/06e9d7c5-4a9c-41a9-99db-ddf5001cd4a1",
+    "https://coverartarchive.org/release-group/06e9d7c5-4a9c-41a9-99db-ddf5001cd4a1",
+    "https://music.apple.com/us/album/convergence-reference-edition/6789365317"
+   ],
+   "mbRgMbid": "06e9d7c5-4a9c-41a9-99db-ddf5001cd4a1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Boris Blank 音色偏電影冷調，色溫可能只到 +0.3–0.6"
+  },
+  {
+   "artist": "Meshell Ndegeocello",
+   "album": "Ventriloquism",
+   "year": 2018,
+   "label": "Naïve",
+   "country": "us",
+   "faction": "torch-thick",
+   "genres": [
+    "soul",
+    "jazz"
+   ],
+   "why": "Meshell 把 80–90 年代 R&B 金曲放慢重編成霧狀抒情：厚貝斯、合成墊、低吟人聲；旋律都是唱得出來的老歌，色溫往暖",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.0,
+    "z": 0.6,
+    "why": "放慢翻唱，厚貝斯與霧狀合成墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dcdf3b92-c6cd-432b-9f34-50ce28324cc9",
+    "https://coverartarchive.org/release-group/dcdf3b92-c6cd-432b-9f34-50ce28324cc9"
+   ],
+   "mbRgMbid": "dcdf3b92-c6cd-432b-9f34-50ce28324cc9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人 y 0.3–1.3 分散；本作是她霧感最重的一張"
+  },
+  {
+   "artist": "Vanessa Daou",
+   "album": "Zipless",
+   "year": 1994,
+   "label": "Krasnow Entertainment",
+   "country": "us",
+   "faction": "torch-downtempo",
+   "genres": [
+    "electronic",
+    "jazz"
+   ],
+   "why": "90 年代 trip-hop／爵士 torch 的代表：Peter Daou 的慢 downtempo 拍、厚低頻與爵士和聲，Vanessa Daou 低語唱 Erica Jong 詩句，溫熱情慾",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.0,
+    "z": 0.8,
+    "why": "慢 downtempo 拍，低頻厚、殘響，低語人聲暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6120c4c2-a0dc-339e-a576-ab8de2180a2f",
+    "https://coverartarchive.org/release-group/6120c4c2-a0dc-339e-a576-ab8de2180a2f"
+   ],
+   "mbRgMbid": "6120c4c2-a0dc-339e-a576-ab8de2180a2f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "幾首偏 deep house 中速，x 可能到 2.7"
+  },
+  {
+   "artist": "Meshell Ndegeocello",
+   "album": "Comet, Come to Me",
+   "year": 2014,
+   "label": "Naïve",
+   "country": "us",
+   "faction": "torch-downtempo",
+   "genres": [
+    "soul",
+    "world"
+   ],
+   "why": "Meshell 的 dub／reggae 化專輯：慢、低頻厚、回音長，人聲旋律清楚；池中同型 dub 化的《Comfort Woman》y 1.3 落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "dub 化慢拍，低頻厚、回音長"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6ea9e989-6c47-4fd6-aefb-45cef26c9a32",
+    "https://coverartarchive.org/release-group/6ea9e989-6c47-4fd6-aefb-45cef26c9a32",
+    "https://music.apple.com/us/album/comet-come-to-me/873393243"
+   ],
+   "mbRgMbid": "6ea9e989-6c47-4fd6-aefb-45cef26c9a32",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "One Dove",
+   "album": "Morning Dove White",
+   "year": 1993,
+   "label": "FFRR",
+   "country": "gb",
+   "faction": "torch-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Andrew Weatherall 製作的 dub／ambient house 人聲盤，Dot Allison 的柔聲浮在厚 dub 低音與長回音上，暖而迷濛",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "dub 低音厚、長回音，柔聲暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/942620a5-feea-3db9-b78b-ed20163330b0",
+    "https://coverartarchive.org/release-group/942620a5-feea-3db9-b78b-ed20163330b0"
+   ],
+   "mbRgMbid": "942620a5-feea-3db9-b78b-ed20163330b0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "〈Transient Truth〉等數曲是 house 中速，x 可能 2.6–2.8；Dot Allison 個人盤池中 z 0.2"
+  },
+  {
+   "artist": "Jessie Ware",
+   "album": "Tough Love",
+   "year": 2014,
+   "label": "PMR",
+   "country": "gb",
+   "faction": "alt-rnb",
+   "genres": [
+    "soul",
+    "pop"
+   ],
+   "why": "Jessie Ware 第二張：慢板 alt R&B，厚合成墊、殘響與假音和聲，比首作更濕更暖",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "慢板，厚合成墊與殘響，假音和聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d91f9aaa-a69c-428f-8813-868ba81fe545",
+    "https://coverartarchive.org/release-group/d91f9aaa-a69c-428f-8813-868ba81fe545",
+    "https://music.apple.com/us/album/tough-love/1440815555"
+   ],
+   "mbRgMbid": "d91f9aaa-a69c-428f-8813-868ba81fe545",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "YEBBA",
+   "album": "Dawn",
+   "year": 2021,
+   "label": "RCA",
+   "country": "us",
+   "faction": "alt-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "YEBBA 首張專輯（Mark Ronson 共同製作）：慢、厚的靈魂抒情，弦樂與溫熱混響包住福音唱腔",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 0.9,
+    "z": 1.0,
+    "why": "慢靈魂抒情，厚墊與混響，人聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/594f931f-d19f-4cdb-98aa-fd4c1b52b966",
+    "https://coverartarchive.org/release-group/594f931f-d19f-4cdb-98aa-fd4c1b52b966"
+   ],
+   "mbRgMbid": "594f931f-d19f-4cdb-98aa-fd4c1b52b966",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ego Ella May",
+   "album": "Honey for Wounds",
+   "year": 2020,
+   "label": "",
+   "country": "gb",
+   "faction": "alt-rnb",
+   "genres": [
+    "soul",
+    "jazz"
+   ],
+   "why": "倫敦爵士 neo-soul 二線：慢、霧、Rhodes 與厚低頻，和池中 Yazmin Lacey《Voice Notes》（y 0.8 恍惚）同一型",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 1.1,
+    "why": "慢 neo-soul，Rhodes 與霧狀低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/084a565c-611c-4afd-acd2-0b8b3551ad96",
+    "https://coverartarchive.org/release-group/084a565c-611c-4afd-acd2-0b8b3551ad96",
+    "https://music.apple.com/us/album/honey-for-wounds/1604674483"
+   ],
+   "mbRgMbid": "084a565c-611c-4afd-acd2-0b8b3551ad96",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "廠牌未確認（自發行）；y 可能只到 0.6–0.8"
+  },
+  {
+   "artist": "The Internet",
+   "album": "Feel Good",
+   "year": 2013,
+   "label": "Odd Future",
+   "country": "us",
+   "faction": "alt-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "The Internet 第二張：慢、鬆、爵士和聲的霧狀 neo-soul，Syd 的低語人聲與厚 Rhodes 墊",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 1.0,
+    "why": "慢鬆拍，Rhodes 墊厚、人聲低語"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f9d6af0a-4661-48a6-94f0-420deef0f10f",
+    "https://coverartarchive.org/release-group/f9d6af0a-4661-48a6-94f0-420deef0f10f"
+   ],
+   "mbRgMbid": "f9d6af0a-4661-48a6-94f0-420deef0f10f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Syd",
+   "album": "Broken Hearts Club",
+   "year": 2022,
+   "label": "Columbia",
+   "country": "us",
+   "faction": "alt-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "Syd 第二張個人盤：慢板情歌 alt R&B，合成墊厚、低語溫熱，比首作《Fin》更暖",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "慢情歌，厚合成墊、低語人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ae8901a0-24f3-4c07-bee0-6d17bb3847fa",
+    "https://coverartarchive.org/release-group/ae8901a0-24f3-4c07-bee0-6d17bb3847fa"
+   ],
+   "mbRgMbid": "ae8901a0-24f3-4c07-bee0-6d17bb3847fa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能 0.6"
+  },
+  {
+   "artist": "Alex Isley & Jack Dine",
+   "album": "Marigold",
+   "year": 2022,
+   "label": "",
+   "country": "us",
+   "faction": "alt-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "Alex Isley 與製作人 Jack Dine 的合作專輯：慢、霧、溫熱的 neo-soul，Rhodes 與糊濾波的拍子",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 0.9,
+    "z": 1.2,
+    "why": "慢拍，糊濾波與 Rhodes，人聲柔"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/62bb9d00-35b5-481b-a390-b837f94a68ca",
+    "https://coverartarchive.org/release-group/62bb9d00-35b5-481b-a390-b837f94a68ca"
+   ],
+   "mbRgMbid": "62bb9d00-35b5-481b-a390-b837f94a68ca",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "獨立發行，MB 日期 2022-03-30"
+  },
+  {
+   "artist": "Leon Thomas",
+   "album": "Electric Dusk",
+   "year": 2023,
+   "label": "Motown",
+   "country": "us",
+   "faction": "alt-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "R&B 歌手 Leon Thomas 首張專輯：迷幻化的慢 R&B，厚吉他殘響與低頻，溫熱（非 60 年代爵士歌手 Leon Thomas，池中那位是不同藝人）",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.0,
+    "z": 0.9,
+    "why": "慢迷幻 R&B，殘響吉他與厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cd1b9756-e060-44af-ae91-762e948cd0f5",
+    "https://coverartarchive.org/release-group/cd1b9756-e060-44af-ae91-762e948cd0f5",
+    "https://music.apple.com/us/album/electric-dusk/1699912506"
+   ],
+   "mbRgMbid": "cd1b9756-e060-44af-ae91-762e948cd0f5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "與池中爵士歌手 Leon Thomas 同名不同人，上線要分藝人"
+  },
+  {
+   "artist": "Liniker",
+   "album": "Indigo Borboleta Anil",
+   "year": 2021,
+   "label": "",
+   "country": "br",
+   "faction": "alt-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "巴西靈魂歌手 Liniker 首張個人盤：慢、厚的管弦靈魂與 quiet storm，溫熱",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 1.3,
+    "why": "慢靈魂，弦管厚墊、溫熱人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d5928952-1949-4b4a-9f22-ff0a4eb5d60a",
+    "https://coverartarchive.org/release-group/d5928952-1949-4b4a-9f22-ff0a4eb5d60a",
+    "https://music.apple.com/us/album/indigo-borboleta-anil/1582713618"
+   ],
+   "mbRgMbid": "d5928952-1949-4b4a-9f22-ff0a4eb5d60a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "管弦編制若乾淨會判輕（y 風險）"
+  },
+  {
+   "artist": "Luedji Luna",
+   "album": "Bom mesmo é estar debaixo d'água",
+   "year": 2020,
+   "label": "YB Music",
+   "country": "br",
+   "faction": "alt-rnb",
+   "genres": [
+    "soul",
+    "jazz"
+   ],
+   "why": "巴西 Luedji Luna 第二張：慢、霧的爵士 neo-soul，低頻厚、溫熱",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 1.0,
+    "why": "慢爵士 neo-soul，低頻厚、溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1ea21996-a5fb-448e-b6a2-01367c74172d",
+    "https://coverartarchive.org/release-group/1ea21996-a5fb-448e-b6a2-01367c74172d",
+    "https://music.apple.com/us/album/bom-mesmo-%C3%A9-estar-debaixo-d%C3%A1gua/1533038475"
+   ],
+   "mbRgMbid": "1ea21996-a5fb-448e-b6a2-01367c74172d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能只 0.5–0.7"
+  },
+  {
+   "artist": "UA",
+   "album": "AMETORA",
+   "year": 1998,
+   "label": "Speedstar Records",
+   "country": "jp",
+   "faction": "torch-downtempo",
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "why": "日本爵士腔女聲 UA 的第二張：dub／trip-hop 化的慢歌，厚低頻、長殘響，旋律清楚、人聲溫熱，是「靠近 downtempo 製作的 torch 歌手」",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": 0.6,
+    "why": "慢 dub 化編曲，低頻厚、殘響長，人聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/37367fad-c72e-3f2b-af93-c5fa7e110e2b",
+    "https://coverartarchive.org/release-group/37367fad-c72e-3f2b-af93-c5fa7e110e2b",
+    "https://music.apple.com/us/album/ametora/621162394"
+   ],
+   "mbRgMbid": "37367fad-c72e-3f2b-af93-c5fa7e110e2b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "日本盤聲音資料少；J-pop 甜人聲判暖但可能判輕，研究層查 dub／低頻證據"
+  },
+  {
+   "artist": "Jamie Woon",
+   "album": "Making Time",
+   "year": 2015,
+   "label": "PMR",
+   "country": "gb",
+   "faction": "alt-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "Jamie Woon 第二張：慢、溫熱的 70 年代式靈魂，厚低頻與溫熱混響，比首作的 dubstep 冷調更暖",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "慢靈魂，厚貝斯、溫熱混響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b4838820-32c9-4c53-843b-f7e528d32bd9",
+    "https://coverartarchive.org/release-group/b4838820-32c9-4c53-843b-f7e528d32bd9",
+    "https://music.apple.com/us/album/making-time/1442962604"
+   ],
+   "mbRgMbid": "b4838820-32c9-4c53-843b-f7e528d32bd9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能 0.6–0.8"
+  },
+  {
+   "artist": "mabanua",
+   "album": "Blurred",
+   "year": 2018,
+   "label": "origami PRODUCTIONS",
+   "country": "jp",
+   "faction": "jp-neosoul",
+   "genres": [
+    "soul",
+    "hiphop"
+   ],
+   "why": "mabanua 隔六年的個人盤，一人包辦全部樂器與混音；OTOTOY 廠牌文案寫「太くタイトなビート」「淡く浮遊感」「ドリーミー」：厚拍＋夢幻合成器墊的慢 beat neo-soul",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "厚實慢拍、夢幻浮遊合成墊，略帶切なさ"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0c80802d-1a93-4ab0-bef5-df935f7e68f9",
+    "https://coverartarchive.org/release-group/0c80802d-1a93-4ab0-bef5-df935f7e68f9",
+    "https://music.apple.com/us/album/blurred/1411299200",
+    "https://ototoy.jp/_/default/p/142972"
+   ],
+   "mbRgMbid": "0c80802d-1a93-4ab0-bef5-df935f7e68f9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ml41 汰過他《Done Already》（人聲曲多、頻譜亮）；本作文案強調厚拍與夢幻感，但『浮遊感』也可能被判輕；z 帶切なさ，可能只到 +0.3–0.5"
+  },
+  {
+   "artist": "Kan Sano",
+   "album": "Ghost Notes",
+   "year": 2019,
+   "label": "origami PRODUCTIONS",
+   "country": "jp",
+   "faction": "jp-neosoul",
+   "genres": [
+    "soul",
+    "jazz"
+   ],
+   "why": "Kan Sano 一人錄完的 neo-soul 盤，Real Sound 訪談說出發點是重新面對 10–20 代聽的 neo-soul、改以生樂器為主，和前作打碟快歌化的《k is s》相反：慢、Rhodes、Dilla 式拖拍",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.9,
+    "why": "慢 neo-soul 拖拍，Rhodes 與生貝斯，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3f8e7ec8-8a78-4d0a-b82d-c58ea25e0fee",
+    "https://coverartarchive.org/release-group/3f8e7ec8-8a78-4d0a-b82d-c58ea25e0fee",
+    "https://music.apple.com/us/album/ghost-notes/1456577814",
+    "https://realsound.jp/2019/05/post-363866_2.html",
+    "https://kan-sano.bandcamp.com/album/ghost-notes"
+   ],
+   "mbRgMbid": "3f8e7ec8-8a78-4d0a-b82d-c58ea25e0fee",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "生樂器為主可能錄得乾淨、y 只到 0.5–0.7（ml41 曾估 0.6）；研究層查低頻／霧感證據"
+  },
+  {
+   "artist": "Groundation",
+   "album": "Hebron Gate",
+   "year": 2002,
+   "label": "Young Tree Records",
+   "country": "us",
+   "faction": "vocal-dub",
+   "genres": [
+    "world",
+    "jazz"
+   ],
+   "why": "加州爵士化 roots reggae 樂團的代表作，Don Carlos、The Congos 客座和聲：慢、長段 dub 化 jam、厚貝斯與管樂，人聲旋律清楚溫熱；池中其 dub 版《Dub Wars》y 1.4 落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "慢 roots，厚貝斯與回音，和聲溫熱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7c14a8ee-50ae-323b-9b89-53ff2fa5612e",
+    "https://coverartarchive.org/release-group/7c14a8ee-50ae-323b-9b89-53ff2fa5612e",
+    "https://music.apple.com/us/album/hebron-gate-feat-don-carlos-the-congos/131627719"
+   ],
+   "mbRgMbid": "7c14a8ee-50ae-323b-9b89-53ff2fa5612e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "現場樂團錄音、爵士獨奏多，y 可能 0.6–0.8；MB 首發 2003-01，iTunes 標 2002，年份取 2002 待研究層確認"
+  },
+  {
+   "artist": "Groundation",
+   "album": "Upon the Bridge",
+   "year": 2006,
+   "label": "Young Tree Records",
+   "country": "us",
+   "faction": "vocal-dub",
+   "genres": [
+    "world",
+    "jazz"
+   ],
+   "why": "Groundation 中期錄音室盤：慢、長篇、dub 化的爵士 roots，厚貝斯、回音、女聲和聲與管樂，溫熱",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "慢長篇 roots，厚低頻與回音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/73165c14-7b51-322f-ae81-a28d5b4e1444",
+    "https://coverartarchive.org/release-group/73165c14-7b51-322f-ae81-a28d5b4e1444",
+    "https://music.apple.com/us/album/upon-the-bridge/202243465"
+   ],
+   "mbRgMbid": "73165c14-7b51-322f-ae81-a28d5b4e1444",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上：y 風險 0.6–0.8"
+  },
+  {
+   "artist": "Midnite",
+   "album": "Ras Mek Peace",
+   "year": 1999,
+   "label": "",
+   "country": "vi",
+   "faction": "vocal-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "美屬維京群島 roots 樂團 Midnite 的早期盤：極慢、低頻厚重、回音長的催眠 roots，Vaughn Benjamin 的低吟人聲",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": 0.4,
+    "why": "極慢 roots，低頻厚重、回音長"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6fc16a51-4300-3c91-a1b2-1322e13e1e01",
+    "https://coverartarchive.org/release-group/6fc16a51-4300-3c91-a1b2-1322e13e1e01",
+    "https://music.apple.com/us/album/ras-mek-peace/1874437765"
+   ],
+   "mbRgMbid": "6fc16a51-4300-3c91-a1b2-1322e13e1e01",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "人聲近吟誦、旋律不算鮮明，色溫可能 0～+0.4（貼邊風險）；廠牌未確認"
+  },
+  {
+   "artist": "Little Roy",
+   "album": "Battle for Seattle",
+   "year": 2011,
+   "label": "Ark Recordings",
+   "country": "jm",
+   "faction": "vocal-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "老牌 roots 歌手 Little Roy 用 Prince Fatty 的類比復古 dub 製作翻唱 Nirvana：慢、厚低頻、濕回音，旋律全是唱得出來的歌；池中 Prince Fatty 三張 y 1.1–1.4 全落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 1.0,
+    "why": "類比復古 dub，厚低頻與濕回音，旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/13a02904-6ab4-4c71-ba61-5c6842910666",
+    "https://coverartarchive.org/release-group/13a02904-6ab4-4c71-ba61-5c6842910666",
+    "https://music.apple.com/us/album/battle-for-seattle/1779513314"
+   ],
+   "mbRgMbid": "13a02904-6ab4-4c71-ba61-5c6842910666",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "廠牌待研究層確認"
+  },
+  {
+   "artist": "Capital Letters",
+   "album": "Headline News",
+   "year": 1979,
+   "label": "Greensleeves",
+   "country": "gb",
+   "faction": "vocal-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "英國 Wolverhampton roots 樂團的唯一 Greensleeves 專輯：慢 roots、厚貝斯、和聲溫熱，UK roots 二線",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.8,
+    "z": 0.7,
+    "why": "慢 roots，厚貝斯，和聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/af1134e9-81fc-4c71-beaa-ad17afd13b0c",
+    "https://coverartarchive.org/release-group/af1134e9-81fc-4c71-beaa-ad17afd13b0c",
+    "https://music.apple.com/us/album/headline-news/428082585"
+   ],
+   "mbRgMbid": "af1134e9-81fc-4c71-beaa-ad17afd13b0c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "iTunes 版 17 軌可能含 dub／加曲；UK roots 部分偏 steppers，研究層查速度與冷硬度"
+  },
+  {
+   "artist": "Black Roots",
+   "album": "Black Roots",
+   "year": 1983,
+   "label": "Kick Records",
+   "country": "gb",
+   "faction": "vocal-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "Bristol roots 樂團首張：慢、厚低頻、和聲溫熱的 UK roots；池中其《Natural Reaction》y 0.7 落恍惚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.8,
+    "z": 0.7,
+    "why": "慢 UK roots，厚貝斯、和聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6354b6ac-2f9d-4572-b8db-28d11f6da120",
+    "https://coverartarchive.org/release-group/6354b6ac-2f9d-4572-b8db-28d11f6da120",
+    "https://music.apple.com/us/album/black-roots/378355896"
+   ],
+   "mbRgMbid": "6354b6ac-2f9d-4572-b8db-28d11f6da120",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能 0.6–0.8；廠牌 Kick Records 待確認"
+  },
+  {
+   "artist": "Moodswings",
+   "album": "Moodfood",
+   "year": 1992,
+   "label": "Arista",
+   "country": "gb",
+   "faction": "torch-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "英國 ambient／downtempo 雙人組首張，Chrissie Hynde 唱〈Spiritual High〉：慢、厚合成墊與 dub 低頻、長殘響，暖",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.0,
+    "z": 0.6,
+    "why": "慢 ambient-dub，厚合成墊、長殘響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cc24be1c-a07c-303a-b0a6-95a95abb2fdc",
+    "https://coverartarchive.org/release-group/cc24be1c-a07c-303a-b0a6-95a95abb2fdc",
+    "https://music.apple.com/us/album/moodfood/1710808140"
+   ],
+   "mbRgMbid": "cc24be1c-a07c-303a-b0a6-95a95abb2fdc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "數曲 house 中速，x 可能 2.7–2.9"
+  }
+ ],
+ "notes": [
+  "第一輪 19 張見底（第二輪另補，見末條）：照實交 19 張，不湊數。主場景（爵士人聲 torch）是死池：池中經典 torch／with strings 盤全判輕（Julie London y −0.8～−1.8、Billie Holiday −0.3～−1.3、Sinatra、Chet Baker、Carmen McRae、Sarah Vaughan、Nancy Wilson、Dusty、Etta James 全落放鬆），Larry Klein／Craig Street 型也判輕（Peyroux、Cassandra Wilson 多數、Norah Jones、Melody Gardot 兩張），只有 quiet storm 爵士靈魂與 trip-hop／dub 化製作會落重。",
+  "主場景能收的頭牌（Sade、Anita Baker 5 張、Kem 4 張、Lalah 3 張、Will Downing、Phyllis Hyman、Sweetback、Lovage、Alpha、Esthero、Dot Allison、Martina Topley-Bird、Hope Sandoval、Tindersticks《Can Our Love》、Hawley《Coles Corner》、Isaac Hayes）都已在池；只撿到各人缺的那一張（Anita《Compositions》、Kem《Love Always Wins》、Lalah《Honestly》）與 Meshell 兩張、Malia & Boris Blank、Vanessa Daou。",
+  "刻意不收（池中同人判輕／判冷或他組已提）：Jay-Jay Johanson（md9 判輕）、Puma Blue（夜色偏冷，z 貼邊）、Jessie Ware《Devotion》（z 貼邊）、Twin Danger（y／z 皆無把握）、Bitter:Sweet、Supreme Beings、Morcheeba 其餘、Hooverphonic《Jackie Cane》（池中同人 z 0.2）、Chet Faker、FKJ、Céu、Terrace Martin、Corinne Bailey Rae、Rhye（池中判輕）、dvsn 其餘（z 0.2）、Will Downing 晚期（ml49／ml52 smooth jazz 汰除先例）、Maysa（smooth jazz 風險）、Brenda Russell、Phil Perry 型 80 年代末數位抒情（判輕先例）、Phyllis Hyman 其餘、Lewis Taylor《Stoned》、Gallant、Sinead Harnett、UMI、Orion Sun、Joyce Wrice（y 恐 ≤0.6）。",
+  "dub／reggae 人聲二線全查過：Wailing Souls、Don Carlos、Hugh Mundell、Bim Sherman、Mighty Diamonds、Israel Vibration、Junior Murvin、Max Romeo、George Faith、Heptones、Prince Fatty、Easy Star、Rhythm & Sound、Burning Spear、Augustus Pablo、Bunny Wailer 全已在池或他組已提，本批 dub 只有 Meshell《Comet》與 One Dove 兩張 dub 化人聲盤。ml22 日本 neo-soul 池中 SIRUP、iri、WONK 判雀躍／貼邊（ml22 已暫停），只收 UA《AMETORA》一張 dub 化盤。",
+  "同名不同人：R&B 歌手 Leon Thomas（2023）≠ 池中 60 年代爵士歌手 Leon Thomas，上線時藝人要分開。Alex Isley & Jack Dine 照 MB 合掛名。",
+  "第二輪（2026-10-23）補 9 張（不湊數）：ml22 日本 neo-soul 2（mabanua《Blurred》、Kan Sano《Ghost Notes》，各附 OTOTOY／Real Sound 聲音來源）、vocal dub／roots 6、downtempo 1（Moodswings）。ml22 其餘查無聲音來源或判輕風險高而不提：TENDRE、yonawo（MB 查無）、WONK 其餘（池中《Sphere》y 0.6 貼邊）、Kan Sano《k is s》（全打碟、快歌化）、mabanua《Only the Facts》（同《Done Already》型）、SIRUP／iri（池中雀躍／沸騰）、Ovall（ml41 判乾淨）、Michael Kaneko、AAAMYYY。ml27 sample-based ambient pop 0 張：池中 Avalanches 沸騰／雀躍、The Books、Four Tet、Lemon Jelly、Jan Jelinek 判輕，Casino Versus Japan、Teebs、Shigeto、Small Black、Teen Daze 貼邊或已在池，Shigeto《Lineage》MB 是 EP、Lone 早期盤 x 貼邊。dub 二線再查：Prince Alla《Only Love Can Conquer》是 Blood & Fire 單曲彙編、不收；Easy Star 其餘照 ml50 Radiodread 先例不收；Salmonella Dub ml15 已提。",
+  "身分全部 MB 釘住、封面全有 CAA；WebSearch 第一輪 1 次、第二輪 2 次（共 3 次）（無收穫），其餘靠 MB／iTunes API 與維基 trip hop 藝人表。"
+ ]
+}

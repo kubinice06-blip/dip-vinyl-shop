@@ -363,7 +363,7 @@
   {
    "id": "jazz",
    "zh": "爵士",
-   "count": 4881,
+   "count": 4909,
    "children": [
     {
      "id": "bop",
@@ -405,17 +405,17 @@
     {
      "id": "free",
      "zh": "自由與前衛",
-     "count": 916,
+     "count": 943,
      "children": [
       {
        "id": "avant",
        "zh": "前衛與 New Thing",
-       "count": 489
+       "count": 496
       },
       {
        "id": "free-improv",
        "zh": "自由即興",
-       "count": 180
+       "count": 201
       },
       {
        "id": "post-bop",
@@ -425,7 +425,7 @@
       {
        "id": "fusion",
        "zh": "偏 Fusion",
-       "count": 78
+       "count": 79
       },
       {
        "id": "spiritual",
@@ -442,7 +442,7 @@
     {
      "id": "fusion",
      "zh": "Fusion / Jazz-Funk",
-     "count": 872,
+     "count": 873,
      "children": [
       {
        "id": "jazz-funk",
@@ -484,12 +484,12 @@
     {
      "id": "contemporary",
      "zh": "當代與 Nu Jazz",
-     "count": 797,
+     "count": 800,
      "children": [
       {
        "id": "nu-jazz",
        "zh": "Nu / Acid Jazz",
-       "count": 277
+       "count": 278
       },
       {
        "id": "smooth",
@@ -504,7 +504,7 @@
       {
        "id": "free",
        "zh": "偏前衛",
-       "count": 109
+       "count": 110
       },
       {
        "id": "piano",
@@ -531,7 +531,7 @@
     {
      "id": "vocal",
      "zh": "人聲爵士",
-     "count": 362,
+     "count": 363,
      "children": []
     },
     {
@@ -635,12 +635,12 @@
   {
    "id": "electronic",
    "zh": "電子",
-   "count": 2684,
+   "count": 2685,
    "children": [
     {
      "id": "ambient",
      "zh": "Ambient / Drone",
-     "count": 1232,
+     "count": 1233,
      "children": [
       {
        "id": "dark-ambient",
@@ -766,7 +766,7 @@
     {
      "id": "downtempo",
      "zh": "Trip-hop / Downtempo",
-     "count": 447,
+     "count": 448,
      "children": [
       {
        "id": "chillout",
@@ -776,12 +776,12 @@
       {
        "id": "ambient",
        "zh": "偏 Ambient",
-       "count": 215
+       "count": 216
       },
       {
        "id": "trip-hop",
        "zh": "Trip-hop",
-       "count": 169
+       "count": 170
       },
       {
        "id": "nu-jazz",
@@ -1004,12 +1004,12 @@
   {
    "id": "soul",
    "zh": "靈魂放克",
-   "count": 1797,
+   "count": 1810,
    "children": [
     {
      "id": "classic-rnb",
      "zh": "經典 R&B / Doo-wop",
-     "count": 962,
+     "count": 967,
      "children": [
       {
        "id": "funk",
@@ -1019,7 +1019,7 @@
       {
        "id": "neo-contemporary",
        "zh": "Neo-Soul / 當代",
-       "count": 155
+       "count": 157
       },
       {
        "id": "motown",
@@ -1029,7 +1029,7 @@
       {
        "id": "smooth",
        "zh": "Smooth / Philly / Quiet Storm",
-       "count": 124
+       "count": 125
       },
       {
        "id": "southern",
@@ -1056,12 +1056,12 @@
     {
      "id": "funk",
      "zh": "Funk / P-Funk",
-     "count": 928,
+     "count": 929,
      "children": [
       {
        "id": "soul-side",
        "zh": "偏靈魂樂",
-       "count": 268
+       "count": 269
       },
       {
        "id": "disco-funk",
@@ -1105,6 +1105,12 @@
     {
      "id": "philly",
      "zh": "Philly / Quiet Storm",
+     "count": 178,
+     "children": []
+    },
+    {
+     "id": "neo-soul",
+     "zh": "Neo-Soul",
      "count": 176,
      "children": []
     },
@@ -1112,12 +1118,6 @@
      "id": "southern",
      "zh": "Southern / Stax",
      "count": 172,
-     "children": []
-    },
-    {
-     "id": "neo-soul",
-     "zh": "Neo-Soul",
-     "count": 167,
      "children": []
     },
     {
@@ -1372,12 +1372,12 @@
   {
    "id": "classical",
    "zh": "古典",
-   "count": 1373,
+   "count": 1375,
    "children": [
     {
      "id": "contemporary",
      "zh": "當代與極簡",
-     "count": 589,
+     "count": 591,
      "children": [
       {
        "id": "avant",
@@ -1898,22 +1898,22 @@
   {
    "id": "world",
    "zh": "世界",
-   "count": 1107,
+   "count": 1109,
    "children": [
     {
      "id": "reggae",
      "zh": "Reggae / Dub",
-     "count": 452,
+     "count": 454,
      "children": [
       {
        "id": "roots",
        "zh": "Roots Reggae",
-       "count": 224
+       "count": 226
       },
       {
        "id": "dub",
        "zh": "Dub",
-       "count": 216
+       "count": 217
       },
       {
        "id": "lovers",
@@ -1928,7 +1928,7 @@
       {
        "id": "dancehall",
        "zh": "Dancehall / Ragga",
-       "count": 73
+       "count": 74
       }
      ]
     },
