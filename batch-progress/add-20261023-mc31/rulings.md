@@ -49,3 +49,15 @@
 - **13428**（Lake Quintet《Prophet》）：身分吻合（Black Saint BSR 0044）；維基條目稱 1980（錄音年），Discogs／MB 發行 1981，卡單 1981 正確。**moodGuess 存疑（中高）**：AllMusic 稱「relatively straight-ahead」，一半為 Dolphy 曲、標準五重奏格局加電貝斯，很可能判偏暖；「大跳音程、尖細蘆管」查無來源。
 - **13429**（Revolutionary Ensemble《Vietnam》）：現場盤確認——1972-03 Peace Church 現場，樂團自製，ESP-Disk ESP 3007 正規發行，非 bootleg。moodGuess 輕度存疑：Cooper 的鼓是重音式而非持續推進，兩首各 23／24 分長即興，Penguin 說比表面尖銳更細膩；x 3.5 可能略高。專輯名由來查無來源，不寫。
 - **13430**（總則）：本組未動卡單。WebSearch 用 2 次（Shine! 人員、Flat-Out Jump Suite 樂評）。AllMusic／All About Jazz 皆 403，Wikipedia 無獨立條目的 Holding Together、Shine! 改用 Discogs API 製作名單。所有聲音描述均憑文字來源，無人聽過。存疑清單依強度：Flat-Out Jump Suite（高，偏靜）＞Buster Bee（中高，偏暖柔）＞Prophet（中高，偏暖）＞Space minds（中）＞Lifea Blinec／Holding Together／Shine!／Vietnam（輕）；Ai Glatson 成立。
+
+## 研究 a 組
+- **13401**（AEC《Tutankhamun》）：身分吻合（Freedom 278.091；Discogs 錄音 1969-06-26 Polydor Studios 巴黎，1974 首發）。維基首句「1969 album」是錄音年，卡單 1974 正確。無鼓手四重奏、兩面各一首長篇，AllMusic「質地重於旋律與節奏」。moodGuess 輕度存疑：長篇留白可能拉低 x，無逐段證據。
+- **13402**（AEC《Reese and the Smooth Ones》）：身分吻合（BYG 529.329，1969-08-12 Studio Saravah）。無鼓手，兩曲各兩部、兩面各約 20 分鐘；Yanow 稱「episodic」。不存疑（輕度：片段式多留白）。
+- **13403**（AEC《Chi-Congo》）：身分吻合（Decca 258.054，1970 錄、1972 首發）。**moodGuess 存疑（輕度）**：本盤有 Don Moye（打擊手，1970 加入），非無鼓手；Discogs 只列 Percussion，無鼓組證據。若他在打推進節奏，x/y 可能高於預估，建議主線複核。
+- **13404**（Braxton《3 Compositions of New Jazz》）：身分吻合（Delmark DS-415，1968-03-27／04-10 芝加哥 Sound Studios）。**更正策展層**：「無鼓三人」實為四人，Abrams 在兩首加鋼琴與大提琴；Braxton 兼小鼓、Jenkins 兼低音鼓與鈸，無鼓組。不存疑。
+- **13405**（Braxton《Trio and Duet》）：身分吻合（Sackville 3007，1974-10-08 多倫多 Thunder Sound）。**moodGuess 重度存疑**：B 面三首全是標準曲（Song Is You／Embraceable You／You Go to My Head，約 26 分鐘，占原盤近六成），CD 再版 bonus 又是兩首標準曲，旋律明確的薩克斯風／低音提琴二重奏恐判暖；策展層 curatorRisk 寫「兩首」有誤。建議汰換。
+- **13406**（Braxton《For Trio》）：身分吻合（Arista AB 4181，錄 1977-09-22 芝加哥 Streeterville Sound，1978 首發）。**更正策展層**：Version I 是 Threadgill＋Ewart、Version II 才是 Jarman＋Mitchell，非同一三人。**moodGuess 中度存疑**：單曲兩版各約 20 分鐘、無鼓無貝斯、稀疏點描，AllMusic 2.5 星「forbidding」，x 貼邊、可能判靜。
+- **13407**（Braxton《Composition 98》）：身分吻合（hat ART ART 1984 雙 LP，棚內 1981-01-19 Ludwigsburg、現場 01-24 Bern；CD 重發只收棚內版）。無節奏組（小號、長號、鋼琴＋Braxton）。**moodGuess 中度存疑**：兩版各近 48 分鐘，「尖而硬」無樂評證據可證，Crispell 以運用空間聞名，有被判靜的風險。
+- **13408**（Braxton《The Montreux/Berlin Concerts》）：現場盤確認——Arista AL 5002 正規雙 LP（1975-07-20 Montreux、1976-11-04／06 柏林，Bearsville 混音），非 bootleg。**更正策展層**：Wheeler 與 Lewis 是兩組各自的四重奏（Altschul 鼓、Holland 低音提琴，前六首）；D 面 23 分鐘是與 Gruppe Neue Musik Berlin 合作。輕度存疑：D 面室內樂段可能偏靜。
+- **13409**（Braxton《Quartet (London) 1985》）：現場盤確認——Leo Feigin 製作、BBC Radio 3 錄音（1985-11-13 Bloomsbury Theatre，1987-09-07 首播），非 bootleg。**年份有疑**：Discogs 首發為 1988 三 LP 盒裝（LR 414/415/416，限量 750），MB 的 1990 是 CD（LR 200/201）；卡單 1990 非首發，建議改 1988（德文維基目錄記 1986，單一來源未採）。編制 Crispell／Dresser／Hemingway 屬實，無樂評證據支持「疾奔」。
+- **13410**（總則）：本組未動卡單。WebSearch 用 2 次（Trio and Duet 樂評、Quartet London 樂評）；AllMusic／JazzTimes 403 或無，樂評多取自維基轉引。九張皆 8–9 條 facts、status full，每張含 2–4 條編制／音色事實。Crispell 簡介在 13407、13409 重複，寫作層請避免兩張寫同樣。
