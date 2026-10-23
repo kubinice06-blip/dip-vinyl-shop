@@ -5595,7 +5595,8 @@ ${seenList}
   // 兩邊的結果頁不會同時出現，所以按鈕用全域選取、比對對象記在 activePreviewResult。
   let activePreviewResult = null;
   function _gpSetPreviewIcon(playing) {
-    const btn = document.querySelector('[data-gp-action="preview"]');
+    // 先找開著的那個 modal 裡的鈕：別的分頁的結果頁留在 DOM 裡，全域第一顆不一定是畫面上這顆
+    const btn = document.querySelector('.quiz-modal.open [data-gp-action="preview"]') || document.querySelector('[data-gp-action="preview"]');
     if (!btn) return;
     const play = btn.querySelector('[data-gp-ic="play"]');
     const pause = btn.querySelector('[data-gp-ic="pause"]');
@@ -5781,6 +5782,9 @@ ${seenList}
     if (e.target.closest('[data-gt-again], [data-gt-restart], [data-gt-back], [data-gt-pick], [data-gt-any]')) {
       gpStopPreview({ fade: true });
     }
+    // 結果頁的試聽鈕（2026-10-23 店主：頻率選歌的試聽鈕按了沒反應——類型挑片與頻率選歌的容器都沒接這顆）
+    if (e.target.closest('[data-gp-action="preview"]')) gpPlayPreview();
+    if (e.target.closest('[data-gp-action="share"]')) shareGpResult();
   });
 
   // ── 類型挑片 v2 接線（引擎在 dip-genre-tree.js）───────────────────────
@@ -5933,6 +5937,8 @@ ${seenList}
   document.getElementById('tuneModal').addEventListener('click', (e) => {
     if (e.target.closest('[data-tune-again]')) { gpStopPreview(); DipTune.pickAgain(); }
     else if (e.target.closest('[data-tune-back]')) { gpStopPreview(); tuneShowApp(true); DipTune.start(); }
+    else if (e.target.closest('#tuneContent [data-gp-action="preview"]')) gpPlayPreview();
+    else if (e.target.closest('#tuneContent [data-gp-action="share"]')) shareGpResult();
   });
 
   // 抽卡動畫的結果頁接軌目標（心情選歌與類型挑片／直接來一張的容器不同）

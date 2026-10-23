@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜頻率選歌／類型挑片結果頁的試聽鈕、分享鈕沒反應
+
+- **改動**：店主回報頻率選歌結果頁試聽鈕按了沒反應。原因：`[data-gp-action="preview"]`／`share` 只在 `#artistContent`（猜你喜歡）與心情選歌接了點擊，類型挑片（`#genreContent`）與頻率選歌（`#tuneModal`）共用 showGpResult 卻沒接。兩處補上；`_gpSetPreviewIcon` 改找開著的 modal 裡那顆鈕（別的分頁結果頁留在 DOM 時，全域第一顆不一定是畫面上的）。
+- **主要檔案**：`index.html`
+- **驗證**：本機 Playwright：頻率選歌抽一張 → 按試聽鈕 → `DipPlayer.playAlbum` 收到手動（auto=false）呼叫；無頁面錯誤。
+
 ### 2026-10-23｜dip-vinyl-shop｜串流優先：元素模式試聽被搶走也會自動關網頁聲音
 
 - **改動**：店主「玩家有使用串流就優先停止網頁聲音」。原本只有 Web Audio 路徑被系統中斷（iOS interrupted／Android suspended）會判定「玩家去聽串流」並把自動試聽記成關；`<audio>` 元素後備路徑被串流搶走時（系統暫停元素）沒偵測。補上 `onpause`：畫面在前景、不是我們自己停的就走同一條 `revokeAutoplayByInterruption`（含 4 秒手動播放寬限）。我們自己停、換張、切背景都先清旗標或換 token，不會誤判。`dip-player.js?v=51`。
