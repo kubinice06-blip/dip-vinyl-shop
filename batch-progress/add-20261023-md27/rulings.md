@@ -50,3 +50,30 @@
 - 20389：Second Childhood 完全查不到聲音描述（Boomkat／Staubgold／AllMusic／last.fm／Bandcamp 皆空），status thin；moodGuess 存疑（無來源，建議聽感複核或汰換）。Discogs 備註：背面印七首、實際六軌。
 - 20390：WebSearch 本組用了 3 次（Compound、Emanate、Experience of Repetition），未超用；其餘為 Discogs／MB API 與 WebFetch。Mount A 發行年維基 2006、Discogs 2007，facts 採維基。
 - 20433：研究 c 組存疑汰 8：聲音零來源（Glotman & Erlandsson《Emanate》、《Second Childhood》）；判躁（Glotman《Compound》即興三重奏 driving pattern＋menacing、《Études》打擊碎片短曲、Árnason & Glotman《Vast》刮擦喀喀與〈Eruption〉、Palestine《Schlingen-Blängen》relentless、明亮管風琴）；判暖（Clarice Jensen《The Experience of Repetition as Death》velvet-like、comforting、近乎狂喜）；Clarice Jensen《Esthesis》研究代理漏做，同人已留《For This From That Will Be Filled》，不補研究、直接汰。留 Clarice Jensen《For This From That Will Be Filled》、Claire M Singer《Saor》（celestial 評語指整體作品，非本張）。
+
+## 研究 b 組（條號 20371–20380）
+- 20371：Wit《A Polish Requiem》錄音 2003-05/06 華沙愛樂廳、Naxos 2004-10 發行，yearVerified 2004（錄音 2003）；錄的是 2005 年前的十六段版本（無 Ciaccona）。moodGuess 存疑：BBC 樂評寫前段「閃電般下行、哭喊般半音階」，配器含大鼓、鞭子、教堂鐘，Dies irae／Libera me 有猛烈段，x 可能超過 3；Lacrimosa、Sanctus 旋律清楚又往暖。
+- 20372：《Orchestral Works》moodGuess 嚴重存疑：Dacapo 文章自寫「憤怒的尖叫、恐懼的隆隆聲、抹滅一切的漸強」「長時值、大音量、狂亂活動與冰冷靜止」，Morgunblaðið 稱「最難以承受」。依體感標準建議汰換或改判躁。
+- 20373：HĪBER 為單曲八樂章數位專輯（Dacapo 2020-09-04），Dacapo／Edition·S／Grapevine 皆稱嚴厲、威脅、扭曲；小存疑 x 可能略高，整體慢低無鼓。
+- 20374：SILVA 單軌 57:36（Discogs 27380349，Sono Luminus／ESP-Disk' ESP 5081）；Sono Luminus 官網舊連結 404、Gramophone 被 Cloudflare 擋，聲音證據靠作曲家與 Rutherford-Johnson 文章轉述。moodGuess 小存疑：「絕望與攻擊性的層次」「重金屬科技舞派對」，x 可能偏高。
+- 20375：Magnetism（Ideologic Organ SOMA064）moodGuess 存疑：廠牌稱 poignant melodies，McDowall 說 accessible、not foreboding、pop sentiments，旋律清楚者往暖，z 可能不到 −1，建議複核。
+- 20376：Kontrapoetik 實為 6 首、約 34 分鐘的 Mini-Album 黑膠（Portals Editions PRTLS017／XKatedral XK12），非長篇 drone；含小調牧歌和聲、取樣、失真壓碎段，x、z 可能較預估高。
+- 20377：Epistasis（Hallow Ground HG1904，Bandcamp 未標廠牌，以 Discogs 為準）編制比卡單多 Disklavier 鋼琴與兩位管風琴手、電吉他；Interlocked Cycles 兩首速度與密度漸增。輕度存疑 x。
+- 20378：Panoptikon 編制修正：人聲三聲部加合成器和弦循環（Sara Parkman、Sara Fors、David Åhlén、Vilhelm Bromander），未見管風琴與弦樂；Bandcamp 稱隨全景監獄照明同步緩慢脈動、聽眾稱素歌式。moodGuess 存疑：可能判輕或偏暖，低頻未證實。
+- 20379：Minnesmärke 編制修正：長號／低音號、小提琴、低音提琴加 Mats 本人，無管風琴，『純律』查無來源不寫；聲音證據僅作者自述，status thin，建議抽聽或汰換。
+- 20380：Negative Chambers 編制修正：無管風琴，是三弦琴 gimbri、簧風琴、齊特琴、頌缽、放大鐵板、收音機等雜揉樂器，Boomkat 稱安靜極簡、〈Ceramic Relic〉有不協和弦樂音團。moodGuess 存疑：頌缽、簧風琴等可能判輕，『厚重低頻』未證實。WebSearch 本組用 3 次（Wit、Orchestral Works、HĪBER），其餘為 Discogs／MB API 與 WebFetch。
+
+## 研究 d 組（條號 20391–20400）
+- 20391 Paul Corley《Disquiet》：策展層『管弦取樣』不成立，實為預置鋼琴＋田野錄音＋低音提琴＋Frost／Collings 吉他與程式，前景溫暖（Exclaim!）；moodGuess 存疑（y 可能偏輕、z 可能偏暖）。身分 MB／Bedroom Community 官方頁一致。
+- 20392 Liam Byrne《Concrete》：官方頁證實是新舊曲目拼貼（Marais 純巴洛克、Finnis／Mills 短篇、Muhly 約 16 分鐘長曲，部分曲用電子與管風琴），非整張低鳴霧；古大提琴聲部分明，y 偏輕，moodGuess 存疑。
+- 20393 Lustmord + Horvath《The Fall》：身分無誤（Sub Rosa，2020）；Bandcamp 日期欄 2016 為誤植不採；原曲《November》長度各源矛盾（近六小時／四小時以上），facts 不寫確切時長。moodGuess 存疑：終軌鋼琴轉明朗、鳥鳴回返，Lustmord 伴奏克制，y／z 可能不如預估。
+- 20394 Fjellström《Gebrauchsmusik》：moodGuess 存疑——13 首短片段拼貼，〈War Music〉有連發打擊與音樂盒、開場倒放與鬼魅人聲，在驚奇與恐怖間擺盪，非陰森慢步。
+- 20395 Fjellström《Schattenspieler》：moodGuess 存疑——Tiny Mix Tapes 聽到尖叫般小提琴、吱嘎與鐵鍊、蝙蝠叫聲，目的在讓人感到恐懼；可能判躁，建議抽聽〈Perspex〉。
+- 20396 Fjellström《Skelektikon》：無存疑（莊重憂鬱、霧般模糊，有打擊無鼓組）。年份 MB 數位 2016-11-30、零售 2017 年初；他 2017 年過世（確切月份與年齡僅單源，不寫）。
+- 20397 Lustmord《Zoetrope》：推翻策展層『Charles Ventura』——導演為 Charles Deaux（IMDb 作 Charlie Deaux）；『黑白』無來源，不寫。聲音細節僅 chaindlk 單源。
+- 20398 Young & Lustmord《The Empty Man》：moodGuess 強烈存疑——樂評明寫嘶鳴刮擦嚎叫、恐怖場面震耳爆響、警笛、具攻擊性電子音，很可能判躁，建議汰換；僅前三首（Lustmord）與末兩首（弦樂合唱）屬頹靡區。
+- 20399 Salisbury & Barrow《Men》：moodGuess 存疑——隧道後轉為噪音、不協和、穿刺人聲、合唱如折磨（The Film Scorer）；曲名〈Impaled〉〈Fuck This〉〈Runaway / Crash〉暗示衝擊段，可能判躁，建議抽聽。
+- 20400 《Trapped》OST：status thin——所有來源皆無聲音描述，『大提琴低鳴＋電子 drone』無佐證，22 首多為 1–3 分鐘短 cue；需主線抽聽。Wise Music 稱 2019-06-19 與 Film Music Reporter 不一致，寫作層只寫 2019 年。
+- 20434：研究 b 組存疑汰 7：判躁（Bára《Orchestral Works》憤怒尖叫、抹滅一切的漸強；Wit｜Penderecki《A Polish Requiem》閃電下行、哭喊半音階、鞭子大鼓）；判暖（Malone＋McDowall《Magnetism》poignant melodies、accessible、pop sentiments）；判輕（Horn《Panoptikon》人聲三部＋合成器、無低頻證據；Glotman & Erlandsson《Negative Chambers》頌缽簧風琴雜揉、厚低頻無證據）；非正規全長（Horn《Kontrapoetik》34 分 6 首 Mini-Album）；聲音零第三方來源（Erlandsson《Minnesmärke》）。留 Bára《HĪBER》《SILVA》、Horn《Epistasis》（失真與漸快屬輕度存疑）。
+- 20435：研究 d 組存疑汰 7：判躁（Young & Lustmord《The Empty Man》嘶鳴刮擦、震耳爆響、警笛；Salisbury & Barrow《Men》噪音、穿刺人聲；Fjellström《Schattenspieler》尖叫小提琴、鐵鍊、刻意恐懼；《Gebrauchsmusik》13 首短拼貼、連發打擊）；判輕（Liam Byrne《Concrete》巴洛克與短篇拼貼、古大提琴聲部分明；Corley《Disquiet》預置鋼琴、前景溫暖）；聲音零來源（《Trapped》22 首短 cue）。留 Fjellström《Skelektikon》、Lustmord《Zoetrope》、Lustmord＋Horvath《The Fall》（終軌轉明朗屬輕度存疑）。
+- 20436：研究後 46 → 15，叫回策展代理補第二輪（低音弦／管風琴單音長音、慢、陰、無爆發，有第三方聲音來源才提；避開 md28 的 dark ambient 廠牌系）。
