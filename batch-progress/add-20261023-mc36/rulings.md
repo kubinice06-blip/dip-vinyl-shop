@@ -65,3 +65,12 @@
 - 19678 WebSearch 合計 4 次（Lithics、Zs Arms、Sharp Nots、Parkins Nightmare Alley），其中 Lithics 搜尋無果；AllMusic／Pitchfork／jazzmusicarchives 皆不可取。
 - 19679 未使用。
 - 19680 未使用。
+
+## 主線：研究後汰換（不佔條號）
+- 研究層聲音與 moodGuess 不符，直接汰 12（卡單、研究稿、`pick.json` 同步移除，32 → 20）：
+  - 判重（鼓組＋貝斯／破音）：John Zorn《Locus Solus》（三位鼓手、fierce）、《Archery》（11 人含 Laswell 貝斯、Moss 鼓、兩把吉他）、Arto Lindsay Trio《Aggregates 1-26》（Gibbs 貝斯＋Bowne 鼓、攻擊性）、Elliott Sharp《Nots》（四位鼓手＋Laswell）、《Virtual Stance》（Previte 真鼓＋鼓機＋貝斯吉他）、Storm and Stress 首作（貝斯、Albini、長曲，另有人聲鋼琴歌判暖）、Zs《Arms》（雙鼓雙吉他＋男中音吉他）、Ahleuchatistas 兩張（完整節奏組、Discogs 標 Noise／Punk）。
+  - 判靜：Phew《New Decade》（慢 drone、sombre、留白）；《A New World》（原聲段、兩首同名曲疑翻奏，池中 Phew x 3.2 貼邊）。
+  - 現場：Elliott Sharp《(T)here》（大半 1983 布爾諾、布拉格現場）。
+- 留下但存疑、交評分裁定：Zorn《Pool》《Classic Guide》兩集（獨奏／稀疏段判靜風險）、《Yankees》（subtle）、《Cobra》（第二張 1985 RPI 現場，比照 Braxton《Dortmund》收）、《School》（實為五人〈Lacrosse〉電台錄音）、Ostertag《Attention Span》（動態極大）、Zeena Parkins《Nightmare Alley》（純電豎琴獨奏，噪音回授與安靜段交替）、Ut《Conviction》（破音查無）、Lithics 兩張（thin）。
+- 研究推翻照研究稿：《John Gavanti》年份 1980（Cunningham 自述＋維基，Hyrax），MB flag 結案；Moss《Full House》人員是 Moss、Arto Lindsay、Marclay；Parkins 無鼓機；Cheval de Frise《Fresques》首發 Ruminance（法國）、首作 Sonore、Zs 首作 Troubleman Unlimited、Ostertag《Say No More》RecRec Music（瑞士）——卡單已改。
+- qa-batch research：20 張 key 一致、全過。
