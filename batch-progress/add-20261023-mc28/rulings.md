@@ -47,3 +47,15 @@
 - **13206**：大友《Anode》策展層「十人」實為九位列名演奏者（六打擊＋杉本拓＋Sachiko M＋秋山徹次），「圖形指令」查無來源不寫。Olewnick 簡介稱「超安靜、處在聽覺邊緣」，與 x 3.6 方向相反，x 存疑建議降或汰（簡介內容取自搜尋摘要，原頁 403）。
 - **13207**：吉田アミ《Tiger Thrush》日文名《虎鶫》，IMJ-504，2003-07，錄音 2003-01～03（Ftarri 英文頁內文寫 2002，採日文頁與頁首資料）。99 首 Untitled，keyTracks 留空。已讀 Ftarri 日文頁（Shift-JIS 原文）。
 - 組內 WebSearch 用量：8 次（Reichel 1、Johansson 1、King Übü 1、Léandre 1、Cathode 2、Anode 2、Tiger Thrush 1，皆在每支 3 次以內）。
+
+## 研究 c 組（13181–13190；Incus 系 6＋第二代細聲 2）
+- 13181　**News From the Shed（x 嚴重存疑，建議汰換或降 x）**：Wire／Butcher 官網摘錄的樂評一致說音量很低、沉默佔大比重、Russell 幾乎不擴音，部分曲目（〈Everything Stops For Tea〉）近乎無聲。moodGuess x 3.4 很可能判成靜；y -0.6 成立。
+- 13182　**Alterations 現場性待定**：MB 未標 Live；Discogs 寫 A 面 recorded from The Premises（Norwich）、B 面 recorded at LMC，曲名按城市編號，極可能是演出錄音但無來源寫明。facts 只寫「錄於」，不寫現場／錄音室。密度與厚度（y +0.4 疑慮）無逐曲樂評，無法證實或推翻。
+- 13183　**Tony Oxley 非單一場次**：六首錄於 1971–75 四年間（Discogs 逐曲年份），且部分是與他人的團體即興；Discogs 人員欄只列 Oxley。facts 不指稱哪首獨奏。y 風險（擴音金屬、環形調變器）無來源可量化。母帶丟失一說只是留言者，不入 facts。
+- 13184　**SME《So, What Do You Think?》**：發行 1973（MB、FJ Collective 一致），錄音 1971-01-27，取 1973。Emanem 的 Davidson 稱「打擊樂主導混音」，與預估的稀而細有拉扯，x／y 都存疑；SME 的「昆蟲即興」安靜美學為全團通論，非本張專論。刪去 Holland 與 Miles Davis 一條（來源未驗到）。
+- 13185　**Barry Guy《Statements V-XI》**：年份取 MB／Discogs 1977（Maya 官方目錄標 1976；錄音 1976-10-30，Riverside Studios 錄音室）。找不到任何本張專評，sound 欄依 AAJ 總述與 Discogs 寫，「弓擦高把位尖嘶」無法證實，y 風險（低音提琴獨奏判厚與否）無證據。
+- 13186　**Butcher《Thirteen Friendly Numbers》**：取原盤年 1992（官網寫錄於 1991，評論寫 1992）。四首疊錄（四次中音、六高音等）比單人獨奏厚，可能拉低「輕」；Penguin Guide 的「脆而易碎的泛音」與預估相合。curator 的「哨音、啵聲」無來源，未寫。
+- 13187　**Company《Fables》**：MB 無首發日，取 Discogs 1980。編制無鼓無鋼琴（Discogs 人員欄），錄於倫敦 Art Workers' Guild（非錄音室也未標現場）。找不到樂評量化疏密。
+- 13188　**Bailey《Lot 74》**：年份取原盤 1974（MB 2009 是 CD 重發）。錄於私人住宅（Catford 與 Hackney），非現場；A 面立體聲電聲、B 面未擴音 19 弦吉他，疏密不一致。Squidco 兩台擴大機／兩個踏板一條取自搜尋摘要，頁面 403 未親見。
+- 13189　**推翻策展層**：0 處（年份、廠牌、掛名皆與卡單一致）。無選輯、無重複卡；8 張全為原創專輯，無建議移除。
+- 13190　**WebSearch 用量**：本組 19 次（含 1 次報錯；每張 ≤3 次），WebFetch 另計；Discogs／MB API 直連可用，Squidco、AllMusic 多為 403。
