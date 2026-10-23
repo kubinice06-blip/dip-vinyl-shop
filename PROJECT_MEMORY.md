@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜店主試聽點選 50 張爭議盤，29 張改格；歸納出店主的三軸標準
+
+- **改動**：試聽頁（artifact，50 張、db 存點選）店主逐張點格：同格 20、改格 29、不確定 1。29 張寫進 `overrides.json`（累計 556），原始點選存 `batch-progress/mood-axes/owner-review/picks.json`。標準歸納寫在 `rulings.md`：能量＝張力／不安定（不是有沒有鼓）、色溫＝旋律清楚度、質地＝尖細輕／厚密重。**尚未套到全池**——等店主確認標準。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/owner-review/*`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：49 張點選全部落在店主選的格；gate 綠。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 3 輪 md16／ml16：冷 cloud rap／beat tape 38＋暖 jazz-rap／南方慢饒舌 27 張上線，落格 37/38、25/27
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 3 輪，本工作階段負責 md16、ml16。md16（`add-20261023-md16`，頹靡：cloud rap／sad rap 冷盤＋md24 冷 beat tape）：Lil Peep 4、Night Lovell 3、Yung Lean 3、DJ Krush 2、Sixtoo 2、Odd Nosdam 2、BONES 2、Ghostpoet 2、Req 2、Blue Sky Black Death 3（含 & Alexander Chen）、Kid Cudi《Man on the Moon II》、billy woods《Dour Candy》、Tha Blue Herb《Sell Our Soul》、Shabazz Palaces《Quazarz vs. The Jealous Machines》、Coby Sey、Corbin、M Huncho、Babyfather、Wicca Phase、LUCKI、Black Kray、Mr. Mitch、Wen。ml16（`add-20261023-ml16`，恍惚：jazz-rap 暖盤＋ml17 G-funk＋ml18 南方慢饒舌）：P.M. Dawn 2、Q-Tip《Kamaal》、Talib Kweli & Madlib《Liberation》、Quelle Chris & Chris Keys《Innocent Country 2》、The Nonce、S.L.A.C.K. 3、蛋堡 3、Mac Miller《The Divine Feminine》、Isaiah Rashad、Maxo、Domo Genesis、Big Moe 3、E.S.G. 2、MJG、Curren$y 3、Devin the Dude 2。

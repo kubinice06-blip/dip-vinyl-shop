@@ -208,3 +208,13 @@
 - **回頹靡／平靜的**：Scott Walker 四張、Sunn O)))、Penderecki《Threnody》《St Luke Passion》、Ligeti、Galás 三張、Current 93、AMM、Kevin Drumm、KTL、Lustmord、Ben Frost、Low《Double Negative》、Swans《Soundtracks for the Blind》、Feldman 以外的現代古典（Boulez、Berio、Stockhausen、Saariaho、Carter、Ferneyhough）等。
 - **八格**：冷冽 1,064→1,035、亢奮 2,818→2,753、頹靡 1,249→1,314、平靜 1,320→1,349；錨點 104/104。
 - **規則已改**：`score500/BRIEF.md` 酸的段落改成「安靜但有寒氣也算酸；推力只看打擊」。
+
+## 2026-10-23｜店主試聽點選 50 張爭議盤，歸納出的標準
+
+- **做法**：試聽頁 https://claude.ai/artifact/JD9bmK2ramyoC6UsmTrt8L ，50 張逐張試聽、店主點格。原判同格 20、改格 29、不確定 1（Scott Walker《The Drift》）。29 張照點選寫進 overrides（`owner-review/apply.mjs`，只動翻過去的軸、推到門檻另一側中度值），`owner-review/picks.json` 存原始點選。
+- **翻得最多的是能量（20 張）**，而且一面倒是「靜→躁」：Feldman《Rothko Chapel》、George Lewis、Ligeti、Penderecki、Kancheli、Tim Hecker《Konoyo》→冷冽；Mica Levi、Galás、《藍鬍子城堡》、Weinberg、蕭士塔高維契 8、PJ Harvey《White Chalk》、Velvet Underground & Nico、光束夜 →亢奮。同時這些維持靜：Sunn O)))／Boris《Altar》、Earth 2、Bohren、Nico《Desertshore》、Jóhannsson《Arrival》、Low《Double Negative》、Harold Budd、Slint、Sigur Rós《Von》。
+  → **店主的能量軸是「張力、不安定」，不是「有沒有鼓」**：不和諧、尖、不可預測、讓人坐不住的，再安靜也是躁；沉、慢、把人包住往下拉的（drone、doom、dark ambient、slowcore）才是靜。這推翻了 10-22「躁要有打擊在推」與今天 drive-fix 的撤回邏輯（Ligeti、Penderecki、Galás 被店主拉回躁）。
+- **色溫翻 10 張，幾乎都是暖→冷**：Pharoah《Karma》《Elevation》、Alice Coltrane《Journey in Satchidananda》、Boredoms《Super ae》、Fuck Buttons、Brotherhood of Breath、Nicole Mitchell、Enrico Rava。同時 Mingus《Black Saint》、Melt-Banana、Cecil Taylor《Hard Driving Jazz》留暖，Lankum 反而冷→暖（恍惚）。
+  → 跟店主自己說的一致：**色溫看旋律清不清楚**。有唱得出來的旋律、調性明確 → 暖；旋律不明、靠即興、音色、噪音撐的 → 冷，不管樂器多溫潤、多「靈性」。
+- **質地翻 9 張**：Penderecki、Ligeti、Tim Hecker、Reznor/Ross 被判輕（尖細高音、冷光）；Don Cherry、PJ Harvey、Rava、Alice Coltrane、Psycho 被判重。→ 尖、細、高頻的算輕，厚、密、低沉的算重。
+- **離群值**：Herrmann《Psycho》店主選沸騰（暖）；Keith Jarrett《Köln Concert》選雀躍（躁）——旋律明確且頑固低音在推，符合「旋律＝暖」「推進感＝躁」。
