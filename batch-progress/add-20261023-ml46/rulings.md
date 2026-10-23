@@ -49,3 +49,9 @@
 - **19854** 第二句句型配表（避開 ml43 已上架「1984 年生於巴爾的摩的 Alex Somers」「生於田納西的 Matthew Cooper」「Eluvium 是 Matthew Cooper 的藝名」與 ml43 Olan Mill《Paths》的「兩人名字＋此時組成」）：Siblings 2＝「兩張都出自 Alex Somers」（掛名欄＋身分）；Pine＝「Olan Mill 由⋯兩人組成」（由）；Centres＝「受過古典聲樂訓練的」（訓練／身分）；The Airship＝「Port Blue 是」（是）；Inventions＝「來自」（樂團關係）。無藝人跨兩張，「他／她」引入法不需分軸；各張首次代稱照上列領句。
 - **19855** 「日」後一字配死：與（Siblings 2）／由（Pine）／成（Centres）／推（The Airship）／交（Inventions），並避開 ml43 Hammock 的「日自」。媒體名、榜單名次、樂評分數一律不指派（Billboard Heatseekers、Metacritic、Pitchfork、mxdwn、A Closer Listen、Sputnik 皆未進 note）；聲音描述寫成「樂評說」或「兩人形容」。研究稿 sound 欄的 The Airship「弦樂取樣與暖合成器墊」不在 facts，不指派；Siblings 的「磁帶」照研究層不寫。
 - **19856** 腳本：`node qa-batch.mjs hooks add-20261023-ml46` 全部通過；`node chk-hook-crossgroup.mjs add-20261023-ml46` 全部通過（4 組 5 張，hook 加權 17–22.5、note 172–238；只報不擋的一般否定句 2 筆＝Siblings「沒有鼓」、Pine「沒有打擊樂」，屬聲音內容非校對痕跡，保留）。
+
+## 寫作層（writer-1）
+- **19861** 交件：`desc-tools/batches/output/add-20261023-ml46-out-1.json` 5 張（full 4：Siblings 2 240、Pine 206、Centres 233、Inventions 232；thin 1：The Airship 170）。`qa-batch out` 全過、標記 0；`qa-check-research` 全部通過；`fix-spacing` 0 處；「據」字 grep 0。初稿無超標、無掉下限（Siblings 2 改寫後一度 241，刪「是」字回 240）。
+- **19862** 第二句領句全照 19854（兩張都出自／由⋯兩人組成／受過古典聲樂訓練的／Port Blue 是／來自）。note 已排除媒體名與榜單名次，正文樂評內容只寫「樂評說」「兩人形容」，不具名。
+- **19863** 跨張自掃：本批 5 張 han() 4-gram 2 張以上 0 條。另對 ml40–ml45 已上架 out 合掃，拆掉 `年月日由`（池中 5）、`日由發行`、`年月日推`／`月日推出`、`年月日交`、`年月日上`、`首張專輯`、`國製作人`、`的第一張`、`在年月日`、`把它發行`、`交給發行`；自改途中長出的 `是年月日` ×3（本批）也已拆。因此偏離 19855 的「日」後字配表：Siblings 2＝日與（照表）、Pine＝日英（日期改領句，前字「斂」）、Centres＝日成（照表）、The Airship＝日公（池中「日推」已 3）、Inventions＝日開（池中「日交」已 3）。剩 `管風琴與`（樂器名，豁免）。可逆。
+- **19864** 否定句：Siblings 2「不用鼓」、Pine「打擊樂一件也沒用」照 19856 視為聲音內容保留；The Airship 時序照 note 標「約半年後」。
