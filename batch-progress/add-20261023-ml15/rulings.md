@@ -13,3 +13,13 @@
 - Trinity Roots、Fat Freddy's Drop（紐西蘭 roots／dub-soul）近 ml9 場景，ml9 已上線，本批收。
 - 研究層每支 WebSearch ≤3；facts 必含 2–3 條聲音事實；與 moodGuess 不符的標「moodGuess 存疑」——**特別是乾淨明亮、lounge 化、拍子推進（breakbeat、四拍快）、器樂 dub 偏冷的**。
 
+
+## 研究 d 組
+- 15151：Cheb i Sabbah《Krishna Lila》moodGuess 存疑（明顯）。PopMatters 描述為以現場印度樂手為主的傳統 bhajan，dub 低頻證據僅 Laswell 貝斯與〈Raja Vedalu〉的 drum and bass 風拍子；偏靜暖成立，「重」存疑。建議主線複核或汰換。
+- 15152：Loop Guru《Duniya》moodGuess 存疑（中度）。以西方舞曲拍子驅動、取樣循環，無 BPM 與低頻來源；標籤 dubtronica／ambient。另有美版 1995 年曲序不同（換 4 首）。
+- 15153：Kaya Project《Elixir》找不到獨立樂評（Interchill／Bandcamp 404），聲音層僅 Discogs 錄音備註與曲名，標 thin；Johnny Kalsi dhol 與〈Raag To Ragga〉可能偏推進，速度未查到。
+- 15154：Sounds From the Ground《Kin》年份並存：MB／Discogs 英國 Universal Egg 版 1995，Waveform 美版與 Wikipedia 鏡像 1996。建議維持 1995。Lisa Fletcher 僅 Discogs 掛名作者，角色未寫。
+- 15155：Sounds From the Ground《Terra Firma》＝英國《Mosaic》（1999-11-18，Upstream）的美版（2000-05-30，Waveform），同一張碟，日後勿重複上架；年份取 2000 或 1999 由主線定。
+- 15156：Gaudi + Nusrat《Dub Qawwali》身分與聲音皆支持 moodGuess；「新發現 1960 年代末至 70 年代初錄音」僅 Exclaim! 單一來源。
+- 15157：Cheb i Sabbah《Shri Durga》大致支持；Discogs 主版本為英國 Nation 版，MB 為美國 Six Degrees 版，兩廠牌並存。Exclaim! 稱 dub 克制，低頻厚度證據不足。
+- 皆無「建議移除」，無選輯／重發問題；未推翻策展層廠牌、年份（Kin 年份並存、Terra Firma 英國原名《Mosaic》為補充而非推翻）。
