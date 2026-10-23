@@ -24,3 +24,19 @@
 - 15862：廠牌並存——Mercury Rev（US Partisan／歐洲 Bella Union）、Spiritualized（全球 Fat Possum／英歐 Bella Union）、Schnauss 2013（歐 Scripted Realities／美加 Domino）、2016（歐 Scripted Realities／美 [PIAS] America）；卡單 label 不推翻。
 - 15863：Schnauss 兩張 2019 年被重錄（Rebound／Tomorrow），卡是原版；試聽須放 2013／2016 原版。
 - 15864：moodGuess 存疑——Spiritualized《Everything Was Beautiful》（推進鼓點、銅管弦樂爆發，x 恐 ≥3）、Schnauss《No Further Ahead Than Today》（energized/up、motorik、響度大，x 恐 ≥3，最強烈）、Peaking Lights（持續 dub 節拍、旋律亮糖，x 2.8–3.3、y 恐 0.5–1.0）、Schnauss《A Long Way to Fall》（y 輕度存疑，晶亮多於濃稠；x、z 成立）。Mercury Rev 成立無存疑。
+
+## 研究 b 組
+- 15851：b 組 5 張全 full（10–12 條 facts）。WebSearch 用 1 次（Ouroboros 錄音與製作）；其餘走維基 raw、Pitchfork／Guardian／Consequence／PopMatters／Glide／Relix／Rolling Stone 網頁與 MB API。AllMusic、Metacritic、EW、Jambase、Pitchfork 2008《Pacific Ocean Blue》頁 403，未開。
+- 15852：沒有推翻策展層的身分、年份、廠牌。American Head 的 MB 首發日 2020-08-28 與維基／Pitchfork 的 2020-09-11 不同（推測是單曲或預先上線版，來源未明說）；寫作層只寫 2020 年。Ouroboros 的 Drowned in Sound 把廠牌寫成 Columbia，與 MB／維基 RCA 不符，以 RCA 為準。
+- 15853：moodGuess 存疑（細節在各卡 notes）：
+  - Ouroboros：質地合格（長殘響、鍵盤墊厚），但樂評有「發燒夢般的電吉他過載」「模糊噪音牆」「urgent, angst-ridden」「alternately calming and aggressive」「haunting／darker side」，Pink Floyd 式鬼魅偏冷；x 恐 2.8–3.2、z 恐中性或偏冷，貼邊，建議備取。
+  - King’s Mouth：策展層說同 Soft Bulletin 的暖霧，樂評不支持——Guardian「stripped-down, less widescreen」「electronics that sound like electronics」，Consequence「bright melodies」「acoustic strumming」，Pitchfork「breezy」；乾淨輕盈，y 恐只有 0–0.5，是本組最弱的一張，建議汰換候選。
+  - Pacific Ocean Blue：質地強（cavernous、reverb-drenched），但情緒是 brooding、on edge、fatalistic、ominous，且有突發的定音鼓加銅管爆發；z 恐 0.0–0.5、x 恐 2.5–3.0，貼邊。
+  - Big Inner：包覆感夠（絲絨靈魂、銅管弦樂福音墊），但有可跳舞的貝斯線、無調薩克斯風嘶鳴與「subtle uneasiness」；x 恐 2.6–3.2，y 低頻無直接描述。
+  - American Head：維持 moodGuess（中慢板抒情、夕陽氛圍、人聲裹效果器），y 證據偏間接。
+- 15854：Pacific Ocean Blue 的 Caribou 合約下其他海灘男孩本不應上專輯（Doe 文），facts 未採；Wikipedia 引 Al Jardine、Brian Wilson 的話屬第二手，以維基為來源帶過一條。
+
+## 研究 e 組
+- 15881：Pure X《Angel》moodGuess 強存疑——PopMatters 樂評與團員訪談兩獨立來源皆稱這張剝掉殘響與失真、為三張中最清楚，主體是輕刷原聲吉他加耳語人聲、多數曲現場錄；「濕殘響吉他、假音」查無來源。體感乾淨有空氣，y 建議降到約 0 或汰換；x、z 尚可。Qobuz 寫 5/5 發行與 Fat Possum／Discogs 的 4/1 不合，不採。
+- 15882：Manual《Bajamar》moodGuess 存疑——Darla 官方稱「幾乎全由處理過的吉他構成」，無合成墊來源；旋律輪廓淡（Brainwashed 缺主導樂器、PopMatters 極簡需適應）。有 Brainwashed「溫暖而夢幻」與 Darla「溫暖有機」支持暖。建議 z 0.2～0.3、y 0.7～0.9 或視標準去留。發行日三處不一致（MB 2006-01 DK／2006-05 US、Darla 頁 07-24），寫作層只寫 2006 年。無鼓為推論，sound 欄寫「沒有明顯節奏」。
+- 15883：e 組 WebSearch 共用 3 次（Pure X、Bajamar 各 1、Pure X 補查 1）；Pitchfork 類站未取得，Pure X 錄音地點與製作人查無來源。
