@@ -125,3 +125,11 @@
   - `Kave|Ominousium`：hook「評者形容它像一顆雪球，滾成無情的雪崩。」是轉述單一評者的評價，改為不掛來源的聽感描述「像一顆雪球，滾著滾著就成了無情的雪崩。」（研究 d 組聲音描述：沉重氛圍一路推向高潮）→ 222 字；已同步 hooks-d 與 writer input。
   - `Phonothek|Styx`：「與妻子 Nina 合作」的夫妻關係只見 Discogs 簡介單一來源（研究 b 組標註），改「與 Nina 搭檔」→ 231 字。
 - 21233：核過未改——Council of Nine《Davidian》Waco 圍困 51 天、76 人喪命（研究 c 組維基）；Ugasanie「polar ambient 的真正大師」是廠牌文案、非媒體；Fractalyst「最精簡、最赤裸」是廠牌自述；Vestigial 廠牌已照研究 e 組改 Cold Meat Industry、Altarmang 照研究 d 組寫卡帶附贈與 2017 擴充版。
+
+## 上線與評分（2026-10-23，主線）（條號 21234–21236）
+- **21234**：上線 33 張：card_catalog 33／33、KV 33 鍵回讀逐字一致（stamp 20261023r12）、試聽 31 ready／2 unavailable（Hoarfrost《Ground Zero》、Strom Noir《Glaciology》Apple 未上架；Petit、Skare、Altarmang 走 preview-override，Altarmang 取 Cyclic Law 2017 四軌版 Apple 1277967778）、seed +33、prepare／published gate 0 error（33 warning 皆 UPC 盡力而為）。封面 CAA 32（Keosz 原圖 live-check 500 改 front-500）、Apple 1（Skare，CAA 404），live-check 全 200、縮圖表目視相符。上線前對 origin 所有 `claude/*` 分支 seed＋10-23 卡單去重 0 撞。
+- **21235**：子曲風 warm-batch 33／33 有標籤；推不出節點的 Crypthios 補進 `genre-l3-artist-map.json` 的 electronic/ambient/dark-ambient，33／33 落位；類型樹與抽卡封面重建。
+- **21236**：**落格率 32/33＝97%**（`batch-progress/mood-axes/score-md29/`，照 10-23 體感標準）。評分 x 1.3–2.9、y 0.7–1.8、z −1.9～0.0；conf mid 26、low 7。出格 Jah Shaka《Imperial Dub》z 0.0 落恍惚（roots dub 器樂色溫判中性；ml38 池中先例器樂 dub 多判冷，這張貼 0）。貼邊：Iration Steppas《Original Dub D.A.T.》x 2.9（militant steppers）、Shrine《Ordeal 26.04.86》（蓋革計數器＋雷鳴壓迫，評者留靜側）。**冷硬器樂 dub 擴寫只收到 2 張、1 張貼 0**：頹靡缺量時 dub 場景要挑「明說 dark／cold」的 steppers，roots 器樂 dub 色溫風險高。頹靡格 1,480 → 1,512。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Dead Melodies、Ager Sonus、Hilyard、Ark Zead、Equal Stones、Philippe Petit、Fractalyst、Phonothek、Keosz、Sjellos、Void Stasis、Jah Shaka、Iration Steppas、Skare、Crypthios、Council of Nine、Ugasanie、Shrine、Sinke Dûs、Taphephobia、Kave、Altarmang、Shedir、Ajna、Beyond Sensory Experience、Vestigial、Hoarfrost、Strom Noir、Inner Vision Laboratory（29 位；已查 `data/artist-intros/` 與 progress.json 皆無）。
