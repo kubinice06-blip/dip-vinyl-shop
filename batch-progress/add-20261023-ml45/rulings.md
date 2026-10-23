@@ -33,3 +33,27 @@
 - 19563　Holt《Just the Two of Us》：Channel One 1982 年 3 月錄配混，製作人是 David White（策展層未提）；Radics 全班署名。無樂評，moodGuess 存疑（速度與低頻為推定）。
 - 19564　Holt《A1 Disco Showcase》：Discogs 備註節奏在 Channel One 錄、混音與 dub 在美國 Blank Tapes 由 D. Spear 做（非牙買加 Tubby／Jammy）；全盤 41 分鐘，六首 5:57–8:17。年份採 1980（Wikipedia 1981 不採）。moodGuess 存疑：dub 長度、殘響量與拍子不明，Sly & Robbie 的 rockers 拍恐較輕快。
 - 19565　Holt《The John Holt Showcase》：策展層「六首各接 dub 長版」查無證據（Discogs 僅六首、無時長、無 dub 標示）；製作署名 The Now Team，封面 Bunny Lee。moodGuess 存疑：1977 Bunny Lee 製作，flying cymbals 輕快鼓型風險高，建議主線汰換或降先序。
+
+## 研究 c 組
+- 19581　Cornell Campbell《Boxing》：身分、年份、廠牌（Starlight SDLP 908、1982）成立；Discogs 盤註 Channel 1 錄、Tubby's 混與配唱，Bunny Lee 製、Jammy 混。聲音無樂評；曲目有 Gorgon 時期標題（〈The Gorgon Is Back〉〈Natty Dread〉），維基稱 Gorgon 期是 Santa Davis flying hi-hat，moodGuess 存疑（可能輕快）。維基說〈Boxing〉熱門單曲是 Joe Gibbs 製，與本盤製作人不同，寫作層勿混。
+- 19582　Delroy Wilson《Go Away Dream》：身分成立（Black Music BMLP 803、1982）；reggae.be 證實 1982 年 5 月 Tubby's 剛錄完、Jammy 在場。全盤 12 首情歌，無 dub 段（dub 版在《Dubbing In The Backyard》）；鼓手同列 Sly 與 Santa Davis，Discogs 標 Lovers Rock，moodGuess 存疑；策展層『靈魂翻唱』無來源，不寫。
+- 19583　Delroy Wilson《Worth Your Weight in Gold》：人工身分成立（Burning Sounds BS 1060、1984）；Discogs master 備註：原錄音 1969–1978、Gussie Clarke 處理成延長版，六首 6:31–9:55 約 48 分鐘。推翻策展層『1984 Sly & Robbie 偏乾淨』的前提：樂手是 70 年代末錄音的延長，Discogs 標 Dub，但維基稱 Clarke 追求光滑與 discomix，速度與鼓型無來源，moodGuess 存疑。
+- 19584　Horace Andy《Sings for You and I》：Discogs 兩個 1978 版（牙買加 Total Sounds《…Yours》、美國 Clocktower《…I》）皆標 Compilation，三位鼓手兩位貝斯手並列，本質是 Bunny Lee × Tubby 彙編；仍保留（1978 同期原版、有定位），status thin。Santa Davis／Benbow 在列，flying cymbals 風險，moodGuess 存疑。維基列的 Striker Lee 1985 版是另一盤。
+- 19585　Horace Andy《Showcase》：身分成立（Tad's TRD LP 52880、1980；維基 1984 Vista Sounds 為另版，年份採 1980）。**推翻策展層『人聲接 dub』**：Discogs 三版皆為十首人聲曲，dub 要到後來 Deluxe Edition 才首度出現。Roots Radics 伴奏支持慢重，但速度與殘響無樂評，建議聽感驗證。
+
+## 研究 b 組
+- 19571：Osbourne《Never Stop Fighting》年份照原盤 1982 Greensleeves GREL 38（MB 首發 2010 為再版；Discogs master／Roots Archives 皆 1982）。Wailing Souls《On the Rocks》照 1983 GREL 59（MB 1997-12 為美版再版）。
+- 19572：推翻策展層『Osbourne 1969 年在 Studio One 以 rocksteady 出道』：Wikipedia 為 1967 年 The Wildcats、Studio One 出道單曲〈All I Have Is Love〉，未載 rocksteady；早年細節（Come Back Darling 年份）Wikipedia 與 United Reggae 兩說不一，facts 只取單一版本。
+- 19573：moodGuess 存疑三張請主線汰換或實聽：Osbourne（Greene 樂評寫 brighter／breezy、Discogs 風格含 Dancehall，單曲約 3 分鐘，不像慢板；Torn Light／Forced Exposure 兩頁 WebFetch 被擋，內容取自搜尋摘要）；Wailing Souls（Sly & Robbie 同掛名、Reggae LP Archives 標 Rub-A-Dub，可能偏快；無樂評）；Holt《Introspective》（『Part 1&2 人聲接 dub』無來源明講，Channel One Style 可能偏硬鼓點）。Holt《My Desire》與 Hinds《Just In Time》只有錄混人員可證，無聲音描述；Hinds 含流行翻唱，速度存疑。
+- 19574：Holt《Introspective》廠牌兩說並存（Discogs／Roots Archives No Entry DSR 2552；Wikipedia Dynamic Sounds），卡單 No Entry 不改；B 面曲名以 Discogs 註記為準（Brandy、Everybody's Talking，非 Roots Archives 的 Branded／Mr. Fix It）。
+- 19575：WebSearch 用滿 3 次；Discogs API、MB API、Wikipedia、Roots Archives 以 curl 取得。My Desire 與 Introspective 標 thin（聲音查無樂評）。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- 25 張全查不到專輯級樂評，聲音只能靠製作鏈與樂手欄推定；**只憑查無不汰**（池中同人：Wailing Souls 四張、Osbourne 多張、Justin Hinds《Jezebel》、Hollie Cook 兩張、John Holt《Police in Helicopter》都落恍惚），**有反證的一律汰**。
+- **汰 8 張**：
+  - 輕快鼓型／明亮：John Holt《The John Holt Showcase》（1977 Bunny Lee、flying cymbals 年代、無 dub 證據）、Cornell Campbell《Boxing》（Gorgon 時期 flying hi-hat）、Johnny Osbourne《Never Stop Fighting》（樂評 brighter、breezy，Discogs 標 Dancehall）、The Frightnrs《Nothing More to Say》（樂評「sun-splashed joy」、輕盈 60 年代風）、《Always》（評為 sparse）、Cornell Campbell meets Soothsayers《Nothing Can Stop Us》（樂評「開闊明亮」、Afrobeat 銅管、upbeat）。
+  - 非正規專輯：Horace Andy《Sings for You and I》（Discogs 兩個 1978 版都標 Compilation，三組鼓手、不同場次彙編）。
+  - 證據最薄且偏輕：Ken Boothe & Jah Wobble《Old Fashioned Ways》（只有廠牌文案、3 分鐘流行翻唱〈My Girl〉〈Reggae Christmas〉；池中 Jah Wobble 盤 z 0.1–0.4 色溫貼邊）。
+- 不補位：策展已回報主場景見底。
+- 定案 **17 張**（a 4、b 4、c 3、d 3、e 3）：John Holt 6（Sweetie Come Brush Me、For Lovers and Dancers、Just the Two of Us、A1 Disco Showcase、My Desire、Introspective）、Justin Hinds《Just In Time》、Wailing Souls《On the Rocks》、Delroy Wilson 2、Horace Andy《Showcase》、Alton Ellis《A New Day》、Cornell Campbell《Rock My Soul》、Horace Andy & Jah Wobble《Timeless Roots》、Frightnrs《More To Say Versions》、Hollie Cook dub 版 2。汰除卡存 `dropped-cards.json`，研究稿移到 `dropped-research.json`。研究 qa-batch 全過。
+- 研究層更正：Horace Andy《Showcase》與 John Holt《A1 Disco Showcase》以外的「人聲接 dub」說法查無（Showcase 三版本皆十首人聲曲）；A1 Disco Showcase 的 dub 混音在美國 Blank Tapes（D. Spear），不是 Tubby／Jammy；Just the Two of Us 製作人 David White。
