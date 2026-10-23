@@ -37,3 +37,15 @@
 - **13418**（Air《Live Air》）：身分吻合；Discogs 確認 A 面 1976-07-01 Studio Rivbea、B 面 1977-10-28 密西根大學兩場現場，官方正規發行非 bootleg。策展層『拉弓』『快速』無來源。風險低。
 - **13419**（Muhal Richard Abrams《1-OQA+19》）：身分吻合（Black Saint，錄於 1977-11／12 紐約；維基導言 1977、資料欄與 MB 1978，採 1978）。有鼓、快獨奏、和聲密集。**moodGuess 存疑（中）**：鋼琴與合成器、和聲密集恐把 y 推到 0 以上；〈Balladi〉〈Charlie in the Parker〉標題暗示慢段與 bebop 語彙（僅標題推論）。
 - **13420**（保留，未用）：本組未推翻年份、廠牌、盤名；MB flag 三張不在 b 組。WebSearch 用 3 次（Congliptious、Duets、80° Below ’82）。Discogs／MB 站頁面 403 或驗證牆，改用 Discogs API；引文評分多來自維基頁轉述，AllMusic 全文未開。
+
+## 研究 c 組
+- **13421**（Abrams《Lifea Blinec》）：身分吻合（Arista Novus AN 3000，1978-02 芝加哥 Streeterville）。**推翻策展層**：「七人小編制」實為五人（Abrams、Jarman、Ewart、Myers、Barker），MB 掛 Orchestra 是名義。moodGuess 輕度存疑：《紐約時報》稱厚段落混濁（y 可能偏重），題獻 Bud Powell 的曲可能回暖。
+- **13422**（Jenkins《The Legend of Ai Glatson》）：身分吻合（Black Saint BSR 0022，1978-07 米蘭）。**推翻策展層**：編制是小提琴＋鋼琴（Anthony Davis）＋打擊（Cyrille），無低音提琴；「快鼓」查無來源。Penguin 指有 Cecil Taylor 影響，moodGuess 成立。
+- **13423**（Jenkins《Space minds…》）：身分吻合（Tomato TOM-8001，錄 1978-08/09、發行 1979）。**moodGuess 存疑（中）**：A 面 21 分電子樂器組曲（Moog、電鋼琴）較響，B 面「Play soft」四首原聲短曲約 17 分帶藍調底色，整張橫跨兩種性格，非「無調弦樂室內樂」。
+- **13424**（Lake／Hemphill《Buster Bee》）：MB flag 核對——原盤確為 1978 Sackville LP 3018（錄 1978-03-01 多倫多），卡單 1978 正確；正規發行非 bootleg。**moodGuess 存疑（中高）**：樂評一致用抒情、搖擺、親密、節奏藍調根底；無鼓無貝斯純雙薩克斯風，x／z 恐偏離。
+- **13425**（Hemphill Quartet《Flat-Out Jump Suite》）：身分吻合（Black Saint BSR 0040，1980-06 米蘭）。**moodGuess 存疑（高）**：Penguin 明言「remarkably quiet album that requires some concentration」，無貝斯、大提琴帶藍調味；很可能判靜，建議汰換或重估。
+- **13426**（Lake《Holding Together》）：身分吻合（Black Saint BSR 0009，1976-03 紐約 Generation Sound）。**推翻策展層**：「五重奏」實為四人（Lake、Jackson、Hopkins、Maddox）；「首作」說法不成立（Lake 此前已有個人專輯）。編制含電／原聲吉他、電曼陀林、竹笛與人聲，輕度存疑。
+- **13427**（Lake《Shine!》）：身分吻合（Arista Novus AN 3010，錄 1978-10/11、發行 1979；A 面兩首標籤曲序被印反）。A 面約十人含三把小提琴與大提琴、B 面為薩克斯風＋電吉他＋人聲＋鼓三人（現場錄音室觀眾）。「小編制」說法修正；找不到可靠樂評，聲音描述僅憑 Discogs 製作名單，輕度存疑。
+- **13428**（Lake Quintet《Prophet》）：身分吻合（Black Saint BSR 0044）；維基條目稱 1980（錄音年），Discogs／MB 發行 1981，卡單 1981 正確。**moodGuess 存疑（中高）**：AllMusic 稱「relatively straight-ahead」，一半為 Dolphy 曲、標準五重奏格局加電貝斯，很可能判偏暖；「大跳音程、尖細蘆管」查無來源。
+- **13429**（Revolutionary Ensemble《Vietnam》）：現場盤確認——1972-03 Peace Church 現場，樂團自製，ESP-Disk ESP 3007 正規發行，非 bootleg。moodGuess 輕度存疑：Cooper 的鼓是重音式而非持續推進，兩首各 23／24 分長即興，Penguin 說比表面尖銳更細膩；x 3.5 可能略高。專輯名由來查無來源，不寫。
+- **13430**（總則）：本組未動卡單。WebSearch 用 2 次（Shine! 人員、Flat-Out Jump Suite 樂評）。AllMusic／All About Jazz 皆 403，Wikipedia 無獨立條目的 Holding Together、Shine! 改用 Discogs API 製作名單。所有聲音描述均憑文字來源，無人聽過。存疑清單依強度：Flat-Out Jump Suite（高，偏靜）＞Buster Bee（中高，偏暖柔）＞Prophet（中高，偏暖）＞Space minds（中）＞Lifea Blinec／Holding Together／Shine!／Vietnam（輕）；Ai Glatson 成立。
