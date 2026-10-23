@@ -90,3 +90,25 @@
 - **14859** n-gram 自查（中文 4-gram，專名、樂器名不算）：hook 對 hook 原有「錄音機錄」（Wondrous Bughouse × Forget the Mantra）一條，YL hook 改成「家裡錄好的 demo，被帶到亞特蘭大重錄」、note 拿掉「錄音機」，現 0 條；hook 對他卡 note 0 條；hook 與自卡 note 無逐字重複句。
 - **14860** 腳本：`node qa-batch.mjs hooks add-20261023-ml11` 全部通過（初跑旗標「年份?1960」已改中文年代；IEOIYW 互指 George van den Broek 已改不帶本名）；`node chk-hook-crossgroup.mjs add-20261023-ml11` ✓ 全部通過（5 組 27 張，hook 加權 12–22、note 140–236）。輔助腳本在 scratchpad `hook-ml11/`。
 - 鉤子交件後主線再汰 1：Yellow Days《Harmless Melodies》（7 首約 25 分鐘，鉤子層據研究稿稱「迷你專輯」，屬 EP 型態，照「只收正規專輯」汰）。定案 **26 張**。
+
+## 寫作層（writer-1）
+- **14861** 交件 `desc-tools/batches/output/add-20261023-ml11-out-1.json` 13 張（full 11、thin 2），key 逐字同序。字數：Purple Noon 228｜Mister Mellow 231｜Landscapes 212｜Ducktails 215｜Butterfly Case 211｜Red Rocket Telepathy 124(thin)｜My Bedroom Floor 185｜Inner Mansions 203｜Forever 205｜Wondrous Bughouse 194｜Hearts 160(thin)｜Swung 200｜Ontario Gothic 214。零超標、零回頭刪節。
+- **14862** 第二句照 note 指定領句；與 hook 撞字處改具名或改說法：Hearts 的「一人專案」改「獨自掌管的名號」，Landscapes 的「個人計畫」改「回到家鄉後一個人做的 lo-fi 計畫」（「的個人計畫」與 writer-2 兩張合成 3 張同構），Ducktails 改「卡帶式個人名號」。
+- **14863** 轉述引導詞：Ducktails note 的「據載一天錄成」直接寫成陳述句（note 已指派該格）；廠方文案（Purple Noon）、樂評（Landscapes、Ducktails、Butterfly Case、Forever、Ontario Gothic）一律不具名，寫成「這張把…」「評論形容／建議／說」；媒體名、榜單名次、分數皆未寫。My Bedroom Floor 初稿「沒有人聲」屬否定句且與「純器樂」重複，刪。
+- **14864** 日期「日」後一字照鉤子層 14857：由／交／日／透／在→（My Bedroom Floor 改成「同一年的 12 月 30 日，他在」，日後一字為他）／發／經／上／放／先／正；日期前一字逐張不同（Purple Noon、Hearts 讓日期領句，前字分別為「法」「號」；Inner Mansions 改日期領句、前字落在「的」）。
+- **14865** 跨兩檔合掃（out-2 已在檔）：初稿 3 張以上同構 3 條（「首約分鐘」×5、「在年月日」×4、「首張專輯」×3）全拆；再掃長出「的個人計畫」×3（含 writer-2 兩張），改 Landscapes。現 3 張以上 0 條；2 張殘片剩「錄音室專輯」「夢幻流行」（樂種詞）、與 out-2 的「年月日發行」「以…為名這」「用…之名做」「自行發行」等通用短語，留待主線收件合掃。腳本：qa-batch out 本檔 0 標記（out-2 Rangers thin 182 屬 writer-2）、qa-check-research 0 標記、fix-spacing 0 待補。輔助腳本在 scratchpad `wr-ml11-1/`。
+
+## 寫作層（writer-2）
+- **14866** 交件：`desc-tools/batches/output/add-20261023-ml11-out-2.json` 13 張（full 6：192–237；thin 7：133–175）。逐張：Dandelion Gum 237｜Eating Us 237｜Start a People 212｜Falling Through a Field 161｜Imaginary Falcons 147｜Under the Weather 151｜YCHWYW 192｜Fading Parade 237｜Headroom 162｜Angel Youth 156｜Suburban Tours 173｜Forget the Mantra 231｜IEOIYW 133。初稿 Dandelion Gum／Eating Us 各 247、Suburban Tours 182 超帶，整格捨去（「刮了會香」修飾、「並沒有被洗掉」、「操刀」改「製作」、Rangers「斷斷續續」與「唱片」）。`qa-batch out`、`qa-check-research`（標記 0）、`fix-spacing`（0）皆過；「據」字 grep 0。
+- **14867** 第二句全照鉤子層 note 指派領句，日期「日」後一字全照 14857（的／面／推／以／出／美／，／自／首），日期前一漢字逐張不同（至／片／於／年／品／靈／（句首）／輯／張）。為避合掃同構，指派領句有三處小改字：FTAF「在匹茲堡」→「便於匹茲堡」（與 Start a People 撞「在匹茲堡」）、Fading Parade「以…為名，這回」→「借…為名，此番」（撞 writer-1 Wondrous Bughouse）、YCHWYW「用…之名做」→「以…之名玩」（撞 writer-1 My Bedroom Floor／Purple Noon）、Nightlands「個人計畫」→「單人計畫」（Under the Weather 與 writer-1 Landscapes 已兩張）。可逆。
+- **14868** Fading Parade note「廠方稱是紮實的聲音之牆」與 hook「疊成一道牆」重複，第二句後改寫成「Moog 與弦樂再砌上去，讓那道牆更加紮實」，不複述 hook、也不帶廠方出處。Forget the Mantra 保留「廠牌把那些雛形叫作他夢境的實地錄音」（note 指派、屬外人之口的命名，不是消息來源引導詞）；YCHWYW／Nightlands 的「樂評說／樂評形容」不具名。Under the Weather 憂鬱一格只寫「巡演把自己壓垮、心情滲進音樂」，不加渲染。Headroom 不寫「所以」式因果，只並列 Proulx 入團時間與輪唱名單。
+- **14869** 跨兩檔合掃（han() 4-gram，專名／樂器名不算）：3 張以上 0 條。剩 2 張的兩條：「出第一張」＝IEOIYW hook 原文 × writer-1 Red Rocket Telepathy 正文（hook 我方不能改，請主線看是否由 writer-1 那邊改）；「在舊金山」＝地名＋介詞（YCHWYW 指派領句 × Suburban Tours）。途中拆掉：「在舊金山」×3、「完成年月」、「年月由發」、「才第一次」、「這張是他」、「全長約分」、「自行發行」、「月日發行」、「計約分鐘」、「首歌加總」。
+- **14870** Eating Us 照 14829 寫「Tobacco 後來說」不加引號；粗口原句、評分、媒體名與媒體榜名次全數不寫。卡單更正後的廠牌（Graveface、70s Gymnastics、Night People、Gnomonsong、Spirit Goth、Good Years）照 note 寫。輔助腳本在 scratchpad `wr-ml11-2/`。
+
+## 主線審稿（14871–14880）
+- **14871**：2026-10-23 主線逐張審 26 張（全文印出對回研究稿與 note）。改 3 處：
+  1. `desc2:Black Moth Super Rainbow|Dandelion Gum`：刪「這也是樂團商業與評論成績最好的一張。」——單一來源（維基）評價句，依「單源評價句刪」；研究稿 fact 與鉤子 note 保留原文不動（評價句不動事實，只是不進正文）。
+  2. `desc2:Black Moth Super Rainbow|Falling Through a Field`：「1996 年起便於匹茲堡錄」→「1996 年起就在匹茲堡錄」（寫作層躲同構改出的病句）。
+  3. `desc2:Papercuts|Fading Parade`：「借 Papercuts 為名，此番帶著完整樂團」→「以 Papercuts 為名，這回帶著完整樂團」（同上，語感）。
+- **14872**：其餘 23 張逐張審過未改字；媒體名、榜單名次、「據說」掃過 0 處。qa-batch out／qa-check-research／fix-spacing 改後重跑全過。
+- **14873**：試聽 25 ready／1 unavailable（Teen Daze《My Bedroom Floor》Apple 無條目）；Vansire《Angel Youth》、Yellow Days《Is Everything Okay in Your World?》藝人目錄人工配對（`preview-override.json`）。封面 26 張皆 CAA release-group front（meta HEAD 200）。冷門軸照 Last.fm 機器基線；Vansire《Angel Youth》listeners 139 萬偏高，查為〈Metamodernity〉爆紅帶動，保留。
