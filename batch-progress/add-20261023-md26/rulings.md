@@ -117,3 +117,10 @@
 - `desc2:Radare|Im Argen` 刪「在樂評筆下，它把聚光燈打在尚未寫出的故事上。」——單一樂評（A Closer Listen）比喻式評價句；事實層未動。
 - `desc2:Dead Neanderthals|Life` hook「半小時的完全靜止」→「三十多分鐘的完全靜止」——研究稿曲長 36 分 10 秒，「半小時」與事實不符；已同步 hooks-d 與 writer-2 輸入。
 - 其餘 26 張逐句對回研究稿（Ragnarok 2003–2016 寫作、Geilo 冰面打擊；Birna 第六張；Von Till 小學老師／穀倉錄音；NSB 三張限量載體與重發；Hyrule Shark Men SMR018；Elegi 題詞與 This Is Darkness 聲音描述；Skelton 喪妻與 Sustain-Release）無誤，未改字。保留的樂評句都是聲音描述（Craters 回授時間點、Hyrule「緩慢而審慎」、Elegi 舊鋼琴小提琴、DED 與 Morricone 相比），不是好壞評價。正文無媒體名、榜單、據說。
+
+## 情緒評分（上線當天，`batch-progress/mood-axes/score-md26/`）
+- 28 張照 10-23 體感標準打分（conf mid 15、low 13）→ merge → build-priors → build-scale v0 → build-card-moods（錨點 104/104）。
+- **落頹靡 28/28（100%）**；x 1.1–2.6、y +0.6～+2.0、z −0.4～−1.6。最貼邊：Hare and the Moon《Wood Witch》y 0.6、Bersarin Quartett z −0.4～−0.5（旋律較清楚）、Wardruna x 2.4–2.6（儀式框鼓判催眠＝靜）。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Steve von Till、Natural Snow Buildings、Fursaxa、The Hare and the Moon、Radare、Mansur、The Thing With Five Eyes、Dead Neanderthals、Bersarin Quartett、Mohn、Elegi、Richard Skelton（12 個掛名；Wardruna、Darkher、Svarte Greiner、Thomas Köner 已有介紹）。
