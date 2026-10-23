@@ -50,3 +50,25 @@
 - 20248：《Shards and Constellations》錄音室（Challow Park 2019-04-13）；樂評反覆用 lyricism、lovely、serene and playful，兩首借曲（Abrams、Jenkins）；暖風險中偏高。MB 曲名『Alber Ayler (His live…)』為拼寫錯，facts 用 Albert Ayler (His Life Was Too Short)。
 - 20249：《Cub(an)ism》錄音室（蘇黎世電台 2016-12），樂評聲音混合（sparse／dense ostinati／intensity and restraint），無明顯推翻。Jazzwise／AAJ 頁 403，引文取自搜尋摘要與 Intakt 評論彙整頁。
 - 20250：本組 WebSearch 使用超過 3 次（派工誤解為每張 3 次），之後改用 WebFetch／API；其餘 notes 內有各卡 moodGuess 存疑清單。星等一律不寫。
+
+## 研究 d 組（20231–20240）
+- 20231：《Wo der Kopf sitzt》正規藝人掛名裁定：Berliner Begegnung 是計畫名而非固定團體（MB、Discogs 各立 group；1983 年《ML BB 1》打擊手是 Peter Hollinger，1986 年這張是 Paul Lytton），不宜當單一藝人。建議卡單 artist 改『Wolfgang Fuchs, Fred Van Hove, Paul Lytton』，並把『Berliner Begegnung : Fuchs, Van Hove, Lytton』留作別名鍵（MB／Discogs 原掛名）。錄音 1986-06-16/17 FMP-Studio（Discogs 備註，單一來源），1987-07-02 發行，非現場。聲音層無樂評，status thin。
+- 20232：《El Laberint De La Memòria》強烈建議汰換：Free Jazz Blog（gentle、warm、romantic、lyrical、short poems、too sweet）與 Point of Departure（pure and luminous，製作人 João Santos 請他回應二十世紀西班牙鋼琴曲）一致指向柔和抒情，只有〈Pluja Sorda〉是內部鋼琴。推翻 curatorWhy 的『內部鋼琴、敲擊與快速音簇』。會判靜／暖。
+- 20233：moodGuess 存疑清單（各卡 notes 有詳述）：Twelve Tone Tales Vol. 1（Intakt 文案含 Monk、Dolphy 主題與回到爵士的樂趣，旋律成分偏多，輕微）；Four Hands Piano Pieces（兩台鋼琴齊奏重風險、諧謔舞曲段暖風險，輕微）；Some Other Place（兩篇樂評皆有 Feldman 式極慢段、抒情慢板〈Blueshift〉、月光奏鳴曲式間奏，靜／暖風險中）；Mandorla（無本盤樂評，續集被評專注、較靜態，靜風險中）；Tempranillo（無本盤樂評，壓軸 Part VIII 為搖籃曲標題）；Float the Edge（無樂評，兩首十分鐘以上長曲，靜／暖風險中）；Passing Waves（重踏板低頻共鳴，重風險輕微，證據取自另一張獨奏的樂評）；Wo der Kopf sitzt（Lytton 署名含 Electronics、點描式易大片留白，靜風險）。
+- 20234：年份：《Twelve Tone Tales Vol. 1》錄音 2005-06-14/16，Intakt CD 115 官網與 Discogs 皆 2006，MB 2005 是錄音年；建議卡單 year 可保留 2005 或改 2006，主線定。《Passing Waves》錄音 1997-05-15、發行 1998。《Tempranillo》錄音 1995-11-24、發行 1996。《Mandorla》錄音 2001-11 到 2002-05，發行 2002。
+- 20235：廠牌：《Tempranillo》Discogs 掛 Música Secreta（NCM4，版權 Edicions Nova Era），維基寫 Nova Era，卡單 Música Secreta 保留。《Mandorla》卡單寫 Dewdrops Records，Discogs 與 Rigler 官網為 DewDrop Recordings，建議改。
+- 20236：WebSearch 本組用滿 3 次（Four Hands、Twelve Tone Tales、Wo der Kopf sitzt 各一，後再多一次查 Fernández，共 4 次，超 1 次，之後改用 WebFetch 與 API）。AllMusic、jazzmusicarchives、Squidco、AAJ 多為 403；Wikipedia 無 Fernández、Rigler、Fuchs 英文條目（404）。星等一律不寫。
+- 20237：Takase 家的『Trost 為奧地利廠牌』無來源，不寫；Tempranillo 的 nana（搖籃曲）為通識，寫作層用前須確認。
+
+## 主線：研究後汰換（不佔條號）
+- 研究層聲音與 moodGuess 不符，直接汰 18（卡單、研究稿、`pick.json` 同步移除，45 → 27）：
+  - 現場：Crispell《Spirit Music》（Soundscape 1982 公開演出＋紐約大學）、Gratkowski & Gräwe《VicissEtudes》（Discogs：live at LOFT Cologne）、Kaja Draksler《The Lives of Many Others》（Cankarjev Dom、Ljubljana Jazz 系列首演，高度疑似）。
+  - 判暖（旋律清楚／標準曲／抒情）：Shipp & Maneri《Gravitational Systems》（Greensleeves、Naima，perky and celebratory）、Fernández《El Laberint De La Memòria》（回應西班牙鋼琴曲目，warm、romantic、too sweet）、Kris Davis《Aeriol Piano》（Kern 標準曲抽象版、浪漫沉思）、Revis／Davis／Cyrille《City of Asylum》（straight-ahead、Monk、Jarrett〈Prayer〉）、Courvoisier–Feldman Quartet《To Fly to Steal》（lyricism、dancing melody）、Reid & Hawkins《Shards and Constellations》（lyricism、借曲兩首）、Sanchez《Mirror Me》（比 Malaby 盤更抒情、作曲直白）、Ortiz Trio《Hidden Voices》（accessible、借曲三首）。
+  - 判靜（留白、內省、極簡重複）：Courvoisier／Rothenberg／Sartorius《Lockdown》（reflexive、introspective、impressionistic）、Houle & Crispell《Any Terrain Tumultuous》（spare、stark、still）、Gräwe《Six Studies for Piano Solo》（〈Study I〉緩慢極簡重複約三成）。
+  - 判重（鼓組全力合奏）：Shipp Quartet《Points》（34 分鐘長曲、鼓＋貝斯）、《Critical Mass》（Dickey 鼓與打擊、21 分鐘）、Crispell／Workman／James《Gaia》（雙打擊、fierce；另有 joyous、hymn 暖風險）。
+  - 身分＋靜：《Wo der Kopf sitzt》（MB 掛名是 Berliner Begegnung 計畫名、正規應為 Fuchs／Van Hove／Lytton，改 key 牽動研究稿；Lytton 電子點描留白多），汰。
+- 候補 9 張都帶策展層自己標的 z／y 風險、且未經研究，不補位；照實上架 27。
+- 留下但存疑、交評分裁定：Shipp《Zo》（dark, forbidding；Summertime 改編）、《2-Z》（Mitchell 留白）、《Symbol Systems》（pensive）、《Thesis》（fiery lyricism）、《By the Law of Music》（結尾 Ellington〈Solitude〉）、《Circular Temple》（鼓全程）、Crispell & James《And Your Ivory Voice Sings》（鋼琴＋鼓 explosive、壓軸〈After the Rain〉）、《Ithaca》（skeletal、短曲）、《Magnetism》（無鼓短片段）、《Some Other Place》（Feldman 式慢段）、《Signs and Epigrams》（ferocity＋Soliloquy 慢段）、《Hôtel Du Nord》（ethereal）。
+- 研究推翻照研究稿：《Ithaca》年份改 2004（Discogs／維基／Intakt；MB 2005-03 對不上）；《Twelve Tone Tales Vol. 1》年份改 2006（Intakt 首發；MB 2005 為錄音年），廠牌補 Intakt Records；《Thesis》廠牌補 hatOLOGY；《Mandorla》廠牌改 DewDrop Recordings；Courvoisier–Feldman 四重奏鼓手是 Gerry Hemingway（策展層誤作 Cleaver）；《Symbolic Reality》Maneri 拉中提琴、1997–2001 Shipp 盤 Maneri 拉小提琴；《Magnetism》編制 Shipp／Rob Brown（兼長笛）／Parker、無鼓。
+- 研究層 WebSearch：d 組 4 次、e 組 10 次（誤讀上限），已記各組條號。
+- qa-batch research：27 張 key 一致、全過。
