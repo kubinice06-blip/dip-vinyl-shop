@@ -57,3 +57,9 @@
 - **撞池攔截**：策展層汰換區的《The Ligeti Project II》（Nott／柏林愛樂 2002）就是池中已有的 `Jonathan Nott｜Ligeti: Atmosphères / Lontano`（盤名寫法不同、去重沒抓到），不補回。
 - 留下的存疑張：Sicario（打擊推進，但無失真攻擊性，照 10-22 能量規則仍判靜）、Color Out of Space、Infinity Pool、Fortitude（有節奏段）、SH4／Homecoming（池中 Yamaoka 三張全落頹靡 x 2.2–2.5、y 1.3–1.4）。
 - 定案 **42 張**（a 9、b 8、c 9、d 9、e 7）。
+
+## 研究補件（5 張）
+- 17767：主線汰換後補研究 5 張（Korven《The Witch》→a、Reitzell《Hannibal S1 Vol.2》→b、Graves《Dead Space》→c、Bensi & Jurriaans《Enemy》→d、MKO & Poppen《Scelsi》→e），append 進各組既有稿，不動既有條目。WebSearch 用 3 次（Korven 訪談、Reitzell 樂評、Enemy 配樂樂評；Scelsi 改走 WebFetch 的 ECM 頁與 ECM Reviews，僅 Scelsi 另用第 4 次搜尋——超出上限 1 次）。status：Witch full、Hannibal S1V2 partial（聲音僅 Cyclic Defrost 單篇）、Dead Space full（單一 Wikipedia 條目）、Enemy full、Scelsi full。
+- 17768：推翻策展層 1 處——Scelsi 的 curatorWhy 寫《Okanagon》，本盤曲目無此作（Ohoi／Ave Maria／Anâgâmin／Ygghur I–III／Natura renovatur／Alleluja），寫作層勿提。Dead Space 卡單 label 空白，MB 為 E.A.R.S.（EA 自家），可補。Hannibal 策展層所稱『金屬噪聲』本卷查無來源，只證電子 drone、延遲與打擊閃現。
+- 17769：moodGuess 存疑——(a) Witch：純原聲、無鼓，但 1–3 分鐘短 cue、nyckelharpa 喀答與 jouhikko 刮擦為前景，持續低頻僅 waterphone 一項，y 風險；(b) Hannibal S1V2：打擊僅『閃現』、樂評稱『豐潤暖意』，冷度與『重』未證；(c) Dead Space：含頭目戰／追逐曲，突刺與大音量嘈雜段落可能拉躁，y 1.1 風險；(d) Enemy：低音大提琴長音支持靜冷，但有零星打擊、機械金屬質地與飽滿小提琴群，乾淨弦樂比例不低；(e) Scelsi：8 首中 5 首獨奏大提琴，乾淨弦樂佔比高，『drone』『擦弦噪聲』未獲來源，y 風險。
+- 17770：古典卡 yearVerified 已填：Witch 2016、Dead Space 2008、Enemy 2014、Scelsi 2006（錄音 2005-06 Himmelfahrtskirche Sendling，製作 Manfred Eicher）。Enemy 的 PopMatters 提到曲名 Sucker Punch 不在 MB 曲目表，不採。

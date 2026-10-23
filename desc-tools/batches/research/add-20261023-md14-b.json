@@ -386,5 +386,61 @@
   "status": "full",
   "notes": "【moodGuess】無明確不符：評論稱極簡音樂、Discogs 標 Dark Ambient／Classical，與 dark ambient 墊吻合；但具體低頻與弦樂佔比沒有直接來源。注意 Discogs 標了 Classical，乾淨弦樂佔比可能讓 y 偏低，建議評分時聽驗。【年份】專輯 2011，遊戲 2010，facts 已分開寫。【sales】銷量三筆皆維基。【Tarmia 專訪】Wikipedia 提到遊戲特別功能中有 Tarmia 的專題，但原文未取得。",
   "coverage": "full"
+ },
+ {
+  "key": "desc2:Brian Reitzell|Hannibal: Season 1, Volume 2",
+  "artist": "Brian Reitzell",
+  "album": "Hannibal: Season 1, Volume 2",
+  "facts": [
+   {
+    "f": "這是 NBC 影集《Hannibal》第一季配樂的第二卷，Lakeshore Records 2014 年 8 月 5 日數位發行，只有 6 首、全長約 70 分鐘；MB 並收錄 CD 版。",
+    "src": "https://musicbrainz.org/release/a62daaf6-162b-45d8-8ea6-4ad19f1c2b90"
+   },
+   {
+    "f": "第一季兩卷數位版 2014 年 8 月 5 日上線、CD 9 月 2 日出版；黑膠由 Invada 發行雙 LP 豪華對開封套附下載卡。",
+    "src": "https://filmmusicreporter.com/2014/07/23/hannibal-season-1-soundtracks-details/"
+   },
+   {
+    "f": "曲名全是烹飪用語：〈Fromage〉〈Trou normand〉〈Buffet froid〉〈Rôti〉〈Relevés〉〈Savoureux〉，對應第一季以法式菜單命名的集數。",
+    "src": "https://musicbrainz.org/release/a62daaf6-162b-45d8-8ea6-4ad19f1c2b90"
+   },
+   {
+    "f": "每一首不是單一 cue，而是把該集『比較有意思的聲音』串成的長篇聲音拼貼；樂評因此覺得有些段落略顯斷裂，但仍有美感。",
+    "src": "https://www.cyclicdefrost.com/2014/09/brian-reitzell-hannibal-ost-season-1-vol-2-lakeshore-records/"
+   },
+   {
+    "f": "Cyclic Defrost 的樂評形容它是『一連串暗色氛圍洗刷、電子 drone 與打擊閃現』，威脅感之下仍保有某種『豐潤的暖意』。",
+    "src": "https://www.cyclicdefrost.com/2014/09/brian-reitzell-hannibal-ost-season-1-vol-2-lakeshore-records/"
+   },
+   {
+    "f": "第二卷被評為比第一卷更詭異，『意圖讓你留在黑暗裡、有點無助』，且會突然轉向『令人震驚的新方向』；〈Rôti〉有重度延遲效果，聽起來像『無數小生物在腳邊啃咬』。",
+    "src": "https://www.cyclicdefrost.com/2014/09/brian-reitzell-hannibal-ost-season-1-vol-2-lakeshore-records/"
+   },
+   {
+    "f": "評論提到半古典編制配上突然的刺擊，並拿 Carpenter 式的合成脈衝與《Wolf Creek》配樂相比；Reitzell 的做法是先把聲音設計做成音樂，再在上面配器。",
+    "src": "https://www.cyclicdefrost.com/2014/09/brian-reitzell-hannibal-ost-season-1-vol-2-lakeshore-records/"
+   },
+   {
+    "f": "Reitzell 曾是 Redd Kross 的鼓手；這張卻只被描述為『打擊閃現』，沒有鼓組與持續節拍的紀錄。",
+    "src": "https://www.cyclicdefrost.com/2014/09/brian-reitzell-hannibal-ost-season-1-vol-2-lakeshore-records/"
+   },
+   {
+    "f": "三首超過 15 分鐘的長篇：〈Rôti〉約 16 分 51 秒、〈Relevés〉約 18 分 14 秒、〈Savoureux〉約 15 分 8 秒，是 6 首裡的主體。",
+    "src": "https://musicbrainz.org/release/a62daaf6-162b-45d8-8ea6-4ad19f1c2b90"
+   }
+  ],
+  "hookCandidates": [
+   "六首、七十分鐘：每首都是一整集的聲音拼貼，曲名是法式菜單",
+   "前 Redd Kross 鼓手把聲音設計做成配樂，延遲重到像小生物在腳邊啃咬"
+  ],
+  "sound": "暗色氛圍洗刷、電子 drone 與零星打擊閃現，半古典編制間夾突然的刺擊；三首十五分鐘以上的長篇，無持續節拍，有延遲與殘響的質地；基調陰冷但樂評稱仍帶豐潤暖意。",
+  "keyTracks": [
+   "Rôti",
+   "Relevés",
+   "Savoureux"
+  ],
+  "status": "partial",
+  "coverage": "partial",
+  "notes": "MB 釘住無誤（RG 45ddfa40，Album+Soundtrack，2014-08-05，artist-credit Brian Reitzell）；廠牌 Lakeshore（MB 數位版與卡單一致）。聲音事實來源只有 Cyclic Defrost 一篇樂評（Popshifter 為雙卷合評、Invada 頁無描述），樂器細節（甘美朗、金屬刮擦等）本卷查無來源，不寫。moodGuess 輕度存疑：樂評指出『打擊閃現』與電子脈衝，沒有鼓組持續推進的證據，『重』（低頻厚度）無直接來源；另樂評稱『豐潤暖意』，z 冷度可能沒預估那麼冷。曲目 6 首／70 分鐘出自 MB，約 3 首超 15 分鐘的時長由 MB 毫秒計算，樂評稱〈Rôti〉『近 17 分鐘』一致。Redd Kross 鼓手一事出自單一樂評，已寫。"
  }
 ]

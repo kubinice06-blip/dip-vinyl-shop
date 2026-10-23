@@ -458,5 +458,66 @@
   "status": "full",
   "notes": "【身分】MB RG 22c73225（Album+Soundtrack，2017-10-05，Hans Zimmer & Benjamin Wallfisch），與卡單一致；廠牌為 Epic（MB 登記 Epic／Alcon Sleeping Giant），卡單 label 空白，facts 以 MB 為準。【moodGuess 存疑】兩點：(1) 專輯收了 Sinatra、Presley 的老歌與 Lauren Daigle 一首，都是有人聲有節奏的流行曲，一旦評分取樣到這些曲目，x 會被拉高、z 也會變暖；(2) 全盤 93 分 44 秒、24 軌，不只 drone，〈Sea Wall〉等有脈衝與較大動態。x 2.2、y 1.9 屬樂觀估計，建議評分時以全專輯中位數而非代表曲判斷。【年份】MB 首發 2017-10-05，維基專輯條目數位版同日，與卡單 year 2017 一致。【未取得】綜合樂評（維基條目沒有樂評）、Zimmer 與 Wallfisch 的分工；CS-80 在 Wallfisch 筆下是否為主要色彩；非原創歌曲是否收在各版本（數位版與黑膠版曲目不同）。",
   "coverage": "full"
+ },
+ {
+  "key": "desc2:Mark Korven|The Witch",
+  "artist": "Mark Korven",
+  "album": "The Witch",
+  "facts": [
+   {
+    "f": "這是 Robert Eggers 長片處女作《The Witch》（2015）的配樂盤，作曲 Mark Korven，MB 記錄 2016 年 3 月 4 日由 Milan 發行，共 16 首、約 38 分鐘。",
+    "src": "https://musicbrainz.org/release/0a4d62c2-eca7-4f47-915e-c530bfe6d01f"
+   },
+   {
+    "f": "Korven 是加拿大作曲家，生於薩克其萬省 Swift Current，1987 年搬到多倫多；他擅長冷門樂器，會演奏 sarangi、nyckelharpa、duduk、二胡與 waterphone。",
+    "src": "https://en.wikipedia.org/wiki/Mark_Korven"
+   },
+   {
+    "f": "Eggers 在第一次碰面就立下規矩：不要電子音色，也不要傳統的旋律與和聲；他要的是『來自土地、由人做出來的』、聽起來古老的樂器。",
+    "src": "https://thefilmstage.com/composer-mark-korven-discusses-crafting-the-unsettling-sounds-of-the-witch/"
+   },
+   {
+    "f": "Korven 的關鍵武器是 nyckelharpa，他形容那是『十五世紀的按鍵小提琴』，按鍵會喀答作響；後段一個 cue 又加入芬蘭的 jouhikko，聲音『刮擦而原始』。",
+    "src": "https://thefilmstage.com/composer-mark-korven-discusses-crafting-the-unsettling-sounds-of-the-witch/"
+   },
+   {
+    "f": "Waterphone 是 Korven 自己演奏的實驗樂器，他用來做出極低的『超低頻』聲響；FACT 訪談也提到他把大提琴用非常規方式演奏。",
+    "src": "https://factmag.com/2016/02/16/stream-the-witch-score-mark-koven-interview"
+   },
+   {
+    "f": "合唱交給多倫多以即興見長的 The Element Choir，Korven 說『我們完全沒給他們寫音符』，只以鬆散的指示引導；合唱主要留給女巫，沒有她出現的家人場景幾乎不用。",
+    "src": "https://thefilmstage.com/composer-mark-korven-discusses-crafting-the-unsettling-sounds-of-the-witch/"
+   },
+   {
+    "f": "Korven 自述整體『非常不和諧』，為了避免單調，靠換樂器與留白來調節；他也用鬆散、即興式的演奏，好讓 Eggers 日後能隨意搬動音符。",
+    "src": "https://en.wikipedia.org/wiki/The_Witch_(2015_film)"
+   },
+   {
+    "f": "曲目前段是〈What Went We〉〈Banished〉〈A Witch Stole Sam〉等 1 至 2 分鐘的短 cue，最長的〈Caleb's Death〉5 分 25 秒，結尾收兩首傳統曲〈Isle of Wight〉與〈Standish〉。",
+    "src": "https://musicbrainz.org/release/0a4d62c2-eca7-4f47-915e-c530bfe6d01f"
+   },
+   {
+    "f": "Korven 憑這部配樂入圍 2017 年 Fangoria Chainsaw Awards 最佳配樂（入圍，未得獎）。",
+    "src": "https://en.wikipedia.org/wiki/The_Witch_(2015_film)"
+   }
+  ],
+  "hookCandidates": [
+   "導演立下規矩：不准電子音色，只能用聽起來古老的樂器",
+   "十五世紀的按鍵小提琴加上完全沒寫音符的即興合唱"
+  ],
+  "sound": "純原聲樂器：nyckelharpa 的按鍵喀答聲、jouhikko 的刮擦弓音、waterphone 的超低頻共鳴與即興女聲合唱，全程不和諧、無電子音色、無鼓組；多為 1 至 3 分鐘的短 cue，留白多於音牆。",
+  "keyTracks": [
+   "Caleb's Death",
+   "William's Confession",
+   "The Goat and the Mayhem"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "yearVerified": {
+   "year": 2016,
+   "recorded": 2015,
+   "note": "MB 首發 2016-03-04（Milan）；電影 2015 年首映，錄音年份查無明確來源，不寫地點"
+  },
+  "notes": "MB 釘住無誤（Album+Soundtrack，2016-03-04，Milan）；MB 版本含美版 2016-03-04 與歐版 2016-03-11。Wikipedia 電影條目不載廠牌與發行日，廠牌取 MB。moodGuess 存疑：純原聲、無鼓、不和諧，但整張由 1 至 3 分鐘短 cue 構成，nyckelharpa 喀答與 jouhikko 刮擦是前景，合唱為人聲嘶鳴；『重』（y）靠 waterphone 低頻與合唱，來源只證 waterphone 做『超低頻』，持續低頻厚度未證，y 可能 0.8–1.0 邊緣；冷（z）有酸冷刮擦但 nyckelharpa/木質器樂偏粗糙有機，不是電子冷。waterphone 與大提琴非常規演奏出自 FACT 搜尋摘要（頁面未逐字核到），已寫但屬單一來源。Korven 出生地與樂器出自 Wikipedia 單一來源。未查到錄音地點。"
  }
 ]
