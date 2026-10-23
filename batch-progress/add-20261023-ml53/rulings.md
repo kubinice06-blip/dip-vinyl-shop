@@ -12,3 +12,10 @@
 - **同名拆卡**：R&B 歌手 Leon Thomas（2023《Electric Dusk》）與池中 1969 爵士歌手 Leon Thomas 不同人，照 Carl Perkins／Air (US jazz trio) 先例，後進池者掛名改「Leon Thomas (R&B)」，queryAlias 留「Leon Thomas」。
 - **MB flag**：Groundation《Hebron Gate》MB 首發 2003-01-21、策展填 2002（iTunes），研究層核對年份。
 - 池中同人錨點：Groundation《Dub Wars》y 1.4 z 0.5、Black Roots《Natural Reaction》y 0.7 z 0.6、Dot Allison《Afterglow》z 0.2（One Dove 色溫風險）、Meshell 同人 y 0.3–1.3 分散。
+
+## 研究 e 組
+- 20801 Little Roy《Battle for Seattle》：MB／Discogs master 378910 對得上，廠牌 Ark Recordings（ARK024CD）確認，解策展層「廠牌待確認」；原創翻唱專輯，非重發。**moodGuess 存疑**：BBC 稱 sprightly vintage rhythms、維基稱 Prince Fatty 刻意加快 tempo，可能比 x 2.4 活潑；僅〈Come as You Are〉有明確 dubby 文字。facts 10 條 full。
+- 20802 Capital Letters《Headline News》：Discogs master 148734，原版 LP 10 首；iTunes 17 軌＝CD 加 12 吋曲／EP 的版本（1992 CD 13 軌、2007 CD 19 軌），上架以 1979 原版敘述。**moodGuess 存疑**：粗礪吉他與活躍打擊，無 dub 低頻證據，y 0.8 缺來源。facts 9 條 full。
+- 20803 Black Roots《Black Roots》：master 547706，廠牌 Kick（KIC LP02）確認；非重發。**moodGuess 存疑**：Discogs 團介紹「militant pacifism」、色溫恐低於 z 0.7，無 dub 低頻直接證據。facts 8 條 full。
+- 20804 Moodswings《Moodfood》：master 130717，原創首作。**moodGuess 存疑（策展層預警屬實）**：風格含 house／alternative dance，〈Spiritual High〉是舞曲單曲，x 可能 2.7–3.2，非「慢 ambient-dub」；主線宜汰換或實聽。facts 9 條 full。
+- 本組推翻策展層：0 處年份／廠牌／盤名（廠牌兩處待確認項已解）；4 張皆有 moodGuess 存疑註記。
