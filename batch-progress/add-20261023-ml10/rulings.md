@@ -95,3 +95,11 @@
 - **14792** 四處樂評轉述改直述聲音（照線規，事實未變、不需同步研究層）：VWETO II「樂評把整張形容為低頻驅動的 G-funk」→「整張是低頻驅動的 G-funk」；Comfort Woman「樂評把它歸為精簡、帶 dub 影響的靈魂樂」→「聲音精簡，是帶著 dub 影響的靈魂樂」；Lord of Lords「評論聽到的是緩慢堆疊」→「音樂緩慢堆疊」；NUMB「音樂卻被形容為意外地振奮」→「音樂卻意外地振奮」。
 - **14793** `desc2:Meshell Ndegeocello|Bitter`：「整張被評為苦甜的低迷之作」→「整張苦甜而低迷」（單源評價句改直述）；「保守的人聲」→「內斂的人聲」（guarded 誤譯）。
 - 其餘 13 張逐張審過，未改字。AIR 的英國專輯下載榜第 2 名是官方榜，不屬媒體年終榜，保留。qa-batch out、fix-spacing 重跑全過。
+
+## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-ml10/`）
+- 上線 19；**落恍惚 18/19＝95%**。出格 1：Lewis Taylor《NUMB》2.8/1.1/−0.2 色溫判冷落頹靡（評分理由「吉他偏重、情緒陰鬱」；研究稿已寫歌詞談憂鬱）——前例「研究稿出現陰冷字眼的落頹靡」再次應驗。
+- 評分 conf：mid 11、low 8。x 全在 1.3–2.8、y 0.5–1.3；Les McCann、Jardín y 0.5–0.6 貼邊、SAULT《AIR》z 0.2 貼邊但仍落格。
+- 產量教訓：古典 psychedelic soul 與 spiritual jazz 池中多判輕或躁，本批主力是當代 cosmic soul（Muldrow、Shafiq、Matt Martians）與 psych-soul 復興；策展 32、主線汰 3、研究汰 10 → 19。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Matt Martians、Salami Rose Joe Louis、Gabriel Garzón-Montano、Monophonics、Adrian Quesada、Meshell Ndegeocello、Miguel Atwood-Ferguson、Les McCann（8 位；其餘藝人已有介紹或已在排隊）。

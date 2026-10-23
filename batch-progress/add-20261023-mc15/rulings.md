@@ -88,3 +88,11 @@
 - **12192** `desc2:Mark Fell & Gábor Lázár|The Neurobiology of Moral Decision Making`：「被比作 jungle 與 footwork」→「帶著 jungle 與 footwork 的影子」。依據：樂評轉述改直述聲音（研究稿 RA 條）；事實未變。
 - **12193** `desc2:Komputer|Synthetik`：「標籤落在 IDM、Synth-pop 與 Electro 之間」→「聲音介於 IDM、synth-pop 與 electro 之間」。依據：原句實指資料平台風格標籤，正文不點名資料平台；事實未變。
 - 其餘 16 張逐張審過，未改字。qa-batch out 重跑全過。
+
+## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-mc15/`）
+- 上線 19；**落冷冽 18/19＝95%**。出格 1：Komputer《Synthetik》2.6/−0.6/−1.0 能量判靜落平靜（評分代理自承不熟此盤、受子曲風 ambient 標籤牽引；研究稿說回到首張 electro 聲音，主線不改分，照實記）。
+- 貼邊仍落格：The Neon Judgement《Mafu Cage》y 0.4、Snowy Red《The Right to Die》x 3.0、UnderViewer x 3.0。評分 conf：mid 7、low 12。
+- 產量教訓：mc15 主場景（比利時 coldwave／new beat／輕 EBM）正規全長少、二線多厚；mc24 dnb、mc18 footwork 池中判重或判暖，0 張。冷快電子（Gábor Lázár、Mark Fell）研究層汰 3（無鼓點、dubstep 低音、無資料），留下的全落格。策展 28、主線汰 1、研究汰 8 → 19。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+The Neon Judgement、Snowy Red、The Weathermen、Moskwa TV、And One、Welle: Erdball、Marie Davidson、Essaie pas、Komputer、Gábor Lázár、Mark Fell、UnderViewer（12 位；Mark Fell & Gábor Lázár 合作盤掛名另計）。
