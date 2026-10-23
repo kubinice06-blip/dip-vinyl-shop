@@ -13,3 +13,12 @@
 - **主線汰 9**：Boris《Absolutego》（MB primary-type Single；EP／單曲不開例外，md21 Demdike 先例）；Jim O'Rourke《Sleep Like It's Winter》（池中同人 y −1.0）；Boris with Merzbow《Sun Baked Snow Cave》（後段噪音堆疊，x 貼邊）；Yoshi Wada《Lament…》（風笛高頻亮，y／x 貼邊）；畠山地平《Minima Moralia》（z 貼邊，md1 註記畠山偏暖）；Stian Westerhus《Pitch Black Star Spangled》（刺耳回授＝緊繃）；MONO《Pilgrimage of the Soul》（推進段多，x 貼邊）；MONO & world's end girlfriend《Palmless Prayer》（鋼琴旋律清楚，z 貼邊）；Biosphere／Deathprod《Stator》（Biosphere 成分池中判輕）。
 - 上線前跨分支去重：origin 各 `claude/*` 分支卡單與本地 `desc-tools/batches/cards/` 0 撞。
 - 研究層重點查：Corrupted／Funeral Moth／Skepticism 嘶吼是否讓人繃緊（參照 Khanate 判靜）；不失者《すでに用意されていた想い》有無爆裂段；MONO 三張漸強爆發占比；畠山三張色溫；Ø 兩張與 Biosphere／Deathprod《Nordheim Transformed》質地是否夠厚；Klara Lewis 有無反覆節拍；Supersilent《8》鼓擊段。
+
+## 研究 c 組
+- 18061　Supersilent《8》moodGuess 存疑：整張是該團最有鼓、最「搖滾」的一張（Aquarius 稱 most rock sounding）：前三首鼓擊明顯、〈8.3〉通鼓響亮、〈8.6〉有節拍與刺耳假聲、〈8.7〉噪音搖滾，只有〈8.4〉〈8.5〉〈8.8〉偏靜。按體感標準 x 預估 2.8–3.5，建議主線汰換或交評分決定。
+- 18062　Supersilent《9》《12》moodGuess 不存疑：皆無鼓、無爆發（9 為三台 Hammond 風琴 drone；12 為合成器＋小號暗黑氛圍），符合頹靡。《9》廠牌頁（Henie Onstad 錄音）與維基（現場音樂會）說法不同，facts 以廠牌頁為主並並列。
+- 18063　Stian Westerhus《Matriarch》：三篇樂評皆未描述刺耳回授；有失真嗡鳴（第 5 首）、弓拉狂亂（第 4 首）、尖叫般弦音（第 7 首）三處緊繃段，整體冷而偏靜。x 建議 2.3 左右（卡單 1.9 微樂觀），仍在邊距內，不汰換。
+- 18064　Biosphere／Deathprod《Nordheim Transformed》：無來源直談質地厚度；從分工（Deathprod 四段、Biosphere 三段）與素材推論整體 y 約 0.8–1.1，為邊界卡，交評分定奪；無鼓、無噪音爆發。
+- 18065　Deathprod 三張：《Occulting Disk》有 mxdwn 樂評（無鼓，合成器低頻＋靜電噪音層）；卡單「失真小提琴」查無來源未採用。《Sow Your Gold》為 Harry Partch 樂器的音響配樂，Partch 樂器偏敲擊撥弦，是否有清楚敲擊無評論，thin；《Let Me Be Forever Animal》是孟克美術館委託的四聲道作品之立體聲版，限量 300 張黑膠、無數位版，卡單「Tired Light／Fugue」查無來源未採用，thin，且試聽可能取得困難。
+- 18066　raison d'être：原標題拼寫「Lonelienes」依 MB；有評者說這是最「明亮」的一張，z 可能比池中同人略暖。
+- 推翻策展層：2 處（《Let Me Be Forever Animal》曲名、《Occulting Disk》小提琴）；moodGuess 存疑：1 張強（Supersilent《8》）、2 張輕（Westerhus、raison d'être）。
