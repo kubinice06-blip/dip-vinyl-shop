@@ -26,3 +26,9 @@
 - 20072：Meditations《No More Friend》原創專輯、Channel One、Roots Radics；Jo-Ann Greene 評論取自 B&N 轉載（單一來源）；英版混音署名 Soldgie 與牙買加版 Soljie Hamilton 視為同人，只寫後者。
 - 20073：Barry Brown《Barry》年份採 1983（維基 1982 誤）；人聲錄 Joe Gibbs、Channel One 混音；伴奏 Darbers／One Vibe Band 非 Radics，輕脆風險記入 notes。
 - 20074：Barry Brown《Stand Firm》年份衝突（Discogs 1982／Roots Archives 與維基 1978）；facts 兩邊並列，status thin；moodGuess 存疑（Aggrovators rockers、Scientist 混音），建議主線降級或汰換；廠牌 Jackpot 與 Justice 並存，建議不寫廠牌。
+
+## 研究 b 組
+- 20051：Audley Rollens《Showcase Prevail》身分對上（MB 478db991＝Discogs 3827686，1982、八首）；廠牌更正為 Audley 自己的 Philadelphia Reggae Sounds（AW 71851），Wackie's 只是錄音與經銷、Bullwackie 掛工程不掛製作；Audley 受訪證實「除兩首在布魯克林 Frano's 外都在 Wackie's 錄」；年份衝突（一篇小傳寫 1980）採 1982。moodGuess 存疑：盤名雖有 Showcase 但八首全是人聲、無 dub 版，且 Rasta Banner／Be Wise 是樂團 Rockstones 時期錄音，無專輯樂評，速度只能推斷。
+- 20052：Jerry Harris《I'm For You》原盤 1982 Wackie-2385 十首（Discogs 1486921／master 753865）；2014 DKR-180《I'm For You...I'm For Me》是五首人聲加五首未發表 dub 的改編 showcase 重發，不可混寫；廠方明說原盤十首只有五首是粗糙渾濁的 Wackie's roots，其餘偏光滑靈魂／迪斯可。moodGuess 存疑：原盤不是 showcase、無 dub 版；整體可能偏輕偏亮，快歌比例未知。
+- 20053：Tyrone Evans《For Lovers Only》Discogs 343348，1983 Wackie's W-2389 八首；八首中有六首與池中同人《Sings Bullwackie Style》（1982）同名（Dread Lightly／Dread Light 算同曲），疑為同批錄音改版（加 Sly＆Robbie 等人），列為同構風險交主線判斷；〈Rise Up〉依兩家店家文案為 boogie／太空迪斯可的快歌，與卡單風險欄的合成器疑慮吻合。moodGuess 存疑：x 可能偏高、z 可能偏亮。
+- 20054：Leroy Smart《Harder Than the Rest》推翻策展層：Discogs 載明 Channel One 錄音、Sly Dunbar／Santa Davis／Robbie Shakespeare／Chinna Smith 等牙買加班底，Wackies Studio 僅掛 Edited At（Lloyd Barnes 剪輯），並非「Wackie's 班底伴奏」；年份 Discogs 1980 對 Wikipedia 與串流平台 1979，採 1980（卡單原值）；無任何樂評，status thin；moodGuess 存疑：Channel One rockers／dancehall 質地、曲名偏派對快歌（Party Time Rock、Lickey Lickey、Friday Night），建議主線考慮汰換。
