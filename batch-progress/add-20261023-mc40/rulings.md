@@ -49,3 +49,33 @@
 - **21039**（Désordre）兩人皆兼人聲；錄音橫跨 2017-06 至 2018-02；限量 250；Grimal 生平不寫；短篇可能更輕更靜，moodGuess 輕度存疑。
 - **21040**（保留）未使用。
 - 全組 facts 條數 8–11，來源皆 https；無簡體字、無千分位逗號；未動卡單／seed。
+
+## 研究 a 組
+- 21001：Wadud《By Myself》moodGuess 存疑（高）。Bandcamp Daily、Wikipedia 引 Stern／Lewis 皆指有哀傷旋律（〈Camille〉）、細緻旋律（〈In A Breeze〉）、輕快旋律（〈Happiness〉）與藍調輪廓，屬型 (3) 判暖；建議汰換（候補 6 張可補）。
+- 21002：Bradfield《Solo Violin Improvisations》moodGuess 存疑（高）。Wikipedia 引專輯評述「沉默比鋸弦多」「radically still、Cageian」，屬型 (2) 稀疏留白判靜；建議汰換。
+- 21003：Dresser《Invocation》存疑（中）。〈Polystop For Multiple Solo Bass〉疑為多軌疊錄（型 4 判重，Discogs 未標）；〈Threnody For Charles Mingus〉為悼念曲可能有旋律。需聽證。
+- 21004：Guy《Symmetries》存疑（低）。社區禮堂錄音有殘響，〈Quiescence〉〈Soft Fire〉〈Slow Slam〉曲名暗示慢段；無樂評實證。
+- 21005：Zíngaro《Solo》存疑（低）。熱羅尼莫斯修道院錄音，殘響可能拉長泛音；錄音 1989、首發 1992，卡年份維持 1992。thin（無樂評）。
+- 21006：Kowald《Was da ist》、《Open Secrets》Discogs 均只登錄低音提琴，無人聲；策展層「人聲穿插／喉音」無來源，不寫。《Open Secrets》Discogs 發行 1989-05-04、錄於 1988-01，MB 1988，卡年份 1988 維持（可逆）。兩張皆 thin。
+- 21007：Léandre《Urban Bass》年份採 1991（MB／Discogs），Wikipedia 目錄表的 1990 EDD 不採。〈Séraphine Duo〉含中提琴（Sylvie Altenburger）為舞蹈委託作，非純獨奏。
+- 21008：Cora《Gumption in Limbo》Discogs 註記為 1990-09-24/25 紐約錄音室錄音、除第 12 首外無疊錄；Wikipedia 將其與《Live at the Western Front》並稱 live 不採。Cora 受土耳其／東歐民間音樂影響，z 可能略高（curatorRisk 成立但無本盤樂評）。
+- 21009：WebSearch 兩組合計實用 6 次（a 組 2：Wadud、Dresser；b 組 4：Arditti×2、Reijseger、Cora），超出上限 5 次 1 次；已無追加。
+
+## 研究 b 組
+- 21011：Joe Morris + Mat Maneri《Soul Search》推翻策展層：編制是電吉他＋電小提琴（AUM 頁面、Discogs），非中提琴；MB 盤名含方括號「[Soul Search]」。moodGuess 存疑（中）：電聲音色可能偏暖，AUM 稱兩人互動「能暗示民謠或藍調」。
+- 21012：Reijseger《Taiming》編制衝突：Discogs 僅 Reijseger 大提琴＋卡林巴；日本賣場 Organic Music 稱 Han Bennink、Michael Moore、Alan Purves 與管樂參與。無法查證，兩說並列於 notes；若有 Bennink（鼓）則非純獨奏。卡單「首張個人盤」「大提琴獨奏」我兩項皆未能證實。moodGuess 存疑（中）：〈Kalimba〉簡約反覆樂句偏柔。
+- 21013：Frith《Guitar Solos》存疑（中）：〈No Birds〉12:46 兩把吉他同調平放桌上、音量踏板推拉，加破音與回音，近長音疊聲（型 2/4）；AllMusic 稱有「beauty」。
+- 21014：Russell《From Next To Last》第六首〈Mopomoso 2002〉為 2002-02-17 倫敦 Red Rose 現場錄音（其餘五首 2001-12-18 錄音室）；策展層已列例外。MB 類型 Compilation。
+- 21015：Arditti 三張：Freeman Etudes 1–2（mode 32）、3–4（mode 37）完全記譜非即興；年份待主線核對（MB 1994；AllMusic 標 1993，稱 1990-02-13 於 Wesleyan 錄音，單一來源未入 facts）。已填 yearVerified。《Caprices》存疑（中）：Sciarrino《Sei capricci》為「飄動不似人間的泛音」（BBC Music Magazine），Nunes《Einspielung I》19 分鐘細緻長篇，可能偏靜，整張不是純躁。
+- 21016：Léandre & Zíngaro《Ecritures》MB 首發空，Discogs master 1990、錄於 1990-05-29 巴黎、版本註記 ©1990 ℗1996（Reissue）；卡年份 1990 沿用。
+- 21017：Morris《Singularity》存疑（低）：AUM 頁面提「旋律線與低音線交織」，無旋律輪廓的直接證據。
+- 21018：本組 b 未使用額外 WebSearch 以外之次數（見 21009 合計）；MB／Wikipedia 於 b 組中途被限流，Emanem、Gotta Groove 頁面 503，故 Russell、Kowald、Zíngaro、Dresser 無樂評，標 thin。
+
+## 主線：研究後汰換（不佔條號）
+- 研究五組 45 張，汰 16（卡單、研究稿、`pick.json` 同步移除；不重切組，a 7、b 5、c 6、d 7、e 4）：
+  - 旋律／藍調／借曲（判暖）：Abdul Wadud《By Myself》（哀傷旋律、輕快旋律收尾、撥奏連藍調）、Bang & Rader《Echoes》（bluesy、抒情曲名）、Duval & Hwang《The Experiment》（Messiaen／Black Swan／Caribbean Sunrise 題材）、Lantner & Maneri《Reaching》（〈Sway〉等借曲與圓舞曲）、Bailey & Honsinger《Duo》（混進 Bach 與民謠旋律；另大半張是 Verity's Place 現場）。
+  - 稀疏留白／長音／柔（判靜）：Polly Bradfield（「沉默比鋸弦多」、近 Cage）、Arditti《Caprices》（Sciarrino 泛音飄動＋19 分鐘 Nunes 長篇，mc32 極弱型先例）、Frith《Guitar Solos》（平放吉他長音疊聲段）、Reijseger《Taiming》（卡林巴柔反覆，且編制兩說無法查證）、Frith／Léandre／Segel《Tempted to Smile》（樂評「柔和而稍縱即逝」）、Perelman 等《Strings 2》（更暗、長音嗡鳴、低音單簧管）。
+  - 電子／電聲／厚重（判重，mc22／mc37 先例）：Morris & Maneri《Soul Search》（電吉他＋電小提琴，暗示民謠藍調）、Wachsmann & Lytton《Imagined Time》（Lytton 電子）、Wachsmann／Taylor／Mattos／Brighton《Strings》（打擊＋電子＋電吉他、長曲）、Kowald／Masaoka／Robair《Illuminations》（樂評 furious, roaring）、Golia／Léandre／Filiano《Haunting the Spirits》（雙低音提琴＋尺八笙陶笛、零樂評）。
+- 留下但存疑、交評分裁定：Crackle（大提琴＋低音提琴）、Désordre、18 Colors（兼人聲）、Dresser《Invocation》（悼 Mingus 曲）、Alizarin（第 10 首現場，其餘錄音室）、Russell《From Next To Last》（第 6 首現場，其餘錄音室；MB 類型為 Album）、thin 多張（聲音只靠編制）。候補 6 張全是 x 貼邊（長音、慢、柔、電子），與汰換理由同型，不補。
+- 研究推翻照改卡單：Honsinger & Rupp《Stretto》country us→de（柏林錄音、FMP）。Freeman Etudes 年份維持 MB 1994（研究稿 AllMusic 1993 不採，寫作層只寫 1994 或不寫年）；Guy／Riley／Wachsmann《Improvisations Are Forever Now (1977-9)》MB 把 1978 Vinyl 原盤與 2002 Emanem 擴充 CD 歸同一 release group，卡維持 1978、Vinyl Records、MB 盤名。Kowald 兩張「人聲／喉音」無來源，正文不寫；Light Trigger、Soul Search 的 Maneri 樂器以研究稿為準。
+- **定案 29 張**，不湊數。
