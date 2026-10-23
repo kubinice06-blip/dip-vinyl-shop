@@ -37,3 +37,32 @@
 - 19036：John Clarke 是 Wackie's 旗下歌手、非 Johnny Clarke（Hardwax 明說）；1979 類比時代，無推翻。Tyrone Evans 無配器文字，三軸全靠廠牌通論，thin。
 - 19037：Meditations 混音濕度（池中同團 y 0.4–0.5）：只有行銷文案『Black Ark 氣氛、更柔』支持比池中其他盤更濕，無殘響量／速度來源，方向可信、數字未證實。
 - 19038：研究層搜尋次數已超每支 3 次（共 4 次 WebSearch），其餘用 WebFetch 與 Discogs／MB API。
+
+## 研究 b 組
+- 19011　Yabby You & Michael Prophet《Vocal & Dub》：身分吻合（1979、Vivian Jackson 廠牌）。Discogs 與 United Reggae 的 10 首曲名全以 Dub 結尾，分不出人聲曲；混音者兩源互斥（Jammy 未掛名 vs King Tubby）。moodGuess 存疑（可能整張偏器樂 dub，Yabby You dub 在池中判冷）；status thin，facts 只寫「資料庫記載」，建議主線聽過再留。
+- 19012　Michael Prophet《Gunman》：1981 原版 LP 名《Michael Prophet》（Discogs master 309904），MB 2009 是 Greensleeves CD 重發（加 5 首 12 吋混音）；Junjo Lawes 製作、Roots Radics、Scientist 混音（名單取自 2009 CD 條目，寫作層只寫三項）。聲音支持 ml，未推翻；年份寫 1981。
+- 19013　Wayne Wade《Black Is Our Colour》：MB 1977 vs Discogs master／Wikipedia／Roots Archives 1976（原版 Prophets 廠牌，1977 為 Vivian Jackson 廠牌重壓）。建議年份 1976。推翻策展層：Tubby 混音、Gladiators／Aggrovators 全無來源；僅知標題曲節奏為 Lee Perry 在 Black Ark 錄。moodGuess 存疑（無聲音來源），thin。
+- 19014　Hugh Mundell《Jah Fire》：實為與 Lacksley Castell 的合輯 LP（Castell 約唱一半），Prince Jammy 製作，Sly & Robbie 等伴奏；1980 類比，未推翻 moodGuess。「Mundell 第三張」無來源不寫；「Jammy 濕混音」無來源。
+- 19015　Linval Thompson《Don't Cut Off Your Dreadlocks》：Bunny Lee 製作、King Tubby 混音（Discogs），Channel One 錄音與「deep and heavy」僅零售文案。flying cymbal 疑慮查無證據，未證實也未排除；thin。
+- 19016　Linval Thompson《Rocking Vibration》：補上 Burning Sounds BS 1027（UK 1978）、Sly & Robbie、Chinna Smith、Tubby 混音（Discogs）。moodGuess 存疑：Sly & Robbie 的 rockers 拍子可能比預估快（無來源，僅風險提示）；thin。
+- 19017　Linval Thompson《Stay a Little Bit Longer》：確認是《Follow My Heart》（Burning Rockers BR 1006 LP，UK 1979，Discogs master 505914）的加拿大 Micron 1980 改名版，曲目相同、兩面對調。策展層「Channel One／Tubby／Scientist 世代」全無來源，作廢；moodGuess 存疑；建議主線裁定卡名與年份（原盤 Follow My Heart 1979 vs MB 1980）。
+- 19018　b 組只有 7 張（派工寫 9 張以卡單為準）；facts 一律不寫 Prophet 2017、Yabby You 2010、Wade 後來移居荷蘭等晚近生平。
+
+## 研究 c 組
+- 19021：Don Carlos《Spread Out》（1983 Burning Sounds）實為 1982 Jackpot《Pass Me the Lazer Beam》的英版再發；池中無原版，不重複，卡片年份 1983 維持。製作是 Bunny Lee／Aggrovators 班底，非 Roots Radics，moodGuess 的「Radics 慢拍」存疑。
+- 19022：Don Carlos & Gold《Raving Tonight》（RAS 1983）是精選自 Negus Roots《Suffering》《Harvest Time》加兩首新錄音的美國選輯，無歷史定位，與池中《Suffering》、ml32 的《Harvest Time》重複，依常設裁定列「建議移除」。
+- 19023：Lacksley Castell《Princess Lady》班底是 Ranchie McLean／Dougie Bryan／Robbie Lyn（合成器弦樂）＋Dean Fraser 管樂，Mad Professor 倫敦 Ariwa 混音，非 Roots Radics；moodGuess 的「Radics 慢拍」存疑。
+- 19024：Barry Brown《Far East》年份 Discogs master 1981／MB 1982；Discogs 封底載 Channel One 錄混（Revolutionaries 班底＋管樂＋合成器），與 Wikipedia「1983 Studio One」說法並存，以 Discogs 為準；moodGuess x 2.6 偏高存疑。
+- 19025：The Viceroys《We Must Unite》與 Barry Brown 兩張 Showcase 皆無樂評談聲音，facts 靠 Discogs 製作名單；Jammy Showcase 的 Jammy 混音以「clear sound」著稱，y 1.2 可能偏高，標存疑。
+- 19026：本組 WebSearch 共 5 次（超過每支 3 次），其餘用 WebFetch 與 Discogs／MB API。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- **汰 7 張**（研究層聲音反證或身分不符；恍惚線最怕冷、乾、推進，存疑的器樂 dub 一律汰）：
+  - 精選／彙整：Augustus Pablo《Authentic Golden Melodies》（Rockers 自編選輯，Discogs 標 Compilation）、Don Carlos & Gold《Raving Tonight》（RAS 美國精選，選自《Suffering》《Harvest Time》）。
+  - 身分：Linval Thompson《Stay a Little Bit Longer》（《Follow My Heart》1979 的加拿大改名重發）。
+  - 冷硬器樂 dub：Linval Thompson《Negrea Love Dub》（Channel One Revolutionaries 硬 rockers 節奏、roots 曲名，不是情歌 dub）、Gregory Isaacs《Slum (In dub)》（z 0.4 邊距窄、無混音者與色溫來源）、Yabby You & Michael Prophet《Vocal & Dub》（10 首全是 dub、池中 Yabby You 器樂 dub 全判冷）。
+  - 合成器 boogie：Annette Brissett《Love Power》（Fabian Cooke 包辦鼓、合成器、合成貝斯，「synthy 80s boogie」）。
+- **更正**：Wayne Wade《Black Is Our Colour》年份 1977→1976（Discogs master、Wikipedia、Roots Archives 一致；MB 1977 為重壓）。
+- **留下的存疑張**：Mudie 三集（y 可能 0.8–1.0，仍在重格內）；Meditations《I Love Jah》（維基稱 2002 CD 才首發，Discogs 有 1982 L&L 510 黑膠，維持 1982）；兩張 2023 Ariwa《Dub Showcase》（查無舊錄音集結證據，Bandcamp 列為新發行；Mad Professor love dub 池中全落恍惚）；Roland Alphonso《Roll On》、Horace Andy 兩張 Ariwa（無反證）；Spread Out（Bunny Lee／Aggrovators）、Princess Lady（Ariwa 合成器弦樂）、Far East（Revolutionaries）伴奏與策展層不同，聲音無反證，評分看實測。
+- 不補位：策展層已回報主場景見底。
+- 定案 **26 張**（a 4、b 5、c 6、d 6、e 5）。汰除卡存 `dropped-cards.json`，研究稿條目移出研究檔。研究 qa-batch 全過。
