@@ -1,0 +1,378 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-ml46",
+ "batchNote": "薄細項策展線（add-20261023-ml46）",
+ "createdAt": "2026-10-23T17:24:41Z",
+ "albums": [
+  {
+   "artist": "Alex Somers",
+   "album": "Siblings 2",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c327580a-b240-4c7f-ba68-91194e9092d0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 post-classical 弦樂＋鋼琴厚墊（主場景；只收有磁帶／殘響／整團弦樂包覆的）：Sigur Rós 圈製作人的弦樂五重奏＋磁帶飽和合成器墊，兩部曲裡明亮的那一張（ml43 研究：Siblings 1 較暗）；長音弦樂被磁帶糊包住、旋律清楚而溫｜⚠ Siblings 1 研究判暗已汰；本張若被評成與 1 同色溫會貼邊｜MB release-group c327580a-b240-4c7f-ba68-91194e9092d0：title「Siblings 2」、Album、first-release-date 2021-03-19、artist-credit「Alex Somers」。證據：https://musicbrainz.org/release-group/c327580a-b240-4c7f-ba68-91194e9092d0 https://coverartarchive.org/release-group/c327580a-b240-4c7f-ba68-91194e9092d0/front https://music.apple.com/us/album/siblings-2/1551151381",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c327580a-b240-4c7f-ba68-91194e9092d0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:24:41Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1804,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:24:41Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1804）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1804），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Sigur Rós 的幕後搭檔，同一天用本名發了兩張。兩張都出自 Alex Somers，這位美國出身的音樂人參與過 Sigur Rós《Valtari》《Kveikur》的製作。這批音樂在他身上帶了很久，朋友、尤其伴侶 Jónsi 的鼓勵才讓它完成。2021 年 3 月 19 日與《Siblings》同日上線，Krúnk 經手，共 13 首。主體交給弦樂手，不用鼓，〈Locket〉裡還有八音盒。樂評說前一張低沉的合成器與 drone 在這裡退場，換成明亮、帶一絲憂傷的弦樂。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/c327580a-b240-4c7f-ba68-91194e9092d0",
+     "https://consequence.net/2021/02/alex-somers-debut-solo-albums-siblings",
+     "https://www.plaidroomrecords.com/products/alex-somers-siblings-2",
+     "https://en.wikipedia.org/wiki/Alex_Somers",
+     "https://music.mxdwn.com/2021/03/29/reviews/album-review-alex-somers-siblings-1-2/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/16/e4/43/16e4432c-6c5f-4259-b902-a58c1c7f3c2f/mzaf_9641519704212516874.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:24:41Z",
+    "appleCollectionId": "1551151381",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1551151381「Alex Somers《Siblings 2》」：曲目 12/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Following After〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Olan Mill",
+   "album": "Pine",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "65fd9e4d-4a0f-4e20-8513-837fad2fc942",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 post-classical 弦樂＋鋼琴厚墊（主場景；只收有磁帶／殘響／整團弦樂包覆的）：Olan Mill 二人組首作：小提琴＋鋼琴浸在極長殘響與 drone 裡，Bandcamp 自述「big, stirring」「slowly decaying reverb」「very human」，池中同人《Paths》已落恍惚｜⚠ 池中《Paths》評 y0.8 z0.3 剛好落格（貼邊），同型盤有一半機率掉放鬆｜MB release-group 65fd9e4d-4a0f-4e20-8513-837fad2fc942：title「Pine」、Album、first-release-date 2010-05-10、artist-credit「Olan Mill」。證據：https://musicbrainz.org/release-group/65fd9e4d-4a0f-4e20-8513-837fad2fc942 https://coverartarchive.org/release-group/65fd9e4d-4a0f-4e20-8513-837fad2fc942/front https://music.apple.com/us/album/pine/1675142071",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/65fd9e4d-4a0f-4e20-8513-837fad2fc942/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:24:41Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 70289,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:24:41Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 70289）；主線：Last.fm 70,289 疑為藝人層級計數；Serein 小廠首作，同人《Paths》池中冷門 4，人工 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一間小教堂，分好幾次才錄完這十首。Olan Mill 由 Alex Smalley 與 Svitlana Samoylenko 兩人組成，做的是 ambient 與現代古典。全盤約 34 分鐘，樂器只有鋼琴、小提琴、管風琴與吉他，打擊樂一件也沒用。管風琴與吉他的長音打底，上面疊著被悶住的小提琴和層層鋼琴，殘響緩緩衰減。兩人形容這份情緒浪漫而收斂。2010 年 5 月 10 日，英國的 Serein 讓它問世。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2279518",
+     "https://olanmill.bandcamp.com/album/pine",
+     "https://musicbrainz.org/release-group/65fd9e4d-4a0f-4e20-8513-837fad2fc942"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/37/81/b6/3781b6dc-b0a9-969d-c2b8-0a61082945be/mzaf_5492457490256808683.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:24:41Z",
+    "appleCollectionId": "1675142071",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1675142071「Olan Mill《Pine》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Spare Smoke Template〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ian William Craig",
+   "album": "Centres",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b2cc4536-d4cd-400a-a1b4-eeec2a9165fa",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖的弦樂／磁帶 drone 厚墊、旋律聽得出來（擴寫 a）：受古典聲樂訓練的 Craig 把自己的歌聲送進兩三台卡座做損壞延遲，Bandcamp 自述「texturally lush」「shimmering」；他最有歌、旋律最清楚的一張｜⚠ 官方文案也寫 fundamentally distressed，色溫可能被評中性；同人其他較抽象的盤不提｜MB release-group b2cc4536-d4cd-400a-a1b4-eeec2a9165fa：title「Centres」、Album、first-release-date 2016-07-08、artist-credit「Ian William Craig」。證據：https://musicbrainz.org/release-group/b2cc4536-d4cd-400a-a1b4-eeec2a9165fa https://coverartarchive.org/release-group/b2cc4536-d4cd-400a-a1b4-eeec2a9165fa/front https://music.apple.com/us/album/centres/1495090289",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b2cc4536-d4cd-400a-a1b4-eeec2a9165fa/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:24:41Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 11649,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:24:41Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 11649）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "磁帶循環為什麼要同時送進兩三台卡座？受過古典聲樂訓練的 Ian William Craig，是住在溫哥華的加拿大音樂人。他把循環送進兩三台改裝過的卡座，為的是造出逐漸劣化的延遲。比起以鋼琴為主的前作，這張更以歌聲為中心，他的男聲假音一再經過回音與疊錄。〈A Single Hope〉由他稱為 cassette choir 的卡帶合唱開場，Hammond 電風琴緩緩湧動。2016 年 7 月 8 日成為 FatCat 重新啟用的後古典廠牌 130701 的頭一張發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Ian_William_Craig",
+     "https://ianwilliamcraig.bandcamp.com/album/centres",
+     "https://acloserlisten.com/2016/06/23/ian-william-craig-centresmeaning-turns-to-whispers/",
+     "https://musicbrainz.org/release-group/b2cc4536-d4cd-400a-a1b4-eeec2a9165fa"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/12/ca/e3/12cae3b1-f46b-8b48-39f0-17f132f9cec9/mzaf_6509263258873978111.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:24:41Z",
+    "appleCollectionId": "1495090289",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1495090289「Ian William Craig《Centres》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Contain (Astoria Version)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Port Blue",
+   "album": "The Airship",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f6697208-3e06-3b7b-be3a-6f7fa3ba6317",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "弦樂＋電子厚墊的暖 ambient／配樂（擴寫 b）：弦樂取樣＋溫暖合成器墊＋輕柔 glitch 拍的電影感 ambient，旋律明亮清楚，與池中落恍惚的 Tycho《Dive》、Ulrich Schnauss 同色｜⚠ 自發行；藝人國別未確認（MB 首發 US）；拍子若被評推進 x 會升｜MB release-group f6697208-3e06-3b7b-be3a-6f7fa3ba6317：title「The Airship」、Album、first-release-date 2007-09-13、artist-credit「Port Blue」。證據：https://musicbrainz.org/release-group/f6697208-3e06-3b7b-be3a-6f7fa3ba6317 https://coverartarchive.org/release-group/f6697208-3e06-3b7b-be3a-6f7fa3ba6317/front https://music.apple.com/us/album/the-airship/264960721",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2007,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f6697208-3e06-3b7b-be3a-6f7fa3ba6317/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:24:41Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 42360,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:24:41Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 42360）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "整張是一趟飛船旅程，從大西洋城飛到雪梨港。Port Blue 是美國人 Adam Young 成立的純器樂 ambient 計畫。曲序從〈Over Atlantic City〉起飛，一路排到〈Arrival at Sydney Harbour〉。航程 2007 年 9 月 13 日公開，約半年後，他才以 Owl City 的名義交出首作。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Adam_Young",
+     "https://musicbrainz.org/artist/60ffc791-575f-4fd6-be34-775ebdb29080",
+     "https://music.apple.com/us/album/the-airship/264960721",
+     "https://musicbrainz.org/release/edb2cf70-962d-40d0-9635-e6da1194bdf6",
+     "https://musicbrainz.org/release-group/f6697208-3e06-3b7b-be3a-6f7fa3ba6317",
+     "https://www.sputnikmusic.com/album/25724/Port-Blue-The-Airship",
+     "https://en.wikipedia.org/wiki/Owl_City"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/12/57/4e/12574e93-9f30-f295-6253-a8538c089d6a/mzaf_15109766080694095141.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:24:41Z",
+    "appleCollectionId": "264960721",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 264960721「Port Blue《The Airship》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Up Ship!〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Inventions",
+   "album": "Inventions",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a96e9adf-5def-4927-8253-2036bc07b22c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "弦樂＋電子厚墊的暖 ambient／配樂（擴寫 b）：同組合首作：磁帶質感的取樣弦樂、鋼琴、人聲碎片與吉他長音疊成暖霧，像 EITS 慢段被 Eluvium 的厚墊包住｜⚠ 首作較碎、旋律不如 Maze of Woods 清楚，z 有貼邊風險｜MB release-group a96e9adf-5def-4927-8253-2036bc07b22c：title「Inventions」、Album、first-release-date 2014-04-01、artist-credit「Inventions」。證據：https://musicbrainz.org/release-group/a96e9adf-5def-4927-8253-2036bc07b22c https://coverartarchive.org/release-group/a96e9adf-5def-4927-8253-2036bc07b22c/front https://music.apple.com/us/album/inventions/829805085",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a96e9adf-5def-4927-8253-2036bc07b22c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T17:24:41Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 5616,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T17:24:41Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 5616）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "波特蘭與奧斯汀之間，音檔來回傳了約六個月。來自 Eluvium 的 Matthew Cooper 與 Explosions in the Sky 的 Mark T. Smith 合組了 Inventions，這是兩人的同名首作。他們各自在家裡錄，再把檔案寄給對方，最後一起到奧勒岡海岸一間偏僻的海灘屋收尾。Temporary Residence 接手發行，2014 年 4 月 1 日開賣。Smith 的吉他在 Cooper 嗡鳴的電子音景上閃爍，溫暖地淡入淡出。",
+    "sourceUrls": [
+     "https://www.temporaryresidence.com/products/trr231",
+     "https://en.wikipedia.org/wiki/Inventions_(Inventions_album)",
+     "https://echoesanddust.com/2014/03/inventions-inventions/",
+     "https://www.theskinny.co.uk/music/reviews/albums/inventions-inventions",
+     "https://musicbrainz.org/release-group/a96e9adf-5def-4927-8253-2036bc07b22c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7b/e0/f9/7be0f9c2-5368-eafa-81b4-f440f6fb317c/mzaf_6197019333370842252.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T17:24:41Z",
+    "appleCollectionId": "829805085",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 829805085「Inventions《Inventions》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Echo Tropism〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}
