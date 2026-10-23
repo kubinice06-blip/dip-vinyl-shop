@@ -20,3 +20,27 @@
 - 20642：Deep Frieze 的專輯序數（維基第四／Sonic Immersion 第三）對不上，facts 不寫序數；Track 2 座標採 CD 版 72°S 49°E。
 - 20643：S.E.T.I.《Baikal》、Necrophorus《Elinrós》、Ab Intra《Aura Imaginalis》三張聲音證據偏薄（無獨立樂評），status 標 thin，notes 寫 moodGuess 存疑；Baikal 另有 Bandcamp 標籤 glitch／techno 與「晶瑩」字眼，疑偏亮偏電子。
 - 20644：Arecibo 的 Brainwashed 樂評只取得搜尋摘要（頁面 404），不進 facts，只寫 notes；Lustmord 整體手法（洞穴／地穴錄音）僅作通例，不得當本盤聲音。
+
+## 研究 a 組（條號 20601–20610）
+- 20601：本批 Bandcamp 一律用 WebFetch 取廠牌文案（curl 被擋）；Discogs master／MB API 補曲目、曲長與風格；每張聲音事實 2–3 條，來源分廠牌文案、樂評、樂迷留言三級，樂迷留言只當輔助。
+- 20602：Cthulhu 參與人數文案寫 12、署名列 13，Azathoth 文案「不下 20」、署名 22，Nyarlathotep 文案 25、署名 26；facts 照頁面寫，notes 提醒寫作層一律寫「十多位／二十多位」，不寫確切數字。
+- 20603：Enmarta《Sea of Black》moodGuess 存疑：現場中提琴、手工笛、鐘琴、喉音歌唱與新古典手法（Bandcamp、Side-Line、訪談三源一致），旋律性偏高；無鼓，邊緣。
+- 20604：Halgrath《Out of Time》moodGuess 存疑：聲音主角是歌劇女聲的儀式吟誦，Bandcamp 標籤另有 industrial、industrial ambient；無獨立樂評，無鼓證據為「未提及」。
+- 20605：protoU《Khmaoch》moodGuess 存疑：長笛（Ivan Ioanov）是主要旋律元素，文案強調「黑暗與光的對比」，判輕或暖有風險。
+- 20606：Dronny Darko & protoU《Earth Songs》moodGuess 存疑：文案自稱「soothing, dreamy」，樂迷稱「peaceful」，與預估陰冷有落差。
+- 20607：Ugasanie《Border of Worlds》主題為薩滿出神，但文案與 Discogs 皆無鼓、人聲描述，status thin；無鼓為未提及，非明文否定。Ice Breath 曲數 Bandcamp 摘要八首、Discogs 九首，採 Discogs。
+- 20608：Nyarlathotep 一則樂迷留言提到「distant humming beats」，判為 drone 脈動、不當鼓證據，notes 標輕微存疑。
+- 20609：Black Hive 的 Side-Line 評論（p=14769）有「oppressive sound blasts」，Chain D.L.K. 有〈Numinous〉高頻 drone 漸強驟停，皆為質地描述，不構成 harsh noise；notes 標輕微風險。
+- 20610：a 組無推翻年份、廠牌、盤名；10 張身分全數與 MB／Discogs／Bandcamp 對得上。
+
+## 研究 b 組（條號 20611–20620）
+- 20611：Spira igneus moodGuess 存疑：Side-Line（p=9594）明寫「industrial noises and metal percussion」且部分段落朝儀式風格，Bandcamp 另有「unholy chants」；無穩定節拍證據。主線斟酌。
+- 20612：God Body Disconnect《Sleeper's Fate》moodGuess 存疑（強）：This Is Darkness 明寫〈Flesh of a Ghost〉有 pronounced drum beat 與後搖滾段落；文案列 ethereal guitar、post-rock、旁白人聲；兩家樂評稱情感濃。建議汰換。卡單「Cryo Chamber 首張全長」與樂評所稱前作《Dredge Portals》衝突，寫作層不寫首張。
+- 20613：Alphaxone《Edge of Solitude》moodGuess 存疑（強）：I Die: You Die 稱「並不真的那麼黑暗」「brighter colours」「joy」，樂迷「warm」，文案「lush synths」；建議汰換或排最後。樂評曲名〈Solar Pulses〉與 Discogs〈Solar Halos〉不一致，以 Discogs 為準。
+- 20614：Alphaxone《Echoes From Outer Silence》moodGuess 存疑（中）：文案「warm and analogue」、樂迷「anything but a cold experience」，Chain D.L.K. 指〈Altered Xone〉有平穩拍點、〈Departure〉節拍改變。
+- 20615：Kolhoosi 13《Monuments of Power》moodGuess 存疑（輕）：文案「raspy upbeat vinyl recordings」、機槍與行軍意象、industrial 取向；樂評無鼓無 industrial 描述。曲長以 Discogs 43 分 24 秒為準（Bandcamp 摘要 53 分有誤）。
+- 20616：Council of Nine《Exit Earth》、Aegri Somnia《Endtime Psalms》、Cities Last Broadcast《The Humming Tapes》無獨立樂評，聲音證據僅廠牌文案與樂迷留言，status thin；Humming Tapes 文案「careful and nurturing」、樂迷「comfortably spooky」暗示偏暖，標輕微存疑；Exit Earth 有被拉高音調的人聲取樣。
+- 20617：Sabled Sun《2148》moodGuess 存疑（輕）：文案列遠處鋼琴、蒙塵弦樂與搏動低音，無鼓；脈動是否成推進未證實。
+- 20618：Ugasanie & Dronny Darko《Arctic Gates》曲長以 Discogs 53 分 56 秒為準；聲音證據成立（This Is Darkness、文案）。
+- 20619：Side-Line 與 Ghost Cult 數頁抓取失敗或網址無法對應；Ghost Cult（403）與 Dripping 一事（Side-Line p=11513）取自搜尋摘要，Sleeper's Fate 的 notes 已提醒寫作層弱化。WebSearch 兩組合計用 6 次。
+- 20620：b 組無推翻年份、廠牌、盤名；Endtime Psalms 的 MB RG 回應沒有發行日，年份以 Bandcamp、Discogs 為準。
