@@ -15,3 +15,12 @@
 - 策展第二輪 26（池中已落恍惚的 downtempo／dub 藝人其他正規專輯：Mad Professor ×5、Prince Fatty ×2、Gaudi ×2、Dub Colossus ×2、Blundetto、Peaking Lights ×2、Chancha Vía Circuito ×2、Kaya Project ×2、Sounds from the Ground ×3、Halftribe ×2、Heights of Abraham、Aim、Boozoo Bajou）。主線汰 1：Boozoo Bajou《Juke Joint》（MB Album+Compilation，DJ mix 選輯）。
 - 定案 45：Fila Brazillia ×6、Money Mark ×3、Rustin Man《Drift Code》、Lamb《What Sound》《5》、Skye、Alice Russell ×3、Quantic《Apricot Morning》、Susheela Raman《Salt Rain》、Loop Guru ×2，及第二輪 25。去重：seed、其他 curation-*.json、desc-tools 卡單、origin 95 個 `claude/*` 分支 seed 全 0 撞。
 - 風險：y 估 0.8–0.9 貼邊的多（Fila 後期、Kaya、Halftribe、Heights、Aim、Chancha、Skye）；x 貼 2.6–2.7（Fila、Loop Guru、Gaudi、Chancha《Rodante》、Peaking Lights《E S C A P E》）。Mad Professor 5 張同質；Dub Colossus《Dub Me Tender》為自家舊作 dub 重製（MB 標 Album）。研究層請特別查：breaks／drum'n'bass／house 拍、乾淨 lounge、陰冷字眼、人聲客串過多的歌曲型盤。
+
+## 研究 c 組
+- 21261：Loop Guru《Amrita》《The Third Chamber》廠牌改 North South Records（MB 與 Discogs 皆為 GURU 200／GURU 100；美版 World Domination），策展層寫的 Nation 是《Duniya》的發行廠，seed label 欄請改。
+- 21262：Prince Fatty《In the Viper's Shadow》廠牌改 Evergreen Recordings（EVER 106，2019-10-04；維基同），非 Mr Bongo。
+- 21263：Mad Professor《Ambient Adventures in Dub》Discogs 標 Compilation、僅日本 Canyon International PCCY-01516 單一版本，19 首含與《Black Liberation Dub Chapter One》重名的曲，判定非原創專輯，status thin，建議主線汰換。
+- 21264：Prince Fatty Meets The Mutant HiFi《Return of Gringo!》所有來源皆為 surf／ska／spaghetti western 配樂，12 首每首 2–4 分鐘，moodGuess（dub、慢拍）不成立，建議汰換。
+- 21265：《The Third Chamber》全為 ambient（Eno／Hassell 比較、drones／甘美朗），無 dub 低頻證據，y 0.9 存疑，留主線聽感再判。
+- 21266：《Part 11》年份採 MB／Discogs 的 1991（維基 Ariwa 條寫 1992）；Ransom Note 訪談引句無法開啟（503），不進 facts。
+- 21267：moodGuess 存疑彙整：Prince Fatty《Viper's Shadow》為客串歌手多的歌曲型盤，樂評用 upbeat groove 與 melancholic chords；Mad Professor 各盤 Discogs 皆有多名 DJ／人聲客串。AllMusic 403、Wayback 不可抓，無 warm／hazy 樂評原句。
