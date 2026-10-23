@@ -88,3 +88,25 @@
 - **19693** 「他／她」引入法配表：**Zorn ×8**（a–c 內）——Pool 掛名欄（只署他一人，第一次）、CG1 樂器（紐約薩克斯風手的首批獨奏）、CG2 演奏欄（只列 Zorn）、Ganryu 搭檔並列（彈三味線的是佐藤通弘、吹奏的是 Zorn）、Yankees 身分三人並列、School 作曲欄（〈Lacrosse〉作者）、Environment 六人名單之一（由 Centazzo 領句）、Cobra 作曲家／提示者。**Moss ×2**：Full House 學歷（早年學打擊、Bill Dixon 的樂團）、Cargo 搭檔（打擊與人聲）。**Chadbourne ×2**：School 移居（1970 年代中期到紐約）、Environment 樂器。**Bradfield ×3**：Pool／School／Environment 都只帶名字或樂器。**Cora ×2**：Cargo 帶生平與師承、Environment 只帶樂器。**Lindsay、Marclay、Parkins** 跨 Cobra 只帶樂器，生平各歸本卡。第二句句型（13 種）：Gavanti「是」、Ut「成員為」、Pool「只署」、Yankees「由…演出」、CG1「這是」、CG2「只列」、Ganryu「…的是」、School「在…到」、Environment「早與」、Cobra「出自」、Full House「早年」、Cargo「搭檔是」、Nightmare「出身」；與 d–e 的「生年與出生地」「城市」「廠牌」等領句不撞（Full House 原定「1949 年生於紐約」，因 d2 用生年與出生地而改）。「日」後一字：Pool「，」、CG1「一」、Ganryu「進」、School「由」、Cobra「寫」；與 d4「推」、e2「首」互異，其餘只寫到年月。
 - **19694** 自查：開頭前四字對全 hooks 目錄互異（初稿 Pool「薩克斯風」、Cargo「大提琴手」、CG1「封面只印」撞既有 hook，已改）。hook 之間中文 4-gram 全批 20 張只剩樂器名「薩克斯風」（Pool × Ganryu，專名不算）；初稿 Yankees「曲名，全」× CG2 已改。hook 對他卡 note 也只剩「薩克斯風」。hook 與自己 note 無逐字重複句。note 無否定校對痕跡（Cobra「不管彈什麼」「不理提示者」是規則內容）。
 - **19695** 腳本：`node qa-batch.mjs hooks add-20261023-mc36`：全部通過 ✓（5 組 20 張）；`node chk-hook-crossgroup.mjs add-20261023-mc36`：全部通過 ✓（hook 加權 16–25.5、note 152–238）。
+
+## 寫作層（writer-1）
+- **19701** 交件：`desc-tools/batches/output/add-20261023-mc36-out-1.json` 10 張（key 逐字同序）。full 5：Gavanti 239、Pool 229、Yankees 234、Ganryu 215、Cobra 238；thin 5：Ut 174、CG1 169、CG2 157、School 180、Environment 168。初稿只有 Gavanti 248 超帶，整格捨去「設備」「攜手」「一路」等修飾壓到 239；未刪任何 note 項目。
+- **19702** 第二句全照 note 指派（是／成員為／只署／由…演出／吹奏者是…這是／演奏欄只列／彈三味線的是／Chadbourne 移居紐約／早與／出自）。「日」後一字照鉤子層：Pool「，」、CG1「一」、Ganryu「進」、School「由」、Cobra「寫」；其餘只到年月，發行句動詞逐張不同（交給／由樂團自家…推出／在…把它發行／交由／次年由／的發行商是／由…發行／推出這張／發行雙 LP）。
+- **19703** 小處理：Gavanti note 只寫 Cunningham，首次出現補上名 Mark（同一人，避免讀者不知是誰）；Cobra note 的「不管彈什麼」「不理提示者」改寫成正面句（「演什麼則由樂手自定」「自行其是、暫時脫離提示者」），守不寫否定句；Yankees 的「樂評說」寫成「樂評用…來形容它」，未具名媒體；CG2 hook 已點出青山通與 Mori Ikue，正文不再複述曲名，只寫錄音、發行、封面「水」與 Tzadik 略去〈Yano Akiko〉；Ut hook 已說搬到倫敦，正文只補年份（「全團在 1981 年動身」）。媒體名、名次、「據說／據傳」皆 0。
+- **19704** 自掃（han() 中文 4-gram，對本檔＋writer-2 已交 out＋writer-2 hooks）：3 次以上只剩樂器名「薩克斯風」「克斯風手」與地名「布魯克林」。途中拆掉：「被形容為」×3（Yankees 改）、「有約分鐘」×3（對 Lithics hook，Ganryu 改「約莫」）、「月在紐約」（Ut 改「成軍於紐約」）、「兩人年月」（Ganryu 改「二重奏」）、「負責打擊」、「黑膠限量」、「即興吉他」、「是紐約的」、「紐約的錄」、「的錄音室」、「移居紐約」等 2 張殘片。
+- **19705** 腳本：`node qa-batch.mjs out add-20261023-mc36`：out-1 157–239、out-2 165–238，thin 7 張皆 ≤180 ✓，20 張與卡單相符；`qa-check-research`（writer-1）全部通過 ✓；`fix-spacing` 標記 0。
+
+## 寫作層（writer-2）
+- **19706** 交件：`desc-tools/batches/output/add-20261023-mc36-out-2.json` 10 張（full 8：197–239；thin 2：Borrowed Floors 177、Mating Surfaces 164）。`qa-batch out`、`qa-check-research`、`fix-spacing` 皆 0 處；「據」字 grep 0；媒體名、媒體榜單名次 0。初稿 7 張超標（243–260），整格捨去：Full House〈Shout & Twist〉後的全長 47 分鐘、Cargo 的 Eugene 名、Attention「直到」子句、Zs「兩人之手」、Cheval「這是他們的同名專輯」子句與「底子裡」；Borrowed Floors 181 壓到 177（去「其中」「另外」）。
+- **19707** 第二句全照鉤子層 19698／19693 配表：Full House 學歷（早年學打擊、Bill Dixon）、Cargo 搭檔（打擊兼人聲的 Moss）、Nightmare 出身（底特律、1984 移居紐約）、Attention 樂器領句（吹中音薩克斯風的是／彈吉他的是）、Say No More 生年與出生地、Borrowed 城市、Mating 廠牌、Zs 創團者、Cheval 兩人名字、Fresques 國籍與編制。「日」後一字照配：Mating「推」、Fresques「首」，其餘只寫到年月。
+- **19708** 研究層禁區照辦：Attention 不寫曲數（兩首 vs 32 段擇一不混 → 都不寫）；Lithics 兩張不寫第幾張、聲音只寫曲長與廠方原句；Zs 不寫「首張全長」；Cargo／Full House 不寫 Cora 辭世；Nightmare 不寫「廠牌第一張」，只寫 TOTE 1 對應氫。轉述類改寫：Say No More「樂評稱」→「評論認為」；Mating「有評語說」→「嚴厲而可以跳舞，是它得到的評語」；Cheval「被形容為」→直述「聲音急切」；Fresques「發行商形容」→被動「被形容成」。Nightmare 刪掉「在噪音與受控回授之間來回」一句（與 hook 同義複述）。
+- **19709** 自掃（han() 4-gram，本檔 10 張＋writer-1 out 10 張合掃）：3 張以上只剩專名／樂器名（布魯克林、薩克斯風、薩克斯風手）；跨檔 2 張殘片只剩樂器名「中音薩克斯風」「尼龍弦吉他」與 hook 原文「只有約分鐘」（Borrowed hook × Ganryu）。途中拆掉：負責打擊、搬到紐約、首約分鐘、兩人年月／年月在紐、廠牌在年、被形容為 ×3、黑膠限量張、這是他們的、分鐘左右、長約分鐘、的錄音室／在布魯克。
+- **19710** Nightmare Alley 197 字為本檔最低的 full 卡（刪去 hook 複述句後），在區間內未補寫。writer-1 已先交件，合掃以其定稿為準；若 writer-1 再改動，請主線收件時重跑一次。
+
+## 主線審稿（2026-10-23，雲端主線，20 張逐張讀過、對回研究稿）
+- **19711** `desc2:John Zorn|The Classic Guide to Strategy - Volume Two`：hook「從青山通到 Mori Ikue」→「從青山ミチ到 Mori Ikue」。〈Aoyama Michi〉指 1960 年代日本歌手青山ミチ（Zorn 這七首曲名都是日本音樂人／藝人名，同盤〈Togawa Jun〉〈Mori Ikue〉〈Kondo Toshinori〉皆人名），研究稿誤譯成東京地名「青山通」。**已同步改研究稿 b、hooks-b、writer-1 input 與 out-1**。
+- **19712** `desc2:Derek Bailey, George Lewis & John Zorn|Yankees`：刪「樂評用微妙、滑稽又爆笑來形容它」（單一樂評評價語）。
+- **19713** `desc2:Bob Ostertag|Say No More`：刪「評論認為，自由即興與具體音樂之間的界線從此改變。」（單源評價句）。
+- **19714** `desc2:Lithics|Mating Surfaces`：刪「嚴厲而可以跳舞，是它得到的評語」（單一樂評引語；刪後 148 字，thin 帶內）。
+- 核過的事實：《John Gavanti》改寫《唐喬望尼》與 Sear Sound 真空管錄音、Ut 1981 遷倫敦、《Pool》Parachute 私壓 1000 張、《Yankees》Celluloid 1982、《Ganryu Island》1984-11-23 錄音、《School》實為五人〈Lacrosse〉WKCR 錄音、Cobra 1984-10-09 寫成與 hat ART 雙 LP、TOTE 1 對應氫、Zs 托盤叮嚀與兩回錄音日期。
+- 其餘 16 張逐張審過，未改字。qa-batch research／hooks／out、qa-check-research（兩檔 0 標記）、fix-spacing 重跑全過。

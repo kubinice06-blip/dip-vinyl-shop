@@ -98,3 +98,8 @@
 - **19468** 自掃（han() 4-gram，本檔＋out-1 現況＋writer-1 未交 hook）：拆掉 `首約分鐘`×3、`瑞典樂團`、`樂評把它`（撞 Elsewhere）、`的紐西蘭`、`電子音樂`（撞 Surf）、`在年月日`、`二人組的`（撞 Technicolour）、`首加起來`／`分鐘左右`／`首共分鐘`（out-1 同時在改，撞 L&F、Technicolour）、`唱片年月`（撞 A Memory Stream）、`於年月日`、`專輯年月日`（撞 Hugar）、`作年月日`（撞 Surf）、`發行的這`（撞 L&F）。定稿跨兩檔 2 張以上只剩樂器名（`鋼琴合成器`：Choral／Chronicle）。主線收件請再合掃一次（out-1 若再動會變）。
 - **19469** 否定句：hook 層保留的兩處（May Your Heart「沒有起伏的峰谷」、Paths「沒有鼓」）正文改正面寫法——「起伏平緩、少見峰谷」「鼓組從頭到尾缺席」。媒體名、榜單名次、轉述引導詞 0。
 - **19470** 詮釋處（可逆）：Moen 的「只多一把小提琴」寫成「比起原班人馬，只多出一把小提琴」；Paths 的「此時組成」寫成「此時以兩人編制組成 Olan Mill」（研究稿：此期為二人組）；Standing「早年做電子」寫「早年做電子樂」。
+
+## 主線審稿（2026-10-23，雲端主線，21 張逐張讀過、對回研究稿）
+- **19471** `desc2:Immanu El|They’ll Come, They Come`：刪「樂評聽出電影感的 post-rock，Claes 的人聲夾在樂器之間，收尾的〈...In Valleys〉壯闊而優雅。」（單一部落格樂評 ITSATRAP 的評價句；刪後 177 字，qa 通過；事實刪減，研究層無須同步）
+- 核過的事實：Alex Somers 1984 生於巴爾的摩、Willits 學歷與 Mills College 指導老師、Hugar 首作鼓手 Arnalds、Epic45 第五張與村民會堂錄鼓、Lights & Motion《Chronicle》為第三張（2013、2014、2015）、Dave Cooley 母帶、Rhian Sheehan 弦樂錄於 Stella Maris Chapel、Olan Mill 兩場現場多軌重組。
+- 其餘 20 張逐張審過，未改字。qa-batch out、qa-check-research（0 標記）、fix-spacing 重跑全過。
