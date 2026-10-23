@@ -52,3 +52,15 @@
 - 研究稿 d 組《盜夢偵探》與 1978《Lupin III》兩張的 facts 整塊對調（研究代理寫錯位置），主線已換回正確 key。
 - hook-d 把卡主藝人寫成 Koichi Sugiyama，改回卡單藝人欄的すぎやまこういち（writer-base：本卡藝人名照藝人欄）。
 - 骨架歸屬：ufotable×TYPE-MOON→Fate/Zero；空之境界走 Kalafina 成軍；井荻麟＝富野筆名→伊甸王；鋼彈走管弦錄劇伴＋52→43 話。
+
+## ost-1 主線審稿（2026-10-23，cloud-main，45 張逐張讀）
+機器 QA：qa-batch out 3 標記（「PlayStation RPG」「最終幻想 IX」「Wagner」為專名誤報，放行）；qa-check-research 3 標記同上。fix-spacing 建議在原名《ペルソナ5》《銀河鉄道999》《機動戦士ガンダムUC》內插空格，原名照原文不改，未 --write。
+改動 7 處：
+1. FF VII：刪「原聲帶共 4 片，登上 Oricon 第 3 名。」（BRIEF：榜單名次不進正文）
+2. NieR:Automata：刪「原聲帶在 Oricon 榜拿到第 2 名。」（同上）
+3. 崖上的波妞：刪「，電影上映後在 Oricon 週榜衝上第 3 名」（同上）
+4. 女神異聞錄3：「Yumi Kawamura」→「川村ゆみ」（東亞音樂人照原文漢字／假名混寫）
+5. 沉默之丘2（2001）：hook「山岡晃在家花了三天」→「山岡晃（Akira Yamaoka）在家花了三天」（本卡藝人欄是 Akira Yamaoka，標題與內文對得上）；hooks-b、input 同步。
+6. 沉默之丘2（2024）：hook「原作曲家山岡晃，」→「原作曲家山岡晃（Akira Yamaoka），」；同上同步。
+7. 風之谷：「直到《君たちはどう生きるか》」→「直到《蒼鷺與少年》」（用台灣片名）。
+hook 前提逐張對研究稿 facts 核過（Chrono Cross 加藤指名、Radical Dreamers 旋律、Home／Another；吉卜力十張各自的軸），未發現前提錯。

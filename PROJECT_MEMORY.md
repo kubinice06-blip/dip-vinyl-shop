@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜原聲帶簡介重寫 ost-1：遊戲＋日本動畫 45 張上線（含《Chrono Cross》）
+
+- **內容**：店主要原聲帶簡介「多說作品相關的故事」。196 張逐張分流：重寫 95、不動 101（`triage.json`）。ost-1 跑完研究 5→鉤子 2→寫作 2→QA→主線逐張審稿，45 張新簡介寫進 KV（`desc2:`／`desc4:` 舊鍵覆寫）：前兩句點出作品台灣中文名＋原名＋類型，正文講作品與音樂的故事。
+- **譯名裁定**：《Chrono Cross》寫《超時空之鑰 次元之旅》（巴哈姆特與中文維基台灣正體；「超時空之輪」在中文維基是 Chrono Trigger 的別名），並寫明是《超時空之鑰》續作。另：《異域神兵》《聖劍傳說 瑪那傳奇》《薩爾達傳說 姆吉拉的假面》《東京殘響》《聖天空戰記》《蒼鷺與少年》。
+- **研究層推翻**：宮川泰交響組曲不是「日本第一」；鋼彈是 52→43 話；999 不寫松本參與配樂；〈I AM THE WIND〉是原版片尾曲；舊稿多條（米良美一廣播起用、波妞 481 銀幕、台灣盜版四家等）查無來源刪除。研究稿 d 組兩張 facts 錯位，主線換回。
+- **主線審稿**：改 7 處（三處 Oricon 名次刪除、川村ゆみ、Akira Yamaoka 兩張 hook 補原名、《蒼鷺與少年》），見 `rulings.md`。
+- **主要檔案**：`batch-progress/ost-desc-20261023/{triage.json,rulings.md,handoff-ost-1.json,DISPATCH-*.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/ost-1*`、`publish-stage/kv-ost-1-20261023.json`。
+- **驗證**：kv-token-check exit 0；wrangler@4 bulk put `Success!`；verify-wave-kv 45/45 逐字一致。
+
 ### 2026-10-23｜dip-vinyl-shop｜原聲帶簡介重寫：開工準備（候選 196 張）＋寫作／研究規則加「原聲帶先點出作品」
 
 - **內容**：店主看到《Chrono Cross Original Soundtrack》簡介只談曲名寫法與盤號：「乍看不知道是超時空之鑰原聲帶很可惜，其他原聲帶也是，盡量多說一點相關的故事」（《Chrono Cross》台灣通稱《超時空之輪》，是《超時空之鑰》續作）。掃卡池＋KV 簡介，整理 196 張遊戲／電影／動畫／音樂劇原聲帶到 `batch-progress/ost-desc-20261023/candidates.json`（含現有簡介與 KV 鍵；關鍵字粗篩 111 張偏資料庫口吻，僅供參考），`BRIEF.md` 寫分流與重寫規則；`writer-base.md`、`research-base.md` 加「原聲帶：前兩句點出作品（台灣通行中文名＋原名＋類型、系列關係），講作品與音樂的故事，盤號版本最多一句」。重寫另開工作階段照 dip-desc-restyle 產線跑，《Chrono Cross》排第一批。
