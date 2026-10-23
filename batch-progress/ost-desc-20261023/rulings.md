@@ -64,3 +64,38 @@
 6. 沉默之丘2（2024）：hook「原作曲家山岡晃，」→「原作曲家山岡晃（Akira Yamaoka），」；同上同步。
 7. 風之谷：「直到《君たちはどう生きるか》」→「直到《蒼鷺與少年》」（用台灣片名）。
 hook 前提逐張對研究稿 facts 核過（Chrono Cross 加藤指名、Radical Dreamers 旋律、Home／Another；吉卜力十張各自的軸），未發現前提錯。
+
+## ost-2 研究層回報的推翻（d 組）
+- 《Sinister》台灣片名《凶兆》；《Woodstock》寫《胡士托》紀錄片（片名 uncertain，正文以「1969 年胡士托音樂節的 1970 年紀錄片」描述為主）。
+- 獅子王：不寫「Zimmer 第一次寫動畫」「南非經驗」；寫他因先前兩部非洲背景電影被找來、幼年喪父經驗放進木法沙之死。
+- 刺激：1936 年設定對 1902 年出版，寫「三十多年」。神鬼戰士：Holst 基金會提告、庭外和解，不寫金額與否認。
+- keyTracks 未查證的曲名不進正文。
+
+## ost-2 研究層回報的推翻（b 組）
+- Star Wars 不寫「合成器年代的反潮流」，寫「1970 年代末大型交響配樂復興」；盧卡斯想用現成古典樂一說他本人否認，正文不當事實。
+- Titanic「Cameron 原想請 Enya」不寫（uncertain）；Forrest Gump「越戰片必配源頭」屬流行說法、不寫（「據稱」不進正文）。
+- Matrix 不寫 Jason Bentley；BTTF 不寫 Outatime Orchestra 由來。La La Land 榜單屬歌曲盤，不寫進配樂盤。
+
+## ost-2 研究層回報的推翻（a 組）
+- 《Xanadu》台灣片名查無來源：正文用原名《Xanadu》＋「1980 年歌舞奇幻電影」描述。《Footloose》寫《渾身是勁》（Footloose）可，但原名必附。
+- Les Mis 卡是 1985 年倫敦英文原版卡司，不是 1980 法語概念專輯；舊稿「照公式應是失敗之作」查無來源刪除。
+- 單一來源條目（Maureen Crowe 提議、Bryan Adams 婉拒、〈Bring Him Home〉專為 Wilkinson 寫）寫作層可用但不加最高級。
+
+## ost-2 研究層回報的推翻（c 組）
+- **《The Lord of the Rings Trilogy》（Howard Shore 卡）這張是 2004 年 City of Prague Philharmonic Orchestra 演奏的三部曲選粹（iTunes TW、MusicBrainz），不是 Shore 指揮的電影原聲。** 裁定：卡保留、藝人欄不動（本線不碰 seed，另有工作階段在動 seed）；正文講電影與 Shore 配樂的故事，並照 research-base「重錄選輯通則」明寫這張由布拉格樂團演奏、非原始電影錄音。舊稿「Shore 本人指揮、不是後人重錄」是錯的。
+- Desplat《Les Aigles de la République》台灣片名《獨裁大明星》（信心中等，原名必附）；配樂作用查不到，thin 卡。
+- 《偷龍轉鳳》片名 uncertain，原名並列。北西北不寫「kaleidoscopic fandango」原話；迷魂記不把〈Scène d'amour〉寫成確定對應《崔斯坦》；雙峰主題曲與〈Laura Palmer's Theme〉分開；英倫對決不寫用了 Cristal Baschet。
+
+## ost-2 研究層回報的推翻（e 組）
+- 《Le Mépris》卡是 1991 年 Hortensia 的法國電影配樂合輯（前四軌是《輕蔑》）。裁定：本線只改簡介、不動 seed，卡保留；正文寫高達《輕蔑》與 Delerue 的〈Thème de Camille〉，並明寫這張是收錄它的合輯。是否移除留給卡池整頓（記錄在案）。
+- 《少年吔，安啦！》不是林強轉向配樂的起點（他第一部電影配樂是《南國再見，南國》），本盤製作掛王治平、林強在片中客串夜店歌手。
+- 《刺客聶隱娘》：「不要配樂」、自然聲、唐代音樂查無來源；金馬獎只入圍；Cannes Soundtrack Award 是記者評審團的獎，正文寫成坎城影展期間頒發的原聲帶獎、不寫成官方獎；thin 卡。
+- 早坂：最後一部是《生きものの記録》，佐藤勝在《七武士》只負責編曲；《波麗露》式段落在《羅生門》、是黑澤明要求的。
+- 《First Reformed》用原名＋描述（伊森霍克飾牧師）；《Marketa Lazarová》用原名；《輕蔑》原名必附。《Macbeth》不寫風笛。DJ Fish＝黃凱宇不連寫。
+
+## ost-2 主線審稿（2026-10-23，cloud-main，50 張逐張讀）
+機器 QA：qa-batch out 通過（Wagner 互指為專名誤報）；qa-check-research 1 標記（Wagner，誤報）、0 標記。
+改動 1 處：
+1. 名揚四海：「詞作者 Dean Pitchford 即興寫下「I'm gonna live forever」」→「詞作者 Dean Pitchford 當場即興寫出副歌」（不逐字引歌詞）。
+放行說明：《千禧曼波》hook 的「《娛樂世界》只賣出約 5 萬張」是生涯轉折的敘事事實，不是榜單名次，保留。《Sound of Music》與《無間道》兩句 hook 共用「最後一首」，hook 互撞、兩張都屬招牌事實，保留。
+hook 前提逐張對研究稿 facts 核過；魔戒（布拉格樂團選粹）、北西北（Laurie Johnson 重錄）、輕蔑（合輯）三張的版本性質都已在正文正面寫明。
