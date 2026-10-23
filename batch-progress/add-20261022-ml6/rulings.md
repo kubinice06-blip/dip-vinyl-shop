@@ -72,3 +72,10 @@
 - **14463** 自掃（han() 4-gram，本組 20 張＋out-2 20 張＋writer-2 hooks 合掃，剝《》〈〉）：3 張以上只剩「專輯榜第／輯榜第名」（榜名）與「薩克斯風」（樂器）；途中拆掉「年由發行」×3、「製作編曲」×3、「國專輯榜」×3、「的第二張」×3（兩次）、「的第三張」×3、「張專輯年」×3、「這位靈魂歌手」×4（Icon 改「唱靈魂樂的歌手兼製作人」）。2 張殘片剩 6 條（「張個人專輯」為 I've Got So Much 的 note 指定句型，保留）。曾一度命中的「在專輯榜」來自 Just Like 的 hook 原文，out-2 已不再命中。
 - **14464** 否定句與禁區：Sweetback note「沒有固定主唱」改正面「主唱的位置交給客座」；Whatcha Wont「第一張沒進 R&B 前十」不重寫（hook 已說），正文只寫「只爬到第 25 名」；David Porter 照 note 不寫發行年；note 未列的媒體名、樂評引語、分數一律未寫，無「據說／據傳」。Vulnerable 涉逝者，正文不提身後與死訊。Just Like 的「80 年代」照 writer-base 寫「八〇年代」。
 - **14465** 可逆的措辭判斷：Dells《Freedom Means》第二句的團體類型寫「人聲團體」（note 只說高中同學組團，facts 有五人聲部表）；A Dream Fulfilled 寫「男中音歌手」、Regina Belle 寫「女歌手」、Lalah 寫「歌手」補身分（note 未給樂種）；Tom Brock 生年領句寫成「Tom Brock 本人 1942 年生於…」，避開 hook 尾「出來」黏「年生於」撞 Miki Howard。
+
+## 寫作層（writer-2）
+- **14466** 交件：`desc-tools/batches/output/add-20261022-ml6-out-2.json` 20 張（全 full，216–239）。初稿 8 張超標（最高 265：Freddie《Don't Let Love Slip Away》、Phyllis Hyman 自名、It's Time for Love、Put Me in Your Mix、Manhattans《There's No Me》皆因盤名＋拉丁專名），整格捨去正文內的盤名重述與「長／的」類贅字，note 各項未刪。`qa-batch out`：兩檔合計 40 張全部通過；`qa-check-research`：0 標記；`fix-spacing`：0 處。
+- **14467** 第二句領句全照鉤子層 note／14454／14458 指派。日期「日」後一字照 14454／14459：發（Don't Let Love）／問（Prime）／他（It's Time for Love）／開（Truly Blessed）／推（Groove On）／面（Make Time for Love）／釋（Put Me in Your Mix）／辭（Love Lives Forever）；與 out-1 合掃無重複。日期前一字另避開「在年月日」「於年月日」「的年月日」「張年月日」（後兩條撞 out-1 的 A Moment、Stone Gon'）。
+- **14468** 自掃（han() 4-gram，out-1＋out-2 40 張）：3 張以上只剩「專輯榜第／輯榜第名」（榜名＋名次樣板）與「薩克斯風」（樂器）。途中拆掉「的第三張」×4、「上專輯榜」「到專輯榜」「在年月日」「的第二張」×3、「靈魂歌手」×3（Major Harris 改「靈魂樂歌手」）、「年月由發」「首支單曲」「名金唱片」等；2 張殘片剩「美國專輯榜」（榜名）、「亞特蘭大」（地名）、「之後他們」（兩端皆 hook 原文）、「靈魂歌手」（Billy Paul／Peabo 皆為 note 指定的第二句原詞）、「單曲榜第名」（榜名樣板，對 out-1 Miki Howard）。
+- **14469** 措辭判斷（可逆）：Keith Washington note「樂評指出他多數歌用顫音演唱」改寫為陳述句「多數歌裡他都以顫音演唱」，不留「樂評指出」（避轉述引導詞）；Teddy《Love Language》的「胸部以下癱瘓」只留在 It's Time for Love，本張寫「除了癱瘓」以免兩張逐字同構；Love Language「尚未出首張」寫成「尚未發表首張作品」（note 原意，非否定評價）；Freddie 未自加「R&B 歌手」身分詞，身分由 R&B 榜與第三張帶出；Gloria Scott 的「多年後重發」保留為新資訊，不複述 hook 的關島。
+- **14470** 媒體名、媒體評分與媒體榜名次全張未寫；無「據說／據傳」；正文不點名資料平台。
