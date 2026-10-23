@@ -68,3 +68,23 @@
 - **12173** 同藝人分軸與「他／他們」引入法：And One ×2——Anguish 帶生平（「他們是」兩人名＋成軍＋〈Metalhammer〉），Flop! 帶錄音細節（「這是…在 Machinery 的第二張」廠牌關係，曲長與曲名語言）。Welle: Erdball（b 兩張＋d Tanzmusik）——Der Sinn「團名取自」廣播劇與虛構電台；Wunderwelt「排這份清單的是」回指 hook；人事更迭留給 d。Komputer——World of Tomorrow 獨占改名史（I Start Counting→Fortran 5→Komputer）；Synthetik（d）不帶。Marie Davidson ×2——Adieux 帶她的生年與個人生涯，Essaie pas 只以「妻子是 Marie Davidson」出現，Guerineau 共同製作 Adieux 一事兩張皆不指派（避免互指）。Gábor Lázár——Unfold「X 來自匈牙利」（國別取自同藝人 Boundary Object 研究稿 F8 的有 src 事實，Unfold 研究稿本身無國籍）、Boundary Object「是 1989 年出生的布達佩斯人」；Neurobiology／Reflex 歸 d、e。Moskwa TV 的已上架卡《Dynamics & Discipline》用過「法蘭克福 DJ Talla 2XLC 等三人創立」與首張 Westside，本張改以城市前置＋內鬨軸。第二句句型配表：Mafu Cage「是」｜Right to Die「背後只有」｜Weathermen「成了」｜Moskwa TV 城市前置｜Anguish「他們是」｜Flop!「這是…第二張」｜Der Sinn「團名取自」｜Wunderwelt「排這份清單的是」｜Adieux「某年生於…的 X」｜Essaie pas「那就是」｜World of Tomorrow「先叫」｜Unfold「X 來自」｜Boundary Object「是…出生的…人」。所有 hook 不帶團名者，note g1 都補了城市／國別與樂種。
 - **12174** 「日」後一字（尺 `/[年月]\s*\d{1,2}\s*日(.)/`）：Flop! 發、Wunderwelt 推、Adieux 由、Essaie pas 交、World of Tomorrow 美、Boundary Object 上；其餘只寫到年或月。與 d、e 交件版（終、在、，、面）合計 10 處互異。途中 d、e 改版時一度撞「在／面」，已改回與 12179 所列一致。
 - **12175** 自查與腳本：hook×hook 中文 4-gram（全批 19 句）0 條；hook×他張 note 只剩地名「布魯塞爾」（Mafu Cage hook／UnderViewer note，專名）；hook 與自身 note 無逐字重複句（Blue Planet 的「想換掉主唱」note 改「嫌…影響力過大」）；開頭前四字 19 張互異，也與 repo 既有全部 hooks 檔開頭不同（初稿撞 c54「錄完這張」、c159 與 c89「十一首曲／最長的一」、ts11「製作名單」，已改）。`node qa-batch.mjs hooks add-20261023-mc15` 全部通過；`node chk-hook-crossgroup.mjs add-20261023-mc15`（5 組 19 張）全部通過。
+
+## 寫作層（writer-2）
+- **12186** 交件 `desc-tools/batches/output/add-20261023-mc15-out-2.json`（9 張，key 逐字同序）。逐張字數：World of Tomorrow 239｜Unfold 209｜Boundary Object 158（thin）｜Manitutshu 207｜Tanzmusik für Roboter 238｜Synthetik 210｜Wonders & Monsters 236｜Neurobiology 216｜Reflex 161（thin）。初稿 World of Tomorrow 259、Tanzmusik 242 超標，整格縮寫（改名鏈的連接詞、「足足」「的口吻」）壓回；無一張掉下限。
+- **12187** 第二句一律照鉤子層 12178／12179 配表（先叫／X 來自／是…出生的…人／做音色的是／從 1993 年起／Mute 旗下的…就這樣做出來／那是／匈牙利人名叫／名字＋把這張交給）。Manitutshu 第二段不寫「40 個無一被採用」，改只寫邀約經過，避免複述 hook 的「全數落選」；Tanzmusik、Unfold 同理不重提學業與 250 張。
+- **12188** 轉述與媒體：Unfold 的「唱片行文案並提 SOPHIE、Jlin」寫成被動「被拿來與…並提」，不出現唱片行字樣；Boundary Object 的「廠牌說《Source》表面向內塌陷」改成直述，不寫「廠牌說」；Neurobiology「被比作 jungle 與 footwork」被動不具名。全檔無媒體名、無榜單名次、無「據…」。
+- **12189** 「日」後一字：問（World of Tomorrow，偏離鉤子層預排的「美」，因「美國版」放在日期前較通順，全批仍互異）、上、終、在、，、面；Unfold／Manitutshu 只寫到月、Neurobiology 只寫到年。日期前一字：版／接著／拖到／唱片／一半句號，Manitutshu 與 Unfold 分用「在同年 5 月推出」「5 月由…發行」避開同形。
+- **12190** 自掃（han() 中文 4-gram，合掃 out-1＋out-2 共 19 張）：3 張以上 0 條。初掃 `在年月日` ×3（Boundary Object、Tanzmusik 對 out-1 Essaie pas）已整個拿掉「在」改「接著／拖到」；另主動拆掉自身參與的 2 張通用殘片 `這個計畫`、`實驗電子`、`是他自己`、`的匈牙利`、`電子音樂`。剩 2 張者只有專名（布魯塞爾）、樂器（合成器與）與 out-1 內部條目。`qa-batch out` 全通過（19 張與卡單相符）、`qa-check-research` 標記 0、`fix-spacing` 待補 0。
+
+## 寫作層（writer-1）
+- **12181** 交件 `desc-tools/batches/output/add-20261023-mc15-out-1.json`（10 張，key 逐字同序）。逐張字數：Mafu Cage 236｜The Right to Die 176（thin）｜Ten Deadly Kisses 236｜Blue Planet 235｜Anguish 220｜Flop! 175（thin）｜Der Sinn des Lebens 200｜Die Wunderwelt der Technik 227｜Adieux au Dancefloor 209｜Demain Est Une Autre Nuit 234。初稿 Mafu Cage 246、Flop! 184 超標，整格縮寫（共署句、「錄好的」、「壓得」）壓回；無一張掉下限。
+- **12182** 第二句全照鉤子層 12173 配表（那兩個人是／背後只有／成了／城市前置／他們是／這是…第二張作品／團名取自／排這份清單的是／某年生於…的 X／那就是）。避免複述 hook：Mafu Cage 不重提二至三月，只寫 1986 年交 PIAS；Der Sinn 改寫「那台家用電腦在小冊子裡負責的是音與詞」，不再說「列為演出者」；Wunderwelt 的金龜車／Super 8／戰機改成「前者被讚美、戰機和沙利竇邁一起挨批」的收尾；Flop! 以〈Die Mitte〉替 hook 的「最長那首」具名。
+- **12183** 「日」後一字：發（Flop!）、推（Wunderwelt）、由（Adieux）、交（Essaie pas）；其餘只寫到年或月。日期前一字：作品（Flop! 由「第二張」改「第二張作品」，避開 out-2 Reflex／Synthetik 的 `張年月日`／`唱片年月`）、晶片做…（Wunderwelt）、音樂裡（Adieux）、專輯（Essaie pas，拿掉「在」避開 `在年月日` 三張）。
+- **12184** 媒體與轉述：facts 的 AllMusic、RA、Playground、維基、Discogs 與 Polaris 長名單皆不進正文；聲音描述一律無主詞直述或被動「被歸為」。全檔無「據…」、無媒體名、無榜單名次。Snowy Red「電子計畫」、Weathermen「電子團」是由 note 的 minimal 電子／流行 EBM 推得的身分補充（開頭兩句讓人知道是誰），可逆。
+- **12185** 自掃（han() 中文 4-gram，合掃 out-1＋out-2＋全批 hooks）：3 張以上 0 條，2 張只剩地名「布魯塞爾」。途中拆掉 `在年月日`、`發行聲音`、`首張專輯`、`只有分秒`、`電子音樂`、`合成器與`、`專輯年月`、`唱片年月`、`張年月日`。`qa-batch out` 全通過（19 張與卡單相符）、`qa-check-research` 標記 0、`fix-spacing` 待補 0。
+
+## 主線審稿（2026-10-23，雲端主線，19 張逐張讀過、對回研究稿）
+- **12191** `desc2:Gábor Lázár|Unfold`：「帶放克感的俱樂部律動，也因此被拿來與 SOPHIE、Jlin 並提。」→「帶放克感的俱樂部律動。」依據：單源樂評比較句，照線規刪；事實層未動，research／hooks／input 不需同步。
+- **12192** `desc2:Mark Fell & Gábor Lázár|The Neurobiology of Moral Decision Making`：「被比作 jungle 與 footwork」→「帶著 jungle 與 footwork 的影子」。依據：樂評轉述改直述聲音（研究稿 RA 條）；事實未變。
+- **12193** `desc2:Komputer|Synthetik`：「標籤落在 IDM、Synth-pop 與 Electro 之間」→「聲音介於 IDM、synth-pop 與 electro 之間」。依據：原句實指資料平台風格標籤，正文不點名資料平台；事實未變。
+- 其餘 16 張逐張審過，未改字。qa-batch out 重跑全過。
