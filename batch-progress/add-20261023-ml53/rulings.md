@@ -98,3 +98,16 @@
 - **20831** `desc2:YEBBA|Dawn`：「製作人 Mark Ronson 說，YEBBA 是他錄過最偉大的歌手之一。」→「美國歌手 YEBBA 的首作，由製作人 Mark Ronson 與她一起掌舵。」（單源讚語句刪；改寫成研究稿 Wikipedia 製作人名單事實，並補身分）。
 - **20832** `desc2:Jessie Ware|Tough Love`：「是她最大的一首。」→「是她名次最高的單曲。」（語意不清；研究稿「她最大的單曲」指英國榜名次）。
 - 其餘 15 張逐張審過，未改字（樂評句只留聲音描述：Kem 律動更粗礪、One Dove dub 深回音、Ego Ella May 鬆散開闊、Alex Isley 空心回音、YEBBA 電鋼琴與爵士融合）。qa-batch out、qa-check-research（兩檔標記 0）、fix-spacing（0）重跑全過。
+
+## 上線（不佔條號）
+- 上線 17：card_catalog 17/17、KV 17 鍵回讀逐字一致、試聽 17 ready（主線人工配 6：Meshell《Ventriloquism》gb（us／jp 店無試聽軌，上線後補寫靜態試聽 1 筆）、YEBBA、The Internet、Alex Isley 以藝人目錄 lookup，mabanua 自動配到 Instrumentals 版改人聲原版；The Internet、mabanua、YEBBA、Kan Sano 避開 intro 取第 2 軌）、seed +17、published gate 0 error。
+- 封面：CAA 17，縮圖表逐張目視（Meshell《Ventriloquism》粉紅倒三角即原封面）、live-check 全 200。上線前對 origin 95 個 `claude/*` 分支 seed＋他批卡單去重 0 撞。
+- 冷門軸：機器基線；Leon Thomas (R&B) 掛名查不到 Last.fm，主線以 queryAlias「Leon Thomas」重查（listeners 291,737，2/3/3）。
+- 類型樹：Last.fm 標籤 16/17；Malia & Boris Blank、Leon Thomas (R&B)、mabanua、Kan Sano 未落位，`genre-l3-artist-map.json` 補 `soul/neo-soul` 3、`jazz/contemporary/nu-jazz` 1，重建後 17/17 落位。
+
+## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-ml53/`）
+- 照 10-23 體感標準評分（conf high 1、mid 10、low 6）。**上線 17；落恍惚 17/17＝100%**。評分 x 1.9–2.7、y 0.6–1.4、z 0.2–1.5；色溫貼邊 3 張（Malia & Boris Blank、mabanua z 0.2，One Dove 0.3）。
+- 八格（build-card-moods 後）：恍惚 1,555、冷冽 1,469、頹靡 1,480。
+- 產量：策展兩輪 28、研究汰 11 → 17。**爵士人聲 torch／with strings 是死池**（ml31 再確認）：池中古典 torch 與 Larry Klein／Craig Street 型全判輕；能收的是 quiet storm 爵士靈魂（Anita Baker、Kem）與 2010s–20s 霧暖 alt R&B／neo-soul（池中同人錨點可靠）。研究層要擋：無殘響直錄（Midnite 全稱就是「Before Reverb and Without Delay」）、house／club 拍（Moodswings、Vanessa Daou）、原聲吉他簡編制（Syd、Jamie Woon）、trap 製作（Lalah《Honestly》）、樂評 sprightly 的現代 roots（Little Roy）。**ml53 主場景見底，不再派**；vocal dub 二線多是現場樂團錄音、dub 證據薄。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
