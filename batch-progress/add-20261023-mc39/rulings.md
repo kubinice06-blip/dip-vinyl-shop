@@ -111,3 +111,16 @@
 ## 主線審稿（2026-10-23，雲端主線，28 張逐張讀過、對回研究稿）
 - **20751** `desc2:John Butcher / Georg Graewe|Light's View`：hook「曲名多半與光有關」→「替曲目取了一串與光有關的名字」（與 Monkey Puzzle hook「曲名，多半是」撞 4-gram；hooks-c／writer-2 input／out-2 三層同步）。
 - 其餘 27 張逐張審過，未改字（樂評句只留聲音描述：Longest Night Vol. 2 語彙變化、Corner to Corner 短號與鼓、Corpo 段落動態、Two Men Walking 兩線同步、Kindred Spirits 低音單簧管質地；L-R-G 研究稿的「據說」那格寫作層已整格不寫）。qa-batch out／hooks、qa-check-research（兩檔標記 0）、fix-spacing（0）重跑全過。
+
+## 上線（不佔條號）
+- 上線 28：card_catalog 28/28、KV 28 鍵回讀逐字一致、試聽 8 ready（主線人工配對 3：Obliquities jp、Brötzmann《Solo》、Perelman／Mahall《Kindred Spirits》以藝人目錄 lookup；Braxton《Series F》Apple 有條目但無曲目；其餘 19 張 Ogun／FMP／Leo／Nessa／Lumina 等 Apple 未上架）、seed +28、published gate 0 error。
+- 封面：CAA 25、Discogs 3（Points, Snags And Windings、Trials of the Argo、Trespass；已登錄 registry 並重產 DISCOGS-COVERS.md），縮圖表目視、live-check 全 200。上線前對 origin 92 個 `claude/*` 分支 seed＋卡單去重 0 撞。
+- 冷門軸：機器基線（listeners 0–915，冷門 5）；Longest Night Vol. 1、Kindred Spirits worker 無回應，`ratings-override.json` 人工 3/5/3。
+- 類型樹：Last.fm 標籤 20/28（8 張合掛名查無）；未落位 8 個合掛名補進 `genre-l3-artist-map.json` 的 `jazz/free/free-improv`。
+
+## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-mc39/`）
+- 照 10-23 體感標準評分（conf mid 7、low 21）。**上線 28；落冷冽 24/28＝86%**。評分 x 2.7–4.0、y −1.0～+0.6、z −1.8～−1.3。出格 4：Brötzmann《Solo》《No Nothing》嘶吼過吹判重（y 0.5–0.6）落暴躁；Butcher／Graewe《Light's View》（x 2.9）、Rothenberg《World of Odd Harmonics》（x 2.7）留白冥想判靜落平靜。
+- 產量：策展 54、主線挑 45、研究汰 17 → 28。**管樂獨奏／二重奏是冷冽的穩池，但要擋四型**：現場或音樂會廳錄音（MB 不標 Live，維基與 Discogs 記事才看得出）、留白冥想（Perelman／Shipp 中後期、McPhee & Heward、Mitchell 晚期二重奏）、疊錄或低音管厚（Butcher《Invisible Ear》、Brötzmann 低音薩克斯風）、標準曲。**Brötzmann 獨奏即使在錄音室也判重**，冷冽線不再收 Brötzmann；單簧管／尺八型獨奏 x 貼 2.7–2.9，也不收。主場景見底，mc39 不再派。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Anthony Braxton featuring John Lindberg、John Stevens & Evan Parker、Evan Parker & Barry Guy、Evan Parker / John Stevens、Evan Parker / Ned Rothenberg、Evan Parker / Matthew Shipp、Evan Parker & Joe McPhee、John Butcher / Georg Graewe、John Butcher / Dylan van der Schyff、Mats Gustafsson、Mats Gustafsson & Barry Guy、Ned Rothenberg、Ned Rothenberg, Mark Feldman & Sylvie Courvoisier、Ivo Perelman / Matthew Shipp、Ivo Perelman / Mat Maneri、Ivo Perelman / Rudi Mahall、Wolfgang Fuchs（17 個掛名，多為合掛名；單人新藝人 Mats Gustafsson、Ned Rothenberg、Wolfgang Fuchs）

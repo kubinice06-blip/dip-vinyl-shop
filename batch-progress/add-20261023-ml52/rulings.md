@@ -105,3 +105,17 @@
 - **20591** `desc2:Chanté Moore|Love the Woman`：刪「樂評說它避開了當代 R&B 的潮流」（單源評價句；hook 的標準曲事實保留）。
 - **20592** `desc2:Angie Stone|The Art of Love & War`：「是她的最高名次。」→「創下她的個人紀錄。」（與 In My Songs hook「生涯最高名次」撞 4-gram；字數 240 內）。
 - 其餘 25 張逐張審過，未改字（樂評句只留聲音描述：Kelly Price 慵懶慢歌、Silk 和聲與弦樂、Case 的 Stevie Wonder 式靈魂樂、Body Kiss 絲滑嘻哈拍子）。qa-batch out、qa-check-research（兩檔標記 0）、fix-spacing（0）重跑全過。
+
+## 上線（不佔條號）
+- 上線 27：card_catalog 27/27、KV 27 鍵回讀逐字一致、試聽 25 ready（主線人工配對 3：Carl Thomas《So Much Better》jp、Tank《Sex, Love & Pain》、Case《Open Letter》以藝人目錄 lookup；6 張第 1 軌是 intro／interlude 改取第 2 軌；Freddie Jackson《Life After 30》、Chanté Moore《Love the Woman》Apple 無上架）、seed +27、published gate 0 error。
+- 封面：CAA 27，主線縮圖表逐張目視、live-check 全 200。上線前對 origin 92 個 `claude/*` 分支 seed＋卡單去重 0 撞。
+- 冷門軸：機器基線（Last.fm listeners 139–165,155），未人工改（Freddie Jackson《Life After 30》139 屬實冷門，同人池中舊盤冷門 4–5）。
+- 類型樹：Last.fm 標籤 27/27；Keke Wyatt 未落位，`genre-l3-artist-map.json` 補 `soul/classic-rnb/neo-contemporary`。
+
+## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-ml52/`）
+- 照 10-23 體感標準評分（conf mid 12、low 15）。**上線 27；落恍惚 25/27＝93%**。評分 x 2.0–2.7、y 0.3–0.9、z 0.8–1.6。出格 2 張判輕落放鬆：Kenny Lattimore《Timeless》（y 0.4，原聲樂團＋弦樂聲部分明）、Phil Perry《The Heart of the Man》（y 0.3，90 年代初數位製作乾淨）。
+- 八格（build-card-moods 後）：恍惚 1,486、冷冽 1,469、頹靡 1,433。
+- 產量：策展 54、研究汰 20、補 4 再汰 2 → 27。**2000s slow jam 男歌手的盤研究一查多是 hip-hop soul**（饒舌客串、硬拍取樣、Timbaland／Jazze Pha 製作），Jaheim、Avant、Tank、Carl Thomas、Hollister 中後期都是快慢各半；能收的是老將 quiet storm 慢盤（Levert、Isley 的 R. Kelly 期、Silk、Lattimore）與女聲慢板。**乾淨翻唱／爵士電台型（Lattimore《Timeless》）與 90 年代初數位成人抒情判輕**，同型下一批不收。主場景見底，ml52 不再派。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Dave Hollister、Tank、Case、Gerald Levert、Kenny Lattimore、Phil Perry、Chanté Moore、Kelly Price、Keke Wyatt、Syleena Johnson、Marsha Ambrosius（11 個掛名；`data/artist-intros` 與 progress.json 皆無；其中 Hollister、Case、Levert、Lattimore、Moore、Ambrosius 是 ml49 已列過、尚未切的）
