@@ -62,3 +62,11 @@
 - 19726：Natural Snow Buildings《The Dance of the Moon and the Sun》推翻策展層兩處：(1) 全長不是「兩小時」，Discogs 25 首秒數加總約 157 分；(2) 卡單 label=Students of Decay 是 2008 重發（SoD-70/71，限量 500，與 Digitalis 合發），2006 原版為樂團自行發行 CDr（兩種封套共 50 張）。身分 MB 釘住無誤。查無樂評（Foxy Digitalis、Sputnikmusic 503），聲音只能依 Discogs 備註（家用 8 軌、Vitré 2004–2005）與風格標籤。
 - 19727：Wardruna《Runaljod – Ragnarok》與 Steve von Till《No Wilderness Deep Enough》、《Alone in a World of Wounds》未推翻 moodGuess；後者「人聲旋律」「美國鄉村調性」在 Bandcamp 文案出現，輕度提醒 z 可能偏暖。
 - 19728：WebSearch 共用 3 次（Birna 1、Osi 1、NSB 1，NSB 查無相關結果）。其餘靠 Discogs/MB API、Bandcamp、維基。
+
+## 主線（研究後汰換）
+- 19791：研究層「moodGuess 存疑」照先例直接汰換 20 張（卡存 `dropped-cards.json`、研究稿移 `dropped-research.json`）：
+  - 判輕／判暖（原聲吉他歌曲、旋律清楚）：Osi《Halls of the Wolf》、Von Till《A Life Unto Itself》、Fovea Hex、Fursaxa《Mycorrhizae Realm》《Kobold Moon》、NSB《Waves of the Random Sea》《Terror’s Horns》（最易入耳、歌曲段多）、Bohren《Patchouli Blue》（樂評稱開闊如夏日夕陽）、Mansur《Karma》（烏德琴旋律）。
+  - 有鼓推進／判躁：Wardruna《Kvitravn》（更有推進力、有鼓與電子）、Wovenhand《Mosaic》《Consider the Birds》、Splashgirl《Field Day Rituals》《Hibernation》（真鼓爵士三重奏）、Ensemble Pearl（tom-tom 狂擊）、Bersarin《Methoden und Maschinen》（trap 拍、噪音爆發）、Sankt Otten（trip-hop 拍）、Mansur《Pentatonic Ruins》（Downtempo 穩拍、改編盤）。
+  - 非正規錄音室專輯：Mount Fuji《Егор》（2011 莫斯科現場）、Thing With Five Eyes《كون》（播客一小時 DJ mix）。
+- 19792：保留但有風險（研究稿寫明）：Wardruna《Birna》（一首全團鼓段）、Von Till《Alone in a World of Wounds》（鄉村調性）、Fursaxa《Alone in the Dark Wood》（慢速行進節奏）、Dead Neanderthals《Incantations》（催眠式重複鼓點，照體感標準判靜）、Mohn（極慢 dub techno 脈動）、Bersarin 前三張（樂評「溫柔憂鬱」）。
+- 19793：剩 24 張，叫回策展代理補第二輪（只收無鼓／極稀疏、厚墊、陰冷、旋律不明）。
