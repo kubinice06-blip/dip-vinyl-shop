@@ -77,3 +77,4 @@
   - reggae 輕快或無 dub：Hollie Cook《Happy Hour》（自稱 happiest、breezy、lovers rock 非 dub）、Stick Figure《World on Fire》（upbeat、銅管、無 dub 證據）、Easy Star《Radiodread》（14 軌只 2 軌 dub、全真人樂團）、Trinity Roots《Citizen》（重金屬段、prog rock）。
 - 20352：保留但有風險：Metallic Spheres（研究推翻「慢 dub」，實為無鼓 drone＋lap steel，歸暖 drone）、Michael Brook《Hybrid》（conga 律動）、Universal Road（旋律清楚、jaunty 一首）、Shulman（無 dub 低頻證據，但慢、原聲、催眠）。
 - 20353：剩 17，叫回策展代理補第二輪（只收無鼓、和聲清楚、有 warm／cosy／lush 來源的長音，與有具體 dub 證據的慢 reggae）。
+- 20354：策展第二輪補 15（main 11、ext-a 4，每張附 warm 原句來源；ext-b dub 0）。主線汰 7：2026 年新盤 4 張（Maps and Diagrams《returning light》《Tone Isolation》、Rhucle《The Water》、dawson & anthéne《broadcast colours》，來源與聽眾資料不足，比照 ml42 新盤先例）、暖字來源只有樂迷留言（anthéne《hope remain》）、同頁有 melancholy（Halftribe《Elegant, Golden》）、標籤含 dark ambient 且無 warm 原字（Luke Schneider《For Dancing in Quiet Light》）。8 張併入卡單 group e（卡單 25 張），另派一支補研究 append 進 e.json。

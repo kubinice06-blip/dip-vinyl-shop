@@ -4,13 +4,13 @@
   {
    "id": "main",
    "zh": "暖 drone／厚墊 ambient",
-   "count": 24,
+   "count": 30,
    "why": "溫、慢、厚、和聲聽得出來的長音／loop ambient"
   },
   {
    "id": "ext-a",
    "zh": "磁帶 loop／吉他殘響暖 ambient",
-   "count": 14,
+   "count": 18,
    "why": "吉他、鋼棉、shoegaze 霧的暖 ambient，旋律清楚"
   },
   {
@@ -1556,6 +1556,328 @@
    "uncertain": "有水滴般的輕打擊片段，樂評另一句提到 dark clouds；y 可能貼 0.8。",
    "round": 2,
    "warmQuote": "A Closer Listen：\"Warm, sunny loops of ambience\"；\"evokes a warm day of stillness on the coast\""
+  },
+  {
+   "artist": "Maps and Diagrams",
+   "album": "returning light",
+   "year": 2026,
+   "label": "Home Normal",
+   "country": "gb",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Tim Martin（maps and diagrams）Home Normal 新作：霧化電子表面下浮出小旋律，廠牌文案直寫 warm。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "無鼓，霧化電子長音，旋律片段浮現"
+   },
+   "evidence": [
+    "https://homenormal.bandcamp.com/album/returning-light",
+    "https://musicbrainz.org/release-group/b4bc643b-fc8a-4b2b-ac63-48d0b4242bf5",
+    "https://coverartarchive.org/release-group/b4bc643b-fc8a-4b2b-ac63-48d0b4242bf5/front",
+    "https://music.apple.com/us/album/returning-light/6804899990"
+   ],
+   "mbRgMbid": "b4bc643b-fc8a-4b2b-ac63-48d0b4242bf5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "文案提到節奏偶現（rhythms appear and quietly recede），x 可能略高。",
+   "round": 2,
+   "warmQuote": "Home Normal 文案：\"Warm, spacious and quietly uplifting, it feels like perfect summer music.\"；\"Small melodic forms emerge through hazy electronic surfaces.\""
+  },
+  {
+   "artist": "Rhucle",
+   "album": "The Water",
+   "year": 2026,
+   "label": "Home Normal",
+   "country": "jp",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本 ambient 作者 Rhucle 的 Home Normal 盤，旋律清楚的柔和長音，文案寫 warm、deeply melodic。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "無鼓，柔和長音與田野錄音，旋律清楚"
+   },
+   "evidence": [
+    "https://homenormal.bandcamp.com/album/the-water",
+    "https://musicbrainz.org/release-group/802c269b-db45-4d92-8f11-715583da8253",
+    "https://coverartarchive.org/release-group/802c269b-db45-4d92-8f11-715583da8253/front",
+    "https://music.apple.com/us/album/the-water/6776788683"
+   ],
+   "mbRgMbid": "802c269b-db45-4d92-8f11-715583da8253",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "「open」空氣感字眼，y 可能偏輕。",
+   "round": 2,
+   "warmQuote": "Home Normal 文案：\"a gentle, deeply melodic album of luminosity in sound\"；\"feels open, warm and deeply calm\""
+  },
+  {
+   "artist": "michael scott dawson & anthéne",
+   "album": "broadcast colours",
+   "year": 2026,
+   "label": "Home Normal",
+   "country": "",
+   "faction": "ext-a",
+   "genres": [
+    "electronic"
+   ],
+   "why": "吉他 ambient 合作盤，磁帶、田野錄音與風化的柔和旋律，文案寫 glowing、nostalgia。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1,
+    "z": 0.5,
+    "why": "無鼓，磁帶吉他長音、柔焦旋律"
+   },
+   "evidence": [
+    "https://homenormal.bandcamp.com/album/broadcast-colours",
+    "https://musicbrainz.org/release-group/adc613b0-ac31-4f16-ba72-8ee838df4d01",
+    "https://coverartarchive.org/release-group/adc613b0-ac31-4f16-ba72-8ee838df4d01/front",
+    "https://music.apple.com/us/album/broadcast-colours/6766366581"
+   ],
+   "mbRgMbid": "adc613b0-ac31-4f16-ba72-8ee838df4d01",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "round": 2,
+   "warmQuote": "Home Normal 文案：\"Frayed tones, glowing textures, and gently weathered melodies\"；\"the soft ache of nostalgia\""
+  },
+  {
+   "artist": "Maps and Diagrams",
+   "album": "Tone Isolation",
+   "year": 2026,
+   "label": "Home Normal",
+   "country": "gb",
+   "faction": "ext-a",
+   "genres": [
+    "electronic"
+   ],
+   "why": "以磁帶 loop 為骨架的暖 drone，搖晃不穩的磁帶質地，作者自述 full of warmth。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1,
+    "z": 0.5,
+    "why": "無鼓，磁帶 loop 搖晃暖長音"
+   },
+   "evidence": [
+    "https://homenormal.bandcamp.com/album/tone-isolation",
+    "https://musicbrainz.org/release-group/9a470171-6e65-4296-9f50-c3fc085195ab",
+    "https://coverartarchive.org/release-group/9a470171-6e65-4296-9f50-c3fc085195ab/front",
+    "https://music.apple.com/us/album/tone-isolation/1895208665"
+   ],
+   "mbRgMbid": "9a470171-6e65-4296-9f50-c3fc085195ab",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同頁樂迷留言列 melancholy；同人兩張同年，主線可擇一。",
+   "round": 2,
+   "warmQuote": "Home Normal 頁作者自述：\"Full of warmth, texture, and positive energy.\""
+  },
+  {
+   "artist": "David Cordero & Rhucle",
+   "album": "Summer Chronicles",
+   "year": 2023,
+   "label": "Home Normal",
+   "country": "",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "西班牙 David Cordero 與日本 Rhucle 合作的夏日主題暖 ambient，柔和長音與自然聲。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "無鼓，柔和長音與夏日田野錄音"
+   },
+   "evidence": [
+    "https://homenormal.bandcamp.com/album/summer-chronicles",
+    "https://musicbrainz.org/release-group/9ad694a9-e51c-4d8f-ae18-04382578ae15",
+    "https://coverartarchive.org/release-group/9ad694a9-e51c-4d8f-ae18-04382578ae15/front",
+    "https://music.apple.com/us/album/summer-chronicles/1712722569"
+   ],
+   "mbRgMbid": "9ad694a9-e51c-4d8f-ae18-04382578ae15",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "warm 字眼描述情境多於音色；Cordero 偶用鋼琴。",
+   "round": 2,
+   "warmQuote": "TheSlowMusicMovement（Home Normal 頁轉引）：\"marveling at the sounds of peak nature, warm evenings spent outdoors\""
+  },
+  {
+   "artist": "'t Geruis",
+   "album": "The Kindest Encounters",
+   "year": 2025,
+   "label": "Home Normal",
+   "country": "",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Home Normal 2025 年作，類比 ambient 在旋律與噪聲間游移，塵封記憶般的質地，廠牌直寫 deeply warm。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "無鼓，類比合成長音、塵埃質地，旋律與噪聲之間"
+   },
+   "evidence": [
+    "https://homenormal.bandcamp.com/album/the-kindest-encounters",
+    "https://musicbrainz.org/release-group/4730ef1a-1c43-467c-ac8e-db255e205bc0",
+    "https://coverartarchive.org/release-group/4730ef1a-1c43-467c-ac8e-db255e205bc0/front",
+    "https://www.discogs.com/release/34085887",
+    "https://music.apple.com/us/album/the-kindest-encounters/1817323254"
+   ],
+   "mbRgMbid": "4730ef1a-1c43-467c-ac8e-db255e205bc0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "round": 2,
+   "warmQuote": "Home Normal 文案：\"deeply warm analog ambient music that moves comfortably between melody and noise\"；Textura：\"the nostalgic feeling that sets in when faded colour photographs are viewed\""
+  },
+  {
+   "artist": "citrine",
+   "album": "line of sight",
+   "year": 2025,
+   "label": "Home Normal",
+   "country": "",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Home Normal 2025 年作，空靈人聲配 lush 弦樂與低沉貝斯合成長音，慢而厚。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.2,
+    "z": 0.4,
+    "why": "無鼓，厚弦樂墊＋深沉低音合成，空靈人聲"
+   },
+   "evidence": [
+    "https://homenormal.bandcamp.com/album/line-of-sight",
+    "https://musicbrainz.org/release-group/1cfef092-ffe7-45c1-9600-e5cabc2102b0",
+    "https://coverartarchive.org/release-group/1cfef092-ffe7-45c1-9600-e5cabc2102b0/front",
+    "https://music.apple.com/us/album/line-of-sight/1796337363"
+   ],
+   "mbRgMbid": "1cfef092-ffe7-45c1-9600-e5cabc2102b0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有慢速鑼聲律動；樂迷留言用 fragile；z 可能中性。",
+   "round": 2,
+   "warmQuote": "Home Normal 文案：\"Phoebe's ethereal vocals featuring lush strings and throbbing bass synth tones\""
+  },
+  {
+   "artist": "anthéne",
+   "album": "hope remain",
+   "year": 2022,
+   "label": "Home Normal",
+   "country": "ca",
+   "faction": "ext-a",
+   "genres": [
+    "electronic"
+   ],
+   "why": "加拿大 Brad Deschamps（anthéne）的吉他 drone，緩慢柔和的長音層。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1,
+    "z": 0.4,
+    "why": "無鼓，吉他 drone 長音與田野錄音"
+   },
+   "evidence": [
+    "https://homenormal.bandcamp.com/album/hope-remain",
+    "https://musicbrainz.org/release-group/cb5bbae6-58d7-40ff-8558-51c0fbd764e0",
+    "https://coverartarchive.org/release-group/cb5bbae6-58d7-40ff-8558-51c0fbd764e0/front",
+    "https://music.apple.com/us/album/hope-remain/1646414367"
+   ],
+   "mbRgMbid": "cb5bbae6-58d7-40ff-8558-51c0fbd764e0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "證據只有樂迷留言，非廠牌文案。",
+   "round": 2,
+   "warmQuote": "樂迷留言（Home Normal 頁）：\"Calming and warm sounding music to relax to.\""
+  },
+  {
+   "artist": "Polypores",
+   "album": "I Wish There Was a Place Like That",
+   "year": 2025,
+   "label": "quiet details",
+   "country": "gb",
+   "faction": "main",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Stephen James Buckley（Polypores）的 ambient 全長，密集細節與閃爍泛音層層交織。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "無鼓，密集泛音層層堆疊的合成長音"
+   },
+   "evidence": [
+    "https://quietdetails.bandcamp.com/album/i-wish-there-was-a-place-like-that",
+    "https://homenormal.bandcamp.com/album/frayed",
+    "https://musicbrainz.org/release-group/c2b3eb72-5ac3-4d4f-aadf-2199fadf78d3",
+    "https://coverartarchive.org/release-group/c2b3eb72-5ac3-4d4f-aadf-2199fadf78d3/front",
+    "https://music.apple.com/us/album/i-wish-there-was-a-place-like-that/1827421453"
+   ],
+   "mbRgMbid": "c2b3eb72-5ac3-4d4f-aadf-2199fadf78d3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Polypores 其他作品常有模組序列；本作描述為 repetition，x 可能略高。",
+   "round": 2,
+   "warmQuote": "Home Normal 推薦文：\"cultivates a warm. radiant ambient ecosystem\"；發行頁：\"Layer upon layer of glistening harmonics\""
+  },
+  {
+   "artist": "Luke Schneider",
+   "album": "For Dancing in Quiet Light",
+   "year": 2025,
+   "label": "Leaving Records",
+   "country": "us",
+   "faction": "ext-a",
+   "genres": [
+    "electronic"
+   ],
+   "why": "《Altar of Harmony》（第一輪保留）續作，純踏板鋼棉＋效果層疊的暖 ambient。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1,
+    "z": 0.5,
+    "why": "無鼓，踏板鋼棉層疊效果，發光質地"
+   },
+   "evidence": [
+    "https://lukeschneider.bandcamp.com/album/for-dancing-in-quiet-light",
+    "https://musicbrainz.org/release-group/a05a3cac-5e71-4ca8-a1e2-c36b3daf80dc",
+    "https://coverartarchive.org/release-group/a05a3cac-5e71-4ca8-a1e2-c36b3daf80dc/front",
+    "https://music.apple.com/us/album/for-dancing-in-quiet-light/1814159463"
+   ],
+   "mbRgMbid": "a05a3cac-5e71-4ca8-a1e2-c36b3daf80dc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "字眼是 radiant／glowing（非 warm 原字）；Bandcamp 標籤含 dark ambient。",
+   "round": 2,
+   "warmQuote": "Leaving Records 文案：\"gentle, resonant, and quietly radiant\"；\"sets the tone with its glowing textures\""
   }
  ],
  "notes": [
@@ -1564,6 +1886,7 @@
   "跨組去重排除：Hammock 剩下的主盤（Kenotic、Departure Songs、Universalis、Everything and Nothing 都已在其他組被提過並汰）、Guthrie & Budd《Before the Day Breaks》《Bordeaux》（ml44 判冷／判輕已汰）、Guthrie《Imperial》（ml2 汰）、Manual 全部（ml2／ml24／ml34）、Lanois《Belladonna》《Shine》（ml34）、Tosca／Dub Colossus／Prince Fatty／Boozoo Bajou 剩餘盤（ml9／ml15／ml40 已提）、Hollie Cook《Vessel of Love》（ml40）、Fat Freddy's Drop 前四張（ml15／ml40）、Kaya Project 三張（ml15）。",
   "考慮後不提：Fat Freddy's Drop《Bays》（電子舞曲感、x 恐 ≥2.9）、《Special Edition Part 1》（MB 為 EP）、《Wairunga》（MB 為 Live）；Salmonella Dub 兩張（有 dnb／breaks 推進）；Jah Wobble《Chinese Dub》《Japanese Dub》（池中同人 z0.1–0.4 貼邊）；Pioulard《Avocationals》（MB 為與 Sean Curtis Patrick 合作）；Bluetech《Phoenix Arising》（MB 查無）；Casino Versus Japan 其他盤（池中 z0.4–0.6 貼邊、《Frozen Geometry》題冷）；Hotel Neon《Inward》（6 首、長度近 EP）；Celer《Capri》（29 段短片段）；Harold Budd & Robin Guthrie《Another Flower》（Budd 鋼琴領軍＋姊妹作已判冷）。",
   "主要風險：main 派系的 drone 盤（Celer、Pioulard、Marcus Fischer、Hotel Neon、Dettinger、Triola）模型對冷門 ambient 多給 z≈0–0.3，預期落格率低於 ext-b；Cortini《Avanti》與 Cantu-Ledesma 兩張有同人落冷先例。研究層請優先查這幾張的樂評冷暖字（cold／bleak／elegiac 出現就汰）。ext-b 的 Stick Figure 四張同型，主線可擇二。",
-  "46 張全部 MB 釘住（Album、無 secondary type），0 張人工身分；CAA release-group 封面 HEAD 皆 307（有圖）。WebSearch 用 2 次（查無有用樂評）。"
+  "46 張全部 MB 釘住（Album、無 secondary type），0 張人工身分；CAA release-group 封面 HEAD 皆 307（有圖）。WebSearch 用 2 次（查無有用樂評）。",
+  "第二輪（主線汰 25 後補件）追加 15 張（round:2，warmQuote 欄記來源原句）：每張 evidence 第一個網址即 warm／nostalgic／lush 類字眼出處（廠牌文案、A Closer Listen、Textura 轉引、樂迷留言）。全部 MB 釘住、CAA 有圖、seed／pool／curation 去重 0。Home Normal 2022–2026 目錄是主要來源。查過不收：Hotel Neon《All Is Memory》《Relic》《Moments》（無暖字）、Pioulard《Koselig》《Sunder》（melancholy、有鼓）、《Eidetic》（歌曲＋打擊）、SUSS《Promise》《Birds & Beasts》（haunting／stark）、Celer《Capri》《Coral Sea》《Sunspots》《In Light of Blues》（無暖字或 mournful）、Halftribe《Backwater Revisited》（melancholia）、Kenniff《For Those Who Stay》、Luke Schneider《A Companion…》（krautrock）、Home Normal 鋼琴盤（amble、Federica Deiana、Cordero & Takahashi、Cordero & Rhucle《So Far, So Close》）、anthéne《time and space》（MB 為 EP）。證據較弱：anthéne《hope remain》只有樂迷留言；Luke Schneider 新作用 radiant／glowing；Polypores 的 warm 出自 Home Normal 推薦文。WebSearch 第二輪用 1 次（累計 3 次）。"
  ]
 }
