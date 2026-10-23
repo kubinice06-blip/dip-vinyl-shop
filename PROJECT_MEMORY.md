@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜한영애《바라본다》放鬆→雀躍
+
+- **改動**：店主指定。(2.7, 0.3, 0.2) → (3.3, 0.0, 0.6)。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：`build-card-moods.mjs` 錨點 104/104 同格。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格線第 9 輪派工：優先序 40–47（恍惚 5 批＋冷冽 2＋頹靡 1）
 
 - **起因**：第 8 輪三個工作階段（ml38/md22、ml40/mc22、ml41/ml35）全部收工，優先序 1–39 派完（ml39 歐陸 dub 場景見底、併入 ml40）。目前恍惚 1,268、頹靡 1,430、冷冽 1,429。
