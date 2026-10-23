@@ -1070,7 +1070,7 @@
 <script src="dip-player.js?v=49"></script>
 <script src="dip-draw-anim.js?v=4"></script>
 <script src="dip-genre-tree.js?v=5"></script>
-<script src="dip-tune.js?v=8"></script>
+<script src="dip-tune.js?v=13"></script>
 <script src="dip-artist-intro.js?v=2"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -5907,6 +5907,7 @@ ${seenList}
         _bandcampUrl: assets.bandcampUrl, _ytUrl: assets.ytUrl,
         _previewUrl: assets.previewUrl, _previewUnavailable: assets.previewUnavailable,
         _matchNote: note, _mode: 'tune', _streaming: true,
+        _hall: card.tier === 'hall', _pearl: card.tier === 'pearl', _heresy: card.tier === 'heresy',
       });
       if (seq !== _tuneSeq) { warp.cancel(); return; }
       // 揭露的是一螢幕大的專輯畫面（覆蓋層），揭露完才把結果頁切出來、封面與文字各自飛到真卡的位置

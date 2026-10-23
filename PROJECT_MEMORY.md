@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜頻率選歌：FINE 改一格一張、SCAN／FINE 撥桿動畫、新增搜尋列
+
+- **改動**：店主反映 FINE 沒有「小範圍慢慢掃」的感覺。FINE 改成每撥一格（拖 14px／滾一下／方向鍵）就跳到這條軸上附近的下一張，輪子跟著咔一格、有咔噠聲；SCAN 照舊連續掃。開關撥桿照原稿槽位做三格（上／中／下，`tune/switch.png`，SCAN 在上、FINE 在下）。新增搜尋列模組（`tune/panel-search.png`，配色與螺絲取自原稿，`scripts/build-tune-sprites.py` 產生）：輸入藝人或專輯，清單從星圖底部浮出，選了之後三顆輪子依序轉過去（能量→質地→色溫），停在那張並試聽。面板改成貼底、搜尋列在最上；頻率選歌開著時頁面底色改成面板深灰 `#2c3037`。店主看預覽後再改：手機直放時面板放大塞滿寬度（星圖讓出高度，最小 200px）；FREQUENCY 的兩顆螺絲疊上與輪子模組同大小的螺絲（`tune/screw.png`）。店主回報點搜尋列跳出鍵盤時整台版面變成左右並排：鍵盤讓 100dvh 縮、直式被判成橫式。改用 JS 記的視窗高 `--tvh`（搜尋框有焦點時不更新），橫式並排另加 `min-width:560px`。`dip-tune.js?v=11`。店主再報 A Love Supreme、My Favourite Things 找不到：頻率選歌只吃 `pool.cards`，頂級牌（殿堂 692、遺珠 109、異端 116，共 917 張）放在 `pool.apex`，從上線起就沒進星圖；改成一併載入，結果頁帶 `_hall/_pearl/_heresy` 照頂級卡樣式顯示。搜尋英式拼法照美式比（favourite＝favorite）。`dip-tune.js?v=12`。店主再要「下面的面板整合成一個像素面板、拿掉抽屜讓星圖變大」：`scripts/build-tune-panel.py` 從原稿拼出 `tune/panel-all.png`（輪子稿的外框與側軌、FREQUENCY 內容抽掉滾筒窗中段 195px 讓出就這張、欄間溝轉橫當分隔、名牌吊在分隔槽上、搜尋列畫在面板上；同一比例不縮放），所有活件位置改成這張的百分比；舊的 `panel-search.png` 與 FREQUENCY 補螺絲撤掉。389×652 星圖 238→274px。`dip-tune.js?v=13`。
+- **主要檔案**：`dip-tune.js`、`index.html`、`tune/switch.png`、`tune/panel-search.png`、`scripts/build-tune-sprites.py`
+- **驗證**：本機 Playwright（桌機 1400×900、手機 400×820）：搜「eminem revival」→ 三軸依序轉到 Revival、小卡顯示沸騰；FINE 拖 70px 依序換 5 張；撥桿 上→中→下；389×652（店主手機）面板寬 377／389、星圖 238px；無頁面錯誤。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 5 輪 ml24／md21：暖 dream folk＋暖 ambient 11＋goth 慢盤／hauntology 34 張上線，落格 11/11、33/34
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 5 輪，本工作階段負責 ml24、md21（評分照 10-23 體感標準）。ml24（`add-20261023-ml24`，恍惚：暖 dream folk／slowcore＋ml30 暖 ambient 厚墊）：Mercury Rev《Delta Sweete Revisited》、Flaming Lips《American Head》、Jim James《Regions…》、Connan Mockasin《Jassbusters》、Matthew E. White《Big Inner》、Schnauss《A Long Way to Fall》、Peaking Lights、Acetone《York Blvd.》、Hammock《Oblivion Hymns》、Casino Versus Japan、Manual《Bajamar》。md21（`add-20261023-md21`，頹靡：goth／coldwave 慢盤二線＋md15 hauntology／witch house）：The Caretaker ×6、Leyland Kirby ×2、The Stranger ×2、Cranes《Future Songs》、Lowlife、Kirlian Camera《Still Air》、Sopor Aeternus ×2、Lacrimosa ×2、Dark Sanctuary ×2、Trance to the Sun ×2、Esben and the Witch、Trees of Eternity、Ghost Box 系（MVAL、Pye Corner Audio）、oOoOO、Holy Other 等。
