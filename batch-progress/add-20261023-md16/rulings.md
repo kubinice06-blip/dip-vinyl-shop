@@ -73,3 +73,7 @@
 - **17908**｜Shabazz《Quazarz vs. Jealous Machines》：身分相符（2017-07-14，SP1185）。**找不到任何來源說這張比姊妹作更暗**；編制含長笛、低音單簧管、吉他，偏器樂感。聲音事實僅編制與曲長，**moodGuess 存疑（無來源）**。facts 8 條 thin。
 - **17909**｜Tha Blue Herb《Sell Our Soul》：身分相符（2002-05-22 TBHR-CD-003）。聲音僅「O.N.O 取樣加工＋複雜鼓組」「DJ Dye 轉盤」；**「冷電子 beat、陰」無來源**，**moodGuess 存疑**。日文維基自標出處不足，Mummy-D 一事單源且用「被視為」。facts 8 條 thin。
 - **17910**｜工具限制：Pitchfork、AllMusic、Guardian、Metacritic 擋或 403，評語經維基轉述；WebSearch 3 次（Ghostpoet、WPSE、BONES），BONES 那次只回電視劇《Bones》；DuckDuckGo 遇機器人驗證，未繞過。
+
+## 主線（研究後）
+- **17951**：照研究層聲音事實汰 12 張（卡單與研究檔已移除，原卡存 `dropped-cards.json`）：Bladee《Gluee》（維基稱夏日頌歌、偏暖亮）、《Working On Dying》（高速 808、少氛圍）；Night Lovell《GOODNIGHT LOVELL》（失真聲牆、與 $uicideboy$ 合作的兇曲）；Joji《BALLADS 1》（偏流行電台風、z 貼中性）；Corbin《Ghost With Skin》（零聲音來源）；Shabazz Palaces《The Don of Diamond Dreams》（樂評稱比前作更暖更放克）；nothing,nowhere.《Reaper》（吉他 emo rap／rap rock 偏亮）；Lukid《Lonely at the Top》（封套自印 BPM 多為 108–130，舞曲）；Sixtoo《Antagonist Survival Kit》（含人聲、無聲音來源）；Wen《EPHEM:ERA》（techno／jungle 舞池材料）；Logos《Cold Mission》（樂評稱把 eski 寒意調暖、kick 重）；Telephone Jim Jesus（樂評稱歡欣、勝利感）。
+- **留下的存疑張**：BONES ×2（池中《Garbage》2.4/1.5/−1.4 落頹靡，同期同製作）、LUCKI、Tha Blue Herb《Sell Our Soul》（池中《Stilling》落頹靡）、DJ Krush《MiLiGHT》《Trickster》（池中 Krush 8 張全落頹靡）、Odd Nosdam 兩張（池中 cLOUDDEAD 兩張落頹靡）、Req ×2、Wen《Signals》、Mr. Mitch、BSBD《NOIR》——寫作層不寫無來源的「霧」「冷」「慢拍」。
