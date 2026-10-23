@@ -24,6 +24,18 @@
    "zh": "Zoharum／isolationist drone 二線",
    "count": 5,
    "why": "Zoharum 與 isolationist drone 二線"
+  },
+  {
+   "id": "isolationist-drone",
+   "zh": "isolationist／冷 drone（補位）",
+   "count": 10,
+   "why": "Glacial Movements／Cryo Chamber／Cyclic Law 補位，每張附廠牌文案原句"
+  },
+  {
+   "id": "dub-steppers",
+   "zh": "器樂 dub／steppers（補位）",
+   "count": 5,
+   "why": "池中同型器樂 dub 先例全落頹靡"
   }
  ],
  "albums": [
@@ -1650,6 +1662,446 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": ""
+  },
+  {
+   "artist": "Ark Zead",
+   "album": "Niptaktuk",
+   "year": 2024,
+   "label": "Glacial Movements",
+   "country": "",
+   "faction": "isolationist-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "isolationist／dark ambient補位：極寒 isolationist 長音，無鼓無旋律，低頻空洞，往下壓的頹靡型。證據原句：Glacial Movements 文案：「represent the quintessence of the most extreme and coldest isolationism… the deep sidereal void」",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.5,
+    "z": -1.8,
+    "why": "極寒 isolationist 長音，無鼓無旋律，低頻空洞"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b593434b-3ed4-41c6-a09d-18258870bafb",
+    "https://coverartarchive.org/release-group/b593434b-3ed4-41c6-a09d-18258870bafb/front-500"
+   ],
+   "mbRgMbid": "b593434b-3ed4-41c6-a09d-18258870bafb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "copyQuote": "Glacial Movements 文案：「represent the quintessence of the most extreme and coldest isolationism… the deep sidereal void」"
+  },
+  {
+   "artist": "Equal Stones",
+   "album": "Below Zero",
+   "year": 2019,
+   "label": "Glacial Movements",
+   "country": "",
+   "faction": "isolationist-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "isolationist／dark ambient補位：冰冷厚層 drone，慢速沉重，無鼓，往下壓的頹靡型。證據原句：Glacial Movements 文案：「icy cold, thickly layered with textures… heavy, slow moving, glacial scenery. A dark, sometimes brooding atmosphere」",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.7,
+    "z": -1.5,
+    "why": "冰冷厚層 drone，慢速沉重，無鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e3973cfa-bd84-4a28-8de4-6da73ee0ff75",
+    "https://coverartarchive.org/release-group/e3973cfa-bd84-4a28-8de4-6da73ee0ff75/front-500"
+   ],
+   "mbRgMbid": "e3973cfa-bd84-4a28-8de4-6da73ee0ff75",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "copyQuote": "Glacial Movements 文案：「icy cold, thickly layered with textures… heavy, slow moving, glacial scenery. A dark, sometimes brooding atmosphere」"
+  },
+  {
+   "artist": "Philippe Petit",
+   "album": "You Only Live Ice",
+   "year": 2016,
+   "label": "Glacial Movements",
+   "country": "",
+   "faction": "isolationist-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "isolationist／dark ambient補位：被困冰架的陰沉氛圍，無鼓，低頻厚，往下壓的頹靡型。證據原句：Glacial Movements 文案：「A moody, detailed and wide-ranging work… like being entrapped within an Arctic ice shelf」",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.2,
+    "z": -1.3,
+    "why": "被困冰架的陰沉氛圍，無鼓，低頻厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/02cae4d3-e318-4437-8f16-2d772de68948",
+    "https://coverartarchive.org/release-group/02cae4d3-e318-4437-8f16-2d772de68948/front-500"
+   ],
+   "mbRgMbid": "02cae4d3-e318-4437-8f16-2d772de68948",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "作者常做配樂，可能有零星樂器聲，研究層確認",
+   "copyQuote": "Glacial Movements 文案：「A moody, detailed and wide-ranging work… like being entrapped within an Arctic ice shelf」"
+  },
+  {
+   "artist": "Retina.it",
+   "album": "Descending Into Crevasse",
+   "year": 2012,
+   "label": "Glacial Movements",
+   "country": "",
+   "faction": "isolationist-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "isolationist／dark ambient補位：冰隙下降意象，模組合成長音，無鼓，往下壓的頹靡型。證據原句：Glacial Movements 文案：「An ipotetic journey between the gorges of eternal ices」，類比合成器與環境錄音",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.2,
+    "z": -1.1,
+    "why": "冰隙下降意象，模組合成長音，無鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2278f23f-e718-41d6-b072-95746f882340",
+    "https://coverartarchive.org/release-group/2278f23f-e718-41d6-b072-95746f882340/front-500"
+   ],
+   "mbRgMbid": "2278f23f-e718-41d6-b072-95746f882340",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "文案未明講無鼓／色溫，研究層確認",
+   "copyQuote": "Glacial Movements 文案：「An ipotetic journey between the gorges of eternal ices」，類比合成器與環境錄音"
+  },
+  {
+   "artist": "Line Spectrum",
+   "album": "Bruma",
+   "year": 2019,
+   "label": "Glacial Movements",
+   "country": "",
+   "faction": "isolationist-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "isolationist／dark ambient補位：冷色沉浸 drone 與微粒質地，無鼓，往下壓的頹靡型。證據原句：Glacial Movements 文案：「Somewhere cold and safe… Immersive drones combined with textured particles and field recording」",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 0.9,
+    "z": -0.8,
+    "why": "冷色沉浸 drone 與微粒質地，無鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2f9d8139-195c-4b92-93cd-81db7806f6e2",
+    "https://coverartarchive.org/release-group/2f9d8139-195c-4b92-93cd-81db7806f6e2/front-500"
+   ],
+   "mbRgMbid": "2f9d8139-195c-4b92-93cd-81db7806f6e2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.9、z -0.8 較貼邊（極簡微粒偏輕）；『safe』可能偏中性",
+   "copyQuote": "Glacial Movements 文案：「Somewhere cold and safe… Immersive drones combined with textured particles and field recording」"
+  },
+  {
+   "artist": "Fractalyst",
+   "album": "Ypnos",
+   "year": 2026,
+   "label": "Cyclic Law",
+   "country": "",
+   "faction": "isolationist-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "isolationist／dark ambient補位：孤立不安的類比 ambient 緩慢下沉，無鼓，往下壓的頹靡型。證據原句：Cyclic Law 文案：「emotional isolation… unsettling… gradual immersion… tension, fragility, and quiet endurance」，analog-driven ambient",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.3,
+    "z": -1.3,
+    "why": "孤立不安的類比 ambient 緩慢下沉，無鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d56b50f4-a3a6-44f1-b646-c68b63b8a04e",
+    "https://coverartarchive.org/release-group/d56b50f4-a3a6-44f1-b646-c68b63b8a04e/front-500"
+   ],
+   "mbRgMbid": "d56b50f4-a3a6-44f1-b646-c68b63b8a04e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "文案有『search for light』一句，色溫可能不夠冷",
+   "copyQuote": "Cyclic Law 文案：「emotional isolation… unsettling… gradual immersion… tension, fragility, and quiet endurance」，analog-driven ambient"
+  },
+  {
+   "artist": "HLAD",
+   "album": "Imminent",
+   "year": 2026,
+   "label": "Cryo Chamber",
+   "country": "",
+   "faction": "isolationist-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "isolationist／dark ambient補位：機械低鳴循環催眠，無鼓，冷，往下壓的頹靡型。證據原句：Cryo Chamber 文案：「old machines hum louder with each loop… Analog noise and deep atmospherics… subtle hypnosis」",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.4,
+    "z": -1.3,
+    "why": "機械低鳴循環催眠，無鼓，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fc8040a4-a169-46e0-b859-9538742c8edf",
+    "https://coverartarchive.org/release-group/fc8040a4-a169-46e0-b859-9538742c8edf/front-500"
+   ],
+   "mbRgMbid": "fc8040a4-a169-46e0-b859-9538742c8edf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "『mechanical textures』可能含節奏性 loop，研究層確認",
+   "copyQuote": "Cryo Chamber 文案：「old machines hum louder with each loop… Analog noise and deep atmospherics… subtle hypnosis」"
+  },
+  {
+   "artist": "Void Stasis",
+   "album": "Specimen 7",
+   "year": 2026,
+   "label": "Cryo Chamber",
+   "country": "",
+   "faction": "isolationist-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "isolationist／dark ambient補位：廢棄太空船內的冷鐵與霜意象，低頻暗潮，往下壓的頹靡型。證據原句：Cryo Chamber 文案：「immersive dark ambient… the air tastes of iron and recycled frost」",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.3,
+    "z": -1.4,
+    "why": "廢棄太空船內的冷鐵與霜意象，低頻暗潮"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b4b76b4c-f48b-4988-9a72-9ed4946f1925",
+    "https://coverartarchive.org/release-group/b4b76b4c-f48b-4988-9a72-9ed4946f1925/front-500"
+   ],
+   "mbRgMbid": "b4b76b4c-f48b-4988-9a72-9ed4946f1925",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "文案含 industrial atmospheres，研究層確認無節拍",
+   "copyQuote": "Cryo Chamber 文案：「immersive dark ambient… the air tastes of iron and recycled frost」"
+  },
+  {
+   "artist": "Jah Shaka",
+   "album": "Commandments of Dub, Chapter 8: Imperial Dub",
+   "year": 1988,
+   "label": "Jah Shaka Music",
+   "country": "",
+   "faction": "dub-steppers",
+   "genres": [
+    "world",
+    "electronic"
+   ],
+   "why": "器樂 dub／steppers補位：全器樂 steppers dub，低頻厚、回音重、拍子懶，無旋律領奏，往下壓的頹靡型。證據原句：樂評（allnightflightrecords）：「ten instrumental pieces with a tight rhythm section and hovering ear-worm basslines… soaked heavy in reverb, echo and delay… the SPACE」",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.3,
+    "z": -0.6,
+    "why": "全器樂 steppers dub，低頻厚、回音重、拍子懶，無旋律領奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bf8bf910-6a85-4173-ba53-94dc033fe195",
+    "https://coverartarchive.org/release-group/bf8bf910-6a85-4173-ba53-94dc033fe195/front-500"
+   ],
+   "mbRgMbid": "bf8bf910-6a85-4173-ba53-94dc033fe195",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫為池中同型先例推估（器樂 dub 判冷），貼 -0.5 風險",
+   "copyQuote": "樂評（allnightflightrecords）：「ten instrumental pieces with a tight rhythm section and hovering ear-worm basslines… soaked heavy in reverb, echo and delay… the SPACE」"
+  },
+  {
+   "artist": "Jah Shaka",
+   "album": "Commandments of Dub, Chapter 7: Warrior",
+   "year": 1986,
+   "label": "Jah Shaka Music",
+   "country": "",
+   "faction": "dub-steppers",
+   "genres": [
+    "world",
+    "electronic"
+   ],
+   "why": "器樂 dub／steppers補位：器樂 dub，次低頻與彈簧混響鼓，無主唱，往下壓的頹靡型。證據原句：In Sheep's Clothing 評：「sub-heavy bass and spring reverb drums」carry the groove，keyboards 與 guitar 進出回音",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.3,
+    "z": -0.6,
+    "why": "器樂 dub，次低頻與彈簧混響鼓，無主唱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/de7047e4-6994-4a1d-8861-6e7fc4c57ec8",
+    "https://coverartarchive.org/release-group/de7047e4-6994-4a1d-8861-6e7fc4c57ec8/front-500"
+   ],
+   "mbRgMbid": "de7047e4-6994-4a1d-8861-6e7fc4c57ec8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "評文提 Nyahbinghi 手鼓儀式感，可能偏暖，研究層確認",
+   "copyQuote": "In Sheep's Clothing 評：「sub-heavy bass and spring reverb drums」carry the groove，keyboards 與 guitar 進出回音"
+  },
+  {
+   "artist": "Dub Syndicate",
+   "album": "The Pounding System (Ambience in Dub)",
+   "year": 1982,
+   "label": "On-U Sound",
+   "country": "",
+   "faction": "dub-steppers",
+   "genres": [
+    "world",
+    "electronic"
+   ],
+   "why": "器樂 dub／steppers補位：幾乎全器樂 dub，混響實驗，拍子鬆，往下壓的頹靡型。證據原句：Brainwashed 評：「fairly mostly-instrumental dub project… vocals are scarce」，Sherwood 的 reverb 與麥克風實驗為核心",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": -0.5,
+    "why": "幾乎全器樂 dub，混響實驗，拍子鬆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1c5c8946-6082-3109-b041-eb81f3514503",
+    "https://coverartarchive.org/release-group/1c5c8946-6082-3109-b041-eb81f3514503/front-500"
+   ],
+   "mbRgMbid": "1c5c8946-6082-3109-b041-eb81f3514503",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "評文提 African Head Charge 打擊與薩克斯段，z 貼邊，研究層確認",
+   "copyQuote": "Brainwashed 評：「fairly mostly-instrumental dub project… vocals are scarce」，Sherwood 的 reverb 與麥克風實驗為核心"
+  },
+  {
+   "artist": "Iration Steppas",
+   "album": "Dubz From de Higher Regionz",
+   "year": 2004,
+   "label": "Dubquake",
+   "country": "",
+   "faction": "dub-steppers",
+   "genres": [
+    "world",
+    "electronic"
+   ],
+   "why": "器樂 dub／steppers補位：UK 數位 steppers 器樂 dub，低頻厚、冷硬，往下壓的頹靡型。證據原句：唱片行文案：「the UK digital steppers sound!」直錄 D.A.T.、Akai S950 取樣，風格『militant』",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.3,
+    "z": -0.7,
+    "why": "UK 數位 steppers 器樂 dub，低頻厚、冷硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4f85c7dc-1d3e-3387-9b21-8cc53eec0765",
+    "https://coverartarchive.org/release-group/4f85c7dc-1d3e-3387-9b21-8cc53eec0765/front-500"
+   ],
+   "mbRgMbid": "4f85c7dc-1d3e-3387-9b21-8cc53eec0765",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "受 hip-hop／house 影響可能拍點較硬，x 貼 2.6，研究層確認",
+   "copyQuote": "唱片行文案：「the UK digital steppers sound!」直錄 D.A.T.、Akai S950 取樣，風格『militant』"
+  },
+  {
+   "artist": "Iration Steppas",
+   "album": "Original Dub D.A.T.",
+   "year": 1997,
+   "label": "Iration Steppas",
+   "country": "",
+   "faction": "dub-steppers",
+   "genres": [
+    "world",
+    "electronic"
+   ],
+   "why": "器樂 dub／steppers補位：UK 數位 steppers 器樂 dub，低頻厚、冷硬，往下壓的頹靡型。證據原句：同上（Dubz／Original Dub D.A.T. 為同一組 D.A.T. 直錄的首張專輯）：「UK digital steppers sound」",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.3,
+    "z": -0.7,
+    "why": "UK 數位 steppers 器樂 dub，低頻厚、冷硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bf8fe48e-5d8e-349a-b6ac-0c118d1e3dad",
+    "https://coverartarchive.org/release-group/bf8fe48e-5d8e-349a-b6ac-0c118d1e3dad/front-500"
+   ],
+   "mbRgMbid": "bf8fe48e-5d8e-349a-b6ac-0c118d1e3dad",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "文案為合併描述，非專屬於本盤；x 貼 2.6",
+   "copyQuote": "同上（Dubz／Original Dub D.A.T. 為同一組 D.A.T. 直錄的首張專輯）：「UK digital steppers sound」"
+  },
+  {
+   "artist": "Skare",
+   "album": "Solstice City",
+   "year": 2009,
+   "label": "Glacial Movements",
+   "country": "",
+   "faction": "isolationist-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "isolationist／dark ambient補位：冰雪與水的極簡夜間 ambient，無鼓，往下壓的頹靡型。證據原句：Vital Weekly 引於 Bandcamp：「great nocturnal scary listening session」；Regen 評為極簡 ambient",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.2,
+    "z": -1.2,
+    "why": "冰雪與水的極簡夜間 ambient，無鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4964d283-aad4-4789-b843-c81ab9da4c54",
+    "https://glacialmovements.bandcamp.com/album/solstice-city"
+   ],
+   "mbRgMbid": "4964d283-aad4-4789-b843-c81ab9da4c54",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 偏邊（1.2）",
+   "copyQuote": "Vital Weekly 引於 Bandcamp：「great nocturnal scary listening session」；Regen 評為極簡 ambient"
+  },
+  {
+   "artist": "Aetherium Nebula",
+   "album": "Ephemeral Port",
+   "year": 2026,
+   "label": "Cryo Chamber",
+   "country": "",
+   "faction": "isolationist-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "isolationist／dark ambient補位：賽博龐克人工空間 ambient，緩慢無鼓，往下壓的頹靡型。證據原句：Cryo Chamber 文案：「ambient album… esoteric sound of numinous artificial spaces… the dreams of machines」",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.1,
+    "z": -1,
+    "why": "賽博龐克人工空間 ambient，緩慢無鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ec3d3eaf-0c5c-4483-970b-93fb639b36bd",
+    "https://cryochamber.bandcamp.com/album/ephemeral-port"
+   ],
+   "mbRgMbid": "ec3d3eaf-0c5c-4483-970b-93fb639b36bd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "文案未提低頻厚度；y 估偏邊",
+   "copyQuote": "Cryo Chamber 文案：「ambient album… esoteric sound of numinous artificial spaces… the dreams of machines」"
   }
  ],
  "notes": [
@@ -1657,6 +2109,8 @@
   "主場景大名（Kammarheit、Northaunt、raison d’être、Atrium Carceri、Desiderii Marginis、Svartsinn）已被 md1/md5/md18/md28 收光；本批改挖 Cryo Chamber／Cyclic Law／Loki／Zoharum 目錄中池與所有 curation 檔皆無的二線，去重以 seed_cards＋全部 curation-*.json 比對 0 撞。",
   "未聽音、也沒逐張查文案（WebSearch 0 次）：moodGuess 憑廠牌／藝人風格估，uncertain 欄標出可能有打擊／旋律／偏中性的盤，研究層請優先查。Cryo Chamber 二線歷史上約三成文案自述拍點／溫暖／旋律樂器，預期研究層會汰一批。",
   "未動用器樂 dub／isolationist 擴寫場景：dark ambient 目錄已超過 54。",
-  "country 全留空（未逐一核）；genres 全 electronic。"
+  "country 全留空（未逐一核）；genres 全 electronic。",
+  "補位 15 張（主線回饋）：每張 `copyQuote` 欄為廠牌 Bandcamp 文案或樂評原句；dub 盤色溫為池中先例推估，未找到專屬樂評者已在 uncertain 說明。Scientist／Yabby You／Prince Far I 的候補盤找不到可引用原句且多有人聲，未提。",
+  "補位 15 張（主線回饋）：每張 `copyQuote` 欄為廠牌 Bandcamp 文案或樂評原句；dub 盤色溫為池中先例推估，未找到專屬樂評者已在 uncertain 說明。Scientist／Yabby You／Prince Far I 的候補盤找不到可引用原句且多有人聲，未提。"
  ]
 }
