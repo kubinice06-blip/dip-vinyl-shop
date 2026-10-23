@@ -88,7 +88,7 @@
 ## 上線與評分（2026-10-23，主線）（條號 20115–20117）
 - **20115**：上線 12 張：card_catalog 12／12、KV 12 鍵回讀逐字一致、試聽 10 ready／2 unavailable、seed +12、published gate 0 error；Discogs 封面 2 張登錄 `data/discogs-cover-registry.json`（389 筆）。上線前對 origin 近 40 個 `claude/*` 分支去重 0 撞。
 - **20116**：子曲風 warm-batch 11／12 有標籤；Jezzreel、Audley Rollens、Noel Phillips、Winston Jarrett 補進 `genre-l3-artist-map.json` 的 world/reggae/roots；Audley Rollens《Showcase Prevail》Last.fm 無標籤，seed 曲風欄手補 `world`。12／12 落位。
-- **20117**：**落格率 12/12＝100%**（`batch-progress/mood-axes/score-ml48/`）。評分 x 2.3–2.7、y 0.9–1.4、z 0.4–1.1；conf mid 4、low 8。最貼邊：Devon Russell《Prison Life》z 0.4。**dub 第三波主場景幾乎見底**：Mighty Two（Joe Gibbs／Errol Thompson）與 Niney 製作的歌手盤池中判輕，器樂 dub 判冷，剩下的是 1979–83 類比人聲盤；而且**改名重發會騙過 MB 去重**（Wayne Jarrett、Sugar Minott 兩張撞池），reggae 一律對 Discogs master 再查池。八格（本分支）：恍惚 1,429、頹靡 1,433、冷冽 1,402。
+- **20117**：**落格率 12/12＝100%**（`batch-progress/mood-axes/score-ml48/`）。評分 x 2.3–2.7、y 0.9–1.4、z 0.4–1.1；conf mid 4、low 8。最貼邊：Devon Russell《Prison Life》z 0.4。**dub 第三波主場景幾乎見底**：Mighty Two（Joe Gibbs／Errol Thompson）與 Niney 製作的歌手盤池中判輕，器樂 dub 判冷，剩下的是 1979–83 類比人聲盤；而且**改名重發會騙過 MB 去重**（Wayne Jarrett、Sugar Minott 兩張撞池），reggae 一律對 Discogs master 再查池。八格（併 main 後）：恍惚 1,457、頹靡 1,433、冷冽 1,429。
 
 ## 本批新藝人（無介紹，未切；並行時子工作階段不切）
 Jezzreel、Love Joys、Audley Rollens、I Kong、Noel Phillips、Barry Brown、Junior Delgado、Devon Russell、Winston Jarrett、Michael Prophet（10 個掛名，名冊與排隊皆查無）。

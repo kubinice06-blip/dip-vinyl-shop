@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **389** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 151、已退回 1）。
+共 **392** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 154、已退回 1）。
 最後更新：2026-10-23
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -268,6 +268,14 @@
 | Mars & DNA 《John Gavanti: An Operetta》 | [#404849](https://www.discogs.com/release/404849) | 1980 | Hyrax Records | HY-101 | Discogs master 280023 的版本、主線目視與盤名相符 | ok |
 | Tom Cora, David Moss 《Cargo Cult Revival》 | [#1003533](https://www.discogs.com/release/1003533) | 1983 | Rift | RIFT 5 | Discogs master 2089672 的版本、主線目視與盤名相符 | ok |
 | Zeena Parkins 《Nightmare Alley》 | [#661500](https://www.discogs.com/release/661500) | 1993 | Table Of The Elements | H 1 | Discogs master 87550 的版本、主線目視與盤名相符 | ok |
+
+## add-20261023-mc38（3 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Jane Rigler & Agustí Fernández 《Mandorla》 | [#2801532](https://www.discogs.com/release/2801532) | 2002 | Dewdrop Recordings | DDR 002 | 唯一版本、主線目視與盤名相符 | ok |
+| Marilyn Crispell / Doug James 《And Your Ivory Voice Sings》 | [#573522](https://www.discogs.com/release/573522) | 1985 | Leo Records | LR 126 | 唯一版本、主線目視與盤名相符 | ok |
+| Matthew Shipp 《Magnetism》 | [#4504830](https://www.discogs.com/release/4504830) | 1999 | Bleu Regard | CT 1957 | 唯一版本、主線目視與盤名相符 | ok |
 
 ## add-20261023-md11（4 張）
 
