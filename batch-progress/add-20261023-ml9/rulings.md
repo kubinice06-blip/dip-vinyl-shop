@@ -25,3 +25,13 @@
 - **14679**（Barrington Levy《Open Book》）：1982–84 全樂手類比錄音（Discogs 備註），含管樂與兩位鼓手，編制較亮、y 輕度存疑。80 年代人聲盤中這張確定非數位。
 - **14680**（Barrington Levy《Run Come Ya!》、Michael Prophet《Righteous Are The Conqueror》）：兩張皆 Discogs credits 載明 Roots Radics 伴奏、Channel One；Run Come Ya 有 Scientist 混音，兩張方向與 moodGuess 吻合，仍無樂評佐證濕度。Run Come Ya 有 Jah Life（美）與 Puff（加）兩版，無推翻。
 - 全組 status：Miller、Prophet 為 full，其餘 9 張 thin（聲音皆無樂評，只有 credits）。
+
+## 研究 e 組
+- **14681**（Rico Rodriguez《That Man Is Forward》）：首發廠牌是 2 Tone Records（Chrysalis 體系 CHR TT 5005），卡單 Reggae Retro Records 是後出再版廠牌，建議改 2 Tone。Discogs credits：牙買加 Joe Gibbs Studio 錄、倫敦 Townhouse 混音；Sly & Robbie 一組（A1–A3、B2）加 Santa Davis／Fullwood／Chinna Smith 一組；無歌手署名、長號與管樂領奏。moodGuess 輕度存疑（速度無評論可證）。full。
+- **14682**（Prince Fatty Meets The Mutant Hifi《Return of Gringo!》）：moodGuess 嚴重存疑，建議汰換。Mr Bongo 官方與兩篇樂評一致稱 surf／ska／spaghetti western 配樂，曲短（2:21–3:43）、快、亮、玩笑成分重，不是慢速暖 dub；Alessandroni 口哨。full。
+- **14683**（Prince Fatty《Super Size》）：人聲／deejay／dub 混合（Winston Francis、Little Roy、Alcapone、Horseman 翻唱 ODB 與 Cypress Hill），Songlines 4/5。卡單的 Hammond 查無本作來源；CD 十一首、LP 八首。moodGuess x 2.5 可能偏低、y 無來源。full。
+- **14684**（Prince Fatty《Versus the Drunken Gambler》）：兩篇樂評皆稱 boisterous／uptempo 派對式，30 分鐘十首，含 rockers 快曲與電影取樣，Sly Dunbar 打鼓；moodGuess 存疑，建議汰換或降分。full。
+- **14685**（Prince Fatty meets Nostalgia 77《In the Kingdom of Dub》）：爵士底的 dub 版（Nostalgia 77 曲目），殘響克制、旋律樂器與少量人聲，厚貝斯有 Irish Times 支持；與 moodGuess 大致相符，但不是傳統器樂 dub。full。
+- **14686**（Wailing Souls《Baby Come Rock》）：身分疑點：MB 為牙買加 1981 Joe Gibbs 版，Discogs 主版本是 1983 美國 Joe Gibbs Music；製作人 Junjo、伴奏 Roots Radics；九首中四首與 Greensleeves《Inchpinchers》重疊，疑為同批錄音以 Joe Gibbs 廠牌另發。無獨立樂評，聲音由鄰近專輯評述（AllMusic：Radics 稀疏留白）推論，status thin。主線可考慮汰換。
+- **14687**（Bob Marley & The Wailers《Soul Revolution Part II》）：Discogs 批註：『Part II』母帶是器樂／dub 版，人聲版為《Soul Revolution》，兩者同封面；卡片以人聲版為主。曲短（2–3 分鐘居多）、Perry 在 Randy's 調音台加殘響與延遲；y 1.0 可信度偏低（低頻厚度無來源）。full。
+- 全組 status：6 張 full、1 張 thin（Wailing Souls）。推翻策展層：Rico 廠牌、Gringo 速度與曲風、Drunken Gambler 速度、Wailing Souls 年份與來歷，共 4–5 處。
