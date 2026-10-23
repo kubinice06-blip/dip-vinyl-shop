@@ -4,13 +4,13 @@
   {
    "id": "la-cosmic-soul",
    "zh": "LA／當代 cosmic soul 霧盤（Muldrow 圈、Stones Throw、Brainfeeder）",
-   "count": 12,
+   "count": 13,
    "why": "慢拍、磁帶糊、合成器／Rhodes 霧、厚低頻"
   },
   {
    "id": "psych-soul-revival",
    "zh": "迷幻 soul 復興與慢厚盤（Monophonics、Quesada、Lewis Taylor、Ndegeocello、SAULT）",
-   "count": 9,
+   "count": 11,
    "why": "殘響霧、fuzz／phaser、弦樂墊糊成一片"
   },
   {
@@ -850,12 +850,102 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "CAA 無封面，用 Apple Music（2025 重發）封面"
+  },
+  {
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "artist": "Liv.e",
+   "album": "Girl in the Half Pearl",
+   "year": 2023,
+   "label": "In Real Life",
+   "country": "us",
+   "faction": "la-cosmic-soul",
+   "genres": [
+    "soul"
+   ],
+   "why": "Wikipedia 列為 psychedelic soul；Bandcamp Album of the Day 評「a psychedelic collection of jazz-infused, soulful tracks」，樂評寫「methodical beats, otherworldly production… hazy vocals」；前作池中 2.4/1.3/1.0 落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.3,
+    "z": 0.6,
+    "why": "慢而沉的拍子，霧狀人聲與糊製作，暖"
+   },
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Girl_in_the_Half_Pearl",
+    "https://musicbrainz.org/release-group/fe55a441-e0f3-409a-b06b-c7c008d17631",
+    "https://coverartarchive.org/release-group/fe55a441-e0f3-409a-b06b-c7c008d17631/front"
+   ],
+   "mbRgMbid": "fe55a441-e0f3-409a-b06b-c7c008d17631",
+   "uncertain": "樂評也提到「chaotic clashes of melody」，比前作暗；z 可能落 0.3–0.6"
+  },
+  {
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "artist": "Lewis Taylor",
+   "album": "NUMB",
+   "year": 2022,
+   "label": "Slow Reality",
+   "country": "gb",
+   "faction": "psych-soul-revival",
+   "genres": [
+    "soul"
+   ],
+   "why": "沉寂 17 年後的回歸作，Be With 重發文案稱「lush, late-night psychedelic soul」，Mojo 形容「Brian Wilson-channels-Smokey Robinson atmospheres」；首張池中 2.6/1.0/0.3 落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "深夜慢板，層疊和聲與厚鍵盤霧，溫但帶憂鬱"
+   },
+   "evidence": [
+    "https://www.forcedexposure.com/catalog/BEWITH.139LP.html",
+    "https://albumism.com/features/lewis-taylor-eponymous-debut-album-anniversary",
+    "https://musicbrainz.org/release-group/07f79309-d978-4775-8cf7-effa424a96c7",
+    "https://coverartarchive.org/release-group/07f79309-d978-4775-8cf7-effa424a96c7/front"
+   ],
+   "mbRgMbid": "07f79309-d978-4775-8cf7-effa424a96c7",
+   "uncertain": "主題談憂鬱，色溫可能判中性偏冷（z 0–0.4）"
+  },
+  {
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "artist": "Meshell Ndegeocello",
+   "album": "Bitter",
+   "year": 1999,
+   "label": "Maverick",
+   "country": "us",
+   "faction": "psych-soul-revival",
+   "genres": [
+    "soul"
+   ],
+   "why": "Craig Street 製作的慢板弦樂靈魂盤，47 分；NYT：「its rhythms flow in circulatory patterns… guitars, strings and her guarded vocals intertwine like brain waves」，Chicago Tribune：「one long bittersweet downer」",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "通篇慢板，弦樂與吉他交纏成墊，溫而憂"
+   },
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Bitter_(Meshell_Ndegeocello_album)",
+    "https://www.nytimes.com/1999/10/08/movies/album-of-the-week.html",
+    "https://musicbrainz.org/release-group/78db76a3-81e8-3a60-9e21-939819549915",
+    "https://coverartarchive.org/release-group/78db76a3-81e8-3a60-9e21-939819549915/front"
+   ],
+   "mbRgMbid": "78db76a3-81e8-3a60-9e21-939819549915",
+   "uncertain": "Craig Street 偏原聲、有空間感，y 可能只到 0.5–0.7；「downer」也可能拉低色溫"
   }
  ],
  "notes": [
   "場景挖不到 54：只交 29 張，不湊數。池中 psychedelic／cosmic soul 經典（Shuggie、Callier、Rotary、Minnie、Hutson、Isaac Hayes、Leon Ware、Smokey、Isleys、Al Green、Curtis）多判輕或判躁；Muldrow／Nick Hakim／Kadhja／Sa-Ra／Dudley 等霧盤主體已在池或被 ml2／ml3／ml5 提過。",
   "spiritual jazz 池中幾乎全判輕（Lonnie Liston Smith、Matthew Halsall、Charles Lloyd、Nala Sinephro、Ancient Infinity Orchestra、Resavoir）；只提有弦樂／風琴／drone 大墊或磁帶糊的 8 張，Pharoah 慢盤（Pharoah 1977 等）質地偏薄未提，Alice 卡帶期（Divine Songs 等）因同類 Turiya Sings 判 y −0.3 未提。",
   "剔除：Charles Stepney《Step on Step》MB 屬 Compilation；Beautiful Mindz 實為 2tall 製作盤且無封面；Liv.e《Girl in the Half Pearl》色溫貼邊；Inc.、Snoh Aalegra 類 alt R&B 留給 ml8。",
-  "全部 MB 釘住；封面除 Astral Progressions 用 Apple Music 外皆 CAA。"
+  "全部 MB 釘住；封面除 Astral Progressions 用 Apple Music 外皆 CAA。",
+  "2026-10-23 主線回饋後補 3 張（Liv.e《Girl in the Half Pearl》、Lewis Taylor《NUMB》、Meshell Ndegeocello《Bitter》），每張附樂評原文聲音證據；目標 6–10 張未達：查過但無 slow／hazy 證據或判速度偏快而不提——Shafiq《So Gold》（Bandcamp 寫 world sampler、beats-and-rhymes）、Meshell《The World Has Made Me…》（PopMatters：driving drum breaks、snappy pop）、Meshell《Comet, Come to Me》（uncluttered）、Bobby Oroza《Get On the Otherside》（punchy 樂團）、Ramsey Lewis《Mother Nature's Son》（同藝人池中判輕、無 slow 證據）、Muldrow《A Thoughtiverse Unmarred》（饒舌盤）、Joi《The Pendulum Vibe》（ml5 範圍）。WebSearch 6 次已用完。 serpentwithfeet《DEACON》有 lush/laid-back 證據但全長 29:09 未達 30 分，剔除。"
  ]
 }

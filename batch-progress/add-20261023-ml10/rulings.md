@@ -54,3 +54,8 @@
 - **14735** Bilal《A Love Surreal》：moodGuess 存疑。維基整理樂評明講比前作更輕、電子減少、鼓壓低、吉他稀疏，找不到 phaser／Rhodes／厚低頻來源；y 恐不如預估。
 - **14736** Monophonics《Sage Motel》：moodGuess 存疑（fuzz 吉他無來源）；〈Love You Better〉為輕快反拍加響指，可能拉高 x。弦樂墊與暖有支持。
 - 本組 WebSearch 用 3 次（Silk Rhodes、Sage Motel、Zdenka）。年份、廠牌、盤名六張皆與卡單相符，無推翻。
+
+## 主線：研究後汰換（不佔條號）
+- 研究層聲音與 moodGuess 不符，直接汰 9：Muldrow《Vweto III》（urgent funk／boom-bap）、Dudley Perkins《Holy Smokes》（danceable P-funk）、Curtis Harding《Face Your Fear》（明快搖滾底）、Jyoti《Mama, You Can Bet!》（bop、frenetic）、Jyoti《Ocotea》（無聲音證據）、SAULT《AIIR》（25 分鐘五首，維基列 EP，不收）、Josef Leimberg《Astral Progressions》（jazz-funk 獨奏推進）、Silk Rhodes（乾、舞曲放克）、Bilal《A Love Surreal》（樂評稱比前作輕、鼓壓低）。
+- 叫原策展代理補候補（要求附慢／霧／暖的聲音證據、≥30 分鐘），收 3：Liv.e《Girl in the Half Pearl》（池中前作 2.4/1.3/1.0）、Lewis Taylor《NUMB》、Meshell Ndegeocello《Bitter》，放研究 e 組補研究。定案 **20 張**。
+- 留下但存疑、交評分裁定：Alice Coltrane《Lord of Lords》（有鼓，x 無速度資料）、Miguel Atwood-Ferguson《Les Jardins Mystiques Vol.1》（210 分鐘組曲）、Les McCann《Invitation to Openness》（多鼓手）、Matt Martians《The Last Party》（thin）、Monophonics《Sage Motel》（一首輕快反拍）、Garzón-Montano《Jardín》（x 邊緣）、Salami Rose Joe Louis（短小品）。
