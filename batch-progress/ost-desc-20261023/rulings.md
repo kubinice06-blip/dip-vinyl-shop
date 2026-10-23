@@ -75,3 +75,8 @@ hook 前提逐張對研究稿 facts 核過（Chrono Cross 加藤指名、Radical
 - Star Wars 不寫「合成器年代的反潮流」，寫「1970 年代末大型交響配樂復興」；盧卡斯想用現成古典樂一說他本人否認，正文不當事實。
 - Titanic「Cameron 原想請 Enya」不寫（uncertain）；Forrest Gump「越戰片必配源頭」屬流行說法、不寫（「據稱」不進正文）。
 - Matrix 不寫 Jason Bentley；BTTF 不寫 Outatime Orchestra 由來。La La Land 榜單屬歌曲盤，不寫進配樂盤。
+
+## ost-2 研究層回報的推翻（a 組）
+- 《Xanadu》台灣片名查無來源：正文用原名《Xanadu》＋「1980 年歌舞奇幻電影」描述。《Footloose》寫《渾身是勁》（Footloose）可，但原名必附。
+- Les Mis 卡是 1985 年倫敦英文原版卡司，不是 1980 法語概念專輯；舊稿「照公式應是失敗之作」查無來源刪除。
+- 單一來源條目（Maureen Crowe 提議、Bryan Adams 婉拒、〈Bring Him Home〉專為 Wilkinson 寫）寫作層可用但不加最高級。
