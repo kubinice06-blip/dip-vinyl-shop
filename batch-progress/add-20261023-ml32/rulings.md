@@ -12,3 +12,9 @@
 - **主線汰 0**：池中同藝人三軸查核——Bobby Oroza、Kali Uchis、Quesada、Quantic 池中落恍惚；roots 人聲 9 位（Horace Andy、Don Carlos、Junior Delgado、Sugar Minott、Linval Thompson、Wailing Souls、Misty in Roots、Johnny Osbourne）池中多數盤落恍惚（y 0.7–1.3、z 0.4–1.2）。同藝人跨批（ml1／ml5／ml9 已收其他盤）不影響：規則是「同一藝人沒有張數上限」，只去重同一張盤。
 - 跨分支去重：對 origin 65 個 `claude/*` 分支與 main 的 seed 與卡單 0 撞。
 - 研究層重點查：sweet soul 復興盤的乾淨度（The Altons、Thee Marloes）、Buscabulla／Chancha 的中速曲比重（x）、Don Carlos／Johnny Osbourne《Nightfall》的混音濕度（y）、Junior Delgado 1986 是否數位。
+
+## 研究 e 組（條號 16521–16530）
+- 16521：Misty in Roots《Wise and Foolish》moodGuess 存疑——「厚低頻與殘響」查無來源，唯二聲音描述（killyourpetpuppy、Brighton 場地介紹）稱比早期更 mellow／jazzy／soulful，y 可能偏低；status thin，主線聽試聽再判。發行年 Discogs／Wikipedia／MB 為 1981，Apple／roots-archives 為 1982，沿用 1981。
+- 16522：Lacksley Castell《Morning Glory》moodGuess 輕度存疑——dub 版是另一張（Sly & Robbie《Dub Rockers Delight》），原盤為人聲版，濕度可能略低；速度與殘響無樂評可引，status thin。死亡年份來源不一（1983／1984），facts 不寫年份。
+- 16523：Johnny Osbourne《Nightfall》moodGuess 成立——unitedreggae 與 Apple Music 樂評一致指低音突出、最重、Scientist dub 混音、rub-a-dub 空曠節奏；curatorRisk「y 貼邊」解除。King Tubby's 混音地點為 Discogs 單一來源，facts 標「Discogs 登記」。status full。
+- 推翻策展層：0 處（身分、年份、廠牌全數吻合）。
