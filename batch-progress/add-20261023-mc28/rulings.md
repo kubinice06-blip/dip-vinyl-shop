@@ -25,3 +25,15 @@
 - **13166**：《Instant Composers Pool》是 ICP 002，不是策展層寫的「廠牌第一號」（ICP 001＝Bennink／Breuker《New Acoustic Swing Duo》）；寫作層不可寫第一號。推翻策展層 1 處。
 - **13167**：《The Topography of the Lungs》Parker 並非全程高音：維基列 3 首次中音、3 首高音（單源）；寫作層寫「次中音與高音」。y 風險無來源可判。
 - **13168**：Parker《Six of One》錄音 1980、發行 1982；維基稱 live，MB／Discogs 未標，地點是教堂，含殘響。不動，知會主線。
+
+## 研究 d 組
+- **13191**：Minton《A Doughnut in One Hand》身分成立（FMP CD 91、1998-06-11，錄於 1998-01 Welwyn Garden City 教友會聚會所）。encyclopedia.com 寫 1996 年「第一張個人專輯」與 Discogs／MB 1998 及 Jurek「第二張」矛盾，不採。Jurek 原文出處為 QQ 音樂頁轉載，只取事實不引原句。
+- **13192**：Minton Quartet《Mouthfull Of Ecstasy》推翻策展層 moodGuess 一處：編制是人聲、鋼琴、薩克斯風、鼓（Minton／Weston／Butcher／Turner），**沒有小提琴**；有鼓且樂評形容「密集、吵鬧」，y 可能比 -0.4 更厚。棚錄（1996-01-04 倫敦）。針對專輯本身無樂評，聽感引自 2014 Café OTO 演出節目頁。
+- **13193**：Schweizer《Hexensabbat》A 面為 1977-10-08 柏林現場（Discogs），B 面棚錄；維基只把〈Rapunzel〉算現場，範圍不一致，採 Discogs。MB 未標 Live，請主線決定。Scaruffi「folkish and oneiric」、Waxman「flowering European classicism」顯示非全程尖厲，x 3.9 存疑。
+- **13194**：Schweizer《Piano Solo, Volume 1》1990-05-23/24 Boswil 老教堂錄、1992 發行。Penguin 稱有最輕樂句與「冥想般的靜止」，y 存疑；曲名含 Blues／Polka／Mazurka，z 把握不高。維基標 live、Scaruffi 暗示 Vol.1 是短小品，現場與否不確定。
+- **13195**：Schweizer《Many and One Direction》1996-04-04 Boswil 錄；維基標 live，MB 未標。含 Carla Bley〈Ictus〉與 Monk〈Chordially〉兩首他人曲（旋律清楚），Loewy 說強度「調低一兩格」、Scaruffi 說失去龐克勁道，**moodGuess 明顯存疑（x 偏高、z 風險大於預估）**，建議主線降 x 或汰換。
+- **13196**：Schweizer《Chicago Piano Solo》**現場錄音**（Empty Bottle 俱樂部），MB 未標 Live，請主線決定。錄音日期衝突：Intakt 官網與 Swissinfo 2000-02-16、Discogs 與維基 08-16，採 Intakt。Waxman 描述可哼唱的 Don Cherry 放克曲、Monk 味切分、swing，**moodGuess 存疑（z 偏冷把握低）**，建議汰換或下修。
+- **13197**：Schweizer／Carl《The Very Centre of Middle Europe》Hat Hut 目錄號 X、1978；1978-10-28 巴塞爾劇院小舞台錄，Schweizer 作品年表標 live（MB 未標），請主線決定。Schweizer 在此**兼打鼓**，Carl 以單簧管、低音單簧管、手風琴為主（薩克斯風只是其一），推翻 moodGuess 「鋼琴音簇對薩克斯風尖嘯」的說法。無任何聲音樂評，status thin。
+- **13198**：Lytton《The Inclined Stick》Po Torch 由 Lovens 與 Lytton 1976 合辦（Discogs），非 Lytton 單獨創辦。第二首為 1977-12-16 亞琛 Neue Galerie 現場，其餘 1979 年夏在 Lytton 比利時家中錄成；樂器為自製打擊與現場電子，非傳統鼓組。除 Scaruffi 兩句外無樂評，疏密與安靜段比重無依據，status thin。
+- **13199**：本組 MB 標 Live 的卡 0 張；但實質含現場錄音者 5 張（Hexensabbat A 面、Piano Solo Vol.1 疑、Many and One 疑、Chicago、Very Centre，加 Lytton 一首），已逐張寫進 notes。Discogs／WebFetch 的 AllMusic、Squidco、jazzmusicarchives 一律 403，Discogs API 直連可用。
+- WebSearch 本組共用 8 次（每支 ≤3）。
