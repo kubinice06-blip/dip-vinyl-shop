@@ -52,3 +52,25 @@
 - 21206：Inner Vision Laboratory《Austeros》moodGuess 存疑（輕）——廣播／日常取樣，文案有「strike」字樣，可能有突發聲響。
 - 21207：Inner Vision Laboratory《Perpetua》moodGuess 存疑（中）——廠方稱樂器超出類型慣例，Discogs 加列 Modern Classical／Darkwave；建議聽過再定，必要時汰換。
 - 通則：本組僅 Vestigial 有獨立樂評（status full），其餘六張只有廠方文案與 Discogs（thin）；WebSearch 用 3 次。年份、盤名與卡單吻合。
+
+## 研究 d 組
+- 21191：Project:Darkscapes（Vacuum Aeterna）moodGuess 存疑（強）——廠方明寫 tribal percussions／industrial noises，Musique Machine 逐曲點出〈Liminal Rites〉沉重部落鼓、〈Enenra〉慢速脈動可當 ambient techno、〈Control Metamorphose〉持續敲擊金屬，Side-Line 稱 slow industrial rhythms，另有笛聲般顫音與吉他。建議汰換。
+- 21192：Void（Altarmang）年份推翻——卡單 2016＋Cyclic Law 混了兩個版本：2016-12 是 Hypnagoga Press 卡帶（50 份、兩首），Cyclic Law 99th Cycle 四首版是 2017-09-22（另有 Autarkeia 黑膠）。建議年份改 2017；聲音無不符。
+- 21193：Fall（Ulvestad）moodGuess 存疑（中）——大提琴家、原為劇場配樂，大提琴是否為領奏旋律無來源證實；廠方「近乎暴力的強烈」與〈Fall〉漸強至恐懼頂點可能偏躁；〈Aisling〉取自愛爾蘭古歌，有無人聲不明。
+- 21194：Blue Hour（Taphephobia）moodGuess 存疑（中）——Side-Line 提到少量口白、「overwhelming noise waves」「boiling sound treatments」，且有「relaxing passages」；可能偏噪牆且色溫不全冷。
+- 21195：Falling Time（Shedir）moodGuess 存疑（輕）——「frictions and collisions of sounds」與曲名〈Outburst〉〈Swarm〉，評者稱 dreamy／relaxing，可能有較躁動或較柔的段落。
+- 21196：Oracular（Ajna）moodGuess 存疑（輕）——後段「blasting tones」「deep resonating sound blasts」，需聽感核對是否偏刺耳。
+- 21197：Akrasia（Sinke Dûs）moodGuess 存疑（輕）——廠方「ethereally lush passages」「glimmer of light」，色溫可能略偏暖；無獨立樂評，facts 以廠方與資料庫為主。
+- 21198：Escape From the Mundane Self（Taphephobia）moodGuess 存疑（輕）——廠方「idyllic moments of wintery landscapes」；無獨立樂評。
+- 21199：Ominousium（Kave）、Lucid Intrusion（Ajna）——聲音與預估相符，未推翻；Lucid Intrusion 標籤含 industrial 但評論無噪牆記載。
+- 通則：十張年份、廠牌、盤名除 Void 外全與卡單吻合；十張總長皆 ≥ 28 分，無合輯／EP；全數無鼓依廠方與評論描述推定（Darkscapes 除外）。WebSearch 用 3 次（Darkscapes、Fall、Falling Time），其餘走 Bandcamp、MB、Discogs API、Side-Line、Chain D.L.K.。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- 照 md28 先例：**文案自己寫出拍點、溫暖、旋律樂器或人聲領奏、噪牆爆裂的汰**；只是零來源或輕度描述（soothing、dreamy 段落）的留。
+- **汰 22 張**（存 `dropped-cards.json`／`dropped-research.json`）：
+  - 打擊／節奏：Creation VI《Beringia》（drums and flutes… voices、部落 ambient）、Randal Collier-Ford《Remnants》（軍樂改寫、收尾 dance beat）、TeHÔM《Lacrimae Mundi》（部落鼓、持續鼓點、口白）、Apocryphos《Phantoms Received》（ritual percussion、類工業打擊）、Vacuum Aeterna《Project:Darkscapes》（tribal percussions、金屬敲擊、慢脈動）、Gdanian《Submersion》（retro basslines、hammering tones、momentum）、Dead Melodies《Murken Hollow》（credits 列打擊、薩克斯、人聲、吉他貝斯）。
+  - 旋律樂器／口白領奏：Phonothek《Lost in Fog》（小號領奏、軍樂鼓、文案 warm）、《Red Moon》（銅管＋中提琴領奏、假音人聲）、Ruptured World《Archeoplanetary》（haunted pianos、spoken word）、《Interplanetary》（口白、文案「爆裂賽博龐克能量」）、Council of Nine《Trinity》（鋼琴線條、自稱介於 dark 與 light）、Inner Vision Laboratory《Perpetua》（Modern Classical／Darkwave、民族與古典元素）。
+  - 溫暖（Basinski／Belong 色溫中性先例）：Mount Shrine《Winter Restlessness》（warm and inviting）、《Ghosts on Broken Pavement》（安全懷抱、peaceful）、《Shortwave Ruins》（溫暖 drone）、Hilyard《Division Cycle》（dense, warm）、Sphäre Sechs《Particle Void》《Transient Lunar Phenomenon》（自稱 warm saturated／warm cocoon）、Shrine《Somnia》（acoustic、bringer of light、管風琴開場）。
+  - 躁（體感標準）：Ulvestad《Fall》（近乎暴力的強烈、漸強到恐懼頂點）、Taphephobia《Blue Hour》（overwhelming noise waves、boiling）。
+- 卡單更正：Altarmang《Void》2016→**2017**（MB 首發 2016-12-21 是 Hypnagoga Press 兩首卡帶，Cyclic Law 四首正規版 2017-09-22；照研究 d 組）；Vestigial《Translucent Communion》廠牌 Cyclic Law→**Cold Meat Industry**（2008 首發，Cyclic Law 是 2025 再版；研究 e 組）。
+- 留 25 張（a 4、b 3、c 5、d 7、e 6）；叫回策展代理補 15 張候補（擴寫場景：冷硬器樂 dub、無鼓 isolationist），每張要附無鼓／冷的文案原句。
