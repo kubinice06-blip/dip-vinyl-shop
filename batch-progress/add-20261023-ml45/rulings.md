@@ -12,3 +12,17 @@
 - **flag 4 張裁定**：Johnny Osbourne《Never Stop Fighting》（MB 首發日 2010、原盤 1982 Greensleeves）、Wailing Souls《On the Rocks》（MB 1997、原盤 1983）——MB release-group 只掛了再版，年份照原盤首發年，收。Hollie Cook《Prince Fatty Presents Hollie Cook in Dub》《Happy Hour in Dub》MB 為 Album＋Remix：原製作人做的 dub 版伴奏專輯是 reggae 的正規專輯形式（池中 In Dub Conference、Bob Andy's Dub Book 先例；Remix 次類型先例 mc11 Kraftwerk《The Mix》），收。
 - 去重：seed 0 撞；ml1 提過被汰的盤未重提；對 origin 前 60 個 `claude/*` 分支 seed 與卡單、本工作階段 ml42 卡單 0 撞。
 - 研究層重點查 y：Alton Ellis《A New Day》、Delroy《Go Away Dream》、John Holt《My Desire》只有製作證據；The John Holt Showcase 是否 flying cymbal 輕快鼓型；Frightnrs《Nothing More to Say》仿 Studio One 可能偏乾；Jah Wobble 兩張 Cleopatra 企劃盤只有廠牌文案。
+
+## 研究 d 組
+- 19591：Alton Ellis《A New Day》查無聲音樂評，只有 Discogs 製作證據（Channel One 錄、Roots Radics、長笛）；notes 標 moodGuess 存疑（y 無證據）。〈Why Birds Follow Spring〉為 1960s 舊歌重錄（6:04）。
+- 19592：Cornell Campbell《Rock My Soul》身分一致；9 首中 5 首 dub，聲音僅憑名單與曲目，標 moodGuess 存疑（現代英國錄音厚度未知）。
+- 19593：Cornell Campbell meets Soothsayers《Nothing Can Stop Us》PBS FM 評「開闊明亮、upbeat、Afrobeat 銅管」，只有結尾一首 dub outro；標 moodGuess 存疑，建議主線考慮汰換。
+- 19594：Horace Andy & Jah Wobble《Timeless Roots》發行日來源衝突（Discogs／MB 2024-09-27，Soundshelter 8-8），年份 2024 不變；翻唱含輕快曲，標 moodGuess 存疑。
+- 19595：Ken Boothe & Jah Wobble《Old Fashioned Ways》僅廠牌文案，Rough Trade 頁被 Cloudflare 擋；status thin，12 首多為 3 分鐘上下，標 moodGuess 存疑。
+
+## 研究 e 組
+- 19601　Frightnrs《Nothing More to Say》：樂評一致是明亮輕快的 sun-splashed rocksteady，無低頻／殘響證據，標 moodGuess 存疑（y 恐為負）；身分與年份（2016-09-02、Daptone）無誤。
+- 19602　Frightnrs《More To Say Versions》：Axelrod 自混整張 dub，但無任何評論描述聲音，status thin；限量張數 Discogs 2000／Groovement 3000，兩者並陳。
+- 19603　Frightnrs《Always》：年份 2022-05-27（Wikipedia Daptone 條寫 2023 為誤）；GRAMMY.com「sparse quality of dub」為唯一聲音證據。
+- 19604　Hollie Cook《…in Dub》：Remix 次類型確認是原製作人 Prince Fatty 自己的 dub 版，收錄成立；DIY 有重低音、強殘響旁證，moodGuess 成立。
+- 19605　Hollie Cook《Happy Hour in Dub》：查不到誰混（Discogs 製作名單 Ben McKone、Luke Allwood、Hollie Cook），不寫混音者；聲音僅有宣傳稿，thin，建議實聽。

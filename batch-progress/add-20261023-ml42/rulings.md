@@ -36,3 +36,28 @@
 - 19321：a 組 9 張聲音 facts 多半只有廠牌／Bandcamp 自述，無 BPM、爆音、磁帶、低頻資料；status 7 張 thin（Life Forms、sleepy fish 四張、solitude. ），Imaginary／Dimensions／Mirage full。moodGuess 存疑（卡單的「爆音、殘響墊、糊吉他」多數查無來源）：Dimensions（官方稱節拍俐落乾淨）、Mirage（輕盈明亮）、Everything Fades to Blue（官方稱脫離 lo-fi、人聲多）、Like the Sky（官方稱 energized、人聲和聲）、solitude.（26 首短 loop、爆音無來源）。建議汰換候選：Like the Sky、Everything Fades to Blue、Mirage，主線評分前實聽。
 - 19322：sleepy fish《My Room Becomes the Sea》23 分 52 秒，Discogs 稱 Mini-Album、Chillhop 稱 EP 系列，MB 為 Album；照主線已裁定收，寫作層用「短專輯」。
 - 19323：Dimensions 數位版 2023-02-03（Bandcamp、MB），Discogs 黑膠 2023-03-03；以 2023-02-03 為準。
+
+## 研究 e 組
+- **19361**（leavv《Mind Garden》）：Discogs／Bandcamp 為 9 首約 22 分，卡單 11 軌 26.2 分（MB 版本差）；以 9 首寫入 facts。聲音無專文，僅 Bandcamp 標籤與聽眾留言；status thin。moodGuess 存疑：y 偏高，曲短輕盈。
+- **19362**（Hoogway《Slow Motion》）：Sleep Tales、2023-05-29、12 軌 30:43 由 Qobuz／MB 核對；Discogs、Bandcamp 皆無頁面，完全無聲音文字來源。moodGuess 存疑：慢拍、柔墊殘響爆音全無來源，建議先聽。
+- **19363**（Tenno《The Inner Light》）：Lofi Girl 官方文案為「東方風味樂器＋細心調過的節拍」，聽眾描述鋼琴、弦樂、鳥鳴。moodGuess 存疑：『厚柔墊殘響爆音』無來源，偏清透氛圍；製作人本名（MB 掛 Tuchin Egor）單一來源不入 facts。
+- **19364**（Tenno《Mind Temple》）：官方頁無聲音說明，僅一則聽眾留言（風鈴、薄霧、細雨）。moodGuess 存疑：『懶拍、濾波糊』無來源，偏輕盈空靈。
+- **19365**（Bluestaeb《Rodalquilar》）：推翻策展層『dusty 爵士靈魂取樣、厚低頻』：Bandcamp 標籤為 jazz／neo-soul／r&b，聽眾提到人聲，另有〈Both Worlds〉feat. Blameful Isles；Scratched Vinyl 的樂評針對 2018 年作，僅作旁證。moodGuess 存疑：dusty 取樣、厚低頻皆無證據。城市（柏林／巴黎）來源互異，寫作層宜避開。
+- **19366**（less.people《Origins》）：自行發行（無廠牌）、17 軌 56 分；Bandcamp 頁我方抓不到、Discogs 無此盤，聲音完全無來源。moodGuess 存疑：磁帶糊、爆音、柔墊全無來源，56 分長篇是否整張慢暖須先聽。
+- **19367**（less.people《One Day It's Over》）：官方文案為鋼琴與 Rhodes，沒有吉他；推翻策展層『殘響吉他、爆音』。moodGuess 存疑：吉他、殘響、爆音無來源，暖靜成立。
+- **19368**（jinsang《transitions》）：自行發行 14 軌，逐曲加總約 29 分（Bandcamp 摘要誤稱 40）。標籤為 boom bap／ambient／experimental，未見磁帶飽和來源。moodGuess 存疑：boom bap 標籤不保證懶拍；貼邊疑慮無法由文字消解。
+- **19369**（SwuM.《スモーク》）：標籤與曲名明顯 trap 化（Trap House、Foreign Hoes、Drop Top），聽眾說開大聲有衝擊力。moodGuess 存疑：『懶拍、crunchy 飽和濾波糊』無來源，建議主線依試聽決定是否汰換。人物（紐約／以色列／南極洲）來源互相衝突，不寫。
+- **19370**（保留）：總結：9 張全數 thin（無一張有專文聲音描述）；推翻策展層的主張共 3 處（Bluestaeb dusty 取樣、less.people 吉他、SwuM 懶拍）；其餘 moodGuess 存疑皆為『聲音細節無來源』。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- 研究層 45 張幾乎全 thin：lo-fi 圈沒有樂評，聲音只有 Bandcamp 標籤、廠牌文案、聽眾留言；BPM／爆音／磁帶飽和全查無。**只憑「查無」不汰**（池中同型 Tomppabeats、jinsang、Nujabes 全落恍惚）；**有反證的一律汰**：
+- **汰 19 張**：
+  - trap 化／衝擊（x、z 風險）：SwuM.《Akira》（曲名 trap 語彙、標 future beats）、《Woke》（聽眾稱 powerful、crisp）、《スモーク》（標 trap、開大聲有衝擊力）。
+  - 乾淨輕盈（y 風險）：Kupla《Dimensions》（Bandcamp 自稱 clean beats，無吉他與殘響墊）、《Mirage》（鋼琴為主、輕盈）；Tenno《The Inner Light》《Mind Temple》（清透空靈）；Wun Two《O Cavalo Vermelho》（較精緻、真人薩克斯風與鍵盤）；Bluestaeb《Rodalquilar》（jazz／neo-soul／r&b 標籤、有人聲，無 dusty 取樣證據）；sleepy fish《Everything Fades to Blue》（官方稱偏離 lo-fi、人聲多）。
+  - 拍子推進：sleepy fish《Like the Sky, or Something Else》（官方「melancholic and energized」、上揚節拍）；Elijah Who《canvas》（boom bap 標籤、他曲被標 Melancholic）。
+  - 色溫哀傷：Purrple Cat《Just Relax》（sad／vaporwave 標籤；label「Litter Box」三處查無）。
+  - 非正規專輯長度：sleepy fish《My Room Becomes the Sea》（23:52，Discogs 標 Mini-Album、Chillhop 稱 EP 系列）、leavv《Mind Garden》（Discogs／Bandcamp 9 首約 22 分）。
+  - 身分與聲音雙重存疑：Nohidea 四張（《Departures》Alpha Pup 文案為抽象實驗音效設計；《home movies》零聲音來源、MB 把 nohidea. 與 Nohidea 分成兩個藝人；《sweetdreams.》零來源、曲長 1–2 分；《Blank Space》26 分零來源）——同名身分不清，整組不收。
+- 不補位：候補 9 張是主線先汰的 y／z 貼邊盤，研究後更不會比留下的穩。
+- 定案 **26 張**（a 4、b 5、c 6、d 7、e 4）：Kupla《Life Forms》《Imaginary》、sleepy fish《Beneath Your Waves》、jinsang 5、SwuM. & Jinsang《Blossoms》、SwuM.《Swimming》、Wun Two 4、Ohbliv 4、mt. fujitive 3、Purrple Cat《Bloom》《Cat Nap》、Hoogway《Slow Motion》、less.people 2。汰除卡存 `dropped-cards.json`，研究稿條目移到 `dropped-research.json`。研究 qa-batch 全過。
+- 卡單更正（研究層提出）：Ohbliv《Soulphonic》label 改 UKNOWY Music、Wun Two《Ships II》補 Sichtexot、Ohbliv《Give Thanks》補 Fat Beats Records、Kupla《Imaginary》補 Kuplasound。
