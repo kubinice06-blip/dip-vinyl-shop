@@ -11,3 +11,10 @@
 - **汰 4 張**：Stormy Six《Macchina maccheronica》（有吟唱旋律，z 貼邊）、Kyoka《Is (Is Superpowered)》（人聲切片俏皮，z −0.6 貼邊）、Ikue Mori《Labyrinth》（x 3.3 貼邊＋同人勻量，留 3）、Hecker《Sun Pandämonium》（高壓噪聲，y 恐判重落暴躁）。
 - 盤名：Cyclo. 首作 MB 盤名為「.」，上架名取「Cyclo.」（Discogs 慣稱），`queryAlias` 帶「.」。Étron Fou Leloublan《Les Trois Fou's Perdégagnent (Au Pays Des...)》MB RG 只有 2014 再版日期，取原盤年 1978（研究層核）。
 - 跨組：森郁惠可能與未派的 mc34（日本前衛即興）重疊，以本批為準；Bretschneider、Mark Fell、SND、Atom™、Sutekh、Brinkmann 已在 mc7／mc15，未重提。
+
+## 研究 e 組
+- 13601　Debile Menthol《Emile au jardin patrologique》年份：MB 1981 是錄音年（Discogs 備註 1981 年 10 月錄於 Studio Sunrise），Discogs 該版 LP（REC REC 01）登記發行 1983；僅單一來源說 1983，facts 兩個年份都寫明來源，建議主線 year 取 1983 或保留 1981 並接受存疑。status 標 thin。
+- 13602　Doctor Nerve《Armed Observation》：Discogs 的 1990 年《Beta 14 OK》內有同名短曲，不是本張；本張為 1987 Cuneiform Rune 8 LP。製作人 Fred Frith 僅維基單一來源，facts 以「維基寫明」呈現。
+- 13603　moodGuess 存疑清單（聲音描述的樂評全數被擋：Progarchives 403、Cuneiform 503、RYM 403、AllMusic 僅得星等）：U Totem（三首 10–15 分鐘長篇、西塔琴／長笛／低音巴松管，疑偏靜或暖，x 應下修）、Yugen（Mellotron／Moog／風琴／曼陀林／魯特琴，疑偏暖）、Debile Menthol（四人演唱法文歌、曲名俏皮，疑判暖或靜）、Doctor Nerve（管樂前線＋雙貝斯，疑 y 偏重）；5uu's 兩張依編制與曲長支持躁，但尖細／無調無樂評可驗，待評分驗收。
+- 13604　WebSearch 本組用 4 次（超額 1 次，因頭兩輪結果空白）；Yugen 兩條廠方／網友評語僅取自搜尋摘要，標 uncertain 於 notes。
+- 13605　facts 不寫分數；5uu's 兩張的錄音年／重組年有衝突（維基稱 1994 重組後錄，Discogs 稱 1992–93 製作），facts 只寫 Discogs 版權欄的實際記載並於 notes 註明。
