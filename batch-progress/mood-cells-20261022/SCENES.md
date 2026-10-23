@@ -79,8 +79,8 @@
 | 55 | md28 | dark ambient 第三波（md5 收 45／45 高產；Cryo Chamber、Cyclic Law、Glacial Movements、Malignant 二線藝人） | ✅ 上線 34／落格 34 |
 | 56 | ml52 | 2000s R&B ballad／slow jam 續集（ml49 收 28 高產；Joe、112、Avant、Dru Hill、Musiq Soulchild、Brian McKnight 慢盤） | ✅ 上線 27／落格 25 |
 | 57 | mc39 | 自由爵士管樂獨奏與二重奏（Anthony Braxton、Evan Parker、Roscoe Mitchell、Brötzmann、Wadada Leo Smith 獨奏盤；mc38 鋼琴路高產） | ✅ 上線 28／落格 24 |
-| 58 | ml53 | 爵士人聲 torch song／深夜 ballad（Julie London、Chet Baker sings 以外的二線；弦樂或厚編曲才收） | 派→情緒薄格 ml53、mc40（第 12 輪） |
-| 59 | mc40 | 自由即興弦樂（Leroy Jenkins、Billy Bang 前衛期、Joëlle Léandre、Barry Guy 獨奏、Mat Maneri、Phil Wachsmann；mc38／mc39 路高產） | 派→情緒薄格 ml53、mc40（第 12 輪） |
+| 58 | ml53 | 爵士人聲 torch song／深夜 ballad（Julie London、Chet Baker sings 以外的二線；弦樂或厚編曲才收） | ✅ 上線 17／落格 17（2026-10-23；策展兩輪 28、研究汰 11（無殘響直錄、house 拍、原聲簡編制、trap、輕快 roots）；torch／with strings 池中全判輕，收 quiet storm 爵士靈魂與霧暖 alt R&B／日本 neo-soul；主場景見底，不再派） |
+| 59 | mc40 | 自由即興弦樂（Leroy Jenkins、Billy Bang 前衛期、Joëlle Léandre、Barry Guy 獨奏、Mat Maneri、Phil Wachsmann；mc38／mc39 路高產） | ✅ 上線 29／落格 28（2026-10-23；策展 51（擋現場 21）、主線挑 45、研究汰 16（借曲／藍調 5、稀疏長音 6、電聲厚重 5）；出格 August Steps 判靜；主場景見底，不再派） |
 | 60 | ml54 | lo-fi／chillhop 第四波（Jazzinuf、Idealism、eevee、Sleepy Fish、韓國 lo-fi 二線；ml51 收 31 仍高產） | ✅ 上線 22／落格 21 |
 | 61 | md29 | dark ambient 第四波（Kammarheit、Northaunt、Sabled Sun、Council of Nine、Cryo Chamber 晚期新人；md28 收 34 仍高產） | ✅ 上線 33／落格 32 |
 | 62 | ml55 | 90s–00s 女聲 R&B ballad（Toni Braxton、SWV、Brandy、Monica、Faith Evans、Tamia 慢盤；ml49／ml52 路高產） | ✅ 上線 22／落格 22 |
@@ -169,7 +169,7 @@
 | mc37 | 19881 | EAI／onkyo／電聲即興（AMM、Keith Rowe、Sachiko M、Otomo 電聲期、Toshimaru Nakamura） | ✅ 上線 26／落格 16（2026-10-23；策展 54、主線汰 9、研究汰 19（安靜／催眠判靜 8、現場 4、鼓 4）；cracked electronics 與盤帶噪音拼貼 10 張判重落暴躁；唱盤、管樂擴展技法、Buchla 全中；見底不再派） |
 | mc38 | 20201 | 前衛爵士鋼琴緊繃那路（Cecil Taylor 獨奏、Matthew Shipp、Sylvie Courvoisier、Kris Davis、Marilyn Crispell、Schlippenbach） | ✅ 上線 27／落格 27（2026-10-23；策展 54、研究汰 18：現場 3、旋律清楚判暖 8、留白判靜 3、鼓組合奏判重 3、掛名 1；原聲前衛鋼琴小編制全中，Cecil Taylor 剩現場盤，主場景見底） |
 | mc39 | 20681 | 自由爵士管樂獨奏與二重奏（Braxton、Evan Parker、Roscoe Mitchell、Brötzmann、Wadada Leo Smith） | ✅ 上線 28／落格 24（2026-10-23；策展 54、研究汰 17：現場 5、留白判靜 7、疊錄／低音管判重 2、旋律／標準曲 3；出格 Brötzmann 獨奏 ×2 判重落暴躁、Butcher／Graewe 與 Rothenberg 單簧管獨奏判靜；主場景見底，不再派） |
-| mc40 | 21001 | 自由即興弦樂（Leroy Jenkins、Billy Bang 前衛期、Joëlle Léandre、Barry Guy 獨奏、Mat Maneri、Phil Wachsmann） | 派→情緒薄格 ml53、mc40（第 12 輪） |
+| mc40 | 21001 | 自由即興弦樂（Leroy Jenkins、Billy Bang 前衛期、Joëlle Léandre、Barry Guy 獨奏、Mat Maneri、Phil Wachsmann） | ✅ 上線 29／落格 28（2026-10-23；策展 51（擋現場 21）、主線挑 45、研究汰 16（借曲／藍調 5、稀疏長音 6、電聲厚重 5）；出格 August Steps 判靜；主場景見底，不再派） |
 | mc41 | 21081 | 電子原音／musique concrète 尖細那半（Parmegiani、Bayle、Xenakis 電子作、Dhomont） | ✅ 上線 11／落格 10（2026-10-23；策展 28（掃 empreintes 約 160 張）、主線汰 4、研究汰 13（飄浮長音 5、厚密噪音 3、聲音零來源 4、現場 1）；Stavropoulos 判靜落平靜；見底不再派） |
 
 ## 恍惚 ml（靜＋重＋暖；門檻 x ≤ 2.7、y ≥ +0.8、z ≥ +0.3）
@@ -230,6 +230,6 @@
 | ml50 | 20281 | 暖 drone／厚墊 ambient（Celer、Chihei Hatakeyama、Taylor Deupree 暖盤、Benoît Pioulard） | ✅ 上線 22／落格 21（2026-10-23；策展兩輪 61、主線汰 11、研究汰 28；見底不再派） |
 | ml51 | 20441 | lo-fi／beat tape 第三波（Knxwledge、Mndsgn、Ta-ku、Elaquent、Kiefer 慢盤、日本 jazzhop 二線） | ✅ 上線 31／落格 31（2026-10-23；策展 54、主線汰 8、研究汰 16、補 1；boom bap 彈跳、house／glitch、人聲合輯、散裝草稿集汰；Ohbliv、Wun Two、Purrple Cat、mt. fujitive 池中同人錨點可靠；主場景見底，不再派） |
 | ml52 | 20521 | 2000s R&B ballad／slow jam 續集（Joe、112、Avant、Dru Hill、Musiq Soulchild、Brian McKnight 慢盤） | ✅ 上線 27／落格 25（2026-10-23；策展 54、研究汰 22：hip-hop 硬拍取樣／饒舌客串 12、舞曲 5、smooth jazz 2、陰冷 1、身分 1、補 4 再汰 2；出格 Lattimore《Timeless》、Phil Perry 乾淨製作判輕落放鬆；主場景見底，不再派） |
-| ml53 | 20761 | 爵士人聲 torch song／深夜 ballad 二線（弦樂或厚編曲） | 派→情緒薄格 ml53、mc40（第 12 輪） |
+| ml53 | 20761 | 爵士人聲 torch song／深夜 ballad 二線（弦樂或厚編曲） | ✅ 上線 17／落格 17（2026-10-23；策展兩輪 28、研究汰 11（無殘響直錄、house 拍、原聲簡編制、trap、輕快 roots）；torch／with strings 池中全判輕，收 quiet storm 爵士靈魂與霧暖 alt R&B／日本 neo-soul；主場景見底，不再派） |
 | ml54 | 20841 | lo-fi／chillhop 第四波（Jazzinuf、Idealism、eevee、Sleepy Fish、韓國 lo-fi 二線） | ✅ 上線 22／落格 21（2026-10-23；策展 54、主線汰 19、研究汰 13；Sleepy Fish／Idealism／韓國 lo-fi 全是 EP 或已在池，主場景見底不再派；Lofi Records 乾淨鋼琴型 Bcalm《Elements》判輕落放鬆；dub 化擴寫只留 Pachyman 三張） |
 | ml55 | 20921 | 90s–00s 女聲 R&B ballad（Toni Braxton、SWV、Brandy、Monica、Faith Evans、Tamia 慢盤） | ✅ 上線 22／落格 22（2026-10-23；策展兩輪 44、主線汰 3（讓 ml53 一張）、研究汰 19（new jack／饒舌客串／舞曲 10、smooth jazz 2、翻唱、現場福音、EP、冷數位 2、場景不符 1）；主流頭牌池中判輕，見底不再派） |

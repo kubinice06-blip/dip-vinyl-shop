@@ -6,11 +6,23 @@
 - **策展→研究汰換**：ml54 策展 54、主線汰 19（乾淨鋼琴 chillhop y 貼邊、人聲客串、原聲吉他）、研究汰 13（人聲／饒舌客串、funk／house／jazz fusion、<28 分、身分）→ 22。md29 策展 58、主線汰 11、研究汰 22（打擊、旋律樂器／口白領奏、自稱 warm、噪牆）、策展補 15（附文案原句）、主線再汰 4、研究再汰 3 → 33。兩場景主場景見底，不再派。
 - **主線審稿**：ml54 改 2 張（Beyond the Sea of Trees 單源樂評評價句改寫、A Day at a Time 廠牌改 Lofi Records）；md29 改 2 張（Kave hook「評者形容」改無來源聽感、Phonothek「妻子」單源改「搭檔」；hooks／input 同步）。
 - **上線**：card_catalog 22＋33、KV 55 鍵回讀逐字一致（stamp 20261023r12）、試聽 22＋31 ready、seed +55、published gate 兩批 0 error；封面 CAA 52（2 張改 front-500）、Apple 3，live-check 全 200、縮圖表目視相符。上線前對 origin 所有 `claude/*` 分支 seed＋卡單去重 0 撞。
-- **情緒評分**：`score-ml54`、`score-md29`。**ml54 落恍惚 21/22（95%）**（Bcalm《Elements》判輕落放鬆）、**md29 落頹靡 32/33（97%）**（Jah Shaka《Imperial Dub》z 0.0 落恍惚）。八格（併 main 後，含 ml55／mc41）：恍惚 1,582、頹靡 1,512、冷冽 1,479。
+- **情緒評分**：`score-ml54`、`score-md29`。**ml54 落恍惚 21/22（95%）**（Bcalm《Elements》判輕落放鬆）、**md29 落頹靡 32/33（97%）**（Jah Shaka《Imperial Dub》z 0.0 落恍惚）。八格（併 main 後，含 ml55／mc41、ml53／mc40）：恍惚 1,599、頹靡 1,512、冷冽 1,507。
 - **類型樹**：`genre-l3-artist-map.json` 補 hiphop/underground/instrumental 6、electronic/downtempo/beats 3、electronic/ambient/dark-ambient 1，55/55 落位；抽卡封面重建。
 - **藝人介紹**：未切（並行規矩）；新藝人 41 個掛名列在兩批 rulings.md 末尾。
 - **主要檔案**：`batch-progress/add-20261023-{ml54,md29}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml54,md29}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml54,md29}/`、`onboarding-manifest-add-20261023-{ml54,md29}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml54,md29}*`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
 - **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 55/55；build-card-moods 錨點 104/104、gate exit 0。
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 12 輪 ml53／mc40：爵士人聲＋霧暖 R&B 17 張、自由即興弦樂 29 張上線，落格 17/17、28/29
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 12 輪＋「恍惚可以多增加一點 downtempo 與 dub」，本工作階段負責 ml53、mc40（評分照 10-23 體感標準）。ml53（`add-20261023-ml53`，恍惚）：Anita Baker《Compositions》、Kem、Malia & Boris Blank、Meshell《Ventriloquism》、One Dove、Jessie Ware、YEBBA、Ego Ella May、The Internet、Alex Isley & Jack Dine、Leon Thomas (R&B)、Liniker、Luedji Luna、mabanua、Kan Sano、Groundation《Hebron Gate》、Black Roots。mc40（`add-20261023-mc40`，冷冽）：Léandre ×5（獨奏與二重奏）、Barry Guy、Zíngaro、Kowald ×3、Dresser ×2、Tom Cora、Joe Morris ×2、John Russell ×2、Arditti《Cage: Freeman Etudes》×2、Maneri、Wachsmann ×3、Honsinger & Rupp、Lonberg-Holm ×3、Perelman《Strings 1》、Amado 三重奏。
+- **策展→研究汰換**：ml53 策展兩輪 28（爵士 torch／with strings 池中全判輕，主場景只 5）、研究汰 11（無殘響直錄、house 拍、原聲簡編制、trap、輕快 roots、dub 零證據）→ 17。mc40 策展 51（擋現場 21）、主線挑 45、研究汰 16（借曲／藍調、稀疏長音、電聲厚重）→ 29。兩個主場景見底，不再派。R&B 歌手 Leon Thomas 與池中 1969 爵士歌手同名，掛「Leon Thomas (R&B)」拆卡。
+- **主線審稿**：ml53 改 2 處（YEBBA 單源讚語改製作人事實、Jessie Ware 語意）；mc40 改 2 處（Singularity 讚語刪、Light Trigger 評價句改編制事實）。
+- **上線**：card_catalog 17＋29、KV 46 鍵回讀逐字一致、試聽 17＋7 ready（人工配 7）、seed +46、published gate 兩批 0 error；封面 CAA 31、Discogs 13（registry +13）、Apple 2，目視相符、live-check 全 200。上線前對 origin 95 個 `claude/*` 分支 seed＋他批卡單去重 0 撞。
+- **情緒評分**：`score-ml53`、`score-mc40`。**ml53 落恍惚 17/17（100%）**、**mc40 落冷冽 28/29（97%，August Steps 判靜）**。八格（併 main 後，含 ml55／mc41）：恍惚 1,577、冷冽 1,507、頹靡 1,480。
+- **類型樹**：`genre-l3-artist-map.json` 補 soul/neo-soul 3、jazz/contemporary/nu-jazz 1、jazz/free/free-improv 10；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 41 個掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{ml53,mc40}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml53,mc40}.json`、`master-override-ml53.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml53,mc40}/`、`onboarding-manifest-add-20261023-{ml53,mc40}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml53,mc40}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 46/46；build-card-moods 錨點 104/104。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 12 輪 ml55／mc41：女聲 R&B 慢盤 22 張、電子原音尖細那半 11 張上線，落格 22/22、10/11
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 12 輪，本工作階段負責 ml55、mc41（評分照 10-23 體感標準）。ml55（`add-20261023-ml55`，恍惚：90s–00s 女聲 R&B ballad＋女聲 quiet storm、慢板 neo-soul、女聲 dub）：Kelly Price ×2、Syleena Johnson、Oleta Adams ×3、Miki Howard、Phyllis Hyman、Mica Paris、Leela James ×2、Goapele、Raveena、Sabrina Claudio ×2、Alina Baraz、Celeste、Andra Day、Aisha、Love Unlimited、Jah9 ×2。mc41（`add-20261023-mc41`，冷冽：acousmatic 尖細那半＋早期工作室點描）：Vaggione ×2、Jonty Harrison、Elsa Justel、Davidovsky、Trevor Wishart、A_dontigny、Stavropoulos、Subotnick、Stéphane Roy、Alain Thibault。
