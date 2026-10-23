@@ -83,3 +83,24 @@
 - **13058** 媒體名與媒體榜單名次不進 note：NewRetroWave、Magnetic Mag、The Playground、Sputnik（含分數）、Afisha、Discogs／維基字樣全不指派；樂評內容只寫「樂評說」（Aeternus）、Bandcamp 留言寫「聽眾」（Amplifier、Mechanized）。A jel 的「第 22 名」（榜名不明、單源）不指派；curatorWhy 的「#1」研究層已推翻，未用。Jóslat 的 Menczel 是否參與（兩源矛盾）不指派；只寫 1994 年初側計畫與主唱抗議。Rosso Corsa 的「第二張」不寫序數（研究層存疑）。Dynatron 鼓聲回音（Sputnik 摘要、降級）不指派。Aeternus hook 原稿「十二首器樂」：facts 未載全器樂（僅 sound 欄），改成「十二首曲子」。Mechanized hook 改成直接沿用 facts 的「核子與戰爭機械的科幻題材」。
 - **13059** n-gram 自查（中文 4-gram，專名、樂器名不算）：hook 對 hook 初稿 1 條（`兩位團員` Рано × Jóslat）→ Рано 改「兩名成員」，現 0；hook 對他卡 note 初稿 1 條（`年春天的` Носитель hook × 1984 note）→ hook 改「原定 2006 年春天出的」，現 0；hook 對自卡 note 初稿 3 條（Aeternus `海柏利昂`、1984 `黃金期才`、Jóslat `名在德國`）→ note 改「Dan Simmons 的這套科幻小說」、hook 改「黃金期正要來」、note 改「在德國以 Bonanza 之名」，現 0。note 間 3 張以上只剩 `布達佩斯`（地名）與 `的合成器`（通用），其餘 `錄音室錄成`×3、`拿下金唱片`×3、`合成器流行`×3 已拆。
 - **13060** 腳本：`node qa-batch.mjs hooks add-20261023-mc26` 全部通過 ✓；`node chk-hook-crossgroup.mjs add-20261023-mc26` ✓ 全部通過（5 組 14 張，hook 加權 15–24、note 161–232）。輔助腳本在 scratchpad `hook-mc26/`。時序：Exploration 2025 重發、Amplifier 2018 黑膠標時序（作品流傳）；Рано 的 Ryabtsev 離團、Jóslat 的解散屬與作品直接綁定，皆標時序。
+
+## 寫作層（writer-1）
+- **13061** 交件：`desc-tools/batches/output/add-20261023-mc26-out-1.json`，14 張（全批一人做，無 writer-2），key 逐字同序。字數：Exploration 84 229｜Mainframe 156(thin)｜Aeternus 228｜Amplifier 173(thin)｜Mechanized 237｜Всё 238｜Рано 231｜Induljon 226｜A jel 199｜1984 201｜A pillanat 226｜Jóslat 226｜Это война 224｜Носитель 205。full 199–238、thin 156–173，零超標、零掉下限，未回頭刪節。
+- **13062** 首句 14 張逐字照抄 hook；第二句全照 note 指定的領句（13056 配表），只做兩處字面微調避同構：1984 的「彈合成器」改「負責合成器」（避開 Jóslat 的「另兩人彈合成器」）、Induljon 的「布達佩斯的合成器流行三人組」改「布達佩斯一支合成器流行三人組」（避 `的合成器`）。日期「日」後一字照 13057：日自／日發／日由／日交／日，／日在，其餘只寫到年季月。
+- **13063** 只寫 note 所列：媒體名、榜單名次、樂評分數全未入正文；Aeternus 的樂評內容寫成「樂評形容整體陰暗」，Amplifier／Mechanized 寫「聽眾形容／聽眾說」；無「據說／據傳」。Это война 的「同年」指 1996（hook 已給年）。Jóslat 解散、Рано 的 Ryabtsev 離團、Amplifier 2018 黑膠、Exploration 2025 重發皆照 note 標時序。1984 把團內分歧壓成「這場分歧出現在 1991 年前後，Kovács 因此想換風格」，避免第三句重講 hook 的兩方說法。
+- **13064** 自掃中文 4-gram（`han()` 剝非漢字）：初稿 2 張殘片 26 條、3 張 2 條（`的合成器`、`布達佩斯`）；拆掉整個名詞片語後定稿 3 張以上只剩 `布達佩斯`（地名），2 張殘片 0 條。改動包括 Mechanized 數位發行改「推出數位版」、失真句改寫；Jóslat 結尾改「錄音室作品到它為止，隨後宣布解散」；Induljon 改「出道作」「銷量約 5 萬張」「於 TOM-TOM」；A pillanat 名曲句改「日後被列為」；A jel 改「出自…唱片掛在 Favorit 旗下」；Рано 製作人句改主詞；Mainframe 長度句改「共 27 分鐘左右」；Носитель 改「新作」。
+- **13065** 腳本：`qa-batch out` 全部通過 ✓（14 張、thin 2 張 ≤180）；`qa-check-research` 標記 0；`fix-spacing` 待補 0。輔助腳本與稿件在 scratchpad `write-mc26-1/`。
+
+## 主線審稿（2026-10-23，雲端主線；13074）
+- 13074：逐張審 14 張（對回研究稿 facts），改 2 處、其餘未改字：
+  - `desc2:Bonanza Banzai|Induljon a banzáj!`：「銷量約 5 萬張，拿下金唱片。」→「專輯後來拿下金唱片。」依據：銷量只有匈牙利維基單一來源（研究 d 組已標），刪數字；金唱片有英文維基「五張達到金唱片」交叉。只刪字，不動研究／hooks／input。
+  - `desc2:Bonanza Banzai|Jóslat`：「…發行，賣出約 2.5 萬張。」→「…發行，也拿下金唱片。」依據同上（研究 e 組 facts：匈牙利維基稱金唱片、約 2.5 萬張；數字單源刪）。
+  - 其餘掃過：媒體名、榜單名次、「據說」0；Mechanized「聽眾說」為 Bandcamp 聽眾留言，保留轉述語氣。
+
+## 上線與評分（2026-10-23，13075）
+- 13075：上線 14 張：card_catalog 14／14、KV 14 鍵逐字回讀一致、seed +14、published gate 0 error；試聽 ready 12（Технология《Всё, что ты хочешь》人工配 Apple ru 2023 重發）、unavailable 2（Bonanza Banzai《Jóslat》、Технология《Носитель идей》Apple 查無）；封面 14 張 CAA。子曲風：Dynatron 補 `electronic/synth/synthwave`。
+- **評分落格（score-mc26）：落冷冽 14/14＝100%**（x 3.0–3.6、y −0.5～+0.1、z −0.3～−1.1；conf mid 2、low 12）。貼邊：Bonanza Banzai《A pillanat emlékműve》x 3.0、Waveshaper《Exploration 84》z −0.3。
+- **場景結論**：synthwave 主流（dreamwave、darksynth、chillsynth）研究層一查就判暖或判重，能留的只剩器樂 electro 式鼓機盤；東歐 Depeche 系 synth-pop（Технология、Bonanza Banzai）是這批主力。策展兩輪 36 → 研究汰 20 → 上線 14。mc19 剩餘名額在 Ночной проспект、Videosex 等樂團編制處見底。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Waveshaper、Dynatron、Lost Years、Vector Hold、Технология、Bonanza Banzai（6 位）。

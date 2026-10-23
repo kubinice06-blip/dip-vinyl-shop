@@ -5,7 +5,7 @@
   {
    "id": "rock",
    "zh": "搖滾",
-   "count": 5055,
+   "count": 5066,
    "children": [
     {
      "id": "indie-alt",
@@ -154,7 +154,7 @@
     {
      "id": "punk-wave",
      "zh": "龐克新浪潮",
-     "count": 942,
+     "count": 953,
      "children": [
       {
        "id": "punk",
@@ -189,7 +189,7 @@
       {
        "id": "goth",
        "zh": "哥德暗潮",
-       "count": 74
+       "count": 84
       },
       {
        "id": "garage",
@@ -199,7 +199,7 @@
       {
        "id": "industrial",
        "zh": "工業",
-       "count": 34
+       "count": 35
       }
      ]
     },
@@ -635,27 +635,27 @@
   {
    "id": "electronic",
    "zh": "電子",
-   "count": 2395,
+   "count": 2429,
    "children": [
     {
      "id": "ambient",
      "zh": "Ambient / Drone",
-     "count": 1012,
+     "count": 1039,
      "children": [
       {
        "id": "idm",
        "zh": "偏 IDM",
-       "count": 231
+       "count": 232
       },
       {
        "id": "drone",
        "zh": "Drone",
-       "count": 201
+       "count": 215
       },
       {
        "id": "dark-ambient",
        "zh": "Dark Ambient",
-       "count": 186
+       "count": 211
       },
       {
        "id": "ambient-techno",
@@ -670,7 +670,7 @@
       {
        "id": "new-age",
        "zh": "New Age",
-       "count": 52
+       "count": 53
       }
      ]
     },
@@ -724,17 +724,17 @@
     {
      "id": "synth",
      "zh": "Synthpop / Electro",
-     "count": 446,
+     "count": 451,
      "children": [
       {
        "id": "synthpop",
        "zh": "Synthpop",
-       "count": 206
+       "count": 210
       },
       {
        "id": "electro",
        "zh": "Electro / Electroclash",
-       "count": 200
+       "count": 202
       },
       {
        "id": "techno",
@@ -749,7 +749,7 @@
       {
        "id": "new-wave",
        "zh": "New Wave",
-       "count": 76
+       "count": 77
       },
       {
        "id": "indietronica",
@@ -759,7 +759,7 @@
       {
        "id": "synthwave",
        "zh": "Synthwave / Italo",
-       "count": 24
+       "count": 29
       }
      ]
     },
@@ -808,17 +808,17 @@
     {
      "id": "idm",
      "zh": "IDM / Glitch",
-     "count": 401,
+     "count": 402,
      "children": [
       {
        "id": "ambient-idm",
        "zh": "Ambient IDM",
-       "count": 224
+       "count": 225
       },
       {
        "id": "glitch",
        "zh": "Glitch / Microsound",
-       "count": 152
+       "count": 153
       },
       {
        "id": "warp",
@@ -914,22 +914,22 @@
     {
      "id": "industrial",
      "zh": "Industrial / EBM",
-     "count": 214,
+     "count": 236,
      "children": [
       {
        "id": "dark-ambient",
        "zh": "Dark Ambient / Post-Industrial",
-       "count": 91
+       "count": 111
       },
       {
        "id": "power-electronics",
        "zh": "Power Electronics / 噪音",
-       "count": 62
+       "count": 78
       },
       {
        "id": "old-school",
        "zh": "老派工業",
-       "count": 58
+       "count": 73
       },
       {
        "id": "ebm",
@@ -946,27 +946,27 @@
     {
      "id": "noise",
      "zh": "實驗與噪音",
-     "count": 176,
+     "count": 193,
      "children": [
       {
        "id": "harsh",
        "zh": "Harsh Noise / 日本噪音",
-       "count": 128
+       "count": 145
       },
       {
        "id": "drone",
        "zh": "Drone / Dark Ambient",
-       "count": 100
+       "count": 117
       },
       {
        "id": "glitch",
        "zh": "Glitch / Microsound",
-       "count": 45
+       "count": 46
       },
       {
        "id": "concrete",
        "zh": "具象音樂與拼貼",
-       "count": 40
+       "count": 41
       }
      ]
     },
@@ -1683,7 +1683,7 @@
   {
    "id": "pop",
    "zh": "流行",
-   "count": 1112,
+   "count": 1121,
    "children": [
     {
      "id": "jp-pop",
@@ -1725,12 +1725,12 @@
     {
      "id": "synth",
      "zh": "合成器流行",
-     "count": 242,
+     "count": 251,
      "children": [
       {
        "id": "synthpop",
        "zh": "80s Synthpop / New Wave",
-       "count": 106
+       "count": 115
       },
       {
        "id": "asia",
