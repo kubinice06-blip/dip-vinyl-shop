@@ -107,6 +107,7 @@
 - 照 10-23 體感標準評分（conf mid 5、low 21）。**上線 26；落冷冽 16/26＝62%**。
 - 出格 10 張全部判重落暴躁（y 0.5–0.9，x 與 z 都在冷冽側）：Voice Crack ×2、Double_Wash、What a Wonderful World、Möslang《lat_nc》、Müller/Möslang《Vlan_Voilà》、Rowe/Lehn/Schmickler《Rabbit Run》、Lehn/Schmickler《Bart》、Noetinger《dR》《Gloire à...》——**cracked electronics、類比合成器噪音堆疊與盤帶 concrète 評分聽成「糊厚」**，策展估 y −0.3～0 全部高估了輕度。
 - 落冷冽的是唱盤（大友／Tétreault、eRikm《Zygosis》、Tétreault 獨奏）、管樂擴展技法（Kerbaj ×3、Wooley/Wright、Peter Evans ×2）、Buchla（Subotnick ×2）、回授（Tudor、中村）與 Thermal；x 3.0–4.2、y −0.6～+0.4。安靜型 x 3.0–3.2 剛好過線（East of Where?、Microphone、Döner Kebab）。
+- 八格（併 main 後，含 ml49／mc38）：恍惚 1,426、頹靡 1,433、冷冽 1,445。
 - 產量：策展 54、主線汰 9、研究汰 19 → 26。**下一批冷冽同型只收管樂擴展技法、唱盤與 Buchla／序列器型，cracked electronics 與盤帶噪音拼貼不收**；EAI 主場景（Erstwhile 系）研究汰換主因是安靜／催眠（判靜）與現場，見底，mc37 不再派。
 
 ## 本批新藝人（無介紹，未切；並行時子工作階段不切）

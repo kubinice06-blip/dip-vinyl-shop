@@ -363,7 +363,7 @@
   {
    "id": "jazz",
    "zh": "爵士",
-   "count": 4826,
+   "count": 4853,
    "children": [
     {
      "id": "bop",
@@ -399,6 +399,43 @@
        "id": "blue-note",
        "zh": "Blue Note 廠牌",
        "count": 38
+      }
+     ]
+    },
+    {
+     "id": "free",
+     "zh": "自由與前衛",
+     "count": 888,
+     "children": [
+      {
+       "id": "avant",
+       "zh": "前衛與 New Thing",
+       "count": 473
+      },
+      {
+       "id": "free-improv",
+       "zh": "自由即興",
+       "count": 158
+      },
+      {
+       "id": "post-bop",
+       "zh": "偏 Post-Bop",
+       "count": 146
+      },
+      {
+       "id": "fusion",
+       "zh": "偏 Fusion",
+       "count": 78
+      },
+      {
+       "id": "spiritual",
+       "zh": "靈性與 Modal",
+       "count": 63
+      },
+      {
+       "id": "euro",
+       "zh": "歐陸自由爵士",
+       "count": 52
       }
      ]
     },
@@ -445,51 +482,14 @@
      ]
     },
     {
-     "id": "free",
-     "zh": "自由與前衛",
-     "count": 861,
-     "children": [
-      {
-       "id": "avant",
-       "zh": "前衛與 New Thing",
-       "count": 452
-      },
-      {
-       "id": "free-improv",
-       "zh": "自由即興",
-       "count": 150
-      },
-      {
-       "id": "post-bop",
-       "zh": "偏 Post-Bop",
-       "count": 146
-      },
-      {
-       "id": "fusion",
-       "zh": "偏 Fusion",
-       "count": 78
-      },
-      {
-       "id": "spiritual",
-       "zh": "靈性與 Modal",
-       "count": 63
-      },
-      {
-       "id": "euro",
-       "zh": "歐陸自由爵士",
-       "count": 52
-      }
-     ]
-    },
-    {
      "id": "contemporary",
      "zh": "當代與 Nu Jazz",
-     "count": 785,
+     "count": 793,
      "children": [
       {
        "id": "nu-jazz",
        "zh": "Nu / Acid Jazz",
-       "count": 274
+       "count": 277
       },
       {
        "id": "smooth",
@@ -502,14 +502,14 @@
        "count": 159
       },
       {
-       "id": "piano",
-       "zh": "鋼琴",
-       "count": 103
-      },
-      {
        "id": "free",
        "zh": "偏前衛",
-       "count": 97
+       "count": 105
+      },
+      {
+       "id": "piano",
+       "zh": "鋼琴",
+       "count": 104
       },
       {
        "id": "euro",
@@ -524,7 +524,7 @@
       {
        "id": "world",
        "zh": "世界與靈性",
-       "count": 52
+       "count": 53
       }
      ]
     },
@@ -621,7 +621,7 @@
     {
      "id": "ecm",
      "zh": "ECM / 歐陸",
-     "count": 117,
+     "count": 119,
      "children": []
     },
     {
@@ -946,7 +946,7 @@
     {
      "id": "noise",
      "zh": "實驗與噪音",
-     "count": 240,
+     "count": 242,
      "children": [
       {
        "id": "harsh",
@@ -959,14 +959,14 @@
        "count": 143
       },
       {
+       "id": "concrete",
+       "zh": "具象音樂與拼貼",
+       "count": 61
+      },
+      {
        "id": "glitch",
        "zh": "Glitch / Microsound",
        "count": 60
-      },
-      {
-       "id": "concrete",
-       "zh": "具象音樂與拼貼",
-       "count": 59
       }
      ]
     },
@@ -1004,7 +1004,7 @@
   {
    "id": "soul",
    "zh": "靈魂放克",
-   "count": 1723,
+   "count": 1751,
    "children": [
     {
      "id": "funk",
@@ -1046,22 +1046,22 @@
     {
      "id": "classic-rnb",
      "zh": "經典 R&B / Doo-wop",
-     "count": 894,
+     "count": 919,
      "children": [
       {
        "id": "funk",
        "zh": "偏 Funk",
-       "count": 449
+       "count": 450
+      },
+      {
+       "id": "neo-contemporary",
+       "zh": "Neo-Soul / 當代",
+       "count": 132
       },
       {
        "id": "motown",
        "zh": "Motown / Northern",
        "count": 129
-      },
-      {
-       "id": "neo-contemporary",
-       "zh": "Neo-Soul / 當代",
-       "count": 123
       },
       {
        "id": "southern",
@@ -1071,7 +1071,7 @@
       {
        "id": "smooth",
        "zh": "Smooth / Philly / Quiet Storm",
-       "count": 105
+       "count": 115
       },
       {
        "id": "chicago",
@@ -1093,7 +1093,7 @@
     {
      "id": "disco",
      "zh": "Disco / Boogie",
-     "count": 269,
+     "count": 270,
      "children": []
     },
     {
@@ -1111,13 +1111,13 @@
     {
      "id": "philly",
      "zh": "Philly / Quiet Storm",
-     "count": 163,
+     "count": 170,
      "children": []
     },
     {
      "id": "neo-soul",
      "zh": "Neo-Soul",
-     "count": 143,
+     "count": 150,
      "children": []
     },
     {
