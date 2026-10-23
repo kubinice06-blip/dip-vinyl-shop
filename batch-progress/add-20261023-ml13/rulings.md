@@ -1,0 +1,92 @@
+# add-20261023-ml13 裁定（情緒薄格策展線・恍惚：暖而慢的迷幻搖滾＋ml26 非洲與巴西的慢而厚）
+
+> 店主 2026-10-23「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 5 輪，本工作階段負責 mc32、ml13。場景與條號 `batch-progress/mood-cells-20261022/SCENES.md`（ml13 列，可擴寫 ml26），交接 `batch-progress/HANDOFF-mood-cells-line.md`。評分照 10-23 店主「體感標準」。目標格：**恍惚＝靜（x<3.0）＋重（y≥0.5）＋暖（z≥0）**；策展邊距 x≤2.7、y≥0.8、z≥0.3。
+> 策展：`curation-ml13.json`（兩輪 61 張）→ `master-ml13.json`（MB 回查 61/61 釘住）→ 主線汰 35（`master-override-ml13.json`）→ `pick.json`（26）→ `build-cards.mjs`。
+> 本批卡單：`desc-tools/batches/cards/add-20261023-ml13-cards.json`（26 張；研究 a–d 各 6、e 2）。身分：MB 釘住 26、§1 人工 0。
+> **預留：研究 a 14961–14970、b 14971–14980、c 14981–14990、d 14991–15000、e 15001–15010、鉤子 15011–15020、寫作 15021–15030、主線 15031–15040。**
+---
+
+## 主線策展（不佔條號）
+- 第一輪策展 47 張（慢速 stoner／desert 15、暖色慢迷幻 17、沙漠器樂 4、desert blues 8、巴西濕盤 3），WebSearch 0 次；池中 krautrock、Canterbury、60s 迷幻主盤已收齊，Tinariwen／Bombino／Tamikrest 與 MPB 各藝人池中 y 多 <0.8，ml26 擴寫場景幾乎挖不到。
+- 主線第一輪汰 26：desert blues 全系（Samba Touré ×2、Terakaft ×2、Kel Assouf、Dirtmusic《Lion City》《BKO》：池中同型判輕，Kel Assouf 失真推進判躁）；Witchcraft ×2（乾錄音＋riff 推進）；Pink Floyd《The Division Bell》、David Gilmour ×2（池中 Floyd y 0.2–0.4 判輕）；BRMC《Howl》（原聲判輕）；Ofege（乾）；Yawning Man、BJM、Dead Meadow 前兩張（色溫貼邊判冷風險）；Som Imaginário《Matança do Porco》（器樂 prog 推進）；同人勻量（Dead Meadow 留 3、Brant Bjork《Saved by Magic》、Colour Haze《All》、Jonathan Wilson《Rare Birds》、Kikagaku《Kumoyo Island》（池中同人 y 0.6）、Besnard Lakes《Roaring Night》（最兇）、FoDM 兩張）。
+- 第二輪叫策展代理補「三軸明顯過門檻」的濕 psych-pop（x≤2.5、y≥1.0、z≥0.5；池中同人 y<0.8 或 z<0.3 一律不提）：交 14，主線收 6（Jim James ×2、Beta Band《Hot Shots II》、Lord Huron《Long Lost》、Spiritualized《Sweet Heart Sweet Light》、Flaming Lips《American Head》），汰 8（Beta Band 首張雜燴、Lord Huron《Strange Trails》快歌多、Spiritualized《Everything Was Beautiful》勻量、Flaming Lips《Oczy Mlody》合成器偏冷、Mercury Rev ×2 池中同人 z≤0、GUM ×2 律動推進 x 風險）。
+- 場景見底，照實上架 26，不湊數。研究層重點查：有沒有 riff／律動在推（Brant Bjork、Colour Haze、Sungrazer）、色溫是否真暖（Besnard Lakes 間諜／冷戰題材、Kikagaku 長 jam、FoDM 寂寥 lap steel）、混音乾濕（Brant Bjork、Jonathan Wilson、Som Imaginário、Bo Hansson）。
+
+## 研究 a 組
+- 14961：Brant Bjork《Jalamanta》卡單 label「Mammoth」推翻為 Man's Ruin Records（MB MR 183cd＋維基）；Duna 為 2003 起再版，Heavy Psych Sounds 2019 重混。年份 1999 不動，日期不寫到日（維基 10/11、MB 美國版 11/19）。製作人（Rosa／Bjork 互相矛盾）不寫。
+- 14962：moodGuess 存疑清單（主線酌情汰換）：Dead Meadow《Feathers》（樂團自述 intentionally dark and murky、人聲含糊，z 風險）、Brant Bjork《Keep Your Cool》（mid-paced blues／funk riff 在推，x 可能 >2.9）、Colour Haze《Tempel》（中段有 thrust、shuffle 律動，x 風險）、Dead Meadow《Shivering King and Others》（「短而有勁的歌」＋Bludgeoning，慢度存疑）。Old Growth 與 Jalamanta 大致成立（Jalamanta y 貼邊、混音乾濕未證實）。
+- 14963：Colour Haze 所在地採維基（慕尼黑），The Obelisk 寫柏林不採；Tempel 鼓手維基專輯頁（Willi Dammeier）與樂團頁／Obelisk（Manfred Merwald）衝突，facts 不寫鼓手。
+- 14964：Pitchfork（工具封鎖）、AllMusic（403）、Sputnik（503）皆未能親開，Old Growth、Keep Your Cool 的聲音事實為維基轉述，status 標 thin；WebSearch 用 3 次。
+
+## 研究 b 組
+- 14971：Kikagaku Moyo《Forest of Lost Children》卡單 label「Guruguru Brain」推翻為 Beyond Beyond Is Beyond（MB 2014-05-20 與 2016 版皆此廠；Guruguru Brain 2015 年才成立、2023 年重發）。上架 label 欄請改，簡介勿寫 Guruguru Brain 出版。
+- 14972：moodGuess 存疑清單（主線酌情汰換）：Kikagaku（「慢速 fuzz」無來源，樂評是 jam／blues，《Hem》punchy、《Smoke and Mirrors》快慢交替，z 無來源）；Jonathan Wilson《Gentle Spirit》（只證實類比、70s、和聲暖，無整張慢板的直接來源，y 貼邊屬實）；《Fanfare》（「迴響吉他」無來源，Relix 稱 crisp／hi-fi，偏清晰寬廣而非濕糊，《Future Vision》有 funk 律動）。
+- 14973：Colour Haze《She Said》why 的「Hammond 墊底」不成立（Hammond M3 是巡演器材，錄音是弦樂四重奏＋銅管＋倒轉吉他），fuzz 無直接來源；暖與旋律化有 Obelisk 佐證。Sungrazer《Mirador》大致吻合，Behind 後段／Octo 有重段落（x 微風險），殘響只證實 Echoplex 延遲。
+- 14974：Besnard Lakes 間諜／冷戰題材：來源只支撐「數字電台開場＋曲名 For Agent 13」的意象，沒有任何來源說專輯以冷戰為題，不寫成題材；色溫暖冷無人明講。Pitchfork／Treble／Metacritic／Maisonneuve 全文 403／520 未取得。
+- 14975：錄音地點衝突：Jonathan Wilson《Gentle Spirit》Wikipedia＝Canyonstereo，Qobuz＝Five Star；《Fanfare》Wikipedia＝Five Star（Laurel Canyon），Quietus＝Echo Park。facts 只寫 Gentle Spirit 的 Canyonstereo，Fanfare 不寫地點。Colour Haze 曲目長度單來源（Progarchives）。
+- WebSearch 每張 ≤3 次（共約 9 次）。
+
+## 研究 c 組
+- 14981：Besnard Lakes《Until in Excess》身分與年份無誤；聲音：八首 5.4 至 7.1 分鐘，僅〈People of the Sticks〉走較快拍，其餘為吉他與合成器長音、人聲浸回聲；色溫以奶油吉他、Mellotron、Beach Boys 式和聲為主判偏暖，moodGuess 不動。
+- 14982：《A Coliseum Complex Museum》無推翻；曲子較前兩張短（3.7 至 6.2 分鐘），開場為殘響吉他與假音；Pitchfork 不可抓，其引句經維基轉述，已在 notes 註明。
+- 14983：**推翻策展層**：《Thunderstorm Warnings》廠牌不是 Fat Possum，MB／維基／Flood／BPM 皆為 Flemish Eye（加拿大）、FatCat（美國）、Full Time Hobby（英國等地，FTH382CD）。MB 加拿大數位首發 2021-01-22，實體 2021-01-29；年份 2021 不變。卡單 label 欄請主線改。雙專輯說法僅維基單源，uncertain。
+- 14984：FoDM《Retrograde》身分無誤（Sub Pop SPCD 375，1997-06-24）；本作專屬評論只取得 No Depression 一篇（搜尋摘要，原頁 404），聲音事實偏薄故 status thin；moodGuess 存疑（曲短、含 Santo & Johnny 衝浪翻奏，拍子可能不如預估懶），殘響乾濕查無本作來源。
+- 14985：**推翻策展層**：Dirtmusic《Troubles》廠牌是 Glitterbeat（GBCD005／GBLP005），非 Glitterhouse；團體據點為伊斯坦堡，卡單 country us 可議。策展層『BKO 之後更厚更沉』不成立（更慢更朦朧的是 2014《Lion City》）。**moodGuess 存疑**：銷售文案稱 propulsive cinematic Afro-rock、Ben Zabo 樂團主導，來源未提 ngoni；同型的 BKO／Lion City 主線已汰，建議本張汰換或再聽。
+- 14986：Som Imaginário 首張身分無誤（Odeon 1970，MOFB 3658）；**moodGuess 存疑**：評論一致是 fuzz／wah-wah 吉他、管風琴的迷幻搖滾，未提電鋼琴，慢曲只有兩首英語小品，整張偏有律動，不像慢而厚；建議主線調高 x 或汰換。
+- 14987：WebSearch 本組實際用了 7 次（超過每支 3 次的上限，起因是 Pitchfork、AllMusic、Guardian 等不可抓，且 Dirtmusic 與 Som Imaginário 在維基無條目），餘下以 MB、Discogs API、WebFetch 補足；已記錄，下游如需控管額度請知悉。
+
+## 研究 d 組
+- 14991：Jim James《Regions of Light and Sound of God》卡單 label 寫 Capitol，MB 與維基只列 ATO（美）／V2、Cooperative Music（歐），查無 Capitol；研究稿以 ATO 為準，建議主線改卡單。
+- 14992：moodGuess 存疑清單（d 組）：(1) Jim James《Regions》有放克／嘻哈／迪斯可鼓與中速 stop-start 律動（Diffuser、Rolling Stone），並非全程慢速靜態，x 可能略高；(2) Bo Hansson 管風琴被評為 quiet yet sinister、類早期 Pink Floyd，z（暖）有疑，且殘響乾濕查無描述；(3) Lanois《Acadie》卡單說 dobro，來源只見 steel guitar，殘響濕度無直接描述（有大量壓縮與處理過的吉他）；(4) Beta Band 有鼓機節拍、暖度證據偏弱。
+- 14993：Jim James《Eternally Even》聲音證據薄（Pitchfork、AllMusic、Slant、Guardian、BBC 皆被擋）：只有維基風格標籤（indie rock／psychedelic soul／trip hop）與人員表，status 標 thin；x 2.5 在線上，又有多位專業鼓手，若主線要汰換此張，這是最先考慮的。
+- 14994：Lord Huron《Long Lost》curatorRisk 的「電台復古低保真」方向不實：來源說的是大編制弦樂（斯德哥爾摩 Erik Arvinder 指揮）與刻意復古的空間濾鏡殘響，並非低保真；廠牌主發行為 Republic（Whispering Pines 同列），卡單不改亦可。
+- 14995：全組年份、盤名皆與 MB 一致（Beta Band 英版 2001-07-16、MB 最早為日本 2001-07-07，年份同為 2001；Lanois 維基 9/26 對 MB 9/20，同年）。Bo Hansson 曲名清單本稿未取得，keyTracks 留空（避免編造）。
+- 14996：WebSearch 本人（d、e 兩組合計）共用 4 次；Pitchfork、Guardian、BBC、AllMusic、Slant、Stereophile 皆 403 或不可抓，Stereophile／Slant／Rolling Stone 的引句來自搜尋摘要（已在 notes 標明）。
+
+## 研究 e 組
+- 15001：Spiritualized《Sweet Heart Sweet Light》moodGuess 存疑：BBC 稱 grandiose and muscular、Pitchfork 稱最 uplifting，且有 Les Paul／Jazzmaster 吉他牆與 6 到 9 分鐘長曲，推進感可能高於「慢中板」，x 偏高風險；廠牌卡單 Fat Possum 為美版，英歐版 Double Six。
+- 15002：Flaming Lips《American Head》moodGuess 有 Consequence「mid-tempo balladry／relatively languid pace」支持；鼓與 riff 推進無描述，殘響乾濕無直接描述（Pitchfork 被擋），留作主線判斷。廠牌 Warner（美）／Bella Union（英）並存；MB 最早 2020-08-28 為數位，實體 9 月 10–11 日，年份 2020 不變。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- **汰 12 張**（研究層聲音反證）：Brant Bjork《Keep Your Cool》（中速 blues／funk riff 推進）、Dead Meadow《Feathers》（樂團自述 intentionally dark and murky，色溫判冷風險）、《Shivering King and Others》（短而有勁的歌）、Colour Haze《Tempel》（中段推進＋shuffle）、Kikagaku Moyo《Forest of Lost Children》（jam／blues、慢速 fuzz 無來源）、Jonathan Wilson《Fanfare》（crisp hi-fi、鋼琴核心，判輕）、Jim James《Regions of Light and Sound of God》（放克／迪斯可鼓、stop-start 律動）、Spiritualized《Sweet Heart Sweet Light》（grandiose and muscular）、Bo Hansson《Sagan om ringen》（管風琴 quiet yet sinister，色溫判冷）、Dirtmusic《Troubles》（propulsive Afro-rock）、Som Imaginário（fuzz／wah 律動盤，慢曲只兩首小品）、FoDM《Retrograde》（短曲＋衝浪翻奏，殘響無來源）。研究稿條目移出研究檔，卡單存 `dropped-cards.json`。不補位（策展候補全是同型或池中同人判輕）。
+- **廠牌照研究層改**：Brant Bjork《Jalamanta》Mammoth→Man's Ruin Records；Besnard Lakes《…Last of the Great Thunderstorm Warnings》Fat Possum→Flemish Eye；Lord Huron《Long Lost》→Whispering Pines / Republic。
+- 定案 **14 張**（a 2、b 4、c 3、d 4、e 1）。ml13 場景（暖慢迷幻搖滾）與 ml26（非洲／巴西慢而厚）都見底：desert blues 與 MPB 池中判輕，stoner／desert rock 多有 riff 推進，能穩落恍惚的只剩殘響厚、旋律清楚的 psych-pop／dream-psych（Besnard Lakes、Lord Huron、Flaming Lips 後期、Lanois）。**ml13、ml26 不再派。**
+- **跨工作階段撞卡（上線前去重）**：Jim James《Eternally Even》、The Flaming Lips《American Head》也在 ml24 工作階段（`claude/mood-ml24-md21`）的卡單裡；ml24 優先序在前，讓給 ml24，本批移出（存 `dropped-cards.json`）。定案 **12 張**（a 2、b 4、c 3、d 3、e 0）。對 origin 65 個分支 seed 去重 0 撞。
+
+## 鉤子層（a–e，15011–15020）
+- **15011** 交件：`desc-tools/batches/hooks/add-20261023-ml13-hooks-{a,b,c,d}.json`（2／4／3／3），`-hooks-e.json` 為空陣列（Jim James《Eternally Even》、Flaming Lips《American Head》上線前移出，初稿兩張已刪、骨架不留）。預算公式照 1793-B：`Array.from(hook)+Array.from(note) − 主故事： − 所有 → − 正文只寫上列各項。 − 這條骨架全批只走本張。`（「第二句以…領句。」計入）。
+- **15012** 逐筆預算／hook 加權（原始字元）：Old Growth 166/170（thin）·23（23）；Jalamanta 214·24（27）；She Said 229·26（26）；Mirador 228·26（26）；Gentle Spirit 207·23.5（26）；Dark Horse 223·21；Until in Excess 223·17；Coliseum 220·21；Thunderstorm Warnings 228·19；Acadie 212·24（28）；Hot Shots II 205·25；Long Lost 226·23（30）。初稿 10 張超標，整格捨去：Jalamanta 的 Tony Mason 與最長曲、She Said 的整團現場錄基本軌、Mirador 的錄音師名與〈Behind〉完成時點、Gentle Spirit 的〈Desert Raven〉比較與 Raymonde、Dark Horse 的團名來源／Lizée／Jagjaguwar 首張、Until 的 Laing／White 與 Mellotron、Acadie 的 Eno 合寫與 U2 兩人名、Hot Shots 的 Steve Mason 引言、Long Lost 的 Leisz／Arvinder。壓完回核：Thunderstorm（四面名）與 Long Lost（虛構主持人）的 hook 依賴格原在第三格，已前移到 g2；其餘依賴皆在 hook 本身或 g1／g2。
+- **15013** 骨架歸屬（12 張 12 條，各張 note 只寫自己的歸屬句）：Old Growth＝搬城市＋編制重組後轉向；Jalamanta＝前團鼓手租錄音室一人包辦樂器；She Said＝延宕多年自建類比錄音室；Mirador＝排練室即興整理成歌（廠牌面：自發行後被收編）；Gentle Spirit＝私下 CDR 流傳多年才正式發行；Dark Horse＝短波數字電台錄音當開場；Until in Excess＝專輯名取自機器翻譯樂評；Coliseum＝擴編反而收短；Thunderstorm＝擱置電影配樂改成四面死亡組曲；Acadie＝製作人走到台前／雙語；Hot Shots II＝實驗派收成極簡；Long Lost＝虛構電台主持人串場。Elektrohasch 兩張分面：She Said 寫「Koglek 自己的廠牌」、Mirador 寫「被收編」。
+- **15014** hook 四型：懸疑（Gentle Spirit、Long Lost、Dark Horse）／斷言（Until、Coliseum、Old Growth）／場景（Mirador、She Said、Thunderstorm）／人物定調（Jalamanta、Acadie、Hot Shots II）。開頭前四字 12 張互異。
+- **15015** Besnard Lakes 四張分軸與「他們」引入法：Dark Horse＝起源（夫妻、2003 蒙特婁）＋自製錄音室，第二句「由夫妻」句型；Until＝專輯名由來＋聲音（快拍只一首），第二句「在巴黎」領句；Coliseum＝新團員／六人＋超自然題材，第二句編制數字領句；Thunderstorm＝廠牌分手＋四面組曲，第二句廠牌分手領句。Breakglass 只給 Dark Horse、Polaris 只給 Dark Horse；Coliseum 不帶錄音室。身分詞四張錯開：加拿大樂團（Dark Horse、Thunderstorm 分配不同句型）／蒙特婁樂團／蒙特婁迷幻搖滾樂團。
+- **15016** 第二句句型配表（12 種）：年份領句（Old Growth）／錄音地點（Jalamanta）／團名接「是」（She Said）／團員分工（Mirador）／人名接「在」（Gentle Spirit）／由夫妻（Dark Horse）／在巴黎（Until）／編制數字（Coliseum）／廠牌分手（Thunderstorm）／專輯名字義（Acadie）／合作製作人（Hot Shots II）／主腦人名（Long Lost）。開頭兩句交代哪裡人、什麼樂種：hook 只帶身分不帶樂種的（She Said、Mirador、Hot Shots、Coliseum）在 g1 補樂種。
+- **15017** 「日」後一字：Old Growth 日由、Gentle Spirit 日先、Dark Horse 日發、Coliseum 日出、Long Lost 日推；其餘七張只寫到年或月（Jalamanta 照研究 14961 不寫到日）。
+- **15018** 媒體名與媒體榜名次全數不進 note（樂評引語一律寫「樂評形容」不具名；Billboard 為銷售榜、Polaris 為獎項，保留）。chk-hook-crossgroup 初跑把「6.2 分鐘」「17.9 分鐘」誤判為分數，改寫成「都比前兩張短」「全盤最長的一首」後通過。
+- **15019** 卡單與研究稿不一致（提請主線）：Dead Meadow《Old Growth》卡單 label 為 Xemu，研究稿 MB／維基皆為 Matador（olé 750 2），note 照研究稿寫 Matador；卡單 label 欄請主線核。
+- **15020** 自查：hook 之間中文 4-gram 0 條；hook 與 note 無逐字重複句；`node qa-batch.mjs hooks add-20261023-ml13` 全部通過；`node chk-hook-crossgroup.mjs add-20261023-ml13` 全部通過（hook 加權 17–26、note 169–237）。
+- 廠牌再改：Dead Meadow《Old Growth》Xemu→Matador（MB／維基，olé 750 2）。
+
+## 寫作層（writer-1，15021–15030）
+- **15021** 交件：`desc-tools/batches/output/add-20261023-ml13-out-1.json` 12 張（full 11：199–240；thin 1：Old Growth 178）。`qa-batch out`、`qa-check-research`、`fix-spacing` 皆 0 處；「據／也就是／不是／並非／沒有」grep 0。初稿兩張超標，整格捨去：Mirador 248（砍人聲疊錄子句）、Long Lost 242（縮串場子句）；Old Growth 初稿 180 貼上限，刪一個重複的「專輯」。
+- **15022** 第二句領句全照 15016 配表；「日」後一字照 15017（Old Growth 日由、Gentle Spirit 日先、Dark Horse 日發、Coliseum 日出、Long Lost 日推），日期前一字逐張不同（於／約／片／輯／秒）。Jalamanta 不寫到日。
+- **15023** 自掃 han() 4-gram：跨張 3 次以上 0 條；2 次的只剩「首張個人專輯」「迷幻搖滾樂團」「加拿大樂團」「第二／第四張專輯」「自己製作」這類身分詞。途中拆掉「專輯年月日」×2（Long Lost 日期句改以日期領句、前一字為「秒」）。
+- **15024** 媒體名、媒體榜名次照 15018 全數不寫；樂評評語只用 note 指定的兩處，皆不具名（Jalamanta「沙漠最平靜、最寬闊」、Gentle Spirit「七〇年代 Laurel Canyon 的味道」）。Polaris（獎項）、Billboard 民謠專輯榜（銷售榜）照 note 保留。
+- **15025** 不複述 hook 的處理：Jalamanta 的「包辦所有樂器」只在 hook 出現、正文改寫〈Toot〉的外援；Coliseum 第二句以「兩位新團員」具名擴編對象；Long Lost 第二句具名主腦 Schneider，主持人改稱「這位老式電台主持人」；Dark Horse 不再重寫數字電台。
+- **15026** Old Growth 廠牌照派工與 15019 寫 Matador。
+
+## 主線審稿（15031–15040；2026-10-23）
+- 15031：逐張審 12 張，逐句對回研究稿；事實層未改。
+- 15032：改 5 處：
+  - `desc2:Brant Bjork|Jalamanta`：刪「樂評形容這是沙漠最平靜、最寬闊的樣子。」（單源評價句）→ 187 字。
+  - `desc2:Jonathan Wilson|Gentle Spirit`：刪「樂評從中聽出七〇年代 Laurel Canyon 的味道。」（單源評價）；「2011 年 8 月 8 日先在英國與歐洲發行」→「專輯在 2011 年 8 月 8 日先於英國與歐洲發行」補回字數 → 183 字。
+  - `desc2:Lord Huron|Long Lost`：「2021 年 5 月 21 日推出後，專輯登上 Billboard 美國民謠專輯榜第 1 名。」→「專輯在 2021 年 5 月 21 日推出。」（媒體榜單名次不進正文）→ 215 字。
+  - `desc2:The Besnard Lakes|…Thunderstorm Warnings`：「迷幻與鞋凝交織」→「迷幻與瞪鞋交織」（shoegaze 台灣通行譯名）→ 233 字。
+- qa-batch out、qa-check-research、fix-spacing 重跑全過。
+
+## 上線與評分（2026-10-23，主線）（條號 15034–15036）
+- **15034**：上線 12 張：card_catalog 12／12、KV 12 鍵回讀逐字一致、試聽 11 ready／1 unavailable（Sungrazer：Apple 只有同名他人）、seed +12、published gate 0 error。封面 CAA 12，目視全符。上線前對 origin 65 個分支 seed 去重 0 撞（curation 層撞 ml24 兩張已讓出）。
+- **15035**：類型樹 12／12 落位（`genre-l3-artist-map.json` 補 Lord Huron《Long Lost》→ rock/indie-alt/neo-psych、Daniel Lanois《Acadie》→ rock/dream-post/dream-pop）；抽卡封面重建。
+- **15036**：**落格率 11/12＝92%**（`batch-progress/mood-axes/score-ml13/`，體感標準）。出格 1：Besnard Lakes《Until in Excess, Imperceptible UFO》z −0.2 落頹靡（合成器較陰暗、疏離）。stoner／desert 三張（Dead Meadow、Brant Bjork、Sungrazer）與 Colour Haze 評 x 2.7–2.9、z 0.1–0.6，都貼邊落恍惚——**長 jam 旋律不明會把色溫拉向 0**，這型不宜再擴。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Dead Meadow、Brant Bjork、Colour Haze、Sungrazer、Jonathan Wilson、The Besnard Lakes、Daniel Lanois、The Beta Band、Lord Huron（9 位）。

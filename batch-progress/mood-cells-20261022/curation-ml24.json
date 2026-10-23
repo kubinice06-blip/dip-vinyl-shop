@@ -1,0 +1,723 @@
+{
+ "group": "ml24",
+ "factions": [
+  {
+   "id": "wetpsychfolk",
+   "zh": "暖濕迷幻民謠／宇宙美式",
+   "why": "Mercury Rev、Flaming Lips 慢盤、Jim James、Kurt Vile 一路：殘響厚、弦樂與合成器墊包住、旋律清楚、溫熱",
+   "count": 13
+  },
+  {
+   "id": "warmslowcore",
+   "zh": "暖 slowcore／慢板夢幻歌謠",
+   "why": "慢、殘響霧、嗓音溫熱的慢歌盤；陰冷那半留給 md",
+   "count": 4
+  },
+  {
+   "id": "warmambient",
+   "zh": "暖 ambient 厚墊（旋律清楚）",
+   "why": "Ulrich Schnauss 一路：厚合成器墊＋殘響吉他、旋律明確、溫暖",
+   "count": 7
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Connan Mockasin",
+   "album": "Jassbusters",
+   "year": 2018,
+   "label": "Mexican Summer",
+   "country": "nz",
+   "faction": "wetpsychfolk",
+   "genres": [
+    "rock",
+    "soul"
+   ],
+   "why": "Mockasin 以虛構肥皂劇為題的慢板之作，chorus 吉他與軟綿綿的假音浸在暖霧裡；池中《Caramel》《Forever Dolphin Love》皆落恍惚，同型更慢更濕。",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "慢拍、濕 chorus 吉他、假音、軟糖般暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/95c9cbe8-4545-4650-906c-14b79ea480a7",
+    "https://coverartarchive.org/release-group/95c9cbe8-4545-4650-906c-14b79ea480a7/front"
+   ],
+   "mbRgMbid": "95c9cbe8-4545-4650-906c-14b79ea480a7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Connan Mockasin",
+   "album": "Jassbusters Two",
+   "year": 2021,
+   "label": "Mexican Summer",
+   "country": "nz",
+   "faction": "wetpsychfolk",
+   "genres": [
+    "rock",
+    "soul"
+   ],
+   "why": "《Jassbusters》續篇，同一組樂手的慵懶即席錄音，鬆垮的節拍與濕潤吉他延續前作的暖霧；聲音同型，落恍惚。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "更鬆更慢、濕吉他、暖假音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4ba10e25-21c1-42d0-8431-6fea512b5cfe",
+    "https://coverartarchive.org/release-group/4ba10e25-21c1-42d0-8431-6fea512b5cfe/front"
+   ],
+   "mbRgMbid": "4ba10e25-21c1-42d0-8431-6fea512b5cfe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "前作池中無；以同人《Caramel》x1.9 y1.0 z0.9 推估"
+  },
+  {
+   "artist": "Kurt Vile",
+   "album": "Bottle It In",
+   "year": 2018,
+   "label": "Matador",
+   "country": "us",
+   "faction": "wetpsychfolk",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "Kurt Vile 最長也最霧的一張，十分鐘長曲裡倒轉吉他、延遲與迷濛嗓音層層疊起；溫吞、懶散、厚，像《Wakin on a Pretty Daze》再往霧裡走。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "中慢、長曲、倒轉吉他與延遲層、懶暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2497ecd5-22e0-495b-a35c-cd3079c5b4ff",
+    "https://coverartarchive.org/release-group/2497ecd5-22e0-495b-a35c-cd3079c5b4ff/front"
+   ],
+   "mbRgMbid": "2497ecd5-22e0-495b-a35c-cd3079c5b4ff",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中《Wakin》y0.6——質地是風險，研究層請查有無厚層／延遲描述"
+  },
+  {
+   "artist": "Kurt Vile",
+   "album": "(watch my moves)",
+   "year": 2022,
+   "label": "Verve Forecast",
+   "country": "us",
+   "faction": "wetpsychfolk",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "自家地下室錄成的長篇，鋼琴、合成器墊與搖晃吉他混成一片溫吞的霧，慵懶到幾乎停住；暖而厚，落恍惚。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 0.7,
+    "why": "慢、合成器墊＋吉他霧、懶散暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/be9f0937-17e0-4c01-a095-91ca11825a52",
+    "https://coverartarchive.org/release-group/be9f0937-17e0-4c01-a095-91ca11825a52/front"
+   ],
+   "mbRgMbid": "be9f0937-17e0-4c01-a095-91ca11825a52",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上，y 是風險"
+  },
+  {
+   "artist": "Jim James",
+   "album": "Regions of Light and Sound of God",
+   "year": 2013,
+   "label": "ATO",
+   "country": "us",
+   "faction": "wetpsychfolk",
+   "genres": [
+    "rock",
+    "soul"
+   ],
+   "why": "My Morning Jacket 主唱首張個人盤，殘響厚到像在穀倉裡，弦樂、合成器與靈魂樂和聲包住溫熱嗓音；池中 MMJ《At Dawn》落恍惚，這張更慢更濕。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.8,
+    "why": "中慢、穀倉殘響、弦樂與合成墊、靈魂暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/724043b8-2fe3-4062-a820-39345fa9e5d5",
+    "https://coverartarchive.org/release-group/724043b8-2fe3-4062-a820-39345fa9e5d5/front"
+   ],
+   "mbRgMbid": "724043b8-2fe3-4062-a820-39345fa9e5d5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jim James",
+   "album": "Eternally Even",
+   "year": 2016,
+   "label": "ATO",
+   "country": "us",
+   "faction": "wetpsychfolk",
+   "genres": [
+    "rock",
+    "soul"
+   ],
+   "why": "第二張個人盤，慢板迷幻靈魂，低沉貝斯、霧狀合成器與迴響人聲緩緩漂浮；溫熱、厚、拍子懶，落恍惚。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": 0.6,
+    "why": "慢、厚低頻、霧合成器、迴響人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e8eedd72-4fc9-4327-bde8-a5053cacbeda",
+    "https://coverartarchive.org/release-group/e8eedd72-4fc9-4327-bde8-a5053cacbeda/front"
+   ],
+   "mbRgMbid": "e8eedd72-4fc9-4327-bde8-a5053cacbeda",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "政治題材歌詞，研究稿若出現陰鬱字眼要留意 z"
+  },
+  {
+   "artist": "Ray LaMontagne",
+   "album": "Ouroboros",
+   "year": 2016,
+   "label": "RCA",
+   "country": "us",
+   "faction": "wetpsychfolk",
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "why": "Jim James 製作的兩段式迷幻長篇，殘響吉他、管風琴與緩慢鼓點鋪成一整片暖霧，嗓音沙啞溫柔；比他早年的乾淨民謠厚得多。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": 0.5,
+    "why": "慢、殘響長篇、管風琴墊、沙啞暖嗓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3f6dcbee-176d-4993-ab24-8c40422e3352",
+    "https://coverartarchive.org/release-group/3f6dcbee-176d-4993-ab24-8c40422e3352/front"
+   ],
+   "mbRgMbid": "3f6dcbee-176d-4993-ab24-8c40422e3352",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中《Till the Sun Turns Black》z −0.2；色溫是風險"
+  },
+  {
+   "artist": "Matthew E. White",
+   "album": "Big Inner",
+   "year": 2012,
+   "label": "Spacebomb",
+   "country": "us",
+   "faction": "wetpsychfolk",
+   "genres": [
+    "soul",
+    "folk"
+   ],
+   "why": "Spacebomb 樂團一次錄成的慢板靈魂民謠，低語人聲被銅管、弦樂、福音合唱與厚貝斯團團包住；溫熱、緩慢、濃稠，落恍惚。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 1.1,
+    "why": "慢、低語、銅管弦樂福音墊、厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/37b4113b-22c2-4a6c-86ce-d3c077a1df2c",
+    "https://coverartarchive.org/release-group/37b4113b-22c2-4a6c-86ce-d3c077a1df2c/front"
+   ],
+   "mbRgMbid": "37b4113b-22c2-4a6c-86ce-d3c077a1df2c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能被評在 0.5–0.8"
+  },
+  {
+   "artist": "Dennis Wilson",
+   "album": "Pacific Ocean Blue",
+   "year": 1977,
+   "label": "Caribou",
+   "country": "us",
+   "faction": "warmslowcore",
+   "genres": [
+    "rock"
+   ],
+   "why": "Beach Boys 鼓手唯一個人盤，粗啞嗓音陷在層層合成器、弦樂與殘響裡，比母團厚重混濁；溫暖、憂傷、慢，落恍惚。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "中慢、厚混音、合成器弦樂殘響、沙啞暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9aa1dc17-d89c-3969-8453-defec8fe0361",
+    "https://coverartarchive.org/release-group/9aa1dc17-d89c-3969-8453-defec8fe0361/front"
+   ],
+   "mbRgMbid": "9aa1dc17-d89c-3969-8453-defec8fe0361",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Beach Boys 全判輕；y 是風險，研究層查混音厚度"
+  },
+  {
+   "artist": "The Flaming Lips",
+   "album": "American Head",
+   "year": 2020,
+   "label": "Warner",
+   "country": "us",
+   "faction": "wetpsychfolk",
+   "genres": [
+    "rock"
+   ],
+   "why": "Flaming Lips 回望奧克拉荷馬少年時期的慢盤，迷幻合成器墊、殘響鋼琴與溫柔假音，懷舊又溫暖；池中《The Soft Bulletin》《Yoshimi》皆落恍惚。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 0.9,
+    "why": "慢、合成器霧、殘響、懷舊溫柔"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d2dc5bf8-080c-4438-9bc2-d9407243b9da",
+    "https://coverartarchive.org/release-group/d2dc5bf8-080c-4438-9bc2-d9407243b9da/front"
+   ],
+   "mbRgMbid": "d2dc5bf8-080c-4438-9bc2-d9407243b9da",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Flaming Lips",
+   "album": "King’s Mouth: Music and Songs",
+   "year": 2019,
+   "label": "Warner",
+   "country": "us",
+   "faction": "wetpsychfolk",
+   "genres": [
+    "rock"
+   ],
+   "why": "以童話旁白串起的迷幻組曲，厚合成器墊、迴響合唱與緩慢旋律交織，像一場溫柔的夢；聲音同《The Soft Bulletin》的暖霧，落恍惚。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.7,
+    "why": "中慢、厚合成器、迴響合唱、童話暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9a8bab2e-40ae-45ec-a011-d5d4ee44eeda",
+    "https://coverartarchive.org/release-group/9a8bab2e-40ae-45ec-a011-d5d4ee44eeda/front"
+   ],
+   "mbRgMbid": "9a8bab2e-40ae-45ec-a011-d5d4ee44eeda",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有旁白段落；MB 正名含 Music and Songs"
+  },
+  {
+   "artist": "Mercury Rev",
+   "album": "Bobbie Gentry’s the Delta Sweete Revisited",
+   "year": 2019,
+   "label": "Bella Union",
+   "country": "us",
+   "faction": "wetpsychfolk",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "Mercury Rev 重新想像 Bobbie Gentry 1968 年的南方概念專輯，由多位女聲演唱，弦樂與合成器霧把鄉村歌謠泡成慢板夢境；池中《Deserter's Songs》落恍惚。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": 0.6,
+    "why": "慢、弦樂與合成霧、女聲、南方暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a42d97c3-1923-40f3-83cc-07ffa91b5a78",
+    "https://coverartarchive.org/release-group/a42d97c3-1923-40f3-83cc-07ffa91b5a78/front"
+   ],
+   "mbRgMbid": "a42d97c3-1923-40f3-83cc-07ffa91b5a78",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "翻唱整張專輯（正規錄音室專輯）"
+  },
+  {
+   "artist": "Spiritualized",
+   "album": "Everything Was Beautiful",
+   "year": 2022,
+   "label": "Bella Union",
+   "country": "gb",
+   "faction": "wetpsychfolk",
+   "genres": [
+    "rock"
+   ],
+   "why": "Jason Pierce 以福音合唱、弦樂與層層吉他堆成的溫熱長篇，《And Nothing Hurt》的姊妹作；池中同期兩張皆 z +0.8 落恍惚。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.3,
+    "z": 0.8,
+    "why": "中慢、福音合唱弦樂、厚吉他層、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a80a3d7b-be5f-482f-b8ce-7c74bf4690da",
+    "https://coverartarchive.org/release-group/a80a3d7b-be5f-482f-b8ce-7c74bf4690da/front"
+   ],
+   "mbRgMbid": "a80a3d7b-be5f-482f-b8ce-7c74bf4690da",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有兩三首推進的搖滾段，x 貼 2.6"
+  },
+  {
+   "artist": "Ulrich Schnauss",
+   "album": "A Long Way to Fall",
+   "year": 2013,
+   "label": "Scripted Realities",
+   "country": "de",
+   "faction": "warmambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Schnauss 第四張，厚合成器墊、殘響吉他與明亮旋律層層堆疊，溫暖如晨光；池中三張皆落恍惚。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "中慢、厚合成墊、殘響、旋律明亮暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5336665c-0bf6-4be0-ab70-00ac1febcc36",
+    "https://coverartarchive.org/release-group/5336665c-0bf6-4be0-ab70-00ac1febcc36/front"
+   ],
+   "mbRgMbid": "5336665c-0bf6-4be0-ab70-00ac1febcc36",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ulrich Schnauss",
+   "album": "No Further Ahead Than Today",
+   "year": 2016,
+   "label": "Scripted Realities",
+   "country": "de",
+   "faction": "warmambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "第五張，回到《A Strangely Isolated Place》式的電子 shoegaze 厚墊，旋律清楚、溫暖漂浮；池中同人全落恍惚。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "中慢、厚合成墊、殘響霧、旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0d617bde-d623-4f8e-a7a7-4e1068225490",
+    "https://coverartarchive.org/release-group/0d617bde-d623-4f8e-a7a7-4e1068225490/front"
+   ],
+   "mbRgMbid": "0d617bde-d623-4f8e-a7a7-4e1068225490",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有些曲目鼓機較明顯，x 貼 2.6"
+  },
+  {
+   "artist": "Peaking Lights",
+   "album": "The Fifth State of Consciousness",
+   "year": 2017,
+   "label": "Two Flowers Records",
+   "country": "us",
+   "faction": "wetpsychfolk",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "夫妻檔的迷幻 dub-pop，磁帶飽和、厚低頻與迴聲人聲慢慢旋轉；池中《936》《Lucifer》《Imaginary Falcons》全落恍惚。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": 0.7,
+    "why": "慢、dub 低頻、磁帶糊、迴聲人聲暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/23b74137-f1d9-4ebd-8c2c-4ead70132e52",
+    "https://coverartarchive.org/release-group/23b74137-f1d9-4ebd-8c2c-4ead70132e52/front"
+   ],
+   "mbRgMbid": "23b74137-f1d9-4ebd-8c2c-4ead70132e52",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "場景偏 dub-psych 而非 dream folk"
+  },
+  {
+   "artist": "Ulrich Schnauss & Mark Peters",
+   "album": "Tomorrow Is Another Day",
+   "year": 2013,
+   "label": "Bureau B",
+   "country": "de",
+   "faction": "warmambient",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Schnauss 與 Engineers 吉他手 Mark Peters 的合作，殘響吉他與厚合成器墊緩緩展開，旋律溫柔清楚；比 Schnauss 個人盤更慢更空靈。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "慢、無強鼓、殘響吉他＋合成墊、溫柔"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e522cc0b-f2eb-4125-82f0-275b987f7a33",
+    "https://coverartarchive.org/release-group/e522cc0b-f2eb-4125-82f0-275b987f7a33/front"
+   ],
+   "mbRgMbid": "e522cc0b-f2eb-4125-82f0-275b987f7a33",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ambient 段落多；z 可能往 0 收"
+  },
+  {
+   "artist": "Acetone",
+   "album": "York Blvd.",
+   "year": 2000,
+   "label": "Vapor Records",
+   "country": "us",
+   "faction": "warmslowcore",
+   "genres": [
+    "rock"
+   ],
+   "why": "洛杉磯 slowcore 樂團最後一張，慢到幾乎靜止的鄉村迷幻，殘響吉他與管風琴糊成一片溫熱的霧；不像 Codeine 那樣陰冷。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.8,
+    "z": 0.4,
+    "why": "極慢、殘響吉他管風琴、霧、慵懶"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f9f3451b-4577-362f-a535-507804a51b51",
+    "https://coverartarchive.org/release-group/f9f3451b-4577-362f-a535-507804a51b51/front"
+   ],
+   "mbRgMbid": "f9f3451b-4577-362f-a535-507804a51b51",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼邊；池中無同人"
+  },
+  {
+   "artist": "Mojave 3",
+   "album": "Ask Me Tomorrow",
+   "year": 1995,
+   "label": "4AD",
+   "country": "gb",
+   "faction": "warmslowcore",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "Slowdive 解散後 Halstead 與 Goswell 的首作，把 shoegaze 的殘響帶進慢板鄉村民謠，滑音吉他與柔聲浸在霧裡；溫柔、緩慢、包覆，落恍惚。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "極慢、殘響吉他與滑音、柔聲、溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/225de0e3-30af-3698-9a8f-e393a6abd0bf",
+    "https://coverartarchive.org/release-group/225de0e3-30af-3698-9a8f-e393a6abd0bf/front"
+   ],
+   "mbRgMbid": "225de0e3-30af-3698-9a8f-e393a6abd0bf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ml2 曾提、主線以「英式偏中性」汰；店主第二輪點名重提，z 仍是風險"
+  },
+  {
+   "artist": "Hammock",
+   "album": "Oblivion Hymns",
+   "year": 2013,
+   "label": "Hammock Music",
+   "country": "us",
+   "faction": "warmambient",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Hammock 加入兒童合唱、弦樂與管樂的聖詠式作品，殘響吉他牆緩緩升起，旋律清楚、溫柔明亮；ambient 厚墊而非空氣感極簡。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1,
+    "z": 0.5,
+    "why": "無強鼓、殘響吉他牆、合唱弦樂、溫柔"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/53722514-f9b0-4d04-97f2-290442b499bf",
+    "https://coverartarchive.org/release-group/53722514-f9b0-4d04-97f2-290442b499bf/front"
+   ],
+   "mbRgMbid": "53722514-f9b0-4d04-97f2-290442b499bf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Hammock 尚無卡；ml2《Kenotic》、ml11 曾被主線以 z 中性汰"
+  },
+  {
+   "artist": "Hammock",
+   "album": "Everything and Nothing",
+   "year": 2016,
+   "label": "Hammock Music",
+   "country": "us",
+   "faction": "warmambient",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Hammock 回到有人聲與鼓的 dream pop 形式，厚重殘響吉他與合成器墊包住輕柔歌聲，旋律清楚、溫暖上揚；落恍惚。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "中慢、殘響吉他牆、合成墊、輕柔人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/31b1be7e-8a5f-4966-a3ab-3dff8521de67",
+    "https://coverartarchive.org/release-group/31b1be7e-8a5f-4966-a3ab-3dff8521de67/front"
+   ],
+   "mbRgMbid": "31b1be7e-8a5f-4966-a3ab-3dff8521de67",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 同上風險"
+  },
+  {
+   "artist": "Casino Versus Japan",
+   "album": "Go Hawaii",
+   "year": 2000,
+   "label": "Wobblyhead",
+   "country": "us",
+   "faction": "warmambient",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Erik Kowalski 的類比 IDM／ambient，溫熱合成器墊、磁帶飽和與簡單旋律，像褪色的夏日錄影帶；池中《Whole Numbers Play the Basics》落恍惚。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 0.5,
+    "why": "慢拍、類比合成墊、磁帶糊、懷舊暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dbf122bf-7808-387a-b812-2b03848f7874",
+    "https://coverartarchive.org/release-group/dbf122bf-7808-387a-b812-2b03848f7874/front"
+   ],
+   "mbRgMbid": "dbf122bf-7808-387a-b812-2b03848f7874",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人 y0.8 z0.4，y、z 都貼"
+  },
+  {
+   "artist": "Pure X",
+   "album": "Angel",
+   "year": 2014,
+   "label": "Fat Possum Records",
+   "country": "us",
+   "faction": "warmslowcore",
+   "genres": [
+    "rock"
+   ],
+   "why": "Pure X 第三張，把前作的迷幻霧放慢成鄉村靈魂式情歌，濕潤殘響吉他與假音緩緩搖曳，比《Pleasure》更溫熱。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.8,
+    "z": 0.5,
+    "why": "慢、濕殘響吉他、假音、情歌暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/677887d1-e429-4b87-b2d0-62335299dd87",
+    "https://coverartarchive.org/release-group/677887d1-e429-4b87-b2d0-62335299dd87/front"
+   ],
+   "mbRgMbid": "677887d1-e429-4b87-b2d0-62335299dd87",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中《Pleasure》y1.4 z0.2；這張製作較清、z 估較暖，兩軸都是風險"
+  },
+  {
+   "artist": "Manual",
+   "album": "Bajamar",
+   "year": 2006,
+   "label": "Darla Records",
+   "country": "dk",
+   "faction": "warmambient",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Jonas Munk 的 Manual 以熱帶海岸為題，厚合成器墊與殘響吉他鋪成溫暖的光暈，旋律清楚；池中《Azure Vista》落恍惚。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "慢、厚合成墊、殘響吉他、明亮溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/aa77524d-5628-3b60-a363-74ddc54e8e4b",
+    "https://coverartarchive.org/release-group/aa77524d-5628-3b60-a363-74ddc54e8e4b/front"
+   ],
+   "mbRgMbid": "aa77524d-5628-3b60-a363-74ddc54e8e4b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中《Azure Vista》z0.4，z 是風險"
+  }
+ ],
+ "notes": [
+  "場景見底：目標 54，只提 18（不湊數）。dream folk／slowcore 的暖霧主盤 ml2 已收（Mazzy Star、Hope Sandoval、Mercury Rev、Spiritualized、Brightblack、Kurt Vile《Wakin》、MMJ《At Dawn》），ml11 收了 chillwave／bedroom 那半。",
+  "池中同人三軸擋掉的：原聲／美式民謠全判輕（Iron & Wine 全部、Fleet Foxes、Gene Clark《No Other》y0.2、Judee Sill、Emmylou 70s、M. Ward、Ray LaMontagne 早期、Sufjan 全部、Beck《Sea Change》、Jessica Pratt 三張全 y≤0）；暖 slowcore 色溫多中性偏冷（Galaxie 500 z0–0.1、Red House Painters、Low、Bedhead、Codeine、Sun Kil Moon、Damien Jurado z0–0.2、Phosphorescent《Pride》z0、Grizzly Bear 全冷、Antlers《Familiars》z−0.3、Tarnation z−0.4）。",
+  "ml30 擴寫幾乎沒池子：池中 new age／旋律 ambient 全判輕（Enya 五張 y−0.5～−0.8、Clannad、Suzanne Ciani、Vangelis、Mike Oldfield、Constance Demby、Harold Budd、Eno、Múm、The Album Leaf、Helios、Eluvium、Global Communication《76:14》），只剩 Ulrich Schnauss 一路的電子 shoegaze 厚墊能過 y。",
+  "留下的 18 張以「池中同人或同型已落恍惚」為主：Flaming Lips 慢盤、Mercury Rev、Spiritualized 後期、Connan Mockasin、Peaking Lights、Ulrich Schnauss；Jim James 以池中 MMJ《At Dawn》為據。",
+  "風險：Kurt Vile 兩張（池中《Wakin》y0.6）、Dennis Wilson（池中 Beach Boys 全判輕）、Matthew E. White 的 y；Ray LaMontagne《Ouroboros》與 Acetone 的 z；Spiritualized、Schnauss《No Further》的 x 貼 2.6。研究層請優先查這幾張。",
+  "18 張 MB 全釘住、CAA release-group 皆有封面（307 轉址）；WebSearch 用 1 次。",
+  "第二輪（主線點名方向）追加 6 張：Mojave 3、Hammock 兩張、Casino Versus Japan、Pure X《Angel》、Manual《Bajamar》，全 MB 釘住、CAA 有圖；六張的 z 估都只有 0.5，是主要風險。",
+  "第二輪查過不收：Weyes Blood 其他盤（池中判輕或冷）、Hope Sandoval（z0.1–0.2）、Widowspeak（z0.2）、Papercuts（z0.2–0.3）、Grandaddy（z0.2）、Midlake（y−0.3）、Kevin Morby（y−0.2）、War on Drugs（x≥3.0）、Christ.（y0.2）、Bibio（剩下的多是原聲吉他或乾淨製作）、Helios（y−0.6）、Tycho 其他盤（x≥3.3）、Engineers（z0.4 已汰）；Still Corners、Low Roar 偏冷，Cass McCombs、Fruit Bats、Hand Habits、Jonathan Wilson 偏乾淨、會判輕。"
+ ]
+}

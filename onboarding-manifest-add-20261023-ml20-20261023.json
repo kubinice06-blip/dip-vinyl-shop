@@ -1,0 +1,1236 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-ml20",
+ "batchNote": "薄細項策展線（add-20261023-ml20）",
+ "createdAt": "2026-10-23T08:21:58Z",
+ "albums": [
+  {
+   "artist": "LINION",
+   "album": "Leisurely",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"LINION\"（MB 只有 HIDEOUT 一張 release-group）",
+      "artist:\"LINION\" AND releasegroup:\"Leisurely\"（0 筆）"
+     ],
+     "checkedAt": "2026-10-23",
+     "conclusion": "MB 查無；Discogs 31147562（CD Album，2020-09-22，嘿豹工作室，11 首）；Hypebeast 稱 HIDEOUT 為個人第 3 張專輯，前兩張即本張與另一張"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/31147562-LINION-Leisurely",
+     "https://hypebeast.com/zh/2023/7/linion-the-album-hideout-info",
+     "https://www.thenewslens.com/article/192567"
+    ],
+    "manualRuling": "雲端主線 2026-10-23 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261023-ml20）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "華語 R&B／neo-soul（台港）：第 12 屆金音獎最佳節奏藍調專輯，華語 neo-soul 的標竿；慵懶拍子、溫熱低頻與和聲墊，典型恍惚｜⚠ 聲音憑曲風與獎項推估，無逐曲試聽｜MB 查無（MB 查無；Discogs 31147562（CD Album，2020-09-22，嘿豹工作室，11 首）；Hypebeast 稱 HIDEOUT 為個人第 3 張專輯，前兩張即本張與另一張），走 §1 人工身分。證據：https://www.discogs.com/release/31147562-LINION-Leisurely https://hypebeast.com/zh/2023/7/linion-the-album-hideout-info https://www.thenewslens.com/article/192567 https://www.discogs.com/release/31147562-LINION-Leisurely https://i.discogs.com/OQqVXtPgHZp4YCKCEGQEWgBMywHtXD7gK95t83-zS2Y/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxMTQ3/NTYyLTE3MjAyNDgy/NjAtNTQ0NC5qcGVn.jpeg https://hypebeast.com/zh/2023/7/linion-the-album-hideout-info",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "31147562",
+    "url": "https://i.discogs.com/OQqVXtPgHZp4YCKCEGQEWgBMywHtXD7gK95t83-zS2Y/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxMTQ3/NTYyLTE3MjAyNDgy/NjAtNTQ0NC5qcGVn.jpeg",
+    "note": "MB 查無（§1 人工身分），取 Discogs 31147562（CD，嘿豹工作室 2020）封面；主線 2026-10-23 目視：倒影人像、LINION 與 Leisurely 手寫字樣，相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 3463,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 3463）；主線：台灣藝人、Last.fm 偏英語圈失真（3,463）：獨立廠正規發行、金音獎入圍，給 3"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "標題叫悠閒，這批歌處理的卻是都市人的社群焦慮。彈貝斯出身的 LINION 唱 R&B 與 neo soul，也替 9m88 擔任貝斯手。這批歌 2020 年 9 月 22 日出了 CD，〈Cocoon〉〈Day Off〉〈Mountain Dude〉三首分別請來鄭敬儒、陳嫺靜與雷擎客座。後來它拿下第 12 屆金音創作獎最佳節奏藍調專輯。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/31147562-LINION-Leisurely",
+     "https://zh.wikipedia.org/wiki/LINION",
+     "https://www.marieclaire.com.tw/entertainment/music/73716",
+     "https://hypebeast.com/zh/2023/7/linion-the-album-hideout-info",
+     "https://www.thenewslens.com/article/192567"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "note": "Apple tw／us 藝人目錄查無本張（只有單曲與《HIDEOUT》），不硬配"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "LINION",
+   "album": "HIDEOUT",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4dc43127-76e4-45b4-a850-670e4ba9372c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "華語 R&B／neo-soul（台港）：LINION 第三張專輯，延續慢板 neo-soul 的溫熱厚墊，台灣華語 R&B 近年代表｜⚠ 聲音憑前作推估｜MB release-group 4dc43127-76e4-45b4-a850-670e4ba9372c：title「HIDEOUT」、Album、first-release-date 2023-07-19、artist-credit「LINION」。證據：https://musicbrainz.org/release-group/4dc43127-76e4-45b4-a850-670e4ba9372c https://coverartarchive.org/release/b50abe27-bb1c-44cc-ba2a-903c8c3fbb9d/43850236528.jpg https://music.apple.com/tw/album/hideout/1696912216?uo=4 https://hypebeast.com/zh/2023/7/linion-the-album-hideout-info",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4dc43127-76e4-45b4-a850-670e4ba9372c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 1297,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1297）；主線：台灣藝人、Last.fm 失真（1,297）：正規發行、金音獎入圍，給 3"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "自稱超愛哭的柔情男子，把開朗外表下的陰柔面攤開。台灣 R&B 歌手 LINION 的第三張專輯，製作人欄寫鍾濰宇，兩人是第二次合作。他想與自己的不完美和解，也說自己很容易被感動。首作的成功讓他寫新歌時壓力不小，這張因此做得更謹慎，前後花了三年。成品 2023 年 7 月 19 日數位推出，8 首、30 分鐘上下，〈HIDE〉約 4 分半最長。聲音是 R&B 摻進民謠，主軸是敞開心房的自傳式獨白，要搭一處聽覺上的藏身處，讓聽者的情緒有地方安放。",
+    "sourceUrls": [
+     "https://music.apple.com/gb/album/1696912216",
+     "https://musicbrainz.org/release-group/4dc43127-76e4-45b4-a850-670e4ba9372c",
+     "https://zh.wikipedia.org/wiki/LINION",
+     "https://www.marieclaire.com.tw/entertainment/music/73716"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c9/0b/cc/c90bcc2a-30c1-69e2-7da1-ff031cac0083/mzaf_1764370598125039794.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "appleCollectionId": "1696912216",
+    "storefront": "TW",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple tw 1696912216「LINION《HIDEOUT》」：曲目 7/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Listen to Me〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "方大同",
+   "album": "橙月",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d2809a5e-7f44-43ca-815a-2b0fa4d0dbdf",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "華語 R&B／neo-soul（台港）：方大同轉向成熟慢板靈魂的一張，Rhodes、弦樂墊與假音，華語 R&B 少見的暖慢厚｜⚠ 池中同期華語 R&B（陶喆、林俊傑）多判輕 y −0.4；本張若混音乾淨會掉放鬆，貼邊風險高｜MB release-group d2809a5e-7f44-43ca-815a-2b0fa4d0dbdf：title「橙月」、Album、first-release-date 2008-12-19、artist-credit「方大同」。證據：https://musicbrainz.org/release-group/d2809a5e-7f44-43ca-815a-2b0fa4d0dbdf https://coverartarchive.org/release/c83c01d8-fa63-4143-93fc-f42e1276d824/13940534018.jpg https://music.apple.com/tw/album/%E6%A9%99%E6%9C%88/313404785?uo=4",
+    "queryAlias": "Khalil Fong"
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d2809a5e-7f44-43ca-815a-2b0fa4d0dbdf/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 11538,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 11538）；主線：非拉丁掛名照 §0.8 錨點制：華納大廠正規發行、華語主流流通，給 2"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "專輯尾端藏著一段英文小樣，原是寫給陳奕迅的歌。方大同是華語 R&B 唱作人，也自己掛製作。那段小樣叫〈Orange Moon〉，接在 11 首正式曲目之後。2008 年 12 月 19 日在香港由華納發行，是他第四張錄音室專輯。盤名取日落的浪漫意象，他說這張比前作好入口；曲風是國語流行加 R&B，主題浪漫溫暖。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/%E6%A9%99%E6%9C%88",
+     "https://musicbrainz.org/release-group/d2809a5e-7f44-43ca-815a-2b0fa4d0dbdf",
+     "https://zh.wikipedia.org/wiki/%E6%96%B9%E5%A4%A7%E5%90%8C",
+     "https://en.wikipedia.org/wiki/Khalil_Fong",
+     "https://music.douban.com/review/4930422"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8d/61/f5/8d61f515-db2a-2573-f904-7bc8dd710c7e/mzaf_7826390137845224551.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "appleCollectionId": "313404785",
+    "storefront": "HK",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple hk 313404785「方大同《橙月》」：曲目 11/11 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Singalongsong〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "OFFONOFF",
+   "album": "boy.",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d6401b34-b35d-4ce6-80c1-c13a8e33ea7c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "韓國 R&B／indie 恍惚（ml21）：韓國 alt R&B 雙人組唯一正規專輯，霧化合成器墊與慢拍，SCENES 點名代表｜⚠ 色溫可能貼 0.3–0.5（夜感）｜MB release-group d6401b34-b35d-4ce6-80c1-c13a8e33ea7c：title「boy.」、Album、first-release-date 2017-07-24、artist-credit「OFFONOFF」。證據：https://musicbrainz.org/release-group/d6401b34-b35d-4ce6-80c1-c13a8e33ea7c https://coverartarchive.org/release/a838485d-a014-4711-aa19-eece82c1e484/17344483982.jpg https://music.apple.com/tw/album/boy/1344721585?uo=4",
+    "queryAlias": "오프온오프"
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d6401b34-b35d-4ce6-80c1-c13a8e33ea7c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 219130,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 219130）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "首爾雙人組 OFFONOFF，留下的完整專輯就這一張。Colde 唱，0Channel 做音樂。出道單曲是 2016 年的〈Bath〉。《boy.》2017 年 7 月 24 日登場，12 首 46 分鐘，由 HIGHGRND 發行。路數是氛圍 R&B 摻電子，人聲煙嗓低吟；〈Cigarette〉邀來 Tablo 與 MISO，收尾兩首拉到 5、6 分鐘。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Offonoff",
+     "https://music.apple.com/us/album/1344721585",
+     "https://musicbrainz.org/release-group/d6401b34-b35d-4ce6-80c1-c13a8e33ea7c",
+     "https://ko.wikipedia.org/wiki/%EC%98%A4%ED%94%84%EC%98%A8%EC%98%A4%ED%94%84",
+     "https://en.wikipedia.org/wiki/Colde"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fc/2d/f8/fc2df8a5-1b0b-3deb-b9ab-0cb618fcc520/mzaf_4800931520932105666.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "appleCollectionId": "1344721585",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1344721585「offonoff《Boy.》」：曲目 11/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈In the Car〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hoody",
+   "album": "Departure",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f522d173-754e-498a-b333-85606af8f411",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "韓國 R&B／indie 恍惚（ml21）：Hoody（후디）首張正規專輯，爵士和弦與軟糊 R&B，慢而暖｜⚠ y 可能判 0.4–0.6（混音乾淨）｜MB release-group f522d173-754e-498a-b333-85606af8f411：title「Departure」、Album、first-release-date 2019-10-29、artist-credit「Hoody」。證據：https://musicbrainz.org/release-group/f522d173-754e-498a-b333-85606af8f411 https://coverartarchive.org/release/c5e35e27-4c66-433c-8148-0c2e76a3db83/36779615090.jpg https://music.apple.com/tw/album/departure/1658965660?uo=4",
+    "queryAlias": "후디"
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f522d173-754e-498a-b333-85606af8f411/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 91393,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 91393）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "從地下女子嘻哈團走出來，她成了 AOMG 第一位女藝人。AOMG 旗下的韓國 R&B 女歌手 Hoody，2013 年以全女性地下嘻哈團 Amourette 成員出道，2015 年簽進這家嘻哈廠牌。2019 年 10 月 29 日交出第一張全長專輯，中間夾一段 64 秒的過場。她嗓音柔軟，以當代 R&B 為底，多數歌自己寫；〈Adios〉邀來 Gray。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Hoody_(singer)",
+     "https://music.apple.com/us/album/1658965660",
+     "https://musicbrainz.org/release-group/f522d173-754e-498a-b333-85606af8f411",
+     "https://thekmeal.com/rb-gem-hoody/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/36/ea/12/36ea12b6-1fbb-e58b-e943-9f7ed87d616f/mzaf_6383629987440386313.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "appleCollectionId": "1658965660",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1658965660「Hoody《Departure》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Perfect Timing〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "죠지",
+   "album": "FRR",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "672522f0-5df3-4443-a0d2-6e637a7e1c6e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "韓國 R&B／indie 恍惚（ml21）：죠지首張正規，lo-fi 磁帶感的暖 indie R&B｜⚠ 聲音憑歌手路線推估；可能偏乾淨流行判輕｜MB release-group 672522f0-5df3-4443-a0d2-6e637a7e1c6e：title「FRR」、Album、first-release-date 2023-04-06、artist-credit「george」。證據：https://musicbrainz.org/release-group/672522f0-5df3-4443-a0d2-6e637a7e1c6e https://music.apple.com/tw/album/frr/1680885681",
+    "queryAlias": "george"
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/672522f0-5df3-4443-a0d2-6e637a7e1c6e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 1035,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1035）；主線：非拉丁掛名照 §0.8：韓國 R&B 主流流通（戲劇 OST 常客），給 2"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "出道七年，죠지 才端出首張正規作。1993 年生於大邱的 죠지 唱 R&B，2016 年以〈아엠죠지〉出道，2018 年出了首張 EP《cassette》，隔年再有 EP《LEEEE》。到了 2023 年 4 月 6 日，《FRR》正式上市，發行方是 Craft and Jun，10 首共 35 分鐘。以 R&B 為底，聲響克制，歌詞坦率。",
+    "sourceUrls": [
+     "https://ko.wikipedia.org/wiki/%EC%A3%A0%EC%A7%80_(%EA%B0%80%EC%88%98)",
+     "https://musicbrainz.org/release-group/672522f0-5df3-4443-a0d2-6e637a7e1c6e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "note": "Apple kr 1680885681 第 1 軌無試聽檔。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "DSPS",
+   "album": "時間的產物",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3fcea41f-0d28-49c3-b596-0aad8a6fd272",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "華語／日韓 dream pop 二線（ml29）：台北 dream pop 樂團 DSPS 首張全長，chorus 吉他與合成器墊的溫霧｜⚠ 池中台灣 dream pop 色溫多 0–0.3，z 可能貼邊｜MB release-group 3fcea41f-0d28-49c3-b596-0aad8a6fd272：title「時間的產物」、Album、first-release-date 2018-06-03、artist-credit「DSPS」。證據：https://musicbrainz.org/release-group/3fcea41f-0d28-49c3-b596-0aad8a6fd272 https://coverartarchive.org/release/39939096-7ea0-4713-860d-0c7fb1968514/41342272948.jpg https://music.apple.com/tw/album/%E6%99%82%E9%96%93%E7%9A%84%E7%94%A2%E7%89%A9/1403702902?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3fcea41f-0d28-49c3-b596-0aad8a6fd272/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 2913,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2913）；主線：台灣獨立樂團、Last.fm 失真（2,913）：正規發行，華語圈外少人知，給 3"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "台北的 DSPS 同時掛著 dream pop 與 emo。兩年前，樂團先有《我會不會又睡到下午了》；自標的樂種另外還有 rock 與 post rock。《時間的產物》2018 年 6 月 3 日先出台灣 CD，數位版晚十一天，10 首近 45 分鐘。曲子偏長，6 分鐘左右的〈成為日常〉最長，〈冬天再去見你〉約 5 分半。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/3fcea41f-0d28-49c3-b596-0aad8a6fd272",
+     "https://music.apple.com/jp/album/%E6%99%82%E9%96%93%E7%9A%84%E7%94%A2%E7%89%A9/1403702902",
+     "https://dsps.bandcamp.com"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0d/f8/17/0df817c9-4af5-08b8-23b6-9609e4023e32/mzaf_14891601608321899875.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "appleCollectionId": "1403702902",
+    "storefront": "TW",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple tw 1403702902「DSPS《時間的產物》」：曲目 9/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈D.S.P.S.〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The fin.",
+   "album": "Days With Uncertainty",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6f1f12e8-93b1-4017-a600-20f73f25a3f9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "華語／日韓 dream pop 二線（ml29）：神戶 The fin. 首張，chillwave／dream pop 的濕合成器墊，日本 dream pop 二線代表｜⚠ 色溫可能貼 0.2–0.4｜MB release-group 6f1f12e8-93b1-4017-a600-20f73f25a3f9：title「Days With Uncertainty」、Album、first-release-date 2014-12-03、artist-credit「The fin.」。證據：https://musicbrainz.org/release-group/6f1f12e8-93b1-4017-a600-20f73f25a3f9 https://coverartarchive.org/release/8be493f0-e190-454d-82ec-bc463d6b005c/13070107563.jpg https://music.apple.com/tw/album/days-with-uncertainty/944185800?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6f1f12e8-93b1-4017-a600-20f73f25a3f9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 28042,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 28042）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一首〈Night Time〉在網上爆紅，引來海外邀約。來自兵庫縣寶塚市的獨立搖滾團 The fin.，2013 年 9 月把這首歌放上 SoundCloud。2014 年 12 月 3 日首張專輯問世，11 首約 38 分鐘。合成器與吉他並置，走獨立流行的路子，〈Till Dawn〉拉得最長。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/The_fin.",
+     "https://music.apple.com/jp/album/days-with-uncertainty/944185800",
+     "https://musicbrainz.org/release-group/6f1f12e8-93b1-4017-a600-20f73f25a3f9",
+     "https://api.discogs.com/releases/6502930"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/94/8b/e0948be6-d0e5-80ce-b9ab-013897315292/mzaf_7637215689654959878.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "appleCollectionId": "944185800",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 944185800「The fin.《Days With Uncertainty》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Illumination〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "pasteboard",
+   "album": "glitter",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "29f53b01-b26f-48be-a623-e3bd59d5d1e1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "華語／日韓 dream pop 二線（ml29）：日本 dream pop 冷門經典，甜美女聲與柔牆吉他、合成器霧｜⚠ 有中速曲，x 可能 2.8｜MB release-group 29f53b01-b26f-48be-a623-e3bd59d5d1e1：title「glitter」、Album、first-release-date 2005-12-21、artist-credit「pasteboard」。證據：https://musicbrainz.org/release-group/29f53b01-b26f-48be-a623-e3bd59d5d1e1 https://coverartarchive.org/release/143a9391-3284-4553-9ca9-d96f48914303/31488618066.jpg https://music.apple.com/tw/album/glitter/294138764?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2005,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/29f53b01-b26f-48be-a623-e3bd59d5d1e1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 182985,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 182985）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "九首裡一首叫 shoegazer，一首叫 slowdive。pasteboard 是玩 shoegaze 的日本團體，2005 年 12 月 21 日於日本發行這張，全長約半小時。團員自己製作、自己混音，最長的〈slowdive〉約 4 分 50 秒。2023 年再推 Deluxe 版，擴成 13 首。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/29f53b01-b26f-48be-a623-e3bd59d5d1e1",
+     "https://api.discogs.com/releases/2580062",
+     "https://music.apple.com/jp/album/glitter-deluxe-edition/1676390019",
+     "https://music.apple.com/jp/album/glitter/294138764"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/75/d1/c1/75d1c187-0f6b-6a23-7fba-cdd185aedeb8/mzaf_4152618088074515263.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "appleCollectionId": "294138764",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 294138764「Pasteboard《Glitter》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Breakbeats〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "岡田拓郎",
+   "album": "Morning Sun",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "8ff95ede-1f97-491a-8243-2ce83bd4c10e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "華語／日韓 dream pop 二線（ml29）：前森は生きている成員岡田拓郎的第二張，溫潤軟搖滾與殘響吉他墊｜⚠ y 可能判 0.4–0.6（錄音偏清晰）｜MB release-group 8ff95ede-1f97-491a-8243-2ce83bd4c10e：title「Morning Sun」、Album、first-release-date 2020-06-10、artist-credit「岡田拓郎」。證據：https://musicbrainz.org/release-group/8ff95ede-1f97-491a-8243-2ce83bd4c10e https://coverartarchive.org/release/8ea100ba-ecb8-4161-8a35-fd880a95d0c9/32472326721.jpg https://music.apple.com/tw/album/morning-sun/1512150405?uo=4",
+    "queryAlias": "Takuro Okada"
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8ff95ede-1f97-491a-8243-2ce83bd4c10e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 1091,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1091）；主線：非拉丁掛名照 §0.8：日本獨立廠正規發行，日本圈外少人知，給 3"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "封面照片出自 ROTH BART BARON 的三船雅也。岡田拓郎是吉他手，兼任製作人與混音師，早年組過樂團森は生きている，還參與過三船那個團的錄音與演出。這張個人作 2020 年 6 月 10 日透過 only in dreams 發行，8 首共 37 分 49 秒，從根源音樂一路走到 ambient；壓軸的〈New Morning〉長約 11 分鐘。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/%E5%B2%A1%E7%94%B0%E6%8B%93%E9%83%8E",
+     "https://ototoy.jp/_/default/p/545437",
+     "https://music.apple.com/jp/album/morning-sun/1512150405",
+     "https://musicbrainz.org/release-group/8ff95ede-1f97-491a-8243-2ce83bd4c10e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d1/24/79/d1247941-e7aa-9e0a-7e8d-eb632d5c4c6b/mzaf_14905071150548753303.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "appleCollectionId": "1512150405",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1512150405「岡田拓郎《Morning Sun》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Morning Sun〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "森は生きている",
+   "album": "グッド・ナイト",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "cf5d6260-144f-48ab-9657-01cfbeb69486",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "華語／日韓 dream pop 二線（ml29）：東京樂團森は生きている第二張，長篇迷幻軟搖滾、管弦與殘響堆疊｜⚠ 含長篇組曲，部分段落轉冷的可能｜MB release-group cf5d6260-144f-48ab-9657-01cfbeb69486：title「グッド・ナイト」、Album、first-release-date 2014-11-19、artist-credit「森は生きている」。證據：https://musicbrainz.org/release-group/cf5d6260-144f-48ab-9657-01cfbeb69486 https://coverartarchive.org/release/47254c30-f679-4f87-a1d2-bb0e71b00e25/22932485923.jpg https://music.apple.com/tw/album/%E3%82%B0%E3%83%83%E3%83%89-%E3%83%8A%E3%82%A4%E3%83%88/933675680?uo=4",
+    "queryAlias": "Mori wa Ikiteiru"
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cf5d6260-144f-48ab-9657-01cfbeb69486/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 1062,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1062）；主線：非拉丁掛名照 §0.8：P-VINE 正規發行、日本獨立圈知名，給 3"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "第七首長達 17 分鐘，由三段歌串成一首組曲。森は生きている是 2012 年春天在東京成立的五人樂團。這首〈煙夜の夢〉把〈香水壜と少女〉〈空虚な肖像画〉與同名段落接在一起，占去專輯三分之一以上。編制在吉他、貝斯、鼓之外，還有鋼琴、風琴、顫音琴，以及薩克斯風、長笛、小號、單簧管。2014 年 11 月 19 日推出時，由 P-VINE 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/cf5d6260-144f-48ab-9657-01cfbeb69486",
+     "https://ja.wikipedia.org/wiki/グッド・ナイト_(森は生きている)",
+     "https://musicbrainz.org/release?release-group=cf5d6260-144f-48ab-9657-01cfbeb69486",
+     "https://scrapbox.io/tokyo-indie/%E5%B2%A1%E7%94%B0%E6%8B%93%E9%83%8E"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6f/1e/ef/6f1eefa0-724f-ef4f-0235-1794fdb8db80/mzaf_9259136849533768168.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "appleCollectionId": "933675680",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 933675680「森は生きている《グッド・ナイト》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈プレリュード〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "声音玩具",
+   "album": "最美妙的旅行",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "317d8a2b-ef7f-4f46-b32f-722b65c07dac",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "華語／日韓 dream pop 二線（ml29）：成都声音玩具首張，夢幻迷幻搖滾的華語先聲，慢而厚的殘響吉他｜⚠ 池中中國獨立搖滾多判冷，z 風險高｜MB release-group 317d8a2b-ef7f-4f46-b32f-722b65c07dac：title「最美妙的旅行」、Album、first-release-date 2003、artist-credit「声音玩具」。證據：https://musicbrainz.org/release-group/317d8a2b-ef7f-4f46-b32f-722b65c07dac https://coverartarchive.org/release/bd52b5c6-bd64-439f-9106-e7429ee945b8/42838768216.jpg https://music.apple.com/tw/album/%E6%9C%80%E7%BE%8E%E5%A6%99%E7%9A%84%E6%97%85%E8%A1%8C/1610219053?uo=4",
+    "queryAlias": "Sound Toy"
+   },
+   "research": {
+    "suggestedYear": 2003,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/317d8a2b-ef7f-4f46-b32f-722b65c07dac/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 2944,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2944）；主線：非拉丁掛名照 §0.8：中國獨立搖滾老團正規發行，華語獨立圈知名、圈外少人知，給 3"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "首張發行後，他們的新歌多年只在現場唱。成都樂團声音玩具在 2003 年發出首作《最美妙的旅行》，器樂一層層編織，把音牆與英倫搖滾段落拼在一起；長曲占了多數，〈不朽〉一首就約 11 分 20 秒。成員此後多次更替，新寫的曲子輾轉於音樂節與 livehouse，遲遲未集結成專輯。到了 2009 年，主唱欧波已把早期成名曲擱下，因為新成員彈不了那些歌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/317d8a2b-ef7f-4f46-b32f-722b65c07dac",
+     "https://music.apple.com/tw/album/%E6%9C%80%E7%BE%8E%E5%A6%99%E7%9A%84%E6%97%85%E8%A1%8C/1610219053",
+     "https://musicbrainz.org/release?release-group=317d8a2b-ef7f-4f46-b32f-722b65c07dac",
+     "https://www.thepaper.cn/newsDetail_forward_1391462"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/45/40/af/4540af4c-89b6-4913-4161-b31ed446992f/mzaf_13264215456785371840.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "appleCollectionId": "1610219053",
+    "storefront": "TW",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple tw 1610219053「声音玩具《最美妙的旅行》」：主線人工配對：Apple tw 同名專輯 10 軌（曲目 5/9 對上 MB，曲名繁簡差異），取第 1 軌〈星期天大街〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "SUMIN",
+   "album": "Your Home",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f7a61863-68cf-4e62-9cb6-a77d4382b852",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "韓國 R&B／indie 恍惚（ml21）：SUMIN（수민）首張正規，自製電子 R&B 的軟墊與溫人聲｜⚠ 池中同人《MINISERIES》y 0.6／z 0.6（在格但貼邊），本張質地可能同樣 0.6｜MB release-group f7a61863-68cf-4e62-9cb6-a77d4382b852：title「Your Home」、Album、first-release-date 2018-08-10、artist-credit「SUMIN」。證據：https://musicbrainz.org/release-group/f7a61863-68cf-4e62-9cb6-a77d4382b852 https://coverartarchive.org/release/50889978-fb65-4080-b5c5-1d3440ecdfd5/25750622085.jpg https://music.apple.com/tw/album/your-home/1560632256?uo=4",
+    "queryAlias": "수민"
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f7a61863-68cf-4e62-9cb6-a77d4382b852/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 19834,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "note": "機器基線 2/4/2（Last.fm listeners 19834）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "詞曲、編曲、演奏到演唱，都由 SUMIN 一人包辦。1991 年生於首爾、主修聲樂的 SUMIN 做 R&B 與靈魂樂，同期也替防彈少年團、Red Velvet 寫歌。第一張正規專輯《Your Home》在 2018 年 8 月 10 日發行，壓軸是標題曲的 solo version。2019 年，這張拿下韓國嘻哈獎的最佳 R&B 靈魂專輯獎。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/f7a61863-68cf-4e62-9cb6-a77d4382b852",
+     "https://music.apple.com/tw/album/your-home/1560632256",
+     "https://musicbrainz.org/release?release-group=f7a61863-68cf-4e62-9cb6-a77d4382b852",
+     "https://ko.wikipedia.org/wiki/SUMIN"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/0d/a9/bc/0da9bcd2-8070-29f5-c3f1-798fc483065c/mzaf_17669776524329870933.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "appleCollectionId": "1560632256",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1560632256「SUMIN《Your Home》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈In Dreams〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hoody",
+   "album": "Sailing",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b2babbf0-af30-43f8-8f50-4b598cbfcad0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "韓國 R&B／indie 恍惚（ml21）：Hoody 第二張正規，爵士和弦與溫軟 R&B 慢歌｜⚠ 同《Departure》：混音乾淨易判輕｜MB release-group b2babbf0-af30-43f8-8f50-4b598cbfcad0：title「Sailing」、Album、first-release-date 2023-09-21、artist-credit「Hoody」。證據：https://musicbrainz.org/release-group/b2babbf0-af30-43f8-8f50-4b598cbfcad0 https://coverartarchive.org/release/f9f51806-0c8b-4cd9-92d9-1942a6d491e4/36779647186.jpg https://music.apple.com/tw/album/sailing/1707799348?uo=4",
+    "queryAlias": "후디"
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b2babbf0-af30-43f8-8f50-4b598cbfcad0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 9048,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 9048）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "十首歌都收在 2 分半到 3 分 45 秒之間。本名金賢貞的 Hoody 唱 R&B。《Sailing》裡最短的是約 2 分 29 秒的〈Daydream〉，最長的是〈Just Be You〉，平均每首約 3 分 17 秒，加起來約 33 分鐘。2023 年 9 月 21 日經 AOMG 發行時，距 2019 年 10 月的前作約有四年。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/b2babbf0-af30-43f8-8f50-4b598cbfcad0",
+     "https://musicbrainz.org/release?release-group=b2babbf0-af30-43f8-8f50-4b598cbfcad0",
+     "https://music.apple.com/tw/album/sailing/1707799348",
+     "https://en.wikipedia.org/wiki/Hoody_(singer)"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/22/6b/a7/226ba764-b8c7-de1f-611a-a6cc33692e3f/mzaf_2906989017278997496.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "appleCollectionId": "1707799348",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1707799348「Hoody《Sailing》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Fantasy〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "cero",
+   "album": "e o",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "17902bdd-4fb0-4bc7-ba37-8060c55d6dcf",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "華語／日韓 dream pop 二線（ml29）：cero 第五張，慢而層疊的實驗靈魂流行，合成器與和聲霧化｜⚠ 旋律較不直白，色溫可能判 0.2–0.4｜MB release-group 17902bdd-4fb0-4bc7-ba37-8060c55d6dcf：title「e o」、Album、first-release-date 2023-05-24、artist-credit「cero」。證據：https://musicbrainz.org/release-group/17902bdd-4fb0-4bc7-ba37-8060c55d6dcf https://coverartarchive.org/release/e9b128a6-8b2c-4d66-abe4-0684804feb94/36629742913.png https://music.apple.com/tw/album/e-o/1684671657?uo=4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/17902bdd-4fb0-4bc7-ba37-8060c55d6dcf/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 12311,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 12311）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "四首早先的單曲，收進專輯時都加註了 (e o)。日本樂團 cero 隔約五年交出第五張專輯，〈Fdf〉〈Nemesis〉〈Cupola〉〈Fuha〉先以數位單曲發表，再與七首新錄的歌排在一起。整張 2023 年 5 月 24 日問世，由カクバリズム發行。同年 12 月，樂團在惠比壽 Liquidroom 錄下一張現場專輯，曲目以《e o》為主。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/17902bdd-4fb0-4bc7-ba37-8060c55d6dcf",
+     "https://lp.p.pia.jp/article/news/106420/index.html",
+     "https://music.apple.com/tw/album/e-o/1684671657"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4e/a6/f9/4ea6f951-88df-8890-13e0-2a2ab6b896d5/mzaf_12904424781942477795.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "appleCollectionId": "1684671657",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1684671657「cero《e o》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Epigraph〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "問題總部",
+   "album": "User Guide: I",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "68e65270-7d42-416e-97c4-fc80dd63fddb",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "華語 R&B／neo-soul（台港）：台灣 R&B 樂團問題總部首張，樂團編制的 neo-soul（後以《我在這裡》奪金音最佳節奏藍調專輯）｜⚠ 聲音憑樂種推估；樂團律動曲可能 x 2.8｜MB release-group 68e65270-7d42-416e-97c4-fc80dd63fddb：title「User Guide: I」、Album、first-release-date 2020-05-28、artist-credit「這會有問題嗎」。證據：https://musicbrainz.org/release-group/68e65270-7d42-416e-97c4-fc80dd63fddb https://coverartarchive.org/release/c273e612-c6f4-413b-97bd-d2761a1aa878/34335448131.jpg https://music.apple.com/tw/album/user-guide-i/1515233815?uo=4",
+    "queryAlias": "這會有問題嗎"
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/68e65270-7d42-416e-97c4-fc80dd63fddb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 74,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 74）；主線：非拉丁掛名照 §0.8：台灣獨立樂團正規發行，華語圈外少人知，給 3"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "CD 版把〈White Shirt〉標成〈最酷最酷的龍〉。台灣的問題總部，2020 年 5 月 28 日上架這張當代 R&B 作品《User Guide: I》，〈It won't stop hurting...〉在 CD 版也改標為〈心臟痛〉。全張 8 首約 34 分，每首平均 4 分 16 秒上下。版權欄寫的是 It's Your Fault。",
+    "sourceUrls": [
+     "https://music.apple.com/tw/album/user-guide-i/1515233815",
+     "https://musicbrainz.org/release-group/68e65270-7d42-416e-97c4-fc80dd63fddb",
+     "https://musicbrainz.org/release?release-group=68e65270-7d42-416e-97c4-fc80dd63fddb"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/41/b3/50/41b35067-4cfb-e6c2-86dc-d74e16c05139/mzaf_5197554881721989146.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "appleCollectionId": "1515233815",
+    "storefront": "TW",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple tw 1515233815「問題總部《User Guide: I》」：主線人工配對：Apple tw 同名專輯 8 軌 2020-05-28（曲目 5/8 對上），取第 1 軌〈Day〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "方大同",
+   "album": "夢想家 The Dreamer",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "70d5aba0-f357-4b27-a39b-b4d0018fba0c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "華語 R&B／neo-soul（台港）：方大同生前最後一張專輯，慢板靈魂與溫熱合成器墊｜⚠ 華語 R&B 判輕風險（同第一輪方大同兩張）｜MB release-group 70d5aba0-f357-4b27-a39b-b4d0018fba0c：title「夢想家 The Dreamer」、Album、first-release-date 2024-10-17、artist-credit「方大同」。證據：https://musicbrainz.org/release-group/70d5aba0-f357-4b27-a39b-b4d0018fba0c https://coverartarchive.org/release/decb48fe-b689-4165-88b4-cc020ed1c6a9/41331667442.jpg",
+    "queryAlias": "Khalil Fong"
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/70d5aba0-f357-4b27-a39b-b4d0018fba0c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 1986,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1986）；主線：非拉丁掛名照 §0.8：華語一線歌手正規專輯、串流主流流通，給 2"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "病中的各個階段，方大同在自家餐桌上做出多數歌曲。這是方大同的第十張專輯，2024 年 10 月 18 日由 FU MUSIC 面世。他拿手持麥克風製作與編曲，把它稱作「病專輯」。他說專輯名象徵面對疾病時，自己仍在這裡，也想把弱點轉成力量。發行隔年，方大同於 2025 年 2 月 21 日辭世，享年 41 歲。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Khalil_Fong",
+     "https://musicbrainz.org/release-group/70d5aba0-f357-4b27-a39b-b4d0018fba0c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/85/ca/ff/85caff5c-977e-8ff6-5ec5-8f36998ad717/mzaf_4167313576236539984.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T08:21:58Z",
+    "appleCollectionId": "1772124855",
+    "storefront": "HK",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple hk 1772124855「方大同《The Dreamer》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈XZMHXDXH〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

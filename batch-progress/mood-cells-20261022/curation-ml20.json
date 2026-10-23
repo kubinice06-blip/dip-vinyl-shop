@@ -1,0 +1,1115 @@
+{
+ "group": "ml20",
+ "factions": [
+  {
+   "id": "cn-rnb",
+   "zh": "華語 R&B／neo-soul（台港）",
+   "count": 10,
+   "why": "主場景"
+  },
+  {
+   "id": "kr-rnb",
+   "zh": "韓國 R&B／indie 恍惚（ml21）",
+   "count": 12,
+   "why": "擴寫"
+  },
+  {
+   "id": "dream",
+   "zh": "華語／日韓 dream pop 二線（ml29）",
+   "count": 14,
+   "why": "擴寫"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "LINION",
+   "album": "Me In Dat Blue",
+   "year": 2018,
+   "label": "嘿豹工作室",
+   "country": "tw",
+   "faction": "cn-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "台灣新靈魂代表 LINION 的首張臥室錄音作，Rhodes 與厚貝斯慢慢鋪開，暖慢包覆落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 1,
+    "why": "慢拍 neo-soul，Rhodes＋厚貝斯，人聲溫"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/31147721-LINION-Me-In-Dat-Blue",
+    "https://i.discogs.com/abtL4LpbULuG-eMn1fN22GYTlqxpiDDXF0pkJ_cIVA0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxMTQ3/NzIxLTE3MjAyNTA2/NzQtNTAwNC5qcGVn.jpeg",
+    "https://hypebeast.com/zh/2023/7/linion-the-album-hideout-info"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"LINION\"（MB 只有 HIDEOUT 一張 release-group）",
+     "artist:\"LINION\" AND releasegroup:\"Me In Dat Blue\"（0 筆）"
+    ],
+    "checkedAt": "2026-10-23",
+    "conclusion": "MB 查無；Discogs 31147721（Cassette Album，2018-12-28，嘿豹工作室，7 首）；Hypebeast 稱 HIDEOUT 為個人第 3 張專輯，前兩張即本張與另一張"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/31147721-LINION-Me-In-Dat-Blue",
+    "https://hypebeast.com/zh/2023/7/linion-the-album-hideout-info",
+    "https://www.thenewslens.com/article/192567"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "正規性邊界：Discogs 標 Cassette Album、7 首（總長未列）；媒體（關鍵評論網、Hypebeast）稱首張專輯、HIDEOUT 為第 3 張專輯，故按專輯保留，主線可視總長再定。聲音憑曲風推估"
+  },
+  {
+   "artist": "LINION",
+   "album": "Leisurely",
+   "year": 2020,
+   "label": "嘿豹工作室",
+   "country": "tw",
+   "faction": "cn-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "第 12 屆金音獎最佳節奏藍調專輯，華語 neo-soul 的標竿；慵懶拍子、溫熱低頻與和聲墊，典型恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 1.1,
+    "why": "懶拍 neo-soul，低頻厚、和聲墊暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/31147562-LINION-Leisurely",
+    "https://i.discogs.com/OQqVXtPgHZp4YCKCEGQEWgBMywHtXD7gK95t83-zS2Y/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxMTQ3/NTYyLTE3MjAyNDgy/NjAtNTQ0NC5qcGVn.jpeg",
+    "https://hypebeast.com/zh/2023/7/linion-the-album-hideout-info"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"LINION\"（MB 只有 HIDEOUT 一張 release-group）",
+     "artist:\"LINION\" AND releasegroup:\"Leisurely\"（0 筆）"
+    ],
+    "checkedAt": "2026-10-23",
+    "conclusion": "MB 查無；Discogs 31147562（CD Album，2020-09-22，嘿豹工作室，11 首）；Hypebeast 稱 HIDEOUT 為個人第 3 張專輯，前兩張即本張與另一張"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/31147562-LINION-Leisurely",
+    "https://hypebeast.com/zh/2023/7/linion-the-album-hideout-info",
+    "https://www.thenewslens.com/article/192567"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "聲音憑曲風與獎項推估，無逐曲試聽"
+  },
+  {
+   "artist": "LINION",
+   "album": "HIDEOUT",
+   "year": 2023,
+   "label": "",
+   "country": "tw",
+   "faction": "cn-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "LINION 第三張專輯，延續慢板 neo-soul 的溫熱厚墊，台灣華語 R&B 近年代表",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 1,
+    "why": "中慢 neo-soul，Rhodes 與貝斯厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4dc43127-76e4-45b4-a850-670e4ba9372c",
+    "https://coverartarchive.org/release/b50abe27-bb1c-44cc-ba2a-903c8c3fbb9d/43850236528.jpg",
+    "https://music.apple.com/tw/album/hideout/1696912216?uo=4",
+    "https://hypebeast.com/zh/2023/7/linion-the-album-hideout-info"
+   ],
+   "mbRgMbid": "4dc43127-76e4-45b4-a850-670e4ba9372c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "聲音憑前作推估"
+  },
+  {
+   "artist": "方大同",
+   "album": "橙月",
+   "year": 2008,
+   "label": "Warner Music Hong Kong",
+   "country": "hk",
+   "faction": "cn-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "方大同轉向成熟慢板靈魂的一張，Rhodes、弦樂墊與假音，華語 R&B 少見的暖慢厚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 1.2,
+    "why": "慢板靈魂，Rhodes＋弦墊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d2809a5e-7f44-43ca-815a-2b0fa4d0dbdf",
+    "https://coverartarchive.org/release/c83c01d8-fa63-4143-93fc-f42e1276d824/13940534018.jpg",
+    "https://music.apple.com/tw/album/%E6%A9%99%E6%9C%88/313404785?uo=4"
+   ],
+   "mbRgMbid": "d2809a5e-7f44-43ca-815a-2b0fa4d0dbdf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Khalil Fong",
+   "uncertain": "池中同期華語 R&B（陶喆、林俊傑）多判輕 y −0.4；本張若混音乾淨會掉放鬆，貼邊風險高"
+  },
+  {
+   "artist": "方大同",
+   "album": "15",
+   "year": 2011,
+   "label": "Warner Music Taiwan",
+   "country": "hk",
+   "faction": "cn-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "方大同以慢歌與 quiet storm 質感為主的第七張，人聲與鍵盤層層包覆",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 1.1,
+    "why": "慢歌為主，鍵盤墊與低頻溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4480f179-9852-4149-a829-abc6c9d2274c",
+    "https://coverartarchive.org/release/fb39aa8d-d4a4-4fac-8e6f-27c3148a06a7/45585388628.png",
+    "https://music.apple.com/tw/album/15/540055014?uo=4"
+   ],
+   "mbRgMbid": "4480f179-9852-4149-a829-abc6c9d2274c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Khalil Fong",
+   "uncertain": "同上：華語 R&B 判輕風險，y 恐只 0.3–0.6"
+  },
+  {
+   "artist": "YELLOW黃宣",
+   "album": "浮世擊",
+   "year": 2020,
+   "label": "否極泰來音樂",
+   "country": "tw",
+   "faction": "cn-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "黃宣首張全長，復古靈魂與迷幻 R&B 的厚混響，台灣新一代 R&B 代表",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "迷幻 R&B，殘響厚、假音暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/45f2bbe7-6c64-4758-b184-46a95c102262",
+    "https://www.discogs.com/master/3764751",
+    "https://www.discogs.com/release/33260463"
+   ],
+   "mbRgMbid": "45f2bbe7-6c64-4758-b184-46a95c102262",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "黃宣 Yellow",
+   "uncertain": "聲音憑印象，部分曲目可能偏中速；查池以 YELLOW／黃宣 兩名皆無"
+  },
+  {
+   "artist": "Gareth.T",
+   "album": "to be honest",
+   "year": 2022,
+   "label": "Warner Music Hong Kong",
+   "country": "hk",
+   "faction": "cn-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "香港 R&B 新聲 Gareth.T（湯令山）首張專輯，lo-fi 糊拍與慢板人聲",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "lo-fi R&B 糊拍，慢、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/158c5d1b-141d-4987-a5d6-e2de787d1eb0",
+    "https://coverartarchive.org/release/5247839e-ffec-450b-bfea-abf6011b419c/45066667140.jpg"
+   ],
+   "mbRgMbid": "158c5d1b-141d-4987-a5d6-e2de787d1eb0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "聲音憑印象；粵語流行 R&B 可能判輕"
+  },
+  {
+   "artist": "OFFONOFF",
+   "album": "boy.",
+   "year": 2017,
+   "label": "HIGHGRND",
+   "country": "kr",
+   "faction": "kr-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "韓國 alt R&B 雙人組唯一正規專輯，霧化合成器墊與慢拍，SCENES 點名代表",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 0.7,
+    "why": "霧化合成器墊、慢拍、軟糊低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d6401b34-b35d-4ce6-80c1-c13a8e33ea7c",
+    "https://coverartarchive.org/release/a838485d-a014-4711-aa19-eece82c1e484/17344483982.jpg",
+    "https://music.apple.com/tw/album/boy/1344721585?uo=4"
+   ],
+   "mbRgMbid": "d6401b34-b35d-4ce6-80c1-c13a8e33ea7c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "오프온오프",
+   "uncertain": "色溫可能貼 0.3–0.5（夜感）"
+  },
+  {
+   "artist": "Colde",
+   "album": "Love Part 1",
+   "year": 2019,
+   "label": "wavy",
+   "country": "kr",
+   "faction": "kr-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "Colde（콜드）首張正規專輯，溫熱殘響吉他與慢板 R&B，SCENES 點名代表",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "慢 R&B，殘響吉他＋軟墊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d1d6ef2c-e793-4a67-a1b5-005a9ff09e2f",
+    "https://coverartarchive.org/release/7d1e8cac-06ac-4bf6-aba4-909cd44555d7/35182867374.jpg"
+   ],
+   "mbRgMbid": "d1d6ef2c-e793-4a67-a1b5-005a9ff09e2f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "콜드",
+   "uncertain": "EP，建議汰：8 首 27 分，英文維基與 namu wiki 列為 EP（Love Part 1 為第二張 EP）。"
+  },
+  {
+   "artist": "Colde",
+   "album": "Love Part 2",
+   "year": 2023,
+   "label": "wavy",
+   "country": "kr",
+   "faction": "kr-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "Colde 延續 Love 系列的第二張正規，暖慢 indie R&B 與厚和聲",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 0.9,
+    "why": "慢拍 indie R&B，和聲厚、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6745ddb8-15da-41ae-996f-1985be6153fc",
+    "https://coverartarchive.org/release/897092b0-fd86-48f6-a541-60f1977eb0cc/37243761891.jpg"
+   ],
+   "mbRgMbid": "6745ddb8-15da-41ae-996f-1985be6153fc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "콜드",
+   "uncertain": "EP，建議汰：8 首 30 分，英文維基與 namu wiki 列為 EP（Love Part 1 為第二張 EP）。"
+  },
+  {
+   "artist": "jeebanoff",
+   "album": "GOOD THING.",
+   "year": 2019,
+   "label": "Goodtomeetyou",
+   "country": "kr",
+   "faction": "kr-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "jeebanoff（지바노프）首張正規，糊濾波與慢拍的韓國 alt R&B",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "慢 alt R&B，濾波糊、低頻軟"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4f60af3d-d0ab-474f-9d53-04dcf42b899c",
+    "https://coverartarchive.org/release/f3693319-02f0-4f87-9904-61bb065948c5/41902292589.jpg",
+    "https://music.apple.com/tw/album/good-thing/1662295258?uo=4"
+   ],
+   "mbRgMbid": "4f60af3d-d0ab-474f-9d53-04dcf42b899c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "지바노프",
+   "uncertain": "色溫最貼邊（韓國 alt R&B 夜感易判冷），可列第一順位汰換"
+  },
+  {
+   "artist": "Hoody",
+   "album": "Departure",
+   "year": 2019,
+   "label": "AOMG",
+   "country": "kr",
+   "faction": "kr-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "Hoody（후디）首張正規專輯，爵士和弦與軟糊 R&B，慢而暖",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 0.9,
+    "why": "慢 R&B，爵士和弦、軟墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f522d173-754e-498a-b333-85606af8f411",
+    "https://coverartarchive.org/release/c5e35e27-4c66-433c-8148-0c2e76a3db83/36779615090.jpg",
+    "https://music.apple.com/tw/album/departure/1658965660?uo=4"
+   ],
+   "mbRgMbid": "f522d173-754e-498a-b333-85606af8f411",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "후디",
+   "uncertain": "y 可能判 0.4–0.6（混音乾淨）"
+  },
+  {
+   "artist": "Samuel Seo",
+   "album": "Frameworks",
+   "year": 2015,
+   "label": "Craft and Jun",
+   "country": "kr",
+   "faction": "kr-rnb",
+   "genres": [
+    "soul",
+    "hiphop"
+   ],
+   "why": "서사무엘首張正規，Dilla 式 dusty 拍與 neo-soul 鍵盤，韓國 neo-soul 地下代表",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.8,
+    "why": "dusty 取樣拍、Rhodes，懶拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/80519cff-56ab-4998-8c81-26ace6a523b9",
+    "https://coverartarchive.org/release/f4156662-41cd-4c65-86c1-615e6b0af44e/41934651597.jpg",
+    "https://music.apple.com/tw/album/frameworks/1760331934?uo=4"
+   ],
+   "mbRgMbid": "80519cff-56ab-4998-8c81-26ace6a523b9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "서사무엘",
+   "uncertain": "聲音憑曲風推估；嘻哈比重高可能拉 x"
+  },
+  {
+   "artist": "george",
+   "album": "FRR",
+   "year": 2023,
+   "label": "Craft and Jun",
+   "country": "kr",
+   "faction": "kr-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "죠지首張正規，lo-fi 磁帶感的暖 indie R&B",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 1,
+    "why": "lo-fi 磁帶糊、慢、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/672522f0-5df3-4443-a0d2-6e637a7e1c6e",
+    "https://music.apple.com/tw/album/frr/1680885681"
+   ],
+   "mbRgMbid": "672522f0-5df3-4443-a0d2-6e637a7e1c6e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "죠지",
+   "uncertain": "聲音憑歌手路線推估；可能偏乾淨流行判輕"
+  },
+  {
+   "artist": "보수동쿨러",
+   "album": "모래",
+   "year": 2021,
+   "label": "POCLANOS",
+   "country": "kr",
+   "faction": "dream",
+   "genres": [
+    "rock"
+   ],
+   "why": "釜山樂團보수동쿨러（Bosudong Cooler）首張正規，殘響吉他的韓國 dream pop",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.5,
+    "why": "殘響吉他霧、中慢、溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0fd1f41c-e093-44f3-bb82-8b8ea9fc0f00",
+    "https://coverartarchive.org/release/340609bf-cb24-4dff-a2db-4946deb6d7a2/42202283641.jpg"
+   ],
+   "mbRgMbid": "0fd1f41c-e093-44f3-bb82-8b8ea9fc0f00",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Bosudong Cooler",
+   "uncertain": "色溫與能量都可能貼邊（有 surf rock 中速曲）"
+  },
+  {
+   "artist": "DSPS",
+   "album": "時間的產物",
+   "year": 2018,
+   "label": "",
+   "country": "tw",
+   "faction": "dream",
+   "genres": [
+    "rock"
+   ],
+   "why": "台北 dream pop 樂團 DSPS 首張全長，chorus 吉他與合成器墊的溫霧",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "chorus 吉他＋合成器墊，霧、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3fcea41f-0d28-49c3-b596-0aad8a6fd272",
+    "https://coverartarchive.org/release/39939096-7ea0-4713-860d-0c7fb1968514/41342272948.jpg",
+    "https://music.apple.com/tw/album/%E6%99%82%E9%96%93%E7%9A%84%E7%94%A2%E7%89%A9/1403702902?uo=4"
+   ],
+   "mbRgMbid": "3fcea41f-0d28-49c3-b596-0aad8a6fd272",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中台灣 dream pop 色溫多 0–0.3，z 可能貼邊"
+  },
+  {
+   "artist": "The fin.",
+   "album": "Days With Uncertainty",
+   "year": 2014,
+   "label": "Hip Land Music",
+   "country": "jp",
+   "faction": "dream",
+   "genres": [
+    "rock"
+   ],
+   "why": "神戶 The fin. 首張，chillwave／dream pop 的濕合成器墊，日本 dream pop 二線代表",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.5,
+    "why": "濕合成器墊、殘響人聲、慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6f1f12e8-93b1-4017-a600-20f73f25a3f9",
+    "https://coverartarchive.org/release/8be493f0-e190-454d-82ec-bc463d6b005c/13070107563.jpg",
+    "https://music.apple.com/tw/album/days-with-uncertainty/944185800?uo=4"
+   ],
+   "mbRgMbid": "6f1f12e8-93b1-4017-a600-20f73f25a3f9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫可能貼 0.2–0.4"
+  },
+  {
+   "artist": "pasteboard",
+   "album": "glitter",
+   "year": 2005,
+   "label": "abcdefg*record",
+   "country": "jp",
+   "faction": "dream",
+   "genres": [
+    "rock"
+   ],
+   "why": "日本 dream pop 冷門經典，甜美女聲與柔牆吉他、合成器霧",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.7,
+    "why": "柔牆吉他霧、甜女聲、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/29f53b01-b26f-48be-a623-e3bd59d5d1e1",
+    "https://coverartarchive.org/release/143a9391-3284-4553-9ca9-d96f48914303/31488618066.jpg",
+    "https://music.apple.com/tw/album/glitter/294138764?uo=4"
+   ],
+   "mbRgMbid": "29f53b01-b26f-48be-a623-e3bd59d5d1e1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有中速曲，x 可能 2.8"
+  },
+  {
+   "artist": "岡田拓郎",
+   "album": "Morning Sun",
+   "year": 2020,
+   "label": "only in dreams",
+   "country": "jp",
+   "faction": "dream",
+   "genres": [
+    "rock"
+   ],
+   "why": "前森は生きている成員岡田拓郎的第二張，溫潤軟搖滾與殘響吉他墊",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.9,
+    "why": "軟搖滾，殘響吉他＋鍵盤墊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8ff95ede-1f97-491a-8243-2ce83bd4c10e",
+    "https://coverartarchive.org/release/8ea100ba-ecb8-4161-8a35-fd880a95d0c9/32472326721.jpg",
+    "https://music.apple.com/tw/album/morning-sun/1512150405?uo=4"
+   ],
+   "mbRgMbid": "8ff95ede-1f97-491a-8243-2ce83bd4c10e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Takuro Okada",
+   "uncertain": "y 可能判 0.4–0.6（錄音偏清晰）"
+  },
+  {
+   "artist": "森は生きている",
+   "album": "グッド・ナイト",
+   "year": 2014,
+   "label": "P-VINE",
+   "country": "jp",
+   "faction": "dream",
+   "genres": [
+    "rock"
+   ],
+   "why": "東京樂團森は生きている第二張，長篇迷幻軟搖滾、管弦與殘響堆疊",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "迷幻軟搖滾，管弦殘響堆疊、慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cf5d6260-144f-48ab-9657-01cfbeb69486",
+    "https://coverartarchive.org/release/47254c30-f679-4f87-a1d2-bb0e71b00e25/22932485923.jpg",
+    "https://music.apple.com/tw/album/%E3%82%B0%E3%83%83%E3%83%89-%E3%83%8A%E3%82%A4%E3%83%88/933675680?uo=4"
+   ],
+   "mbRgMbid": "cf5d6260-144f-48ab-9657-01cfbeb69486",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Mori wa Ikiteiru",
+   "uncertain": "含長篇組曲，部分段落轉冷的可能"
+  },
+  {
+   "artist": "声音玩具",
+   "album": "最美妙的旅行",
+   "year": 2003,
+   "label": "",
+   "country": "cn",
+   "faction": "dream",
+   "genres": [
+    "rock"
+   ],
+   "why": "成都声音玩具首張，夢幻迷幻搖滾的華語先聲，慢而厚的殘響吉他",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.6,
+    "why": "慢迷幻搖滾，殘響吉他厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/317d8a2b-ef7f-4f46-b32f-722b65c07dac",
+    "https://coverartarchive.org/release/bd52b5c6-bd64-439f-9106-e7429ee945b8/42838768216.jpg",
+    "https://music.apple.com/tw/album/%E6%9C%80%E7%BE%8E%E5%A6%99%E7%9A%84%E6%97%85%E8%A1%8C/1610219053?uo=4"
+   ],
+   "mbRgMbid": "317d8a2b-ef7f-4f46-b32f-722b65c07dac",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Sound Toy",
+   "uncertain": "池中中國獨立搖滾多判冷，z 風險高"
+  },
+  {
+   "artist": "wave to earth",
+   "album": "0.1 flaws and all.",
+   "year": 2023,
+   "label": "",
+   "country": "kr",
+   "faction": "kr-rnb",
+   "genres": [
+    "rock",
+    "soul"
+   ],
+   "why": "wave to earth（웨이브투어스）首張正規，爵士和弦吉他與溫霧殘響的韓國 indie 慢歌，池中同團新作已落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "慢 indie，殘響吉他＋軟鼓，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/adc2c452-fc5c-47e4-b0d3-ddc790a5f9ee",
+    "https://coverartarchive.org/release/29b52234-1013-4b6e-9414-7fd0719c1922/35448894416.jpg",
+    "https://music.apple.com/tw/album/0-1-flaws-and-all/1770274106?uo=4"
+   ],
+   "mbRgMbid": "adc2c452-fc5c-47e4-b0d3-ddc790a5f9ee",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "웨이브투어스",
+   "uncertain": "ml4 曾提本張、以舊版池中評分 y −0.6 汰；現池中《bad pieces》新評 y 0.7／z 0.8 已落恍惚，故重提；y 仍可能 0.5–0.7",
+   "round": 2
+  },
+  {
+   "artist": "SUMIN",
+   "album": "Your Home",
+   "year": 2018,
+   "label": "",
+   "country": "kr",
+   "faction": "kr-rnb",
+   "genres": [
+    "soul",
+    "electronic"
+   ],
+   "why": "SUMIN（수민）首張正規，自製電子 R&B 的軟墊與溫人聲",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 0.7,
+    "why": "電子 R&B 軟墊、慢、溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f7a61863-68cf-4e62-9cb6-a77d4382b852",
+    "https://coverartarchive.org/release/50889978-fb65-4080-b5c5-1d3440ecdfd5/25750622085.jpg",
+    "https://music.apple.com/tw/album/your-home/1560632256?uo=4"
+   ],
+   "mbRgMbid": "f7a61863-68cf-4e62-9cb6-a77d4382b852",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "수민",
+   "uncertain": "池中同人《MINISERIES》y 0.6／z 0.6（在格但貼邊），本張質地可能同樣 0.6",
+   "round": 2
+  },
+  {
+   "artist": "Rad Museum",
+   "album": "RAD",
+   "year": 2022,
+   "label": "",
+   "country": "kr",
+   "faction": "kr-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "Club Eskimo 系 Rad Museum（라드뮤지엄）首張正規，糊濾波與慢拍的韓國 alt R&B",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "慢 alt R&B，濾波糊、夜感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2c74460c-a686-4d7c-890d-7b1069d687aa",
+    "https://coverartarchive.org/release/de5e73f2-dfee-487b-82ab-76a3d5ebf416/44380579477.jpg"
+   ],
+   "mbRgMbid": "2c74460c-a686-4d7c-890d-7b1069d687aa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "라드뮤지엄",
+   "uncertain": "色溫最貼邊（夜感易判冷），可優先汰",
+   "round": 2
+  },
+  {
+   "artist": "Hoody",
+   "album": "Sailing",
+   "year": 2023,
+   "label": "",
+   "country": "kr",
+   "faction": "kr-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "Hoody 第二張正規，爵士和弦與溫軟 R&B 慢歌",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 0.9,
+    "why": "慢 R&B，爵士和弦、軟墊、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b2babbf0-af30-43f8-8f50-4b598cbfcad0",
+    "https://coverartarchive.org/release/f9f51806-0c8b-4cd9-92d9-1942a6d491e4/36779647186.jpg",
+    "https://music.apple.com/tw/album/sailing/1707799348?uo=4"
+   ],
+   "mbRgMbid": "b2babbf0-af30-43f8-8f50-4b598cbfcad0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "후디",
+   "uncertain": "同《Departure》：混音乾淨易判輕",
+   "round": 2
+  },
+  {
+   "artist": "Samuel Seo",
+   "album": "The Misfit",
+   "year": 2019,
+   "label": "",
+   "country": "kr",
+   "faction": "kr-rnb",
+   "genres": [
+    "soul",
+    "hiphop"
+   ],
+   "why": "서사무엘第四張，現場樂手的 neo-soul 與 dusty 拍、溫熱鍵盤",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "neo-soul 樂團感、Rhodes、懶拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/82ecf487-6004-4921-a066-0f319efcefd8",
+    "https://coverartarchive.org/release/bf3d6a5d-523a-4253-8b25-119c35e84339/28251817183.jpg",
+    "https://music.apple.com/tw/album/the-misfit/1485359748?uo=4"
+   ],
+   "mbRgMbid": "82ecf487-6004-4921-a066-0f319efcefd8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "서사무엘",
+   "uncertain": "15 首 49 分，嘻哈與中速曲比重不明",
+   "round": 2
+  },
+  {
+   "artist": "Tempalay",
+   "album": "ゴーストアルバム",
+   "year": 2021,
+   "label": "",
+   "country": "jp",
+   "faction": "dream",
+   "genres": [
+    "rock"
+   ],
+   "why": "Tempalay 慢而迷幻的一張，濕殘響合成器與懶拍，日本迷幻 dream pop 二線代表",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.5,
+    "why": "迷幻慢拍，濕合成器霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/98de72fe-aa88-4701-a47a-7260217161d1",
+    "https://coverartarchive.org/release/68b64d7d-04be-4873-9487-a9c78a2903b2/30502545389.jpg"
+   ],
+   "mbRgMbid": "98de72fe-aa88-4701-a47a-7260217161d1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同團《ATOMEW》x 3.0 y 0.5 判沸騰（不同時期），本張 x 恐貼 2.8",
+   "round": 2
+  },
+  {
+   "artist": "cero",
+   "album": "e o",
+   "year": 2023,
+   "label": "",
+   "country": "jp",
+   "faction": "dream",
+   "genres": [
+    "rock",
+    "soul"
+   ],
+   "why": "cero 第五張，慢而層疊的實驗靈魂流行，合成器與和聲霧化",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "慢、層疊和聲與合成器霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/17902bdd-4fb0-4bc7-ba37-8060c55d6dcf",
+    "https://coverartarchive.org/release/e9b128a6-8b2c-4d66-abe4-0684804feb94/36629742913.png",
+    "https://music.apple.com/tw/album/e-o/1684671657?uo=4"
+   ],
+   "mbRgMbid": "17902bdd-4fb0-4bc7-ba37-8060c55d6dcf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "旋律較不直白，色溫可能判 0.2–0.4",
+   "round": 2
+  },
+  {
+   "artist": "cero",
+   "album": "Obscure Ride",
+   "year": 2015,
+   "label": "",
+   "country": "jp",
+   "faction": "dream",
+   "genres": [
+    "soul",
+    "rock"
+   ],
+   "why": "cero 受 D'Angelo 影響的轉型作，厚貝斯與夜色 neo-soul 律動",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "厚貝斯 neo-soul 律動、溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c186af9e-fa50-4e0f-ac10-8c38324c4d2a",
+    "https://coverartarchive.org/release/6eb9ed01-9518-414b-9d2b-3202edb8e51e/45473626371.png"
+   ],
+   "mbRgMbid": "c186af9e-fa50-4e0f-ac10-8c38324c4d2a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼邊（中速律動曲多，恐 2.8–3.0）；嚴格說屬暫停的 ml22 日本 neo-soul，依主線點名提",
+   "round": 2
+  },
+  {
+   "artist": "For Tracy Hyde",
+   "album": "Hotel Insomnia",
+   "year": 2022,
+   "label": "",
+   "country": "jp",
+   "faction": "dream",
+   "genres": [
+    "rock"
+   ],
+   "why": "For Tracy Hyde 解散前最後一張，夢幻吉他柔牆與合成器墊，日本 dream pop 二線代表",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1,
+    "z": 0.6,
+    "why": "柔牆吉他＋合成器墊，中慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ecc7d84e-0262-460b-bb5c-38548523dcc4",
+    "https://coverartarchive.org/release/030ed555-71f0-469a-9169-5b80c9835427/34348818918.jpg",
+    "https://music.apple.com/tw/album/hotel-insomnia/1656219329?uo=4"
+   ],
+   "mbRgMbid": "ecc7d84e-0262-460b-bb5c-38548523dcc4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "樂團多中速吉他 pop，x 恐 2.8–3.0",
+   "round": 2
+  },
+  {
+   "artist": "The fin.",
+   "album": "There",
+   "year": 2018,
+   "label": "",
+   "country": "jp",
+   "faction": "dream",
+   "genres": [
+    "rock"
+   ],
+   "why": "The fin. 第二張，倫敦錄製的濕合成器墊與殘響人聲",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "濕合成器墊、殘響、慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c9a619ea-40d0-4d07-89c5-72c0f1232f57",
+    "https://coverartarchive.org/release/9802f5ef-79b3-4517-b281-12221592c3fe/19844740656.jpg",
+    "https://music.apple.com/tw/album/there/1338638509?uo=4"
+   ],
+   "mbRgMbid": "c9a619ea-40d0-4d07-89c5-72c0f1232f57",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "本張比首作冷，色溫最貼邊，可優先汰",
+   "round": 2
+  },
+  {
+   "artist": "声音玩具",
+   "album": "爱是昂贵的",
+   "year": 2015,
+   "label": "",
+   "country": "cn",
+   "faction": "dream",
+   "genres": [
+    "rock"
+   ],
+   "why": "声音玩具第二張，9 首 70 分鐘的慢迷幻長曲，殘響吉他厚而暖",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "慢長曲、殘響吉他厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/69af560c-b93e-4029-a9e9-3b97fd2131af",
+    "https://coverartarchive.org/release/35230e6d-ade1-4155-9e79-9f5c748b1d12/40570091488.jpg",
+    "https://music.apple.com/tw/album/%E7%88%B1%E6%98%AF%E6%98%82%E8%B4%B5%E7%9A%84/1610202987?uo=4"
+   ],
+   "mbRgMbid": "69af560c-b93e-4029-a9e9-3b97fd2131af",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Sound Toy",
+   "uncertain": "池中中國獨立搖滾多判冷；z 風險",
+   "round": 2
+  },
+  {
+   "artist": "声音玩具",
+   "album": "劳动之余",
+   "year": 2021,
+   "label": "",
+   "country": "cn",
+   "faction": "dream",
+   "genres": [
+    "rock"
+   ],
+   "why": "声音玩具第三張，8 首 46 分的慢迷幻搖滾，旋律清楚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.5,
+    "why": "慢迷幻搖滾、殘響厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2941d7af-f9f8-4026-afc4-f107ee14c10d",
+    "https://coverartarchive.org/release/9959e3e8-1f35-46d7-b894-aef093cfd7fe/40584651229.jpg",
+    "https://music.apple.com/tw/album/%E5%8A%B3%E5%8A%A8%E4%B9%8B%E4%BD%99/1597320706?uo=4"
+   ],
+   "mbRgMbid": "2941d7af-f9f8-4026-afc4-f107ee14c10d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Sound Toy",
+   "uncertain": "同上；同團三張全提，主線可只留一兩張",
+   "round": 2
+  },
+  {
+   "artist": "問題總部",
+   "album": "User Guide: I",
+   "year": 2020,
+   "label": "",
+   "country": "tw",
+   "faction": "cn-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "台灣 R&B 樂團問題總部首張，樂團編制的 neo-soul（後以《我在這裡》奪金音最佳節奏藍調專輯）",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.8,
+    "z": 0.9,
+    "why": "樂團 neo-soul，貝斯溫厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/68e65270-7d42-416e-97c4-fc80dd63fddb",
+    "https://coverartarchive.org/release/c273e612-c6f4-413b-97bd-d2761a1aa878/34335448131.jpg",
+    "https://music.apple.com/tw/album/user-guide-i/1515233815?uo=4"
+   ],
+   "mbRgMbid": "68e65270-7d42-416e-97c4-fc80dd63fddb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "聲音憑樂種推估；樂團律動曲可能 x 2.8",
+   "round": 2
+  },
+  {
+   "artist": "Kiri T",
+   "album": "Golden Kiri",
+   "year": 2019,
+   "label": "",
+   "country": "hk",
+   "faction": "cn-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "香港 R&B 創作歌手 Kiri T 首張，爵士和弦與慵懶人聲",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 0.9,
+    "why": "慵懶 R&B，爵士和弦"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3bde885d-026a-4936-b9fe-96290baf7e9e",
+    "https://coverartarchive.org/release/019ff303-670f-44bc-b0de-a7187e9de5bb/44889908983.jpg"
+   ],
+   "mbRgMbid": "3bde885d-026a-4936-b9fe-96290baf7e9e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "聲音憑印象；粵語流行 R&B 判輕風險",
+   "round": 2
+  },
+  {
+   "artist": "方大同",
+   "album": "夢想家 The Dreamer",
+   "year": 2024,
+   "label": "",
+   "country": "hk",
+   "faction": "cn-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "方大同生前最後一張專輯，慢板靈魂與溫熱合成器墊",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 1,
+    "why": "慢板靈魂、溫墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/70d5aba0-f357-4b27-a39b-b4d0018fba0c",
+    "https://coverartarchive.org/release/decb48fe-b689-4165-88b4-cc020ed1c6a9/41331667442.jpg"
+   ],
+   "mbRgMbid": "70d5aba0-f357-4b27-a39b-b4d0018fba0c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Khalil Fong",
+   "uncertain": "華語 R&B 判輕風險（同第一輪方大同兩張）",
+   "round": 2
+  }
+ ],
+ "notes": [
+  "第一輪 21 張＋第二輪 15 張＝36 張（含 Colde 兩張 EP 建議汰，實際可用 34）。不湊數。",
+  "主場景幾乎枯竭：池中華語主流 R&B 已大量判輕放鬆（陶喆 3 張 y −0.4～−0.5、林俊傑、孫燕姿、蔡健雅、陳奕迅、曹格、林憶蓮、9m88 後兩張、持修、?te《A Bedroom》y 0.3），依規則同時期同路線不提；韓國 R&B 同樣判輕（Zion.T、Crush、Brown Eyed Soul、Yerin Baek、Heize），SCENES 點名的 Zion.T／Crush 因此不提，DEAN 只有 EP。",
+  "新撞池已排除：溫蒂漫步《Midnight Blue》（已在池，判雀躍）、잔나비《전설》（已在池，y −0.2 判放鬆）。",
+  "本批多數 moodGuess 憑曲風與藝人路線推估（無逐曲試聽），uncertain 欄已逐張寫風險；色溫最貼邊的依序：jeebanoff、보수동쿨러、The fin.、DSPS、声音玩具（ml4 教訓：東亞 dream pop 色溫策展普遍高估 0.4–0.6），質地最貼邊的：方大同兩張、Hoody、Gareth.T、岡田拓郎（華語／韓國 R&B 混音乾淨易判輕）。主線汰換建議先從這兩組下手。",
+  "LINION 前兩張 MB 查無，走人工身分（Discogs release＋Hypebeast／關鍵評論網）；《Me In Dat Blue》Discogs 標 Album 但只有 7 首，請主線判定是否算正規專輯。",
+  "Colde《Love Part 1／Part 2》MB 標 Album、各 8 首，印象中韓媒稱「정규」；若查證為 mini album 應汰（派工規則：韓國 mini album 一律算 EP）。",
+  "WebSearch 用 3 次（華語 neo-soul 搜尋、金音獎 R&B 名單、LINION 前兩張）。",
+  "第二輪（round:2）：主線點名方向逐一查過。不提的：雀斑（明亮 pop rock）、Hello Nico（池中判頹靡 z −0.6）、검정치마（池中 3 張 y 0.2–0.5 判放鬆）、Sam Kim《Sun and Moon》（原聲乾淨）、SURL／Luby Sparks（中快吉他 pop）、羊文学（中速 alt rock）、ayU tokiO／Homecomings（乾淨 indie pop）、Serrini（民謠向）、SE SO NEON《NOW》（搖滾向；《비적응》為 EP）、DSPS 只有一張全長、鄧小巧／夏日入侵企画／謝震廷 MB 無專輯且路線不合、9m88 首張《平庸之上》已在池、黃宣《BEANSTALK》8 首 20 分屬 EP 長度不提、Lee Hi 4 ONLY 混流行快歌不提、sogumm 池中 y 0.6 且 md4 判冷不提。",
+  "第一輪疑點處理：Colde《Love Part 1》《Love Part 2》查明為 EP（英文維基、namu wiki；8 首 27／30 分），uncertain 已改「EP，建議汰」；LINION《Me In Dat Blue》媒體稱首張專輯，保留但標邊界。",
+  "WebSearch 第二輪用 2 次（金音最佳節奏藍調名單、Colde 正規性）；全批合計 5 次。"
+ ]
+}

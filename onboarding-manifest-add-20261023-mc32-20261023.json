@@ -1,0 +1,2264 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-mc32",
+ "batchNote": "薄細項策展線（add-20261023-mc32）",
+ "createdAt": "2026-10-23T09:21:53Z",
+ "albums": [
+  {
+   "artist": "Arditti Quartet",
+   "album": "Lachenmann: Grido / Reigen seliger Geister / Gran Torso",
+   "composer": "Lachenmann",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "1d1e3342-01b8-4945-a927-b81c0d8d5290",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "弦樂四重奏／三重奏：Lachenmann 具體音樂式弦樂四重奏三部曲的 Arditti 錄音，把弦樂器當噪音來源，是新複雜主義之外最尖的一支｜⚠ MB 首發日 2007（Kairos 再版）；Arditti 原始錄音年不詳，取 MB｜MB release-group 1d1e3342-01b8-4945-a927-b81c0d8d5290：title「Grido / Reigen seliger Geister / Gran Torso」、Album、first-release-date 2007-07、artist-credit「Helmut Lachenmann; Arditti String Quartet」。證據：https://musicbrainz.org/release-group/1d1e3342-01b8-4945-a927-b81c0d8d5290 https://coverartarchive.org/release-group/1d1e3342-01b8-4945-a927-b81c0d8d5290/front",
+    "queryAlias": "Grido / Reigen seliger Geister / Gran Torso；Helmut Lachenmann; Arditti String Quartet"
+   },
+   "research": {
+    "suggestedYear": 2007,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1d1e3342-01b8-4945-a927-b81c0d8d5290/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "貝多芬的故居裡，四把琴被當成噪音的來源。Arditti Quartet 這支弦樂四重奏錄過的 CD 超過 200 張；2006 年，他們進駐波昂這座故居，替德籍作曲家 Helmut Lachenmann 錄下三部四重奏。Gran Torso 從 1971 年起寫，弦樂器把推進和聲的差事交了出去，弦被刮、被拉、被敲擊。Lachenmann 早年隨 Nono 學習，主張發出聲音的動作與得到的音響同樣重要。Grido 是他的第三號，Kairos 的唱片 2007 年上市。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4147166",
+     "https://en.wikipedia.org/wiki/Arditti_Quartet",
+     "https://en.wikipedia.org/wiki/Helmut_Lachenmann",
+     "https://musicbrainz.org/release-group/1d1e3342-01b8-4945-a927-b81c0d8d5290"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/d0/56/79/d0567915-c06c-119b-7210-969f05cae0c1/mzaf_15604414015647158251.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "appleCollectionId": "1660912576",
+    "storefront": "FR",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple fr 1660912576「Arditti String Quartet《Helmut Lachenmann: String Quartets Nos. 1-3》」：主線人工配對：Kairos 2007 Arditti 同一錄音（℗ 2007 KAIROS），Apple 曲名改寫為 String Quartet No. 1–3，取第 1 軌〈String Quartet No. 3 (\"Grido\") [2001/2]〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Quartetto Prometeo",
+   "album": "Sciarrino: Quartetto N.7 / Quartetto N.8 / Sei quartetti brevi",
+   "composer": "Sciarrino",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7ffac20a-6157-4673-8e4c-fd350bf47679",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "弦樂四重奏／三重奏：Sciarrino 以耳語般極弱音營造懸疑的四重奏，安靜但緊繃，屬 Feldman／Ligeti 式的躁｜策展無疑點｜MB release-group 7ffac20a-6157-4673-8e4c-fd350bf47679：title「Quartetto N.7 / Quartetto N.8 / Sei quartetti brevi」、Album、first-release-date 2012-06、artist-credit「Salvatore Sciarrino; Quartetto Prometeo」。證據：https://musicbrainz.org/release-group/7ffac20a-6157-4673-8e4c-fd350bf47679 https://music.apple.com/us/album/1654915058",
+    "queryAlias": "Quartetto N.7 / Quartetto N.8 / Sei quartetti brevi；Salvatore Sciarrino; Quartetto Prometeo"
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/d6/6e/1c/d66e1c00-c318-f0e6-7362-3ffa1429898e/cover.jpg/600x600bb.jpg",
+    "note": "CAA 無圖（release-group 404）；取已釘定試聽的 Apple 1654915058 官方圖，主線 2026-10-23 目視與盤名相符。",
+    "appleCollectionId": "1654915058",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "首演第八號的四個人，隔年就把它錄成唱片。1947 年生於巴勒摩的 Sciarrino 寫完這首弦樂四重奏後，2009 年 5 月交由 Quartetto Prometeo 首演。到了 2010 年 2 月，四人在薩爾蘭廣播電台錄下第七、第八號，再加上六首短篇四重奏。第八號用像人聲的動機推進，帶著微分音、滑音與嘆息般的氣息；六首短篇則鋪滿羽毛般的泛音。Kairos 拖到 2012 年才把錄音發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7707691",
+     "https://ressources.ircam.fr/en/work/quartetto-n.-8",
+     "https://en.wikipedia.org/wiki/Salvatore_Sciarrino",
+     "https://lafolia.com/italian-vacation-10-recent-sciarrino-on-kairos",
+     "https://musicbrainz.org/release-group/7ffac20a-6157-4673-8e4c-fd350bf47679"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/d0/25/07/d0250723-a458-fb9c-43dc-aa332552f9e2/mzaf_6324029516751007004.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "appleCollectionId": "1654915058",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1654915058「Quartetto Prometeo, Giulio Rovighi, Aldo Campagnari, Carmelo Giallombardo & Francesco Dillon《Salvatore Sciarrino: String Quartets 7,8 et Al》」：主線人工配對：Kairos 2012 Quartetto Prometeo 同一錄音，取第 1 軌〈Quartetto n. 7 (1999)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Arditti Quartet",
+   "album": "Dusapin: Quatuors à cordes & Trio",
+   "composer": "Dusapin",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d5a00c9a-4d51-4908-aa48-98abbdf9cc85",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "弦樂四重奏／三重奏：Dusapin 弦樂四重奏與三重奏的 Arditti 全集，法國當代的緊繃無調弦樂寫作｜策展無疑點｜MB release-group d5a00c9a-4d51-4908-aa48-98abbdf9cc85：title「Quatuors à cordes & Trio」、Album、first-release-date 2010-04、artist-credit「Pascal Dusapin; Arditti Quartet」。證據：https://musicbrainz.org/release-group/d5a00c9a-4d51-4908-aa48-98abbdf9cc85 https://coverartarchive.org/release-group/d5a00c9a-4d51-4908-aa48-98abbdf9cc85/front",
+    "queryAlias": "Quatuors à cordes & Trio；Pascal Dusapin; Arditti Quartet"
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d5a00c9a-4d51-4908-aa48-98abbdf9cc85/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 37,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 37）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "第二號被切成二十四個時區，短的只有十八秒。年輕時當過爵士鋼琴手的法國人 Pascal Dusapin，後來改走作曲，曾在索邦隨 Xenakis 上課；這套雙 CD 由 Arditti Quartet 錄齊他的五部弦樂四重奏，外加一首弦樂三重奏。第二號名叫《Time Zones》，整首約 38 分鐘。他的語彙建立在微分音與微滑音上，拒絕重複。四人 2008 年在巴登巴登完成錄音，æon 等到 2010 年推出；Arditti 早在 1984 年就錄過他的作品。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4737250",
+     "https://www.discogs.com/release/2349543",
+     "https://en.wikipedia.org/wiki/Pascal_Dusapin",
+     "https://musicbrainz.org/release-group/d5a00c9a-4d51-4908-aa48-98abbdf9cc85"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/cb/1b/c9/cb1bc9f9-8604-efd7-3699-cb0f210054da/mzaf_9768226670258220738.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "appleCollectionId": "1571833614",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1571833614「Arditti String Quartet《Dusapin: Quatuors à cordes & Trio》」：曲目 29/29 對上 MB 原盤（Apple 共 34 軌），取第 1 軌〈Quatuor à cordes No. 5 (2004-2005)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Arditti Quartet",
+   "album": "Berio: The String Quartets",
+   "composer": "Berio",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4c7c4dbe-e618-4386-98f4-1b6a95036364",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "弦樂四重奏／三重奏：Berio 全部弦樂四重奏（Sincronie、Notturno、Quartetto）的 Arditti 錄音，序列後的戰後前衛弦樂｜策展無疑點｜MB release-group 4c7c4dbe-e618-4386-98f4-1b6a95036364：title「The String Quartets」、Album、first-release-date 2002、artist-credit「Luciano Berio; Arditti String Quartet」。證據：https://musicbrainz.org/release-group/4c7c4dbe-e618-4386-98f4-1b6a95036364 https://coverartarchive.org/release-group/4c7c4dbe-e618-4386-98f4-1b6a95036364/front",
+    "queryAlias": "The String Quartets；Luciano Berio; Arditti String Quartet"
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4c7c4dbe-e618-4386-98f4-1b6a95036364/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 2,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "以電子音樂出名的 Berio，這張只寫給四把琴。在 RAI 共同創立音響學研究室的 Luciano Berio，四部弦樂四重奏全由 Arditti Quartet 收進這張。篇幅最長的 Notturno 約 25 分鐘，Glosse 則完成於 1997 年。錄音地點選在東芬奇利的一間教堂，時值 2002 年，Montaigne 同年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1339021",
+     "https://en.wikipedia.org/wiki/List_of_compositions_by_Luciano_Berio",
+     "https://en.wikipedia.org/wiki/Luciano_Berio",
+     "https://en.wikipedia.org/wiki/Arditti_Quartet",
+     "https://musicbrainz.org/release-group/4c7c4dbe-e618-4386-98f4-1b6a95036364"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Keller Quartett",
+   "album": "Kurtág: Musik für Streichinstrumente",
+   "composer": "Kurtág",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "add3a0ff-adb8-3e39-934a-4c2e4a69cb7c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "弦樂四重奏／三重奏：Kurtág 弦樂四重奏作品（Op.1、Officium breve、Microludes）的 Keller 版，格言式的緊繃與寒意｜策展無疑點｜MB release-group add3a0ff-adb8-3e39-934a-4c2e4a69cb7c：title「Musik für Streichinstrumente」、Album、first-release-date 1996、artist-credit「György Kurtág; Keller Quartett」。證據：https://musicbrainz.org/release-group/add3a0ff-adb8-3e39-934a-4c2e4a69cb7c https://coverartarchive.org/release-group/add3a0ff-adb8-3e39-934a-4c2e4a69cb7c/front",
+    "queryAlias": "Musik für Streichinstrumente；György Kurtág; Keller Quartett"
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/add3a0ff-adb8-3e39-934a-4c2e4a69cb7c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 61,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 61）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "作曲家本人坐上鋼片琴，只彈最後兩小節。Keller Quartett 的團員都在布達佩斯跟匈牙利作曲家 György Kurtág 學過，這裡收的是老師的弦樂四重奏與弦樂小品。他上場的那首是 Ligatura，曲中用上兩把大提琴；Aus der Ferne III 則以耳語般的極弱音開場。Op. 1 四重奏寫於 1959 年，在此之前他在巴黎陷入重度憂鬱，心理治療把他導向精簡的手勢。ECM 的版本在 1996 年上架。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1382656",
+     "https://ecmreviews.com/2010/12/27/musik-fur-streichinstrumente/",
+     "https://en.wikipedia.org/wiki/György_Kurtág",
+     "https://musicbrainz.org/release-group/add3a0ff-adb8-3e39-934a-4c2e4a69cb7c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/bf/d5/e8/bfd5e8c5-361b-3e2e-ca9d-e8ad031f22c1/mzaf_9137037264914719795.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "appleCollectionId": "1452666078",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1452666078「Keller Quartett & Miklós Perényi《Musik Für Streichinstrumente》」：主線人工配對：ECM 同一錄音（Keller Quartett & Perényi），Apple 曲目拆分較細，取第 1 軌〈Aus Der Ferne III Für Streichquartett (1991)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "JACK Quartet",
+   "album": "Xenakis: Complete String Quartets",
+   "composer": "Xenakis",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7fc1c5e3-eb6a-4612-bc53-f0d9f3072f1d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "弦樂四重奏／三重奏：Xenakis 全部弦樂四重奏（ST/4、Tetras、Tetora、Ergma）的 JACK 錄音，數學式的尖銳緊繃｜⚠ Tetras 等密集段 y 可能略高於 −0.2｜MB release-group 7fc1c5e3-eb6a-4612-bc53-f0d9f3072f1d：title「Complete String Quartets」、Album、first-release-date 2009-05-05、artist-credit「Iannis Xenakis; JACK Quartet」。證據：https://musicbrainz.org/release-group/7fc1c5e3-eb6a-4612-bc53-f0d9f3072f1d https://coverartarchive.org/release-group/7fc1c5e3-eb6a-4612-bc53-f0d9f3072f1d/front",
+    "queryAlias": "Complete String Quartets；Iannis Xenakis; JACK Quartet"
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7fc1c5e3-eb6a-4612-bc53-f0d9f3072f1d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 306,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 306）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一台 IBM 主機，替其中一首排好了每個音。當過建築師的 Iannis Xenakis 把統計數學寫進音樂，JACK Quartet 錄齊了他的四首弦樂四重奏；樂團成立於 2005 年，由 Eastman 音樂學院的同學在紐約組成。那一首是 ST/4，IBM 7090 跑隨機程式，替它決定音高、時值與力度。Ergma 以大七度和弦構成刺耳的張力。2008 年四人移師科隆錄音，Mode 於第二年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2607664",
+     "https://en.wikipedia.org/wiki/JACK_Quartet",
+     "https://en.wikipedia.org/wiki/Iannis_Xenakis",
+     "https://books.openbookpublishers.com/10.11647/obp.0390/ch6.xhtml",
+     "https://en.wikipedia.org/wiki/List_of_compositions_by_Iannis_Xenakis",
+     "https://arcana.fm/2017/02/26/jack-quartet-xenakis-wigmore-hall/",
+     "https://musicbrainz.org/release-group/7fc1c5e3-eb6a-4612-bc53-f0d9f3072f1d"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d9/46/2d/d9462df5-f5fe-09f0-6dad-71c011645a4f/mzaf_2583991820575120308.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "appleCollectionId": "1245779726",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1245779726「JACK Quartet《Xenakis Edition, Vol. 10: String Quartets》」：曲目 4/4 對上 MB 原盤（Apple 共 4 軌），取第 1 軌〈Tetras〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Arditti Quartet",
+   "album": "Carter: The Works for String Quartet, Vol. I: Quartets 1 & 4",
+   "composer": "Carter",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "948b3861-7393-4b27-aa4a-a83acb3e7d9a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "弦樂四重奏／三重奏：Carter 弦樂四重奏第一、四號的 Arditti 錄音，複節奏與獨立聲部的美式現代主義高峰｜⚠ MB RG 記 2004（Naïve 再版），Discogs 記 1988 Etcetera 原版，取 1988｜MB release-group 948b3861-7393-4b27-aa4a-a83acb3e7d9a：title「The Works for String Quartet, Vol. I: Quartets 1 & 4」、Album、first-release-date 2004-03-22、artist-credit「Elliott Carter; The Arditti String Quartet」。證據：https://musicbrainz.org/release-group/948b3861-7393-4b27-aa4a-a83acb3e7d9a https://www.discogs.com/master/894268 https://www.discogs.com/release/7556711",
+    "queryAlias": "The Works for String Quartet, Vol. I: Quartets 1 & 4；Elliott Carter; The Arditti String Quartet"
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "7556711",
+    "url": "https://i.discogs.com/0H25MnAMZLnE8DiD3syaKZnL2iBHKGdzjn5zpDLltb0/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc1NTY3/MTEtMTYwNzQ1NzQy/OC00ODAzLmpwZWc.jpeg",
+    "note": "CAA 無圖（release-group 404）；取 Discogs 7556711（Etcetera KTC 1065）封面；主線 2026-10-23 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "在沙漠住了一年，寫出四重奏第一號。兩度以四重奏得普立茲獎的美國人 Elliott Carter，1950 年起落腳亞利桑那州的沙漠寫下這首，Arditti Quartet 把它與第四號錄在一起。第一號以速度調變取代調性。第四號讓每件樂器各有自己的音程與速度，由多重節奏支配，大提琴幾乎一路拉著七連音。1988 年 6 月倫敦的錄音由 Carter 本人監製，第四號在這裡首度留下錄音，Etcetera 當年就推出。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7556711",
+     "https://musicbrainz.org/release-group/948b3861-7393-4b27-aa4a-a83acb3e7d9a",
+     "https://en.wikipedia.org/wiki/String_Quartet_No._1_(Carter)",
+     "https://en.wikipedia.org/wiki/String_Quartet_No._4_(Carter)",
+     "https://en.wikipedia.org/wiki/Elliott_Carter"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Quatuor Parisii",
+   "album": "Boulez: Livre pour quatuor / Webern: Trio, op. 20 / Mouvement pour trio à cordes",
+   "composer": "Boulez",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "cf7f111f-9a68-41de-900b-56e22d4d8785",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "弦樂四重奏／三重奏：Boulez《Livre pour quatuor》的 Parisii 錄音，搭配 Webern 弦樂三重奏，序列主義室內樂的核心｜⚠ MB 標題含作曲家 Boulez；Webern 三重奏為極弱點描｜MB release-group cf7f111f-9a68-41de-900b-56e22d4d8785：title「Boulez: Livre pour quatuor / Webern: Trio, op. 20 / Mouvement pour trio à cordes」、Album、first-release-date 2000、artist-credit「Pierre Boulez, Anton Webern; Quatuor Parisii」。證據：https://musicbrainz.org/release-group/cf7f111f-9a68-41de-900b-56e22d4d8785 https://coverartarchive.org/release-group/cf7f111f-9a68-41de-900b-56e22d4d8785/front",
+    "queryAlias": "Pierre Boulez, Anton Webern; Quatuor Parisii"
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cf7f111f-9a68-41de-900b-56e22d4d8785/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "原本是六張能自選順序的活頁，其中一張始終沒寫完。二十三歲前後，法國作曲家 Pierre Boulez 於 1948 至 1949 年寫下弦樂四重奏《Livre pour quatuor》，這裡由巴黎的 Quatuor Parisii 演奏。缺的是第四樂章。2000 年，四人在 Boulez 的建議下錄成少了這一章的版本，琴橋拉奏、撥弦與弓桿擊弦快速切換。那一章要到 2018 年才有人重建。同盤另收 Webern 的弦樂三重奏。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/cf7f111f-9a68-41de-900b-56e22d4d8785",
+     "https://www.wisemusicclassical.com/work/49983/Livre-pour-Quatuor--Pierre-Boulez/",
+     "https://fr.wikipedia.org/wiki/Quatuor_Parisii",
+     "https://www.classical-music.com/reviews/chamber/boulez-webern",
+     "https://en.wikipedia.org/wiki/Livre_pour_quatuor",
+     "https://fugueforthought.de/2016/03/23/pierre-boulez-livre-pour-quatuor-1962/",
+     "https://en.wikipedia.org/wiki/List_of_compositions_by_Anton_Webern"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Arditti Quartet",
+   "album": "Ligeti Edition 1: String Quartets and Duets",
+   "composer": "Ligeti",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "85478581-b456-31f0-9c9a-40112f5ad47e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "弦樂四重奏／三重奏：Ligeti 兩首弦樂四重奏（Sony Ligeti Edition 1）的 Arditti 錄音，這條線公認的冷冽先例｜策展無疑點｜MB release-group 85478581-b456-31f0-9c9a-40112f5ad47e：title「Ligeti Edition 1: String Quartets and Duets」、Album、first-release-date 1996、artist-credit「György Ligeti; Arditti String Quartet」。證據：https://musicbrainz.org/release-group/85478581-b456-31f0-9c9a-40112f5ad47e https://coverartarchive.org/release-group/85478581-b456-31f0-9c9a-40112f5ad47e/front",
+    "queryAlias": "György Ligeti; Arditti String Quartet"
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/85478581-b456-31f0-9c9a-40112f5ad47e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 6,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 6）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "被同行封為「Bartók 第七號」的弦樂曲。György Ligeti 自 1953 年在匈牙利動筆寫第一號弦樂四重奏，演出者是 Arditti Quartet；當時 Bartók 的四重奏遭到禁演，他只能讀譜。給它這個封號的是 Kurtág。寫於 1968 年的第二號，第三樂章標著「像精密機械」，第四樂章標示狂怒與粗暴。Arditti 在 1970 年代就錄過 Ligeti 全部的四重奏，這一版則是 1994 年在倫敦重錄，Sony 1996 年推出。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3991739",
+     "https://en.wikipedia.org/wiki/Arditti_Quartet",
+     "https://en.wikipedia.org/wiki/String_Quartet_No._1_(Ligeti)",
+     "https://en.wikipedia.org/wiki/String_Quartet_No._2_(Ligeti)",
+     "https://musicbrainz.org/release-group/85478581-b456-31f0-9c9a-40112f5ad47e",
+     "https://en.wikipedia.org/wiki/György_Ligeti"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "Apple 只有 Arditti 2017 Wigmore Hall 現場等其他錄音，無 Sony Ligeti Edition 1 條目。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ensemble Recherche",
+   "album": "Lachenmann: Streichtrio / temA / Trio fluido",
+   "composer": "Lachenmann",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "26815b1b-e501-44bf-a14a-c4f59579fdf9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "弦樂四重奏／三重奏：Lachenmann 的弦樂三重奏等作（Ensemble Recherche），具體音樂式室內樂｜策展無疑點｜MB release-group 26815b1b-e501-44bf-a14a-c4f59579fdf9：title「Streichtrio / temA / Trio fluido」、Album、first-release-date 1994、artist-credit「Helmut Lachenmann; Ensemble Recherche, Linda Hirst」。證據：https://musicbrainz.org/release-group/26815b1b-e501-44bf-a14a-c4f59579fdf9 https://www.discogs.com/release/8452244",
+    "queryAlias": "Streichtrio / temA / Trio fluido；Helmut Lachenmann; Ensemble Recherche, Linda Hirst"
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "8452244",
+    "url": "https://i.discogs.com/6zCYYF4lne39NswHX4dJSpKjdf2q84ehvDZ-dERr2I0/rs:fit/g:sm/q:90/h:487/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg0NTIy/NDQtMTQ2MTg4NDA0/NC05NDM4LmpwZWc.jpeg",
+    "note": "CAA 無圖（release-group 404）；取 Discogs 8452244（Montaigne MO 782023）封面；主線 2026-10-23 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "人聲不唱詞，只和長笛、大提琴湊成三人。1965 到 1968 年間，生於斯圖加特的 Lachenmann 寫下三首三重奏，由弗萊堡的獨奏者團體 Ensemble Recherche 演出。帶人聲的那首叫 temA。Streichtrio 由三件弦樂擔綱，Trio fluido 則是單簧管、中提琴與打擊。唱片在 1994 年問世。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/8452244",
+     "https://de.wikipedia.org/wiki/Ensemble_Recherche",
+     "https://en.wikipedia.org/wiki/Helmut_Lachenmann",
+     "https://de.wikipedia.org/wiki/Helmut_Lachenmann",
+     "https://musicbrainz.org/release-group/26815b1b-e501-44bf-a14a-c4f59579fdf9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Trio Recherche",
+   "album": "Rihm: Musik für drei Streicher",
+   "composer": "Rihm",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "643443f3-5077-4dfd-9c06-5bd79fd79914",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "弦樂四重奏／三重奏：Rihm 弦樂三重奏的 Trio Recherche 錄音，表現主義式的緊繃無調｜策展無疑點｜MB release-group 643443f3-5077-4dfd-9c06-5bd79fd79914：title「Musik für drei Streicher」、Album、first-release-date 1999、artist-credit「Wolfgang Rihm; Trio Recherche」。證據：https://musicbrainz.org/release-group/643443f3-5077-4dfd-9c06-5bd79fd79914 https://www.discogs.com/master/3786830",
+    "queryAlias": "Musik für drei Streicher；Wolfgang Rihm; Trio Recherche"
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/cd/14/6c/cd146c3c-adfc-c3bd-1bad-f51faec4ca40/cover.jpg/600x600bb.jpg",
+    "note": "CAA 無圖（release-group 404）；取已釘定試聽的 Apple 1663467240 官方圖，主線 2026-10-23 目視與盤名相符。",
+    "appleCollectionId": "1663467240",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 1,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 1），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "幾乎不打草稿寫成的三重奏，長達五十五分鐘。1952 年生於卡爾斯魯厄的 Wolfgang Rihm 於 1977 年譜下此曲，負責演奏的 Trio Recherche 是 Ensemble Recherche 裡的三位弦樂手。曲子歸在他的「筆記本作品」系列。三人 1996 年就在同一座城市錄音，唱片到 1999 年才發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/3786830",
+     "https://www.discogs.com/release/2861997",
+     "https://musicbrainz.org/release-group/643443f3-5077-4dfd-9c06-5bd79fd79914",
+     "https://de.wikipedia.org/wiki/Ensemble_Recherche",
+     "https://en.wikipedia.org/wiki/Wolfgang_Rihm"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/b2/bf/a2/b2bfa2ac-ba08-b7b9-822a-07f6dbd31c87/mzaf_10796482000211056184.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "appleCollectionId": "1663467240",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1663467240「ensemble recherche, Melise Mellinger, Barbara Maurer & Lucas Fels《Wolfgang Rihm: Musik für drei Streicher (trio recherche)》」：主線人工配對：Kairos 1999 同一錄音，取第 1 軌〈Musik für drei Streicher (1977): Erster Teil: I Lento〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Charles Rosen",
+   "album": "Carter: Night Fantasies / Piano Sonata",
+   "composer": "Carter",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "02bc90e5-f5a9-44a9-b37b-960aab6ed56b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "鋼琴獨奏：Carter 鋼琴奏鳴曲與《Night Fantasies》的 Rosen 錄音，美式複節奏鋼琴的代表｜策展無疑點｜MB release-group 02bc90e5-f5a9-44a9-b37b-960aab6ed56b：title「Night Fantasies / Piano Sonata」、Album、first-release-date 1983、artist-credit「Elliott Carter; Charles Rosen」。證據：https://musicbrainz.org/release-group/02bc90e5-f5a9-44a9-b37b-960aab6ed56b https://www.discogs.com/master/688040",
+    "queryAlias": "Night Fantasies / Piano Sonata；Elliott Carter; Charles Rosen"
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "4333359",
+    "url": "https://i.discogs.com/YXnYFNN_SqwjzUG-y7RGdSlcvxpx4qa52bnFtLpRWec/rs:fit/g:sm/q:90/h:369/w:369/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzMzMz/NTktMTM2MjAxNTA2/Mi00MjY4LmpwZWc.jpeg",
+    "note": "CAA 無圖（release-group 404）；取 Discogs 4333359（Etcetera ETC 1008）封面；主線 2026-10-23 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "委託這首曲子的四位鋼琴家，他是其中一位。寫過《The Classical Style》的美國鋼琴家 Charles Rosen，1980 年與另外三位同行委託 Elliott Carter 寫下鋼琴獨奏曲 Night Fantasies。曲子由安靜的夜間段落開頭，最後堆成響亮的強和弦。B 面是 Carter 1946 年的奏鳴曲，LP 在 1983 年面世。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4333359",
+     "https://en.wikipedia.org/wiki/Charles_Rosen",
+     "https://en.wikipedia.org/wiki/Night_Fantasies",
+     "https://en.wikipedia.org/wiki/Elliott_Carter",
+     "https://musicbrainz.org/release-group/02bc90e5-f5a9-44a9-b37b-960aab6ed56b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "Apple 只有 Rosen 後來為 Bridge 重錄的鋼琴全集，非本 Etcetera 1983 錄音。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Stephanos Thomopoulos",
+   "album": "Xenakis: L'Œuvre pour piano",
+   "composer": "Xenakis",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "38110d15-5426-40af-8ab8-e6ca32e9d254",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "鋼琴獨奏：Xenakis 鋼琴作品全集（Herma、Evryali、Mists 等），數學式的鋼琴雨｜策展無疑點｜MB release-group 38110d15-5426-40af-8ab8-e6ca32e9d254：title「L'Œuvre pour piano」、Album、first-release-date 2015-05-05、artist-credit「Iannis Xenakis; Stephanos Thomopoulos」。證據：https://musicbrainz.org/release-group/38110d15-5426-40af-8ab8-e6ca32e9d254 https://coverartarchive.org/release-group/38110d15-5426-40af-8ab8-e6ca32e9d254/front",
+    "queryAlias": "L'Œuvre pour piano；Iannis Xenakis; Stephanos Thomopoulos"
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/38110d15-5426-40af-8ab8-e6ca32e9d254/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 查無），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "他拿演奏博士時研究的，就是這些鋼琴曲。法國第一位取得巴黎音樂院演奏博士的人是鋼琴家 Stephanos Thomopoulos，題目正是希臘裔法籍作曲家 Iannis Xenakis 留下的鋼琴作品。2010 年 10 月，他就在巴黎音樂院錄下這批獨奏曲。其中 Evryali 從頭到尾維持同一個速度，部分段落雙手夠不到，演奏者得自行縮減。盤中另有加入長笛與女高音的 Zyia，以及三首未發表的小品，Timpani 的發行則落在 2015 年。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7191387",
+     "https://musicbrainz.org/release/6f06c63d-7d61-4d48-a134-f118f46e4083",
+     "https://bluethnerworld.com/artists/stephanos-thomopoulos",
+     "https://en.wikipedia.org/wiki/Iannis_Xenakis",
+     "https://en.wikipedia.org/wiki/Herma_(Xenakis)",
+     "https://en.wikipedia.org/wiki/Evryali",
+     "https://en.wikipedia.org/wiki/Mists_(Xenakis)",
+     "https://musicbrainz.org/release-group/38110d15-5426-40af-8ab8-e6ca32e9d254"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/14/fc/e3/14fce343-5a88-256a-2770-dd706050c4ee/mzaf_903229238076074518.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "appleCollectionId": "989934426",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 989934426「Stephanos Thomopoulos《Xenakis: Piano Works》」：主線人工配對：Timpani 2015 同一錄音，取第 1 軌〈Herma〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Arne Deforce",
+   "album": "Xenakis: Complete Cello Works",
+   "composer": "Xenakis",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7b447c65-26d4-4270-9d86-a7cf4cb573df",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "獨奏與二重奏：Xenakis 大提琴全集（Kottos、Nomos Alpha、Charisma 等），Arne Deforce 錄音｜策展無疑點｜MB release-group 7b447c65-26d4-4270-9d86-a7cf4cb573df：title「Complete Cello Works」、Album、first-release-date 2011、artist-credit「Iannis Xenakis; Arne Deforce, Ensemble musikFabrik」。證據：https://musicbrainz.org/release-group/7b447c65-26d4-4270-9d86-a7cf4cb573df https://coverartarchive.org/release-group/7b447c65-26d4-4270-9d86-a7cf4cb573df/front",
+    "queryAlias": "Complete Cello Works；Iannis Xenakis; Arne Deforce, Ensemble musikFabrik"
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7b447c65-26d4-4270-9d86-a7cf4cb573df/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 170,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 170）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "立方體的 24 種旋轉，排出一首大提琴曲。出身比利時奧斯滕德的 Arne Deforce 拉大提琴，在此錄齊 Iannis Xenakis 這位作曲家為這件樂器寫的八首作品。那首曲子叫 Nomos Alpha，24 個段落照正八面體群的置換來排列。八首裡只有它與 Kottos 是獨奏，其餘多半是和單簧管、鋼琴、小提琴、低音大提琴的二重奏，Epicycles 則由 musikFabrik 伴奏。錄音集中在 2010 年，主要場地是布魯日音樂廳，æon 次年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3501527",
+     "https://musicbrainz.org/release/31657f91-e39b-41d3-bdf0-4bb8d320c74b",
+     "https://api.discogs.com/artists/475160",
+     "https://en.wikipedia.org/wiki/Iannis_Xenakis",
+     "https://en.wikipedia.org/wiki/Nomos_Alpha",
+     "https://en.wikipedia.org/wiki/List_of_compositions_by_Iannis_Xenakis",
+     "https://musicbrainz.org/release-group/7b447c65-26d4-4270-9d86-a7cf4cb573df"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/31/f3/15/31f315dd-0a4b-484c-49f0-ba2f5a1eed51/mzaf_16458299302747521782.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "appleCollectionId": "1571811983",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1571811983「Arne Deforce & Ensemble musikFabrik《Xenakis: Complete Cello Works》」：曲目 8/8 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Nomos Alpha〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Pierre-Laurent Aimard",
+   "album": "Lachenmann: Dal niente / Pression / Wiegenmusik / Allegro sostenuto",
+   "composer": "Lachenmann",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f589c772-a4ff-4d40-bc9e-5b36c1bc3aa3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "獨奏與二重奏：Lachenmann 具體音樂器樂作品集（含 Pression、Dal niente），Aimard 等人錄音｜策展無疑點｜MB release-group f589c772-a4ff-4d40-bc9e-5b36c1bc3aa3：title「Dal niente / Pression / Wiegenmusik / Allegro sostenuto」、Album、first-release-date 1993、artist-credit「Helmut Lachenmann; Pierre‐Laurent Aimard, Alain Damiens, Pierre Strauch」。證據：https://musicbrainz.org/release-group/f589c772-a4ff-4d40-bc9e-5b36c1bc3aa3 https://www.discogs.com/release/4759146",
+    "queryAlias": "Dal niente / Pression / Wiegenmusik / Allegro sostenuto；Helmut Lachenmann; Pierre‐Laurent Aimard, Alain Damiens, Pierre Strauch"
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/8c/be/bf/8cbebf6f-73aa-94e6-bcc3-e9b292e0e7b9/00028946552421.rgb.jpg/600x600bb.jpg",
+    "note": "CAA 無圖（release-group 404）；取已釘定試聽的 Apple 1452537214 官方圖，主線 2026-10-23 目視與盤名相符。",
+    "appleCollectionId": "1452537214",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "大提琴手的左手也拿弓，整把琴被搓被敲。掛名的鋼琴家 Pierre-Laurent Aimard 只彈其中兩首，其餘交給單簧管手 Alain Damiens 與大提琴手 Pierre Strauch，三人分演作曲家 Lachenmann 筆下的獨奏曲與三重奏。Strauch 拉的 Pression 用動作記譜，運弓壓力從極輕加到過壓。三人合奏的 Allegro sostenuto 長達 33 分鐘。四首在 1992 年 4 月於 IRCAM 錄成，隔年由 Accord 出版。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4759146",
+     "https://en.wikipedia.org/wiki/Helmut_Lachenmann",
+     "https://de.wikipedia.org/wiki/Helmut_Lachenmann",
+     "https://de.wikipedia.org/wiki/Pression_(Lachenmann)",
+     "https://en.wikipedia.org/wiki/Pierre-Laurent_Aimard",
+     "https://fr.wikipedia.org/wiki/Alain_Damiens",
+     "https://musicbrainz.org/release-group/f589c772-a4ff-4d40-bc9e-5b36c1bc3aa3"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/a0/09/99/a00999a7-165a-2579-ac66-fbc3afbedb33/mzaf_4879768994414845805.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "appleCollectionId": "1452537214",
+    "storefront": "FR",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple fr 1452537214「Pierre-Laurent Aimard, Alain Damiens & Pierre Strauch《Lachenmann: Wiegenmusik》」：曲目 4/4 對上 MB 原盤（Apple 共 4 軌），取第 1 軌〈Wiegenmusik〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ensemble Recherche",
+   "album": "Sciarrino: Lo spazio inverso",
+   "composer": "Sciarrino",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3a990501-1dc3-4954-9efb-c09590590fc7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "室內樂團：Sciarrino《Lo spazio inverso》的 Ensemble Recherche 錄音，耳語般的緊繃室內樂｜策展無疑點｜MB release-group 3a990501-1dc3-4954-9efb-c09590590fc7：title「Lo spazio inverso」、Album、first-release-date 2000、artist-credit「Salvatore Sciarrino; Ensemble Recherche, Kwamé Ryan」。證據：https://musicbrainz.org/release-group/3a990501-1dc3-4954-9efb-c09590590fc7 https://www.discogs.com/release/1174142",
+    "queryAlias": "Lo spazio inverso；Salvatore Sciarrino; Ensemble Recherche, Kwamé Ryan"
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/df/b2/90/dfb2905d-6e5a-f247-0d3a-ee533df4c20e/cover.jpg/600x600bb.jpg",
+    "note": "CAA 無圖（release-group 404）；取已釘定試聽的 Apple 1662906101 官方圖，主線 2026-10-23 目視與盤名相符。",
+    "appleCollectionId": "1662906101",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 28,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 28）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "四首只用三到五件樂器，壓軸才擺出十三人。幾乎靠自學作曲的 Salvatore Sciarrino 與 Ensemble Recherche 的團員有私交，這裡由該團錄下他五部室內樂。三把弦樂器負責 Codex purpureus。壓軸的 Introduzione all'oscuro 由指揮帶著十三位樂手登場。唱片是 Kairos 2000 年的出品。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1174142",
+     "https://brahms.ircam.fr/work/lo-spazio-inverso",
+     "https://brahms.ircam.fr/work/codex-purpureus",
+     "https://brahms.ircam.fr/work/omaggio-a-burri",
+     "https://musicbrainz.org/release/ea857d6e-489f-48a8-ab79-c3667bfd6a62",
+     "https://www.ensemble-recherche.de/en/ensemble",
+     "https://en.wikipedia.org/wiki/Salvatore_Sciarrino",
+     "https://musicbrainz.org/release-group/3a990501-1dc3-4954-9efb-c09590590fc7"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/e4/6e/22/e46e220e-5ec8-278d-7cba-bd4e7b08fc34/mzaf_6505737575434033376.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "appleCollectionId": "1662906101",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1662906101「ensemble recherche & Kwame Ryan《Salvatore Sciarrino: Chamber Music》」：曲目 5/5 對上 MB 原盤（Apple 共 6 軌），取第 1 軌〈Lo spazio inverso (1985) for flute, clarinet, celesta, violin and Violoncello〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ensemble Recherche",
+   "album": "Ferneyhough: Funérailles",
+   "composer": "Ferneyhough",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7825244e-73cd-4b5f-b979-ddc9c646d4de",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "室內樂團：Ferneyhough《Funérailles》系列的 Ensemble Recherche／Arditti 錄音，新複雜主義核心｜策展無疑點｜MB release-group 7825244e-73cd-4b5f-b979-ddc9c646d4de：title「Funérailles」、Album、first-release-date 2006、artist-credit「Brian Ferneyhough; ensemble recherche, Arditti Quartet, Lucas Vis, Irvine Arditti, Christian Dierstein」。證據：https://musicbrainz.org/release-group/7825244e-73cd-4b5f-b979-ddc9c646d4de https://coverartarchive.org/release-group/7825244e-73cd-4b5f-b979-ddc9c646d4de/front",
+    "queryAlias": "Funérailles；Brian Ferneyhough; ensemble recherche, Arditti Quartet, Lucas Vis, Irvine Arditti, Christian Dierstein"
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7825244e-73cd-4b5f-b979-ddc9c646d4de/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 2,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 2），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "作曲家在弗萊堡教書時，樂團在同一城市成立。Ensemble Recherche 的弦樂手與 Arditti 四重奏，加上豎琴，合奏 Brian Ferneyhough 的兩首《Funérailles》。Ferneyhough 1973 到 86 年在當地任教，樂團則誕生於 1985 年。盤中另收一首打擊獨奏與一首小提琴獨奏，唱片 2006 年發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/1584a6c7-0466-4697-8b31-441ef0f4fc6d",
+     "https://www.discogs.com/release/17600569",
+     "https://en.wikipedia.org/wiki/Brian_Ferneyhough",
+     "https://en.wikipedia.org/wiki/Irvine_Arditti",
+     "https://en.wikipedia.org/wiki/Ensemble_Recherche",
+     "https://musicbrainz.org/release-group/7825244e-73cd-4b5f-b979-ddc9c646d4de"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "Apple 只有 Ensemble intercontemporain 演出的他人錄音，無 Ensemble Recherche 本盤。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Nieuw Ensemble",
+   "album": "Ferneyhough: La Chute d'Icare / Superscriptio / Intermedio alla Ciaccona / Études transcendantales / Mnemosyne",
+   "composer": "Ferneyhough",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0f3b9379-71b8-40f1-af60-48d3de406299",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "室內樂團：Ferneyhough 早期室內樂與獨奏作品集（Etcetera），新複雜主義的入門錄音｜⚠ 含女高音（Brenda Mitchell）與小提琴 Irvine Arditti；演出者 Nieuw Ensemble／Ed Spanjaard｜MB release-group 0f3b9379-71b8-40f1-af60-48d3de406299：title「La Chute d'Icare / Superscriptio / Intermedio alla Ciaccona / Études transcendantales / Mnemosyne」、Album、first-release-date 1989-07、artist-credit「Brian Ferneyhough」。證據：https://musicbrainz.org/release-group/0f3b9379-71b8-40f1-af60-48d3de406299 https://www.discogs.com/release/10520400",
+    "queryAlias": "La Chute d'Icare / Superscriptio / Intermedio alla Ciaccona / Études transcendantales / Mnemosyne；Brian Ferneyhough"
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "10520400",
+    "url": "https://i.discogs.com/NFLDoJdGfn2Q3D8GoC2jbtSiaejEZaT6C3waePgspFs/rs:fit/g:sm/q:90/h:493/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNTIw/NDAwLTE0OTkxMjM0/NzAtMjY1Mi5qcGVn.jpeg",
+    "note": "CAA 無圖（release-group 404）；取 Discogs 10520400（Etcetera KTC 1070）封面；主線 2026-10-23 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 查無），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "四成以上的篇幅，留給了一位女聲。Ed Spanjaard 指揮阿姆斯特丹的 Nieuw Ensemble，演出作曲家 Ferneyhough 五件作品。最長的《Études transcendantales》是女聲配室內樂團，約 25 分鐘。Irvine Arditti 拉的是獨奏曲《Intermedio》。CD 在 1989 年推出。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/20de0e5f-2574-4535-98cf-f2f61b6ed24d",
+     "https://www.discogs.com/release/10520400",
+     "https://en.wikipedia.org/wiki/Irvine_Arditti",
+     "https://en.wikipedia.org/wiki/Brian_Ferneyhough",
+     "https://en.wikipedia.org/wiki/Nieuw_Ensemble",
+     "https://musicbrainz.org/release-group/0f3b9379-71b8-40f1-af60-48d3de406299"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ensemble Exposé",
+   "album": "Ferneyhough: Chamber Music",
+   "composer": "Ferneyhough",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "200b5021-33fb-4a2f-a8d1-c59a1bf0a642",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "室內樂團：Ferneyhough 室內樂作品集，Roger Redgate 指揮的 Ensemble Exposé｜策展無疑點｜MB release-group 200b5021-33fb-4a2f-a8d1-c59a1bf0a642：title「Chamber Music」、Album、first-release-date 2009-03-10、artist-credit「Brian Ferneyhough; Ensemble Exposé, Roger Redgate」。證據：https://musicbrainz.org/release-group/200b5021-33fb-4a2f-a8d1-c59a1bf0a642 https://music.apple.com/us/album/634159461",
+    "queryAlias": "Chamber Music；Brian Ferneyhough; Ensemble Exposé, Roger Redgate"
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music2/v4/95/74/11/95741175-ac26-dbfc-e1df-5c516237d3b0/809730850424.jpg/600x600bb.jpg",
+    "note": "CAA 無圖（release-group 404）；取已釘定試聽的 Apple 634159461 官方圖，主線 2026-10-23 目視與盤名相符。",
+    "appleCollectionId": "634159461",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 40,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 40）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 40），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "封面那幅畫的作者，也給了最長的一首靈感。六首曲子都由 Brian Ferneyhough 作曲，他 1943 年生於考文垂；Roger Redgate 指揮的 Ensemble Exposé 演其中四首，另兩首是低音大提琴獨奏與雙簧管加鋼琴。最長的《Allgebrah》寫給雙簧管與九把獨奏弦樂，約 18 分鐘，靈感來自 Adolf Wölfli，封面也選了他的畫。Métier 於 2009 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/8625845",
+     "https://musicbrainz.org/release/77d1d276-cab1-41f0-bb6d-97582ddc0561",
+     "https://en.wikipedia.org/wiki/Brian_Ferneyhough",
+     "https://gramophone.co.uk/review/ferneyhough-chamber-works",
+     "https://research.gold.ac.uk/id/eprint/5571",
+     "https://en.wikipedia.org/wiki/Ensemble_Recherche",
+     "https://musicbrainz.org/release-group/200b5021-33fb-4a2f-a8d1-c59a1bf0a642"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/92/e5/ea/92e5ea38-7912-3e25-8178-4a854aad73ee/mzaf_13809612618479162979.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "appleCollectionId": "634159461",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 634159461「Roger Redgate, Ensemble Exposé & Corrado Canonici《Ferneyhough: Chamber Music》」：曲目 5/6 對上 MB 原盤（Apple 共 6 軌），取第 1 軌〈Flurries〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kolbeinn Bjarnason",
+   "album": "Ferneyhough: Music for Flute and Piano",
+   "composer": "Ferneyhough",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3ba49845-b727-4305-87d2-f8187e6d2a21",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "獨奏與二重奏：Ferneyhough 長笛與鋼琴作品集（含 Unity Capsule 等），極限技巧的新複雜主義｜策展無疑點｜MB release-group 3ba49845-b727-4305-87d2-f8187e6d2a21：title「Music for Flute and Piano」、Album、first-release-date 2002-07-01、artist-credit「Brian Ferneyhough; Kolbeinn Bjarnason」。證據：https://musicbrainz.org/release-group/3ba49845-b727-4305-87d2-f8187e6d2a21 https://coverartarchive.org/release-group/3ba49845-b727-4305-87d2-f8187e6d2a21/front",
+    "queryAlias": "Music for Flute and Piano；Brian Ferneyhough; Kolbeinn Bjarnason"
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3ba49845-b727-4305-87d2-f8187e6d2a21/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 查無），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "冰島長笛家在教堂錄了一整年，才收齊這些長笛曲。這位長笛家叫 Kolbeinn Bjarnason，曲子出自英國新複雜主義作曲家 Brian Ferneyhough。他從 2000 年 1 月錄到 12 月，地點是冰島一座教堂，分次完成。這張收齊了作曲家全部的長笛作品，兩人花了數年一起磨出詮釋。曲目以獨奏為主，從短笛吹的《Superscriptio》，到低音長笛配上 8 支疊錄低音長笛的《Mnemosyne》。Bridge 在 2002 年把它出版。",
+    "sourceUrls": [
+     "https://bridgerecords.com/products/9120",
+     "https://www.discogs.com/release/11477449",
+     "https://musicbrainz.org/release-group/3ba49845-b727-4305-87d2-f8187e6d2a21",
+     "https://en.wikipedia.org/wiki/Brian_Ferneyhough"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/50/28/3a/50283ac4-2aad-f11a-e77b-6801d3acef37/mzaf_3820230719846831765.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "appleCollectionId": "1506213625",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1506213625「Kolbeinn Bjarnason《Brian Ferneyhough: Music for Flute》」：主線人工配對：同一錄音，Apple 盤名《Music for Flute》，取第 1 軌〈4 Miniatures: No. 1, —〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Elision Ensemble",
+   "album": "Ferneyhough: Terrain / no time (at all) / La Chute d'lcare / Incipits / Les Froissements d'Ailes de Gabriel",
+   "composer": "Ferneyhough",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4d239cc0-426b-4cac-b389-74591a51122d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "室內樂團：Elision 的 Ferneyhough 專輯，澳洲新複雜主義樂團的精準演繹｜策展無疑點｜MB release-group 4d239cc0-426b-4cac-b389-74591a51122d：title「Terrain / no time (at all) / La Chute d'lcare / Incipits / Les Froissements d'Ailes de Gabriel」、Album、first-release-date 2010、artist-credit「Brian Ferneyhough; Graeme Jennings, Geoffrey Morris, Carl Rosman, Erkki Veltheim, ELISION Ensemble, Franck Ollu, Jean Deroyer」。證據：https://musicbrainz.org/release-group/4d239cc0-426b-4cac-b389-74591a51122d https://coverartarchive.org/release-group/4d239cc0-426b-4cac-b389-74591a51122d/front",
+    "queryAlias": "Terrain / no time (at all) / La Chute d'lcare / Incipits / Les Froissements d'Ailes de Gabriel；Brian Ferneyhough; Graeme Jennings, Geoffrey Morris, Carl Rosman, Erkki Veltheim, ELISION Ensemble, Franck Ollu, Jean Deroyer"
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4d239cc0-426b-4cac-b389-74591a51122d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兩把吉他的弦，故意調得相差四分之一個音。澳洲 Elision Ensemble 演奏的是英國作曲家 Brian Ferneyhough 的五首曲子；這兩把吉他屬於 2004 年的雙吉他曲《no time (at all)》，撥弦聲聽來像在模仿四分音鋼琴。每首都是獨奏者加小編制，最大的一首是吉他加十三件樂器。錄音橫跨 2003 至 2007 年，分在墨爾本與布里斯本進行，2010 年交由 Kairos 發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/ELISION_Ensemble",
+     "https://www.discogs.com/release/3814483",
+     "https://musicweb-international.com/classrev/2010/Nov10/Ferneyhough_0013072KAI.htm",
+     "https://musicbrainz.org/release-group/4d239cc0-426b-4cac-b389-74591a51122d"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/1d/b9/35/1db93594-b40d-15a8-cb09-64780999fb8f/mzaf_1403287726717289032.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "appleCollectionId": "1654914014",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1654914014「Elision Ensemble《Brian Ferneyhough: Terrain》」：主線人工配對：Kairos 2010 Elision 同一錄音，取第 1 軌〈Terrain (1992) for Violin and Ensemble〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "musikFabrik",
+   "album": "Saunders: Quartet / Into the Blue / Molly's Song 3 / Dichroic Seventeen",
+   "composer": "Saunders",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d0a29b26-eb63-4f41-91e8-96ccddc0f580",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "室內樂團：Saunders 室內樂作品集（musikFabrik），安靜但神經緊繃的當代聲響派｜策展無疑點｜MB release-group d0a29b26-eb63-4f41-91e8-96ccddc0f580：title「Quartet / Into the Blue / Molly’s Song 3 / Dichroic Seventeen」、Album、first-release-date 2001、artist-credit「Rebecca Saunders; musikFabrik, Stefan Asbury」。證據：https://musicbrainz.org/release-group/d0a29b26-eb63-4f41-91e8-96ccddc0f580 https://www.discogs.com/master/3231034",
+    "queryAlias": "Quartet / Into the Blue / Molly’s Song 3 / Dichroic Seventeen；Rebecca Saunders; musikFabrik, Stefan Asbury"
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "28193908",
+    "url": "https://i.discogs.com/u3Z0xUreBv1pD8KQVd_i430STl_PR5aClsadIT63iCs/rs:fit/g:sm/q:90/h:526/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MTkz/OTA4LTE2OTQwNzc2/ODUtMjgyNi5qcGVn.jpeg",
+    "note": "CAA 無圖（release-group 404）；取 Discogs 28193908（Kairos 0012182KAI）封面；主線 2026-10-23 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 1,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "四台收音機和一個音樂盒，也排進了編制。作曲家是 1967 年生於倫敦的 Rebecca Saunders，這四首曲子交給德國樂團 musikFabrik 演奏。收音機與音樂盒出自《Molly's Song 3》，另配中音長笛、中提琴與鋼弦吉他，是全盤最薄的一首。Saunders 用的音高很少，在意換弓的刮擦與踏瓣的悶響，自稱處理的是聲音的「質量與重量」。最厚的一首加進手風琴、電吉他與兩位打擊手。1999 年 12 月錄於杜塞道夫，2001 年由 Kairos 發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/MusikFabrik",
+     "https://www.discogs.com/master/3231034",
+     "https://en.wikipedia.org/wiki/Rebecca_Saunders",
+     "https://musicbrainz.org/release-group/d0a29b26-eb63-4f41-91e8-96ccddc0f580"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ensemble Recherche",
+   "album": "Furrer: Aria / Solo / Gaspra",
+   "composer": "Furrer",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e6299d5d-9cb7-46da-9f57-d3b05cb4a3fa",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "室內樂團：Furrer《Aria》《Solo》《Gaspra》，Ensemble Recherche 錄音，歐陸聲響派的機械緊繃｜策展無疑點｜MB release-group e6299d5d-9cb7-46da-9f57-d3b05cb4a3fa：title「Aria / Solo / Gaspra」、Album、first-release-date 2003-06-24、artist-credit「Beat Furrer; Petra Hoffmann, Lucas Fels, Ensemble Recherche」。證據：https://musicbrainz.org/release-group/e6299d5d-9cb7-46da-9f57-d3b05cb4a3fa https://www.discogs.com/master/1597436",
+    "queryAlias": "Aria / Solo / Gaspra；Beat Furrer; Petra Hoffmann, Lucas Fels, Ensemble Recherche"
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/81/dc/55/81dc552a-f3ab-6161-a096-adabae27e770/cover.jpg/600x600bb.jpg",
+    "note": "CAA 無圖（release-group 404）；取已釘定試聽的 Apple 1661771386 官方圖，主線 2026-10-23 目視與盤名相符。",
+    "appleCollectionId": "1661771386",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一首曲子把樂團拆成幾組，同時講好幾個故事。瑞士作曲家 Beat Furrer 的三首曲子，由德國 Freiburg 的 Ensemble Recherche 錄下。《Gaspra》寫於 1988 年，正是拆組的那首，也是盤中最早的作品。《Aria》晚了十年，由女高音 Petra Hoffmann 演唱。《Solo》是 22 分鐘的大提琴獨奏，由團員 Lucas Fels 拉奏。錄音在 2001 年 7 月的 Baden-Baden 完成，由 Kairos 發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Ensemble_Recherche",
+     "https://www.discogs.com/master/1597436",
+     "https://en.wikipedia.org/wiki/Beat_Furrer",
+     "https://www.universaledition.com/en/Furrer-Gaspra-for-Ensemble/P0018706",
+     "https://musicbrainz.org/release-group/e6299d5d-9cb7-46da-9f57-d3b05cb4a3fa"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/05/cb/e8/05cbe8cf-6f1a-197e-9ff1-90eab31e2fc7/mzaf_17797918265225843723.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "appleCollectionId": "1661771386",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1661771386「Petra Hoffmann, Lucas Fels & ensemble recherche《Beat Furrer: Aria》」：曲目 3/3 對上 MB 原盤（Apple 共 3 軌），取第 1 軌〈Aria (1998-99) for soprano and Ensemble〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Elision Ensemble",
+   "album": "Barrett: Chamber Works",
+   "composer": "Barrett",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c0f39c59-5e15-3b2c-9e55-8828b361847b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "室內樂團：Barrett 室內樂作品集（Elision），英國新複雜主義的重要一員｜策展無疑點｜MB release-group c0f39c59-5e15-3b2c-9e55-8828b361847b：title「Chamber Works」、Album、first-release-date 1993、artist-credit「Richard Barrett; ELISION Ensemble」。證據：https://musicbrainz.org/release-group/c0f39c59-5e15-3b2c-9e55-8828b361847b https://www.discogs.com/master/2063860",
+    "queryAlias": "Chamber Works；Richard Barrett; ELISION Ensemble"
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "1194050",
+    "url": "https://i.discogs.com/1odOI9HxbHahOpnSKNAoWambIxtexs19p7PpzJ5aGaA/rs:fit/g:sm/q:90/h:442/w:450/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTQw/NTAtMTE5OTgxMjI0/OC5qcGVn.jpeg",
+    "note": "CAA 無圖（release-group 404）；取 MB release 0ed9f0cb 連結的 Discogs 1194050（Etcetera KTC 1167 原版）封面；主線 2026-10-23 目視與盤名相符。試聽用 NMC 2012 再發（同一錄音、多收 Codex I）。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "1990 年起，Barrett 約一半作品寫給這支澳洲樂團。Richard Barrett 是威爾斯作曲家，出生於 1959 年，替他演奏的 Elision Ensemble 在這張裡從大提琴獨奏、長號加打擊，排到九人組曲《Negatives》。樂團 1986 年成立於墨爾本，團員原是藝術學院學生，早期把即興當成與作曲家合作的實驗室。Barrett 兼用序列、隨機與直覺，並自寫電腦程式輔助。這批曲子 1992 到 1993 年分次錄於墨爾本，由 Etcetera 發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/ELISION_Ensemble",
+     "https://www.discogs.com/master/2063860",
+     "https://en.wikipedia.org/wiki/Richard_Barrett_(composer)",
+     "https://musicbrainz.org/release-group/c0f39c59-5e15-3b2c-9e55-8828b361847b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e6/c8/89/e6c889fc-0edf-7ff6-9d64-68c9fdf64acc/mzaf_12520436875375939922.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "appleCollectionId": "1025361684",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1025361684「Elision Ensemble《Richard Barrett: Negatives》」：曲目 8/8 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Ne songe plus à fuir〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ensemble intercontemporain",
+   "album": "Berio: Sequenzas",
+   "composer": "Berio",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b767387b-f60f-3803-8f3e-238319e8fc59",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "獨奏與二重奏：Berio 管弦獨奏《Sequenza》系列 DG 錄音（Ensemble intercontemporain 獨奏家們）｜⚠ 含 Sequenza III 等人聲篇，色溫可能偏暖；x/z 估值取器樂篇中位｜MB release-group b767387b-f60f-3803-8f3e-238319e8fc59：title「Sequenzas」、Album、first-release-date 1999-03、artist-credit「Luciano Berio; Ensemble InterContemporain」。證據：https://musicbrainz.org/release-group/b767387b-f60f-3803-8f3e-238319e8fc59 https://coverartarchive.org/release-group/b767387b-f60f-3803-8f3e-238319e8fc59/front",
+    "queryAlias": "Sequenzas；Luciano Berio; Ensemble InterContemporain"
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b767387b-f60f-3803-8f3e-238319e8fc59/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 63,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 63）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "十三首獨奏曲，每首只寫給一件樂器或一副嗓子。1925 年生於義大利的作曲家 Luciano Berio 自 1958 年從長笛寫起這套《Sequenza》，封面掛名 Ensemble intercontemporain，獨奏者多是團員。每一首都在探索單一樂器的全部可能。DG 的三 CD 收齊當時寫成的十三首，低音管與手風琴兩首是世界首錄。唯一的人聲篇由 Luisa Castellani 演唱。1994 到 1997 年間，獨奏者們在巴黎 IRCAM 分批錄音。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/1376479",
+     "https://en.wikipedia.org/wiki/Luciano_Berio",
+     "https://musicbrainz.org/release-group/b767387b-f60f-3803-8f3e-238319e8fc59"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ec/10/e5/ec10e550-156f-708d-477a-6039674b3ce2/mzaf_3889123847281813441.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "appleCollectionId": "1452230009",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1452230009「Ensemble Intercontemporain, Florent Boffard, Frédérique Cambreling & Sophie Cherrier《Berio: Sequenzas》」：曲目 11/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Sequenza I for Flute〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Karlheinz Stockhausen",
+   "album": "Stockhausen: Mantra",
+   "composer": "Stockhausen",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "08a3eee3-6d9e-41d9-a2fb-89f0a5b5dae5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "即時電子與環形調變：Stockhausen《Mantra》，兩架鋼琴與環形調變，Stockhausen-Verlag 版｜⚠ Stockhausen-Verlag 版演奏者 MB 未載（Discogs 另有 Kontarsky 1972 版），artist 暫填作曲家；環形調變嗡鳴 y 可能偏重｜MB release-group 08a3eee3-6d9e-41d9-a2fb-89f0a5b5dae5：title「Mantra」、Album、first-release-date 1991、artist-credit「Karlheinz Stockhausen」。證據：https://musicbrainz.org/release-group/08a3eee3-6d9e-41d9-a2fb-89f0a5b5dae5 https://coverartarchive.org/release-group/08a3eee3-6d9e-41d9-a2fb-89f0a5b5dae5/front",
+    "queryAlias": "Mantra"
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/08a3eee3-6d9e-41d9-a2fb-89f0a5b5dae5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 1631,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1631）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兩架鋼琴的聲音，都先送進環形調變器。《Mantra》出自作曲家 Karlheinz Stockhausen，由 Alfons 與 Aloys Kontarsky 兩兄弟演奏，兩人各添一組古代銅鈸與木魚，琴聲經調變成了金屬質的音色。這是 Stockhausen「公式作曲」的第一首，整首長在一條兩聲部公式上，分成十三個循環。首演的兄弟倆 1971 年 6 月在慕尼黑錄下首錄音，由 Stockhausen 親自混音。1991 年，Stockhausen-Verlag 把它重發。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4457543",
+     "https://www.discogs.com/master/644959",
+     "https://en.wikipedia.org/wiki/Mantra_(Stockhausen)",
+     "https://musicbrainz.org/release-group/08a3eee3-6d9e-41d9-a2fb-89f0a5b5dae5"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "Apple 只有其他鋼琴二重奏的 Mantra 錄音，無 Kontarsky／Stockhausen-Verlag 本盤。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Group for Contemporary Music",
+   "album": "Wolpe: String Quartet / Trio in Two Parts / Second Piece for Violin Alone / Piece for Oboe, Cello, Percussion and Piano",
+   "composer": "Wolpe",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "054a9911-bda6-48de-984f-16c6ae2ac1c5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "室內樂團：Wolpe 室內樂作品集（CRI），美式序列後前衛的跳躍語彙｜⚠ MB 無年份；Naxos 8.559262（CRI 錄音）約 2005，取 2005｜MB release-group 054a9911-bda6-48de-984f-16c6ae2ac1c5：title「String Quartet / Trio in Two Parts / Second Piece for Violin Alone / Piece for Oboe, Cello, Percussion and Piano」、Album、first-release-date （空）、artist-credit「Stefan Wolpe; The Group for Contemporary Music」。證據：https://musicbrainz.org/release-group/054a9911-bda6-48de-984f-16c6ae2ac1c5 https://coverartarchive.org/release-group/054a9911-bda6-48de-984f-16c6ae2ac1c5/front",
+    "queryAlias": "String Quartet / Trio in Two Parts / Second Piece for Violin Alone / Piece for Oboe, Cello, Percussion and Piano；Stefan Wolpe; The Group for Contemporary Music"
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/054a9911-bda6-48de-984f-16c6ae2ac1c5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 查無），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "盤裡四件作品，有三件寫在帕金森氏症發病之後。作曲家 Stefan Wolpe（1902–1972）這四件室內樂，由 The Group for Contemporary Music 演奏。他 1964 年起發病，四重奏、長笛三重奏與小提琴獨奏曲都寫在這之後，另一件寫於 1954 年。他的學生 Morton Feldman 把這首四重奏列為同時代的偉大作品。錄音分別在 1991 與 1995 年完成，2006 年由 Naxos 併成一張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Group_for_Contemporary_Music",
+     "https://en.wikipedia.org/wiki/Stefan_Wolpe",
+     "https://www.discogs.com/release/32847843",
+     "https://musicbrainz.org/release-group/054a9911-bda6-48de-984f-16c6ae2ac1c5",
+     "https://lafolia.com/?p=4160"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ensemble FA",
+   "album": "Donatoni: Portrait",
+   "composer": "Donatoni",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "120e5aca-2d94-4549-b920-d36b410da12b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "室內樂團：Donatoni 的 Ensemble FA 錄音（Dominique My 指揮），義大利後序列的機械詼諧｜策展無疑點｜MB release-group 120e5aca-2d94-4549-b920-d36b410da12b：title「Portrait」、Album、first-release-date 1997、artist-credit「Franco Donatoni; Ensemble FA, Dominique My」。證據：https://musicbrainz.org/release-group/120e5aca-2d94-4549-b920-d36b410da12b https://coverartarchive.org/release-group/120e5aca-2d94-4549-b920-d36b410da12b/front",
+    "queryAlias": "Portrait；Franco Donatoni; Ensemble FA, Dominique My"
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/120e5aca-2d94-4549-b920-d36b410da12b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 1,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 1），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "整首曲子，從荀白克一首小品裡的三拍推導出來。這是義大利作曲家 Franco Donatoni 1967 年的五重奏，Ensemble FA 由 Dominique My 指揮。《Etwas ruhiger im Ausdruck》用長笛、單簧管、小提琴、大提琴與鋼琴，材料取自《五首鋼琴小品》第二首的第八小節。十年後的《Spiri》在他近乎停筆之後完成，題獻給 Sciarrino。盤中編制從五人一路排到近二十人，Accord 在 1997 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/14476420",
+     "https://it.wikipedia.org/wiki/Franco_Donatoni",
+     "https://en.wikipedia.org/wiki/List_of_compositions_by_Franco_Donatoni",
+     "https://archive-demeter.univ-lille.fr/doc/beranger.pdf",
+     "https://festival-automne.com/en/edition-2007/franco-donatoni-ero-combier-salvatore-sciarrino-flag-ste-air",
+     "https://moderecords.com/profiles/dominiquemy/",
+     "https://musicbrainz.org/release-group/120e5aca-2d94-4549-b920-d36b410da12b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ensemble 2e2m",
+   "album": "Donatoni: Alamari / Flag / Nidi / Toy / Ave",
+   "composer": "Donatoni",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f66afcaf-6f17-4492-bde4-d2dd9f6f514d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "室內樂團：Donatoni 小編制作品集（Ensemble 2e2m，Paul Méfano 指揮）｜策展無疑點｜MB release-group f66afcaf-6f17-4492-bde4-d2dd9f6f514d：title「Alamari / Flag / Nidi / Toy / Ave」、Album、first-release-date 1989、artist-credit「Franco Donatoni; Ensemble 2e2m, Pierre-Yves Artaud, Paul Méfano」。證據：https://musicbrainz.org/release-group/f66afcaf-6f17-4492-bde4-d2dd9f6f514d https://coverartarchive.org/release-group/f66afcaf-6f17-4492-bde4-d2dd9f6f514d/front",
+    "queryAlias": "Alamari / Flag / Nidi / Toy / Ave；Franco Donatoni; Ensemble 2e2m, Pierre-Yves Artaud, Paul Méfano"
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f66afcaf-6f17-4492-bde4-d2dd9f6f514d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 查無），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "指揮、鍵盤手到封面畫家，都姓 Méfano。Franco Donatoni 的五首室內樂來自義大利，演奏的 Ensemble 2e2m 則來自法國。Paul Méfano 指揮，Jacqueline Méfano 彈鋼琴與大鍵琴，封面用的是 Nathalie Méfano 的畫，長笛則是 Pierre-Yves Artaud。樂團正是 Paul Méfano 一手創立。Donatoni 自稱從 1967 年起不再「創作素材」，只做轉換。1989 年，唱片由 Adda 發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/11567448",
+     "https://api.discogs.com/releases/30984727",
+     "https://en.wikipedia.org/wiki/Ensemble_2e2m",
+     "https://archive-demeter.univ-lille.fr/doc/beranger.pdf",
+     "https://it.wikipedia.org/wiki/Franco_Donatoni",
+     "https://en.wikipedia.org/wiki/List_of_compositions_by_Franco_Donatoni",
+     "https://festival-automne.com/en/edition-2007/franco-donatoni-ero-combier-salvatore-sciarrino-flag-ste-air",
+     "https://musicbrainz.org/release-group/f66afcaf-6f17-4492-bde4-d2dd9f6f514d"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Group for Contemporary Music",
+   "album": "Carter: Eight Compositions",
+   "composer": "Carter",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e76872a0-5b26-46bf-b6c8-f258ac096fb6",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "室內樂團：Carter 的《Eight Etudes and a Fantasy》等小編制作品集，Group for Contemporary Music 錄音｜策展無疑點｜MB release-group e76872a0-5b26-46bf-b6c8-f258ac096fb6：title「Eight Compositions」、Album、first-release-date 1994-06-28、artist-credit「Elliott Carter; The Group for Contemporary Music」。證據：https://musicbrainz.org/release-group/e76872a0-5b26-46bf-b6c8-f258ac096fb6 https://music.apple.com/us/album/1653812754",
+    "queryAlias": "Eight Compositions；Elliott Carter; The Group for Contemporary Music"
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/55/44/34/554434b6-4287-9529-809d-b2faa394882a/090404904424.jpg/600x600bb.jpg",
+    "note": "CAA 無圖（release-group 404）；取已釘定試聽的 Apple 1653812754 官方圖，主線 2026-10-23 目視與盤名相符。",
+    "appleCollectionId": "1653812754",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "《Duo》一首長 21 分鐘，其餘小品多半不到 8 分鐘。1908 年，作曲家 Elliott Carter 生於紐約；這八首由 The Group for Contemporary Music 演奏。《Duo》1974 年寫成，編制是小提琴配鋼琴。最早的是 1948 年那首大提琴奏鳴曲，晚期是 1983 到 1993 年的獨奏與二、三重奏小品，單簧管獨奏《Gra》由 Charles Neidich 吹奏。1992 到 1994 年錄於紐約，Bridge 發行。",
+    "sourceUrls": [
+     "https://www.bridgerecords.com/products/9044",
+     "https://www.discogs.com/release/6583422",
+     "https://www.nypl.org/research/research-catalog/bib/b12637716",
+     "https://en.wikipedia.org/wiki/Group_for_Contemporary_Music",
+     "https://en.wikipedia.org/wiki/Elliott_Carter",
+     "https://musicbrainz.org/release-group/e76872a0-5b26-46bf-b6c8-f258ac096fb6"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/65/e7/4d/65e74dca-ec4a-0f17-6ded-777b9b6f19d2/mzaf_7786515036171006753.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "appleCollectionId": "1653812754",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1653812754「The Group for Contemporary Music《Carter: 8 Compositions》」：主線人工配對：Bridge 同一錄音，曲名寫法不同，取第 1 軌〈Gra for Clarinet〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Arditti Quartet",
+   "album": "Kurtág / Lutosławski / Gubaidulina: Works for String Quartet",
+   "composer": "Kurtág",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "79731f29-3c49-4088-8e7f-752e6165d3fa",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "弦樂四重奏／三重奏：Arditti 錄製的三位東歐現代主義者弦樂四重奏合輯（Montaigne），Kurtág 與 Lutosławski 的緊繃語彙｜策展無疑點｜MB release-group 79731f29-3c49-4088-8e7f-752e6165d3fa：title「Works for String Quartet」、Album、first-release-date 2001、artist-credit「Kurtág, Lutosławski, Gubaidulina; Arditti String Quartet」。證據：https://musicbrainz.org/release-group/79731f29-3c49-4088-8e7f-752e6165d3fa https://coverartarchive.org/release-group/79731f29-3c49-4088-8e7f-752e6165d3fa/front https://www.discogs.com/master/295360",
+    "queryAlias": "Works for String Quartet；Kurtág, Lutosławski, Gubaidulina; Arditti String Quartet"
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/79731f29-3c49-4088-8e7f-752e6165d3fa/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "四重奏只有兩個樂章，前一個專門用來「引導」。那是 Lutosławski 的四重奏，倫敦的 Arditti Quartet 演奏；Lutosławski 1964 年受瑞典電台委託，用「受控的偶然性」寫成。Kurtág 的《Officium breve》有十五個樂章，悼念採用 Webern 技法的友人 Szervánszky。Gubaidulina 第二號四重奏只有單一樂章，大量使用泛音與滑音。錄音 1990 年 7 月完成於科隆，Montaigne 於 1991 年推出。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/295360",
+     "https://api.discogs.com/masters/295360",
+     "https://en.wikipedia.org/wiki/Arditti_Quartet",
+     "https://en.wikipedia.org/wiki/György_Kurtág",
+     "https://musicbrainz.org/release-group/79731f29-3c49-4088-8e7f-752e6165d3fa",
+     "https://guarnerihall.org/a-tale-of-two-worlds-program-notes/",
+     "https://en.wikipedia.org/wiki/String_Quartet_(Lutosławski)",
+     "https://musicweb-international.com/classRev/2001/June01/Gubaidulina.htm",
+     "https://en.wikipedia.org/wiki/Sofia_Gubaidulina"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T09:21:53Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}
