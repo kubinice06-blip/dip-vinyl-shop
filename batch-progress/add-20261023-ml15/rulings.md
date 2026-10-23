@@ -30,3 +30,11 @@
 - 15123：Tosca《J.A.C.》聲音證據不足、status thin：細部樂評全抓不到（Pitchfork 禁抓、AllMusic 403、WebSearch 額度用盡），聲音只靠 Discogs／MB 標籤與維基的團風格句；moodGuess 的「厚貝斯」無來源，主線評分時需自行聽或汰換。
 - 15124：Thievery《Temple》牙買加錄音僅兩篇評論明說，具體錄音室未查到，facts 只寫「牙買加」。FFD 銷量認證數字 Wikipedia 內部不一致，facts 不寫認證只寫 NZ 12 萬／歐洲 3 萬與榜首紀錄。
 - 15125：本組 WebSearch 用 3 次（Mind Elevation、Feelin' Good、Temple）；Discogs／MB API 直連可用。
+
+## 研究 b 組
+- 15131：b 組七張皆為原創錄音室專輯（BDO 首作為雙 CD：Bombay＋Dub），無「建議移除」；KV 身分皆與 MB／Discogs 對上。status：FFD、Trinity Roots ×2、Salmonella 為 full；BDO ×3 為 thin（AllMusic／BBC／World Music Central／Bandcamp 皆取不到，僅 Discogs 信用＋Echoes＋New Times 負評）。
+- 15132：推翻策展層 1 處（明確）：Bombay Dub Orchestra《3 Cities》的三城是孟買、清奈、倫敦（Discogs 版本註記、Echoes、New Times 一致），不是伊斯坦堡／金斯頓（那是 2013 年《Tales》的錄音地）；且原版 dub 成分有限，dub 化是 2009 年《3 Cities in Dub》。另更正：成員是 Andrew T. Mackay，非 Kremer。
+- 15133：moodGuess 存疑（中度）：Salmonella Dub《Inside the Dub Plates》。Discogs 風格含 Breakbeat／Drum n Bass／Electro／Progressive House，Wikipedia 歸為含 drum 'n' bass，曲目彼此混接；建議主線把能量上修（x 偏 2.7 以上）並檢視是否仍落恍惚。廠牌三說並列（Virgin NZ 授權／EMI／Salmonella Dub Recordings），寫作層宜只寫年份。
+- 15134：moodGuess 存疑（輕到中度）：BDO 三張。首作第一碟為孟買弦樂＋downtempo、dub 在第二碟；《3 Cities》為弦樂團＋復古合成器＋downtempo，電影感、非重低頻；《Tales》僅有 Discogs 風格標籤含 Dub／Downtempo／Ambient，無樂評可驗，金斯敦與 Sly & Robbie 為維基單句。三張的「dub 低頻厚」皆缺乎證據；西塔琴／土耳其樂手的策展層描述亦無來源。
+- 15135：Trinity Roots《True》年份並存：MB／Discogs 2002，AudioCulture／維基 2001；沿用卡單 2002，寫作層避免寫死。2003 最佳 Roots 專輯為樂團獎項，不歸本盤。FFD《SLO MO》發行日各源不一（黑膠 10/18 或 10/25、MB 數位 11/08），只寫月份；Faiumu 2025 年辭世僅寫其為本盤錄音混音（Discogs），「最後一張」查無來源不寫。
+- 15136：本組 WebSearch 用 3 次（FFD SLO MO、BDO 3 Cities、Salmonella Dub）；Discogs／MB API 直連可用；Tales 第 9 條原擬寫的伊斯坦堡地名詮釋已刪（無來源）。
