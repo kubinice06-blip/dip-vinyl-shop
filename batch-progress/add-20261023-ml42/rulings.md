@@ -31,3 +31,8 @@
 - 19331 研究 b 全組：Bandcamp 的正確網址是 jinsangbeats.bandcamp.com（jinsang.bandcamp.com 為 404）；WebSearch 3 次皆無樂評／訪談，聲音 facts 只用 Bandcamp 標籤、歌迷留言、文案與 Discogs 風格欄，BPM、爆音、磁帶飽和、低頻厚度查無來源一律不寫，9 張中 8 張標 thin。
 - 19332 moodGuess 存疑：SwuM《Akira》（曲名滿是 trap 語彙、標籤 future beats／rnb，可能鼓組偏躁）、SwuM《Woke》（歌迷稱 powerful／crisp，非糊暖）、Nohidea《Departures》（Alpha Pup 文案為迷幻節奏、細密打擊樂、實驗聲音設計）、nohidea.《home movies》（身分與聲音皆無來源，優先汰換）；SwuM《Swimming》暖／重無證據。
 - 19333 nohidea.《home movies》身分：MB 把 nohidea.（澳洲二人組）與 Nohidea（奧地利）分成兩個藝人，但 Discogs 同頁，alaya. 廠牌與 Osho EP 吻合，推測同一人，facts 不寫生平。
+
+## 研究 a 組
+- 19321：a 組 9 張聲音 facts 多半只有廠牌／Bandcamp 自述，無 BPM、爆音、磁帶、低頻資料；status 7 張 thin（Life Forms、sleepy fish 四張、solitude. ），Imaginary／Dimensions／Mirage full。moodGuess 存疑（卡單的「爆音、殘響墊、糊吉他」多數查無來源）：Dimensions（官方稱節拍俐落乾淨）、Mirage（輕盈明亮）、Everything Fades to Blue（官方稱脫離 lo-fi、人聲多）、Like the Sky（官方稱 energized、人聲和聲）、solitude.（26 首短 loop、爆音無來源）。建議汰換候選：Like the Sky、Everything Fades to Blue、Mirage，主線評分前實聽。
+- 19322：sleepy fish《My Room Becomes the Sea》23 分 52 秒，Discogs 稱 Mini-Album、Chillhop 稱 EP 系列，MB 為 Album；照主線已裁定收，寫作層用「短專輯」。
+- 19323：Dimensions 數位版 2023-02-03（Bandcamp、MB），Discogs 黑膠 2023-03-03；以 2023-02-03 為準。
