@@ -37,3 +37,31 @@
 - 20775 Ego Ella May《Honey for Wounds》：MB 釘住，**補策展層空白廠牌**：UpperRoom Records（John Boyega 創立，該廠首張專輯）。LoBF 8/10：『loose, open and hopeful』『warmer mood』；Jazzwise『warm, crystalline… velvety basslines』（搜尋摘要，二手）。**moodGuess 存疑（輕～中）**：y 0.9 與『airy』『loose』有落差，『霧狀低頻』無直引；z 暖有雙重支持。facts 10 條 full。
 - 20776 The Internet《Feel Good》：MB 釘住（2013-09-20／iTunes 09-24，不衝突），Odd Future。**moodGuess 存疑（中）**：LoBF『robust and infectious groove』『slick bassline』（Neptunes 風〈Dontcha〉），〈Sunset〉calypso 風，非『慢鬆拍』；『Rhodes 墊厚』無來源。『sounds like a live record』『sun-splashed』支持暖。facts 9 條 full。
 - 本組推翻策展層：1 處廠牌（One Dove）、補 1 處空白廠牌（Ego Ella May）、1 處編制說法（YEBBA 弦樂）；moodGuess 存疑 6 張（Comet 強，其餘輕～中）。
+
+## 研究 c 組
+- 20781 Syd《Broken Hearts Club》：MB 釘住，Columbia 2022-04-08。Pitchfork：『pillowy、'80s-nodding』『sunny acoustic guitar and velvety beats』『quiet storm（CYBAH）』；Rolling Stone『lush production』。**moodGuess 存疑（中）**：『厚合成墊』不是來源描述的主角（主角是原聲吉他＋柔鼓），〈Tie the Knot〉等跳躍，y 可能 0.5–0.7；z 暖成立。
+- 20782 Alex Isley & Jack Dine《Marigold》：MB 釘住，獨立發行 2022-03-30（維基 self-released，卡單 label 空維持）。聲音只有 Oswegonian：Dine 製作、『hollow』、人聲重殘響、後段愈沉；Uproxx『warm』、全盤約半小時。**moodGuess 存疑（輕）**：『Rhodes』『糊濾波』無來源；〈Square Zero〉upbeat；Bandcamp／MB 頁被擋。
+- 20783 Leon Thomas (R&B)《Electric Dusk》：MB 釘住，EZMNY／Motown 2023-08-18（iTunes 版權確認）。同名拆卡確認：1993 年布魯克林出生、童星／Victorious／The Rascals 那位。Backward Noise 專訪：幾乎一人寫作混音、自述『psych-rock elements mixed in with R&B』；曲數專訪 11、iTunes 12，facts 標版本。**moodGuess 存疑（中）**：『厚低頻』無來源，〈X-Rated〉有硬饒舌、〈Crash & Burn〉groove，曲間不均。
+- 20784 Liniker《Indigo Borboleta Anil》：MB 釘住，2021-09-09（MB 無廠牌，卡單空維持）。pt 維基：製作 Liniker＋Júlio Feijuca＋Gustavo Ruiz，兩支管弦團（Jazz Sinfônica、Orkestra Rumpilezz），Milton Nascimento 客座〈Lalange〉；2022 拉丁葛萊美最佳 MPB 專輯得獎。**聲音無樂評可驗證**（速度、厚度、色溫皆無字眼，TMDQA 訪談 404）。status partial。**moodGuess 存疑**：『慢、quiet storm』無來源，管弦團是大編制，不等於厚重；專輯含 reggae／samba 元素。
+- 20785 Luedji Luna《Bom mesmo é estar debaixo d'água》：MB 釘住，2020-10-14。**策展層廠牌 YB Music 無任何來源可證**（維基、MB 皆空），勿寫廠牌。製作人 Kato Change＋Luedji（維基）；『less percussive, more jazzy』出自論文摘要，頁面 500 未開，不入 facts。status thin。**moodGuess 存疑（強度待聽）**：『低頻厚、溫』無來源，y 風險 0.5–0.7 成立。
+- 20786 UA《AMETORA》：MB 釘住，Speedstar（VICL-60190）1998-04-22；第二張錄音室專輯；Oricon 專輯榜最高第 2 名、約 43 萬 4930 張（英維 discography 引 Oricon）。dub 證據只有間接：〈あめふりヒヤデス〉alternate mix 出自 little tempo、Brixton 混音、單曲有 Dub 版；〈悲しみジョニー〉是朝本浩文製作、真樂隊＋Wurlitzer 的編制。**moodGuess 存疑（中強）**：整張 dub 化／厚低頻未證實，〈ミルクティー〉〈青空〉走流行路線；MB 風格標籤 downtempo／acid jazz／broken beat 為社群標籤。status partial。
+- 本組推翻策展層：1 處廠牌無來源（Luedji YB Music）；moodGuess 存疑 6 張（Syd 中、Marigold 輕、Leon 中、Liniker 無法驗證、Luedji 無法驗證、UA 中強）。
+
+## 研究 d 組
+- 20791 Jamie Woon《Making Time》：MB 釘住。**推翻策展層廠牌**——策展填 PMR；英維專輯條目與 iTunes 版權皆為 Polydor（Jamie Woon 條目寫 signed to PMR，屬藝人層描述）；發行日 MB／iTunes 2015-10-30、維基專輯條目 6 November 2015，年份 2015 無誤。人員表（維基引 Tidal）：Dan See 全盤鼓、Dan Gulino 貝斯、銅管；Pitchfork 7.4『simple guitars, slinky bass lines』，Guardian 4 星『took the soul road』，2016 Mercury Prize 入圍。**moodGuess 存疑（輕～中）**：『混響』無來源，傳統簡編制偏乾淨，y 風險 0.5–0.7。
+- 20792 mabanua《Blurred》：MB 釘住，origami PRODUCTIONS 2018-08-29；11 首，客座只有 Achico、Chara。證據全是廠方文案（OTOTOY：『太くタイトなビート』『淡く浮遊感』『ドリーミー』『切なさ』，一人演奏混音）；原版頁未取得、無獨立樂評，status partial。moodGuess 與文案吻合；z 偏邊（切なさ）。
+- 20793 Kan Sano《Ghost Notes》：MB 釘住，origami 2019-05-22；Real Sound 訪談（本人談）。**推翻 curatorRisk 的『y 只 0.5–0.7』預警方向**：低頻很重（事後加 TR-808 大鼓、小鼓疊薄 synth、訪問者說『胃がせり上がる』），但音數少、避開合成器墊，用 Rhodes＋真鼓。寫作層不要寫成 Dilla 拖拍（Sano 說他偏好 Questlove 真鼓勝過 Dilla 做的曲子）。
+- 20794 Groundation《Hebron Gate》：MB 釘住（首發 2003-01-21）。**年份裁定維持 2002**：Inside World Music（Young Tree YTR-1219 CD, 2002）、iTunes ℗ 2002、vinyl.com 2002 三源一致，樂團條目 discography 列表寫 2003、文內寫 2002；寫作層只寫『2002 年』不寫月日。樂評（Tom Orr）：『hypnotic』『rhythmically adventurous』、爵士影響、曲子從容；零售商稱 one-drop 底。**moodGuess 存疑（輕～中）**：『回音』無來源，y 風險同 curatorRisk。
+- 20795 Groundation《Upon the Bridge》：MB 釘住，2006-10-16／17。**無專輯級樂評或專輯條目**（英維 Upon_the_Bridge 重導向樂團條目），聲音事實全屬樂團整體描述（類比、無合成器、爵士銅管、女聲和聲）。status thin。**moodGuess 存疑（中強）**：『dub 化、厚低頻、回音』本盤全無來源；池中《Dub Wars》的 dub 聽感不能類推。facts 不寫『第四張』序數。
+- 20796 Midnite《Ras Mek Peace》：MB 釘住，1999-10-12（維基寫 1999 年 11 月）。**moodGuess 存疑（重大，建議汰換或降級）**：完整盤名 (Before Reverb and Without Delay)，維基載明現場一個房間直接錄雙軌類比帶，無混音台、無殘響、無壓縮、無 EQ、無疊錄（Mapleshade，Pierre Sprey）——與策展層『回音長』『低頻厚重』直接牴觸；每首 6–7.5 分鐘，極慢，x 靜成立，y 重與 z 暖皆無來源。原版廠牌未取得（iTunes 為 2026 Roots Archives 再版），卡單空維持。
+- 本組推翻策展層：1 處廠牌（Woon PMR→Polydor）、年份 Hebron Gate 維持 2002（MB 2003 為差異）；moodGuess 存疑 6 張中 5 張（Jamie 輕～中、Hebron 輕～中、Upon 中強、Midnite 重大、Blurred 無異議但全屬廠方文案）；Kan Sano 的低頻預警被推翻（偏重）。
+
+## 主線：研究後汰換（不佔條號）
+- 研究五組 28 張，汰 11（卡單、研究稿、`pick.json` 同步移除；不重切組，a 4、b 5、c 4、d 3、e 1）：
+  - 製作與預估直接牴觸：Midnite《Ras Mek Peace》（單房雙軌類比直錄、無殘響無混音，盤名全稱即「Before Reverb and Without Delay」→ 判輕）、Meshell《Comet, Come to Me》（dub 化無來源，樂評談 art pop、搖滾／靈魂吉他）、Lalah《Honestly》（trap 與電台都會流行製作）。
+  - 舞曲／中快推進（判躁）：Moodswings《Moodfood》（house／alternative dance、進榜舞曲單曲）、Vanessa Daou《Zipless》（樂評稱要搭 club 重拍、MB 標 deep house）、Little Roy《Battle for Seattle》（樂評 sprightly、製作人刻意加快 tempo，ml45 bright／breezy 先例）、Capital Letters《Headline News》（粗礪吉他＋活躍打擊、無 dub 低頻證據）。
+  - 原聲／簡編制（判輕，ml2 原聲吉他反例）：Syd《Broken Hearts Club》（原聲吉他＋柔鼓）、Jamie Woon《Making Time》（簡編制真樂隊、混響無來源）。
+  - 聲音零來源且型別有風險：Groundation《Upon the Bridge》（無專輯級樂評，同人留《Hebron Gate》）、UA《AMETORA》（整張 dub 化未證實，〈ミルクティー〉走流行，J-pop 判輕風險）。
+- 留下但存疑、交評分裁定：Malia & Boris Blank《Convergence》、Liniker、Luedji Luna（聲音無樂評）、Meshell《Ventriloquism》（翻唱中速律動）、The Internet《Feel Good》（數曲中速）、Leon Thomas (R&B)、Alex Isley & Jack Dine、Groundation《Hebron Gate》。
+- 研究推翻照改卡單：One Dove 廠牌 FFRR→Boy's Own（London 發行）；Ego Ella May 廠牌補 UpperRoom Records；Luedji Luna 廠牌 YB Music 無來源→留空；Groundation《Hebron Gate》年份維持 2002（Young Tree YTR-1219 CD、iTunes 版權）、寫作層不寫月日。Anita Baker「找爵士樂手現場合錄」、YEBBA「弦樂與福音唱腔」查無來源，正文不寫。
+- **定案 17 張**，無候補、不湊數。
