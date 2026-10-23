@@ -69,6 +69,8 @@
 | +2 | 甜、熱、擁抱、陽光 | Motown、Stevie Wonder、Getz/Gilberto、山下達郎 |
 硬規則：看整體氛圍不看單曲；**不得因經典度高往暖偏、硬蕊度高往冷偏**；器樂與電子預設 0，除非音色明顯偏；
 大調≠暖、小調≠冷（Joy Division 有大調歌仍是 −2）。
+**2026-10-23 店主改標準——「酸」＝冷＋硬**（店主：「自由爵士類的、或是現代音樂類的（比如 Ligeti）都很酸冷難聽又硬蕊，絕對不會是輕鬆」）：不和諧、無調性、自由即興、噪音質地、刺耳張力的音樂，不管樂器原聲或電子、混音溫不溫潤，色溫一律 ≤ −1.2；能量上有鼓／律動在推、或音塊密集刺耳有張力（Ligeti《Atmosphères》、Penderecki《Threnody》）就算躁 ≥ 3.1。自由爵士（Ayler、Cecil Taylor、Brötzmann、AACM、歐洲自由即興）、無調現代音樂（Ligeti、Penderecki、Xenakis、Stockhausen）、noise／power electronics、musique concrète、no wave、嘶吼的 fire music 都是酸。**不是酸**：溫暖的靈性／調式爵士（A Love Supreme、Journey in Satchidananda）、後咆勃、ECM 抒情、cool jazz、極簡（Reich、Glass、Pärt）、新古典與配樂、印象派與浪漫派。同一張有酸有暖（Pharoah《Karma》）酸優先。先例：Marion Brown《Geechee Recollections》放鬆→冷冽。
+
 
 
 ## 八格（供你對照，不必輸出）

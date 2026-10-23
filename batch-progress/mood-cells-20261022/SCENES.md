@@ -22,8 +22,8 @@
 
 | 順位 | 批 | 主場景＋可擴寫場景 | 狀態 |
 |---:|---|---|---|
-| 1 | md9 | 冷的 trip-hop／Bristol 二線 ＋ md17 暗 R&B | 派→情緒薄格 md9、mc9（第 2 輪） |
-| 2 | mc9 | 80s synth-pop 二線 ＋ mc10 new wave 冷盤 ＋ mc20 港台日 80s synth-pop | 派→情緒薄格 md9、mc9（第 2 輪） |
+| 1 | md9 | 冷的 trip-hop／Bristol 二線 ＋ md17 暗 R&B | ✅ 上線 23／落格 23 |
+| 2 | mc9 | 80s synth-pop 二線 ＋ mc10 new wave 冷盤 ＋ mc20 港台日 80s synth-pop | ✅ 上線 12／落格 9 |
 | 3 | ml5 | neo-soul 二線 ＋ ml8 alt R&B 2010s–20s | 派→情緒薄格 ml5、mc6（第 2 輪） |
 | 4 | mc6 | Detroit techno／electro 二線 ＋ mc12 electroclash ＋ mc29 electro-funk 機械那半 | 派→情緒薄格 ml5、mc6（第 2 輪） |
 | 5 | ml6 | quiet storm／slow jam ＋ ml7 70s 慢板靈魂弦樂盤 | 派→情緒薄格 ml6、md10（第 2 輪） |
@@ -57,7 +57,7 @@
 | md6 | 17081 | drone／電子極簡：Kranky、Touch、12k、Room40、Type、Miasmah 系（要有低頻與顆粒） | ✅ 上線 45／落格 43 |
 | md7 | 17161 | 冷調 post-rock／慢而冷、鼓少的器樂（Constellation、Kranky、Temporary Residence 系的慢盤） | ✅ 上線 41／落格 35 |
 | md8 | 17241 | dub techno／ambient techno 三線：Echocord、Chain Reaction、Silent Season、Prologue、Styrax、Astral Industries | ✅ 上線 41／落格 40 |
-| md9 | 17321 | 冷的 trip-hop 與 Bristol 二線（陰、慢、低頻厚；溫暖的 lounge 系落恍惚，不收） | |
+| md9 | 17321 | 冷的 trip-hop 與 Bristol 二線（陰、慢、低頻厚；溫暖的 lounge 系落恍惚，不收） | ✅ 上線 23／落格 23（併 md17 暗 R&B；候補見底） |
 | md10 | 17401 | 冷的 shoegaze／drone pop（霧＋冷：Jesu ambient 盤、Grouper、Flying Saucer Attack 系、Windy & Carl 系） | |
 | md11 | 17481 | 工業 old-school 慢盤／ritual／tape music（SPK 慢盤、Organum、Current 93 drone 期、Zoviet France 系） | |
 | md12 | 17561 | neoclassical darkwave／ethereal 慢盤（Arcana、Ataraxia、Dead Can Dance 系、Projekt 廠牌） | |
@@ -65,7 +65,7 @@
 | md14 | 17721 | 暗色電影／遊戲配樂（Silent Hill、《Annihilation》、《Under the Skin》、《Sicario》、Badalamenti 系、恐怖片原聲） | |
 | md15 | 17801 | witch house／hauntology／暗電子（Salem 系、Raime、Ghost Box 冷盤、Demdike 系二線） | |
 | md16 | 17881 | cloud rap／sad rap／慢 drill 的冷盤（不兇的；兇＋拍落亢奮） | |
-| md17 | 17961 | 暗 R&B／PBR&B 二線（冷而霧；溫的落恍惚） | |
+| md17 | 17961 | 暗 R&B／PBR&B 二線（冷而霧；溫的落恍惚） | 併入 md9（池中核心已收，剩下多偏暖） |
 | md18 | 18041 | 日本暗色：drone／noise 靜盤／暗 ambient／暗色獨立（灰野敬二 drone 期、畠山地平冷盤、downy 系） | |
 | md19 | 18121 | 華語／韓國暗色獨立與實驗（落差草原系、Mong Tong 系、韓國 post-rock 冷盤） | |
 | md20 | 18201 | 北歐暗色電子與配樂（Biosphere 冷盤、Deathprod 系、Rune Grammofon 慢盤） | |
@@ -89,8 +89,8 @@
 | mc6 | 11401 | Detroit techno／electro 二線（Drexciya 系、Aux 88、DJ Stingray、Model 500、Dopplereffekt） | |
 | mc7 | 11481 | minimal techno 快而薄（Robert Hood、Jeff Mills 的 minimal、Monolake 快盤；厚的落亢奮） | |
 | mc8 | 11561 | IDM 快而乾（早期 Autechre、Plaid、Funkstörung、Arovane、Phoenecia） | |
-| mc9 | 11641 | 80s synth-pop 二線（OMD、Visage、Ultravox、Heaven 17、Yazoo、Telex、Blancmange、Thomas Dolby） | |
-| mc10 | 11721 | new wave 冷盤（Gary Numan、Japan、Simple Minds 早期、Magazine、Wire、The Associates） | |
+| mc9 | 11641 | 80s synth-pop 二線（OMD、Visage、Ultravox、Heaven 17、Yazoo、Telex、Blancmange、Thomas Dolby） | ✅ 上線 12／落格 9（併 mc10、mc20；二線多是樂團編制，研究汰 13） |
+| mc10 | 11721 | new wave 冷盤（Gary Numan、Japan、Simple Minds 早期、Magazine、Wire、The Associates） | 併入 mc9（吉他樂團判重，不再單獨派） |
 | mc11 | 11801 | krautrock motorik／kosmische 快盤（Neu! 以外的 La Düsseldorf、Harmonia、Kraftwerk 系二線） | |
 | mc12 | 11881 | electroclash／2000s electro（Miss Kittin、Ladytron、Fischerspooner、Adult.、Chicks on Speed、Client） | |
 | mc13 | 11961 | math rock／器樂後硬核的冷盤（Don Caballero、早期 Battles、Hella、乾淨的那一路） | |
@@ -100,7 +100,7 @@
 | mc17 | 12281 | 日本 techno（Ken Ishii、Fumiya Tanaka、Susumu Yokota 快盤、電気グルーヴ 冷盤） | |
 | mc18 | 12361 | footwork／juke／冷的快節奏電子（RP Boo、Jlin、Traxman 冷盤） | |
 | mc19 | 12441 | 東歐／蘇聯 synth 與冷電子（Zodiac、Edward Artemiev 快作、Space Bulgaria 系） | |
-| mc20 | 12521 | 港台日 80s synth-pop／new wave 冷盤（達明一派、高橋幸宏、立花ハジメ、Plastics） | |
+| mc20 | 12521 | 港台日 80s synth-pop／new wave 冷盤（達明一派、高橋幸宏、立花ハジメ、Plastics） | 併入 mc9（P-Model、ヒカシュー 研究判樂團編制汰；不再單獨派） |
 | mc21 | 12601 | post-punk revival 薄而冷（Ought、Protomartyr 薄盤、Yard Act、Bodega、English Teacher 系；厚牆落亢奮） | |
 | mc22 | 12681 | 當代爵士冷而快（Polar Bear、Phronesis 快盤、Kit Downes、Craig Taborn、Steve Lehman、Tyshawn Sorey 快盤） | |
 | mc23 | 12761 | 前衛 art pop／冷的實驗流行（Laurie Anderson、Holger Czukay、坂本龍一 techno 期、Art of Noise） | |
