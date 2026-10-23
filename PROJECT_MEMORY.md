@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜《Axion Esti》沸騰→暴躁
+
+- **改動**：店主指定改暴躁：(3.5, 1.0, −0.6)。《Carmina Burana》維持沸騰。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：`build-card-moods.mjs` 錨點 104/104 同格。
+
 ### 2026-10-23｜dip-vinyl-shop｜Theodorakis《Axion Esti》放鬆→沸騰、Jochum《Carmina Burana》雀躍→沸騰
 
 - **改動**：店主指《Axion Esti》壓迫感很強、不是放鬆。改 (3.5, 1.0, 0.2) 沸騰；同形狀的《Carmina Burana》(Jochum) 質地改重、落沸騰。規則記進 `batch-progress/mood-axes/rulings.md`：大編制合唱／清唱劇的壓迫音牆算重。
