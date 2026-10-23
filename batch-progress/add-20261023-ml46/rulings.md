@@ -26,3 +26,17 @@
 - 19811：Olan Mill《Pine》身分無衝突（MB 釘住、Discogs Serein SERE002）。無鼓；小教堂分次錄音；Bandcamp 自述殘響 heavy／slowly decaying、romantic、very human，但同時用 dirge-like 形容管風琴與吉他 drone——色溫字眼有陰鬱成分，z 貼邊風險部分證實。聲音僅 Bandcamp 單一來源（查無獨立樂評），status full 但聲音面偏單源。非現場錄音。
 - 19812：Bing & Ruth 身分無衝突（RVNGNL27）。無固定鼓手（打擊僅一首短暫）；磁帶延遲有（Mike Effenberger）。moodGuess 存疑：樂評稱鋼琴領軍，反覆音型清楚在前，與策展層「鋼琴不在前」不符，y 可能低於 0.9；動態在近乎寂靜與明亮大聲響間，z 有掉中性風險。樂評無陰鬱／冰冷字眼（calm、meditative、warmest playing）。Pitchfork 原文拿不到，只寫其 2016 氛圍名單收錄。
 - 19813：Virðulegu Forsetar 身分一致，MB 日期 2004-11-22 與 Touch／維基 2004-10-03 不同，卡面年份 2004 不受影響。確認是教堂（Hallgrímskirkja）現場錄音、樂手前後分置；無鼓、鋼琴極少、殘響極長、主體銅管＋兩部管風琴。色溫：Musique Machine 偏暖莊重，另一則樂評（僅搜尋摘要）稱電子為冰冷底色、foreboding；z 貼邊風險（0–0.4）部分證實，列 moodGuess 存疑（z）。AllMusic 星等來源互有出入，不寫分數。
+
+## 研究 c 組（條號 19821–19830）
+- 19821：Kjartan Sveinsson 卡單 label「Society of Sound / Real World」查無依據，實為 Bel-Air Glamour（2016 雙 10 吋）與 Sono Luminus（2020 CD）；MB 日期 10-20 與樂評 10-28 差 8 天，年份不受影響。是否現場錄音：六處來源皆未說明，標 uncertain，facts 只寫首演與演出者。無鼓組（鑼、定音鼓點綴）、無前置鋼琴；moodGuess 存疑：色溫（PopMatters gloomy／minor key／plaintive、ACL sorrow／tear-stained），z 0.6 偏樂觀，靜重成立。
+- 19822：Ian William Craig《Centres》身分無衝突（130701／FatCat，2016-07-08）。無鼓、鋼琴非焦點、磁帶劣化延遲＋cassette choir＋Hammond 很厚、有歌的片段；ACL 偏暖，官方 distressed yet lush，Bandcamp 聽眾有 mournful／bleak；moodGuess 無不符，色溫把握中等。Pitchfork 等站擋抓取，樂評僅一篇。
+- 19823：Marsen Jules《Les Fleurs》身分無衝突。moodGuess 存疑（重度）：非弦樂取樣厚牆，是顫音琴、豎琴般的弦、低音、輕擊點與搖擺 beats 混用（Boomkat、Igloo），TMT 稱稀疏荒涼；無鼓組但有拍點，色溫混合。建議列汰換候選。
+
+## 主線：研究後汰換（不佔條號）
+- 研究層聲音與 moodGuess 不符，直接汰 7（12 → 5；卡單、研究稿、`pick.json` 待第二輪候補到齊後一併同步）：
+  - 判冷：Jóhannsson《Fordlândia》（樂評 elegiac sadness、ominous foreboding、claustrophobic）、Kjartan Sveinsson《Der Klang der Offenbarung des Göttlichen》（gloomy、minor key、sorrow）。
+  - 現場：Jóhannsson《Virðulegu Forsetar》（Hallgrímskirkja 教堂現場錄音；另有 foreboding 色溫分歧）。
+  - 判輕：Bing & Ruth《Tomorrow Was the Golden Age》（樂評明說鋼琴領軍、反覆音型在前）、Alex Somers《Honey Boy》（老玩具音色拼貼、26 首短片段，thin）。
+  - 有拍＋稀疏／偏冷：Marsen Jules《Les Fleurs》（顫音琴、輕擊點與搖擺 beats，稀疏荒涼）、Inventions《Maze of Woods》（mechanical rhythms、chilling）。
+- 留下但存疑、交評分裁定：Siblings 2（bright strings，y 可能偏低）、Olan Mill《Pine》（dirge-like 一詞）、Port Blue《The Airship》（thin、有輕拍）、Inventions 首作（兩首快打擊）。
+- 叫回策展代理補第二輪（門檻：樂評／廠方明講 warm／lush／enveloping，無 elegiac／mournful／sparse；鋼琴領軍、拍子推進、現場一律不提）。
