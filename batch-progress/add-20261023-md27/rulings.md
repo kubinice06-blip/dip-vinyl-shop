@@ -12,3 +12,15 @@
 - 主線汰 1：Clarice Jensen《Drone Studies》（長度近 EP）。
 - 古典卡掛名照池中慣例「指揮｜作曲家: 盤名」（Wyttenbach｜Scelsi、Antoni Wit｜Penderecki），MB 正規盤名放 queryAlias。
 - 研究層重點：Penderecki《Utrenja》第二部呼喊與鐘聲、《Empty Man》恐怖驚嚇段、Scelsi《Uaxuctum》擊樂、Gordon《Rushes》脈動（**體感標準：讓神經繃緊＝躁，研究稿寫到緊繃、驚嚇、尖叫的列 moodGuess 存疑**）；《Miners' Hymns》、Palestine、Valgeir《Architecture of Loss》色溫（調性清楚的銅管聖詠／鋼琴旋律）；Dennehy、Liam Byrne、Fjellström、Erlandsson 質地（室內樂編制、明亮管風琴可能判輕）。
+
+## 研究 a 組（條號 20361–20370）
+- 20361：Dissonance 標題曲主奏是古大提琴（Liam Byrne），不是中提琴；卡單 why 的「中提琴」不採用。無鼓為評論未提鼓，非明文證實。〈1875〉較傳統管弦寫法、有明亮開場，輕微 moodGuess 存疑。
+- 20362：Architecture of Loss moodGuess 存疑：Textura 記錄突發的鼓（Between Monuments）、鞭炮般爆裂電子（Big Reveal）、錘擊噪音（Reverse Erased），另有班鳩琴與民謠式旋律；建議汰換候選。Joyce Theatre 首演日期以 Klof 為據（2012-03-06 起）；Dance Magazine 頁面 403，不引用。
+- 20363：Wyttenbach Accord 三碟照 MusicWeb 的 Accord 476 1072 錄音日期（1988-06、1989-04、1990-06，聖凱瑟琳教堂）依發行年對應各碟，對應為推定。卡單「管風琴」只在 Hymnos 成立，Aion／Pfhat／Konx-Om-Pax 編制無管風琴。Pfhat 爆裂明亮開場與 Konx-Om-Pax「翻騰混沌」列 moodGuess 存疑。
+- 20364：Hurqualia／Hymnos／Chukrum：Chukrum 忙碌嗡鳴且有 Penderecki 式段落，Hurqualia 帶擴音樂器，列 moodGuess 存疑。Hymnos 首演年各來源不一（IRCAM 1983／音樂節手冊 1984），不寫。
+- 20365：Quattro pezzi／Anahit／Uaxuctum：大量打擊與銅管、哀號般不協和、尖銳吐氣，x 有被拉到 2.6–3.0 的風險，列存疑。Uaxuctum 曲名由來未查到來源，不寫。
+- 20366：Dystopia moodGuess 嚴重存疑：廠牌與評論一致描述「狂亂、混沌、炫目、帶電、非常大聲」，且錄音是 LA Phil 現場首演、貝多芬第七號重寫也是巨響；依 10-23 標準應判躁，建議汰換。Bamberg／Nott 資訊來自搜尋對 Cantaloupe 頁的摘要，該頁 403 未逐頁核對。
+- 20367：Rushes 為七支低音管、連續顆粒音型、無鼓無旋律；卡單「規律脈動」不完全成立。冷暖可能偏木質中性，建議以實聽為準。《紐約時報》「致幻」評語僅見搜尋摘要，未入 facts。
+- 20368：Drone Mass 是清澈複調人聲加弦樂四重奏與電子持續音，Pärt／Tavener 式神聖極簡；依 10-23 標準有判輕或偏暖風險，建議汰換候選。曲數 11、約 51 分鐘依 MB。
+- 20369：Tessellatum 掛名：MB 為 Dennehy; Sirota, Byrne，但各家都視為 Nadia Sirota 專輯，建議加註演奏者。卡單「一小時」「古大提琴與小提琴」皆不符（13 軌約 38 分鐘；中提琴＋古大提琴）。Exclaim! 的 pseudo-symphonic onslaught 列存疑。
+- 20370：Utrenja moodGuess 嚴重存疑：MusicWeb 稱這份錄音刺耳、有侵略性，下半部 Psalm with Troparion 是最響最混亂的混戰，結尾有近乎尖叫的爆發；建議汰換。年份 2009 為 Naxos 發行年，錄音為 2008 年 9–12 月。

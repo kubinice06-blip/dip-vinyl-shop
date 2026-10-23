@@ -55,3 +55,15 @@
 - 20298：Hollie Kenniff《The Quiet Drift》大致可信：沉靜、撫慰、無詞人聲、無鼓；glacier-fed stream 屬意象，色溫仍建議聽感確認。『在 Western Vinyl 的第一張』未直述，facts 改寫成可查證版本。
 - 20299：Hollie Kenniff《We All Have Places That We Miss》moodGuess 存疑（輕）：Western Vinyl 提到 kosmische 風音序與輕巧不安的後龐克感，ACL 用 downbeat；來源未提鼓。
 - 20300：b 組整體：WebSearch 共用 6 次（超出每支 3 次上限，因 Triola／Kenniff／Cortini 無其他可查來源）；Pitchfork、AllMusic、Discogs 網站、Headphone Commute 擋抓取，Discogs 改走 API；殘響與低頻厚度多數來源未談，一律不寫。
+
+## 研究 d 組
+- 20311：Michael Brook《Hybrid》不存疑（輕）：Pareles 形容 hazy、distant；infinite guitar 長音；但有 conga（Dick Smith）與非洲鼓式律動，非純無鼓。Eno 僅混 4 首，Brook 主導。
+- 20312：Robin Guthrie & Mark Gardener《Universal Road》moodGuess 存疑：DiS 稱 defined melodies and song structures（非 ethereal soundscapes）、〈Triumphant〉jaunty、〈Amnesia〉acoustic lament、Doves《Kingdom of Rust》式；DeRogatis 稱 airy、reverb-soaked。兩篇皆未提鼓，「慢鼓」查無來源。發行日 DiS／Darla 3-23、Discogs 3-11，facts 寫 3-23。
+- 20313：Robin Guthrie《Pearldiving》thin：無樂評，鼓有無、速度、錄音地皆無來源（Bandcamp 只見「I play everything」）。Discogs 目錄號 SM2103CD。不存疑。
+- 20314：Jonas Munk《Pan》thin、moodGuess 存疑（輕）：無樂評；Discogs 風格含 Krautrock／Psychedelic，律動有無與速度無來源；七首四首逾 7 分鐘。黑膠限量 500 張紅膠。
+- 20315：Lights Out Asia《Tanks and Recognizers》thin、moodGuess 存疑（輕）：無專屬樂評；Wikipedia 稱 electronic beats，Discogs 風格含 IDM；z 貼 0.3 風險未能證實或推翻。n5MD MD148；「n5MD 首張」查無直述，不寫。
+- 20316：The Orb feat. David Gilmour《Metallic Spheres》moodGuess 存疑（強，推翻「慢 dub 律動」）：AV Club 明講無 kick beat，PopMatters 僅說 dub garbage pickers、celestial、expansive，無 dub 低頻證據；實為無鼓 ambient drone＋Gilmour lap steel，AV Club「warmly」支持暖。建議收但歸「暖 drone」；新聞稿 11／12 日、MB 10-08，面長 Wikipedia 與新聞稿不一致，只寫總長約 49 分鐘。
+- 20317：Easy Star All-Stars《Radiodread》moodGuess 存疑（中，推翻「one-drop 慢拍」）：one-drop、速度查無來源；Wikipedia 風格含 ska；14 軌僅 2 軌純 dub；全員真人演奏（鼓、風琴、銅管）。翻唱專輯有歷史定位（Radiohead 本人稱讚、Top Reggae 第 5）。此為第二張（首張 2003《Dub Side of the Moon》）。
+- 20318：Hol Baumann《Human》thin、moodGuess 存疑（中，推翻「dub 低音」）：Discogs 風格 Downtempo／IDM／Ambient，Orand 自述 downtempo／electronic／ethnic fusion，無任何 dub 證據；速度、breaks、乾淨數位與否皆查無。身分：MB release 有 Ultimae inre 030，策展層「廠牌憑記憶」疑點已解。Hol Baumann＝Olivier Orand（2017 起用本名）。
+- 20319：Bluetech《Sines and Singularities》不存疑為主、列風險（輕）：Bandcamp 稱 relaxed、soothing、spacious、danceable downtempo；Discogs 風格含 Dub；glitch、速度、breaks、數位質感查無。單源（官方文案）。AlephZ04 廠牌無爭議；2020 Behind the Sky 重製為再版。
+- 20320：d 組整體：9 張未推翻年份、廠牌、盤名；WebSearch 用 3 次（只有 Universal Road 有結果）；Pitchfork、AllMusic、Discogs 網頁、BBC、Guardian、NYT 擋抓取，Discogs 與 MB 改走 API。本組 thin 4 張（Pearldiving、Pan、Tanks、Human），聲音證據不足。
