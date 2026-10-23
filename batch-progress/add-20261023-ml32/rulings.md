@@ -49,3 +49,24 @@
 - **16507** Don Carlos & Gold《Them Never Know Natty Dread Have Him Credential》：最有支撐的一張（Roots Radics、Scientist 混音、Channel One、1985 前非數位）。維基記 1981 Channel One，Discogs／MB 為 1982 Hit Bound 美版，年份保守沿用 1982。Gold 身分查無來源，未展開。
 - WebSearch 用了 3 次（Amansará、Río Arriba、Dog With a Rope 各一）；其餘走 MB／Discogs API 與 WebFetch，另用 curl 抓 BBC 樂評頁。
 - 研究 c 組合計推翻策展層 1 處（Harvest Time 廠牌空白與伴奏性質）、moodGuess 存疑 5 張（Dog With a Rope 明顯、Harvest Time 明顯、Death of the Revolution、Exclusively、Amansará 輕度）。
+
+## 研究 b 組（16491–16500）
+- **16491** Chicano Batman《Cycles of Existential Rhyme》：moodGuess 明顯存疑——14 首短曲（6 首不到 2:30）、放克／cumbia 輕快換場、Martinez 說「沒有長獨奏、全部寫定」；全數位錄音（Arévalo 訪談）、風琴是 70 年代 Yamaha 而非 Farfisa；沒有任何來源提厚殘響或 fuzz。慢歌只有〈She Lives On My Block〉。建議汰換或降備選。廠牌自家 El Relleno（NBC 單一來源）。
+- **16492** iLe《iLevitable》：x 存疑——NPR 稱 mid-tempo，mambo／boogaloo 並列，〈Te Quiero Con Bugalú〉有律動。『厚弦樂、濕殘響』只有 Vanguardia 提 60 年代式 reverb，無濕度證據。Grammy（2017.2）與拉丁 Grammy 新人提名皆有來源。
+- **16493** Kali Uchis《Sin miedo》：moodGuess 存疑——13 首短曲（約 34 分），三首明確 reggaeton／dembow（Aquí Yo Mando、Te Pongo Mal、La Luz），多評論稱 bedroom pop／down-tempo；x 可能 3 上下。榜位來源互相矛盾，facts 只採 Billboard 200 第 52（維基單一來源）。
+- **16494** Carla Morrison《Amor supremo》：最符合恍惚的一張——13 首平均近 5 分鐘、合成器氛圍加管樂、吉他退位。殘響濕度無直接來源。維基長度自相矛盾（57:33 對 62:48），寫約 62 分鐘。
+- **16495** Carla Morrison《El renacimiento》：標 thin。Apple Music 說已離開 indie、走向主流現代流行，Discogs 黑膠版五位混音（含 Jaycen Joshua），curatorRisk『製作較亮』偏向成立，無殘響／速度描述。建議汰換。卡單 label 空白，建議填 Cosmica（Apple 寫 5020 Records 發行）。
+- **16496** Buscabulla《Regresa》：moodGuess 明顯存疑——NME『slick grooves』『house 味』、Paper『Brooklyn 舞曲、salsa 夜店』、〈Ta Que Tiembla〉沉重踏步鼓；31 分鐘 11 首短曲，x 很可能超 3.0。NME 稱有同名曲，曲目無，NME 有誤，未採。
+- **16497** Buscabulla《Se amaba así》：標 thin（7 條）。唯一聲音描述（Apple Music）寫 thumping drums、funky bassline，與慢板預估不符。廠牌衝突：Bandcamp／Apple 為 Domino，Discogs 為自行發行，卡單寫 Ribbon，建議改 Domino。
+- WebSearch 本組用了 3 次（Chicano Batman、iLe、Kali Uchis 各一）；其餘走 MB／Discogs API、WebFetch。Wikipedia API 一度 429，改以間隔重試。Pitchfork／AllMusic／NYT 一律抓取失敗，評語數字多為維基轉述。
+- 研究 b 組合計：推翻策展層 0 處（身分、年份均吻合，僅 Se amaba así 廠牌與 Chicano Batman 風琴型號與 moodGuess 描述不符）；moodGuess 存疑 6 張（Chicano Batman、iLe、Kali Uchis、El renacimiento、Regresa、Se amaba así），僅 Amor supremo 大致可信。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- **汰 15 張**（研究層聲音反證；恍惚線最怕乾淨／推進，存疑一律汰，不硬留）：
+  - 乾、亮或推進（y／x 風險）：Thee Marloes《Perak》（舞池曲與慢歌來回、無弦樂）、Adrian Quesada《Look At My Soul》（boogaloo／funk 致敬盤，首發實為 2018 Nacional）、The Altons《Heartache in Room 14》（crisp modern production）、Chicano Batman《Cycles of Existential Rhyme》（全數位、短曲 funk／cumbia 輕快）、iLe《iLevitable》（中速 mambo／boogaloo）、Carla Morrison《El renacimiento》（主流現代流行製作）、Buscabulla《Regresa》《Se amaba así》（slick grooves、house 味、thumping drums）。
+  - 刻意乾的復古錄音：Quantic presenta Flowering Inferno《Dog With a Rope》（1974 前式暖而乾、殘響只在 dub 版）、《Death of the Revolution》（同計畫同手法、聲音無來源，一併汰）。
+  - 80s 中後期電子鼓／合成器：Don Carlos《Harvest Time》（Tuff Gong／Channel One 班底電子鼓＋合成器）、Junior Delgado《Raggamuffin Year》（新風格、Pablo 合成器）、Wailing Souls《Stranded》（Sly 電子鼓、合成器；池中同人 x 已 2.7–2.9 貼邊）。
+  - 身分與聲音雙疑：Linval Thompson《Six Babylon》（Clocktower 美版，Bullwackie「compiled & edited」、跨三間錄音室混音，近彙整重混）、Misty in Roots《Wise and Foolish》（來源只說 mellow、jazzy，無厚低頻證據）。
+- **留下的存疑張**：Kali Uchis《Sin miedo》（3 首 dembow；池中同人《Red Moon in Venus》落恍惚 y 1.0，評分看實測）、Bobby Oroza（open analogue sound；池中《This Love》落恍惚）、Thee Sacred Souls ×2（類比、明亮，無厚殘響來源）、Horace Andy《Exclusively》（與池中《Dance Hall Style》共 3 首，但 MB／Discogs 是兩張不同 LP，保留）。
+- 不補位：策展層已回報主場景見底、擴寫場景 ml25 剩下的是無封面無樂評薄盤。
+- 定案 **16 張**（a 4、b 2、c 4、d 4、e 2）。汰除卡存 `dropped-cards.json`，研究稿條目移出研究檔。研究 qa-batch 全過。
