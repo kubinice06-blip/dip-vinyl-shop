@@ -48,3 +48,19 @@
 - 15166：Sounds From the Ground《Mosaic》：同一批曲子 2000 年在美國以《Terra Firma》（Waveform，曲目有兩首不同、少一首 Snow）發行，兩者重疊度極高，建議主線查重池中是否另有 Terra Firma 的卡。moodGuess 大致成立（ambient dub 低頻確有來源：Ambient Music Guide 稱 bass-heavy），但暖度偏「暗暖」（Bandcamp 提 darker element），民族取樣無佐證。「第二張」成立（前作 Kin）。
 - 15167：Ott《Fairchildren》無推翻、moodGuess 大致成立（慢、厚、暖的 psy-dub，真樂器多、有機）；僅有使用者提到部分曲目有 glitch 質地。
 - 15168：本組 WebSearch 共 8 次（每張 1 次，Sounds From the Ground 2 次）；MB／Discogs API 直連可用，Discogs release 頁面 WebFetch 403 改用 API。AllMusic 頁面全部 403，psyreviews.net 與 ambientmusicguide.com 容器 DNS 失敗（後者內容引自搜尋摘要）。未推翻任何年份、盤名；廠牌僅 Liquid Bloom 一處更正。無選輯／重發問題，無建議移除。
+
+## 研究 c 組
+- 15141：Rockers Hi-Fi《Rockers to Rockers》moodGuess 存疑：含〈Push Push〉house 拍、〈Stoned〉breakbeat、〈Paths Of Life〉drum and bass 雛形，並非全程靜；無鼓慢段（〈Sexy Selector〉）與 dub 貝斯支撐「重」。1995 Fourth and Broadway 版為 1993 Different Drummer 八首版（Original Rockers 名義）的重製擴充（10 首），卡單掛 1995 版，不推翻。banbantonton 稱兩人亦為 Electribe 101 成員，單一來源且與他處不符，未採用。
+- 15142：Rockers Hi-Fi《Mish Mash》moodGuess 輕度存疑：Discogs 風格含 Breakbeat／Hip Hop／Electro，〈90º Fuzzwalk〉〈Copycat〉可能偏躁。年份：MB／Discogs 1996（英國 Different Drummer 黑膠、德國 WEA CD），維基 1997-03-25 為美版，不推翻卡單。找不到專輯評論，不寫評價。
+- 15143：Yppah《Eighty One》推翻卡單廠牌：Counter Records 錯，2012 年由 Ninja Tune 發行（ZENCD179；Counter 是 2015《Tiny Pause》）。moodGuess 輕度存疑：有 breaks、吉他殘響、四首 Anomie Belle 人聲近 trip-hop，但「重」「暖」缺直接證據。Stereoboard 頁面抓取逾時，內容取自搜尋摘要。
+- 15144：Yppah《Sunset in the Deep End》無推翻（2020、Future Archive Recordings 一致）。無專業樂評，只引廠牌／Bandcamp 文案；Bandcamp 說鼓是「crisp hip-hop beats」，單曲〈Shot Into The Sun〉是 dream pop 吉他＋dub 式節奏，moodGuess 輕度存疑（偏亮的 dream pop）。
+- 15145：The Orb《More Tales From the Orbservatory》moodGuess 輕度存疑：策展層寫「環境 dub、更慢」，但 Fehlmann 自述是更厚的拍、更重的貝斯、更多田野錄音，Rocksucker 稱 dubby/beatsy，整體是有拍的 dub／downtempo 而非環境無鼓；查無 BPM，不寫速度。專輯結構為 5 首 Perry 人聲曲＋短串場＋5 首純器樂版，全長 52 分半。Starhouse 錄音地僅 Discogs 單一來源，facts 寫「記為」。
+- 15146：Ott《Skylon》moodGuess 中度存疑：評論意象是蓬鬆雲朵、藍天，封面也要求「有機又樂觀」，偏亮而輕；低頻厚、慢拍查無直接描述（Discogs 僅標 Dub／Downtempo），建議實聽。專輯有真人樂手（Nick Raphael 貝斯／吉他／melodica／theremin、Louise Gandolfi 長笛），Blumenkraft 為 2003 首作。2012 Ottsonic 數位版、2014 CD、2018 黑膠皆為再版，卡單 2008 正確。
+- 15147：Kaya Project《Walking Through》推翻卡單廠牌：LoveCat Music 是美版，首發為加拿大 Interchill（ICHILL CD 017）。moodGuess 中度存疑：只查到 downtempo／tribal／tabla／world fusion／ambient 標籤，完全沒有 dub 或低頻描述，〈Kanzaman Breaks〉〈Tribal Shift〉曲名暗示 breaks 與部落式節奏，可能偏動；無專業樂評，status 標 thin。
+- 15148：本組 WebSearch 共 6 次（Mish Mash、Eighty One、Sunset、Orb、Ott、Kaya 各 1，在每支 3 次上限內）；MB／Discogs API 直連可用，Discogs 網站、AllMusic、BBC 403／拒絕。
+
+## 主線裁定（研究層交件後，2026-10-23）
+- **15191**：照研究層的聲音事實汰 7 張（卡單與研究 a–e 檔已移除，原卡存 `dropped-cards.json`）：Sounds From the Ground《Terra Firma》（研究 d／e：即英國《Mosaic》的美版，同一張碟，留原版《Mosaic》）、Liquid Bloom《Heart of the Shamans》（White Swan 冥想取向、前六首鼓稀，無 dub 低頻，質地判輕；與已汰的 Desert Dwellers 同廠同製作人）、Kaya Project《Walking Through》（只有標籤、無任何低頻證據，曲名帶 breaks）、Kalya Scintilla《Gaian Code》（樂評點名 aggressive drums、Glitch Hop，能量躁）、DJ Cheb i Sabbah《Krishna Lila》（以現場印度樂手的傳統 bhajan 為主，dub 低頻只在少數曲；留《Shri Durga》）、Salmonella Dub《Inside the Dub Plates》（Breakbeat／DnB／Progressive House 混接，拍子緊）、Ott《Skylon》（評論意象蓬鬆明亮；留《Fairchildren》）。
+- **15192**：留下但標存疑，**依池中同人三軸**：Nightmares on Wax 三張（池中《Smokers Delight》y 1.0、《Carboot Soul》0.7，全落恍惚）、Boozoo Bajou《Grains》（池中 0.8–1.0）、Fila Brazillia（池中《Maim That Tune》0.9）、Tosca《J.A.C.》（池中《Opera》1.0、《Suzuki》0.8）、The Orb（池中有拍的 dub 盤 0.9–1.2）、Yppah ×2（池中 1.0）、Rockers Hi-Fi ×2、Bombay Dub Orchestra ×3、Loop Guru、Kaya Project ×2、Gaudi 兩張、Trinity Roots ×2、Fat Freddy's Drop《SLO MO》。評分照聲音打。
+- **15193**：照研究層改卡單：Yppah《Eighty One》label Counter → Ninja Tune（ZENCD179）。Bombay Dub Orchestra《3 Cities》三城＝孟買、清奈、倫敦（伊斯坦堡／金斯頓是《Tales From the Grand Bazaar》錄音地），成員 Andrew T. Mackay——寫作層照研究稿。Sounds From the Ground《Kin》年份維持 1995（英國 Universal Egg 首發）。
+- **15194**：**全批 28 張**（策展 38、主線汰 3、研究汰 7）。主場景核心已在池、ml23 指名藝人池中判輕或判冷，候補已見底，照實上架。
