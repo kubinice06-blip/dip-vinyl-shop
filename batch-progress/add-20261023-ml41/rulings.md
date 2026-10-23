@@ -27,3 +27,12 @@
 - 19265：松永孝義《The Main Man》身分核對無誤：Discogs master 3833391／release 8074427，Overheat Records OVE-0091，2004-07-09（Apple 日本站同），10 首約 45 分；卡單 label 欄空白，建議補 Overheat Records。樂評找不到，聲音靠樂手名單（烏克麗麗、鋼棒吉他、曼陀林、單簧管、薩克斯風、長號）、曲目（夏威夷、探戈）與 OTOTOY 對其貝斯 warm 的形容，status partial；速度與 dub 程度「moodGuess 存疑」。
 - 19266：BudaMunk & J.Lamotta《Searching Skies》評論偏 airy、floating、soothing synths，只偶爾有硬小鼓，寫「moodGuess 存疑」：偏輕盈通透，非 dusty 厚糊。實為東京製作人＋柏林歌手的合作盤。
 - 19267：研究層 WebSearch 用 3 次以內（Mad Professor 2 次、Hollie Cook 1 次、Horace Andy 2 次、松永 2 次、BudaMunk 1 次，略超；理由：兩張 Mad Professor 相關卡與日文冷門盤需交叉驗證）；Discogs API 直連可用。
+
+## 研究 b 組
+- 19251：Likkle Mai《Roots Candy》身分核對無誤（2006-02-08、Beat Records BRC-141，MB／Discogs／Tower 一致）。Tower 聽眾評論與 bounce 顯示整張不是純 roots／dub：約一半是 reggae dub，另有近 bossa 與流行曲 → 寫「moodGuess 存疑：y 1.0 可能偏高（0.5–0.8）」；暖度（女聲、鋼鼓、長笛、迪吉里杜管）有據。速度無來源。
+- 19252：Likkle Mai《mairation》身分核對無誤（2009-11-04、MK Starliner MKD-002）。bounce 樂評描述為人力樂團、引用 1970 年代 riddim 的躍動 roots rock reggae，加 dubwise 混音 → 寫「moodGuess 存疑：偏躍動而非慢沉，x、y 可能偏樂觀」。混音森俊也與內田直之（Dry & Heavy 的 dub controls）見 Tower；Discogs 無內頁人員。
+- 19253：Likkle Mai《Dub Is the Universe》身分核對無誤（Discogs 7733102、Tower 3103095：2012-07-04、MKD-003、11 首）。TuneCore／Irie 寫 2010 年與 Tower／Discogs／3rd-in 的 2012 衝突 → 取 2012（有發售日與編號為證），2010 應為 Scientist 混音版年份。標題雖有 dub，來源只證實 2 首由 Scientist 混音，「全以 dub 處理」查無 → 寫「moodGuess 存疑」，status thin；建議主線以評分結果決定去留。
+- 19254：Polaris《Union》身分核對無誤（2005-08-03、Familysong MTCA-5018）；第三張全長、新鼓手荒木ゆうこ首作。聲音有據（Tower／bounce：力道較前作強、色彩濃、漂浮感仍在，曲長 6–12 分鐘）。moodGuess 輕度存疑：x 可能略高。2011 年盤文案（Billboard JAPAN）不採。
+- 19255：Polaris《Music》身分核對無誤（2015-02-18、UVCA-6003）。OTOTOY 訪談提供錄法與母帶細節（貝斯拖拍、手作土味、柏原譲自行母帶）；「dub 基調」只見於搜尋轉述，不寫入 facts。y 0.9 在邊界，標輕度存疑。
+- 19256：Mad Professor & The Mad Men Band《Dub You Crazy With Love (Part 2)》身分核對無誤（2000、Ariwa ARICD132，18 首）。「lovers dub」定性來自 Discogs 收錄的內頁文字與曲名，查無樂評；Spaceflight 2001 等曲可能偏硬，速度無來源 → 輕度存疑。與 ml38 撞提風險由主線寫入前再查。
+- 19257：本組 WebSearch 共用 9 次（Likkle Mai 5、Polaris 2、Mad Professor 1，另 1 次無結果）；HMV／Tower／日本站的 WebFetch 被 403，改以瀏覽器 UA 的 curl 取得商品文案。
