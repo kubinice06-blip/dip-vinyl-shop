@@ -112,3 +112,17 @@
 - **21071** `desc2:Joe Morris|Singularity`：刪「William Parker 則說他一手觸碰古老，一手拉來未來。」（單源讚語句；字數 212→180，仍在 full 帶內）。
 - **21072** `desc2:Mat Maneri & Randy Peterson|Light Trigger`：「；少了貝斯手 Ed Schuller，兩人已完全離開熟悉音樂的範圍。」→「；三重奏裡的貝斯手 Ed Schuller 這回不在。」（單源評價句改成編制事實，研究稿 Fever Bed／Joe Maneri 四重奏班底；字數 202）。
 - 其餘 27 張逐張審過，未改字（樂評句只留聲音描述：Strings 1 高音尖叫與弦樂簾幕、Elm City 廠牌「毫不拘禮」為 hook 依據保留、Second Sky 音色與音高）。藝人名照卡單掛名（Ecritures 的 Carlos Zingaro 無重音、Hauta-Aho）。qa-batch out、qa-check-research（兩檔標記 0）、fix-spacing（0）重跑全過。
+
+## 上線（不佔條號）
+- 上線 29：card_catalog 29/29、KV 29 鍵回讀逐字一致、試聽 7 ready（Désordre 主線以 Apple 藝人目錄人工配對；FMP／Emanem／Bead／In Situ／Leo 等多數不上架，22 張 unavailable）、seed +29、published gate 0 error。
+- 封面：CAA 14、Discogs 13（已登錄 registry；Ecritures 改取 master 主版本 1990 In Situ 原版，而非 1996 再版）、Apple 2（Freeman Etudes 兩冊，Mode 官方數位版）；縮圖表逐張目視、live-check 全 200。上線前對 origin 95 個 `claude/*` 分支 seed＋他批卡單去重 0 撞。
+- 冷門軸：機器基線（listeners 0–1,246，全部 3/5/3）；Freeman Etudes ×2、Crackle、Improvisations Are Forever Now worker 查無，`ratings-override.json` 人工 3/5/3。
+- 類型樹：Last.fm 標籤 17/29；合掛名 10 張未落位，`genre-l3-artist-map.json` 補 `jazz/free/free-improv` 10。
+
+## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-mc40/`）
+- 照 10-23 體感標準評分（conf high 2、mid 13、low 14）。**上線 29；落冷冽 28/29＝97%**。評分 x 2.9–4.1、y −1.4～−0.2、z −1.9～−1.3。出格 1 張：Wachsmann & Hauta-Aho《August Steps》x 2.9 判靜落平靜（研究稿無聲音描述、室內樂式細緻交織）。x 貼 3.0–3.1 的 6 張（Invocation、Balançoire、Crackle、Russell、Open Secrets、Was da ist）都是獨奏或低音提琴型。
+- 八格（併 main 後 build-card-moods）：冷冽 1,507、恍惚 1,577、頹靡 1,480。
+- 產量：策展 51（擋現場 21）、主線挑 45、研究汰 16（旋律／借曲 5、稀疏長音 6、電子／厚重 5）→ 29。**自由即興弦樂是冷冽的穩池**：原聲二重奏與獨奏乾尖型全中；要擋的是電聲（電吉他、電小提琴、electronics）、借曲與藍調（Billy Bang、Wadud）、極弱泛音（Sciarrino）與現場。**mc40 主場景見底，不再派**；剩餘可擴寫的是 Bead／Emanem／Leo 目錄其他二重奏（Apple 試聽幾乎全無）。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Joëlle Léandre、Barry Guy、Carlos Zíngaro、Peter Kowald、Mark Dresser、Tom Cora、Joe Morris、John Russell、Irvine Arditti，及合掛名 Joëlle Léandre, Carlos Zingaro、Mat Maneri & Randy Peterson、Philipp Wachsmann / Teppo Hauta-Aho、Philipp Wachsmann, Roger Turner、Agustí Fernández, Peter Kowald、Joe Morris, Barre Phillips、Mark Dresser / Denman Maroney、Tristan Honsinger & Olaf Rupp、Fred Lonberg-Holm、Fred Lonberg-Holm and Nick Stephens、David Stackenäs + Fred Lonberg-Holm、John Russell & Roger Turner、Lauren Newton & Joëlle Léandre、Joëlle Léandre, Alexandra Grimal、Joëlle Léandre / Gianni Lenoci、Barry Guy / Howard Riley / Philipp Wachsmann、Perelman • Maneri • Feldman • Hwang、Rodrigo Amado / Carlos Zíngaro / Ken Filiano（27 個掛名）

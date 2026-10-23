@@ -111,3 +111,4 @@
 - 產量：策展兩輪 28、研究汰 11 → 17。**爵士人聲 torch／with strings 是死池**（ml31 再確認）：池中古典 torch 與 Larry Klein／Craig Street 型全判輕；能收的是 quiet storm 爵士靈魂（Anita Baker、Kem）與 2010s–20s 霧暖 alt R&B／neo-soul（池中同人錨點可靠）。研究層要擋：無殘響直錄（Midnite 全稱就是「Before Reverb and Without Delay」）、house／club 拍（Moodswings、Vanessa Daou）、原聲吉他簡編制（Syd、Jamie Woon）、trap 製作（Lalah《Honestly》）、樂評 sprightly 的現代 roots（Little Roy）。**ml53 主場景見底，不再派**；vocal dub 二線多是現場樂團錄音、dub 證據薄。
 
 ## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Kem、Malia & Boris Blank、Meshell Ndegeocello、One Dove、Jessie Ware、YEBBA、Ego Ella May、The Internet、Alex Isley & Jack Dine、Leon Thomas (R&B)、Liniker、Luedji Luna、mabanua、Kan Sano（14 個掛名；Leon Thomas (R&B) 與池中 1969 爵士歌手 Leon Thomas 不同人，介紹要分開）

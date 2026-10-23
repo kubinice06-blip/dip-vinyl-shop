@@ -1,5 +1,29 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 12 輪 ml53／mc40：爵士人聲＋霧暖 R&B 17 張、自由即興弦樂 29 張上線，落格 17/17、28/29
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 12 輪＋「恍惚可以多增加一點 downtempo 與 dub」，本工作階段負責 ml53、mc40（評分照 10-23 體感標準）。ml53（`add-20261023-ml53`，恍惚）：Anita Baker《Compositions》、Kem、Malia & Boris Blank、Meshell《Ventriloquism》、One Dove、Jessie Ware、YEBBA、Ego Ella May、The Internet、Alex Isley & Jack Dine、Leon Thomas (R&B)、Liniker、Luedji Luna、mabanua、Kan Sano、Groundation《Hebron Gate》、Black Roots。mc40（`add-20261023-mc40`，冷冽）：Léandre ×5（獨奏與二重奏）、Barry Guy、Zíngaro、Kowald ×3、Dresser ×2、Tom Cora、Joe Morris ×2、John Russell ×2、Arditti《Cage: Freeman Etudes》×2、Maneri、Wachsmann ×3、Honsinger & Rupp、Lonberg-Holm ×3、Perelman《Strings 1》、Amado 三重奏。
+- **策展→研究汰換**：ml53 策展兩輪 28（爵士 torch／with strings 池中全判輕，主場景只 5）、研究汰 11（無殘響直錄、house 拍、原聲簡編制、trap、輕快 roots、dub 零證據）→ 17。mc40 策展 51（擋現場 21）、主線挑 45、研究汰 16（借曲／藍調、稀疏長音、電聲厚重）→ 29。兩個主場景見底，不再派。R&B 歌手 Leon Thomas 與池中 1969 爵士歌手同名，掛「Leon Thomas (R&B)」拆卡。
+- **主線審稿**：ml53 改 2 處（YEBBA 單源讚語改製作人事實、Jessie Ware 語意）；mc40 改 2 處（Singularity 讚語刪、Light Trigger 評價句改編制事實）。
+- **上線**：card_catalog 17＋29、KV 46 鍵回讀逐字一致、試聽 17＋7 ready（人工配 7）、seed +46、published gate 兩批 0 error；封面 CAA 31、Discogs 13（registry +13）、Apple 2，目視相符、live-check 全 200。上線前對 origin 95 個 `claude/*` 分支 seed＋他批卡單去重 0 撞。
+- **情緒評分**：`score-ml53`、`score-mc40`。**ml53 落恍惚 17/17（100%）**、**mc40 落冷冽 28/29（97%，August Steps 判靜）**。八格（併 main 後，含 ml55／mc41）：恍惚 1,577、冷冽 1,507、頹靡 1,480。
+- **類型樹**：`genre-l3-artist-map.json` 補 soul/neo-soul 3、jazz/contemporary/nu-jazz 1、jazz/free/free-improv 10；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 41 個掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{ml53,mc40}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml53,mc40}.json`、`master-override-ml53.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml53,mc40}/`、`onboarding-manifest-add-20261023-{ml53,mc40}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml53,mc40}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 46/46；build-card-moods 錨點 104/104。
+
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 12 輪 ml55／mc41：女聲 R&B 慢盤 22 張、電子原音尖細那半 11 張上線，落格 22/22、10/11
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 12 輪，本工作階段負責 ml55、mc41（評分照 10-23 體感標準）。ml55（`add-20261023-ml55`，恍惚：90s–00s 女聲 R&B ballad＋女聲 quiet storm、慢板 neo-soul、女聲 dub）：Kelly Price ×2、Syleena Johnson、Oleta Adams ×3、Miki Howard、Phyllis Hyman、Mica Paris、Leela James ×2、Goapele、Raveena、Sabrina Claudio ×2、Alina Baraz、Celeste、Andra Day、Aisha、Love Unlimited、Jah9 ×2。mc41（`add-20261023-mc41`，冷冽：acousmatic 尖細那半＋早期工作室點描）：Vaggione ×2、Jonty Harrison、Elsa Justel、Davidovsky、Trevor Wishart、A_dontigny、Stavropoulos、Subotnick、Stéphane Roy、Alain Thibault。
+- **策展→研究汰換**：ml55 策展兩輪 44、主線汰 3（Hollie Cook《Happy Hour》ml50 先例、Syd 撞名、Marigold 讓 ml53）、研究汰 19（new jack／饒舌客串／舞曲、smooth jazz、翻唱、現場福音、EP、冷數位）→ 22。mc41 策展 28、主線汰 4（池中 Parmegiani／Babbitt 判靜先例等）、研究汰 13（飄浮長音、厚密噪音、聲音零來源、現場）→ 11。兩場景見底，不再派。
+- **主線審稿**：ml55 改 3 處（Miki Howard、Leela James 單源評價句，Sabrina「重新發片」用字）；mc41 逐張審過未改字。
+- **上線**：card_catalog 22＋11、KV 33 鍵回讀逐字一致、試聽 22＋2 ready（人工配 10；empreintes／GRM 系 Apple 不上架）、seed +33、published gate 兩批 0 error；封面 CAA 29、Discogs 2（已登錄 registry 405 筆）、Apple 2，live-check 全 200、目視相符。上線前對 origin 各 `claude/*` 分支 seed＋卡單去重 0 撞。
+- **情緒評分**：`score-ml55`、`score-mc41`。**ml55 落恍惚 22/22（100%）**、**mc41 落冷冽 10/11（91%）**（Stavropoulos《Micro-lieux》x 2.9 落平靜）。八格：恍惚 1,560、頹靡 1,480、冷冽 1,479。
+- **類型樹**：`genre-l3-artist-map.json` 補 electronic/noise/concrete 5、soul/classic-rnb/neo-contemporary 1、world/reggae/roots 1，33/33 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 24 個掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{ml55,mc41}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml55,mc41}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml55,mc41}/`、`onboarding-manifest-add-20261023-{ml55,mc41}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml55,mc41}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 33/33；build-card-moods 錨點 104/104。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格線第 12 輪派工：優先序 58–63
 
 - **起因**：第 11 輪收工（ml50 22／21、md27 15／13、ml51 31／31、md28 34／34、ml52 27／25、mc39 28／24，上線／落格）。恍惚 1,538、頹靡 1,480、冷冽 1,469，冷冽轉為最薄。
