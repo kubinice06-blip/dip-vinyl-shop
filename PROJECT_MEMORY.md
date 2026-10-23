@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 10 輪 ml46／mc37：暖 post-classical 5 張、EAI／電聲即興 26 張上線，落格 4/5、16/26
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 10 輪，本工作階段負責 ml46、mc37（評分照 10-23 體感標準）。ml46（`add-20261023-ml46`，恍惚：暖 neoclassical／post-classical 厚墊）：Alex Somers《Siblings 2》、Olan Mill《Pine》、Ian William Craig《Centres》、Port Blue《The Airship》、Inventions 同名首作。mc37（`add-20261023-mc37`，冷冽：EAI／onkyo／電聲即興＋類比合成器＋管樂擴展技法）：Voice Crack ×2、Marchetti／Voice Crack／Noetinger、大友良英 & Martin Tétreault ×2、eRikm ×2、Noetinger & eRikm、Möslang、Tétreault、Kerbaj／中村としまる、Rowe／Lehn／Schmickler、Müller／Möslang、Lehn／Schmickler、Moor／Lehn／Butcher、Subotnick《Touch》《Sidewinder》、Tudor《Microphone》、Mazen Kerbaj ×2、Dörner & Kerbaj、Wooley／Wright、Peter Evans ×2、Noetinger ×2。
+- **策展→研究汰換**：ml46 策展兩輪 26、研究汰 7（樂評 elegiac／ominous 判冷、鋼琴領軍判輕、教堂現場、有拍稀疏）→ 5；池中 post-classical 全判輕，死池不再派。mc37 策展 54、主線汰 9（x／y 貼邊、疑似現場）、研究汰 19（安靜／催眠判靜 8、現場 4、有鼓 4、判重 2、無資料 1）→ 26；不再派。
+- **主線審稿**：ml46 改 1 處（Centres「FatCat 新啟用」→「重新啟用」，四層同步）；mc37 改 2 處（「具象音樂」統一為「具體音樂」，hooks／input／out 同步）。
+- **上線**：card_catalog 5＋26、KV 5＋26 鍵回讀逐字一致、試聽 5＋3 ready（mc37 廠牌幾乎不上 Apple；人工配 1）、seed +31、published gate 兩批 0 error；封面 CAA 25、Discogs 6（已登錄 registry），live-check 全 200、目視相符。上線前對 origin 近 40 個 `claude/*` 分支 seed＋卡單去重 0 撞。Olan Mill《Pine》冷門軸 Last.fm 異常改人工 4。
+- **情緒評分**：`score-ml46`、`score-mc37`。**ml46 落恍惚 4/5（80%）**（Port Blue 判輕落放鬆）、**mc37 落冷冽 16/26（62%）**（cracked electronics、類比合成器噪音、盤帶 concrète 10 張判重落暴躁；唱盤、管樂擴展技法、Buchla、回授全中）。八格（併 main 後，含 ml47／ml48／ml49／mc38）：恍惚 1,461、頹靡 1,433、冷冽 1,445。
+- **類型樹**：`genre-l3-artist-map.json` 補 electronic/noise/concrete 6、jazz/free/free-improv 2，重建後落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 25 個掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{ml46,mc37}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml46,mc37}.json`、`master-override-mc37.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml46,mc37}/`、`onboarding-manifest-add-20261023-{ml46,mc37}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml46,mc37}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 31/31；build-card-moods 錨點 104/104。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 10 輪 ml47／ml48：chillhop 第二波 23 張、dub 第三波人聲盤 12 張上線，落格 23/23、12/12
 
 - **內容**：店主「三個情緒薄格各補到約 2,000」第 10 輪＋「恍惚可以多增加一點 downtempo 與 dub」，本工作階段負責 ml47、ml48（評分照 10-23 體感標準）。ml47（`add-20261023-ml47`，恍惚：chillhop／jazzhop 第二波＋日本 lo-fi beat tape）：Psalm Trees ×3、Psalm Trees & Moose Dawa、Mono:Massive & Philanthrope、B-Side & Philanthrope、Philanthrope & Devaloop、Blue Wednesday ×2、The Deli ×5、L'Indécis《Plethoria》、BROCKBEATS ×5、Blue in Green《The Break of Dawn》、Ta-ku《25 Nights for Nujabes》、jinsang《kona park.》。ml48（`add-20261023-ml48`，恍惚：Wackie's 紐約人聲盤＋Jammy／Linval Thompson／Roy Cousins 1979–83 類比盤）：Jezzreel ×2、Love Joys、Audley Rollens、I Kong《The Way It Is》、Noel Phillips、The Meditations《No More Friend》、Barry Brown《Barry》、Junior Delgado、Devon Russell、Winston Jarrett、Michael Prophet《Jah Love》。
