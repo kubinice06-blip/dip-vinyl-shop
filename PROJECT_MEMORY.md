@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜自動試聽「預設開啟」改成每次造訪都開
+
+- **改動**：店主回報改成預設開啟後，自己手機進頻率光譜喇叭還是叉叉。原因：裝置以前記過 'off'（localStorage），預設開只管沒記過的裝置。改成開關只記在這次造訪（sessionStorage）：按掉或偵測到串流搶焦點，這個分頁／App 沒關前都是關；重開就回到開。舊的 localStorage 'off' 載入時清掉。四頁 `dip-player.js?v=52`。
+- **主要檔案**：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`、`shop-all.html`
+- **驗證**：本機 Playwright：localStorage 先寫 'off' → 載入變 on、🔊、舊鍵已清；按掉後同分頁重整維持 🔇；開新分頁回 🔊；無頁面錯誤。
+
+### 2026-10-23｜dip-vinyl-shop｜頻率光譜副標題改「不分類型，以光譜的方式探索音樂」
+
+- **改動**：店主指定。「找一張來聽」入口卡（`index.html` HUB_DEFS）、`tune/index.html` og:description、分享縮圖 `og-tune.png` 副標同步換。
+- **主要檔案**：`index.html`、`tune/index.html`、`og-tune.png`
+- **驗證**：grep 舊副標已無；縮圖目視確認。
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 7 輪 mc22／ml40：當代前衛爵士 31 張、downtempo／歐陸 dub 暖盤 10 張上線，落格 27/31、10/10
 
 - **內容**：店主「三個情緒薄格各補到約 2,000」第 7 輪，本工作階段負責 mc22、ml40（店主 10-23「恍惚可以多增加一點 downtempo 與 dub」；評分照 10-23 體感標準）。mc22（`add-20261023-mc22`，冷冽：當代前衛爵士＋mc31 AACM 剩餘）：Tim Berne／Big Satan、Steve Lehman、Fieldwork、Halvorson／Thumbscrew、Tom Rainey Trio、Laubrock Anti-House、Matt Mitchell、Iyer、Mahanthappa、Zooid、Peter Evans、Anna Webber、Eskelin、Roscoe Mitchell、Braxton《Dortmund》等 31 張。ml40（`add-20261023-ml40`，恍惚：downtempo 暖盤三線＋ml39 歐陸 dub）：Heights of Abraham ×2、Boozoo Bajou《Finistère》、Tosca《No Hassle》、Almamegretta《Sanacore》、Blundetto & Liam Bailey《Heavy Soul》、Dub Colossus《A Town Called Addis》、Hollie Cook《Twice》、Fat Freddy's Drop ×2。

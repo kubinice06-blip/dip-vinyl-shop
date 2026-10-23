@@ -45,11 +45,11 @@
   //
   // 舊版做法是「每次造訪都要先按一次播放」（存 sessionStorage）。店主要求改成：
   // 沒在聽串流的人應該一進來就有聲音，聽串流的人則要能被偵測並自動閉嘴。
-  // 因此改成「裝置記憶 + 碰撞偵測」：
-  //   1. 裝置從未表態（null）→ 靜音，由頁面提示「點這裡開啟」。
-  //   2. 使用者點過開關（'on'）→ 之後每次造訪都直接自動播放，不必再按。
-  //   3. 偵測到聲音被別的 App 搶走 → 視為「使用者選擇串流」，自動改成 'off' 並記住。
-  // 「出聲前先問系統有沒有人在播」做不到，所以保證是「最多撞一次，撞過就學乖」。
+  // 因此改成「這次造訪的記憶 + 碰撞偵測」（2026-10-23 店主改成預設開啟）：
+  //   1. 每次造訪預設開（'on'），直接自動播放。
+  //   2. 使用者按掉開關 → 這次造訪都是關。
+  //   3. 偵測到聲音被別的 App 搶走 → 視為「使用者選擇串流」，這次造訪改成 'off'。
+  // 「出聲前先問系統有沒有人在播」做不到，所以保證是「每次造訪最多撞一次，撞過就學乖」。
   const AUTOPLAY_MEMORY_KEY = 'dip:autoplay';
   // 舊的每次造訪授權保留在程式裡，改由旗標斷路（要退回舊行為就把兩個旗標打開）。
   const AUTOPLAY_CONSENT_KEY = 'dip:autoplay-consent';
@@ -63,14 +63,18 @@
   // Spotify 嵌入是一台連著使用者帳號的播放器，會讓我們無意間停掉店主正在聽的串流。
   const EAGER_IFRAME_PLAYERS = false;
 
+  // 2026-10-23 店主：「預設開啟」＝每次來都是開的。開關（手動按掉、偵測到串流搶焦點）只記在
+  // 這次造訪（sessionStorage：同一個分頁／App 沒關掉前都有效），關掉分頁或 App 再來就回到開。
+  // 舊版記在 localStorage 的 'off' 會讓裝置永遠靜音（店主手機就是這樣），讀到就清掉。
+  try { localStorage.removeItem(AUTOPLAY_MEMORY_KEY); } catch (_) {}
   function readAutoplayMemory() {
     try {
-      const value = localStorage.getItem(AUTOPLAY_MEMORY_KEY);
+      const value = sessionStorage.getItem(AUTOPLAY_MEMORY_KEY);
       return value === 'on' || value === 'off' ? value : '';
     } catch (_) { return ''; }
   }
   function writeAutoplayMemory(value) {
-    try { localStorage.setItem(AUTOPLAY_MEMORY_KEY, value); } catch (_) {}
+    try { sessionStorage.setItem(AUTOPLAY_MEMORY_KEY, value); } catch (_) {}
   }
 
   let autoplayConsent = false;
