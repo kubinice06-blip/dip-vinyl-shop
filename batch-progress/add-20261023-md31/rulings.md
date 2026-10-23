@@ -48,3 +48,15 @@
 - 21658　The Drift《Memory Drawings》：身分一致（TRR 134、2008-04-08）。moodGuess 存疑（嚴重）——Tiny Mix Tapes 寫鼓手帶動咬合演奏、〈Smoke Falls〉有力、panoramic，dub 質地只在一首中段；x 恐 2.7–3.2。建議汰換候選。
 - 21659　Seefeel《Seefeel》：身分一致（Warp WARPCD205、2011-01-31）。moodGuess 部分存疑（x）——Burundi 鼓點、現場鼓與打擊較前作居中，Guardian 稱 largely downtempo；「巨大低頻」無來源明說，只有 distorted／dub-tinged bass。厚與冷成立。
 - 21660　WebSearch 3 次用完（Implodes、HṚṢṬA、The Drift 各 1，The Drift 那次落空）；Pitchfork、Guardian、BBC、AllMusic、Discogs 網頁取不到，聲音改以 Tiny Mix Tapes、PopMatters、Drowned in Sound、Fluid Radio、Chicagoist、Bandcamp、Discogs API 為據。本組 9 張 moodGuess 皆無 identity 問題；b 組沒有收到「疑似重複卡」或選輯移除建議。
+
+## 研究 a 組
+- 21641　Anjou《Anjou》：身分一致（Kranky KRANK185、2014-09-15）。moodGuess 輕度存疑（x）——卡單「幾無鼓」，但 Discogs 明列 Steven Hess 鼓與打擊，Boomkat／Pitchfork（轉引）都點出他的打擊；稀疏點綴、非律動推進，x 1.5 大致站得住。
+- 21642　Anjou《Epithymía》：身分一致（krank207、2017-03-24）。moodGuess 成立——Boomkat 明說沒有打擊樂手，僅〈Culcinae〉有雨暴般質地；合成器長音為主、空間感大。
+- 21643　Jessamine《Jessamine》：身分一致（KRANK 003、1994-11-30；維基寫 1995 不採）。**moodGuess 存疑（x、靜）**——Bandcamp Daily 明指 Can 式鼓＋嘈雜中頻吉他＋幽靈人聲，有鼓推進與人聲；curatorRisk 成立，x 可能 ≥2.5，建議邊緣卡複核。
+- 21644　Jessamine《The Long Arm of Coincidence》：身分一致（KRANK 012、1996-09-02）。**moodGuess 存疑（x）**——Bandcamp Daily 稱更有攻擊性、製作更有咬勁、〈Schisandra〉為變種 disco 律動；Discogs 列鼓與鈸、人聲。「催眠多於推進」不成立，建議汰換候選。
+- 21645　Magnog《Magnog》：身分一致（KRANK 010；MB／Bandcamp 1996-05-09、Discogs 1996-04-01，只寫 1996）。moodGuess 輕度存疑（x）——有鼓、貝斯、延遲吉他的長篇即興，慢但非稀疏；少數曲有人聲。
+- 21646　Magnog《More Weather》：身分一致（KRANK022、1997-11-25）。Discogs 標 Compilation（家錄四軌曲目彙編）、MB 標 Album，在樂團脈絡是第二張正式專輯，保留。moodGuess 輕度存疑（x）——Discogs 有鼓與鈸，Bandcamp Daily 稱「嘶鳴的即興」；母帶日期與錄音期間矛盾，不寫。
+- 21647　Growing《The Sky's Run Into the Sea》：身分一致（KRANK060、2003-08-25）。moodGuess 大致成立——無鼓署名、吉他 drone 牆；z 冷暖無直接來源（Boomkat 轉述「極度安靜的午夜音樂」、失真噪音與氛圍的對比）。
+- 21648　Growing《His Return》：status thin。**性質**：Discogs 標 EP（三首約 30 分鐘），MB／維基標 Album；廠牌 Discogs 登 Mega Blade／TMU157，卡單 Troubleman Unlimited 暫保留。無樂評可查，Denardo 署名有 singing，moodGuess 缺證據，建議聽感複核或汰換候選。
+- 21649　Implodes《Black Earth》：身分一致（krank156；MB 2011-04-11、Discogs／Bandcamp 2011-04-20，只寫 4 月）。**moodGuess 存疑**——有人聲、鍵盤、鼓手，曲長多 3–5 分鐘，樂評為「密度高、朦朧的沉浸式迷幻搖滾」，未見「慢到 doom」；x、z 皆缺證據，建議汰換候選。
+- 21650　WebSearch 3 次用完（Donne／Anjou／Jessamine 各 1，第一次落空）；Pitchfork、AllMusic、Discogs 網頁取不到，聲音改以 Boomkat、Fluid Radio、Bandcamp Daily、Chicago Reader、維基百科、Discogs API 為據。本組無推翻身分處，無疑似重複卡，無選輯建議移除（More Weather 判有定位）。
