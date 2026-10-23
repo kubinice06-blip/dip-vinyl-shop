@@ -56,10 +56,10 @@
 | 32 | ml31 | 爵士弦樂抒情盤／慢板 ballad ＋ ml33 福音慢板／靈魂聖詩 | ✅ 上線 7／落格 7 |
 | 33 | ml32 | 拉丁 bolero／慢板浪漫 ＋ ml25 80s 慢板 reggae 歌 | ✅ 上線 16／落格 16 |
 | 34 | ml34 | 華語／日語／韓語抒情 ballad 厚編曲 ＋ ml36 Balearic／ambient pop 暖盤 | ✅ 上線 12／落格 11 |
-| 35 | ml35 | alt-country／Americana 濕而慢 ＋ ml33 剩餘 | 派→情緒薄格 ml41、ml35（第 7 輪） |
+| 35 | ml35 | alt-country／Americana 濕而慢 ＋ ml33 剩餘 | ✅ 上線 14／落格 13 |
 | 36 | ml38 | 70s roots dub 二線 ＋ ml37 UK dub／digital dub 90s | 派→情緒薄格 ml38、md22（第 7 輪） |
 | 37 | ml40 | downtempo 暖盤三線 ＋ ml39 歐陸 dub／dubtronica 暖盤 | 派→情緒薄格 ml40、mc22（第 7 輪） |
-| 38 | ml41 | 日本 dub／downtempo 暖盤 ＋ ml37 剩餘 | 派→情緒薄格 ml41、ml35（第 7 輪） |
+| 38 | ml41 | 日本 dub／downtempo 暖盤 ＋ ml37 剩餘 | ✅ 上線 12／落格 12 |
 | 39 | ml39 | 歐陸 dub／dubtronica 暖盤 ＋ ml40 剩餘 |  |
 
 **暫停**：mc13 math rock、mc21 post-punk revival、mc30 minimalism（旋律清楚＝暖）、mc9／mc10／mc20／mc25／mc26 系的 synth-pop／new wave／K-pop／synthwave 續集（2026-10-23 體感標準：旋律清楚往暖，落雀躍）、mc23 art pop、ml4 系東亞續集、ml14 spiritual jazz（體感標準判冷，不是恍惚）、ml22、ml27。**重開**（體感標準下會落冷冽）：mc4、mc14、mc22、mc28。
@@ -176,12 +176,12 @@
 | ml30 | 16321 | 暖 ambient／new age 厚墊（溫而霧，不是空氣感的極簡） | 併入 ml24（2026-10-23；有旋律的 new age 池中全判輕，不再派） |
 | ml31 | 16401 | 爵士弦樂抒情盤／慢板 ballad（with strings 系：Clifford Brown with Strings、Ben Webster、Johnny Hartman、Chet Baker 弦樂盤） | ✅ 上線 7／落格 7（2026-10-23，併 ml33；原聲爵士＋弦樂一律判輕，只收 quiet storm 爵士靈魂與 Mahalia 管弦福音；不再派） |
 | ml32 | 16481 | 拉丁 bolero／慢板浪漫（Los Panchos、Luis Miguel《Romance》、Omara Portuondo 慢盤、bossa 以外的厚弦樂盤） | ✅ 上線 16／落格 16（併 ml25；策展 31、研究汰 15；經典 bolero 池中全判輕，只收 sweet soul 復興、拉丁 dub、80s 前期 roots 人聲；主場景見底，不再派） |
-| ml33 | 16561 | 福音慢板／靈魂聖詩（厚合唱、溫、慢；快板 shout 落雀躍） | 部分併入 ml31（只 Mahalia 管弦盤判重；四重唱福音池中判輕；剩餘併 ml35） |
+| ml33 | 16561 | 福音慢板／靈魂聖詩（厚合唱、溫、慢；快板 shout 落雀躍） | 部分併入 ml31（只 Mahalia 管弦盤判重；四重唱福音池中判輕；剩餘併 ml35；ml35 只收 1 張 Mahalia 管弦盤、判輕出格，福音線見底） |
 | ml34 | 16641 | 華語／日語／韓語抒情 ballad 厚編曲（90s 弦樂、殘響厚、旋律清楚的慢歌盤） | ✅ 上線 12／落格 11（併 ml36；策展 22、研究汰 10；池中 CJK 抒情全判輕、真 Balearic 判輕，場景見底，不再派） |
-| ml35 | 16721 | alt-country／Americana 濕而慢（Cowboy Junkies、Lambchop、Mazzy Star 系） | |
+| ml35 | 16721 | alt-country／Americana 濕而慢（Cowboy Junkies、Lambchop、Mazzy Star 系） | ✅ 上線 14／落格 13（併 ml33；策展兩輪 33（放寬地域到英加澳濕 crooner）、主線汰 1、研究汰 18；池中 alt-country 全判輕，主場景見底，不再派） |
 | ml36 | 16801 | Balearic／ambient pop 暖盤（溫而霧、旋律清楚） | 併入 ml34（真 Balearic 池中判輕；暖吉他殘響 ambient pop 收 10；不再派） |
 | ml37 | 16881 | UK dub／digital dub 90s（Mad Professor、Zion Train、Iration Steppas、Jah Shaka、Dub Syndicate、Alpha & Omega 二線） | |
 | ml38 | 19001 | 70s roots dub 二線（Scientist、King Jammy、Augustus Pablo、Yabby You、Keith Hudson、Black Ark 周邊、Errol Thompson） | |
 | ml39 | 19081 | 歐陸 dub 與 dubtronica 暖盤（Dreadzone、Kruder & Dorfmeister、Tosca、Thievery Corporation 其他、Smith & Mighty、Dub Pistols 慢盤） | |
 | ml40 | 19161 | downtempo 暖盤三線（Ninja Tune／Compost／Pussyfoot 暖盤、Bonobo 早期、Blockhead、Emancipator、Nightmares on Wax 其他、Fila Brazillia 以外） | |
-| ml41 | 19241 | 日本 dub／downtempo 暖盤（Little Tempo、Dry & Heavy、Audio Active、Mute Beat、Gota、Kyoto Jazz Massive 慢盤、Cro-Magnon） | |
+| ml41 | 19241 | 日本 dub／downtempo 暖盤（Little Tempo、Dry & Heavy、Audio Active、Mute Beat、Gota、Kyoto Jazz Massive 慢盤、Cro-Magnon） | ✅ 上線 12／落格 12（併 ml37 lovers dub 那半；策展兩輪 30、主線汰 3（撞 ml40 1）、研究汰 15；日本 dub 池中多判冷、KJM 系落雀躍，場景見底，不再派） |

@@ -98,3 +98,11 @@
   - `Horace Andy|Midnight Rocker`：「唱〈Safe From Harm〉的是牙買加歌手 Horace Andy」會被讀成原唱是他（原曲主唱是 Shara Nelson）→「重唱〈Safe From Harm〉的是…」→ 236 字。
 - 19313：核過但未改——Mad Professor「13 歲移居倫敦」「電器維修技師」、From the Roots「1992、1994 年合作過兩張」、Hollie Cook「倫敦與曼谷錄音」、Shimadelica「沖繩錄、洛杉磯混」、Dub Is the Universe「第四張個人專輯」、Playlist「〈Fly〉為〈Baseball Blues〉那集所做」皆有研究稿出處。Union「輕飄飄地飛向宇宙」與 Dub Is the Universe「憤怒包在寬大的愛裡」是樂評對聲音／態度的描述，寫成「被評為／被形容」，不具名媒體，保留。
 - 19314：qa-batch out／hooks、qa-check-research（兩檔）、fix-spacing 皆 0 標記；正文無媒體名、無榜單名次、無「據」字。
+
+## 上線與評分（2026-10-23，主線）（條號 19315–19317）
+- **19315**：上線 12 張：card_catalog 12／12、KV 12 鍵回讀逐字一致、試聽 9 ready／3 unavailable（Ron Riddim In Dub、Dub Is the Universe Apple 未上架；From the Roots Apple 只有 2019 Discomix 加長版，不硬配；Shimadelica Apple 曲名為羅馬字，主線人工配 9/9）、seed +12、published gate 0 error。封面 CAA 7、Apple 2（KEDACO、Shimadelica）、Discogs 3（Ron Riddim In Dub、Dub Is the Universe、Bitter Sweet Dub——Apple 圖是整張摺頁印刷稿不採），全數主線目視、live-check 12/12 HTTP 200；Discogs 3 張登錄 `discogs-cover-registry`。冷門軸日本 7 張照 §0.8 錨點制以日本圈為尺度（`ratings-override.json`）；listeners 拿不到 2 張（Ron Riddim In Dub、Union）留 null。頂點 0。
+- **19316**：子曲風 warm-batch 10／12 有標籤（2 張 Last.fm 無標籤）；類型樹與抽卡封面重建。
+- **19317**：**落格率 12/12＝100%**（`batch-progress/mood-axes/score-ml41/`，照 10-23 體感標準）。評分 x 2.2–2.6、y 0.8–1.5、z 0.2–1.6；conf low 8、mid 4。Horace Andy《Midnight Rocker》z 0.2 最貼邊（Sherwood 製作的陰影）。**研究後汰 15 張是這批落格率的關鍵**——club 拍、空靈輕盈、企劃盤與聲音零來源的全數擋下；留下的全是 lovers dub、dub 搖滾與 steel pan 熱帶 dub。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Ryukyu Underground、Likkle Mai、Polaris、Mad Professor & The Mad Men Band（Mad Professor 本人需別名鍵）、Hollie Cook、Horace Andy & Mad Professor（合掛名）、Tsutchie（7 個掛名；LITTLE TEMPO、Mad Professor、Horace Andy 已有介紹或在排隊）。

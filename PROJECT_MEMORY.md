@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 7 輪 ml41／ml35：日本 dub＋UK lovers dub 12 張、濕慢 alt-country／crooner 14 張上線，落格 12/12、13/14
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 7 輪＋10-23「恍惚可以多增加一點 downtempo 與 dub」，本工作階段負責 ml41、ml35（評分照 10-23 體感標準）。ml41（`add-20261023-ml41`，恍惚：日本 dub／downtempo＋ml37 UK dub）：LITTLE TEMPO 2（KEDACO IS BORN、Ron Riddim In Dub）、Ryukyu Underground《Shimadelica》、Likkle Mai《Dub Is the Universe》、Polaris 2、Mad Professor《Dub You Crazy With Love》Part 2／3、Hollie Cook、Horace Andy 2（Midnight Rocker、From the Roots）、Tsutchie《samurai champloo: playlist》。ml35（`add-20261023-ml35`，恍惚：alt-country／Americana 濕而慢＋ml33 福音剩餘，主線放寬到英加澳濕 crooner）：Cowboy Junkies 2、Lambchop《FLOTUS》、Low Anthem《Smart Flesh》、MMJ《The Waterfall II》、Chris Isaak《Heart Shaped World》、Orville Peck《Pony》、k.d. lang《Ingénue》、Willie Nelson《Teatro》、Natalie Prass、Mahalia《Let's Pray Together》、Tindersticks《Can Our Love...》、Ghosteen、Timber Timbre《Hot Dreams》。
+- **策展→研究汰換**：ml41 策展兩輪 30、主線汰 3（y 貼邊 2、撞並行的 ml40 Hollie Cook《Twice》1）、研究汰 15（club 拍、空靈輕盈、企劃盤、偏冷、聲音零來源）→ 12。ml35 策展兩輪 33、主線汰 1、研究汰 18（中速搖滾化續作、乾淨明亮、陰、無來源）→ 14。兩個場景都見底，ml41／ml35／ml33 不再派。
+- **主線審稿**：ml35 改 1 處（Orville Peck 未經本人證實的本名不進正文）；ml41 改 4 處（内田直之日文字形、無出處的「拖足了拍子」改回研究稿說法、〈Safe From Harm〉原唱誤讀、多餘空格；hook 同步）。
+- **上線**：card_catalog 14＋12、KV 14＋12 鍵回讀逐字一致、試聽 14＋9 ready（ml41 3 張 Apple 無原盤）、seed +26、published gate 兩批 0 error；封面 CAA 19、Apple 3、Discogs 3（已登錄 registry），全數 live-check 200、補源的 7 張主線目視。ratings-override：ml35 classic 3→4 三張；ml41 日本 7 張冷門軸照 §0.8 以日本圈為尺度。listeners 拿不到 2 張留 null（handoff 標 local）。寫入前對 origin 各分支 seed＋卡單去重 0 撞。
+- **情緒評分**：`score-ml35`、`score-ml41`。**ml41 落恍惚 12/12（100%）**；**ml35 落恍惚 13/14（93%）**，出格 Mahalia《Let's Pray Together》y 0.4 判輕落放鬆。八格（本分支，併 main 前）：恍惚 1,232。
+- **類型樹**：`genre-l3-artist-map.json` 補 7 張（k.d. lang、Natalie Prass、Timber Timbre、Ryukyu Underground、Mad Professor & The Mad Men Band、Horace Andy & Mad Professor、Tsutchie）；類型樹與抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 15 個掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{ml41,ml35}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml41,ml35}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml41,ml35}/`、`onboarding-manifest-add-20261023-{ml41,ml35}-20261023.json`、`seed_cards.json`、`data/mood/*`、`genre-tree.json`、`card-subgenres.json`、`genre-l3-artist-map.json`、`data/discogs-cover-registry.json`。
+- **驗證**：qa-batch research／hooks／out、qa-check-research、fix-spacing 全 0；prepare／published gate 0 error；verify-wave-kv 26/26 一致；build-card-moods 錨點 104/104 同格。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 6 輪 ml32／mc28：拉丁 sweet soul＋80s roots 人聲 16 張、歐陸自由即興 22 張上線，落格 16/16、19/22
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 6 輪，本工作階段負責 ml32、mc28（評分照 10-23 體感標準）。ml32（`add-20261023-ml32`，恍惚：拉丁 bolero／慢板浪漫＋ml25 80s 慢板 reggae）：Thee Sacred Souls ×2、Bobby Oroza、Thee Sinseers、Kali Uchis《Sin miedo》、Carla Morrison《Amor supremo》、Chancha Vía Circuito ×2、Horace Andy《Exclusively》、Don Carlos & Gold、Milton Henry、Sugar Minott ×2、The Viceroys、Lacksley Castell、Johnny Osbourne《Nightfall》。mc28（`add-20261023-mc28`，冷冽：歐陸自由即興＋mc34 日本即興）：Evan Parker 獨奏 ×5、Han Bennink ×2、Bailey & Bennink、ICP 三重奏、《Topography of the Lungs》、Company ×2、Bailey《Lot 74》、Tony Oxley、SME、Barry Guy、John Butcher、Alterations、Phil Minton、Paul Lytton、Mengelberg《Impromptus》、吉田アミ《Tiger Thrush》。
