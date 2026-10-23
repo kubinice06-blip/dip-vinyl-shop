@@ -22,3 +22,12 @@
 - 20206：《Critical Mass》策展『鼓刷輕』無證據，實為有鼓有貝斯的四人編制、三首長曲（最長約 21 分），不寫刷。
 - 20207：moodGuess 存疑清單見各卡 notes：Zo（Summertime 標準曲、dark/dreariest）、By the Law（Solitude 標準曲，旋律清楚）、Gravitational Systems（Greensleeves、Naima 改編）、Thesis（lyrical、dark and beautiful，吉他未證實原聲）、Points（四人有鼓、34 分鐘長曲，y 風險）、Symbol Systems（pensive、有 boogie／bop 語彙）、2-Z（Mitchell 留白，可能判靜）、Critical Mass 與 Expansion（聲音證據薄）。
 - 20208：AllMusic、Jazzwise、AAJ、jazzmusicarchives 全文 403／503，樂評僅由維基轉述；星等一律不寫。
+
+## 研究 b 組（20211–20220）
+- 20211：九張全部身分對上（MB RG 與 Discogs release 一致）；除《Spirit Music》存疑外皆有 Discogs／維基錄音室與日期可證，非現場。
+- 20212：《Spirit Music》疑為現場盤，建議汰換補位：維基明列 live album；前三首錄於 Soundscape（Verna Gillis 1979 年開的對外演出空間，前衛即興為主）1982-01-13，第四首 NYU 1981-05-15；Discogs 只寫地點未寫 live。Wes Brown 吉他僅第四首。『Crispell 首張領銜作』無來源，不寫。
+- 20213：《Symbolic Reality》Maneri 是 viola（中提琴），Discogs 與 FJB 評論皆寫 viola，推翻策展『小提琴』。與 a 組 20203『Maneri 一律 violin』並不矛盾：那是 1997–2001 的盤；本盤依來源寫中提琴。
+- 20214：《Ithaca》年份：Discogs／維基／Intakt 皆 2004（錄音 2003-01 Radio Studio DRS 蘇黎世），MB 的 2005-03-17 疑為再版或登錄日，建議卡單 year 改 2004。
+- 20215：《The Piano Equation》Discogs 註記『Recorded May 22, 2019』疑為抄自發行日（MB 首發 2020-05-22），錄音日期不寫。
+- 20216：moodGuess 存疑清單見各卡 notes：Circular Temple（Monk／Powell bop 動機疾走、鼓全程在打，y 貼邊）、Piano Equation（中速、低音區延音、一首 stride→藍調，可能判靜／暖）、Symbolic Reality（密度忽疏忽擠、〈Flesh And Bone〉貝斯重得壓過其他聲部，判重風險；結尾哀傷放慢，判靜風險）、Magnetism（二十個短片段含長笛／貝斯／鋼琴獨奏，可能判靜）、And Your Ivory Voice Sings（Taylor 式猛烈二重奏判重；Coltrane〈After the Rain〉與抒情自創曲判暖）、Gaia（兩位鼓手＋全員打擊樂判重；Wire 稱 joyous、hymn 判暖）、Ithaca（沉默、skeletal 判靜）、Any Terrain Tumultuous（spare、stark 判靜）。
+- 20217：樂評全來自維基轉述或搜尋摘要（AllMusic、AAJ、Jazzwise 原文 403 或未開）；星等一律不寫。《Any Terrain》『Song For Jeanne Lee 尚未錄過』與 1985 年 Leo 盤同名曲衝突，facts 只寫事實，不寫首錄。
