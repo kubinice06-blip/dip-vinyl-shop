@@ -1,0 +1,2046 @@
+{
+ "group": "ml9",
+ "factions": [
+  {
+   "id": "pablo-rockers",
+   "zh": "Pablo Rockers 系（Pablo／Tetrack／Jacob Miller／Inner Circle）",
+   "count": 11,
+   "why": "暖慢、厚低頻、濕混音"
+  },
+  {
+   "id": "black-ark-ariwa",
+   "zh": "Black Ark／Lee Perry／Mad Professor Ariwa 暖盤",
+   "count": 12,
+   "why": "暖慢、厚低頻、濕混音"
+  },
+  {
+   "id": "vocal-dub-showcase",
+   "zh": "人聲＋dub showcase 暖盤（Bunny Wailer、Itals、Pablo Moses、Delgado、Aggrovators）",
+   "count": 11,
+   "why": "暖慢、厚低頻、濕混音"
+  },
+  {
+   "id": "uk-new-dub",
+   "zh": "UK／新一代暖 dub（Dubkasm、Prince Fatty、Mungo、Bim Sherman）",
+   "count": 9,
+   "why": "暖慢、厚低頻、濕混音"
+  },
+  {
+   "id": "wackies",
+   "zh": "Wackie’s／Bullwackie 系",
+   "count": 3,
+   "why": "暖慢、厚低頻、濕混音"
+  },
+  {
+   "id": "slow-dancehall",
+   "zh": "ml25 80s 慢板 dancehall／reggae 人聲盤（Junjo／Roots Radics／Black Roots）",
+   "count": 24,
+   "why": "暖慢、厚低頻、濕混音"
+  },
+  {
+   "id": "japan-dub",
+   "zh": "日本暖 dub（Little Tempo）",
+   "count": 1,
+   "why": "暖慢、厚低頻、濕混音"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Augustus Pablo",
+   "album": "Rockers Meets King Tubbys in a Fire House",
+   "year": 1980,
+   "label": "Rockers",
+   "country": "jm",
+   "faction": "pablo-rockers",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Pablo 口琴旋律加 Tubby 回音，慢 one-drop，低頻厚、旋律甜，落恍惚",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.1,
+    "z": 0.7,
+    "why": "Pablo 口琴旋律加 Tubby 回音，慢 one-drop，低頻厚、旋律甜"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8ac5a669-a69b-3287-aa43-cdb000834fd6",
+    "https://coverartarchive.org/release-group/8ac5a669-a69b-3287-aa43-cdb000834fd6/front"
+   ],
+   "mbRgMbid": "8ac5a669-a69b-3287-aa43-cdb000834fd6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Augustus Pablo",
+   "album": "Rising Sun",
+   "year": 1986,
+   "label": "Rockers",
+   "country": "jm",
+   "faction": "pablo-rockers",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，melodica 主旋律慢而甜，厚貝斯，溫暖，落恍惚",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "melodica 主旋律慢而甜，厚貝斯，溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/23f817da-81a4-39f4-9d56-7ebe34a58919",
+    "https://coverartarchive.org/release-group/23f817da-81a4-39f4-9d56-7ebe34a58919/front"
+   ],
+   "mbRgMbid": "23f817da-81a4-39f4-9d56-7ebe34a58919",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Augustus Pablo",
+   "album": "Blowing With the Wind",
+   "year": 1990,
+   "label": "Rockers",
+   "country": "jm",
+   "faction": "pablo-rockers",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，melodica 慢歌式旋律，暖，低頻墊底，落恍惚",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "melodica 慢歌式旋律，暖，低頻墊底"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c90383e0-8340-32e8-9d84-8b54f0e70968",
+    "https://coverartarchive.org/release-group/c90383e0-8340-32e8-9d84-8b54f0e70968/front"
+   ],
+   "mbRgMbid": "c90383e0-8340-32e8-9d84-8b54f0e70968",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Augustus Pablo",
+   "album": "Earth’s Rightful Ruler",
+   "year": 1988,
+   "label": "Rockers",
+   "country": "jm",
+   "faction": "pablo-rockers",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，melodica 與管樂旋律，慢拍厚低頻，暖，落恍惚",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "melodica 與管樂旋律，慢拍厚低頻，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cda7efa4-c1df-33be-ba7e-894399ef0726",
+    "https://coverartarchive.org/release-group/cda7efa4-c1df-33be-ba7e-894399ef0726/front"
+   ],
+   "mbRgMbid": "cda7efa4-c1df-33be-ba7e-894399ef0726",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Augustus Pablo",
+   "album": "Africa Must Be Free… by 1983 Dub",
+   "year": 1978,
+   "label": "Message",
+   "country": "jm",
+   "faction": "pablo-rockers",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Hugh Mundell 專輯的 dub 版，Pablo 式濕暖回音，慢，落恍惚",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "Hugh Mundell 專輯的 dub 版，Pablo 式濕暖回音，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d5bfbdd8-31cc-47d7-a23b-b722f8810c60",
+    "https://coverartarchive.org/release-group/d5bfbdd8-31cc-47d7-a23b-b722f8810c60/front"
+   ],
+   "mbRgMbid": "d5bfbdd8-31cc-47d7-a23b-b722f8810c60",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "Lee “Scratch” Perry",
+   "album": "Musical Bones",
+   "year": 1975,
+   "label": "DIP",
+   "country": "jm",
+   "faction": "black-ark-ariwa",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Black Ark 早期 dub，trombone 旋律，濕暖霧狀，落恍惚",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.5,
+    "z": 0.6,
+    "why": "Black Ark 早期 dub，trombone 旋律，濕暖霧狀"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/05e5ed4a-9610-3ea2-8744-774a7af7f1f3",
+    "https://coverartarchive.org/release-group/05e5ed4a-9610-3ea2-8744-774a7af7f1f3/front"
+   ],
+   "mbRgMbid": "05e5ed4a-9610-3ea2-8744-774a7af7f1f3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Lee Scratch Perry",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "Lee “Scratch” Perry",
+   "album": "Kung Fu Meets the Dragon",
+   "year": 1975,
+   "label": "DIP",
+   "country": "jm",
+   "faction": "black-ark-ariwa",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Black Ark dub，厚低頻與回音，慢而霧，落恍惚",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.4,
+    "z": 0.5,
+    "why": "Black Ark dub，厚低頻與回音，慢而霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/26be840f-e245-3aeb-a98a-a9dabc5062b5",
+    "https://coverartarchive.org/release-group/26be840f-e245-3aeb-a98a-a9dabc5062b5/front"
+   ],
+   "mbRgMbid": "26be840f-e245-3aeb-a98a-a9dabc5062b5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Lee Scratch Perry",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "Lee “Scratch” Perry",
+   "album": "The Return of Pipecock Jackxon",
+   "year": 1980,
+   "label": "Black Star Liner",
+   "country": "jm",
+   "faction": "black-ark-ariwa",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Black Ark 晚期，人聲加 dub，濕糊慢拍，暖煙感，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.6,
+    "z": 0.6,
+    "why": "Black Ark 晚期，人聲加 dub，濕糊慢拍，暖煙感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/85c27cc5-a526-4b12-affe-8a5b89c56415",
+    "https://coverartarchive.org/release-group/85c27cc5-a526-4b12-affe-8a5b89c56415/front"
+   ],
+   "mbRgMbid": "85c27cc5-a526-4b12-affe-8a5b89c56415",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Lee Scratch Perry",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "Lee “Scratch” Perry",
+   "album": "Black Ark Experryments",
+   "year": 1995,
+   "label": "Ariwa",
+   "country": "jm",
+   "faction": "black-ark-ariwa",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Perry 與 Mad Professor 的溫暖 dub 重混，慢拍，落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.4,
+    "z": 0.5,
+    "why": "Perry 與 Mad Professor 的溫暖 dub 重混，慢拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/07daea64-1937-3431-b2cb-0546122f1d06",
+    "https://coverartarchive.org/release-group/07daea64-1937-3431-b2cb-0546122f1d06/front"
+   ],
+   "mbRgMbid": "07daea64-1937-3431-b2cb-0546122f1d06",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Lee Scratch Perry",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "Lee “Scratch” Perry",
+   "album": "Dub Take the Voodoo Out of Reggae",
+   "year": 1996,
+   "label": "Ariwa",
+   "country": "jm",
+   "faction": "black-ark-ariwa",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Perry 人聲加 Mad Professor 暖 dub，慢，落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "Perry 人聲加 Mad Professor 暖 dub，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/50ca3597-203d-3992-bfbf-536b1b32c636",
+    "https://coverartarchive.org/release-group/50ca3597-203d-3992-bfbf-536b1b32c636/front"
+   ],
+   "mbRgMbid": "50ca3597-203d-3992-bfbf-536b1b32c636",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Lee Scratch Perry",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "Lee “Scratch” Perry",
+   "album": "Mystic Warrior",
+   "year": 1990,
+   "label": "Ariwa",
+   "country": "jm",
+   "faction": "black-ark-ariwa",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Perry 人聲配 Ariwa 暖 dub 製作，慢拍厚低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Perry 人聲配 Ariwa 暖 dub 製作，慢拍厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a02b2dc9-033b-309b-bf77-c0d9ba34e586",
+    "https://coverartarchive.org/release-group/a02b2dc9-033b-309b-bf77-c0d9ba34e586/front"
+   ],
+   "mbRgMbid": "a02b2dc9-033b-309b-bf77-c0d9ba34e586",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Lee Scratch Perry",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mad Professor",
+   "album": "Dub Me Crazy, Part 3: The African Connection",
+   "year": 1983,
+   "label": "Ariwa",
+   "country": "gb",
+   "faction": "black-ark-ariwa",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Ariwa 暖 dub，Pool 的 Dub Me Crazy 系，慢拍厚低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "Ariwa 暖 dub，Pool 的 Dub Me Crazy 系，慢拍厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f7e09887-5f73-306b-9411-519376b3ef04",
+    "https://coverartarchive.org/release-group/f7e09887-5f73-306b-9411-519376b3ef04/front"
+   ],
+   "mbRgMbid": "f7e09887-5f73-306b-9411-519376b3ef04",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "Mad Professor",
+   "album": "Dub Me Crazy, Part 4: Escape to the Asylum Of Dub",
+   "year": 1983,
+   "label": "Ariwa",
+   "country": "gb",
+   "faction": "black-ark-ariwa",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Ariwa 暖 dub 回音，慢拍，落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "Ariwa 暖 dub 回音，慢拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/be3d4f14-48d7-314a-97d4-c31f2891ddf1",
+    "https://coverartarchive.org/release-group/be3d4f14-48d7-314a-97d4-c31f2891ddf1/front"
+   ],
+   "mbRgMbid": "be3d4f14-48d7-314a-97d4-c31f2891ddf1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "Mad Professor",
+   "album": "Dub Me Crazy, Part 5: Who Knows the Secret of the Master Tape?",
+   "year": 1985,
+   "label": "Ariwa",
+   "country": "gb",
+   "faction": "black-ark-ariwa",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Ariwa 暖 dub，旋律與厚低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "Ariwa 暖 dub，旋律與厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1d948bfa-958a-3566-a01d-fd8d64b180b3",
+    "https://coverartarchive.org/release-group/1d948bfa-958a-3566-a01d-fd8d64b180b3/front"
+   ],
+   "mbRgMbid": "1d948bfa-958a-3566-a01d-fd8d64b180b3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "Mad Professor",
+   "album": "Dub You Crazy With Love",
+   "year": 1997,
+   "label": "Ariwa",
+   "country": "gb",
+   "faction": "black-ark-ariwa",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，lovers rock 歌曲 dub 版，甜旋律加厚低頻，暖，落恍惚",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.1,
+    "z": 1,
+    "why": "lovers rock 歌曲 dub 版，甜旋律加厚低頻，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e36dc83a-4ec6-3efa-8576-e6f27a5959a6",
+    "https://coverartarchive.org/release-group/e36dc83a-4ec6-3efa-8576-e6f27a5959a6/front"
+   ],
+   "mbRgMbid": "e36dc83a-4ec6-3efa-8576-e6f27a5959a6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bob Andy",
+   "album": "Bob Andy's Dub Book: As Revealed to Mad Professor",
+   "year": 1989,
+   "label": "I-Anka",
+   "country": "gb",
+   "faction": "black-ark-ariwa",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Bob Andy 人聲歌加 Mad Professor dub，慢暖，落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.1,
+    "z": 0.9,
+    "why": "Bob Andy 人聲歌加 Mad Professor dub，慢暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/43bda3a7-5486-3a19-af0c-1e536dc7a063",
+    "https://coverartarchive.org/release-group/43bda3a7-5486-3a19-af0c-1e536dc7a063/front"
+   ],
+   "mbRgMbid": "43bda3a7-5486-3a19-af0c-1e536dc7a063",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Aggrovators",
+   "album": "Kaya Dub",
+   "year": 1978,
+   "label": "Third World",
+   "country": "jm",
+   "faction": "vocal-dub-showcase",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Marley《Kaya》節奏的 dub，慢拍暖低頻，落恍惚",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": 0.7,
+    "why": "Marley《Kaya》節奏的 dub，慢拍暖低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2950aef2-687c-302f-b64e-5150f4166655",
+    "https://coverartarchive.org/release-group/2950aef2-687c-302f-b64e-5150f4166655/front"
+   ],
+   "mbRgMbid": "2950aef2-687c-302f-b64e-5150f4166655",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jacob Miller",
+   "album": "Tenement Yard",
+   "year": 1976,
+   "label": "Jam Sounds",
+   "country": "jm",
+   "faction": "pablo-rockers",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Jacob Miller 暖嗓、Inner Circle 厚低頻，Pablo 風味，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 0.8,
+    "why": "Jacob Miller 暖嗓、Inner Circle 厚低頻，Pablo 風味"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/14c45ad4-ada0-3b8e-a824-4b0ec1fbd6c5",
+    "https://coverartarchive.org/release-group/14c45ad4-ada0-3b8e-a824-4b0ec1fbd6c5/front"
+   ],
+   "mbRgMbid": "14c45ad4-ada0-3b8e-a824-4b0ec1fbd6c5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Inner Circle",
+   "album": "Reggae Thing",
+   "year": 1976,
+   "label": "Trojan",
+   "country": "jm",
+   "faction": "pablo-rockers",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Inner Circle 慢 roots，和聲與厚貝斯，暖，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.8,
+    "why": "Inner Circle 慢 roots，和聲與厚貝斯，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c7e4abc2-5057-3c0c-a5fb-7a44a56b0129",
+    "https://coverartarchive.org/release-group/c7e4abc2-5057-3c0c-a5fb-7a44a56b0129/front"
+   ],
+   "mbRgMbid": "c7e4abc2-5057-3c0c-a5fb-7a44a56b0129",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tetrack",
+   "album": "Let's Get Started",
+   "year": 1978,
+   "label": "",
+   "country": "jm",
+   "faction": "pablo-rockers",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Pablo 製作的和聲 roots 人聲盤，melodica 與濕回音，暖，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 1,
+    "why": "Pablo 製作的和聲 roots 人聲盤，melodica 與濕回音，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8f6a3771-b4f4-3047-8bc3-e47432f71b11",
+    "https://coverartarchive.org/release-group/8f6a3771-b4f4-3047-8bc3-e47432f71b11/front"
+   ],
+   "mbRgMbid": "8f6a3771-b4f4-3047-8bc3-e47432f71b11",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Pablo Moses",
+   "album": "Pave the Way",
+   "year": 1981,
+   "label": "Island",
+   "country": "jm",
+   "faction": "vocal-dub-showcase",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Sly & Robbie 慢 one-drop，厚低頻，Pablo Moses 暖嗓，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 0.8,
+    "why": "Sly & Robbie 慢 one-drop，厚低頻，Pablo Moses 暖嗓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/04aaddd0-5853-307c-9ff0-a36988217c40",
+    "https://music.apple.com/us/album/pave-the-way-dubs/1574153986"
+   ],
+   "mbRgMbid": "04aaddd0-5853-307c-9ff0-a36988217c40",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Pablo Moses",
+   "album": "A Song",
+   "year": 1980,
+   "label": "Island",
+   "country": "jm",
+   "faction": "vocal-dub-showcase",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，慢 roots，厚低頻加和聲，暖，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 0.8,
+    "why": "慢 roots，厚低頻加和聲，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7eba0bd6-e76c-3d9b-ab74-bbff8e511495",
+    "https://coverartarchive.org/release-group/7eba0bd6-e76c-3d9b-ab74-bbff8e511495/front"
+   ],
+   "mbRgMbid": "7eba0bd6-e76c-3d9b-ab74-bbff8e511495",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bunny Wailer",
+   "album": "Struggle",
+   "year": 1979,
+   "label": "Solomonic",
+   "country": "jm",
+   "faction": "vocal-dub-showcase",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Bunny 暖柔人聲，慢拍厚低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "Bunny 暖柔人聲，慢拍厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/56fb766c-b0cc-3681-864c-1b09e167f162",
+    "https://coverartarchive.org/release-group/56fb766c-b0cc-3681-864c-1b09e167f162/front"
+   ],
+   "mbRgMbid": "56fb766c-b0cc-3681-864c-1b09e167f162",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bunny Wailer",
+   "album": "Rock and Groove",
+   "year": 1981,
+   "label": "Solomonic",
+   "country": "jm",
+   "faction": "vocal-dub-showcase",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Roots Radics 慢律動，暖人聲，厚貝斯，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.9,
+    "why": "Roots Radics 慢律動，暖人聲，厚貝斯"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8880aa1f-dde0-3f70-b86a-5b877d6f70f5",
+    "https://coverartarchive.org/release-group/8880aa1f-dde0-3f70-b86a-5b877d6f70f5/front"
+   ],
+   "mbRgMbid": "8880aa1f-dde0-3f70-b86a-5b877d6f70f5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bim Sherman",
+   "album": "Haunting Ground",
+   "year": 1986,
+   "label": "RDL Records",
+   "country": "gb",
+   "faction": "uk-new-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，On-U 製作，Roots Radics 慢拍，Bim 柔嗓，濕回音，落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.1,
+    "z": 0.7,
+    "why": "On-U 製作，Roots Radics 慢拍，Bim 柔嗓，濕回音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/415eef06-0277-4d8f-9e9e-46efd6f50048",
+    "https://coverartarchive.org/release-group/415eef06-0277-4d8f-9e9e-46efd6f50048/front"
+   ],
+   "mbRgMbid": "415eef06-0277-4d8f-9e9e-46efd6f50048",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Wackies Rhythm Force",
+   "album": "African Roots Act 1",
+   "year": 1980,
+   "label": "Wackie’s",
+   "country": "us",
+   "faction": "wackies",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Wackie's 手工 dub，磁帶糊、厚貝斯，慢，落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.3,
+    "z": 0.5,
+    "why": "Wackie's 手工 dub，磁帶糊、厚貝斯，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5906c468-4779-3291-9801-5c9f1ff4f58f",
+    "https://coverartarchive.org/release-group/5906c468-4779-3291-9801-5c9f1ff4f58f/front"
+   ],
+   "mbRgMbid": "5906c468-4779-3291-9801-5c9f1ff4f58f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "Love Joys",
+   "album": "Reggae Vibes",
+   "year": 1981,
+   "label": "Top Ranking International",
+   "country": "us",
+   "faction": "wackies",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Wackie's 女聲和聲，濕混音厚低頻，暖，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 1,
+    "why": "Wackie's 女聲和聲，濕混音厚低頻，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d77a1033-afb7-389a-bec3-c797a48681ab",
+    "https://coverartarchive.org/release-group/d77a1033-afb7-389a-bec3-c797a48681ab/front"
+   ],
+   "mbRgMbid": "d77a1033-afb7-389a-bec3-c797a48681ab",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Prince Fatty",
+   "album": "Prince Fatty vs. Mungo’s Hi-Fi",
+   "year": 2014,
+   "label": "Mr Bongo",
+   "country": "gb",
+   "faction": "uk-new-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，新一代暖 dub 加人聲，慢拍厚低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 0.8,
+    "why": "新一代暖 dub 加人聲，慢拍厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ebee7766-b9fe-4a12-bb22-0dabdc7e65a7",
+    "https://coverartarchive.org/release-group/ebee7766-b9fe-4a12-bb22-0dabdc7e65a7/front"
+   ],
+   "mbRgMbid": "ebee7766-b9fe-4a12-bb22-0dabdc7e65a7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mungo’s Hi Fi",
+   "album": "Soul Radio",
+   "year": 2020,
+   "label": "Scotch Bonnet Records",
+   "country": "gb",
+   "faction": "uk-new-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，soul 翻唱的慢拍 reggae，暖，低頻厚，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "soul 翻唱的慢拍 reggae，暖，低頻厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8f8eb82b-c8ee-4671-bc87-9a5b28175447",
+    "https://coverartarchive.org/release-group/8f8eb82b-c8ee-4671-bc87-9a5b28175447/front"
+   ],
+   "mbRgMbid": "8f8eb82b-c8ee-4671-bc87-9a5b28175447",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Dubkasm",
+   "album": "Transform I",
+   "year": 2009,
+   "label": "Sufferah's Choice Recordings",
+   "country": "gb",
+   "faction": "uk-new-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Bristol 暖 dub，melodica 與人聲，慢拍厚低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "Bristol 暖 dub，melodica 與人聲，慢拍厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ee95d23c-e51f-4dd1-a1d2-913607af0a88",
+    "https://coverartarchive.org/release-group/ee95d23c-e51f-4dd1-a1d2-913607af0a88/front"
+   ],
+   "mbRgMbid": "ee95d23c-e51f-4dd1-a1d2-913607af0a88",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "Junior Delgado",
+   "album": "Effort",
+   "year": 1979,
+   "label": "DEB Music",
+   "country": "jm",
+   "faction": "vocal-dub-showcase",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Delgado 沙啞人聲，濕混音厚低頻，慢，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.6,
+    "why": "Delgado 沙啞人聲，濕混音厚低頻，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6426e9a8-bee3-44be-a2bc-2a7f55b5cd69",
+    "https://coverartarchive.org/release-group/6426e9a8-bee3-44be-a2bc-2a7f55b5cd69/front"
+   ],
+   "mbRgMbid": "6426e9a8-bee3-44be-a2bc-2a7f55b5cd69",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "The Itals",
+   "album": "Give Me Power",
+   "year": 1983,
+   "label": "Nighthawk Records",
+   "country": "jm",
+   "faction": "vocal-dub-showcase",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Itals 三聲部和聲，慢 roots，低頻厚，暖，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 1,
+    "why": "Itals 三聲部和聲，慢 roots，低頻厚，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f779a723-79d8-382b-8e39-455e4faf5236",
+    "https://music.apple.com/us/album/give-me-power/526834014"
+   ],
+   "mbRgMbid": "f779a723-79d8-382b-8e39-455e4faf5236",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Triston Palma",
+   "album": "Presenting Triston Palma",
+   "year": 1981,
+   "label": "Black Roots",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，慢 roots 歌手盤，厚低頻回音，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.7,
+    "why": "慢 roots 歌手盤，厚低頻回音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d06d1109-15ff-4e16-becb-5d4e3ccf27d2",
+    "https://coverartarchive.org/release-group/d06d1109-15ff-4e16-becb-5d4e3ccf27d2/front"
+   ],
+   "mbRgMbid": "d06d1109-15ff-4e16-becb-5d4e3ccf27d2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Little John",
+   "album": "Reggae Dance",
+   "year": 1982,
+   "label": "Midnight Rock",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Junjo 製作 Roots Radics 慢拍，厚低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.6,
+    "why": "Junjo 製作 Roots Radics 慢拍，厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/38e18b04-0c76-4b57-8bde-df88e5e3c329",
+    "https://coverartarchive.org/release-group/38e18b04-0c76-4b57-8bde-df88e5e3c329/front"
+   ],
+   "mbRgMbid": "38e18b04-0c76-4b57-8bde-df88e5e3c329",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "Little John",
+   "album": "Ghetto Youth",
+   "year": 1983,
+   "label": "Jah Guidance",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Roots Radics 慢拍濕混音，人聲溫，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.6,
+    "why": "Roots Radics 慢拍濕混音，人聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/aa2b71d9-3c4b-3b8d-818f-345f0d55258f",
+    "https://coverartarchive.org/release-group/aa2b71d9-3c4b-3b8d-818f-345f0d55258f/front"
+   ],
+   "mbRgMbid": "aa2b71d9-3c4b-3b8d-818f-345f0d55258f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "Barrington Levy",
+   "album": "Poor Man Style",
+   "year": 1982,
+   "label": "Greensleeves",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Junjo＋Roots Radics 慢拍，低頻厚回音濕，Levy 高音暖，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Junjo＋Roots Radics 慢拍，低頻厚回音濕，Levy 高音暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a0468795-029f-3e4c-85e5-7ce06e56cbbb",
+    "https://coverartarchive.org/release-group/a0468795-029f-3e4c-85e5-7ce06e56cbbb/front"
+   ],
+   "mbRgMbid": "a0468795-029f-3e4c-85e5-7ce06e56cbbb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Barrington Levy",
+   "album": "Teach Me Culture",
+   "year": 1983,
+   "label": "Live & Learn",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Junjo＋Roots Radics 慢拍，低頻厚，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Junjo＋Roots Radics 慢拍，低頻厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8c5a6682-b35f-3609-a7a7-59a4632e7b0b",
+    "https://coverartarchive.org/release-group/8c5a6682-b35f-3609-a7a7-59a4632e7b0b/front"
+   ],
+   "mbRgMbid": "8c5a6682-b35f-3609-a7a7-59a4632e7b0b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Barrington Levy",
+   "album": "Life Style",
+   "year": 1983,
+   "label": "GG’s Records",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，慢 rub-a-dub 厚低頻，暖，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "慢 rub-a-dub 厚低頻，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1254e232-e76e-3b08-9874-3916222d0dc9",
+    "https://coverartarchive.org/release-group/1254e232-e76e-3b08-9874-3916222d0dc9/front"
+   ],
+   "mbRgMbid": "1254e232-e76e-3b08-9874-3916222d0dc9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Barrington Levy",
+   "album": "Here I Come",
+   "year": 1985,
+   "label": "Time 1 Records",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Levy 慢情歌，低頻厚，偏濕，落恍惚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.7,
+    "why": "Levy 慢情歌，低頻厚，偏濕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cb723eaf-a6ef-3654-b5eb-587cea7778a8",
+    "https://coverartarchive.org/release-group/cb723eaf-a6ef-3654-b5eb-587cea7778a8/front"
+   ],
+   "mbRgMbid": "cb723eaf-a6ef-3654-b5eb-587cea7778a8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Sugar Minott",
+   "album": "African Girl",
+   "year": 1981,
+   "label": "Black Roots Music",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Black Roots 慢拍，Roots Radics 厚低頻，暖，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.8,
+    "why": "Black Roots 慢拍，Roots Radics 厚低頻，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/73afd404-02d3-4dfe-ab36-c0e1b3e571c4",
+    "https://coverartarchive.org/release-group/73afd404-02d3-4dfe-ab36-c0e1b3e571c4/front"
+   ],
+   "mbRgMbid": "73afd404-02d3-4dfe-ab36-c0e1b3e571c4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Sugar Minott",
+   "album": "Herbman Hustling",
+   "year": 1984,
+   "label": "Black Roots Music",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Black Roots 慢拍濕混音，落恍惚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.7,
+    "why": "Black Roots 慢拍濕混音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ce6412ff-5b54-4310-aab4-9e7b34273ef0",
+    "https://coverartarchive.org/release-group/ce6412ff-5b54-4310-aab4-9e7b34273ef0/front"
+   ],
+   "mbRgMbid": "ce6412ff-5b54-4310-aab4-9e7b34273ef0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Sugar Minott",
+   "album": "Buy Off the Bar",
+   "year": 1984,
+   "label": "Sonic Sounds",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Black Roots 慢拍厚低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.7,
+    "why": "Black Roots 慢拍厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f57090f0-4589-49c6-a0f7-0b96f43bedab",
+    "https://coverartarchive.org/release-group/f57090f0-4589-49c6-a0f7-0b96f43bedab/front"
+   ],
+   "mbRgMbid": "f57090f0-4589-49c6-a0f7-0b96f43bedab",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Wailing Souls",
+   "album": "Wailing",
+   "year": 1981,
+   "label": "Jah Guidance",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Junjo 製作，和聲加厚低頻，慢，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.7,
+    "why": "Junjo 製作，和聲加厚低頻，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0858a633-9c08-4c11-a076-58f37bc6bdd2",
+    "https://coverartarchive.org/release-group/0858a633-9c08-4c11-a076-58f37bc6bdd2/front"
+   ],
+   "mbRgMbid": "0858a633-9c08-4c11-a076-58f37bc6bdd2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Barry Brown",
+   "album": "Step It Up Youthman",
+   "year": 1979,
+   "label": "Paradise",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，慢 roots，厚低頻，濕混音，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.6,
+    "why": "慢 roots，厚低頻，濕混音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/550a37a3-c0b6-4ba4-b037-c1c38de3726c",
+    "https://coverartarchive.org/release-group/550a37a3-c0b6-4ba4-b037-c1c38de3726c/front"
+   ],
+   "mbRgMbid": "550a37a3-c0b6-4ba4-b037-c1c38de3726c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "Augustus Pablo",
+   "album": "Eastman Dub",
+   "year": 1988,
+   "label": "Rockers",
+   "country": "jm",
+   "faction": "pablo-rockers",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Tetrack 人聲 dub，melodica 與厚低頻，慢，落恍惚",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1,
+    "z": 0.6,
+    "why": "Tetrack 人聲 dub，melodica 與厚低頻，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9efb6cc6-32b3-3057-98e7-df239178e101",
+    "https://coverartarchive.org/release-group/9efb6cc6-32b3-3057-98e7-df239178e101/front"
+   ],
+   "mbRgMbid": "9efb6cc6-32b3-3057-98e7-df239178e101",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "Augustus Pablo",
+   "album": "Rockers All Stars – Chanting Dub With The Help Of The Father",
+   "year": 1978,
+   "label": "Rockers International",
+   "country": "jm",
+   "faction": "pablo-rockers",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Pablo 慢 dub，melodica 與濕回音，落恍惚",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "Pablo 慢 dub，melodica 與濕回音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b84388e6-a89d-459a-9a4d-4f18335839e1",
+    "https://coverartarchive.org/release-group/b84388e6-a89d-459a-9a4d-4f18335839e1/front"
+   ],
+   "mbRgMbid": "b84388e6-a89d-459a-9a4d-4f18335839e1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "Wackies Rhythm Force",
+   "album": "African Roots Act 2",
+   "year": 1982,
+   "label": "Wackie’s",
+   "country": "us",
+   "faction": "wackies",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Wackie’s 手工 dub，磁帶糊厚貝斯，慢，落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.3,
+    "z": 0.5,
+    "why": "Wackie’s 手工 dub，磁帶糊厚貝斯，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e9cfa7ad-cd2e-3519-a5b2-85c44d76dfe7",
+    "https://coverartarchive.org/release-group/e9cfa7ad-cd2e-3519-a5b2-85c44d76dfe7/front"
+   ],
+   "mbRgMbid": "e9cfa7ad-cd2e-3519-a5b2-85c44d76dfe7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "Bunny Wailer",
+   "album": "Dubdsco Vol. 2",
+   "year": 1981,
+   "label": "Solomonic",
+   "country": "jm",
+   "faction": "vocal-dub-showcase",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Roots Radics 慢 dub，厚低頻，暖，落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.3,
+    "z": 0.6,
+    "why": "Roots Radics 慢 dub，厚低頻，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2d68f671-c9e6-4232-b84e-883e8f65802f",
+    "https://coverartarchive.org/release-group/2d68f671-c9e6-4232-b84e-883e8f65802f/front"
+   ],
+   "mbRgMbid": "2d68f671-c9e6-4232-b84e-883e8f65802f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "Junior Delgado",
+   "album": "Bush Master Revolution",
+   "year": 1982,
+   "label": "",
+   "country": "jm",
+   "faction": "vocal-dub-showcase",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Delgado 人聲加 dub 混音，濕、厚低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "Delgado 人聲加 dub 混音，濕、厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0f06c51a-4129-34d3-9225-f16a398680f4",
+    "https://coverartarchive.org/release-group/0f06c51a-4129-34d3-9225-f16a398680f4/front"
+   ],
+   "mbRgMbid": "0f06c51a-4129-34d3-9225-f16a398680f4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "The Itals",
+   "album": "Rasta Philosophy",
+   "year": 1985,
+   "label": "Nighthawk Records",
+   "country": "jm",
+   "faction": "vocal-dub-showcase",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Itals 和聲慢 roots，暖，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "Itals 和聲慢 roots，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5cf59c75-0efa-3f4c-a736-e7b03caac7aa",
+    "https://coverartarchive.org/release-group/5cf59c75-0efa-3f4c-a736-e7b03caac7aa/front"
+   ],
+   "mbRgMbid": "5cf59c75-0efa-3f4c-a736-e7b03caac7aa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Barrington Levy",
+   "album": "Open Book",
+   "year": 1985,
+   "label": "Tuff Gong",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Levy 慢拍，厚低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.7,
+    "why": "Levy 慢拍，厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9edaa862-7b10-467c-8661-971c4d09fc79",
+    "https://coverartarchive.org/release-group/9edaa862-7b10-467c-8661-971c4d09fc79/front"
+   ],
+   "mbRgMbid": "9edaa862-7b10-467c-8661-971c4d09fc79",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mad Professor",
+   "album": "Dub Me Crazy, Part 6: Schizophrenic Dub",
+   "year": 1986,
+   "label": "",
+   "country": "gb",
+   "faction": "black-ark-ariwa",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Ariwa 暖 dub，慢拍，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "Ariwa 暖 dub，慢拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/797bc24f-bd50-33da-bf48-d6e699856297",
+    "https://coverartarchive.org/release-group/797bc24f-bd50-33da-bf48-d6e699856297/front"
+   ],
+   "mbRgMbid": "797bc24f-bd50-33da-bf48-d6e699856297",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 估值貼近 0.5-0.6，dub 色溫常被評分器往 0 收"
+  },
+  {
+   "artist": "Peter Broggs",
+   "album": "Cease the War",
+   "year": 1984,
+   "label": "RAS Records",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，roots 暖嗓，慢拍厚低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.7,
+    "why": "roots 暖嗓，慢拍厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/62af003b-6f97-3694-ab98-b08b20ab3f20",
+    "https://coverartarchive.org/release-group/62af003b-6f97-3694-ab98-b08b20ab3f20/front"
+   ],
+   "mbRgMbid": "62af003b-6f97-3694-ab98-b08b20ab3f20",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jacob Miller",
+   "album": "Mixed Up Moods",
+   "year": 1980,
+   "label": "Top Ranking",
+   "country": "jm",
+   "faction": "pablo-rockers",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Jacob Miller 暖嗓，Inner Circle 厚低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.7,
+    "why": "Jacob Miller 暖嗓，Inner Circle 厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2ce3b009-9dd0-3ddf-ae53-ce4c829bf98a",
+    "https://coverartarchive.org/release-group/2ce3b009-9dd0-3ddf-ae53-ce4c829bf98a/front"
+   ],
+   "mbRgMbid": "2ce3b009-9dd0-3ddf-ae53-ce4c829bf98a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "LITTLE TEMPO",
+   "album": "MUSICAL BRAIN FOOD",
+   "year": 2003,
+   "label": "SPEEDSTAR INTERNATIONAL",
+   "country": "jp",
+   "faction": "japan-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，日本暖 dub，旋律樂器與慢拍低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "日本暖 dub，旋律樂器與慢拍低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7a6bd0a4-17f2-3944-b825-ddb2aa7de069",
+    "https://www.discogs.com/master/794298-Little-Tempo-Musical-Brain-Food"
+   ],
+   "mbRgMbid": "7a6bd0a4-17f2-3944-b825-ddb2aa7de069",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs master 頁當封面來源（CAA 無圖）。"
+  },
+  {
+   "artist": "Michael Prophet",
+   "album": "Righteous Are The Conqueror",
+   "year": 1980,
+   "label": "Greensleeves Records",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Roots Radics 慢 rub-a-dub，濕混音，人聲溫，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.6,
+    "why": "Roots Radics 慢 rub-a-dub，濕混音，人聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1f8599e1-292c-4c61-a4d7-b46d6d6f6dbe",
+    "https://www.discogs.com/master/309906-Michael-Prophet-Righteous-Are-The-Conqueror"
+   ],
+   "mbRgMbid": "1f8599e1-292c-4c61-a4d7-b46d6d6f6dbe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs master 頁當封面來源（CAA 無圖）。z 估值偏低"
+  },
+  {
+   "artist": "Sugar Minott",
+   "album": "More Sugar Minott",
+   "year": 1982,
+   "label": "Studio One",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Black Roots 慢拍，厚低頻暖，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.8,
+    "why": "Black Roots 慢拍，厚低頻暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5ac75e14-169b-4450-84b2-72897ad6eabc",
+    "https://www.discogs.com/master/502915-Sugar-Minott-More-Sugar-Minott"
+   ],
+   "mbRgMbid": "5ac75e14-169b-4450-84b2-72897ad6eabc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs master 頁當封面來源（CAA 無圖）。"
+  },
+  {
+   "artist": "Sugar Minott",
+   "album": "Roots Lovers",
+   "year": 1980,
+   "label": "Black Roots Music",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，慢情歌 Studio One 式暖低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.9,
+    "why": "慢情歌 Studio One 式暖低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4c80cb60-2d32-4499-9e71-de8923459736",
+    "https://www.discogs.com/master/481381-Sugar-Minott-Roots-Lovers"
+   ],
+   "mbRgMbid": "4c80cb60-2d32-4499-9e71-de8923459736",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs master 頁當封面來源（CAA 無圖）。"
+  },
+  {
+   "artist": "Tony Tuff",
+   "album": "Presenting Mr. Tuff",
+   "year": 1981,
+   "label": "Black Roots",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Roots Radics 慢拍，人聲溫，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.7,
+    "why": "Roots Radics 慢拍，人聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ca7a9a61-45c0-473c-bb19-2d34c15480d8",
+    "https://www.discogs.com/master/754428-Tony-Tuff-Presenting-MrTuff"
+   ],
+   "mbRgMbid": "ca7a9a61-45c0-473c-bb19-2d34c15480d8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs master 頁當封面來源（CAA 無圖）。"
+  },
+  {
+   "artist": "Barrington Levy",
+   "album": "Money Move",
+   "year": 1984,
+   "label": "Power House",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Junjo 時期慢拍，厚低頻濕回音，Levy 高音暖，落恍惚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.8,
+    "why": "Junjo 時期慢拍，厚低頻濕回音，Levy 高音暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8fddf282-a186-4207-a249-8cd79db976c0",
+    "https://coverartarchive.org/release-group/8fddf282-a186-4207-a249-8cd79db976c0/front"
+   ],
+   "mbRgMbid": "8fddf282-a186-4207-a249-8cd79db976c0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Barrington Levy",
+   "album": "Run Come Ya!",
+   "year": 1981,
+   "label": "Puff Records",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Roots Radics 慢拍，Scientist 式濕混音，低頻厚，落恍惚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Roots Radics 慢拍，Scientist 式濕混音，低頻厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0bfc049b-2a69-4670-88d9-c103d9a6b0cb",
+    "https://coverartarchive.org/release-group/0bfc049b-2a69-4670-88d9-c103d9a6b0cb/front"
+   ],
+   "mbRgMbid": "0bfc049b-2a69-4670-88d9-c103d9a6b0cb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Barrington Levy",
+   "album": "Shine Eye Gal",
+   "year": 1979,
+   "label": "Burning Sounds",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Channel One 年代慢情歌，厚貝斯，Levy 暖高音，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Channel One 年代慢情歌，厚貝斯，Levy 暖高音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9a374e50-1c90-3a26-842d-eac7f1a34c77",
+    "https://coverartarchive.org/release-group/9a374e50-1c90-3a26-842d-eac7f1a34c77/front"
+   ],
+   "mbRgMbid": "9a374e50-1c90-3a26-842d-eac7f1a34c77",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Barrington Levy",
+   "album": "Doh Ray Me",
+   "year": 1980,
+   "label": "JB Music",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Junjo 製作，Roots Radics 慢拍濕混音，落恍惚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Junjo 製作，Roots Radics 慢拍濕混音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a64e379c-202b-4aa0-85dd-29d3a588faa4",
+    "https://coverartarchive.org/release-group/a64e379c-202b-4aa0-85dd-29d3a588faa4/front"
+   ],
+   "mbRgMbid": "a64e379c-202b-4aa0-85dd-29d3a588faa4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Rico Rodriguez",
+   "album": "That Man Is Forward",
+   "year": 1981,
+   "label": "Reggae Retro Records",
+   "country": "gb",
+   "faction": "uk-new-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，trombone 主旋律，慢 reggae，暖，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 1,
+    "why": "trombone 主旋律，慢 reggae，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/816715df-af50-4e15-a7b9-f35a562ad6ed",
+    "https://coverartarchive.org/release-group/816715df-af50-4e15-a7b9-f35a562ad6ed/front"
+   ],
+   "mbRgMbid": "816715df-af50-4e15-a7b9-f35a562ad6ed",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Prince Fatty",
+   "album": "Return of Gringo!",
+   "year": 2011,
+   "label": "Mr Bongo",
+   "country": "gb",
+   "faction": "uk-new-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Prince Fatty 暖 dub，管樂與厚低頻，慢，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 1,
+    "why": "Prince Fatty 暖 dub，管樂與厚低頻，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6dc699fd-dd70-47b7-8d11-4e6bcce4d9a2",
+    "https://coverartarchive.org/release-group/6dc699fd-dd70-47b7-8d11-4e6bcce4d9a2/front"
+   ],
+   "mbRgMbid": "6dc699fd-dd70-47b7-8d11-4e6bcce4d9a2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Prince Fatty",
+   "album": "Super Size",
+   "year": 2010,
+   "label": "Wrasse Records",
+   "country": "gb",
+   "faction": "uk-new-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Prince Fatty 暖 dub，Hammond 與厚低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 1,
+    "why": "Prince Fatty 暖 dub，Hammond 與厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f9d7a953-a638-49c0-bfe7-7620cfec240a",
+    "https://coverartarchive.org/release-group/f9d7a953-a638-49c0-bfe7-7620cfec240a/front"
+   ],
+   "mbRgMbid": "f9d7a953-a638-49c0-bfe7-7620cfec240a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Prince Fatty",
+   "album": "Prince Fatty Versus the Drunken Gambler",
+   "year": 2012,
+   "label": "Mr Bongo",
+   "country": "gb",
+   "faction": "uk-new-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Prince Fatty 暖 dub，人聲加厚低頻，慢，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 1,
+    "why": "Prince Fatty 暖 dub，人聲加厚低頻，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b3c3e6c8-53a8-40bf-9dfe-1ac8b2868271",
+    "https://coverartarchive.org/release-group/b3c3e6c8-53a8-40bf-9dfe-1ac8b2868271/front"
+   ],
+   "mbRgMbid": "b3c3e6c8-53a8-40bf-9dfe-1ac8b2868271",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Prince Fatty",
+   "album": "In the Kingdom of Dub",
+   "year": 2014,
+   "label": "Tru Thoughts",
+   "country": "gb",
+   "faction": "uk-new-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Prince Fatty 暖 dub，厚貝斯與管樂，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.9,
+    "why": "Prince Fatty 暖 dub，厚貝斯與管樂"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dfc31e40-05ec-4336-bb34-8aaa4eee5770",
+    "https://coverartarchive.org/release-group/dfc31e40-05ec-4336-bb34-8aaa4eee5770/front"
+   ],
+   "mbRgMbid": "dfc31e40-05ec-4336-bb34-8aaa4eee5770",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Gladiators",
+   "album": "Sweet So Till",
+   "year": 1979,
+   "label": "Front Line Records",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Gladiators 和聲，慢 roots，厚低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.8,
+    "why": "Gladiators 和聲，慢 roots，厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/21df8cb7-34e0-3bfe-b6e1-ca7423a41147",
+    "https://coverartarchive.org/release-group/21df8cb7-34e0-3bfe-b6e1-ca7423a41147/front"
+   ],
+   "mbRgMbid": "21df8cb7-34e0-3bfe-b6e1-ca7423a41147",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Wailing Souls",
+   "album": "Baby Come Rock",
+   "year": 1981,
+   "label": "Joe Gibbs",
+   "country": "jm",
+   "faction": "slow-dancehall",
+   "genres": [
+    "world"
+   ],
+   "why": "80s 慢板 rub-a-dub／roots 人聲盤，Junjo 製作，和聲加厚低頻，慢，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.7,
+    "why": "Junjo 製作，和聲加厚低頻，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2fe2b723-74e6-4448-8609-18d6564f4295",
+    "https://coverartarchive.org/release-group/2fe2b723-74e6-4448-8609-18d6564f4295/front"
+   ],
+   "mbRgMbid": "2fe2b723-74e6-4448-8609-18d6564f4295",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bob Marley & The Wailers",
+   "album": "Soul Revolution Part II",
+   "year": 1971,
+   "label": "Upsetter Records",
+   "country": "jm",
+   "faction": "vocal-dub-showcase",
+   "genres": [
+    "world"
+   ],
+   "why": "暖 dub／roots 二線，Perry 製作早期 Wailers，慢 rocksteady 轉 roots，暖，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.9,
+    "why": "Perry 製作早期 Wailers，慢 rocksteady 轉 roots，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e664129e-53ba-3866-839c-129465368b70",
+    "https://coverartarchive.org/release-group/e664129e-53ba-3866-839c-129465368b70/front"
+   ],
+   "mbRgMbid": "e664129e-53ba-3866-839c-129465368b70",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "54 張全數 MB 釘住（皆 primary-type=Album、無 Compilation/Remix 次類型），封面 52 張 CAA、2 張（Pave the Way、Give Me Power）用 iTunes 頁（Pave the Way 為同封面的 +Dubs 重發頁）。去重對 seed_cards 0 撞，對其他 curation-*.json 0 撞。",
+  "池中 dub 核心已極滿（Tubby／Scientist／Pablo 核心／Joe Gibbs／Upsetters 主要盤／Mad Prof Part 1-2／Mute Beat／Dry & Heavy／Little Tempo 皆在），ml9 剩下的暖 dub 候選本來就不多；純器樂 dub 我只收有旋律樂器（melodica／trombone／小號）、人聲或 lovers 取向的。Channel One／Revolutionaries／Aggrovators 多數盤、Prince Jammy、Studio One 器樂 dub、On-U、Jah Shaka 系判冷或判輕，一律未提。",
+  "dub 類 z 我估 0.5–1.0，其中 z<0.7 的 21 張在 uncertain 欄標出（Perry／Mad Prof／Wackie’s／Delgado dub 盤），評分器可能往 0 收，建議主線優先汰換這些。Wackie’s 只提 African Roots Act 1／2（Act 3 未提），Love Joys 為人聲和聲。",
+  "ml25 慢歌盤（14 張）多數為 Junjo／Black Roots／Roots Radics 年代：y 估 1.0–1.1 屬邊界，評分器對人聲歌手盤常給 0.4–0.8，落放鬆風險高；Barrington Levy 四張、Sugar Minott 三張最有把握。80 年代中後數位化的盤（Little John Youth of Today、Frankie Paul、Cocoa Tea 等）已刻意不提。",
+  "封面 404 而捨棄（CAA 無圖且找不到替代）：Mad Prof《DMC Part 9》、Mute Beat《No. 0 Virgin Dub》、Little Tempo《Musical Brain Food》、Michael Prophet《Righteous Are the Conqueror》、Triston Palma《Joker Lover》、Sugar Minott《More Sugar Minott》《Roots Lovers》、Leroy Sibbles《Strictly Roots》、Tony Tuff《Presenting Mr. Tuff》等；若主線能補 Discogs 圖可再收。",
+  "label 取自 MB 最早有廠牌的 release，部分為重發廠牌（如 Bush Master Revolution 留空、Reggae Thing 標 Trojan 為估計），不影響身分；Kaya Dub 已鎖 1978 原盤 RG（2007 Compilation RG 另有，不要選）。Dubd’sco Vol.1 MB 查無；Triston Palma《Presenting》等盤的製作人歸屬為記憶，why 欄僅作參考。",
+  "第二輪 append 17 張（舊條目未動）：回收封面 404 者 5 張（Discogs master 頁當封面來源）加 Barrington Levy 4（Money Move／Run Come Ya!／Shine Eye Gal／Doh Ray Me）、Prince Fatty 4、Rico Rodriguez《That Man Is Forward》、Gladiators《Sweet So Till》、Wailing Souls《Baby Come Rock》、Wailers《Soul Revolution Part II》。仍找不到封面而捨棄：Mute Beat《No. 0 Virgin Dub》、Triston Palma《Joker Lover》、Leroy Sibbles《Strictly Roots》、Little Tempo《山と海》、Tommy McCook《Cookin》、Mad Prof《DMC Part 9》（後者另因主題陰不收）。Rico 的 y 估 0.9 偏邊界。"
+ ]
+}

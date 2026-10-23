@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 2 輪 mc5／ml9：日本 techno-pop／techno 16＋暖 dub／80s 慢板 reggae 33 張上線，落格 11/16、33/33
+
+- **內容**：店主「三個薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」，本工作階段負責 mc5、ml9。mc5（`add-20261023-mc5`，日本 techno-pop＋mc17 日本 techno＋mc25 J-pop 冷系）：田中フミヤ 4、青木孝允 3、石野卓球《TITLE》2、Plastics、TESTPATTERN、CAPSULE《NEXUS-2060》、SOFT BALLET《EARTH BORN》、Tanzmuzik、Logic System《LOGIC》、Flare《Grip》。ml9（`add-20261023-ml9`，暖 dub／roots dub 二線＋ml25 80s 慢板 dancehall）：Barrington Levy 6、Augustus Pablo 4（含 Rockers All Stars）、Sugar Minott 4、Wackies Rhythm Force 2、Little John 2、Prince Fatty 2、Mad Professor 2、Bob Andy Dub Book、Kaya Dub、Jacob Miller、Tetrack、Love Joys、The Itals、Wailing Souls、Bunny Wailer《Dubd'sco Vol. 2》、Michael Prophet、Tony Tuff、Rico《That Man Is Forward》。兩批都挖不到 45，照實上架。
+- **策展→研究汰換**：mc5 策展 65、主線汰 30（Perfume／水曜日／tofubeats 等甜人聲判暖、厚 kick 判重、中速判靜）、研究汰 19（P-MODEL／ヒカシュー／一風堂／立花ハジメ 樂團編制、清水靖晃／Ken Ishii／田中《You Find the Key》暖、Flare《Reference to Difference》身分併版）。ml9 策展 71、主線汰 20（池中 dub 色溫往 0 收：陰森 dub、steppers、數位乾淨盤）、研究汰 18（Prince Fatty 派對快盤、Perry 怪盤、Levy 亮編制、身分不清的 Soul Revolution Part II／Baby Come Rock／Cease the War）。卡單更正：Earth's Rightful Ruler 1982 Message、Rico → 2 Tone、Poor Man Style → Trojan、Buy Off the Bar → Power House。
+- **主線審稿**：mc5 改 2（Unknown 3 單源樂評轉述改聲音陳述、Grip 補樂種），ml9 改 4（Dub Me Crazy 3 刪單源評價句、三張「京斯敦」統一為「金斯敦」）。
+- **上線**：card_catalog 16＋33、KV 25＋33 鍵回讀逐字一致、試聽 13＋23 ready（人工指定 5＋5）、封面 Discogs 3 張登錄 `data/discogs-cover-registry.json`、seed +49、published gate 兩批 0 error；類型樹（`genre-l3-artist-map.json` 補 5 張）、抽卡封面、card-moods 重建。
+- **情緒評分**：`score-mc5`、`score-ml9`。**mc5 落冷冽 11/16（69%）**，出格：glitch／極簡器樂判靜 4（青木孝允 SILICOM 兩張、TESTPATTERN、Tanzmuzik）、CAPSULE 判暖 1；**ml9 落恍惚 33/33（100%）**。八格：恍惚 924、冷冽 989、頹靡 1,264。
+- **藝人介紹**：未切（並行規矩）；新藝人名單在兩批 rulings.md 末尾（mc5 9 位、ml9 9 位）。
+- **主要檔案**：`batch-progress/add-20261023-{mc5,ml9}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{mc5,ml9}.json`、`batch-progress/mood-axes/score-{mc5,ml9}/`、`onboarding-manifest-add-20261023-{mc5,ml9}-20261023.json`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`data/mood/*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`、`SCENES.md`、`HANDOFF-mood-cells-line.md`。
+- **驗證**：prepare／published gate 兩批 0 error；KV 回讀 58/58；qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research 全過；build-card-moods 錨點 104/104、seed 20,169。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線 ml5／mc6：neo-soul 二線 38＋Detroit／Euro electro 44 張上線，落格 35／43
 
 - **內容**：第 2 輪、3 並行之一（接續因額度中斷的工作階段）。ml5（`add-20261022-ml5`，恍惚）：Bilal、Spacek／Steve Spacek、Foreign Exchange、Georgia Anne Muldrow、Children of Zeus、Yazmin Lacey、Greentea Peng、Kali Uchis、Raveena、Nick Hakim、Baby Rose、GIVĒON、SiR 等 38 張（研究層以「不夠慢霧」汰 12）。mc6（`add-20261022-mc6`，冷冽）：Gerald Donald 系（Japanese Telecom、Arpanet、Elecktroids）、Lab Rat XL、AUX 88 系 5、Anthony Rother 10、Silicon Scally 8、Cygnus 4、Lowfish 3、Exos 2、Optic Nerve 2、dynArec 2、Ectomorph、The Hacker 等 44 張（研究層以「不快不機械」汰 10）。
