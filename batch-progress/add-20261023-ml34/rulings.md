@@ -92,3 +92,9 @@
 - **16712** 封面：CAA 12，live-check 全 200。試聽 11 ready（Lily Chou-Chou《呼吸》人工配 Apple jp 1297925080《Kokyuu》9 軌）／1 unavailable（Bliss Out 20 Apple 無條目）。
 - **16713** 寫入：card_catalog 12/12、KV 13 鍵（含別名鍵）回讀逐字一致（stamp 202610231124）、seed +12、published gate 0 error。上線前跨分支去重 0 撞。三軸：硬蕊 2、經典 Lily Chou-Chou／Hammock《Maybe They Will Sing》4、其餘 3；冷門照 Last.fm。
 - **16714** 類型樹：子曲風預熱 12/12 tagged，12/12 落位，無需補 map；台灣流行卡 0，`tw-pop-artists.json` 不動；抽卡封面重建。
+
+## 情緒評分（16715；`batch-progress/mood-axes/score-ml34/`，照 10-23 體感標準）
+- **16715** 上線當天評分 12 張（conf mid 10、low 2）→ `scored-ml34.json` → priors → scale v0 → card-moods（錨點 104/104 同格）。**落恍惚 11/12＝92%**；出格 Manual《Confluence》（無鼓無拍的吉他 drone、旋律不明，研究稿「出奇地暗」→ z −0.4 落頹靡，與研究稿陰冷字眼先例一致）。Hammock《Maybe They Will Sing》z 0.0 壓線。八格：恍惚 1,184。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Lily Chou-Chou、Manual、Manual with Jess Kahr、Hammock、Robin Guthrie、Sonic Boom、Ulrich Schnauss & Mark Peters、Engineers（8 個掛名）

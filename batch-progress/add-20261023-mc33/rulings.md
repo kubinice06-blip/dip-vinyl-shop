@@ -104,3 +104,10 @@
 - **13634** 封面：CAA 26、Apple 官方圖 2（Cyclo.《Cyclo.》CAA front-500 回 500；刀根康尚《MP3 Deviations #6+7》live-check 404，換 Apple 1825327612）；28 張 live-check 全 200。試聽 20 ready／8 unavailable（Hecker《Recordings for Rephlex》《Speculative Solution》、Amacher、Étron Fou ×3、Doctor Nerve Apple 無條目；Farmers Manual《fsck》Apple 只有 2019–20 重編版）。
 - **13635** 寫入：card_catalog 28/28、KV 28 鍵回讀逐字一致（stamp 202610231124）、seed +28、published gate 0 error。上線前對 origin 各 `claude/*` 分支 seed 與 2026-10-22／23 卡單去重 0 撞。三軸：硬蕊 glitch 5、RIO 4，經典 Cyclo.／Henry Cow《Western Culture》／Art Bears 4，其餘 3；冷門照 Last.fm（`ratings-override.json`）。
 - **13636** 類型樹：子曲風預熱 28/28 tagged；`genre-l3-artist-map.json` 補 EVOL《Proper Headshrinker》→ `electronic/idm/glitch`、Amacher《Sound Characters》→ `electronic/noise/concrete`，28/28 落位；抽卡封面重建。
+
+## 情緒評分（13637–13638；`batch-progress/mood-axes/score-mc33/`，照 10-23 體感標準）
+- **13637** 上線當天評分 28 張（conf high 2、mid 21、low 5）→ `scored-mc33.json` → build-priors → scale v0 → build-card-moods（錨點 104/104 同格）。**落冷冽 20/28＝71%**：28 張全判躁（x 3.0–4.3）、全判冷；出格 8 張全是**質地判重落暴躁**（y 0.5–1.3）——高密度噪聲型 glitch（刀根康尚兩張、EVOL、Hecker《Acid》）與有鼓爆發的 RIO（Cassiber 三張、Thinking Plague《In Extremis》）。落冷冽的是點擊／脈衝型薄 glitch（Cyclo.、Farmers Manual ×3、Hecker 兩張、Becker、Amacher、Gescom、Schmickler）與管樂室內樂型 RIO（Henry Cow、Art Bears、Étron Fou ×3、Skeleton Crew、5uu's ×2、Doctor Nerve、Yugen）。
+- **13638** 教訓：冷冽線 glitch 的風險從「判靜」換成「判重」——飄浮型研究層已擋掉，剩下的高密度噪聲型評分給 y ≥ 0.8；RIO 有龐克鼓爆發與吼唱的（Cassiber）判重。下一批同場景只收「稀、尖、乾」的點擊型 glitch 與管樂室內樂型 RIO。八格：冷冽 1,383、恍惚 1,184、頹靡 1,370。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Cyclo.、Farmers Manual、Hecker、Yasunao Tone（刀根康尚）、EVOL、Rashad Becker、Maryanne Amacher、Gescom、Marcus Schmickler、Étron Fou Leloublan、Thinking Plague、Cassiber、Skeleton Crew、5uu's、Doctor Nerve、Yugen（16 位）

@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 6 輪 mc33／ml34：glitch＋RIO 28 張、暖吉他殘響 ambient pop 12 張上線，落格 20/28、11/12
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 6 輪，本工作階段負責 mc33、ml34（評分照 10-23 體感標準）。mc33（`add-20261023-mc33`，冷冽：glitch／microsound＋mc35 RIO 尖細那半）：Cyclo.《Cyclo.》、Farmers Manual ×3、Hecker ×3、刀根康尚 ×2、EVOL、Rashad Becker、Amacher、Gescom、Schmickler、Henry Cow《Western Culture》、Art Bears《The World as It Is Today》、Étron Fou Leloublan ×3、Thinking Plague《In Extremis》、Cassiber ×3、Skeleton Crew《Learn To Talk》、5uu's ×2、Doctor Nerve、Yugen。ml34（`add-20261023-ml34`，恍惚：CJK 抒情 ballad＋ml36 Balearic／ambient pop）：Lily Chou-Chou《呼吸》、Manual ×3、Hammock ×2、Robin Guthrie ×3、Sonic Boom《All Things Being Equal》、Schnauss & Peters《Underrated Silence》、Engineers。
+- **策展→研究汰換**：mc33 策展 50、主線汰 4、研究汰 18（飄浮／長篇判靜、厚低頻判重、旋律或滑稽判暖）→ 28。ml34 策展 22（池中 CJK 抒情全判輕、真 Balearic 判輕，主場景只收 2）、研究汰 10（乾淨製作、推進鼓、輓歌字眼）→ 12；**ml34、ml36 不再派**，mc35 併入 mc33。
+- **主線審稿**：mc33 改 3 處（Fennesz 單源評價刪換聲音事實、刀根「源頭文件」評價句刪、Henry Cow 樂評引語改直述）；ml34 改 1 處（Engineers hook 的樂評比喻改直述，hooks／input／out 三層同步）；事實層未動。
+- **上線**：card_catalog 28＋12、KV 28＋13 鍵回讀逐字一致、試聽 20＋11 ready、seed +40、published gate 兩批 0 error；封面 CAA 38＋Apple 2（Cyclo. CAA 500、MP3 Deviations CAA 404），live-check 全 200。上線前對 origin 各分支 seed 與卡單去重 0 撞。
+- **情緒評分**：`score-mc33`、`score-ml34`。**mc33 落冷冽 20/28（71%）**：全判躁、全判冷，出格 8 張全是質地判重落暴躁（刀根 ×2、EVOL、Hecker《Acid》、Cassiber ×3、Thinking Plague）。**ml34 落恍惚 11/12（92%）**，出格 Manual《Confluence》z −0.4 落頹靡。八格：冷冽 1,383、恍惚 1,184、頹靡 1,370。
+- **類型樹**：子曲風預熱 40/40；`genre-l3-artist-map.json` 補 EVOL → `electronic/idm/glitch`、Amacher → `electronic/noise/concrete`，40/40 落位；抽卡封面重建。台灣流行卡 0，`tw-pop-artists.json` 不動。
+- **藝人介紹**：未切（並行規矩）；新藝人 24 個掛名列在兩批 rulings.md 末尾（mc33 16、ml34 8）。
+- **主要檔案**：`batch-progress/add-20261023-{mc33,ml34}/`、`batch-progress/mood-cells-20261022/{curation,master}-{mc33,ml34}.json`、`master-override-mc33.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{mc33,ml34}/`、`onboarding-manifest-add-20261023-{mc33,ml34}-20261023.json`、`desc-tools/batches/*/add-20261023-{mc33,ml34}*`、seed／試聽地圖／card-preview-status／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 41 鍵回讀一致；build-card-moods 錨點 104/104 同格。
+
 ### 2026-10-23｜dip-vinyl-shop｜Goodie Mob《Still Standing》恍惚→暴躁
 
 - **改動**：店主指定。(2.9, 0.9, 0.4) → (3.3, 0.9, −0.5)。

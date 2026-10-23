@@ -50,12 +50,12 @@
 | 26 | ml13 | 暖而慢的迷幻搖滾（不兇的 desert／stoner 慢盤） ＋ ml26 非洲與巴西的慢而厚 | ✅ 上線 12／落格 11 |
 | 27 | md18 | 日本暗色 drone／ambient／暗色獨立 ＋ md20 北歐暗色電子與配樂 ＋ md19 華語／韓國暗色獨立 || 派→情緒薄格 ml31、md18（第 6 輪） |
 | 28 | mc28 | 歐陸自由即興（ICP、Globe Unity、Misha Mengelberg、Irène Schweizer） ＋ mc34 日本前衛即興 || 派→情緒薄格 ml32、mc28（第 6 輪） |
-| 29 | mc33 | glitch／microsound／尖細實驗電子 ＋ mc35 RIO／前衛搖滾尖細那半 || 派→情緒薄格 ml34、mc33（第 6 輪） |
+| 29 | mc33 | glitch／microsound／尖細實驗電子 ＋ mc35 RIO／前衛搖滾尖細那半 | ✅ 上線 28／落格 20 |
 | 30 | md22 | 無鼓 drone metal／post-metal ambient 二線 ＋ md23 暗黑 lo-fi／tape loops |  |
 | 31 | mc22 | 當代前衛爵士（Tim Berne、Steve Lehman、Mary Halvorson、Craig Taborn、Tyshawn Sorey） ＋ mc31 剩餘 |  |
 | 32 | ml31 | 爵士弦樂抒情盤／慢板 ballad ＋ ml33 福音慢板／靈魂聖詩 | 派→情緒薄格 ml31、md18（第 6 輪） |
 | 33 | ml32 | 拉丁 bolero／慢板浪漫 ＋ ml25 80s 慢板 reggae 歌 | 派→情緒薄格 ml32、mc28（第 6 輪） |
-| 34 | ml34 | 華語／日語／韓語抒情 ballad 厚編曲 ＋ ml36 Balearic／ambient pop 暖盤 | 派→情緒薄格 ml34、mc33（第 6 輪） |
+| 34 | ml34 | 華語／日語／韓語抒情 ballad 厚編曲 ＋ ml36 Balearic／ambient pop 暖盤 | ✅ 上線 12／落格 11 |
 | 35 | ml35 | alt-country／Americana 濕而慢 ＋ ml33 剩餘 |  |
 | 36 | ml38 | 70s roots dub 二線 ＋ ml37 UK dub／digital dub 90s |  |
 | 37 | ml40 | downtempo 暖盤三線 ＋ ml39 歐陸 dub／dubtronica 暖盤 |  |
@@ -134,9 +134,9 @@
 | mc30 | 13321 | minimalism 快作（Glass 早期、Reich 冷的那幾張、Michael Nyman 快盤、Terry Riley 電子快盤；暖的落雀躍） | |
 | mc31 | 13401 | AACM／loft jazz／美國自由爵士小編制二線（Art Ensemble of Chicago、Anthony Braxton、Roscoe Mitchell、Henry Threadgill、Julius Hemphill、Oliver Lake） | ✅ 上線 33／落格 33（併 mc14） |
 | mc32 | 13481 | 無調現代古典／序列主義／新複雜主義（Boulez、Berio、Stockhausen、Carter、Ferneyhough、Xenakis 室內樂；尖細的，厚重音塊落亢奮） | ✅ 上線 31／落格 29 |
-| mc33 | 13561 | glitch／microsound／尖細實驗電子（Oval、Ryoji Ikeda、Alva Noto、Mille Plateaux、raster-noton 薄盤） | |
+| mc33 | 13561 | glitch／microsound／尖細實驗電子（Oval、Ryoji Ikeda、Alva Noto、Mille Plateaux、raster-noton 薄盤） | ✅ 上線 28／落格 20（併 mc35；策展 50、主線汰 4、研究汰 18；飄浮型判靜已擋，高密度噪聲型與 Cassiber 判重落暴躁 8） |
 | mc34 | 13641 | 日本前衛／即興（高柳昌行、阿部薫、大友良英、Sachiko M、ONJO） | |
-| mc35 | 13721 | RIO／前衛搖滾尖細那半（Henry Cow、Art Bears、Etron Fou Leloublan、Thinking Plague、Univers Zero 薄盤） | |
+| mc35 | 13721 | RIO／前衛搖滾尖細那半（Henry Cow、Art Bears、Etron Fou Leloublan、Thinking Plague、Univers Zero 薄盤） | 併入 mc33（Henry Cow、Art Bears、Étron Fou ×3、Skeleton Crew、5uu's ×2、Doctor Nerve、Yugen 落冷冽；Cassiber 與 Thinking Plague《In Extremis》判重） |
 
 ## 恍惚 ml（靜＋重＋暖；門檻 x ≤ 2.7、y ≥ +0.8、z ≥ +0.3）
 
@@ -177,9 +177,9 @@
 | ml31 | 16401 | 爵士弦樂抒情盤／慢板 ballad（with strings 系：Clifford Brown with Strings、Ben Webster、Johnny Hartman、Chet Baker 弦樂盤） | |
 | ml32 | 16481 | 拉丁 bolero／慢板浪漫（Los Panchos、Luis Miguel《Romance》、Omara Portuondo 慢盤、bossa 以外的厚弦樂盤） | |
 | ml33 | 16561 | 福音慢板／靈魂聖詩（厚合唱、溫、慢；快板 shout 落雀躍） | |
-| ml34 | 16641 | 華語／日語／韓語抒情 ballad 厚編曲（90s 弦樂、殘響厚、旋律清楚的慢歌盤） | |
+| ml34 | 16641 | 華語／日語／韓語抒情 ballad 厚編曲（90s 弦樂、殘響厚、旋律清楚的慢歌盤） | ✅ 上線 12／落格 11（併 ml36；策展 22、研究汰 10；池中 CJK 抒情全判輕、真 Balearic 判輕，場景見底，不再派） |
 | ml35 | 16721 | alt-country／Americana 濕而慢（Cowboy Junkies、Lambchop、Mazzy Star 系） | |
-| ml36 | 16801 | Balearic／ambient pop 暖盤（溫而霧、旋律清楚） | |
+| ml36 | 16801 | Balearic／ambient pop 暖盤（溫而霧、旋律清楚） | 併入 ml34（真 Balearic 池中判輕；暖吉他殘響 ambient pop 收 10；不再派） |
 | ml37 | 16881 | UK dub／digital dub 90s（Mad Professor、Zion Train、Iration Steppas、Jah Shaka、Dub Syndicate、Alpha & Omega 二線） | |
 | ml38 | 19001 | 70s roots dub 二線（Scientist、King Jammy、Augustus Pablo、Yabby You、Keith Hudson、Black Ark 周邊、Errol Thompson） | |
 | ml39 | 19081 | 歐陸 dub 與 dubtronica 暖盤（Dreadzone、Kruder & Dorfmeister、Tosca、Thievery Corporation 其他、Smith & Mighty、Dub Pistols 慢盤） | |
