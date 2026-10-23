@@ -14,3 +14,10 @@
 - 池中同藝人：Bohren 7 張、Mount Fuji 2、Kilimanjaro 2、Darkher《Realms》、Wardruna 2 全落頹靡。
 - 跨分支去重：策展代理對 seed、全部 curation 檔、origin 81 個 `claude/*` 分支卡單去重 0 撞。
 
+
+## 研究 c 組
+- 19741：Egor 實為 2011-04-22 莫斯科 Dom 現場錄音（Discogs 備註；團所有發行皆現場錄音），推翻卡單「錄音室作」；盤名／年份／廠牌（Denovali 2012）不動。
+- 19742：Radare 序數——Der Endless Dream 封套貼紙自稱「第四張」，推翻卡單「第三作」與 Im Argen「第二作」；寫作層不採序數。
+- 19743：moodGuess 存疑（主線決定是否汰換）：Patchouli Blue（樂評稱開闊、夕陽暖意，z 恐 ≥ −0.3）；Wovenhand《Mosaic》（有鼓僵硬推進、〈Dirty Blue〉快、猛烈齊唱，x 恐 ≥ 3.0）；Wovenhand《Consider the Birds》（部落打擊、雷鳴收尾、嚎叫，x 邊緣；鋼琴為核心 y 恐偏輕）；Darkher《The Buried Storm》（弦樂＋原聲為主、重段短暫，y 恐 < 0.8）；The Hare and the Moon《Wood Witch》（無鼓、無電吉他，y 無證據）；Radare 三張與 Egor（樂評無音色描述，需試聽）。
+- 19744：Wood Witch、Egor、Hyrule、Im Argen 查不到樂評層的音色描述，status 標 thin；聲音欄以 credits 與風格標籤如實寫。Darkher《Realms》年份以 MB／樂評 2016 為準。
+- 19745：WebSearch 用了 4 次（Darkher、Bohren、Mosaic、Consider the Birds 各 1），超出每支 3 次的上限；Jazzwise 頁面 503 未讀到，只引搜尋摘要的 Blade Runner／Assault on Precinct 13 比喻未寫入 facts。
