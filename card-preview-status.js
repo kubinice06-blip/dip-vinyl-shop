@@ -3295,4 +3295,8 @@ window.DipPreviewStatus = Object.freeze({
   "little tempo|ron riddim in dub": "unavailable",
   "likkle mai|dub is the universe": "unavailable",
   "horace andy & mad professor|from the roots": "unavailable",
+  "tim berne|fractured fairy tales": "unavailable",
+  "tim berne|sanctified dreams": "unavailable",
+  "big satan|i think they liked it, honey": "unavailable",
+  "kate gentile|mannequins": "unavailable",
 });

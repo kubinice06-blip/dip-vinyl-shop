@@ -11,6 +11,17 @@
 - **改動**：店主指定。「找一張來聽」入口卡（`index.html` HUB_DEFS）、`tune/index.html` og:description、分享縮圖 `og-tune.png` 副標同步換。
 - **主要檔案**：`index.html`、`tune/index.html`、`og-tune.png`
 - **驗證**：grep 舊副標已無；縮圖目視確認。
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 7 輪 mc22／ml40：當代前衛爵士 31 張、downtempo／歐陸 dub 暖盤 10 張上線，落格 27/31、10/10
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 7 輪，本工作階段負責 mc22、ml40（店主 10-23「恍惚可以多增加一點 downtempo 與 dub」；評分照 10-23 體感標準）。mc22（`add-20261023-mc22`，冷冽：當代前衛爵士＋mc31 AACM 剩餘）：Tim Berne／Big Satan、Steve Lehman、Fieldwork、Halvorson／Thumbscrew、Tom Rainey Trio、Laubrock Anti-House、Matt Mitchell、Iyer、Mahanthappa、Zooid、Peter Evans、Anna Webber、Eskelin、Roscoe Mitchell、Braxton《Dortmund》等 31 張。ml40（`add-20261023-ml40`，恍惚：downtempo 暖盤三線＋ml39 歐陸 dub）：Heights of Abraham ×2、Boozoo Bajou《Finistère》、Tosca《No Hassle》、Almamegretta《Sanacore》、Blundetto & Liam Bailey《Heavy Soul》、Dub Colossus《A Town Called Addis》、Hollie Cook《Twice》、Fat Freddy's Drop ×2。
+- **策展→研究汰換**：mc22 策展 54、主線汰 9（x 3.3 貼邊、池中同人判重／判靜）、研究汰 14（翻奏／旋律清楚判暖 9、groove 判重 2、獨奏留白判靜 3）→ 31。ml40 策展 35＋補 1、主線汰 1、研究汰 24（二線查無 dub 低頻證據、breaks／funk／舞池、陰冷、混音集）→ 10；**ml40、ml39 場景見底，不再派**。
+- **主線審稿**：mc22 改 2 處（無來源的編制描述、單源 Monk 比較句）；ml40 改 4 處（後設說明與三處單源樂評比較句）。
+- **上線**：card_catalog 31＋10、KV 31＋10 鍵回讀逐字一致、試聽 27＋10 ready、seed +41、published gate 兩批 0 error；封面 CAA 32、Apple 9，目視與 live-check 全過。上線前對 origin 所有 `claude/*` 分支 seed＋10-22／10-23 卡單去重 0 撞。
+- **情緒評分**：`score-mc22`、`score-ml40`。**mc22 落冷冽 27/31（87%）**，出格 4 張全是帶電吉他／電子的（Big Satan ×2、《The Shell Game》、Evans《Destination: Void》）判重落暴躁；**ml40 落恍惚 10/10（100%）**。八格（併 main 後）：恍惚 1,242、冷冽 1,429、頹靡 1,404。
+- **類型樹**：`genre-l3-artist-map.json` 補 `jazz/free/avant` 4 個掛名、`electronic/bass/dub` 2 個，41/41 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 21 個掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{mc22,ml40}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{mc22,ml40}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{mc22,ml40}/`、`onboarding-manifest-add-20261023-{mc22,ml40}-20261023.json`、`desc-tools/batches/*/add-20261023-{mc22,ml40}-*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/mood/*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`。
+- **驗證**：prepare／published gate 兩批 0 error；verify-wave-kv 31/31、10/10；qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；build-scale 錨點 104/104。
 
 ### 2026-10-23｜dip-vinyl-shop｜「頻率選歌」改名「頻率光譜」
 

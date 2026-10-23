@@ -52,15 +52,15 @@
 | 28 | mc28 | 歐陸自由即興（ICP、Globe Unity、Misha Mengelberg、Irène Schweizer） ＋ mc34 日本前衛即興 | ✅ 上線 22／落格 19 |
 | 29 | mc33 | glitch／microsound／尖細實驗電子 ＋ mc35 RIO／前衛搖滾尖細那半 | ✅ 上線 28／落格 20 |
 | 30 | md22 | 無鼓 drone metal／post-metal ambient 二線 ＋ md23 暗黑 lo-fi／tape loops | 派→情緒薄格 ml38、md22（第 7 輪） |
-| 31 | mc22 | 當代前衛爵士（Tim Berne、Steve Lehman、Mary Halvorson、Craig Taborn、Tyshawn Sorey） ＋ mc31 剩餘 | 派→情緒薄格 ml40、mc22（第 7 輪） |
+| 31 | mc22 | 當代前衛爵士（Tim Berne、Steve Lehman、Mary Halvorson、Craig Taborn、Tyshawn Sorey） ＋ mc31 剩餘 | ✅ 上線 31／落格 27 |
 | 32 | ml31 | 爵士弦樂抒情盤／慢板 ballad ＋ ml33 福音慢板／靈魂聖詩 | ✅ 上線 7／落格 7 |
 | 33 | ml32 | 拉丁 bolero／慢板浪漫 ＋ ml25 80s 慢板 reggae 歌 | ✅ 上線 16／落格 16 |
 | 34 | ml34 | 華語／日語／韓語抒情 ballad 厚編曲 ＋ ml36 Balearic／ambient pop 暖盤 | ✅ 上線 12／落格 11 |
 | 35 | ml35 | alt-country／Americana 濕而慢 ＋ ml33 剩餘 | ✅ 上線 14／落格 13 |
 | 36 | ml38 | 70s roots dub 二線 ＋ ml37 UK dub／digital dub 90s | 派→情緒薄格 ml38、md22（第 7 輪） |
-| 37 | ml40 | downtempo 暖盤三線 ＋ ml39 歐陸 dub／dubtronica 暖盤 | 派→情緒薄格 ml40、mc22（第 7 輪） |
+| 37 | ml40 | downtempo 暖盤三線 ＋ ml39 歐陸 dub／dubtronica 暖盤 | ✅ 上線 10／落格 10 |
 | 38 | ml41 | 日本 dub／downtempo 暖盤 ＋ ml37 剩餘 | ✅ 上線 12／落格 12 |
-| 39 | ml39 | 歐陸 dub／dubtronica 暖盤 ＋ ml40 剩餘 |  |
+| 39 | ml39 | 歐陸 dub／dubtronica 暖盤 ＋ ml40 剩餘 | 併入 ml40（場景見底，不再派） |
 
 **暫停**：mc13 math rock、mc21 post-punk revival、mc30 minimalism（旋律清楚＝暖）、mc9／mc10／mc20／mc25／mc26 系的 synth-pop／new wave／K-pop／synthwave 續集（2026-10-23 體感標準：旋律清楚往暖，落雀躍）、mc23 art pop、ml4 系東亞續集、ml14 spiritual jazz（體感標準判冷，不是恍惚）、ml22、ml27。**重開**（體感標準下會落冷冽）：mc4、mc14、mc22、mc28。
 
@@ -123,7 +123,7 @@
 | mc19 | 12441 | 東歐／蘇聯 synth 與冷電子（Zodiac、Edward Artemiev 快作、Space Bulgaria 系） | 部分併入 mc26（Технология、Bonanza Banzai 已收；Zodiac 系判暖、樂團編制多，剩餘留給 mc23 擴寫） |
 | mc20 | 12521 | 港台日 80s synth-pop／new wave 冷盤（達明一派、高橋幸宏、立花ハジメ、Plastics） | 併入 mc9（P-Model、ヒカシュー 研究判樂團編制汰；不再單獨派） |
 | mc21 | 12601 | post-punk revival 薄而冷（Ought、Protomartyr 薄盤、Yard Act、Bodega、English Teacher 系；厚牆落亢奮） | |
-| mc22 | 12681 | 當代爵士冷而快（Polar Bear、Phronesis 快盤、Kit Downes、Craig Taborn、Steve Lehman、Tyshawn Sorey 快盤） | |
+| mc22 | 12681 | 當代爵士冷而快（Polar Bear、Phronesis 快盤、Kit Downes、Craig Taborn、Steve Lehman、Tyshawn Sorey 快盤） | ✅ 上線 31／落格 27（併 mc31 剩餘 2；策展 54、主線汰 9、研究汰 14；電吉他／電子 4 張判重落暴躁） |
 | mc23 | 12761 | 前衛 art pop／冷的實驗流行（Laurie Anderson、Holger Czukay、坂本龍一 techno 期、Art of Noise） | |
 | mc24 | 12841 | drum & bass 冷而薄（Photek、Source Direct 薄盤、minimal dnb；techstep 厚落亢奮） | 併入 mc15（池中 dnb 幾乎全判重，0 張；不再單獨派） |
 | mc25 | 12921 | K-pop／J-pop 冷系（aespa、f(x)、相対性理論、水曜日のカンパネラ 冷盤） | 併入 mc5（甜／可愛人聲判暖，挖不到；不再單獨派） |
@@ -182,6 +182,6 @@
 | ml36 | 16801 | Balearic／ambient pop 暖盤（溫而霧、旋律清楚） | 併入 ml34（真 Balearic 池中判輕；暖吉他殘響 ambient pop 收 10；不再派） |
 | ml37 | 16881 | UK dub／digital dub 90s（Mad Professor、Zion Train、Iration Steppas、Jah Shaka、Dub Syndicate、Alpha & Omega 二線） | |
 | ml38 | 19001 | 70s roots dub 二線（Scientist、King Jammy、Augustus Pablo、Yabby You、Keith Hudson、Black Ark 周邊、Errol Thompson） | |
-| ml39 | 19081 | 歐陸 dub 與 dubtronica 暖盤（Dreadzone、Kruder & Dorfmeister、Tosca、Thievery Corporation 其他、Smith & Mighty、Dub Pistols 慢盤） | |
-| ml40 | 19161 | downtempo 暖盤三線（Ninja Tune／Compost／Pussyfoot 暖盤、Bonobo 早期、Blockhead、Emancipator、Nightmares on Wax 其他、Fila Brazillia 以外） | |
+| ml39 | 19081 | 歐陸 dub 與 dubtronica 暖盤（Dreadzone、Kruder & Dorfmeister、Tosca、Thievery Corporation 其他、Smith & Mighty、Dub Pistols 慢盤） | 併入 ml40（頭牌已在池或判輕判冷，不再派） |
+| ml40 | 19161 | downtempo 暖盤三線（Ninja Tune／Compost／Pussyfoot 暖盤、Bonobo 早期、Blockhead、Emancipator、Nightmares on Wax 其他、Fila Brazillia 以外） | ✅ 上線 10／落格 10（併 ml39；策展 36、主線汰 1、研究汰 24，場景見底） |
 | ml41 | 19241 | 日本 dub／downtempo 暖盤（Little Tempo、Dry & Heavy、Audio Active、Mute Beat、Gota、Kyoto Jazz Massive 慢盤、Cro-Magnon） | ✅ 上線 12／落格 12（併 ml37 lovers dub 那半；策展兩輪 30、主線汰 3（撞 ml40 1）、研究汰 15；日本 dub 池中多判冷、KJM 系落雀躍，場景見底，不再派） |
