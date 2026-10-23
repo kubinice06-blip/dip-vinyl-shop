@@ -3336,4 +3336,11 @@ window.DipPreviewStatus = Object.freeze({
   "zeena parkins|nightmare alley": "unavailable",
   "ostertag with zorn with frith|attention span": "unavailable",
   "zs|zs": "unavailable",
+  "natural snow buildings|the dance of the moon and the sun": "unavailable",
+  "natural snow buildings|night coercion into the company of witches": "unavailable",
+  "natural snow buildings|shadow kingdom": "unavailable",
+  "the hare and the moon|wood witch": "unavailable",
+  "dead neanderthals|life": "unavailable",
+  "dead neanderthals|craters": "unavailable",
+  "mohn|mohn": "unavailable",
 });

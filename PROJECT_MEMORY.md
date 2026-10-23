@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 9 輪 ml44／md26：暖 shoegaze／dream pop 10 張、暗色 neofolk＋doom jazz 28 張上線，落格 9/10、28/28
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 9 輪，本工作階段負責 ml44、md26（評分照 10-23 體感標準）。ml44（`add-20261023-ml44`，恍惚：暖 shoegaze／dream pop 厚牆＋暖 slowcore）：Engineers ×2、Guthrie & Budd《After the Night Falls》、Acetone《Cindy》、Sound of Ceres《Nostalgia for Infinity》、Tears Run Rings《Distance》、Simon Raymonde《Blame Someone Else》、The Telescopes（1992）、Nightlands ×2。md26（`add-20261023-md26`，頹靡：暗色 neofolk／dark folk＋doom jazz 二線＋無鼓暗色室內 ambient）：Wardruna ×2、Steve von Till ×3、Natural Snow Buildings ×4、Fursaxa、The Hare and the Moon、Darkher、Radare ×3、Mansur、The Thing With Five Eyes、Dead Neanderthals ×3、Bersarin Quartett ×3、Mohn、Thomas Köner《Tiento de la Luz》、Svarte Greiner《Devolving Trust》、Elegi《Bånsull》、Richard Skelton《Landings》。
+- **策展→研究汰換**：ml44 策展兩輪 50、主線汰 18（池中 shoegaze 色溫貼 0、乾淨 jangle、推進）、研究汰 22 → 10，場景見底不再派。md26 策展兩輪 61、主線汰 3（Heilung 民族主義意象疑慮＋儀式鼓推進）、研究汰 30（原聲歌曲判輕暖、有鼓組推進、現場／DJ mix）→ 28。極右／法西斯爭議團一律不提（名單在 md26 rulings）。
+- **主線審稿**：ml44 改 2 處（單源評價句刪）；md26 改 2 處（Im Argen 單源比喻刪、Dead Neanderthals《Life》「半小時」→「三十多分鐘」並同步 hooks／input）。
+- **上線**：card_catalog 10＋28、KV 10＋28 鍵回讀逐字一致、試聽 10＋21 ready（人工配 6）、seed +38、published gate 兩批 0 error；封面 CAA 34（含 release 層縮圖 2）、Apple 4，主線目視。Wardruna《Ragnarok》en dash 盤名 listeners 查錯，改 ASCII 重查。上線前對 origin 所有 `claude/*` 分支 seed＋卡單去重 0 撞。
+- **情緒評分**：`score-ml44`、`score-md26`。**ml44 落恍惚 9/10（90%）**（Engineers《In Praise of More》z −0.1 落頹靡）、**md26 落頹靡 28/28（100%）**。八格（併 main 後）：恍惚 1,394、頹靡 1,433、冷冽 1,402。
+- **類型樹**：38/38 落位（`genre-l3-artist-map.json` jazz/contemporary 補 Radare、Mansur、The Thing With Five Eyes）；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 20 個掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{ml44,md26}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml44,md26}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml44,md26}/`、`onboarding-manifest-add-20261023-{ml44,md26}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml44,md26}*`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 38/38；build-card-moods 錨點 104/104。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 9 輪 ml43／mc36：暖 post-rock 21 張、no wave＋Downtown 即興 20 張上線，落格 17/21、18/20
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 9 輪，本工作階段負責 ml43、mc36（評分照 10-23 體感標準）。ml43（`add-20261023-ml43`，恍惚：暖 post-rock／ambient post-rock）：Hammock《Elsewhere》、Eluvium ×2、Jónsi & Alex《Lost and Found》、Mountains《Choral》、Christopher Willits ×2、Hugar ×2、The American Dollar ×3、Immanu El ×3、Epic45 ×2、Rhian Sheehan ×2、Lights & Motion《Chronicle》、Olan Mill《Paths》。mc36（`add-20261023-mc36`，冷冽：no wave＋Downtown 即興／skronk＋尖細後裔）：Mars & DNA《John Gavanti》、Ut《Conviction》、John Zorn《Pool》《Classic Guide》×2《Cobra》、Bailey／Lewis／Zorn《Yankees》、Zorn & 佐藤通弘《Ganryu Island》、Chadbourne & Zorn《School》、《Environment for Sextet》、David Moss《Full House》、Cora & Moss《Cargo Cult Revival》、Zeena Parkins《Nightmare Alley》、Ostertag ×2、Lithics ×2、Zs、Cheval de Frise ×2。
