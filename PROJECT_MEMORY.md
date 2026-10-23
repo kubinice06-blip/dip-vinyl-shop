@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜酸冷重判：「酸」＝冷＋硬，157 張改判（Marion Brown《Geechee》放鬆→冷冽）
+
+- **改動**：店主裁定自由爵士、無調現代音樂（Ligeti）這類「酸冷難聽又硬蕊」的不能落放鬆。規則寫進 `score500/BRIEF.md` Z 軸：酸 → 色溫 ≤ −1.2，有推力或音塊密集刺耳 → 能量 ≥ 3.1。候選 1,208 張（標籤或評語有酸味、落暖格或靜格）8 支代理逐張判（`batch-progress/mood-axes/sour-rejudge/`，工單 BRIEF.md、合併 merge.mjs、報告 merge-report.json），判酸 200、主線退回 5，改值 157 筆進 `overrides.json`（累計 413 筆）。判例與留給店主翻案的清單在 `rulings.md`。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/score500/BRIEF.md`、`batch-progress/mood-axes/sour-rejudge/*`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：gate 綠、錨點 104/104；八格 冷冽 936→978、亢奮 2,672→2,756、頹靡 1,314→1,264；Geechee (3.2, −0.4, −1.2) 冷冽、Penderecki 亢奮、Köln Concert 仍放鬆、Sunn O))) 仍頹靡。
+
 ### 2026-10-22｜dip-vinyl-shop｜「就這張」特效改版：線框飛到整個螢幕、掃描出一螢幕的專輯畫面、再無縫過渡成專輯資訊頁
 
 - **改動**（店主：「先飛出來剛好全螢幕的大小，掃描線揭露專輯時也是剛好螢幕大小，揭露之後再無縫漸變放大成專輯資訊」）：`dip-tune.js` 的 `warpStart` 重寫——線框飛到視窗大小（留 8px 邊）；揭露的是一層黑底覆蓋畫面（大封面＋藝人／專輯名／年份，骨架線量這四個元素）；揭露完 `land(cardEl)` 用 FLIP 把封面與三行文字各自平移縮放到真卡裡 `.quiz-result-cover`／`-artist`／`-album`／`-year` 的位置，黑底同時淡成白頁，真卡其餘資訊淡入，最後拆掉覆蓋層。API：`setCover(url)`（封面到了先放）、`reveal()`（等封面載好最多 1.5 秒→骨架→閃白→掃描）、`land(cardEl)`、`cancel()`。`index.html` onResult 改成 `setCover`→`await reveal()`→切結果頁（卡先 opacity 0）→`await land`。`dip-tune.js?v=8`。
