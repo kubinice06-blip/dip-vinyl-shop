@@ -3159,4 +3159,11 @@ window.DipPreviewStatus = Object.freeze({
   "final|the first millionth of a second": "unavailable",
   "amp|bliss out, volume 4: perception": "unavailable",
   "grouper|grouper": "unavailable",
+  "teen daze|my bedroom floor": "unavailable",
+  "elektric music|esperanto": "unavailable",
+  "rheingold|distanz": "unavailable",
+  "tangerine dream|optical race": "unavailable",
+  "laserdance|changing times": "unavailable",
+  "proxyon|proxyon": "unavailable",
+  "proxyon|the return of tarah": "unavailable",
 });

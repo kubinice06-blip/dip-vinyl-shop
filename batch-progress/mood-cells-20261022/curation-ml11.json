@@ -1,0 +1,1544 @@
+{
+ "group": "ml11",
+ "factions": [
+  {
+   "id": "chillwave",
+   "zh": "Chillwave 核心",
+   "count": 18,
+   "why": "慢、糊、濕、磁帶飽和的 chillwave 與夢幻電子，無舞曲拍"
+  },
+  {
+   "id": "hypnagogic",
+   "zh": "Hypnagogic／lo-fi 迷幻流行",
+   "count": 23,
+   "why": "磁帶糊、類比合成器與四軌質地的 hypnagogic pop 與 lo-fi R&B，慢而暖"
+  },
+  {
+   "id": "bedroom",
+   "zh": "暖 bedroom／dream pop（濕的一路）",
+   "count": 13,
+   "why": "chorus 吉他、軟合成器與殘響浸透的臥室流行，慢拍暖色"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Washed Out",
+   "album": "Purple Noon",
+   "year": 2020,
+   "label": "Sub Pop",
+   "country": "us",
+   "faction": "chillwave",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Washed Out 後期代表作，脫離 lo-fi 轉為豐厚的暖色合成器霧，拍子懶、不躁、包覆感強，落恍惚。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 1,
+    "why": "慢拍、厚合成器墊與濕殘響，整片暖霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/52fca5ae-3bfc-404b-8eda-37b2b6f7513b",
+    "https://coverartarchive.org/release-group/52fca5ae-3bfc-404b-8eda-37b2b6f7513b/front"
+   ],
+   "mbRgMbid": "52fca5ae-3bfc-404b-8eda-37b2b6f7513b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Washed Out",
+   "album": "Mister Mellow",
+   "year": 2017,
+   "label": "Stones Throw",
+   "country": "us",
+   "faction": "chillwave",
+   "genres": [
+    "electronic"
+   ],
+   "why": "以取樣拼貼與磁帶飽和做成的慵懶夢境，節奏鬆散、質地糊，落恍惚；先前的 Washed Out 三張都落此格。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "取樣拼貼、磁帶糊與慢拍，色調暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ba49bf78-e414-4b22-aec7-81d456d49daf",
+    "https://coverartarchive.org/release-group/ba49bf78-e414-4b22-aec7-81d456d49daf/front"
+   ],
+   "mbRgMbid": "ba49bf78-e414-4b22-aec7-81d456d49daf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x/y 貼近：拼貼段落偶有較快的拍"
+  },
+  {
+   "artist": "Washed Out",
+   "album": "Notes from a Quiet Life",
+   "year": 2024,
+   "label": "Sub Pop",
+   "country": "us",
+   "faction": "chillwave",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Washed Out 回到安靜的晚期作，慢板、厚殘響與暖色音色包住人聲，落恍惚。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": 0.8,
+    "why": "慢速、鋼琴與合成器墊，殘響厚、整體溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/91dd3500-6a24-4c1c-8b31-e76ca4840610",
+    "https://coverartarchive.org/release-group/91dd3500-6a24-4c1c-8b31-e76ca4840610/front"
+   ],
+   "mbRgMbid": "91dd3500-6a24-4c1c-8b31-e76ca4840610",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Small Black",
+   "album": "Limits of Desire",
+   "year": 2013,
+   "label": "Jagjaguwar",
+   "country": "us",
+   "faction": "chillwave",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Small Black 在 New Chain 之後的第二張，保留霧狀合成器與慢拍，較成熟但仍是 chillwave 的濕。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "中慢拍、合成器墊與糊濾波"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4c451951-0eb8-4733-b875-007d31f3bd44",
+    "https://coverartarchive.org/release-group/4c451951-0eb8-4733-b875-007d31f3bd44/front"
+   ],
+   "mbRgMbid": "4c451951-0eb8-4733-b875-007d31f3bd44",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 與 z 都在邊上，池中 New Chain 為 2.6/1.0/0.4"
+  },
+  {
+   "artist": "Memory Tapes",
+   "album": "Player Piano",
+   "year": 2011,
+   "label": "Carpark",
+   "country": "us",
+   "faction": "chillwave",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Memory Tapes 比 Seek Magic 更慢、更霧的第二張，落恍惚。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "糊濾波合成器、中慢拍，磁帶飽和"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7baa6bf7-145f-4803-902a-6815bb6c9987",
+    "https://coverartarchive.org/release-group/7baa6bf7-145f-4803-902a-6815bb6c9987/front"
+   ],
+   "mbRgMbid": "7baa6bf7-145f-4803-902a-6815bb6c9987",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Seek Magic 判 3.0，本張不一定更靜"
+  },
+  {
+   "artist": "Ducktails",
+   "album": "Landscapes",
+   "year": 2009,
+   "label": "Not Not Fun",
+   "country": "us",
+   "faction": "hypnagogic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Ducktails 早期 lo-fi 吉他夢境，hypnagogic 起點之一，磁帶飽和明顯，落恍惚。",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "磁帶糊的吉他迴圈與合成器，慢而暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6b06c4d7-6ddb-4dd1-bd34-a7f3ccc15a92",
+    "https://coverartarchive.org/release-group/6b06c4d7-6ddb-4dd1-bd34-a7f3ccc15a92/front"
+   ],
+   "mbRgMbid": "6b06c4d7-6ddb-4dd1-bd34-a7f3ccc15a92",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ducktails",
+   "album": "Ducktails",
+   "year": 2009,
+   "label": "Release the Bats",
+   "country": "us",
+   "faction": "hypnagogic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Ducktails 首張 LP，磁帶糊與迴圈吉他的原型 hypnagogic，落恍惚。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "cassette 質地、慢速吉他迴圈，濕而暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3832a65c-3364-4a3e-ba36-7418bdded55e",
+    "https://coverartarchive.org/release-group/3832a65c-3364-4a3e-ba36-7418bdded55e/front"
+   ],
+   "mbRgMbid": "3832a65c-3364-4a3e-ba36-7418bdded55e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ducktails",
+   "album": "III: Arcade Dynamics",
+   "year": 2011,
+   "label": "Domino",
+   "country": "us",
+   "faction": "hypnagogic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Ducktails 在 Domino 的第一張，仍帶磁帶糊，但已有歌的結構，落恍惚。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "chorus 吉他、輕拍與合成器墊，微糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6b94ce6b-3cb4-48d9-8911-32352ef18930",
+    "https://coverartarchive.org/release-group/6b94ce6b-3cb4-48d9-8911-32352ef18930/front"
+   ],
+   "mbRgMbid": "6b94ce6b-3cb4-48d9-8911-32352ef18930",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 在 0.9 附近"
+  },
+  {
+   "artist": "Nite Jewel",
+   "album": "Good Evening",
+   "year": 2008,
+   "label": "Gloriuz",
+   "country": "us",
+   "faction": "hypnagogic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Nite Jewel 最糊的早期作，lo-fi 慢速 synth-R&B，落恍惚。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.5,
+    "why": "四軌錄音糊，慢速 synth-R&B，殘響濕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c3cf508c-2967-4cee-b37a-264c0762e774",
+    "https://coverartarchive.org/release-group/c3cf508c-2967-4cee-b37a-264c0762e774/front"
+   ],
+   "mbRgMbid": "c3cf508c-2967-4cee-b37a-264c0762e774",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 One Second of Love 判輕冷，早期作較糊但未必"
+  },
+  {
+   "artist": "Puro Instinct",
+   "album": "Headbangers in Ecstasy",
+   "year": 2011,
+   "label": "Mexican Summer",
+   "country": "us",
+   "faction": "hypnagogic",
+   "genres": [
+    "rock"
+   ],
+   "why": "Puro Instinct 的 hypnagogic 吉他流行代表作，殘響濕、拍子鬆。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.6,
+    "why": "reverb 浸透的吉他與慢拍，海灘 lo-fi 的濕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0136d7fd-eec5-408c-ad66-4d3471529b6c",
+    "https://coverartarchive.org/release-group/0136d7fd-eec5-408c-ad66-4d3471529b6c/front"
+   ],
+   "mbRgMbid": "0136d7fd-eec5-408c-ad66-4d3471529b6c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 偏邊"
+  },
+  {
+   "artist": "Cuushe",
+   "album": "Butterfly Case",
+   "year": 2013,
+   "label": "Flau",
+   "country": "jp",
+   "faction": "chillwave",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Cuushe 的夢幻電子，人聲層層疊成霧，拍子稀疏，落恍惚。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "低密度拍子、人聲疊層與軟 synth，朦朧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0da8ebbd-9c55-45f8-9d56-b03a00e0d9c5",
+    "https://coverartarchive.org/release-group/0da8ebbd-9c55-45f8-9d56-b03a00e0d9c5/front"
+   ],
+   "mbRgMbid": "0da8ebbd-9c55-45f8-9d56-b03a00e0d9c5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Cuushe",
+   "album": "Red Rocket Telepathy",
+   "year": 2009,
+   "label": "Flau",
+   "country": "jp",
+   "faction": "chillwave",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Cuushe 早期作，lo-fi 質感更重的夢幻電子，落恍惚。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": 0.5,
+    "why": "慢拍、合成器霧與模糊人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6bb98925-d584-438b-b6a6-283fce8f77c9",
+    "https://coverartarchive.org/release-group/6bb98925-d584-438b-b6a6-283fce8f77c9/front"
+   ],
+   "mbRgMbid": "6bb98925-d584-438b-b6a6-283fce8f77c9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Teen Daze",
+   "album": "My Bedroom Floor",
+   "year": 2010,
+   "label": "Teen Daze",
+   "country": "ca",
+   "faction": "chillwave",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Teen Daze 的臥室 chillwave 原點，磁帶糊與暖合成器，落恍惚。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "lo-fi 合成器迴圈與慢拍，糊濾波"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/23de65de-0fee-4243-a10b-b21cbfc814cd",
+    "https://coverartarchive.org/release-group/23de65de-0fee-4243-a10b-b21cbfc814cd/front"
+   ],
+   "mbRgMbid": "23de65de-0fee-4243-a10b-b21cbfc814cd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 All of Us, Together 判 y 0.5，y 可能不足"
+  },
+  {
+   "artist": "Teen Daze",
+   "album": "The Inner Mansions",
+   "year": 2012,
+   "label": "Teen Daze",
+   "country": "ca",
+   "faction": "chillwave",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Teen Daze 2012 年的夢幻電子專輯，霧狀合成器包住慢拍，落恍惚。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "合成器霧與慢速電子拍，殘響厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7916211f-0ede-4198-b4e6-53e15cc314f9",
+    "https://coverartarchive.org/release-group/7916211f-0ede-4198-b4e6-53e15cc314f9/front"
+   ],
+   "mbRgMbid": "7916211f-0ede-4198-b4e6-53e15cc314f9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能不足"
+  },
+  {
+   "artist": "Teen Daze",
+   "album": "Themes for Dying Earth",
+   "year": 2017,
+   "label": "Teen Daze",
+   "country": "ca",
+   "faction": "chillwave",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Teen Daze 的 ambient 取向，厚合成器墊與殘響，落恍惚。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "大片合成器墊、極少拍子，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7846f9c3-4fb6-4243-ae17-c4267949519a",
+    "https://coverartarchive.org/release-group/7846f9c3-4fb6-4243-ae17-c4267949519a/front"
+   ],
+   "mbRgMbid": "7846f9c3-4fb6-4243-ae17-c4267949519a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能不足"
+  },
+  {
+   "artist": "SLEEP ∞ OVER",
+   "album": "Forever",
+   "year": 2011,
+   "label": "Hippos in Tanks",
+   "country": "us",
+   "faction": "hypnagogic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Sleep ∞ Over 的 dream-synth 首作，人聲浸在殘響裡，落恍惚。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "軟 synth 與 reverb 人聲、慢拍、糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6cdf6d3d-f27f-4534-b1cc-d92df0208912",
+    "https://coverartarchive.org/release-group/6cdf6d3d-f27f-4534-b1cc-d92df0208912/front"
+   ],
+   "mbRgMbid": "6cdf6d3d-f27f-4534-b1cc-d92df0208912",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Youth Lagoon",
+   "album": "Wondrous Bughouse",
+   "year": 2013,
+   "label": "Fat Possum",
+   "country": "us",
+   "faction": "chillwave",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Youth Lagoon 第二張，更濃的迷幻殘響，包覆感強，落恍惚。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.4,
+    "why": "殘響極厚的合成器與鋼琴，微醺的暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/31f95513-fa53-418d-8b45-9473735d9f64",
+    "https://coverartarchive.org/release-group/31f95513-fa53-418d-8b45-9473735d9f64/front"
+   ],
+   "mbRgMbid": "31f95513-fa53-418d-8b45-9473735d9f64",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 The Year of Hibernation 為 2.3/1.0/0.3，z 偏低"
+  },
+  {
+   "artist": "Youth Lagoon",
+   "album": "Savage Hills Ballroom",
+   "year": 2015,
+   "label": "Fat Possum",
+   "country": "us",
+   "faction": "chillwave",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Youth Lagoon 第三張，較有拍子但仍濕而柔，落恍惚。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.5,
+    "why": "合成器墊、柔和人聲與慢拍，濕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ae98cbd5-3a2d-4471-a3b8-ea1efbfabdb8",
+    "https://coverartarchive.org/release-group/ae98cbd5-3a2d-4471-a3b8-ea1efbfabdb8/front"
+   ],
+   "mbRgMbid": "ae98cbd5-3a2d-4471-a3b8-ea1efbfabdb8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Blackbird Blackbird",
+   "album": "Summer Heart",
+   "year": 2010,
+   "label": "Blackbird Blackbird",
+   "country": "us",
+   "faction": "chillwave",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Blackbird Blackbird 的 Bandcamp 時代 chillwave 代表，糊而暖，落恍惚。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.7,
+    "why": "糊濾波、海灘感合成器與鬆拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9a099a1a-ebf6-423d-9164-05546cecfe56",
+    "https://coverartarchive.org/release-group/9a099a1a-ebf6-423d-9164-05546cecfe56/front"
+   ],
+   "mbRgMbid": "9a099a1a-ebf6-423d-9164-05546cecfe56",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Blackbird Blackbird",
+   "album": "Hearts",
+   "year": 2019,
+   "label": "Blackbird Blackbird",
+   "country": "us",
+   "faction": "chillwave",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Blackbird Blackbird 回歸之作，保留霧狀合成器與軟拍。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "合成器墊與慢拍，夢幻、溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6c738603-a3d1-46ab-8a7b-0a4edf9f117d",
+    "https://coverartarchive.org/release-group/6c738603-a3d1-46ab-8a7b-0a4edf9f117d/front"
+   ],
+   "mbRgMbid": "6c738603-a3d1-46ab-8a7b-0a4edf9f117d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "MillionYoung",
+   "album": "Replicants",
+   "year": 2011,
+   "label": "Mexican Summer",
+   "country": "us",
+   "faction": "chillwave",
+   "genres": [
+    "electronic"
+   ],
+   "why": "MillionYoung 的 Bandcamp 時代 chillwave，磁帶糊與慢拍，落恍惚。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.5,
+    "why": "合成器與 sample 糊成一層，拍子鬆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/725e4453-1d0b-4b5b-8da9-bd0dd383082b",
+    "https://coverartarchive.org/release-group/725e4453-1d0b-4b5b-8da9-bd0dd383082b/front"
+   ],
+   "mbRgMbid": "725e4453-1d0b-4b5b-8da9-bd0dd383082b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 偏邊，拍子可能偏快"
+  },
+  {
+   "artist": "Foxes in Fiction",
+   "album": "Swung from the Branches",
+   "year": 2010,
+   "label": "Orchid Tapes",
+   "country": "ca",
+   "faction": "hypnagogic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Foxes in Fiction 的 Bandcamp 臥室夢境，磁帶糊重，落恍惚。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1,
+    "z": 0.5,
+    "why": "磁帶糊的取樣迴圈、吉他與合成器"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f728d54c-bbfc-4f12-8401-98ef3a6867cc",
+    "https://coverartarchive.org/release-group/f728d54c-bbfc-4f12-8401-98ef3a6867cc/front"
+   ],
+   "mbRgMbid": "f728d54c-bbfc-4f12-8401-98ef3a6867cc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Foxes in Fiction",
+   "album": "Ontario Gothic",
+   "year": 2014,
+   "label": "Orchid Tapes",
+   "country": "ca",
+   "faction": "hypnagogic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Foxes in Fiction 的第二張，以暮色般的合成器霧為主，落恍惚。",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1,
+    "z": 0.5,
+    "why": "糊濾波合成器、慢拍，微暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/822ef683-20e8-4c14-9322-a97636aa7af3",
+    "https://coverartarchive.org/release-group/822ef683-20e8-4c14-9322-a97636aa7af3/front"
+   ],
+   "mbRgMbid": "822ef683-20e8-4c14-9322-a97636aa7af3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Black Moth Super Rainbow",
+   "album": "Dandelion Gum",
+   "year": 2007,
+   "label": "Rad Cult",
+   "country": "us",
+   "faction": "hypnagogic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "hypnagogic 的祖師爺，類比合成器與 vocoder 的暖色霧，慢拍、糊，落恍惚。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": 0.7,
+    "why": "vocoder 人聲、類比合成器糊、鬆拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e294a83b-5591-3499-af04-43e0629a1788",
+    "https://coverartarchive.org/release-group/e294a83b-5591-3499-af04-43e0629a1788/front"
+   ],
+   "mbRgMbid": "e294a83b-5591-3499-af04-43e0629a1788",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Black Moth Super Rainbow",
+   "album": "Eating Us",
+   "year": 2009,
+   "label": "Rad Cult",
+   "country": "us",
+   "faction": "hypnagogic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BMSR 第三張，持續暖而糊的類比霧，落恍惚。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "類比合成器與 vocoder，鼓機輕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/73898d43-7a79-3842-8145-6b3ab3cba75f",
+    "https://coverartarchive.org/release-group/73898d43-7a79-3842-8145-6b3ab3cba75f/front"
+   ],
+   "mbRgMbid": "73898d43-7a79-3842-8145-6b3ab3cba75f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Black Moth Super Rainbow",
+   "album": "Start a People",
+   "year": 2004,
+   "label": "Rad Cult",
+   "country": "us",
+   "faction": "hypnagogic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BMSR 較早期的作品，磁帶糊更重，落恍惚。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": 0.6,
+    "why": "vocoder、類比 synth、很糊的鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4f3d1016-fd11-3b85-9a50-f9c874c6e9f3",
+    "https://coverartarchive.org/release-group/4f3d1016-fd11-3b85-9a50-f9c874c6e9f3/front"
+   ],
+   "mbRgMbid": "4f3d1016-fd11-3b85-9a50-f9c874c6e9f3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Black Moth Super Rainbow",
+   "album": "Falling Through a Field",
+   "year": 2003,
+   "label": "Rad Cult",
+   "country": "us",
+   "faction": "hypnagogic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BMSR 首張，最糊的一批，落恍惚。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.3,
+    "z": 0.5,
+    "why": "低保真類比合成器霧，拍子稀"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b5c81531-e9ee-3e45-98c6-76c81597af49",
+    "https://coverartarchive.org/release-group/b5c81531-e9ee-3e45-98c6-76c81597af49/front"
+   ],
+   "mbRgMbid": "b5c81531-e9ee-3e45-98c6-76c81597af49",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能偏冷"
+  },
+  {
+   "artist": "Black Moth Super Rainbow",
+   "album": "Panic Blooms",
+   "year": 2018,
+   "label": "Rad Cult",
+   "country": "us",
+   "faction": "hypnagogic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BMSR 後期作，延續暖色類比霧。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.5,
+    "why": "類比 synth、vocoder，拍子輕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f95fe9a4-8908-4425-8e7a-878e75fb2a5c",
+    "https://coverartarchive.org/release-group/f95fe9a4-8908-4425-8e7a-878e75fb2a5c/front"
+   ],
+   "mbRgMbid": "f95fe9a4-8908-4425-8e7a-878e75fb2a5c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Benoît Pioulard",
+   "album": "Temper",
+   "year": 2008,
+   "label": "Kranky",
+   "country": "us",
+   "faction": "hypnagogic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Benoît Pioulard 的 Kranky 首作，lo-fi 民謠與電子噪訊交織，磁帶糊重，落恍惚。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "吉他、磁帶噪訊與 field recording 的暖霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/904b7018-e43e-39a2-a997-50c6d35ffb2a",
+    "https://coverartarchive.org/release-group/904b7018-e43e-39a2-a997-50c6d35ffb2a/front"
+   ],
+   "mbRgMbid": "904b7018-e43e-39a2-a997-50c6d35ffb2a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "民謠原聲部分可能判輕"
+  },
+  {
+   "artist": "Peaking Lights",
+   "album": "Imaginary Falcons",
+   "year": 2009,
+   "label": "Peaking Lights",
+   "country": "us",
+   "faction": "hypnagogic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Peaking Lights 早期 lo-fi 作，dub 與迷幻的磁帶糊，落恍惚。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.4,
+    "z": 0.5,
+    "why": "dub 迴音、磁帶糊的類比 synth 與鬆拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6d9cffb7-aa07-41a8-8ea0-1c7152855c82",
+    "https://coverartarchive.org/release-group/6d9cffb7-aa07-41a8-8ea0-1c7152855c82/front"
+   ],
+   "mbRgMbid": "6d9cffb7-aa07-41a8-8ea0-1c7152855c82",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Homeshake",
+   "album": "Midnight Snack",
+   "year": 2015,
+   "label": "Sinderlyn",
+   "country": "ca",
+   "faction": "hypnagogic",
+   "genres": [
+    "soul"
+   ],
+   "why": "Homeshake 的臥室 lo-fi R&B，鼓機慢、音色糊暖，落恍惚。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "lo-fi R&B、軟 Rhodes 與慢鼓機"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bfcf215c-6d4e-4b4a-a003-8905b51a7f88",
+    "https://coverartarchive.org/release-group/bfcf215c-6d4e-4b4a-a003-8905b51a7f88/front"
+   ],
+   "mbRgMbid": "bfcf215c-6d4e-4b4a-a003-8905b51a7f88",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 In the Shower 為 2.2/0.6/0.9，y 可能不足"
+  },
+  {
+   "artist": "Homeshake",
+   "album": "Helium",
+   "year": 2019,
+   "label": "Sinderlyn",
+   "country": "ca",
+   "faction": "hypnagogic",
+   "genres": [
+    "soul"
+   ],
+   "why": "Homeshake 的軟 R&B，包覆感足，落恍惚。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "慢速鼓機、軟 synth 與 chorus 吉他"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b64bc13c-6287-454d-b60c-b9f909181e81",
+    "https://coverartarchive.org/release-group/b64bc13c-6287-454d-b60c-b9f909181e81/front"
+   ],
+   "mbRgMbid": "b64bc13c-6287-454d-b60c-b9f909181e81",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能不足"
+  },
+  {
+   "artist": "Homeshake",
+   "album": "Under the Weather",
+   "year": 2021,
+   "label": "Sinderlyn",
+   "country": "ca",
+   "faction": "hypnagogic",
+   "genres": [
+    "soul"
+   ],
+   "why": "Homeshake 後期更慢更濕的一張。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "慢速、鼓機輕、synth 與吉他糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5ab39f5b-53ac-45b3-8674-d3b29a4e891b",
+    "https://coverartarchive.org/release-group/5ab39f5b-53ac-45b3-8674-d3b29a4e891b/front"
+   ],
+   "mbRgMbid": "5ab39f5b-53ac-45b3-8674-d3b29a4e891b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能不足"
+  },
+  {
+   "artist": "Wild Nothing",
+   "album": "Gemini",
+   "year": 2010,
+   "label": "Captured Tracks",
+   "country": "us",
+   "faction": "chillwave",
+   "genres": [
+    "rock"
+   ],
+   "why": "Wild Nothing 的首作，四軌 lo-fi 質地的 dream pop／chillwave，落恍惚。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "lo-fi 製作、chorus 吉他與 synth，微糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/14cd42e9-a57d-4b05-a641-332cc80d9975",
+    "https://coverartarchive.org/release-group/14cd42e9-a57d-4b05-a641-332cc80d9975/front"
+   ],
+   "mbRgMbid": "14cd42e9-a57d-4b05-a641-332cc80d9975",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 在邊上，池中其他 Wild Nothing 皆判輕"
+  },
+  {
+   "artist": "Hammock",
+   "album": "Chasing After Shadows... Living with the Ghosts",
+   "year": 2010,
+   "label": "Hammock",
+   "country": "us",
+   "faction": "hypnagogic",
+   "genres": [
+    "rock"
+   ],
+   "why": "Hammock 的 ambient 吉他霧，殘響厚到包住一切，落恍惚。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "大片殘響吉他與弦樂墊，無鼓或極輕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ce40832c-7285-43cd-bacc-482e9fea8c93",
+    "https://coverartarchive.org/release-group/ce40832c-7285-43cd-bacc-482e9fea8c93/front"
+   ],
+   "mbRgMbid": "ce40832c-7285-43cd-bacc-482e9fea8c93",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能偏冷"
+  },
+  {
+   "artist": "Papercuts",
+   "album": "You Can Have What You Want",
+   "year": 2009,
+   "label": "Sub Pop",
+   "country": "us",
+   "faction": "bedroom",
+   "genres": [
+    "rock"
+   ],
+   "why": "Papercuts 的暖 dream pop，Jason Quever 的低語嗓音浸在殘響裡，落恍惚。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "殘響吉他、軟鼓與風琴墊，慢而暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1675cbe9-fac0-36aa-9808-3cc72a1eee13",
+    "https://coverartarchive.org/release-group/1675cbe9-fac0-36aa-9808-3cc72a1eee13/front"
+   ],
+   "mbRgMbid": "1675cbe9-fac0-36aa-9808-3cc72a1eee13",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Papercuts",
+   "album": "Fading Parade",
+   "year": 2011,
+   "label": "Sub Pop",
+   "country": "us",
+   "faction": "bedroom",
+   "genres": [
+    "rock"
+   ],
+   "why": "Papercuts 的第二張 Sub Pop，同樣的暖霧。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "殘響吉他、輕鼓、風琴墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/78250bbe-cbb8-44d7-832e-19eea71ddb31",
+    "https://coverartarchive.org/release-group/78250bbe-cbb8-44d7-832e-19eea71ddb31/front"
+   ],
+   "mbRgMbid": "78250bbe-cbb8-44d7-832e-19eea71ddb31",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Men I Trust",
+   "album": "Headroom",
+   "year": 2015,
+   "label": "Men I Trust",
+   "country": "ca",
+   "faction": "bedroom",
+   "genres": [
+    "pop"
+   ],
+   "why": "Men I Trust 早期作，與 Oncle Jazz 同路的暖 dream pop。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.6,
+    "why": "chorus 吉他、軟貝斯與慢拍，濕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/81f4ada9-68e9-43a9-a152-283c30ee2dcc",
+    "https://coverartarchive.org/release-group/81f4ada9-68e9-43a9-a152-283c30ee2dcc/front"
+   ],
+   "mbRgMbid": "81f4ada9-68e9-43a9-a152-283c30ee2dcc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊，池中 Oncle Jazz 為 0.9"
+  },
+  {
+   "artist": "Vansire",
+   "album": "Angel Youth",
+   "year": 2018,
+   "label": "Vansire",
+   "country": "us",
+   "faction": "bedroom",
+   "genres": [
+    "pop"
+   ],
+   "why": "Vansire 的 bedroom dream pop，殘響濕、色暖，落恍惚。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "chorus 吉他與合成器、慢拍，濕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/10a7258b-2723-4a5a-92bb-fc73f0af5fd0",
+    "https://coverartarchive.org/release-group/10a7258b-2723-4a5a-92bb-fc73f0af5fd0/front"
+   ],
+   "mbRgMbid": "10a7258b-2723-4a5a-92bb-fc73f0af5fd0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Vansire",
+   "album": "After Fillmore County",
+   "year": 2020,
+   "label": "Vansire",
+   "country": "us",
+   "faction": "bedroom",
+   "genres": [
+    "pop"
+   ],
+   "why": "Vansire 後期作，保持同樣的濕與暖。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "chorus 吉他與軟 synth，慢拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1c768c29-8dec-487e-875b-0058e9ca6b97",
+    "https://coverartarchive.org/release-group/1c768c29-8dec-487e-875b-0058e9ca6b97/front"
+   ],
+   "mbRgMbid": "1c768c29-8dec-487e-875b-0058e9ca6b97",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Cuco",
+   "album": "Para mi",
+   "year": 2019,
+   "label": "Interscope",
+   "country": "us",
+   "faction": "bedroom",
+   "genres": [
+    "pop"
+   ],
+   "why": "Cuco 的 bedroom pop 代表，暖色殘響與慢鼓機，落恍惚。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "慢速 bedroom R&B、chorus 吉他與軟 synth"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e1581516-84e4-4acf-b9ff-9a323283ad52",
+    "https://coverartarchive.org/release-group/e1581516-84e4-4acf-b9ff-9a323283ad52/front"
+   ],
+   "mbRgMbid": "e1581516-84e4-4acf-b9ff-9a323283ad52",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能不足"
+  },
+  {
+   "artist": "Yellow Days",
+   "album": "A Day in a Yellow Beat",
+   "year": 2020,
+   "label": "Barsuk",
+   "country": "gb",
+   "faction": "bedroom",
+   "genres": [
+    "pop"
+   ],
+   "why": "Yellow Days 的暖 lo-fi soul，糊、厚、慢，落恍惚。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "低保真、溫熱人聲與 Rhodes，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8b9e167d-5837-45cd-85a2-521949fa3e25",
+    "https://coverartarchive.org/release-group/8b9e167d-5837-45cd-85a2-521949fa3e25/front"
+   ],
+   "mbRgMbid": "8b9e167d-5837-45cd-85a2-521949fa3e25",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能不足"
+  },
+  {
+   "artist": "Hovvdy",
+   "album": "Cranberry",
+   "year": 2018,
+   "label": "Double Double Whammy",
+   "country": "us",
+   "faction": "bedroom",
+   "genres": [
+    "pop"
+   ],
+   "why": "Hovvdy 的 lo-fi 臥室作，慢而暖，帶磁帶糊。",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.8,
+    "z": 0.7,
+    "why": "lo-fi 吉他、軟鼓、殘響與磁帶糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8abc5c0c-ca51-49ad-aba9-5ff0dc0741fa",
+    "https://coverartarchive.org/release-group/8abc5c0c-ca51-49ad-aba9-5ff0dc0741fa/front"
+   ],
+   "mbRgMbid": "8abc5c0c-ca51-49ad-aba9-5ff0dc0741fa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊"
+  },
+  {
+   "artist": "Rangers",
+   "album": "Suburban Tours",
+   "year": 2010,
+   "label": "Olde English Spelling Bee",
+   "country": "us",
+   "faction": "hypnagogic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Rangers（Joe Knight）早期 hypnagogic 作，四軌磁帶糊與迴圈吉他，落恍惚。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "磁帶糊的吉他迴圈與合成器，慢速、迷濛"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dd4ce053-a8c5-4e04-aa87-13f54b71d89b",
+    "https://coverartarchive.org/release-group/dd4ce053-a8c5-4e04-aa87-13f54b71d89b/front"
+   ],
+   "mbRgMbid": "dd4ce053-a8c5-4e04-aa87-13f54b71d89b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能偏冷"
+  },
+  {
+   "artist": "Rangers",
+   "album": "Pan Am Stories",
+   "year": 2011,
+   "label": "Olde English Spelling Bee",
+   "country": "us",
+   "faction": "hypnagogic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Rangers 的 hypnagogic 代表之一，旅途感的暖色磁帶霧。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "磁帶糊的吉他與合成器，慢拍、迷濛"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4a00f4ac-2eb7-4f82-adff-106906931000",
+    "https://coverartarchive.org/release-group/4a00f4ac-2eb7-4f82-adff-106906931000/front"
+   ],
+   "mbRgMbid": "4a00f4ac-2eb7-4f82-adff-106906931000",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能偏冷"
+  },
+  {
+   "artist": "Nightlands",
+   "album": "Forget the Mantra",
+   "year": 2010,
+   "label": "Secretly Canadian",
+   "country": "us",
+   "faction": "chillwave",
+   "genres": [
+    "rock"
+   ],
+   "why": "Nightlands（Dave Hartley）的朦朧軟搖滾，殘響包覆、慢拍，落恍惚。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "reverb 厚的軟搖滾與合成器，慢拍、微暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cadc88b6-793d-4553-b1f7-572044daf78d",
+    "https://coverartarchive.org/release-group/cadc88b6-793d-4553-b1f7-572044daf78d/front"
+   ],
+   "mbRgMbid": "cadc88b6-793d-4553-b1f7-572044daf78d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能不足"
+  },
+  {
+   "artist": "Yellow Days",
+   "album": "Harmless Melodies",
+   "year": 2016,
+   "label": "Yellow Days",
+   "country": "gb",
+   "faction": "bedroom",
+   "genres": [
+    "pop"
+   ],
+   "why": "Yellow Days 早期的暖 lo-fi 臥室作，糊而溫。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 0.8,
+    "why": "低保真臥室錄音、吉他與軟 synth，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/848f689f-5c0d-4a59-9d3b-132184d85b49",
+    "https://coverartarchive.org/release-group/848f689f-5c0d-4a59-9d3b-132184d85b49/front"
+   ],
+   "mbRgMbid": "848f689f-5c0d-4a59-9d3b-132184d85b49",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yellow Days",
+   "album": "Is Everything Okay in Your World?",
+   "year": 2017,
+   "label": "Yellow Days",
+   "country": "gb",
+   "faction": "bedroom",
+   "genres": [
+    "pop"
+   ],
+   "why": "Yellow Days 的 lo-fi soul 暖霧，落恍惚。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "低保真吉他與 Rhodes，慢，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4454ee52-6def-41bc-a9a2-ce4c0d30e949",
+    "https://coverartarchive.org/release-group/4454ee52-6def-41bc-a9a2-ce4c0d30e949/front"
+   ],
+   "mbRgMbid": "4454ee52-6def-41bc-a9a2-ce4c0d30e949",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mac DeMarco",
+   "album": "Guitar",
+   "year": 2025,
+   "label": "Mac's Record Label",
+   "country": "ca",
+   "faction": "bedroom",
+   "genres": [
+    "rock"
+   ],
+   "why": "Mac DeMarco 的家錄作，chorus 吉他與磁帶糊，慢而暖。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 0.7,
+    "why": "家錄吉他、chorus 與磁帶糊，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ea5be93c-ed2d-4c8a-8bcc-250b2909fb44",
+    "https://coverartarchive.org/release-group/ea5be93c-ed2d-4c8a-8bcc-250b2909fb44/front"
+   ],
+   "mbRgMbid": "ea5be93c-ed2d-4c8a-8bcc-250b2909fb44",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊"
+  },
+  {
+   "artist": "Youth Lagoon",
+   "album": "Heaven Is a Junkyard",
+   "year": 2023,
+   "label": "Fat Possum",
+   "country": "us",
+   "faction": "chillwave",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Youth Lagoon 回歸之作，慢板與暖色殘響。",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "合成器墊、柔和人聲與殘響，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7e8398de-4d8f-4032-bfc4-3db67a456399",
+    "https://coverartarchive.org/release-group/7e8398de-4d8f-4032-bfc4-3db67a456399/front"
+   ],
+   "mbRgMbid": "7e8398de-4d8f-4032-bfc4-3db67a456399",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼邊"
+  },
+  {
+   "artist": "Men I Trust",
+   "album": "Men I Trust",
+   "year": 2014,
+   "label": "Men I Trust",
+   "country": "ca",
+   "faction": "bedroom",
+   "genres": [
+    "pop"
+   ],
+   "why": "Men I Trust 首作，與 Oncle Jazz 同路的暖 dream pop。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.6,
+    "why": "chorus 吉他、軟貝斯、慢拍、微濕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/29fd1006-b02a-4e02-859f-bdf833347ab6",
+    "https://coverartarchive.org/release-group/29fd1006-b02a-4e02-859f-bdf833347ab6/front"
+   ],
+   "mbRgMbid": "29fd1006-b02a-4e02-859f-bdf833347ab6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊"
+  },
+  {
+   "artist": "Vansire",
+   "album": "Reflections and Reveries",
+   "year": 2016,
+   "label": "Vansire",
+   "country": "us",
+   "faction": "bedroom",
+   "genres": [
+    "pop"
+   ],
+   "why": "Vansire 早期臥室 dream pop，殘響濕、色暖。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "chorus 吉他與合成器、慢拍，濕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b3d94c2d-8810-4b1a-a3e3-e81328ea5e0a",
+    "https://coverartarchive.org/release-group/b3d94c2d-8810-4b1a-a3e3-e81328ea5e0a/front"
+   ],
+   "mbRgMbid": "b3d94c2d-8810-4b1a-a3e3-e81328ea5e0a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Homeshake",
+   "album": "Fresh Air",
+   "year": 2017,
+   "label": "Sinderlyn",
+   "country": "ca",
+   "faction": "hypnagogic",
+   "genres": [
+    "soul"
+   ],
+   "why": "Homeshake 的軟 R&B，包覆感足。",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "慢鼓機、軟 synth 與糊吉他"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a3c379eb-4896-4202-b445-9690888d60ef",
+    "https://coverartarchive.org/release-group/a3c379eb-4896-4202-b445-9690888d60ef/front"
+   ],
+   "mbRgMbid": "a3c379eb-4896-4202-b445-9690888d60ef",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊"
+  },
+  {
+   "artist": "Black Moth Super Rainbow",
+   "album": "SeeFu Lilac",
+   "year": 2016,
+   "label": "Rad Cult",
+   "country": "us",
+   "faction": "hypnagogic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BMSR 後期作，延續暖色類比霧。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "類比 synth、vocoder，拍子輕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/acd0dbff-0e9e-49a5-9fda-e417d9bd06af",
+    "https://coverartarchive.org/release-group/acd0dbff-0e9e-49a5-9fda-e417d9bd06af/front"
+   ],
+   "mbRgMbid": "acd0dbff-0e9e-49a5-9fda-e417d9bd06af",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "場景挖到的真正夠格者有限：池中 chillwave 錨點（Washed Out、Toro y Moi、Neon Indian、Small Black、Memory Tapes、Panda Bear、Teen Daze、Nite Jewel）已佔去最強的一批；Toro y Moi 其餘盤（Underneath the Pine x≈2.8、Anything in Return 已判躁、Outer Peace／What For? 快）、Neon Indian、Ariel Pink（池中判 3.2–3.3）、Gauntlet Hair（快）、Wild Nothing 其餘盤（池中判輕）、Com Truise、Tycho、Real Estate 皆未提。",
+  "未提原因：Air France 在 MB 只有一張 Compilation；Pure X《Crawling Up the Stairs》、Atlas Sound《Parallax》、Memoryhouse、Lotus Plaza、Widowspeak《Widowspeak》、Sun Araw《On Patrol》、Peaking Lights 936／Lucifer、Hope Sandoval 系、Youth Lagoon 首作、Mild High Club《Going Going Gone》、Men I Trust《Untourable Album》已在 curation-ml2.json；Benoît Pioulard《Lasted》無 CAA 封面而剔除；Craft Spells、Small Black《Best Blues》、Hovvdy《Heavy Lifter》、Nightlands《Oak Island》貼邊或 y 風險高，捨去。",
+  "ml12（bedroom／dream pop 濕的一路）名單偏短：Hatchie、Melody's Echo Chamber 2012、Jay Som、Tennis、Faye Webster、Clairo、Drugdealer 多判躁或輕，Cigarettes After Sex、Crumb、Japanese Breakfast 池中已判冷或輕；僅收 Papercuts、Vansire、Cuco、Yellow Days、Hovvdy、Mac DeMarco《Guitar》、Men I Trust 早期作。",
+  "貼邊風險集中在 y：Homeshake、Teen Daze、Nightlands、Hovvdy 一類 lo-fi 乾淨感較重者，池中同類 In the Shower／All of Us, Together 判 y 0.5–0.6；各卡 uncertain 欄已標。Wild Nothing《Gemini》x 2.7 在邊上（店主點名所以提）。",
+  "MB 年份取 release-group 首發年（Small Black《Limits of Desire》2013、Nite Jewel《Good Evening》2008 卡帶版、Men I Trust《Headroom》2015 等）；Nightlands 與 Homeshake 以外皆有 CAA 封面。"
+ ]
+}
