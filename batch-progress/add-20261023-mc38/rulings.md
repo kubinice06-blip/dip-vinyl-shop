@@ -100,3 +100,9 @@
 - **20263** 第二句全照鉤子層 20253 配表（師承／偏好／名字直接／掛名欄／續作／分工並列／製作欄／自述術語／「由」字編制／兼項／團籍／分派／學歷／「是」字分述）；「日」後一字全照 20254（只／對／完／入／這／進／，／到／獨／赴；Ithaca「14、15 日連」）。為避「美國鋼琴」×3：Symbol Systems 寫「美國鋼琴家」、Piano Equation 寫「鋼琴家」、Symbolic Reality 只寫「鋼琴手」（note 指定的「美國」在後兩張省略，可逆）。Ivory 的團籍句改成「在 Braxton 四重奏裡彈鋼琴」以避「的鋼琴手」×4。
 - **20264** 自掃（han() 4-gram，本檔 14 張＋out-2 現檔）：3 張以上只剩樂器／編制名「低音提琴」「薩克斯風」「音薩克斯」「弦樂三重／樂三重奏」（三張卡的團名本身）與地名「巴塞隆納」（out-2）。途中拆掉「在紐約錄」×4、「的鋼琴手」×4、「鋼琴手年」×4、「在年月日」×3、「是年月日」×3、「張二重奏」×3、「美國鋼琴」×3，及 2 張的「同年由發」「錄成隔年」「彈鋼琴兩」「下十一首」（對 Ithaca hook）「的廠牌把」（對 Signs hook）「這組弦樂」（對 Symbolic hook）「這對搭檔」（對 Time Gone Out hook）「瑞士發行」「由法國發」「蘇黎世的」「彈完十首」「把它收進」「輪流出現」「廠牌形容」「手貝斯手」「錄於紐約」「重奏第二」「在紐約的」「列鋼琴手」等。剩 2 張：「鋼琴獨奏」（術語）、「中音薩克」「小提琴手」「平台鋼琴」（樂器）。
 - **20265** Ithaca 的〈Shard〉寫成「三首以〈Shard〉為名的短曲」（實際曲名 First／Second／Third Shard，note 原寫法）；Signs and Epigrams note「第一次個人名義發行」寫成「頭一回以個人名義發行」以避「廠牌第一」撞 Piano Equation hook。
+
+## 主線審稿（2026-10-23，雲端主線，27 張逐張讀過、對回研究稿）
+- **20271** `desc2:Matthew Shipp String Trio|Expansion, Power, Release`：hook「爵士三重奏，被樂評比作一支古典室內樂團。」→「鋼琴、小提琴、貝斯，十四首多是短篇。」（單一指南的評語當 hook；改用研究稿編制與曲數事實）。hooks-a、writer-1 input 同步改；研究稿不動（facts 原文保留）。
+- **20272** `desc2:Aki Takase & Alexander von Schlippenbach|Four Hands Piano Pieces`：刪「〈Stoneblock〉兩首被比作 Nancarrow 的自動鋼琴曲。」（單一樂評比喻）。
+- **20273** `desc2:Aruán Ortiz|Cub(an)ism`：刪「最長的〈Cuban Cubism〉被連到古巴畫家 Wifredo Lam 的〈叢林〉」（單一樂評的聯想），〈Monochrome (Yubá)〉句改「整首停在一個反覆敲擊的音上」。
+- 其餘 24 張逐張審過，未改字。qa-batch out、qa-check-research（兩檔 0）、fix-spacing（0）、chk-hook-crossgroup 重跑全過。
