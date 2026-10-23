@@ -14,3 +14,15 @@
   - 池中同人判輕：The Melodians《Pre-Meditation》（《Rivers of Babylon》y −0.4）、Max Romeo《I Love My Music》《Mek-Wi-Rock》（《Reconstruction》y 0）、Freddie McGregor《Showcase》（池中 y 0.6 貼）。
   - 型態／身分：Max Romeo《Open the Iron Gate》（Discogs 對上的是 Blood & Fire 1999 彙編《Open the Iron Gate 1973–77》，原盤未確認）、Lion Zion《Reggae in America》（MB primary type 空）、Clive Field Marshall《Poor House Rockers》（deejay 盤，池中 deejay 多 x≥2.9）、The Slickers《Breakthrough》（輕快曲目 x 風險）。
 - 長度與 type 存疑留給研究層：Wayne Jarrett《Showcase Vol. 1》（MB 首發 2004 重發，原盤 1982 Discogs master 185118，與池中《Bubble Up》《Chip In》是否同曲目要查）、Meditations《No More Friend》（MB 無首發日）、Tyrone Evans《For Lovers Only》（Wackie's 1983 合成器 boogie 風險，ml38 汰 Annette Brissett 同廠牌同年）。
+
+## 研究 a 組
+- 20041：Wayne Jarrett《Showcase Vol. 1》與池中《Bubble Up》是同一張（Discogs master 185118；release 2594810 註明 Bubble Up 為 1984 UK 改名版，曲目相同）。建議主線汰本卡。Chip In 是另一張（Greensleeves）。
+- 20042：Love Joys 是兩人（Sonia Abel、Claudette Brown，表姊妹），策展層「三人組」推翻；原盤年份取 Discogs 1983（來源另有 1982 說法）。
+- 20043：Jezzreel《Rockers Showcase Volume 2》曲目全為 4–7 分的獨立歌名、Discogs 風格僅 Roots Reggae，「人聲接 dub 版」查無實證；moodGuess 存疑，status thin，整張把握低於 Great Jah Jah。
+- 20044：Great Jah Jah 標籤印 Volume One（封面 Showcase），寫作層不寫成逐首接 dub 版，可寫「dub 味混音」。
+
+## 研究 d 組
+- 20071：Noel Phillips = Echo Minott（NTS 傳記＋Apocalypse 文案兩處）；年份採 Discogs／VP 的 1981，Echo Minott 傳記的「1980、倫敦 Starlight」為單一來源不寫；維基 King Jammy 條把 Noel Phillips 列為製作是誤讀，不採。
+- 20072：Meditations《No More Friend》原創專輯、Channel One、Roots Radics；Jo-Ann Greene 評論取自 B&N 轉載（單一來源）；英版混音署名 Soldgie 與牙買加版 Soljie Hamilton 視為同人，只寫後者。
+- 20073：Barry Brown《Barry》年份採 1983（維基 1982 誤）；人聲錄 Joe Gibbs、Channel One 混音；伴奏 Darbers／One Vibe Band 非 Radics，輕脆風險記入 notes。
+- 20074：Barry Brown《Stand Firm》年份衝突（Discogs 1982／Roots Archives 與維基 1978）；facts 兩邊並列，status thin；moodGuess 存疑（Aggrovators rockers、Scientist 混音），建議主線降級或汰換；廠牌 Jackpot 與 Justice 並存，建議不寫廠牌。
