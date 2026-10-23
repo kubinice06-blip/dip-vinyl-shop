@@ -36,3 +36,12 @@
 - 19255：Polaris《Music》身分核對無誤（2015-02-18、UVCA-6003）。OTOTOY 訪談提供錄法與母帶細節（貝斯拖拍、手作土味、柏原譲自行母帶）；「dub 基調」只見於搜尋轉述，不寫入 facts。y 0.9 在邊界，標輕度存疑。
 - 19256：Mad Professor & The Mad Men Band《Dub You Crazy With Love (Part 2)》身分核對無誤（2000、Ariwa ARICD132，18 首）。「lovers dub」定性來自 Discogs 收錄的內頁文字與曲名，查無樂評；Spaceflight 2001 等曲可能偏硬，速度無來源 → 輕度存疑。與 ml38 撞提風險由主線寫入前再查。
 - 19257：本組 WebSearch 共用 9 次（Likkle Mai 5、Polaris 2、Mad Professor 1，另 1 次無結果）；HMV／Tower／日本站的 WebFetch 被 403，改以瀏覽器 UA 的 curl 取得商品文案。
+
+## 研究 a 組
+- **19241**：LITTLE TEMPO《Kedaco Is Born》全名為《Kedaco Is Born - Dubwise》（Discogs 3598193，封面與碟面印 Dubwise）；12 首中僅〈Yuge Dub 81〉有人聲（Likkle Mai）。日文維基／weblio 把《Kedaco Sounds》與本張都寫 CTCR-11086，採 Discogs（Sounds＝11081、本張＝11086）。聲音只有編制與混音署名，無拍速／樂評文字。
+- **19242**：《Ron Riddim In Dub》身分過關（Discogs 1616405，2000-01-12，Rhythm Republic RR12-88140，2×12"）；9 首曲名對應原盤《Ron Riddim》（1999-08-06，cutting edge）。Discogs 未載混音者與樂手，不寫誰混。**moodGuess 存疑**：全部聲音描述（慢、回音長、貝斯厚、鋼鼓旋律）皆無文字佐證，dub 版可能旋律被拆碎，偏冷硬。
+- **19243**：Ryukyu Underground 首作（RES-60）：MB／Apple 日期 2002-03-27、Discogs 2002-04-10，年份同。Orlando Weekly 樂評提到 Talvin Singh〈OK〉，但日英版曲目皆無此曲且該文未寫盤名，不進 facts。**moodGuess 存疑**：宣傳文字列 jungle、hip-hop、Afrobeat、drum'n'bass，非單純慢 dub；慢與厚的證據只有兩首 Dub 曲名與 Discogs 標籤。
+- **19244**：《Mo Ashibi》實際發行 2003-04-23（Apple、Discogs），MB 的 2003-08-23 疑誤植，卡單 year 2003 不受影響。**moodGuess 存疑**：風格標籤含 House，開場為 Extended Mix，快的 club 拍比例無法查證，x 可能偏高或偏輕。
+- **19245**：《Shimadelica》身分過關（RES-110，2006-04-26）。AllMusic 頁 403 讀不到；**moodGuess 存疑**：「慢 dub 拍、迷幻回音厚」無文字佐證，Discogs 標 Ambient／Downtempo 可能更空靈。
+- **19246**：《Umui》（ウムイ）身分過關（RES-148，2009-04-15）；Ryukyu Shimpo 2022 年的《ウムイ》是大城美佐子 best of，同名不同碟已排除。**moodGuess 存疑**：Discogs 風格不含 Dub（只 Ambient／Downtempo），10 首僅〈East Town Dub〉明寫 Dub，「島唄歌手人聲為主」查無客座歌手署名；低頻厚、殘響長缺證據，可能偏空靈偏輕。
+- **19247**：Ryukyu Underground 四張共通——日文來源（CDJournal 搜尋無結果、Tower 403、Apple 無編輯評論）查不到專輯評論，聲音 facts 只到曲風標籤、曲名與宣傳文字；status 一律標 thin，建議主線視評分結果再決定是否保留這組（四張中 moodGuess 皆存疑）。
