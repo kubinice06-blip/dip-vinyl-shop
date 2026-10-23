@@ -45,3 +45,12 @@
 - 14762：McCann moodGuess（慢慢堆的長篇、Moog 與電鋼琴）：樂器與長度（三首皆 12 分鐘以上）支持，但 Purdie、Dupree 與三位鼓手在場，可能有 groove 段，x 存疑；速度無來源，未推翻。
 - 14763：Josef Leimberg《Astral Progressions》moodGuess 存疑（x）：LA Times「trippy、厚殘響」支持，但 WSJ 稱 jazz-funk、重點是技巧性獨奏，依酸冷規則有 funk 推進越線風險；曲長 4–7 分鐘，14 分半收尾；全盤約 65 分鐘。合成器墊與低頻無來源。
 - 14764：Leimberg 封面：本次未查證 2025 重發，MB 只見 2016 數位版與 2016 日本 Rings CD（RINC017）。
+
+## 研究 b 組
+- **14731** Matt Martians《The Last Party》：status thin。本張查無任何樂評或訪談描述聲音（Pitchfork／AllMusic／Bandcamp 皆無法連線，Fader 只講客席與單曲）；moodGuess（慢拍、霧、暖）全無來源，建議上線後實聽評分，不合即汰換。
+- **14732** Silk Rhodes《Silk Rhodes》：moodGuess 存疑。樂評為「簡約、乾」，〈Intro〉為快速舞曲放克、〈Personal Use〉有 house 鼓點、多拍手；磁帶糊與厚殘響無來源。Sasha Desree 性別各來源不一，facts 避開代名詞。
+- **14733** Salami Rose Joe Louis《Zdenka 2080》：moodGuess 存疑。22 首平均不到兩分鐘、多短小品；無樂評描述速度與色溫，curatorRisk（z 只到 0.3）未能排除。
+- **14734** Gabriel Garzón-Montano《Jardín》：無推翻。US 版 2017-01-27、MB 首發 2017-01-17；暖與厚類比有直接來源，「慢」無明確敘述，x 恐落 2.6–3.0 邊緣。
+- **14735** Bilal《A Love Surreal》：moodGuess 存疑。維基整理樂評明講比前作更輕、電子減少、鼓壓低、吉他稀疏，找不到 phaser／Rhodes／厚低頻來源；y 恐不如預估。
+- **14736** Monophonics《Sage Motel》：moodGuess 存疑（fuzz 吉他無來源）；〈Love You Better〉為輕快反拍加響指，可能拉高 x。弦樂墊與暖有支持。
+- 本組 WebSearch 用 3 次（Silk Rhodes、Sage Motel、Zdenka）。年份、廠牌、盤名六張皆與卡單相符，無推翻。
