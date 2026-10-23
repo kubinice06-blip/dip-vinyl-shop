@@ -32,3 +32,24 @@
 - 17527：Die Verbannten Kinder Evas 三張：credits 皆無鼓手，風格緩慢憂鬱，moodGuess 未推翻；鼓「無」為 credits 反推，寫作層寫「沒有鼓手署名」。《In Darkness Let Me Dwell》人聲 Sonic Cathedral 稱 Borsky 為唯一人聲，Discogs 另列 Lederer 男聲，寫作層寫「以女聲為主」。
 - 17528：Sputnik Music、Darkitalia、sonichits、Blaue Rosen 來源直開失敗，內容皆經 WebSearch 摘要轉述，facts 已標「轉述」；WebSearch 用 3 次。
 - 17529–17530：未用。
+
+## 研究 c 組
+- 17501：Crackling 素材為史丹佛直線加速器中心（SLAC）現場錄音（Discogs 錄音註記＋維基 Duncan 條），無任何來源提 Tesla coil；推翻策展層 curatorWhy「特斯拉線圈放電」，寫作層寫 SLAC。
+- 17502：Cyclobe《The Visitors》為第二張（維基 Cyclobe、Thrower 條；第一張 Luminous Darkness），推翻策展層「首張」；且有 hurdy gurdy／小提琴／大提琴／diple，維基稱音色「更溫暖開闊」。moodGuess 存疑（z 偏邊緣）。
+- 17503：TG《In the Shadow of the Sun》影片年份維基（1981）與 Discogs（1972–74，TG 音樂 1980）衝突；facts 只寫 Discogs 註記並標明出處，寫作層不寫影片年份，只寫『1980 錄成、1984 出版』。
+- 17504：Astral Disaster 市面常見版為 2000 Threshold House 重建版（sitar 消失、多〈MÜ-ÜR〉）；facts 的樂手名單是 99 張原版，寫作層談 sitar／人聲效果須註明原版。
+- 17505：Worship the Glitch、Black Light District、Golgotha、Zero Kama、Liber Leviathan、The Crackling 的『有無鼓／機器脈衝』查無逐曲聽感來源（AllMusic／RYM／Discogs 網頁 403，Brainwashed 404，WebSearch 3 次無專屬評論），status 標 partial／thin，moodGuess 標「存疑（待聽）」，交情緒評分實聽。
+- 17506：Zero Kama 人骨樂器說法僅 Dewitt 本人與 Discogs 註記，facts 一律寫『據標示／據本人說法』。
+- 17507：Golgotha 策展層『合唱』無來源；維基僅稱 ambient and medieval-influenced，主線若在意頹靡格資格建議優先複聽或汰換。
+
+## 研究 a 組（條號 17481–17490）
+- 17481：Organum《Submission》年份衝突——Discogs LP 條目 91537 標 1987，但 1994 Complacency CD 說明（Discogs 154718）與 MB 都寫原版 1988。卡單 1988 有兩來源支持，不推翻，請主線知悉。
+- 17482：Organum《Veil of Tears》推翻策展層「單一長音緩慢變形」：實為 1994 年把 1985–1994 年多次錄音（含 1990 年現場演出，原發行為 1992 Aeroplane AR13《Live Vol. 1》25 卷卡帶）編成的五首集結盤。MB 仍列 Album、Matchless 1994 首發，建議保留，鉤子不寫「單一長音」。
+- 17483：Current 93《In Menstrual Night》moodGuess 存疑——Trouser Press 稱 A 面有穩定鼓點貫穿、B 面為磁帶迴圈加處理過的英格蘭民謠旋律、整體比早期溫和；與卡單「無鼓、陰森」不符，建議主線聽後決定汰換。年份依主線裁定取 1986（Discogs 圖案黑膠 1986；MB 1985）。
+- 17484：Organum《Sphyx》moodGuess 輕度存疑——AMM 打擊樂手 Eddie Prévost 列名參與，「無鼓」未證實；聲音來源薄，status thin。
+- 17485：Zoviet France《Eostre》moodGuess 輕度存疑——Discogs 風格含 Tribal，評論提到人聲歌唱與民族樂器；有無打擊迴圈沒有來源明說。署名成員取 Discogs（Ponton、Di Paolo、Storey），不含 Trouser Press 所列創始成員 Jensen。
+- 17486：SPK《Zamia Lehmanni》z（冷）輕度存疑——來源描述為電影配樂式管弦、男聲合唱、女聲空靈唱腔，偏莊嚴；〈In Flagrante Delicto〉有無節奏脈動沒查到。無衝突的部分：鼓稀、慢打擊與鐘、殘響厚。
+- 17487：Organum《Sanctus》《Amen》聲音證據薄（管風琴／鐘為策展猜測，無來源），status thin；鉤子不寫樂器。三部曲脈絡（Sanctus、Amen、Omega）來自 Discogs 說明。
+- 17488：Organum《Vacant Lights》首發格式為卡帶（Aeroplane AR10，1987），黑膠為 1988 Dom America；卡單的 Aeroplane／1987 不推翻。curatorWhy「與 NWW 合作」改寫為 Stapleton 擔任製作。
+- 17489：來源限制——Wikipedia API 被限流、AllMusic／Discogs 網頁／RYM 403，Organum 專輯級樂評極少；Organum 六張的聲音面主要靠 Jackman 1988 年訪談（4iB Records 轉載）與 Orlando Weekly 評論，皆為團體整體說法。WebSearch 用了 4 次（含兩次後續重查），略超每支 3 次上限。
+- 17490：facts 已排除榜單、獎項主張；SPK《Dead Calm》（1989）屬作品後世流傳類，已標時序。

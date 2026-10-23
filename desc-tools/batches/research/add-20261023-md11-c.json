@@ -276,7 +276,7 @@
    },
    {
     "f": "Discogs 將這張的風格標為 Abstract、Ambient。",
-    "src": "https://api.discogs.com/database/search?q=cyclobe+visitors&type=master"
+    "src": "https://www.discogs.com/master/462487"
    },
    {
     "f": "2014 年 1 月 29 日有 CD 與黑膠再版。",
@@ -337,10 +337,6 @@
    {
     "f": "Trouser Press 把 Controlled Bleeding 描述為 Paul Lemos 領軍、鼓手 Joe Papa 與鍵盤手 Chris Moriarty 的三人組，評《Core》時說他們能把「半古典、半爵士的器樂」與「墓穴般的偽歌劇」混在一起，後來的《Trudge》則拋下了《Core》的「ambient 探險」。",
     "src": "https://trouserpress.com/reviews/controlled-bleeding/"
-   },
-   {
-    "f": "Controlled Bleeding 以專輯之間風格大幅跳躍著稱：他們寫過硬派舞曲、惡夢般的電聲音景、哀傷的禮儀聖歌式作品與暗色管弦配樂。",
-    "src": "https://en.wikipedia.org/wiki/Controlled_Bleeding"
    }
   ],
   "hookCandidates": [
@@ -356,5 +352,161 @@
   "status": "thin",
   "notes": "【身分】MB RG 11a9b830、Discogs master 216166／release 308880 一致：1991、Staalplaat STCD 007、5 首。卡單年份廠牌正確。【聲音證據嚴重不足】僅維基一句『ambient and medieval-influenced』；Bandcamp 該頁 404，AllMusic 403，Discogs 網頁 403，WebSearch 無 Golgotha 專屬樂評。策展層寫的『合唱 drone、聖樂、殘響厚』全部沒有來源支撐，也不能推翻。【moodGuess 存疑（待聽）】預估 x 1.3 y 1.2 z -1.4；『medieval-influenced』可能指向旋律性（調式旋律、原聲或類原聲音色）而非單純冷色 drone，且二人之一 Joe Papa 本行是鼓手，有無打擊在此盤未知。建議實聽再定，不要憑 facts 判斷。【Trouser Press】評論對象是其他專輯（Core、Trudge），只用來交代樂團背景；『ambient 探險』是《Core》時期，不是 Golgotha。【風格跳躍句】維基原句是 full-length 專輯常在不同風格間跳接，本卡 facts 的改寫來自該條及搜尋摘要，若寫作層要用請當成樂團整體特性。【推翻策展層】未推翻年份廠牌；『合唱』一項無來源。",
   "coverage": "thin"
+ },
+ {
+  "key": "desc2:Zero Kama|The Secret Eye of L.A.Y.L.A.H.",
+  "artist": "Zero Kama",
+  "album": "The Secret Eye of L.A.Y.L.A.H.",
+  "facts": [
+   {
+    "f": "1984 年 9 月由奧地利 Nekrophile Rekords 發行的 C60 卡帶，目錄號 NRC07；兩面不叫 A、B，而叫「O」與「Z」，封面與卡帶上都這樣印。",
+    "src": "https://www.discogs.com/release/185015"
+   },
+   {
+    "f": "Discogs 註記：這張錄音裡的所有樂器都「只用人骨和頭骨製成」，錄音時間是 1984 年 5 月 5 日至 28 日，標為「An LXXX in the Secret Temple of Laylah」。",
+    "src": "https://www.discogs.com/release/185015"
+   },
+   {
+    "f": "Nekrophile Rekords 是 Zoe Dewitt（當時名叫 Michael Dewitt）創辦的奧地利廠牌，1980 年代營運，1983 至 1986 年間共發行八捲卡帶；Dewitt 以 Zero Kama 與 Korpses Katatonik 兩個名字在廠牌上推出個人作品。",
+    "src": "https://en.wikipedia.org/wiki/Nekrophile_Rekords"
+   },
+   {
+    "f": "據 Dewitt 本人說法，這張專輯「全程用人骨與頭骨當樂器錄成」，這個說法讓它惡名遠播；專輯名與〈Love Alway Yieldeth〉〈Love Alway Hardeneth〉兩個曲名，都指向 Aleister Crowley《The Book of Lies》。",
+    "src": "https://en.wikipedia.org/wiki/Nekrophile_Rekords"
+   },
+   {
+    "f": "共 11 首、約 43 分鐘，每首約 3 到 5 分鐘（最短〈Death Posture〉3 分 12 秒，最長〈Winged Eye Hadit〉5 分 12 秒）。",
+    "src": "https://musicbrainz.org/release-group/4c0a4e9a-0ca4-36bd-8f4c-0f8ed130fbe0"
+   },
+   {
+    "f": "曲目包括〈Death Posture〉〈Atavism Dream〉〈Night of Matter〉〈Inauguration of the Pleasure Dome〉〈Hassan I Sabbah〉〈Starlit Mire〉〈Winged Eye Hadit〉與〈Town of Pyramids (Night of Pan)〉。",
+    "src": "https://www.discogs.com/release/185015"
+   },
+   {
+    "f": "Nekrophile 廠牌的目錄還包含 Zos Kia 與 Coil 的合輯《Transparent》（1984 年 2 月），Peter Christopherson 也參與其中。",
+    "src": "https://en.wikipedia.org/wiki/Zos_Kia"
+   },
+   {
+    "f": "這張唱片 1988 年由法國 Permis de construire 發行 12 吋黑膠（PER 009），1991 年再出 CD（PER 023）。",
+    "src": "https://musicbrainz.org/release-group/4c0a4e9a-0ca4-36bd-8f4c-0f8ed130fbe0"
+   }
+  ],
+  "hookCandidates": [
+   "Discogs 註記這張卡帶的所有樂器都只用人骨和頭骨製成，錄音從 1984 年 5 月 5 日到 28 日。",
+   "卡帶兩面不叫 A、B，而叫 O 與 Z。"
+  ],
+  "sound": "據標示，全程以人骨與頭骨為樂器，11 首各約 3 到 5 分鐘；打擊、嗡鳴與殘響的比例沒有可查證的描述。",
+  "keyTracks": [
+   "Death Posture",
+   "Inauguration of the Pleasure Dome",
+   "Town of Pyramids (Night of Pan)"
+  ],
+  "status": "partial",
+  "notes": "【身分】MB RG 4c0a4e9a、Discogs master 36768／release 185015 一致：1984-09、Nekrophile Rekords NRC07、C60 卡帶。卡單 label／year／country(at) 正確。【人骨樂器】只有 Dewitt 本人說法（維基引述『per Dewitt』『purported』）與 Discogs 註記，無第三方查證，facts 都寫成『據標示／據本人說法』，寫作層勿寫成已證實事實。【聲音證據不足】沒有任何來源描述聽感（AllMusic／RYM／Discogs 網頁 403，WebSearch 配額用完），『儀式打擊稀而慢』『骨笛嗡』是策展層預估。人骨樂器合理推測包含打擊（骨頭敲擊）與吹奏（骨笛），但比例未知。【moodGuess 存疑（待聽）】預估 x 1.9 y 1.3 z -1.7；策展層 curatorRisk 已提『儀式打擊段 x 1.9–2.4』。11 首每首 3–5 分鐘的短篇結構，比長 drone 更可能有節奏性重複，未能確認。【年份】卡 1984-09 正確，維基 Nekrophile 條只稱 1980s；1988／1991 再版為 Permis de construire（MB），非 Nekrophile。【推翻策展層】未推翻。",
+  "coverage": "partial"
+ },
+ {
+  "key": "desc2:Endura|Liber Leviathan",
+  "artist": "Endura",
+  "album": "Liber Leviathan",
+  "facts": [
+   {
+    "f": "1996 年英國 Aesthetic Death 發行的 CD，目錄號 ADCD 003；成員 Stephen Pennick 與 Christopher Walton 二人。",
+    "src": "https://www.discogs.com/release/430613"
+   },
+   {
+    "f": "全盤 10 首、約 52 分鐘：〈Gods Of The Bent Sea〉5 分 8 秒、〈Fish Eyed Daemon〉1 分 15 秒、〈Cyclopean Silo〉3 分 55 秒、〈Engine Of Typhon〉8 分 25 秒、〈Nan Ma Dol〉3 分 46 秒、〈Abysmal Deeps〉8 分 14 秒、〈Island Of The Dead〉5 分 47 秒、〈Dagon Is My Weapon〉2 分 47 秒、〈Earthoscope〉3 分 53 秒、〈Cthulhu Fhtagn〉8 分 26 秒。",
+    "src": "https://www.discogs.com/master/46644"
+   },
+   {
+    "f": "曲名多出自 H.P. Lovecraft 的克蘇魯神話：〈Cthulhu Fhtagn〉、〈Dagon Is My Weapon〉、〈Cyclopean Silo〉，專輯名《Liber Leviathan》則是拉丁文「利維坦之書」。",
+    "src": "https://www.discogs.com/master/46644"
+   },
+   {
+    "f": "Endura 的團名來自 Cathar 教派「endura」的儀式性斷食致死；兩人在 1993 年初相識，1993 到 1994 年曾以 AbRAXAS 為名活動，維基記載樂團活動到 2002 年。",
+    "src": "https://en.wikipedia.org/wiki/Endura_(band)"
+   },
+   {
+    "f": "維基形容 Endura 的風格是把 ambient 與「部落節奏、吟唱、呻吟，以及鐵鍊碰撞和回音等音效」混在一起，被評為「令人毛骨悚然的黑暗」，也被歸為 neoclassical。",
+    "src": "https://en.wikipedia.org/wiki/Endura_(band)"
+   },
+   {
+    "f": "有樂評說他們的合成器讓人想起 Tangerine Dream，再摻進 Aleister Crowley、H.P. Lovecraft 與迷幻藥。",
+    "src": "https://en.wikipedia.org/wiki/Endura_(band)"
+   },
+   {
+    "f": "Walton 說 Pennick 的旋律天分較強，他自己則偏概念；Endura 結束後 Walton 另以 Ten Horned Beast 與 Holy Order of Faust 之名發表作品，Pennick 在一次訪談中表示不再做音樂。",
+    "src": "https://en.wikipedia.org/wiki/Endura_(band)"
+   },
+   {
+    "f": "Aesthetic Death 是 1992 年由 Stuart Gregg 在英國 Worcestershire 創立的獨立廠牌，1994 年起發行極端金屬與厄運金屬，也出過後工業與 death industrial 作品，單批壓製 200 到 3000 張。",
+    "src": "https://de.wikipedia.org/wiki/Aesthetic_Death"
+   }
+  ],
+  "hookCandidates": [
+   "團名取自 Cathar 教派為求速死而行的儀式性斷食。",
+   "10 首曲名裡有 Cthulhu、Dagon 和 Cyclopean，是一張照著克蘇魯神話寫的暗黑 ambient。"
+  ],
+  "sound": "暗黑 ambient，合成器長音配吟誦與音效；維基稱樂團風格含部落節奏、吟唱與鐵鍊聲，但這些是否出現在這張專輯、鼓或打擊占多少，未能查證。",
+  "keyTracks": [
+   "Gods of the Bent Sea",
+   "Engine of Typhon",
+   "Cthulhu Fhtagn"
+  ],
+  "status": "partial",
+  "notes": "【身分】MB RG 44e35a79、Discogs master 46644／release 430613 一致：1996、Aesthetic Death ADCD 003、CD。卡單年份廠牌正確。【聲音證據】維基所述的『tribal rhythms, chants, moans, chains』是整個樂團的風格，不是這張專輯的逐曲描述；WebSearch 沒找到 Liber Leviathan 專屬評論，AllMusic／RYM 403。【moodGuess 存疑（待聽）】預估 x 1.5 y 1.4 z -1.6『無鼓，吟誦與低頻長音』：『部落節奏』若在這張出現，x 可能升到 2.5 以上；吟誦、呻吟的人聲段比重與是否有明顯鼓點皆未能查證，請實聽。【Aesthetic Death】廠牌沿革來自 de.wikipedia 搜尋摘要，單一來源、未直接開頁，寫作層宜略。【年份】維基稱 Endura 活動 1993–2002，與 en 條『active during the 1990s』並存，facts 只寫維基記載。【推翻策展層】未推翻。",
+  "coverage": "partial"
+ },
+ {
+  "key": "desc2:John Duncan & Max Springer|The Crackling",
+  "artist": "John Duncan & Max Springer",
+  "album": "The Crackling",
+  "facts": [
+   {
+    "f": "1996 年德國 trente oiseaux 發行的 CD，目錄號 TOC 961；John Duncan 掛名作曲與錄音，Max Springer 掛名作曲與電腦序列（computer sequences）工程。",
+    "src": "https://www.discogs.com/release/725796"
+   },
+   {
+    "f": "這張的素材是在史丹佛直線加速器中心（Stanford Linear Accelerator Center，亞原子粒子研究設施，位於加州史丹佛）錄下的現場聲響，混音在聖地牙哥的 AVW 完成。",
+    "src": "https://www.discogs.com/release/725796"
+   },
+   {
+    "f": "The Wire 的 Rob Young 在 1997 年的評論中形容這座研究設施「也許是史上最大的樂器」。",
+    "src": "https://en.wikipedia.org/wiki/John_Duncan_(American_artist)"
+   },
+   {
+    "f": "全盤九首、約 49 分鐘：〈Here〉2 分 41 秒、〈Spark〉1 分 47 秒、〈Core〉1 分 34 秒、〈Tide〉3 分 28 秒、〈Charge〉8 分 49 秒、〈Act〉7 分 23 秒、〈Process〉8 分 11 秒、〈Change〉8 分 29 秒、〈Steel Water〉6 分 47 秒。",
+    "src": "https://www.discogs.com/release/725796"
+   },
+   {
+    "f": "John Duncan 1953 年 6 月 17 日生於堪薩斯州 Wichita，在 CalArts 受 Allan Kaprow 指導，1970 年代中期以挑釁的行為演出聞名；1982 年移居東京，成為日本噪音音樂的早期人物，並經營海盜廣播；1988 年搬到阿姆斯特丹，1996 年遷居義大利。",
+    "src": "https://en.wikipedia.org/wiki/John_Duncan_(American_artist)"
+   },
+   {
+    "f": "他的作品常用短波收音機、現場錄音與聲音，合作對象包括 Cosey Fanni Tutti 與 Chris Carter（《Kokka》）、灰野敬二、Masami Akita、Zbigniew Karkowski、Francisco López 等人。",
+    "src": "https://en.wikipedia.org/wiki/John_Duncan_(American_artist)"
+   },
+   {
+    "f": "唱片設計是 Tom Recchion。",
+    "src": "https://www.discogs.com/release/725796"
+   },
+   {
+    "f": "Duncan 與 Max P. Springer 於 1996 年完成《The Crackling》；維基把它列為 Duncan 代表作之一，與《Scare》《Blind Date》《The Keening Towers》並列。",
+    "src": "https://en.wikipedia.org/wiki/John_Duncan_(American_artist)"
+   }
+  ],
+  "hookCandidates": [
+   "素材錄自史丹佛直線加速器中心，The Wire 稱那座設施「也許是史上最大的樂器」。",
+   "九首曲名是 Here、Spark、Core、Tide、Charge、Act、Process、Change、Steel Water。"
+  ],
+  "sound": "素材來自粒子加速器設施的現場錄音，加上電腦序列處理；是否有規律脈衝、嗡鳴與劈啪聲的比例，沒有可查證的聽感描述。",
+  "keyTracks": [
+   "Charge",
+   "Process",
+   "Change"
+  ],
+  "status": "partial",
+  "notes": "【身分】MB RG 747d83b5、Discogs release 725796 一致：1996、trente oiseaux TOC 961、CD；卡單年份廠牌正確。【推翻策展層】curatorWhy 寫『John Duncan 與 Max Springer 的特斯拉線圈放電錄音』——Discogs 與維基都指出素材是史丹佛直線加速器中心（SLAC）的現場錄音，沒有任何來源提到 Tesla coil；寫作層請寫 SLAC，勿寫特斯拉線圈。【moodGuess 存疑】預估 x 1.3 y 1.6 z -1.8『無鼓，電流嗡與放電噪，冷硬』：Discogs 掛名 Max Springer 做 computer sequences，序列（sequences）可能含節奏性脈衝或重複迴圈，〈Charge〉〈Process〉〈Change〉各 8 分鐘上下，是否有節拍未能查證；『冷硬』的方向合理（粒子加速器場館聲響），但『放電噪』的比例未知，噪音攻擊性與 y 的高低請實聽。【Benzene (2)】Discogs 在 Composed By 欄另列 Benzene (2)，與 Max Springer 同樣掛『Composed By, Computer』，是否為 Springer 別名未查證，facts 不寫。【維基提醒】John Duncan 條標示缺少個人傳記來源，傳記細節單一來源；facts 只用生年與地點等基本資料。【未取得】Wire 原評文、AllMusic、Bandcamp。",
+  "coverage": "partial"
  }
 ]
