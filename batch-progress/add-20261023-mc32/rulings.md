@@ -116,3 +116,11 @@
   - `desc2:Ensemble Exposé|Ferneyhough: Chamber Music`：刪「這首的材料密度被形容為幾乎令人窒息。」（單源轉述、原頁 403 只見搜尋摘要）→ 201 字。
   - `desc2:The Group for Contemporary Music|Wolpe: …`：刪「樂評形容它們爆發著能量、旋律精瘦。」（單源評價）→ 220 字。
 - 13553：未改但記錄——Berio《String Quartets》hook「以電子音樂出名」依研究稿 RAI 音響學研究室共同創辦人，保留；Elision《Ferneyhough》卡池鍵盤名保留 MB 誤植 `d'lcare`，正文未出現此拼法。
+
+## 上線與評分（2026-10-23，主線）（條號 13554–13556）
+- **13554**：上線 31 張：card_catalog 31／31、KV 31 鍵回讀逐字一致、試聽 17 ready／14 unavailable（Apple 只有他人錄音或無條目）、seed +31、published gate 0 error。封面 CAA 18、Apple 7（CAA release-group 404，取已釘定試聽的同一錄音官方圖）、Discogs 6（已登錄 registry；Barrett 取 Etcetera 原版 1194050，試聽用 NMC 2012 同錄音再發）。上線前對 origin 65 個分支 seed 去重 0 撞。古典三軸全走 §0.7 錨點制。
+- **13555**：類型樹 31／31 落位；抽卡封面重建。
+- **13556**：**落格率 29/31＝94%**（`batch-progress/mood-axes/score-mc32/`，照 10-23 體感標準）。出格 2：Keller《Kurtág: Musik für Streichinstrumente》x 2.9 落平靜（格言式小品、大量留白，冷寂沒到繃緊）；JACK《Xenakis: Complete String Quartets》y 0.6 落暴躁（Tetras／Tetora 粗暴滑音群與弓壓噪音判重）。極弱音型（Sciarrino ×2、Saunders、Furrer）評 x 3.0–3.1 貼邊仍落冷冽——**同場景下一批極弱點描型照樣貼邊，留給 Lachenmann／Ferneyhough／Carter 那種密集刮擦型**。新複雜主義（Ferneyhough ×5、Barrett）與 Xenakis 獨奏全中。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Quartetto Prometeo、Keller Quartett、JACK Quartet、Quatuor Parisii、Ensemble Recherche、Trio Recherche、Charles Rosen、Stephanos Thomopoulos、Arne Deforce、Nieuw Ensemble、Ensemble Exposé、Kolbeinn Bjarnason、Elision Ensemble、musikFabrik、Ensemble intercontemporain、The Group for Contemporary Music、Ensemble FA、Ensemble 2e2m（18 位）。

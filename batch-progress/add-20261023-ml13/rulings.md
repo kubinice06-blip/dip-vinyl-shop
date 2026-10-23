@@ -82,3 +82,11 @@
   - `desc2:Lord Huron|Long Lost`：「2021 年 5 月 21 日推出後，專輯登上 Billboard 美國民謠專輯榜第 1 名。」→「專輯在 2021 年 5 月 21 日推出。」（媒體榜單名次不進正文）→ 215 字。
   - `desc2:The Besnard Lakes|…Thunderstorm Warnings`：「迷幻與鞋凝交織」→「迷幻與瞪鞋交織」（shoegaze 台灣通行譯名）→ 233 字。
 - qa-batch out、qa-check-research、fix-spacing 重跑全過。
+
+## 上線與評分（2026-10-23，主線）（條號 15034–15036）
+- **15034**：上線 12 張：card_catalog 12／12、KV 12 鍵回讀逐字一致、試聽 11 ready／1 unavailable（Sungrazer：Apple 只有同名他人）、seed +12、published gate 0 error。封面 CAA 12，目視全符。上線前對 origin 65 個分支 seed 去重 0 撞（curation 層撞 ml24 兩張已讓出）。
+- **15035**：類型樹 12／12 落位（`genre-l3-artist-map.json` 補 Lord Huron《Long Lost》→ rock/indie-alt/neo-psych、Daniel Lanois《Acadie》→ rock/dream-post/dream-pop）；抽卡封面重建。
+- **15036**：**落格率 11/12＝92%**（`batch-progress/mood-axes/score-ml13/`，體感標準）。出格 1：Besnard Lakes《Until in Excess, Imperceptible UFO》z −0.2 落頹靡（合成器較陰暗、疏離）。stoner／desert 三張（Dead Meadow、Brant Bjork、Sungrazer）與 Colour Haze 評 x 2.7–2.9、z 0.1–0.6，都貼邊落恍惚——**長 jam 旋律不明會把色溫拉向 0**，這型不宜再擴。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Dead Meadow、Brant Bjork、Colour Haze、Sungrazer、Jonathan Wilson、The Besnard Lakes、Daniel Lanois、The Beta Band、Lord Huron（9 位）。

@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **355** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 117、已退回 1）。
+共 **356** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 118、已退回 1）。
 最後更新：2026-10-23
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -264,6 +264,12 @@
 |---|---|---:|---|---|---|---|
 | Sugar Minott 《Roots Lovers》 | [#1976638](https://www.discogs.com/release/1976638) | 1980 | Black Roots | — | Discogs master 481381 主版、主線目視與盤名相符 | ok |
 | Tony Tuff 《Presenting Mr. Tuff》 | [#3264494](https://www.discogs.com/release/3264494) | 1981 | Black Roots | — | Discogs master 754428 主版、主線目視與盤名相符 | ok |
+
+## add-20261023-ml20（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| LINION 《Leisurely》 | [#31147562](https://www.discogs.com/release/31147562) | 2020 | 嘿豹工作室 | none | Discogs API：CD、2020-09-22、嘿豹工作室、主線目視與盤名相符 | ok |
 
 ## c49（3 張）
 
