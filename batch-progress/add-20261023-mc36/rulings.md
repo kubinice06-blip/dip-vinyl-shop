@@ -13,3 +13,9 @@
 - 掛名：《Yankees》主名 Derek Bailey, George Lewis & John Zorn（Bailey 為 mc28 藝人）、《Attention Span》主名 Ostertag（Frith 為 mc33 藝人），都是三人共同署名作、池中無，收。
 - **MB flag**：Mars & DNA《John Gavanti: An Operetta》MB release-group 無日期與廠牌；年份照維基 1980（Trouser Press 記 1981），研究層核對。
 - 跨工作階段去重：對 origin 近三天 60 個 `claude/*` 分支的 seed＋卡單＋curation 去重 0 撞。
+
+## 研究 e 組
+- 19681 Fresques sur les parois secrètes du crâne 的 label／country 推翻：Sickroom（2004）重發的是同名首作，Fresques 首發是法國 Ruminance RUM018（2003-01-21，Discogs），MB 另記美國 Frenetic FR016；建議 label 改 Ruminance、country fr。
+- 19682 Ahleuchatistas《The Same and the Other》label 推翻：Cuneiform 不成立，首發 Noreaster Failed Industries nfi-007（2004），Tzadik TZ 8047 為 2008 重發。
+- 19683 Ahleuchatistas 兩張都是吉他／貝斯／鼓三人團（Discogs 演奏名單），Discogs 標 Noise／Punk，吉他音色無來源：moodGuess 存疑（重／躁風險），建議試聽。Cheval de Frise 兩張無貝斯，樂評提「黑暗金屬」但無失真牆證據，Fresques 僅標弱存疑。
+- 19684 Cheval de Frise 首作卡單 label 空白，可填 Sonore（SON-10，2000，法國）。
