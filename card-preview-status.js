@@ -3402,4 +3402,7 @@ window.DipPreviewStatus = Object.freeze({
   "ned rothenberg|the crux: selected solo wind works (1989–1992)": "unavailable",
   "ivo perelman - matthew shipp|corpo": "unavailable",
   "wolfgang fuchs|so - und? so!": "unavailable",
+  "shulman|in search of a meaningful moment": "unavailable",
+  "jürg wyttenbach|scelsi: aion - pfhat - konx-om-pax": "unavailable",
+  "jürg wyttenbach|scelsi: hurqualia - hymnos - chukrum": "unavailable",
 });

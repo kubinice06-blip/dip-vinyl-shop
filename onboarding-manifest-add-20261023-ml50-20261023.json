@@ -1,0 +1,1605 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-ml50",
+ "batchNote": "薄細項策展線（add-20261023-ml50）",
+ "createdAt": "2026-10-23T20:09:05Z",
+ "albums": [
+  {
+   "artist": "Hotel Neon",
+   "album": "Vanishing Forms",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "fd30cda4-3758-4507-9a09-9782de65ee22",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 drone／厚墊 ambient：2019 年作，處理吉他與鍵盤長音構成厚實和聲雲，慢、溫、包覆，屬 Home Normal／Archives 一路暖 drone。｜策展無疑點｜MB release-group fd30cda4-3758-4507-9a09-9782de65ee22：title「Vanishing Forms」、Album、first-release-date 2019-04-15、artist-credit「Hotel Neon」。證據：https://musicbrainz.org/release-group/fd30cda4-3758-4507-9a09-9782de65ee22 https://coverartarchive.org/release-group/fd30cda4-3758-4507-9a09-9782de65ee22/front https://music.apple.com/us/album/vanishing-forms/1459135150",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fd30cda4-3758-4507-9a09-9782de65ee22/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 3180,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 3180）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一記鼓都沒有，低頻卻一直在搏動。費城三人組 Hotel Neon 組於 2013 年，成員是 Andrew 與 Michael Tasselmyer、Steven Kemner，一直做緩慢的 drone。樂評形容它是沒有打擊樂的節奏、沒有鼓的舞，殘響裡的和聲像氣體般彌漫。那些聲響的核心帶著脆弱感，整體冥想而澄澈，像雲層後透出的光。全盤八首、總長 47 分鐘，三人 2019 年 4 月 15 日交給 Archives，也是他們在該廠牌的第二號作品。",
+    "sourceUrls": [
+     "https://hotelneon.bandcamp.com/album/vanishing-forms",
+     "https://www.discogs.com/release/13485747",
+     "https://www.fluid-radio.co.uk/?p=111183",
+     "https://www.discogs.com/artist/3978482",
+     "https://www.discogs.com/master/1538792",
+     "https://musicbrainz.org/release-group/fd30cda4-3758-4507-9a09-9782de65ee22"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/56/f1/70/56f17000-087a-4c17-3570-36adf285c179/mzaf_4102176554910058377.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "1459135150",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1459135150「Hotel Neon《Vanishing Forms》」：曲目 8/9 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈The Time Between〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Celer",
+   "album": "Engaged Touches",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "06fef59e-9119-3157-9ba1-06d37a23345f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 drone／厚墊 ambient：Will Long 與 Danielle Baquet 夫妻檔時期的浪漫暖 loop drone，Home Normal 發行，取樣和聲清楚、包覆感厚。｜⚠ Celer 偏 drone，旋律清楚度中等，z 可能被評 0.2–0.4；研究層請查樂評冷暖字。｜MB release-group 06fef59e-9119-3157-9ba1-06d37a23345f：title「Engaged Touches」、Album、first-release-date 2009-04-17、artist-credit「Celer」。證據：https://musicbrainz.org/release-group/06fef59e-9119-3157-9ba1-06d37a23345f https://coverartarchive.org/release-group/06fef59e-9119-3157-9ba1-06d37a23345f/front https://music.apple.com/us/album/engaged-touches-expanded-and-remastered-2024/1728900319 https://www.discogs.com/master/266958",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/06fef59e-9119-3157-9ba1-06d37a23345f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 8705,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 8705）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "相隔兩年的兩段錄音，併成一張 67 分鐘的唱片。Celer 是 Will Long 與 Danielle Baquet-Long 在 2005 年組成的 drone 雙人計畫。錄音時間落在 2006 年 6 月與 2008 年 5 月，鋼琴、弦樂與磁帶都掛上兩人的名字。成品切成兩大段，前段約 26 分鐘，後段約 41 分鐘。東京廠牌 Home Normal 給它的編號是第 2 號，2009 年 4 月 17 日發行。Baquet-Long 在同年 7 月 8 日辭世。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1697275",
+     "https://en.wikipedia.org/wiki/Home_Normal",
+     "https://en.wikipedia.org/wiki/Celer_(group)",
+     "https://www.discogs.com/master/266958",
+     "https://celer.bandcamp.com/album/engaged-touches",
+     "https://musicbrainz.org/release-group/06fef59e-9119-3157-9ba1-06d37a23345f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/43/aa/34/43aa34c6-d2d5-f76e-a8a7-e0fc543b37e1/mzaf_4223838133598262345.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "1438034556",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1438034556「Celer《Engaged Touches》」：主線人工配：Apple《Engaged Touches》9 軌為 MB 原盤 Part 1／Part 2 兩大段的分軌版（2024 擴充版不採），取第 1 軌〈A Once and Meaningful Life〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Benoît Pioulard",
+   "album": "Lignin Poise",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9bc249b9-b8f5-4343-830a-fb77e9992f94",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 drone／厚墊 ambient：2017 年 ambient 盤，延續《Sonnet》的磁帶 loop 暖霧，和聲片段清楚。｜策展無疑點｜MB release-group 9bc249b9-b8f5-4343-830a-fb77e9992f94：title「Lignin Poise」、Album、first-release-date 2017-09-08、artist-credit「Benoît Pioulard」。證據：https://musicbrainz.org/release-group/9bc249b9-b8f5-4343-830a-fb77e9992f94 https://coverartarchive.org/release-group/9bc249b9-b8f5-4343-830a-fb77e9992f94/front https://music.apple.com/us/album/lignin-poise/1436889195",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9bc249b9-b8f5-4343-830a-fb77e9992f94/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1931,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1931）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1931），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "封面那張 Polaroid，是他本人在哥倫比亞河谷拍的。1984 年生的美國多樂器演奏者 Meluch，用 Benoît Pioulard 之名發表作品。照片拍於 2016 年 10 月 4 日，用的是 SX70 底片。這些聲音取材自卡斯卡迪亞的水與森林，要喚起潮濕多霧的河谷峽谷。錄音從 2016 年 9 月延續到隔年 1 月，地點在西雅圖，吉他與貝斯、人聲、磁帶和環境錄音疊成帶 shoegaze 氣味的長音。2017 年由波特蘭 Beacon Sound 發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/1238757",
+     "https://beaconsound.bandcamp.com/album/lignin-poise",
+     "https://en.wikipedia.org/wiki/Benoit_Pioulard",
+     "https://musicbrainz.org/release-group/9bc249b9-b8f5-4343-830a-fb77e9992f94"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b4/8a/72/b48a7233-7e97-f7ad-365f-87541a73ead0/mzaf_8558894274004103349.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "1436889195",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1436889195「Benoît Pioulard《Lignin Poise》」：曲目 6/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Hawk Moth Mirage〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dettinger",
+   "album": "Oasis",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d0835eb2-77ad-38d5-a9c4-19548857996e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 drone／厚墊 ambient：Dettinger 第二張，更明亮的暖霧 loop，和聲旋律清楚，包覆感厚。｜策展無疑點｜MB release-group d0835eb2-77ad-38d5-a9c4-19548857996e：title「Oasis」、Album、first-release-date 2000-08-16、artist-credit「Dettinger」。證據：https://musicbrainz.org/release-group/d0835eb2-77ad-38d5-a9c4-19548857996e https://coverartarchive.org/release-group/d0835eb2-77ad-38d5-a9c4-19548857996e/front https://music.apple.com/us/album/oasis-remastered-2024/1736023282 https://www.discogs.com/master/62381",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d0835eb2-77ad-38d5-a9c4-19548857996e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 3853,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 3853）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "七首曲子，共用同一個名字。科隆製作人 Olaf Dettinger 把第二張專輯交給 Kompakt，2000 年 8 月 16 日推出。那個名字是 Untitled，每首介於 3 分半與 7 分鐘之間，總共約 41 分鐘。它延續並精煉了前作《Intershop》的調色盤，兩張同被視為替 Pop Ambient 定調的作品；質地溫暖、夢幻，像 drone 又帶著節奏。直到 2024 年 4 月 26 日重製母帶出黑膠，曲名才改成 Oasis 1 到 7。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/23890",
+     "https://dettinger.bandcamp.com/album/oasis-remastered-2024",
+     "https://api.discogs.com/masters/62381",
+     "https://en.wikipedia.org/wiki/Dettinger",
+     "https://musicbrainz.org/release-group/d0835eb2-77ad-38d5-a9c4-19548857996e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/d6/47/f1/d647f1cc-4cc6-df27-71a5-b7d24c456ca2/mzaf_1640334444475360622.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "1736023282",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1736023282「Dettinger《Oasis (Remastered 2024)》」：主線人工配：MB 原盤 7 首 [untitled]，Apple《Oasis (Remastered 2024)》Oasis 1–7 對應同序 7 軌，取第 1 軌〈Oasis 1 (Remastered 2024)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hollie Kenniff",
+   "album": "The Quiet Drift",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "462b9fc0-0e4c-4057-be46-14167d6cb8ad",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 drone／厚墊 ambient：Western Vinyl 發行，延續吉他殘響＋人聲長音的暖 ambient，和聲清楚。｜策展無疑點｜MB release-group 462b9fc0-0e4c-4057-be46-14167d6cb8ad：title「The Quiet Drift」、Album、first-release-date 2021-07-16、artist-credit「Hollie Kenniff」。證據：https://musicbrainz.org/release-group/462b9fc0-0e4c-4057-be46-14167d6cb8ad https://coverartarchive.org/release-group/462b9fc0-0e4c-4057-be46-14167d6cb8ad/front https://music.apple.com/us/album/the-quiet-drift/1565223965",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/462b9fc0-0e4c-4057-be46-14167d6cb8ad/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 11096,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 11096）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一家人兩度搬家，從美國西岸一路搬到加拿大。搬家期間，融合 drone 與 dream pop 的 Hollie Kenniff 完成了本作，自己彈吉他和貝斯、操作合成器，也唱無詞人聲。靈感來自 David Lynch 談漂流、釣魚與做夢的一句話。Keith Kenniff（Goldmund）在其中兩首彈鋼琴。音樂描繪她身邊的森林、湖與河，帶著沉靜、耐心的氣質。2021 年 7 月 16 日上市，是她在 Western Vinyl 的第一張。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/19533994",
+     "https://acloserlisten.com/2021/07/13/hollie-kenniff-the-quiet-drift/",
+     "https://www.westernvinyl.com/artists/hollie-kenniff",
+     "https://music.apple.com/us/album/the-quiet-drift/1565223965",
+     "https://musicbrainz.org/release-group/462b9fc0-0e4c-4057-be46-14167d6cb8ad"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/41/b2/8e/41b28e5f-c865-120f-47f5-2461cd460954/mzaf_12776765950208425056.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "1565223965",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1565223965「Hollie Kenniff《The Quiet Drift》」：曲目 9/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Flourish〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hollie Kenniff",
+   "album": "We All Have Places That We Miss",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b07a0447-8d32-45c1-8538-3e91419dfda6",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 drone／厚墊 ambient：以懷舊與思念為題的暖 ambient，吉他殘響與長音墊溫柔包覆。｜策展無疑點｜MB release-group b07a0447-8d32-45c1-8538-3e91419dfda6：title「We All Have Places That We Miss」、Album、first-release-date 2023-02-10、artist-credit「Hollie Kenniff」。證據：https://musicbrainz.org/release-group/b07a0447-8d32-45c1-8538-3e91419dfda6 https://coverartarchive.org/release-group/b07a0447-8d32-45c1-8538-3e91419dfda6/front https://music.apple.com/us/album/we-all-have-places-that-we-miss/1651716777 https://www.allmusic.com/album/mw0003865873",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b07a0447-8d32-45c1-8538-3e91419dfda6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 6631,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 6631）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "祖父母蓋的湖畔小屋賣掉了，她把那些夏天寫成十一首。ambient 音樂人 Hollie Kenniff 第二度與 Western Vinyl 合作的專輯，2023 年 2 月 10 日問世。小屋在安大略，她從嬰兒期一直去到疫情前，家人在疫情期間脫手。這是一張關於記憶、悲傷與家庭的印象式專輯，許多段落寫於她慢性失眠的夜裡。開場〈Shifting Winds〉有悠長的長音、遠方閃爍的吉他，還有合唱般疊起的人聲，〈Salient〉則用上一架走音的舊鋼琴。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/26048596",
+     "https://www.westernvinyl.com/artists/hollie-kenniff",
+     "https://acloserlisten.com/2023/02/09/hollie-kenniff-we-all-have-places-that-we-miss/",
+     "https://api.discogs.com/masters/2973931",
+     "https://musicbrainz.org/release-group/b07a0447-8d32-45c1-8538-3e91419dfda6"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/e1/b4/e7e1b465-cb80-2a4b-7709-0356f32b4106/mzaf_1079087861756475552.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "1651716777",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1651716777「Hollie Kenniff《We All Have Places That We Miss》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Shifting Winds〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mark McGuire",
+   "album": "Living With Yourself",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "11cf3bca-b7d5-4518-80b2-46c9c5d1b77c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "磁帶 loop／吉他殘響暖 ambient：Emeralds 吉他手個人代表作：吉他 loop 層疊與家庭錄音片段，旋律清楚、懷舊溫暖。｜⚠ 吉他 loop 分層清楚，y 可能被評 0.6–0.8。｜MB release-group 11cf3bca-b7d5-4518-80b2-46c9c5d1b77c：title「Living With Yourself」、Album、first-release-date 2010-08-17、artist-credit「Mark McGuire」。證據：https://musicbrainz.org/release-group/11cf3bca-b7d5-4518-80b2-46c9c5d1b77c https://coverartarchive.org/release-group/11cf3bca-b7d5-4518-80b2-46c9c5d1b77c/front https://music.apple.com/us/album/living-with-yourself/1799294560 https://www.discogs.com/master/274430",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/11cf3bca-b7d5-4518-80b2-46c9c5d1b77c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 11948,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 11948）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "1991 到 1998 年的家庭錄音帶，被剪進吉他長音裡。Mark McGuire 1986 年生於克里夫蘭，是 Emeralds 的共同創團成員。那些磁帶錄下他的童年與家人，2009 年才剪輯編排；電吉他和民謠吉他也在那一年於克里夫蘭一帶的家中疊錄。內頁放的是 1964 到 1996 年的家庭舊照，並要人戴耳機聽。奧地利廠牌 Editions Mego 在 2010 年發行，結尾〈Brothers (For Matt)〉加進打擊樂，是最響的一首。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mark_McGuire",
+     "https://en.wikipedia.org/wiki/Emeralds_(band)",
+     "https://www.discogs.com/master/274430",
+     "https://api.discogs.com/releases/2441515",
+     "https://popmatters.com/137098-mark-mcguire-living-with-yourself-2496078529.html",
+     "https://www.thelineofbestfit.com/reviews/albums/mark-mcguire-living-with-yourself-35837",
+     "https://musicbrainz.org/release-group/11cf3bca-b7d5-4518-80b2-46c9c5d1b77c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/11/5d/69/115d69a5-1aba-e082-7ecb-af1a4dfc5b91/mzaf_3958557168477932247.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "1799294560",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1799294560「Mark McGuire《Living With Yourself》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈The Vast Structure Of Recollection〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mark McGuire",
+   "album": "Get Lost",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3995e85f-acd7-485f-bbea-7c6243dcfe26",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "磁帶 loop／吉他殘響暖 ambient：延續吉他 loop 暖 ambient，加入合成墊與人聲，旋律清楚、溫暖迷濛。｜⚠ 同上 y 風險。｜MB release-group 3995e85f-acd7-485f-bbea-7c6243dcfe26：title「Get Lost」、Album、first-release-date 2011-09-27、artist-credit「Mark McGuire」。證據：https://musicbrainz.org/release-group/3995e85f-acd7-485f-bbea-7c6243dcfe26 https://coverartarchive.org/release-group/3995e85f-acd7-485f-bbea-7c6243dcfe26/front https://music.apple.com/us/album/get-lost/1825327204",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3995e85f-acd7-485f-bbea-7c6243dcfe26/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 8236,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 8236）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "最後一首長約 20 分鐘，佔掉將近半張唱片。Emeralds 吉他手 Mark McGuire 單飛的這張，靠延遲吉他 loop 與合成器墊前進。那首〈Firefly Constellations〉裡，合成器爆音慢慢讓位給吉他線，被樂評視為最克制、最精煉的一首。開場〈Get Lost〉從合成器的響亮旋律走到緩慢吉他，再轉成厚重的 fuzz；〈Alma〉疊錄人聲反覆唱短句，像咒語。全盤感傷而溫暖，2011 年 9 月上架，六首約 41 分鐘。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/3995e85f-acd7-485f-bbea-7c6243dcfe26",
+     "https://en.wikipedia.org/wiki/Mark_McGuire",
+     "https://musicbrainz.org/release/a49070f7-09a6-4fbb-a426-4012e365cf19",
+     "https://ra.co/reviews/9786",
+     "https://popmatters.com/152939-mark-mcguire-get-lost-2495901116.html"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/22/b6/fa/22b6faa8-68c1-6825-3d38-025422e04c30/mzaf_15004808335517541204.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "1825327204",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1825327204「Mark McGuire《Get Lost》」：曲目 6/6 對上 MB 原盤（Apple 共 6 軌），取第 1 軌〈Get Lost〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Luke Schneider",
+   "album": "Altar of Harmony",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "123c566a-4a31-495d-a42a-4e56edce4559",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "磁帶 loop／吉他殘響暖 ambient：納許維爾鋼棉手的 ambient 全長，鋼棉長音與殘響疊成溫暖和聲雲。｜策展無疑點｜MB release-group 123c566a-4a31-495d-a42a-4e56edce4559：title「Altar of Harmony」、Album、first-release-date 2020-05-15、artist-credit「Luke Schneider」。證據：https://musicbrainz.org/release-group/123c566a-4a31-495d-a42a-4e56edce4559 https://coverartarchive.org/release-group/123c566a-4a31-495d-a42a-4e56edce4559/front https://music.apple.com/us/album/altar-of-harmony/1854881147 https://www.discogs.com/master/1760918",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/123c566a-4a31-495d-a42a-4e56edce4559/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 3486,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 3486）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "每個聲音都來自一把 1967 年的 pedal steel。納許維爾 session 樂手 Luke Schneider 1980 年生於俄亥俄，那把琴是 Emmons Push/Pull，經他重度處理成長音與合唱般的墊。點子來自隨 Margo Price 巡演時戴著耳機聽 ambient，他想做一張私人壓製式的新世紀唱片。〈Umbra〉用上 glitch 節奏，整張被形容為令人安心。2020 年 5 月 15 日由 Third Man 發行。",
+    "sourceUrls": [
+     "https://thirdmanrecords.com/blogs/news/renowned-nashville-pedal-steel-player-luke-schneider-digitally-releases-new-album-altar-of-harmony-today-via-third-man-records",
+     "https://daily.bandcamp.com/features/luke-schneider-altar-of-harmony-interview",
+     "https://musicbrainz.org/release-group/123c566a-4a31-495d-a42a-4e56edce4559"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/68/82/9f/68829f92-3879-6de8-5f58-1bcd84abc1c2/mzaf_11365388194503238206.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "1854881147",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1854881147「Luke Schneider《Altar of Harmony》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈anteludium〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "SUSS",
+   "album": "Ghost Box",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b342d63f-6d06-4f1d-b7dc-65b624de9466",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "磁帶 loop／吉他殘響暖 ambient：首張全長，西部吉他與合成墊的 ambient country，溫暖慢。｜⚠ 同上。｜MB release-group b342d63f-6d06-4f1d-b7dc-65b624de9466：title「Ghost Box」、Album、first-release-date 2018-02-02、artist-credit「SUSS」。證據：https://musicbrainz.org/release-group/b342d63f-6d06-4f1d-b7dc-65b624de9466 https://coverartarchive.org/release-group/b342d63f-6d06-4f1d-b7dc-65b624de9466/front https://music.apple.com/us/album/ghost-box-expanded/1436080100",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b342d63f-6d06-4f1d-b7dc-65b624de9466/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 31988,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 31988）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "幾位新浪潮老將，用曼陀林和合成器做起 ambient。SUSS 由 Bob Holmes 與 Gary Leib 創團，兩人 1980 年代待過鄉村味新浪潮團 Rubber Rodeo；吉他手 Pat Irwin 則出身 B-52's。Holmes 想用傳統樂器做 ambient，這條路數被稱為 ambient country。曼陀林、pedal steel 和合成器 looper 全浸在殘響裡。2018 年 2 月，樂團把它放在自家的 EVP Recordings 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/b342d63f-6d06-4f1d-b7dc-65b624de9466",
+     "https://suss.bandcamp.com/album/ghost-box-expanded",
+     "https://www.qobuz.com/us-en/interpreter/suss/652544",
+     "https://www.allaboutjazz.com/ghost-box-expanded-suss-northern-spy-records-review-by-mark-sullivan.php"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fd/7b/70/fd7b70f1-b86e-e9f0-db62-3d12bc566e57/mzaf_13944665860568532353.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "1436080100",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1436080100「SUSS《Ghost Box (Expanded)》」：曲目 7/7 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Wichita〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Michael Brook",
+   "album": "Hybrid",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "1696441a-25cd-32df-aad8-9ba367ea658c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "磁帶 loop／吉他殘響暖 ambient：Eno、Lanois 共製的 infinite guitar ambient，吉他長音延音與殘響厚，旋律清楚。｜⚠ Eno 系 ambient 池中多判輕；若評輕可汰。MB 掛名含 Eno & Lanois。｜MB release-group 1696441a-25cd-32df-aad8-9ba367ea658c：title「Hybrid」、Album、first-release-date 1985、artist-credit「Michael Brook with Brian Eno & Daniel Lanois」。證據：https://musicbrainz.org/release-group/1696441a-25cd-32df-aad8-9ba367ea658c https://coverartarchive.org/release-group/1696441a-25cd-32df-aad8-9ba367ea658c/front https://music.apple.com/us/album/hybrid/714609028 https://www.discogs.com/master/32575",
+    "queryAlias": "Michael Brook with Brian Eno & Daniel Lanois"
+   },
+   "research": {
+    "suggestedYear": 1985,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1696441a-25cd-32df-aad8-9ba367ea658c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 15066,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 15066）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一個音可以無限延長，這把吉他由他發明。多倫多出身的 Michael Brook 原本在 Lanois 兄弟經營的工作室當工程師。他用回授線圈做出 infinite guitar，1985 年的首張個人專輯是它第一次較受矚目的亮相。製作人一欄寫著 Brook、Brian Eno、Daniel Lanois 三人；編制另有 mbira 與 conga，樂評從中聽出非洲鼓的影子。後來他也替 The Edge 做了一把，那把琴錄進了〈With or Without You〉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Hybrid_(Michael_Brook_album)",
+     "https://en.wikipedia.org/wiki/Infinite_guitar",
+     "https://en.wikipedia.org/wiki/Michael_Brook",
+     "https://www.discogs.com/master/32575",
+     "https://musicbrainz.org/release-group/1696441a-25cd-32df-aad8-9ba367ea658c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f6/c3/c9/f6c3c94e-aef8-03dd-8c16-f50c2688e153/mzaf_1252722495262042235.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "714609028",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 714609028「Michael Brook《Hybrid》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Hybrid〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Robin Guthrie and Mark Gardener",
+   "album": "Universal Road",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "bd64944a-0cb1-4d0c-85ee-e3d1322ebbc0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "磁帶 loop／吉他殘響暖 ambient：Guthrie 與 Ride 的 Mark Gardener 合作，Cocteau 式 chorus 吉他霧配柔聲，池中 Guthrie 器樂盤全落恍惚。｜策展無疑點｜MB release-group bd64944a-0cb1-4d0c-85ee-e3d1322ebbc0：title「Universal Road」、Album、first-release-date 2015-03-23、artist-credit「Robin Guthrie and Mark Gardener」。證據：https://musicbrainz.org/release-group/bd64944a-0cb1-4d0c-85ee-e3d1322ebbc0 https://coverartarchive.org/release-group/bd64944a-0cb1-4d0c-85ee-e3d1322ebbc0/front https://music.apple.com/us/album/universal-road/969057004 https://www.allmusic.com/album/mw0002815413 https://www.discogs.com/master/857017",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bd64944a-0cb1-4d0c-85ee-e3d1322ebbc0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 200,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 200）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 200），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "陪父親走完最後一段路，這段經歷化作一首歌。兩人分別來自 Ride 與 Cocteau Twins，那首歌是 Mark Gardener 寫的標題曲〈Universal Road〉。繼 2012 年《The Places We Go》，他和 Robin Guthrie 再度合作，2015 年 3 月由 Guthrie 自己的 Soleil Après Minuit 發行。這張 dream pop 重在明確的旋律與歌曲結構，迴響浸透的吉他替 Gardener 層疊的和聲搭框架。",
+    "sourceUrls": [
+     "https://www.drownedinsound.org/archive-album-review-robin-guthrie-and-mark-gardener-universal-road-4148865/",
+     "https://darla.com/products/robin-guthrie-mark-gardener-universal-road",
+     "https://www.wbez.org/stories/two-dream-pop-legends-join-forces/3c42e799-34d1-4442-b4f9-385f83cf7472",
+     "https://northerntransmissions.com/interview-with-mark-gardener",
+     "https://en.wikipedia.org/wiki/Robin_Guthrie",
+     "https://en.wikipedia.org/wiki/Mark_Gardener",
+     "https://musicbrainz.org/release-group/bd64944a-0cb1-4d0c-85ee-e3d1322ebbc0"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7a/e1/1f/7ae11f95-fadd-3923-c513-8f9d557f6596/mzaf_17398853743177431060.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "969057004",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 969057004「Robin Guthrie & Mark Gardener《Universal Road》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Universal Road〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Robin Guthrie",
+   "album": "Pearldiving",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "745e6f17-b644-41d8-88c3-d342870f3145",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "磁帶 loop／吉他殘響暖 ambient：Guthrie 器樂 ambient 吉他盤，延續《Emeralds》《Fortune》（池中恍惚）的暖 chorus 霧。｜策展無疑點｜MB release-group 745e6f17-b644-41d8-88c3-d342870f3145：title「Pearldiving」、Album、first-release-date 2021-11-12、artist-credit「Robin Guthrie」。證據：https://musicbrainz.org/release-group/745e6f17-b644-41d8-88c3-d342870f3145 https://coverartarchive.org/release-group/745e6f17-b644-41d8-88c3-d342870f3145/front https://music.apple.com/us/album/pearldiving/1590850222 https://www.allmusic.com/album/mw0003612480 https://www.discogs.com/master/2377801",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/745e6f17-b644-41d8-88c3-d342870f3145/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 8100,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 8100）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "十首新曲裡的每把樂器，都出自他一雙手。Robin Guthrie 的樂團 Cocteau Twins 在 1998 年解散後，他轉做個人作品，2001 年起定居法國。到了 2021 年 11 月，他交出《Pearldiving》，自認是繼《Fortune》之後第一張完整長度的器樂專輯。主打很難挑，他最後先放出〈Les Amourettes〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/2377801",
+     "https://robinguthrie.bandcamp.com/album/pearldiving",
+     "https://en.wikipedia.org/wiki/Robin_Guthrie",
+     "https://musicbrainz.org/release-group/745e6f17-b644-41d8-88c3-d342870f3145"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/51/8f/36/518f36b5-8e59-4d81-4b8f-7befc20d09fa/mzaf_4844941101196180362.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "1590850222",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1590850222「Robin Guthrie《Pearldiving》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Ivy〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Orb featuring David Gilmour",
+   "album": "Metallic Spheres",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "02050e51-32a2-4fb2-a2ac-90a4f1e8b585",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 ambient dub／dub 化慢 downtempo：The Orb 與 David Gilmour 的長篇 ambient dub，dub 低音與回音配 Gilmour 溫暖吉他旋律。｜⚠ Orb 池中冷暖不一；以 Gilmour 旋律主導判暖。｜MB release-group 02050e51-32a2-4fb2-a2ac-90a4f1e8b585：title「Metallic Spheres」、Album、first-release-date 2010-10-08、artist-credit「The Orb featuring David Gilmour」。證據：https://musicbrainz.org/release-group/02050e51-32a2-4fb2-a2ac-90a4f1e8b585 https://coverartarchive.org/release-group/02050e51-32a2-4fb2-a2ac-90a4f1e8b585/front https://music.apple.com/us/album/metallic-spheres/395507386 https://www.allmusic.com/album/mw0002037815 https://www.discogs.com/master/280395",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/02050e51-32a2-4fb2-a2ac-90a4f1e8b585/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 11499,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 11499）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "吉他進棚只待一天，那首長曲後來撐起全盤。應邀補彈吉他的是 David Gilmour，起因是倫敦 ambient 與 dub DJ 起家的 The Orb 重混了他的網路單曲。Youth 的錄音室在 2009 年 6 月錄下那首長曲，再由 Youth 與 Alex Paterson 擴寫。成品分成兩面，各含五個樂章，Gilmour 彈電吉他與 lap steel。節奏感來自長段落的緩慢漂移，聽不到可供報拍的 kick beat。唱片到 2010 年 10 月才正式推出。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Metallic_Spheres",
+     "https://www.discogs.com/release/2513045-The-Orb-Featuring-David-Gilmour-Metallic-Spheres",
+     "https://www.prnewswire.com/news-releases/the-orb-featuring-david-gilmours-metallic-spheres-to-be-celebrated-through-original-laser-show-and-appearances-by-the-orb-103943418.html",
+     "https://www.avclub.com/the-orb-featuring-david-gilmour-metallic-spheres-1798166137",
+     "https://www.popmatters.com/131182-the-orb-feat-david-gilmour-metallic-spheres-2496137088.html",
+     "https://en.wikipedia.org/wiki/The_Orb",
+     "https://musicbrainz.org/release-group/02050e51-32a2-4fb2-a2ac-90a4f1e8b585"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c9/ca/e3/c9cae3e1-6014-77db-685e-2e9c141620ee/mzaf_4593153706839608993.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "395507386",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 395507386「The Orb & David Gilmour《Metallic Spheres》」：主線人工配：Apple 原版《Metallic Spheres》Metallic Side／Spheres Side 兩大段對上 MB 原盤（《In Colour》2023 重製版不採），取第 1 軌〈Metallic Side (Stereo Version)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bluetech",
+   "album": "Sines and Singularities",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "fa730f7a-aa32-3f37-8036-3f60689b3a71",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 ambient dub／dub 化慢 downtempo：psy-dub 代表作：dub 低音與回音、glitch 細節，合成旋律溫暖。｜⚠ glitch 細節多，z 可能中性。｜MB release-group fa730f7a-aa32-3f37-8036-3f60689b3a71：title「Sines and Singularities」、Album、first-release-date 2005-12-05、artist-credit「Bluetech」。證據：https://musicbrainz.org/release-group/fa730f7a-aa32-3f37-8036-3f60689b3a71 https://coverartarchive.org/release-group/fa730f7a-aa32-3f37-8036-3f60689b3a71/front https://music.apple.com/us/album/sines-and-singularities-2020-remastered/1797789661",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2005,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fa730f7a-aa32-3f37-8036-3f60689b3a71/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 56223,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 56223）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "跑完大量巡演，他回頭交出一張內省的第二作。以西雅圖為基地的 Bluetech，曲風橫跨氛圍與 downtempo，向來以有機元素搭配數位製作著稱。Aleph Zero 在 2005 年 12 月替他發行《Sines and Singularities》，11 首串成約 78 分鐘。整體放鬆而平靜，把他慣有的太空感和較可舞的 downtempo 混在一起。中段夾著兩首替別人做的重混，結尾〈A Garland of Stars〉則配上 Rena Jones 的大提琴。",
+    "sourceUrls": [
+     "https://bluetech.bandcamp.com/album/sines-and-singularities",
+     "https://www.discogs.com/release/576739",
+     "https://www.discogs.com/master/1503440",
+     "https://bluetech.bandcamp.com/music",
+     "https://musicbrainz.org/release-group/fa730f7a-aa32-3f37-8036-3f60689b3a71"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/65/96/38/65963886-275f-2ff0-b245-d42e29066520/mzaf_1100358217434098044.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "1797789661",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1797789661「Bluetech《Sines and Singularities (2020 Remastered)》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Enter the Lovely (2020 Remastered)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Shulman",
+   "album": "In Search of a Meaningful Moment",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2af1ce84-629c-32a0-9708-ddbee68b5d53",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 ambient dub／dub 化慢 downtempo：以色列 psy-chill 代表作，dub 低音與回音配吉他旋律，溫暖。｜策展無疑點｜MB release-group 2af1ce84-629c-32a0-9708-ddbee68b5d53：title「In Search of a Meaningful Moment」、Album、first-release-date 2003-12-17、artist-credit「Shulman」。證據：https://musicbrainz.org/release-group/2af1ce84-629c-32a0-9708-ddbee68b5d53 https://coverartarchive.org/release-group/2af1ce84-629c-32a0-9708-ddbee68b5d53/front https://www.discogs.com/master/13908",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2003,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2af1ce84-629c-32a0-9708-ddbee68b5d53/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 9324,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 9324）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "沙漠、海洋、寺廟與城市，被編進一場白日夢。以色列二人組 Shulman 由 Yaniv Shulman 與 Omri Harpaz 組成，兩人合寫、製作並親手混音。繼 2002 年的首作，Aleph Zero 2003 年 12 月出版了他們的第二張，八首長達 75 分鐘左右，五首超過 10 分鐘。廠方想把東方神祕主義與現代西方感性揉在一起：下節奏的迷幻樂裡，催眠般的節拍配上原聲樂器，曲子緩慢演進。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/236012",
+     "https://musicbrainz.org/release-group/2af1ce84-629c-32a0-9708-ddbee68b5d53",
+     "https://www.discogs.com/artist/27871",
+     "https://alephzerorecords.bandcamp.com/album/in-search-of-a-meaningful-moment"
+    ],
+    "note": "薄細項策展線卡牌版：研究（partial）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "Apple 藝人 Shulman（477749）目錄查無此盤，標 unavailable"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Stick Figure",
+   "album": "Set in Stone",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e91c47f1-a21a-448c-98f2-b2b2e4ee2ffc",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 ambient dub／dub 化慢 downtempo：Stick Figure 突破作，慢而厚的 dub-reggae，重低音與回音、旋律清楚。｜策展無疑點｜MB release-group e91c47f1-a21a-448c-98f2-b2b2e4ee2ffc：title「Set in Stone」、Album、first-release-date 2015-11-13、artist-credit「Stick Figure」。證據：https://musicbrainz.org/release-group/e91c47f1-a21a-448c-98f2-b2b2e4ee2ffc https://coverartarchive.org/release-group/e91c47f1-a21a-448c-98f2-b2b2e4ee2ffc/front https://music.apple.com/us/album/set-in-stone/1045767173 https://www.allmusic.com/album/mw0002881566 https://www.discogs.com/master/1002624",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e91c47f1-a21a-448c-98f2-b2b2e4ee2ffc/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 126003,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 126003）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一整支雷鬼樂團的聲音，多半出自他一雙手。Stick Figure 是 Scott Woodruff 2005 年創立的美國雷鬼／dub 樂團計畫。《Set in Stone》的 14 首，是他在加州聖塔克魯茲附近親手搭起的錄音棚裡磨了三年才完成，2015 年 11 月上市。〈One of Those Days〉由滾動的貝斯推著走，〈Shadow〉則轉進一段濃烈的 dubwise 處理。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Stick_Figure",
+     "https://thepier.org/?p=90516",
+     "https://thepier.org/review-stick-figure-set-in-stone/",
+     "https://www.discogs.com/master/1002624",
+     "https://musicbrainz.org/release-group/e91c47f1-a21a-448c-98f2-b2b2e4ee2ffc"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/de/c6/76dec66b-2eaa-66fa-c971-0be537a13ba1/mzaf_13218984928137605589.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "1045767173",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1045767173「Stick Figure《Set in Stone》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Fire on the Horizon〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Halftribe",
+   "album": "For the Summer, or Forever",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "eee284cb-f2a7-47b7-be64-1bd4dc9cd922",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 drone／厚墊 ambient：Dronarivm 發行的暖 drone：空氣感合成長音與溫和田野錄音，廠牌文案明說 warm、nostalgic。｜策展無疑點｜MB release-group eee284cb-f2a7-47b7-be64-1bd4dc9cd922：title「For the Summer, or Forever」、Album、first-release-date 2018-05-18、artist-credit「Halftribe」。證據：https://dronarivm.bandcamp.com/album/for-the-summer-or-forever https://musicbrainz.org/release-group/eee284cb-f2a7-47b7-be64-1bd4dc9cd922 https://coverartarchive.org/release-group/eee284cb-f2a7-47b7-be64-1bd4dc9cd922/front https://music.apple.com/us/album/for-the-summer-or-forever/1381410342",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/eee284cb-f2a7-47b7-be64-1bd4dc9cd922/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 104030,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 104030）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "內頁說它替夏天配樂，也可能是替永恆。Halftribe 是英國的 drone ambient 個人計畫，本作已是第三張，2018 年 5 月列入 Dronarivm 的目錄，收 12 首、全長近 49 分鐘。Dronarivm 將它定位成為夏天而做：音色溫暖、如夢、帶著嗡鳴，輕盈合成器鋪在平靜的田野錄音上。標題曲從田野錄音滑入氛圍，聽得見流水與鳥鳴；越往後聽，時間感越是鬆動，終至瓦解。",
+    "sourceUrls": [
+     "https://dronarivm.bandcamp.com/album/for-the-summer-or-forever",
+     "https://musicbrainz.org/release-group/eee284cb-f2a7-47b7-be64-1bd4dc9cd922",
+     "https://acloserlisten.com/2018/05/29/ten-tracks-that-sound-like-summer-2/",
+     "https://www.discogs.com/master/1370115"
+    ],
+    "note": "薄細項策展線卡牌版：研究（partial）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/aa/71/a4/aa71a4a2-b6a6-79a7-0ae9-58503a2a385e/mzaf_14876352674558190598.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "1381410342",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1381410342「Halftribe《For the Summer, Or Forever》」：曲目 10/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Sacred〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Wil Bolton",
+   "album": "Rusted in the Salt Air",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "489a696d-4d44-4685-8169-7a6f073d2f2f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 drone／厚墊 ambient：Wil Bolton 2025 年作，溫暖陽光般的 loop 長音配海港聲景，樂評直寫 warm、sunny。｜⚠ 有水滴般的輕打擊片段，樂評另一句提到 dark clouds；y 可能貼 0.8。｜MB release-group 489a696d-4d44-4685-8169-7a6f073d2f2f：title「Rusted in the Salt Air」、Album、first-release-date 2025-08-01、artist-credit「Wil Bolton」。證據：https://acloserlisten.com/2025/07/31/bolton-onodera/ https://musicbrainz.org/release-group/489a696d-4d44-4685-8169-7a6f073d2f2f https://coverartarchive.org/release-group/489a696d-4d44-4685-8169-7a6f073d2f2f/front https://homenormal.bandcamp.com/album/rusted-in-the-salt-air https://music.apple.com/us/album/rusted-in-the-salt-air/1797868670",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/489a696d-4d44-4685-8169-7a6f073d2f2f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 176,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 176）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 176），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "封面站著一座核電廠的白色圓頂。Wil Bolton 用 Buchla、Serge 合成器與彈簧殘響做 ambient，那座圓頂屬於 Sizewell B 核電廠。盤名取自 W. G. Sebald 小說《土星之環》對 Orford Ness 的描寫，素材則是 Suffolk 海岸的環境聲與無線電波。溫暖、陽光般的循環碰上水滴般的打擊聲，最放鬆的段落像海邊一個靜止的暖日。Home Normal 在 2025 年 8 月推出，共收 7 首。",
+    "sourceUrls": [
+     "https://homenormal.bandcamp.com/album/rusted-in-the-salt-air",
+     "https://acloserlisten.com/2025/07/31/bolton-onodera/",
+     "https://musicbrainz.org/release-group/489a696d-4d44-4685-8169-7a6f073d2f2f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/15/5c/b6/155cb65a-1812-b88e-dc63-ed6d31339fb4/mzaf_2724786598323195215.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "1797868670",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1797868670「Wil Bolton《Rusted in the Salt Air》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈The Reed Beds Shimmered〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "David Cordero & Rhucle",
+   "album": "Summer Chronicles",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9ad694a9-e51c-4d8f-ae18-04382578ae15",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 drone／厚墊 ambient：西班牙 David Cordero 與日本 Rhucle 合作的夏日主題暖 ambient，柔和長音與自然聲。｜⚠ warm 字眼描述情境多於音色；Cordero 偶用鋼琴。｜MB release-group 9ad694a9-e51c-4d8f-ae18-04382578ae15：title「Summer Chronicles」、Album、first-release-date 2023-11-03、artist-credit「David Cordero & Rhucle」。證據：https://homenormal.bandcamp.com/album/summer-chronicles https://musicbrainz.org/release-group/9ad694a9-e51c-4d8f-ae18-04382578ae15 https://coverartarchive.org/release-group/9ad694a9-e51c-4d8f-ae18-04382578ae15/front https://music.apple.com/us/album/summer-chronicles/1712722569",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9ad694a9-e51c-4d8f-ae18-04382578ae15/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 107,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 107）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 107），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "隔著兩座城市，兩人輪流改寫對方的草稿。西班牙的 David Cordero 與日本的 Rhucle，一個在卡迪斯、一個在東京，檔案來回寄送、反覆編輯。素材是兩人對 2022 年夏天的回憶，做成反映自然的溫和聲音。2023 年 11 月交給 Home Normal 出版，8 首合計約 36 分鐘。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/9ad694a9-e51c-4d8f-ae18-04382578ae15",
+     "https://homenormal.bandcamp.com/album/summer-chronicles",
+     "https://www.discogs.com/release/28967812"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/75/74/7f/75747f11-296f-4dd5-41c7-5d447e470f14/mzaf_10021043082102380623.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "1712722569",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1712722569「David Cordero & Rhucle《Summer Chronicles》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Alone Into the Crowd〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "'t Geruis",
+   "album": "The Kindest Encounters",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4730ef1a-1c43-467c-ac8e-db255e205bc0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 drone／厚墊 ambient：Home Normal 2025 年作，類比 ambient 在旋律與噪聲間游移，塵封記憶般的質地，廠牌直寫 deeply warm。｜策展無疑點｜MB release-group 4730ef1a-1c43-467c-ac8e-db255e205bc0：title「The Kindest Encounters」、Album、first-release-date 2025-07-11、artist-credit「’t Geruis」。證據：https://homenormal.bandcamp.com/album/the-kindest-encounters https://musicbrainz.org/release-group/4730ef1a-1c43-467c-ac8e-db255e205bc0 https://coverartarchive.org/release-group/4730ef1a-1c43-467c-ac8e-db255e205bc0/front https://www.discogs.com/release/34085887 https://music.apple.com/us/album/the-kindest-encounters/1817323254",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4730ef1a-1c43-467c-ac8e-db255e205bc0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 129,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 129）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 129），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "荷蘭語、法語和英語，輪流寫進曲名裡。2023 年已在 Quiet Details 發過《Terre, Poussière》的 't Geruis，專做類比 ambient。本作 2025 年 7 月在 Home Normal 問世，十首全由 't Geruis 一手完成，聽完約需 45 分鐘。聲音深深溫暖，在旋律與噪聲之間自在游移，被形容成看著褪色彩色照片時湧上的那股懷舊。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/4730ef1a-1c43-467c-ac8e-db255e205bc0",
+     "https://homenormal.bandcamp.com/album/the-kindest-encounters",
+     "https://www.discogs.com/release/34085887"
+    ],
+    "note": "薄細項策展線卡牌版：研究（partial）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/92/91/89/929189be-847d-768f-c7eb-7cd42c9e4998/mzaf_14938752671602165027.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "1817323254",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1817323254「'T Geruis《The Kindest Encounters》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈towards home, dark blue〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "citrine",
+   "album": "line of sight",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "1cfef092-ffe7-45c1-9600-e5cabc2102b0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 drone／厚墊 ambient：Home Normal 2025 年作，空靈人聲配 lush 弦樂與低沉貝斯合成長音，慢而厚。｜⚠ 有慢速鑼聲律動；樂迷留言用 fragile；z 可能中性。｜MB release-group 1cfef092-ffe7-45c1-9600-e5cabc2102b0：title「line of sight」、Album、first-release-date 2025-09-05、artist-credit「citrine」。證據：https://homenormal.bandcamp.com/album/line-of-sight https://musicbrainz.org/release-group/1cfef092-ffe7-45c1-9600-e5cabc2102b0 https://coverartarchive.org/release-group/1cfef092-ffe7-45c1-9600-e5cabc2102b0/front https://music.apple.com/us/album/line-of-sight/1796337363",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1cfef092-ffe7-45c1-9600-e5cabc2102b0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 120,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 120）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 120），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "空靈人聲與中提琴，由一位成員兼顧。Brad Deschamps 負責低音合成器那低沉的聲響與氛圍織體，另一位成員 Phoebe Dubar 則唱歌、拉中提琴，citrine 的創作是兩人一起來。律動來自緩慢的鑼聲，弦樂厚實華美，被歸為 neo-classical ambient pop。Home Normal 於 2025 年 9 月接手出版。聽眾形容它 fragile、calm。",
+    "sourceUrls": [
+     "https://homenormal.bandcamp.com/album/line-of-sight",
+     "https://musicbrainz.org/release-group/1cfef092-ffe7-45c1-9600-e5cabc2102b0",
+     "https://www.discogs.com/release/37087686"
+    ],
+    "note": "薄細項策展線卡牌版：研究（partial）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/33/8f/77/338f778c-20a1-70a8-04d3-2fb922a67b39/mzaf_17605532692769301401.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T20:09:05Z",
+    "appleCollectionId": "1796337363",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1796337363「citrine《line of sight》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈an opening〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}
