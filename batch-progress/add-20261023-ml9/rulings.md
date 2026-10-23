@@ -61,3 +61,25 @@
 - **14649**（Mad Professor《Dub You Crazy With Love》）：lovers rock 曲目的器樂 dub，內頁文案支持浪漫暖調，速度與低頻無明文，1997 CD 類比或數位未明；輕度存疑。full。
 - **14650**（Bob Andy《Bob Andy's Dub Book》與 The Aggrovators《Kaya Dub》）：兩張皆無聲音描述，status thin，建議主線聽過再決定。Dub Book 1989（維基誤寫 1994），原曲含〈Unchained〉〈Going Home〉，維基稱是 Song Book 的 dub 但發行單列〈Freely〉，來源專輯未明；Kaya Dub 撞名 2007 Attack CD（另一張），卡單釘 1978 Third World LP 十首。
 - 全組 status：8 張 full、3 張 thin（Africa Dub、Bob Andy、Kaya Dub）。推翻策展層：年份 2 處（Earth’s Rightful Ruler、Mystic Warrior）；moodGuess 存疑 10 張（僅 Fire House 輕度），建議汰換或降級者以 Musical Bones、Kung Fu、Rising Sun 為首。
+
+## 研究 c 組（14661–14670）
+- 14661：Wailing Souls《Wailing》策展寫「Junjo 製作」，Discogs 署名執行製作 Linval Thompson、混音 Scientist、伴奏 Roots Radics，Junjo 不在 credit，推翻；因 Scientist 混音（色溫往 0 收），標 moodGuess 存疑。
+- 14662：Barrington Levy《Life Style》製作是 Alvin Ranglin（GG's）、樂隊 Lloyd Parks／Willie Lindo／Winston Wright 加兩位薩克斯風與管樂，不是 Junjo／Roots Radics 的 rub-a-dub；標存疑（可能偏亮、偏愛情歌）。
+- 14663：Levy《Here I Come》是熱門單曲專輯（Jah Screw 製作、Channel One 錄、鍵盤欄有 Synthesizer），非慢情歌，標存疑；原版十首，十二首是後來 CD。
+- 14664：Sugar Minott《African Girl》伴奏是 Gladiators Band／Black Roots Players（有 Syn drum 與合成弦樂），非 Roots Radics；《Herbman Hustling》Discogs 風格標 Dancehall、Sly Dunbar 鼓；《Buy Off the Bar》廠牌實為 Power House（George Phang 製作，MB 的 Sonic Sounds 是壓片廠），三張皆標存疑。
+- 14665：Barry Brown《Step It Up Youthman》是 Bunny Lee／Aggrovators 人聲 roots 盤，單曲為 Jah Shaka 等 sound system 常播，偏快偏冷風險，標存疑。
+- 14666：Augustus Pablo《Eastman Dub》MB 的 1988 是 RAS CD 日期，原為 Tetrack《Let's Get Started》的 dub 版（原版年份來源不一：1980 或 1978），首發年建議主線裁定；Pablo melodica 被 Trouser Press 形容哀愁而非暖，標存疑。
+- 14667：Pablo《Chanting Dub》查不到任何樂評（melodica、濕度、速度皆無來源），status thin，x／y／z 全賴聽感再核。
+- 14668：Wackies《African Roots Act 2》lo-fi（維基百科）有據，混音者取 Hardwax／Discogs 的 Junior Delahaye（Wailer.de 說 Ras Delahaye 未取得原頁）；鼓機與鍵盤、Sibbles 的 Studio One riddim，暖與慢不確定，標存疑。
+- 14669：Bunny Wailer《Dubdsco Vol. 2》九首取自 Sly & Robbie 領軍的《Sings the Wailers》（Harry J），只有〈Worly Girly〉出自《In I Father's House》，非整張 Roots Radics，標存疑；thin。
+- 14670：全組無樂評可取（AllMusic 403、Wikipedia 無專輯頁），聲音事實來自 credits、廠牌／製作人條目與 Trouser Press／Hardwax 文案。facts 條數 9–10，簡體字、千分位、https 皆已程式驗證，qa-batch 全數通過。
+
+## 主線裁定（研究層交件後）
+- **14711**：照研究層的聲音事實汰 18 張（卡單與研究 a–e 檔已移除，原卡存 `dropped-cards.json`）：
+  - **偏快／派對拍（x 不夠靜）**：Augustus Pablo《Rising Sun》（Scientist 混音、多首節奏偏快）、Lee Perry《Kung Fu Meets the Dragon》（功夫題材、口白與打擊樂、短曲）、Prince Fatty《Return of Gringo!》（surf／ska／西部片配樂、短曲、玩笑）、《Prince Fatty Versus the Drunken Gambler》（派對式 uptempo、rockers 快曲）、《Prince Fatty vs. Mungo's Hi-Fi》（他習慣把速度調快、樂評稱開場「把派對帶起來」、實為雙掛名互混盤）、Barry Brown《Step It Up Youthman》（Bunny Lee／Aggrovators、sound system 快冷曲）、Little Tempo《Musical Brain Food》（鋼鼓、薩克斯風輕快）。
+  - **乾淨／亮（y 不夠重）**：Lee Perry《Musical Bones》（其實是 Vin Gordon 長號專輯，Perry 製作「very straight」）、Jacob Miller《Mixed Up Moods》（Inner Circle 全團＋滿鍵盤的流行化雷鬼）、Barrington Levy《Life Style》（製作人是 Alvin Ranglin，管樂編制偏亮，不是 Junjo rub-a-dub）、《Here I Come》（熱門單曲盤、合成器）。
+  - **身分／來歷不清**：Peter Broggs《Cease the War》（實為 1987 RAS，伴奏與混音全查不到）、Sugar Minott《More Sugar Minott》（Studio One 舊錄集結、年份兩源矛盾）、Wailing Souls《Baby Come Rock》（MB 1981 牙買加版 vs Discogs 1983 美版、半數曲目與《Inchpinchers》重疊）、Bob Marley & The Wailers《Soul Revolution Part II》（「Part II」母帶其實是器樂／dub 版，人聲版是《Soul Revolution》，兩者同封面）、Augustus Pablo《Eastman Dub》（MB 1988 是 RAS CD 年，原版年份 1978／1980 兩說）、Lee Perry & Mad Professor《Mystic Warrior》（原版 1989 黑膠，「慢暖厚」無來源）、Triston Palma（六首延伸版、聲音與伴奏全查不到）。
+- **14712**：照研究層改卡單：Augustus Pablo《Earth's Rightful Ruler》年份 1988 → 1982、廠牌 Rockers → Message（1988 是 Shanachie CD；原版 1982 牙買加 Message LP，美版 1983；是有 Hugh Mundell 人聲的 roots 專輯、不是 dub，無管樂）；Rico Rodriguez《That Man Is Forward》→ 2 Tone Records（CHR TT 5005，Reggae Retro 是再版）；Barrington Levy《Poor Man Style》→ Trojan Records（TRLS 209；製作人 Linval Thompson 與 Brad Osborne、Scientist 混音）；Sugar Minott《Buy Off the Bar》→ Power House（George Phang 製作，Sonic Sounds 是壓片廠）。
+- **14713**：照研究層更正製作歸屬（寫作層不得寫 Junjo）：Little John《Reggae Dance》製作 Jah Thomas；Barrington Levy《Teach Me Culture》製作 Levy 與 Helena Hall；《Doh Ray Me》《Run Come Ya!》製作人欄是 Levy 本人（Run Come Ya! 執行製作 Hyman Wright）；Wailing Souls《Wailing》執行製作 Linval Thompson。Prince Fatty《In the Kingdom of Dub》MB 掛名「Prince Fatty meets Nostalgia 77」，卡面沿用 Prince Fatty，正文要點出與 Nostalgia 77 合作。Wackies《African Roots Act 1》Discogs 註原版 1977 Five Arts、1980 Wackie's 重發，卡面年份照 MB 1980，正文不寫首發年。Tetrack 年份照 MB 1978（Discogs 依封底寫 1980，正文不寫年以外的日期）。
+- **14714**：留下但標存疑：Lee Perry／Prince Jammy 混音的器樂 dub（Africa Must Be Free、Kaya Dub：Jammy 混音 z 可能偏冷）、Wailing Souls《Wailing》（Scientist 混音）、Minott《Buy Off the Bar》（Phang 的 snare 殘響）、Pablo《Chanting Dub》（聲音無來源）、Wackies 兩張（lo-fi、鼓機）、Dubdsco Vol. 2（九首取自 Sly & Robbie 的《Sings the Wailers》）、Levy 80s 盤（樂手現場類比錄音，研究 d 組）。
+- **14715**：**全批 33 張**。候補已見底（策展兩輪 71、主線汰 20、研究再汰 18），不再補。池中 dub 核心已滿、二線多偏冷或偏快，人聲盤的類比濕混音是這條線唯一穩的型。

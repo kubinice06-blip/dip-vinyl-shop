@@ -84,3 +84,16 @@
 - **11377** 派工限制：媒體名（Trouser Press、RA、Orlando Weekly、RAG MusicHouse、部落格）與榜單名次（Oricon 第 59 名、NME techno 榜）全不進 note，評語改寫成「日本有評介說」「2018 年樂評形容他一貫的聲音」；Unknown 3 的聲音照研究層只寫成「他一貫的聲音」。研究層禁區照辦：Silicom Two 不寫發行日、Tanzmuzik 不寫曲數、Parabolica 不寫曲名來歷與「No war」、Sundance 不寫「廠牌第一張」、TITLE 兩張不寫本盤聲音、比留間雅夫辭世不寫。Logic System 的 Kenji Omura 依東亞人名規則寫大村憲司。
 - **11378** 自查：hook×hook 中文 4-gram 0 條；hook×他張 note 0 條（d2「日本廠牌」撞 c2 note，已刪 c2 那處）；note×note 只剩專名（青木孝允、石野卓球）與指派句固定字；hook 與自己 note 無 8 字以上逐字重複（d1 只有專名 Ken Ishii）。開頭前四字 16 張互異。壓預算後逐張回核 hook 依賴：c2 hook 原寫「17 歲那年…錄木吉他」與 facts（「早期」才混木吉他）有落差，改「17 歲起…混著木吉他、貝斯和鼓」；其餘 hook 依賴的事實皆在 hook 本身或 note g1／g2。
 - **11379** 腳本：`node qa-batch.mjs hooks add-20261023-mc5` 全部通過 ✓（初跑抓到 e4 Love Parade 互指＋年份，已修）；`node chk-hook-crossgroup.mjs add-20261023-mc5` ✓ 全部通過（hook 加權 12–27、note 157–237）。
+
+## 寫作層（writer-1）
+- **11381** 交件：`desc-tools/batches/output/add-20261023-mc5-out-1.json` 16 張（全批只有這一檔），key 逐字同序。字數：full／partial 6 張 204–220（TESTPATTERN 215、CAPSULE 220、SOFT BALLET 216、LOGIC 206、UP Vol. 2 204、Unknown 3 208）；thin 10 張 145–173（Plastics 173、UP Vol. 1 145、SILICOM 166、Silicom Two 160、Tanzmuzik 161、Grip 154、Parabolica 165、Right Moment 159、TITLE#1 162、TITLE#2+#3 157）。初稿零超標、零掉出下限，未整格捨去。`qa-batch out`、`qa-check-research`（標記 0）、`fix-spacing`（待補 0）皆過；正文 grep「據／Discogs／MusicBrainz／維基／Oricon／樂評／評介／不是／並非／沒有」0 筆。
+- **11382** 第二句句型全照 11375；「日」後一字全照 11376（由、問、，、在、交、上、出、推、發、以、先、接），Plastics／Silicom Two／Tanzmuzik／LOGIC 不寫到日。自掃 han() 跨張 4-gram：3 張以上只剩專名「青木孝允」，2 張只剩「石野卓球」。途中拆掉：Silicom Two 的 hook「都在 4 到 8 分鐘」與 Unknown 3、TITLE#1 正文撞出「在到分鐘」×3（改寫後兩張的曲長句，hook 不動）；「最長的約分秒全盤約分鐘」一串（Unknown 3 改成「〈Fur Elodie〉最長…加起來約」）；「首約分鐘」「長約分鐘」（UP Vol. 1／SILICOM）；「的青木孝」（Parabolica 改「青木孝允出身大阪」）；「是日本的」（Unknown 3）；「合成器的」（LOGIC）；「一張專輯」（TITLE#2+#3 改「上個月那張」，避免點名《TITLE#1》觸發互指）。
+- **11383** note 評語去出處：UP Vol. 2 的「日本有評介說…」寫成陳述句「它的節拍機械、帶著金屬質地且不間斷，在削去多餘的聲音裡找 groove」；Unknown 3 的 2018 年樂評寫成被動「他一貫的聲音，2018 年被形容為…」，照 note 只寫成他一貫的聲音、不掛本盤。兩處皆不出現媒體名與名次。
+- **11384** 避免複述 hook：UP Vol. 1 note 的「少年時玩過龐克」「1990 年代初在大阪放唱片」與 hook 重疊，正文略去、改以本名＋出生地＋Torema 承接；Unknown 3 正文不再寫「下一張專輯」（hook 原文），改「新的專輯要到 2016 年才問世」；LOGIC 第三句用「那年 6 月」承接 hook 的 1981 年。CAPSULE 的中田自述寫成「中田自己提到」（本人說法，非轉述來源）。
+- **11385** Flare《Grip》note 未給樂種，正文照「只寫 note」不補 techno，身分靠「生在札幌、長在東京，1993 年在比利時的 R&S 出道」交代；主線審稿若要補樂種，facts 有 techno 標籤可用（可逆）。TESTPATTERN「兩人僅有的專輯」改寫為「TESTPATTERN 唯一的一張」，因前一句剛出現細野與高橋幸宏，「兩人」會指錯。
+
+## 主線審稿（2026-10-23）
+- **11395-R**：逐張審 16 篇（全文印出、逐句對 note 與研究稿）。改 2 處：
+  - `desc4:田中フミヤ|Unknown 3`：「他一貫的聲音，2018 年被形容為厚實的小鼓、翻滾的貝斯線與粗獷的節拍。」→「他的聲音向來以厚實的小鼓、翻滾的貝斯線與粗獷的節拍為底。」依據：原句是單一 2018 樂評對他整體聲音的轉述，被動「被形容為」等於引述媒體評語；改成聲音陳述、去掉年份與轉述框（研究 e 組 facts 不變，研究／hooks／input 不必改）。
+  - `desc2:Flare|Grip`：第二句「Ken Ishii 生在札幌」→「日本 techno 製作人 Ken Ishii 生在札幌」。依據：開頭兩句要交代樂種，note 漏給；研究 d 組 facts 有 techno 標籤（Discogs）。純補身分，不動事實。
+  - 抽核：Plastics 成員職業與〈Eight Days a Week〉（研究 a 組，日文維基＋MB 曲目）、TESTPATTERN 2025 倉庫母帶重發（研究 b 組，Sony 官方）、CAPSULE 無客座歌手（研究 b 組，中田訪談）、SILICOM 2001-01-10 與高木正勝合組單位名（研究 c 組）、Silicom Two「Gen Isayama」掛名（研究 c 組，Discogs credits）、石野卓球個人作品「更偏 techno、更極端」（研究 e 組）、Right Moment 2011 起住柏林（研究 d 組）。無「據說／據傳」、無資料平台名、無媒體名。qa-batch out、qa-check-research（標記 0）、fix-spacing（0）全過。
