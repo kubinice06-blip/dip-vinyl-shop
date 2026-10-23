@@ -95,3 +95,11 @@
 - **11868** 跨兩檔合掃 3 張以上 0 條；2 張只剩 `張錄音室專輯`（Chronologie × Technological Mind，序數＋錄音室專輯的通用說法，未拆）。對 writer-1 的 hook 0 條。
 - **11869** 來源字樣不進正文：Changing Times note「唱片資料庫登錄的器材」寫成「器材表上」；Tarah note「資料庫的藝人介紹說…略有不同」寫成直述「聲音和先前略有不同」，差異只此一句。Future Generation 的「約 15 萬張」（單一來源）未指派、未寫。Michiel van der Kuy 的「作曲人」身分照 11855 只在 Proxyon 與 Changing Times 領句；Future Generation 以「另一位成員」引入、Discovery Trip 以「一般記的是」引入。
 - **11870** Hipnosis 的 Jarre 翻奏單曲寫〈Oxygene〉（單曲名），專輯內曲名〈Oxigene〉未另寫，避開版本誤印問題。Technological Mind 三版只寫標記名（Vocoder、House、Ambiente），不寫各版長度。
+
+## 主線審稿（11871–11880）
+- **11871**：2026-10-23 主線逐張審 16 張（全文印出對回研究稿與 note）。改 3 處：
+  1. `desc2:Black Devil Disco Club|Disco Club`：「Black Devil 是法國音樂人」→「Black Devil Disco Club 是法國音樂人」（藝人名照卡單掛名；writer-1 11864 已提）。
+  2. `desc2:Jean-Michel Jarre|Chronologie`：「1993 年 10 月 22 日經 Disques Dreyfus 發行」→「1993 年經 Disques Dreyfus 發行」。依據：MB first-release-date 1993-10-22 只見加拿大／法國各一筆，同 RG 另有多筆只記 1993，Apple 版首發標 1993-05-25，兩說衝突，降為只寫年。研究稿 c 組該 fact 已註記，hooks／input 不改（年份不變）。
+  3. `desc2:Proxyon|The Return of Tarah`：「由 Michiel 與 Rob van Eijk 製作」→「由 Michiel van der Kuy 與 Rob van Eijk 製作」（人名補全）。
+- **11872**：其餘 13 張逐張審過未改字；媒體名、榜單名次（只留官方國家榜）、「據說」掃過 0 處。qa-batch out／qa-check-research／fix-spacing 改後重跑全過。
+- **11873**：試聽 10 ready／6 unavailable（Elektric Music《Esperanto》、Rheingold《Distanz》、TD《Optical Race》、Laserdance《Changing Times》、Proxyon 兩張：Apple 藝人目錄查無原盤）；Jarre《Chronologie》人工配 2015 重製版（`preview-override.json`）。封面 16 張皆 CAA release-group front。
