@@ -3380,4 +3380,6 @@ window.DipPreviewStatus = Object.freeze({
   "peter evans - tom blancarte|{sparks}": "unavailable",
   "jérôme noetinger|dr": "unavailable",
   "jérôme noetinger|gloire à...": "unavailable",
+  "freddie jackson|life after 30": "unavailable",
+  "chanté moore|love the woman": "unavailable",
 });

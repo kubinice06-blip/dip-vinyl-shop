@@ -93,3 +93,15 @@
 - **20588** 「日」後一字照 20578／20574：終、透、換、落、以、釋、起、亮、上、登、開；Life After 30、Beautiful 只寫到年／年月。日期前一字（han 剝除後）逐張相異：月、輯、它、唱、後、間、行、進、作、定；Friends & Lovers 只寫月日（前一字「在」）；拆掉的殘片：「唱片年月」×3（Love Session 對 w1 Back to Love／Open Letter）、「它年月日」、「的年月日」、「專輯年月」、「作年月日」、「交由發行」、「拿下金唱片」、「登上美國」×3、「總榜第名」×4、「第名專輯」、「的第三張」×4（Vivian 對 w1 三張）、「在美國專」×3、「首週在美」、「的女歌手」、「男歌手的」。
 - **20589** 自掃（`han()` 4-gram，對 out-1 定稿 14 張合掃）：3 張以上只剩榜名「美國專輯總榜」（專名，不改）；2 張只剩「最高名次」（Art of Love & War × w1 In My Songs）。正文 0 媒體名、0 榜單名次出處、0「據」、0 分數星等；樂評只寫「樂評聽見／樂評說」＋內容。
 - **20590** 腳本：`node qa-batch.mjs out add-20261023-ml52` 全部通過 ✓（out 合計 27 張與卡單相符、thin 全 ≤180）；`node qa-check-research.mjs …writer-2.json …out-2.json` 標記 0；`node fix-spacing.mjs …out-2.json` 0 處。輔助腳本：scratchpad `wr-ml52-2/ml52-w2-scan.mjs`。
+
+## 寫作層（writer-1）（20581–20585）
+- **20581** 交件：`desc-tools/batches/output/add-20261023-ml52-out-1.json` 14 張（thin 5：Another Round 163、So Much Better 158、What I'm Feelin' 179、Appreciation Day 178、In My Songs 166；full 9：Things in the Game 237、Ain't Nobody Worryin' 239、Point of It All 239、Back to Love 201、Sex, Love & Pain 237、Open Letter 233、Stroke of Genius 218、Do I Speak 228、Body Kiss 225）。`qa-batch out`、`qa-check-research`、`fix-spacing` 皆 0 處；「據」grep 0。初稿超標 6 張（Things 257、What I'm Feelin' 181、Appreciation Day 190、Point of It All 245、Stroke of Genius 250、Do I Speak 275），整格或子句捨去：Hollister 的廠牌宣傳句縮寫、Appreciation Day 製作句縮寫、Do I Speak 第二句拿掉盤名（卡面已有）、Stroke of Genius 悼念句改成替 hook 代稱具名（「壓軸的〈Last Stroke〉就是那首悼念」）。
+- **20582** 第二句領句全照鉤子層 note（20573 配表）；「日」後一字全照 20574（經／由／面／交／推／發／在／問／正／於／才／出；Open Letter、Stroke of Genius 只寫到月）。Tank 原 note「第三張」與 hook 重複，正文只在 hook 出現一次，第二句改寫「出自 Blackground 旗下」；Body Kiss 的 1975 冠軍拆成「那張叫《The Heat Is On》」以免「年的年月日」跨句黏合。
+- **20583** 媒體名、媒體榜單名次、年終榜、星等 0；樂評內容只留 Open Letter 一處「樂評在…聽到」（note 指派）。Back to Love 葛萊美入圍、Open Letter〈Missing You〉入圍皆標「後來」。In My Songs 辭世寫法克制，不另寫「生涯最好名次」以免複述 hook。
+- **20584** 自掃（han() 4-gram，跨 out-1／out-2 合掃）：3 張以上只剩榜名「美國專輯總榜」（out-1 ×5、out-2 ×3，榜名當專名處理；已把 out-1 的 Hollister、Case 改用「全美專輯榜」分流）；2 張殘片剩「全美專輯／美專輯榜」（榜名）、「葛萊美最佳」（獎名）、「輯總榜第」（榜名＋第）。途中拆掉「首週賣出」×3（改「開賣第一週賣出／首週銷量／上市頭一週就賣掉」）、「的第三張」×4、「唱片年月」×3、「也是他在」、「登上美國」、「在美國專」、「總榜排第」、「打頭陣的」、「發行製作」、「在年月日」、「的年月日」、「張專輯年」、「品年月日」、「出的這張」、「排到第名」、「歌手的第」、「的作者欄」。
+- **20585** 給主線：「最高名次」是 In My Songs **hook 原文**對 out-2 第 7 張正文的 2 張殘片，writer-1 無權改 hook，需由 out-2 那側改。另避開池中 Levert《Gerald's World》的「多數曲目由 Levert 與 Nicholas 包辦」「美國專輯總榜衝到第 6 名」句形（Stroke of Genius 同為第 6 名，改寫成「一起寫、一起製作」「最高升到」）。輔助腳本：scratchpad `wr-ml52-1/ml52-1-chk.mjs`。
+
+## 主線審稿（2026-10-23，雲端主線，27 張逐張讀過、對回研究稿）
+- **20591** `desc2:Chanté Moore|Love the Woman`：刪「樂評說它避開了當代 R&B 的潮流」（單源評價句；hook 的標準曲事實保留）。
+- **20592** `desc2:Angie Stone|The Art of Love & War`：「是她的最高名次。」→「創下她的個人紀錄。」（與 In My Songs hook「生涯最高名次」撞 4-gram；字數 240 內）。
+- 其餘 25 張逐張審過，未改字（樂評句只留聲音描述：Kelly Price 慵懶慢歌、Silk 和聲與弦樂、Case 的 Stevie Wonder 式靈魂樂、Body Kiss 絲滑嘻哈拍子）。qa-batch out、qa-check-research（兩檔標記 0）、fix-spacing（0）重跑全過。
