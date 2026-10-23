@@ -60,3 +60,18 @@
 - **19871** `desc2:Ian William Craig|Centres`：「FatCat 新啟用的後古典廠牌 130701」→「FatCat 重新啟用的後古典廠牌 130701」。研究稿 c 寫的是 FatCat 重新啟用 130701（該廠牌 2000 年代已出過 Max Richter、Jóhannsson），「新啟用」與事實不符。**已同步改 hooks-c、writer-1 input 與 out-1**（研究稿原本即正確）。
 - 核過的事實：Siblings／Siblings 2 同日（2021-03-19）由 Krúnk 發行、13 首、弦樂手主體；Pine 2010-05-10 Serein、約 34 分鐘、小教堂分次錄音；Centres 2016-07-08、兩三台改裝卡座劣化延遲、cassette choir；The Airship 2007-09-13 自發、Owl City 首作晚約半年；Inventions 2014-04-01 TRR231、波特蘭／奧斯汀互傳六個月、海灘屋收尾。
 - 其餘 4 張逐張審過，未改字。qa-batch out、qa-check-research、fix-spacing 重跑全過。
+
+## 上線（不佔條號）
+- 上線 5：card_catalog 5/5、KV 5 鍵回讀逐字一致、試聽 5/5 ready（Apple 自動配對）、seed +5、published gate 0 error（5 warning：UPC 查無，可留空）。
+- 封面：CAA 5/5（release-group front-250／500 live-check 全 200，主線目視相符）。上線前對 origin 近 40 個 `claude/*` 分支 seed＋近期卡單去重 0 撞。
+- 冷門軸：Olan Mill《Pine》Last.fm 70,289 疑為藝人層級計數 → 人工 4（`ratings-override.json`，比照同人《Paths》）。
+- 子曲風：`warm-batch` 5/5 有標籤。
+
+## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-ml46/`）
+- 照 10-23 體感標準評分（conf mid 4、low 1）。**上線 5；落恍惚 4/5＝80%**。
+- 出格 1：Port Blue《The Airship》y 0.3（柔和合成器墊＋鐵琴小旋律、偏透氣）判輕落放鬆——研究稿 thin、厚度無證據的那張。
+- 《Centres》z 0.0 剛好在暖側邊界（盤帶衰變雜訊帶寒氣）。
+- 產量：策展兩輪 26（12＋第二輪 14 全不過）、主線汰 0、研究汰 7 → 5。**暖 post-classical 是死池**：池中 Arnalds、AWVFTS、O'Halloran、Rani、Frahm、Richter 全判輕，弦樂團／管風琴厚墊的 Jóhannsson、Kjartan 樂評多 elegiac／ominous 判冷，Bing & Ruth 鋼琴領軍判輕。**ml46 不再派**；能收的只剩「磁帶糊＋旋律清楚」（Somers、Craig）與殘響 drone 托旋律（Olan Mill），與 ml50 暖 drone 重疊，留給 ml50。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Alex Somers、Olan Mill、Ian William Craig、Port Blue、Inventions（5 個掛名；Olan Mill、Alex Somers 若已在 ml43 批的名單內以先列者為準）
