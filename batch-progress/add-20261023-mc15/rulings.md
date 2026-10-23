@@ -19,3 +19,11 @@
 - **12122**　Ten Deadly Kisses 年份：Discogs／MB 1987-01，英維基樂團頁寫 1986；採 1987。
 - **12123**　六張皆查無本盤樂評（WebSearch 3 次用完、Discogs 網頁／AllMusic 403），聲音事實來自維基樂團層級描述、Discogs 風格標籤／錄音欄／時長；Snowy Red、Flop! status 標 thin。
 - **12124**　moodGuess 存疑（列給主線）：Mafu Cage（y，吉他）、Snowy Red（x、y，兼吉他貝斯、曲長 3–5 分）、Weathermen（z，諷刺俏皮）、Blue Planet（x，曲長整齊 4 分上下、有主唱流行取向）、Anguish（y，Discogs 含 Industrial）、Flop!（y、z，短曲流行取向）。
+
+## 研究 b 組
+- **12131**　Market Led 推翻策展層：Qobuz（TiVo 簡介）稱此作為與電子流行的『重大轉向』，素材是 Spitalfields Market 撿來的舊唱片、用 sampler 加兩台機器做成的長篇音景；Discogs 風格 Glitch／Abstract／Illbient；8 首最短 4:14、最長 8:47。與『冷 electro-pop、更節拍導向』相反，moodGuess 強烈存疑，建議主線汰換；status thin（樂評取不到）。
+- **12132**　WebSearch 3 次用完（Market Led、Essaie pas、Adieux 各一）；Discogs API 直連可用，MB 可用，AllMusic／Pitchfork／Mute 官網 403 或擋。Welle: Erdball 兩張與 Komputer 首作沒有任何速度、鼓機資料，聲音事實限於 C64 SID／theremin／類比合成器／vocoder 與曲長，facts 刻意不寫『鼓』『BPM』。
+- **12133**　moodGuess 存疑（列給主線）：Der Sinn des Lebens／Wunderwelt（x、z，無速度資料，歌詞諷刺但曲名有俏皮與抒情）、World of Tomorrow（x，無速度資料）、Essaie pas（x，樂評只說 Facing The Music 比其他曲快，La Chute 飄浮、Carcajou 3 較亮）、Market Led（見 12131）；Adieux 大致吻合。
+- **12134**　Die Wunderwelt der Technik 廠牌：MB 為 Energy Rekords ERCD152L 兩片版，Discogs 主發行為 Synthetic Symphony／SPV 085-62512 單片版；兩者並存，卡單 Energy Rekords 有據，facts 兩邊都寫。
+- **12135**　World of Tomorrow 年份：MB 1997-11-18 美版（13 首含混音）、Discogs 母版 1998 英版（11 首）；採卡單 1997，facts 註明兩版。
+- **12136**　Essaie pas 專輯序數 Fader 說第四張、PopMatters 說第二張，維基只列兩張錄音室專輯，facts 不寫序數；Polaris 2016 只寫長名單入圍。Pitchfork 年度榜（Adieux 入選 2016 年 20 張最佳電子專輯）只放 notes。
