@@ -1,16 +1,114 @@
 [
-{"id":"dynatron|aeternus","x":3.2,"y":-0.2,"z":-0.7,"why":"太空系 synthwave，中快拍、乾淨合成器主旋律加大殘響墊，宇宙疏離感","conf":"mid"},
-{"id":"lost years|amplifier","x":3.6,"y":-0.3,"z":-0.4,"why":"驅動型 outrun，四拍鼓機推進、琶音貝斯明亮乾淨，夜駕霓虹偏冷","conf":"low"},
-{"id":"vector hold|mechanized","x":3.6,"y":-0.1,"z":-1.0,"why":"機械感 electro／synthwave，硬鼓機與方波貝斯，冰冷機器人氛圍","conf":"low"},
-{"id":"waveshaper|exploration 84","x":3.5,"y":-0.4,"z":-0.3,"why":"復古 80 年代 synthwave，輕快旋律合成器、聲部分明，懷舊但帶夜色","conf":"low"},
-{"id":"waveshaper|mainframe","x":3.6,"y":-0.2,"z":-0.8,"why":"偏暗的賽博龐克 synthwave，緊密鼓機與冷硬合成器，數位都市夜","conf":"low"},
-{"id":"bonanza banzai|induljon a banzáj!","x":3.4,"y":-0.4,"z":-0.5,"why":"80 末匈牙利 synth-pop，鼓機中快拍、乾淨合成器，Depeche 式陰鬱","conf":"low"},
-{"id":"bonanza banzai|a jel","x":3.2,"y":-0.3,"z":-0.9,"why":"暗色 synth-pop，冷調合成器墊與機械鼓，克制低沉人聲","conf":"low"},
-{"id":"bonanza banzai|1984","x":3.3,"y":-0.1,"z":-1.1,"why":"反烏托邦題材的冷暗 synth-pop，金屬取樣與機械律動，疏離","conf":"low"},
-{"id":"bonanza banzai|a pillanat emlékműve","x":3.0,"y":-0.2,"z":-0.8,"why":"中速 synth-pop 偏抒情，乾淨合成器與鼓機，夜晚憂鬱","conf":"low"},
-{"id":"bonanza banzai|jóslat","x":3.3,"y":0.1,"z":-1.0,"why":"90 年代中偏工業化的電子流行，聲響較厚、氛圍陰冷","conf":"low"},
-{"id":"технология|всё, что ты хочешь","x":3.5,"y":-0.5,"z":-0.6,"why":"俄式 Depeche 型 synth-pop，輕快鼓機與明亮合成器，小調冷感","conf":"mid"},
-{"id":"технология|рано или поздно","x":3.3,"y":-0.4,"z":-0.7,"why":"中快拍 synth-pop，乾淨合成器線條，憂鬱克制的都市夜","conf":"low"},
-{"id":"технология|это война","x":3.4,"y":-0.1,"z":-1.0,"why":"較暗硬的電子流行，機械鼓與冷調合成器，緊張陰鬱","conf":"low"},
-{"id":"технология|носитель идей","x":3.3,"y":-0.2,"z":-0.8,"why":"現代製作的 synth-pop 回歸作，鼓機穩推、合成器冷亮","conf":"low"}
+ {
+  "id": "dynatron|aeternus",
+  "x": 3.4,
+  "y": 0.2,
+  "z": -0.3,
+  "why": "中快 synthwave、琶音推進、殘響合成器墊，太空感偏冷但主旋律清楚",
+  "conf": "mid"
+ },
+ {
+  "id": "lost years|amplifier",
+  "x": 3.4,
+  "y": 0.2,
+  "z": -0.5,
+  "why": "驅動型 outrun 器樂、門控鼓與厚墊，電影感略憂鬱，旋律尚清楚",
+  "conf": "low"
+ },
+ {
+  "id": "vector hold|mechanized",
+  "x": 3.6,
+  "y": 0.3,
+  "z": -0.8,
+  "why": "機械感 electro 律動、較硬的合成器音色，偏暗偏冷",
+  "conf": "low"
+ },
+ {
+  "id": "waveshaper|exploration 84",
+  "x": 3.6,
+  "y": -0.2,
+  "z": -0.3,
+  "why": "復古電玩感琶音、快拍乾淨合成器，數位冷色但旋律明亮",
+  "conf": "low"
+ },
+ {
+  "id": "waveshaper|mainframe",
+  "x": 3.7,
+  "y": 0.1,
+  "z": -0.6,
+  "why": "快速賽博感 synthwave、密集琶音與較暗音色，機器氣息重",
+  "conf": "low"
+ },
+ {
+  "id": "bonanza banzai|induljon a banzáj!",
+  "x": 3.4,
+  "y": -0.3,
+  "z": -0.4,
+  "why": "Depeche Mode 式合成器流行、中快舞拍、乾淨冷調音色，副歌好記",
+  "conf": "low"
+ },
+ {
+  "id": "bonanza banzai|a jel",
+  "x": 3.3,
+  "y": -0.2,
+  "z": -0.7,
+  "why": "小調合成器流行、機械鼓機推進，音色冷硬、人聲克制",
+  "conf": "low"
+ },
+ {
+  "id": "bonanza banzai|1984",
+  "x": 3.3,
+  "y": 0.0,
+  "z": -0.9,
+  "why": "較陰暗的 synth-pop、厚一點的合成器層與工業感打擊，疏離",
+  "conf": "low"
+ },
+ {
+  "id": "bonanza banzai|a pillanat emlékműve",
+  "x": 3.0,
+  "y": 0.0,
+  "z": -0.5,
+  "why": "中速偏抒情的合成器流行、墊音較多，冷調但旋律清楚",
+  "conf": "low"
+ },
+ {
+  "id": "bonanza banzai|jóslat",
+  "x": 3.5,
+  "y": 0.0,
+  "z": -0.7,
+  "why": "九〇年代中舞曲化電子流行、四拍底鼓推進，音色偏冷",
+  "conf": "low"
+ },
+ {
+  "id": "технология|всё, что ты хочешь",
+  "x": 3.5,
+  "y": -0.5,
+  "z": -0.4,
+  "why": "Depeche Mode 式小調合成器流行、輕快鼓機、乾淨音色，旋律很好記",
+  "conf": "mid"
+ },
+ {
+  "id": "технология|рано или поздно",
+  "x": 3.3,
+  "y": -0.3,
+  "z": -0.6,
+  "why": "中快合成器流行、冷調墊音與克制人聲，氣氛較陰",
+  "conf": "low"
+ },
+ {
+  "id": "технология|это война",
+  "x": 3.5,
+  "y": 0.2,
+  "z": -0.9,
+  "why": "較暗較硬的電子流行、厚一點的合成器與工業打擊，緊繃疏離",
+  "conf": "low"
+ },
+ {
+  "id": "технология|носитель идей",
+  "x": 3.4,
+  "y": 0.0,
+  "z": -0.7,
+  "why": "現代製作的 electro synth-pop、穩定舞拍、冷色合成器",
+  "conf": "low"
+ }
 ]

@@ -99,7 +99,8 @@
 
 ## 上線與評分（2026-10-23，13075）
 - 13075：上線 14 張：card_catalog 14／14、KV 14 鍵逐字回讀一致、seed +14、published gate 0 error；試聽 ready 12（Технология《Всё, что ты хочешь》人工配 Apple ru 2023 重發）、unavailable 2（Bonanza Banzai《Jóslat》、Технология《Носитель идей》Apple 查無）；封面 14 張 CAA。子曲風：Dynatron 補 `electronic/synth/synthwave`。
-- **評分落格（score-mc26）：落冷冽 14/14＝100%**（x 3.0–3.6、y −0.5～+0.1、z −0.3～−1.1；conf mid 2、low 12）。貼邊：Bonanza Banzai《A pillanat emlékműve》x 3.0、Waveshaper《Exploration 84》z −0.3。
+- 舊標準評分（`score-mc26/out-pre-felt/`）落冷冽 14/14；合併 main 後照 10-23 體感標準重評。
+- **評分落格（score-mc26，體感標準）：落冷冽 14/14＝100%**（x 3.0–3.7、y −0.5～+0.3、z −0.3～−0.9；conf mid 2、low 12；旋律清楚度把 z 往中性拉，仍全落冷）。貼邊：Bonanza Banzai《A pillanat emlékműve》x 3.0、Waveshaper《Exploration 84》z −0.3。
 - **場景結論**：synthwave 主流（dreamwave、darksynth、chillsynth）研究層一查就判暖或判重，能留的只剩器樂 electro 式鼓機盤；東歐 Depeche 系 synth-pop（Технология、Bonanza Banzai）是這批主力。策展兩輪 36 → 研究汰 20 → 上線 14。mc19 剩餘名額在 Ночной проспект、Videosex 等樂團編制處見底。
 
 ## 本批新藝人（無介紹，未切；並行時子工作階段不切）

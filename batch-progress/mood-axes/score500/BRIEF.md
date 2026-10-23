@@ -40,6 +40,8 @@
 硬規則：合輯以收錄曲**中位數**判；一張盤有快有慢取整體印象，不取最快的一首；慢但極大聲（Sunn O)))）是 1–1.5，音壓不等於能量。
 **2026-10-22 店主改標準——「兇不兇」優先於「快不快」**：躁（≥3.0）要同時有 (A) 攻擊性：失真 riff 牆、嘶吼／咆哮、刺耳噪音、音壓貼臉；(B) 有打擊在推：鼓或拍子在敲，再慢也算。兩樣都有就是躁，速度只決定高低：慢而兇（doom、sludge、慢速黑金屬、工業碾壓）3.1–3.4，中速 3.5–3.9，快 4 以上。只有一樣不算躁：**有拍沒攻擊性**（dub、dub techno、trip-hop、dubstep、slowcore、shoegaze 柔牆、cloud rap）照原表 2–2.9；**有攻擊沒拍**（Sunn O)))、Earth 2、Khanate、drone doom、噪音牆、暗黑 ambient、現代古典音塊、工業 drone）照原表 1–2，Sunn O))) 仍是 1–1.5。先例：Celtic Frost《Monotheist》2.6→3.4、Electric Wizard《Dopethrone》1.8→3.1、Godflesh《Streetcleaner》2.6→3.4；Sunn O)))、Khanate、Ben Frost、Penderecki 不動。
 
+**2026-10-23 店主再改標準——能量＝體感，取代上面 10-22「有打擊在推」與 10-23「驟然爆裂不算推力」**（店主：「是讓人聽得很躁還是靜，是體感，不是音樂本身」）：躁＝神經被挑起來（緊張、不安、刺激、坐不住、被推著走）；靜＝被安撫、被往下拉（放鬆、沉下去、被包住、被催眠）。**安靜但讓神經緊繃的是躁**：Feldman《Rothko Chapel》、Ligeti《Atmosphères》、Penderecki《Threnody》、Kancheli、Reznor/Ross《Dragon Tattoo》、Diamanda Galás 都在冷冽／亢奮。**很大聲但把人往下壓的是靜**：Sunn O)))、Earth 2、Boris《Altar》、Khanate、Low《Double Negative》、Scott Walker《The Drift》都在頹靡。速度只是線索。分數：明顯躁 3.4–4.5、邊緣躁 3.0–3.3、邊緣靜 2.5–2.9、明顯靜 1–2.4。
+
 **Y 質地（輕 −2 ↔ 重 +2）**：「聲音是乾淨輕盈、還是厚重糊爛」
 | 分 | 聽起來 | 例 |
 |---|---|---|
@@ -70,6 +72,8 @@
 硬規則：看整體氛圍不看單曲；**不得因經典度高往暖偏、硬蕊度高往冷偏**；器樂與電子預設 0，除非音色明顯偏；
 大調≠暖、小調≠冷（Joy Division 有大調歌仍是 −2）。
 **2026-10-23 店主改標準——「酸」＝冷＋硬**（店主：「自由爵士類的、或是現代音樂類的（比如 Ligeti）都很酸冷難聽又硬蕊，絕對不會是輕鬆」）：不和諧、無調性、自由即興、噪音質地、刺耳張力的音樂，不管樂器原聲或電子、混音溫不溫潤，色溫一律 ≤ −1.2；**安靜但有寒氣的也算酸**（陰森、駭人、無調、疏離）。能量照 10-22 標準：有鼓／律動在推才算躁（≥ 3.1）；音塊、drone、長段留白後的驟然爆裂都**不算推力**——Ligeti《Atmosphères》、Penderecki《Threnody》、Scott Walker《The Drift》（店主 10-23：「The Drift 頹靡沒錯」）、Sunn O))) 都留靜。自由爵士（Ayler、Cecil Taylor、Brötzmann、AACM、歐洲自由即興）、無調現代音樂（Ligeti、Penderecki、Xenakis、Stockhausen）、noise／power electronics、musique concrète、no wave、嘶吼的 fire music 都是酸。**不是酸**：溫暖的靈性／調式爵士（A Love Supreme、Journey in Satchidananda）、後咆勃、ECM 抒情、cool jazz、極簡（Reich、Glass、Pärt）、新古典與配樂、印象派與浪漫派。同一張有酸有暖（Pharoah《Karma》）酸優先。先例：Marion Brown《Geechee Recollections》放鬆→冷冽。
+
+**2026-10-23 店主再改標準——色溫＝聲響溫度＋旋律清楚度，取代上面「不是酸」那一串**（店主：「旋律性也是評斷冷暖標準之一，越冷越硬蕊、旋律不明確；越暖易入耳的，旋律會更明確」）：旋律明確、調性清楚、好入耳、唱得出來 → 往暖；旋律不明、靠即興／音色／噪音／律動撐、無調、硬蕊 → 往冷，**不管樂器多溫潤、多「靈性」**——Pharoah《Karma》、Alice Coltrane《Journey in Satchidananda》、A Love Supreme、Fuck Buttons、Boredoms 都是冷。冷色調但旋律很清楚的民謠或歌（Lankum《False Lankum》）可以往暖。**主流咆勃／硬咆勃／靈魂爵士／風琴 groove 不算旋律不明**：有主題、搖擺律動、好入耳的，長段獨奏也不往冷。原本的聲響溫度仍算數，旋律清楚度是第二個依據。
 
 
 

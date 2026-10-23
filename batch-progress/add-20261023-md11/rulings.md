@@ -109,8 +109,9 @@
 
 ## 上線與評分（2026-10-23，17553）
 - 17553：上線 40 張：card_catalog 40／40、KV 40 鍵逐字回讀一致、seed +40、published gate 0 error；試聽 ready 16（Static Burn、Echo Poeme、Space Music 人工配）、unavailable 24（Organum、Zoviet France、Bianchi、Elend 前期等 Apple 無目錄）；封面 CAA 36、Discogs 4（Sanctus、Amen、The Crackling、Menses；已登錄 discogs-cover-registry）。三軸：NWW《Space Music》、TG《In the Shadow of the Sun》機器 classic 4 壓為 3（`ratings-override.json`）。子曲風：Coil presents Black Light District、John Duncan & Max Springer、Arcana（rock 主類）補 l3 對照。
-- **評分落格（score-md11）：落頹靡 39/40＝98%**（x 全 ≤ 2.0；conf mid 14、low 26）。出格 1：Organum《Amen》y 0.4 判輕落平靜（極稀疏鐘與單音長音）——Organum 晚期 Holy 三部曲是 y 風險，《Sanctus》y 0.6 貼邊。
-- **場景結論**：工業 old-school 無鼓 drone／tape music 與 neoclassical darkwave 落頹靡極穩；研究層汰的是有鼓（C93《In Menstrual Night》、NWW《Insect…》）與暖（Cyclobe、Arcana《Raspail》、Heemann）。Zoviet France、Organum、Bianchi 池子還有，Apple 試聽率低（16/40）。
+- 舊標準評分（`score-md11/out-pre-felt/`）落頹靡 39/40；合併 main 後店主 10-23「能量＝體感」「色溫＝旋律清楚度」新標準上線，照 ml10／mc15 先例重評。
+- **評分落格（score-md11，體感標準）：落頹靡 37/40＝92.5%**（conf mid 7、low 33）。出格 3 張落亢奮：Organum《Submission》3.2/+1.7/−1.8、《Vacant Lights》3.1/+1.6/−1.8（金屬刮擦刺耳、神經緊繃）、Daniel Menche《Static Burn》3.5/+2.0/−1.7（噪牆轟擊）。貼邊：ELpH vs Coil《Worship the Glitch》x 2.8。
+- **場景結論**：工業 old-school 無鼓 drone／tape music 與 neoclassical darkwave 落頹靡穩，但體感標準下刺耳金屬刮擦／噪牆判躁；研究層汰的是有鼓（C93《In Menstrual Night》、NWW《Insect…》）與暖（Cyclobe、Arcana《Raspail》、Heemann）。Zoviet France、Organum、Bianchi 池子還有，Apple 試聽率低（16/40）。
 
 ## 本批新藝人（無介紹，未切；並行時子工作階段不切）
 Organum、ELpH vs Coil、Coil presents Black Light District、Controlled Bleeding、Zero Kama、Endura、John Duncan & Max Springer、Archon Satani、Daniel Menche、Elend、Die Verbannten Kinder Evas、sToa、Dargaard、Arcana（14 位；其餘藝人已有介紹或已在排隊）。
