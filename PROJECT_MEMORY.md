@@ -6,11 +6,22 @@
 - **策展→研究汰換**：ml54 策展 54、主線汰 19（乾淨鋼琴 chillhop y 貼邊、人聲客串、原聲吉他）、研究汰 13（人聲／饒舌客串、funk／house／jazz fusion、<28 分、身分）→ 22。md29 策展 58、主線汰 11、研究汰 22（打擊、旋律樂器／口白領奏、自稱 warm、噪牆）、策展補 15（附文案原句）、主線再汰 4、研究再汰 3 → 33。兩場景主場景見底，不再派。
 - **主線審稿**：ml54 改 2 張（Beyond the Sea of Trees 單源樂評評價句改寫、A Day at a Time 廠牌改 Lofi Records）；md29 改 2 張（Kave hook「評者形容」改無來源聽感、Phonothek「妻子」單源改「搭檔」；hooks／input 同步）。
 - **上線**：card_catalog 22＋33、KV 55 鍵回讀逐字一致（stamp 20261023r12）、試聽 22＋31 ready、seed +55、published gate 兩批 0 error；封面 CAA 52（2 張改 front-500）、Apple 3，live-check 全 200、縮圖表目視相符。上線前對 origin 所有 `claude/*` 分支 seed＋卡單去重 0 撞。
-- **情緒評分**：`score-ml54`、`score-md29`。**ml54 落恍惚 21/22（95%）**（Bcalm《Elements》判輕落放鬆）、**md29 落頹靡 32/33（97%）**（Jah Shaka《Imperial Dub》z 0.0 落恍惚）。八格（本分支）：恍惚 1,560、頹靡 1,512、冷冽 1,469。
+- **情緒評分**：`score-ml54`、`score-md29`。**ml54 落恍惚 21/22（95%）**（Bcalm《Elements》判輕落放鬆）、**md29 落頹靡 32/33（97%）**（Jah Shaka《Imperial Dub》z 0.0 落恍惚）。八格（併 main 後，含 ml55／mc41）：恍惚 1,582、頹靡 1,512、冷冽 1,479。
 - **類型樹**：`genre-l3-artist-map.json` 補 hiphop/underground/instrumental 6、electronic/downtempo/beats 3、electronic/ambient/dark-ambient 1，55/55 落位；抽卡封面重建。
 - **藝人介紹**：未切（並行規矩）；新藝人 41 個掛名列在兩批 rulings.md 末尾。
 - **主要檔案**：`batch-progress/add-20261023-{ml54,md29}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml54,md29}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml54,md29}/`、`onboarding-manifest-add-20261023-{ml54,md29}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml54,md29}*`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
 - **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 55/55；build-card-moods 錨點 104/104、gate exit 0。
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 12 輪 ml55／mc41：女聲 R&B 慢盤 22 張、電子原音尖細那半 11 張上線，落格 22/22、10/11
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 12 輪，本工作階段負責 ml55、mc41（評分照 10-23 體感標準）。ml55（`add-20261023-ml55`，恍惚：90s–00s 女聲 R&B ballad＋女聲 quiet storm、慢板 neo-soul、女聲 dub）：Kelly Price ×2、Syleena Johnson、Oleta Adams ×3、Miki Howard、Phyllis Hyman、Mica Paris、Leela James ×2、Goapele、Raveena、Sabrina Claudio ×2、Alina Baraz、Celeste、Andra Day、Aisha、Love Unlimited、Jah9 ×2。mc41（`add-20261023-mc41`，冷冽：acousmatic 尖細那半＋早期工作室點描）：Vaggione ×2、Jonty Harrison、Elsa Justel、Davidovsky、Trevor Wishart、A_dontigny、Stavropoulos、Subotnick、Stéphane Roy、Alain Thibault。
+- **策展→研究汰換**：ml55 策展兩輪 44、主線汰 3（Hollie Cook《Happy Hour》ml50 先例、Syd 撞名、Marigold 讓 ml53）、研究汰 19（new jack／饒舌客串／舞曲、smooth jazz、翻唱、現場福音、EP、冷數位）→ 22。mc41 策展 28、主線汰 4（池中 Parmegiani／Babbitt 判靜先例等）、研究汰 13（飄浮長音、厚密噪音、聲音零來源、現場）→ 11。兩場景見底，不再派。
+- **主線審稿**：ml55 改 3 處（Miki Howard、Leela James 單源評價句，Sabrina「重新發片」用字）；mc41 逐張審過未改字。
+- **上線**：card_catalog 22＋11、KV 33 鍵回讀逐字一致、試聽 22＋2 ready（人工配 10；empreintes／GRM 系 Apple 不上架）、seed +33、published gate 兩批 0 error；封面 CAA 29、Discogs 2（已登錄 registry 405 筆）、Apple 2，live-check 全 200、目視相符。上線前對 origin 各 `claude/*` 分支 seed＋卡單去重 0 撞。
+- **情緒評分**：`score-ml55`、`score-mc41`。**ml55 落恍惚 22/22（100%）**、**mc41 落冷冽 10/11（91%）**（Stavropoulos《Micro-lieux》x 2.9 落平靜）。八格：恍惚 1,560、頹靡 1,480、冷冽 1,479。
+- **類型樹**：`genre-l3-artist-map.json` 補 electronic/noise/concrete 5、soul/classic-rnb/neo-contemporary 1、world/reggae/roots 1，33/33 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 24 個掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{ml55,mc41}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml55,mc41}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml55,mc41}/`、`onboarding-manifest-add-20261023-{ml55,mc41}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml55,mc41}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 33/33；build-card-moods 錨點 104/104。
 
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格線第 12 輪派工：優先序 58–63
 

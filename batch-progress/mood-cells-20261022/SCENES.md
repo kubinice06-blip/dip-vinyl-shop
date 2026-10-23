@@ -83,8 +83,8 @@
 | 59 | mc40 | 自由即興弦樂（Leroy Jenkins、Billy Bang 前衛期、Joëlle Léandre、Barry Guy 獨奏、Mat Maneri、Phil Wachsmann；mc38／mc39 路高產） | 派→情緒薄格 ml53、mc40（第 12 輪） |
 | 60 | ml54 | lo-fi／chillhop 第四波（Jazzinuf、Idealism、eevee、Sleepy Fish、韓國 lo-fi 二線；ml51 收 31 仍高產） | ✅ 上線 22／落格 21 |
 | 61 | md29 | dark ambient 第四波（Kammarheit、Northaunt、Sabled Sun、Council of Nine、Cryo Chamber 晚期新人；md28 收 34 仍高產） | ✅ 上線 33／落格 32 |
-| 62 | ml55 | 90s–00s 女聲 R&B ballad（Toni Braxton、SWV、Brandy、Monica、Faith Evans、Tamia 慢盤；ml49／ml52 路高產） | 派→情緒薄格 ml55、mc41（第 12 輪） |
-| 63 | mc41 | 電子原音／musique concrète 尖細那半（GRM 系 Parmegiani、Bayle、Xenakis 電子作、Dhomont；厚重往下壓的落頹靡） | 派→情緒薄格 ml55、mc41（第 12 輪） |
+| 62 | ml55 | 90s–00s 女聲 R&B ballad（Toni Braxton、SWV、Brandy、Monica、Faith Evans、Tamia 慢盤；ml49／ml52 路高產） | ✅ 上線 22／落格 22 |
+| 63 | mc41 | 電子原音／musique concrète 尖細那半（GRM 系 Parmegiani、Bayle、Xenakis 電子作、Dhomont；厚重往下壓的落頹靡） | ✅ 上線 11／落格 10 |
 
 **暫停**：mc13 math rock、mc21 post-punk revival、mc30 minimalism（旋律清楚＝暖）、mc9／mc10／mc20／mc25／mc26 系的 synth-pop／new wave／K-pop／synthwave 續集（2026-10-23 體感標準：旋律清楚往暖，落雀躍）、mc23 art pop、ml4 系東亞續集、ml14 spiritual jazz（體感標準判冷，不是恍惚）、ml22、ml27。**重開**（體感標準下會落冷冽）：mc4、mc14、mc22、mc28。
 
@@ -170,7 +170,7 @@
 | mc38 | 20201 | 前衛爵士鋼琴緊繃那路（Cecil Taylor 獨奏、Matthew Shipp、Sylvie Courvoisier、Kris Davis、Marilyn Crispell、Schlippenbach） | ✅ 上線 27／落格 27（2026-10-23；策展 54、研究汰 18：現場 3、旋律清楚判暖 8、留白判靜 3、鼓組合奏判重 3、掛名 1；原聲前衛鋼琴小編制全中，Cecil Taylor 剩現場盤，主場景見底） |
 | mc39 | 20681 | 自由爵士管樂獨奏與二重奏（Braxton、Evan Parker、Roscoe Mitchell、Brötzmann、Wadada Leo Smith） | ✅ 上線 28／落格 24（2026-10-23；策展 54、研究汰 17：現場 5、留白判靜 7、疊錄／低音管判重 2、旋律／標準曲 3；出格 Brötzmann 獨奏 ×2 判重落暴躁、Butcher／Graewe 與 Rothenberg 單簧管獨奏判靜；主場景見底，不再派） |
 | mc40 | 21001 | 自由即興弦樂（Leroy Jenkins、Billy Bang 前衛期、Joëlle Léandre、Barry Guy 獨奏、Mat Maneri、Phil Wachsmann） | 派→情緒薄格 ml53、mc40（第 12 輪） |
-| mc41 | 21081 | 電子原音／musique concrète 尖細那半（Parmegiani、Bayle、Xenakis 電子作、Dhomont） | 派→情緒薄格 ml55、mc41（第 12 輪） |
+| mc41 | 21081 | 電子原音／musique concrète 尖細那半（Parmegiani、Bayle、Xenakis 電子作、Dhomont） | ✅ 上線 11／落格 10（2026-10-23；策展 28（掃 empreintes 約 160 張）、主線汰 4、研究汰 13（飄浮長音 5、厚密噪音 3、聲音零來源 4、現場 1）；Stavropoulos 判靜落平靜；見底不再派） |
 
 ## 恍惚 ml（靜＋重＋暖；門檻 x ≤ 2.7、y ≥ +0.8、z ≥ +0.3）
 
@@ -232,4 +232,4 @@
 | ml52 | 20521 | 2000s R&B ballad／slow jam 續集（Joe、112、Avant、Dru Hill、Musiq Soulchild、Brian McKnight 慢盤） | ✅ 上線 27／落格 25（2026-10-23；策展 54、研究汰 22：hip-hop 硬拍取樣／饒舌客串 12、舞曲 5、smooth jazz 2、陰冷 1、身分 1、補 4 再汰 2；出格 Lattimore《Timeless》、Phil Perry 乾淨製作判輕落放鬆；主場景見底，不再派） |
 | ml53 | 20761 | 爵士人聲 torch song／深夜 ballad 二線（弦樂或厚編曲） | 派→情緒薄格 ml53、mc40（第 12 輪） |
 | ml54 | 20841 | lo-fi／chillhop 第四波（Jazzinuf、Idealism、eevee、Sleepy Fish、韓國 lo-fi 二線） | ✅ 上線 22／落格 21（2026-10-23；策展 54、主線汰 19、研究汰 13；Sleepy Fish／Idealism／韓國 lo-fi 全是 EP 或已在池，主場景見底不再派；Lofi Records 乾淨鋼琴型 Bcalm《Elements》判輕落放鬆；dub 化擴寫只留 Pachyman 三張） |
-| ml55 | 20921 | 90s–00s 女聲 R&B ballad（Toni Braxton、SWV、Brandy、Monica、Faith Evans、Tamia 慢盤） | 派→情緒薄格 ml55、mc41（第 12 輪） |
+| ml55 | 20921 | 90s–00s 女聲 R&B ballad（Toni Braxton、SWV、Brandy、Monica、Faith Evans、Tamia 慢盤） | ✅ 上線 22／落格 22（2026-10-23；策展兩輪 44、主線汰 3（讓 ml53 一張）、研究汰 19（new jack／饒舌客串／舞曲 10、smooth jazz 2、翻唱、現場福音、EP、冷數位 2、場景不符 1）；主流頭牌池中判輕，見底不再派） |
