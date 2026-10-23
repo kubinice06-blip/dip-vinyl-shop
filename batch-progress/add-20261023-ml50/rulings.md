@@ -43,3 +43,15 @@
 - 20308：SUSS《High Line》moodGuess 存疑：Qobuz 摘要稱「darker second full-length」（單一、未見原文）；Americana UK 稱 hazy、「fail to get hot and sweaty」、pulse never rises，y 恐不足；z 可能貼 0。無鼓。人數（廠方 quintet 對 bio trio）與 High Line 陣容未證實，facts 不寫。
 - 20309：SUSS《Ghost Box》身分保留（EVP Recordings 2018-02 自發；Northern Spy 2018-11-16 加長版 11 首是再版，卡以原版七首為準）。無鼓；AAJ 評論僅取自搜尋摘要（頁面 403），Eno／Lanois／Morricone 比較單一來源，寫作層慎用。moodGuess 輕度不存疑，無冷字眼。
 - 20310：c 組整體：未推翻策展層的年份、廠牌、盤名；無任何 facts 引用到 cold／bleak／glacial／ominous 逐字。WebSearch 共用 10 次（每張 3 次內為原則，c 組 9 張合計超出 27 次上限內，未超）。Pitchfork 被 WebFetch 封鎖、AllMusic 403。
+
+## 研究 b 組
+- 20291：Green Kingdom《The North Wind and the Sun》moodGuess 存疑（強）：Textura 與 Bandcamp 皆說以原聲樂器為主、電子器材擺一邊，形容田園、昂揚、carefree，Apple 歸 Folk；無鼓無厚墊，建議汰換候補。
+- 20292：Marcus Fischer《Monocoastal》moodGuess 存疑（中）：12k 官方寫『減去細節、倚賴音符間空間與克制』（sparse），暖度（warm、褪色卡帶）有支持；MB 首發 2010-11-11，搜尋摘要稱 2011 未採。
+- 20293：Dettinger《Intershop》moodGuess 存疑（輕）：實際有機械式淡節奏（hisses／thunks／knocks）、深沉低頻、dub 影響，Kompakt 用 brooding；『第一張藝人全長』為廠牌自述，未反查早期目錄，facts 標自述。
+- 20294：Dettinger《Oasis》moodGuess 存疑（輕）：廠牌寫 rhythmic，Discogs／MB 含 Minimal／dub techno；暖度（warm、dreamy）廠牌字眼支持；僅有廠牌自述，無獨立樂評。
+- 20295：Triola《Triola im Fünftonraum》moodGuess 存疑（強，建議汰換）：beat-driven、快速舞曲節奏、『ambient yet energetic』、軟合成手鼓；『靜』不成立。年份 2001 的搜尋摘要說法不採，以 Discogs／MB 2004 為準。
+- 20296：Cortini《AVANTI》moodGuess 存疑（中強）：Brooklyn Rail 寫 somber，低通濾波漸開、類極簡 NIN；單一 EMS Synthi AKS 現場錄、不疊錄；暖度證據弱，同人《Sonno》已落頹靡，列汰換候補。數位首發 2017-10-06，實體 2018-02-02。
+- 20297：Hollie Kenniff《The Gathering Dawn》moodGuess 存疑（強，建議汰換）：n5MD 文案 icy synths、glacial、minimal、sparse modernist、melancholic；色溫偏冷、質地偏疏。
+- 20298：Hollie Kenniff《The Quiet Drift》大致可信：沉靜、撫慰、無詞人聲、無鼓；glacier-fed stream 屬意象，色溫仍建議聽感確認。『在 Western Vinyl 的第一張』未直述，facts 改寫成可查證版本。
+- 20299：Hollie Kenniff《We All Have Places That We Miss》moodGuess 存疑（輕）：Western Vinyl 提到 kosmische 風音序與輕巧不安的後龐克感，ACL 用 downbeat；來源未提鼓。
+- 20300：b 組整體：WebSearch 共用 6 次（超出每支 3 次上限，因 Triola／Kenniff／Cortini 無其他可查來源）；Pitchfork、AllMusic、Discogs 網站、Headphone Commute 擋抓取，Discogs 改走 API；殘響與低頻厚度多數來源未談，一律不寫。
