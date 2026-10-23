@@ -35,3 +35,10 @@
 - 21083　Harrison《Évidence matérielle》年份取原盤 2000（IMED 0052，廠牌頁），MB 2022 為數位重發；cards year 2000 不動。moodGuess 部分存疑：〈Streams〉（以持續波浪起伏為結構）與〈Sorties〉（標題性、具象指涉）偏流動連續；〈Surface Tension〉（dry, brittle）、〈Splintering〉、〈Klang〉符合。整體偏符合但邊距薄。
 - 21084　Justel《Mâts》年份 2007 相符。moodGuess 部分存疑（y）：Nordin 樂評寫到迴響洞穴感、泥流與石牆崩落，但主體仍是細小快變碎片；策展層的 didgeridoo 查無來源，不入 facts。Justel 移居法國年份 Wikipedia 自相矛盾（1988／1998），不寫。
 - 21085　Koenig 雙 CD 年份 1990（BVHaast CD 9001/2）相符，收 1955–1979 作品。moodGuess 存疑：〈Funktion〉系列五首長 6–21 分，用函數產生器直接生成「生硬而直接」的音色，Soundohm 與 noise／drone 並論，可能判持續音；CD I 的 WDR 點描作（Klangfiguren II、Essay、Terminus I）符合。〈Funktion Grün〉不在本套（在 1970 DG LP），已避免混寫。status thin：無逐曲樂評。
+
+## 研究 b 組
+- 21091　Davidovsky《Music of … Vol. 3》身分相符（Bridge 9171，2005）。moodGuess 存疑：6 首中 3 首（Duo Capriccioso、Quartetto、Chacona，約半數時長）是無磁帶的純器樂；有磁帶的三首只有 No. 6 的聽感描述（隨機音符堆、金屬般銳利、嬉鬧到神祕），未見明確寫急促乾薄的樂評。錄音室，非現場。
+- 21092　Davidovsky《Synchronisms》（Ensemble Phoenix Basel）年份 2021-09-03 取 Bandcamp，MB 無日期。**此盤是 Gare du Nord 現場演出錄音**（卡單 curatorRisk 未提），與主線「排除現場錄音」原則衝突，請主線裁定；與 Bridge Vol. 3 重疊 No. 6、No. 9。聽感只有系列通論。
+- 21093　Brün《Wayfaring Sounds》身分相符（EMF CD 0624，1998）。status thin：找不到任何逐曲聽感描述，moodGuess 的「鋸齒波、刺耳、急切切換」無來源可證；全盤約 71 分，含 18 分鐘中提琴加磁帶與 14 分鐘室內樂加磁帶。Wayfaring Sounds 年份 Discogs 1959、Wikipedia 1962（Klänge unterwegs）不一致，facts 兩邊並陳。Discogs 該 CD 標 Mispress，不影響身分。
+- 21094　Roads《Point Line Cloud》身分相符（Asphodel ASP 3000，2005-03-30，CD+DVD；MB 另有 2019 數位重發）。moodGuess 存疑（偏重）：唯一聽感來源寫「粒子雪崩」「液態細流」「模糊聲團」，是密集流動質地，無來源寫尖銳或乾；Sculptor 把鼓拆成一片粒子。
+- 21095　Ankersmit《Homage to Dick Raaijmakers》身分相符（Shelter Press SP096，2018-09-07）。moodGuess 存疑（兩側皆不符）：單曲 34 分鐘，Fluid Radio 寫中段「混亂暴力」「thick burning noise」寬頻噪音爆發（判重），後段轉持續嗡鳴與懸浮（判靜）；僅前段快速嗶聲疊絆符合神經質。建議汰換。
