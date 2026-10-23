@@ -80,9 +80,9 @@
 
   // ── 畫面 ──────────────────────────────────────────────────────────
   const CSS = `
-.tune-app{--pix:'DotGothic16','Space Mono',monospace;position:relative;display:grid;grid-template-columns:1fr;grid-template-rows:minmax(200px,1fr) auto;width:100%;max-width:720px;margin:0 auto;height:100dvh;background:#0b0c10;color:#e9e2c8;font-family:var(--pix);font-size:11px;letter-spacing:.04em;overflow:hidden}
+.tune-app{--pix:'DotGothic16','Space Mono',monospace;position:relative;display:grid;grid-template-columns:1fr;grid-template-rows:minmax(200px,1fr) auto;width:100%;max-width:720px;margin:0 auto;height:var(--tvh,100dvh);background:#0b0c10;color:#e9e2c8;font-family:var(--pix);font-size:11px;letter-spacing:.04em;overflow:hidden}
 /* 轉成橫向（手機側放、矮視窗）才左右並排 */
-@media (orientation:landscape) and (max-height:600px){.tune-app{grid-template-columns:minmax(0,1fr) clamp(300px,calc((100dvh - 24px) / 0.86),48vw);grid-template-rows:minmax(0,1fr);max-width:none}}
+@media (orientation:landscape) and (max-height:600px) and (min-width:560px){.tune-app{grid-template-columns:minmax(0,1fr) clamp(300px,calc((var(--tvh,100dvh) - 24px) / 0.86),48vw);grid-template-rows:minmax(0,1fr);max-width:none}}
 .tune-stage{position:relative;min-width:0;min-height:0;background:#060609;overflow:hidden}
 .tune-stage canvas{display:block;width:100%;height:100%;touch-action:none}
 .tune-stage .tune-hint{position:absolute;left:12px;bottom:10px;font-size:9px;letter-spacing:.14em;color:#777;pointer-events:none}
@@ -113,12 +113,13 @@
 .tune-msg{position:absolute;inset:0;display:grid;place-items:center;color:#9aa088;font-size:12px;text-align:center;padding:20px;line-height:1.8}
 .tune-app [hidden],#tuneApp[hidden],#tuneResultWrap[hidden]{display:none!important}
 .tune-panel{position:relative;min-width:0;min-height:0;display:grid;place-items:end center;padding:10px 10px 0;background:#2c3037 repeating-linear-gradient(135deg,rgba(255,255,255,.025) 0 2px,transparent 2px 9px);border-top:2px solid #14161a;overflow:hidden}
-@media (orientation:landscape) and (max-height:600px){.tune-panel{border-top:0;border-left:2px solid #14161a;padding:12px}}
+@media (orientation:landscape) and (max-height:600px) and (min-width:560px){.tune-panel{border-top:0;border-left:2px solid #14161a;padding:12px}}
 /* 主機由上而下：搜尋列、FREQUENCY（靠左 76% 寬，右側一塊直立的黃銅「就這張」）、輪子模組全寬。整台高 ≈ 1.08 倍寬，依視窗高度反推寬度，一定塞進一個畫面 */
-.tune-console{position:relative;width:min(100%,600px,calc((100dvh - 340px) / 1.08));display:flex;flex-direction:column;align-items:stretch;gap:1.2cqw;container-type:inline-size;user-select:none}
-@media (orientation:landscape) and (max-height:600px){.tune-console{width:min(100%,calc((100dvh - 24px) / 1.08))}}
-/* 手機直放：面板放大塞滿寬度（2026-10-23 店主：左右空位太多），星圖讓出高度 */
-@media (max-width:520px) and (orientation:portrait){.tune-console{width:min(100%,calc((100dvh - 230px) / 1.08))}.tune-panel{padding:8px 6px 0}}
+.tune-console{position:relative;width:min(100%,600px,calc((var(--tvh,100dvh) - 340px) / 1.08));display:flex;flex-direction:column;align-items:stretch;gap:1.2cqw;container-type:inline-size;user-select:none}
+@media (orientation:landscape) and (max-height:600px) and (min-width:560px){.tune-console{width:min(100%,calc((var(--tvh,100dvh) - 24px) / 1.08))}}
+/* 手機直放：面板放大塞滿寬度（2026-10-23 店主：左右空位太多），星圖讓出高度。
+   高度一律用 --tvh（JS 記下的視窗高，打字時鍵盤彈出不更新）：不然 100dvh 跟著鍵盤縮、直式被判成橫式，整台版面會跳成左右並排 */
+@media (max-width:520px){.tune-console{width:min(100%,calc((var(--tvh,100dvh) - 230px) / 1.08))}.tune-panel{padding:8px 6px 0}}
 .tune-mod{position:relative;background-size:100% 100%;background-repeat:no-repeat;image-rendering:pixelated}
 .tune-row1{display:flex;gap:2cqw;align-items:stretch}
 .tune-mod-freq{width:76%;flex:none;aspect-ratio:1438/499;background-image:url(tune/panel-freq.jpg)}
@@ -691,6 +692,12 @@
   // 進場時以站上的開關為準（沒表態過的裝置照舊預設開；第一次碰輪子才寫成開）
   function syncAudioFromPref() { try { const v = cfg.audioPref?.(); if (typeof v === 'boolean') state.audioOn = v; } catch (_) {} }
 
+  // 鍵盤彈出時視窗會變矮，版面不跟著動：搜尋框有焦點就不更新，收起鍵盤（失焦）後再量
+  function trackViewport(host) {
+    const set = () => { if (document.activeElement === el.search) return; host.style.setProperty('--tvh', global.innerHeight + 'px'); };
+    set(); global.addEventListener('resize', set); global.addEventListener('orientationchange', () => setTimeout(set, 250));
+    el.search.addEventListener('blur', () => setTimeout(set, 350));
+  }
   async function build() {
     const host = cfg.host();
     if (!document.getElementById('tuneStyle')) { const st = document.createElement('style'); st.id = 'tuneStyle'; st.textContent = CSS; document.head.appendChild(st); }
@@ -698,6 +705,7 @@
     el = { stage: host.querySelector('#tuneStage'), gl: host.querySelector('#tuneGl'), readout: host.querySelector('#tuneReadout'), spk: host.querySelector('#tuneSpk'), back: host.querySelector('#tuneBack'), now: host.querySelector('#tuneNow'), msg: host.querySelector('#tuneMsg'),
       dx: host.querySelector('#tuneDx'), dy: host.querySelector('#tuneDy'), dz: host.querySelector('#tuneDz'), dcell: host.querySelector('#tuneDcell'), cellStrip: host.querySelector('#tuneCellStrip'),
       mode: host.querySelector('#tuneMode'), lever: host.querySelector('#tuneLever'), hint: host.querySelector('#tuneHint'), search: host.querySelector('#tuneSearch'), searchGo: host.querySelector('#tuneSearchGo'), sugg: host.querySelector('#tuneSugg'), swTop: host.querySelector('#tuneSwTop'), swBot: host.querySelector('#tuneSwBot'), ledTop: host.querySelector('#tuneLedTop'), ledBot: host.querySelector('#tuneLedBot'), draw: host.querySelector('#tuneDraw'), console: host.querySelector('#tuneConsole') };
+    trackViewport(host);
     el.back.onclick = () => cfg.onBack?.();
     // 喇叭鈕與站上頂欄的「自動試聽」開關是同一顆（2026-10-22 店主：切到串流後站上自動關掉網頁音源，
     // 頻率選歌就沒聲音，按喇叭也沒反應）。按下去先回寫站上的開關，再照新狀態開停。
