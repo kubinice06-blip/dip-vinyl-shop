@@ -329,12 +329,8 @@
     "src": "https://api.discogs.com/releases/9852"
    },
    {
-    "f": "Discogs 的風格標籤為 Abstract、IDM、Experimental；Bandcamp 標籤為 electronic、IDM、Miami bass、electro-acoustic、industrial，後者與卡單「抽搐 electro 鼓機」的描述相呼應。",
+    "f": "Discogs 的風格標籤為 Abstract、IDM、Experimental；Bandcamp 標籤為 electronic、IDM、Miami bass、electro-acoustic、industrial。",
     "src": "https://phoenecia.bandcamp.com/album/brownout"
-   },
-   {
-    "f": "Richard Devine 主要在 Schematic 錄音，Schematic 由 Phoenecia 的 Josh Kay 創辦；兩人的作品出現在同一個廠牌脈絡。",
-    "src": "https://en.wikipedia.org/wiki/Richard_Devine"
    },
    {
     "f": "Phoenecia 的後續作品包含 2001 年的《Oddjob Discrimination》、2007 年的《Livelihoods》（Transient Force）、2009 年的《Echelon Mall》與 2011 年的《Demissions》。",
@@ -353,6 +349,170 @@
   ],
   "status": "thin",
   "notes": "moodGuess 存疑：卡單 x 3.6／y −0.1／z −0.9「抽搐 electro 鼓機、乾冷合成器」，但新聞稿說是 dub 取向（質地近 roots dub），且 12 首約 74 分鐘、多為 5 至 9 分鐘長曲；dub 化殘響與長曲可能拉低 x、抬高 y，建議主線以實聽評分為準，若 y 超過 0.4 或 x 掉到 3.4 以下就汰換。年份：卡單 2001 與 Discogs／MB 一致，Bandcamp 記 4 月 19 日（原發行）、MB 為 2001-08，日期不一致但年份同。Discogs 該作 2000 年有 CDr 預聽版，不影響正式年份。facts 第 8 條關於 Devine 屬廠牌脈絡而非本張事實，來源為 Wikipedia。沒有找到可開的樂評（WebSearch 額度已用完、Pitchfork 等被擋）。",
+  "coverage": "thin"
+ },
+ {
+  "key": "desc2:Phoenecia|Demissions",
+  "artist": "Phoenecia",
+  "album": "Demissions",
+  "facts": [
+   {
+    "f": "2011 年 6 月 14 日發行的 CD，是 Schematic（SCH079）與 Detroit Underground（DUCD02）的聯合發行，Digipak 包裝；版權為 Schematic Music Company 2011，發行人 Light Of Man。",
+    "src": "https://api.discogs.com/releases/2923676"
+   },
+   {
+    "f": "Josh Kay 與 Romulo Del Castillo 負責錄音，Josh Kay 設計封面，Dietrich Schoeneman 母帶（未列名）；Fernando Subirats 在〈Frendano〉演唱並彈 tabla。",
+    "src": "https://phoenecia.bandcamp.com/album/demissions"
+   },
+   {
+    "f": "〈Dogness〉內含 Kettel〈My Dogan〉的取樣，Reimer Eising 的聲音也被取樣進這首。",
+    "src": "https://api.discogs.com/releases/2923676"
+   },
+   {
+    "f": "共 10 首、總長約 73 分鐘：開場〈Two-Part Invention For Bodhran & Computer〉12 分 29 秒，〈Livelihoods〉10 分 31 秒收尾，其餘大多在 4 到 9 分鐘之間。",
+    "src": "https://phoenecia.bandcamp.com/album/demissions"
+   },
+   {
+    "f": "曲名〈Two-Part Invention For Bodhran & Computer〉以愛爾蘭手鼓 bodhrán 對電腦，顯示這張混入原聲打擊；Bandcamp 標籤為 electronic、IDM、Miami bass、electro-acoustic、industrial、music for films。",
+    "src": "https://phoenecia.bandcamp.com/album/demissions"
+   },
+   {
+    "f": "Discogs 對這張的風格標示為 Dub、IDM、Experimental、Ambient。",
+    "src": "https://www.discogs.com/master/344407"
+   },
+   {
+    "f": "Detroit Underground 另在 2011 年 7 月 22 日以限量黑膠發行《Good Man Bones》EP，收錄《Demissions》中四首曲子加一首黑膠獨佔曲；CD 限量 Digipak 版 7 月 30 日在 Detund 上架。",
+    "src": "https://phoenecia.bandcamp.com/album/demissions"
+   },
+   {
+    "f": "Phoenecia 是邁阿密的雙人組；Schematic 由 Josh Kay 與 Romulo Del Castillo 創辦（1996 年），專門做 techno、electronica 與各種舞曲形式，這張是他們十年前《Brownout》（2001）之後的後期專輯之一。",
+    "src": "https://en.wikipedia.org/wiki/Schematic_Records"
+   },
+   {
+    "f": "Phoenecia 的專輯時間線：《Brownout》2001、《Livelihoods》2007（Transient Force）、《Echelon Mall》2009、《Demissions》2011、《MD.SLVG》2021、《Solid State Compendium》2022。",
+    "src": "https://musicbrainz.org/ws/2/release-group?query=artist:Phoenecia&fmt=json"
+   }
+  ],
+  "hookCandidates": [
+   "開場曲是 12 分半的《給 bodhrán 與電腦的雙聲部創意曲》，愛爾蘭手鼓對上電腦。",
+   "兩個邁阿密人 2011 年和底特律的地下廠牌 Detroit Underground 聯合發行，還有一首取樣自 Kettel。"
+  ],
+  "sound": "有鼓與打擊：bodhrán 手鼓、tabla 與電腦節拍並置，Discogs 標 Dub／IDM／Ambient；曲長多在 5 至 12 分鐘，開場 12 分 29 秒、收尾 10 分 31 秒；缺樂評層級的 BPM、低頻描述。",
+  "keyTracks": [
+   "Two-Part Invention For Bodhran & Computer",
+   "Dogness",
+   "Mushroom Cloud Over Miami"
+  ],
+  "status": "thin",
+  "notes": "moodGuess 存疑（重）：卡單 x 3.6／y 0／z −1「碎拍 electro IDM，乾而冷」，但 Discogs 風格標 Dub／IDM／Experimental／Ambient、10 首約 73 分鐘、兩首超過 10 分鐘、含 tabla 人聲與 bodhrán 原聲打擊；ambient 與 dub 化慢段多可能讓 x 低於 3.0、y 高於 0.5，建議主線以實聽評分為準，不符就汰換。查無樂評（Bandcamp 頁沒有說明文字、Pitchfork 等被擋、WebSearch 額度已用完）。年份 2011 與 MB／Discogs／Bandcamp 一致。卡單 label 為 Detroit Underground，實際是 Schematic／Detund 聯合發行（SCH079／DUCD02），兩者皆對。",
+  "coverage": "thin"
+ },
+ {
+  "key": "desc2:Funkstörung|Appetite for Disctruction",
+  "artist": "Funkstörung",
+  "album": "Appetite for Disctruction",
+  "facts": [
+   {
+    "f": "2000 年 4 月 25 日由 !K7（Studio !K7）在德國發行的首張個人專輯，目錄號 !K7087CD，另有 12 吋 !K7087LP；封面與包裝由 The Designers Republic 設計，是附八頁折頁的特製水晶盒，包裝上自稱可生物分解。",
+    "src": "https://api.discogs.com/releases/9796"
+   },
+   {
+    "f": "Funkstörung 是德國 Rosenheim 的雙人組 Michael Fakesch 與 Chris de Luca，1992 年在 Fakesch 辦的 techno 派對上認識，之後一起做音樂。",
+    "src": "https://en.wikipedia.org/wiki/Funkst%C3%B6rung"
+   },
+   {
+    "f": "首張之前先有 1999 年的混音合輯《Additional Productions》，收錄他們為 Björk〈All Is Full of Love〉、Wu-Tang Clan〈Reunited〉等的混音，贏得國際讚譽；維基稱這張首專輯花了五年才做成。",
+    "src": "https://en.wikipedia.org/wiki/Appetite_for_Disctruction"
+   },
+   {
+    "f": "專輯有說唱與人聲客座：MC Triple H 唱〈Sounds Like A Breakrecord〉與〈Grammy Winners〉，Greenwood 唱〈Think!〉，Carin Feldschmid 唱〈I/O〉與〈Red Shirt, White Shoes〉。",
+    "src": "https://api.discogs.com/releases/9796"
+   },
+   {
+    "f": "Discogs 的風格標籤是 IDM 與 Glitch Hop；AllMusic 的 Brian Musich 形容「Funkstörung 創造出令人抓狂的複雜聲景」，CMJ 稱它是「若 Afrika Bambaataa 受啟發的是 Autechre 而非 Kraftwerk，會做出的音樂」。",
+    "src": "https://en.wikipedia.org/wiki/Appetite_for_Disctruction"
+   },
+   {
+    "f": "全盤 11 首、約 60 分鐘，前十首多在 3 到 5 分半，曲子偏短而緊；第 11 首〈Mind The Gap〉約 17 分鐘，含一段環境 drone 與短短的口白收尾。",
+    "src": "https://api.discogs.com/releases/9796"
+   },
+   {
+    "f": "包裝上標示「Biodegradable Audio Technology」，作曲署名 Chris De Luca 與 Michael Fakesch；之後 2004 年有《Disconnected》，2006 年雙人組宣布解散，2015 年在 Monkeytown 再發同名專輯。",
+    "src": "https://en.wikipedia.org/wiki/Funkst%C3%B6rung"
+   },
+   {
+    "f": "1998 年他們與 Björk 以「Björk Mit Funkstörung」名義發行〈All Is Full of Love〉的混音單曲，是這對雙人組最早的出圈作品，之後才有 1999 年的混音合輯與 2000 年的首張專輯。",
+    "src": "https://en.wikipedia.org/wiki/Funkst%C3%B6rung"
+   }
+  ],
+  "hookCandidates": [
+   "先靠替 Björk 和 Wu-Tang 做混音出名，首張個人專輯卻花了五年。",
+   "包裝自稱「可生物分解」，11 首的最後一首長達 17 分鐘。"
+  ],
+  "sound": "有鼓：剪碎的 breakbeat 與數位切割節奏，帶說唱人聲（Triple H、Greenwood）；CMJ 以 Afrika Bambaataa 與 Autechre 比喻；前十首多為 3 至 5 分鐘短曲；缺 BPM 與低頻的具體描述。",
+  "keyTracks": [
+   "Sounds Like A Breakrecord",
+   "Grammy Winners",
+   "Think!"
+  ],
+  "status": "full",
+  "notes": "moodGuess 存疑（中）：卡單 curatorRisk 成立，專輯含 MC Triple H 與 Greenwood 的說唱、Carin 人聲，z 可能貼 −0.3 或更暖；第 11 首 17 分鐘含 ambient drone，但前十首短而緊，x 3.5 合理。最後一條 facts 的「節奏是剪碎的 breakbeat」出自曲名與 Discogs 風格標籤推論，主要樂評文字未能開啟，樂評層證據僅 AllMusic、CMJ 的維基轉引。年份 2000 與 MB／Discogs 一致；曲數 Discogs 把第 11 首分成四個子軌。WebSearch 用 0 次。",
+  "coverage": "full"
+ },
+ {
+  "key": "desc2:Richard Devine|Lipswitch",
+  "artist": "Richard Devine",
+  "album": "Lipswitch",
+  "facts": [
+   {
+    "f": "Discogs 與 Warp 的發行紀錄把《Lipswitch》登記為 Mini-Album：8 首，約 38 分鐘；Schematic 版目錄號 SCH015，Warp 版 WAP139CD（CD）與 WAP139（12 吋）；MusicBrainz 登記的首發日為 2001 年 1 月 15 日，Discogs 的部分版本標 2000 年。",
+    "src": "https://api.discogs.com/masters/1511/versions"
+   },
+   {
+    "f": "版權頁寫明「P & C Schematic Music Company 2000，獨家授權 Warp Records Limited，範圍為美國與加拿大以外的全世界」；Richard Devine 一人包辦編程、編曲、工程與製作，錄音地點是 The Schematic Complex。",
+    "src": "https://api.discogs.com/releases/1571738"
+   },
+   {
+    "f": "Richard Devine 是亞特蘭大的電子音樂人與聲音設計師，1995 年起活動；Autechre 對他的稱讚與他重混 Aphex Twin〈Come to Daddy〉的版本，讓他得到為 Warp 錄專輯的機會，作品由 Schematic 與 Warp 聯合發行。",
+    "src": "https://en.wikipedia.org/wiki/Richard_Devine"
+   },
+   {
+    "f": "Warp 當時的美國籍音樂人極少：維基在 Prefuse 73《Vocal Studies + Uprock Narratives》條目寫道，那張是 Warp 的第二張美國音樂人作品，前一張就是 Devine 於前一年 1 月發行的《Lipswitch》。",
+    "src": "https://en.wikipedia.org/wiki/Vocal_Studies_%2B_Uprock_Narratives"
+   },
+   {
+    "f": "他主要在邁阿密的 Schematic 錄音，該廠牌由 Phoenecia 的 Josh Kay 創辦；兩人也以 DEVSND 名義合作。",
+    "src": "https://en.wikipedia.org/wiki/Richard_Devine"
+   },
+   {
+    "f": "Devine 大約 1993 年開始用電腦作曲，在 Atlanta College of Art 由 Don Hassler 帶入 Csound，後來用 SuperCollider 寫自己的 FFT 工具；常用 Native Instruments 的 Reaktor 與 Absynth，也用過 ReBirth 與 Reason。",
+    "src": "https://en.wikipedia.org/wiki/Richard_Devine"
+   },
+   {
+    "f": "維基形容他的聲音是「層層堆疊、重度加工」，把 glitch 與新舊電子音樂混合；Discogs 的風格標籤是 Abstract 與 IDM。",
+    "src": "https://en.wikipedia.org/wiki/Richard_Devine"
+   },
+   {
+    "f": "曲目為逗號式的程式語彙命名：〈Resource, Leak〉、〈Route, Increment〉、〈Swap, Trigger〉、〈Block, Variation〉、〈Scatter, Fold, 28〉、〈Lens, Align〉，最長是〈Patelle〉6 分 53 秒與〈Swap, Trigger〉6 分 46 秒，最短是 1 分 3 秒的〈Route, Increment〉。",
+    "src": "https://api.discogs.com/masters/1511"
+   },
+   {
+    "f": "後來他的專輯有《Aleamapper》（2001）、《Asect:Dsect》（2003）、《Cautella》（2005）、《RISP》（2012）等；也替 Nike 與 Touchstone Pictures 配過廣告，與 BT 合作電影《Look》。",
+    "src": "https://en.wikipedia.org/wiki/Richard_Devine"
+   }
+  ],
+  "hookCandidates": [
+   "Warp 簽的少數美國人之一：Autechre 的稱讚加一個 Aphex Twin 重混，換來一張 8 首的迷你專輯。",
+   "曲名全是程式指令式的逗號短語：Swap, Trigger、Block, Variation。"
+  ],
+  "sound": "重度加工、層層堆疊的 IDM 與 glitch（維基形容），曲名取自程式指令，8 首約 38 分鐘；Discogs 標 Abstract／IDM；缺樂評層級的鼓重、BPM、低頻描述。",
+  "keyTracks": [
+   "Patelle",
+   "Swap, Trigger",
+   "Kepter"
+  ],
+  "status": "thin",
+  "notes": "推翻／修正策展層與卡單：(1) curatorWhy 寫「Richard Devine 的 Warp 專輯」，但卡單 label 為 Schematic；實為 Schematic（SCH015）與 Warp（WAP139）聯合發行，兩者都對。(2) 這張在 Discogs 是 Mini-Album（8 首約 38 分鐘），不是一般長度專輯，MB 則列為 Album；已在 notes 標明性質，建議主線留意卡面不要寫成「長篇」。(3) 年份：MB 2001-01-15，Discogs 多版本標 2000（含 2000 年 Schematic 12 吋特別版）與 2001；卡單 2001 可保留，但維基將 Warp 版標為前一年 1 月，Discogs 主版年份為 2000，主線擇一；本稿 facts 已並陳。moodGuess 存疑：x 4.0／y 0／z −1.2「高速金屬碎拍」找不到任何樂評或來源支持（Pitchfork／Warp／Discogs 網頁 403、WebSearch 額度已用完），curatorRisk 的 y 可能被判 0.3 也無法驗證，建議主線以實聽評分為準。",
   "coverage": "thin"
  }
 ]

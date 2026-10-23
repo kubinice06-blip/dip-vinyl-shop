@@ -28,3 +28,15 @@
 - 11524：Damon Wild《Colortheory》RA 小傳寫 1998，Discogs／MB 皆 2001，採 2001；Oliver Ho 兩張與 Damon Wild 因查無針對這張的聲音樂評，聲音事實限於 Discogs 風格標籤與廠牌簡介，status 標 thin。Prima Materia 實為 2×12 吋 EP（MB 列 Album），寫作層寫雙 12 吋。
 - 11525：Kit Clayton《Repetition and Nonsense》Discogs 6 首、Scaruffi 7 首，採 Discogs；風格含 Dub Techno，Scaruffi 稱重點在旋律與動態、含 downtempo 段，x 可能 <3.0，moodGuess 存疑。
 - 11526：WebSearch 3 次用於 TV Victor、Oliver Ho Prima Materia、Kit Clayton（皆無專屬樂評）；Pitchfork／AllMusic／Discogs 網頁 403，RA 評論頁無這幾張，Jeff Mills 兩張 BPM 與 kick 厚薄全組查無來源。
+
+## 研究 c 組
+- 11501：Atom™《HD》找不到可開的樂評（WebSearch 額度在前三張用完，Pitchfork／AllMusic／Discogs 網頁 403），聲音層只有 Bandcamp 廠方說明與 Discogs 人聲／吉他／貝斯客座名單，status 標 thin；moodGuess 存疑：含 Jamie Lidell 主唱、The Who〈My Generation〉翻唱、Jorge González 吉他與貝斯，y／z 可能偏暖偏重。
+- 11502：Phoenecia《Brownout》Bandcamp 新聞稿稱「電子 dub 唱片」、質地近 1970 年代 roots dub，12 首約 74 分鐘、多為 5 至 9 分鐘長曲，推翻 curatorWhy「抽搐 electro 鼓機、乾冷合成器」的單一印象；moodGuess 存疑（dub 化、長曲），建議以實聽評分為準，y>0.4 或 x<3.4 就汰換。發行日 Bandcamp 4/19、MB 2001-08，年份同為 2001。
+- 11503：Phoenecia《Demissions》Discogs 風格標 Dub／IDM／Experimental／Ambient，10 首約 73 分鐘含兩首超過 10 分鐘與 tabla 人聲，moodGuess 存疑（重）：ambient／dub 慢段多，x 可能低於 3.0；無樂評，status thin。實為 Schematic（SCH079）與 Detroit Underground（DUCD02）聯合發行。
+- 11504：Richard Devine《Lipswitch》在 Discogs 是 Mini-Album（8 首約 38 分鐘），Schematic SCH015 與 Warp WAP139 聯合發行，curatorWhy「Warp 專輯」與卡單 label Schematic 並非矛盾；年份 MB 2001-01-15、Discogs 多版本 2000 與 2001，facts 並陳，卡單 2001 可留。查無任何聲音樂評，「高速金屬碎拍」無法驗證，status thin，moodGuess 存疑。
+- 11505：SND《Atavism》卡單 why「切碎 R&B 律動」與樂評不符（Igloo：拿掉 garage 搖擺、回到 bleep techno、幾乎無低音、全在中高頻），聲音事實以 Igloo 與 FACT 為準；x 3.4 貼邊疑慮成立。
+- 11506：Beatrice Dillon《Workaround》「150bpm」只有 The Quietus 單一來源，其餘未見 bpm；原聲打擊（tabla、kora）與大提琴、薩克斯風、Laurel Halo 人聲、Untold 吉他使 z 可能判中性（curatorRisk 成立）；Discogs 2/6、維基 2/7，採 2020。
+- 11507：Frank Bretschneider《Super.Trigger》Cyclic Defrost 與 Captain Fez 皆稱〈Big.Hopes〉〈Day.Dream〉大鼓「震得動窗」、〈Over.Load〉偏 dub 低音，moodGuess 存疑（低頻不薄，y 可能高於 −0.5）；標題曲是 Disscoxx 2007 作品的未發表混音，〈Over.Load〉是 2003 舊作改良版。
+- 11508：Mark Fell《Multistability》curatorWhy 的 FM 音色查無來源，facts 不寫；樂評稱乾淨數位合成加類比打擊，局部有底特律銅管刺音，整體仍乾冷。
+- 11509：Funkstörung《Appetite for Disctruction》含 MC Triple H、Greenwood 說唱與 Carin 人聲，z 可能貼 −0.3 以上（curatorRisk 成立）；樂評層僅 AllMusic、CMJ 的維基轉引，BPM 與低頻查無。
+- 11510：WebSearch 3 次用於 Super.Trigger、Multistability、SND Atavism（其餘六張改用 Discogs／MB／iTunes API、Bandcamp、維基、The Quietus、Igloo、FACT 的 WebFetch）；Pitchfork／Guardian／AllMusic／Discogs 網頁 403 或被擋。thin 四張：Atom™ HD、Brownout、Demissions、Lipswitch；full 五張。無推翻身分，沒有建議移除。
