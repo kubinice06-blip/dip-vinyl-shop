@@ -11,13 +11,25 @@
    "id": "torch-downtempo",
    "zh": "trip-hop／downtempo／dub 製作的 torch 人聲",
    "why": "擴寫 (1)：帶人聲、暖、慢、低頻厚的 downtempo 與 dub 化人聲盤",
-   "count": 4
+   "count": 5
   },
   {
    "id": "alt-rnb",
    "zh": "alt R&B／neo-soul 2010s–20s 霧而暖",
    "why": "擴寫 (3)：ml8 路線二線，濕、慢、暖",
    "count": 10
+  },
+  {
+   "id": "jp-neosoul",
+   "zh": "日本 neo-soul／beat 慢盤（ml22）",
+   "why": "第二輪 (1)：濕、慢、暖、低頻厚的日本 neo-soul；池中 SIRUP、iri 判雀躍，只收有『厚／夢幻』聲音來源的",
+   "count": 2
+  },
+  {
+   "id": "vocal-dub",
+   "zh": "lovers／vocal dub 與 roots 人聲二線",
+   "why": "第二輪 (2)：有旋律人聲、暖、慢、類比濕混音或 dub 化的 reggae 人聲盤；器樂冷硬 dub 不收",
+   "count": 6
   }
  ],
  "albums": [
@@ -574,14 +586,283 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "y 可能 0.6–0.8"
+  },
+  {
+   "artist": "mabanua",
+   "album": "Blurred",
+   "year": 2018,
+   "label": "origami PRODUCTIONS",
+   "country": "jp",
+   "faction": "jp-neosoul",
+   "genres": [
+    "soul",
+    "hiphop"
+   ],
+   "why": "mabanua 隔六年的個人盤，一人包辦全部樂器與混音；OTOTOY 廠牌文案寫「太くタイトなビート」「淡く浮遊感」「ドリーミー」：厚拍＋夢幻合成器墊的慢 beat neo-soul",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "厚實慢拍、夢幻浮遊合成墊，略帶切なさ"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0c80802d-1a93-4ab0-bef5-df935f7e68f9",
+    "https://coverartarchive.org/release-group/0c80802d-1a93-4ab0-bef5-df935f7e68f9",
+    "https://music.apple.com/us/album/blurred/1411299200",
+    "https://ototoy.jp/_/default/p/142972"
+   ],
+   "mbRgMbid": "0c80802d-1a93-4ab0-bef5-df935f7e68f9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ml41 汰過他《Done Already》（人聲曲多、頻譜亮）；本作文案強調厚拍與夢幻感，但『浮遊感』也可能被判輕；z 帶切なさ，可能只到 +0.3–0.5"
+  },
+  {
+   "artist": "Kan Sano",
+   "album": "Ghost Notes",
+   "year": 2019,
+   "label": "origami PRODUCTIONS",
+   "country": "jp",
+   "faction": "jp-neosoul",
+   "genres": [
+    "soul",
+    "jazz"
+   ],
+   "why": "Kan Sano 一人錄完的 neo-soul 盤，Real Sound 訪談說出發點是重新面對 10–20 代聽的 neo-soul、改以生樂器為主，和前作打碟快歌化的《k is s》相反：慢、Rhodes、Dilla 式拖拍",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.9,
+    "why": "慢 neo-soul 拖拍，Rhodes 與生貝斯，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3f8e7ec8-8a78-4d0a-b82d-c58ea25e0fee",
+    "https://coverartarchive.org/release-group/3f8e7ec8-8a78-4d0a-b82d-c58ea25e0fee",
+    "https://music.apple.com/us/album/ghost-notes/1456577814",
+    "https://realsound.jp/2019/05/post-363866_2.html",
+    "https://kan-sano.bandcamp.com/album/ghost-notes"
+   ],
+   "mbRgMbid": "3f8e7ec8-8a78-4d0a-b82d-c58ea25e0fee",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "生樂器為主可能錄得乾淨、y 只到 0.5–0.7（ml41 曾估 0.6）；研究層查低頻／霧感證據"
+  },
+  {
+   "artist": "Groundation",
+   "album": "Hebron Gate",
+   "year": 2002,
+   "label": "Young Tree Records",
+   "country": "us",
+   "faction": "vocal-dub",
+   "genres": [
+    "world",
+    "jazz"
+   ],
+   "why": "加州爵士化 roots reggae 樂團的代表作，Don Carlos、The Congos 客座和聲：慢、長段 dub 化 jam、厚貝斯與管樂，人聲旋律清楚溫熱；池中其 dub 版《Dub Wars》y 1.4 落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "慢 roots，厚貝斯與回音，和聲溫熱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7c14a8ee-50ae-323b-9b89-53ff2fa5612e",
+    "https://coverartarchive.org/release-group/7c14a8ee-50ae-323b-9b89-53ff2fa5612e",
+    "https://music.apple.com/us/album/hebron-gate-feat-don-carlos-the-congos/131627719"
+   ],
+   "mbRgMbid": "7c14a8ee-50ae-323b-9b89-53ff2fa5612e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "現場樂團錄音、爵士獨奏多，y 可能 0.6–0.8；MB 首發 2003-01，iTunes 標 2002，年份取 2002 待研究層確認"
+  },
+  {
+   "artist": "Groundation",
+   "album": "Upon the Bridge",
+   "year": 2006,
+   "label": "Young Tree Records",
+   "country": "us",
+   "faction": "vocal-dub",
+   "genres": [
+    "world",
+    "jazz"
+   ],
+   "why": "Groundation 中期錄音室盤：慢、長篇、dub 化的爵士 roots，厚貝斯、回音、女聲和聲與管樂，溫熱",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "慢長篇 roots，厚低頻與回音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/73165c14-7b51-322f-ae81-a28d5b4e1444",
+    "https://coverartarchive.org/release-group/73165c14-7b51-322f-ae81-a28d5b4e1444",
+    "https://music.apple.com/us/album/upon-the-bridge/202243465"
+   ],
+   "mbRgMbid": "73165c14-7b51-322f-ae81-a28d5b4e1444",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上：y 風險 0.6–0.8"
+  },
+  {
+   "artist": "Midnite",
+   "album": "Ras Mek Peace",
+   "year": 1999,
+   "label": "",
+   "country": "vi",
+   "faction": "vocal-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "美屬維京群島 roots 樂團 Midnite 的早期盤：極慢、低頻厚重、回音長的催眠 roots，Vaughn Benjamin 的低吟人聲",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": 0.4,
+    "why": "極慢 roots，低頻厚重、回音長"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6fc16a51-4300-3c91-a1b2-1322e13e1e01",
+    "https://coverartarchive.org/release-group/6fc16a51-4300-3c91-a1b2-1322e13e1e01",
+    "https://music.apple.com/us/album/ras-mek-peace/1874437765"
+   ],
+   "mbRgMbid": "6fc16a51-4300-3c91-a1b2-1322e13e1e01",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "人聲近吟誦、旋律不算鮮明，色溫可能 0～+0.4（貼邊風險）；廠牌未確認"
+  },
+  {
+   "artist": "Little Roy",
+   "album": "Battle for Seattle",
+   "year": 2011,
+   "label": "Ark Recordings",
+   "country": "jm",
+   "faction": "vocal-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "老牌 roots 歌手 Little Roy 用 Prince Fatty 的類比復古 dub 製作翻唱 Nirvana：慢、厚低頻、濕回音，旋律全是唱得出來的歌；池中 Prince Fatty 三張 y 1.1–1.4 全落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 1.0,
+    "why": "類比復古 dub，厚低頻與濕回音，旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/13a02904-6ab4-4c71-ba61-5c6842910666",
+    "https://coverartarchive.org/release-group/13a02904-6ab4-4c71-ba61-5c6842910666",
+    "https://music.apple.com/us/album/battle-for-seattle/1779513314"
+   ],
+   "mbRgMbid": "13a02904-6ab4-4c71-ba61-5c6842910666",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "廠牌待研究層確認"
+  },
+  {
+   "artist": "Capital Letters",
+   "album": "Headline News",
+   "year": 1979,
+   "label": "Greensleeves",
+   "country": "gb",
+   "faction": "vocal-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "英國 Wolverhampton roots 樂團的唯一 Greensleeves 專輯：慢 roots、厚貝斯、和聲溫熱，UK roots 二線",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.8,
+    "z": 0.7,
+    "why": "慢 roots，厚貝斯，和聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/af1134e9-81fc-4c71-beaa-ad17afd13b0c",
+    "https://coverartarchive.org/release-group/af1134e9-81fc-4c71-beaa-ad17afd13b0c",
+    "https://music.apple.com/us/album/headline-news/428082585"
+   ],
+   "mbRgMbid": "af1134e9-81fc-4c71-beaa-ad17afd13b0c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "iTunes 版 17 軌可能含 dub／加曲；UK roots 部分偏 steppers，研究層查速度與冷硬度"
+  },
+  {
+   "artist": "Black Roots",
+   "album": "Black Roots",
+   "year": 1983,
+   "label": "Kick Records",
+   "country": "gb",
+   "faction": "vocal-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "Bristol roots 樂團首張：慢、厚低頻、和聲溫熱的 UK roots；池中其《Natural Reaction》y 0.7 落恍惚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.8,
+    "z": 0.7,
+    "why": "慢 UK roots，厚貝斯、和聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6354b6ac-2f9d-4572-b8db-28d11f6da120",
+    "https://coverartarchive.org/release-group/6354b6ac-2f9d-4572-b8db-28d11f6da120",
+    "https://music.apple.com/us/album/black-roots/378355896"
+   ],
+   "mbRgMbid": "6354b6ac-2f9d-4572-b8db-28d11f6da120",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能 0.6–0.8；廠牌 Kick Records 待確認"
+  },
+  {
+   "artist": "Moodswings",
+   "album": "Moodfood",
+   "year": 1992,
+   "label": "Arista",
+   "country": "gb",
+   "faction": "torch-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "英國 ambient／downtempo 雙人組首張，Chrissie Hynde 唱〈Spiritual High〉：慢、厚合成墊與 dub 低頻、長殘響，暖",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.0,
+    "z": 0.6,
+    "why": "慢 ambient-dub，厚合成墊、長殘響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cc24be1c-a07c-303a-b0a6-95a95abb2fdc",
+    "https://coverartarchive.org/release-group/cc24be1c-a07c-303a-b0a6-95a95abb2fdc",
+    "https://music.apple.com/us/album/moodfood/1710808140"
+   ],
+   "mbRgMbid": "cc24be1c-a07c-303a-b0a6-95a95abb2fdc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "數曲 house 中速，x 可能 2.7–2.9"
   }
  ],
  "notes": [
-  "見底：照實交 19 張，不湊數。主場景（爵士人聲 torch）是死池：池中經典 torch／with strings 盤全判輕（Julie London y −0.8～−1.8、Billie Holiday −0.3～−1.3、Sinatra、Chet Baker、Carmen McRae、Sarah Vaughan、Nancy Wilson、Dusty、Etta James 全落放鬆），Larry Klein／Craig Street 型也判輕（Peyroux、Cassandra Wilson 多數、Norah Jones、Melody Gardot 兩張），只有 quiet storm 爵士靈魂與 trip-hop／dub 化製作會落重。",
+  "第一輪 19 張見底（第二輪另補，見末條）：照實交 19 張，不湊數。主場景（爵士人聲 torch）是死池：池中經典 torch／with strings 盤全判輕（Julie London y −0.8～−1.8、Billie Holiday −0.3～−1.3、Sinatra、Chet Baker、Carmen McRae、Sarah Vaughan、Nancy Wilson、Dusty、Etta James 全落放鬆），Larry Klein／Craig Street 型也判輕（Peyroux、Cassandra Wilson 多數、Norah Jones、Melody Gardot 兩張），只有 quiet storm 爵士靈魂與 trip-hop／dub 化製作會落重。",
   "主場景能收的頭牌（Sade、Anita Baker 5 張、Kem 4 張、Lalah 3 張、Will Downing、Phyllis Hyman、Sweetback、Lovage、Alpha、Esthero、Dot Allison、Martina Topley-Bird、Hope Sandoval、Tindersticks《Can Our Love》、Hawley《Coles Corner》、Isaac Hayes）都已在池；只撿到各人缺的那一張（Anita《Compositions》、Kem《Love Always Wins》、Lalah《Honestly》）與 Meshell 兩張、Malia & Boris Blank、Vanessa Daou。",
   "刻意不收（池中同人判輕／判冷或他組已提）：Jay-Jay Johanson（md9 判輕）、Puma Blue（夜色偏冷，z 貼邊）、Jessie Ware《Devotion》（z 貼邊）、Twin Danger（y／z 皆無把握）、Bitter:Sweet、Supreme Beings、Morcheeba 其餘、Hooverphonic《Jackie Cane》（池中同人 z 0.2）、Chet Faker、FKJ、Céu、Terrace Martin、Corinne Bailey Rae、Rhye（池中判輕）、dvsn 其餘（z 0.2）、Will Downing 晚期（ml49／ml52 smooth jazz 汰除先例）、Maysa（smooth jazz 風險）、Brenda Russell、Phil Perry 型 80 年代末數位抒情（判輕先例）、Phyllis Hyman 其餘、Lewis Taylor《Stoned》、Gallant、Sinead Harnett、UMI、Orion Sun、Joyce Wrice（y 恐 ≤0.6）。",
   "dub／reggae 人聲二線全查過：Wailing Souls、Don Carlos、Hugh Mundell、Bim Sherman、Mighty Diamonds、Israel Vibration、Junior Murvin、Max Romeo、George Faith、Heptones、Prince Fatty、Easy Star、Rhythm & Sound、Burning Spear、Augustus Pablo、Bunny Wailer 全已在池或他組已提，本批 dub 只有 Meshell《Comet》與 One Dove 兩張 dub 化人聲盤。ml22 日本 neo-soul 池中 SIRUP、iri、WONK 判雀躍／貼邊（ml22 已暫停），只收 UA《AMETORA》一張 dub 化盤。",
   "同名不同人：R&B 歌手 Leon Thomas（2023）≠ 池中 60 年代爵士歌手 Leon Thomas，上線時藝人要分開。Alex Isley & Jack Dine 照 MB 合掛名。",
-  "身分全部 MB 釘住、封面全有 CAA；WebSearch 1 次（無收穫），其餘靠 MB／iTunes API 與維基 trip hop 藝人表。"
+  "第二輪（2026-10-23）補 9 張（不湊數）：ml22 日本 neo-soul 2（mabanua《Blurred》、Kan Sano《Ghost Notes》，各附 OTOTOY／Real Sound 聲音來源）、vocal dub／roots 6、downtempo 1（Moodswings）。ml22 其餘查無聲音來源或判輕風險高而不提：TENDRE、yonawo（MB 查無）、WONK 其餘（池中《Sphere》y 0.6 貼邊）、Kan Sano《k is s》（全打碟、快歌化）、mabanua《Only the Facts》（同《Done Already》型）、SIRUP／iri（池中雀躍／沸騰）、Ovall（ml41 判乾淨）、Michael Kaneko、AAAMYYY。ml27 sample-based ambient pop 0 張：池中 Avalanches 沸騰／雀躍、The Books、Four Tet、Lemon Jelly、Jan Jelinek 判輕，Casino Versus Japan、Teebs、Shigeto、Small Black、Teen Daze 貼邊或已在池，Shigeto《Lineage》MB 是 EP、Lone 早期盤 x 貼邊。dub 二線再查：Prince Alla《Only Love Can Conquer》是 Blood & Fire 單曲彙編、不收；Easy Star 其餘照 ml50 Radiodread 先例不收；Salmonella Dub ml15 已提。",
+  "身分全部 MB 釘住、封面全有 CAA；WebSearch 第一輪 1 次、第二輪 2 次（共 3 次）（無收穫），其餘靠 MB／iTunes API 與維基 trip hop 藝人表。"
  ]
 }
