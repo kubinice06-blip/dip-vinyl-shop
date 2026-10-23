@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格線改依店主「體感標準」：冷冽轉向自由爵士／現代古典／glitch，拿掉旋律清楚的 synth-pop
+
+- **內容**：店主「我已經改標準了 你檢視一下」→「可以」。檢視時發現評分說明書更新與全池重判已由另一工作階段完成（`felt-rejudge`，1,343 張；能量＝體感、色溫＝聲響溫度＋旋律清楚度），本工作階段只做補卡佇列與派工單：`CUR-DISPATCH.md` 共通節、頹靡節、冷冽節改依體感標準（冷冽＝讓神經繃起來＋尖細＋旋律不明；旋律清楚的 synth-pop 落雀躍；安靜但緊繃也算躁；壓人下沉的 doom 可收進頹靡）；`SCENES.md` 優先序改排 21–31，新增冷冽場景 mc31 AACM／loft jazz、mc32 無調現代古典、mc33 glitch／microsound、mc34 日本前衛即興、mc35 RIO 尖細那半，重開 mc4／mc14／mc22／mc28，暫停 synth-pop／new wave／K-pop／synthwave 續集與 ml14 spiritual jazz（體感標準判冷）。目前八格 恍惚 1,126、頹靡 1,279、冷冽 1,287。
+- **主要檔案**：`batch-progress/mood-cells-20261022/{CUR-DISPATCH.md,SCENES.md}`。
+- **驗證**：文件改動；八格取自 origin/main 上 `build-card-moods.mjs` 輸出（gate 綠）。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 4 輪 ml10／mc15：cosmic soul／psych soul 19＋冷浪潮／輕 EBM／冷快電子 19 張上線，落格 16/19、18/19
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 4 輪，本工作階段負責 ml10、mc15。ml10（`add-20261023-ml10`，恍惚：psychedelic／cosmic soul＋ml14 spiritual jazz）：Georgia Anne Muldrow《Vweto》《VWETO II》、Shafiq Husayn《The Loop》、Matt Martians 2、Salami Rose Joe Louis、Gabriel Garzón-Montano《Jardín》、Monophonics《Sage Motel》、Adrian Quesada《Boleros psicodélicos》I／II、Lewis Taylor《Lewis II》《NUMB》、Meshell Ndegeocello《Comfort Woman》《Bitter》、SAULT《AIR》《Acts of Faith》、Alice Coltrane《Lord of Lords》、Miguel Atwood-Ferguson《Les Jardins Mystiques Vol.1》、Les McCann《Invitation to Openness》。mc15（`add-20261023-mc15`，冷冽：法比冷浪潮／輕 EBM＋mc24 dnb＋mc18 冷快電子）：The Neon Judgement、Snowy Red、The Weathermen、Moskwa TV、And One 2、Welle: Erdball 3、Marie Davidson、Essaie pas、Komputer 2、Gábor Lázár 3、Mark Fell《Manitutshu》、Mark Fell & Gábor Lázár、UnderViewer。兩批都挖不到 45，照實上架。
