@@ -13,3 +13,10 @@
 - `genres` 一律 `electronic`。
 - 研究層每支 WebSearch ≤3；facts 必含 2–3 條聲音事實；與 moodGuess 不符的標「moodGuess 存疑」——**特別是 kick 厚重、工業硬、dub 化殘響、ambient 化慢段多、house 和弦或人聲暖的**。
 
+
+## 研究 a 組
+- 11481：Grounded in Existence 的 Discogs 風格為 IDM／Downtempo，RA 稱低調點頭，判斷 x 可能低於 3.0，列「moodGuess 存疑・汰換候選」，facts 照實寫。
+- 11482：Live Extracts 年份以 2003（Discogs／MB／Apple）為準，不採 Wikipedia 的 2002；Grounded 以 2005 為準，不採 Wikipedia 的 2004。
+- 11483：Gaiser 國籍三源衝突（RA 美國、MB 德國、起始地 Grand Rapids），facts 只寫起始地，不寫國籍；「M_nus 首張專輯」查不到，不寫。
+- 11484：Restore 卡單 label 空白，補 M_nus（Minus Inc.）；Houle 三張與 Tokyo+1、Live Extracts 因缺專屬樂評標 thin，聲音事實用藝人整體風格描述並在 facts 內標明非專屬。
+- 11485：WebSearch 3 次用於 Klick、Blank Fade（無結果）、Stabiles；Pitchfork 被封鎖、RA 搜尋頁無內文，Tokyo+1 的人聲切片比例無法證實。
