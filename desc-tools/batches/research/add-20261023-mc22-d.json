@@ -170,5 +170,173 @@
   "status": "full",
   "notes": "【身分】MB RG 38cb1b55 2012-06-26 與 Pi（PI43）、Discogs 3606933 一致。Pi 頁說『sixth-track』但 Discogs 與實際為七軌（含朗讀軌），以七軌為準。【吉他】Wikipedia 說 Ellman 為原音吉他，Discogs 只寫 Guitar，facts 寫『吉他』；卡單 moodGuess why 寫『木吉他』，未證實，鉤子層別寫木吉他。【年份】錄音 2011-12、發行 2012，無再版問題。【推翻策展層】卡單 curatorWhy 寫『Zooid 第五張』，查不到來源證實序數，facts 不採。【聲音三查】(1) 非大編制（六人）、無失真電吉他（Takeishi 為電貝斯），不判重。(2) 無冥想長音，但有低音長笛『近乎歌唱』與 10 分鐘的 Ambient Pressure Thereby，是否有安靜段落未能由來源證實，低度風險。(3) 無清楚主題／標準曲，對位質地，不判暖。moodGuess z −0.9 偏冷合理，無明顯存疑。【Pulitzer】本卡是前作，不涉。",
   "coverage": "full"
+ },
+ {
+  "key": "desc2:Henry Threadgill Zooid|In for a Penny, In for a Pound",
+  "artist": "Henry Threadgill Zooid",
+  "album": "In for a Penny, In for a Pound",
+  "facts": [
+   {
+    "f": "《In for a Penny, In for a Pound》是 Pi Recordings 的 PI58，2015 年 5 月 26 日發行，兩張 CD 共六軌，全長約 79 分鐘；這張專輯拿下 2016 年普立茲音樂獎（Pulitzer Prize for Music），是繼 Wynton Marsalis（1997）與 Ornette Coleman（2007）之後第三位獲獎的爵士作曲者。",
+    "src": "https://en.wikipedia.org/wiki/In_for_a_Penny,_In_for_a_Pound"
+   },
+   {
+    "f": "錄音日是 2014 年 12 月 8 至 9 日，地點在紐約布魯克林；Michael Marciano 負責錄音，吉他手 Liberty Ellman 掛名製作與混音，Steve Fallone 做母帶。",
+    "src": "https://www.discogs.com/release/7166709-Henry-Threadgill-Zooid-In-For-A-Penny-In-For-A-Pound-"
+   },
+   {
+    "f": "這次是五人編制：Henry Threadgill（中音薩克斯風、長笛、低音長笛）、Liberty Ellman（吉他）、Jose Davila（長號、低音號）、Christopher Hoffman（大提琴）、Elliot Humberto Kavee（鼓與打擊）；前作中的電貝斯手 Stomu Takeishi 不在名單上。",
+    "src": "https://www.discogs.com/release/7166709-Henry-Threadgill-Zooid-In-For-A-Penny-In-For-A-Pound-"
+   },
+   {
+    "f": "結構是一部『史詩』：四個主要樂章各為一位團員而寫，〈Ceroepic〉給鼓與打擊、〈Dosepic〉給大提琴、〈Tresepic〉給長號與低音號、〈Unoepic〉給吉他，另有開場與一段 exordium 兩首短曲作框。",
+    "src": "https://www.pirecordings.com/album/in-for-a-penny-in-for-a-pound"
+   },
+   {
+    "f": "四個長樂章的長度約 16 到 20 分鐘不等：〈Ceroepic〉19 分 38 秒、〈Dosepic〉16 分、〈Tresepic〉17 分 26 秒、〈Unoepic〉17 分 57 秒，開場與 exordium 各約 4 分鐘以內。",
+    "src": "https://www.discogs.com/release/7166709-Henry-Threadgill-Zooid-In-For-A-Penny-In-For-A-Pound-"
+   },
+   {
+    "f": "作曲方式是替每位演奏者分配三音一組的音程當出發點，和聲在當下生成，形成四聲部的即興複音；NPR 稱之為『在特定音程框架內的對位即興』。",
+    "src": "https://www.pirecordings.com/album/in-for-a-penny-in-for-a-pound"
+   },
+   {
+    "f": "普立茲評審團把它形容為『一部高度原創的作品，記譜音樂與即興在其中交織成一幅音響掛毯』。",
+    "src": "https://www.jazztimes.com/reviews/albums/henry-threadgill-zooid-in-for-a-penny-in-for-a-pound/"
+   },
+   {
+    "f": "Ellman 表示 Threadgill 在『延伸形式』，主題更多變，力度與音色的對比更鮮明；《衛報》的 John Fordham 則形容這張『welcomingly warm and melodious』。",
+    "src": "https://en.wikipedia.org/wiki/In_for_a_Penny,_In_for_a_Pound"
+   },
+   {
+    "f": "Threadgill 1944 年生於芝加哥，是 AACM 前身 Experimental Band 的原始成員，後與 Fred Hopkins、Steve McCall 組成三重奏 Air；Pi 稱 Zooid 是他約十四年來的主要樂團。",
+    "src": "https://en.wikipedia.org/wiki/Henry_Threadgill"
+   }
+  ],
+  "hookCandidates": [
+   "四個長樂章各為一位團員而寫：鼓、大提琴、長號低音號、吉他各領一段。",
+   "這張雙碟組曲拿下 2016 年普立茲音樂獎，是第三位得此獎的爵士作曲者。"
+  ],
+  "sound": "五人原音室內爵士：薩克斯風與長笛、吉他、長號低音號、大提琴與鼓各自領一個長樂章，以音程框架即興對位；質地乾細、不斷變形，無固定歌唱主題，有樂評認為其中偏暖偏旋律。",
+  "keyTracks": [
+   "Ceroepic",
+   "Dosepic",
+   "Unoepic"
+  ],
+  "status": "full",
+  "notes": "【身分】MB RG 0a3e461f 2015-05-11 對 Pi 官方 2015-05-26：MB 日期早兩週，疑為預購日，年份 2015 無衝突；Discogs 7166709 與 9554202 同為 Pi 版（兩張 Discogs 條目，單碟與雙碟拆分），facts 採 7166709。【Pulitzer】Wikipedia 與搜尋摘要一致，為得獎（非入圍）；pulitzer.org 403 未能直開，評語出自 JazzTimes 搜尋摘要，寫作層若引評語請用意譯。這是與作品直接綁定的後續事件，可寫並標 2016。【推翻策展層】curatorWhy『Zooid 雙碟組曲，每段以一名樂手為軸』成立；『乾細尖、無主題』部分存疑。【聲音三查】(1) 非大編制（五人）、無電吉他失真，Kavee 是打擊領銜但非重 groove，不判重。(2) 無冥想長音、大段留白的直接證據；四個 16–20 分鐘長樂章含獨奏焦點，Dosepic（大提琴）等是否轉為安靜段落未能由來源證實，curatorRisk 已提『有較緩段落』，列為低中風險。(3) 《衛報》稱『welcomingly warm and melodious』，Ellman 稱主題更多變，moodGuess 存疑：偏暖的可能中等（z −0.9 恐偏冷），建議主線以聽感評分裁。【Wikipedia 錄音地點】Wikipedia 稱 Systems Two，Discogs 只寫布魯克林，facts 只寫布魯克林。",
+  "coverage": "full"
+ },
+ {
+  "key": "desc2:Peter Evans|Nature/Culture",
+  "artist": "Peter Evans",
+  "album": "Nature/Culture",
+  "facts": [
+   {
+    "f": "《Nature/Culture》是 Peter Evans 的雙碟獨奏小號專輯，2009 年由 Evan Parker 等人主持的 psi 廠牌發行，Evan Parker 與 Martin Davidson 掛名 CD 製作。",
+    "src": "https://www.discogs.com/release/1798967-Peter-Evans-2-NatureCulture"
+   },
+   {
+    "f": "第一張是錄音室作品，2008 年 7 至 9 月在布魯克林 Gallery Studio 由 Keith Parker 錄成；第二張 2008 年 11 月 19 日在布魯克林的 I-Beam 現場錄成，由 Jeremiah Cymerman 錄音。",
+    "src": "https://www.discogs.com/release/1798967-Peter-Evans-2-NatureCulture"
+   },
+   {
+    "f": "Evans 一人包辦小號與短號（piccolo trumpet）演奏、封面插畫與內頁文字；第一張七首依序是〈Micro〉〈Macro〉〈Full〉〈Jazz〉〈The Chamber〉〈Wa〉〈Five〉，第二張有 Nature/Culture 的 a 到 e 五段與〈Technology〉。",
+    "src": "https://www.discogs.com/release/1798967-Peter-Evans-2-NatureCulture"
+   },
+   {
+    "f": "〈Macro〉長約 18 分鐘，靠循環換氣在持續的低頻隆隆聲上推進，常常聽起來像好幾件樂器同時在響；前一首〈Micro〉則只讓氣流從管內極輕地漏出，只剩裂縫般的泛音。",
+    "src": "https://cokemachineglow.com/records/peterevans-natureculture-2009/"
+   },
+   {
+    "f": "〈Full〉是爆發式的短號獨奏，評論把它比成『銅管版的山塚アイ』（Yamatsuka Eye，Boredoms 主腦）；〈The Chamber〉近而暗，像聽『小號裡面』的聲音，並有長停頓。",
+    "src": "https://cokemachineglow.com/records/peterevans-natureculture-2009/"
+   },
+   {
+    "f": "〈Five〉是多軌疊錄的小號，堆成一片持續的嗡鳴（drone）；整張只有這裡明顯用到錄音室疊錄，其餘多半是不加工的號角、弱音器與麥克風擺位。",
+    "src": "https://newmusicusa.org/?p=274596"
+   },
+   {
+    "f": "Evans 把麥克風塞進喇叭口當作一種『悖論式的擴音弱音器』，讓音色視角突然切換，並在另一支靠近頭部的麥克風放大吹奏的雜音；第二張的段落有按鍵敲擊與反饋聲。",
+    "src": "https://newmusicusa.org/?p=274596"
+   },
+   {
+    "f": "New Music USA 的樂評說這張重在音色與雜音和樂音之間的連續，而非旋律；錄音時 Evans 28 歲，評論稱 Evan Parker 是他的『表演上的教父』。",
+    "src": "https://newmusicusa.org/?p=274596"
+   },
+   {
+    "f": "Evans 畢業於 Oberlin 音樂院，2011 年創立 More Is More 廠牌，並參加 Mostly Other People Do the Killing 與自己的五重奏。",
+    "src": "https://en.wikipedia.org/wiki/Peter_Evans_(musician)"
+   }
+  ],
+  "hookCandidates": [
+   "把麥克風塞進小號喇叭口，當成一支『悖論式的擴音弱音器』。",
+   "〈Macro〉靠循環換氣在低頻隆隆聲上撐 18 分鐘，聽起來像好幾件樂器同時在響。"
+  ],
+  "sound": "整張只有一把小號（與短號）：氣流、泛音、按鍵聲、反饋與循環換氣的長線音流，靠麥克風擺位放大雜音；有爆發段，也有近乎無聲的泡泡弱音器段，沒有鼓、沒有旋律主題。",
+  "keyTracks": [
+   "Macro",
+   "Full",
+   "Five"
+  ],
+  "status": "full",
+  "notes": "【身分】MB RG 52e97bc7 first-release 2009；Discogs 1798967（psi，2009）一致；Wikipedia 與部分樂評寫 2010，採 Discogs／MB 的 2009，樂評日 2010-01-14 是評論日。【唱片性質】雙碟：第一張錄音室、第二張現場（I-Beam）；New Music USA 自己前後矛盾哪張是現場，facts 用 Discogs 錄音註記為準。【推翻策展層】未推翻；curatorWhy『Evans 獨奏小號第二張』查無來源證實，facts 不採；『高頻尖細』成立於〈Full〉等，但不是全盤。【聲音三查】(1) 獨奏無鼓、無失真、無厚編制，不判重。(2) moodGuess 存疑：〈Micro〉（氣流輕漏）、〈The Chamber〉（長停頓）、〈Five〉（疊錄嗡鳴）都是低音量、慢展開、近冥想的段落，評論用詞『mature and unhurried』，整張靜／動交替，判靜風險中等，建議主線以實際聽感裁定。(3) 無標準曲、無清楚旋律，雖有一段『lyrical』被提到但不是主調。【Wikipedia 內容】Wikipedia 該條 tagged 缺引用，其內容僅用於畢業院校與廠牌年。",
+  "coverage": "full"
+ },
+ {
+  "key": "desc2:Peter Evans Quintet|Ghosts",
+  "artist": "Peter Evans Quintet",
+  "album": "Ghosts",
+  "facts": [
+   {
+    "f": "《Ghosts》是 Peter Evans Quintet 的首作，2011 年 3 月由 Evans 自家的 More Is More 廠牌發行，共七首，全長約 58 分鐘。",
+    "src": "https://www.discogs.com/release/2815233-Peter-Evans-Quintet-Ghosts"
+   },
+   {
+    "f": "五重奏陣容：Peter Evans（小號）、Carlos Homs（鋼琴）、Tom Blancarte（貝斯）、Jim Black（鼓）、Sam Pluta（現場電子處理）；Homs 在這張之後離團，《Destination: Void》由 Ron Stabinsky 接手鋼琴。",
+    "src": "https://thejazzmann.com/reviews/review/peter-evans-quintet-ghosts"
+   },
+   {
+    "f": "這批音樂部分由德國 Donaueschingen 音樂節與 SWR 電台委託。",
+    "src": "https://thejazzmann.com/reviews/review/peter-evans-quintet-ghosts"
+   },
+   {
+    "f": "Sam Pluta 的現場處理會截取小號與鋼琴，再切碎、變形後送回給聽者；樂評稱它給了這團獨特的性格，處理很細、不搶戲。",
+    "src": "https://www.freejazzblog.org/2011/05/peter-evans-quintet-ghosts-more-is-more.html"
+   },
+   {
+    "f": "〈…One to Ninety-Two〉長近 15 分鐘，後樂評形容為後 bop 旋律加細微電子，節奏組會突然停下、再起、換速。",
+    "src": "https://www.freejazzblog.org/2011/05/peter-evans-quintet-ghosts-more-is-more.html"
+   },
+   {
+    "f": "〈323〉是一首自由即興，隨後經過數個節奏段落慢慢重組；另一篇樂評說它像擁擠的城市，約第五分鐘出現類似 theremin 的聲音。",
+    "src": "https://anobiumlit.com/2012/03/19/review-ghosts-by-peter-evans-quintet/"
+   },
+   {
+    "f": "〈Ghost〉取自標準曲〈I Don't Stand a Ghost of a Chance with You〉，樂評稱其平靜而有空間感，Evans 貼著原旋律吹；最後一首〈Stardust〉僅 2 分 41 秒，被視為混亂之後的喘息。",
+    "src": "https://www.freejazzblog.org/2011/05/peter-evans-quintet-ghosts-more-is-more.html"
+   },
+   {
+    "f": "〈The Big Crunch〉是全盤最混亂的一首，結尾像電腦當機的藍屏；接著進入〈Chorales〉與近 15 分鐘的〈Articulation〉。",
+    "src": "https://anobiumlit.com/2012/03/19/review-ghosts-by-peter-evans-quintet/"
+   },
+   {
+    "f": "Free Jazz Collective 的 Joe Higham 給了五顆星，說鼓手 Jim Black 的演奏是他自 Tiny Bell Trio 以來最有趣的一次，並說音樂『即使最狂野時也保持旋律性』。",
+    "src": "https://www.freejazzblog.org/2011/05/peter-evans-quintet-ghosts-more-is-more.html"
+   }
+  ],
+  "hookCandidates": [
+   "現場電子處理把小號與鋼琴切碎再送回，標準曲被拆到幾乎認不出來。",
+   "這張首作的音樂部分由 Donaueschingen 音樂節與 SWR 電台委託。"
+  ],
+  "sound": "原音小號、鋼琴、貝斯、鼓加上 Sam Pluta 的現場電子切碎處理；節奏常停、起、換速，混亂段與平靜的標準曲段交替，後 bop 骨架上覆著嘶聲與雜訊。",
+  "keyTracks": [
+   "...One to Ninety-Two",
+   "323",
+   "Ghost"
+  ],
+  "status": "full",
+  "notes": "【身分】MB RG 2e445b14 2011-02；Discogs 2815233 標 2011；樂評與搜尋摘要稱 2011 年 3 月發行，採 2011。【推翻策展層】curatorWhy『標準曲被拆到不可辨』部分修正：〈Ghost〉〈Stardust〉是平靜、貼近標準曲旋律的曲目，只是全盤佔比小（約 8 分鐘／58 分鐘）。【聲音三查】(1) 小編制、無失真電吉他（電子是 Pluta 的現場處理）；Jim Black 鼓有力但非重 groove，不判重。(2) 〈Ghost〉『平靜且空間感』、〈Stardust〉『喘息』兩首較靜，但佔比小；整張以混亂與突變為主，判靜風險低。(3) 兩首標準曲（〈I Don't Stand a Ghost of a Chance with You〉〈Stardust〉）與 Higham 稱『always stays melodic』，moodGuess 輕度存疑：偏暖的可能低到中，主體仍在碎與尖。【Stardust 作曲者】來源只寫曲名，未寫作者，facts 不寫作者。",
+  "coverage": "full"
  }
 ]
