@@ -1,5 +1,32 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 2 輪 ml6／md10：慢板靈魂 40＋冷 shoegaze／drone pop 40 張上線，落格 38/40、39/40
+
+- **內容**：店主「三個薄格各補到約 2,000」第 2 輪，本工作階段負責 ml6、md10（上一個工作階段卡在權限確認後接續）。ml6（`add-20261022-ml6`，quiet storm／slow jam＋70s 慢板靈魂弦樂盤）：Barry White 5、Will Downing 3、Teddy Pendergrass 3、Love Unlimited 2、Dells 2、Phyllis Hyman 2、Freddie Jackson 2、Jon Lucien 2、Manhattans 2、Sweetback、Marvin Gaye《Vulnerable》、Tom Brock、David Porter、Lalah Hathaway、Regina Belle、Miki Howard、Gerald Levert、Keith Washington、Silk、Gloria Scott、Major Harris、Billy Paul、Minnie Riperton、Ray, Goodman & Brown《II》、Margie Joseph、Peabo Bryson。md10（`add-20261022-md10`，冷 shoegaze／drone pop＋冷 art pop 慢盤）：Lycia 5、Grouper 系（Grouper、Nivhek、Mirrorring、Raum）、Jessica Bailiff 2＋Clear Horizon、Main 2、The Sight Below 2、Drowse 2、Valet 2、lovesliescrushing 2、SIANspheric 2、Final 2、Amp 2、Midwife 2、Zelienople 2、Cantu-Ledesma、Infinite Body、Cindytalk、Esben and the Witch、Gazelle Twin、Circuit des Yeux《-io》、Tropic of Cancer、Dirty Beaches《Stateless》。
+- **策展→研究汰換**：兩批各策展 54、主線汰 9。研究層汰 ml6 5 張（Surface《2nd Wave》數位鼓機、Sylvia《Pillow Talk》小編制、Isaac Hayes《Branded》funk、Rotary Connection《Dinner Music》民謠實驗、Jon Lucien《Song for My Lady》巴薩諾瓦）；md10 7 張（Scala 2、port-royal、Circuit des Yeux《Overdue》有拍；Bailiff《Feels Like Home》、Drowse《Wane Into It》、Cindytalk《Hold Everything Dear》判輕或偏亮），從 master 候補補 2（Lycia《A Line That Connects》、lovesliescrushing《Xuvetyn》）。卡單更正：Silk → Elektra、Teddy《Truly Blessed》→ 1991、Esben → Matador、Lycia → Handmade Birds。
+- **主線審稿**：ml6 改 4 處（Jon Lucien 兩張指代與重複、Barry White《Put Me in Your Mix》語序、Gerald Levert 指代）；md10 改 3 處（Raum 語序、Bloweyelashwish 承接句、Cindytalk 刪藝人舊名只用現名 Cinder）。
+- **上線**：card_catalog 40＋40、KV 40＋40 鍵回讀逐字一致、試聽 36＋37 ready（Main《Firmament II》人工指定）、seed +80、published gate 兩批 0 error；封面 CAA 404 的 9 張改 Apple 官方圖或 Discogs（Ray, Goodman & Brown《II》入 discogs-cover-registry），上線前 live-check 80/80；冷門軸人工 4 張（Last.fm 盤名對不上）。上線前對 origin 49 個分支 seed 去重 0 撞。
+- **情緒評分**：`score-ml6`、`score-md10`。**ml6 落恍惚 38/40（95%）**，出格 2 張是 Jon Lucien（原聲通透判輕落放鬆）；**md10 落頹靡 39/40（98%）**，出格 1 張 lovesliescrushing《Bloweyelashwish》z 0.0 落恍惚。併 main（ml5／mc6、酸冷重判）後八格：恍惚 965、頹靡 1,306、冷冽 1,021。
+- **類型樹**：`genre-l3-artist-map.json` 補 Will Downing、Lalah Hathaway、Tom Brock、Gloria Scott（soul）、Drowse、Infinite Body（rock/dream-post/shoegaze），80/80 落位。
+- **藝人介紹**：未切（並行規矩）；新藝人 35 位列在兩批 rulings.md 末尾（ml6 14、md10 21）。
+- **主要檔案**：`batch-progress/add-20261022-{ml6,md10}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml6,md10}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml6,md10}/`、`onboarding-manifest-add-20261022-{ml6,md10}-20261023.json`、`desc-tools/batches/*/add-20261022-{ml6,md10}-*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`data/mood/*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`。
+- **驗證**：prepare／published gate 兩批 0 error；KV 回讀 80/80；qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；build-card-moods 錨點 104/104、寫入 20,282 張。
+
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線 ml5／mc6：neo-soul 二線 38＋Detroit／Euro electro 44 張上線，落格 35／43
+
+- **內容**：第 2 輪、3 並行之一（接續因額度中斷的工作階段）。ml5（`add-20261022-ml5`，恍惚）：Bilal、Spacek／Steve Spacek、Foreign Exchange、Georgia Anne Muldrow、Children of Zeus、Yazmin Lacey、Greentea Peng、Kali Uchis、Raveena、Nick Hakim、Baby Rose、GIVĒON、SiR 等 38 張（研究層以「不夠慢霧」汰 12）。mc6（`add-20261022-mc6`，冷冽）：Gerald Donald 系（Japanese Telecom、Arpanet、Elecktroids）、Lab Rat XL、AUX 88 系 5、Anthony Rother 10、Silicon Scally 8、Cygnus 4、Lowfish 3、Exos 2、Optic Nerve 2、dynArec 2、Ectomorph、The Hacker 等 44 張（研究層以「不快不機械」汰 10）。
+- **主線審稿**：ml5 改 1 處（上一工作階段）；mc6 改 3 處（Dynamik Bass System「東德」→「德國東部」、Popkiller 刪單源樂評句改補曲序、The Hacker 刪單源比較句）。mc6 試聽 26 ready（藝人目錄人工配 3）；封面 CAA 37、Discogs 5（已登錄 registry）、Apple 2，live-check 全 200。
+- **落格率（本線驗收）**：`batch-progress/mood-axes/score-{ml5,mc6}/`。ml5 落恍惚 35/38＝92%（3 張色溫判冷落頹靡）；mc6 落冷冽 43/44＝98%（Black Tokyo 日本女聲落雀躍）。併 main（md9、mc9 等）後 gate 綠 20,202 張、錨點 104/104；八格 恍惚 926、冷冽 1,021、頹靡 1,267。
+- **寫入**：card_catalog ml5 38＋mc6 44、KV 38＋44 鍵逐字回讀一致、seed +82、published gate 0 error；類型樹／card-subgenres／抽卡封面重建（`genre-l3-artist-map.json` 補 3 張）。藝人介紹未切，新藝人名單列在兩批 rulings.md 末尾（25＋16 位）。
+- **主要檔案**：`batch-progress/add-20261022-{ml5,mc6}/`、`onboarding-manifest-add-20261022-ml5-20261022.json`、`onboarding-manifest-add-20261022-mc6-20261023.json`、`seed_cards.json`、`data/mood/*`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`、`data/discogs-cover-registry.json`、`SCENES.md`、`HANDOFF-mood-cells-line.md`。
+- **驗證**：兩份 manifest `verify-album-onboarding --published` 0 error；`verify-wave-kv` 44/44；`build-card-moods` 錨點 104/104。
+
+### 2026-10-23｜dip-vinyl-shop｜酸冷重判：「酸」＝冷＋硬，157 張改判（Marion Brown《Geechee》放鬆→冷冽）
+
+- **改動**：店主裁定自由爵士、無調現代音樂（Ligeti）這類「酸冷難聽又硬蕊」的不能落放鬆。規則寫進 `score500/BRIEF.md` Z 軸：酸 → 色溫 ≤ −1.2，有推力或音塊密集刺耳 → 能量 ≥ 3.1。候選 1,208 張（標籤或評語有酸味、落暖格或靜格）8 支代理逐張判（`batch-progress/mood-axes/sour-rejudge/`，工單 BRIEF.md、合併 merge.mjs、報告 merge-report.json），判酸 200、主線退回 5，改值 157 筆進 `overrides.json`（累計 413 筆）。判例與留給店主翻案的清單在 `rulings.md`。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/score500/BRIEF.md`、`batch-progress/mood-axes/sour-rejudge/*`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：gate 綠、錨點 104/104；八格 冷冽 936→978、亢奮 2,672→2,756、頹靡 1,314→1,264；Geechee (3.2, −0.4, −1.2) 冷冽、Penderecki 亢奮、Köln Concert 仍放鬆、Sunn O))) 仍頹靡。
+
 ### 2026-10-22｜dip-vinyl-shop｜「就這張」特效改版：線框飛到整個螢幕、掃描出一螢幕的專輯畫面、再無縫過渡成專輯資訊頁
 
 - **改動**（店主：「先飛出來剛好全螢幕的大小，掃描線揭露專輯時也是剛好螢幕大小，揭露之後再無縫漸變放大成專輯資訊」）：`dip-tune.js` 的 `warpStart` 重寫——線框飛到視窗大小（留 8px 邊）；揭露的是一層黑底覆蓋畫面（大封面＋藝人／專輯名／年份，骨架線量這四個元素）；揭露完 `land(cardEl)` 用 FLIP 把封面與三行文字各自平移縮放到真卡裡 `.quiz-result-cover`／`-artist`／`-album`／`-year` 的位置，黑底同時淡成白頁，真卡其餘資訊淡入，最後拆掉覆蓋層。API：`setCover(url)`（封面到了先放）、`reveal()`（等封面載好最多 1.5 秒→骨架→閃白→掃描）、`land(cardEl)`、`cancel()`。`index.html` onResult 改成 `setCover`→`await reveal()`→切結果頁（卡先 opacity 0）→`await land`。`dip-tune.js?v=8`。

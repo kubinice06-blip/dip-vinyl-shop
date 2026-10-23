@@ -24,10 +24,10 @@
 |---:|---|---|---|
 | 1 | md9 | 冷的 trip-hop／Bristol 二線 ＋ md17 暗 R&B | ✅ 上線 23／落格 23 |
 | 2 | mc9 | 80s synth-pop 二線 ＋ mc10 new wave 冷盤 ＋ mc20 港台日 80s synth-pop | ✅ 上線 12／落格 9 |
-| 3 | ml5 | neo-soul 二線 ＋ ml8 alt R&B 2010s–20s | 派→情緒薄格 ml5、mc6（第 2 輪） |
-| 4 | mc6 | Detroit techno／electro 二線 ＋ mc12 electroclash ＋ mc29 electro-funk 機械那半 | 派→情緒薄格 ml5、mc6（第 2 輪） |
-| 5 | ml6 | quiet storm／slow jam ＋ ml7 70s 慢板靈魂弦樂盤 | 派→情緒薄格 ml6、md10（第 2 輪） |
-| 6 | md10 | 冷的 shoegaze／drone pop ＋ md25 冷的 ambient／art pop 慢盤 | 派→情緒薄格 ml6、md10（第 2 輪） |
+| 3 | ml5 | neo-soul 二線 ＋ ml8 alt R&B 2010s–20s | ✅ 上線 38／落格 35 |
+| 4 | mc6 | Detroit techno／electro 二線 ＋ mc12 electroclash ＋ mc29 electro-funk 機械那半 | ✅ 上線 44／落格 43 |
+| 5 | ml6 | quiet storm／slow jam ＋ ml7 70s 慢板靈魂弦樂盤 | ✅ 上線 40／落格 38 |
+| 6 | md10 | 冷的 shoegaze／drone pop ＋ md25 冷的 ambient／art pop 慢盤 | ✅ 上線 40／落格 39 |
 | 7 | mc5 | 日本 techno-pop ＋ mc17 日本 techno ＋ mc25 J-pop／K-pop 冷系 |  |
 | 8 | ml9 | 暖 dub／roots dub 二線 ＋ ml25 80s 慢板 reggae 歌 |  |
 | 9 | mc7 | minimal techno 快而薄 ＋ mc8 IDM 快而乾 |  |
@@ -58,7 +58,7 @@
 | md7 | 17161 | 冷調 post-rock／慢而冷、鼓少的器樂（Constellation、Kranky、Temporary Residence 系的慢盤） | ✅ 上線 41／落格 35 |
 | md8 | 17241 | dub techno／ambient techno 三線：Echocord、Chain Reaction、Silent Season、Prologue、Styrax、Astral Industries | ✅ 上線 41／落格 40 |
 | md9 | 17321 | 冷的 trip-hop 與 Bristol 二線（陰、慢、低頻厚；溫暖的 lounge 系落恍惚，不收） | ✅ 上線 23／落格 23（併 md17 暗 R&B；候補見底） |
-| md10 | 17401 | 冷的 shoegaze／drone pop（霧＋冷：Jesu ambient 盤、Grouper、Flying Saucer Attack 系、Windy & Carl 系） | |
+| md10 | 17401 | 冷的 shoegaze／drone pop（霧＋冷：Jesu ambient 盤、Grouper、Flying Saucer Attack 系、Windy & Carl 系） | ✅ 上線 40／落格 39（併 md25；研究汰 7、補 2） |
 | md11 | 17481 | 工業 old-school 慢盤／ritual／tape music（SPK 慢盤、Organum、Current 93 drone 期、Zoviet France 系） | |
 | md12 | 17561 | neoclassical darkwave／ethereal 慢盤（Arcana、Ataraxia、Dead Can Dance 系、Projekt 廠牌） | |
 | md13 | 17641 | 現代古典的暗黑音塊／drone 古典（Scelsi、Penderecki 慢作、Hildur Guðnadóttir、Jóhannsson 暗盤；純淨極簡落平靜不收） | |
@@ -73,7 +73,7 @@
 | md22 | 18361 | 無鼓 drone metal／post-metal ambient 二線 | |
 | md23 | 18441 | 暗黑 lo-fi／tape loops／Basinski 系 | |
 | md24 | 18521 | 嘻哈 instrumental 冷盤（暗色 beat tape、冷的 abstract hip-hop） | |
-| md25 | 18601 | 冷的 ambient pop／art pop 慢盤（Julia Holter 冷盤、Jenny Hval 慢盤、Kate Bush 以外的暗 art pop） | |
+| md25 | 18601 | 冷的 ambient pop／art pop 慢盤（Julia Holter 冷盤、Jenny Hval 慢盤、Kate Bush 以外的暗 art pop） | 併入 md10（池中冷 art pop 多判輕，只收到 6 張） |
 
 ## 冷冽 mc（躁＋輕＋冷；門檻 x ≥ 3.3、y ≤ +0.2、z ≤ −0.3）
 
@@ -86,7 +86,7 @@
 | mc3 | 11161 | 冷爵士：Tristano 派、60s 前衛 Blue Note 二線、歐陸自由即興裡快而乾的 | ✅ 上線 19／落格 16（場景挖不到 45；鋼琴主導無強鼓的落平靜） |
 | mc4 | 11241 | 當代古典快而冷（Ligeti、Xenakis、Varèse、Boulez、Stockhausen、Lutosławski 的快作） | ✅ 上線 19／落格 9（47%：無拍點的點描／複節奏作品照新能量規則落平靜；只收機械脈動或打擊推進的） |
 | mc5 | 11321 | 日本 techno-pop／synth-pop（YMO 系、P-Model、Hikashu、capsule、Perfume 系、tofubeats 冷盤） | |
-| mc6 | 11401 | Detroit techno／electro 二線（Drexciya 系、Aux 88、DJ Stingray、Model 500、Dopplereffekt） | |
+| mc6 | 11401 | Detroit techno／electro 二線（Drexciya 系、Aux 88、DJ Stingray、Model 500、Dopplereffekt） | ✅ 上線 44／落格 43 |
 | mc7 | 11481 | minimal techno 快而薄（Robert Hood、Jeff Mills 的 minimal、Monolake 快盤；厚的落亢奮） | |
 | mc8 | 11561 | IDM 快而乾（早期 Autechre、Plaid、Funkstörung、Arovane、Phoenecia） | |
 | mc9 | 11641 | 80s synth-pop 二線（OMD、Visage、Ultravox、Heaven 17、Yazoo、Telex、Blancmange、Thomas Dolby） | ✅ 上線 12／落格 9（併 mc10、mc20；二線多是樂團編制，研究汰 13） |
@@ -122,9 +122,9 @@
 | ml2 | 14081 | 暖 shoegaze／dream pop／新迷幻 | ✅ 上線 39／落格 33 |
 | ml3 | 14161 | beats／lo-fi hip-hop／dusty 地下饒舌 | ✅ 上線 27／落格 26（場景挖不到 45） |
 | ml4 | 14241 | 東亞恍惚：台日韓 dream pop／shoegaze／lo-fi R&B | ✅ 上線 11／落格 11（核心已在池、色溫多貼邊，挖不到 45） |
-| ml5 | 14321 | neo-soul 二線（Soulquarians 周邊、UK neo-soul：Omar、Lewis Taylor 一類） | |
-| ml6 | 14401 | quiet storm／slow jam 80s–90s 二線 | |
-| ml7 | 14481 | 70s 慢板靈魂：Philly／Chicago／Memphis 弦樂慢盤二線 | |
+| ml5 | 14321 | neo-soul 二線（Soulquarians 周邊、UK neo-soul：Omar、Lewis Taylor 一類） | ✅ 上線 38／落格 35 |
+| ml6 | 14401 | quiet storm／slow jam 80s–90s 二線 | ✅ 上線 40／落格 38（併 ml7；研究汰 5） |
+| ml7 | 14481 | 70s 慢板靈魂：Philly／Chicago／Memphis 弦樂慢盤二線 | 併入 ml6（Barry White 系、Philly 二線已收） |
 | ml8 | 14561 | alt R&B 2010s–20s（霧而暖） | |
 | ml9 | 14641 | 暖 dub／roots dub 二線（dt1 之外） | |
 | ml10 | 14721 | psychedelic soul／cosmic soul（Shuggie Otis、Terry Callier 一類） | |
