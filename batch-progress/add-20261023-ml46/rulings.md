@@ -11,3 +11,8 @@
 - 主線汰 0（12 張全收；張數不足 45 照實上架）。
 - **MB flag**：Alex Somers《Honey Boy》為 Album＋Soundtrack（電影配樂），比照池中配樂卡收。
 - 研究層重點：色溫貼邊風險（《Fordlândia》《Virðulegu Forsetar》《Les Fleurs》《Centres》、Inventions 首作、Olan Mill《Pine》）、質地判輕風險（Bing & Ruth、《Honey Boy》鋼琴是否在前）、Kjartan Sveinsson 是否現場錄音、Port Blue 國別。
+
+## 研究 a 組
+- 19801：Siblings 2 身分無衝突（MB 釘住）。聲音查得：無鼓、弦樂為主（樂評 bright strings＋一絲 melancholic dew）、鋼琴僅〈Sooner〉點綴、八音盒；策展層「磁帶飽和」查無來源，facts 不寫，列 moodGuess 存疑（y 可能低於 1.0）。status full。
+- 19802：Honey Boy（Album＋Soundtrack）聲音資料薄：來源只說老玩具＋古怪音色拼貼、LCO 成員合作、苦甜；鋼琴是否在前查無。26 首約 60 分鐘、片段短，判輕風險最高，moodGuess 存疑（y）。status thin。
+- 19803：Fordlândia 無傳統鼓（Hemstock 打擊僅 4 首、電子模擬）；50 人弦樂團＋管風琴＋合唱，教堂錄音，殘響厚。樂評用 elegiac sadness、ominous foreboding、claustrophobic、melancholy、haunting——色溫貼邊風險證實偏高，moodGuess 存疑（z）。status full。
