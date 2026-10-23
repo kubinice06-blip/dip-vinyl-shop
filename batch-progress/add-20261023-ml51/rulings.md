@@ -117,3 +117,7 @@
 ## 上線與評分（2026-10-23，主線）（條號 20516–20518）
 - **20516**：上線 31 張：card_catalog 31／31、KV 31 鍵回讀逐字一致（stamp 20261023r11）、試聽 24 ready／7 unavailable（Knxwledge《Old.Klouds.LP》、Ohbliv《MindGarden》《SLPHNC III》、Fitz Ambro$e & Ohbliv《Zen Vapors》、Ta-ku《DUSTY》兩卷與《TRIBUTE》Apple 未上架；藝人目錄 lookup 複查亦無）、seed +31、published gate 0 error。封面 CAA 28、Apple 1（Rugged Tranquility Vol. 2）、Discogs 2（DUSTY 兩卷，已登錄 registry 400 筆；Discogs 格式欄標 EP，但 19／16 首、36／33 分且 MB 為 Album，照 MB），live-check 全 200、縮圖表目視相符。上線前對 origin 92 個 `claude/*` 分支 seed＋10-22 起卡單去重 0 撞。
 - **20517**：子曲風 warm-batch 27／31 有標籤；推不出節點的 6 個掛名（Fitz Ambro$e & Ohbliv、Wun Two & Boora、Smuv, mt. fujitive、mt. fujitive & oofoe、Elaquent、Stan Forebee）補進 `genre-l3-artist-map.json` 的 hiphop/underground/instrumental，31／31 落位；類型樹與抽卡封面重建。
+- **20518**：**落格率 31/31＝100%**（`batch-progress/mood-axes/score-ml51/`，照 10-23 體感標準）。評分 x 1.7–2.6、y 0.7–1.4、z 0.4–1.3；conf mid 3、low 28。最貼邊：Knxwledge《Old.Klouds.LP》z 0.4（粗剪 groove 撐）、Ohbliv 四張 z 0.5–0.6（迷幻混濁取樣、旋律破碎）。評分過程 ml51 代理有 26 筆誤寫進 score-md28 輸出檔（共用 scratchpad 腳本被覆寫），主線已搬回並確認兩檔 id 各自吻合。**lo-fi 第三波能收的是「有反證就汰」後剩下的六成**：boom bap 彈跳、house／jungle 標籤、glitch、人聲合輯、散裝草稿集要擋。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Ohbliv、Fitz Ambro$e & Ohbliv（合掛名）、Wun Two、Wun Two & Boora（合掛名）、Smuv, mt. fujitive（合掛名）、mt. fujitive & oofoe（合掛名）、mt. fujitive、Purrple Cat、less.people、Ta-ku、Elaquent、Stan Forebee、BROCKBEATS（13 個掛名；Knxwledge 已在排隊。前幾批已列過的同名藝人仍無介紹，照列）。

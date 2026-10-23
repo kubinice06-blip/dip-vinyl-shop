@@ -126,3 +126,7 @@
 ## 上線與評分（2026-10-23，主線）（條號 20676–20678）
 - **20676**：上線 34 張：card_catalog 34／34、KV 34 鍵回讀逐字一致（stamp 20261023r11）、試聽 31 ready／3 unavailable（Mystified《Eschate Thule》、Necrophorus《Elinrós》未上架；《Drifting in Motion》Apple 只有 2008 redux 重錄版，不配）；洛夫克拉夫特系列三張、Funerary Call、Deep Frieze 長曲／曲名格式不同，人工配（`preview-override.json`）。seed +34、published gate 0 error。封面 CAA 33（其中 6 張原圖 live-check 回 500／逾時，改 front-500 縮圖）、Apple 1（New Risen Throne《Crossing the Withered Regions》），縮圖表目視全部相符。上線前對 origin 92 個 `claude/*` 分支 seed＋10-22 起卡單去重 0 撞。
 - **20677**：子曲風 warm-batch 34／34 有標籤；推不出節點的 3 個掛名（Dronny Darko & protoU、Kolhoosi 13、Metatron Omega）補進 electronic/ambient/dark-ambient，34／34 落位；類型樹與抽卡封面重建。
+- **20678**：**落格率 34/34＝100%**（`batch-progress/mood-axes/score-md28/`，照 10-23 體感標準）。評分 x 1.2–2.7、y 1.3–1.9、z −2.0～−0.9；conf mid 3、low 31。最貼邊：Funerary Call《The Mirror Reversed, Part 1》x 2.7（標籤 power electronics）、Council of Nine《Exit Earth》z −0.9（輪廓較有旋律）。**Cryo Chamber 系 dark ambient 研究層要擋的是文案自己寫出的拍點、溫暖、旋律樂器或人聲領奏**（汰 15／49），剩下的全落頹靡。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+A Cryo Chamber Collaboration、protoU、Dronny Darko & protoU（合掛名）、Ugasanie、Dronny Darko、Kolhoosi 13、Council of Nine、Sabled Sun、Aegri Somnia、Ugasanie & Dronny Darko（合掛名）、Cities Last Broadcast、Alphaxone & Dronny Darko（合掛名）、Mystified、Metatron Omega、Apocryphos, Kammarheit, Atrium Carceri（合掛名）、Ugasanie & Xerxes The Dark（合掛名）、Alphaxone & Xerxes The Dark（合掛名）、New Risen Throne、Visions、Funerary Call、Psychomanteum、Gustaf Hildebrand、Moljebka Pvlse、Netherworld、Necrophorus、Ab Intra、Arecibo（27 個掛名；Atrium Carceri、Sleep Research Facility 已在排隊）。
