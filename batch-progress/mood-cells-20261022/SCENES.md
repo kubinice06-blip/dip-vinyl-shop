@@ -46,8 +46,8 @@
 | 22 | mc31 | AACM／loft jazz／美國自由爵士小編制二線 ＋ mc14 前衛 hard bop 尖而無調的那半 | ✅ 上線 33／落格 33 |
 | 23 | ml24 | 暖的 dream folk／slowcore ＋ ml30 暖 ambient／new age 厚墊（旋律要清楚） | ✅ 上線 11／落格 11 |
 | 24 | md21 | goth rock／coldwave 慢盤二線 ＋ md15 witch house／hauntology | ✅ 上線 34／落格 33 |
-| 25 | mc32 | 無調現代古典／序列主義／新複雜主義（室內樂、獨奏，尖細的） ＋ mc4 續集 | 派→情緒薄格 mc32、ml13（第 5 輪） |
-| 26 | ml13 | 暖而慢的迷幻搖滾（不兇的 desert／stoner 慢盤） ＋ ml26 非洲與巴西的慢而厚 | 派→情緒薄格 mc32、ml13（第 5 輪） |
+| 25 | mc32 | 無調現代古典／序列主義／新複雜主義（室內樂、獨奏，尖細的） ＋ mc4 續集 | ✅ 上線 31／落格 29 |
+| 26 | ml13 | 暖而慢的迷幻搖滾（不兇的 desert／stoner 慢盤） ＋ ml26 非洲與巴西的慢而厚 | ✅ 上線 12／落格 11 |
 | 27 | md18 | 日本暗色 drone／ambient／暗色獨立 ＋ md20 北歐暗色電子與配樂 ＋ md19 華語／韓國暗色獨立 |  |
 | 28 | mc28 | 歐陸自由即興（ICP、Globe Unity、Misha Mengelberg、Irène Schweizer） ＋ mc34 日本前衛即興 |  |
 | 29 | mc33 | glitch／microsound／尖細實驗電子 ＋ mc35 RIO／前衛搖滾尖細那半 |  |
@@ -125,7 +125,7 @@
 | mc29 | 13241 | 冷的 new jack／electro-funk 機械那半（Mantronix、Cybotron、Hashim 系） | |
 | mc30 | 13321 | minimalism 快作（Glass 早期、Reich 冷的那幾張、Michael Nyman 快盤、Terry Riley 電子快盤；暖的落雀躍） | |
 | mc31 | 13401 | AACM／loft jazz／美國自由爵士小編制二線（Art Ensemble of Chicago、Anthony Braxton、Roscoe Mitchell、Henry Threadgill、Julius Hemphill、Oliver Lake） | ✅ 上線 33／落格 33（併 mc14） |
-| mc32 | 13481 | 無調現代古典／序列主義／新複雜主義（Boulez、Berio、Stockhausen、Carter、Ferneyhough、Xenakis 室內樂；尖細的，厚重音塊落亢奮） | |
+| mc32 | 13481 | 無調現代古典／序列主義／新複雜主義（Boulez、Berio、Stockhausen、Carter、Ferneyhough、Xenakis 室內樂；尖細的，厚重音塊落亢奮） | ✅ 上線 31／落格 29 |
 | mc33 | 13561 | glitch／microsound／尖細實驗電子（Oval、Ryoji Ikeda、Alva Noto、Mille Plateaux、raster-noton 薄盤） | |
 | mc34 | 13641 | 日本前衛／即興（高柳昌行、阿部薫、大友良英、Sachiko M、ONJO） | |
 | mc35 | 13721 | RIO／前衛搖滾尖細那半（Henry Cow、Art Bears、Etron Fou Leloublan、Thinking Plague、Univers Zero 薄盤） | |
@@ -148,7 +148,7 @@
 | ml10 | 14721 | psychedelic soul／cosmic soul（Shuggie Otis、Terry Callier 一類） | ✅ 上線 19／落格 16（併 ml14；策展 32、主線汰 3、研究汰 10；古典 psych soul 與 spiritual jazz 池中判輕，主力改當代 cosmic soul） |
 | ml11 | 14801 | chillwave／hypnagogic pop（Toro y Moi、Washed Out、Neon Indian、Small Black） | ✅ 上線 26／落格 23（併 ml12；策展 54、主線汰 16、研究汰 11、EP 汰 1；出格 3 張色溫判冷） |
 | ml12 | 14881 | bedroom pop／dream pop 2010s–20s 濕的那一路 | 併入 ml11（Papercuts、Vansire、Men I Trust 早期已收；多判躁或輕，不再單獨派） |
-| ml13 | 14961 | 暖而慢的迷幻搖滾（Kikagaku Moyo 系、不兇的 desert／stoner 慢盤） | |
+| ml13 | 14961 | 暖而慢的迷幻搖滾（Kikagaku Moyo 系、不兇的 desert／stoner 慢盤） | ✅ 上線 12／落格 11（ml26 併入；暖慢迷幻見底，不再派） |
 | ml14 | 15041 | spiritual jazz 慢而厚（Pharoah 慢盤、Alice Coltrane、Lonnie Liston Smith） | 併入 ml10（池中 spiritual jazz 多判輕；10-23 新色溫規則下旋律不明往冷，收的 2 張落頹靡；恍惚線不再派） |
 | ml15 | 15121 | 暖 trip-hop／downtempo（Morcheeba、Thievery Corporation、Nightmares on Wax 的厚盤） | ✅ 上線 28／落格 28（併 ml23；策展 38、主線汰 3、研究汰 7；核心已在池、lounge 判輕） |
 | ml16 | 15201 | jazz-rap／boom bap 暖盤（Pete Rock、Digable Planets 系） | ✅ 上線 27／落格 25（併 ml17、ml18；策展 38、研究汰 11；G-funk 0） |
@@ -161,7 +161,7 @@
 | ml23 | 15761 | ambient dub／ambient house 暖盤（The Orb、Global Communication、Higher Intelligence Agency） | 併入 ml15（指名藝人池中判輕或判冷，改收暖 world／psy-dub；不再單獨派） |
 | ml24 | 15841 | 暖的 dream folk／slowcore（殘響厚、溫） | ✅ 上線 11／落格 11（2026-10-23，併 ml30；場景見底，不再派） |
 | ml25 | 15921 | 80s 慢板 dancehall／reggae 歌（lovers 之外） | 併入 ml9（Junjo／Channel One 類比濕混音人聲盤；不再單獨派） |
-| ml26 | 16001 | 非洲與巴西的慢而厚（MPB 濕的盤、desert blues 慢盤、afro-soul 慢盤） | |
+| ml26 | 16001 | 非洲與巴西的慢而厚（MPB 濕的盤、desert blues 慢盤、afro-soul 慢盤） | 併入 ml13（desert blues／MPB 池中判輕，挖不到；不再派） |
 | ml27 | 16081 | 暖的 vaporwave 之外的 sample-based ambient pop | |
 | ml28 | 16161 | 70s soft rock／yacht 慢而濕的（新尺下會判重的） | 併入 ml19（池中 70s soft rock 全判輕，只收得到復興盤；不再單獨派） |
 | ml29 | 16241 | 華語／日本 dream pop 二線 | 併入 ml20 |

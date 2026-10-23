@@ -3,8 +3,8 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **336** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 98、已退回 1）。
-最後更新：2026-10-22
+共 **356** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 118、已退回 1）。
+最後更新：2026-10-23
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
 `matchedOn` 欄記的就是實際對上哪幾項。圖片沿用 Discogs 圖床網址，
@@ -196,6 +196,16 @@
 | Arditti Quartet 《Xenakis: ST/4 / Dikhthas / Ikhoor / Embellie / Kottos / Mikka / Mikka S》 | [#2427567](https://www.discogs.com/release/2427567) | 1983 | RCA Red Seal | RS 9009 | 主線目視與盤名相符 | ok |
 | Conlon Nancarrow 《Studies for Player Piano》 | [#989614](https://www.discogs.com/release/989614) | 1969 | Columbia Masterworks | MS 7222 | 主線目視與盤名相符 | ok |
 
+## add-20261022-mc6（5 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Boris Divider 《La hora de las máquinas》 | [#860550](https://www.discogs.com/release/860550) | 2006 | Drivecom | DCOM007CD | MB 原盤同一版本或同盤再發、主線目視與盤名相符 | ok |
+| dynArec 《User Input》 | [#13746790](https://www.discogs.com/release/13746790) | 2004 | Delsin | — | MB 原盤同一版本或同盤再發、主線目視與盤名相符 | ok |
+| dynArec 《Overland Travelling》 | [#615229](https://www.discogs.com/release/615229) | 2006 | Nature | — | MB 原盤同一版本或同盤再發、主線目視與盤名相符 | ok |
+| Gosub 《Watchers From the Black Universe》 | [#941764](https://www.discogs.com/release/941764) | 2007 | Citinite | NITE-3 | MB 原盤同一版本或同盤再發、主線目視與盤名相符 | ok |
+| Optic Nerve 《Children of the Universe》 | [#29912](https://www.discogs.com/release/29912) | 1997 | Omnisonus | 74321461912 | MB 原盤同一版本或同盤再發、主線目視與盤名相符 | ok |
+
 ## add-20261022-ml4（3 張）
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
@@ -203,6 +213,12 @@
 | Dry & Heavy 《Dry & Heavy》 | [#3166216](https://www.discogs.com/release/3166216) | 1997 | Olive Disk & Records | TGCS-354 | Discogs master 666345 的版本、主線目視與盤名相符 | ok |
 | LITTLE TEMPO 《ザ・ウェイ・バック・ホーム・イン・ダブ》 | [#8876276](https://www.discogs.com/release/8876276) | 1997 | Olive Disk & Records | TGCS-345 | Discogs master 1039686 的版本、主線目視與盤名相符 | ok |
 | 신해경 《속꿈, 속꿈》 | [#18029227](https://www.discogs.com/release/18029227) | 2020 | Not On Label (Shin Hae Gyeong Self-released) | none | Discogs master 2046295 的版本、主線目視與盤名相符 | ok |
+
+## add-20261022-ml6（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Ray, Goodman & Brown 《Ray, Goodman & Brown II》 | [#7867821](https://www.discogs.com/release/7867821) | 1980 | Polydor | PD-1-6299 | Discogs master 151215 的 1980 原版、主線目視與盤名相符 | ok |
 
 ## add-20261022-ts5（1 張）
 
@@ -215,6 +231,45 @@
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
 | The Penguins 《The Cool, Cool Penguins》 | [#7756803](https://www.discogs.com/release/7756803) | 1958 | Dooto Records | DTL 242 | Discogs master 923710 的版本、主線目視與盤名相符 | ok |
+
+## add-20261023-mc5（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| 田中フミヤ 《Unknown 3》 | [#1542908](https://www.discogs.com/release/1542908) | 2008 | Sundance | SNDCD001 | MB release-group c25721ab 的對應發行（Sundance SNDCD001）、主線目視與盤名相符 | ok |
+
+## add-20261023-mc32（6 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Arditti Quartet 《Carter: The Works for String Quartet, Vol. I: Quartets 1 & 4》 | [#7556711](https://www.discogs.com/release/7556711) | 1988 | Etcetera (3) | KTC 1065 | Discogs master 894268 的版本、主線目視與盤名相符 | ok |
+| Charles Rosen 《Carter: Night Fantasies / Piano Sonata》 | [#4333359](https://www.discogs.com/release/4333359) | 1983 | Etcetera (3) | ETC 1008 | Discogs master 688040 的版本、主線目視與盤名相符 | ok |
+| Elision Ensemble 《Barrett: Chamber Works》 | [#1194050](https://www.discogs.com/release/1194050) | 1993 | Etcetera (3) | KTC 1167 | Discogs master 2063860 的版本、主線目視與盤名相符 | ok |
+| Ensemble Recherche 《Lachenmann: Streichtrio / temA / Trio fluido》 | [#8452244](https://www.discogs.com/release/8452244) | 1994 | Montaigne | MO 782023 | 唯一版本、主線目視與盤名相符 | ok |
+| musikFabrik 《Saunders: Quartet / Into the Blue / Molly's Song 3 / Dichroic Seventeen》 | [#28193908](https://www.discogs.com/release/28193908) | 2001 | Kairos | 0012182KAI | Discogs master 3231034 的版本、主線目視與盤名相符 | ok |
+| Nieuw Ensemble 《Ferneyhough: La Chute d'Icare / Superscriptio / Intermedio alla Ciaccona / Études transcendantales / Mnemosyne》 | [#10520400](https://www.discogs.com/release/10520400) | 1989 | Etcetera (3) | KTC 1070 | 唯一版本、主線目視與盤名相符 | ok |
+
+## add-20261023-md11（4 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| John Duncan & Max Springer 《The Crackling》 | [#725796](https://www.discogs.com/release/725796) | 1996 | Trente Oiseaux | TOC 961 | 唯一版本、主線目視與盤名相符 | ok |
+| Maurizio Bianchi 《Menses》 | [#2929621](https://www.discogs.com/release/2929621) | 1982 | Not On Label (Maurizio Bianchi Self-released) | none | Discogs master 39087 的版本、主線目視與盤名相符 | ok |
+| Organum 《Sanctus》 | [#624361](https://www.discogs.com/release/624361) | 2006 | Robot Records | RR-35 | 唯一版本、主線目視與盤名相符 | ok |
+| Organum 《Amen》 | [#885225](https://www.discogs.com/release/885225) | 2006 | Die Stadt | DS95 | 唯一版本、主線目視與盤名相符 | ok |
+
+## add-20261023-ml9（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Sugar Minott 《Roots Lovers》 | [#1976638](https://www.discogs.com/release/1976638) | 1980 | Black Roots | — | Discogs master 481381 主版、主線目視與盤名相符 | ok |
+| Tony Tuff 《Presenting Mr. Tuff》 | [#3264494](https://www.discogs.com/release/3264494) | 1981 | Black Roots | — | Discogs master 754428 主版、主線目視與盤名相符 | ok |
+
+## add-20261023-ml20（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| LINION 《Leisurely》 | [#31147562](https://www.discogs.com/release/31147562) | 2020 | 嘿豹工作室 | none | Discogs API：CD、2020-09-22、嘿豹工作室、主線目視與盤名相符 | ok |
 
 ## c49（3 張）
 
