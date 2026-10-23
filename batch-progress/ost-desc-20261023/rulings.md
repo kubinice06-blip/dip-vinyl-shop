@@ -85,3 +85,10 @@ hook 前提逐張對研究稿 facts 核過（Chrono Cross 加藤指名、Radical
 - **《The Lord of the Rings Trilogy》（Howard Shore 卡）這張是 2004 年 City of Prague Philharmonic Orchestra 演奏的三部曲選粹（iTunes TW、MusicBrainz），不是 Shore 指揮的電影原聲。** 裁定：卡保留、藝人欄不動（本線不碰 seed，另有工作階段在動 seed）；正文講電影與 Shore 配樂的故事，並照 research-base「重錄選輯通則」明寫這張由布拉格樂團演奏、非原始電影錄音。舊稿「Shore 本人指揮、不是後人重錄」是錯的。
 - Desplat《Les Aigles de la République》台灣片名《獨裁大明星》（信心中等，原名必附）；配樂作用查不到，thin 卡。
 - 《偷龍轉鳳》片名 uncertain，原名並列。北西北不寫「kaleidoscopic fandango」原話；迷魂記不把〈Scène d'amour〉寫成確定對應《崔斯坦》；雙峰主題曲與〈Laura Palmer's Theme〉分開；英倫對決不寫用了 Cristal Baschet。
+
+## ost-2 研究層回報的推翻（e 組）
+- 《Le Mépris》卡是 1991 年 Hortensia 的法國電影配樂合輯（前四軌是《輕蔑》）。裁定：本線只改簡介、不動 seed，卡保留；正文寫高達《輕蔑》與 Delerue 的〈Thème de Camille〉，並明寫這張是收錄它的合輯。是否移除留給卡池整頓（記錄在案）。
+- 《少年吔，安啦！》不是林強轉向配樂的起點（他第一部電影配樂是《南國再見，南國》），本盤製作掛王治平、林強在片中客串夜店歌手。
+- 《刺客聶隱娘》：「不要配樂」、自然聲、唐代音樂查無來源；金馬獎只入圍；Cannes Soundtrack Award 是記者評審團的獎，正文寫成坎城影展期間頒發的原聲帶獎、不寫成官方獎；thin 卡。
+- 早坂：最後一部是《生きものの記録》，佐藤勝在《七武士》只負責編曲；《波麗露》式段落在《羅生門》、是黑澤明要求的。
+- 《First Reformed》用原名＋描述（伊森霍克飾牧師）；《Marketa Lazarová》用原名；《輕蔑》原名必附。《Macbeth》不寫風笛。DJ Fish＝黃凱宇不連寫。
