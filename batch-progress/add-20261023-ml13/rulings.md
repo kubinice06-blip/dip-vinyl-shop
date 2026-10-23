@@ -65,3 +65,20 @@
 - **15019** 卡單與研究稿不一致（提請主線）：Dead Meadow《Old Growth》卡單 label 為 Xemu，研究稿 MB／維基皆為 Matador（olé 750 2），note 照研究稿寫 Matador；卡單 label 欄請主線核。
 - **15020** 自查：hook 之間中文 4-gram 0 條；hook 與 note 無逐字重複句；`node qa-batch.mjs hooks add-20261023-ml13` 全部通過；`node chk-hook-crossgroup.mjs add-20261023-ml13` 全部通過（hook 加權 17–26、note 169–237）。
 - 廠牌再改：Dead Meadow《Old Growth》Xemu→Matador（MB／維基，olé 750 2）。
+
+## 寫作層（writer-1，15021–15030）
+- **15021** 交件：`desc-tools/batches/output/add-20261023-ml13-out-1.json` 12 張（full 11：199–240；thin 1：Old Growth 178）。`qa-batch out`、`qa-check-research`、`fix-spacing` 皆 0 處；「據／也就是／不是／並非／沒有」grep 0。初稿兩張超標，整格捨去：Mirador 248（砍人聲疊錄子句）、Long Lost 242（縮串場子句）；Old Growth 初稿 180 貼上限，刪一個重複的「專輯」。
+- **15022** 第二句領句全照 15016 配表；「日」後一字照 15017（Old Growth 日由、Gentle Spirit 日先、Dark Horse 日發、Coliseum 日出、Long Lost 日推），日期前一字逐張不同（於／約／片／輯／秒）。Jalamanta 不寫到日。
+- **15023** 自掃 han() 4-gram：跨張 3 次以上 0 條；2 次的只剩「首張個人專輯」「迷幻搖滾樂團」「加拿大樂團」「第二／第四張專輯」「自己製作」這類身分詞。途中拆掉「專輯年月日」×2（Long Lost 日期句改以日期領句、前一字為「秒」）。
+- **15024** 媒體名、媒體榜名次照 15018 全數不寫；樂評評語只用 note 指定的兩處，皆不具名（Jalamanta「沙漠最平靜、最寬闊」、Gentle Spirit「七〇年代 Laurel Canyon 的味道」）。Polaris（獎項）、Billboard 民謠專輯榜（銷售榜）照 note 保留。
+- **15025** 不複述 hook 的處理：Jalamanta 的「包辦所有樂器」只在 hook 出現、正文改寫〈Toot〉的外援；Coliseum 第二句以「兩位新團員」具名擴編對象；Long Lost 第二句具名主腦 Schneider，主持人改稱「這位老式電台主持人」；Dark Horse 不再重寫數字電台。
+- **15026** Old Growth 廠牌照派工與 15019 寫 Matador。
+
+## 主線審稿（15031–15040；2026-10-23）
+- 15031：逐張審 12 張，逐句對回研究稿；事實層未改。
+- 15032：改 5 處：
+  - `desc2:Brant Bjork|Jalamanta`：刪「樂評形容這是沙漠最平靜、最寬闊的樣子。」（單源評價句）→ 187 字。
+  - `desc2:Jonathan Wilson|Gentle Spirit`：刪「樂評從中聽出七〇年代 Laurel Canyon 的味道。」（單源評價）；「2011 年 8 月 8 日先在英國與歐洲發行」→「專輯在 2011 年 8 月 8 日先於英國與歐洲發行」補回字數 → 183 字。
+  - `desc2:Lord Huron|Long Lost`：「2021 年 5 月 21 日推出後，專輯登上 Billboard 美國民謠專輯榜第 1 名。」→「專輯在 2021 年 5 月 21 日推出。」（媒體榜單名次不進正文）→ 215 字。
+  - `desc2:The Besnard Lakes|…Thunderstorm Warnings`：「迷幻與鞋凝交織」→「迷幻與瞪鞋交織」（shoegaze 台灣通行譯名）→ 233 字。
+- qa-batch out、qa-check-research、fix-spacing 重跑全過。

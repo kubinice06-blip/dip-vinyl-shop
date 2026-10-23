@@ -101,3 +101,18 @@
 - **13543** c4 Sciarrino《Lo spazio inverso》的「官網說法領句」與 writer-base 的轉述引導詞禁令（10-06 店主裁定）衝突：改成直述「Sciarrino 與 Ensemble Recherche 的團員有私交」，不寫官網二字，領句仍以這層私交開頭。可逆。
 - **13544** note 的否定句改正面寫法：Lachenmann「弦樂器不負責推進和聲」→「把推進和聲的差事交了出去」；temA「無詞人聲」那句改寫成「帶人聲的那首叫 temA」（hook 已說不唱詞）；Rihm「幾乎不預先構思」不重寫（hook 已承擔），正文只寫「筆記本作品」系列。為了避開 4-gram，有三張的「作曲家」字樣改用其他說法（Xenakis JACK 以「把統計數學寫進音樂」交代身分、Dusapin 寫「後來改走作曲」、Rihm 寫「譜下此曲」），其他資訊照 note。
 - **13545** 自掃（han() 中文 4-gram，本檔 16 張＋writer-2 的 hook 與 out-2 現稿合掃）：3 張以上只剩編制名「弦樂四重奏」（8 張，屬樂器／編制名不計）。途中拆掉「國作曲家」「的作曲家」「作曲家的」「作曲家在」「作曲家寫」「四重奏年」「在年發行」「於年發行」「四重奏由」「這份錄音」「科隆進行隔年發行」（與 out-2 現稿 w2-15 幾乎同句）、「的大提琴」「作品寫給」「四重奏這」等殘片。2 張的殘片裡與 out-2 共用的有「倫敦的錄」「是寫於年」「分鐘年生於」（後者是 hook 句尾「分鐘」黏上第二句年份，兩檔都是）等，留給主線收件合掃再看。
+
+## 寫作層（writer-2）
+- **13546** 交件：`desc-tools/batches/output/add-20261023-mc32-out-2.json` 15 張（full 13：215–239；thin 2：Funérailles 175、Nieuw 169）。`qa-batch out`（out-2 標記 0）、`qa-check-research`（標記 0）、`fix-spacing`（0）皆過；「據」「也就是」「這張專輯」與媒體／平台名 grep 0。初稿 6 張出界（Funérailles 182、Nieuw 200 兩張 thin，Saunders 243、Furrer 255、Barrett 260、Mantra 245），整格捨去：Nieuw 的 Intermedio 全名與「室內樂團」身分詞、Furrer 第二句的三種編制總述、Barrett 的「Barrett 兼任製作」、Mantra 的「後來」。
+- **13547** note 的消息來源字全部改直述：Exposé「廠方說它的靈感來自 Wölfli」、Bjarnason「Bridge 說這張收齊」、Furrer「說法出自出版社」→ 事實直接寫；Elision《Ferneyhough》「樂評說撥弦聲像…」→「聽來像」、「樂評說全盤少抒情」→「樂評聽來」；Exposé 密度用被動「被形容為」；Wolpe「樂評說…」→「樂評形容它們…」（不具名）。Feldman 照 facts 補全名 Morton Feldman。
+- **13548** 藝人名照卡單藝人欄：note 寫 `ensemble recherche`／`ELISION` 的，正文一律照卡單寫 `Ensemble Recherche`、`Elision Ensemble`（可逆，主線若要照團名官方寫法再改）。古典卡開頭兩句交代作曲家＋演奏者＋編制；Nieuw、2e2m 的編制落在第三句（thin 字數不夠／hook 已帶指揮與鍵盤）。
+- **13549** 第二句偏離配表處（為拆跨張 4-gram，語意不變）：Saunders 改「作曲家是 1967 年生於倫敦的 Rebecca Saunders」（原「1967 年生於…的作曲家」與 Berio、Barrett 撞「的作曲家」×3）；Barrett 改「Richard Barrett 是威爾斯作曲家，出生於 1959 年」；Carter 改「1908 年，作曲家 Elliott Carter 生於紐約」；Exposé 改「六首曲子都由 Brian Ferneyhough 作曲」；Arditti《Kurtág…》改「倫敦的 Arditti Quartet 演奏」（原「由…錄成」與 out-1 撞「四重奏由」×3）。Funérailles 第二句省「作曲家」三字（hook 已有），避「作曲家的」。
+- **13550** 自掃（han() 中文 4-gram，本檔 15 張＋out-1 現版 16 張合掃）：本檔 3 張以上只剩樂器名（「提琴獨奏」「大提琴獨」）。途中拆掉：「作曲家年」×3、「的作曲家」×3、「被形容為」、「首曲子由／子由德國」、「於年發行」、「首是年的」「的一首是」、「這份錄音」（對 out-1 Keller）、「在科隆進行隔年發行」（對 out-1 JACK）、「倫敦的錄」「四重奏由」「是寫於年」「分鐘年生於」「作曲家留下」「演奏者是」「完成於年」「獨奏曲與」「的第二號」「的那首是」「首室內樂」「首曲子的」「作曲家寫」。2 張殘片留給主線收件合掃：「演奏的是」（Elision 配表原句對 out-1 Rihm）、「國作曲家」「利作曲家」（配表原句的國籍＋作曲家）、「作曲家的」（Elision／Furrer）、「的四重奏」（Lutosławski 配表原句對 out-1 Ligeti），其餘為樂器名。逐張字數：175／169／219／226／229／235／233／237／232／238／237／225／239／233／239。
+
+## 主線審稿（13551–13560；2026-10-23）
+- 13551：逐張審 31 張（out-1 16、out-2 15），逐句對回研究稿；事實層未改。抽核：Carter Vol. I「第四號首錄」＝Discogs 封面標 World Premiere Recording；Ligeti「Bartók 第七號」＝Kurtág 語（維基 String Quartet No. 1）；Keller《Ligatura》Kurtág 只彈最後兩小節＝ECM 樂評；Thomopoulos 演奏博士＝Blüthner 藝人頁；Boulez《Livre》2018 重建＝維基；Wolpe「Feldman 列為同時代偉大作品」＝研究 e 組。
+- 13552：刪 3 處單源評價句（改動只刪不補，字數仍在帶內）：
+  - `desc2:Elision Ensemble|Ferneyhough: Terrain / …`：刪「樂評聽來，整張少有抒情，聲音多半偏悶或略帶刺耳。」（單一樂評的評價句）→ 205 字。
+  - `desc2:Ensemble Exposé|Ferneyhough: Chamber Music`：刪「這首的材料密度被形容為幾乎令人窒息。」（單源轉述、原頁 403 只見搜尋摘要）→ 201 字。
+  - `desc2:The Group for Contemporary Music|Wolpe: …`：刪「樂評形容它們爆發著能量、旋律精瘦。」（單源評價）→ 220 字。
+- 13553：未改但記錄——Berio《String Quartets》hook「以電子音樂出名」依研究稿 RAI 音響學研究室共同創辦人，保留；Elision《Ferneyhough》卡池鍵盤名保留 MB 誤植 `d'lcare`，正文未出現此拼法。

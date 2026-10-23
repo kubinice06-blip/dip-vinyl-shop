@@ -1,0 +1,878 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-ml13",
+ "batchNote": "薄細項策展線（add-20261023-ml13）",
+ "createdAt": "2026-10-23T09:22:51Z",
+ "albums": [
+  {
+   "artist": "Dead Meadow",
+   "album": "Old Growth",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "eed4d13d-ba44-36c4-aa7f-9baf97a288cb",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "慢速 stoner／desert 迷幻：Dead Meadow 後期較好入耳的一張，暖色 fuzz 民謠迷幻。｜策展無疑點｜MB release-group eed4d13d-ba44-36c4-aa7f-9baf97a288cb：title「Old Growth」、Album、first-release-date 2008-02-04、artist-credit「Dead Meadow」。證據：https://musicbrainz.org/release-group/eed4d13d-ba44-36c4-aa7f-9baf97a288cb https://coverartarchive.org/release-group/eed4d13d-ba44-36c4-aa7f-9baf97a288cb/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/eed4d13d-ba44-36c4-aa7f-9baf97a288cb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 80053,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 80053）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "搬到洛杉磯之後，三人組離開了偏金屬的重型路線。2007 年，美國樂團 Dead Meadow 恢復三人編制，從華盛頓特區搬到洛杉磯。新專輯在第二張誕生的那座農場開工，最後在 Sunset Sound 收尾，由貝斯手 Steve Kille 製作。唱片於 2008 年 2 月 4 日由 Matador 發行，重心轉向藍調搖滾，原聲小品與慢律動的歌彼此穿插。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Old_Growth_(album)",
+     "https://musicbrainz.org/release-group/eed4d13d-ba44-36c4-aa7f-9baf97a288cb",
+     "https://en.wikipedia.org/wiki/Dead_Meadow"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/49/7a/25497a59-7520-83d5-a652-dea6cb9f6c26/mzaf_6970490945543818640.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "appleCollectionId": "1589290418",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 1589290418「Dead Meadow《Old Growth》」：主線人工配對：Apple 藝人目錄 Dead Meadow《Old Growth》2008，取第 1 軌〈Ain't Got Nothing (To Go Wrong)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Brant Bjork",
+   "album": "Jalamanta",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b8d1f1ed-ca26-3acd-9d42-7e79f7351e27",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "慢速 stoner／desert 迷幻：前 Kyuss 鼓手的慢板沙漠 groove 盤，鬆而暖，不推進。｜⚠ y 貼邊：混音偏乾｜MB release-group b8d1f1ed-ca26-3acd-9d42-7e79f7351e27：title「Jalamanta」、Album、first-release-date 1999-11-19、artist-credit「Brant Bjork」。證據：https://musicbrainz.org/release-group/b8d1f1ed-ca26-3acd-9d42-7e79f7351e27 https://coverartarchive.org/release-group/b8d1f1ed-ca26-3acd-9d42-7e79f7351e27/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b8d1f1ed-ca26-3acd-9d42-7e79f7351e27/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 218540,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 218540）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Kyuss 前鼓手在沙漠租一星期錄音室，包辦所有樂器。加州約書亞樹的 Rancho de la Luna，就是 Brant Bjork 在 1999 年 2 月錄下首張個人專輯的地方，那時他已加入 Fu Manchu。〈Toot〉一曲的歌詞與主唱交給 Mario Lalli。唱片同年由 Man's Ruin Records 發行，到了 2019 年，專輯又以重混版本再版。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Jalamanta",
+     "https://musicbrainz.org/release-group/b8d1f1ed-ca26-3acd-9d42-7e79f7351e27",
+     "https://theobelisk.net/obelisk/?p=92034",
+     "https://en.wikipedia.org/wiki/Brant_Bjork"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9e/85/5f/9e855fda-d4e9-f4f8-b9a4-ec10afbadd25/mzaf_14660430064670550998.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "appleCollectionId": "158236393",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 158236393「Brant Bjork《Jalamanta》」：曲目 10/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Lazy Bones〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Colour Haze",
+   "album": "She Said",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "16e8b800-1009-4b8b-af9e-ea98329d096d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "慢速 stoner／desert 迷幻：Colour Haze 最暖的一張，旋律性強，慢而包覆。｜策展無疑點｜MB release-group 16e8b800-1009-4b8b-af9e-ea98329d096d：title「She Said」、Album、first-release-date 2012-09-13、artist-credit「Colour Haze」。證據：https://musicbrainz.org/release-group/16e8b800-1009-4b8b-af9e-ea98329d096d https://coverartarchive.org/release-group/16e8b800-1009-4b8b-af9e-ea98329d096d/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/16e8b800-1009-4b8b-af9e-ea98329d096d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 9555,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 9555）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "因為技術問題延宕約四年，樂團在排練室蓋起類比錄音室。Colour Haze 是 1994 年起活動的慕尼黑重迷幻搖滾樂團，由 Stefan Koglek 主導。錄音室裡擺著一台兩吋 24 軌磁帶機，殘響交給 EMT 240 板式殘響器。Koglek 用倒轉、變速的吉他錄音，說自己是在用磁帶機作曲；〈Grace〉另外加錄了弦樂四重奏。2012 年，專輯由他自己的 Elektrohasch 發行，雙碟約 79 分鐘，標題曲長 18 分 42 秒。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Colour_Haze",
+     "https://theobelisk.net/obelisk/?p=25975",
+     "https://progarchives.com/album.asp?id=39560",
+     "https://theobelisk.net/obelisk/?p=50965",
+     "https://theobelisk.net/obelisk/?p=95842",
+     "https://musicbrainz.org/release-group/16e8b800-1009-4b8b-af9e-ea98329d096d"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/39/dd/cc/39ddcc5a-9557-05f7-ca7a-95245185f452/mzaf_17103771389776357036.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "appleCollectionId": "573341055",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 573341055「Colour Haze《She Said》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈She Said〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sungrazer",
+   "album": "Mirador",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "791a0418-a0e7-4ce3-8c93-64a29af36df1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "慢速 stoner／desert 迷幻：荷蘭夢幻 stoner，慢、濕、暖，旋律好入耳。｜策展無疑點｜MB release-group 791a0418-a0e7-4ce3-8c93-64a29af36df1：title「Mirador」、Album、first-release-date 2011-07-08、artist-credit「Sungrazer」。證據：https://musicbrainz.org/release-group/791a0418-a0e7-4ce3-8c93-64a29af36df1 https://coverartarchive.org/release-group/791a0418-a0e7-4ce3-8c93-64a29af36df1/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/791a0418-a0e7-4ce3-8c93-64a29af36df1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 6076,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 6076）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "荷蘭三人團先錄下排練室裡的即興，再從錄音中整理出歌。唱歌兼彈吉他的是 Rutger Smeets，這支 2009 年初成立的 Sungrazer 走重迷幻路線。首張專輯自行發行之後，樂團被 Stefan Koglek 的 Elektrohasch 收編，2011 年在那裡出版《Mirador》。錄音地點在 Maastricht，錄音師被樂團稱作第四個團員。吉他溫暖如奶油；標題曲用 Echoplex 延遲堆出太空感，13 分 48 秒的〈Behind〉則從催眠段落走進重段落。",
+    "sourceUrls": [
+     "https://theobelisk.net/obelisk/2011/10/21/sungrazerinterview/",
+     "https://theobelisk.net/obelisk/?p=16784",
+     "https://dprp.net/reviews/2012/aural-innovations-february-2012",
+     "https://musicbrainz.org/release-group/791a0418-a0e7-4ce3-8c93-64a29af36df1"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "note": "Apple 的 sungrazer 是同名他人（2022 起單曲／EP），無荷蘭 Sungrazer《Mirador》條目。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jonathan Wilson",
+   "album": "Gentle Spirit",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6bdd0a6f-5773-3673-99fa-fe4b7db60cab",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖色慢迷幻搖滾：新 Laurel Canyon 迷幻民謠搖滾，暖、濕、慢。｜⚠ y 貼邊｜MB release-group 6bdd0a6f-5773-3673-99fa-fe4b7db60cab：title「Gentle Spirit」、Album、first-release-date 2011-08-08、artist-credit「Jonathan Wilson」。證據：https://musicbrainz.org/release-group/6bdd0a6f-5773-3673-99fa-fe4b7db60cab https://coverartarchive.org/release-group/6bdd0a6f-5773-3673-99fa-fe4b7db60cab/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6bdd0a6f-5773-3673-99fa-fe4b7db60cab/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 140436,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 140436）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "正式發行之前，這些歌早已燒成 CDR 流傳了好幾年。美國音樂人 Jonathan Wilson 在 2008 至 2010 年間，於 Laurel Canyon 的 Canyonstereo 錄音室自己製作這批歌，以吉他為底，錄上類比磁帶。後來他與 Bella Union 簽下合約。專輯在 2011 年 8 月 8 日先於英國與歐洲發行，全長 78 分 19 秒。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Gentle_Spirit",
+     "https://en.wikipedia.org/wiki/Jonathan_Wilson_(musician)",
+     "https://www.undertheradarmag.com/reviews/gentle_spirit",
+     "https://thequietus.com/?p=15290",
+     "https://musicbrainz.org/release-group/6bdd0a6f-5773-3673-99fa-fe4b7db60cab"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c6/8c/7b/c68c7ba6-abe0-622c-626e-29f89d93c1b8/mzaf_4966196902358244676.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "appleCollectionId": "450182139",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 450182139「Jonathan Wilson《Gentle Spirit (Bonus Track Version)》」：曲目 13/13 對上 MB 原盤（Apple 共 15 軌），取第 1 軌〈Gentle Spirit〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Besnard Lakes",
+   "album": "The Besnard Lakes Are the Dark Horse",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "12c46ec9-eb6a-3a45-957b-4f2df1a2c42b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖色慢迷幻搖滾：加拿大 psych-gaze 代表，霧牆包覆，暖。｜策展無疑點｜MB release-group 12c46ec9-eb6a-3a45-957b-4f2df1a2c42b：title「The Besnard Lakes Are the Dark Horse」、Album、first-release-date 2007-02-20、artist-credit「The Besnard Lakes」。證據：https://musicbrainz.org/release-group/12c46ec9-eb6a-3a45-957b-4f2df1a2c42b https://coverartarchive.org/release-group/12c46ec9-eb6a-3a45-957b-4f2df1a2c42b/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2007,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/12c46ec9-eb6a-3a45-957b-4f2df1a2c42b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 50305,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 50305）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "好幾首歌一開場，先放出短波數字電台的錄音。由夫妻 Jace Lasek 與 Olga Goreas 2003 年在蒙特婁組成的 The Besnard Lakes，是一支加拿大樂團。第二張專輯由兩人自己製作，在 Lasek 的 Breakglass Studio 錄成。人聲拉到前面並加上和聲，〈Devastation〉則有 shoegaze 吉他。唱片 2007 年 2 月 20 日發行，入圍 Polaris 音樂獎。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Besnard_Lakes",
+     "https://en.wikipedia.org/wiki/The_Besnard_Lakes_Are_the_Dark_Horse",
+     "https://www.straight.com/article-110471/besnard-lakes-step-into-the-winners-circle",
+     "https://musicbrainz.org/release-group/12c46ec9-eb6a-3a45-957b-4f2df1a2c42b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/eb/1e/05/eb1e0524-e8d1-93fe-4f52-a72be9533bb0/mzaf_12884234895218866460.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "appleCollectionId": "453245747",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 453245747「The Besnard Lakes《The Besnard Lakes Are the Dark Horse》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Disaster〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Besnard Lakes",
+   "album": "Until in Excess, Imperceptible UFO",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9a091a9b-fe9d-483c-928b-e78fb0e0489b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖色慢迷幻搖滾：夢幻厚霧，推進低。｜⚠ z 貼邊｜MB release-group 9a091a9b-fe9d-483c-928b-e78fb0e0489b：title「Until In Excess, Imperceptible UFO」、Album、first-release-date 2013-04-01、artist-credit「The Besnard Lakes」。證據：https://musicbrainz.org/release-group/9a091a9b-fe9d-483c-928b-e78fb0e0489b https://coverartarchive.org/release-group/9a091a9b-fe9d-483c-928b-e78fb0e0489b/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2013,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9a091a9b-fe9d-483c-928b-e78fb0e0489b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 26864,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 26864）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "專輯名取自一篇法文樂評的機器翻譯。在巴黎演出之後，蒙特婁樂團 The Besnard Lakes 收到廠牌經理寄來的譯文：他把當地的法文樂評丟進網路翻譯，結果冒出 until in excess, imperceptible UFO 這串字。Jace Lasek 覺得這句話正好形容他們。第四張專輯交給 Jagjaguwar，2013 年 4 月發行。八首裡只有〈People of the Sticks〉走快拍，其餘是奶油般的吉他層與合成器長音，人聲浸在回聲裡。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/9a091a9b-fe9d-483c-928b-e78fb0e0489b",
+     "https://musicbrainz.org/release/91ba828e-59bf-4aaf-98bf-ab8fabf67e75",
+     "https://en.wikipedia.org/wiki/Until_in_Excess,_Imperceptible_UFO",
+     "https://en.wikipedia.org/wiki/The_Besnard_Lakes",
+     "https://diffuser.fm/the-besnard-lakes-until-in-excess-imperceptible-ufo-album-review/",
+     "https://consequence.net/2013/04/album-review-the-besnard-lakes-until-in-excess-imperceptible-ufo/",
+     "https://popmatters.com/review/169998-the-besnard-lakes-until-in-excess-imperceptible-ufo",
+     "https://thefirenote.com/?p=6940"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d1/70/41/d170411a-28d9-61db-4ff3-a8ab23c4b94b/mzaf_8572572224099164990.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "appleCollectionId": "601134021",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 601134021「The Besnard Lakes《Until in Excess, Imperceptible UFO》」：曲目 7/8 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈46 Satires〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Besnard Lakes",
+   "album": "A Coliseum Complex Museum",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c71f975a-d810-4700-b1ad-58ea63480ad8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖色慢迷幻搖滾：沉穩厚霧，暖中帶憂。｜⚠ z 貼邊｜MB release-group c71f975a-d810-4700-b1ad-58ea63480ad8：title「A Coliseum Complex Museum」、Album、first-release-date 2016-01-22、artist-credit「The Besnard Lakes」。證據：https://musicbrainz.org/release-group/c71f975a-d810-4700-b1ad-58ea63480ad8 https://coverartarchive.org/release-group/c71f975a-d810-4700-b1ad-58ea63480ad8/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c71f975a-d810-4700-b1ad-58ea63480ad8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 8503,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 8503）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "樂團擴編成六人之後，反而把每首歌收得更短。兩位新團員 Sheenah Ko 與 Robbie MacArthur 原本是巡演樂手，蒙特婁迷幻搖滾樂團 The Besnard Lakes 把他們收為正式成員。第五張專輯 2016 年 1 月 22 日出版，八首都比前兩張短，Lasek 說這是把自己拉回來。開場〈The Bray Road Beast〉是浸滿殘響的吉他加上他的假音；〈Necronomicon〉取自洛夫克拉夫特的小說，題材偏向超自然。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/1e700108-ef20-4838-a640-1e1dd99b7279",
+     "https://en.wikipedia.org/wiki/A_Coliseum_Complex_Museum",
+     "https://www.wunc.org/2016-01-13/review-the-besnard-lakes-a-coliseum-complex-museum",
+     "https://www.theskinny.co.uk/music/reviews/albums/the-besnard-lakes-a-coliseum-complex-museum",
+     "https://musicbrainz.org/release-group/c71f975a-d810-4700-b1ad-58ea63480ad8"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b7/88/4a/b7884af2-9dc6-fabd-ad4b-94b3cb66e4eb/mzaf_11414573744844748240.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "appleCollectionId": "1047007149",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1047007149「The Besnard Lakes《A Coliseum Complex Museum》」：曲目 8/8 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈The Bray Road Beast〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Besnard Lakes",
+   "album": "The Besnard Lakes Are the Last of the Great Thunderstorm Warnings",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ea58dbe7-7edb-44a9-9523-5652ff1d4dce",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖色慢迷幻搖滾：晚期仍維持霧牆路線。｜⚠ MB 首發年 2021，與記憶不符，已照 MB｜MB release-group ea58dbe7-7edb-44a9-9523-5652ff1d4dce：title「The Besnard Lakes Are the Last of the Great Thunderstorm Warnings」、Album、first-release-date 2021-01-22、artist-credit「The Besnard Lakes」。證據：https://musicbrainz.org/release-group/ea58dbe7-7edb-44a9-9523-5652ff1d4dce https://coverartarchive.org/release-group/ea58dbe7-7edb-44a9-9523-5652ff1d4dce/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ea58dbe7-7edb-44a9-9523-5652ff1d4dce/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 7032,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 7032）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "黑膠四面依序叫瀕死、死亡、死後與生命。與原廠牌 Jagjaguwar 分手後，加拿大樂團 The Besnard Lakes 隔了約五年才推出第六張專輯。九首歌約 72 分鐘，分成四段小組曲，對應 LP 四面 Near Death、Death、After Death、Life，談的是死亡與死後。部分音樂最初是十年前為電影寫的長曲。迷幻與瞪鞋交織，殘響取代了管弦樂團，結尾的同名曲是全盤最長的一首。2021 年 1 月由 Flemish Eye 等三家廠牌分區發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/ea58dbe7-7edb-44a9-9523-5652ff1d4dce",
+     "https://musicbrainz.org/release/2b969ef8-c443-4909-8c58-544c7f2f3af0",
+     "https://en.wikipedia.org/wiki/The_Besnard_Lakes_Are_the_Last_of_the_Great_Thunderstorm_Warnings",
+     "https://beatsperminute.com/album-review-the-besnard-lakes-are-the-last-of-the-great-thunderstorm-warnings/",
+     "https://floodmagazine.com/83955/the-besnard-lakes-are-the-last-of-the-great-thunderstorm-warnings"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/b8/1b/db/b81bdbc6-7a49-f77e-dd64-9d0590513765/mzaf_17078387786073268501.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "appleCollectionId": "1617997596",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1617997596「The Besnard Lakes《The Besnard Lakes Are the Last of the Great Thunderstom Warnings》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Blackstrap〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Daniel Lanois",
+   "album": "Acadie",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3ff0370a-e997-36ce-9741-d04bdb051c20",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖色慢迷幻搖滾：潮濕、溫熱、被殘響包住的沼澤氛圍。｜⚠ 非迷幻搖滾本線，可能與 ml24 重疊｜MB release-group 3ff0370a-e997-36ce-9741-d04bdb051c20：title「Acadie」、Album、first-release-date 1989-09-20、artist-credit「Daniel Lanois」。證據：https://musicbrainz.org/release-group/3ff0370a-e997-36ce-9741-d04bdb051c20 https://coverartarchive.org/release-group/3ff0370a-e997-36ce-9741-d04bdb051c20/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3ff0370a-e997-36ce-9741-d04bdb051c20/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 18531,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 18531）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "製作人 Lanois 的首張個人專輯，英語法語交替著唱。Acadie 指的是被英國逐出加拿大、後來落腳路易斯安那的法裔阿卡迪亞人，加拿大製作人 Daniel Lanois 在 1989 年 9 月推出這張唱片。專輯主要在紐奧良錄成，他彈鋼棒吉他與 Omnichord。Brian Eno 加上玻璃般的鍵盤長音，U2 的節奏組與 Neville 兄弟也來客串。電子化的處理浸在木吉他的共鳴裡，〈Ice〉全程維持華爾滋拍子。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Acadie_(album)",
+     "https://en.wikipedia.org/wiki/Daniel_Lanois",
+     "https://www.muzines.co.uk/articles/daniel-lanois/5761",
+     "https://stereophile.com/content/recording-january-1990-acadie",
+     "https://musicbrainz.org/release-group/3ff0370a-e997-36ce-9741-d04bdb051c20"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bd/fd/91/bdfd91b8-7a96-6ede-7e9d-41c4e8b354e2/mzaf_14127701615125385524.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "appleCollectionId": "1844714975",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1844714975「Daniel Lanois《Acadie (Gold Top Edition)》」：曲目 12/12 對上 MB 原盤（Apple 共 19 軌），取第 1 軌〈Still Water〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Beta Band",
+   "album": "Hot Shots II",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "34c62e23-de6c-36ba-afa0-8d91086d22c2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "濕而暖的 psych-pop（第二輪）：旋律更清楚的第二張。｜⚠ x、z 在線上｜MB release-group 34c62e23-de6c-36ba-afa0-8d91086d22c2：title「Hot Shots II」、Album、first-release-date 2001-07-07、artist-credit「The Beta Band」。證據：https://musicbrainz.org/release-group/34c62e23-de6c-36ba-afa0-8d91086d22c2 https://coverartarchive.org/release-group/34c62e23-de6c-36ba-afa0-8d91086d22c2/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/34c62e23-de6c-36ba-afa0-8d91086d22c2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 167499,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 167499）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "蘇格蘭樂團收起密集的實驗，改錄一張極簡的深夜唱片。共同製作人 Colin 'C-Swing' Emmanuel 與 The Beta Band 一起，把第二張專輯帶向受 R&B、嘻哈與電子樂影響的極簡路線。編制只剩輕聲人聲、木吉他刷弦、合成器與罐頭鼓機。開場〈Squares〉先是一段清唱，再展開成懶洋洋的 trip-hop 律動。唱片 2001 年由 Regal Zonophone 在英國發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Hot_Shots_II",
+     "https://avclub.com/the-beta-band-hot-shots-ii-1798196713",
+     "https://www.phoenixnewtimes.com/music/beta-band-6414686/",
+     "https://drownedinsound.com/releases/2640/reviews/1651-",
+     "https://popmatters.com/betaband-hot-2495849396.html",
+     "https://musicbrainz.org/release-group/34c62e23-de6c-36ba-afa0-8d91086d22c2"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c0/2d/12/c02d1243-e24b-4465-e81d-1893a963ea0d/mzaf_6546178655809820096.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "appleCollectionId": "1339241338",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1339241338「The Beta Band《Hot Shots II》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Squares〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lord Huron",
+   "album": "Long Lost",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "86832b46-99be-44fd-afcd-4b3ad327c0ec",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "濕而暖的 psych-pop（第二輪）：整張像舊收音機的慢板暖霧。｜⚠ 偏電台復古的低保真，y 可能略低｜MB release-group 86832b46-99be-44fd-afcd-4b3ad327c0ec：title「Long Lost」、Album、first-release-date 2021-05-21、artist-credit「Lord Huron」。證據：https://musicbrainz.org/release-group/86832b46-99be-44fd-afcd-4b3ad327c0ec https://coverartarchive.org/release-group/86832b46-99be-44fd-afcd-4b3ad327c0ec/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/86832b46-99be-44fd-afcd-4b3ad327c0ec/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 436271,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 436271）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "串場的電台主持人 Tubbs Tarbell，是樂團虛構的。Ben Schneider 是美國獨立民謠樂團 Lord Huron 的主腦，第四張專輯的全部曲目由他寫成，製作與弦樂編寫也是他。插曲由這位老式電台主持人串場，聽來像一場電台現場。錄音分在洛杉磯與斯德哥爾摩，錄進大編制弦樂。節奏慢而重複，帶 Morricone 式的音色，壓軸〈Time's Blur〉長 14 分 18 秒。專輯在 2021 年 5 月 21 日推出。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Long_Lost_(Lord_Huron_album)",
+     "https://music.mxdwn.com/2021/06/05/reviews/album-review-lord-huron-long-lost/",
+     "https://savingcountrymusic.com/album-review-lord-hurons-long-lost/",
+     "https://musicbrainz.org/release-group/86832b46-99be-44fd-afcd-4b3ad327c0ec"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/12/d0/0f/12d00f46-ce3d-4537-3339-73451744cfda/mzaf_12587477053403886211.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T09:22:51Z",
+    "appleCollectionId": "1624916941",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1624916941「Lord Huron《Long Lost (Deluxe Edition)》」：曲目 13/16 對上 MB 原盤（Apple 共 18 軌），取第 1 軌〈The Moon Doesn’t Mind〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  }
+ ]
+}
