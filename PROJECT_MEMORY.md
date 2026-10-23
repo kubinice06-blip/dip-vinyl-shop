@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜更正：「驟然爆裂」不算推力，94 張酸卡能量撤回（《The Drift》回頹靡）
+
+- **改動**：店主「The Drift 頹靡沒錯」。兩輪酸冷重判把「爆裂／音塊／drone」當推力，違反 10-22 能量標準（要有打擊在推），連 Sunn O))) 都被推到亢奮。152 張被拉高能量的逐張看，94 張沒有鼓／節拍在推的能量回原值、寒氣（冷色溫）保留；58 張真有節拍的留躁。BRIEF 改成「安靜但有寒氣也算酸；推力只看打擊」。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/score500/BRIEF.md`、`batch-progress/mood-axes/sour-rejudge-2/{BRIEF.md,drive-revert.json}`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：gate 綠、錨點 104/104；The Drift／Tilt／Sunn O)))／Penderecki／Ligeti 回頹靡，Geechee、Ornette 仍冷冽；冷冽 1,035、亢奮 2,753、頹靡 1,314、平靜 1,349。
+
+### 2026-10-23｜dip-vinyl-shop｜酸冷重判第二輪：「寒氣」也算酸，123 張改判（Scott Walker《The Drift》頹靡→亢奮）
+
+- **改動**：店主指出第一輪漏太多、《The Drift》可能歸錯。第一輪只抓窄標籤，《The Drift》（art-rock＋experimental）沒進候選。第二輪抓廣義實驗／前衛／art-rock／現代古典／dark ambient 標籤或評語有寒氣字眼、不在冷冽／亢奮的 2,397 張，8 支代理逐張判（`batch-progress/mood-axes/sour-rejudge-2/`），補「安靜但有寒氣也算酸」「驟然爆裂算推力」。判酸 234、主線退回 17（調性還在的陰暗作品），改值 123 進 `overrides.json`（累計 536）。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/sour-rejudge-2/*`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：gate 綠、錨點 104/104；Scott Walker 四張 → 亢奮；兩輪合計冷冽 936→1,064、亢奮 2,672→2,818；放鬆格 652 張候選無一判酸（寒氣型原本多在平靜／頹靡）。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 2 輪 ml6／md10：慢板靈魂 40＋冷 shoegaze／drone pop 40 張上線，落格 38/40、39/40
 
 - **內容**：店主「三個薄格各補到約 2,000」第 2 輪，本工作階段負責 ml6、md10（上一個工作階段卡在權限確認後接續）。ml6（`add-20261022-ml6`，quiet storm／slow jam＋70s 慢板靈魂弦樂盤）：Barry White 5、Will Downing 3、Teddy Pendergrass 3、Love Unlimited 2、Dells 2、Phyllis Hyman 2、Freddie Jackson 2、Jon Lucien 2、Manhattans 2、Sweetback、Marvin Gaye《Vulnerable》、Tom Brock、David Porter、Lalah Hathaway、Regina Belle、Miki Howard、Gerald Levert、Keith Washington、Silk、Gloria Scott、Major Harris、Billy Paul、Minnie Riperton、Ray, Goodman & Brown《II》、Margie Joseph、Peabo Bryson。md10（`add-20261022-md10`，冷 shoegaze／drone pop＋冷 art pop 慢盤）：Lycia 5、Grouper 系（Grouper、Nivhek、Mirrorring、Raum）、Jessica Bailiff 2＋Clear Horizon、Main 2、The Sight Below 2、Drowse 2、Valet 2、lovesliescrushing 2、SIANspheric 2、Final 2、Amp 2、Midwife 2、Zelienople 2、Cantu-Ledesma、Infinite Body、Cindytalk、Esben and the Witch、Gazelle Twin、Circuit des Yeux《-io》、Tropic of Cancer、Dirty Beaches《Stateless》。
