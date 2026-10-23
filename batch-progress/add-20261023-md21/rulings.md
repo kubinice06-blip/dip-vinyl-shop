@@ -31,3 +31,26 @@
 - 18285：Kirlian Camera《Still Air》大致成立（唱片冊註明『No sampled rhythms』）；chaindlk 評的是同年 Absentee EP 的〈Still Air〉（driving beats），不是本專輯，facts 未引用，勿混淆。
 - 18286：WebSearch 本組用了 7 次，超過每支 3 次的上限（Skin、Cranes、Kirlian 的聲音描述網站多為 403／503，只能靠搜尋找替代來源）；已記錄，勿再追加。
 - 18287：Skin 兩張『同為 1986 年 10–12 月錄音』僅 Discogs 與維基兩來源，寫作層若寫須保留『約』。
+
+## 研究 d 組
+- 18311 Black Wing《...Is Doomed》moodGuess 存疑：三份樂評一致指出合成鼓全程在打（〈DSA〉有舞曲節奏、〈Unemployed〉較快、〈My Body Betrayed Me〉讓人打拍子），且 Scene Point Blank 稱 chill wave／blissful melancholy，〈Luther〉被稱振奮——x 恐不在 ≤2.5、z −1.4 過冷。建議主線汰換候選。
+- 18312 Trees of Eternity《Hour of the Nightingale》輕微存疑：有鼓（Kai Hahto），但樂評稱含蓄抒情、清音／原聲撥弦為主、rhythm guitar 也偏氛圍；y 1.5 恐偏高（乾淨女聲＋清吉他），〈My Requiem〉〈Gallows Bird〉才較重。Wikipedia 的製作人 Jens Bogren 僅單源，未寫入 facts。
+- 18313 Them Are Us Too《Remain》：鼓機持續推進（Popshifter）、旋律清楚（Treble），z 建議 −0.3～−0.6 貼邊；Joshua Eustis 製作見 Dais 官網。
+- 18314 Caretaker《Theoretically Pure…》：MB 的 HAFTW 數位版不是首發，首發為 2005 年 12 月 V/Vm Test 免費下載；寫作層勿寫成 HAFTW 首發。Mantovani 取樣說僅 Wikipedia 單源。
+- 18315 Caretaker《Deleted Scenes / Forgotten Dreams》：聲音來源（舞廳取樣、低頻、深殘響）全無來源，status thin；WebSearch 3 次額度已用於他卡，Boomkat／AllMusic／Discogs／Pitchfork 皆被擋。列為「聲音未證實」，主線可保守處理。
+- 18316 Jon Collin & Demdike Stare《Fragments of Nothing》：原始發行 2020 卡帶／Bandcamp，DDS 黑膠為 2023 年；藍調／folk 酒味的描述讓 z 可能近 −0.5～−0.8。
+- 18317 Caretaker《Patience (After Sebald)》、18318 Leyland Kirby《Sadly…》：z 取 −0.4～−1.0 較穩（旋律清楚）；日期與 mastering 署名的來源衝突寫在 notes。
+- 18319 The Stranger《Watching Dead Empires in Decay》：有不穩定打擊（Boomkat），x 可能 2.4–2.8；低頻與磁帶糊無直接描述。
+- 本組推翻策展層：0 處（身分、年份、廠牌皆對得上；Caretaker TPAA 的廠牌欄為數位版廠牌，已在 notes 說明）。WebSearch 使用 3 次（上限）。
+
+## 研究 c 組
+- 18301 Esben and the Witch《Older Terrors》：策展層「Steve Albini 錄音」不成立——Discogs 載明柏林 Golden Retriever Studios、Felix-Florian Tödtloff 錄音混音、James Plotkin 母帶；facts 不得出現 Albini。鼓為 tom／部落式、慢，doom dirge 段有 riff 漸強，x 2.6 貼邊、y 1.5 偏高（樂評對『重』看法分歧）。
+- 18302 Kælan Mikla《Undir köldum norðurljósum》：策展層「第三張」錯，實為第四張（Mánadans 2014、Kælan Mikla 2016、Nótt eftir nótt 2018）。**moodGuess 存疑（嚴重）**：Burning Ambulance、單曲介紹皆指鼓機推進、motorik、甚至 four-on-the-floor、trap 式節拍，與『夢幻慢緩』不符；體感標準下 x 很可能 ≥3.0，建議汰換。
+- 18303 Dark Sanctuary《De lumière et d'obscurité》：策展層寫 Dame Pandora 主唱有誤——這張主唱是 Marquise Ermia（Dame Pandora 從 2004 年那張開始）；facts 已更正。y 存疑（極簡、放鬆、弦樂鍵盤，可能判輕）。
+- 18304 Dark Sanctuary《Les Mémoires blessées》：高潮段有鼓、進行曲式小鼓，整體仍慢；y 存疑（稀疏、弦樂鋼琴靠前，可能判輕）。
+- 18305 Soul Whirling Somewhere《Eating the Sea》：**moodGuess 存疑**：Projekt 官方『搖籃曲』、Opus『sparse yet warm』、Scaruffi『洗過情緒的吉他』皆偏溫柔暖調，z 可能落在 0 附近或偏暖；y 也可能偏輕（原聲吉他、極少打擊）。x 靜無疑。
+- 18306 Mors Syphilitica《Primrose》：**moodGuess 存疑**：編制是曼陀林、十二弦、原聲吉他、五弦琴（民謠式），質地恐判輕，z 只有『像 The Cure』的比喻；樂評也說『driving』，x 留意。廠牌：Darkside DARK 007 是 1998 法國版，美國首發為 Sacrum Torch STCD005；facts 以後者為主。Eric Hammer 即 Doc Hammer（《The Venture Bros.》共同創作者）。
+- 18307 Section 25《The Key of Dreams》：鼓有、貝斯低、迷幻，但『偏執、焦慮』的描述多於『下沉』，x 邊緣（可能 2.8–3.2）；AllMusic『glum mid-tempo pit of dejection』又支持頹靡。月份：維基 5 月、RYM 6 月，寫年份。
+- 18308 Former Ghosts《Fleurs》：**moodGuess 存疑**：有溫暖有力的合成底鼓、故障電子節拍、『甜美旋律與尖銳混亂交替』，體感可能緊而非沉，x 有 3.0 以上風險；y 的低傳真質感可能低於預估。
+- 18309 Trance to the Sun《Bloom Flowers, Bloom!》：程式鼓（非真鼓）、循環式迷幻，無推翻；z 冷度僅有間接證據。
+- 本組推翻策展層：3 處（Esben 的 Albini、Kælan Mikla 的張次、Dark Sanctuary 2000 的主唱）；moodGuess 存疑 6 張（嚴重：Kælan Mikla；中：Soul Whirling Somewhere、Mors Syphilitica、Former Ghosts；邊緣：Section 25、Dark Sanctuary ×2 的 y）。WebSearch 用 2 次。
