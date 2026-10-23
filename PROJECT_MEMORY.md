@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜原聲帶簡介重寫：開工準備（候選 196 張）＋寫作／研究規則加「原聲帶先點出作品」
+
+- **內容**：店主看到《Chrono Cross Original Soundtrack》簡介只談曲名寫法與盤號：「乍看不知道是超時空之鑰原聲帶很可惜，其他原聲帶也是，盡量多說一點相關的故事」（《Chrono Cross》台灣通稱《超時空之輪》，是《超時空之鑰》續作）。掃卡池＋KV 簡介，整理 196 張遊戲／電影／動畫／音樂劇原聲帶到 `batch-progress/ost-desc-20261023/candidates.json`（含現有簡介與 KV 鍵；關鍵字粗篩 111 張偏資料庫口吻，僅供參考），`BRIEF.md` 寫分流與重寫規則；`writer-base.md`、`research-base.md` 加「原聲帶：前兩句點出作品（台灣通行中文名＋原名＋類型、系列關係），講作品與音樂的故事，盤號版本最多一句」。重寫另開工作階段照 dip-desc-restyle 產線跑，《Chrono Cross》排第一批。
+- **主要檔案**：`batch-progress/ost-desc-20261023/{candidates.json,BRIEF.md}`、`desc-tools/prompts/{writer-base.md,research-base.md}`。
+- **驗證**：KV bulk get 取回 196 張的現有簡介（全數有值）；未改任何 KV。
+
 ### 2026-10-23｜dip-vinyl-shop｜自動試聽「預設開啟」改成每次造訪都開
 
 - **改動**：店主回報改成預設開啟後，自己手機進頻率光譜喇叭還是叉叉。原因：裝置以前記過 'off'（localStorage），預設開只管沒記過的裝置。改成開關只記在這次造訪（sessionStorage）：按掉或偵測到串流搶焦點，這個分頁／App 沒關前都是關；重開就回到開。舊的 localStorage 'off' 載入時清掉。四頁 `dip-player.js?v=52`。
