@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜《Carmina Burana》(Jochum) 沸騰→暴躁
+
+- **改動**：店主同意比照《Axion Esti》改暴躁：(3.6, 1.0, −0.5)。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：`build-card-moods.mjs` 錨點 104/104 同格。
+
 ### 2026-10-23｜dip-vinyl-shop｜《Axion Esti》沸騰→暴躁
 
 - **改動**：店主指定改暴躁：(3.5, 1.0, −0.6)。《Carmina Burana》維持沸騰。
