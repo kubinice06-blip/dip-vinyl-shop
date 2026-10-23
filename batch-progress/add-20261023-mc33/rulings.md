@@ -26,6 +26,18 @@
 - 13594　WebSearch 本組用 3 次；Progarchives、Allmusic、Discogs 網頁、Cuneiform 官網皆 403／503，改走 Discogs API、MB API、Wikipedia、Cuneiform Bandcamp。聲音事實多半是樂評片段，缺鼓聲與殘響的直接描述，已在 notes 註明。
 - 13595　發行日衝突：《In Extremis》MB 1998-12-08 vs Cuneiform 1998-09-08；《A History of Madness》MB 2003-09-19 vs Cuneiform 09-16，facts 只寫年或月。
 
+## 研究 a 組
+- 13561　moodGuess 存疑（重）：Cyclo.《Id》Cyclic Defrost 稱核心是「fierce bass pulses」與身體撞擊聲，並以 Sunn O))) 類重型團體比擬，低頻脈衝可能讓 y 走到 0.5 以上而落暴躁；首作《Cyclo.》Brainwashed 亦提及次低頻脈衝但整體偏高頻，不列存疑。
+- 13562　moodGuess 存疑（重／暖）：Signal《Robotron》Musiquemachine 稱有金屬質感的脈動低音、寬闊的環境音牆與冷而機械的旋律片段，與預估的「無低頻厚度」不符，y 可能偏重、旋律片段可能讓 z 偏暖。
+- 13563　moodGuess 存疑（靜）：Ryoji Ikeda《Dataphonics》本質是十段各 6 分鐘的廣播教材（Principle、Spectrum、Rhythmics 等各拆一個聲音參數），僅有 Discogs 說明與池田官網，查無樂評，「碎拍高速切換」無證據，status 標 thin；Spectrum、Harmonics 段可能是長音而判靜。
+- 13564　moodGuess 存疑（靜／重）：Pita《Seven Tons for Free》Wikipedia 稱缺少節奏、旋律與氛圍，Olivier Lamm 稱「夜間、內省的工業音樂傑作」，與「偶有破碎節拍」不符，最可能判靜或重，建議主線列為本組首選汰換候選（對應 curatorRisk 的 y +0.3 疑慮同方向）。
+- 13565　moodGuess 存疑（長軌）：Farmers Manual《No Backup》（八首各 6 到 10 分鐘，標籤含 analog、psychedelic）與《Explorers_We》（主碟為單軌 60 分鐘）僅有結構與標籤，無獨立樂評；尖細程度與節奏感未能查證，兩張皆 thin。《fsck》有 Fennesz「自由爵士式電腦鐵克諾」的間接證據，維持原預估。
+- 13566　推翻策展層一處：《Explorers_We》curatorWhy 寫「上百段」，實為單軌 60:03，團員 2018 年 Bandcamp 數位版切成 60 個各 1 分鐘（原版 CD 僅標「Exploders_We 1-60」）。另附加碼現場 CD（船上即興 36:20、WUK 隨機生成 15:35）限量 1000 張首版才有。
+- 13567　Hecker 兩張：《Recordings for Rephlex》的 pulsar 點擊序列（Precedence、Pulsar Wg'lett）與混沌噪音（Hénon Map）符合冷冽預估；《Acid in the Style of David Tudor》依 Tiny Mix Tapes 為快速打散重複型的 Buchla 顫動，但 ASA 高頻曲「painfully loud」且低音有「運動」角色，y 有判重風險（落暴躁）。兩張的聲音證據皆來自作者曲解與樂評，非第一手聽感。
+- 13568　Ars Electronica 1999：Wikipedia 的 Seven Tons for Free 條目僅寫 Prix Ars Electronica 數位音樂類獲獎，未分 Golden Nica 或榮譽獎；Peter Rehberg 條目寫 Distinction 並與 Fennesz、Mego 廠牌並列，facts 採榮譽獎，但原始 Ars 存檔無法開啟（web.archive.org 被擋），標 uncertain，鉤子層請避免寫成 Golden Nica。
+- 13569　日期與數字出入：Cyclo.《.》總長池田官網 36:30 vs Brainwashed 41:48，facts 未寫；《No Backup》Editions Mego 條目寫 1996-05、Discogs 與 MB 1996-06，取 6 月；Signal《Robotron》MB 首版標 GB、無廠牌，實為 Raster-Noton（德國）。Mego「第一張 CD 專輯」查無來源，未寫。
+- 13570　WebSearch 本組用 3 次（Cyclo.、Hecker《Acid》、Signal《Robotron》各 1）；Pitchfork、web.archive.org、AllMusic、Discogs 網頁、Boomkat 皆擋或逾時，改走 Discogs API、MB API、Wikipedia（rate limit 頻繁 429，用重試）、Bandcamp、Brainwashed、Cyclic Defrost、Musiquemachine、PopMatters、Tiny Mix Tapes、池田官網。Fennesz 對《fsck》的引言轉自團員 Bandcamp 頁（原 Pitchfork 名單未能開啟），單源。
+
 ## 研究 b 組
 - 13571　EVOL 非單人：Mego 頁、Discogs 都顯示 EVOL 是 Roc Jiménez de Cisneros 與 Stephen Sharp 的雙人組（Alloa／巴塞隆納），卡單與策展層寫成 Roc 單人；三張 EVOL 的 facts 寫雙人。
 - 13572　moodGuess 存疑（偏暖或偏靜）：Ikue Mori《Hex Kitchen》實為鼓機＋取樣加多位原聲／電聲客席（電豎琴、手風琴、小提琴、單簧管、風笛、長號）與 Catherine Jauniaux 人聲三首，非純尖細電子，恐判暖；《Garden》五首 7–11 分鐘長篇、Scaruffi 稱「冥想」，恐偏靜；《Myrninerest》只有 Scaruffi「最情感、最個人化」一句，無尖細／緊繃證據，恐判暖，status thin。
@@ -43,3 +55,13 @@
 - 13585　moodGuess 存疑（輕～中）：Amacher 證據兩分（Gann 稱刺耳；Free Jazz Blog 稱多半遊走持續、動態早期細微、要開大音量，可能判靜；〈Head Rhythm〉開頭強音可能偏重）；Gescom《Minidisc》Wikipedia 稱約半張 drone／氛圍、半張音響音樂，非全是碎拍，且為碎片拼貼；Schmickler 無任何來源說明有無尖細脈衝或音量；Henry Cow／Art Bears 只確認無調、短曲、黑暗，音色冷暖與尖細無來源，池中同人 x 3.0–3.1，預估 3.4 可能偏高。EFL 其餘三張聲音描述全屬推論（thin）。
 - 13586　WebSearch 本組用 4 次（Amacher、Gescom、Schmickler、General Magic 各 1，超出每支 3 次上限 1 次）：General Magic 與同名矽谷公司混淆，搜尋無用；其餘改走 MB／Discogs API 與 WebFetch。Pitchfork、AllMusic、Discogs 網頁、ProgArchives 被擋。
 - 13587　Art Bears、Henry Cow 的維基來源風格描述有單源風險，已在 notes 標出；General Magic 的 Pieper／Bauer 生平僅 Bandcamp／Discogs 兩處，未做第三源交叉。
+
+## 主線：研究層後汰換（不佔條號）
+- **汰 18 張**（研究層聲音反證或無聲音來源；研究稿條目移出研究檔，卡單存 `dropped-cards.json`）：
+  - 判靜（無節奏／長音／冥想）：Pita《Seven Tons for Free》（維基：缺節奏與旋律，「夜間內省」）、Ryoji Ikeda《Dataphonics》（十段 6 分鐘廣播教材，逐一拆單一聲音參數）、Ikue Mori《Garden》（五首 7–11 分鐘、樂評稱冥想）、U Totem《U Totem》（三首 10–15 分鐘、西塔琴長笛巴松管）、Thinking Plague《In This Life》（樂評：悲傷幽閉、葬禮般慢）、Aksak Maboul《Un peu de l’âme des bandits》（B 面 22 分鐘氛圍即興，池中同人落放鬆）、EVOL《Wormhole Shubz》（Discogs 標 Drone、最長 16 分 43 秒）。
+  - 判重：Cyclo.《Id》（fierce bass pulses、樂評拿 Sunn O))) 比擬）、Signal《Robotron》（金屬脈動低音與環境音牆）。
+  - 判暖（旋律、溫暖音色、滑稽）：Ikue Mori《Hex Kitchen》（電豎琴、手風琴、風笛與人聲）、Ikue Mori《Myrninerest》（樂評：最情感化）、General Magic《Frantz!》（唯一描述：明亮、歡快）、Thinking Plague《A History of Madness》（廠方：warm、organic）、Fred Frith《Speechless》（華爾滋抒情曲、風笛）、Skeleton Crew《The Country of Blinds》（Frith 自述已像普通搖滾樂團）、Étron Fou Leloublan《Face aux éléments déchaînés》（風琴三人組＋人聲，非尖銳管樂）、Debile Menthol《Emile au jardin patrologique》（四人法文歌、俏皮）。
+  - 無聲音來源＋發行面：EVOL《Rave Synthesis Approximations of György Ligeti’s Continuum》（100 卷展場限量卡帶、無試聽來源）。
+- **留**：Gescom《Minidisc》（半張 drone，但碎片拼貼為主）、Farmers Manual《Explorers_We》（單軌 60 分鐘碎片串接）、Hecker《Speculative Solution》《Acid in the Style of David Tudor》（樂評：尖嘯、緊繃；y 判重風險記下）、Rashad Becker（稀疏但陌生不安）、Amacher（刺耳高頻）。
+- 不補位：策展層說明剩下候選三軸全貼邊。研究後定案 **28 張**（glitch 13、RIO 15）。
+- 卡單改：Henry Cow《Western Culture》年份 1978→1979（1979 年 9 月發行，1978 為錄音年）；Étron Fou《Les Trois Fou's》廠牌 → 9H 17 Productions；《Batelages》廠牌 → Gratte-Ciel；《Les Sillons de la terre》廠牌 → Turbo Music（瑞士原盤）。EVOL 為 Roc Jiménez de Cisneros 與 Stephen Sharp 雙人組（研究層更正，正文照此寫）。

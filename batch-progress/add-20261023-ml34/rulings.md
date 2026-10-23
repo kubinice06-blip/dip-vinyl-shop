@@ -13,3 +13,10 @@
 - 跨組同人（UA、Lanois、Engineers、Manual、Hammock、Guthrie、Schnauss 他盤已在 ml2／ml4／ml11／ml13／ml24 上線）：盤不同，照「同一藝人沒有張數上限」收。
 - 台灣流行藝人：0，`tw-pop-artists.json` 不需加。
 - 場景挖不到 45，照實上架、不湊數（md4 先例）。
+
+## 研究 c 組
+- **16661**：Robin Guthrie《Fortune》卡單廠牌「Soleilmoon」有誤，MB 與 Wajobu 皆為法國 Soleil après minuit（SM1203CD）；主線改卡單 label。status thin（無獨立 Wikipedia 條目、英語樂評少，鼓與速度無可靠來源）。
+- **16662**：Daniel Lanois《Belladonna》moodGuess「幾乎無鼓」不符：〈Agave〉六八拍沉鼓、〈Frozen〉dub／雷鬼節拍（Brian Blade）、〈Two Worlds〉電子節奏；質地乾燥遼闊偏暗（Green Man「often dark and moody」），y／z 皆有掉線風險，建議主線視為汰換候選。葛萊美提名類別未查到，facts 僅寫「曾獲提名」。
+- **16663**：Daniel Lanois《Shine》moodGuess「殘響霧」存疑：Pitchfork「beyond clean」、層次分明不重疊、鼓機清脆、人聲拉高；Guardian 提「painstaking beats」。乾淨有空氣會判輕。facts 並列兩家對立評語供鉤子取捨。
+- **16664**：Robin Guthrie《Carousel》：Guthrie 自述「加點骨架、比純軟綿綿更吵一點」，有輕電子打擊樂（不推進）；殘響霧成立；Echoes 稱主題 melancholy，z 0.5 小風險。《Emeralds》與預估吻合（PopMatters：鼓埋在混音、warm and cozy）。
+- **16665**：Guthrie 三盤 Wikipedia 皆無獨立條目，來源用 MB／Somewhere Cold／Echoes／Textura／PopMatters／Wajobu；序數（第幾張個人專輯）一律不寫。
