@@ -14,3 +14,9 @@
   - 策展自標疑點：Hall of Mirrors《Altered Nights》（md5 研究層提過民族儀式元素、無鼓未證實）、Atomine Elektrine《The Antikythera Mechanism》（名義早期有電子節拍、本張無樂評）。
   - 色溫／質地風險：Northumbria《Markland》（吉他 drone 二重奏，z −1.2 全批最暖，吉他泛音有轉暖風險）。
   - 同人／同系列勻量：protoU《Lost Here》（同人留《Khmaoch》＋合作盤）、Alphaxone《Living in the Grayland》（同人留兩張＋兩張合作）、Dronny Darko《Abduction》（同人留兩張＋三張合作）、A Cryo Chamber Collaboration《Yog-Sothoth》（同系列留三張）、Sabled Sun《2149》（同系列留《2148》）。
+
+## 研究 e 組
+- 20641：Necrophorus《Drifting in Motion》身分採 2000 年 Crowd Control Activities 首版（六首）；策展寫的 Beksiński 獻詞曲是 2008 年 Old Europa Cafe 重錄版 bonus（作於 2006），首版沒有，寫作層不得寫成本盤獻詞。Discogs master 掛重錄版，不以其九首曲目為準。
+- 20642：Deep Frieze 的專輯序數（維基第四／Sonic Immersion 第三）對不上，facts 不寫序數；Track 2 座標採 CD 版 72°S 49°E。
+- 20643：S.E.T.I.《Baikal》、Necrophorus《Elinrós》、Ab Intra《Aura Imaginalis》三張聲音證據偏薄（無獨立樂評），status 標 thin，notes 寫 moodGuess 存疑；Baikal 另有 Bandcamp 標籤 glitch／techno 與「晶瑩」字眼，疑偏亮偏電子。
+- 20644：Arecibo 的 Brainwashed 樂評只取得搜尋摘要（頁面 404），不進 facts，只寫 notes；Lustmord 整體手法（洞穴／地穴錄音）僅作通例，不得當本盤聲音。
