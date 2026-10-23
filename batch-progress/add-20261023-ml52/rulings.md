@@ -38,3 +38,20 @@
 - 20542：《Do I Speak for the World》美國首發廠牌為 Elektra（2004-11-30），卡單 Atlantic 取自 MB 英國版；建議主線改 Elektra。年份不變。
 - 20543：Body Kiss MB 首發 2003-01-01 為佔位，實際 2003-05-06；Rahsaan 美國版 2004-10-26 為 Artistry Music，卡單 Dome 為英國首發，兩者並存。
 - 20544：Mr. I 年份 2010 屬 2000s 場景邊緣，留給主線。
+
+## 研究 b 組
+- 20531：9 張逐張核 moodGuess。存疑偏嚴重（建議汰換）：Dave Hollister《Real Talk》（hip-hop infused、開場取樣 James Brown 硬拍、Karma 鼓更硬，慢歌證據僅 Pleased Tonight／Almost）、Raheem DeVaughn《Love & War MasterPeace》（概念盤，三段口白＋Ludacris／Wale 合作，無慢板為主的來源）、Tank《Force of Nature》（Timbaland 掛七首、EW 稱 leaden beats、快慢各半、乾淨數位）、Jesse Powell《'Bout It》（AllMusic 明寫 hip-hop-ish 製作＋medium-tempo groove，Rodney Jerkins；策展「慢板為主」不成立）。
+- 20532：輕度存疑（快慢／製作乾淨）：Anthony Hamilton《The Point of It All》（Boston Phoenix 稱 clinical、programmed beats、一首接一首 mid-tempo；EW 稱 midtempo simmer；Vibe 稱 upbeat）、《Back to Love》（Hamilton 自述要 brighter、more mainstream；曲長短）、Case《Open Letter》（無任何速度來源，製作 Tim & Bob 偏數位）。
+- 20533：大致成立：Anthony Hamilton《Ain't Nobody Worryin'》（dreamy／dreary／swampy hot、福音、Delta blues；但 Sista Big Bones 俏皮，非整張慢板）、Tank《Sex, Love & Pain》（roller coaster of ballads、Adult R&B 冠軍單曲、四首逾 5 分鐘；smooth urban contemporary 製作仍有乾淨數位風險）。
+- 20534：推翻／更正策展層：(1) Point of It All 卡單 label「BMG」→ Wikipedia／MB 皆為 So So Def／Zomba／Mister's Music，建議改 So So Def；(2) 'Bout It 的 curatorWhy「慢板 ballad 為主」不成立；(3) 'Bout It 為 1998，屬 2000s 場景外延；MB 廠牌 MCA、Wikipedia Silas／MCA，卡單 Silas，並存。
+- 20535：日期衝突：Case《Open Letter》MB 2001-04-04、Wikipedia 2001-04-24，寫作層只寫「2001 年 4 月」；Point of It All MB 兩個 release 12-15／12-16，Wikipedia 12-16，取 12-16。
+- 20536：各盤的 AllMusic、SoulTracks 皆 403／503，評論多為 Wikipedia 轉述或搜尋摘要；NPR（Raheem、Hamilton Back to Love）503，未入 facts。無法逐曲核速度，曲名推測速度的句子只留在 notes（Force of Nature），不入 facts。
+- 20537：Jesse Powell 的銷量認證（Wikipedia 內文 70 萬 vs 表格 50 萬）互相衝突，不寫；Powell 逝世屬無關後續事件，不寫。
+- 20538：moodGuess 汰換建議優先序（高→低）：Jesse Powell、Tank Force of Nature、Raheem DeVaughn、Dave Hollister、Anthony Hamilton Point of It All、Anthony Hamilton Back to Love；保留：Hamilton Ain't Nobody Worryin'、Tank Sex Love & Pain、Case Open Letter（輕度）。
+
+## 研究 a 組
+- 20521：9 張 moodGuess 逐張核對，**九張全標「moodGuess 存疑」**，無一能證實「全盤慢歌」。重度：Still Ghetto（嘻哈客串與取樣硬拍多，慢歌約四到五首）、Makings of a Man（PopMatters 直指前半 R&B thug 取向，I've Changed 為加速取樣；慢歌約三首）、Things in the Game Done Changed（維基明言比前作更多 uptempo，It's Okay／No One Else／Baby Do Those Things 為中快板，慢歌約三分之一到一半）、Director（多製作人、Lil Wayne／Lloyd Banks／Dupri 客串，Avant 自言加了嘻哈）。中度：Ghetto Classics（Like a DJ 為 Storch 俱樂部硬拍，後三四首才是慢歌）、Let's Talk About It（AllMusic 稱更 upbeat、更光滑，17 位製作人偏光滑數位）、Private Room（The Pitch 稱慵懶但「central iciness」，Vibe 稱 midtempo，偏冷與乾淨合成器）。輕度：Another Round（Boston.com 稱拋光、克制、steady groove，標題曲衝榜取向）、So Much Better（AllMusic 稱 hip-hop-spiced grooves，Baby Cham 版 Oh No）。建議主線依此汰換或降級；Jaheim 前三張與 Hollister 製作屬取樣厚暖，不是乾淨數位，若入池至少 z 無虞。
+- 20522：Director 推翻策展層：curatorWhy 寫「Steve Huff 製作的厚鍵盤墊」，實際 Huff 僅做約三首，其餘為 Dupri、Cox、Jerkins、The Underdogs、Ron Fair 等。
+- 20523：發行日兩邊不一，年份皆不變：Still Ghetto（MB 11-04／維基 11-05）、Ghetto Classics（MB 2006-01-06／美版維基 2006-02-13）、Another Round（MB 02-08／維基 02-09）、Hollister（維基 2002-09-17／MB 10-15）。
+- 20524：Carl Thomas《So Much Better》廠牌：MB 為 umbrella records、維基為 Umbrella Recordings 與 Unsung Entertainment（Bungalo／Universal 負責通路），卡單 Bungalo Records；建議卡面維持 Bungalo 或改 Umbrella，主線定奪。
+- 20525：Another Round、Private Room、Let's Talk About It、So Much Better 四張因逐曲速度與慢歌比例查無來源，status 標 thin；AllMusic 全站 403、NYT／Vibe／BBC／EW 不可抓，已改用 PopMatters、Boston.com、The Pitch、DJBooth、Urban Bridgez 與維基引文。
