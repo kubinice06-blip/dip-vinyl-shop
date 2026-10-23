@@ -95,3 +95,11 @@
   - `Freddie Joachim|Beyond the Sea of Trees`：開頭「樂評說它得耐著性子聽…」是單一樂評（研究 c 組一篇）的評價句，改成不掛來源的聽感描述，並刪掉後文重複的「耐心聽下去…一層層鋪開」→ 218 字。
   - `Laffey|A Day at a Time`：「掛在法國直播頻道 ChilledCow 名下」與 MB／Apple 廠牌（Lofi Records）不符，改為「交給法國直播頻道旗下的 Lofi Records」並補「從 ChilledCow 改名」；刪「每首都收在 3 分 30 秒以內」壓回 240 內 → 226 字。
 - 20913：核過未改——eevee《Lo-Fi Minnie》（研究 a 組）、Sweatson Klank 生於巴黎（研究 b 組）、Pachyman Libera Awards 入圍（獎項非媒體榜，研究 e 組）、Teebs 豎琴手 Rebekah Raff（研究 e 組）；Sun Dance、Postcards 結尾兩句是寫作層自加的銜接語，不含新事實，留。
+
+## 上線與評分（2026-10-23，主線）（條號 20914–20916）
+- **20914**：上線 22 張：card_catalog 22／22、KV 22 鍵回讀逐字一致（stamp 20261023r12）、試聽 22 ready（Study Guide 走 preview-override：Apple jp 310847481 17 軌對上 MB 前 17 軌）、seed +22、prepare／published gate 0 error（22 warning 皆 UPC 盡力而為）。封面 CAA 20（Forest Tales 原圖 live-check 500 改 front-500）、Apple 2（eevee《TIME.》、Study Guide CAA 404），live-check 全 200、縮圖表目視相符。上線前對 origin 所有 `claude/*` 分支 seed＋10-23 卡單去重 0 撞。
+- **20915**：子曲風 warm-batch 22／22 有標籤；推不出節點的 9 個掛名補進 `genre-l3-artist-map.json`（hiphop/underground/instrumental：Jazzinuf、eevee、Aviino、NOGYMX、Nogymx、Freddie Joachim；electronic/downtempo/beats：Bcalm、Mondo Loops、delayde），22／22 落位。
+- **20916**：**落格率 21/22＝95%**（`batch-progress/mood-axes/score-ml54/`，照 10-23 體感標準）。評分 x 1.8–2.6、y 0.4–1.8、z 0.2–1.3；conf mid 9、low 13。出格 Bcalm《Elements》y 0.4 落放鬆（官方文案「鋼琴和弦配吉他與軟鼓」判乾淨，與主線預判的 Lofi Records 乾淨 chillhop 風險相符）。貼邊：Pachyman《The Return Of...》z 0.2（旋律退後的骨架 dub）、Bcalm《Close to Home》與 Laffey《A Day at a Time》y 0.6。恍惚格 1,538 → 1,559。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Jazzinuf、eevee、Bcalm、Mondo Loops、Aviino、Sweatson Klank、NOGYMX／Nogymx（同一人兩種寫法）、Freddie Joachim、Laffey、delayde、Pachyman、Teebs（12 位）。
