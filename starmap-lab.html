@@ -137,7 +137,7 @@ for(const [id,v] of Object.entries(moods.cards)){const c=coll.get(id);const [rx,
     t:c?(c.obtainedAt||c.lastObtainedAt||0):0,cover:c?.coverUrl||'',count:c?.count||0,tier:c?.hall?'hall':c?.pearl?'pearl':c?.heresy?'heresy':''});}
 for(const [id,c] of coll){if(!moods.cards[id])unmatched.push(c.artist+'《'+c.album+'》');}
 document.getElementById('gate').hidden=true;document.getElementById('stage').hidden=false;document.getElementById('panel').hidden=false;
-const REG = {calm:'放鬆',still:'平靜',languid:'恍惚',decay:'頹靡',lift:'雀躍',crisp:'冷冽',boil:'沸騰',charge:'亢奮'};
+const REG = {calm:'放鬆',still:'平靜',languid:'恍惚',decay:'頹靡',lift:'雀躍',crisp:'冷冽',boil:'沸騰',charge:'暴躁'};
 // 八格：原始值對語意門檻（scale-v0.json 的 thresholds，MOOD_SCALE_PLAN §2）。x、y、z 是全池百分位 0–100，只用來定位。
 const T = SCALE.thresholds, TP = SCALE.thresholdP;
 const CELL = {'靜輕暖':'calm','靜輕冷':'still','靜重暖':'languid','靜重冷':'decay','躁輕暖':'lift','躁輕冷':'crisp','躁重暖':'boil','躁重冷':'charge'};

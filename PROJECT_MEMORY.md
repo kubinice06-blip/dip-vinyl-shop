@@ -6,11 +6,23 @@
 - **策展→研究汰換**：mc26 策展兩輪 36、研究汰 20（dreamwave 懷舊判暖、darksynth 判重、混音輯／精選、真鼓銅管樂團）→ 14，場景見底照實上架。md11 策展 54、主線汰 9（池中同人判輕、z 貼邊）、研究汰 5（有鼓：C93《In Menstrual Night》、NWW《Insect…》；暖：Cyclobe、Arcana《Raspail》、Heemann）→ 40。md12 併入 md11；mc19 部分併入 mc26。
 - **主線審稿**：mc26 改 2 處（Bonanza Banzai 單源銷量數字刪）；md11 逐張審過未改字。
 - **上線**：card_catalog 14＋40、KV 54 鍵回讀逐字一致、seed +54、published gate 兩批 0 error；試聽 ready 12＋16（Технология ru 重發、Menche／NWW 單軌盤人工配）；封面 CAA 50、Discogs 4（已登錄 registry）。上線前對 origin 各分支 seed／curation 去重 0 撞。NWW《Space Music》、TG 配樂 classic 4→3。
-- **情緒評分**：`score-mc26`、`score-md11`；合併 main 後照 10-23 體感標準重評（舊評分留 `out-pre-felt/`）。**mc26 落冷冽 14/14**；**md11 落頹靡 37/40**，出格 Organum《Submission》《Vacant Lights》金屬刮擦、Menche《Static Burn》噪牆判躁落亢奮。八格（併 main 後）：頹靡 1,316、冷冽 1,301、恍惚 1,126。
+- **情緒評分**：`score-mc26`、`score-md11`；合併 main 後照 10-23 體感標準重評（舊評分留 `out-pre-felt/`）。**mc26 落冷冽 14/14**；**md11 落頹靡 37/40**，出格 Organum《Submission》《Vacant Lights》金屬刮擦、Menche《Static Burn》噪牆判躁落暴躁。八格（併 main 後）：頹靡 1,316、冷冽 1,301、恍惚 1,126。
+- **順手修**：「亢奮→暴躁」改名只改了產生檔 `scale-v0.json`，來源 `batch-progress/mood-axes/anchors-v1.json` 的 `_regionRule.names.charge` 仍是「亢奮」，任何人重跑 `build-scale.mjs` 就會蓋回去；已把來源改成「暴躁」，重建後 names 正確。
 - **類型樹**：`genre-l3-artist-map.json` 補 Dynatron（synthwave）、Coil presents Black Light District、Duncan & Springer、Arcana（rock/goth），54/54 落位；抽卡封面重建。
 - **藝人介紹**：未切（並行規矩）；新藝人 20 位列在兩批 rulings.md 末尾（mc26 6、md11 14）。
 - **主要檔案**：`batch-progress/add-20261023-{mc26,md11}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{mc26,md11}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{mc26,md11}/`、`onboarding-manifest-add-20261023-{mc26,md11}-20261023.json`、`desc-tools/batches/*/add-20261023-{mc26,md11}-*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`data/mood/*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`。
 - **驗證**：prepare／published gate 兩批 0 error；KV 回讀 54/54；qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；build-card-moods 錨點 104/104、seed 20,589。
+### 2026-10-23｜dip-vinyl-shop｜情緒八格「亢奮」改名「暴躁」（charge）
+
+- **改動**：店主指示把躁・重・冷那一格改名「暴躁」。來源 `data/mood/scale-v0.json` 的 `names.charge`，重建 `card-moods.json`（只改名，座標 0 張變動）；`starmap-lab.html`、`dip-tune.js` 註解、`score500/BRIEF.md` 同步。內部代號仍是 `charge`；舊批次文件（含情緒薄格線 SCENES.md）裡的「亢奮」＝暴躁，不回頭改。
+- **主要檔案**：`data/mood/scale-v0.json`、`data/mood/card-moods.json`、`starmap-lab.html`、`dip-tune.js`、`batch-progress/mood-axes/score500/BRIEF.md`
+- **驗證**：`build-card-moods.mjs` 八格輸出「暴躁 2846」；cards 陣列與 HEAD 逐張比對 0 差異。
+
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格線改依店主「體感標準」：冷冽轉向自由爵士／現代古典／glitch，拿掉旋律清楚的 synth-pop
+
+- **內容**：店主「我已經改標準了 你檢視一下」→「可以」。檢視時發現評分說明書更新與全池重判已由另一工作階段完成（`felt-rejudge`，1,343 張；能量＝體感、色溫＝聲響溫度＋旋律清楚度），本工作階段只做補卡佇列與派工單：`CUR-DISPATCH.md` 共通節、頹靡節、冷冽節改依體感標準（冷冽＝讓神經繃起來＋尖細＋旋律不明；旋律清楚的 synth-pop 落雀躍；安靜但緊繃也算躁；壓人下沉的 doom 可收進頹靡）；`SCENES.md` 優先序改排 21–31，新增冷冽場景 mc31 AACM／loft jazz、mc32 無調現代古典、mc33 glitch／microsound、mc34 日本前衛即興、mc35 RIO 尖細那半，重開 mc4／mc14／mc22／mc28，暫停 synth-pop／new wave／K-pop／synthwave 續集與 ml14 spiritual jazz（體感標準判冷）。目前八格 恍惚 1,126、頹靡 1,279、冷冽 1,287。
+- **主要檔案**：`batch-progress/mood-cells-20261022/{CUR-DISPATCH.md,SCENES.md}`。
+- **驗證**：文件改動；八格取自 origin/main 上 `build-card-moods.mjs` 輸出（gate 綠）。
 
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 4 輪 ml10／mc15：cosmic soul／psych soul 19＋冷浪潮／輕 EBM／冷快電子 19 張上線，落格 16/19、18/19
 
