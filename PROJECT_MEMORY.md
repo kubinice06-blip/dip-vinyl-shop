@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜邊界卡重判：3,120 張卡門檻邊的卡，255 張換格
+
+- **改動**：店主「挑出來改」（起因 한영애《바라본다》放鬆→雀躍）。`batch-progress/mood-axes/edge-rejudge/` 選從沒改判過、兩軸以上卡門檻邊的 3,120 張，8 支代理逐張明確選邊，255 張換格寫進 `overrides.json`（why 標「2026-10-23 邊界卡重判」）。主要是冷翻暖（主流饒舌／硬咆勃／旋律流行）與輕翻重（大編制管弦、慢板靈魂包覆感）。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/edge-rejudge/*`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：8 份 done 到齊、bad 0；`build-card-moods.mjs` 錨點 104/104 同格。
+
 ### 2026-10-23｜dip-vinyl-shop｜한영애《바라본다》放鬆→雀躍
 
 - **改動**：店主指定。(2.7, 0.3, 0.2) → (3.3, 0.0, 0.6)。
