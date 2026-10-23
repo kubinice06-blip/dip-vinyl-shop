@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 11 輪 ml50／md27：暖 drone 22 張、暗色現代古典／drone 古典 15 張上線，落格 21/22、13/15
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 11 輪＋「恍惚可以多增加一點 downtempo 與 dub」，本工作階段負責 ml50、md27（評分照 10-23 體感標準）。ml50（`add-20261023-ml50`，恍惚：暖 drone／厚墊 ambient＋磁帶／吉他殘響暖 ambient＋暖 ambient dub）：Hotel Neon、Celer、Pioulard、Dettinger、Kenniff、Mark McGuire、Luke Schneider、SUSS、Michael Brook、Robin Guthrie、Metallic Spheres、Bluetech、Shulman、Stick Figure、Halftribe、Wil Bolton 等。md27（`add-20261023-md27`，頹靡：主場景暗色現代古典慢板池中全判輕，改收 Scelsi 音塊、低音弦／管風琴 drone 古典、drone 型配樂）：Valgeir、Scelsi（Wyttenbach／Accord）×2、Gordon《Rushes》、Bára ×2、Maria W Horn、Clarice Jensen、Claire M Singer、Lustmord ×2、Fjellström、Ben Frost ×3。
+- **策展→研究汰換**：ml50 策展兩輪 61、主線汰 11（含 2026 新盤 4）、研究汰 28（陰鬱字眼、有拍、原聲稀疏、reggae 輕快無 dub 證據）→ 22；第二輪要求每張先附 warm 原句，研究只再汰 3。md27 策展兩輪 47（第二輪 0）、主線汰 1、研究汰 31（Penderecki 合唱慢作、Dystopia、Bára《Orchestral Works》等尖叫爆發判躁；清澈聖樂、comforting 判暖輕；聲音零來源）→ 15。新工具 `batch-progress/mood-cells-20261022/pool-axes.mjs`（查池中同人三軸與落格）。
+- **主線審稿**：ml50 改 1 處（Set in Stone hook 拿掉雷鬼榜週數、第二句去複述，hooks／input／out 同步）；md27 改 1 處（Saor 語序，Union Chapel／Forgue Kirk 不再混指）；md27 鉤子 d 組兩則 hook 避既有批 4-gram 改寫。
+- **上線**：card_catalog 22＋15、KV 22＋15 鍵回讀逐字一致、試聽 21＋13 ready（人工配 7；Shulman、Scelsi ×2 無 Apple）、seed +37、published gate 兩批 0 error；封面 CAA 36、Apple 1（Saor），目視相符。上線前對 origin 各 `claude/*` 分支 seed 與 md28／ml51／ml52／mc39 卡單去重 0 撞。
+- **情緒評分**：`score-ml50`、`score-md27`。**ml50 落恍惚 21/22（95%）**（Cordero & Rhucle 判輕落放鬆）、**md27 落頹靡 13/15（87%）**（Scelsi《Hurqualia》、Ben Frost《Broken Spectre》判躁落暴躁）。八格：恍惚 1,482、頹靡 1,446、冷冽 1,445。
+- **類型樹**：`genre-l3-artist-map.json` 補 electronic/ambient/drone 3、world/reggae/dub 1，重建後 37/37 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 31 個掛名列在兩批 rulings.md 末尾。ml50、md27 場景見底，不再派。
+- **主要檔案**：`batch-progress/add-20261023-{ml50,md27}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml50,md27}.json`、`pool-axes.mjs`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml50,md27}/`、`onboarding-manifest-add-20261023-{ml50,md27}-20261023.json`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/mood/*`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`、`genre-l3-artist-map.json`。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 37/37；build-card-moods 錨點 104/104。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格線第 11 輪派工：優先序 52–58
 
 - **起因**：第 10 輪收工（ml46 5／4、mc37 26／16、ml47 23／23、ml48 12／12、ml49 28／28、mc38 27／27，上線／落格）。恍惚 1,461、頹靡 1,433、冷冽 1,445，頹靡轉為最薄。

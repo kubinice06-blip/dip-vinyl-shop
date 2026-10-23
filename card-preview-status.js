@@ -3380,4 +3380,7 @@ window.DipPreviewStatus = Object.freeze({
   "peter evans - tom blancarte|{sparks}": "unavailable",
   "jérôme noetinger|dr": "unavailable",
   "jérôme noetinger|gloire à...": "unavailable",
+  "jürg wyttenbach|scelsi: aion - pfhat - konx-om-pax": "unavailable",
+  "jürg wyttenbach|scelsi: hurqualia - hymnos - chukrum": "unavailable",
+  "shulman|in search of a meaningful moment": "unavailable",
 });

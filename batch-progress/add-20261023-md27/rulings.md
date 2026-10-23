@@ -99,3 +99,22 @@
 - 20422：首句全照抄 hook（d 組 20438 改寫版不在本檔）；第二句全照鉤子層 note 指派領句。「日」後一字照 20414：Dissonance 日由、Rushes 日，、HĪBER 日以、SILVA 日發、Epistasis 日在、Jensen 日經；Aion、Hurqualia 只寫到年月。Epistasis 句尾用「上架」（非日上，前接 Hallow Ground）。
 - 20423：本檔自掃中文 4-gram 3 張以上 0 條；2 張殘片只剩 note 指派的專名／身分（Scelsi 兩張的「義大利作曲家」「波蘭廣播電視克拉科夫」「三碟全集」、Dissonance／Rushes 的「共同創辦」）與樂器名。途中拆掉「於年月日」（Dissonance×HĪBER，HĪBER 改以日期領句）、「年月日發行」（Rushes×SILVA，Rushes 改「專輯由 Cantaloupe 出版」）、「作曲家把」（Dissonance×Epistasis）。與 out-2 合掃：拆掉「層層疊起」「樂評形容」兩條；剩「瑞典作曲家」「作曲家寫過」「個人專輯」三條皆兩邊 note 指派的第二句領句，未動，主線收件時再合掃。
 - 20424：Aion 的過世照 note「標時序、平實帶過」，寫成「同年 8 月作曲家辭世時，錄音才進行兩個月」（6 月開錄→8 月，由 note 兩個時點直接推得）；不寫逐碟錄音月份以外的推定、不寫管風琴。Hymnos 的「蠕動」已在 hook，正文只寫「質地如哀號」。Rushes 的「無鼓也無明顯旋律」是 note 指派的聲音描述，照寫。
+
+## 寫作層（writer-2）（條號 20426–20430）
+- 20426：交件 `desc-tools/batches/output/add-20261023-md27-out-2.json`（7 張，全 full），key 逐字同序。字數（Array.from）：Saor 238、The Fall 231、Skelektikon 202、Zoetrope 225、Dark: Cycle 3 235、Fortitude III 233、Broken Spectre 215；區間 202–238，零超標、零掉下限。初稿 Saor 241，整格改寫教堂具名子句壓回。
+- 20427：首句照抄 hook（d 組兩則照 20438 改寫版）；第二句一律照 note 指定領句。唯一改動：Dark 的指定句「替這部影集每一季」改成「替 Netflix 德國影集《Dark》每一季」——原聲帶規則要前兩句點出作品，而 hook 只說「第三季」，作品名在第二句以前沒出現；只具名，未加 note 外事實。台灣譯名《闇》只在 facts、不在 note，依派工「note 沒列不寫」未寫。Fortitude 同理在第二句後接劇名。
+- 20428：引語與出處：The Fall「樂評聽到…」、Skelektikon「樂評覺得像迷失在霧中」、Zoetrope「樂評用夢魘來形容」皆照 note 指定的「樂評」說法，不具名媒體；Broken Spectre 照 note「寫成廠方文案的說法」寫「廠方文案寫到」；Dark 的配器轉向改寫成直述，不掛「廠牌文案」。無「據說／據傳」、無媒體名與榜單名次。
+- 20429：日期句配表（前字＋領頭＋日後一字）：Saor「發聲。全輯…日於」、The Fall「Sub Rosa 在…年把」、Skelektikon「年底先以數位」＋「年他過世」、Zoetrope「那一版出在…年」、Dark「這張…日交」、Fortitude「配樂…日上線」、Broken Spectre「年在倫敦首展」＋「同年也壓成」。
+- 20430：自掃中文 4-gram（本檔 7 張＋writer-1 out 8 張合掃）：初稿 2 張命中 10 條（個人專輯、層層疊起、樂評形容、首約分鐘、這一季的、數位發行、長約分鐘等），整個名詞拿掉後重掃，3 張以上 0 條；剩 2 張命中 4 條全落在兩邊 note 指定的第二句（Skelektikon「瑞典作曲家…寫過」對 Epistasis「瑞典作曲家」、Hurqualia「作曲家寫過最大」），屬鉤子層配表，未動。`qa-batch out` 通過（out-2 202–238）、`qa-check-research` 7 張標記 0、`fix-spacing` 待補 0。
+
+## 主線審稿（2026-10-23，雲端主線，15 張逐張對研究稿）
+- `desc2:Claire M Singer|Saor`「Claire M Singer 自 2012 年起擔任倫敦 Union Chapel 的管風琴音樂總監，那座教堂是亞伯丁郡的 Forgue Kirk，」→「Claire M Singer 平日是倫敦 Union Chapel 的管風琴音樂總監；祖先長眠的是亞伯丁郡的 Forgue Kirk，」——原句讀起來像 Union Chapel＝Forgue Kirk（研究稿 c 組：Forgue Kirk 在亞伯丁郡、祖先葬地；Union Chapel 是她任職處）；只改語序，事實層未動。
+- 其餘 14 張逐句對回研究稿（Scelsi 三碟錄音 1988-06／1989-04／1990-06、世界首錄、1987 科隆首演與 1988-08 過世；Hymnos 86 位樂手；Rushes 2012 EMPAC 首演、Cantaloupe 2014-03-25；HĪBER 聆聽處方與 Skúli Sverrisson 混音；SILVA 57:36；Epistasis 2018 首演與 Hallow Ground；Fjellström 2017 過世；Zoetrope Charles Deaux 與卡夫卡；Dark 3 Lakeshore 數位首發；Fortitude III SATV、Mute 雙黑膠；Broken Spectre 第三次合作）無誤，未改字。保留的樂評句都是聲音描述（Hymnos 哀號、SILVA 絕望與攻擊性、Skelektikon 迷失在霧中、Zoetrope 夢魘、The Fall 孤音與留白），不是好壞評價。正文無媒體名、榜單、據說。
+
+## 情緒評分（上線當天，`batch-progress/mood-axes/score-md27/`）
+- 15 張照 10-23 體感標準打分（conf mid 10、low 5）→ merge → build-priors → build-scale v0 → build-card-moods（錨點 104/104）。
+- **落頹靡 13/15（87%）**；x 1.3–3.2、y +0.9～+1.9、z −1.8～−0.4。出格 2 張判躁落暴躁：Scelsi《Hurqualia / Hymnos / Chukrum》x 3.1（擴音銅管刺耳逼人）、Ben Frost《Broken Spectre》x 3.2（巨量次低頻＋火燒噪音轟鳴）。最貼邊：Gordon《Rushes》、Scelsi《Aion》、Ben Frost《Dark 3》x 2.8。
+- 上線：card_catalog 15、KV 15（verify-wave-kv 15/15）、試聽 13/15（Scelsi 兩張 Accord 原盤無 Apple）、封面 CAA 14＋Apple 1。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Valgeir Sigurðsson、Jürg Wyttenbach、Michael Gordon、Bára Gísladóttir、Maria W Horn、Clarice Jensen、Claire M Singer、Lustmord + Nicolas Horvath、Marcus Fjellström、Lustmord、Ben Frost（11 個掛名）。
