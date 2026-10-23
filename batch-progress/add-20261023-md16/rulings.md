@@ -78,3 +78,11 @@
 - **17951**：照研究層聲音事實汰 12 張（卡單與研究檔已移除，原卡存 `dropped-cards.json`）：Bladee《Gluee》（維基稱夏日頌歌、偏暖亮）、《Working On Dying》（高速 808、少氛圍）；Night Lovell《GOODNIGHT LOVELL》（失真聲牆、與 $uicideboy$ 合作的兇曲）；Joji《BALLADS 1》（偏流行電台風、z 貼中性）；Corbin《Ghost With Skin》（零聲音來源）；Shabazz Palaces《The Don of Diamond Dreams》（樂評稱比前作更暖更放克）；nothing,nowhere.《Reaper》（吉他 emo rap／rap rock 偏亮）；Lukid《Lonely at the Top》（封套自印 BPM 多為 108–130，舞曲）；Sixtoo《Antagonist Survival Kit》（含人聲、無聲音來源）；Wen《EPHEM:ERA》（techno／jungle 舞池材料）；Logos《Cold Mission》（樂評稱把 eski 寒意調暖、kick 重）；Telephone Jim Jesus（樂評稱歡欣、勝利感）。
 - **留下的存疑張**：BONES ×2（池中《Garbage》2.4/1.5/−1.4 落頹靡，同期同製作）、LUCKI、Tha Blue Herb《Sell Our Soul》（池中《Stilling》落頹靡）、DJ Krush《MiLiGHT》《Trickster》（池中 Krush 8 張全落頹靡）、Odd Nosdam 兩張（池中 cLOUDDEAD 兩張落頹靡）、Req ×2、Wen《Signals》、Mr. Mitch、BSBD《NOIR》——寫作層不寫無來源的「霧」「冷」「慢拍」。
 - **17952**：補 5 張（策展第二輪，每張附談聲音的來源；池中同藝人全落頹靡）：Kid Cudi《Man on the Moon II》（池中 Cudi 四張落頹靡）、billy woods《Dour Candy》（池中 woods 9 張全落頹靡）、Yung Lean《Frost God》、Blue Sky Black Death & Alexander Chen《Third Party》、Lil Peep《LIVE FOREVER》。b 組 3、e 組 2，補研究 append 進兩組檔。本批定為 38 張（場景候補見底，不湊數）。
+
+## 研究補件
+- 17930-補1：Kid Cudi《Man on the Moon II》moodGuess 輕度存疑。維基列出失真吉他（Mike Dean 彈三首）、新浪潮與後龐克元素，〈Erase Me〉〈Maniac〉偏搖滾，x 應落 2.6–2.8；極簡、弦樂、陰沉主題有據。日期 MB 11-08／維基 11-09，同年。status full。
+- 17930-補2：billy woods《Dour Candy》status thin。Vice 證實 Blockhead 全盤製作、取樣 Hugh Masekela、Willie Green 錄音、7/2 Backwoodz 發行；curatorWhy 引的 Needle Drop「crying guitar／hollow drums」此環境讀不到（503／404）。Masekela 取樣可能偏暖，z 比預估暖的風險仍在。facts 不寫曲名。
+- 17930-補3：Yung Lean《Frost God》無明顯與 moodGuess 不符，冷／遲緩只有 Observer 單一評論佐證；2016-12-14、YEAR0001 屬實；25 分 8 首屬實。status full。
+- 17930-補4：BSBD & Alexander Chen《Third Party》moodGuess 輕度存疑：AllMusic 描述為放慢的 80 年代 synth-pop、以歌唱為主，genre 第二格可考慮 pop；y（重）無直接證據。Alexander Chen 生平與 BSBD 成員未查到，facts 不寫。status thin。
+- 17930-補5：Lil Peep《LIVE FOREVER》日期衝突：MB／粉絲 wiki 2015-12-11，英文維基 2015-12-02，同年無礙。維基與 MB 稱 10 首、維基卻列 11 個曲名，facts 不寫曲數。〈Haunt U〉較亮（Sputnik 聽友評論），整張「霧般陰沉」僅單一聽友來源。status thin。
+- 17930-補6：方法——Pitchfork 禁抓、Sputnik 與 Needle Drop 標籤頁 503／404、AOTY 403，改引維基、Vice、MB；WebSearch 用 3 次（woods、Peep×2）。未推翻年份、廠牌、盤名。
