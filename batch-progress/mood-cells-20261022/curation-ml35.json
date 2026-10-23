@@ -24,6 +24,12 @@
    "zh": "福音管弦慢板（ml33 剩餘）",
    "count": 1,
    "why": "Mahalia Columbia 管弦／合唱厚編"
+  },
+  {
+   "id": "wetcrooner-intl",
+   "zh": "濕殘響情歌／Americana 鄰近（地域放寬）",
+   "count": 10,
+   "why": "第二輪主線放寬地域：英、加、澳的濕殘響情歌與 Americana 鄰近慢盤"
   }
  ],
  "albums": [
@@ -692,6 +698,295 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "池中 Mahalia 管弦盤 y 0.5–0.7，達不到 0.8 邊距"
+  },
+  {
+   "artist": "Richard Hawley",
+   "album": "Lady's Bridge",
+   "year": 2007,
+   "label": "Mute",
+   "country": "gb",
+   "faction": "wetcrooner-intl",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "《Coles Corner》（池中落恍惚）的續作，厚弦樂、殘響吉他與 Orbison 式低吟，謝菲爾德的濕牛仔情歌。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 1,
+    "why": "慢、厚弦樂與殘響吉他、Orbison 式低吟，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/57090660-82ac-3042-b06e-e5e669aaecd1",
+    "https://coverartarchive.org/release-group/57090660-82ac-3042-b06e-e5e669aaecd1/front"
+   ],
+   "mbRgMbid": "57090660-82ac-3042-b06e-e5e669aaecd1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中《Coles Corner》y 0.7、《Lowedges》0.3；有兩首中速 rockabilly，y 估 0.8 貼邊"
+  },
+  {
+   "artist": "Lord Huron",
+   "album": "Vide Noir",
+   "year": 2018,
+   "label": "Whispering Pines / Republic",
+   "country": "us",
+   "faction": "wetcrooner-intl",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "《Long Lost》（池中 2.3/0.9/1.0 落恍惚）的前作，殘響更濃、黑色電影氣氛，旋律清楚。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.5,
+    "why": "中慢、濃殘響與迴聲人聲、黑色電影式暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8bdcb59d-6dd8-4489-a9de-601af56ff8f7",
+    "https://coverartarchive.org/release-group/8bdcb59d-6dd8-4489-a9de-601af56ff8f7/front"
+   ],
+   "mbRgMbid": "8bdcb59d-6dd8-4489-a9de-601af56ff8f7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 估 2.6，有幾首搖滾曲；色溫比《Long Lost》陰"
+  },
+  {
+   "artist": "Lord Huron",
+   "album": "Lonesome Dreams",
+   "year": 2012,
+   "label": "IAMSOUND",
+   "country": "us",
+   "faction": "wetcrooner-intl",
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "why": "首作即確立殘響西部情歌的招牌，迴聲和聲與殘響吉他，旋律清楚溫暖。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "中慢、殘響吉他與迴聲和聲、西部式暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/56174f36-62c3-4c68-87d3-0052a09a7132",
+    "https://coverartarchive.org/release-group/56174f36-62c3-4c68-87d3-0052a09a7132/front"
+   ],
+   "mbRgMbid": "56174f36-62c3-4c68-87d3-0052a09a7132",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x、y 都可能貼邊（ml13 提過的《Strange Trails》未上線）"
+  },
+  {
+   "artist": "Tindersticks",
+   "album": "Can Our Love...",
+   "year": 2001,
+   "label": "Beggars Banquet",
+   "country": "gb",
+   "faction": "wetcrooner-intl",
+   "genres": [
+    "rock",
+    "soul"
+   ],
+   "why": "Tindersticks 轉向靈魂樂的最暖一張，Rhodes、弦樂與厚低頻包住 Staples 的低吟，慢而濕。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.8,
+    "z": 0.6,
+    "why": "慢、Rhodes 與弦樂墊、靈魂樂厚低頻、低沉暖嗓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3a2a864d-d3e9-3386-ab37-495488efca9f",
+    "https://coverartarchive.org/release-group/3a2a864d-d3e9-3386-ab37-495488efca9f/front"
+   ],
+   "mbRgMbid": "3a2a864d-d3e9-3386-ab37-495488efca9f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "首張（md2 提）偏冷；本張為暖的靈魂期"
+  },
+  {
+   "artist": "Tindersticks",
+   "album": "Simple Pleasure",
+   "year": 1999,
+   "label": "Island",
+   "country": "gb",
+   "faction": "wetcrooner-intl",
+   "genres": [
+    "rock",
+    "soul"
+   ],
+   "why": "以 Philly／Memphis 靈魂樂為範本的轉型盤，銅管弦樂與殘響、慢板為主。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.6,
+    "why": "中慢、靈魂樂銅管弦樂、殘響、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c4f7919e-c436-331d-96dc-529398990c02",
+    "https://coverartarchive.org/release-group/c4f7919e-c436-331d-96dc-529398990c02/front"
+   ],
+   "mbRgMbid": "c4f7919e-c436-331d-96dc-529398990c02",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 估 2.4；y 貼邊"
+  },
+  {
+   "artist": "Nick Cave & the Bad Seeds",
+   "album": "Ghosteen",
+   "year": 2019,
+   "label": "Ghosteen Ltd",
+   "country": "au",
+   "faction": "wetcrooner-intl",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "幾乎無鼓的合成器墊與殘響長曲，Cave 以溫柔假音唱哀悼與盼望；池中《Wild God》z 0.9 為據。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "無鼓、厚合成器墊與殘響、溫柔假音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/99fc75a4-3ff2-4248-9ae2-65d7026c7296",
+    "https://coverartarchive.org/release-group/99fc75a4-3ff2-4248-9ae2-65d7026c7296/front"
+   ],
+   "mbRgMbid": "99fc75a4-3ff2-4248-9ae2-65d7026c7296",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫可能中性（哀悼主題）；《Skeleton Tree》型偏冷故不提"
+  },
+  {
+   "artist": "Kurt Vile",
+   "album": "Smoke Ring for My Halo",
+   "year": 2011,
+   "label": "Matador",
+   "country": "us",
+   "faction": "wetcrooner-intl",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "殘響指彈與吉他霧層層疊起的懶散慢歌盤，比池中《Wakin》（y 0.6）更霧更慢。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 0.6,
+    "why": "中慢、濕殘響指彈與吉他霧、懶暖嗓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3963c451-0db1-4fa0-9a13-2476f4bd8b9a",
+    "https://coverartarchive.org/release-group/3963c451-0db1-4fa0-9a13-2476f4bd8b9a/front"
+   ],
+   "mbRgMbid": "3963c451-0db1-4fa0-9a13-2476f4bd8b9a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 依《Wakin》y 0.6 類推，貼邊"
+  },
+  {
+   "artist": "Timber Timbre",
+   "album": "Hot Dreams",
+   "year": 2014,
+   "label": "Arts & Crafts",
+   "country": "ca",
+   "faction": "wetcrooner-intl",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "加拿大 swamp-noir 的慢板情歌盤，殘響吉他、薩克斯與弦樂墊，Lynch 式的暖霧低吟。",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "慢、殘響吉他與薩克斯、Lynch 式暖霧低吟"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8e1195d8-2711-46a4-b165-8b8b9a0d39c1",
+    "https://coverartarchive.org/release-group/8e1195d8-2711-46a4-b165-8b8b9a0d39c1/front"
+   ],
+   "mbRgMbid": "8e1195d8-2711-46a4-b165-8b8b9a0d39c1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "前作偏陰森（冷）；本張較暖但 z 仍可能貼邊"
+  },
+  {
+   "artist": "The Paper Kites",
+   "album": "On the Corner Where You Live",
+   "year": 2018,
+   "label": "Wonderlick",
+   "country": "au",
+   "faction": "wetcrooner-intl",
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "why": "墨爾本樂團的深夜城市盤，80 年代殘響吉他、薩克斯與合成墊包住柔聲，慢而濕。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "慢、深夜殘響吉他與薩克斯、合成墊、柔聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/05f23a47-f1e0-43c0-a27e-7324a72752cb",
+    "https://coverartarchive.org/release-group/05f23a47-f1e0-43c0-a27e-7324a72752cb/front"
+   ],
+   "mbRgMbid": "05f23a47-f1e0-43c0-a27e-7324a72752cb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "場景偏 indie folk；z 可能中性"
+  },
+  {
+   "artist": "Great Lake Swimmers",
+   "album": "Bodies and Minds",
+   "year": 2005,
+   "label": "Weewerk",
+   "country": "ca",
+   "faction": "wetcrooner-intl",
+   "genres": [
+    "folk"
+   ],
+   "why": "在安大略鄉間教堂錄成，天然長殘響包住班卓、鋼棒與低吟，Cowboy Junkies《Trinity Session》同型。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 0.8,
+    "z": 0.4,
+    "why": "極慢、教堂天然殘響、班卓與低吟，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/177510fc-df1a-3dd3-9024-a3dfd241ade5",
+    "https://coverartarchive.org/release-group/177510fc-df1a-3dd3-9024-a3dfd241ade5/front"
+   ],
+   "mbRgMbid": "177510fc-df1a-3dd3-9024-a3dfd241ade5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "原聲為主，y 靠空間殘響撐，可能判輕"
   }
  ],
  "notes": [
@@ -700,6 +995,8 @@
   "他組已提而不重提：Mazzy Star《Seasons of Your Day》、MMJ《At Dawn》《The Tennessee Fire》（ml2）、Ray LaMontagne《Ouroboros》、Matthew E. White《Big Inner》、Mojave 3（ml24）、Lanois《Acadie》（ml13）、《Shine》《Belladonna》（ml34）、Mahalia 三張（ml31）；Chris Isaak《Baja Sessions》（原聲比例高，y 估 0.7）與 Mahalia《Silent Night》（伴奏未證實為管弦，y 估 0.6）因未達邊距自行汰除；Beachwood Sparks ml2／ml13 判輕不收。",
   "刻意不收：Emmylou《Red Dirt Girl》《Stumble into Grace》、Dylan《Oh Mercy》、Neville Brothers《Yellow Moon》（Lanois 濕盤，但同型《Wrecking Ball》z 0.2，色溫貼邊）；Lanegan《Whiskey for the Holy Ghost》、Willard Grant Conspiracy、Jesse Sykes、Ethel Cain（色溫冷）；Lord Huron 其他盤、Band of Horses（x 近 3）；Richard Hawley（英國，非 Americana；池中《Coles Corner》其實落恍惚，主線若放寬地域可補）；當代福音（Yolanda Adams −0.3、Winans −0.6、BeBe & CeCe 雀躍）全判輕。",
   "風險：Chris Isaak 三張的 z（ml2 曾稱偏陰）、Willie《Teatro》與 Lambchop《FLOTUS》的 y（同藝人池中判輕）、Mahalia《Let's Pray Together》y 估 0.7 未達邊距（照 ml31 先例收，主線可汰）、Cowboy Junkies《Trinity Session》《Pale Sun》的 z。",
-  "身分 23 張全部 MB 釘住、CAA release-group 皆有封面（307）；WebSearch 0 次。"
+  "身分 23 張全部 MB 釘住、CAA release-group 皆有封面（307）；WebSearch 0 次。",
+  "第二輪（主線放寬地域）追加 10 張，全部由 MB 釘住、CAA 有圖，WebSearch 0 次。池中三軸擋掉的：War on Drugs（兩張 x 3.0–3.2）、Big Thief 六張全判輕、Andy Shauf −1.2、Marlon Williams −0.4～−0.6、Fleet Foxes、Father John Misty、Destroyer、Leonard Cohen（含合成器盤 y ≤ 0）、Ben Howard、Scott Walker 3／4 判輕、Nick Cave《Boatman's Call》判輕、Let Love In／Murder Ballads 判冷、Triffids 0.6/0.2、Richard Hawley《Lowedges》0.3。",
+  "第二輪不重提：Hawley《Truelove's Gutter》（ml2 提過）、Lord Huron《Strange Trails》（ml13 提過）、Tindersticks 首張（md2）、Mojave 3（ml24 研究層已擋）。自行不收：Hawley《Late Night Final》《Hollow Meadows》（y 估 ≤0.7）、Tindersticks《Waiting for the Moon》《No Treasure but Hope》（偏冷／偏乾）、Cave《Skeleton Tree》《Carnage》（冷）、Lanegan 與 Isobel Campbell 合作盤（z 貼邊）、Cass McCombs《Wit's End》（z 估 0.2）、Giant Sand（y 估 ≤0.5）、Patrick Watson（不算 Americana）。"
  ]
 }
