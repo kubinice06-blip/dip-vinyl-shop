@@ -5,7 +5,7 @@
    "id": "jp-dub",
    "zh": "日本暖 dub（dub 版／人聲 roots）",
    "why": "Little Tempo dub 版、Likkle Mai 等：管樂／鋼鼓／人聲有旋律，類比濕混音",
-   "count": 5
+   "count": 6
   },
   {
    "id": "jp-downtempo",
@@ -17,7 +17,7 @@
    "id": "uk-dub",
    "zh": "UK dub 補位（lovers／Ariwa 暖盤）",
    "why": "ml37 剩餘，只收有人聲旋律、暖的",
-   "count": 0
+   "count": 6
   }
  ],
  "albums": [
@@ -362,6 +362,215 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "ml4 曾提、以「同團留三張」汰；y 估 0.9 邊界"
+  },
+  {
+   "artist": "Mad Professor & The Mad Men Band",
+   "album": "Dub You Crazy With Love (Part 2)",
+   "year": 2000,
+   "label": "Ariwa Sounds",
+   "country": "gb",
+   "faction": "uk-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "Ariwa 的 lovers rock dub 系列第二集，情歌旋律留在回音裡；池中第一集《Dub You Crazy With Love》落恍惚（z0.9），是 Mad Professor 最暖的一線",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": 0.8,
+    "why": "慢 lovers 拍，厚低頻長回音，情歌旋律殘片溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c74f9766-66e6-4c1e-be66-d1b4b4276237",
+    "https://coverartarchive.org/release-group/c74f9766-66e6-4c1e-be66-d1b4b4276237/front"
+   ],
+   "mbRgMbid": "c74f9766-66e6-4c1e-be66-d1b4b4276237",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Mad Professor",
+   "uncertain": "ml38 同時收 UK dub，可能撞提"
+  },
+  {
+   "artist": "Mad Professor",
+   "album": "Bitter Sweet Dub (Dub You Crazy With Love) (Part.3)",
+   "year": 2008,
+   "label": "Ariwa",
+   "country": "gb",
+   "faction": "uk-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "lovers dub 系列第三集，同樣以 Ariwa 情歌為底做 dub，旋律保留多",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "慢拍、厚低頻回音，情歌旋律溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5f67d39d-d925-466d-bd06-aea4f64a6aa8",
+    "https://music.apple.com/jp/album/bitter-sweet-dub/299317244"
+   ],
+   "mbRgMbid": "5f67d39d-d925-466d-bd06-aea4f64a6aa8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無圖，封面用 iTunes（Bitter Sweet Dub!）；ml38 可能撞提"
+  },
+  {
+   "artist": "Hollie Cook",
+   "album": "Hollie Cook",
+   "year": 2011,
+   "label": "Mr Bongo",
+   "country": "gb",
+   "faction": "uk-dub",
+   "genres": [
+    "world",
+    "soul"
+   ],
+   "why": "Prince Fatty 製作的倫敦 lovers rock 首作，類比濕混音、dub 回音與厚貝斯包住甜美女聲；池中 Prince Fatty 落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 1.3,
+    "why": "慢 lovers 拍、類比回音厚貝斯，女聲甜暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/57c5d8b7-dd50-4789-b86e-c12197a8d391",
+    "https://coverartarchive.org/release-group/57c5d8b7-dd50-4789-b86e-c12197a8d391/front"
+   ],
+   "mbRgMbid": "57c5d8b7-dd50-4789-b86e-c12197a8d391",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "非 90s digital dub，屬 UK dub 圈的 lovers 延伸；人聲盤 y 邊界"
+  },
+  {
+   "artist": "Hollie Cook",
+   "album": "Twice",
+   "year": 2014,
+   "label": "Mr Bongo",
+   "country": "gb",
+   "faction": "uk-dub",
+   "genres": [
+    "world",
+    "soul"
+   ],
+   "why": "第二張仍由 Prince Fatty 製作，弦樂墊＋dub 回音的「tropical pop」lovers，慢而濕",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 1.3,
+    "why": "慢拍、弦樂墊與 dub 回音，女聲甜暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e86b0f65-243d-4d96-8984-738f9f17f1e3",
+    "https://coverartarchive.org/release-group/e86b0f65-243d-4d96-8984-738f9f17f1e3/front"
+   ],
+   "mbRgMbid": "e86b0f65-243d-4d96-8984-738f9f17f1e3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "人聲盤 y 邊界"
+  },
+  {
+   "artist": "松永孝義",
+   "album": "The Main Man",
+   "year": 2004,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-dub",
+   "genres": [
+    "world",
+    "jazz"
+   ],
+   "why": "Mute Beat 貝斯手的唯一個人錄音室作，roots reggae 慢拍＋爵士與夏威夷曲旋律，貝斯厚、管樂溫；Mute Beat 圈有旋律的那一面",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.9,
+    "why": "慢 reggae 拍，貝斯厚、殘響溫，旋律清楚"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/3833391-Takayoshi-Matsunaga-The-Main-Man",
+    "https://music.apple.com/jp/album/the-main-man/735099638"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Takayoshi Matsunaga\" → 0 筆；MB 有藝人 松永孝義 c3476c5d 但無 release group",
+     "releasegroup:\"The Main Man\" AND artist:\"松永孝義\" → 0 筆"
+    ],
+    "checkedAt": "2026-10-23",
+    "conclusion": "MB 無此 RG；Discogs master 3833391、Apple Music 有 10 曲全長版"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/3833391-Takayoshi-Matsunaga-The-Main-Man",
+    "https://music.apple.com/jp/album/the-main-man/735099638"
+   ],
+   "releaseException": "",
+   "queryAlias": "Takayoshi Matsunaga",
+   "uncertain": "Discogs 只標 Jazz/Reggae，聲音細節靠研究層；label 待查"
+  },
+  {
+   "artist": "Horace Andy & Mad Professor",
+   "album": "From the Roots",
+   "year": 2004,
+   "label": "RAS Records",
+   "country": "gb",
+   "faction": "uk-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "Horace Andy 的顫音旋律配 Mad Professor 的 Ariwa 製作，roots 慢拍＋厚低頻 dub 處理；池中 Horace Andy 多張落恍惚（z0.4–0.7）",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "慢 roots 拍、厚低頻回音，顫音人聲旋律溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/450f8815-fbeb-3484-ad91-95af49c4101a",
+    "https://coverartarchive.org/release-group/450f8815-fbeb-3484-ad91-95af49c4101a/front"
+   ],
+   "mbRgMbid": "450f8815-fbeb-3484-ad91-95af49c4101a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Horace Andy",
+   "uncertain": "z 估 0.6 邊界；ml38 可能撞提"
+  },
+  {
+   "artist": "Horace Andy",
+   "album": "Midnight Rocker",
+   "year": 2022,
+   "label": "On-U Sound",
+   "country": "gb",
+   "faction": "uk-dub",
+   "genres": [
+    "world"
+   ],
+   "why": "Adrian Sherwood／On-U 製作的晚年 roots 盤，慢拍、厚低頻與 dub 回音包住 Horace Andy 的旋律",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": 0.6,
+    "why": "慢拍、厚低頻 dub 回音，人聲旋律溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ef4ceb1b-7e31-4620-a460-59c9054d99bb",
+    "https://coverartarchive.org/release-group/ef4ceb1b-7e31-4620-a460-59c9054d99bb/front"
+   ],
+   "mbRgMbid": "ef4ceb1b-7e31-4620-a460-59c9054d99bb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "On-U 混音色溫常往 0 收（池中 Sherwood／AHC 偏冷），z 邊界"
   }
  ],
  "notes": []
