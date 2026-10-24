@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 13 輪 ml57／md30：neo-soul 女聲慢盤 12 張、dark ambient 第五波 28 張上線，落格 12/12、28/28
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 13 輪，本工作階段負責 ml57、md30（評分照 10-23 體感標準；店主同日「恍惚可以多增加一點 downtempo 與 dub」）。ml57（`add-20261023-ml57`，恍惚）：KING《We Are KING》、Yuna《Chapters》、Adriana Evans 首作、Conya Doss《Love Rain Down》、Trina Broussard《Same Girl》、Rachelle Ferrell 同名盤、Dezarie ×3（FYA、Eaze the Pain、The Fourth Book）、Mo’Kalamity meets Sly & Robbie、N’Dambi《Little Lost Girls Blues》、Aisha《True Roots》（女聲 roots／dub 擴寫）。md30（`add-20261023-md30`，頹靡）：Dahlia's Tear ×4、Desiderii Marginis《Bathe in Black Light》、Atrium Carceri ×2（含與 Eldar 合作）、Cyclic Law 二線（Hesychia、Shedir、Shrine、Sinke Dûs）、Cryo Chamber 二線（Underwater Sleep Orchestra、Silent Universe、Ugasanie 新盤、Dronny Darko ×2、Council of Nine、Void Stasis、Eximia、Sjellos）、Glacial Movements（Glotman、Lia Bosch、Aware）、Winter-Light（Argyre Planitia、Kloob & Onasander）、Tho-So-Aa、Stuzha、Lull（isolationist 擴寫）。
+- **策展→研究汰換**：ml57 策展 25（主場景大名已被 ml5／ml6／ml8／ml53／ml55 收光，見底）、研究汰 13（samba-rock 打擊、藍調／搖滾放克、短篇過場、明亮 doo-wop、選集、零來源貼邊、同人勻量）→ 12。md30 策展代理續跑交 52，主線先用前 29 建卡單、再補收 14（isolationist／winter-light 擴寫），兩輪主線汰 9＋6、研究汰 15（節奏脈動、吟誦與金屬噪音、噪牆、旋律或夢幻柔和、現場錄音、文案明寫 drums）→ 28。
+- **主線審稿**：ml57 改 6 張 7 處（單源樂評比較句改聲音描述：Sade／Steely Dan／Roberta Flack／George Duke 疊層／「第一張 neo-soul」／Exclaim! 一致性）；md30 改 1 張 2 處（Insomnolence 首作語意、Side-Line 比較句改廠方文案字眼）。皆存 `desc-override.json`。
+- **上線**：card_catalog 12＋28、KV 40 鍵回讀逐字一致（stamp 20261023r13）、試聽 10＋25 ready（5 unavailable：Adriana Evans 首作、Dezarie《FYA》、Dahlia's Tear《Apeiron》、Argyre Planitia、Tho-So-Aa 未上架）、seed +40、published gate 兩批 0 error；封面 CAA 39、Apple 1（N’Dambi），front live-check 全 200、縮圖表目視相符。上線前對 origin 所有 `claude/*` 分支 seed 與近 12 個分支新卡單去重 0 撞。
+- **情緒評分**：`score-ml57`、`score-md30`。**ml57 落恍惚 12/12（100%）**、**md30 落頹靡 28/28（100%）**。八格（併 main 後，含 ml56／mc42）：恍惚 1,630、頹靡 1,541、冷冽 1,520。
+- **類型樹**：`genre-l3-artist-map.json` 補 soul/neo-soul 1、electronic/ambient/drone 1、world/reggae/roots 2，40/40 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人名單列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{ml57,md30}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml57,md30}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml57,md30}/`、`onboarding-manifest-add-20261023-ml57-20261023.json`、`onboarding-manifest-add-20261023-md30-20261024.json`、`desc-tools/batches/*/add-20261023-{ml57,md30}*`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 40/40；build-card-moods 錨點 104/104、gate exit 0。
+
 ### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 13 輪 ml56／mc42：暖 downtempo／類比 dub 20 張、自由即興打擊 13 張上線，落格 19/20、13/13
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 13 輪＋「恍惚可以多增加一點 downtempo 與 dub」，本工作階段負責 ml56、mc42（評分照 10-23 體感標準）。ml56（`add-20261023-ml56`，恍惚）：Fila Brazillia ×3（Pork 後期）、Alice Russell《My Favourite Letters》、Loop Guru《Amrita》、Mad Professor ×7（《Dub Me Crazy》Part 4／5／6／10／11、Black Liberation Dub 1／3）、Peaking Lights《Clearvoiant》、Kaya Project《Desert Phase》、Sounds From the Ground ×3、Dub Colossus《Dub Me Tender》、Halftribe《Luxia》、Blundetto《World of Dub》。mc42（`add-20261023-mc42`，冷冽）：Chris Corsano ×2、Favre & Centazzo、Beresford／Bennink、D'Agaro／Schlippenbach／Bennink、Minton／Turner、Parker & Prévost、Battaglia & Oxley、Tony Oxley《4 Compositions for Sextet》《Ichnos》、Pilz／Kowald／Lovens、Tomlinson／Beresford／Turner、Duthoit／Frangenheim／Turner。

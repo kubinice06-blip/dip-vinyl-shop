@@ -128,3 +128,11 @@
   - `Underwater Sleep Orchestra|Insomnolence`：「首作寫的是同一夜的兩場夢」→「兩人的首作寫的是……」（本張是第二張，原句易讀成本張即首作）；「比前作更暗，也更像電影」（Side-Line 單評比較）→「質地粗粒，氛圍詭異」（廠方文案 gritty textures, eerie ambience，研究 c 組）→ 198 字。
 - **21634** 事實抽核：Ugasanie「作品至今近三十張」（Discogs 主名義近三十張）、Hesychia 錄音地「維也納的 Bethlehem」、Sinke Dûs 隔 16 年（2007《Akrasia》→2023）、Tho-So-Aa 1995 年錄／1996 年發、Stuzha 廠牌 Ksenza＋Infinite Fog 聯發，皆有研究稿出處。
 - **21635** 媒體名、榜單名次、「據說／評者」全批 0；〈Presence〉最暗、Eximia「起伏不大」等屬聲音描述、不掛來源，保留。
+
+## 上線與評分（2026-10-24，主線）（條號 21636–21638）
+- **21636**：上線 28 張：card_catalog 28／28、KV 28 鍵回讀逐字一致（stamp 20261023r13）、試聽 25 ready／3 unavailable（Dahlia's Tear《Apeiron》、Argyre Planitia《Tenth Region of the Night》、Tho-So-Aa《Epoch, Part 1》Apple 未上架；Lia Bosch 走 preview-override 取 1771642322「Lía Bosch」、Aware 取 1690153917、Dronny Darko & G M Slater 取 1611719105）、seed +28、prepare／published gate 0 error（28 warning 皆 UPC 盡力而為）。封面 CAA 28／28，front live-check 全 200、縮圖表目視相符。
+- **21637**：頂點：28 張 rarity 全 uncommon，未觸及殿堂／遺珠／異端門檻，列一般卡。
+- **21638**：**落格率 28/28＝100%**（`batch-progress/mood-axes/score-md30/`，照 10-23 體感標準）。評分 x 1.2–2.9、y 0.9–1.8、z −2.0～−0.9；conf mid 3、low 25。貼邊：Stuzha《Butugichag》x 2.9（勞改營工業氛圍）、Desiderii Marginis《Bathe in Black Light》x 2.6、Lia Bosch《Polar Code》y 0.9。主場景大名見底（Atrium Carceri／Dahlia's Tear／Desiderii Marginis 只剩 10 張乾淨盤，擴寫的 ritual／冷 neoclassical 收 0），不再派。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Dahlia's Tear、Desiderii Marginis、Atrium Carceri、Eldar、Hesychia、Shedir、Sinke Dûs、Underwater Sleep Orchestra、Silent Universe、Dronny Darko、G M Slater、Void Stasis、Eximia、protoU（已汰）、Yair Elazar Glotman、Lia Bosch、Aware、Argyre Planitia、Kloob & Onasander、Onasander、Tho-So-Aa、Stuzha、Lull（22 位；Shrine、Sjellos、Council of Nine、Ugasanie、Keosz 等已在 md29 名單）
