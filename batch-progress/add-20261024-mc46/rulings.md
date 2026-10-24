@@ -49,3 +49,21 @@
 - 22055：Arditti／Aperghis 盤性質：四位作曲家拼盤（Discogs 標題《From France》），含 Xenakis《Okho》（純打擊，三面 djembe 加大非洲鼓）與 Aperghis《Triangle carré》（弦樂四重奏加三位打擊手）。moodGuess 存疑（偏重偏暖，建議汰換候選）：全盤約三分之一為打擊；Okho 皮鼓低頻。錄音日期查無，Andrade 1990 年離團暗示錄音早於 1990。
 - 22056：Arditti／Kagel 盤年份：MB 1991-09-27，Discogs 1990；錄音為 1989 年夏天科隆（WDR 製作）。status thin：這幾首四重奏的聲音描述查無（WebSearch 額度用盡），只確認 Kagel 風格劇場幽默；moodGuess 的 z 存疑未能證實。
 - 22057：本組 6 張 facts 條數 11／11／10／11／10／9，皆附 https 來源；status：Kagel thin，其餘 full。WebSearch 3 次（Posadas、Poppe、Rihm 各一）。未推翻身分（6 張盤名、年份、廠牌皆對得上 MB／Discogs）。
+
+## 研究 e 組
+- 22081：EIC／Xenakis 盤身分無誤（Erato 2292-45770-2，1992）；Discogs 973962 補到錄音日期與地點（1990-04 至 1991-01，IRCAM 與 Notre-Dame du Liban）、各曲指揮與獨奏者（Boulez 指揮 Jalons、Tabachnik 指揮 Phlegra／Thalleïn、Sluchin 長號、Strauch 大提琴）。moodGuess 存疑：Keren、Nomos Alpha 是無伴奏獨奏（合計約 19 分鐘，近三成）；Thalleïn 官方解說稱沉思、無節拍，可能判靜。年份 1992 為 CD 首發，錄音 1990–91。
+- 22082：Dusapin／Ars Nova 盤首發年 1997（MB，Salabert SCD 9701）；Discogs 只查到 2002 Montaigne／Naïve 再版（MO 782150），曲目同。moodGuess 存疑：含兩首人聲（Comœdia 女高音、Aks 女中音，約 17 分鐘），Aria 為單簧管獨奏加十三人；Attacca 為兩小號加定音鼓。ClassicsToday 頁抓不到全文，只引搜尋摘要的錄音音質與微分音評語。Fist／Hop' 作曲年來自 Discogs，未交叉驗證。
+- 22083：Jarrell／Klangforum 盤 moodGuess 強存疑（實為現場錄音）：Discogs 載明 2004-06-11 在 IRCAM Espace de Projection 現場錄製；第三軌為六位獨唱人聲無伴奏約 12 分鐘，第二軌四聲部人聲加電子，人聲段合計約四成，x 3.4 貼邊，建議列為最先汰換候選。聲音樂評全查無（MusicWeb 404、AllMusic／Discogs 403），status thin。
+- 22084：Donatoni／2e2m 盤錄音年實為 1985–89（1991 為 CD 年）；與 mc32 Alamari 盤曲目不重疊。moodGuess 存疑：維基作品表列 De près、L'ultima sera、Still 為女聲作品（約 30 分鐘，占四成），但 Discogs 演出者名單無任何歌手，未能證實；Fili 為長笛與鋼琴二重奏、Lumen 為六件樂器，皆稀疏；Feria 為五長笛五小號加管風琴。
+- 22085：Wet Ink 盤：Discogs 把 Lines on Black 作曲誤記為 Ian Antonio（並把標題打成「Block」）；Wet Ink 官網顯示作者是兼任電子演奏的作曲者，即 Pluta，與卡單掛名相符。MB 無廠牌，Discogs 實體版為 Carrier Records（Carrier 048）。moodGuess 存疑：Lines on Black 含即興獨奏、人聲加電子與類比合成器固定媒體，稀疏段落可能判靜、電子厚度可能判重。
+- 22086：Eötvös／Klangforum 盤 moodGuess 存疑：Steine 是 1994 年 Konzerthaus Wien 現場錄音，其餘 1999 年錄音室；Chinese Opera 約 28 位樂手含 Yamaha DX7 合成器與三位打擊手，偏厚；Shadows 碟上版本（演出名單像室內版）與 IRCAM 的樂團版不能對應，facts 只寫 IRCAM 條目所載並在 notes 註明；場景以調性中心命名，暖偏風險。
+- 22087：本組 6 張 facts 條數 11／11／10／11／10／10，皆附 https 來源；status：Jarrell thin，其餘 full。未推翻身分。WebSearch 實際用了 5 次（超出每支 3 次上限：Xenakis 兩次、Dusapin 一次、Ars Nova 一次、Hop' 一次），其餘靠 WebFetch 與 Discogs／MB API。
+
+## 主線研究後汰換（不佔條號；2026-10-24）
+- 照 mc43 先例：**來源自己寫出現場錄音、厚重大編制／電子、人聲與抒情段、稀疏極弱的汰**；只是 thin 的留給評分驗收。**30 張汰 18**（存 `dropped-cards.json`／`dropped-research.json`）：
+  - 現場錄音：Klangforum《Haubenstock-Ramati》（Wien Modern 2010 實況，研究 a）、《Wuorinen: Dante Trilogy》（Guggenheim 1999 實況，研究 c）、ELISION《Lim / Cassidy》（wreck 為 HCMF 2016 實況，研究 c）、Klangforum《Jarrell》（IRCAM 2004 實況＋人聲四成，研究 e）、Klangforum《Eötvös》（Steine 1994 實況、DX7＋三打擊、調性中心，研究 e）。
+  - 大編制／電子／打擊判重：Czernowin《Shu Hai》（Basel Sinfonietta 管弦＋現場電子，研究 c）、Barrett《Dark Matter》（19 人、電吉他、電子、女高音，研究 c）、Poppe《Prozession》（大編制＋龐大打擊、Moog、電吉他，研究 b）、EIC《Posadas》（低音域暗沉音塊＋電子，研究 b）、Arditti《Aperghis / Mâche / Xenakis / Gaussin》（三成純打擊 djembe，研究 b）、Musikfabrik《Fall》（Bettison 大型樂團占半，研究 d）、Hölszky《Hängebrücken》（六定音鼓手，研究 d）、Wet Ink《Mincek / Pluta》（類比合成器固定媒體＋人聲電子，研究 e）。
+  - 旋律／抒情：Collegium Novum《Widmann》（舒伯特八重奏對應作、女高音，研究 d）、Arditti《Cerha》（maqam 旋律線、Elegie、sehr ruhig，研究 a）。
+  - 稀疏極弱／緩慢：Arditti《Ofenbauer》（「近乎僵硬的緩慢」、非常輕的刮擦，研究 a）、Kerschbaumer《schraffur》（半透明聲音空間＋電子，研究 a）、Gadenstätter《Semantical Investigations》（三小時、無樂評、電吉他段，研究 d）。
+- 卡單更正（下游以研究稿為準）：Arditti《Rihm》年份 2000→**1994**（Montaigne MO 782001 首發，研究 b）；Arditti《Kagel》1991→**1990**（Discogs，研究 b）。
+- 留 12（Fuentes、Poppe《Rundfunk》、Rihm、Gerhard、Kagel、Davidovsky、Wuorinen《Six Trios》、Zimmermann、JACK《Zorn》、EIC《Xenakis》、Dusapin、Donatoni）；《Rundfunk》九台合成器屬部分存疑，池中 Poppe《Interzone》落冷冽，交評分驗收。叫回策展代理補第二輪候補（每張附 copyQuote、限錄音室小編制無人聲無電子）。
