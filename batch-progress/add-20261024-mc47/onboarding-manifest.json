@@ -1,0 +1,1189 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-mc47",
+ "batchNote": "薄細項策展線（add-20261024-mc47）",
+ "createdAt": "2026-10-24T03:32:42Z",
+ "albums": [
+  {
+   "artist": "Herbert Henck",
+   "album": "Barraqué: Sonate pour piano",
+   "composer": "Barraqué",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7a2eb2ae-087e-31b0-8cef-935103acbb67",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代無調鋼琴／鍵盤獨奏：Barraqué 序列主義鋼琴奏鳴曲的經典錄音，45 分鐘密集無調的爆發與斷裂，緊繃尖銳、旋律不明｜策展無疑點｜MB release-group 7a2eb2ae-087e-31b0-8cef-935103acbb67：title「Sonate pour piano」、Album、first-release-date 1999、artist-credit「Jean Barraqué; Herbert Henck」。證據：https://musicbrainz.org/release-group/7a2eb2ae-087e-31b0-8cef-935103acbb67 https://coverartarchive.org/release-group/7a2eb2ae-087e-31b0-8cef-935103acbb67/front",
+    "queryAlias": "Sonate pour piano；Jean Barraqué; Herbert Henck"
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7a2eb2ae-087e-31b0-8cef-935103acbb67/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 16,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 16）；主線：古典錨點制（§0.7，照 mc32／mc43）：經典＝錄音層地位（有明確地位 3）；冷門＝大廠目錄（ECM）的當代獨奏錄音 4；硬蕊＝20 世紀後半無調前衛獨奏 5"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "錄音之前，他光是樂譜標註就寫滿了 125 頁。Herbert Henck 是德國鋼琴家，錄的是 Jean Barraqué 寫於 1950 至 1952 年的《鋼琴奏鳴曲》，他逐頁對照手稿，親手寫下這些標註。整首只分兩個樂章，Henck 在冊內文章裡說，快的段落與慢的段落會互相闖入。1996 年 7 月，錄音在法蘭克福一座教堂完成，ECM New Series 到 1999 年才發行。慢樂章約 27 分鐘，比快樂章還長。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/7a2eb2ae-087e-31b0-8cef-935103acbb67",
+     "https://www.discogs.com/release/1512841",
+     "https://en.wikipedia.org/wiki/Piano_Sonata_(Barraqu%C3%A9)",
+     "https://www.classicstoday.com/review/review-4331/",
+     "https://en.wikipedia.org/wiki/Claude_Helffer",
+     "https://de.wikipedia.org/wiki/Herbert_Henck",
+     "https://www.discogs.com/release/1705311"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/58/f4/fb/58f4fb6e-acd9-e458-39cb-3b26b20fc712/mzaf_1052300861244934163.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "appleCollectionId": "1452281860",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1452281860「Herbert Henck《Barraque: Sonate pour Piano》」：Apple 同錄音（ECM 1621，2 軌），取第 1 部 Allegro，取第 1 軌〈Sonata for Piano: I. Allegro〉。主線 2026-10-24 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Herbert Henck",
+   "album": "Stockhausen: Klavierstücke I-XI",
+   "composer": "Stockhausen",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a27b27ee-ad98-40f9-98ac-db3db33c2a44",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代無調鋼琴／鍵盤獨奏：Stockhausen 點描與群組作曲的鋼琴曲全集（I–XI），Henck 的乾淨精準版，音點跳躍、強弱驟變，緊繃無旋律｜⚠ IX（重複和弦）與 VI 有長留白段，x 可能 3.2–3.4｜MB release-group a27b27ee-ad98-40f9-98ac-db3db33c2a44：title「Klavierstücke I-XI」、Album、first-release-date 1996-04-17、artist-credit「Karlheinz Stockhausen; Herbert Henck」。證據：https://musicbrainz.org/release-group/a27b27ee-ad98-40f9-98ac-db3db33c2a44 https://coverartarchive.org/release-group/a27b27ee-ad98-40f9-98ac-db3db33c2a44/front",
+    "queryAlias": "Klavierstücke I-XI；Karlheinz Stockhausen; Herbert Henck"
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a27b27ee-ad98-40f9-98ac-db3db33c2a44/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 1,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：古典錨點制（§0.7，照 mc32／mc43）：經典＝錄音層地位（有明確地位 3）；冷門＝專門小廠當代獨奏、單一版本學術領域 5；硬蕊＝20 世紀後半無調前衛獨奏 5"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 1），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Klavierstück IX 的首演者，是他的老師。1948 年生的德國鋼琴手 Herbert Henck 師從 Aloys Kontarsky，這套彈的是 Stockhausen。Stockhausen 1961 年寫成〈Klavierstück IX〉，題獻給 Kontarsky，首演也交給他。1985 至 1986 年間，Henck 在科隆 WDR 的錄音室把 I 至 XI 共 11 首依序錄下。Wergo 1986 年出成雙 LP。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1705311",
+     "https://musicbrainz.org/release-group/a27b27ee-ad98-40f9-98ac-db3db33c2a44",
+     "https://en.wikipedia.org/wiki/Klavierst%C3%BCcke_(Stockhausen)",
+     "https://www.musicweb-international.com/classrev/2015/Apr/Stockhausen_piano_193.htm",
+     "https://de.wikipedia.org/wiki/Herbert_Henck"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Claude Helffer",
+   "album": "Boulez: Trois sonates pour piano",
+   "composer": "Boulez",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0b150ee5-5c3c-4491-bd56-7aed574aa7ee",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代無調鋼琴／鍵盤獨奏：Boulez 三首鋼琴奏鳴曲的早期權威錄音，第二號的暴烈與第三號的點描，尖銳緊繃、無調｜策展無疑點｜MB release-group 0b150ee5-5c3c-4491-bd56-7aed574aa7ee：title「Trois sonates pour piano」、Album、first-release-date 1981、artist-credit「Pierre Boulez; Claude Helffer」。證據：https://musicbrainz.org/release-group/0b150ee5-5c3c-4491-bd56-7aed574aa7ee https://coverartarchive.org/release-group/0b150ee5-5c3c-4491-bd56-7aed574aa7ee/front",
+    "queryAlias": "Trois sonates pour piano；Pierre Boulez; Claude Helffer"
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0b150ee5-5c3c-4491-bd56-7aed574aa7ee/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 46,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 46）；主線：古典錨點制（§0.7，照 mc32／mc43）：經典＝錄音層地位（有明確地位 3）；冷門＝專門小廠當代獨奏、單一版本學術領域 5；硬蕊＝20 世紀後半無調前衛獨奏 5"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 46），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "曲序沒照編號走，第二號奏鳴曲被留到最後。曾隨 René Leibowitz 學作曲的法籍鋼琴手 Claude Helffer 出身巴黎，1954 年起固定在 Domaine musical 音樂會登台，這裡彈的是 Boulez 的三首奏鳴曲。1980 年 7 月，他在瑞士 Vevey 的劇院依第一、第三、第二號的順序錄完。第一號寫於 1946 年，正值 Boulez 滿 21 歲前夕，慢而無脈動的段落和狂亂音群輪流出現。Astrée 在 1981 年出成 LP。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3989955",
+     "https://musicbrainz.org/release-group/0b150ee5-5c3c-4491-bd56-7aed574aa7ee",
+     "https://en.wikipedia.org/wiki/Piano_sonatas_(Boulez)",
+     "https://en.wikipedia.org/wiki/Claude_Helffer",
+     "https://www.classical-music.com/reviews/instrumental/boulez-2"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/1c/9b/5c/1c9b5c83-5758-3175-9ee3-e83b218dc468/mzaf_5065121621892976201.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "appleCollectionId": "1190130314",
+    "storefront": "FR",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple fr 1190130314「Claude Helffer《Boulez: Trois sonates pour piano》」：Apple 同名同演奏者（1986 CD 再發、8 軌對上），取第二號奏鳴曲第一樂章 Extrêmement rapide，取第 3 軌〈Sonate pour piano No. 2: I. Extrêmement rapide〉。主線 2026-10-24 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "İdil Biret",
+   "album": "Boulez: Piano Sonatas nos. 1 - 3",
+   "composer": "Boulez",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5f985622-07cb-4c71-a607-c0c4888220c7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代無調鋼琴／鍵盤獨奏：Naxos 的 Boulez 三首奏鳴曲，Biret 彈得剛硬急促，第二號的序列暴風最明顯，緊繃尖冷｜策展無疑點｜MB release-group 5f985622-07cb-4c71-a607-c0c4888220c7：title「Piano Sonatas nos. 1 - 3」、Album、first-release-date 1995、artist-credit「Pierre Boulez; İdil Biret」。證據：https://musicbrainz.org/release-group/5f985622-07cb-4c71-a607-c0c4888220c7 https://coverartarchive.org/release-group/5f985622-07cb-4c71-a607-c0c4888220c7/front",
+    "queryAlias": "Piano Sonatas nos. 1 - 3；Pierre Boulez; İdil Biret"
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5f985622-07cb-4c71-a607-c0c4888220c7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7，照 mc32／mc43）：經典＝錄音層地位（有明確地位 3）；冷門＝大廠目錄（Naxos）的當代獨奏錄音 4；硬蕊＝20 世紀後半無調前衛獨奏 5"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "7 歲那年，土耳其國會為她特別立法，送她去巴黎學琴。這位土耳其鋼琴家是 1941 年生於安卡拉的 İdil Biret，在巴黎跟 Nadia Boulanger 學習。1995 年 1 至 2 月，她在巴黎法國廣播電台的 Studio 106 錄下 Boulez 第一至第三號奏鳴曲，Naxos 同年發行。第二號她早在 1972 年錄過一次，樂評偏好這次重錄更有共鳴的空間感，形容她用鋼鐵般的觸鍵傳達年輕作曲家的急躁。Boulez 說，第二號想摧毀傳統形式。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1012434",
+     "https://musicbrainz.org/release-group/5f985622-07cb-4c71-a607-c0c4888220c7",
+     "https://en.wikipedia.org/wiki/Piano_sonatas_(Boulez)",
+     "https://gramophone.co.uk/review/boulez-piano-sonatas",
+     "https://www.classical-music.com/reviews/instrumental/boulez-2",
+     "https://en.wikipedia.org/wiki/%C4%B0dil_Biret",
+     "https://idilbiret.eu/?p=637",
+     "https://www.classicstoday.com/?p=15951"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/c6/fa/0a/mzm.bbjdfnnn.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "appleCollectionId": "3073226",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 3073226「İdil Biret《Boulez: Piano Sonatas Nos. 1, 2 & 3》」：Apple Naxos 同錄音，取第二號奏鳴曲第一樂章，取第 3 軌〈Deuxieme Sonate, I. Extremement rapide: Encore plus vif〉。主線 2026-10-24 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Pi-Hsien Chen 陳必先",
+   "album": "Boulez: Notations & Piano Sonatas",
+   "composer": "Boulez",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "bc433c05-b489-4694-bd7c-b7dc9e592509",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代無調鋼琴／鍵盤獨奏：陳必先在 hat[now]ART 的 Boulez 鋼琴全集（十二首 Notations＋三首奏鳴曲），乾硬精確，緊繃無旋律｜⚠ 池中掛名有「Pi-Hsien Chen 陳必先」（Bach: Goldberg），主線決定掛名寫法｜MB release-group bc433c05-b489-4694-bd7c-b7dc9e592509：title「Notations & Piano Sonatas」、Album、first-release-date 2005、artist-credit「Pierre Boulez; Pi-Hsien Chen」。證據：https://musicbrainz.org/release-group/bc433c05-b489-4694-bd7c-b7dc9e592509 https://coverartarchive.org/release-group/bc433c05-b489-4694-bd7c-b7dc9e592509/front",
+    "queryAlias": "Pi-Hsien Chen；Notations & Piano Sonatas；Pierre Boulez; Pi-Hsien Chen"
+   },
+   "research": {
+    "suggestedYear": 2005,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bc433c05-b489-4694-bd7c-b7dc9e592509/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7，照 mc32／mc43）：經典＝錄音層地位（有明確地位 3）；冷門＝專門小廠當代獨奏、單一版本學術領域 5；硬蕊＝20 世紀後半無調前衛獨奏 5"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 查無），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "前後七年、分三回錄音，才錄齊這一張。出生於臺灣的鋼琴家陳必先 9 歲移居科隆，1972 年拿下 ARD 國際音樂大賽首獎，這張彈的全是 Boulez。碟上先排十二首《Notations》，每首只有 21 到 101 秒，1997 年 4 月 11 日在 Tonstudio van Geest 錄成。奏鳴曲共三首，等到 2002 年 2 月與 2004 年 3 月，才在法蘭克福黑森廣播電台的 Sendesaal 補齊。hat[now]ART 於 2005 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1928058",
+     "https://musicbrainz.org/release-group/bc433c05-b489-4694-bd7c-b7dc9e592509",
+     "https://en.wikipedia.org/wiki/Piano_sonatas_(Boulez)",
+     "https://musicweb-international.com/classrev/2016/Aug/Boulez_piano_9456.htm",
+     "https://gramophone.co.uk/review/boulez-complete-piano-music",
+     "https://en.wikipedia.org/wiki/Chen_Pi-hsien"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Roger Woodward",
+   "album": "Barraqué: Sonate pour piano",
+   "composer": "Barraqué",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "07368f99-b4ab-4923-b742-5cfa2fe210c9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代無調鋼琴／鍵盤獨奏：Barraqué 奏鳴曲的另一權威版本（Woodward 長年演奏此曲），密集序列音群與長篇斷裂，緊繃尖冷｜⚠ 2014 年 Celestial Harmonies 發行，錄音年份與是否現場未查，研究層確認｜MB release-group 07368f99-b4ab-4923-b742-5cfa2fe210c9：title「Sonate pour piano」、Album、first-release-date 2014-10-10、artist-credit「Jean Barraqué; Roger Woodward」。證據：https://musicbrainz.org/release-group/07368f99-b4ab-4923-b742-5cfa2fe210c9 https://coverartarchive.org/release-group/07368f99-b4ab-4923-b742-5cfa2fe210c9/front",
+    "queryAlias": "Sonate pour piano；Jean Barraqué; Roger Woodward"
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/07368f99-b4ab-4923-b742-5cfa2fe210c9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7，照 mc32／mc43）：經典＝錄音層地位（有明確地位 3）；冷門＝大廠目錄（EMI）的當代獨奏錄音 4；硬蕊＝20 世紀後半無調前衛獨奏 5"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "那三天的錄音，作曲家親自到場。1972 年 10 月 27 至 29 日，澳洲鋼琴家 Roger Woodward 在倫敦 Abbey Road 錄下 Jean Barraqué 的《鋼琴奏鳴曲》，到場的就是 Barraqué 本人。演奏長約 48 分鐘，樂評形容收尾在乾澀的斷續中沉入靜默。EMI 在 1973 年先出黑膠，2014 年才由 Celestial Harmonies 轉成 CD。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Piano_Sonata_(Barraqu%C3%A9)",
+     "https://musicweb-international.com/classrev/2014/Oct14/Barraque_piano_133252.htm",
+     "https://en.wikipedia.org/wiki/Roger_Woodward",
+     "https://theartsdesk.com/classical-music/classical-cds-weekly-jean-barraque-haydn-mozart-michael-tilson-thomas",
+     "https://musicbrainz.org/release-group/07368f99-b4ab-4923-b742-5cfa2fe210c9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music3/v4/d2/fd/53/d2fd53f4-a04c-37da-710d-1a3950d92ff4/mzaf_2495528595000598662.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "appleCollectionId": "930234864",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 930234864「Roger Woodward《Jean Barraqué: Sonate Pour Piano》」：Apple 同錄音（1972 Abbey Road、2 部），取第一部，取第 1 軌〈Sonate Pour Piano: Première Partie〉。主線 2026-10-24 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Irvine Arditti",
+   "album": "Recital for Violin",
+   "composer": "Donatoni / Estrada / Ferneyhough / Carter / Dillon / de Pablo",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Irvine Arditti\" AND primarytype:album（release-group 查無本盤）",
+      "release:\"Recital for violin\"（release 查無）"
+     ],
+     "checkedAt": "2026-10-24",
+     "conclusion": "MB 無此 release-group，改走人工身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/1155438",
+     "https://www.discogs.com/release/9244794"
+    ],
+    "manualRuling": "雲端主線 2026-10-24 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261024-mc47）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "弦樂獨奏（小提琴／中提琴／大提琴）：Arditti 的錄音室小提琴獨奏專輯（Ferneyhough Intermedio alla Ciaccona、Dillon Del Cuarto Elemento、Donatoni Argot、Carter Riconoscenza），新複雜主義獨奏的標準盤，尖細緊繃｜⚠ Discogs 記事：1989 年 1 月列日音樂院錄音（錄音室場次，非音樂會）｜MB 查無（MB 無此 release-group，改走人工身分），走 §1 人工身分。證據：https://www.discogs.com/master/1155438 https://www.discogs.com/release/9244794 https://www.discogs.com/release/9244794 https://www.discogs.com/master/1155438",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "9244794",
+    "url": "https://i.discogs.com/FJSFBdQGxWC4FLpSrDCEdT10IEa-HE9Ycb9LcSpEymM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkyNDQ3/OTQtMTQ3NzI2MTcz/MC05MzgyLmpwZWc.jpeg",
+    "note": "人工身分卡，CAA 無；取 Discogs 9244794（1990 CD）封面；主線 2026-10-24 目視。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 23,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 23）；主線：古典錨點制（§0.7，照 mc32／mc43）：經典＝錄音層地位（有明確地位 3）；冷門＝專門小廠當代獨奏、單一版本學術領域 5；硬蕊＝20 世紀後半無調前衛獨奏 5"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 23），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "六位作曲家的曲子，有兩首當年由他首演。英國小提琴家 Irvine Arditti 學生時代就創立了 Arditti 弦樂四重奏，這張則是他一個人的獨奏。Ferneyhough 的〈Intermedio alla Ciaccona〉1986 年 10 月 17 日由他首演，Dillon 的〈Del Cuarto Elemento〉則在 1988 年交到他手上首演。1989 年 1 月的列日音樂院錄音把這兩首都收了進去，Montaigne 在 1990 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/9244794",
+     "https://brahms.ircam.fr/en/works/work/8631",
+     "https://search.library.wisc.edu/catalog/999831286702121",
+     "https://en.wikipedia.org/wiki/Irvine_Arditti",
+     "https://www.discogs.com/master/1155438"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Julie-Anne Derome",
+   "album": "Solo",
+   "composer": "Göritz / Boulez / Stravinsky / Lesage / Berio",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e7231ffb-61bd-4d3e-96ae-daf19596781a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "弦樂獨奏（小提琴／中提琴／大提琴）：魁北克小提琴家 Derome 的無伴奏當代曲目（Berio Sequenza VIII、Boulez Anthèmes、Göritz、Lesage），高把位急奏與泛音，尖細緊繃｜⚠ MB 首發日期記為 2006，Discogs 原版 1996（ATMA ACD 2 2117），年份取 1996；Stravinsky Elegy 約 6 分鐘偏調性；CAA 無圖｜MB release-group e7231ffb-61bd-4d3e-96ae-daf19596781a：title「Solo」、Album、first-release-date 2006-10-21、artist-credit「Julie-Anne Derome」。證據：https://musicbrainz.org/release-group/e7231ffb-61bd-4d3e-96ae-daf19596781a https://www.discogs.com/release/6137829 https://music.apple.com/us/album/solo/1870398692",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1870398692",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/37/c7/bd/37c7bd71-5968-b118-2d94-d9de77bb82fb/cover.jpg/600x600bb.jpg",
+    "note": "CAA 404；取試聽同盤 Apple us 1870398692（9 軌逐軌對上 MB）官方圖；主線 2026-10-24 目視。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 10,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 10）；主線：古典錨點制（§0.7，照 mc32／mc43）：經典＝錄音層地位（有明確地位 3）；冷門＝專門小廠當代獨奏、單一版本學術領域 5；硬蕊＝20 世紀後半無調前衛獨奏 5"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 10），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "得到大賽特別獎的那首 Boulez，排在碟上第二首。加拿大魁北克的小提琴家 Julie-Anne Derome，1992 年在 Yehudi Menuhin 小提琴大賽以 Boulez〈Anthèmes〉拿到評審特別獎。1996 年 6 月，她在魁北克的教堂錄下五首二十世紀的小提琴獨奏曲，ATMA 同年推出。五首裡只有 Stravinsky 的〈Élégie〉用一般奏法，被樂評比作墳墓另一端傳來的幽暗人聲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/6137829",
+     "https://www.classical-music.com/reviews/instrumental/boulez-berio-gsritz-lesage-stravinsky",
+     "https://www.atmaclassique.com/en/julie-anne-derome",
+     "https://musicbrainz.org/release-group/e7231ffb-61bd-4d3e-96ae-daf19596781a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e2/3a/7c/e23a7c8a-82f5-7b34-7910-018d12afff5a/mzaf_12102150113211312423.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "appleCollectionId": "1870398692",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1870398692「Julie-Anne Derome《Solo》」：Apple 同盤 9 軌逐軌對上，取 Boulez〈Anthèmes〉，取第 6 軌〈Anthèmes〉。主線 2026-10-24 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ian Pace",
+   "album": "Tracts",
+   "composer": "Ferneyhough / Barrett / Dench / Fox / Erber",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9256a148-16c4-4fe1-8d8d-02b5330c1857",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代無調鋼琴／鍵盤獨奏：新複雜主義鋼琴的代表盤：Ferneyhough Lemma-Icon-Epigram、Barrett Tract、Dench Topologies，Ian Pace 彈得密集猛烈，緊繃尖冷、旋律不明｜⚠ CAA 無圖，用 Discogs／Apple｜MB release-group 9256a148-16c4-4fe1-8d8d-02b5330c1857：title「Tracts」、Album、first-release-date 2001、artist-credit「Ian Pace」。證據：https://musicbrainz.org/release-group/9256a148-16c4-4fe1-8d8d-02b5330c1857 https://www.discogs.com/release/5492060 https://music.apple.com/us/album/tracts/1025221546",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1025221546",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/41/ea/d2/41ead286-8cf5-37b6-2f59-da80657de5d0/5023363006620.png/600x600bb.jpg",
+    "note": "CAA 404；取試聽同盤 Apple us 1025221546（NMC 11 軌對上 MB）官方圖；主線 2026-10-24 目視。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 115,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 115）；主線：古典錨點制（§0.7，照 mc32／mc43）：經典＝錄音層地位（有明確地位 3）；冷門＝專門小廠當代獨奏、單一版本學術領域 5；硬蕊＝20 世紀後半無調前衛獨奏 5"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 115），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "31 分鐘的壓軸曲，委託人正是彈它的人。委託 Richard Barrett 寫完〈Tract〉的，正是在碟上獨奏鋼琴的英國人 Ian Pace，曲子 1996 年 9 月 12 日首演於 Bangor。1997 年 9 月的 Tilburg 5 Chapel Studio 錄音裡，它和 Ferneyhough 等四人的作品排在一起，聲場由 Barrett 特別打造。樂評說〈Tract〉極難。NMC 的 CD 發行於 2001 年。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5492060",
+     "https://www.musicweb-international.com/classrev/2001/Feb01/tracts.htm",
+     "https://brahms.ircam.fr/en/work/tract-1",
+     "https://en.wikipedia.org/wiki/Ian_Pace",
+     "https://musicbrainz.org/release-group/9256a148-16c4-4fe1-8d8d-02b5330c1857"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2f/fd/78/2ffd7884-9a6a-c363-1630-bb1f5ae97ca6/mzaf_15107530053388548759.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "appleCollectionId": "1025221546",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1025221546「Ian Pace《Tracts》」：Apple 11 軌版對上 MB 曲目，取第 1 軌，取第 1 軌〈Lemma - Icon - Epigram〉。主線 2026-10-24 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bernhard Wambach",
+   "album": "Stockhausen: Klavierstücke vol. II",
+   "composer": "Stockhausen",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "47005c47-95cc-449b-a3f5-11d3462fb82e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代無調鋼琴／鍵盤獨奏：Wambach 的 Stockhausen 鋼琴曲第二卷（IX、X、XI 兩版），X 的前臂音簇與滑奏、XI 的隨機群組，暴烈尖銳、旋律不明｜⚠ MB 首發記 1989（CD），Discogs 有 1987 LP，年份取 1987；CAA 無圖，用 Discogs｜MB release-group 47005c47-95cc-449b-a3f5-11d3462fb82e：title「Klavierstücke vol. II」、Album、first-release-date 1989、artist-credit「Karlheinz Stockhausen; Bernhard Wambach」。證據：https://musicbrainz.org/release-group/47005c47-95cc-449b-a3f5-11d3462fb82e https://www.discogs.com/release/828359 https://www.discogs.com/release/1126547",
+    "queryAlias": "Klavierstücke vol. II；Karlheinz Stockhausen; Bernhard Wambach"
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "828359",
+    "url": "https://i.discogs.com/IDsXRbg5T3Huuyjk_9HD3n_Y61gafEeX0N7ou9JGJg8/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyODM1/OS0xMTYyOTcwMjU0/LmpwZWc.jpeg",
+    "note": "CAA 404；取 Discogs 828359（1989 CD，IX–XI，與研究 c 定案版本一致）封面；主線 2026-10-24 目視。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 1,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：古典錨點制（§0.7，照 mc32／mc43）：經典＝錄音層地位（有明確地位 3）；冷門＝專門小廠當代獨奏、單一版本學術領域 5；硬蕊＝20 世紀後半無調前衛獨奏 5"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 1），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "戴著剪掉指尖的手套，壓下多達 36 個音的音簇。約 29 分鐘的 Stockhausen〈Klavierstück X〉就是這樣彈，坐在琴前的是曾師從 Friedrich Gulda 的鋼琴家 Bernhard Wambach。這份錄音是他和 SDR 電台在 1987 年合製的。同碟另收〈IX〉與兩個版本的〈XI〉，XI 的起點由演奏者自選。1989 年這張 CD 把先前三張 LP 的錄音彙整在一起。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/828359",
+     "https://www.discogs.com/release/1126547",
+     "https://en.wikipedia.org/wiki/Klavierst%C3%BCcke_(Stockhausen)",
+     "https://www.gramophone.co.uk/review/stockhausen-klavierst%C3%BCcke",
+     "https://organicmusic.jp/en/products/bernhard-wambach-karlheinz-stockhausen-klavierstucke-vol-3",
+     "https://musicbrainz.org/release-group/47005c47-95cc-449b-a3f5-11d3462fb82e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Diego Castro Magas",
+   "album": "Shrouded Mirrors",
+   "composer": "Ferneyhough / Dillon / Finnissy / Hoban / Harrison / Sergeant",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Diego Castro Magas\"（release 查無）",
+      "release:\"Shrouded Mirrors\"（release-group 查無）"
+     ],
+     "checkedAt": "2026-10-24",
+     "conclusion": "MB 無此 release-group，改走人工身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/8240115",
+     "https://music.apple.com/us/album/shrouded-mirrors/1684769726"
+    ],
+    "manualRuling": "雲端主線 2026-10-24 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261024-mc47）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "打擊／大鍵琴／吉他等其他獨奏：智利吉他手 Castro Magas 的新複雜主義吉他獨奏盤：Ferneyhough Kurze Schatten II、Dillon Shrouded Mirrors、Finnissy Nasiye、Hoban Knokler I，乾尖撥弦與碎裂節奏，緊繃無調｜⚠ Bryn Harrison M.C.E. 為緩慢重複型，佔一段｜MB 查無（MB 無此 release-group，改走人工身分），走 §1 人工身分。證據：https://www.discogs.com/release/8240115 https://music.apple.com/us/album/shrouded-mirrors/1684769726 https://www.discogs.com/release/8240115 https://music.apple.com/us/album/shrouded-mirrors/1684769726",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1684769726",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/04/73/08/047308ec-a979-729c-8658-981ccd6ba64f/5060217670088.png/600x600bb.jpg",
+    "note": "人工身分卡；Apple us 1684769726 同名同演奏者官方圖（Discogs 8240115 同封面）；主線 2026-10-24 目視。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 58,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 58）；主線：古典錨點制（§0.7，照 mc32／mc43）：經典＝錄音層地位（有明確地位 3）；冷門＝專門小廠當代獨奏、單一版本學術領域 5；硬蕊＝20 世紀後半無調前衛獨奏 5"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 58），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "四首世界首錄，出自一位智利吉他手。Diego Castro Magas 來自智利、定居英國 Huddersfield，在這裡彈六首當代吉他獨奏曲，Sergeant、Harrison、Finnissy 與 Hoban 的作品就是那四首。2015 年 8 月，他進 Huddersfield 的 St Paul's Hall 錄成全部曲目。Ferneyhough 的〈Kurze Schatten II〉分七個樂章，用到泛音、悶音與撥弦拍打。專輯在同年 11 月上市。",
+    "sourceUrls": [
+     "https://europadisc.co.uk/classical/124481/Shrouded_Mirrors.htm",
+     "https://www.discogs.com/release/8240115",
+     "https://eprints.hud.ac.uk/id/eprint/13032",
+     "https://music.apple.com/us/album/shrouded-mirrors/1684769726",
+     "https://monitoraraucano.uchile.cl/index.php/RMCH/article/view/42619"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/d0/f1/36/d0f136d0-1f17-9a20-0c26-e260012e9497/mzaf_1368851133228766574.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "appleCollectionId": "1684769726",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1684769726「Diego Castro Magas《Shrouded Mirrors》」：人工身分卡，Apple 同名同演奏者 16 軌，取第 1 軌〈Bet Maryam〉，取第 1 軌〈Bet Maryam〉。主線 2026-10-24 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Maurizio Pollini",
+   "album": "Webern: Variationen op. 27 / Boulez: Sonate No. 2",
+   "composer": "Webern / Boulez",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Maurizio Pollini\" AND releasegroup:Variationen（只有 1986 CD 合輯 Pétrouchka/Prokofiev/Webern/Boulez，非本 LP）",
+      "artist:\"Maurizio Pollini\" AND release:Boulez（同上）"
+     ],
+     "checkedAt": "2026-10-24",
+     "conclusion": "MB 無 1978 原版 LP 的 release-group（只收 1986 年加入 Stravinsky、Prokofiev 的 CD 合輯），改走人工身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/1311523",
+     "https://www.discogs.com/release/5298170"
+    ],
+    "manualRuling": "雲端主線 2026-10-24 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261024-mc47）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "當代無調鋼琴／鍵盤獨奏：Pollini 1978 年 DG 原版 LP：Boulez 第二號奏鳴曲（史上最暴烈的序列鋼琴曲之一）配 Webern 變奏曲的點描，尖銳緊繃、無調｜⚠ Apple 只有 1986 合輯版（含 Pétrouchka、Prokofiev 7，偏調性）；試聽要擇 Boulez 曲目｜MB 查無（MB 無 1978 原版 LP 的 release-group（只收 1986 年加入 Stravinsky、Prokofiev 的 CD 合輯），改走人工身分），走 §1 人工身分。證據：https://www.discogs.com/master/1311523 https://www.discogs.com/release/5298170 https://www.discogs.com/master/1311523 https://www.discogs.com/release/5298170",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "5298170",
+    "url": "https://i.discogs.com/HqBnN4MZVG8fOwpPp_eZZ9Sy-IDZlWLLAdrQ6Ft1QiI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUyOTgx/NzAtMTc0NzgxMjQw/MC03ODc0LmpwZWc.jpeg",
+    "note": "人工身分卡；取 Discogs 5298170（1978 DG LP 原版）封面；主線 2026-10-24 目視。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7，照 mc32／mc43）：經典＝錄音層地位（DG 名家錄音、作品標準版之一 4）；冷門＝大廠目錄（DG）的當代獨奏錄音 4；硬蕊＝20 世紀後半無調前衛獨奏 5"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Webern 一首、Boulez 一首，黑膠就收這兩首。Deutsche Grammophon 在 1978 年推出這張 LP，彈奏的是義大利鋼琴家 Maurizio Pollini。Webern 的《鋼琴變奏曲 Op. 27》分三個樂章，共用同一列音列。其餘大半時間屬於 Boulez 的《第二號鋼琴奏鳴曲》，樂評說它需要近乎攻擊性的炫技。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5298170",
+     "https://arcana.fm/2016/03/12/on-record-boulez-ponthus/",
+     "https://www.discogs.com/release/8226597",
+     "https://en.wikipedia.org/wiki/Variations_for_piano_(Webern)",
+     "https://www.deutschegrammophon.com/en/catalogue/products/pollini-stravinsky-prokofiev-boulez-webern-2378",
+     "https://www.discogs.com/master/1311523"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/81/53/65/815365fe-0ddd-2c0e-b460-45b164c2d859/mzaf_16120968559653541651.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "appleCollectionId": "1452159573",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1452159573「Maurizio Pollini《Stravinsky: Three Dances from Pétrouchka - Prokofiev: Piano Sonate No. 7 - Webern: Variationen - Boulez: Sonate No. 2》」：Apple 只有 1995 合輯版（含 Petrushka、Prokofiev 7），取 Boulez 第二號奏鳴曲第一樂章（原 LP 曲目），取第 10 軌〈Piano Sonata No. 2: I. Extrèmement rapide〉。主線 2026-10-24 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Marc Ponthus",
+   "album": "Boulez: Complete Music for Solo Piano",
+   "composer": "Boulez",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Marc Ponthus\" AND primarytype:album（查無）",
+      "artist:\"Marc Ponthus\"（release 查無）"
+     ],
+     "checkedAt": "2026-10-24",
+     "conclusion": "MB 無此藝人與 release-group，改走人工身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/8226597",
+     "https://music.apple.com/us/album/boulez-complete-music-for-solo-piano/1525384001"
+    ],
+    "manualRuling": "雲端主線 2026-10-24 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261024-mc47）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "當代無調鋼琴／鍵盤獨奏：Ponthus 的 Boulez 鋼琴獨奏全集（三首奏鳴曲、Notations、Incises、Une page d'éphéméride），剛硬急促，緊繃無調｜策展無疑點｜MB 查無（MB 無此藝人與 release-group，改走人工身分），走 §1 人工身分。證據：https://www.discogs.com/release/8226597 https://music.apple.com/us/album/boulez-complete-music-for-solo-piano/1525384001 https://www.discogs.com/release/8226597 https://music.apple.com/us/album/boulez-complete-music-for-solo-piano/1525384001",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1525384001",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/72/39/14/72391451-d6fe-43e7-d07a-df60589b04d4/090404945625.jpg/600x600bb.jpg",
+    "note": "人工身分卡；Apple us 1525384001 同名同演奏者官方圖（Discogs 8226597 同盤）；主線 2026-10-24 目視。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 9,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 9）；主線：古典錨點制（§0.7，照 mc32／mc43）：經典＝錄音層地位（有明確地位 3）；冷門＝專門小廠當代獨奏、單一版本學術領域 5；硬蕊＝20 世紀後半無調前衛獨奏 5"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 9），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "踏板接上延伸裝置，鋼琴連到了第二台鋼琴。這是 Boulez 的建議，鋼琴家 Marc Ponthus 照著做，好讓共鳴更多。雙碟收齊 Boulez 全部的鋼琴獨奏作品，2012 年 12 月起在紐約的美國藝術文學學院錄音，延續到 2013 年 1 月，《Incises》則在 2015 年 7 月 1 日補錄。樂評聽出第三號奏鳴曲的安靜段落帶著近似 Debussy 的色彩。發行廠牌是 Bridge。",
+    "sourceUrls": [
+     "https://musicweb-international.com/classrev/2016/Aug/Boulez_piano_9456p.htm",
+     "https://www.discogs.com/release/8226597",
+     "https://arcana.fm/2016/03/12/on-record-boulez-ponthus/",
+     "https://gramophone.co.uk/review/boulez-complete-piano-music",
+     "https://music.apple.com/us/album/boulez-complete-music-for-solo-piano/1525384001"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/8c/16/7d/8c167d86-f011-1ba1-c411-478423f3fcb9/mzaf_663562253437714985.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "appleCollectionId": "1525384001",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1525384001「Marc Ponthus《Boulez: Complete Music for Solo Piano》」：人工身分卡，Apple 同名同演奏者 22 軌，取第二號奏鳴曲第一樂章，取第 1 軌〈Piano Sonata No. 2: I. Extrêmement rapide〉。主線 2026-10-24 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Elisabeth Chojnacka",
+   "album": "Clavecin 2000",
+   "composer": "Ligeti / Berio / Donatoni / Clementi / Constant / Finzi / Miroglio / Tisné",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "release:\"Clavecin 2000\"（查無）",
+      "artist:\"Elisabeth Chojnacka\" AND primarytype:album（release-group 無本盤）"
+     ],
+     "checkedAt": "2026-10-24",
+     "conclusion": "MB 無此 release-group，改走人工身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/1027400",
+     "https://www.discogs.com/release/929496"
+    ],
+    "manualRuling": "雲端主線 2026-10-24 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261024-mc47）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "打擊／大鍵琴／吉他等其他獨奏：Philips「Prospective 21e Siècle」系列的當代大鍵琴獨奏經典（Ligeti Continuum、Berio Rounds、Donatoni Doubles），封底要聽者「全音量、全黑」聆聽，機械急奏、尖細金屬，緊繃無旋律｜⚠ 首發年 Discogs 未標，Orpheus 圖書館目錄記 1971（附問號），研究層確認；Apple 未上架｜MB 查無（MB 無此 release-group，改走人工身分），走 §1 人工身分。證據：https://www.discogs.com/master/1027400 https://www.discogs.com/release/929496 https://www.discogs.com/master/1027400 https://www.discogs.com/release/929496 https://cageweb.be/catalog/orp01:000020824",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "929496",
+    "url": "https://i.discogs.com/MpbynlWOmZRBr6dEiQdmXh9lyHh01z3jMWj4ricFY-o/rs:fit/g:sm/q:90/h:600/w:582/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkyOTQ5/Ni0xNTIzMjY4MTc1/LTI5NDUuanBlZw.jpeg",
+    "note": "人工身分卡；取 Discogs 929496 封面；主線 2026-10-24 目視。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 17,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 17）；主線：古典錨點制（§0.7，照 mc32／mc43）：經典＝錄音層地位（有明確地位 3）；冷門＝專門小廠當代獨奏、單一版本學術領域 5；硬蕊＝20 世紀後半無調前衛獨奏 5"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 17），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "請開到全音量，在全然的黑暗裡聽——封底這樣寫。原名 Elżbieta Ukraińczyk 的波蘭大鍵琴手 Elisabeth Chojnacka，1971 年替 Philips 錄下她的第一張唱片，封底就印著這道播放指示。八首曲子出自 Ligeti、Berio 等二十世紀作曲家，她用的是一架 Ammer 大鍵琴。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/929496",
+     "https://cageweb.be/catalog/orp01:000020824",
+     "https://en.wikipedia.org/wiki/Elisabeth_Chojnacka",
+     "https://polishmusic.usc.edu/?p=363",
+     "https://www.discogs.com/master/1027400"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：Elisabeth Chojnacka《Scott Joplin: Pièces pour clavecin (Arr. for Harpsichord)》0/0）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Elisabeth Chojnacka",
+   "album": "Clavecin d'aujourd'hui",
+   "composer": "Boucourechliev / Meyer / Clementi / Jolas / Ferrari",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Elisabeth Chojnacka\" AND primarytype:album（release-group 無本盤）",
+      "release:\"Clavecin d'aujourd'hui\"（查無）"
+     ],
+     "checkedAt": "2026-10-24",
+     "conclusion": "MB 無此 release-group，改走人工身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/4303572",
+     "https://www.discogs.com/release/393420"
+    ],
+    "manualRuling": "雲端主線 2026-10-24 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261024-mc47）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "打擊／大鍵琴／吉他等其他獨奏：Chojnacka 委約的當代大鍵琴獨奏 LP（Boucourechliev Archipel V 兩版、Krzysztof Meyer 奏鳴曲、Clementi B.A.C.H.、Jolas Autour、Ferrari Musique socialiste?），乾硬撥弦急奏，緊繃無旋律｜⚠ Ferrari Musique socialiste?（17 分）是否含其他聲源未查；Apple 未上架｜MB 查無（MB 無此 release-group，改走人工身分），走 §1 人工身分。證據：https://www.discogs.com/master/4303572 https://www.discogs.com/release/393420 https://www.discogs.com/master/4303572 https://www.discogs.com/release/393420",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1977,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "393420",
+    "url": "https://i.discogs.com/hcgdVsgBp1Fiocwz2zIDcpBhm4csPgK38xGdu9oOgSs/rs:fit/g:sm/q:90/h:356/w:362/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MzQy/MC0xMTQxNjg2ODI3/LmpwZWc.jpeg",
+    "note": "人工身分卡；取 Discogs 393420（1977 Erato LP）封面；主線 2026-10-24 目視。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 2,
+    "source": "manual:classical-rubric",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2）；主線：古典錨點制（§0.7，照 mc32／mc43）：經典＝錄音層地位（有明確地位 3）；冷門＝專門小廠當代獨奏、單一版本學術領域 5；硬蕊＝20 世紀後半無調前衛獨奏 5"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 2），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "長短交給演奏者決定的那首，錄了兩遍。受委約的新作佔了大半，多在 1971 至 1973 年寫給出身波蘭的大鍵琴演奏者 Elisabeth Chojnacka。那首是 Boucourechliev 的《Archipel V B》，兩版都收進碟裡。Luc Ferrari 那首長 17 分 32 秒，是大鍵琴配上錄音帶。1977 年交由 Erato 發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/393420",
+     "https://en.wikipedia.org/wiki/Luc_Ferrari",
+     "https://en.wikipedia.org/wiki/André_Boucourechliev",
+     "https://en.wikipedia.org/wiki/Krzysztof_Meyer",
+     "https://en.wikipedia.org/wiki/Elisabeth_Chojnacka",
+     "https://www.discogs.com/master/4303572"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-24T03:32:42Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：Elisabeth Chojnacka《Scott Joplin: Pièces pour clavecin (Arr. for Harpsichord)》0/0）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  }
+ ]
+}

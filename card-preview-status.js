@@ -3503,4 +3503,10 @@ window.DipPreviewStatus = Object.freeze({
   "moss|cthonic rites": "unavailable",
   "asva|what you don't know is frontier": "unavailable",
   "ommadon|v": "unavailable",
+  "herbert henck|stockhausen: klavierstücke i-xi": "unavailable",
+  "pi-hsien chen 陳必先|boulez: notations & piano sonatas": "unavailable",
+  "irvine arditti|recital for violin": "unavailable",
+  "bernhard wambach|stockhausen: klavierstücke vol. ii": "unavailable",
+  "elisabeth chojnacka|clavecin 2000": "unavailable",
+  "elisabeth chojnacka|clavecin d'aujourd'hui": "unavailable",
 });

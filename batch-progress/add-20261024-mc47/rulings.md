@@ -74,3 +74,20 @@
 - 22255　「他／她」引入法與第二句句型配表（逐張不同）：a1 名字直接領句（德國鋼琴家）、a2 生年與師承、a3 師承（Leibowitz）、a4 身分（土耳其鋼琴家）、a5 出生地（臺灣）、b1 錄音年月、b2 創團經歷、c1 魁北克身分、c2 委託、c3 作品時長、c4 國籍與定居地、d1 廠牌、d2 作曲家的建議、d3 原名、e1 委約。古典卡 hook 只帶身分或不帶名字的，note 第二句一律補演奏者與作曲家名。
 - 22256　「日」後一字：a5 日在、b2 日由、c2 日首、d2 日補，其餘 11 張只寫到月或年（尺 `/[年月]\s*\d{1,2}\s*日(.)/`；b1「27 至 29 日」不命中）。年份：a2 發行年寫 1986、b1 寫 1972 年錄音／1973 年首發、c3 發行年寫 1989、d2 年份只寫錄音年（2015／2016 未定）、d3 寫 1971。媒體名與媒體獎一律不進 note（Gramophone、BBC Music Magazine、MusicWeb、Diapason d'Or、Editor's Choice 皆改「樂評說」或不派）；Biret 銷量不派。
 - 22257　自查：hook 之間中文 4-gram 0 條；hook 與自身 note 無逐字重句（只剩專名 Klavierstück）；hook 對舊 hooks 檔的 4-gram 已避開高頻殘片（同一張碟、一首曲子、那首曲子、兩個版本、年後成了、進錄音室），剩「他的老師」「天的錄音」「位作曲家」等 1–6 次的通用詞。hook 自驗：Pollini、Henck 兩張不寫國籍（研究稿 Pollini 無生平、Henck 出生地只在 a1）；e1「錄了兩遍」對應 Archipel 第一、二版。`node qa-batch.mjs hooks add-20261024-mc47` 全部通過（一處 Treysa 互指已拿掉）；`node chk-hook-crossgroup.mjs add-20261024-mc47`（5 組 15 張）全部通過。
+
+## 寫作層（writer-1）
+- 22261　交件：`desc-tools/batches/output/add-20261024-mc47-out-1.json` 15 張（key 逐字同序）。full 12 張 200–236（Henck Barraqué 212、Henck Stockhausen 236、Helffer 233、Biret 229、陳必先 233、Woodward 211、Arditti 231、Derome 205、Pace 218、Wambach 202、Castro Magas 232、Ponthus 200）；thin 3 張 158–176（Pollini 171、Chojnacka《Clavecin 2000》158、《Clavecin d'aujourd'hui》176）。初稿只有 Henck《Stockhausen》242 超標一次，整格捨去「依序」之外改短第二句領句，未逐句削字。
+- 22262　首句全照抄 hook；第二句全照 22255 配表（名字直接領句／生年師承／師承／身分／出生地／錄音年月／創團經歷／魁北克身分／委託／作品時長／國籍與定居地／廠牌／作曲家的建議／原名／委約）。「日」後一字照 22256：陳必先 日在、Arditti 日由、Pace 日首、Ponthus 日補，其餘只到月或年；年份照指派（Henck Stockhausen 1986、Woodward 1972 錄音／1973 首發、Wambach 1989、Ponthus 只寫錄音年、Chojnacka 1971）。
+- 22263　派工追加「古典卡第二句要讓人知道是哪國的什麼樂器演奏者、演誰的作品」：國籍取自研究稿 facts——Henck 德國（a1 facts，兩張共用）、Helffer 法國（a1 facts「法國鋼琴家 Claude Helffer」）、Arditti 英國（生於倫敦）、Derome 加拿大魁北克、Chojnacka 波蘭（兩張）、其餘照 note。**Pollini「義大利」不在任何 facts，是外部常識補上（可逆，主線審稿請定奪）**；**Wambach 與 Ponthus 研究稿全無國籍，不補，只寫「鋼琴家」**。作曲家全部在前兩句具名（Wambach 卡第二句為 Stockhausen、Castro Magas 卡第二句為 Sergeant／Harrison／Finnissy／Hoban）。
+- 22264　轉述引導詞：Henck《Barraqué》note「據樂評逐頁對照手稿」改成直述「他逐頁對照手稿」；全檔 grep「據」0 處。樂評評語只留內容（Biret 鋼鐵般觸鍵與空間感、Woodward 沉入靜默、Derome〈Élégie〉幽暗人聲、Pace〈Tract〉極難、Pollini 攻擊性炫技、Ponthus Debussy 色彩），媒體名與名次 0 處。Woodward 的 Barraqué 原話轉間接（讚他重新發明了鋼琴）。否定句 0。
+- 22265　hook 代稱具名：Henck《Barraqué》「他」→名字領句；Henck《Stockhausen》「他的老師」→Aloys Kontarsky；Woodward「作曲家」→「到場的就是 Barraqué 本人」；Arditti「兩首」→Ferneyhough〈Intermedio alla Ciaccona〉與 Dillon〈Del Cuarto Elemento〉；Pace「彈它的人」→Ian Pace；Wambach「戴手套」→〈Klavierstück X〉；Castro Magas「四首」→四位作曲家名；Ponthus「延伸裝置」→Boulez 的建議；Chojnacka《d'aujourd'hui》「那首」→《Archipel V B》（「長度交給演奏者」不再重述）。Pace 卡省略 note 的「31 分 07 秒」以免與 hook 的 31 分鐘重述。
+- 22266　自掃 han() 中文 4-gram：3 張以上只剩作品名「鋼琴奏鳴曲」（Barraqué《鋼琴奏鳴曲》×2、Pollini《第二號鋼琴奏鳴曲》）與「號奏鳴曲」（Helffer／Biret／Ponthus 的 Boulez 奏鳴曲），屬專名。途中拆掉：「國鋼琴家」×4（改成德國鋼琴手／法籍鋼琴手／英國人／不帶國籍）、「作曲家的」×3、「到年才發」、「年月他在」、「樂評形容」、「一座教堂」、「年月與年月」（Ponthus 錄音期改寫成「起…延續到」）、「於年發行」、「波蘭大鍵琴手」（同人兩張）。本批只有一檔，無跨檔合掃。
+- 22267　腳本：`node qa-batch.mjs out add-20261024-mc47` 全部通過（158–236，thin ≤180）；`node qa-check-research.mjs` 標記 0；`node fix-spacing.mjs` 待補 0。輔助腳本在 scratchpad `wr-mc47/`。
+
+## 主線審稿（22271–22273；2026-10-24）
+- **22271** 逐張審 15 張（全文印出逐句對研究稿 a–e），改 3 張 3 處，改後文字存 `desc-override.json`：
+  - `Julie-Anne Derome|Solo`：「排在碟上第二軌」→「排在碟上第二首」（MB 曲目表 Silhouettes I–V 占 1–5 軌，〈Anthèmes〉是第 6 軌、第二首作品）。
+  - `Roger Woodward|Barraqué`：刪「作曲家讚他重新發明了鋼琴。」（研究 b 單一來源的讚語，照單源評價句刪除先例）→ 198 字。
+  - `Herbert Henck|Stockhausen: Klavierstücke I-XI`：刪「同一年他獲頒德國評論家獎」（評論家獎屬媒體評選，照媒體獎項不進正文先例）→ 223 字。
+- **22272** 寫作層 22263 用常識補的「義大利鋼琴家」（Pollini）保留：國籍為無爭議事實，第二句交代身分所需。Wambach、Ponthus 研究稿無國籍，維持只寫「鋼琴家」。陳必先「出生於臺灣、9 歲移居科隆、1972 ARD 首獎」對研究 a 核過。
+- **22273** 媒體名、媒體年終榜、「據說／據傳」全批 0；`qa-batch out`、`qa-check-research`、`fix-spacing` 0 處。
