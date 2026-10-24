@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 13 輪 ml56／mc42：暖 downtempo／類比 dub 20 張、自由即興打擊 13 張上線，落格 19/20、13/13
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 13 輪＋「恍惚可以多增加一點 downtempo 與 dub」，本工作階段負責 ml56、mc42（評分照 10-23 體感標準）。ml56（`add-20261023-ml56`，恍惚）：Fila Brazillia ×3（Pork 後期）、Alice Russell《My Favourite Letters》、Loop Guru《Amrita》、Mad Professor ×7（《Dub Me Crazy》Part 4／5／6／10／11、Black Liberation Dub 1／3）、Peaking Lights《Clearvoiant》、Kaya Project《Desert Phase》、Sounds From the Ground ×3、Dub Colossus《Dub Me Tender》、Halftribe《Luxia》、Blundetto《World of Dub》。mc42（`add-20261023-mc42`，冷冽）：Chris Corsano ×2、Favre & Centazzo、Beresford／Bennink、D'Agaro／Schlippenbach／Bennink、Minton／Turner、Parker & Prévost、Battaglia & Oxley、Tony Oxley《4 Compositions for Sextet》《Ichnos》、Pilz／Kowald／Lovens、Tomlinson／Beresford／Turner、Duthoit／Frangenheim／Turner。
+- **策展→研究汰換**：ml56 策展三輪 71、主線汰 22（池中同人判輕／判躁／判冷先例、DJ 選輯）、研究汰 32（breaks／house／funk 推進、歌曲型客串、原聲稀疏、選輯、數位化 dub）→ 20。mc42 策展 50（擋現場約 40）、主線汰 13（Graves 手鼓判暖、Strasbourg／Xenakis 大鼓判重、拼盤掛名）、研究汰 24（長音冥想判靜、巨鑼／電子／大鼓判重、借曲與搖擺判暖）→ 13。兩個主場景見底，不再派。
+- **主線審稿**：ml56 改 1 處（Dub Me Crazy Part 4「那是」指涉不清）；mc42 改 1 處（4 Compositions 單源評價句刪）。
+- **上線**：card_catalog 20＋13、KV 33 鍵回讀逐字一致（stamp 20261023r13、20261024r13）、試聽 17＋1 ready（人工配 1）、seed +33、published gate 兩批 0 error；封面 CAA 21、Apple 2、Discogs 10（registry → 428），live-check 全 200、目視相符。上線前對 origin 各 `claude/*` 分支 seed＋卡單去重 0 撞。
+- **情緒評分**：`score-ml56`、`score-mc42`。**ml56 落恍惚 19/20（95%）**（Peaking Lights《Clearvoiant》z −0.3 落頹靡）、**mc42 落冷冽 13/13（100%）**。八格：恍惚 1,618、冷冽 1,520、頹靡 1,513（合併 main 前）。
+- **類型樹**：`genre-l3-artist-map.json` 補 soul/neo-soul 1、jazz/free/free-improv 9；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 18 個掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{ml56,mc42}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml56,mc42}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml56,mc42}/`、`onboarding-manifest-add-20261023-ml56-20261023.json`、`onboarding-manifest-add-20261023-mc42-20261024.json`、`desc-tools/batches/*/add-20261023-{ml56,mc42}*`、`data/discogs-cover-registry.json`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 33/33；build-card-moods 錨點 104/104。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格線第 13 輪派工：優先序 64–69
 
 - **起因**：第 12 輪收工（ml53 17／17、mc40 29／28、ml54 22／21、md29 33／32、ml55 22／22、mc41 11／10，上線／落格）。恍惚 1,599、頹靡 1,512、冷冽 1,507——恍惚已領先，本輪改冷冽、頹靡優先（一個工作階段不配恍惚）。

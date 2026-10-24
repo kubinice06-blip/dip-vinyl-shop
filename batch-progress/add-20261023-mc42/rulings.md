@@ -78,3 +78,17 @@
 ## 主線審稿（2026-10-24，雲端主線，13 張逐張讀過、對回 note 與研究稿）
 - **21471** `desc2:Tony Oxley|4 Compositions for Sextet`：「發行的是大廠 CBS，在樂評人看來，這張對行銷部門太過頭，之後 Oxley 便被放掉。」→「發行的是大廠 CBS，之後 Oxley 便被放掉。」（單源評價句刪除，留廠牌與後果事實；字數 236→218，仍在 full 帶內）。
 - 其餘 12 張逐張審過，未改字（樂評句只留聲音描述：Ichnos 的 Webern 音色序列主義比較屬聲音組織描述，保留；Bennink「荒謬的幽默」為演奏法描述，研究稿 b 組有據）。qa-batch out、qa-check-research（標記 0）、fix-spacing（0）重跑全過。
+
+## 上線（不佔條號）
+- 上線 13：card_catalog 13/13、KV 13 鍵回讀逐字一致（stamp 20261024r13）、試聽 1 ready（Battaglia & Oxley《Explore》主線以 Apple 美國區人工配對；Hot Cars Warp、Ictus、Nato、Artesuono、Leo、Matchless、CBS／RCA 原盤、FMP、Emanem、Creative Sources 皆不上架，12 張 unavailable）、seed +13、published gate 0 error。
+- 封面：CAA 3、Discogs 10（已登錄 registry → 428）；縮圖表逐張目視相符、live-check 全 200。上線前對 origin 各 `claude/*` 分支 seed＋10-23／10-24 卡單去重 0 撞。
+- 冷門軸：機器基線（listeners 0–1,798，全部 obscurity 5），無人工覆寫。
+- 類型樹：Last.fm 標籤 6/13；合掛名與 Corsano《The Young Cricketer》等 9 張 `genre-l3-artist-map.json` 補 `jazz/free/free-improv`。
+
+## 情緒評分與落格率（2026-10-24，`batch-progress/mood-axes/score-mc42/`）
+- 照 10-23 體感標準評分（conf mid 4、low 9）。**上線 13；落冷冽 13/13＝100%**。評分 x 3.0–4.0、y −1.0～−0.3、z −1.8～−1.0。x 貼 3.0–3.1 的三張（Kochuu、Trap Street、Carpathes）都是稀疏小聲型。
+- 八格（build-card-moods，錨點 104/104）：冷冽 1,520、恍惚 1,618、頹靡 1,513。
+- 產量：策展 50（擋現場約 40）、主線汰 13、研究汰 24 → 13。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Chris Corsano，及合掛名 Pierre Favre & Andrea Centazzo、Steve Beresford / Han Bennink、Daniele D'Agaro, Alexander von Schlippenbach & Han Bennink、Phil Minton / Roger Turner、Evan Parker & Eddie Prévost、Stefano Battaglia, Tony Oxley、Pilz, Kowald, Lovens、Alan Tomlinson / Steve Beresford / Roger Turner、Isabelle Duthoit, Alexander Frangenheim, Roger Turner（10 個掛名）
