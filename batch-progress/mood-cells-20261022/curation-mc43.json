@@ -4,7 +4,7 @@
   {
    "id": "string-quartet",
    "zh": "弦樂四重奏／三重奏",
-   "count": 14,
+   "count": 16,
    "why": "Arditti、Diotima、Kreutzer 等團體演出的二線作曲家四重奏：四把弦刮擦、泛音、微分音滑奏，薄、硬、無旋律"
   },
   {
@@ -16,13 +16,13 @@
   {
    "id": "piano-solo",
    "zh": "鋼琴獨奏",
-   "count": 6,
+   "count": 10,
    "why": "Aperghis、Haas 微分音等鋼琴作品：乾、跳進密集、無旋律"
   },
   {
    "id": "ensemble",
    "zh": "室內樂團",
-   "count": 18,
+   "count": 20,
    "why": "Neuwirth、Poppe、Cassidy、Posadas、Illés 等小編制團體：密集刮擦、複節奏、聲部清楚、質地乾薄"
   },
   {
@@ -1606,6 +1606,306 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "MB 只掛作曲家；作品原為人聲＋合奏＋影像，唱片為錄音室錄音"
+  },
+  {
+   "artist": "Ensemble 21",
+   "album": "Eckardt: Out of Chaos",
+   "composer": "Eckardt",
+   "year": 2004,
+   "label": "Mode",
+   "country": "us",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Jason Eckardt 室內作合集（Ensemble 21），美國新複雜主義的急促爆發與極限炫技，密集刮擦、硬蕊冷",
+   "moodGuess": {
+    "x": 3.9,
+    "y": -0.3,
+    "z": -1.9,
+    "why": "新複雜主義的爆發式合奏、急促碎句，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/811d684c-e868-4d9f-9c48-08cf253b58af",
+    "https://coverartarchive.org/release-group/811d684c-e868-4d9f-9c48-08cf253b58af/front",
+    "https://moderecords.com/catalog/137eckardt/"
+   ],
+   "mbRgMbid": "811d684c-e868-4d9f-9c48-08cf253b58af",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "copyQuote": {
+    "quote": "furious uninhibited virtuosity at the limits of possibility",
+    "source": "Peter Grahame Woolf, Musical Pointers（Mode 廠牌頁轉引）",
+    "url": "https://moderecords.com/catalog/137eckardt/"
+   },
+   "supplement": "round2"
+  },
+  {
+   "artist": "Aki Takahashi",
+   "album": "Xenakis: Works for Piano",
+   "composer": "Xenakis",
+   "year": 1999,
+   "label": "Mode",
+   "country": "us",
+   "faction": "piano-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "高橋アキ的 Xenakis 鋼琴全集（Mode Xenakis Edition 4）：《Evryali》《Herma》《Mists》，極速音群與極端音域，炫技到坐不住",
+   "moodGuess": {
+    "x": 3.9,
+    "y": -0.3,
+    "z": -1.6,
+    "why": "音群與極端音域的狂奔，每秒二十音，硬而尖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/34c0be32-dbca-47aa-9113-38812ae73cd7",
+    "https://coverartarchive.org/release-group/34c0be32-dbca-47aa-9113-38812ae73cd7/front",
+    "https://moderecords.com/catalog/080xenakis/"
+   ],
+   "mbRgMbid": "34c0be32-dbca-47aa-9113-38812ae73cd7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池內已有 Yuji Takahashi（1976）與 Thomopoulos 的 Xenakis 鋼琴盤，此為不同錄音；含早期《Six Chansons》小品（較有旋律，約 12 分鐘）",
+   "copyQuote": {
+    "quote": "Herma’s dazzling virtuosity, increasing in speed and intensity, culminates in an outburst of sound requiring the performer to produce an evenness of touch in the piano’s extreme registers while playing up to 20 notes a second.",
+    "source": "Mode Records 廠牌文案",
+    "url": "https://moderecords.com/catalog/080xenakis/"
+   },
+   "supplement": "round2"
+  },
+  {
+   "artist": "Han Chen",
+   "album": "Ligeti: Études / Capriccios",
+   "composer": "Ligeti",
+   "year": 2023,
+   "label": "Naxos",
+   "country": "de",
+   "faction": "piano-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Han Chen 的 Ligeti 練習曲全三冊加 Capriccios（Naxos），錯位重音的高速音型一路推，急促炫技",
+   "moodGuess": {
+    "x": 3.9,
+    "y": -0.2,
+    "z": -1.1,
+    "why": "錯位重音的高速三連音、機械複節奏，快而冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/13898b80-66c9-4ca2-aa34-95b1859a662d",
+    "https://coverartarchive.org/release-group/13898b80-66c9-4ca2-aa34-95b1859a662d/front",
+    "https://musicwebinternational.com/?p=16271"
+   ],
+   "mbRgMbid": "13898b80-66c9-4ca2-aa34-95b1859a662d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Ligeti 練習曲池內已有 Aimard、Driver，本組前段另提 Ullén；同作品多錄音，主線可擇一",
+   "copyQuote": {
+    "quote": "racing triplets with irregular accents",
+    "source": "MusicWeb International 樂評（談《Der Zauberlehrling》）",
+    "url": "https://musicwebinternational.com/?p=16271"
+   },
+   "supplement": "round2"
+  },
+  {
+   "artist": "Arditti Quartet",
+   "album": "Waller / Vázquez / Romero / Naranjo / Sosa / Paredes: Mexico: New Music for Strings",
+   "composer": "Waller / Vázquez / Romero / Naranjo / Sosa / Paredes",
+   "year": 2006,
+   "label": "Mode",
+   "country": "us",
+   "faction": "string-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Irvine Arditti 與 Arditti 四重奏演出六位墨西哥年輕作曲家的弦樂作品，橋上奏刮擦與攻擊性動機，尖細冷硬",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.6,
+    "z": -1.7,
+    "why": "獨奏小提琴與四重奏的橋上奏刮擦、攻擊性動機，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/70c673bf-b516-325f-90a9-815c7e187ae6",
+    "https://www.discogs.com/release/9618328",
+    "https://moderecords.com/catalog/165arditti/"
+   ],
+   "mbRgMbid": "70c673bf-b516-325f-90a9-815c7e187ae6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "copyQuote": {
+    "quote": "Another solo, Waller’s De jaque, sal, gala y luna, alternates rhapsodic passages with sul ponticello musings and aggressive motifs.",
+    "source": "Mode Records 頁面樂評",
+    "url": "https://moderecords.com/catalog/165arditti/"
+   },
+   "supplement": "round2"
+  },
+  {
+   "artist": "Thomas Hell",
+   "album": "Ligeti: Études pour piano",
+   "composer": "Ligeti",
+   "year": 2012,
+   "label": "Wergo",
+   "country": "de",
+   "faction": "piano-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Thomas Hell 單張收齊 Ligeti 十八首練習曲（Wergo），觸鍵硬朗、錯位複節奏一路衝，急促炫技",
+   "moodGuess": {
+    "x": 3.9,
+    "y": -0.2,
+    "z": -1.1,
+    "why": "機械式複節奏與高速錯位音型，硬朗觸鍵"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/df00e4d2-d7e0-4543-b265-d6899bb89b0a",
+    "https://coverartarchive.org/release-group/df00e4d2-d7e0-4543-b265-d6899bb89b0a/front",
+    "https://www.musicweb-international.com/classrev/2021/Nov/Ligeti-etudes-CAVI8553036.htm"
+   ],
+   "mbRgMbid": "df00e4d2-d7e0-4543-b265-d6899bb89b0a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Ligeti 練習曲同作品多錄音（池內 Aimard、Driver；本組另有 Ullén、Han Chen），主線可擇一",
+   "copyQuote": {
+    "quote": "Thomas Hell’s muscular performances on Wergo WER6763-2",
+    "source": "Dominy Clements, MusicWeb International（比較評）",
+    "url": "https://www.musicweb-international.com/classrev/2021/Nov/Ligeti-etudes-CAVI8553036.htm"
+   },
+   "supplement": "round2"
+  },
+  {
+   "artist": "Fredrik Ullén",
+   "album": "Ligeti: Complete Piano Works, Volume 2",
+   "composer": "Ligeti",
+   "year": 1998,
+   "label": "BIS",
+   "country": "se",
+   "faction": "piano-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Ullén 的 Ligeti 鋼琴全集第二輯（BIS），延續第一輯的極快速度與硬朗觸鍵，跳動不安",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.3,
+    "z": -1.0,
+    "why": "偏快的練習曲與早期作品，硬亮、跳動"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/99f4b898-f041-3b4d-91be-2449fb639bf1",
+    "https://coverartarchive.org/release-group/99f4b898-f041-3b4d-91be-2449fb639bf1/front",
+    "https://www.musicweb-international.com/classrev/2021/Nov/Ligeti-etudes-CAVI8553036.htm"
+   ],
+   "mbRgMbid": "99f4b898-f041-3b4d-91be-2449fb639bf1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "樂評引句針對 Ullén 的 BIS 全集整體；第二輯含部分早期作品，旋律性可能較第一輯高，x 估 3.7",
+   "copyQuote": {
+    "quote": "Ullén tends towards faster tempi in general, and the blistering, perhaps too blistering",
+    "source": "Dominy Clements, MusicWeb International",
+    "url": "https://www.musicweb-international.com/classrev/2021/Nov/Ligeti-etudes-CAVI8553036.htm"
+   },
+   "supplement": "round2"
+  },
+  {
+   "artist": "Arditti Quartet",
+   "album": "Carter: Quintets and Voices",
+   "composer": "Carter",
+   "year": 2003,
+   "label": "Mode",
+   "country": "us",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Mode 的 Carter 晚期室內樂：《Fragment II》、鋼琴與弦樂／管樂五重奏，Arditti、Oppens 演出，突發爆發與複節奏",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.5,
+    "z": -1.5,
+    "why": "四重奏與五重奏的突發能量、聲部互相拉扯，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2b00c82e-c49b-4284-b61e-d20e8184d3c5",
+    "https://www.discogs.com/release/4334386",
+    "https://music.apple.com/us/album/carter-quintets-voices/1401572091",
+    "https://moderecords.com/catalog/128carter/"
+   ],
+   "mbRgMbid": "2b00c82e-c49b-4284-b61e-d20e8184d3c5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 未載日期，年份取 Discogs 2003；含兩首人聲作品（Syringa、Tempo e Tempi，無調、非抒情）；鋼琴五重奏可能與 Arditti 的 Montaigne《Chamber Music》重疊",
+   "copyQuote": {
+    "quote": "Fragment II for string quartet dates from 1999 and was written for the Ardittis; it uses contrasts and a kind of dialog emphasizing the dualities, in fact, as much as the differences between song and sudden bursts of energy.",
+    "source": "Mode Records 頁面樂評",
+    "url": "https://moderecords.com/catalog/128carter/"
+   },
+   "supplement": "round2"
+  },
+  {
+   "artist": "JACK Quartet",
+   "album": "Lachenmann: Complete String Quartets",
+   "composer": "Lachenmann",
+   "year": 2015,
+   "label": "Mode",
+   "country": "us",
+   "faction": "string-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "JACK 四重奏的 Lachenmann 三首四重奏（Mode 267，作曲家監錄），弦樂當噪音機器，刮擦與猛烈突爆，密集刮擦型",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.7,
+    "z": -1.9,
+    "why": "刮擦、敲擊、氣音弓與猛烈突爆，無旋律"
+   },
+   "evidence": [
+    "https://moderecords.com/catalog/267-lachenmanncd/",
+    "https://f4.bcbits.com/img/a1918357672_5.jpg",
+    "https://www.discogs.com/release/9559703-Helmut-LachenmannJACK-Quartet-Complete-String-Quartets"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "MB release-group 搜尋 artist:Lachenmann releasegroup:\"String Quartets\"（只得 Stadler 版）；瀏覽 JACK Quartet 全部 release-group（無此盤）",
+     "MB 瀏覽 Helmut Lachenmann 全部 album release-group（無 Mode 267）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 未收錄 JACK Quartet 的 Mode 267；以 Mode 廠牌頁、Bandcamp 與 Discogs release 9559703 人工確認（2015 年 CD）"
+   },
+   "manualEvidenceUrls": [
+    "https://moderecords.com/catalog/267-lachenmanncd/",
+    "https://moderecords.bandcamp.com/album/complete-string-quartets",
+    "https://www.discogs.com/release/9559703-Helmut-LachenmannJACK-Quartet-Complete-String-Quartets"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同三首作品池內已有 Arditti 版（Kairos 2007），此為不同錄音；主線若要同作品去重可汰",
+   "copyQuote": {
+    "quote": "Long held notes lead to a quieter section though with violent outbursts before the music falls to end on a single pizzicato note.",
+    "source": "Mode Records 頁面樂評",
+    "url": "https://moderecords.com/catalog/267-lachenmanncd/"
+   },
+   "supplement": "round2"
   }
  ],
  "notes": [

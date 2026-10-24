@@ -86,3 +86,9 @@
 - 策展代理補 25 張（faction backup-drone；每張附 Discogs credits／notes 證明無鼓手無歌手），全 MB 釘住、去重 0（Maeror Tri《Hypnobasia》md29 已提過，策展改提別張）。
 - 主線汰 5：Rafael Toral《Wave Field》（策展自標音色偏暖、z −0.6 貼邊；MB 首發 1998 與策展 1995 不符）、ELEH 6 張留 3（純音系 y 可能只 0.8–1.0，留 Location Momentum、Homage to the Square Wave、The Weight of Accumulation）、Maeror Tri 3 張留 2（勻量，汰 Emotional Engramm）。
 - 收 20 張進卡單（a 組追加 6、b 組新 9、c 組追加 5），卡單共 35 張；派三支補研究（a、c append 進既有研究稿，b 組重寫——原 b 組 9 張已全汰）。Paul Schütze《New Maps of Hell II》策展 1993、MB 1996，交研究 c 組核對。
+
+## 補研究（c 組追加）
+- 21667　Maeror Tri《Language of Flames and Sound》：身分一致（Old Europa Cafe OECD 008，1996，5 曲約 71 分，限量 1000）。聲音只有團層級（維基：只用電吉他與效果）與 Discogs 無鼓手歌手署名，無專輯樂評，status thin；殘響、低頻、冷暖勿具體寫。
+- 21668　Maeror Tri《The Beauty of Sadness》與 Troum 兩張：Beauty——正規全長卡帶成立（Direction Music dmc 25，10 首約 60 分，錄於 1991-10 至 1993-09，1996 發行）；moodGuess 輕度存疑，Soundohm 稱 melodic、melancholic、introspective、無工業噪音，色溫可能偏暖。
+- 21669　Troum《Tjukurrpa, Part Two: Drones》：moodGuess 存疑（中度）——Brainwashed／Vital Weekly 列有打擊聲迴圈、合唱取樣、口琴、金屬聲、近乎刺耳的音效，並非純吉他／手風琴 drone；但「暗、重、音高低」成立。《Grote Mandrenke》：curatorRisk 人聲未證實也未排除（credits 無演奏者），同團他張評論有 sampled voice 與 tribal 打擊感，status thin；題材 1362 年北海風暴潮（Discogs 內頁）。
+- 21670　Paul Schütze《New Maps of Hell II》首發年核對：**1993 為準**——原版《The Rapture of Metals》SDV 028 CD 1993（Discogs master 82313、維基皆 1993），MB 的 1996 是 Big Cat ABB 105 CD 重發改名；MB RG 只掛 1996 版。moodGuess 存疑（中度）——Textura、Rough Trade 稱 gamelan 影響，金屬調音打擊可能帶音高與節奏型態，不一定是持續冷 drone；無鼓手署名（Schütze 一人）。條號 21667–21670 重用於本小節（原 yellow6／Windy 條已在「研究 c 組」小節，此處為追加，區分以小節為準）。WebSearch 用 5 次（Schütze 1、Troum Grote 2、Troum Tjukurrpa 1、Maeror Tri 1），超出每支 3 次上限 2 次，因補研究五張缺樂評來源。
