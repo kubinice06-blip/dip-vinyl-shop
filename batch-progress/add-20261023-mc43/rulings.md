@@ -71,3 +71,8 @@
   - 現場錄音：Michel-Dansac《Aperghis: 14 Récitations》（Wien Modern 2001-11-16 首次完整演出實況，研究 b 組）。
 - 卡單更正：Damiens《Stravinsky / Boulez / Denisov / Stockhausen / Berio》廠牌 Accord→**Adda**（1988 原版 Adda 581066，Accord 是 1996 再版；研究 e 組）。研究 a 組：Reynolds 盤實為 2CD 五首；研究 c 組：Lachenmann《Mouvement》演奏另含 Ensemble Aisthesis＋Schola Heidelberg、指揮 Hans Zender；研究 e 組：Gil 盤的 Boulez 是〈Incises〉。下游以研究稿為準。
 - 留 32（a 7、b 7、c 5、d 7、e 6）；叫回策展代理補 12 張候補（密集刮擦、急促炫技型，每張附文案／樂評原句證明緊繃密集）。
+
+## 主線補候補（不佔條號；2026-10-24）
+- 策展代理補 12 張（`supplement: round2`，每張附 `copyQuote` 證明緊繃密集；MB 釘住 8、§1 人工 4）。
+- 主線汰 7：同作品池中已有（mc32 先例）——Han Chen、Thomas Hell、Ullén Vol.2 三套 Ligeti 練習曲（池有 Aimard、Driver）、JACK《Lachenmann: Complete String Quartets》（池有 Arditti 同三首）、Takahashi《Xenakis: Works for Piano》（池有 Thomopoulos 全集）；Takahashi《Xenakis: Works With Piano》（《Eonta》五支銅管，y −0.2 貼邊）；Arditti《Carter: Quintets and Voices》（兩首人聲作品，鋼琴五重奏與既有 Carter 盤重疊）。
+- 收 5 張進卡單（c 組追加 3、e 組追加 2），卡單共 37 張；人工身分 3 張（Mode《Lachenmann: …zwei Gefühle… and Solo Works》、Huebner《Reynolds: Piano Etudes》、Veale《Mahnkopf: Music for Oboe》）。派兩支補研究 append 進 c、e 研究稿。

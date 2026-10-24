@@ -152,45 +152,6 @@
   }
  },
  {
-  "artist": "Arditti Quartet",
-  "album": "Birtwistle: Complete String Quartets",
-  "composer": "Birtwistle",
-  "year": 2012,
-  "label": "Æon",
-  "country": "us",
-  "faction": "string-quartet",
-  "genres": [
-   "classical"
-  ],
-  "why": "Birtwistle《Tree of Strings》與《Nine Movements》等四重奏，四把弦互相撕扯、斷句尖銳，冷硬不入耳",
-  "moodGuess": {
-   "x": 3.4,
-   "y": -0.4,
-   "z": -1.5,
-   "why": "粗礪弦樂對話、斷裂的爆發，無旋律"
-  },
-  "evidence": [
-   "https://musicbrainz.org/release-group/8c49a32b-f785-433b-957e-3c53a38276a2",
-   "https://coverartarchive.org/release-group/8c49a32b-f785-433b-957e-3c53a38276a2/front",
-   "https://music.apple.com/us/album/birtwistle-complete-string-quartets/1571803619"
-  ],
-  "mbRgMbid": "8c49a32b-f785-433b-957e-3c53a38276a2",
-  "mbAbsenceProof": null,
-  "manualEvidenceUrls": [],
-  "releaseException": "",
-  "queryAlias": "",
-  "uncertain": "Birtwistle 四重奏偏慢段落多，x 估 3.4 貼邊；MB 未載廠牌，Æon 取自 Apple Music 條目",
-  "group": "mc43",
-  "factionZh": "弦樂四重奏／三重奏",
-  "mb": {
-   "title": "Complete String Quartets",
-   "type": "Album",
-   "sec": [],
-   "date": "2012-03-06",
-   "credit": "Sir Harrison Birtwistle; Arditti Quartet"
-  }
- },
- {
   "artist": "Klangforum Wien",
   "album": "Aperghis: Contratemps / SEESAW / Parlando / Teeter-totter",
   "composer": "Aperghis",
@@ -340,44 +301,6 @@
    "sec": [],
    "date": "2022-02",
    "credit": "Márton Illés; ensemble recherche"
-  }
- },
- {
-  "artist": "Ensemble Recherche",
-  "album": "Grisey: Vortex temporum / Taléa",
-  "composer": "Grisey",
-  "year": 2001,
-  "label": "Accord",
-  "country": "fr",
-  "faction": "ensemble",
-  "genres": [
-   "classical"
-  ],
-  "why": "Grisey 光譜派裡最快最尖的兩首：《Taléa》粗暴對切、《Vortex temporum》琶音旋渦不停轉，被推著走",
-  "moodGuess": {
-   "x": 3.6,
-   "y": -0.3,
-   "z": -0.9,
-   "why": "高速琶音漩渦、暴烈對比，五重奏聲部清楚"
-  },
-  "evidence": [
-   "https://musicbrainz.org/release-group/560a0d7d-18c9-3759-a066-b24e091bc5f6",
-   "https://coverartarchive.org/release-group/560a0d7d-18c9-3759-a066-b24e091bc5f6/front"
-  ],
-  "mbRgMbid": "560a0d7d-18c9-3759-a066-b24e091bc5f6",
-  "mbAbsenceProof": null,
-  "manualEvidenceUrls": [],
-  "releaseException": "",
-  "queryAlias": "",
-  "uncertain": "光譜派和聲偏亮，z 估 −0.9",
-  "group": "mc43",
-  "factionZh": "室內樂團",
-  "mb": {
-   "title": "Vortex temporum / Taléa",
-   "type": "Album",
-   "sec": [],
-   "date": "2001",
-   "credit": "Gérard Grisey; Ensemble Recherche"
   }
  },
  {
@@ -606,44 +529,6 @@
    "sec": [],
    "date": "2009-06",
    "credit": "Alberto Posadas; Quatuor Diotima"
-  }
- },
- {
-  "artist": "Quatuor Diotima",
-  "album": "Gervasoni / Pesson / Poppe",
-  "composer": "Gervasoni / Pesson / Poppe",
-  "year": 2021,
-  "label": "naïve",
-  "country": "fr",
-  "faction": "string-quartet",
-  "genres": [
-   "classical"
-  ],
-  "why": "Diotima 委約的三位二線作曲家四重奏：Poppe 的微分音扭動、Pesson 的碎屑、Gervasoni 的刮擦，薄而緊",
-  "moodGuess": {
-   "x": 3.4,
-   "y": -0.6,
-   "z": -1.6,
-   "why": "微分音滑奏、氣音弓與神經質碎拍，薄"
-  },
-  "evidence": [
-   "https://musicbrainz.org/release-group/6bc71910-0a4b-47ce-a54b-e0a3789f97a8",
-   "https://coverartarchive.org/release-group/6bc71910-0a4b-47ce-a54b-e0a3789f97a8/front"
-  ],
-  "mbRgMbid": "6bc71910-0a4b-47ce-a54b-e0a3789f97a8",
-  "mbAbsenceProof": null,
-  "manualEvidenceUrls": [],
-  "releaseException": "",
-  "queryAlias": "",
-  "uncertain": "Pesson 段落偏弱，x 估 3.4",
-  "group": "mc43",
-  "factionZh": "弦樂四重奏／三重奏",
-  "mb": {
-   "title": "Gervasoni / Pesson / Poppe",
-   "type": "Album",
-   "sec": [],
-   "date": "2021-11-19",
-   "credit": "Gervasoni, Pesson, Poppe; Quatuor Diotima"
   }
  },
  {
@@ -1065,44 +950,6 @@
   }
  },
  {
-  "artist": "Mabel Kwan",
-  "album": "Haas: Trois Hommages",
-  "composer": "Haas",
-  "year": 2018,
-  "label": "New Focus Recordings",
-  "country": "",
-  "faction": "piano-solo",
-  "genres": [
-   "classical"
-  ],
-  "why": "Haas 微分音鋼琴三首致敬（Reich、Ligeti、Hauer），失諧的重複音型互相擦撞，緊繃不安",
-  "moodGuess": {
-   "x": 3.4,
-   "y": -0.3,
-   "z": -1.2,
-   "why": "兩架調差四分音的鋼琴，重複音型互相擦撞"
-  },
-  "evidence": [
-   "https://musicbrainz.org/release-group/127a8648-3573-46c0-8f98-a47a0df73f44",
-   "https://coverartarchive.org/release-group/127a8648-3573-46c0-8f98-a47a0df73f44/front"
-  ],
-  "mbRgMbid": "127a8648-3573-46c0-8f98-a47a0df73f44",
-  "mbAbsenceProof": null,
-  "manualEvidenceUrls": [],
-  "releaseException": "",
-  "queryAlias": "",
-  "uncertain": "Reich 致敬段脈動規律，x 估 3.4",
-  "group": "mc43",
-  "factionZh": "鋼琴獨奏",
-  "mb": {
-   "title": "Trois Hommages",
-   "type": "Album",
-   "sec": [],
-   "date": "2018-09-21",
-   "credit": "Georg Friedrich Haas; Mabel Kwan"
-  }
- },
- {
   "artist": "Mari Poll",
   "album": "Berio / Schnittke / Boulez: Solo Violin Works",
   "composer": "Berio / Schnittke / Boulez",
@@ -1138,44 +985,6 @@
    "sec": [],
    "date": "2012-02-20",
    "credit": "Berio, Schnittke, Boulez; Mari Poll"
-  }
- },
- {
-  "artist": "Luciano Berio",
-  "album": "Berio: Sequenzas I-XIV",
-  "composer": "Berio",
-  "year": 2006,
-  "label": "Naxos",
-  "country": "gb",
-  "faction": "solo-duo",
-  "genres": [
-   "classical"
-  ],
-  "why": "Naxos 版 Berio 獨奏《Sequenza》全集，每件樂器被逼到極限，尖、快、旋律不明",
-  "moodGuess": {
-   "x": 3.7,
-   "y": -0.6,
-   "z": -1.4,
-   "why": "十四件獨奏樂器的技巧極限，碎句與跳進，無旋律"
-  },
-  "evidence": [
-   "https://musicbrainz.org/release-group/ad538368-2e3d-4ca8-85ca-e4c2f9cea9b7",
-   "https://coverartarchive.org/release-group/ad538368-2e3d-4ca8-85ca-e4c2f9cea9b7/front"
-  ],
-  "mbRgMbid": "ad538368-2e3d-4ca8-85ca-e4c2f9cea9b7",
-  "mbAbsenceProof": null,
-  "manualEvidenceUrls": [],
-  "releaseException": "",
-  "queryAlias": "",
-  "uncertain": "池內已有 EIC 的 DG 版《Sequenzas》，此為不同錄音（Naxos 多位演奏者）；MB 只掛作曲家",
-  "group": "mc43",
-  "factionZh": "獨奏與二重奏",
-  "mb": {
-   "title": "Sequenzas I-XIV",
-   "type": "Album",
-   "sec": [],
-   "date": "2006-05-02",
-   "credit": "Luciano Berio"
   }
  },
  {
@@ -1251,44 +1060,6 @@
    "type": "Album",
    "sec": [],
    "date": "2008-01",
-   "credit": "Elliott Carter; Pacifica Quartet"
-  }
- },
- {
-  "artist": "Pacifica Quartet",
-  "album": "Carter: String Quartets nos. 2, 3 and 4",
-  "composer": "Carter",
-  "year": 2009,
-  "label": "Naxos",
-  "country": "us",
-  "faction": "string-quartet",
-  "genres": [
-   "classical"
-  ],
-  "why": "Pacifica 的 Carter 第二至四號四重奏，第三號兩組二重奏同時對撞，密集刮擦型的典型",
-  "moodGuess": {
-   "x": 3.7,
-   "y": -0.6,
-   "z": -1.7,
-   "why": "兩組二重奏對撞、密集跳弓與尖銳和聲，乾硬"
-  },
-  "evidence": [
-   "https://musicbrainz.org/release-group/7acc7438-81bc-41fe-acf1-f0ed45fa45fe",
-   "https://coverartarchive.org/release-group/7acc7438-81bc-41fe-acf1-f0ed45fa45fe/front"
-  ],
-  "mbRgMbid": "7acc7438-81bc-41fe-acf1-f0ed45fa45fe",
-  "mbAbsenceProof": null,
-  "manualEvidenceUrls": [],
-  "releaseException": "",
-  "queryAlias": "",
-  "uncertain": "第二、三號池內已有 Arditti 版（不同錄音）；主線若要同作品去重可先汰這張",
-  "group": "mc43",
-  "factionZh": "弦樂四重奏／三重奏",
-  "mb": {
-   "title": "String Quartets nos. 2, 3 and 4",
-   "type": "Album",
-   "sec": [],
-   "date": "2009-02",
    "credit": "Elliott Carter; Pacifica Quartet"
   }
  },
@@ -1407,44 +1178,6 @@
   }
  },
  {
-  "artist": "Fredrik Ullén",
-  "album": "Ligeti: The Complete Piano Music, Volume I",
-  "composer": "Ligeti",
-  "year": 1996,
-  "label": "BIS",
-  "country": "",
-  "faction": "piano-solo",
-  "genres": [
-   "classical"
-  ],
-  "why": "Ullén 的 Ligeti 鋼琴全集第一輯（練習曲為主），機械脈動與錯位複節奏一路推，快而冷",
-  "moodGuess": {
-   "x": 3.9,
-   "y": -0.2,
-   "z": -1.2,
-   "why": "機械式複節奏的鋼琴練習曲，快、密、尖"
-  },
-  "evidence": [
-   "https://musicbrainz.org/release-group/3e995bf2-8eb2-37a4-8cf3-8eda95d2e859",
-   "https://coverartarchive.org/release-group/3e995bf2-8eb2-37a4-8cf3-8eda95d2e859/front"
-  ],
-  "mbRgMbid": "3e995bf2-8eb2-37a4-8cf3-8eda95d2e859",
-  "mbAbsenceProof": null,
-  "manualEvidenceUrls": [],
-  "releaseException": "",
-  "queryAlias": "",
-  "uncertain": "池內已有 Aimard、Driver 的練習曲，此為不同錄音（BIS）",
-  "group": "mc43",
-  "factionZh": "鋼琴獨奏",
-  "mb": {
-   "title": "The Complete Piano Music, Volume I",
-   "type": "Album",
-   "sec": [],
-   "date": "1996-02-28",
-   "credit": "György Ligeti; Fredrik Ullén"
-  }
- },
- {
   "artist": "LaSalle Quartet",
   "album": "Ligeti / Brown / Rosenberg: II. Streichquartett / String Quartet / III. Streichquartett",
   "composer": "Ligeti / Brown / Rosenberg",
@@ -1557,44 +1290,6 @@
    "sec": [],
    "date": "2008",
    "credit": "Conlon Nancarrow"
-  }
- },
- {
-  "artist": "Jürgen Hocker",
-  "album": "Nancarrow: Player Piano 5, Volume 3: Studies 33-41c",
-  "composer": "Nancarrow",
-  "year": 2007,
-  "label": "MDG Scene",
-  "country": "de",
-  "faction": "piano-solo",
-  "genres": [
-   "classical"
-  ],
-  "why": "Hocker 重錄 Nancarrow 第 33–41c 號練習曲（含《Study 37》《40》《41》），多速度同時跑，被推著走的機械脈動",
-  "moodGuess": {
-   "x": 4.1,
-   "y": -0.4,
-   "z": -1,
-   "why": "多速度卡農、無理數速度比，飛快硬亮"
-  },
-  "evidence": [
-   "https://musicbrainz.org/release-group/b077054e-aaf3-4e9c-96d2-27c0e2a16f78",
-   "https://coverartarchive.org/release-group/b077054e-aaf3-4e9c-96d2-27c0e2a16f78/front"
-  ],
-  "mbRgMbid": "b077054e-aaf3-4e9c-96d2-27c0e2a16f78",
-  "mbAbsenceProof": null,
-  "manualEvidenceUrls": [],
-  "releaseException": "",
-  "queryAlias": "",
-  "uncertain": "MB 未載日期，年份取 Discogs 2007",
-  "group": "mc43",
-  "factionZh": "鋼琴獨奏",
-  "mb": {
-   "title": "Player Piano 5, Volume 3: Studies 33-41c",
-   "type": "Album",
-   "sec": [],
-   "date": "",
-   "credit": "Conlon Nancarrow & Jürgen Hocker"
   }
  },
  {
@@ -1864,44 +1559,6 @@
   }
  },
  {
-  "artist": "Luciano Berio",
-  "album": "Berio: The Complete Sequenzas, Alternate Sequenzas & Works for Solo Instruments",
-  "composer": "Berio",
-  "year": 2006,
-  "label": "Mode",
-  "country": "",
-  "faction": "solo-duo",
-  "genres": [
-   "classical"
-  ],
-  "why": "Mode 版 Berio 獨奏全集，含另版 Sequenza 與其他獨奏小品，每件樂器都被逼到極限，尖細緊繃",
-  "moodGuess": {
-   "x": 3.6,
-   "y": -0.7,
-   "z": -1.4,
-   "why": "各獨奏樂器的技巧極限與碎句，乾、無旋律"
-  },
-  "evidence": [
-   "https://musicbrainz.org/release-group/8456e3b6-8205-4de8-a6af-d2ffe30b7a38",
-   "https://coverartarchive.org/release-group/8456e3b6-8205-4de8-a6af-d2ffe30b7a38/front"
-  ],
-  "mbRgMbid": "8456e3b6-8205-4de8-a6af-d2ffe30b7a38",
-  "mbAbsenceProof": null,
-  "manualEvidenceUrls": [],
-  "releaseException": "",
-  "queryAlias": "",
-  "uncertain": "與 Naxos 版同作品（不同演奏者），主線可擇一；MB 只掛作曲家",
-  "group": "mc43",
-  "factionZh": "獨奏與二重奏",
-  "mb": {
-   "title": "The Complete Sequenzas, Alternate Sequenzas & Works for Solo Instruments",
-   "type": "Album",
-   "sec": [],
-   "date": "2006-05-23",
-   "credit": "Luciano Berio"
-  }
- },
- {
   "artist": "Meta4",
   "album": "Saariaho: Chamber Works for Strings, Vol. 1",
   "composer": "Saariaho",
@@ -2052,5 +1709,563 @@
    "date": "2006-07-01",
    "credit": "Enno Poppe"
   }
+ },
+ {
+  "artist": "Ensemble 21",
+  "album": "Eckardt: Out of Chaos",
+  "composer": "Eckardt",
+  "year": 2004,
+  "label": "Mode",
+  "country": "us",
+  "faction": "ensemble",
+  "genres": [
+   "classical"
+  ],
+  "why": "Jason Eckardt 室內作合集（Ensemble 21），美國新複雜主義的急促爆發與極限炫技，密集刮擦、硬蕊冷",
+  "moodGuess": {
+   "x": 3.9,
+   "y": -0.3,
+   "z": -1.9,
+   "why": "新複雜主義的爆發式合奏、急促碎句，無旋律"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/811d684c-e868-4d9f-9c48-08cf253b58af",
+   "https://coverartarchive.org/release-group/811d684c-e868-4d9f-9c48-08cf253b58af/front",
+   "https://moderecords.com/catalog/137eckardt/"
+  ],
+  "mbRgMbid": "811d684c-e868-4d9f-9c48-08cf253b58af",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "",
+  "copyQuote": {
+   "quote": "furious uninhibited virtuosity at the limits of possibility",
+   "source": "Peter Grahame Woolf, Musical Pointers（Mode 廠牌頁轉引）",
+   "url": "https://moderecords.com/catalog/137eckardt/"
+  },
+  "supplement": "round2",
+  "group": "mc43",
+  "factionZh": "室內樂團",
+  "mb": {
+   "title": "Out of Chaos",
+   "type": "Album",
+   "sec": [],
+   "date": "2004",
+   "credit": "Jason Eckardt; Ensemble 21"
+  }
+ },
+ {
+  "artist": "Aki Takahashi",
+  "album": "Xenakis: Works for Piano",
+  "composer": "Xenakis",
+  "year": 1999,
+  "label": "Mode",
+  "country": "us",
+  "faction": "piano-solo",
+  "genres": [
+   "classical"
+  ],
+  "why": "高橋アキ的 Xenakis 鋼琴全集（Mode Xenakis Edition 4）：《Evryali》《Herma》《Mists》，極速音群與極端音域，炫技到坐不住",
+  "moodGuess": {
+   "x": 3.9,
+   "y": -0.3,
+   "z": -1.6,
+   "why": "音群與極端音域的狂奔，每秒二十音，硬而尖"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/34c0be32-dbca-47aa-9113-38812ae73cd7",
+   "https://coverartarchive.org/release-group/34c0be32-dbca-47aa-9113-38812ae73cd7/front",
+   "https://moderecords.com/catalog/080xenakis/"
+  ],
+  "mbRgMbid": "34c0be32-dbca-47aa-9113-38812ae73cd7",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "池內已有 Yuji Takahashi（1976）與 Thomopoulos 的 Xenakis 鋼琴盤，此為不同錄音；含早期《Six Chansons》小品（較有旋律，約 12 分鐘）",
+  "copyQuote": {
+   "quote": "Herma’s dazzling virtuosity, increasing in speed and intensity, culminates in an outburst of sound requiring the performer to produce an evenness of touch in the piano’s extreme registers while playing up to 20 notes a second.",
+   "source": "Mode Records 廠牌文案",
+   "url": "https://moderecords.com/catalog/080xenakis/"
+  },
+  "supplement": "round2",
+  "group": "mc43",
+  "factionZh": "鋼琴獨奏",
+  "mb": {
+   "title": "Works for Piano",
+   "type": "Album",
+   "sec": [],
+   "date": "1999",
+   "credit": "Xenakis; Aki Takahashi, Jane Peters, Charles Peltz"
+  }
+ },
+ {
+  "artist": "Han Chen",
+  "album": "Ligeti: Études / Capriccios",
+  "composer": "Ligeti",
+  "year": 2023,
+  "label": "Naxos",
+  "country": "de",
+  "faction": "piano-solo",
+  "genres": [
+   "classical"
+  ],
+  "why": "Han Chen 的 Ligeti 練習曲全三冊加 Capriccios（Naxos），錯位重音的高速音型一路推，急促炫技",
+  "moodGuess": {
+   "x": 3.9,
+   "y": -0.2,
+   "z": -1.1,
+   "why": "錯位重音的高速三連音、機械複節奏，快而冷"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/13898b80-66c9-4ca2-aa34-95b1859a662d",
+   "https://coverartarchive.org/release-group/13898b80-66c9-4ca2-aa34-95b1859a662d/front",
+   "https://musicwebinternational.com/?p=16271"
+  ],
+  "mbRgMbid": "13898b80-66c9-4ca2-aa34-95b1859a662d",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "Ligeti 練習曲池內已有 Aimard、Driver，本組前段另提 Ullén；同作品多錄音，主線可擇一",
+  "copyQuote": {
+   "quote": "racing triplets with irregular accents",
+   "source": "MusicWeb International 樂評（談《Der Zauberlehrling》）",
+   "url": "https://musicwebinternational.com/?p=16271"
+  },
+  "supplement": "round2",
+  "group": "mc43",
+  "factionZh": "鋼琴獨奏",
+  "mb": {
+   "title": "Études / Capriccios",
+   "type": "Album",
+   "sec": [],
+   "date": "2023-05-26",
+   "credit": "Ligeti; Han Chen"
+  }
+ },
+ {
+  "artist": "Arditti Quartet",
+  "album": "Waller / Vázquez / Romero / Naranjo / Sosa / Paredes: Mexico: New Music for Strings",
+  "composer": "Waller / Vázquez / Romero / Naranjo / Sosa / Paredes",
+  "year": 2006,
+  "label": "Mode",
+  "country": "us",
+  "faction": "string-quartet",
+  "genres": [
+   "classical"
+  ],
+  "why": "Irvine Arditti 與 Arditti 四重奏演出六位墨西哥年輕作曲家的弦樂作品，橋上奏刮擦與攻擊性動機，尖細冷硬",
+  "moodGuess": {
+   "x": 3.6,
+   "y": -0.6,
+   "z": -1.7,
+   "why": "獨奏小提琴與四重奏的橋上奏刮擦、攻擊性動機，無旋律"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/70c673bf-b516-325f-90a9-815c7e187ae6",
+   "https://www.discogs.com/release/9618328",
+   "https://moderecords.com/catalog/165arditti/"
+  ],
+  "mbRgMbid": "70c673bf-b516-325f-90a9-815c7e187ae6",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "",
+  "copyQuote": {
+   "quote": "Another solo, Waller’s De jaque, sal, gala y luna, alternates rhapsodic passages with sul ponticello musings and aggressive motifs.",
+   "source": "Mode Records 頁面樂評",
+   "url": "https://moderecords.com/catalog/165arditti/"
+  },
+  "supplement": "round2",
+  "group": "mc43",
+  "factionZh": "弦樂四重奏／三重奏",
+  "mb": {
+   "title": "Mexico: New Music for Strings",
+   "type": "Album",
+   "sec": [],
+   "date": "2006",
+   "credit": "Arditti Quartet"
+  }
+ },
+ {
+  "artist": "Thomas Hell",
+  "album": "Ligeti: Études pour piano",
+  "composer": "Ligeti",
+  "year": 2012,
+  "label": "Wergo",
+  "country": "de",
+  "faction": "piano-solo",
+  "genres": [
+   "classical"
+  ],
+  "why": "Thomas Hell 單張收齊 Ligeti 十八首練習曲（Wergo），觸鍵硬朗、錯位複節奏一路衝，急促炫技",
+  "moodGuess": {
+   "x": 3.9,
+   "y": -0.2,
+   "z": -1.1,
+   "why": "機械式複節奏與高速錯位音型，硬朗觸鍵"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/df00e4d2-d7e0-4543-b265-d6899bb89b0a",
+   "https://coverartarchive.org/release-group/df00e4d2-d7e0-4543-b265-d6899bb89b0a/front",
+   "https://www.musicweb-international.com/classrev/2021/Nov/Ligeti-etudes-CAVI8553036.htm"
+  ],
+  "mbRgMbid": "df00e4d2-d7e0-4543-b265-d6899bb89b0a",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "Ligeti 練習曲同作品多錄音（池內 Aimard、Driver；本組另有 Ullén、Han Chen），主線可擇一",
+  "copyQuote": {
+   "quote": "Thomas Hell’s muscular performances on Wergo WER6763-2",
+   "source": "Dominy Clements, MusicWeb International（比較評）",
+   "url": "https://www.musicweb-international.com/classrev/2021/Nov/Ligeti-etudes-CAVI8553036.htm"
+  },
+  "supplement": "round2",
+  "group": "mc43",
+  "factionZh": "鋼琴獨奏",
+  "mb": {
+   "title": "Études pour piano",
+   "type": "Album",
+   "sec": [],
+   "date": "2012",
+   "credit": "György Ligeti; Thomas Hell"
+  }
+ },
+ {
+  "artist": "Fredrik Ullén",
+  "album": "Ligeti: Complete Piano Works, Volume 2",
+  "composer": "Ligeti",
+  "year": 1998,
+  "label": "BIS",
+  "country": "se",
+  "faction": "piano-solo",
+  "genres": [
+   "classical"
+  ],
+  "why": "Ullén 的 Ligeti 鋼琴全集第二輯（BIS），延續第一輯的極快速度與硬朗觸鍵，跳動不安",
+  "moodGuess": {
+   "x": 3.7,
+   "y": -0.3,
+   "z": -1,
+   "why": "偏快的練習曲與早期作品，硬亮、跳動"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/99f4b898-f041-3b4d-91be-2449fb639bf1",
+   "https://coverartarchive.org/release-group/99f4b898-f041-3b4d-91be-2449fb639bf1/front",
+   "https://www.musicweb-international.com/classrev/2021/Nov/Ligeti-etudes-CAVI8553036.htm"
+  ],
+  "mbRgMbid": "99f4b898-f041-3b4d-91be-2449fb639bf1",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "樂評引句針對 Ullén 的 BIS 全集整體；第二輯含部分早期作品，旋律性可能較第一輯高，x 估 3.7",
+  "copyQuote": {
+   "quote": "Ullén tends towards faster tempi in general, and the blistering, perhaps too blistering",
+   "source": "Dominy Clements, MusicWeb International",
+   "url": "https://www.musicweb-international.com/classrev/2021/Nov/Ligeti-etudes-CAVI8553036.htm"
+  },
+  "supplement": "round2",
+  "group": "mc43",
+  "factionZh": "鋼琴獨奏",
+  "mb": {
+   "title": "Complete Piano Works, Volume 2",
+   "type": "Album",
+   "sec": [],
+   "date": "1998-12-02",
+   "credit": "György Ligeti; Fredrik Ullén"
+  }
+ },
+ {
+  "artist": "Arditti Quartet",
+  "album": "Carter: Quintets and Voices",
+  "composer": "Carter",
+  "year": 2003,
+  "label": "Mode",
+  "country": "us",
+  "faction": "ensemble",
+  "genres": [
+   "classical"
+  ],
+  "why": "Mode 的 Carter 晚期室內樂：《Fragment II》、鋼琴與弦樂／管樂五重奏，Arditti、Oppens 演出，突發爆發與複節奏",
+  "moodGuess": {
+   "x": 3.5,
+   "y": -0.5,
+   "z": -1.5,
+   "why": "四重奏與五重奏的突發能量、聲部互相拉扯，乾"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/2b00c82e-c49b-4284-b61e-d20e8184d3c5",
+   "https://www.discogs.com/release/4334386",
+   "https://music.apple.com/us/album/carter-quintets-voices/1401572091",
+   "https://moderecords.com/catalog/128carter/"
+  ],
+  "mbRgMbid": "2b00c82e-c49b-4284-b61e-d20e8184d3c5",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "MB 未載日期，年份取 Discogs 2003；含兩首人聲作品（Syringa、Tempo e Tempi，無調、非抒情）；鋼琴五重奏可能與 Arditti 的 Montaigne《Chamber Music》重疊",
+  "copyQuote": {
+   "quote": "Fragment II for string quartet dates from 1999 and was written for the Ardittis; it uses contrasts and a kind of dialog emphasizing the dualities, in fact, as much as the differences between song and sudden bursts of energy.",
+   "source": "Mode Records 頁面樂評",
+   "url": "https://moderecords.com/catalog/128carter/"
+  },
+  "supplement": "round2",
+  "group": "mc43",
+  "factionZh": "室內樂團",
+  "mb": {
+   "title": "Quintets and Voices",
+   "type": "Album",
+   "sec": [],
+   "date": "",
+   "credit": "Elliott Carter; Arditti Quartet, Ursula Oppens, Lucy Shelton, Andre Solomon-Glover, Ensemble Sospeso"
+  }
+ },
+ {
+  "artist": "JACK Quartet",
+  "album": "Lachenmann: Complete String Quartets",
+  "composer": "Lachenmann",
+  "year": 2015,
+  "label": "Mode",
+  "country": "us",
+  "faction": "string-quartet",
+  "genres": [
+   "classical"
+  ],
+  "why": "JACK 四重奏的 Lachenmann 三首四重奏（Mode 267，作曲家監錄），弦樂當噪音機器，刮擦與猛烈突爆，密集刮擦型",
+  "moodGuess": {
+   "x": 3.6,
+   "y": -0.7,
+   "z": -1.9,
+   "why": "刮擦、敲擊、氣音弓與猛烈突爆，無旋律"
+  },
+  "evidence": [
+   "https://moderecords.com/catalog/267-lachenmanncd/",
+   "https://f4.bcbits.com/img/a1918357672_5.jpg",
+   "https://www.discogs.com/release/9559703-Helmut-LachenmannJACK-Quartet-Complete-String-Quartets"
+  ],
+  "mbRgMbid": "",
+  "mbAbsenceProof": {
+   "queries": [
+    "MB release-group 搜尋 artist:Lachenmann releasegroup:\"String Quartets\"（只得 Stadler 版）；瀏覽 JACK Quartet 全部 release-group（無此盤）",
+    "MB 瀏覽 Helmut Lachenmann 全部 album release-group（無 Mode 267）"
+   ],
+   "checkedAt": "2026-10-24",
+   "conclusion": "MB 未收錄 JACK Quartet 的 Mode 267；以 Mode 廠牌頁、Bandcamp 與 Discogs release 9559703 人工確認（2015 年 CD）"
+  },
+  "manualEvidenceUrls": [
+   "https://moderecords.com/catalog/267-lachenmanncd/",
+   "https://moderecords.bandcamp.com/album/complete-string-quartets",
+   "https://www.discogs.com/release/9559703-Helmut-LachenmannJACK-Quartet-Complete-String-Quartets"
+  ],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "同三首作品池內已有 Arditti 版（Kairos 2007），此為不同錄音；主線若要同作品去重可汰",
+  "copyQuote": {
+   "quote": "Long held notes lead to a quieter section though with violent outbursts before the music falls to end on a single pizzicato note.",
+   "source": "Mode Records 頁面樂評",
+   "url": "https://moderecords.com/catalog/267-lachenmanncd/"
+  },
+  "supplement": "round2",
+  "group": "mc43",
+  "factionZh": "弦樂四重奏／三重奏",
+  "mb": null
+ },
+ {
+  "artist": "Helmut Lachenmann",
+  "album": "Lachenmann: „…zwei Gefühle…“ and Solo Works",
+  "composer": "Lachenmann",
+  "year": 2012,
+  "label": "Mode",
+  "country": "us",
+  "faction": "solo-duo",
+  "genres": [
+   "classical"
+  ],
+  "why": "Mode 的 Lachenmann：作曲家親自朗誦《…zwei Gefühle…》加《Pression》《Guero》等獨奏作，刮擦研磨型的代表",
+  "moodGuess": {
+   "x": 3.5,
+   "y": -0.6,
+   "z": -1.9,
+   "why": "大提琴《Pression》的粗糲研磨、鋼琴刮鍵與碎語，無旋律"
+  },
+  "evidence": [
+   "https://moderecords.com/catalog/252_lachenmanncd/",
+   "https://moderecords.com/app/uploads/2020/11/mode252_Lachenmann_cover_CD.jpg",
+   "https://www.discogs.com/release/13642059-Helmut-Lachenmann--Zwei-Gef%C3%BChle--And-Solo-Works"
+  ],
+  "mbRgMbid": "",
+  "mbAbsenceProof": {
+   "queries": [
+    "MB 瀏覽 Helmut Lachenmann 全部 album release-group（無 Mode 252）",
+    "MB release-group 搜尋 artist:Lachenmann releasegroup:Gefühle（只得 Kairos 1995／2001 兩盤）"
+   ],
+   "checkedAt": "2026-10-24",
+   "conclusion": "MB 未收錄 Mode 252；以 Mode 廠牌頁與 Discogs release 13642059 人工確認（2012 年 CD）"
+  },
+  "manualEvidenceUrls": [
+   "https://moderecords.com/catalog/252_lachenmanncd/",
+   "https://www.discogs.com/release/13642059-Helmut-Lachenmann--Zwei-Gef%C3%BChle--And-Solo-Works"
+  ],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "演奏者為 Lachenmann（朗誦、鋼琴）、Lauren Radnofsky、Ensemble Signal，取作曲家本人；《…zwei Gefühle…》也在本組前段 Klangforum 盤；含《Ein Kinderspiel》較稀疏",
+  "copyQuote": {
+   "quote": "Starting from near silence, Pression enthusiastically eschews traditional cello sounds and soon lands on excruciatingly coarse grinding before exploring all manner of wrong noises.",
+   "source": "Mode Records 頁面樂評",
+   "url": "https://moderecords.com/catalog/252_lachenmanncd/"
+  },
+  "supplement": "round2",
+  "group": "mc43",
+  "factionZh": "獨奏與二重奏",
+  "mb": null
+ },
+ {
+  "artist": "Aki Takahashi",
+  "album": "Xenakis: Works With Piano",
+  "composer": "Xenakis",
+  "year": 2010,
+  "label": "Mode",
+  "country": "us",
+  "faction": "ensemble",
+  "genres": [
+   "classical"
+  ],
+  "why": "高橋アキ的 Xenakis 鋼琴室內作（Mode Xenakis Edition 11）：《Eonta》《Morsima-Amorsima》《Akea》，鋼琴極難的高速音群",
+  "moodGuess": {
+   "x": 3.9,
+   "y": -0.2,
+   "z": -1.6,
+   "why": "鋼琴極速音群與銅管、弦樂的尖銳撞擊，硬"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/c9c0269d-f3ac-40a7-9d72-4f048bd0a231",
+   "https://moderecords.com/app/uploads/2020/11/mode217_Xenakis_cover_DVD.jpg",
+   "https://moderecords.com/catalog/217xenakis/"
+  ],
+  "mbRgMbid": "c9c0269d-f3ac-40a7-9d72-4f048bd0a231",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "《Eonta》有兩支小號三支長號（五把銅管），y 估 −0.2 偏邊；《Akea》較內省",
+  "copyQuote": {
+   "quote": "The legendary EONTA — a blistering work with one of the most difficult piano parts ever written — receives its first new recording in over 10 years.",
+   "source": "Mode Records 廠牌文案",
+   "url": "https://moderecords.com/catalog/217xenakis/"
+  },
+  "supplement": "round2",
+  "group": "mc43",
+  "factionZh": "室內樂團",
+  "mb": {
+   "title": "Works With Piano",
+   "type": "Album",
+   "sec": [],
+   "date": "2010-04-20",
+   "credit": "Iannis Xenakis; Aki Takahashi"
+  }
+ },
+ {
+  "artist": "Eric Huebner",
+  "album": "Reynolds: Roger Reynolds at 85, Vol. II: Piano Etudes, Books I & II",
+  "composer": "Reynolds",
+  "year": 2021,
+  "label": "Mode",
+  "country": "us",
+  "faction": "piano-solo",
+  "genres": [
+   "classical"
+  ],
+  "why": "Eric Huebner 首錄 Roger Reynolds 兩冊鋼琴練習曲（Mode 329），極端技巧與密集跳進，硬蕊炫技",
+  "moodGuess": {
+   "x": 3.7,
+   "y": -0.3,
+   "z": -1.6,
+   "why": "十二首練習曲的極端技巧與密集跳進，乾硬"
+  },
+  "evidence": [
+   "https://moderecords.com/catalog/329reynolds/",
+   "https://moderecords.com/app/uploads/2021/08/mode329_Reynolds-cover.jpg",
+   "https://www.discogs.com/release/34034520-Roger-Reynolds-Eric-Huebner-Roger-Reynolds-at-85-Vol-II-Piano-Etudes-Books-I-II"
+  ],
+  "mbRgMbid": "",
+  "mbAbsenceProof": {
+   "queries": [
+    "MB release-group 搜尋 artist:\"Roger Reynolds\" primarytype:album（無 Piano Etudes／at 85）",
+    "MB 搜尋 Huebner Reynolds Piano Etudes（無結果）"
+   ],
+   "checkedAt": "2026-10-24",
+   "conclusion": "MB 未收錄 Mode 329；以 Mode 廠牌頁與 Discogs release 34034520 人工確認（2021 年 CD）"
+  },
+  "manualEvidenceUrls": [
+   "https://moderecords.com/catalog/329reynolds/",
+   "https://www.discogs.com/release/34034520-Roger-Reynolds-Eric-Huebner-Roger-Reynolds-at-85-Vol-II-Piano-Etudes-Books-I-II"
+  ],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "",
+  "copyQuote": {
+   "quote": "Their complexity is intensified, their investigations more extreme, even though they make comparable technical demands.",
+   "source": "Mode Records 廠牌文案（談第二冊）",
+   "url": "https://moderecords.com/catalog/329reynolds/"
+  },
+  "supplement": "round2",
+  "group": "mc43",
+  "factionZh": "鋼琴獨奏",
+  "mb": null
+ },
+ {
+  "artist": "Peter Veale",
+  "album": "Mahnkopf: Music for Oboe",
+  "composer": "Mahnkopf",
+  "year": 2018,
+  "label": "NEOS",
+  "country": "de",
+  "faction": "solo-duo",
+  "genres": [
+   "classical"
+  ],
+  "why": "Peter Veale 的 Mahnkopf 雙簧管作品集（NEOS）：《Gorgoneion》《W.A.S.T.E. 2》等，雙簧管尖嘯與硬蕊碎句，延續《Pynchon Cycle》的硬",
+  "moodGuess": {
+   "x": 3.7,
+   "y": -0.6,
+   "z": -1.9,
+   "why": "雙簧管多音尖嘯、新複雜主義碎句與磁帶，刺耳"
+  },
+  "evidence": [
+   "https://neos-music.com/en_us/product/claus-steffen-mahnkopf-music-for-oboe/",
+   "https://music.apple.com/us/album/claus-steffen-mahnkopf-music-for-oboe/1383305399",
+   "https://www.discogs.com/release/16114609-Claus-Steffen-Mahnkopf-Peter-Veale-Ernest-Rombout-Sven-Thomas-Kiebler-Elision-Eugene-Ughetti-Music-F"
+  ],
+  "mbRgMbid": "",
+  "mbAbsenceProof": {
+   "queries": [
+    "MB 瀏覽 Claus-Steffen Mahnkopf 全部 album release-group（只有 Pynchon、Angelus Novus、Hommage 三盤）",
+    "MB 搜尋 Mahnkopf \"Music for Oboe\"（無結果）"
+   ],
+   "checkedAt": "2026-10-24",
+   "conclusion": "MB 未收錄 NEOS 11813；以 NEOS 廠牌頁、Apple Music 與 Discogs release 16114609 人工確認（2018）"
+  },
+  "manualEvidenceUrls": [
+   "https://neos-music.com/en_us/product/claus-steffen-mahnkopf-music-for-oboe/",
+   "https://www.discogs.com/release/16114609-Claus-Steffen-Mahnkopf-Peter-Veale-Ernest-Rombout-Sven-Thomas-Kiebler-Elision-Eugene-Ughetti-Music-F"
+  ],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "末曲《Hommage au hautbois》有 ELISION 合奏；引句為作曲家談 Pynchon 系列（本盤《W.A.S.T.E. 2》屬之）的德文原句",
+  "copyQuote": {
+   "quote": "geht es mir im Pynchon-Zyklus um Härte, fast Brutalität, um die Konsequentialität von letztlich sinnlosen Prozeduren",
+   "source": "NEOS 廠牌頁德文解說（作曲家自述，句子節錄）",
+   "url": "https://neos-music.com/en_us/product/claus-steffen-mahnkopf-music-for-oboe/"
+  },
+  "supplement": "round2",
+  "group": "mc43",
+  "factionZh": "獨奏與二重奏",
+  "mb": null
  }
 ]
