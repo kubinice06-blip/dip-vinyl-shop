@@ -1,299 +1,477 @@
 [
- {
-  "key": "desc2:Donatienne Michel-Dansac|Aperghis: Machinations",
-  "artist": "Donatienne Michel-Dansac",
-  "album": "Aperghis: Machinations",
-  "facts": [
-   {
-    "f": "《Machinations》是希臘裔法國作曲家 Georges Aperghis 在 2000 年寫的音樂劇場作品，副題為「四個女人與電腦的音樂劇」，分十個段落；這張 Accord 唱片（472 916-2，2003 年 4 月 29 日）收錄全作，十軌長度從 1 分 10 秒到 9 分 11 秒。",
-    "src": "https://musicbrainz.org/release-group/3535e15e-cbbe-4b00-942c-ff9759eb70a0"
-   },
-   {
-    "f": "作品 2000 年 5 月 6 日在德國 Wittener Tage für neue Kammermusik 首演，由 IRCAM 與北萊茵－西伐利亞文化秘書處委託；共同製作方另有西德廣播公司 WDR。",
-    "src": "https://opasquet.fr/?p=2702"
-   },
-   {
-    "f": "四位女性是 Donatienne Michel-Dansac（歌者）、Sylvie Sacoun（長笛）、Geneviève Strosser（中提琴）、Sylvie Levesque（演員），Olivier Pasquet 在台邊操作電腦；樂評指出只有 Michel-Dansac 是受過訓練的歌唱家。",
-    "src": "https://lafolia.com/further-aperghis-sightings"
-   },
-   {
-    "f": "文本由 François Regnault 與 Aperghis 寫成，是一套邏輯、科學式的論述，穿插遊戲、測試與對圖靈機的指涉；四人用音素與語音碎片勾勒語言與情感如何從原始聲音長出來。",
-    "src": "https://www.centrepompidou.fr/en/program/calendar/event/cTKEMa"
-   },
-   {
-    "f": "舞台上四人手持紙張、手指、頭髮等日常物件，用小攝影機投影到身後螢幕，讓音素有了看得見的形體；唱片只留下聲音，看不到這些動作。",
-    "src": "https://www.centrepompidou.fr/en/program/calendar/event/cTKEMa"
-   },
-   {
-    "f": "電腦部分的做法：Aperghis 請 Pasquet 寫軟體工具，以近乎隨機的方式讀取錄好的音素來生成節奏與樂句；演出時電腦負責人聲處理、觸發效果，並向影像螢幕送出預先編好的事件。",
-    "src": "https://opasquet.fr/?p=2702"
-   },
-   {
-    "f": "樂評者 Grant Chu Covell 形容這張碟記錄的是現場演出的聲音：人聲在哀鳴、吐氣、打嗝與喉音之間切換，氣氛在刺耳、誘人、肉感與駭人間擺盪，電腦處理的音效令人印象深刻，女聲技巧「驚人」。",
-    "src": "https://lafolia.com/further-aperghis-sightings"
-   },
-   {
-    "f": "Aperghis 1945 年 12 月 23 日生於雅典，1963 年定居巴黎，1976 年與 Édith Scob 在巴黎近郊 Bagnolet 共創音樂劇場團體 ATEM；他以「用一切做音樂」自述，《Machinations》延續他《Récitations》（1978）以音素組合為主的人聲寫法。",
-    "src": "https://fr.wikipedia.org/wiki/Georges_Aperghis"
-   },
-   {
-    "f": "Centre Pompidou 節目稿稱此作標誌 Aperghis 在 IRCAM 進入科技領域的戲劇轉折；2008 年 Agora 藝術節再度製作，Johanne Saunier 接替 Strosser 的位置。",
-    "src": "https://www.centrepompidou.fr/en/program/calendar/event/cTKEMa"
-   }
-  ],
-  "hookCandidates": [
-   "四個女人與一台電腦，把語言還沒長成之前的音節碎片拆了又拼",
-   "沒有歌詞可唱，只有喉音、吐氣與被電腦重新排列的音素"
-  ],
-  "sound": "無一般意義的旋律與鼓；人聲音素、喉音、吐氣與電腦處理聲在十個段落間快速切換、時而逼近尖叫；電腦隨機重排錄好的音素形成節奏，段落長短差異大（1 分 10 秒到 9 分多），整體跳動緊湊而乾，不厚重。",
-  "keyTracks": [
-   "Machinations : III",
-   "Machinations : VI",
-   "Machinations : VII"
-  ],
-  "status": "full",
-  "coverage": "full",
-  "notes": "性質提示：樂評稱本碟為現場演出的聲音（LaFolia 2006），MB 未標示 live；上線前請主線確認是否寫成「現場錄音」，若以音樂劇場演出收錄則仍為全作完整版而非精選。身分核對：MB 釘住 Accord 472 916-2、2003-04-29，artist-credit 掛四位女聲與 Pasquet，與卡單取 Michel-Dansac 一致，無推翻。古典卡的人：作曲家 Aperghis（掛名於盤名）與演奏者四位＋電腦 Pasquet 皆已交代。moodGuess 大致成立（躁、輕、冷），但「冷」要留意：樂評同時用「感官的、誘人的」形容，並非單一冰冷。yearVerified 見欄位。",
-  "yearVerified": {
-   "year": 2003,
-   "recorded": 2000,
-   "note": "作品 2000-05-06 首演；Accord 唱片 MB 首發 2003-04-29；LaFolia 樂評指為現場演出聲音，錄音確切日期未查到"
+  {
+    "key": "desc2:Donatienne Michel-Dansac|Aperghis: Machinations",
+    "artist": "Donatienne Michel-Dansac",
+    "album": "Aperghis: Machinations",
+    "facts": [
+      {
+        "f": "《Machinations》是希臘裔法國作曲家 Georges Aperghis 在 2000 年寫的音樂劇場作品，副題為「四個女人與電腦的音樂劇」，分十個段落；這張 Accord 唱片（472 916-2，2003 年 4 月 29 日）收錄全作，十軌長度從 1 分 10 秒到 9 分 11 秒。",
+        "src": "https://musicbrainz.org/release-group/3535e15e-cbbe-4b00-942c-ff9759eb70a0"
+      },
+      {
+        "f": "作品 2000 年 5 月 6 日在德國 Wittener Tage für neue Kammermusik 首演，由 IRCAM 與北萊茵－西伐利亞文化秘書處委託；共同製作方另有西德廣播公司 WDR。",
+        "src": "https://opasquet.fr/?p=2702"
+      },
+      {
+        "f": "四位女性是 Donatienne Michel-Dansac（歌者）、Sylvie Sacoun（長笛）、Geneviève Strosser（中提琴）、Sylvie Levesque（演員），Olivier Pasquet 在台邊操作電腦；樂評指出只有 Michel-Dansac 是受過訓練的歌唱家。",
+        "src": "https://lafolia.com/further-aperghis-sightings"
+      },
+      {
+        "f": "文本由 François Regnault 與 Aperghis 寫成，是一套邏輯、科學式的論述，穿插遊戲、測試與對圖靈機的指涉；四人用音素與語音碎片勾勒語言與情感如何從原始聲音長出來。",
+        "src": "https://www.centrepompidou.fr/en/program/calendar/event/cTKEMa"
+      },
+      {
+        "f": "舞台上四人手持紙張、手指、頭髮等日常物件，用小攝影機投影到身後螢幕，讓音素有了看得見的形體；唱片只留下聲音，看不到這些動作。",
+        "src": "https://www.centrepompidou.fr/en/program/calendar/event/cTKEMa"
+      },
+      {
+        "f": "電腦部分的做法：Aperghis 請 Pasquet 寫軟體工具，以近乎隨機的方式讀取錄好的音素來生成節奏與樂句；演出時電腦負責人聲處理、觸發效果，並向影像螢幕送出預先編好的事件。",
+        "src": "https://opasquet.fr/?p=2702"
+      },
+      {
+        "f": "樂評者 Grant Chu Covell 形容這張碟記錄的是現場演出的聲音：人聲在哀鳴、吐氣、打嗝與喉音之間切換，氣氛在刺耳、誘人、肉感與駭人間擺盪，電腦處理的音效令人印象深刻，女聲技巧「驚人」。",
+        "src": "https://lafolia.com/further-aperghis-sightings"
+      },
+      {
+        "f": "Aperghis 1945 年 12 月 23 日生於雅典，1963 年定居巴黎，1976 年與 Édith Scob 在巴黎近郊 Bagnolet 共創音樂劇場團體 ATEM；他以「用一切做音樂」自述，《Machinations》延續他《Récitations》（1978）以音素組合為主的人聲寫法。",
+        "src": "https://fr.wikipedia.org/wiki/Georges_Aperghis"
+      },
+      {
+        "f": "Centre Pompidou 節目稿稱此作標誌 Aperghis 在 IRCAM 進入科技領域的戲劇轉折；2008 年 Agora 藝術節再度製作，Johanne Saunier 接替 Strosser 的位置。",
+        "src": "https://www.centrepompidou.fr/en/program/calendar/event/cTKEMa"
+      }
+    ],
+    "hookCandidates": [
+      "四個女人與一台電腦，把語言還沒長成之前的音節碎片拆了又拼",
+      "沒有歌詞可唱，只有喉音、吐氣與被電腦重新排列的音素"
+    ],
+    "sound": "無一般意義的旋律與鼓；人聲音素、喉音、吐氣與電腦處理聲在十個段落間快速切換、時而逼近尖叫；電腦隨機重排錄好的音素形成節奏，段落長短差異大（1 分 10 秒到 9 分多），整體跳動緊湊而乾，不厚重。",
+    "keyTracks": [
+      "Machinations : III",
+      "Machinations : VI",
+      "Machinations : VII"
+    ],
+    "status": "full",
+    "coverage": "full",
+    "notes": "性質提示：樂評稱本碟為現場演出的聲音（LaFolia 2006），MB 未標示 live；上線前請主線確認是否寫成「現場錄音」，若以音樂劇場演出收錄則仍為全作完整版而非精選。身分核對：MB 釘住 Accord 472 916-2、2003-04-29，artist-credit 掛四位女聲與 Pasquet，與卡單取 Michel-Dansac 一致，無推翻。古典卡的人：作曲家 Aperghis（掛名於盤名）與演奏者四位＋電腦 Pasquet 皆已交代。moodGuess 大致成立（躁、輕、冷），但「冷」要留意：樂評同時用「感官的、誘人的」形容，並非單一冰冷。yearVerified 見欄位。",
+    "yearVerified": {
+      "year": 2003,
+      "recorded": 2000,
+      "note": "作品 2000-05-06 首演；Accord 唱片 MB 首發 2003-04-29；LaFolia 樂評指為現場演出聲音，錄音確切日期未查到"
+    }
+  },
+  {
+    "key": "desc2:Peter Veale|Mahnkopf: Pynchon Cycle",
+    "artist": "Peter Veale",
+    "album": "Mahnkopf: Pynchon Cycle",
+    "facts": [
+      {
+        "f": "《Pynchon Cycle》收錄德國作曲家 Claus-Steffen Mahnkopf 四首受 Thomas Pynchon 小說《The Crying of Lot 49》啟發的作品：《The Tristero System》（2001）、《The Courier's Tragedy》（2001）、《W.A.S.T.E.》（2001/02）、《D.E.A.T.H.》（2001/02），NEOS 11036，MB 首發 2011 年。",
+        "src": "https://shipwrecklibrary.com/the-modern-word/sl-music-mahnkopf/"
+      },
+      {
+        "f": "《The Tristero System》約 18 分鐘，編制為兩架鋼琴、兩支低音單簧管、三支長號、四支短笛與兩位打擊樂手，由 Ensemble SurPlus、James Avery 指揮；樂評形容音樂稠密不協和，銅管與木管互相衝撞，反覆出現的定音鼓重擊是唯一的錨。",
+        "src": "https://shipwrecklibrary.com/the-modern-word/sl-music-mahnkopf/"
+      },
+      {
+        "f": "《The Courier's Tragedy》是大提琴獨奏、約 19 分鐘，由 Franklin Cox 演奏；樂譜給了十二套彼此矛盾的記譜系統，逼演奏者走向失敗，聲音粗礪，有嗡鳴、刮擦與凶猛的撥弦，樂評稱為「不受控的混亂」，結尾是敲擊琴身木頭。",
+        "src": "https://shipwrecklibrary.com/the-modern-word/sl-music-mahnkopf/"
+      },
+      {
+        "f": "《W.A.S.T.E.》約 18 分鐘，由 Peter Veale 吹雙簧管，搭配 SWR 實驗錄音室的即時電子；雙簧管被逼進最高音區並被處理成嘶嘶靜電、冒泡聲與持續低音，樂評形容非常刺耳，並拿 Lou Reed 的《Metal Machine Music》來比。",
+        "src": "https://shipwrecklibrary.com/the-modern-word/sl-music-mahnkopf/"
+      },
+      {
+        "f": "《D.E.A.T.H.》約 12 分鐘，是八軌錄音帶作品，全由處理過的雙簧管複音製成，是帶有零星片段（如倒轉的聲音）的電子持續音；Mahnkopf 說它代表整個循環前面素材的最終分解狀態。",
+        "src": "https://shipwrecklibrary.com/the-modern-word/sl-music-mahnkopf/"
+      },
+      {
+        "f": "《Hommage à Thomas Pynchon》（2003–2005）是以大提琴獨奏、樂團與現場電子寫成的母作品，電子部分在弗萊堡的 SWR Experimentalstudio 實現；Mahnkopf 2001 至 2005 年間在該實驗錄音室密集工作。",
+        "src": "https://de.wikipedia.org/wiki/Claus-Steffen_Mahnkopf"
+      },
+      {
+        "f": "大提琴手 Franklin Cox 1961 年生於伊利諾州 Charleston，是美國作曲家兼學者，曾隨 Brian Ferneyhough 學習，《The Courier's Tragedy》的大提琴聲部是為他而寫。",
+        "src": "https://en.wikipedia.org/wiki/Franklin_Cox"
+      },
+      {
+        "f": "Mahnkopf 1962 年生於曼海姆，師從 Brian Ferneyhough、Klaus Huber 與 Emanuel Nunes；他的作品以哲學與音樂史反思為底。",
+        "src": "https://en.wikipedia.org/wiki/Claus-Steffen_Mahnkopf"
+      },
+      {
+        "f": "這張碟的四首合計約 1 小時 7 分鐘（Apple Music 載 4 首、1 小時 7 分，發行日標 2013 年 8 月 1 日，與 MB 的 2011 不同）。",
+        "src": "https://music.apple.com/us/album/pynchon-cycle/672951354"
+      }
+    ],
+    "hookCandidates": [
+      "有一首大提琴曲，樂譜給了十二套互相矛盾的記譜法，逼演奏者失敗",
+      "雙簧管被處理成靜電嘶聲，樂評拿 Metal Machine Music 來比"
+    ],
+    "sound": "無旋律性的段落為主：稠密不協和的合奏加定音鼓重擊、大提琴的嗡鳴刮擦與凶猛撥弦、雙簧管最高音區加靜電嘶聲與持續低音、處理過的雙簧管複音電子持續音；整體粗礪刺耳、緊繃，無清楚旋律或抒情段；編制雖大（Tristero 約 14 人），但收音清晰、每件樂器分得開。",
+    "keyTracks": [
+      "The Courier's Tragedy - for violoncello solo (2001)",
+      "W.A.S.T.E. - for oboe and live electronics (2001/2002)",
+      "The Tristero System - for ensemble (2002)"
+    ],
+    "status": "full",
+    "coverage": "full",
+    "notes": "moodGuess 成立（躁、輕、冷，刮擦嘶聲、無旋律）；唯一要留意的是 The Tristero System 是 14 人左右的厚重大編制、含定音鼓重擊，該首會偏重，但整張以獨奏加電子的刺耳為主。曲名年份：MB 曲名寫 Tristero System 為 2002，shipwrecklibrary 寫 2001，作曲年份兩說並存，facts 採 shipwreck 並在此標明。身分核對：MB 33a006c2…，NEOS 11036，2011，Veale 只演第三首，專輯署名是 Mahnkopf（Veale、Cox、SWR Experimentalstudio）；卡單取 Veale 為 MB 自動選取，演奏者還有 Franklin Cox（大提琴）與 Ensemble SurPlus／James Avery（第一首），已在 facts 交代。Apple Music 發行日 2013-08-01 與 MB 2011 不同（可能是數位版上架日），年份取 2011。性質：棚錄原創作品集（四首皆為此碟首錄），非精選非現場。shipwrecklibrary 是部落格式單一來源，聲音描述來自轉述樂評，建議寫作時用「樂評形容」口吻。",
+    "yearVerified": {
+      "year": 2011,
+      "recorded": null,
+      "note": "MB 首發 2011；Apple Music 數位版 2013-08-01；shipwrecklibrary 稱 Neos 2011"
+    }
+  },
+  {
+    "key": "desc2:asamisimasa|Steen-Andersen: Pretty Sound: Solo and Chamber Music",
+    "artist": "asamisimasa",
+    "album": "Steen-Andersen: Pretty Sound: Solo and Chamber Music",
+    "facts": [
+      {
+        "f": "丹麥作曲家 Simon Steen-Andersen 1976 年生，維基形容他的作品常處在藝術形式之間的灰色地帶，器樂寫作常用各種演奏技法與電子元素；2010 年成為首位在國際作曲家論壇（Rostrum）35 歲以上組拿首獎的丹麥人，2014 年以《Black Box Music》拿北歐理事會音樂獎。",
+        "src": "https://en.wikipedia.org/wiki/Simon_Steen-Andersen"
+      },
+      {
+        "f": "這張 Dacapo（8.226523）收五首作品，總長約 47 分 11 秒，MB 記錄首發 2011 年 1 月，Europadisc 載 2011 年 2 月 28 日；演出團體是以奧斯陸為基地的挪威團體 asamisimasa，Steen-Andersen 任指揮，製作人是他與 Håkon Stene。",
+        "src": "https://www.dacapo-records.dk/en/recordings/steen-andersen-pretty-sound-solo-and-chamber-works"
+      },
+      {
+        "f": "《On and Off and To and Fro》（2008，16 分 37 秒）：薩克斯風、大提琴、顫音琴加三個手持電池擴音器的演奏者，編制由三重奏逐漸擴大；2009 年 10 月在奧斯陸 Kampen Church 錄音。",
+        "src": "https://www.dacapo-records.dk/en/recordings/steen-andersen-pretty-sound-solo-and-chamber-works"
+      },
+      {
+        "f": "Audiophile Audition 的 Daniel Coombs 形容：該曲偶有短旋律片段與古怪和弦冒出，但大致像即興偶然音樂；擴音器收周遭聲音，產生警笛聲、嗶聲、嗡嗡聲與喀嗒聲。",
+        "src": "https://www.audaud.com/?p=17397"
+      },
+      {
+        "f": "《In Her Frown》（2007，10 分 39 秒）：兩位演奏者用人聲、口腔聲響與紙張，以貼近麥克風收錄呼吸、嘶聲與氣吹過紙邊的聲音；有些聲音接近可辨識的字或變成人聲白噪音，樂評者聯想到 John Cage 的《Music for Voice》。",
+        "src": "https://www.audaud.com/?p=17397"
+      },
+      {
+        "f": "《Rerendered》（2003，8 分 40 秒）：獨奏鋼琴加兩位助手，在平台鋼琴內部撥、敲、滑弦，貼麥克風錄；《Pretty Sound (Up and Down)》（2009，5 分 49 秒）：用一塊同時壓下 88 個鍵的木板與膠帶讓琴弦對琴鍵反應緩慢而古怪。",
+        "src": "https://www.dacapo-records.dk/en/recordings/steen-andersen-pretty-sound-solo-and-chamber-works"
+      },
+      {
+        "f": "《Study for String Instrument #2》（2009，5 分 24 秒）：大提琴、電吉他加 Digitech Whammy 變音踏板，探索音高的扭曲與互相模仿，聽起來很電子。",
+        "src": "https://www.dacapo-records.dk/en/recordings/steen-andersen-pretty-sound-solo-and-chamber-works"
+      },
+      {
+        "f": "Dacapo 說明：全碟麥克風都貼著聲源放，使細小的噪音成為音樂的核心；錄音分散在 2009 年 10 月至 2010 年 12 月，在奧斯陸的 Kampen Church、挪威音樂學院與 Desibel Studios 完成，混音母帶為 Thomas Hukkelberg。",
+        "src": "https://www.dacapo-records.dk/en/recordings/steen-andersen-pretty-sound-solo-and-chamber-works"
+      },
+      {
+        "f": "Audiophile Audition 評者稱錄音「清晰而最高品質」，欣賞其創意，但說這些作品「分析起來比情感上享受更有趣」，大概吸引力有限。",
+        "src": "https://www.audaud.com/?p=17397"
+      }
+    ],
+    "hookCandidates": [
+      "音樂家把麥克風貼到樂器上，只收那些通常被當成噪音的聲音",
+      "一塊同時壓住 88 個鍵的木板，加上膠帶，把鋼琴弄得很古怪"
+    ],
+    "sound": "無清楚旋律與節拍；貼麥克風錄下的氣音、嘶聲、紙張摩擦、鋼琴內部撥刮與膠帶造成的遲滯聲、擴音器的警笛與嗶聲；時而偶然即興式地稀疏，時而突變；最後一首電吉他與大提琴經變音踏板後偏電子；整體聲響乾、近距離、細碎，偏輕不重，不是持續密集。",
+    "keyTracks": [
+      "On and Off and To and Fro",
+      "In Her Frown",
+      "Pretty Sound (Up and Down)"
+    ],
+    "status": "full",
+    "coverage": "full",
+    "notes": "moodGuess 部分存疑：卡單預估「突停突起、讓人緊張」，來源只證實近距離噪音與偶然式的氣音、嘶聲，節奏多為即興或稀疏，並無持續緊繃；《Pretty Sound (Up and Down)》與《Rerendered》較有動作感。建議視為躁與靜的邊界，評分可能偏中。身分核對：MB f8f4456a…，Dacapo 8.226523，2011；Dacapo 稱 2011 年 1 月，Europadisc 稱 2011-02-28，採 2011。性質：棚錄原創作品集（挪威錄音），非精選非現場。古典卡的人：作曲家 Steen-Andersen（兼指揮）與演奏者 asamisimasa 皆已交代；asamisimasa 的細項成員名單未查到。",
+    "yearVerified": {
+      "year": 2011,
+      "recorded": "2009-10 至 2010-12",
+      "note": "Dacapo 8.226523，MB 2011-01，Europadisc 2011-02-28；錄音 2009 年 10 月至 2010 年 12 月於奧斯陸"
+    }
+  },
+  {
+    "key": "desc2:Klangforum Wien|Lachenmann: Mouvement (– vor der Erstarrung) / „…zwei Gefühle…“, Musik mit Leonardo / Consolation I / Consolation II",
+    "artist": "Klangforum Wien",
+    "album": "Lachenmann: Mouvement (– vor der Erstarrung) / „…zwei Gefühle…“, Musik mit Leonardo / Consolation I / Consolation II",
+    "facts": [
+      {
+        "f": "德國作曲家 Helmut Lachenmann 1935 年 11 月 27 日生於斯圖加特，1958 至 1960 年是 Luigi Nono 在威尼斯的第一位私人學生；他把自己的美學稱為「器樂具象音樂」（musique concrète instrumentale），要求從傳統樂器發出不尋常、極端的聲音。",
+        "src": "https://en.wikipedia.org/wiki/Helmut_Lachenmann"
+      },
+      {
+        "f": "《Mouvement (– vor der Erstarrung)》作於 1982 至 1984 年，由法國當代樂團 Ensemble intercontemporain 委託，獻給 Péter Eötvös，1984 年 11 月 12 日在巴黎 Théâtre du Rond-Point 由該團與 Eötvös 首演；標題指「僵硬之前」的最後動作。",
+        "src": "https://en.wikipedia.org/wiki/Mouvement_(%E2%80%93_vor_der_Erstarrung)"
+      },
+      {
+        "f": "維基描述此曲開頭稀疏，只有孤立的音與靜默，逐漸形成音列，約十六分鐘後短暫凝成帶古典音色的段落，隨即瓦解並停止，沒有最後的和弦或音；編制為 14 人左右的室內樂團，含長笛、單簧管、小號、中提琴、大提琴、低音提琴與三位打擊樂手（兩架 xylorimba 與定音鼓）。",
+        "src": "https://en.wikipedia.org/wiki/Mouvement_(%E2%80%93_vor_der_Erstarrung)"
+      },
+      {
+        "f": "classical-music.com 的樂評說：在《Mouvement》的外段有許多無音高與失真的聲響，但韻律與和聲連貫度比他記憶中更高，約四分之三處有旋轉的塔蘭泰拉舞曲作為高潮；評分 5，總結為「三個命中、一個幾乎」。",
+        "src": "https://www.classical-music.com/reviews/lachenmann-1"
+      },
+      {
+        "f": "《„…zwei Gefühle…“, Musik mit Leonardo》（1992）：為兩位朗讀者與樂團而作，用達文西文字的德譯；樂評認為這版把文字交給單一朗讀者而不是兩人，使對比減弱，文字碎裂方式很快可預期。",
+        "src": "https://www.classical-music.com/reviews/lachenmann-1"
+      },
+      {
+        "f": "《Consolation I》（1967，12 位歌者與打擊樂）與《Consolation II》（1968，16 位歌者）是 Lachenmann 早期的合唱作品；樂評稱其為「炫技的合唱作品」，各種人聲音色範圍廣，比《zwei Gefühle》更能抓住注意力。",
+        "src": "https://en.wikipedia.org/wiki/Helmut_Lachenmann"
+      },
+      {
+        "f": "這張 Kairos 唱片（0012202KAI）的演奏者不只一組：《Mouvement》與《zwei Gefühle》為 Klangforum Wien，指揮 Hans Zender；《Consolation》為 Ensemble Aisthesis 與 Schola Heidelberg，Consolation II 由 Walter Nussbaum 指揮；錄音年份 1995–2000，Wikipedia 稱 Kairos 錄音為 1998。",
+        "src": "https://en.wikipedia.org/wiki/Mouvement_(%E2%80%93_vor_der_Erstarrung)"
+      },
+      {
+        "f": "四軌長度：Mouvement 約 22 分 27 秒、zwei Gefühle 約 22 分 48 秒、Consolation I 約 8 分 33 秒、Consolation II 約 5 分 39 秒；後來 ECM 於 2002 年另出 Ensemble Modern／Eötvös 的《Schwankungen am Rand》版本，Gramophone 比較時認為 ECM 的聲音影像更清楚、臨場感更好。",
+        "src": "https://www.gramophone.co.uk/review/lachenmann-schwankungen-am-rand"
+      }
+    ],
+    "hookCandidates": [
+      "標題是「僵硬之前」，樂句一再燃盡、碎裂，又重新聚攏",
+      "把達文西的文字一個詞一個詞拆開，交給朗讀者與樂團"
+    ],
+    "sound": "《Mouvement》是 14 人左右的室內樂團，無旋律；開頭稀疏（孤立音與靜默），中段無音高與失真聲響、約四分之三處有旋轉的塔蘭泰拉式高潮，之後瓦解；《zwei Gefühle》有朗讀的人聲；《Consolation》是人聲合唱，人聲音色變化大；整體並非持續緊繃，起伏大、有稀疏段也有爆發。",
+    "keyTracks": [
+      "Mouvement (– vor der Erstarrung)",
+      "„…zwei Gefühle…“, Musik mit Leonardo",
+      "Consolation I"
+    ],
+    "status": "full",
+    "coverage": "full",
+    "notes": "moodGuess 存疑：（1）卡單與 curatorRisk 寫「演奏者 Klangforum Wien（Consolation 為 ensemble aisthesis）」，查證：Consolation 是 Ensemble Aisthesis 加 Schola Heidelberg 合唱，另有朗讀者與合唱兩種人聲曲目，全碟約 4 首中有 2 首是人聲（合唱 14 分鐘＋朗讀 23 分鐘＋器樂 22 分鐘），並非全是刮擦噪音；（2）Mouvement 開頭是稀疏點描加靜默，與「持續密集刮擦」不符，聲音在稀疏與爆發間起伏。建議主線視為躁輕冷邊緣、可能偏中。身分核對：MB 276fc6db…，Kairos 0012202KAI，2001（MB）；Gramophone 評為 12/2001，Falter 提 2002 再版，錄音 1995–2000，Wikipedia 稱 Kairos 錄音為 1998。年份取 2001 為首發。性質：棚錄／錄音室作品集，非精選非現場（未見現場標示）。古典卡的人：作曲家 Lachenmann 與演奏者 Klangforum Wien／Zender、Aisthesis／Schola Heidelberg／Nussbaum 皆已交代。",
+    "yearVerified": {
+      "year": 2001,
+      "recorded": "1995-2000",
+      "note": "Kairos 0012202KAI，MB 首發 2001；Gramophone 2001 年 12 月評；錄音年份依目錄為 1995–2000，Wikipedia 稱 1998"
+    }
+  },
+  {
+    "key": "desc2:Mari Poll|Berio / Schnittke / Boulez: Solo Violin Works",
+    "artist": "Mari Poll",
+    "album": "Berio / Schnittke / Boulez: Solo Violin Works",
+    "facts": [
+      {
+        "f": "這張《Solo Violin Works》是 EMI Classics「EMI Digital Debut」系列的數位專輯，MB 載 2012 年 2 月 20 日首發，格式為數位媒體，無實體 CD 目錄號；三首：Berio《Sequenza VIII》（約 14 分 44 秒）、Schnittke《A Paganini》（約 13 分 6 秒）、Boulez《Anthèmes》（約 9 分 15 秒）。",
+        "src": "https://musicbrainz.org/release-group/b86473ef-e3c4-4a5a-b1fd-44dce1884589"
+      },
+      {
+        "f": "Mari Poll 是愛沙尼亞小提琴家，1987 年生，曾就讀 Tallinn Music High School、英國 Chetham's School of Music，2006 至 2010 年在倫敦皇家音樂學院（RCM）拿學士，之後讀演奏碩士；老師包括 Jan Repko、Radu Blidar。",
+        "src": "https://queenelisabethcompetition.be/en/candidates/mari-poll/1597"
+      },
+      {
+        "f": "她 2012 年參加伊莉莎白王后國際音樂大賽（Queen Elisabeth Competition），5 月 1 日在 Flagey 的首輪獨奏會曲目含 Bach、Paganini 與 Schumann，鋼琴伴奏 Thomas Hoppe。",
+        "src": "https://queenelisabethcompetition.be/en/candidates/mari-poll/1597"
+      },
+      {
+        "f": "她另拿過 Vibrarte 國際小提琴大賽第三名、Derek Butler London Prize 第一名等，並在 2012 年以 EMI Digital Debut 系列推出錄音首作；2012 年也與塔林室內樂團演出 Ligeti 小提琴協奏曲。",
+        "src": "https://citymusicfoundation.org/our-artists/mari-poll/"
+      },
+      {
+        "f": "Berio 1925 年 10 月 24 日生於義大利 Oneglia，2003 年 5 月 27 日在羅馬過世；他的 14 首《Sequenza》是為獨奏樂器而寫的炫技系列，第一首長笛作於 1958 年，最後一首大提琴作於 2002 年，《Sequenza VIII》為小提琴，作於 1976 年。",
+        "src": "https://en.wikipedia.org/wiki/Luciano_Berio"
+      },
+      {
+        "f": "MusicWeb 樂評談另一位小提琴家 Diego Tosi 的同類曲目編排時說，Berio 的《Sequenza VIII》「從 Bartók 停下的地方出發」，且是廣有錄音的名作；同篇稱 Boulez《Anthèmes》「出乎意料地好聽」，作曲嚴格結構。",
+        "src": "https://musicweb-international.com/classrev/2007/May07/Sequenza_Solstice_socd225.htm"
+      },
+      {
+        "f": "Boulez《Anthèmes I》為 1991 年耶胡迪·曼紐因小提琴大賽委託的獨奏小提琴作品，約 9 分鐘，獻給 Universal Edition 的主持人 Alfred Schlee 九十大壽；構思取自他童年聽到的聖週耶利米哀歌，長而靜止的和聲音代表希伯來字母，較激動的分節段落代表拉丁詩節；七個段落，以七音動機與 D 音顫音開頭。",
+        "src": "https://en.wikipedia.org/wiki/Anth%C3%A8mes"
+      },
+      {
+        "f": "Schnittke（1934 年生於俄羅斯 Engels，1998 年於漢堡過世）以「多風格並置」技法聞名，把各種過去與當代風格並置組合；《A Paganini》作於 1982 年，是向 Paganini 致敬的獨奏小提琴曲，常與 Milstein 的《Paganiniana》並列錄音。",
+        "src": "https://en.wikipedia.org/wiki/Alfred_Schnittke"
+      }
+    ],
+    "hookCandidates": [
+      "一位愛沙尼亞小提琴家的錄音首作，是只有數位版的 EMI 專輯",
+      "Boulez 的獨奏小提琴曲，靈感來自童年聽的聖週耶利米哀歌"
+    ],
+    "sound": "三首無伴奏獨奏小提琴；Berio 與 Schnittke 的炫技雙音與急促段落（來源無逐項音響描述），Boulez《Anthèmes》有長而靜止的和聲音與較激動的分節段落交替；未取得這個版本的樂評或錄音細節，因此音響一欄只能依作品特徵說明。",
+    "keyTracks": [
+      "Sequenza VIII",
+      "À Paganini",
+      "Anthemes"
+    ],
+    "status": "thin",
+    "coverage": "thin",
+    "notes": "moodGuess 無法驗證：查無 Mari Poll 這張唱片的樂評、錄音地點與日期（EMI Digital Debut 為數位專輯，無實體版目錄號）；Boulez《Anthèmes》以長而靜止的和聲音與激動段落交替，並非全程急促；Schnittke《A Paganini》的炫技與引句只由其標題與同系列錄音推知，不確定。建議主線把此卡視為「作品特徵推論」，若要確保情緒評分可信可考慮汰換。身分核對：MB b86473ef…，2012-02-20，數位媒體，EMI（MB 掛 Berio, Schnittke, Boulez; Mari Poll）。性質：棚錄原創（非現場、非精選）未取得直接證據，但屬 EMI Digital Debut 新錄音系列的專輯。盤名「Solo Violin Works」與卡單相符。古典卡的人：三位作曲家與演奏者 Mari Poll 皆已交代。",
+    "yearVerified": {
+      "year": 2012,
+      "recorded": null,
+      "note": "MB 首發 2012-02-20（EMI Digital Debut 數位專輯）；錄音日期未查到"
+    }
+  },
+  {
+    "key": "desc2:Ensemble 21|Eckardt: Out of Chaos",
+    "artist": "Ensemble 21",
+    "album": "Eckardt: Out of Chaos",
+    "facts": [
+      {
+        "f": "這張《Out of Chaos》是 Mode 廠牌的 mode 137，MB 載 2004 年首發、CD；收四首 Jason Eckardt 的室內作品，全部是首次錄音，也是這位紐約作曲家的第一張個人專輯：After Serra（2000，約 14 分 13 秒）、Tangled Loops（1996，約 7 分 35 秒）、A Glimpse Retraced（1999，約 14 分 2 秒）、Polarities（1998，兩個樂章合計約 26 分 36 秒）。",
+        "src": "https://moderecords.com/catalog/137eckardt/"
+      },
+      {
+        "f": "MB 曲目長度：After Serra 約 14 分 13 秒、Tangled Loops 約 7 分 35 秒、A Glimpse Retraced 約 14 分 2 秒、Polarities I 約 9 分 53 秒、Polarities II 約 16 分 43 秒，全碟約 63 分鐘。",
+        "src": "https://musicbrainz.org/release/682ff635-537b-4763-9de3-7afccd32a056"
+      },
+      {
+        "f": "Jason Eckardt 1971 年生於美國新澤西州普林斯頓，先在 Berklee 主修吉他，背景有重金屬與自由爵士；後來轉向作曲，師從 Mario Davidovsky，也受教於 Brian Ferneyhough、James Dillon、Babbitt 與 Stockhausen，Mode 頁面稱他的音樂融合重金屬與藝術搖滾、爵士、雅樂與板索里、第二維也納樂派與新複雜主義。",
+        "src": "https://moderecords.com/catalog/137eckardt/"
+      },
+      {
+        "f": "演奏的 Ensemble 21 是紐約的新音樂團體，1993 年由 Eckardt 與鋼琴家 Marilyn Nonken 創立（Musical Pointers 樂評所述）；這張碟由 Jeffrey Milarsky 指揮 After Serra 與 Polarities，Paul Hostetter 指揮 A Glimpse Retraced，Nonken 另在 Tangled Loops 與 Taimur Sullivan 的高音薩克斯風二重奏。",
+        "src": "https://moderecords.com/catalog/137eckardt/"
+      },
+      {
+        "f": "編制很小：After Serra 只有長笛／低音長笛、單簧管／低音單簧管、小提琴、大提琴、鋼琴五人；A Glimpse Retraced 是鋼琴加四件樂器；Polarities 是長笛、單簧管、小提琴、中提琴、大提琴、鋼琴與打擊，七人加指揮，不是厚重大樂團。",
+        "src": "https://moderecords.com/catalog/137eckardt/"
+      },
+      {
+        "f": "標題 After Serra 指向美國極簡雕塑家 Richard Serra 的《Tilted Arc》（照片就是封面）；樂評稱此曲前約 10 分鐘是『活力十足、高能量的對位』，最後四分鐘才是『詭異的靜止，緩慢的質地變化與持續音上安靜竄動的獨奏』；作曲家自述要呼應雕塑『瀕臨崩塌』的平衡，從侵略、易爆的爆發走向獨奏者浮現，卻始終沒有達到穩定。",
+        "src": "https://moderecords.com/catalog/137eckardt/"
+      },
+      {
+        "f": "樂評對聲音的描述：Allan Kozinn（紐約時報）說他的音樂『和聲與節奏都在複雜多變的關係中茁壯』，吸引人的是『無休止的能量與驅動力』，並以幽默與雜糅調和了後調性的尖刺感；Dan Warburton（Paris Transatlantic）說開場 After Serra 讓人想到 Varèse，『強烈的手勢、可辨的輪廓與鮮明的對比』。",
+        "src": "https://moderecords.com/catalog/137eckardt/"
+      },
+      {
+        "f": "Tangled Loops 是為高音薩克斯風與鋼琴寫的，Warburton 說它向 Parker、Coltrane、Dolphy 致意，『對音程的戲劇化、頑固追擊』；Musical Pointers 稱之為『在可能性極限的猛烈、不受拘束的炫技』。Polarities 裡單簧管手 Jean Kopperud 的演奏在克萊茲默式的滑音與強硬的多音之間來回。",
+        "src": "https://moderecords.com/catalog/137eckardt/"
+      },
+      {
+        "f": "A Glimpse Retraced 是全碟最好入口的一首：Warburton 形容它交替『艱硬而有稜角的抒情』與如 70 年代中期 Ligeti 般『厚實又帶律動』的極端音區探索，另有小提琴家 Rolf Schulte 的『抒情』小提琴、尖亮的短笛旋律壓在『上升而粗暴』的鋼琴之上。",
+        "src": "https://moderecords.com/catalog/137eckardt/"
+      }
+    ],
+    "hookCandidates": [
+      "他原本是彈重金屬的吉他手，後來寫出一整張急促到喘不過氣的室內樂",
+      "封面是 Richard Serra 的鋼板雕塑《Tilted Arc》，開場曲想用聲音重現那種『瀕臨崩塌』的平衡"
+    ],
+    "sound": "小編制（五到七人加指揮）棚內室內樂；以密集、快速、方向不斷改變的新複雜主義對位為主，爆發與突然近乎寂靜的停頓交替（After Serra 約 10 分鐘高能量後收尾於緩慢質地與持續音，Polarities 先激烈後轉安靜）；Tangled Loops 薩克斯風與鋼琴是爵士式的猛烈追逐，A Glimpse Retraced 帶稜角的抒情與尖銳短笛旋律，不算全然無旋律；樂評描述無電子處理，錄音『示範級』（Musical Pointers）；非現場（無證據顯示是現場，錄音日期未查到）。整體符合躁（高能量、密集）、偏輕（小編制、細小音色）、偏冷硬。",
+    "keyTracks": [
+      "After Serra",
+      "Polarities",
+      "Tangled Loops",
+      "A Glimpse Retraced"
+    ],
+    "status": "solid",
+    "coverage": "solid",
+    "notes": "身分核對：MB 811d684c…，Out of Chaos，2004，Mode mode 137，artist-credit『Jason Eckardt; Ensemble 21』；Mode 廠牌頁、MB release 682ff635 對得上（盤名、年份、廠牌皆符）。moodGuess 大致成立（密集爆發、急促碎句、無電子），但需提醒：A Glimpse Retraced 與 Tangled Loops 有可辨認的旋律線與爵士式語彙，並非全程無旋律；After Serra 結尾與 Polarities 後段轉為安靜靜止，『持續緊繃』只對前半成立。錄音日期與地點未查到（Mode 頁無記載），錄音室或現場未有直接證據，樂評未提現場掌聲，暫視為棚錄。樂評日期：Paris Transatlantic 2004-09、Musical Pointers 2004-10，Mode 頁所掛 NYT Kozinn 日期標為 2008-07-28（可能是綜述），不作主張。古典卡的人：作曲家 Eckardt 與演奏團體 Ensemble 21（指揮 Milarsky、Hostetter，獨奏 Nonken、Sullivan、Kopperud、Schulte 等）皆已交代。",
+    "yearVerified": {
+      "year": 2004,
+      "recorded": null,
+      "note": "MB 首發 2004、mode 137；樂評最早為 2004 年 9 月（Paris Transatlantic），錄音日期未查到"
+    }
+  },
+  {
+    "key": "desc2:Arditti Quartet|Waller / Vázquez / Romero / Naranjo / Sosa / Paredes: Mexico: New Music for Strings",
+    "artist": "Arditti Quartet",
+    "album": "Waller / Vázquez / Romero / Naranjo / Sosa / Paredes: Mexico: New Music for Strings",
+    "facts": [
+      {
+        "f": "這張《Mexico: New Music for Strings》是 Mode 的 mode 165，MB 與 Discogs 皆載 2006 年首發、CD；收六位 1957 至 1977 年間出生的墨西哥作曲家作品：Waller《De jaque, sal, gala y luna》（獨奏小提琴，1999）、Vázquez《弦樂四重奏第一號》（1999，兩樂章）、Romero《Ramas》（擴音獨奏小提琴，2002）、Naranjo《Uno》（弦樂四重奏，2002）、Sosa《Espasmo fulgor》（小提琴與電子，2002）、Paredes《Uy u'tan》（弦樂四重奏，1998）。",
+        "src": "https://moderecords.com/catalog/165arditti/"
+      },
+      {
+        "f": "錄音資料：Mode 頁面載明作品『錄於 2002 年，Radar 音樂節首屆期間』，Radar 是與 Festival de México en el Centro Histórico（墨西哥城最重要的年度藝術節）合作的新音樂與實驗音樂年度計畫；Irvine Arditti 與 Arditti Quartet 首演了其中多數弦樂四重奏與獨奏小提琴作品。頁面未明講是現場或棚錄。",
+        "src": "https://moderecords.com/catalog/165arditti/"
+      },
+      {
+        "f": "演奏者分工：Irvine Arditti 獨奏小提琴（第 1、3、5 首，即 Waller、Romero、Sosa），其餘三首由 Arditti Quartet 演出。Arditti Quartet 1974 年由英國小提琴家 Irvine Arditti 創立，1999 年成為第一個獲得 Ernst von Siemens 音樂獎的團體，也有同類中最龐大的錄音目錄。",
+        "src": "https://en.wikipedia.org/wiki/Arditti_Quartet"
+      },
+      {
+        "f": "MB 曲目長度：Waller 約 7 分 37 秒、Vázquez 弦樂四重奏第一號兩樂章各約 9 分 30 秒與 8 分 49 秒、Romero 約 14 分 22 秒、Naranjo 約 13 分 38 秒、Sosa 約 10 分 19 秒、Paredes 約 14 分 46 秒，全碟約 79 分鐘。",
+        "src": "https://musicbrainz.org/release/f5e98568-6e7e-4a0f-b1bb-2257c4958fff"
+      },
+      {
+        "f": "Mode 頁面對作品的描述：Vázquez 的四重奏『始於近乎靜默、終於悸動的白噪音』，並用『巨型樂器』手法，把一個複雜聲部拆給兩件樂器；Romero（隨 Julio Estrada 學習、在巴黎 UPIC 工作室進修）的 Ramas 把注意力放在『弓刮弦的聲音物件』；Sosa 的 Espasmo fulgor 全部電子聲源來自小提琴本身，特色是『強迫般的脈動、突襲、刺耳的音區、閃亮的音色』。",
+        "src": "https://moderecords.com/catalog/165arditti/"
+      },
+      {
+        "f": "Dan Warburton（Paris Transatlantic，2006 年 7 月）寫道：Paredes 與 Vázquez 的四重奏是『簡練的動機操練』，指向 Elliott Carter 的荊棘式戲劇；Naranjo 的 Uno 與 Romero 的 Ramas 則是『兇狠的刮擦、生猛的微分音、殘暴的剪貼』，彷彿隔海望向 Xenakis 的幽靈，Ramas 還明確引用 Zimmermann 與 Spahlinger。",
+        "src": "https://moderecords.com/catalog/165arditti/"
+      },
+      {
+        "f": "Grant Chu Covell（La Folia，2006 年 12 月）說 Waller 的獨奏小提琴曲『交替狂想段落、橋上奏的沉思與攻擊性動機』，Romero 的擴音小提琴曲則『散發粗礪的冥想』，Vázquez 的四重奏要成對的演奏者彼此『爭辯』，語言『尖銳，呼應 Carter 與 Xenakis』。",
+        "src": "https://moderecords.com/catalog/165arditti/"
+      },
+      {
+        "f": "Mike Silverton（SoundStage，2007 年 1 月）形容 Paredes 的 Uy u'tan（瑪雅語『聽他們說話』，1998 年諾曼第十月藝術節為 Arditti 委託）是『光亮之美』的音樂，四件樂器被當成戲劇角色（瘋狂亢奮的第一小提琴、放鬆抒情的中提琴、心不在焉的大提琴、內向笨拙的第二小提琴）；他又說 Vázquez 與 Naranjo 帶著『全速前進』的態度，看似密不透風的音符叢，多聽之後才露出各自的細緻。此碟被該刊列為 2006 年十大之一。",
+        "src": "https://moderecords.com/catalog/165arditti/"
+      }
+    ],
+    "hookCandidates": [
+      "六位墨西哥作曲家，用小提琴的刮擦與白噪音寫出一張不像『墨西哥』的弦樂專輯",
+      "Sosa 的曲子裡每一個電子聲音，都是從同一把小提琴取樣加工而來"
+    ],
+    "sound": "純弦樂（獨奏小提琴三首、弦樂四重奏三首，其中 Romero 為擴音、Sosa 加電子處理）；以橋上奏刮擦、粗礪的微分音、近乎靜默到白噪音的動態、尖亮音區與攻擊性動機為主，樂評形容『兇狠的刮擦』與『全速前進』，聲音尖細、乾而冷硬；但 Paredes 的 Uy u'tan 被稱『光亮之美』，Waller 有『狂想段落』，Romero 是『粗礪的冥想』，所以並非一路高壓，也有抒情與沉思的段落；無打擊與厚重低頻，編制僅一到四把弦樂器。",
+    "keyTracks": [
+      "Ramas",
+      "Espasmo fulgor",
+      "Uno",
+      "String Quartet no. 1: Exposición"
+    ],
+    "status": "solid",
+    "coverage": "solid",
+    "notes": "身分核對：MB 70c673bf…，Mexico: New Music for Strings，2006，Mode mode 165，artist-credit『Arditti Quartet』；Discogs 9618328 年份 2006；盤名、年份、廠牌皆符卡單。卡單 curatorWhy『Irvine Arditti 與 Arditti 四重奏演出』與 Mode 頁一致。moodGuess 大致成立（橋上奏刮擦、攻擊性動機、無旋律、冷硬），但 Paredes《Uy u'tan》被稱『光亮之美』並有角色戲劇性，Waller 有狂想與抒情段落，Sosa 帶電子脈動與閃亮音色，不是一路尖細；錄音年份 2002（Mode 頁），發行 2006，是否現場未明載，我不寫現場。古典卡的人：六位作曲家（Waller 1971、Vázquez 1963、Romero 1966、Naranjo 1977、Sosa 1977、Paredes 1957 生）與演奏者 Irvine Arditti、Arditti Quartet 皆已交代。Waller 生年由 Mode 頁面標示 b.1971；曲目長度四捨五入自 MB 毫秒。",
+    "yearVerified": {
+      "year": 2006,
+      "recorded": "2002",
+      "note": "MB 與 Discogs 皆為 2006，Mode 頁面載明錄於 2002 年 Radar 音樂節；發行距錄音相隔約四年"
+    }
+  },
+  {
+    "key": "desc2:Helmut Lachenmann|Lachenmann: „…zwei Gefühle…“ and Solo Works",
+    "artist": "Helmut Lachenmann",
+    "album": "Lachenmann: „…zwei Gefühle…“ and Solo Works",
+    "facts": [
+      {
+        "f": "身分核對（§1 人工）：Mode 廠牌頁標題為《Zwei Gefühle and Solo Works》，編號 mode 252；Discogs release 13642059 同名，廠牌 Mode、目錄號 mode 252、格式 CD、年份 2012。Mode 另有含 DVD 的版本（影像、立體聲與 5.1 環繞）。MB 沒有收錄這張。",
+        "src": "https://www.discogs.com/release/13642059-Helmut-Lachenmann--Zwei-Gef%C3%BChle--And-Solo-Works"
+      },
+      {
+        "f": "錄音：Mode 頁面載明是『錄音室錄音』（studio recordings），錄於 2010 年 3 月 27 至 28 日，地點為 Rensselaer 理工學院 EMPAC 的音樂廳，在四場巡演之後進行；製作由 EMPAC 駐地計畫與 Jaffe 基金支持，說明文字由 Paul Griffiths 撰寫。Mode 說這是 Lachenmann 在該廠牌的系列第一張。",
+        "src": "https://moderecords.com/catalog/252_lachenmanncd/"
+      },
+      {
+        "f": "曲目（Mode 頁）：1《…zwei Gefühle… Musik mit Leonardo》（1992，約 21 分 38 秒，朗誦者與樂團，Lachenmann 本人朗誦、Ensemble Signal、Brad Lubman 指揮）；2《Wiegenmusik》（1963，鋼琴，約 3 分 25 秒）；3《Pression》（1969 至 70 年，大提琴獨奏，約 9 分 8 秒，Lauren Radnofsky）；4《Guero》（1970，鋼琴，約 3 分 57 秒）；5 至 11《Ein Kinderspiel》（1980，鋼琴七首短曲，合計約 14 分 31 秒），除大提琴外鋼琴曲皆由作曲家本人彈奏。（Mode 頁將 Wiegenmusik 拼作 Weigenmusik。）",
+        "src": "https://moderecords.com/catalog/252_lachenmanncd/"
+      },
+      {
+        "f": "Lachenmann 1935 年 11 月 27 日生於斯圖加特，1958 至 1960 年是 Luigi Nono 在威尼斯的第一位私人學生；他把自己的美學稱為『器樂具象音樂』（musique concrète instrumentale），要求樂器發出不尋常、極端的聲音。",
+        "src": "https://en.wikipedia.org/wiki/Helmut_Lachenmann"
+      },
+      {
+        "f": "Mode 頁面形容他的音樂：弦樂手在樂器上方低語，吉他手等待『最專注的時刻做出一個我們可能輕易錯過的手勢』，大號手走去敲擊敞開的鋼琴內部，兩位大提琴手以重壓在尾飾板附近拉出『急迫的刮擦』，定音鼓突然的強奏把音樂震到停頓；並說他讓 Ensemble Signal 的每位樂手一一學習他的技法語言。",
+        "src": "https://moderecords.com/catalog/252_lachenmanncd/"
+      },
+      {
+        "f": "Grant Chu Covell（La Folia，樂評文末標 2017 年重刊）說 Lachenmann『原有的尖刻易碎』仍令人愉快，音樂在多個層面與速度上進行；《Pression》『從近乎靜默開始，熱切地避開傳統大提琴音色，很快落入令人難受的粗糙研磨，再探索各種「錯誤」的噪音』；《Guero》是觸摸琴鍵、琴弦與琴身，而非傳統按鍵；兒童曲其實給想起童年摸琴經驗的大人聽，常用最高音區，音高與包氈木槌敲金屬弦的聲響競爭。",
+        "src": "https://moderecords.com/catalog/252_lachenmanncd/"
+      },
+      {
+        "f": "Mike Silverton（La Folia，2013 年 1 月）認為此碟的《…zwei Gefühle…》比 1991 年 Kairos 版『更鮮活，錄音也更鮮活』，Lachenmann 朗誦達文西的文字『常被碎裂成耳語噪音』；他說作曲家的『微粒狀聲音需要空間感與細節，這張 mode 提供得很充足』，樂手必須願意放棄既有的規範與訓練。",
+        "src": "https://moderecords.com/catalog/252_lachenmanncd/"
+      },
+      {
+        "f": "與 Klangforum 那張的關係：同一首《…zwei Gefühle…》也在本批前段的 Kairos 唱片出現；這張的版本由 Lachenmann 本人朗誦，樂團是美國的 Ensemble Signal 與 Brad Lubman，是不同的錄音。Discogs 與 Mode 皆將本碟歸在作曲家名下，演奏者三組：作曲家（朗誦、鋼琴）、Lauren Radnofsky（大提琴）、Ensemble Signal。",
+        "src": "https://www.discogs.com/release/13642059-Helmut-Lachenmann--Zwei-Gef%C3%BChle--And-Solo-Works"
+      }
+    ],
+    "hookCandidates": [
+      "作曲家本人坐在鋼琴前，把自己的刮擦與噪音一首一首彈給你聽",
+      "大提琴手用琴弓重壓出刺耳研磨，這首《Pression》1969 年寫成，至今仍被當成噪音器樂的基準"
+    ],
+    "sound": "棚內錄音（EMPAC 音樂廳），無電子處理；《…zwei Gefühle…》是朗誦加小樂團（Ensemble Signal），耳語、碎裂的詞、尖細的器樂噪音，約 21 分鐘；《Pression》是從近靜默到粗糙研磨的大提琴獨奏；《Guero》《Wiegenmusik》《Ein Kinderspiel》是鋼琴獨奏，Kinderspiel 七首短曲多用最高音區，較稀疏、輕巧甚至帶玩笑感（如『Falscher Chinese (ein wenig besoffen)』）；全碟無傳統旋律，低頻很少，大部分偏細、乾、冷硬，但鋼琴短曲與朗誦段有明顯的安靜、稀疏時刻，不是一路緊繃。",
+    "keyTracks": [
+      "…zwei Gefühle… Musik mit Leonardo",
+      "Pression",
+      "Guero",
+      "Ein Kinderspiel"
+    ],
+    "status": "solid",
+    "coverage": "solid",
+    "notes": "身分核對（§1 人工）：盤名、年份 2012、廠牌 Mode（mode 252）、演奏者三方面皆與卡單 manualEvidenceUrls 一致；Discogs 官方 API 可讀（year 2012、catno mode 252、CD），Mode 官頁亦寫『issued in 2012』（Silverton）；盤名大小寫與標點略異（Mode『Zwei Gefühle and Solo Works』），無推翻。錄音 2010-03-27/28，發行 2012，棚錄非現場（Mode 頁明載 studio recordings）；『…zwei Gefühle…』與前段 Klangforum Kairos 盤是同曲不同錄音，非重複版本。moodGuess 部分存疑：Pression 的粗糲研磨、zwei Gefühle 的碎語與器樂噪音符合；Wiegenmusik（3 分）與 Ein Kinderspiel（7 首短曲，多為最高音區、安靜稀疏）偏輕偏靜，curatorRisk 所說『較稀疏』成立；全碟約 52 分鐘中，Kinderspiel 約 14.5 分、Wiegenmusik 與 Guero 約 7 分，鋼琴小品合計約 40 percent。Mode 頁把 Wiegenmusik 拼成 Weigenmusik（卡單與維基的拼法為 Wiegenmusik）。古典卡的人：作曲家 Lachenmann（朗誦與鋼琴）、Lauren Radnofsky（大提琴）、Ensemble Signal 與 Brad Lubman 皆已交代；Radnofsky 與 Lubman 的生平未查，不寫。",
+    "yearVerified": {
+      "year": 2012,
+      "recorded": "2010-03-27/28",
+      "note": "Discogs year 2012、Mode 頁面與 Silverton 樂評『issued in 2012』；錄於 2010 年 3 月 27 至 28 日 EMPAC 音樂廳"
+    }
   }
- },
- {
-  "key": "desc2:Peter Veale|Mahnkopf: Pynchon Cycle",
-  "artist": "Peter Veale",
-  "album": "Mahnkopf: Pynchon Cycle",
-  "facts": [
-   {
-    "f": "《Pynchon Cycle》收錄德國作曲家 Claus-Steffen Mahnkopf 四首受 Thomas Pynchon 小說《The Crying of Lot 49》啟發的作品：《The Tristero System》（2001）、《The Courier's Tragedy》（2001）、《W.A.S.T.E.》（2001/02）、《D.E.A.T.H.》（2001/02），NEOS 11036，MB 首發 2011 年。",
-    "src": "https://shipwrecklibrary.com/the-modern-word/sl-music-mahnkopf/"
-   },
-   {
-    "f": "《The Tristero System》約 18 分鐘，編制為兩架鋼琴、兩支低音單簧管、三支長號、四支短笛與兩位打擊樂手，由 Ensemble SurPlus、James Avery 指揮；樂評形容音樂稠密不協和，銅管與木管互相衝撞，反覆出現的定音鼓重擊是唯一的錨。",
-    "src": "https://shipwrecklibrary.com/the-modern-word/sl-music-mahnkopf/"
-   },
-   {
-    "f": "《The Courier's Tragedy》是大提琴獨奏、約 19 分鐘，由 Franklin Cox 演奏；樂譜給了十二套彼此矛盾的記譜系統，逼演奏者走向失敗，聲音粗礪，有嗡鳴、刮擦與凶猛的撥弦，樂評稱為「不受控的混亂」，結尾是敲擊琴身木頭。",
-    "src": "https://shipwrecklibrary.com/the-modern-word/sl-music-mahnkopf/"
-   },
-   {
-    "f": "《W.A.S.T.E.》約 18 分鐘，由 Peter Veale 吹雙簧管，搭配 SWR 實驗錄音室的即時電子；雙簧管被逼進最高音區並被處理成嘶嘶靜電、冒泡聲與持續低音，樂評形容非常刺耳，並拿 Lou Reed 的《Metal Machine Music》來比。",
-    "src": "https://shipwrecklibrary.com/the-modern-word/sl-music-mahnkopf/"
-   },
-   {
-    "f": "《D.E.A.T.H.》約 12 分鐘，是八軌錄音帶作品，全由處理過的雙簧管複音製成，是帶有零星片段（如倒轉的聲音）的電子持續音；Mahnkopf 說它代表整個循環前面素材的最終分解狀態。",
-    "src": "https://shipwrecklibrary.com/the-modern-word/sl-music-mahnkopf/"
-   },
-   {
-    "f": "《Hommage à Thomas Pynchon》（2003–2005）是以大提琴獨奏、樂團與現場電子寫成的母作品，電子部分在弗萊堡的 SWR Experimentalstudio 實現；Mahnkopf 2001 至 2005 年間在該實驗錄音室密集工作。",
-    "src": "https://de.wikipedia.org/wiki/Claus-Steffen_Mahnkopf"
-   },
-   {
-    "f": "大提琴手 Franklin Cox 1961 年生於伊利諾州 Charleston，是美國作曲家兼學者，曾隨 Brian Ferneyhough 學習，《The Courier's Tragedy》的大提琴聲部是為他而寫。",
-    "src": "https://en.wikipedia.org/wiki/Franklin_Cox"
-   },
-   {
-    "f": "Mahnkopf 1962 年生於曼海姆，師從 Brian Ferneyhough、Klaus Huber 與 Emanuel Nunes；他的作品以哲學與音樂史反思為底。",
-    "src": "https://en.wikipedia.org/wiki/Claus-Steffen_Mahnkopf"
-   },
-   {
-    "f": "這張碟的四首合計約 1 小時 7 分鐘（Apple Music 載 4 首、1 小時 7 分，發行日標 2013 年 8 月 1 日，與 MB 的 2011 不同）。",
-    "src": "https://music.apple.com/us/album/pynchon-cycle/672951354"
-   }
-  ],
-  "hookCandidates": [
-   "有一首大提琴曲，樂譜給了十二套互相矛盾的記譜法，逼演奏者失敗",
-   "雙簧管被處理成靜電嘶聲，樂評拿 Metal Machine Music 來比"
-  ],
-  "sound": "無旋律性的段落為主：稠密不協和的合奏加定音鼓重擊、大提琴的嗡鳴刮擦與凶猛撥弦、雙簧管最高音區加靜電嘶聲與持續低音、處理過的雙簧管複音電子持續音；整體粗礪刺耳、緊繃，無清楚旋律或抒情段；編制雖大（Tristero 約 14 人），但收音清晰、每件樂器分得開。",
-  "keyTracks": [
-   "The Courier's Tragedy - for violoncello solo (2001)",
-   "W.A.S.T.E. - for oboe and live electronics (2001/2002)",
-   "The Tristero System - for ensemble (2002)"
-  ],
-  "status": "full",
-  "coverage": "full",
-  "notes": "moodGuess 成立（躁、輕、冷，刮擦嘶聲、無旋律）；唯一要留意的是 The Tristero System 是 14 人左右的厚重大編制、含定音鼓重擊，該首會偏重，但整張以獨奏加電子的刺耳為主。曲名年份：MB 曲名寫 Tristero System 為 2002，shipwrecklibrary 寫 2001，作曲年份兩說並存，facts 採 shipwreck 並在此標明。身分核對：MB 33a006c2…，NEOS 11036，2011，Veale 只演第三首，專輯署名是 Mahnkopf（Veale、Cox、SWR Experimentalstudio）；卡單取 Veale 為 MB 自動選取，演奏者還有 Franklin Cox（大提琴）與 Ensemble SurPlus／James Avery（第一首），已在 facts 交代。Apple Music 發行日 2013-08-01 與 MB 2011 不同（可能是數位版上架日），年份取 2011。性質：棚錄原創作品集（四首皆為此碟首錄），非精選非現場。shipwrecklibrary 是部落格式單一來源，聲音描述來自轉述樂評，建議寫作時用「樂評形容」口吻。",
-  "yearVerified": {
-   "year": 2011,
-   "recorded": null,
-   "note": "MB 首發 2011；Apple Music 數位版 2013-08-01；shipwrecklibrary 稱 Neos 2011"
-  }
- },
- {
-  "key": "desc2:asamisimasa|Steen-Andersen: Pretty Sound: Solo and Chamber Music",
-  "artist": "asamisimasa",
-  "album": "Steen-Andersen: Pretty Sound: Solo and Chamber Music",
-  "facts": [
-   {
-    "f": "丹麥作曲家 Simon Steen-Andersen 1976 年生，維基形容他的作品常處在藝術形式之間的灰色地帶，器樂寫作常用各種演奏技法與電子元素；2010 年成為首位在國際作曲家論壇（Rostrum）35 歲以上組拿首獎的丹麥人，2014 年以《Black Box Music》拿北歐理事會音樂獎。",
-    "src": "https://en.wikipedia.org/wiki/Simon_Steen-Andersen"
-   },
-   {
-    "f": "這張 Dacapo（8.226523）收五首作品，總長約 47 分 11 秒，MB 記錄首發 2011 年 1 月，Europadisc 載 2011 年 2 月 28 日；演出團體是以奧斯陸為基地的挪威團體 asamisimasa，Steen-Andersen 任指揮，製作人是他與 Håkon Stene。",
-    "src": "https://www.dacapo-records.dk/en/recordings/steen-andersen-pretty-sound-solo-and-chamber-works"
-   },
-   {
-    "f": "《On and Off and To and Fro》（2008，16 分 37 秒）：薩克斯風、大提琴、顫音琴加三個手持電池擴音器的演奏者，編制由三重奏逐漸擴大；2009 年 10 月在奧斯陸 Kampen Church 錄音。",
-    "src": "https://www.dacapo-records.dk/en/recordings/steen-andersen-pretty-sound-solo-and-chamber-works"
-   },
-   {
-    "f": "Audiophile Audition 的 Daniel Coombs 形容：該曲偶有短旋律片段與古怪和弦冒出，但大致像即興偶然音樂；擴音器收周遭聲音，產生警笛聲、嗶聲、嗡嗡聲與喀嗒聲。",
-    "src": "https://www.audaud.com/?p=17397"
-   },
-   {
-    "f": "《In Her Frown》（2007，10 分 39 秒）：兩位演奏者用人聲、口腔聲響與紙張，以貼近麥克風收錄呼吸、嘶聲與氣吹過紙邊的聲音；有些聲音接近可辨識的字或變成人聲白噪音，樂評者聯想到 John Cage 的《Music for Voice》。",
-    "src": "https://www.audaud.com/?p=17397"
-   },
-   {
-    "f": "《Rerendered》（2003，8 分 40 秒）：獨奏鋼琴加兩位助手，在平台鋼琴內部撥、敲、滑弦，貼麥克風錄；《Pretty Sound (Up and Down)》（2009，5 分 49 秒）：用一塊同時壓下 88 個鍵的木板與膠帶讓琴弦對琴鍵反應緩慢而古怪。",
-    "src": "https://www.dacapo-records.dk/en/recordings/steen-andersen-pretty-sound-solo-and-chamber-works"
-   },
-   {
-    "f": "《Study for String Instrument #2》（2009，5 分 24 秒）：大提琴、電吉他加 Digitech Whammy 變音踏板，探索音高的扭曲與互相模仿，聽起來很電子。",
-    "src": "https://www.dacapo-records.dk/en/recordings/steen-andersen-pretty-sound-solo-and-chamber-works"
-   },
-   {
-    "f": "Dacapo 說明：全碟麥克風都貼著聲源放，使細小的噪音成為音樂的核心；錄音分散在 2009 年 10 月至 2010 年 12 月，在奧斯陸的 Kampen Church、挪威音樂學院與 Desibel Studios 完成，混音母帶為 Thomas Hukkelberg。",
-    "src": "https://www.dacapo-records.dk/en/recordings/steen-andersen-pretty-sound-solo-and-chamber-works"
-   },
-   {
-    "f": "Audiophile Audition 評者稱錄音「清晰而最高品質」，欣賞其創意，但說這些作品「分析起來比情感上享受更有趣」，大概吸引力有限。",
-    "src": "https://www.audaud.com/?p=17397"
-   }
-  ],
-  "hookCandidates": [
-   "音樂家把麥克風貼到樂器上，只收那些通常被當成噪音的聲音",
-   "一塊同時壓住 88 個鍵的木板，加上膠帶，把鋼琴弄得很古怪"
-  ],
-  "sound": "無清楚旋律與節拍；貼麥克風錄下的氣音、嘶聲、紙張摩擦、鋼琴內部撥刮與膠帶造成的遲滯聲、擴音器的警笛與嗶聲；時而偶然即興式地稀疏，時而突變；最後一首電吉他與大提琴經變音踏板後偏電子；整體聲響乾、近距離、細碎，偏輕不重，不是持續密集。",
-  "keyTracks": [
-   "On and Off and To and Fro",
-   "In Her Frown",
-   "Pretty Sound (Up and Down)"
-  ],
-  "status": "full",
-  "coverage": "full",
-  "notes": "moodGuess 部分存疑：卡單預估「突停突起、讓人緊張」，來源只證實近距離噪音與偶然式的氣音、嘶聲，節奏多為即興或稀疏，並無持續緊繃；《Pretty Sound (Up and Down)》與《Rerendered》較有動作感。建議視為躁與靜的邊界，評分可能偏中。身分核對：MB f8f4456a…，Dacapo 8.226523，2011；Dacapo 稱 2011 年 1 月，Europadisc 稱 2011-02-28，採 2011。性質：棚錄原創作品集（挪威錄音），非精選非現場。古典卡的人：作曲家 Steen-Andersen（兼指揮）與演奏者 asamisimasa 皆已交代；asamisimasa 的細項成員名單未查到。",
-  "yearVerified": {
-   "year": 2011,
-   "recorded": "2009-10 至 2010-12",
-   "note": "Dacapo 8.226523，MB 2011-01，Europadisc 2011-02-28；錄音 2009 年 10 月至 2010 年 12 月於奧斯陸"
-  }
- },
- {
-  "key": "desc2:Klangforum Wien|Lachenmann: Mouvement (– vor der Erstarrung) / „…zwei Gefühle…“, Musik mit Leonardo / Consolation I / Consolation II",
-  "artist": "Klangforum Wien",
-  "album": "Lachenmann: Mouvement (– vor der Erstarrung) / „…zwei Gefühle…“, Musik mit Leonardo / Consolation I / Consolation II",
-  "facts": [
-   {
-    "f": "德國作曲家 Helmut Lachenmann 1935 年 11 月 27 日生於斯圖加特，1958 至 1960 年是 Luigi Nono 在威尼斯的第一位私人學生；他把自己的美學稱為「器樂具象音樂」（musique concrète instrumentale），要求從傳統樂器發出不尋常、極端的聲音。",
-    "src": "https://en.wikipedia.org/wiki/Helmut_Lachenmann"
-   },
-   {
-    "f": "《Mouvement (– vor der Erstarrung)》作於 1982 至 1984 年，由法國當代樂團 Ensemble intercontemporain 委託，獻給 Péter Eötvös，1984 年 11 月 12 日在巴黎 Théâtre du Rond-Point 由該團與 Eötvös 首演；標題指「僵硬之前」的最後動作。",
-    "src": "https://en.wikipedia.org/wiki/Mouvement_(%E2%80%93_vor_der_Erstarrung)"
-   },
-   {
-    "f": "維基描述此曲開頭稀疏，只有孤立的音與靜默，逐漸形成音列，約十六分鐘後短暫凝成帶古典音色的段落，隨即瓦解並停止，沒有最後的和弦或音；編制為 14 人左右的室內樂團，含長笛、單簧管、小號、中提琴、大提琴、低音提琴與三位打擊樂手（兩架 xylorimba 與定音鼓）。",
-    "src": "https://en.wikipedia.org/wiki/Mouvement_(%E2%80%93_vor_der_Erstarrung)"
-   },
-   {
-    "f": "classical-music.com 的樂評說：在《Mouvement》的外段有許多無音高與失真的聲響，但韻律與和聲連貫度比他記憶中更高，約四分之三處有旋轉的塔蘭泰拉舞曲作為高潮；評分 5，總結為「三個命中、一個幾乎」。",
-    "src": "https://www.classical-music.com/reviews/lachenmann-1"
-   },
-   {
-    "f": "《„…zwei Gefühle…“, Musik mit Leonardo》（1992）：為兩位朗讀者與樂團而作，用達文西文字的德譯；樂評認為這版把文字交給單一朗讀者而不是兩人，使對比減弱，文字碎裂方式很快可預期。",
-    "src": "https://www.classical-music.com/reviews/lachenmann-1"
-   },
-   {
-    "f": "《Consolation I》（1967，12 位歌者與打擊樂）與《Consolation II》（1968，16 位歌者）是 Lachenmann 早期的合唱作品；樂評稱其為「炫技的合唱作品」，各種人聲音色範圍廣，比《zwei Gefühle》更能抓住注意力。",
-    "src": "https://en.wikipedia.org/wiki/Helmut_Lachenmann"
-   },
-   {
-    "f": "這張 Kairos 唱片（0012202KAI）的演奏者不只一組：《Mouvement》與《zwei Gefühle》為 Klangforum Wien，指揮 Hans Zender；《Consolation》為 Ensemble Aisthesis 與 Schola Heidelberg，Consolation II 由 Walter Nussbaum 指揮；錄音年份 1995–2000，Wikipedia 稱 Kairos 錄音為 1998。",
-    "src": "https://en.wikipedia.org/wiki/Mouvement_(%E2%80%93_vor_der_Erstarrung)"
-   },
-   {
-    "f": "四軌長度：Mouvement 約 22 分 27 秒、zwei Gefühle 約 22 分 48 秒、Consolation I 約 8 分 33 秒、Consolation II 約 5 分 39 秒；後來 ECM 於 2002 年另出 Ensemble Modern／Eötvös 的《Schwankungen am Rand》版本，Gramophone 比較時認為 ECM 的聲音影像更清楚、臨場感更好。",
-    "src": "https://www.gramophone.co.uk/review/lachenmann-schwankungen-am-rand"
-   }
-  ],
-  "hookCandidates": [
-   "標題是「僵硬之前」，樂句一再燃盡、碎裂，又重新聚攏",
-   "把達文西的文字一個詞一個詞拆開，交給朗讀者與樂團"
-  ],
-  "sound": "《Mouvement》是 14 人左右的室內樂團，無旋律；開頭稀疏（孤立音與靜默），中段無音高與失真聲響、約四分之三處有旋轉的塔蘭泰拉式高潮，之後瓦解；《zwei Gefühle》有朗讀的人聲；《Consolation》是人聲合唱，人聲音色變化大；整體並非持續緊繃，起伏大、有稀疏段也有爆發。",
-  "keyTracks": [
-   "Mouvement (– vor der Erstarrung)",
-   "„…zwei Gefühle…“, Musik mit Leonardo",
-   "Consolation I"
-  ],
-  "status": "full",
-  "coverage": "full",
-  "notes": "moodGuess 存疑：（1）卡單與 curatorRisk 寫「演奏者 Klangforum Wien（Consolation 為 ensemble aisthesis）」，查證：Consolation 是 Ensemble Aisthesis 加 Schola Heidelberg 合唱，另有朗讀者與合唱兩種人聲曲目，全碟約 4 首中有 2 首是人聲（合唱 14 分鐘＋朗讀 23 分鐘＋器樂 22 分鐘），並非全是刮擦噪音；（2）Mouvement 開頭是稀疏點描加靜默，與「持續密集刮擦」不符，聲音在稀疏與爆發間起伏。建議主線視為躁輕冷邊緣、可能偏中。身分核對：MB 276fc6db…，Kairos 0012202KAI，2001（MB）；Gramophone 評為 12/2001，Falter 提 2002 再版，錄音 1995–2000，Wikipedia 稱 Kairos 錄音為 1998。年份取 2001 為首發。性質：棚錄／錄音室作品集，非精選非現場（未見現場標示）。古典卡的人：作曲家 Lachenmann 與演奏者 Klangforum Wien／Zender、Aisthesis／Schola Heidelberg／Nussbaum 皆已交代。",
-  "yearVerified": {
-   "year": 2001,
-   "recorded": "1995-2000",
-   "note": "Kairos 0012202KAI，MB 首發 2001；Gramophone 2001 年 12 月評；錄音年份依目錄為 1995–2000，Wikipedia 稱 1998"
-  }
- },
- {
-  "key": "desc2:Mari Poll|Berio / Schnittke / Boulez: Solo Violin Works",
-  "artist": "Mari Poll",
-  "album": "Berio / Schnittke / Boulez: Solo Violin Works",
-  "facts": [
-   {
-    "f": "這張《Solo Violin Works》是 EMI Classics「EMI Digital Debut」系列的數位專輯，MB 載 2012 年 2 月 20 日首發，格式為數位媒體，無實體 CD 目錄號；三首：Berio《Sequenza VIII》（約 14 分 44 秒）、Schnittke《A Paganini》（約 13 分 6 秒）、Boulez《Anthèmes》（約 9 分 15 秒）。",
-    "src": "https://musicbrainz.org/release-group/b86473ef-e3c4-4a5a-b1fd-44dce1884589"
-   },
-   {
-    "f": "Mari Poll 是愛沙尼亞小提琴家，1987 年生，曾就讀 Tallinn Music High School、英國 Chetham's School of Music，2006 至 2010 年在倫敦皇家音樂學院（RCM）拿學士，之後讀演奏碩士；老師包括 Jan Repko、Radu Blidar。",
-    "src": "https://queenelisabethcompetition.be/en/candidates/mari-poll/1597"
-   },
-   {
-    "f": "她 2012 年參加伊莉莎白王后國際音樂大賽（Queen Elisabeth Competition），5 月 1 日在 Flagey 的首輪獨奏會曲目含 Bach、Paganini 與 Schumann，鋼琴伴奏 Thomas Hoppe。",
-    "src": "https://queenelisabethcompetition.be/en/candidates/mari-poll/1597"
-   },
-   {
-    "f": "她另拿過 Vibrarte 國際小提琴大賽第三名、Derek Butler London Prize 第一名等，並在 2012 年以 EMI Digital Debut 系列推出錄音首作；2012 年也與塔林室內樂團演出 Ligeti 小提琴協奏曲。",
-    "src": "https://citymusicfoundation.org/our-artists/mari-poll/"
-   },
-   {
-    "f": "Berio 1925 年 10 月 24 日生於義大利 Oneglia，2003 年 5 月 27 日在羅馬過世；他的 14 首《Sequenza》是為獨奏樂器而寫的炫技系列，第一首長笛作於 1958 年，最後一首大提琴作於 2002 年，《Sequenza VIII》為小提琴，作於 1976 年。",
-    "src": "https://en.wikipedia.org/wiki/Luciano_Berio"
-   },
-   {
-    "f": "MusicWeb 樂評談另一位小提琴家 Diego Tosi 的同類曲目編排時說，Berio 的《Sequenza VIII》「從 Bartók 停下的地方出發」，且是廣有錄音的名作；同篇稱 Boulez《Anthèmes》「出乎意料地好聽」，作曲嚴格結構。",
-    "src": "https://musicweb-international.com/classrev/2007/May07/Sequenza_Solstice_socd225.htm"
-   },
-   {
-    "f": "Boulez《Anthèmes I》為 1991 年耶胡迪·曼紐因小提琴大賽委託的獨奏小提琴作品，約 9 分鐘，獻給 Universal Edition 的主持人 Alfred Schlee 九十大壽；構思取自他童年聽到的聖週耶利米哀歌，長而靜止的和聲音代表希伯來字母，較激動的分節段落代表拉丁詩節；七個段落，以七音動機與 D 音顫音開頭。",
-    "src": "https://en.wikipedia.org/wiki/Anth%C3%A8mes"
-   },
-   {
-    "f": "Schnittke（1934 年生於俄羅斯 Engels，1998 年於漢堡過世）以「多風格並置」技法聞名，把各種過去與當代風格並置組合；《A Paganini》作於 1982 年，是向 Paganini 致敬的獨奏小提琴曲，常與 Milstein 的《Paganiniana》並列錄音。",
-    "src": "https://en.wikipedia.org/wiki/Alfred_Schnittke"
-   }
-  ],
-  "hookCandidates": [
-   "一位愛沙尼亞小提琴家的錄音首作，是只有數位版的 EMI 專輯",
-   "Boulez 的獨奏小提琴曲，靈感來自童年聽的聖週耶利米哀歌"
-  ],
-  "sound": "三首無伴奏獨奏小提琴；Berio 與 Schnittke 的炫技雙音與急促段落（來源無逐項音響描述），Boulez《Anthèmes》有長而靜止的和聲音與較激動的分節段落交替；未取得這個版本的樂評或錄音細節，因此音響一欄只能依作品特徵說明。",
-  "keyTracks": [
-   "Sequenza VIII",
-   "À Paganini",
-   "Anthemes"
-  ],
-  "status": "thin",
-  "coverage": "thin",
-  "notes": "moodGuess 無法驗證：查無 Mari Poll 這張唱片的樂評、錄音地點與日期（EMI Digital Debut 為數位專輯，無實體版目錄號）；Boulez《Anthèmes》以長而靜止的和聲音與激動段落交替，並非全程急促；Schnittke《A Paganini》的炫技與引句只由其標題與同系列錄音推知，不確定。建議主線把此卡視為「作品特徵推論」，若要確保情緒評分可信可考慮汰換。身分核對：MB b86473ef…，2012-02-20，數位媒體，EMI（MB 掛 Berio, Schnittke, Boulez; Mari Poll）。性質：棚錄原創（非現場、非精選）未取得直接證據，但屬 EMI Digital Debut 新錄音系列的專輯。盤名「Solo Violin Works」與卡單相符。古典卡的人：三位作曲家與演奏者 Mari Poll 皆已交代。",
-  "yearVerified": {
-   "year": 2012,
-   "recorded": null,
-   "note": "MB 首發 2012-02-20（EMI Digital Debut 數位專輯）；錄音日期未查到"
-  }
- }
 ]

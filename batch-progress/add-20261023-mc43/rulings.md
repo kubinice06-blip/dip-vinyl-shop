@@ -76,3 +76,8 @@
 - 策展代理補 12 張（`supplement: round2`，每張附 `copyQuote` 證明緊繃密集；MB 釘住 8、§1 人工 4）。
 - 主線汰 7：同作品池中已有（mc32 先例）——Han Chen、Thomas Hell、Ullén Vol.2 三套 Ligeti 練習曲（池有 Aimard、Driver）、JACK《Lachenmann: Complete String Quartets》（池有 Arditti 同三首）、Takahashi《Xenakis: Works for Piano》（池有 Thomopoulos 全集）；Takahashi《Xenakis: Works With Piano》（《Eonta》五支銅管，y −0.2 貼邊）；Arditti《Carter: Quintets and Voices》（兩首人聲作品，鋼琴五重奏與既有 Carter 盤重疊）。
 - 收 5 張進卡單（c 組追加 3、e 組追加 2），卡單共 37 張；人工身分 3 張（Mode《Lachenmann: …zwei Gefühle… and Solo Works》、Huebner《Reynolds: Piano Etudes》、Veale《Mahnkopf: Music for Oboe》）。派兩支補研究 append 進 c、e 研究稿。
+
+## 補研究（e 組追加）
+- 21528　補研究（Huebner《Reynolds: Piano Etudes》）thin、moodGuess 部分存疑：Mode 廠牌頁與 Reynolds 官網樂曲說明（Thomas May）確認 mode 329、十二首、2021、作曲家監督首錄；卡單盤名多「, Books I & II」副標（Discogs 命名，同一張）。Barrage、Mercurial、Migration、Insistence 密集快速成立，但 Web 作曲家明言非常安靜，Concatenation 後半、Field、Rips 偏慢冥想，且作曲家刻意避免「臨床」感，冷／乾硬無來源；錄音地點（UCSD Prebys）僅搜尋片段，不進 facts。無獨立樂評。
+- 21529　補研究（Veale《Mahnkopf: Music for Oboe》）thin、moodGuess 部分存疑，列汰換候補：NEOS 11813、2018、Veale 雙簧管確認；末曲〈Hommage au hautbois〉有 ELISION 合奏（Ughetti 指揮），並非全是獨奏／二重奏。「硬、近乎殘暴、醜陋」只對 Pynchon 系列〈W.A.S.T.E. 2〉（雙簧管加磁帶）有作曲家自述支持；三首 Illuminations 是 mezza voce、踏板霧狀共鳴，Solitude-Nocturne 是「甜」的小雙簧管；無樂評、無錄音日期，非現場證據。
+- 21530　補研究 WebSearch 共 2 次（Huebner 1、Veale 1），皆不超過 3 次；Discogs 403、UB 網頁 Access Denied、MB API busy，改靠 Mode、NEOS、Reynolds 官網與維基。兩張皆錄音室專輯、無重複卡。
