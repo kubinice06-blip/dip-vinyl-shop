@@ -12,6 +12,16 @@
 - 掛名：Pi-Hsien Chen 照池中寫法「Pi-Hsien Chen 陳必先」。池中同人：Irvine Arditti（Cage Freeman Etudes 兩張 x 3.9–4.1 落冷冽）、Miranda Cuckson（x 3.4 落冷冽）、Herbert Henck（Ives x 3.0 落暴躁、Piano Music 1.8 落平靜——**鋼琴獨奏 x 風險最大**；池中 Pollini Schoenberg 2.2、Ferneyhough 鋼琴全集 2.7、Boulez《Structures》2.7）。
 - 交研究層把關：鋼琴 x（Stockhausen Klavierstücke 三張的留白段、Carter 1946 奏鳴曲）、大提琴／長號 y（Kooistra、de Saram、Globokar 估 0–0.4）、混入調性或慢曲（Derome Stravinsky Elegy、Kufferath Kurtág、Spina Sciarrino 極弱、Castro Magas Bryn Harrison、Robert Dick Syrinx）、現場／廣播錄音（Woodward 2014 Barraqué、de Saram 肖像盤）、年份（Chojnacka《Clavecin 2000》1971?、Wambach 1987 LP、Derome 1996）、盤名（Kawai Dillon I–V vs 1–4）、Hae-Sun Kang《Electron Libre》與池中 DG 版是否同錄音。
 
+## 研究 a 組（條號 22201–22210）
+- 22201 Henck《Barraqué: Sonate pour piano》：身分無誤（ECM 1621，1999）；錄音 1996-07 法蘭克福 Festeburgkirche，錄音室製作非現場。Lent 27:07 佔 58%，快樂章 19:16，**moodGuess 存疑（輕度）**：過半時間是 Lent 樂章，逐段力度查不到，建議聽慢樂章再定 x。
+- 22202 Henck《Stockhausen: Klavierstücke I-XI》：**年份改 1986**（原版 Wergo 雙 LP，WDR 科隆 1985-12／1986-04 錄音；卡單 1996 是 CD 再版）。IX（約 11 分鐘反覆和弦）與 V 夜曲式合約 15% 偏靜態，VI、X 各約 25 分鐘；樂評單一來源稱鋼琴聲偏遠。moodGuess 輕度存疑（x 3.4 貼邊）。
+- 22203 Helffer《Boulez: Trois sonates》：身分無誤（Astrée AS 60，1981）；錄音 1980-07 Vevey 劇院。第一號慢而無脈動、第二號 Lent 與安靜尾聲，仍以緊繃為主，moodGuess 大致成立。
+- 22204 Biret《Boulez: Piano Sonatas 1-3》：身分無誤（Naxos 1995）；1995-01/02 Radio France Studio 106 錄音室。樂評稱觸鍵硬冷、收音近而偏臨床，moodGuess 成立。Discogs 註記此版標示的第 2、6 軌時間錯，用 MB 時長。
+- 22205 陳必先《Boulez: Notations & Piano Sonatas》：身分無誤（hat[now]ART 162，2005）；Notations 錄於 1997（Telos 前身再授權），奏鳴曲 2002／2004 HR Sendesaal 合製錄音，非公開音樂會。Notations 多為極短快曲，moodGuess 成立。
+- 22206 Corver《Stockhausen: Klavierstücke I-XIV》：三片裝約 197 分鐘，1997–98 錄音、作曲家本人監製。**moodGuess 存疑**：XII（約 22 分鐘『有顏色的靜默』與哼唱）、XIII（約 36 分鐘逼近靜默）合約 29% 為稀疏材料；『Lautsprecher Test』（第一片第 10 軌，11:27）內容查無來源，facts 只寫標題與時長。curatorRisk『XII–XIV 鋼琴家兼出聲』僅 XII 得證。
+- 22207 Choi《Carter: Piano Works》：身分無誤（ED 13164，2003）；2002-09 France Bleu Orléans 錄音。**推翻 curatorRisk**：Piano Sonata 實佔 25:04／60:47 約 41%（非約四分之一）；Gramophone 稱奏鳴曲含抒情段落，Night Fantasies 約 34% 『開頭安靜如夜晚』。**moodGuess 明顯存疑**：x 可能 2.8–3.3，建議評分後 x<3.0 即汰換。
+- 22208 通則：樂評引述多來自搜尋摘要（Gramophone／ClassicsToday 頁面被擋），寫作層需寫『據樂評』；七張皆為錄音室製作，無現場或廣播音樂會；音色尖細或厚重除 Biret（硬冷近）外查無明述，不寫。
+
 ## 研究 c 組（條號 22221–22230）
 - 22221 Derome《Solo》：年份採 1996（ATMA 原版，MB 2006 為法國再版）；教堂錄音（Saint-Augustin-de-Mirabel），非乾錄；〈Sequenza VIII〉17:12 比多數版本慢近 5 分鐘、〈Élégie〉4:46 調性（約 10%）。moodGuess 存疑（y、z）。
 - 22222 Pace《Tracts》：身分無誤，2001 首發（1997 Tilburg 棚錄）；Barrett〈Tract〉31:07 約佔 40%，無力度描述；其餘三首聲音無可靠描述。moodGuess 輕度存疑。
