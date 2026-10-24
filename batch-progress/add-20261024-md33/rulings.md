@@ -33,3 +33,9 @@
 - 22152：**moodGuess 存疑兩張強（建議汰換）**：Main《Firmament》（Trouser Press 稱仍在歌曲形式內、有 23 Skidoo 式打擊樂段、『Abrasive』，與 TiVo 傳記『drumless、cold』矛盾，x 風險）、E.A.R.《Data Rape》（實為電路彎折 Speak & Spell 語音玩具拼貼，無吉他，結巴機器聲＋延遲，策展層『電子 drone 與回授』不符，x／y／z 皆無證據）。
 - 22153：moodGuess 存疑兩張弱：Aidan Baker《Tense Surfaces》（署名含鋼琴、原聲吉他、貝斯、人聲，標籤有 slowcore／psych／electronica，判輕或暖風險）、thisquietarmy《Phantom Limbs》（Textura：後段有顫音、刺耳爆發與嚎叫般音團，x 風險）。《Pure Drone》z 無任何色溫來源（thin）；《Exorcisms》主體無鼓，唯數位加料曲〈The Black Sea〉有慢鼓，卡面不涉。
 - 22154：Pure Drone、Tense Surfaces 查無樂評，status thin，聲音句只寫器材與標籤可證的層次。At the Base 的唯一樂評為 Bandcamp 轉載 rikm 短評，寫作層勿當權威。Phantom Limbs 曲長以 Discogs／Bandcamp 曲目表為準（Textura 把 Voltage／Pain 兩首互換）。Data Rape 部分網頁寫 2000 年，以 Discogs／MB 的 1998 為準；八首無標題，keyTracks 留空。
+
+## 研究 e 組
+- 22161：身分七張全數核對通過（MB／Discogs／Bandcamp 對得上盤名、年份、廠牌），無推翻策展層。Final《It Comes to Us All》MB 首發日 2022-05-20、Discogs LP 2022-07-14，屬數位與黑膠差異，不衝突。
+- 22162：moodGuess 存疑強：Erik K Skodvin《Flare》實為未處理的鋼琴／大提琴／小提琴室內樂＋空房間錄音（Bandcamp 明寫放棄電子處理），不是吉他 drone 與電子；十首共 36 分鐘、曲短，會判輕風險高。Deaf Center《Low Distance》Passive Aggressive 與 Fluid Radio 皆稱較前作溫暖、平易近人、童話感，鋼琴為主軸，會判輕或偏暖；建議主線降權或汰換（池中《Owl Splinters》y 0.6 先例）。
+- 22163：moodGuess 存疑中：Troum《Seeing-Ear Gods》實為 2001 年 KFJC 電台現場錄音、2006 年 200 張 CDr，一軌六段 60 分鐘，Troum 官方 Bandcamp 目錄未列，可能無試聽來源。Robert Hampson《Signaux》全電子、一整面高頻嗶聲，質地偏冷輕、不一定夠重；Final《It Comes to Us All》評論用 incinerating fuzz，高頻嘶聲偏刺耳，有判躁疑慮（弱到中）。
+- 22164：Final《The Apple》與 Troum《Autopoiesis》預估大致可信（無鼓、drone）；Autopoiesis 缺單張樂評，標 thin，聲音靠 Troum 整體風格與 Discogs 資料。Norman Records、Force Exposure 原頁此環境 403 或空白，內容取自搜尋摘要轉述，寫作層勿逐字引。WebSearch 共用 3 次。
