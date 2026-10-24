@@ -481,7 +481,12 @@
 
   // ── 掃描：輪子從 v0 轉到 v1，這段路上（其他兩軸在半徑內）的卡依序閃過去 ──
   const queue = []; let qTimer = 0;
-  function nearest() { const p = state.p; let best = 0, bd = Infinity; for (let i = 0; i < N; i++) { const c = CARDS[i]; const d = (c.px - p.x) ** 2 + (c.py - p.y) ** 2 + (c.pz - p.z) ** 2; if (d < bd) { bd = d; best = i; } } return CARDS[best]; }
+  // 只在滾筒顯示的那一格裡找最近的一張（2026-10-24 玩家回饋：滾筒停在沸騰，卻選到恍惚的盤）——
+  // 百分位空間的最近點常常落在門檻另一側；這格一張都沒有才放寬到全部
+  function targetCell() { const t = target(); return cellOf(t.x, t.y, t.z); }
+  function nearest() { const p = state.p, tc = targetCell(); let best = -1, bd = Infinity, any = 0, ad = Infinity;
+    for (let i = 0; i < N; i++) { const c = CARDS[i]; const d = (c.px - p.x) ** 2 + (c.py - p.y) ** 2 + (c.pz - p.z) ** 2; if (d < ad) { ad = d; any = i; } if (c.cell === tc && d < bd) { bd = d; best = i; } }
+    return CARDS[best >= 0 ? best : any]; }
   function sweep(axis, v0, v1) {
     if (v0 === v1) return; lastTurn = performance.now(); stopPreview(); armPreview(); sfxTurn(axis, v0, v1);
     const o = axis === 'x' ? ['py', 'pz'] : axis === 'y' ? ['px', 'pz'] : ['px', 'py']; const key = 'p' + axis;
@@ -498,12 +503,15 @@
   // FINE 一格：沿這條軸往 dir 方向，在附近（另兩軸半徑內，找不到就放寬）找下一張，位置停在那張上
   function stepCard(axis, dir) {
     cancelTravel();
-    const key = 'p' + axis, o = OTHER[axis], cur = state.p[axis], p = { px: state.p.x, py: state.p.y, pz: state.p.z };
+    const key = 'p' + axis, o = OTHER[axis], cur = state.p[axis], p = { px: state.p.x, py: state.p.y, pz: state.p.z }, raw = target();
     let best = null;
     for (const R of [5, 9, 15]) {
       const r2 = R * R; let bv = dir > 0 ? Infinity : -Infinity;
       for (let i = 0; i < N; i++) { const c = CARDS[i], v = c[key]; if (dir > 0 ? v <= cur + 1e-6 : v >= cur - 1e-6) continue;
-        if ((c[o[0]] - p[o[0]]) ** 2 + (c[o[1]] - p[o[1]]) ** 2 > r2) continue; if (dir > 0 ? v < bv : v > bv) { bv = v; best = c; } }
+        if ((c[o[0]] - p[o[0]]) ** 2 + (c[o[1]] - p[o[1]]) ** 2 > r2) continue;
+        // 停在這張時滾筒的格子＝這一軸取這張的值、另兩軸維持原位；對不上的跳過，免得選到跟滾筒不同格的盤
+        const tv = { x: raw.x, y: raw.y, z: raw.z, [axis]: c[axis] }; if (cellOf(tv.x, tv.y, tv.z) !== c.cell) continue;
+        if (dir > 0 ? v < bv : v > bv) { bv = v; best = c; } }
       if (best) break;
     }
     if (!best) { sfxClick(); return null; }   // 到底了
@@ -608,7 +616,7 @@
   // ── 試聽：停下來 0.7 秒就播站上的固定試聽（電台式硬切，不淡入淡出；轉動就停） ──
   let playing = null;
   function stopPreview() { clearTimeout(idleTimer); if (!playing) return; playing = null; try { cfg.player?.stop?.(); } catch (_) {} setNowPlaying(false); }
-  function armPreview() { clearTimeout(idleTimer); idleTimer = setTimeout(() => { if (previewCard) settleCover(previewCard); if (state.audioOn) playPreview(); }, 700); }
+  function armPreview() { clearTimeout(idleTimer); idleTimer = setTimeout(() => { if (previewCard && previewCard.cell !== targetCell()) { const c = nearest(); if (c !== previewCard) { scan(c); return; } } if (previewCard) settleCover(previewCard); if (state.audioOn) playPreview(); }, 700); }
   function playPreview() {
     const c = previewCard; if (!c || !state.audioOn || !cfg.player) return;
     const card = c.card;
@@ -665,9 +673,10 @@
   // ── 抽卡：同頻率再來一張（高斯加權隨機，看過 200 張內不重複；稀有度由呼叫端的結果頁處理） ──
   function weightedPick() {
     const t = target(); const [sx, sy, sz] = SIGMA; const seen = new Set(state.seen); const ws = new Float64Array(N); let g = 0, n = 0;
-    for (let i = 0; i < N; i++) { const c = CARDS[i]; if (seen.has(i)) continue; const d2 = ((c.x - t.x) / sx) ** 2 + ((c.y - t.y) / sy) ** 2 + ((c.z - t.z) / sz) ** 2; ws[i] = Math.exp(-d2 / 2); g += ws[i]; n++; }
+    const tc = cellOf(t.x, t.y, t.z); const only = CARDS.some((c, i) => c.cell === tc && !seen.has(i));   // 這格還有沒看過的才限定這格
+    for (let i = 0; i < N; i++) { const c = CARDS[i]; if (seen.has(i) || (only && c.cell !== tc)) continue; const d2 = ((c.x - t.x) / sx) ** 2 + ((c.y - t.y) / sy) ** 2 + ((c.z - t.z) / sz) ** 2; ws[i] = Math.exp(-d2 / 2); g += ws[i]; n++; }
     const fl = n ? FLOOR * g / n / (1 - FLOOR) : 0; let sum = 0;
-    for (let i = 0; i < N; i++) { if (seen.has(i)) continue; ws[i] += fl; sum += ws[i]; }
+    for (let i = 0; i < N; i++) { if (seen.has(i) || (only && CARDS[i].cell !== tc)) continue; ws[i] += fl; sum += ws[i]; }
     if (sum <= 0) return null; let u = Math.random() * sum; for (let i = 0; i < N; i++) { u -= ws[i]; if (u <= 0) return CARDS[i]; } return CARDS[N - 1];
   }
   function emit(c) {
@@ -721,7 +730,7 @@
     el.spk.onclick = () => { setAudio(!state.audioOn, true); };
     el.mode.onclick = () => { state.fine = !state.fine; setModeUI(true); sfxClick(); };
     el.now.onclick = () => { if (previewCard) emit(previewCard); };
-    el.draw.onclick = () => { if (previewCard) emit(previewCard); };
+    el.draw.onclick = () => { if (!previewCard) return; if (previewCard.cell !== targetCell()) scan(nearest()); emit(previewCard); };
     setAudioUI(); setModeUI();
     let data;
     try { data = await loadData(); } catch (e) { el.msg.textContent = e.message || '載入失敗'; return; }
@@ -747,7 +756,9 @@
   async function start() {
     state.visible = true;
     syncAudioFromPref();
-    if (!state.built) await build();
+    // 建不起來時把原因寫在畫面上（2026-10-24 店主：加到主畫面的 App 點進來一片空白，現場看不到錯誤）
+    if (!state.built) { try { await build(); } catch (e) { console.error('[tune]', e); const host = cfg.host?.(), msg = host?.querySelector('#tuneMsg'), text = '頻率光譜載入失敗：' + (e?.message || e);
+      if (msg) { msg.hidden = false; msg.textContent = text; } else if (host) host.innerHTML = `<p style="margin:0;padding:24px;min-height:50vh;background:#0b0c10;color:#e9e2c8">${esc(text)}</p>`; } }
     else { setAudioUI(); el.draw.disabled = false; if (previewCard) armPreview(); }
   }
   function stop() { state.visible = false; cancelTravel(); stopPreview(); sfxStop(); }
