@@ -5,7 +5,7 @@
    "id": "jv",
    "zh": "JA roots 人聲慢盤第二波：二線歌手與和聲團（Tubby／Jammy／Scientist／Peter Chemist／Soldgie／Channel One 混音）",
    "why": "主場景：大名多已在池或池中同人判輕，挖二線；只收 Discogs credit 明寫濕混音者的",
-   "count": 10
+   "count": 11
   },
   {
    "id": "uk",
@@ -601,7 +601,44 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "Discogs 無混音者署名（Pablo 製作慣例在 Tubby's 混，但無 credit）——不符濕混音篩子的硬證據，列汰換候補"
+  },
+  {
+   "artist": "Congo Ashanti Roy",
+   "album": "Sign of the Star",
+   "year": 1981,
+   "label": "PRE",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "The Congos 的 Roydel Johnson 個人唯一專輯，Prince Far I 製作、Channel One 錄音，Discogs credit 明寫 Mixed By Lancelot \"Maxie\" McKenzie（Tubby's／Channel One 工程師）；nyabinghi 手鼓與 Headley Bennett 管樂，Congos 和聲傳統的慢 roots",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "Channel One 錄、Maxie 混，低頻厚，假音暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/599ad169-7195-4fbc-bdf8-2976b693af69",
+    "https://www.discogs.com/master/396926",
+    "https://www.discogs.com/release/1580550",
+    "https://coverartarchive.org/release-group/599ad169-7195-4fbc-bdf8-2976b693af69/front"
+   ],
+   "mbRgMbid": "599ad169-7195-4fbc-bdf8-2976b693af69",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 The Congos 後期《Congo Ashanti》《Image of Africa》y 0.5–0.6（乾淨製作），本張為 Prince Far I 製作、時期與混音者不同；MB 標 1980，Discogs 原版 1981"
   }
  ],
- "notes": []
+ "notes": [
+  "策展 19 張（目標 54，照實交、不湊數）：主場景 13（jv 11、uk 2）、擴寫 6（sc：人聲接 dub 的 showcase／discomix）；純器樂暖 dub 0 張——池中 Pablo 旋律口風琴 dub z 0.1–0.4、Scientist／Shaka／Yabby You dub z 全負，擴寫 dub 落格風險高，未提。",
+  "篩子：每張 why 都寫 Discogs credit 依據（Tubby／Jammy／Scientist／Peter Chemist／Soldgie／Mad Professor／Channel One 工程師 Crucial Bunny、Maxie McKenzie、Ernest Hookim）。例外：Ricky Grant《I Love Jah Rastafari》無混音者署名（Pablo 製作），列汰換候補。",
+  "主場景大名被規則 4（池中同人 y<0.8 或 z<0.3）擋掉：Gladiators（池中 y 0.3／0.5）、Johnny Clarke（0.5）、Max Romeo（Reconstruction 0.0、Revelation Time 0.8 貼邊）、Ras Michael（0.1／0.8）、Mighty Diamonds（0.4／-0.3／0.5／0.8）、Black Uhuru《Love Crisis》（池中同團 z 全負，且 Aggrovators 伴奏）、Ijahman、Freddie McGregor（0.6）、Bob Andy、Matumbi、Congos 後期、Junior Byles。Twinkle Brothers 只收 1982–83 英國自製＋Mad Professor 混音的兩張，與池中 1980《Countrymen》（y 0.6）時期不同，標 uncertain。",
+  "去重擋掉（池中已有或改名重發）：Earth & Stone《Kool Roots》（池中已有）、Michael Prophet 同名 1981 Greensleeves 盤（＝池中《Gunman》同曲目）、Noel Phillips《Youth Man》（＝池中《Youth Man Vibrations》）、Don Carlos《Ghetto Living》（Discogs 標 Compilation，選自本批 Never Run Away＋Plantation）、Linval Thompson《Six Babylon》（ml32 已汰：Clocktower 彙整重混）、Rod Taylor《Lonely Girl》（Compilation）。",
+  "篩子擋掉：Carlton Livingston《Trodding Through the Jungle》（Sly Syndrum 電子鼓）、Sugar Minott《With Lots of Extra》（Niney 製作）、Pat Kelly《One Man Stand》與 George Faith《Soulfull》（Bunny Lee 製作）、Cultural Roots《Drift Away From Evil》（Revolutionaries）、Mighty Diamonds《Leaders of Black Countries Showcase》（Blackbeard 混、1983 Taxi 期）、Royal Rasses《Humanity》《Experience》（只有 Sylvan Morris 混音）、Earl Zero《Only Jah Can Ease the Pressure》、Knowledge《Hail Dread》、Fred Locks《Love and Only Love》、Wayne Wade《Fire Fire》（無混音者署名）、Jah Lloyd《Black Moses》（toasting）、Norman Grant & Jah Shaka《The Right Way》（Shaka steppers z 恐冷）、Peter Culture《Facing the Fight》（MB 標 EP）、UK lovers（Sandra Reid、Rosemarie Walters）。",
+  "§1 人工身分 4 張：Rod Taylor《Where Is Your Love Mankind》、Bim Sherman《Lovers Leap Showcase》、Triston Palma《Settle Down Girl》《Fancyness》。MB 年份晚於原版而以 Discogs 原版年為準：Bim Sherman《In A Rub-A-Dub Style》、Delroy Williams《I Stand Black》、Don Carlos & Gold《Plantation》、Congo Ashanti Roy《Sign of the Star》。"
+ ]
 }
