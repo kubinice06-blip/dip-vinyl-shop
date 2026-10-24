@@ -46,3 +46,20 @@
 - 21824｜藍調／借曲：Mohawk 兩首借曲（Parker〈Mohawk〉、標準曲〈Everything Happens to Me〉）；Sound of Feelings 借 Coltrane〈Welcome〉；Rudd〈Everywhere〉為 Bill Harris 曲；其餘全原創、無藍調曲名。
 - 21825｜moodGuess 存疑（交主線複核）：Rumasuma（漏鋼琴、雙貝斯，y 可能大於 0.0，不一定過輕邊距）；Acting Trio（無鼓，查不到樂評，躁度最可能高估）；Sound of Feelings（三人兼長笛／鈴、含 Coltrane 慢曲式借曲，可能更偏色彩）；Rudd（鼓與雙貝斯密、Dixieland 出身長號偏暖）；Colbeck（無任何文字來源描述聲音，需聽過定）；Mohawk（Toop「bleary、daydream」，z 可能較不冷）。
 - 21826｜策展層說法未能驗證：Colbeck「Noah Howard ESP 盤的小號手」「唯一領銜作」無來源，facts 不寫；Colbeck 與 Acting Trio 為 thin。NYAQ 策展層「含標準曲一首」實為兩首借曲。
+
+## 研究 b 組
+- 21811｜b 組八張全是錄音室盤（Discogs／維基均無現場標註；Staying on the Watch 錄 1966-08-30、Music From the Spheres 與 From Now On 皆 1966-12、Hampel 1966-12-21 巴恩、Skillfullness 1968-11 紐約、BYG 三張 1969-06/07/08 Studio Saravah）。編制：全無電聲、單鼓（Aquariana 雙貝斯）；tenor 僅 Music From the Spheres 第四首（Bert Wilson）與 Hampel 的 Breuker（多管，含 tenor）出現，無一為火力主導。
+- 21812｜藍調／借曲：只有 Way Head 的〈Paper〉是 Bill Dixon 作品（借曲）；Scorpio 全自作但 Jones 音色有藍調語彙；〈Dolphy's Days〉〈Heroicredolphysiognomystery〉為致意曲非借曲；〈From 'Out Of Bartok'〉是否引 Bartók 旋律未查到，標 uncertain。其餘無藍調或標準曲。
+- 21813｜moodGuess 存疑（交主線複核，建議降級或汰換）：Scorpio（AllMusic 稱 warm，冷度與躁度存疑，最有可能被汰換）；Skilfullness（偏克制、有結構，躁恐僅約 3.0）；Aquariana（七人、雙貝斯、長笛與 shenai，y 0.0 貼邊恐不過邊距）；Music From the Spheres（調式旋律、〈Balladia〉偏慢，躁度恐低於 3.6）；Way Head（AllMusic 稱克制，躁度或 3.0–3.3）。From Now On（x 3.4 貼邊，節奏組偏旋律型）、Staying on the Watch（y 0.0 貼邊）不動但建議實聽。
+- 21814｜推翻策展層：(1) Aquariana 的『預置鋼琴與琴弦刮奏』未證實，facts 不寫；(2) Hampel『ESP 唯一的歐洲自由爵士盤』未能查證，寫作層勿寫『唯一』；(3) Simmons『中東調式碎片』（Staying）無來源，不寫。盤名／年份／廠牌皆未推翻；Hampel 年份 Discogs 1967、ESP 官方目錄與 Tower 摘要有 1968，維持 1967，建議對外寫『1966 年底錄於荷蘭』。
+- 21815｜thin：From Now On、Skilfullness、Aquariana（找不到逐曲樂評，AllMusic 403、ESP Bandcamp 404）；聲音描述屬編制推斷。Skilfullness 打擊樂手名單 Discogs（Cook）與維基（Cooke／Altschul／Pavone）不一致，facts 並陳，寫作層勿寫具體鼓手。Gunter Hampel 2026-05-18 逝世（維基），僅單一源。WebSearch 共用掉 3 次。
+
+## 主線研究後汰換（不佔條號；2026-10-24）
+- 判準照 mc31／mc38–mc42 先例：研究稿引到**慢段／抒情／克制留白**（判靜）、**暖、民謠、詼諧 swing、藍調吼叫**（判暖）、**借曲／標準曲**、**大編制雙貝斯或鋼琴＋雙貝斯＋鼓的厚密節奏組**（判重）的汰；只是「無樂評、由編制推斷」的 thin 卡留。
+- **汰 13 張**（存 `dropped-cards.json`／`dropped-research.json`，清單 `drop-research.json`）：
+  - 判靜：Marion Brown《Why Not》（慢段約半：〈Fortunato〉哀婉、〈La Sorrela〉飄浮）、Charles Tyler Ensemble（樂評反覆 quiet、spiritual、室內）、Alan Silva《Skilfullness》（克制、概念性，x 估 3.0）、Sonny Simmons《Music From the Spheres》（調式旋律＋12 分鐘〈Balladia〉）。
+  - 判暖：Noah Howard Quartet（樂評「溫柔民謠暖意」）、Arthur Jones《Scorpio》（AllMusic warm、深沉藍調式吼叫、13 分鐘抒情〈Sad Eyes〉）、Bennink & Breuker《New Acoustic Swing Duo》（詼諧、swing、送葬行進）、Gumpert–Sommer＋Hering《The Old Song》（德語民謠曲名、玩笑感碎片）。
+  - 借曲：NYAQ《Mohawk》（Parker〈Mohawk〉＋〈Everything Happens to Me〉、Toop 稱 bleary／daydream）、Joachim Kühn《Sound of Feelings》（Coltrane〈Welcome〉、長笛與鈴的色彩型）、Roswell Rudd《Everywhere》（Bill Harris 同名曲、雙貝斯密集、Dixieland 長號味）。
+  - 判重：Sonny Simmons《Rumasuma》（鋼琴＋左右雙貝斯＋Higgins，策展漏列鋼琴）、Burton Greene《Aquariana》（七人、雙貝斯、長笛＋shenai）。
+- 更正：Pierre Favre Trio《Santana》年份 1979 → **1969**（1968-10-08 蘇黎世錄音、1969 瑞士 Pip PIP 1 首發；1979 是 FMP 再版，研究 e 21844）。Lowell Davidson 卡面維持 1965（ESP 官方目錄＋Discogs；MB 1969 為 Billboard 代理報導），正文只寫錄音年。Eje Thelin／Favre／Minor：Jouk Minor 樂器為 baritone＋sopranino（研究 d）。
+- 定案 **23 張**（a 6、b 4、c 4、d 6、e 3）。留下的 thin 7 張全是「無樂評、只能由編制推」，沒有反證；貼邊的 Berger《From Now On》（x 3.4）、Simmons《Staying on the Watch》（y 0.0）、Coursil《Way Head》（AllMusic 稱克制）、Gräwe《Pink Pong》（y 0.0）留給評分驗收。
