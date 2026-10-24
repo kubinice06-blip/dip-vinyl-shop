@@ -1372,22 +1372,22 @@
   {
    "id": "classical",
    "zh": "古典",
-   "count": 1439,
+   "count": 1470,
    "children": [
     {
      "id": "contemporary",
      "zh": "當代與極簡",
-     "count": 647,
+     "count": 676,
      "children": [
       {
        "id": "avant",
        "zh": "前衛與現代",
-       "count": 221
+       "count": 234
       },
       {
        "id": "neoclassical",
        "zh": "新古典 / 氛圍鋼琴",
-       "count": 103
+       "count": 107
       },
       {
        "id": "film-score",
@@ -1410,7 +1410,7 @@
     {
      "id": "modern",
      "zh": "20 世紀",
-     "count": 217,
+     "count": 220,
      "children": []
     },
     {
@@ -1422,7 +1422,7 @@
     {
      "id": "baroque",
      "zh": "巴洛克與早期",
-     "count": 114,
+     "count": 115,
      "children": []
     },
     {
@@ -1898,22 +1898,27 @@
   {
    "id": "world",
    "zh": "世界",
-   "count": 1156,
+   "count": 1169,
    "children": [
     {
      "id": "reggae",
      "zh": "Reggae / Dub",
-     "count": 501,
+     "count": 514,
      "children": [
       {
        "id": "roots",
        "zh": "Roots Reggae",
-       "count": 261
+       "count": 273
       },
       {
        "id": "dub",
        "zh": "Dub",
-       "count": 249
+       "count": 260
+      },
+      {
+       "id": "dancehall",
+       "zh": "Dancehall / Ragga",
+       "count": 91
       },
       {
        "id": "lovers",
@@ -1921,14 +1926,9 @@
        "count": 90
       },
       {
-       "id": "dancehall",
-       "zh": "Dancehall / Ragga",
-       "count": 85
-      },
-      {
        "id": "ska",
        "zh": "Ska / Rocksteady",
-       "count": 84
+       "count": 87
       }
      ]
     },
