@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜邊界卡重判二：8,753 張單軸卡門檻邊的卡，320 張換格
+
+- **改動**：店主「把這些分布在邊界的專輯掃描盤點一下看還有什麼標錯了」。`batch-progress/mood-axes/edge-rejudge-2/` 選從沒改判過、只有一軸卡門檻邊的 8,753 張，切 22 份由代理逐張選邊，320 張換格寫進 `overrides.json`（why 標「2026-10-23 邊界卡重判二」）。主要是冷翻暖（大副歌搖滾／華語 J-rock）、躁翻靜（溫和律動，比照 Paseo）、平靜→放鬆。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/edge-rejudge-2/*`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：22 份 done 到齊、bad 0；`build-card-moods.mjs` 錨點 104/104 同格。
+
 ### 2026-10-24｜dip-vinyl-shop｜Gonzalo Rubalcaba《Paseo》雀躍→放鬆
 
 - **改動**：店主指定。(3.3, −0.6, 0.6) → (2.6, −0.6, 0.6)。
