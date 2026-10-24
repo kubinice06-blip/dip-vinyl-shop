@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 14 輪 mc44／md32：ESP／BYG 自由爵士二線 23 張、drone 第二波 28 張上線，落格 19/23、25/28
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 14 輪，本工作階段負責 mc44、md32（評分照 10-23 體感標準）。mc44（`add-20261024-mc44`，冷冽）：ESP 的 Giuseppi Logan、Byron Allen、NYAQ、Lowell Davidson、Henry Grimes《The Call》、Marion Brown Quartet、Karl Berger、Gunter Hampel、Sonny Simmons、Free Music Quintet；BYG 的 Coursil《Way Ahead》、Acting Trio；Rolf + Joachim Kühn、Ric Colbeck；歐陸 FMP／Calig 擴寫（Voerkel/Frey/Lovens、Christmann–Schönenberg、Fuchs《Momente》、Gräwe、Thelin/Favre/Minor、Kühn《Solos》、Petrowsky、沖至／Pilz／Hübner、Favre《Santana》）。md32（`add-20261024-md32`，頹靡）：Niblock ×3、OPO、Radigue、Vainio《Onko》、Room40（Amini、Hahn）、Pjusk、Retribution Body、Collins、Kassel Jaeger、KTL、Archetti、Drumm《Trouble》、Mohammad、Amphior、Kallal、NWW《Deadlined》、Deathprod、Slomo ×2、Levander、chra、Haynes、Altar Of Flies、Aidan Baker、Machinefabriek。
+- **策展→研究汰換**：mc44 策展兩輪 36、研究汰 13（慢段／暖／借曲／厚編制）→ 23；md32 策展兩輪 71、主線汰 15、研究汰 28（脈衝、噪音爆發、暖／旋律／人聲、<30 分）→ 28。兩個主場景見底，不再派。
+- **評分**：mc44 落冷冽 19/23（83%；出格 4 張四人以上全力合奏判重落暴躁）；md32 落頹靡 25/28（89%；Vainio、Radigue 判輕落平靜，NWW 判躁）。八格：冷冽 1,539、頹靡 1,566、恍惚 1,630。
+- **主線修正**：Favre《Santana》年份 1979→1969；NWW 廠牌 United Dairies；seed 曲風欄 Last.fm 錯標 5 張手改（Slomo 被標 hiphop）；子曲風空白 12 張補進 `genre-l3-artist-map.json`；Discogs 封面 11 張登錄 registry 428–438。
+- **主要檔案**：`batch-progress/add-20261024-{mc44,md32}/`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261024-*`、`batch-progress/mood-axes/score-{mc44,md32}/`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*`、`data/discogs-cover-registry.json`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`、`data/mood/*`、`SCENES.md`、`HANDOFF-mood-cells-line.md`。
+- **驗證**：kv-token-check exit 0；card_catalog 23／23、28／28；wrangler bulk put Success；verify-wave-kv 23/23、28/28 逐字一致；prepare／published gate 0 error；build-scale anchorsSameCell 104/104。藝人介紹未切（45 個掛名列在兩批 rulings 末尾）。
+
 ### 2026-10-24｜dip-vinyl-shop｜情緒薄格線第 14 輪派工（補兩個）：優先序 70–73
 
 - **起因**：第 13 輪兩個工作階段收工（ml56 20／19、mc42 13／13、ml57 12／12、md30 28／28，上線／落格；ml57、md30 主場景見底），mc43／md31 仍在跑。恍惚 1,630、頹靡 1,541、冷冽 1,520。

@@ -133,3 +133,18 @@
 - **22023** 事實校正與禁區：OPO 照研究 b 與派工寫成錄音室錄音（2019–2020 Re-Set Studio 錄成，2017 Ostrava Days 只當起點），正文不出現「現場專輯」字樣；Collins〈Abattoir〉約 10 分鐘不寫成「最長」（〈Embracing Our Own Annihilation 2〉10:10 更長）；Vainio 的 Pan Sonic 不加時序副詞；Radigue 辭世、Vainio 辭世、Niblock 生卒皆未指派、不寫。媒體名、媒體榜單名次、「據說／據傳」全文 0。Retribution「不靠電腦」照 note 寫成事實陳述（非校對痕跡）。
 - **22024** 自掃（han() 4-gram，跨 out-1＋out-2 28 張）：初掃與途中拆掉 `分鐘上下`（對 w2 Pithovirii）、`年月將它`（Compositions）、`是兩人的／兩人的第`（The Bog）、`在年月日`（Deadlined）、`天地點是`（Trouble）、`交給發行`（Another Presence）、`的第二張`（The Bog，Collins 改「排第二的專輯」）、`質地幾乎`／`靜止年月`／`不動年月`（The Bog、Pithovirii；Toxic 日期前一字改「結」）、`這套雙`（Five 對 Archetti，Archetti 改寫）。定稿 2 張以上 0 條。
 - **22025** 腳本：`qa-batch out add-20261024-md32`（out-1 14 張 157–240、out-2 142–239、thin 全 ≤180、合計 28 ✓ 全部通過）、`qa-check-research` 標記 0、`fix-spacing` 待補 0。輔助腳本在 scratchpad `wr-md32-1/`（md32w1-desc.cjs 稿、md32w1-write.cjs 產檔、md32w1-scan.cjs 字數＋合掃）。
+
+## 主線審稿（22031–22033；2026-10-24）
+- **22031** 逐張審 28 張（全文印出逐句對研究稿），改 1 張 1 處，改後文字存 `desc-override.json`：`Mohammad|Som Sakrifis`「導演 Bela Tarr」→「匈牙利導演 Béla Tarr」（研究 d 原句「匈牙利導演 Bela Tarr」，補重音符）。
+- **22032** 事實抽核：OPO 寫成 Re-Set Studio 錄音室版（2017 Ostrava Days 只當起點，研究 b）、Radigue 1973 磁帶／1974-03-09 The Kitchen 首演／2011 Important、NWW 廠牌 United Dairies、Slomo《The Bog》成員 McGrail／Marsden、Cope 只在終曲朗詩、《The Creep》2004-11-20 Totley Loft，皆有研究稿出處。Collins〈Abattoir〉寫作層已避開「最長」（〈Embracing Our Own Annihilation 2〉更長）。
+- **22033** 媒體名、榜單名次、「據說／據傳」全批 0。
+
+## 上線與評分（2026-10-24，主線）（條號 22034–22037）
+- **22034**：上線 28 張：card_catalog 28／28、KV 28 鍵回讀逐字一致（stamp 20261024）、試聽 21 ready／7 unavailable（Radigue、Collins、Archetti、Mohammad、NWW、Slomo《The Bog》、Altar Of Flies 未上架；1–2 軌長曲盤 6 張與 chra 人工身分卡走 preview-override）、seed +28、prepare／published gate 0 error（29 warning 皆 UPC 盡力而為與 chra 人工身分）。封面 CAA 23、Discogs 5（Collins、Haynes、Slomo《The Bog》、Archetti CAA 無圖；chra 人工身分），縮圖表目視相符，登錄 `data/discogs-cover-registry.json`（434–438）。
+- **22035**：seed 曲風欄 Last.fm 標錯 5 張，主線手改：Slomo ×2 `hiphop,rock`（同名嘻哈藝人）→ `electronic`；OPO `[]` → `electronic`；Hahn `rock,electronic` → `electronic,rock`；Mohammad `classical` → `electronic,classical`。子曲風 worker 標 27、空 1＋主類錯 1 → Hahn、OPO、Mohammad（主類改 electronic 後失去節點）補進 `genre-l3-artist-map.json` 的 `electronic/ambient/drone`，重建後 28/28 有節點。
+- **22036**：頂點：rarity uncommon 26、epic 2，未觸及殿堂／遺珠／異端門檻，列一般卡。
+- **22037**：**落格率 25/28＝89%**（`batch-progress/mood-axes/score-md32/`，照 10-23 體感標準）。評分 x 1.2–3.1、y −0.2～+1.9、z −2.0～−0.7；conf mid 10、low 18。出格 3 張：Vainio《Onko》（稀疏靜電劈啪、近無聲，y −0.2）與 Radigue《Transamorem》（極細長音，y 0.4）判輕落**平靜**——研究層已點出「y 偏低／無低頻證據」的兩張，**microsound 稀疏型與 Radigue 式細長音不是頹靡的池子**；NWW《Deadlined》（冷爪弦樂、不和諧、擬音帶恐懼，x 3.1）判躁落**暴躁**。貼邊：Drumm《Trouble》與 Machinefabriek y 0.5、Hahn z −0.7。
+- **場景總結**：策展兩輪 71（主線汰 15、研究汰 28）→ 28，研究汰換率近半——Kranky／Room40／Denovali 二線文案多寫 pulse、blistering、lush、melodic；能穩落頹靡的是 Niblock 長音、低頻 rumble 型 drone（Retribution Body、Collins、Kassel Jaeger、Slomo、chra、Deathprod、Levander）。**md32 主場景見底，不再派。**
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Siavash Amini、Kristof Hahn、Phill Niblock、Mika Vainio、Opening Performance Orchestra Plays Phill Niblock、Pjusk、Retribution Body、William Fowler Collins、Kassel Jaeger、KTL、Luigi Archetti、Mohammad、Amphior、Rose Kallal、Deathprod、Slomo、Erik Levander、chra、Jim Haynes、Altar Of Flies、Aidan Baker、Machinefabriek（22 個掛名；`data/artist-intros` 皆查無）
