@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜Apple 試聽索引：舊有低分配對複查，退回 5 張錯配
+
+- **起因**：補比對時抓到古典同曲異版本誤配，店主「好」（要複查舊資料）。
+- **做法**：全索引 matched 且有分數 <95 的 1,102 張（85 分 440、92 分 661），以 US／GB／JP lookup 取英文掛名比對卡片藝人：對不上 26，主線逐張看：21 張其實正確（日文／中文掛名、原聲帶、Lead Belly 拼法、Chick Corea 掛名的 RTF、Mauceri 指揮的 Elfman 原錄音等），**退回 5 張**：Injury Reserve《By the Time I Get to Phoenix》→ Marty Robbins、Happy End《Happy End》→ Lee Jun Hyung、Holy Ghost!《Holy Ghost!》→ 楊賓、Howard Shore《LOTR Trilogy》與 Morricone《Film Music Masterworks》→ City of Prague Phil 翻奏版。改 `review`，Apple 按鈕不亮、不播錯試聽。
+- **未涵蓋**：沒有分數的 11,030 張（上架流程人工核對過的列）。藝人對得上但版本錯（同人不同錄音）此法抓不到。
+- **主要檔案**：`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`
+- **驗證**：runtime 17,729 列、missingSlug 161。
+
 ### 2026-10-24｜dip-vinyl-shop｜頻率光譜：選到的盤一定落在滾筒那一格；載入失敗時把原因寫在畫面上
 
 - **起因**：玩家回饋「明明頻率是沸騰卻轉到恍惚的專輯」。預覽與「就這張」用百分位空間的最近點（`nearest`），常落在門檻另一側；轉輪掃過的最後一張也可能是別格；「同頻率再抽一張」高斯加權＋2% 底噪會抽到任何格。另店主：網址加到主畫面後點入頻率光譜一片空白。
