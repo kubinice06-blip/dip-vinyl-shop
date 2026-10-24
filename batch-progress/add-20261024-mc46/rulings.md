@@ -31,3 +31,21 @@
 - 22045：Fuentes 四重奏盤聲音證據偏薄（Tempo 樂評在付費牆、AllMusic 403）；只有作曲家自述「萬花筒般的混亂」與標題意象，status thin。排除同名者（CCCB 頁的 1979 年巴塞隆納影像創作者不是這位 1975 年墨西哥市出生的作曲家）。
 - 22046：Poppe《Rundfunk》推翻策展層編制：實為九台合成器（九電腦＋九鍵盤），非十餘件樂器；三個樂章性格迥異（I 稀疏到脈動、II 緩慢近靜止白噪音、III 刺耳鑽頭般密集），可能分別落靜／重，Hanlon 另聽出迪斯可與前衛搖滾迴響（偏暖風險）。建議主線依評分結果取捨。
 - 22047：本組 6 張 facts 條數 10–11 條、皆附 https 來源；status：Cerha full、Kerschbaumer thin、Haubenstock-Ramati thin、Ofenbauer full、Fuentes thin、Poppe full。卡單 group a 實為 6 張（派工訊息寫 9 張，以卡單為準）。
+
+## 研究 c 組
+- 22061：Czernowin《Shu Hai》moodGuess 強存疑（實為大編制管弦＋實為現場）：第 2–5 軌約 30 分鐘為 Basel Sinfonietta／Kalitzke 管弦樂團加人聲與現場電子（Mode 稱「粗礪的管弦樂寫法」），第 6–7 軌約 31 分鐘為 2001 年 Biennale Bern 現場、單人人聲加電子；只有第 1 軌（ELISION 小編制）貼近預估。curatorRisk 疑慮屬實。Wikipedia 稱 studio album、Discogs 註 6–7 軌 live，以 Discogs（小冊）為準；管弦樂版作曲 2000–01 與錄音 1999 年對不上，facts 不寫該軌錄音年。建議主線汰換或接受風險。
+- 22062：Wuorinen《Dante Trilogy (chamber version)》moodGuess 存疑（現場錄音＋旋律抒情）：《Great Procession》《River of Light》為 1999 年 Guggenheim 現場錄音（Knussen 指揮），《Mission of Virgil》1996 年兩架鋼琴非現場；樂評稱《River of Light》結尾有近似歌唱的旋律與肅穆靜段。MusicWeb 自身編制描述有矛盾（六重奏 vs 名單含兩鋼琴與巴松管），facts 只寫內文編制。
+- 22063：Wuorinen《Six Trios》moodGuess 存疑（低頻銅管，判重風險）：圓號、長號、低音長號、大號、低音提琴，Positive Feedback 稱圓號有時壓過大提琴、風格俏皮外放。年份採 1993（MB／Discogs），評論稱 1997 的 Koch 版與之矛盾不採。
+- 22064：Barrett《Dark Matter》moodGuess 存疑（電子／厚＋人聲劇場）：19 人編制、大量打擊、電吉他、現場與預錄電子、有演唱的女高音（古埃及文、Lucretius、Beckett），可能判重或劇場。年份推翻：卡單 2013（MB 2013-01-01），NMC 官方頁與 Discogs 皆 2012-11-12，建議卡片顯示 2012，請主線裁定。是否現場錄音官方頁未說明，不下判斷。
+- 22065：Lim／Cassidy《wreck》moodGuess 存疑（現場錄音＋長音推測）：Cassidy 的 wreck（約 33 分鐘）為 2016 年 HCMF 現場錄音、雙小號協奏曲；Lim《How Forests Think》以笙獨奏，可能長音稀疏判靜（推測，無樂評）。wreck 只占全盤一首，簡介勿寫成只談 wreck。
+- 22066：Davidovsky《Salvos》聲音證據偏薄（本盤專屬樂評查無，status thin）：《Simple Dances》六樂章為 Waltz／Sarabande／Marsch／Tango 等舞曲標題、每章 1–3 分鐘，《Cantione Sine Textu》為無詞女高音，可能比預估輕快或抒情。年份 MB 2004、Discogs 2003，卡單取 MB；兩處曲長不一致，facts 不寫單曲長度。
+- 22067：本組 6 張 facts 各 9 條、皆附 https 來源；status：Davidovsky thin，其餘 full。WebSearch 用 12 次（Barrett 與 Davidovsky 專屬樂評搜尋命中率低，改走 NMC 官方店頁、Discogs API、MusicWeb、Positive Feedback、Mode 頁）。
+
+## 研究 b 組
+- 22051：Poppe《Prozession》moodGuess 存疑（偏重＋電子／搖滾手勢）：《Prozession》約 54 分鐘、大編制加龐大打擊組、持續節奏脈衝；《Fleisch》擬搖滾手勢並用 Moog，薩克斯風／電吉他／鋼琴／打擊，非弦樂主導；y 預估 −0.3 偏低，判重候選。身分無誤（Wergo WER 7401 2，2023）。
+- 22052：Posadas／EIC 盤 moodGuess 存疑（厚密音塊＋電子）：《Oscuro abismo》廠方描述為低音域暗沉音塊加管樂複音聖詠加氣體質地；《Glossopoeia》含舞者、影像與電子。年份沿用 2010（Discogs 2010-06；Europadisc 列 2011-01-17）。無樂評，聲音證據僅一條音樂會介紹。
+- 22053：Arditti／Rihm 盤首發年推翻：Discogs 5742530 顯示 1990 年 11 月作曲家在場錄音、1994 年 Montaigne MO 782001 首發，卡單 2000 是 MO 782134 再版；yearVerified 填 1994。moodGuess 存疑：第三號粗礪暴力與孤獨弱音器來回，動態極端（重／靜皆有風險）。
+- 22054：Arditti／Gerhard 盤：Wikipedia 說 AEON 2010 年發行與 MB／Discogs 的 2013 衝突，以後者為準（2011 年 5 月巴塞隆納錄音）。moodGuess 存疑：第一號有伊比利頑固複節奏（暖偏風險）；第二號與 Chaconne 查無聲音描述，不寫推測。
+- 22055：Arditti／Aperghis 盤性質：四位作曲家拼盤（Discogs 標題《From France》），含 Xenakis《Okho》（純打擊，三面 djembe 加大非洲鼓）與 Aperghis《Triangle carré》（弦樂四重奏加三位打擊手）。moodGuess 存疑（偏重偏暖，建議汰換候選）：全盤約三分之一為打擊；Okho 皮鼓低頻。錄音日期查無，Andrade 1990 年離團暗示錄音早於 1990。
+- 22056：Arditti／Kagel 盤年份：MB 1991-09-27，Discogs 1990；錄音為 1989 年夏天科隆（WDR 製作）。status thin：這幾首四重奏的聲音描述查無（WebSearch 額度用盡），只確認 Kagel 風格劇場幽默；moodGuess 的 z 存疑未能證實。
+- 22057：本組 6 張 facts 條數 11／11／10／11／10／9，皆附 https 來源；status：Kagel thin，其餘 full。WebSearch 3 次（Posadas、Poppe、Rihm 各一）。未推翻身分（6 張盤名、年份、廠牌皆對得上 MB／Discogs）。
