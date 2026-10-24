@@ -80,3 +80,7 @@
   - 長度：Svarte Greiner《Apart》（約 21 分 mini-album）。
 - 更正：Nurse With Wound《Deadlined》廠牌 United Dirter → **United Dairies**（UDNEFIII，研究 d）。
 - 剩 **19 張**（a 2、b 3、c 5、d 5、e 4）；叫回策展代理補第二輪（只收純長音、低頻 rumble、冰冷靜止、無事件型，附原句、原句不得含上述反例字眼）。
+
+## 主線補候補（不佔條號；2026-10-24）
+- 策展代理第二輪補 17（Niblock 長音 5、Radigue 2、Glacial Movements 4、其他 6；每張附 sourceQuote，原句與 why 掃過反例字眼 0；≥30 分）；主線再汰 3：MMMD《Pèkisyon Funebri》（文案 ghostly chants，人聲）、Niblock《Touch Works, for Hurdy Gurdy and Voice》（人聲長音素材）、Paul Schütze《The Mosaic of Starlight…》（gothic theatrics，x 風險；唯一人工身分卡）。`master-override-md32.json` 同時補登研究汰換的 23 張，`master-md32.json` 重建為 33。
+- 14 張以 `round: 2` 併入卡單、分到 a 3、b 3、c 3、d 3、e 2（卡單 33：a 5、b 6、c 8、d 8、e 6），派兩支補研究 append 進各組研究稿。重點核：《Four Walls Full of Sound》是否現場、Drumm《Trouble》／Radigue《Transamorem》／Machinefabriek y 偏薄、Arkbro 管風琴 z 回升。

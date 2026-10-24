@@ -10,7 +10,7 @@
   {
    "id": "touch",
    "zh": "Touch 系電聲 drone 二線",
-   "count": 9,
+   "count": 14,
    "why": "Touch 二線：合成器／電聲長音、工業暗色、低頻"
   },
   {
@@ -28,7 +28,7 @@
   {
    "id": "ext-cold",
    "zh": "外延：冷 drone／微聲（Glacial Movements、Hallow Ground、Type、Ash、Ideologic Organ）",
-   "count": 27,
+   "count": 39,
    "why": "場景外延：冰冷長音、低頻儀式 drone、暗色微聲"
   }
  ],
@@ -1719,6 +1719,569 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "tape noise 若偏刺耳 x 會升"
+  },
+  {
+   "artist": "Phill Niblock",
+   "album": "Four Full Flutes",
+   "year": 1990,
+   "label": "Experimental Intermedia Foundation",
+   "country": "us",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Niblock 1990 年的長笛 drone 經典，多支長笛、中音與低音長笛疊成微分音長音塊，Boomkat 稱「危險地催眠」「令人昏沉」；無事件、靜止、冷",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.1,
+    "z": -0.9,
+    "why": "無拍，多重長笛微分音長音塊，靜止"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c586729d-7173-3d9a-ae5a-8ef70e5619f2",
+    "https://coverartarchive.org/release-group/c586729d-7173-3d9a-ae5a-8ef70e5619f2/front",
+    "https://boomkat.com/artists/phill-niblock/releases/2gt7k64c/four-full-flutes",
+    "https://www.discogs.com/master/852121-Phill-Niblock-Four-Full-Flutes"
+   ],
+   "sourceQuote": "a dangerously mesmerising 1990 drone classic ... transfixing, if soporific",
+   "mbRgMbid": "c586729d-7173-3d9a-ae5a-8ef70e5619f2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "round": 2
+  },
+  {
+   "artist": "Phill Niblock",
+   "album": "G2,44+/x2",
+   "year": 2002,
+   "label": "Moikai",
+   "country": "us",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Niblock 2002 年的微分音長音盤（Room40 後重發），器樂錄音層疊成巨大拍頻牆，作者本人要求「放到鄰居抗議的音量」；無事件、極厚、冷",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.7,
+    "z": -1.0,
+    "why": "無拍，器樂微分音長音巨牆，拍頻厚密"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cdaa92d4-e65c-339f-a9fc-3025ba8bc8f3",
+    "https://coverartarchive.org/release-group/cdaa92d4-e65c-339f-a9fc-3025ba8bc8f3/front",
+    "https://boomkat.com/artists/phill-niblock/releases/ro4ncr6h/g2-44-x2-e6bab7",
+    "https://www.discogs.com/master/1787203-Phill-Niblock-G244x2"
+   ],
+   "sourceQuote": "You should play the music very loud. If the neighbors don't complain, it's probably not loud enough ... it takes sonic volume and spatial confinement to unlock his music's true nature",
+   "mbRgMbid": "cdaa92d4-e65c-339f-a9fc-3025ba8bc8f3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "round": 2
+  },
+  {
+   "artist": "Phill Niblock",
+   "album": "Touch Works, for Hurdy Gurdy and Voice",
+   "year": 2000,
+   "label": "Touch",
+   "country": "us",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Niblock 的 Touch 首作，絞弦琴與 Thomas Buckner 的低音長音被剪成數十軌堆疊，Boomkat 將之與 La Monte Young、Radigue、Phurpa 並列；無拍、厚密長音、冷",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.6,
+    "z": -1.0,
+    "why": "無拍，絞弦琴與低音人聲長音剪接堆疊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/78a730c8-30cf-3f7a-8321-52befa102102",
+    "https://coverartarchive.org/release-group/78a730c8-30cf-3f7a-8321-52befa102102/front",
+    "https://boomkat.com/artists/phill-niblock/releases/tqzcj5eb/touch-works-for-hurdy-gurdy-and-voice"
+   ],
+   "sourceQuote": "a true meisterwerk resounding with canonical pieces by La Monte Young, Éliane Radigue, Phurpa, Yoshi Wada",
+   "mbRgMbid": "78a730c8-30cf-3f7a-8321-52befa102102",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "一部分素材是人聲長音（非歌唱、無旋律），若被視為人聲領奏可汰",
+   "round": 2
+  },
+  {
+   "artist": "Phill Niblock",
+   "album": "Music for Organ",
+   "year": 2019,
+   "label": "Matière Mémoire",
+   "country": "us",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Niblock 兩首管風琴長曲，由 Hampus Lindwall 與 Emanuel Schmelzer-Ziringer 演奏，Boomkat 稱「高聳的管風琴作品」；微分音長音靜止不動，厚、冷",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.5,
+    "z": -0.8,
+    "why": "無拍，管風琴微分音長音靜止堆疊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fa4b287b-7f11-4649-9850-7d4d8cdcb73c",
+    "https://coverartarchive.org/release-group/fa4b287b-7f11-4649-9850-7d4d8cdcb73c/front",
+    "https://boomkat.com/artists/phill-niblock-hampus-lindwall/releases/ohvkavq9/music-for-organ",
+    "https://www.discogs.com/master/1697545-Phill-Niblock-Music-For-Organ"
+   ],
+   "sourceQuote": "a pair of towering Organ pieces ... systematically isolating and highlighting its phenomenological peculiarities",
+   "mbRgMbid": "fa4b287b-7f11-4649-9850-7d4d8cdcb73c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "round": 2
+  },
+  {
+   "artist": "Opening Performance Orchestra Plays Phill Niblock",
+   "album": "Four Walls Full of Sound",
+   "year": 2021,
+   "label": "Sub Rosa",
+   "country": "cz",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "布拉格 Opening Performance Orchestra 以電子方式演繹 Niblock 作品，「令人反胃的長音」、推到極限的音量，Boomkat 直接推給 Sunn O))) 樂迷；無拍、極厚、冷",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.8,
+    "z": -1.0,
+    "why": "無拍，電子微分音長音推到極限音量"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a296e153-eedf-4e9f-9b28-36e55d3ee6a8",
+    "https://coverartarchive.org/release-group/a296e153-eedf-4e9f-9b28-36e55d3ee6a8/front",
+    "https://boomkat.com/artists/phill-niblock/releases/7yupyndv/four-walls-full-of-sound",
+    "https://www.discogs.com/release/19272640-Opening-Performance-Orchestra-Plays-Phill-Niblock-Four-Walls-Full-Of-Sound"
+   ],
+   "sourceQuote": "Nausea-inducing drones from Prague's Opening Performance Orchestra, who take Phill Niblock's guiding compositions and push them to their limits ... Sunn O))) fans do not sleep on this!",
+   "mbRgMbid": "a296e153-eedf-4e9f-9b28-36e55d3ee6a8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "源自 2017 年現場演出、後於錄音室完成；藝人名照 MB",
+   "round": 2
+  },
+  {
+   "artist": "Éliane Radigue",
+   "album": "Transamorem – Transmortem",
+   "year": 2011,
+   "label": "Important Records",
+   "country": "fr",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Radigue 1973 年以 ARP 合成器完成、2011 年才由 Important Records 首度出版的長曲，Boomkat 稱其為她「最細微、最靜止的作品之一」；單一長音場、無事件、冷",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.0,
+    "z": -0.9,
+    "why": "無拍，ARP 長音場幾乎不動，靜止冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/97549642-bcea-4d1c-87f4-6f32482ff724",
+    "https://coverartarchive.org/release-group/97549642-bcea-4d1c-87f4-6f32482ff724/front",
+    "https://boomkat.com/artists/eliane-radigue/releases/ilxwixlm/transamorem-transmortem",
+    "https://www.discogs.com/master/1474117-Eliane-Radigue-Transamorem-Transmortem"
+   ],
+   "sourceQuote": "would surely count as one of her most subtle and still pieces",
+   "mbRgMbid": "97549642-bcea-4d1c-87f4-6f32482ff724",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能因極度細微而偏薄",
+   "round": 2
+  },
+  {
+   "artist": "Éliane Radigue",
+   "album": "Chry-ptus",
+   "year": 2007,
+   "label": "Schoolmap",
+   "country": "fr",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Radigue 1971 年在 NYU 的 Buchla 100 上完成的第一首模組合成器作品，兩卷磁帶同時播放，只在「次諧波與泛音」間緩慢變化；無事件、低頻長音、冷",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.1,
+    "z": -1.0,
+    "why": "無拍，Buchla 次諧波長音緩慢漂移"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b1561a3e-3178-4f04-b62a-9fc188255668",
+    "https://coverartarchive.org/release-group/b1561a3e-3178-4f04-b62a-9fc188255668/front",
+    "https://boomkat.com/artists/eliane-radigue/releases/amqgnmep/chry-ptus",
+    "https://www.discogs.com/master/1608069-Eliane-Radigue-Chry-ptus"
+   ],
+   "sourceQuote": "her very first piece for the modular synthesizer ... creates changes in the game of sub-harmonics and overtones",
+   "mbRgMbid": "b1561a3e-3178-4f04-b62a-9fc188255668",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "round": 2
+  },
+  {
+   "artist": "Luigi Archetti",
+   "album": "Null II / Null III",
+   "year": 2012,
+   "label": "Die Schachtel",
+   "country": "it",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "義大利電聲作曲家 Archetti 以「無」為題的雙碟 140 分鐘研究，Boomkat 稱其「冷峻如冰河」、近 Radigue 與 Köner，聲團緩慢堆積；無拍、厚、冷",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.3,
+    "z": -1.1,
+    "why": "無拍，聲團緩慢堆積，冰河般靜止"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cf3f9c93-0a7f-4daf-ab7d-45c8e5059a01",
+    "https://boomkat.com/artists/luigi-archetti/releases/cuqvh9mv/null-ii-null-iii",
+    "https://www.discogs.com/release/3458364-Luigi-Archetti-Null-II-Null-III"
+   ],
+   "sourceQuote": "With a stoically glacial approach reminiscent of work by Eliane Radigue or Thomas Köner, these pieces engage with gradually accumulated masses of sound",
+   "mbRgMbid": "cf3f9c93-0a7f-4daf-ab7d-45c8e5059a01",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "round": 2
+  },
+  {
+   "artist": "Ellen Arkbro",
+   "album": "Sounds While Waiting",
+   "year": 2021,
+   "label": "W.25th",
+   "country": "se",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Arkbro 在瑞典老教堂以多座管風琴持續純律和弦，Boomkat 稱「至今最濃密」、只露出細微神祕的泛音；無拍、長音厚、冷",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.2,
+    "z": -0.7,
+    "why": "無拍，多座管風琴純律持續和弦"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cf5a9467-3056-47ad-ac00-2eb2e4a39442",
+    "https://coverartarchive.org/release-group/cf5a9467-3056-47ad-ac00-2eb2e4a39442/front",
+    "https://boomkat.com/artists/ellen-arkbro/releases/rvwnakdt/sounds-while-waiting",
+    "https://www.discogs.com/master/3655692-Ellen-Arkbro-Sounds-While-Waiting"
+   ],
+   "sourceQuote": "setting up sustained chords on multiple organs in an old Swedish church and revealing subtle, mysterious harmonics. It's her most dense ... set to date",
+   "mbRgMbid": "cf5a9467-3056-47ad-ac00-2eb2e4a39442",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "和聲若被判溫潤 z 可能靠近 −0.3",
+   "round": 2
+  },
+  {
+   "artist": "Paul Schütze",
+   "album": "The Mosaic of Starlight Slips Back Like the Lid of an Opening Eye",
+   "year": 2025,
+   "label": "Auf Abwegen",
+   "country": "au",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Paul Schütze「Garden of Instruments」計畫的新篇，85 分鐘雙碟，以頻譜電聲與暗色 ambient 描繪天文台建築；無拍、厚、冷",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "無拍，頻譜電聲長音與暗色 ambient"
+   },
+   "evidence": [
+    "https://boomkat.com/artists/paul-schutze/releases/qmnedvrm/the-mosaic-of-starlight-slips-back-like-the-lid-of-an-opening-eye",
+    "https://www.discogs.com/release/35088656-Paul-Sch%C3%BCtze-The-Mosaic-Of-Starlight-Slips-Back-Like-The-Lid-Of-An-Opening-Eye"
+   ],
+   "sourceQuote": "marshalls aspects of electro-acoustic spectralism, dark ambient and gothic theatrics in masterful concrète diffusions",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "https://musicbrainz.org/ws/2/release-group?query=artist:\"Paul Schütze\" AND releasegroup:\"The Mosaic of Starlight Slips Back Like the Lid of an Opening Eye\"&fmt=json",
+     "https://musicbrainz.org/ws/2/release-group?query=releasegroup:\"Mosaic of Starlight\"&fmt=json"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 無此 release-group；Discogs 有 Auf Abwegen 2025 雙 CD 條目與封面，走人工身分"
+   },
+   "manualEvidenceUrls": [
+    "https://boomkat.com/artists/paul-schutze/releases/qmnedvrm/the-mosaic-of-starlight-slips-back-like-the-lid-of-an-opening-eye",
+    "https://www.discogs.com/release/35088656-Paul-Sch%C3%BCtze-The-Mosaic-Of-Starlight-Slips-Back-Like-The-Lid-Of-An-Opening-Eye"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 查無走人工身分；gothic theatrics 暗示有戲劇性事件，x 可能偏高",
+   "round": 2
+  },
+  {
+   "artist": "Kevin Drumm",
+   "album": "Trouble",
+   "year": 2014,
+   "label": "Editions Mego",
+   "country": "us",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Kevin Drumm 在 Mego 的長曲，Boomkat 稱「精緻的冰河式長篇」、比池中已有的《Imperial Distortion／Horizon》更平靜；低沉長音幾乎靜止、冷",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.0,
+    "z": -1.0,
+    "why": "無拍，低沉長音幾乎靜止，冰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9aa9cab7-aecf-4614-9ef5-956a2d08d136",
+    "https://coverartarchive.org/release-group/9aa9cab7-aecf-4614-9ef5-956a2d08d136/front",
+    "https://boomkat.com/artists/kevin-drumm/releases/ppefgr1y/trouble",
+    "https://www.discogs.com/master/1234418-Kevin-Drumm-Trouble"
+   ],
+   "sourceQuote": "Exquisitely glacial longform composition ... More placid/unnerving than even his 'Imperial Distortion' / 'Imperial Horizon' couplet",
+   "mbRgMbid": "9aa9cab7-aecf-4614-9ef5-956a2d08d136",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "文案說是 Drumm 最安靜的作品，y 可能偏薄",
+   "round": 2
+  },
+  {
+   "artist": "Slomo",
+   "album": "The Bog",
+   "year": 2008,
+   "label": "Important Records",
+   "country": "gb",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Slomo 接續《The Creep》的第二張，Moog Taurus 低音踏板與 Sunn 音箱吉他長音，樂評稱「廣闊的 drone 末日景觀」「又慢又低、靜靜地令人發毛」；無拍、極重、冷",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.9,
+    "z": -1.0,
+    "why": "無拍，Moog Taurus 低音與吉他長音，又慢又低"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3a89aa20-9a5f-4e88-9a43-72a94af1eb14",
+    "https://soundsofslomo.bandcamp.com/album/the-bog",
+    "https://www.discogs.com/master/500846-Slomo-The-Bog"
+   ],
+   "sourceQuote": "this vast doomscape of drone (Boomkat) ... naturally slow and low and quietly creepy (Aquarius Records)",
+   "mbRgMbid": "3a89aa20-9a5f-4e88-9a43-72a94af1eb14",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "round": 2
+  },
+  {
+   "artist": "MMMD",
+   "album": "Pèkisyon Funebri",
+   "year": 2016,
+   "label": "Antifrost",
+   "country": "gr",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "希臘三重奏 Mohammad 的「葬禮行列」，廠牌文案「沉重集中、莊嚴而黑暗」，大提琴、低音提琴與振盪器的地震般低頻；無拍、極重、冷",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.8,
+    "z": -1.3,
+    "why": "無拍，低音提琴大提琴與振盪器地震般低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/38bd748b-243e-4511-a4d5-fb603683bff4",
+    "https://coverartarchive.org/release-group/38bd748b-243e-4511-a4d5-fb603683bff4/front",
+    "https://mohammadsound.bandcamp.com/album/p-kisyon-funebri",
+    "https://www.discogs.com/master/1085386-MMMD-P%C3%A8kisyon-Funebri"
+   ],
+   "sourceQuote": "Heavy and concentrated, majestic and dark ... over their distinctive seismic diapasons",
+   "mbRgMbid": "38bd748b-243e-4511-a4d5-fb603683bff4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "文案有 ghostly chants（處理過的人聲殘響，非領奏）",
+   "round": 2
+  },
+  {
+   "artist": "Erik Levander",
+   "album": "Jökel",
+   "year": 2021,
+   "label": "Glacial Movements",
+   "country": "se",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "瑞典 Erik Levander 在冰河主題廠牌 Glacial Movements 的盤，「悶住的、子宮般的頂級 drone」「荒蕪的聲景」；無拍、厚、冷",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.4,
+    "z": -0.9,
+    "why": "無拍，悶住的厚長音，荒蕪冰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d8aca91c-b44e-45ff-9d8d-19606509ca48",
+    "https://coverartarchive.org/release-group/d8aca91c-b44e-45ff-9d8d-19606509ca48/front",
+    "https://glacialmovements.bandcamp.com/album/j-kel"
+   ],
+   "sourceQuote": "Dampened, womb-like drone of the highest order ... barren but vigorous soundscapes",
+   "mbRgMbid": "d8aca91c-b44e-45ff-9d8d-19606509ca48",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "round": 2
+  },
+  {
+   "artist": "Havenaire",
+   "album": "Rabot",
+   "year": 2017,
+   "label": "Glacial Movements",
+   "country": "se",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "瑞典 Havenaire 以瑞典最大冰河 Rabot 為題的 Glacial Movements 盤，「一層又一層築起聲牆，緩慢推進」；無拍、厚、冷",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.5,
+    "z": -0.9,
+    "why": "無拍，層層長音聲牆緩慢推進"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ebe7b5a3-2cd8-498f-a51e-e8ee1e07181a",
+    "https://coverartarchive.org/release-group/ebe7b5a3-2cd8-498f-a51e-e8ee1e07181a/front",
+    "https://glacialmovements.bandcamp.com/album/rabot"
+   ],
+   "sourceQuote": "Layer upon layer building up walls of sound pushing its way slowly through out the albums six songs",
+   "mbRgMbid": "ebe7b5a3-2cd8-498f-a51e-e8ee1e07181a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "文案未直接寫 dark／cold，冷的證據來自冰河主題",
+   "round": 2
+  },
+  {
+   "artist": "Aidan Baker",
+   "album": "Pithovirii",
+   "year": 2024,
+   "label": "Glacial Movements",
+   "country": "ca",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Aidan Baker 以西伯利亞凍土的巨型病毒為題，兩段 30 分鐘長曲用吉他與效果器表現「冰河般的密度與靜止」，廠牌標為 dark ambient；無拍、厚、冷",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.4,
+    "z": -1.0,
+    "why": "無拍，吉他效果器長音，密而靜止"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fd71be60-7b00-475b-ae3f-6fdcfe500737",
+    "https://coverartarchive.org/release-group/fd71be60-7b00-475b-ae3f-6fdcfe500737/front",
+    "https://glacialmovements.bandcamp.com/album/pithovirii"
+   ],
+   "sourceQuote": "electric guitar and effect pedals to convey \"glacial density and stasis\"",
+   "mbRgMbid": "fd71be60-7b00-475b-ae3f-6fdcfe500737",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "round": 2
+  },
+  {
+   "artist": "Machinefabriek",
+   "album": "Stillness Soundtracks II",
+   "year": 2020,
+   "label": "Glacial Movements",
+   "country": "nl",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Rutger Zuydervelt 為南極影像寫的第二部「靜止」配樂，Boomkat 稱「恰如其分地寒冷」、貼近冰山與無盡凍原；無拍、長音、冷",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.0,
+    "z": -1.0,
+    "why": "無拍，冰原長音，寒冷靜止"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4b1ec594-5b92-481b-9cf9-628ba1539f58",
+    "https://coverartarchive.org/release-group/4b1ec594-5b92-481b-9cf9-628ba1539f58/front",
+    "https://boomkat.com/artists/machinefabriek/releases/xrpv3jzc/stillness-soundtracks-ii",
+    "https://www.discogs.com/master/1675343-Machinefabriek-Stillness-Soundtracks-II"
+   ],
+   "sourceQuote": "a fittingly chilly score for video shot in Antarctica ... a sound that's truer to the images of icebergs and endless tundra",
+   "mbRgMbid": "4b1ec594-5b92-481b-9cf9-628ba1539f58",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能偏薄；為影像而作但以正規專輯發行",
+   "round": 2
   }
  ],
  "notes": [
@@ -1729,6 +2292,7 @@
   "每張 evidence 第 3 條為 Boomkat／A Closer Listen／Truants／Glacial Movements Bandcamp 的評介頁，sourceQuote 欄為原文摘句（證明 dark／cold／低頻）；CAA 無圖者另附 Discogs 條目作封面來源。",
   "人工身分 1 張：chra《On a Fateful Morning》（MB 兩方向皆 0 筆），mbAbsenceProof 與 manualEvidenceUrls 已填。",
   "年份覆寫：Phurpa《Trowo Phurnag Ceremony》用 Discogs master 2009（MB 首發 2010 為重發）；Slomo《The Creep》用 Discogs 2005 CDr（MB 2006）。Phurpa 為儀式喉音吟誦，genres 走 world。",
-  "uncertain 欄已標的風險：Cleared（零星打擊）、Kaukolampi（Optimo 可能有脈衝）、Helm／Still und Dunkel／Altar of Flies／HEXA（可能有刺耳段，x 偏高）、Vantzou 兩張與 Rosy Parlane（y 可能掉到 0.7）、Indignant Senility 與 Golem Mécanique（旋律可能讓 z 回升）。"
+  "uncertain 欄已標的風險：Cleared（零星打擊）、Kaukolampi（Optimo 可能有脈衝）、Helm／Still und Dunkel／Altar of Flies／HEXA（可能有刺耳段，x 偏高）、Vantzou 兩張與 Rosy Parlane（y 可能掉到 0.7）、Indignant Senility 與 Golem Mécanique（旋律可能讓 z 回升）。",
+  "第二輪候補（2026-10-24，round=2）：依研究層／主線汰換反例（pulse／rhythm／percussion、blistering／caustic／harsh／overdriven、warm／lush／melodic／luminous／wistful、旋律樂器或人聲領奏、<30 分）重挖，只收純長音、低頻、冰冷靜止、無事件的型；交 17 張（目標 20，挖不到照實交）。汰除：Ark Zead《Niptaktuk》已在池、Jim Haynes《Sever》文案 scraping metal、Mohammad《Egoismo》percussive thumps、《Roto Vildblomma》文案含 melody、《Andromache》鋼琴、《Segondè Saleco》有人聲曲、Köner《La Barca》人聲較暖、Slomo《Transits》luminescent／shrieks、Niblock《Muna Torso》21 分、CMvH 與 Kassel Jaeger 的 MMXX 單曲盤 20 分、Biosphere《Angel's Flight》貝多芬旋律、Radigue《Adnos》dissonant、《Biogenesis》心跳節奏、Seth Cluett（MB 查無且偏薄）、Glacial Movements 的 Malfatti《Surge》（melodies）與 Amphior《Disappearing》（warm／luminous）。"
  ]
 }
