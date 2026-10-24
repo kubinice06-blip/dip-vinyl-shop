@@ -3529,4 +3529,13 @@ window.DipPreviewStatus = Object.freeze({
   "bernhard wambach|stockhausen: klavierstücke vol. ii": "unavailable",
   "elisabeth chojnacka|clavecin 2000": "unavailable",
   "elisabeth chojnacka|clavecin d'aujourd'hui": "unavailable",
+  "arditti quartet|rihm: streichquartette iii, viii, v": "unavailable",
+  "ensemble intercontemporain|xenakis: phlegra - jalons - keren - nomos alpha - thalleïn": "unavailable",
+  "ensemble 2e2m|donatoni: lumen - de près - l'ultima sera - fili - le ruisseau sur l'escalier - feria - still": "unavailable",
+  "nadja|thaumogenesis": "unavailable",
+  "black boned angel|verdun": "unavailable",
+  "nadja|corrasion": "unavailable",
+  "nadja|sky burial": "unavailable",
+  "nadja|bliss torn from emptiness": "unavailable",
+  "troum|autopoiesis": "unavailable",
 });

@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 15 輪（最後一輪）mc46／md33：現代室內樂尖細 13 張、無鼓 drone／doomgaze 14 張上線，落格 13/13、12/14，兩場景見底
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 15 輪（全線最後一輪，做完暫停盤點），本工作階段負責 mc46、md33（評分照 10-23 體感標準）。mc46（`add-20261024-mc46`，冷冽）：Quatuor Diotima《Fuentes》、ensemble mosaik《Poppe: Rundfunk》、Arditti Quartet《Rihm》《Gerhard》《Kagel》、Empyrean《Davidovsky: Salvos》、Group for Contemporary Music《Wuorinen: Six Trios》、Charles Wuorinen《Scherzo…》、Zimmermann《Présence…》、JACK Quartet《Zorn: Complete String Quartets》、EIC《Xenakis: Phlegra…》、Dusapin、Ensemble 2e2m《Donatoni》。md33（`add-20261024-md33`，頹靡）：Nadja ×6（Skin Turns to Glass、Truth Becomes Death、Thaumogenesis、Corrasion、Sky Burial、Bliss Torn From Emptiness）、Locrian《Drenched Lands》、Black Boned Angel《Verdun》、Jasper TX ×2、thisquietarmy《Phantom Limbs》、Final ×2、Troum《Autopoiesis》。
+- **策展→研究汰換**：mc46 策展兩輪 41、主線汰 9、研究汰 19（現場、大編制／電子／打擊、人聲抒情、稀疏極弱）→ 13；古典卡掛名照 §0.7 全改成演奏者｜「作曲家: 標題」。md33 策展兩輪 37、主線汰 2（Terrestrials 撞池）、研究汰 21（鼓組／嘶吼、現場、EP、聲音不符）→ 14。
+- **主線審稿**：兩批 27 張逐張審過，未改字（紀錄在兩批 rulings「主線審稿」段）。
+- **上線**：card_catalog 27、KV 27 鍵回讀一致（stamp 20261024r15）、試聽 18 ready／9 unavailable、seed +27；`genre-l3-artist-map.json` 補 Locrian（rock/metal/doom）、thisquietarmy（electronic/ambient/drone）；類型樹、抽卡封面、mood 重建。
+- **落格**：mc46 冷冽 13/13（100%）；md33 頹靡 12/14（86%，Locrian 判躁、Jasper TX《Singing Stones》判輕）。併 main（含 mc47／md34）後：**頹靡 1,636、冷冽 1,589**（恍惚 1,686）。
+- **剩餘潛力（店主盤點用）**：mc46 現代室內樂尖細見底（約 0–2 張；mc32＋mc43＋mc46 共 80 張）；md33 冷 post-rock／無鼓 drone 見底（約 2–3 張；md7＋md31＋md33 共 81 張）。兩列不再派。
+- **新藝人（無介紹，未切）**：12 個掛名，列在兩批 rulings 末尾。
+- **主要檔案**：`batch-progress/add-20261024-{mc46,md33}/`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261024-{mc46,md33}*`、`batch-progress/mood-axes/score-{mc46,md33}/`、`seed_cards.json`、`batch-progress/mood-cells-20261022/SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`。
+- **驗證**：qa-batch research／hooks／out 全過、qa-check-research 0、prepare／published gate 0 error（UPC warning）、KV 回讀 27/27、封面 27 張 HTTP 200 目視相符、build-card-moods 寫入成功。
 ### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 15 輪（最後一輪）mc47／md34：當代獨奏器樂 15 張、funeral doom 38 張上線，落格 15/15、38/38
 
 - **內容**：店主「三個情緒薄格各補到約 2,000」第 15 輪（全線最後一輪，做完暫停盤點），本工作階段負責 mc47、md34（評分照 10-23 體感標準）。md34（`add-20261024-md34`，頹靡）：Esoteric ×2、Evoken ×4、Mournful Congregation ×2、Skepticism ×3、Thergothon、Shape of Despair ×2、Worship ×2、Ahab、Tyranny ×2、Bell Witch ×4、Catacombs、Colosseum、Aldebaran、Asunder、Nortt ×3、Dolorian ×3、Comatose Vigil、Moss ×2、Asva、Ommadon。mc47（`add-20261024-mc47`，冷冽）：Henck《Barraqué》《Stockhausen I-XI》、Helffer／Biret／陳必先／Ponthus 的 Boulez、Woodward《Barraqué》、Arditti《Recital》、Derome《Solo》、Pace《Tracts》、Wambach《Stockhausen vol. II》、Castro Magas《Shrouded Mirrors》、Pollini《Webern／Boulez》、Chojnacka 大鍵琴 ×2。
