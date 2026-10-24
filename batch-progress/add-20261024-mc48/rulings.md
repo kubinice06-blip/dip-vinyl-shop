@@ -95,3 +95,18 @@
 - **22508** 只寫 note：Martino 兩張不寫 Lubman、Rudich、普立茲（d5 的《Notturno》不提）；Hodgkinson 不寫 CD 版時長與 B 面；Feinberg 不寫葛萊美提名與〈Blue Bamboula〉；Macomber 不寫 American Record Guide；Cuckson Martino 不寫《Romanza》年份。樂評兩處（d5 迷人俏皮、d6 烈焰般的準確）寫成被動「被形容為」，無媒體名、無榜單名次。Crawford 的「漸強與漸弱的對位」直接引語轉間接（「她自己稱作」）；Macomber 的系列名保留「」。
 - **22509** 自掃（scratchpad `wr-mc48-2/mc48w2-ngram.mjs`，han() 中文 4-gram，跨 out-1＋out-2 合掃）：3 張以上只剩樂器名（小提琴手／小提琴家／獨奏小提琴）、曲名（鋼琴奏鳴曲、號奏鳴曲、弦樂四重奏）與獎名（普立茲音樂獎）。途中拆掉：在年發行、於年發行、四重奏年、的小提琴、作曲家的、另一首是、的第二號、長約分鐘、紐約作曲、生於費城、年月至日、把它發行、琴彈鋼琴、年月錄下、約分鐘年、在紐約創、年交給發行、一首是年的、作曲家年。殘留 2 張的通用形狀：成的第三／的第三號（Shapey 二 × writer-1 Babbitt 3）、同一張還（Crawford × Sheer Pluck）、一人獨奏（Cuckson Martino × Sheer Pluck）、是年寫給（Miller × Skouras）、至年擔任（Macomber × Wolpe），交主線收件合掃時再看。
 - **22510** 古典掛名：音樂人照卡池掛名（演奏者，Miranda Cuckson、Blair McMillen、David Holzman、Randall Hodgkinson、Rolf Schulte、Alan Feinberg、Robert Miller、Harvey Sollberger、Curtis Macomber、The Composers Quartet、GCM 用 note 的縮寫與全名），作曲家照 note 寫法（Shapey、Donald Martino／Martino、Wuorinen、Babbitt、Ruth Crawford、Sessions／Roger Sessions、Wolpe、Mel Powell）。Sollberger 卡內文團名照 note 寫全名 Group for Contemporary Music（無 The）。
+
+## 寫作層（writer-1）
+- **22501** 交件：`desc-tools/batches/output/add-20261024-mc48-out-1.json` 16 張（full 12：215–239；thin 4：Asakawa 172、Swann 155、十五週年 180、Shapey SQ7 156）。初稿只有 Ars Combinatoria 一張超標（248），整格捨去團員句的「拉小提琴的是」與重複曲目詞後回到 239。`qa-batch out`：全部通過 ✓（兩檔 31 張）；`qa-check-research`：標記 0；`fix-spacing`：待補 0；轉述引導詞／禁語 grep 0。key 逐字同序 16/16。
+- **22502** 第二句全照鉤子層配表（22494）：生年／創團地／學歷／樂器／生年＋出生地／成立年／創團成員／首演紀錄／年輕時經歷（寫「早年」，避開 hook 句尾「四重奏。」黏「年輕」成 `四重奏年` 撞 out-2）／親屬／出生地／移居（改成名字領句＋生年地＋移居，避「子年生於」撞 Zukofsky 的「之子、1943 年生於」）／任教／編制／團員／任教年份。日期「日」後一字只有 Skouras「日起」、Ars「日自」，Composers 寫「21 至 23 日」不落 regex。發行句逐張配死不同形狀（在年把這批／年發行時／年推出／在年出版／於年發行／同年就把它／出版了這張／年發行／月由推出／年才由德國／年經發行／於年推出／發行商是／日自行／在年發行這張）。
+- **22503** 不複述 hook：Ohlsson 只補「金牌是 1970 年拿的」，不重寫「此前沒有美國人」；Soli 的「連小鼓與馬林巴琴」寫成「連打擊樂器」；Wolpe 不再寫「三台鋼琴」；Sheer Pluck 不重寫「盤名」；Passage 不重寫「聲音當武器」，寫「審訊時的聲光手段」；Ars 不重寫免費下載／捐款。Swann 照 facts 確認是「兩個版本各含〈Tropes〉與〈Miroir〉」，寫成「兩個版本都由〈Tropes〉與〈Miroir〉兩段組成」。
+- **22504** 古典掛名：演奏者照卡池掛名（The Group for Contemporary Music、The Fine Arts Quartet、Mari Asakawa、Benjamin Hudson／Garrick Ohlsson、Jeffrey Swann、The Composers Quartet、Speculum Musicae、JACK Quartet、Paul Zukofsky、Andreas／Anna Skouras、Continuum、Martin Goldray、Todd Seelye、The Ars Combinatoria String Quartet），作曲家照 note（Babbitt、Carter、Wuorinen、Boulez、Martino、Eckardt、Sessions、Blackwood、Wolpe、Shapey）；Shapey 卡的掛名團體全名太長未進正文，以 hook「芝大樂團」＋第二句「這個當代室內樂團」指稱。樂評只在 Ohlsson 卡照 note 轉成間接敘述（樂評把 Wuorinen 形容成終極的極繁主義者），無媒體名、無榜單名次、無「據說／據傳」。作品名一律用〈〉（note 裡《Notturno》《Enactments》等改〈〉），盤名《Passage》保留《》。
+- **22505** 自掃（scratchpad `wr-mc48-1/mc48w1-tool.py`，han() 中文 4-gram）：本檔跨張殘留只剩專名／樂器／獎名（小提琴手、亞利桑那、琴奏鳴曲、普立茲音樂獎、弦樂四重奏）。對 out-2 合掃途中拆掉：寫於年年、的第三號、年在紐約、提琴手的、是年的第、的小提琴、首小提琴、是年寫給、在年發行、拉小提琴、至年擔任、同一張還、一人獨奏、號四重奏、年交給發、首是年的、四重奏年、首弦樂四、年由出版、的作曲家；對 out-2 殘留同樣只剩曲名／樂器／獎名／地名（第二號奏鳴曲、鋼琴奏鳴曲、獨奏小提琴、小提琴家、弦樂四重奏、普立茲音樂獎、普林斯頓）。out-2 若再改動，請主線收件時合掃一次。
+
+## 主線審稿（2026-10-24，cloud-main）
+- 逐張審 31 張，抽核掛名（演奏者｜作曲家）、年份、錄音地與研究稿一致；掃媒體名、榜單、「據說」0。
+- 改 3 處（存 `desc-override.json`；研究稿 facts 不動，只是正文不用）：
+  1. `desc2:Benjamin Hudson & Garrick Ohlsson|Wuorinen: Works for Violin and Piano`：刪「樂評把 Wuorinen 形容成終極的極繁主義者」——單一樂評評價句（Albany 頁摘錄無出處）；235→210。
+  2. `desc2:David Holzman|Martino: Twelve Preludes / Fantasies and Impromptus`：刪「他的技巧被樂評形容為烈焰般的準確。」——單源評價句；→163（thin 帶內）。
+  3. `desc2:The Group for Contemporary Music|Martino: From the Other Side / Quodlibets II / Notturno`：原 hook「一位樂評反問：誰說學院派沒有幽默感？」與「被形容為迷人又俏皮」都是單源樂評評價，整張改以研究稿事實重寫：hook 改「一支長笛，獨自撐滿 13 分鐘。」（研究 d：《Quodlibets II》13 分鐘無伴奏長笛），其餘照 note（Babbitt／Dallapiccola 門下、十二音、Koch 1994、《From the Other Side》27 分鐘含打擊）；→158 字。hook 開頭與全批不撞。
+- 其餘 28 張逐張審過，未改字。
