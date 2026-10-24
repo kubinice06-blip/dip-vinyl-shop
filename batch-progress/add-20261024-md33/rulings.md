@@ -20,3 +20,16 @@
 - 22124：Truth Becomes Death 的 Eye Magazine 原句取不到原頁，facts 只寫概述；改以 Bandcamp 聽者評語與 Discogs 曲名概念出處補足，聽者評語非樂評，寫作層勿當權威。已刪兩條來源不足的推論。
 - 22125：Locrian《Drenched Lands》CD 附 bonus〈Greyfield Shrines〉（2007 電台現場、30 分鐘），與另一張卡《Greyfield Shrines》同曲，兩卡正文要避開同一段落。Chicago Tribune／Invisible Oranges 原頁此環境讀不到，引文取自維基條目轉述。
 - 22126：Nadja 的 Leah Buckareff 加入年份各來源不一（2003／2004／2005），facts 一律寫「後來加入」不主張年份。Pitchfork、Chicago Tribune 皆讀不到，未引。
+
+## 研究 c 組
+- 22141：moodGuess 存疑（強）三張，建議主線汰換或降權：Nadja《Sv》（單曲，樂評稱『瘀青般的節拍洪流』『工業近 techno 重拍』，有鼓組式推進與結尾爆發）、Nadja《Labyrinthine》（客座 Alan Dubin 尖嘯與 Dylan Walker 咆哮，〈Blurred〉含刺耳白噪音，x 會判躁）、thisquietarmy《Resurgence》（鼓機與合成器、space rock 律動、shoegaze 抒情曲、女聲與小提琴、Rumi 啟發的歌，曲長多 3 至 8 分鐘，判躁或暖／輕）。
+- 22142：moodGuess 存疑（弱）：Nadja《Under the Jaguar Sun》（雙碟，第二盤弦樂、西塔琴、簧風琴、鐘聲，聽者稱『天空般安詳』，判輕或暖；第一盤有鼓與漸強）、Nadja《Sky Burial》（吉他低頻『每四小節爆發』，有節奏推進；是否有鼓來源未載）。Nadja《Bliss Torn From Emptiness》大致可信（鼓機存在感極小，有史詩高峰）。
+- 22143：thisquietarmy《Echotone》實為 3 首約 21 分鐘的迷你 EP（Discogs、Bandcamp 皆稱第二張 EP），MB 歸 Album；status 標 thin，無獨立樂評，聲音僅來自藝人自述，建議主線視為 EP 長度風險。
+- 22144：身分核對：Bliss 卡單指 2005 Fargone CD-R（限量 60 張），樂評皆評 2008 Profound Lore 重新錄製版，寫作層要標版本；Jaguar Sun 發行日三處不一（MB 2009-06-01、Discogs 2009-08-13、Bandcamp 2010-03-12），年份取 2009；Labyrinthine 卡單廠牌 Cruel Nature 是數位版，CD 為 Broken Spine Productions。皆無推翻策展層。
+- 22145：Sky Burial 的 Wikipedia 稱 EP、Discogs 標 LP，約 38 分鐘兩首，長度足夠不退。限量數 ALARM（1000 CD＋1000 黑膠）與 Discogs（藍膠 300）不同，寫作層只寫『限量』。The Sleeping Shaman、Echoes and Dust 原頁此環境讀不到（驗證頁），引文取自搜尋摘要；Wikipedia 稱 Buckareff 2005 加入，不主張年份。
+
+## 研究 d 組
+- 22151：身分全數核對通過（MB／Discogs／Bandcamp 對得上盤名、年份、廠牌），無推翻策展層。性質補註：Exorcisms 實為兩場教堂現場即興剪成（Denovali 黑膠 2 面）；Pure Drone 為 2010 年柏林現場；Tense Surfaces 為 2004 免費數位 EP（Discogs 歸 EP，約 30 分鐘）；Main《Firmament》(1993) 為約 22 分鐘四首無標題 EP（Firmament 系列第一集）；Phantom Limbs 的 MB 無廠牌，實際首發 Land of Decay 卡帶 100 卷。
+- 22152：**moodGuess 存疑兩張強（建議汰換）**：Main《Firmament》（Trouser Press 稱仍在歌曲形式內、有 23 Skidoo 式打擊樂段、『Abrasive』，與 TiVo 傳記『drumless、cold』矛盾，x 風險）、E.A.R.《Data Rape》（實為電路彎折 Speak & Spell 語音玩具拼貼，無吉他，結巴機器聲＋延遲，策展層『電子 drone 與回授』不符，x／y／z 皆無證據）。
+- 22153：moodGuess 存疑兩張弱：Aidan Baker《Tense Surfaces》（署名含鋼琴、原聲吉他、貝斯、人聲，標籤有 slowcore／psych／electronica，判輕或暖風險）、thisquietarmy《Phantom Limbs》（Textura：後段有顫音、刺耳爆發與嚎叫般音團，x 風險）。《Pure Drone》z 無任何色溫來源（thin）；《Exorcisms》主體無鼓，唯數位加料曲〈The Black Sea〉有慢鼓，卡面不涉。
+- 22154：Pure Drone、Tense Surfaces 查無樂評，status thin，聲音句只寫器材與標籤可證的層次。At the Base 的唯一樂評為 Bandcamp 轉載 rikm 短評，寫作層勿當權威。Phantom Limbs 曲長以 Discogs／Bandcamp 曲目表為準（Textura 把 Voltage／Pain 兩首互換）。Data Rape 部分網頁寫 2000 年，以 Discogs／MB 的 1998 為準；八首無標題，keyTracks 留空。
