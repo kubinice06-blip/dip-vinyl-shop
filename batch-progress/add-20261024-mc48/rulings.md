@@ -32,3 +32,14 @@
 - 22467：moodGuess 存疑清單（中度）：Wuorinen《Chamber Works》（Third String Quartet 29 分鐘占 44%、自述從容、密度遞減、聖詠材料；Wuorinen 自述風格轉向音高中心、拍點更清楚；Fast Fantasy 有安靜中段）；Wolpe Vol. 4（雙簧管奏鳴曲 1937–41 早期，含 Molto adagio 5 分 40 秒；四重奏含 Quiet 樂章 8 分 13 秒與 Early Morning Music；三組錄音來自電台與文化中心）。輕度：Ars Babbitt（第六號被維基形容為寬廣抒情）、Seelye（Mamlok、Carter 小品）、Shapey SQ7（Largo、Passacaglia 約占一半）、Cuckson 兩盤（Cantabile、Bel Canto 短段）。
 - 22468：無明顯不符：Goldray Babbitt 鋼琴（四首鋼琴獨奏，棚內分兩階段，1996-07 與 1997-01 於 Taplin Auditorium）；Cuckson 第二輯（Bard Sosnoff Theater 2010-01-04/05 棚內，非現場）。
 - 22469：Goldray 的個人資料僅 Discogs 一句簡介，人物事實以 Babbitt 與錄音情況補足，status 仍標 full。
+
+## 研究 e 組
+- 22481：e 組九張皆確認為棚內錄音，Discogs notes 無現場註記；Feinberg 盤是 1994 年 12 月與 2003 年 6 月兩批錄音拼成；Macomber 為 1987／1991 年 Purchase 演奏廳；Composers Quartet 為 1988／1989 年 Purchase。
+- 22482：全組無電子、磁帶、打擊占大段；唯一電子是 Sollberger 雙 LP 的 Trombly《Kinetics III》8 分 19 秒（約 77 分鐘的 11%）。Sollberger 雙 LP 並非全盤長笛獨奏（另有 Sophie Sollberger 長笛、Blustine 單簧管、Benjamin 小提琴、Wuorinen 鋼琴），Discogs 不分曲，寫作層不斷言哪首配哪件。
+- 22483：moodGuess 存疑（輕度）清單：Taub CRI 461（Kirchner 奏鳴曲 Lento／Adagio 兩個慢樂章加 Bartók Sostenuto e pesante、Babbitt 第二首 ♩=54、Shifrin 中段漸慢）；Emerson Imbrie／Schuller（Imbrie 解說稱 restrained lyricism，各樂章速度查無）；Macomber Soliloquy（Sessions 33:46 占 51%，樂章速度查無；Hoffman、Adolphe 的速度查無）；Alan Marks（Boulez Lent、Sessions Lento ♩=50、Chávez Lentissimo 與 Adagio，快慢約各半）；Robert Black（無任何聲音面來源，Weber 被評抒情）。
+- 22484：Robert Black 的 CRI SD 481 標 thin：聲音面無來源。Discogs 的 Robert Black (4) 是鋼琴家（1950–1993），不是低音提琴手 Robert Black（1956–2023），寫作層勿混。
+- 22485：Weber《Variazioni quasi una fantasia》維基作品表寫 harpsichord、op.65、1974，與 Discogs 登記 Robert Black 彈鋼琴不一致；facts 兩邊各寫，寫作層不寫該曲樂器。Gideon《Sonata》年份（維基列 1983）與 1982 年錄音矛盾，不寫。
+- 22486：Carter 第四號的「題獻給 Composers Quartet」只見於 Composers Quartet 維基條目，Carter 第四號條目只寫首演；facts 只寫首演。Discogs 盤名《Three American String Quartets》與 Babbitt 維基的《Three Contemporary American String Quartets》不同，以 Discogs 為準。
+- 22487：Macomber 盤的 Bruce Adolphe 是否即 Soliloquy 作者無法由來源直接證明，facts 以同名引述並在 notes 提醒；Joel Hoffman 無來源，不寫生平。American Record Guide 稱讚為 Macomber 自己簡介轉述，facts 已標宣傳性質。
+- 22488：Sollberger 的 WebSearch 之外，本組共用 4 次 WebSearch（超過每支 3 次的上限一次；已停手，其餘全走 Discogs API、Wikipedia 與 New World Records 頁）。
+- 22489：未推翻策展層任何年份、廠牌、掛名；補了 Feinberg 兩次錄音年份、Chávez Estudio 時長、Emerson 盤 CD 重發編號。
