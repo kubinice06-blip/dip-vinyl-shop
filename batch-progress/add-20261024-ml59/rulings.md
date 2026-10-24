@@ -77,3 +77,8 @@
 - **22428** 研究稿與派工補充照辦：Plantation 只寫「六首全做成延長版」與風格被歸在 Roots Reggae 與 Dub，不寫「附 dub」；Peter Chemist／Sylvan Morris 寫成工程師欄；Fancyness 只寫 1979 年紀念演唱會與 Marley 同台，不寫 Claudie Massop；Sign of the Star 年份 1981，Prince Far I 遇害不寫。媒體名、樂評與榜單名次 0 進正文（Guinness 評語、Niceup、United Reggae 皆未出現）。
 - **22429** 自掃（han() 4-gram，跨 out-1＋out-2 合掃 13 張）：3 張以上 0 條；2 張只剩「的錄音室」（out-1 內部 Where Is Your Love Mankind／Lovers Leap，非本檔）。途中拆掉「是牙買加」「牙買加的」「雷鬼歌手」「位歌手在」「這位歌手」「錄音地點」「混音交給」「負責混音」「錄音在混」等跨檔殘片（拆法是整個名詞拿掉或改句型，不只換動詞）。
 - **22430** Fancyness 結構：hook 的「那場演出」在第二句後以「1979 年在一場紀念演唱會上與 Marley 同台」收尾，與 hook 共用「同台」二字但補上年份與場合，非複述。輔助腳本：scratchpad `wr-ml59-2/ml59w2-ngram.mjs`。
+
+## 主線審稿（2026-10-24，cloud-main）
+- 逐張審 13 張，抽核關鍵事實回研究稿（Larry Marshall 生年／聖安區／1973 版稅糾紛／Java 1975、Screechie 混音分工 Scientist 4／Morris 2、Twinkle B 面 Jah Shaka 貝斯、Viceroys 團名香菸／the Inturns、Triston Palma 1979 Massop 紀念演唱會與 Marley 同台）皆一致。
+- 改 1 處：`desc2:Bim Sherman|In A Rub-A-Dub Style` 刪「樂評形容它鬆散而 spaced-out。」——單一樂評（Niceup）評價句，依審稿規則整句刪；字數 155→135（thin 帶內）。存 `desc-override.json`，研究稿 facts 保留不動（只是正文不用）。
+- 其餘 12 張逐張審過，未改字。
