@@ -95,7 +95,7 @@
 4. 鉤子 2 支 Opus（a–c、d–e）讀 `HOOK-DISPATCH.md` → `qa-batch hooks`、`chk-hook-crossgroup`、`merge-writer-input.mjs <批> --split=2`。派工加一句：媒體名與媒體榜單名次不進正文。
 5. 寫作 2 支 Opus 讀 `WRITER-DISPATCH.md` → `qa-batch out`、`qa-check-research`、`fix-spacing`。派工加：「note 裡的媒體名與媒體榜單名次整句不寫，不要只換掉媒體名；不用『據說／據傳』」。
 6. 主線：試聽（`preview-override.json` → `picks.mjs`）、封面（人工身分卡一定要 `covers.json`；上線前 **live-check 每張封面 URL**，CAA 原圖 500 就換 `/release/<id>/<imgid>-500.jpg` 縮圖或 Apple／Discogs）、三軸（冷門軸錨點制 §0.8，`ratings-override.json`）、逐張審稿（媒體年終榜整句刪、「據說」刪、單源評價句刪）→ `build-manifest.mjs <批>` → `scripts/verify-album-onboarding.mjs`。
-7. 寫入照 `REMOTE_RUNBOOK.md` 與 ts11 先例：`cp` manifest 到根目錄 → `publish-manifest`（乾跑）→ `push-card-catalog-patches publish-stage/<manifest 名>/card-catalog-patches.json` → `kv-token-check` → `kv-from-manifest` → `wrangler@4 kv bulk put … --remote` → `verify-wave-kv` → `--write-preview` → `build-apple-audio-runtime-map` → `--write-pool` → `build-seed-genres` → `mark-manifest-published --catalog --kv --preview` → `verify --published`。
+7. 寫入照 `REMOTE_RUNBOOK.md` 與 ts11 先例：`cp` manifest 到根目錄 → `publish-manifest`（乾跑）→ `push-card-catalog-patches publish-stage/<manifest 名>/card-catalog-patches.json` → `kv-token-check` → `kv-from-manifest` → `wrangler@4 kv bulk put … --remote` → `verify-wave-kv` → `--write-preview` → `fetch-apple-album-urls`（補 Apple 網址名稱段，漏了 Apple 按鈕會灰）→ `build-apple-audio-runtime-map` → `--write-pool` → `build-seed-genres` → `mark-manifest-published --catalog --kv --preview` → `verify --published`。
 8. 子曲風：`node batch-progress/mood-cells-20261022/warm-batch.mjs https://dip-vinyl-worker.kubinice06.workers.dev <批>` → `build-genre-tree.mjs --pull --write` → `build-draw-covers.mjs --pull --write`。標籤推不出節點的藝人寫進 `genre-l3-artist-map.json`。
 9. **情緒評分（這條線的驗收）**：上線當天建 `batch-progress/mood-axes/score-<批>/`（照 `score-md/` 的 select／DISPATCH／merge 與 `score-md34/landing.mjs`），代理照 `score500/BRIEF.md` 打分（**含 10-22 的兩條新規則**）→ merge 出 `scored-<批>.json` → `build-priors.mjs`（**2026-10-22 起自動讀所有 `score*/scored-*.json`，不要改它**）→ `build-scale.mjs v0` → `scripts/build-card-moods.mjs` gate 綠。
    **算落格率＝落目標格張數／上線張數，寫進該批 rulings.md 與本檔進度表**。低於 40% 的場景下一批換場景；低於 30% 的線停下來回報店主。
@@ -106,7 +106,7 @@
 
 同時有 6 個工作階段在寫同一批共用檔，合併前一定 `git fetch origin && git merge origin/main`，衝突照下面處理，**不要手改產生檔**：
 - `PROJECT_MEMORY.md`、`SCENES.md`、本檔：兩邊都留（SCENES.md 各改各的列，不會真的撞同一行）。
-- `seed_cards.json`、`card-preview-status.js`、`data/apple-audio-map-v1.json`：取 origin/main 版（`git checkout --theirs`），再對**自己的** manifest 重跑 `publish-manifest.mjs <manifest> --write-preview`、`--write-pool`（冪等，只補自己的列），然後 `build-apple-audio-runtime-map.mjs`、`build-seed-genres.mjs`。
+- `seed_cards.json`、`card-preview-status.js`、`data/apple-audio-map-v1.json`：取 origin/main 版（`git checkout --theirs`），再對**自己的** manifest 重跑 `publish-manifest.mjs <manifest> --write-preview`、`--write-pool`（冪等，只補自己的列），然後 `fetch-apple-album-urls.mjs`、`build-apple-audio-runtime-map.mjs`、`build-seed-genres.mjs`。
 - `data/mood/*.json`、`batch-progress/mood-axes/{priors,scale}-v0-report.json`：取 origin/main 版，重跑 `build-priors.mjs` → `build-scale.mjs v0` → `scripts/build-card-moods.mjs`（會把兩邊的 `score*/scored-*.json` 都讀進來）。
 - `genre-tree.json`、`card-subgenres.json`、`draw-covers/*`：取 origin/main 版，重跑 `build-genre-tree.mjs --pull --write`、`build-draw-covers.mjs --pull --write`。
 - `genre-l3-artist-map.json`、`rock-asia-country-map.json`：兩邊的鍵都留（JSON 合併後 `node -e` 驗一次能 parse）。

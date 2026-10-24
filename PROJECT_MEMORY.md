@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜店主指定上架：Miles Davis《Miles: The New Miles Davis Quintet》（add-20261024-miles，卡池 21,849 → 21,850）
+
+- **起因**：店主問 Miles Davis 為何卡池這麼少（實際 50 張，頻率光譜搜尋只列 8 筆），「The New Miles Davis Quintet 補上就好」。同時提的 Fishmans 三部曲早已在池，不重做。
+- **身分**：MB rg `0c0ccda7-…`（title「Miles」、1956-04、Prestige PRLP 7014）；盤名取再版名「Miles: The New Miles Davis Quintet」，queryAlias 收「Miles」。掛名 Miles Davis 照 Cookin'／Relaxin' 先例。
+- **三軸**：3/3/2（Last.fm 1,506 是再版拼法，比照同期 Prestige 四張），rare；頂點 0。情緒 (2.8, −1.0, 0.4) 放鬆，比照同期四張，寫 `overrides.json`。
+- **簡介產線**：研究 1 組（Sonnet，12 facts full；推翻卡單「第一張 12 吋」）→ 鉤子主線自寫 → 寫作 1 組（Opus）→ 主線審稿改第二句 1 處，237 字。
+- **寫入**：prepare 0 error → card_catalog 1／1 → KV 1 鍵回讀一致 → 試聽 Apple us 1443120095（6/6）＋補 Apple 網址名稱段 → seed 1 列 → published gate 0 error；子曲風 jazz/bop 等、genre-tree／draw-covers 重建。
+- **上架流程修正**：`publish-manifest --write-preview` 寫進的列不帶 `collectionViewUrl`，是 Apple 按鈕灰掉的根源；`publish-manifest` 的提示與 `HANDOFF-mood-cells-line.md` 第 7 步／合併規矩補上 `fetch-apple-album-urls.mjs`，`build-apple-audio-runtime-map.mjs` 會印出缺名稱段張數並警告。
+- **主要檔案**：`batch-progress/add-20261024-miles/`、`onboarding-manifest-add-20261024-miles-20261024.json`、`desc-tools/batches/*/add-20261024-miles*`、`seed_cards.json`、`data/apple-audio-*.json`、`data/mood/{overrides,card-moods}.json`、`card-subgenres.json`、`genre-tree.json`、`draw-covers/*`、`scripts/{publish-manifest,build-apple-audio-runtime-map}.mjs`、`batch-progress/HANDOFF-mood-cells-line.md`
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；verify-album-onboarding prepare／published 0 error；verify-wave-kv 1/1；build-card-moods 錨點 104/104、座標 21,850/21,850。
+
 ### 2026-10-24｜dip-vinyl-shop｜串流按鈕盤點：Apple 直連補 3,645 張、card_catalog 補封面 94 張
 
 - **起因**：店主截圖 Wun Two《forest folks》Apple／Spotify 灰掉，「檢查有哪些明明有卻顯示沒有串流連結」；另「fishmans 也沒有封面」。

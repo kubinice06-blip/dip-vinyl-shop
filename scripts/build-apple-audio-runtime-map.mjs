@@ -57,5 +57,9 @@ console.log(JSON.stringify({
   sourceEntries:Object.keys(source.entries).length,
   matched,
   written:Object.keys(entries).length,
-  skippedInvalid
+  skippedInvalid,
+  missingSlug:Object.values(entries).filter(entry => !entry[3]).length
 }));
+// 名稱段空白的列，前台 Apple 串流按鈕會灰（下架的除外）；多半是忘了先跑 fetch-apple-album-urls.mjs
+const unfetched = Object.values(source.entries).filter(entry => entry?.status === 'matched' && !entry.collectionViewUrl && !entry.collectionGone).length;
+if (unfetched) console.warn(`⚠ ${unfetched} 張還沒有 Apple 專輯網址：先跑 node scripts/fetch-apple-album-urls.mjs 再重建`);
