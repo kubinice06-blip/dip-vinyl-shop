@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜情緒薄格線第 15 輪派工（最後一輪）：店主「做完第 15 輪後暫停工作，盤點一下收了什麼」
+
+- **店主指示**：第 15 輪做完就停止派工，改做全線盤點。
+- **現況**：mc43／md31 收工（36／36、26／24，上線／落格）；恍惚 1,631、頹靡 1,565、冷冽 1,556。第 14 輪 mc44／md32、ml58／mc45 仍在跑。
+- **第 15 輪**：空位先派 mc46 現代室內樂第三波（mc43 高產）＋md33 冷 post-rock 第三波；第 14 輪兩個收工後各補一個第 15 輪工作階段，三個全部收工即停。
+- **主要檔案**：`batch-progress/mood-cells-20261022/SCENES.md`。
+- **驗證**：純佇列文件變更；新條號 22041–22200 不與既有重疊。
+
 ### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 13 輪 mc43／md31：現代室內樂 36 張、無鼓 drone 26 張上線，落格 36/36、24/26
 
 - **內容**：店主「三個情緒薄格各補到約 2,000」第 13 輪，本工作階段負責 mc43、md31（評分照 10-23 體感標準）。mc43（`add-20261023-mc43`，冷冽）：Arditti（Neuwirth、Nancarrow、Guerrero、Reynolds、Carter、Mexico）、Klangforum Wien（Aperghis、Lachenmann《Mouvement》、Reiter）、ELISION、ensemble recherche、Hodges、Holliger ×2、Diotima ×2、ensemble mosaik ×2、Michel-Dansac、Veale《Pynchon Cycle》、asamisimasa、Mari Poll、Pacifica《Carter 1 & 5》、Cuckson、LaSalle、EIC《Hurel》、Nancarrow Vol.4、Knox、Damiens、Gil、Dillon、Oslo Sinfonietta、Poppe《Interzone》、Ensemble 21、Mode《Lachenmann》、Huebner《Reynolds》。md31（`add-20261023-md31`，頹靡）：Anjou ×2、Growing、Rothko ×2、Windy & Carl ×2、Matt Elliott、Dissolve、Main ×4、E.A.R. ×4、Robert Hampson ×2、Lull ×2、ELEH ×3、Maeror Tri、Troum。
