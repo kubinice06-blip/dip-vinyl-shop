@@ -8,11 +8,12 @@
 - **主要檔案**：`batch-progress/mood-cells-20261022/INVENTORY.md`（新）、`SCENES.md`（頂端加暫停註記）。
 - **驗證**：每批明細由 `SCENES.md` 場景表自動彙整（scratchpad 腳本），合計與各批 PROJECT_MEMORY 紀錄對得上；三格現值取自 ml59／mc48 收尾紀錄。
 
-### 2026-10-24｜dip-vinyl-shop｜Apple 試聽索引補比對：從沒對過 Apple 的卡逐張重搜（進行中，第 1 批）
+### 2026-10-24｜dip-vinyl-shop｜Apple 試聽索引補比對：從沒對過 Apple 的卡逐張重搜（進行中，第 1–2 批）
 
 - **起因**：串流按鈕盤點後，卡池仍有 5,191 張 Apple 按鈕灰（索引沒列 4,444、unavailable 592、error 151）。
 - **做法**：worktree `/home/user/dip-apple`、分支 `claude/apple-map-fill`，跑既有 `scripts/build-apple-audio-map.mjs --limit=800 --delay-ms=5000`（TW／US 搜尋、分數 ≥85 自動配對），再 `fetch-apple-album-urls.mjs` 補名稱段、重建 runtime。合併時以 origin/main 版為底，用 scratchpad 的 `apple-merge.mjs` 只套回本線新增或升級成 matched 的列。
 - **第 1 批**：800 張，matched 177、unavailable 622、error 1；`verify-apple-audio-map --sample=12` 抽樣 12／12 試聽可播（structuralProblems 都是舊有人工列缺 score 欄，非本批）。runtime 16,919 列。
+- **第 2 批**：800 張，matched 176、unavailable 623、review 1；主線抽 12 張試聽 HEAD 12／12、盤名對得上（費玉清《長江水》、じゃがたら《南蛮渡来》、Lipatti Grieg／Schumann 等）。
 - **主要檔案**：`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`
 - **驗證**：抽樣 12／12；runtime 重建 missingSlug 161（皆下架）。
 
