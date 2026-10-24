@@ -1,0 +1,1556 @@
+{
+ "group": "ml58",
+ "factions": [
+  {
+   "id": "jv",
+   "zh": "JA roots 人聲慢盤 1976–85 二線歌手與和聲組（Channel One／Tubby’s／Black Ark／Junjo 混音）",
+   "why": "主場景：大名已在池，挖二線；只收有 Tubby’s／Scientist／Jammy／Black Ark／Channel One 濕混音 credit 的",
+   "count": 28
+  },
+  {
+   "id": "sc",
+   "zh": "showcase／discomix 人聲＋dub 接續正規專輯",
+   "why": "擴寫 2：人聲接 dub 版，混音室回音放大，池中同型（Junior Delahaye、Barry Brown showcase）y 1.3–1.4",
+   "count": 5
+  },
+  {
+   "id": "uk",
+   "zh": "UK roots／Ariwa 人聲慢盤",
+   "why": "擴寫 3：Misty in Roots、Reggae Regular、Ariwa 女聲；Mad Professor 類比混音",
+   "count": 6
+  },
+  {
+   "id": "dub",
+   "zh": "暖 dub：旋律撐住的器樂 dub",
+   "why": "擴寫 4：店主要多 dub，只收管樂／旋律帶著走的暖 dub，冷硬 steppers 不收",
+   "count": 4
+  },
+  {
+   "id": "rv",
+   "zh": "當代類比 roots 復興人聲／dub",
+   "why": "擴寫 5：Easy Star／Daptone 圈、西班牙 A-Lone Ark 的類比磁帶濕混音",
+   "count": 3
+  }
+ ],
+ "albums": [
+  {
+   "artist": "The Morwells",
+   "album": "Cool Runnings",
+   "year": 1979,
+   "label": "Bushays",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Morwells 第二張，Maurice Wellington 自製、Channel One 錄音，Discogs 風格標 Dub，人聲曲帶 dub 化回音與厚低音",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "Channel One 錄，dub 化混音，低音厚，和聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3180e4ab-623b-47b3-8fb2-e186fe9235be",
+    "https://coverartarchive.org/release-group/3180e4ab-623b-47b3-8fb2-e186fe9235be/front",
+    "https://www.discogs.com/master/1673556",
+    "https://www.discogs.com/release/2110183",
+    "https://i.discogs.com/P_Pbz7kSLjV1KBiJA3JVjy2sM9RWkz_0yBWrACRvnV4/rs:fit/g:sm/q:90/h:595/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMTAx/ODMtMTQzNzM4NDU0/OS0zNjM0LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "3180e4ab-623b-47b3-8fb2-e186fe9235be",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 風格只標 Dub，若人聲比重低 z 可能偏冷，研究層確認"
+  },
+  {
+   "artist": "Rod Taylor",
+   "album": "If Jah Should Come Now",
+   "year": 1979,
+   "label": "Hitrun / Daddy Kool",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Rod Taylor 唯一正規專輯，Channel One 錄音、Harry J 混音（Discogs 註記），Discogs 風格標 Roots Reggae＋Dub，甜美高音壓在厚低頻與回音上，roots 人聲慢盤的二線名盤",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.7,
+    "why": "Channel One 錄、Harry J 混，dub 化低頻，人聲甜"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/828a4cba-7b71-435b-98ed-2e287b541de6",
+    "https://www.discogs.com/master/556001",
+    "https://www.discogs.com/release/1310923",
+    "https://i.discogs.com/CwrolHdWnx8CpaGhy0Ii0rU8YUYKVMq3WRkjthGdipY/rs:fit/g:sm/q:90/h:350/w:350/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMTA5/MjMtMTIwODYyNzU0/OS5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "828a4cba-7b71-435b-98ed-2e287b541de6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB rg 無首發日期，年份取 Discogs master 1979"
+  },
+  {
+   "artist": "Ras Michael & The Sons of Negus",
+   "album": "Love Thy Neighbour",
+   "year": 1981,
+   "label": "Jah Life",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "nyabinghi 鼓隊 Ras Michael 在 Black Ark 錄、由 Lee Perry 混音（Discogs credit：Engineer [Mix] Lee Perry、Recorded At The Black Ark），手鼓與合唱被 Perry 的相位與殘響霧包住，比池中乾淨的《Rastafari》厚得多",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.2,
+    "z": 0.7,
+    "why": "nyabinghi 手鼓＋Black Ark 混音霧，聖歌式合唱溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9a99c9cb-9e68-3d3e-a0e9-c9aca1088ef9",
+    "https://coverartarchive.org/release-group/9a99c9cb-9e68-3d3e-a0e9-c9aca1088ef9/front",
+    "https://www.discogs.com/master/195622",
+    "https://www.discogs.com/release/2039400",
+    "https://i.discogs.com/7C3k_-cBv2IvIGkluWTN90epnzQAf9MwNCYiBG1fLbY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMzk0/MDAtMTI2MDE5NDQ2/OC5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "9a99c9cb-9e68-3d3e-a0e9-c9aca1088ef9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Ras Michael",
+   "uncertain": "年份：Discogs 最早版本 Jah Life 1981（註記為 first press），MB rg 首發 1979，研究層定；同藝人《Rastafari》y 0.1 判輕，本張靠 Black Ark 混音拉重"
+  },
+  {
+   "artist": "Prince Alla",
+   "album": "Heaven Is My Roof",
+   "year": 1978,
+   "label": "New Star / Stars",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Tappa Zukie 製作，Discogs 註記「Recorded At Black Ark and Mixed at Tubby's」，Prince Alla 哀婉的高音浮在 Tubby's 回音與厚低音上，roots 人聲二線經典",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": 0.6,
+    "why": "Black Ark 錄、Tubby's 混，低頻霧，哀而溫的人聲"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/354420",
+    "https://www.discogs.com/release/3412712",
+    "https://i.discogs.com/8nVgtP_em8MJMIBORr9CZE3oQU1VFQaFUZ6IcAvskiU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0MTI3/MTItMTMyOTQxOTc3/My5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Prince Alla\"",
+     "releasegroup:\"Heaven Is My Roof\""
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 僅有一個未標 primary-type 的 rg（55a1152b-0391-415d-90eb-ee770acc743d），無 Album 型 rg；身分以 Discogs master 354420（1978 New Star／Stars 原版）為準"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/354420",
+    "https://www.discogs.com/release/3412712"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB rg 未標類型，走人工身分"
+  },
+  {
+   "artist": "Junior Ross & The Spears",
+   "album": "Babylon Fall",
+   "year": 1992,
+   "label": "Stars",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Tappa Zukie 製作的和聲組專輯，Discogs 註記「Recording at Channel One Studio. Voiced and mixed at Tubby's」，混音 King Jammy、錄音 Scientist，慢板 roots 和聲壓在厚低音上",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": 0.6,
+    "why": "Channel One 節奏，Tubby's 人聲與混音，低頻厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9407acf7-a7b2-4189-a275-672ff3e8468b",
+    "https://coverartarchive.org/release-group/9407acf7-a7b2-4189-a275-672ff3e8468b/front",
+    "https://www.discogs.com/master/357313",
+    "https://www.discogs.com/release/1616359",
+    "https://i.discogs.com/nxQQgHNIlCmouuYt34RYkYkxJQn7JXXcM5zBA4-dX38/rs:fit/g:sm/q:90/h:595/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MTYz/NTktMTQ4NDk2NTIx/My0yNjgyLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "9407acf7-a7b2-4189-a275-672ff3e8468b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Junior Ross",
+   "uncertain": "年份：Discogs 最早標日期的版本皆 1992 且多標 Reissue，原版 Stars 無日期（推測 70 年代末），研究層確認首發年"
+  },
+  {
+   "artist": "Noel Ellis",
+   "album": "Noel Ellis",
+   "year": 1983,
+   "label": "Summer Records",
+   "country": "ca",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Alton Ellis 之子在多倫多 Summer Sound 錄的唯一專輯，Jerry Brown／Willi Williams 混音，Discogs 風格標 Roots Reggae＋Dub，2006 Light in the Attic 重發；慢板 roots 人聲加 dub 化段落，低音厚、殘響長 〔聲音證據：Light in the Attic 重發文案：\"dub-loved, heavy yet ethereal tracks\"（Forced Exposure 目錄頁）〕",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": 0.7,
+    "why": "多倫多類比錄音，低音深、dub 化混音，人聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a884a14f-945b-42c5-86eb-200f2410577e",
+    "https://coverartarchive.org/release-group/a884a14f-945b-42c5-86eb-200f2410577e/front",
+    "https://www.discogs.com/master/175484",
+    "https://www.discogs.com/release/3229801",
+    "https://i.discogs.com/lwOWz3L9pngJ6Cq-1wMPUNz5TyXK4c0YBd4JaPMijrU/rs:fit/g:sm/q:90/h:559/w:559/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyMjk4/MDEtMTcwNTY3MDE2/NC03NDE4LmpwZWc.jpeg",
+    "https://forcedexposure.com/Catalog/ellis-noel-noel-ellis-lp/LITA.020LP.html"
+   ],
+   "mbRgMbid": "a884a14f-945b-42c5-86eb-200f2410577e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB rg 日期是 2006 重發，原盤 1983 取 Discogs；Forced Exposure 文案稱 1979 年錄音"
+  },
+  {
+   "artist": "Misty in Roots",
+   "album": "Earth",
+   "year": 1983,
+   "label": "People Unite",
+   "country": "gb",
+   "faction": "uk",
+   "genres": [
+    "world"
+   ],
+   "why": "Southall 的 UK roots 代表樂團第二張錄音室專輯，自家 People Unite 發行，Discogs 風格標 Reggae＋Dub；慢板 roots 加 dub 化間奏，低頻厚、和聲溫，池中同團現場盤 y 1.0 落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "UK roots 樂團慢板，低音厚，dub 段落，和聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ed9a9442-de28-3551-9e0e-adb41cf44c0d",
+    "https://coverartarchive.org/release-group/ed9a9442-de28-3551-9e0e-adb41cf44c0d/front",
+    "https://www.discogs.com/master/292082",
+    "https://www.discogs.com/release/671343",
+    "https://i.discogs.com/G3gY3ZurtsEsEXRThSIQZYoQqeFsm61m8-YTFvd2JQg/rs:fit/g:sm/q:90/h:595/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3MTM0/My0xMzI1MzI4MDgx/LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "ed9a9442-de28-3551-9e0e-adb41cf44c0d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "1985《Musi-O-Tunya》較精修，未提"
+  },
+  {
+   "artist": "Ticklah",
+   "album": "Ticklah vs. Axelrod",
+   "year": 2007,
+   "label": "Easy Star",
+   "country": "us",
+   "faction": "rv",
+   "genres": [
+    "world"
+   ],
+   "why": "Daptone／Easy Star 圈的 Victor Axelrod 以 Ticklah 名義的類比 roots／dub 專輯，自混自錄於 Don't Trip Studio，旋律帶著走的暖 dub 加客席人聲，當代類比復興代表",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": 0.6,
+    "why": "類比磁帶 dub，Rhodes／管樂旋律，低頻暖厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/33fb26e8-206c-3cf5-a18f-5469305b5b08",
+    "https://coverartarchive.org/release-group/33fb26e8-206c-3cf5-a18f-5469305b5b08/front",
+    "https://www.discogs.com/release/1128993",
+    "https://i.discogs.com/5RTu9gguAW0UtGvVUvuxzRjJtRKUfFQM50dL7dZ9DnM/rs:fit/g:sm/q:90/h:523/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMjg5/OTMtMTU4NzU5Nzg4/Ny01NzcxLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "33fb26e8-206c-3cf5-a18f-5469305b5b08",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 無 master，僅 CD release"
+  },
+  {
+   "artist": "Seke Molenga & Kalo Kawongolo",
+   "album": "From the Heart of the Congo",
+   "year": 1979,
+   "label": "Runn",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "兩位剛果歌手在 Black Ark 由 Lee Perry 編曲、錄音的整張專輯（Discogs：Engineer Lee Perry、Recorded At The Black Ark），林加拉語人聲浮在 Perry 招牌的相位與殘響霧裡，溫而迷濛",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": 0.7,
+    "why": "Black Ark 相位霧＋剛果人聲，慢，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b450a692-12f6-39d1-8752-d1ef03124735",
+    "https://coverartarchive.org/release-group/b450a692-12f6-39d1-8752-d1ef03124735/front",
+    "https://www.discogs.com/release/2062063",
+    "https://i.discogs.com/zFs5QSJ6ZrVqZds9uDGXJqCZbZ3Rf31QAu4y0d-O0qA/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNjIw/NjMtMTQzMzI5MDcw/MC0xOTA2LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "b450a692-12f6-39d1-8752-d1ef03124735",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Lee Perry",
+   "uncertain": "Discogs 只找到 CD 重發 release；MB 首發 1979。藝人鍵可能需掛 Lee Perry 別名"
+  },
+  {
+   "artist": "Tommy McCook & The Aggrovators",
+   "album": "Brass Rockers",
+   "year": 1975,
+   "label": "Total Sounds",
+   "country": "jm",
+   "faction": "dub",
+   "genres": [
+    "world"
+   ],
+   "why": "Bunny Lee 與 King Tubby 合作的器樂盤（原版封面標「Bunny Lee & King Tubby Present」），McCook 的次中音薩克斯在 Aggrovators 節奏上吹旋律，Tubby 混音的回音與低頻，暖 dub 而非冷硬 steppers",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": 0.6,
+    "why": "Tubby 混的 dub，次中音薩克斯旋律帶著走，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f44b39c0-03de-4584-9c93-366e9a634e80",
+    "https://coverartarchive.org/release-group/f44b39c0-03de-4584-9c93-366e9a634e80/front",
+    "https://www.discogs.com/master/266534",
+    "https://www.discogs.com/release/3858156",
+    "https://i.discogs.com/aXQvHl7Z6XubC719uNhxQQ7tSMz9JxY9_E_QqY2buHA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NTgx/NTYtMTQzOTMzNDc0/My0zNDA2LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "f44b39c0-03de-4584-9c93-366e9a634e80",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Tommy McCook",
+   "uncertain": "MB rg 日期 2010（另有 1991 rg 掛 Bunny Lee＋King Tubby），原盤 1975 取 Discogs；同人《Blazing Horns》y 0.5 判輕，本張是 Tubby 混音的 dub 盤"
+  },
+  {
+   "artist": "Peter Broggs",
+   "album": "Rastafari Liveth!",
+   "year": 1982,
+   "label": "Real Authentic Sound",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "RAS 早期發行，Channel One 錄音、Scientist 混音（Discogs credit），Discogs 風格標 Dub＋Roots Reggae，Broggs 溫厚的 roots 唱腔壓在 Roots Radics 厚低音上",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": 0.6,
+    "why": "Roots Radics 慢拍，Scientist 混音，低頻厚、回音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f3677031-ef05-3bc5-98e0-529876bb678f",
+    "https://coverartarchive.org/release-group/f3677031-ef05-3bc5-98e0-529876bb678f/front",
+    "https://www.discogs.com/master/375852",
+    "https://www.discogs.com/release/2629131",
+    "https://i.discogs.com/KcNT0lfYIny0xxDkC8hNGRBE6u0aZxfZnBN0j7Uf0a0/rs:fit/g:sm/q:90/h:450/w:450/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2Mjkx/MzEtMTI5NDAyMzM5/OC5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "f3677031-ef05-3bc5-98e0-529876bb678f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Peter Broggs",
+   "album": "Progressive Youth",
+   "year": 1979,
+   "label": "Shashamane Ethiopia",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "首張專輯，Bingy Bunny（Eric Lamont）製作，Channel One 錄音、King Tubby's 混音、Scientist 掌混（Discogs credit），慢板 roots 人聲加 Tubby's 回音",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "Channel One 錄、Tubby's 混，低音厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d71d38a8-8293-3705-950e-4fd67858a9b3",
+    "https://www.discogs.com/master/469481",
+    "https://www.discogs.com/release/3800186",
+    "https://i.discogs.com/fb8jiZktSyas6efcUYQ-jSRaA26ke12e_3cmITkSDS0/rs:fit/g:sm/q:90/h:283/w:274/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MDAx/ODYtMTM0Njk0NTM4/MS05OTQyLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "d71d38a8-8293-3705-950e-4fd67858a9b3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Earl Sixteen",
+   "album": "Reggae Sound",
+   "year": 1981,
+   "label": "Dread at the Controls",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Mikey Dread 製作，Channel One 錄音，九首中六首在 King Tubby's 由 Scientist 混音（Discogs 逐軌註記），Earl 16 甜美高音壓在厚低頻與回音上",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Channel One 節奏，Tubby's／Scientist 混，甜高音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f577d154-a879-4250-9064-ef8db6de2751",
+    "https://coverartarchive.org/release-group/f577d154-a879-4250-9064-ef8db6de2751/front",
+    "https://www.discogs.com/master/327903",
+    "https://www.discogs.com/release/1843024",
+    "https://i.discogs.com/jIMBfwHnuD7x62VnCwlV04PytAPT0-f38OPEBDn_rIg/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NDMw/MjQtMTI0NzIzMjky/MS5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "f577d154-a879-4250-9064-ef8db6de2751",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "三軌在 Aquarius 混，較乾；MB rg 日期 2011 為重發"
+  },
+  {
+   "artist": "Michael Prophet",
+   "album": "Certify",
+   "year": 1983,
+   "label": "Burning Sounds",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Junjo Lawes 製作、Scientist 混音、Channel One 錄混（Discogs credit），同人池中四張 y 1.0–1.3 落恍惚，本張同一套 Roots Radics 厚低音與回音",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "Junjo＋Roots Radics，Scientist 混，低頻厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/85945479-a7b5-4b31-b961-8eead9222c79",
+    "https://www.discogs.com/master/950812",
+    "https://www.discogs.com/release/844660",
+    "https://i.discogs.com/DkxEWGcUSQ3XIRY61BWC18WsbLqa_RGwHSEdZTpV5mc/rs:fit/g:sm/q:90/h:350/w:350/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg0NDY2/MC0xMjM5NjU0NDUy/LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "85945479-a7b5-4b31-b961-8eead9222c79",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB rg 日期 2015 為重發"
+  },
+  {
+   "artist": "Triston Palma",
+   "album": "Show Case",
+   "year": 1982,
+   "label": "Midnight Rock",
+   "country": "jm",
+   "faction": "sc",
+   "genres": [
+    "world"
+   ],
+   "why": "Jah Thomas 製作，封面副題「In a Roots Radics Drum and Bass」，Channel One 錄、King Tubby's 人聲與混音，混音者 King Tubby／Scientist（Discogs 註記），人聲與 dub 版交替",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.4,
+    "z": 0.7,
+    "why": "showcase 人聲接 dub，Tubby's／Scientist 混"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f0ae1645-2b58-4cef-bd34-6a42a9b8722f",
+    "https://www.discogs.com/master/115346",
+    "https://www.discogs.com/release/1610802",
+    "https://i.discogs.com/MFlAetM1DejtiGOqQ5dt2jXVOlDKFiw6cph4idxjVLs/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MTA4/MDItMTM2MDc5MTAw/MC00NzEwLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "f0ae1645-2b58-4cef-bd34-6a42a9b8722f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Tristan Palmer",
+   "uncertain": "Discogs 正規名 Tristan Palmer；與 ml9《Presenting Triston Palma》不同盤"
+  },
+  {
+   "artist": "Triston Palma",
+   "album": "Joker Lover",
+   "year": 1982,
+   "label": "Jah Guidance",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Linval Thompson 製作，Channel One 錄音、Peter Chemist 混音（Discogs），早期 dancehall 前夕的 roots 情歌慢盤，厚低音配甜高音",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Linval 製作，Channel One 錄，Peter Chemist 混，甜"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/340930",
+    "https://www.discogs.com/release/1626634",
+    "https://i.discogs.com/x2QBFxvR5QIrviic2OUgIbszoZYT3bOxz6pExQ2Elfc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MjY2/MzQtMTIzMzA1MDkx/MS5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Triston Palma\"",
+     "releasegroup:\"Joker Lover\""
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB release-group 查無此盤（藝人或作品方向皆無 Album 型條目），身分以 Discogs master／release 為準"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/340930",
+    "https://www.discogs.com/release/1626634"
+   ],
+   "releaseException": "",
+   "queryAlias": "Tristan Palmer",
+   "uncertain": "MB 查無；「Joker Smoker」是另一張，勿混"
+  },
+  {
+   "artist": "Jimmy Riley",
+   "album": "Showcase",
+   "year": 1978,
+   "label": "Burning Sounds",
+   "country": "jm",
+   "faction": "sc",
+   "genres": [
+    "world"
+   ],
+   "why": "Jimmy Riley 自製的 showcase，Harry J 錄音、Prince Jammy 在 King Tubby's 混音（Discogs credit），風格標 Roots Reggae＋Dub，柔情人聲接回音 dub 版",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": 0.8,
+    "why": "Harry J 錄，Prince Jammy 在 Tubby's 混，人聲接 dub"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/318452b1-7db8-42b8-9bc2-65881e1070c0",
+    "https://www.discogs.com/master/549866",
+    "https://www.discogs.com/release/3985247",
+    "https://i.discogs.com/oqiQalXSeY-rlw96WD0iGaia61LHJOLyjlgAgFF-yV0/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5ODUy/NDctMTM1MTQyNzE4/My05MTc3LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "318452b1-7db8-42b8-9bc2-65881e1070c0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Uniques",
+   "album": "Show Case - Volume One",
+   "year": 1978,
+   "label": "Third World",
+   "country": "jm",
+   "faction": "sc",
+   "genres": [
+    "world"
+   ],
+   "why": "Cornell Campbell／Jimmy Riley／Skully Simms 的和聲組 showcase，Bunny Lee 製作、Prince Jammy 在 King Tubby's 混音（label 註「Mixed at King Tubby's Studio」），甜和聲接回音 dub",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": 0.8,
+    "why": "三重唱＋Tubby's 混音 dub 版，和聲甜"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1008613",
+    "https://www.discogs.com/release/2128567",
+    "https://i.discogs.com/7ZmP92aYE0-T_OvVSiXHvq46MyYA-Z2tkW16AUCLkcE/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMjg1/NjctMTI2NTU2OTA2/OC5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"The Uniques\"",
+     "releasegroup:\"Show Case - Volume One\""
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB release-group 查無此盤（藝人或作品方向皆無 Album 型條目），身分以 Discogs master／release 為準"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1008613",
+    "https://www.discogs.com/release/2128567"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 查無"
+  },
+  {
+   "artist": "Cedric Im Brooks",
+   "album": "United Africa",
+   "year": 1978,
+   "label": "Water Lily",
+   "country": "jm",
+   "faction": "dub",
+   "genres": [
+    "world"
+   ],
+   "why": "Skatalites 系薩克斯手 Cedric Brooks 與 Light of Saba 的靈性 roots 盤，後由 Wackie's 發行（Discogs credit 列 Lloyd Barnes 系），風格標 Roots Reggae＋Dub，管樂旋律帶著走、低頻厚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "管樂旋律＋nyabinghi 手鼓，dub 化低頻，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/91121199-2ce1-4296-bd48-99cdfa6593dd",
+    "https://coverartarchive.org/release-group/91121199-2ce1-4296-bd48-99cdfa6593dd/front",
+    "https://www.discogs.com/master/256480",
+    "https://www.discogs.com/release/1120234",
+    "https://i.discogs.com/w7zL0zBvGZE2PUFyGFqGH5Mq_ezUC3Uscehhugt0saM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMjAy/MzQtMTQwMTM2MDQ0/NC03MDM3LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "91121199-2ce1-4296-bd48-99cdfa6593dd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Cedric 'Im' Brooks",
+   "uncertain": "混音 credit 不全，研究層請確認是否 Wackie's 混音"
+  },
+  {
+   "artist": "The Heptones",
+   "album": "On the Run",
+   "year": 1982,
+   "label": "Shanachie",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Heptones 晚期與 Bullwackie（Lloyd Barnes）共同製作的專輯，Channel One／Tuff Gong 錄音，Wackie's 系的厚低音與殘響，池中同團《Party Time》（Black Ark）y 1.2 落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.9,
+    "why": "Wackie's 共同製作，厚低音慢板，和聲甜"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/97c1d743-8d7b-4473-b591-36f3bfd2e631",
+    "https://coverartarchive.org/release-group/97c1d743-8d7b-4473-b591-36f3bfd2e631/front",
+    "https://www.discogs.com/master/443269",
+    "https://www.discogs.com/release/1976655",
+    "https://i.discogs.com/b99ts3DkGaZgpCoWKVKKhxcZ2bvaXmncgtEWLFqGW2o/rs:fit/g:sm/q:90/h:595/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5NzY2/NTUtMTM5MDY5Nzkw/MC04NDM5LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "97c1d743-8d7b-4473-b591-36f3bfd2e631",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同團《Night Food》y 0.0 判輕；本張重量取決於 Wackie's 混音，研究層確認"
+  },
+  {
+   "artist": "Junior Keatting",
+   "album": "Weekend Lover",
+   "year": 1980,
+   "label": "Tad's Record",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Jah Thomas 製作，Discogs 註記「Rhythm tracks recorded at Channel One / Voiced and mixed at King Tubby Studio」、混音 Scientist，風格標 Roots Reggae＋Dub，roots lovers 情歌慢盤",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": 0.9,
+    "why": "Channel One 節奏，Tubby's 人聲與 Scientist 混音，情歌"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c6b4ffca-5179-4b2e-9e35-f14c8d980fb3",
+    "https://coverartarchive.org/release-group/c6b4ffca-5179-4b2e-9e35-f14c8d980fb3/front",
+    "https://www.discogs.com/master/531774",
+    "https://www.discogs.com/release/1685669",
+    "https://i.discogs.com/IbyJnYl8iZMB7qGwT-jtn1HsKLO9sxw0kJUtG1MJW5k/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2ODU2/NjktMTI0MTgxNDk0/NC5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "c6b4ffca-5179-4b2e-9e35-f14c8d980fb3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Junior Keating",
+   "uncertain": ""
+  },
+  {
+   "artist": "Freddie McKay",
+   "album": "Tribal Inna Yard",
+   "year": 1985,
+   "label": "Move / Live & Learn",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Linval Thompson 製作，Channel One 錄音、Scientist／Bunny Tom Tom 掌機（Discogs credit），Roots Radics 時期的類比厚低音，McKay 的靈魂唱腔",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.7,
+    "why": "Linval 製作，Channel One 錄，Scientist 混，厚低音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/de7eff2b-1cef-4f68-8551-9f35aefd15b2",
+    "https://www.discogs.com/master/532956",
+    "https://www.discogs.com/release/2815935",
+    "https://i.discogs.com/QHLwKIJuDcgOngyXT99w3GsYGEd5Ry1OWmgD1-dFEY4/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MTU5/MzUtMTM2Mjg2Njgw/MS0zOTYwLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "de7eff2b-1cef-4f68-8551-9f35aefd15b2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "1985 年份但仍是 Channel One 類比錄音（非數位），研究層確認"
+  },
+  {
+   "artist": "Well Pleased & Satisfied",
+   "album": "Love Train",
+   "year": 1979,
+   "label": "Burning Rockers",
+   "country": "jm",
+   "faction": "sc",
+   "genres": [
+    "world"
+   ],
+   "why": "和聲組 Well Pleased & Satisfied 的專輯，Channel One／Randy's 錄、King Tubby's 混音（Discogs credit：Engineer King Tubby），風格標 Roots Reggae＋Dub，甜和聲壓在回音低頻上",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "和聲組情歌＋Tubby's 混 dub 化，暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/477449",
+    "https://www.discogs.com/release/3119410",
+    "https://i.discogs.com/3BF737F0rshyiaPKGoHwYN5Y-tSMNDZWuia7raiyYoo/rs:fit/g:sm/q:90/h:495/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxMTk0/MTAtMTMxNjY5MTQ2/NC5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Well Pleased & Satisfied\"",
+     "releasegroup:\"Love Train\""
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 僅有合輯型 rg「Give Thanks & Praise + Love Train」（50ba1ff7…，Compilation），無本盤 Album rg；身分以 Discogs master 477449 為準"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/477449",
+    "https://www.discogs.com/release/3119410"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "David Jahson",
+   "album": "Natty Chase the Barber Away",
+   "year": 1978,
+   "label": "Top Ranking Sounds",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Discogs credit「Mixed by the Emperor Of Dub ... His Majesty King Tubby」、Channel One 錄音，風格標 Roots Reggae＋Dub，二線歌手的 roots 慢盤，回音與厚低音",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": 0.6,
+    "why": "Channel One 錄，King Tubby 混音，低頻厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/56c9cdff-fb00-4ce4-a4b2-7e34a5780650",
+    "https://coverartarchive.org/release-group/56c9cdff-fb00-4ce4-a4b2-7e34a5780650/front",
+    "https://www.discogs.com/master/678432",
+    "https://www.discogs.com/release/2546114",
+    "https://i.discogs.com/Yu4n-6BNW14N0gK5PpBvBsRpTG44GnBpCw0gk6jBHrw/rs:fit/g:sm/q:90/h:600/w:587/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NDYx/MTQtMTY1Mjk3NDcz/Ni0xNjg3LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "56c9cdff-fb00-4ce4-a4b2-7e34a5780650",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Errol Holt",
+   "album": "Vision of Africa",
+   "year": 1978,
+   "label": "Dread & Dread",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Roots Radics 低音手 Flabba Holt 的人聲專輯，Randy's／Channel One／Joe Gibbs 錄、Prince Jammy 與 Pat Kelly 掌機（Discogs 封底註記），Soul Syndicate／Revolutionaries 伴奏，低音推前",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "Roots Radics 低音手自唱，Jammy 掌機，低頻厚"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/463634",
+    "https://www.discogs.com/release/3752078",
+    "https://i.discogs.com/1g663ErTGaGfMFLe9ZGrhjFpWzaXBK37h0yqoQR7MDA/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3NTIw/NzgtMTQzNDc5NjA5/NC00NjUyLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Errol Holt\"",
+     "releasegroup:\"Vision of Africa\""
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB release-group 查無此盤（藝人或作品方向皆無 Album 型條目），身分以 Discogs master／release 為準"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/463634",
+    "https://www.discogs.com/release/3752078"
+   ],
+   "releaseException": "",
+   "queryAlias": "Errol \"Flabba\" Holt",
+   "uncertain": "MB 查無"
+  },
+  {
+   "artist": "Prince Jazzbo",
+   "album": "Natty Passing Thru'",
+   "year": 1976,
+   "label": "Black Wax",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Lee Perry 編曲並在 Black Ark 錄音掌機（Discogs credit），Upsetters 節奏的相位與殘響霧，池中同人《Kick Boy Face》z 0.6",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.3,
+    "z": 0.6,
+    "why": "Black Ark 錄，Perry 掌機，相位霧，DJ"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/232f9df1-dd51-4a56-8013-e6de1a759d94",
+    "https://www.discogs.com/master/216260",
+    "https://www.discogs.com/release/4026643",
+    "https://i.discogs.com/M1a_QcVyPEO5KkD0J3kBJ2OfekKKT4Y3xrohxNsgb4E/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwMjY2/NDMtMTM1Mjc5NzA2/Ny03MzA3LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "232f9df1-dd51-4a56-8013-e6de1a759d94",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "DJ toasting 盤，聲線粗；z 估 0.6，若研究層判冷請汰換"
+  },
+  {
+   "artist": "Cultural Roots",
+   "album": "Hell a Go Pop",
+   "year": 1984,
+   "label": "Greensleeves",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "三人和聲組 Cultural Roots 由 Junjo Lawes 製作、Channel One 錄混（Discogs credit），Roots Radics 厚低音慢板，和聲溫暖",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.7,
+    "why": "Junjo＋Roots Radics，Channel One 錄混，和聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/13c67b39-05a8-328a-abf3-89f38e555fa7",
+    "https://coverartarchive.org/release-group/13c67b39-05a8-328a-abf3-89f38e555fa7/front",
+    "https://www.discogs.com/master/278668",
+    "https://www.discogs.com/release/602308",
+    "https://i.discogs.com/uL8iyYMF3qAOvRWC-nZmrO8qXGUT0TBXVNwCcuLw6ZM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYwMjMw/OC0xMjAyMzkxMDgw/LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "13c67b39-05a8-328a-abf3-89f38e555fa7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Junior Murvin",
+   "album": "Muggers in the Street",
+   "year": 1984,
+   "label": "Greensleeves",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Junjo Lawes 製作、Channel One 錄混（Discogs credit），Murvin 招牌假聲壓在 Roots Radics 厚低音上；池中《Police & Thieves》y 1.0 z 1.0 落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.7,
+    "why": "Junjo＋Roots Radics，Channel One 錄混，假聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/19bc34e5-80f0-4a95-9aba-bf0057b7f202",
+    "https://coverartarchive.org/release-group/19bc34e5-80f0-4a95-9aba-bf0057b7f202/front",
+    "https://www.discogs.com/master/195207",
+    "https://www.discogs.com/release/904670",
+    "https://i.discogs.com/lbugFQlh-wKU0vlE9Ec-3NbjJLDXtsqJqQxu91tup0c/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkwNDY3/MC0xMTg3NjQ2NjI1/LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "19bc34e5-80f0-4a95-9aba-bf0057b7f202",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中《Bad Man Possee》y 0.6，本張為 Junjo 系較厚；MB rg 日期 2007 重發"
+  },
+  {
+   "artist": "Flick Wilson",
+   "album": "School Days",
+   "year": 1980,
+   "label": "Jah Life",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Junjo Lawes 與 Hyman Wright 製作，Discogs 註記「Recorded at Channel One, Voiced & Mixed at King Tubby's」、掌機 Prince Jammy／Scientist，roots 人聲慢盤",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": 0.8,
+    "why": "Channel One 錄，Tubby's 人聲與 Jammy／Scientist 混"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/827dc8ce-4eda-4f4b-864d-45e103668409",
+    "https://coverartarchive.org/release-group/827dc8ce-4eda-4f4b-864d-45e103668409/front",
+    "https://www.discogs.com/master/424609",
+    "https://www.discogs.com/release/737652",
+    "https://i.discogs.com/d4T1TdnB1WJPpeNYQzdBG7ZdGMjIE3w8uCLL8t91H0Q/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTczNzY1/Mi0xNDg4NjYyNDI2/LTQzMjIuanBlZw.jpeg"
+   ],
+   "mbRgMbid": "827dc8ce-4eda-4f4b-864d-45e103668409",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Wayne Wade",
+   "album": "Poor and Humble",
+   "year": 1982,
+   "label": "Live & Learn",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Linval Thompson 製作、Scientist 混音（Discogs credit），Wayne Wade 甜美人聲壓在 Roots Radics 時期厚低音上；ml38 已提同人《Black Is Our Colour》",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.7,
+    "why": "Linval 製作，Scientist 混，低頻厚，人聲甜"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f5a29782-f11b-45aa-8789-d4f904362294",
+    "https://www.discogs.com/master/547170",
+    "https://www.discogs.com/release/1572851",
+    "https://i.discogs.com/5T9qGV91bsTSBPpnChjOL79ylLiRXrjgAVzvidi-LO4/rs:fit/g:sm/q:90/h:589/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NzI4/NTEtMTMxMTI4NTIx/MC5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "f5a29782-f11b-45aa-8789-d4f904362294",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 原版 1982（註記），MB rg 2004"
+  },
+  {
+   "artist": "Sammy Dread",
+   "album": "Roadblock",
+   "year": 1982,
+   "label": "Hit Bound",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Junjo 系混音師 Soldgie 製作、編曲並混音，Roots Radics 伴奏，roots 人聲慢盤",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "Roots Radics＋Soldgie 混，低音厚"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/244867",
+    "https://www.discogs.com/release/1444892",
+    "https://i.discogs.com/LkTEi2AQLzNtRBITrSjD_6MdXeadPS4W2vm4_PdDoKQ/rs:fit/g:sm/q:90/h:595/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NDQ4/OTItMTQ2Mzk1NDk3/NS02OTQ5LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Sammy Dread\"",
+     "releasegroup:\"Roadblock\""
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB release-group 查無此盤（藝人或作品方向皆無 Album 型條目），身分以 Discogs master／release 為準"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/244867",
+    "https://www.discogs.com/release/1444892"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 查無"
+  },
+  {
+   "artist": "Sammy Dread",
+   "album": "Think Constructively",
+   "year": 1982,
+   "label": "Heart Beat",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Channel One 錄音、King Tubby's 由 Scientist 混音（Discogs credit），風格 Roots Reggae，roots 人聲慢盤",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "Channel One 錄，Tubby's Scientist 混，低頻厚"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1773195",
+    "https://www.discogs.com/release/3065196",
+    "https://i.discogs.com/6HZsmZuEz0v9IBa6KA8sNXcPPPoYzaiDD6HMTnnUD0A/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNjUx/OTYtMTQ3MzY2Njkw/NS01ODYyLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Sammy Dread\"",
+     "releasegroup:\"Think Constructively\""
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB release-group 查無此盤（藝人或作品方向皆無 Album 型條目），身分以 Discogs master／release 為準"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1773195",
+    "https://www.discogs.com/release/3065196"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 查無；美版另有 Frano 重混"
+  },
+  {
+   "artist": "Mwanamke Mwafrika",
+   "album": "African Woman Abroad",
+   "year": 1982,
+   "label": "African Woman",
+   "country": "gb",
+   "faction": "uk",
+   "genres": [
+    "world"
+   ],
+   "why": "倫敦女聲 roots 盤，Mad Professor 掌機、Reuben Campbell 混音（Discogs credit），風格標 Roots Reggae＋Dub，早期 Ariwa 類比混音",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": 0.7,
+    "why": "Ariwa 女聲 roots＋dub 段落，低頻厚"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1507389",
+    "https://www.discogs.com/release/2942357",
+    "https://i.discogs.com/4K_6K97QNS1OqE5GfM9-db3wSY8ze9cpDh_NvMhjU9g/rs:fit/g:sm/q:90/h:590/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5NDIz/NTctMTM2MzU3MTg4/MC0xMTc1LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Mwanamke Mwafrika\"",
+     "releasegroup:\"African Woman Abroad\""
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB release-group 查無此盤（藝人或作品方向皆無 Album 型條目），身分以 Discogs master／release 為準"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1507389",
+    "https://www.discogs.com/release/2942357"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 查無"
+  },
+  {
+   "artist": "Reggae Regular",
+   "album": "Ghetto Rock",
+   "year": 1984,
+   "label": "Greensleeves",
+   "country": "gb",
+   "faction": "uk",
+   "genres": [
+    "world"
+   ],
+   "why": "倫敦 roots 樂團 Reggae Regular 的專輯，Ariwa 與 Easy Street 錄音、Mad Professor 混音（Discogs credit），厚低音慢板與和聲",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "Ariwa 錄，Mad Professor 混，UK roots 和聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dc536ba7-ce0e-42bc-b606-77e6f08c3ed1",
+    "https://coverartarchive.org/release-group/dc536ba7-ce0e-42bc-b606-77e6f08c3ed1/front",
+    "https://www.discogs.com/master/926954",
+    "https://www.discogs.com/release/1427439",
+    "https://i.discogs.com/XRLsCYeonnIVWbVTJs-HD4xPK2Ta6ddsXDYUP3MtHy0/rs:fit/g:sm/q:90/h:505/w:540/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0Mjc0/MzktMTIxODgyOTk3/NS5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "dc536ba7-ce0e-42bc-b606-77e6f08c3ed1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Aisha",
+   "album": "Daughters of Zion",
+   "year": 1993,
+   "label": "Twinkle Music",
+   "country": "gb",
+   "faction": "uk",
+   "genres": [
+    "world"
+   ],
+   "why": "Norman Grant（Twinkle Brothers）製作，Dub Judah 低音並混音、Mad Professor 參與混音，風格標 Dub＋Roots Reggae；池中同人《True Roots》y 1.0 z 0.9、《High Priestess》y 1.2 落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": 0.6,
+    "why": "UK 女聲 roots，Dub Judah 低音＋Mad Professor 混"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/90028e0e-20df-373b-97f9-1d4ed7ca6025",
+    "https://coverartarchive.org/release-group/90028e0e-20df-373b-97f9-1d4ed7ca6025/front",
+    "https://www.discogs.com/master/1177425",
+    "https://www.discogs.com/release/3273975",
+    "https://i.discogs.com/Z5MBi3CIMZ5OYzc5FwO1t63xr0GZfXqyNwpENNmZQGg/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNzM5/NzUtMTQ1NzI2NjA5/OS02OTgzLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "90028e0e-20df-373b-97f9-1d4ed7ca6025",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 視 dub 比重，同人《High Priestess》z 0.4"
+  },
+  {
+   "artist": "Earl Sixteen",
+   "album": "Babylon Walls",
+   "year": 1992,
+   "label": "Ariwa",
+   "country": "gb",
+   "faction": "uk",
+   "genres": [
+    "world"
+   ],
+   "why": "Mad Professor 製作並在 Ariwa 錄混（Discogs credit），Mafia 低音，Earl 16 甜美 roots 唱腔配 Ariwa 回音",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "Ariwa 類比混音，低頻厚，甜高音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/88fd2ad6-4dcc-473b-ad0c-a1080bbccb31",
+    "https://coverartarchive.org/release-group/88fd2ad6-4dcc-473b-ad0c-a1080bbccb31/front",
+    "https://www.discogs.com/master/377051",
+    "https://www.discogs.com/release/2490688",
+    "https://i.discogs.com/jz3qk0ph2WmiP9mqIlUHFrVPTntV3bw19vi3LCVH1ZM/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0OTA2/ODgtMTQ3MjE5NTk0/Ni00NDgxLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "88fd2ad6-4dcc-473b-ad0c-a1080bbccb31",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "1992 年份，Ariwa 仍為類比混音，研究層確認未數位化"
+  },
+  {
+   "artist": "Princess Sharifa",
+   "album": "Heritage",
+   "year": 1993,
+   "label": "Ariwa",
+   "country": "gb",
+   "faction": "uk",
+   "genres": [
+    "world"
+   ],
+   "why": "Mad Professor 製作、Ariwa 錄音，Discogs 風格標 Dub＋Roots Reggae，Ariwa 女聲 roots 線（池中 Aisha／Sandra Cross 同型落恍惚）",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": 0.7,
+    "why": "Ariwa 女聲 roots＋dub，低頻厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8402d4a4-bec2-367e-b031-ed7547a8f9b2",
+    "https://www.discogs.com/master/505683",
+    "https://www.discogs.com/release/4144461",
+    "https://i.discogs.com/qhFo1OU-pk4vrgahZ48bSxOjDXmn1McCJ5hz2teyRfY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNDQ0/NjEtMTQxNTEyNTM0/My03NDQ2LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "8402d4a4-bec2-367e-b031-ed7547a8f9b2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "1993 年份，研究層確認類比混音"
+  },
+  {
+   "artist": "Roots Combination",
+   "album": "Hi Fidelity Dub Sessions Presents Roots Combination",
+   "year": 2001,
+   "label": "Guidance",
+   "country": "us",
+   "faction": "rv",
+   "genres": [
+    "world"
+   ],
+   "why": "Ticklah 製作、Victor Axelrod 混音（Discogs credit），紐約類比 roots 復興早期作品，人聲與 dub 交錯",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "Ticklah 製作，Axelrod 混音，類比 roots＋dub"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/316403",
+    "https://www.discogs.com/release/12353",
+    "https://i.discogs.com/zuC4NqQjlVFtSNnVJGRSjymCGSXdDBDbQMBvzjJk6tI/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMzUz/LTExNTQ1NTY2MzAu/anBlZw.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Roots Combination\"",
+     "releasegroup:\"Hi Fidelity Dub Sessions Presents Roots Combination\""
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB release-group 查無此盤（藝人或作品方向皆無 Album 型條目），身分以 Discogs master／release 為準"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/316403",
+    "https://www.discogs.com/release/12353"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 查無；盤名冗長，研究層可定短名"
+  },
+  {
+   "artist": "Shanti Yalah",
+   "album": "Creation",
+   "year": 2017,
+   "label": "Nansa",
+   "country": "es",
+   "faction": "rv",
+   "genres": [
+    "world"
+   ],
+   "why": "西班牙 A-Lone Ark Muzik Studio 由 Roberto Sánchez 打鼓、錄音並混音（Discogs credit），當代類比 roots 復興的濕混音人聲盤",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "A-Lone Ark 類比錄混，roots 人聲"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/2797907",
+    "https://www.discogs.com/release/11184274",
+    "https://i.discogs.com/Bx6HXMi0DlfiAwT4SmSzVLhWwSDZvoPGXN23uFSJSho/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTg0/Mjc0LTE3MTQwMTM0/MzItOTc2MC5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Shanti Yalah\"",
+     "releasegroup:\"Creation\""
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB release-group 查無此盤（藝人或作品方向皆無 Album 型條目），身分以 Discogs master／release 為準"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/2797907",
+    "https://www.discogs.com/release/11184274"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 查無；z 依人聲旋律，研究層確認"
+  },
+  {
+   "artist": "Tetrack",
+   "album": "Trouble",
+   "year": 1983,
+   "label": "Music Works",
+   "country": "jm",
+   "faction": "sc",
+   "genres": [
+    "world"
+   ],
+   "why": "Gussie Clarke 製作、Soldgie 掌機的和聲組專輯，Discogs 註記「All tracks have extended dub versions」，discomix 形式人聲接 dub，池中同組《Let's Get Started》y 1.1 z 0.8 落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": 0.7,
+    "why": "每首接 extended dub，Soldgie 掌機，和聲甜"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/627534b5-638b-44f8-8e28-4409e8dd8384",
+    "https://coverartarchive.org/release-group/627534b5-638b-44f8-8e28-4409e8dd8384/front",
+    "https://www.discogs.com/master/371631",
+    "https://www.discogs.com/release/1730463",
+    "https://i.discogs.com/HpOg4zG8I5KSkrFdFZ2N1jkzCaHLVaAV5r7nEvzQTIM/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3MzA0/NjMtMTIzOTY2NTYz/NS5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "627534b5-638b-44f8-8e28-4409e8dd8384",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Anthony Johnson",
+   "album": "I'm Ready",
+   "year": 1983,
+   "label": "Gorgon",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Discogs 註記「Recorded and mixed at Channel One」、混音 Peter Chemist（Scientist 同輩的 Tubby 系混音師），Roots Radics 時期 roots 人聲慢盤",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.7,
+    "why": "Channel One 錄混，Peter Chemist 混音，低頻厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f7cc83c9-2e0e-3ca0-b87e-0d1e0d3d0b66",
+    "https://coverartarchive.org/release-group/f7cc83c9-2e0e-3ca0-b87e-0d1e0d3d0b66/front",
+    "https://www.discogs.com/master/506097",
+    "https://www.discogs.com/release/1709575",
+    "https://i.discogs.com/sjfd2BFefMCRFNiGTd5wUDLLl5olJD8g6oC6LiVpaL0/rs:fit/g:sm/q:90/h:600/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3MDk1/NzUtMTIzODQwNTk3/Ni5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "f7cc83c9-2e0e-3ca0-b87e-0d1e0d3d0b66",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Winston McAnuff",
+   "album": "What the Man a Deal Wid",
+   "year": 1979,
+   "label": "Top Ranking International",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Winston「Electric Dread」McAnuff 的早期 roots 專輯，Channel One 錄音，掌機 Maximillian（Tubby 門生，同廠牌 David Jahson 盤即由他錄、Tubby 混）與 Bunny Tom Tom",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Channel One 錄，Maximillian／Bunny Tom Tom 掌機，人聲溫"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/428087",
+    "https://www.discogs.com/release/2394326",
+    "https://i.discogs.com/z_6vcUnWE_dAQtiXm0CtSvXoZBV-3jARPcCchFqnx4E/rs:fit/g:sm/q:90/h:590/w:584/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzOTQz/MjYtMTMyMTg2OTQy/MS5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Winston McAnuff\"",
+     "releasegroup:\"What the Man a Deal Wid\""
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB release-group 查無此盤（藝人或作品方向皆無 Album 型條目），身分以 Discogs master／release 為準"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/428087",
+    "https://www.discogs.com/release/2394326"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 查無；混音地點未列，研究層確認"
+  },
+  {
+   "artist": "Tommy McCook & The Aggrovators",
+   "album": "Super Star - Disco Rockers",
+   "year": 1977,
+   "label": "Weed Beat",
+   "country": "jm",
+   "faction": "dub",
+   "genres": [
+    "world"
+   ],
+   "why": "Bunny Lee 製作，Channel One 錄、King Tubby 與 Prince Jammy 掌機（Discogs credit），風格標 Reggae＋Dub，McCook 管樂旋律撐住的 dub",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.4,
+    "z": 0.6,
+    "why": "Tubby／Jammy 掌機的管樂 dub，旋律清楚，暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/431613",
+    "https://www.discogs.com/release/7221333",
+    "https://i.discogs.com/U9pUGnWDzpfkEXF3AJWVoFT39BlZwndD9vzFGzuM0ZU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyMjEz/MzMtMTQzODk1MDc3/OS00OTY4LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Tommy McCook & The Aggrovators\"",
+     "releasegroup:\"Super Star - Disco Rockers\""
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB release-group 查無此盤（藝人或作品方向皆無 Album 型條目），身分以 Discogs master／release 為準"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/431613",
+    "https://www.discogs.com/release/7221333"
+   ],
+   "releaseException": "",
+   "queryAlias": "Tommy McCook",
+   "uncertain": "MB 查無"
+  },
+  {
+   "artist": "Jackie Mittoo",
+   "album": "In Cold Blood",
+   "year": 1978,
+   "label": "Third World",
+   "country": "jm",
+   "faction": "dub",
+   "genres": [
+    "world"
+   ],
+   "why": "Bunny Lee 製作、King Tubby's 混音（Discogs credit），風格標 Reggae＋Dub，Mittoo 的風琴與鍵盤旋律帶著走；池中同人 Studio One 時期三張判輕，本張是 Tubby 混音的 dub 化盤",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "Tubby's 混音的鍵盤旋律 dub，低頻厚，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/139f634e-67dd-4db1-8447-babdd2eca68a",
+    "https://coverartarchive.org/release-group/139f634e-67dd-4db1-8447-babdd2eca68a/front",
+    "https://www.discogs.com/master/459973",
+    "https://www.discogs.com/release/3525828",
+    "https://i.discogs.com/SjsY-r6JSCB1qYN9WKSD_sQaUxJMJj1UVGPqX3b32LQ/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1MjU4/MjgtMTMzMzkwMTQ0/MS5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "139f634e-67dd-4db1-8447-babdd2eca68a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB rg 日期 2026 重發；同人池中《Wishbone》等 y −0.4–−0.5 判輕，若研究層判本張仍乾淨請汰換"
+  },
+  {
+   "artist": "Al Campbell",
+   "album": "Ain't That Loving You",
+   "year": 1978,
+   "label": "Jamaica Sound",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Bunny Lee 製作、King Tubby 與 Pat Kelly 在 Tubby's 混音（Discogs credit），Al Campbell 柔情人聲的 roots／lovers 慢盤",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.9,
+    "why": "Bunny Lee 節奏，King Tubby 混音，情歌溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ef844bc1-169a-44a5-a6bd-c35d5349c8c9",
+    "https://coverartarchive.org/release-group/ef844bc1-169a-44a5-a6bd-c35d5349c8c9/front",
+    "https://www.discogs.com/master/1047428",
+    "https://www.discogs.com/release/9366679",
+    "https://i.discogs.com/L9b7lJuIXgGk1v-1V4XtaPWJR9i-B8iw3b_XM4e56yg/rs:fit/g:sm/q:90/h:600/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkzNjY2/NzktMTYxODUwMjUz/MS0xODUxLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "ef844bc1-169a-44a5-a6bd-c35d5349c8c9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人《Diamonds》y 0.6；MB rg 日期 1983（重發），原盤 1978 取 Discogs"
+  },
+  {
+   "artist": "Johnny Clarke",
+   "album": "Rockers Time Now",
+   "year": 1976,
+   "label": "Virgin",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Bunny Lee 製作的 Virgin 專輯，Discogs 註記「Recorded at Channel 1 in April '76 Mixed at King Tubby's」、Mixed By King Tubby，Johnny Clarke 溫暖人聲配 Tubby 回音",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Channel One 錄，King Tubby 混，flying cymbal 慢 rockers"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1626211b-6720-39da-97a4-c747e3b51713",
+    "https://coverartarchive.org/release-group/1626211b-6720-39da-97a4-c747e3b51713/front",
+    "https://www.discogs.com/master/194729",
+    "https://www.discogs.com/release/1258060",
+    "https://i.discogs.com/YSyxVNAaGyLZlAU-t1BCzyeg9UACdZzJ_sGvpwzYRDg/rs:fit/g:sm/q:90/h:595/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNTgw/NjAtMTM2NDI4NzIy/Mi02ODQ5LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "1626211b-6720-39da-97a4-c747e3b51713",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Bunny Lee flying cymbal 節奏偏亮，y 估 1.1 有風險；池中同人《Yard Style》（1983）y 0.5"
+  }
+ ],
+ "notes": [
+  "交 46 張（未達 54）：主場景大名與二線 roots 人聲在 ml1／ml9／ml32／ml38／ml45／ml48 已大量收走，剩下的照實交，不湊數。",
+  "選片判準：只收 Discogs credit 明載 King Tubby／Prince Jammy／Scientist／Peter Chemist／Soldgie 混音、Black Ark 錄混、或 Wackie's／Ariwa 混音的盤；僅寫 Channel One 錄音而無混音線索的已汰（Channel One＋Revolutionaries 的亮 rockers，池中 Mighty Diamonds《Right Time》y 0.4 判輕）。",
+  "已考慮後剔除（y 貼邊或無聲音證據）：Fred Locks《Black Star Liner》、Prince Lincoln Thompson《Humanity》、Knowledge《Hail Dread》、The Morwells《Crab Race》、Earl Zero《Visions of Love》、Cultural Roots《Revolutionary Sounds》《Drift Away From Evil》、Sons of Jah《Universal Message》、Big Youth《Progress》《Rock Holy》、Prince Mohammed《African Roots》、Anthony Johnson《Reggae Feelings》、Midnite（同組 ml53 估 z 0.4）、Groundation（池中 z 0.5 貼邊）。",
+  "聲音證據：網路樂評站（reggae-vibes captcha、midnightravers 已失效、AllMusic／Bandcamp／Juno 封鎖）抓不到原句，僅 Noel Ellis 取得重發文案原句；其餘以 Discogs 混音／錄音室 credit 與 notes 原文（寫在 why）作為濕混音證據，研究層可再補樂評。",
+  "跨分支去重：git fetch 後 99 條 claude/ 分支與 origin/main 的 seed_cards.json 逐張比對，0 撞。"
+ ]
+}

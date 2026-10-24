@@ -3485,4 +3485,12 @@ window.DipPreviewStatus = Object.freeze({
   "conlon nancarrow|nancarrow: player piano 7, volume 4: studies 42-48": "unavailable",
   "garth knox|ligeti - dusapin - berio - kurtág - dillon - sciarrino: works for solo viola": "unavailable",
   "yejin gil|chin - boulez - ligeti - messiaen: fulgurances: works for piano of the xxth century": "unavailable",
+  "noel ellis|noel ellis": "unavailable",
+  "peter broggs|rastafari liveth!": "unavailable",
+  "jimmy riley|showcase": "unavailable",
+  "freddie mckay|tribal inna yard": "unavailable",
+  "mwanamke mwafrika|african woman abroad": "unavailable",
+  "aisha|daughters of zion": "unavailable",
+  "anthony johnson|i'm ready": "unavailable",
+  "jamie lidell|muddlin gear": "unavailable",
 });
