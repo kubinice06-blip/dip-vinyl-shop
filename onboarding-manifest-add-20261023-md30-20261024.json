@@ -1,0 +1,2020 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-md30",
+ "batchNote": "薄細項策展線（add-20261023-md30）",
+ "createdAt": "2026-10-24T00:20:34Z",
+ "albums": [
+  {
+   "artist": "Dahlia's Tear",
+   "album": "Across the Shifting Abyss",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "20f6ec1c-0846-48a3-9fbd-6a943c7da291",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Atrium Carceri／Dahlia's Tear／Desiderii Marginis／Ulf Söderberg 周邊：Dahlia's Tear（Anders Peterson）回 Cryo Chamber 第二張，深海到星門的長段 drone 景；Bandcamp 文案自稱 deep underwater soundscapes／lush dark ambient，未見鼓、旋律樂器或 warm 字眼，落頹靡。｜⚠ 已讀 Bandcamp 文案（cryochamber 頁）：無 drums/percussion/beats/piano/trumpet/spoken word/warm 字眼；tag 只有 ambient、drone、soundscapes。｜MB release-group 20f6ec1c-0846-48a3-9fbd-6a943c7da291：title「Across the Shifting Abyss」、Album、first-release-date 2019-11-26、artist-credit「Dahlia's Tear」。證據：https://musicbrainz.org/release-group/20f6ec1c-0846-48a3-9fbd-6a943c7da291 https://coverartarchive.org/release-group/20f6ec1c-0846-48a3-9fbd-6a943c7da291/front-500 https://cryochamber.bandcamp.com/album/across-the-shifting-abyss",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/20f6ec1c-0846-48a3-9fbd-6a943c7da291/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 5507,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 5507）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "希臘外海撈起的那具機械，是星盤還是時鐘？Dahlia's Tear 是瑞典斯德哥爾摩的 dark ambient 計畫，成員只有 Anile D. 一人。1901 年，潛水員在安提基特拉島外海撈起這件古怪的機械，專輯就從它寫起，把這道提問留給聽者，接著走一趟從深淵通往星之門的旅程。九首加起來 51 分鐘左右，2019 年 11 月 26 日在 Cryo Chamber 發行。聲音是無拍點的長段 drone，像沉在深海裡的水下聲景。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/20f6ec1c-0846-48a3-9fbd-6a943c7da291",
+     "https://cryochamber.bandcamp.com/album/across-the-shifting-abyss",
+     "https://www.discogs.com/artist/506799",
+     "https://www.discogs.com/release/14490788"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3a/80/e4/3a80e4a7-36d9-6697-49c7-0058c3b0eb4c/mzaf_13597200963944429064.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1477865340",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 1477865340「Dahlia's Tear《Across the Shifting Abyss》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Across the Shifting Abyss〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dahlia's Tear",
+   "album": "Descendants of the Moon",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "84e73c90-0d51-4e69-8358-fd32363cec9b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Atrium Carceri／Dahlia's Tear／Desiderii Marginis／Ulf Söderberg 周邊：Dahlia's Tear 以吉爾伽美什史詩為題的 Cryo Chamber 作，美索不達米亞儀式氛圍接星際 drone；六首長段、無鼓無領奏，往下沉的頹靡型。｜⚠ 已讀 Bandcamp 文案：寫 Mesopotamian ritual 與 interstellar space，未見 drums/percussion/beats/旋律樂器/spoken word/warm；「ritual」一詞研究層可核有無手鼓。｜MB release-group 84e73c90-0d51-4e69-8358-fd32363cec9b：title「Descendants of the Moon」、Album、first-release-date 2020-10-06、artist-credit「Dahlia's Tear」。證據：https://musicbrainz.org/release-group/84e73c90-0d51-4e69-8358-fd32363cec9b https://coverartarchive.org/release-group/84e73c90-0d51-4e69-8358-fd32363cec9b/front-500 https://cryochamber.bandcamp.com/album/descendants-of-the-moon",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/84e73c90-0d51-4e69-8358-fd32363cec9b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1701,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1701）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1701），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "蘇美國王怕死，動身去找永生的祕密。這段四千多年前的《吉爾伽美什史詩》，成了瑞典單人計畫 Dahlia's Tear 這張 dark ambient 專輯的題目。專輯把古美索不達米亞的儀式和一趟駛向星際的航行混在一起，儀式感只落在氛圍與題材上。六首從對應史詩雪松森林的〈The Cedar Forest〉開始，走到最長約 8 分 51 秒的〈The Valley of Unrest〉。Cryo Chamber 替它定下的推出日，是 2020 年 10 月 6 日。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/84e73c90-0d51-4e69-8358-fd32363cec9b",
+     "https://cryochamber.bandcamp.com/album/descendants-of-the-moon",
+     "https://www.discogs.com/release/16066900",
+     "https://www.discogs.com/artist/506799",
+     "https://www.discogs.com/label/389319"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/88/30/1e/88301ee7-a2a8-c5c1-3b37-8e2a22407519/mzaf_8642929032992663013.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1523746485",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 1523746485「Dahlia's Tear《Descendants of the Moon》」：曲目 6/6 對上 MB 原盤（Apple 共 6 軌），取第 1 軌〈The Cedar Forest〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dahlia's Tear",
+   "album": "Adrift on the Edge of Infinity",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "8502c2f6-9973-4e2b-819d-4ac1bced0ace",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Atrium Carceri／Dahlia's Tear／Desiderii Marginis／Ulf Söderberg 周邊：Dahlia's Tear 後末日題材的 Cryo Chamber 作；文案自述 hypnotic atmospheric textures、layered drones，荒原與地下避難所意象，催眠下壓、落頹靡。｜⚠ 已讀 Bandcamp 文案：layered drones, gentle harmonics；未見 drums/percussion/beats/piano/trumpet/spoken word/warm。gentle harmonics 研究層可留意是否偏柔。｜MB release-group 8502c2f6-9973-4e2b-819d-4ac1bced0ace：title「Adrift on the Edge of Infinity」、Album、first-release-date 2021-11-09、artist-credit「Dahlia's Tear」。證據：https://musicbrainz.org/release-group/8502c2f6-9973-4e2b-819d-4ac1bced0ace https://coverartarchive.org/release-group/8502c2f6-9973-4e2b-819d-4ac1bced0ace/front-500 https://cryochamber.bandcamp.com/album/adrift-on-the-edge-of-infinity",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8502c2f6-9973-4e2b-819d-4ac1bced0ace/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1265,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1265）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1265），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "荒原上的樹病了，風把人吹向地下避難所。層層疊起的 drone，上面浮著細緻的泛音，是瑞典的 Anile D. 替 Dahlia's Tear 本作選的 dark ambient 配方。場景設在後末日，海水黑而無生命，避難所的迷宮裡也許還有倖存者。六首約 41 分鐘，開場的〈Tomb of Forgotten Times〉就有 7 分 55 秒左右。Cryo Chamber 在 2021 年 11 月把它發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/8502c2f6-9973-4e2b-819d-4ac1bced0ace",
+     "https://cryochamber.bandcamp.com/album/adrift-on-the-edge-of-infinity",
+     "https://www.discogs.com/release/20954266",
+     "https://www.discogs.com/artist/506799"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/af/18/20/af182076-973b-6212-c333-e28ebef512c4/mzaf_9940880705735388750.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1585150440",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 1585150440「Dahlia's Tear《Adrift on the Edge of Infinity》」：曲目 6/6 對上 MB 原盤（Apple 共 6 軌），取第 1 軌〈Tomb of Forgotten Times〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Desiderii Marginis",
+   "album": "Bathe in Black Light",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3bdb66b6-7877-4f87-8609-817985cd9da2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Atrium Carceri／Dahlia's Tear／Desiderii Marginis／Ulf Söderberg 周邊：瑞典 1990s 暗黑 ambient 老將 Johan Levin 的夜之頌，文案寫「強烈的平靜」與廣闊內在景觀；七首 55 分鐘的工業 ambient 長段，壓人下沉、落頹靡。｜⚠ 已讀 Bandcamp 文案（desiderii 頁）：未見 drums/percussion/beats/旋律樂器/spoken word/warm；藝人簡介泛稱 intravenous rhythms（非本張）；同藝人《Deadbeat》曾因工業節奏被汰，研究層宜核。｜MB release-group 3bdb66b6-7877-4f87-8609-817985cd9da2：title「Bathe in Black Light」、Album、first-release-date 2021-11-11、artist-credit「Desiderii Marginis」。證據：https://musicbrainz.org/release-group/3bdb66b6-7877-4f87-8609-817985cd9da2 https://coverartarchive.org/release-group/3bdb66b6-7877-4f87-8609-817985cd9da2/front-500 https://desiderii.bandcamp.com/album/bathe-in-black-light https://www.discogs.com/release/29947816",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3bdb66b6-7877-4f87-8609-817985cd9da2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1525,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1525）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1525），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "先在網上自行發行，2024 年才壓成 CD 與黑膠。瑞典人 Johan Levin 的 dark ambient／工業 ambient 計畫 Desiderii Marginis，2021 年秋天錄下了本作。錄完不久，11 月 11 日就放上了 Bandcamp。三年後實體版交給 Cyclic Law，限量壓製，先在 2 到 3 月的巡演現場開賣，官方發行日定在 5 月 3 日。整張被定調為一首獻給夜晚的頌歌。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/3bdb66b6-7877-4f87-8609-817985cd9da2",
+     "https://www.discogs.com/release/29947816",
+     "https://desiderii.bandcamp.com/album/bathe-in-black-light",
+     "https://www.discogs.com/artist/49657",
+     "https://cycliclaw.bandcamp.com/album/departed"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5c/1b/39/5c1b39b6-6b36-8166-89e0-5f1a0b8578ab/mzaf_15549460332180207992.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1737833395",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 1737833395「Desiderii Marginis《Bathe In Black Light》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Night Grasping At Day〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Atrium Carceri",
+   "album": "Reliquiae",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9f99b5cc-bc80-49ca-9ccd-59748f0b5462",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Atrium Carceri／Dahlia's Tear／Desiderii Marginis／Ulf Söderberg 周邊：Atrium Carceri（Simon Heath）CMI 末期主線作，19 首串成地底囚城與遺物的長篇；文案寫持續的呻吟、掘進與機械運轉，深沉下壓的經典 Atrium 頹靡聲。｜⚠ 已讀 Bandcamp 文案（cryochamber 頁）：無 drums/percussion/beats/旋律樂器/spoken word/warm；有一句「石擊血肉的悶響」穿過持續轟鳴，屬偶發音效，研究層可核是否有驚嚇段。｜MB release-group 9f99b5cc-bc80-49ca-9ccd-59748f0b5462：title「Reliquiae」、Album、first-release-date 2012-03、artist-credit「Atrium Carceri」。證據：https://musicbrainz.org/release-group/9f99b5cc-bc80-49ca-9ccd-59748f0b5462 https://coverartarchive.org/release-group/9f99b5cc-bc80-49ca-9ccd-59748f0b5462/front-500 https://cryochamber.bandcamp.com/album/reliquiae https://www.discogs.com/release/3483924",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9f99b5cc-bc80-49ca-9ccd-59748f0b5462/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 8649,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 8649）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "呻吟與掘進聲不停，只被一記悶響打斷。Atrium Carceri 在拉丁文裡是「監獄大廳」，這是 1977 年生於斯德哥爾摩的 Simon Heath 的 dark ambient 個人計畫。那記悶響是石頭擊打肉體的聲音，場景是一座地底古城，裡頭有瘋人院與黑暗走廊。整張繞著奴役的遺物展開。2012 年 3 月 18 日交由 Cold Meat Industry 發行，共收 19 首，總長大約 70 分鐘。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Reliquiae_(album)",
+     "https://www.discogs.com/release/3483924",
+     "https://cryochamber.bandcamp.com/album/reliquiae",
+     "https://en.wikipedia.org/wiki/Atrium_Carceri",
+     "https://musicbrainz.org/release-group/9f99b5cc-bc80-49ca-9ccd-59748f0b5462"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5c/2c/2d/5c2c2d90-7009-6acb-5857-7b49c542e95d/mzaf_17034969816630503767.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1212620550",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 1212620550「Atrium Carceri《Reliquiae》」：曲目 17/19 對上 MB 原盤（Apple 共 19 軌），取第 1 軌〈Floating Above the City〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Atrium Carceri & Eldar",
+   "album": "Sacrosanct",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "93e076f6-6007-4904-b7c7-0e5f9163e459",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Atrium Carceri／Dahlia's Tear／Desiderii Marginis／Ulf Söderberg 周邊：Atrium Carceri 與 Eldar 合作，文案稱 Atrium 的 deep low sounds 與 Eldar 的歷史感交疊；48 分鐘九首工業暗黑 ambient，低沉下壓、落頹靡。｜⚠ 已讀 Bandcamp 文案：無 drums/percussion/beats/旋律樂器/spoken word/warm；tag 有 industrial ambient。｜MB release-group 93e076f6-6007-4904-b7c7-0e5f9163e459：title「Sacrosanct」、Album、first-release-date 2012-08-07、artist-credit「Atrium Carceri & Eldar」。證據：https://musicbrainz.org/release-group/93e076f6-6007-4904-b7c7-0e5f9163e459 https://coverartarchive.org/release-group/93e076f6-6007-4904-b7c7-0e5f9163e459/front-500 https://cryochamber.bandcamp.com/album/sacrosanct https://www.discogs.com/release/3786338",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/93e076f6-6007-4904-b7c7-0e5f9163e459/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1691,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1691）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1691），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "什麼都不神聖，也什麼都神聖。這句出自 Atrium Carceri 與 Eldar 合作專輯的介紹詞，Atrium Carceri 背後站著瑞典的 Simon Heath，做 dark ambient。Heath 在 2011 年創立 Cryo Chamber，合作盤 2012 年 8 月 7 日先在那裡首發，當時廠牌才一歲多。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/466425",
+     "https://cryochamber.bandcamp.com/album/sacrosanct",
+     "https://www.discogs.com/release/3786338",
+     "https://en.wikipedia.org/wiki/Atrium_Carceri",
+     "https://musicbrainz.org/release-group/93e076f6-6007-4904-b7c7-0e5f9163e459"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview111/v4/d3/57/09/d35709f1-ec6f-7fdc-5463-50a9d194fe6c/mzaf_6368343607511012230.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1212619017",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 1212619017「Atrium Carceri & Eldar《Sacrosanct》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Withering〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dahlia's Tear",
+   "album": "Apeiron",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ebd344b0-b4f0-4f89-a8b6-c7ae8fce5d08",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Atrium Carceri／Dahlia's Tear／Desiderii Marginis／Ulf Söderberg 周邊：Dahlia's Tear 2024 年 Infinite Fog 作，2134 年廢墟都市、遠方機械嗡鳴；文案明寫光裡沒有溫度，dark cinematic drone，冷而下壓、落頹靡。｜⚠ 已讀 Bandcamp 文案（dahliastear1 頁）：無 drums/percussion/beats/旋律樂器/spoken word；warm 只出現在否定句「no warmth in the light」。｜MB release-group ebd344b0-b4f0-4f89-a8b6-c7ae8fce5d08：title「Apeiron」、Album、first-release-date 2024-11-14、artist-credit「Dahlia's Tear」。證據：https://musicbrainz.org/release-group/ebd344b0-b4f0-4f89-a8b6-c7ae8fce5d08 https://coverartarchive.org/release-group/ebd344b0-b4f0-4f89-a8b6-c7ae8fce5d08/front-500 https://dahliastear1.bandcamp.com/album/apeiron-3",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ebd344b0-b4f0-4f89-a8b6-c7ae8fce5d08/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 405,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 405）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 405），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "2134 年的廢城，遠方機器還在嗡鳴。從作曲、演奏到封面、母帶，瑞典 dark ambient 計畫 Dahlia's Tear 的 Anile D. 這次全由自己來。故事裡的荒城被時間吞沒，碎裂的寂靜中迴響著機器聲，連光線也是冷的。十一首約 52 分 38 秒，曲名從〈Dead Town〉經過〈Neon Wasteland〉到〈Fading Suns〉，連成一條毀滅後的都市路線。2024 年，他以自發行的方式推出。",
+    "sourceUrls": [
+     "https://dahliastear1.bandcamp.com/album/apeiron-3",
+     "https://musicbrainz.org/artist/fdcbb455-91dd-4f75-a6f1-586d71feed78",
+     "https://www.discogs.com/release/32663481-Dahlias-Tear-Apeiron",
+     "https://thisisdarkness.com/2018/10/14/dahlias-tear-through-the-nightfall-grandeur-review",
+     "https://musicbrainz.org/release-group/ebd344b0-b4f0-4f89-a8b6-c7ae8fce5d08"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "Apple us／se 以藝人＋盤名搜尋無《Apeiron》（2024 Bandcamp 自發行，Infinite Fog 實體版）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hesychia",
+   "album": "Metanoia",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "901fd2f5-b05f-4d66-ac52-0533b4a66cc0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cyclic Law／Loki／Old Europa 二線：前 Abigor 成員 Arthur Rosar 的冥修計畫，以沙漠教父與禪為本、追求靈魂的靜止；即興類比氛圍＋田野錄音五首 40 分鐘，全然臣服式的下沉、落頹靡。｜⚠ 已讀 Bandcamp 文案（cycliclaw 頁）：improvised analog atmospherics＋field recordings；未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm。｜MB release-group 901fd2f5-b05f-4d66-ac52-0533b4a66cc0：title「Metanoia」、Album、first-release-date 2017-12-24、artist-credit「Hesychia」。證據：https://musicbrainz.org/release-group/901fd2f5-b05f-4d66-ac52-0533b4a66cc0 https://coverartarchive.org/release-group/901fd2f5-b05f-4d66-ac52-0533b4a66cc0/front-500 https://cycliclaw.bandcamp.com/album/metanoia",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/901fd2f5-b05f-4d66-ac52-0533b4a66cc0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 143,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 143）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 143），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "大齋期的維也納，Bethlehem 裡錄下即興長曲。曾任奧地利黑金屬樂團 Abigor 主唱兼詞作者的 Arthur Rosar，以 Hesychia 之名轉做 dark ambient。那是 2016 年的大齋期，錄下的素材是即興的類比氛圍，再疊一層田野錄音。主題取自早期基督教的沙漠教父，講擺脫情慾與悔改，也兼採禪宗與前基督教的歐洲傳統；專輯名與第二首同名，對應的正是悔改。2017 年 12 月 24 日由 Cyclic Law 發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/11388905-Hesychia-Metanoia",
+     "https://cycliclaw.bandcamp.com/album/metanoia",
+     "https://en.wikipedia.org/wiki/Abigor",
+     "https://musicbrainz.org/release-group/901fd2f5-b05f-4d66-ac52-0533b4a66cc0"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/40/5f/ae/405faecb-6e78-6088-97be-1c28b7e8d5e4/mzaf_5945956935279317089.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1322817541",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1322817541「Hesychia《Metanoia》」：曲目 5/5 對上 MB 原盤（Apple 共 5 軌），取第 1 軌〈Apatheia〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Shedir",
+   "album": "Finite Infinity",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d1b47ea7-1eff-4dc5-94e1-a66fee4f0b74",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cyclic Law／Loki／Old Europa 二線：義大利 Shedir 在 Cyclic Law 的第二張（前作《Falling Time》已在池落頹靡）；文案寫 dense, floating drone textures 與星辰般的孤寂，Lawrence English 母帶，濃密下沉。｜⚠ 已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm/noise。｜MB release-group d1b47ea7-1eff-4dc5-94e1-a66fee4f0b74：title「Finite Infinity」、Album、first-release-date 2020-08-28、artist-credit「Shedir」。證據：https://musicbrainz.org/release-group/d1b47ea7-1eff-4dc5-94e1-a66fee4f0b74 https://coverartarchive.org/release-group/d1b47ea7-1eff-4dc5-94e1-a66fee4f0b74/front-500 https://cycliclaw.bandcamp.com/album/finite-infinity https://www.discogs.com/release/15865808",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d1b47ea7-1eff-4dc5-94e1-a66fee4f0b74/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 244,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 244）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 244），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "第四軌的名字，留給了 2023 年的新作。Shedir 來自義大利，做 dark ambient，本作是第二張專輯，2020 年由 Cyclic Law 發行。那一軌是〈Before The Last Light Is Blown〉，三年後成了第三張的盤名。漂浮的 drone 底下，鋪了一層細緻田野錄音。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/15865808",
+     "https://musicbrainz.org/artist/30a52d1d-55c9-447e-ba7c-9b19f0122622",
+     "https://cycliclaw.bandcamp.com/album/finite-infinity",
+     "https://musicbrainz.org/release-group/d1b47ea7-1eff-4dc5-94e1-a66fee4f0b74"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/05/00/67/0500679d-1806-fb4c-aa6a-85bace79ea63/mzaf_7039303158177435225.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1529563600",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1529563600「Shedir《Finite Infinity》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈You Hear Rise The Secret Wind Behind The Brain〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Shrine",
+   "album": "Celestial Fire",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "992e62bd-791a-4fdf-a723-961f3092a161",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cyclic Law／Loki／Old Europa 二線：保加利亞 Shrine 接《Ordeal 26.04.86》（已在池落頹靡）的 Cyclic Law 作，以南極隕石封印為題的六章暗黑 drone，厚重陰冷、壓人下沉。｜⚠ 已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；同藝人《Somnia》曾因開場管風琴、偏明亮被汰，本張文案無此類字眼。｜MB release-group 992e62bd-791a-4fdf-a723-961f3092a161：title「Celestial Fire」、Album、first-release-date 2018-12-21、artist-credit「Shrine」。證據：https://musicbrainz.org/release-group/992e62bd-791a-4fdf-a723-961f3092a161 https://coverartarchive.org/release-group/992e62bd-791a-4fdf-a723-961f3092a161/front-500 https://cycliclaw.bandcamp.com/album/celestial-fire",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/992e62bd-791a-4fdf-a723-961f3092a161/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 454,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 454）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 454），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "南極還是熱帶的時候，一顆隕石撞了下來。保加利亞的 dark ambient 計畫 Shrine，根據 1998 年的電玩《古墓奇兵 3》寫成本作。古玻里尼西亞人崇拜那塊石頭，後來把它和四件信物封入地下；六章追尋的就是四把鑰匙與隕石。2018 年 12 月 21 日面世，掛 Cyclic Law 的廠標。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/12956363-Shrine-Celestial-Fire",
+     "https://musicbrainz.org/artist/d47632a9-3a90-491e-943f-3297b519e8a1",
+     "https://cycliclaw.bandcamp.com/album/celestial-fire",
+     "https://musicbrainz.org/release-group/992e62bd-791a-4fdf-a723-961f3092a161"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/f8/4e/1a/f84e1a50-e1a5-6175-9dd4-d3851cc16b47/mzaf_6627667618457903180.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1447538663",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1447538663「Shrine《Celestial Fire》」：曲目 6/6 對上 MB 原盤（Apple 共 6 軌），取第 1 軌〈Infada Stone〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sinke Dûs",
+   "album": "Modus Vivendi",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "425537b3-c0a5-4681-8321-1146ee3cf2c0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cyclic Law／Loki／Old Europa 二線：瑞典 Marcus Lönebrink 睽違 16 年接《Akrasia》（已在池落頹靡）的 Cyclic Law 作，Kammarheit 的 Pär Boström 客座；文案以靜止為生活方式、冰封內在地景為題，drone ambient 下沉。｜⚠ 已讀 Bandcamp 文案（cycliclaw 頁）：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm/noise。｜MB release-group 425537b3-c0a5-4681-8321-1146ee3cf2c0：title「Modus Vivendi」、Album、first-release-date 2023-09-22、artist-credit「Sinke Dûs」。證據：https://musicbrainz.org/release-group/425537b3-c0a5-4681-8321-1146ee3cf2c0 https://coverartarchive.org/release-group/425537b3-c0a5-4681-8321-1146ee3cf2c0/front-500 https://cycliclaw.bandcamp.com/album/modus-vivendi https://www.discogs.com/release/28523416",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/425537b3-c0a5-4681-8321-1146ee3cf2c0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 318,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 318）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 318），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "冰封的內在地景底下，暗流還在動。隔了 16 年，瑞典 dark ambient 音樂人 Marcus Lönebrink 讓 Sinke Dûs 回到 Cyclic Law，上一張是 2007 年的《Akrasia》。這一回的主題是把靜止當成生活方式，地景早已化石化。2023 年問世，八首都是 drone 長音。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/28523416",
+     "https://musicbrainz.org/release-group/425537b3-c0a5-4681-8321-1146ee3cf2c0",
+     "https://cycliclaw.bandcamp.com/album/modus-vivendi",
+     "https://africanpaper.com/?p=37316"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/cc/d6/e0/ccd6e031-c616-1cdb-9423-1f920850d1a3/mzaf_674348415857406679.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1705465931",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 1705465931「Sinke Dûs《Modus Vivendi》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Vastatio〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Underwater Sleep Orchestra",
+   "album": "Insomnolence",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5fa314e7-c26c-4aca-9e13-ed2c6d5a1853",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cryo Chamber 未收藝人：Underwater Sleep Orchestra 第二張，獻給睡醒之間失眠的人；全部聲音過 VHS 磁帶的 murky dreamlike soundscapes，厚糊下沉、落頹靡。｜⚠ 已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；tag 有 dream music，研究層可核色溫。｜MB release-group 5fa314e7-c26c-4aca-9e13-ed2c6d5a1853：title「Insomnolence」、Album、first-release-date 2023-04-04、artist-credit「Underwater Sleep Orchestra」。證據：https://musicbrainz.org/release-group/5fa314e7-c26c-4aca-9e13-ed2c6d5a1853 https://coverartarchive.org/release-group/5fa314e7-c26c-4aca-9e13-ed2c6d5a1853/front-500 https://cryochamber.bandcamp.com/album/insomnolence",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5fa314e7-c26c-4aca-9e13-ed2c6d5a1853/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 595,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 595）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 595），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "這一張獻給睡不著也醒不透的人。由 Bruce Moallem 與 Pär Boström 合組的 dark ambient 雙人組 Underwater Sleep Orchestra，兩人的首作寫的是同一夜的兩場夢。音樂照樣全過 VHS 磁帶，由 Moallem 處理。低沉的共鳴裡，田野錄音與人的低吼交錯，質地粗粒，氛圍詭異。2023 年 4 月 4 日，Cryo Chamber 把它推出。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/5fa314e7-c26c-4aca-9e13-ed2c6d5a1853",
+     "https://cryochamber.bandcamp.com/album/insomnolence",
+     "https://side-line.com/?p=44204"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/21/c2/fd/21c2fd2f-e7bf-e708-360e-097d467f36de/mzaf_10290297468260449400.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1660215762",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 1660215762「Underwater Sleep Orchestra《Insomnolence》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Counting Poisoned Sheep〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Silent Universe",
+   "album": "The Infinity Coordinates",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "57f28db9-c9f3-4f70-9a03-084cb8ae576b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cryo Chamber 未收藝人：Ugasanie（Pavel Malyshkin，池中多張落頹靡）的暗黑太空副計畫首作；文案寫以太空磁場讀數探索無盡黑暗中的異常，raw、isolated、rumbling dark sounds，低頻轟鳴下壓。｜⚠ 已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；tag 含 space ambient，但文案自稱 dark、rumbling，非中性太空盤；研究層可再核。｜MB release-group 57f28db9-c9f3-4f70-9a03-084cb8ae576b：title「The Infinity Coordinates」、Album、first-release-date 2017-12-26、artist-credit「Silent Universe」。證據：https://musicbrainz.org/release-group/57f28db9-c9f3-4f70-9a03-084cb8ae576b https://coverartarchive.org/release-group/57f28db9-c9f3-4f70-9a03-084cb8ae576b/front-500 https://cryochamber.bandcamp.com/album/the-infinity-coordinates",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/57f28db9-c9f3-4f70-9a03-084cb8ae576b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 2245,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2245）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 2245），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "壓軸 16 分鐘，寫的是宇宙微波背景。Ugasanie 的主腦 Pavel Malyshkin 另開暗黑太空線 Silent Universe，2017 年帶著本作登上 Cryo Chamber。那首壓軸叫〈In Cosmic Microwave Background〉。整張要人去聽太空的磁場讀數，化成一片低頻轟鳴。",
+    "sourceUrls": [
+     "https://cryochamber.bandcamp.com/album/the-infinity-coordinates",
+     "https://www.discogs.com/artist/2262477",
+     "https://www.discogs.com/artist/3268780",
+     "https://musicbrainz.org/release-group/57f28db9-c9f3-4f70-9a03-084cb8ae576b",
+     "https://ghostcultmag.com/album-review-ugasanie-ice-breath-of-antarctica-cryo-chamber",
+     "https://fromcornersunknown.com/voices-from-corners-unknown/voices-from-corners-unknown-ep-2/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e7/05/be/e705be30-709c-ab56-e001-93e713d80f07/mzaf_6328237243906534224.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1320774571",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1320774571「Silent Universe《The Infinity Coordinates》」：曲目 5/5 對上 MB 原盤（Apple 共 5 軌），取第 1 軌〈Spiral Space〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ugasanie",
+   "album": "Endless Cold, Endless Darkness",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "93085eac-46ac-41a0-83b8-8890851f26ce",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cryo Chamber 未收藝人：Ugasanie（池中六張多落頹靡）2026 年 Cryo Chamber 新作，文案寫暴風雪、古墓與神聖氛圍的 bleak, cold dark ambient；遠離文明的荒原 drone，冷而下壓。｜⚠ 已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；有 delicate textures and blue noise 一語（屬柔和噪紋，非噪牆）。2026-01 新盤，研究層可核 CAA／樂評。｜MB release-group 93085eac-46ac-41a0-83b8-8890851f26ce：title「Endless Cold, Endless Darkness」、Album、first-release-date 2026-01-13、artist-credit「Ugasanie」。證據：https://musicbrainz.org/release-group/93085eac-46ac-41a0-83b8-8890851f26ce https://coverartarchive.org/release-group/93085eac-46ac-41a0-83b8-8890851f26ce/front-500 https://cryochamber.bandcamp.com/album/endless-cold-endless-darkness",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/93085eac-46ac-41a0-83b8-8890851f26ce/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 586,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 586）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 586），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "針葉林的濃霧、薩滿的死城，還有暴風雪。在白俄羅斯維捷布斯克，Pavel Malyshkin 的 dark ambient 計畫 Ugasanie 於 2010 年 11 月成形，作品至今近三十張。曲名由開場的針葉林霧中出發，走到〈The City of Dead Shamans〉。聲音冷而粗礪，風雪聲裡織著 blue noise。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/36876121",
+     "https://www.discogs.com/artist/2262477",
+     "https://cryochamber.bandcamp.com/album/endless-cold-endless-darkness",
+     "https://ghostcultmag.com/album-review-ugasanie-ice-breath-of-antarctica-cryo-chamber",
+     "https://musicbrainz.org/release-group/93085eac-46ac-41a0-83b8-8890851f26ce"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/80/12/ab8012e9-506a-e26a-6499-8bad7ef31a21/mzaf_1646846011461082438.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1838512446",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1838512446「Ugasanie《Endless Cold, Endless Darkness》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈In the Thick Fog of the Taiga Forests〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dronny Darko & Ugasanie",
+   "album": "Dark Source of the North",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4d520dfc-a0ec-4e3a-90c4-57749ac37e89",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cryo Chamber 未收藝人：Dronny Darko 與 Ugasanie 接《Arctic Gates》（已在池）的續作：探險隊潛入極地冰層下的古老存在，文案自稱 dark arctic drone、層疊聲響設計，酷寒下壓、落頹靡。｜⚠ 已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；僅 subdued noise 一語。｜MB release-group 4d520dfc-a0ec-4e3a-90c4-57749ac37e89：title「Dark Source of the North」、Album、first-release-date 2022-12-13、artist-credit「Dronny Darko & Ugasanie」。證據：https://musicbrainz.org/release-group/4d520dfc-a0ec-4e3a-90c4-57749ac37e89 https://coverartarchive.org/release-group/4d520dfc-a0ec-4e3a-90c4-57749ac37e89/front-500 https://cryochamber.bandcamp.com/album/dark-source-of-the-north",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4d520dfc-a0ec-4e3a-90c4-57749ac37e89/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 194,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 194）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 194），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "探險隊鑽進極地冰層，儀器在磁場裡尖聲嗶叫。《Arctic Gates》之後，烏克蘭的 Dronny Darko 與白俄羅斯的 Ugasanie 再度合作，做這張極地 dark ambient。冰層底下沉睡著一段不安的過去，冰牆另一側也有東西被驚動。這趟冰下之旅 2022 年 12 月 13 日正式由 Cryo Chamber 發行。低頻 drone 夾著水下田野錄音，在夢幻與荒涼之間來回擺盪，其中〈Presence〉最暗。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/25688956",
+     "https://www.side-line.com/dronny-darko-ugasanie-dark-source-of-the-north-album-cryo-chamber/",
+     "https://cryochamber.bandcamp.com/album/dark-source-of-the-north",
+     "https://musicbrainz.org/release-group/4d520dfc-a0ec-4e3a-90c4-57749ac37e89"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/12/0d/32/120d32e4-562b-094f-fa2f-17d92f35bbbd/mzaf_3451892775760806204.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1644685321",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1644685321「Dronny Darko & Ugasanie《Dark Source of the North》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈In Search of an Object〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dronny Darko & G M Slater",
+   "album": "Dissolving Into Solitary Landscapes",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "89eb69ef-781a-435d-b27e-d579a1ebdb2a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cryo Chamber 未收藝人：Dronny Darko 與 G M Slater 合作，以 2043 年毒雨地表的訣別信為框架；暗黑 drone＋田野錄音，孤寂下沉、落頹靡。｜⚠ 已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm/noise；文案是書面信件，未標口白。｜MB release-group 89eb69ef-781a-435d-b27e-d579a1ebdb2a：title「Dissolving Into Solitary Landscapes」、Album、first-release-date 2022-07-05、artist-credit「Dronny Darko & G M Slater」。證據：https://musicbrainz.org/release-group/89eb69ef-781a-435d-b27e-d579a1ebdb2a https://coverartarchive.org/release-group/89eb69ef-781a-435d-b27e-d579a1ebdb2a/front-500 https://cryochamber.bandcamp.com/album/dissolving-into-solitary-landscapes",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/89eb69ef-781a-435d-b27e-d579a1ebdb2a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 126,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 126）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 126），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "在地下撐了五年，寫信的人決定回到地表。雨聲與低頻 drone，出自基輔的 Dronny Darko（Oleg Puzan）與美國的 G M Slater 之手。文案是一封 2043 年的告別信：2036 年全球氣候修復成功，落下的雨卻帶毒，人類兩年內全數轉入地下。信中人說，召喚他的「無限之鐘」一天比一天響，他要上去溶入孤獨的風景。Cryo Chamber 讓它在 2022 年 7 月上架。極簡 drone 配上雨中田野錄音，變化很少，像一首無止境的長曲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/23950130",
+     "https://www.side-line.com/dronny-darko-g-m-slater-dissolving-into-solitary-landscapes-album-cryo-chamber/",
+     "https://cryochamber.bandcamp.com/album/dissolving-into-solitary-landscapes",
+     "https://musicbrainz.org/release-group/89eb69ef-781a-435d-b27e-d579a1ebdb2a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/90/14/8f/90148f6c-e263-80e0-1455-cfabcb3f4495/mzaf_13177799825332914517.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1611719105",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1611719105「Dronny Darko & G M Slater《Dissolving into Solitary Landscapes》」：Apple us 1611719105《Dissolving into Solitary Landscapes》6 軌即 Cryo Chamber 2022 原盤（MB 比對 4/6 是 Pt. 1／Pt. 2 標點寫法差異），取第 1 軌。，取第 1 軌〈The Infinity Bell Pt. 1〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Council of Nine",
+   "album": "Dakhma",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b5e38cbf-7c45-43d3-9a38-e75d72715417",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cryo Chamber 未收藝人：Council of Nine 的 Cryo Chamber 首張全長（池中《Diagnosis》《Exit Earth》《Davidian》已落頹靡）；文案寫共鳴的弓擦聲與深沉低頻營造孤絕，古史穿越死亡進入虛空。｜⚠ 已讀 Bandcamp 文案：resonant bowed sounds and deep low tones；未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；tag 有 noise。｜MB release-group b5e38cbf-7c45-43d3-9a38-e75d72715417：title「Dakhma」、Album、first-release-date 2015-04-28、artist-credit「Council of Nine」。證據：https://musicbrainz.org/release-group/b5e38cbf-7c45-43d3-9a38-e75d72715417 https://coverartarchive.org/release-group/b5e38cbf-7c45-43d3-9a38-e75d72715417/front-500 https://cryochamber.bandcamp.com/album/dakhma",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b5e38cbf-7c45-43d3-9a38-e75d72715417/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 5932,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 5932）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "合輯裡先露了臉，這回他獨挑一整張。從合輯《Tomb of Empires》走出來的 Council of Nine，是加州 Maximillian Olivier 的 dark ambient 計畫。廠方說他先靠那張合輯受到注目，《Dakhma》則是他的首張全長專輯，2015 年 4 月 28 日亮相於 Cryo Chamber。整張被寫成一趟旅程，穿過死亡、進入虛空。弓擦的共鳴與深沉次低頻鋪在底下，其間藏著細小噪音；近 16 分鐘的〈Sacrifice〉低音最厚。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7651228",
+     "https://cryochamber.bandcamp.com/album/dakhma",
+     "https://www.chaindlk.com/reviews/8722",
+     "https://www.side-line.com/?p=4082",
+     "https://musicbrainz.org/release-group/b5e38cbf-7c45-43d3-9a38-e75d72715417"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e4/88/28/e48828a0-402f-6d3c-2750-59f8d0ca5d27/mzaf_6655370319266848785.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "962121339",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 962121339「Council of Nine《Dakhma》」：曲目 6/6 對上 MB 原盤（Apple 共 6 軌），取第 1 軌〈The Magi〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Void Stasis",
+   "album": "Ruins",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "958538f8-3c28-4108-9c48-eb9b3a563ed3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cryo Chamber 未收藝人：Kristof Bathory 等三人以硬體合成器與 Eurorack 組的 Void Stasis 首作（後作《Specimen 7》已在池），地球漂入異星大氣後的文明廢墟，暗黑 drone 下壓。｜⚠ 已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm/noise。｜MB release-group 958538f8-3c28-4108-9c48-eb9b3a563ed3：title「Ruins」、Album、first-release-date 2022-05-24、artist-credit「Void Stasis」。證據：https://musicbrainz.org/release-group/958538f8-3c28-4108-9c48-eb9b3a563ed3 https://coverartarchive.org/release-group/958538f8-3c28-4108-9c48-eb9b3a563ed3/front-500 https://cryochamber.bandcamp.com/album/ruins",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/958538f8-3c28-4108-9c48-eb9b3a563ed3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1320,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1320）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1320），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "三人插起 Eurorack 模組，推演一場人類滅絕。Dawn of Ashes 的 Kristof Bathory、Die Sektor 的 Scott Denman 與 Marie Ann Hedonia，合組了 dark ambient 團 Void Stasis。設想中，地球漂進異星的大氣，人類一步步走向滅絕。他們拿硬體合成器與 Eurorack 做實驗，捕捉帶著異形質地的音景。《Ruins》2022 年 5 月 24 日開賣於 Cryo Chamber。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/23448095",
+     "https://cryochamber.bandcamp.com/album/ruins",
+     "https://www.side-line.com/void-stasis-eschaton-digital-cd-album-cryo-chamber/",
+     "https://musicbrainz.org/release-group/958538f8-3c28-4108-9c48-eb9b3a563ed3"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/e1/59/77/e1597755-0041-2d39-58b0-75b6363100cf/mzaf_17991225256355626448.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1608733453",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1608733453「Void Stasis《Ruins》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Liquid Fire〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Yair Elazar Glotman",
+   "album": "Northern Gulfs",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0d617055-7a15-4e66-907e-5d6461185389",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "isolationist／極地冷 drone（擴寫）：柏林聲音藝術家 Glotman 的北極水域電聲航行，數位處理、類比電子、原聲樂器與實地錄音交疊成冰海 drone，isolationist 式冷而厚。｜⚠ 已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；廠牌通用 tag 含 techno（非本張描述），研究層可核。｜MB release-group 0d617055-7a15-4e66-907e-5d6461185389：title「Northern Gulfs」、Album、first-release-date 2014-04-01、artist-credit「Yair Elazar Glotman」。證據：https://musicbrainz.org/release-group/0d617055-7a15-4e66-907e-5d6461185389 https://coverartarchive.org/release-group/0d617055-7a15-4e66-907e-5d6461185389/front-500 https://glacialmovements.bandcamp.com/album/northern-gulfs",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0d617055-7a15-4e66-907e-5d6461185389/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1087,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1087）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1087），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "從沉錨駛到返港，一路穿過北方的海灣。柏林藝術大學低音提琴出身的 Yair Elazar Glotman，以本作交出第一張個人專輯。六首從〈Sunken Anchor〉排到〈Home Port〉，數位處理與類比電子交織，再混入原聲樂器與實地錄音。2014 年 4 月，唱片交給 Glacial Movements 發行。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/5552832",
+     "https://en.wikipedia.org/wiki/Yair_Elazar_Glotman",
+     "https://glacialmovements.bandcamp.com/album/northern-gulfs",
+     "https://glacialmovements.kudosrecords.co.uk/release/gm021/yair-elazar-glotman-northern-gulfs",
+     "https://musicbrainz.org/release-group/0d617055-7a15-4e66-907e-5d6461185389"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/dc/00/08/dc0008fd-b90d-d99b-7b2c-98b5edeb3621/mzaf_1059606186090056946.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "824698152",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 824698152「Yair Elazar Glotman《Northern Gulfs》」：曲目 6/6 對上 MB 原盤（Apple 共 6 軌），取第 1 軌〈Sunken Anchor〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lia Bosch",
+   "album": "Polar Code",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c77b2b58-b5fb-4351-bec5-a48f7716b58d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "isolationist／極地冷 drone（擴寫）：Lia Bosch 的 Glacial Movements 首作，南極廢棄外星基地的故事＋影像＋聲音，極地暗黑 ambient，冷而孤絕。｜⚠ 已讀 Bandcamp 文案：只寫故事，聲音描述薄；未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；「pulsating」只形容故事中的門。研究層宜找樂評核聲音。｜MB release-group c77b2b58-b5fb-4351-bec5-a48f7716b58d：title「Polar Code」、Album、first-release-date 2024-12-05、artist-credit「Lia Bosch」。證據：https://musicbrainz.org/release-group/c77b2b58-b5fb-4351-bec5-a48f7716b58d https://coverartarchive.org/release-group/c77b2b58-b5fb-4351-bec5-a48f7716b58d/front-500 https://glacialmovements.bandcamp.com/album/polar-code",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c77b2b58-b5fb-4351-bec5-a48f7716b58d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 120,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 120）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 120），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "南極廢棄基地裡亮起一個無限符號，該不該說出去？畫畫、做設計、寫詩也拍片的義大利藝術家 Lia Bosch 發了首張專輯，她是 Glacial Movements 近 20 年來第一位發片的女性。她自己寫的故事裡，撞見符號的是秘密機構派去的研究員，基地原屬外星人；研究員得在公開消息、冒擾亂全球秩序之險，與讓人類命運照舊之間選一條。十二首短曲裡，劈啪的質地、迴盪的片段底下鋪著田野錄音，冰冷而帶折磨感。這組曲子 2024 年 12 月 5 日問世。",
+    "sourceUrls": [
+     "https://api.discogs.com/database/search?q=Lia+Bosch+Polar+Code&type=release",
+     "https://www.side-line.com/lia-bosch-polar-code-digital-cd-album-glacial-movements-records/",
+     "https://glacialmovements.bandcamp.com/album/polar-code",
+     "https://musicbrainz.org/release-group/c77b2b58-b5fb-4351-bec5-a48f7716b58d"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/76/e7/3e/76e73e42-7868-e281-2493-996a89d2df48/mzaf_14480904471957805992.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1771642322",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1771642322「Lía Bosch《Polar Code》」：Apple us 1771642322「Lía Bosch《Polar Code》」12 軌曲名逐首對上 MB（藝人名帶重音符，自動搜尋未命中），取第 1 軌。，取第 1 軌〈Convergence〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Aware",
+   "album": "Requiem for a Dying Animal",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "35a606b1-2ee9-4f70-b6ee-b22b830f92cf",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "isolationist／極地冷 drone（擴寫）：維也納 Alexander Glück 的 Aware 第二張 Glacial Movements 作，為垂死生靈而寫的安魂曲，冰冷極簡的暗黑 ambient drone，下沉。｜⚠ 已讀 Bandcamp 文案：只談理念（受苦能力），無聲音描述；未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm。聲音證據薄，研究層宜找樂評核 y／z。｜MB release-group 35a606b1-2ee9-4f70-b6ee-b22b830f92cf：title「Requiem for a Dying Animal」、Album、first-release-date 2023-07-14、artist-credit「Aware」。證據：https://musicbrainz.org/release-group/35a606b1-2ee9-4f70-b6ee-b22b830f92cf https://coverartarchive.org/release-group/35a606b1-2ee9-4f70-b6ee-b22b830f92cf/front-500 https://glacialmovements.bandcamp.com/album/requiem-for-a-dying-animal",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/35a606b1-2ee9-4f70-b6ee-b22b830f92cf/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 85,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 85）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 85），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "這首安魂曲只問一件事：一個生命會不會受苦。維也納的 Alexander Glück 生於 1983 年、讀哲學與物理，以化名 Aware 做 dark ambient。問題撇開了聰明與否，文案還借 Arvo Pärt 的話：音樂會傷人，因為它碰觸的是空氣本身。四首只以 I 到 IV 編號，長 8 到 17 分鐘，雜訊、田野錄音緩慢堆疊。2023 年 7 月 14 日上市時，已是他在 Glacial Movements 的第二張。",
+    "sourceUrls": [
+     "https://glacialmovements.bandcamp.com/album/requiem-for-a-dying-animal",
+     "https://www.side-line.com/aware-requiem-for-a-dying-animal-album-glacial-movements/",
+     "https://musicbrainz.org/release-group/35a606b1-2ee9-4f70-b6ee-b22b830f92cf"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/60/9b/90609b54-7843-7bec-2fd6-c1315e5b2caa/mzaf_1451807215645910905.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1690153917",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1690153917「AWARE《Requiem For a Dying Animal》」：Apple us 1690153917「AWARE《Requiem For a Dying Animal》」4 軌 I–IV 即 MB Part I–IV（曲名寫法差異），取第 1 軌。，取第 1 軌〈I〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Argyre Planitia",
+   "album": "Tenth Region of the Night",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "620adf88-f30a-47f0-98d4-efb9f9438a86",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Winter-Light 深 ambient 二線：漢諾威 Stefan Voß 的 Argyre Planitia 在 Winter-Light 的作品，以埃及太陽神夜行冥界第十區為題的夜間夢境旅程，深 ambient drone，催眠下沉。｜⚠ 已讀 Bandcamp 文案：只寫神話與夢境，未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；聲音證據薄。注意同藝人《The Great Dark Spot》文案寫 atmospheric percussion（未提名），研究層宜核本張有無打擊。｜MB release-group 620adf88-f30a-47f0-98d4-efb9f9438a86：title「Tenth Region of the Night」、Album、first-release-date 2020-09-25、artist-credit「Argyre Planitia」。證據：https://musicbrainz.org/release-group/620adf88-f30a-47f0-98d4-efb9f9438a86 https://coverartarchive.org/release-group/620adf88-f30a-47f0-98d4-efb9f9438a86/front-500 https://winter-light.bandcamp.com/album/tenth-region-of-the-night",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/620adf88-f30a-47f0-98d4-efb9f9438a86/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 23,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 23）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 23），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一閉上眼夜行就開始，和神話裡的敵人纏鬥到天亮。2013 年起就在發片的德國漢諾威音樂人 Stefan Voß，Argyre Planitia 是他的 dark ambient 名號。文案從沉入深睡寫起，一路與眾神同行，末了是一首太陽神自 Apophis 手中獲釋的詩。七首共約 57 分鐘，尖銳如北風的風暴聲底下，是迴盪的 drone 與低沉嗡鳴。荷蘭廠牌 Winter-Light 選 2020 年 9 月 25 日出版。",
+    "sourceUrls": [
+     "https://winter-light.bandcamp.com/album/tenth-region-of-the-night",
+     "https://www.side-line.com/argyre-planitia-tenth-region-of-the-night-album-winter-light/",
+     "https://musicbrainz.org/release-group/620adf88-f30a-47f0-98d4-efb9f9438a86"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "Apple us 以藝人搜尋只有 2025《Ediacara》，2020 Winter-Light《Tenth Region of the Night》未上架。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kloob & Onasander",
+   "album": "Mundus Patet",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4d0b3993-df7f-4341-b160-4906b2d8786a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Winter-Light 深 ambient 二線：Dani Kloob 與 Maurizio Landini（Onasander）以古羅馬開冥界之門的 Mundus Patet 儀式為題，暗黑 ambience 與 drone 質地，冷而下沉。｜⚠ 已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；聲音描述薄，研究層可找樂評核。｜MB release-group 4d0b3993-df7f-4341-b160-4906b2d8786a：title「Mundus Patet」、Album、first-release-date 2020-08-24、artist-credit「Kloob & Onasander」。證據：https://musicbrainz.org/release-group/4d0b3993-df7f-4341-b160-4906b2d8786a https://coverartarchive.org/release-group/4d0b3993-df7f-4341-b160-4906b2d8786a/front-500 https://winter-light.bandcamp.com/album/mundus-patet",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4d0b3993-df7f-4341-b160-4906b2d8786a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 24,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 24）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 24），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兩人在 Facebook 上結識，互相剪輯對方的音軌。一位是西班牙的 Dani Kloob，一位是義大利人 Maurizio Landini，以 Onasander 為名，合起來做這張暗黑 drone。合作的方式是交換一層層音軌。題材是古羅馬的 Mundus Patet，意思是「大地敞開」：儀式坑一年開三天，讓生者與死者往來。開場是深沉的呼吸與儀式鈴聲，其後一路漸強。《Mundus Patet》2020 年 8 月 24 日釋出，廠牌是 Winter-Light。",
+    "sourceUrls": [
+     "https://winter-light.bandcamp.com/album/mundus-patet",
+     "https://www.side-line.com/click-interview-with-kloob-onasander-we-are-facing-a-religious-world-but-with-the-strangest-forms/",
+     "https://www.side-line.com/kloob-onasander-mundus-patet-album-winter-light/",
+     "https://musicbrainz.org/release-group/4d0b3993-df7f-4341-b160-4906b2d8786a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/9a/9e/9f/9a9e9ff2-8f4a-cf8c-0b49-abdc06e3f3b7/mzaf_868262013915610847.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1530430702",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1530430702「Kloob & Onasander《Mundus Patet》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Mundus Patet〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tho-So-Aa",
+   "album": "Epoch, Part 1",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "35c70421-f36f-47a5-8425-e3bd4a6fd61e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cyclic Law／Loki／Old Europa 二線：德國 Tho-So-Aa 1996 年的深 ambient 老盤（2026 Loki Foundation 重發），文案稱緩慢、堅忍、磁帶霧般的 drone，濃密、地底、克制，壓人下沉的頹靡型。｜⚠ 已讀 Bandcamp 文案（loki-found 重發頁）：slow, stoic, dense, subterranean, tape-like haze；未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；noise 僅 Loki 通用 tag。首發廠牌依 MB 為 Art Konkret。｜MB release-group 35c70421-f36f-47a5-8425-e3bd4a6fd61e：title「Epoch, Part 1」、Album、first-release-date 1996、artist-credit「Tho-So-Aa」。證據：https://musicbrainz.org/release-group/35c70421-f36f-47a5-8425-e3bd4a6fd61e https://coverartarchive.org/release-group/35c70421-f36f-47a5-8425-e3bd4a6fd61e/front-500 https://loki-found.bandcamp.com/album/epoch-part-one https://www.discogs.com/release/315413",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/35c70421-f36f-47a5-8425-e3bd4a6fd61e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 10,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 10）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 10），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "五段 1995 年的 drone，2026 年重見天日。德國 Art Konkret 在 1996 年發行的這張，是 Tho-So-Aa 的第一張專輯。五段編成 Section I 至 V，drone 以地質般的耐心緩緩綻放。2026 年 3 月，萊比錫的 Loki Foundation 把它重新發行。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/315413",
+     "https://api.discogs.com/releases/36818443",
+     "https://loki-found.bandcamp.com/album/epoch-part-one",
+     "https://musicbrainz.org/release-group/35c70421-f36f-47a5-8425-e3bd4a6fd61e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "Apple us 的 ThoSoAa 只有 2008 年後作品，1996 Art Konkret《Epoch, Part 1》未上架。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Eximia",
+   "album": "Visitors",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "20720c2e-8221-423b-bf9d-d9fa84b8b34c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cryo Chamber 未收藝人：斯洛伐克 Dominik Ragančík 的 Eximia 在 Cryo Chamber 的外星入侵題材作，文案明說靠氛圍而非和聲撐場；聲響設計＋田野錄音的暗黑 drone，旋律不明、冷而下壓。｜⚠ 已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；題材為入侵，研究層可核有無驚嚇音效。｜MB release-group 20720c2e-8221-423b-bf9d-d9fa84b8b34c：title「Visitors」、Album、first-release-date 2018-04-03、artist-credit「Eximia」。證據：https://musicbrainz.org/release-group/20720c2e-8221-423b-bf9d-d9fa84b8b34c https://coverartarchive.org/release-group/20720c2e-8221-423b-bf9d-d9fa84b8b34c/front-500 https://cryochamber.bandcamp.com/album/visitors https://www.discogs.com/release/11810538",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/20720c2e-8221-423b-bf9d-d9fa84b8b34c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 2501,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2501）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 2501），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "講的是外星入侵，整張卻幾乎找不到和聲。Eximia 名下只見這一張，是斯洛伐克人 Dominik Ragančík 一手寫作、演奏並做母帶的暗黑 ambient 名義。Cryo Chamber 把它定位成以聲響設計和田野錄音為主體的作品，靠質地與空間撐場。發行在 2018 年 4 月，文案收在「我們的新神已經降臨」，並推薦閉眼聆聽。水下般的氛圍混著晦暗的聲音處理，壓抑的恐懼四處潛伏，起伏不大。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/20720c2e-8221-423b-bf9d-d9fa84b8b34c",
+     "https://www.discogs.com/release/11810538",
+     "https://cryochamber.bandcamp.com/album/visitors",
+     "https://musicbrainz.org/artist/3efc07d4-a5e4-43fb-bb03-67c5c033395f",
+     "https://side-line.com/?p=15684"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e9/ef/c0/e9efc08a-7f8a-4364-ba38-35179b18f4b7/mzaf_6339324200703449893.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1353173947",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1353173947「Eximia《Visitors》」：曲目 6/6 對上 MB 原盤（Apple 共 6 軌），取第 1 軌〈Day One〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sjellos",
+   "album": "Transmission Lost",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e35639ec-7f74-486a-958f-39ddedac623c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Cryo Chamber 未收藝人：德國 Sjellos 的 Cryo Chamber 首作（《Lifeless Ground》已在池落頹靡）：腐朽太空船走廊、異星機械嗡鳴與荒棄神殿，工業暗黑 drone，陰冷下壓。｜⚠ 已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；tag 有 horror/scary/space ambient，研究層可核驚嚇段。｜MB release-group e35639ec-7f74-486a-958f-39ddedac623c：title「Transmission Lost」、Album、first-release-date 2013-04-09、artist-credit「Sjellos」。證據：https://musicbrainz.org/release-group/e35639ec-7f74-486a-958f-39ddedac623c https://coverartarchive.org/release-group/e35639ec-7f74-486a-958f-39ddedac623c/front-500 https://cryochamber.bandcamp.com/album/transmission-lost https://www.discogs.com/release/4462286",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2013,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e35639ec-7f74-486a-958f-39ddedac623c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 16348,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 16348）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "積灰的太空船走廊，盡頭是荒星上的古神殿。另以 Disguised、HartWare 等名義創作的德國人 Tibor Knopf，用 Sjellos 之名做暗黑 ambient 與配樂。文案寫異星科技在老舊星艦通道裡輕巧震顫，後半才轉向那座遭人遺忘的神殿，外太空與內在空間並列為主題。機械嗡鳴與引擎般的低頻 drone 壓在田野錄音上，帶工業質感。2013 年 4 月，Cryo Chamber 推出了這張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/e35639ec-7f74-486a-958f-39ddedac623c",
+     "https://www.discogs.com/release/4462286",
+     "https://www.discogs.com/artist/3039466",
+     "https://www.side-line.com/sjellos-lifeless-ground-digital-cd-album-cryo-chamber/",
+     "https://cryochamber.bandcamp.com/album/transmission-lost"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music3/v4/63/31/a9/6331a9f5-3d94-494c-1cd4-37f2545cf61c/mzaf_1922960620719514320.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "914074428",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 914074428「Sjellos《Transmission Lost》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Excavation〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Stuzha",
+   "album": "Butugichag",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "703764d7-a8b9-41e1-995c-49c43663ebce",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "isolationist／極地冷 drone（擴寫）：西伯利亞 cold ambient 計畫 Stuzha 第二張，以科雷馬古拉格勞改營的一天為題，西伯利亞實地錄音＋冷 drone，酷寒下壓、落頹靡。｜⚠ 已讀 Bandcamp 文案（algolstuzha 頁，文案被截斷）：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；研究層可補讀全文。｜MB release-group 703764d7-a8b9-41e1-995c-49c43663ebce：title「Butugichag」、Album、first-release-date 2015-01、artist-credit「Stuzha」。證據：https://musicbrainz.org/release-group/703764d7-a8b9-41e1-995c-49c43663ebce https://coverartarchive.org/release-group/703764d7-a8b9-41e1-995c-49c43663ebce/front-500 https://algolstuzha.bandcamp.com/album/butugichag https://www.discogs.com/release/6547694",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/703764d7-a8b9-41e1-995c-49c43663ebce/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 155,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 155）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 155），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "在英國做地球物理的西伯利亞人，錄下勞改營的一天。本行地球物理的 Daniil 替計畫取名 Stuzha，俄語意為「嚴寒」，做的是 cold ambient。那座勞改營在科雷馬，是當地最致命的一座。他說要把聽者帶到那裡，問它當初為何存在，並強調用意與政治無關。四首合計約 42 分鐘，前景的 drone 緩慢演變，田野錄音取自西伯利亞，退在背景。2015 年 1 月，Ksenza Records 與 Infinite Fog 聯合發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/703764d7-a8b9-41e1-995c-49c43663ebce",
+     "https://api.discogs.com/releases/6547694",
+     "https://algolstuzha.bandcamp.com/album/butugichag",
+     "https://www.thisisdarkness.com/2017/03/19/stuzha-interview-2017/",
+     "https://www.thisisdarkness.com/2017/12/06/stuzha1-siberian-sketches-ii-review/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/57/b2/2b/57b22bcc-7b32-e1dc-e6ce-f1ce71d34ffc/mzaf_17262931556520051594.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1481189487",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1481189487「Stuzha《Butugichag》」：曲目 4/4 對上 MB 原盤（Apple 共 4 軌），取第 1 軌〈A Night By the Foot of the Mountain〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lull",
+   "album": "That Space Somewhere",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "35dbcf58-97d7-4f1c-ae47-2d76654ada37",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "isolationist／極地冷 drone（擴寫）：Mick Harris 的 Lull 睽違 14 年新作（池中《Cold Summer》《Like a Slow River》已落頹靡），Cold Spring 文案稱其為無拍 isolationist 暗黑 ambient 先驅，封城期間在河畔所得的冥想漂流 drone，往下沉。｜⚠ 已讀 Cold Spring Bandcamp 文案：beats 只出現在 without beats；未見 percussion/旋律樂器/人聲/spoken word/warm/noise。｜MB release-group 35dbcf58-97d7-4f1c-ae47-2d76654ada37：title「That Space Somewhere」、Album、first-release-date 2022-12-02、artist-credit「Lull」。證據：https://musicbrainz.org/release-group/35dbcf58-97d7-4f1c-ae47-2d76654ada37 https://coverartarchive.org/release-group/35dbcf58-97d7-4f1c-ae47-2d76654ada37/front-500 https://coldspring.bandcamp.com/album/that-space-somewhere-csr321cd https://www.discogs.com/release/25376470",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/35dbcf58-97d7-4f1c-ae47-2d76654ada37/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 404,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 404）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 404），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "他說，這種音樂純粹是能讓自己迷失其中的東西。說這話的是 Mick Harris，他的 Lull 被 Cold Spring 稱作 isolationist 暗黑 ambient 的開路先鋒，起點就是探索去掉節拍的聲音。2020 年 6 月，他一人把這張創作並混音完成。四首長達 59 分鐘，前三首都超過 15 分鐘；低頻像洞穴般翻湧，低音 drone 緩慢顫動，金屬鳴響被拉長。2022 年 12 月 2 日，它登上 Cold Spring 目錄。",
+    "sourceUrls": [
+     "https://coldspring.bandcamp.com/album/that-space-somewhere-csr321cd",
+     "https://api.discogs.com/releases/25376470",
+     "https://en.wikipedia.org/wiki/Lull_(band)",
+     "https://www.musiquemachine.com/reviews/lull-that-space-somewhere-9767",
+     "https://musicbrainz.org/release-group/35dbcf58-97d7-4f1c-ae47-2d76654ada37"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/eb/e1/2a/ebe12aa1-73ae-d25a-c05b-5e8153f1f9de/mzaf_1152882529684756139.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T00:20:34Z",
+    "appleCollectionId": "1654054111",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1654054111「Lull《That Space Somewhere》」：曲目 4/4 對上 MB 原盤（Apple 共 4 軌），取第 1 軌〈Range〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

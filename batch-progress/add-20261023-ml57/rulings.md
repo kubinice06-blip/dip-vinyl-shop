@@ -99,3 +99,8 @@
   - `N’Dambi|Little Lost Girls Blues`：刪「整張聽來前後一致」（Exclaim! 單評評價）→ 228 字。
 - **21392** 事實逐句核過：KING「第一張入圍葛萊美最佳都會當代專輯的獨立發行作品」（維基）、Rachelle Ferrell 1994 年 Billboard 200 第 161 名、N’Dambi 自發行約 5 萬張、Aisha 本名 Pamela Ross 皆有研究稿出處；島名全批統一「聖克羅伊」。
 - **21393** 媒體名、榜單名次（媒體年終榜）、「據說／評者」全批 0。
+
+## 上線與評分（2026-10-23，主線）（條號 21394–21396）
+- **21394**：上線 12 張：card_catalog 12／12、KV 12 鍵回讀逐字一致（stamp 20261023r13）、試聽 10 ready／2 unavailable（Adriana Evans 首作、Dezarie《FYA》Apple 未上架；Rachelle Ferrell 走 preview-override 取 1992 Capitol 原盤第 6 軌、Yuna 改標準版 1443108499）、seed +12、prepare／published gate 0 error（12 warning 皆 UPC 盡力而為）。封面 CAA 11（front live-check 全 200）、Apple 1（N’Dambi，CAA 404）；縮圖表目視 12／12 相符。上線前對 origin 所有 `claude/*` 分支 seed 與近 12 個分支新卡單去重 0 撞。
+- **21395**：頂點：12 張 rarity 全 uncommon，未觸及殿堂／遺珠／異端門檻，列一般卡。
+- **21396**：**落格率 12/12＝100%**（`batch-progress/mood-axes/score-ml57/`，照 10-23 體感標準）。評分 x 2.0–2.6、y 0.7–1.1、z 0.7–1.4；conf high 1、mid 6、low 5。貼邊：Yuna、Rachelle Ferrell y 0.7（乾淨數位製作），仍過 0.5。主場景見底（策展 25、研究汰 13），不再派。

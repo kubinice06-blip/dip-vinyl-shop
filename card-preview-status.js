@@ -3450,4 +3450,7 @@ window.DipPreviewStatus = Object.freeze({
   "strom noir|glaciology": "unavailable",
   "adriana evans|adriana evans": "unavailable",
   "dezarie|fya": "unavailable",
+  "dahlia's tear|apeiron": "unavailable",
+  "argyre planitia|tenth region of the night": "unavailable",
+  "tho-so-aa|epoch, part 1": "unavailable",
 });
