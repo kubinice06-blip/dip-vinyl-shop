@@ -81,3 +81,14 @@
 - 21528　補研究（Huebner《Reynolds: Piano Etudes》）thin、moodGuess 部分存疑：Mode 廠牌頁與 Reynolds 官網樂曲說明（Thomas May）確認 mode 329、十二首、2021、作曲家監督首錄；卡單盤名多「, Books I & II」副標（Discogs 命名，同一張）。Barrage、Mercurial、Migration、Insistence 密集快速成立，但 Web 作曲家明言非常安靜，Concatenation 後半、Field、Rips 偏慢冥想，且作曲家刻意避免「臨床」感，冷／乾硬無來源；錄音地點（UCSD Prebys）僅搜尋片段，不進 facts。無獨立樂評。
 - 21529　補研究（Veale《Mahnkopf: Music for Oboe》）thin、moodGuess 部分存疑，列汰換候補：NEOS 11813、2018、Veale 雙簧管確認；末曲〈Hommage au hautbois〉有 ELISION 合奏（Ughetti 指揮），並非全是獨奏／二重奏。「硬、近乎殘暴、醜陋」只對 Pynchon 系列〈W.A.S.T.E. 2〉（雙簧管加磁帶）有作曲家自述支持；三首 Illuminations 是 mezza voce、踏板霧狀共鳴，Solitude-Nocturne 是「甜」的小雙簧管；無樂評、無錄音日期，非現場證據。
 - 21530　補研究 WebSearch 共 2 次（Huebner 1、Veale 1），皆不超過 3 次；Discogs 403、UB 網頁 Access Denied、MB API busy，改靠 Mode、NEOS、Reynolds 官網與維基。兩張皆錄音室專輯、無重複卡。
+
+## 補研究（c 組追加）
+> 條號 21508–21510 已被 c 組原稿占用（Poll、Descharmes、WebSearch 統計），本小節沿用主線指定號碼，以 `-補` 區分：21508-補、21509-補、21510-補。
+- 21508-補　Ensemble 21《Eckardt: Out of Chaos》（Mode 137，2004）：身分無誤。moodGuess 大致成立（高能量新複雜主義、五到七人小編制、爆發與近靜默交替），但 Tangled Loops 是爵士式薩克斯風追逐、A Glimpse Retraced 有稜角抒情與尖銳短笛旋律，After Serra 結尾與 Polarities 後段轉為安靜靜止，非全程無旋律或持續緊繃。錄音日期未查到，棚錄或現場無直接證據（樂評未提現場），暫視為棚錄。status solid。
+- 21509-補　Arditti Quartet《Mexico: New Music for Strings》（Mode 165，2006）：身分無誤；錄於 2002 年墨西哥城 Radar 音樂節期間（Mode 頁），發行 2006，是否現場未明載。moodGuess 大致成立（橋上奏刮擦、微分音、白噪音、攻擊性動機），但 Paredes《Uy u'tan》被稱『光亮之美』、Waller 有狂想段落、Romero『粗礪的冥想』，並非一路尖細冷硬。獨奏小提琴三首為 Irvine Arditti，其餘三首四重奏。status solid。
+- 21510-補　Lachenmann《„…zwei Gefühle…“ and Solo Works》（§1 人工，Mode 252）：核對無誤，盤名 Mode 頁作《Zwei Gefühle and Solo Works》、2012 年 CD（Discogs API 13642059 與 Silverton 樂評皆為 2012），錄於 2010-03-27/28 紐約州 Troy 的 EMPAC 音樂廳，Mode 明載『studio recordings』，非現場。演奏者：Lachenmann 本人（朗誦、鋼琴）、Lauren Radnofsky（大提琴）、Ensemble Signal／Brad Lubman。與前段 Klangforum Kairos 盤同曲不同錄音，非重複。moodGuess 部分存疑：Pression 與 zwei Gefühle 符合，但約 40 percent 篇幅是鋼琴短曲（Wiegenmusik、Guero、Ein Kinderspiel），Kinderspiel 七首多在最高音區，較稀疏輕巧，甚至帶玩笑。status solid。本次補研究未用 WebSearch（Mode 廠牌頁、MB API、Discogs API、維基已足夠）。
+
+## 主線補研究後汰換（不佔條號；2026-10-24）
+- 汰 1：Veale《Mahnkopf: Music for Oboe》（三首 Illuminations mezza voce、踏板霧狀共鳴，Solitude-Nocturne「甜」的小雙簧管；只有〈W.A.S.T.E. 2〉兇，整張偏柔偏稀疏）。
+- 留 Eckardt、Arditti《Mexico》、Mode《Lachenmann》、Huebner《Reynolds》（皆「部分存疑」：主體緊繃密集、夾安靜段落，交評分驗收）。補研究條號與原組重號（21508–21510、21528–21530），以小節區分。
+- **定案 36 張**（a 7、b 7、c 8、d 7、e 7）。主場景二線大多錄音是稀疏極弱型或與池中同作品；密集刮擦型已挖得差不多，**本場景見底，不再派**。
