@@ -60,3 +60,20 @@
 - **22318**：Nortt《Ligfærd》：最早版本是 Possession Productions 卡帶（限量 418 卷，MB／MA 一致）；人聲為高音嘶啞、低音量（非預估的「低吼」），鼓稀少、環境音與合成器多；樂評多稱極慢、荒涼；Cheeses_Priced 負評稱主奏旋律照挪威黑金屬標準。大致吻合，y（重）略受質疑，不到汰換。
 - **22319**：Nortt《Galgenfrist》：年份差異——MA 2007-12-29，MB 2008-02-28（Avantgarde AV 100）；卡單 2008 從 MB，寫作層寫 2008 或不寫具體日。黑金屬成分更少、近 drone、鼓更疏、人聲稀少沉在聲響裡、鋼琴旋律串連；吻合預估，吉他「難以形成 riff」使重量略輕，不存疑。
 - **22320**：本組 WebSearch 用 3 次（Bell Witch、Monolithe、Aldebaran 各一），其餘為 WebFetch 與 curl 直取 Metal Archives 專輯頁／樂評頁、MB API、維基。9 張 MB 身分與卡單的盤名、年份、廠牌全數對得上，推翻策展層 0 處。樂評幾乎全是 Metal Archives 使用者意見，facts 已標明為樂評說法；單一來源的細節（Asunder 第四首、Nortt 10 卷預聽卡帶）在 notes 標註。
+
+## 研究 b 組
+- **22291**：Shape of Despair《Angels of Distress》卡單 label 填 XIII Bis Records（法國版）；MB 原版與維基、德文維基都是 Spikefarm Records FI 2001-09-25 首發。研究稿 notes 建議卡單改 Spikefarm Records；可逆（manifest 欄位）。
+- **22292**：Worship《Dooom》策展層『經典第二張』序數不穩（德文維基算第二張、MB 另列 1999 Last Tape 為 Album+Demo）；facts 避開序數，只寫『先有 1999 年試聽帶』，寫作層勿寫首張或第二張。
+- **22293**：Worship 創辦人 The Doommonger 本名來源衝突（Metal Kingdom 作 Daniel Pharos，德文維基作 Daniel Vaross）；facts 寫 Vaross + 藝名，建議寫作層只用 The Doommonger。Max Varnier 死因來源有但不寫。
+- **22294**：Thergothon 廠牌敘事：維基人團條稱 Obscure Plasma Records 簽約，專輯條稱 Avantgarde Music 1994-06-15 發行；MB 與專輯條目一致，facts 採 Avantgarde Music，不寫 Obscure Plasma。
+- **22295**：moodGuess 存疑清單（供主線汰換或評分驗收）：Companion（開場 Calla 較快、Stereogum『almost energetic』、AMG『cathartic comfort』，x 與 z 邊距風險）；Shape of Despair 兩張（天使般段落、華爾滋拍、女聲與清唱、小提琴，z −1.1 偏暖風險）；Worship《Terranean Wake》（無鍵盤墊、音場清晰開闊、鼓稀疏，不是糊重）；Worship《Dooom》（有安靜清音吉他與清唱，輕度）；Skepticism《Alloy》（樂評稱親近、偶有振作段落，輕度）、《Farmakon》（不和諧／實驗，輕度）。Stormcrowfleet、Thergothon 相符。
+- **22296**：thin 三張（Farmakon、Shades Of…、Angels of Distress）：Metal Archives 403、Sputnik 兩度 Too many connections、metalmusicarchives 403、AllMusic 403、DuckDuckGo 擋、Bing 無效，WebSearch 3 次用盡；聲音事實以團層級或搜尋摘要轉述為主，已在各卡 notes 逐條註明，寫作層輕描。
+
+## 主線研究後汰換（不佔條號；2026-10-24）
+- 照 md3／md22 先例：研究稿寫出 **blast beat／黑金屬快段／中速推進**、**樂評稱偏亮、振奮、peppy**、**交響化女聲且聲音零樂評**的汰；只是旋律較清楚、色溫可能稍暖但速度極慢、低吼為主的留給評分驗收。
+- **汰 7 張**（存 `dropped-cards.json`／`dropped-research.json`）：
+  - 快段／推進：Evoken《Antithesis of Light》（研究 a：MetalBite 記 razor-sharp blast beats、比《Quietus》快）、Loss《Despond》《Horizonless》（研究 c：黑金屬快段、blast beat、雙大鼓加速，和聲旋律突出）、Skepticism《Companion》（研究 b：開場 peppy／almost energetic）。
+  - 偏亮／中速：Monolithe《Monolithe I》《Monolithe II》（研究 d：程式鼓中速、樂評「不暗、偏亮」「常帶振奮感」、大調與手風琴主旋律）。
+  - 證據不足＋旋律風險：Funeral《Tragedies》（研究 c：聲音零樂評、女聲交響化）。
+- 卡單更正：Shape of Despair《Angels of Distress》廠牌 **Spikefarm Records**（XIII Bis 是法國版）；Evoken《Quietus》**Avantgarde Music**（Dwell 為美國版）；Mournful Congregation《The Monad of Creation》**Weird Truth Productions**（Painiac 是黑膠廠牌）。Evoken《Antithesis》已汰不改。
+- 不補位：候補（Colosseum《Chapter 2》、Nadja、Winter 等）未經 MB 釘住與研究，照「挖不到就照實上架」不湊數。定案 **38 張**（a 8、b 8、c 6、d 7、e 9）。色溫風險留給評分：Shape of Despair 兩張、Bell Witch 四張（清唱吟誦／管風琴）、Mournful Congregation《The June Frost》、Asunder、Dolorian《Dolorian》《Voidwards》（y 偏輕風險）。
