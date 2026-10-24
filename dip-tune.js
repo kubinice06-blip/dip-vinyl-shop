@@ -545,7 +545,7 @@
     for (const r of SEARCH) { const hay = r.a + '|' + r.b; if (!toks.every(t => hay.includes(t))) continue;
       let sc = 0; if (r.b === all || r.a === all) sc += 100; if (r.b.startsWith(all)) sc += 40; if (r.a.startsWith(all)) sc += 30; if (hay.includes(all)) sc += 10; sc -= (r.a.length + r.b.length) * 0.01;
       out.push([sc, r.c]); }
-    out.sort((u, w) => w[0] - u[0]); return out.slice(0, 8).map(x => x[1]);
+    out.sort((u, w) => w[0] - u[0]); return out.slice(0, 50).map(x => x[1]);
   }
   let sugg = [], suggAt = -1, suggTimer = 0;
   function renderSugg(open) {
