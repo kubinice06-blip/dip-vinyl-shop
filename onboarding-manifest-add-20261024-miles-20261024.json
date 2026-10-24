@@ -1,0 +1,83 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-miles",
+ "batchNote": "薄細項策展線（add-20261024-miles）",
+ "createdAt": "2026-10-24T05:26:17Z",
+ "albums": [
+  {
+   "artist": "Miles Davis",
+   "album": "Miles: The New Miles Davis Quintet",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0c0ccda7-eacf-35cd-acab-464df24bc5f8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "店主指定（Miles Davis 第一代五重奏）：第一代五重奏（Coltrane、Garland、Chambers、Philly Joe Jones）的第一張 12 吋 LP，1955-11-16 Van Gelder 錄音室｜策展無疑點｜MB release-group 0c0ccda7-eacf-35cd-acab-464df24bc5f8：title「Miles」、Album、first-release-date 1956-04、artist-credit「Miles Davis Quintet」。證據：https://musicbrainz.org/release-group/0c0ccda7-eacf-35cd-acab-464df24bc5f8 https://coverartarchive.org/release-group/0c0ccda7-eacf-35cd-acab-464df24bc5f8/front",
+    "queryAlias": "Miles；The New Miles Davis Quintet；Miles Davis Quintet"
+   },
+   "research": {
+    "suggestedYear": 1956,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0c0ccda7-eacf-35cd-acab-464df24bc5f8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T05:26:17Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1506,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T05:26:17Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1506）；主線：Last.fm 1,506 是再版盤名拼法的聽眾數，不代表本碟；比照池內同期 Prestige 五重奏《Cookin’》《Workin’》《Steamin’》3/3/2"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Columbia 錄好的歌不准發行，Miles 得先替 Prestige 還完五張唱片。這批還債唱片的頭一張，也是爵士小號手 Miles Davis 新五重奏的第一張。1955 年 11 月 16 日，John Coltrane 等五人在 Van Gelder 父母家客廳的錄音室一天錄完六首。廠牌不付排練費，只挑熟曲，〈The Theme〉成了 Miles 現場的收尾曲。弱音小號在前，鼓收得克制。1956 年 4 月上市，同年兩場錄音湊出《Cookin'》等四張才還清。",
+    "sourceUrls": [
+     "https://www.jazzdisco.org/miles-davis/discography/",
+     "https://en.wikipedia.org/wiki/Van_Gelder_Studio",
+     "https://en.wikipedia.org/wiki/Miles:_The_New_Miles_Davis_Quintet",
+     "https://en.wikipedia.org/wiki/John_Coltrane",
+     "https://www.discogs.com/master/160345",
+     "https://www.udiscovermusic.com/stories/the-new-miles-davis-quintet-album/",
+     "https://musicbrainz.org/release-group/0c0ccda7-eacf-35cd-acab-464df24bc5f8"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/1e/46/021e4623-8c86-8913-815d-bfc529617d1f/mzaf_4521162981975320648.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T05:26:17Z",
+    "appleCollectionId": "1443120095",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1443120095「New Miles Davis Quintet《Miles》」：曲目 6/6 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Just Squeeze Me (But Don't Tease Me)〉。主線 2026-10-24 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

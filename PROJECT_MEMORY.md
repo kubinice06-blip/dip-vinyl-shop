@@ -1,5 +1,43 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 15 輪（全線最後一個工作階段）ml59／mc48：roots reggae 第二波 13 張、美國 uptown 序列主義 31 張上線，落格 13/13、31/31，兩場景見底
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 15 輪最後一個工作階段（做完暫停盤點），評分照 10-23 體感標準。ml59（`add-20261024-ml59`，恍惚）：Larry Marshall《I Admire You》、Delton Screechie、Rod Taylor《Where Is Your Love Mankind》、Twinkle Brothers《Underground》、Bim Sherman ×2、Don Carlos & Gold ×2、Triston Palma ×2、Viceroys《Chancery Lane》、Earl Cunningham、Congo Ashanti Roy。mc48（`add-20261024-mc48`，冷冽）：GCM ×5（Babbitt、Wuorinen、Martino）、Composers Quartet ×3（Carter 1&2、Crawford／Perle／Babbitt、Carter／Babbitt／Powell）、Speculum Musicae ×2、Fine Arts Quartet、JACK《Eckardt: Passage》、Ars Combinatoria《Babbitt: String Quartets》、Continuum《Wolpe: Enactments》、Cuckson ×3（Shapey ×2、Martino）、Zukofsky、Skouras、Asakawa、Swann、Hudson & Ohlsson、Goldray、Seelye、Schulte & Feinberg、Holzman、Hodgkinson、Robert Miller、Sollberger、Macomber、Feinberg、Chicago CCP《Shapey SQ7》。
+- **策展→研究汰換**：ml59 策展 19（濕混音 credit 篩子；主場景點名六組有五組池中同人判輕先擋）、主線汰 1、研究汰 5（dancehall／DJ、合成器、美國重混、多場次無混音者、Pablo 小調偏冷）→ 13。mc48 策展 50、主線汰 5、研究汰 14（抒情慢章 10、現場 2、大編制 2）→ 31；古典掛名照 §0.7。
+- **主線審稿**：ml59 改 1 處（Bim Sherman 單源樂評句）、mc48 改 3 處（兩句單源樂評評價、GCM《Martino》hook 由樂評反問改為研究稿事實重寫）；存各批 `desc-override.json`。
+- **上線**：card_catalog 44、KV 44 鍵回讀逐字一致（stamp 20261024r15b）、試聽 18＋7 ready（Apple 專輯網址 fetch 25 張補齊）、seed +44；封面 CAA 6／Apple 15／Discogs 23（registry → 488），縮圖表目視相符；`genre-l3-artist-map.json` 補 4 鍵（artist|album 形式），44/44 落位。寫入前對 origin 83 條近三天分支 seed 去重 0 撞。
+- **落格**：ml59 恍惚 13/13、mc48 冷冽 31/31（皆 100%）。併 main 後八格：**恍惚 1,699、頹靡 1,636、冷冽 1,620**（目標各約 2,000；差 301／364／380）。
+- **剩餘潛力（店主盤點用）**：roots reggae 人聲慢盤見底（約剩 3–5，全靠 credit 推論）；恍惚線 reggae／dub 累計約 200 張到此為止，再挖只剩冷硬 steppers（會落頹靡）。美國 uptown 序列主義見底（約剩 3–6，全貼邊）；mc32＋mc43＋mc46＋mc47＋mc48 現代古典共 129 張，冷冽線現代古典池到此為止。
+- **新藝人（無介紹，未切）**：33 個掛名列在兩批 rulings 末尾。
+- **主要檔案**：`batch-progress/add-20261024-{ml59,mc48}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml59,mc48}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml59,mc48}/`、`onboarding-manifest-add-20261024-{ml59,mc48}-20261024.json`、`desc-tools/batches/*/add-20261024-{ml59,mc48}*`、`data/discogs-cover-registry.json`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 44/44；build-card-moods 錨點 104/104。
+
+### 2026-10-24｜dip-vinyl-shop｜店主指定上架：Miles Davis《Miles: The New Miles Davis Quintet》（add-20261024-miles，卡池 21,849 → 21,850）
+
+- **起因**：店主問 Miles Davis 為何卡池這麼少（實際 50 張，頻率光譜搜尋只列 8 筆），「The New Miles Davis Quintet 補上就好」。同時提的 Fishmans 三部曲早已在池，不重做。
+- **身分**：MB rg `0c0ccda7-…`（title「Miles」、1956-04、Prestige PRLP 7014）；盤名取再版名「Miles: The New Miles Davis Quintet」，queryAlias 收「Miles」。掛名 Miles Davis 照 Cookin'／Relaxin' 先例。
+- **三軸**：3/3/2（Last.fm 1,506 是再版拼法，比照同期 Prestige 四張），rare；頂點 0。情緒 (2.8, −1.0, 0.4) 放鬆，比照同期四張，寫 `overrides.json`。
+- **簡介產線**：研究 1 組（Sonnet，12 facts full；推翻卡單「第一張 12 吋」）→ 鉤子主線自寫 → 寫作 1 組（Opus）→ 主線審稿改第二句 1 處，237 字。
+- **寫入**：prepare 0 error → card_catalog 1／1 → KV 1 鍵回讀一致 → 試聽 Apple us 1443120095（6/6）＋補 Apple 網址名稱段 → seed 1 列 → published gate 0 error；子曲風 jazz/bop 等、genre-tree／draw-covers 重建。
+- **上架流程修正**：`publish-manifest --write-preview` 寫進的列不帶 `collectionViewUrl`，是 Apple 按鈕灰掉的根源；`publish-manifest` 的提示與 `HANDOFF-mood-cells-line.md` 第 7 步／合併規矩補上 `fetch-apple-album-urls.mjs`，`build-apple-audio-runtime-map.mjs` 會印出缺名稱段張數並警告。
+- **主要檔案**：`batch-progress/add-20261024-miles/`、`onboarding-manifest-add-20261024-miles-20261024.json`、`desc-tools/batches/*/add-20261024-miles*`、`seed_cards.json`、`data/apple-audio-*.json`、`data/mood/{overrides,card-moods}.json`、`card-subgenres.json`、`genre-tree.json`、`draw-covers/*`、`scripts/{publish-manifest,build-apple-audio-runtime-map}.mjs`、`batch-progress/HANDOFF-mood-cells-line.md`
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；verify-album-onboarding prepare／published 0 error；verify-wave-kv 1/1；build-card-moods 錨點 104/104、座標 21,850/21,850。
+
+### 2026-10-24｜dip-vinyl-shop｜串流按鈕盤點：Apple 直連補 3,645 張、card_catalog 補封面 94 張
+
+- **起因**：店主截圖 Wun Two《forest folks》Apple／Spotify 灰掉，「檢查有哪些明明有卻顯示沒有串流連結」；另「fishmans 也沒有封面」。
+- **Apple**：試聽索引有對到專輯、試聽也能播，但上架流程（`publish-manifest --write-preview`）寫進的列沒有 `collectionViewUrl`，runtime 第 4 欄名稱段空白 → `appleAlbumUrl` 回空 → strict 按鈕灰。runtime 16,716 列有 3,805 列空白。跑既有的 `scripts/fetch-apple-album-urls.mjs`（lookup 批次 150）補 3,645、下架 1，重建 runtime 後剩 161 列空白（多為下架）。**卡池仍有 5,191 張沒對上 Apple**（索引沒列 4,444、unavailable 592、error 151、review 4），未處理。
+- **封面**：掃 `card_catalog` 全集合（22,135 文件）：卡池 21,849 張中 coverUrl 空 90、無文件 7。Apple lookup（已核對的 collectionId）補 64、MB release-group＋CAA 補 16、主線人工 14（Fishmans《Kuchu Camp》＝Apple jp 1416941115 等）；REST PATCH 94／94 回讀一致。查無 3：Drunks with Guns 同名、日向敏文《Reality in Love》、Beethoven《Kreutzer Sonata》。
+- **Spotify**：worker 的 Spotify app 又是 429（retry-after 27,815 秒）；Odesli 公開 API 已停用（401 `PUBLIC_API_ACCESS_DEPRECATED`），10-21 留下的 3,851 張 MB 沒有的仍灰。待店主定：開第二個 Spotify app。
+- **主要檔案**：`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、`dip-player.js`（索引網址 `?v=3`，瀏覽器用 force-cache，不換版號舊索引會一直留著）、四個頁面的 `dip-player.js?v=53`、`batch-progress/streaming-links-20261024/*`；Firestore `card_catalog` 94 文件
+- **驗證**：runtime 重建 16,716 列、Wun Two《forest folks》第 4 欄 `forest-folks`；封面寫入回讀 94／94。
+
+### 2026-10-24｜dip-vinyl-shop｜頻率光譜搜尋清單補抓封面＋《Bitches Brew》card_catalog 補封面
+
+- **改動**：店主「有幾張沒封面 補上封面」。卡池列本身不帶封面，搜尋清單原本只有預覽過的卡才有圖。`dip-tune.js` 加 `watchSuggCovers`／`pumpCovers`：清單項目捲進可視範圍（前後 120px）才查，同時最多 4 張，查到記在卡上；`index.html` 新增 `listCover`（先只讀 `card_catalog` 一次，沒有才走 `resolveCardAssets` 含 Spotify）。`dip-tune.js?v=15`。另外 Miles Davis 50 張 card_catalog 封面盤點 49／50，《Bitches Brew》coverUrl 空，補 Apple 168376392 600px 圖（REST PATCH 回讀一致）。
+- **主要檔案**：`dip-tune.js`、`index.html`；Firestore `card_catalog/miles davis|bitches brew`
+- **驗證**：`node --check` 過；本機 Chromium 開 `#tune` 搜「miles davis」：50 筆中可視範圍 11 筆先補上，捲到底後 22 筆有圖，0 頁面錯誤。
+
 ### 2026-10-24｜dip-vinyl-shop｜情緒薄格線第 15 輪最後一個工作階段：ml59＋mc48
 
 - **現況**：mc44 23／19、md32 28／25、mc46 13／13、md33 14／12、mc47 15／15、md34 38／38（上線／落格）。恍惚 1,686、頹靡 1,624、冷冽 1,576。

@@ -1067,10 +1067,10 @@
 </footer>
 
 <script src="card-preview-status.js?v=1"></script>
-<script src="dip-player.js?v=52"></script>
+<script src="dip-player.js?v=53"></script>
 <script src="dip-draw-anim.js?v=4"></script>
 <script src="dip-genre-tree.js?v=5"></script>
-<script src="dip-tune.js?v=14"></script>
+<script src="dip-tune.js?v=15"></script>
 <script src="dip-artist-intro.js?v=2"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -5883,6 +5883,8 @@ ${seenList}
     audioPref: () => window.DipPlayer?.autoplayPreference?.() !== 'off',
     setAudioPref: (on) => { window.DipPlayer?.setAutoplayPreference?.(on); _autoplayToggle?.sync?.(); if (on) gpEnsurePlayer({ grant: true, hold: 30000 }); },
     resolveCover: async (card) => (await resolveCardAssets(card.artist, card.album)).coverUrl || '',
+    // 搜尋清單用：先只讀 card_catalog 的封面（一次讀取），沒有才走完整查找（含 Spotify）
+    listCover: async (card) => { try { const s = await getDoc(doc(db, 'card_catalog', cardIdOf(card.artist, card.album))); const u = s.exists() && s.data().coverUrl; if (u) return u; } catch (e) {} return (await resolveCardAssets(card.artist, card.album)).coverUrl || ''; },
     onBack: () => setActiveTab(SHOP_MODE ? 'shop' : 'find'),
     onResult: async ({ card, cell, cellName, targetCellName }) => {
       gpResultHost = 'tuneContent';

@@ -183,7 +183,8 @@ if (WRITE_PREVIEW) {
   }
   changed = true;
   console.log(`\n已寫入靜態試聽 ${audioAdds.length} 筆、負面狀態 ${negAdds.length} 筆。`);
-  console.log('接著請跑： node scripts/build-apple-audio-runtime-map.mjs');
+  // 2026-10-24：這裡寫進的列沒有 collectionViewUrl，不補名稱段 Apple 串流按鈕會灰（曾累積 3,805 張）
+  console.log('接著請跑： node scripts/fetch-apple-album-urls.mjs && node scripts/build-apple-audio-runtime-map.mjs');
 } else if (WRITE_POOL) {
   // 一般卡與王牌都追加進同一份檔（王牌的列尾多一個 tier 欄）
   for (const r of seedAdds) seedRows.push(r);
@@ -200,6 +201,7 @@ if (WRITE_PREVIEW) {
   console.log(`     node scripts/kv-from-manifest.mjs ${path.basename(manifestPath)} kv-bulk.json`);
   console.log('     npx -y wrangler@4 kv bulk put kv-bulk.json --namespace-id 5f65e74b17d644b68a3f542b08a5c105 --remote');
   console.log(`  3. 試聽： node scripts/publish-manifest.mjs ${path.basename(manifestPath)} --write-preview`);
+  console.log('           node scripts/fetch-apple-album-urls.mjs   （補 Apple 專輯網址名稱段，不跑 Apple 按鈕會灰）');
   console.log('           node scripts/build-apple-audio-runtime-map.mjs');
   console.log('  4. 回讀 1-3 確認與 manifest 一致');
   console.log(`  5. 上架開關： node scripts/publish-manifest.mjs ${path.basename(manifestPath)} --write-pool`);
