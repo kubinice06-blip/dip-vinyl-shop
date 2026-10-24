@@ -67,3 +67,14 @@
   - 稀疏極弱／緩慢：Arditti《Ofenbauer》（「近乎僵硬的緩慢」、非常輕的刮擦，研究 a）、Kerschbaumer《schraffur》（半透明聲音空間＋電子，研究 a）、Gadenstätter《Semantical Investigations》（三小時、無樂評、電吉他段，研究 d）。
 - 卡單更正（下游以研究稿為準）：Arditti《Rihm》年份 2000→**1994**（Montaigne MO 782001 首發，研究 b）；Arditti《Kagel》1991→**1990**（Discogs，研究 b）。
 - 留 12（Fuentes、Poppe《Rundfunk》、Rihm、Gerhard、Kagel、Davidovsky、Wuorinen《Six Trios》、Zimmermann、JACK《Zorn》、EIC《Xenakis》、Dusapin、Donatoni）；《Rundfunk》九台合成器屬部分存疑，池中 Poppe《Interzone》落冷冽，交評分驗收。叫回策展代理補第二輪候補（每張附 copyQuote、限錄音室小編制無人聲無電子）。
+
+## 補研究（c 組追加）
+- 22068：Kronos《Schnittke: The Complete String Quartets》身分無誤（MB 1998-05-15、Nonesuch 79500-2、Discogs 1998 US 一致）；錄音室，無現場（四重奏 1／2／4 號與 Canon 為 1994–96 Skywalker Sound，第三號為 1987-11 Methuen 音樂廳，合唱協奏曲改編為 1997-11 Skywalker）。moodGuess 存疑（調性引用／抒情／慢樂章）：第三號開頭明引 Beethoven、Lassus、Shostakovich；第四號五章中三章 Lento；末曲為合唱協奏曲的弦樂改編（約 8 分鐘，哀悼旋律性強）；樂評（談 Molinari 另一版，只作曲目描述）稱每段不協和旁都有和聲穩固段落，z 估 -0.9 可能偏冷、y 有往靜偏風險。無稀疏極弱或厚密音塊證據。Nonesuch／Kronos 官網 403，Wagner 影子僅搜尋摘要，不入 facts。status full。
+- 22069：Brentano《Wuorinen: Scherzo / First String Quartet / Viola Variations / Second Piano Quintet》身分無誤（MB／Discogs 2011 Naxos 8.559694，錄音 2009，錄音室）。**掛名與內容不符**：Brentano 四重奏只演第二號鋼琴五重奏（與 Serkin）；第一號四重奏由 Macomber／Mills／Martin／Sherry 演奏，另有鋼琴獨奏與無伴奏中提琴各一，簡介應寫成 Wuorinen 室內樂四首、勿寫成 Brentano 全盤錄音。moodGuess 存疑（偏暖／偏慢）：MusicWeb 稱第一號『幾近悶熱』、Scherzo 有呼吸空間且帶舞曲輕盈性格、Viola Variations 為旋律性十二音線條；三首含逾 10 分鐘單一樂章，但查無稀疏極弱或長音催眠描述（風格是密集），z -1.2 可能偏冷。MusicWeb 的錄音日期有誤（寫 2004 年 5 月）且曲目日期與 Discogs 互換，facts 取 Discogs（2009）。status full。
+- 22070：本追加 2 張 facts 各 10 條、皆附 https 來源；status 皆 full。WebSearch 共 3 次（Kronos 兩次、Brentano 一次）。派工訊息說既有 6 張，實際檔內只有 2 張（Davidovsky、Wuorinen Six Trios；其餘 4 張應已在主線汰換時移走），已 append 於尾端未動原有條目。Classical Net 的 src 原為 http，改為 https（QA 要求，該站 https 我這邊逾時，頁面內容是以 http 讀取）。
+
+## 主線補候補與補研究後汰換（不佔條號；2026-10-24）
+- 策展第二輪只補 3（每張附 copyQuote；MB 釘住 3）：主線汰 The Group for Contemporary Music《Sessions》（x 估 3.3、五重奏「powerful but remote」），收 Kronos《Schnittke》、Brentano《Wuorinen: Scherzo…》進 c 組，派補研究 append。
+- 補研究後汰 Kronos《Schnittke: The Complete String Quartets》（第三號明引 Beethoven／Lassus／Shostakovich、第四號三章 Lento、末曲合唱協奏曲改編哀悼旋律——旋律清楚判暖、慢章判靜）。
+- 《Wuorinen: Scherzo…》改掛名 **Charles Wuorinen**（研究 c 追加：Brentano 只演第二號鋼琴五重奏，第一號四重奏另由 Macomber 等演奏；§0.7 掛名分散的盤 artist 填作曲家），key 同步改卡單與研究稿。
+- **定案 13 張**（a 2、b 3、c 3、d 2、e 3）。策展代理回報主場景與擴寫場景都見底（缺可核實原句與封面），**本場景見底，不再派**。
