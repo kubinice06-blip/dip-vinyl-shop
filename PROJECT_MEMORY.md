@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜情緒薄格線第 15 輪最後一個工作階段：ml59＋mc48
+
+- **現況**：mc44 23／19、md32 28／25、mc46 13／13、md33 14／12、mc47 15／15、md34 38／38（上線／落格）。恍惚 1,686、頹靡 1,624、冷冽 1,576。
+- **派工**：ml59 roots reggae 第二波（ml58 高產；店主要多 dub）＋mc48 美國當代作曲尖細（冷冽最薄）。這是全線最後一個工作階段，收工後停止派工、做盤點（店主 2026-10-24「做完第 15 輪後暫停工作 盤點一下收了什麼」）。
+- **主要檔案**：`batch-progress/mood-cells-20261022/SCENES.md`。
+- **驗證**：純佇列文件變更；新條號 22361–22520 不與既有重疊。
+
 ### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 15 輪（最後一輪）mc46／md33：現代室內樂尖細 13 張、無鼓 drone／doomgaze 14 張上線，落格 13/13、12/14，兩場景見底
 
 - **內容**：店主「三個情緒薄格各補到約 2,000」第 15 輪（全線最後一輪，做完暫停盤點），本工作階段負責 mc46、md33（評分照 10-23 體感標準）。mc46（`add-20261024-mc46`，冷冽）：Quatuor Diotima《Fuentes》、ensemble mosaik《Poppe: Rundfunk》、Arditti Quartet《Rihm》《Gerhard》《Kagel》、Empyrean《Davidovsky: Salvos》、Group for Contemporary Music《Wuorinen: Six Trios》、Charles Wuorinen《Scherzo…》、Zimmermann《Présence…》、JACK Quartet《Zorn: Complete String Quartets》、EIC《Xenakis: Phlegra…》、Dusapin、Ensemble 2e2m《Donatoni》。md33（`add-20261024-md33`，頹靡）：Nadja ×6（Skin Turns to Glass、Truth Becomes Death、Thaumogenesis、Corrasion、Sky Burial、Bliss Torn From Emptiness）、Locrian《Drenched Lands》、Black Boned Angel《Verdun》、Jasper TX ×2、thisquietarmy《Phantom Limbs》、Final ×2、Troum《Autopoiesis》。
