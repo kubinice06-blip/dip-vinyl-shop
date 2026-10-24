@@ -82,3 +82,11 @@
 - 逐張審 13 張，抽核關鍵事實回研究稿（Larry Marshall 生年／聖安區／1973 版稅糾紛／Java 1975、Screechie 混音分工 Scientist 4／Morris 2、Twinkle B 面 Jah Shaka 貝斯、Viceroys 團名香菸／the Inturns、Triston Palma 1979 Massop 紀念演唱會與 Marley 同台）皆一致。
 - 改 1 處：`desc2:Bim Sherman|In A Rub-A-Dub Style` 刪「樂評形容它鬆散而 spaced-out。」——單一樂評（Niceup）評價句，依審稿規則整句刪；字數 155→135（thin 帶內）。存 `desc-override.json`，研究稿 facts 保留不動（只是正文不用）。
 - 其餘 12 張逐張審過，未改字。
+
+## 主線上線（條號 22431–22433）
+- **22431**：上線 13 張：card_catalog 13／13、KV 13 鍵回讀逐字一致（stamp 20261024r15b）、試聽 7 ready／6 unavailable（Screechie、Bim Sherman ×2、Never Run Away、Triston Palma《Fancyness》、Congo Ashanti Roy Apple 查無同盤）、seed +13、prepare／published gate 0 error（17 warning 皆 UPC）。封面 CAA 4、Apple 官方圖 5、Discogs 4（registry +4），縮圖表目視相符。寫入前對 origin 83 條近三天分支 seed 去重 0 撞。`genre-l3-artist-map.json` 補 Congo Ashanti Roy《Sign of the Star》→ `world/reggae/roots`。
+- **22432**：情緒評分 `score-ml59/`：**落恍惚 13/13＝100%**；x 2.3–2.7、y 0.6–1.3、z 0.4–1.4。貼邊：Larry Marshall y 0.6（評分者說製作偏乾）、Twinkle《Underground》z 0.4（militant）。
+- **22433**：**場景潛力（店主盤點用）**：roots reggae 人聲慢盤（濕混音 credit 篩子）**見底**。ml58（28）＋ml59（13）之後，主場景點名的 Gladiators、Johnny Clarke、Max Romeo、Ras Michael、Mighty Diamonds 池中同人全判輕或貼邊，二線大多無混音者署名、或是 Bunny Lee／Revolutionaries 亮 rockers、Sly 電子鼓期。估計還能挖約 3–5 張（Bim Sherman／Don Carlos 其他 Channel One 期盤、Wackie's 剩餘），全靠 Discogs credit 推論、研究稿 thin。恍惚線 reggae／dub 累計：ml9、ml25、ml32、ml38、ml41、ml45、ml48、ml57、ml58、ml59 約 200 張，**這條路到此為止**；店主要的 dub／downtempo 若要再挖，只剩冷硬 steppers（池中判頹靡）。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Larry Marshall、Delton Screechie、Rod Taylor、Bim Sherman、Don Carlos & Gold、Triston Palma、The Viceroys、Earl Cunningham、Congo Ashanti Roy（9 個掛名；Rod Taylor、Triston Palma 已列在 ml58 名單、仍無介紹）。已查 `data/artist-intros/` 與 progress.json。

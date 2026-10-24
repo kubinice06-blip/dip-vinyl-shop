@@ -99,8 +99,8 @@
 | 75 | md33 | 冷 post-rock／器樂慢盤第三波＋冷 slowcore 器樂（md31 收 24；Labradford 周邊以外、Rachel's／Dirty Three 之外的二線） | ✅ 上線 14／落格 12 |
 | 76 | mc47 | 當代獨奏器樂尖細（Xenakis 獨奏作、Scelsi 弦樂／管樂獨奏、Sciarrino 長笛、Berio Sequenza、Lachenmann 獨奏作；mc46 走室內樂，這批只收獨奏盤） | ✅ 上線 15／落格 15（主場景見底） |
 | 77 | md34 | funeral doom／drone doom 慢盤第二波（Esoteric、Evoken、Mournful Congregation、Skepticism、Thergothon 系；極慢、往下壓） | ✅ 上線 38／落格 38（二線約還能挖 20–30） |
-| 78 | ml59 | roots reggae 人聲慢盤第二波（ml58 收 28 高產；Twinkle Brothers、The Gladiators 慢盤、Johnny Clarke、Max Romeo 慢盤、Ras Michael、Mighty Diamonds 慢盤；店主要多 dub） | 派→情緒薄格 ml59、mc48（第 15 輪，全線最後一個） |
-| 79 | mc48 | 美國當代作曲尖細（Elliott Carter、Milton Babbitt、Charles Wuorinen、Stefan Wolpe、Roger Sessions 晚期；mc32／mc43／mc46 已收過的去重） | 派→情緒薄格 ml59、mc48（第 15 輪，全線最後一個） |
+| 78 | ml59 | roots reggae 人聲慢盤第二波（ml58 收 28 高產；Twinkle Brothers、The Gladiators 慢盤、Johnny Clarke、Max Romeo 慢盤、Ras Michael、Mighty Diamonds 慢盤；店主要多 dub） | ✅ 上線 13／落格 13（主場景見底，約剩 3–5） |
+| 79 | mc48 | 美國當代作曲尖細（Elliott Carter、Milton Babbitt、Charles Wuorinen、Stefan Wolpe、Roger Sessions 晚期；mc32／mc43／mc46 已收過的去重） | ✅ 上線 31／落格 31（主場景見底，約剩 3–6） |
 
 **暫停**：mc13 math rock、mc21 post-punk revival、mc30 minimalism（旋律清楚＝暖）、mc9／mc10／mc20／mc25／mc26 系的 synth-pop／new wave／K-pop／synthwave 續集（2026-10-23 體感標準：旋律清楚往暖，落雀躍）、mc23 art pop、ml4 系東亞續集、ml14 spiritual jazz（體感標準判冷，不是恍惚）、ml22、ml27。**重開**（體感標準下會落冷冽）：mc4、mc14、mc22、mc28。
 
@@ -198,7 +198,7 @@
 | mc45 | 21881 | IDM／drill'n'bass 快而尖薄（Squarepusher、μ-Ziq、Bogdan Raczynski、Kid606 薄盤、Venetian Snares 薄盤） | ✅ 上線 2／落格 1（2026-10-24；策展兩輪 7、主線汰 1（盤名正規化為空）、研究汰 4（ambient 化 1、低頻 dub 1、失真兇猛鼓 1、零來源貼邊 1）；池中大名全判重／判暖、冷尖電子已被 mc6／mc7／mc33／mc15 收光，**死池，不再派**；General Magic 噪音拼貼判重落暴躁） |
 | mc46 | 22041 | 現代室內樂尖細第三波（Ferneyhough、Furrer、Haas、Neuwirth、Klangforum Wien／Ensemble Recherche 錄音） | ✅ 上線 13／落格 13（2026-10-24；策展兩輪 41、主線汰 9、研究汰 19：現場、大編制／電子、人聲抒情、稀疏極弱；主場景見底，剩約 0–2 張，不再派） |
 | mc47 | 22201 | 當代獨奏器樂尖細（Xenakis 獨奏作、Scelsi、Sciarrino 長笛、Berio Sequenza、Lachenmann 獨奏作） | ✅ 上線 15／落格 15 |
-| mc48 | 22441 | 美國當代作曲尖細（Elliott Carter、Milton Babbitt、Charles Wuorinen、Stefan Wolpe、Roger Sessions 晚期） | 派→情緒薄格 ml59、mc48（第 15 輪，全線最後一個） |
+| mc48 | 22441 | 美國當代作曲尖細（Elliott Carter、Milton Babbitt、Charles Wuorinen、Stefan Wolpe、Roger Sessions 晚期） | ✅ 上線 31／落格 31（2026-10-24；策展 50、主線汰 5（大提琴奏鳴曲占半、厚和弦、馬林巴、池中同作曲家鋼琴判靜、Schoenberg 慢章）、研究汰 14（抒情慢章 10、現場 2、大編制／打擊 2）；主場景見底） |
 
 ## 恍惚 ml（靜＋重＋暖；門檻 x ≤ 2.7、y ≥ +0.8、z ≥ +0.3）
 
@@ -264,4 +264,4 @@
 | ml56 | 21241 | 暖 trip-hop 女聲二線（Hooverphonic、Morcheeba 周邊、Lamb 慢盤、Mono、Olive、Laika） | ✅ 上線 20／落格 19（2026-10-24；策展三輪 71、主線汰 22、研究汰 32；暖 trip-hop 女聲二線多歌曲型／jungle 拍／原聲化，Pork／Tru Thoughts 二線多 breaks／house；產量靠 Mad Professor《Dub Me Crazy》類比 dub 與 ambient dub；Peaking Lights《Clearvoiant》磁帶 drone 判冷落頹靡；不再派） |
 | ml57 | 21321 | neo-soul 女聲慢盤 2000s–10s（Jill Scott 慢盤、Goapele、Lalah Hathaway、Ledisi、Emily King 系） | ✅ 上線 12／落格 12（主場景見底，不再派） |
 | ml58 | 21721 | roots reggae 人聲慢盤（Burning Spear、Culture、Israel Vibration、The Abyssinians、Prince Far I 系） | ✅ 上線 28／落格 28（2026-10-24；策展 46（只收 Discogs 明寫 Tubby／Jammy／Scientist／Black Ark／Ariwa 混音的盤）、主線汰 3（池中同人判輕／DJ 盤）、研究汰 15（Bunny Lee／Revolutionaries 亮 rockers 6、無濕混音 credit 的歌曲盤 5、重混／數位化 3、拉丁 ska 拼貼 1）；主場景見底） |
-| ml59 | 22361 | roots reggae 人聲慢盤第二波（Twinkle Brothers、The Gladiators、Johnny Clarke、Max Romeo、Ras Michael、Mighty Diamonds 慢盤） | 派→情緒薄格 ml59、mc48（第 15 輪，全線最後一個） |
+| ml59 | 22361 | roots reggae 人聲慢盤第二波（Twinkle Brothers、The Gladiators、Johnny Clarke、Max Romeo、Ras Michael、Mighty Diamonds 慢盤） | ✅ 上線 13／落格 13（2026-10-24；策展 19（濕混音 credit 篩子，主場景點名六組池中同人判輕擋掉五組）、主線汰 1（無混音者署名）、研究汰 5（dancehall／DJ、自家工程＋合成器、美國重混、多場次拼貼、Pablo 小調偏冷）；主場景見底） |

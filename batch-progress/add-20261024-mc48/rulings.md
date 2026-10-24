@@ -110,3 +110,11 @@
   2. `desc2:David Holzman|Martino: Twelve Preludes / Fantasies and Impromptus`：刪「他的技巧被樂評形容為烈焰般的準確。」——單源評價句；→163（thin 帶內）。
   3. `desc2:The Group for Contemporary Music|Martino: From the Other Side / Quodlibets II / Notturno`：原 hook「一位樂評反問：誰說學院派沒有幽默感？」與「被形容為迷人又俏皮」都是單源樂評評價，整張改以研究稿事實重寫：hook 改「一支長笛，獨自撐滿 13 分鐘。」（研究 d：《Quodlibets II》13 分鐘無伴奏長笛），其餘照 note（Babbitt／Dallapiccola 門下、十二音、Koch 1994、《From the Other Side》27 分鐘含打擊）；→158 字。hook 開頭與全批不撞。
 - 其餘 28 張逐張審過，未改字。
+
+## 主線上線（條號 22511–22513）
+- **22511**：上線 31 張：card_catalog 31／31、KV 31 鍵回讀逐字一致（stamp 20261024r15b）、試聽 18 ready／13 unavailable（CRI／New World LP 期與 Koch 多無 Apple；Shapey SQ7 用 Anthology of Recorded Music 合輯內同一 CRI 391 錄音第 3 軌）、seed +31、prepare／published gate 0 error（56 warning 皆 UPC 盡力而為）。封面 CAA 2、Apple 官方圖 10、Discogs 19（registry +19），縮圖表目視相符。古典三軸走 §0.7 錨點制（3/5/5，`ratings-override.json`）。寫入前對 origin 83 條近三天分支 seed 去重 0 撞。`genre-l3-artist-map.json` 補 `classical/contemporary/avant` 3 張（Fine Arts Quartet、Chicago CCP、Robert Miller，用 artist|album 鍵避免同團古典曲目誤掛）。
+- **22512**：情緒評分 `score-mc48/`（Opus 照 BRIEF 體感標準）：**落冷冽 31/31＝100%**；x 3.0–4.2、y −1.8～−0.4、z −1.8～−1.3。x 剛好 3.0 貼邊 3 張（GCM《Soli e Duettini》、Seelye 吉他、Sollberger 長笛）——獨奏／點描稀疏型仍是冷冽線的 x 風險。併後八格：恍惚 1,699、頹靡 1,636、冷冽 1,620。
+- **22513**：**場景潛力（店主盤點用）**：美國 uptown 序列主義／美國現代主義室內樂與獨奏**見底**。策展 50 已把 CRI／New World／Bridge／Koch／Albany 主目錄挖過，研究汰 14 的主因是抒情慢章與現場；剩下的多是管弦／協奏（判重）、人聲＋磁帶（Babbitt 系判靜）、或同作品另一錄音。估計還能挖約 3–6 張（Perle 四重奏全集、Davidovsky／Martino 其他室內盤、Wolpe 其他 Bridge 卷），全貼邊。mc32＋mc43＋mc46＋mc47＋mc48 現代古典共 129 張，冷冽線的現代古典池到此為止。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+The Group for Contemporary Music、The Fine Arts Quartet、Mari Asakawa、Benjamin Hudson & Garrick Ohlsson、Jeffrey Swann、The Composers Quartet、Speculum Musicae、JACK Quartet、Paul Zukofsky、Anna Skouras & Andreas Skouras、Continuum、Martin Goldray、Todd Seelye、The Ars Combinatoria String Quartet、The Contemporary Chamber Players of the University of Chicago、Miranda Cuckson & Blair McMillen、Rolf Schulte & Alan Feinberg、David Holzman、Randall Hodgkinson、Miranda Cuckson、Robert Miller、Harvey Sollberger、Curtis Macomber、Alan Feinberg（24 個掛名；GCM、JACK Quartet 已列在 mc46 名單、仍無介紹）。已查 `data/artist-intros/` 與 progress.json。
