@@ -26,3 +26,10 @@
 ## 主線研究後汰換（不佔條號；2026-10-24）
 - **汰 4 張**（存 `dropped-cards.json`／`dropped-research.json`）：Mark Fell & Rian Treanor《Last Exit to Chickenley》（Discogs 標 Ambient／Musique Concrète、樂評說夢境般迷幻、鳥鳴田野錄音，x 判靜）；NHK’Koyxeи《Dance Classics, Volume II》（文案說從低頻極端出發、dub-tugged，y 判重）；Bogdan Raczynski《Samurai Math Beats》（研究稿：近乎工業的兇猛失真鼓、relentless drum attacks，y 判重；俏皮清楚的旋律，z 趨 0）；Andreas Tilliander《Ljud》（x 貼 3.4、聲音零來源）。
 - 定案 **2 張**：Jamie Lidell《Muddlin Gear》（Ink19：epileptic start/stop filter、刺耳擁擠）、General Magic《Rechenkönig》（Discogs Abstract／Electro／Noise／Experimental、26 首碎片；聲音 thin，交評分驗收）。主場景與擴寫場景見底，**mc45 不再派**。
+
+## 鉤子層（a／b／c）
+- **21931** 交件：`desc-tools/batches/hooks/add-20261024-mc45-hooks-a.json`（1）、`-hooks-b.json`（`[]`，研究稿為空陣列）、`-hooks-c.json`（1）。兩張皆 thin，上限 170。預算公式照 hook-base 第 1793-B 條：`Array.from(hook)+Array.from(note) − 主故事： − 所有 → − 正文只寫上列各項。 − 這條骨架全批只走本張。`。Muddlin Gear 170（hook 原始 28／加權 21.5、note 168）；Rechenkönig 163（hook 原始 28／加權 19、note 162）。初稿 266／267，整格捨去：Lidell 的祖父獻詞、〈Dröön_99〉後的靜音、13 軌長度分佈、Super_Collider（rulings 21882 判不入 facts）；General Magic 的《Fridge Trax》MEGO 001、1994 年起搭檔、特大紙板封套與 Heike Nehl、風格標籤 Experimental。壓完回核：Lidell hook「兩個目錄號」靠的 WARPCD75／SPY013CD 在 g2；General Magic hook「26 首怪名曲」靠的曲名德英夾雜在 g3、26 首本身就在 hook。
+- **21932** 骨架歸屬（2 張 2 條）：Muddlin Gear＝一張碟掛兩家廠牌目錄號的個人首張；Rechenkönig＝廠牌創辦人在自家廠牌出片。兩張 note 各寫自己的歸屬句。
+- **21933** 開頭兩句交代身分：兩張 hook 都只帶名字，第二句補身分與樂種——Lidell「他 1973 年生於英格蘭 Huntingdon，本作歸在 IDM 與實驗電子」（引入法：生年與出生地；句型「生於」）；General Magic「這是 Andreas Pieper 與 Ramon Bauer 的電子二人組，兩人合創了維也納廠牌 Mego」（引入法：身分＋廠牌關係；句型「這是⋯」）。同一藝人沒有跨兩張。日期「日」後一字：Lidell「日以」；General Magic 只寫到月。
+- **21934** 主線追加照辦：媒體名與媒體榜單名次一律不進 note（Ink19 的評語只取內容：啟停濾波、延遲的電視取樣、高低傳真游移、塞得不留喘息；Discogs 的風格只寫成「風格標籤」）。兩張研究稿 thin，note 只指派帶 src 的 facts 與聲音描述；General Magic 沒有任何樂評，聲音那格只寫風格標籤，「短小樂段」等推論不指派。Lidell 的 2005 年後靈魂樂轉向照研究稿 notes 不寫。
+- **21935** 自查：hook 之間中文 4-gram 0 條；hook 與 note 無逐字重複句；無否定句、分數、媒體名。`node qa-batch.mjs hooks add-20261024-mc45` 全部通過；`node chk-hook-crossgroup.mjs add-20261024-mc45` 3 組 2 張、全部通過。
