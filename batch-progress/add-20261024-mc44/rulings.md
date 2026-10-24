@@ -91,3 +91,18 @@
 - **21863** 自掃（scratchpad `wr-mc44-1/mc44w1-scan.mjs`，han() 只留漢字）：本檔跨張 4-gram 0 條（樂器名除外）；對 writer-2 的 hook＋note 0 條（拆掉「爵士廠牌」「的自由爵」「樂手年月」「在巴黎錄」「月在巴黎」「爵士樂手」「廠牌發行」「錄下四首」）；本檔內拆掉「錄下這張」×3、「樂評說它」×3、「是年月日」「在年月日」「在紐約錄」「錄音年月」「同年月他」「錄音這張」「四首都是」。對 mc／md／ml 線 153 檔舊 out 掃 6-gram：拆掉「年月日進紐約」「最長的近分鐘」「爵士三重奏的」「年生於波士頓」「是紐約的錄音」「唱片在年月日」「發行要等到年」「年才交給發行」「首張專輯在年」「年月日那天錄」「首全由他作曲」「年由法國的發」「一首就長達分」「年月至日樂團」「兩面各是一段」「錄音日是年月」「從頭到尾只有」等；殘 1 條「印成少了一個」為 Way Head hook 原文（對 ml1），寫作層不改。
 - **21864** 派工補充照辦：媒體名與榜單名次整句不寫（樂評一律「樂評說／樂評聽來／樂評的形容／樂評覺得」＋評語內容），星等 0；「據」字 0。Davidson 逝者克制（只用 hook 的「生前」，不寫死因）；The Call 的失聯與尋回帶年份標時序；Hampel 只寫錄音日期、Davidson 只寫錄音年（發行年未寫）。Acting Trio 的 BYG 照 note 不加「法國廠牌」；Coursil 的「法國」來自 note「法國 BYG」。
 - **21865** 腳本：`node qa-batch.mjs out add-20261024-mc44` 全部通過 ✓（out-1 12 張 170–240、thin 全 ≤180）；`qa-check-research` 標記 0；`fix-spacing` 待補 0。輔助腳本：scratchpad `wr-mc44-1/mc44w1-write.mjs`、`mc44w1-scan.mjs`。
+
+## 主線審稿（21871–21873；2026-10-24）
+- **21871** 逐張審 23 張（全文印出逐句對研究稿），改 2 張，改後文字存 `desc-override.json`：
+  - `Ernst-Ludwig Petrowsky Quartet|Just for Fun`：刪「這也被視為東、西德爵士樂手首度合作的錄音」（研究 e 只引維基單源，且四人全是東德樂手、只有發行廠牌在西柏林，原句易誤讀）→ 末句改「同年 8 月，西柏林的 FMP 就讓唱片上市」，211 字。
+  - `Wolfgang Fuchs, Hans Schneider, Klaus Huber|Momente`：「錄音在 Arcostr. 進行」（街名縮寫不成句）改「那場錄音裡」，補兩位同伴與十二首短曲（研究 d：Schneider 貝斯、Huber 鼓、12 首 0:40–6:27），169 字。
+- **21872** 事實抽核：Santana 1969 Pip 首版／1979 FMP 再版（研究 e 21844）、Davidson 錄音日 1965-07-27、Coursil 封面盤名少一個 A（研究 b）、Logan 倒帶續錄（研究 a），皆有研究稿出處。「樂評說」三處（Allen 斷句、NYAQ 室內樂、Coursil 克制）屬聲音描述且不點名媒體，保留。
+- **21873** 媒體名、榜單名次、「據說／據傳」全批 0。
+
+## 上線與評分（2026-10-24，主線）（條號 21874–21876）
+- **21874**：上線 23 張：card_catalog 23／23、KV 23 鍵回讀逐字一致（stamp 20261024）、試聽 10 ready／13 unavailable（FMP、BYG、ESP 冷門盤 Apple 未上架；Logan 取 1235461122、Coursil《Way Ahead》取 1529176933、Kühn《Solos》取 1436665823 走 preview-override）、seed +23、prepare／published gate 0 error（26 warning 皆 UPC 盡力而為）。封面 CAA 17、Discogs 6（Byron Allen、Hampel、Colbeck CAA 無圖；FMQ、Candles、One Year 人工身分），縮圖表目視相符，Discogs 6 張登錄 `data/discogs-cover-registry.json`（428–433）。子曲風：worker 標到 14、空 9 張補進 `genre-l3-artist-map.json`（jazz/free/avant 3、jazz/free/free-improv 7 鍵）。三軸：人工身分 2 張（Candles、One Year）給 3/5/2（§0.8）。
+- **21875**：頂點：rarity uncommon 20、epic 2、rare 1，未觸及殿堂／遺珠／異端門檻，列一般卡。
+- **21876**：**落格率 19/23＝83%**（`batch-progress/mood-axes/score-mc44/`，照 10-23 體感標準）。評分 x 3.0–4.4、y −0.6～+0.9、z −1.8～−1.2；conf high 1、mid 11、low 11。出格 4 張全落**暴躁**（y 0.5–0.9 判重）：Free Music Quintet（五人集體亂流＋鼓驅動 4.4/0.9）、Fuchs《Momente》（sopranino 尖嘯＋低音單簧管 4.0/0.5）、Petrowsky《Just for Fun》（四重奏對位衝撞、鼓推得急 3.9/0.6）、Simmons《Staying on the Watch》（五重奏鋼琴鼓猛推 4.2/0.5）——同 mc22／mc42 先例：**四人以上全力合奏或有低音簧管撐底的判重**；穩落冷冽的是三人以下、無鋼琴或無貝斯的乾編制。貼邊：Oki《One Year》x 3.0、Thelin《Candles》與 Acting Trio x 3.1。ESP／BYG 二線大多已在池或被 mc3／mc31 收過，歐陸 FMP 小編制還有少量。**mc44 主場景見底，不再派。**
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+The Giuseppi Logan Quartet、Byron Allen Trio、New York Art Quartet、Lowell Davidson Trio、Henry Grimes Trio、Marion Brown Quartet、Karl Berger、Gunter Hampel Group、Sonny Simmons、Jacques Coursil Unit、Acting Trio、Free Music Quintet、Rolf + Joachim Kühn Quintet、The Ric Colbeck Quartet、Urs Voerkel, Peter K. Frey, Paul Lovens、Christmann Schönenberg Duo、Wolfgang Fuchs, Hans Schneider, Klaus Huber、Georg Gräwe Quintet、Eje Thelin / Pierre Favre / Jouk Minor、Joachim Kühn、Ernst-Ludwig Petrowsky Quartet、Itaru Oki, Michel Pilz, Ralf Hübner、Pierre Favre Trio（23 個掛名）
