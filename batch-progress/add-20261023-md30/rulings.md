@@ -1,0 +1,138 @@
+# add-20261023-md30 裁定（情緒薄格策展線・頹靡：dark ambient 第五波）
+
+> 店主 2026-10-23「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 13 輪，本工作階段負責 ml57、md30。場景與條號 `batch-progress/mood-cells-20261022/SCENES.md`（md30 列），交接 `batch-progress/HANDOFF-mood-cells-line.md`。評分照 10-23 店主「體感標準」。目標格：**頹靡＝靜（x<3.0）＋重（y≥0.5）＋冷（z<0）**；策展邊距 x≤2.7、y≥0.8、z≤−0.3。
+> 策展：`curation-md30.json`（29 張）→ `master-md30.json`（MB 回查 29/29 釘住、0 flag）→ 主線 29 張全收 → `pick.json`（29）→ `build-cards.mjs`。
+> 本批卡單：`desc-tools/batches/cards/add-20261023-md30-cards.json`（29 張；研究 a–e 各 6、e 5）。身分：MB 釘住 29、§1 人工 0。
+> **預留：研究 a 21561–21570、b 21571–21580、c 21581–21590、d 21591–21600、e 21601–21610、鉤子 21611–21620、寫作 21621–21630、主線 21631–21640。**
+---
+
+## 主線策展（不佔條號）
+- 策展 29 張（目標 54，未湊數）：main-scene 9（Dahlia's Tear ×4、Desiderii Marginis ×2、Atrium Carceri ×2＋與 Eldar 合作 1——主場景大名池中未收的晚期盤）、cyclic-loki 5（Hesychia、Shedir、Shrine ×2、Sinke Dûs）、cryo-new 15（Cryo Chamber 二線與新盤）。moodGuess x 1.5–1.8、y 1.2–1.6、z −1.5～−1.0，邊距檢查 29/29 過。去重：seed、全部 curation、全部卡單 0 撞。
+- 記取 md29 研究汰 22 的教訓，策展層每張讀 Bandcamp 文案、看到打擊／旋律樂器領奏／口白／warm／噪牆字眼就不提，`uncertain` 欄逐張寫明讀了哪份文案。擴寫場景（isolationist、ritual neoclassical）未動用。
+- 主線 29 張全收；交研究層重點核：Atrium Carceri《Souyuan》（raw, intense）、Eximia《Visitors》與 Sjellos《Transmission Lost》（驚嚇音效）、God Body Disconnect（同人前作有鼓）、Underwater Sleep Orchestra ×2 與 Shrine《Nausicaä》（色溫偏中性）、Hoshin（lowercase 偏薄）、Cryobiosis（glitch）。
+
+
+## 研究 b 組
+- 21571：Atrium Carceri《Souyuan》moodGuess 存疑（中度）：英文維基引述樂評原句「There is a fair share of rhythmic structures to be found, which isn't strange with his work, but somehow it feels different.」並稱更工業、類 IDM、asylum 般不安（維基僅引官網、評者未具名）；Bandcamp 文案無鼓字眼但標籤含 silent hill／horror／soundtrack。策展層註記的「raw, intense」在我讀到的 Bandcamp 文案中未見（文案為 visceral masterpiece）。建議評分前實聽或汰換。日期 11/18（維基）vs 11/19（Bandcamp／Discogs／MB），寫「2008 年 11 月」。
+- 21572：Atrium Carceri & Eldar《Sacrosanct》推翻廠牌：原始發行為 Cryo Chamber 數位版（2012-08-07），Infinite Fog Productions 是俄羅斯 CD 版（IF-26／IF-27，MB 2012-10-23）；上架廠牌欄建議改 Cryo Chamber 或註明。Eldar 一方「whispers」是否為真人低語無法證實。無獨立樂評，status thin。
+- 21573：Dahlia's Tear《Apeiron》輕度存疑：藝人簡介稱混入工業、實驗與 downtempo 電子元素（downtempo 暗示節奏）；頁面無鼓字眼。warm 僅出現在否定句 no warmth in the light。首發為 Bandcamp 自發行（Discogs 32663481），Infinite Fog 為實體 CD 版。
+- 21574：Hesychia《Metanoia》無存疑；總長 Bandcamp 標 39:56 與分軌加總約 46:00 不符，寫作層寫「約 45 分鐘」或不寫；Rosar 為 Abigor 主唱 2006–2014 僅英文維基單源。
+- 21575：Shedir《Finite Infinity》無存疑；僅 Cyclic Law 文案＋Discogs／MB 資料，無獨立樂評，thin。
+- 21576：Shrine《Celestial Fire》輕度存疑：文案「pristine sonic grandeur」「intense」，遊戲敘事結構，聽感可能偏壯闊／電影感；無獨立樂評可排除管風琴或明亮泛音（同人《Somnia》前例），建議實聽〈Infada Stone〉。《古墓奇兵 3》出處為 Discogs 備註與 Bandcamp 文案。
+- 通則：Bandcamp 於 curl 回挑戰頁，改用 WebFetch 讀取（文案只能取摘要，受 125 字引用限制）；WebSearch 本組實用 6 次（超出每支 3 次上限，結果多為無關，已棄用），之後改走 MB／Discogs API。全組 6 張皆未發現鼓／口白／驚嚇音效／噪牆的直接證據，但 Souyuan 為節奏疑點最重。
+
+## 研究 a 組
+- 21561：Dahlia's Tear《Across the Shifting Abyss》無存疑（文案與標籤無鼓／旋律領奏／口白／warm）。Dahlia's Tear 無英文維基條目，人物資料取 Discogs API（Anile D.＝Anile Dahl 單源）與 MB。
+- 21562：Dahlia's Tear《Descendants of the Moon》無存疑；文案「Mesopotamian ritual」指題材，全文無手鼓／吟誦字眼。實體 CRYO 159 限量 400 張。
+- 21563：Dahlia's Tear《Adrift on the Edge of Infinity》輕度存疑（偏暖風險）：原句「Recommended for fans of layered drone, delicate harmonics and the post apocalypse」，泛音層可能偏柔亮，主線評分以聽感為準。
+- 21564：Desiderii Marginis《Bathe in Black Light》**推翻策展層 label**：2021-11-11 為藝人自行發行數位版，Cyclic Law 是 2024 年實體再版（216th Cycle，官方日 2024-05-03）；寫作層勿寫成 2021 Cyclic Law。聲音輕度存疑：「intravenous rhythms」為全計畫簡介，本盤文案與頁面無節奏證據；曲名〈When Life Shone Warm〉的 warm 僅曲名。
+- 21565：Desiderii Marginis《Vita Arkivet》**moodGuess 存疑（高風險）**：Bandcamp 聽眾留言「Spine-chilling chants and lurking drones are accompanied by ringing tones - like ghostly wind chimes - bells and sharp sweeping metallic noise」「sparse and perfectly executed chants, bells, swells and soundscapes」；引用評論「By turns whispering and gentle, then percussive and dangerous, like dreams themselves」。三條獨立指向吟誦＋金屬噪音＋打擊感；另為 41 分鐘迷你專輯（Discogs Mini-Album），首發為自行發行數位版、Cyclic Law 為後出實體版。建議汰換或降權。
+- 21566：Atrium Carceri《Reliquiae》輕度存疑：文案「A sickly dull thud of stone on flesh is all that interrupts the ceaseless moanings and burrowings」＝偶發悶響；標籤含 horror、silent hill、soundtrack，可能有驚嚇段；維基風格總述提到鋼琴與「slow rhythms, bitter melodies」為全計畫通論。Cryo Chamber 成立年 2011（MB／Discogs 廠牌／維基）與 Discogs 個人頁 2012 矛盾，facts 取 2011。
+- 通則：Bandcamp 對瀏覽器 UA 回挑戰頁，改用專案 UA（dip-vinyl-shop/1.0）的 curl 可取 data-tralbum 全文與留言；未使用 WebSearch。所有「無鼓」皆依文案／標籤／曲名推定，未能試聽。
+
+## 研究 d 組（21591–21600）
+- 21591：d 組 6 張（Dronny Darko ×2、Council of Nine、Cryobiosis、God Body Disconnect、Void Stasis）身分全與卡單吻合（MB／Discogs／Bandcamp 三方一致），未推翻策展層年份、廠牌、盤名。
+- 21592：moodGuess 存疑——God Body Disconnect《The Depths of Finality》（中偏高）：Bandcamp 文案 “post-rock undertones”、樂評 “a peaceful listening journey… relaxing ambience”、“gentle caress of pads”，Moallem 自述是鼓手，色溫偏柔和親密、重量不足；無口白已證實（訪談）。建議汰換候選或聽完整張再定。
+- 21593：moodGuess 存疑——Cryobiosis《Inner Stasis》（中）：Side-Line “beautiful, but melancholic piano-like play”（近似鋼琴的旋律性段落）；Bandcamp “incorporate glitch”，兩份樂評未說 glitch 的程度；未見驚嚇音效。
+- 21594：moodGuess 存疑——Council of Nine《Dakhma》（中）：Chain D.L.K. “Circle of the Sun is close to metal territories using aggressive drones”、“Nasu seems to include also some filtered human voices”、“Sacrifice features heavy basses”；Bandcamp tag 有 noise。局部段落，主體 drone，無鼓。
+- 21595：moodGuess 存疑（輕）——Dronny Darko & Ugasanie《Dark Source of the North》：Bandcamp “sharp bleeping sounds”（概念內儀器嗶聲）、Side-Line “dreamy and relaxing and then tormented and even disturbing”；Dronny Darko & G M Slater《Dissolving…》：Bandcamp “soothing dark atmospheres”、Side-Line “obscure and yet dreamy”，色溫偏中性。皆無鼓、無口白。
+- 21596：Void Stasis《Ruins》找不到本盤獨立樂評，聲音事實僅廠方文案與標籤；後作《Eschaton》Side-Line 有 “pulsating electronic sequences”，曲名〈Clockwork〉，請主線聽是否有 sequencer 脈動。status 形式上 full，實質聲音證據薄。
+- 21597：facts 不寫專輯名 Dakhma 的祆教字義（無來源頁確認）、Dawn of Ashes 風格、媒體評分（Side-Line 8／7／7、Chain D.L.K. 無分數）。
+
+## 補研究（d 組追加）
+- 21598：d 組追加 7 張（protoU、Yair Elazar Glotman、Lia Bosch、Aware、Argyre Planitia、Kloob & Onasander、Tho-So-Aa）身分全與卡單吻合（MB／Discogs／Bandcamp 一致，年份、廠牌、盤名未推翻）。Glotman《Northern Gulfs》與 Tho-So-Aa《Epoch, Part 1》找不到獨立樂評，status thin（聲音僅廠方文案、標籤、Discogs 風格）；其餘 5 張各有 Side-Line 一篇樂評，full。
+- 21599：moodGuess 存疑——protoU《Memory Alpha》（中）：Side-Line “a blasting piece”、“heavy overwhelming sounds”、“pure sound-collage of noises”，有爆裂與重聲響、雜訊拼貼，非純靜 drone；Aware《Requiem for a Dying Animal》（輕）：“distant vocal effects”、“spooky atmospheres”、“remains dreamy”；Kloob & Onasander《Mundus Patet》（輕）：開場 “deep breathing sounds and ritual bells”，曲曲 “crescendo like”；Argyre Planitia《Tenth Region of the Night》（輕）：“stormy sounds sharp as the Northern wind”（尖銳風暴聲）；Lia Bosch《Polar Code》（輕）：“crackling textures”、12 首短曲、“tormented／unsettling”。以上皆未見鼓、口白、旋律領奏、warm 自稱；有無驚嚇音效無來源。
+- 21600：Glotman Bandcamp 標籤有 techno（本盤文案無節奏描述，疑沿用藝人 KETEV 計畫標籤，輕度存疑）；Tho-So-Aa 標籤 noise 為 Loki 通用標籤，文案無噪牆佐證。Argyre Planitia《The Great Dark Spot》是否有打擊未再查（只核本張，本張無）。Tho-So-Aa 本名（Last.fm 稱 Lutz Rach）單源未驗，不進 facts。
+
+## 研究 e 組（21601–21610）
+- 21601：e 組 5 張（Eximia《Visitors》10 條、Sjellos《Transmission Lost》9、Aegri Somnia《Nusquam》9、Ager Sonus《Niflheim》8、Hoshin《Path of Dissolutions》10）身分全與卡單吻合（MB／Discogs／Bandcamp 一致），未推翻策展層年份、廠牌、盤名；卡單 Hoshin 國別欄空白，查得比利時（Xavier Heindrichs，亦名 Esylt），建議補 be。
+- 21602：Hoshin《Path of Dissolutions》**moodGuess 存疑（高）**，本組最高汰換候選：Bandcamp「We feel throbbing bass one minute, the other surrounded by murmuring crowds」「the cough of pestilence echo through halls」（低頻搏動＋人群低語／咳嗽取樣）；Side-Line（8 分）「empowered by dark strings」「impressive sound blasts」「vibrating noise waves」（〈The All Is Aflame〉有噪音浪、弦樂質地）；另一頭文案「soothing」、標籤 lowercase、讀者稱 sedative，有偏薄風險。無鼓字樣。
+- 21603：Ager Sonus《Niflheim》**moodGuess 存疑（中）**：Bandcamp「Dreamy Soundtracks」「the sounds of battle feel muffled」——戰場聲響被悶住，可能含撞擊類瞬間音；dreamy 暗示色溫偏柔。卡單「公元 800 年戰場」之說在可取得的文案節錄中未見，facts 未寫。無獨立樂評。
+- 21604：Aegri Somnia《Nusquam》**moodGuess 存疑（中，噪／強度）**：Side-Line（7½）「Overwhelming sound treatments and blasting sound creations」「strong paranoiac sensation」；文案與標籤無鼓、旋律樂器、口白、warm。Cryo Chamber 專輯序數（第三張？）各來源互相牴觸，facts 不寫序數；Discogs 另有西班牙同名 folk 雙人組，已排除。
+- 21605：Eximia《Visitors》與 Sjellos《Transmission Lost》（curator 點名查驚嚇音效）：Eximia 樂評「inhibited terror」「You can feel the danger everywhere」「a bit monotonous」，是張力與單調，未明指驚嚇段，文案「not many harmonic elements」支持無旋律；Sjellos 標籤 creepy／horror／scary／industrial，文案「alien technology seem to playfully vibrate」，找不到本盤獨立樂評，驚嚇段無法證實也無法排除。兩張皆輕度提醒，非汰換級。Discogs 曲名 Exctinction 為筆誤，facts 用 Extinction。
+- 21606：Bandcamp 對 WebFetch 可取文案（curl 預設 UA 被挑戰頁擋）；使用 WebSearch 3 次、MB／Discogs API、Side-Line 站內搜尋與樂評頁、Igloo Magazine。所有「無鼓」皆依文案／標籤／樂評推定，未能試聽。Ragančík「做過遊戲預告片」僅搜尋摘要轉述，單一來源，未寫入。
+
+## 補研究（e 組追加）
+- 21607：追加 7 張研究稿 append 於 e 組稿後（前 2 張未動）：Cambium 10 條 thin、Butugichag 10 full、That Space Somewhere 9 full、Dinorwic 9 full、Twll Du 9 full、Megaliths 9 full、Hel 9 thin。身分皆與卡單吻合。Cambium 為正規全長：Cyclic Law 有獨立 Bandcamp 頁、數位版與 CD 版（限量 300、畫冊《Ascend》附碟）各四首約 62 分，MB 單列 Album、無 Live／Soundtrack 次類型；唯 Discogs 備註稱為 2019-11-30 瑞典諾爾雪平 Kontakt Festival Dynamo 現場錄音，聲音細節除「dark ambient soundtrack」外無來源，且 raison d'être 向來混葛利果聖歌取樣與打擊，「無鼓」只能說文案未提，輕至中度存疑。Nihil 國籍來源未證實，facts 不寫。Butugichag 廠牌實為 Ksenza Records 與 Infinite Fog 聯合；國別卡單空白，不強定；樂評稱細膩 drone 與背景田野錄音，吻合。Lull 吻合（Musique Machine 稱冷暗、無節奏），curator 所稱「封城期間在河畔」只證實 2020-06 創作，河畔與封城查無，未寫。
+- 21608：**Hel moodGuess 存疑（高，鼓）**：Cyclic Law Bandcamp 文案原句「with the use of guitar, bass, drums and skillful sampling creating thick drony layers of deep and solemn emotions」——推翻卡單 curatorRisk「Bandcamp 無文案」。鼓用法無法證實，Connexion Bizarre 樂評原頁仍連不上（DNS，Wayback 亦無），後作《Chimäre》Side-Line 有「hypnotic rhythmic pulses」「crescendo-like percussion work」。依 md28／md29 先例（文案寫出鼓即汰）建議主線汰換。Megaliths 存疑（中，偏明亮與節奏）：PopMatters 摘句「invigorating」「highly spirited」（Bandcamp 轉錄，原文未取得）、文案「journey from darkness toward light」、Sleeping Shaman「Gentle, lifting drones」「a hypnotic shuffle」（〈Bryn Celli Ddu〉）、「splintered, crystalline angularity」；主體仍無鼓 drone，Vital Weekly「voices of ghosts」為比喻。
+- 21609：Dinorwic 存疑（中，噪）：Side-Line（8）原句「Overwhelming sound waves often characterized by buzzing noises」「studio effects and noise waves」，可能偏壓倒性嗡鳴而非純冷 drone。Twll Du 存疑（中，噪）：Side-Line（7½）「an inhibited noisy soundscape where overwhelming sound waves are supporting the space」「controlled noise element」「bizarre noises」，與文案「入深眠」意圖矛盾。**推翻策展層一處**：Twll Du 並非 Llyn Y Cwn 首張（MB 另有 2009 兩張 EP、2015《III:KA》、2017《IV》、2018《Lost and Found at Sea Vol.1》），僅是其 Cold Spring 首作，鉤子層不得寫「首張」。Side-Line 稱 Twll Du 首次數位發行為 2018，與 MB／Bandcamp 的 2019-05-03 牴觸，採後者。
+- 21610：Llyn Y Cwn 三張分清：Dinorwic（2020，CSR286CD，七首）、Twll Du（2019 數位、CD CSR254CD，七首）、Megaliths（2024-03-29，CSR334CD，十首）；《Megaliths In Dub》是 2025-10-10 的另一個 MB release group（dub 重混），Megaliths 稿僅最後一條用來劃清，鉤子層不得混入 dub 低頻。Dinorwic 日期三處不一（MB CD 2020-06-10／數位 06-16、Discogs 2020-07-10、Bandcamp 06-16），年份一致採 2020。WebSearch 用 3 次（Cambium 無結果、Stuzha、Lull；Megaliths 1 次、Hel 1 次，合計 5 次，超出每支 3 次上限，如實記錄）。所有「無鼓」依文案、標籤與樂評推定，未能試聽。
+
+## 研究 c 組（21581–21590）
+- 21581 Shrine《Nausicaä》：moodGuess 存疑（輕度）。Side-Line 2022-08-12 原句「slow rhythms and analogue-like sound treatments」「creates a Trance sensation」，並比作早期 Delerium，表示有緩慢節奏脈動、非純無鼓 drone；色溫 icy，偏冷。Discogs 另列 2025 年 Shrine 自發行兩張，故不寫「計畫結束／最後一張」。
+- 21582 Sinke Dûs《Modus Vivendi》：status thin（找不到獨立樂評，只有廠牌文案）；文案與 credits 無鼓／旋律樂器／人聲／warm；Bandcamp 與 Discogs 皆列八首（含〈Stonelore〉），文案寫七首，以八首為準。
+- 21583 Underwater Sleep Orchestra《The Night and Other Sunken Dreams》：moodGuess 存疑（中度）。文案「nostalgic journey」；Side-Line 2021-11-02「easy going dark sonic sensation」「dreamy passages」、末曲「spoken-like, whispering vocals」、電子「bleeps」；MMM 2021-07-13「dreamy, subdued synthetics」「gentle pads and textured mallets」、蟬鳴不安。色溫中性偏暖、可能偏 ml；無鼓。
+- 21584 Underwater Sleep Orchestra《Insomnolence》：輕度存疑。Side-Line 2023-08-13「low, resonating sounds mixed with field recordings and human growls」，有鬼魅威脅感；文案「gritty textures, eerie ambience」；無鼓、無旋律樂器。
+- 21585 Silent Universe《The Infinity Coordinates》：status thin（無獨立樂評）。曲名〈Pulsar〉疑有脈動但無來源；推翻策展層一處：國別 ru 應為 by（Malyshkin 為白俄羅斯維捷布斯克人）。
+- 21586 Ugasanie《Endless Cold, Endless Darkness》：status thin（2026-01 新盤無獨立樂評）。文案「cold and harsh」「snow blasted」「blue noise」，輕度存疑是否為刺耳噪紋，建議聽樣；ASBO 報導原頁 404，亞馬爾半島說法不採。
+- 組內其餘條號 21587–21590 未用。
+
+## 主線研究後汰換（不佔條號；2026-10-23）
+- 照 md28／md29 先例：**研究稿引到文案或樂評原句寫出拍點／節奏脈動、旋律樂器、吟誦、噪牆爆裂、夢幻柔和（色溫中性風險）的汰**；只是 soothing、harsh 一字、題材有張力而無明文驚嚇的留。
+- **汰 9 張**（存 `dropped-cards.json`／`dropped-research.json`）：
+  - 節奏／脈動：Atrium Carceri《Souyuan》（樂評 rhythmic structures、偏工業類 IDM）、Shrine《Nausicaä》（slow rhythms、Trance sensation、比作早期 Delerium）、Hoshin《Path of Dissolutions》（throbbing bass、sound blasts、vibrating noise waves，另有 lowercase 偏薄風險）。
+  - 吟誦／金屬噪音／打擊感：Desiderii Marginis《Vita Arkivet》（chants、bells、sharp sweeping metallic noise、percussive；五首 41 分迷你盤）。
+  - 噪牆強度：Aegri Somnia《Nusquam》（overwhelming、blasting sound creations）。
+  - 旋律／溫柔（色溫中性、落平靜或恍惚風險）：Cryobiosis《Inner Stasis》（melancholic piano-like play、glitch）、God Body Disconnect《The Depths of Finality》（post-rock undertones、peaceful relaxing ambience）、Underwater Sleep Orchestra《The Night and Other Sunken Dreams》（nostalgic、dreamy、gentle pads、mallets、末曲低語）、Ager Sonus《Niflheim》（Dreamy Soundtracks）。
+- 卡單更正：Atrium Carceri & Eldar《Sacrosanct》廠牌 Infinite Fog→**Cryo Chamber**（2012-08-07 首發數位版，Infinite Fog 是 10 月俄羅斯 CD，研究 b 組）；Desiderii Marginis《Bathe in Black Light》、Dahlia's Tear《Apeiron》廠牌改 **self-released**（首發為藝人自發行數位版，Cyclic Law／Infinite Fog 是後出實體版，研究 a、b 組）；Silent Universe 國別 ru→**by**（研究 c 組）。
+- 留著但標記的：Council of Nine《Dakhma》（局部 aggressive drones，主體 drone）、Dronny Darko & G M Slater（soothing、dreamy 一語）、Ugasanie《Endless Cold》（harsh、blue noise）、Eximia、Sjellos（horror 標籤，無明文驚嚇）——交評分層。
+- 定案 **20 張**（a 5、b 5、c 4、d 4、e 2）。主場景大名晚期盤與 Cryo Chamber／Cyclic Law 二線已見底，擴寫場景不動用（md29 先例：isolationist 研究層汰率高）。
+
+## 鉤子層（d、e）
+- **21616** 交件：`desc-tools/batches/hooks/add-20261023-md30-hooks-d.json`（4）、`-hooks-e.json`（2），key 逐字、順序同研究稿（汰換後定案），欄位只有 key／hook／note。6 張研究稿 status 皆 full，上限 230。預算公式照 HOOK-DISPATCH §二／1793-B：`Array.from(hook)+Array.from(note) − 主故事： − 所有 → − 正文只寫上列各項。 − 這條骨架全批只走本張。`。逐筆（預算｜hook 加權｜原始字元）：d1 Dark Source 230｜21｜21、d2 Dissolving 228｜19｜19、d3 Dakhma 223｜17｜17、d4 Ruins 225｜21｜26；e1 Visitors 221｜19｜19、e2 Transmission Lost 229｜20｜20。初稿 6 張全超標（最高 Dark Source 313、Sjellos 289），整格捨去：Dark Source 的海浪壓成雜訊、曲數分鐘、終曲〈On the Other Side of the Arctic Gates〉（改由第二句以前作盤名承接）；Dissolving 的〈The Infinity Bell〉上下篇、盤名呼應句；Dakhma 的「展現實力」、〈The Magi〉開場；Ruins 的曲數分鐘、Denman 兼混音、超現實頻率；Visitors 的曲數分鐘與〈World Without Man〉長度；Transmission Lost 的曲數分鐘、首末曲名、Raisyn 名義、深空引擎共振。壓完回核 hook 依賴格：Dark Source 儀器嗶聲補回 g1；Dissolving「地下第五年」補回 g2；Dakhma「首張全長」補回 g1；Ruins Eurorack／滅絕在 g1–g2；Visitors 和聲很少在 g1；Sjellos 走廊與神殿在 g1。
+- **21617** 骨架歸屬（6 張 6 條，只擁有者寫歸屬句）：Dark Source＝合作續篇（前作盤名領第二句）＋極地探險隊潛冰；Dissolving＝虛構未來告別信的文案框架；Dakhma＝合輯露臉後的首張全長；Ruins＝別團成員另組、硬體合成器／Eurorack 實驗計畫；Visitors＝以聲響設計代替和聲（名下唯一一張）；Transmission Lost＝外太空與內在空間雙主題（星艦通道→荒星神殿）。與 a／b 已交 10 條（古機械、吉爾伽美什、避難所、自發行後壓實體、地底悶響、神聖悖論、2134 廢城、大齋期錄音、曲名成下張盤名、古墓奇兵隕石）無撞。Sjellos 已上架《Lifeless Ground》走「十一年後重返」，本張不寫睽違；Void Stasis 已上架《Specimen 7》寫 Bathory 獨力，本張寫三人編制。hook 四型：場景（Dark Source、Transmission Lost）／懸疑（Dissolving）／人物定調（Dakhma）／斷言（Ruins、Visitors）。
+- **21618** 「日」後一字（尺 `/[年月]\s*\d{1,2}\s*日(.)/`）：Dark Source 日正、Dakhma 日亮、Ruins 日開；Dissolving、Visitors、Transmission Lost 只寫到月。與 a／b 已用的交、先、在、推、由、自、面不撞。發行句換寫法避開「年月由發行」殘片（上架／發行／推出／開賣於／亮相於）。
+- **21619** 「他／她」與第二句句型：Dronny Darko 跨兩張分軸——Dark Source 只用計畫名＋國別（烏克蘭、白俄羅斯），不寫本名，Malyshkin 留給 c 組兩張；Dissolving 帶本名與據點（基輔的 Dronny Darko（Oleg Puzan）、美國的 G M Slater）。研究稿兩名一一對應未證實，Dark Source 不做對應。其餘「他」：Dakhma（Olivier，合輯）、Visitors（Ragančík）、Transmission Lost（Knopf）；Ruins 用「三人」。第二句句型一張一種：前作盤名／素材／合輯／樂團出處／名下唯一／其他名義；避開 a／b 的「X 是」、這段、層層疊起、國籍人名、拉丁字義、這句話出自、從作曲演奏到、曾任、來自義大利、保加利亞的，以及已上架 md5／md28／md29 同藝人卡用過的 作曲家與聲音設計師、基輔與本名、加州與本名、Olivier、兩人合作／聯手／合寫、一人包辦、掛名欄、遊戲配樂、求救訊號、圍困。媒體名與評分一律不進 note；單一樂評的評價句改寫成不掛來源的聲音描述（〈Presence〉最暗、像一首無止境的長曲、壓抑的恐懼、起伏不大、細小噪音、低音厚重）；Dakhma 字義、Dawn of Ashes 風格、Eximia 遊戲預告片、Sjellos「Cryo Chamber 首作」單源推論皆不指派。
+- **21620** 自查與腳本：hook×hook 中文 4-gram（本組＋a／b 已交）0 條；hook 對既有 `add-*` hooks 初掃 4 條（的第一張、完整專輯、合成器接上、被遺忘的）改字後 0；hook×自卡 note 5 字以上逐字重複只剩 Ruins 的「Eurorack」（器材名）；note×note 跨卡只剩「田野錄音」（術語），已拆 主故事概念是、主故事文案、主故事廠方、年月由發行、計畫這條、張完整專、與田野錄、主故事在；一般否定句兩處（沒有盡頭、沒有多少和聲）改成正面寫法。`node qa-batch.mjs hooks add-20261023-md30`：只標「c 缺 hook 檔」（另一位未交）；`node chk-hook-crossgroup.mjs add-20261023-md30`（4 組 16 張）✓ 全部通過。輔助腳本在 scratchpad `hk-md30-2/`（md30de-budget.cjs、md30de-ngram.cjs）。
+
+## 鉤子層（a、b、c）
+- **21611** 交件：`desc-tools/batches/hooks/add-20261023-md30-hooks-a.json`（5）、`-hooks-b.json`（5）、`-hooks-c.json`（4），key 逐字、順序同研究稿（汰換後），欄位只有 key／hook／note。預算公式照 HOOK-DISPATCH §二：`Array.from(hook)+Array.from(note) − 主故事： − 所有 → − 正文只寫上列各項。 − 這條骨架全批只走本張。`（「第二句以…領句」照算）。上限：full 230、thin 170（hook-base 2001-B；thin＝b1、b4、b5、c1、c3、c4）。逐筆（預算｜hook 加權｜原始）：a1 225｜20｜20、a2 225｜17｜17、a3 227｜19｜19、a4 228｜21.5｜26、a5 226｜18｜18；b1 167｜14｜14、b2 225｜16.5｜19、b3 229｜21｜26、b4 167｜18｜21、b5 170｜19｜19；c1 169｜16｜16、c2 217｜15｜15、c3 169｜17｜19、c4 169｜19｜19。初稿 14 張全超（最高 c2 326、a4 277、b4 266），整格捨去：a1 活動起年與「該廠第二張」、a3〈Still Waters〉與掛名欄、a4 1993 demo／曲數分鐘／內在荒野、a5 2003 發片／機器喧鬧／第七張／掛名欄、b1 盤名字義與聲音格、b3 Abigor 任期／Erik Mayer／CD 限量、b4 Lawrence English 與曲長、b5 達爾文水手、c1 CD 限量與日期、c2 Boström 其他團／曲數／開場曲／危險感、c3 Ignis Fatum 兩張與日期、c4 日期與廠牌名。壓完回核 hook 依賴格：a3 病樹／地下避難所補回 g2、a5 呻吟掘進悶響在 g2、b1 文案悖論句在 g1、b4 第四首→2023 盤名在 g2、b5 熱帶南極隕石在 g1、c1 冰封地景補回 g2、c3 壓軸 16 分鐘在 g2、c4 針葉林濃霧在 g2；a1 懸念收在 g2「提問留給聽者、接著寫旅程」。
+- **21612** 骨架歸屬（14 張 14 條，只擁有者寫歸屬句）：a1＝出土古文物（安提基特拉機械）引題；a2＝古文學史詩取題；a3＝聲音配方（層疊 drone＋泛音）領句的後末日荒原；a4＝數位自發行三年後才有實體（巡演先賣）；a5＝拉丁名字義＋地底囚城敘事；b1＝廠牌初創一歲多的首發＋文案悖論；b2＝未來年份設定的廢城＋這回全由自己來；b3＝黑金屬主唱轉 dark ambient、大齋期即興錄音；b4＝曲名成為下一張盤名；b5＝電玩劇情改編；c1＝16 年沉寂後回歸；c2＝雙人合組、VHS 磁帶處理、失眠者主題；c3＝主腦另開的太空分支名義；c4＝據點與量產（維捷布斯克、近三十張）＋西伯利亞曲名。避開已上架 md29 的 Shrine 車諾比、Sinke Dûs《Akrasia》字義、md28「瑞典起家遷奧勒岡」。b2 不寫 Infinite Fog CD（讓 a4 獨佔「先數位後實體」）；c1 不寫 Boström 客座（留給 c2 的成員身分）；b5 不寫 Dehn Sora（避免與 b3 互指）。hook 四型：懸疑 a1／場景 a3、a5、b2、b3、b5、c1、c4／斷言 a4、b1、b4、c3／人物定調 a2、c2。
+- **21613** 同藝人分軸與「他」引入法：Dahlia's Tear ×4——a1 生平（名字直接領句：瑞典斯德哥爾摩單人計畫、Anile D.）、a2 題材（「這段」史詩指代領句）、a3 聲音配方（「層層疊起的 drone」領句）、b2 掛名欄（「從作曲、演奏到」封面母帶全自己來）；Simon Heath 的母帶封面只留 b2 的對照語、a1–a3 不指派。Atrium Carceri ×2——a5 名稱字義＋1977 生於斯德哥爾摩；b1 廠牌主理人（2011 創 Cryo Chamber、本作首發時一歲多），CMI 離團只在 b1。Pavel Malyshkin ×2（＋d1）——c3 用「Ugasanie 的主腦」身分領句、c4 用「在白俄羅斯維捷布斯克」地點領句＋2010 年 11 月成形；d1 只用國別（21619）。Desiderii Marginis 汰換後只剩 a4（「瑞典人 Johan Levin 的」所有格領句）。
+- **21614** 第二句句型一張一種：X 是／這段／層層疊起的 drone／瑞典人 Johan Levin 的／Atrium Carceri 在拉丁文裡／這句出自／從作曲、演奏到／曾任／Shedir 來自義大利／保加利亞的／隔了 16 年／由／Ugasanie 的／在白俄羅斯，與 d／e 六種（21619）不撞。「日」後一字：a1 在、a2 推、a4 自（另一處「5 月 3 日」接 →）、a5 交、b1 先、b3 由、b5 面、c2 「，」；a3、b2、b4、c1、c3、c4 只寫到年月。媒體名（Discogs、MusicBrainz、Side-Line、Ghost Cult、播客）與評分一律不進 note；c2 單一樂評的「低吼、比前作更暗更像電影」改寫成不掛來源的聲音描述；研究稿 uncertain 格（Eldar 低語、Cryo Chamber 2012 成立說、Hesychia 總長、Walser、Martina Betti 本名、亞馬爾半島）整格捨去。
+- **21615** 自查與腳本：hook×hook 中文 4-gram（a–e 20 張）0；hook×他卡 note 0；hook 與自卡 note 8 字逐字重複只剩 b3 的「Bethlehem」（地名）；開頭前四字 20 張互異。hook 對既有 `add-*` hooks 初掃 6 條（三年後才、五首長曲、首的曲名、張的盤名、成了這張、了這張的）改字後只剩「年的新作」對 mc5／mc9（通用時間語，留）；對舊 c-* 線另有「軌的名字」數條（通用，留）。`node qa-batch.mjs hooks add-20261023-md30` 全部通過 ✓；`node chk-hook-crossgroup.mjs add-20261023-md30`（5 組 20 張）✓ 全部通過（只報不擋：b2「光裡沒有溫度」為文案內容，留）。輔助腳本在 scratchpad `hk-md30-1/md30-hk-check.mjs`。
+
+## 主線補候補（不佔條號；2026-10-23）
+- 策展代理在主線以前 29 張建卡單後仍續跑，最終交 52 張（另 23 張：isolationist 11（擴寫）、winter-light 4、cyclic-loki 5、main-scene 1、cryo-new 2），全 MB 釘住、邊距過、去重 0（含 origin 97 個 `claude/*` 分支 seed）。`build-master.mjs md30` 重跑 → master 52。
+- **主線再汰 9**（策展自己標的風險即汰）：Netherworld《Algida Bellezza》（獻給新生女兒，色溫）、Nox《Opus Unending》（自述 death industrial、續作 harsh）、Seetyca《Nemeton》（z −0.9 貼邊＋wonder、longing）、Maeror Tri《Venenum》（z −1.0、同人他作自稱 melodic）、Frozen Thoughts《Calm Before the Storm》（lush synth textures、CAA 500）、Parhelion《Midnight Sun》（wind-blasted noise、mournful phrasing）、Monocube《Substratum》（stringed instruments、前作 tribal）、Dronny Darko《Origin》（pulsating、三部曲前作判輕被汰）、Inade《The Incarnation of the Solar Architects》（同人前作因 industrial／noise 被汰、證據薄）。
+- **收 14 張進卡單**：d 組追加 7（protoU、Glotman、Lia Bosch、Aware、Argyre Planitia、Kloob & Onasander、Tho-So-Aa）、e 組追加 7（raison d’être《Cambium》、Stuzha、Lull、Llyn Y Cwn ×3、Allseits）；派兩支補研究 append 進 d／e 研究稿，再派一支補鉤子 append 進 hooks-d／e。卡單共 34 張。
+
+## 主線補研究後汰換（不佔條號；2026-10-23）
+- 汰 6：protoU《Memory Alpha》（樂評 a blasting piece、heavy overwhelming sounds、噪音拼貼）、Allseits《Hel》（Cyclic Law 文案明寫 guitar, bass, drums）、Llyn Y Cwn《Dinorwic》《Twll Du》（overwhelming sound waves、noise waves；Taphephobia 先例）、《Megaliths》（invigorating、從黑暗走向光、hypnotic shuffle）、raison d’être《Cambium》（Discogs 記 2019-11-30 Kontakt Festival 現場錄音——只收正規錄音室專輯；團隊慣用聖歌取樣與打擊）。
+- 卡單更正：Stuzha《Butugichag》廠牌 Infinite Fog→**Ksenza Records**（Discogs 標題廠牌 KSZ 001，與 Infinite Fog 聯合，研究 e 組）。
+- 留：Aware（distant vocal effects、dreamy 一語）、Kloob & Onasander（ritual bells 開場）、Argyre Planitia（stormy sounds sharp）、Lia Bosch（crackling textures）、Glotman（標籤 techno 無文案佐證）——交評分層。
+- 定案 **28 張**（a 5、b 5、c 4、d 10、e 4）。
+
+## 補鉤子層（d、e 追加）
+- **21631** 交件：`hooks-d.json` 第 5–10 筆（Glotman、Lia Bosch、Aware、Argyre Planitia、Kloob & Onasander、Tho-So-Aa）、`hooks-e.json` 第 3–4 筆（Stuzha、Lull）append 於原 4／2 筆之後，原內容未動；兩檔 key 與順序與研究稿逐字一致（d 10、e 4），欄位只有 key／hook／note。預算公式照 HOOK-DISPATCH §二（「第二句以…領句」照算）；上限 full 230、thin 170（Glotman、Tho-So-Aa）。逐筆（預算｜hook 加權｜原始）：Glotman 167｜18｜18、Bosch 228｜23｜23、Aware 229｜21｜21、Argyre 222｜23｜23、Kloob 227｜22｜27、Tho-So-Aa 167｜19.5｜28、Stuzha 230｜24｜24、Lull 228｜22｜22。初稿 8 張全超（最高 Aware 307、Argyre 288、Kloob 285、Lull 279），整格捨去：Glotman 總長、〈Low Tide〉、CDr 限量、電聲作曲學歷；Bosch CD 限量、曲長、「一人包辦」概念封面；Aware 封面瑞典南極考察照片、大氣層文案、距前作六年；Argyre 早期五張盤名、七首曲名；Kloob 兩台合成器與 Ableton、Kloob 在該廠前兩張；Tho-So-Aa 總長、磁帶霧、重新母帶與限量；Stuzha 曲名意譯、「第二張全長」；Lull Martin Bowes 母帶、口哨高音、曲名。壓完回核 hook 依賴格：Glotman 沉錨／返港在 g1；Bosch 無限符號與抉擇在 g2（懸念收在抉擇本身）；Aware「生命能否受苦」移到 g1；Argyre 夜行與神話敵人在 g2；Kloob 互剪素材補進 g2；Tho-So-Aa 1995 在 g1、萊比錫在 g4（hook 已改成只靠年份）；Stuzha 職業與勞改營在 g1–g2；Lull 自述由 g1「說這話的是」承接。
+- **21632** 骨架歸屬（8 條，只擁有者寫歸屬句）：Glotman＝曲序排成航程（沉錨→返港）；Bosch＝廠牌近 20 年第一位女性＋自寫南極科幻故事；Aware＝哲學命題取題（生命能否受苦、Pärt 語）；Argyre＝入睡到天亮的夢境夜行；Kloob＝網上結識、交換音軌互剪的遠距合作（古羅馬儀式為題材）；Tho-So-Aa＝1996 老盤三十年後重發；Stuzha＝古拉格勞改營題材＋本人說與政治無關；Lull＝本人自述「迷失其中」＋無拍起點。與既有 20 條無撞：Lull 的睽違 14 年整格捨去（c1 擁有「16 年沉寂後回歸」）；Aware 封面南極考察照捨去（避 d1 極地探險隊）；Stuzha 曲名意譯捨去（避 c4 西伯利亞曲名）；Bosch 不寫一人包辦（避 b2）。Glacial Movements ×3 分面向：Glotman 只帶廠名與月份、Bosch 首位女性、Aware 在該廠第二張；Winter-Light ×2：Argyre 寫荷蘭廠牌、Kloob 只帶廠名。已上架 Lull ×4（Napalm Death 鼓手、Painkiller、1990 起步、取樣器殘響踏板四軌機、專為廠牌兩個月寫成）本張全不用，身分改由 Cold Spring 的 isolationist 先驅說法承擔；Glotman 已上架 md14 的「聲音藝術家」本張改用低音提琴學歷。hook 四型：場景 Glotman、Argyre／懸疑 Bosch／斷言 Aware、Tho-So-Aa、Lull／人物定調 Kloob、Stuzha。
+- 「日」後一字：Bosch 問、Aware 上、Argyre 出、Kloob 釋、Lull 登；Glotman、Tho-So-Aa、Stuzha 只寫到月。與既有 在推自交先由面「，」正亮開不撞。「他／她」：Bosch 用「她」；Aware、Stuzha、Lull 用「他」（各自單卡，無跨卡藝人）；Tho-So-Aa 性別無來源，全用計畫名；Kloob 用「兩人」。第二句句型一張一種：學校領句（Glotman）／多重創作領句（Bosch）／城市與學科領句（Aware）／起年領句（Argyre）／「一位是⋯一位是」（Kloob）／原版廠牌領句（Tho-So-Aa）／職業領句（Stuzha）／「說這話的是」（Lull），與既有 20 種及已上架 Lull 四張第二句不撞。媒體名（Side-Line、Musique Machine、This Is Darkness、Discogs、MB、Bandcamp）與評分一律不進 note；單一樂評評價句（更暗、令人不安卻強而有力、incredibly subtle、Eraserhead 比較）改成不掛來源的聲音描述或捨去；研究稿單源格（Daniil 姓氏、Lutz Rach、Lull 第八張全長、河畔封城）不指派。
+- 自查與腳本：hook×hook（28 張）中文 4-gram 0；hook×他卡 note 0；note×note 只剩術語「田野錄音」；開頭前四字 28 張互異、對既有 `add-*` hooks 0 撞；hook 對既有 `add-*` hooks 初掃 2 條（六首曲子、十年後再）改字後 0；hook 與自卡 note 5 字逐字重複只剩 Tho-So-Aa 的「 1995」（年份）。一般否定句兩處（Stuzha「不是政治專輯」、Lull「沒有節拍」）改正面寫法。`node qa-batch.mjs hooks add-20261023-md30` 全部通過 ✓（5 組 28 張）；`node chk-hook-crossgroup.mjs add-20261023-md30` ✓ 全部通過。輔助腳本在 scratchpad `hk-md30-3/`（md30de3-budget.cjs、md30de3-ng2.cjs、md30de3-fix.cjs）。
+
+## 寫作層（writer-2）
+- **21626** 交件：`desc-tools/batches/output/add-20261023-md30-out-2.json` 14 張（full 12：198–235；thin 2：Glotman 159、Tho-So-Aa 152），key 逐字同序。首句全照抄 hook；第二句全照鉤子層 note 指派的領句（前作盤名／素材／合輯／樂團出處／學校／多重創作／城市與學科／起年／「一位是⋯一位是」／原版廠牌／名下唯一／其他名義／職業／「說這話的是」）。初稿 0 張出界，未做整格捨去。
+- **21627** 「日」後一字：Dark Source 正、Dakhma 亮、Ruins 開、Bosch 問、Aware 上、Argyre 出、Kloob 釋、Lull 登（Lull 改成以日期領句、後接「，它登上」）；其餘只寫到月。日期前一字逐張分開（旅／輯／》／子／。／選／》／，），拆掉與 writer-1 撞的 唱片於年月、唱片在年、於年月日、在年月日、把它排在，以及本檔內 的這張是、長年月日。
+- **21628** 追加條款照辦：媒體名、媒體評分與榜單名次整句不寫；Bosch note 的「據廠方」改成直述（她是該廠近 20 年第一位發片的女性）；單一樂評的聲音句（〈Presence〉最暗、像一首無止境的長曲、細小噪音、壓抑的恐懼、起伏不大、劈啪質地、尖銳如北風的風暴聲、呼吸與鈴聲）一律寫成不掛來源的聲音描述；「據」「評者」「樂評」grep 0。
+- **21629** 第二句避複述 hook：Stuzha 的 hook 已帶英國／地球物理／西伯利亞，第二句只留「本行地球物理的 Daniil」作職業領句，生地與移居整格不寫，改補計畫名字義；勞改營句改成具名科雷馬。Kloob 的 hook 已寫互剪，正文只補「交換一層層音軌」。Bosch 的研究員性別無來源，正文以「研究員」重提、不用代名詞。Aware「不問聰明與否」改正面寫法「撇開了聰明與否」。
+- **21630** 自掃：本檔＋writer-1 現檔合掃中文 4-gram，2 張以上只剩術語「田野錄音」與地名「白俄羅斯」；hook 原文無命中。`qa-batch out`（28 張、thin 全 ≤180）✓、`qa-check-research` 標記 0、`fix-spacing` 待補 0。輔助腳本在 scratchpad `wr-md30-2/`（md30w2-scan.mjs、md30w2-pool.mjs）。writer-1 若再改動，合掃結果請主線收件時重跑。
+
+## 寫作層（writer-1）
+- **21621** 交件：`desc-tools/batches/output/add-20261023-md30-out-1.json` 14 張，key 逐字同序。full 8（197–232：Across 217、Descendants 232、Adrift 206、Bathe 207、Reliquiae 204、Apeiron 210、Metanoia 221、Insomnolence 197）；thin 6（152–166：Sacrosanct 165、Shedir 153、Shrine 152、Sinke Dûs 157、Silent Universe 159、Ugasanie 166）。初稿 0 張出界，未整格捨去。`qa-batch out`、`qa-check-research`、`fix-spacing` 皆 0 處。
+- **21622** 首句全照抄 hook；第二句領句全照鉤子層 note 指派（21614）。避免複述 hook 的改寫：Bathe 把 hook 的「網上」具名為 Bandcamp、實體段不再重提「CD 與黑膠」；Reliquiae 第三句收「那記悶響」＝石頭擊打肉體；Shedir 以「那一軌是〈…〉」具名第四軌；Silent Universe 以「那首壓軸叫〈…〉」具名；Ugasanie 曲名句不重提「針葉林的濃霧」、改寫成「開場的針葉林霧中」；Adrift 場景句拿掉「荒原」（hook 已有）。
+- **21623** note 以外不補：Bathe 初稿的「七首長曲」、Adrift 的「頹圮建築」（facts 有、note 無）已刪。文案措辭改直述（「專輯把⋯」「整張被定調為⋯」「故事裡的荒城」），全檔不出現「據說／據傳／評者／樂評」；Insomnolence 的「更暗、更像電影」照 note 寫成不掛來源的聲音描述。Apeiron 的「光裡沒有溫度」改正面寫法「連光線也是冷的」。Sacrosanct「這句出自⋯介紹詞」照 note 的領句，屬唱片自身文字、非評價。
+- **21624** 跨張 4-gram（han()，本檔＋writer-2 hooks＋out-2 合掃）：途中拆掉 單人計畫×3、首約分鐘×3、這張專輯、長約分秒、自行發行、瑞典人的、著細緻的、發行的是、是瑞典的、是年月日（本檔內）及對 out-2 的 唱片於年、唱片在年、把它排在／在年月日、分鐘上下、與田野錄／上田野錄、混著田野／進田野錄、這張合作。定稿只剩專名與術語（斯德哥爾摩、白俄羅斯、田野錄音）。日期前一字／後一字逐張不同（日在、日推→改「是年月日」單張、年月把、日就、日交、日先、年他、日由、年由、日面、年問、日把、年帶、年月成）。後交件的 writer-2 若再改，合掃結果會變，交主線收件再跑一次。
+- **21625** 輔助腳本：scratchpad `wr-md30-1/`（md30-1-draft.mjs 產檔＋續跑合併、md30-1-ngram.mjs 合掃）。
+
+## 主線審稿（21633–21635；2026-10-24）
+- **21633** 逐張審 28 張（全文印出逐句對研究稿），改 1 張 2 處，改後文字存 `desc-override.json`；未動事實，研究／鉤子／input 不需同步。
+  - `Underwater Sleep Orchestra|Insomnolence`：「首作寫的是同一夜的兩場夢」→「兩人的首作寫的是……」（本張是第二張，原句易讀成本張即首作）；「比前作更暗，也更像電影」（Side-Line 單評比較）→「質地粗粒，氛圍詭異」（廠方文案 gritty textures, eerie ambience，研究 c 組）→ 198 字。
+- **21634** 事實抽核：Ugasanie「作品至今近三十張」（Discogs 主名義近三十張）、Hesychia 錄音地「維也納的 Bethlehem」、Sinke Dûs 隔 16 年（2007《Akrasia》→2023）、Tho-So-Aa 1995 年錄／1996 年發、Stuzha 廠牌 Ksenza＋Infinite Fog 聯發，皆有研究稿出處。
+- **21635** 媒體名、榜單名次、「據說／評者」全批 0；〈Presence〉最暗、Eximia「起伏不大」等屬聲音描述、不掛來源，保留。
+
+## 上線與評分（2026-10-24，主線）（條號 21636–21638）
+- **21636**：上線 28 張：card_catalog 28／28、KV 28 鍵回讀逐字一致（stamp 20261023r13）、試聽 25 ready／3 unavailable（Dahlia's Tear《Apeiron》、Argyre Planitia《Tenth Region of the Night》、Tho-So-Aa《Epoch, Part 1》Apple 未上架；Lia Bosch 走 preview-override 取 1771642322「Lía Bosch」、Aware 取 1690153917、Dronny Darko & G M Slater 取 1611719105）、seed +28、prepare／published gate 0 error（28 warning 皆 UPC 盡力而為）。封面 CAA 28／28，front live-check 全 200、縮圖表目視相符。
+- **21637**：頂點：28 張 rarity 全 uncommon，未觸及殿堂／遺珠／異端門檻，列一般卡。
+- **21638**：**落格率 28/28＝100%**（`batch-progress/mood-axes/score-md30/`，照 10-23 體感標準）。評分 x 1.2–2.9、y 0.9–1.8、z −2.0～−0.9；conf mid 3、low 25。貼邊：Stuzha《Butugichag》x 2.9（勞改營工業氛圍）、Desiderii Marginis《Bathe in Black Light》x 2.6、Lia Bosch《Polar Code》y 0.9。主場景大名見底（Atrium Carceri／Dahlia's Tear／Desiderii Marginis 只剩 10 張乾淨盤，擴寫的 ritual／冷 neoclassical 收 0），不再派。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Dahlia's Tear、Desiderii Marginis、Atrium Carceri、Eldar、Hesychia、Shedir、Sinke Dûs、Underwater Sleep Orchestra、Silent Universe、Dronny Darko、G M Slater、Void Stasis、Eximia、protoU（已汰）、Yair Elazar Glotman、Lia Bosch、Aware、Argyre Planitia、Kloob & Onasander、Onasander、Tho-So-Aa、Stuzha、Lull（22 位；Shrine、Sjellos、Council of Nine、Ugasanie、Keosz 等已在 md29 名單）

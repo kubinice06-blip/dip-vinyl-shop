@@ -1,0 +1,1580 @@
+{
+ "group": "md30",
+ "factions": [
+  {
+   "id": "main-scene",
+   "zh": "Atrium Carceri／Dahlia's Tear／Desiderii Marginis／Ulf Söderberg 周邊",
+   "count": 10,
+   "why": "主場景點名藝人與其周邊的未收盤"
+  },
+  {
+   "id": "cyclic-loki",
+   "zh": "Cyclic Law／Loki／Old Europa 二線",
+   "count": 10,
+   "why": "Cyclic Law、Loki Foundation 等歐陸二線未收藝人"
+  },
+  {
+   "id": "cryo-new",
+   "zh": "Cryo Chamber 未收藝人",
+   "count": 17,
+   "why": "Cryo Chamber 目錄中池與 curation 皆無的藝人"
+  },
+  {
+   "id": "isolationist",
+   "zh": "isolationist／極地冷 drone（擴寫）",
+   "count": 11,
+   "why": "Glacial Movements／Winter-Light 等極地無鼓低頻 drone"
+  },
+  {
+   "id": "winter-light",
+   "zh": "Winter-Light 深 ambient 二線",
+   "count": 4,
+   "why": "Winter-Light 目錄中池與 curation 皆無的深 ambient／暗黑 drone"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Dahlia's Tear",
+   "album": "Across the Shifting Abyss",
+   "year": 2019,
+   "label": "Cryo Chamber",
+   "country": "se",
+   "faction": "main-scene",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Dahlia's Tear（Anders Peterson）回 Cryo Chamber 第二張，深海到星門的長段 drone 景；Bandcamp 文案自稱 deep underwater soundscapes／lush dark ambient，未見鼓、旋律樂器或 warm 字眼，落頹靡。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.4,
+    "z": -1.3,
+    "why": "無鼓，深海低頻 drone 與厚墊，陰暗"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/20f6ec1c-0846-48a3-9fbd-6a943c7da291",
+    "https://coverartarchive.org/release-group/20f6ec1c-0846-48a3-9fbd-6a943c7da291/front-500",
+    "https://cryochamber.bandcamp.com/album/across-the-shifting-abyss"
+   ],
+   "mbRgMbid": "20f6ec1c-0846-48a3-9fbd-6a943c7da291",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案（cryochamber 頁）：無 drums/percussion/beats/piano/trumpet/spoken word/warm 字眼；tag 只有 ambient、drone、soundscapes。"
+  },
+  {
+   "artist": "Dahlia's Tear",
+   "album": "Descendants of the Moon",
+   "year": 2020,
+   "label": "Cryo Chamber",
+   "country": "se",
+   "faction": "main-scene",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Dahlia's Tear 以吉爾伽美什史詩為題的 Cryo Chamber 作，美索不達米亞儀式氛圍接星際 drone；六首長段、無鼓無領奏，往下沉的頹靡型。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.4,
+    "z": -1.3,
+    "why": "無鼓，古老儀式感的低頻 drone，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/84e73c90-0d51-4e69-8358-fd32363cec9b",
+    "https://coverartarchive.org/release-group/84e73c90-0d51-4e69-8358-fd32363cec9b/front-500",
+    "https://cryochamber.bandcamp.com/album/descendants-of-the-moon"
+   ],
+   "mbRgMbid": "84e73c90-0d51-4e69-8358-fd32363cec9b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：寫 Mesopotamian ritual 與 interstellar space，未見 drums/percussion/beats/旋律樂器/spoken word/warm；「ritual」一詞研究層可核有無手鼓。"
+  },
+  {
+   "artist": "Dahlia's Tear",
+   "album": "Adrift on the Edge of Infinity",
+   "year": 2021,
+   "label": "Cryo Chamber",
+   "country": "se",
+   "faction": "main-scene",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Dahlia's Tear 後末日題材的 Cryo Chamber 作；文案自述 hypnotic atmospheric textures、layered drones，荒原與地下避難所意象，催眠下壓、落頹靡。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.4,
+    "z": -1.4,
+    "why": "無鼓，層疊 drone 與風聲，荒涼冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8502c2f6-9973-4e2b-819d-4ac1bced0ace",
+    "https://coverartarchive.org/release-group/8502c2f6-9973-4e2b-819d-4ac1bced0ace/front-500",
+    "https://cryochamber.bandcamp.com/album/adrift-on-the-edge-of-infinity"
+   ],
+   "mbRgMbid": "8502c2f6-9973-4e2b-819d-4ac1bced0ace",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：layered drones, gentle harmonics；未見 drums/percussion/beats/piano/trumpet/spoken word/warm。gentle harmonics 研究層可留意是否偏柔。"
+  },
+  {
+   "artist": "Desiderii Marginis",
+   "album": "Bathe in Black Light",
+   "year": 2021,
+   "label": "Cyclic Law",
+   "country": "se",
+   "faction": "main-scene",
+   "genres": [
+    "electronic"
+   ],
+   "why": "瑞典 1990s 暗黑 ambient 老將 Johan Levin 的夜之頌，文案寫「強烈的平靜」與廣闊內在景觀；七首 55 分鐘的工業 ambient 長段，壓人下沉、落頹靡。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -1.3,
+    "why": "無鼓，工業質地 drone 與長殘響，夜色陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3bdb66b6-7877-4f87-8609-817985cd9da2",
+    "https://coverartarchive.org/release-group/3bdb66b6-7877-4f87-8609-817985cd9da2/front-500",
+    "https://desiderii.bandcamp.com/album/bathe-in-black-light",
+    "https://www.discogs.com/release/29947816"
+   ],
+   "mbRgMbid": "3bdb66b6-7877-4f87-8609-817985cd9da2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案（desiderii 頁）：未見 drums/percussion/beats/旋律樂器/spoken word/warm；藝人簡介泛稱 intravenous rhythms（非本張）；同藝人《Deadbeat》曾因工業節奏被汰，研究層宜核。"
+  },
+  {
+   "artist": "Desiderii Marginis",
+   "album": "Vita Arkivet",
+   "year": 2018,
+   "label": "Cyclic Law",
+   "country": "se",
+   "faction": "main-scene",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Desiderii Marginis 五首 41 分鐘的「石穹」神聖氛圍作（Cyclic Law 稱其後作承接本張的 sacred mood 與 stone vaults），長段工業 ambient drone，下沉陰冷。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.4,
+    "z": -1.4,
+    "why": "無鼓，石窖殘響與金屬掃頻 drone，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d459a62f-733e-4f2a-9273-739315179d7a",
+    "https://coverartarchive.org/release-group/d459a62f-733e-4f2a-9273-739315179d7a/front-500",
+    "https://desiderii.bandcamp.com/album/vita-arkivet",
+    "https://cycliclaw.bandcamp.com/album/departed"
+   ],
+   "mbRgMbid": "d459a62f-733e-4f2a-9273-739315179d7a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 頁：本身只有發行說明；Cyclic Law《Departed》文案描述其 sacred mood／cramped stone vaults。聽眾留言提到 sharp sweeping metallic noise 與 chants，研究層宜核是否刺耳或有人聲吟誦。"
+  },
+  {
+   "artist": "Atrium Carceri",
+   "album": "Reliquiae",
+   "year": 2012,
+   "label": "Cold Meat Industry",
+   "country": "se",
+   "faction": "main-scene",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Atrium Carceri（Simon Heath）CMI 末期主線作，19 首串成地底囚城與遺物的長篇；文案寫持續的呻吟、掘進與機械運轉，深沉下壓的經典 Atrium 頹靡聲。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.5,
+    "z": -1.5,
+    "why": "無鼓，地底機械 drone 與厚殘響，陰森"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9f99b5cc-bc80-49ca-9ccd-59748f0b5462",
+    "https://coverartarchive.org/release-group/9f99b5cc-bc80-49ca-9ccd-59748f0b5462/front-500",
+    "https://cryochamber.bandcamp.com/album/reliquiae",
+    "https://www.discogs.com/release/3483924"
+   ],
+   "mbRgMbid": "9f99b5cc-bc80-49ca-9ccd-59748f0b5462",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案（cryochamber 頁）：無 drums/percussion/beats/旋律樂器/spoken word/warm；有一句「石擊血肉的悶響」穿過持續轟鳴，屬偶發音效，研究層可核是否有驚嚇段。"
+  },
+  {
+   "artist": "Atrium Carceri",
+   "album": "Souyuan",
+   "year": 2008,
+   "label": "Cold Meat Industry",
+   "country": "se",
+   "faction": "main-scene",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Atrium Carceri 製作三年的 CMI 時期作，廠牌稱其 raw、intense、極重細節的深度；典型 Atrium 地底 drone 與田野錄音，壓人下沉、落頹靡。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.5,
+    "z": -1.4,
+    "why": "無鼓，低頻 drone＋田野錄音質地，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4a8580b4-3713-37d8-a0d8-1571abed291c",
+    "https://coverartarchive.org/release-group/4a8580b4-3713-37d8-a0d8-1571abed291c/front-500",
+    "https://cryochamber.bandcamp.com/album/souyuan",
+    "https://www.discogs.com/release/1542016"
+   ],
+   "mbRgMbid": "4a8580b4-3713-37d8-a0d8-1571abed291c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：無 drums/percussion/beats/旋律樂器/spoken word/warm 字眼；「raw, intense」研究層可核是否偏刺耳。"
+  },
+  {
+   "artist": "Atrium Carceri & Eldar",
+   "album": "Sacrosanct",
+   "year": 2012,
+   "label": "Infinite Fog Productions",
+   "country": "se",
+   "faction": "main-scene",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Atrium Carceri 與 Eldar 合作，文案稱 Atrium 的 deep low sounds 與 Eldar 的歷史感交疊；48 分鐘九首工業暗黑 ambient，低沉下壓、落頹靡。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.5,
+    "z": -1.4,
+    "why": "無鼓，深低頻 drone 與工業質地，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/93e076f6-6007-4904-b7c7-0e5f9163e459",
+    "https://coverartarchive.org/release-group/93e076f6-6007-4904-b7c7-0e5f9163e459/front-500",
+    "https://cryochamber.bandcamp.com/album/sacrosanct",
+    "https://www.discogs.com/release/3786338"
+   ],
+   "mbRgMbid": "93e076f6-6007-4904-b7c7-0e5f9163e459",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：無 drums/percussion/beats/旋律樂器/spoken word/warm；tag 有 industrial ambient。"
+  },
+  {
+   "artist": "Dahlia's Tear",
+   "album": "Apeiron",
+   "year": 2024,
+   "label": "Infinite Fog Productions",
+   "country": "se",
+   "faction": "main-scene",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Dahlia's Tear 2024 年 Infinite Fog 作，2134 年廢墟都市、遠方機械嗡鳴；文案明寫光裡沒有溫度，dark cinematic drone，冷而下壓、落頹靡。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.4,
+    "z": -1.5,
+    "why": "無鼓，都市廢墟 drone 與機械嗡鳴，無溫度"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ebd344b0-b4f0-4f89-a8b6-c7ae8fce5d08",
+    "https://coverartarchive.org/release-group/ebd344b0-b4f0-4f89-a8b6-c7ae8fce5d08/front-500",
+    "https://dahliastear1.bandcamp.com/album/apeiron-3"
+   ],
+   "mbRgMbid": "ebd344b0-b4f0-4f89-a8b6-c7ae8fce5d08",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案（dahliastear1 頁）：無 drums/percussion/beats/旋律樂器/spoken word；warm 只出現在否定句「no warmth in the light」。"
+  },
+  {
+   "artist": "Hesychia",
+   "album": "Metanoia",
+   "year": 2017,
+   "label": "Cyclic Law",
+   "country": "at",
+   "faction": "cyclic-loki",
+   "genres": [
+    "electronic"
+   ],
+   "why": "前 Abigor 成員 Arthur Rosar 的冥修計畫，以沙漠教父與禪為本、追求靈魂的靜止；即興類比氛圍＋田野錄音五首 40 分鐘，全然臣服式的下沉、落頹靡。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.3,
+    "z": -1.3,
+    "why": "無鼓，類比 drone 與田野錄音，靜止陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/901fd2f5-b05f-4d66-ac52-0533b4a66cc0",
+    "https://coverartarchive.org/release-group/901fd2f5-b05f-4d66-ac52-0533b4a66cc0/front-500",
+    "https://cycliclaw.bandcamp.com/album/metanoia"
+   ],
+   "mbRgMbid": "901fd2f5-b05f-4d66-ac52-0533b4a66cc0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案（cycliclaw 頁）：improvised analog atmospherics＋field recordings；未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm。"
+  },
+  {
+   "artist": "Shedir",
+   "album": "Finite Infinity",
+   "year": 2020,
+   "label": "Cyclic Law",
+   "country": "it",
+   "faction": "cyclic-loki",
+   "genres": [
+    "electronic"
+   ],
+   "why": "義大利 Shedir 在 Cyclic Law 的第二張（前作《Falling Time》已在池落頹靡）；文案寫 dense, floating drone textures 與星辰般的孤寂，Lawrence English 母帶，濃密下沉。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.4,
+    "z": -1.3,
+    "why": "無鼓，濃密漂浮 drone＋細田野錄音，孤寂冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d1b47ea7-1eff-4dc5-94e1-a66fee4f0b74",
+    "https://coverartarchive.org/release-group/d1b47ea7-1eff-4dc5-94e1-a66fee4f0b74/front-500",
+    "https://cycliclaw.bandcamp.com/album/finite-infinity",
+    "https://www.discogs.com/release/15865808"
+   ],
+   "mbRgMbid": "d1b47ea7-1eff-4dc5-94e1-a66fee4f0b74",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm/noise。"
+  },
+  {
+   "artist": "Shrine",
+   "album": "Celestial Fire",
+   "year": 2018,
+   "label": "Cyclic Law",
+   "country": "bg",
+   "faction": "cyclic-loki",
+   "genres": [
+    "electronic"
+   ],
+   "why": "保加利亞 Shrine 接《Ordeal 26.04.86》（已在池落頹靡）的 Cyclic Law 作，以南極隕石封印為題的六章暗黑 drone，厚重陰冷、壓人下沉。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.4,
+    "z": -1.4,
+    "why": "無鼓，厚重 drone 與田野錄音，南極冰窖冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/992e62bd-791a-4fdf-a723-961f3092a161",
+    "https://coverartarchive.org/release-group/992e62bd-791a-4fdf-a723-961f3092a161/front-500",
+    "https://cycliclaw.bandcamp.com/album/celestial-fire"
+   ],
+   "mbRgMbid": "992e62bd-791a-4fdf-a723-961f3092a161",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；同藝人《Somnia》曾因開場管風琴、偏明亮被汰，本張文案無此類字眼。"
+  },
+  {
+   "artist": "Shrine",
+   "album": "Nausicaä",
+   "year": 2022,
+   "label": "Cyclic Law",
+   "country": "bg",
+   "faction": "cyclic-loki",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Shrine 以《風之谷》腐海為題的 Cyclic Law 作：工業文明崩潰千年後的毒孢子叢林，八首暗黑 drone，陰濕厚重、下沉。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.3,
+    "z": -1.1,
+    "why": "無鼓，毒霧般厚 drone，陰濕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e9d9ee7e-6281-4d1b-9d20-842c52c3b8de",
+    "https://coverartarchive.org/release-group/e9d9ee7e-6281-4d1b-9d20-842c52c3b8de/front-500",
+    "https://cycliclaw.bandcamp.com/album/nausica",
+    "https://shrine-ambient.bandcamp.com/album/nausica"
+   ],
+   "mbRgMbid": "e9d9ee7e-6281-4d1b-9d20-842c52c3b8de",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；題材含人與自然的連結，研究層可核色溫是否偏中性。"
+  },
+  {
+   "artist": "Sinke Dûs",
+   "album": "Modus Vivendi",
+   "year": 2023,
+   "label": "Cyclic Law",
+   "country": "se",
+   "faction": "cyclic-loki",
+   "genres": [
+    "electronic"
+   ],
+   "why": "瑞典 Marcus Lönebrink 睽違 16 年接《Akrasia》（已在池落頹靡）的 Cyclic Law 作，Kammarheit 的 Pär Boström 客座；文案以靜止為生活方式、冰封內在地景為題，drone ambient 下沉。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.3,
+    "z": -1.3,
+    "why": "無鼓，冰封般 drone 長音，靜止陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/425537b3-c0a5-4681-8321-1146ee3cf2c0",
+    "https://coverartarchive.org/release-group/425537b3-c0a5-4681-8321-1146ee3cf2c0/front-500",
+    "https://cycliclaw.bandcamp.com/album/modus-vivendi",
+    "https://www.discogs.com/release/28523416"
+   ],
+   "mbRgMbid": "425537b3-c0a5-4681-8321-1146ee3cf2c0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案（cycliclaw 頁）：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm/noise。"
+  },
+  {
+   "artist": "Underwater Sleep Orchestra",
+   "album": "The Night and Other Sunken Dreams",
+   "year": 2021,
+   "label": "Cryo Chamber",
+   "country": "se",
+   "faction": "cryo-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Kammarheit 的 Pär Boström 與 Bruce Moallem 合組，Cryo Chamber 首作：一夜兩場夢，合成器、踏板、卡帶全過 VHS 磁帶，文案稱 solemn underwater music，磁帶糊的包覆感，落頹靡。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.5,
+    "z": -1.0,
+    "why": "無鼓，VHS 磁帶糊的水下 drone，陰沉"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5624d7c8-97c8-4bf6-8b44-b08301a3865b",
+    "https://coverartarchive.org/release-group/5624d7c8-97c8-4bf6-8b44-b08301a3865b/front-500",
+    "https://cryochamber.bandcamp.com/album/the-night-and-other-sunken-dreams"
+   ],
+   "mbRgMbid": "5624d7c8-97c8-4bf6-8b44-b08301a3865b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；文案有 nostalgic reflection 一語（第二場夢），研究層可核色溫是否偏暖。"
+  },
+  {
+   "artist": "Underwater Sleep Orchestra",
+   "album": "Insomnolence",
+   "year": 2023,
+   "label": "Cryo Chamber",
+   "country": "se",
+   "faction": "cryo-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Underwater Sleep Orchestra 第二張，獻給睡醒之間失眠的人；全部聲音過 VHS 磁帶的 murky dreamlike soundscapes，厚糊下沉、落頹靡。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.5,
+    "z": -1.0,
+    "why": "無鼓，VHS 磁帶糊、混濁夢境 drone，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5fa314e7-c26c-4aca-9e13-ed2c6d5a1853",
+    "https://coverartarchive.org/release-group/5fa314e7-c26c-4aca-9e13-ed2c6d5a1853/front-500",
+    "https://cryochamber.bandcamp.com/album/insomnolence"
+   ],
+   "mbRgMbid": "5fa314e7-c26c-4aca-9e13-ed2c6d5a1853",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；tag 有 dream music，研究層可核色溫。"
+  },
+  {
+   "artist": "Silent Universe",
+   "album": "The Infinity Coordinates",
+   "year": 2017,
+   "label": "Cryo Chamber",
+   "country": "ru",
+   "faction": "cryo-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Ugasanie（Pavel Malyshkin，池中多張落頹靡）的暗黑太空副計畫首作；文案寫以太空磁場讀數探索無盡黑暗中的異常，raw、isolated、rumbling dark sounds，低頻轟鳴下壓。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.4,
+    "z": -1.1,
+    "why": "無鼓，低頻轟鳴與磁場噪訊，孤絕冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/57f28db9-c9f3-4f70-9a03-084cb8ae576b",
+    "https://coverartarchive.org/release-group/57f28db9-c9f3-4f70-9a03-084cb8ae576b/front-500",
+    "https://cryochamber.bandcamp.com/album/the-infinity-coordinates"
+   ],
+   "mbRgMbid": "57f28db9-c9f3-4f70-9a03-084cb8ae576b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；tag 含 space ambient，但文案自稱 dark、rumbling，非中性太空盤；研究層可再核。"
+  },
+  {
+   "artist": "Ugasanie",
+   "album": "Endless Cold, Endless Darkness",
+   "year": 2026,
+   "label": "Cryo Chamber",
+   "country": "by",
+   "faction": "cryo-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Ugasanie（池中六張多落頹靡）2026 年 Cryo Chamber 新作，文案寫暴風雪、古墓與神聖氛圍的 bleak, cold dark ambient；遠離文明的荒原 drone，冷而下壓。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.4,
+    "z": -1.5,
+    "why": "無鼓，暴風雪般 drone 與藍噪紋理，酷寒"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/93085eac-46ac-41a0-83b8-8890851f26ce",
+    "https://coverartarchive.org/release-group/93085eac-46ac-41a0-83b8-8890851f26ce/front-500",
+    "https://cryochamber.bandcamp.com/album/endless-cold-endless-darkness"
+   ],
+   "mbRgMbid": "93085eac-46ac-41a0-83b8-8890851f26ce",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；有 delicate textures and blue noise 一語（屬柔和噪紋，非噪牆）。2026-01 新盤，研究層可核 CAA／樂評。"
+  },
+  {
+   "artist": "Dronny Darko & Ugasanie",
+   "album": "Dark Source of the North",
+   "year": 2022,
+   "label": "Cryo Chamber",
+   "country": "",
+   "faction": "cryo-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Dronny Darko 與 Ugasanie 接《Arctic Gates》（已在池）的續作：探險隊潛入極地冰層下的古老存在，文案自稱 dark arctic drone、層疊聲響設計，酷寒下壓、落頹靡。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.5,
+    "z": -1.5,
+    "why": "無鼓，冰層下低頻 drone 與儀器嗶聲，極寒"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4d520dfc-a0ec-4e3a-90c4-57749ac37e89",
+    "https://coverartarchive.org/release-group/4d520dfc-a0ec-4e3a-90c4-57749ac37e89/front-500",
+    "https://cryochamber.bandcamp.com/album/dark-source-of-the-north"
+   ],
+   "mbRgMbid": "4d520dfc-a0ec-4e3a-90c4-57749ac37e89",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；僅 subdued noise 一語。"
+  },
+  {
+   "artist": "Dronny Darko & G M Slater",
+   "album": "Dissolving Into Solitary Landscapes",
+   "year": 2022,
+   "label": "Cryo Chamber",
+   "country": "",
+   "faction": "cryo-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Dronny Darko 與 G M Slater 合作，以 2043 年毒雨地表的訣別信為框架；暗黑 drone＋田野錄音，孤寂下沉、落頹靡。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.4,
+    "z": -1.3,
+    "why": "無鼓，雨聲田野錄音與低頻 drone，陰濕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/89eb69ef-781a-435d-b27e-d579a1ebdb2a",
+    "https://coverartarchive.org/release-group/89eb69ef-781a-435d-b27e-d579a1ebdb2a/front-500",
+    "https://cryochamber.bandcamp.com/album/dissolving-into-solitary-landscapes"
+   ],
+   "mbRgMbid": "89eb69ef-781a-435d-b27e-d579a1ebdb2a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm/noise；文案是書面信件，未標口白。"
+  },
+  {
+   "artist": "Council of Nine",
+   "album": "Dakhma",
+   "year": 2015,
+   "label": "Cryo Chamber",
+   "country": "us",
+   "faction": "cryo-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Council of Nine 的 Cryo Chamber 首張全長（池中《Diagnosis》《Exit Earth》《Davidian》已落頹靡）；文案寫共鳴的弓擦聲與深沉低頻營造孤絕，古史穿越死亡進入虛空。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.6,
+    "z": -1.4,
+    "why": "無鼓，弓擦共鳴與深低頻 drone，孤絕陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b5e38cbf-7c45-43d3-9a38-e75d72715417",
+    "https://coverartarchive.org/release-group/b5e38cbf-7c45-43d3-9a38-e75d72715417/front-500",
+    "https://cryochamber.bandcamp.com/album/dakhma"
+   ],
+   "mbRgMbid": "b5e38cbf-7c45-43d3-9a38-e75d72715417",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：resonant bowed sounds and deep low tones；未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；tag 有 noise。"
+  },
+  {
+   "artist": "Cryobiosis",
+   "album": "Inner Stasis",
+   "year": 2014,
+   "label": "Cryo Chamber",
+   "country": "",
+   "faction": "cryo-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Cryobiosis 接《Within Ruins》（已在池）的續作，文案寫潮濕、幽閉、電影感，把工業質地換成更陰鬱的色調；老派 Cryo Chamber 恐怖 drone，下沉陰冷。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.4,
+    "z": -1.4,
+    "why": "無鼓，潮濕幽閉的 drone 與細 glitch，陰森"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ed85304b-f75c-47a2-983a-cf7111064513",
+    "https://coverartarchive.org/release-group/ed85304b-f75c-47a2-983a-cf7111064513/front-500",
+    "https://cryochamber.bandcamp.com/album/inner-stasis"
+   ],
+   "mbRgMbid": "ed85304b-f75c-47a2-983a-cf7111064513",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；有「加了 glitch」與 horror/creepy tag，研究層可核有無驚嚇段。"
+  },
+  {
+   "artist": "God Body Disconnect",
+   "album": "The Depths of Finality",
+   "year": 2020,
+   "label": "Cryo Chamber",
+   "country": "",
+   "faction": "cryo-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bruce Moallem 重病後寫的悲慟與死亡之作，文案說刻意不再用自己的錄音人聲引導聽者、轉求平靜；長段 drone＋田野錄音，往下沉的頹靡型（《Dredge Portals》已在池）。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.4,
+    "z": -1.1,
+    "why": "無鼓，哀慟長 drone 與田野錄音，灰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f4688f71-c588-4a9b-a8bf-f3fa0d48b90c",
+    "https://coverartarchive.org/release-group/f4688f71-c588-4a9b-a8bf-f3fa0d48b90c/front-500",
+    "https://cryochamber.bandcamp.com/album/the-depths-of-finality"
+   ],
+   "mbRgMbid": "f4688f71-c588-4a9b-a8bf-f3fa0d48b90c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：明寫捨棄前作的人聲獨白；未見 drums/percussion/beats/旋律樂器/warm。同藝人《Sleeper’s Fate》曾因鼓點＋後搖滾段被汰，研究層宜核本張無此段；文案求 peace，色溫研究層可核。"
+  },
+  {
+   "artist": "Void Stasis",
+   "album": "Ruins",
+   "year": 2022,
+   "label": "Cryo Chamber",
+   "country": "",
+   "faction": "cryo-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Kristof Bathory 等三人以硬體合成器與 Eurorack 組的 Void Stasis 首作（後作《Specimen 7》已在池），地球漂入異星大氣後的文明廢墟，暗黑 drone 下壓。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.4,
+    "z": -1.3,
+    "why": "無鼓，模組合成器厚 drone，荒蕪冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/958538f8-3c28-4108-9c48-eb9b3a563ed3",
+    "https://coverartarchive.org/release-group/958538f8-3c28-4108-9c48-eb9b3a563ed3/front-500",
+    "https://cryochamber.bandcamp.com/album/ruins"
+   ],
+   "mbRgMbid": "958538f8-3c28-4108-9c48-eb9b3a563ed3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm/noise。"
+  },
+  {
+   "artist": "Eximia",
+   "album": "Visitors",
+   "year": 2018,
+   "label": "Cryo Chamber",
+   "country": "sk",
+   "faction": "cryo-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "斯洛伐克 Dominik Ragančík 的 Eximia 在 Cryo Chamber 的外星入侵題材作，文案明說靠氛圍而非和聲撐場；聲響設計＋田野錄音的暗黑 drone，旋律不明、冷而下壓。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -1.5,
+    "why": "無鼓無和聲，聲響設計 drone，冷硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/20720c2e-8221-423b-bf9d-d9fa84b8b34c",
+    "https://coverartarchive.org/release-group/20720c2e-8221-423b-bf9d-d9fa84b8b34c/front-500",
+    "https://cryochamber.bandcamp.com/album/visitors",
+    "https://www.discogs.com/release/11810538"
+   ],
+   "mbRgMbid": "20720c2e-8221-423b-bf9d-d9fa84b8b34c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；題材為入侵，研究層可核有無驚嚇音效。"
+  },
+  {
+   "artist": "Sjellos",
+   "album": "Transmission Lost",
+   "year": 2013,
+   "label": "Cryo Chamber",
+   "country": "de",
+   "faction": "cryo-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "德國 Sjellos 的 Cryo Chamber 首作（《Lifeless Ground》已在池落頹靡）：腐朽太空船走廊、異星機械嗡鳴與荒棄神殿，工業暗黑 drone，陰冷下壓。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.5,
+    "z": -1.5,
+    "why": "無鼓，機械嗡鳴與引擎低頻 drone，陰森"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e35639ec-7f74-486a-958f-39ddedac623c",
+    "https://coverartarchive.org/release-group/e35639ec-7f74-486a-958f-39ddedac623c/front-500",
+    "https://cryochamber.bandcamp.com/album/transmission-lost",
+    "https://www.discogs.com/release/4462286"
+   ],
+   "mbRgMbid": "e35639ec-7f74-486a-958f-39ddedac623c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；tag 有 horror/scary/space ambient，研究層可核驚嚇段。"
+  },
+  {
+   "artist": "Aegri Somnia",
+   "album": "Nusquam",
+   "year": 2020,
+   "label": "Cryo Chamber",
+   "country": "hr",
+   "faction": "cryo-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "克羅埃西亞 Jurica Santek 的 Aegri Somnia 第三張 Cryo Chamber 作（前兩張已在池落頹靡），超人類主義題材；文案寫 dark、layered、drone-heavy，微聲響與電子類比質地，幽閉下沉。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.5,
+    "z": -1.5,
+    "why": "無鼓，層疊重 drone 與微聲響，機械冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/62587717-25c6-4287-acae-a22130b43ae1",
+    "https://coverartarchive.org/release-group/62587717-25c6-4287-acae-a22130b43ae1/front-500",
+    "https://cryochamber.bandcamp.com/album/nusquam"
+   ],
+   "mbRgMbid": "62587717-25c6-4287-acae-a22130b43ae1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm/noise。"
+  },
+  {
+   "artist": "Ager Sonus",
+   "album": "Niflheim",
+   "year": 2021,
+   "label": "Cryo Chamber",
+   "country": "de",
+   "faction": "cryo-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Thomas Langewehr 的 Ager Sonus（《Necropolis》已在池）以北歐冥界為題：公元 800 年戰場的冷雨、泥濘與濃霧，暗黑 drone＋田野錄音，冷濕下沉。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.4,
+    "z": -1.2,
+    "why": "無鼓，冷雨田野錄音與霧狀 drone，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/602dd2de-b5d9-4606-9f8e-60ca2b3a77ff",
+    "https://coverartarchive.org/release-group/602dd2de-b5d9-4606-9f8e-60ca2b3a77ff/front-500",
+    "https://cryochamber.bandcamp.com/album/niflheim"
+   ],
+   "mbRgMbid": "602dd2de-b5d9-4606-9f8e-60ca2b3a77ff",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；推薦語有 dreamy soundtracks，戰場題材研究層宜核有無戰鼓。同藝人《Book of the Black Earth》曾被汰。"
+  },
+  {
+   "artist": "Hoshin",
+   "album": "Path of Dissolutions",
+   "year": 2016,
+   "label": "Cryo Chamber",
+   "country": "",
+   "faction": "cryo-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Hoshin（又名 Esylt）的 Cryo Chamber 作，森林與古寺田野錄音混機械質地，文案稱 calming dark ambient、帶恐懼與衰朽的神祕感，被安撫往下沉。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.2,
+    "z": -1.1,
+    "why": "無鼓，古寺田野錄音與機械 drone，幽冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/46f697d6-060c-47b9-818b-2549839435bb",
+    "https://coverartarchive.org/release-group/46f697d6-060c-47b9-818b-2549839435bb/front-500",
+    "https://cryochamber.bandcamp.com/album/path-of-dissolutions",
+    "https://www.discogs.com/release/9169140"
+   ],
+   "mbRgMbid": "46f697d6-060c-47b9-818b-2549839435bb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；tag 有 lowercase，研究層可核質地是否偏薄（y 風險）。"
+  },
+  {
+   "artist": "protoU",
+   "album": "Memory Alpha",
+   "year": 2022,
+   "label": "Cryo Chamber",
+   "country": "ua",
+   "faction": "cryo-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "烏克蘭 protoU（Sasha Puzan，《Khmaoch》已在池）的科幻暗黑作，文案寫層疊 drone、深沉低頻轟鳴與細微聲響，dreamlike 而 eerie，往下壓、落頹靡。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.5,
+    "z": -1.2,
+    "why": "無鼓，層疊 drone＋深低頻轟鳴，詭冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ed4cda10-27aa-4226-95e4-a0531345cdb5",
+    "https://coverartarchive.org/release-group/ed4cda10-27aa-4226-95e4-a0531345cdb5/front-500",
+    "https://cryochamber.bandcamp.com/album/memory-alpha"
+   ],
+   "mbRgMbid": "ed4cda10-27aa-4226-95e4-a0531345cdb5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；推薦語有 spacey、ethereal，研究層可核色溫是否偏中性；同藝人《Lost Here》曾被汰。"
+  },
+  {
+   "artist": "Netherworld",
+   "album": "Algida Bellezza",
+   "year": 2019,
+   "label": "Glacial Movements",
+   "country": "it",
+   "faction": "isolationist",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Glacial Movements 主理人 Alessandro Tedeschi 的 Netherworld（池中三張落頹靡）：五段夜間以單一樂器寫成的極地 drone，曲名皆北極動物拉丁學名，冰冷包覆下沉。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "無鼓，單一樂器長音 drone，極地冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/13516768-308f-45a6-9373-dd824f7668d2",
+    "https://coverartarchive.org/release-group/13516768-308f-45a6-9373-dd824f7668d2/front-500",
+    "https://glacialmovements.bandcamp.com/album/algida-bellezza"
+   ],
+   "mbRgMbid": "13516768-308f-45a6-9373-dd824f7668d2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；文案說是獻給新生女兒，情感溫度研究層可核色溫。"
+  },
+  {
+   "artist": "Yair Elazar Glotman",
+   "album": "Northern Gulfs",
+   "year": 2014,
+   "label": "Glacial Movements",
+   "country": "il",
+   "faction": "isolationist",
+   "genres": [
+    "electronic"
+   ],
+   "why": "柏林聲音藝術家 Glotman 的北極水域電聲航行，數位處理、類比電子、原聲樂器與實地錄音交疊成冰海 drone，isolationist 式冷而厚。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -1.4,
+    "why": "無鼓，電聲處理的冰海低頻 drone，冷硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0d617055-7a15-4e66-907e-5d6461185389",
+    "https://coverartarchive.org/release-group/0d617055-7a15-4e66-907e-5d6461185389/front-500",
+    "https://glacialmovements.bandcamp.com/album/northern-gulfs"
+   ],
+   "mbRgMbid": "0d617055-7a15-4e66-907e-5d6461185389",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；廠牌通用 tag 含 techno（非本張描述），研究層可核。"
+  },
+  {
+   "artist": "Lia Bosch",
+   "album": "Polar Code",
+   "year": 2024,
+   "label": "Glacial Movements",
+   "country": "",
+   "faction": "isolationist",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Lia Bosch 的 Glacial Movements 首作，南極廢棄外星基地的故事＋影像＋聲音，極地暗黑 ambient，冷而孤絕。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.2,
+    "z": -1.3,
+    "why": "無鼓，南極冰原 drone，孤絕冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c77b2b58-b5fb-4351-bec5-a48f7716b58d",
+    "https://coverartarchive.org/release-group/c77b2b58-b5fb-4351-bec5-a48f7716b58d/front-500",
+    "https://glacialmovements.bandcamp.com/album/polar-code"
+   ],
+   "mbRgMbid": "c77b2b58-b5fb-4351-bec5-a48f7716b58d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：只寫故事，聲音描述薄；未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；「pulsating」只形容故事中的門。研究層宜找樂評核聲音。"
+  },
+  {
+   "artist": "Aware",
+   "album": "Requiem for a Dying Animal",
+   "year": 2023,
+   "label": "Glacial Movements",
+   "country": "at",
+   "faction": "isolationist",
+   "genres": [
+    "electronic"
+   ],
+   "why": "維也納 Alexander Glück 的 Aware 第二張 Glacial Movements 作，為垂死生靈而寫的安魂曲，冰冷極簡的暗黑 ambient drone，下沉。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.2,
+    "z": -1.1,
+    "why": "無鼓，冷寂 drone 長音，哀"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/35a606b1-2ee9-4f70-b6ee-b22b830f92cf",
+    "https://coverartarchive.org/release-group/35a606b1-2ee9-4f70-b6ee-b22b830f92cf/front-500",
+    "https://glacialmovements.bandcamp.com/album/requiem-for-a-dying-animal"
+   ],
+   "mbRgMbid": "35a606b1-2ee9-4f70-b6ee-b22b830f92cf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：只談理念（受苦能力），無聲音描述；未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm。聲音證據薄，研究層宜找樂評核 y／z。"
+  },
+  {
+   "artist": "Argyre Planitia",
+   "album": "Tenth Region of the Night",
+   "year": 2020,
+   "label": "Winter-Light",
+   "country": "de",
+   "faction": "winter-light",
+   "genres": [
+    "electronic"
+   ],
+   "why": "漢諾威 Stefan Voß 的 Argyre Planitia 在 Winter-Light 的作品，以埃及太陽神夜行冥界第十區為題的夜間夢境旅程，深 ambient drone，催眠下沉。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.3,
+    "z": -1.1,
+    "why": "無鼓，夜行冥界的深 drone，幽暗"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/620adf88-f30a-47f0-98d4-efb9f9438a86",
+    "https://coverartarchive.org/release-group/620adf88-f30a-47f0-98d4-efb9f9438a86/front-500",
+    "https://winter-light.bandcamp.com/album/tenth-region-of-the-night"
+   ],
+   "mbRgMbid": "620adf88-f30a-47f0-98d4-efb9f9438a86",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：只寫神話與夢境，未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；聲音證據薄。注意同藝人《The Great Dark Spot》文案寫 atmospheric percussion（未提名），研究層宜核本張有無打擊。"
+  },
+  {
+   "artist": "Nox",
+   "album": "Opus Unending",
+   "year": 2020,
+   "label": "Winter-Light",
+   "country": "hr",
+   "faction": "winter-light",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Aegri Somnia 的 Jurica Santek 另以 Nox 名義在 Winter-Light 的首作：傳統暗黑 ambient，低沉深音、工業與恐怖質地、降調 lo-fi，冥想而不安，厚重下壓。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.6,
+    "z": -1.6,
+    "why": "無鼓，降調低頻 drone 與工業紋理，陰森"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0f5b7912-fb4d-472d-b4cf-bd0af3e7795e",
+    "https://coverartarchive.org/release-group/0f5b7912-fb4d-472d-b4cf-bd0af3e7795e/front-500",
+    "https://winter-light.bandcamp.com/album/opus-unending"
+   ],
+   "mbRgMbid": "0f5b7912-fb4d-472d-b4cf-bd0af3e7795e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm/harsh；自述傾向早期 death industrial，研究層宜核是否有刺耳段。續作《Abyssal Codex》文案有 harsh sounds，未提名。"
+  },
+  {
+   "artist": "Kloob & Onasander",
+   "album": "Mundus Patet",
+   "year": 2020,
+   "label": "Winter-Light",
+   "country": "",
+   "faction": "winter-light",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Dani Kloob 與 Maurizio Landini（Onasander）以古羅馬開冥界之門的 Mundus Patet 儀式為題，暗黑 ambience 與 drone 質地，冷而下沉。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "無鼓，冥界儀式感 drone 與氛圍質地，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4d0b3993-df7f-4341-b160-4906b2d8786a",
+    "https://coverartarchive.org/release-group/4d0b3993-df7f-4341-b160-4906b2d8786a/front-500",
+    "https://winter-light.bandcamp.com/album/mundus-patet"
+   ],
+   "mbRgMbid": "4d0b3993-df7f-4341-b160-4906b2d8786a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；聲音描述薄，研究層可找樂評核。"
+  },
+  {
+   "artist": "Seetyca",
+   "album": "Nemeton",
+   "year": 2015,
+   "label": "Winter-Light",
+   "country": "",
+   "faction": "winter-light",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Seetyca 在 Winter-Light 的 lo-fi 暗黑 ambient，以凱爾特聖林為題，六首以濃密聲層包住聽者，不安而下沉。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.5,
+    "z": -0.9,
+    "why": "無鼓，濃密 lo-fi drone 層，森林陰影"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2893f61c-cdd4-4998-8af1-65d5ed1bd4fa",
+    "https://coverartarchive.org/release-group/2893f61c-cdd4-4998-8af1-65d5ed1bd4fa/front-500",
+    "https://winter-light.bandcamp.com/album/nemeton"
+   ],
+   "mbRgMbid": "2893f61c-cdd4-4998-8af1-65d5ed1bd4fa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：dense layers of sound；未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；文案有 wonder、longing，研究層可核色溫。同藝人《Winterlicht》有 ice piano 與人聲，未提名。"
+  },
+  {
+   "artist": "Inade",
+   "album": "The Incarnation of the Solar Architects",
+   "year": 2009,
+   "label": "Loki Foundation",
+   "country": "de",
+   "faction": "cyclic-loki",
+   "genres": [
+    "electronic"
+   ],
+   "why": "德國 Inade（池中《Aldebaran》等三張落頹靡）2009 年 Loki Foundation 作，文案寫探入隱匿的暗影世界、把聽者拉進黑暗、不安轉為敬畏，深沉宇宙 drone 下壓。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.6,
+    "z": -1.4,
+    "why": "無鼓，巨大低頻 drone 與殘響，陰冷敬畏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7b6b9f62-7d9e-4d5e-a25a-d5ff04c3482c",
+    "https://coverartarchive.org/release-group/7b6b9f62-7d9e-4d5e-a25a-d5ff04c3482c/front-500",
+    "https://loki-found.bandcamp.com/album/the-incarnation-of-the-solar-architects",
+    "https://www.discogs.com/release/1794089"
+   ],
+   "mbRgMbid": "7b6b9f62-7d9e-4d5e-a25a-d5ff04c3482c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；tag 的 noise 是 Loki 全目錄通用 tag。同藝人《The Nine Colours of the Threshold》曾因 industrial／noise 標籤＋證據薄被汰，研究層宜核。"
+  },
+  {
+   "artist": "Tho-So-Aa",
+   "album": "Epoch, Part 1",
+   "year": 1996,
+   "label": "Art Konkret",
+   "country": "de",
+   "faction": "cyclic-loki",
+   "genres": [
+    "electronic"
+   ],
+   "why": "德國 Tho-So-Aa 1996 年的深 ambient 老盤（2026 Loki Foundation 重發），文案稱緩慢、堅忍、磁帶霧般的 drone，濃密、地底、克制，壓人下沉的頹靡型。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.6,
+    "z": -1.3,
+    "why": "無鼓，磁帶霧般濃密地底 drone，克制陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/35c70421-f36f-47a5-8425-e3bd4a6fd61e",
+    "https://coverartarchive.org/release-group/35c70421-f36f-47a5-8425-e3bd4a6fd61e/front-500",
+    "https://loki-found.bandcamp.com/album/epoch-part-one",
+    "https://www.discogs.com/release/315413"
+   ],
+   "mbRgMbid": "35c70421-f36f-47a5-8425-e3bd4a6fd61e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案（loki-found 重發頁）：slow, stoic, dense, subterranean, tape-like haze；未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；noise 僅 Loki 通用 tag。首發廠牌依 MB 為 Art Konkret。"
+  },
+  {
+   "artist": "raison d’être",
+   "album": "Cambium",
+   "year": 2025,
+   "label": "Cyclic Law",
+   "country": "se",
+   "faction": "main-scene",
+   "genres": [
+    "electronic"
+   ],
+   "why": "raison d'être（Peter Andersson，池中十餘張落頹靡）為法國畫家 Nihil 畫冊《Ascend》作的 62 分鐘配樂，神話、創世與苦難超越的循環，典型 raison d'être 教堂殘響 drone，下沉。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.6,
+    "z": -1.2,
+    "why": "無鼓，大殘響 drone 與低鳴，莊嚴陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3e5e5dca-0d43-4355-b43b-ab9cb047173a",
+    "https://coverartarchive.org/release-group/3e5e5dca-0d43-4355-b43b-ab9cb047173a/front-500",
+    "https://cycliclaw.bandcamp.com/album/cambium",
+    "https://www.discogs.com/release/33363869"
+   ],
+   "mbRgMbid": "3e5e5dca-0d43-4355-b43b-ab9cb047173a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；Bandcamp 掛名 raison d'être & Nihil、MB 只掛 raison d’être（照 MB）。屬畫冊配套正規全長，研究層可核 releaseException。"
+  },
+  {
+   "artist": "Maeror Tri",
+   "album": "Venenum",
+   "year": 1992,
+   "label": "Audiofile Tapes",
+   "country": "de",
+   "faction": "cyclic-loki",
+   "genres": [
+    "electronic"
+   ],
+   "why": "德國 drone 三人組 Maeror Tri（《Myein》已在池）1989–91 錄、1992 卡帶首發的平靜類比 drone，後 Infinite Fog 重發；吉他迴授化成的長音霧，催眠下沉。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.4,
+    "z": -1.0,
+    "why": "無鼓，類比吉他迴授長 drone，霧冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/be3bcd1f-a288-390f-a9be-19a1a11f101d",
+    "https://coverartarchive.org/release-group/be3bcd1f-a288-390f-a9be-19a1a11f101d/front-500",
+    "https://infinitefog.bandcamp.com/album/maeror-tri-venenum",
+    "https://www.discogs.com/release/493412"
+   ],
+   "mbRgMbid": "be3bcd1f-a288-390f-a9be-19a1a11f101d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案（infinitefog 重發頁）：calm analog drone；未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm/noise。同藝人《Hypnobasia》曾被汰、《The Beauty of Sadness》文案自稱 melodic（未提名），研究層宜核色溫。首發 1992 卡帶。"
+  },
+  {
+   "artist": "Stuzha",
+   "album": "Butugichag",
+   "year": 2015,
+   "label": "Infinite Fog Productions",
+   "country": "",
+   "faction": "isolationist",
+   "genres": [
+    "electronic"
+   ],
+   "why": "西伯利亞 cold ambient 計畫 Stuzha 第二張，以科雷馬古拉格勞改營的一天為題，西伯利亞實地錄音＋冷 drone，酷寒下壓、落頹靡。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.4,
+    "z": -1.6,
+    "why": "無鼓，西伯利亞風雪田野錄音與冷 drone，酷寒"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/703764d7-a8b9-41e1-995c-49c43663ebce",
+    "https://coverartarchive.org/release-group/703764d7-a8b9-41e1-995c-49c43663ebce/front-500",
+    "https://algolstuzha.bandcamp.com/album/butugichag",
+    "https://www.discogs.com/release/6547694"
+   ],
+   "mbRgMbid": "703764d7-a8b9-41e1-995c-49c43663ebce",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案（algolstuzha 頁，文案被截斷）：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；研究層可補讀全文。"
+  },
+  {
+   "artist": "Frozen Thoughts",
+   "album": "Calm Before the Storm",
+   "year": 2013,
+   "label": "Glacial Movements",
+   "country": "",
+   "faction": "isolationist",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Frozen Thoughts（Petar Sakic）在 Glacial Movements 的極地作，實錄雪、冰、風聲與厚合成器墊交疊，北極光與永凍冰的 isolationist drone，冷而包覆。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.3,
+    "z": -1.0,
+    "why": "無鼓，冰風田野錄音＋厚合成器墊，極地冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fb4b0920-f424-41f2-993a-f78da5a47326",
+    "https://glacialmovements.bandcamp.com/album/calm-before-the-storm",
+    "https://www.discogs.com/release/4785342"
+   ],
+   "mbRgMbid": "fb4b0920-f424-41f2-993a-f78da5a47326",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；文案有 lush synth textures，研究層可核是否旋律化、色溫偏中性。"
+  },
+  {
+   "artist": "Monocube",
+   "album": "Substratum",
+   "year": 2019,
+   "label": "Cyclic Law",
+   "country": "ua",
+   "faction": "cyclic-loki",
+   "genres": [
+    "electronic"
+   ],
+   "why": "烏克蘭 Monocube 與 Malignant 合發的 Cyclic Law 作，八首長段以模組合成器與弦樂器鋪開廣闊暗黑地景，Antti Litmanen、Frédéric Arbour 參與、James Plotkin 母帶，厚重下沉。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.5,
+    "z": -1.3,
+    "why": "無鼓，模組合成器長 drone＋弦擦紋理，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/26417db2-2341-473e-91f7-9c9ae8d35dab",
+    "https://coverartarchive.org/release-group/26417db2-2341-473e-91f7-9c9ae8d35dab/front-500",
+    "https://cycliclaw.bandcamp.com/album/substratum",
+    "https://malignantrecs.bandcamp.com/album/substratum"
+   ],
+   "mbRgMbid": "26417db2-2341-473e-91f7-9c9ae8d35dab",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Cyclic Law Bandcamp 文案：未見 drums/percussion/beats/人聲/spoken word/warm；有 stringed instruments（未點名領奏），研究層宜核是否有旋律弦樂。前作《The Rituals》文案有 tribal undertones、elegiac melody（未提名）。"
+  },
+  {
+   "artist": "Lull",
+   "album": "That Space Somewhere",
+   "year": 2022,
+   "label": "Cold Spring",
+   "country": "gb",
+   "faction": "isolationist",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Mick Harris 的 Lull 睽違 14 年新作（池中《Cold Summer》《Like a Slow River》已落頹靡），Cold Spring 文案稱其為無拍 isolationist 暗黑 ambient 先驅，封城期間在河畔所得的冥想漂流 drone，往下沉。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.5,
+    "z": -1.2,
+    "why": "無鼓，低頻漂流 drone，isolationist 冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/35dbcf58-97d7-4f1c-ae47-2d76654ada37",
+    "https://coverartarchive.org/release-group/35dbcf58-97d7-4f1c-ae47-2d76654ada37/front-500",
+    "https://coldspring.bandcamp.com/album/that-space-somewhere-csr321cd",
+    "https://www.discogs.com/release/25376470"
+   ],
+   "mbRgMbid": "35dbcf58-97d7-4f1c-ae47-2d76654ada37",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Cold Spring Bandcamp 文案：beats 只出現在 without beats；未見 percussion/旋律樂器/人聲/spoken word/warm/noise。"
+  },
+  {
+   "artist": "Llyn Y Cwn",
+   "album": "Dinorwic",
+   "year": 2020,
+   "label": "Cold Spring",
+   "country": "gb",
+   "faction": "isolationist",
+   "genres": [
+    "electronic"
+   ],
+   "why": "威爾斯 Ben Powell 的 Llyn Y Cwn，全以 Snowdonia 板岩礦場內部田野錄音構成，曲名即礦區地名，回音岩室、落石與通風井裡水電站的低鳴，冷硬下壓。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.4,
+    "z": -1.4,
+    "why": "無鼓，礦坑回音與水電站低鳴，岩石冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3124d5cd-4cb0-43d2-9ca8-6208f83e6aa3",
+    "https://coverartarchive.org/release-group/3124d5cd-4cb0-43d2-9ca8-6208f83e6aa3/front-500",
+    "https://llynycwn.bandcamp.com/album/dinorwic",
+    "https://www.discogs.com/release/15529124"
+   ],
+   "mbRgMbid": "3124d5cd-4cb0-43d2-9ca8-6208f83e6aa3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm；樂評一句 buzzing noises（非噪牆）。"
+  },
+  {
+   "artist": "Llyn Y Cwn",
+   "album": "Twll Du",
+   "year": 2019,
+   "label": "Cold Spring",
+   "country": "gb",
+   "faction": "isolationist",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Llyn Y Cwn 首張，以 Cwm Idwal 冰斗各處為曲名的田野錄音 drone 景，文案說用意是帶聽者入深眠，被安撫往下沉、冷濕山谷。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.3,
+    "z": -1.1,
+    "why": "無鼓，山谷田野錄音與 drone，濕冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8778d24b-02f1-4aa2-8196-76a42f7fbf51",
+    "https://coverartarchive.org/release-group/8778d24b-02f1-4aa2-8196-76a42f7fbf51/front-500",
+    "https://llynycwn.bandcamp.com/album/twll-du",
+    "https://www.discogs.com/release/13742585"
+   ],
+   "mbRgMbid": "8778d24b-02f1-4aa2-8196-76a42f7fbf51",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm/noise。"
+  },
+  {
+   "artist": "Llyn Y Cwn",
+   "album": "Megaliths",
+   "year": 2024,
+   "label": "Cold Spring",
+   "country": "gb",
+   "faction": "isolationist",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Llyn Y Cwn 多年在英國巨石陣與墓室實地錄音而成，一曲一遺址，從狹窄墓室走到開闊石圈，儀式而陰森的暗黑 drone。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.4,
+    "z": -1.3,
+    "why": "無鼓，墓室回聲田野錄音與 drone，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bafc206e-3591-4982-b34b-2bd48726359b",
+    "https://coverartarchive.org/release-group/bafc206e-3591-4982-b34b-2bd48726359b/front-500",
+    "https://coldspring.bandcamp.com/album/megaliths-csr334cd",
+    "https://llynycwn.bandcamp.com/album/megaliths"
+   ],
+   "mbRgMbid": "bafc206e-3591-4982-b34b-2bd48726359b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Cold Spring Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/spoken word/warm/noise；樂評引語 voices of ghosts 為比喻。注意另有《Megaliths In Dub》是不同盤，勿混。"
+  },
+  {
+   "artist": "Parhelion",
+   "album": "Midnight Sun",
+   "year": 2010,
+   "label": "Cyclic Law",
+   "country": "ca",
+   "faction": "isolationist",
+   "genres": [
+    "electronic"
+   ],
+   "why": "加拿大 Parhelion 的 Cyclic Law 首張全長，以北極地理與酷寒為題；Connexion Bizarre 稱其為最好的 arctic ambient 之一，Musique Machine 說幾乎沒有旋律，數位合成器＋吉他與拾得音的冷 drone。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.4,
+    "z": -1.4,
+    "why": "無鼓，旋律缺席的極地 drone，酷寒"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/111c89a4-d1db-4c5a-b27c-25363b1d24fd",
+    "https://coverartarchive.org/release-group/111c89a4-d1db-4c5a-b27c-25363b1d24fd/front-500",
+    "https://www.discogs.com/release/2622784",
+    "https://www.musiquemachine.com/reviews/parhelion-midnight-sun-3011",
+    "https://www.connexionbizarre.net/?p=5988"
+   ],
+   "mbRgMbid": "111c89a4-d1db-4c5a-b27c-25363b1d24fd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀樂評（Musique Machine 全文；WebSearch 摘要含 Fluid Radio、Hypnagogue）：Musique Machine 無鼓／人聲／暖；Fluid Radio 提到 wind-blasted noise 與 mournful musical phrasing、Hypnagogue 說開場突兀，研究層宜核刺耳與旋律程度。Bandcamp 無文案。本作為自發 CDr《Odes to a Barren Land》重製改名。"
+  },
+  {
+   "artist": "Allseits",
+   "album": "Hel",
+   "year": 2009,
+   "label": "Cyclic Law",
+   "country": "de",
+   "faction": "cyclic-loki",
+   "genres": [
+    "electronic"
+   ],
+   "why": "德國 Nina Kernicke 的 Allseits 在 Cyclic Law 的首張，以北歐冥界 Hel 為題，Discogs 風格 Drone／Dark Ambient；樂評說是 44 分鐘陰暗 drone、沒有節奏性音效，壓人下沉。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.5,
+    "z": -1.3,
+    "why": "無鼓，陰暗長 drone，冥界冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cba1946e-6714-4291-a06a-81453770def3",
+    "https://coverartarchive.org/release-group/cba1946e-6714-4291-a06a-81453770def3/front-500",
+    "https://www.discogs.com/release/2053679",
+    "https://www.connexionbizarre.net/?p=3415",
+    "https://side-line.com/allseits-finally-returns-with-new-album-chimare-6-long-years-after-hel"
+   ],
+   "mbRgMbid": "cba1946e-6714-4291-a06a-81453770def3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Bandcamp 無文案；靠 WebSearch 摘要讀到 Connexion Bizarre 的《Hel》樂評（dark droning ambient、lacks rhythmic sound effects），原頁 DNS 失敗未能直讀，研究層宜補讀。後作《Chimäre》樂評有 deep pulses、brightness（未提名）。"
+  },
+  {
+   "artist": "Dronny Darko",
+   "album": "Origin",
+   "year": 2020,
+   "label": "Cryo Chamber",
+   "country": "ua",
+   "faction": "cryo-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Dronny Darko（Oleg Puzan，池中《Outer Tehom》等三張落頹靡）聲響設計三部曲終章：三日紅天下肉質子宮般設施裡的異形甦醒，暗黑極簡 drone，陰森下壓。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.3,
+    "z": -1.4,
+    "why": "無鼓，肉質設施般的低頻 drone 與聲響設計，陰森"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/209abb09-7aeb-4bd6-8157-93cf8a9dcb29",
+    "https://coverartarchive.org/release-group/209abb09-7aeb-4bd6-8157-93cf8a9dcb29/front-500",
+    "https://cryochamber.bandcamp.com/album/origin"
+   ],
+   "mbRgMbid": "209abb09-7aeb-4bd6-8157-93cf8a9dcb29",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "已讀 Bandcamp 文案：未見 drums/percussion/beats/旋律樂器/人聲/spoken word/warm/noise；有 pulsating 一語。三部曲前作《Abduction》曾因少 drone、偏 lowercase（判輕風險）被汰，研究層宜核本張 y。"
+  }
+ ],
+ "notes": [
+  "交 52 張（未達 54，照實交、不湊數）。全部 MB 釘住（release-group primary-type=Album、無 secondary type），0 張人工身分；封面：51 張 CAA release-group front-500 HEAD 通過，Frozen Thoughts《Calm Before the Storm》CAA 回 500，改以 Bandcamp／Discogs 頁圖為封面來源（研究層請重試 CAA）。",
+  "去重：seed_cards（CUR-DISPATCH node 指令逐張 0）、origin 上 97 個 claude/* 分支的 55 版 seed（0 撞）、本地＋各分支全部 curation-*.json、desc-tools/batches/cards/*.json 全文正規化比對；盤名過短撞到別藝人的（Ruins、Visitors、Midnight Sun、Origin）逐一人工核過為不同藝人後放行。",
+  "文案：每張都用 WebFetch 讀過 Bandcamp 文案（廠牌頁或藝人頁），只有 Parhelion《Midnight Sun》、Allseits《Hel》沒 Bandcamp 文案，改讀樂評（Musique Machine 全文；Hel 只拿到 WebSearch 摘要，原頁 DNS 失敗）。每張的 uncertain 欄都寫了讀了哪份文案、有沒有看到 drums/percussion/beats/旋律樂器/人聲/spoken word/warm/noise。WebSearch 用 4 次。",
+  "讀了文案後因字眼不提名（約 60 張）：Dahlia's Tear《Through the Nightfall Grandeur》（人聲＋piano tag）、《Tales From a Feeble Dream》（melodies、airy）、《The Ashen Glow of Absence》（鋼琴重編）、《Dreamsphere》（口白）；Desiderii Marginis《Serenity / Rage》《Departed》（uplifting）《Procession》《Hypnosis》（無專輯文案）；Atrium Carceri《Forgotten Gods》（unholy rhythms＋人聲）、與 Herbst9《Ur djupan dal》（儀式鼓＋口白）、與 Kammarheit《Apparatus》（warm and dark、pulsating bass）；Nordvargr《Daath》（heavy percussion＋人聲）《Resignation IV》（techno beats）；NERATERRÆ、Between Voices、Ansiktsløs、Pascal Savy、Shinkiro、Caldon Glover 兩張、Stars Without Light、Taphephobia《Ghostwood》、Vestigial、Somnolent、Black Earth、Duga-1、Ugasanie《Call of the North》（人聲錄音）、Sabled Sun《2145》（人聲）、Wordclock、Keosz、Crypthios、In Quantum、protoU 與 Hilyard／Oljus（warm／鼓）、Dronny Darko & protoU《Metta》（warm）、Леса Листвы（beats、warm）、Cities Last Broadcast《The Umbra Report》（sings along）、Gdanian《Induction》（人聲口白）、Randal Collier-Ford《Advent》（鼓）、Shrine《Quintessence》（人聲）、Netherworld《Eternal Frost》（打擊＋人聲）《The Hermit》（人聲）、Galati（voice、bright）、Havenaire（piano）、Erik Levander《Jökel》（energetic）、Amphior（人聲）、Tropic of Coldness（人聲）、Stormloop（warm）、Sysselmann（鼓＋喉音＋warm）、RNGMNN 兩張（打擊）、Argyre Planitia《The Great Dark Spot》（打擊）、Nox《Abyssal Codex》（harsh）、Kloob 兩張（harsh／人聲）、Seetyca《Winterlicht》（ice piano＋人聲）、Circular、Fjernlys、S.E.T.I. 兩張（打擊／太空中性）、Maeror Tri《The Beauty of Sadness》（melodic）、Sigma Octantis、Hadewych、Monocube《The Rituals》（tribal、melody）、Hoarfrost vs IVL《Decline》（評論提 percussion／piano）、Fomalhaut :: NIMH、NIMH 兩張、Silent Universe《Immensity》與 Alphaxone & Dronny Darko、protoU《Echoes of the Future》《The Voice of Serenity》（太空 ambient 偏中性）。",
+  "策展層另擋：Ulf Söderberg 四張（Discogs 風格全標 Tribal，部落打擊風險，且無 Bandcamp 文案）；Herbst9、Phelios、Arktau Eos、Halo Manash（md28 已判部落鼓）；Mount Shrine、Dead Melodies、Ruptured World、Sphäre Sechs、Phonothek、Apocryphos、Peter Bjärgö、Alphaxone（md28／md29 研究層成批汰）。Godless Land（Dronny Darko）Bandcamp 404 未提。",
+  "主場景見底：點名的 Atrium Carceri／Dahlia's Tear／Desiderii Marginis 只剩 10 張乾淨盤；Cryo Chamber 二線與 Cyclic Law 文案多寫鼓／人聲／旋律，命中率約四成。擴寫用了 isolationist（Glacial Movements、Cold Spring 的 Lull／Llyn Y Cwn、Stuzha、Parhelion）與 Winter-Light 深 ambient。ritual／冷 neoclassical 那條沒有收到乾淨盤（文案幾乎都寫鼓或吟唱）。",
+  "研究層請優先核（聲音證據薄或有一個邊緣字眼）：Polar Code、Requiem for a Dying Animal、Mundus Patet、Tenth Region of the Night（只有故事／理念文案）；Vita Arkivet（聽眾留言 sharp metallic noise、chants）；Reliquiae（石擊血肉的悶響）；Opus Unending（自稱偏 death industrial）；Midnight Sun（wind-blasted noise、旋律句）；Hel（只有搜尋摘要）；Underwater Sleep Orchestra 兩張、Algida Bellezza、Nemeton、Depths of Finality、Venenum（色溫可能偏中性／暖）；Path of Dissolutions、Origin（y 可能偏輕）。",
+  "country 只填有把握的，其餘留空；genres 全 electronic（第二個不填）。Cambium 的 MB 掛名是 raison d’être（Bandcamp 寫 raison d'être & Nihil），照 MB。"
+ ]
+}

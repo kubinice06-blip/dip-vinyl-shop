@@ -85,10 +85,10 @@
 | 61 | md29 | dark ambient 第四波（Kammarheit、Northaunt、Sabled Sun、Council of Nine、Cryo Chamber 晚期新人；md28 收 34 仍高產） | ✅ 上線 33／落格 32 |
 | 62 | ml55 | 90s–00s 女聲 R&B ballad（Toni Braxton、SWV、Brandy、Monica、Faith Evans、Tamia 慢盤；ml49／ml52 路高產） | ✅ 上線 22／落格 22 |
 | 63 | mc41 | 電子原音／musique concrète 尖細那半（GRM 系 Parmegiani、Bayle、Xenakis 電子作、Dhomont；厚重往下壓的落頹靡） | ✅ 上線 11／落格 10 |
-| 64 | ml56 | 暖 trip-hop 女聲二線（Hooverphonic、Morcheeba 周邊、Lamb 慢盤、Mono、Olive、Laika；店主要多 downtempo） | 派→情緒薄格 ml56、mc42（第 13 輪） |
-| 65 | mc42 | 自由即興打擊／鼓獨奏（Milford Graves、Han Bennink、Paul Lovens、Tony Oxley、Sunny Murray、Paul Lytton） | 派→情緒薄格 ml56、mc42（第 13 輪） |
-| 66 | ml57 | neo-soul 女聲慢盤 2000s–10s（Jill Scott 慢盤、Goapele、Lalah Hathaway、Ledisi、Emily King 系；ml55 路高產） | 派→情緒薄格 ml57、md30（第 13 輪） |
-| 67 | md30 | dark ambient 第五波（md29 收 32 仍高產；Atrium Carceri 周邊、Dahlia's Tear、Desiderii Marginis、Ulf Söderberg 系） | 派→情緒薄格 ml57、md30（第 13 輪） |
+| 64 | ml56 | 暖 trip-hop 女聲二線（Hooverphonic、Morcheeba 周邊、Lamb 慢盤、Mono、Olive、Laika；店主要多 downtempo） | ✅ 上線 20／落格 19 |
+| 65 | mc42 | 自由即興打擊／鼓獨奏（Milford Graves、Han Bennink、Paul Lovens、Tony Oxley、Sunny Murray、Paul Lytton） | ✅ 上線 13／落格 13 |
+| 66 | ml57 | neo-soul 女聲慢盤 2000s–10s ＋ 女聲 quiet storm／roots dub／暖 downtempo（擴寫） | ✅ 上線 12／落格 12 |
+| 67 | md30 | dark ambient 第五波 ＋ isolationist／冷 neoclassical（擴寫） | ✅ 上線 28／落格 28 |
 | 68 | mc43 | 現代室內樂尖細二線（Kurtág、Holliger、Sciarrino、Rihm、Berio Sequenza、Saariaho 室內作；mc32 收 29） | ✅ 上線 36／落格 36 |
 | 69 | md31 | 冷 post-rock／器樂慢盤二線（Labradford、Bark Psychosis 慢盤、Rachel's 冷盤、Dirty Three 冷盤；md7 收 35） | ✅ 上線 26／落格 24 |
 
@@ -129,7 +129,7 @@
 | md27 | 20361 | 暗色現代古典慢板厚弦（Górecki、Kancheli、Vasks、Penderecki 慢作、Silvestrov 冷盤） | ✅ 上線 15／落格 13（2026-10-23；主場景池中全判輕，改收 Scelsi／低音弦 drone／drone 配樂；策展兩輪 47、研究汰 31；見底不再派） |
 | md28 | 20601 | dark ambient 第三波（Cryo Chamber、Cyclic Law、Glacial Movements、Malignant 二線藝人） | ✅ 上線 34／落格 34（2026-10-23；策展 54、主線汰 8、研究汰 12、補 3 再汰 3；文案寫拍點／溫暖／旋律樂器或人聲領奏的汰；Cryo Chamber 二線已挖到底，Cyclic Law／Old Europa Cafe 還有少量） |
 | md29 | 21161 | dark ambient 第四波（Kammarheit、Northaunt、Sabled Sun、Council of Nine、Cryo Chamber 晚期新人） | ✅ 上線 33／落格 32（2026-10-23；策展 58＋補 15、主線汰 15、研究汰 25；文案寫打擊／溫暖／旋律樂器或口白領奏的汰；Cryo Chamber 晚期與 Cyclic Law 二線已挖到底，主場景見底不再派；器樂 dub 擴寫只收 2 張、Jah Shaka 色溫判 0 落恍惚） |
-| md30 | 21561 | dark ambient 第五波（Atrium Carceri 周邊、Dahlia's Tear、Desiderii Marginis、Ulf Söderberg 系） | 派→情緒薄格 ml57、md30（第 13 輪） |
+| md30 | 21561 | dark ambient 第五波（Atrium Carceri 周邊、Dahlia's Tear、Desiderii Marginis、Ulf Söderberg 系） | ✅ 上線 28／落格 28（主場景大名見底，不再派） |
 | md31 | 21641 | 冷 post-rock／器樂慢盤二線（Labradford、Bark Psychosis 慢盤、Rachel's 冷盤、Dirty Three 冷盤） | ✅ 上線 26／落格 24（2026-10-24；策展 54＋補 25、主線汰 9＋5、研究汰 30＋9；冷 post-rock 二線樂團幾乎全有鼓組或人聲，只剩無鼓 drone／isolationist 能收；出格 Anjou 判輕、Windy & Carl 色溫 0；場景見底，不再派） |
 
 ## 冷冽 mc（躁＋輕＋冷；門檻 x ≥ 3.3、y ≤ +0.2、z ≤ −0.3）
@@ -179,7 +179,7 @@
 | mc39 | 20681 | 自由爵士管樂獨奏與二重奏（Braxton、Evan Parker、Roscoe Mitchell、Brötzmann、Wadada Leo Smith） | ✅ 上線 28／落格 24（2026-10-23；策展 54、研究汰 17：現場 5、留白判靜 7、疊錄／低音管判重 2、旋律／標準曲 3；出格 Brötzmann 獨奏 ×2 判重落暴躁、Butcher／Graewe 與 Rothenberg 單簧管獨奏判靜；主場景見底，不再派） |
 | mc40 | 21001 | 自由即興弦樂（Leroy Jenkins、Billy Bang 前衛期、Joëlle Léandre、Barry Guy 獨奏、Mat Maneri、Phil Wachsmann） | ✅ 上線 29／落格 28（2026-10-23；策展 51（擋現場 21）、主線挑 45、研究汰 16（借曲／藍調 5、稀疏長音 6、電聲厚重 5）；出格 August Steps 判靜；主場景見底，不再派） |
 | mc41 | 21081 | 電子原音／musique concrète 尖細那半（Parmegiani、Bayle、Xenakis 電子作、Dhomont） | ✅ 上線 11／落格 10（2026-10-23；策展 28（掃 empreintes 約 160 張）、主線汰 4、研究汰 13（飄浮長音 5、厚密噪音 3、聲音零來源 4、現場 1）；Stavropoulos 判靜落平靜；見底不再派） |
-| mc42 | 21401 | 自由即興打擊／鼓獨奏（Milford Graves、Han Bennink、Paul Lovens、Tony Oxley、Sunny Murray、Paul Lytton） | 派→情緒薄格 ml56、mc42（第 13 輪） |
+| mc42 | 21401 | 自由即興打擊／鼓獨奏（Milford Graves、Han Bennink、Paul Lovens、Tony Oxley、Sunny Murray、Paul Lytton） | ✅ 上線 13／落格 13（2026-10-24；策展 50（擋現場約 40）、主線汰 13、研究汰 24；長音冥想判靜、大鼓金屬／電子判重、Graves／Cyrille 手鼓與借曲判暖；穩收的是鼓＋尖細單一樂器乾二重奏與 Oxley／Turner／Lovens 系小編制；主場景見底不再派） |
 | mc43 | 21481 | 現代室內樂尖細二線（Kurtág、Holliger、Sciarrino、Rihm、Berio Sequenza、Saariaho 室內作） | ✅ 上線 36／落格 36（2026-10-24；策展 54＋補 12、主線汰 9＋7、研究汰 13＋1；稀疏極弱型、同作品池中已有、大編制、現場錄音汰；主場景見底，不再派） |
 
 ## 恍惚 ml（靜＋重＋暖；門檻 x ≤ 2.7、y ≥ +0.8、z ≥ +0.3）
@@ -243,5 +243,5 @@
 | ml53 | 20761 | 爵士人聲 torch song／深夜 ballad 二線（弦樂或厚編曲） | ✅ 上線 17／落格 17（2026-10-23；策展兩輪 28、研究汰 11（無殘響直錄、house 拍、原聲簡編制、trap、輕快 roots）；torch／with strings 池中全判輕，收 quiet storm 爵士靈魂與霧暖 alt R&B／日本 neo-soul；主場景見底，不再派） |
 | ml54 | 20841 | lo-fi／chillhop 第四波（Jazzinuf、Idealism、eevee、Sleepy Fish、韓國 lo-fi 二線） | ✅ 上線 22／落格 21（2026-10-23；策展 54、主線汰 19、研究汰 13；Sleepy Fish／Idealism／韓國 lo-fi 全是 EP 或已在池，主場景見底不再派；Lofi Records 乾淨鋼琴型 Bcalm《Elements》判輕落放鬆；dub 化擴寫只留 Pachyman 三張） |
 | ml55 | 20921 | 90s–00s 女聲 R&B ballad（Toni Braxton、SWV、Brandy、Monica、Faith Evans、Tamia 慢盤） | ✅ 上線 22／落格 22（2026-10-23；策展兩輪 44、主線汰 3（讓 ml53 一張）、研究汰 19（new jack／饒舌客串／舞曲 10、smooth jazz 2、翻唱、現場福音、EP、冷數位 2、場景不符 1）；主流頭牌池中判輕，見底不再派） |
-| ml56 | 21241 | 暖 trip-hop 女聲二線（Hooverphonic、Morcheeba 周邊、Lamb 慢盤、Mono、Olive、Laika） | 派→情緒薄格 ml56、mc42（第 13 輪） |
-| ml57 | 21321 | neo-soul 女聲慢盤 2000s–10s（Jill Scott 慢盤、Goapele、Lalah Hathaway、Ledisi、Emily King 系） | 派→情緒薄格 ml57、md30（第 13 輪） |
+| ml56 | 21241 | 暖 trip-hop 女聲二線（Hooverphonic、Morcheeba 周邊、Lamb 慢盤、Mono、Olive、Laika） | ✅ 上線 20／落格 19（2026-10-24；策展三輪 71、主線汰 22、研究汰 32；暖 trip-hop 女聲二線多歌曲型／jungle 拍／原聲化，Pork／Tru Thoughts 二線多 breaks／house；產量靠 Mad Professor《Dub Me Crazy》類比 dub 與 ambient dub；Peaking Lights《Clearvoiant》磁帶 drone 判冷落頹靡；不再派） |
+| ml57 | 21321 | neo-soul 女聲慢盤 2000s–10s（Jill Scott 慢盤、Goapele、Lalah Hathaway、Ledisi、Emily King 系） | ✅ 上線 12／落格 12（主場景見底，不再派） |

@@ -1,0 +1,876 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-ml57",
+ "batchNote": "薄細項策展線（add-20261023-ml57）",
+ "createdAt": "2026-10-23T23:45:24Z",
+ "albums": [
+  {
+   "artist": "KING",
+   "album": "We Are KING",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "033859a5-f8a7-4b82-8e6f-fd05f7d5e4e8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "neo-soul 女聲慢盤 2000s–10s 二線：洛杉磯 Strother 姊妹與 Anita Bias 的首張專輯，2010s 女聲 neo-soul 的夢幻慢盤代表；厚合成器墊、層層疊唱與慢拍，整張被一層暖霧包住｜⚠ 藝人名 KING 太短，池中多位藝人含 king 子字串（seed 去重 0），藝人介紹鍵與查詢別名請主線留意｜MB release-group 033859a5-f8a7-4b82-8e6f-fd05f7d5e4e8：title「We Are KING」、Album、first-release-date 2016-02-05、artist-credit「KING」。證據：https://musicbrainz.org/release-group/033859a5-f8a7-4b82-8e6f-fd05f7d5e4e8 https://archive.org/download/mbid-3f6180f3-e6e7-45c2-9e96-955a577672fc/mbid-3f6180f3-e6e7-45c2-9e96-955a577672fc-31116794413.jpg https://music.apple.com/us/album/we-are-king/1063030282 https://en.wikipedia.org/wiki/We_Are_King",
+    "queryAlias": "KING (band)"
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/033859a5-f8a7-4b82-8e6f-fd05f7d5e4e8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 28587,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 28587）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "雙胞胎姊妹把家當錄音室，首張花了四年。Amber 與 Paris Strother 這對雙胞胎，加上好友 Anita Bias，就是洛杉磯的 R&B 三人組 KING。2011 至 2015 年，三人在家中的 King Creative 錄音室錄完首張，Paris Strother 兼任製作、樂手與錄音。早年 EP 裡的三首以擴充混音版收進來，多層合成器墊在厚實的和聲底下。2016 年 2 月 5 日由自家廠牌推出後，它成了第一張入圍葛萊美最佳都會當代專輯的獨立發行作品。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/033859a5-f8a7-4b82-8e6f-fd05f7d5e4e8",
+     "https://en.wikipedia.org/wiki/We_Are_King",
+     "https://en.wikipedia.org/wiki/We_Are_King_(album)",
+     "https://www.kpbs.org/news/national/2016/01/27/review-king-we-are-king",
+     "https://www.spinmagazine.com/2016/02/review-king-we-are-king/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/72/ce/ad/72cead4f-fcff-ba35-0de1-b40ac327ed8f/mzaf_5355485387735082333.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "appleCollectionId": "1063030282",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1063030282「We Are KING《We Are King》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈The Right One〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Yuna",
+   "album": "Chapters",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "004122a1-5243-4e89-ac7f-7f0158efc457",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "neo-soul 女聲慢盤 2000s–10s 二線：馬來西亞歌手 Yuna 轉向 R&B 的 Verve 專輯，Robin Hannibal 等人製作；整張慢板、殘響與合成器墊厚，溫柔的女聲 neo-soul／alt R&B｜⚠ Usher、Jhené Aiko 客串皆為唱；DJ Premier 掛名一首（研究層核是否硬拍）、〈Crush〉中板｜MB release-group 004122a1-5243-4e89-ac7f-7f0158efc457：title「Chapters」、Album、first-release-date 2016-05-20、artist-credit「Yuna」。證據：https://musicbrainz.org/release-group/004122a1-5243-4e89-ac7f-7f0158efc457 https://archive.org/download/mbid-9545cebf-1cad-4fe0-a535-6f008206dec8/mbid-9545cebf-1cad-4fe0-a535-6f008206dec8-26823003721.jpg https://music.apple.com/us/album/chapters-deluxe/1440842183 https://en.wikipedia.org/wiki/Chapters_(Yuna_album)",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/004122a1-5243-4e89-ac7f-7f0158efc457/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 4024,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 4024）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Yuna 首度拿到金唱片，靠的是和 Usher 的合唱。靠 Myspace 在馬來西亞獨立圈走紅的 R&B 歌手 Yuna，2016 年 5 月 20 日在 Verve 推出《Chapters》。那首合唱是〈Crush〉，RIAA 的金唱片認證要到 2019 年 4 月才下來。製作交給 Fisticuffs 與 Rhye 成員 Robin Hannibal 等人分工。標準版收 10 首，每首都在 3 分 14 秒到 4 分 51 秒之間。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/004122a1-5243-4e89-ac7f-7f0158efc457",
+     "https://en.wikipedia.org/wiki/Yuna_(Malaysian_singer)",
+     "https://en.wikipedia.org/wiki/Chapters_(Yuna_album)",
+     "https://www.bostonglobe.com/arts/music/2016/05/18/album-review-yuna-chapters/J8DTmF5BtvyCJ671ImE69O/story.html"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5d/99/a3/5d99a361-3382-24a1-fec4-726969458732/mzaf_11311009223517273565.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "appleCollectionId": "1443108499",
+    "storefront": "MY",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple my 1443108499「Yuna《Chapters》」：Apple my 1443108499《Chapters》標準版 10 軌（豪華版 1440842183 多加收 DJ Premier 等 3 軌），取第 1 軌。，取第 1 軌〈Mannequin〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Adriana Evans",
+   "album": "Adriana Evans",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ee400b19-7bd3-3a65-9ece-c1c31d6377ac",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "neo-soul 女聲慢盤 2000s–10s 二線：Dred Scott 製作的首張，早期 neo-soul 女聲二線經典；鬆垮的嘻哈拍、Rhodes 與爵士和聲，慵懶溫熱｜⚠ 1997 略早於主場景年代；嘻哈鼓為底，研究層核是否有饒舌客串（Dred Scott 有一兩段）與快歌｜MB release-group ee400b19-7bd3-3a65-9ece-c1c31d6377ac：title「Adriana Evans」、Album、first-release-date 1997、artist-credit「Adriana Evans」。證據：https://musicbrainz.org/release-group/ee400b19-7bd3-3a65-9ece-c1c31d6377ac https://archive.org/download/mbid-27925a4d-1fdb-4050-9d43-e285792a30f6/mbid-27925a4d-1fdb-4050-9d43-e285792a30f6-31051722008.jpg",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ee400b19-7bd3-3a65-9ece-c1c31d6377ac/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 2683,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2683）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 2683），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "錄好的首作擱在 Capitol，轉到 Loud 才發行。母親是爵士歌手 Mary Stallings，生於舊金山的 Adriana Evans 在 1995 年與大學時認識的 Dred Scott 合寫錄成同名作，當時簽在 Capitol。Capitol 內部人事異動，改由 Loud Records 在 1997 年發行。整張由真人樂手錄成，Herman Jackson 彈 Fender Rhodes，兩首再加上十餘人的弦樂組。她的唱腔則帶著爵士味。",
+    "sourceUrls": [
+     "https://soultracks.com/artist/adriana_evans/",
+     "https://www.discogs.com/release/1570592-Adriana-Evans-Adriana-Evans",
+     "https://musicbrainz.org/release/27925a4d-1fdb-4050-9d43-e285792a30f6",
+     "https://en.wikipedia.org/wiki/Adriana_Evans",
+     "https://musicbrainz.org/release-group/ee400b19-7bd3-3a65-9ece-c1c31d6377ac"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "note": "Apple us／jp 以藝人搜尋只有《Nomadic Plus》《El Camino》等後作，1997 Loud Records 首作未上架。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Conya Doss",
+   "album": "Love Rain Down",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "bf891e97-cccf-30ff-8ff3-6ff65908c252",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "neo-soul 女聲慢盤 2000s–10s 二線：克里夫蘭獨立 neo-soul 歌手 Conya Doss 的第三張，地下 neo-soul 圈的慢歌代表；Rhodes、厚貝斯與溫熱人聲｜⚠ 獨立製作可能偏薄、y 貼 0.8，研究層核；年份 MB 2006-01-01 為佔位日｜MB release-group bf891e97-cccf-30ff-8ff3-6ff65908c252：title「Love Rain Down」、Album、first-release-date 2006-01-01、artist-credit「Conya Doss」。證據：https://musicbrainz.org/release-group/bf891e97-cccf-30ff-8ff3-6ff65908c252 https://archive.org/download/mbid-7b59fe30-587d-4522-b277-7636f67d72c8/mbid-7b59fe30-587d-4522-b277-7636f67d72c8-36753251781.jpg https://music.apple.com/us/album/love-rain-down/203949655",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bf891e97-cccf-30ff-8ff3-6ff65908c252/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 59711,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 59711）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "克里夫蘭的特教老師，也被叫作獨立靈魂樂的女王。Cleveland School of the Arts 1990 年的畢業生 Conya Doss，前作是 2004 年的《Just Because》，第三張《Love Rain Down》在 2006 年由 Conya Doss Songs 發行。〈Find a Way〉底下有竄動的貝斯線，她的唱法根在教會，卻不過度飆唱。慢板〈Sign〉則長 5 分 28 秒。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Conya_Doss",
+     "https://soultracks.com/?p=92102",
+     "https://musicbrainz.org/release-group/bf891e97-cccf-30ff-8ff3-6ff65908c252",
+     "https://www.clevescene.com/?p=230013",
+     "https://www.discogs.com/release/3628971-Conya-Doss-Love-Rain-Down"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e7/33/9e/e7339ea8-4337-b3c6-456b-0111ce8d2b4a/mzaf_9597655693790441202.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "appleCollectionId": "203949655",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 203949655「Conya Doss《Love Rain Down》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Tell Me Why〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Trina Broussard",
+   "album": "Same Girl",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "24063582-ceb2-3822-9919-ae276514b6be",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "neo-soul 女聲慢盤 2000s–10s 二線：Trina Broussard 的 Motown 時期專輯，女聲 neo-soul 二線；慢板居多、厚弦樂與溫熱人聲｜⚠ MB 無廠牌（Apple 題名 The Same Girl），廠牌待研究層核；製作是否偏亮、有無嘻哈拍待核｜MB release-group 24063582-ceb2-3822-9919-ae276514b6be：title「Same Girl」、Album、first-release-date 2004-06-22、artist-credit「Trina Broussard」。證據：https://musicbrainz.org/release-group/24063582-ceb2-3822-9919-ae276514b6be https://archive.org/download/mbid-5494f070-937c-4747-be3d-b0a52c21b7b3/mbid-5494f070-937c-4747-be3d-b0a52c21b7b3-34186208963.jpg https://music.apple.com/us/album/the-same-girl/1443568069",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2004,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/24063582-ceb2-3822-9919-ae276514b6be/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 5430,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 5430）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "四首交給牙買加班底演奏，另兩首配上弦樂。休士頓出生、在亞特蘭大替 Babyface 與 Toni Braxton 唱過和聲的 R&B 歌手 Trina Broussard，首張是 Motown 發的《Same Girl》，2004 年 6 月 22 日登場。那四首由 Commissioner Gordon 製作，吉他 Earl「Chinna」Smith、貝斯 Delroy Cooper、鼓 Astor Campbell。弦樂那兩首則由 Steve Harvey 編寫。",
+    "sourceUrls": [
+     "https://soultracks.com/?p=81914",
+     "https://soultracks.com/?p=66289",
+     "https://www.discogs.com/release/5357447-Trina-Broussard-Same-Girl",
+     "https://musicbrainz.org/release/5494f070-937c-4747-be3d-b0a52c21b7b3",
+     "https://musicbrainz.org/release-group/24063582-ceb2-3822-9919-ae276514b6be"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/59/cc/a059cc52-f7a0-ae3f-191f-915950f1fc88/mzaf_16160922481815346691.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "appleCollectionId": "1443568069",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1443568069「Trina Broussard《The Same Girl》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈These Are the Days〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Rachelle Ferrell",
+   "album": "Rachelle Ferrell",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "93906821-5f00-3889-9544-ea001b69a83c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "女聲 quiet storm／慢板抒情二線：爵士歌手 Rachelle Ferrell 的 R&B 首作，quiet storm 抒情代表（〈Nothing Has Ever Felt Like This〉〈'Til You Come Back to Me〉）；慢歌為主、合成器弦墊厚｜⚠ MB 首發 1990 為日版，維基與 Capitol 原版 1992，取 1992；USA Today 稱「fireside love songs」；90s 初數位製作有判輕風險｜MB release-group 93906821-5f00-3889-9544-ea001b69a83c：title「Rachelle Ferrell」、Album、first-release-date 1990、artist-credit「Rachelle Ferrell」。證據：https://musicbrainz.org/release-group/93906821-5f00-3889-9544-ea001b69a83c https://archive.org/download/mbid-b1d02059-8346-4ef6-b4ac-00da6a1defaf/mbid-b1d02059-8346-4ef6-b4ac-00da6a1defaf-6658185839.jpg https://music.apple.com/us/album/rachelle-ferrell/723652781 https://en.wikipedia.org/wiki/Rachelle_Ferrell_(album)",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/93906821-5f00-3889-9544-ea001b69a83c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 16594,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 16594）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "發行兩年後，它才爬上美國專輯榜。音域約六個八度、唱得上哨音區的 Rachelle Ferrell，是遊走靈魂與爵士之間的歌手，這張同名作是她在美國的第一張。它在 1992 年 9 月 12 日上市，到 1994 年才登上美國專輯榜第 161 名。主製作 George Duke 用帶爵士味的小編制，樂器清晰，卻不蓋過人聲。十三首多在 4 到 6 分半之間，〈Nothing Has Ever Felt Like This〉由 Will Downing 合唱。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Rachelle_Ferrell_(album)",
+     "https://en.wikipedia.org/wiki/First_Instrument",
+     "https://www.discogs.com/release/1617222",
+     "https://soulbounce.com/?p=9652",
+     "https://en.wikipedia.org/wiki/Rachelle_Ferrell",
+     "https://musicbrainz.org/release-group/93906821-5f00-3889-9544-ea001b69a83c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f8/4f/31/f84f3145-b239-e5a8-2153-f0f28a959f30/mzaf_4081959843216399090.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "appleCollectionId": "723652781",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 723652781「Rachelle Ferrell《Rachelle Ferrell》」：Apple us 723652781《Rachelle Ferrell》13 軌即 1992 Capitol 原盤曲序（MB 回查 0 命中是因 release-group 錯掛 1990 日版《First Instrument》的曲目），取慢歌第 6 軌。，取第 6 軌〈'Til You Come Back to Me〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dezarie",
+   "album": "FYA",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3b9abda7-c1e6-3418-b6ba-eb669f00c11c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "女聲 roots／dub 厚低頻慢盤：美屬維京群島 roots 女聲 Dezarie 的首張，Bambú Station／Midnite 圈 I Grade 出品；慢、催眠的 roots 拍，厚低頻與 dub 回聲｜⚠ Apple 查無，封面以 CAA；roots 色溫可能判 0.4–0.6（Groundation 先例 0.5），研究層核｜MB release-group 3b9abda7-c1e6-3418-b6ba-eb669f00c11c：title「FYA」、Album、first-release-date 2001、artist-credit「Dezarie」。證據：https://musicbrainz.org/release-group/3b9abda7-c1e6-3418-b6ba-eb669f00c11c https://archive.org/download/mbid-a88ee408-4df0-4b2d-b570-f136ce851178/mbid-a88ee408-4df0-4b2d-b570-f136ce851178-8420625965.jpg https://en.wikipedia.org/wiki/Dezarie",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3b9abda7-c1e6-3418-b6ba-eb669f00c11c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 9173,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 9173）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "接觸拉斯塔法里後，她才從 deejay 改成唱歌。Roots reggae 女歌手 Dezarie 來自美屬維京群島的聖克羅伊島，小學時唱的是福音。搬到亞特蘭大那幾年，她跟來自牙買加的 Jungle International 音響團混在一起，替他們錄 dub plate。回到聖克羅伊後，她與島上的 Midnite 圈子合作，2001 年在 I Grade Records 推出首張專輯《FYA》。CD 版最後一軌是〈Fya Dub〉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Dezarie",
+     "https://www.reggae.be/en/magazine/2026-07-14-dezarie-i-m-a-very-quiet-and-shy-person-i-don-t-li/",
+     "https://en.wikipedia.org/wiki/Midnite_(band)",
+     "https://www.discogs.com/release/2029329",
+     "https://legendaryreggae.com/2024/05/06/dezarie-live-tracks/",
+     "https://musicbrainz.org/release-group/3b9abda7-c1e6-3418-b6ba-eb669f00c11c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（partial）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "note": "Apple us 以藝人搜尋只有《Eaze the Pain》《The Fourth Book》《Guardian》等，2001 I Grade《FYA》未上架。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dezarie",
+   "album": "Eaze the Pain",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "92135c87-c18f-4d32-8bfc-4a8ce21db48e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "女聲 roots／dub 厚低頻慢盤：Dezarie 第三張，慢板 roots；厚貝斯、dub 化混音與長殘響，溫而沉｜策展無疑點｜MB release-group 92135c87-c18f-4d32-8bfc-4a8ce21db48e：title「Eaze the Pain」、Album、first-release-date 2008、artist-credit「Dezarie」。證據：https://musicbrainz.org/release-group/92135c87-c18f-4d32-8bfc-4a8ce21db48e https://archive.org/download/mbid-b1bd279b-2a4c-4cf3-ba3a-4aaf60d799b7/mbid-b1bd279b-2a4c-4cf3-ba3a-4aaf60d799b7-36940748709.jpg https://music.apple.com/us/album/eaze-the-pain/1508068263",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/92135c87-c18f-4d32-8bfc-4a8ce21db48e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 7921,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 7921）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "整張從演奏到混音，署名欄只留一人。那個人是 Midnite 的共同創辦人 Ron Benjamin，唱片則是 roots reggae 女歌手 Dezarie 的第三張專輯。錄音在聖克羅伊當地 ARL 錄音室完成，和聲由兩人同唱。Afrikan Roots Lab 於 2008 年 5 月 1 日讓它問世，開場〈Hail Jah〉長 6 分 05 秒，全盤約 54 分鐘。他的製作慣用雷鳴般的貝斯、飽滿的鍵盤，加上俐落的鼓。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3508350",
+     "https://legendaryreggae.com/2024/05/06/dezarie-live-tracks/",
+     "https://en.wikipedia.org/wiki/Midnite_(band)",
+     "https://musicbrainz.org/release-group/92135c87-c18f-4d32-8bfc-4a8ce21db48e",
+     "https://www.reggae.be/en/magazine/2026-07-14-dezarie-i-m-a-very-quiet-and-shy-person-i-don-t-li/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（partial）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/34/79/bf/3479bfbc-2d78-e24b-757f-7335c30612f4/mzaf_15947650111243327370.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "appleCollectionId": "1508068263",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1508068263「Dezarie《Eaze the Pain》」：曲目 11/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Hail Jah〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dezarie",
+   "album": "The Fourth Book",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "06aa69f4-b252-41e1-a42a-41d5cb0f2af0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "女聲 roots／dub 厚低頻慢盤：Dezarie 第四張，維京群島 roots 女聲；慢、厚、低頻主導的 one-drop，人聲暖｜策展無疑點｜MB release-group 06aa69f4-b252-41e1-a42a-41d5cb0f2af0：title「The Fourth Book」、Album、first-release-date 2010、artist-credit「Dezarie」。證據：https://musicbrainz.org/release-group/06aa69f4-b252-41e1-a42a-41d5cb0f2af0 https://archive.org/download/mbid-a86b87d2-8ad1-4342-b24b-8c038d3381e9/mbid-a86b87d2-8ad1-4342-b24b-8c038d3381e9-9864723034.jpg https://music.apple.com/us/album/the-fourth-book/1504533298",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/06aa69f4-b252-41e1-a42a-41d5cb0f2af0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 11634,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 11634）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Dezarie 說自己安靜害羞，歌詞則要人一聽就懂。她是美屬維京群島聖克羅伊島出身的 roots reggae 女歌手，前兩張作品都找當地樂團 Midnite 合作。後來受訪時她說，自己的歌詞要寫得比 Midnite 直接，讓聽的人立刻明白。《The Fourth Book》2010 年由島上的 Afrikan Roots Lab 發行，收錄十首。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Dezarie",
+     "https://www.discogs.com/release/2582198",
+     "https://en.wikipedia.org/wiki/Midnite_(band)",
+     "https://music.apple.com/us/album/the-fourth-book/1504533298",
+     "https://musicbrainz.org/release-group/06aa69f4-b252-41e1-a42a-41d5cb0f2af0",
+     "https://www.reggae.be/en/magazine/2026-07-14-dezarie-i-m-a-very-quiet-and-shy-person-i-don-t-li/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/18/0b/6d/180b6d22-fd1d-70ed-e92f-99489da9a4f6/mzaf_14285341596868756881.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "appleCollectionId": "1504533298",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1504533298「Dezarie《The Fourth Book》」：曲目 9/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Jah Know Better〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mo’Kalamity meets Sly & Robbie",
+   "album": "One Love Vibration",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "cf373083-f2f5-49a7-8c6d-0815ab1c2f00",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "女聲 roots／dub 厚低頻慢盤：法籍維德角女聲 Mo'Kalamity 與 Sly & Robbie 合作的 roots 盤；Sly & Robbie 厚低頻節奏組與 dub 混音，慢而暖｜⚠ MB 掛名「Mo’Kalamity meets Sly & Robbie」（彎引號），seed 藝人名請主線定；聲音無把握，研究層核｜MB release-group cf373083-f2f5-49a7-8c6d-0815ab1c2f00：title「One Love Vibration」、Album、first-release-date 2018-01-26、artist-credit「Mo’Kalamity meets Sly & Robbie」。證據：https://musicbrainz.org/release-group/cf373083-f2f5-49a7-8c6d-0815ab1c2f00 https://archive.org/download/mbid-93d72153-0ed9-447f-8593-1a4252cc6ed1/mbid-93d72153-0ed9-447f-8593-1a4252cc6ed1-44513097958.jpg https://music.apple.com/us/album/one-love-vibration-feat-sly-robbie/1695917297",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cf373083-f2f5-49a7-8c6d-0815ab1c2f00/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 4,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 4）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 4），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "只打算錄兩首，到了金斯敦卻錄成一整張。生於維德角聖地亞哥島、5 歲移居法國的雷鬼女歌手 Mo’Kalamity，2017 年主動聯絡 Sly & Robbie，那趟也是她第一次去牙買加。Sly Dunbar 打鼓、Robbie Shakespeare 彈貝斯，錄音與混音一個月內完成。原定的兩首錄成三首，又即興多出〈Strength of a Woman〉。她說節奏組跟著她的聲音與速度走。專輯 2018 年 1 月 26 日推出。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mo'Kalamity",
+     "https://pan-african-music.com/mokalamity-reine-africaine-du-reggae-roots-francais/",
+     "https://www.discogs.com/release/11750810",
+     "https://music.apple.com/us/album/one-love-vibration-feat-sly-robbie/1695917297",
+     "https://musicbrainz.org/release-group/cf373083-f2f5-49a7-8c6d-0815ab1c2f00"
+    ],
+    "note": "薄細項策展線卡牌版：研究（partial）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4a/89/52/4a8952df-2170-75e6-2a7a-f189e2df2a42/mzaf_7904730629417331946.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "appleCollectionId": "1695917297",
+    "storefront": "FR",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple fr 1695917297「Mo'kalamity《One Love Vibration (feat. Sly & Robbie)》」：曲目 8/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Kingdoms of Africa (feat. Sly & Robbie)〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "N’Dambi",
+   "album": "Little Lost Girls Blues",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e1ea16d5-b308-3ec4-97e4-07645650022b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "neo-soul 女聲慢盤 2000s–10s 二線：達拉斯歌手 N'Dambi（Erykah Badu 和聲出身）自發行的雙 CD 首作，地下 neo-soul 名盤；Vibe 稱整張維持沉緩的速度，loping 貝斯與爵士和聲，暖｜⚠ CAA 無封面，封面取 Apple；MB 首發 1998-09-07，維基與 Apple 皆 1999-09-07，取 1999（MB 疑誤植）；MB 藝人名彎引號 N’Dambi，seed 宜用 ASCII；雙 CD 長度研究層核｜MB release-group e1ea16d5-b308-3ec4-97e4-07645650022b：title「Little Lost Girls Blues」、Album、first-release-date 1998-09-07、artist-credit「N’Dambi」。證據：https://musicbrainz.org/release-group/e1ea16d5-b308-3ec4-97e4-07645650022b https://music.apple.com/us/album/little-lost-girls-blues/189846650 https://en.wikipedia.org/wiki/Little_Lost_Girls_Blues https://is1-ssl.mzstatic.com/image/thumb/Music/14/77/87/mzi.tgoxnpuo.tif/600x600bb.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "189846650",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/14/77/87/mzi.tgoxnpuo.tif/600x600bb.jpg",
+    "note": "CAA release-group 無圖（404）；取 Apple 189846650《Little Lost Girls Blues》（14 軌對上 MB）官方圖，主線 2026-10-23 目視：藍膚女子大爆炸頭、上方 LITTLE LOST GIRLS Blues、下方紅字 N'Dambi，與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 6,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 6）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 6），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "用自己的廠牌發行，首作就賣出約 5 萬張。在 1996 到 1998 年間，美國 neo soul 歌手 N’Dambi 錄下《Little Lost Girls Blues》，那家廠牌叫 Cheeky-i Productions。製作人 Madukwu Chinwah 包辦全部樂器，她則共同寫詞。14 首約 69 分鐘裡，她大半維持沉鬱的速度與中低音域的唱腔，只在〈Lonely Woman〉放開來玩放克。貝斯線與 neo soul 氛圍從頭貫穿到尾。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Little_Lost_Girls_Blues",
+     "https://www.discogs.com/release/223738",
+     "https://musicbrainz.org/release-group/e1ea16d5-b308-3ec4-97e4-07645650022b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/21/86/b6/2186b659-ea88-fc46-f85f-6b8ba457bb5a/mzaf_440306017247123245.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "appleCollectionId": "189846650",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 189846650「N'Dambi《Little Lost Girls Blues》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Picture This〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Aisha",
+   "album": "True Roots",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "66700435-c6bc-3a89-8ec9-d0ee7b33d42a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "女聲 roots／dub 厚低頻慢盤：Ariwa 女聲 Aisha 的 Mad Professor 製作盤（池中《High Priestess》落恍惚）；roots 慢拍配 Ariwa 厚低頻與 dub 回聲｜⚠ 同人《High Priestess》池中 z 0.4，本張 z 可能貼邊；藝人名 Aisha 為池中 Maisha 子字串（ml55 已註）｜MB release-group 66700435-c6bc-3a89-8ec9-d0ee7b33d42a：title「True Roots」、Album、first-release-date 1994、artist-credit「Aisha」。證據：https://musicbrainz.org/release-group/66700435-c6bc-3a89-8ec9-d0ee7b33d42a https://archive.org/download/mbid-c627e229-454e-4513-9efe-1f485950716d/mbid-c627e229-454e-4513-9efe-1f485950716d-16095042365.jpg https://music.apple.com/us/album/true-roots/44127336",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/66700435-c6bc-3a89-8ec9-d0ee7b33d42a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 331,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 331）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 331），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "詞曲欄裡只有一個名字：Pamela Ross。1962 年生的英國 roots reggae 女歌手 Aisha，本名就是 Pamela Ross。《True Roots》1994 年交給 Ariwa 發行，操刀的是英國 dub 製作人 Mad Professor。鼓手是 Drumtan Ward，Black Steel 則一人身兼貝斯、吉他與鍵盤。12 首加起來約 46 分鐘，前 9 首是歌，最後三首換成 dub 版，〈Carnal Dub〉是其中之一。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Aisha_(British_singer)",
+     "https://www.discogs.com/release/1764494",
+     "https://en.wikipedia.org/wiki/Mad_Professor",
+     "https://musicbrainz.org/release-group/66700435-c6bc-3a89-8ec9-d0ee7b33d42a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/67/0f/4c/670f4c0b-033f-9140-1a8f-611d5c410f39/mzaf_16573604327084482382.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-23T23:45:24Z",
+    "appleCollectionId": "44127336",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 44127336「AISHA《True Roots》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Gunman〉。主線 2026-10-23 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

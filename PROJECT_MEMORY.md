@@ -1,5 +1,40 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 13 輪 mc43／md31：現代室內樂 36 張、無鼓 drone 26 張上線，落格 36/36、24/26
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 13 輪，本工作階段負責 mc43、md31（評分照 10-23 體感標準）。mc43（`add-20261023-mc43`，冷冽）：Arditti（Neuwirth、Nancarrow、Guerrero、Reynolds、Carter、Mexico）、Klangforum Wien（Aperghis、Lachenmann《Mouvement》、Reiter）、ELISION、ensemble recherche、Hodges、Holliger ×2、Diotima ×2、ensemble mosaik ×2、Michel-Dansac、Veale《Pynchon Cycle》、asamisimasa、Mari Poll、Pacifica《Carter 1 & 5》、Cuckson、LaSalle、EIC《Hurel》、Nancarrow Vol.4、Knox、Damiens、Gil、Dillon、Oslo Sinfonietta、Poppe《Interzone》、Ensemble 21、Mode《Lachenmann》、Huebner《Reynolds》。md31（`add-20261023-md31`，頹靡）：Anjou ×2、Growing、Rothko ×2、Windy & Carl ×2、Matt Elliott、Dissolve、Main ×4、E.A.R. ×4、Robert Hampson ×2、Lull ×2、ELEH ×3、Maeror Tri、Troum。
+- **策展→研究汰換**：mc43 策展 54＋補 12、主線汰 16（同作品池中已有、貼邊）、研究汰 14（稀疏極弱、抒情、大編制、現場錄音）→ 36。md31 策展 54＋補 25、主線汰 14、研究汰 39——**冷 post-rock 二線樂團幾乎全有鼓組或人聲**（Jessamine、Implodes、HṚṢṬA、Polmo Polpo、The Drift、Pan•American…），主場景見底，改收無鼓 drone／isolationist → 26。兩場景都不再派。
+- **主線審稿**：md31 改 1 張（Anjou《Epithymía》單源評價詞）；mc43 改 3 張（Dillon hook 的「據說」、Hurel 獎項名稱單源存疑、Steen-Andersen 語病；hooks／input 同步）。
+- **上線**：card_catalog 26＋36、KV 62 鍵回讀逐字一致（stamp 20261024r13）、試聽 17＋28 ready、seed +62、prepare／published gate 兩批 0 error；封面 CAA 42、Apple 14、Discogs 6（已登錄 registry），縮圖表目視相符。上線前對 origin 近 3 天所有 `claude/*` 分支 seed＋卡單與 main seed 去重 0 撞。mc43 古典三軸走 §0.7 錨點制。
+- **情緒評分**：`score-mc43`、`score-md31`。**mc43 落冷冽 36/36（100%）**；**md31 落頹靡 24/26（92%）**（Anjou 首作判輕落平靜、Windy & Carl《Portal》z 0.0 落恍惚）。八格（併 main 後，含 ml56／mc42、ml57／md30）：恍惚 1,631、頹靡 1,565、冷冽 1,556。
+- **藝人介紹**：未切（並行規矩）；新藝人 29 個掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{mc43,md31}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{mc43,md31}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{mc43,md31}/`、`onboarding-manifest-add-20261023-{mc43,md31}-20261024.json`、`desc-tools/batches/*/add-20261023-{mc43,md31}*`、`data/discogs-cover-registry.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 62/62；類型樹 62/62 落位；build-card-moods 錨點 104/104、gate exit 0。
+
+### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 13 輪 ml57／md30：neo-soul 女聲慢盤 12 張、dark ambient 第五波 28 張上線，落格 12/12、28/28
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 13 輪，本工作階段負責 ml57、md30（評分照 10-23 體感標準；店主同日「恍惚可以多增加一點 downtempo 與 dub」）。ml57（`add-20261023-ml57`，恍惚）：KING《We Are KING》、Yuna《Chapters》、Adriana Evans 首作、Conya Doss《Love Rain Down》、Trina Broussard《Same Girl》、Rachelle Ferrell 同名盤、Dezarie ×3（FYA、Eaze the Pain、The Fourth Book）、Mo’Kalamity meets Sly & Robbie、N’Dambi《Little Lost Girls Blues》、Aisha《True Roots》（女聲 roots／dub 擴寫）。md30（`add-20261023-md30`，頹靡）：Dahlia's Tear ×4、Desiderii Marginis《Bathe in Black Light》、Atrium Carceri ×2（含與 Eldar 合作）、Cyclic Law 二線（Hesychia、Shedir、Shrine、Sinke Dûs）、Cryo Chamber 二線（Underwater Sleep Orchestra、Silent Universe、Ugasanie 新盤、Dronny Darko ×2、Council of Nine、Void Stasis、Eximia、Sjellos）、Glacial Movements（Glotman、Lia Bosch、Aware）、Winter-Light（Argyre Planitia、Kloob & Onasander）、Tho-So-Aa、Stuzha、Lull（isolationist 擴寫）。
+- **策展→研究汰換**：ml57 策展 25（主場景大名已被 ml5／ml6／ml8／ml53／ml55 收光，見底）、研究汰 13（samba-rock 打擊、藍調／搖滾放克、短篇過場、明亮 doo-wop、選集、零來源貼邊、同人勻量）→ 12。md30 策展代理續跑交 52，主線先用前 29 建卡單、再補收 14（isolationist／winter-light 擴寫），兩輪主線汰 9＋6、研究汰 15（節奏脈動、吟誦與金屬噪音、噪牆、旋律或夢幻柔和、現場錄音、文案明寫 drums）→ 28。
+- **主線審稿**：ml57 改 6 張 7 處（單源樂評比較句改聲音描述：Sade／Steely Dan／Roberta Flack／George Duke 疊層／「第一張 neo-soul」／Exclaim! 一致性）；md30 改 1 張 2 處（Insomnolence 首作語意、Side-Line 比較句改廠方文案字眼）。皆存 `desc-override.json`。
+- **上線**：card_catalog 12＋28、KV 40 鍵回讀逐字一致（stamp 20261023r13）、試聽 10＋25 ready（5 unavailable：Adriana Evans 首作、Dezarie《FYA》、Dahlia's Tear《Apeiron》、Argyre Planitia、Tho-So-Aa 未上架）、seed +40、published gate 兩批 0 error；封面 CAA 39、Apple 1（N’Dambi），front live-check 全 200、縮圖表目視相符。上線前對 origin 所有 `claude/*` 分支 seed 與近 12 個分支新卡單去重 0 撞。
+- **情緒評分**：`score-ml57`、`score-md30`。**ml57 落恍惚 12/12（100%）**、**md30 落頹靡 28/28（100%）**。八格（併 main 後，含 ml56／mc42）：恍惚 1,630、頹靡 1,541、冷冽 1,520。
+- **類型樹**：`genre-l3-artist-map.json` 補 soul/neo-soul 1、electronic/ambient/drone 1、world/reggae/roots 2，40/40 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人名單列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{ml57,md30}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml57,md30}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml57,md30}/`、`onboarding-manifest-add-20261023-ml57-20261023.json`、`onboarding-manifest-add-20261023-md30-20261024.json`、`desc-tools/batches/*/add-20261023-{ml57,md30}*`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 40/40；build-card-moods 錨點 104/104、gate exit 0。
+
+### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 13 輪 ml56／mc42：暖 downtempo／類比 dub 20 張、自由即興打擊 13 張上線，落格 19/20、13/13
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 13 輪＋「恍惚可以多增加一點 downtempo 與 dub」，本工作階段負責 ml56、mc42（評分照 10-23 體感標準）。ml56（`add-20261023-ml56`，恍惚）：Fila Brazillia ×3（Pork 後期）、Alice Russell《My Favourite Letters》、Loop Guru《Amrita》、Mad Professor ×7（《Dub Me Crazy》Part 4／5／6／10／11、Black Liberation Dub 1／3）、Peaking Lights《Clearvoiant》、Kaya Project《Desert Phase》、Sounds From the Ground ×3、Dub Colossus《Dub Me Tender》、Halftribe《Luxia》、Blundetto《World of Dub》。mc42（`add-20261023-mc42`，冷冽）：Chris Corsano ×2、Favre & Centazzo、Beresford／Bennink、D'Agaro／Schlippenbach／Bennink、Minton／Turner、Parker & Prévost、Battaglia & Oxley、Tony Oxley《4 Compositions for Sextet》《Ichnos》、Pilz／Kowald／Lovens、Tomlinson／Beresford／Turner、Duthoit／Frangenheim／Turner。
+- **策展→研究汰換**：ml56 策展三輪 71、主線汰 22（池中同人判輕／判躁／判冷先例、DJ 選輯）、研究汰 32（breaks／house／funk 推進、歌曲型客串、原聲稀疏、選輯、數位化 dub）→ 20。mc42 策展 50（擋現場約 40）、主線汰 13（Graves 手鼓判暖、Strasbourg／Xenakis 大鼓判重、拼盤掛名）、研究汰 24（長音冥想判靜、巨鑼／電子／大鼓判重、借曲與搖擺判暖）→ 13。兩個主場景見底，不再派。
+- **主線審稿**：ml56 改 1 處（Dub Me Crazy Part 4「那是」指涉不清）；mc42 改 1 處（4 Compositions 單源評價句刪）。
+- **上線**：card_catalog 20＋13、KV 33 鍵回讀逐字一致（stamp 20261023r13、20261024r13）、試聽 17＋1 ready（人工配 1）、seed +33、published gate 兩批 0 error；封面 CAA 21、Apple 2、Discogs 10（registry → 428），live-check 全 200、目視相符。上線前對 origin 各 `claude/*` 分支 seed＋卡單去重 0 撞。
+- **情緒評分**：`score-ml56`、`score-mc42`。**ml56 落恍惚 19/20（95%）**（Peaking Lights《Clearvoiant》z −0.3 落頹靡）、**mc42 落冷冽 13/13（100%）**。八格：恍惚 1,618、冷冽 1,520、頹靡 1,513（合併 main 前）。
+- **類型樹**：`genre-l3-artist-map.json` 補 soul/neo-soul 1、jazz/free/free-improv 9；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 18 個掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{ml56,mc42}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml56,mc42}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml56,mc42}/`、`onboarding-manifest-add-20261023-ml56-20261023.json`、`onboarding-manifest-add-20261023-mc42-20261024.json`、`desc-tools/batches/*/add-20261023-{ml56,mc42}*`、`data/discogs-cover-registry.json`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 33/33；build-card-moods 錨點 104/104。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格線第 13 輪派工：優先序 64–69
 
 - **起因**：第 12 輪收工（ml53 17／17、mc40 29／28、ml54 22／21、md29 33／32、ml55 22／22、mc41 11／10，上線／落格）。恍惚 1,599、頹靡 1,512、冷冽 1,507——恍惚已領先，本輪改冷冽、頹靡優先（一個工作階段不配恍惚）。
