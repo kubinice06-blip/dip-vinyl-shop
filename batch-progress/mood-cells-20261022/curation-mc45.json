@@ -1,0 +1,246 @@
+{
+ "group": "mc45",
+ "factions": [
+  {
+   "id": "drill-n-bass",
+   "zh": "drill'n'bass 快而尖薄",
+   "count": 1,
+   "why": "Rephlex 二線：高速碎拍、口水式人聲、低頻少；amen 牆、breakcore 轟炸與旋律清楚的不收"
+  },
+  {
+   "id": "clicky-idm",
+   "zh": "乾、尖、點擊型 IDM／節奏研究",
+   "count": 6,
+   "why": "Spymania／Mego／PAN／Boomkat Editions：抽搐 click 節奏、無調、聲部稀；ambient 化、厚低頻與失真牆的不收"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Bogdan Raczynski",
+   "album": "Samurai Math Beats",
+   "year": 1999,
+   "label": "Rephlex",
+   "country": "us",
+   "faction": "drill-n-bass",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Rephlex drill'n'bass 二線代表作（Fact 百大 IDM 第 29）；高速抽搐碎拍＋亂疊的尖聲人聲，廉價合成器音色薄、無厚低頻，讓人坐不住",
+   "moodGuess": {
+    "x": 4.3,
+    "y": 0,
+    "z": -0.8,
+    "why": "極快碎拍、尖細人聲切片、低頻少、旋律破碎"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b35610b5-cbf2-3da8-8405-643f8b15e26e",
+    "https://coverartarchive.org/release-group/b35610b5-cbf2-3da8-8405-643f8b15e26e/front",
+    "https://www.discogs.com/master/80995",
+    "https://en.wikipedia.org/wiki/Samurai_Math_Beats",
+    "https://www.factmag.com/2014/09/22/the-100-greatest-idm-tracks-100-51/"
+   ],
+   "quote": "Fact: \"psychotic vocals layered haphazardly over stuttering breaks that even Tom Jenkinson would find hard to come to grips with\"",
+   "mbRgMbid": "b35610b5-cbf2-3da8-8405-643f8b15e26e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "碎拍密度高、部分段落帶玩具式旋律；y 可能被評 0.3–0.5、z 可能往 −0.3 靠"
+  },
+  {
+   "artist": "Jamie Lidell",
+   "album": "Muddlin Gear",
+   "year": 2000,
+   "label": "Spymania／Warp",
+   "country": "gb",
+   "faction": "clicky-idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Lidell 個人首張（Super_Collider 之前的實驗面）；故障化的電腦 funk，skittery 器樂碎拍與高低保真跳接，乾、薄、神經質",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.2,
+    "z": -0.7,
+    "why": "跳針式碎拍與 click、低頻細、無明確旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a4914d48-70be-4a92-8e45-8cf30e31d550",
+    "https://coverartarchive.org/release-group/a4914d48-70be-4a92-8e45-8cf30e31d550/front",
+    "https://www.discogs.com/master/1076",
+    "https://www.allmusic.com/album/mw0000107196",
+    "https://ink19.com/2001/03/magazine/music-reviews/895bbl-jamie-lidell"
+   ],
+   "quote": "FACT: \"queasy computerised funk\"; Ink19: \"meandering in and out of low and high fidelities\"; TMT: \"skittery instrumental tracks\"",
+   "mbRgMbid": "a4914d48-70be-4a92-8e45-8cf30e31d550",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "funk 律動可能讓 z 被評近 0；少數段落有人聲"
+  },
+  {
+   "artist": "Mark Fell & Rian Treanor",
+   "album": "Last Exit to Chickenley",
+   "year": 2021,
+   "label": "Boomkat Editions",
+   "country": "gb",
+   "faction": "clicky-idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Fell／Treanor 父子合作（Documenting Sound 系列）；合成打擊切成多重節拍、不對稱脈衝，乾、尖、無調。Treanor 兩張個人盤池中評 x 4.2–4.4、y −0.3–−0.1",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.6,
+    "z": -1.2,
+    "why": "不對稱合成打擊脈衝、極乾、無旋律、無低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a19d4ba3-80a6-4b54-8765-3f3ee21c8d1d",
+    "https://coverartarchive.org/release-group/a19d4ba3-80a6-4b54-8765-3f3ee21c8d1d/front",
+    "https://rateyourmusic.com/release/album/mark-fell-rian-treanor/last-exit-to-chickenley/",
+    "https://forcedexposure.com/Catalog/BKEDITDS.037LP.html",
+    "https://thequietus.com/?p=29738"
+   ],
+   "quote": "Label copy: \"kern, juxtapose and diffract synthesized percussion and field recordings into polymetric arrangements riddled with timbral nuance\"",
+   "mbRgMbid": "a19d4ba3-80a6-4b54-8765-3f3ee21c8d1d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "混有花園田野錄音與「Feldman 式極簡」段落；x 可能被評 3.1–3.4（Mark Fell 個人盤池中 x 3.0–3.1）。MB 首發為 2021 卡帶，2023 有擴充 2LP"
+  },
+  {
+   "artist": "NHK’Koyxeи",
+   "album": "Dance Classics, Volume II",
+   "year": 2012,
+   "label": "PAN",
+   "country": "jp",
+   "faction": "clicky-idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "松永耕平（Mille Plateaux／Tigerbeat6／Skam 出身）PAN 系列第二卷；旋律退場、只剩打擊端的扭曲碎 techno，硬、乾、冷",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0,
+    "z": -1.2,
+    "why": "僵硬機械打擊、尖銳 click、無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b9178bdd-20e0-4f64-8503-b01f0e81f3c0",
+    "https://coverartarchive.org/release-group/b9178bdd-20e0-4f64-8503-b01f0e81f3c0/front",
+    "https://www.juno.co.uk/junodaily/?p=60870",
+    "https://www.soundohm.com/product/dance-classics-vol-ii"
+   ],
+   "quote": "Juno: melodies \"pulled back in favour of\" the \"percussive end of the spectrum\"; Fact on vols I–II: \"tweaked, distorted 4X4 techno\"",
+   "mbRgMbid": "b9178bdd-20e0-4f64-8503-b01f0e81f3c0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Fact 用 distorted 形容，y 可能被評 0.3–0.6；Vol. I 因此未提"
+  },
+  {
+   "artist": "General Magic",
+   "album": "Rechenkönig",
+   "year": 2000,
+   "label": "Mego",
+   "country": "at",
+   "faction": "clicky-idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Mego 核心二人組第二張（mc33 已提《Frantz!》）；數位故障節奏、跳接碎片，薄、尖、無調",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0,
+    "z": -1.4,
+    "why": "故障碎拍亂跳、嗶嗶點擊、無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f1732128-d54c-3e71-9fe7-674eb328a542",
+    "https://www.discogs.com/master/449091",
+    "https://api.discogs.com/masters/449091"
+   ],
+   "quote": "Discogs styles: Abstract, Electro, Noise, Experimental（找不到樂評原句）",
+   "mbRgMbid": "f1732128-d54c-3e71-9fe7-674eb328a542",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無封面（用 Discogs master 圖）；沒有樂評原句；Discogs 標了 Noise，y 可能偏高"
+  },
+  {
+   "artist": "Andreas Tilliander",
+   "album": "Ljud",
+   "year": 2001,
+   "label": "Mille Plateaux",
+   "country": "se",
+   "faction": "clicky-idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "瑞典 clicks & cuts 代表作之一（Mille Plateaux MP97）；乾 click 與切片節拍，聲部稀、無旋律主線",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -1,
+    "why": "乾 click 節奏、細碎切片、低頻少、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0e9298f3-1834-33e8-9da0-79344357b3e9",
+    "https://coverartarchive.org/release-group/0e9298f3-1834-33e8-9da0-79344357b3e9/front",
+    "https://www.discogs.com/master/14334",
+    "https://en.wikipedia.org/wiki/Andreas_Tilliander"
+   ],
+   "quote": "Wikipedia: \"significantly contributed to the evolution of the 'clicks & cuts' genre with his first albums Cliphop (Raster.Noton) and Ljud (Mille Plateaux)\"; Discogs styles Glitch / IDM / Minimal",
+   "mbRgMbid": "0e9298f3-1834-33e8-9da0-79344357b3e9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 剛好在 3.4 門檻：同類 click 盤池中多評 3.0–3.4（SND 3.0、Bretschneider 3.0–3.4）"
+  },
+  {
+   "artist": "DOS Tracks",
+   "album": ":)",
+   "year": 1999,
+   "label": "Rather Interesting／Schematic",
+   "country": "de",
+   "faction": "clicky-idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Uwe Schmidt（Atom™）的撥接數據機故障盤（Fact 百大 IDM 第 25）；數位雜訊與切片碎拍，乾、尖、無旋律",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.1,
+    "why": "數據機嗶聲、故障碎拍、乾、無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8f56e2e1-3f2f-3d23-821f-f23db1d4da2f",
+    "https://www.discogs.com/master/135323",
+    "https://www.discogs.com/release/65842",
+    "https://www.factmag.com/2014/09/22/the-100-greatest-idm-tracks-100-51/"
+   ],
+   "quote": "Fact: \"a dab hand at glitches and crackles ... making tracks about dial-up modems on an album called :)\"; Discogs styles Abstract / Electro / Experimental / Glitch",
+   "mbRgMbid": "8f56e2e1-3f2f-3d23-821f-f23db1d4da2f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無封面（用 Discogs 圖）；盤名 \":)\" 正規化後是空字串，去重腳本與卡片 key 可能出錯，主線要特別處理；Schmidt 常玩 kitsch，z 可能往 0"
+  }
+ ],
+ "notes": [
+  "只交 5 張，離 54 很遠。主場景大名幾乎都已在池且被判重或判暖（Squarepusher、Venetian Snares、μ-Ziq、Plaid、Autechre 後期、Richard Devine《Lipswitch》y 0.8、Objekt《Flatland》y 0.8、Jlin 全部 y 0.6–0.9）。",
+  "擴寫場景多已被別組收走：electro 二線（mc6：Arpanet、Rother、Elecktroids、Lab Rat XL、Aux 88）、minimal／click 與 Schematic（mc7：Phoenecia、Devine、Funkstörung、Treanor、Bretschneider、SND、Mark Fell）、glitch（mc33：Farmers Manual、General Magic《Frantz!》、Hecker、Gescom《Minidisc》）、Raster（mc15：Byetone、Lázár）。",
+  "查過不提：Hrvatski《Swarm & Dither》（BBC：民謠、Rhodes、Labradford 式小調段落＝暖）；Bogdan《Thinking of You》（P4K：booming drums、throbbing bassline、音樂盒旋律）；Bogdan《Boku mo Wakaran》《myloveilove》（旋律歌）；Kid606《GQ on the EQ++》（合輯）、《Down With the Scene》《Kill Sound…》（重）、《PS I Love You》（旋律暖）；Lego Feet（MB 為 EP）、CoH《Love Uncut》（EP）；Phoenecia《Randa Roomet》（MB 無 Album）；Jega、Datach'i、Team Doyobi、Cylob、Freeform（旋律暖）；Mira Calix、SND、Mark Fell《UL8》《Periodic Orbits》、Sutekh《Fell》（x 估 3.0–3.4，沒邊距）；Lesser《Gearhound》、Rehberg & Bauer《Faßt》（找不到聲音佐證）；Shifted Phases、Byetone《Symeta》、The Tuss《Rushup Edge》（y 估 0.3 以上）。",
+  "WebSearch 6 次用完。去重：5 張 seed_cards 皆 0、其他 curation-*.json 無同盤、origin/claude/* 分支 seed_cards 無同盤。",
+  "第二輪（放寬門檻 x≥3.4、y≤0.1、z≤−0.5）只多 2 張：Tilliander《Ljud》、DOS Tracks《:)》。只用 MB、Discogs API（逐家看廠牌目錄：Skam、Schematic、Rephlex、Mille Plateaux、Tigerbeat6、Planet Mu、Mego）、維基、Fact 百大 IDM 清單；Bandcamp 被 JS 擋住讀不到。",
+  "第二輪查過不提：Zwischenwelt《Paranormale Aktivität》（Discogs 標了 Ambient）；Transllusion《L.I.F.E.》（池中同人 y 0.2，超過門檻）；Urban Tribe Rephlex 兩張（池中同人判靜 2.6）；NHKyx《yx aka 1ch aka Solo》（Discogs 標 Instrumental Hip Hop）；Yu Miyashita《Noble Niche》（Drone／Noise／Ambient）；DAT Politics《Villiger》（P4K：profoundly melodic、electro-pop）；Yee-King《SuperUser》（Fact：Detroit 式和弦、funk）；EVOL 其他盤（池中同人 y 1.2）；Farmers Manual 其他盤（池中 y 0.2–0.3）；Mark Fell、SND（池中 x 3.0–3.1）；Bogdan《Alright!》（Breakcore／Hardcore）；Like a Tim、Kiyo、Phthalocyanine、Lesser、Rehberg & Bauer、Rechenzentrum、Kouhei Matsunaga《Upside Down》、Errorsmith（找不到聲音佐證）；Hecker／Florian Hecker 其他盤（池中同人判重／判靜都有，沒有證據）。"
+ ]
+}
