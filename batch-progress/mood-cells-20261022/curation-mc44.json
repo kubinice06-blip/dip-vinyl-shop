@@ -1,0 +1,776 @@
+{
+ "group": "mc44",
+ "factions": [
+  {
+   "id": "esp",
+   "zh": "ESP-Disk' 自由爵士二線",
+   "count": 15,
+   "why": "1964–69 年 ESP-Disk' 紐約錄音室小編制（三至六人）：薩克斯風／小號／單簧管／弦樂的尖細高音、無調即興"
+  },
+  {
+   "id": "byg",
+   "zh": "BYG Actuel／巴黎 1969–73 小編制",
+   "count": 5,
+   "why": "BYG Actuel 與同期巴黎小廠（America、Center of the World、Saravah）的美法自由爵士三、四重奏"
+  },
+  {
+   "id": "euro",
+   "zh": "歐陸自由爵士小編制 1965–75",
+   "count": 1,
+   "why": "德、荷、法、義、北歐的早期自由爵士小編制錄音室盤"
+  },
+  {
+   "id": "us-small",
+   "zh": "其他美國小廠自由爵士 1963–79",
+   "count": 4,
+   "why": "ESP 同期的美國小廠／大廠旁支自由爵士小編制"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "The Giuseppi Logan Quartet",
+   "album": "The Giuseppi Logan Quartet",
+   "year": 1965,
+   "label": "ESP-Disk'",
+   "country": "us",
+   "faction": "esp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Logan 唯一的 ESP 錄音室首作，Don Pullen 鋼琴、Milford Graves 鼓；巴基斯坦雙簧管與走音般的高音薩克斯風，緊張、無調、四人小編制",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.3,
+    "z": -1.5,
+    "why": "高音簧管尖細，Graves 碎拍推著走，無主題可唱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/690b95b4-c432-437c-8a8e-a6984f604301",
+    "https://www.discogs.com/master/210562",
+    "https://www.discogs.com/release/492842"
+   ],
+   "mbRgMbid": "690b95b4-c432-437c-8a8e-a6984f604301",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Byron Allen Trio",
+   "album": "Byron Allen Trio",
+   "year": 1965,
+   "label": "ESP-Disk'",
+   "country": "us",
+   "faction": "esp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "ESP 第五號、Byron Allen 唯一的 60 年代錄音；無鋼琴中音薩克斯風三重奏，Ornette 路數的尖細長段即興",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.6,
+    "z": -1.2,
+    "why": "中音薩克斯風乾薄高音，貝斯鼓稀而躁，旋律碎"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d7b239ff-c750-3ed7-9e33-a9a774beb44d",
+    "https://www.discogs.com/master/263052",
+    "https://www.discogs.com/release/2012133"
+   ],
+   "mbRgMbid": "d7b239ff-c750-3ed7-9e33-a9a774beb44d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "New York Art Quartet",
+   "album": "New York Art Quartet",
+   "year": 1965,
+   "label": "ESP-Disk'",
+   "country": "us",
+   "faction": "esp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Tchicai、Rudd、Graves 的無鋼琴四重奏首作，含 Baraka 朗誦〈Black Dada Nihilismus〉；長號與中音薩克斯風交錯的冷硬對位",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.2,
+    "z": -1.5,
+    "why": "無鋼琴，長號與中音對位刺，Graves 鼓碎，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cd755782-87ab-3835-a475-38c5a9d1acb0",
+    "https://www.discogs.com/master/58545",
+    "https://www.discogs.com/release/1172021"
+   ],
+   "mbRgMbid": "cd755782-87ab-3835-a475-38c5a9d1acb0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lowell Davidson Trio",
+   "album": "Lowell Davidson Trio",
+   "year": 1965,
+   "label": "ESP-Disk'",
+   "country": "us",
+   "faction": "esp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "波士頓鋼琴怪才 Davidson 唯一專輯，Gary Peacock＋Milford Graves；Cecil Taylor 以外最尖銳的 ESP 鋼琴三重奏",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.7,
+    "z": -1.4,
+    "why": "鋼琴叢音點刺，Peacock 貝斯細，鼓碎拍，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dc29131b-95f4-466b-a2d7-3fdbac6fc25a",
+    "https://www.discogs.com/master/290562",
+    "https://www.discogs.com/release/2578380"
+   ],
+   "mbRgMbid": "dc29131b-95f4-466b-a2d7-3fdbac6fc25a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發日寫 1969-08-09，Discogs 原盤 1965（錄於 1965-07-27），年份取 1965"
+  },
+  {
+   "artist": "Henry Grimes Trio",
+   "album": "The Call",
+   "year": 1966,
+   "label": "ESP-Disk'",
+   "country": "us",
+   "faction": "esp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Grimes 唯一的領銜錄音室盤，Perry Robinson 單簧管＋Tom Price 鼓；單簧管尖亮高音在貝斯上亂竄",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.8,
+    "z": -1.2,
+    "why": "單簧管尖高、無鋼琴、貝斯鼓乾，旋律碎"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ac35fa7d-c0c6-31ea-8120-f13728958fad",
+    "https://www.discogs.com/master/259691",
+    "https://www.discogs.com/release/1157366"
+   ],
+   "mbRgMbid": "ac35fa7d-c0c6-31ea-8120-f13728958fad",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Marion Brown Quartet",
+   "album": "Marion Brown Quartet",
+   "year": 1966,
+   "label": "ESP-Disk'",
+   "country": "us",
+   "faction": "esp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Marion Brown 的首張領銜作（ESP 1022），Alan Shorter 小號、Rashied Ali 鼓；22 分鐘〈Capricorn Moon〉是早期 Brown 最緊繃的無鋼琴長段",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.3,
+    "z": -1.3,
+    "why": "中音＋小號尖高，Ali 鼓流動推進，無鋼琴，主題鬆散"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/70fd905a-3a5f-3f15-aca5-9d6c847ddb2a",
+    "https://www.discogs.com/master/33227",
+    "https://www.discogs.com/release/6228917"
+   ],
+   "mbRgMbid": "70fd905a-3a5f-3f15-aca5-9d6c847ddb2a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Charles Tyler Ensemble",
+   "album": "Charles Tyler Ensemble",
+   "year": 1966,
+   "label": "ESP-Disk'",
+   "country": "us",
+   "faction": "esp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Ayler 樂團中音手 Tyler 的首作，大提琴＋管弦顫音琴＋Ronald Shannon Jackson 鼓；弦樂刮擦與尖嘯中音的室內式自由爵士",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": -1.5,
+    "why": "大提琴刮擦、顫音琴金屬點、中音尖嘯，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2c4ef066-7461-47cc-95de-62eeef6936a9",
+    "https://www.discogs.com/master/192894",
+    "https://www.discogs.com/release/1151629"
+   ],
+   "mbRgMbid": "2c4ef066-7461-47cc-95de-62eeef6936a9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB RG 首發日只記到 2009 CD 再版，原盤 ESP 1029 為 1966（Discogs），年份取 1966"
+  },
+  {
+   "artist": "Noah Howard Quartet",
+   "album": "Noah Howard Quartet",
+   "year": 1966,
+   "label": "ESP-Disk'",
+   "country": "us",
+   "faction": "esp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Noah Howard 首張領銜錄音室盤（ESP 1031），Ric Colbeck 小號、無鋼琴；中音與小號在稀薄節奏組上纏鬥",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -1.0,
+    "why": "中音＋小號高音薄，無鋼琴，鼓鬆而碎，主題短"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f757ea3d-1ffe-3cf0-9087-1d1a7b43685d",
+    "https://www.discogs.com/master/225077",
+    "https://www.discogs.com/release/2041700"
+   ],
+   "mbRgMbid": "f757ea3d-1ffe-3cf0-9087-1d1a7b43685d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "And About Love",
+   "uncertain": "MB 只有 2003 ESP CD 再版 RG，標題作《And About Love》（曲目與 1966 LP 相同四首）；卡名用原盤名，queryAlias 填 CD 名"
+  },
+  {
+   "artist": "Karl Berger",
+   "album": "From Now On",
+   "year": 1967,
+   "label": "ESP-Disk'",
+   "country": "us",
+   "faction": "esp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Berger 的首張領銜盤，Carlos Ward 中音、Henry Grimes、Ed Blackwell；顫音琴金屬敲擊與中音短句的尖細四重奏",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.8,
+    "z": -0.9,
+    "why": "顫音琴金屬亮點、中音尖，Blackwell 鼓乾脆，旋律碎"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b218cfe3-7dc5-4672-99c8-0b9053207e06",
+    "https://www.discogs.com/master/748815",
+    "https://www.discogs.com/release/6141151"
+   ],
+   "mbRgMbid": "b218cfe3-7dc5-4672-99c8-0b9053207e06",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "曲子短、有主題，x 估 3.4 偏邊"
+  },
+  {
+   "artist": "Alan Silva",
+   "album": "Skilfullness",
+   "year": 1969,
+   "label": "ESP-Disk'",
+   "country": "us",
+   "faction": "esp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Silva 的首張領銜作，小提琴／大提琴＋長笛、顫音琴、雙鍵盤；B 面〈Solestrial〉是刮擦弦樂與高音碎片的無調長段",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -1.6,
+    "why": "小提琴刮擦尖高、長笛顫音琴點描，無拍無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a0f6257f-375e-30f1-92a9-2138f1bf33a5",
+    "https://www.discogs.com/master/238512",
+    "https://www.discogs.com/release/1792092"
+   ],
+   "mbRgMbid": "a0f6257f-375e-30f1-92a9-2138f1bf33a5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Skillfullness",
+   "uncertain": "A 面六人含管風琴，有漂浮段，x 可能 3.2–3.4"
+  },
+  {
+   "artist": "Gunter Hampel Group",
+   "album": "Music From Europe",
+   "year": 1967,
+   "label": "ESP-Disk'",
+   "country": "de",
+   "faction": "esp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "ESP 唯一的歐洲自由爵士盤，Hampel＋Willem Breuker＋Pierre Courbois 1966 年荷蘭錄音；低音單簧管、蓮花笛、弓奏鈸的尖細拼貼",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.5,
+    "why": "顫音琴、長笛、弓奏鈸尖細，簧管碎句，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/28c6666e-1f1c-44c3-9573-e7d2c26c830e",
+    "https://www.discogs.com/master/228109",
+    "https://www.discogs.com/release/1771734"
+   ],
+   "mbRgMbid": "28c6666e-1f1c-44c3-9573-e7d2c26c830e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB RG 首發日記 2008 CD，原盤 ESP 1042 為 1967（Discogs），年份取 1967"
+  },
+  {
+   "artist": "Sonny Simmons",
+   "album": "Staying on the Watch",
+   "year": 1966,
+   "label": "ESP-Disk'",
+   "country": "us",
+   "faction": "esp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Simmons 的 ESP 首作，Barbara Donald 小號、John Hicks 鋼琴；中音與小號高音齊吼、中東調式碎片，速度快而緊",
+   "moodGuess": {
+    "x": 4.0,
+    "y": 0.0,
+    "z": -1.1,
+    "why": "中音與小號尖亮高音，鋼琴叢音，鼓快，主題短碎"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bdce90b4-0778-4193-bb01-4659d40b7ced",
+    "https://www.discogs.com/master/243727",
+    "https://www.discogs.com/release/6481696"
+   ],
+   "mbRgMbid": "bdce90b4-0778-4193-bb01-4659d40b7ced",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "五人編制，但無低音管、聲部高而薄；y 估 0.0"
+  },
+  {
+   "artist": "Sonny Simmons",
+   "album": "Music From the Spheres",
+   "year": 1968,
+   "label": "ESP-Disk'",
+   "country": "us",
+   "faction": "esp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Simmons 的第二張 ESP，同樣與 Barbara Donald；〈Zarak's Symphony〉〈Dolphy's Days〉延續 Dolphy 式尖銳跳音",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.3,
+    "z": -1.0,
+    "why": "中音跳音尖，小號高亮，鋼琴碎，長段即興"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dc4fbb5b-06c6-4db8-986b-63c9fa4a9b34",
+    "https://www.discogs.com/master/121954",
+    "https://www.discogs.com/release/3156925"
+   ],
+   "mbRgMbid": "dc4fbb5b-06c6-4db8-986b-63c9fa4a9b34",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "〈Balladia〉偏慢，整體 x 估 3.6"
+  },
+  {
+   "artist": "Arthur Jones",
+   "album": "Scorpio",
+   "year": 1971,
+   "label": "BYG Actuel",
+   "country": "us",
+   "faction": "byg",
+   "genres": [
+    "jazz"
+   ],
+   "why": "BYG Actuel 二線中音手 Arthur Jones 唯一領銜作，1969 巴黎錄音的無鋼琴三重奏（Beb Guérin、Claude Delcloo）",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.6,
+    "z": -1.2,
+    "why": "中音乾薄尖高，貝斯鼓稀疏推進，無鋼琴，旋律碎"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/56ff5ec1-f548-4f98-b5cb-77c9d9a7e3b5",
+    "https://www.discogs.com/master/221064",
+    "https://www.discogs.com/release/460599"
+   ],
+   "mbRgMbid": "56ff5ec1-f548-4f98-b5cb-77c9d9a7e3b5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "〈Sad Eyes〉13 分鐘偏抒情，整體仍躁"
+  },
+  {
+   "artist": "Jacques Coursil Unit",
+   "album": "Way Head",
+   "year": 1969,
+   "label": "BYG Actuel",
+   "country": "fr",
+   "faction": "byg",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Coursil 在 BYG 的首作（封面誤植 Way Head），小號＋Arthur Jones 中音的無鋼琴四重奏；冷硬、斷續的小號長音與尖銳中音",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.6,
+    "z": -1.5,
+    "why": "小號乾冷長音、中音尖，貝斯鼓稀，無鋼琴，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cc8f9040-fa29-4415-9515-32604212a0aa",
+    "https://www.discogs.com/master/35647",
+    "https://www.discogs.com/release/520449"
+   ],
+   "mbRgMbid": "cc8f9040-fa29-4415-9515-32604212a0aa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Way Ahead",
+   "uncertain": "正確盤名 Way Ahead（內頁與圈標），MB 用封面的 Way Head"
+  },
+  {
+   "artist": "Burton Greene Ensemble",
+   "album": "Aquariana",
+   "year": 1969,
+   "label": "BYG Actuel",
+   "country": "us",
+   "faction": "byg",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Burton Greene 移居巴黎後的 BYG 錄音，Coursil 小號、Arthur Jones 中音；預置鋼琴與琴弦刮奏、Bartók 式碎句",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.0,
+    "z": -1.4,
+    "why": "鋼琴內弦刮奏、小號中音尖，雙貝斯但無厚管"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7acfcb69-3071-4907-80e4-da9a44cdab78",
+    "https://www.discogs.com/master/60899",
+    "https://www.discogs.com/release/508158"
+   ],
+   "mbRgMbid": "7acfcb69-3071-4907-80e4-da9a44cdab78",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "雙貝斯，y 估 0.0 留邊距較窄"
+  },
+  {
+   "artist": "Joachim Kühn",
+   "album": "Sound of Feelings",
+   "year": 1969,
+   "label": "BYG Actuel",
+   "country": "de",
+   "faction": "byg",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Kühn 自由期的 BYG 三重奏（Jenny-Clark、Romano），鋼琴外另吹中音與嗩吶；短曲、叢音與尖嘯並置",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.5,
+    "z": -1.3,
+    "why": "鋼琴叢音刺、中音嗩吶尖嘯，鼓碎，無調短曲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/051be193-14f1-4028-b959-3f3a92cbc6d9",
+    "https://www.discogs.com/master/502072",
+    "https://www.discogs.com/release/520447"
+   ],
+   "mbRgMbid": "051be193-14f1-4028-b959-3f3a92cbc6d9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Acting Trio",
+   "album": "Acting Trio",
+   "year": 1969,
+   "label": "BYG Actuel",
+   "country": "fr",
+   "faction": "byg",
+   "genres": [
+    "jazz"
+   ],
+   "why": "BYG Actuel 最冷門的法國三重奏：次中音、鋼琴、走音調弦大提琴（Cello Discordato），劇場式即興",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.7,
+    "z": -1.7,
+    "why": "走音大提琴刮擦、鋼琴點刺、次中音尖，無鼓無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9f567f2d-a12f-478e-b652-53480c2c38ab",
+    "https://www.discogs.com/master/1761804",
+    "https://www.discogs.com/release/516112"
+   ],
+   "mbRgMbid": "9f567f2d-a12f-478e-b652-53480c2c38ab",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無鼓，x 靠張力撐，估 3.4"
+  },
+  {
+   "artist": "New York Art Quartet",
+   "album": "Mohawk",
+   "year": 1965,
+   "label": "Fontana",
+   "country": "us",
+   "faction": "us-small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "NYAQ 第二張、荷蘭 Fontana 發行（Van Gelder 錄音），Reggie Workman 換上貝斯；短曲但長號與中音的對位更硬",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.1,
+    "why": "長號中音對位尖，Graves 碎拍，短曲有主題但不好唱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/982b5c01-d6fa-4048-9f38-3db14ea39be4",
+    "https://www.discogs.com/master/316138",
+    "https://www.discogs.com/release/2748950"
+   ],
+   "mbRgMbid": "982b5c01-d6fa-4048-9f38-3db14ea39be4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "含標準曲〈Everything Happens to Me〉一首，z 估 −1.1"
+  },
+  {
+   "artist": "Free Music Quintet",
+   "album": "Free Music One and Two",
+   "year": 1968,
+   "label": "ESP-Disk'",
+   "country": "nl",
+   "faction": "esp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "ESP 晚期的荷蘭集體即興（Pierre Courbois 等五人，1968 農舍錄音）；小提琴、顫音琴、短笛、高音薩克斯風與軍號的尖細碎片，兩段 18 分鐘",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.7,
+    "z": -1.7,
+    "why": "小提琴、短笛、顫音琴尖高碎響，打擊零散，無調"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/333295",
+    "https://www.discogs.com/release/3366369",
+    "https://www.discogs.com/release/6199870"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Free Music Quintet\"",
+     "releasegroup:\"Free Music One\""
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此藝人與作品（ESP 1083），走人工身分"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/333295",
+    "https://www.discogs.com/release/3366369",
+    "https://www.discogs.com/release/6199870"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "五人都兼打擊；MB 無條目"
+  },
+  {
+   "artist": "Rolf + Joachim Kühn Quintet",
+   "album": "Transfiguration",
+   "year": 1967,
+   "label": "SABA",
+   "country": "de",
+   "faction": "euro",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Kühn 兄弟轉向自由爵士的第一張，Karl Berger 顫音琴客座；單簧管、低音單簧管與顫音琴的尖細高音交纏、鋼琴叢音",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.6,
+    "z": -1.3,
+    "why": "單簧管尖亮、顫音琴金屬點、鋼琴叢音，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/27cf7138-11e3-4634-900b-5b3f352a8b37",
+    "https://www.discogs.com/master/358218",
+    "https://www.discogs.com/release/895226"
+   ],
+   "mbRgMbid": "27cf7138-11e3-4634-900b-5b3f352a8b37",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Ric Colbeck Quartet",
+   "album": "The Sun Is Coming Up",
+   "year": 1970,
+   "label": "Fontana",
+   "country": "gb",
+   "faction": "us-small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Noah Howard ESP 盤的小號手 Colbeck 唯一領銜作，Mike Osborne 中音＋Jenny-Clark 貝斯，Fontana 發行；小號與中音尖銳對飆",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.5,
+    "z": -1.3,
+    "why": "小號中音高亮尖銳，無鋼琴，鼓碎，旋律不明"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f2feaad6-cd1c-413d-8c47-03988b4a54d0",
+    "https://www.discogs.com/master/4374768",
+    "https://www.discogs.com/release/1803663"
+   ],
+   "mbRgMbid": "f2feaad6-cd1c-413d-8c47-03988b4a54d0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無封面，封面取 Discogs"
+  },
+  {
+   "artist": "Sonny Simmons",
+   "album": "Rumasuma",
+   "year": 1970,
+   "label": "Contemporary",
+   "country": "us",
+   "faction": "us-small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Simmons／Barbara Donald 在西岸 Contemporary 的自由爵士盤，Billy Higgins 鼓、左右聲道各一把貝斯；中音小號高音齊奏的長段即興",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0.0,
+    "z": -1.0,
+    "why": "中音小號尖亮，Higgins 鼓輕快，雙貝斯但無厚管"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0409e7a2-852e-4ced-b738-dab0129cbf87",
+    "https://www.discogs.com/master/823372",
+    "https://www.discogs.com/release/1761170"
+   ],
+   "mbRgMbid": "0409e7a2-852e-4ced-b738-dab0129cbf87",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "雙貝斯，y 估 0.0"
+  },
+  {
+   "artist": "Roswell Rudd",
+   "album": "Everywhere",
+   "year": 1967,
+   "label": "Impulse!",
+   "country": "us",
+   "faction": "us-small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "NYAQ 長號手 Rudd 的首張領銜盤，Giuseppi Logan 長笛／低音單簧管、Robin Kenyatta 中音；長號滑音與長笛尖音的無鋼琴即興",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.2,
+    "z": -1.0,
+    "why": "長號滑音、長笛中音尖，無鋼琴，鼓鬆碎"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5c83733b-46d3-3c6c-b306-07dff1f4cb9f",
+    "https://www.discogs.com/master/274756",
+    "https://www.discogs.com/release/1692485"
+   ],
+   "mbRgMbid": "5c83733b-46d3-3c6c-b306-07dff1f4cb9f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Impulse! 非小廠，但為 ESP 同圈（NYAQ、Giuseppi Logan）；Rudd 帶 tailgate 長號味，z 估 −1.0"
+  },
+  {
+   "artist": "Marion Brown Quartet",
+   "album": "Why Not",
+   "year": 1968,
+   "label": "ESP-Disk'",
+   "country": "us",
+   "faction": "esp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Marion Brown 的第二張 ESP（1966 錄音），Stanley Cowell 鋼琴、Rashied Ali 鼓；中音薩克斯風的細長線條在 Ali 不分小節的鼓上漂移",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -0.9,
+    "why": "中音細亮，Ali 鼓流動不分拍，鋼琴叢音，主題短而散"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9ec6bdf4-18d3-40a7-b7c4-3abaaab8d523",
+    "https://www.discogs.com/master/80114",
+    "https://www.discogs.com/release/576933"
+   ],
+   "mbRgMbid": "9ec6bdf4-18d3-40a7-b7c4-3abaaab8d523",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "〈La Sorella〉〈Fortunato〉偏抒情；Geechee Recollections 評 3.2，本張估 3.4 偏邊"
+  }
+ ],
+ "notes": [
+  "只交 25 張，不足 54 張，照實交、不湊數。ESP 與 BYG Actuel 的二線大多已在池：Frank Wright（ESP 兩張、BYG《One for John》）、Noah Howard《At Judson Hall》《The Black Ark》、Sonny Sharrock 早期三張、Dave Burrell BYG 兩張、Grachan Moncur III 四張、Sunny Murray ESP 與 BYG、Patty Waters、Paul Bley ESP、Andrew Cyrille《What About?》、Jimmy Lyons《Other Afternoons》（已在 mc3）、Charles Tyler《Eastern Man Alone》（已在 mc31）、Sun Ra《Heliocentric》1、2 都已在池或已被提過。Clifford Thornton、Kenneth Terroade、Archie Shepp 的 BYG 小編制都是大編制或藍調主題，所以不收。Japanese 自由爵士（富樫、佐藤允彦、高木、阿部、山下、高柳、沖至、吉沢）在池中已經很多，這批沒有從那裡補。",
+  "拿池中同場景的分數當尺：池裡 ESP／BYG 的次中音火力盤 y 都被評成重（Frank Wright Trio y=1.2、Sunny Murray ESP y=1.0、Ayler 0.7–1.2、Noah Howard《Judson Hall》0.8、Dave Burrell《Echo》1.3）。所以這批只收中音、單簧管、小號、弦樂、顫音琴或鋼琴領奏的小編制，次中音火力型一律不收：Gato Barbieri《In Search of the Mystery》、Frank Wright《Uhuru Na Umoja》、Sunny Murray《Sonny's Time Now》、Alan Shorter《Orgasm》《Tes Esat》、Dewey Redman《Look for the Black Star》。Steve Lacy 在池中的分數 x 落在 3.0–3.2 貼邊，所以《Moon》《The Gap》《Trickles》《Wordless》不提。Hampel《The 8th of July 1969》池中評 3.0／0.2，貼邊，所以 Birth 時期的盤不收，只收較躁的 ESP《Music From Europe》。",
+  "現場盤擋下的（依 Discogs 記事判定）：Giuseppi Logan《More》（Town Hall）、Marion Brown／Gunter Hampel《Gesprächsfetzen》（慕尼黑劇場現場）、Clifford Thornton《The Panther and the Lash》（ORTF 現場）、Roswell Rudd《Roswell Rudd》（America，Hilversum 電台現場）、Frank Wright《Last Polka in Nancy?》、Hampel／Jeanne Lee／Perry Robinson《Spirits》（WKCR 電台現場）、Paul Van Gysegem《Aorta》（大半是現場）、Burton Greene《On Tour》、Steve Lacy《The Forest and the Zoo》、Noah Howard《Live at the Swing Club》等。",
+  "雙鼓、大編制、帶電吉他或電子的盤擋下：Burton Greene Quartet（ESP 1024，兩位打擊）、Noah Howard《Space Dimension》（雙鼓）與《Patterns》（電吉他＋康加鼓）、Michel Portal《Alors!!!》（雙打擊＋上低音）、Wolfgang Dauner《Free Action》（雙鼓）、Kühn《Monday Morning》（雙鼓）《Bloody Rockers》（電吉他）《Paris Is Wonderful》（B 面雙鼓）、Bob James《Explosions》（磁帶電子）、Marzette Watts 兩張（六人以上、Sharrock 電吉他）、Byard Lancaster《It's Not Up to Us》（電吉他、標準曲）、Ketchaoua、Africanasia、Love Rejoice、Big Chief、Hommage to Africa、Freedom & Unity。",
+  "身分：24 張 MB 釘住、1 張人工身分（Free Music Quintet《Free Music One and Two》，ESP 1083，MB 查無）。MB 首發年誤記成再版年的 RG，年份改用 Discogs 原盤年：Charles Tyler Ensemble 1966（MB 寫 2009）、Gunter Hampel Group 1967（MB 寫 2008）、Lowell Davidson 1965（MB 寫 1969）、Giuseppi Logan 1965（MB 寫 1964-05）。Noah Howard Quartet 在 MB 只有 2003 CD 的 RG《And About Love》（曲目與原盤相同），卡名用原盤名，queryAlias 填 CD 名。Coursil 的盤名依 MB 用 Way Head（正確名 Way Ahead，填進 queryAlias）。Silva 的盤名依 MB 用 Skilfullness（Discogs 寫 Skillfullness，填進 queryAlias）。",
+  "封面：25 張都有 Discogs 發行頁圖（evidence 第二、三個網址）；Ric Colbeck 在 CAA 沒有封面，只能用 Discogs。",
+  "WebSearch 用了 0 次；全部用 MB API 與 Discogs API（ESP-Disk'、BYG Actuel、America、Futura、Center of the World、Black Saint 的廠牌目錄）。"
+ ]
+}

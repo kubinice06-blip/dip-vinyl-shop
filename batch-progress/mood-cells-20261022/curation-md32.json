@@ -1,0 +1,963 @@
+{
+ "group": "md32",
+ "factions": [
+  {
+   "id": "kranky",
+   "zh": "Kranky 系室內樂／吉他 drone 二線",
+   "count": 2,
+   "why": "Kranky 二線：霧化長音、低頻、冷"
+  },
+  {
+   "id": "touch",
+   "zh": "Touch 系電聲 drone 二線",
+   "count": 9,
+   "why": "Touch 二線：合成器／電聲長音、工業暗色、低頻"
+  },
+  {
+   "id": "room40",
+   "zh": "Room40 系厚重 drone 二線",
+   "count": 6,
+   "why": "Room40 二線：低頻翻湧、回授長音、夜色音塊"
+  },
+  {
+   "id": "miasmah-denovali",
+   "zh": "Miasmah／Denovali 系黑色 drone",
+   "count": 4,
+   "why": "Miasmah／Denovali 二線：弓弦黑霧、扭曲吉他 drone"
+  },
+  {
+   "id": "ext-cold",
+   "zh": "外延：冷 drone／微聲（Glacial Movements、Hallow Ground、Type、Ash、Ideologic Organ）",
+   "count": 9,
+   "why": "場景外延：冰冷長音、低頻儀式 drone、暗色微聲"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Siavash Amini",
+   "album": "Serus",
+   "year": 2019,
+   "label": "Room40",
+   "country": "ir",
+   "faction": "room40",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "德黑蘭電聲作曲家在 Room40 的首作，Boomkat 稱其「壓垮人的黑暗、不祥的夜景」；無鼓的厚殘響音塊把人往夢魘裡拖，靜、重、冷",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -1.3,
+    "why": "無鼓，夜色音塊與長殘響厚霧，陰沉壓頂"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/32902fa1-bd0c-49ea-8a6a-258898455217",
+    "https://coverartarchive.org/release-group/32902fa1-bd0c-49ea-8a6a-258898455217/front",
+    "https://boomkat.com/artists/siavash-amini/releases/aopwbpza/serus"
+   ],
+   "sourceQuote": "Crushingly dark and ominous avant-classical nocturnal scapes",
+   "mbRgMbid": "32902fa1-bd0c-49ea-8a6a-258898455217",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Werner Dafeldecker",
+   "album": "Parallel Darks",
+   "year": 2020,
+   "label": "Room40",
+   "country": "at",
+   "faction": "room40",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "維也納低音提琴手的首張電聲個人作，被拿來比 Kevin Drumm、Emptyset 的低頻翻湧；無鼓、顆粒厚、暗，屬 Room40 二線的低頻盤",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.5,
+    "z": -1.4,
+    "why": "無鼓，低音提琴電聲翻湧，顆粒厚、暗"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c82ac97a-b677-45bb-a140-2c0e527ff725",
+    "https://coverartarchive.org/release-group/c82ac97a-b677-45bb-a140-2c0e527ff725/front",
+    "https://boomkat.com/artists/werner-dafeldecker/releases/pgdbf3yl/parallel-darks"
+   ],
+   "sourceQuote": "an engrossing side of textural roil comparable with enigmas by Kevin Drumm, Emptyset",
+   "mbRgMbid": "c82ac97a-b677-45bb-a140-2c0e527ff725",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Daniel Menche",
+   "album": "Forlorn",
+   "year": 2022,
+   "label": "Room40",
+   "country": "us",
+   "faction": "room40",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "波特蘭噪音老將收起噪牆，改用回聲共鳴長音寫「被遺棄」的隔離盤；Boomkat 稱之為「墜入心靈深處的末日潛行」，低沉、包覆、冷",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.5,
+    "z": -1.1,
+    "why": "無鼓，回聲共鳴長音層層堆厚，往下沉"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/03abdf8a-da10-4b15-b190-d22966960339",
+    "https://coverartarchive.org/release-group/03abdf8a-da10-4b15-b190-d22966960339/front",
+    "https://boomkat.com/artists/daniel-menche/releases/uejhya68/forlorn"
+   ],
+   "sourceQuote": "bathing himself in echoed-out resonant drones ... a doomed dive into the psyche",
+   "mbRgMbid": "03abdf8a-da10-4b15-b190-d22966960339",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kristof Hahn",
+   "album": "Six Pieces",
+   "year": 2021,
+   "label": "Room40",
+   "country": "de",
+   "faction": "room40",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Swans 吉他手 Kristof Hahn 在 Room40 的個人 drone 盤，滑棒吉他回授與音箱轟鳴堆成迴響長音；無鼓、厚、陰森",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.4,
+    "z": -0.8,
+    "why": "無鼓，滑棒吉他回授長音迴圈，厚而陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/16c97d93-643e-47f2-bf7e-8f79e5e6ea3d",
+    "https://coverartarchive.org/release-group/16c97d93-643e-47f2-bf7e-8f79e5e6ea3d/front",
+    "https://boomkat.com/artists/kristof-hahn/releases/tae3gwnw/six-pieces"
+   ],
+   "sourceQuote": "reverberating drone scapes ... Billowing feedback and amp worship ... ghoulish silhouette",
+   "mbRgMbid": "16c97d93-643e-47f2-bf7e-8f79e5e6ea3d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Christina Vantzou",
+   "album": "No. 4",
+   "year": 2018,
+   "label": "Kranky",
+   "country": "be",
+   "faction": "kranky",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Kranky 室內樂 drone 二線代表；第四張比前作更陰，Boomkat 說「冷峻縈繞」「夜間音樂」、帶低聲的不協和，霧化長音把人包住，旋律不明",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.0,
+    "z": -0.8,
+    "why": "無鼓，合成器與弦管霧化長音，暗調不協和"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8690d836-60a1-41eb-b9a9-feb5fbf54928",
+    "https://coverartarchive.org/release-group/8690d836-60a1-41eb-b9a9-feb5fbf54928/front",
+    "https://boomkat.com/artists/christina-vantzou/releases/hbewjss2/no-4"
+   ],
+   "sourceQuote": "starkly haunting No.4 ... smoky dream sequence logic ... night time music",
+   "mbRgMbid": "8690d836-60a1-41eb-b9a9-feb5fbf54928",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "室內樂聲部偏乾淨時 y 可能掉到 0.7"
+  },
+  {
+   "artist": "Christina Vantzou",
+   "album": "No. 3",
+   "year": 2015,
+   "label": "Kranky",
+   "country": "be",
+   "faction": "kranky",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Kranky 系夢遊式室內樂 drone，14 人編制加一堆類比合成器糊成「深藍色的霧」；無鼓、長音包覆、偏冷",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 0.9,
+    "z": -0.6,
+    "why": "無鼓，室內樂與合成器長音糊成霧，冷藍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/49705368-66dc-4b55-b9a1-e3632d90d247",
+    "https://coverartarchive.org/release-group/49705368-66dc-4b55-b9a1-e3632d90d247/front",
+    "https://boomkat.com/artists/christina-vantzou/releases/aq2rvfty/no-3"
+   ],
+   "sourceQuote": "a super rich vein of somnambulant chamber drone ... unpackages a deep blue myst",
+   "mbRgMbid": "49705368-66dc-4b55-b9a1-e3632d90d247",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "弦管旋律若被判清楚，z 可能回到 −0.2"
+  },
+  {
+   "artist": "Gareth Davis & Frances-Marie Uitti",
+   "album": "Gramercy",
+   "year": 2012,
+   "label": "Miasmah",
+   "country": "nl",
+   "faction": "miasmah-denovali",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Miasmah 最黑的一張原聲盤：低音單簧管與大提琴的長音拖曳，Boomkat 稱「不可思議的黑心」「讓人虛脫」；無鼓、低頻、冷",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.1,
+    "z": -1.3,
+    "why": "無鼓，低音單簧管與大提琴長音拖曳，黑而冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5039051b-821a-4c51-a8e7-94d66edd5a4b",
+    "https://coverartarchive.org/release-group/5039051b-821a-4c51-a8e7-94d66edd5a4b/front",
+    "https://boomkat.com/artists/gareth-davis-frances-marie-uitti/releases/ktnemn7p/gramercy"
+   ],
+   "sourceQuote": "The latest impossibly black-hearted offering from Miasmah ... sublimely haunting, enervating sound",
+   "mbRgMbid": "5039051b-821a-4c51-a8e7-94d66edd5a4b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "AUN",
+   "album": "Black Pyramid",
+   "year": 2010,
+   "label": "Cyclic Law",
+   "country": "ca",
+   "faction": "miasmah-denovali",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "蒙特婁吉他電子 drone 組（後由 Denovali 重發）的宇宙暗物質盤，「不祥的漂浮巨石」，扭曲吉他與電子層層堆厚；無鼓、重、冷",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.6,
+    "z": -1.2,
+    "why": "無鼓，扭曲吉他與電子堆成厚牆，暗"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fb09a959-5780-4a75-a494-cfac0640f656",
+    "https://coverartarchive.org/release-group/fb09a959-5780-4a75-a494-cfac0640f656/front",
+    "https://boomkat.com/artists/aun/releases/gnfpxj5y/black-pyramid"
+   ],
+   "sourceQuote": "the ominous floating monolith \"Black Pyramid\" ... While still dealing in dark matter, the twisted guitar and electronics mutations",
+   "mbRgMbid": "fb09a959-5780-4a75-a494-cfac0640f656",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "UnicaZürn",
+   "album": "Sensudestricto",
+   "year": 2019,
+   "label": "Touch",
+   "country": "gb",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Coil／Cyclobe 的 Stephen Thrower 與 David Knight 的合成器 drone 組在 Touch 的長段作品；工業 ambient 的無定形長音，「迷幻恐怖」，無鼓、厚、冷",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -1.3,
+    "why": "無鼓，合成器無定形長音，工業暗色"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7b783076-1206-41d1-9d91-d901e10186d8",
+    "https://boomkat.com/artists/unicazurn/releases/y5gl3mrj/sensudestricto",
+    "https://www.discogs.com/master/1576124-UnicaZ%C3%BCrn-Sensudestricto"
+   ],
+   "sourceQuote": "steeply immersive, abstract industrial/experimental ambient ... amorphous, shapeshifting drone structures that speak to visions of psychedelic horror",
+   "mbRgMbid": "7b783076-1206-41d1-9d91-d901e10186d8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "UnicaZürn",
+   "album": "Transpandorem",
+   "year": 2017,
+   "label": "Touch",
+   "country": "gb",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "UnicaZürn 第四張、首張 Touch 作，兩段無縫長曲把類比合成器 drone 拉成深度抽象的空間；無鼓、厚墊、偏冷",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.2,
+    "z": -1.0,
+    "why": "無鼓，類比合成器長段 drone，厚墊偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9fb932ad-0178-4791-aed3-9eb501ee1d63",
+    "https://coverartarchive.org/release-group/9fb932ad-0178-4791-aed3-9eb501ee1d63/front",
+    "https://boomkat.com/artists/unicazurn/releases/fuiavedf/transpandorem"
+   ],
+   "sourceQuote": "luring us into deeply abstracted ambient dimensions",
+   "mbRgMbid": "9fb932ad-0178-4791-aed3-9eb501ee1d63",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Boomkat 文案只說 deeply abstracted，暗色證據偏弱"
+  },
+  {
+   "artist": "Cleared",
+   "album": "Of Endless Light",
+   "year": 2022,
+   "label": "Touch",
+   "country": "us",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Steven Hess 與 Michael Vallera 的芝加哥組合在 Touch 的第二張，回望城市工業廢墟的低光暗色 ambient（RIYL Lustmord、Deathprod）；打擊只零星點綴、不推拍，厚、冷",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "零星打擊不推拍，低光暗色長音，工業冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/438fc92a-042e-4860-84a7-a8466310b10b",
+    "https://coverartarchive.org/release-group/438fc92a-042e-4860-84a7-a8466310b10b/front",
+    "https://boomkat.com/artists/cleared/releases/t46dosmm/of-endless-light"
+   ],
+   "sourceQuote": "a lengthy and faded set of low-light dark ambience, punctuated by Hess's expert percussion. RIYL Lustmord, Deathprod, Scanner",
+   "mbRgMbid": "438fc92a-042e-4860-84a7-a8466310b10b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有零星打擊，若被當成節拍 x 會升"
+  },
+  {
+   "artist": "drøne",
+   "album": "feral",
+   "year": 2025,
+   "label": "Touch",
+   "country": "gb",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Touch 老闆 Mike Harding 與 Locust 的 Mark Van Hoen 合組的 drøne，「幽靈般的後工業荒地」裡的無定形長音與機械翻攪；無鼓、厚、冷",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.4,
+    "z": -1.1,
+    "why": "無鼓，機械翻攪與無定形長音，後工業冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6a2217e8-640e-4598-af70-bfa6d6e5fa62",
+    "https://coverartarchive.org/release-group/6a2217e8-640e-4598-af70-bfa6d6e5fa62/front",
+    "https://boomkat.com/artists/drone-ba8a19/releases/upt4b9bh/feral"
+   ],
+   "sourceQuote": "in phantom post-industrial wastelands ... an amorphous suite shapeshifting from mechanical churn",
+   "mbRgMbid": "6a2217e8-640e-4598-af70-bfa6d6e5fa62",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mika Vainio",
+   "album": "Onko",
+   "year": 1997,
+   "label": "Touch",
+   "country": "fi",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Pan Sonic 的 Mika Vainio 首張具名個人作，離開舞池節拍，只留「起伏陰間裡的靜電與低鳴」；正弦低頻與噪點，冷硬下沉",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.3,
+    "z": -1.4,
+    "why": "無鼓，正弦低鳴與靜電顆粒，金屬冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2dd4cdce-386c-3486-9217-833a0158830d",
+    "https://coverartarchive.org/release-group/2dd4cdce-386c-3486-9217-833a0158830d/front",
+    "https://boomkat.com/artists/mika-vainio/releases/unduhvxo/onko"
+   ],
+   "sourceQuote": "Static and rumblings from the heaving netherworld of electronic sound experimentation",
+   "mbRgMbid": "2dd4cdce-386c-3486-9217-833a0158830d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Phill Niblock",
+   "album": "Touch Strings",
+   "year": 2009,
+   "label": "Touch",
+   "country": "us",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Niblock 在 Touch 的第四張，雙碟電吉他與貝斯 e-bow 微分音長音，拍頻層層堆厚；無鼓、密、冷，接續 md6 收的 Touch Food／Three",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.6,
+    "z": -1.0,
+    "why": "無鼓，電吉他貝斯微分音長音拍頻，厚密"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f1bb3ac8-d117-4197-97fe-f394199ad66e",
+    "https://coverartarchive.org/release-group/f1bb3ac8-d117-4197-97fe-f394199ad66e/front",
+    "https://boomkat.com/artists/phill-niblock/releases/zv3h6nfy/touch-strings"
+   ],
+   "sourceQuote": "another commanding body of drone works ... electric guitars and basses with a little e-bow intervention to sustain solid tones",
+   "mbRgMbid": "f1bb3ac8-d117-4197-97fe-f394199ad66e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Phill Niblock",
+   "album": "Touch Five",
+   "year": 2013,
+   "label": "Touch",
+   "country": "us",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Niblock 1998–2012 委託作品集成的第五張 Touch 盤，大提琴、豎琴與吉他四重奏的微分音巨牆，Boomkat 稱其 drone「元素般的力量」；無鼓、厚、冷",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.6,
+    "z": -1.0,
+    "why": "無鼓，器樂微分音長音堆成巨牆，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5d32f99f-682f-4d40-87f1-7eba67da4e42",
+    "https://coverartarchive.org/release-group/5d32f99f-682f-4d40-87f1-7eba67da4e42/front",
+    "https://boomkat.com/artists/phill-niblock/releases/diovxm9o/touch-five"
+   ],
+   "sourceQuote": "reminder of the elemental power to Phill Niblock's drone music",
+   "mbRgMbid": "5d32f99f-682f-4d40-87f1-7eba67da4e42",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Norman Westberg",
+   "album": "13",
+   "year": 2015,
+   "label": "Room40",
+   "country": "us",
+   "faction": "room40",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Swans 吉他手 Westberg 的「氣壓系統」，弓拉貝斯與吉他經延遲殘響堆成重壓長音；Room40 重發，無鼓、低頻厚、陰",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.4,
+    "z": -0.9,
+    "why": "無鼓，弓拉貝斯與吉他延遲長音，低頻壓頂"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4f0bbf14-eede-4add-8642-a8b3cdaea01f",
+    "https://coverartarchive.org/release-group/4f0bbf14-eede-4add-8642-a8b3cdaea01f/front",
+    "https://boomkat.com/artists/norman-westberg/releases/vimwuxwr/13"
+   ],
+   "sourceQuote": "Room40 catch a seriously heavy vibe from SWANS guitarist Norman Westberg ... pressure system ... bowed Gibson EB Bass",
+   "mbRgMbid": "4f0bbf14-eede-4add-8642-a8b3cdaea01f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Svarte Greiner",
+   "album": "Apart",
+   "year": 2017,
+   "label": "Miasmah",
+   "country": "no",
+   "faction": "miasmah-denovali",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Erik K Skodvin 的 Svarte Greiner 在廢棄工業空間錄下的預置大提琴組曲，「莊嚴、肅穆」；弓弦黑霧與空間殘響，無鼓、重、冷",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.2,
+    "z": -1.2,
+    "why": "無鼓，預置大提琴弓弦長音與廢墟殘響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/551a5f41-6991-4098-ade1-fdbf356acd21",
+    "https://coverartarchive.org/release-group/551a5f41-6991-4098-ade1-fdbf356acd21/front",
+    "https://boomkat.com/artists/svarte-greiner/releases/r85bli7a/apart"
+   ],
+   "sourceQuote": "a brilliant, solemn new work ... a suite of pieces for prepared Cello and location recordings, recorded in an abandoned industrial space",
+   "mbRgMbid": "551a5f41-6991-4098-ade1-fdbf356acd21",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Rosy Parlane",
+   "album": "Iris",
+   "year": 2004,
+   "label": "Touch",
+   "country": "nz",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "紐西蘭 Rosy Parlane 的首張 Touch 盤，電腦處理的長音 drone，Boomkat 形容它屬於聲譜「冰河的那一端」；無鼓、霧厚、冷",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.0,
+    "z": -0.9,
+    "why": "無鼓，處理過的長音霧，冰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/db2992b9-abb0-3a3d-85e1-a94bda2526d5",
+    "https://boomkat.com/artists/rosy-parlane/releases/x5xjjwcc/iris"
+   ],
+   "sourceQuote": "where 'Iris' dealt with the more glacial end of the sound spectrum",
+   "mbRgMbid": "db2992b9-abb0-3a3d-85e1-a94bda2526d5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏高頻微聲時 y 可能掉到 0.7"
+  },
+  {
+   "artist": "Rafael Anton Irisarri",
+   "album": "The Unintentional Sea",
+   "year": 2013,
+   "label": "Room40",
+   "country": "us",
+   "faction": "room40",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Irisarri 寫給鹽湖 Salton Sea 的輓歌，磁帶噪點浸透的長音全景，A Closer Listen 說它「像一觸即燃的乾旱塵盆」；無鼓、糊、荒涼",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "無鼓，磁帶噪點浸透的長音，荒涼"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2283c629-5829-4a2d-b48b-3f09f422b855",
+    "https://coverartarchive.org/release-group/2283c629-5829-4a2d-b48b-3f09f422b855/front",
+    "https://boomkat.com/artists/rafael-anton-irisarri/releases/xynvjkdf/the-unintentional-sea",
+    "https://acloserlisten.com/2013/12/06/rafael-anton-irisarri-the-unintentional-sea/"
+   ],
+   "sourceQuote": "ambient panoramas bathed in tape noise ... the most desolate moments from Aphex Twin's 'Selected Ambient Works Vol. II'",
+   "mbRgMbid": "2283c629-5829-4a2d-b48b-3f09f422b855",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Gultskra Artikler",
+   "album": "Kasha iz topora",
+   "year": 2007,
+   "label": "Miasmah",
+   "country": "ru",
+   "faction": "miasmah-denovali",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "俄國 Alexey Devyanin 的 Miasmah 首作，「冬天般的怪異聲音明信片」，覆滿老唱片爆音與嘶聲；無鼓、糊、冷",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.0,
+    "z": -0.8,
+    "why": "無鼓，唱片爆音嘶聲糊成霧，冬寒"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/38972575-2228-334b-a3dd-e36803a6a98b",
+    "https://coverartarchive.org/release-group/38972575-2228-334b-a3dd-e36803a6a98b/front",
+    "https://boomkat.com/artists/gultskra-artikler/releases/eqfmxrpl/kasha-iz-topora-490518"
+   ],
+   "sourceQuote": "a scrapbook of odd, wintry sonic postcards ... coated in the kind of archaic vinyl crackle and ancient hiss",
+   "mbRgMbid": "38972575-2228-334b-a3dd-e36803a6a98b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "drone-folk 成分若旋律清楚會往暖"
+  },
+  {
+   "artist": "Siavash Amini & Eugene Thacker",
+   "album": "Songs for Sad Poets",
+   "year": 2022,
+   "label": "Hallow Ground",
+   "country": "ir",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Amini 與哲學作家 Eugene Thacker 在 Hallow Ground 的合作，Boomkat 稱「令人信服的荒涼」「幽閉、重度處理的末日長音」；無鼓、厚、冷",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.5,
+    "z": -1.3,
+    "why": "無鼓，重處理末日長音，幽閉陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a8a875a1-9692-4e80-9ad9-4625a784b9c6",
+    "https://coverartarchive.org/release-group/a8a875a1-9692-4e80-9ad9-4625a784b9c6/front",
+    "https://boomkat.com/artists/siavash-amini-eugene-thacker/releases/ocbjnr6g/songs-for-sad-poets"
+   ],
+   "sourceQuote": "Convincingly bleak, high-minded material ... Claustrophobic, heavily processed doomdrones",
+   "mbRgMbid": "a8a875a1-9692-4e80-9ad9-4625a784b9c6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Siavash Amini",
+   "album": "FORAS",
+   "year": 2018,
+   "label": "Hallow Ground",
+   "country": "ir",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Amini 在 Hallow Ground 的第二張，Boomkat 稱「陰天般的大氣電子氣壓系統」：粗噪電子與顆粒合成疊成低壓雲層；無鼓、厚、冷",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.6,
+    "z": -1.2,
+    "why": "無鼓，粗噪與顆粒合成疊成低壓雲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/657d921f-2f96-438a-88d5-8c680d4e3c51",
+    "https://boomkat.com/artists/siavash-amini/releases/7couxp6u/foras"
+   ],
+   "sourceQuote": "Excellent, overcast atmospheric electronic pressure systems",
+   "mbRgMbid": "657d921f-2f96-438a-88d5-8c680d4e3c51",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "文案提到 harsh electronic noise，若噪感強 x 會升"
+  },
+  {
+   "artist": "Siavash Amini",
+   "album": "TAR",
+   "year": 2017,
+   "label": "Hallow Ground",
+   "country": "ir",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Amini 首張 Hallow Ground 盤，ambient／噪音與現代古典交織，停在清醒與夢魘之間；弦樂長音被噪霧吞沒，無鼓、厚、陰",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.4,
+    "z": -1.1,
+    "why": "無鼓，弦樂長音被噪霧吞沒，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8fbe6b4b-1843-4291-ac39-290f86121948",
+    "https://coverartarchive.org/release-group/8fbe6b4b-1843-4291-ac39-290f86121948/front",
+    "https://boomkat.com/artists/siavash-amini/releases/biwgdjig/tar"
+   ],
+   "sourceQuote": "a poetically plotted suite of ambient/noise and modern classical composition ... the space between waking life and nightmares",
+   "mbRgMbid": "8fbe6b4b-1843-4291-ac39-290f86121948",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Pjusk",
+   "album": "Tele",
+   "year": 2012,
+   "label": "Glacial Movements",
+   "country": "no",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "挪威 Pjusk 在冰河主題廠牌 Glacial Movements 的第三張，「孤立的暗色 ambient」「遼闊荒涼」，盤名意為凍土下的水；無鼓、霧、冷",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.1,
+    "z": -1.2,
+    "why": "無鼓，暗色長音與冰冷空間霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f0a5da7d-2873-4e67-a9e3-f73e3c480ed7",
+    "https://coverartarchive.org/release-group/f0a5da7d-2873-4e67-a9e3-f73e3c480ed7/front",
+    "https://boomkat.com/artists/pjusk/releases/6pw82wgt/tele"
+   ],
+   "sourceQuote": "a third album of isolated dark ambient tones and space ... wide, desolate soundscapes ... 'Tele' - meaning frozen underground water",
+   "mbRgMbid": "f0a5da7d-2873-4e67-a9e3-f73e3c480ed7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Retribution Body",
+   "album": "Aokigahara",
+   "year": 2015,
+   "label": "Type",
+   "country": "us",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Type 的低頻 drone 冷門盤，以青木原樹海為名，「綻開的黑色聲團」、低頻操控被比作 Earth、Sunn O)))、Niblock；無鼓、極重、冷",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.8,
+    "z": -1.2,
+    "why": "無鼓，低頻黑色聲團，重壓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b3fa6025-cd9d-4511-833a-44c48da00380",
+    "https://coverartarchive.org/release-group/b3fa6025-cd9d-4511-833a-44c48da00380/front",
+    "https://boomkat.com/artists/retribution-body/releases/7vakv6n5/aokigahara"
+   ],
+   "sourceQuote": "blooming black mass of acoustic drone alchemy ... low end frequency manipulation on a par with the likes of Earth, Sunn 0))) or Phill Niblock",
+   "mbRgMbid": "b3fa6025-cd9d-4511-833a-44c48da00380",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "William Fowler Collins",
+   "album": "Perdition Hill Radio",
+   "year": 2009,
+   "label": "Type",
+   "country": "us",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "新墨西哥 William Fowler Collins 的 Type 首作，「密不透風、令人戰慄的午夜音樂」，崩塌的吉他與短波 drone；無鼓、厚、陰冷",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.6,
+    "z": -1.5,
+    "why": "無鼓，崩塌吉他與短波長音，午夜陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7e9138c4-7f1e-4e47-8f3e-427899f1f463",
+    "https://boomkat.com/artists/william-fowler-collins/releases/v7dvqpjo/perdition-hill-radio"
+   ],
+   "sourceQuote": "one of the most relentless collections of dense and harrowing midnight music ... crumbling, derelict sonic constructions",
+   "mbRgMbid": "7e9138c4-7f1e-4e47-8f3e-427899f1f463",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "harrowing 可能讓 x 偏高"
+  },
+  {
+   "artist": "William Fowler Collins",
+   "album": "The Resurrections Unseen",
+   "year": 2011,
+   "label": "Type",
+   "country": "us",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Collins 的第二張 Type 盤，「剪影般的黑金屬 ambience」，永夜的沙漠吉他長音緩慢腐朽；無鼓、厚、冷",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.6,
+    "z": -1.5,
+    "why": "無鼓，黑金屬式吉他長音霧，永夜"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/06ef4969-0d92-49a9-a9bf-489e4752dfc1",
+    "https://boomkat.com/artists/william-fowler-collins/releases/9gkxac4e/the-resurrections-unseen"
+   ],
+   "sourceQuote": "The silhouetted, impressionistic black metal ambience ... exists in a permanent nighttime state",
+   "mbRgMbid": "06ef4969-0d92-49a9-a9bf-489e4752dfc1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "BJ Nilsen & Stilluppsteypa",
+   "album": "Space Finale",
+   "year": 2010,
+   "label": "Editions Mego",
+   "country": "se",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Touch 系 BJ Nilsen 與冰島 Stilluppsteypa 的 Mego 合作，四段長曲把田野素材磨碎成「一畝接一畝的持續長音」「廣闊煙霧」；無鼓、糊、冷",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "無鼓，類比合成與磨碎素材的持續長音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b1080ddf-fd5f-4875-9896-5427d93a0af6",
+    "https://boomkat.com/artists/bj-nilsen-stilluppsteypa/releases/gttxz4jf/space-finale"
+   ],
+   "sourceQuote": "obliterated field recordings, vintage synth timbres ... acre after acre of sustaining, continuous sound ... vast, smoky vistas",
+   "mbRgMbid": "b1080ddf-fd5f-4875-9896-5427d93a0af6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Golem Mecanique",
+   "album": "Nona, decima et morta",
+   "year": 2020,
+   "label": "Ideologic Organ",
+   "country": "fr",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Stephen O'Malley 的 Ideologic Organ 收的法國 Karen Jebane 單人長曲，絞弦琴長音翻湧、人聲幽魂般飄浮，緩燃不協和；無鼓、厚、冷",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.4,
+    "z": -1.2,
+    "why": "無鼓，絞弦琴長音翻湧，不協和"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1245bb0d-a9ed-4c30-9c7f-9afa2363905a",
+    "https://boomkat.com/artists/golem-mecanique/releases/gwpezf5r/nona-decima-et-morta"
+   ],
+   "sourceQuote": "billowing hurdy-gurdy-like tones ... two spellbinding durational works full of visceral, slow-burning and dissonant energy",
+   "mbRgMbid": "1245bb0d-a9ed-4c30-9c7f-9afa2363905a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有人聲吟唱，若被聽成歌謠旋律 z 會升"
+  },
+  {
+   "artist": "Phurpa",
+   "album": "Trowo Phurnag Ceremony",
+   "year": 2010,
+   "label": "Ideologic Organ",
+   "country": "ru",
+   "faction": "ext-cold",
+   "genres": [
+    "world",
+    "ambient"
+   ],
+   "why": "俄國 Phurpa 的苯教儀式喉音吟誦，由 O'Malley 的 Ideologic Organ 重發、被 drone 圈視為人聲版 Sunn O)))；極低的喉音長音與法器，無鼓拍、催眠、冷",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.6,
+    "z": -1.0,
+    "why": "無鼓拍，極低喉音吟誦長音，催眠"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/211f847b-7f1c-4e6c-8792-8c8bbadcc368",
+    "https://coverartarchive.org/release-group/211f847b-7f1c-4e6c-8792-8c8bbadcc368/front",
+    "https://boomkat.com/artists/phurpa/releases/xmzqo5dk/trowo-phurnag-ceremony"
+   ],
+   "sourceQuote": "an album of traditional Tibetan Buddhist Tantric chanting ... Stephen O'Malley explains",
+   "mbRgMbid": "211f847b-7f1c-4e6c-8792-8c8bbadcc368",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "原盤 2008 Sketis Music；非電子，genres 走 world"
+  }
+ ],
+ "notes": []
+}
