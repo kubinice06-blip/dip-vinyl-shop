@@ -130,3 +130,15 @@
 - **21708** 照 note 只寫列出項；Dissolve 的「樂評形容霧氣般、極簡」改成不掛來源的聲音描述（「聲音如霧般極簡」）；Heaphy 的毛利與白人一項改寫成「視覺藝術創作一直圍繞著毛利人與白人的關係」，避免與 hook 逐字重複。Mesmerised 的「一人完成」、Firmament IV 的「樂迷補登」、Surcease 的「發行說明宣告結束」已由 hook 承載，正文不再複述。Firmament IV 不寫「仍由」Beggars Banquet（承接 III 屬跨卡推論，note 沒列）。
 - **21709** 自掃：本檔中文 4-gram 初稿 2 張殘片 3 條（改用本名、連作的第、在年推出）先行拆掉；與 out-1 合掃後再拆 3 條 2 張殘片（做到年月、首加起來、掛名欄上，都改本檔）；定稿合掃 3 次以上 0 條，2 張只剩 out-1 內部的 品年月日、這個計畫。對 writer-1 的 hook 4-gram 0 撞。Tau／Surcease 的「英國 drone 計畫 Main」改成「英國的…計畫」「這個英國…計畫」兩種，避開同形。
 - **21710** 腳本：`node qa-batch.mjs out add-20261023-md31` 全部通過（互指 3 處：Firmament IV／Tau 的 Robert Hampson、Köner 的 Sonic Boom，皆同藝人內部，同 21698 保留）；`qa-check-research` 13 張標記 0；`fix-spacing` 待補 0。輔助腳本在 scratchpad `wr-md31-2/`（md31w2-draft.py、md31w2-ngram.py）。
+
+## 寫作層（writer-1）
+- **21701** 交件：`desc-tools/batches/output/add-20261023-md31-out-1.json` 13 張（full／partial 11：188–240；thin 2：Worn to a Shadow 150、The Weight of Accumulation 129）。逐張：Anjou 221、Epithymía 238、The Sky's Run Into the Sea 240、Vectors 223、Répercussions 222、Worn 150、Refuge 216、Dreamt 222、Moments 209、Location 193、Homage 188、Weight 129、Pulse 224。初稿只有 Growing 244 超標，整格捨去「全在當地完成」的贅字與兩個「的」；Epithymía 240 再削「那陣」。
+- **21702** 第二句領句全照鉤子層：里奇蒙（Anjou）／兩人（Epithymía）／樂器分工（Growing）／生年出生地（Vectors）／Loop 共組者（Répercussions）／綽號 Sonic Boom（Worn）／名字直接領句（Refuge）／計畫名 Lull（Dreamt）／Scorn 創辦人（Moments）／長期不公開身分（Location）／國籍＋樂種（Homage）／巡演城市（Weight）／掛名欄（Pulse）。「日」後一字照 21694：日交、日出、日掛、日問、日起、日登、日開、日同；日期句領頭名詞逐張不同（這批錄音／新作／最終／Sentrax／同年／Taiga 等，Refuge 以「日期＋問世時」領句）。
+- **21703** 媒體與評價：note 已去媒體名；Epithymía 的「最令人心碎」改成不掛來源的聲音描述（收在一段令人心碎的吉他長音上），Moments 的「冷而夜行、冥想多於威嚇」、Refuge 的「撼動地面／像霧」直述為聲音。Homage 的「廠方說是向 Albers 致敬」改為直述「向藝術家 Josef Albers 致敬」，不留轉述引導詞；Location 的「別戴耳機」改「聽的時候宜避開耳機」。全檔 grep「據」0。
+- **21704** hook 重述處理：Anjou 的四年改寫成「那四年全耗在寫作與剪輯上」（補 hook 沒說的內容）；Homage 的 B 面不再寫「平靜的海」，改「搖晃般的起伏」；Weight 第二句不重寫〈Living Space〉曲名，改「Coltrane 那首曲子」；Epithymía 第二句具名缺席的鼓手 Steven Hess。
+- **21705** 自掃與腳本：han() 4-gram 跨本檔＋out-2（對方已交件部分）合掃，途中拆掉 品年月日（Anjou×Pulse）、做到年月→錄到年月（Growing×Drawing of Sound，整個動詞句拆成「開工／收音」兩子句）、這個計畫（Refuge×Moments）、掛名欄上（Pulse×Köner）、首加起來→長約分鐘（Pulse×Drawing／Köner，改「共約」）；定稿 2 張以上 0 條。`node qa-batch.mjs out add-20261023-md31` 全部通過（互指 3 處皆 out-2 同藝人內部）、`qa-check-research` 標記 0、`fix-spacing` 待補 0。輔助腳本 scratchpad `wr-md31-1/`（md31w1-build.cjs、md31w1-ngram.cjs）。out-2 之後若再改，需主線收件時再合掃一次。
+
+## 主線審稿（21711–21713；2026-10-24）
+- 21711：逐張審 26 張（out-1 13、out-2 13），逐句對回研究稿；qa-batch out 全過、qa-check-research 兩檔各 0 標記、fix-spacing 0 補；正文無媒體名、無「據」字。抽核：Rothko 2001 解散原始陣容（研究 c 組 Discogs）、Windy & Carl《Portal》卡帶 200 份／流通不到 100、1995-11 Ba Da Bing! CD（研究 c 組）、Hampson 1965 生於布羅姆利、Dowson 1996 離團（研究 a、e 組維基）、ELEH 首次數位發行（研究 b 組 Boomkat）、Dissolve 1995-05-26（研究 d 組）。
+- 21712：改 1 張（`desc-override.json`）：`Anjou|Epithymía`「收在一段令人心碎的吉他長音上」——「令人心碎」出自單一樂評（研究 a 組 AllMusic）的評價詞，改為不掛來源的聲音描述「收在一段拉得很長的吉他長音上」→ 238 字。只動正文，hooks／input 無此句、不需同步。
+- 21713：核過未改——Matt Elliott《The Mess We Made》正文寫「低沉人聲一層層疊上去」與〈Forty Days〉後段鼓點，照研究 d 組事實保留（策展時判大多無鼓、陰影般；有人聲是評分風險，交評分驗收）。Anjou 首作寫 Steven Hess 負責打擊（研究 a 組：稀疏點綴、非律動推進）。
