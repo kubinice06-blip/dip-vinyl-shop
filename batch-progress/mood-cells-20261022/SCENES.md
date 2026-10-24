@@ -91,8 +91,8 @@
 | 67 | md30 | dark ambient 第五波 ＋ isolationist／冷 neoclassical（擴寫） | ✅ 上線 28／落格 28 |
 | 68 | mc43 | 現代室內樂尖細二線（Kurtág、Holliger、Sciarrino、Rihm、Berio Sequenza、Saariaho 室內作；mc32 收 29） | ✅ 上線 36／落格 36 |
 | 69 | md31 | 冷 post-rock／器樂慢盤二線（Labradford、Bark Psychosis 慢盤、Rachel's 冷盤、Dirty Three 冷盤；md7 收 35） | ✅ 上線 26／落格 24 |
-| 70 | mc44 | ESP-Disk／BYG Actuel 自由爵士二線（Frank Wright、Noah Howard、Giuseppi Logan、Burton Greene、Marion Brown 早期、Sonny Sharrock 早期） | 派→情緒薄格 mc44、md32（第 14 輪） |
-| 71 | md32 | drone／電子極簡第二波（md6 收 43 高產；Kranky、Touch、Room40、Miasmah、Denovali 二線，要有低頻與顆粒） | 派→情緒薄格 mc44、md32（第 14 輪） |
+| 70 | mc44 | ESP-Disk／BYG Actuel 自由爵士二線（Frank Wright、Noah Howard、Giuseppi Logan、Burton Greene、Marion Brown 早期、Sonny Sharrock 早期） | ✅ 上線 23／落格 19 |
+| 71 | md32 | drone／電子極簡第二波（md6 收 43 高產；Kranky、Touch、Room40、Miasmah、Denovali 二線，要有低頻與顆粒） | ✅ 上線 28／落格 25 |
 | 72 | ml58 | roots reggae 人聲慢盤（Burning Spear、Culture、Israel Vibration、The Abyssinians、Prince Far I 系；ml38 roots dub 高產；店主要多 dub） | ✅ 上線 28／落格 28 |
 | 73 | mc45 | IDM／drill'n'bass 快而尖薄（Squarepusher、μ-Ziq、Bogdan Raczynski、Kid606 薄盤、Venetian Snares 薄盤；旋律清楚的落雀躍、轟炸的落暴躁） | ✅ 上線 2／落格 1 |
 | 74 | mc46 | 現代室內樂尖細第三波（mc43 收 36 高產；Ferneyhough、Furrer、Haas 尖細室內作、Neuwirth、Brian Ferneyhough 周邊、Klangforum Wien／Ensemble Recherche 錄音） | 派→情緒薄格 mc46、md33（第 15 輪） |
@@ -139,7 +139,7 @@
 | md29 | 21161 | dark ambient 第四波（Kammarheit、Northaunt、Sabled Sun、Council of Nine、Cryo Chamber 晚期新人） | ✅ 上線 33／落格 32（2026-10-23；策展 58＋補 15、主線汰 15、研究汰 25；文案寫打擊／溫暖／旋律樂器或口白領奏的汰；Cryo Chamber 晚期與 Cyclic Law 二線已挖到底，主場景見底不再派；器樂 dub 擴寫只收 2 張、Jah Shaka 色溫判 0 落恍惚） |
 | md30 | 21561 | dark ambient 第五波（Atrium Carceri 周邊、Dahlia's Tear、Desiderii Marginis、Ulf Söderberg 系） | ✅ 上線 28／落格 28（主場景大名見底，不再派） |
 | md31 | 21641 | 冷 post-rock／器樂慢盤二線（Labradford、Bark Psychosis 慢盤、Rachel's 冷盤、Dirty Three 冷盤） | ✅ 上線 26／落格 24（2026-10-24；策展 54＋補 25、主線汰 9＋5、研究汰 30＋9；冷 post-rock 二線樂團幾乎全有鼓組或人聲，只剩無鼓 drone／isolationist 能收；出格 Anjou 判輕、Windy & Carl 色溫 0；場景見底，不再派） |
-| md32 | 21961 | drone／電子極簡第二波（Kranky、Touch、Room40、Miasmah、Denovali 二線） | 派→情緒薄格 mc44、md32（第 14 輪） |
+| md32 | 21961 | drone／電子極簡第二波（Kranky、Touch、Room40、Miasmah、Denovali 二線） | ✅ 上線 28／落格 25（2026-10-24；策展兩輪 71、主線汰 15、研究汰 28；文案寫 pulse／blistering／lush／旋律或人聲的汰；microsound 稀疏型與 Radigue 細長音判輕落平靜；主場景見底不再派） |
 | md33 | 22121 | 冷 post-rock／器樂慢盤第三波＋冷 slowcore 器樂 | 派→情緒薄格 mc46、md33（第 15 輪） |
 | md34 | 22281 | funeral doom／drone doom 慢盤第二波（Esoteric、Evoken、Mournful Congregation、Skepticism、Thergothon 系） | ✅ 上線 38／落格 38 |
 
@@ -192,7 +192,7 @@
 | mc41 | 21081 | 電子原音／musique concrète 尖細那半（Parmegiani、Bayle、Xenakis 電子作、Dhomont） | ✅ 上線 11／落格 10（2026-10-23；策展 28（掃 empreintes 約 160 張）、主線汰 4、研究汰 13（飄浮長音 5、厚密噪音 3、聲音零來源 4、現場 1）；Stavropoulos 判靜落平靜；見底不再派） |
 | mc42 | 21401 | 自由即興打擊／鼓獨奏（Milford Graves、Han Bennink、Paul Lovens、Tony Oxley、Sunny Murray、Paul Lytton） | ✅ 上線 13／落格 13（2026-10-24；策展 50（擋現場約 40）、主線汰 13、研究汰 24；長音冥想判靜、大鼓金屬／電子判重、Graves／Cyrille 手鼓與借曲判暖；穩收的是鼓＋尖細單一樂器乾二重奏與 Oxley／Turner／Lovens 系小編制；主場景見底不再派） |
 | mc43 | 21481 | 現代室內樂尖細二線（Kurtág、Holliger、Sciarrino、Rihm、Berio Sequenza、Saariaho 室內作） | ✅ 上線 36／落格 36（2026-10-24；策展 54＋補 12、主線汰 9＋7、研究汰 13＋1；稀疏極弱型、同作品池中已有、大編制、現場錄音汰；主場景見底，不再派） |
-| mc44 | 21801 | ESP-Disk／BYG Actuel 自由爵士二線（Frank Wright、Noah Howard、Giuseppi Logan、Burton Greene、Marion Brown 早期） | 派→情緒薄格 mc44、md32（第 14 輪） |
+| mc44 | 21801 | ESP-Disk／BYG Actuel 自由爵士二線（Frank Wright、Noah Howard、Giuseppi Logan、Burton Greene、Marion Brown 早期） | ✅ 上線 23／落格 19（2026-10-24；策展兩輪 36、研究汰 13（慢段判靜 4、暖／詼諧 4、借曲 3、厚編制 2）；出格 4 張四人以上全力合奏或低音簧管撐底判重落暴躁；主場景見底不再派） |
 | mc45 | 21881 | IDM／drill'n'bass 快而尖薄（Squarepusher、μ-Ziq、Bogdan Raczynski、Kid606 薄盤、Venetian Snares 薄盤） | ✅ 上線 2／落格 1（2026-10-24；策展兩輪 7、主線汰 1（盤名正規化為空）、研究汰 4（ambient 化 1、低頻 dub 1、失真兇猛鼓 1、零來源貼邊 1）；池中大名全判重／判暖、冷尖電子已被 mc6／mc7／mc33／mc15 收光，**死池，不再派**；General Magic 噪音拼貼判重落暴躁） |
 | mc46 | 22041 | 現代室內樂尖細第三波（Ferneyhough、Furrer、Haas、Neuwirth、Klangforum Wien／Ensemble Recherche 錄音） | 派→情緒薄格 mc46、md33（第 15 輪） |
 | mc47 | 22201 | 當代獨奏器樂尖細（Xenakis 獨奏作、Scelsi、Sciarrino 長笛、Berio Sequenza、Lachenmann 獨奏作） | ✅ 上線 15／落格 15 |

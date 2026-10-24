@@ -6,12 +6,39 @@
 - **策展→研究汰換**：md34 策展 54、主線汰 9、研究汰 7（blast beat／中速／偏亮／零聲音來源）→ 38；md3 以 10-22 舊規則汰掉的 4 張照體感標準重收，全落頹靡。mc47 策展 38（主場景見底）、主線汰 7（極弱、低音弦、調性曲）、研究汰 16（非純獨奏、低音樂器、抒情／靜段占大段）→ 15。
 - **主線審稿**：md34 改 1 處（Bell Witch《Longing》單源誇張評價句）；mc47 改 3 處（Derome 軌序、Woodward 單源讚語、Henck 評論家獎）。存各批 `desc-override.json`。
 - **上線**：card_catalog 38＋15、KV 38＋16 鍵回讀逐字一致（stamp 20261024r15）、試聽 28＋9 ready、seed +53、prepare／published gate 兩批 0 error；封面 md34 CAA 38，mc47 CAA 6／Apple 4／Discogs 5（registry → 454）。上線前對 origin 近 40 條 `claude/*` 分支 seed＋並行批卡單去重 0 撞。
-- **情緒評分**：`score-md34b`（`score-md34/` 是 md3／md4 舊目錄，另開）、`score-mc47`。**md34 落頹靡 38/38、mc47 落冷冽 15/15（皆 100%）**。八格（本分支）：恍惚 1,659、頹靡 1,603、冷冽 1,572。
+- **情緒評分**：`score-md34b`（`score-md34/` 是 md3／md4 舊目錄，另開）、`score-mc47`。**md34 落頹靡 38/38、mc47 落冷冽 15/15（皆 100%）**。八格（併 main 後，含 mc44／md32）：恍惚 1,686、頹靡 1,624、冷冽 1,576。
 - **場景潛力盤點**：funeral doom 二線約還能挖 20–30 張（Wormphlegm、Profetus、Until Death Overtakes Me、Remina、Officium Triste、Saturnus 等）；當代獨奏器樂見底（剩 3–5 張全貼邊）。
 - **類型樹**：`genre-l3-artist-map.json` 新增 `classical/contemporary/avant`（Roger Woodward），53/53 落位；抽卡封面重建。
 - **藝人介紹**：未切（並行規矩）；新藝人 28 位列在兩批 rulings.md 末尾。
 - **主要檔案**：`batch-progress/add-20261024-{md34,mc47}/`、`batch-progress/mood-cells-20261022/{curation,master}-{md34,mc47}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{md34b,mc47}/`、`onboarding-manifest-add-20261024-{md34,mc47}-20261024.json`、`desc-tools/batches/*/add-20261024-{md34,mc47}*`、`data/discogs-cover-registry.json`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
 - **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 54/54；build-card-moods 錨點 104/104、gate exit 0。
+
+### 2026-10-24｜dip-vinyl-shop｜頻率光譜搜尋結果上限 8→50 筆
+
+- **改動**：店主問 Miles Davis 在卡池為何這麼少（實際 50 張，含兩代五重奏），原因是頻率光譜搜尋只列前 8 筆。店主定「改成 50 筆」：`findCards` 上限改 50（清單本來可捲動、封面 lazy），`dip-tune.js?v=14`。
+- **主要檔案**：`dip-tune.js`、`index.html`
+- **驗證**：`node --check dip-tune.js` 過；同一套比對邏輯打「miles davis」命中 50 張，全數列出。
+
+### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 14 輪 mc44／md32：ESP／BYG 自由爵士二線 23 張、drone 第二波 28 張上線，落格 19/23、25/28
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 14 輪，本工作階段負責 mc44、md32（評分照 10-23 體感標準）。mc44（`add-20261024-mc44`，冷冽）：ESP 的 Giuseppi Logan、Byron Allen、NYAQ、Lowell Davidson、Henry Grimes《The Call》、Marion Brown Quartet、Karl Berger、Gunter Hampel、Sonny Simmons、Free Music Quintet；BYG 的 Coursil《Way Ahead》、Acting Trio；Rolf + Joachim Kühn、Ric Colbeck；歐陸 FMP／Calig 擴寫（Voerkel/Frey/Lovens、Christmann–Schönenberg、Fuchs《Momente》、Gräwe、Thelin/Favre/Minor、Kühn《Solos》、Petrowsky、沖至／Pilz／Hübner、Favre《Santana》）。md32（`add-20261024-md32`，頹靡）：Niblock ×3、OPO、Radigue、Vainio《Onko》、Room40（Amini、Hahn）、Pjusk、Retribution Body、Collins、Kassel Jaeger、KTL、Archetti、Drumm《Trouble》、Mohammad、Amphior、Kallal、NWW《Deadlined》、Deathprod、Slomo ×2、Levander、chra、Haynes、Altar Of Flies、Aidan Baker、Machinefabriek。
+- **策展→研究汰換**：mc44 策展兩輪 36、研究汰 13（慢段／暖／借曲／厚編制）→ 23；md32 策展兩輪 71、主線汰 15、研究汰 28（脈衝、噪音爆發、暖／旋律／人聲、<30 分）→ 28。兩個主場景見底，不再派。
+- **評分**：mc44 落冷冽 19/23（83%；出格 4 張四人以上全力合奏判重落暴躁）；md32 落頹靡 25/28（89%；Vainio、Radigue 判輕落平靜，NWW 判躁）。八格（合併 main 後重建）：冷冽 1,561、頹靡 1,586、恍惚 1,686。
+- **主線修正**：Favre《Santana》年份 1979→1969；NWW 廠牌 United Dairies；seed 曲風欄 Last.fm 錯標 5 張手改（Slomo 被標 hiphop）；子曲風空白 12 張補進 `genre-l3-artist-map.json`；Discogs 封面 11 張登錄 registry 449–459。
+- **主要檔案**：`batch-progress/add-20261024-{mc44,md32}/`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261024-*`、`batch-progress/mood-axes/score-{mc44,md32}/`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*`、`data/discogs-cover-registry.json`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`、`data/mood/*`、`SCENES.md`、`HANDOFF-mood-cells-line.md`。
+- **驗證**：kv-token-check exit 0；card_catalog 23／23、28／28；wrangler bulk put Success；verify-wave-kv 23/23、28/28 逐字一致；prepare／published gate 0 error；build-scale anchorsSameCell 104/104。藝人介紹未切（45 個掛名列在兩批 rulings 末尾）。
+
+### 2026-10-24｜dip-vinyl-shop｜邊界卡重判二：8,753 張單軸卡門檻邊的卡，320 張換格
+
+- **改動**：店主「把這些分布在邊界的專輯掃描盤點一下看還有什麼標錯了」。`batch-progress/mood-axes/edge-rejudge-2/` 選從沒改判過、只有一軸卡門檻邊的 8,753 張，切 22 份由代理逐張選邊，320 張換格寫進 `overrides.json`（why 標「2026-10-23 邊界卡重判二」）。主要是冷翻暖（大副歌搖滾／華語 J-rock）、躁翻靜（溫和律動，比照 Paseo）、平靜→放鬆。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/edge-rejudge-2/*`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：22 份 done 到齊、bad 0；`build-card-moods.mjs` 錨點 104/104 同格。
+
+### 2026-10-24｜dip-vinyl-shop｜Gonzalo Rubalcaba《Paseo》雀躍→放鬆
+
+- **改動**：店主指定。(3.3, −0.6, 0.6) → (2.6, −0.6, 0.6)。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：`build-card-moods.mjs` 錨點 104/104 同格。
 
 ### 2026-10-24｜dip-vinyl-shop｜情緒薄格線第 15 輪派工（最後一輪）：店主「做完第 15 輪後暫停工作，盤點一下收了什麼」
 
