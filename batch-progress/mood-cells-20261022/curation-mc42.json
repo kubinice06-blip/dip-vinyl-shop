@@ -1,0 +1,1446 @@
+{
+ "group": "mc42",
+ "factions": [
+  {
+   "id": "solo",
+   "zh": "自由即興打擊／鼓獨奏",
+   "count": 12,
+   "why": "鼓手或打擊手單人錄音室（或無觀眾）作品；鈸、小鼓、金屬物件的乾尖點描"
+  },
+  {
+   "id": "drums",
+   "zh": "雙鼓／多打擊對話",
+   "count": 5,
+   "why": "兩位以上鼓手或打擊手的純節奏對話，無旋律樂器"
+  },
+  {
+   "id": "duo",
+   "zh": "鼓＋單一樂器二重奏",
+   "count": 12,
+   "why": "鼓手掛名或並列的二重奏（薩克斯風、鋼琴、小號、低音提琴、人聲）"
+  },
+  {
+   "id": "group",
+   "zh": "鼓手領軍／並列的無貝斯小編制",
+   "count": 13,
+   "why": "打擊為主體的自由即興三至六人小編制（多數無鋼琴或無貝斯）"
+  },
+  {
+   "id": "contemporary",
+   "zh": "當代古典打擊獨奏／重奏",
+   "count": 8,
+   "why": "Xenakis、Ferneyhough、Stockhausen、Strasbourg 打擊樂團的無調打擊錄音"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Fritz Hauser",
+   "album": "Solodrumming",
+   "year": 1985,
+   "label": "hat ART",
+   "country": "ch",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Hauser 在柏林 Gropius-Bau 玻璃頂中庭夜間錄下的鼓與打擊獨奏（無疊錄、無電子效果）；乾、尖、帶建築回聲的點描，沒有旋律可抓",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.3,
+    "z": -1.2,
+    "why": "無伴奏鼓與打擊，鈸與小鼓點描，空間回聲乾，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d5fbd86f-be79-4e60-bfb8-926aa5586007",
+    "https://www.discogs.com/release/1556737"
+   ],
+   "mbRgMbid": "d5fbd86f-be79-4e60-bfb8-926aa5586007",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lê Quan Ninh",
+   "album": "Ustensiles",
+   "year": 1997,
+   "label": "For 4 Ears",
+   "country": "ch",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Lê Quan Ninh 以橫放大鼓為檯面的工作室獨奏，刮擦、滾動物件與鈸，是歐陸打擊獨奏的標竿；乾而緊繃",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -1.5,
+    "why": "橫放大鼓上刮擦與小物件，稀疏尖細，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c62da979-1755-3101-94dc-62b89d4d2236",
+    "https://www.discogs.com/release/1166146"
+   ],
+   "mbRgMbid": "c62da979-1755-3101-94dc-62b89d4d2236",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Chris Corsano",
+   "album": "The Young Cricketer",
+   "year": 2006,
+   "label": "Hot Cars Warp Records",
+   "country": "us",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Corsano 在曼徹斯特單人錄下的鼓、鈸與薩克斯吹嘴聲響（無疊錄），短段快速切換、乾而尖",
+   "moodGuess": {
+    "x": 3.8,
+    "y": -0.2,
+    "z": -1.6,
+    "why": "獨奏鼓與鈸加吹嘴怪聲，乾尖急促，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a8cfc628-85e2-3197-a601-13282e722b29",
+    "https://www.discogs.com/release/1130247"
+   ],
+   "mbRgMbid": "a8cfc628-85e2-3197-a601-13282e722b29",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Chris Corsano",
+   "album": "Cut",
+   "year": 2012,
+   "label": "Hot Cars Warp Records",
+   "country": "us",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Corsano 2012 純原聲打擊獨奏，十五段短曲、無疊錄；鈸與小鼓的擦擊與點描，乾而緊",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.3,
+    "z": -1.5,
+    "why": "純原聲小鼓鈸擦擊，短段碎裂，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a71b07f6-3186-4f05-b7a5-ebfa0b82a97b",
+    "https://www.discogs.com/release/3559819"
+   ],
+   "mbRgMbid": "a71b07f6-3186-4f05-b7a5-ebfa0b82a97b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Chris Corsano",
+   "album": "Another Dull Dawn",
+   "year": 2009,
+   "label": "Ultra Eczema",
+   "country": "be",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Corsano 愛丁堡家中錄下的打擊獨奏黑膠，限量四百張；小鼓、鈸與金屬物件的緊繃即興",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.1,
+    "z": -1.5,
+    "why": "家錄獨奏打擊，鈸與金屬物件，緊繃乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/53e10267-86d6-43c5-9439-b7f0d7d4c76e",
+    "https://www.discogs.com/release/1875170"
+   ],
+   "mbRgMbid": "53e10267-86d6-43c5-9439-b7f0d7d4c76e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Andrew Cyrille",
+   "album": "The Loop",
+   "year": 1978,
+   "label": "Ictus Records",
+   "country": "it",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Cyrille 1978 年在 Ictus 錄音室的自作打擊獨奏，鼓與音色的對話，乾而銳利",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -0.9,
+    "why": "獨奏鼓與打擊，乾，節奏為主旋律少"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/94bc3d96-d441-4b82-8c0e-c1dcdcf8315d",
+    "https://www.discogs.com/release/2378223"
+   ],
+   "mbRgMbid": "94bc3d96-d441-4b82-8c0e-c1dcdcf8315d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 偏邊：Cyrille 偶有可哼的動機，若判旋律略明會到 −0.5"
+  },
+  {
+   "artist": "Tatsuya Nakatani",
+   "album": "Abiogenesis",
+   "year": 2010,
+   "label": "H&H PRODUCTION",
+   "country": "us",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Nakatani 2009 年 H&H 錄音室的獨奏打擊（十二軌），弓擦鈸、刮鑼與小鼓點描",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -1.3,
+    "why": "弓擦與敲擊鈸鑼，尖細高頻，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5dff1895-a621-4eec-8499-0c5551723723",
+    "https://www.discogs.com/release/2466460"
+   ],
+   "mbRgMbid": "5dff1895-a621-4eec-8499-0c5551723723",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 偏邊：弓擦段落安靜，若判靜會落 3.0 以下"
+  },
+  {
+   "artist": "Tatsuya Nakatani",
+   "album": "Primal Communication",
+   "year": 2007,
+   "label": "H&H Production",
+   "country": "us",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Nakatani 2007 年一氣呵成的單軌五十七分鐘獨奏（無疊錄、無剪輯），鼓、鈸與鑼的金屬音色",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.2,
+    "z": -1.4,
+    "why": "長段獨奏鼓鈸鑼，金屬尖亮，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/159635af-3584-4480-9ec8-e874ded848db",
+    "https://www.discogs.com/release/1164286"
+   ],
+   "mbRgMbid": "159635af-3584-4480-9ec8-e874ded848db",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x／y 偏邊：鑼低頻若判重則 y 往 +0.3"
+  },
+  {
+   "artist": "Z’EV",
+   "album": "Production and Decay of Spacial Relations",
+   "year": 1981,
+   "label": "Backstreet Backlash Records",
+   "country": "nl",
+   "faction": "solo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Z'EV 兩天內在鹿特丹錄音室錄成的金屬打擊黑膠（八段），工業鋼板與棒擊，乾硬無旋律",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0.1,
+    "z": -1.7,
+    "why": "金屬板棒擊，乾硬尖銳，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/670d600a-6d2d-4795-a3e9-f8cadf233aa1",
+    "https://www.discogs.com/release/401946"
+   ],
+   "mbRgMbid": "670d600a-6d2d-4795-a3e9-f8cadf233aa1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 偏邊：金屬共鳴若判厚會到 +0.5"
+  },
+  {
+   "artist": "Milford Graves",
+   "album": "Stories",
+   "year": 2000,
+   "label": "Tzadik",
+   "country": "us",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Graves 2000 年 Avatar 錄音室的獨奏鼓與打擊（Tzadik），三十二分鐘的〈Evolving Pathways〉是他心跳式手鼓語彙的總結",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.0,
+    "z": -0.8,
+    "why": "獨奏手鼓與鼓組，節奏複雜乾，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d1cd22e9-4b1d-3793-9ccc-49f7e836128b",
+    "https://www.discogs.com/release/848225"
+   ],
+   "mbRgMbid": "d1cd22e9-4b1d-3793-9ccc-49f7e836128b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 偏邊：手鼓語彙有非洲味，若判暖則到 −0.2"
+  },
+  {
+   "artist": "Pierre Favre",
+   "album": "Abanaba",
+   "year": 1972,
+   "label": "Futura Records (2)",
+   "country": "fr",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Favre 1972 年巴黎錄音室的自作鼓、鈸與鑼獨奏黑膠（八段），歐洲打擊獨奏的早期代表",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.0,
+    "why": "獨奏鼓鈸鑼，短段，乾，旋律少"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e97b9670-9b49-4736-8b50-6fa3435dc3e4",
+    "https://www.discogs.com/release/3578078"
+   ],
+   "mbRgMbid": "e97b9670-9b49-4736-8b50-6fa3435dc3e4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x／z 偏邊：Favre 此盤輪廓偏曲式，若判旋律略明"
+  },
+  {
+   "artist": "Fritz Hauser",
+   "album": "Zwei",
+   "year": 1988,
+   "label": "hat ART",
+   "country": "ch",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Hauser 1987 年 Radio DRS 錄音室的鼓與打擊獨奏（hat ART），短曲組成，帶詩文配音",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -0.9,
+    "why": "獨奏鼓與打擊，短曲，乾，旋律少"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2a1f8fed-61a3-40dd-bc8f-75fe5126bfcf",
+    "https://www.discogs.com/release/2298857"
+   ],
+   "mbRgMbid": "2a1f8fed-61a3-40dd-bc8f-75fe5126bfcf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x／z 偏邊；Discogs 列詩詞歌詞，可能含朗誦"
+  },
+  {
+   "artist": "Andrew Cyrille / Milford Graves",
+   "album": "Dialogue of the Drums",
+   "year": 1974,
+   "label": "IPS (2)",
+   "country": "us",
+   "faction": "drums",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Cyrille 與 Graves 兩位鼓手的 IPS 雙鼓對話，七段無旋律樂器的純節奏應答",
+   "moodGuess": {
+    "x": 3.8,
+    "y": -0.1,
+    "z": -1.0,
+    "why": "雙鼓對話，快速交錯，乾，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7a22422b-919d-4c8f-ae73-b643446e16a3",
+    "https://www.discogs.com/release/1536299"
+   ],
+   "mbRgMbid": "7a22422b-919d-4c8f-ae73-b643446e16a3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Pierre Favre & Andrea Centazzo",
+   "album": "Dialogues",
+   "year": 1977,
+   "label": "Ictus Records",
+   "country": "it",
+   "faction": "drums",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Favre 與 Centazzo 1977 年 Pistoia 錄音室的雙打擊對話，十二段短小應答，乾而緊",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": -1.0,
+    "why": "雙打擊短段應答，鈸小鼓木塊，乾，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a7a1b644-0118-4a08-9df5-a4d09266ec64",
+    "https://www.discogs.com/release/1239480"
+   ],
+   "mbRgMbid": "a7a1b644-0118-4a08-9df5-a4d09266ec64",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kenny Clarke, Andrew Cyrille, Milford Graves & Famoudou Don Moye",
+   "album": "Pieces of Time",
+   "year": 1984,
+   "label": "Soul Note",
+   "country": "it",
+   "faction": "drums",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Clarke、Cyrille、Graves、Don Moye 四位鼓手 1983 年的 Soul Note 錄音室合集，純鼓的合奏與個人獨白",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.1,
+    "z": -0.5,
+    "why": "四鼓合奏，節奏密，乾，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cd9af428-5b88-4f0c-a406-fc43fdfc0bf3",
+    "https://www.discogs.com/release/3102164"
+   ],
+   "mbRgMbid": "cd9af428-5b88-4f0c-a406-fc43fdfc0bf3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 偏邊：Moye 的非洲手鼓與 Clarke 搖擺若判暖，z 到 −0.1"
+  },
+  {
+   "artist": "Milford Graves With Sunny Morgan",
+   "album": "Percussion Ensemble",
+   "year": 1965,
+   "label": "ESP-Disk'",
+   "country": "de",
+   "faction": "drums",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Graves 與 Sonny Morgan 1965 年 ESP 錄音室的雙打擊（鼓、鈴、鑼、搖沙），無旋律的音色與律動實驗",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.1,
+    "z": -1.2,
+    "why": "雙人打擊鼓鈴鑼，稀疏而緊，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3e1fcedd-ee64-4aba-8760-f21ca6ffa715",
+    "https://www.discogs.com/release/2914880"
+   ],
+   "mbRgMbid": "3e1fcedd-ee64-4aba-8760-f21ca6ffa715",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 偏邊：鈴鑼稀疏段若判靜"
+  },
+  {
+   "artist": "Michael Zerang",
+   "album": "Cedarhead",
+   "year": 2007,
+   "label": "Al Maslakh",
+   "country": "lb",
+   "faction": "drums",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Zerang 2006 年在貝魯特與當地即興樂手逐一對奏的鼓與打擊二重奏集（電吉他、小號、低音提琴、薩克斯風），工作室錄音",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "鼓對電吉他小號低音提琴，乾，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9208cea6-5f00-4a13-bf7b-0c8737cd7636",
+    "https://www.discogs.com/release/15323221"
+   ],
+   "mbRgMbid": "9208cea6-5f00-4a13-bf7b-0c8737cd7636",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "身分：MB 釘住但 Discogs 只有 File 版；各軌為不同樂手二重奏"
+  },
+  {
+   "artist": "Steve Beresford / Han Bennink",
+   "album": "Directly to Pyjamas",
+   "year": 1987,
+   "label": "Nato",
+   "country": "fr",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Beresford 與 Bennink 1987 年倫敦 ALJ 錄音室的鋼琴／玩具與鼓二重奏，滑稽而尖利的即興",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.5,
+    "z": -0.9,
+    "why": "小鋼琴玩具與鼓，快速碎段，諧趣但無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d833a88a-c247-4be2-bc39-8fcac7e88de2",
+    "https://www.discogs.com/release/933757"
+   ],
+   "mbRgMbid": "d833a88a-c247-4be2-bc39-8fcac7e88de2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 偏邊：滑稽段若判輕鬆"
+  },
+  {
+   "artist": "Ellery Eskelin & Han Bennink",
+   "album": "Dissonant Characters",
+   "year": 1999,
+   "label": "hatOLOGY",
+   "country": "ch",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Eskelin 次中音薩克斯風與 Bennink 的 Kulak 錄音室二重奏，hatOLOGY 1998",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.1,
+    "z": -1.2,
+    "why": "次中音與鼓對打，快速碎裂，無主題"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b988dfb2-551f-4e97-9239-d710492a8b4b",
+    "https://www.discogs.com/release/369331"
+   ],
+   "mbRgMbid": "b988dfb2-551f-4e97-9239-d710492a8b4b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Myra Melford & Han Bennink",
+   "album": "Eleven Ghosts",
+   "year": 1996,
+   "label": "hatOLOGY",
+   "country": "ch",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Melford 與 Bennink 1996 年 Radio DRS 錄音室的鋼琴與鼓二重奏，十段共同創作的短曲",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": -1.0,
+    "why": "鋼琴與鼓快速應答，棱角分明，旋律斷片"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/54b01e9a-5165-4216-bce0-dec7e8098f22",
+    "https://www.discogs.com/release/2293948"
+   ],
+   "mbRgMbid": "54b01e9a-5165-4216-bce0-dec7e8098f22",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Han Bennink + Dave Douglas",
+   "album": "Serpentine",
+   "year": 1996,
+   "label": "Songlines Recordings",
+   "country": "ca",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Douglas 與 Bennink 1996 年荷蘭牛舍錄音室直錄雙軌的小號與鼓二重奏",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.5,
+    "z": -0.8,
+    "why": "小號與鼓直錄，快速對話，旋律斷片"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/68accb7b-678e-43d0-91bb-86baeeadd3ed",
+    "https://www.discogs.com/release/1580089"
+   ],
+   "mbRgMbid": "68accb7b-678e-43d0-91bb-86baeeadd3ed",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 偏邊：Douglas 偶有可哼段落"
+  },
+  {
+   "artist": "Daniele D'Agaro, Alexander von Schlippenbach & Han Bennink",
+   "album": "Fingerprints",
+   "year": 2010,
+   "label": "Artesuono",
+   "country": "it",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "D'Agaro、Schlippenbach、Bennink 2010 年 Artesuono 錄音室的薩克斯風、鋼琴、鼓無貝斯三重奏，自由即興",
+   "moodGuess": {
+    "x": 3.8,
+    "y": -0.2,
+    "z": -1.4,
+    "why": "薩克斯風鋼琴鼓無貝斯，快速碎裂，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/61581dc5-fd59-49eb-90f2-2cd430311654",
+    "https://www.discogs.com/release/2926632"
+   ],
+   "mbRgMbid": "61581dc5-fd59-49eb-90f2-2cd430311654",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "David Murray & Milford Graves",
+   "album": "Real Deal",
+   "year": 1992,
+   "label": "DIW",
+   "country": "jp",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "David Murray 與 Graves 1991 年 Power Station 錄音室的次中音與鼓二重奏，八段長即興",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.0,
+    "z": -0.7,
+    "why": "次中音與鼓對打，密而快，旋律性低"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d9cbc214-05fa-443d-b67c-98cbe354f1ea",
+    "https://www.discogs.com/release/852794"
+   ],
+   "mbRgMbid": "d9cbc214-05fa-443d-b67c-98cbe354f1ea",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 偏邊：Murray 的藍調語彙若判暖"
+  },
+  {
+   "artist": "John Edwards / Chris Corsano",
+   "album": "Tsktsking",
+   "year": 2009,
+   "label": "Dancing Wayang",
+   "country": "gb",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "John Edwards 與 Corsano 2008 年 Eastcote 錄音室的低音提琴與鼓二重奏",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.1,
+    "z": -1.4,
+    "why": "低音提琴與鼓，快速擦擊，乾，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/19b17c1d-14e1-49a0-90e8-d70699878729",
+    "https://www.discogs.com/release/1990976"
+   ],
+   "mbRgMbid": "19b17c1d-14e1-49a0-90e8-d70699878729",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Phil Minton / Roger Turner",
+   "album": "Dada Da",
+   "year": 1993,
+   "label": "Leo Records",
+   "country": "gb",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Phil Minton 的極端人聲與 Roger Turner 的打擊 1993 年倫敦錄音室二重奏",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": -1.5,
+    "why": "人聲怪叫與鼓鈸，尖細碎裂，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c39a6448-b823-4838-b7d4-04f4123ffc3f",
+    "https://www.discogs.com/release/623283"
+   ],
+   "mbRgMbid": "c39a6448-b823-4838-b7d4-04f4123ffc3f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Wadada Leo Smith / Günter Baby Sommer",
+   "album": "Wisdom in Time",
+   "year": 2007,
+   "label": "Intakt Records",
+   "country": "ch",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Wadada Leo Smith 與 Sommer 2006 年 Klangdach 錄音室的小號與鼓二重奏（Intakt）",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.4,
+    "z": -0.8,
+    "why": "悶音小號與鼓，疏朗緊繃，旋律斷續"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ff33bf90-cc43-459c-b6f8-17c2707c1625",
+    "https://www.discogs.com/release/1134354"
+   ],
+   "mbRgMbid": "ff33bf90-cc43-459c-b6f8-17c2707c1625",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x／z 偏邊：Smith 的號聲抒情段若判靜或暖"
+  },
+  {
+   "artist": "Evan Parker & Eddie Prévost",
+   "album": "Imponderable Evidence",
+   "year": 2004,
+   "label": "Matchless Recordings",
+   "country": "gb",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Parker 與 Prévost 2003 年 Gateway 錄音室的薩克斯風與鼓二重奏（Matchless）",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -1.6,
+    "why": "高音薩克斯風循環呼吸與鈸，稀疏緊繃"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6e504b9e-d5c6-3507-8657-d901607911be",
+    "https://www.discogs.com/release/1053903"
+   ],
+   "mbRgMbid": "6e504b9e-d5c6-3507-8657-d901607911be",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 偏邊：Prévost 鈸擦段落若判靜"
+  },
+  {
+   "artist": "Evan Parker & Eddie Prévost",
+   "album": "Most Materiall",
+   "year": 1997,
+   "label": "Matchless Recordings",
+   "country": "gb",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Parker 與 Prévost 1997 年 Gateway 錄音室二重奏（雙 CD，Matchless）",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -1.6,
+    "why": "薩克斯風與鼓鈸擦擊，稀疏緊繃"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5b5cbce7-63df-3c4b-abf6-981fc7c9c46b",
+    "https://www.discogs.com/release/949593"
+   ],
+   "mbRgMbid": "5b5cbce7-63df-3c4b-abf6-981fc7c9c46b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 偏邊：同上"
+  },
+  {
+   "artist": "Stefano Battaglia, Tony Oxley",
+   "album": "Explore",
+   "year": 1990,
+   "label": "Splasc(H) Records",
+   "country": "it",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Battaglia 與 Oxley 1990 年 Barigozzi 錄音室的鋼琴與鼓二重奏，九段自由即興",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -1.2,
+    "why": "鋼琴與鼓，點描式，棱角，旋律弱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9ba12741-7ae4-4215-86b5-6abdd6749dac",
+    "https://www.discogs.com/release/2880269"
+   ],
+   "mbRgMbid": "9ba12741-7ae4-4215-86b5-6abdd6749dac",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 偏邊"
+  },
+  {
+   "artist": "Andrew Cyrille",
+   "album": "Duology",
+   "year": 2012,
+   "label": "Jazzwerkstatt",
+   "country": "de",
+   "faction": "group",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Cyrille 領軍的小號（Ted Daniel）、單簧管（Michael Marcus）、鼓無貝斯三重奏，2011 年 Samurai Hotel 錄音室",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -0.9,
+    "why": "小號單簧管鼓無貝斯，自由卻有輪廓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4a9b49a6-1df2-4f8a-8d7c-8a609300d6da",
+    "https://www.discogs.com/release/4347537"
+   ],
+   "mbRgMbid": "4a9b49a6-1df2-4f8a-8d7c-8a609300d6da",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 偏邊：Daniel／Marcus 偶有可哼旋律"
+  },
+  {
+   "artist": "Steve Lacy, Michel Waisvisz, Han Bennink, Maarten van Regteren Altena",
+   "album": "Lumps",
+   "year": 1975,
+   "label": "Instant Composers Pool",
+   "country": "nl",
+   "faction": "group",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Lacy、Waisvisz（STEIM 電子）、Bennink、Altena 1974 年 ICP 的錄音室專輯，鼓與電子噪音的怪異對話",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.3,
+    "z": -1.5,
+    "why": "高音薩克斯風STEIM電子鼓，碎裂尖細"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/57980ff1-56fb-4f00-96d7-1b5c835e4b0f",
+    "https://www.discogs.com/release/2892251"
+   ],
+   "mbRgMbid": "57980ff1-56fb-4f00-96d7-1b5c835e4b0f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tony Oxley",
+   "album": "4 Compositions for Sextet",
+   "year": 1970,
+   "label": "CBS",
+   "country": "gb",
+   "faction": "group",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Oxley 1970 年 CBS 的六重奏錄音室作（Bailey、Wheeler 等），四首長篇，英國自由即興開端",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.2,
+    "z": -1.4,
+    "why": "六重奏無鋼琴，吉他小號薩克斯風，棱角分明"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c6793c12-e507-3774-9962-e5208462de73",
+    "https://www.discogs.com/release/1055102"
+   ],
+   "mbRgMbid": "c6793c12-e507-3774-9962-e5208462de73",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tony Oxley",
+   "album": "Ichnos",
+   "year": 1971,
+   "label": "RCA Victor",
+   "country": "gb",
+   "faction": "group",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Oxley 1971 年 RCA 的六重奏／四重奏／打擊獨奏（Bailey、Parker、Wheeler、Rutherford、Guy），放大打擊的電氣化自由即興",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.1,
+    "z": -1.6,
+    "why": "放大打擊與吉他薩克斯風群，棱角尖銳"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/979bf3da-dc51-3486-a041-50ed75debd97",
+    "https://www.discogs.com/release/659887"
+   ],
+   "mbRgMbid": "979bf3da-dc51-3486-a041-50ed75debd97",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 偏邊：放大器效果若判厚；封面來源 Discogs master 3374053"
+  },
+  {
+   "artist": "Pilz, Kowald, Lovens",
+   "album": "Carpathes",
+   "year": 1976,
+   "label": "FMP",
+   "country": "de",
+   "faction": "group",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Pilz（低音單簧管）、Kowald、Lovens 1975 年 FMP 錄音室的無鼓組三重奏，低音單簧管與打擊的乾而尖",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "低音單簧管低音提琴打擊，稀疏尖細"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ae09c93f-9aa6-41f4-8d16-fdac40790d6b",
+    "https://www.discogs.com/release/2745447"
+   ],
+   "mbRgMbid": "ae09c93f-9aa6-41f4-8d16-fdac40790d6b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Alan Tomlinson / Steve Beresford / Roger Turner",
+   "album": "Trap Street",
+   "year": 2003,
+   "label": "Emanem",
+   "country": "gb",
+   "faction": "group",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Tomlinson（長號）、Beresford、Turner 2002 年 Gateway 錄音室的長號、鍵盤、打擊三重奏（Emanem）",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -1.2,
+    "why": "長號鍵盤玩具與打擊，諧趣碎裂"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ced3ac6a-61dd-427f-90d8-7abb33e319d9",
+    "https://www.discogs.com/release/2332869"
+   ],
+   "mbRgMbid": "ced3ac6a-61dd-427f-90d8-7abb33e319d9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 偏邊：Beresford 玩具鋼琴的諧趣"
+  },
+  {
+   "artist": "Isabelle Duthoit, Alexander Frangenheim, Roger Turner",
+   "album": "Kochuu",
+   "year": 2014,
+   "label": "Creative Sources",
+   "country": "",
+   "faction": "group",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Duthoit（人聲／單簧管）、Frangenheim（低音提琴）、Turner 2013 年柏林錄音室",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.7,
+    "why": "人聲單簧管低音提琴打擊，嘶聲與刮擦，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/849164e0-fac4-4703-bbc9-c0ebf2edf779",
+    "https://www.discogs.com/release/6014907"
+   ],
+   "mbRgMbid": "849164e0-fac4-4703-bbc9-c0ebf2edf779",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 偏邊：靜態音色段落多"
+  },
+  {
+   "artist": "Derek Bailey, Pat Thomas & Steve Noble",
+   "album": "And,",
+   "year": 1997,
+   "label": "Rectangle",
+   "country": "fr",
+   "faction": "group",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Bailey、Pat Thomas（鋼琴）、Steve Noble 1997 年 Moat 錄音室的吉他、鋼琴、鼓無貝斯三重奏",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.3,
+    "z": -1.7,
+    "why": "尖細吉他碎片鋼琴鼓，棱角碎裂，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4244950a-3f96-3ff9-a40b-3826938e2eba",
+    "https://www.discogs.com/release/745067"
+   ],
+   "mbRgMbid": "4244950a-3f96-3ff9-a40b-3826938e2eba",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Synopsis",
+   "album": "Synopsis",
+   "year": 1974,
+   "label": "AMIGA",
+   "country": "de",
+   "faction": "group",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Synopsis（Petrowsky、Bauer、Gumpert、Sommer）1974 年東德 AMIGA 錄音室的無貝斯四重奏，東歐自由爵士的標誌",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.2,
+    "z": -1.0,
+    "why": "薩克斯風長號鋼琴鼓，快速棱角"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c08058fa-c56a-4533-85f0-d9eeddbacc78",
+    "https://www.discogs.com/release/2426929"
+   ],
+   "mbRgMbid": "c08058fa-c56a-4533-85f0-d9eeddbacc78",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 偏邊：Petrowsky 偶有曲調"
+  },
+  {
+   "artist": "Andrew Cyrille / Mark Dresser / Marty Ehrlich",
+   "album": "C/D/E",
+   "year": 2000,
+   "label": "PAO Records",
+   "country": "at",
+   "faction": "group",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Cyrille、Mark Dresser、Marty Ehrlich 1998 年 Pilot 錄音室的單簧管、低音提琴、鼓三重奏（十二段）",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.0,
+    "why": "單簧管低音提琴鼓，自由卻節制"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e17b29bf-c7af-34e6-93ef-0b25f17b6d33",
+    "https://www.discogs.com/release/2552130"
+   ],
+   "mbRgMbid": "e17b29bf-c7af-34e6-93ef-0b25f17b6d33",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x／z 偏邊"
+  },
+  {
+   "artist": "Anthony Braxton, Milford Graves & William Parker",
+   "album": "Beyond Quantum",
+   "year": 2008,
+   "label": "Tzadik",
+   "country": "us",
+   "faction": "group",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Braxton、Graves、William Parker 2008 年 Tzadik 的薩克斯風、鼓、低音提琴自由三重奏（Orange 錄音室混音）",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.1,
+    "z": -1.6,
+    "why": "薩克斯風鼓低音提琴，快密，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8dd3e284-b48b-393f-adbc-34ea428d3d95",
+    "https://www.discogs.com/release/1496218"
+   ],
+   "mbRgMbid": "8dd3e284-b48b-393f-adbc-34ea428d3d95",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 偏邊：Parker 低音提琴若判厚"
+  },
+  {
+   "artist": "Chris Cutler / Lutz Glandien",
+   "album": "Domestic Stories",
+   "year": 1992,
+   "label": "ReR Megacorp",
+   "country": "",
+   "faction": "group",
+   "genres": [
+    "rock"
+   ],
+   "why": "Cutler 與 Glandien 1991–92 年柏林藝術學院錄製的 RIO 室內搖滾（Dagmar Krause 人聲、Frith、Harth），以打擊與取樣為骨",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.1,
+    "z": -1.4,
+    "why": "人聲Krause尖細，鼓與取樣，無調棱角"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7ae619b2-c954-4b43-8038-285d4e525328",
+    "https://www.discogs.com/release/4305754"
+   ],
+   "mbRgMbid": "7ae619b2-c954-4b43-8038-285d4e525328",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x／y 偏邊：搖滾編制若判厚；非自由即興，屬擴寫"
+  },
+  {
+   "artist": "André Goudbeek, Christine Wodrascka, Peter Jacquemyn, Lê Quan Ninh",
+   "album": "AGiiiiR",
+   "year": 2010,
+   "label": "Free Elephant",
+   "country": "de",
+   "faction": "group",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Goudbeek、Wodrascka、Jacquemyn、Lê Quan Ninh 2005 年 Studio Toots 的薩克斯風、鋼琴、低音提琴、打擊四重奏",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "薩克斯風鋼琴低音提琴打擊，稀疏尖細"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3df2d527-0b93-4703-8a05-f62247009ab6",
+    "https://www.discogs.com/release/2626066"
+   ],
+   "mbRgMbid": "3df2d527-0b93-4703-8a05-f62247009ab6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 偏邊"
+  },
+  {
+   "artist": "Steven Schick",
+   "album": "Born to Be Wild",
+   "year": 1994,
+   "label": "Newport Classic",
+   "country": "us",
+   "faction": "contemporary",
+   "genres": [
+    "classical"
+   ],
+   "why": "Schick 1994 年錄音：Ferneyhough《Bone Alphabet》、Globokar《Toucher》、Xenakis《Rebonds》、Rzewski《To the Earth》，打擊獨奏的硬蕊曲目",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0.1,
+    "z": -1.3,
+    "why": "獨奏打擊，Ferneyhough與Xenakis，無調，乾硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f0eaa66c-4697-4560-9237-986b2366f86a",
+    "https://www.discogs.com/release/3988312"
+   ],
+   "mbRgMbid": "f0eaa66c-4697-4560-9237-986b2366f86a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 偏邊：大鼓與 Rebonds 若判厚"
+  },
+  {
+   "artist": "Pedro Carneiro",
+   "album": "Psappha / Rebonds A & B / Okho pour trois djembés",
+   "year": 2005,
+   "label": "Zig-Zag Territoires",
+   "country": "fr",
+   "faction": "contemporary",
+   "genres": [
+    "classical"
+   ],
+   "why": "Carneiro 錄製 Xenakis 的《Psappha》《Rebonds A & B》《Okho》，獨奏木、皮、金屬音源，無調而節奏銳利",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.2,
+    "z": -1.4,
+    "why": "獨奏打擊木皮金屬，無調，銳利乾硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/03f279d6-ac34-4a0f-9757-523df9fe17a1",
+    "https://coverartarchive.org/release-group/03f279d6-ac34-4a0f-9757-523df9fe17a1/front"
+   ],
+   "mbRgMbid": "03f279d6-ac34-4a0f-9757-523df9fe17a1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 偏邊：Rebonds 大鼓若判厚"
+  },
+  {
+   "artist": "Isao Nakamura",
+   "album": "Isao Nakamura Plays Works for Solo Percussion",
+   "year": 2018,
+   "label": "Neos",
+   "country": "de",
+   "faction": "contemporary",
+   "genres": [
+    "classical"
+   ],
+   "why": "Isao Nakamura 的當代獨奏打擊（Carter 定音鼓、Kagel 小鼓、Xenakis、Hosokawa 等），Neos 2018",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.2,
+    "z": -1.3,
+    "why": "定音鼓小鼓獨奏，無調，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/171237b3-75f1-47f6-89dd-0be99d4539ec",
+    "https://www.discogs.com/release/14651287"
+   ],
+   "mbRgMbid": "171237b3-75f1-47f6-89dd-0be99d4539ec",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 偏邊"
+  },
+  {
+   "artist": "Karlheinz Stockhausen",
+   "album": "Zyklus – Refrain / Transición II",
+   "year": 1961,
+   "label": "Time Records (3)",
+   "country": "us",
+   "faction": "contemporary",
+   "genres": [
+    "classical"
+   ],
+   "why": "Stockhausen《Zyklus》（單人打擊）、《Refrain》與 Kagel《Transición II》的 1961 年 Time 版（Tudor、Caskel、Kontarsky）",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.1,
+    "z": -1.5,
+    "why": "單人打擊與鋼琴，序列主義，點描尖細"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4f77936b-41ed-46b4-8580-114fcd9ae5c4",
+    "https://www.discogs.com/release/1127060"
+   ],
+   "mbRgMbid": "4f77936b-41ed-46b4-8580-114fcd9ae5c4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 偏邊：點描段落安靜"
+  },
+  {
+   "artist": "Les Percussions de Strasbourg",
+   "album": "Stibilj: Épervier de ta faiblesse / Shinohara: Alternances / Schat: Signalement",
+   "year": 1967,
+   "label": "Philips",
+   "country": "fr",
+   "faction": "contemporary",
+   "genres": [
+    "classical"
+   ],
+   "why": "Strasbourg 打擊樂團 1967 年 Philips 錄音：Stibilj《Épervier de ta faiblesse》、篠原眞《Alternances》、Schat《Signalement》，現代打擊重奏",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.2,
+    "z": -1.0,
+    "why": "打擊重奏無調，木皮金屬，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9c83c6d0-a4c3-4b36-a41c-5a35f0a52cc4",
+    "https://www.discogs.com/release/12845111"
+   ],
+   "mbRgMbid": "9c83c6d0-a4c3-4b36-a41c-5a35f0a52cc4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 偏邊：大鼓若判厚"
+  },
+  {
+   "artist": "Les Percussions de Strasbourg",
+   "album": "Amy: Cycle / Haubenstock-Ramati: Jeux 6",
+   "year": 1970,
+   "label": "Philips",
+   "country": "fr",
+   "faction": "contemporary",
+   "genres": [
+    "classical"
+   ],
+   "why": "Strasbourg 打擊樂團 1970 年 Philips 錄音：Gilbert Amy《Cycle》、Haubenstock-Ramati《Jeux 6》，序列主義與圖形記譜",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.1,
+    "z": -1.3,
+    "why": "打擊重奏序列主義，點描，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/04f04d04-7ae3-435a-9118-76eb31764318",
+    "https://www.discogs.com/release/1214718"
+   ],
+   "mbRgMbid": "04f04d04-7ae3-435a-9118-76eb31764318",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 偏邊：Jeux 6 稀疏段落"
+  },
+  {
+   "artist": "Les Percussions de Strasbourg",
+   "album": "Americana",
+   "year": 1970,
+   "label": "Philips",
+   "country": "fr",
+   "faction": "contemporary",
+   "genres": [
+    "classical"
+   ],
+   "why": "Strasbourg 打擊樂團 1970 年錄音：Varèse《Ionisation》、Chávez、Cage 的美洲打擊作品",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.2,
+    "z": -0.6,
+    "why": "打擊重奏，Ionisation 警笛與鼓，乾硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d681aa76-bcad-43b6-a652-309eb48c26a5",
+    "https://www.discogs.com/release/1122359"
+   ],
+   "mbRgMbid": "d681aa76-bcad-43b6-a652-309eb48c26a5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y／z 偏邊：Chávez 節奏若判暖"
+  },
+  {
+   "artist": "Les Percussions de Strasbourg",
+   "album": "Serocki: Continuum / Silvestrov: Mystères / Puig: Provisoires agglomérats",
+   "year": 1969,
+   "label": "Philips",
+   "country": "fr",
+   "faction": "contemporary",
+   "genres": [
+    "classical"
+   ],
+   "why": "Strasbourg 打擊樂團 1969 年錄音：Serocki《Continuum》、Silvestrov《Mystères》、Puig《Provisoires agglomérats》，東歐前衛打擊",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.2,
+    "z": -1.1,
+    "why": "打擊重奏無調，點描與音塊，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b62a17f5-d665-4d0f-83c0-2e21ef14de19",
+    "https://www.discogs.com/release/6371890"
+   ],
+   "mbRgMbid": "b62a17f5-d665-4d0f-83c0-2e21ef14de19",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 偏邊"
+  }
+ ],
+ "notes": [
+  "主場景與鼓手掛名的小編制挖到 42 張（獨奏 12、鼓對話 5、二重奏 12、小編制 13，其中 Cutler《Domestic Stories》為 RIO 擴寫），加擴寫當代古典打擊 8 張，共 50；不足 54 照實交，不湊數。",
+  "身分 50 張全部 MB 釘住（mbRgMbid 皆為 Album、無 Live／Compilation 次類型）；封面來源 Discogs 發行頁 48 張，Ichnos 為 Discogs 發行 659887（MB 無 Discogs 連結，經 Discogs API 搜尋補），Carneiro 用 CAA。Ichnos 的 Discogs master 3374053。",
+  "現場已擋（Discogs 記事載明 live／音樂祭／俱樂部）：Lovens《Der Traum Der Roten Palme》《Death Is Our Eternal Friend》《Ramifications》(蘇黎世音樂廳)《TR!O》《Achtung》、Sommer《Touch the Earth》《Vor der Flut》、Oxley《Ach was!?》《Floating Phantoms》《The Alan Davie Music Workshop》《The Glider & The Grinder》(部分現場)、Bennink《Nerve Beats》《Jazz Bunker》《Spring Odyssey》《Chat Room》(LOFT 現場)、Turner《Take Some Risks》《Acid Rain》《Seek It Not With Your Eyes》《I segnali della ritirata》《Light Air Still Gets Dark》、Cyrille《Junction》、Hemingway《Demon Chaser》《Chamber Works》《Duo》、Cutler《2 Gentlemen in Verona》《Telectu Cutler Berrocal》、Zerang《35 Grapes》《Guts》、Corsano《Monster Club》《The Dim Bulb》《Graduation》、Graves《Bäbi》(WBAI 現場音樂店)、Prévost《En·Tropo·Logy》《Landmark》、SME《Face to Face》《Quintessence》《A New Distance》。",
+  "擋下（池中已評分顯示判靜）：富樫雅彦全系列（池中 x 1.8–2.8 皆平靜）、Bill Dixon／Oxley《Papyrus》（Dixon 池中 x 1.8–2.3）、SME 多數（Karyobin／Challenge 池中 x 3.2 貼邊，Birds of a Feather 2.6）、Prévost／Tilbury《Discrete Moments》、Beins／Neumann《Lidingö》等還原主義；Graves《Meditation Among Us》。",
+  "擋下（聲音偏重或偏暖）：Brötzmann 系列（Balls、Schwarzwaldfahrt、Pica Pica、Réservé、Tales Out of Time、Guts、Mental Shake）；Corsano／Orcutt、Corsano／Flaherty（失真吉他／厚薩克斯風）；Murray 池中四張皆暴躁；Sunny Murray 其餘；Graves／Laswell《Space/Time》與 Smith／Graves／Laswell《Sacred Ceremonies》（Laswell 低頻）；Percussion Profiles（顫音琴與 Gruntz 編曲偏暖）；Pléïades／Persephassa 重奏（池中 Pléïades 已暴躁 y 0.8）；Hemingway 五重奏諸盤、Altschul 硬咆勃諸盤（Be-Bop?）；Cage 打擊作品（旋律／節奏偏暖）；Nakatani 銅鑼系與 Gong 專輯。",
+  "疑點（已在各卡 uncertain 欄標明）：Strasbourg 四張與 Schick、Carneiro 的 y 可能判 +0.5（大鼓／金屬共鳴）；Wadada Leo Smith／Sommer、Parker／Prévost 二盤 x 貼 3.3；Nakatani 二盤弓擦鈸鑼段落若判靜則 x<3.3；Zerang《Cedarhead》為貝魯特多位樂手的二重奏集，Discogs 僅有檔案版；Hauser《Zwei》含詩文配音；Cutler《Domestic Stories》屬 RIO 擴寫非自由即興；Graves 與 Cyrille 二人的非洲手鼓語彙可能把 z 往暖推。",
+  "WebSearch 0 次；以 MB API 與 Discogs API 查證。作業：MB 以 Album 型列出各鼓手作品、Discogs 記事逐張檢查現場與編制，再以池中已評分值（pool-axes.mjs）校準。"
+ ]
+}
