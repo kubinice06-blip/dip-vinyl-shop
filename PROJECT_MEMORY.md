@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜Apple 試聽索引補比對：從沒對過 Apple 的卡逐張重搜（進行中，第 1 批）
+
+- **起因**：串流按鈕盤點後，卡池仍有 5,191 張 Apple 按鈕灰（索引沒列 4,444、unavailable 592、error 151）。
+- **做法**：worktree `/home/user/dip-apple`、分支 `claude/apple-map-fill`，跑既有 `scripts/build-apple-audio-map.mjs --limit=800 --delay-ms=5000`（TW／US 搜尋、分數 ≥85 自動配對），再 `fetch-apple-album-urls.mjs` 補名稱段、重建 runtime。合併時以 origin/main 版為底，用 scratchpad 的 `apple-merge.mjs` 只套回本線新增或升級成 matched 的列。
+- **第 1 批**：800 張，matched 177、unavailable 622、error 1；`verify-apple-audio-map --sample=12` 抽樣 12／12 試聽可播（structuralProblems 都是舊有人工列缺 score 欄，非本批）。runtime 16,919 列。
+- **主要檔案**：`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`
+- **驗證**：抽樣 12／12；runtime 重建 missingSlug 161（皆下架）。
+
 ### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 15 輪（全線最後一個工作階段）ml59／mc48：roots reggae 第二波 13 張、美國 uptown 序列主義 31 張上線，落格 13/13、31/31，兩場景見底
 
 - **內容**：店主「三個情緒薄格各補到約 2,000」第 15 輪最後一個工作階段（做完暫停盤點），評分照 10-23 體感標準。ml59（`add-20261024-ml59`，恍惚）：Larry Marshall《I Admire You》、Delton Screechie、Rod Taylor《Where Is Your Love Mankind》、Twinkle Brothers《Underground》、Bim Sherman ×2、Don Carlos & Gold ×2、Triston Palma ×2、Viceroys《Chancery Lane》、Earl Cunningham、Congo Ashanti Roy。mc48（`add-20261024-mc48`，冷冽）：GCM ×5（Babbitt、Wuorinen、Martino）、Composers Quartet ×3（Carter 1&2、Crawford／Perle／Babbitt、Carter／Babbitt／Powell）、Speculum Musicae ×2、Fine Arts Quartet、JACK《Eckardt: Passage》、Ars Combinatoria《Babbitt: String Quartets》、Continuum《Wolpe: Enactments》、Cuckson ×3（Shapey ×2、Martino）、Zukofsky、Skouras、Asakawa、Swann、Hudson & Ohlsson、Goldray、Seelye、Schulte & Feinberg、Holzman、Hodgkinson、Robert Miller、Sollberger、Macomber、Feinberg、Chicago CCP《Shapey SQ7》。
