@@ -1,5 +1,20 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜串流按鈕盤點：Apple 直連補 3,645 張、card_catalog 補封面 94 張
+
+- **起因**：店主截圖 Wun Two《forest folks》Apple／Spotify 灰掉，「檢查有哪些明明有卻顯示沒有串流連結」；另「fishmans 也沒有封面」。
+- **Apple**：試聽索引有對到專輯、試聽也能播，但上架流程（`publish-manifest --write-preview`）寫進的列沒有 `collectionViewUrl`，runtime 第 4 欄名稱段空白 → `appleAlbumUrl` 回空 → strict 按鈕灰。runtime 16,716 列有 3,805 列空白。跑既有的 `scripts/fetch-apple-album-urls.mjs`（lookup 批次 150）補 3,645、下架 1，重建 runtime 後剩 161 列空白（多為下架）。**卡池仍有 5,191 張沒對上 Apple**（索引沒列 4,444、unavailable 592、error 151、review 4），未處理。
+- **封面**：掃 `card_catalog` 全集合（22,135 文件）：卡池 21,849 張中 coverUrl 空 90、無文件 7。Apple lookup（已核對的 collectionId）補 64、MB release-group＋CAA 補 16、主線人工 14（Fishmans《Kuchu Camp》＝Apple jp 1416941115 等）；REST PATCH 94／94 回讀一致。查無 3：Drunks with Guns 同名、日向敏文《Reality in Love》、Beethoven《Kreutzer Sonata》。
+- **Spotify**：worker 的 Spotify app 又是 429（retry-after 27,815 秒）；Odesli 公開 API 已停用（401 `PUBLIC_API_ACCESS_DEPRECATED`），10-21 留下的 3,851 張 MB 沒有的仍灰。待店主定：開第二個 Spotify app。
+- **主要檔案**：`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、`dip-player.js`（索引網址 `?v=3`，瀏覽器用 force-cache，不換版號舊索引會一直留著）、四個頁面的 `dip-player.js?v=53`、`batch-progress/streaming-links-20261024/*`；Firestore `card_catalog` 94 文件
+- **驗證**：runtime 重建 16,716 列、Wun Two《forest folks》第 4 欄 `forest-folks`；封面寫入回讀 94／94。
+
+### 2026-10-24｜dip-vinyl-shop｜頻率光譜搜尋清單補抓封面＋《Bitches Brew》card_catalog 補封面
+
+- **改動**：店主「有幾張沒封面 補上封面」。卡池列本身不帶封面，搜尋清單原本只有預覽過的卡才有圖。`dip-tune.js` 加 `watchSuggCovers`／`pumpCovers`：清單項目捲進可視範圍（前後 120px）才查，同時最多 4 張，查到記在卡上；`index.html` 新增 `listCover`（先只讀 `card_catalog` 一次，沒有才走 `resolveCardAssets` 含 Spotify）。`dip-tune.js?v=15`。另外 Miles Davis 50 張 card_catalog 封面盤點 49／50，《Bitches Brew》coverUrl 空，補 Apple 168376392 600px 圖（REST PATCH 回讀一致）。
+- **主要檔案**：`dip-tune.js`、`index.html`；Firestore `card_catalog/miles davis|bitches brew`
+- **驗證**：`node --check` 過；本機 Chromium 開 `#tune` 搜「miles davis」：50 筆中可視範圍 11 筆先補上，捲到底後 22 筆有圖，0 頁面錯誤。
+
 ### 2026-10-24｜dip-vinyl-shop｜情緒薄格線第 15 輪最後一個工作階段：ml59＋mc48
 
 - **現況**：mc44 23／19、md32 28／25、mc46 13／13、md33 14／12、mc47 15／15、md34 38／38（上線／落格）。恍惚 1,686、頹靡 1,624、冷冽 1,576。
