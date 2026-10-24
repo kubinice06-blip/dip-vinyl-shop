@@ -21,3 +21,14 @@
 - 22475：Holzman 盤 Discogs 盤名只寫《Donald Martino》，沿用策展層拼接盤名。
 - 22476：Cuckson 盤《Romanza》年份 Discogs 2002、維基 2000，寫作層不寫年份。Babbitt 第二號四重奏年份 Discogs 1952、維基 1954，寫作層寫『1950 年代初』。
 - 22477：moodGuess 存疑清單：Berger／Wolpe（Septet 第二樂章 Sostenuto、短曲多）、Cuckson（Romanza 9 分半疑似抒情、獨奏小提琴占 3/4）、Holzman（Twelve Preludes 時長未標、可能含慢曲）、GCM Martino（打擊參與、13 分鐘無伴奏長笛）；其餘低風險。無現場錄音、無電子磁帶、無低音樂器獨奏占大段（Cello Variations II 僅 7 分 25 秒）。
+
+## 研究 c 組
+- 22461：c 組九張身分全部核對 Discogs（2769054、14302603、8615909、13560497、14631711、3705952、11584076、11338478、7383133），盤名、年份、廠牌與卡單一致，無推翻；Todd Seelye 盤 Discogs 正名僅《Sheer Pluck》，卡單盤名帶作曲家列表，建議主線縮短。
+- 22462：Wuorinen GCM《Chamber Works》是否現場：1988-11-25 單日在國會圖書館 Coolidge Auditorium 錄成（Elite Recordings 製作），New World 頁面與解說皆未說明現場與否，facts 不寫現場，notes 列風險。
+- 22463：Ars Combinatoria Babbitt 為棚內製作（Andrew Munsey 錄音混音母帶），非現場；Carlson 頁面未標錄音場地與日期，年份只採 Discogs 的 2017-12-12 數位發行日。
+- 22464：Seelye 末曲 Morris《To the Nine》Discogs 作者欄標 Tape，11 分 19 秒，約占全盤 78 分鐘的 14%，判定電子占比小，不汰換。
+- 22465：Continuum《Enactments》三台鋼琴 31 分 29 秒（全盤約 41 分鐘的四分之三），編制仍屬小編制，無打擊、電子、低音樂器，僅標 y 厚度風險。
+- 22466：Shapey 四重奏第七號 LP Discogs 未標各樂章與總長，策展推估 30–40 分鐘查無來源，不寫；status 標 thin（聲音描述查無獨立樂評）。
+- 22467：moodGuess 存疑清單（中度）：Wuorinen《Chamber Works》（Third String Quartet 29 分鐘占 44%、自述從容、密度遞減、聖詠材料；Wuorinen 自述風格轉向音高中心、拍點更清楚；Fast Fantasy 有安靜中段）；Wolpe Vol. 4（雙簧管奏鳴曲 1937–41 早期，含 Molto adagio 5 分 40 秒；四重奏含 Quiet 樂章 8 分 13 秒與 Early Morning Music；三組錄音來自電台與文化中心）。輕度：Ars Babbitt（第六號被維基形容為寬廣抒情）、Seelye（Mamlok、Carter 小品）、Shapey SQ7（Largo、Passacaglia 約占一半）、Cuckson 兩盤（Cantabile、Bel Canto 短段）。
+- 22468：無明顯不符：Goldray Babbitt 鋼琴（四首鋼琴獨奏，棚內分兩階段，1996-07 與 1997-01 於 Taplin Auditorium）；Cuckson 第二輯（Bard Sosnoff Theater 2010-01-04/05 棚內，非現場）。
+- 22469：Goldray 的個人資料僅 Discogs 一句簡介，人物事實以 Babbitt 與錄音情況補足，status 仍標 full。
