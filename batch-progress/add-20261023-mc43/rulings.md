@@ -120,3 +120,11 @@
 - 21543　樂評／廠方轉述一律改成不掛來源的陳述：Neuwirth「廠方形容…」→ 音樂充滿斷裂、變形與突轉；Cassidy「樂評稱第一張…」→ 直述為事實、「樂評形容輕聲哀鳴」→ 聲音壓得極輕；Lauds「樂評說驚人強度」→ 吹奏繃得極緊、強度驚人；Posadas「一篇樂評形容」→ 從近乎無聲的弱音一層層堆出巨大能量；Machinations「樂評形容」→ 人聲在哀鳴、吐氣…之間切換；Aperghis／Illés／Schrank 的「廠方說」→ 直述。媒體名與名次 0 處；「據」0 處。Posadas 的「被作曲家稱為」屬作曲家自述，改寫成直述編制（小提琴領頭、三人當弦樂三重奏陪襯）。
 - 21544　跨張 4-gram（han() 剝非漢字）：本組 18 張＋writer-2 已交 18 張合掃，3 張以上 0 條（拆掉「國作曲家」×6、「的作曲家」、「作曲家的」、「室內作品」、「時間是年」、「奏小提琴」、「一把小提琴」、「家從年起」、「在年出版」等殘片；我方 Reynolds 原稿誤撞 Neuwirth hook「兩首四重奏之外」，已改）。對 mc32／mc40／mc41 已上架 out 檔：無任何 4-gram 與已上架 2 張以上同時撞。剩 2 張的多為樂器／編制詞（弦樂四重奏、低音提琴、普立茲音樂獎、新複雜主義）。發行句一張一種：推出／發行年是／交…出版／隔年收成一張／由…出版／面世／把它推出／上市／問世（黑膠於）／合成一套發行／當年上架／隔年發行／出版時間是／錄音在柏林完成（Schrank 只寫錄音年）／CD 出版／發行年份是／年發行／錄音問世。
 - 21545　note 小處照辦與可逆處：Guerrero 辭世與開錄照 note 標時序、不渲染；Schrank 年份只寫 2011 年 2 月錄音；Poppe《Chamber Music》不寫廠牌（note 未列）；Simaku 卡第二句以「作曲家＋移居年份」領句，與 hook 的「移居」有一字重疊但補上具名與年份；Lauds 卡同台三人照 note 只寫姓。Cassidy 卡「新複雜主義」與 writer-2 Dillon 卡共用流派名，屬專名不算同構。主線收件時請兩檔統一再合掃一次（writer-2 若再改動結果會變）。
+
+## 主線審稿（21551–21553；2026-10-24）
+- 21551：逐張審 36 張（out-1 18、out-2 18），逐句對回研究稿；qa-batch out 全過、qa-check-research 兩檔各 0 標記、fix-spacing 0 補；正文無媒體名。抽核：Holliger 1959 日內瓦大賽第一名（研究 b 組維基）、Knox 首演 Ligeti〈Loop〉（研究 d 組維基）、Steen-Andersen 2026 Premio Abbiati del Disco 得獎（研究 e 組 Edition-S 新聞）、Simaku 2019-12 約克大學作曲家在場錄音（研究 b 組 Discogs）、Pacifica 2009 Grammy 最佳室內樂演出。
+- 21552：改 3 張（`desc-override.json`）：
+  - `James Dillon|Dillon: The Soadie Waste`：hook「據說舞跳熱了，化工廠舊址的氣味會從地下滲上來。」用了禁用的「據說」，改「老舞廳流傳的說法：舞一跳熱，地底就滲出化工廠的氣味。」（研究 e 組 NMC 頁：舞廳據說蓋在舊化工廠原址，是流傳說法，不寫成事實）；另「樂在強而有力的圖形化織體」語病改「織體強而有力、充滿圖形感」→ 240 字。hook 已同步 hooks 檔與 writer-2 input。
+  - `Ensemble intercontemporain|Hurel…`：hook「獲大獎」與正文「Ernst von Siemens 音樂獎」——研究 e 組只有法文維基一源，且 1995 年 Hurel 得的是基金會的作曲家獎（Förderpreis），不是同名大獎；改 hook「得獎那一年」、正文「那個獎來自 Ernst von Siemens 音樂基金會」→ 163 字。hook 已同步。
+  - `Oslo Sinfonietta|Steen-Andersen: Chambered Music`：「長號出現在標題曲〈Chambered Music〉暗示被壓住的話語；同曲也用」語病，改「標題曲〈Chambered Music〉用這把長號暗示被壓住的話語，也用」→ 177 字。
+- 21553：核過未改——Yejin Gil 盤「聲音明亮、冰冷、堅硬」是研究 e 組對〈Incises〉的聲音描述，保留；Arditti《Mexico》寫「音樂節期間」錄音，未寫成現場（研究 c 組：是否現場未明載）。
