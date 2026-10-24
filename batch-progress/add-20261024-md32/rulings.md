@@ -94,3 +94,14 @@
 - 21980-e：Radigue《Transamorem – Transmortem》：2011 Important 首次出版，1973 ARP 作品、1974 The Kitchen 首演；長度 Discogs 67:03 對 Brainwashed 77 分，採 Discogs；Brainwashed 摘要有「slow pulse」與 prickly 高頻（二手，原頁 404）。curatorWhy 的 Boomkat「最細微最靜止之一」句未在頁面找到，不採。moodGuess 存疑：y 偏薄（0.5–0.8）。
 - 21980-f：Radigue《Chry-ptus》：Schoolmap 2007 原版（Boomkat 是 2022 Important 重發）；Musique Machine 說 soothing drone、不規則循環事件隱約暗示節奏，低頻證據弱。moodGuess 存疑：y、z 偏薄偏暖；兩張 Radigue 汰一留一時留 Transamorem。
 - 21980-g：WebSearch 本任務共用了 4 次（補六張，超出每支 3 次上限 1 次），Discogs 直連 403 改走 api.discogs.com；Brainwashed 原頁與 Room40 Bandcamp／商店頁抓取失敗，已在各張 notes 的「未取得」註明。
+
+## 補研究（c、d、e 組追加）
+- 22007：Ellen Arkbro《Sounds While Waiting》moodGuess 存疑——Boomkat 用 divine minimalism、ancient sanctuary、celestial、church music（sacred 字眼）；Changes 後段有 "dense, puissant blasts"；〈Untitled Rain〉有鈸（MB 曲名 "for two organs and cymbals"、Boomkat "drizzly percussion"）。另有版本疑點：MB 首發 2021-10-20 為無廠牌自發 4 軌數位版（約 48 分），W.25th W25-15 LP 為 2023-10-13、5 軌（約 42 分），卡單 year 2021／label W.25th 混用版本。建議汰換候補。
+- 22008：Slomo《The Bog》moodGuess 存疑——Discogs 人員表 Julian Cope "Voice [Epilogue: Poem Recital 'Land']"（結尾有人聲朗讀），人員表另有 clatter／hiss 雜音；Aquarius "sinister yet soothing"、"burbling electronics"。低重冷成立（"slow and low"、Moog Taurus 低音、AllMusic "sepulchral…texturally static"）。年份廠牌成立（Important imprec212，2008-10-28，65 分）。人聲段長度未查到，列觀察候補。
+- 22009：Havenaire《Rabot》moodGuess 存疑——Chain D.L.K. "instead of relying on the use of drone, a melody is a building element of all tracks"、"a pale melody"；Kudos "distant piano notes echoing"、"a pop sensibility"；Bandcamp 器材含 piano、Juno-106；留言 "beautiful"；全文無 cold／dark，冷僅來自冰河主題（curatorRisk 成立）。約 44 分。建議汰換。
+- 22010：其餘五張相符，無矛盾證據。Archetti《Null II / Null III》（2CD 140 分，僅 Boomkat 單源，thin）；Drumm《Trouble》（54 分單軌、Bandcamp 建議音量 4、"quietest"，y 缺證）；Levander《Jökel》（53 分，Arcana "ominous knocking sound that reoccurs"、"no melodies as such"，專業樂評僅一篇）；Baker《Pithovirii》（2×30 分，只有廠牌文案，thin，"dark ambient" 找不到出處）；Machinefabriek《Stillness Soundtracks II》（34:49 貼邊，無器材資料，Boomkat "chilly"／"sombre and subdued"，y 缺證，thin）。
+
+## 主線補研究後汰換（不佔條號；2026-10-24）
+- 汰 5（存 `dropped-*.json`，清單 `drop-research2.json`）：Niblock《Four Full Flutes》（多軌長笛偏柔亮，y 估 0.7–1.0）、Niblock《G2,44+/x2》（Room40 文案 warm sound-bath）、Radigue《Chry-ptus》（soothing、不規則循環暗示節奏、低頻證據弱）、Ellen Arkbro《Sounds While Waiting》（divine／celestial／church music、〈Untitled Rain〉有鈸、dense blasts；版本年份混用）、Havenaire《Rabot》（a melody is a building element、distant piano、pop sensibility，冷只來自題材）。
+- 留：Slomo《The Bog》（結尾 Julian Cope 朗詩為終曲小段，主體 slow and low、texturally static；正文不寫成人聲專輯）、Drumm《Trouble》（quietest、y 偏薄留給評分驗收）、Radigue《Transamorem – Transmortem》、OPO《Four Walls Full of Sound》（研究 b 查證為 Re-Set Studio 錄音室錄音，非現場）。
+- 定案 **28 張**。

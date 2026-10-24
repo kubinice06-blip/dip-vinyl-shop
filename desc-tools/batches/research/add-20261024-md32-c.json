@@ -313,62 +313,6 @@
   "coverage": "thin"
  },
  {
-  "key": "desc2:Ellen Arkbro|Sounds While Waiting",
-  "artist": "Ellen Arkbro",
-  "album": "Sounds While Waiting",
-  "facts": [
-   {
-    "f": "Ellen Arkbro 1990 年生於斯德哥爾摩，是瑞典作曲家與聲音藝術家，以管風琴與聲音為主；曾在合唱學校唱歌、學過爵士演唱，後來在斯德哥爾摩皇家音樂學院取得電子音樂作曲學位，並隨 Marc Sabat 在柏林學調音理論。",
-    "src": "https://en.wikipedia.org/wiki/Ellen_Arkbro"
-   },
-   {
-    "f": "2014 年她在紐約私下向 La Monte Young 與 Marian Zazeela 學習；Wikipedia 引述她談《Sounds while waiting》的主題，是「the long drawn out manner of playing chords in a resonant space」（在有共鳴的空間裡把和弦拉得很長地奏）。",
-    "src": "https://en.wikipedia.org/wiki/Ellen_Arkbro"
-   },
-   {
-    "f": "錄音地點是瑞典 Unnaryd 一座數百年歷史的教堂，時間 2020 年 6 月；Bandcamp 說明為 Arkbro 作曲、演奏與製作，與 James Ginzburg 混音。",
-    "src": "https://ellenarkbro.bandcamp.com/album/sounds-while-waiting"
-   },
-   {
-    "f": "最早的版本是 2021 年 10 月 20 日的數位版：MusicBrainz 登記為無廠牌（自行發行）、四軌約 48 分鐘，曲名標註《Sculpture I》與《Sculpture II》各為兩部管風琴、《Untitled rain》為兩部管風琴加鈸。",
-    "src": "https://musicbrainz.org/ws/2/release/7d829255-ad7f-4f7e-8637-86956fc8f2b0?inc=recordings&fmt=json"
-   },
-   {
-    "f": "W.25th（目錄號 W25-15）在 2023 年 10 月 13 日發行 LP，Discogs 版本表只列 2023 年的兩個版本（W.25th 黑膠與 Superior Viaduct 的 MP3）；曲目變成五首：Changes 6:44、Sculpture I 14:18、Leaving Dreaming 8:42、Untitled Rain 2:50、Sculpture II 9:24，全長約 42 分鐘，由 Gary Hobish 母帶。",
-    "src": "https://api.discogs.com/releases/28579603"
-   },
-   {
-    "f": "Boomkat 描述：Changes 從「lowercase organ hums」走到「dense, puissant blasts」；Sculpture I 是「languidly fluctuating tonality」；〈Untitled Rain〉有模擬降雨的「drizzly percussion」（細雨般的打擊聲，實為鈸）。",
-    "src": "https://boomkat.com/artists/ellen-arkbro/releases/rvwnakdt/sounds-while-waiting"
-   },
-   {
-    "f": "同一篇 Boomkat 文案用了 rooted in familiar, intimidating church music、divine minimalism、an ancient sanctuary 等字眼，賣點寫成 celestial（天界般的）；這是教堂管風琴的神聖脈絡，文案不能被當成冷峻。",
-    "src": "https://boomkat.com/artists/ellen-arkbro/releases/rvwnakdt/sounds-while-waiting"
-   },
-   {
-    "f": "一則 8 分的短評（Everand 的 A-to-Z 專欄）形容它是 hallucinatory organ works, deep and droning，五首是密實、細節豐富的管風琴質地；搜尋摘要另引作曲者自述聲音的目標是「rough, focused and yet strangely transparent」。",
-    "src": "https://www.everand.com/article/677758518/Ato-Z"
-   },
-   {
-    "f": "MusicBrainz release-group 收錄，首發 2021-10-20，並含 2023-10-13 的美國與全球版本；Bandcamp 頁面則標 2023-10-13，所以卡單 year 2021 / 廠牌 W.25th 是跨版本混用，文案寫年份要寫清楚是 2021 自行數位版或 2023 W.25th 版。",
-    "src": "https://musicbrainz.org/release-group/cf5a9467-3056-47ad-ac00-2eb2e4a39442"
-   }
-  ],
-  "hookCandidates": [
-   "在瑞典一座幾百年的教堂裡，把兩部管風琴的和弦拉了十幾分鐘",
-   "最短的一首叫〈Untitled Rain〉，用鈸模擬細雨"
-  ],
-  "sound": "多部管風琴的持續和弦，教堂共鳴，開場是低微的管風琴嗡聲、之後轉為濃密的大聲段；一首〈Untitled Rain〉有鈸的細雨聲；無鼓組、無人聲。",
-  "keyTracks": [
-   "Sculpture I",
-   "Sculpture II",
-   "Changes"
-  ],
-  "status": "full",
-  "notes": "【身分】MB 釘住 cf5a9467：首發 2021-10-20（無廠牌數位版 4 軌 48:26）；W.25th W25-15 LP 為 2023-10-13（5 軌，多一首 Changes）。卡單 year 2021 / label W.25th 兩個版本混用（curatorRisk 之外的新疑點），建議年份寫 2021 並避開對廠牌作年份主張，或改述『2023 W.25th 版』。\n【moodGuess 存疑：】(1) 神聖：Boomkat 用 divine minimalism、ancient sanctuary、celestial，教堂管風琴本身是 sacred 字眼，z 可能不冷（curatorRisk 的『和聲若被判溫潤』成立）。(2) 有打擊：〈Untitled Rain〉含鈸（MB 曲名『for two organs and cymbals』、Wikipedia 提 organ and cymbals、Boomkat drizzly percussion），2:46~2:50 的短段，非節拍但非完全無打擊。(3) 『dense, puissant blasts』：Changes 後段有大音量的強烈聲段，x 離靜有距離。主線可考慮汰換。\n【逐項】鼓／節拍：無鼓組；〈Untitled Rain〉的鈸。刺耳噪音：無『噪音』字眼，但有 puissant blasts（強烈聲段）。人聲：無（Arkbro 另唱歌，但此張未提）。旋律：持續和弦／泛音，無旋律。低頻：Boomkat 只提 lowercase organ hums，Soundohm 資料未有 bass 字眼，缺直接證據。warm／lush／sacred：divine、sanctuary、celestial、church music 均有。現場錄音：錄於教堂，非現場演出；時長約 42 分（2023 版）／48 分（2021 版）。\n【資料量】獨立樂評只有 Everand 8/10 短評，其他為店家文案，Boomkat 為主。Boomkat 與 Arkbro 自述的『rough, focused』只引自搜尋摘要，不寫成直接引文。",
-  "coverage": "full"
- },
- {
   "key": "desc2:Kevin Drumm|Trouble",
   "artist": "Kevin Drumm",
   "album": "Trouble",
