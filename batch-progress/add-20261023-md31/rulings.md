@@ -81,3 +81,8 @@
 - 留 15：Anjou 兩張、Growing《The Sky's Run Into the Sea》、Rothko《In the Pulse of an Artery》、Windy & Carl 兩張（無鼓 drone；4AD 夢幻質地有偏暖風險，留觀察）、Matt Elliott《The Mess We Made》、Dissolve《That That Is… Is (Not)》、Main 四張、E.A.R. 三張（《The Köner Experiment》有 Köner／Mellwig 的 pulses，無鼓組，留）。
 - 卡單更正：Dissolve《That That Is… Is (Not)》1994→**1995**（研究 d 組：MB、維基、RYM 皆 1995-05-26，1994 是版權年與白標預壓）；curatorWhy 的「Chris Heazlewood」應為 **Chris Heaphy**（研究 d 組），下游以研究稿為準。
 - 叫回策展代理補 25 張候補（方向：留下的那一型——無鼓、無人聲、厚低頻、冷的吉他／貝斯 drone、isolationist；每張附文案原句或 Discogs credits 證明無鼓無人聲；避開 md30 的 dark ambient 廠牌）。
+
+## 主線補候補（不佔條號；2026-10-24）
+- 策展代理補 25 張（faction backup-drone；每張附 Discogs credits／notes 證明無鼓手無歌手），全 MB 釘住、去重 0（Maeror Tri《Hypnobasia》md29 已提過，策展改提別張）。
+- 主線汰 5：Rafael Toral《Wave Field》（策展自標音色偏暖、z −0.6 貼邊；MB 首發 1998 與策展 1995 不符）、ELEH 6 張留 3（純音系 y 可能只 0.8–1.0，留 Location Momentum、Homage to the Square Wave、The Weight of Accumulation）、Maeror Tri 3 張留 2（勻量，汰 Emotional Engramm）。
+- 收 20 張進卡單（a 組追加 6、b 組新 9、c 組追加 5），卡單共 35 張；派三支補研究（a、c append 進既有研究稿，b 組重寫——原 b 組 9 張已全汰）。Paul Schütze《New Maps of Hell II》策展 1993、MB 1996，交研究 c 組核對。

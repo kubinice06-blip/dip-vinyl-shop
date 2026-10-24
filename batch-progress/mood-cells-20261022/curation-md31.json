@@ -24,6 +24,12 @@
    "zh": "催眠暗色 drone 古典（擴寫）",
    "count": 3,
    "why": "主場景不足時補的 md13 型往下壓 drone 古典"
+  },
+  {
+   "id": "backup-drone",
+   "zh": "候補：無鼓無人聲 isolationist／吉他貝斯 drone",
+   "count": 25,
+   "why": "研究層回饋後追加：Main／E.A.R.／Rothko 一路，copyQuote 以 Discogs credits／筆記證明無鼓手、無歌手"
   }
  ],
  "albums": [
@@ -1573,6 +1579,837 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": ""
+  },
+  {
+   "artist": "Aix Em Klemm",
+   "album": "Aix Em Klemm",
+   "year": 2000,
+   "label": "Kranky",
+   "country": "us",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Labradford 的 Robert Donne 與 Adam Wiltzie 的 Kranky 雙人 drone，只有低音與吉他長音，冷而沉",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.4,
+    "z": -1.1,
+    "why": "無鼓無人聲，低音吉他長音、殘響霧，冷"
+   },
+   "copyQuote": {
+    "text": "Discogs credits 只列 Adam Wiltzie、Robert Donne 為 Performer（無鼓手、無歌手）",
+    "url": "https://www.discogs.com/release/130632-Aix-Em-Klemm-Aix-Em-Klemm"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/90c763d8-1db9-31bd-ad65-21ff3af9096d",
+    "https://coverartarchive.org/release-group/90c763d8-1db9-31bd-ad65-21ff3af9096d/front",
+    "https://www.discogs.com/release/130632-Aix-Em-Klemm-Aix-Em-Klemm"
+   ],
+   "mbRgMbid": "90c763d8-1db9-31bd-ad65-21ff3af9096d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Adam Wiltzie 是 Stars of the Lid 成員，若主線仍排除 SotL 周邊可砍"
+  },
+  {
+   "artist": "Robert Hampson",
+   "album": "Vectors",
+   "year": 2009,
+   "label": "Touch",
+   "country": "gb",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Main 主腦 Robert Hampson 的 Touch 個人作，GRM 委託的電子／吉他 drone，冷而厚",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.5,
+    "z": -1.4,
+    "why": "無鼓無人聲，低頻 drone 與電聲質地，冷"
+   },
+   "copyQuote": {
+    "text": "Discogs credits 只有技術助理與封面，筆記載三首皆為 GRM 等委託之電聲作品（無鼓手、無歌手）",
+    "url": "https://www.discogs.com/release/1722295-Robert-Hampson-Vectors"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/70b581ba-5f56-46ec-bcf9-829712e2b8f1",
+    "https://coverartarchive.org/release-group/70b581ba-5f56-46ec-bcf9-829712e2b8f1/front",
+    "https://www.discogs.com/release/1722295-Robert-Hampson-Vectors"
+   ],
+   "mbRgMbid": "70b581ba-5f56-46ec-bcf9-829712e2b8f1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Robert Hampson",
+   "album": "Répercussions",
+   "year": 2012,
+   "label": "Editions Mego",
+   "country": "gb",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Hampson 在 Editions Mego 的 GRM 委託作，延續 Main 的冷 drone，低頻與殘響漫長",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.5,
+    "z": -1.4,
+    "why": "無鼓無人聲，低頻轟鳴、殘響長，冷"
+   },
+   "copyQuote": {
+    "text": "Discogs 筆記：\"Répercussions\" commissioned by GRM for Akousma festival 2011；credits 無任何演奏者（無鼓、無人聲）",
+    "url": "https://www.discogs.com/master/499684"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1addf1d5-dddf-4cfe-b7ea-d128a78f55c5",
+    "https://coverartarchive.org/release-group/1addf1d5-dddf-4cfe-b7ea-d128a78f55c5/front",
+    "https://www.discogs.com/master/499684"
+   ],
+   "mbRgMbid": "1addf1d5-dddf-4cfe-b7ea-d128a78f55c5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Robert Hampson",
+   "album": "Suspended Cadences",
+   "year": 2012,
+   "label": "Editions Mego",
+   "country": "gb",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Hampson 的類比電子＋吉他即興 drone 長篇，Main 路線的冷調延伸",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.5,
+    "z": -1.3,
+    "why": "無鼓無人聲，類比電子與吉他 drone，冷"
+   },
+   "copyQuote": {
+    "text": "Discogs 筆記原句：\"Improvised Analogue Electronics System and Guitar Recordings\"（無鼓、無人聲）",
+    "url": "https://www.discogs.com/master/499687"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/91073b04-9a64-43fd-93bb-6811e9eb458f",
+    "https://www.discogs.com/master/499687"
+   ],
+   "mbRgMbid": "91073b04-9a64-43fd-93bb-6811e9eb458f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Experimental Audio Research",
+   "album": "Phenomena 256",
+   "year": 1996,
+   "label": "Space Age Recordings",
+   "country": "gb",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "E.A.R. 集結 Kevin Martin 等人的 drone 長篇，回授、Synthi 與 lap steel 的冷嗡鳴",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.6,
+    "z": -1.2,
+    "why": "無鼓無人聲，回授 drone、合成器嗡鳴厚，冷"
+   },
+   "copyQuote": {
+    "text": "Discogs credits：Sonic Boom（Feedback、Synthi VSC3、Drones）、lap steel、hammer guitar、electric viola、treated sax、bowed cymbal——無鼓手、無歌手",
+    "url": "https://www.discogs.com/master/49469"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f88ba7a7-010f-30ac-9ac1-5fd6fd48a4f9",
+    "https://www.discogs.com/master/49469"
+   ],
+   "mbRgMbid": "f88ba7a7-010f-30ac-9ac1-5fd6fd48a4f9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Experimental Audio Research",
+   "album": "Worn to a Shadow",
+   "year": 2005,
+   "label": "Lumberton Trading Company",
+   "country": "gb",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "E.A.R. 後期純類比合成器 drone，冷、長、無拍",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.4,
+    "z": -1.2,
+    "why": "無鼓無人聲，模組合成器長音嗡鳴，冷"
+   },
+   "copyQuote": {
+    "text": "Discogs credits 只列 Sonic Boom：EMS Synthi AKS、VCS3、Serge、Fenix 合成器與 Omnichord（無鼓手、無歌手）",
+    "url": "https://www.discogs.com/master/49476"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/eeecc726-cf1d-3a66-b123-5d26823fa56f",
+    "https://www.discogs.com/master/49476"
+   ],
+   "mbRgMbid": "eeecc726-cf1d-3a66-b123-5d26823fa56f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mark Beazley",
+   "album": "Stateless",
+   "year": 2010,
+   "label": "Trace Recordings",
+   "country": "gb",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Rothko 創團貝斯手的首張純個人作，貝斯 drone 與電子霧，延續 Rothko 冷灰",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.4,
+    "z": -1.0,
+    "why": "無鼓無人聲，貝斯低頻 drone、殘響長，冷"
+   },
+   "copyQuote": {
+    "text": "Discogs 筆記：\"The first purely solo album by [a523] founder Mark Beazley\"；credits 只有 Beazley 本人（無鼓手、無歌手）",
+    "url": "https://www.discogs.com/master/566972"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/375d5580-fa64-4348-9c41-9f680663fded",
+    "https://coverartarchive.org/release-group/375d5580-fa64-4348-9c41-9f680663fded/front",
+    "https://www.discogs.com/master/566972"
+   ],
+   "mbRgMbid": "375d5580-fa64-4348-9c41-9f680663fded",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Rothko",
+   "album": "Discover The Lost",
+   "year": 2016,
+   "label": "Trace Recordings",
+   "country": "gb",
+   "faction": "backup-drone",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Rothko 回歸的雙貝斯編制作，貝斯層疊的冷器樂慢曲",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.4,
+    "z": -1.0,
+    "why": "無鼓無人聲，雙貝斯低頻層疊、延遲殘響，冷"
+   },
+   "copyQuote": {
+    "text": "Discogs credits：Mark Beazley（Bass Guitar、Keyboards）、Michael Donnelly（Bass Guitar）——無鼓手、無歌手",
+    "url": "https://www.discogs.com/release/8741082-Rothko-Discover-The-Lost"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9fea9734-b50e-4439-8556-7e89df42fa81",
+    "https://coverartarchive.org/release-group/9fea9734-b50e-4439-8556-7e89df42fa81/front",
+    "https://www.discogs.com/release/8741082-Rothko-Discover-The-Lost"
+   ],
+   "mbRgMbid": "9fea9734-b50e-4439-8556-7e89df42fa81",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Rothko",
+   "album": "Refuge For Abandoned Souls",
+   "year": 2019,
+   "label": "Trace Recordings",
+   "country": "gb",
+   "faction": "backup-drone",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Rothko 由 Beazley 獨力錄製的晚期作，貝斯 drone 更陰更厚",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.4,
+    "z": -1.1,
+    "why": "無鼓無人聲，貝斯 drone 與合成器墊，陰冷"
+   },
+   "copyQuote": {
+    "text": "Discogs 筆記原句：\"All Tracks Written, Recorded and Performed By Mark Beazley\"（無鼓手、無歌手）",
+    "url": "https://www.discogs.com/release/14361699-Rothko-Refuge-For-Abandoned-Souls"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9d4e0b31-a1db-412a-b014-06cac3d4a73c",
+    "https://coverartarchive.org/release-group/9d4e0b31-a1db-412a-b014-06cac3d4a73c/front",
+    "https://www.discogs.com/release/14361699-Rothko-Refuge-For-Abandoned-Souls"
+   ],
+   "mbRgMbid": "9d4e0b31-a1db-412a-b014-06cac3d4a73c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lull",
+   "album": "Dreamt About Dreaming",
+   "year": 1992,
+   "label": "Sentrax",
+   "country": "gb",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Napalm Death 鼓手 Mick Harris 的孤立主義 drone 首作，完全不打鼓，只剩低頻黑霧",
+   "moodGuess": {
+    "x": 1.1,
+    "y": 1.7,
+    "z": -1.6,
+    "why": "無鼓無人聲，低頻轟鳴與黑霧，陰冷"
+   },
+   "copyQuote": {
+    "text": "Discogs credits：Mick Harris「All Pieces Constructed By」，僅一名工程師（無鼓手、無歌手）",
+    "url": "https://www.discogs.com/master/40990"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c66d0f13-d496-3197-91c8-7a7af5eb29cd",
+    "https://coverartarchive.org/release-group/c66d0f13-d496-3197-91c8-7a7af5eb29cd/front",
+    "https://www.discogs.com/master/40990"
+   ],
+   "mbRgMbid": "c66d0f13-d496-3197-91c8-7a7af5eb29cd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lull",
+   "album": "Moments",
+   "year": 1998,
+   "label": "Release Entertainment",
+   "country": "gb",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Lull 一首到底的孤立主義長篇，低頻 drone 慢慢移動，冷得無人味",
+   "moodGuess": {
+    "x": 1.1,
+    "y": 1.7,
+    "z": -1.6,
+    "why": "無鼓無人聲，低頻嗡鳴、無旋律，冷"
+   },
+   "copyQuote": {
+    "text": "Discogs 筆記原句：\"Created and mixed in the Box… One seamless piece of music.\"；credits 僅 Mick Harris（無鼓手、無歌手）",
+    "url": "https://www.discogs.com/master/2395615"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/741494c1-c3a3-3128-bc2b-f913a8e30db5",
+    "https://coverartarchive.org/release-group/741494c1-c3a3-3128-bc2b-f913a8e30db5/front",
+    "https://www.discogs.com/master/2395615"
+   ],
+   "mbRgMbid": "741494c1-c3a3-3128-bc2b-f913a8e30db5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lull",
+   "album": "That Space Somewhere",
+   "year": 2022,
+   "label": "Cold Spring",
+   "country": "gb",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Lull 晚期回歸作，延續 isolationist 低頻黑霧",
+   "moodGuess": {
+    "x": 1.1,
+    "y": 1.7,
+    "z": -1.5,
+    "why": "無鼓無人聲，低頻 drone 厚、陰"
+   },
+   "copyQuote": {
+    "text": "Discogs credits 只列 Mick Harris「Created By, Mixed By」（無鼓手、無歌手）",
+    "url": "https://www.discogs.com/release/25376470-Lull-That-Space-Somewhere"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/35dbcf58-97d7-4f1c-ae47-2d76654ada37",
+    "https://coverartarchive.org/release-group/35dbcf58-97d7-4f1c-ae47-2d76654ada37/front",
+    "https://www.discogs.com/release/25376470-Lull-That-Space-Somewhere"
+   ],
+   "mbRgMbid": "35dbcf58-97d7-4f1c-ae47-2d76654ada37",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Cold Spring 偏暗黑 ambient 廠牌（不在 md30 避開清單內），若怕與 md30 撞可砍"
+  },
+  {
+   "artist": "ELEH",
+   "album": "Location Momentum",
+   "year": 2010,
+   "label": "Touch",
+   "country": "us",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Eleh 在 Touch 的純類比低頻音調 drone，長而冷，近乎靜止",
+   "moodGuess": {
+    "x": 1.0,
+    "y": 1.2,
+    "z": -1.2,
+    "why": "無鼓無人聲，純低頻音調與拍頻，冷"
+   },
+   "copyQuote": {
+    "text": "Discogs credits 只有 Eleh「Recorded By」與母帶／封面（無鼓手、無歌手）",
+    "url": "https://www.discogs.com/release/2123622-Eleh-Location-Momentum"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/29d63083-d66f-4b4c-9039-acc18eb54f5f",
+    "https://www.discogs.com/release/2123622-Eleh-Location-Momentum"
+   ],
+   "mbRgMbid": "29d63083-d66f-4b4c-9039-acc18eb54f5f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "純音調低頻，y 可能被判 0.8–1.0"
+  },
+  {
+   "artist": "ELEH",
+   "album": "Radiant Intervals",
+   "year": 2010,
+   "label": "Important Records",
+   "country": "us",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Eleh 的長段類比合成器 drone，低頻音程緩慢交疊",
+   "moodGuess": {
+    "x": 1.0,
+    "y": 1.2,
+    "z": -1.2,
+    "why": "無鼓無人聲，低頻音程嗡鳴，冷"
+   },
+   "copyQuote": {
+    "text": "Discogs credits 只有封面設計（無演奏者、無鼓、無人聲）",
+    "url": "https://www.discogs.com/master/407860"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0ed5f756-a229-4824-ac1f-33874ed66a01",
+    "https://coverartarchive.org/release-group/0ed5f756-a229-4824-ac1f-33874ed66a01/front",
+    "https://www.discogs.com/master/407860"
+   ],
+   "mbRgMbid": "0ed5f756-a229-4824-ac1f-33874ed66a01",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上"
+  },
+  {
+   "artist": "ELEH",
+   "album": "Homage to the Sine Wave",
+   "year": 2009,
+   "label": "Taiga Records",
+   "country": "us",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Eleh 向正弦波致敬的低頻純音 drone，冷硬靜止",
+   "moodGuess": {
+    "x": 1.0,
+    "y": 1.2,
+    "z": -1.3,
+    "why": "無鼓無人聲，正弦低頻與拍頻，冷"
+   },
+   "copyQuote": {
+    "text": "Discogs 封面原句：\"*Volume Reveals Detail\"；credits 只有母帶與設計（無鼓手、無歌手）",
+    "url": "https://www.discogs.com/master/1467793"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a54487b3-ebf0-4c8c-8a6e-3dce881ca45b",
+    "https://coverartarchive.org/release-group/a54487b3-ebf0-4c8c-8a6e-3dce881ca45b/front",
+    "https://www.discogs.com/master/1467793"
+   ],
+   "mbRgMbid": "a54487b3-ebf0-4c8c-8a6e-3dce881ca45b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上"
+  },
+  {
+   "artist": "ELEH",
+   "album": "Homage to the Square Wave",
+   "year": 2008,
+   "label": "Taiga Records",
+   "country": "us",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Eleh 方波系列，較粗糙的低頻波形 drone，冷而壓",
+   "moodGuess": {
+    "x": 1.0,
+    "y": 1.3,
+    "z": -1.3,
+    "why": "無鼓無人聲，方波低頻嗡鳴，冷"
+   },
+   "copyQuote": {
+    "text": "Discogs credits 只有母帶（James Plotkin）與設計（無鼓手、無歌手）",
+    "url": "https://www.discogs.com/release/1391915-Eleh-Homage-To-The-Square-Wave"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8fb475da-4d54-4e4c-a78a-ed218c62a3b2",
+    "https://coverartarchive.org/release-group/8fb475da-4d54-4e4c-a78a-ed218c62a3b2/front",
+    "https://www.discogs.com/release/1391915-Eleh-Homage-To-The-Square-Wave"
+   ],
+   "mbRgMbid": "8fb475da-4d54-4e4c-a78a-ed218c62a3b2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "ELEH",
+   "album": "Floating Frequencies / Intuitive Synthesis I",
+   "year": 2006,
+   "label": "Important Records",
+   "country": "us",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Eleh 首張，向 La Monte Young 致敬的純類比音調 drone",
+   "moodGuess": {
+    "x": 1.0,
+    "y": 1.2,
+    "z": -1.2,
+    "why": "無鼓無人聲，純類比音調、低頻，冷"
+   },
+   "copyQuote": {
+    "text": "Discogs 筆記原句：\"Pure tone. Pure sound. Pure volume. Pure analog. Dedicated to La Monte Young.\"（無鼓、無人聲）",
+    "url": "https://www.discogs.com/master/937120"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/49ea57d3-91ac-4de1-9228-ca5b63170d5b",
+    "https://coverartarchive.org/release-group/49ea57d3-91ac-4de1-9228-ca5b63170d5b/front",
+    "https://www.discogs.com/master/937120"
+   ],
+   "mbRgMbid": "49ea57d3-91ac-4de1-9228-ca5b63170d5b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上"
+  },
+  {
+   "artist": "ELEH",
+   "album": "The Weight of Accumulation",
+   "year": 2012,
+   "label": "Important Records",
+   "country": "us",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Eleh 兩首長篇低頻 drone，緩慢累積的重量感",
+   "moodGuess": {
+    "x": 1.0,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "無鼓無人聲，低頻音調層疊，冷"
+   },
+   "copyQuote": {
+    "text": "Discogs credits 只有母帶（無演奏者、無鼓、無人聲）",
+    "url": "https://www.discogs.com/release/3981888-Eleh-The-Weight-Of-Accumulation"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/811d0709-55ee-4740-b04f-00e63b55a1fa",
+    "https://www.discogs.com/release/3981888-Eleh-The-Weight-Of-Accumulation"
+   ],
+   "mbRgMbid": "811d0709-55ee-4740-b04f-00e63b55a1fa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Maeror Tri",
+   "album": "Language of Flames and Sound",
+   "year": 1996,
+   "label": "Old Europa Cafe",
+   "country": "de",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Maeror Tri 中期 CD 長篇，吉他迴授處理成厚重催眠 drone，陰冷下沉",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.5,
+    "z": -1.0,
+    "why": "無鼓無人聲，吉他 drone 層疊、殘響長，陰"
+   },
+   "copyQuote": {
+    "text": "Discogs credits 只列 Maeror Tri「Producer」，無任何鼓手或歌手；封套文案：\"POWER FOR THE RIGHT SIDE OF THE BRAIN\"",
+    "url": "https://www.discogs.com/master/40405"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1b1338ff-3c75-3599-a9bf-d1b084ceea80",
+    "https://coverartarchive.org/release-group/1b1338ff-3c75-3599-a9bf-d1b084ceea80/front",
+    "https://www.discogs.com/master/40405"
+   ],
+   "mbRgMbid": "1b1338ff-3c75-3599-a9bf-d1b084ceea80",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Maeror Tri",
+   "album": "The Beauty of Sadness",
+   "year": 1996,
+   "label": "Direction Music",
+   "country": "de",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Maeror Tri 中期吉他 drone，副題 Congenital Yearning，陰鬱長嗡鳴",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.5,
+    "z": -1.0,
+    "why": "無鼓無人聲，吉他 drone 層疊，陰冷"
+   },
+   "copyQuote": {
+    "text": "Discogs 筆記原句：\"This tape is dedicated to all sad people\"；credits 僅 Maeror Tri（無鼓手、無歌手）",
+    "url": "https://www.discogs.com/master/37270"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e9ae6a0e-0dc4-3942-81a6-fc681a4de87c",
+    "https://coverartarchive.org/release-group/e9ae6a0e-0dc4-3942-81a6-fc681a4de87c/front",
+    "https://www.discogs.com/master/37270"
+   ],
+   "mbRgMbid": "e9ae6a0e-0dc4-3942-81a6-fc681a4de87c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "正規全長卡帶"
+  },
+  {
+   "artist": "Maeror Tri",
+   "album": "Emotional Engramm",
+   "year": 1997,
+   "label": "Iris Light Records",
+   "country": "de",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Maeror Tri 後期 CD 作，吉他處理成厚重 drone，冷而催眠",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.5,
+    "z": -1.0,
+    "why": "無鼓無人聲，吉他 drone 厚、殘響長，冷"
+   },
+   "copyQuote": {
+    "text": "Discogs credits：Maeror Tri「Music By [All Material], Sounds [Soundsources By]」，另僅母帶與美術（無鼓手、無歌手）",
+    "url": "https://www.discogs.com/master/494468"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0d7eae31-832a-3282-84e5-9da323b06e1c",
+    "https://coverartarchive.org/release-group/0d7eae31-832a-3282-84e5-9da323b06e1c/front",
+    "https://www.discogs.com/master/494468"
+   ],
+   "mbRgMbid": "0d7eae31-832a-3282-84e5-9da323b06e1c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Troum",
+   "album": "Tjukurrpa, Part Two: Drones",
+   "year": 2001,
+   "label": "Transgredient Records",
+   "country": "de",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Troum 三部曲的 drone 篇，吉他／手風琴處理成厚重長音，往下沉",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.6,
+    "z": -1.0,
+    "why": "無鼓無人聲，吉他 drone 厚、低頻嗡鳴，陰"
+   },
+   "copyQuote": {
+    "text": "Discogs credits 只列 Troum「Recorded By」與美術，標題即 Drones（無鼓手、無歌手）",
+    "url": "https://www.discogs.com/release/149912-Troum-Tjukurrpa-Part-Two-Drones"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7e675524-eddc-3de8-9202-3deb39360cf1",
+    "https://coverartarchive.org/release-group/7e675524-eddc-3de8-9202-3deb39360cf1/front",
+    "https://www.discogs.com/release/149912-Troum-Tjukurrpa-Part-Two-Drones"
+   ],
+   "mbRgMbid": "7e675524-eddc-3de8-9202-3deb39360cf1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Troum",
+   "album": "Grote Mandrenke",
+   "year": 2012,
+   "label": "Beta-lactam Ring Records",
+   "country": "de",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Troum 以 1362 年北海大洪水為題的錄音室 drone，陰冷厚重",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.6,
+    "z": -1.1,
+    "why": "無鼓，吉他與低頻 drone 厚，陰冷"
+   },
+   "copyQuote": {
+    "text": "Discogs 筆記原句：\"An aural hallucination on the events that occurred January 15-17, 1362 at the Friesian North Sea coast.\"；credits 只有設計美術（無鼓手、無歌手）",
+    "url": "https://www.discogs.com/master/1023168"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/439b8f91-7370-4a83-a81d-f77d0fe44acf",
+    "https://coverartarchive.org/release-group/439b8f91-7370-4a83-a81d-f77d0fe44acf/front",
+    "https://www.discogs.com/master/1023168"
+   ],
+   "mbRgMbid": "439b8f91-7370-4a83-a81d-f77d0fe44acf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Troum 偶用人聲素材，本張 credits 未列"
+  },
+  {
+   "artist": "Paul Schütze",
+   "album": "New Maps of Hell II: The Rapture of Metals",
+   "year": 1993,
+   "label": "SDV Tonträger",
+   "country": "au",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "澳洲 isolationist 先驅 Schütze 的獨奏金屬 drone，冷硬而沉",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.4,
+    "z": -1.4,
+    "why": "無鼓無人聲，金屬質感 drone 與低頻，冷"
+   },
+   "copyQuote": {
+    "text": "Discogs credits 只列 Paul Schütze「Written-By, Performer」（前作 New Maps of Hell 有鼓手，本張沒有）",
+    "url": "https://www.discogs.com/master/82313"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2adf21d3-9b3e-3f15-a64a-8f654f82938c",
+    "https://coverartarchive.org/release-group/2adf21d3-9b3e-3f15-a64a-8f654f82938c/front",
+    "https://www.discogs.com/master/82313"
+   ],
+   "mbRgMbid": "2adf21d3-9b3e-3f15-a64a-8f654f82938c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發記 1996 Big Cat 版，Discogs 原版 1993 SDV，取 1993"
+  },
+  {
+   "artist": "Rafael Toral",
+   "album": "Wave Field",
+   "year": 1995,
+   "label": "Moneyland Records",
+   "country": "pt",
+   "faction": "backup-drone",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "葡萄牙吉他 drone 名作，吉他回授堆成一整片濃密的聲波場",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.8,
+    "z": -0.6,
+    "why": "無鼓無人聲，吉他回授牆厚、旋律不明"
+   },
+   "copyQuote": {
+    "text": "Discogs 原版無任何樂手 credit；為 Toral 單人吉他回授作品（無鼓、無人聲）",
+    "url": "https://www.discogs.com/master/321885"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4a104e7e-f882-32fc-85c7-20da3efdc432",
+    "https://coverartarchive.org/release-group/4a104e7e-f882-32fc-85c7-20da3efdc432/front",
+    "https://www.discogs.com/master/321885"
+   ],
+   "mbRgMbid": "4a104e7e-f882-32fc-85c7-20da3efdc432",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有評論形容其聲響溫潤如 MBV 慢放，z 可能偏 -0.2；MB 首發記 1998 Dexter’s Cigar 版，取原版 1995"
   }
  ],
  "notes": [
@@ -1583,6 +2420,7 @@
   "Main《Firmament III》《Firmament IV》《Tau》《Surcease》MB 標 Album，Discogs 亦標 CD Album（非 EP）；另有 1999《Firmament III & IV》合輯不提。",
   "Seefeel 自題 2011 首發為日本 Beat Records 版，label 填原廠 Warp。",
   "最貼邊的：Paik 兩張與 Pinebender《Working Nine To Wolf》（音壓大，x 可能被判 2.7–2.9）、Third Eye Foundation《Semtex》（鼓循環）、Gregor Samsa《55:12》與 Greg Haines《Slumber Tides》（y 可能掉到 0.7），主線汰換時可優先砍。",
-  "本組 WebSearch 用 0 次，全走 MB／CAA／Discogs／iTunes API。"
+  "本組 WebSearch 用 0 次，全走 MB／CAA／Discogs／iTunes API。",
+  "候補 25 張（backup-drone）於研究層回饋後追加：Robert Hampson 3、E.A.R. 2、Rothko 2＋Mark Beazley 1、Lull 3、Eleh 6、Maeror Tri 3（《Hypnobasia》已在 md29 以 Maëror Tri 提過，改提《Language of Flames and Sound》）、Troum 2、Aix Em Klemm、Paul Schütze、Rafael Toral。全部 MB 釘住；copyQuote 都是 Discogs credits／筆記（廠牌站 Kranky、Touch 皆 403 抓不到文案）。已排除有鼓或人聲的：Paul Schütze《New Maps of Hell》（有鼓手）、Rothko《Blood Demands More Blood》（電子鼓）、Troum《AIWS》《Mare Idiophonika》《Autopoiesis》（人聲）、E.A.R.《Data Rape》《Continuum》（人聲合成）；現場盤（Troum《Seeing-Ear Gods》《Sen》）與合作掛名（Hampson《Orr》、Lull《Brook》、Coleclough《Low Ground》）不收。未碰 Cryo Chamber／Cyclic Law／Glacial Movements／Malignant。"
  ]
 }
