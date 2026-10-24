@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜頻率光譜搜尋清單補抓封面＋《Bitches Brew》card_catalog 補封面
+
+- **改動**：店主「有幾張沒封面 補上封面」。卡池列本身不帶封面，搜尋清單原本只有預覽過的卡才有圖。`dip-tune.js` 加 `watchSuggCovers`／`pumpCovers`：清單項目捲進可視範圍（前後 120px）才查，同時最多 4 張，查到記在卡上；`index.html` 新增 `listCover`（先只讀 `card_catalog` 一次，沒有才走 `resolveCardAssets` 含 Spotify）。`dip-tune.js?v=15`。另外 Miles Davis 50 張 card_catalog 封面盤點 49／50，《Bitches Brew》coverUrl 空，補 Apple 168376392 600px 圖（REST PATCH 回讀一致）。
+- **主要檔案**：`dip-tune.js`、`index.html`；Firestore `card_catalog/miles davis|bitches brew`
+- **驗證**：`node --check` 過；本機 Chromium 開 `#tune` 搜「miles davis」：50 筆中可視範圍 11 筆先補上，捲到底後 22 筆有圖，0 頁面錯誤。
+
 ### 2026-10-24｜dip-vinyl-shop｜情緒薄格線第 15 輪最後一個工作階段：ml59＋mc48
 
 - **現況**：mc44 23／19、md32 28／25、mc46 13／13、md33 14／12、mc47 15／15、md34 38／38（上線／落格）。恍惚 1,686、頹靡 1,624、冷冽 1,576。

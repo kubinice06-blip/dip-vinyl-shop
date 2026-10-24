@@ -6,7 +6,7 @@
  * （tune/tile-*.png）照圓柱投影取樣捲動。星圖用 Three.js（r128，與 starmap-lab 同版）。
  *
  * 用法（index.html 接線）：
- *   DipTune.configure({ host, loadCardPool, onResult, onBack, player, cardIdOf, onFirstGesture, onGesture, resolveCover, audioPref, setAudioPref });
+ *   DipTune.configure({ host, loadCardPool, onResult, onBack, player, cardIdOf, onFirstGesture, onGesture, resolveCover, listCover, audioPref, setAudioPref });
  *   audioPref() → true/false：站上「自動試聽」開關的現值；setAudioPref(on)：喇叭鈕按下時回寫那顆開關。
  *   DipTune.setAudio(on)：頂欄開關或系統撤銷時由頁面推進來，讓喇叭鈕跟著變。
  *   DipTune.start();     // 進入分頁時呼叫；再次呼叫只會重新顯示，不重建
@@ -555,6 +555,25 @@
     el.sugg.innerHTML = sugg.map((c, i) => { const cv = c.card.coverUrl;
       return `<button class="tune-sg" type="button" role="option" id="tuneSg${i}" data-i="${i}" aria-selected="${i === suggAt}" style="--cc:${CELL_COLOR[c.cell]}">${cv ? `<img src="${esc(cv)}" alt="" referrerpolicy="no-referrer" loading="lazy">` : '<span class="ph"></span>'}<span class="a">${esc(c.card.artist)}</span><span class="b">${esc(c.card.album)}</span></button>`; }).join('');
     if (suggAt >= 0) { el.search.setAttribute('aria-activedescendant', 'tuneSg' + suggAt); el.sugg.querySelector(`[data-i="${suggAt}"]`)?.scrollIntoView({ block: 'nearest' }); } else el.search.removeAttribute('aria-activedescendant');
+    watchSuggCovers();
+  }
+  // 卡池列不帶封面：清單捲到哪張才去查（同時最多 4 張），查到的記在卡上，下次直接用
+  // （2026-10-24 店主：搜尋清單有幾張沒封面——其實只有預覽過的才有）
+  let suggIO = null, coverBusy = 0; const coverQ = [];
+  function pumpCovers() {
+    while (coverBusy < 4 && coverQ.length) {
+      const c = coverQ.shift(); if (c.card.coverUrl || c.listCoverTried) continue; c.listCoverTried = true; coverBusy++;
+      Promise.resolve((cfg.listCover || cfg.resolveCover)(c.card)).then(url => {
+        if (!url) return; c.card.coverUrl = url;
+        const ph = el.sugg.querySelector(`[data-i="${sugg.indexOf(c)}"] .ph`); if (ph) ph.outerHTML = `<img src="${esc(url)}" alt="" referrerpolicy="no-referrer">`;
+      }).catch(() => {}).finally(() => { coverBusy--; pumpCovers(); });
+    }
+  }
+  function watchSuggCovers() {
+    suggIO?.disconnect(); coverQ.length = 0;
+    if (!(cfg.listCover || cfg.resolveCover) || typeof IntersectionObserver !== 'function') return;
+    suggIO = new IntersectionObserver(es => { for (const e of es) if (e.isIntersecting) { suggIO.unobserve(e.target); const c = sugg[+e.target.dataset.i]; if (c) coverQ.push(c); } pumpCovers(); }, { root: el.sugg, rootMargin: '120px 0px' });
+    el.sugg.querySelectorAll('.tune-sg').forEach(b => { if (b.querySelector('.ph')) suggIO.observe(b); });
   }
   function chooseSugg(i) {
     const c = sugg[i]; if (!c) return;
