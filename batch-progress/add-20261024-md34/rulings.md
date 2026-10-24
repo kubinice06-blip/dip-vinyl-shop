@@ -77,3 +77,8 @@
   - 證據不足＋旋律風險：Funeral《Tragedies》（研究 c：聲音零樂評、女聲交響化）。
 - 卡單更正：Shape of Despair《Angels of Distress》廠牌 **Spikefarm Records**（XIII Bis 是法國版）；Evoken《Quietus》**Avantgarde Music**（Dwell 為美國版）；Mournful Congregation《The Monad of Creation》**Weird Truth Productions**（Painiac 是黑膠廠牌）。Evoken《Antithesis》已汰不改。
 - 不補位：候補（Colosseum《Chapter 2》、Nadja、Winter 等）未經 MB 釘住與研究，照「挖不到就照實上架」不湊數。定案 **38 張**（a 8、b 8、c 6、d 7、e 9）。色溫風險留給評分：Shape of Despair 兩張、Bell Witch 四張（清唱吟誦／管風琴）、Mournful Congregation《The June Frost》、Asunder、Dolorian《Dolorian》《Voidwards》（y 偏輕風險）。
+
+## 主線試聽／封面／冷門軸（不佔條號；2026-10-24）
+- 試聽：自動配對 27；Bell Witch《Mirror Reaper》Apple 數位版把兩段合成單軌，`preview-override.json` 人工配 → **28 ready／10 unavailable**（Worship ×2、Tyranny《Aeons》、Colosseum、Asunder、Nortt《Ligfærd》、Comatose Vigil、Moss《Cthonic Rites》、Asva、Ommadon：藝人目錄 lookup 也查無原盤）。
+- 封面：38 張 CAA release-group front-250 全 200，縮圖表目視與盤名相符。
+- 冷門軸：Last.fm 盤名對不上的 2 張改用正確盤名重查 worker（寫回 `meta.json` rating）：Shape of Despair《Shades Of…》99→17,854（以「Shades Of...」查）、Bell Witch《Future’s Shadow, Part 1》150→11,078（以直撇號、無逗號查）；兩張 obscurity 5→4，避免被誤判遺珠。
