@@ -17,6 +17,8 @@
 | md7 | 冷調 post-rock／鼓少器樂＋冷配樂＋無鼓吉他 drone | 頹靡 | ✅ 2026-10-22 上線 41（場景挖不到 45）；落頹靡 35/41＝85.4%（乾淨鋼琴弦樂配樂與 Labradford 後期判輕落平靜 5、Silver Wheel 色溫中性落恍惚 1） |
 | md8 | dub techno／ambient techno 三線（Silent Season、Echocord、Chain Reaction 系） | 頹靡 | ✅ 2026-10-22 上線 41（研究層汰 15、讓 Köner 2 張給 md6）；落頹靡 40/41＝97.6%（Purl《Stillpoint》色溫中性落恍惚） |
 | ml5 | neo-soul 二線＋alt R&B 2010s–20s | 恍惚 | ✅ 2026-10-23 上線 38（研究層汰換後定案 38）；落恍惚 35/38＝92.1%（Greentea Peng《TELL DEM IT'S SUNNY》、Nick Hakim《WILL THIS MAKE ME GOOD》、The Midnight Hour 色溫判冷落頹靡） |
+| ml57 | neo-soul 女聲慢盤 2000s–10s（併女聲 quiet storm／roots dub／暖 downtempo 擴寫） | 恍惚 | ✅ 2026-10-24 上線 12（策展 25、研究汰 13，主場景見底）；落恍惚 12/12＝100% |
+| md30 | dark ambient 第五波（併 isolationist／winter-light 擴寫） | 頹靡 | ✅ 2026-10-24 上線 28（策展 52、主線汰 15、研究汰 15）；落頹靡 28/28＝100% |
 | mc6 | Detroit techno／electro 二線＋electroclash | 冷冽 | ✅ 2026-10-23 上線 44（研究層汰換後定案 44）；落冷冽 43/44＝97.7%（AUX 88 Presents Black Tokyo 日本女聲 z +0.2 落雀躍） |
 | md16 | cloud rap／sad rap 冷盤＋冷 beat tape（併 md24） | 頹靡 | ✅ 2026-10-23 上線 38（研究汰 12、補 5）；落頹靡 37/38＝97.4%（Mr. Mitch《Parallel Memories》weightless grime 判輕落平靜） |
 | ml16 | jazz-rap 暖盤＋南方慢饒舌（併 ml17、ml18） | 恍惚 | ✅ 2026-10-23 上線 27（場景見底、研究汰 11）；落恍惚 25/27＝92.6%（蛋堡《踩腳踏車》判輕落放鬆、Curren$y×Alchemist《Covert Coup》判冷落頹靡） |
