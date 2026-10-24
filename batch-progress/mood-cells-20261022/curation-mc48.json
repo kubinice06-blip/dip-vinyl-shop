@@ -4,13 +4,13 @@
   {
    "id": "uptown-quartet",
    "zh": "美國 uptown 弦樂四重奏",
-   "count": 9,
+   "count": 10,
    "why": ""
   },
   {
    "id": "uptown-solo",
    "zh": "美國 uptown 獨奏／二重奏",
-   "count": 22,
+   "count": 25,
    "why": ""
   },
   {
@@ -1655,7 +1655,166 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "大提琴奏鳴曲（1948）約 21 分鐘，佔全盤一半以上、開頭偏抒情，有判重／判暖風險；掛名：Paul Jacobs 是兩面共同的鍵盤手（A 面大鍵琴、B 面鋼琴），照 §0.7 掛他；演出者照 Discogs 932743"
+  },
+  {
+   "artist": "Emerson String Quartet",
+   "album": "Imbrie / Schuller: String Quartet No. 4 / String Quartet No. 2",
+   "year": 1978,
+   "label": "New World",
+   "country": "us",
+   "faction": "uptown-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Emerson 四重奏早年為 New World 錄的美國四重奏盤：Andrew Imbrie《String Quartet No. 4》與 Gunther Schuller 十二音《String Quartet No. 2》；兩首都是戰後美國現代主義的緊密四聲部寫法，尖而緊繃",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -1.4,
+    "why": "弦樂四重奏，無調密集對位、尖銳爆發，乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/2919379",
+    "https://en.wikipedia.org/wiki/Andrew_Imbrie"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Andrew Imbrie\"（MB 只有 1 個 release group）",
+     "artist:Imbrie AND releasegroup:\"String Quartet\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/2919379",
+    "https://en.wikipedia.org/wiki/Andrew_Imbrie"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Imbrie 有抒情慢段，x 估 3.5 偏貼邊；封面用 Discogs 圖"
+  },
+  {
+   "artist": "Alan Feinberg",
+   "album": "Wuorinen: Piano Works",
+   "year": 2005,
+   "label": "Col Legno",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Feinberg 為 Col Legno 錄的 Wuorinen 鋼琴作品集：《The Blue Bamboula》、《Piano Sonata No. 3》、《Bagatelle》、《Capriccio》、《Self-Similar Waltz》等；碎形式的音型繁殖與硬擊，緊繃不歇",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "鋼琴獨奏，Wuorinen 第三奏鳴曲、Capriccio、Bagatelle，密集跳躍、硬、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/5163353",
+    "https://en.wikipedia.org/wiki/Charles_Wuorinen"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Charles Wuorinen\" browse（MB 27 個 release group，無此盤）",
+     "artist:\"Alan Feinberg\" AND releasegroup:\"Piano Works\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/5163353",
+    "https://en.wikipedia.org/wiki/Charles_Wuorinen"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "〈Ave Christe: Josquin〉為 Josquin 改編約 5 分鐘、調性；演奏者照 Discogs extraartists（Piano: Alan Feinberg）；封面用 Discogs 圖"
+  },
+  {
+   "artist": "Robert Black",
+   "album": "Sessions / Gideon / Weber: 5 Pieces, Sonata, Variazioni",
+   "year": 1983,
+   "label": "CRI",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Robert Black 的 CRI 鋼琴盤：Sessions《Five Pieces for Piano》（1975，晚期）、Miriam Gideon《Sonata》、Ben Weber《Variazioni quasi una fantasia》，三位紐約 uptown 作曲家的無調鋼琴作；尖銳和弦與破碎線條，緊繃",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "鋼琴獨奏，Sessions 十二音小品、Gideon 奏鳴曲、Weber 變奏，無調、硬、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/14501957",
+    "https://en.wikipedia.org/wiki/Roger_Sessions"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Roger Sessions\" browse（MB 15 個 release group，無此盤）",
+     "artist:\"Robert Black\" AND releasegroup:Sessions（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/14501957",
+    "https://en.wikipedia.org/wiki/Roger_Sessions"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面用 Discogs 圖"
+  },
+  {
+   "artist": "Alan Marks",
+   "album": "Boulez / Sessions / Chávez: Alan Marks Plays Modern Classics",
+   "year": 1978,
+   "label": "CRI",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Alan Marks 的 CRI 首張：Boulez《Première Sonate》、Sessions《Second Piano Sonata》（1946）、Chávez 的練習曲與《Cinco caprichos》；尖銳的大跳與猛烈和弦，緊繃而乾",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "鋼琴獨奏，Boulez 第一奏鳴曲、Sessions 第二奏鳴曲，無調、硬擊、尖"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/2418766",
+    "https://en.wikipedia.org/wiki/Roger_Sessions"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Roger Sessions\" browse（MB 15 個 release group，無此盤）",
+     "releasegroup:\"Alan Marks Plays Modern Classics\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/2418766",
+    "https://en.wikipedia.org/wiki/Roger_Sessions"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Sessions 第二奏鳴曲與本批 Hodgkinson 盤同曲不同錄音；Boulez 第一奏鳴曲 mc47 有其他錄音；封面用 Discogs 圖"
   }
  ],
- "notes": []
+ "notes": [
+  "主場景（美國 uptown 序列主義／現代主義）48 張、擴寫 2 張（Fred Sherry 四重奏《Schoenberg 美國時期四重奏》、JACK《Eckardt: Passage》），共 50 張，挖不到 54，照實交。",
+  "去重擋掉（已在池或其他組提過）：Juilliard Carter 四重奏、Arditti／Pacifica Carter、Rosen／Choi Carter 鋼琴、mc4 Oppens《Oppens Plays Carter》、mc4 Taub《Babbitt Piano Works》、mc41《Babbitt: Occasional Variations》、mc40 Arditti《Caprices》、池中 GCM《Wolpe》（Koch 1995 Wolpe 盤為同錄音再版，擋）、GCM《Carter: Eight Compositions》、GCM／mc46《Wuorinen Six Trios》、Brentano《Wuorinen》、mc46 GCM《Sessions》、Nouvel Ensemble Moderne《Carter》（ATMA 2002 同盤）、Holzman《Wolpe: Compositions for Piano》、Davidovsky Vol. 3／Salvos、Philomel、Ensemble 21／Cuckson Eckardt。",
+  "研究層先擋：人聲占比高（Eckardt《Subject》的《Tongues》女高音 28 分鐘、Carter《Nine Compositions》、Ran CRI、Davidovsky《Flashbacks》、Wolpe Parnassus Koch 1992）；電子／磁帶（Wuorinen《Lepton》、Davidovsky Synchronisms）；大編制（Wuorinen《On Alligators》、Carter 協奏）；打擊為主（Speculum Carter Vol. 4、Wuorinen《Metagong》）；低音樂器（Wuorinen《Fast Fantasy》）；稀疏（Karis Webern/Wolpe/Feldman、Feldman 混盤）；現場（Juilliard Sessions/Wolpe/Babbitt 1990）；精選（Sollberger CRI《A New York Retrospective》、Wuorinen《Music of Two Decades》）；調性／抒情（Perle Daedalus、Harbison 盤、Da Capo Perle/Carter）。",
+  "MB 對這批覆蓋差：MB 釘住 13 張，人工身分 37 張（Discogs release／master＋維基或 Bridge 廠牌頁）。人工身分的 mbAbsenceProof 均為 2026-10-24 實查。",
+  "封面：CAA 有圖 8 張（rg 前綴已列 evidence），其餘用 Discogs 圖（各 release 均有 images）。",
+  "WebSearch 用 1 次（查 Eckardt《Tongues》編制）。"
+ ]
 }
