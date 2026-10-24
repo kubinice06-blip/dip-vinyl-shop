@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **443** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 205、已退回 1）。
+共 **449** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 211、已退回 1）。
 最後更新：2026-10-24
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -336,6 +336,13 @@
 | Tony Oxley 《4 Compositions for Sextet》 | [#1055102](https://www.discogs.com/release/1055102) | 1970 | CBS | 64071 | Discogs master 208997 的版本、主線目視與盤名相符 | ok |
 | Tony Oxley 《Ichnos》 | [#659887](https://www.discogs.com/release/659887) | 1971 | RCA Victor | SF 8215 | Discogs master 3374053 的版本、主線目視與盤名相符 | ok |
 
+## add-20261023-mc43（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Garth Knox 《Ligeti / Dusapin / Berio / Kurtág / Dillon / Sciarrino: Works for Solo Viola》 | [#11054156](https://www.discogs.com/release/11054156) | 2000 | Montaigne | MO 782082 | 唯一版本、主線目視與盤名相符 | ok |
+| Peter Veale 《Mahnkopf: Pynchon Cycle》 | [#11260601](https://www.discogs.com/release/11260601) | 2011 | Neos | NEOS 11036 | 唯一版本、主線目視與盤名相符 | ok |
+
 ## add-20261023-md11（4 張）
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
@@ -358,6 +365,15 @@
 | Jasper TX 《A Darkness》 | [#930116](https://www.discogs.com/release/930116) | 2007 | Lidar | lidar_1 | Discogs master 66874 的版本、主線目視與盤名相符 | ok |
 | Jasper TX 《Black Sleep》 | [#1382371](https://www.discogs.com/release/1382371) | 2008 | Miasmah | MIACD008 | 唯一版本、主線目視與盤名相符 | ok |
 | Jodis 《Secret House》 | [#1975816](https://www.discogs.com/release/1975816) | 2009 | Hydra Head Records | HH 666 191 | Discogs master 234049 的版本、主線目視與盤名相符 | ok |
+
+## add-20261023-md31（4 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| ELEH 《Location Momentum》 | [#2123622](https://www.discogs.com/release/2123622) | 2010 | Touch | TO:80 | 唯一版本、主線目視與盤名相符 | ok |
+| ELEH 《The Weight of Accumulation》 | [#3981888](https://www.discogs.com/release/3981888) | 2012 | Important Records (2) | IMPREC365 | 唯一版本、主線目視與盤名相符 | ok |
+| Main 《Tau》 | [#69867](https://www.discogs.com/release/69867) | 2002 | (K-RAA-K)³ | K031 | 唯一版本、主線目視與盤名相符 | ok |
+| Main 《Surcease》 | [#852020](https://www.discogs.com/release/852020) | 2006 | N-REC | n00005 | 唯一版本、主線目視與盤名相符 | ok |
 
 ## add-20261023-ml9（2 張）
 

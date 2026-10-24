@@ -6,11 +6,22 @@
 - **策展→研究汰換**：ml58 策展 46（只收 Discogs 明寫 Tubby／Jammy／Scientist／Black Ark／Ariwa 混音的盤）、主線汰 3（池中同人判輕／DJ 盤）、研究汰 15（Bunny Lee／Revolutionaries 亮 rockers、無混音 credit 的歌曲盤、重混／數位化、拉丁 ska 拼貼）→ 28，主場景見底。mc45 策展兩輪只 7（池中大名全判重／判暖，冷尖電子已被 mc6／mc7／mc33／mc15 收光）、主線汰 1（DOS Tracks《:)》盤名正規化為空）、研究汰 4（ambient 化、低頻 dub、失真兇猛鼓、零來源貼邊）→ 2，**死池不再派**。
 - **主線審稿**：ml58 改 2 張 3 處（Tetrack hook「Pablo 缺錢」→「Pablo 的廠牌缺錢」並同步 hooks-e、壓字；Murvin「那一年」指涉錯位）；mc45 未改字。存 `desc-override.json`。
 - **上線**：card_catalog 28＋2、KV 30 鍵回讀逐字一致（stamp 20261024r14）、試聽 21＋1 ready（9 張配 Apple 重發／改名版）、seed +30、published gate 兩批 0 error；封面 CAA 15、Discogs 15（registry → 443），live-check 全 200、縮圖表目視相符。上線前對 origin 所有 `claude/*` 分支 seed 與並行批卡單去重 0 撞。
-- **情緒評分**：`score-ml58`、`score-mc45`。**ml58 落恍惚 28/28（100%）**、**mc45 落冷冽 1/2（50%）**（General Magic 噪音拼貼 y 0.6 落暴躁）。八格（合併 main 前）：恍惚 1,658、頹靡 1,541、冷冽 1,521。
+- **情緒評分**：`score-ml58`、`score-mc45`。**ml58 落恍惚 28/28（100%）**、**mc45 落冷冽 1/2（50%）**（General Magic 噪音拼貼 y 0.6 落暴躁）。八格（併 main 後）：恍惚 1,659、頹靡 1,565、冷冽 1,557。
 - **類型樹**：`genre-l3-artist-map.json` 補 world/reggae/roots 8、electronic/idm/glitch 1，30/30 落位；抽卡封面重建。
 - **藝人介紹**：未切（並行規矩）；新藝人 24 位列在兩批 rulings.md 末尾。
 - **主要檔案**：`batch-progress/add-20261024-{ml58,mc45}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml58,mc45}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml58,mc45}/`、`onboarding-manifest-add-20261024-{ml58,mc45}-20261024.json`、`desc-tools/batches/*/add-20261024-{ml58,mc45}*`、`data/discogs-cover-registry.json`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
 - **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 30/30；build-card-moods gate exit 0。
+
+### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 13 輪 mc43／md31：現代室內樂 36 張、無鼓 drone 26 張上線，落格 36/36、24/26
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 13 輪，本工作階段負責 mc43、md31（評分照 10-23 體感標準）。mc43（`add-20261023-mc43`，冷冽）：Arditti（Neuwirth、Nancarrow、Guerrero、Reynolds、Carter、Mexico）、Klangforum Wien（Aperghis、Lachenmann《Mouvement》、Reiter）、ELISION、ensemble recherche、Hodges、Holliger ×2、Diotima ×2、ensemble mosaik ×2、Michel-Dansac、Veale《Pynchon Cycle》、asamisimasa、Mari Poll、Pacifica《Carter 1 & 5》、Cuckson、LaSalle、EIC《Hurel》、Nancarrow Vol.4、Knox、Damiens、Gil、Dillon、Oslo Sinfonietta、Poppe《Interzone》、Ensemble 21、Mode《Lachenmann》、Huebner《Reynolds》。md31（`add-20261023-md31`，頹靡）：Anjou ×2、Growing、Rothko ×2、Windy & Carl ×2、Matt Elliott、Dissolve、Main ×4、E.A.R. ×4、Robert Hampson ×2、Lull ×2、ELEH ×3、Maeror Tri、Troum。
+- **策展→研究汰換**：mc43 策展 54＋補 12、主線汰 16（同作品池中已有、貼邊）、研究汰 14（稀疏極弱、抒情、大編制、現場錄音）→ 36。md31 策展 54＋補 25、主線汰 14、研究汰 39——**冷 post-rock 二線樂團幾乎全有鼓組或人聲**（Jessamine、Implodes、HṚṢṬA、Polmo Polpo、The Drift、Pan•American…），主場景見底，改收無鼓 drone／isolationist → 26。兩場景都不再派。
+- **主線審稿**：md31 改 1 張（Anjou《Epithymía》單源評價詞）；mc43 改 3 張（Dillon hook 的「據說」、Hurel 獎項名稱單源存疑、Steen-Andersen 語病；hooks／input 同步）。
+- **上線**：card_catalog 26＋36、KV 62 鍵回讀逐字一致（stamp 20261024r13）、試聽 17＋28 ready、seed +62、prepare／published gate 兩批 0 error；封面 CAA 42、Apple 14、Discogs 6（已登錄 registry），縮圖表目視相符。上線前對 origin 近 3 天所有 `claude/*` 分支 seed＋卡單與 main seed 去重 0 撞。mc43 古典三軸走 §0.7 錨點制。
+- **情緒評分**：`score-mc43`、`score-md31`。**mc43 落冷冽 36/36（100%）**；**md31 落頹靡 24/26（92%）**（Anjou 首作判輕落平靜、Windy & Carl《Portal》z 0.0 落恍惚）。八格（併 main 後，含 ml56／mc42、ml57／md30）：恍惚 1,631、頹靡 1,565、冷冽 1,556。
+- **藝人介紹**：未切（並行規矩）；新藝人 29 個掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{mc43,md31}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{mc43,md31}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{mc43,md31}/`、`onboarding-manifest-add-20261023-{mc43,md31}-20261024.json`、`desc-tools/batches/*/add-20261023-{mc43,md31}*`、`data/discogs-cover-registry.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 62/62；類型樹 62/62 落位；build-card-moods 錨點 104/104、gate exit 0。
 
 ### 2026-10-24｜dip-vinyl-shop｜情緒薄格線第 14 輪派工（補兩個）：優先序 70–73
 
@@ -63,6 +74,7 @@
 - **藝人介紹**：未切（並行規矩）；新藝人 41 個掛名列在兩批 rulings.md 末尾。
 - **主要檔案**：`batch-progress/add-20261023-{ml54,md29}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml54,md29}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml54,md29}/`、`onboarding-manifest-add-20261023-{ml54,md29}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml54,md29}*`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
 - **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 55/55；build-card-moods 錨點 104/104、gate exit 0。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 12 輪 ml53／mc40：爵士人聲＋霧暖 R&B 17 張、自由即興弦樂 29 張上線，落格 17/17、28/29
 
 - **內容**：店主「三個情緒薄格各補到約 2,000」第 12 輪＋「恍惚可以多增加一點 downtempo 與 dub」，本工作階段負責 ml53、mc40（評分照 10-23 體感標準）。ml53（`add-20261023-ml53`，恍惚）：Anita Baker《Compositions》、Kem、Malia & Boris Blank、Meshell《Ventriloquism》、One Dove、Jessie Ware、YEBBA、Ego Ella May、The Internet、Alex Isley & Jack Dine、Leon Thomas (R&B)、Liniker、Luedji Luna、mabanua、Kan Sano、Groundation《Hebron Gate》、Black Roots。mc40（`add-20261023-mc40`，冷冽）：Léandre ×5（獨奏與二重奏）、Barry Guy、Zíngaro、Kowald ×3、Dresser ×2、Tom Cora、Joe Morris ×2、John Russell ×2、Arditti《Cage: Freeman Etudes》×2、Maneri、Wachsmann ×3、Honsinger & Rupp、Lonberg-Holm ×3、Perelman《Strings 1》、Amado 三重奏。
@@ -106,6 +118,7 @@
 - **藝人介紹**：未切（並行規矩）；新藝人 40 個掛名列在兩批 rulings.md 末尾。
 - **主要檔案**：`batch-progress/add-20261023-{ml51,md28}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml51,md28}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml51,md28}/`、`onboarding-manifest-add-20261023-{ml51,md28}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml51,md28}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
 - **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 65/65；build-card-moods 錨點 104/104。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 11 輪 ml50／md27：暖 drone 22 張、暗色現代古典／drone 古典 15 張上線，落格 21/22、13/15
 
 - **內容**：店主「三個情緒薄格各補到約 2,000」第 11 輪＋「恍惚可以多增加一點 downtempo 與 dub」，本工作階段負責 ml50、md27（評分照 10-23 體感標準）。ml50（`add-20261023-ml50`，恍惚：暖 drone／厚墊 ambient＋磁帶／吉他殘響暖 ambient＋暖 ambient dub）：Hotel Neon、Celer、Pioulard、Dettinger、Kenniff、Mark McGuire、Luke Schneider、SUSS、Michael Brook、Robin Guthrie、Metallic Spheres、Bluetech、Shulman、Stick Figure、Halftribe、Wil Bolton 等。md27（`add-20261023-md27`，頹靡：主場景暗色現代古典慢板池中全判輕，改收 Scelsi 音塊、低音弦／管風琴 drone 古典、drone 型配樂）：Valgeir、Scelsi（Wyttenbach／Accord）×2、Gordon《Rushes》、Bára ×2、Maria W Horn、Clarice Jensen、Claire M Singer、Lustmord ×2、Fjellström、Ben Frost ×3。
@@ -117,6 +130,7 @@
 - **藝人介紹**：未切（並行規矩）；新藝人 31 個掛名列在兩批 rulings.md 末尾。ml50、md27 場景見底，不再派。
 - **主要檔案**：`batch-progress/add-20261023-{ml50,md27}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml50,md27}.json`、`pool-axes.mjs`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml50,md27}/`、`onboarding-manifest-add-20261023-{ml50,md27}-20261023.json`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/mood/*`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`、`genre-l3-artist-map.json`。
 - **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 37/37；build-card-moods 錨點 104/104。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 11 輪 ml52／mc39：2000s slow jam 27 張、管樂獨奏／二重奏 28 張上線，落格 25/27、24/28
 
 - **內容**：店主「三個情緒薄格各補到約 2,000」第 11 輪，本工作階段負責 ml52、mc39（評分照 10-23 體感標準）。ml52（`add-20261023-ml52`，恍惚）：Jaheim ×2、Carl Thomas、Dave Hollister、Anthony Hamilton ×4、Tank、Case、Gerald Levert ×3、Isley Brothers ×2、Silk ×2、Kenny Lattimore、Freddie Jackson、Phil Perry、Angie Stone、Chanté Moore、Vivian Green、Kelly Price、Keke Wyatt、Syleena Johnson、Marsha Ambrosius。mc39（`add-20261023-mc39`，冷冽）：Braxton ×2、Stevens & Parker ×3、Parker & Guy ×2、Parker 與 Rothenberg／Shipp／McPhee 二重奏、Roscoe Mitchell《L-R-G》、Brötzmann 獨奏 ×3、Butcher 二重奏 ×2、Gustafsson ×3、Rothenberg ×5、Perelman 二重奏 ×3、Wolfgang Fuchs。
@@ -158,6 +172,7 @@
 - **藝人介紹**：未切（並行規矩）；新藝人 21 個掛名列在兩批 rulings.md 末尾。
 - **主要檔案**：`batch-progress/add-20261023-{ml47,ml48}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml47,ml48}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml47,ml48}/`、`onboarding-manifest-add-20261023-{ml47,ml48}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml47,ml48}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
 - **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 35/35；build-card-moods 錨點 104/104。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 10 輪 ml49／mc38：90s R&B 慢歌二線 28 張、前衛爵士鋼琴 27 張上線，落格 28/28、27/27
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 10 輪，本工作階段負責 ml49、mc38（評分照 10-23 體感標準）。ml49（`add-20261023-ml49`，恍惚：90s R&B slow jam／quiet storm 成人抒情二線＋2000s 慢板 neo-soul）：Intro《New Life》、Silk《Tonight》、Brownstone《Still Climbing》、Aaron Hall《Inside of You》、Case《Personal Conversation》、Dave Hollister ×2、Gerald Levert ×2、Kenny Lattimore ×2、Chanté Moore ×3、Lattimore & Moore、Regina Belle ×2、Will Downing、Phyllis Hyman、Miki Howard、Angela Winbush、Lalah Hathaway ×2、Raheem DeVaughn ×2、Marsha Ambrosius、Glenn Lewis、Frank McComb。mc38（`add-20261023-mc38`，冷冽：前衛爵士鋼琴緊繃那路）：Matthew Shipp ×10（獨奏、與 Parker／Mitchell／Morris 二重奏、弦樂三重奏 ×3、Trio、《Magnetism》）、Crispell & James、Guy／Crispell／Lytton《Ithaca》、Courvoisier ×4、Kris Davis《Massive Threads》、Schlippenbach《Twelve Tone Tales Vol. 1》、Takase & Schlippenbach、Van Hove、Fernández ×3、Sanchez Trio、Hawkins、Ortiz《Cub(an)ism》、Maroney《Hyperpiano》。
@@ -201,6 +216,7 @@
 - **藝人介紹**：未切（並行規矩）；新藝人 26 個掛名列在兩批 rulings.md 末尾。
 - **主要檔案**：`batch-progress/add-20261023-{ml43,mc36}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml43,mc36}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml43,mc36}/`、`onboarding-manifest-add-20261023-{ml43,mc36}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml43,mc36}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
 - **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 41/41；build-card-moods 寫入成功。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 9 輪 ml42／ml45：lo-fi jazzhop 暖盤 26 張、rocksteady 歌手濕混音慢板盤＋lovers dub 17 張上線，落格 26/26、17/17
 
 - **內容**：店主「三個情緒薄格各補到約 2,000」第 9 輪＋「恍惚可以多增加一點 downtempo 與 dub」，本工作階段負責 ml42、ml45（評分照 10-23 體感標準）。ml42（`add-20261023-ml42`，恍惚：lo-fi hip-hop／jazzhop 暖盤＋暖的 instrumental hip-hop）：Kupla ×2、sleepy fish、jinsang ×5、SwuM. & Jinsang、SwuM.、Wun Two ×4、Ohbliv ×4、mt. fujitive ×3、Purrple Cat ×2、Hoogway、less.people ×2。ml45（`add-20261023-ml45`，恍惚：rocksteady／early reggae 慢歌＋lovers 剩餘）：John Holt ×6（Junjo／Channel One 期）、Justin Hinds、Wailing Souls、Delroy Wilson ×2、Horace Andy《Showcase》、Alton Ellis《A New Day》、Cornell Campbell《Rock My Soul》、Horace Andy & Jah Wobble、Frightnrs《More To Say Versions》、Hollie Cook dub 版 ×2。
@@ -224,6 +240,7 @@
 - **改動**：店主指定。(2.7, 0.3, 0.2) → (3.3, 0.0, 0.6)。
 - **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/rulings.md`
 - **驗證**：`build-card-moods.mjs` 錨點 104/104 同格。
+
 ### 2026-10-23｜dip-vinyl-shop｜原聲帶簡介重寫 ost-2：電影＋音樂劇 50 張上線，整條線收尾（共 95 張）
 
 - **內容**：ost-2 照 dip-desc-restyle 產線跑完（研究 5→鉤子 2→寫作 2→QA→主線逐張審稿），50 張好萊塢歌曲原聲、經典配樂、音樂劇、華語與歐洲電影的新簡介寫進 KV。整條線：196 張分流，重寫 95（ost-1 45＋ost-2 50）、不動 101。
@@ -261,6 +278,7 @@
 - **藝人介紹**：未切（並行規矩）；新藝人 26 個掛名列在兩批 rulings.md 末尾。
 - **主要檔案**：`batch-progress/add-20261023-{ml38,md22}/`、`batch-progress/mood-cells-20261022/{curation,master}-{ml38,md22}.json`、`master-override-ml38.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml38,md22}/`、`onboarding-manifest-add-20261023-{ml38,md22}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml38,md22}*`、`data/discogs-cover-registry.json`、`data/DISCOGS-COVERS.md`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
 - **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 52/52；build-card-moods 錨點 104/104。
+
 ### 2026-10-23｜dip-vinyl-shop｜原聲帶簡介重寫 ost-1：遊戲＋日本動畫 45 張上線（含《Chrono Cross》）
 
 - **內容**：店主要原聲帶簡介「多說作品相關的故事」。196 張逐張分流：重寫 95、不動 101（`triage.json`）。ost-1 跑完研究 5→鉤子 2→寫作 2→QA→主線逐張審稿，45 張新簡介寫進 KV（`desc2:`／`desc4:` 舊鍵覆寫）：前兩句點出作品台灣中文名＋原名＋類型，正文講作品與音樂的故事。
@@ -287,6 +305,7 @@
 - **改動**：店主指定。「找一張來聽」入口卡（`index.html` HUB_DEFS）、`tune/index.html` og:description、分享縮圖 `og-tune.png` 副標同步換。
 - **主要檔案**：`index.html`、`tune/index.html`、`og-tune.png`
 - **驗證**：grep 舊副標已無；縮圖目視確認。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 7 輪 mc22／ml40：當代前衛爵士 31 張、downtempo／歐陸 dub 暖盤 10 張上線，落格 27/31、10/10
 
 - **內容**：店主「三個情緒薄格各補到約 2,000」第 7 輪，本工作階段負責 mc22、ml40（店主 10-23「恍惚可以多增加一點 downtempo 與 dub」；評分照 10-23 體感標準）。mc22（`add-20261023-mc22`，冷冽：當代前衛爵士＋mc31 AACM 剩餘）：Tim Berne／Big Satan、Steve Lehman、Fieldwork、Halvorson／Thumbscrew、Tom Rainey Trio、Laubrock Anti-House、Matt Mitchell、Iyer、Mahanthappa、Zooid、Peter Evans、Anna Webber、Eskelin、Roscoe Mitchell、Braxton《Dortmund》等 31 張。ml40（`add-20261023-ml40`，恍惚：downtempo 暖盤三線＋ml39 歐陸 dub）：Heights of Abraham ×2、Boozoo Bajou《Finistère》、Tosca《No Hassle》、Almamegretta《Sanacore》、Blundetto & Liam Bailey《Heavy Soul》、Dub Colossus《A Town Called Addis》、Hollie Cook《Twice》、Fat Freddy's Drop ×2。
@@ -340,6 +359,7 @@
 - **藝人介紹**：未切（並行規矩）；新藝人列在兩批 rulings 末尾（ml31 1、md18 17 個掛名）。
 - **主要檔案**：`batch-progress/add-20261023-{ml31,md18}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml31,md18}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml31,md18}/`、`onboarding-manifest-add-20261023-{ml31,md18}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml31,md18}*`、seed／試聽地圖／Discogs 名單／類型樹／抽卡封面／mood 產生檔。
 - **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 0 error；KV 回讀 44/44；`build-card-moods` 錨點 104/104。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 6 輪 mc33／ml34：glitch＋RIO 28 張、暖吉他殘響 ambient pop 12 張上線，落格 20/28、11/12
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 6 輪，本工作階段負責 mc33、ml34（評分照 10-23 體感標準）。mc33（`add-20261023-mc33`，冷冽：glitch／microsound＋mc35 RIO 尖細那半）：Cyclo.《Cyclo.》、Farmers Manual ×3、Hecker ×3、刀根康尚 ×2、EVOL、Rashad Becker、Amacher、Gescom、Schmickler、Henry Cow《Western Culture》、Art Bears《The World as It Is Today》、Étron Fou Leloublan ×3、Thinking Plague《In Extremis》、Cassiber ×3、Skeleton Crew《Learn To Talk》、5uu's ×2、Doctor Nerve、Yugen。ml34（`add-20261023-ml34`，恍惚：CJK 抒情 ballad＋ml36 Balearic／ambient pop）：Lily Chou-Chou《呼吸》、Manual ×3、Hammock ×2、Robin Guthrie ×3、Sonic Boom《All Things Being Equal》、Schnauss & Peters《Underrated Silence》、Engineers。
@@ -436,6 +456,7 @@
 - **藝人介紹**：未切（並行規矩）；新藝人 17 位列在兩批 rulings.md 末尾（ml20 13、mc31 4，另 mc31 有 7 個合掛名需別名鍵）。
 - **主要檔案**：`batch-progress/add-20261023-{ml20,mc31}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml20,mc31}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml20,mc31}/`、`onboarding-manifest-add-20261023-{ml20,mc31}-20261023.json`、`desc-tools/batches/*/add-20261023-{ml20,mc31}-*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`data/mood/*`、`genre-l3-artist-map.json`、`rock-asia-country-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`。
 - **驗證**：prepare／published gate 兩批 0 error；KV 回讀 58/58；qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；build-card-moods 錨點 104/104、seed 20,691（併 main 後）。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 4 輪 md14／ml19：暗色配樂 42＋city pop／AOR 濕慢歌復興盤 10 張上線，體感標準落格 19/42、8/10
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 4 輪，本工作階段負責 md14、ml19。md14（`add-20261023-md14`，頹靡：暗色電影／遊戲／影集配樂＋md13 現代古典暗黑音塊）：Jóhannsson《Sicario》、Hildur《Day of the Soldado》、Mica Levi《Monos》、Levi & Burn《The Zone Of Interest》、Stetson《Hereditary》《Color Out of Space》、Korven《The Lighthouse》《The Witch》、Zimmer & Wallfisch《Blade Runner 2049》、Lustmord《First Reformed》、Reitzell《Hannibal》×3、山岡晃 SH4／Homecoming／SH2 2024、Tarmia《Amnesia》×2《SOMA》、《Control》、《Hellblade》、《Doom 64》、Aethek & Lustmord《Scorn》、《Texas Chain Saw Massacre》、Ben Frost《Dark》×2《Fortitude》、Graves《Dead Space》、Kurzel《Snowtown》《Macbeth》、Hecker《Infinity Pool》、Young《Sinister》、《Saint Maud》、《Possessor》、《Enemy》、Jóhannsson & Glotman《Last and First Men》、Frost & Bjarnason《Sólaris》、Thorvaldsdottir ×4、Scelsi《Natura renovatur》（ECM）。ml19（`add-20261023-ml19`，恍惚：city pop／AOR 濕慢歌＋ml28 soft rock 復興盤）：Drugdealer、Sean Nicholas Savage ×2、Lewis ×2、Ducktails《Jersey Devil》、Mndsgn《Body Wash》、Pure Bathing Culture《Moon Tides》、Sweetback《Stage [2]》、Michael Seyer《Bad Bonez》。
@@ -466,6 +487,7 @@
 - **藝人介紹**：未切（並行規矩）；新藝人 20 位列在兩批 rulings.md 末尾（mc26 6、md11 14）。
 - **主要檔案**：`batch-progress/add-20261023-{mc26,md11}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{mc26,md11}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{mc26,md11}/`、`onboarding-manifest-add-20261023-{mc26,md11}-20261023.json`、`desc-tools/batches/*/add-20261023-{mc26,md11}-*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`data/mood/*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`。
 - **驗證**：prepare／published gate 兩批 0 error；KV 回讀 54/54；qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；build-card-moods 錨點 104/104、seed 20,589。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒八格「亢奮」改名「暴躁」（charge）
 
 - **改動**：店主指示把躁・重・冷那一格改名「暴躁」。來源 `data/mood/scale-v0.json` 的 `names.charge`，重建 `card-moods.json`（只改名，座標 0 張變動）；`starmap-lab.html`、`dip-tune.js` 註解、`score500/BRIEF.md` 同步。內部代號仍是 `charge`；舊批次文件（含情緒薄格線 SCENES.md）裡的「亢奮」＝暴躁，不回頭改。
@@ -512,6 +534,7 @@
 - **藝人介紹**：未切（並行規矩）；新藝人 29 位列在兩批 rulings.md 末尾（md16 15、ml16 14）。
 - **主要檔案**：`batch-progress/add-20261023-{md16,ml16}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{md16,ml16}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{md16,ml16}/`、`onboarding-manifest-add-20261023-{md16,ml16}-20261023.json`、`desc-tools/batches/*/add-20261023-{md16,ml16}-*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/mood/*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`。
 - **驗證**：prepare／published gate 兩批 0 error；KV 回讀 69/69；qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；build-card-moods 錨點 104/104、seed 20,497。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 3 輪 mc7／ml15：minimal techno／IDM 31＋暖 downtempo／world dub 28 張上線，落格 25/31、28/28
 
 - **內容**：店主「三個薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 3 輪，本工作階段負責 mc7、ml15。mc7（`add-20261023-mc7`，minimal techno 快而薄＋mc8 IDM 快而乾）：Marc Houle 3、Jeff Mills 3、Brinkmann 2、Stewart Walker 2、Gaiser 2、Elektro Guzzi 2、Rian Treanor 2、Pacou 2、Robert Hood《Paradygm Shift》、Troy Pierce、Brandt Brauer Frick、Efdemin、Bretschneider、Mark Fell、SND、Beatrice Dillon、Funkstörung、Richard Devine、Sutekh、Damon Wild、Oliver Ho。ml15（`add-20261023-ml15`，暖 trip-hop／downtempo＋ml23 ambient dub 暖盤）：Nightmares on Wax 3、Bombay Dub Orchestra 3、Fat Freddy's Drop 2、Trinity Roots 2、Rockers Hi-Fi 2、Yppah 2、Kaya Project 2、Sounds From the Ground 2、Thievery《The Temple of I & I》、Tosca《J.A.C.》、Fila Brazillia、The Orb、Loop Guru、Gaudi 2（含與 Nusrat 合作）、Cheb i Sabbah、Ott、Boozoo Bajou《Grains》。兩批都挖不到 45，照實上架。
@@ -522,6 +545,7 @@
 - **藝人介紹**：未切（並行規矩）；新藝人 28 位列在兩批 rulings.md 末尾（ml15 10、mc7 18）。
 - **主要檔案**：`batch-progress/add-20261023-{mc7,ml15}/`、`batch-progress/mood-cells-20261022/{curation,master}-{mc7,ml15}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{mc7,ml15}/`、`onboarding-manifest-add-20261023-{mc7,ml15}-20261023.json`、`desc-tools/batches/*/add-20261023-{mc7,ml15}-*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/mood/*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`。
 - **驗證**：prepare／published gate 兩批 0 error；verify-wave-kv 59/59；qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；build-card-moods 錨點 104/104、寫入 20,432 張。
+
 ### 2026-10-23｜dip-vinyl-shop｜情緒薄格策展線第 3 輪 mc11／ml11：Kraftwerk 嫡系＋spacesynth 16＋chillwave／hypnagogic 26 張上線，落格 14/16、23/26
 
 - **內容**：店主「三個薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 3 輪，本工作階段負責 mc11、ml11。mc11（`add-20261023-mc11`，krautrock motorik＋mc16 Italo／space disco＋mc27 70s 前衛電子）：Laserdance 5、Proxyon 2、Karl Bartos《Off the Record》、Elektric Music《Esperanto》、Kraftwerk《The Mix》、Rheingold《Distanz》、Tangerine Dream《Exit》《Optical Race》、Jarre《Chronologie》、Black Devil Disco Club《Disco Club》、Hipnosis。ml11（`add-20261023-ml11`，chillwave／hypnagogic＋ml12 濕的 bedroom／dream pop）：Black Moth Super Rainbow 4、Washed Out 2、Ducktails 2、Cuushe 2、Teen Daze 2、Foxes in Fiction 2、Papercuts 2、SLEEP ∞ OVER、Youth Lagoon《Wondrous Bughouse》、Blackbird Blackbird《Hearts》、Peaking Lights《Imaginary Falcons》、Homeshake《Under the Weather》、Men I Trust《Headroom》、Vansire《Angel Youth》、Rangers、Nightlands、Yellow Days。兩批都挖不到 45，照實上架。
@@ -619,6 +643,7 @@
 - **改動**：店主切去聽串流後站上會自動把網頁音源（頂欄自動試聽開關）關掉，頻率選歌就沒聲音、按左上角喇叭也沒反應——喇叭原本只是模組內的布林。現在 `dip-tune.js` 以 `cfg.audioPref()`（`DipPlayer.autoplayPreference() !== 'off'`）進場同步、喇叭按下走 `cfg.setAudioPref(on)` 回寫站上開關並武裝播放器、新增 `DipTune.setAudio(on)` 給頁面推；`index.html` 頂欄開關的 `onToggle` 與 `onAutoplayRevoked` 都呼叫 `DipTune.setAudio`。開關是關的時候轉輪子不再 `grant`（不搶串流）；沒表態過的裝置第一次碰輪子寫成開，頂欄圖示跟著亮。`dip-tune.js?v=6`。
 - **主要檔案**：`dip-tune.js`、`index.html`
 - **驗證**：本機 Playwright 八個情境全過：關→進場喇叭關、轉輪子不寫開、按喇叭→頂欄開、頂欄關→喇叭關、頂欄開→喇叭開、離開再進照站上開關、未表態→進場喇叭開、第一次碰輪子→頂欄開；0 pageerror。
+
 ### 2026-10-22｜dip-vinyl-shop｜情緒薄格策展線 md7／md8：冷調 post-rock 41＋dub techno 三線 41 張上線，落頹靡 75/82
 
 - **內容**：店主「新增的專輯數太少了 與雀躍嚴重不平衡」，6 個並行子工作階段之一。md7（`add-20261022-md7`）：Labradford 4、Roy Montgomery 6、Pan American 2、Tarentel 3、GY!BE 2、Set Fire to Flames 2、Piano Magic 2、TWDY 2、Mogwai 2、Supersilent《6》、NIN《Ghosts I–IV》、冷配樂 6（Reznor/Ross 2、Jóhannsson 2、《Annihilation》、《Only God Forgives》）、無鼓吉他 drone（Windy & Carl、Aarktica、Barn Owl、Thisquietarmy、Aidan Baker 2）。md8（`add-20261022-md8`）：Silent Season 系（ASC 4、Purl 2、Submersion 3、Faru、Axs、Tdel…）、Echocord 系（Fluxion 5、Quantec 3、Silent Harbour、Onmutu Mechanicks）、Chain Reaction（Fluxion《Bipolar Defect》、Hallucinator）、Yagya 3、Rod Modell 3、cv313、Echospace、Porter Ricks《Symbiotics》、bvdub & loscil、Henke《Layering Buddha》、Multicast Dynamics 2。兩批場景都挖不到 45，照實上架。
@@ -721,11 +746,13 @@
 - **收尾**：情緒三軸 90 張（`score-ts2`）併進 priors，併 main 後照質地尺新規則抬 Five Satins 1 張，gate 綠 19,548／19,548；§11 新藝人 71 位補進 roster、切 `ar-d-135`～`136`（只切未寫，連同 129～134 待新工作階段跑）。`meta.mjs` 補台韓法港比瑞商店區；Apple 專輯搜尋多數回空，改走藝人目錄逐首核對（坑記在 HANDOFF 第三節）。
 - **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`onboarding-manifest-add-20261022-ts{5,6}-20261022.json`、`batch-progress/add-20261022-ts{5,6}/*`、`batch-progress/thin-sub-20261020/*`、`desc-tools/batches/*/add-20261022-ts{5,6}-*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`、`data/mood/*`、`batch-progress/mood-axes/{build-priors.mjs,score-ts2/*,rulings.md}`、`batch-progress/artist-intro/roster-20260929.json`、`desc-tools/batches/artist/{progress.json,cut/ar-d-135..136.txt}`、`batch-progress/HANDOFF-thin-sub-line.md`。
 - **驗證**：封面 90 張上線前回讀 200；`verify-album-onboarding --published` ts5／ts6 皆 0 error；KV 回讀 ts5 57/57、ts6 45/45；card_catalog 45/45、45/45；`build-card-moods` gate 綠、錨點 104/104。
+
 ### 2026-10-22｜dip-vinyl-shop｜質地尺改判：暖慢的包覆感算重，恍惚 592 → 772
 
 - **內容**：店主「落日飛車確實是恍惚（dream pop 大部分也都是恍惚）重新評斷」。評分說明書 Y 軸加「包覆感算重」（dream pop 殘響霧、夢幻吉他與合成器墊、慢板靈魂厚低頻與弦樂、chillwave 糊濾波）；落日飛車《Jinji Kikko》與《Let's Get It On》錨點移恍惚；放鬆／平靜 705 張候選由 9 支代理只重判質地，主線退回 4 張，195 張寫進 `data/mood/overrides.json`（放鬆→恍惚 178、平靜→頹靡 17）。ts5／ts6 另開工作階段在跑。
 - **主要檔案**：`batch-progress/mood-axes/{score500/BRIEF.md,anchors-src.mjs,anchors-v1.json,rulings.md,priors-v0-report.json,scale-v0-report.json}`、`batch-progress/mood-axes/texture-rejudge/*`、`data/mood/{overrides.json,card-moods.json,card-moods-v0.json,scale-v0.json}`。
 - **驗證**：merge 9/9 份、0 錯誤；`build-card-moods.mjs` gate 綠（19,458/19,458、錨點 104/104、改判 256）；八格 放鬆 4,975、平靜 1,316、恍惚 772、頹靡 943。
+
 ### 2026-10-22｜dip-vinyl-shop｜藝人介紹 ar-d-129、ar-d-130：薄細項策展線上架卡補介紹 79 位
 
 - **內容**：ALBUM_ONBOARDING §11，ts1–ts11 上架卡缺介紹的藝人。ar-d-129（越南、柬埔寨、菲律賓、泰國、馬來西亞、新加坡搖滾）40 位全上（30 full／10 thin）；ar-d-130（馬來西亞、南亞、蒙古、印尼搖滾、剛果倫巴）39 位上架（31 full／8 thin），Noori 只有維基單源、skipped。補洞 WebSearch 每位 ≤2 次。
@@ -836,6 +863,7 @@
 - **寫入**：card_catalog 42、KV 固定簡介 42（回讀逐字一致）、試聽 32 ready／10 無來源、seed 上架；Bức Tường《Vô hình》CAA 前封面持續 500，改 Apple 官方圖。新藝人 31 位寫進 `rock-asia-country-map.json`，`/album-genres` 預熱 42 張（39 有標籤）後重建類型樹與抽卡封面：越南 15、泰國 12、菲律賓 20、馬來西亞 9、柬埔寨 5。
 - **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`onboarding-manifest-add-20261020-ts1-20261020.json`、`batch-progress/add-20261020-ts1/*`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261020-ts1-*`、`rock-asia-country-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*.json`。
 - **驗證**：`verify-album-onboarding --published` 42 張 0 error；KV 回讀 42/42；qa-batch out／qa-check-research 0 標記。情緒評分與藝人介紹（§11）併到整條 ts 線收尾一起做。
+
 ### 2026-10-21｜dip-vinyl-shop｜頻率選歌：玩家回報三件（就這張空白、上一張的介紹、缺 Spotify）同一個根源
 
 - **根源**：掃描時每閃過一張就呼叫 `resolveCardAssets`（2 次 Firestore 讀＋worker `/spotify-search`）查封面，轉幾圈就是幾百次；worker 與 Firestore 被打爆後，結果頁的封面／Spotify 連結查不到、`resolveCardAssets` 慢到玩家只看到空白（我把主機層先藏了、結果層還沒畫）。
@@ -993,6 +1021,7 @@
 - **改動**：add-20261014 上架的 4 張補進錨點。溫蒂漫步《Spring Spring》、事後菸《Cry》《X's》落在要死不活；溫蒂漫步《Midnight Blue》加進 Disco、Funk，落在愉悅。六區：放鬆 16、要死不活 27、愉悅 18、雀躍 16、亢奮 19、興奮 8。與舊三軸 Spearman：質地～硬蕊 0.62、色溫～硬蕊 −0.62，能量 ≤0.12。私人星圖預覽改成依資料張數顯示並重新發布。
 - **主要檔案**：`batch-progress/mood-axes/{anchors-src.mjs,anchors-v1.json,rulings.md}`、`MOOD_ENERGY_PLAN.md`
 - **驗證**：`build-anchors.mjs` 104/104 對上卡池、預期與計算區域零落差；星圖預覽本機 Chromium 桌機與手機寬度無錯誤。
+
 ### 2026-10-20｜dip-vinyl-shop｜類型挑片第三層全面展開（270 節點）＋抽卡動畫閃該分類的封面
 
 - **起因**：店主「目前分類還不夠細緻，比如電子的 techno 還有 deep techno、house 還有 acid house」「抽卡時動畫裡的專輯使用該分類的專輯，不要明明是抽搖滾卻跑出 2Pac」。
@@ -1064,6 +1093,7 @@
 - **藝人介紹**：溫蒂漫步補名冊、切 ar-d-128（1 位），補洞（Sonnet）→ 寫作（Opus）→ 主線審稿修 1 處（「疫情解封後首度出國」改「解封後的海外首站是香港」）→ 上架，介紹 6,097 → 6,098。事後菸已在 ar-d-069 排隊。
 - **主要檔案**：`batch-progress/add-20261014/`、`onboarding-manifest-add-20261014-20261014.json`、`desc-tools/batches/*/add-20261014*`、`seed_cards.json`、`data/apple-audio-*.json`、`card-subgenres.json`、`genre-tree.json`、`tw-pop-artists.json`、`batch-progress/artist-intro/{roster-20260929.json,ar-c-rulings.md}`、`desc-tools/batches/artist/*/ar-d-128*`、`data/artist-intros/{18,manifest}.json`
 - **驗證**：verify-album-onboarding prepare／published 皆 0 error；verify-wave-kv 6/6；qa-batch research／hooks／out 全過；qa-check-research 標記 0；qa-artist gap／out 0 處；build-artist-intros 322 份、6,098 位。PR #101。
+
 ### 2026-10-14｜dip-vinyl-shop｜情緒三軸：100 張錨點專輯標定完成（不上前台）＋星圖原型
 
 - **起因**：店主指示「先幫一百張重點專輯標示新三軸，隱藏不顯示」，並說明星圖要的是「玩家收藏在三度空間的分布，蒐集越多星星越多」。
