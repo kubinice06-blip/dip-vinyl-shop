@@ -1,4 +1,4 @@
-# 情緒薄格策展線 md34 上線當天評分派工（score-md34）
+# 情緒薄格策展線 md34 上線當天評分派工（score-md34b）
 
 工單：`chunk-md34.json`（由 `select.mjs add-20261024-md34` 從 seed 切出）。
 代理照 `batch-progress/mood-axes/score500/BRIEF.md` 打分（**先把 X／Y／Z 三節，以 2026-10-23 店主「體感標準」為準：能量＝體感、色溫＝聲響溫度＋旋律清楚度與 104 張校正表讀完**）。

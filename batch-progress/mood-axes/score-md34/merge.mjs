@@ -1,4 +1,4 @@
-// 合併 score-md34全部評分 → scored-md34.json，並做驗收檢查（同 score-rest/merge.mjs）。
+// 合併 score-md34（md3／md4）全部評分 → scored-md34.json，並做驗收檢查（同 score-rest/merge.mjs）。
 // 用法：node batch-progress/mood-axes/score-md34/merge.mjs
 import fs from 'node:fs';
 const R = p => new URL(p, import.meta.url);

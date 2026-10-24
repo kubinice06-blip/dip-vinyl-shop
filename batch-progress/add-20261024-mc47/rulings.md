@@ -91,3 +91,12 @@
   - `Herbert Henck|Stockhausen: Klavierstücke I-XI`：刪「同一年他獲頒德國評論家獎」（評論家獎屬媒體評選，照媒體獎項不進正文先例）→ 223 字。
 - **22272** 寫作層 22263 用常識補的「義大利鋼琴家」（Pollini）保留：國籍為無爭議事實，第二句交代身分所需。Wambach、Ponthus 研究稿無國籍，維持只寫「鋼琴家」。陳必先「出生於臺灣、9 歲移居科隆、1972 ARD 首獎」對研究 a 核過。
 - **22273** 媒體名、媒體年終榜、「據說／據傳」全批 0；`qa-batch out`、`qa-check-research`、`fix-spacing` 0 處。
+
+## 上線與評分（2026-10-24，主線）（條號 22274–22276）
+- **22274**：上線 15 張：card_catalog 15／15、KV 16 鍵（陳必先另有 desc4 鍵）回讀逐字一致（stamp 20261024r15）、試聽 9 ready／6 unavailable（Henck《Stockhausen》、Arditti、Wambach、陳必先、Chojnacka 兩張 Apple 無條目；9 張人工配同錄音，見 `preview-override.json`）、seed +15、prepare／published gate 0 error。封面 CAA 6、Apple 4、Discogs 5（registry → 454），縮圖表目視相符。去重同 md34。古典三軸走 §0.7 錨點制（`ratings-override.json`，照 mc43）。
+- **22275**：頂點：15 張 rarity 全 epic（照 mc43 先例：古典硬蕊 5、冷門 4–5），未觸及殿堂／遺珠門檻。類型樹：`genre-l3-artist-map.json` 新增 `classical/contemporary/avant` 補 Roger Woodward（Last.fm 無標籤），15/15 落位。
+- **22276**：**落格率 15/15＝100%**（`batch-progress/mood-axes/score-mc47/`）。評分 x 3.2–3.8、y −1.5～−1.0、z −1.9～−1.6；conf high 1、mid 11、low 3。
+- **場景潛力（全線最後一輪盤點）**：**主場景見底**。Xenakis 獨奏錄音幾乎都在池（剩打擊盤，池中 Carneiro Xenakis 打擊 y 0.4 過不了邊距）；Sciarrino／Lachenmann 剩餘鋼琴與長笛盤是極弱型（x 3.0–3.1 貼邊）；擴寫場景（Boulez／Barraqué／Stockhausen 鋼琴、新複雜主義獨奏）本批收完能收的，汰下 16 張的問題（非純獨奏、低音樂器、抒情／靜段）不會因換人而消失。**還能挖約 3–5 張，全部貼邊**。策展 38 → 上線 15（汰換率 61%），冷冽線的獨奏器樂池到此為止。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Claude Helffer、İdil Biret、Roger Woodward、Irvine Arditti、Julie-Anne Derome、Ian Pace、Bernhard Wambach、Diego Castro Magas、Marc Ponthus、Elisabeth Chojnacka（10 位；Herbert Henck、陳必先、Maurizio Pollini 已有介紹或在排隊）

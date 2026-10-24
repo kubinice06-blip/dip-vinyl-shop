@@ -116,3 +116,12 @@
   - `Bell Witch|Longing`：刪「評論也說，貝斯和鼓壓出的沉重，顛覆了重型 doom 的定義。」（研究 c 單一樂評的誇張評價句，照單源評價句刪除先例）→ 190 字。
 - **22352** 事實抽核：Bell Witch〈Bails (of Flesh)〉曲名對 MB 曲目表（Apple 拼 Bales，以 MB 為準）；Mirror Reaper 以 Guerra 舊人聲錄音致意、Profound Lore 雙專輯（研究 c）；Colosseum Palomäki 2010 年過世（研究 d）；Asva Michael Dahlquist 2005 年遭蓄意撞車（研究 e）；Thergothon 1992 錄、1994 Avantgarde 發行（研究 b）；廠牌照主線更正（Quietus Avantgarde、Monad Weird Truth、Angels Spikefarm）。
 - **22353** 媒體名、媒體年終榜、「據說／據傳」全批 0；`qa-batch out`、`qa-check-research`、`fix-spacing` 0 處。
+
+## 上線與評分（2026-10-24，主線）（條號 22354–22356）
+- **22354**：上線 38 張：card_catalog 38／38、KV 38 鍵回讀逐字一致（stamp 20261024r15）、試聽 28 ready／10 unavailable、seed +38、prepare／published gate 0 error（warning 皆 UPC 盡力而為）。封面 CAA 38，縮圖表目視相符。上線前對 origin 近 40 條 `claude/*` 分支 seed 與並行批卡單去重 0 撞。
+- **22355**：頂點：38 張 rarity 全 uncommon，列一般卡。類型樹 38/38 落位（warm-batch 38 張全有 Last.fm 標籤），抽卡封面重建。
+- **22356**：**落格率 38/38＝100%**（`batch-progress/mood-axes/score-md34b/`，照 10-23 體感標準；`score-md34/` 是 md3／md4 的舊評分目錄，本批另開 `score-md34b`）。評分 x 1.2–2.3、y 1.5–2.0、z −2.0～−0.9；conf high 3、mid 26、low 9。色溫最貼邊：Shape of Despair 兩張 −0.9、Mournful Congregation《The June Frost》−1.0；能量最高 Esoteric《Epistemological Despondency》2.3。
+- **場景潛力（全線最後一輪盤點）**：funeral doom 一線大名（Esoteric、Evoken、Skepticism、Thergothon、Mournful Congregation、Worship、Bell Witch、Tyranny）這批收完；汰下的 7 張（blast beat／中速／偏亮）不該再提。**還能挖約 20–30 張**：二線 Wormphlegm、Profetus、Until Death Overtakes Me、Remina、Officium Triste、Saturnus、Pantheist 前期、Ahab《The Giant》、Colosseum《Chapter 2》、Monolithe《III》、Nadja、Winter 等（部分要走人工身分、Apple 上架率約七成）。此場景落格率 100%，是頹靡線最穩的池子之一。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Esoteric、Evoken、Mournful Congregation、Skepticism、Thergothon、Shape of Despair、Worship、Ahab、Tyranny、Bell Witch、Colosseum、Asunder、Nortt、Dolorian、Comatose Vigil、Moss、Asva、Ommadon（18 位；Catacombs、Aldebaran 已有介紹或在排隊）
