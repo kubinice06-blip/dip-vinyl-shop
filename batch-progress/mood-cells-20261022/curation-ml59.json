@@ -1,0 +1,607 @@
+{
+ "group": "ml59",
+ "factions": [
+  {
+   "id": "jv",
+   "zh": "JA roots 人聲慢盤第二波：二線歌手與和聲團（Tubby／Jammy／Scientist／Peter Chemist／Soldgie／Channel One 混音）",
+   "why": "主場景：大名多已在池或池中同人判輕，挖二線；只收 Discogs credit 明寫濕混音者的",
+   "count": 10
+  },
+  {
+   "id": "uk",
+   "zh": "UK roots 自製期（Ariwa／Mad Professor 混音）",
+   "why": "主場景延伸：Twinkle Brothers 英國自製期，混音者 Mad Professor",
+   "count": 2
+  },
+  {
+   "id": "sc",
+   "zh": "showcase／discomix：人聲接 dub 的正規專輯",
+   "why": "擴寫：店主要多 dub，人聲撐住旋律、dub 段放大回音，池中同型 y 1.2–1.4",
+   "count": 6
+  },
+  {
+   "id": "dub",
+   "zh": "暖 dub：人聲盤的 dub 版／旋律領奏 dub",
+   "why": "擴寫：只收旋律或人聲撐住的暖 dub",
+   "count": 0
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Larry Marshall",
+   "album": "I Admire You",
+   "year": 1975,
+   "label": "Marshall",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Larry Marshall 自製唯一正規專輯，Discogs credit 明寫 Mixed By King Tubby，Righteous Flames 和聲；Tubby 早期濕混音把甜嗓壓在厚低頻與回音上，roots 人聲慢盤二線名盤",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "Tubby 混音，厚貝斯回音，和聲甜暖，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6f8c03e5-8db4-46ca-bb3c-99cfd1fb5c61",
+    "https://www.discogs.com/master/689948",
+    "https://www.discogs.com/release/5709693",
+    "https://coverartarchive.org/release-group/6f8c03e5-8db4-46ca-bb3c-99cfd1fb5c61/front"
+   ],
+   "mbRgMbid": "6f8c03e5-8db4-46ca-bb3c-99cfd1fb5c61",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Delton Screechie",
+   "album": "Living In The Ghetto Showcase",
+   "year": 1982,
+   "label": "Moa Anbessa",
+   "country": "jm",
+   "faction": "sc",
+   "genres": [
+    "world"
+   ],
+   "why": "英國 Moa Anbessa 出的人聲＋dub 接續 showcase，Discogs credit 明寫 A3–B3 Mixed By Scientist（A1–A2 Sylvan Morris），六首人聲各接 dub 段，discomix showcase 的典型",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": 0.6,
+    "why": "Scientist 混的 dub 段，低頻厚，人聲暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/716e03f6-dbfd-4f0c-a08b-fe9c9ffac313",
+    "https://www.discogs.com/master/2746832",
+    "https://www.discogs.com/release/916334",
+    "https://coverartarchive.org/release-group/716e03f6-dbfd-4f0c-a08b-fe9c9ffac313/front"
+   ],
+   "mbRgMbid": "716e03f6-dbfd-4f0c-a08b-fe9c9ffac313",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "A1–A2 為 Sylvan Morris 混，濕度較低；整體 4/6 為 Scientist"
+  },
+  {
+   "artist": "Rod Taylor",
+   "album": "Where Is Your Love Mankind",
+   "year": 1980,
+   "label": "Greensleeves",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Junjo Lawes 製作、Roots Radics 伴奏，Discogs credit 明寫 Mixed By Scientist；Rod Taylor 甜高音壓在 Radics 慢 rub-a-dub 厚低頻上，池中同人《If Jah Should Come Now》y 1.1",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.7,
+    "why": "Scientist 混，Radics 慢拍厚貝斯，高音甜"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/126488",
+    "https://www.discogs.com/release/579518",
+    "https://i.discogs.com/7BM4ai5_dcupOms2UJs-BkkeZG2WNl7NRxR5RTX8C4s/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3OTUx/OC0xMjExMzg5MzU2/LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Rod Taylor\"",
+     "artist:\"Rod Taylor\" AND releasegroup:\"Where Is Your Love Mankind\""
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此 release group（藝人頁無此專輯），以 Discogs master／release 為身分依據"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/126488",
+    "https://www.discogs.com/release/579518"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 查無，走 §1 人工身分"
+  },
+  {
+   "artist": "The Twinkle Brothers",
+   "album": "Underground",
+   "year": 1982,
+   "label": "Twinkle Music",
+   "country": "gb",
+   "faction": "uk",
+   "genres": [
+    "world"
+   ],
+   "why": "Norman Grant 移居英國後自製，Discogs credit 明寫 Mixed By Mad Professor，B 面由 Jah Shaka 彈貝斯；UK roots 重低頻、和聲吟唱，與池中 1980 年 Virgin 期《Countrymen》是不同時期與混音者",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": 0.6,
+    "why": "Mad Professor 類比混音，Shaka 低音厚，和聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/111676f9-5d51-3746-b602-5ad76ea17809",
+    "https://www.discogs.com/master/393452",
+    "https://www.discogs.com/release/602870",
+    "https://i.discogs.com/Bn-63dcOLKDHrJkO-F8NZaCX4oykkujlCGa6zBYOijM/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYwMjg3/MC0xNTAzNDg3MjM4/LTI1OTQuanBlZw.jpeg"
+   ],
+   "mbRgMbid": "111676f9-5d51-3746-b602-5ad76ea17809",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同團《Countrymen》（1980 Virgin）y 0.6；本張為 1982 英國自製＋Ariwa 混音，時期不同，研究層確認重度"
+  },
+  {
+   "artist": "The Twinkle Brothers",
+   "album": "Burden Bearer",
+   "year": 1983,
+   "label": "Twinkle Music",
+   "country": "gb",
+   "faction": "uk",
+   "genres": [
+    "world"
+   ],
+   "why": "Twinkle 英國自製期，Channel One 錄 Roots Radics 伴奏五首、Ariwa 錄三首，Discogs credit 明寫 A5／B2／B5 Mixed By Mad Professor，其餘 Michael Dan 在 Addis Ababa 混；慢 roots 和聲盤",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "Radics 低頻厚，Ariwa 回音，和聲慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/eb563e1f-0585-3929-854c-fc8995fa4af7",
+    "https://www.discogs.com/master/446235",
+    "https://www.discogs.com/release/602860",
+    "https://i.discogs.com/jSXHALeZGjzjd8p2DdpUeH2nzlQq76nLGusCV1U61EY/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYwMjg2/MC0xMjk2MjQ2NDk5/LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "eb563e1f-0585-3929-854c-fc8995fa4af7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Michael Dan 有合成器 credit，研究層確認是否點綴；池中《Countrymen》y 0.6"
+  },
+  {
+   "artist": "Bim Sherman",
+   "album": "In A Rub-A-Dub Style",
+   "year": 1980,
+   "label": "Yard International",
+   "country": "jm",
+   "faction": "sc",
+   "genres": [
+    "world"
+   ],
+   "why": "Bim Sherman、Horace Andy、U Black 合盤，Jah Woosh 製作，Discogs credit 明寫 Mixed By Prince Jammy；每首人聲直接接 Dub 版，showcase 形式，池中 Bim Sherman《Across the Red Sea》y 1.3",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.4,
+    "z": 0.7,
+    "why": "Jammy 混，人聲接 dub，低頻厚，回音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8bae5976-2c54-4151-a14f-657b09bec037",
+    "https://www.discogs.com/master/195197",
+    "https://www.discogs.com/release/2938739",
+    "https://coverartarchive.org/release-group/8bae5976-2c54-4151-a14f-657b09bec037/front"
+   ],
+   "mbRgMbid": "8bae5976-2c54-4151-a14f-657b09bec037",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "U Black 為 DJ，僅部分曲目；MB 首發日 2007 為重發，Discogs 原版 1980"
+  },
+  {
+   "artist": "Bim Sherman",
+   "album": "Lovers Leap Showcase",
+   "year": 1978,
+   "label": "Scorpio",
+   "country": "jm",
+   "faction": "sc",
+   "genres": [
+    "world"
+   ],
+   "why": "Bim Sherman 自製自唱的 showcase，Soul Syndicate／Roots Radics 伴奏，Discogs credit 明寫 Engineer Prince Jammy；五首歌各接 Part 2 dub 段，Bim 顫抖高音在厚低頻裡，池中同人 y 1.3",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.4,
+    "z": 0.7,
+    "why": "Jammy 工程，歌接 dub，貝斯厚，嗓溫"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/238246",
+    "https://www.discogs.com/release/3283122",
+    "https://i.discogs.com/xzZvW__ZZYuFD_WHU0dvFv_p2hNhImnBREnDOmTfuxc/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyODMx/MjItMTY2MDE2MzEy/Ni03MzkxLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Bim Sherman\"",
+     "artist:\"Bim Sherman\" AND releasegroup:\"Lovers Leap Showcase\""
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此 release group（藝人頁無此專輯），以 Discogs master／release 為身分依據"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/238246",
+    "https://www.discogs.com/release/3283122"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 查無，走 §1 人工身分"
+  },
+  {
+   "artist": "Don Carlos & Gold",
+   "album": "Never Run Away",
+   "year": 1984,
+   "label": "Kingdom Records",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Roy Cousins 製作、Roots Radics 班底，Discogs credit 明寫 Mixed By Peter Chemist、Tracking By Crucial Bunny；Don Carlos 甜高音加 Gold 和聲的慢情歌與 roots，池中同人四張 y 0.8–1.2",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.9,
+    "why": "Peter Chemist 混，Radics 慢拍，和聲暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/77f72f4f-c91e-494e-8bd5-4a6d6298679c",
+    "https://www.discogs.com/master/235063",
+    "https://www.discogs.com/release/983259",
+    "https://i.discogs.com/D_9P9FvjPfwoMS7fzJCLH4N-2yBnOkLKAC7RzK2vfbk/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk4MzI1/OS0xNTk3NjQwMDIw/LTk1NzUuanBlZw.jpeg"
+   ],
+   "mbRgMbid": "77f72f4f-c91e-494e-8bd5-4a6d6298679c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "1984 年，Radics 仍是真鼓（Style Scott／Horsemouth），研究層核有無鼓機"
+  },
+  {
+   "artist": "Don Carlos & Gold",
+   "album": "Plantation",
+   "year": 1984,
+   "label": "CSA Records",
+   "country": "jm",
+   "faction": "sc",
+   "genres": [
+    "world"
+   ],
+   "why": "Roy Cousins 與 Don Carlos 合製，六首皆 6–8 分鐘的 discomix 長版（人聲接 dub），Discogs credit 明寫 Engineer Peter Chemist／Sylvan Morris，Discogs 風格標 Roots Reggae＋Dub",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": 0.8,
+    "why": "六首長版歌接 dub，低頻厚，和聲暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/507c5ebe-75ff-4f0c-9fc8-150e793e6f16",
+    "https://www.discogs.com/master/281629",
+    "https://www.discogs.com/release/2472757",
+    "https://i.discogs.com/js0bIUxBAUjTUb69k1-Z9HfoZ0edI6YaioElFS-6Nwg/rs:fit/g:sm/q:90/h:595/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NzI3/NTctMTQwNDUyMTE3/OS0yOTcxLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "507c5ebe-75ff-4f0c-9fc8-150e793e6f16",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 最早只有 1989 荷蘭版 RG（另有 2001 英版 RG），Discogs 原版 1984 CSA；研究層核同一盤"
+  },
+  {
+   "artist": "Natural Vibes",
+   "album": "Life Hard A Yard",
+   "year": 1982,
+   "label": "Starlight Records",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Prince Jammy 製作並混音（Discogs credit：Producer, Mixed By Prince Jammy），Roots Radics／Sly & Robbie／High Times 伴奏的和聲團唯一專輯，Jammy 早期 rub-a-dub 慢拍",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.7,
+    "why": "Jammy 混，Radics 慢拍厚低頻，和聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a7c8b65d-88a9-4a02-8ec0-ff44834fe75d",
+    "https://www.discogs.com/master/583364",
+    "https://www.discogs.com/release/977273",
+    "https://coverartarchive.org/release-group/a7c8b65d-88a9-4a02-8ec0-ff44834fe75d/front"
+   ],
+   "mbRgMbid": "a7c8b65d-88a9-4a02-8ec0-ff44834fe75d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 另標 Dancehall，研究層確認速度"
+  },
+  {
+   "artist": "Earl Zero",
+   "album": "Visions of Love",
+   "year": 1980,
+   "label": "Epiphany Records",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Earl Chinna Smith 製作、Soul Syndicate 伴奏，Channel One 錄音，Discogs credit 明寫 Recorded/Mixed By Crucial Bunny（Channel One 工程師），Augustus Pablo 彈鋼琴、木琴與口風琴；Earl Zero 唯一國際發行的 roots 人聲盤",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Channel One 錄混，Pablo 口風琴，低頻厚暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7b4731fb-d6a6-4743-a361-db41e36e96b6",
+    "https://www.discogs.com/master/186969",
+    "https://www.discogs.com/release/2503802",
+    "https://i.discogs.com/4faoO2tkHj-lu26Hv2SyFDwO8AU0pV1rG4cLeBDXRC8/rs:fit/g:sm/q:90/h:461/w:457/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MDM4/MDItMTM3MDMwMTA0/MC05Njg1LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "7b4731fb-d6a6-4743-a361-db41e36e96b6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "另列 Karl Pitterson、Ian McCorkle 混音與美國 overdub，研究層確認是否被修乾淨"
+  },
+  {
+   "artist": "Triston Palma",
+   "album": "Settle Down Girl",
+   "year": 1983,
+   "label": "Trojan Records",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Linval Thompson 製作、Roots Radics 伴奏，Discogs credit 明寫 Mixed By Peter Chemist；Tristan Palmer 的慢情歌 rub-a-dub 盤，池中同人（Triston Palma）兩張 y 1.0–1.2",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.9,
+    "why": "Peter Chemist 混，Radics 慢拍，情歌暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/2324749",
+    "https://i.discogs.com/d1sH5fbVIB65jKEceKMDqkkxR3LIENy8a_Q2BqeNJwo/rs:fit/g:sm/q:90/h:429/w:426/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMjQ3/NDktMTQ2NTQxNzI1/Ny0yNjA2LmpwZWc.jpeg",
+    "https://www.discogs.com/artist/146062"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Triston Palma\"",
+     "artist:\"Triston Palma\" AND releasegroup:\"Settle Down Girl\""
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此 release group（藝人頁無此專輯），以 Discogs master／release 為身分依據"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/2324749",
+    "https://www.discogs.com/artist/146062"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 查無，走 §1 人工身分；Discogs 無 master，只有 release；Discogs 署名 Tristan Palmer（池中用 Triston Palma）"
+  },
+  {
+   "artist": "The Viceroys",
+   "album": "Chancery Lane",
+   "year": 1984,
+   "label": "Greensleeves Records",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Winston Riley 製作，Discogs credit 明寫 Mixed By Soldgie；Wesley Tinglin 的和聲團第三張，池中同團《We Must Unite》《Brethren and Sistren》y 1.0–1.2",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.9,
+    "why": "Soldgie 混，三部和聲，低頻厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/21fd8e78-bf6d-3405-9214-1c06eb2e25d3",
+    "https://www.discogs.com/release/605151",
+    "https://i.discogs.com/CLQf-hkO6Je-R20NjutbIPV2TfwqvA3VQrd24V73KDM/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYwNTE1/MS0xMjI1MDQ0NTA1/LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "21fd8e78-bf6d-3405-9214-1c06eb2e25d3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Sly Dunbar 1984 鼓，研究層核是否電子鼓；Discogs 無 master"
+  },
+  {
+   "artist": "Earl Sixteen",
+   "album": "Songs For A Reason",
+   "year": 1983,
+   "label": "Vista Sounds",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Roy Cousins 製作，Roots Radics 等伴奏，Discogs 工程欄列 Scientist、Crucial Bunny、Ernest Hookim、Sylvan Morris（Channel One／Tubby's 班底）；Earl Sixteen 甜嗓 roots，池中同人《Reggae Sound》y 1.0",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Scientist／Channel One 工程，低頻厚，嗓甜"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a6414002-eb3d-4122-b082-08f34677a583",
+    "https://www.discogs.com/master/324610",
+    "https://www.discogs.com/release/2790046",
+    "https://coverartarchive.org/release-group/a6414002-eb3d-4122-b082-08f34677a583/front"
+   ],
+   "mbRgMbid": "a6414002-eb3d-4122-b082-08f34677a583",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "工程欄列多人未分曲，研究層核混音者"
+  },
+  {
+   "artist": "Delroy Williams",
+   "album": "I Stand Black",
+   "year": 1982,
+   "label": "Message",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Augustus Pablo 編曲並彈口風琴、風琴、鋼琴，Discogs 工程欄列 King Tubby、Barnabas、Sylvan Morris；Rockers 圈唯一正規專輯，Pablo 小調旋律與 Tubby 低頻",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "Pablo 口風琴旋律，Tubby 工程，低頻厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/957a8b8e-dbbb-385c-b36d-cd16eb2bb491",
+    "https://www.discogs.com/master/131454",
+    "https://www.discogs.com/release/1789621",
+    "https://coverartarchive.org/release-group/957a8b8e-dbbb-385c-b36d-cd16eb2bb491/front"
+   ],
+   "mbRgMbid": "957a8b8e-dbbb-385c-b36d-cd16eb2bb491",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發 2003 為重發，Discogs 原版 1982；Pablo 製作盤 z 可能偏小調冷，研究層看"
+  },
+  {
+   "artist": "Triston Palma",
+   "album": "Fancyness",
+   "year": 1982,
+   "label": "Gorgon Records",
+   "country": "jm",
+   "faction": "jv",
+   "genres": [
+    "world"
+   ],
+   "why": "Ossie Thomas 與 Tristan Palmer 合製、Roots Radics 伴奏、Tamlins 和聲，Discogs 工程欄列 Scientist；與池中《Show Case》《Joker Lover》曲目不重疊，Radics 慢 rub-a-dub 情歌盤",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 0.9,
+    "why": "Scientist 工程，Radics 慢拍，Tamlins 和聲暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/1115064",
+    "https://i.discogs.com/5t_SLzc8qt7p2ahJqAeMpQsEiWYH-krKxnH8Di0K-HY/rs:fit/g:sm/q:90/h:577/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTUw/NjQtMTE5MzE4MTgz/NC5qcGVn.jpeg",
+    "https://www.discogs.com/artist/146062"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Triston Palma\"",
+     "artist:\"Triston Palma\" AND releasegroup:\"Fancyness\""
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此 release group（藝人頁無此專輯），以 Discogs master／release 為身分依據"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/1115064",
+    "https://www.discogs.com/artist/146062"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 查無，走 §1 人工身分；Discogs 署名 Tristan Palmer；〈Dance Dance〉可能偏快，研究層核速度"
+  },
+  {
+   "artist": "Earl Cunningham",
+   "album": "Earl Cunningham",
+   "year": 1983,
+   "label": "Vista Sounds",
+   "country": "jm",
+   "faction": "sc",
+   "genres": [
+    "world"
+   ],
+   "why": "Heptones 的 Earl Morgan 製作，Roots Radics 伴奏，Discogs 註記 Channel One 錄音、Channel One 與 King Tubby's 混音（工程 Professor、Bunny Tom Tom）；五首歌各接 version，人聲＋dub showcase",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.7,
+    "why": "Tubby's／Channel One 混，歌接 version，低頻厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f40b84b9-87de-4569-9bf4-ebedd1262d81",
+    "https://www.discogs.com/master/2522074",
+    "https://www.discogs.com/release/3811948",
+    "https://i.discogs.com/V14ZVF03rH5V8Ry8xWDEPqeigo6sAe5B1usW82bXN9U/rs:fit/g:sm/q:90/h:350/w:350/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MTE5/NDgtMTM0NTM3MzQ3/MC02MjI3LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "f40b84b9-87de-4569-9bf4-ebedd1262d81",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ricky Grant",
+   "album": "I Love Jah Rastafari",
+   "year": 1978,
+   "label": "Message",
+   "country": "jm",
+   "faction": "sc",
+   "genres": [
+    "world"
+   ],
+   "why": "Augustus Pablo（Horace Swaby）製作的 Rockers 圈歌手唯一專輯，Message 廠牌，五首歌各接 Version，Discogs 風格標 Roots Reggae＋Dub；Pablo 製作同期池中 Hugh Mundell 多張 y 0.9–1.2",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "Pablo 製作，歌接 version，低頻厚，小調暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d4eeab49-a5b7-47af-9792-99722b7bbdf3",
+    "https://www.discogs.com/master/782471",
+    "https://www.discogs.com/release/2702418",
+    "https://coverartarchive.org/release-group/d4eeab49-a5b7-47af-9792-99722b7bbdf3/front"
+   ],
+   "mbRgMbid": "d4eeab49-a5b7-47af-9792-99722b7bbdf3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 無混音者署名（Pablo 製作慣例在 Tubby's 混，但無 credit）——不符濕混音篩子的硬證據，列汰換候補"
+  }
+ ],
+ "notes": []
+}
