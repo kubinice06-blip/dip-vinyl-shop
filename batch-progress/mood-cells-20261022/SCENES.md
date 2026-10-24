@@ -95,8 +95,8 @@
 | 71 | md32 | drone／電子極簡第二波（md6 收 43 高產；Kranky、Touch、Room40、Miasmah、Denovali 二線，要有低頻與顆粒） | ✅ 上線 28／落格 25 |
 | 72 | ml58 | roots reggae 人聲慢盤（Burning Spear、Culture、Israel Vibration、The Abyssinians、Prince Far I 系；ml38 roots dub 高產；店主要多 dub） | ✅ 上線 28／落格 28 |
 | 73 | mc45 | IDM／drill'n'bass 快而尖薄（Squarepusher、μ-Ziq、Bogdan Raczynski、Kid606 薄盤、Venetian Snares 薄盤；旋律清楚的落雀躍、轟炸的落暴躁） | ✅ 上線 2／落格 1 |
-| 74 | mc46 | 現代室內樂尖細第三波（mc43 收 36 高產；Ferneyhough、Furrer、Haas 尖細室內作、Neuwirth、Brian Ferneyhough 周邊、Klangforum Wien／Ensemble Recherche 錄音） | 派→情緒薄格 mc46、md33（第 15 輪） |
-| 75 | md33 | 冷 post-rock／器樂慢盤第三波＋冷 slowcore 器樂（md31 收 24；Labradford 周邊以外、Rachel's／Dirty Three 之外的二線） | 派→情緒薄格 mc46、md33（第 15 輪） |
+| 74 | mc46 | 現代室內樂尖細第三波（mc43 收 36 高產；Ferneyhough、Furrer、Haas 尖細室內作、Neuwirth、Brian Ferneyhough 周邊、Klangforum Wien／Ensemble Recherche 錄音） | ✅ 上線 13／落格 13 |
+| 75 | md33 | 冷 post-rock／器樂慢盤第三波＋冷 slowcore 器樂（md31 收 24；Labradford 周邊以外、Rachel's／Dirty Three 之外的二線） | ✅ 上線 14／落格 12 |
 | 76 | mc47 | 當代獨奏器樂尖細（Xenakis 獨奏作、Scelsi 弦樂／管樂獨奏、Sciarrino 長笛、Berio Sequenza、Lachenmann 獨奏作；mc46 走室內樂，這批只收獨奏盤） | 派→情緒薄格 mc47、md34（第 15 輪） |
 | 77 | md34 | funeral doom／drone doom 慢盤第二波（Esoteric、Evoken、Mournful Congregation、Skepticism、Thergothon 系；極慢、往下壓） | 派→情緒薄格 mc47、md34（第 15 輪） |
 
@@ -140,7 +140,7 @@
 | md30 | 21561 | dark ambient 第五波（Atrium Carceri 周邊、Dahlia's Tear、Desiderii Marginis、Ulf Söderberg 系） | ✅ 上線 28／落格 28（主場景大名見底，不再派） |
 | md31 | 21641 | 冷 post-rock／器樂慢盤二線（Labradford、Bark Psychosis 慢盤、Rachel's 冷盤、Dirty Three 冷盤） | ✅ 上線 26／落格 24（2026-10-24；策展 54＋補 25、主線汰 9＋5、研究汰 30＋9；冷 post-rock 二線樂團幾乎全有鼓組或人聲，只剩無鼓 drone／isolationist 能收；出格 Anjou 判輕、Windy & Carl 色溫 0；場景見底，不再派） |
 | md32 | 21961 | drone／電子極簡第二波（Kranky、Touch、Room40、Miasmah、Denovali 二線） | ✅ 上線 28／落格 25（2026-10-24；策展兩輪 71、主線汰 15、研究汰 28；文案寫 pulse／blistering／lush／旋律或人聲的汰；microsound 稀疏型與 Radigue 細長音判輕落平靜；主場景見底不再派） |
-| md33 | 22121 | 冷 post-rock／器樂慢盤第三波＋冷 slowcore 器樂 | 派→情緒薄格 mc46、md33（第 15 輪） |
+| md33 | 22121 | 冷 post-rock／器樂慢盤第三波＋冷 slowcore 器樂 | ✅ 上線 14／落格 12（2026-10-24；策展兩輪 37、主線汰 2、研究汰 21：鼓組／嘶吼、現場、EP、聲音不符；只剩無鼓 Nadja／drone 能收；出格 Locrian 判躁、Jasper TX《Singing Stones》判輕；場景見底，剩約 2–3 張，不再派） |
 | md34 | 22281 | funeral doom／drone doom 慢盤第二波（Esoteric、Evoken、Mournful Congregation、Skepticism、Thergothon 系） | 派→情緒薄格 mc47、md34（第 15 輪） |
 
 ## 冷冽 mc（躁＋輕＋冷；門檻 x ≥ 3.3、y ≤ +0.2、z ≤ −0.3）
@@ -194,7 +194,7 @@
 | mc43 | 21481 | 現代室內樂尖細二線（Kurtág、Holliger、Sciarrino、Rihm、Berio Sequenza、Saariaho 室內作） | ✅ 上線 36／落格 36（2026-10-24；策展 54＋補 12、主線汰 9＋7、研究汰 13＋1；稀疏極弱型、同作品池中已有、大編制、現場錄音汰；主場景見底，不再派） |
 | mc44 | 21801 | ESP-Disk／BYG Actuel 自由爵士二線（Frank Wright、Noah Howard、Giuseppi Logan、Burton Greene、Marion Brown 早期） | ✅ 上線 23／落格 19（2026-10-24；策展兩輪 36、研究汰 13（慢段判靜 4、暖／詼諧 4、借曲 3、厚編制 2）；出格 4 張四人以上全力合奏或低音簧管撐底判重落暴躁；主場景見底不再派） |
 | mc45 | 21881 | IDM／drill'n'bass 快而尖薄（Squarepusher、μ-Ziq、Bogdan Raczynski、Kid606 薄盤、Venetian Snares 薄盤） | ✅ 上線 2／落格 1（2026-10-24；策展兩輪 7、主線汰 1（盤名正規化為空）、研究汰 4（ambient 化 1、低頻 dub 1、失真兇猛鼓 1、零來源貼邊 1）；池中大名全判重／判暖、冷尖電子已被 mc6／mc7／mc33／mc15 收光，**死池，不再派**；General Magic 噪音拼貼判重落暴躁） |
-| mc46 | 22041 | 現代室內樂尖細第三波（Ferneyhough、Furrer、Haas、Neuwirth、Klangforum Wien／Ensemble Recherche 錄音） | 派→情緒薄格 mc46、md33（第 15 輪） |
+| mc46 | 22041 | 現代室內樂尖細第三波（Ferneyhough、Furrer、Haas、Neuwirth、Klangforum Wien／Ensemble Recherche 錄音） | ✅ 上線 13／落格 13（2026-10-24；策展兩輪 41、主線汰 9、研究汰 19：現場、大編制／電子、人聲抒情、稀疏極弱；主場景見底，剩約 0–2 張，不再派） |
 | mc47 | 22201 | 當代獨奏器樂尖細（Xenakis 獨奏作、Scelsi、Sciarrino 長笛、Berio Sequenza、Lachenmann 獨奏作） | 派→情緒薄格 mc47、md34（第 15 輪） |
 
 ## 恍惚 ml（靜＋重＋暖；門檻 x ≤ 2.7、y ≥ +0.8、z ≥ +0.3）

@@ -3513,4 +3513,13 @@ window.DipPreviewStatus = Object.freeze({
   "nurse with wound|deadlined": "unavailable",
   "slomo|the bog": "unavailable",
   "altar of flies|bortom reven": "unavailable",
+  "arditti quartet|rihm: streichquartette iii, viii, v": "unavailable",
+  "ensemble intercontemporain|xenakis: phlegra - jalons - keren - nomos alpha - thalleïn": "unavailable",
+  "ensemble 2e2m|donatoni: lumen - de près - l'ultima sera - fili - le ruisseau sur l'escalier - feria - still": "unavailable",
+  "nadja|thaumogenesis": "unavailable",
+  "black boned angel|verdun": "unavailable",
+  "nadja|corrasion": "unavailable",
+  "nadja|sky burial": "unavailable",
+  "nadja|bliss torn from emptiness": "unavailable",
+  "troum|autopoiesis": "unavailable",
 });

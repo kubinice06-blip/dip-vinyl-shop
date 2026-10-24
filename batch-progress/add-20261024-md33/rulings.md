@@ -89,3 +89,12 @@
 ## 主線審稿（22191–22192；2026-10-24）
 - 22191：逐張審 14 張（out-1 7、out-2 7），逐句對回研究稿；qa-batch out 全過、qa-check-research 兩檔各 0 標記、fix-spacing 0 補；正文無媒體名、無「據說／據傳」。抽核：Skin 首發 120 張 CD-R、2008 The End 重混加長至約 80 分（研究 a 維基）；Locrian CD 限量 1000 張、2009-02-10 上市與 Vulcan Materials 採礦路段（研究 a Discogs master 199566）；Verdun 51 分 55 秒單軌三樂章、中段只在 CD 版（研究 b Discogs、freq.org.uk）；Sky Burial 2009-09-01 Southern 一日錄成（研究 c）；Final 1984-07-07 The Mermaid 首演後定名（研究 e Discogs）；It Comes「約百分之一」只在 hook 出現一次。
 - 22192：逐張審過，未改字。核過保留：Thaumogenesis「整張沒有人聲」、Drenched「編制裡沒有鼓手」是編制事實（鉤子層 22175 已判），不算校對痕跡；Truth「被形容為慢燒」是聲音描述不是評價；Sky Burial 維基歸 EP，但 38 分、Discogs LP／Album、MB Album，照 MB 收；Bliss Torn 正文已寫明 2005 原 CD-R 與 2008 重錄版之別，試聽因此不配 2008 版。
+
+## 上線與評分（2026-10-24，主線）（條號 22193–22195）
+- **22193**：上線 14 張：card_catalog 14／14、KV 14 鍵回讀逐字一致（stamp 20261024r15）、試聽 8 ready／6 unavailable（Verdun、Corrasion、Sky Burial、Autopoiesis 在 Apple 查無；Bliss Torn 只有 2008 重錄版不配；Final 兩張 [untitled] 段逐段人工對上）、seed +14、prepare／published gate 0 error（14 warning 皆 UPC）。封面 CAA 11、Apple 3（Jasper TX ×2 CAA 404、Drenched Lands CAA 回 500），縮圖表目視相符。三軸用 worker 值。去重同 mc46。
+- **22194**：子曲風 warm-batch 14／14 有標籤；Locrian、thisquietarmy 推不出節點，補進 `genre-l3-artist-map.json`（`rock/metal/doom`、`electronic/ambient/drone`），類型樹 14／14 落位；抽卡封面重建。
+- **22195**：**落格率 12/14＝86%**（`batch-progress/mood-axes/score-md33/`，照 10-23 體感標準）。出格 2：Locrian《Drenched Lands》x 3.1 落暴躁（無鼓但失真音牆、嗥叫與回授噪音硬切，研究稿已點出「氛圍黑金屬硬切」——同型以後直接汰）；Jasper TX《Singing Stones》y 0.4 落平靜（玻璃琴、鋼琴、田野錄音的薄 drone，研究 b 已列輕度存疑）。Nadja《Skin Turns to Glass》z −0.2 貼邊仍在頹靡。
+- **場景剩餘潛力：見底。** 冷 post-rock 樂團本體在 md7／md31 已收光（二線一查都有鼓組或人聲）；本批策展兩輪 37、研究汰 21（鼓組／嘶吼 8、現場 5、EP 3、聲音不符 4、零證據 1）。策展代理估再挖 3–8 張（Nadja 其餘長篇、thisquietarmy、Troum 單名義盤），照六成汰換率淨增約 2–3 張，**md33 不再派**。md7＋md31＋md33 三波共上線 81 張。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Black Boned Angel、Jasper TX、Locrian、Nadja、thisquietarmy（5 位）；Final、Troum 已在 progress.json 排隊。已查 `data/artist-intros/`。

@@ -110,3 +110,12 @@
 ## 主線審稿（22111–22112；2026-10-24）
 - 22111：逐張審 13 張（out-1 7、out-2 6），逐句對回研究稿；qa-batch out 全過、qa-check-research 兩檔各 0 標記、fix-spacing 0 補；正文無媒體名、無「據說／據傳」。抽核：Gerhard 荀白克唯一的西班牙學生、2011-05 巴塞隆納 L'Auditori 錄音（研究 b）；Rihm 1990-11 錄音、團員 Arditti／Alberman／Knox／de Saram（研究 b）；Six Trios 1981–85 六首、1962 Krosnick／Sollberger／Wuorinen 創團（研究 c）；Zorn 2023 Oktaven 錄音、2025-01-17 出版（研究 d：MB 記 01-24，正文取廠牌日）；Xenakis《Jalons》EIC 十週年委託、三首合奏不用顫音（研究 e）；Donatoni《Feria》1982-09-24 Méfano 首演（研究 e）；Zimmermann 1969 慕尼黑錄音、1970 年辭世（研究 d）。
 - 22112：逐張審過，未改字。核過保留：Poppe hook「沒有一件傳統樂器」是編制事實；Zimmermann「錄音隔年，作曲家自盡」照 note 克制一句、標時序；Wuorinen《Scherzo…》第三句才點演奏者，照鉤子 22093 配表（掛名本來是作曲家）。
+
+## 上線與評分（2026-10-24，主線）（條號 22113–22115）
+- **22113**：上線 13 張：card_catalog 13／13、KV 13 鍵回讀逐字一致（stamp 20261024r15）、試聽 10 ready／3 unavailable（Rihm Montaigne、Xenakis Erato、Donatoni 2e2m 在 Apple 查無；Gerhard、Kagel、Davidovsky、Zimmermann、Zorn、Wuorinen 兩張逐軌人工對上，`preview-override.json`）、seed +13、prepare／published gate 0 error（13 warning 皆 UPC 盡力而為）。封面 CAA 8、Apple 5（Gerhard、Kagel、Davidovsky、Wuorinen ×2；CAA 404），27 張（含 md33）逐張 HTTP 200、縮圖表目視相符。古典三軸走 §0.7 錨點制（`ratings-override.json`）。寫 card_catalog／KV 前對 origin 近 12 個 `claude/*` 分支 seed 與 10-23／10-24 卡單去重 0 撞。
+- **22114**：子曲風 warm-batch 11 有標籤／2 空；類型樹 13／13 落位；抽卡封面重建。
+- **22115**：**落格率 13/13＝100%**（`batch-progress/mood-axes/score-mc46/`，照 10-23 體感標準）。評分 x 3.1–3.9、y −1.0～+0.3、z −1.8～−1.2；conf mid 6、low 7。貼邊：Zimmermann x 3.1（大提琴鋼琴長音對峙）、Poppe《Rundfunk》y 0.3（九台合成器、末章噪音）。研究層把現場、大編制／電子、人聲抒情、稀疏極弱的 18 張先汰掉是 100% 的主因。
+- **場景剩餘潛力：見底。** 策展兩輪 41 張、研究後只留 13；策展代理估主場景 0–2 張、擴寫場景（美國序列主義、東歐／北歐四重奏、日本尖細型）多偏靜偏暖或缺可核實原句與封面。mc32＋mc43＋mc46 三波共上線 80 張，現代室內樂尖細池已挖乾，**mc46 不再派**；冷冽若再開，只剩 mc47 獨奏器樂那一路。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Bernd Alois Zimmermann、Charles Wuorinen、Empyrean Ensemble、Ensemble 2e2m、JACK Quartet、Pascal Dusapin、The Group for Contemporary Music（7 位）；另 Ensemble intercontemporain、Quatuor Diotima、ensemble mosaik 已列在 mc43 名單、仍無介紹。已查 `data/artist-intros/` 與 progress.json。Arditti Quartet 已有介紹。

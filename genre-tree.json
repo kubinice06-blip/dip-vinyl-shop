@@ -5,7 +5,7 @@
   {
    "id": "rock",
    "zh": "搖滾",
-   "count": 5189,
+   "count": 5197,
    "children": [
     {
      "id": "indie-alt",
@@ -206,7 +206,7 @@
     {
      "id": "metal",
      "zh": "金屬",
-     "count": 720,
+     "count": 728,
      "children": [
       {
        "id": "trad",
@@ -219,6 +219,11 @@
        "count": 195
       },
       {
+       "id": "doom",
+       "zh": "厄運與粗厚",
+       "count": 140
+      },
+      {
        "id": "thrash",
        "zh": "鞭擊",
        "count": 134
@@ -227,11 +232,6 @@
        "id": "death",
        "zh": "死亡金屬",
        "count": 133
-      },
-      {
-       "id": "doom",
-       "zh": "厄運與粗厚",
-       "count": 132
       },
       {
        "id": "prog-metal",
@@ -635,27 +635,27 @@
   {
    "id": "electronic",
    "zh": "電子",
-   "count": 2811,
+   "count": 2817,
    "children": [
     {
      "id": "ambient",
      "zh": "Ambient / Drone",
-     "count": 1343,
+     "count": 1349,
      "children": [
-      {
-       "id": "dark-ambient",
-       "zh": "Dark Ambient",
-       "count": 383
-      },
       {
        "id": "drone",
        "zh": "Drone",
-       "count": 379
+       "count": 385
+      },
+      {
+       "id": "dark-ambient",
+       "zh": "Dark Ambient",
+       "count": 385
       },
       {
        "id": "idm",
        "zh": "偏 IDM",
-       "count": 256
+       "count": 257
       },
       {
        "id": "ambient-techno",
@@ -665,7 +665,7 @@
       {
        "id": "neoclassical",
        "zh": "偏現代古典",
-       "count": 100
+       "count": 101
       },
       {
        "id": "new-age",
@@ -677,17 +677,17 @@
     {
      "id": "techno",
      "zh": "Techno",
-     "count": 681,
+     "count": 682,
      "children": [
       {
        "id": "minimal",
        "zh": "Minimal",
-       "count": 322
+       "count": 323
       },
       {
        "id": "ambient-techno",
        "zh": "Ambient Techno",
-       "count": 291
+       "count": 292
       },
       {
        "id": "detroit",
@@ -808,17 +808,17 @@
     {
      "id": "idm",
      "zh": "IDM / Glitch",
-     "count": 444,
+     "count": 445,
      "children": [
       {
        "id": "ambient-idm",
        "zh": "Ambient IDM",
-       "count": 248
+       "count": 249
       },
       {
        "id": "glitch",
        "zh": "Glitch / Microsound",
-       "count": 187
+       "count": 188
       },
       {
        "id": "warp",
@@ -914,17 +914,17 @@
     {
      "id": "industrial",
      "zh": "Industrial / EBM",
-     "count": 303,
+     "count": 305,
      "children": [
       {
        "id": "dark-ambient",
        "zh": "Dark Ambient / Post-Industrial",
-       "count": 167
+       "count": 169
       },
       {
        "id": "power-electronics",
        "zh": "Power Electronics / 噪音",
-       "count": 105
+       "count": 106
       },
       {
        "id": "old-school",
@@ -946,17 +946,17 @@
     {
      "id": "noise",
      "zh": "實驗與噪音",
-     "count": 291,
+     "count": 293,
      "children": [
       {
        "id": "harsh",
        "zh": "Harsh Noise / 日本噪音",
-       "count": 218
+       "count": 220
       },
       {
        "id": "drone",
        "zh": "Drone / Dark Ambient",
-       "count": 180
+       "count": 182
       },
       {
        "id": "concrete",
@@ -966,7 +966,7 @@
       {
        "id": "glitch",
        "zh": "Glitch / Microsound",
-       "count": 66
+       "count": 67
       }
      ]
     },
@@ -1372,17 +1372,17 @@
   {
    "id": "classical",
    "zh": "古典",
-   "count": 1411,
+   "count": 1424,
    "children": [
     {
      "id": "contemporary",
      "zh": "當代與極簡",
-     "count": 625,
+     "count": 638,
      "children": [
       {
        "id": "avant",
        "zh": "前衛與現代",
-       "count": 202
+       "count": 213
       },
       {
        "id": "neoclassical",
@@ -1410,7 +1410,7 @@
     {
      "id": "modern",
      "zh": "20 世紀",
-     "count": 203,
+     "count": 206,
      "children": []
     },
     {
@@ -1434,7 +1434,7 @@
     {
      "id": "opera",
      "zh": "歌劇與聲樂",
-     "count": 58,
+     "count": 59,
      "children": []
     },
     {
