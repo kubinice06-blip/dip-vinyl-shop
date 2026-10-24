@@ -39,3 +39,21 @@
 - 22162：moodGuess 存疑強：Erik K Skodvin《Flare》實為未處理的鋼琴／大提琴／小提琴室內樂＋空房間錄音（Bandcamp 明寫放棄電子處理），不是吉他 drone 與電子；十首共 36 分鐘、曲短，會判輕風險高。Deaf Center《Low Distance》Passive Aggressive 與 Fluid Radio 皆稱較前作溫暖、平易近人、童話感，鋼琴為主軸，會判輕或偏暖；建議主線降權或汰換（池中《Owl Splinters》y 0.6 先例）。
 - 22163：moodGuess 存疑中：Troum《Seeing-Ear Gods》實為 2001 年 KFJC 電台現場錄音、2006 年 200 張 CDr，一軌六段 60 分鐘，Troum 官方 Bandcamp 目錄未列，可能無試聽來源。Robert Hampson《Signaux》全電子、一整面高頻嗶聲，質地偏冷輕、不一定夠重；Final《It Comes to Us All》評論用 incinerating fuzz，高頻嘶聲偏刺耳，有判躁疑慮（弱到中）。
 - 22164：Final《The Apple》與 Troum《Autopoiesis》預估大致可信（無鼓、drone）；Autopoiesis 缺單張樂評，標 thin，聲音靠 Troum 整體風格與 Discogs 資料。Norman Records、Force Exposure 原頁此環境 403 或空白，內容取自搜尋摘要轉述，寫作層勿逐字引。WebSearch 共用 3 次。
+
+## 研究 b 組
+- 22131：身分七張核對通過（MB／Discogs 對得上盤名、年份、廠牌），無推翻策展層。Nadja《Corrasion》卡單 2003 指原始 CD-R（Foreshadow，限量 200 張）；流通較廣的是 2007 重錄 CD（約 80 分，多三首）與 2009 LP，寫作層寫年份要標原始版本。
+- 22132：moodGuess 存疑強者：The Angelic Process《Weighing Souls With Sand》——Blabbermouth 明寫鼓「thunderous and tribal」且是節奏錨點，另有「lush keys」、PopMatters 的「aching melodies」，曲長 4–9 分鐘是一首首成形的歌，非 drone；有真鼓、有旋律、色溫偏暖，建議主線汰換或降權。
+- 22133：moodGuess 存疑中者：Locrian《Greyfield Shrines》實為 2007 年 11 月電台現場錄音，LP 兩面共約 28 分鐘，標籤含 noise／power electronics，無樂評可證全程低頻 drone；Black Boned Angel《Bliss and Void Inseparable》沒有可靠樂評（策展層引句出自使用者評論，原頁 403），有無鼓與噪音皆無證據，建議汰換首選。
+- 22134：moodGuess 輕度存疑：Jasper TX《The Black Sun Transmissions》〈Shores〉後半有 Mike Weis 的鼓、〈White Birds〉鋼琴與長號轉亮；《Singing Stones》樂器含玻璃琴、鋼琴、口風琴，末曲〈Mornings After〉有陽光感；Black Boned Angel《Verdun》終章砲火與機槍取樣加混亂噪音；Nadja《Corrasion》鼓機為推進，節拍強度無樂評。其餘預估大致可信。
+- 22135：Angelic Process 地點各來源矛盾（維基與 PopMatters 寫 Athens，Discogs 寫 Macon），facts 只寫「喬治亞州」。Kris Angylus 辭世只寫日期與年紀，專輯劇情結局未寫（逝者克制）；停擺屬「與作品綁定的最後一張」類。
+- 22136：多處樂評原頁（Metal Music Archives、Cyclic Defrost 原頁、Pitchfork、AllMusic、Chicago Tribune、Invisible Oranges）此環境 403／擋；引文改取 WebFetch 摘要、廠牌頁（Riot Season）與維基轉述，正文勿當成逐字直引。Locrian《Greyfield Shrines》的曲子同時是《Drenched Lands》CD bonus，兩卡正文避開同一段落（與 22125 呼應）。
+
+## 主線研究後汰換（不佔條號；2026-10-24）
+- 照 md28／md29 先例：**來源自己寫出鼓組推進、嘶吼／爆裂、溫暖或旋律清楚、乾淨鋼琴弦樂、現場、EP 長度的汰**；只是 thin 的留給評分驗收，零聲音證據又帶 noise 標籤的汰。**35 張汰 21**（存 `dropped-cards.json`／`dropped-research.json`）：
+  - 鼓組推進／嘶吼爆裂：Wrekmeister《You've Always Meant So Much to Me》（後段鼓組猛擊、嘶叫、失真牆，研究 a）、《Then It All Came Down》（黑金屬吉他、咆哮、鼓手 Noah Leger，研究 a）、Nadja《Bodycage》（鼓機主推進、樂評比 Godflesh《Pure》，研究 a）、《Sv》（「瘀青般的節拍洪流」、近 techno 重拍，研究 c）、《Labyrinthine》（Alan Dubin 嘶喊、白噪音，研究 c）、《Under the Jaguar Sun》（第一盤鼓與漸強、第二盤西塔琴與「天空般安詳」，研究 c）、thisquietarmy《Resurgence》（鼓機 space rock 律動、女聲小提琴歌曲，研究 c）、The Angelic Process（鼓「thunderous and tribal」、lush keys、aching melodies，研究 b）。
+  - 現場：thisquietarmy《Exorcisms》（教堂現場即興，研究 d）、Aidan Baker《Pure Drone》（2010 柏林現場，研究 d）、《At the Base of the Mind…》（四軌現場錄音再處理，研究 d）、Troum《Seeing-Ear Gods》（2001 KFJC 電台現場，研究 e）、Locrian《Greyfield Shrines》（2007 WHPK 電台現場 LP，研究 b）。
+  - EP 長度：thisquietarmy《Echotone》（3 首 21 分、Discogs／Bandcamp 稱 EP，研究 c）、Aidan Baker《Tense Surfaces》（數位 EP、鋼琴原聲吉他人聲，研究 d）、Main《Firmament》（22 分 EP、23 Skidoo 式打擊段，研究 d）。
+  - 聲音與預估不符／判輕判暖：EAR《Data Rape》（Speak & Spell 語音玩具拼貼、無吉他，研究 d）、Skodvin《Flare》（未處理鋼琴弦樂室內樂，研究 e）、Deaf Center《Low Distance》（樂評：更溫暖、更輕，鋼琴主軸，研究 e）、Hampson《Signaux》（全電子高頻嗶聲，研究 e）。
+  - 零聲音證據＋noise 標籤：Black Boned Angel《Bliss and Void Inseparable》（只有使用者評論，研究 b）。
+- 留 14（Nadja《Skin Turns to Glass》《Truth Becomes Death》《Thaumogenesis》《Corrasion》《Sky Burial》《Bliss Torn From Emptiness》、Locrian《Drenched Lands》、Black Boned Angel《Verdun》、Jasper TX ×2、thisquietarmy《Phantom Limbs》、Final ×2、Troum《Autopoiesis》）。輕度存疑（Nadja 鼓機極小、Verdun 終章砲火取樣、Jasper TX 鋼琴段、Final 刺耳 fuzz）交評分驗收。
+- **不補候補**：策展兩輪 37 已含場景剩餘大部分；策展代理估再挖 3–8 張，但研究汰換率六成，淨增約 2–3 張，場景見底。
