@@ -121,3 +121,17 @@
 ## 主線審稿（2026-10-23，雲端主線，20 張逐張讀過、對回 note 與研究稿）
 - **21311** `desc2:Mad Professor|Dub Me Crazy, Part 4: Escape to the Asylum Of Dub`：「那是 Leroy Wallace 的綽號，另兩位是…」→「Horsemouth 是 Leroy Wallace 的綽號，另兩位鼓手是…」（「那是」隔一句指回 hook，指涉不清；事實不變，研究稿 b 組 Discogs 鼓手欄 `Leroy "Horsemouth" Wallace`；字數 216→228）。
 - 其餘 19 張逐張審過，未改字。樂評句只留聲音描述（A Touch of Cloth 硬 funk 淡去與 dub 風貝斯線、My Favourite Letters 隱隱轟鳴與非洲式貝斯線、Amrita 催眠式 dub 樂句、Dub Me Tender「演奏得輕、像現場」為 hook 骨架依據保留）；Amrita「兩人第三張錄音室專輯」對回研究稿 c 組（第三張錄音室專輯、二人組）成立。qa-batch out、qa-check-research（兩檔標記 0）、fix-spacing（0）重跑全過。
+
+## 上線（不佔條號）
+- 上線 20：card_catalog 20/20、KV 20 鍵回讀逐字一致（stamp 20261023r13）、試聽 17 ready（Amrita、BLD Chapter 3、Clearvoiant Apple 不上架，unavailable）、seed +20、published gate 0 error（20 warning 為 upc 盡力而為）。
+- 封面：CAA 18、Apple 2（Fila《Jump Leads》CAA 無 front；Dub Colossus《Dub Me Tender》CAA 是 Society of Sound 數位版圖，ml40 先例改 Real World 官方 Apple 圖）；縮圖表逐張目視、live-check 全 200。上線前對 origin 95 個 `claude/*` 分支 seed＋他批卡單去重 0 撞。
+- 冷門軸：機器基線（listeners 24–147,341），無人工覆寫。
+- 類型樹：Last.fm 標籤 20/20；Alice Russell 落 soul 未分到細項，`genre-l3-artist-map.json` 補 `soul/neo-soul` 1。
+
+## 情緒評分與落格率（2026-10-24，`batch-progress/mood-axes/score-ml56/`）
+- 照 10-23 體感標準評分（conf mid 15、low 5）。**上線 20；落恍惚 19/20＝95%**。評分 x 1.5–2.8、y +0.6～+1.6、z −0.3～+1.2。出格 1 張：Peaking Lights《Clearvoiant》（1.9／+1.6／−0.3，lo-fi 磁帶 drone 與噪音、旋律不明判冷落頹靡）。z 貼 +0.1～+0.3 的有 Luxia、Brightwhitelight 等 ambient dub。
+- 八格（build-card-moods）：恍惚 1,618、頹靡 1,513、冷冽 1,507。
+- 產量：策展三輪 71、主線汰 22、研究汰 32 → 20。**暖 trip-hop 女聲二線是死池**：一查多是歌曲型（Sia、Neneh Cherry、Morcheeba 後期）、jungle／house 拍（Lamb《What Sound》、Skye）、原聲化（Lamb《5》、Rustin Man）或陰冷（Gibbons）；Pork／Tru Thoughts／Six Degrees 二線 downtempo 研究一查多標 breaks／house／funk（Fila 早期、Quantic、Gaudi、Aim、Heights of Abraham）。能穩收的是**池中已落恍惚的類比 dub 製作人目錄（Mad Professor《Dub Me Crazy》1980 年代、Black Liberation Dub 前期）**與 ambient dub（Sounds From the Ground、Dub Colossus dub 重製）。**ml56 不再派**。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Alice Russell、Loop Guru、Mad Professor、Peaking Lights、Kaya Project、Sounds From the Ground、Halftribe、Blundetto（8 個掛名）
