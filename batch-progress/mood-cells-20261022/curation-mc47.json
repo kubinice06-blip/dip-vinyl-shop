@@ -4,25 +4,25 @@
   {
    "id": "piano-solo",
    "zh": "當代無調鋼琴／鍵盤獨奏",
-   "count": 12,
+   "count": 16,
    "why": "Boulez／Stockhausen／Barraqué／Babbitt／Carter／Lachenmann 一路的序列與後序列鋼琴獨奏，點描、乾、旋律不明"
   },
   {
    "id": "strings-solo",
    "zh": "弦樂獨奏（小提琴／中提琴／大提琴）",
-   "count": 8,
+   "count": 10,
    "why": "Xenakis／Berio／Billone／Scelsi 等弦樂獨奏，刮擦、高把位、擴展技法"
   },
   {
    "id": "winds-solo",
    "zh": "管樂獨奏（長笛／單簧管／雙簧管／薩克斯）",
-   "count": 5,
+   "count": 9,
    "why": "Sciarrino／Berio／Lachenmann 一路的管樂獨奏，氣聲、鍵音、尖高音"
   },
   {
    "id": "other-solo",
    "zh": "打擊／大鍵琴／吉他等其他獨奏",
-   "count": 1,
+   "count": 3,
    "why": "大鍵琴、打擊、吉他的當代獨奏，乾尖"
   }
  ],
@@ -144,7 +144,7 @@
    "uncertain": ""
   },
   {
-   "artist": "Pi-Hsien Chen",
+   "artist": "Pi-Hsien Chen 陳必先",
    "album": "Boulez: Notations & Piano Sonatas",
    "composer": "Boulez",
    "year": 2005,
@@ -837,7 +837,455 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "原版 1982 Fore LP（Paralipomena 1），MB rg 首發記 1992 Etcetera；Ygghur 段落較慢，x 可能 3.2；低音弦 y 可能 0.2–0.3；CAA 無圖，用 Discogs"
+  },
+  {
+   "artist": "Maurizio Pollini",
+   "album": "Webern: Variationen op. 27 / Boulez: Sonate No. 2",
+   "composer": "Webern / Boulez",
+   "year": 1978,
+   "label": "Deutsche Grammophon",
+   "country": "de",
+   "faction": "piano-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Pollini 1978 年 DG 原版 LP：Boulez 第二號奏鳴曲（史上最暴烈的序列鋼琴曲之一）配 Webern 變奏曲的點描，尖銳緊繃、無調",
+   "moodGuess": {
+    "x": 3.8,
+    "y": -0.4,
+    "z": -1.7,
+    "why": "獨奏鋼琴，Boulez 猛烈急促音群，Webern 稀疏點描，乾，無調"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1311523",
+    "https://www.discogs.com/release/5298170"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Maurizio Pollini\" AND releasegroup:Variationen（只有 1986 CD 合輯 Pétrouchka/Prokofiev/Webern/Boulez，非本 LP）",
+     "artist:\"Maurizio Pollini\" AND release:Boulez（同上）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 無 1978 原版 LP 的 release-group（只收 1986 年加入 Stravinsky、Prokofiev 的 CD 合輯），改走人工身分"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1311523",
+    "https://www.discogs.com/release/5298170"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 只有 1986 合輯版（含 Pétrouchka、Prokofiev 7，偏調性）；試聽要擇 Boulez 曲目"
+  },
+  {
+   "artist": "Marc Ponthus",
+   "album": "Boulez: Complete Music for Solo Piano",
+   "composer": "Boulez",
+   "year": 2015,
+   "label": "Bridge Records",
+   "country": "us",
+   "faction": "piano-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Ponthus 的 Boulez 鋼琴獨奏全集（三首奏鳴曲、Notations、Incises、Une page d'éphéméride），剛硬急促，緊繃無調",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": -1.6,
+    "why": "獨奏鋼琴，序列音群急奏與猛擊，乾，無旋律"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/8226597",
+    "https://music.apple.com/us/album/boulez-complete-music-for-solo-piano/1525384001"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Marc Ponthus\" AND primarytype:album（查無）",
+     "artist:\"Marc Ponthus\"（release 查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 無此藝人與 release-group，改走人工身分"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/8226597",
+    "https://music.apple.com/us/album/boulez-complete-music-for-solo-piano/1525384001"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Elisabeth Chojnacka",
+   "album": "Clavecin 2000",
+   "composer": "Ligeti / Berio / Donatoni / Clementi / Constant / Finzi / Miroglio / Tisné",
+   "year": 1971,
+   "label": "Philips",
+   "country": "fr",
+   "faction": "other-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Philips「Prospective 21e Siècle」系列的當代大鍵琴獨奏經典（Ligeti Continuum、Berio Rounds、Donatoni Doubles），封底要聽者「全音量、全黑」聆聽，機械急奏、尖細金屬，緊繃無旋律",
+   "moodGuess": {
+    "x": 3.9,
+    "y": -1,
+    "z": -1.6,
+    "why": "大鍵琴獨奏，極快機械連奏、尖細撥弦，乾，無調"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1027400",
+    "https://www.discogs.com/release/929496",
+    "https://cageweb.be/catalog/orp01:000020824"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "release:\"Clavecin 2000\"（查無）",
+     "artist:\"Elisabeth Chojnacka\" AND primarytype:album（release-group 無本盤）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 無此 release-group，改走人工身分"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1027400",
+    "https://www.discogs.com/release/929496"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "首發年 Discogs 未標，Orpheus 圖書館目錄記 1971（附問號），研究層確認；Apple 未上架"
+  },
+  {
+   "artist": "Marino Formenti",
+   "album": "Lachenmann: Piano Music",
+   "composer": "Lachenmann",
+   "year": 2003,
+   "label": "col legno",
+   "country": "at",
+   "faction": "piano-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Formenti 的 Lachenmann 鋼琴作品集（Guero 刮鍵、Serynade 突擊後的共鳴、Ein Kinderspiel、Wiegenmusik、Echo Andante），擴展技法的乾冷緊繃",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.6,
+    "z": -1.8,
+    "why": "獨奏鋼琴，刮鍵、突強和弦後長共鳴、碎點，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c06987fa-2dd0-4bf4-980a-bd4a7208d5bb",
+    "https://www.discogs.com/release/1448986"
+   ],
+   "mbRgMbid": "c06987fa-2dd0-4bf4-980a-bd4a7208d5bb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Lachenmann 鋼琴盤池中評 x 3.0–3.3（Aimard 3.3、Lachenmann 自彈 3.0），Serynade 30 分鐘多共鳴留白，貼邊風險；CAA 無圖，用 Discogs"
+  },
+  {
+   "artist": "Elisabeth Kufferath",
+   "album": "Libero, fragile",
+   "composer": "Berio / Carter / Kurtág / Müller-Wieland",
+   "year": 2017,
+   "label": "Genuin",
+   "country": "de",
+   "faction": "strings-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Kufferath 一人兼拉小提琴與中提琴的獨奏盤：Berio Sequenza VIII 與 VI、Carter Mnemosyné／Figment IV、Kurtág Signs, Games and Messages，急奏顫音與刮弦，緊繃無調",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.9,
+    "z": -1.5,
+    "why": "小提琴／中提琴獨奏，Sequenza 的狂亂顫弓與雙音急奏，乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/30153686",
+    "https://music.apple.com/us/album/libero-fragile/1208153543"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Elisabeth Kufferath\"（release-group 查無）",
+     "release:\"Libero, fragile\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 無此藝人與 release-group，改走人工身分"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/30153686",
+    "https://music.apple.com/us/album/libero-fragile/1208153543"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Kurtág 小品組約 18 分偏輕柔"
+  },
+  {
+   "artist": "Noriko Kawai",
+   "album": "Dillon: The Book of Elements, Volumes I - V",
+   "composer": "Dillon",
+   "year": 2004,
+   "label": "NMC",
+   "country": "gb",
+   "faction": "piano-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Dillon 新複雜主義鋼琴大作 The Book of Elements 全五卷，河合紀子首錄，密集音群與共鳴爆裂交替，緊繃尖冷、旋律不明",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.7,
+    "why": "獨奏鋼琴，密集急奏與強烈音簇、共鳴碎響，乾，無調"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/1391207",
+    "https://music.apple.com/us/album/james-dillon-the-book-of-elements-vols-1-4/1025232464"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "releasegroup:\"Book of Elements\"（只有同名不同藝人 Kortofertos）",
+     "artist:\"James Dillon\" AND primarytype:album（無本盤）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 無此 release-group，改走人工身分"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/1391207",
+    "https://music.apple.com/us/album/james-dillon-the-book-of-elements-vols-1-4/1025232464"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 標題作 Vols. 1-4，Discogs 作 Volumes I - V，研究層核盤名"
+  },
+  {
+   "artist": "Anna Spina",
+   "album": "Aperghis / Grisey / Sciarrino / Zimmermann: Works for Viola Solo",
+   "composer": "Aperghis / Grisey / Sciarrino / Zimmermann",
+   "year": 2008,
+   "label": "NEOS",
+   "country": "de",
+   "faction": "strings-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "義大利中提琴家 Spina 的無伴奏當代曲目：Grisey Prologue、Aperghis Volte-face、Sciarrino Tre notturni brillanti、Zimmermann 奏鳴曲，泛音急奏與刮弦，緊繃無調",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.8,
+    "z": -1.7,
+    "why": "中提琴獨奏，泛音滑奏、急促顫弓與雙音嘶鳴，乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/3674547",
+    "https://www.discogs.com/release/5141184",
+    "https://music.apple.com/us/album/aperghis-grisey-sciarrino-zimmermann-works-for-viola-solo/765654147"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Anna Spina\"（MB 只有 Netti《Ciclo del ritorno》）",
+     "releasegroup:\"Works for Viola Solo\"（無本盤）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 無此 release-group，改走人工身分"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/3674547",
+    "https://music.apple.com/us/album/aperghis-grisey-sciarrino-zimmermann-works-for-viola-solo/765654147"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Sciarrino Ai limiti della notte 為極弱泛音型（約 9 分）；Discogs 盤名作 Works For Viola Solo，Apple 加作曲家前綴"
+  },
+  {
+   "artist": "Vinko Globokar",
+   "album": "Discours II / Sequenza V / Solo für Melodie-Instrument mit Rückkopplung / Consecuenza",
+   "composer": "Globokar / Berio / Stockhausen / Alsina",
+   "year": 1969,
+   "label": "Deutsche Grammophon",
+   "country": "de",
+   "faction": "winds-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "DG Avantgarde 系列：長號怪傑 Globokar 一人演出 Berio Sequenza V 首演者錄音、Stockhausen Solo（回授電子）、Alsina Consecuenza 與自作 Discours II（五支長號疊錄），擠壓、嘶吼、多音，緊繃刺耳",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0,
+    "z": -1.8,
+    "why": "長號獨奏，多音、喉音嘶吼、弱音器噴音，配回授電子，無旋律"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/865835",
+    "https://www.discogs.com/release/7293541",
+    "https://music.apple.com/us/album/globokar-discours-ii-berio-sequenza-v-stockhausen-solo/1692898279"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:Globokar AND releasegroup:\"Discours II\"（查無）",
+     "artist:\"Vinko Globokar\"（release-group 只有 Hallo Do You Hear Me、Eisenberg 等，無本盤）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 無此 release-group，改走人工身分"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/865835",
+    "https://music.apple.com/us/album/globokar-discours-ii-berio-sequenza-v-stockhausen-solo/1692898279"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs master 年 1968、主流版 1969；長號音色 y 可能 0.2–0.4；Discours II 為五軌疊錄（仍是同一演奏者）；盤名照 Discogs 主標"
+  },
+  {
+   "artist": "Robert Dick",
+   "album": "Ladder of Escape 5",
+   "composer": "Dick / Berio / Fukushima / Morris / Debussy / Asia",
+   "year": 1991,
+   "label": "Attacca",
+   "country": "nl",
+   "faction": "winds-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "擴展技法長笛宗師 Robert Dick 的 Attacca 獨奏卷：自作 Flames Must Not Encircle Sides、Flying Lessons 的多音與循環換氣，Berio Sequenza I、Fukushima Mei，尖嘯緊繃",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.9,
+    "z": -1.5,
+    "why": "長笛獨奏，多音、尖嘯、歌吹同時，急促碎句，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/13147c58-c627-49c8-8fb0-4918cc7fd5b5",
+    "https://www.discogs.com/release/4755906"
+   ],
+   "mbRgMbid": "13147c58-c627-49c8-8fb0-4918cc7fd5b5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "收 Debussy Syrinx（3 分）與 Daniel Asia 五支長笛疊錄曲；CAA 無圖，用 Discogs；Apple 未上架"
+  },
+  {
+   "artist": "Carin Levine",
+   "album": "Flutes Without Borders",
+   "composer": "Ferneyhough / Huber / Hosokawa / Pagh-Paan / Kawashima / Kurtág / Maderna / Reich",
+   "year": 1998,
+   "label": "Musicaphon",
+   "country": "de",
+   "faction": "winds-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "德國長笛家 Levine 的當代獨奏盤：Ferneyhough Cassandra's Dream Song 與 Carceri d'invenzione IIc、Pagh-Paan Dreisam-Nore、Huber、Kawashima，氣聲與尖高碎句，緊繃無調",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -1,
+    "z": -1.5,
+    "why": "長笛獨奏，氣聲、多音、急促尖高音，乾，無旋律"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/16148756",
+    "https://music.apple.com/us/album/flutes-without-borders/371625829"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "releasegroup:\"Flutes Without Borders\"（查無）",
+     "artist:\"Carin Levine\" AND primarytype:album（只有 Pagh-Paan、Scelsi 兩張）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 無此 release-group，改走人工身分"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/16148756",
+    "https://music.apple.com/us/album/flutes-without-borders/371625829"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "末軌 Reich Vermont Counterpoint（約 10 分）為調性極簡；Carceri IIc 有預錄帶"
+  },
+  {
+   "artist": "Eduard Brunner",
+   "album": "Dal niente",
+   "composer": "Lachenmann / Boulez / Stockhausen / Scelsi / Yun / Stravinsky",
+   "year": 1997,
+   "label": "ECM New Series",
+   "country": "de",
+   "faction": "winds-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "ECM 的單簧管獨奏盤：Lachenmann Dal niente（Intérieur III）的氣噪與鍵音、Boulez Domaines、Yun Piri、Stockhausen In Freundschaft，乾冷緊繃",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.9,
+    "z": -1.4,
+    "why": "單簧管獨奏，氣聲、尖高音與點描碎句，ECM 殘響略多"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c07c18a9-65be-4b14-805f-8590ffdd796d",
+    "https://coverartarchive.org/release-group/c07c18a9-65be-4b14-805f-8590ffdd796d/front"
+   ],
+   "mbRgMbid": "c07c18a9-65be-4b14-805f-8590ffdd796d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Stravinsky 三首小品與 Scelsi Preghiera per un'ombra 偏抒情慢；x 可能 3.1–3.3 貼邊"
+  },
+  {
+   "artist": "Elisabeth Chojnacka",
+   "album": "Clavecin d'aujourd'hui",
+   "composer": "Boucourechliev / Meyer / Clementi / Jolas / Ferrari",
+   "year": 1977,
+   "label": "Erato",
+   "country": "fr",
+   "faction": "other-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Chojnacka 委約的當代大鍵琴獨奏 LP（Boucourechliev Archipel V 兩版、Krzysztof Meyer 奏鳴曲、Clementi B.A.C.H.、Jolas Autour、Ferrari Musique socialiste?），乾硬撥弦急奏，緊繃無旋律",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -1,
+    "z": -1.5,
+    "why": "大鍵琴獨奏，尖細撥弦急奏與碎片，乾，無調"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/4303572",
+    "https://www.discogs.com/release/393420"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Elisabeth Chojnacka\" AND primarytype:album（release-group 無本盤）",
+     "release:\"Clavecin d'aujourd'hui\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 無此 release-group，改走人工身分"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/4303572",
+    "https://www.discogs.com/release/393420"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Ferrari Musique socialiste?（17 分）是否含其他聲源未查；Apple 未上架"
   }
  ],
- "notes": []
+ "notes": [
+  "交 38 張（目標 54，挖不到，不湊數）。主場景（Xenakis 獨奏／Scelsi／Sciarrino 長笛／Berio Sequenza／Lachenmann 獨奏）實際收 17 左右，其餘是可擴寫的序列與新複雜主義獨奏盤（Boulez、Stockhausen Klavierstücke、Barraqué、Carter、Ferneyhough、Dillon、Finnissy 系）。",
+  "主場景見底：Xenakis 獨奏錄音池中與 mc4／mc32／mc42／mc43 已收光（Takahashi、Thomopoulos、Aki Takahashi、Carneiro、Deforce、Arditti 四重奏）；剩下的多是打擊盤（Kuniko《IX》、Peter Sadlo《Rebonds》），池中 Carneiro Xenakis 打擊評 y 0.4，過不了 y ≤ 0.2 的邊距，沒提。Sciarrino 長笛只提 Caroli Vol. I，Vol. II 與 Kairos《Solo》（多人）未提；Sciarrino 小提琴 Capricci 型已被 mc40 擋過。Lachenmann 鋼琴盤（Roland Keller、Jonas Olsson 2025 全集）因池中評 x 3.0–3.3 貼邊未提，只提 Formenti 一張。估計主場景再挖頂多 3–5 張，且都是貼邊型。",
+  "未提的已查候選（原因）：mc4 已提過的 Jumppanen、Oppens《Oppens Plays Carter》、Taub《Babbitt》、Holzman《Wolpe》；Liebner《Stockhausen Klavierstücke》（VI、X 各 40 分鐘慢版）；Wambach Vol. III（XII–XIV 為 Licht 期人聲）；Kontarsky《Klavierstücke I-XI / Mikrophonie》（含合奏）；Vassilakis《Pierre Boulez und das Klavier》（兩張是訪談）；Orazbayeva《Outside》《Music for Violin Alone》（混古典、流行曲）；Aki Takahashi《Piano Space》（Takemitsu、Feldman、Cage 極弱段多）；Bucquet《Schönberg》（池中 Pollini Schoenberg 評 x 2.2）；Artaud《Ferneyhough Rencontre》（半張現場）；Fabbriciani《Flute XXI》（CD1 現場）；低音單簧管盤（Freedman《Excess》、Queirós《Time and Motion》、Sparnaay）判重；Uitti《2 Bows》（雙弓和聲長音）。",
+  "風險提醒：池中鋼琴獨奏 x 分歧大（Ferneyhough 鋼琴全集 2.7、Boulez Structures 2.7、Pollini Schoenberg 2.2，但 Thomopoulos Xenakis 4.4、Rosen Carter 3.4）。本批 16 張鋼琴盤，Stockhausen Klavierstücke 類（Henck、Corver、Bucquet、Wambach）與 Formenti 為 x 貼邊風險最高。大提琴與長號（Kooistra、Kociuban、de Saram、Uitti、Globokar）y 可能 0.2–0.4。",
+  "人工身分 14 張（MB 查無）：Arditti《Recital for Violin》、Cuckson、Caroli、Castro Magas、de Saram、Pollini 1978 LP、Ponthus、Chojnacka ×2、Kufferath、Kawai、Anna Spina、Globokar、Carin Levine；封面都在 Discogs／Apple。古典卡 artist 欄填演奏者、album 照池中「作曲家: 曲目」寫法；Pi-Hsien Chen 照池中既有掛名寫成「Pi-Hsien Chen 陳必先」。",
+  "WebSearch 用 1 次（查 Chojnacka《Clavecin 2000》首發年，Orpheus 圖書館目錄記 1971 附問號）。"
+ ]
 }
