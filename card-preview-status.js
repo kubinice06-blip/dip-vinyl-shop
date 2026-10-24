@@ -3481,4 +3481,11 @@ window.DipPreviewStatus = Object.freeze({
   "ernst-ludwig petrowsky quartet|just for fun": "unavailable",
   "itaru oki, michel pilz, ralf hübner|one year - afternoon & evening": "unavailable",
   "pierre favre trio|santana": "unavailable",
+  "éliane radigue|transamorem – transmortem": "unavailable",
+  "william fowler collins|the resurrections unseen": "unavailable",
+  "luigi archetti|null ii - null iii": "unavailable",
+  "mohammad|som sakrifis": "unavailable",
+  "nurse with wound|deadlined": "unavailable",
+  "slomo|the bog": "unavailable",
+  "altar of flies|bortom reven": "unavailable",
 });
