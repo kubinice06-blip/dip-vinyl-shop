@@ -84,3 +84,13 @@
 ## 主線補候補（不佔條號；2026-10-24）
 - 策展代理第二輪補 17（Niblock 長音 5、Radigue 2、Glacial Movements 4、其他 6；每張附 sourceQuote，原句與 why 掃過反例字眼 0；≥30 分）；主線再汰 3：MMMD《Pèkisyon Funebri》（文案 ghostly chants，人聲）、Niblock《Touch Works, for Hurdy Gurdy and Voice》（人聲長音素材）、Paul Schütze《The Mosaic of Starlight…》（gothic theatrics，x 風險；唯一人工身分卡）。`master-override-md32.json` 同時補登研究汰換的 23 張，`master-md32.json` 重建為 33。
 - 14 張以 `round: 2` 併入卡單、分到 a 3、b 3、c 3、d 3、e 2（卡單 33：a 5、b 6、c 8、d 8、e 6），派兩支補研究 append 進各組研究稿。重點核：《Four Walls Full of Sound》是否現場、Drumm《Trouble》／Radigue《Transamorem》／Machinefabriek y 偏薄、Arkbro 管風琴 z 回升。
+
+## 補研究（a、b 組追加）
+> round 2 六張（a：Niblock 三張；b：OPO、Radigue 兩張）。a 組區間 21961–21970 已全用完，無剩餘號，一律併入 b 組 21980 的子條（21980-a／b…）。
+- 21980-a：Niblock《Four Full Flutes》：1990 XI 101（Boomkat 2004 為重發）；全盤約 79 分鐘四首長笛微分音多軌疊錄，無鼓無噪音無旋律，文案無 warm。moodGuess 存疑：長笛質地柔亮，y 可能 0.7–1.0。
+- 21980-b：Niblock《G2,44+/x2》：實為吉他取樣 24 軌混音（Toral、Poss、Stenger、First），第二版再疊 Drumm、Ranaldo、Moore、Poss、Licht 的「live parts」；策展寫「器樂」不精確。Room40 重發文案有「warm sound-bath」，moodGuess 存疑：z -1 偏冷，建議列邊緣。
+- 21980-c：Niblock《Music for Organ》：兩首管風琴（24:07＋20:59），Boomkat「rolling low end」「pealing highs」「never-resolved tension」，無 warm／sacred 字眼；moodGuess 成立。
+- 21980-d：OPO《Four Walls Full of Sound》：**不是現場專輯**——Discogs 載錄音室 Re-Set Prague 2019/2020、Mathieu 混音母帶；僅起點為 2017 Ostrava Days 現場。60 分鐘單曲，團體信條 no melodies/rhythms/harmonies，Boomkat「bassy hums」「Nausea-inducing drones」；moodGuess 成立。
+- 21980-e：Radigue《Transamorem – Transmortem》：2011 Important 首次出版，1973 ARP 作品、1974 The Kitchen 首演；長度 Discogs 67:03 對 Brainwashed 77 分，採 Discogs；Brainwashed 摘要有「slow pulse」與 prickly 高頻（二手，原頁 404）。curatorWhy 的 Boomkat「最細微最靜止之一」句未在頁面找到，不採。moodGuess 存疑：y 偏薄（0.5–0.8）。
+- 21980-f：Radigue《Chry-ptus》：Schoolmap 2007 原版（Boomkat 是 2022 Important 重發）；Musique Machine 說 soothing drone、不規則循環事件隱約暗示節奏，低頻證據弱。moodGuess 存疑：y、z 偏薄偏暖；兩張 Radigue 汰一留一時留 Transamorem。
+- 21980-g：WebSearch 本任務共用了 4 次（補六張，超出每支 3 次上限 1 次），Discogs 直連 403 改走 api.discogs.com；Brainwashed 原頁與 Room40 Bandcamp／商店頁抓取失敗，已在各張 notes 的「未取得」註明。
