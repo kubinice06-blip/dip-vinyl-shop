@@ -10,25 +10,25 @@
   {
    "id": "touch",
    "zh": "Touch 系電聲 drone 二線",
-   "count": 10,
+   "count": 9,
    "why": "Touch 二線：合成器／電聲長音、工業暗色、低頻"
   },
   {
    "id": "room40",
    "zh": "Room40 系厚重 drone 二線",
-   "count": 9,
+   "count": 10,
    "why": "Room40 二線：低頻翻湧、回授長音、夜色音塊"
   },
   {
    "id": "miasmah-denovali",
    "zh": "Miasmah／Denovali 系黑色 drone",
-   "count": 4,
+   "count": 6,
    "why": "Miasmah／Denovali 二線：弓弦黑霧、扭曲吉他 drone"
   },
   {
    "id": "ext-cold",
    "zh": "外延：冷 drone／微聲（Glacial Movements、Hallow Ground、Type、Ash、Ideologic Organ）",
-   "count": 17,
+   "count": 27,
    "why": "場景外延：冰冷長音、低頻儀式 drone、暗色微聲"
   }
  ],
@@ -311,37 +311,6 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": ""
-  },
-  {
-   "artist": "UnicaZürn",
-   "album": "Transpandorem",
-   "year": 2017,
-   "label": "Touch",
-   "country": "gb",
-   "faction": "touch",
-   "genres": [
-    "electronic",
-    "ambient"
-   ],
-   "why": "UnicaZürn 第四張、首張 Touch 作，兩段無縫長曲把類比合成器 drone 拉成深度抽象的空間；無鼓、厚墊、偏冷",
-   "moodGuess": {
-    "x": 1.7,
-    "y": 1.2,
-    "z": -1.0,
-    "why": "無鼓，類比合成器長段 drone，厚墊偏冷"
-   },
-   "evidence": [
-    "https://musicbrainz.org/release-group/9fb932ad-0178-4791-aed3-9eb501ee1d63",
-    "https://coverartarchive.org/release-group/9fb932ad-0178-4791-aed3-9eb501ee1d63/front",
-    "https://boomkat.com/artists/unicazurn/releases/fuiavedf/transpandorem"
-   ],
-   "sourceQuote": "luring us into deeply abstracted ambient dimensions",
-   "mbRgMbid": "9fb932ad-0178-4791-aed3-9eb501ee1d63",
-   "mbAbsenceProof": null,
-   "manualEvidenceUrls": [],
-   "releaseException": "",
-   "queryAlias": "",
-   "uncertain": "Boomkat 文案只說 deeply abstracted，暗色證據偏弱"
   },
   {
    "artist": "Cleared",
@@ -1336,6 +1305,420 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "grimacing 可能帶刺耳段，x 偏高風險"
+  },
+  {
+   "artist": "Rose Kallal",
+   "album": "Perseus",
+   "year": 2017,
+   "label": "We Can Elude Control",
+   "country": "us",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "布魯克林影像與聲音藝術家 Rose Kallal 的合成器 drone 盤，「壓垮人的黑暗」「黏稠低頻翻湧與污濁大氣」；無鼓、極重、冷",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.7,
+    "z": -1.4,
+    "why": "無鼓，黏稠低頻翻湧與合成器長音，墨黑"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/83e1a395-4a3f-4d39-b897-d30a75cad333",
+    "https://coverartarchive.org/release-group/83e1a395-4a3f-4d39-b897-d30a75cad333/front",
+    "https://boomkat.com/artists/rose-kallal/releases/fdojflyf/perseus"
+   ],
+   "sourceQuote": "her crushingly dark Perseus album ... a formidable inky blacknuss of viscous low end roil and polluted atmospheres",
+   "mbRgMbid": "83e1a395-4a3f-4d39-b897-d30a75cad333",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "HEXA",
+   "album": "Material Interstices",
+   "year": 2021,
+   "label": "Room40",
+   "country": "au",
+   "faction": "room40",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Lawrence English 與 Xiu Xiu 的 Jamie Stewart 合組 HEXA 在 Room40 的第二張，「至今最陰鬱」：夢魘般的 Lynch 式長音與地震般的過載低鳴；無鼓、重、冷",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.8,
+    "z": -1.4,
+    "why": "無鼓，過載低鳴與夢魘長音，陰鬱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9a347804-69ef-4fab-b52b-ede500a137b0",
+    "https://coverartarchive.org/release-group/9a347804-69ef-4fab-b52b-ede500a137b0/front",
+    "https://boomkat.com/artists/hexa/releases/z51tm7f7/material-interstices"
+   ],
+   "sourceQuote": "their gloomiest slab to date - unfurling nightmarish Lynchian drones and seismic, overdriven rumbles that sound like a Thomas Köner and Wolf Eyes soundtrack",
+   "mbRgMbid": "9a347804-69ef-4fab-b52b-ede500a137b0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Wolf Eyes 的比喻暗示有噪音段"
+  },
+  {
+   "artist": "Nurse With Wound",
+   "album": "Deadlined",
+   "year": 2022,
+   "label": "United Dirter",
+   "country": "gb",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Steven Stapleton 與 Colin Potter、Andrew Liles 改寫 Otto Dov Kulka 的奧斯威辛回憶，「冥河般的暗色 ambient」「明明白白黑到底」；無鼓、厚、極冷",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.4,
+    "z": -1.6,
+    "why": "無鼓，暗色長音與具象聲響，陰森"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4a3250d1-88a8-42ce-aad9-8ac48b1bf854",
+    "https://coverartarchive.org/release-group/4a3250d1-88a8-42ce-aad9-8ac48b1bf854/front",
+    "https://boomkat.com/artists/nurse-with-wound/releases/ynwqyy4s/deadlined"
+   ],
+   "sourceQuote": "a signature tract of stygian dark ambient ... convey a clammy feeling of dread ... just explicitly dark as hell",
+   "mbRgMbid": "4a3250d1-88a8-42ce-aad9-8ac48b1bf854",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "NWW 偶有拼貼突兀段，x 可能偏高"
+  },
+  {
+   "artist": "Deathprod",
+   "album": "Compositions",
+   "year": 2023,
+   "label": "Smalltown Supersound",
+   "country": "no",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "挪威 Helge Sten 的 Deathprod 新作，回到《Treetop Drive》的路線，「幻覺般的暗色長音」「冰封的末日景觀」；無鼓、厚、冷",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.6,
+    "z": -1.4,
+    "why": "無鼓，暗色長音單色寬景，冰封"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/012084be-44f8-44a3-8ad6-a6304264c2c4",
+    "https://coverartarchive.org/release-group/012084be-44f8-44a3-8ad6-a6304264c2c4/front",
+    "https://boomkat.com/artists/deathprod/releases/i67cynsh/compositions"
+   ],
+   "sourceQuote": "Hallucinatory dark ambient drones ... extending a monochromatic, widescreen view of his frozen musical doomscape",
+   "mbRgMbid": "012084be-44f8-44a3-8ad6-a6304264c2c4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kaukolampi",
+   "album": "Inside the Sphere",
+   "year": 2023,
+   "label": "Optimo Music",
+   "country": "fi",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "K-X-P 主唱 Timo Kaukolampi 首張具名盤，「暗色 ambient 儀式」「幽閉恐懼」，RIYL Mika Vainio、The Haxan Cloak；合成器長音與留白，冷",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.3,
+    "z": -1.3,
+    "why": "幾乎無拍，暗色合成器長音與大片留白"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ba27726c-8a67-42c9-8c59-32c393134974",
+    "https://coverartarchive.org/release-group/ba27726c-8a67-42c9-8c59-32c393134974/front",
+    "https://boomkat.com/artists/kaukolampi/releases/m3sfewl2/inside-the-sphere"
+   ],
+   "sourceQuote": "Superlative dark ambient ritual and clandestine synth fantasy ... feelings of psychic manipulation and claustrophobia ... a dark dream topography of negative space",
+   "mbRgMbid": "ba27726c-8a67-42c9-8c59-32c393134974",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Optimo 廠牌，若有零星脈衝 x 會升"
+  },
+  {
+   "artist": "Helm",
+   "album": "Cryptography",
+   "year": 2013,
+   "label": "PAN",
+   "country": "gb",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Luke Younger 的 Helm 在 PAN 的代表作，「高密度 drone」「幽閉而拒人千里」「令人反胃的夢境暗色 ambient」；無鼓、厚、冷",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.5,
+    "z": -1.4,
+    "why": "無鼓，高密度長音與夢境暗色，幽閉"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cd9cbfa4-651a-435a-a4f7-fad72987f9cf",
+    "https://coverartarchive.org/release-group/cd9cbfa4-651a-435a-a4f7-fad72987f9cf/front",
+    "https://boomkat.com/artists/helm/releases/sxk3k2mx/cryptography"
+   ],
+   "sourceQuote": "Helm is all about Younger's fetish for high-density drone-work, and indeed Cryptography is as claustrophobic and forbidding ... queasy, oneiric dark ambient",
+   "mbRgMbid": "cd9cbfa4-651a-435a-a4f7-fad72987f9cf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Helm 偶有金屬刮擦，若明顯 x 會升"
+  },
+  {
+   "artist": "Richard Skelton",
+   "album": "The Old Thrawing Crux",
+   "year": 2024,
+   "label": "Aeolian Editions",
+   "country": "gb",
+   "faction": "miasmah-denovali",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Richard Skelton 直錄盤帶、磁帶幾乎損毀後救回的作品，離開招牌弓弦改走「不透明的大氣」與崩解電子，Boomkat 直指 Miasmah 系暗色 ambient；無鼓、糊、冷",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "無鼓，崩解電子與磁帶損傷的糊霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f5a41c60-4c71-49c9-8a9b-ba65e1c9d922",
+    "https://coverartarchive.org/release-group/f5a41c60-4c71-49c9-8a9b-ba65e1c9d922/front",
+    "https://boomkat.com/artists/richard-skelton/releases/cnhxnpqn/the-old-thrawing-crux",
+    "https://www.discogs.com/master/3704739-Richard-Skelton-The-Old-Thrawing-Crux-The-Preliminaries"
+   ],
+   "sourceQuote": "more atmospherically opaque material, characterised by disintegrated electronics ... If you're into the dark ambient of the Miasmah label, Ben Frost, Deaf Center",
+   "mbRgMbid": "f5a41c60-4c71-49c9-8a9b-ba65e1c9d922",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "文案也說 wistful，z 可能靠近 −0.4"
+  },
+  {
+   "artist": "Juv",
+   "album": "Juv",
+   "year": 2011,
+   "label": "Miasmah",
+   "country": "no",
+   "faction": "miasmah-denovali",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "挪威二人組 1996–98 年錄成、Miasmah 十四年後才發的首作，「帶荒涼 ambient 與實驗 doom 痕跡的暗黑金屬變體」，取樣極簡與抽象吉他；無鼓推進、重、冷",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.6,
+    "z": -1.3,
+    "why": "取樣極簡與抽象吉他長音，doom 般重而冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3ca10457-5783-45de-9f28-ed7129a60655",
+    "https://boomkat.com/artists/juv/releases/wr8hkcvp/juv",
+    "https://www.discogs.com/release/2740611-Juv-Juv"
+   ],
+   "sourceQuote": "a dark metal variant with strong traces of bleak ambient and experimental doom ... Sampler-derived minimalism, guitar abstraction and field recordings",
+   "mbRgMbid": "3ca10457-5783-45de-9f28-ed7129a60655",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "若有金屬式鼓段 x 會升"
+  },
+  {
+   "artist": "Slomo",
+   "album": "The Creep",
+   "year": 2005,
+   "label": "Fuck Off & Di",
+   "country": "gb",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Julian Cope 圈的 Slomo 的邪典「doombient」，Jhonn Balance 去世一週後錄下、後由 O'Malley 的 Ideologic Organ 重發，被視為英國版 Sunn O)))；極慢低頻長音，無鼓、極重、冷",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.9,
+    "z": -1.0,
+    "why": "無鼓，極慢的低頻長音牆，悶窒"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/77d7dab7-6bea-33e3-9bfa-4aa9c1c64adb",
+    "https://coverartarchive.org/release-group/77d7dab7-6bea-33e3-9bfa-4aa9c1c64adb/front",
+    "https://boomkat.com/artists/slomo/releases/m12dlsex/the-creep-c9c7b8",
+    "https://www.discogs.com/master/154080-Slomo-The-Creep"
+   ],
+   "sourceQuote": "Slomo's cult doombient classic 'The Creep' ... a leyline-powered and Coil-inspired British counterpart to Sunn O))) and SLEEP's choked-out sludge",
+   "mbRgMbid": "77d7dab7-6bea-33e3-9bfa-4aa9c1c64adb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "原盤 2005 CDr（Discogs），MB 首發 2006"
+  },
+  {
+   "artist": "Indignant Senility",
+   "album": "Plays Wagner",
+   "year": 2010,
+   "label": "Type",
+   "country": "us",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Pat Maherr 把華格納唱片放慢、沉進回聲的磁帶迴圈盤，Boomkat 稱「沉沒的回聲」「黑暗不安」，RIYL The Caretaker、Philip Jeck；無鼓、糊、冷",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.5,
+    "z": -0.9,
+    "why": "無鼓，放慢的華格納迴圈沉在回聲裡"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b54c8926-690f-425c-b2b8-acf68f31f5d4",
+    "https://boomkat.com/artists/indignant-senility/releases/3mgetnbu/plays-wagner",
+    "https://www.discogs.com/master/287476-Indignant-Senility-Plays-Wagner"
+   ],
+   "sourceQuote": "Classic, harrowing album of submerged echoes and Wagner loops creating a dark and unsettling listening experience",
+   "mbRgMbid": "b54c8926-690f-425c-b2b8-acf68f31f5d4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "華格納和聲若被聽出旋律 z 會升；屬可擴寫場景 (3) 冷 tape-loop"
+  },
+  {
+   "artist": "chra",
+   "album": "On a Fateful Morning",
+   "year": 2017,
+   "label": "Editions Mego",
+   "country": "at",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "維也納 Christina Nemec 的 chra 在 Mego 的第三張個人作，「詭異、低沉、中歐的低壓系統」，RIYL Lustmord、CMvH；無鼓、厚、冷",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.5,
+    "z": -1.3,
+    "why": "無鼓，低沉電子低壓系統，詭異"
+   },
+   "evidence": [
+    "https://boomkat.com/artists/chra/releases/mzvjzteo/on-a-fateful-morning",
+    "https://www.discogs.com/release/11180853-Chra-On-A-Fateful-Morning-"
+   ],
+   "sourceQuote": "trades in unheimlich, sonorous, central European depression systems ... RIYL Lustmord, Carl Michael Von Hausswolff",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "https://musicbrainz.org/ws/2/release-group?query=artist:\"chra\" AND releasegroup:\"On a Fateful Morning\"&fmt=json",
+     "https://musicbrainz.org/ws/2/release-group?query=releasegroup:\"On a Fateful Morning\"&fmt=json"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 無此 release-group（藝人方向與作品方向皆 0 筆）；Discogs 有 Editions Mego 2017 LP 條目與封面，走人工身分"
+   },
+   "manualEvidenceUrls": [
+    "https://boomkat.com/artists/chra/releases/mzvjzteo/on-a-fateful-morning",
+    "https://www.discogs.com/release/11180853-Chra-On-A-Fateful-Morning-"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 查無，走人工身分"
+  },
+  {
+   "artist": "Jim Haynes",
+   "album": "The Decline Effect",
+   "year": 2011,
+   "label": "Helen Scarsdale Agency",
+   "country": "us",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Jim Haynes 研究「生鏽」噪音與長音熵變的四段作品，「像蒸氣般可觸、寒徹骨的陰鬱長音」；無鼓、糊、冷",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.4,
+    "z": -1.3,
+    "why": "無鼓，鏽蝕電聲長音，寒"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/47f16bd1-74c7-4f5e-a077-8d0f7acedf9c",
+    "https://boomkat.com/artists/jim-haynes/releases/x8qxbjqd/the-decline-effect",
+    "https://www.discogs.com/master/368902-Jim-Haynes-The-Decline-Effect"
+   ],
+   "sourceQuote": "tangibly vapourous and acutely chilling tracts of glooming drone",
+   "mbRgMbid": "47f16bd1-74c7-4f5e-a077-8d0f7acedf9c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Altar Of Flies",
+   "album": "Bortom Reven",
+   "year": 2021,
+   "label": "iDEAL Recordings",
+   "country": "se",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "瑞典 Mattias Gustafsson 的 Altar of Flies 在 iDEAL 的第三張，「冰冷壓碎的電子與磁帶噪音」「荒涼抑鬱的氛圍」；無鼓、糊、冷",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.5,
+    "z": -1.4,
+    "why": "無鼓，壓碎電子與磁帶噪霧，抑鬱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f9bc5979-0db3-4601-a3cc-6d799ababe38",
+    "https://coverartarchive.org/release-group/f9bc5979-0db3-4601-a3cc-6d799ababe38/front",
+    "https://boomkat.com/artists/altar-of-flies/releases/vpwnvrme/bortom-reven"
+   ],
+   "sourceQuote": "Cold crushed electronics and tape noise ... conjuring bleakly depressive atmospheres",
+   "mbRgMbid": "f9bc5979-0db3-4601-a3cc-6d799ababe38",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "tape noise 若偏刺耳 x 會升"
   }
  ],
  "notes": []
