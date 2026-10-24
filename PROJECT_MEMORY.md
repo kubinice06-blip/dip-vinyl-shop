@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜Gonzalo Rubalcaba《Paseo》雀躍→放鬆
+
+- **改動**：店主指定。(3.3, −0.6, 0.6) → (2.6, −0.6, 0.6)。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/rulings.md`
+- **驗證**：`build-card-moods.mjs` 錨點 104/104 同格。
+
 ### 2026-10-24｜dip-vinyl-shop｜情緒薄格線第 15 輪派工（最後一輪）：店主「做完第 15 輪後暫停工作，盤點一下收了什麼」
 
 - **店主指示**：第 15 輪做完就停止派工，改做全線盤點。
