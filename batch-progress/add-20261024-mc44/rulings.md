@@ -11,3 +11,9 @@
 - 策展層選片規則：池中 tenor 火力盤判重（Frank Wright Trio y 1.2、Sunny Murray ESP 1.0、Ayler 0.7–1.2、Noah Howard《At Judson Hall》0.8），只收 alto／單簧管／小號／弦樂／顫音琴／鋼琴領軍的小編制；Lacy 池中 x 3.0–3.2 貼邊整批不提；Gato Barbieri ESP、《Uhuru Na Umoja》、《Sonny's Time Now》、《Orgasm》判重不提。
 - moodGuess 全過邊距（x 3.4–4.0、y −0.8～0.0、z −1.7～−0.9）。主線 36 張全收，交研究層重點核：現場與否（《Momente》柏林青年中心、ESP／BYG 現場多未標）、y 0.0 的三張（Simmons《Staying on the Watch》《Rumasuma》、Greene《Aquariana》、Gräwe《Pink Pong》）、x 3.4 貼邊（Berger《From Now On》、Brown《Why Not》）、旋律／借曲（Gumpert–Sommer《The Old Song》）。
 - 同人：Sonny Simmons ×3、Joachim Kühn ×3（含與 Rolf Kühn 合掛名）、NYAQ ×2、Marion Brown ×2——同一藝人無上限（2026-09-04 店主裁定），研究層汰換後再看。
+
+## 研究 e 組
+- 21841｜Santana（Pierre Favre Trio）：原始首發 1969 Pip PIP 1（錄 1968-10-08 蘇黎世），卡單 1979 是 FMP 再版／測試壓片年；研究層建議卡片年份改 1969，策展 curatorRisk「取首發年 1979」作廢。
+- 21842｜e 組四張皆非現場：Petrowsky、Gumpert–Sommer 為東德廣播電台錄音室（Discogs 記事）；Oki 三重奏只標 Recorded in Berlin（錄音室／現場未標，寫作層兩者都不寫）；Santana 只標 Zürich 錄音（未標現場）。
+- 21843｜四張皆無貝斯以外的電聲、無雙鼓、無 tenor 火力（Petrowsky 兼吹次中音但非主導）；無藍調、無標準曲；《The Old Song》借曲查無證據，facts 不寫借曲。
+- 21844｜moodGuess 存疑（交主線複核）：Gumpert–Sommer（曲目極短碎、曲名俏皮，x 3.7 可能偏高）、Oki–Pilz（富魯格號與長笛、B 面 12:50〈Warten Auf ...〉，x 3.5 可能偏低）、Favre Santana（來源無弓奏／鈸佐證）、Petrowsky（曲名玩笑感，聲音無法驗證）。四張皆無法聽音，僅憑編制與文字。
