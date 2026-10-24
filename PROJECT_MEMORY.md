@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 14 輪 ml58／mc45：roots reggae 人聲慢盤 28 張、IDM 2 張上線，落格 28/28、1/2
+
+- **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 14 輪＋「恍惚可以多增加一點 downtempo 與 dub」，本工作階段負責 ml58、mc45（評分照 10-23 體感標準）。ml58（`add-20261024-ml58`，恍惚）：Rod Taylor、Ras Michael & The Sons of Negus《Love Thy Neighbour》、Prince Alla、Junior Ross & The Spears、Noel Ellis、Seke Molenga & Kalo Kawongolo（Black Ark）、Peter Broggs ×2、Earl Sixteen《Reggae Sound》、Michael Prophet《Certify》、Triston Palma ×2、Jimmy Riley《Showcase》、Junior Keatting、Freddie McKay、Well Pleased & Satisfied、David Jahson、Cultural Roots、Junior Murvin《Muggers in the Street》、Flick Wilson、Wayne Wade、Sammy Dread《Roadblock》、Mwanamke Mwafrika、Aisha《Daughters of Zion》、Princess Sharifa、Shanti Yalah、Tetrack《Trouble》、Anthony Johnson。mc45（`add-20261024-mc45`，冷冽）：Jamie Lidell《Muddlin Gear》、General Magic《Rechenkönig》。
+- **策展→研究汰換**：ml58 策展 46（只收 Discogs 明寫 Tubby／Jammy／Scientist／Black Ark／Ariwa 混音的盤）、主線汰 3（池中同人判輕／DJ 盤）、研究汰 15（Bunny Lee／Revolutionaries 亮 rockers、無混音 credit 的歌曲盤、重混／數位化、拉丁 ska 拼貼）→ 28，主場景見底。mc45 策展兩輪只 7（池中大名全判重／判暖，冷尖電子已被 mc6／mc7／mc33／mc15 收光）、主線汰 1（DOS Tracks《:)》盤名正規化為空）、研究汰 4（ambient 化、低頻 dub、失真兇猛鼓、零來源貼邊）→ 2，**死池不再派**。
+- **主線審稿**：ml58 改 2 張 3 處（Tetrack hook「Pablo 缺錢」→「Pablo 的廠牌缺錢」並同步 hooks-e、壓字；Murvin「那一年」指涉錯位）；mc45 未改字。存 `desc-override.json`。
+- **上線**：card_catalog 28＋2、KV 30 鍵回讀逐字一致（stamp 20261024r14）、試聽 21＋1 ready（9 張配 Apple 重發／改名版）、seed +30、published gate 兩批 0 error；封面 CAA 15、Discogs 15（registry → 443），live-check 全 200、縮圖表目視相符。上線前對 origin 所有 `claude/*` 分支 seed 與並行批卡單去重 0 撞。
+- **情緒評分**：`score-ml58`、`score-mc45`。**ml58 落恍惚 28/28（100%）**、**mc45 落冷冽 1/2（50%）**（General Magic 噪音拼貼 y 0.6 落暴躁）。八格（合併 main 前）：恍惚 1,658、頹靡 1,541、冷冽 1,521。
+- **類型樹**：`genre-l3-artist-map.json` 補 world/reggae/roots 8、electronic/idm/glitch 1，30/30 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 24 位列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261024-{ml58,mc45}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml58,mc45}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml58,mc45}/`、`onboarding-manifest-add-20261024-{ml58,mc45}-20261024.json`、`desc-tools/batches/*/add-20261024-{ml58,mc45}*`、`data/discogs-cover-registry.json`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 30/30；build-card-moods gate exit 0。
+
 ### 2026-10-24｜dip-vinyl-shop｜情緒薄格線第 14 輪派工（補兩個）：優先序 70–73
 
 - **起因**：第 13 輪兩個工作階段收工（ml56 20／19、mc42 13／13、ml57 12／12、md30 28／28，上線／落格；ml57、md30 主場景見底），mc43／md31 仍在跑。恍惚 1,630、頹靡 1,541、冷冽 1,520。

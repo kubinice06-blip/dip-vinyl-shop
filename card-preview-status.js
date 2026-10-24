@@ -3469,4 +3469,11 @@ window.DipPreviewStatus = Object.freeze({
   "argyre planitia|tenth region of the night": "unavailable",
   "tho-so-aa|epoch, part 1": "unavailable",
   "jamie lidell|muddlin gear": "unavailable",
+  "noel ellis|noel ellis": "unavailable",
+  "peter broggs|rastafari liveth!": "unavailable",
+  "jimmy riley|showcase": "unavailable",
+  "freddie mckay|tribal inna yard": "unavailable",
+  "mwanamke mwafrika|african woman abroad": "unavailable",
+  "aisha|daughters of zion": "unavailable",
+  "anthony johnson|i'm ready": "unavailable",
 });

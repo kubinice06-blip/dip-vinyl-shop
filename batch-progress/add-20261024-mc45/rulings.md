@@ -42,3 +42,11 @@
 
 ## 主線審稿（21951；2026-10-24）
 - **21951** 逐張審 2 張（全文對研究稿 a、c 組逐句核）：Lidell 生年地、雙目錄號、發行日、聲音描述（啟停濾波、延遲電視取樣、高低傳真游移、13 軌擁擠，皆研究 a 組 facts，未掛來源、未帶評價字眼）；General Magic 二人組成員、合創 Mego（維基列三位創辦人，「兩人合創」不排他，成立）、MEGO 032、26 首、首曲〈I Love You〉、風格標籤。逐張審過，未改字；媒體名、榜單、「據說／評者」0。
+
+## 上線與評分（2026-10-24，主線）（條號 21952–21954）
+- **21952**：上線 2 張：card_catalog 2／2、KV 2 鍵回讀逐字一致（stamp 20261024r14）、試聽 1 ready（General Magic）／1 unavailable（Lidell 無 Apple 條目）、seed +2、prepare／published gate 0 error。封面 CAA 1、Discogs 1（General Magic 14949），live-check 200、目視相符。去重同 ml58（0 撞）。
+- **21953**：頂點：2 張 uncommon，列一般卡。類型樹：`genre-l3-artist-map.json` 補 electronic/idm/glitch 1。
+- **21954**：**落格率 1/2＝50%**（`batch-progress/mood-axes/score-mc45/`）：Lidell (3.3, 0.4, −1.1) 落冷冽；General Magic (3.2, 0.6, −1.6) 噪音拼貼判重落暴躁。**IDM／drill'n'bass 不是冷冽的池子**：池中大名全判重或判暖，二線判暖或旋律清楚，冷尖電子已被 mc6／mc7／mc33／mc15 收光；研究再擋「ambient 化」「低頻 dub」「失真兇猛鼓」。mc45 不再派；冷冽之後續派自由爵士／現代古典類。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Jamie Lidell、General Magic（2 位）
