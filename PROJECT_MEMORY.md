@@ -1,5 +1,29 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 15 輪（最後一輪）mc46／md33：現代室內樂尖細 13 張、無鼓 drone／doomgaze 14 張上線，落格 13/13、12/14，兩場景見底
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 15 輪（全線最後一輪，做完暫停盤點），本工作階段負責 mc46、md33（評分照 10-23 體感標準）。mc46（`add-20261024-mc46`，冷冽）：Quatuor Diotima《Fuentes》、ensemble mosaik《Poppe: Rundfunk》、Arditti Quartet《Rihm》《Gerhard》《Kagel》、Empyrean《Davidovsky: Salvos》、Group for Contemporary Music《Wuorinen: Six Trios》、Charles Wuorinen《Scherzo…》、Zimmermann《Présence…》、JACK Quartet《Zorn: Complete String Quartets》、EIC《Xenakis: Phlegra…》、Dusapin、Ensemble 2e2m《Donatoni》。md33（`add-20261024-md33`，頹靡）：Nadja ×6（Skin Turns to Glass、Truth Becomes Death、Thaumogenesis、Corrasion、Sky Burial、Bliss Torn From Emptiness）、Locrian《Drenched Lands》、Black Boned Angel《Verdun》、Jasper TX ×2、thisquietarmy《Phantom Limbs》、Final ×2、Troum《Autopoiesis》。
+- **策展→研究汰換**：mc46 策展兩輪 41、主線汰 9、研究汰 19（現場、大編制／電子／打擊、人聲抒情、稀疏極弱）→ 13；古典卡掛名照 §0.7 全改成演奏者｜「作曲家: 標題」。md33 策展兩輪 37、主線汰 2（Terrestrials 撞池）、研究汰 21（鼓組／嘶吼、現場、EP、聲音不符）→ 14。
+- **主線審稿**：兩批 27 張逐張審過，未改字（紀錄在兩批 rulings「主線審稿」段）。
+- **上線**：card_catalog 27、KV 27 鍵回讀一致（stamp 20261024r15）、試聽 18 ready／9 unavailable、seed +27；`genre-l3-artist-map.json` 補 Locrian（rock/metal/doom）、thisquietarmy（electronic/ambient/drone）；類型樹、抽卡封面、mood 重建。
+- **落格**：mc46 冷冽 13/13（100%）；md33 頹靡 12/14（86%，Locrian 判躁、Jasper TX《Singing Stones》判輕）。併 main（含 mc47／md34）後：**頹靡 1,636、冷冽 1,589**（恍惚 1,686）。
+- **剩餘潛力（店主盤點用）**：mc46 現代室內樂尖細見底（約 0–2 張；mc32＋mc43＋mc46 共 80 張）；md33 冷 post-rock／無鼓 drone 見底（約 2–3 張；md7＋md31＋md33 共 81 張）。兩列不再派。
+- **新藝人（無介紹，未切）**：12 個掛名，列在兩批 rulings 末尾。
+- **主要檔案**：`batch-progress/add-20261024-{mc46,md33}/`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261024-{mc46,md33}*`、`batch-progress/mood-axes/score-{mc46,md33}/`、`seed_cards.json`、`batch-progress/mood-cells-20261022/SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`。
+- **驗證**：qa-batch research／hooks／out 全過、qa-check-research 0、prepare／published gate 0 error（UPC warning）、KV 回讀 27/27、封面 27 張 HTTP 200 目視相符、build-card-moods 寫入成功。
+### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 15 輪（最後一輪）mc47／md34：當代獨奏器樂 15 張、funeral doom 38 張上線，落格 15/15、38/38
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 15 輪（全線最後一輪，做完暫停盤點），本工作階段負責 mc47、md34（評分照 10-23 體感標準）。md34（`add-20261024-md34`，頹靡）：Esoteric ×2、Evoken ×4、Mournful Congregation ×2、Skepticism ×3、Thergothon、Shape of Despair ×2、Worship ×2、Ahab、Tyranny ×2、Bell Witch ×4、Catacombs、Colosseum、Aldebaran、Asunder、Nortt ×3、Dolorian ×3、Comatose Vigil、Moss ×2、Asva、Ommadon。mc47（`add-20261024-mc47`，冷冽）：Henck《Barraqué》《Stockhausen I-XI》、Helffer／Biret／陳必先／Ponthus 的 Boulez、Woodward《Barraqué》、Arditti《Recital》、Derome《Solo》、Pace《Tracts》、Wambach《Stockhausen vol. II》、Castro Magas《Shrouded Mirrors》、Pollini《Webern／Boulez》、Chojnacka 大鍵琴 ×2。
+- **策展→研究汰換**：md34 策展 54、主線汰 9、研究汰 7（blast beat／中速／偏亮／零聲音來源）→ 38；md3 以 10-22 舊規則汰掉的 4 張照體感標準重收，全落頹靡。mc47 策展 38（主場景見底）、主線汰 7（極弱、低音弦、調性曲）、研究汰 16（非純獨奏、低音樂器、抒情／靜段占大段）→ 15。
+- **主線審稿**：md34 改 1 處（Bell Witch《Longing》單源誇張評價句）；mc47 改 3 處（Derome 軌序、Woodward 單源讚語、Henck 評論家獎）。存各批 `desc-override.json`。
+- **上線**：card_catalog 38＋15、KV 38＋16 鍵回讀逐字一致（stamp 20261024r15）、試聽 28＋9 ready、seed +53、prepare／published gate 兩批 0 error；封面 md34 CAA 38，mc47 CAA 6／Apple 4／Discogs 5（registry → 454）。上線前對 origin 近 40 條 `claude/*` 分支 seed＋並行批卡單去重 0 撞。
+- **情緒評分**：`score-md34b`（`score-md34/` 是 md3／md4 舊目錄，另開）、`score-mc47`。**md34 落頹靡 38/38、mc47 落冷冽 15/15（皆 100%）**。八格（併 main 後，含 mc44／md32）：恍惚 1,686、頹靡 1,624、冷冽 1,576。
+- **場景潛力盤點**：funeral doom 二線約還能挖 20–30 張（Wormphlegm、Profetus、Until Death Overtakes Me、Remina、Officium Triste、Saturnus 等）；當代獨奏器樂見底（剩 3–5 張全貼邊）。
+- **類型樹**：`genre-l3-artist-map.json` 新增 `classical/contemporary/avant`（Roger Woodward），53/53 落位；抽卡封面重建。
+- **藝人介紹**：未切（並行規矩）；新藝人 28 位列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261024-{md34,mc47}/`、`batch-progress/mood-cells-20261022/{curation,master}-{md34,mc47}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{md34b,mc47}/`、`onboarding-manifest-add-20261024-{md34,mc47}-20261024.json`、`desc-tools/batches/*/add-20261024-{md34,mc47}*`、`data/discogs-cover-registry.json`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 54/54；build-card-moods 錨點 104/104、gate exit 0。
+
 ### 2026-10-24｜dip-vinyl-shop｜頻率光譜搜尋結果上限 8→50 筆
 
 - **改動**：店主問 Miles Davis 在卡池為何這麼少（實際 50 張，含兩代五重奏），原因是頻率光譜搜尋只列前 8 筆。店主定「改成 50 筆」：`findCards` 上限改 50（清單本來可捲動、封面 lazy），`dip-tune.js?v=14`。

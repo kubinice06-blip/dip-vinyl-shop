@@ -5,7 +5,7 @@
   {
    "id": "rock",
    "zh": "搖滾",
-   "count": 5197,
+   "count": 5235,
    "children": [
     {
      "id": "indie-alt",
@@ -206,7 +206,7 @@
     {
      "id": "metal",
      "zh": "金屬",
-     "count": 728,
+     "count": 766,
      "children": [
       {
        "id": "trad",
@@ -216,22 +216,22 @@
       {
        "id": "alt-metal",
        "zh": "另類與新金屬",
-       "count": 195
+       "count": 196
       },
       {
        "id": "doom",
        "zh": "厄運與粗厚",
-       "count": 140
+       "count": 176
+      },
+      {
+       "id": "death",
+       "zh": "死亡金屬",
+       "count": 138
       },
       {
        "id": "thrash",
        "zh": "鞭擊",
        "count": 134
-      },
-      {
-       "id": "death",
-       "zh": "死亡金屬",
-       "count": 133
       },
       {
        "id": "prog-metal",
@@ -241,7 +241,7 @@
       {
        "id": "black",
        "zh": "黑金屬",
-       "count": 81
+       "count": 85
       }
      ]
     },
@@ -1372,17 +1372,17 @@
   {
    "id": "classical",
    "zh": "古典",
-   "count": 1424,
+   "count": 1439,
    "children": [
     {
      "id": "contemporary",
      "zh": "當代與極簡",
-     "count": 638,
+     "count": 647,
      "children": [
       {
        "id": "avant",
        "zh": "前衛與現代",
-       "count": 213
+       "count": 221
       },
       {
        "id": "neoclassical",
@@ -1410,13 +1410,13 @@
     {
      "id": "modern",
      "zh": "20 世紀",
-     "count": 206,
+     "count": 217,
      "children": []
     },
     {
      "id": "classical-era",
      "zh": "古典時期",
-     "count": 142,
+     "count": 144,
      "children": []
     },
     {
