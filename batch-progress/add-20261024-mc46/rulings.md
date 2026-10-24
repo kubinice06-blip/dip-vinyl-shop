@@ -92,3 +92,21 @@
 - 22098　古典卡開頭兩句交代作曲家與演奏者；第二句句型配表（避開 a–c 的國籍居住地、作曲獎、流派標籤、生年出生地、移居年份、職位、創團年地、獲獎年齡，與 mc43 的「答案是」）：d1 代表作領句（《Die Soldaten》）＋三位演奏者、d2 廠牌領句（Tzadik）＋JACK、e1 樂團週年領句＋Boulez／Tabachnik、e2 演奏者領句同句帶出作曲家（Nahon／Ars Nova、1955 生於南錫）、e3 曲名領句（《Feria》）＋2e2m／Méfano。「他／她」：Zorn 只 d2；Boulez 只 e1；Kontarsky 已上架《Mantra》卡寫兩兄弟，d1 只列名不展開。媒體名、樂評名次與 Alex Ross 引語、ClassicsToday 評語一律未派。
 - 22099　日期：「日」後一字只有 d2「17 日出」一處，其餘只寫到年或月（尺 `/[年月]\s*\d{1,2}\s*日(.)/`）。hook 間中文 4-gram（13 張）0 條；hook 對已上架首兩句的殘片改掉 e1「從頭到尾」「三首都是」、e2「不碰電子」、e3「想出來的」、d1「三位樂手」，剩下只有樂器名／編制詞（「琴與鋼琴」「首四重奏」「五支小號」）。hook 與自身 note 無逐字重複（d1 原稿 note 重述「不開口的表演者」已拿掉）。
 - 22100　`node qa-batch.mjs hooks add-20261024-mc46` 全部通過；`node chk-hook-crossgroup.mjs add-20261024-mc46`（5 組 13 張）全部通過（只報不擋：e1「沒有可辨的節拍」為內容，非校對痕跡）。
+
+## 寫作層（writer-1）
+- 22101　交件 `desc-tools/batches/output/add-20261024-mc46-out-1.json` 7 張（a1–a2、b1–b3、c1–c2，key 逐字同序）。字數：full 4 張 219–232（Poppe 219、Rihm 230、Gerhard 232、Six Trios 232）；thin 3 張 149–179（Fuentes 149、Kagel 159、Davidovsky 179）。初稿只有 Davidovsky 182 超 thin 上限，整格縮掉「著一條」壓回 179；其餘一次落帶。
+- 22102　古典卡開頭兩句交代作曲家與演奏者：7 張的第二句都同時具名作曲家與演奏者（Kagel、Gerhard、Rihm 原稿演奏者落在第三句，動筆前改併進第二句）。第二句領句全照 note 指派（國籍居住地／作曲獎／流派標籤／生年出生地／移居年份／職位／創團年地）。Rihm 卡 hook 已帶 1994 與作曲家在場，正文不重述：錄音寫「1990 年 11 月」、發行只寫廠牌 Montaigne（不再寫年）。
+- 22103　媒體名與名次 0 處；「據說／據傳／據」0 處；「這張專輯」開頭 0；否定句只有 hook 原文（Poppe「沒有一件傳統樂器」，寫作層不改 hook）。Davidovsky 的「無詞聲線」寫成「唱無詞的聲線」，不用否定式。Six Trios 研究稿「被稱為」照 note 寫成「號稱」；Wuorinen 生年、普立茲不寫（歸 c3）。
+- 22104　發行句一張一種：於年讓它上架（Fuentes）／在年把它發行（Poppe）／發行廠牌是（Rihm，無年）／年把它出版（Gerhard）／隔年出版（Kagel，以「1989 年的科隆錄音」領句）／的發行年是（Davidovsky）／年首發、年改由重發（Six Trios）。避開「作曲家」身分詞：Rihm 改「這位德國人」、Six Trios 用「作曲者」、Fuentes 用「墨西哥出身」。
+- 22105　自掃（han() 4-gram，本檔 7 張＋out-2 已交 6 張＋hooks）：3 次以上 0 條（拆掉「號四重奏」×3、「德國作曲」×2、「第一號四」、「四重奏與」）；剩 2 次的「弦樂四重奏」「首四重奏」屬編制詞，「的德國人」（Poppe 對 Zimmermann）2 張。`qa-batch out` 全過、`qa-check-research` 標記 0、`fix-spacing` 待補 0。輔助腳本 `/tmp/claude-0/-home-user-dip-vinyl-shop/30a7f113-23a7-50b2-be1a-c590c700daef/scratchpad/wr-mc46-1/`（gen／scan-mc46-1.py）。
+
+## 寫作層（writer-2）
+- 22106　交件 `desc-tools/batches/output/add-20261024-mc46-out-2.json` 6 張（全 full）：Wuorinen《Scherzo…》236、Zimmermann 236、JACK《Zorn》230、EIC《Xenakis》233、Dusapin 232、2e2m《Donatoni》237。初稿兩張超標（Wuorinen 242、Zimmermann 257），整格捨去：Zimmermann 三位演奏者改用 note 給的姓（Gawriloff、Palm、Aloys Kontarsky），「這兩批錄音」縮成「兩批」；Wuorinen 收錄句縮短，並更正初稿「Serkin 與 Brentano 一起拉奏」（Serkin 是鋼琴）為「合奏」。`qa-batch out`、`qa-check-research`、`fix-spacing` 全過；「據」0 處；媒體名與榜單名次 0 處。
+- 22107　第二句全照鉤子層配表：Wuorinen 獲獎年齡領句（32 歲普立茲）、Zimmermann 代表作領句（《Die Soldaten》）＋三位演奏者、Zorn 廠牌領句（Tzadik）＋JACK、Xenakis 樂團週年領句＋Boulez（Tabachnik 第三句）、Dusapin 演奏者領句同句帶出作曲家、Donatoni 曲名領句＋Méfano（2e2m 第三句）。古典卡開頭兩句都同時交代作曲家與演奏者（Wuorinen 掛名作曲家，第三句點 Serkin／Martin／Brentano）。
+- 22108　Zimmermann 身後事照 note 一句、克制、標時序：放在 1969 錄音句與 1979 另錄句之間，寫成「錄音隔年，作曲家自盡。」，不寫日期、地點與病因。
+- 22109　跨兩檔合掃（han() 4-gram）：途中拆掉「國作曲家」×3（美國／德國／法國作曲家，含 out-1 Rihm 卡）→ Wuorinen 改「美國人」、Dusapin 改「法籍作曲家」、Zimmermann 改「來自德國」；「是年生於」×2（Dusapin／Donatoni，後者改成名字後另起「1927 年生於維洛納」）；「支小號加」（Dusapin 改「配」，另一端是 e3 hook）；「號四重奏」×3 與跨句黏合「第一號四」（Wuorinen 改「四重奏第一號」並換掉下一句句首）；「件室內樂」×2；「的德國人」×2（與 out-1 同時往同方向躲撞出，整個名詞拿掉）。定稿 2 張以上只剩「首四重奏」「弦樂四重奏」類編制詞（其一端是 d2 hook）。
+- 22110　Xenakis 卡「沒有可辨的節拍」照 note 與鉤子層 22100 判定為聲音內容保留。Dusapin 的〈天堂篇〉照 note 只寫但丁，不補《神曲》。輔助腳本 `/tmp/claude-0/-home-user-dip-vinyl-shop/30a7f113-23a7-50b2-be1a-c590c700daef/scratchpad/wr-mc46-2/gen-mc46-w2.py`（產稿＋字數＋跨兩檔 4-gram）。
+
+## 主線審稿（22111–22112；2026-10-24）
+- 22111：逐張審 13 張（out-1 7、out-2 6），逐句對回研究稿；qa-batch out 全過、qa-check-research 兩檔各 0 標記、fix-spacing 0 補；正文無媒體名、無「據說／據傳」。抽核：Gerhard 荀白克唯一的西班牙學生、2011-05 巴塞隆納 L'Auditori 錄音（研究 b）；Rihm 1990-11 錄音、團員 Arditti／Alberman／Knox／de Saram（研究 b）；Six Trios 1981–85 六首、1962 Krosnick／Sollberger／Wuorinen 創團（研究 c）；Zorn 2023 Oktaven 錄音、2025-01-17 出版（研究 d：MB 記 01-24，正文取廠牌日）；Xenakis《Jalons》EIC 十週年委託、三首合奏不用顫音（研究 e）；Donatoni《Feria》1982-09-24 Méfano 首演（研究 e）；Zimmermann 1969 慕尼黑錄音、1970 年辭世（研究 d）。
+- 22112：逐張審過，未改字。核過保留：Poppe hook「沒有一件傳統樂器」是編制事實；Zimmermann「錄音隔年，作曲家自盡」照 note 克制一句、標時序；Wuorinen《Scherzo…》第三句才點演奏者，照鉤子 22093 配表（掛名本來是作曲家）。
