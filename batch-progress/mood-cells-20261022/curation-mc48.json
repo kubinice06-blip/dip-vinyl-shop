@@ -1,0 +1,1820 @@
+{
+ "group": "mc48",
+ "factions": [
+  {
+   "id": "uptown-quartet",
+   "zh": "美國 uptown 弦樂四重奏",
+   "count": 10,
+   "why": ""
+  },
+  {
+   "id": "uptown-solo",
+   "zh": "美國 uptown 獨奏／二重奏",
+   "count": 25,
+   "why": ""
+  },
+  {
+   "id": "uptown-chamber",
+   "zh": "美國 uptown 室內樂團與小編制合集",
+   "count": 13,
+   "why": ""
+  },
+  {
+   "id": "ext-postserial",
+   "zh": "擴寫：後序列／新複雜與同型室內作",
+   "count": 2,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "The Group for Contemporary Music",
+   "album": "Babbitt: Soli e Duettini",
+   "year": 1996,
+   "label": "Koch International Classics",
+   "country": "us",
+   "faction": "uptown-chamber",
+   "genres": [
+    "classical"
+   ],
+   "why": "Wuorinen／Sollberger 創立的 GCM 錄 Babbitt 晚期獨奏與二重奏（Melismata、Whirled Series、None but the Lonely Flute），uptown 序列主義最典型的室內聲響；短促跳躍的點描音型讓神經一直繃著，小編制、高音域、無調",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.6,
+    "z": -1.5,
+    "why": "長笛、小提琴、薩克斯等獨奏與二重奏，序列點描，乾、尖、無旋律主線"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/78177ac4-2e4e-4934-9b6d-be402f28574e",
+    "https://www.discogs.com/release/2943289",
+    "https://www.discogs.com/master/3131622"
+   ],
+   "mbRgMbid": "78177ac4-2e4e-4934-9b6d-be402f28574e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB rg 首發記 2006 Naxos 8.559259，其實是 1996 Koch 3-7335-2 的再版（Discogs 2943289），年份取 1996；封面 CAA 404，用 Discogs 圖。與 mc46《Quatrains / Soli e duettini…》（Bridge 9135）只共用〈Soli e duettini〉一曲、不同錄音"
+  },
+  {
+   "artist": "The Fine Arts Quartet",
+   "album": "Babbitt: Quartet no. 3 / Wuorinen: String Quartet",
+   "year": 1972,
+   "label": "Turnabout",
+   "country": "us",
+   "faction": "uptown-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Vox/Turnabout「The Contemporary Composer in the USA」系列：Babbitt 第三號與 Wuorinen 第一號四重奏同張，uptown 兩代掌門人並置；四聲部各自跳動、音域大幅跳躍，緊繃尖細",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": -1.6,
+    "why": "弦樂四重奏，十二音序列的密集交錯音型，尖、乾，沒有可唱旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/db1c64e3-6c23-3b54-bcd6-5f122daca958",
+    "https://www.discogs.com/master/3206967",
+    "https://www.discogs.com/release/3157244"
+   ],
+   "mbRgMbid": "db1c64e3-6c23-3b54-bcd6-5f122daca958",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面 CAA 404，用 Discogs 圖；1991 Music & Arts CD-707 有數位修復再版（同錄音）"
+  },
+  {
+   "artist": "Mari Asakawa",
+   "album": "Carter / Babbitt: The Flow of Music: Piano Works of Carter & Babbitt",
+   "year": 2018,
+   "label": "Centaur",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Carter 晚期鋼琴作（Night Fantasies、90+、Two Diversions、Two Thoughts）配 Babbitt〈Post-Partitions〉〈Overtime〉，美國現代主義鋼琴核心曲目的新錄音；多層速度互相拉扯、音型破碎，緊繃而乾",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "鋼琴獨奏，Night Fantasies 與晚期小品的急促多層速度，乾、尖，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d6a7cf10-07a3-43dd-b0d9-6f2ae342ad53",
+    "https://coverartarchive.org/release-group/d6a7cf10-07a3-43dd-b0d9-6f2ae342ad53/front"
+   ],
+   "mbRgMbid": "d6a7cf10-07a3-43dd-b0d9-6f2ae342ad53",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "曲目與池中 Rosen／Choi／mc4 Oppens 的 Carter 鋼琴盤重疊，但為不同演奏者不同錄音"
+  },
+  {
+   "artist": "Benjamin Hudson & Garrick Ohlsson",
+   "album": "Wuorinen: Works for Violin and Piano",
+   "year": 1988,
+   "label": "Bridge",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Bridge 早期 Wuorinen 專輯：Speculum Musicae 小提琴手 Hudson 與 Ohlsson 錄 1969–1983 的小提琴作品（Duo、Violin Variations、Fantasia 等），uptown 器樂炫技的代表；小提琴高音域刮擦式快速句與鋼琴硬擊，緊繃尖細",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.5,
+    "z": -1.4,
+    "why": "小提琴與鋼琴，無調高音域碎片與猛烈對擊，乾、尖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b69a6605-5058-33de-8a7b-94d84dc6afd1",
+    "https://www.discogs.com/release/8011465"
+   ],
+   "mbRgMbid": "b69a6605-5058-33de-8a7b-94d84dc6afd1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面 CAA 404，用 Discogs 圖"
+  },
+  {
+   "artist": "Jeffrey Swann",
+   "album": "Wuorinen / Boulez: Second Sonata / Troisième Sonate pour piano",
+   "year": 1993,
+   "label": "Music & Arts",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Wuorinen 第二鋼琴奏鳴曲（1976）配 Boulez 第三奏鳴曲兩種版本，美國 uptown 與歐陸序列主義鋼琴對照；大跳音程、急停急起，緊繃而乾",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.5,
+    "why": "鋼琴獨奏，序列鋼琴奏鳴曲，密集跳躍、乾硬觸鍵，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4f8cb675-c9aa-4d14-aade-6351d8c3613b",
+    "https://coverartarchive.org/release-group/4f8cb675-c9aa-4d14-aade-6351d8c3613b/front"
+   ],
+   "mbRgMbid": "4f8cb675-c9aa-4d14-aade-6351d8c3613b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Boulez 第三奏鳴曲在 mc47 Boulez 鋼琴盤（Helffer／Biret／Chen／Ponthus）出現過，此為不同演奏者不同錄音"
+  },
+  {
+   "artist": "Elizabeth Chang",
+   "album": "Kirchner / Sessions / Schoenberg: Transformations",
+   "year": 2021,
+   "label": "Albany",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Sessions 晚期《Solo Sonata》（1953，無伴奏小提琴）與小提琴大提琴二重奏、Kirchner《Duo no. 2》、Schoenberg《Phantasy》，美國現代主義小提琴曲目一張收齊；獨奏小提琴的尖細高音與無調雙音讓聽感一路緊繃",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.6,
+    "z": -1.3,
+    "why": "小提琴獨奏與二重奏為主，無調、刮擦高音，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/60c8fea0-f8b5-441c-9b6a-96b1daf2a873",
+    "https://www.discogs.com/release/28574584",
+    "https://coverartarchive.org/release-group/60c8fea0-f8b5-441c-9b6a-96b1daf2a873/front"
+   ],
+   "mbRgMbid": "60c8fea0-f8b5-441c-9b6a-96b1daf2a873",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Sessions《Solo Sonata》第三樂章 Adagio e dolcemente 約 9 分鐘偏抒情；全盤約 54 分鐘"
+  },
+  {
+   "artist": "Juilliard String Quartet",
+   "album": "Lerdahl / Martino: First String Quartet / String Quartet",
+   "year": 1987,
+   "label": "CRI",
+   "country": "us",
+   "faction": "uptown-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Juilliard 四重奏為 CRI 錄 Martino 弦樂四重奏（1983）與 Lerdahl 第一號，uptown 波士頓—普林斯頓一系的四重奏寫法；Martino 樂章標示「焦慮」「極急板」，聲部尖銳交錯、神經一路繃著",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": -1.5,
+    "why": "弦樂四重奏，Martino 的 Ansioso／Prestissimo 尖銳碎裂，乾，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a289afe3-76f4-40de-ba0d-e75c7975dd44",
+    "https://www.discogs.com/release/10897399"
+   ],
+   "mbRgMbid": "a289afe3-76f4-40de-ba0d-e75c7975dd44",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面 CAA 404，用 Discogs 圖"
+  },
+  {
+   "artist": "Orion String Quartet",
+   "album": "Kirchner: Complete String Quartets",
+   "year": 2008,
+   "label": "Albany",
+   "country": "us",
+   "faction": "uptown-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Leon Kirchner（Schoenberg 與 Sessions 的學生）四首弦樂四重奏全集，第一號曾獲紐約樂評人獎、第三號獲普立茲；表現主義的急躁爆發與尖銳對位，緊繃不安",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.3,
+    "why": "弦樂四重奏，表現主義式無調、急促爆發，乾、尖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3d7cb766-e967-4a01-b1bb-9711dd05485f",
+    "https://www.discogs.com/release/25613608",
+    "https://coverartarchive.org/release-group/3d7cb766-e967-4a01-b1bb-9711dd05485f/front"
+   ],
+   "mbRgMbid": "3d7cb766-e967-4a01-b1bb-9711dd05485f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "第三號（1966）原為弦樂四重奏加電子磁帶，約 16 分鐘（全盤約 62 分鐘），需確認本錄音的電子比重；第一號有兩個 Adagio 樂章"
+  },
+  {
+   "artist": "The Group for Contemporary Music",
+   "album": "Druckman: String Quartets nos. 2 & 3 / Reflections on the Nature of Water / Dark Wind",
+   "year": 1998,
+   "label": "Koch International Classics",
+   "country": "us",
+   "faction": "uptown-chamber",
+   "genres": [
+    "classical"
+   ],
+   "why": "GCM 錄 Jacob Druckman 的兩首弦樂四重奏（第三號為其最後作品）、馬林巴獨奏《Reflections on the Nature of Water》與小提琴鋼琴《Dark Wind》；四重奏的尖銳刮奏與快速撥弦、木琴的乾脆擊音，都落在高音域、緊繃",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.5,
+    "z": -1.4,
+    "why": "弦樂四重奏為主，加馬林巴獨奏與小提琴鋼琴，無調、尖細、乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d1797d52-e6b9-49c1-a01e-17e5009b7c7b",
+    "https://www.discogs.com/master/1416576",
+    "https://coverartarchive.org/release-group/d1797d52-e6b9-49c1-a01e-17e5009b7c7b/front"
+   ],
+   "mbRgMbid": "d1797d52-e6b9-49c1-a01e-17e5009b7c7b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "馬林巴獨奏約 15 分鐘（全盤約 65 分鐘），打擊比重約四分之一；2006 Naxos 8.559260 為再版"
+  },
+  {
+   "artist": "The Composers Quartet",
+   "album": "Carter: String Quartets nos. 1 & 2",
+   "year": 1970,
+   "label": "Nonesuch",
+   "country": "us",
+   "faction": "uptown-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Composers Quartet（Matthew Raimondi 領軍）為 Nonesuch 錄 Carter 第一、二號四重奏，第二號為普立茲獲獎作、這是 1970 年代流傳最廣的錄音；四聲部各自的速度與性格互相衝撞，神經一直被拉緊",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": -1.6,
+    "why": "弦樂四重奏，四聲部各自速度互相衝撞，尖、乾，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5f7cd3c7-0901-49ac-91ca-fe8986a765b2",
+    "https://www.discogs.com/master/371405",
+    "https://www.discogs.com/release/1567215"
+   ],
+   "mbRgMbid": "5f7cd3c7-0901-49ac-91ca-fe8986a765b2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Juilliard《Elliott Carter: String Quartets》、mc32/mc43 Arditti／Pacifica 都有第一、二號，此為不同錄音；封面 CAA 404，用 Discogs 圖"
+  },
+  {
+   "artist": "New Music Concerts Ensemble",
+   "album": "Carter: Mosaic / Dialogues (100th Anniversary Release)",
+   "year": 2008,
+   "label": "Naxos",
+   "country": "ca",
+   "faction": "uptown-chamber",
+   "genres": [
+    "classical"
+   ],
+   "why": "Robert Aitken 的多倫多 New Music Concerts 為 Carter 百歲錄晚期室內作（Mosaic、Scrivo in vento、Gra、Enchanted Preludes、Steep Steps、Figments、Rhapsodic Musings）；短小獨奏與二重奏為主，音型尖細跳躍、彼此打斷",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.5,
+    "z": -1.4,
+    "why": "Carter 晚期小編制與獨奏，豎琴、長笛、單簧管、大提琴碎片，乾、尖、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/73701f16-d341-3cfd-86eb-afaf1b6c4eb8",
+    "https://www.discogs.com/master/1783367",
+    "https://coverartarchive.org/release-group/73701f16-d341-3cfd-86eb-afaf1b6c4eb8/front"
+   ],
+   "mbRgMbid": "73701f16-d341-3cfd-86eb-afaf1b6c4eb8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "盤名照 MB 為《Elliot Carter: 100th Anniversary Release》（MB 拼作 Elliot），提交名需主線照 MB 正名定；末曲《Dialogues》為鋼琴加室內樂團約 14 分鐘；附 DVD。Figment 兩首為大提琴獨奏（約 10 分鐘）"
+  },
+  {
+   "artist": "Fred Sherry String Quartet",
+   "album": "Schoenberg: String Quartets nos. 3 & 4 / Phantasy for Violin with Piano Accompaniment",
+   "year": 2010,
+   "label": "Naxos",
+   "country": "us",
+   "faction": "ext-postserial",
+   "genres": [
+    "classical"
+   ],
+   "why": "Schoenberg 移居美國後的十二音四重奏第四號（1936，洛杉磯）與第三號、晚年《Phantasy》，Fred Sherry（Speculum Musicae 創團大提琴手）四重奏與 Rolf Schulte 演出——uptown 序列主義的源頭；聲部稠密交纏、無調而尖",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -1.3,
+    "why": "十二音弦樂四重奏，密集對位、急促爆發，乾，無可唱旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/47adf044-2bc5-4464-9b99-7869e0781e76",
+    "https://www.discogs.com/release/6910716",
+    "https://coverartarchive.org/release-group/47adf044-2bc5-4464-9b99-7869e0781e76/front"
+   ],
+   "mbRgMbid": "47adf044-2bc5-4464-9b99-7869e0781e76",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "擴寫場景（Schoenberg 為奧地利裔美國人，uptown 源頭）；第三號、第四號各有一個 Adagio／Largo 慢章；池中 Schoenberg 卡皆非此作"
+  },
+  {
+   "artist": "Speculum Musicae",
+   "album": "Martino / Wuorinen: Notturno / Speculum Speculi",
+   "year": 1974,
+   "label": "Nonesuch",
+   "country": "us",
+   "faction": "uptown-chamber",
+   "genres": [
+    "classical"
+   ],
+   "why": "Speculum Musicae 為 Nonesuch 錄的招牌盤：Martino《Notturno》（1974 普立茲獎）與 Wuorinen 為該團寫的《Speculum Speculi》，uptown 室內樂團聲響的定本；長笛、單簧管、弦樂與鋼琴的點描碎片高速交錯，緊繃尖細",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.5,
+    "z": -1.5,
+    "why": "六到七人室內樂團，無調點描、尖銳管樂與鋼琴碎片，乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/842228",
+    "https://www.discogs.com/release/7068189",
+    "https://en.wikipedia.org/wiki/Donald_Martino"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Speculum Musicae\"（MB 6 個 release group，無此盤）",
+     "releasegroup:\"Speculum Speculi\" / releasegroup:\"Notturno\" AND artist:Martino（只有 1995 Albany 精選 c9840b9c）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 無 1974 Nonesuch H-71300 原盤條目，走人工身分"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/842228",
+    "https://www.discogs.com/release/7068189",
+    "https://en.wikipedia.org/wiki/Donald_Martino"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面用 Discogs 圖（release 7068189）"
+  },
+  {
+   "artist": "Speculum Musicae",
+   "album": "Lieberson / Wuorinen / Shifrin: A Fifteenth Anniversary Album",
+   "year": 1985,
+   "label": "Bridge",
+   "country": "us",
+   "faction": "uptown-chamber",
+   "genres": [
+    "classical"
+   ],
+   "why": "Speculum Musicae 創團十五週年在 Bridge 出的 LP：Lieberson《Lalita (Chamber Variations)》、Wuorinen《Spinoff》、Shifrin《The Nick of Time》，三位 uptown 作曲家為該團寫的作品；尖細管弦與鋼琴快速碎片、緊繃不歇",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -1.4,
+    "why": "室內樂團，Lieberson 變奏、Shifrin《The Nick of Time》，無調尖銳、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/7041964",
+    "https://www.discogs.com/artist/754130-Speculum-Musicae"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Speculum Musicae\"（MB 6 個 release group，無此盤）",
+     "releasegroup:\"Fifteenth Anniversary\"（只有無關的 Tamarack／Blue Highway）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 無 Bridge BDG 2005 條目，走人工身分"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/7041964",
+    "https://www.discogs.com/artist/754130-Speculum-Musicae"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 只有 LP 版（Bridge BDG 2005），第二證據只找到 Discogs 藝人頁，主線可再補廠牌頁；封面用 Discogs 圖；Wuorinen《Spinoff》編制待查"
+  },
+  {
+   "artist": "JACK Quartet",
+   "album": "Eckardt: Passage",
+   "year": 2024,
+   "label": "Kairos",
+   "country": "us",
+   "faction": "ext-postserial",
+   "genres": [
+    "classical"
+   ],
+   "why": "Ferneyhough 一路的美國新複雜作曲家 Jason Eckardt 的四重奏《Passage》（2011–18）與鋼琴五重奏《pulse-echo》，JACK 四重奏與 Jason Hardink 錄音室演出；極密的節奏層疊與高音域刮奏，讓人坐立不安",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.5,
+    "z": -1.5,
+    "why": "弦樂四重奏與鋼琴五重奏，新複雜式密集碎裂音型，尖、乾、無調"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/31609837",
+    "https://www.kairos-music.com/cds/0022028kai"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Jason Eckardt\"（MB 只有 Subject、Out of Chaos、Carter/Sessions/Eckardt）",
+     "releasegroup:Passage AND artist:Eckardt（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 無 2024 Kairos 0022028KAI 條目，走人工身分"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/31609837",
+    "https://www.kairos-music.com/cds/0022028kai"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "擴寫場景（美國新複雜一代）；池中 Eckardt 只有 Ensemble 21《Out of Chaos》與 Cuckson 合輯；封面用 Kairos 頁或 Discogs 圖"
+  },
+  {
+   "artist": "Robert Helps / Paul Zukofsky & Charles Wuorinen",
+   "album": "Sessions / Wuorinen: Piano Sonata No. 3 / Duo for Violin and Piano",
+   "year": 1971,
+   "label": "Acoustic Research",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Sessions 晚期十二音《Piano Sonata No. 3》（1965，Helps 首演者演出）與 Wuorinen 自彈、Zukofsky 拉的《Duo》，uptown 兩代的鋼琴與小提琴作；大跳音程與硬觸鍵、高音小提琴碎句，緊繃",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -1.5,
+    "why": "鋼琴獨奏與小提琴鋼琴二重奏，序列無調、尖銳跳躍、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/1434807",
+    "https://en.wikipedia.org/wiki/Robert_Helps"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Roger Sessions\" browse（MB 15 個 release group，無此 LP）",
+     "releasegroup:\"Piano Sonata No. 3\" AND artist:Sessions（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/1434807",
+    "https://en.wikipedia.org/wiki/Robert_Helps"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "掛名：兩面演奏者不同，照 §0.7 可改掛作曲家「Roger Sessions / Charles Wuorinen」，請主線定；封面用 Discogs 圖"
+  },
+  {
+   "artist": "Paul Zukofsky",
+   "album": "Sessions / Blackwood: Sonata for Violin / Second Sonata",
+   "year": 1976,
+   "label": "CP² Recordings",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Zukofsky 自營 CP² 廠牌第一號：Sessions 1953 年無伴奏《Sonata for Violin》與 Easley Blackwood 第二號小提琴奏鳴曲；無伴奏小提琴的雙音與高把位尖句，冷硬緊繃",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.6,
+    "z": -1.4,
+    "why": "無伴奏小提琴奏鳴曲與小提琴鋼琴奏鳴曲，無調、尖細高音、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/2950420",
+    "https://en.wikipedia.org/wiki/Paul_Zukofsky"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Paul Zukofsky\" browse（MB 10 個 release group，無此盤）",
+     "releasegroup:Sonata AND artist:\"Paul Zukofsky\"（只有 Feldman/Schnabel）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/2950420",
+    "https://en.wikipedia.org/wiki/Paul_Zukofsky"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面用 Discogs 圖"
+  },
+  {
+   "artist": "David Holzman",
+   "album": "Sessions / Shapey: Sessions & Shapey",
+   "year": 2007,
+   "label": "Bridge",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Wolpe 弟子、uptown 鋼琴專家 Holzman 錄 Sessions 第一、三號鋼琴奏鳴曲與 Shapey《Mutations I/II》《21 Variations》；Shapey 的「石塊」式硬和弦與 Sessions 晚期十二音密度，整張壓迫而緊繃",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "鋼琴獨奏，Sessions 奏鳴曲與 Shapey 變奏曲，密集無調、硬，乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/4465730",
+    "https://www.bridgerecords.com/products/9243"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "releasegroup:\"Sessions & Shapey\"（查無）",
+     "artist:\"Ralph Shapey\"（MB 只有 1 個 release group）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/4465730",
+    "https://www.bridgerecords.com/products/9243"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Sessions 第一號（1930）約 14 分鐘屬較早期作品，仍為不協和寫法；封面用 Discogs 圖"
+  },
+  {
+   "artist": "Anna Skouras & Andreas Skouras",
+   "album": "Wuorinen: Chamber Music for Violin, Piano and Harpsichord",
+   "year": 2016,
+   "label": "NEOS",
+   "country": "de",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Wuorinen 的小提琴獨奏《The Long and the Short》《Violin Variations》、大鍵琴《Harpsichord Divisions》、鋼琴《Heart Shadow》與《Six Pieces》，巴伐利亞廣播錄音；大鍵琴的乾脆撥弦與小提琴高把位，尖細緊繃",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.6,
+    "z": -1.4,
+    "why": "小提琴獨奏、大鍵琴、鋼琴，無調高音碎片，乾而尖"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/10268919",
+    "https://en.wikipedia.org/wiki/Charles_Wuorinen"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Charles Wuorinen\" browse（MB 27 個 release group，無此盤）",
+     "releasegroup:\"Chamber Music for Violin\" AND artist:Wuorinen（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/10268919",
+    "https://en.wikipedia.org/wiki/Charles_Wuorinen"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面用 Discogs 圖"
+  },
+  {
+   "artist": "Parnassus",
+   "album": "Wolpe / Davidovsky / Wuorinen / Lundborg / Olan: Parnassus Plays",
+   "year": 1980,
+   "label": "New World",
+   "country": "us",
+   "faction": "uptown-chamber",
+   "genres": [
+    "classical"
+   ],
+   "why": "Anthony Korf 的 Parnassus 在 New World 的首張：Wolpe《Chamber Piece No. 2》、Davidovsky《Pennplay》、Wuorinen《The Winds》、Lundborg、Olan，uptown 合奏團的典型曲目；管樂高音與鋼琴碎片點狀交錯，神經不得放鬆",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.5,
+    "z": -1.5,
+    "why": "八到十人室內樂團，點描管樂與弦樂，無調、尖、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/5411460",
+    "https://en.wikipedia.org/wiki/Stefan_Wolpe"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:Parnassus（MB 2 個 release group，無此盤）",
+     "artist:Parnassus AND releasegroup:Wolpe（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/5411460",
+    "https://en.wikipedia.org/wiki/Stefan_Wolpe"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "盤名照 Discogs 為《Parnassus Plays Works by Stefan Wolpe / Mario Davidovsky / Charles Wuorinen / Erik Lundborg / David Olan》，請主線定正名；封面用 Discogs 圖"
+  },
+  {
+   "artist": "Continuum",
+   "album": "Wolpe: Enactments / From Here On Farther / Second Piece for Violin Alone",
+   "year": 1984,
+   "label": "Nonesuch",
+   "country": "us",
+   "faction": "uptown-chamber",
+   "genres": [
+    "classical"
+   ],
+   "why": "Cheryl Seltzer／Joel Sachs 的 Continuum 為 Nonesuch 錄 Wolpe 晚期大作《Enactments》（三台鋼琴）、《From Here On Farther》與無伴奏小提琴小品；三台鋼琴的尖硬和弦與突然的靜止、爆發輪替，讓人一直提著神經",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": -1.5,
+    "why": "三台鋼琴互相撞擊、單簧管與小提琴碎片，無調、硬而尖"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/2769054",
+    "https://en.wikipedia.org/wiki/Stefan_Wolpe"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Stefan Wolpe\" browse（MB 21 個 release group，無此 LP）",
+     "artist:Wolpe AND releasegroup:Enactments（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/2769054",
+    "https://en.wikipedia.org/wiki/Stefan_Wolpe"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "《Enactments》佔一整面以上，鋼琴三重疊可能被判偏厚，主線評分時留意；封面用 Discogs 圖"
+  },
+  {
+   "artist": "Martin Goldray",
+   "album": "Babbitt: Piano Music Since 1983",
+   "year": 1997,
+   "label": "CRI",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Babbitt 1983 年後的鋼琴大作（Canonical Form、Emblems、Preludes, Interludes and Postlude、Tutte le corde），Goldray 在普林斯頓 Taplin 禮堂錄音；音點在全音域間不停跳躍，緊張而乾",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "鋼琴獨奏，Babbitt 晚期全音域點描，乾、尖，無旋律"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/14302603",
+    "https://en.wikipedia.org/wiki/Milton_Babbitt"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Milton Babbitt\" browse（MB 15 個 release group，無此盤）",
+     "releasegroup:\"Piano Music Since 1983\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/14302603",
+    "https://en.wikipedia.org/wiki/Milton_Babbitt"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "〈Canonical Form〉與 mc4 汰過的 Taub《Piano Works》重疊一曲，不同錄音；封面用 Discogs 圖"
+  },
+  {
+   "artist": "Todd Seelye",
+   "album": "Sheer Pluck: Berio / Mamlok / Dillon / Babbitt / Wuorinen / Carter / Morris",
+   "year": 1998,
+   "label": "Music & Arts",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "美國吉他手 Seelye 的 uptown 吉他曲目：Babbitt《Composition for Guitar》、Wuorinen《Guitar Variations》、Carter《Changes》、Mamlok、Morris，加 Berio《Sequenza XI》與 Dillon；乾澀撥弦與突兀的音程跳躍，輕而緊繃",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.6,
+    "z": -1.4,
+    "why": "古典吉他獨奏，無調撥弦、乾、尖、無旋律主線"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/8615909",
+    "https://en.wikipedia.org/wiki/Milton_Babbitt"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "releasegroup:\"Sheer Pluck\"（查無）",
+     "artist:\"Todd Seelye\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/8615909",
+    "https://en.wikipedia.org/wiki/Milton_Babbitt"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "末曲 Robert Morris《To the Nine》含磁帶約 11 分鐘；盤名照 Discogs 為《Sheer Pluck》，作曲家列可由主線縮短；封面用 Discogs 圖"
+  },
+  {
+   "artist": "The Ars Combinatoria String Quartet",
+   "album": "Babbitt: String Quartets",
+   "year": 2017,
+   "label": "self-released",
+   "country": "us",
+   "faction": "uptown-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Babbitt 第二至第六號弦樂四重奏一次收齊（第一號已撤），uptown 四重奏寫法的總結；四聲部各自的音型在十二音組合下高速交錯，沒有一句可唱的旋律、整張緊繃",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": -1.6,
+    "why": "弦樂四重奏，Babbitt 第二到第六號全收，序列點描、乾、尖"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/13560497",
+    "https://en.wikipedia.org/wiki/Milton_Babbitt"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:Babbitt AND releasegroup:\"String Quartets\"（查無）",
+     "artist:\"Ars Combinatoria\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/13560497",
+    "https://en.wikipedia.org/wiki/Milton_Babbitt"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 記為自主發行 FLAC 數位專輯（Erik Carlson），需確認是否為現場錄音與封面解析度；無實體版；封面用 Discogs 圖"
+  },
+  {
+   "artist": "Stefan Wolpe",
+   "album": "Wolpe: Stefan Wolpe Vol. 4",
+   "year": 2007,
+   "label": "Bridge",
+   "country": "us",
+   "faction": "uptown-chamber",
+   "genres": [
+    "classical"
+   ],
+   "why": "Bridge 的 Wolpe 全集第四輯：Holliger 吹《Sonata for Oboe and Piano》、Aitken 吹《Piece in Two Parts for Flute and Piano》、Ensemble SurPlus 的《Piece for Oboe, Cello, Percussion and Piano》；雙簧管與長笛的尖細高音在鋼琴硬擊間穿刺，緊繃",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.5,
+    "z": -1.4,
+    "why": "雙簧管、長笛與鋼琴二重奏、四重奏，無調尖銳、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/14631711",
+    "https://www.bridgerecords.com/products/9215"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Stefan Wolpe\" browse（MB 21 個 release group，無此盤）",
+     "artist:Wolpe AND releasegroup:\"Vol. 4\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/14631711",
+    "https://www.bridgerecords.com/products/9215"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "掛名：三組演奏者分散，照 §0.7 掛作曲家；《Piece for Oboe, Cello, Percussion and Piano》與池中 GCM Wolpe 盤同曲不同錄音；封面用 Discogs 圖"
+  },
+  {
+   "artist": "The Contemporary Chamber Players of the University of Chicago",
+   "album": "Shapey: String Quartet No. 7",
+   "year": 1978,
+   "label": "CRI",
+   "country": "us",
+   "faction": "uptown-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Shapey 親自領軍的芝加哥大學當代室內樂團成員錄他的第七號弦樂四重奏（Brillante／Scherzando／Largo／Passacaglia），CRI 作曲家監製錄音；粗礪的不協和塊狀和弦與尖刺跳弓，緊繃不安",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "弦樂四重奏，Shapey 的硬塊式和弦與刮奏，無調、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/3705952",
+    "https://en.wikipedia.org/wiki/Ralph_Shapey"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Ralph Shapey\"（MB 只有 1 個 release group）",
+     "artist:Shapey AND releasegroup:\"String Quartet\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/3705952",
+    "https://en.wikipedia.org/wiki/Ralph_Shapey"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "LP 單曲全長，總長未標（推估 30–40 分鐘）；Largo 慢章；封面用 Discogs 圖"
+  },
+  {
+   "artist": "Robert Black",
+   "album": "Shapey: Fromm Variations",
+   "year": 1980,
+   "label": "CRI",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Shapey 1966–73 年的鋼琴巨作《Fromm Variations》（31 段變奏、約 52 分鐘），Robert Black 在作曲家監督下錄音；不協和和弦硬塊與高音碎片輪番砸下，壓迫而緊繃",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "鋼琴獨奏，31 段變奏，厚重不協和和弦與尖銳跳躍交替，乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/3159158",
+    "https://en.wikipedia.org/wiki/Ralph_Shapey"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Ralph Shapey\"（MB 只有 1 個 release group）",
+     "releasegroup:\"Fromm Variations\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/3159158",
+    "https://en.wikipedia.org/wiki/Ralph_Shapey"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Shapey 和弦偏厚重，y 可能貼 0；鋼琴獨奏；封面用 Discogs 圖"
+  },
+  {
+   "artist": "Miranda Cuckson & Blair McMillen",
+   "album": "Shapey: Music by Ralph Shapey",
+   "year": 2007,
+   "label": "Centaur",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Cuckson 為 Shapey 小提琴作品錄的第一輯（Five、Mann Soli、Partita、Etchings 無伴奏、Millennium Designs）；無伴奏小提琴的尖細雙音與鋼琴硬擊，緊繃不鬆",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.6,
+    "z": -1.4,
+    "why": "無伴奏小提琴與小提琴鋼琴，無調尖銳、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/11584076",
+    "https://en.wikipedia.org/wiki/Ralph_Shapey"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "releasegroup:\"Music by Ralph Shapey\"（查無）",
+     "artist:\"Miranda Cuckson\"（MB 只有 Carter/Sessions/Eckardt 等）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/11584076",
+    "https://en.wikipedia.org/wiki/Ralph_Shapey"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面用 Discogs 圖"
+  },
+  {
+   "artist": "Miranda Cuckson & Blair McMillen",
+   "album": "Shapey: More Music by Ralph Shapey",
+   "year": 2010,
+   "label": "Centaur",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "續輯：Shapey 1949 年小提琴奏鳴曲、無伴奏第一號奏鳴曲、四首練習曲與晚年第三號奏鳴曲，Bard 學院 Fisher Center 錄音；尖銳的高把位與突兀斷句貫穿全盤",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.6,
+    "z": -1.4,
+    "why": "小提琴奏鳴曲與無伴奏練習曲，無調、高音尖細、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/11338478",
+    "https://en.wikipedia.org/wiki/Ralph_Shapey"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "releasegroup:\"More Music by Ralph Shapey\"（查無）",
+     "artist:\"Miranda Cuckson\"（查無此盤）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/11338478",
+    "https://en.wikipedia.org/wiki/Ralph_Shapey"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面用 Discogs 圖"
+  },
+  {
+   "artist": "The Group for Contemporary Music",
+   "album": "Wuorinen: Chamber Works",
+   "year": 1990,
+   "label": "New World",
+   "country": "us",
+   "faction": "uptown-chamber",
+   "genres": [
+    "classical"
+   ],
+   "why": "GCM 的 Wuorinen 室內樂：《Fast Fantasy》、《Sonata for Violin and Piano》（Hudson／Ohlsson）、《Third String Quartet》，作曲家自營團體的權威演出；快速的碎片音型與硬擊，一路繃緊",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.5,
+    "z": -1.5,
+    "why": "大提琴鋼琴、小提琴鋼琴、弦樂四重奏，無調尖銳快速，乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/893072",
+    "https://www.discogs.com/release/7383133"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Group for Contemporary Music\" browse（MB 11 個 release group，無此盤）",
+     "artist:Wuorinen AND releasegroup:\"Chamber Works\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/893072",
+    "https://www.discogs.com/release/7383133"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "《Fast Fantasy》為大提琴鋼琴約 16 分鐘（與 Albany Sherry 盤同曲、本盤作曲家自彈）；封面用 Discogs 圖"
+  },
+  {
+   "artist": "The Group for Contemporary Music",
+   "album": "Wuorinen / Harvey / Peterson: Second String Quartet / String Quartet No. 1 / String Quartet No. 1",
+   "year": 1992,
+   "label": "Koch International Classics",
+   "country": "us",
+   "faction": "uptown-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "GCM 弦樂四重奏盤：Wuorinen 第二號（1979）、Jonathan Harvey 第一號、普立茲得主 Wayne Peterson 第一號（1983）；三首都是後序列的緊密四聲部寫法，高音域碎片不停交錯",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": -1.5,
+    "why": "三首弦樂四重奏，無調密集對位、尖銳刮奏，乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1085575",
+    "https://www.discogs.com/release/8767287"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Group for Contemporary Music\" browse（MB 11 個 release group，無此盤）",
+     "artist:Wuorinen AND releasegroup:\"Second String Quartet\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1085575",
+    "https://www.discogs.com/release/8767287"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Harvey 為英國作曲家，佔約 22 分鐘；封面用 Discogs 圖"
+  },
+  {
+   "artist": "The Group for Contemporary Music",
+   "album": "Wuorinen: Fortune / Tashi / Violin Variations / Cello Variations II / Album Leaf",
+   "year": 1994,
+   "label": "Koch International Classics",
+   "country": "us",
+   "faction": "uptown-chamber",
+   "genres": [
+    "classical"
+   ],
+   "why": "GCM 錄 Wuorinen 的《Tashi》（為 Tashi 四重奏所寫）、《Fortune》、《Violin Variations》《Cello Variations II》；四件樂器高速點描、獨奏變奏的炫技碎句，緊繃而乾",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.5,
+    "z": -1.4,
+    "why": "單簧管、小提琴、大提琴、鋼琴四重奏與弦樂獨奏，無調尖銳、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/814020",
+    "https://www.discogs.com/release/4514469"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Group for Contemporary Music\" browse（MB 11 個 release group，無此盤）",
+     "artist:Wuorinen AND releasegroup:Tashi（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/814020",
+    "https://www.discogs.com/release/4514469"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "《Cello Variations II》大提琴獨奏約 7 分鐘；封面用 Discogs 圖"
+  },
+  {
+   "artist": "Robert Miller / The Contemporary Chamber Players",
+   "album": "Berger / Wolpe: Five Pieces for Piano / Septet / Form / Piece in Two Parts for Solo Violin",
+   "year": 1980,
+   "label": "New World",
+   "country": "us",
+   "faction": "uptown-chamber",
+   "genres": [
+    "classical"
+   ],
+   "why": "New World 的 Arthur Berger 與 Wolpe 對照盤：Berger 十二音時期《Five Pieces for Piano》（Robert Miller）與《Septet》，Wolpe《Form》《Piece in Two Parts for Solo Violin》；稀薄而尖的點描音型，冷而緊繃",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.5,
+    "z": -1.4,
+    "why": "鋼琴獨奏、七重奏、無伴奏小提琴，序列點描、乾、尖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/366793",
+    "https://www.discogs.com/release/2656724"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Arthur Berger\"（MB 2 個 release group，皆管弦）",
+     "artist:\"Arthur Berger\" AND releasegroup:Septet（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/366793",
+    "https://www.discogs.com/release/2656724"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "掛名：四組演奏者分散，照 §0.7 可改掛作曲家「Arthur Berger / Stefan Wolpe」，請主線定；Berger 鋼琴作有預置／點描段，留意是否判靜；封面用 Discogs 圖"
+  },
+  {
+   "artist": "The Composers Quartet",
+   "album": "Crawford Seeger / Perle / Babbitt: String Quartet / String Quartet No. 5 / String Quartet No. 2",
+   "year": 1973,
+   "label": "Nonesuch",
+   "country": "us",
+   "faction": "uptown-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Composers Quartet 的 Nonesuch 美國四重奏盤：Ruth Crawford Seeger 1931 年四重奏、Perle 第五號、Babbitt 第二號；從美國極端主義到序列主義一脈相承，四聲部尖銳交錯、沒有旋律可依",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": -1.5,
+    "why": "三首美國現代弦樂四重奏，不協和對位、尖銳、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/852265",
+    "https://www.discogs.com/release/2750744"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"The Composers Quartet\"（MB 2 個 release group，無此盤）",
+     "artist:\"Crawford Seeger\" AND releasegroup:\"String Quartet\"（只有 2000 Pellegrini 盤）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/852265",
+    "https://www.discogs.com/release/2750744"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Crawford 四重奏第三樂章為著名的慢速「不協和力度」段；池中 Crawford Seeger《Portrait》為不同錄音；封面用 Discogs 圖"
+  },
+  {
+   "artist": "Rolf Schulte & Alan Feinberg",
+   "album": "Babbitt: Sextets / The Joy of More Sextets",
+   "year": 1988,
+   "label": "New World",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Babbitt 的兩首小提琴鋼琴大作《Sextets》（1966）與《The Joy of More Sextets》（1986），Schulte 與 Feinberg 演出；兩件樂器在全音域間互相丟擲短音型，緊繃、冷而尖",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.5,
+    "z": -1.5,
+    "why": "小提琴與鋼琴，序列點描、快速交錯，乾而尖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/765998",
+    "https://www.discogs.com/release/6171042"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "releasegroup:\"Joy of More Sextets\"（查無）",
+     "artist:\"Rolf Schulte\"（MB 4 個 release group，無此盤）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/765998",
+    "https://www.discogs.com/release/6171042"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面用 Discogs 圖"
+  },
+  {
+   "artist": "Geoffrey Douglas Madge",
+   "album": "Wolpe: Piano Music",
+   "year": 1988,
+   "label": "cpo",
+   "country": "de",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Madge 為 cpo 錄的 Wolpe 鋼琴作品集：《Battle Piece》（24 分鐘）、《Passacaglia》、《Toccata in Three Parts》、《Displaced Spaces》、《Form IV》；猛烈的不協和衝撞與突然的斷裂，緊繃",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "鋼琴獨奏，Battle Piece、Passacaglia 等無調大型作，硬、乾、尖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1425437",
+    "https://www.discogs.com/release/5026978"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Stefan Wolpe\" browse（MB 21 個 release group，無此盤）",
+     "artist:Wolpe AND releasegroup:\"Piano Music\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1425437",
+    "https://www.discogs.com/release/5026978"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "開頭有 1920 年代的〈Tango〉〈Rag-Caprice〉等短曲（合計約 8 分鐘）帶爵士節奏；與池中 Holzman《Compositions for Piano》部分曲目重疊、不同錄音；封面用 Discogs 圖"
+  },
+  {
+   "artist": "The Group for Contemporary Music",
+   "album": "Martino: From the Other Side / Quodlibets II / Notturno",
+   "year": 1994,
+   "label": "Koch International Classics",
+   "country": "us",
+   "faction": "uptown-chamber",
+   "genres": [
+    "classical"
+   ],
+   "why": "GCM（Brad Lubman 指揮）錄 Martino 的《Notturno》、長笛獨奏《Quodlibets II》與四重奏《From the Other Side》；高音木管與鋼琴碎片穿插、短促爆發，冷而緊繃",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.5,
+    "z": -1.5,
+    "why": "長笛、單簧管、弦樂、鋼琴、打擊的室內樂團，點描尖銳、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/10920158",
+    "https://en.wikipedia.org/wiki/Donald_Martino"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Donald Martino\"（MB 4 個 release group，無此盤）",
+     "artist:Martino AND releasegroup:\"From the Other Side\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/10920158",
+    "https://en.wikipedia.org/wiki/Donald_Martino"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "《Notturno》與本批 Speculum Musicae 1974 盤同曲不同錄音；Discogs 標 Remastered，主線可再確認是否為舊錄音重發；封面用 Discogs 圖"
+  },
+  {
+   "artist": "David Holzman",
+   "album": "Martino: Twelve Preludes / Fantasies and Impromptus",
+   "year": 1995,
+   "label": "Albany",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Holzman 在哈佛 Paine Hall 錄 Martino 鋼琴作品：《Twelve Preludes》、《Fantasies and Impromptus》、《Piano Fantasy》、《Impromptu for Roger》；音點散射與突發的強奏，神經一直被挑著",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "鋼琴獨奏，Martino 序列鋼琴作，密集跳躍、硬、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/10709788",
+    "https://en.wikipedia.org/wiki/Donald_Martino"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Donald Martino\"（MB 4 個 release group，無此盤）",
+     "artist:\"David Holzman\" AND releasegroup:Martino（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/10709788",
+    "https://en.wikipedia.org/wiki/Donald_Martino"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 盤名只寫《Donald Martino》（Albany TROY 169），盤名需主線定；封面用 Discogs 圖"
+  },
+  {
+   "artist": "Randall Hodgkinson",
+   "album": "Martino / Sessions: Fantasies and Impromptus / Piano Sonata No. 2",
+   "year": 1984,
+   "label": "New World",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "New World 的 uptown 鋼琴盤：Martino《Fantasies and Impromptus》世界首錄與 Sessions《Piano Sonata No. 2》（1946）；兩首都是密集無調的大型鋼琴作，緊繃、尖",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "鋼琴獨奏，序列鋼琴、硬觸鍵、大跳，乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/5323104",
+    "https://en.wikipedia.org/wiki/Donald_Martino"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Donald Martino\"（MB 4 個 release group，無此盤）",
+     "artist:\"Randall Hodgkinson\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/5323104",
+    "https://en.wikipedia.org/wiki/Donald_Martino"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "1998 New World CD 再版加了 Helps 彈的 Sessions 第三號（Discogs 11618722，標 Comp），本提名以 1984 LP 原盤為準；封面用 Discogs 圖"
+  },
+  {
+   "artist": "Miranda Cuckson",
+   "album": "Martino: Music by Donald Martino",
+   "year": 2008,
+   "label": "Centaur",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Cuckson 錄 Martino 晚年小提琴作品：無伴奏《Sonata for Solo Violin》（2003）、《Romanza》、早年《Fantasy-Variations》與第二號小提琴鋼琴奏鳴曲；高把位尖句與雙音，冷而緊繃",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.6,
+    "z": -1.4,
+    "why": "無伴奏小提琴與小提琴鋼琴，無調尖細、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/28216207",
+    "https://en.wikipedia.org/wiki/Donald_Martino"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "releasegroup:\"Music by Donald Martino\"（查無）",
+     "artist:\"Miranda Cuckson\"（查無此盤）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/28216207",
+    "https://en.wikipedia.org/wiki/Donald_Martino"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面用 Discogs 圖"
+  },
+  {
+   "artist": "Robert Miller",
+   "album": "Wuorinen / Wolpe / Wyner / Perle: Contemporary Piano Music",
+   "year": 1974,
+   "label": "CRI",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "uptown 圈的御用鋼琴家 Robert Miller 在 CRI 錄 Wuorinen《Sonata, 1969》、Wolpe《Form》《Form IV: Broken Sequences》、Wyner《Three Short Fantasies》、Perle《Toccata》；硬而尖的觸鍵與破碎音型貫穿全盤",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "鋼琴獨奏，序列與無調短作，硬觸鍵、跳躍、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/8078368",
+    "https://en.wikipedia.org/wiki/Charles_Wuorinen"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Robert Miller\" AND releasegroup:\"Contemporary Piano Music\"（查無）",
+     "releasegroup:\"Contemporary Piano Music\" AND artist:Wuorinen（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/8078368",
+    "https://en.wikipedia.org/wiki/Charles_Wuorinen"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面用 Discogs 圖"
+  },
+  {
+   "artist": "Robert Taub",
+   "album": "Kirchner / Shifrin / Babbitt / Bartók: Sonata / Responses / Three Compositions for Piano / Sonata",
+   "year": 1981,
+   "label": "CRI",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Taub 早年 CRI 鋼琴盤：Kirchner《Piano Sonata》、Shifrin《Responses》、Babbitt《Three Compositions for Piano》加 Bartók《Sonata》（1926）；表現主義的猛擊與序列點描並置，緊繃而乾",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "鋼琴獨奏，Kirchner 奏鳴曲、Shifrin《Responses》、Babbitt 序列早作，硬、尖"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/5860220",
+    "https://en.wikipedia.org/wiki/Leon_Kirchner"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Robert Taub\"（MB 只有 Harmonia Mundi Babbitt 盤）",
+     "artist:Kirchner AND releasegroup:Sonata（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/5860220",
+    "https://en.wikipedia.org/wiki/Leon_Kirchner"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "與 mc4 汰過的 Taub《Babbitt: Piano Works》（Harmonia Mundi 1986）不同盤；Babbitt《Three Compositions》兩盤都有、不同錄音；Bartók 奏鳴曲佔一段；封面用 Discogs 圖"
+  },
+  {
+   "artist": "Harvey Sollberger",
+   "album": "Twentieth-Century Flute Music",
+   "year": 1975,
+   "label": "Nonesuch",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "uptown 長笛代表人物 Sollberger 的 Nonesuch 雙 LP：Varèse《Density 21.5》、Wuorinen《Flute Variations I/II》、Berio《Sequenza》、Davidovsky、Westergaard、Reynolds《Ambages》等；長笛高音尖細、斷續的氣音與跳音，緊繃而輕",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.7,
+    "z": -1.4,
+    "why": "長笛獨奏與二重奏，無調尖細高音、氣音、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/2589932",
+    "https://en.wikipedia.org/wiki/Harvey_Sollberger"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Harvey Sollberger\" browse（MB 6 個 release group，無此盤）",
+     "releasegroup:\"Twentieth-Century Flute Music\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/2589932",
+    "https://en.wikipedia.org/wiki/Harvey_Sollberger"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Trombly《Kinetics III》為長笛加電子約 8 分鐘；雙 LP 約 77 分鐘；Wuorinen 兩首與 Music & Arts《Music of Two Decades》精選可能同錄音（精選不在池）；封面用 Discogs 圖"
+  },
+  {
+   "artist": "The Composers Quartet",
+   "album": "Carter / Babbitt / Powell: Three American String Quartets",
+   "year": 1990,
+   "label": "Music & Arts",
+   "country": "us",
+   "faction": "uptown-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Composers Quartet 1988–89 在 Purchase 錄 Carter《String Quartet No. 4》（1986）、Babbitt《Quartet No. 5》（作曲家監製）與 Mel Powell《String Quartet 1982》；三位 uptown 大師的晚期四重奏，聲部各自奔走、緊繃",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": -1.6,
+    "why": "三首弦樂四重奏，Carter 第四號、Babbitt 第五號、Powell，無調密集、尖、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/2466956",
+    "https://en.wikipedia.org/wiki/Milton_Babbitt"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"The Composers Quartet\"（MB 2 個 release group，無此盤）",
+     "releasegroup:\"Three American String Quartets\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/2466956",
+    "https://en.wikipedia.org/wiki/Milton_Babbitt"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Carter 第四號在 mc32 Arditti、mc43 Pacifica 也有，不同錄音；封面用 Discogs 圖"
+  },
+  {
+   "artist": "Curtis Macomber",
+   "album": "Sessions / Hoffman / Adolphe: Soliloquy",
+   "year": 1992,
+   "label": "Koch International Classics",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Speculum Musicae 小提琴手 Macomber 的無伴奏小提琴專輯：Sessions《Sonata for Violin》（34 分鐘）、Joel Hoffman《Partenze》、Bruce Adolphe《Soliloquy》；一把小提琴的高把位與無調雙音獨撐全場，冷而緊繃",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.6,
+    "z": -1.3,
+    "why": "無伴奏小提琴，Sessions 奏鳴曲與兩首當代獨奏，無調尖細、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/16140279",
+    "https://en.wikipedia.org/wiki/Roger_Sessions"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Roger Sessions\" browse（MB 15 個 release group，無此盤）",
+     "releasegroup:Soliloquy AND artist:Macomber（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/16140279",
+    "https://en.wikipedia.org/wiki/Roger_Sessions"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Sessions 奏鳴曲在本批 Chang《Transformations》、Zukofsky CP² 盤也有，不同錄音；封面用 Discogs 圖"
+  },
+  {
+   "artist": "Paul Jacobs",
+   "album": "Carter: Sonata for Flute, Oboe, Cello & Harpsichord / Sonata for Cello & Piano",
+   "year": 1969,
+   "label": "Nonesuch",
+   "country": "us",
+   "faction": "uptown-chamber",
+   "genres": [
+    "classical"
+   ],
+   "why": "Nonesuch 的 Carter 室內樂經典：1952 年《Sonata for Flute, Oboe, Cello and Harpsichord》（Sollberger、Kuskin、Fred Sherry、Paul Jacobs 大鍵琴）與《Sonata for Cello and Piano》（Krosnick／Jacobs）；大鍵琴乾脆的撥弦與木管尖音互相拉扯，緊繃",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.3,
+    "why": "長笛、雙簧管、大提琴、大鍵琴四重奏與大提琴鋼琴，無調尖細、乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/510076e7-7728-4442-896e-2eda2ed313bf",
+    "https://www.discogs.com/master/1548742",
+    "https://coverartarchive.org/release-group/510076e7-7728-4442-896e-2eda2ed313bf/front"
+   ],
+   "mbRgMbid": "510076e7-7728-4442-896e-2eda2ed313bf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "大提琴奏鳴曲（1948）約 21 分鐘，佔全盤一半以上、開頭偏抒情，有判重／判暖風險；掛名：Paul Jacobs 是兩面共同的鍵盤手（A 面大鍵琴、B 面鋼琴），照 §0.7 掛他；演出者照 Discogs 932743"
+  },
+  {
+   "artist": "Emerson String Quartet",
+   "album": "Imbrie / Schuller: String Quartet No. 4 / String Quartet No. 2",
+   "year": 1978,
+   "label": "New World",
+   "country": "us",
+   "faction": "uptown-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Emerson 四重奏早年為 New World 錄的美國四重奏盤：Andrew Imbrie《String Quartet No. 4》與 Gunther Schuller 十二音《String Quartet No. 2》；兩首都是戰後美國現代主義的緊密四聲部寫法，尖而緊繃",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -1.4,
+    "why": "弦樂四重奏，無調密集對位、尖銳爆發，乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/2919379",
+    "https://en.wikipedia.org/wiki/Andrew_Imbrie"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Andrew Imbrie\"（MB 只有 1 個 release group）",
+     "artist:Imbrie AND releasegroup:\"String Quartet\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/2919379",
+    "https://en.wikipedia.org/wiki/Andrew_Imbrie"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Imbrie 有抒情慢段，x 估 3.5 偏貼邊；封面用 Discogs 圖"
+  },
+  {
+   "artist": "Alan Feinberg",
+   "album": "Wuorinen: Piano Works",
+   "year": 2005,
+   "label": "Col Legno",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Feinberg 為 Col Legno 錄的 Wuorinen 鋼琴作品集：《The Blue Bamboula》、《Piano Sonata No. 3》、《Bagatelle》、《Capriccio》、《Self-Similar Waltz》等；碎形式的音型繁殖與硬擊，緊繃不歇",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "鋼琴獨奏，Wuorinen 第三奏鳴曲、Capriccio、Bagatelle，密集跳躍、硬、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/5163353",
+    "https://en.wikipedia.org/wiki/Charles_Wuorinen"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Charles Wuorinen\" browse（MB 27 個 release group，無此盤）",
+     "artist:\"Alan Feinberg\" AND releasegroup:\"Piano Works\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/5163353",
+    "https://en.wikipedia.org/wiki/Charles_Wuorinen"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "〈Ave Christe: Josquin〉為 Josquin 改編約 5 分鐘、調性；演奏者照 Discogs extraartists（Piano: Alan Feinberg）；封面用 Discogs 圖"
+  },
+  {
+   "artist": "Robert Black",
+   "album": "Sessions / Gideon / Weber: 5 Pieces, Sonata, Variazioni",
+   "year": 1983,
+   "label": "CRI",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Robert Black 的 CRI 鋼琴盤：Sessions《Five Pieces for Piano》（1975，晚期）、Miriam Gideon《Sonata》、Ben Weber《Variazioni quasi una fantasia》，三位紐約 uptown 作曲家的無調鋼琴作；尖銳和弦與破碎線條，緊繃",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "鋼琴獨奏，Sessions 十二音小品、Gideon 奏鳴曲、Weber 變奏，無調、硬、乾"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/14501957",
+    "https://en.wikipedia.org/wiki/Roger_Sessions"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Roger Sessions\" browse（MB 15 個 release group，無此盤）",
+     "artist:\"Robert Black\" AND releasegroup:Sessions（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/14501957",
+    "https://en.wikipedia.org/wiki/Roger_Sessions"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面用 Discogs 圖"
+  },
+  {
+   "artist": "Alan Marks",
+   "album": "Boulez / Sessions / Chávez: Alan Marks Plays Modern Classics",
+   "year": 1978,
+   "label": "CRI",
+   "country": "us",
+   "faction": "uptown-solo",
+   "genres": [
+    "classical"
+   ],
+   "why": "Alan Marks 的 CRI 首張：Boulez《Première Sonate》、Sessions《Second Piano Sonata》（1946）、Chávez 的練習曲與《Cinco caprichos》；尖銳的大跳與猛烈和弦，緊繃而乾",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "鋼琴獨奏，Boulez 第一奏鳴曲、Sessions 第二奏鳴曲，無調、硬擊、尖"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/2418766",
+    "https://en.wikipedia.org/wiki/Roger_Sessions"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Roger Sessions\" browse（MB 15 個 release group，無此盤）",
+     "releasegroup:\"Alan Marks Plays Modern Classics\"（查無）"
+    ],
+    "checkedAt": "2026-10-24",
+    "conclusion": "MB 查無此盤，走人工身分（Discogs＋廠牌頁／維基）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/2418766",
+    "https://en.wikipedia.org/wiki/Roger_Sessions"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Sessions 第二奏鳴曲與本批 Hodgkinson 盤同曲不同錄音；Boulez 第一奏鳴曲 mc47 有其他錄音；封面用 Discogs 圖"
+  }
+ ],
+ "notes": [
+  "主場景（美國 uptown 序列主義／現代主義）48 張、擴寫 2 張（Fred Sherry 四重奏《Schoenberg 美國時期四重奏》、JACK《Eckardt: Passage》），共 50 張，挖不到 54，照實交。",
+  "去重擋掉（已在池或其他組提過）：Juilliard Carter 四重奏、Arditti／Pacifica Carter、Rosen／Choi Carter 鋼琴、mc4 Oppens《Oppens Plays Carter》、mc4 Taub《Babbitt Piano Works》、mc41《Babbitt: Occasional Variations》、mc40 Arditti《Caprices》、池中 GCM《Wolpe》（Koch 1995 Wolpe 盤為同錄音再版，擋）、GCM《Carter: Eight Compositions》、GCM／mc46《Wuorinen Six Trios》、Brentano《Wuorinen》、mc46 GCM《Sessions》、Nouvel Ensemble Moderne《Carter》（ATMA 2002 同盤）、Holzman《Wolpe: Compositions for Piano》、Davidovsky Vol. 3／Salvos、Philomel、Ensemble 21／Cuckson Eckardt。",
+  "研究層先擋：人聲占比高（Eckardt《Subject》的《Tongues》女高音 28 分鐘、Carter《Nine Compositions》、Ran CRI、Davidovsky《Flashbacks》、Wolpe Parnassus Koch 1992）；電子／磁帶（Wuorinen《Lepton》、Davidovsky Synchronisms）；大編制（Wuorinen《On Alligators》、Carter 協奏）；打擊為主（Speculum Carter Vol. 4、Wuorinen《Metagong》）；低音樂器（Wuorinen《Fast Fantasy》）；稀疏（Karis Webern/Wolpe/Feldman、Feldman 混盤）；現場（Juilliard Sessions/Wolpe/Babbitt 1990）；精選（Sollberger CRI《A New York Retrospective》、Wuorinen《Music of Two Decades》）；調性／抒情（Perle Daedalus、Harbison 盤、Da Capo Perle/Carter）。",
+  "MB 對這批覆蓋差：MB 釘住 13 張，人工身分 37 張（Discogs release／master＋維基或 Bridge 廠牌頁）。人工身分的 mbAbsenceProof 均為 2026-10-24 實查。",
+  "封面：CAA 有圖 8 張（rg 前綴已列 evidence），其餘用 Discogs 圖（各 release 均有 images）。",
+  "WebSearch 用 1 次（查 Eckardt《Tongues》編制）。"
+ ]
+}

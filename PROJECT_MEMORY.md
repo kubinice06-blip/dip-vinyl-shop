@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 15 輪（全線最後一個工作階段）ml59／mc48：roots reggae 第二波 13 張、美國 uptown 序列主義 31 張上線，落格 13/13、31/31，兩場景見底
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 15 輪最後一個工作階段（做完暫停盤點），評分照 10-23 體感標準。ml59（`add-20261024-ml59`，恍惚）：Larry Marshall《I Admire You》、Delton Screechie、Rod Taylor《Where Is Your Love Mankind》、Twinkle Brothers《Underground》、Bim Sherman ×2、Don Carlos & Gold ×2、Triston Palma ×2、Viceroys《Chancery Lane》、Earl Cunningham、Congo Ashanti Roy。mc48（`add-20261024-mc48`，冷冽）：GCM ×5（Babbitt、Wuorinen、Martino）、Composers Quartet ×3（Carter 1&2、Crawford／Perle／Babbitt、Carter／Babbitt／Powell）、Speculum Musicae ×2、Fine Arts Quartet、JACK《Eckardt: Passage》、Ars Combinatoria《Babbitt: String Quartets》、Continuum《Wolpe: Enactments》、Cuckson ×3（Shapey ×2、Martino）、Zukofsky、Skouras、Asakawa、Swann、Hudson & Ohlsson、Goldray、Seelye、Schulte & Feinberg、Holzman、Hodgkinson、Robert Miller、Sollberger、Macomber、Feinberg、Chicago CCP《Shapey SQ7》。
+- **策展→研究汰換**：ml59 策展 19（濕混音 credit 篩子；主場景點名六組有五組池中同人判輕先擋）、主線汰 1、研究汰 5（dancehall／DJ、合成器、美國重混、多場次無混音者、Pablo 小調偏冷）→ 13。mc48 策展 50、主線汰 5、研究汰 14（抒情慢章 10、現場 2、大編制 2）→ 31；古典掛名照 §0.7。
+- **主線審稿**：ml59 改 1 處（Bim Sherman 單源樂評句）、mc48 改 3 處（兩句單源樂評評價、GCM《Martino》hook 由樂評反問改為研究稿事實重寫）；存各批 `desc-override.json`。
+- **上線**：card_catalog 44、KV 44 鍵回讀逐字一致（stamp 20261024r15b）、試聽 18＋7 ready（Apple 專輯網址 fetch 25 張補齊）、seed +44；封面 CAA 6／Apple 15／Discogs 23（registry → 488），縮圖表目視相符；`genre-l3-artist-map.json` 補 4 鍵（artist|album 形式），44/44 落位。寫入前對 origin 83 條近三天分支 seed 去重 0 撞。
+- **落格**：ml59 恍惚 13/13、mc48 冷冽 31/31（皆 100%）。併 main 後八格：**恍惚 1,699、頹靡 1,636、冷冽 1,620**（目標各約 2,000；差 301／364／380）。
+- **剩餘潛力（店主盤點用）**：roots reggae 人聲慢盤見底（約剩 3–5，全靠 credit 推論）；恍惚線 reggae／dub 累計約 200 張到此為止，再挖只剩冷硬 steppers（會落頹靡）。美國 uptown 序列主義見底（約剩 3–6，全貼邊）；mc32＋mc43＋mc46＋mc47＋mc48 現代古典共 129 張，冷冽線現代古典池到此為止。
+- **新藝人（無介紹，未切）**：33 個掛名列在兩批 rulings 末尾。
+- **主要檔案**：`batch-progress/add-20261024-{ml59,mc48}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{ml59,mc48}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{ml59,mc48}/`、`onboarding-manifest-add-20261024-{ml59,mc48}-20261024.json`、`desc-tools/batches/*/add-20261024-{ml59,mc48}*`、`data/discogs-cover-registry.json`、`genre-l3-artist-map.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 44/44；build-card-moods 錨點 104/104。
+
 ### 2026-10-24｜dip-vinyl-shop｜店主指定上架：Miles Davis《Miles: The New Miles Davis Quintet》（add-20261024-miles，卡池 21,849 → 21,850）
 
 - **起因**：店主問 Miles Davis 為何卡池這麼少（實際 50 張，頻率光譜搜尋只列 8 筆），「The New Miles Davis Quintet 補上就好」。同時提的 Fishmans 三部曲早已在池，不重做。
