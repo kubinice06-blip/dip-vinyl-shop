@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜情緒薄格線第 14 輪派工（補兩個）：優先序 70–73
+
+- **起因**：第 13 輪兩個工作階段收工（ml56 20／19、mc42 13／13、ml57 12／12、md30 28／28，上線／落格；ml57、md30 主場景見底），mc43／md31 仍在跑。恍惚 1,630、頹靡 1,541、冷冽 1,520。
+- **新場景**：mc44 ESP-Disk／BYG 自由爵士二線、mc45 IDM／drill'n'bass 快而尖薄、md32 drone／電子極簡第二波（md6 高產）、ml58 roots reggae 人聲慢盤（店主要多 dub）。
+- **派工**：mc44＋md32、ml58＋mc45。
+- **主要檔案**：`batch-progress/mood-cells-20261022/SCENES.md`。
+- **驗證**：純佇列文件變更；新條號 21721–22040 不與既有重疊。
+
 ### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 13 輪 ml57／md30：neo-soul 女聲慢盤 12 張、dark ambient 第五波 28 張上線，落格 12/12、28/28
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 13 輪，本工作階段負責 ml57、md30（評分照 10-23 體感標準；店主同日「恍惚可以多增加一點 downtempo 與 dub」）。ml57（`add-20261023-ml57`，恍惚）：KING《We Are KING》、Yuna《Chapters》、Adriana Evans 首作、Conya Doss《Love Rain Down》、Trina Broussard《Same Girl》、Rachelle Ferrell 同名盤、Dezarie ×3（FYA、Eaze the Pain、The Fourth Book）、Mo’Kalamity meets Sly & Robbie、N’Dambi《Little Lost Girls Blues》、Aisha《True Roots》（女聲 roots／dub 擴寫）。md30（`add-20261023-md30`，頹靡）：Dahlia's Tear ×4、Desiderii Marginis《Bathe in Black Light》、Atrium Carceri ×2（含與 Eldar 合作）、Cyclic Law 二線（Hesychia、Shedir、Shrine、Sinke Dûs）、Cryo Chamber 二線（Underwater Sleep Orchestra、Silent Universe、Ugasanie 新盤、Dronny Darko ×2、Council of Nine、Void Stasis、Eximia、Sjellos）、Glacial Movements（Glotman、Lia Bosch、Aware）、Winter-Light（Argyre Planitia、Kloob & Onasander）、Tho-So-Aa、Stuzha、Lull（isolationist 擴寫）。
