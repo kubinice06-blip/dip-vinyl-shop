@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 13 輪 mc43／md31：現代室內樂 36 張、無鼓 drone 26 張上線，落格 36/36、24/26
+
+- **內容**：店主「三個情緒薄格各補到約 2,000」第 13 輪，本工作階段負責 mc43、md31（評分照 10-23 體感標準）。mc43（`add-20261023-mc43`，冷冽）：Arditti（Neuwirth、Nancarrow、Guerrero、Reynolds、Carter、Mexico）、Klangforum Wien（Aperghis、Lachenmann《Mouvement》、Reiter）、ELISION、ensemble recherche、Hodges、Holliger ×2、Diotima ×2、ensemble mosaik ×2、Michel-Dansac、Veale《Pynchon Cycle》、asamisimasa、Mari Poll、Pacifica《Carter 1 & 5》、Cuckson、LaSalle、EIC《Hurel》、Nancarrow Vol.4、Knox、Damiens、Gil、Dillon、Oslo Sinfonietta、Poppe《Interzone》、Ensemble 21、Mode《Lachenmann》、Huebner《Reynolds》。md31（`add-20261023-md31`，頹靡）：Anjou ×2、Growing、Rothko ×2、Windy & Carl ×2、Matt Elliott、Dissolve、Main ×4、E.A.R. ×4、Robert Hampson ×2、Lull ×2、ELEH ×3、Maeror Tri、Troum。
+- **策展→研究汰換**：mc43 策展 54＋補 12、主線汰 16（同作品池中已有、貼邊）、研究汰 14（稀疏極弱、抒情、大編制、現場錄音）→ 36。md31 策展 54＋補 25、主線汰 14、研究汰 39——**冷 post-rock 二線樂團幾乎全有鼓組或人聲**（Jessamine、Implodes、HṚṢṬA、Polmo Polpo、The Drift、Pan•American…），主場景見底，改收無鼓 drone／isolationist → 26。兩場景都不再派。
+- **主線審稿**：md31 改 1 張（Anjou《Epithymía》單源評價詞）；mc43 改 3 張（Dillon hook 的「據說」、Hurel 獎項名稱單源存疑、Steen-Andersen 語病；hooks／input 同步）。
+- **上線**：card_catalog 26＋36、KV 62 鍵回讀逐字一致（stamp 20261024r13）、試聽 17＋28 ready、seed +62、prepare／published gate 兩批 0 error；封面 CAA 42、Apple 14、Discogs 6（已登錄 registry），縮圖表目視相符。上線前對 origin 近 3 天所有 `claude/*` 分支 seed＋卡單與 main seed 去重 0 撞。mc43 古典三軸走 §0.7 錨點制。
+- **情緒評分**：`score-mc43`、`score-md31`。**mc43 落冷冽 36/36（100%）**；**md31 落頹靡 24/26（92%）**（Anjou 首作判輕落平靜、Windy & Carl《Portal》z 0.0 落恍惚）。八格（併 main 後，含 ml56／mc42、ml57／md30）：恍惚 1,631、頹靡 1,565、冷冽 1,556。
+- **藝人介紹**：未切（並行規矩）；新藝人 29 個掛名列在兩批 rulings.md 末尾。
+- **主要檔案**：`batch-progress/add-20261023-{mc43,md31}/`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-{mc43,md31}.json`、`SCENES.md`、`batch-progress/HANDOFF-mood-cells-line.md`、`batch-progress/mood-axes/score-{mc43,md31}/`、`onboarding-manifest-add-20261023-{mc43,md31}-20261024.json`、`desc-tools/batches/*/add-20261023-{mc43,md31}*`、`data/discogs-cover-registry.json`、seed／試聽地圖／類型樹／抽卡封面／mood 產生檔。
+- **驗證**：qa-batch research／hooks／out、chk-hook-crossgroup、qa-check-research、fix-spacing 全過；prepare／published gate 兩批 0 error；KV 回讀 62/62；類型樹 62/62 落位；build-card-moods 錨點 104/104、gate exit 0。
 ### 2026-10-24｜dip-vinyl-shop｜情緒薄格線第 14 輪派工（補兩個）：優先序 70–73
 
 - **起因**：第 13 輪兩個工作階段收工（ml56 20／19、mc42 13／13、ml57 12／12、md30 28／28，上線／落格；ml57、md30 主場景見底），mc43／md31 仍在跑。恍惚 1,630、頹靡 1,541、冷冽 1,520。
