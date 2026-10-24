@@ -128,3 +128,11 @@
   - `Ensemble intercontemporain|Hurel…`：hook「獲大獎」與正文「Ernst von Siemens 音樂獎」——研究 e 組只有法文維基一源，且 1995 年 Hurel 得的是基金會的作曲家獎（Förderpreis），不是同名大獎；改 hook「得獎那一年」、正文「那個獎來自 Ernst von Siemens 音樂基金會」→ 163 字。hook 已同步。
   - `Oslo Sinfonietta|Steen-Andersen: Chambered Music`：「長號出現在標題曲〈Chambered Music〉暗示被壓住的話語；同曲也用」語病，改「標題曲〈Chambered Music〉用這把長號暗示被壓住的話語，也用」→ 177 字。
 - 21553：核過未改——Yejin Gil 盤「聲音明亮、冰冷、堅硬」是研究 e 組對〈Incises〉的聲音描述，保留；Arditti《Mexico》寫「音樂節期間」錄音，未寫成現場（研究 c 組：是否現場未明載）。
+
+## 上線與評分（2026-10-24，主線）（條號 21554–21556）
+- **21554**：上線 36 張：card_catalog 36／36、KV 36 鍵回讀逐字一致（stamp 20261024r13）、試聽 28 ready／8 unavailable（Apple 無條目，或 Simaku BIS、Nancarrow MDG Vol.4 有條目但 API 不給曲目／試聽；Damiens 取 2002 Decca 再發同錄音、Cuckson Apple ℗ 2018 同錄音，皆逐軌對過）、seed +36、prepare／published gate 0 error（38 warning 皆 UPC 盡力而為）。封面 CAA 25、Apple 9（含人工身分 Mode 252、Mode 329）、Discogs 2（Mahnkopf《Pynchon Cycle》、Knox，已登錄 registry），縮圖表目視相符。去重同 md31。古典三軸全走 §0.7 錨點制（`ratings-override.json`，照 mc32）。
+- **21555**：子曲風 warm-batch 30 有標籤／6 空（類型樹仍 36／36 落位）；抽卡封面重建。
+- **21556**：**落格率 36/36＝100%**（`batch-progress/mood-axes/score-mc43/`，照 10-23 體感標準）。評分 x 3.0–4.2、y −1.2～+0.3、z −1.8～−1.2；conf mid 14、low 22。貼邊 x 3.0 三張：Knox 中提琴獨奏、Holliger《Carter / Yun》、Mode《Lachenmann》（安靜留白但緊繃，評者判躁）。研究後汰掉的稀疏極弱型若留著，多半會落平靜——研究層「來源寫出稀疏極弱就汰」的做法有效。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Klangforum Wien、ELISION Ensemble、ensemble recherche、Nicolas Hodges、Quatuor Diotima、ensemble mosaik、Donatienne Michel-Dansac、Peter Veale、asamisimasa、Mari Poll、Pacifica Quartet、Miranda Cuckson、LaSalle Quartet、Ensemble intercontemporain、Conlon Nancarrow、Garth Knox、Alain Damiens、Yejin Gil、James Dillon、Oslo Sinfonietta、Enno Poppe、Ensemble 21、Eric Huebner（23 位；已查 `data/artist-intros/` 與 progress.json 皆無。Arditti Quartet、Heinz Holliger、Helmut Lachenmann 已有介紹）。

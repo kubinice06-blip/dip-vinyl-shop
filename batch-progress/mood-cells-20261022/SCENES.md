@@ -89,8 +89,8 @@
 | 65 | mc42 | 自由即興打擊／鼓獨奏（Milford Graves、Han Bennink、Paul Lovens、Tony Oxley、Sunny Murray、Paul Lytton） | 派→情緒薄格 ml56、mc42（第 13 輪） |
 | 66 | ml57 | neo-soul 女聲慢盤 2000s–10s（Jill Scott 慢盤、Goapele、Lalah Hathaway、Ledisi、Emily King 系；ml55 路高產） | 派→情緒薄格 ml57、md30（第 13 輪） |
 | 67 | md30 | dark ambient 第五波（md29 收 32 仍高產；Atrium Carceri 周邊、Dahlia's Tear、Desiderii Marginis、Ulf Söderberg 系） | 派→情緒薄格 ml57、md30（第 13 輪） |
-| 68 | mc43 | 現代室內樂尖細二線（Kurtág、Holliger、Sciarrino、Rihm、Berio Sequenza、Saariaho 室內作；mc32 收 29） | 派→情緒薄格 mc43、md31（第 13 輪） |
-| 69 | md31 | 冷 post-rock／器樂慢盤二線（Labradford、Bark Psychosis 慢盤、Rachel's 冷盤、Dirty Three 冷盤；md7 收 35） | 派→情緒薄格 mc43、md31（第 13 輪） |
+| 68 | mc43 | 現代室內樂尖細二線（Kurtág、Holliger、Sciarrino、Rihm、Berio Sequenza、Saariaho 室內作；mc32 收 29） | ✅ 上線 36／落格 36 |
+| 69 | md31 | 冷 post-rock／器樂慢盤二線（Labradford、Bark Psychosis 慢盤、Rachel's 冷盤、Dirty Three 冷盤；md7 收 35） | ✅ 上線 26／落格 24 |
 
 **暫停**：mc13 math rock、mc21 post-punk revival、mc30 minimalism（旋律清楚＝暖）、mc9／mc10／mc20／mc25／mc26 系的 synth-pop／new wave／K-pop／synthwave 續集（2026-10-23 體感標準：旋律清楚往暖，落雀躍）、mc23 art pop、ml4 系東亞續集、ml14 spiritual jazz（體感標準判冷，不是恍惚）、ml22、ml27。**重開**（體感標準下會落冷冽）：mc4、mc14、mc22、mc28。
 
@@ -130,7 +130,7 @@
 | md28 | 20601 | dark ambient 第三波（Cryo Chamber、Cyclic Law、Glacial Movements、Malignant 二線藝人） | ✅ 上線 34／落格 34（2026-10-23；策展 54、主線汰 8、研究汰 12、補 3 再汰 3；文案寫拍點／溫暖／旋律樂器或人聲領奏的汰；Cryo Chamber 二線已挖到底，Cyclic Law／Old Europa Cafe 還有少量） |
 | md29 | 21161 | dark ambient 第四波（Kammarheit、Northaunt、Sabled Sun、Council of Nine、Cryo Chamber 晚期新人） | ✅ 上線 33／落格 32（2026-10-23；策展 58＋補 15、主線汰 15、研究汰 25；文案寫打擊／溫暖／旋律樂器或口白領奏的汰；Cryo Chamber 晚期與 Cyclic Law 二線已挖到底，主場景見底不再派；器樂 dub 擴寫只收 2 張、Jah Shaka 色溫判 0 落恍惚） |
 | md30 | 21561 | dark ambient 第五波（Atrium Carceri 周邊、Dahlia's Tear、Desiderii Marginis、Ulf Söderberg 系） | 派→情緒薄格 ml57、md30（第 13 輪） |
-| md31 | 21641 | 冷 post-rock／器樂慢盤二線（Labradford、Bark Psychosis 慢盤、Rachel's 冷盤、Dirty Three 冷盤） | 派→情緒薄格 mc43、md31（第 13 輪） |
+| md31 | 21641 | 冷 post-rock／器樂慢盤二線（Labradford、Bark Psychosis 慢盤、Rachel's 冷盤、Dirty Three 冷盤） | ✅ 上線 26／落格 24（2026-10-24；策展 54＋補 25、主線汰 9＋5、研究汰 30＋9；冷 post-rock 二線樂團幾乎全有鼓組或人聲，只剩無鼓 drone／isolationist 能收；出格 Anjou 判輕、Windy & Carl 色溫 0；場景見底，不再派） |
 
 ## 冷冽 mc（躁＋輕＋冷；門檻 x ≥ 3.3、y ≤ +0.2、z ≤ −0.3）
 
@@ -180,7 +180,7 @@
 | mc40 | 21001 | 自由即興弦樂（Leroy Jenkins、Billy Bang 前衛期、Joëlle Léandre、Barry Guy 獨奏、Mat Maneri、Phil Wachsmann） | ✅ 上線 29／落格 28（2026-10-23；策展 51（擋現場 21）、主線挑 45、研究汰 16（借曲／藍調 5、稀疏長音 6、電聲厚重 5）；出格 August Steps 判靜；主場景見底，不再派） |
 | mc41 | 21081 | 電子原音／musique concrète 尖細那半（Parmegiani、Bayle、Xenakis 電子作、Dhomont） | ✅ 上線 11／落格 10（2026-10-23；策展 28（掃 empreintes 約 160 張）、主線汰 4、研究汰 13（飄浮長音 5、厚密噪音 3、聲音零來源 4、現場 1）；Stavropoulos 判靜落平靜；見底不再派） |
 | mc42 | 21401 | 自由即興打擊／鼓獨奏（Milford Graves、Han Bennink、Paul Lovens、Tony Oxley、Sunny Murray、Paul Lytton） | 派→情緒薄格 ml56、mc42（第 13 輪） |
-| mc43 | 21481 | 現代室內樂尖細二線（Kurtág、Holliger、Sciarrino、Rihm、Berio Sequenza、Saariaho 室內作） | 派→情緒薄格 mc43、md31（第 13 輪） |
+| mc43 | 21481 | 現代室內樂尖細二線（Kurtág、Holliger、Sciarrino、Rihm、Berio Sequenza、Saariaho 室內作） | ✅ 上線 36／落格 36（2026-10-24；策展 54＋補 12、主線汰 9＋7、研究汰 13＋1；稀疏極弱型、同作品池中已有、大編制、現場錄音汰；主場景見底，不再派） |
 
 ## 恍惚 ml（靜＋重＋暖；門檻 x ≤ 2.7、y ≥ +0.8、z ≥ +0.3）
 

@@ -142,3 +142,11 @@
 - 21711：逐張審 26 張（out-1 13、out-2 13），逐句對回研究稿；qa-batch out 全過、qa-check-research 兩檔各 0 標記、fix-spacing 0 補；正文無媒體名、無「據」字。抽核：Rothko 2001 解散原始陣容（研究 c 組 Discogs）、Windy & Carl《Portal》卡帶 200 份／流通不到 100、1995-11 Ba Da Bing! CD（研究 c 組）、Hampson 1965 生於布羅姆利、Dowson 1996 離團（研究 a、e 組維基）、ELEH 首次數位發行（研究 b 組 Boomkat）、Dissolve 1995-05-26（研究 d 組）。
 - 21712：改 1 張（`desc-override.json`）：`Anjou|Epithymía`「收在一段令人心碎的吉他長音上」——「令人心碎」出自單一樂評（研究 a 組 AllMusic）的評價詞，改為不掛來源的聲音描述「收在一段拉得很長的吉他長音上」→ 238 字。只動正文，hooks／input 無此句、不需同步。
 - 21713：核過未改——Matt Elliott《The Mess We Made》正文寫「低沉人聲一層層疊上去」與〈Forty Days〉後段鼓點，照研究 d 組事實保留（策展時判大多無鼓、陰影般；有人聲是評分風險，交評分驗收）。Anjou 首作寫 Steven Hess 負責打擊（研究 a 組：稀疏點綴、非律動推進）。
+
+## 上線與評分（2026-10-24，主線）（條號 21714–21716）
+- **21714**：上線 26 張：card_catalog 26／26、KV 26 鍵回讀逐字一致（stamp 20261024r13）、試聽 17 ready／9 unavailable（Apple 無條目或曲目對不上；ELEH《Homage to the Square Wave》取 2015 Important 盒裝《Homage》disc 1 同錄音、E.A.R.《The Köner Experiment》12 軌長度對上 MB）、seed +26、prepare／published gate 0 error（26 warning 皆 UPC 盡力而為）。封面 CAA 17、Apple 5（CAA 404，取已確認同盤的 Apple 官方圖）、Discogs 4（Main《Tau》《Surcease》、ELEH《Location Momentum》《The Weight of Accumulation》，已登錄 registry），縮圖表目視相符。上線前對 origin 所有近 3 天 `claude/*` 分支 seed＋卡單與 origin/main seed 去重 0 撞。三軸沿用機器基線（md29 先例）。
+- **21715**：子曲風 warm-batch 26／26 有標籤，類型樹 26／26 落位；抽卡封面重建。
+- **21716**：**落格率 24/26＝92%**（`batch-progress/mood-axes/score-md31/`，照 10-23 體感標準）。評分 x 1.1–2.4、y 0.4–1.7、z −1.7～0.0；conf mid 11、low 15。出格 2：Anjou《Anjou》y 0.4 落平靜（稀疏留白、製作乾淨，md7 Labradford 後期判輕同型）；Windy & Carl《Portal》z 0.0 落恍惚（夢幻吉他＋輕柔人聲，研究 c 組早已提示 4AD 夢幻質地偏暖風險）。無鼓 isolationist／drone（Main、E.A.R.、Lull、ELEH、Hampson、Maeror Tri、Troum）全中。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Anjou、Growing、Matt Elliott、Dissolve、Robert Hampson、ELEH（6 位；已查 `data/artist-intros/` 與 progress.json 皆無。Main、E.A.R.、Rothko、Windy & Carl、Lull、Maeror Tri、Troum 已有介紹）。
