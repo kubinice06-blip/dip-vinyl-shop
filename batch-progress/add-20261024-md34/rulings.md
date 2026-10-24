@@ -48,3 +48,15 @@
 - **22288**：Mournful Congregation《The Monad of Creation》卡單 label「Painiac」是黑膠廠牌，CD 為 Weird Truth Productions；Bandcamp 發行日 2005-03-01 與 MB 2005-04-19 不一致，只寫年份。「第一張全長」維基專輯清單把 1999《Tears from a Grieving Heart》也列為錄音室專輯，facts 改稱「第一張 LP」。完全沒有專輯層樂評，聲音面 thin。
 - **22289**：Mournful Congregation《The June Frost》**moodGuess 輕中度存疑（z 向暖）**：Teeth of the Divine（Erik T，2009-08）證實極慢（plodding、funeral march）、全程無 blast beat、人聲洞穴般低吼加疊錄，但旋律哀傷而悲壯、拿早期 Anathema／My Dying Bride 比，含木吉他段；metalbandcamp 轉載文稱和聲吉他「奇異地令人振奮」（可信度中等，該文把 Book of Kings 誤寫為前作）。x、y 預估吻合，z −1.4 的冷度偏悲壯而非冰冷，主線留意。
 - **22290**：本組 WebSearch 用 3 次，其餘 WebFetch／MB API／Discogs API／維基。9 張 MB 身分皆吻合，年份、盤名無誤；推翻策展層處：Subconscious Dissolution 曲數（三→四）、Quietus 與 Antithesis 與 Monad 的卡單廠牌為地區版而非主發行廠牌。聲音面普遍偏薄：9 張中只有 Antithesis（blast beat）與 June Frost（旋律清楚、無 blast beat）有直接樂評文字，其餘 7 張 status 標 thin 或 full 但聲音面薄，主線若要把握需補聽感。
+
+## 研究 d 組（條號 22311–22320）
+- **22311**：Bell Witch《Future's Shadow Part 1》：單曲 1:23:15、Profound Lore 2023-04-21、Billy Anderson 錄混（MA）。聲音：鼓極慢無加速、人聲乾淨吟唱／低語為主（非死腔）、管風琴與合成器明顯增加、旋律由管風琴與貝斯主題承載。moodGuess 輕度存疑（z 向）：AMG 稱「冷到暖的憂鬱」、Wonderbox 稱「允許希望與光亮」、有「舒適的貝斯音色」，色溫可能不如預估 −1.3 冷；x、y 無疑。
+- **22312**：Monolithe《Monolithe I》：身分與年份對（MA 2003-07-03、MB 2003-06-25，寫 2003 即可）。程式鼓、穩定慢拍但非龜速，有偶發加速段（約 30 分後三分鐘快刷奏）；鋼琴與大調段落，MA 樂評明說「不暗、偏亮、白天聽更合適」，法文維基稱大調在 doom 罕見。**moodGuess 中度存疑**（x、z 向）：預估 x 1.6／z −1.5，實際偏亮偏動，評分可能偏恍惚或躁；建議主線視為貼邊候補，可汰換。
+- **22313**：Monolithe《Monolithe II》：Candlelight CANDLE116CD、50:27；程式鼓、手風琴客座（Emmanuel Mechling）。**moodGuess 中度存疑**：Mercian Doomster 明說「中速範圍、非 funeral doom 的龜速、常帶振奮感」，Sean16 稱鍵盤更突出、前十分鐘最旋律化，Last Rites 稱遞進旋律如早期 Katatonia；x（靜）、z（冷）都可能偏高，同 22312 建議貼邊候補。錄音日期 MA（2003-12～2004-01 錄、2004-02～04 混母帶）與法文維基（2004 年 2–4 月）不一致，facts 採 MA。
+- **22314**：Catacombs《In the Depths of R'lyeh》：身分對（Moribund DEAD 74 CD、2006-02-21）；一人樂團 Xathagorra Mlandroth（J. Del Russi，前身 Hierophant）。聲音吻合預估（極慢、死腔、冷；樂評稱製作反而「清晰」非泥濘，不影響判斷）。無存疑。MA 同名團有三個（NJ／AZ 是本團 id 9386），已辨明。
+- **22315**：Colosseum《Chapter 1: Delirium》：身分對（Firedoom FDOOM019、2007-11-14）；鍵盤承載旋律、「遙遠冰冷」、人聲低到難辨、鼓極慢。輕微註記：樂評有「calming」一語，不構成存疑。Juhani Palomäki 2010 年過世、樂團解散（MA 樂團頁）。
+- **22316**：Aldebaran《Embracing the Lightless Depths》：身分對（Profound Lore PFL 096、2012-05-15）；兩首長曲（24:57、29:37）夾三首環境短曲，MA 備註原始吉他貝斯鼓單次連續演奏錄到類比錄音帶；Billy Anderson 錄混。人聲全程低吼、鼓極慢，吻合預估，無存疑。MA 此盤無樂評，聲音靠 Obelisk 與 Last Rites。
+- **22317**：Asunder《A Clarion Call》：身分對（Life Is Abuse LIFE 031、2004-08）；第四首無題器樂 11:58 在 MA 註「未列名」（單一來源）；Billy Anderson 製作、大提琴客座。**輕度存疑**：樂評提及「莊嚴、懷舊、出乎意料好記」的旋律、三位成員含深沉清唱、大提琴哀鳴，z 可能比 −1.4 稍暖；x 2.0 本就在邊距內。不建議汰換。
+- **22318**：Nortt《Ligfærd》：最早版本是 Possession Productions 卡帶（限量 418 卷，MB／MA 一致）；人聲為高音嘶啞、低音量（非預估的「低吼」），鼓稀少、環境音與合成器多；樂評多稱極慢、荒涼；Cheeses_Priced 負評稱主奏旋律照挪威黑金屬標準。大致吻合，y（重）略受質疑，不到汰換。
+- **22319**：Nortt《Galgenfrist》：年份差異——MA 2007-12-29，MB 2008-02-28（Avantgarde AV 100）；卡單 2008 從 MB，寫作層寫 2008 或不寫具體日。黑金屬成分更少、近 drone、鼓更疏、人聲稀少沉在聲響裡、鋼琴旋律串連；吻合預估，吉他「難以形成 riff」使重量略輕，不存疑。
+- **22320**：本組 WebSearch 用 3 次（Bell Witch、Monolithe、Aldebaran 各一），其餘為 WebFetch 與 curl 直取 Metal Archives 專輯頁／樂評頁、MB API、維基。9 張 MB 身分與卡單的盤名、年份、廠牌全數對得上，推翻策展層 0 處。樂評幾乎全是 Metal Archives 使用者意見，facts 已標明為樂評說法；單一來源的細節（Asunder 第四首、Nortt 10 卷預聽卡帶）在 notes 標註。
