@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-24｜dip-vinyl-shop｜情緒薄格線第 15 輪派工（最後一輪）：店主「做完第 15 輪後暫停工作，盤點一下收了什麼」
+
+- **店主指示**：第 15 輪做完就停止派工，改做全線盤點。
+- **現況**：mc43／md31 收工（36／36、26／24，上線／落格）；恍惚 1,631、頹靡 1,565、冷冽 1,556。第 14 輪 mc44／md32、ml58／mc45 仍在跑。
+- **第 15 輪**：空位先派 mc46 現代室內樂第三波（mc43 高產）＋md33 冷 post-rock 第三波；ml58／mc45 隨後收工（28／28、2／1，mc45 IDM 場景幾乎全落雀躍／暴躁），補派 mc47 當代獨奏器樂＋md34 funeral doom 第二波；mc44／md32 收工後再補最後一個，三個全部收工即停。
+- **主要檔案**：`batch-progress/mood-cells-20261022/SCENES.md`。
+- **驗證**：純佇列文件變更；新條號 22041–22200 不與既有重疊。
 ### 2026-10-24｜dip-vinyl-shop｜情緒薄格策展線第 14 輪 ml58／mc45：roots reggae 人聲慢盤 28 張、IDM 2 張上線，落格 28/28、1/2
 
 - **內容**：店主「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」第 14 輪＋「恍惚可以多增加一點 downtempo 與 dub」，本工作階段負責 ml58、mc45（評分照 10-23 體感標準）。ml58（`add-20261024-ml58`，恍惚）：Rod Taylor、Ras Michael & The Sons of Negus《Love Thy Neighbour》、Prince Alla、Junior Ross & The Spears、Noel Ellis、Seke Molenga & Kalo Kawongolo（Black Ark）、Peter Broggs ×2、Earl Sixteen《Reggae Sound》、Michael Prophet《Certify》、Triston Palma ×2、Jimmy Riley《Showcase》、Junior Keatting、Freddie McKay、Well Pleased & Satisfied、David Jahson、Cultural Roots、Junior Murvin《Muggers in the Street》、Flick Wilson、Wayne Wade、Sammy Dread《Roadblock》、Mwanamke Mwafrika、Aisha《Daughters of Zion》、Princess Sharifa、Shanti Yalah、Tetrack《Trouble》、Anthony Johnson。mc45（`add-20261024-mc45`，冷冽）：Jamie Lidell《Muddlin Gear》、General Magic《Rechenkönig》。
