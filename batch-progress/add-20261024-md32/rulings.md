@@ -140,7 +140,7 @@
 - **22033** 媒體名、榜單名次、「據說／據傳」全批 0。
 
 ## 上線與評分（2026-10-24，主線）（條號 22034–22037）
-- **22034**：上線 28 張：card_catalog 28／28、KV 28 鍵回讀逐字一致（stamp 20261024）、試聽 21 ready／7 unavailable（Radigue、Collins、Archetti、Mohammad、NWW、Slomo《The Bog》、Altar Of Flies 未上架；1–2 軌長曲盤 6 張與 chra 人工身分卡走 preview-override）、seed +28、prepare／published gate 0 error（29 warning 皆 UPC 盡力而為與 chra 人工身分）。封面 CAA 23、Discogs 5（Collins、Haynes、Slomo《The Bog》、Archetti CAA 無圖；chra 人工身分），縮圖表目視相符，登錄 `data/discogs-cover-registry.json`（434–438）。
+- **22034**：上線 28 張：card_catalog 28／28、KV 28 鍵回讀逐字一致（stamp 20261024）、試聽 21 ready／7 unavailable（Radigue、Collins、Archetti、Mohammad、NWW、Slomo《The Bog》、Altar Of Flies 未上架；1–2 軌長曲盤 6 張與 chra 人工身分卡走 preview-override）、seed +28、prepare／published gate 0 error（29 warning 皆 UPC 盡力而為與 chra 人工身分）。封面 CAA 23、Discogs 5（Collins、Haynes、Slomo《The Bog》、Archetti CAA 無圖；chra 人工身分），縮圖表目視相符，登錄 `data/discogs-cover-registry.json`（455–459）。
 - **22035**：seed 曲風欄 Last.fm 標錯 5 張，主線手改：Slomo ×2 `hiphop,rock`（同名嘻哈藝人）→ `electronic`；OPO `[]` → `electronic`；Hahn `rock,electronic` → `electronic,rock`；Mohammad `classical` → `electronic,classical`。子曲風 worker 標 27、空 1＋主類錯 1 → Hahn、OPO、Mohammad（主類改 electronic 後失去節點）補進 `genre-l3-artist-map.json` 的 `electronic/ambient/drone`，重建後 28/28 有節點。
 - **22036**：頂點：rarity uncommon 26、epic 2，未觸及殿堂／遺珠／異端門檻，列一般卡。
 - **22037**：**落格率 25/28＝89%**（`batch-progress/mood-axes/score-md32/`，照 10-23 體感標準）。評分 x 1.2–3.1、y −0.2～+1.9、z −2.0～−0.7；conf mid 10、low 18。出格 3 張：Vainio《Onko》（稀疏靜電劈啪、近無聲，y −0.2）與 Radigue《Transamorem》（極細長音，y 0.4）判輕落**平靜**——研究層已點出「y 偏低／無低頻證據」的兩張，**microsound 稀疏型與 Radigue 式細長音不是頹靡的池子**；NWW《Deadlined》（冷爪弦樂、不和諧、擬音帶恐懼，x 3.1）判躁落**暴躁**。貼邊：Drumm《Trouble》與 Machinefabriek y 0.5、Hahn z −0.7。

@@ -5,7 +5,7 @@
   {
    "id": "rock",
    "zh": "搖滾",
-   "count": 5180,
+   "count": 5189,
    "children": [
     {
      "id": "indie-alt",
@@ -154,7 +154,7 @@
     {
      "id": "punk-wave",
      "zh": "龐克新浪潮",
-     "count": 972,
+     "count": 973,
      "children": [
       {
        "id": "punk",
@@ -179,7 +179,7 @@
       {
        "id": "no-wave",
        "zh": "No Wave",
-       "count": 96
+       "count": 97
       },
       {
        "id": "goth",
@@ -317,22 +317,22 @@
     {
      "id": "dream-post",
      "zh": "音牆後搖",
-     "count": 364,
+     "count": 372,
      "children": [
       {
        "id": "post-rock",
        "zh": "後搖滾",
-       "count": 174
+       "count": 180
       },
       {
        "id": "shoegaze",
        "zh": "瞪鞋",
-       "count": 153
+       "count": 158
       },
       {
        "id": "dream-pop",
        "zh": "夢幻流行",
-       "count": 134
+       "count": 135
       },
       {
        "id": "slowcore",
@@ -635,22 +635,22 @@
   {
    "id": "electronic",
    "zh": "電子",
-   "count": 2792,
+   "count": 2811,
    "children": [
     {
      "id": "ambient",
      "zh": "Ambient / Drone",
-     "count": 1327,
+     "count": 1343,
      "children": [
       {
        "id": "dark-ambient",
        "zh": "Dark Ambient",
-       "count": 377
+       "count": 383
       },
       {
        "id": "drone",
        "zh": "Drone",
-       "count": 364
+       "count": 379
       },
       {
        "id": "idm",
@@ -665,7 +665,7 @@
       {
        "id": "neoclassical",
        "zh": "偏現代古典",
-       "count": 97
+       "count": 100
       },
       {
        "id": "new-age",
@@ -677,17 +677,17 @@
     {
      "id": "techno",
      "zh": "Techno",
-     "count": 675,
+     "count": 681,
      "children": [
       {
        "id": "minimal",
        "zh": "Minimal",
-       "count": 316
+       "count": 322
       },
       {
        "id": "ambient-techno",
        "zh": "Ambient Techno",
-       "count": 287
+       "count": 291
       },
       {
        "id": "detroit",
@@ -808,7 +808,7 @@
     {
      "id": "idm",
      "zh": "IDM / Glitch",
-     "count": 442,
+     "count": 444,
      "children": [
       {
        "id": "ambient-idm",
@@ -818,7 +818,7 @@
       {
        "id": "glitch",
        "zh": "Glitch / Microsound",
-       "count": 185
+       "count": 187
       },
       {
        "id": "warp",
@@ -914,22 +914,22 @@
     {
      "id": "industrial",
      "zh": "Industrial / EBM",
-     "count": 298,
+     "count": 303,
      "children": [
       {
        "id": "dark-ambient",
        "zh": "Dark Ambient / Post-Industrial",
-       "count": 162
+       "count": 167
       },
       {
        "id": "power-electronics",
        "zh": "Power Electronics / 噪音",
-       "count": 100
+       "count": 105
       },
       {
        "id": "old-school",
        "zh": "老派工業",
-       "count": 78
+       "count": 82
       },
       {
        "id": "ebm",
@@ -946,27 +946,27 @@
     {
      "id": "noise",
      "zh": "實驗與噪音",
-     "count": 281,
+     "count": 291,
      "children": [
       {
        "id": "harsh",
        "zh": "Harsh Noise / 日本噪音",
-       "count": 209
+       "count": 218
       },
       {
        "id": "drone",
        "zh": "Drone / Dark Ambient",
-       "count": 172
+       "count": 180
       },
       {
        "id": "concrete",
        "zh": "具象音樂與拼貼",
-       "count": 75
+       "count": 76
       },
       {
        "id": "glitch",
        "zh": "Glitch / Microsound",
-       "count": 65
+       "count": 66
       }
      ]
     },
@@ -1372,22 +1372,22 @@
   {
    "id": "classical",
    "zh": "古典",
-   "count": 1375,
+   "count": 1411,
    "children": [
     {
      "id": "contemporary",
      "zh": "當代與極簡",
-     "count": 591,
+     "count": 625,
      "children": [
       {
        "id": "avant",
        "zh": "前衛與現代",
-       "count": 173
+       "count": 202
       },
       {
        "id": "neoclassical",
        "zh": "新古典 / 氛圍鋼琴",
-       "count": 100
+       "count": 103
       },
       {
        "id": "film-score",
@@ -1410,7 +1410,7 @@
     {
      "id": "modern",
      "zh": "20 世紀",
-     "count": 194,
+     "count": 203,
      "children": []
     },
     {
@@ -1898,37 +1898,37 @@
   {
    "id": "world",
    "zh": "世界",
-   "count": 1128,
+   "count": 1156,
    "children": [
     {
      "id": "reggae",
      "zh": "Reggae / Dub",
-     "count": 473,
+     "count": 501,
      "children": [
-      {
-       "id": "dub",
-       "zh": "Dub",
-       "count": 234
-      },
       {
        "id": "roots",
        "zh": "Roots Reggae",
-       "count": 233
+       "count": 261
+      },
+      {
+       "id": "dub",
+       "zh": "Dub",
+       "count": 249
       },
       {
        "id": "lovers",
        "zh": "Lovers Rock",
-       "count": 88
-      },
-      {
-       "id": "ska",
-       "zh": "Ska / Rocksteady",
-       "count": 79
+       "count": 90
       },
       {
        "id": "dancehall",
        "zh": "Dancehall / Ragga",
-       "count": 76
+       "count": 85
+      },
+      {
+       "id": "ska",
+       "zh": "Ska / Rocksteady",
+       "count": 84
       }
      ]
     },
@@ -1962,7 +1962,7 @@
     {
      "id": "african",
      "zh": "非洲",
-     "count": 192,
+     "count": 193,
      "children": [
       {
        "id": "west",

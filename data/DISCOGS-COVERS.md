@@ -3,8 +3,8 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **418** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 180、已退回 1）。
-最後更新：2026-10-23
+共 **449** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 211、已退回 1）。
+最後更新：2026-10-24
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
 `matchedOn` 欄記的就是實際對上哪幾項。圖片沿用 Discogs 圖床網址，
@@ -321,6 +321,28 @@
 | A_dontigny 《Geisteswissenschaften》 | [#4010943](https://www.discogs.com/release/4010943) | 2007 | No Type | IMNT 0715 | 唯一版本、主線目視與盤名相符 | ok |
 | Trevor Wishart 《Tongues of Fire》 | [#776947](https://www.discogs.com/release/776947) | 1994 | Orpheus The Pantomime | OTP001 | 唯一版本、主線目視與盤名相符 | ok |
 
+## add-20261023-mc42（10 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Alan Tomlinson / Steve Beresford / Roger Turner 《Trap Street》 | [#2332869](https://www.discogs.com/release/2332869) | 2003 | Emanem | 4092 | 唯一版本、主線目視與盤名相符 | ok |
+| Chris Corsano 《The Young Cricketer》 | [#1130247](https://www.discogs.com/release/1130247) | 2006 | Hot Cars Warp Records | WARP 011 | Discogs master 281158 的版本、主線目視與盤名相符 | ok |
+| Chris Corsano 《Cut》 | [#3559819](https://www.discogs.com/release/3559819) | 2012 | Hot Cars Warp Records | warp 15 | 唯一版本、主線目視與盤名相符 | ok |
+| Daniele D'Agaro, Alexander von Schlippenbach & Han Bennink 《Fingerprints》 | [#2926632](https://www.discogs.com/release/2926632) | 2010 | Artesuono | art 092 | 唯一版本、主線目視與盤名相符 | ok |
+| Phil Minton / Roger Turner 《Dada Da》 | [#623283](https://www.discogs.com/release/623283) | 1993 | Leo Records | CD LR 192 | 唯一版本、主線目視與盤名相符 | ok |
+| Pierre Favre & Andrea Centazzo 《Dialogues》 | [#1239480](https://www.discogs.com/release/1239480) | 1977 | Ictus Records | ICTUS 0004 | Discogs master 375921 的版本、主線目視與盤名相符 | ok |
+| Stefano Battaglia, Tony Oxley 《Explore》 | [#2880269](https://www.discogs.com/release/2880269) | 1990 | Splasc(H) Records | CD H 304-2 | 唯一版本、主線目視與盤名相符 | ok |
+| Steve Beresford / Han Bennink 《Directly to Pyjamas》 | [#933757](https://www.discogs.com/release/933757) | 1987 | Nato | NATO 1330 | Discogs master 233766 的版本、主線目視與盤名相符 | ok |
+| Tony Oxley 《4 Compositions for Sextet》 | [#1055102](https://www.discogs.com/release/1055102) | 1970 | CBS | 64071 | Discogs master 208997 的版本、主線目視與盤名相符 | ok |
+| Tony Oxley 《Ichnos》 | [#659887](https://www.discogs.com/release/659887) | 1971 | RCA Victor | SF 8215 | Discogs master 3374053 的版本、主線目視與盤名相符 | ok |
+
+## add-20261023-mc43（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Garth Knox 《Ligeti / Dusapin / Berio / Kurtág / Dillon / Sciarrino: Works for Solo Viola》 | [#11054156](https://www.discogs.com/release/11054156) | 2000 | Montaigne | MO 782082 | 唯一版本、主線目視與盤名相符 | ok |
+| Peter Veale 《Mahnkopf: Pynchon Cycle》 | [#11260601](https://www.discogs.com/release/11260601) | 2011 | Neos | NEOS 11036 | 唯一版本、主線目視與盤名相符 | ok |
+
 ## add-20261023-md11（4 張）
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
@@ -343,6 +365,15 @@
 | Jasper TX 《A Darkness》 | [#930116](https://www.discogs.com/release/930116) | 2007 | Lidar | lidar_1 | Discogs master 66874 的版本、主線目視與盤名相符 | ok |
 | Jasper TX 《Black Sleep》 | [#1382371](https://www.discogs.com/release/1382371) | 2008 | Miasmah | MIACD008 | 唯一版本、主線目視與盤名相符 | ok |
 | Jodis 《Secret House》 | [#1975816](https://www.discogs.com/release/1975816) | 2009 | Hydra Head Records | HH 666 191 | Discogs master 234049 的版本、主線目視與盤名相符 | ok |
+
+## add-20261023-md31（4 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| ELEH 《Location Momentum》 | [#2123622](https://www.discogs.com/release/2123622) | 2010 | Touch | TO:80 | 唯一版本、主線目視與盤名相符 | ok |
+| ELEH 《The Weight of Accumulation》 | [#3981888](https://www.discogs.com/release/3981888) | 2012 | Important Records (2) | IMPREC365 | 唯一版本、主線目視與盤名相符 | ok |
+| Main 《Tau》 | [#69867](https://www.discogs.com/release/69867) | 2002 | (K-RAA-K)³ | K031 | 唯一版本、主線目視與盤名相符 | ok |
+| Main 《Surcease》 | [#852020](https://www.discogs.com/release/852020) | 2006 | N-REC | n00005 | 唯一版本、主線目視與盤名相符 | ok |
 
 ## add-20261023-ml9（2 張）
 
@@ -402,6 +433,31 @@
 |---|---|---:|---|---|---|---|
 | Ta-ku 《DUSTY Vol.1》 | [#5337929](https://www.discogs.com/release/5337929) | 2012 | Not On Label (Ta-Ku Self-Released) | none | 唯一版本、主線目視與盤名相符 | ok |
 | Ta-ku 《DUSTY Vol. 2》 | [#5337950](https://www.discogs.com/release/5337950) | 2012 | Not On Label (Ta-Ku Self-Released) | none | 唯一版本、主線目視與盤名相符 | ok |
+
+## add-20261024-mc45（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| General Magic 《Rechenkönig》 | [#14949](https://www.discogs.com/release/14949) | 2000 | Mego | MEGO 032 | Discogs master 449091 的版本、主線目視與盤名相符 | ok |
+
+## add-20261024-ml58（14 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Freddie McKay 《Tribal Inna Yard》 | [#2815935](https://www.discogs.com/release/2815935) | 1985 | Move (3) | MVLP 6 | Discogs master 532956 的版本、主線目視與盤名相符 | ok |
+| Jimmy Riley 《Showcase》 | [#3985247](https://www.discogs.com/release/3985247) | 1978 | Burning Sounds | BS 1011 | Discogs master 549866 的版本、主線目視與盤名相符 | ok |
+| Michael Prophet 《Certify》 | [#844660](https://www.discogs.com/release/844660) | 1983 | Burning Sounds | BS 1056 | Discogs master 950812 的版本、主線目視與盤名相符 | ok |
+| Mwanamke Mwafrika 《African Woman Abroad》 | [#2942357](https://www.discogs.com/release/2942357) | 1982 | African Woman | AWLP 101 | Discogs master 1507389 的版本、主線目視與盤名相符 | ok |
+| Peter Broggs 《Progressive Youth》 | [#3800186](https://www.discogs.com/release/3800186) | 1979 | Shashamane Ethiopia | IMF 004 | Discogs master 469481 的版本、主線目視與盤名相符 | ok |
+| Prince Alla 《Heaven Is My Roof》 | [#3412712](https://www.discogs.com/release/3412712) | 1978 | New Star (2) | none | Discogs master 354420 的版本、主線目視與盤名相符 | ok |
+| Princess Sharifa 《Heritage》 | [#4144461](https://www.discogs.com/release/4144461) | 1993 | Ariwa | ARILP093 | Discogs master 505683 的版本、主線目視與盤名相符 | ok |
+| Rod Taylor 《If Jah Should Come Now》 | [#1310923](https://www.discogs.com/release/1310923) | 1979 | Hitrun | AP LP 9031 | Discogs master 556001 的版本、主線目視與盤名相符 | ok |
+| Sammy Dread 《Roadblock》 | [#1444892](https://www.discogs.com/release/1444892) | 1982 | Hit Bound | JJ-068 | Discogs master 244867 的版本、主線目視與盤名相符 | ok |
+| Shanti Yalah 《Creation》 | [#11184274](https://www.discogs.com/release/11184274) | 2017 | Nansa | NSALP001 | Discogs master 2797907 的版本、主線目視與盤名相符 | ok |
+| Triston Palma 《Show Case》 | [#1610802](https://www.discogs.com/release/1610802) | 1982 | Midnight Rock | MRLP 90000 | Discogs master 115346 的版本、主線目視與盤名相符 | ok |
+| Triston Palma 《Joker Lover》 | [#1626634](https://www.discogs.com/release/1626634) | 1982 | Jah Guidance | VPRL 1015 | Discogs master 340930 的版本、主線目視與盤名相符 | ok |
+| Wayne Wade 《Poor and Humble》 | [#1572851](https://www.discogs.com/release/1572851) | — | Live & Learn Records | LL LP 002 | Discogs master 547170 的版本、主線目視與盤名相符 | ok |
+| Well Pleased & Satisfied 《Love Train》 | [#3119410](https://www.discogs.com/release/3119410) | 1979 | Burning Rockers | BR 1004 | Discogs master 477449 的版本、主線目視與盤名相符 | ok |
 
 ## c49（3 張）
 
