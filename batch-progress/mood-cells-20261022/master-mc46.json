@@ -1138,5 +1138,87 @@
    "date": "2000",
    "credit": "Péter Eötvös; Klangforum Wien, Péter Eötvös"
   }
+ },
+ {
+  "artist": "Kronos Quartet",
+  "album": "Schnittke: The Complete String Quartets",
+  "composer": "Schnittke",
+  "year": 1998,
+  "label": "",
+  "country": "",
+  "faction": "string-quartet",
+  "genres": [
+   "classical"
+  ],
+  "why": "Kronos 錄的 Schnittke 四首弦樂四重奏全集（錄音室，Nonesuch），從序列的第一號到暴烈的第三號，緊繃而尖銳",
+  "moodGuess": {
+   "x": 3.6,
+   "y": -0.2,
+   "z": -0.9,
+   "why": "四把弦的暴烈強奏、拼貼引句與刮擦，緊繃，部分段落有調性片段"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/0d601697-5f89-4bfa-8a42-0ed926a3c9fe",
+   "https://coverartarchive.org/release-group/0d601697-5f89-4bfa-8a42-0ed926a3c9fe/front",
+   "https://kronosquartet.org/?p=1869"
+  ],
+  "mbRgMbid": "0d601697-5f89-4bfa-8a42-0ed926a3c9fe",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "Schnittke 多風格拼貼含調性引句與抒情段，z 估 -0.9 貼邊；與池內無重疊",
+  "supplement": "round2",
+  "copyQuote": "\"Schnittke's music is dense and emotionally extreme, powerful and, at times, angry.\" (https://kronosquartet.org/?p=1869)",
+  "group": "mc46",
+  "factionZh": "弦樂四重奏／三重奏",
+  "mb": {
+   "title": "The Complete String Quartets",
+   "type": "Album",
+   "sec": [],
+   "date": "1998-05-15",
+   "credit": "Alfred Schnittke; Kronos Quartet"
+  }
+ },
+ {
+  "artist": "Brentano String Quartet",
+  "album": "Wuorinen: Scherzo / First String Quartet / Viola Variations / Second Piano Quintet",
+  "composer": "Wuorinen",
+  "year": 2011,
+  "label": "",
+  "country": "",
+  "faction": "ensemble",
+  "genres": [
+   "classical"
+  ],
+  "why": "Wuorinen 室內作品集（Brentano 四重奏、Serkin 等，Naxos 錄音室），序列主義的密集緊縮寫法",
+  "moodGuess": {
+   "x": 3.5,
+   "y": -0.3,
+   "z": -1.2,
+   "why": "十二音序列的密集弦樂與鋼琴，急促跳進，乾而硬"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/765e9631-f949-4f64-996e-3a9ebb7c2579",
+   "https://coverartarchive.org/release-group/765e9631-f949-4f64-996e-3a9ebb7c2579/front",
+   "https://www.musicweb-international.com/classrev/2011/Apr11/Wuorinen_chmbr_8559694.htm"
+  ],
+  "mbRgMbid": "765e9631-f949-4f64-996e-3a9ebb7c2579",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "含鋼琴獨奏《Scherzo》與中提琴獨奏《Viola Variations》各一首（整張仍為室內樂盤）；錄音 2004–2009 錄音室；MB 掛 Wuorinen 與 Serkin、Martin、Brentano 並列",
+  "supplement": "round2",
+  "copyQuote": "\"In three short movements it, too, is heated and concentrated - almost to the point of sultriness and fragmentation.\" ... \"Our overall response is to the music's urgency.\" (Mark Sealey) (https://www.musicweb-international.com/classrev/2011/Apr11/Wuorinen_chmbr_8559694.htm)",
+  "group": "mc46",
+  "factionZh": "室內樂團",
+  "mb": {
+   "title": "Scherzo / First String Quartet / Viola Variations / Second Piano Quintet",
+   "type": "Album",
+   "sec": [],
+   "date": "2011",
+   "credit": "Charles Wuorinen; Peter Serkin, Lois Martin, Brentano String Quartet"
+  }
  }
 ]

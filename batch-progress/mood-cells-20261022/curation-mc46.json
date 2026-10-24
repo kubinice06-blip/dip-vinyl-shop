@@ -1122,6 +1122,102 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "Eötvös 色彩較明亮，z 估 -0.9 貼邊；含電子"
+  },
+  {
+   "artist": "Kronos Quartet",
+   "album": "Schnittke: The Complete String Quartets",
+   "composer": "Schnittke",
+   "year": 1998,
+   "label": "",
+   "country": "",
+   "faction": "string-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Kronos 錄的 Schnittke 四首弦樂四重奏全集（錄音室，Nonesuch），從序列的第一號到暴烈的第三號，緊繃而尖銳",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.2,
+    "z": -0.9,
+    "why": "四把弦的暴烈強奏、拼貼引句與刮擦，緊繃，部分段落有調性片段"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0d601697-5f89-4bfa-8a42-0ed926a3c9fe",
+    "https://coverartarchive.org/release-group/0d601697-5f89-4bfa-8a42-0ed926a3c9fe/front",
+    "https://kronosquartet.org/?p=1869"
+   ],
+   "mbRgMbid": "0d601697-5f89-4bfa-8a42-0ed926a3c9fe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Schnittke 多風格拼貼含調性引句與抒情段，z 估 -0.9 貼邊；與池內無重疊",
+   "supplement": "round2",
+   "copyQuote": "\"Schnittke's music is dense and emotionally extreme, powerful and, at times, angry.\" (https://kronosquartet.org/?p=1869)"
+  },
+  {
+   "artist": "Brentano String Quartet",
+   "album": "Wuorinen: Scherzo / First String Quartet / Viola Variations / Second Piano Quintet",
+   "composer": "Wuorinen",
+   "year": 2011,
+   "label": "",
+   "country": "",
+   "faction": "ensemble",
+   "genres": [
+    "classical"
+   ],
+   "why": "Wuorinen 室內作品集（Brentano 四重奏、Serkin 等，Naxos 錄音室），序列主義的密集緊縮寫法",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.2,
+    "why": "十二音序列的密集弦樂與鋼琴，急促跳進，乾而硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/765e9631-f949-4f64-996e-3a9ebb7c2579",
+    "https://coverartarchive.org/release-group/765e9631-f949-4f64-996e-3a9ebb7c2579/front",
+    "https://www.musicweb-international.com/classrev/2011/Apr11/Wuorinen_chmbr_8559694.htm"
+   ],
+   "mbRgMbid": "765e9631-f949-4f64-996e-3a9ebb7c2579",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "含鋼琴獨奏《Scherzo》與中提琴獨奏《Viola Variations》各一首（整張仍為室內樂盤）；錄音 2004–2009 錄音室；MB 掛 Wuorinen 與 Serkin、Martin、Brentano 並列",
+   "supplement": "round2",
+   "copyQuote": "\"In three short movements it, too, is heated and concentrated - almost to the point of sultriness and fragmentation.\" ... \"Our overall response is to the music's urgency.\" (Mark Sealey) (https://www.musicweb-international.com/classrev/2011/Apr11/Wuorinen_chmbr_8559694.htm)"
+  },
+  {
+   "artist": "The Group for Contemporary Music",
+   "album": "Sessions: String Quartet / String Quintet / Canons",
+   "composer": "Sessions",
+   "year": 2006,
+   "label": "",
+   "country": "",
+   "faction": "string-quartet",
+   "genres": [
+    "classical"
+   ],
+   "why": "Group for Contemporary Music 錄的 Sessions 弦樂四重奏第一號、五重奏與卡農（Naxos，1991–92 錄音室）",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.3,
+    "z": -0.9,
+    "why": "序列式弦樂四重奏與五重奏，斬切式節奏，旋律不明"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/22acf5b7-18a4-44d1-a5db-61e366a24b2d",
+    "https://coverartarchive.org/release-group/22acf5b7-18a4-44d1-a5db-61e366a24b2d/front",
+    "https://www.musicweb-international.com/classrev/2006/Jun06/Sessions_Quintet_8559261.htm"
+   ],
+   "mbRgMbid": "22acf5b7-18a4-44d1-a5db-61e366a24b2d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Sessions 偏表現主義抒情，x 估 3.3 貼邊、z 估 -0.9；樂評稱五重奏 powerful but remote，不稱緊繃，品質較弱",
+   "supplement": "round2",
+   "copyQuote": "\"That slow movement is expressive and intense, whilst the finale is vibrant, slashing and energising.\" (Jonathan Woolf, on String Quartet No. 1) (https://www.musicweb-international.com/classrev/2006/Jun06/Sessions_Quintet_8559261.htm)"
   }
  ],
  "notes": [
@@ -1133,6 +1229,7 @@
   "全部 MB 釘住（mbRgMbid），無人工身分。封面：CAA release-group front 200 者寫 CAA；CAA 404 者改寫 Apple Music 條目（Gerhard、Aperghis、Kagel、Davidovsky、Czernowin《Shu Hai》、Wuorinen《Six Trios》、Barrett、Lim、Gadenstätter、Aleph），其中 Kagel 與 Czernowin 的 Apple 條目年份／署名與 MB 略異，已寫 uncertain。",
   "標籤欄 label 一律留空（沒逐張核對廠牌，不亂填）；Ligeti EIC 版為 DG。",
   "貼邊（x 估 3.3–3.4）：Haas、Aleph、Czernowin《Wintersongs》、Penderecki、Rihm Minguet、Jarrell、Babbitt、Pierrot；y 估 0.0：Barrett、Hölszky、Mincek（含電子或粗礪）；主線可優先汰換這批。",
-  "主場景剩餘潛力：幾乎見底（約 0–3 張，多為極弱型或沒封面）；擴寫場景（美國序列主義、東歐／北歐四重奏、日本尖細型）MB 條目稀，約還能挖 5–8 張，但多偏靜偏暖。"
+  "主場景剩餘潛力：幾乎見底（約 0–3 張，多為極弱型或沒封面）；擴寫場景（美國序列主義、東歐／北歐四重奏、日本尖細型）MB 條目稀，約還能挖 5–8 張，但多偏靜偏暖。",
+  "第二輪（2026-10-24）：只補 3 張附 copyQuote（Kronos 的 Schnittke 全集、Wuorinen 室內作品集、Sessions 四重奏／五重奏）。其餘候補找不到可核實的「緊繃／密集」原句而不提：Hartmann 四重奏（只有 expressive／Expressionist）、Lutosławski／Blacher（只有 vivid, communicative）、Berg Arditti（樂評說風格最不貼）、Gubaidulina Danish（樂評稱 rubato／flageolets／glissandi，不稱緊繃）、Schnittke Tale 版（頁面無強度字眼）、Webern Artis（樂評稱 warm）、Frankel（樂評稱 lyrical）。Ferneyhough 四重奏其他錄音與 Lachenmann／Furrer／Neuwirth 其他廠牌錄音：MB 上無池外同廠牌錄音可挖。"
  ]
 }
