@@ -1,0 +1,151 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-mc45",
+ "batchNote": "薄細項策展線（add-20261024-mc45）",
+ "createdAt": "2026-10-24T02:00:45Z",
+ "albums": [
+  {
+   "artist": "Jamie Lidell",
+   "album": "Muddlin Gear",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a4914d48-70be-4a92-8e45-8cf30e31d550",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "乾、尖、點擊型 IDM／節奏研究：Lidell 個人首張（Super_Collider 之前的實驗面）；故障化的電腦 funk，skittery 器樂碎拍與高低保真跳接，乾、薄、神經質｜⚠ funk 律動可能讓 z 被評近 0；少數段落有人聲｜MB release-group a4914d48-70be-4a92-8e45-8cf30e31d550：title「Muddlin Gear」、Album、first-release-date 2000-09-11、artist-credit「Jamie Lidell」。證據：https://musicbrainz.org/release-group/a4914d48-70be-4a92-8e45-8cf30e31d550 https://coverartarchive.org/release-group/a4914d48-70be-4a92-8e45-8cf30e31d550/front https://www.discogs.com/master/1076 https://www.allmusic.com/album/mw0000107196 https://ink19.com/2001/03/magazine/music-reviews/895bbl-jamie-lidell",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a4914d48-70be-4a92-8e45-8cf30e31d550/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T02:00:45Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-24 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 12020,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T02:00:45Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 12020）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Jamie Lidell 的首張個人專輯掛著兩個目錄號。他 1973 年生於英格蘭 Huntingdon，本作歸在 IDM 與實驗電子。2000 年 9 月 11 日以 Warp 的 WARPCD75 與 Spymania 的 SPY013CD 發行。啟停濾波切碎節奏，延遲過的電視取樣穿插其間，音質在高低傳真間游移，13 軌塞得擁擠。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/1076",
+     "https://www.discogs.com/release/9790",
+     "https://ink19.com/2001/03/magazine/music-reviews/895bbl-jamie-lidell",
+     "https://api.discogs.com/artists/345",
+     "https://en.wikipedia.org/wiki/Jamie_Lidell",
+     "https://musicbrainz.org/release-group/a4914d48-70be-4a92-8e45-8cf30e31d550"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-24T02:00:45Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "General Magic",
+   "album": "Rechenkönig",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f1732128-d54c-3e71-9fe7-674eb328a542",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "乾、尖、點擊型 IDM／節奏研究：Mego 核心二人組第二張（mc33 已提《Frantz!》）；數位故障節奏、跳接碎片，薄、尖、無調｜⚠ CAA 無封面（用 Discogs master 圖）；沒有樂評原句；Discogs 標了 Noise，y 可能偏高｜MB release-group f1732128-d54c-3e71-9fe7-674eb328a542：title「Rechenkönig」、Album、first-release-date 2000-10、artist-credit「General Magic」。證據：https://musicbrainz.org/release-group/f1732128-d54c-3e71-9fe7-674eb328a542 https://www.discogs.com/master/449091 https://api.discogs.com/masters/449091",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "14949",
+    "url": "https://i.discogs.com/x-6w2M3fP2jCd8rfz4IRojFfUj5mEDzfRvu8igrU_vY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0OTQ5/LTAwMS5naWY.jpeg",
+    "note": "CAA 無圖；取 Discogs 14949 封面；主線 2026-10-24 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-24T02:00:45Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 486,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-24T02:00:45Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 486）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 486），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "General Magic 一張碟收了 26 首怪名曲。這是 Andreas Pieper 與 Ramon Bauer 的電子二人組，兩人合創了維也納廠牌 Mego。2000 年 10 月本作在自家廠牌編為 MEGO 032。曲名德英夾雜，首曲是〈I Love You〉。風格標籤是 Abstract、Electro 與 Noise。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/14949",
+     "https://www.discogs.com/master/449091",
+     "https://api.discogs.com/artists/11133",
+     "https://en.wikipedia.org/wiki/Editions_Mego",
+     "https://musicbrainz.org/release-group/f1732128-d54c-3e71-9fe7-674eb328a542"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/50/49/cc5049de-116b-e3e4-1f91-2c7f0cb263b3/mzaf_18037755315843760517.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-24T02:00:45Z",
+    "appleCollectionId": "1799286906",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1799286906「General Magic《Rechenkönig》」：曲目 24/26 對上 MB 原盤（Apple 共 26 軌），取第 1 軌〈I Love You〉。主線 2026-10-24 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  }
+ ]
+}

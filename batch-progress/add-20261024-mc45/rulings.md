@@ -33,3 +33,12 @@
 - **21933** 開頭兩句交代身分：兩張 hook 都只帶名字，第二句補身分與樂種——Lidell「他 1973 年生於英格蘭 Huntingdon，本作歸在 IDM 與實驗電子」（引入法：生年與出生地；句型「生於」）；General Magic「這是 Andreas Pieper 與 Ramon Bauer 的電子二人組，兩人合創了維也納廠牌 Mego」（引入法：身分＋廠牌關係；句型「這是⋯」）。同一藝人沒有跨兩張。日期「日」後一字：Lidell「日以」；General Magic 只寫到月。
 - **21934** 主線追加照辦：媒體名與媒體榜單名次一律不進 note（Ink19 的評語只取內容：啟停濾波、延遲的電視取樣、高低傳真游移、塞得不留喘息；Discogs 的風格只寫成「風格標籤」）。兩張研究稿 thin，note 只指派帶 src 的 facts 與聲音描述；General Magic 沒有任何樂評，聲音那格只寫風格標籤，「短小樂段」等推論不指派。Lidell 的 2005 年後靈魂樂轉向照研究稿 notes 不寫。
 - **21935** 自查：hook 之間中文 4-gram 0 條；hook 與 note 無逐字重複句；無否定句、分數、媒體名。`node qa-batch.mjs hooks add-20261024-mc45` 全部通過；`node chk-hook-crossgroup.mjs add-20261024-mc45` 3 組 2 張、全部通過。
+
+## 寫作層（writer-1）
+- **21941** 交件：`desc-tools/batches/output/add-20261024-mc45-out-1.json`（2 張，皆 thin）。Muddlin Gear 168、Rechenkönig 167（Array.from；鉤子層上限 170 內）。首句照抄 hook；第二句照 21933 配表（Lidell「生於」、General Magic「這是⋯」）。日期句：Lidell「年月日以」、General Magic「年月本作在自家廠牌編為」，兩張領頭名詞不同。
+- **21942** 初稿 189／182 超出 170：Lidell 整格捨去「一張碟由兩家廠牌共掛」（hook 懸念已由雙目錄號句收尾），其餘縮短措辭；General Magic 把「曲名德文與英文夾雜」壓成「德英夾雜」、「聲音被歸進…三個風格標籤」改成「風格標籤是…」。
+- **21943** 主線追加照辦：媒體名與榜單名次整句不寫；Ink19 的評價（刺耳、癲癇般）不寫，只留不掛來源的聲音描述（啟停濾波切碎節奏、延遲的電視取樣、高低傳真游移、13 軌塞得擁擠）；note 的「不留喘息」改成正面寫法避開否定句。General Magic 只寫 note 指派的首曲〈I Love You〉，facts 的其他曲名不寫；無「據說／據傳」。
+- **21944** 自掃：跨張中文 4-gram 0 條。`qa-batch.mjs out` 通過（167–168、thin ≤180）；`qa-check-research.mjs` 全部通過；`fix-spacing.mjs` 0 處。
+
+## 主線審稿（21951；2026-10-24）
+- **21951** 逐張審 2 張（全文對研究稿 a、c 組逐句核）：Lidell 生年地、雙目錄號、發行日、聲音描述（啟停濾波、延遲電視取樣、高低傳真游移、13 軌擁擠，皆研究 a 組 facts，未掛來源、未帶評價字眼）；General Magic 二人組成員、合創 Mego（維基列三位創辦人，「兩人合創」不排他，成立）、MEGO 032、26 首、首曲〈I Love You〉、風格標籤。逐張審過，未改字；媒體名、榜單、「據說／評者」0。
