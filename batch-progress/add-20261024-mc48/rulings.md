@@ -55,3 +55,22 @@
 - 22448：Fine Arts Quartet 與 Composers Quartet 兩張未見現場、電子、打擊、慢章大段證據，無存疑；Composers 第一號含 Adagio，占比未能細算，輕度。Babbitt 三號維基『18 分鐘以上』與唱片面長 21 分有差，facts 寫『約 21 分鐘』。
 - 22449：Albany 官網評論欄文字無出處標示，facts 一律寫『有樂評』或轉述，不點刊物；Fanfare 之名已自 Chang 稿移除。
 - 22450：本組 WebSearch 用 3 次（Kirchner 兩次、Asakawa 一次），其餘走 MB／Discogs API、Wikipedia、Albany／Bridge／Naumburg 頁。未推翻策展層年份、廠牌、掛名；僅推翻 Hudson 曲目描述與 Chang 時長（54→約 63 分鐘）。
+
+## 研究 b 組
+- 22451：Carter《100th Anniversary Release》Discogs 記事載明第 1、10、2、5 首為現場錄音（約 34 分鐘、過半張），MB 沒標 Live；Dialogues 含鋼琴約 19 人、Mosaic 8 人，兩首大編制；Figment 兩首大提琴獨奏、低音單簧管。moodGuess 存疑（現場過半、大編制）。各來源作曲年不一（Mosaic 2004／2005、Gra 1993／1994），facts 未寫作曲年。
+- 22452：Speculum Musicae／Martino／Wuorinen（Nonesuch H-71300）身分對上；兩首為 1972 Naumburg 首獎附帶委託作品。Notturno 編制各源不一（五人或七人含打擊），facts 寫「為主」。Notturno 帶 Dallapiccola 式抒情，慢段比重未查到，輕度存疑。
+- 22453：Speculum Musicae 十五週年盤（Bridge BDG 2005）身分對上（NYPL 目錄與 Discogs 同載三首時間）。Spinoff 實為小提琴、低音提琴、打擊三重奏約 6.6 分鐘（解答策展層「編制待查」）。Lieberson《Lalita》與 Shifrin《The Nick of Time》各約 19 分鐘，編制與速度查不到，標 thin；慢段風險未排除。
+- 22454：Eckardt《Passage》身分對上。主題為 CIA 感官剝奪，Testify 25 分鐘，可能有大段極弱或持續音；三部曲動態描述查無，標存疑。維基不稱 Ferneyhough 為師承，只寫新複雜主義。
+- 22455：Sessions／Wuorinen LP 身分對上。Sessions 第三號奏鳴曲第一樂章多弱奏、音域在中央 C 以下（DRAM 引 Helps），搜尋摘要稱兩個克制的慢樂章夾詼諧曲，末樂章為甘迺迪輓歌；A 面 23 分鐘慢弱占比高，列 moodGuess 強存疑。Wuorinen《Duo》寫於 1966（New World 頁）。
+- 22456：Zukofsky／Sessions／Blackwood（CP²/1、1976）身分對上，錄於華府國會圖書館（Discogs Recorded At）；Blackwood 第二號是 Op. 26（1975），非 Op. 7。是否現場未能查到，推定另行錄音。四個相連樂章的速度比重未查到。
+- 22457：Holzman《Sessions & Shapey》身分對上；推翻策展層「Sessions 第一號仍為不協和寫法」：樂評稱其抒情、蹦跳、明亮，最調性（有調號）。第三號第一樂章多弱奏低音域。Mutations 內向。moodGuess 強存疑，建議降級或汰換。
+- 22458：Skouras《Wuorinen: Chamber Music》身分對上（BR 2010 錄音室、NEOS 2016）。全為獨奏或二重奏，無電子打擊，低風險。作品獻詞取自作曲者目錄 PDF（stokar.com）。Six Pieces 時間缺。
+- 22459：Parnassus（New World NW 306、1980）身分對上；策展層「Parnassus 首張 New World」與創團年 1969 查無來源，維基寫 1974。名單約 20 人輪替、兩位打擊、低音樂器多，Lundborg 與 Olan 兩首幾乎查無資料，標 thin；編制偏大，列弱項。
+- 22460：本組 WebSearch 約 8 次，其餘走 MB／Discogs API、Wikipedia、Naumburg、New World、Bridge、MusicWeb 與作曲者目錄 PDF。
+
+## 主線研究汰換（不佔條號；2026-10-24）
+研究層交件後照各組「moodGuess 存疑」汰 14 → 定案 31（研究 a 6、b 5、c 7、d 8、e 5）。被汰卡移到 `dropped-cards.json`／`dropped-research.json`。
+- **現場**：Juilliard SQ《Lerdahl / Martino》（Discogs notes 明載 1985、1986 音樂會實況）、New Music Concerts《Carter: 100th Anniversary Release》（半張現場＋《Dialogues》約 19 人編制、大提琴獨奏 10 分鐘）。
+- **抒情／慢章占大段**：Chang《Transformations》（樂評一致寫抒情溫柔，Adagio 9 分鐘）、Orion《Kirchner: Complete String Quartets》（三個 Adagio 約 26%＋第三號磁帶 16 分鐘）、Holzman《Sessions & Shapey》（Sessions 第一號有調號、樂評稱明亮抒情）、Helps／Zukofsky／Wuorinen LP（A 面 Sessions 第三號兩慢章夾詼諧曲、輓歌終章）、GCM《Wuorinen: Chamber Works》（第三號四重奏 29 分鐘密度遞減、作曲家自述轉向音高中心）、《Stefan Wolpe Vol. 4》（1937–41 早期雙簧管奏鳴曲＋Quiet 樂章）、Taub（Kirchner Lento／Adagio、Bartók Sostenuto）、Alan Marks（Boulez 第一樂章無脈動、Sessions Lento、Chávez Lentissimo，快慢各半）、Emerson《Imbrie / Schuller》（restrained lyricism）、Robert Black（零聲音來源，Weber 樂評稱抒情）。
+- **大編制／打擊／低音**：Parnassus《Parnassus Plays》（約 20 人輪替、兩位打擊、低音管群；廠牌稱 rich、rollicking）、Robert Miller & CCP《Berger / Wolpe》（Septet Sostenuto；四組演奏者分散，掛名也不成立）。
+- 研究推翻併入卡單之外的事實：Hudson & Ohlsson 盤曲目為 Blue Bamboula／Six Pieces／Spinoff／The Long and the Short／Fantasia（寫作照研究稿）；Soli e Duettini Koch 1996 雙 CD 與 Naxos 2006 同一批 1994–95 錄音，寫作只寫共有曲目；Blackwood 第二號奏鳴曲 Op. 26（1975）；Parnassus 創團 1974（已汰）。
