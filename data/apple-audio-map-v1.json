@@ -1925,7 +1925,7 @@
    "artist": "Ennio Morricone",
    "album": "Film Music Masterworks - Ennio Morricone",
    "pool": "seed",
-   "status": "matched",
+   "status": "review",
    "storefront": "JP",
    "source": "album-search",
    "collectionId": "1657241549",
@@ -1933,9 +1933,15 @@
    "collectionName": "Film Music Masterworks - Ennio Morricone",
    "score": 85,
    "previewTrackCount": 14,
-   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1c/0b/44/1c0b4402-250e-647e-30ae-a5738a31bb81/mzaf_5748174000509097674.plus.aac.p.m4a",
    "matchedAt": "2026-07-19T12:14:16.190Z",
-   "collectionViewUrl": "https://music.apple.com/jp/album/film-music-masterworks-ennio-morricone/1657241549"
+   "candidate": {
+    "collectionId": "1657241549",
+    "artistName": "The City of Prague Philharmonic Orchestra",
+    "collectionName": "Film Music Masterworks - Ennio Morricone",
+    "score": 85
+   },
+   "note": "2026-10-24 主線退回：舊配對演出者對不上（The City of Prague Philharmonic Orchestra）",
+   "checkedAt": "2026-10-24T14:45:35.625Z"
   },
   "cocorosie\u0000lamaisondemonreve": {
    "artist": "CocoRosie",
@@ -57209,16 +57215,22 @@
    "artist": "Injury Reserve",
    "album": "By the Time I Get to Phoenix",
    "pool": "seed",
-   "status": "matched",
+   "status": "review",
    "storefront": "TW",
    "collectionId": "1045261226",
    "artistName": "馬提羅賓斯",
    "collectionName": "By the Time I Get to Phoenix",
    "previewTrackCount": 1,
-   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7b/81/56/7b81562a-9881-d8e8-91c2-8f56779f2788/mzaf_1095363298095938458.plus.aac.p.m4a",
    "score": 85,
    "matchedAt": "2026-07-19T07:56:32.850Z",
-   "collectionViewUrl": "https://music.apple.com/tw/album/by-the-time-i-get-to-phoenix/1045261226"
+   "candidate": {
+    "collectionId": "1045261226",
+    "artistName": "Marty Robbins",
+    "collectionName": "By the Time I Get to Phoenix",
+    "score": 85
+   },
+   "note": "2026-10-24 主線退回：舊配對演出者對不上（Marty Robbins）",
+   "checkedAt": "2026-10-24T14:45:35.630Z"
   },
   "marcbarreca\u0000twilight": {
    "artist": "Marc Barreca",
@@ -60485,16 +60497,22 @@
    "artist": "Howard Shore",
    "album": "The Lord of the Rings Trilogy",
    "pool": "seed",
-   "status": "matched",
+   "status": "review",
    "storefront": "TW",
    "collectionId": "1657230181",
    "artistName": "霍華・蕭",
    "collectionName": "The Lord of the Rings Trilogy",
    "previewTrackCount": 4,
-   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/4a/49/79/4a49791f-98ea-0249-bf20-ca292f9ff477/mzaf_5015417403026885504.plus.aac.p.m4a",
    "score": 85,
    "matchedAt": "2026-07-19T08:15:07.266Z",
-   "collectionViewUrl": "https://music.apple.com/tw/album/the-lord-of-the-rings-trilogy/1657230181"
+   "candidate": {
+    "collectionId": "1657230181",
+    "artistName": "The City of Prague Philharmonic Orchestra",
+    "collectionName": "The Lord of the Rings Trilogy",
+    "score": 85
+   },
+   "note": "2026-10-24 主線退回：舊配對演出者對不上（The City of Prague Philharmonic Orchestra）",
+   "checkedAt": "2026-10-24T14:45:35.630Z"
   },
   "vandergraafgenerator\u0000godbluff": {
    "artist": "Van der Graaf Generator",
@@ -85561,16 +85579,22 @@
    "artist": "Happy End",
    "album": "Happy End",
    "pool": "seed",
-   "status": "matched",
+   "status": "review",
    "storefront": "TW",
    "collectionId": "1575154422",
    "artistName": "이준형",
    "collectionName": "Happy End",
    "previewTrackCount": 1,
-   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/bc/07/be/bc07be80-8370-8b35-563e-0421acee76d3/mzaf_5995118453293749754.plus.aac.p.m4a",
    "score": 85,
    "matchedAt": "2026-07-19T11:29:08.103Z",
-   "collectionViewUrl": "https://music.apple.com/tw/album/happy-end/1575154422"
+   "candidate": {
+    "collectionId": "1575154422",
+    "artistName": "Lee Jun Hyung",
+    "collectionName": "Happy End",
+    "score": 85
+   },
+   "note": "2026-10-24 主線退回：舊配對演出者對不上（Lee Jun Hyung）",
+   "checkedAt": "2026-10-24T14:45:35.630Z"
   },
   "earlsweatshirt\u0000idontlikeshitidontgooutside": {
    "artist": "Earl Sweatshirt",
@@ -86103,16 +86127,22 @@
    "artist": "Holy Ghost!",
    "album": "Holy Ghost!",
    "pool": "seed",
-   "status": "matched",
+   "status": "review",
    "storefront": "TW",
    "collectionId": "1717762749",
    "artistName": "楊賓 Young B",
    "collectionName": "HOLY GHOST",
    "previewTrackCount": 1,
-   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/19/46/31/1946310c-b378-674b-df5b-676c52b369e5/mzaf_16144541349076550881.plus.aac.p.m4a",
    "score": 85,
    "matchedAt": "2026-07-19T11:32:26.242Z",
-   "collectionViewUrl": "https://music.apple.com/tw/album/holy-ghost/1717762749"
+   "candidate": {
+    "collectionId": "1717762749",
+    "artistName": "楊賓 Young B",
+    "collectionName": "HOLY GHOST",
+    "score": 85
+   },
+   "note": "2026-10-24 主線退回：舊配對演出者對不上（楊賓 Young B）",
+   "checkedAt": "2026-10-24T14:45:35.630Z"
   },
   "lykkeli\u0000woundedrhymes": {
    "artist": "Lykke Li",
