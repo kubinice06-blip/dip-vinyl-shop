@@ -43,3 +43,15 @@
 - 22487：Macomber 盤的 Bruce Adolphe 是否即 Soliloquy 作者無法由來源直接證明，facts 以同名引述並在 notes 提醒；Joel Hoffman 無來源，不寫生平。American Record Guide 稱讚為 Macomber 自己簡介轉述，facts 已標宣傳性質。
 - 22488：Sollberger 的 WebSearch 之外，本組共用 4 次 WebSearch（超過每支 3 次的上限一次；已停手，其餘全走 Discogs API、Wikipedia 與 New World Records 頁）。
 - 22489：未推翻策展層任何年份、廠牌、掛名；補了 Feinberg 兩次錄音年份、Chávez Estudio 時長、Emerson 盤 CD 重發編號。
+
+## 研究 a 組
+- 22441：Babbitt《Soli e Duettini》Koch 1996 版（Discogs 2943289）是雙 CD 約 108 分鐘，含〈Four Cavalier Settings〉與 Babbitt 22 分鐘談話；MB RG 的 Naxos 8.559259（2006）九軌約 75 分鐘、無談話。同一批 1994–95 錄音、盤名兩版皆成立；facts 兩版事實分開寫，notes 要求寫作層只寫兩版共有曲目。
+- 22442：Soli e Duettini 演奏者逐軌取自 MB recording 關係（圓號 Purvis、薩克斯風 Taylor＋鋼琴 Abramovic、長笛 Rudich、小鼓 Jarvis、馬林巴 Kolor、中提琴 Martin、長笛＋吉他、小提琴 Macomber）；打擊獨奏約 8 分鐘（占約 11%），不汰換。
+- 22443：Juilliard《Lerdahl／Martino》Discogs notes 明載兩首皆現場演出（1985-03、1986-04），MB 沒標；列「moodGuess 存疑（現場）」，建議主線汰換。
+- 22444：Chang《Transformations》來源一致寫抒情、溫柔、溫暖（Sessions 奏鳴曲 Adagio 9:14、Kirchner 二重奏細緻抒情段），列「moodGuess 存疑（中度）」，建議汰換或降 x。全盤實為約 63 分鐘（策展層寫 54）。
+- 22445：Orion《Kirchner 全集》第三號原作為弦樂加電子磁帶（約 16 分鐘，軌長 15:59 吻合），這版是否放磁帶 MB／Discogs／Albany 皆未答，未證實；加上三個 Adagio 約 16 分鐘（26%）與『安歇之島』評語，列「moodGuess 存疑」，建議汰換。
+- 22446：Hudson／Ohlsson 曲目與策展層 curatorWhy 不符（實際：Blue Bamboula、Six Pieces、Spinoff、The Long and the Short、Fantasia；非 Duo、Violin Variations）。〈Blue Bamboula〉11:28 是鋼琴獨奏；〈Spinoff〉6:35 含低音大提琴與康加鼓；皆非大段，不汰換，寫作層以實際曲目為準。
+- 22447：Asakawa 與 Swann 兩張僅 MB／維基一兩源，標 thin。Night Fantasies 以安靜夜曲段開頭並回返（維基），Boulez 第三號 Tropes／Miroir 逐段力度查無來源；兩張各列輕度存疑，建議評分時聽 Night Fantasies 與 Boulez 兩個 Miroir 確認。
+- 22448：Fine Arts Quartet 與 Composers Quartet 兩張未見現場、電子、打擊、慢章大段證據，無存疑；Composers 第一號含 Adagio，占比未能細算，輕度。Babbitt 三號維基『18 分鐘以上』與唱片面長 21 分有差，facts 寫『約 21 分鐘』。
+- 22449：Albany 官網評論欄文字無出處標示，facts 一律寫『有樂評』或轉述，不點刊物；Fanfare 之名已自 Chang 稿移除。
+- 22450：本組 WebSearch 用 3 次（Kirchner 兩次、Asakawa 一次），其餘走 MB／Discogs API、Wikipedia、Albany／Bridge／Naumburg 頁。未推翻策展層年份、廠牌、掛名；僅推翻 Hudson 曲目描述與 Chang 時長（54→約 63 分鐘）。
