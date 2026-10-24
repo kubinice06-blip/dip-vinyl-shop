@@ -11,3 +11,12 @@
 - **主線汰 7**（x 貼邊或抒情段）：Mario Caroli《Sciarrino: L'opera per flauto, Vol. I》（開場 12 分鐘極弱，mc32／mc40 先例 Sciarrino 極弱型 x 3.0–3.1）、Marino Formenti《Lachenmann: Piano Music》（池中 Lachenmann 鋼琴 x 3.0–3.3、Serynade 共鳴留白）、Eduard Brunner《Dal niente》（Stravinsky、Scelsi Preghiera 抒情慢、x 3.3）、Frances-Marie Uitti《Scelsi: Trilogia / Ko-Tha》（低音弦慢段，md14 先例 Scelsi 判往下沉）、Marie-Françoise Bucquet《Stockhausen IX & XI…》（IX 長段重複和弦；Stockhausen 已有 3 張）、Carin Levine《Flutes Without Borders》（末軌 Reich 調性極簡 10 分鐘）、Wiktor Kociuban《Penderecki / Xenakis》（Penderecki 晚期抒情組曲 19 分鐘＋大提琴 y 風險）。
 - 掛名：Pi-Hsien Chen 照池中寫法「Pi-Hsien Chen 陳必先」。池中同人：Irvine Arditti（Cage Freeman Etudes 兩張 x 3.9–4.1 落冷冽）、Miranda Cuckson（x 3.4 落冷冽）、Herbert Henck（Ives x 3.0 落暴躁、Piano Music 1.8 落平靜——**鋼琴獨奏 x 風險最大**；池中 Pollini Schoenberg 2.2、Ferneyhough 鋼琴全集 2.7、Boulez《Structures》2.7）。
 - 交研究層把關：鋼琴 x（Stockhausen Klavierstücke 三張的留白段、Carter 1946 奏鳴曲）、大提琴／長號 y（Kooistra、de Saram、Globokar 估 0–0.4）、混入調性或慢曲（Derome Stravinsky Elegy、Kufferath Kurtág、Spina Sciarrino 極弱、Castro Magas Bryn Harrison、Robert Dick Syrinx）、現場／廣播錄音（Woodward 2014 Barraqué、de Saram 肖像盤）、年份（Chojnacka《Clavecin 2000》1971?、Wambach 1987 LP、Derome 1996）、盤名（Kawai Dillon I–V vs 1–4）、Hae-Sun Kang《Electron Libre》與池中 DG 版是否同錄音。
+
+## 研究 c 組（條號 22221–22230）
+- 22221 Derome《Solo》：年份採 1996（ATMA 原版，MB 2006 為法國再版）；教堂錄音（Saint-Augustin-de-Mirabel），非乾錄；〈Sequenza VIII〉17:12 比多數版本慢近 5 分鐘、〈Élégie〉4:46 調性（約 10%）。moodGuess 存疑（y、z）。
+- 22222 Pace《Tracts》：身分無誤，2001 首發（1997 Tilburg 棚錄）；Barrett〈Tract〉31:07 約佔 40%，無力度描述；其餘三首聲音無可靠描述。moodGuess 輕度存疑。
+- 22223 Finnissy《English Country-Tunes》：自演，1986-04-16 BBC Maida Vale 錄音、1990 Etcetera 首發；樂評用語『飄忽懸浮、低沉隆隆』，moodGuess 存疑（x／y 可能偏低）。作品年份『1977 作、1982–85 修訂』為單一來源。
+- 22224 Weiss《Neue Musik für Saxophon》：**推翻策展層**：非全盤獨奏——Zimmermann 為女高音二重奏、Haubenstock-Ramati 為 Weiss 自己多軌疊錄的四重奏（約 18:41，MB 曲名〈Enchaîné〉／Discogs〈Saxophon-Quartett〉），純獨奏僅約 37 分鐘。Scelsi 第二樂章『Dolce, meditativo』。moodGuess 存疑。
+- 22225 Wambach：**推翻策展層年份與身分**：卡單 1987 對應另一張同名 LP（VMS 1068，V／VII／VIII／VI）；MB 與策展描述（IX／X／XI）指的是 1989 年 CD 彙整（310 009 H1），錄音 1987。yearVerified 填 1989。X 佔約 44%；IX 重複和弦與 XI 片段停頓可能壓低 x，moodGuess 存疑。
+- 22226 Redgate《Oboe+》：**推翻『獨奏盤』**：含互動電腦（Argrophylax）、打擊樂（Recoil）、小提琴持續音（Sequenza VII），純獨奏約 32 分鐘；錄音場地不明。moodGuess 存疑（y／z 未能驗證）。Howarth-Redgate 系統雙簧管為 2009–12 後研發，不歸給本盤。
+- 22227 Castro Magas《Shrouded Mirrors》：人工身分核對無誤（Discogs＋Apple＋Europadisc），2015；錄音 2015-08 St Paul's Hall。Harrison〈M.C.E.〉樂章相加 16:19（約 25%），緩慢重複型確認佔一段；Dillon 被形容『迷離誘人的民謠』。moodGuess 存疑（x 偏低風險）。
