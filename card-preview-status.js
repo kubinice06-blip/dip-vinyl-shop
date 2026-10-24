@@ -3468,4 +3468,5 @@ window.DipPreviewStatus = Object.freeze({
   "dahlia's tear|apeiron": "unavailable",
   "argyre planitia|tenth region of the night": "unavailable",
   "tho-so-aa|epoch, part 1": "unavailable",
+  "jamie lidell|muddlin gear": "unavailable",
 });
