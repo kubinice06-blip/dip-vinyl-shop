@@ -10,13 +10,13 @@
   {
    "id": "touch",
    "zh": "Touch 系電聲 drone 二線",
-   "count": 9,
+   "count": 10,
    "why": "Touch 二線：合成器／電聲長音、工業暗色、低頻"
   },
   {
    "id": "room40",
    "zh": "Room40 系厚重 drone 二線",
-   "count": 6,
+   "count": 9,
    "why": "Room40 二線：低頻翻湧、回授長音、夜色音塊"
   },
   {
@@ -28,7 +28,7 @@
   {
    "id": "ext-cold",
    "zh": "外延：冷 drone／微聲（Glacial Movements、Hallow Ground、Type、Ash、Ideologic Organ）",
-   "count": 9,
+   "count": 17,
    "why": "場景外延：冰冷長音、低頻儀式 drone、暗色微聲"
   }
  ],
@@ -964,6 +964,378 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "原盤 Sketis Music（Discogs master 2009，MB 首發 2010 為 Ideologic Organ 重發）；非電子，genres 走 world"
+  },
+  {
+   "artist": "Jim Haynes",
+   "album": "The Wires Cracked",
+   "year": 2013,
+   "label": "Editions Mego",
+   "country": "us",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "舊金山 Helen Scarsdale 廠主 Jim Haynes 的 Mego 盤，生鏽電線與鐵件共鳴磨成的 ambient 噪霧，延續其「荒涼、疏離」的路線；無鼓、糊、冷",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.5,
+    "z": -1.3,
+    "why": "無鼓，鏽蝕金屬共鳴與噪霧，疏離"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/48fdf8f1-071d-4ea4-9c15-6277025f126d",
+    "https://boomkat.com/artists/jim-haynes/releases/hpnwxfka/the-wires-cracked",
+    "https://www.discogs.com/release/4445920-Jim-Haynes-The-Wires-Cracked"
+   ],
+   "sourceQuote": "the engrossing ambient noise elements of 'The Wires Cracked' ... his bleakly detached and stoic 'Sever'",
+   "mbRgMbid": "48fdf8f1-071d-4ea4-9c15-6277025f126d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kassel Jaeger",
+   "album": "Toxic Cosmopolitanism",
+   "year": 2014,
+   "label": "Editions Mego",
+   "country": "fr",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "GRM 的 François Bonnet 以 Kassel Jaeger 名義在 Mego 的第三張，把巴拉風、藏鈸、排笛處理成「冰冷長音的中間地帶」；無鼓、殘響厚、冷",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.1,
+    "z": -1.0,
+    "why": "無鼓，處理過的器樂音色化成冰冷長音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d4d33f05-bb9e-4f6e-b1ad-a0572855ce15",
+    "https://coverartarchive.org/release-group/d4d33f05-bb9e-4f6e-b1ad-a0572855ce15/front",
+    "https://boomkat.com/artists/kassel-jaeger/releases/88dt1gwe/toxic-cosmopolitanism"
+   ],
+   "sourceQuote": "in an interzone of icy drones removed from their cultural contexts",
+   "mbRgMbid": "d4d33f05-bb9e-4f6e-b1ad-a0572855ce15",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Cindytalk",
+   "album": "When the Moon Is a Thread",
+   "year": 2023,
+   "label": "Line",
+   "country": "gb",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Cindytalk 為 Richard Chartier 的 Line 寫的蘇格蘭荒野，Boomkat 稱其「最荒涼的召喚」；電子長音與噪霧，無鼓、厚、冷",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.3,
+    "z": -1.3,
+    "why": "無鼓，電子長音噪霧，荒野冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1a672a6a-a9d4-487b-bf82-8bfe126a4abe",
+    "https://coverartarchive.org/release-group/1a672a6a-a9d4-487b-bf82-8bfe126a4abe/front",
+    "https://boomkat.com/artists/cindytalk/releases/k7hlysuv/when-the-moon-is-a-thread"
+   ],
+   "sourceQuote": "the bleakest invocation of their native Scottish wilderness for Richard Chartier's Line imprint",
+   "mbRgMbid": "1a672a6a-a9d4-487b-bf82-8bfe126a4abe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Cindytalk 晚期有噪音段，若刺耳成分多 x 會升"
+  },
+  {
+   "artist": "KTL",
+   "album": "The Pyre: Versions Distilled to Stereo",
+   "year": 2018,
+   "label": "Shelter Press",
+   "country": "",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Stephen O'Malley 與 Peter Rehberg 的 KTL 為 Gisèle Vienne 舞作寫的配樂，「黑金屬與電腦音樂之間最黑暗的空間」；無鼓、吉他回授與電子低頻，重、冷",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.7,
+    "z": -1.3,
+    "why": "無鼓，吉他回授與電子低頻長音，黑"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0d03a71a-8b90-4350-a52c-14d1d04236b3",
+    "https://coverartarchive.org/release-group/0d03a71a-8b90-4350-a52c-14d1d04236b3/front",
+    "https://boomkat.com/artists/ktl/releases/5ndn9gsc/the-pyre-versions-distilled-to-stereo"
+   ],
+   "sourceQuote": "find the darkest space between black metal and computer music",
+   "mbRgMbid": "0d03a71a-8b90-4350-a52c-14d1d04236b3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "名稱照 MB（含副標）"
+  },
+  {
+   "artist": "Mohammad",
+   "album": "Som Sakrifis",
+   "year": 2013,
+   "label": "PAN",
+   "country": "gr",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "希臘三重奏 Mohammad（低音提琴、大提琴、振盪器）在 PAN 的代表作，「葬禮般的 drone 組曲」「深淵般」；極低頻互調、無鼓，重壓下沉、冷",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.7,
+    "z": -1.3,
+    "why": "無鼓，低音提琴大提琴與振盪器極低頻互調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8fb6db76-613b-4e0b-8036-263f88f39d53",
+    "https://coverartarchive.org/release-group/8fb6db76-613b-4e0b-8036-263f88f39d53/front",
+    "https://boomkat.com/artists/mohammad/releases/uj9q1vyx/som-sakrifis"
+   ],
+   "sourceQuote": "a deep moving, funereal suite of drone compositions ... this abyssal, viscerally affective opus",
+   "mbRgMbid": "8fb6db76-613b-4e0b-8036-263f88f39d53",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mohammad",
+   "album": "Zo Rèl Do: 34ºN-42ºN/19ºE-29ºE Study, Vol. 1",
+   "year": 2014,
+   "label": "Antifrost",
+   "country": "gr",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Mohammad 三部曲首卷，Truants 稱之為「室內樂 doom」「巨石般」的低頻互調；弓弦與振盪器長音，末段僅零星搖鈴，靜、重、冷",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.7,
+    "z": -1.1,
+    "why": "幾乎無拍，弓弦與振盪器低頻互調，巨石般"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e83821e4-f3db-4a82-adda-56267c7350f8",
+    "https://coverartarchive.org/release-group/e83821e4-f3db-4a82-adda-56267c7350f8/front",
+    "https://truantsblog.com/2014/recommended-mohammad-zo-rel-do/"
+   ],
+   "sourceQuote": "chamber doom ... monolithic ... low-frequency inter-modulations",
+   "mbRgMbid": "e83821e4-f3db-4a82-adda-56267c7350f8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "末段有搖鈴節奏"
+  },
+  {
+   "artist": "Amphior",
+   "album": "Another Presence",
+   "year": 2022,
+   "label": "Glacial Movements",
+   "country": "dk",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "丹麥 Mathias Hammerstrøm 在 Glacial Movements 的盤，老擴大器、磁帶低保真顆粒與古代咒語取樣，「濃密聲霧、隆隆長音、催眠合成器」；無鼓、厚、冷",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.4,
+    "z": -1.1,
+    "why": "無鼓，低保真顆粒與隆隆長音，催眠"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0f74b929-d84d-41a9-a642-9def2361a2b7",
+    "https://coverartarchive.org/release-group/0f74b929-d84d-41a9-a642-9def2361a2b7/front",
+    "https://glacialmovements.bandcamp.com/album/another-presence"
+   ],
+   "sourceQuote": "melting into the dense sonic fog of occasional noise, rumbling drones, and hypnotic synth passages",
+   "mbRgMbid": "0f74b929-d84d-41a9-a642-9def2361a2b7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Christina Giannone",
+   "album": "Zone 7",
+   "year": 2022,
+   "label": "Room40",
+   "country": "us",
+   "faction": "room40",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "紐約 Christina Giannone 首張 Room40 盤，「像糖蜜一樣濃稠的不祥和聲塗抹」「荒涼而美」；無鼓、厚霧、冷",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.5,
+    "z": -0.9,
+    "why": "無鼓，濃稠和聲長音霧，不祥"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/61bbb635-d9a8-43a9-b4fa-3cf83475c924",
+    "https://coverartarchive.org/release-group/61bbb635-d9a8-43a9-b4fa-3cf83475c924/front",
+    "https://boomkat.com/artists/christina-giannone/releases/gbxwzzhy/zone-7"
+   ],
+   "sourceQuote": "a swirling mist of Stars of the Lid-adjacent sci-fi ambience and ominous, molasses-thick smears of harmonic texture. Bleak and beautiful.",
+   "mbRgMbid": "61bbb635-d9a8-43a9-b4fa-3cf83475c924",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lawrence English",
+   "album": "Observation of Breath",
+   "year": 2021,
+   "label": "Hallow Ground",
+   "country": "au",
+   "faction": "room40",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Room40 主理人 Lawrence English 繼 Lassitude（md6 已收）之後的管風琴 drone，「冰河般」「糖漿般濃」；無鼓、長音厚、偏冷",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.3,
+    "z": -0.6,
+    "why": "無鼓，管風琴極長音層疊，濃而冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/29106851-fea4-4bad-aed8-b78af7691a2d",
+    "https://coverartarchive.org/release-group/29106851-fea4-4bad-aed8-b78af7691a2d/front",
+    "https://boomkat.com/artists/lawrence-english/releases/m8q3vtgx/observation-of-breath"
+   ],
+   "sourceQuote": "another elevated set of syrupy drone poems ... Glacial stuff, in the best possible way >> think Kali Malone, Ellen Arkbro, Phill Niblock",
+   "mbRgMbid": "29106851-fea4-4bad-aed8-b78af7691a2d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "管風琴和聲若被判溫潤 z 會靠近 −0.3"
+  },
+  {
+   "artist": "Norman Westberg & Jacek Mazurkiewicz",
+   "album": "First Man in the Moon",
+   "year": 2021,
+   "label": "Hallow Ground",
+   "country": "us",
+   "faction": "room40",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Swans 吉他手 Westberg 與波蘭低音提琴手 Mazurkiewicz 的合作，「像 Earth 替 Miasmah 錄的盤再加 Bohren」：吱嘎長音、低音撥弦與過載吉他；無鼓、重、陰",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.5,
+    "z": -1.0,
+    "why": "無鼓，過載吉他長音與低音提琴撥弦，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/435e5b97-3f7d-40da-a8c2-af4597e1cabc",
+    "https://coverartarchive.org/release-group/435e5b97-3f7d-40da-a8c2-af4597e1cabc/front",
+    "https://boomkat.com/artists/norman-westberg-jacek-mazurkiewicz/releases/n6z8arzr/first-man-in-the-moon"
+   ],
+   "sourceQuote": "Creaking drones, Badalamenti bass plucks and overdriven guitar - like Earth doing a Miasmah record with Bohren & der Club of Gore",
+   "mbRgMbid": "435e5b97-3f7d-40da-a8c2-af4597e1cabc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Heitor Alvelos",
+   "album": "Faith",
+   "year": 2015,
+   "label": "Touch",
+   "country": "pt",
+   "faction": "touch",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "替 Biosphere《Substrata》拍封面的 Touch 老班底 Heitor Alvelos 的個人盤，「專注的荒涼長音」；無鼓、厚、冷",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "無鼓，荒涼電子長音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c94f5328-7529-4265-8ab3-2e0c616779e4",
+    "https://boomkat.com/artists/heitor-alvelos/releases/oevbyjkv/faith",
+    "https://www.discogs.com/master/1736176-Heitor-Alvelos-Faith"
+   ],
+   "sourceQuote": "this intently focussed album of bleak drones",
+   "mbRgMbid": "c94f5328-7529-4265-8ab3-2e0c616779e4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Still und Dunkel",
+   "album": "Abandoned",
+   "year": 2019,
+   "label": "Hallow Ground",
+   "country": "ch",
+   "faction": "ext-cold",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "瑞士三人視聽組 Still und Dunkel 的首張，「扭曲猙獰的工業與暗色 ambient 聲音設計」；無鼓、低頻厚、冷",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.5,
+    "z": -1.4,
+    "why": "無鼓，工業低頻與暗色長音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/94ea4417-bb56-43cf-894d-e4f67fe1bc66",
+    "https://coverartarchive.org/release-group/94ea4417-bb56-43cf-894d-e4f67fe1bc66/front",
+    "https://boomkat.com/artists/still-und-dunkel/releases/k2qdmsmd/abandoned"
+   ],
+   "sourceQuote": "Grimacing industrial and dark ambient sound designs",
+   "mbRgMbid": "94ea4417-bb56-43cf-894d-e4f67fe1bc66",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "grimacing 可能帶刺耳段，x 偏高風險"
   }
  ],
  "notes": []
