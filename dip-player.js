@@ -3,7 +3,7 @@
   const SPOTIFY_API = 'https://open.spotify.com/embed/iframe-api/v1';
   const YOUTUBE_API = 'https://www.youtube.com/iframe_api';
   // 換內容就換 ?v：載入用 cache:'force-cache'，不換網址的話舊索引會一直被沿用。
-  const APPLE_AUDIO_MAP_URL = '/data/apple-audio-runtime-v1.json?v=2';
+  const APPLE_AUDIO_MAP_URL = '/data/apple-audio-runtime-v1.json?v=3';
   const SPOTIFY_PLACEHOLDER = 'spotify:album:4aawyAB9vmqN3uQ7FjRGTy';
   const YOUTUBE_PLACEHOLDER = 'M7lc1UVf-VE';
   const IOS_DEVICE = /iPad|iPhone|iPod/.test(navigator.userAgent || '') ||
