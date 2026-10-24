@@ -1,4 +1,4 @@
-// 情緒薄格策展線 md3／md4 新卡補情緒三軸（2026-10-22；HANDOFF-mood-cells-line §二第 9 步）。
+// 情緒薄格策展線 md34 新卡補情緒三軸（2026-10-22；HANDOFF-mood-cells-line §二第 9 步）。
 //   做法同 score-ts2：只取指定批卡單上、seed 裡尚未評分的卡，一批一份工單。
 //   node batch-progress/mood-axes/score-md34/select.mjs add-20261022-md3   → chunk-md3.json
 import fs from 'node:fs';
