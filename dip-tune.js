@@ -6,7 +6,7 @@
  * （tune/tile-*.png）照圓柱投影取樣捲動。星圖用 Three.js（r128，與 starmap-lab 同版）。
  *
  * 用法（index.html 接線）：
- *   DipTune.configure({ host, loadCardPool, onResult, onBack, player, cardIdOf, onFirstGesture, onGesture, resolveCover, listCover, audioPref, setAudioPref });
+ *   DipTune.configure({ host, loadCardPool, onResult, onBack, player, cardIdOf, onFirstGesture, onGesture, resolveCover, listCover, threeReady, audioPref, setAudioPref });
  *   audioPref() → true/false：站上「自動試聽」開關的現值；setAudioPref(on)：喇叭鈕按下時回寫那顆開關。
  *   DipTune.setAudio(on)：頂欄開關或系統撤銷時由頁面推進來，讓喇叭鈕跟著變。
  *   DipTune.start();     // 進入分頁時呼叫；再次呼叫只會重新顯示，不重建
@@ -733,7 +733,10 @@
     el.draw.onclick = () => { if (!previewCard) return; if (previewCard.cell !== targetCell()) scan(nearest()); emit(previewCard); };
     setAudioUI(); setModeUI();
     let data;
-    try { data = await loadData(); } catch (e) { el.msg.textContent = e.message || '載入失敗'; return; }
+    // 星圖程式庫（three.js，CDN）跟卡池資料一起等，但最多等 8 秒：等不到就只用面板。
+    // 2026-10-24 店主錄影：加到主畫面的 App 點進來一片白——舊寫法在呼叫端先 await three 才開始畫面板，CDN 卡住就永遠白著
+    const three = Promise.race([Promise.resolve(cfg.threeReady?.()).catch(() => {}), new Promise(r => setTimeout(r, 8000))]);
+    try { [data] = await Promise.all([loadData(), three]); } catch (e) { el.msg.textContent = e.message || '載入失敗'; return; }
     buildCards(data);
     if (!N) { el.msg.textContent = '卡池裡沒有座標'; return; }
     el.msg.hidden = true;
