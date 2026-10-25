@@ -33,6 +33,9 @@ tar -c \
   --exclude='./kv-backup-*.json' \
   . | tar -x -C "$OUT"
 
+# 頻率光譜獨立網址 /tune/：拿組好的首頁複製一份（加 <base>、換標題與分享預覽），蓋掉 repo 裡的轉址頁
+node scripts/build-tune-page.mjs "$OUT/index.html" "$OUT/tune/index.html"
+
 # 守門一：Pages 的單檔上限。與其讓 wrangler 丟一行看不懂的錯，不如在這裡講清楚是哪個檔。
 BIG=$(find "$OUT" -type f -size +25M -printf '%p (%s bytes)\n' || true)
 if [ -n "$BIG" ]; then
@@ -43,7 +46,7 @@ if [ -n "$BIG" ]; then
 fi
 
 # 守門二：網站的必要檔案一個都不能少。少了任何一個就是排除清單寫錯了，當場擋下來。
-MUST="index.html find.html battle.html pvp.html roguelike.html music-map.html admin.html
+MUST="index.html tune/index.html manifest-tune.json find.html battle.html pvp.html roguelike.html music-map.html admin.html
 seed_cards.json card-preview-status.js dip-player.js dip-artist-intro.js
 data/apple-audio-runtime-v1.json data/artist-intros/manifest.json"
 for f in $MUST; do
