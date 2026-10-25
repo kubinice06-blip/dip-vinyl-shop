@@ -2,8 +2,10 @@
   const WORKER_URL = 'https://dip-vinyl-worker.kubinice06.workers.dev';
   const SPOTIFY_API = 'https://open.spotify.com/embed/iframe-api/v1';
   const YOUTUBE_API = 'https://www.youtube.com/iframe_api';
-  // 換內容就換 ?v：載入用 cache:'force-cache'，不換網址的話舊索引會一直被沿用。
-  const APPLE_AUDIO_MAP_URL = '/data/apple-audio-runtime-v1.json?v=3';
+  // 試聽索引每天跟著上架更新：載入用 cache:'no-cache'（每次帶 ETag 回伺服器確認，沒變只回 304）。
+  // 2026-10-25 以前是 force-cache＋手動換 ?v，忘了換版號，玩家手機就一直拿舊索引——
+  // 宇多田ヒカル《First Love》改掛名後店主手機查不到新鍵、試聽失效即為此。
+  const APPLE_AUDIO_MAP_URL = '/data/apple-audio-runtime-v1.json?v=4';
   const SPOTIFY_PLACEHOLDER = 'spotify:album:4aawyAB9vmqN3uQ7FjRGTy';
   const YOUTUBE_PLACEHOLDER = 'M7lc1UVf-VE';
   const IOS_DEVICE = /iPad|iPhone|iPod/.test(navigator.userAgent || '') ||
@@ -813,7 +815,7 @@
   function loadAppleAudioMap() {
     if (appleAudioMap) return Promise.resolve(appleAudioMap);
     if (!appleAudioMapPromise) {
-      appleAudioMapPromise = fetch(APPLE_AUDIO_MAP_URL, { cache:'force-cache' })
+      appleAudioMapPromise = fetch(APPLE_AUDIO_MAP_URL, { cache:'no-cache' })
         .then(response => response?.ok ? response.json() : null)
         .then(data => {
           appleAudioMap = data?.version === 1 && data?.entries && typeof data.entries === 'object' ? data : null;

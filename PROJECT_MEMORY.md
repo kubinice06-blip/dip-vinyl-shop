@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-25｜dip-vinyl-shop｜試聽索引改為每次跟伺服器確認（玩家手機卡舊索引，First Love 改名後無法試聽）
+
+- **起因**：店主「宇多田 first love 突然不能試聽」。試聽檔與正式站索引都正常（新鍵 `宇多田ヒカル\0firstlove` 在），問題是 `dip-player.js` 載索引用 `cache:'force-cache'`，網址版號（`?v=3`）沒換，手機永遠用改名前的舊索引，新掛名查不到就退回 iTunes 搜尋、搜不到。同理每天新上架卡的試聽，舊快取玩家也拿不到。
+- **改動**：索引改 `cache:'no-cache'`（每次帶 ETag 回伺服器確認，Pages 回 `max-age=0, must-revalidate`＋ETag，沒變只回 304），網址換 `?v=4` 讓現有舊快取立刻失效；四頁 `dip-player.js?v=54`。
+- **主要檔案**：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`、`shop-all.html`
+- **驗證**：本機 Chromium 搜「宇多田 first love」：索引 `?v=4` 載入，試聽檔 `mzaf_5343393836260449894` 被請求並播放；0 頁面錯誤。
+
 ### 2026-10-25｜dip-vinyl-shop｜示範劇本：試聽出聲後再停 2 秒才移動
 
 - **起因**：店主「太快了，我要試聽出來 2 秒才移動」。原本到位就計 2 秒，試聽 0.7 秒後才起播，實際只聽到 1 秒多。
