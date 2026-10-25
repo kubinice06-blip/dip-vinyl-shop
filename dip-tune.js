@@ -85,7 +85,7 @@
 
   // ── 畫面 ──────────────────────────────────────────────────────────
   const CSS = `
-.tune-app{--pix:'DotGothic16','Space Mono',monospace;position:relative;display:grid;grid-template-columns:1fr;grid-template-rows:minmax(200px,1fr) auto;width:100%;max-width:720px;margin:0 auto;height:var(--tvh,100dvh);background:#0b0c10;color:#e9e2c8;font-family:var(--pix);font-size:11px;letter-spacing:.04em;overflow:hidden}
+.tune-app{--pix:'DotGothic16','Space Mono',monospace;position:relative;display:grid;grid-template-columns:1fr;grid-template-rows:minmax(200px,1fr) auto;width:100%;max-width:720px;margin:0 auto;height:var(--tvh,100dvh);padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);background:#0b0c10;color:#e9e2c8;font-family:var(--pix);font-size:11px;letter-spacing:.04em;overflow:hidden}
 /* 轉成橫向（手機側放、矮視窗）才左右並排 */
 @media (orientation:landscape) and (max-height:600px) and (min-width:560px){.tune-app{grid-template-columns:minmax(0,1fr) clamp(300px,calc((var(--tvh,100dvh) - 24px) / 0.86),48vw);grid-template-rows:minmax(0,1fr);max-width:none}}
 .tune-stage{position:relative;min-width:0;min-height:0;background:#060609;overflow:hidden}
@@ -710,6 +710,8 @@
   // 進場時以站上的開關為準（沒表態過的裝置照舊預設開；第一次碰輪子才寫成開）
   function syncAudioFromPref() { try { const v = cfg.audioPref?.(); if (typeof v === 'boolean') state.audioOn = v; } catch (_) {} }
 
+  // 主畫面 App（全螢幕）會延伸到狀態列底下：.tune-app 讓出 safe-area 四邊（2026-10-25 店主：主畫面版上面太上面）；
+  // 瀏覽器裡這些值是 0，網頁版版面不變
   // 鍵盤彈出時視窗會變矮，版面不跟著動：搜尋框有焦點就不更新，收起鍵盤（失焦）後再量
   function trackViewport(host) {
     const set = () => { if (document.activeElement === el.search) return; host.style.setProperty('--tvh', global.innerHeight + 'px'); };

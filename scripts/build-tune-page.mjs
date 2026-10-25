@@ -1,6 +1,7 @@
 // 頻率光譜的獨立網址 /tune/（2026-10-25 店主：「希望頻率光譜是一個獨立頁面，而不是分頁前有井字號的暫時分頁」）。
 // 部署時由 scripts/pages-build.sh 呼叫：拿 dist/index.html 複製一份成 dist/tune/index.html，
-//   ・加 <base href="/">：頁面在 /tune/ 底下，所有相對路徑（data/…、tune/…、dip-tune.js）照樣指回網站根目錄；
+//   ・index.html 本身就帶 <base href="/">（頁面在 /tune/ 底下，或從首頁點進頻率光譜網址改成 /tune/ 時，
+//     所有相對路徑 data/…、tune/…、dip-tune.js 照樣指回網站根目錄；2026-10-25 少了它從首頁點進來全 404）；
 //   ・標題、分享預覽（og:*）、主畫面名稱、manifest 換成頻率光譜的；
 // 開機路由讀 pathname（tune）直接進頻率光譜，setActiveTab 在頻率光譜時把網址寫成 /tune/（不帶 #）。
 // repo 裡的 tune/index.html 是本機開發用的轉址頁（→ /#tune），正式站會被這支的輸出蓋掉。
@@ -9,7 +10,7 @@ import fs from 'node:fs';
 const [src, out] = process.argv.slice(2);
 let h = fs.readFileSync(src, 'utf8');
 const swap = (from, to) => { if (!h.includes(from)) throw new Error('index.html 找不到：' + from); h = h.replace(from, to); };
-swap('<meta charset="UTF-8"/>', '<meta charset="UTF-8"/>\n  <base href="/">');
+if (!h.includes('<base href="/">')) throw new Error('index.html 少了 <base href="/">：進頻率光譜網址改成 /tune/ 時相對路徑會全部 404');
 swap('<title>dip vinyl shop</title>', [
   '<title>頻率光譜 — dip vinyl shop</title>',
   '  <meta name="description" content="不分類型，以光譜的方式探索音樂。">',
