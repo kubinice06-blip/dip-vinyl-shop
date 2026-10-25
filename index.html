@@ -1070,7 +1070,7 @@
 <script src="dip-player.js?v=53"></script>
 <script src="dip-draw-anim.js?v=4"></script>
 <script src="dip-genre-tree.js?v=5"></script>
-<script src="dip-tune.js?v=16"></script>
+<script src="dip-tune.js?v=17"></script>
 <script src="dip-artist-intro.js?v=2"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -5853,8 +5853,8 @@ ${seenList}
     if (window.THREE?.OrbitControls) return Promise.resolve();
     if (!_threePromise) _threePromise = (async () => {
       const load = src => new Promise((res, rej) => { const sc = document.createElement('script'); sc.src = src; sc.onload = res; sc.onerror = () => rej(new Error('three 載入失敗')); document.head.appendChild(sc); });
-      if (!window.THREE) await load('https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js');
-      if (!window.THREE.OrbitControls) await load('https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js');
+      if (!window.THREE) await load('/vendor/three-r128.min.js');
+      if (!window.THREE.OrbitControls) await load('/vendor/three-r128-OrbitControls.js');
     })().catch(e => { _threePromise = null; console.warn('[tune]', e); });
     return _threePromise;
   }
@@ -5862,13 +5862,14 @@ ${seenList}
     document.getElementById('tuneApp').hidden = !show;
     document.getElementById('tuneResultWrap').hidden = show;
   }
-  async function openTune() {
+  function openTune() {
     tuneShowApp(true);
-    await ensureThree();          // 載不到也照開：模組會只用面板、不畫星圖
+    // 不先等 three：面板馬上畫，星圖程式庫由模組在載資料時一起等（最多 8 秒，載不到只用面板）
     DipTune.start();
   }
   DipTune.configure({
     host: () => document.getElementById('tuneApp'),
+    threeReady: ensureThree,
     loadCardPool: loadGamePool,
     cardIdOf,
     player: window.DipPlayer,

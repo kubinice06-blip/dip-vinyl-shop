@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-25｜dip-vinyl-shop｜頻率光譜：主畫面 App 點進來一片白——不再先等 three.js，three.js 改自架
+
+- **起因**：店主錄影：從主畫面 App 點「頻率光譜」整片白，連 10-24 加的錯誤訊息都沒出。`openTune()` 先 `await ensureThree()`（從 cdnjs／jsdelivr 載 three.js＋OrbitControls，沒有逾時）才呼叫 `DipTune.start()`，CDN 卡住面板就永遠不畫。
+- **改動**：`openTune()` 不再等 three，直接 `DipTune.start()`；模組在畫好面板後把 `cfg.threeReady`（＝`ensureThree`）跟卡池資料一起等，最多 8 秒，等不到只用面板。three.js r128 與 OrbitControls 下載進 `vendor/`，`ensureThree` 改載自家網域（不再依賴外部 CDN）。`dip-tune.js?v=17`。
+- **主要檔案**：`dip-tune.js`、`index.html`、`vendor/three-r128.min.js`、`vendor/three-r128-OrbitControls.js`
+- **驗證**：本機 Chromium 手機視窗（擋 service worker）從首頁→找一張來聽→頻率光譜：正常情況 0.3 秒面板出現「載入中…」、1.5 秒星圖完成；把 `/vendor/` 請求設成永不回應，面板照樣 0.3 秒出現，9.5 秒後只用面板跑起來。0 頁面錯誤。
+
 ### 2026-10-24｜dip-vinyl-shop｜Apple 試聽索引：舊有低分配對複查，退回 5 張錯配
 
 - **起因**：補比對時抓到古典同曲異版本誤配，店主「好」（要複查舊資料）。
