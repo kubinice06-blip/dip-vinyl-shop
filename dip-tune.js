@@ -633,14 +633,14 @@
   }
   function setNowPlaying(on, msg) { const n = document.getElementById('tuneNp'); if (!n) return; n.classList.toggle('on', !!on); n.innerHTML = on ? '<i></i><i></i><i></i>' : (msg ? '· ' + msg : ''); }
   // 播放器的狀態回報：只看目前這張，把 loading／error 的原因寫在小卡上
-  let unsubState = null;
+  let unsubState = null, audibleCard = null;   // audibleCard：真的出聲的那張（示範劇本用來等試聽出來）
   function watchPlayer() {
     if (unsubState || !cfg.player?.onStateChange) return;
     unsubState = cfg.player.onStateChange(st => {
       const c = playing; if (!c) return;
       const card = c.card; if (!st || st.artist !== card.artist || st.album !== card.album) return;
       if (st.status === 'loading') setNowPlaying(false, '找試聽中');
-      else if (st.status === 'playing') setNowPlaying(true);
+      else if (st.status === 'playing') { audibleCard = c; setNowPlaying(true); }
       else if (st.status === 'error') { playing = null; setNowPlaying(false, '這張沒有試聽'); }
       else if (st.status === 'stopped' && st.code === 'NO-AUTOPLAY') { playing = null; setNowPlaying(false, '再碰一下輪子開聲音'); }
     });
@@ -785,7 +785,15 @@
     const first = findCards('宇多田ヒカル first love')[0], last = findCards('miles davis kind of blue')[0];
     const used = new Set([first?.cell, last?.cell]);
     const rand = () => { let c; for (let n = 0; n < 500; n++) { c = CARDS[Math.floor(Math.random() * N)]; if (!used.has(c.cell)) break; } used.add(c.cell); return c; };
-    for (const c of [first, rand(), rand(), last]) { if (!c) continue; if (!(await travelTo(c))) return; await wait(2000); }
+    // 每一站：轉到位 → 等試聽真的出聲 → 再停 2 秒（2026-10-25 店主：太快了，要試聽出來 2 秒才移動）。
+    // 回傳有沒有出聲；沒有試聽的卡 8 秒內等不到聲音就放棄
+    const stop = async c => { if (!(await travelTo(c))) return null; const t0 = performance.now();
+      while (audibleCard !== c && performance.now() - t0 < 8000 && !(performance.now() - t0 > 1500 && playing !== c)) await wait(100);
+      const ok = audibleCard === c; await wait(ok ? 2000 : 600); return ok; };
+    if (first && (await stop(first)) === null) return;
+    // 隨機兩張若剛好沒試聽，換一張再轉（最多試 3 次），每一站都有聲音
+    for (let k = 0; k < 2; k++) for (let n = 0; n < 3; n++) { const r = await stop(rand()); if (r === null) return; if (r) break; }
+    if (last && (await stop(last)) === null) return;
     // 程式點擊不會出現 :active 的按下樣子，用同一組樣式按一下
     el.draw.classList.add('is-pressed'); await wait(140); el.draw.classList.remove('is-pressed');
     el.draw.click();
