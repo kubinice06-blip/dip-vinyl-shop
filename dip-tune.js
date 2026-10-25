@@ -86,6 +86,8 @@
   // ── 畫面 ──────────────────────────────────────────────────────────
   const CSS = `
 .tune-app{--pix:'DotGothic16','Space Mono',monospace;position:relative;display:grid;grid-template-columns:1fr;grid-template-rows:minmax(200px,1fr) auto;width:100%;max-width:720px;margin:0 auto;height:var(--tvh,100dvh);padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);background:#0b0c10;color:#e9e2c8;font-family:var(--pix);font-size:11px;letter-spacing:.04em;overflow:hidden}
+/* 主畫面 App（standalone）：iOS 在狀態列下緣多一條毛玻璃，蓋住讀數與正在播放卡；只有這個模式再往下讓一截，瀏覽器不受影響 */
+@media (display-mode:standalone){.tune-app{padding-top:calc(env(safe-area-inset-top,0px) + 22px)}}
 /* 轉成橫向（手機側放、矮視窗）才左右並排 */
 @media (orientation:landscape) and (max-height:600px) and (min-width:560px){.tune-app{grid-template-columns:minmax(0,1fr) clamp(300px,calc((var(--tvh,100dvh) - 24px) / 0.86),48vw);grid-template-rows:minmax(0,1fr);max-width:none}}
 .tune-stage{position:relative;min-width:0;min-height:0;background:#060609;overflow:hidden}
