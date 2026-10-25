@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-25｜dip-vinyl-shop｜頻率光譜獨立網址 /tune/（不帶 #）
+
+- **起因**：店主「希望頻率光譜是一個獨立頁面，而不是分頁前有井字號的暫時分頁」。原本 `/tune/` 只是轉址頁（→ `/#tune`），網址列一直是 `#tune`，IG 內建瀏覽器複製連結、加到主畫面都容易回首頁。
+- **做法**：不另寫一套頁面（結果頁、播放器、收藏都在 index.html 裡），部署時 `scripts/build-tune-page.mjs` 把 `dist/index.html` 複製成 `dist/tune/index.html`：加 `<base href="/">`（相對路徑照舊指回根目錄）、換標題／og 分享預覽／主畫面名稱「頻率光譜」、manifest 改 `manifest-tune.json`（start_url `/tune/?app=1`，從這頁加到主畫面就直接開頻率光譜）。`pages-build.sh` 呼叫它並把兩個檔加進必要檔守門。`setActiveTab`：進頻率光譜寫 `/tune/`，其他分頁寫絕對 `/#分頁`，回首頁寫 `/`，標題跟著換。`sw.js` 導覽快取 `/tune/` 與首頁分開存。`manifest.json` 捷徑改 `/tune/?app=1`。repo 裡的 `tune/index.html` 轉址頁留給本機開發，正式站被產生檔蓋掉。
+- **主要檔案**：`scripts/build-tune-page.mjs`（新）、`scripts/pages-build.sh`、`index.html`、`manifest.json`、`manifest-tune.json`（新）、`sw.js`
+- **驗證**：本機跑 `pages-build.sh`（441 檔、守門過）後以 Chromium 手機視窗開 dist：直接開 `/tune/` 進頻率光譜、網址維持 `/tune/`、標題「頻率光譜」、星圖與卡池載入；按返回 → `/#find`；從選單再點頻率光譜 → `/tune/`；首頁 `/`、`/#quiz` 正常；0 頁面錯誤、0 個 404。
+
 ### 2026-10-25｜dip-vinyl-shop｜頻率光譜：主畫面 App 點進來一片白——不再先等 three.js，three.js 改自架
 
 - **起因**：店主錄影：從主畫面 App 點「頻率光譜」整片白，連 10-24 加的錯誤訊息都沒出。`openTune()` 先 `await ensureThree()`（從 cdnjs／jsdelivr 載 three.js＋OrbitControls，沒有逾時）才呼叫 `DipTune.start()`，CDN 卡住面板就永遠不畫。

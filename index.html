@@ -2910,7 +2910,7 @@
       ['filterSection', 'grid'].forEach(id => { const el = document.getElementById(id); if (el) el.style.display = 'none'; });
       const sb = document.querySelector('.search-bar'); if (sb) sb.style.display = 'none';
       const cb = document.querySelector('.count-bar'); if (cb) cb.style.display = 'none';
-      history.replaceState(null, '', location.pathname + location.search);
+      history.replaceState(null, '', '/' + location.search);   // 從 /tune/ 回首頁也回到根目錄
       return;
     }
 
@@ -2925,7 +2925,10 @@
     if (countBar) countBar.style.display = isShop ? '' : 'none';
     if (grid) grid.style.display = isShop ? '' : 'none';
 
-    history.replaceState(null, '', '#' + tab);
+    // 頻率光譜有自己的網址 /tune/（不帶 #，可存書籤、加到主畫面；部署時 scripts/build-tune-page.mjs 產生該頁）；
+    // 其他分頁照舊用 #分頁，寫成絕對路徑，從 /tune/ 切過去也不會變成 /tune/#quiz
+    history.replaceState(null, '', tab === 'tune' ? '/tune/' + location.search : '/' + location.search + '#' + tab);
+    document.title = tab === 'tune' ? '頻率光譜 — dip vinyl shop' : 'dip vinyl shop';
 
     if (tab === 'find' || tab === 'shop') {
       renderHub(tab);
