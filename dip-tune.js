@@ -132,7 +132,7 @@
 @media (max-width:520px){.tune-console{width:min(100%,calc((var(--tvh,100dvh) - 220px) / 0.99))}.tune-panel{padding:6px 6px 0}}
 .tune-console .abs{position:absolute}
 .tune-draw{left:79.903%;top:16.631%;width:11.683%;height:25.336%;background:url(tune/btn-v.png) center/100% 100% no-repeat;image-rendering:pixelated;border:0;padding:0;cursor:pointer;writing-mode:vertical-rl;text-orientation:upright;font-family:var(--pix);font-size:5cqw;letter-spacing:.3em;color:#2a1e07;text-shadow:.15cqw .15cqw 0 rgba(255,236,170,.55);display:grid;place-items:center}
-.tune-draw:active{transform:translateY(.4cqw);filter:brightness(1.08)}
+.tune-draw:active,.tune-draw.is-pressed{transform:translateY(.4cqw);filter:brightness(1.08)}
 .tune-draw[disabled]{opacity:.55;cursor:default}
 .tune-drumwin{left:14.117%;top:23.425%;width:47.636%;height:21.939%;background:#0d0f0d;display:flex;gap:1.4cqw;padding:1.6cqw 1.7cqw;align-items:stretch}
 .tune-drum{position:relative;flex:1 1 0;overflow:hidden;background:linear-gradient(180deg,#000 0,#2b2f2a 30%,#3a3f38 50%,#2b2f2a 70%,#000 100%);box-shadow:inset 0 0 0 .3cqw #000}
@@ -528,11 +528,12 @@
   let travelTok = 0;
   function cancelTravel() { travelTok++; }
   function travelTo(c) {
-    const tok = ++travelTok; let k = 0;
+    const tok = ++travelTok; let k = 0, done;
+    const finished = new Promise(r => { done = r; });
     ensureAudio(); stopPreview(); clearQueue();
     const leg = () => {
-      if (tok !== travelTok) return;
-      if (k >= 3) { clearQueue(); previewCard = null; scan(c); scheduleUpdate(); armPreview(); return; }
+      if (tok !== travelTok) { done(false); return; }
+      if (k >= 3) { clearQueue(); previewCard = null; scan(c); scheduleUpdate(); armPreview(); done(true); return; }
       const axis = ['x', 'y', 'z'][k++], from = state.p[axis], to = c['p' + axis], dist = Math.abs(to - from);
       if (dist < 0.05) { leg(); return; }
       const dur = Math.min(1000, 280 + dist * 10), t0 = performance.now();
@@ -545,6 +546,7 @@
       requestAnimationFrame(tick);
     };
     leg();
+    return finished;
   }
   // 英式拼法照美式比（favourite＝favorite、colour＝color）：兩邊都換，不會漏
   const norm = s => String(s || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/our/g, 'or').replace(/[\s\-_.,'’"!?:;()\[\]\/&+*~]+/g, '');
@@ -762,6 +764,38 @@
     for (const ev of ['pointerdown', 'touchstart', 'keydown']) host.addEventListener(ev, () => ensureAudio(), { passive: true, capture: true });
     state.built = true;
     updateScene();
+    if (new URLSearchParams(global.location.search).get('demo') === '1') runDemo(true);
+    // 主畫面 App 帶不了網址參數：左上角讀數（本來就不能按）1.5 秒內連點三下也會開跑，這三下本身就是出聲要的手勢
+    { let taps = []; el.readout.addEventListener('pointerdown', () => { const now = performance.now(); taps = taps.filter(t => now - t < 1500); taps.push(now); if (taps.length >= 3) { taps = []; runDemo(false); } }); }
+  }
+
+  // ── 示範影片劇本（2026-10-25 店主：錄一支示範影片，畫面要跟正式版一模一樣、像真的玩家在玩）──
+  // 只有網址帶 ?demo=1 才會跑，一般玩家碰不到；全程用遊戲本身的轉輪動畫與按鈕，不加任何畫面元素。
+  // 開法：網址帶 ?demo=1 時先點一下星圖（iOS 要一下手勢才准出聲）；或在左上角讀數 1.5 秒內連點三下。1 秒後開始：
+  //   宇多田ヒカル《First Love》→ 隨機兩張（跟其他幾張不同格）→ Miles Davis《Kind of Blue》，每張停 2 秒
+  //   → 按「就這張」→ 等結果頁出來 → 慢慢往下捲到串流按鈕停住。
+  let demoRunning = false;
+  async function runDemo(waitTap) {
+    if (demoRunning) return; demoRunning = true;
+    const wait = ms => new Promise(r => setTimeout(r, ms));
+    if (waitTap) await new Promise(r => el.stage.addEventListener('pointerdown', r, { once: true }));
+    try { cfg.onFirstGesture?.(state.audioOn); } catch (_) {}
+    ensureAudio();
+    await wait(1000);
+    const first = findCards('宇多田ヒカル first love')[0], last = findCards('miles davis kind of blue')[0];
+    const used = new Set([first?.cell, last?.cell]);
+    const rand = () => { let c; for (let n = 0; n < 500; n++) { c = CARDS[Math.floor(Math.random() * N)]; if (!used.has(c.cell)) break; } used.add(c.cell); return c; };
+    for (const c of [first, rand(), rand(), last]) { if (!c) continue; if (!(await travelTo(c))) return; await wait(2000); }
+    // 程式點擊不會出現 :active 的按下樣子，用同一組樣式按一下
+    el.draw.classList.add('is-pressed'); await wait(140); el.draw.classList.remove('is-pressed');
+    el.draw.click();
+    // 結果頁（呼叫端的 #tuneResultWrap）出來、串流按鈕畫好之後再停 1.5 秒，用 1.4 秒慢慢捲到按鈕列
+    let btns = null;
+    for (let n = 0; n < 100 && !btns; n++) { await wait(200); const wrap = document.getElementById('tuneResultWrap'); if (wrap && !wrap.hidden) btns = wrap.querySelector('.streaming-btns'); }
+    if (!btns) return;
+    await wait(1500);
+    const y0 = global.scrollY, y1 = Math.max(0, btns.getBoundingClientRect().top + global.scrollY - global.innerHeight * 0.55), t0 = performance.now();
+    await new Promise(r => { const step = now => { const u = Math.min(1, (now - t0) / 1400), e = u < .5 ? 2 * u * u : 1 - Math.pow(-2 * u + 2, 2) / 2; global.scrollTo(0, y0 + (y1 - y0) * e); if (u < 1) requestAnimationFrame(step); else r(); }; requestAnimationFrame(step); });
   }
 
   async function start() {
