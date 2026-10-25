@@ -772,7 +772,7 @@
   // ── 示範影片劇本（2026-10-25 店主：錄一支示範影片，畫面要跟正式版一模一樣、像真的玩家在玩）──
   // 只有網址帶 ?demo=1 才會跑，一般玩家碰不到；全程用遊戲本身的轉輪動畫與按鈕，不加任何畫面元素。
   // 開法：網址帶 ?demo=1 時先點一下星圖（iOS 要一下手勢才准出聲）；或在左上角讀數 1.5 秒內連點三下。1 秒後開始：
-  //   宇多田ヒカル《First Love》→ 隨機兩張（跟其他幾張不同格）→ Miles Davis《Kind of Blue》，每張停 2 秒
+  //   宇多田ヒカル《First Love》→ 隨機兩張（跟其他幾張不同格）→ Miles Davis《Kind of Blue》，每張試聽出聲後停 5 秒
   //   → 按「就這張」→ 等結果頁出來 → 慢慢往下捲到串流按鈕停住。
   let demoRunning = false;
   async function runDemo(waitTap) {
@@ -785,11 +785,11 @@
     const first = findCards('宇多田ヒカル first love')[0], last = findCards('miles davis kind of blue')[0];
     const used = new Set([first?.cell, last?.cell]);
     const rand = () => { let c; for (let n = 0; n < 500; n++) { c = CARDS[Math.floor(Math.random() * N)]; if (!used.has(c.cell)) break; } used.add(c.cell); return c; };
-    // 每一站：轉到位 → 等試聽真的出聲 → 再停 2 秒（2026-10-25 店主：太快了，要試聽出來 2 秒才移動）。
+    // 每一站：轉到位 → 等試聽真的出聲 → 再停 5 秒（2026-10-25 店主：試聽出現後 5 秒換下一張）。
     // 回傳有沒有出聲；沒有試聽的卡 8 秒內等不到聲音就放棄
     const stop = async c => { if (!(await travelTo(c))) return null; const t0 = performance.now();
       while (audibleCard !== c && performance.now() - t0 < 8000 && !(performance.now() - t0 > 1500 && playing !== c)) await wait(100);
-      const ok = audibleCard === c; await wait(ok ? 2000 : 600); return ok; };
+      const ok = audibleCard === c; await wait(ok ? 5000 : 600); return ok; };
     if (first && (await stop(first)) === null) return;
     // 隨機兩張若剛好沒試聽，換一張再轉（最多試 3 次），每一站都有聲音
     for (let k = 0; k < 2; k++) for (let n = 0; n < 3; n++) { const r = await stop(rand()); if (r === null) return; if (r) break; }
