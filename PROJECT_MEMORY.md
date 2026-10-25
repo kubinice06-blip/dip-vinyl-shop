@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-25｜dip-vinyl-shop｜頻率光譜：主畫面 App 頂端再讓 22px（避開 iOS 狀態列下緣毛玻璃）
+
+- **起因**：店主截圖：safe-area 已讓出（讀數排在狀態列正下方、底部多一條黑邊），但頂端仍「霧霧的」——iOS 主畫面 App 在狀態列下緣多一條毛玻璃，蓋到讀數與正在播放卡（由截圖推斷，雲端無法模擬 iOS standalone）。
+- **改動**：`@media (display-mode:standalone){.tune-app{padding-top:calc(env(safe-area-inset-top) + 22px)}}`，只有主畫面開啟時生效，瀏覽器不變。`dip-tune.js?v=19`。
+- **主要檔案**：`dip-tune.js`、`index.html`
+- **驗證**：本機 Chromium 瀏覽器模式 padding-top 0px；CSSOM 確認該 media 規則解析為 `(display-mode: standalone) → calc(env(safe-area-inset-top,0px) + 22px)`（Chromium 無法模擬 standalone，實機效果待店主確認）。
+
 ### 2026-10-25｜dip-vinyl-shop｜修正：從首頁點進頻率光譜資料全 404（補 `<base href="/">`）；主畫面 App 讓出狀態列
 
 - **緊急修正**：PR #228 讓頻率光譜網址寫成 `/tune/`，但只有部署產生的 `tune/index.html` 帶 `<base href="/">`；**從首頁（`/`）點進頻率光譜時網址被改成 `/tune/`，之後 `data/mood/card-moods.json`、`tune/panel-all.png`、`seed_cards.json` 等相對路徑全解析到 `/tune/…` 而 404**（本機測「情緒座標載入失敗」、面板圖消失）。改成 `index.html` 本身就帶 `<base href="/">`（首頁在根目錄，行為不變），`build-tune-page.mjs` 改成檢查它存在、不在就讓部署失敗。
