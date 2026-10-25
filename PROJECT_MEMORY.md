@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-25｜dip-vinyl-shop｜修正：從首頁點進頻率光譜資料全 404（補 `<base href="/">`）；主畫面 App 讓出狀態列
+
+- **緊急修正**：PR #228 讓頻率光譜網址寫成 `/tune/`，但只有部署產生的 `tune/index.html` 帶 `<base href="/">`；**從首頁（`/`）點進頻率光譜時網址被改成 `/tune/`，之後 `data/mood/card-moods.json`、`tune/panel-all.png`、`seed_cards.json` 等相對路徑全解析到 `/tune/…` 而 404**（本機測「情緒座標載入失敗」、面板圖消失）。改成 `index.html` 本身就帶 `<base href="/">`（首頁在根目錄，行為不變），`build-tune-page.mjs` 改成檢查它存在、不在就讓部署失敗。
+- **主畫面 App 太上面**：店主截圖從主畫面開，讀數與正在播放卡擠進狀態列。`.tune-app` 加 `padding: env(safe-area-inset-*)` 四邊；瀏覽器裡這些值是 0，網頁版不變（折衷方案）。`dip-tune.js?v=18`。
+- **主要檔案**：`index.html`、`dip-tune.js`、`scripts/build-tune-page.mjs`
+- **驗證**：本機 Chromium 開 `/index.html?app=1#tune`（網址被改成 `/tune/`）：0 個 404、星圖與面板正常；瀏覽器 padding-top 0px；注入 47／34px 模擬瀏海＋底部橫條截圖，讀數列與面板整體下移、網頁版截圖不變。
+
 ### 2026-10-25｜dip-vinyl-shop｜頻率光譜獨立網址 /tune/（不帶 #）
 
 - **起因**：店主「希望頻率光譜是一個獨立頁面，而不是分頁前有井字號的暫時分頁」。原本 `/tune/` 只是轉址頁（→ `/#tune`），網址列一直是 `#tune`，IG 內建瀏覽器複製連結、加到主畫面都容易回首頁。
