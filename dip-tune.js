@@ -13,7 +13,8 @@
  *   DipTune.stop();      // 離開分頁：停試聽、停音效
  *   DipTune.pickAgain(); // 結果頁「同頻率再抽一張」：在目前頻率附近加權隨機
  *
- * onResult 收到 { card, cell, cellName, coords }，由呼叫端沿用既有結果頁（showGpResult），本模組不碰那段。
+ * onResult 收到 { card, cell, cellName, coords, continuing }，由呼叫端沿用既有結果頁（showGpResult），本模組不碰那段。
+ * continuing＝這張在星圖上正在試聽、沒有停掉，結果頁應接手而不是重播。
  * 抽卡層平均（MOOD_SCALE_PLAN §2.2）：掃描在百分位空間找卡（每一區密度一樣），不動任何卡的屬性。
  */
 (function (global) {
@@ -684,9 +685,12 @@
   function emit(c) {
     if (!c) return;
     state.seen.push(c.i); if (state.seen.length > 200) state.seen.shift();
-    stopPreview(); sfxStop();
+    // 星圖上正在試聽的就是這張：不停，交給結果頁接著播（2026-10-25 店主：按就這張後試聽不要從頭開始）
+    const continuing = playing === c;
+    if (continuing) { clearTimeout(idleTimer); playing = null; setNowPlaying(false); } else stopPreview();
+    sfxStop();
     const t = target();
-    cfg.onResult?.({ card: c.card, cell: c.cell, cellName: NAMES[c.cell], coords: { x: c.x, y: c.y, z: c.z }, target: t, targetCell: cellOf(t.x, t.y, t.z), targetCellName: NAMES[cellOf(t.x, t.y, t.z)] });
+    cfg.onResult?.({ card: c.card, cell: c.cell, cellName: NAMES[c.cell], coords: { x: c.x, y: c.y, z: c.z }, target: t, targetCell: cellOf(t.x, t.y, t.z), targetCellName: NAMES[cellOf(t.x, t.y, t.z)], continuing });
   }
   function pickAgain() { const c = weightedPick(); if (c) { previewCard = c; light(c); emit(c); } }
 

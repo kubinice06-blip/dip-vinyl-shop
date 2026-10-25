@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-25｜dip-vinyl-shop｜頻率光譜：按「就這張」後試聽接著播，不從頭開始
+
+- **起因**：店主「點擊就這張後，試播不會從頭開始，接續星圖時的音樂」。原本 `emit()` 一律 `stopPreview()`，結果頁 `showGpResult` 再 `gpPlayPreview(false)` 重播。
+- **改動**：`dip-tune.js` `emit()`：星圖上正在試聽的就是這張（`playing === c`）就不停播放器，只放手狀態，`onResult` 帶 `continuing: true`；`index.html` 結果物件帶 `_continuePreview`，`showGpResult` 先試 `gpAdoptPreview()`——播放器狀態是同一張且 loading／playing 才接手（`activePreviewResult`、`gpPreviewStarted`、暫停圖示），否則照舊自動播。`dip-tune.js?v=20`。
+- **主要檔案**：`dip-tune.js`、`index.html`
+- **驗證**：本機 Chromium（攔下 iTunes 試聽檔換成 WAV，因開源 Chromium 不支援 AAC）：搜尋 Kind of Blue→星圖試聽 playing→按「就這張」：`playAlbum` 呼叫次數不變（沒重播）、結果頁按鈕為暫停；按暫停→stopping→stopped。沒試聽的卡（error）照舊走結果頁自己的流程。0 頁面錯誤。
+
 ### 2026-10-25｜dip-vinyl-shop｜宇多田ヒカル《First Love》掛名由英文改日文
 
 - **起因**：店主「宇多田的 first love 藝人名用英文，其他專輯用日文，全改成日文」。池內 7 張只有《First Love》掛「Hikaru Utada」。

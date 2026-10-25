@@ -1071,7 +1071,7 @@
 <script src="dip-player.js?v=53"></script>
 <script src="dip-draw-anim.js?v=4"></script>
 <script src="dip-genre-tree.js?v=5"></script>
-<script src="dip-tune.js?v=19"></script>
+<script src="dip-tune.js?v=20"></script>
 <script src="dip-artist-intro.js?v=2"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -5891,7 +5891,7 @@ ${seenList}
     // 搜尋清單用：先只讀 card_catalog 的封面（一次讀取），沒有才走完整查找（含 Spotify）
     listCover: async (card) => { try { const s = await getDoc(doc(db, 'card_catalog', cardIdOf(card.artist, card.album))); const u = s.exists() && s.data().coverUrl; if (u) return u; } catch (e) {} return (await resolveCardAssets(card.artist, card.album)).coverUrl || ''; },
     onBack: () => setActiveTab(SHOP_MODE ? 'shop' : 'find'),
-    onResult: async ({ card, cell, cellName, targetCellName }) => {
+    onResult: async ({ card, cell, cellName, targetCellName, continuing }) => {
       gpResultHost = 'tuneContent';
       gpStopPreview();
       const seq = ++_tuneSeq;
@@ -5924,7 +5924,7 @@ ${seenList}
         _coverUrl: assets.coverUrl, _spotifyUrl: assets.spotifyUrl,
         _bandcampUrl: assets.bandcampUrl, _ytUrl: assets.ytUrl,
         _previewUrl: assets.previewUrl, _previewUnavailable: assets.previewUnavailable,
-        _matchNote: note, _mode: 'tune', _streaming: true,
+        _matchNote: note, _mode: 'tune', _streaming: true, _continuePreview: !!continuing,
         _hall: card.tier === 'hall', _pearl: card.tier === 'pearl', _heresy: card.tier === 'heresy',
       });
       if (seq !== _tuneSeq) { warp.cancel(); return; }
@@ -6237,7 +6237,15 @@ ${seenList}
     resolveBandcampBtn(result.artist, result.album, document.getElementById(gpResultHost));
     // 抽到即自動播放試聽（跟對戰一樣）。沒開自動播放就安靜停下，圖示停在 ▶，
     // 玩家可以按試聽鈕聽這一張，或按開關讓之後每張都自動播。
-    if (gpCanPreview && !(result._previewUnavailable && !result._previewUrl)) gpPlayPreview(false);
+    if (gpCanPreview && !(result._previewUnavailable && !result._previewUrl) && !gpAdoptPreview(result)) gpPlayPreview(false);
+  }
+  // 頻率光譜按「就這張」時，星圖上那張的試聽還在播：結果頁直接接手（圖示切成暫停、之後按鈕可停），不從頭重播
+  function gpAdoptPreview(result) {
+    const s = gpPlayerState;
+    if (!result._continuePreview || !s || s.artist !== result.artist || s.album !== result.album || !['loading', 'playing'].includes(s.status)) return false;
+    activePreviewResult = result; gpPreviewStarted = true; gpPreviewManual = false;
+    _gpSetPreviewIcon(true);
+    return true;
   }
 
   async function shareGpResult() {
