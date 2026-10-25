@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-25｜dip-vinyl-shop｜宇多田ヒカル《First Love》掛名由英文改日文
+
+- **起因**：店主「宇多田的 first love 藝人名用英文，其他專輯用日文，全改成日文」。池內 7 張只有《First Love》掛「Hikaru Utada」。
+- **改動**（`batch-progress/rename-utada-20261025/`）：本機 `apply-local.mjs` 換鍵——`seed_cards.json`、`card-subgenres.json`、`data/mood/card-moods-v0.json`、`data/apple-audio-map-v1.json`（鍵改 `宇多田ヒカル\0firstlove`，重建 runtime）、`data/shop/{inventory,descs}.json`（cardKey `宇多田ヒカル|firstlove`）、快取 `rawgenres-cache`／`covers-cache`；`build-card-moods`、`build-genre-tree --pull`、`build-draw-covers --pull` 重建。KV 4 鍵（bc2／cover6／desc2／mapgenre3）先寫新鍵回讀 4/4、再刪舊鍵（殘留 0），舊值備份 `kv-backup.json`。Firestore `card_catalog` 用 `migrate-card-catalog-ids.mjs --map` 搬到 `宇多田ヒカル|first love`（逐筆相符、舊文件刪除，備份在批次夾）。`album_overrides` 新舊 id 都沒有文件，不用店主重貼。
+- **簡介順手修**：KV 與 card_catalog 的簡介寫「宇多田光」（中譯名），照東亞音樂人寫原文的規範改「宇多田ヒカル」；其他 6 張簡介沒提到名字。
+- **已知後果**：已收藏這張的玩家卡冊仍存舊掛名（同 10-04 拆卡、08-11 掛名更動）。
+- **主要檔案**：上列資料檔、`genre-tree.json`、`draw-covers/*`、`data/mood/card-moods.json`、`batch-progress/rename-utada-20261025/*`
+- **驗證**：卡池 21,894 列不變；card-moods 座標 21,894/21,894、錨點 gate 綠；`/album-desc?artist=宇多田ヒカル&album=First Love` 回新簡介。
+
 ### 2026-10-25｜dip-vinyl-shop｜頻率光譜：主畫面 App 頂端再讓 22px（避開 iOS 狀態列下緣毛玻璃）
 
 - **起因**：店主截圖：safe-area 已讓出（讀數排在狀態列正下方、底部多一條黑邊），但頂端仍「霧霧的」——iOS 主畫面 App 在狀態列下緣多一條毛玻璃，蓋到讀數與正在播放卡（由截圖推斷，雲端無法模擬 iOS standalone）。
