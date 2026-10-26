@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-26｜dip-vinyl-shop｜懸浮封面：拿掉斜向反光那一下閃，改成訊號不穩
+
+- **改動**：店主「視窗特效不要閃一下那個，改成訊號不穩的效果」。拿掉 `.tune-holo-cv::after` 每 6 秒掃過封面的斜向白光（`tuneHoloSheen`）。改成每 7 秒一次訊號不穩：封面（img／♪ 佔位）`tuneHoloGlitch` 兩下硬切抽動（橫移＋斜切＋紅藍分色 drop-shadow，各約 0.07 秒），`::after` 同步跳過兩條雜訊帶（`tuneHoloTear`，背景位置硬切），不做亮度變化。`prefers-reduced-motion` 全停。`dip-tune.js?v=49`。
+- **主要檔案**：`dip-tune.js`、`index.html`
+- **驗證**：`node --check` 過；本機 Playwright 把動畫暫停在 6.05／6.125／6.545 秒截圖：封面錯位、紅藍邊、雜訊帶都出現，平常（3 秒）是乾淨的；無 pageerror。
+
 ### 2026-10-26｜dip-vinyl-shop｜示範劇本：開頭先收起浮著的封面板，停 5 秒再轉台
 
 - **改動**：店主「開始腳本時，開頭先讓原本的漂浮視窗縮回去 5 秒，再開始轉台」。`runDemo` 開跑時 `stopPreview()`（連帶清掉待開機的計時，這段期間不會再彈出）＋`hideHolo()`，等待 1 秒 → 5 秒才開始第一站。`dip-tune.js?v=48`。
