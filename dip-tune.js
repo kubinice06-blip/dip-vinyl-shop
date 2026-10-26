@@ -786,16 +786,18 @@
   }
   // 開機那一刻決定板子貼哪邊、星圖往哪滑：板子貼星星的另一側，星圖整片橫移（camera.setViewOffset）讓星星落在板子旁邊的空位正中，
   // 光源與光束才不會被板子擋住；收起時滑回來。--dx/--dy＝星星（滑動前）相對板子中心的位移，板子從那裡飛出來
-  const VIEW = { cur: 0, target: 0, last: 0 };
+  const VIEW = { cur: 0, target: 0, y: 0, ytarget: 0, last: 0 };   // cur/target：橫移（正＝星圖往左）；y/ytarget：直移（正＝星圖往上）
   function slideView() {
     const now = performance.now(), dt = Math.min(.05, (now - (VIEW.last || now)) / 1000); VIEW.last = now;
-    if (VIEW.cur === VIEW.target && VIEW.cur === 0) return;
-    VIEW.cur += (VIEW.target - VIEW.cur) * Math.min(1, dt * (RM_FX ? 60 : 5)); if (Math.abs(VIEW.target - VIEW.cur) < .3) VIEW.cur = VIEW.target;
+    if (VIEW.cur === VIEW.target && VIEW.cur === 0 && VIEW.y === VIEW.ytarget && VIEW.y === 0) return;
+    const k = Math.min(1, dt * (RM_FX ? 60 : 5));
+    VIEW.cur += (VIEW.target - VIEW.cur) * k; if (Math.abs(VIEW.target - VIEW.cur) < .3) VIEW.cur = VIEW.target;
+    VIEW.y += (VIEW.ytarget - VIEW.y) * k; if (Math.abs(VIEW.ytarget - VIEW.y) < .3) VIEW.y = VIEW.ytarget;
     const w = el.gl.clientWidth, h = el.gl.clientHeight; if (!w || !h) return;
-    if (VIEW.cur === 0) camera.clearViewOffset(); else camera.setViewOffset(w, h, VIEW.cur, 0, w, h);
+    if (VIEW.cur === 0 && VIEW.y === 0) camera.clearViewOffset(); else camera.setViewOffset(w, h, VIEW.cur, VIEW.y, w, h);
   }
   function placeHolo() {
-    FOLLOW.x = 0; el.holo.style.setProperty('--fx', '0px');
+    FOLLOW.x = FOLLOW.y = 0; el.holo.style.setProperty('--fx', '0px'); el.holo.style.setProperty('--fy', '0px');
     const sp = litScreenPos(), sr = el.stage.getBoundingClientRect(), W = el.holo.offsetWidth;
     FOLLOW.on = !!sp && THREE_OK;
     if (!sp) { el.holo.style.left = ''; el.holo.style.removeProperty('--dx'); el.holo.style.setProperty('--dy', '40%'); return; }
@@ -813,8 +815,9 @@
   // 星圖與板子跟著星圖的轉角慢慢互換位置（2026-10-26 店主：星圖在左、視窗在右時，星圖慢慢飄向右、視窗慢慢飄向左，反之亦然）：
   // 開機時記下兩端——A＝現在這樣（板子貼一邊、星星在另一邊空位正中）、B＝左右對調——之後依星圖自轉／拖曳轉過的方位角，
   // u＝(1−cos 2Δ)/2 在 A、B 之間來回（轉 90° 換一次邊），板子照 u 平移、整片星圖用 view offset 把星星推到對應位置。
-  // 換邊經過中間時星星會被板子擋住，光束照規則淡掉，過去之後從另一側再亮起來
-  const FOLLOW = { on: false, az0: 0, cxA: 0, cxB: 0, fzA: 0, fzB: 0, x: 0, last: 0 };
+  // 投影光要一直照著（店主）：換邊經過中間時，星星從板子上緣「拱」過去——星圖往上抬、板子往下沉一點，星星不會躲到板子後面，
+  // 光束從上方往下打到板子；w＝sin(πu) 在兩端是 0、正中間是 1
+  const FOLLOW = { on: false, az0: 0, cxA: 0, cxB: 0, fzA: 0, fzB: 0, x: 0, y: 0, last: 0 };
   function followHolo() {
     const now = performance.now(), dt = Math.min(.05, (now - (FOLLOW.last || now)) / 1000); FOLLOW.last = now;
     if (!FOLLOW.on || !controls?.getAzimuthalAngle || !el.holo.classList.contains('on') || el.holo.classList.contains('lift')) return;
@@ -822,10 +825,13 @@
     const u = (1 - Math.cos(2 * (controls.getAzimuthalAngle() - FOLLOW.az0))) / 2, sr = el.stage.getBoundingClientRect();
     const tx = (FOLLOW.cxB - FOLLOW.cxA) * u, star = FOLLOW.fzA + (FOLLOW.fzB - FOLLOW.fzA) * u;
     VIEW.target = Math.max(-sr.width * .6, Math.min(sr.width * .6, sp.x - sr.left + VIEW.cur - star));
-    FOLLOW.x += (tx - FOLLOW.x) * (RM_FX ? 1 : Math.min(1, dt * 5));
-    el.holo.style.setProperty('--fx', FOLLOW.x.toFixed(1) + 'px');
+    const w = Math.sin(Math.PI * u), dip = 22 * w, top0 = el.holo.getBoundingClientRect().top - sr.top - FOLLOW.y;   // 板子沒沉時的上緣
+    const baseY = sp.y - sr.top + VIEW.y; VIEW.ytarget = Math.max(0, Math.min(sr.height * .8, w * (baseY - (top0 + dip - 20))));
+    const k = RM_FX ? 1 : Math.min(1, dt * 5);
+    FOLLOW.x += (tx - FOLLOW.x) * k; FOLLOW.y += (dip - FOLLOW.y) * k;
+    el.holo.style.setProperty('--fx', FOLLOW.x.toFixed(1) + 'px'); el.holo.style.setProperty('--fy', FOLLOW.y.toFixed(1) + 'px');
   }
-  function hideHolo() { FOLLOW.on = false; holoCard = null; FX.target = 0; VIEW.target = 0; clearTimeout(holoT); el.holo?.classList.remove('on', 'lift'); el.now?.classList.remove('is-tucked'); el.hint?.classList.remove('is-tucked'); }
+  function hideHolo() { FOLLOW.on = false; holoCard = null; FX.target = 0; VIEW.target = 0; VIEW.ytarget = 0; clearTimeout(holoT); el.holo?.classList.remove('on', 'lift'); el.now?.classList.remove('is-tucked'); el.hint?.classList.remove('is-tucked'); }
   function setHoloUI() { el.holoBtn.setAttribute('aria-pressed', String(state.holo)); }
   function playPreview() {
     const c = previewCard; if (!c || !state.audioOn || !cfg.player) return;
