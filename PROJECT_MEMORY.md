@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-26｜dip-vinyl-shop｜懸浮封面：星圖退後與板子彈出同時開始
+
+- **改動**：店主「是要視窗彈出來的同時星圖往後退，不是彈出來後才往後退」。拿掉 `placeHolo` 裡延遲 350 毫秒才設 `VIEW.ztarget=.86` 的計時，改成開機同一格就設；`slideView` 縮放緩動在「退後」方向加快到 `dt*6`（與板子彈出的 ease-out 同步、前段最快），回到原大小維持 `dt*3`。`dip-tune.js?v=50`。
+- **主要檔案**：`dip-tune.js`、`index.html`
+- **驗證**：`node --check` 過；本機 Playwright 每 60 毫秒量星星到星圖中心的距離：板子 `.on` 那一格起 44→42→41→40（0.18 秒內大致到位），彈出前不動；無 pageerror。
+
 ### 2026-10-26｜dip-vinyl-shop｜懸浮封面：拿掉斜向反光那一下閃，改成訊號不穩
 
 - **改動**：店主「視窗特效不要閃一下那個，改成訊號不穩的效果」。拿掉 `.tune-holo-cv::after` 每 6 秒掃過封面的斜向白光（`tuneHoloSheen`）。改成每 7 秒一次訊號不穩：封面（img／♪ 佔位）`tuneHoloGlitch` 兩下硬切抽動（橫移＋斜切＋紅藍分色 drop-shadow，各約 0.07 秒），`::after` 同步跳過兩條雜訊帶（`tuneHoloTear`，背景位置硬切），不做亮度變化。`prefers-reduced-motion` 全停。`dip-tune.js?v=49`。
