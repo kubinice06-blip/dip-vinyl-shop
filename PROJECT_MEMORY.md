@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-26｜dip-vinyl-shop｜示範劇本：試聽出聲後停 3 秒才切換
+
+- **改動**：店主「改成試聽播放後 3 秒切換」。`runDemo` 每站出聲後停留 5 秒 → 3 秒。`dip-tune.js?v=26`。
+- **主要檔案**：`dip-tune.js`、`index.html`
+- **驗證**：`node --check` 過；只改等待常數。
+
 ### 2026-10-26｜dip-vinyl-shop｜示範劇本：中間兩站改為恍惚、沸騰各一張經典盤
 
 - **改動**：店主「兩個隨機，一個選恍惚、一個選沸騰，經典一點的專輯，一共四張」。`runDemo` 中間兩站改成 `rand('languid')`、`rand('boil')`：該格裡殿堂牌或經典度 5（不足 5 張才放寬到 4），且只挑 `DipPlayer.appleAlbumUrl()` 有值（試聽索引有 Apple 專輯）的，免得畫面閃過「這張沒有試聽」；萬一還是沒聲音，同格換一張（最多 3 次）。整支四張：First Love → 恍惚經典 → 沸騰經典 → Kind of Blue。`dip-tune.js?v=25`。
