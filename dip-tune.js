@@ -124,7 +124,7 @@
    橫放（面板在右邊）就收在星圖裡。板子只有上半（標頭＋封面）吃指標事件、用來拖曳，下半壓在搜尋列上不擋點擊；搜尋框有焦點時板子收起來。
    投影源是星圖裡那顆專輯星（2026-10-26 店主）：板子從星星飛出來長大、轉動時縮回星星。投影光照店主附圖做成柔光，不畫硬邊：
    星星一團光暈＋一圈斷續光環、上百條極細光絲往板子方向扇開並伸出板子外緣、柔和光錐（不要噴發的光點，2026-10-26 店主）（.tune-holo-fx，2D canvas，
-   lighter 疊加，跟著星圖 render loop 每格畫）。光在板子後面；星星跑到板子後面時不往四周噴到螢幕邊（店主截圖），改成板子背光：板緣一圈柔光＋短光絲只透出板緣 15–55px。
+   lighter 疊加，跟著星圖 render loop 每格畫）。光在板子後面，同一套光連續變化：星星在旁邊是扇形光束，滑到板子後面就只剩板緣柔光與伸出板緣的短光絲（不噴到螢幕邊）。
    直放板子寬 52cqw，開機時貼到星星的另一側，星圖同時整片橫移讓星星落在板子旁的空位，光源與光束才露得出來。 */
 .tune-stage{container-type:size}
 .tune-holo.on:not(.lift) .tune-holo-hd,.tune-holo.on:not(.lift) .tune-holo-cv{pointer-events:auto;cursor:grab;touch-action:none}.tune-holo.dragging .tune-holo-hd,.tune-holo.dragging .tune-holo-cv{cursor:grabbing}
@@ -740,12 +740,21 @@
     holoT = setTimeout(() => { if (holoCard === c && !el.holo.classList.contains('on')) { holoFace(HOLO_PH); holoOn(); } }, 4000);
     if (c.card.coverUrl) setHoloCover(c.card.coverUrl);
   }
-  // 投影光（柔光版）：光暈＋斷續光環＋上百條細光絲扇形伸出板子＋柔和光錐；level 0→1 淡入淡出，vis＝星星有沒有露在板子外（被擋住就淡掉）
-  const FX = { level: 0, target: 0, vis: 0, rgb: [94, 230, 240], rays: [], last: 0, ctx: null, W: 0, H: 0, fan: null };
+  // 投影光（柔光版，一體成形）：同一套光——每條光絲從星星射向板子上的某一點（落點散在板子範圍外擴 10%）再多伸 10–40px，
+  // 底下墊一層「星星＋板子四角」凸包的柔光（radial gradient＋shadowBlur 讓邊緣化開）。星星在旁邊時看起來是扇形光束，
+  // 星星滑到板子後面時，凸包收成板子本身、只剩板緣一圈柔光，光絲只有伸出板緣的那一小段看得到——同一束光連續變化，不換畫法
+  const FX = { level: 0, target: 0, rgb: [94, 230, 240], rays: [], last: 0, ctx: null, W: 0, H: 0 };
   const RM_FX = !!global.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
   function seedFx() {
-    const R = Math.random; FX.rays = []; FX.fan = null;
-    for (let i = 0; i < 140; i++) FX.rays.push({ u: R(), lf: .7 + R() * .6, a: .09 + R() * R() * .34, w: .5 + R() * 1.1, ph: R() * 6.28, sp: .6 + R() * 2.2 });
+    const R = Math.random; FX.rays = [];
+    for (let i = 0; i < 150; i++) FX.rays.push({ u: R() * 1.2 - .1, v: R() * 1.2 - .1, ext: 10 + R() * 30, a: .09 + R() * R() * .34, w: .5 + R() * 1.1, ph: R() * 6.28, sp: .6 + R() * 2.2 });
+  }
+  // 凸包（Andrew monotone chain），點數很少
+  function hull(P) {
+    P = P.slice().sort((a, b) => a[0] - b[0] || a[1] - b[1]); const cr = (o, a, b) => (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);
+    const lo = [], up = []; for (const p of P) { while (lo.length > 1 && cr(lo[lo.length - 2], lo[lo.length - 1], p) <= 0) lo.pop(); lo.push(p); }
+    for (const p of P.slice().reverse()) { while (up.length > 1 && cr(up[up.length - 2], up[up.length - 1], p) <= 0) up.pop(); up.push(p); }
+    return lo.slice(0, -1).concat(up.slice(0, -1));
   }
   function drawFx() {
     const cv = el.fx, now = performance.now(), dt = Math.min(.05, (now - (FX.last || now)) / 1000); FX.last = now;
@@ -755,44 +764,22 @@
     const g = FX.ctx; g.setTransform(D, 0, 0, D, 0, 0); g.clearRect(0, 0, W, H);
     const sp = litScreenPos(); if (!sp || FX.level <= 0) return;
     const sr = el.stage.getBoundingClientRect(), q = el.holo.querySelector('.tune-holo-scr').getBoundingClientRect();
-    const x = sp.x - sr.left, y = sp.y - sr.top, L = q.left - sr.left, T = q.top - sr.top, Rr = q.right - sr.left, B = q.bottom - sr.top;
-    const C = [[L, T], [Rr, T], [Rr, B], [L, B]];
-    const inside = x > L - 10 && x < Rr + 10 && y > T - 10 && y < B + 10;
-    FX.vis += ((inside ? 0 : 1) - FX.vis) * Math.min(1, dt * 6);
-    // 光絲的扇形：涵蓋板子四角再寬一點；星星躲進板子後面時沿用最後一次的扇形一起淡掉
-    if (!inside) { const ac = Math.atan2((T + B) / 2 - y, (L + Rr) / 2 - x); const ds = C.map(([u, v]) => { let d = Math.atan2(v - y, u - x) - ac; while (d > Math.PI) d -= 2 * Math.PI; while (d < -Math.PI) d += 2 * Math.PI; return d; });
-      FX.fan = { a0: ac + Math.min(...ds) - .16, a1: ac + Math.max(...ds) + .16, len: Math.max(120, Math.max(...C.map(([u, v]) => Math.hypot(u - x, v - y))) * 1.25) }; }
-    const [r, gg, b] = FX.rgb, rgba = a => `rgba(${r},${gg},${b},${a})`, t = now / 1000;
+    const x = sp.x - sr.left, y = sp.y - sr.top, L = q.left - sr.left, T = q.top - sr.top, Rr = q.right - sr.left, B = q.bottom - sr.top, PW = Rr - L, PH = B - T;
+    const C = [[L, T], [Rr, T], [Rr, B], [L, B]], far = Math.max(40, ...C.map(([u, v]) => Math.hypot(u - x, v - y)));
+    const [r, gg, b] = FX.rgb, rgba = a => `rgba(${r},${gg},${b},${a})`, lv = FX.level, t = now / 1000;
     g.globalCompositeOperation = 'lighter';
-    // 星星在板子後面：板子背光——板緣一圈柔光＋光絲只伸出板緣一小段（不擴散到螢幕邊）
-    const lvIn = FX.level * (1 - FX.vis);
-    if (lvIn > .01) {
-      g.save(); g.shadowColor = rgba(.9 * lvIn); g.shadowBlur = 26; g.fillStyle = rgba(.6 * lvIn); g.fillRect(L + 4, T + 4, Rr - L - 8, B - T - 8); g.restore();
-      for (const ry of FX.rays) {
-        const a = ry.u * 6.2832 + Math.sin(t * .5 + ry.ph) * .02, c = Math.cos(a), sn = Math.sin(a);
-        let d = Infinity; for (const v of [c > 0 ? (Rr - x) / c : c < 0 ? (L - x) / c : -1, sn > 0 ? (B - y) / sn : sn < 0 ? (T - y) / sn : -1]) if (v > 0 && v < d) d = v;
-        if (!isFinite(d)) continue;
-        const l = d + 15 + ry.lf * 33, ex = x + c * l, ey = y + sn * l, al = ry.a * 1.6 * lvIn * (RM_FX ? 1 : .55 + .45 * Math.sin(t * ry.sp + ry.ph));
-        const gr = g.createLinearGradient(x, y, ex, ey); gr.addColorStop(0, rgba(al)); gr.addColorStop(Math.min(.99, d / l), rgba(al * .9)); gr.addColorStop(1, rgba(0));
-        g.strokeStyle = gr; g.lineWidth = ry.w; g.beginPath(); g.moveTo(x, y); g.lineTo(ex, ey); g.stroke();
-      }
-    }
-    const lv = FX.level * FX.vis; if (!FX.fan || lv < .01) { g.globalCompositeOperation = 'source-over'; return; }
-    const { a0, a1, len } = FX.fan;
-    // 柔和光錐：三層越來越窄、越來越亮，邊緣自然淡掉
-    for (const [k, al] of [[1, .12], [.72, .14], [.42, .16]]) {
-      const m = (a0 + a1) / 2, h = (a1 - a0) / 2 * k, gr = g.createRadialGradient(x, y, 0, x, y, len * .95);
-      gr.addColorStop(0, rgba(al * 3 * lv)); gr.addColorStop(.35, rgba(al * 1.2 * lv)); gr.addColorStop(1, rgba(0));
-      g.fillStyle = gr; g.beginPath(); g.moveTo(x, y); g.arc(x, y, len * .95, m - h, m + h); g.closePath(); g.fill();
-    }
-    // 細光絲
+    // 柔光：星星＋板子四角的凸包
+    const hp = hull([[x, y], ...C]), gr0 = g.createRadialGradient(x, y, 0, x, y, far);
+    gr0.addColorStop(0, rgba(.34 * lv)); gr0.addColorStop(.4, rgba(.12 * lv)); gr0.addColorStop(1, rgba(.05 * lv));
+    g.save(); g.shadowColor = rgba(.5 * lv); g.shadowBlur = 22; g.fillStyle = gr0; g.beginPath(); hp.forEach(([u, v], k) => k ? g.lineTo(u, v) : g.moveTo(u, v)); g.closePath(); g.fill(); g.restore();
+    // 細光絲：星星 → 板子上的落點，再多伸一小段
     for (const ry of FX.rays) {
-      const a = a0 + ry.u * (a1 - a0) + Math.sin(t * .7 + ry.ph) * .012, l = len * ry.lf, ex = x + Math.cos(a) * l, ey = y + Math.sin(a) * l;
-      const al = ry.a * lv * (RM_FX ? 1 : .55 + .45 * Math.sin(t * ry.sp + ry.ph));
-      const gr = g.createLinearGradient(x, y, ex, ey); gr.addColorStop(0, rgba(al)); gr.addColorStop(.5, rgba(al * .55)); gr.addColorStop(1, rgba(0));
+      const px = L + (ry.u + Math.sin(t * .6 + ry.ph) * .006) * PW, py = T + ry.v * PH, dx = px - x, dy = py - y, d = Math.hypot(dx, dy) || 1, l = d + ry.ext;
+      const ex = x + dx / d * l, ey = y + dy / d * l, al = ry.a * lv * (RM_FX ? 1 : .55 + .45 * Math.sin(t * ry.sp + ry.ph));
+      const gr = g.createLinearGradient(x, y, ex, ey); gr.addColorStop(0, rgba(al)); gr.addColorStop(Math.min(.98, d / l), rgba(al * .6)); gr.addColorStop(1, rgba(0));
       g.strokeStyle = gr; g.lineWidth = ry.w; g.beginPath(); g.moveTo(x, y); g.lineTo(ex, ey); g.stroke();
     }
-    // 光源：光暈＋慢慢轉的斷續光環
+    // 光源：光暈＋慢慢轉的斷續光環（在板子後面時自然被擋住）
     const gl = g.createRadialGradient(x, y, 0, x, y, 30); gl.addColorStop(0, `rgba(255,255,255,${.95 * lv})`); gl.addColorStop(.22, rgba(.85 * lv)); gl.addColorStop(.6, rgba(.22 * lv)); gl.addColorStop(1, rgba(0));
     g.fillStyle = gl; g.beginPath(); g.arc(x, y, 30, 0, 6.283); g.fill();
     g.strokeStyle = rgba(.75 * lv); g.lineWidth = 1.6; const rot = RM_FX ? 0 : t * .9;
@@ -801,13 +788,15 @@
   }
   // 開機那一刻決定板子貼哪邊、星圖往哪滑：板子貼星星的另一側，星圖整片橫移（camera.setViewOffset）讓星星落在板子旁邊的空位正中，
   // 光源與光束才不會被板子擋住；收起時滑回來。--dx/--dy＝星星（滑動前）相對板子中心的位移，板子從那裡飛出來
-  const VIEW = { cur: 0, target: 0, last: 0 };
+  const VIEW = { cur: 0, target: 0, y: 0, ytarget: 0, last: 0 };   // cur/target：橫移（正＝星圖往左）；y/ytarget：直移（正＝星圖往上，只有拖板子時會動）
   function slideView() {
     const now = performance.now(), dt = Math.min(.05, (now - (VIEW.last || now)) / 1000); VIEW.last = now;
-    if (VIEW.cur === VIEW.target && VIEW.cur === 0) return;
-    VIEW.cur += (VIEW.target - VIEW.cur) * Math.min(1, dt * (RM_FX ? 60 : 5)); if (Math.abs(VIEW.target - VIEW.cur) < .3) VIEW.cur = VIEW.target;
+    if (VIEW.cur === VIEW.target && VIEW.cur === 0 && VIEW.y === VIEW.ytarget && VIEW.y === 0) return;
+    const k = Math.min(1, dt * (RM_FX ? 60 : 5));
+    VIEW.cur += (VIEW.target - VIEW.cur) * k; if (Math.abs(VIEW.target - VIEW.cur) < .3) VIEW.cur = VIEW.target;
+    VIEW.y += (VIEW.ytarget - VIEW.y) * k; if (Math.abs(VIEW.ytarget - VIEW.y) < .3) VIEW.y = VIEW.ytarget;
     const w = el.gl.clientWidth, h = el.gl.clientHeight; if (!w || !h) return;
-    if (VIEW.cur === 0) camera.clearViewOffset(); else camera.setViewOffset(w, h, VIEW.cur, 0, w, h);
+    if (VIEW.cur === 0 && VIEW.y === 0) camera.clearViewOffset(); else camera.setViewOffset(w, h, VIEW.cur, VIEW.y, w, h);
   }
   function placeHolo() {
     FOLLOW.x = FOLLOW.y = 0; el.holo.style.setProperty('--fx', '0px'); el.holo.style.setProperty('--fy', '0px');
@@ -827,7 +816,8 @@
   // 開機時記下兩端——A＝現在這樣（板子貼一邊、星星在另一邊空位正中）、B＝左右對調——之後依星圖自轉／拖曳轉過的方位角，
   // u＝(1−cos 2Δ)/2 在 A、B 之間來回（轉 90° 換一次邊），板子照 u 平移、整片星圖用 view offset 把星星推到對應位置。
   // 玩家可以拖曳板子（2026-10-26 店主）：抓板子上半（標頭＋封面；下半壓在搜尋列上，留給搜尋列點）拖到哪就停哪，
-  // 放開後以新位置當 A、左右鏡像當 B，照轉角繼續互換。拖曳中不推星圖
+  // 拖的時候整片星圖跟著一起移（view offset 同步，星星與板子的相對位置不變）；放開後以現在的板子與星星位置當 A、
+  // 左右鏡像當 B，照轉角繼續互換
   const FOLLOW = { on: false, az0: 0, base: 0, cxA: 0, cxB: 0, fzA: 0, fzB: 0, x: 0, y: 0, last: 0, drag: null };
   function holoBounds() {
     const sr = el.stage.getBoundingClientRect(), W = el.holo.offsetWidth, hud = el.stage.querySelector('.tune-hud').getBoundingClientRect();
@@ -850,7 +840,7 @@
       if (!el.holo.classList.contains('on') || el.holo.classList.contains('lift') || (e.button && e.button !== 0)) return;
       e.preventDefault(); e.stopPropagation();
       const hr = el.holo.getBoundingClientRect(), sr = el.stage.getBoundingClientRect();
-      FOLLOW.drag = { id: e.pointerId, px: e.clientX, py: e.clientY, x: FOLLOW.x, y: FOLLOW.y, top0: hr.top - sr.top - FOLLOW.y };
+      FOLLOW.drag = { id: e.pointerId, px: e.clientX, py: e.clientY, x: FOLLOW.x, y: FOLLOW.y, top0: hr.top - sr.top - FOLLOW.y, vx: VIEW.cur, vy: VIEW.y };
       e.currentTarget.setPointerCapture?.(e.pointerId); el.holo.classList.add('dragging');
     };
     const move = e => {
@@ -859,17 +849,19 @@
       FOLLOW.x = Math.max(b.lo - FOLLOW.base, Math.min(b.hi - FOLLOW.base, d.x + e.clientX - d.px));
       FOLLOW.y = Math.max(rdB - d.top0, Math.min(b.sr.height * .2, d.y + e.clientY - d.py));
       el.holo.style.setProperty('--fx', FOLLOW.x.toFixed(1) + 'px'); el.holo.style.setProperty('--fy', FOLLOW.y.toFixed(1) + 'px');
+      if (THREE_OK) { VIEW.cur = VIEW.target = d.vx - (FOLLOW.x - d.x); VIEW.y = VIEW.ytarget = d.vy - (FOLLOW.y - d.y); }   // 星圖跟著板子一起移
     };
     const drop = e => {
       const d = FOLLOW.drag; if (!d || e.pointerId !== d.id) return; FOLLOW.drag = null; el.holo.classList.remove('dragging');
       const b = holoBounds(), cxA = FOLLOW.base + FOLLOW.x, cxB = Math.max(b.lo, Math.min(b.hi, b.sr.width - cxA));
-      Object.assign(FOLLOW, { cxA, cxB, fzA: starZone(cxA, b.W, b.sr.width), fzB: starZone(cxB, b.W, b.sr.width), az0: controls?.getAzimuthalAngle?.() || 0 });
+      const sp = litScreenPos(), fzA = sp ? sp.x - b.sr.left : starZone(cxA, b.W, b.sr.width);   // 星星留在拖完的位置，B 端左右鏡像
+      Object.assign(FOLLOW, { cxA, cxB, fzA, fzB: b.sr.width - fzA, az0: controls?.getAzimuthalAngle?.() || 0 });
     };
     for (const n of [el.holo.querySelector('.tune-holo-hd'), el.holo.querySelector('.tune-holo-cv')]) {
       n.addEventListener('pointerdown', grab); n.addEventListener('pointermove', move); n.addEventListener('pointerup', drop); n.addEventListener('pointercancel', drop);
     }
   }
-  function hideHolo() { FOLLOW.on = false; FOLLOW.drag = null; holoCard = null; FX.target = 0; VIEW.target = 0; clearTimeout(holoT); el.holo?.classList.remove('on', 'lift'); el.now?.classList.remove('is-tucked'); el.hint?.classList.remove('is-tucked'); }
+  function hideHolo() { FOLLOW.on = false; FOLLOW.drag = null; holoCard = null; FX.target = 0; VIEW.target = 0; VIEW.ytarget = 0; clearTimeout(holoT); el.holo?.classList.remove('on', 'lift'); el.now?.classList.remove('is-tucked'); el.hint?.classList.remove('is-tucked'); }
   function setHoloUI() { el.holoBtn.setAttribute('aria-pressed', String(state.holo)); }
   function playPreview() {
     const c = previewCard; if (!c || !state.audioOn || !cfg.player) return;
