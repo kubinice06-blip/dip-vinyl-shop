@@ -120,7 +120,7 @@
 @keyframes tuneBlink{50%{opacity:.15}}
 /* 懸浮封面（2026-10-26 店主）：停下來試聽時，封面投影成一片浮在星圖下緣、面板正上方的彩色全像玻璃板
    （店主附圖：發光細框、HUD 角標、玻璃反光），板上標頻率格與試聽狀態，盤名、藝人名在板子裡、封面下面。
-   大小跟著星圖區（container query 的 cqh／cqw）一起縮放；直放時板子比星圖略大、往下衝出去壓到面板上緣（店主：衝破螢幕的感覺），
+   大小跟著星圖區（container query 的 cqh／cqw）一起縮放；直放時板子下緣只壓過面板上緣 6px（2026-10-26 店主截圖定的高度，原本壓 17% 星圖高），
    橫放（面板在右邊）就收在星圖裡。板子只有上半（標頭＋封面）吃指標事件、用來拖曳，下半壓在搜尋列上不擋點擊；搜尋框有焦點時板子收起來。
    投影源是星圖裡那顆專輯星（2026-10-26 店主）：板子從星星飛出來長大、轉動時縮回星星。投影光照店主附圖做成柔光，不畫硬邊：
    星星一團光暈＋一圈斷續光環、上百條極細光絲往板子方向扇開並伸出板子外緣、柔和光錐（不要噴發的光點，2026-10-26 店主）（.tune-holo-fx，2D canvas，
@@ -130,7 +130,7 @@
 .tune-holo.on:not(.lift) .tune-holo-hd,.tune-holo.on:not(.lift) .tune-holo-cv{pointer-events:auto;cursor:grab;touch-action:none}.tune-holo.dragging .tune-holo-hd,.tune-holo.dragging .tune-holo-cv{cursor:grabbing}
 .tune-now,.tune-stage .tune-hint{transition:opacity .25s}.tune-now.is-tucked,.tune-stage .tune-hint.is-tucked{opacity:0;pointer-events:none}
 .tune-holo{position:absolute;left:50%;bottom:6px;z-index:5;width:150px;width:min(calc(100cqh - 132px),66cqw);transform:translate(calc(-50% + var(--fx,0px)),var(--fy,0px));pointer-events:none;--rgb:94,230,240;--cc:rgb(var(--rgb))}
-@media (orientation:portrait),(min-height:601px),(max-width:559px){.tune-stage{overflow:visible}.tune-holo{width:min(calc(100cqh - 66px),52cqw);bottom:-17cqh}}
+@media (orientation:portrait),(min-height:601px),(max-width:559px){.tune-stage{overflow:visible}.tune-holo{width:min(calc(73cqh - 32px),52cqw);bottom:-6px}}
 .tune-holo.lift{visibility:hidden}
 .tune-holo .fl{animation:tuneHoloFloat 5.2s ease-in-out infinite}
 .tune-holo .pw{position:relative;display:flex;flex-direction:column;align-items:center;transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0;transition:transform .24s ease-in,opacity .2s ease-in .06s}
@@ -147,7 +147,7 @@
 .tune-holo-hd .np i{display:inline-block;width:3px;height:8px;background:var(--cc);box-shadow:0 0 4px var(--cc);animation:tuneEq .6s steps(3) infinite alternate}
 .tune-holo-hd .np i:nth-child(2){animation-delay:.2s}.tune-holo-hd .np i:nth-child(3){animation-delay:.4s}
 .tune-holo-cv{position:relative;aspect-ratio:1;border-radius:4px;overflow:hidden;box-shadow:0 0 0 1px rgba(var(--rgb),.45)}
-.tune-holo-cv img{display:block;width:100%;height:100%;object-fit:cover;opacity:.9}
+.tune-holo-cv img{display:block;width:100%;height:100%;object-fit:cover;opacity:.74}
 .tune-holo-cv .ph{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:6px;font-family:var(--pix);font-size:11px;letter-spacing:.2em;color:var(--cc);text-shadow:0 0 10px var(--cc);background:rgba(var(--rgb),.08)}
 .tune-holo-cv::before{content:"";position:absolute;inset:0;z-index:1;background:repeating-linear-gradient(180deg,rgba(var(--rgb),.13) 0 1px,transparent 1px 4px);mix-blend-mode:screen}
 .tune-holo-cv::after{content:"";position:absolute;inset:0;z-index:2;box-shadow:inset 0 0 14px rgba(var(--rgb),.55);background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.16) 42%,transparent 54%) 0 0/250% 100% no-repeat;animation:tuneHoloSheen 6s ease-in-out infinite}
