@@ -128,7 +128,7 @@
    直放板子寬 52cqw，開機時貼到星星的另一側，星圖同時整片橫移讓星星落在板子旁的空位，光源與光束才露得出來。 */
 .tune-stage{container-type:size}
 .tune-now,.tune-stage .tune-hint{transition:opacity .25s}.tune-now.is-tucked,.tune-stage .tune-hint.is-tucked{opacity:0;pointer-events:none}
-.tune-holo{position:absolute;left:50%;bottom:6px;z-index:5;width:150px;width:min(calc(100cqh - 132px),66cqw);transform:translateX(-50%);pointer-events:none;--rgb:94,230,240;--cc:rgb(var(--rgb))}
+.tune-holo{position:absolute;left:50%;bottom:6px;z-index:5;width:150px;width:min(calc(100cqh - 132px),66cqw);transform:translate(calc(-50% + var(--fx,0px)),var(--fy,0px));pointer-events:none;--rgb:94,230,240;--cc:rgb(var(--rgb))}
 @media (orientation:portrait),(min-height:601px),(max-width:559px){.tune-stage{overflow:visible}.tune-holo{width:min(calc(100cqh - 66px),52cqw);bottom:-17cqh}}
 .tune-holo.lift{visibility:hidden}
 .tune-holo .fl{animation:tuneHoloFloat 5.2s ease-in-out infinite}
@@ -313,7 +313,7 @@
     marker = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, transparent: true, depthTest: false, color: 0xffffff })); marker.scale.set(0, 0, 1); scene.add(marker);
     const resize = () => { const r = stage.getBoundingClientRect(); if (r.width < 2 || r.height < 2) return; renderer.setSize(r.width, r.height, false); camera.aspect = r.width / r.height; camera.updateProjectionMatrix(); pmat.uniforms.uScale.value = r.height * renderer.getPixelRatio() / 160; };
     new ResizeObserver(resize).observe(stage); resize();
-    (function loop() { if (state.visible) { if (controls) controls.update(); slideView(); renderer.render(scene, camera); if (holoCard || FX.level > 0) drawFx(); } requestAnimationFrame(loop); })();
+    (function loop() { if (state.visible) { if (controls) controls.update(); slideView(); renderer.render(scene, camera); if (holoCard) followHolo(); if (holoCard || FX.level > 0) drawFx(); } requestAnimationFrame(loop); })();
     THREE_OK = true;
     return true;
   }
@@ -793,7 +793,9 @@
     if (VIEW.cur === 0) camera.clearViewOffset(); else camera.setViewOffset(w, h, VIEW.cur, 0, w, h);
   }
   function placeHolo() {
+    FOLLOW.x = FOLLOW.y = 0; el.holo.style.setProperty('--fx', '0px'); el.holo.style.setProperty('--fy', '0px');
     const sp = litScreenPos(), sr = el.stage.getBoundingClientRect(), W = el.holo.offsetWidth;
+    FOLLOW.on = !!sp; FOLLOW.anchor = null;
     if (!sp) { el.holo.style.left = ''; el.holo.style.removeProperty('--dx'); el.holo.style.setProperty('--dy', '40%'); return; }
     // 貼左邊時讓開左上的讀數與按鈕欄
     const hud = el.stage.querySelector('.tune-hud').getBoundingClientRect(), padL = Math.max(8, Math.round(hud.left - sr.left + 34 + 8));
@@ -804,7 +806,31 @@
     const hr = el.holo.getBoundingClientRect();
     el.holo.style.setProperty('--dx', (sp.x - hr.left - hr.width / 2).toFixed(1) + 'px'); el.holo.style.setProperty('--dy', (sp.y - hr.top - hr.height / 2).toFixed(1) + 'px');
   }
-  function hideHolo() { if (holoCard && controls) controls.autoRotate = true; holoCard = null; FX.target = 0; VIEW.target = 0; clearTimeout(holoT); el.holo?.classList.remove('on', 'lift'); el.now?.classList.remove('is-tucked'); el.hint?.classList.remove('is-tucked'); }
+  // 板子跟著星圖走（2026-10-26 店主選 B）：開機、星圖橫移停穩後，把板子中心「釘」在星圖 3D 空間裡（跟那顆星同深度的一點），
+  // 之後拖曳旋轉、縮放星圖，那一點投影到哪，板子就緩緩漂過去，像浮在星圖裡；不出星圖左右邊、往上不壓到讀數、往下最多 12% 星圖高
+  const FOLLOW = { on: false, anchor: null, cx: 0, cy: 0, x: 0, y: 0, last: 0 };
+  function followHolo() {
+    const now = performance.now(), dt = Math.min(.05, (now - (FOLLOW.last || now)) / 1000); FOLLOW.last = now;
+    if (!FOLLOW.on || !THREE_OK || litIdx < 0 || !el.holo.classList.contains('on') || el.holo.classList.contains('lift')) return;
+    const THREE = global.THREE, gr = el.gl.getBoundingClientRect(), hr = el.holo.getBoundingClientRect();
+    if (!FOLLOW.anchor) {
+      if (VIEW.cur !== VIEW.target) return;   // 等開機時的橫移滑完再釘
+      const z = new THREE.Vector3(...S3(CARDS[litIdx])).project(camera).z;
+      FOLLOW.cx = hr.left + hr.width / 2 - FOLLOW.x; FOLLOW.cy = hr.top + hr.height / 2 - FOLLOW.y;
+      FOLLOW.anchor = new THREE.Vector3((FOLLOW.cx - gr.left) / gr.width * 2 - 1, -((FOLLOW.cy - gr.top) / gr.height) * 2 + 1, z).unproject(camera);
+      return;
+    }
+    const v = FOLLOW.anchor.clone().project(camera); if (v.z > 1) return;
+    let tx = gr.left + (v.x + 1) / 2 * gr.width - FOLLOW.cx, ty = gr.top + (1 - v.y) / 2 * gr.height - FOLLOW.cy;
+    const sr = el.stage.getBoundingClientRect(), W = hr.width, left0 = hr.left - sr.left - FOLLOW.x, top0 = hr.top - sr.top - FOLLOW.y;   // 沒跟隨時板子的位置
+    const hud = el.stage.querySelector('.tune-hud').getBoundingClientRect(), padL = Math.max(8, Math.round(hud.left - sr.left + 34 + 8));
+    tx = Math.max(padL - left0, Math.min(sr.width - 8 - W - left0, tx));
+    const rdB = el.readout.getBoundingClientRect().bottom - sr.top + 4; ty = Math.max(Math.min(0, rdB - top0), Math.min(sr.height * .12, ty));
+    const k = RM_FX ? 1 : Math.min(1, dt * 3.5);
+    FOLLOW.x += (tx - FOLLOW.x) * k; FOLLOW.y += (ty - FOLLOW.y) * k;
+    el.holo.style.setProperty('--fx', FOLLOW.x.toFixed(1) + 'px'); el.holo.style.setProperty('--fy', FOLLOW.y.toFixed(1) + 'px');
+  }
+  function hideHolo() { FOLLOW.on = false; if (holoCard && controls) controls.autoRotate = true; holoCard = null; FX.target = 0; VIEW.target = 0; clearTimeout(holoT); el.holo?.classList.remove('on', 'lift'); el.now?.classList.remove('is-tucked'); el.hint?.classList.remove('is-tucked'); }
   function setHoloUI() { el.holoBtn.setAttribute('aria-pressed', String(state.holo)); }
   function playPreview() {
     const c = previewCard; if (!c || !state.audioOn || !cfg.player) return;
