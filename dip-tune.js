@@ -806,16 +806,18 @@
     const sp = litScreenPos(), sr = el.stage.getBoundingClientRect(), W = el.holo.offsetWidth;
     FOLLOW.on = !!sp && THREE_OK;
     if (!sp) { el.holo.style.left = ''; el.holo.style.removeProperty('--dx'); el.holo.style.setProperty('--dy', '40%'); return; }
-    // 開機順序（2026-10-26 店主）：板子先直直彈到中間 → 星圖往後退一點（縮小）同時開始搖擺，兩個動作接在一起不停頓：
-    // 搖擺從中間用 1.3 秒緩入（ease-in-out）滑到 A（星星的另一側，星星先露出來），之後照轉角在 A、B 間來回。
+    // 開機順序（2026-10-26 店主）：板子先直直彈到中間 → 星圖往後退一點（縮小），同時板子就從中間開始跟著轉角慢慢飄
+    // （起點相位在 A、B 正中，不先拉到左右側），星圖從原地往反方向飄；第一步往星星的另一側。
     // 幅度只有到左右界的一半（店主：看得到光束、但不要飄到邊邊）
     const b = holoBounds(), cx = Math.max(b.lo, Math.min(b.hi, sr.width / 2)), starRight = sp.x - sr.left > sr.width / 2;
-    const cxA = cx + ((starRight ? b.lo : b.hi) - cx) / 2, cxB = cx + ((starRight ? b.hi : b.lo) - cx) / 2;
+    const amp = Math.max(0, Math.min(cx - b.lo, b.hi - cx)) / 2, cxA = starRight ? cx - amp : cx + amp, cxB = starRight ? cx + amp : cx - amp;   // 左右對稱，中點＝中間
     el.holo.style.left = cx + 'px';
-    Object.assign(FOLLOW, { base: cx, cxA, cxB, fzA: starZone(cxA, W, sr.width), fzB: starZone(cxB, W, sr.width), az0: null, ph0: 0, drag: null });
+    const fzA = starZone(cxA, W, sr.width), fzB = starZone(cxB, W, sr.width);
+    // 星星與板子反方向飄的比例（同拖曳）；星星起點＝開機時它所在的位置（s0 在搖擺開始那一格才記），板子起點＝中間
+    Object.assign(FOLLOW, { base: cx, cxA, cxB, ratio: Math.max(-3, Math.min(-.3, (fzB - fzA) / (cxB - cxA || 1))), p0: cx, s0: null, az0: null, ph0: Math.PI / 2, drag: null });
     clearTimeout(VIEW.backT); clearTimeout(VIEW.zoomT);
     VIEW.zoomT = setTimeout(() => { if (holoCard) VIEW.ztarget = .86; }, 350);
-    FOLLOW.t0 = performance.now() + 350; FOLLOW.entry = 1300;
+    FOLLOW.t0 = performance.now() + 350;
     const hr = el.holo.getBoundingClientRect();
     el.holo.style.setProperty('--dx', (sp.x - hr.left - hr.width / 2).toFixed(1) + 'px'); el.holo.style.setProperty('--dy', (sp.y - hr.top - hr.height / 2).toFixed(1) + 'px');
   }
@@ -825,7 +827,7 @@
   // 玩家可以拖曳板子（2026-10-26 店主）：抓板子上半（標頭＋封面；下半壓在搜尋列上，留給搜尋列點）拖到哪就停哪，
   // 拖的時候星圖照「左右相反方向飄」的同一套規則跟著動（店主）：板子往左拖，星圖緩緩往右飄，反之亦然，比例跟自動互換一樣
   // （星星位移＝板子位移 ×(fzB−fzA)/(cxB−cxA)，是負的）；上下拖星圖不動。放開後以現在的板子與星星位置當 A、左右鏡像當 B，照轉角繼續互換
-  const FOLLOW = { on: false, az0: 0, ph0: 0, t0: 0, entry: 0, base: 0, cxA: 0, cxB: 0, fzA: 0, fzB: 0, x: 0, y: 0, last: 0, drag: null };
+  const FOLLOW = { on: false, az0: 0, ph0: 0, t0: 0, ratio: -1, p0: 0, s0: 0, base: 0, cxA: 0, cxB: 0, fzA: 0, fzB: 0, x: 0, y: 0, last: 0, drag: null };
   function holoBounds() {
     const sr = el.stage.getBoundingClientRect(), W = el.holo.offsetWidth, hud = el.stage.querySelector('.tune-hud').getBoundingClientRect();
     return { sr, W, lo: Math.max(8, Math.round(hud.left - sr.left + 34 + 8)) + W / 2, hi: sr.width - 8 - W / 2 };   // 板子中心的左右界（左邊讓開按鈕欄）
@@ -837,13 +839,13 @@
     if (!FOLLOW.on || FOLLOW.drag || !controls?.getAzimuthalAngle || !el.holo.classList.contains('on') || el.holo.classList.contains('lift')) return;
     if (now < FOLLOW.t0) return;   // 彈到中間那一下先做完
     const sp = litScreenPos(); if (!sp) return;
-    const az = controls.getAzimuthalAngle(); if (FOLLOW.az0 === null) FOLLOW.az0 = az;
-    const e = RM_FX ? 1 : Math.min(1, (now - FOLLOW.t0) / (FOLLOW.entry || 1)), mix = e < .5 ? 2 * e * e : 1 - Math.pow(-2 * e + 2, 2) / 2;   // 中間 → 搖擺的緩入
-    const u = (1 - Math.cos(2 * (az - FOLLOW.az0) + FOLLOW.ph0)) / 2, sr = el.stage.getBoundingClientRect();
-    const tx = (FOLLOW.cxA + (FOLLOW.cxB - FOLLOW.cxA) * u - FOLLOW.base) * mix, star = FOLLOW.fzA + (FOLLOW.fzB - FOLLOW.fzA) * u;
-    const vt = Math.max(-sr.width * .6, Math.min(sr.width * .6, sp.x - sr.left + VIEW.cur - star));
-    if (mix < 1) { VIEW.target = VIEW.cur = vt * mix; FOLLOW.x = tx; }   // 緩入期間板子與星圖都直接照同一條曲線走，不再疊一層追趕
-    else { VIEW.target = vt; FOLLOW.x += (tx - FOLLOW.x) * (RM_FX ? 1 : Math.min(1, dt * 5)); }
+    const sr = el.stage.getBoundingClientRect(), raw = sp.x - sr.left + VIEW.cur;   // 星星不含橫移時的位置
+    const az = controls.getAzimuthalAngle(); if (FOLLOW.az0 === null) FOLLOW.az0 = az; if (FOLLOW.s0 === null) FOLLOW.s0 = sp.x - sr.left;
+    // 自轉方向是方位角遞減，ph0＝π/2 時 u 從 0.5 往 0（A）走
+    const u = (1 - Math.cos(2 * (az - FOLLOW.az0) + FOLLOW.ph0)) / 2, pos = FOLLOW.cxA + (FOLLOW.cxB - FOLLOW.cxA) * u;
+    const star = FOLLOW.s0 + FOLLOW.ratio * (pos - FOLLOW.p0);
+    VIEW.target = Math.max(-sr.width * .6, Math.min(sr.width * .6, raw - star));
+    FOLLOW.x += (pos - FOLLOW.base - FOLLOW.x) * (RM_FX ? 1 : Math.min(1, dt * 5));
     el.holo.style.setProperty('--fx', FOLLOW.x.toFixed(1) + 'px');
   }
   function wireHoloDrag() {
@@ -851,7 +853,7 @@
       if (!el.holo.classList.contains('on') || el.holo.classList.contains('lift') || (e.button && e.button !== 0)) return;
       e.preventDefault(); e.stopPropagation();
       const hr = el.holo.getBoundingClientRect(), sr = el.stage.getBoundingClientRect();
-      const sp = litScreenPos(), span = FOLLOW.cxB - FOLLOW.cxA, ratio = Math.abs(span) > 20 ? Math.max(-3, Math.min(-.3, (FOLLOW.fzB - FOLLOW.fzA) / span)) : -1;
+      const sp = litScreenPos(), ratio = FOLLOW.ratio;
       FOLLOW.drag = { id: e.pointerId, px: e.clientX, py: e.clientY, x: FOLLOW.x, y: FOLLOW.y, top0: hr.top - sr.top - FOLLOW.y, vx: VIEW.target, star: sp ? sp.x - sr.left + VIEW.cur - VIEW.target : 0, ratio };
       e.currentTarget.setPointerCapture?.(e.pointerId); el.holo.classList.add('dragging');
     };
@@ -867,7 +869,7 @@
       const d = FOLLOW.drag; if (!d || e.pointerId !== d.id) return; FOLLOW.drag = null; el.holo.classList.remove('dragging');
       const b = holoBounds(), cxA = FOLLOW.base + FOLLOW.x, cxB = Math.max(b.lo, Math.min(b.hi, b.sr.width - cxA));
       const fzA = d.star + d.ratio * (FOLLOW.x - d.x);   // 星星最後該停的位置（星圖可能還在飄），B 端左右鏡像
-      Object.assign(FOLLOW, { cxA, cxB, fzA, fzB: b.sr.width - fzA, az0: controls?.getAzimuthalAngle?.() || 0, ph0: 0, t0: 0 });
+      Object.assign(FOLLOW, { cxA, cxB, ratio: d.ratio, p0: cxA, s0: fzA, az0: controls?.getAzimuthalAngle?.() || 0, ph0: 0, t0: 0 });
     };
     for (const n of [el.holo.querySelector('.tune-holo-hd'), el.holo.querySelector('.tune-holo-cv')]) {
       n.addEventListener('pointerdown', grab); n.addEventListener('pointermove', move); n.addEventListener('pointerup', drop); n.addEventListener('pointercancel', drop);
