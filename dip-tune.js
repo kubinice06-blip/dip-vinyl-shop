@@ -802,7 +802,7 @@
   function slideView() {
     const now = performance.now(), dt = Math.min(.05, (now - (VIEW.last || now)) / 1000); VIEW.last = now;
     if (VIEW.cur === VIEW.target && VIEW.cur === 0 && VIEW.y === VIEW.ytarget && VIEW.y === 0 && VIEW.z === VIEW.ztarget && VIEW.z === 1) return;
-    const k = Math.min(1, dt * (RM_FX ? 60 : 5)), kz = Math.min(1, dt * (RM_FX ? 60 : 3));
+    const k = Math.min(1, dt * (RM_FX ? 60 : 5)), kz = Math.min(1, dt * (RM_FX ? 60 : VIEW.ztarget < VIEW.z ? 6 : 3));   // 退後跟板子彈出一樣快（前段最快），回來慢一點
     VIEW.cur += (VIEW.target - VIEW.cur) * k; if (Math.abs(VIEW.target - VIEW.cur) < .3) VIEW.cur = VIEW.target;
     VIEW.y += (VIEW.ytarget - VIEW.y) * k; if (Math.abs(VIEW.ytarget - VIEW.y) < .3) VIEW.y = VIEW.ytarget;
     VIEW.z += (VIEW.ztarget - VIEW.z) * kz; if (Math.abs(VIEW.ztarget - VIEW.z) < .002) VIEW.z = VIEW.ztarget;
@@ -815,7 +815,7 @@
     const sp = litScreenPos(), sr = el.stage.getBoundingClientRect(), W = el.holo.offsetWidth;
     FOLLOW.on = !!sp && THREE_OK;
     if (!sp) { el.holo.style.left = ''; el.holo.style.removeProperty('--dx'); el.holo.style.setProperty('--dy', '40%'); return; }
-    // 開機順序（2026-10-26 店主）：板子先直直彈到中間 → 星圖往後退一點（縮小），同時板子就從中間開始跟著轉角慢慢飄
+    // 開機順序（2026-10-26 店主）：板子直直彈到中間的同一刻星圖就往後退一點（縮小），接著板子從中間開始跟著轉角慢慢飄
     // （起點相位在 A、B 正中，不先拉到左右側），星圖從原地往反方向飄；第一步往星星的另一側。
     // 幅度只有到左右界的一半（店主：看得到光束、但不要飄到邊邊）
     const b = holoBounds(), cx = Math.max(b.lo, Math.min(b.hi, sr.width / 2)), starRight = sp.x - sr.left > sr.width / 2;
@@ -824,8 +824,8 @@
     const fzA = starZone(cxA, W, sr.width), fzB = starZone(cxB, W, sr.width);
     // 星星與板子反方向飄的比例（同拖曳）；星星起點＝開機時它所在的位置（s0 在搖擺開始那一格才記），板子起點＝中間
     Object.assign(FOLLOW, { base: cx, cxA, cxB, ratio: Math.max(-3, Math.min(-.3, (fzB - fzA) / (cxB - cxA || 1))), p0: cx, s0: null, az0: null, ph0: Math.PI / 2, drag: null });
-    clearTimeout(VIEW.backT); clearTimeout(VIEW.zoomT);
-    VIEW.zoomT = setTimeout(() => { if (holoCard) VIEW.ztarget = .86; }, 350);
+    // 板子彈出的同一格星圖就開始往後退（2026-10-26 店主：要同時，不是彈完才退）
+    clearTimeout(VIEW.backT); clearTimeout(VIEW.zoomT); VIEW.ztarget = .86;
     FOLLOW.t0 = performance.now() + 350;
     const hr = el.holo.getBoundingClientRect();
     el.holo.style.setProperty('--dx', (sp.x - hr.left - hr.width / 2).toFixed(1) + 'px'); el.holo.style.setProperty('--dy', (sp.y - hr.top - hr.height / 2).toFixed(1) + 'px');
