@@ -788,7 +788,7 @@
   }
   // 開機那一刻決定板子貼哪邊、星圖往哪滑：板子貼星星的另一側，星圖整片橫移（camera.setViewOffset）讓星星落在板子旁邊的空位正中，
   // 光源與光束才不會被板子擋住；收起時滑回來。--dx/--dy＝星星（滑動前）相對板子中心的位移，板子從那裡飛出來
-  const VIEW = { cur: 0, target: 0, y: 0, ytarget: 0, last: 0 };   // cur/target：橫移（正＝星圖往左）；y/ytarget：直移（正＝星圖往上，只有拖板子時會動）
+  const VIEW = { cur: 0, target: 0, y: 0, ytarget: 0, last: 0 };   // cur/target：橫移（正＝星圖往左）；y/ytarget：直移（正＝星圖往上，目前都維持 0）
   function slideView() {
     const now = performance.now(), dt = Math.min(.05, (now - (VIEW.last || now)) / 1000); VIEW.last = now;
     if (VIEW.cur === VIEW.target && VIEW.cur === 0 && VIEW.y === VIEW.ytarget && VIEW.y === 0) return;
@@ -816,8 +816,8 @@
   // 開機時記下兩端——A＝現在這樣（板子貼一邊、星星在另一邊空位正中）、B＝左右對調——之後依星圖自轉／拖曳轉過的方位角，
   // u＝(1−cos 2Δ)/2 在 A、B 之間來回（轉 90° 換一次邊），板子照 u 平移、整片星圖用 view offset 把星星推到對應位置。
   // 玩家可以拖曳板子（2026-10-26 店主）：抓板子上半（標頭＋封面；下半壓在搜尋列上，留給搜尋列點）拖到哪就停哪，
-  // 拖的時候整片星圖跟著一起移（view offset 同步，星星與板子的相對位置不變）；放開後以現在的板子與星星位置當 A、
-  // 左右鏡像當 B，照轉角繼續互換
+  // 拖的時候星圖照「左右相反方向飄」的同一套規則跟著動（店主）：板子往左拖，星圖緩緩往右飄，反之亦然，比例跟自動互換一樣
+  // （星星位移＝板子位移 ×(fzB−fzA)/(cxB−cxA)，是負的）；上下拖星圖不動。放開後以現在的板子與星星位置當 A、左右鏡像當 B，照轉角繼續互換
   const FOLLOW = { on: false, az0: 0, base: 0, cxA: 0, cxB: 0, fzA: 0, fzB: 0, x: 0, y: 0, last: 0, drag: null };
   function holoBounds() {
     const sr = el.stage.getBoundingClientRect(), W = el.holo.offsetWidth, hud = el.stage.querySelector('.tune-hud').getBoundingClientRect();
@@ -840,7 +840,8 @@
       if (!el.holo.classList.contains('on') || el.holo.classList.contains('lift') || (e.button && e.button !== 0)) return;
       e.preventDefault(); e.stopPropagation();
       const hr = el.holo.getBoundingClientRect(), sr = el.stage.getBoundingClientRect();
-      FOLLOW.drag = { id: e.pointerId, px: e.clientX, py: e.clientY, x: FOLLOW.x, y: FOLLOW.y, top0: hr.top - sr.top - FOLLOW.y, vx: VIEW.cur, vy: VIEW.y };
+      const sp = litScreenPos(), span = FOLLOW.cxB - FOLLOW.cxA, ratio = Math.abs(span) > 20 ? Math.max(-3, Math.min(-.3, (FOLLOW.fzB - FOLLOW.fzA) / span)) : -1;
+      FOLLOW.drag = { id: e.pointerId, px: e.clientX, py: e.clientY, x: FOLLOW.x, y: FOLLOW.y, top0: hr.top - sr.top - FOLLOW.y, vx: VIEW.target, star: sp ? sp.x - sr.left + VIEW.cur - VIEW.target : 0, ratio };
       e.currentTarget.setPointerCapture?.(e.pointerId); el.holo.classList.add('dragging');
     };
     const move = e => {
@@ -849,12 +850,12 @@
       FOLLOW.x = Math.max(b.lo - FOLLOW.base, Math.min(b.hi - FOLLOW.base, d.x + e.clientX - d.px));
       FOLLOW.y = Math.max(rdB - d.top0, Math.min(b.sr.height * .2, d.y + e.clientY - d.py));
       el.holo.style.setProperty('--fx', FOLLOW.x.toFixed(1) + 'px'); el.holo.style.setProperty('--fy', FOLLOW.y.toFixed(1) + 'px');
-      if (THREE_OK) { VIEW.cur = VIEW.target = d.vx - (FOLLOW.x - d.x); VIEW.y = VIEW.ytarget = d.vy - (FOLLOW.y - d.y); }   // 星圖跟著板子一起移
+      if (THREE_OK) VIEW.target = Math.max(-b.sr.width * .6, Math.min(b.sr.width * .6, d.vx - d.ratio * (FOLLOW.x - d.x)));   // 星圖往反方向緩緩飄（slideView 緩動）
     };
     const drop = e => {
       const d = FOLLOW.drag; if (!d || e.pointerId !== d.id) return; FOLLOW.drag = null; el.holo.classList.remove('dragging');
       const b = holoBounds(), cxA = FOLLOW.base + FOLLOW.x, cxB = Math.max(b.lo, Math.min(b.hi, b.sr.width - cxA));
-      const sp = litScreenPos(), fzA = sp ? sp.x - b.sr.left : starZone(cxA, b.W, b.sr.width);   // 星星留在拖完的位置，B 端左右鏡像
+      const fzA = d.star + d.ratio * (FOLLOW.x - d.x);   // 星星最後該停的位置（星圖可能還在飄），B 端左右鏡像
       Object.assign(FOLLOW, { cxA, cxB, fzA, fzB: b.sr.width - fzA, az0: controls?.getAzimuthalAngle?.() || 0 });
     };
     for (const n of [el.holo.querySelector('.tune-holo-hd'), el.holo.querySelector('.tune-holo-cv')]) {
