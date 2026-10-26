@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-26｜dip-vinyl-shop｜示範劇本：四站固定（First Love → Kid A → Hybrid Theory → Kind of Blue）
+
+- **改動**：店主「腳本第二張改成 Radiohead Kid A，第三張改成 Linkin Park Hybrid Theory」。`runDemo` 拿掉恍惚／沸騰隨機經典盤（`rand`、重試三次），改成固定四站 `route`：宇多田ヒカル《First Love》→ Radiohead《Kid A》→ Linkin Park《Hybrid Theory》→ Miles Davis《Kind of Blue》，每站出聲後停 5 秒。兩張新卡都在卡池、Apple 試聽索引都有（`radiohead\0kida` TW 1097862870、`linkinpark\0hybridtheory` TW 528436018）。
+  - 順修：`?demo=1` 等第一下點擊改用 capture，點在懸浮封面上（拖曳會 stopPropagation）也能開跑。
+  - `dip-tune.js?v=47`。
+- **主要檔案**：`dip-tune.js`、`index.html`
+- **驗證**：`node --check` 過；本機 Playwright（iPhone 13、試聽換本機 tone.wav）整段跑完：4.9s First Love（放鬆）→ 13.4s Kid A（頹靡）→ 22.0s Hybrid Theory（暴躁）→ 31.4s Kind of Blue（放鬆）→ 結果頁 Kind of Blue；無 pageerror。
+
 ### 2026-10-26｜dip-vinyl-shop｜示範劇本：試聽出聲後停 5 秒才切換
 
 - **改動**：店主「腳本的轉換專輯時間改成 5 秒」。`runDemo` 每站出聲後停留 3 秒 → 5 秒（沒聲音的仍 0.6 秒換下一張）。`dip-tune.js?v=46`。
