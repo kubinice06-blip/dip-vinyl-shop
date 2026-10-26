@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-26｜dip-vinyl-shop＋dip-vinyl-worker｜懸浮封面第三版：拿掉投影環、跟著星圖區縮放、直放衝出星圖壓到面板；Worker 放行 Pages 分支預覽 CORS（預覽中）
+
+- **改動**：店主「不要下面的投影特效；視窗大小隨星圖尺寸一起縮放；稍微大過星圖、超過下面面板試試（衝破螢幕的感覺）；測試版都沒有封面」。
+  - 拿掉投影環與光柱。寬度改純由星圖區決定：直放 `min(100cqh − 66px, 68cqw)`、`bottom:-17cqh`（板子比星圖略大，下緣壓過面板上緣約 17% 星圖高，`.tune-stage` 改 `overflow:visible`、板子 `z-index:5`）；橫放（面板在右）收在星圖裡 `min(100cqh − 132px, 66cqw)`。上緣會留在左上讀數下方。
+  - 盤名、藝人名移進玻璃板裡（封面下方），不再壓在搜尋列文字上；玻璃底加深成 `rgba(6,8,10,.62)`＋3px 模糊。字級用 `clamp(…cqh…)` 跟著縮放。沒封面時顯示「♪ NO COVER」。
+  - 板子不吃點擊（壓在搜尋列上，搜尋列要能點）；搜尋框有焦點時收起，失焦後若沒在轉就重新開機。就這張放大：封面解碼完成前，揭露畫面的封面與字先隱藏，免得板子上先蓋一個黑框。
+  - 預覽站沒封面的原因：Worker CORS 白名單只有正式網域與 `dip-vinyl-shop.pages.dev`，分支預覽 `claude-tune-holo.dip-vinyl-shop.pages.dev` 被擋，需要 Worker 現查的封面都拿不到。`dip-vinyl-worker` `src/index.js` 加 `^https://[a-z0-9-]+\.dip-vinyl-shop\.pages\.dev$` 放行一般 CORS（視覺辨識那支仍只認白名單）。**需店主本機部署 Worker 才生效。**
+  - `dip-tune.js?v=30`。
+- **主要檔案**：`dip-tune.js`、`index.html`；`dip-vinyl-worker/src/index.js`
+- **驗證**：`node --check` 過（兩邊）；正規式測試：預覽子網域 true、`evil.com`／`x.dip-vinyl-shop.pages.dev.evil.com`／多層子網域 false。本機 Playwright（iPhone 13 直／橫、桌機）截圖與整段錄影：板子壓過面板上緣、字在板內、橫放不碰讀數、就這張從板子放大到結果頁、回星圖重新開機。shop 仍在草稿 PR #239，店主確認前不合併。
+
 ### 2026-10-26｜dip-vinyl-shop｜頻率光譜懸浮封面第二版：全像玻璃板、頻率標籤、收起右上小卡、就這張從板子放大成專輯卡（預覽中）
 
 - **改動**：店主看完第一版回饋四點：(1) 懸浮封面出來時右上小資訊收起，開始轉才回來；(2) 板上要有八種頻率標籤；(3) 太像螢幕，改成附圖那種懸浮全像面板但彩色；(4) 這個模式下按「就這張」要從小視窗放大漸變成專輯卡。
