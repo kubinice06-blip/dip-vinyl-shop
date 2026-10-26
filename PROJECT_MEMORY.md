@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-26｜dip-vinyl-shop｜示範劇本：開頭先收起浮著的封面板，停 5 秒再轉台
+
+- **改動**：店主「開始腳本時，開頭先讓原本的漂浮視窗縮回去 5 秒，再開始轉台」。`runDemo` 開跑時 `stopPreview()`（連帶清掉待開機的計時，這段期間不會再彈出）＋`hideHolo()`，等待 1 秒 → 5 秒才開始第一站。`dip-tune.js?v=48`。
+- **主要檔案**：`dip-tune.js`、`index.html`
+- **驗證**：`node --check` 過；本機 Playwright（iPhone 13、?demo=1）每 0.1 秒記板子狀態：點下後原本的板子收起，約 6 秒後才開始轉，First Love 的板子 11.7 秒開機；無 pageerror。
+
 ### 2026-10-26｜dip-vinyl-shop｜示範劇本：四站固定（First Love → Kid A → Hybrid Theory → Kind of Blue）
 
 - **改動**：店主「腳本第二張改成 Radiohead Kid A，第三張改成 Linkin Park Hybrid Theory」。`runDemo` 拿掉恍惚／沸騰隨機經典盤（`rand`、重試三次），改成固定四站 `route`：宇多田ヒカル《First Love》→ Radiohead《Kid A》→ Linkin Park《Hybrid Theory》→ Miles Davis《Kind of Blue》，每站出聲後停 5 秒。兩張新卡都在卡池、Apple 試聽索引都有（`radiohead\0kida` TW 1097862870、`linkinpark\0hybridtheory` TW 528436018）。

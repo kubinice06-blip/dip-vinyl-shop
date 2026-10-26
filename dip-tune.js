@@ -1036,7 +1036,7 @@
 
   // ── 示範影片劇本（2026-10-25 店主：錄一支示範影片，畫面要跟正式版一模一樣、像真的玩家在玩）──
   // 只有網址帶 ?demo=1 才會跑，一般玩家碰不到；全程用遊戲本身的轉輪動畫與按鈕，不加任何畫面元素。
-  // 開法：網址帶 ?demo=1 時先點一下星圖（iOS 要一下手勢才准出聲）；或在左上角讀數 1.5 秒內連點三下。1 秒後開始：
+  // 開法：網址帶 ?demo=1 時先點一下星圖（iOS 要一下手勢才准出聲）；或在左上角讀數 1.5 秒內連點三下。浮著的封面先縮回，5 秒後開始：
   //   宇多田ヒカル《First Love》→ Radiohead《Kid A》→ Linkin Park《Hybrid Theory》→ Miles Davis《Kind of Blue》，每張試聽出聲後停 5 秒
   //   → 按「就這張」→ 等結果頁出來 → 慢慢往下捲到串流按鈕停住。
   let demoRunning = false;
@@ -1046,7 +1046,9 @@
     if (waitTap) await new Promise(r => el.stage.addEventListener('pointerdown', r, { once: true, capture: true }));   // capture：點在懸浮封面上（它會攔下拖曳事件）也算
     try { cfg.onFirstGesture?.(state.audioOn); } catch (_) {}
     ensureAudio();
-    await wait(1000);
+    // 開頭先讓原本浮著的封面板縮回星星、停 5 秒才開始轉台（2026-10-26 店主）；stopPreview 也清掉待開機的計時，這 5 秒內不會再彈出來
+    stopPreview(); hideHolo();
+    await wait(5000);
     // 四站固定（2026-10-26 店主：第二張改 Radiohead《Kid A》、第三張改 Linkin Park《Hybrid Theory》，取代恍惚／沸騰隨機經典盤）
     const route = ['宇多田ヒカル first love', 'radiohead kid a', 'linkin park hybrid theory', 'miles davis kind of blue'].map(q => findCards(q)[0]).filter(Boolean);
     // 每一站：轉到位 → 等試聽真的出聲 → 再停 5 秒（2026-10-26 店主：試聽播放後 5 秒切換，原 3 秒）。
