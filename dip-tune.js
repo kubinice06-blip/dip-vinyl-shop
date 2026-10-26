@@ -32,7 +32,7 @@
   function configure(next) { cfg = Object.assign(cfg, next); }
 
   // ── 狀態 ──────────────────────────────────────────────────────────
-  const state = { p: { x: 25, y: 50, z: 50 }, spin: { x: 0, y: 0, z: 0 }, fine: false, seen: [], audioOn: true, built: false, visible: false };
+  const state = { p: { x: 25, y: 50, z: 50 }, spin: { x: 0, y: 0, z: 0 }, fine: false, seen: [], audioOn: true, holo: true, built: false, visible: false };
   let DATA = null, CARDS = null, N = 0, T = null, BR = null, NAMES = null;
   let previewCard = null, litIdx = -1, idleTimer = 0, lastTurn = 0;
   let scene, camera, renderer, controls, geo, col, base, sizeAttr, pmat, marker, PX, PY, PZ, THREE_OK = false;
@@ -94,7 +94,7 @@
 .tune-stage{position:relative;min-width:0;min-height:0;background:#060609;overflow:hidden}
 .tune-stage canvas{display:block;width:100%;height:100%;touch-action:none}
 .tune-stage .tune-hint{position:absolute;left:12px;bottom:10px;font-size:9px;letter-spacing:.14em;color:#777;pointer-events:none}
-.tune-hud{position:absolute;left:10px;top:10px;display:flex;flex-direction:column;gap:6px;align-items:flex-start;max-width:55%}
+.tune-hud{position:absolute;z-index:6;left:10px;top:10px;display:flex;flex-direction:column;gap:6px;align-items:flex-start;max-width:55%}
 .tune-readout{display:flex;gap:6px;align-items:center;padding:2px 6px;border:1px solid rgba(233,226,200,.2);background:rgba(10,12,9,.16);font-size:10px;line-height:1.3;font-variant-numeric:tabular-nums;white-space:nowrap}
 .tune-readout b{color:var(--c);text-shadow:0 0 5px var(--c);font-weight:400;display:inline-block;min-width:2.9em;text-align:right}
 .tune-readout span+span{border-left:1px solid rgba(233,226,200,.18);padding-left:6px}
@@ -118,6 +118,54 @@
 @keyframes tuneEq{from{transform:scaleY(.3)}to{transform:scaleY(1)}}
 .tune-now .dot{width:5px;height:5px;background:#ff4d3d;box-shadow:0 0 6px #ff4d3d;animation:tuneBlink .9s steps(2) infinite;flex:none;align-self:flex-start}
 @keyframes tuneBlink{50%{opacity:.15}}
+/* 懸浮封面（2026-10-26 店主）：停下來試聽時，封面投影成一片浮在星圖下緣、面板正上方的彩色全像玻璃板
+   （店主附圖：發光細框、HUD 角標、玻璃反光），板上標頻率格與試聽狀態，盤名、藝人名在板子裡、封面下面。
+   大小跟著星圖區（container query 的 cqh／cqw）一起縮放；直放時板子比星圖略大、往下衝出去壓到面板上緣（店主：衝破螢幕的感覺），
+   橫放（面板在右邊）就收在星圖裡。板子只有上半（標頭＋封面）吃指標事件、用來拖曳，下半壓在搜尋列上不擋點擊；搜尋框有焦點時板子收起來。
+   投影源是星圖裡那顆專輯星（2026-10-26 店主）：板子從星星飛出來長大、轉動時縮回星星。投影光照店主附圖做成柔光，不畫硬邊：
+   星星一團光暈＋一圈斷續光環、上百條極細光絲往板子方向扇開並伸出板子外緣、柔和光錐（不要噴發的光點，2026-10-26 店主）（.tune-holo-fx，2D canvas，
+   lighter 疊加，跟著星圖 render loop 每格畫）。光在板子後面，同一套光連續變化：星星在旁邊是扇形光束，滑到板子後面就只剩板緣柔光與伸出板緣的短光絲（不噴到螢幕邊）。
+   直放板子寬 52cqw，開機時貼到星星的另一側，星圖同時整片橫移讓星星落在板子旁的空位，光源與光束才露得出來。 */
+.tune-stage{container-type:size}
+.tune-holo.on:not(.lift) .tune-holo-hd,.tune-holo.on:not(.lift) .tune-holo-cv{pointer-events:auto;cursor:grab;touch-action:none}.tune-holo.dragging .tune-holo-hd,.tune-holo.dragging .tune-holo-cv{cursor:grabbing}
+.tune-now,.tune-stage .tune-hint{transition:opacity .25s}.tune-now.is-tucked,.tune-stage .tune-hint.is-tucked{opacity:0;pointer-events:none}
+.tune-holo{position:absolute;left:50%;bottom:6px;z-index:5;width:150px;width:min(calc(100cqh - 132px),66cqw);transform:translate(calc(-50% + var(--fx,0px)),var(--fy,0px));pointer-events:none;--rgb:94,230,240;--cc:rgb(var(--rgb))}
+@media (orientation:portrait),(min-height:601px),(max-width:559px){.tune-stage{overflow:visible}.tune-holo{width:min(calc(100cqh - 66px),52cqw);bottom:-17cqh}}
+.tune-holo.lift{visibility:hidden}
+.tune-holo .fl{animation:tuneHoloFloat 5.2s ease-in-out infinite}
+.tune-holo .pw{position:relative;display:flex;flex-direction:column;align-items:center;transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0;transition:transform .24s ease-in,opacity .2s ease-in .06s}
+.tune-holo.on .pw{transform:none;opacity:1;transition:none;animation:tuneHoloOn .6s cubic-bezier(.16,1,.3,1) both}
+.tune-holo-scr{position:relative;width:100%;padding:5px 6px 6px;border:1px solid rgba(var(--rgb),.75);border-radius:9px;background:linear-gradient(165deg,rgba(var(--rgb),.2),rgba(var(--rgb),.05) 55%,rgba(var(--rgb),.14)),rgba(6,8,10,.7);box-shadow:0 0 8px rgba(var(--rgb),.55),0 0 26px rgba(var(--rgb),.28),0 22px 34px rgba(0,0,0,.5),inset 0 0 14px rgba(var(--rgb),.22)}
+.tune-holo-scr .cn{position:absolute;width:9px;height:9px;border:0 solid var(--cc);filter:drop-shadow(0 0 3px var(--cc))}
+.tune-holo-scr .cn:nth-child(1){left:-4px;top:-4px;border-width:2px 0 0 2px}.tune-holo-scr .cn:nth-child(2){right:-4px;top:-4px;border-width:2px 2px 0 0}
+.tune-holo-scr .cn:nth-child(3){left:-4px;bottom:-4px;border-width:0 0 2px 2px}.tune-holo-scr .cn:nth-child(4){right:-4px;bottom:-4px;border-width:0 2px 2px 0}
+.tune-holo-hd,.tune-holo-ft{display:flex;align-items:center;justify-content:space-between;gap:6px;font-family:var(--pix);font-size:9px;line-height:1;letter-spacing:.06em;white-space:nowrap;color:#fff;text-shadow:0 0 1px #000,0 0 4px var(--cc)}
+.tune-holo-hd{padding:0 1px 5px;margin-bottom:5px;border-bottom:1px solid rgba(var(--rgb),.35)}
+.tune-holo-hd .c{display:inline-flex;align-items:center;gap:4px;font-size:10px;letter-spacing:.12em;color:var(--cc);text-shadow:0 0 1px #000,0 0 6px var(--cc)}
+.tune-holo-hd .c em{font-style:normal}.tune-holo-hd .c i{width:6px;height:6px;background:var(--cc);box-shadow:0 0 6px var(--cc)}
+.tune-holo-hd .np{display:inline-flex;align-items:center;gap:2px;min-width:0;overflow:hidden;text-overflow:ellipsis;font-size:8px;color:rgba(255,255,255,.7);text-shadow:none}
+.tune-holo-hd .np i{display:inline-block;width:3px;height:8px;background:var(--cc);box-shadow:0 0 4px var(--cc);animation:tuneEq .6s steps(3) infinite alternate}
+.tune-holo-hd .np i:nth-child(2){animation-delay:.2s}.tune-holo-hd .np i:nth-child(3){animation-delay:.4s}
+.tune-holo-cv{position:relative;aspect-ratio:1;border-radius:4px;overflow:hidden;box-shadow:0 0 0 1px rgba(var(--rgb),.45)}
+.tune-holo-cv img{display:block;width:100%;height:100%;object-fit:cover;opacity:.9}
+.tune-holo-cv .ph{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:6px;font-family:var(--pix);font-size:11px;letter-spacing:.2em;color:var(--cc);text-shadow:0 0 10px var(--cc);background:rgba(var(--rgb),.08)}
+.tune-holo-cv::before{content:"";position:absolute;inset:0;z-index:1;background:repeating-linear-gradient(180deg,rgba(var(--rgb),.13) 0 1px,transparent 1px 4px);mix-blend-mode:screen}
+.tune-holo-cv::after{content:"";position:absolute;inset:0;z-index:2;box-shadow:inset 0 0 14px rgba(var(--rgb),.55);background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.16) 42%,transparent 54%) 0 0/250% 100% no-repeat;animation:tuneHoloSheen 6s ease-in-out infinite}
+.tune-holo-ft{padding:5px 1px 0;font-size:8px;color:rgba(255,255,255,.75)}
+.tune-holo-ft .bars{display:inline-flex;align-items:flex-end;gap:1px;height:7px}
+.tune-holo-ft .bars i{width:2px;background:var(--cc);box-shadow:0 0 3px var(--cc)}
+.tune-holo-t{display:grid;justify-items:center;gap:2px;width:100%;margin-top:6px;text-align:center;font-family:var(--pix);line-height:1.25}
+.tune-holo-t b,.tune-holo-t span{max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tune-holo-t b{font-weight:400;font-size:14px;font-size:clamp(13px,4.6cqh,18px);color:#f4fbff;text-shadow:0 0 2px #000,0 0 4px #000,0 0 6px var(--cc),0 0 14px var(--cc)}
+.tune-holo-t span{font-size:11px;font-size:clamp(11px,3.6cqh,14px);letter-spacing:.08em;color:var(--cc);text-shadow:0 0 2px #000,0 0 4px #000,0 0 7px var(--cc)}
+.tune-holo-fx{position:absolute;left:0;top:0;width:100%;height:calc(100% + 30cqh);z-index:4;pointer-events:none}
+@keyframes tuneHoloFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes tuneHoloOn{0%{transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0}18%{opacity:1}100%{transform:none}}
+@keyframes tuneHoloSheen{0%,55%{background-position:120% 0}100%{background-position:-120% 0}}
+@media (prefers-reduced-motion:reduce){.tune-holo .fl,.tune-holo-cv::after{animation:none}}
+.tune-hbtn{width:24px;padding:2px;justify-content:center}
+.tune-hbtn svg{display:block}.tune-hbtn .f{fill:#e9e2c8}.tune-hbtn .s{fill:#5ee6f0}.tune-hbtn .k{fill:#0b0c10}
+.tune-hbtn[aria-pressed="false"] .f{fill:#8d9478}.tune-hbtn[aria-pressed="false"] .s{fill:#2b2f2a}
 .tune-msg{position:absolute;inset:0;display:grid;place-items:center;color:#9aa088;font-size:12px;text-align:center;padding:20px;line-height:1.8}
 .tune-app [hidden],#tuneApp[hidden],#tuneResultWrap[hidden]{display:none!important}
 .tune-panel{position:relative;min-width:0;min-height:0;display:grid;place-items:end center;padding:10px 10px 0;background:#2c3037 repeating-linear-gradient(135deg,rgba(255,255,255,.025) 0 2px,transparent 2px 9px);border-top:2px solid #14161a;overflow:hidden}
@@ -178,6 +226,7 @@
 `;
   const SPK = '<svg viewBox="0 0 12 12" shape-rendering="crispEdges" width="20" height="20"><path class="b" d="M1 4h2v4H1zM3 3h1v6H3zM4 2h1v8H4zM5 1h1v10H5z"/><path class="w" d="M8 4h1v4H8zM10 2h1v1h-1zM10 9h1v1h-1zM11 3h1v6h-1z"/><path class="o" d="M8 3h1v1H8zM9 4h1v1H9zM10 5h1v2h-1zM9 7h1v1H9zM8 8h1v1H8zM11 3h1v1h-1zM11 8h1v1h-1zM10 4h1v1h-1zM10 7h1v1h-1z"/></svg>';
 
+  const HOLO = '<svg viewBox="0 0 12 12" shape-rendering="crispEdges" width="18" height="18"><path class="f" d="M1 2h10v7H1zM4 10h4v1H4z"/><path class="k" d="M2 3h8v5H2z"/><path class="s" d="M3 4h6v1H3zM3 6h6v1H3z"/></svg>';
   function html() {
     return `
 <div class="tune-app" id="tuneApp">
@@ -185,9 +234,14 @@
     <div class="tune-hud">
       <div class="tune-readout" id="tuneReadout" title="能量 / 質地 / 色溫"><span style="--c:${AX.x}"><b>-.--</b></span><span style="--c:${AX.y}"><b>-.--</b></span><span style="--c:${AX.z}"><b>-.--</b></span></div>
       <button class="tune-spk" id="tuneSpk" type="button" aria-pressed="true" aria-label="聲音">${SPK}</button>
+      <button class="tune-spk tune-hbtn" id="tuneHoloBtn" type="button" aria-pressed="true" aria-label="懸浮封面" title="懸浮封面">${HOLO}</button>
       <button class="tune-back" id="tuneBack" type="button" aria-label="回找一張來聽" title="找一張來聽">↩</button>
     </div>
     <button class="tune-now" id="tuneNow" type="button" hidden></button>
+    <div class="tune-holo" id="tuneHolo" aria-hidden="true"><div class="fl"><div class="pw">
+      <div class="tune-holo-scr"><i class="cn"></i><i class="cn"></i><i class="cn"></i><i class="cn"></i><div class="tune-holo-hd"><span class="c"><i></i><em></em></span><span class="np" id="tuneHoloNp"></span></div><div class="tune-holo-cv"></div><div class="tune-holo-t"><b></b><span></span></div><div class="tune-holo-ft"><span class="xyz"></span><span class="bars"></span></div></div>
+      </div></div></div>
+    <canvas class="tune-holo-fx" id="tuneHoloFx" aria-hidden="true"></canvas>
     <div class="tune-hint" id="tuneHint">拖曳旋轉　滾輪縮放</div>
     <div class="tune-sugg" id="tuneSugg" role="listbox" aria-label="搜尋結果" hidden></div>
     <div class="tune-msg" id="tuneMsg">載入中…</div>
@@ -259,7 +313,7 @@
     marker = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, transparent: true, depthTest: false, color: 0xffffff })); marker.scale.set(0, 0, 1); scene.add(marker);
     const resize = () => { const r = stage.getBoundingClientRect(); if (r.width < 2 || r.height < 2) return; renderer.setSize(r.width, r.height, false); camera.aspect = r.width / r.height; camera.updateProjectionMatrix(); pmat.uniforms.uScale.value = r.height * renderer.getPixelRatio() / 160; };
     new ResizeObserver(resize).observe(stage); resize();
-    (function loop() { if (state.visible) { if (controls) controls.update(); renderer.render(scene, camera); } requestAnimationFrame(loop); })();
+    (function loop() { if (state.visible) { if (controls) controls.update(); slideView(); renderer.render(scene, camera); if (holoCard) followHolo(); if (holoCard || FX.level > 0) drawFx(); } requestAnimationFrame(loop); })();
     THREE_OK = true;
     return true;
   }
@@ -330,6 +384,37 @@
     const tArtist = mk(artist, `font-size:15px;letter-spacing:.06em;color:${color};margin-top:6px`), tAlbum = mk(album, 'font-size:22px;font-weight:700;line-height:1.4'), tYear = mk(year ? String(year) : '', 'font-size:13px;letter-spacing:.14em;color:#8d9478');
     intro.append(cover, ph, tArtist, tAlbum, tYear); document.body.appendChild(intro);
     let hasCover = false; cover.style.display = 'none'; ph.style.display = 'grid';
+    // 懸浮封面模式（2026-10-26 店主）：按下去的正是浮著的那張，就不從星星飛線框，改成那片全像板直接放大、
+    // 黑底漸入成一螢幕的專輯畫面，之後一樣飛到真卡的位置（land）
+    const hz = (!RM && holoCard && el.holo?.classList.contains('on') && holoCard.card.artist === artist && holoCard.card.album === album) ? (() => {
+      const img = el.holo.querySelector('.tune-holo-cv img'), cv = el.holo.querySelector('.tune-holo-cv'), scr = el.holo.querySelector('.tune-holo-scr');
+      return { src: img?.complete && img.naturalWidth ? img.src : '', cv: cv.getBoundingClientRect(), scr: scr.getBoundingClientRect(), b: el.holo.querySelector('.tune-holo-t b').getBoundingClientRect(), a: el.holo.querySelector('.tune-holo-t span').getBoundingClientRect() };
+    })() : null;
+    let zoomDone = null;
+    if (hz) {
+      if (hz.src) { hasCover = true; cover.src = hz.src; cover.style.display = 'block'; ph.style.display = 'none'; }
+      intro.style.clipPath = 'none'; intro.style.webkitClipPath = 'none'; intro.style.backgroundColor = 'rgba(6,6,9,0)';
+      const ZOOM = 640, img0 = hasCover ? cover : ph;
+      img0.style.boxShadow = `0 0 0 1px ${color},0 0 24px ${color},0 0 60px ${color}`;
+      for (const n of [img0, tAlbum, tArtist, tYear]) n.style.visibility = 'hidden';   // 解碼等待期間不要先蓋一個黑框在板子上
+      // 從板子的位置（文字從板下的盤名、藝人名）長到揭露畫面的位置
+      const from = (n, r, text) => { const q = n.getBoundingClientRect(); if (q.width < 1) return; const k = text ? r.height / q.height : r.width / q.width;
+        const dx = text ? (r.left + r.width / 2) - (q.left + q.width / 2 * k) : r.left - q.left; n.style.transform = `translate(${dx}px,${r.top - q.top}px) scale(${k})`; };
+      from(img0, hz.cv); from(tAlbum, hz.b, true); from(tArtist, hz.a, true); tYear.style.opacity = '0';
+      intro.getBoundingClientRect();
+      const ez = `${ZOOM}ms cubic-bezier(.3,.7,.2,1)`;
+      // 封面先解碼好再開始放大，不然頭幾格是一個黑框（最多等 250 毫秒）
+      const ready = hasCover && cover.decode ? Promise.race([cover.decode().catch(() => {}), new Promise(r => setTimeout(r, 250))]) : Promise.resolve();
+      zoomDone = ready.then(() => new Promise(r => setTimeout(r, ZOOM + 60)));
+      ready.then(() => requestAnimationFrame(() => {
+        el.holo.classList.add('lift'); FX.target = 0; for (const n of [img0, tAlbum, tArtist, tYear]) n.style.visibility = '';
+        intro.style.transition = `background-color ${ZOOM}ms ease`; intro.style.backgroundColor = 'rgb(6,6,9)';
+        for (const n of [img0, tAlbum, tArtist]) { n.style.transition = `transform ${ez}, box-shadow ${ZOOM}ms ease`; n.style.transform = ''; }
+        img0.style.boxShadow = '0 0 0 1px rgba(233,226,200,.25)';
+        tYear.style.transition = `opacity 300ms ease ${ZOOM - 200}ms`; tYear.style.opacity = '1';
+        if (state.audioOn) warpSound('sweep', ZOOM / 1000);
+      }));
+    }
     let shapes = [], phase = 'fly', t0 = performance.now(), pt0 = 0, trails = [], raf = 0, cancelled = false, backdrop = from ? 0 : 1, revealDone = null;
     const origin = from || { x: W / 2, y: H / 2 };
     const quad = (p, tr, breathe) => {
@@ -359,7 +444,7 @@
     const clear = () => { ctx.clearRect(0, 0, W, H); if (backdrop > 0) { ctx.save(); ctx.globalAlpha = backdrop; ctx.fillStyle = '#060609'; ctx.fillRect(0, 0, W, H); ctx.restore(); } };
     const clipIntro = pct => { const v = `inset(0 0 ${pct.toFixed(2)}% 0)`; intro.style.clipPath = v; intro.style.webkitClipPath = v; };
     const teardown = () => { cancelAnimationFrame(raf); if (warpCanvas) { ctx.clearRect(0, 0, W, H); warpCanvas.style.display = 'none'; } intro.remove(); };
-    if (!RM && state.audioOn) warpSound('sweep', FLY / 1000);
+    if (!RM && !hz && state.audioOn) warpSound('sweep', FLY / 1000);
     function frame(now) {
       if (cancelled) return;
       const e = now - t0;
@@ -384,14 +469,15 @@
       } else { return; }
       raf = requestAnimationFrame(frame);
     }
-    if (!RM) raf = requestAnimationFrame(frame);
+    if (!RM && !hz) raf = requestAnimationFrame(frame);
     const api = {
       // 封面網址到了就放進揭露畫面（可能比卡渲染早）
-      setCover(url) { if (!url) return; hasCover = true; cover.src = url; cover.style.display = 'block'; ph.style.display = 'none'; },
+      setCover(url) { if (!url || (hz && hasCover)) return; hasCover = true; cover.src = url; cover.style.display = 'block'; ph.style.display = 'none'; },
       // 卡資料到了：等封面載好（最多 1.5 秒）→ 骨架 → 閃白 → 掃描揭露；回傳揭露完成的 Promise
       reveal() {
         return new Promise(res => {
           if (RM || cancelled) { res(); return; }
+          if (hz) { zoomDone.then(res); return; }   // 放大完就是揭露完
           const go = () => { if (cancelled) { res(); return; } measureIntro(); revealDone = res; phase = 'skel'; pt0 = performance.now(); };
           if (hasCover && !cover.complete) { let done = false; const once = () => { if (!done) { done = true; go(); } }; cover.addEventListener('load', once, { once: true }); cover.addEventListener('error', once, { once: true }); setTimeout(once, 1500); } else go();
         });
@@ -491,7 +577,7 @@
     for (let i = 0; i < N; i++) { const c = CARDS[i]; const d = (c.px - p.x) ** 2 + (c.py - p.y) ** 2 + (c.pz - p.z) ** 2; if (d < ad) { ad = d; any = i; } if (c.cell === tc && d < bd) { bd = d; best = i; } }
     return CARDS[best >= 0 ? best : any]; }
   function sweep(axis, v0, v1) {
-    if (v0 === v1) return; lastTurn = performance.now(); stopPreview(); armPreview(); sfxTurn(axis, v0, v1);
+    if (v0 === v1) return; lastTurn = performance.now(); stopPreview(); armPreview(); hideHolo(); sfxTurn(axis, v0, v1);
     const o = axis === 'x' ? ['py', 'pz'] : axis === 'y' ? ['px', 'pz'] : ['px', 'py']; const key = 'p' + axis;
     const R = SWEEP_R; const a = Math.min(v0, v1), b = Math.max(v0, v1), r2 = R * R; const p = { px: state.p.x, py: state.p.y, pz: state.p.z }; const hit = [];
     for (let i = 0; i < N; i++) { const c = CARDS[i]; const v = c[key]; if (v1 > v0) { if (v <= a || v > b) continue; } else { if (v < a || v >= b) continue; }
@@ -595,8 +681,8 @@
   }
   function wireSearch() {
     el.search.addEventListener('input', () => { clearTimeout(suggTimer); suggTimer = setTimeout(() => { sugg = findCards(el.search.value); suggAt = sugg.length ? 0 : -1; renderSugg(true); }, 70); });
-    el.search.addEventListener('focus', () => { if (el.search.value.includes(' — ')) el.search.select(); else if (sugg.length) renderSugg(true); });
-    el.search.addEventListener('blur', () => setTimeout(() => renderSugg(false), 160));
+    el.search.addEventListener('focus', () => { hideHolo(); if (el.search.value.includes(' — ')) el.search.select(); else if (sugg.length) renderSugg(true); });
+    el.search.addEventListener('blur', () => setTimeout(() => { renderSugg(false); if (previewCard && performance.now() - lastTurn > 700 && document.activeElement !== el.search) showHolo(previewCard); }, 160));
     el.search.addEventListener('keydown', e => {
       if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { if (!sugg.length) return; e.preventDefault(); suggAt = (suggAt + (e.key === 'ArrowDown' ? 1 : -1) + sugg.length) % sugg.length; renderSugg(true); }
       else if (e.key === 'Enter') { e.preventDefault(); clearTimeout(suggTimer); if (!sugg.length) { sugg = findCards(el.search.value); suggAt = sugg.length ? 0 : -1; } if (sugg.length) chooseSugg(Math.max(0, suggAt)); else renderSugg(true); }
@@ -607,7 +693,7 @@
     el.searchGo.addEventListener('click', () => { const q = el.search.value.trim(); if (!q || q.includes(' — ')) { el.search.value = ''; el.search.focus(); return; } sugg = findCards(q); suggAt = sugg.length ? 0 : -1; if (sugg.length) chooseSugg(0); else { el.search.focus(); renderSugg(true); } });
   }
   function scan(c) {
-    if (c === previewCard) return; previewCard = c; light(c); armPreview();
+    if (c === previewCard) return; previewCard = c; light(c); armPreview(); hideHolo();
     const card = c.card; const cover = card.coverUrl || '';
     el.now.hidden = false;
     el.now.innerHTML = `${cover ? `<img src="${esc(cover)}" alt="" referrerpolicy="no-referrer">` : `<div class="ph">♪</div>`}<div class="t"><div class="a">${esc(card.artist)}</div><div class="b">${esc(card.album)}</div><span class="c" style="--cc:${CELL_COLOR[c.cell]}"><i></i>${NAMES[c.cell]}<span class="np" id="tuneNp"></span></span></div><i class="dot"></i>`;
@@ -615,13 +701,186 @@
   // 封面：卡池裡沒帶，停下來那一張才交給呼叫端查（card_catalog／worker），查過就記住；掃過去的不查
   function settleCover(c) {
     const card = c.card; if (card.coverUrl || c.coverTried || !cfg.resolveCover) return; c.coverTried = true;
-    cfg.resolveCover(card).then(url => { if (url && previewCard === c) { card.coverUrl = url; const ph = el.now.querySelector('.ph'); if (ph) ph.outerHTML = `<img src="${esc(url)}" alt="" referrerpolicy="no-referrer">`; } }).catch(() => {});
+    cfg.resolveCover(card).then(url => { if (url && previewCard === c) { card.coverUrl = url; const ph = el.now.querySelector('.ph'); if (ph) ph.outerHTML = `<img src="${esc(url)}" alt="" referrerpolicy="no-referrer">`; if (holoCard === c) setHoloCover(url); } }).catch(() => {});
   }
 
   // ── 試聽：停下來 0.7 秒就播站上的固定試聽（電台式硬切，不淡入淡出；轉動就停） ──
   let playing = null;
   function stopPreview() { clearTimeout(idleTimer); if (!playing) return; playing = null; try { cfg.player?.stop?.(); } catch (_) {} setNowPlaying(false); }
-  function armPreview() { clearTimeout(idleTimer); idleTimer = setTimeout(() => { if (previewCard && previewCard.cell !== targetCell()) { const c = nearest(); if (c !== previewCard) { scan(c); return; } } if (previewCard) settleCover(previewCard); if (state.audioOn) playPreview(); }, 700); }
+  function armPreview() { clearTimeout(idleTimer); idleTimer = setTimeout(() => { if (previewCard && previewCard.cell !== targetCell()) { const c = nearest(); if (c !== previewCard) { scan(c); return; } } if (previewCard) { settleCover(previewCard); showHolo(previewCard); } if (state.audioOn) playPreview(); }, 700); }
+  // 懸浮封面：停穩（跟試聽同一個 0.7 秒）才開機，一轉動就關
+  let holoCard = null;
+  // 封面放大成螢幕要清楚一點、又不要抓原圖：CAA 取 500 px 縮圖，Apple 換 600×600
+  const holoSrc = u => u.replace(/(coverartarchive\.org\/release(?:-group)?\/[^/]+\/front)$/, '$1-500').replace(/\/\d+x\d+bb\./, '/600x600bb.');
+  // 封面載好才開機（不然先閃一個 ♪ 再換圖）；卡池沒帶封面就等 settleCover 查到，4 秒還沒有就用 ♪ 開
+  let holoT = 0; const HOLO_PH = '<div class="ph"><b style="font-size:3em;font-weight:400;letter-spacing:0">♪</b>NO COVER</div>';
+  function holoOn() { clearTimeout(holoT); if (!holoCard || el.holo.classList.contains('on')) return; placeHolo(); el.holo.classList.add('on'); FX.target = 1; el.now.classList.add('is-tucked'); el.hint.classList.add('is-tucked'); }
+  function holoFace(html) { el.holo.querySelector('.tune-holo-cv').innerHTML = html; }
+  function setHoloCover(url) {
+    const c = holoCard; if (!c) return;
+    const load = (src, fallback) => { const im = new Image(); im.referrerPolicy = 'no-referrer';
+      // 直接把載好的這個 Image 放進去：另建一個 <img> 在 iOS 會先空一格再解碼，看起來像閃一下；晚到（已先用 ♪ 開機）就淡入
+      im.onload = () => { if (holoCard !== c) return; const cv = el.holo.querySelector('.tune-holo-cv'), late = el.holo.classList.contains('on'); im.alt = '';
+        if (late) { im.style.opacity = '0'; im.style.transition = 'opacity .35s'; requestAnimationFrame(() => requestAnimationFrame(() => { im.style.opacity = ''; })); }
+        cv.replaceChildren(im); holoOn(); };
+      im.onerror = () => { if (holoCard !== c) return; if (fallback) load(fallback); else { holoFace(HOLO_PH); holoOn(); } };
+      im.src = src; };
+    const hi = holoSrc(url); load(hi, hi !== url ? url : '');
+  }
+  function showHolo(c) {
+    if (!state.holo || !state.visible || !el.holo || holoCard === c || document.activeElement === el.search) return;
+    holoCard = c; const col = CELL_COLOR[c.cell] || '#5ee6f0', n = parseInt(col.slice(1), 16);
+    el.holo.classList.remove('on', 'lift'); clearTimeout(holoT);
+    el.holo.style.setProperty('--rgb', `${n >> 16},${(n >> 8) & 255},${n & 255}`); FX.rgb = [n >> 16, (n >> 8) & 255, n & 255]; seedFx();
+    el.holo.querySelector('.tune-holo-hd .c em').textContent = NAMES[c.cell] || '';
+    el.holo.querySelector('.tune-holo-ft .xyz').textContent = `E${fmt(c.x)} T${fmt(c.y)} W${fmt(c.z)}`;
+    el.holo.querySelector('.tune-holo-ft .bars').innerHTML = [c.x, c.y, c.z].map(v => `<i style="height:${Math.round(20 + 80 * Math.max(0, Math.min(1, (v + 1) / 2)))}%"></i>`).join('') + '<i style="height:35%"></i><i style="height:70%"></i>';
+    { const np = document.getElementById('tuneNp'), hn = document.getElementById('tuneHoloNp'); if (np && hn) { hn.innerHTML = np.innerHTML; hn.className = np.className; } }
+    el.holo.querySelector('.tune-holo-t b').textContent = c.card.album; el.holo.querySelector('.tune-holo-t span').textContent = c.card.artist;
+    holoT = setTimeout(() => { if (holoCard === c && !el.holo.classList.contains('on')) { holoFace(HOLO_PH); holoOn(); } }, 4000);
+    if (c.card.coverUrl) setHoloCover(c.card.coverUrl);
+  }
+  // 投影光（柔光版，一體成形）：同一套光——每條光絲從星星射向板子上的某一點（落點散在板子範圍外擴 10%）再多伸 10–40px，
+  // 底下墊一層「星星＋板子四角」凸包的柔光（radial gradient＋shadowBlur 讓邊緣化開）。星星在旁邊時看起來是扇形光束，
+  // 星星滑到板子後面時，凸包收成板子本身、只剩板緣一圈柔光，光絲只有伸出板緣的那一小段看得到——同一束光連續變化，不換畫法
+  const FX = { level: 0, target: 0, rgb: [94, 230, 240], rays: [], last: 0, ctx: null, W: 0, H: 0 };
+  const RM_FX = !!global.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+  function seedFx() {
+    const R = Math.random; FX.rays = [];
+    for (let i = 0; i < 150; i++) FX.rays.push({ u: R() * 1.2 - .1, v: R() * 1.2 - .1, ext: 10 + R() * 30, a: .09 + R() * R() * .34, w: .5 + R() * 1.1, ph: R() * 6.28, sp: .6 + R() * 2.2 });
+  }
+  // 凸包（Andrew monotone chain），點數很少
+  function hull(P) {
+    P = P.slice().sort((a, b) => a[0] - b[0] || a[1] - b[1]); const cr = (o, a, b) => (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);
+    const lo = [], up = []; for (const p of P) { while (lo.length > 1 && cr(lo[lo.length - 2], lo[lo.length - 1], p) <= 0) lo.pop(); lo.push(p); }
+    for (const p of P.slice().reverse()) { while (up.length > 1 && cr(up[up.length - 2], up[up.length - 1], p) <= 0) up.pop(); up.push(p); }
+    return lo.slice(0, -1).concat(up.slice(0, -1));
+  }
+  function drawFx() {
+    const cv = el.fx, now = performance.now(), dt = Math.min(.05, (now - (FX.last || now)) / 1000); FX.last = now;
+    FX.level += (FX.target - FX.level) * Math.min(1, dt * (FX.target ? 4 : 7)); if (FX.target === 0 && FX.level < .01) FX.level = 0;
+    const D = Math.min(2, global.devicePixelRatio || 1), W = cv.clientWidth, H = cv.clientHeight;
+    if (!FX.ctx || FX.W !== W || FX.H !== H) { cv.width = Math.round(W * D); cv.height = Math.round(H * D); FX.W = W; FX.H = H; FX.ctx = cv.getContext('2d'); }
+    const g = FX.ctx; g.setTransform(D, 0, 0, D, 0, 0); g.clearRect(0, 0, W, H);
+    const sp = litScreenPos(); if (!sp || FX.level <= 0) return;
+    const sr = el.stage.getBoundingClientRect(), q = el.holo.querySelector('.tune-holo-scr').getBoundingClientRect();
+    const x = sp.x - sr.left, y = sp.y - sr.top, L = q.left - sr.left, T = q.top - sr.top, Rr = q.right - sr.left, B = q.bottom - sr.top, PW = Rr - L, PH = B - T;
+    const C = [[L, T], [Rr, T], [Rr, B], [L, B]], far = Math.max(40, ...C.map(([u, v]) => Math.hypot(u - x, v - y)));
+    const [r, gg, b] = FX.rgb, rgba = a => `rgba(${r},${gg},${b},${a})`, lv = FX.level, t = now / 1000;
+    g.globalCompositeOperation = 'lighter';
+    // 柔光：星星＋板子四角的凸包
+    const hp = hull([[x, y], ...C]), gr0 = g.createRadialGradient(x, y, 0, x, y, far);
+    gr0.addColorStop(0, rgba(.34 * lv)); gr0.addColorStop(.4, rgba(.12 * lv)); gr0.addColorStop(1, rgba(.05 * lv));
+    g.save(); g.shadowColor = rgba(.5 * lv); g.shadowBlur = 22; g.fillStyle = gr0; g.beginPath(); hp.forEach(([u, v], k) => k ? g.lineTo(u, v) : g.moveTo(u, v)); g.closePath(); g.fill(); g.restore();
+    // 細光絲：星星 → 板子上的落點，再多伸一小段
+    for (const ry of FX.rays) {
+      const px = L + (ry.u + Math.sin(t * .6 + ry.ph) * .006) * PW, py = T + ry.v * PH, dx = px - x, dy = py - y, d = Math.hypot(dx, dy) || 1, l = d + ry.ext;
+      const ex = x + dx / d * l, ey = y + dy / d * l, al = ry.a * lv * (RM_FX ? 1 : .55 + .45 * Math.sin(t * ry.sp + ry.ph));
+      const gr = g.createLinearGradient(x, y, ex, ey); gr.addColorStop(0, rgba(al)); gr.addColorStop(Math.min(.98, d / l), rgba(al * .6)); gr.addColorStop(1, rgba(0));
+      g.strokeStyle = gr; g.lineWidth = ry.w; g.beginPath(); g.moveTo(x, y); g.lineTo(ex, ey); g.stroke();
+    }
+    // 光源：光暈＋慢慢轉的斷續光環（在板子後面時自然被擋住）
+    const gl = g.createRadialGradient(x, y, 0, x, y, 30); gl.addColorStop(0, `rgba(255,255,255,${.95 * lv})`); gl.addColorStop(.22, rgba(.85 * lv)); gl.addColorStop(.6, rgba(.22 * lv)); gl.addColorStop(1, rgba(0));
+    g.fillStyle = gl; g.beginPath(); g.arc(x, y, 30, 0, 6.283); g.fill();
+    g.strokeStyle = rgba(.75 * lv); g.lineWidth = 1.6; const rot = RM_FX ? 0 : t * .9;
+    for (let k = 0; k < 3; k++) { g.beginPath(); g.ellipse(x, y, 13, 13 * .55, 0, rot + k * 2.094, rot + k * 2.094 + 1.3); g.stroke(); }
+    g.globalCompositeOperation = 'source-over';
+  }
+  // 星圖的橫移與縮放（camera.setViewOffset、camera.zoom）都在 render loop 裡緩動；板子收起、縮回星星之後才回到原位原大小。
+  // --dx/--dy＝星星相對板子中心的位移：開機時板子從那裡飛出來、收起時縮回那裡
+  // cur/target：橫移（正＝星圖往左）；y/ytarget：直移（目前維持 0）；z/ztarget：星圖縮放（板子開著時退後一點，0.86）
+  const VIEW = { cur: 0, target: 0, y: 0, ytarget: 0, z: 1, ztarget: 1, last: 0, backT: 0, swayT: 0, zoomT: 0 };
+  function slideView() {
+    const now = performance.now(), dt = Math.min(.05, (now - (VIEW.last || now)) / 1000); VIEW.last = now;
+    if (VIEW.cur === VIEW.target && VIEW.cur === 0 && VIEW.y === VIEW.ytarget && VIEW.y === 0 && VIEW.z === VIEW.ztarget && VIEW.z === 1) return;
+    const k = Math.min(1, dt * (RM_FX ? 60 : 5)), kz = Math.min(1, dt * (RM_FX ? 60 : 3));
+    VIEW.cur += (VIEW.target - VIEW.cur) * k; if (Math.abs(VIEW.target - VIEW.cur) < .3) VIEW.cur = VIEW.target;
+    VIEW.y += (VIEW.ytarget - VIEW.y) * k; if (Math.abs(VIEW.ytarget - VIEW.y) < .3) VIEW.y = VIEW.ytarget;
+    VIEW.z += (VIEW.ztarget - VIEW.z) * kz; if (Math.abs(VIEW.ztarget - VIEW.z) < .002) VIEW.z = VIEW.ztarget;
+    const w = el.gl.clientWidth, h = el.gl.clientHeight; if (!w || !h) return;
+    camera.zoom = VIEW.z;
+    if (VIEW.cur === 0 && VIEW.y === 0) camera.clearViewOffset(); else camera.setViewOffset(w, h, VIEW.cur, VIEW.y, w, h);   // 兩者都會 updateProjectionMatrix
+  }
+  function placeHolo() {
+    FOLLOW.x = FOLLOW.y = 0; el.holo.style.setProperty('--fx', '0px'); el.holo.style.setProperty('--fy', '0px');
+    const sp = litScreenPos(), sr = el.stage.getBoundingClientRect(), W = el.holo.offsetWidth;
+    FOLLOW.on = !!sp && THREE_OK;
+    if (!sp) { el.holo.style.left = ''; el.holo.style.removeProperty('--dx'); el.holo.style.setProperty('--dy', '40%'); return; }
+    // 開機順序（2026-10-26 店主）：板子先直直彈到中間 → 星圖往後退一點（縮小），同時板子就從中間開始跟著轉角慢慢飄
+    // （起點相位在 A、B 正中，不先拉到左右側），星圖從原地往反方向飄；第一步往星星的另一側。
+    // 幅度只有到左右界的一半（店主：看得到光束、但不要飄到邊邊）
+    const b = holoBounds(), cx = Math.max(b.lo, Math.min(b.hi, sr.width / 2)), starRight = sp.x - sr.left > sr.width / 2;
+    const amp = Math.max(0, Math.min(cx - b.lo, b.hi - cx)) / 2, cxA = starRight ? cx - amp : cx + amp, cxB = starRight ? cx + amp : cx - amp;   // 左右對稱，中點＝中間
+    el.holo.style.left = cx + 'px';
+    const fzA = starZone(cxA, W, sr.width), fzB = starZone(cxB, W, sr.width);
+    // 星星與板子反方向飄的比例（同拖曳）；星星起點＝開機時它所在的位置（s0 在搖擺開始那一格才記），板子起點＝中間
+    Object.assign(FOLLOW, { base: cx, cxA, cxB, ratio: Math.max(-3, Math.min(-.3, (fzB - fzA) / (cxB - cxA || 1))), p0: cx, s0: null, az0: null, ph0: Math.PI / 2, drag: null });
+    clearTimeout(VIEW.backT); clearTimeout(VIEW.zoomT);
+    VIEW.zoomT = setTimeout(() => { if (holoCard) VIEW.ztarget = .86; }, 350);
+    FOLLOW.t0 = performance.now() + 350;
+    const hr = el.holo.getBoundingClientRect();
+    el.holo.style.setProperty('--dx', (sp.x - hr.left - hr.width / 2).toFixed(1) + 'px'); el.holo.style.setProperty('--dy', (sp.y - hr.top - hr.height / 2).toFixed(1) + 'px');
+  }
+  // 星圖與板子跟著星圖的轉角慢慢互換位置（2026-10-26 店主：星圖在左、視窗在右時，星圖慢慢飄向右、視窗慢慢飄向左，反之亦然）：
+  // 開機時記下兩端——A＝現在這樣（板子貼一邊、星星在另一邊空位正中）、B＝左右對調——之後依星圖自轉／拖曳轉過的方位角，
+  // u＝(1−cos 2Δ)/2 在 A、B 之間來回（轉 90° 換一次邊），板子照 u 平移、整片星圖用 view offset 把星星推到對應位置。
+  // 玩家可以拖曳板子（2026-10-26 店主）：抓板子上半（標頭＋封面；下半壓在搜尋列上，留給搜尋列點）拖到哪就停哪，
+  // 拖的時候星圖照「左右相反方向飄」的同一套規則跟著動（店主）：板子往左拖，星圖緩緩往右飄，反之亦然，比例跟自動互換一樣
+  // （星星位移＝板子位移 ×(fzB−fzA)/(cxB−cxA)，是負的）；上下拖星圖不動。放開後以現在的板子與星星位置當 A、左右鏡像當 B，照轉角繼續互換
+  const FOLLOW = { on: false, az0: 0, ph0: 0, t0: 0, ratio: -1, p0: 0, s0: 0, base: 0, cxA: 0, cxB: 0, fzA: 0, fzB: 0, x: 0, y: 0, last: 0, drag: null };
+  function holoBounds() {
+    const sr = el.stage.getBoundingClientRect(), W = el.holo.offsetWidth, hud = el.stage.querySelector('.tune-hud').getBoundingClientRect();
+    return { sr, W, lo: Math.max(8, Math.round(hud.left - sr.left + 34 + 8)) + W / 2, hi: sr.width - 8 - W / 2 };   // 板子中心的左右界（左邊讓開按鈕欄）
+  }
+  // 板子中心在 cx 時，星星該在的位置：板子另一側空位的正中
+  const starZone = (cx, W, sw) => cx > sw / 2 ? (cx - W / 2) / 2 : (cx + W / 2 + sw) / 2;
+  function followHolo() {
+    const now = performance.now(), dt = Math.min(.05, (now - (FOLLOW.last || now)) / 1000); FOLLOW.last = now;
+    if (!FOLLOW.on || FOLLOW.drag || !controls?.getAzimuthalAngle || !el.holo.classList.contains('on') || el.holo.classList.contains('lift')) return;
+    if (now < FOLLOW.t0) return;   // 彈到中間那一下先做完
+    const sp = litScreenPos(); if (!sp) return;
+    const sr = el.stage.getBoundingClientRect(), raw = sp.x - sr.left + VIEW.cur;   // 星星不含橫移時的位置
+    const az = controls.getAzimuthalAngle(); if (FOLLOW.az0 === null) FOLLOW.az0 = az; if (FOLLOW.s0 === null) FOLLOW.s0 = sp.x - sr.left;
+    // 自轉方向是方位角遞減，ph0＝π/2 時 u 從 0.5 往 0（A）走
+    const u = (1 - Math.cos(2 * (az - FOLLOW.az0) + FOLLOW.ph0)) / 2, pos = FOLLOW.cxA + (FOLLOW.cxB - FOLLOW.cxA) * u;
+    const star = FOLLOW.s0 + FOLLOW.ratio * (pos - FOLLOW.p0);
+    VIEW.target = Math.max(-sr.width * .6, Math.min(sr.width * .6, raw - star));
+    FOLLOW.x += (pos - FOLLOW.base - FOLLOW.x) * (RM_FX ? 1 : Math.min(1, dt * 5));
+    el.holo.style.setProperty('--fx', FOLLOW.x.toFixed(1) + 'px');
+  }
+  function wireHoloDrag() {
+    const grab = e => {
+      if (!el.holo.classList.contains('on') || el.holo.classList.contains('lift') || (e.button && e.button !== 0)) return;
+      e.preventDefault(); e.stopPropagation();
+      const hr = el.holo.getBoundingClientRect(), sr = el.stage.getBoundingClientRect();
+      const sp = litScreenPos(), ratio = FOLLOW.ratio;
+      FOLLOW.drag = { id: e.pointerId, px: e.clientX, py: e.clientY, x: FOLLOW.x, y: FOLLOW.y, top0: hr.top - sr.top - FOLLOW.y, vx: VIEW.target, star: sp ? sp.x - sr.left + VIEW.cur - VIEW.target : 0, ratio };
+      e.currentTarget.setPointerCapture?.(e.pointerId); el.holo.classList.add('dragging');
+    };
+    const move = e => {
+      const d = FOLLOW.drag; if (!d || e.pointerId !== d.id) return;
+      const b = holoBounds(), rdB = el.readout.getBoundingClientRect().bottom - b.sr.top + 4;
+      FOLLOW.x = Math.max(b.lo - FOLLOW.base, Math.min(b.hi - FOLLOW.base, d.x + e.clientX - d.px));
+      FOLLOW.y = Math.max(rdB - d.top0, Math.min(b.sr.height * .2, d.y + e.clientY - d.py));
+      el.holo.style.setProperty('--fx', FOLLOW.x.toFixed(1) + 'px'); el.holo.style.setProperty('--fy', FOLLOW.y.toFixed(1) + 'px');
+      if (THREE_OK) VIEW.target = Math.max(-b.sr.width * .6, Math.min(b.sr.width * .6, d.vx - d.ratio * (FOLLOW.x - d.x)));   // 星圖往反方向緩緩飄（slideView 緩動）
+    };
+    const drop = e => {
+      const d = FOLLOW.drag; if (!d || e.pointerId !== d.id) return; FOLLOW.drag = null; el.holo.classList.remove('dragging');
+      const b = holoBounds(), cxA = FOLLOW.base + FOLLOW.x, cxB = Math.max(b.lo, Math.min(b.hi, b.sr.width - cxA));
+      const fzA = d.star + d.ratio * (FOLLOW.x - d.x);   // 星星最後該停的位置（星圖可能還在飄），B 端左右鏡像
+      Object.assign(FOLLOW, { cxA, cxB, ratio: d.ratio, p0: cxA, s0: fzA, az0: controls?.getAzimuthalAngle?.() || 0, ph0: 0, t0: 0 });
+    };
+    for (const n of [el.holo.querySelector('.tune-holo-hd'), el.holo.querySelector('.tune-holo-cv')]) {
+      n.addEventListener('pointerdown', grab); n.addEventListener('pointermove', move); n.addEventListener('pointerup', drop); n.addEventListener('pointercancel', drop);
+    }
+  }
+  function hideHolo() {
+    // 縮回「現在」星星的位置；縮完（0.25 秒）星圖才回到原位、原大小
+    if (el.holo?.classList.contains('on')) { const sp = litScreenPos(), hr = el.holo.getBoundingClientRect(); if (sp) { el.holo.style.setProperty('--dx', (sp.x - hr.left - hr.width / 2).toFixed(1) + 'px'); el.holo.style.setProperty('--dy', (sp.y - hr.top - hr.height / 2).toFixed(1) + 'px'); } }
+    if (holoCard || el.holo?.classList.contains('on')) { clearTimeout(VIEW.backT); clearTimeout(VIEW.zoomT); VIEW.backT = setTimeout(() => { if (!holoCard || !el.holo.classList.contains('on')) { VIEW.target = 0; VIEW.ytarget = 0; VIEW.ztarget = 1; } }, 250); }
+    FOLLOW.on = false; FOLLOW.drag = null; holoCard = null; FX.target = 0; clearTimeout(holoT); el.holo?.classList.remove('on', 'lift'); el.now?.classList.remove('is-tucked'); el.hint?.classList.remove('is-tucked'); }
+  function setHoloUI() { el.holoBtn.setAttribute('aria-pressed', String(state.holo)); }
   function playPreview() {
     const c = previewCard; if (!c || !state.audioOn || !cfg.player) return;
     const card = c.card;
@@ -631,7 +890,7 @@
       .then(ok => { if (playing !== c) return; if (ok) setNowPlaying(true); else { playing = null; const code = cfg.player.debugState?.().code || ''; setNowPlaying(false, code === 'NO-AUTOPLAY' ? '再碰一下輪子開聲音' : '這張沒有試聽'); } })
       .catch(() => { if (playing === c) { playing = null; setNowPlaying(false, '這張沒有試聽'); } });
   }
-  function setNowPlaying(on, msg) { const n = document.getElementById('tuneNp'); if (!n) return; n.classList.toggle('on', !!on); n.innerHTML = on ? '<i></i><i></i><i></i>' : (msg ? '· ' + msg : ''); }
+  function setNowPlaying(on, msg) { for (const id of ['tuneNp', 'tuneHoloNp']) { const n = document.getElementById(id); if (!n) continue; n.classList.toggle('on', !!on); n.innerHTML = on ? '<i></i><i></i><i></i>' : (msg ? (id === 'tuneNp' ? '· ' : '') + msg : ''); } }
   // 播放器的狀態回報：只看目前這張，把 loading／error 的原因寫在小卡上
   let unsubState = null, audibleCard = null;   // audibleCard：真的出聲的那張（示範劇本用來等試聽出來）
   function watchPlayer() {
@@ -732,16 +991,20 @@
     host.innerHTML = html();
     el = { stage: host.querySelector('#tuneStage'), gl: host.querySelector('#tuneGl'), readout: host.querySelector('#tuneReadout'), spk: host.querySelector('#tuneSpk'), back: host.querySelector('#tuneBack'), now: host.querySelector('#tuneNow'), msg: host.querySelector('#tuneMsg'),
       dx: host.querySelector('#tuneDx'), dy: host.querySelector('#tuneDy'), dz: host.querySelector('#tuneDz'), dcell: host.querySelector('#tuneDcell'), cellStrip: host.querySelector('#tuneCellStrip'),
-      mode: host.querySelector('#tuneMode'), lever: host.querySelector('#tuneLever'), hint: host.querySelector('#tuneHint'), search: host.querySelector('#tuneSearch'), searchGo: host.querySelector('#tuneSearchGo'), sugg: host.querySelector('#tuneSugg'), swTop: host.querySelector('#tuneSwTop'), swBot: host.querySelector('#tuneSwBot'), ledTop: host.querySelector('#tuneLedTop'), ledBot: host.querySelector('#tuneLedBot'), draw: host.querySelector('#tuneDraw'), console: host.querySelector('#tuneConsole') };
+      mode: host.querySelector('#tuneMode'), lever: host.querySelector('#tuneLever'), hint: host.querySelector('#tuneHint'), search: host.querySelector('#tuneSearch'), searchGo: host.querySelector('#tuneSearchGo'), sugg: host.querySelector('#tuneSugg'), swTop: host.querySelector('#tuneSwTop'), swBot: host.querySelector('#tuneSwBot'), ledTop: host.querySelector('#tuneLedTop'), ledBot: host.querySelector('#tuneLedBot'), draw: host.querySelector('#tuneDraw'), console: host.querySelector('#tuneConsole'), holo: host.querySelector('#tuneHolo'), fx: host.querySelector('#tuneHoloFx'), holoBtn: host.querySelector('#tuneHoloBtn') };
     trackViewport(host);
+    wireHoloDrag();
     el.back.onclick = () => cfg.onBack?.();
     // 喇叭鈕與站上頂欄的「自動試聽」開關是同一顆（2026-10-22 店主：切到串流後站上自動關掉網頁音源，
     // 頻率選歌就沒聲音，按喇叭也沒反應）。按下去先回寫站上的開關，再照新狀態開停。
     el.spk.onclick = () => { setAudio(!state.audioOn, true); };
+    try { state.holo = global.localStorage.getItem('dipTuneHolo') !== '0'; } catch (_) {}
+    el.holoBtn.onclick = () => { state.holo = !state.holo; try { global.localStorage.setItem('dipTuneHolo', state.holo ? '1' : '0'); } catch (_) {} setHoloUI(); sfxClick();
+      if (!state.holo) hideHolo(); else if (previewCard && performance.now() - lastTurn > 700) showHolo(previewCard); };
     el.mode.onclick = () => { state.fine = !state.fine; setModeUI(true); sfxClick(); };
     el.now.onclick = () => { if (previewCard) emit(previewCard); };
     el.draw.onclick = () => { if (!previewCard) return; if (previewCard.cell !== targetCell()) scan(nearest()); emit(previewCard); };
-    setAudioUI(); setModeUI();
+    setAudioUI(); setModeUI(); setHoloUI();
     let data;
     // 星圖程式庫（three.js，CDN）跟卡池資料一起等，但最多等 8 秒：等不到就只用面板。
     // 2026-10-24 店主錄影：加到主畫面的 App 點進來一片白——舊寫法在呼叫端先 await three 才開始畫面板，CDN 卡住就永遠白著
@@ -749,6 +1012,8 @@
     try { [data] = await Promise.all([loadData(), three]); } catch (e) { el.msg.textContent = e.message || '載入失敗'; return; }
     buildCards(data);
     if (!N) { el.msg.textContent = '卡池裡沒有座標'; return; }
+    // 開場位置：三軸各在中段（百分位 30–70）隨機（2026-10-26 店主：每次進來都停在同一張）
+    for (const k of ['x', 'y', 'z']) state.p[k] = 30 + Math.random() * 40;
     el.msg.hidden = true;
     // 滾筒：每個前後各接一圈
     { const items = ORDER.map(k => `<span style="color:${CELL_COLOR[k]};text-shadow:0 0 1cqw ${CELL_COLOR[k]}">${NAMES[k]}</span>`); el.cellStrip.dataset.n = items.length; el.cellStrip.innerHTML = items.join('') + items.join('') + items.join(''); }
@@ -817,9 +1082,9 @@
     // 建不起來時把原因寫在畫面上（2026-10-24 店主：加到主畫面的 App 點進來一片空白，現場看不到錯誤）
     if (!state.built) { try { await build(); } catch (e) { console.error('[tune]', e); const host = cfg.host?.(), msg = host?.querySelector('#tuneMsg'), text = '頻率光譜載入失敗：' + (e?.message || e);
       if (msg) { msg.hidden = false; msg.textContent = text; } else if (host) host.innerHTML = `<p style="margin:0;padding:24px;min-height:50vh;background:#0b0c10;color:#e9e2c8">${esc(text)}</p>`; } }
-    else { setAudioUI(); el.draw.disabled = false; if (previewCard) armPreview(); }
+    else { setAudioUI(); el.draw.disabled = false; hideHolo(); if (previewCard) armPreview(); }   // 從結果頁回來：全像板重新開機（放大時藏起來了）
   }
-  function stop() { state.visible = false; cancelTravel(); stopPreview(); sfxStop(); }
+  function stop() { state.visible = false; cancelTravel(); stopPreview(); sfxStop(); hideHolo(); }
 
   global.DipTune = { configure, start, stop, pickAgain, setAudio, litScreenPos, warpStart, CELL_COLOR, get state() { return state; } };
 })(window);
