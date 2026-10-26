@@ -124,7 +124,7 @@
    橫放（面板在右邊）就收在星圖裡。板子不吃點擊，下面的搜尋列照常可以點；搜尋框有焦點時板子收起來。
    投影源是星圖裡那顆專輯星（2026-10-26 店主）：板子從星星飛出來長大、轉動時縮回星星。投影光照店主附圖做成柔光，不畫硬邊：
    星星一團光暈＋一圈斷續光環、上百條極細光絲往板子方向扇開並伸出板子外緣、柔和光錐（不要噴發的光點，2026-10-26 店主）（.tune-holo-fx，2D canvas，
-   lighter 疊加，跟著星圖 render loop 每格畫）。光在板子後面；星星跑到板子後面時整束淡掉（從板後往四周噴光很怪，店主截圖），板子開著時暫停星圖自轉。
+   lighter 疊加，跟著星圖 render loop 每格畫）。光在板子後面；星星跑到板子後面時整束淡掉（從板後往四周噴光很怪，店主截圖）。
    直放板子寬 52cqw，開機時貼到星星的另一側，星圖同時整片橫移讓星星落在板子旁的空位，光源與光束才露得出來。 */
 .tune-stage{container-type:size}
 .tune-now,.tune-stage .tune-hint{transition:opacity .25s}.tune-now.is-tucked,.tune-stage .tune-hint.is-tucked{opacity:0;pointer-events:none}
@@ -281,7 +281,7 @@
     camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100); camera.position.set(2.4, 1.7, 2.6);
     if (THREE.OrbitControls) {
       controls = new THREE.OrbitControls(camera, glc); controls.enableDamping = true; controls.dampingFactor = .08; controls.autoRotate = true; controls.autoRotateSpeed = .6; controls.minDistance = 1.6; controls.maxDistance = 7; controls.enablePan = false;
-      let idleT = 0; controls.addEventListener('start', () => { controls.autoRotate = false; clearTimeout(idleT); }); controls.addEventListener('end', () => { idleT = setTimeout(() => { controls.autoRotate = !holoCard; }, 6000); });
+      let idleT = 0; controls.addEventListener('start', () => { controls.autoRotate = false; clearTimeout(idleT); }); controls.addEventListener('end', () => { idleT = setTimeout(() => { controls.autoRotate = true; }, 6000); });
     }
     const S = c => [c.px / 50 - 1, -(c.py / 50 - 1), c.pz / 50 - 1];
     const pos = new Float32Array(N * 3); col = new Float32Array(N * 3); base = new Float32Array(N * 3);
@@ -714,7 +714,7 @@
   const holoSrc = u => u.replace(/(coverartarchive\.org\/release(?:-group)?\/[^/]+\/front)$/, '$1-500').replace(/\/\d+x\d+bb\./, '/600x600bb.');
   // 封面載好才開機（不然先閃一個 ♪ 再換圖）；卡池沒帶封面就等 settleCover 查到，2.5 秒還沒有就用 ♪ 開
   let holoT = 0; const HOLO_PH = '<div class="ph"><b style="font-size:3em;font-weight:400;letter-spacing:0">♪</b>NO COVER</div>';
-  function holoOn() { clearTimeout(holoT); if (!holoCard || el.holo.classList.contains('on')) return; if (controls) controls.autoRotate = false; placeHolo(); el.holo.classList.add('on'); FX.target = 1; el.now.classList.add('is-tucked'); el.hint.classList.add('is-tucked'); }
+  function holoOn() { clearTimeout(holoT); if (!holoCard || el.holo.classList.contains('on')) return; placeHolo(); el.holo.classList.add('on'); FX.target = 1; el.now.classList.add('is-tucked'); el.hint.classList.add('is-tucked'); }
   function holoFace(html) { el.holo.querySelector('.tune-holo-cv').innerHTML = html; }
   function setHoloCover(url) {
     const c = holoCard; if (!c) return;
@@ -795,7 +795,7 @@
   function placeHolo() {
     FOLLOW.x = FOLLOW.y = 0; el.holo.style.setProperty('--fx', '0px'); el.holo.style.setProperty('--fy', '0px');
     const sp = litScreenPos(), sr = el.stage.getBoundingClientRect(), W = el.holo.offsetWidth;
-    FOLLOW.on = !!sp; FOLLOW.anchor = null;
+    FOLLOW.on = !!sp; FOLLOW.dx = null;
     if (!sp) { el.holo.style.left = ''; el.holo.style.removeProperty('--dx'); el.holo.style.setProperty('--dy', '40%'); return; }
     // 貼左邊時讓開左上的讀數與按鈕欄
     const hud = el.stage.querySelector('.tune-hud').getBoundingClientRect(), padL = Math.max(8, Math.round(hud.left - sr.left + 34 + 8));
@@ -806,31 +806,32 @@
     const hr = el.holo.getBoundingClientRect();
     el.holo.style.setProperty('--dx', (sp.x - hr.left - hr.width / 2).toFixed(1) + 'px'); el.holo.style.setProperty('--dy', (sp.y - hr.top - hr.height / 2).toFixed(1) + 'px');
   }
-  // 板子跟著星圖走（2026-10-26 店主選 B）：開機、星圖橫移停穩後，把板子中心「釘」在星圖 3D 空間裡（跟那顆星同深度的一點），
-  // 之後拖曳旋轉、縮放星圖，那一點投影到哪，板子就緩緩漂過去，像浮在星圖裡；不出星圖左右邊、往上不壓到讀數、往下最多 12% 星圖高
-  const FOLLOW = { on: false, anchor: null, cx: 0, cy: 0, x: 0, y: 0, last: 0 };
+  // 板子跟著星圖走（2026-10-26 店主：星圖繼續轉，依轉動位置移動整個星圖，專輯視窗也跟著移動）：
+  // 開機、星圖橫移停穩後，記下板子相對星星的位移 D；之後星圖自轉或被拖曳，板子以「星星位置＋D」為目標緩緩跟著星星走，
+  // 板子要出星圖左右邊時改推整片星圖（camera view offset）把星星拉回來，所以星星一直在板子旁、光束一直連著。
+  // 板子往上不壓到讀數、往下最多 12% 星圖高（垂直不推星圖）
+  const FOLLOW = { on: false, dx: 0, dy: 0, cx: 0, cy: 0, x: 0, y: 0, last: 0 };
   function followHolo() {
     const now = performance.now(), dt = Math.min(.05, (now - (FOLLOW.last || now)) / 1000); FOLLOW.last = now;
-    if (!FOLLOW.on || !THREE_OK || litIdx < 0 || !el.holo.classList.contains('on') || el.holo.classList.contains('lift')) return;
-    const THREE = global.THREE, gr = el.gl.getBoundingClientRect(), hr = el.holo.getBoundingClientRect();
-    if (!FOLLOW.anchor) {
-      if (VIEW.cur !== VIEW.target) return;   // 等開機時的橫移滑完再釘
-      const z = new THREE.Vector3(...S3(CARDS[litIdx])).project(camera).z;
-      FOLLOW.cx = hr.left + hr.width / 2 - FOLLOW.x; FOLLOW.cy = hr.top + hr.height / 2 - FOLLOW.y;
-      FOLLOW.anchor = new THREE.Vector3((FOLLOW.cx - gr.left) / gr.width * 2 - 1, -((FOLLOW.cy - gr.top) / gr.height) * 2 + 1, z).unproject(camera);
+    if (!FOLLOW.on || !el.holo.classList.contains('on') || el.holo.classList.contains('lift')) return;
+    const sp = litScreenPos(); if (!sp) return;
+    const hr = el.holo.getBoundingClientRect();
+    if (FOLLOW.dx === null) {
+      if (VIEW.cur !== VIEW.target) return;   // 等開機時的橫移滑完再記相對位置
+      FOLLOW.cx = hr.left + hr.width / 2 - FOLLOW.x; FOLLOW.cy = hr.top + hr.height / 2 - FOLLOW.y; FOLLOW.dx = FOLLOW.cx - sp.x; FOLLOW.dy = FOLLOW.cy - sp.y;
       return;
     }
-    const v = FOLLOW.anchor.clone().project(camera); if (v.z > 1) return;
-    let tx = gr.left + (v.x + 1) / 2 * gr.width - FOLLOW.cx, ty = gr.top + (1 - v.y) / 2 * gr.height - FOLLOW.cy;
-    const sr = el.stage.getBoundingClientRect(), W = hr.width, left0 = hr.left - sr.left - FOLLOW.x, top0 = hr.top - sr.top - FOLLOW.y;   // 沒跟隨時板子的位置
+    let tx = sp.x + FOLLOW.dx - FOLLOW.cx, ty = sp.y + FOLLOW.dy - FOLLOW.cy;
+    const sr = el.stage.getBoundingClientRect(), W = hr.width, left0 = FOLLOW.cx - W / 2 - sr.left, top0 = hr.top - sr.top - FOLLOW.y;   // 沒跟隨時板子的位置
     const hud = el.stage.querySelector('.tune-hud').getBoundingClientRect(), padL = Math.max(8, Math.round(hud.left - sr.left + 34 + 8));
-    tx = Math.max(padL - left0, Math.min(sr.width - 8 - W - left0, tx));
+    const lo = padL - left0, hi = sr.width - 8 - W - left0, cx = Math.max(lo, Math.min(hi, tx));
+    if (cx !== tx && THREE_OK) VIEW.target = Math.max(-sr.width * .6, Math.min(sr.width * .6, VIEW.cur + (tx - cx)));   // 出界的部分推星圖
     const rdB = el.readout.getBoundingClientRect().bottom - sr.top + 4; ty = Math.max(Math.min(0, rdB - top0), Math.min(sr.height * .12, ty));
-    const k = RM_FX ? 1 : Math.min(1, dt * 3.5);
-    FOLLOW.x += (tx - FOLLOW.x) * k; FOLLOW.y += (ty - FOLLOW.y) * k;
+    const k = RM_FX ? 1 : Math.min(1, dt * 5);
+    FOLLOW.x += (cx - FOLLOW.x) * k; FOLLOW.y += (ty - FOLLOW.y) * k;
     el.holo.style.setProperty('--fx', FOLLOW.x.toFixed(1) + 'px'); el.holo.style.setProperty('--fy', FOLLOW.y.toFixed(1) + 'px');
   }
-  function hideHolo() { FOLLOW.on = false; if (holoCard && controls) controls.autoRotate = true; holoCard = null; FX.target = 0; VIEW.target = 0; clearTimeout(holoT); el.holo?.classList.remove('on', 'lift'); el.now?.classList.remove('is-tucked'); el.hint?.classList.remove('is-tucked'); }
+  function hideHolo() { FOLLOW.on = false; holoCard = null; FX.target = 0; VIEW.target = 0; clearTimeout(holoT); el.holo?.classList.remove('on', 'lift'); el.now?.classList.remove('is-tucked'); el.hint?.classList.remove('is-tucked'); }
   function setHoloUI() { el.holoBtn.setAttribute('aria-pressed', String(state.holo)); }
   function playPreview() {
     const c = previewCard; if (!c || !state.audioOn || !cfg.player) return;
