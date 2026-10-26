@@ -147,10 +147,13 @@
 .tune-holo-hd .np i{display:inline-block;width:3px;height:8px;background:var(--cc);box-shadow:0 0 4px var(--cc);animation:tuneEq .6s steps(3) infinite alternate}
 .tune-holo-hd .np i:nth-child(2){animation-delay:.2s}.tune-holo-hd .np i:nth-child(3){animation-delay:.4s}
 .tune-holo-cv{position:relative;aspect-ratio:1;border-radius:4px;overflow:hidden;box-shadow:0 0 0 1px rgba(var(--rgb),.45)}
-.tune-holo-cv img{display:block;width:100%;height:100%;object-fit:cover;opacity:.74}
-.tune-holo-cv .ph{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:6px;font-family:var(--pix);font-size:11px;letter-spacing:.2em;color:var(--cc);text-shadow:0 0 10px var(--cc);background:rgba(var(--rgb),.08)}
+/* 訊號不穩（2026-10-26 店主：拿掉斜向反光那一下閃，改成訊號不穩）：每 7 秒左右，封面突然橫向錯位、紅藍分色、
+   一條雜訊帶跳過去，兩下抽動各約 0.07 秒就恢復；steps(1) 讓每一格是硬切，不做亮度變化（不閃） */
+.tune-holo-cv img{display:block;width:100%;height:100%;object-fit:cover;opacity:.74;animation:tuneHoloGlitch 7s steps(1) infinite}
+.tune-holo-cv img,.tune-holo-cv .ph{will-change:transform}
+.tune-holo-cv .ph{position:absolute;inset:0;animation:tuneHoloGlitch 7s steps(1) infinite;display:grid;place-content:center;justify-items:center;gap:6px;font-family:var(--pix);font-size:11px;letter-spacing:.2em;color:var(--cc);text-shadow:0 0 10px var(--cc);background:rgba(var(--rgb),.08)}
 .tune-holo-cv::before{content:"";position:absolute;inset:0;z-index:1;background:repeating-linear-gradient(180deg,rgba(var(--rgb),.13) 0 1px,transparent 1px 4px);mix-blend-mode:screen}
-.tune-holo-cv::after{content:"";position:absolute;inset:0;z-index:2;box-shadow:inset 0 0 14px rgba(var(--rgb),.55);background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.16) 42%,transparent 54%) 0 0/250% 100% no-repeat;animation:tuneHoloSheen 6s ease-in-out infinite}
+.tune-holo-cv::after{content:"";position:absolute;inset:0;z-index:2;box-shadow:inset 0 0 14px rgba(var(--rgb),.55);background:repeating-linear-gradient(90deg,rgba(255,255,255,.22) 0 2px,transparent 2px 5px,rgba(var(--rgb),.3) 5px 6px,transparent 6px 9px) 0 -50%/100% 9% no-repeat,repeating-linear-gradient(90deg,rgba(255,255,255,.14) 0 1px,transparent 1px 4px) 0 -50%/100% 4% no-repeat;animation:tuneHoloTear 7s steps(1) infinite}
 .tune-holo-ft{padding:5px 1px 0;font-size:8px;color:rgba(255,255,255,.75)}
 .tune-holo-ft .bars{display:inline-flex;align-items:flex-end;gap:1px;height:7px}
 .tune-holo-ft .bars i{width:2px;background:var(--cc);box-shadow:0 0 3px var(--cc)}
@@ -161,8 +164,14 @@
 .tune-holo-fx{position:absolute;left:0;top:0;width:100%;height:calc(100% + 30cqh);z-index:4;pointer-events:none}
 @keyframes tuneHoloFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
 @keyframes tuneHoloOn{0%{transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0}18%{opacity:1}100%{transform:none}}
-@keyframes tuneHoloSheen{0%,55%{background-position:120% 0}100%{background-position:-120% 0}}
-@media (prefers-reduced-motion:reduce){.tune-holo .fl,.tune-holo-cv::after{animation:none}}
+@keyframes tuneHoloGlitch{0%,100%{transform:none;filter:none}
+86%{transform:translateX(-5px) skewX(-7deg);filter:drop-shadow(3px 0 rgba(255,40,90,.75)) drop-shadow(-3px 0 rgba(40,230,255,.75))}
+87%{transform:translateX(6px) scaleY(1.02);filter:drop-shadow(-3px 0 rgba(255,40,90,.75)) drop-shadow(3px 0 rgba(40,230,255,.75))}
+88%{transform:none;filter:none}
+93%{transform:translate(-3px,1px) skewX(4deg);filter:drop-shadow(2px 0 rgba(255,40,90,.6)) drop-shadow(-2px 0 rgba(40,230,255,.6))}
+94%{transform:none;filter:none}}
+@keyframes tuneHoloTear{0%,100%{background-position:0 -50%,0 -50%}86%{background-position:0 28%,0 36%}87%{background-position:0 64%,0 58%}88%{background-position:0 -50%,0 -50%}93%{background-position:0 82%,0 79%}94%{background-position:0 -50%,0 -50%}}
+@media (prefers-reduced-motion:reduce){.tune-holo .fl,.tune-holo-cv::after,.tune-holo-cv img,.tune-holo-cv .ph{animation:none}}
 .tune-hbtn{width:24px;padding:2px;justify-content:center}
 .tune-hbtn svg{display:block}.tune-hbtn .f{fill:#e9e2c8}.tune-hbtn .s{fill:#5ee6f0}.tune-hbtn .k{fill:#0b0c10}
 .tune-hbtn[aria-pressed="false"] .f{fill:#8d9478}.tune-hbtn[aria-pressed="false"] .s{fill:#2b2f2a}
