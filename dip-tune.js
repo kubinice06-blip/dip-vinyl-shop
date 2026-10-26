@@ -121,12 +121,13 @@
 /* 懸浮封面（2026-10-26 店主）：停下來試聽時，封面投影成一片浮在星圖下緣、面板正上方的彩色全像玻璃板
    （店主附圖：發光細框、HUD 角標、玻璃反光），板上標頻率格與試聽狀態，盤名、藝人名在板子裡、封面下面。
    大小跟著星圖區（container query 的 cqh／cqw）一起縮放；直放時板子比星圖略大、往下衝出去壓到面板上緣（店主：衝破螢幕的感覺），
-   橫放（面板在右邊）就收在星圖裡。板子不吃點擊，下面的搜尋列照常可以點；搜尋框有焦點時板子收起來。
+   橫放（面板在右邊）就收在星圖裡。板子只有上半（標頭＋封面）吃指標事件、用來拖曳，下半壓在搜尋列上不擋點擊；搜尋框有焦點時板子收起來。
    投影源是星圖裡那顆專輯星（2026-10-26 店主）：板子從星星飛出來長大、轉動時縮回星星。投影光照店主附圖做成柔光，不畫硬邊：
    星星一團光暈＋一圈斷續光環、上百條極細光絲往板子方向扇開並伸出板子外緣、柔和光錐（不要噴發的光點，2026-10-26 店主）（.tune-holo-fx，2D canvas，
-   lighter 疊加，跟著星圖 render loop 每格畫）。光在板子後面；星星跑到板子後面時整束淡掉（從板後往四周噴光很怪，店主截圖）。
+   lighter 疊加，跟著星圖 render loop 每格畫）。光在板子後面；星星跑到板子後面時不往四周噴到螢幕邊（店主截圖），改成板子背光：板緣一圈柔光＋短光絲只透出板緣 15–55px。
    直放板子寬 52cqw，開機時貼到星星的另一側，星圖同時整片橫移讓星星落在板子旁的空位，光源與光束才露得出來。 */
 .tune-stage{container-type:size}
+.tune-holo.on:not(.lift) .tune-holo-hd,.tune-holo.on:not(.lift) .tune-holo-cv{pointer-events:auto;cursor:grab;touch-action:none}.tune-holo.dragging .tune-holo-hd,.tune-holo.dragging .tune-holo-cv{cursor:grabbing}
 .tune-now,.tune-stage .tune-hint{transition:opacity .25s}.tune-now.is-tucked,.tune-stage .tune-hint.is-tucked{opacity:0;pointer-events:none}
 .tune-holo{position:absolute;left:50%;bottom:6px;z-index:5;width:150px;width:min(calc(100cqh - 132px),66cqw);transform:translate(calc(-50% + var(--fx,0px)),var(--fy,0px));pointer-events:none;--rgb:94,230,240;--cc:rgb(var(--rgb))}
 @media (orientation:portrait),(min-height:601px),(max-width:559px){.tune-stage{overflow:visible}.tune-holo{width:min(calc(100cqh - 66px),52cqw);bottom:-17cqh}}
@@ -761,9 +762,23 @@
     // 光絲的扇形：涵蓋板子四角再寬一點；星星躲進板子後面時沿用最後一次的扇形一起淡掉
     if (!inside) { const ac = Math.atan2((T + B) / 2 - y, (L + Rr) / 2 - x); const ds = C.map(([u, v]) => { let d = Math.atan2(v - y, u - x) - ac; while (d > Math.PI) d -= 2 * Math.PI; while (d < -Math.PI) d += 2 * Math.PI; return d; });
       FX.fan = { a0: ac + Math.min(...ds) - .16, a1: ac + Math.max(...ds) + .16, len: Math.max(120, Math.max(...C.map(([u, v]) => Math.hypot(u - x, v - y))) * 1.25) }; }
-    const lv = FX.level * FX.vis; if (!FX.fan || lv < .01) return;
-    const { a0, a1, len } = FX.fan, [r, gg, b] = FX.rgb, rgba = a => `rgba(${r},${gg},${b},${a})`, t = now / 1000;
+    const [r, gg, b] = FX.rgb, rgba = a => `rgba(${r},${gg},${b},${a})`, t = now / 1000;
     g.globalCompositeOperation = 'lighter';
+    // 星星在板子後面：板子背光——板緣一圈柔光＋光絲只伸出板緣一小段（不擴散到螢幕邊）
+    const lvIn = FX.level * (1 - FX.vis);
+    if (lvIn > .01) {
+      g.save(); g.shadowColor = rgba(.9 * lvIn); g.shadowBlur = 26; g.fillStyle = rgba(.6 * lvIn); g.fillRect(L + 4, T + 4, Rr - L - 8, B - T - 8); g.restore();
+      for (const ry of FX.rays) {
+        const a = ry.u * 6.2832 + Math.sin(t * .5 + ry.ph) * .02, c = Math.cos(a), sn = Math.sin(a);
+        let d = Infinity; for (const v of [c > 0 ? (Rr - x) / c : c < 0 ? (L - x) / c : -1, sn > 0 ? (B - y) / sn : sn < 0 ? (T - y) / sn : -1]) if (v > 0 && v < d) d = v;
+        if (!isFinite(d)) continue;
+        const l = d + 15 + ry.lf * 33, ex = x + c * l, ey = y + sn * l, al = ry.a * 1.6 * lvIn * (RM_FX ? 1 : .55 + .45 * Math.sin(t * ry.sp + ry.ph));
+        const gr = g.createLinearGradient(x, y, ex, ey); gr.addColorStop(0, rgba(al)); gr.addColorStop(Math.min(.99, d / l), rgba(al * .9)); gr.addColorStop(1, rgba(0));
+        g.strokeStyle = gr; g.lineWidth = ry.w; g.beginPath(); g.moveTo(x, y); g.lineTo(ex, ey); g.stroke();
+      }
+    }
+    const lv = FX.level * FX.vis; if (!FX.fan || lv < .01) { g.globalCompositeOperation = 'source-over'; return; }
+    const { a0, a1, len } = FX.fan;
     // 柔和光錐：三層越來越窄、越來越亮，邊緣自然淡掉
     for (const [k, al] of [[1, .12], [.72, .14], [.42, .16]]) {
       const m = (a0 + a1) / 2, h = (a1 - a0) / 2 * k, gr = g.createRadialGradient(x, y, 0, x, y, len * .95);
@@ -786,28 +801,24 @@
   }
   // 開機那一刻決定板子貼哪邊、星圖往哪滑：板子貼星星的另一側，星圖整片橫移（camera.setViewOffset）讓星星落在板子旁邊的空位正中，
   // 光源與光束才不會被板子擋住；收起時滑回來。--dx/--dy＝星星（滑動前）相對板子中心的位移，板子從那裡飛出來
-  const VIEW = { cur: 0, target: 0, y: 0, ytarget: 0, last: 0 };   // cur/target：橫移（正＝星圖往左）；y/ytarget：直移（正＝星圖往上）
+  const VIEW = { cur: 0, target: 0, last: 0 };
   function slideView() {
     const now = performance.now(), dt = Math.min(.05, (now - (VIEW.last || now)) / 1000); VIEW.last = now;
-    if (VIEW.cur === VIEW.target && VIEW.cur === 0 && VIEW.y === VIEW.ytarget && VIEW.y === 0) return;
-    const k = Math.min(1, dt * (RM_FX ? 60 : 5));
-    VIEW.cur += (VIEW.target - VIEW.cur) * k; if (Math.abs(VIEW.target - VIEW.cur) < .3) VIEW.cur = VIEW.target;
-    VIEW.y += (VIEW.ytarget - VIEW.y) * k; if (Math.abs(VIEW.ytarget - VIEW.y) < .3) VIEW.y = VIEW.ytarget;
+    if (VIEW.cur === VIEW.target && VIEW.cur === 0) return;
+    VIEW.cur += (VIEW.target - VIEW.cur) * Math.min(1, dt * (RM_FX ? 60 : 5)); if (Math.abs(VIEW.target - VIEW.cur) < .3) VIEW.cur = VIEW.target;
     const w = el.gl.clientWidth, h = el.gl.clientHeight; if (!w || !h) return;
-    if (VIEW.cur === 0 && VIEW.y === 0) camera.clearViewOffset(); else camera.setViewOffset(w, h, VIEW.cur, VIEW.y, w, h);
+    if (VIEW.cur === 0) camera.clearViewOffset(); else camera.setViewOffset(w, h, VIEW.cur, 0, w, h);
   }
   function placeHolo() {
     FOLLOW.x = FOLLOW.y = 0; el.holo.style.setProperty('--fx', '0px'); el.holo.style.setProperty('--fy', '0px');
     const sp = litScreenPos(), sr = el.stage.getBoundingClientRect(), W = el.holo.offsetWidth;
     FOLLOW.on = !!sp && THREE_OK;
     if (!sp) { el.holo.style.left = ''; el.holo.style.removeProperty('--dx'); el.holo.style.setProperty('--dy', '40%'); return; }
-    // 貼左邊時讓開左上的讀數與按鈕欄
-    const hud = el.stage.querySelector('.tune-hud').getBoundingClientRect(), padL = Math.max(8, Math.round(hud.left - sr.left + 34 + 8));
-    const base = sp.x - sr.left + VIEW.cur, left = base > sr.width / 2;
-    const cxL = padL + W / 2, cxR = sr.width - 8 - W / 2, fzL = (padL + W + sr.width) / 2, fzR = (sr.width - 8 - W) / 2;   // 板子貼左／貼右時，星星該在的位置
-    const cx = left ? cxL : cxR, fz = left ? fzL : fzR;
+    // 貼星星的另一側（貼左時讓開左上的讀數與按鈕欄）
+    const b = holoBounds(), base = sp.x - sr.left + VIEW.cur, left = base > sr.width / 2;
+    const cx = left ? b.lo : b.hi, cxB = left ? b.hi : b.lo, fz = starZone(cx, W, sr.width);
     el.holo.style.left = cx + 'px';
-    Object.assign(FOLLOW, { cxA: cx, cxB: left ? cxR : cxL, fzA: fz, fzB: left ? fzR : fzL, az0: controls?.getAzimuthalAngle?.() || 0 });
+    Object.assign(FOLLOW, { base: cx, cxA: cx, cxB, fzA: fz, fzB: starZone(cxB, W, sr.width), az0: controls?.getAzimuthalAngle?.() || 0, drag: null });
     VIEW.target = THREE_OK ? Math.max(-sr.width * .6, Math.min(sr.width * .6, base - fz)) : 0;
     const hr = el.holo.getBoundingClientRect();
     el.holo.style.setProperty('--dx', (sp.x - hr.left - hr.width / 2).toFixed(1) + 'px'); el.holo.style.setProperty('--dy', (sp.y - hr.top - hr.height / 2).toFixed(1) + 'px');
@@ -815,23 +826,50 @@
   // 星圖與板子跟著星圖的轉角慢慢互換位置（2026-10-26 店主：星圖在左、視窗在右時，星圖慢慢飄向右、視窗慢慢飄向左，反之亦然）：
   // 開機時記下兩端——A＝現在這樣（板子貼一邊、星星在另一邊空位正中）、B＝左右對調——之後依星圖自轉／拖曳轉過的方位角，
   // u＝(1−cos 2Δ)/2 在 A、B 之間來回（轉 90° 換一次邊），板子照 u 平移、整片星圖用 view offset 把星星推到對應位置。
-  // 投影光要一直照著（店主）：換邊經過中間時，星星從板子上緣「拱」過去——星圖往上抬、板子往下沉一點，星星不會躲到板子後面，
-  // 光束從上方往下打到板子；w＝sin(πu) 在兩端是 0、正中間是 1
-  const FOLLOW = { on: false, az0: 0, cxA: 0, cxB: 0, fzA: 0, fzB: 0, x: 0, y: 0, last: 0 };
+  // 玩家可以拖曳板子（2026-10-26 店主）：抓板子上半（標頭＋封面；下半壓在搜尋列上，留給搜尋列點）拖到哪就停哪，
+  // 放開後以新位置當 A、左右鏡像當 B，照轉角繼續互換。拖曳中不推星圖
+  const FOLLOW = { on: false, az0: 0, base: 0, cxA: 0, cxB: 0, fzA: 0, fzB: 0, x: 0, y: 0, last: 0, drag: null };
+  function holoBounds() {
+    const sr = el.stage.getBoundingClientRect(), W = el.holo.offsetWidth, hud = el.stage.querySelector('.tune-hud').getBoundingClientRect();
+    return { sr, W, lo: Math.max(8, Math.round(hud.left - sr.left + 34 + 8)) + W / 2, hi: sr.width - 8 - W / 2 };   // 板子中心的左右界（左邊讓開按鈕欄）
+  }
+  // 板子中心在 cx 時，星星該在的位置：板子另一側空位的正中
+  const starZone = (cx, W, sw) => cx > sw / 2 ? (cx - W / 2) / 2 : (cx + W / 2 + sw) / 2;
   function followHolo() {
     const now = performance.now(), dt = Math.min(.05, (now - (FOLLOW.last || now)) / 1000); FOLLOW.last = now;
-    if (!FOLLOW.on || !controls?.getAzimuthalAngle || !el.holo.classList.contains('on') || el.holo.classList.contains('lift')) return;
+    if (!FOLLOW.on || FOLLOW.drag || !controls?.getAzimuthalAngle || !el.holo.classList.contains('on') || el.holo.classList.contains('lift')) return;
     const sp = litScreenPos(); if (!sp) return;
     const u = (1 - Math.cos(2 * (controls.getAzimuthalAngle() - FOLLOW.az0))) / 2, sr = el.stage.getBoundingClientRect();
-    const tx = (FOLLOW.cxB - FOLLOW.cxA) * u, star = FOLLOW.fzA + (FOLLOW.fzB - FOLLOW.fzA) * u;
+    const tx = FOLLOW.cxA + (FOLLOW.cxB - FOLLOW.cxA) * u - FOLLOW.base, star = FOLLOW.fzA + (FOLLOW.fzB - FOLLOW.fzA) * u;
     VIEW.target = Math.max(-sr.width * .6, Math.min(sr.width * .6, sp.x - sr.left + VIEW.cur - star));
-    const w = Math.sin(Math.PI * u), dip = 22 * w, top0 = el.holo.getBoundingClientRect().top - sr.top - FOLLOW.y;   // 板子沒沉時的上緣
-    const baseY = sp.y - sr.top + VIEW.y; VIEW.ytarget = Math.max(0, Math.min(sr.height * .8, w * (baseY - (top0 + dip - 20))));
-    const k = RM_FX ? 1 : Math.min(1, dt * 5);
-    FOLLOW.x += (tx - FOLLOW.x) * k; FOLLOW.y += (dip - FOLLOW.y) * k;
-    el.holo.style.setProperty('--fx', FOLLOW.x.toFixed(1) + 'px'); el.holo.style.setProperty('--fy', FOLLOW.y.toFixed(1) + 'px');
+    FOLLOW.x += (tx - FOLLOW.x) * (RM_FX ? 1 : Math.min(1, dt * 5));
+    el.holo.style.setProperty('--fx', FOLLOW.x.toFixed(1) + 'px');
   }
-  function hideHolo() { FOLLOW.on = false; holoCard = null; FX.target = 0; VIEW.target = 0; VIEW.ytarget = 0; clearTimeout(holoT); el.holo?.classList.remove('on', 'lift'); el.now?.classList.remove('is-tucked'); el.hint?.classList.remove('is-tucked'); }
+  function wireHoloDrag() {
+    const grab = e => {
+      if (!el.holo.classList.contains('on') || el.holo.classList.contains('lift') || (e.button && e.button !== 0)) return;
+      e.preventDefault(); e.stopPropagation();
+      const hr = el.holo.getBoundingClientRect(), sr = el.stage.getBoundingClientRect();
+      FOLLOW.drag = { id: e.pointerId, px: e.clientX, py: e.clientY, x: FOLLOW.x, y: FOLLOW.y, top0: hr.top - sr.top - FOLLOW.y };
+      e.currentTarget.setPointerCapture?.(e.pointerId); el.holo.classList.add('dragging');
+    };
+    const move = e => {
+      const d = FOLLOW.drag; if (!d || e.pointerId !== d.id) return;
+      const b = holoBounds(), rdB = el.readout.getBoundingClientRect().bottom - b.sr.top + 4;
+      FOLLOW.x = Math.max(b.lo - FOLLOW.base, Math.min(b.hi - FOLLOW.base, d.x + e.clientX - d.px));
+      FOLLOW.y = Math.max(rdB - d.top0, Math.min(b.sr.height * .2, d.y + e.clientY - d.py));
+      el.holo.style.setProperty('--fx', FOLLOW.x.toFixed(1) + 'px'); el.holo.style.setProperty('--fy', FOLLOW.y.toFixed(1) + 'px');
+    };
+    const drop = e => {
+      const d = FOLLOW.drag; if (!d || e.pointerId !== d.id) return; FOLLOW.drag = null; el.holo.classList.remove('dragging');
+      const b = holoBounds(), cxA = FOLLOW.base + FOLLOW.x, cxB = Math.max(b.lo, Math.min(b.hi, b.sr.width - cxA));
+      Object.assign(FOLLOW, { cxA, cxB, fzA: starZone(cxA, b.W, b.sr.width), fzB: starZone(cxB, b.W, b.sr.width), az0: controls?.getAzimuthalAngle?.() || 0 });
+    };
+    for (const n of [el.holo.querySelector('.tune-holo-hd'), el.holo.querySelector('.tune-holo-cv')]) {
+      n.addEventListener('pointerdown', grab); n.addEventListener('pointermove', move); n.addEventListener('pointerup', drop); n.addEventListener('pointercancel', drop);
+    }
+  }
+  function hideHolo() { FOLLOW.on = false; FOLLOW.drag = null; holoCard = null; FX.target = 0; VIEW.target = 0; clearTimeout(holoT); el.holo?.classList.remove('on', 'lift'); el.now?.classList.remove('is-tucked'); el.hint?.classList.remove('is-tucked'); }
   function setHoloUI() { el.holoBtn.setAttribute('aria-pressed', String(state.holo)); }
   function playPreview() {
     const c = previewCard; if (!c || !state.audioOn || !cfg.player) return;
@@ -945,6 +983,7 @@
       dx: host.querySelector('#tuneDx'), dy: host.querySelector('#tuneDy'), dz: host.querySelector('#tuneDz'), dcell: host.querySelector('#tuneDcell'), cellStrip: host.querySelector('#tuneCellStrip'),
       mode: host.querySelector('#tuneMode'), lever: host.querySelector('#tuneLever'), hint: host.querySelector('#tuneHint'), search: host.querySelector('#tuneSearch'), searchGo: host.querySelector('#tuneSearchGo'), sugg: host.querySelector('#tuneSugg'), swTop: host.querySelector('#tuneSwTop'), swBot: host.querySelector('#tuneSwBot'), ledTop: host.querySelector('#tuneLedTop'), ledBot: host.querySelector('#tuneLedBot'), draw: host.querySelector('#tuneDraw'), console: host.querySelector('#tuneConsole'), holo: host.querySelector('#tuneHolo'), fx: host.querySelector('#tuneHoloFx'), holoBtn: host.querySelector('#tuneHoloBtn') };
     trackViewport(host);
+    wireHoloDrag();
     el.back.onclick = () => cfg.onBack?.();
     // 喇叭鈕與站上頂欄的「自動試聽」開關是同一顆（2026-10-22 店主：切到串流後站上自動關掉網頁音源，
     // 頻率選歌就沒聲音，按喇叭也沒反應）。按下去先回寫站上的開關，再照新狀態開停。
