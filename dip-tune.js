@@ -123,8 +123,8 @@
    大小跟著星圖區（container query 的 cqh／cqw）一起縮放；直放時板子比星圖略大、往下衝出去壓到面板上緣（店主：衝破螢幕的感覺），
    橫放（面板在右邊）就收在星圖裡。板子不吃點擊，下面的搜尋列照常可以點；搜尋框有焦點時板子收起來。
    投影源是星圖裡那顆專輯星（2026-10-26 店主）：板子從星星飛出來長大、轉動時縮回星星。投影光照店主附圖做成柔光，不畫硬邊：
-   星星一團光暈＋一圈斷續光環、上百條極細光絲往板子方向扇開並伸出板子外緣、柔和光錐、沿光束往外飄的光點（.tune-holo-fx，2D canvas，
-   lighter 疊加，跟著星圖 render loop 每格畫）。光在板子後面；星星被板子擋住時光絲改成往四周放射，從板子邊緣透出來。
+   星星一團光暈＋一圈斷續光環、上百條極細光絲往板子方向扇開並伸出板子外緣、柔和光錐（不要噴發的光點，2026-10-26 店主）（.tune-holo-fx，2D canvas，
+   lighter 疊加，跟著星圖 render loop 每格畫）。光在板子後面；星星跑到板子後面時整束淡掉（從板後往四周噴光很怪，店主截圖），板子開著時暫停星圖自轉。
    直放板子寬 52cqw，開機時貼到星星的另一側，星圖同時整片橫移讓星星落在板子旁的空位，光源與光束才露得出來。 */
 .tune-stage{container-type:size}
 .tune-now,.tune-stage .tune-hint{transition:opacity .25s}.tune-now.is-tucked,.tune-stage .tune-hint.is-tucked{opacity:0;pointer-events:none}
@@ -133,8 +133,8 @@
 .tune-holo.lift{visibility:hidden}
 .tune-holo .fl{animation:tuneHoloFloat 5.2s ease-in-out infinite}
 .tune-holo .pw{position:relative;display:flex;flex-direction:column;align-items:center;transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0;filter:brightness(2.4);transition:transform .24s ease-in,opacity .2s ease-in .06s,filter .24s}
-.tune-holo.on .pw{transform:none;opacity:1;filter:none;animation:tuneHoloOn .65s cubic-bezier(.2,.8,.3,1) both}
-.tune-holo-scr{position:relative;width:100%;padding:5px 6px 6px;border:1px solid rgba(var(--rgb),.75);border-radius:9px;background:linear-gradient(165deg,rgba(var(--rgb),.2),rgba(var(--rgb),.05) 55%,rgba(var(--rgb),.14)),rgba(6,8,10,.62);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);box-shadow:0 0 8px rgba(var(--rgb),.55),0 0 26px rgba(var(--rgb),.28),0 22px 34px rgba(0,0,0,.5),inset 0 0 14px rgba(var(--rgb),.22);animation:tuneHoloFlicker 4.3s steps(1) infinite}
+.tune-holo.on .pw{transform:none;opacity:1;filter:none;animation:tuneHoloOn .6s cubic-bezier(.16,1,.3,1) both}
+.tune-holo-scr{position:relative;width:100%;padding:5px 6px 6px;border:1px solid rgba(var(--rgb),.75);border-radius:9px;background:linear-gradient(165deg,rgba(var(--rgb),.2),rgba(var(--rgb),.05) 55%,rgba(var(--rgb),.14)),rgba(6,8,10,.62);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);box-shadow:0 0 8px rgba(var(--rgb),.55),0 0 26px rgba(var(--rgb),.28),0 22px 34px rgba(0,0,0,.5),inset 0 0 14px rgba(var(--rgb),.22);animation:tuneHoloFlicker 4.3s steps(1) 1.2s infinite}
 .tune-holo-scr .cn{position:absolute;width:9px;height:9px;border:0 solid var(--cc);filter:drop-shadow(0 0 3px var(--cc))}
 .tune-holo-scr .cn:nth-child(1){left:-4px;top:-4px;border-width:2px 0 0 2px}.tune-holo-scr .cn:nth-child(2){right:-4px;top:-4px;border-width:2px 2px 0 0}
 .tune-holo-scr .cn:nth-child(3){left:-4px;bottom:-4px;border-width:0 0 2px 2px}.tune-holo-scr .cn:nth-child(4){right:-4px;bottom:-4px;border-width:0 2px 2px 0}
@@ -159,7 +159,7 @@
 .tune-holo-t span{font-size:11px;font-size:clamp(11px,3.6cqh,14px);letter-spacing:.08em;color:var(--cc);text-shadow:0 0 2px #000,0 0 4px #000,0 0 7px var(--cc)}
 .tune-holo-fx{position:absolute;left:0;top:0;width:100%;height:calc(100% + 30cqh);z-index:4;pointer-events:none}
 @keyframes tuneHoloFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-@keyframes tuneHoloOn{0%{transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0;filter:brightness(3)}10%{opacity:1}70%{transform:scale(1.03);filter:brightness(1.5)}100%{transform:none;filter:none}}
+@keyframes tuneHoloOn{0%{transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0;filter:brightness(2)}18%{opacity:1}100%{transform:none;filter:none}}
 @keyframes tuneHoloFlicker{0%{opacity:1}41%{opacity:.88}42%{opacity:1}77%{opacity:.94}78%{opacity:1}}
 @keyframes tuneHoloSheen{0%,55%{background-position:120% 0}100%{background-position:-120% 0}}
 @media (prefers-reduced-motion:reduce){.tune-holo .fl,.tune-holo-scr,.tune-holo-cv::after{animation:none}}
@@ -281,7 +281,7 @@
     camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100); camera.position.set(2.4, 1.7, 2.6);
     if (THREE.OrbitControls) {
       controls = new THREE.OrbitControls(camera, glc); controls.enableDamping = true; controls.dampingFactor = .08; controls.autoRotate = true; controls.autoRotateSpeed = .6; controls.minDistance = 1.6; controls.maxDistance = 7; controls.enablePan = false;
-      let idleT = 0; controls.addEventListener('start', () => { controls.autoRotate = false; clearTimeout(idleT); }); controls.addEventListener('end', () => { idleT = setTimeout(() => { controls.autoRotate = true; }, 6000); });
+      let idleT = 0; controls.addEventListener('start', () => { controls.autoRotate = false; clearTimeout(idleT); }); controls.addEventListener('end', () => { idleT = setTimeout(() => { controls.autoRotate = !holoCard; }, 6000); });
     }
     const S = c => [c.px / 50 - 1, -(c.py / 50 - 1), c.pz / 50 - 1];
     const pos = new Float32Array(N * 3); col = new Float32Array(N * 3); base = new Float32Array(N * 3);
@@ -714,7 +714,7 @@
   const holoSrc = u => u.replace(/(coverartarchive\.org\/release(?:-group)?\/[^/]+\/front)$/, '$1-500').replace(/\/\d+x\d+bb\./, '/600x600bb.');
   // 封面載好才開機（不然先閃一個 ♪ 再換圖）；卡池沒帶封面就等 settleCover 查到，2.5 秒還沒有就用 ♪ 開
   let holoT = 0; const HOLO_PH = '<div class="ph"><b style="font-size:3em;font-weight:400;letter-spacing:0">♪</b>NO COVER</div>';
-  function holoOn() { clearTimeout(holoT); if (!holoCard) return; placeHolo(); el.holo.classList.add('on'); FX.target = 1; el.now.classList.add('is-tucked'); el.hint.classList.add('is-tucked'); }
+  function holoOn() { clearTimeout(holoT); if (!holoCard || el.holo.classList.contains('on')) return; if (controls) controls.autoRotate = false; placeHolo(); el.holo.classList.add('on'); FX.target = 1; el.now.classList.add('is-tucked'); el.hint.classList.add('is-tucked'); }
   function holoFace(html) { el.holo.querySelector('.tune-holo-cv').innerHTML = html; }
   function setHoloCover(url) {
     const c = holoCard; if (!c) return;
@@ -733,17 +733,16 @@
     el.holo.querySelector('.tune-holo-ft .xyz').textContent = `E${fmt(c.x)} T${fmt(c.y)} W${fmt(c.z)}`;
     el.holo.querySelector('.tune-holo-ft .bars').innerHTML = [c.x, c.y, c.z].map(v => `<i style="height:${Math.round(20 + 80 * Math.max(0, Math.min(1, (v + 1) / 2)))}%"></i>`).join('') + '<i style="height:35%"></i><i style="height:70%"></i>';
     { const np = document.getElementById('tuneNp'), hn = document.getElementById('tuneHoloNp'); if (np && hn) { hn.innerHTML = np.innerHTML; hn.className = np.className; } }
-    el.holo.querySelector('b').textContent = c.card.album; el.holo.querySelector('.tune-holo-t span').textContent = c.card.artist;
+    el.holo.querySelector('.tune-holo-t b').textContent = c.card.album; el.holo.querySelector('.tune-holo-t span').textContent = c.card.artist;
     holoT = setTimeout(() => { if (holoCard === c && !el.holo.classList.contains('on')) { holoFace(HOLO_PH); holoOn(); } }, 2500);
     if (c.card.coverUrl) setHoloCover(c.card.coverUrl);
   }
-  // 投影光（柔光版）：光暈＋斷續光環＋上百條細光絲扇形伸出板子＋柔和光錐＋往外飄的光點；level 0→1 淡入淡出
-  const FX = { level: 0, target: 0, rgb: [94, 230, 240], rays: [], parts: [], t0: 0, last: 0, ctx: null, W: 0, H: 0 };
+  // 投影光（柔光版）：光暈＋斷續光環＋上百條細光絲扇形伸出板子＋柔和光錐；level 0→1 淡入淡出，vis＝星星有沒有露在板子外（被擋住就淡掉）
+  const FX = { level: 0, target: 0, vis: 0, rgb: [94, 230, 240], rays: [], last: 0, ctx: null, W: 0, H: 0, fan: null };
   const RM_FX = !!global.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
   function seedFx() {
-    const R = Math.random; FX.rays = []; FX.parts = [];
+    const R = Math.random; FX.rays = []; FX.fan = null;
     for (let i = 0; i < 140; i++) FX.rays.push({ u: R(), lf: .7 + R() * .6, a: .09 + R() * R() * .34, w: .5 + R() * 1.1, ph: R() * 6.28, sp: .6 + R() * 2.2 });
-    for (let i = 0; i < 46; i++) FX.parts.push({ u: R(), t: R(), v: .18 + R() * .4, r: .6 + R() * 1.4 });
   }
   function drawFx() {
     const cv = el.fx, now = performance.now(), dt = Math.min(.05, (now - (FX.last || now)) / 1000); FX.last = now;
@@ -754,16 +753,17 @@
     const sp = litScreenPos(); if (!sp || FX.level <= 0) return;
     const sr = el.stage.getBoundingClientRect(), q = el.holo.querySelector('.tune-holo-scr').getBoundingClientRect();
     const x = sp.x - sr.left, y = sp.y - sr.top, L = q.left - sr.left, T = q.top - sr.top, Rr = q.right - sr.left, B = q.bottom - sr.top;
-    const C = [[L, T], [Rr, T], [Rr, B], [L, B]], far = Math.max(...C.map(([u, v]) => Math.hypot(u - x, v - y)));
-    const inside = x > L - 4 && x < Rr + 4 && y > T - 4 && y < B + 4;
-    // 光絲的扇形：星星在板子外 → 涵蓋板子四角再寬一點；被板子擋住 → 往四周放射，從板邊透出來
-    let a0 = -Math.PI, a1 = Math.PI, len = Math.max(120, far * (inside ? 1.12 : 1.25));
+    const C = [[L, T], [Rr, T], [Rr, B], [L, B]];
+    const inside = x > L - 10 && x < Rr + 10 && y > T - 10 && y < B + 10;
+    FX.vis += ((inside ? 0 : 1) - FX.vis) * Math.min(1, dt * 6);
+    // 光絲的扇形：涵蓋板子四角再寬一點；星星躲進板子後面時沿用最後一次的扇形一起淡掉
     if (!inside) { const ac = Math.atan2((T + B) / 2 - y, (L + Rr) / 2 - x); const ds = C.map(([u, v]) => { let d = Math.atan2(v - y, u - x) - ac; while (d > Math.PI) d -= 2 * Math.PI; while (d < -Math.PI) d += 2 * Math.PI; return d; });
-      a0 = ac + Math.min(...ds) - .16; a1 = ac + Math.max(...ds) + .16; }
-    const [r, gg, b] = FX.rgb, rgba = a => `rgba(${r},${gg},${b},${a})`, lv = FX.level, t = (now - FX.t0) / 1000;
+      FX.fan = { a0: ac + Math.min(...ds) - .16, a1: ac + Math.max(...ds) + .16, len: Math.max(120, Math.max(...C.map(([u, v]) => Math.hypot(u - x, v - y))) * 1.25) }; }
+    const lv = FX.level * FX.vis; if (!FX.fan || lv < .01) return;
+    const { a0, a1, len } = FX.fan, [r, gg, b] = FX.rgb, rgba = a => `rgba(${r},${gg},${b},${a})`, t = now / 1000;
     g.globalCompositeOperation = 'lighter';
     // 柔和光錐：三層越來越窄、越來越亮，邊緣自然淡掉
-    if (!inside) for (const [k, al] of [[1, .12], [.72, .14], [.42, .16]]) {
+    for (const [k, al] of [[1, .12], [.72, .14], [.42, .16]]) {
       const m = (a0 + a1) / 2, h = (a1 - a0) / 2 * k, gr = g.createRadialGradient(x, y, 0, x, y, len * .95);
       gr.addColorStop(0, rgba(al * 3 * lv)); gr.addColorStop(.35, rgba(al * 1.2 * lv)); gr.addColorStop(1, rgba(0));
       g.fillStyle = gr; g.beginPath(); g.moveTo(x, y); g.arc(x, y, len * .95, m - h, m + h); g.closePath(); g.fill();
@@ -772,15 +772,8 @@
     for (const ry of FX.rays) {
       const a = a0 + ry.u * (a1 - a0) + Math.sin(t * .7 + ry.ph) * .012, l = len * ry.lf, ex = x + Math.cos(a) * l, ey = y + Math.sin(a) * l;
       const al = ry.a * lv * (RM_FX ? 1 : .55 + .45 * Math.sin(t * ry.sp + ry.ph));
-      const gr = g.createLinearGradient(x, y, ex, ey); gr.addColorStop(0, rgba(al)); gr.addColorStop(inside ? .78 : .5, rgba(al * (inside ? .75 : .55))); gr.addColorStop(1, rgba(0));
+      const gr = g.createLinearGradient(x, y, ex, ey); gr.addColorStop(0, rgba(al)); gr.addColorStop(.5, rgba(al * .55)); gr.addColorStop(1, rgba(0));
       g.strokeStyle = gr; g.lineWidth = ry.w; g.beginPath(); g.moveTo(x, y); g.lineTo(ex, ey); g.stroke();
-    }
-    // 沿光束往外飄的光點
-    if (!RM_FX) for (const pt of FX.parts) {
-      pt.t += pt.v * dt; if (pt.t > 1) { pt.t = 0; pt.u = Math.random(); }
-      const a = a0 + pt.u * (a1 - a0), d = len * .92 * pt.t, px = x + Math.cos(a) * d, py = y + Math.sin(a) * d, al = Math.sin(Math.PI * pt.t) * .85 * lv;
-      g.fillStyle = rgba(al * .45); g.beginPath(); g.arc(px, py, pt.r * 2, 0, 6.283); g.fill();
-      g.fillStyle = `rgba(255,255,255,${al * .8})`; g.beginPath(); g.arc(px, py, pt.r * .7, 0, 6.283); g.fill();
     }
     // 光源：光暈＋慢慢轉的斷續光環
     const gl = g.createRadialGradient(x, y, 0, x, y, 30); gl.addColorStop(0, `rgba(255,255,255,${.95 * lv})`); gl.addColorStop(.22, rgba(.85 * lv)); gl.addColorStop(.6, rgba(.22 * lv)); gl.addColorStop(1, rgba(0));
@@ -811,7 +804,7 @@
     const hr = el.holo.getBoundingClientRect();
     el.holo.style.setProperty('--dx', (sp.x - hr.left - hr.width / 2).toFixed(1) + 'px'); el.holo.style.setProperty('--dy', (sp.y - hr.top - hr.height / 2).toFixed(1) + 'px');
   }
-  function hideHolo() { holoCard = null; FX.target = 0; VIEW.target = 0; clearTimeout(holoT); el.holo?.classList.remove('on', 'lift'); el.now?.classList.remove('is-tucked'); el.hint?.classList.remove('is-tucked'); }
+  function hideHolo() { if (holoCard && controls) controls.autoRotate = true; holoCard = null; FX.target = 0; VIEW.target = 0; clearTimeout(holoT); el.holo?.classList.remove('on', 'lift'); el.now?.classList.remove('is-tucked'); el.hint?.classList.remove('is-tucked'); }
   function setHoloUI() { el.holoBtn.setAttribute('aria-pressed', String(state.holo)); }
   function playPreview() {
     const c = previewCard; if (!c || !state.audioOn || !cfg.player) return;
