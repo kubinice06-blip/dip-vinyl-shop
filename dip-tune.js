@@ -1037,33 +1037,24 @@
   // ── 示範影片劇本（2026-10-25 店主：錄一支示範影片，畫面要跟正式版一模一樣、像真的玩家在玩）──
   // 只有網址帶 ?demo=1 才會跑，一般玩家碰不到；全程用遊戲本身的轉輪動畫與按鈕，不加任何畫面元素。
   // 開法：網址帶 ?demo=1 時先點一下星圖（iOS 要一下手勢才准出聲）；或在左上角讀數 1.5 秒內連點三下。1 秒後開始：
-  //   宇多田ヒカル《First Love》→ 恍惚、沸騰各一張隨機經典盤 → Miles Davis《Kind of Blue》，每張試聽出聲後停 5 秒
+  //   宇多田ヒカル《First Love》→ Radiohead《Kid A》→ Linkin Park《Hybrid Theory》→ Miles Davis《Kind of Blue》，每張試聽出聲後停 5 秒
   //   → 按「就這張」→ 等結果頁出來 → 慢慢往下捲到串流按鈕停住。
   let demoRunning = false;
   async function runDemo(waitTap) {
     if (demoRunning) return; demoRunning = true;
     const wait = ms => new Promise(r => setTimeout(r, ms));
-    if (waitTap) await new Promise(r => el.stage.addEventListener('pointerdown', r, { once: true }));
+    if (waitTap) await new Promise(r => el.stage.addEventListener('pointerdown', r, { once: true, capture: true }));   // capture：點在懸浮封面上（它會攔下拖曳事件）也算
     try { cfg.onFirstGesture?.(state.audioOn); } catch (_) {}
     ensureAudio();
     await wait(1000);
-    const first = findCards('宇多田ヒカル first love')[0], last = findCards('miles davis kind of blue')[0];
-    // 中間兩站：恍惚、沸騰各抽一張經典盤（殿堂牌或經典度 5；不夠才放寬到 4），抽過的不重複（2026-10-26 店主）
-    const tried = new Set([first, last]);
-    const rand = cell => { const pool = lv => CARDS.filter(c => c.cell === cell && !tried.has(c) && (c.card.tier === 'hall' || (c.card.classic || 0) >= lv));
-      // 只挑試聽索引裡有 Apple 專輯的（appleAlbumUrl 有值），免得畫面閃過「這張沒有試聽」
-      const audible = list => { const ok = list.filter(c => cfg.player?.appleAlbumUrl?.(c.card.artist, c.card.album)); return ok.length ? ok : list; };
-      let list = audible(pool(5)); if (list.length < 5) list = audible(pool(4)); if (!list.length) list = CARDS.filter(c => c.cell === cell && !tried.has(c));
-      const c = list[Math.floor(Math.random() * list.length)]; tried.add(c); return c; };
+    // 四站固定（2026-10-26 店主：第二張改 Radiohead《Kid A》、第三張改 Linkin Park《Hybrid Theory》，取代恍惚／沸騰隨機經典盤）
+    const route = ['宇多田ヒカル first love', 'radiohead kid a', 'linkin park hybrid theory', 'miles davis kind of blue'].map(q => findCards(q)[0]).filter(Boolean);
     // 每一站：轉到位 → 等試聽真的出聲 → 再停 5 秒（2026-10-26 店主：試聽播放後 5 秒切換，原 3 秒）。
     // 回傳有沒有出聲；沒有試聽的卡 8 秒內等不到聲音就放棄
     const stop = async c => { if (!(await travelTo(c))) return null; const t0 = performance.now();
       while (audibleCard !== c && performance.now() - t0 < 8000 && !(performance.now() - t0 > 1500 && playing !== c)) await wait(100);
       const ok = audibleCard === c; await wait(ok ? 5000 : 600); return ok; };
-    if (first && (await stop(first)) === null) return;
-    // 隨機那兩張若剛好沒試聽，同格換一張再轉（最多試 3 次），每一站都有聲音
-    for (const cell of ['languid', 'boil']) for (let n = 0; n < 3; n++) { const r = await stop(rand(cell)); if (r === null) return; if (r) break; }
-    if (last && (await stop(last)) === null) return;
+    for (const c of route) if ((await stop(c)) === null) return;
     // 程式點擊不會出現 :active 的按下樣子，用同一組樣式按一下
     el.draw.classList.add('is-pressed'); await wait(140); el.draw.classList.remove('is-pressed');
     el.draw.click();
