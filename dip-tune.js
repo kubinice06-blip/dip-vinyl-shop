@@ -786,29 +786,35 @@
     for (let k = 0; k < 3; k++) { g.beginPath(); g.ellipse(x, y, 13, 13 * .55, 0, rot + k * 2.094, rot + k * 2.094 + 1.3); g.stroke(); }
     g.globalCompositeOperation = 'source-over';
   }
-  // 開機那一刻決定板子貼哪邊、星圖往哪滑：板子貼星星的另一側，星圖整片橫移（camera.setViewOffset）讓星星落在板子旁邊的空位正中，
-  // 光源與光束才不會被板子擋住；收起時滑回來。--dx/--dy＝星星（滑動前）相對板子中心的位移，板子從那裡飛出來
-  const VIEW = { cur: 0, target: 0, y: 0, ytarget: 0, last: 0 };   // cur/target：橫移（正＝星圖往左）；y/ytarget：直移（正＝星圖往上，目前都維持 0）
+  // 星圖的橫移與縮放（camera.setViewOffset、camera.zoom）都在 render loop 裡緩動；板子收起、縮回星星之後才回到原位原大小。
+  // --dx/--dy＝星星相對板子中心的位移：開機時板子從那裡飛出來、收起時縮回那裡
+  // cur/target：橫移（正＝星圖往左）；y/ytarget：直移（目前維持 0）；z/ztarget：星圖縮放（板子開著時退後一點，0.86）
+  const VIEW = { cur: 0, target: 0, y: 0, ytarget: 0, z: 1, ztarget: 1, last: 0, backT: 0, swayT: 0, zoomT: 0 };
   function slideView() {
     const now = performance.now(), dt = Math.min(.05, (now - (VIEW.last || now)) / 1000); VIEW.last = now;
-    if (VIEW.cur === VIEW.target && VIEW.cur === 0 && VIEW.y === VIEW.ytarget && VIEW.y === 0) return;
-    const k = Math.min(1, dt * (RM_FX ? 60 : 5));
+    if (VIEW.cur === VIEW.target && VIEW.cur === 0 && VIEW.y === VIEW.ytarget && VIEW.y === 0 && VIEW.z === VIEW.ztarget && VIEW.z === 1) return;
+    const k = Math.min(1, dt * (RM_FX ? 60 : 5)), kz = Math.min(1, dt * (RM_FX ? 60 : 3));
     VIEW.cur += (VIEW.target - VIEW.cur) * k; if (Math.abs(VIEW.target - VIEW.cur) < .3) VIEW.cur = VIEW.target;
     VIEW.y += (VIEW.ytarget - VIEW.y) * k; if (Math.abs(VIEW.ytarget - VIEW.y) < .3) VIEW.y = VIEW.ytarget;
+    VIEW.z += (VIEW.ztarget - VIEW.z) * kz; if (Math.abs(VIEW.ztarget - VIEW.z) < .002) VIEW.z = VIEW.ztarget;
     const w = el.gl.clientWidth, h = el.gl.clientHeight; if (!w || !h) return;
-    if (VIEW.cur === 0 && VIEW.y === 0) camera.clearViewOffset(); else camera.setViewOffset(w, h, VIEW.cur, VIEW.y, w, h);
+    camera.zoom = VIEW.z;
+    if (VIEW.cur === 0 && VIEW.y === 0) camera.clearViewOffset(); else camera.setViewOffset(w, h, VIEW.cur, VIEW.y, w, h);   // 兩者都會 updateProjectionMatrix
   }
   function placeHolo() {
     FOLLOW.x = FOLLOW.y = 0; el.holo.style.setProperty('--fx', '0px'); el.holo.style.setProperty('--fy', '0px');
     const sp = litScreenPos(), sr = el.stage.getBoundingClientRect(), W = el.holo.offsetWidth;
     FOLLOW.on = !!sp && THREE_OK;
     if (!sp) { el.holo.style.left = ''; el.holo.style.removeProperty('--dx'); el.holo.style.setProperty('--dy', '40%'); return; }
-    // 貼星星的另一側（貼左時讓開左上的讀數與按鈕欄）
-    const b = holoBounds(), base = sp.x - sr.left + VIEW.cur, left = base > sr.width / 2;
-    const cx = left ? b.lo : b.hi, cxB = left ? b.hi : b.lo, fz = starZone(cx, W, sr.width);
+    // 開機順序（2026-10-26 店主）：板子先直直彈到中間 → 星圖往後退一點（縮小）→ 才開始左右搖擺。
+    // 搖擺第一步往星星的另一側走（A），讓星星露出來；起點在 A、B 正中（ph0＝π/2）
+    const b = holoBounds(), cx = Math.max(b.lo, Math.min(b.hi, sr.width / 2)), starRight = sp.x - sr.left > sr.width / 2;
+    const cxA = starRight ? b.lo : b.hi, cxB = starRight ? b.hi : b.lo;
     el.holo.style.left = cx + 'px';
-    Object.assign(FOLLOW, { base: cx, cxA: cx, cxB, fzA: fz, fzB: starZone(cxB, W, sr.width), az0: controls?.getAzimuthalAngle?.() || 0, drag: null });
-    VIEW.target = THREE_OK ? Math.max(-sr.width * .6, Math.min(sr.width * .6, base - fz)) : 0;
+    Object.assign(FOLLOW, { base: cx, cxA, cxB, fzA: starZone(cxA, W, sr.width), fzB: starZone(cxB, W, sr.width), az0: null, ph0: Math.PI / 2, drag: null });
+    clearTimeout(VIEW.backT); clearTimeout(VIEW.zoomT); clearTimeout(VIEW.swayT);
+    VIEW.zoomT = setTimeout(() => { if (holoCard) VIEW.ztarget = .86; }, 350);
+    FOLLOW.t0 = performance.now() + 1000;
     const hr = el.holo.getBoundingClientRect();
     el.holo.style.setProperty('--dx', (sp.x - hr.left - hr.width / 2).toFixed(1) + 'px'); el.holo.style.setProperty('--dy', (sp.y - hr.top - hr.height / 2).toFixed(1) + 'px');
   }
@@ -818,7 +824,7 @@
   // 玩家可以拖曳板子（2026-10-26 店主）：抓板子上半（標頭＋封面；下半壓在搜尋列上，留給搜尋列點）拖到哪就停哪，
   // 拖的時候星圖照「左右相反方向飄」的同一套規則跟著動（店主）：板子往左拖，星圖緩緩往右飄，反之亦然，比例跟自動互換一樣
   // （星星位移＝板子位移 ×(fzB−fzA)/(cxB−cxA)，是負的）；上下拖星圖不動。放開後以現在的板子與星星位置當 A、左右鏡像當 B，照轉角繼續互換
-  const FOLLOW = { on: false, az0: 0, base: 0, cxA: 0, cxB: 0, fzA: 0, fzB: 0, x: 0, y: 0, last: 0, drag: null };
+  const FOLLOW = { on: false, az0: 0, ph0: 0, t0: 0, base: 0, cxA: 0, cxB: 0, fzA: 0, fzB: 0, x: 0, y: 0, last: 0, drag: null };
   function holoBounds() {
     const sr = el.stage.getBoundingClientRect(), W = el.holo.offsetWidth, hud = el.stage.querySelector('.tune-hud').getBoundingClientRect();
     return { sr, W, lo: Math.max(8, Math.round(hud.left - sr.left + 34 + 8)) + W / 2, hi: sr.width - 8 - W / 2 };   // 板子中心的左右界（左邊讓開按鈕欄）
@@ -828,8 +834,10 @@
   function followHolo() {
     const now = performance.now(), dt = Math.min(.05, (now - (FOLLOW.last || now)) / 1000); FOLLOW.last = now;
     if (!FOLLOW.on || FOLLOW.drag || !controls?.getAzimuthalAngle || !el.holo.classList.contains('on') || el.holo.classList.contains('lift')) return;
+    if (now < FOLLOW.t0) return;   // 彈到中間、星圖退後之後才開始搖擺
     const sp = litScreenPos(); if (!sp) return;
-    const u = (1 - Math.cos(2 * (controls.getAzimuthalAngle() - FOLLOW.az0))) / 2, sr = el.stage.getBoundingClientRect();
+    const az = controls.getAzimuthalAngle(); if (FOLLOW.az0 === null) FOLLOW.az0 = az;
+    const u = (1 - Math.cos(2 * (az - FOLLOW.az0) + FOLLOW.ph0)) / 2, sr = el.stage.getBoundingClientRect();
     const tx = FOLLOW.cxA + (FOLLOW.cxB - FOLLOW.cxA) * u - FOLLOW.base, star = FOLLOW.fzA + (FOLLOW.fzB - FOLLOW.fzA) * u;
     VIEW.target = Math.max(-sr.width * .6, Math.min(sr.width * .6, sp.x - sr.left + VIEW.cur - star));
     FOLLOW.x += (tx - FOLLOW.x) * (RM_FX ? 1 : Math.min(1, dt * 5));
@@ -856,13 +864,17 @@
       const d = FOLLOW.drag; if (!d || e.pointerId !== d.id) return; FOLLOW.drag = null; el.holo.classList.remove('dragging');
       const b = holoBounds(), cxA = FOLLOW.base + FOLLOW.x, cxB = Math.max(b.lo, Math.min(b.hi, b.sr.width - cxA));
       const fzA = d.star + d.ratio * (FOLLOW.x - d.x);   // 星星最後該停的位置（星圖可能還在飄），B 端左右鏡像
-      Object.assign(FOLLOW, { cxA, cxB, fzA, fzB: b.sr.width - fzA, az0: controls?.getAzimuthalAngle?.() || 0 });
+      Object.assign(FOLLOW, { cxA, cxB, fzA, fzB: b.sr.width - fzA, az0: controls?.getAzimuthalAngle?.() || 0, ph0: 0, t0: 0 });
     };
     for (const n of [el.holo.querySelector('.tune-holo-hd'), el.holo.querySelector('.tune-holo-cv')]) {
       n.addEventListener('pointerdown', grab); n.addEventListener('pointermove', move); n.addEventListener('pointerup', drop); n.addEventListener('pointercancel', drop);
     }
   }
-  function hideHolo() { FOLLOW.on = false; FOLLOW.drag = null; holoCard = null; FX.target = 0; VIEW.target = 0; VIEW.ytarget = 0; clearTimeout(holoT); el.holo?.classList.remove('on', 'lift'); el.now?.classList.remove('is-tucked'); el.hint?.classList.remove('is-tucked'); }
+  function hideHolo() {
+    // 縮回「現在」星星的位置；縮完（0.25 秒）星圖才回到原位、原大小
+    if (el.holo?.classList.contains('on')) { const sp = litScreenPos(), hr = el.holo.getBoundingClientRect(); if (sp) { el.holo.style.setProperty('--dx', (sp.x - hr.left - hr.width / 2).toFixed(1) + 'px'); el.holo.style.setProperty('--dy', (sp.y - hr.top - hr.height / 2).toFixed(1) + 'px'); } }
+    if (holoCard || el.holo?.classList.contains('on')) { clearTimeout(VIEW.backT); clearTimeout(VIEW.zoomT); VIEW.backT = setTimeout(() => { if (!holoCard || !el.holo.classList.contains('on')) { VIEW.target = 0; VIEW.ytarget = 0; VIEW.ztarget = 1; } }, 250); }
+    FOLLOW.on = false; FOLLOW.drag = null; holoCard = null; FX.target = 0; clearTimeout(holoT); el.holo?.classList.remove('on', 'lift'); el.now?.classList.remove('is-tucked'); el.hint?.classList.remove('is-tucked'); }
   function setHoloUI() { el.holoBtn.setAttribute('aria-pressed', String(state.holo)); }
   function playPreview() {
     const c = previewCard; if (!c || !state.audioOn || !cfg.player) return;
