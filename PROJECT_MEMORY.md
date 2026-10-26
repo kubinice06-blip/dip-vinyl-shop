@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-26｜dip-vinyl-shop｜示範劇本：中間兩站改為恍惚、沸騰各一張經典盤
+
+- **改動**：店主「兩個隨機，一個選恍惚、一個選沸騰，經典一點的專輯，一共四張」。`runDemo` 中間兩站改成 `rand('languid')`、`rand('boil')`：該格裡殿堂牌或經典度 5（不足 5 張才放寬到 4），且只挑 `DipPlayer.appleAlbumUrl()` 有值（試聽索引有 Apple 專輯）的，免得畫面閃過「這張沒有試聽」；萬一還是沒聲音，同格換一張（最多 3 次）。整支四張：First Love → 恍惚經典 → 沸騰經典 → Kind of Blue。`dip-tune.js?v=25`。
+- **主要檔案**：`dip-tune.js`、`index.html`
+- **驗證**：本機 Chromium 跑 5 次：恍惚站 Panda Bear《Person Pitch》、Deerhunter《Halcyon Digest》、Muddy Waters、Galaxie 500《On Fire》、The Verve《Urban Hymns》；沸騰站 Thin Lizzy、Cornelius《Fantasma》、Weezer《Pinkerton》、Arctic Monkeys；加上試聽索引篩選後 3 次 0 次「沒有試聽」；0 頁面錯誤。
+
 ### 2026-10-25｜dip-vinyl-shop｜示範劇本：試聽出聲後停 5 秒才換下一張
 
 - **改動**：店主「試聽出現後 5 秒換下一張專輯」。`runDemo` 每站出聲後的停留 2 秒 → 5 秒（沒試聽的隨機卡仍 0.6 秒就換）。`dip-tune.js?v=24`。
