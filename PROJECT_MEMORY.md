@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-27｜dip-vinyl-shop｜懸浮封面：補上縮回星星的動畫
+
+- **改動**：店主「少了一個專輯視窗縮回去的動畫，有彈出來，沒有縮回去」。原因：收起時拿掉 `.on`，`.pw` 的開機動畫跟著拿掉，瀏覽器直接跳到隱藏狀態，原本寫的 transition 不會從動畫最後一格起算，所以瞬間消失。改成 `hideHolo` 拿掉 `.on` 的同時加 `.closing`，跑 `tuneHoloOff`（0.32 秒 ease-in，縮到 `--dx/--dy`＝現在星星的位置、最後 30% 淡出）；`holoOn` 重新開機時拿掉 `.closing`。就這張放大（`.lift`）時板子已藏起來，不加。`dip-tune.js?v=51`。
+- **主要檔案**：`dip-tune.js`、`index.html`
+- **驗證**：`node --check` 過；本機 Playwright（iPhone 13）轉輪子後逐格量 `.pw`：class 為 closing、寬度 176→125px 縮小後消失；之後停下來重新開機正常；無 pageerror。
+
 ### 2026-10-26｜dip-vinyl-shop｜懸浮封面：星圖退後與板子彈出同時開始
 
 - **改動**：店主「是要視窗彈出來的同時星圖往後退，不是彈出來後才往後退」。拿掉 `placeHolo` 裡延遲 350 毫秒才設 `VIEW.ztarget=.86` 的計時，改成開機同一格就設；`slideView` 縮放緩動在「退後」方向加快到 `dt*6`（與板子彈出的 ease-out 同步、前段最快），回到原大小維持 `dt*3`。`dip-tune.js?v=50`。

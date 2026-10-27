@@ -135,6 +135,9 @@
 .tune-holo .fl{animation:tuneHoloFloat 5.2s ease-in-out infinite}
 .tune-holo .pw{position:relative;display:flex;flex-direction:column;align-items:center;transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0;transition:transform .24s ease-in,opacity .2s ease-in .06s}
 .tune-holo.on .pw{transform:none;opacity:1;transition:none;animation:tuneHoloOn .6s cubic-bezier(.16,1,.3,1) both}
+/* 收起：拿掉 .on 的同時換上 .closing 跑縮回星星的動畫（2026-10-27 店主：有彈出、沒有縮回）。
+   只靠 transition 不行：.on 的開機動畫一拿掉，瀏覽器就直接跳到隱藏狀態，不會從動畫的最後一格起算過渡 */
+.tune-holo.closing .pw{animation:tuneHoloOff .32s cubic-bezier(.55,0,.9,.45) both}
 .tune-holo-scr{position:relative;width:100%;padding:5px 6px 6px;border:1px solid rgba(var(--rgb),.75);border-radius:9px;background:linear-gradient(165deg,rgba(var(--rgb),.2),rgba(var(--rgb),.05) 55%,rgba(var(--rgb),.14)),rgba(6,8,10,.7);box-shadow:0 0 8px rgba(var(--rgb),.55),0 0 26px rgba(var(--rgb),.28),0 22px 34px rgba(0,0,0,.5),inset 0 0 14px rgba(var(--rgb),.22)}
 .tune-holo-scr .cn{position:absolute;width:9px;height:9px;border:0 solid var(--cc);filter:drop-shadow(0 0 3px var(--cc))}
 .tune-holo-scr .cn:nth-child(1){left:-4px;top:-4px;border-width:2px 0 0 2px}.tune-holo-scr .cn:nth-child(2){right:-4px;top:-4px;border-width:2px 2px 0 0}
@@ -163,6 +166,7 @@
 .tune-holo-t span{font-size:11px;font-size:clamp(11px,3.6cqh,14px);letter-spacing:.08em;color:var(--cc);text-shadow:0 0 2px #000,0 0 4px #000,0 0 7px var(--cc)}
 .tune-holo-fx{position:absolute;left:0;top:0;width:100%;height:calc(100% + 30cqh);z-index:4;pointer-events:none}
 @keyframes tuneHoloFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes tuneHoloOff{0%{transform:none;opacity:1}70%{opacity:1}100%{transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0}}
 @keyframes tuneHoloOn{0%{transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0}18%{opacity:1}100%{transform:none}}
 @keyframes tuneHoloGlitch{0%,100%{transform:none;filter:none}
 86%{transform:translateX(-5px) skewX(-7deg);filter:drop-shadow(3px 0 rgba(255,40,90,.75)) drop-shadow(-3px 0 rgba(40,230,255,.75))}
@@ -723,7 +727,7 @@
   const holoSrc = u => u.replace(/(coverartarchive\.org\/release(?:-group)?\/[^/]+\/front)$/, '$1-500').replace(/\/\d+x\d+bb\./, '/600x600bb.');
   // 封面載好才開機（不然先閃一個 ♪ 再換圖）；卡池沒帶封面就等 settleCover 查到，4 秒還沒有就用 ♪ 開
   let holoT = 0; const HOLO_PH = '<div class="ph"><b style="font-size:3em;font-weight:400;letter-spacing:0">♪</b>NO COVER</div>';
-  function holoOn() { clearTimeout(holoT); if (!holoCard || el.holo.classList.contains('on')) return; placeHolo(); el.holo.classList.add('on'); FX.target = 1; el.now.classList.add('is-tucked'); el.hint.classList.add('is-tucked'); }
+  function holoOn() { clearTimeout(holoT); if (!holoCard || el.holo.classList.contains('on')) return; placeHolo(); el.holo.classList.remove('closing'); el.holo.classList.add('on'); FX.target = 1; el.now.classList.add('is-tucked'); el.hint.classList.add('is-tucked'); }
   function holoFace(html) { el.holo.querySelector('.tune-holo-cv').innerHTML = html; }
   function setHoloCover(url) {
     const c = holoCard; if (!c) return;
@@ -888,7 +892,9 @@
     // 縮回「現在」星星的位置；縮完（0.25 秒）星圖才回到原位、原大小
     if (el.holo?.classList.contains('on')) { const sp = litScreenPos(), hr = el.holo.getBoundingClientRect(); if (sp) { el.holo.style.setProperty('--dx', (sp.x - hr.left - hr.width / 2).toFixed(1) + 'px'); el.holo.style.setProperty('--dy', (sp.y - hr.top - hr.height / 2).toFixed(1) + 'px'); } }
     if (holoCard || el.holo?.classList.contains('on')) { clearTimeout(VIEW.backT); clearTimeout(VIEW.zoomT); VIEW.backT = setTimeout(() => { if (!holoCard || !el.holo.classList.contains('on')) { VIEW.target = 0; VIEW.ytarget = 0; VIEW.ztarget = 1; } }, 250); }
-    FOLLOW.on = false; FOLLOW.drag = null; holoCard = null; FX.target = 0; clearTimeout(holoT); el.holo?.classList.remove('on', 'lift'); el.now?.classList.remove('is-tucked'); el.hint?.classList.remove('is-tucked'); }
+    FOLLOW.on = false; FOLLOW.drag = null; holoCard = null; FX.target = 0; clearTimeout(holoT);
+    if (el.holo?.classList.contains('on') && !el.holo.classList.contains('lift')) el.holo.classList.add('closing');   // 就這張放大時（lift）板子已藏起來，不用縮
+    el.holo?.classList.remove('on', 'lift'); el.now?.classList.remove('is-tucked'); el.hint?.classList.remove('is-tucked'); }
   function setHoloUI() { el.holoBtn.setAttribute('aria-pressed', String(state.holo)); }
   function playPreview() {
     const c = previewCard; if (!c || !state.audioOn || !cfg.player) return;
