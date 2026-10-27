@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-27｜dip-vinyl-shop｜情緒三軸：店主點三張改判＋曲風偏誤重判 2,516 張（315 張換格）；Bandana 串流連結與封面換回正常版
+
+- **改動**：
+  - 店主實機抓到三張歸錯：鳳飛飛《掌聲響起》→雀躍、Akinmusire《The Imagined Savior Is Far Easier to Paint》→暴躁、Mulatu Astatke《Ethio Jazz》→冷冽（寫進 `data/mood/overrides.json`，why 標店主）。原因：模型評分時就落靜（只看同名抒情主打／把安靜稀疏當靜／把中速 groove 當放鬆），之後幾輪重判都沒動到。
+  - `batch-progress/mood-axes/bias-rejudge/`：挑「主曲風爵士且在靜」1,727＋「中日韓文字名且在靜」789，8 支代理照 BRIEF 重判，`merge.mjs` 寫進 overrides、`build-card-moods.mjs` 重建。315 張換格：平靜→冷冽 151、放鬆→雀躍 109、頹靡→暴躁 25 等，細節見 `rulings.md`。八格：放鬆 5,119、平靜 782、恍惚 1,687、頹靡 1,611、雀躍 6,009、冷冽 1,783、沸騰 2,070、暴躁 2,833。
+  - Freddie Gibbs & Madlib《Bandana》：串流連結與封面是純音樂版《Bandana Beats》。KV `cover6:freddie gibbs & madlib|bandana` 的 spotifyUrl 改回 `31KbO7WnDp2AjPdmRTJzdf`（原 `4xW2Bxaor…` 是 Bandana Beats），Firestore `card_catalog` coverUrl 改回 Apple 1464243671 正常版封面。成因：10-21 `kv-spotify-link-repair.mjs` 走 MB 補連結時取「release-group 底下第一個有 Spotify 連結的發行版」，MB 把 Bandana Beats 歸在同一個 release-group。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/bias-rejudge/`、`batch-progress/mood-axes/rulings.md`；KV、card_catalog 各一筆
+- **驗證**：merge 8/8 份完整、315 筆全套用；build-card-moods 錨點 104/104 同格；抽 40 筆人工看換格理由合理。Bandana：worker `/spotify-search` 回新連結、card_catalog 讀回新封面。
+
 ### 2026-10-27｜dip-vinyl-shop｜頻率光譜：IG／Threads 內建瀏覽器往下轉輪子會關掉頁面——防誤關
 
 - **改動**：店主「用 IG 或 Threads 內建瀏覽器會無法往下轉旋鈕，往下滑的手勢預設是把內建瀏覽器關閉」。iOS 這類內建瀏覽器在頁面捲在最頂端時，往下拉＝關閉；頻率光譜整頁剛好一個螢幕高、永遠在頂端，所以往下轉輪子就被關掉。
