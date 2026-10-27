@@ -234,6 +234,8 @@
 .tune-sg[aria-selected="true"],.tune-sg:hover{background:rgba(255,211,77,.12)}
 .tune-sg[aria-selected="true"] .b{color:#ffd34d;text-shadow:0 0 5px rgba(255,211,77,.5)}
 .tune-sugg .none{padding:10px;font-size:11px;color:#8d9478}
+/* iOS 內建瀏覽器防誤關（見 inappLock）：主機畫面上方墊一段，頁面捲到這段下面就不在頂端 */
+html.tune-inapp-lock body{padding-top:120px}
 /* 頻率選歌開著時，頁面底色跟面板同色（不再露出白邊） */
 #tuneModal.open:has(> #tuneApp:not([hidden])),body:has(#tuneModal.open > #tuneApp:not([hidden])){background:#2c3037}
 `;
@@ -1084,15 +1086,40 @@
     await new Promise(r => { const step = now => { const u = Math.min(1, (now - t0) / 1400), e = u < .5 ? 2 * u * u : 1 - Math.pow(-2 * u + 2, 2) / 2; global.scrollTo(0, y0 + (y1 - y0) * e); if (u < 1) requestAnimationFrame(step); else r(); }; requestAnimationFrame(step); });
   }
 
+  // ── IG／Threads／FB／LINE 的 iOS 內建瀏覽器（2026-10-27 店主：往下轉輪子會把內建瀏覽器整個關掉）──
+  // 這些內建瀏覽器在「頁面捲在最頂端」時，往下拉的手勢會被當成「關閉」。頻率光譜整頁剛好一個螢幕高、不能捲，永遠在頂端，
+  // 所以手指往下轉輪子就被關掉。解法：只在這些內建瀏覽器、且頻率光譜主機畫面開著時，頁面上方墊 120px 並捲到 120，
+  // 讓頁面「不在頂端」；同時擋掉頁面本身的捲動（touchmove preventDefault，搜尋結果清單除外），手指拖曳只會轉輪子／轉星圖。
+  // 結果頁（可捲的長頁）不鎖。
+  const UA = global.navigator?.userAgent || '';
+  const IOS_INAPP = /iPhone|iPad|iPod/.test(UA) && /Instagram|Barcelona|FBAN|FBAV|FB_IAB|Line\//i.test(UA);
+  const LOCK_PAD = 120;
+  let lockOn = false, lockWired = false;
+  function inappLock(on) {
+    if (!IOS_INAPP || on === lockOn) return; lockOn = on;
+    document.documentElement.classList.toggle('tune-inapp-lock', on);
+    if (on) requestAnimationFrame(() => global.scrollTo(0, LOCK_PAD));
+  }
+  function syncInappLock() {
+    if (!IOS_INAPP) return; const host = cfg.host?.(); if (!host) return;
+    if (!lockWired) {
+      lockWired = true;
+      new MutationObserver(syncInappLock).observe(host, { attributes: true, attributeFilter: ['hidden'] });
+      document.addEventListener('touchmove', e => { if (lockOn && !e.target.closest?.('.tune-sugg')) e.preventDefault(); }, { passive: false });
+      global.addEventListener('scroll', () => { if (lockOn && global.scrollY < LOCK_PAD - 2) global.scrollTo(0, LOCK_PAD); }, { passive: true });
+    }
+    inappLock(state.visible && !host.hidden);
+  }
   async function start() {
     state.visible = true;
+    syncInappLock();
     syncAudioFromPref();
     // 建不起來時把原因寫在畫面上（2026-10-24 店主：加到主畫面的 App 點進來一片空白，現場看不到錯誤）
     if (!state.built) { try { await build(); } catch (e) { console.error('[tune]', e); const host = cfg.host?.(), msg = host?.querySelector('#tuneMsg'), text = '頻率光譜載入失敗：' + (e?.message || e);
       if (msg) { msg.hidden = false; msg.textContent = text; } else if (host) host.innerHTML = `<p style="margin:0;padding:24px;min-height:50vh;background:#0b0c10;color:#e9e2c8">${esc(text)}</p>`; } }
     else { setAudioUI(); el.draw.disabled = false; hideHolo(); if (previewCard) armPreview(); }   // 從結果頁回來：全像板重新開機（放大時藏起來了）
   }
-  function stop() { state.visible = false; cancelTravel(); stopPreview(); sfxStop(); hideHolo(); }
+  function stop() { state.visible = false; cancelTravel(); stopPreview(); sfxStop(); hideHolo(); inappLock(false); }
 
   global.DipTune = { configure, start, stop, pickAgain, setAudio, litScreenPos, warpStart, CELL_COLOR, get state() { return state; } };
 })(window);
