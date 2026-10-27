@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-27｜dip-vinyl-shop｜頻率光譜：IG／Threads 內建瀏覽器往下轉輪子會關掉頁面——防誤關
+
+- **改動**：店主「用 IG 或 Threads 內建瀏覽器會無法往下轉旋鈕，往下滑的手勢預設是把內建瀏覽器關閉」。iOS 這類內建瀏覽器在頁面捲在最頂端時，往下拉＝關閉；頻率光譜整頁剛好一個螢幕高、永遠在頂端，所以往下轉輪子就被關掉。
+  - 只在 iOS 且 UA 含 `Instagram|Barcelona（Threads）|FBAN|FBAV|FB_IAB|Line/`、頻率光譜主機畫面開著時（`state.visible && !host.hidden`，MutationObserver 監看 host 的 hidden）啟用 `inappLock`：`html.tune-inapp-lock body{padding-top:120px}` 並捲到 120，頁面不在頂端；`touchmove` 一律 preventDefault（`.tune-sugg` 搜尋清單除外），`scroll` 若被捲回 < 118 就再捲回 120。結果頁（長頁）與 `stop()` 時解鎖。一般瀏覽器不受影響。
+  - `dip-tune.js?v=52`。
+- **主要檔案**：`dip-tune.js`、`index.html`
+- **驗證**：`node --check` 過；本機 Playwright（iPhone 13＋IG UA）：主機畫面上鎖、scrollY 120、星圖頂端與面板底部位置不變（0／664）、觸控往下拖輪子讀數有變；就這張→結果頁解鎖 scrollY 0；回去轉頻率重新上鎖。一般 Safari UA 完全不上鎖。**實際 IG／Threads 內建瀏覽器的關閉手勢只能店主實機驗證。**
+
 ### 2026-10-27｜dip-vinyl-shop｜懸浮封面：補上縮回星星的動畫
 
 - **改動**：店主「少了一個專輯視窗縮回去的動畫，有彈出來，沒有縮回去」。原因：收起時拿掉 `.on`，`.pw` 的開機動畫跟著拿掉，瀏覽器直接跳到隱藏狀態，原本寫的 transition 不會從動畫最後一格起算，所以瞬間消失。改成 `hideHolo` 拿掉 `.on` 的同時加 `.closing`，跑 `tuneHoloOff`（0.32 秒 ease-in，縮到 `--dx/--dy`＝現在星星的位置、最後 30% 淡出）；`holoOn` 重新開機時拿掉 `.closing`。就這張放大（`.lift`）時板子已藏起來，不加。`dip-tune.js?v=51`。
