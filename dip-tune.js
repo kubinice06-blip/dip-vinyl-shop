@@ -927,7 +927,7 @@ html.tune-inapp-lock body{padding-top:120px}
     const path = svg.querySelector('#tuneRibPath');
     path.setAttribute('d', `M${x0 + r} ${y0}L${x1 - r} ${y0}A${r} ${r} 0 0 1 ${x1} ${y0 + r}L${x1} ${y1 - r}A${r} ${r} 0 0 1 ${x1 - r} ${y1}L${x0 + r} ${y1}A${r} ${r} 0 0 1 ${x0} ${y1 - r}L${x0} ${y0 + r}A${r} ${r} 0 0 1 ${x0 + r} ${y0}Z`);
     RIB.L = path.getTotalLength();
-    const n = Math.max(4, Math.round(RIB.L / 40)); RIB.unit = RIB.L / n;   // 一組「洋流」約 40px：兩個字 2×14 加間隔
+    const n = Math.max(4, Math.round(RIB.L / 30)); RIB.unit = RIB.L / n;   // 一組「洋流」約 30px：兩個字 2×14＋2px，組跟組幾乎相連（店主：再緊湊一點）
     const g = svg.querySelector('.glyphs'); g.textContent = ''; RIB.glyphs = [];
     for (let u = 0; u < n; u++) for (const [ch, d] of [['洋', 0], ['流', 14]]) {
       const t = document.createElementNS('http://www.w3.org/2000/svg', 'text'); t.textContent = ch; g.appendChild(t); RIB.glyphs.push({ t, s: u * RIB.unit + d }); }
