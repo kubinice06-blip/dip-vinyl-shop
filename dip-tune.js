@@ -93,7 +93,7 @@
     card: { artist: '沈伯洋', album: '台北順起來', sub: '沈伯洋 × 吳蓓雅、周自從', alias: 'puma shen 洋流 順起來 吳蓓雅 周自從',
       coverUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e8/2b/6b/e82b6b0f-862a-8b45-25d4-f42886afb7b9/4711548170006.png/600x600bb.png',
       previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b9/79/a7/b979a719-c219-eb16-e2da-f52716662c63/mzaf_3746502855888154192.plus.aac.p.m4a',
-      appleUrl: 'https://music.apple.com/tw/album/6825287656?i=6825288172' },
+      appleUrl: 'https://music.apple.com/tw/album/6825287656?i=6825288172', link: 'https://puma.taipei/heart-island' },
     pos: { x: 3.6, y: 0.2, z: 0.9, px: 80, py: 38, pz: 86 },
   };
 
@@ -179,16 +179,16 @@
 .tune-holo-t span{font-size:11px;font-size:clamp(11px,3.6cqh,14px);letter-spacing:.08em;color:var(--cc);text-shadow:0 0 2px #000,0 0 4px #000,0 0 7px var(--cc)}
 .tune-holo-fx{position:absolute;left:0;top:0;width:100%;height:calc(100% + 30cqh);z-index:4;pointer-events:none}
 @keyframes tuneHoloFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-/* 彩蛋：洋流飄帶邊框（取代發光細框），橘色 */
-.tune-holo-rib{position:absolute;left:-6px;top:-6px;width:calc(100% + 12px);height:calc(100% + 12px);overflow:visible;pointer-events:none;display:none;z-index:3}
+/* 彩蛋：洋流飄帶邊框（店主附實物照：橘色帶子、兩側黑白小方塊、中間白底黑字「洋流」），繞著板子一直跑 */
+.tune-holo-rib{position:absolute;left:-14px;top:-14px;width:calc(100% + 28px);height:calc(100% + 28px);overflow:visible;pointer-events:none;display:none;z-index:3;filter:drop-shadow(0 0 6px rgba(var(--rgb),.55))}
 .tune-holo.egg .tune-holo-rib{display:block}
-.tune-holo.egg .tune-holo-scr{border-color:rgba(var(--rgb),.18)}
-.tune-holo-rib path{fill:none;stroke-linecap:round;filter:drop-shadow(0 0 3px rgba(var(--rgb),.9))}
-.tune-holo-rib .r1{stroke:rgb(var(--rgb));stroke-width:1.6;stroke-dasharray:180 70 40 60 120 530;animation:tuneRib 7s linear infinite}
-.tune-holo-rib .r2{stroke:#ffd29a;stroke-width:1;stroke-dasharray:90 40 260 610;animation:tuneRib 11s linear infinite reverse;opacity:.85}
-.tune-holo-rib .r3{stroke:rgba(var(--rgb),.6);stroke-width:2.4;stroke-dasharray:300 700;animation:tuneRib 9s linear infinite;opacity:.55}
-@keyframes tuneRib{to{stroke-dashoffset:-1000}}
-@media (prefers-reduced-motion:reduce){.tune-holo-rib path{animation:none}}
+.tune-holo.egg .tune-holo-scr{border-color:transparent}
+.tune-holo.egg .tune-holo-scr .cn{display:none}
+.tune-holo-rib path{fill:none}
+.tune-holo-rib .band{stroke:#ff5a14;stroke-width:16}
+.tune-holo-rib .tick{stroke:#16120f;stroke-width:16;stroke-dasharray:3 3}
+.tune-holo-rib .core{stroke:#fbf7f0;stroke-width:10}
+.tune-holo-rib text{font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;font-weight:900;font-size:9px;fill:#111;dominant-baseline:central}
 @keyframes tuneHoloOff{0%{transform:none;opacity:1}70%{opacity:1}100%{transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0}}
 @keyframes tuneHoloOn{0%{transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0}18%{opacity:1}100%{transform:none}}
 @keyframes tuneHoloGlitch{0%,100%{transform:none;filter:none}
@@ -277,7 +277,7 @@ html.tune-inapp-lock body{padding-top:120px}
     </div>
     <button class="tune-now" id="tuneNow" type="button" hidden></button>
     <div class="tune-holo" id="tuneHolo" aria-hidden="true"><div class="fl"><div class="pw">
-      <div class="tune-holo-scr"><svg class="tune-holo-rib" aria-hidden="true"><path class="r3" pathLength="1000"/><path class="r1" pathLength="1000"/><path class="r2" pathLength="1000"/></svg><i class="cn"></i><i class="cn"></i><i class="cn"></i><i class="cn"></i><div class="tune-holo-hd"><span class="c"><i></i><em></em></span><span class="np" id="tuneHoloNp"></span></div><div class="tune-holo-cv"></div><div class="tune-holo-t"><b></b><span></span></div><div class="tune-holo-ft"><span class="xyz"></span><span class="bars"></span></div></div>
+      <div class="tune-holo-scr"><svg class="tune-holo-rib" aria-hidden="true"><defs><path id="tuneRibPath"/></defs><use class="band" href="#tuneRibPath"/><use class="tick" href="#tuneRibPath"/><use class="core" href="#tuneRibPath"/><text><textPath href="#tuneRibPath" lengthAdjust="spacing"></textPath></text></svg><i class="cn"></i><i class="cn"></i><i class="cn"></i><i class="cn"></i><div class="tune-holo-hd"><span class="c"><i></i><em></em></span><span class="np" id="tuneHoloNp"></span></div><div class="tune-holo-cv"></div><div class="tune-holo-t"><b></b><span></span></div><div class="tune-holo-ft"><span class="xyz"></span><span class="bars"></span></div></div>
       </div></div></div>
     <canvas class="tune-holo-fx" id="tuneHoloFx" aria-hidden="true"></canvas>
     <div class="tune-hint" id="tuneHint">拖曳旋轉　滾輪縮放</div>
@@ -351,7 +351,7 @@ html.tune-inapp-lock body{padding-top:120px}
     marker = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, transparent: true, depthTest: false, color: 0xffffff })); marker.scale.set(0, 0, 1); scene.add(marker);
     const resize = () => { const r = stage.getBoundingClientRect(); if (r.width < 2 || r.height < 2) return; renderer.setSize(r.width, r.height, false); camera.aspect = r.width / r.height; camera.updateProjectionMatrix(); pmat.uniforms.uScale.value = r.height * renderer.getPixelRatio() / 160; };
     new ResizeObserver(resize).observe(stage); resize();
-    (function loop() { if (state.visible) { if (controls) controls.update(); slideView(); renderer.render(scene, camera); if (holoCard) followHolo(); if (holoCard || FX.level > 0) drawFx(); } requestAnimationFrame(loop); })();
+    (function loop() { if (state.visible) { if (controls) controls.update(); slideView(); renderer.render(scene, camera); if (holoCard) followHolo(); if (holoCard || FX.level > 0) drawFx(); if (holoCard?.egg) stepRibbon(performance.now()); } requestAnimationFrame(loop); })();
     THREE_OK = true;
     return true;
   }
@@ -914,21 +914,29 @@ html.tune-inapp-lock body{padding-top:120px}
       n.addEventListener('pointerdown', grab); n.addEventListener('pointermove', move); n.addEventListener('pointerup', drop); n.addEventListener('pointercancel', drop);
     }
   }
-  // 洋流飄帶：沿著板子的圓角矩形走一圈，往外法線方向加正弦波（三條振幅、波長、相位不同），dash 動畫讓它繞著跑
+  // 洋流飄帶：一條帶子沿板子外圍的圓角矩形繞兩圈（路徑畫兩圈，文字也排兩圈），每格把文字的 startOffset 與兩側小方塊的
+  // dashoffset 往前推一點，推滿一圈就回到起點；「洋流」的間距用 textLength 撐到剛好整除一圈，接回去不會跳
+  const RIB = { L: 0, off: 0, last: 0 };
   function drawRibbon() {
     const scr = el.holo.querySelector('.tune-holo-scr'), svg = scr.querySelector('.tune-holo-rib');
-    const W = scr.offsetWidth, H = scr.offsetHeight, r = 9, pad = 6; if (!W || !H) return;
-    svg.setAttribute('viewBox', `${-pad} ${-pad} ${W + pad * 2} ${H + pad * 2}`);
-    // 圓角矩形周長上的點（含外法線）
-    const segs = [[W - 2 * r, 0], [Math.PI / 2 * r, 1], [H - 2 * r, 0], [Math.PI / 2 * r, 1], [W - 2 * r, 0], [Math.PI / 2 * r, 1], [H - 2 * r, 0], [Math.PI / 2 * r, 1]];
-    const L = segs.reduce((a, s) => a + s[0], 0);
-    const at = d => { let k = 0; for (let q = 0; q < 8; q++) { const [len, arc] = segs[q]; if (d <= len || q === 7) { const u = Math.min(1, d / len), side = q >> 1;
-      if (!arc) { const P = [[r + u * (W - 2 * r), 0, 0, -1], [W, r + u * (H - 2 * r), 1, 0], [W - r - u * (W - 2 * r), H, 0, 1], [0, H - r - u * (H - 2 * r), -1, 0]][side]; return P; }
-      const C = [[W - r, r], [W - r, H - r], [r, H - r], [r, r]][side], a0 = [-Math.PI / 2, 0, Math.PI / 2, Math.PI][side], a = a0 + u * Math.PI / 2;
-      return [C[0] + Math.cos(a) * r, C[1] + Math.sin(a) * r, Math.cos(a), Math.sin(a)]; } d -= len; } };
-    const mk = (amp, waves, ph) => { let dd = ''; const n = 240; for (let j = 0; j <= n; j++) { const d = L * j / n, [x, y, nx, ny] = at(d), o = amp * Math.sin(2 * Math.PI * waves * j / n + ph);
-      dd += (j ? 'L' : 'M') + (x + nx * o).toFixed(1) + ' ' + (y + ny * o).toFixed(1); } return dd + 'Z'; };
-    svg.querySelector('.r1').setAttribute('d', mk(2.4, 14, 0)); svg.querySelector('.r2').setAttribute('d', mk(1.6, 9, 2)); svg.querySelector('.r3').setAttribute('d', mk(3.2, 6, 4));
+    const W = scr.offsetWidth + 12, H = scr.offsetHeight + 12, r = 12, P = 14; if (W < 20 || H < 20) return;
+    svg.setAttribute('viewBox', `0 0 ${W + 16} ${H + 16}`);
+    const x0 = 8, y0 = 8, x1 = x0 + W, y1 = y0 + H;
+    const lap = `L${x1 - r} ${y0}A${r} ${r} 0 0 1 ${x1} ${y0 + r}L${x1} ${y1 - r}A${r} ${r} 0 0 1 ${x1 - r} ${y1}L${x0 + r} ${y1}A${r} ${r} 0 0 1 ${x0} ${y1 - r}L${x0} ${y0 + r}A${r} ${r} 0 0 1 ${x0 + r} ${y0}`;
+    const path = svg.querySelector('#tuneRibPath'); path.setAttribute('d', `M${x0 + r} ${y0}` + lap + lap);
+    RIB.L = 2 * (W + H - 4 * r) + 2 * Math.PI * r;
+    const unit = 26, n = Math.max(4, Math.round(RIB.L / unit)), tp = svg.querySelector('textPath');
+    tp.textContent = '洋流 '.repeat(n * 2 + 2); tp.setAttribute('textLength', (RIB.L * 2 + RIB.L / n * 2).toFixed(1));
+    svg.querySelector('.tick').style.strokeDasharray = `${(RIB.L / Math.round(RIB.L / 6) / 2).toFixed(3)}`;
+    void P;
+  }
+  function stepRibbon(now) {
+    if (!RIB.L || !el.holo.classList.contains('egg')) return;
+    const dt = Math.min(.05, (now - (RIB.last || now)) / 1000); RIB.last = now;
+    if (!RM_FX) RIB.off = (RIB.off + dt * 22) % RIB.L;
+    const svg = el.holo.querySelector('.tune-holo-rib');
+    svg.querySelector('textPath').setAttribute('startOffset', (-RIB.off).toFixed(1));
+    svg.querySelector('.tick').style.strokeDashoffset = (RIB.off).toFixed(1);
   }
   function hideHolo() {
     // 縮回「現在」星星的位置；縮完（0.25 秒）星圖才回到原位、原大小
@@ -1002,7 +1010,7 @@ html.tune-inapp-lock body{padding-top:120px}
   }
   function emit(c) {
     if (!c) return;
-    if (c.egg) { global.open(c.card.appleUrl, '_blank', 'noopener'); return; }   // 彩蛋不進結果頁（預覽版）
+    if (c.egg) { global.open(c.card.link, '_blank', 'noopener'); return; }   // 彩蛋不進結果頁，就這張直接開政策島（2026-10-28 店主）
     state.seen.push(c.i); if (state.seen.length > 200) state.seen.shift();
     // 星圖上正在試聽的就是這張：不停，交給結果頁接著播（2026-10-25 店主：按就這張後試聽不要從頭開始）
     const continuing = playing === c;
