@@ -1025,7 +1025,7 @@ html.tune-inapp-lock body{padding-top:120px}
   // 前後兩層：在後面時畫在星圖畫布（被 DOM 板子蓋住）；在前面時整組搬到另一個只有船的場景，畫在疊在板子上方的透明畫布。
   // 換層只在船不壓在板子上時才換，免得在板子上突然跳到前面。船頭沿速度方向（lookAt），船尾橘色引擎光，後面拖航跡點。
   const BOAT = { on: false, g: null, trail: null, tpos: null, tcol: null, t0: 0, from: null, front: false };
-  const BOAT_TRAIL = 46, BOAT_LEN = 0.15 / 14, BOAT_EMERGE = 2.6;
+  const BOAT_TRAIL = 46, BOAT_LEN = 0.15 / 14, BOAT_OUT = 1.4, BOAT_EMERGE = 3;
   function boatSetup() {
     const THREE = global.THREE; if (!THREE || !THREE_OK) return false; if (BOAT.g) return true;
     const lights = () => { const L = new THREE.Group(); L.add(new THREE.HemisphereLight(0xffffff, 0x8888aa, 0.85)); const dl = new THREE.DirectionalLight(0xffffff, 0.5); dl.position.set(3, 6, 4); L.add(dl); return L; };
@@ -1045,23 +1045,37 @@ html.tune-inapp-lock body{padding-top:120px}
     BOAT.trail.visible = false; scene.add(BOAT.trail);
     return true;
   }
-  // 航線（世界座標）：u＝巡弋時間。螢幕 x 在空位中央↔板子中央之間來回、y 上下擺；深度沿視線 −1.15（近）～+1.15（遠）。
-  // 深度跟 x 綁在一起：每次經過板子是一前一後交替，前後只在回到空位時翻面（換層不會發生在板子上）。u＝0 在板子上、最近。
-  function boatPath(u) {
-    const THREE = global.THREE, gr = el.gl.getBoundingClientRect(), h = el.holo.querySelector('.tune-holo-scr').getBoundingClientRect();
-    const L = h.left - gr.left, Rw = gr.right - h.right;
+  // 航線（世界座標）：u＝巡弋時間。螢幕 x 在空位中央↔板子之間來回、y 上下擺；深度沿視線 −1.15（近）～+1.15（遠）。
+  // 深度跟 x 綁在一起，一趟在前、一趟在後交替，前後只在回到空位時翻面（換層不會發生在板子上）。
+  // 店主：「飛到視窗後面要趕快再飛到視線範圍」——在後面那趟只往板子邊緣探一下（.36）就折回空位；在前面那趟才橫越板子（.9）。
+  function boatScreenToWorld(sx, sy) {
+    const gr = el.gl.getBoundingClientRect(), zN = new global.THREE.Vector3(...BOAT.from).project(camera).z;
+    return new global.THREE.Vector3((sx - gr.left) / gr.width * 2 - 1, -((sy - gr.top) / gr.height) * 2 + 1, zN).unproject(camera);
+  }
+  function boatFree() {
+    const gr = el.gl.getBoundingClientRect(), h = el.holo.querySelector('.tune-holo-scr').getBoundingClientRect(), L = h.left - gr.left, Rw = gr.right - h.right;
     if (BOAT.side == null || (BOAT.side === 'L' ? Rw > L + 40 : L > Rw + 40)) BOAT.side = Rw >= L ? 'R' : 'L';
-    const free = BOAT.side === 'R' ? (h.right + gr.right) / 2 : (gr.left + h.left) / 2, mid = (h.left + h.right) / 2;
-    const c = .29 * u + Math.PI, sx = free + (mid - free) * (.5 - .5 * Math.cos(c)) * .9, sy = gr.top + gr.height * (.4 + .2 * Math.sin(.37 * u + .5) + .05 * Math.sin(.91 * u));
-    const zN = new THREE.Vector3(...BOAT.from).project(camera).z;
-    const p0 = new THREE.Vector3((sx - gr.left) / gr.width * 2 - 1, -((sy - gr.top) / gr.height) * 2 + 1, zN).unproject(camera);
-    const depth = -1.15 * Math.tanh(2.2 * Math.sin(c / 2)) / Math.tanh(2.2);
-    const dir = p0.clone().sub(camera.position).normalize();
-    return { p: p0.addScaledVector(dir, depth), depth };
+    return { gr, h, free: BOAT.side === 'R' ? (h.right + gr.right) / 2 : (gr.left + h.left) / 2, mid: (h.left + h.right) / 2 };
+  }
+  function boatPath(u) {
+    const { gr, free, mid } = boatFree(), c = .29 * u + .6, fr = Math.sin(c / 2) > 0;   // c 從 .6 開始：起點在空位、在前面
+    const sx = free + (mid - free) * (.5 - .5 * Math.cos(c)) * (fr ? .9 : .36), sy = gr.top + gr.height * (.4 + .2 * Math.sin(.37 * u + .5) + .05 * Math.sin(.91 * u));
+    const p0 = boatScreenToWorld(sx, sy), depth = -1.15 * Math.tanh(2.2 * Math.sin(c / 2)) / Math.tanh(2.2);
+    return { p: p0.addScaledVector(p0.clone().sub(camera.position).normalize(), depth), depth };
+  }
+  // 出場（店主：「從星星飛出來，被視窗擋住就繞過視窗往前飛」）：先在星星的深度橫向飛出板子、到旁邊空位（在後層，
+  // 星星被板子蓋住時就是從板子後面鑽出來），再往鏡頭方向飛到前面、接上航線起點。
+  function boatEmergePos(tt) {
+    const THREE = global.THREE, star = new THREE.Vector3(...BOAT.from);
+    if (!BOAT.out) { const { gr, free } = boatFree(), v = star.clone().project(camera), sy = gr.top + (1 - v.y) / 2 * gr.height;
+      BOAT.out = boatScreenToWorld(free, Math.max(gr.top + gr.height * .22, Math.min(gr.top + gr.height * .7, sy))); }
+    if (tt < BOAT_OUT) { const k = tt / BOAT_OUT, e = k * k * (3 - 2 * k); return { p: star.lerp(BOAT.out, e), depth: 0 }; }
+    const a = boatPath(0), k = (tt - BOAT_OUT) / (BOAT_EMERGE - BOAT_OUT), e = k * k * (3 - 2 * k);
+    return { p: BOAT.out.clone().lerp(a.p, e), depth: a.depth * e };
   }
   function boatStart() {
     if (RM_FX || BOAT.on || !boatSetup() || litIdx < 0) return;
-    BOAT.on = true; BOAT.t0 = performance.now(); BOAT.from = S3(CARDS[litIdx]); BOAT.hist = []; BOAT.side = null; BOAT.front = false;
+    BOAT.on = true; BOAT.t0 = performance.now(); BOAT.from = S3(CARDS[litIdx]); BOAT.hist = []; BOAT.side = null; BOAT.front = false; BOAT.out = null;
     BOAT.g.visible = true; BOAT.trail.visible = true; BOAT.g.scale.setScalar(0.0001); boatLayer(false);
   }
   // 洋流號目前在頁面上的座標（測試與示範用）；沒在飛回 null
@@ -1070,21 +1084,29 @@ html.tune-inapp-lock body{padding-top:120px}
     BOAT.front = front; const sc = front && BOAT.fr ? BOAT.fscene : scene; if (BOAT.g.parent !== sc) { sc.add(BOAT.g); sc.add(BOAT.trail); }
     if (BOAT.fcv) BOAT.fcv.style.display = front ? '' : 'none';
   }
+  function boatOverHolo(sp, m) { const h = el.holo.querySelector('.tune-holo-scr').getBoundingClientRect(); return !!sp && sp.x > h.left - m && sp.x < h.right + m && sp.y > h.top - m && sp.y < h.bottom + m; }
+  // 點洋流號開 current.puma.taipei（2026-10-28 店主）。船很小，點擊範圍取船中心 26px；在後面且被板子蓋住時點不到。
+  // 掛在 stage 的 capture：搶在星圖旋轉與板子拖曳之前；pointerdown 先攔、click 才開（行動瀏覽器要 click 才算使用者手勢）。
+  const BOAT_URL = 'https://current.puma.taipei/';
+  function boatHit(e) { if (!BOAT.on) return false; const sp = boatScreenPos(); if (!sp || (!sp.front && boatOverHolo(sp, 0))) return false; return Math.hypot(e.clientX - sp.x, e.clientY - sp.y) < 26; }
+  function wireBoatClick() {
+    let armed = false;
+    el.stage.addEventListener('pointerdown', e => { armed = boatHit(e); if (armed) { e.preventDefault(); e.stopPropagation(); } }, true);
+    el.stage.addEventListener('click', e => { if (!armed) return; armed = false; e.preventDefault(); e.stopPropagation(); global.open(BOAT_URL, '_blank', 'noopener'); }, true);
+    el.stage.addEventListener('pointermove', e => { if (e.pointerType === 'mouse') el.stage.style.cursor = boatHit(e) ? 'pointer' : ''; }, { passive: true });
+  }
   function boatStop() { if (!BOAT.on) return; BOAT.on = false; BOAT.g.visible = false; BOAT.trail.visible = false; boatLayer(false); }
   function stepBoat(now) {
     if (!BOAT.on) return;
     const t = (now - BOAT.t0) / 1000, u = Math.max(0, t - BOAT_EMERGE);
-    // 出場：從星星沿平滑曲線飛到航線起點（最近、最大），之後接著巡弋
-    const pos = tt => { const a = boatPath(Math.max(0, tt - BOAT_EMERGE)); if (tt >= BOAT_EMERGE) return a;
-      const k = tt / BOAT_EMERGE, e = k * k * (3 - 2 * k); return { p: new global.THREE.Vector3(...BOAT.from).lerp(a.p, e), depth: a.depth * e }; };
+    const pos = tt => tt < BOAT_EMERGE ? boatEmergePos(tt) : boatPath(tt - BOAT_EMERGE);
     const A = pos(t), B = pos(t + .06), g = BOAT.g;
     g.position.copy(A.p); if (A.p.distanceToSquared(B.p) > 1e-10) g.lookAt(B.p);
     g.scale.setScalar(BOAT_LEN * Math.min(1, t / 1.2)); BOAT.inner.rotation.z = Math.sin(now / 380) * .06; BOAT.glow.material.opacity = .75 + .25 * Math.sin(now / 90);
     // 前後層：比星星近一點就到前面、遠一點就到後面；壓在板子上時不換
-    const sp = boatScreenPos(), h = el.holo.querySelector('.tune-holo-scr').getBoundingClientRect();
-    const over = sp && sp.x > h.left - 14 && sp.x < h.right + 14 && sp.y > h.top - 14 && sp.y < h.bottom + 14;
+    const sp = boatScreenPos(), over = boatOverHolo(sp, 14);
     const want = A.depth < -.15 ? true : A.depth > .15 ? false : BOAT.front;
-    if (want !== BOAT.front && (!over || t < BOAT_EMERGE)) boatLayer(want);
+    if (want !== BOAT.front && !over) boatLayer(want);
     // 航跡
     const hh = BOAT.hist; hh.push(A.p.toArray()); if (hh.length > BOAT_TRAIL) hh.shift();
     for (let k = 0; k < BOAT_TRAIL; k++) { const v = hh[hh.length - 1 - k] || hh[0], a = Math.max(0, 1 - k / BOAT_TRAIL) * .9;
@@ -1219,7 +1241,7 @@ html.tune-inapp-lock body{padding-top:120px}
       dx: host.querySelector('#tuneDx'), dy: host.querySelector('#tuneDy'), dz: host.querySelector('#tuneDz'), dcell: host.querySelector('#tuneDcell'), cellStrip: host.querySelector('#tuneCellStrip'),
       mode: host.querySelector('#tuneMode'), lever: host.querySelector('#tuneLever'), hint: host.querySelector('#tuneHint'), search: host.querySelector('#tuneSearch'), searchGo: host.querySelector('#tuneSearchGo'), sugg: host.querySelector('#tuneSugg'), swTop: host.querySelector('#tuneSwTop'), swBot: host.querySelector('#tuneSwBot'), ledTop: host.querySelector('#tuneLedTop'), ledBot: host.querySelector('#tuneLedBot'), draw: host.querySelector('#tuneDraw'), console: host.querySelector('#tuneConsole'), holo: host.querySelector('#tuneHolo'), fx: host.querySelector('#tuneHoloFx'), holoBtn: host.querySelector('#tuneHoloBtn') };
     trackViewport(host);
-    wireHoloDrag();
+    wireHoloDrag(); wireBoatClick();
     el.back.onclick = () => cfg.onBack?.();
     // 喇叭鈕與站上頂欄的「自動試聽」開關是同一顆（2026-10-22 店主：切到串流後站上自動關掉網頁音源，
     // 頻率選歌就沒聲音，按喇叭也沒反應）。按下去先回寫站上的開關，再照新狀態開停。
