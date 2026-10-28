@@ -1289,6 +1289,9 @@ html.tune-inapp-lock body{padding-top:120px}
     state.built = true;
     updateScene();
     if (new URLSearchParams(global.location.search).get('demo') === '1') runDemo(true);
+    // 測試連結：?q=關鍵字 一進來就搜尋並轉到第一筆；?egg=1＝搜「台北順起來」（2026-10-28 店主：測試連結一進去就到彩蛋）
+    { const qs = new URLSearchParams(global.location.search), q0 = qs.get('q') || (qs.get('egg') === '1' ? '台北順起來' : '');
+      if (q0) setTimeout(() => { const c = findCards(q0)[0]; if (c) { el.search.value = `${c.card.artist} — ${c.card.album}`; travelTo(c); } }, 900); }
     // 主畫面 App 帶不了網址參數：左上角讀數（本來就不能按）1.5 秒內連點三下也會開跑，這三下本身就是出聲要的手勢
     { let taps = []; el.readout.addEventListener('pointerdown', () => { const now = performance.now(); taps = taps.filter(t => now - t < 1500); taps.push(now); if (taps.length >= 3) { taps = []; runDemo(false); } }); }
   }

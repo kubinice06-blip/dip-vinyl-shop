@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-28｜dip-vinyl-shop｜頻率光譜：測試連結 `?egg=1`／`?q=關鍵字` 一進來就搜尋；`/tune/` 轉址保留網址參數（預覽中，未合併）
+
+- **改動**：店主「測試連結一進去就搜尋到台北順起來」。
+  - `dip-tune.js` build 完 0.9 秒：`?q=` 取第一筆搜尋結果 `travelTo`（搜尋框同步填入），`?egg=1` 等同 `?q=台北順起來`。`?v=59`。
+  - `tune/index.html` 原本 `location.replace('/#tune')` 會把 `?…` 丟掉（`?demo=1` 從 /tune/ 進來其實也失效），改成 `'/' + location.search + '#tune'`。
+- **主要檔案**：`dip-tune.js`、`tune/index.html`、`index.html`。
+- **驗證**：iPhone 13 Playwright 開 `/tune/?egg=1`，4.2 秒彩蛋板子出現、網址保留 `?egg=1`、搜尋框為「沈伯洋 — 台北順起來」、無錯誤。
+
 ### 2026-10-28｜dip-vinyl-shop｜彩蛋預覽：修洋流號手機點不進去、前幾秒船與航跡飄移（預覽中，未合併）
 
 - **改動**：店主「洋流號點不進去；剛開始前五秒很奇怪，船會飄移、後面的線條也會飄移」。
