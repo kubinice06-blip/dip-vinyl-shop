@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-28｜dip-vinyl-shop｜頻率光譜：`?egg=1` 自動搜尋改成畫面出現 1 秒後、不碰音訊解鎖（預覽中，未合併）
+
+- **改動**：店主「沒有自動搜尋欸，大概等一秒鐘就搜尋」。
+  - 上一版自動搜尋走 `travelTo` → `ensureAudio()`：沒有手勢就呼叫 `unlock.play()` 與 `onFirstGesture`（`gpEnsurePlayer({grant:true})`），手機上可能失敗而中斷搜尋，也會把「第一次手勢」用掉（之後真的點擊不再解鎖音訊）。`travelTo(c, quiet)` 加 quiet，網址參數走 quiet。
+  - 時機改成 `state.visible` 之後 1 秒（輪詢 100ms），包 try/catch。`?v=60`。
+  - 更正上一筆：線上 `/tune/` 是 `scripts/build-tune-page.mjs` 由 index.html 產生的完整頁，網址參數本來就在；改 `tune/index.html` 轉址只影響本機。
+- **主要檔案**：`dip-tune.js`、`index.html`。
+- **驗證**：Playwright（iPhone 13）本機 `/tune/?egg=1` → 搜尋框「沈伯洋 — 台北順起來」、彩蛋板子出現、無錯誤；線上預覽上一版在 headless 也會跳，手機失敗推斷為音訊解鎖路徑。
+
 ### 2026-10-28｜dip-vinyl-shop｜頻率光譜：測試連結 `?egg=1`／`?q=關鍵字` 一進來就搜尋；`/tune/` 轉址保留網址參數（預覽中，未合併）
 
 - **改動**：店主「測試連結一進去就搜尋到台北順起來」。

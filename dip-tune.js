@@ -654,10 +654,10 @@ html.tune-inapp-lock body{padding-top:120px}
   // ── 搜尋：找到的那張，三顆輪子依序轉過去（能量→質地→色溫），轉的路上照樣掃過沿途的唱片 ──
   let travelTok = 0;
   function cancelTravel() { travelTok++; }
-  function travelTo(c) {
+  function travelTo(c, quiet) {
     const tok = ++travelTok; let k = 0, done;
     const finished = new Promise(r => { done = r; });
-    ensureAudio(); stopPreview(); clearQueue();
+    if (!quiet) ensureAudio(); stopPreview(); clearQueue();   // quiet：不是使用者手勢觸發（網址參數），不能拿來解鎖音訊
     const leg = () => {
       if (tok !== travelTok) { done(false); return; }
       if (k >= 3) { clearQueue(); previewCard = null; scan(c); scheduleUpdate(); armPreview(); done(true); return; }
@@ -1291,7 +1291,9 @@ html.tune-inapp-lock body{padding-top:120px}
     if (new URLSearchParams(global.location.search).get('demo') === '1') runDemo(true);
     // 測試連結：?q=關鍵字 一進來就搜尋並轉到第一筆；?egg=1＝搜「台北順起來」（2026-10-28 店主：測試連結一進去就到彩蛋）
     { const qs = new URLSearchParams(global.location.search), q0 = qs.get('q') || (qs.get('egg') === '1' ? '台北順起來' : '');
-      if (q0) setTimeout(() => { const c = findCards(q0)[0]; if (c) { el.search.value = `${c.card.artist} — ${c.card.album}`; travelTo(c); } }, 900); }
+      // 畫面真的出現後 1 秒才搜（店主：「大概等一秒鐘就搜尋」）；不走 ensureAudio——沒有手勢時解鎖音訊在手機上會失敗、還會把真正的第一次點擊用掉
+      if (q0) { const t0 = performance.now(), go = () => { if (!state.visible || performance.now() - t0 < 1000) { setTimeout(go, 100); return; }
+        try { const c = findCards(q0)[0]; if (c) { el.search.value = `${c.card.artist} — ${c.card.album}`; travelTo(c, true); } } catch (e) { console.warn('[tune] ?q 搜尋失敗', e); } }; go(); } }
     // 主畫面 App 帶不了網址參數：左上角讀數（本來就不能按）1.5 秒內連點三下也會開跑，這三下本身就是出聲要的手勢
     { let taps = []; el.readout.addEventListener('pointerdown', () => { const now = performance.now(); taps = taps.filter(t => now - t < 1500); taps.push(now); if (taps.length >= 3) { taps = []; runDemo(false); } }); }
   }
