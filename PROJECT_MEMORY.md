@@ -6,7 +6,7 @@
   - `EGG` 卡接在 CARDS 第 N 張（`cell:'egg'`、`CELL_COLOR.egg=#ff7a1a`、`NAMES.egg='洋流'`），所有 `i < N` 的迴圈（掃描、nearest、FINE、抽卡、同頻率再抽）都碰不到；星圖幾何改用 `CARDS.length` 把它也畫上。只能搜尋「沈伯洋／台北順起來／順起來／puma shen／洋流／吳蓓雅／周自從」找到。armPreview 與就這張不把它換成最近卡。
   - 資料：Apple Music 單曲 6825287656／track 6825288172（2026-10-22，沈伯洋台北市長競選總部，feat. PiA吳蓓雅 & 周自從），封面與 30 秒試聽用 Apple 的。
   - 板子：橘色光暈與投影光；細框淡掉，換成 SVG 三條洋流飄帶（`drawRibbon`：圓角矩形周長往外法線加正弦波，三條振幅／波長不同，`pathLength=1000` 的 dash 以 7／11／9 秒繞著跑，一條反向）。標頭寫「洋流」，副標「沈伯洋 × 吳蓓雅、周自從」。
-  - 2026-10-28 店主附實物照改飄帶：一條帶子（橘色底 #ff5a14、兩側黑色小方塊、中間白底黑字「洋流」）沿板子外圍圓角矩形繞，`stepRibbon` 每格推 textPath startOffset 與小方塊 dashoffset（22px/秒，間距用 textLength 撐成整除一圈，不跳）；細框與四角標隱藏。「就這張」改開政策島 https://puma.taipei/heart-island。
+  - 2026-10-28 店主附實物照改飄帶：一條帶子（橘色底 #ff5a14、兩側黑色小方塊、中間白底黑字「洋流」）沿板子外圍圓角矩形繞，`stepRibbon` 每格推 textPath startOffset 與小方塊 dashoffset（22px/秒，間距用 textLength 撐成整除一圈，不跳）；細框與四角標隱藏。「就這張」改開政策島 https://puma.taipei/heart-island。同日店主附設計稿（5cm 寬）再調：帶寬 18、上下橘邊用長短細段模擬一排小字（週期整除一圈）、中間白條 7、粗黑「洋流」13px 壓過白條吃進橘邊。
   - 預覽版「就這張」直接開 Apple Music，不進結果頁（已改為政策島）。橘色色碼先用 #ff7a1a（單曲封面沒有橘色可取，等店主給官方色碼）。
   - `dip-tune.js?v=53`。
 - **主要檔案**：`dip-tune.js`、`index.html`

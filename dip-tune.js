@@ -179,16 +179,17 @@
 .tune-holo-t span{font-size:11px;font-size:clamp(11px,3.6cqh,14px);letter-spacing:.08em;color:var(--cc);text-shadow:0 0 2px #000,0 0 4px #000,0 0 7px var(--cc)}
 .tune-holo-fx{position:absolute;left:0;top:0;width:100%;height:calc(100% + 30cqh);z-index:4;pointer-events:none}
 @keyframes tuneHoloFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-/* 彩蛋：洋流飄帶邊框（店主附實物照：橘色帶子、兩側黑白小方塊、中間白底黑字「洋流」），繞著板子一直跑 */
+/* 彩蛋：洋流飄帶邊框（店主附實物與設計稿：5cm 寬橘帶，上下橘邊印一排小字，中間白條，粗黑「洋流」大字壓過白條、上下吃進橘邊），繞著板子一直跑 */
 .tune-holo-rib{position:absolute;left:-14px;top:-14px;width:calc(100% + 28px);height:calc(100% + 28px);overflow:visible;pointer-events:none;display:none;z-index:3;filter:drop-shadow(0 0 6px rgba(var(--rgb),.55))}
 .tune-holo.egg .tune-holo-rib{display:block}
 .tune-holo.egg .tune-holo-scr{border-color:transparent}
 .tune-holo.egg .tune-holo-scr .cn{display:none}
 .tune-holo-rib path{fill:none}
-.tune-holo-rib .band{stroke:#ff5a14;stroke-width:16}
-.tune-holo-rib .tick{stroke:#16120f;stroke-width:16;stroke-dasharray:3 3}
-.tune-holo-rib .core{stroke:#fbf7f0;stroke-width:10}
-.tune-holo-rib text{font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;font-weight:900;font-size:9px;fill:#111;dominant-baseline:central}
+.tune-holo-rib .band{stroke:#ff5a14;stroke-width:18}
+.tune-holo-rib .tick{stroke:rgba(22,18,15,.62);stroke-width:17}
+.tune-holo-rib .mask{stroke:#ff5a14;stroke-width:12.5}
+.tune-holo-rib .core{stroke:#fbf7f0;stroke-width:7}
+.tune-holo-rib text{font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;font-weight:900;font-size:13px;fill:#111;dominant-baseline:central;letter-spacing:-.5px}
 @keyframes tuneHoloOff{0%{transform:none;opacity:1}70%{opacity:1}100%{transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0}}
 @keyframes tuneHoloOn{0%{transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0}18%{opacity:1}100%{transform:none}}
 @keyframes tuneHoloGlitch{0%,100%{transform:none;filter:none}
@@ -277,7 +278,7 @@ html.tune-inapp-lock body{padding-top:120px}
     </div>
     <button class="tune-now" id="tuneNow" type="button" hidden></button>
     <div class="tune-holo" id="tuneHolo" aria-hidden="true"><div class="fl"><div class="pw">
-      <div class="tune-holo-scr"><svg class="tune-holo-rib" aria-hidden="true"><defs><path id="tuneRibPath"/></defs><use class="band" href="#tuneRibPath"/><use class="tick" href="#tuneRibPath"/><use class="core" href="#tuneRibPath"/><text><textPath href="#tuneRibPath" lengthAdjust="spacing"></textPath></text></svg><i class="cn"></i><i class="cn"></i><i class="cn"></i><i class="cn"></i><div class="tune-holo-hd"><span class="c"><i></i><em></em></span><span class="np" id="tuneHoloNp"></span></div><div class="tune-holo-cv"></div><div class="tune-holo-t"><b></b><span></span></div><div class="tune-holo-ft"><span class="xyz"></span><span class="bars"></span></div></div>
+      <div class="tune-holo-scr"><svg class="tune-holo-rib" aria-hidden="true"><defs><path id="tuneRibPath"/></defs><use class="band" href="#tuneRibPath"/><use class="tick" href="#tuneRibPath"/><use class="mask" href="#tuneRibPath"/><use class="core" href="#tuneRibPath"/><text><textPath href="#tuneRibPath" lengthAdjust="spacing"></textPath></text></svg><i class="cn"></i><i class="cn"></i><i class="cn"></i><i class="cn"></i><div class="tune-holo-hd"><span class="c"><i></i><em></em></span><span class="np" id="tuneHoloNp"></span></div><div class="tune-holo-cv"></div><div class="tune-holo-t"><b></b><span></span></div><div class="tune-holo-ft"><span class="xyz"></span><span class="bars"></span></div></div>
       </div></div></div>
     <canvas class="tune-holo-fx" id="tuneHoloFx" aria-hidden="true"></canvas>
     <div class="tune-hint" id="tuneHint">拖曳旋轉　滾輪縮放</div>
@@ -925,9 +926,11 @@ html.tune-inapp-lock body{padding-top:120px}
     const lap = `L${x1 - r} ${y0}A${r} ${r} 0 0 1 ${x1} ${y0 + r}L${x1} ${y1 - r}A${r} ${r} 0 0 1 ${x1 - r} ${y1}L${x0 + r} ${y1}A${r} ${r} 0 0 1 ${x0} ${y1 - r}L${x0} ${y0 + r}A${r} ${r} 0 0 1 ${x0 + r} ${y0}`;
     const path = svg.querySelector('#tuneRibPath'); path.setAttribute('d', `M${x0 + r} ${y0}` + lap + lap);
     RIB.L = 2 * (W + H - 4 * r) + 2 * Math.PI * r;
-    const unit = 26, n = Math.max(4, Math.round(RIB.L / unit)), tp = svg.querySelector('textPath');
-    tp.textContent = '洋流 '.repeat(n * 2 + 2); tp.setAttribute('textLength', (RIB.L * 2 + RIB.L / n * 2).toFixed(1));
-    svg.querySelector('.tick').style.strokeDasharray = `${(RIB.L / Math.round(RIB.L / 6) / 2).toFixed(3)}`;
+    const unit = 31, n = Math.max(4, Math.round(RIB.L / unit)), tp = svg.querySelector('textPath');
+    tp.textContent = '洋流 '.repeat(n * 2 + 2); tp.setAttribute('textLength', (RIB.L * 2 + RIB.L / n * 2).toFixed(1));
+    // 上下橘邊那排小字：用一組長短不一的細段模擬，週期撐到整除一圈
+    const per = RIB.L / Math.round(RIB.L / 9), k = per / 9;
+    svg.querySelector('.tick').style.strokeDasharray = [1.4, .7, .8, .6, 2, .7, 1, 1.8].map(v => (v * k).toFixed(3)).join(' ');
     void P;
   }
   function stepRibbon(now) {
