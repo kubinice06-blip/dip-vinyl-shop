@@ -82,7 +82,21 @@
         px: pSpread('x', m[0], hashU(i, 7919, 997)), py: pSpread('y', m[1], hashU(i, 104729, 991)), pz: pSpread('z', m[2], hashU(i, 1299709, 983)) });
     }
     N = CARDS.length;
+    // 彩蛋（2026-10-28 店主：沈伯洋競選歌《台北順起來》）：接在卡池後面當第 N 張，所有「i < N」的迴圈（掃描、最近、FINE、抽卡）都碰不到它，
+    // 只有搜尋找得到；星圖上也畫一顆（幾何陣列用 CARDS.length）。投影改橘色、邊框換成繞著跑的洋流飄帶，按「就這張」開 Apple Music
+    // 2026-11-27 00:00（台北）起自動下架（店主）：不再放進 CARDS，搜尋也找不到
+    if (Date.now() < EGG.until) { CELL_COLOR.egg = EGG.color; NAMES = Object.assign({}, NAMES, { egg: '洋流' });
+    CARDS.push(Object.assign({ i: N, card: EGG.card, conf: 3, cell: 'egg', egg: true }, EGG.pos)); }
   }
+
+  const EGG = {
+    color: '#ff7a1a', until: Date.parse('2026-11-27T00:00:00+08:00'),
+    card: { artist: '沈伯洋', album: '台北順起來', sub: '沈伯洋 × 吳蓓雅、周自從', alias: 'puma shen 洋流 順起來 吳蓓雅 周自從',
+      coverUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e8/2b/6b/e82b6b0f-862a-8b45-25d4-f42886afb7b9/4711548170006.png/600x600bb.png',
+      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b9/79/a7/b979a719-c219-eb16-e2da-f52716662c63/mzaf_3746502855888154192.plus.aac.p.m4a',
+      appleUrl: 'https://music.apple.com/tw/album/6825287656?i=6825288172', link: 'https://puma.taipei/heart-island' },
+    pos: { x: 3.6, y: 0.2, z: 0.9, px: 80, py: 38, pz: 86 },
+  };
 
   // ── 畫面 ──────────────────────────────────────────────────────────
   const CSS = `
@@ -164,8 +178,20 @@
 .tune-holo-t b,.tune-holo-t span{max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .tune-holo-t b{font-weight:400;font-size:14px;font-size:clamp(13px,4.6cqh,18px);color:#f4fbff;text-shadow:0 0 2px #000,0 0 4px #000,0 0 6px var(--cc),0 0 14px var(--cc)}
 .tune-holo-t span{font-size:11px;font-size:clamp(11px,3.6cqh,14px);letter-spacing:.08em;color:var(--cc);text-shadow:0 0 2px #000,0 0 4px #000,0 0 7px var(--cc)}
+.tune-stage canvas.tune-boat-front{position:absolute;left:0;top:0;width:100%;height:100%;z-index:5;pointer-events:none}
 .tune-holo-fx{position:absolute;left:0;top:0;width:100%;height:calc(100% + 30cqh);z-index:4;pointer-events:none}
 @keyframes tuneHoloFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+/* 彩蛋：洋流飄帶邊框（店主附實物與設計稿：5cm 寬橘帶，上下橘邊印一排小字，中間白條，粗黑「洋流」大字壓過白條、上下吃進橘邊），繞著板子一直跑 */
+.tune-holo-rib{position:absolute;left:-14px;top:-14px;width:calc(100% + 28px);height:calc(100% + 28px);overflow:visible;pointer-events:none;display:none;z-index:3;filter:drop-shadow(0 0 6px rgba(var(--rgb),.55))}
+.tune-holo.egg .tune-holo-rib{display:block}
+.tune-holo.egg .tune-holo-scr{border-color:transparent}
+.tune-holo.egg .tune-holo-scr .cn{display:none}
+.tune-holo-rib path{fill:none}
+.tune-holo-rib .band{stroke:#ff5a14;stroke-width:18}
+.tune-holo-rib .tick{stroke:rgba(22,18,15,.62);stroke-width:17}
+.tune-holo-rib .mask{stroke:#ff5a14;stroke-width:12.5}
+.tune-holo-rib .core{stroke:#fbf7f0;stroke-width:7}
+.tune-holo-rib text{font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;font-weight:800;font-size:11.5px;fill:#111;text-anchor:middle;dominant-baseline:central}
 @keyframes tuneHoloOff{0%{transform:none;opacity:1}70%{opacity:1}100%{transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0}}
 @keyframes tuneHoloOn{0%{transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0}18%{opacity:1}100%{transform:none}}
 @keyframes tuneHoloGlitch{0%,100%{transform:none;filter:none}
@@ -254,7 +280,7 @@ html.tune-inapp-lock body{padding-top:120px}
     </div>
     <button class="tune-now" id="tuneNow" type="button" hidden></button>
     <div class="tune-holo" id="tuneHolo" aria-hidden="true"><div class="fl"><div class="pw">
-      <div class="tune-holo-scr"><i class="cn"></i><i class="cn"></i><i class="cn"></i><i class="cn"></i><div class="tune-holo-hd"><span class="c"><i></i><em></em></span><span class="np" id="tuneHoloNp"></span></div><div class="tune-holo-cv"></div><div class="tune-holo-t"><b></b><span></span></div><div class="tune-holo-ft"><span class="xyz"></span><span class="bars"></span></div></div>
+      <div class="tune-holo-scr"><svg class="tune-holo-rib" aria-hidden="true"><defs><path id="tuneRibPath"/></defs><use class="band" href="#tuneRibPath"/><use class="tick" href="#tuneRibPath"/><use class="mask" href="#tuneRibPath"/><use class="core" href="#tuneRibPath"/><g class="glyphs"></g></svg><i class="cn"></i><i class="cn"></i><i class="cn"></i><i class="cn"></i><div class="tune-holo-hd"><span class="c"><i></i><em></em></span><span class="np" id="tuneHoloNp"></span></div><div class="tune-holo-cv"></div><div class="tune-holo-t"><b></b><span></span></div><div class="tune-holo-ft"><span class="xyz"></span><span class="bars"></span></div></div>
       </div></div></div>
     <canvas class="tune-holo-fx" id="tuneHoloFx" aria-hidden="true"></canvas>
     <div class="tune-hint" id="tuneHint">拖曳旋轉　滾輪縮放</div>
@@ -299,11 +325,11 @@ html.tune-inapp-lock body{padding-top:120px}
       let idleT = 0; controls.addEventListener('start', () => { controls.autoRotate = false; clearTimeout(idleT); }); controls.addEventListener('end', () => { idleT = setTimeout(() => { controls.autoRotate = true; }, 6000); });
     }
     const S = c => [c.px / 50 - 1, -(c.py / 50 - 1), c.pz / 50 - 1];
-    const pos = new Float32Array(N * 3); col = new Float32Array(N * 3); base = new Float32Array(N * 3);
+    const NG = CARDS.length; const pos = new Float32Array(NG * 3); col = new Float32Array(NG * 3); base = new Float32Array(NG * 3);
     const tmp = new THREE.Color();
-    for (let i = 0; i < N; i++) { const c = CARDS[i]; tmp.set(CELL_COLOR[c.cell]); base[i * 3] = tmp.r; base[i * 3 + 1] = tmp.g; base[i * 3 + 2] = tmp.b; const [x, y, z] = S(c); pos[i * 3] = x; pos[i * 3 + 1] = y; pos[i * 3 + 2] = z; }
+    for (let i = 0; i < NG; i++) { const c = CARDS[i]; tmp.set(CELL_COLOR[c.cell]); base[i * 3] = tmp.r; base[i * 3 + 1] = tmp.g; base[i * 3 + 2] = tmp.b; const [x, y, z] = S(c); pos[i * 3] = x; pos[i * 3 + 1] = y; pos[i * 3 + 2] = z; }
     geo = new THREE.BufferGeometry(); geo.setAttribute('position', new THREE.BufferAttribute(pos, 3)); geo.setAttribute('color', new THREE.BufferAttribute(col, 3));
-    sizeAttr = new Float32Array(N); geo.setAttribute('psize', new THREE.BufferAttribute(sizeAttr, 1));
+    sizeAttr = new Float32Array(NG); geo.setAttribute('psize', new THREE.BufferAttribute(sizeAttr, 1));
     pmat = new THREE.ShaderMaterial({ transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, uniforms: { uScale: { value: 1 } },
       vertexShader: 'attribute float psize;attribute vec3 color;varying vec3 vC;uniform float uScale;void main(){vC=color;vec4 mv=modelViewMatrix*vec4(position,1.0);gl_PointSize=psize*uScale*(1.0/-mv.z);gl_Position=projectionMatrix*mv;}',
       fragmentShader: 'varying vec3 vC;void main(){vec2 d=gl_PointCoord-.5;float r=length(d);if(r>.5)discard;float a=smoothstep(.5,.15,r);gl_FragColor=vec4(vC,a);}' });
@@ -328,7 +354,7 @@ html.tune-inapp-lock body{padding-top:120px}
     marker = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, transparent: true, depthTest: false, color: 0xffffff })); marker.scale.set(0, 0, 1); scene.add(marker);
     const resize = () => { const r = stage.getBoundingClientRect(); if (r.width < 2 || r.height < 2) return; renderer.setSize(r.width, r.height, false); camera.aspect = r.width / r.height; camera.updateProjectionMatrix(); pmat.uniforms.uScale.value = r.height * renderer.getPixelRatio() / 160; };
     new ResizeObserver(resize).observe(stage); resize();
-    (function loop() { if (state.visible) { if (controls) controls.update(); slideView(); renderer.render(scene, camera); if (holoCard) followHolo(); if (holoCard || FX.level > 0) drawFx(); } requestAnimationFrame(loop); })();
+    (function loop() { if (state.visible) { if (controls) controls.update(); slideView(); stepBoat(performance.now()); renderer.render(scene, camera); renderBoatFront(); if (holoCard) followHolo(); if (holoCard || FX.level > 0) drawFx(); if (holoCard?.egg) stepRibbon(performance.now()); } requestAnimationFrame(loop); })();
     THREE_OK = true;
     return true;
   }
@@ -337,7 +363,7 @@ html.tune-inapp-lock body{padding-top:120px}
     if (!THREE_OK) return;
     const dimK = 0.45;
     const dim = i => { const k = dimK * (CARDS[i].conf === 0 ? 0.7 : 1); col[i * 3] = base[i * 3] * k; col[i * 3 + 1] = base[i * 3 + 1] * k; col[i * 3 + 2] = base[i * 3 + 2] * k; sizeAttr[i] = 3.2; };
-    if (litIdx < 0) { for (let i = 0; i < N; i++) dim(i); } else dim(litIdx);
+    if (litIdx < 0) { for (let i = 0; i < CARDS.length; i++) dim(i); } else dim(litIdx);
     litIdx = c.i; col[c.i * 3] = base[c.i * 3]; col[c.i * 3 + 1] = base[c.i * 3 + 1]; col[c.i * 3 + 2] = base[c.i * 3 + 2]; sizeAttr[c.i] = 16;
     geo.attributes.color.needsUpdate = true; geo.attributes.psize.needsUpdate = true;
     const [mx, my, mz] = S3(c); marker.position.set(mx, my, mz); marker.scale.set(.34, .34, 1); marker.material.color.set(CELL_COLOR[c.cell]);
@@ -422,7 +448,7 @@ html.tune-inapp-lock body{padding-top:120px}
       const ready = hasCover && cover.decode ? Promise.race([cover.decode().catch(() => {}), new Promise(r => setTimeout(r, 250))]) : Promise.resolve();
       zoomDone = ready.then(() => new Promise(r => setTimeout(r, ZOOM + 60)));
       ready.then(() => requestAnimationFrame(() => {
-        el.holo.classList.add('lift'); FX.target = 0; for (const n of [img0, tAlbum, tArtist, tYear]) n.style.visibility = '';
+        el.holo.classList.add('lift'); FX.target = 0; boatStop(); for (const n of [img0, tAlbum, tArtist, tYear]) n.style.visibility = '';
         intro.style.transition = `background-color ${ZOOM}ms ease`; intro.style.backgroundColor = 'rgb(6,6,9)';
         for (const n of [img0, tAlbum, tArtist]) { n.style.transition = `transform ${ez}, box-shadow ${ZOOM}ms ease`; n.style.transform = ''; }
         img0.style.boxShadow = '0 0 0 1px rgba(233,226,200,.25)';
@@ -628,10 +654,10 @@ html.tune-inapp-lock body{padding-top:120px}
   // ── 搜尋：找到的那張，三顆輪子依序轉過去（能量→質地→色溫），轉的路上照樣掃過沿途的唱片 ──
   let travelTok = 0;
   function cancelTravel() { travelTok++; }
-  function travelTo(c) {
+  function travelTo(c, quiet) {
     const tok = ++travelTok; let k = 0, done;
     const finished = new Promise(r => { done = r; });
-    ensureAudio(); stopPreview(); clearQueue();
+    if (!quiet) ensureAudio(); stopPreview(); clearQueue();   // quiet：不是使用者手勢觸發（網址參數），不能拿來解鎖音訊
     const leg = () => {
       if (tok !== travelTok) { done(false); return; }
       if (k >= 3) { clearQueue(); previewCard = null; scan(c); scheduleUpdate(); armPreview(); done(true); return; }
@@ -654,7 +680,7 @@ html.tune-inapp-lock body{padding-top:120px}
   let SEARCH = null;
   function findCards(q) {
     const toks = String(q).trim().split(/\s+/).map(norm).filter(Boolean); if (!toks.length) return [];
-    if (!SEARCH) SEARCH = CARDS.map(c => ({ c, a: norm(c.card.artist), b: norm(c.card.album) }));
+    if (!SEARCH) SEARCH = CARDS.map(c => ({ c, a: norm(c.card.artist + (c.card.alias || '')), b: norm(c.card.album) }));
     const all = toks.join(''), out = [];
     for (const r of SEARCH) { const hay = r.a + '|' + r.b; if (!toks.every(t => hay.includes(t))) continue;
       let sc = 0; if (r.b === all || r.a === all) sc += 100; if (r.b.startsWith(all)) sc += 40; if (r.a.startsWith(all)) sc += 30; if (hay.includes(all)) sc += 10; sc -= (r.a.length + r.b.length) * 0.01;
@@ -722,14 +748,14 @@ html.tune-inapp-lock body{padding-top:120px}
   // ── 試聽：停下來 0.7 秒就播站上的固定試聽（電台式硬切，不淡入淡出；轉動就停） ──
   let playing = null;
   function stopPreview() { clearTimeout(idleTimer); if (!playing) return; playing = null; try { cfg.player?.stop?.(); } catch (_) {} setNowPlaying(false); }
-  function armPreview() { clearTimeout(idleTimer); idleTimer = setTimeout(() => { if (previewCard && previewCard.cell !== targetCell()) { const c = nearest(); if (c !== previewCard) { scan(c); return; } } if (previewCard) { settleCover(previewCard); showHolo(previewCard); } if (state.audioOn) playPreview(); }, 700); }
+  function armPreview() { clearTimeout(idleTimer); idleTimer = setTimeout(() => { if (previewCard && !previewCard.egg && previewCard.cell !== targetCell()) { const c = nearest(); if (c !== previewCard) { scan(c); return; } } if (previewCard) { settleCover(previewCard); showHolo(previewCard); } if (state.audioOn) playPreview(); }, 700); }
   // 懸浮封面：停穩（跟試聽同一個 0.7 秒）才開機，一轉動就關
   let holoCard = null;
   // 封面放大成螢幕要清楚一點、又不要抓原圖：CAA 取 500 px 縮圖，Apple 換 600×600
   const holoSrc = u => u.replace(/(coverartarchive\.org\/release(?:-group)?\/[^/]+\/front)$/, '$1-500').replace(/\/\d+x\d+bb\./, '/600x600bb.');
   // 封面載好才開機（不然先閃一個 ♪ 再換圖）；卡池沒帶封面就等 settleCover 查到，4 秒還沒有就用 ♪ 開
   let holoT = 0; const HOLO_PH = '<div class="ph"><b style="font-size:3em;font-weight:400;letter-spacing:0">♪</b>NO COVER</div>';
-  function holoOn() { clearTimeout(holoT); if (!holoCard || el.holo.classList.contains('on')) return; placeHolo(); el.holo.classList.remove('closing'); el.holo.classList.add('on'); FX.target = 1; el.now.classList.add('is-tucked'); el.hint.classList.add('is-tucked'); }
+  function holoOn() { clearTimeout(holoT); if (!holoCard || el.holo.classList.contains('on')) return; placeHolo(); if (holoCard.egg) { drawRibbon(); boatStart(); } el.holo.classList.remove('closing'); el.holo.classList.add('on'); FX.target = 1; el.now.classList.add('is-tucked'); el.hint.classList.add('is-tucked'); }
   function holoFace(html) { el.holo.querySelector('.tune-holo-cv').innerHTML = html; }
   function setHoloCover(url) {
     const c = holoCard; if (!c) return;
@@ -751,7 +777,8 @@ html.tune-inapp-lock body{padding-top:120px}
     el.holo.querySelector('.tune-holo-ft .xyz').textContent = `E${fmt(c.x)} T${fmt(c.y)} W${fmt(c.z)}`;
     el.holo.querySelector('.tune-holo-ft .bars').innerHTML = [c.x, c.y, c.z].map(v => `<i style="height:${Math.round(20 + 80 * Math.max(0, Math.min(1, (v + 1) / 2)))}%"></i>`).join('') + '<i style="height:35%"></i><i style="height:70%"></i>';
     { const np = document.getElementById('tuneNp'), hn = document.getElementById('tuneHoloNp'); if (np && hn) { hn.innerHTML = np.innerHTML; hn.className = np.className; } }
-    el.holo.querySelector('.tune-holo-t b').textContent = c.card.album; el.holo.querySelector('.tune-holo-t span').textContent = c.card.artist;
+    el.holo.querySelector('.tune-holo-t b').textContent = c.card.album; el.holo.querySelector('.tune-holo-t span').textContent = c.card.sub || c.card.artist;
+    el.holo.classList.toggle('egg', !!c.egg);
     holoT = setTimeout(() => { if (holoCard === c && !el.holo.classList.contains('on')) { holoFace(HOLO_PH); holoOn(); } }, 4000);
     if (c.card.coverUrl) setHoloCover(c.card.coverUrl);
   }
@@ -890,11 +917,225 @@ html.tune-inapp-lock body{padding-top:120px}
       n.addEventListener('pointerdown', grab); n.addEventListener('pointermove', move); n.addEventListener('pointerup', drop); n.addEventListener('pointercancel', drop);
     }
   }
+  // 洋流飄帶：一條帶子沿板子外圍的圓角矩形繞一圈。「洋流」照實物是直式：沿著帶子方向一字一字往下排（洋在前、流在後），
+  // 每個字轉成「字的下方＝帶子前進方向」，每組後面留空。每格把所有字沿路徑往前推一點（getPointAtLength），兩側小字紋的 dashoffset 跟著推。
+  // 每組間距撐到剛好整除一圈，繞回起點不會跳
+  const RIB = { L: 0, off: 0, last: 0, glyphs: [], unit: 0 };
+  function drawRibbon() {
+    const scr = el.holo.querySelector('.tune-holo-scr'), svg = scr.querySelector('.tune-holo-rib');
+    const W = scr.offsetWidth + 12, H = scr.offsetHeight + 12, r = 12; if (W < 20 || H < 20) return;
+    svg.setAttribute('viewBox', `0 0 ${W + 16} ${H + 16}`);
+    const x0 = 8, y0 = 8, x1 = x0 + W, y1 = y0 + H;
+    const path = svg.querySelector('#tuneRibPath');
+    path.setAttribute('d', `M${x0 + r} ${y0}L${x1 - r} ${y0}A${r} ${r} 0 0 1 ${x1} ${y0 + r}L${x1} ${y1 - r}A${r} ${r} 0 0 1 ${x1 - r} ${y1}L${x0 + r} ${y1}A${r} ${r} 0 0 1 ${x0} ${y1 - r}L${x0} ${y0 + r}A${r} ${r} 0 0 1 ${x0 + r} ${y0}Z`);
+    RIB.L = path.getTotalLength();
+    const n = Math.max(4, Math.round(RIB.L / 34)); RIB.unit = RIB.L / n;   // 一組「洋流」約 34px：兩個字 2×14＋6px（店主：再緊湊一點，但不要擠成一團）
+    const g = svg.querySelector('.glyphs'); g.textContent = ''; RIB.glyphs = [];
+    for (let u = 0; u < n; u++) for (const [ch, d] of [['洋', 0], ['流', 14]]) {
+      const t = document.createElementNS('http://www.w3.org/2000/svg', 'text'); t.textContent = ch; g.appendChild(t); RIB.glyphs.push({ t, s: u * RIB.unit + d }); }
+    const per = RIB.L / Math.round(RIB.L / 9), k = per / 9;   // 兩側小字紋：長短不一的細段，週期撐到整除一圈
+    svg.querySelector('.tick').style.strokeDasharray = [1.4, .7, .8, .6, 2, .7, 1, 1.8].map(v => (v * k).toFixed(3)).join(' ');
+    RIB.path = path; placeGlyphs();
+  }
+  function placeGlyphs() {
+    const P = RIB.path, L = RIB.L; if (!P || !L) return;
+    for (const gl of RIB.glyphs) {
+      const s = ((gl.s + RIB.off) % L + L) % L, a = P.getPointAtLength(s), b = P.getPointAtLength((s + 0.8) % L);
+      const ang = Math.atan2(b.y - a.y, b.x - a.x) * 180 / Math.PI - 90;
+      gl.t.setAttribute('transform', `translate(${a.x.toFixed(1)} ${a.y.toFixed(1)}) rotate(${ang.toFixed(1)})`);
+    }
+  }
+  function stepRibbon(now) {
+    if (!RIB.L || !el.holo.classList.contains('egg')) return;
+    const dt = Math.min(.05, (now - (RIB.last || now)) / 1000); RIB.last = now;
+    if (!RM_FX) RIB.off = (RIB.off + dt * 22) % RIB.L;
+    placeGlyphs();
+    el.holo.querySelector('.tune-holo-rib .tick').style.strokeDashoffset = (-RIB.off).toFixed(1);
+  }
+  // 洋流號 3D：方塊（voxel 玩具感）組成，貼圖用低解析 canvas＋NearestFilter 保持像素感，每個方塊描深色邊。
+  // 單位：1 格。船頭朝 +x，長 14、寬 6。回傳 THREE.Group（原點在船底中央）。
+  function makeYangliuBoat(THREE) {
+    const C = { or: '#ff6a1a', orD: '#d9500d', red: '#e2321f', redD: '#a81e12', wh: '#fbf7f0', bk: '#17130f', glass: '#2a3138', skin: '#f0c8a0', navy: '#25304a' };
+    const FONT = '"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif';
+    const tex = (w, h, draw) => { const c = document.createElement('canvas'); c.width = w; c.height = h; const g = c.getContext('2d'); draw(g, w, h);
+      const t = new THREE.CanvasTexture(c); t.magFilter = THREE.NearestFilter; t.minFilter = THREE.NearestFilter; return t; };
+    const mat = x => new THREE.MeshLambertMaterial(typeof x === 'string' ? { color: x } : { map: x });
+    const grp = new THREE.Group();
+    const box = (sx, sy, sz, x, y, z, m, edge = true) => {
+      const geo = new THREE.BoxGeometry(sx, sy, sz), mesh = new THREE.Mesh(geo, m); mesh.position.set(x, y, z); grp.add(mesh);
+      if (edge) { const e = new THREE.LineSegments(new THREE.EdgesGeometry(geo), new THREE.LineBasicMaterial({ color: 0x17130f })); e.position.copy(mesh.position); grp.add(e); }
+      return mesh; };
+    // ── 貼圖 ──
+    const hullSide = tex(56, 12, (g, w, h) => { g.fillStyle = C.or; g.fillRect(0, 0, w, h); g.fillStyle = 'rgba(0,0,0,.08)'; for (let y = 1; y < h; y += 2) g.fillRect(0, y, w, 1);
+      g.fillStyle = C.wh; for (let k = 0; k < 5; k++) for (let i = 0; i <= 10; i++) g.fillRect(3 + k * 10.5 + i, 1 + Math.round(Math.sin(Math.PI * i / 10) * 1.5), 1, 1);
+      for (const x of [8, 18.5, 29, 39.5, 50]) { g.fillStyle = C.wh; g.beginPath(); g.arc(x, 7, 2.6, 0, 7); g.fill(); g.fillStyle = C.bk; g.beginPath(); g.arc(x, 7, 1.6, 0, 7); g.fill(); } });
+    const sternTex = tex(48, 24, (g, w, h) => { g.fillStyle = C.or; g.fillRect(0, 0, w, h); g.fillStyle = C.bk; g.font = `900 8.5px ${FONT}`; g.textAlign = 'center'; g.textBaseline = 'middle';
+      g.fillText('台北', w / 2, 10); g.fillText('大洋流', w / 2, 19); });
+    const bowTex = tex(24, 12, (g, w, h) => { g.fillStyle = C.or; g.fillRect(0, 0, w, h); });
+    const deckTex = tex(112, 48, (g, w, h) => { g.fillStyle = C.wh; g.fillRect(0, 0, w, h); g.fillStyle = C.or; g.fillRect(3, 3, w - 6, h - 6);
+      g.save(); g.translate(96, 24); g.rotate(-Math.PI / 2); g.fillStyle = C.wh; g.fillRect(-19, -11, 38, 22); g.fillStyle = C.bk; g.font = `900 16px ${FONT}`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText('洋流', 0, 1); g.restore(); });
+    const cabFront = tex(20, 9, (g, w, h) => { g.fillStyle = C.wh; g.fillRect(0, 0, w, h); g.fillStyle = C.glass; g.fillRect(2, 1, 7, 5); g.fillRect(11, 1, 7, 5); g.fillStyle = '#7d8a94'; for (const x of [4, 6, 13, 15]) g.fillRect(x, 2 + (x % 3), 1, 1); });
+    const cabBack = tex(20, 9, (g, w, h) => { g.fillStyle = C.or; g.fillRect(0, 0, w, h); g.fillStyle = C.bk; g.fillRect(2, 1, 8, 3); g.fillStyle = C.wh; for (let x = 3; x < 10; x += 2) g.fillRect(x, 1, 1, 3); g.fillStyle = 'rgba(0,0,0,.08)'; for (let y = 5; y < h; y += 2) g.fillRect(0, y, w, 1); });
+    const windshield = tex(18, 9, (g, w, h) => { g.fillStyle = C.wh; g.fillRect(0, 0, w, h); g.fillStyle = C.glass; g.fillRect(1, 1, w - 2, h - 3); g.fillStyle = '#7d8a94'; for (let i = 0; i < 4; i++) g.fillRect(3 + i * 4, 3 + (i % 2), 2, 1); });
+    const faceTex = tex(8, 8, (g) => { g.fillStyle = C.skin; g.fillRect(0, 0, 8, 8); g.fillStyle = C.bk; g.fillRect(0, 0, 8, 2); g.fillRect(1, 3, 6, 1); g.fillRect(1, 3, 1, 2); g.fillRect(3, 3, 1, 2); g.fillRect(4, 3, 1, 2); g.fillRect(6, 3, 1, 2); g.fillStyle = '#b07050'; g.fillRect(3, 6, 2, 1); });
+    const bannerTex = tex(28, 64, (g, w, h) => { g.fillStyle = C.red; g.fillRect(0, 0, w, h); g.fillStyle = C.wh; g.fillRect(6, 4, 16, 56); g.fillStyle = C.bk; g.font = `900 17px ${FONT}`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText('洋', 14, 19); g.fillText('流', 14, 45); });
+    const sailTex = tex(32, 32, (g, w, h) => { g.fillStyle = C.red; g.fillRect(0, 0, w, h); g.strokeStyle = C.wh; g.lineWidth = 1.2; g.beginPath(); g.arc(20, 21, 6.5, 0, 7); g.stroke();
+      g.fillStyle = C.wh; g.font = `900 8px ${FONT}`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText('順', 20, 21.5); g.font = `700 3px ${FONT}`; g.fillText('SOON', 20, 15.5); });
+    // ── 船體 ──
+    box(12.4, 1.4, 5.2, -0.2, 0.7, 0, mat(C.bk));                                     // 黑船底
+    const hullMats = [mat(bowTex), mat(sternTex), mat(deckTex), mat(C.bk), mat(hullSide), mat(hullSide)];   // +x 船頭、−x 船尾、+y 甲板、−y、+z、−z
+    box(14, 3, 6, 0, 2.9, 0, hullMats);
+    box(14.15, 0.4, 6.15, 0, 4.18, 0, mat(C.wh), false);                            // 上緣白邊（只露側面，頂面低於甲板）
+    // 船艙：前段白（擋風玻璃朝船頭）、後段橘
+    box(4.6, 2.2, 4.4, 1.6, 5.7, 0, [mat(windshield), mat(cabFront), mat(C.wh), mat(C.wh), mat(cabFront), mat(cabFront)]);
+    box(4.6, 2.2, 4.4, -3.0, 5.7, 0, [mat(cabBack), mat(cabBack), mat(C.or), mat(C.or), mat(cabBack), mat(cabBack)]);
+    box(9.6, 0.3, 4.8, -0.7, 6.95, 0, mat(C.wh));                                     // 艙頂
+    // 救生圈（兩側）
+    for (const zs of [1, -1]) { const ring = new THREE.Mesh(new THREE.TorusGeometry(0.75, 0.28, 6, 12), mat(C.wh)); ring.position.set(-4.4, 5.8, zs * 2.32); grp.add(ring);
+      for (let k = 0; k < 4; k++) { const seg = new THREE.Mesh(new THREE.TorusGeometry(0.75, 0.3, 6, 3, Math.PI / 6), mat(C.red)); seg.position.copy(ring.position); seg.rotation.z = k * Math.PI / 2 - Math.PI / 12; grp.add(seg); } }
+    // 掌舵的人
+    box(1.1, 1.1, 1.3, -1.4, 7.65, 0, mat(C.navy));                                   // 腿
+    box(1.3, 1.5, 1.9, -1.4, 8.95, 0, mat(C.red));                                    // 身體
+    box(0.5, 1.2, 0.5, -0.5, 8.9, 0.9, mat(C.red)); box(0.5, 1.2, 0.5, -0.5, 8.9, -0.9, mat(C.red));   // 手臂往前握舵
+    box(1.5, 1.5, 1.5, -1.4, 10.45, 0, [mat(faceTex), mat(C.bk), mat(C.bk), mat(C.skin), mat(C.skin), mat(C.skin)]);   // 頭（臉朝船頭）
+    box(1.6, 0.5, 1.6, -1.5, 11.3, 0, mat(C.bk));                                     // 頭髮
+    // 舵輪
+    const wheel = new THREE.Group(); wheel.position.set(0.1, 8.7, 0); wheel.rotation.y = Math.PI / 2;
+    wheel.add(new THREE.Mesh(new THREE.TorusGeometry(0.9, 0.12, 5, 14), mat(C.red)));
+    for (let k = 0; k < 4; k++) { const s = new THREE.Mesh(new THREE.BoxGeometry(2.3, 0.14, 0.14), mat(C.red)); s.rotation.z = k * Math.PI / 4; wheel.add(s); }
+    grp.add(wheel); box(0.3, 1.6, 0.3, 0.1, 7.7, 0, mat(C.redD));
+    // 帆（紅三角，直邊靠桅杆，在船頭這側）
+    box(0.25, 6.2, 0.25, 3.6, 10.1, 0, mat(C.redD));
+    const tri = new THREE.Shape(); tri.moveTo(0, 0); tri.lineTo(0, 5.4); tri.lineTo(4.6, 0); tri.lineTo(0, 0);
+    const sailGeo = new THREE.ExtrudeGeometry(tri, { depth: 0.25, bevelEnabled: false }); sailGeo.translate(0, 0, -0.125);
+    const uv = sailGeo.attributes.uv; for (let i = 0; i < uv.count; i++) uv.setXY(i, uv.getX(i) / 4.6, uv.getY(i) / 5.4);
+    const sail = new THREE.Mesh(sailGeo, mat(sailTex)); sail.position.set(3.75, 7.5, 0); grp.add(sail);
+    const se = new THREE.LineSegments(new THREE.EdgesGeometry(sailGeo), new THREE.LineBasicMaterial({ color: 0x17130f })); se.position.copy(sail.position); grp.add(se);
+    // 直式「洋流」旗（在人後面）
+    box(0.25, 7.2, 0.25, -3.4, 10.6, 0, mat(C.redD));
+    box(2.6, 5.6, 0.3, -4.85, 11.0, 0, [mat(C.red), mat(C.red), mat(C.red), mat(C.red), mat(bannerTex), mat(bannerTex)]);
+    return grp;
+  }
+
+  // ── 洋流號（2026-10-28 店主：抽到彩蛋時，立體洋流號從星星飛出來，在星圖裡巡弋）──
+  // 店主定稿：很小的星艦（長 0.15 格，立方體邊長 2）、一直飛不回去、真的有前後——飛近時在專輯板子「前面」而且變大，
+  // 飛遠時在板子「後面」而且變小；第一次先從星星飛到前面再開始巡弋。
+  // 做法：船放在星圖的 3D 場景（同一支相機、跟著自轉與透視）。航線用「螢幕位置＋沿視線的深度」定：螢幕 x 在
+  // 「板子旁比較寬的空位」與板子中央之間來回、y 上下擺；深度沿相機→該點的射線前後移動（只改大小與前後，不改螢幕位置）。
+  // 前後兩層：在後面時畫在星圖畫布（被 DOM 板子蓋住）；在前面時整組搬到另一個只有船的場景，畫在疊在板子上方的透明畫布。
+  // 換層只在船不壓在板子上時才換，免得在板子上突然跳到前面。船頭沿速度方向（lookAt），船尾橘色引擎光，後面拖航跡點。
+  const BOAT = { on: false, g: null, trail: null, tpos: null, tcol: null, t0: 0, from: null, front: false };
+  const BOAT_TRAIL = 46, BOAT_LEN = 0.15 / 14, BOAT_OUT = 1.4, BOAT_EMERGE = 3;
+  function boatSetup() {
+    const THREE = global.THREE; if (!THREE || !THREE_OK) return false; if (BOAT.g) return true;
+    const lights = () => { const L = new THREE.Group(); L.add(new THREE.HemisphereLight(0xffffff, 0x8888aa, 0.85)); const dl = new THREE.DirectionalLight(0xffffff, 0.5); dl.position.set(3, 6, 4); L.add(dl); return L; };
+    scene.add(lights());   // 只照得到洋流號（星點與格線不吃光）
+    BOAT.fscene = new THREE.Scene(); BOAT.fscene.add(lights());
+    BOAT.fcv = document.createElement('canvas'); BOAT.fcv.className = 'tune-boat-front'; el.holo.insertAdjacentElement('afterend', BOAT.fcv);
+    try { BOAT.fr = new THREE.WebGLRenderer({ canvas: BOAT.fcv, alpha: true, antialias: true }); BOAT.fr.setClearColor(0x000000, 0); } catch (_) { BOAT.fr = null; }
+    const inner = makeYangliuBoat(THREE); inner.rotation.y = -Math.PI / 2; inner.position.set(0, -5.5, 0);   // 船頭 +x 轉成 +z，配合 lookAt
+    const g = new THREE.Group(); g.add(inner); g.visible = false; scene.add(g); BOAT.g = g; BOAT.inner = inner;
+    const gc = document.createElement('canvas'); gc.width = gc.height = 32; const gg = gc.getContext('2d'), rg = gg.createRadialGradient(16, 16, 0, 16, 16, 16);
+    rg.addColorStop(0, 'rgba(255,240,210,1)'); rg.addColorStop(.3, 'rgba(255,140,40,.8)'); rg.addColorStop(1, 'rgba(255,90,20,0)'); gg.fillStyle = rg; gg.fillRect(0, 0, 32, 32);
+    const glow = new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(gc), transparent: true, depthWrite: false, blending: THREE.AdditiveBlending }));
+    glow.scale.set(9, 9, 1); glow.position.set(0, 2.5, -7.5); g.add(glow); BOAT.glow = glow;   // 船尾（-z）引擎光，跟著船縮放
+    BOAT.tpos = new Float32Array(BOAT_TRAIL * 3); BOAT.tcol = new Float32Array(BOAT_TRAIL * 3);
+    const tg = new THREE.BufferGeometry(); tg.setAttribute('position', new THREE.BufferAttribute(BOAT.tpos, 3)); tg.setAttribute('color', new THREE.BufferAttribute(BOAT.tcol, 3));
+    BOAT.trail = new THREE.Points(tg, new THREE.PointsMaterial({ size: 2, sizeAttenuation: false, vertexColors: true, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending }));
+    BOAT.trail.visible = false; scene.add(BOAT.trail);
+    return true;
+  }
+  // 航線（世界座標）：u＝巡弋時間。螢幕 x 在空位中央↔板子之間來回、y 上下擺；深度沿視線 −1.15（近）～+1.15（遠）。
+  // 深度跟 x 綁在一起，一趟在前、一趟在後交替，前後只在回到空位時翻面（換層不會發生在板子上）。
+  // 店主：「飛到視窗後面要趕快再飛到視線範圍」——在後面那趟只往板子邊緣探一下（.36）就折回空位；在前面那趟才橫越板子（.9）。
+  function boatScreenToWorld(sx, sy) {
+    const gr = el.gl.getBoundingClientRect(), zN = new global.THREE.Vector3(...BOAT.from).project(camera).z;
+    return new global.THREE.Vector3((sx - gr.left) / gr.width * 2 - 1, -((sy - gr.top) / gr.height) * 2 + 1, zN).unproject(camera);
+  }
+  function boatFree() {
+    const gr = el.gl.getBoundingClientRect(), h = el.holo.querySelector('.tune-holo-scr').getBoundingClientRect(), L = h.left - gr.left, Rw = gr.right - h.right;
+    if (BOAT.side == null || (BOAT.side === 'L' ? Rw > L + 40 : L > Rw + 40)) BOAT.side = Rw >= L ? 'R' : 'L';
+    return { gr, h, free: BOAT.side === 'R' ? (h.right + gr.right) / 2 : (gr.left + h.left) / 2, mid: (h.left + h.right) / 2 };
+  }
+  function boatPath(u) {
+    const { gr, free, mid } = boatFree(), c = .29 * u + .6, fr = Math.sin(c / 2) > 0;   // c 從 .6 開始：起點在空位、在前面
+    const sx = free + (mid - free) * (.5 - .5 * Math.cos(c)) * (fr ? .9 : .36), sy = gr.top + gr.height * (.4 + .2 * Math.sin(.37 * u + .5) + .05 * Math.sin(.91 * u));
+    const p0 = boatScreenToWorld(sx, sy), depth = -1.15 * Math.tanh(2.2 * Math.sin(c / 2)) / Math.tanh(2.2);
+    return { p: p0.addScaledVector(p0.clone().sub(camera.position).normalize(), depth), depth };
+  }
+  // 出場（店主：「從星星飛出來，被視窗擋住就繞過視窗往前飛」）：先在星星的深度橫向飛出板子、到旁邊空位（在後層，
+  // 星星被板子蓋住時就是從板子後面鑽出來），再往鏡頭方向飛到前面、接上航線起點。
+  function boatEmergePos(tt) {
+    const THREE = global.THREE, star = new THREE.Vector3(...BOAT.from);
+    const { gr, free } = boatFree();   // 空位那一點每格重算（螢幕座標固定），星圖自轉時才不會被拖著走
+    if (BOAT.oy == null) { const v = star.clone().project(camera); BOAT.oy = Math.max(.22, Math.min(.7, (1 - v.y) / 2)); }
+    const out = boatScreenToWorld(free, gr.top + gr.height * BOAT.oy);
+    if (tt < BOAT_OUT) { const k = tt / BOAT_OUT, e = k * k * (3 - 2 * k); return { p: star.lerp(out, e), depth: 0 }; }
+    const a = boatPath(0), k = (tt - BOAT_OUT) / (BOAT_EMERGE - BOAT_OUT), e = k * k * (3 - 2 * k);
+    return { p: out.lerp(a.p, e), depth: a.depth * e };
+  }
+  function boatStart() {
+    if (RM_FX || BOAT.on || !boatSetup() || litIdx < 0) return;
+    BOAT.on = true; BOAT.t0 = performance.now(); BOAT.from = S3(CARDS[litIdx]); BOAT.hist = []; BOAT.side = null; BOAT.front = false; BOAT.oy = null; BOAT.shown = false;
+    BOAT.g.visible = false; BOAT.trail.visible = false; BOAT.g.scale.setScalar(0.0001); boatLayer(false);
+  }
+  // 洋流號目前在頁面上的座標（測試與示範用）；沒在飛回 null
+  function boatScreenPos() { if (!BOAT.on || !el?.gl) return null; const r = el.gl.getBoundingClientRect(), v = BOAT.g.position.clone().project(camera); return { x: r.left + (v.x + 1) / 2 * r.width, y: r.top + (1 - v.y) / 2 * r.height, front: BOAT.front }; }
+  function boatLayer(front) {
+    BOAT.front = front; const sc = front && BOAT.fr ? BOAT.fscene : scene; if (BOAT.g.parent !== sc) { sc.add(BOAT.g); sc.add(BOAT.trail); }
+    if (BOAT.fcv) BOAT.fcv.style.display = front ? '' : 'none';
+  }
+  function boatOverHolo(sp, m) { const h = el.holo.querySelector('.tune-holo-scr').getBoundingClientRect(); return !!sp && sp.x > h.left - m && sp.x < h.right + m && sp.y > h.top - m && sp.y < h.bottom + m; }
+  // 點洋流號開 current.puma.taipei（2026-10-28 店主）。船很小，點擊範圍取船中心 34px；在後面且被板子蓋住時點不到。
+  // 掛在 stage 的 capture：搶在星圖旋轉與板子拖曳之前。手機上 OrbitControls 的 touchstart 會 preventDefault（click 因此不會來），
+  // 所以點到船時連 touchstart 也攔下，並且觸控在 pointerup（算使用者手勢）就開；滑鼠照常等 click。
+  const BOAT_URL = 'https://current.puma.taipei/';
+  function boatHit(e) { if (!BOAT.on || !BOAT.shown) return false; const sp = boatScreenPos(); if (!sp || (!sp.front && boatOverHolo(sp, 0))) return false; return Math.hypot(e.clientX - sp.x, e.clientY - sp.y) < 34; }
+  function wireBoatClick() {
+    let armed = null; const go = () => { armed = null; global.open(BOAT_URL, '_blank', 'noopener'); };
+    const eat = e => { if (armed) { e.preventDefault?.(); e.stopPropagation(); } };
+    el.stage.addEventListener('pointerdown', e => { armed = boatHit(e) ? { x: e.clientX, y: e.clientY, m: e.pointerType === 'mouse' } : null; eat(e); }, true);
+    el.stage.addEventListener('touchstart', e => { if (armed) e.stopPropagation(); }, { capture: true, passive: true });
+    el.stage.addEventListener('pointerup', e => { if (!armed) return; e.stopPropagation(); if (!armed.m && Math.hypot(e.clientX - armed.x, e.clientY - armed.y) < 16) { go(); armed = { done: true }; } }, true);
+    el.stage.addEventListener('click', e => { if (!armed) return; e.preventDefault(); e.stopPropagation(); if (armed.m) go(); else armed = null; }, true);
+    el.stage.addEventListener('pointermove', e => { if (e.pointerType === 'mouse') el.stage.style.cursor = boatHit(e) ? 'pointer' : ''; }, { passive: true });
+  }
+  function boatStop() { if (!BOAT.on) return; BOAT.on = false; BOAT.g.visible = false; BOAT.trail.visible = false; boatLayer(false); }
+  function stepBoat(now) {
+    if (!BOAT.on) return;
+    // 店主：「前五秒船會飄移、後面的線也會飄移」——板子彈出時星圖還在往旁邊滑、退後縮小，等畫面停穩（最多 2.5 秒）才放船出來
+    if (!BOAT.shown) {
+      if (Math.abs(VIEW.target - VIEW.cur) > 1.5 || Math.abs(VIEW.ztarget - VIEW.z) > .004 || now < FOLLOW.t0 + 250) { if (now - BOAT.t0 < 2500) return; }
+      BOAT.shown = true; BOAT.t0 = now; BOAT.g.visible = true; BOAT.trail.visible = true;
+    }
+    const t = (now - BOAT.t0) / 1000, u = Math.max(0, t - BOAT_EMERGE);
+    const pos = tt => tt < BOAT_EMERGE ? boatEmergePos(tt) : boatPath(tt - BOAT_EMERGE);
+    const A = pos(t), B = pos(t + .06), g = BOAT.g;
+    g.position.copy(A.p); if (A.p.distanceToSquared(B.p) > 1e-10) g.lookAt(B.p);
+    g.scale.setScalar(BOAT_LEN * Math.min(1, t / 1.2)); BOAT.inner.rotation.z = Math.sin(now / 380) * .06; BOAT.glow.material.opacity = .75 + .25 * Math.sin(now / 90);
+    // 前後層：比星星近一點就到前面、遠一點就到後面；壓在板子上時不換
+    const sp = boatScreenPos(), over = boatOverHolo(sp, 14);
+    const want = A.depth < -.15 ? true : A.depth > .15 ? false : BOAT.front;
+    if (want !== BOAT.front && !over) boatLayer(want);
+    // 航跡
+    // 航跡存在「相機座標」：星圖自轉時航跡跟著船在畫面上的路線走，不會被整片轉歪
+    camera.updateMatrixWorld(); const hh = BOAT.hist; hh.push(A.p.clone().applyMatrix4(camera.matrixWorldInverse)); if (hh.length > BOAT_TRAIL) hh.shift();
+    for (let k = 0; k < BOAT_TRAIL; k++) { const v = (hh[hh.length - 1 - k] || hh[0]).clone().applyMatrix4(camera.matrixWorld), a = Math.max(0, 1 - k / BOAT_TRAIL) * .9;
+      BOAT.tpos.set(v.toArray(), k * 3); BOAT.tcol[k * 3] = a; BOAT.tcol[k * 3 + 1] = a * .48; BOAT.tcol[k * 3 + 2] = a * .1; }
+    BOAT.trail.geometry.attributes.position.needsUpdate = true; BOAT.trail.geometry.attributes.color.needsUpdate = true;
+  }
+  // 前層畫布跟星圖畫布同大小、同解析度，用同一支相機畫（在主畫面 render 之後呼叫）
+  function renderBoatFront() {
+    if (!BOAT.on || !BOAT.front || !BOAT.fr) return;
+    const w = el.gl.clientWidth, hh = el.gl.clientHeight, pr = renderer.getPixelRatio();
+    if (BOAT.fw !== w || BOAT.fh !== hh || BOAT.fpr !== pr) { BOAT.fw = w; BOAT.fh = hh; BOAT.fpr = pr; BOAT.fr.setPixelRatio(pr); BOAT.fr.setSize(w, hh, false); }
+    BOAT.fr.render(BOAT.fscene, camera);
+  }
   function hideHolo() {
     // 縮回「現在」星星的位置；縮完（0.25 秒）星圖才回到原位、原大小
     if (el.holo?.classList.contains('on')) { const sp = litScreenPos(), hr = el.holo.getBoundingClientRect(); if (sp) { el.holo.style.setProperty('--dx', (sp.x - hr.left - hr.width / 2).toFixed(1) + 'px'); el.holo.style.setProperty('--dy', (sp.y - hr.top - hr.height / 2).toFixed(1) + 'px'); } }
     if (holoCard || el.holo?.classList.contains('on')) { clearTimeout(VIEW.backT); clearTimeout(VIEW.zoomT); VIEW.backT = setTimeout(() => { if (!holoCard || !el.holo.classList.contains('on')) { VIEW.target = 0; VIEW.ytarget = 0; VIEW.ztarget = 1; } }, 250); }
-    FOLLOW.on = false; FOLLOW.drag = null; holoCard = null; FX.target = 0; clearTimeout(holoT);
+    FOLLOW.on = false; FOLLOW.drag = null; holoCard = null; FX.target = 0; boatStop(); clearTimeout(holoT);
     if (el.holo?.classList.contains('on') && !el.holo.classList.contains('lift')) el.holo.classList.add('closing');   // 就這張放大時（lift）板子已藏起來，不用縮
     el.holo?.classList.remove('on', 'lift'); el.now?.classList.remove('is-tucked'); el.hint?.classList.remove('is-tucked'); }
   function setHoloUI() { el.holoBtn.setAttribute('aria-pressed', String(state.holo)); }
@@ -962,6 +1203,7 @@ html.tune-inapp-lock body{padding-top:120px}
   }
   function emit(c) {
     if (!c) return;
+    if (c.egg) { global.open(c.card.link, '_blank', 'noopener'); return; }   // 彩蛋不進結果頁，就這張直接開政策島（2026-10-28 店主）
     state.seen.push(c.i); if (state.seen.length > 200) state.seen.shift();
     // 星圖上正在試聽的就是這張：不停，交給結果頁接著播（2026-10-25 店主：按就這張後試聽不要從頭開始）
     const continuing = playing === c;
@@ -1010,7 +1252,7 @@ html.tune-inapp-lock body{padding-top:120px}
       dx: host.querySelector('#tuneDx'), dy: host.querySelector('#tuneDy'), dz: host.querySelector('#tuneDz'), dcell: host.querySelector('#tuneDcell'), cellStrip: host.querySelector('#tuneCellStrip'),
       mode: host.querySelector('#tuneMode'), lever: host.querySelector('#tuneLever'), hint: host.querySelector('#tuneHint'), search: host.querySelector('#tuneSearch'), searchGo: host.querySelector('#tuneSearchGo'), sugg: host.querySelector('#tuneSugg'), swTop: host.querySelector('#tuneSwTop'), swBot: host.querySelector('#tuneSwBot'), ledTop: host.querySelector('#tuneLedTop'), ledBot: host.querySelector('#tuneLedBot'), draw: host.querySelector('#tuneDraw'), console: host.querySelector('#tuneConsole'), holo: host.querySelector('#tuneHolo'), fx: host.querySelector('#tuneHoloFx'), holoBtn: host.querySelector('#tuneHoloBtn') };
     trackViewport(host);
-    wireHoloDrag();
+    wireHoloDrag(); wireBoatClick();
     el.back.onclick = () => cfg.onBack?.();
     // 喇叭鈕與站上頂欄的「自動試聽」開關是同一顆（2026-10-22 店主：切到串流後站上自動關掉網頁音源，
     // 頻率選歌就沒聲音，按喇叭也沒反應）。按下去先回寫站上的開關，再照新狀態開停。
@@ -1020,7 +1262,7 @@ html.tune-inapp-lock body{padding-top:120px}
       if (!state.holo) hideHolo(); else if (previewCard && performance.now() - lastTurn > 700) showHolo(previewCard); };
     el.mode.onclick = () => { state.fine = !state.fine; setModeUI(true); sfxClick(); };
     el.now.onclick = () => { if (previewCard) emit(previewCard); };
-    el.draw.onclick = () => { if (!previewCard) return; if (previewCard.cell !== targetCell()) scan(nearest()); emit(previewCard); };
+    el.draw.onclick = () => { if (!previewCard) return; if (!previewCard.egg && previewCard.cell !== targetCell()) scan(nearest()); emit(previewCard); };
     setAudioUI(); setModeUI(); setHoloUI();
     let data;
     // 星圖程式庫（three.js，CDN）跟卡池資料一起等，但最多等 8 秒：等不到就只用面板。
@@ -1047,6 +1289,11 @@ html.tune-inapp-lock body{padding-top:120px}
     state.built = true;
     updateScene();
     if (new URLSearchParams(global.location.search).get('demo') === '1') runDemo(true);
+    // 測試連結：?q=關鍵字 一進來就搜尋並轉到第一筆；?egg=1＝搜「台北順起來」（2026-10-28 店主：測試連結一進去就到彩蛋）
+    { const qs = new URLSearchParams(global.location.search), q0 = qs.get('q') || (qs.get('egg') === '1' ? '台北順起來' : '');
+      // 畫面真的出現後 1 秒才搜（店主：「大概等一秒鐘就搜尋」）；不走 ensureAudio——沒有手勢時解鎖音訊在手機上會失敗、還會把真正的第一次點擊用掉
+      if (q0) { const t0 = performance.now(), go = () => { if (!state.visible || performance.now() - t0 < 1000) { setTimeout(go, 100); return; }
+        try { const c = findCards(q0)[0]; if (c) { el.search.value = `${c.card.artist} — ${c.card.album}`; travelTo(c, true); } } catch (e) { console.warn('[tune] ?q 搜尋失敗', e); } }; go(); } }
     // 主畫面 App 帶不了網址參數：左上角讀數（本來就不能按）1.5 秒內連點三下也會開跑，這三下本身就是出聲要的手勢
     { let taps = []; el.readout.addEventListener('pointerdown', () => { const now = performance.now(); taps = taps.filter(t => now - t < 1500); taps.push(now); if (taps.length >= 3) { taps = []; runDemo(false); } }); }
   }
@@ -1121,5 +1368,5 @@ html.tune-inapp-lock body{padding-top:120px}
   }
   function stop() { state.visible = false; cancelTravel(); stopPreview(); sfxStop(); hideHolo(); inappLock(false); }
 
-  global.DipTune = { configure, start, stop, pickAgain, setAudio, litScreenPos, warpStart, CELL_COLOR, get state() { return state; } };
+  global.DipTune = { configure, start, stop, pickAgain, setAudio, litScreenPos, boatScreenPos, warpStart, CELL_COLOR, get state() { return state; } };
 })(window);
