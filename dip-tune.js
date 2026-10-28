@@ -1037,11 +1037,21 @@ html.tune-inapp-lock body{padding-top:120px}
     BOAT.trail.visible = false; scene.add(BOAT.trail);
     return true;
   }
-  const BOAT_LEN = 0.24 / 14;
-  const wander = t => [.82 * Math.sin(.31 * t + 1.1), .5 * Math.sin(.23 * t + .4) + .12 * Math.sin(.61 * t), .82 * Math.sin(.19 * t + 2.3)];
+  const BOAT_LEN = 0.3 / 14;
+  // 巡弋中心＝星圖上「板子旁邊比較寬的那條空位」正中、跟星星同深度的那一點（每格重算、慢慢跟過去，板子擺動也跟著），
+  // 船繞著它飛、偶爾擺進板子後面。2026-10-28 店主：「根本沒有星艦」——原本繞立方體中心，手機上 30 秒 60 次取樣全部躲在板子後面
+  const wander = (t, c) => [c[0] + .34 * Math.sin(.42 * t + 1.1), c[1] + .26 * Math.sin(.31 * t + .4) + .06 * Math.sin(.83 * t), c[2] + .34 * Math.sin(.27 * t + 2.3)];
+  function boatCenter() {
+    const THREE = global.THREE, gr = el.gl.getBoundingClientRect(), h = el.holo.querySelector('.tune-holo-scr').getBoundingClientRect();
+    const L = h.left - gr.left, Rw = gr.right - h.right;
+    if (BOAT.side == null || (BOAT.side === 'L' ? Rw > L + 40 : L > Rw + 40)) BOAT.side = Rw >= L ? 'R' : 'L';
+    const sx = BOAT.side === 'R' ? (h.right + gr.right) / 2 : (gr.left + h.left) / 2, sy = gr.top + gr.height * .42;
+    const z = new THREE.Vector3(...BOAT.from).project(camera).z;
+    return new THREE.Vector3((sx - gr.left) / gr.width * 2 - 1, -((sy - gr.top) / gr.height) * 2 + 1, z).unproject(camera).toArray();
+  }
   function boatStart() {
     if (RM_FX || BOAT.on || !boatSetup() || litIdx < 0) return;
-    BOAT.on = true; BOAT.t0 = performance.now(); BOAT.from = S3(CARDS[litIdx]); BOAT.hist = [];
+    BOAT.on = true; BOAT.t0 = performance.now(); BOAT.from = S3(CARDS[litIdx]); BOAT.hist = []; BOAT.c = null; BOAT.side = null; BOAT.last = 0;
     BOAT.g.visible = true; BOAT.trail.visible = true; BOAT.g.scale.setScalar(0.0001);
   }
   // 洋流號目前在頁面上的座標（測試與示範用）；沒在飛回 null
@@ -1049,7 +1059,9 @@ html.tune-inapp-lock body{padding-top:120px}
   function boatStop() { if (!BOAT.on) return; BOAT.on = false; BOAT.g.visible = false; BOAT.trail.visible = false; }
   function stepBoat(now) {
     if (!BOAT.on) return;
-    const t = (now - BOAT.t0) / 1000, at = tt => { const w = wander(tt + 4), k = Math.min(1, tt / 2.2), e = k * k * (3 - 2 * k); return w.map((v, j) => BOAT.from[j] + (v - BOAT.from[j]) * e); };
+    const c = boatCenter(), dt = Math.min(.05, (now - (BOAT.last || now)) / 1000); BOAT.last = now;
+    if (!BOAT.c) BOAT.c = c; else BOAT.c = BOAT.c.map((v, j) => v + (c[j] - v) * Math.min(1, dt * 1.5));
+    const t = (now - BOAT.t0) / 1000, at = tt => { const w = wander(tt + 4, BOAT.c), k = Math.min(1, tt / 2.2), e = k * k * (3 - 2 * k); return w.map((v, j) => BOAT.from[j] + (v - BOAT.from[j]) * e); };
     const p = at(t), q = at(t + .05), g = BOAT.g;
     g.position.set(p[0], p[1], p[2]); g.lookAt(q[0], q[1], q[2]);
     g.scale.setScalar(BOAT_LEN * Math.min(1, t / 1.2)); BOAT.inner.rotation.z = Math.sin(now / 380) * .06; BOAT.glow.material.opacity = .75 + .25 * Math.sin(now / 90);
