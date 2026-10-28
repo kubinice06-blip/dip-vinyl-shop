@@ -352,7 +352,7 @@ html.tune-inapp-lock body{padding-top:120px}
     marker = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, transparent: true, depthTest: false, color: 0xffffff })); marker.scale.set(0, 0, 1); scene.add(marker);
     const resize = () => { const r = stage.getBoundingClientRect(); if (r.width < 2 || r.height < 2) return; renderer.setSize(r.width, r.height, false); camera.aspect = r.width / r.height; camera.updateProjectionMatrix(); pmat.uniforms.uScale.value = r.height * renderer.getPixelRatio() / 160; };
     new ResizeObserver(resize).observe(stage); resize();
-    (function loop() { if (state.visible) { if (controls) controls.update(); slideView(); renderer.render(scene, camera); if (holoCard) followHolo(); if (holoCard || FX.level > 0) drawFx(); if (holoCard?.egg) stepRibbon(performance.now()); } requestAnimationFrame(loop); })();
+    (function loop() { if (state.visible) { if (controls) controls.update(); slideView(); renderer.render(scene, camera); if (holoCard) followHolo(); if (holoCard || FX.level > 0) drawFx(); if (holoCard?.egg) stepRibbon(performance.now()); stepBoat(performance.now()); } requestAnimationFrame(loop); })();
     THREE_OK = true;
     return true;
   }
@@ -446,7 +446,7 @@ html.tune-inapp-lock body{padding-top:120px}
       const ready = hasCover && cover.decode ? Promise.race([cover.decode().catch(() => {}), new Promise(r => setTimeout(r, 250))]) : Promise.resolve();
       zoomDone = ready.then(() => new Promise(r => setTimeout(r, ZOOM + 60)));
       ready.then(() => requestAnimationFrame(() => {
-        el.holo.classList.add('lift'); FX.target = 0; for (const n of [img0, tAlbum, tArtist, tYear]) n.style.visibility = '';
+        el.holo.classList.add('lift'); FX.target = 0; boatStop(); for (const n of [img0, tAlbum, tArtist, tYear]) n.style.visibility = '';
         intro.style.transition = `background-color ${ZOOM}ms ease`; intro.style.backgroundColor = 'rgb(6,6,9)';
         for (const n of [img0, tAlbum, tArtist]) { n.style.transition = `transform ${ez}, box-shadow ${ZOOM}ms ease`; n.style.transform = ''; }
         img0.style.boxShadow = '0 0 0 1px rgba(233,226,200,.25)';
@@ -753,7 +753,7 @@ html.tune-inapp-lock body{padding-top:120px}
   const holoSrc = u => u.replace(/(coverartarchive\.org\/release(?:-group)?\/[^/]+\/front)$/, '$1-500').replace(/\/\d+x\d+bb\./, '/600x600bb.');
   // 封面載好才開機（不然先閃一個 ♪ 再換圖）；卡池沒帶封面就等 settleCover 查到，4 秒還沒有就用 ♪ 開
   let holoT = 0; const HOLO_PH = '<div class="ph"><b style="font-size:3em;font-weight:400;letter-spacing:0">♪</b>NO COVER</div>';
-  function holoOn() { clearTimeout(holoT); if (!holoCard || el.holo.classList.contains('on')) return; placeHolo(); if (holoCard.egg) drawRibbon(); el.holo.classList.remove('closing'); el.holo.classList.add('on'); FX.target = 1; el.now.classList.add('is-tucked'); el.hint.classList.add('is-tucked'); }
+  function holoOn() { clearTimeout(holoT); if (!holoCard || el.holo.classList.contains('on')) return; placeHolo(); if (holoCard.egg) { drawRibbon(); boatStart(); } el.holo.classList.remove('closing'); el.holo.classList.add('on'); FX.target = 1; el.now.classList.add('is-tucked'); el.hint.classList.add('is-tucked'); }
   function holoFace(html) { el.holo.querySelector('.tune-holo-cv').innerHTML = html; }
   function setHoloCover(url) {
     const c = holoCard; if (!c) return;
@@ -950,11 +950,138 @@ html.tune-inapp-lock body{padding-top:120px}
     placeGlyphs();
     el.holo.querySelector('.tune-holo-rib .tick').style.strokeDashoffset = (-RIB.off).toFixed(1);
   }
+  // 洋流號 3D：方塊（voxel 玩具感）組成，貼圖用低解析 canvas＋NearestFilter 保持像素感，每個方塊描深色邊。
+  // 單位：1 格。船頭朝 +x，長 14、寬 6。回傳 THREE.Group（原點在船底中央）。
+  function makeYangliuBoat(THREE) {
+    const C = { or: '#ff6a1a', orD: '#d9500d', red: '#e2321f', redD: '#a81e12', wh: '#fbf7f0', bk: '#17130f', glass: '#2a3138', skin: '#f0c8a0', navy: '#25304a' };
+    const FONT = '"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif';
+    const tex = (w, h, draw) => { const c = document.createElement('canvas'); c.width = w; c.height = h; const g = c.getContext('2d'); draw(g, w, h);
+      const t = new THREE.CanvasTexture(c); t.magFilter = THREE.NearestFilter; t.minFilter = THREE.NearestFilter; return t; };
+    const mat = x => new THREE.MeshLambertMaterial(typeof x === 'string' ? { color: x } : { map: x });
+    const grp = new THREE.Group();
+    const box = (sx, sy, sz, x, y, z, m, edge = true) => {
+      const geo = new THREE.BoxGeometry(sx, sy, sz), mesh = new THREE.Mesh(geo, m); mesh.position.set(x, y, z); grp.add(mesh);
+      if (edge) { const e = new THREE.LineSegments(new THREE.EdgesGeometry(geo), new THREE.LineBasicMaterial({ color: 0x17130f })); e.position.copy(mesh.position); grp.add(e); }
+      return mesh; };
+    // ── 貼圖 ──
+    const hullSide = tex(56, 12, (g, w, h) => { g.fillStyle = C.or; g.fillRect(0, 0, w, h); g.fillStyle = 'rgba(0,0,0,.08)'; for (let y = 1; y < h; y += 2) g.fillRect(0, y, w, 1);
+      g.fillStyle = C.wh; for (let k = 0; k < 5; k++) for (let i = 0; i <= 10; i++) g.fillRect(3 + k * 10.5 + i, 1 + Math.round(Math.sin(Math.PI * i / 10) * 1.5), 1, 1);
+      for (const x of [8, 18.5, 29, 39.5, 50]) { g.fillStyle = C.wh; g.beginPath(); g.arc(x, 7, 2.6, 0, 7); g.fill(); g.fillStyle = C.bk; g.beginPath(); g.arc(x, 7, 1.6, 0, 7); g.fill(); } });
+    const sternTex = tex(48, 24, (g, w, h) => { g.fillStyle = C.or; g.fillRect(0, 0, w, h); g.fillStyle = C.bk; g.font = `900 8.5px ${FONT}`; g.textAlign = 'center'; g.textBaseline = 'middle';
+      g.fillText('台北', w / 2, 10); g.fillText('大洋流', w / 2, 19); });
+    const bowTex = tex(24, 12, (g, w, h) => { g.fillStyle = C.or; g.fillRect(0, 0, w, h); });
+    const deckTex = tex(112, 48, (g, w, h) => { g.fillStyle = C.wh; g.fillRect(0, 0, w, h); g.fillStyle = C.or; g.fillRect(3, 3, w - 6, h - 6);
+      g.save(); g.translate(96, 24); g.rotate(-Math.PI / 2); g.fillStyle = C.wh; g.fillRect(-19, -11, 38, 22); g.fillStyle = C.bk; g.font = `900 16px ${FONT}`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText('洋流', 0, 1); g.restore(); });
+    const cabFront = tex(20, 9, (g, w, h) => { g.fillStyle = C.wh; g.fillRect(0, 0, w, h); g.fillStyle = C.glass; g.fillRect(2, 1, 7, 5); g.fillRect(11, 1, 7, 5); g.fillStyle = '#7d8a94'; for (const x of [4, 6, 13, 15]) g.fillRect(x, 2 + (x % 3), 1, 1); });
+    const cabBack = tex(20, 9, (g, w, h) => { g.fillStyle = C.or; g.fillRect(0, 0, w, h); g.fillStyle = C.bk; g.fillRect(2, 1, 8, 3); g.fillStyle = C.wh; for (let x = 3; x < 10; x += 2) g.fillRect(x, 1, 1, 3); g.fillStyle = 'rgba(0,0,0,.08)'; for (let y = 5; y < h; y += 2) g.fillRect(0, y, w, 1); });
+    const windshield = tex(18, 9, (g, w, h) => { g.fillStyle = C.wh; g.fillRect(0, 0, w, h); g.fillStyle = C.glass; g.fillRect(1, 1, w - 2, h - 3); g.fillStyle = '#7d8a94'; for (let i = 0; i < 4; i++) g.fillRect(3 + i * 4, 3 + (i % 2), 2, 1); });
+    const faceTex = tex(8, 8, (g) => { g.fillStyle = C.skin; g.fillRect(0, 0, 8, 8); g.fillStyle = C.bk; g.fillRect(0, 0, 8, 2); g.fillRect(1, 3, 6, 1); g.fillRect(1, 3, 1, 2); g.fillRect(3, 3, 1, 2); g.fillRect(4, 3, 1, 2); g.fillRect(6, 3, 1, 2); g.fillStyle = '#b07050'; g.fillRect(3, 6, 2, 1); });
+    const bannerTex = tex(28, 64, (g, w, h) => { g.fillStyle = C.red; g.fillRect(0, 0, w, h); g.fillStyle = C.wh; g.fillRect(6, 4, 16, 56); g.fillStyle = C.bk; g.font = `900 17px ${FONT}`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText('洋', 14, 19); g.fillText('流', 14, 45); });
+    const sailTex = tex(32, 32, (g, w, h) => { g.fillStyle = C.red; g.fillRect(0, 0, w, h); g.strokeStyle = C.wh; g.lineWidth = 1.2; g.beginPath(); g.arc(20, 21, 6.5, 0, 7); g.stroke();
+      g.fillStyle = C.wh; g.font = `900 8px ${FONT}`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText('順', 20, 21.5); g.font = `700 3px ${FONT}`; g.fillText('SOON', 20, 15.5); });
+    // ── 船體 ──
+    box(12.4, 1.4, 5.2, -0.2, 0.7, 0, mat(C.bk));                                     // 黑船底
+    const hullMats = [mat(bowTex), mat(sternTex), mat(deckTex), mat(C.bk), mat(hullSide), mat(hullSide)];   // +x 船頭、−x 船尾、+y 甲板、−y、+z、−z
+    box(14, 3, 6, 0, 2.9, 0, hullMats);
+    box(14.15, 0.4, 6.15, 0, 4.18, 0, mat(C.wh), false);                            // 上緣白邊（只露側面，頂面低於甲板）
+    // 船艙：前段白（擋風玻璃朝船頭）、後段橘
+    box(4.6, 2.2, 4.4, 1.6, 5.7, 0, [mat(windshield), mat(cabFront), mat(C.wh), mat(C.wh), mat(cabFront), mat(cabFront)]);
+    box(4.6, 2.2, 4.4, -3.0, 5.7, 0, [mat(cabBack), mat(cabBack), mat(C.or), mat(C.or), mat(cabBack), mat(cabBack)]);
+    box(9.6, 0.3, 4.8, -0.7, 6.95, 0, mat(C.wh));                                     // 艙頂
+    // 救生圈（兩側）
+    for (const zs of [1, -1]) { const ring = new THREE.Mesh(new THREE.TorusGeometry(0.75, 0.28, 6, 12), mat(C.wh)); ring.position.set(-4.4, 5.8, zs * 2.32); grp.add(ring);
+      for (let k = 0; k < 4; k++) { const seg = new THREE.Mesh(new THREE.TorusGeometry(0.75, 0.3, 6, 3, Math.PI / 6), mat(C.red)); seg.position.copy(ring.position); seg.rotation.z = k * Math.PI / 2 - Math.PI / 12; grp.add(seg); } }
+    // 掌舵的人
+    box(1.1, 1.1, 1.3, -1.4, 7.65, 0, mat(C.navy));                                   // 腿
+    box(1.3, 1.5, 1.9, -1.4, 8.95, 0, mat(C.red));                                    // 身體
+    box(0.5, 1.2, 0.5, -0.5, 8.9, 0.9, mat(C.red)); box(0.5, 1.2, 0.5, -0.5, 8.9, -0.9, mat(C.red));   // 手臂往前握舵
+    box(1.5, 1.5, 1.5, -1.4, 10.45, 0, [mat(faceTex), mat(C.bk), mat(C.bk), mat(C.skin), mat(C.skin), mat(C.skin)]);   // 頭（臉朝船頭）
+    box(1.6, 0.5, 1.6, -1.5, 11.3, 0, mat(C.bk));                                     // 頭髮
+    // 舵輪
+    const wheel = new THREE.Group(); wheel.position.set(0.1, 8.7, 0); wheel.rotation.y = Math.PI / 2;
+    wheel.add(new THREE.Mesh(new THREE.TorusGeometry(0.9, 0.12, 5, 14), mat(C.red)));
+    for (let k = 0; k < 4; k++) { const s = new THREE.Mesh(new THREE.BoxGeometry(2.3, 0.14, 0.14), mat(C.red)); s.rotation.z = k * Math.PI / 4; wheel.add(s); }
+    grp.add(wheel); box(0.3, 1.6, 0.3, 0.1, 7.7, 0, mat(C.redD));
+    // 帆（紅三角，直邊靠桅杆，在船頭這側）
+    box(0.25, 6.2, 0.25, 3.6, 10.1, 0, mat(C.redD));
+    const tri = new THREE.Shape(); tri.moveTo(0, 0); tri.lineTo(0, 5.4); tri.lineTo(4.6, 0); tri.lineTo(0, 0);
+    const sailGeo = new THREE.ExtrudeGeometry(tri, { depth: 0.25, bevelEnabled: false }); sailGeo.translate(0, 0, -0.125);
+    const uv = sailGeo.attributes.uv; for (let i = 0; i < uv.count; i++) uv.setXY(i, uv.getX(i) / 4.6, uv.getY(i) / 5.4);
+    const sail = new THREE.Mesh(sailGeo, mat(sailTex)); sail.position.set(3.75, 7.5, 0); grp.add(sail);
+    const se = new THREE.LineSegments(new THREE.EdgesGeometry(sailGeo), new THREE.LineBasicMaterial({ color: 0x17130f })); se.position.copy(sail.position); grp.add(se);
+    // 直式「洋流」旗（在人後面）
+    box(0.25, 7.2, 0.25, -3.4, 10.6, 0, mat(C.redD));
+    box(2.6, 5.6, 0.3, -4.85, 11.0, 0, [mat(C.red), mat(C.red), mat(C.red), mat(C.red), mat(bannerTex), mat(bannerTex)]);
+    return grp;
+  }
+
+  // ── 洋流號（2026-10-28 店主：抽到彩蛋時，立體洋流號從星星飛出來，巡弋星圖、飛過介面）──
+  // 獨立一張蓋滿視窗的透明 WebGL 畫布（不吃點擊），正交相機、單位＝螢幕 px；船本身是方塊組成的 3D 模型，
+  // 斜 30° 俯視＋依前進方向轉向。航線控制點有兩種：星圖裡的 3D 點（每格用星圖相機投影，跟著星圖自轉）與介面上的點
+  // （面板與板子的位置），用 Catmull-Rom 串成一條：星星 → 星圖繞一圈 → 飛過面板 → 經過板子 → 回到星星。一趟約 11 秒，停 3 秒再出航。
+  const BOAT = { on: false, cv: null, trail: null, tg: null, r: null, scene: null, cam: null, root: null, yawG: null, t0: 0, yaw: 0, pts: [], W: 0, H: 0 };
+  const VOY_SEG = 1.35, VOY_REST = 3;
+  function boatSetup() {
+    const THREE = global.THREE; if (!THREE || BOAT.r) return !!BOAT.r;
+    const wrap = document.createElement('div'); wrap.style.cssText = 'position:fixed;inset:0;z-index:2147482990;pointer-events:none;display:none';
+    BOAT.trail = document.createElement('canvas'); BOAT.trail.style.cssText = 'position:absolute;inset:0;width:100%;height:100%';
+    BOAT.cv = document.createElement('canvas'); BOAT.cv.style.cssText = 'position:absolute;inset:0;width:100%;height:100%';
+    wrap.append(BOAT.trail, BOAT.cv); document.body.appendChild(wrap); BOAT.wrap = wrap; BOAT.tg = BOAT.trail.getContext('2d');
+    try { BOAT.r = new THREE.WebGLRenderer({ canvas: BOAT.cv, alpha: true, antialias: true }); } catch (_) { return false; }
+    BOAT.r.setClearColor(0x000000, 0);
+    BOAT.scene = new THREE.Scene(); BOAT.scene.add(new THREE.HemisphereLight(0xffffff, 0x8888aa, 0.8)); const dl = new THREE.DirectionalLight(0xffffff, 0.55); dl.position.set(4, 10, 8); BOAT.scene.add(dl);
+    BOAT.cam = new THREE.OrthographicCamera(0, 100, 0, -100, -3000, 3000); BOAT.cam.position.set(0, 0, 1000);
+    BOAT.root = new THREE.Group(); const tilt = new THREE.Group(); tilt.rotation.x = 0.52; BOAT.yawG = new THREE.Group();
+    const boat = makeYangliuBoat(THREE); boat.position.set(0, -5.5, 0); BOAT.boat = boat;
+    BOAT.yawG.add(boat); tilt.add(BOAT.yawG); BOAT.root.add(tilt); BOAT.scene.add(BOAT.root);
+    return true;
+  }
+  function boatResize() {
+    const W = global.innerWidth, H = global.innerHeight, D = Math.min(2, global.devicePixelRatio || 1); if (W === BOAT.W && H === BOAT.H) return;
+    BOAT.W = W; BOAT.H = H; BOAT.r.setPixelRatio(D); BOAT.r.setSize(W, H, false); BOAT.trail.width = W * D; BOAT.trail.height = H * D; BOAT.tg.setTransform(D, 0, 0, D, 0, 0);
+    Object.assign(BOAT.cam, { left: 0, right: W, top: 0, bottom: -H }); BOAT.cam.updateProjectionMatrix();
+  }
+  function boatStart() {
+    if (RM_FX || BOAT.on || !THREE_OK || !boatSetup()) return;
+    BOAT.on = true; BOAT.t0 = performance.now(); BOAT.trailPts = []; BOAT.wrap.style.display = ''; boatResize();
+  }
+  function boatStop() { if (!BOAT.on) return; BOAT.on = false; BOAT.wrap.style.display = 'none'; BOAT.tg?.clearRect(0, 0, BOAT.W, BOAT.H); }
+  // 航線控制點（每格重算，星圖在轉、面板會動）：回傳 [x, y, 大小倍率]
+  function boatPoints() {
+    const THREE = global.THREE, gr = el.gl.getBoundingClientRect(), sp = litScreenPos();
+    const star = sp ? [sp.x, sp.y, .55] : [gr.left + gr.width / 2, gr.top + gr.height / 2, .55];
+    const P3 = ([x, y, z]) => { const v = new THREE.Vector3(x, y, z), d = v.distanceTo(camera.position); v.project(camera);
+      return [gr.left + (v.x + 1) / 2 * gr.width, gr.top + (1 - v.y) / 2 * gr.height, Math.max(.45, Math.min(1.3, 3.6 / d))]; };
+    const cr = el.console.getBoundingClientRect(), hr = el.holo.querySelector('.tune-holo-scr').getBoundingClientRect();
+    return [star, P3([1.25, .35, .7]), P3([.3, .95, -1.25]), P3([-1.3, .15, -.45]), P3([-.7, -.6, 1.15]),
+      [cr.left + cr.width * .18, cr.top + cr.height * .32, 1.15], [cr.left + cr.width * .72, cr.top + cr.height * .5, 1.2],
+      [hr.right + 10, hr.top + hr.height * .35, 1], star];
+  }
+  const crom = (a, b, c, d, t) => { const t2 = t * t, t3 = t2 * t; return .5 * ((2 * b) + (-a + c) * t + (2 * a - 5 * b + 4 * c - d) * t2 + (-a + 3 * b - 3 * c + d) * t3); };
+  function stepBoat(now) {
+    if (!BOAT.on) return; boatResize();
+    const P = boatPoints(), nSeg = P.length - 1, dur = nSeg * VOY_SEG, cyc = dur + VOY_REST, t = ((now - BOAT.t0) / 1000) % cyc;
+    BOAT.tg.clearRect(0, 0, BOAT.W, BOAT.H);
+    if (t > dur) { BOAT.root.visible = false; BOAT.trailPts = []; BOAT.r.render(BOAT.scene, BOAT.cam); return; }
+    const u = t / VOY_SEG, i = Math.min(nSeg - 1, Math.floor(u)), f = u - i, q = k => P[Math.max(0, Math.min(nSeg, k))];
+    const at = j => crom(q(i - 1)[j], q(i)[j], q(i + 1)[j], q(i + 2)[j], f);
+    const x = at(0), y = at(1), sc = at(2), grow = Math.min(1, t / .7, (dur - t) / .7);
+    // 前進方向：取一點點之後的位置
+    const f2 = Math.min(1, f + .04), x2 = crom(q(i - 1)[0], q(i)[0], q(i + 1)[0], q(i + 2)[0], f2), y2 = crom(q(i - 1)[1], q(i)[1], q(i + 1)[1], q(i + 2)[1], f2);
+    if (Math.hypot(x2 - x, y2 - y) > .3) { const target = -Math.atan2((y2 - y) * 1.8, x2 - x); let dy = target - BOAT.yaw; while (dy > Math.PI) dy -= 2 * Math.PI; while (dy < -Math.PI) dy += 2 * Math.PI; BOAT.yaw += dy * .12; }
+    const base = Math.max(56, Math.min(92, BOAT.W * .17)) / 14, s = base * sc * Math.max(.02, grow), bob = Math.sin(now / 260) * 1.5;
+    BOAT.root.visible = true; BOAT.root.position.set(x, -(y + bob), 0); BOAT.root.scale.setScalar(s); BOAT.yawG.rotation.y = BOAT.yaw; BOAT.boat.rotation.x = Math.sin(now / 420) * .05;
+    // 航跡：橘色光點，越舊越淡
+    const tp = BOAT.trailPts; tp.push([x, y + 4 * sc]); if (tp.length > 34) tp.shift();
+    tp.forEach(([tx, ty], k) => { const a = k / tp.length; BOAT.tg.fillStyle = `rgba(255,122,26,${(a * .55 * grow).toFixed(3)})`; const r = 1 + a * 1.6; BOAT.tg.beginPath(); BOAT.tg.arc(tx, ty, r, 0, 6.283); BOAT.tg.fill(); });
+    BOAT.r.render(BOAT.scene, BOAT.cam);
+  }
+
   function hideHolo() {
     // 縮回「現在」星星的位置；縮完（0.25 秒）星圖才回到原位、原大小
     if (el.holo?.classList.contains('on')) { const sp = litScreenPos(), hr = el.holo.getBoundingClientRect(); if (sp) { el.holo.style.setProperty('--dx', (sp.x - hr.left - hr.width / 2).toFixed(1) + 'px'); el.holo.style.setProperty('--dy', (sp.y - hr.top - hr.height / 2).toFixed(1) + 'px'); } }
     if (holoCard || el.holo?.classList.contains('on')) { clearTimeout(VIEW.backT); clearTimeout(VIEW.zoomT); VIEW.backT = setTimeout(() => { if (!holoCard || !el.holo.classList.contains('on')) { VIEW.target = 0; VIEW.ytarget = 0; VIEW.ztarget = 1; } }, 250); }
-    FOLLOW.on = false; FOLLOW.drag = null; holoCard = null; FX.target = 0; clearTimeout(holoT);
+    FOLLOW.on = false; FOLLOW.drag = null; holoCard = null; FX.target = 0; boatStop(); clearTimeout(holoT);
     if (el.holo?.classList.contains('on') && !el.holo.classList.contains('lift')) el.holo.classList.add('closing');   // 就這張放大時（lift）板子已藏起來，不用縮
     el.holo?.classList.remove('on', 'lift'); el.now?.classList.remove('is-tucked'); el.hint?.classList.remove('is-tucked'); }
   function setHoloUI() { el.holoBtn.setAttribute('aria-pressed', String(state.holo)); }
