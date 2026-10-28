@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-28｜dip-vinyl-shop｜頻率光譜：`?egg=1`／`?q=` 連結一打開就武裝播放器（IG 內建瀏覽器又能一進去就出聲）
+
+- **改動**：店主「用 IG 瀏覽器，之前一進去就有聲音」。v60 把自動搜尋改走 quiet（不呼叫 `ensureAudio`），播放器沒在載入時武裝，iOS／IG 內建瀏覽器帶進新頁的「點連結那一下」授權就過期了（同 2026-10-19 random 分頁的教訓）。
+  - 新增 `armBoot()`：`start()` 第一次（未 build）且網址帶 `?q`／`?egg=1` 時，馬上 `unlock.play()` ＋ `cfg.onGesture(true)`（`gpEnsurePlayer({grant, hold:30000})`）；不把 `unlocked` 設 true，真的沒授權時第一次點擊仍會解鎖並補播（v61 的 `replayBlocked`）。
+  - 播放器回報 error 時若還沒點過，也當成被擋，顯示「點一下開聲音」。`?v=62`。
+- **主要檔案**：`dip-tune.js`、`index.html`。
+- **驗證**：Playwright（iPhone 13，tone.wav 代試聽），`/tune/?egg=1` 不點任何東西：播放器 `status: playing`、AudioContext running、gain .5；點一下後 audio 元素在播；無錯誤。實機 IG 待店主確認。
+
 ### 2026-10-28｜dip-vinyl-shop｜頻率光譜：還沒點過就停在某張時顯示「點一下開聲音」，點任何地方補播
 
 - **改動**：店主「為何突然沒聲音」。用 `?egg=1` 測試連結進來（或開場那張），整頁還沒有手勢，播放器尚未掛載，`playAlbum` 回 false，小卡誤寫「這張沒有試聽」而且之後點了也不補播——要轉輪子，一轉又離開那張。

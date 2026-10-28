@@ -1142,6 +1142,10 @@ html.tune-inapp-lock body{padding-top:120px}
   // 還沒有手勢就停在某張（?egg=1／?q= 測試連結、或開場那張）時，瀏覽器不准自動出聲；之後在頻率光譜裡隨便點一下就補播這張
   // （2026-10-28 店主：「為何突然沒聲音」——用測試連結進來，彩蛋那張一直不出聲，原本要碰輪子、一碰又轉走了）
   let npBlocked = false;
+  // 帶 ?egg=1／?q= 的連結一打開就先武裝播放器（2026-10-28 店主：「用 IG 瀏覽器，之前一進去就有聲音」）。
+  // iOS／IG 內建瀏覽器會把「點連結那一下」的授權帶進新頁一小段時間（同 2026-10-19 random 分頁的教訓），要趁載入前就武裝；
+  // 這裡不把 unlocked 設成 true——真的沒授權時，之後第一次點擊照樣解鎖並補播。
+  function armBoot() { if (!state.audioOn) return; try { unlock.play().catch(() => {}); } catch (_) {} try { cfg.onGesture?.(true); } catch (_) {} }
   function replayBlocked() { if (!npBlocked || !previewCard || playing || !state.audioOn) return; npBlocked = false; cfg.onGesture?.(true); playPreview(); }
   function playPreview() {
     const c = previewCard; if (!c || !state.audioOn || !cfg.player) return;
@@ -1162,7 +1166,7 @@ html.tune-inapp-lock body{padding-top:120px}
       const card = c.card; if (!st || st.artist !== card.artist || st.album !== card.album) return;
       if (st.status === 'loading') setNowPlaying(false, '找試聽中');
       else if (st.status === 'playing') { audibleCard = c; setNowPlaying(true); }
-      else if (st.status === 'error') { playing = null; setNowPlaying(false, '這張沒有試聽'); }
+      else if (st.status === 'error') { playing = null; npBlocked = !unlocked; setNowPlaying(false, npBlocked ? '點一下開聲音' : '這張沒有試聽'); }   // 還沒點過就失敗多半是瀏覽器擋自動播放
       else if (st.status === 'stopped' && st.code === 'NO-AUTOPLAY') { playing = null; npBlocked = true; setNowPlaying(false, '點一下開聲音'); }
     });
   }
@@ -1367,6 +1371,7 @@ html.tune-inapp-lock body{padding-top:120px}
     state.visible = true;
     syncInappLock();
     syncAudioFromPref();
+    if (!state.built) { const qs = new URLSearchParams(global.location.search); if (qs.get('q') || qs.get('egg') === '1') armBoot(); }
     // 建不起來時把原因寫在畫面上（2026-10-24 店主：加到主畫面的 App 點進來一片空白，現場看不到錯誤）
     if (!state.built) { try { await build(); } catch (e) { console.error('[tune]', e); const host = cfg.host?.(), msg = host?.querySelector('#tuneMsg'), text = '頻率光譜載入失敗：' + (e?.message || e);
       if (msg) { msg.hidden = false; msg.textContent = text; } else if (host) host.innerHTML = `<p style="margin:0;padding:24px;min-height:50vh;background:#0b0c10;color:#e9e2c8">${esc(text)}</p>`; } }
