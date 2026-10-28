@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-28｜dip-vinyl-shop｜頻率光譜：還沒點過就停在某張時顯示「點一下開聲音」，點任何地方補播
+
+- **改動**：店主「為何突然沒聲音」。用 `?egg=1` 測試連結進來（或開場那張），整頁還沒有手勢，播放器尚未掛載，`playAlbum` 回 false，小卡誤寫「這張沒有試聽」而且之後點了也不補播——要轉輪子，一轉又離開那張。
+  - `playPreview` 失敗時：`NO-AUTOPLAY` 或尚未 `unlocked` → `npBlocked`，小卡寫「點一下開聲音」（原「再碰一下輪子開聲音」）。
+  - host 冒泡階段 pointerup（位移 <10px 才算點，拖輪子不算）→ `replayBlocked()`：授權播放器後重播目前這張。`?v=61`。
+- **主要檔案**：`dip-tune.js`、`index.html`。
+- **驗證**：Playwright（iPhone 13、`--autoplay-policy=user-gesture-required`、試聽以 tone.wav 代）：`/tune/?egg=1` 與 `/tune/` 未點前皆顯示「點一下開聲音」，點星圖空白處後播放器 `status: playing`、audio 在播；無錯誤。
+
 ### 2026-10-28｜dip-vinyl-shop｜KV：23 條指錯版本的 Spotify 連結修正（18 換正確版本、5 清空）
 
 - **改動**：10-27 稽核 `kv-spotify-link-repair` 補過的 4,485 條連結，找到 23 條指向純音樂版／週年重製純音樂版等錯版本（同 Bandana 案）。店主 10-28 說「可以」後寫入 KV `cover6:*`：

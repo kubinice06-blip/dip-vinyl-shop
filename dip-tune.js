@@ -1139,13 +1139,17 @@ html.tune-inapp-lock body{padding-top:120px}
     if (el.holo?.classList.contains('on') && !el.holo.classList.contains('lift')) el.holo.classList.add('closing');   // 就這張放大時（lift）板子已藏起來，不用縮
     el.holo?.classList.remove('on', 'lift'); el.now?.classList.remove('is-tucked'); el.hint?.classList.remove('is-tucked'); }
   function setHoloUI() { el.holoBtn.setAttribute('aria-pressed', String(state.holo)); }
+  // 還沒有手勢就停在某張（?egg=1／?q= 測試連結、或開場那張）時，瀏覽器不准自動出聲；之後在頻率光譜裡隨便點一下就補播這張
+  // （2026-10-28 店主：「為何突然沒聲音」——用測試連結進來，彩蛋那張一直不出聲，原本要碰輪子、一碰又轉走了）
+  let npBlocked = false;
+  function replayBlocked() { if (!npBlocked || !previewCard || playing || !state.audioOn) return; npBlocked = false; cfg.onGesture?.(true); playPreview(); }
   function playPreview() {
     const c = previewCard; if (!c || !state.audioOn || !cfg.player) return;
     const card = c.card;
     if (card.previewUnavailable) { setNowPlaying(false, '這張沒有試聽'); return; }
     playing = c; watchPlayer(); setNowPlaying(false, '找試聽中');
     Promise.resolve(cfg.player.playAlbum({ artist: card.artist, album: card.album, prefer: 'itunes', previewUrl: card.previewUrl || '', fixedOnly: !!card.previewUrl || !!card.previewUnavailable, cover: card.coverUrl || '', auto: true }))
-      .then(ok => { if (playing !== c) return; if (ok) setNowPlaying(true); else { playing = null; const code = cfg.player.debugState?.().code || ''; setNowPlaying(false, code === 'NO-AUTOPLAY' ? '再碰一下輪子開聲音' : '這張沒有試聽'); } })
+      .then(ok => { if (playing !== c) return; if (ok) setNowPlaying(true); else { playing = null; const code = cfg.player.debugState?.().code || ''; npBlocked = code === 'NO-AUTOPLAY' || !unlocked; setNowPlaying(false, npBlocked ? '點一下開聲音' : '這張沒有試聽'); } })
       .catch(() => { if (playing === c) { playing = null; setNowPlaying(false, '這張沒有試聽'); } });
   }
   function setNowPlaying(on, msg) { for (const id of ['tuneNp', 'tuneHoloNp']) { const n = document.getElementById(id); if (!n) continue; n.classList.toggle('on', !!on); n.innerHTML = on ? '<i></i><i></i><i></i>' : (msg ? (id === 'tuneNp' ? '· ' : '') + msg : ''); } }
@@ -1159,7 +1163,7 @@ html.tune-inapp-lock body{padding-top:120px}
       if (st.status === 'loading') setNowPlaying(false, '找試聽中');
       else if (st.status === 'playing') { audibleCard = c; setNowPlaying(true); }
       else if (st.status === 'error') { playing = null; setNowPlaying(false, '這張沒有試聽'); }
-      else if (st.status === 'stopped' && st.code === 'NO-AUTOPLAY') { playing = null; setNowPlaying(false, '再碰一下輪子開聲音'); }
+      else if (st.status === 'stopped' && st.code === 'NO-AUTOPLAY') { playing = null; npBlocked = true; setNowPlaying(false, '點一下開聲音'); }
     });
   }
 
@@ -1286,6 +1290,8 @@ html.tune-inapp-lock body{padding-top:120px}
     new ResizeObserver(() => scheduleUpdate()).observe(el.console);
     buildAudio();
     for (const ev of ['pointerdown', 'touchstart', 'keydown']) host.addEventListener(ev, () => ensureAudio(), { passive: true, capture: true });
+    { let dn = null; host.addEventListener('pointerdown', e => { dn = [e.clientX, e.clientY]; }, { passive: true, capture: true });   // 只算「點」，拖輪子轉到別張不算
+      host.addEventListener('pointerup', e => { if (dn && Math.hypot(e.clientX - dn[0], e.clientY - dn[1]) < 10) replayBlocked(); dn = null; }, { passive: true }); }
     state.built = true;
     updateScene();
     if (new URLSearchParams(global.location.search).get('demo') === '1') runDemo(true);
