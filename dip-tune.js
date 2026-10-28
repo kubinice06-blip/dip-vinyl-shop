@@ -189,7 +189,7 @@
 .tune-holo-rib .tick{stroke:rgba(22,18,15,.62);stroke-width:17}
 .tune-holo-rib .mask{stroke:#ff5a14;stroke-width:12.5}
 .tune-holo-rib .core{stroke:#fbf7f0;stroke-width:7}
-.tune-holo-rib text{font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;font-weight:900;font-size:12px;fill:#111;stroke:#111;stroke-width:.9px;paint-order:stroke;text-anchor:middle;dominant-baseline:central}
+.tune-holo-rib text{font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;font-weight:800;font-size:11.5px;fill:#111;text-anchor:middle;dominant-baseline:central}
 @keyframes tuneHoloOff{0%{transform:none;opacity:1}70%{opacity:1}100%{transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0}}
 @keyframes tuneHoloOn{0%{transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0}18%{opacity:1}100%{transform:none}}
 @keyframes tuneHoloGlitch{0%,100%{transform:none;filter:none}
@@ -927,7 +927,7 @@ html.tune-inapp-lock body{padding-top:120px}
     const path = svg.querySelector('#tuneRibPath');
     path.setAttribute('d', `M${x0 + r} ${y0}L${x1 - r} ${y0}A${r} ${r} 0 0 1 ${x1} ${y0 + r}L${x1} ${y1 - r}A${r} ${r} 0 0 1 ${x1 - r} ${y1}L${x0 + r} ${y1}A${r} ${r} 0 0 1 ${x0} ${y1 - r}L${x0} ${y0 + r}A${r} ${r} 0 0 1 ${x0 + r} ${y0}Z`);
     RIB.L = path.getTotalLength();
-    const n = Math.max(4, Math.round(RIB.L / 30)); RIB.unit = RIB.L / n;   // 一組「洋流」約 30px：兩個字 2×14＋2px，組跟組幾乎相連（店主：再緊湊一點）
+    const n = Math.max(4, Math.round(RIB.L / 34)); RIB.unit = RIB.L / n;   // 一組「洋流」約 34px：兩個字 2×14＋6px（店主：再緊湊一點，但不要擠成一團）
     const g = svg.querySelector('.glyphs'); g.textContent = ''; RIB.glyphs = [];
     for (let u = 0; u < n; u++) for (const [ch, d] of [['洋', 0], ['流', 14]]) {
       const t = document.createElementNS('http://www.w3.org/2000/svg', 'text'); t.textContent = ch; g.appendChild(t); RIB.glyphs.push({ t, s: u * RIB.unit + d }); }
