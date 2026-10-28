@@ -84,12 +84,13 @@
     N = CARDS.length;
     // 彩蛋（2026-10-28 店主：沈伯洋競選歌《台北順起來》）：接在卡池後面當第 N 張，所有「i < N」的迴圈（掃描、最近、FINE、抽卡）都碰不到它，
     // 只有搜尋找得到；星圖上也畫一顆（幾何陣列用 CARDS.length）。投影改橘色、邊框換成繞著跑的洋流飄帶，按「就這張」開 Apple Music
-    CELL_COLOR.egg = EGG.color; NAMES = Object.assign({}, NAMES, { egg: '洋流' });
-    CARDS.push(Object.assign({ i: N, card: EGG.card, conf: 3, cell: 'egg', egg: true }, EGG.pos));
+    // 2026-11-27 00:00（台北）起自動下架（店主）：不再放進 CARDS，搜尋也找不到
+    if (Date.now() < EGG.until) { CELL_COLOR.egg = EGG.color; NAMES = Object.assign({}, NAMES, { egg: '洋流' });
+    CARDS.push(Object.assign({ i: N, card: EGG.card, conf: 3, cell: 'egg', egg: true }, EGG.pos)); }
   }
 
   const EGG = {
-    color: '#ff7a1a',
+    color: '#ff7a1a', until: Date.parse('2026-11-27T00:00:00+08:00'),
     card: { artist: '沈伯洋', album: '台北順起來', sub: '沈伯洋 × 吳蓓雅、周自從', alias: 'puma shen 洋流 順起來 吳蓓雅 周自從',
       coverUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e8/2b/6b/e82b6b0f-862a-8b45-25d4-f42886afb7b9/4711548170006.png/600x600bb.png',
       previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b9/79/a7/b979a719-c219-eb16-e2da-f52716662c63/mzaf_3746502855888154192.plus.aac.p.m4a',
@@ -352,7 +353,7 @@ html.tune-inapp-lock body{padding-top:120px}
     marker = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, transparent: true, depthTest: false, color: 0xffffff })); marker.scale.set(0, 0, 1); scene.add(marker);
     const resize = () => { const r = stage.getBoundingClientRect(); if (r.width < 2 || r.height < 2) return; renderer.setSize(r.width, r.height, false); camera.aspect = r.width / r.height; camera.updateProjectionMatrix(); pmat.uniforms.uScale.value = r.height * renderer.getPixelRatio() / 160; };
     new ResizeObserver(resize).observe(stage); resize();
-    (function loop() { if (state.visible) { if (controls) controls.update(); slideView(); renderer.render(scene, camera); if (holoCard) followHolo(); if (holoCard || FX.level > 0) drawFx(); if (holoCard?.egg) stepRibbon(performance.now()); stepBoat(performance.now()); } requestAnimationFrame(loop); })();
+    (function loop() { if (state.visible) { if (controls) controls.update(); slideView(); stepBoat(performance.now()); renderer.render(scene, camera); if (holoCard) followHolo(); if (holoCard || FX.level > 0) drawFx(); if (holoCard?.egg) stepRibbon(performance.now()); } requestAnimationFrame(loop); })();
     THREE_OK = true;
     return true;
   }
@@ -1015,68 +1016,49 @@ html.tune-inapp-lock body{padding-top:120px}
     return grp;
   }
 
-  // ── 洋流號（2026-10-28 店主：抽到彩蛋時，立體洋流號從星星飛出來，巡弋星圖、飛過介面）──
-  // 獨立一張蓋滿視窗的透明 WebGL 畫布（不吃點擊），正交相機、單位＝螢幕 px；船本身是方塊組成的 3D 模型，
-  // 斜 30° 俯視＋依前進方向轉向。航線控制點有兩種：星圖裡的 3D 點（每格用星圖相機投影，跟著星圖自轉）與介面上的點
-  // （面板與板子的位置），用 Catmull-Rom 串成一條：星星 → 星圖繞一圈 → 飛過面板 → 經過板子 → 回到星星。一趟約 11 秒，停 3 秒再出航。
-  const BOAT = { on: false, cv: null, trail: null, tg: null, r: null, scene: null, cam: null, root: null, yawG: null, t0: 0, yaw: 0, pts: [], W: 0, H: 0 };
-  const VOY_SEG = 1.35, VOY_REST = 3;
+  // ── 洋流號（2026-10-28 店主：抽到彩蛋時，立體洋流號從星星飛出來，在星圖裡巡弋）──
+  // 店主再改：要很小很小、像在星雲裡飛的小星艦，一直飛不回去，而且在專輯板子後面——所以船直接放進星圖的 3D 場景
+  // （跟著自轉、透視、被 DOM 板子蓋住），長度約 0.24 格（立方體邊長 2，手機上約 20px）。船尾帶一點橘色引擎光。航線是三軸頻率互質的正弦（Lissajous），
+  // 一直繞不重複；剛出現的 2.2 秒從星星的位置慢慢併進航線、同時長大。船頭沿速度方向（lookAt），後面拖橘色航跡點。
+  const BOAT = { on: false, g: null, trail: null, tpos: null, tcol: null, t0: 0, from: null };
+  const BOAT_TRAIL = 46;
   function boatSetup() {
-    const THREE = global.THREE; if (!THREE || BOAT.r) return !!BOAT.r;
-    const wrap = document.createElement('div'); wrap.style.cssText = 'position:fixed;inset:0;z-index:2147482990;pointer-events:none;display:none';
-    BOAT.trail = document.createElement('canvas'); BOAT.trail.style.cssText = 'position:absolute;inset:0;width:100%;height:100%';
-    BOAT.cv = document.createElement('canvas'); BOAT.cv.style.cssText = 'position:absolute;inset:0;width:100%;height:100%';
-    wrap.append(BOAT.trail, BOAT.cv); document.body.appendChild(wrap); BOAT.wrap = wrap; BOAT.tg = BOAT.trail.getContext('2d');
-    try { BOAT.r = new THREE.WebGLRenderer({ canvas: BOAT.cv, alpha: true, antialias: true }); } catch (_) { return false; }
-    BOAT.r.setClearColor(0x000000, 0);
-    BOAT.scene = new THREE.Scene(); BOAT.scene.add(new THREE.HemisphereLight(0xffffff, 0x8888aa, 0.8)); const dl = new THREE.DirectionalLight(0xffffff, 0.55); dl.position.set(4, 10, 8); BOAT.scene.add(dl);
-    BOAT.cam = new THREE.OrthographicCamera(0, 100, 0, -100, -3000, 3000); BOAT.cam.position.set(0, 0, 1000);
-    BOAT.root = new THREE.Group(); const tilt = new THREE.Group(); tilt.rotation.x = 0.52; BOAT.yawG = new THREE.Group();
-    const boat = makeYangliuBoat(THREE); boat.position.set(0, -5.5, 0); BOAT.boat = boat;
-    BOAT.yawG.add(boat); tilt.add(BOAT.yawG); BOAT.root.add(tilt); BOAT.scene.add(BOAT.root);
+    const THREE = global.THREE; if (!THREE || !THREE_OK) return false; if (BOAT.g) return true;
+    scene.add(new THREE.HemisphereLight(0xffffff, 0x8888aa, 0.85)); const dl = new THREE.DirectionalLight(0xffffff, 0.5); dl.position.set(3, 6, 4); scene.add(dl);   // 只照得到洋流號（星點與格線不吃光）
+    const inner = makeYangliuBoat(THREE); inner.rotation.y = -Math.PI / 2; inner.position.set(0, -5.5, 0);   // 船頭 +x 轉成 +z，配合 lookAt
+    const g = new THREE.Group(); g.add(inner); g.visible = false; scene.add(g); BOAT.g = g; BOAT.inner = inner;
+    const gc = document.createElement('canvas'); gc.width = gc.height = 32; const gg = gc.getContext('2d'), rg = gg.createRadialGradient(16, 16, 0, 16, 16, 16);
+    rg.addColorStop(0, 'rgba(255,240,210,1)'); rg.addColorStop(.3, 'rgba(255,140,40,.8)'); rg.addColorStop(1, 'rgba(255,90,20,0)'); gg.fillStyle = rg; gg.fillRect(0, 0, 32, 32);
+    const glow = new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(gc), transparent: true, depthWrite: false, blending: THREE.AdditiveBlending }));
+    glow.scale.set(9, 9, 1); glow.position.set(0, 2.5, -7.5); g.add(glow); BOAT.glow = glow;   // 船尾（-z）引擎光，跟著船縮放
+    BOAT.tpos = new Float32Array(BOAT_TRAIL * 3); BOAT.tcol = new Float32Array(BOAT_TRAIL * 3);
+    const tg = new THREE.BufferGeometry(); tg.setAttribute('position', new THREE.BufferAttribute(BOAT.tpos, 3)); tg.setAttribute('color', new THREE.BufferAttribute(BOAT.tcol, 3));
+    BOAT.trail = new THREE.Points(tg, new THREE.PointsMaterial({ size: 2.6, sizeAttenuation: false, vertexColors: true, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending }));
+    BOAT.trail.visible = false; scene.add(BOAT.trail);
     return true;
   }
-  function boatResize() {
-    const W = global.innerWidth, H = global.innerHeight, D = Math.min(2, global.devicePixelRatio || 1); if (W === BOAT.W && H === BOAT.H) return;
-    BOAT.W = W; BOAT.H = H; BOAT.r.setPixelRatio(D); BOAT.r.setSize(W, H, false); BOAT.trail.width = W * D; BOAT.trail.height = H * D; BOAT.tg.setTransform(D, 0, 0, D, 0, 0);
-    Object.assign(BOAT.cam, { left: 0, right: W, top: 0, bottom: -H }); BOAT.cam.updateProjectionMatrix();
-  }
+  const BOAT_LEN = 0.24 / 14;
+  const wander = t => [.82 * Math.sin(.31 * t + 1.1), .5 * Math.sin(.23 * t + .4) + .12 * Math.sin(.61 * t), .82 * Math.sin(.19 * t + 2.3)];
   function boatStart() {
-    if (RM_FX || BOAT.on || !THREE_OK || !boatSetup()) return;
-    BOAT.on = true; BOAT.t0 = performance.now(); BOAT.trailPts = []; BOAT.wrap.style.display = ''; boatResize();
+    if (RM_FX || BOAT.on || !boatSetup() || litIdx < 0) return;
+    BOAT.on = true; BOAT.t0 = performance.now(); BOAT.from = S3(CARDS[litIdx]); BOAT.hist = [];
+    BOAT.g.visible = true; BOAT.trail.visible = true; BOAT.g.scale.setScalar(0.0001);
   }
-  function boatStop() { if (!BOAT.on) return; BOAT.on = false; BOAT.wrap.style.display = 'none'; BOAT.tg?.clearRect(0, 0, BOAT.W, BOAT.H); }
-  // 航線控制點（每格重算，星圖在轉、面板會動）：回傳 [x, y, 大小倍率]
-  function boatPoints() {
-    const THREE = global.THREE, gr = el.gl.getBoundingClientRect(), sp = litScreenPos();
-    const star = sp ? [sp.x, sp.y, .55] : [gr.left + gr.width / 2, gr.top + gr.height / 2, .55];
-    const P3 = ([x, y, z]) => { const v = new THREE.Vector3(x, y, z), d = v.distanceTo(camera.position); v.project(camera);
-      return [gr.left + (v.x + 1) / 2 * gr.width, gr.top + (1 - v.y) / 2 * gr.height, Math.max(.45, Math.min(1.3, 3.6 / d))]; };
-    const cr = el.console.getBoundingClientRect(), hr = el.holo.querySelector('.tune-holo-scr').getBoundingClientRect();
-    return [star, P3([1.25, .35, .7]), P3([.3, .95, -1.25]), P3([-1.3, .15, -.45]), P3([-.7, -.6, 1.15]),
-      [cr.left + cr.width * .18, cr.top + cr.height * .32, 1.15], [cr.left + cr.width * .72, cr.top + cr.height * .5, 1.2],
-      [hr.right + 10, hr.top + hr.height * .35, 1], star];
-  }
-  const crom = (a, b, c, d, t) => { const t2 = t * t, t3 = t2 * t; return .5 * ((2 * b) + (-a + c) * t + (2 * a - 5 * b + 4 * c - d) * t2 + (-a + 3 * b - 3 * c + d) * t3); };
+  // 洋流號目前在頁面上的座標（測試與示範用）；沒在飛回 null
+  function boatScreenPos() { if (!BOAT.on || !el?.gl) return null; const r = el.gl.getBoundingClientRect(), v = BOAT.g.position.clone().project(camera); return { x: r.left + (v.x + 1) / 2 * r.width, y: r.top + (1 - v.y) / 2 * r.height }; }
+  function boatStop() { if (!BOAT.on) return; BOAT.on = false; BOAT.g.visible = false; BOAT.trail.visible = false; }
   function stepBoat(now) {
-    if (!BOAT.on) return; boatResize();
-    const P = boatPoints(), nSeg = P.length - 1, dur = nSeg * VOY_SEG, cyc = dur + VOY_REST, t = ((now - BOAT.t0) / 1000) % cyc;
-    BOAT.tg.clearRect(0, 0, BOAT.W, BOAT.H);
-    if (t > dur) { BOAT.root.visible = false; BOAT.trailPts = []; BOAT.r.render(BOAT.scene, BOAT.cam); return; }
-    const u = t / VOY_SEG, i = Math.min(nSeg - 1, Math.floor(u)), f = u - i, q = k => P[Math.max(0, Math.min(nSeg, k))];
-    const at = j => crom(q(i - 1)[j], q(i)[j], q(i + 1)[j], q(i + 2)[j], f);
-    const x = at(0), y = at(1), sc = at(2), grow = Math.min(1, t / .7, (dur - t) / .7);
-    // 前進方向：取一點點之後的位置
-    const f2 = Math.min(1, f + .04), x2 = crom(q(i - 1)[0], q(i)[0], q(i + 1)[0], q(i + 2)[0], f2), y2 = crom(q(i - 1)[1], q(i)[1], q(i + 1)[1], q(i + 2)[1], f2);
-    if (Math.hypot(x2 - x, y2 - y) > .3) { const target = -Math.atan2((y2 - y) * 1.8, x2 - x); let dy = target - BOAT.yaw; while (dy > Math.PI) dy -= 2 * Math.PI; while (dy < -Math.PI) dy += 2 * Math.PI; BOAT.yaw += dy * .12; }
-    const base = Math.max(56, Math.min(92, BOAT.W * .17)) / 14, s = base * sc * Math.max(.02, grow), bob = Math.sin(now / 260) * 1.5;
-    BOAT.root.visible = true; BOAT.root.position.set(x, -(y + bob), 0); BOAT.root.scale.setScalar(s); BOAT.yawG.rotation.y = BOAT.yaw; BOAT.boat.rotation.x = Math.sin(now / 420) * .05;
-    // 航跡：橘色光點，越舊越淡
-    const tp = BOAT.trailPts; tp.push([x, y + 4 * sc]); if (tp.length > 34) tp.shift();
-    tp.forEach(([tx, ty], k) => { const a = k / tp.length; BOAT.tg.fillStyle = `rgba(255,122,26,${(a * .55 * grow).toFixed(3)})`; const r = 1 + a * 1.6; BOAT.tg.beginPath(); BOAT.tg.arc(tx, ty, r, 0, 6.283); BOAT.tg.fill(); });
-    BOAT.r.render(BOAT.scene, BOAT.cam);
+    if (!BOAT.on) return;
+    const t = (now - BOAT.t0) / 1000, at = tt => { const w = wander(tt + 4), k = Math.min(1, tt / 2.2), e = k * k * (3 - 2 * k); return w.map((v, j) => BOAT.from[j] + (v - BOAT.from[j]) * e); };
+    const p = at(t), q = at(t + .05), g = BOAT.g;
+    g.position.set(p[0], p[1], p[2]); g.lookAt(q[0], q[1], q[2]);
+    g.scale.setScalar(BOAT_LEN * Math.min(1, t / 1.2)); BOAT.inner.rotation.z = Math.sin(now / 380) * .06; BOAT.glow.material.opacity = .75 + .25 * Math.sin(now / 90);
+    // 航跡：最近 46 個位置，越舊越暗（加法混色，暗＝透明）
+    const h = BOAT.hist; h.push(p); if (h.length > BOAT_TRAIL) h.shift();
+    for (let k = 0; k < BOAT_TRAIL; k++) { const v = h[h.length - 1 - k * 1] || p, a = Math.max(0, 1 - k / BOAT_TRAIL) * .9;
+      BOAT.tpos.set(v, k * 3); BOAT.tcol[k * 3] = a; BOAT.tcol[k * 3 + 1] = a * .48; BOAT.tcol[k * 3 + 2] = a * .1; }
+    BOAT.trail.geometry.attributes.position.needsUpdate = true; BOAT.trail.geometry.attributes.color.needsUpdate = true;
   }
-
   function hideHolo() {
     // 縮回「現在」星星的位置；縮完（0.25 秒）星圖才回到原位、原大小
     if (el.holo?.classList.contains('on')) { const sp = litScreenPos(), hr = el.holo.getBoundingClientRect(); if (sp) { el.holo.style.setProperty('--dx', (sp.x - hr.left - hr.width / 2).toFixed(1) + 'px'); el.holo.style.setProperty('--dy', (sp.y - hr.top - hr.height / 2).toFixed(1) + 'px'); } }
@@ -1309,5 +1291,5 @@ html.tune-inapp-lock body{padding-top:120px}
   }
   function stop() { state.visible = false; cancelTravel(); stopPreview(); sfxStop(); hideHolo(); inappLock(false); }
 
-  global.DipTune = { configure, start, stop, pickAgain, setAudio, litScreenPos, warpStart, CELL_COLOR, get state() { return state; } };
+  global.DipTune = { configure, start, stop, pickAgain, setAudio, litScreenPos, boatScreenPos, warpStart, CELL_COLOR, get state() { return state; } };
 })(window);
