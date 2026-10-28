@@ -189,7 +189,7 @@
 .tune-holo-rib .tick{stroke:rgba(22,18,15,.62);stroke-width:17}
 .tune-holo-rib .mask{stroke:#ff5a14;stroke-width:12.5}
 .tune-holo-rib .core{stroke:#fbf7f0;stroke-width:7}
-.tune-holo-rib text{font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;font-weight:900;font-size:13px;fill:#111;dominant-baseline:central;letter-spacing:-.5px}
+.tune-holo-rib text{font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;font-weight:900;font-size:12px;fill:#111;stroke:#111;stroke-width:.9px;paint-order:stroke;text-anchor:middle;dominant-baseline:central}
 @keyframes tuneHoloOff{0%{transform:none;opacity:1}70%{opacity:1}100%{transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0}}
 @keyframes tuneHoloOn{0%{transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0}18%{opacity:1}100%{transform:none}}
 @keyframes tuneHoloGlitch{0%,100%{transform:none;filter:none}
@@ -278,7 +278,7 @@ html.tune-inapp-lock body{padding-top:120px}
     </div>
     <button class="tune-now" id="tuneNow" type="button" hidden></button>
     <div class="tune-holo" id="tuneHolo" aria-hidden="true"><div class="fl"><div class="pw">
-      <div class="tune-holo-scr"><svg class="tune-holo-rib" aria-hidden="true"><defs><path id="tuneRibPath"/></defs><use class="band" href="#tuneRibPath"/><use class="tick" href="#tuneRibPath"/><use class="mask" href="#tuneRibPath"/><use class="core" href="#tuneRibPath"/><text><textPath href="#tuneRibPath" lengthAdjust="spacing"></textPath></text></svg><i class="cn"></i><i class="cn"></i><i class="cn"></i><i class="cn"></i><div class="tune-holo-hd"><span class="c"><i></i><em></em></span><span class="np" id="tuneHoloNp"></span></div><div class="tune-holo-cv"></div><div class="tune-holo-t"><b></b><span></span></div><div class="tune-holo-ft"><span class="xyz"></span><span class="bars"></span></div></div>
+      <div class="tune-holo-scr"><svg class="tune-holo-rib" aria-hidden="true"><defs><path id="tuneRibPath"/></defs><use class="band" href="#tuneRibPath"/><use class="tick" href="#tuneRibPath"/><use class="mask" href="#tuneRibPath"/><use class="core" href="#tuneRibPath"/><g class="glyphs"></g></svg><i class="cn"></i><i class="cn"></i><i class="cn"></i><i class="cn"></i><div class="tune-holo-hd"><span class="c"><i></i><em></em></span><span class="np" id="tuneHoloNp"></span></div><div class="tune-holo-cv"></div><div class="tune-holo-t"><b></b><span></span></div><div class="tune-holo-ft"><span class="xyz"></span><span class="bars"></span></div></div>
       </div></div></div>
     <canvas class="tune-holo-fx" id="tuneHoloFx" aria-hidden="true"></canvas>
     <div class="tune-hint" id="tuneHint">拖曳旋轉　滾輪縮放</div>
@@ -915,31 +915,40 @@ html.tune-inapp-lock body{padding-top:120px}
       n.addEventListener('pointerdown', grab); n.addEventListener('pointermove', move); n.addEventListener('pointerup', drop); n.addEventListener('pointercancel', drop);
     }
   }
-  // 洋流飄帶：一條帶子沿板子外圍的圓角矩形繞兩圈（路徑畫兩圈，文字也排兩圈），每格把文字的 startOffset 與兩側小方塊的
-  // dashoffset 往前推一點，推滿一圈就回到起點；「洋流」的間距用 textLength 撐到剛好整除一圈，接回去不會跳
-  const RIB = { L: 0, off: 0, last: 0 };
+  // 洋流飄帶：一條帶子沿板子外圍的圓角矩形繞一圈。「洋流」照實物是直式：沿著帶子方向一字一字往下排（洋在前、流在後），
+  // 每個字轉成「字的下方＝帶子前進方向」，每組後面留空。每格把所有字沿路徑往前推一點（getPointAtLength），兩側小字紋的 dashoffset 跟著推。
+  // 每組間距撐到剛好整除一圈，繞回起點不會跳
+  const RIB = { L: 0, off: 0, last: 0, glyphs: [], unit: 0 };
   function drawRibbon() {
     const scr = el.holo.querySelector('.tune-holo-scr'), svg = scr.querySelector('.tune-holo-rib');
-    const W = scr.offsetWidth + 12, H = scr.offsetHeight + 12, r = 12, P = 14; if (W < 20 || H < 20) return;
+    const W = scr.offsetWidth + 12, H = scr.offsetHeight + 12, r = 12; if (W < 20 || H < 20) return;
     svg.setAttribute('viewBox', `0 0 ${W + 16} ${H + 16}`);
     const x0 = 8, y0 = 8, x1 = x0 + W, y1 = y0 + H;
-    const lap = `L${x1 - r} ${y0}A${r} ${r} 0 0 1 ${x1} ${y0 + r}L${x1} ${y1 - r}A${r} ${r} 0 0 1 ${x1 - r} ${y1}L${x0 + r} ${y1}A${r} ${r} 0 0 1 ${x0} ${y1 - r}L${x0} ${y0 + r}A${r} ${r} 0 0 1 ${x0 + r} ${y0}`;
-    const path = svg.querySelector('#tuneRibPath'); path.setAttribute('d', `M${x0 + r} ${y0}` + lap + lap);
-    RIB.L = 2 * (W + H - 4 * r) + 2 * Math.PI * r;
-    const unit = 31, n = Math.max(4, Math.round(RIB.L / unit)), tp = svg.querySelector('textPath');
-    tp.textContent = '洋流 '.repeat(n * 2 + 2); tp.setAttribute('textLength', (RIB.L * 2 + RIB.L / n * 2).toFixed(1));
-    // 上下橘邊那排小字：用一組長短不一的細段模擬，週期撐到整除一圈
-    const per = RIB.L / Math.round(RIB.L / 9), k = per / 9;
+    const path = svg.querySelector('#tuneRibPath');
+    path.setAttribute('d', `M${x0 + r} ${y0}L${x1 - r} ${y0}A${r} ${r} 0 0 1 ${x1} ${y0 + r}L${x1} ${y1 - r}A${r} ${r} 0 0 1 ${x1 - r} ${y1}L${x0 + r} ${y1}A${r} ${r} 0 0 1 ${x0} ${y1 - r}L${x0} ${y0 + r}A${r} ${r} 0 0 1 ${x0 + r} ${y0}Z`);
+    RIB.L = path.getTotalLength();
+    const n = Math.max(4, Math.round(RIB.L / 40)); RIB.unit = RIB.L / n;   // 一組「洋流」約 40px：兩個字 2×14 加間隔
+    const g = svg.querySelector('.glyphs'); g.textContent = ''; RIB.glyphs = [];
+    for (let u = 0; u < n; u++) for (const [ch, d] of [['洋', 0], ['流', 14]]) {
+      const t = document.createElementNS('http://www.w3.org/2000/svg', 'text'); t.textContent = ch; g.appendChild(t); RIB.glyphs.push({ t, s: u * RIB.unit + d }); }
+    const per = RIB.L / Math.round(RIB.L / 9), k = per / 9;   // 兩側小字紋：長短不一的細段，週期撐到整除一圈
     svg.querySelector('.tick').style.strokeDasharray = [1.4, .7, .8, .6, 2, .7, 1, 1.8].map(v => (v * k).toFixed(3)).join(' ');
-    void P;
+    RIB.path = path; placeGlyphs();
+  }
+  function placeGlyphs() {
+    const P = RIB.path, L = RIB.L; if (!P || !L) return;
+    for (const gl of RIB.glyphs) {
+      const s = ((gl.s + RIB.off) % L + L) % L, a = P.getPointAtLength(s), b = P.getPointAtLength((s + 0.8) % L);
+      const ang = Math.atan2(b.y - a.y, b.x - a.x) * 180 / Math.PI - 90;
+      gl.t.setAttribute('transform', `translate(${a.x.toFixed(1)} ${a.y.toFixed(1)}) rotate(${ang.toFixed(1)})`);
+    }
   }
   function stepRibbon(now) {
     if (!RIB.L || !el.holo.classList.contains('egg')) return;
     const dt = Math.min(.05, (now - (RIB.last || now)) / 1000); RIB.last = now;
     if (!RM_FX) RIB.off = (RIB.off + dt * 22) % RIB.L;
-    const svg = el.holo.querySelector('.tune-holo-rib');
-    svg.querySelector('textPath').setAttribute('startOffset', (-RIB.off).toFixed(1));
-    svg.querySelector('.tick').style.strokeDashoffset = (RIB.off).toFixed(1);
+    placeGlyphs();
+    el.holo.querySelector('.tune-holo-rib .tick').style.strokeDashoffset = (-RIB.off).toFixed(1);
   }
   function hideHolo() {
     // 縮回「現在」星星的位置；縮完（0.25 秒）星圖才回到原位、原大小
