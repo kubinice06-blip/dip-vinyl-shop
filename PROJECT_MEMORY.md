@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-28｜dip-vinyl-shop｜KV：23 條指錯版本的 Spotify 連結修正（18 換正確版本、5 清空）
+
+- **改動**：10-27 稽核 `kv-spotify-link-repair` 補過的 4,485 條連結，找到 23 條指向純音樂版／週年重製純音樂版等錯版本（同 Bandana 案）。店主 10-28 說「可以」後寫入 KV `cover6:*`：
+  - 換成正確版本 18 條（Aesop Rock、Atmosphere ×3、Devin Townsend《PowerNerd》、Ed Sheeran、Eyedea & Abilities、Future《DS2》、Gregory Isaacs、Kool Keith、Mary J. Blige、Showbiz & A.G.、The Cure、Toro y Moi ×2、Neville Marriner、SEVENTEEN、Red Velvet）。
+  - 找不到正確版本、清空 5 條（J Dilla《Rebirth of Detroit》、RCサクセション《ラプソディー》、Nass El Ghiwane、Fritz Kreisler《Berlin HMV Recordings》、Martinho da Vila）。
+  - 每筆標 `spotifyChecked: fix-2026-10-28-version`；寫前比對現值等於計畫中的舊連結才寫。
+- **主要檔案**：`batch-progress/spotify-link-audit/2026-10-28/`（計畫、寫入前備份、報告、`apply.mjs`）；KV `cover6:*` 23 鍵。
+- **驗證**：23/23 PUT 後讀回 `spotifyUrl` 與計畫一致。
+
 ### 2026-10-28｜dip-vinyl-shop｜頻率光譜：`?egg=1` 自動搜尋改成畫面出現 1 秒後、不碰音訊解鎖（預覽中，未合併）
 
 - **改動**：店主「沒有自動搜尋欸，大概等一秒鐘就搜尋」。
