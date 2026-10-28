@@ -1067,16 +1067,17 @@ html.tune-inapp-lock body{padding-top:120px}
   // 星星被板子蓋住時就是從板子後面鑽出來），再往鏡頭方向飛到前面、接上航線起點。
   function boatEmergePos(tt) {
     const THREE = global.THREE, star = new THREE.Vector3(...BOAT.from);
-    if (!BOAT.out) { const { gr, free } = boatFree(), v = star.clone().project(camera), sy = gr.top + (1 - v.y) / 2 * gr.height;
-      BOAT.out = boatScreenToWorld(free, Math.max(gr.top + gr.height * .22, Math.min(gr.top + gr.height * .7, sy))); }
-    if (tt < BOAT_OUT) { const k = tt / BOAT_OUT, e = k * k * (3 - 2 * k); return { p: star.lerp(BOAT.out, e), depth: 0 }; }
+    const { gr, free } = boatFree();   // 空位那一點每格重算（螢幕座標固定），星圖自轉時才不會被拖著走
+    if (BOAT.oy == null) { const v = star.clone().project(camera); BOAT.oy = Math.max(.22, Math.min(.7, (1 - v.y) / 2)); }
+    const out = boatScreenToWorld(free, gr.top + gr.height * BOAT.oy);
+    if (tt < BOAT_OUT) { const k = tt / BOAT_OUT, e = k * k * (3 - 2 * k); return { p: star.lerp(out, e), depth: 0 }; }
     const a = boatPath(0), k = (tt - BOAT_OUT) / (BOAT_EMERGE - BOAT_OUT), e = k * k * (3 - 2 * k);
-    return { p: BOAT.out.clone().lerp(a.p, e), depth: a.depth * e };
+    return { p: out.lerp(a.p, e), depth: a.depth * e };
   }
   function boatStart() {
     if (RM_FX || BOAT.on || !boatSetup() || litIdx < 0) return;
-    BOAT.on = true; BOAT.t0 = performance.now(); BOAT.from = S3(CARDS[litIdx]); BOAT.hist = []; BOAT.side = null; BOAT.front = false; BOAT.out = null;
-    BOAT.g.visible = true; BOAT.trail.visible = true; BOAT.g.scale.setScalar(0.0001); boatLayer(false);
+    BOAT.on = true; BOAT.t0 = performance.now(); BOAT.from = S3(CARDS[litIdx]); BOAT.hist = []; BOAT.side = null; BOAT.front = false; BOAT.oy = null; BOAT.shown = false;
+    BOAT.g.visible = false; BOAT.trail.visible = false; BOAT.g.scale.setScalar(0.0001); boatLayer(false);
   }
   // 洋流號目前在頁面上的座標（測試與示範用）；沒在飛回 null
   function boatScreenPos() { if (!BOAT.on || !el?.gl) return null; const r = el.gl.getBoundingClientRect(), v = BOAT.g.position.clone().project(camera); return { x: r.left + (v.x + 1) / 2 * r.width, y: r.top + (1 - v.y) / 2 * r.height, front: BOAT.front }; }
@@ -1085,19 +1086,28 @@ html.tune-inapp-lock body{padding-top:120px}
     if (BOAT.fcv) BOAT.fcv.style.display = front ? '' : 'none';
   }
   function boatOverHolo(sp, m) { const h = el.holo.querySelector('.tune-holo-scr').getBoundingClientRect(); return !!sp && sp.x > h.left - m && sp.x < h.right + m && sp.y > h.top - m && sp.y < h.bottom + m; }
-  // 點洋流號開 current.puma.taipei（2026-10-28 店主）。船很小，點擊範圍取船中心 26px；在後面且被板子蓋住時點不到。
-  // 掛在 stage 的 capture：搶在星圖旋轉與板子拖曳之前；pointerdown 先攔、click 才開（行動瀏覽器要 click 才算使用者手勢）。
+  // 點洋流號開 current.puma.taipei（2026-10-28 店主）。船很小，點擊範圍取船中心 34px；在後面且被板子蓋住時點不到。
+  // 掛在 stage 的 capture：搶在星圖旋轉與板子拖曳之前。手機上 OrbitControls 的 touchstart 會 preventDefault（click 因此不會來），
+  // 所以點到船時連 touchstart 也攔下，並且觸控在 pointerup（算使用者手勢）就開；滑鼠照常等 click。
   const BOAT_URL = 'https://current.puma.taipei/';
-  function boatHit(e) { if (!BOAT.on) return false; const sp = boatScreenPos(); if (!sp || (!sp.front && boatOverHolo(sp, 0))) return false; return Math.hypot(e.clientX - sp.x, e.clientY - sp.y) < 26; }
+  function boatHit(e) { if (!BOAT.on || !BOAT.shown) return false; const sp = boatScreenPos(); if (!sp || (!sp.front && boatOverHolo(sp, 0))) return false; return Math.hypot(e.clientX - sp.x, e.clientY - sp.y) < 34; }
   function wireBoatClick() {
-    let armed = false;
-    el.stage.addEventListener('pointerdown', e => { armed = boatHit(e); if (armed) { e.preventDefault(); e.stopPropagation(); } }, true);
-    el.stage.addEventListener('click', e => { if (!armed) return; armed = false; e.preventDefault(); e.stopPropagation(); global.open(BOAT_URL, '_blank', 'noopener'); }, true);
+    let armed = null; const go = () => { armed = null; global.open(BOAT_URL, '_blank', 'noopener'); };
+    const eat = e => { if (armed) { e.preventDefault?.(); e.stopPropagation(); } };
+    el.stage.addEventListener('pointerdown', e => { armed = boatHit(e) ? { x: e.clientX, y: e.clientY, m: e.pointerType === 'mouse' } : null; eat(e); }, true);
+    el.stage.addEventListener('touchstart', e => { if (armed) e.stopPropagation(); }, { capture: true, passive: true });
+    el.stage.addEventListener('pointerup', e => { if (!armed) return; e.stopPropagation(); if (!armed.m && Math.hypot(e.clientX - armed.x, e.clientY - armed.y) < 16) { go(); armed = { done: true }; } }, true);
+    el.stage.addEventListener('click', e => { if (!armed) return; e.preventDefault(); e.stopPropagation(); if (armed.m) go(); else armed = null; }, true);
     el.stage.addEventListener('pointermove', e => { if (e.pointerType === 'mouse') el.stage.style.cursor = boatHit(e) ? 'pointer' : ''; }, { passive: true });
   }
   function boatStop() { if (!BOAT.on) return; BOAT.on = false; BOAT.g.visible = false; BOAT.trail.visible = false; boatLayer(false); }
   function stepBoat(now) {
     if (!BOAT.on) return;
+    // 店主：「前五秒船會飄移、後面的線也會飄移」——板子彈出時星圖還在往旁邊滑、退後縮小，等畫面停穩（最多 2.5 秒）才放船出來
+    if (!BOAT.shown) {
+      if (Math.abs(VIEW.target - VIEW.cur) > 1.5 || Math.abs(VIEW.ztarget - VIEW.z) > .004 || now < FOLLOW.t0 + 250) { if (now - BOAT.t0 < 2500) return; }
+      BOAT.shown = true; BOAT.t0 = now; BOAT.g.visible = true; BOAT.trail.visible = true;
+    }
     const t = (now - BOAT.t0) / 1000, u = Math.max(0, t - BOAT_EMERGE);
     const pos = tt => tt < BOAT_EMERGE ? boatEmergePos(tt) : boatPath(tt - BOAT_EMERGE);
     const A = pos(t), B = pos(t + .06), g = BOAT.g;
@@ -1108,9 +1118,10 @@ html.tune-inapp-lock body{padding-top:120px}
     const want = A.depth < -.15 ? true : A.depth > .15 ? false : BOAT.front;
     if (want !== BOAT.front && !over) boatLayer(want);
     // 航跡
-    const hh = BOAT.hist; hh.push(A.p.toArray()); if (hh.length > BOAT_TRAIL) hh.shift();
-    for (let k = 0; k < BOAT_TRAIL; k++) { const v = hh[hh.length - 1 - k] || hh[0], a = Math.max(0, 1 - k / BOAT_TRAIL) * .9;
-      BOAT.tpos.set(v, k * 3); BOAT.tcol[k * 3] = a; BOAT.tcol[k * 3 + 1] = a * .48; BOAT.tcol[k * 3 + 2] = a * .1; }
+    // 航跡存在「相機座標」：星圖自轉時航跡跟著船在畫面上的路線走，不會被整片轉歪
+    camera.updateMatrixWorld(); const hh = BOAT.hist; hh.push(A.p.clone().applyMatrix4(camera.matrixWorldInverse)); if (hh.length > BOAT_TRAIL) hh.shift();
+    for (let k = 0; k < BOAT_TRAIL; k++) { const v = (hh[hh.length - 1 - k] || hh[0]).clone().applyMatrix4(camera.matrixWorld), a = Math.max(0, 1 - k / BOAT_TRAIL) * .9;
+      BOAT.tpos.set(v.toArray(), k * 3); BOAT.tcol[k * 3] = a; BOAT.tcol[k * 3 + 1] = a * .48; BOAT.tcol[k * 3 + 2] = a * .1; }
     BOAT.trail.geometry.attributes.position.needsUpdate = true; BOAT.trail.geometry.attributes.color.needsUpdate = true;
   }
   // 前層畫布跟星圖畫布同大小、同解析度，用同一支相機畫（在主畫面 render 之後呼叫）
