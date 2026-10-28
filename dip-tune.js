@@ -82,7 +82,20 @@
         px: pSpread('x', m[0], hashU(i, 7919, 997)), py: pSpread('y', m[1], hashU(i, 104729, 991)), pz: pSpread('z', m[2], hashU(i, 1299709, 983)) });
     }
     N = CARDS.length;
+    // 彩蛋（2026-10-28 店主：沈伯洋競選歌《台北順起來》）：接在卡池後面當第 N 張，所有「i < N」的迴圈（掃描、最近、FINE、抽卡）都碰不到它，
+    // 只有搜尋找得到；星圖上也畫一顆（幾何陣列用 CARDS.length）。投影改橘色、邊框換成繞著跑的洋流飄帶，按「就這張」開 Apple Music
+    CELL_COLOR.egg = EGG.color; NAMES = Object.assign({}, NAMES, { egg: '洋流' });
+    CARDS.push(Object.assign({ i: N, card: EGG.card, conf: 3, cell: 'egg', egg: true }, EGG.pos));
   }
+
+  const EGG = {
+    color: '#ff7a1a',
+    card: { artist: '沈伯洋', album: '台北順起來', sub: '沈伯洋 × 吳蓓雅、周自從', alias: 'puma shen 洋流 順起來 吳蓓雅 周自從',
+      coverUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e8/2b/6b/e82b6b0f-862a-8b45-25d4-f42886afb7b9/4711548170006.png/600x600bb.png',
+      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b9/79/a7/b979a719-c219-eb16-e2da-f52716662c63/mzaf_3746502855888154192.plus.aac.p.m4a',
+      appleUrl: 'https://music.apple.com/tw/album/6825287656?i=6825288172' },
+    pos: { x: 3.6, y: 0.2, z: 0.9, px: 80, py: 38, pz: 86 },
+  };
 
   // ── 畫面 ──────────────────────────────────────────────────────────
   const CSS = `
@@ -166,6 +179,16 @@
 .tune-holo-t span{font-size:11px;font-size:clamp(11px,3.6cqh,14px);letter-spacing:.08em;color:var(--cc);text-shadow:0 0 2px #000,0 0 4px #000,0 0 7px var(--cc)}
 .tune-holo-fx{position:absolute;left:0;top:0;width:100%;height:calc(100% + 30cqh);z-index:4;pointer-events:none}
 @keyframes tuneHoloFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+/* 彩蛋：洋流飄帶邊框（取代發光細框），橘色 */
+.tune-holo-rib{position:absolute;left:-6px;top:-6px;width:calc(100% + 12px);height:calc(100% + 12px);overflow:visible;pointer-events:none;display:none;z-index:3}
+.tune-holo.egg .tune-holo-rib{display:block}
+.tune-holo.egg .tune-holo-scr{border-color:rgba(var(--rgb),.18)}
+.tune-holo-rib path{fill:none;stroke-linecap:round;filter:drop-shadow(0 0 3px rgba(var(--rgb),.9))}
+.tune-holo-rib .r1{stroke:rgb(var(--rgb));stroke-width:1.6;stroke-dasharray:180 70 40 60 120 530;animation:tuneRib 7s linear infinite}
+.tune-holo-rib .r2{stroke:#ffd29a;stroke-width:1;stroke-dasharray:90 40 260 610;animation:tuneRib 11s linear infinite reverse;opacity:.85}
+.tune-holo-rib .r3{stroke:rgba(var(--rgb),.6);stroke-width:2.4;stroke-dasharray:300 700;animation:tuneRib 9s linear infinite;opacity:.55}
+@keyframes tuneRib{to{stroke-dashoffset:-1000}}
+@media (prefers-reduced-motion:reduce){.tune-holo-rib path{animation:none}}
 @keyframes tuneHoloOff{0%{transform:none;opacity:1}70%{opacity:1}100%{transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0}}
 @keyframes tuneHoloOn{0%{transform:translate(var(--dx,0px),var(--dy,0px)) scale(.04);opacity:0}18%{opacity:1}100%{transform:none}}
 @keyframes tuneHoloGlitch{0%,100%{transform:none;filter:none}
@@ -254,7 +277,7 @@ html.tune-inapp-lock body{padding-top:120px}
     </div>
     <button class="tune-now" id="tuneNow" type="button" hidden></button>
     <div class="tune-holo" id="tuneHolo" aria-hidden="true"><div class="fl"><div class="pw">
-      <div class="tune-holo-scr"><i class="cn"></i><i class="cn"></i><i class="cn"></i><i class="cn"></i><div class="tune-holo-hd"><span class="c"><i></i><em></em></span><span class="np" id="tuneHoloNp"></span></div><div class="tune-holo-cv"></div><div class="tune-holo-t"><b></b><span></span></div><div class="tune-holo-ft"><span class="xyz"></span><span class="bars"></span></div></div>
+      <div class="tune-holo-scr"><svg class="tune-holo-rib" aria-hidden="true"><path class="r3" pathLength="1000"/><path class="r1" pathLength="1000"/><path class="r2" pathLength="1000"/></svg><i class="cn"></i><i class="cn"></i><i class="cn"></i><i class="cn"></i><div class="tune-holo-hd"><span class="c"><i></i><em></em></span><span class="np" id="tuneHoloNp"></span></div><div class="tune-holo-cv"></div><div class="tune-holo-t"><b></b><span></span></div><div class="tune-holo-ft"><span class="xyz"></span><span class="bars"></span></div></div>
       </div></div></div>
     <canvas class="tune-holo-fx" id="tuneHoloFx" aria-hidden="true"></canvas>
     <div class="tune-hint" id="tuneHint">拖曳旋轉　滾輪縮放</div>
@@ -299,11 +322,11 @@ html.tune-inapp-lock body{padding-top:120px}
       let idleT = 0; controls.addEventListener('start', () => { controls.autoRotate = false; clearTimeout(idleT); }); controls.addEventListener('end', () => { idleT = setTimeout(() => { controls.autoRotate = true; }, 6000); });
     }
     const S = c => [c.px / 50 - 1, -(c.py / 50 - 1), c.pz / 50 - 1];
-    const pos = new Float32Array(N * 3); col = new Float32Array(N * 3); base = new Float32Array(N * 3);
+    const NG = CARDS.length; const pos = new Float32Array(NG * 3); col = new Float32Array(NG * 3); base = new Float32Array(NG * 3);
     const tmp = new THREE.Color();
-    for (let i = 0; i < N; i++) { const c = CARDS[i]; tmp.set(CELL_COLOR[c.cell]); base[i * 3] = tmp.r; base[i * 3 + 1] = tmp.g; base[i * 3 + 2] = tmp.b; const [x, y, z] = S(c); pos[i * 3] = x; pos[i * 3 + 1] = y; pos[i * 3 + 2] = z; }
+    for (let i = 0; i < NG; i++) { const c = CARDS[i]; tmp.set(CELL_COLOR[c.cell]); base[i * 3] = tmp.r; base[i * 3 + 1] = tmp.g; base[i * 3 + 2] = tmp.b; const [x, y, z] = S(c); pos[i * 3] = x; pos[i * 3 + 1] = y; pos[i * 3 + 2] = z; }
     geo = new THREE.BufferGeometry(); geo.setAttribute('position', new THREE.BufferAttribute(pos, 3)); geo.setAttribute('color', new THREE.BufferAttribute(col, 3));
-    sizeAttr = new Float32Array(N); geo.setAttribute('psize', new THREE.BufferAttribute(sizeAttr, 1));
+    sizeAttr = new Float32Array(NG); geo.setAttribute('psize', new THREE.BufferAttribute(sizeAttr, 1));
     pmat = new THREE.ShaderMaterial({ transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, uniforms: { uScale: { value: 1 } },
       vertexShader: 'attribute float psize;attribute vec3 color;varying vec3 vC;uniform float uScale;void main(){vC=color;vec4 mv=modelViewMatrix*vec4(position,1.0);gl_PointSize=psize*uScale*(1.0/-mv.z);gl_Position=projectionMatrix*mv;}',
       fragmentShader: 'varying vec3 vC;void main(){vec2 d=gl_PointCoord-.5;float r=length(d);if(r>.5)discard;float a=smoothstep(.5,.15,r);gl_FragColor=vec4(vC,a);}' });
@@ -337,7 +360,7 @@ html.tune-inapp-lock body{padding-top:120px}
     if (!THREE_OK) return;
     const dimK = 0.45;
     const dim = i => { const k = dimK * (CARDS[i].conf === 0 ? 0.7 : 1); col[i * 3] = base[i * 3] * k; col[i * 3 + 1] = base[i * 3 + 1] * k; col[i * 3 + 2] = base[i * 3 + 2] * k; sizeAttr[i] = 3.2; };
-    if (litIdx < 0) { for (let i = 0; i < N; i++) dim(i); } else dim(litIdx);
+    if (litIdx < 0) { for (let i = 0; i < CARDS.length; i++) dim(i); } else dim(litIdx);
     litIdx = c.i; col[c.i * 3] = base[c.i * 3]; col[c.i * 3 + 1] = base[c.i * 3 + 1]; col[c.i * 3 + 2] = base[c.i * 3 + 2]; sizeAttr[c.i] = 16;
     geo.attributes.color.needsUpdate = true; geo.attributes.psize.needsUpdate = true;
     const [mx, my, mz] = S3(c); marker.position.set(mx, my, mz); marker.scale.set(.34, .34, 1); marker.material.color.set(CELL_COLOR[c.cell]);
@@ -654,7 +677,7 @@ html.tune-inapp-lock body{padding-top:120px}
   let SEARCH = null;
   function findCards(q) {
     const toks = String(q).trim().split(/\s+/).map(norm).filter(Boolean); if (!toks.length) return [];
-    if (!SEARCH) SEARCH = CARDS.map(c => ({ c, a: norm(c.card.artist), b: norm(c.card.album) }));
+    if (!SEARCH) SEARCH = CARDS.map(c => ({ c, a: norm(c.card.artist + (c.card.alias || '')), b: norm(c.card.album) }));
     const all = toks.join(''), out = [];
     for (const r of SEARCH) { const hay = r.a + '|' + r.b; if (!toks.every(t => hay.includes(t))) continue;
       let sc = 0; if (r.b === all || r.a === all) sc += 100; if (r.b.startsWith(all)) sc += 40; if (r.a.startsWith(all)) sc += 30; if (hay.includes(all)) sc += 10; sc -= (r.a.length + r.b.length) * 0.01;
@@ -722,14 +745,14 @@ html.tune-inapp-lock body{padding-top:120px}
   // ── 試聽：停下來 0.7 秒就播站上的固定試聽（電台式硬切，不淡入淡出；轉動就停） ──
   let playing = null;
   function stopPreview() { clearTimeout(idleTimer); if (!playing) return; playing = null; try { cfg.player?.stop?.(); } catch (_) {} setNowPlaying(false); }
-  function armPreview() { clearTimeout(idleTimer); idleTimer = setTimeout(() => { if (previewCard && previewCard.cell !== targetCell()) { const c = nearest(); if (c !== previewCard) { scan(c); return; } } if (previewCard) { settleCover(previewCard); showHolo(previewCard); } if (state.audioOn) playPreview(); }, 700); }
+  function armPreview() { clearTimeout(idleTimer); idleTimer = setTimeout(() => { if (previewCard && !previewCard.egg && previewCard.cell !== targetCell()) { const c = nearest(); if (c !== previewCard) { scan(c); return; } } if (previewCard) { settleCover(previewCard); showHolo(previewCard); } if (state.audioOn) playPreview(); }, 700); }
   // 懸浮封面：停穩（跟試聽同一個 0.7 秒）才開機，一轉動就關
   let holoCard = null;
   // 封面放大成螢幕要清楚一點、又不要抓原圖：CAA 取 500 px 縮圖，Apple 換 600×600
   const holoSrc = u => u.replace(/(coverartarchive\.org\/release(?:-group)?\/[^/]+\/front)$/, '$1-500').replace(/\/\d+x\d+bb\./, '/600x600bb.');
   // 封面載好才開機（不然先閃一個 ♪ 再換圖）；卡池沒帶封面就等 settleCover 查到，4 秒還沒有就用 ♪ 開
   let holoT = 0; const HOLO_PH = '<div class="ph"><b style="font-size:3em;font-weight:400;letter-spacing:0">♪</b>NO COVER</div>';
-  function holoOn() { clearTimeout(holoT); if (!holoCard || el.holo.classList.contains('on')) return; placeHolo(); el.holo.classList.remove('closing'); el.holo.classList.add('on'); FX.target = 1; el.now.classList.add('is-tucked'); el.hint.classList.add('is-tucked'); }
+  function holoOn() { clearTimeout(holoT); if (!holoCard || el.holo.classList.contains('on')) return; placeHolo(); if (holoCard.egg) drawRibbon(); el.holo.classList.remove('closing'); el.holo.classList.add('on'); FX.target = 1; el.now.classList.add('is-tucked'); el.hint.classList.add('is-tucked'); }
   function holoFace(html) { el.holo.querySelector('.tune-holo-cv').innerHTML = html; }
   function setHoloCover(url) {
     const c = holoCard; if (!c) return;
@@ -751,7 +774,8 @@ html.tune-inapp-lock body{padding-top:120px}
     el.holo.querySelector('.tune-holo-ft .xyz').textContent = `E${fmt(c.x)} T${fmt(c.y)} W${fmt(c.z)}`;
     el.holo.querySelector('.tune-holo-ft .bars').innerHTML = [c.x, c.y, c.z].map(v => `<i style="height:${Math.round(20 + 80 * Math.max(0, Math.min(1, (v + 1) / 2)))}%"></i>`).join('') + '<i style="height:35%"></i><i style="height:70%"></i>';
     { const np = document.getElementById('tuneNp'), hn = document.getElementById('tuneHoloNp'); if (np && hn) { hn.innerHTML = np.innerHTML; hn.className = np.className; } }
-    el.holo.querySelector('.tune-holo-t b').textContent = c.card.album; el.holo.querySelector('.tune-holo-t span').textContent = c.card.artist;
+    el.holo.querySelector('.tune-holo-t b').textContent = c.card.album; el.holo.querySelector('.tune-holo-t span').textContent = c.card.sub || c.card.artist;
+    el.holo.classList.toggle('egg', !!c.egg);
     holoT = setTimeout(() => { if (holoCard === c && !el.holo.classList.contains('on')) { holoFace(HOLO_PH); holoOn(); } }, 4000);
     if (c.card.coverUrl) setHoloCover(c.card.coverUrl);
   }
@@ -890,6 +914,22 @@ html.tune-inapp-lock body{padding-top:120px}
       n.addEventListener('pointerdown', grab); n.addEventListener('pointermove', move); n.addEventListener('pointerup', drop); n.addEventListener('pointercancel', drop);
     }
   }
+  // 洋流飄帶：沿著板子的圓角矩形走一圈，往外法線方向加正弦波（三條振幅、波長、相位不同），dash 動畫讓它繞著跑
+  function drawRibbon() {
+    const scr = el.holo.querySelector('.tune-holo-scr'), svg = scr.querySelector('.tune-holo-rib');
+    const W = scr.offsetWidth, H = scr.offsetHeight, r = 9, pad = 6; if (!W || !H) return;
+    svg.setAttribute('viewBox', `${-pad} ${-pad} ${W + pad * 2} ${H + pad * 2}`);
+    // 圓角矩形周長上的點（含外法線）
+    const segs = [[W - 2 * r, 0], [Math.PI / 2 * r, 1], [H - 2 * r, 0], [Math.PI / 2 * r, 1], [W - 2 * r, 0], [Math.PI / 2 * r, 1], [H - 2 * r, 0], [Math.PI / 2 * r, 1]];
+    const L = segs.reduce((a, s) => a + s[0], 0);
+    const at = d => { let k = 0; for (let q = 0; q < 8; q++) { const [len, arc] = segs[q]; if (d <= len || q === 7) { const u = Math.min(1, d / len), side = q >> 1;
+      if (!arc) { const P = [[r + u * (W - 2 * r), 0, 0, -1], [W, r + u * (H - 2 * r), 1, 0], [W - r - u * (W - 2 * r), H, 0, 1], [0, H - r - u * (H - 2 * r), -1, 0]][side]; return P; }
+      const C = [[W - r, r], [W - r, H - r], [r, H - r], [r, r]][side], a0 = [-Math.PI / 2, 0, Math.PI / 2, Math.PI][side], a = a0 + u * Math.PI / 2;
+      return [C[0] + Math.cos(a) * r, C[1] + Math.sin(a) * r, Math.cos(a), Math.sin(a)]; } d -= len; } };
+    const mk = (amp, waves, ph) => { let dd = ''; const n = 240; for (let j = 0; j <= n; j++) { const d = L * j / n, [x, y, nx, ny] = at(d), o = amp * Math.sin(2 * Math.PI * waves * j / n + ph);
+      dd += (j ? 'L' : 'M') + (x + nx * o).toFixed(1) + ' ' + (y + ny * o).toFixed(1); } return dd + 'Z'; };
+    svg.querySelector('.r1').setAttribute('d', mk(2.4, 14, 0)); svg.querySelector('.r2').setAttribute('d', mk(1.6, 9, 2)); svg.querySelector('.r3').setAttribute('d', mk(3.2, 6, 4));
+  }
   function hideHolo() {
     // 縮回「現在」星星的位置；縮完（0.25 秒）星圖才回到原位、原大小
     if (el.holo?.classList.contains('on')) { const sp = litScreenPos(), hr = el.holo.getBoundingClientRect(); if (sp) { el.holo.style.setProperty('--dx', (sp.x - hr.left - hr.width / 2).toFixed(1) + 'px'); el.holo.style.setProperty('--dy', (sp.y - hr.top - hr.height / 2).toFixed(1) + 'px'); } }
@@ -962,6 +1002,7 @@ html.tune-inapp-lock body{padding-top:120px}
   }
   function emit(c) {
     if (!c) return;
+    if (c.egg) { global.open(c.card.appleUrl, '_blank', 'noopener'); return; }   // 彩蛋不進結果頁（預覽版）
     state.seen.push(c.i); if (state.seen.length > 200) state.seen.shift();
     // 星圖上正在試聽的就是這張：不停，交給結果頁接著播（2026-10-25 店主：按就這張後試聽不要從頭開始）
     const continuing = playing === c;
@@ -1020,7 +1061,7 @@ html.tune-inapp-lock body{padding-top:120px}
       if (!state.holo) hideHolo(); else if (previewCard && performance.now() - lastTurn > 700) showHolo(previewCard); };
     el.mode.onclick = () => { state.fine = !state.fine; setModeUI(true); sfxClick(); };
     el.now.onclick = () => { if (previewCard) emit(previewCard); };
-    el.draw.onclick = () => { if (!previewCard) return; if (previewCard.cell !== targetCell()) scan(nearest()); emit(previewCard); };
+    el.draw.onclick = () => { if (!previewCard) return; if (!previewCard.egg && previewCard.cell !== targetCell()) scan(nearest()); emit(previewCard); };
     setAudioUI(); setModeUI(); setHoloUI();
     let data;
     // 星圖程式庫（three.js，CDN）跟卡池資料一起等，但最多等 8 秒：等不到就只用面板。
