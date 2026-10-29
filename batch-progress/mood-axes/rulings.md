@@ -291,3 +291,12 @@
 - 同團《A Triumph for Man》(2.8, 0.6, 0) → (3.3, 0.0, −0.4) 冷冽。
 - 10-23 用「夢幻＝靜、暖、包覆＝重」把原本在躁的卡拉進恍惚的共 9 張；同理由最像的 DIIV《Oshin》（motorik 推進、冷調 chorus 吉他）撤回原值 (3.3, 0.8, −0.3) 暴躁。其餘 Tame Impala 兩張、The Field、George Clanton、Chapterhouse、Blush、Soda Stereo 是溫暖迷幻或厚牆，留恍惚。
 - 規則補一句：**「夢幻」不自動等於靜與重**。高音、清亮、玻璃質的吉他與嗓音算輕；鼓在推就是躁；店主「dream pop＝恍惚」指的是落日飛車那種慢而暖的。
+
+## 2026-10-29｜統整規則（RULES.md）＋全池再檢查：21,716 張逐張看，210 張換格
+
+- **店主**：「統整調整過的專輯，梳理一下整體歸類規則，並且全部再檢查一次。」
+- **統整**：`RULES.md` 收斂十幾輪裁定為現行標準（三軸定義、作廢規則、六個常見陷阱、流程）；`OWNER-CALIBRATION.md` 列店主親點／親裁 74 張（依目前格）。之後以 RULES.md 為準。
+- **做法**：`full-recheck/`，排除錨點 104 與店主卡 74，其餘 21,716 張依藝人排序切 49 份，代理照 RULES.md 逐張判，只輸出換格的卡。
+- **主線審稿**：220 筆逐張看，撤 10：Khanate 4 張（10-23 主線裁定：極慢 doom 嗡鳴往下壓＝靜，比照 Sunn O)))）、Future《Pluto》《Honest》與 Travis Scott《Astroworld》（10-23 店主例延伸：主流 trap 聲響冷硬不往暖）、Exists《Exist》（代理不認識、子曲風疑誤標）、Alcest《Souvenirs》、Bob Marley《Survival》（拿不準，維持）。
+- **結果**：210 張換格（全池 1%）。最多：平靜→冷冽 25（glitch、拼貼、合成器脈動、前衛即興：Oval、OMD《Dazzle Ships》、YMO《BGM》、Paul Bley、Leo Smith）、暴躁→沸騰 25（旋律大副歌的搖滾：Pearl Jam《Ten》、U2、Smashing Pumpkins、MCR、King Gnu、張惠妹《阿密特》）、冷冽→雀躍 20（合成流行旋律清楚：Pet Shop Boys、Soft Cell、OMD 首張、Mylène Farmer）、放鬆→恍惚 17（大編制配樂與 quiet storm 的包覆：Isley Brothers、Roxy Music《Avalon》、《魔法公主》）、頹靡→暴躁 15（Bowie《"Heroes"》《Blackstar》、Pink Floyd《The Wall》、Elend、Yellow Swans）、雀躍→沸騰 14（大編制交響與協奏曲判重）。The Field《From Here We Go Sublime》改沸騰（四拍脈動推進＝躁），取代 10-29 Mew 一節「留恍惚」的判斷。
+- **八格**：放鬆 5,080、平靜 683、恍惚 1,687、頹靡 1,572、雀躍 6,046、冷冽 1,836、沸騰 2,122、暴躁 2,868。錨點 104/104 同格。
