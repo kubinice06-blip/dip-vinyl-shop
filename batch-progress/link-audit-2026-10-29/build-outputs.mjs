@@ -41,14 +41,14 @@ for (const x of C.preview.filter(x => ['wrong', 'gone'].includes(x.verdict))) {
   if (e) plan.preview.push({ mapKey: x.key, artist: x.artist, album: x.album, verdict: x.verdict, reason: x.reason, ...e });
 }
 // 名稱段缺漏但 lookup 仍查得到的（不在旗標裡）
-for (const [k, v] of Object.entries(rt)) if (!v[3] && !mp[k]?.collectionGone) {
+for (const [k, v] of Object.entries(rt)) if (!v[3]) {
   const L = look[`${v[0]}:${v[1]}`]; if (!L?.albumSlug) continue;
-  plan.preview.push({ mapKey: k, artist: mp[k]?.artist, album: mp[k]?.album, verdict: 'missing-slug', reason: 'runtime 名稱段空白，Apple 鈕目前是灰的；lookup 仍查得到', action: 'fill-slug', priority: 'low', old: v, new: [v[0], v[1], v[2], encodeURIComponent(L.albumSlug)], mapPatch: { collectionViewUrl: `https://music.apple.com/${v[0].toLowerCase()}/album/${encodeURIComponent(L.albumSlug)}/${v[1]}` } });
+  plan.preview.push({ mapKey: k, artist: mp[k]?.artist, album: mp[k]?.album, verdict: 'missing-slug', reason: mp[k]?.collectionGone ? `map 標記 ${mp[k].collectionGone.slice(0, 10)} 下架，但 ${v[0]} 店面現在又查得到（重新上架）；補回名稱段讓 Apple 鈕恢復` : 'runtime 名稱段空白，Apple 鈕目前是灰的；lookup 仍查得到', action: 'fill-slug', priority: 'low', old: v, new: [v[0], v[1], v[2], encodeURIComponent(L.albumSlug)], mapPatch: { collectionGone: null, collectionViewUrl: `https://music.apple.com/${v[0].toLowerCase()}/album/${encodeURIComponent(L.albumSlug)}/${v[1]}` } });
 }
 // map 裡 status=review、候選其實正確（只差版本加註或譯名）的，建議轉正
 const PROMOTE = { 'iggyandthestooges\u0000rawpower': 'Raw Power 50 週年版，藝人中文譯名', 'live\u0000throwingcopper': '藝人名大小寫不同', 'kiss\u0000alive': '原盤即現場盤，2025 remaster', 'dicklee\u0000themadchinaman': '李迪文＝Dick Lee', 'evelynking\u0000iminlove': 'Expanded Edition，藝人中文譯名', 'hermetopascoal\u0000zabumbebuma': 'Remasterizado，藝人中文譯名' };
 for (const [k0, why] of Object.entries(PROMOTE)) {
-  const k = JSON.parse(`"${k0}"`); const c = mp[k]?.candidate; if (!c?.previewUrl || !(await alive(c.previewUrl))) { console.log('promote skip', k); continue; }
+  const k = k0; const c = mp[k]?.candidate; if (!c?.previewUrl || !(await alive(c.previewUrl))) { console.log('promote skip', k); continue; }
   const j = await (await fetch(`https://itunes.apple.com/lookup?id=${c.collectionId}&country=${c.storefront}`)).json(); await sleep(3200);
   const col = (j.results || [])[0]; const slug = (col?.collectionViewUrl || '').match(/\/album\/([^/]+)\/\d+/)?.[1] || '';
   if (!col) { console.log('promote gone', k); continue; }
