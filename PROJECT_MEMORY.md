@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-29｜dip-vinyl-shop｜試聽與串流連結全面檢查（只讀稽核，修正待店主「可以」）
+
+- **改動**：店主「順便檢查試聽連結還有串流連結」。`batch-progress/link-audit-2026-10-29/`（腳本、REPORT.md、issues、fix-plan、verdicts）。
+  - Apple 試聽 17,729 筆：失效 0；指錯 35（錯版本 19、錯專輯 12、錯藝人 4，如 The KLF《Chill Out》配到 John Lee Hooker、山下達郎《For You》配到 Selena Gomez）；存疑 53；專輯下架 201（新發現 42）；map error 158 是 07-19 限流未重跑。
+  - Spotify 串流（KV `cover6:*` 12,455 鍵、有連結 7,955）：失效 0；指錯 92（錯張 59、錯版本 25、錯藝人 8，如 Led Zeppelin《II》→《III》、Taylor Swift《Fearless》→ Taylor's Version、The Birthday Party → 草東）；存疑 40。
+  - fix-plan 307 筆：換新 192（試聽 177、串流 15）、清空 115（試聽撤 23、Apple 鈕改灰 15、串流 77）。**未套用**，等店主。
+- **主要檔案**：`batch-progress/link-audit-2026-10-29/`。
+- **驗證**：試聽 HEAD／Range GET 17,729/17,729 回 200；oEmbed 7,955/7,955 有回應；機器旗標（試聽 1,767、串流 597）逐筆人工判定，記在 verdicts.json。
+
 ### 2026-10-29｜dip-vinyl-shop｜情緒八格：統整現行規則（RULES.md）＋全池再檢查 21,716 張（210 張換格）
 
 - **改動**：店主「統整調整過的專輯，梳理一下整體歸類規則，並且全部再檢查一次」。

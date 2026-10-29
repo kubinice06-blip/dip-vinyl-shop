@@ -9,11 +9,12 @@ export const previewKey = (a, b) => `${normalizePreviewText(a)}\u0000${normalize
 const VER = /remaster|deluxe|anniversary|edition|expanded|bonus|reissue|legacy|special|collector|mono|stereo|version|super|definitive|\b(19|20)\d\d\b|bicentennial|centennial|re-?issue|digital|hi-?res|mqa|24[- ]?bit|track|disc|vol(ume)?\.?\s*\d|explicit|clean|with bonus|original album|complete/i;
 // 錯版本字樣（卡片專輯名本身沒有才算錯）
 export const BAD = [
-  ['instrumental', /instrumental|\binst\.?\b|インスト/i], ['karaoke', /karaoke|カラオケ|伴奏/i], ['live', /\blive\b|ライヴ|ライブ|現場|演唱會/i],
-  ['remix', /remix|\bremixes\b|\bremixed\b|\bmixes\b|reworks?\b|dub version|\bdubs\b/i], ['cover/tribute', /tribute|\bcovers?\b|\bsongs of\b|\bplays\b|\bperforms?\b|\bsalute\b|homage|in the style of|made famous|originally performed/i],
+  ['instrumental', /instrumental|\binst\.?\b|インスト/i], ['karaoke', /karaoke|カラオケ|伴奏/i], ['live', /\blive\b|ライヴ|ライブ|現場|演唱會|en vivo|ao vivo|en directo|\blive at\b/i],
+  ['remix', /混音|remix|\bremixes\b|\bremixed\b|\bmixes\b|reworks?\b|dub version|\bdubs\b/i], ['cover/tribute', /tribute|\bcovers?\b|\bsongs of\b|\bplays\b|\bperforms?\b|\bsalute\b|homage|in the style of|made famous|originally performed/i],
   ['a cappella', /a\s*cap+el+a|acapella/i], ['beats', /\bbeats\b/i], ['demo', /\bdemos?\b/i], ['commentary', /commentary|track by track|interview/i],
   ['sped/slowed', /sped up|slowed|\breverb\b|nightcore|8d audio/i], ['lullaby/piano', /lullaby|lullabies|rockabye|piano (tribute|versions?)|string quartet tribute|vitamin string/i],
-  ['reimagined', /reimagined|re-?recorded|taylor's version|\borchestral\b|symphonic|\bacoustic\b/i], ['sessions', /\bsessions?\b|peel session|bbc/i],
+  ['compilation', /\bbest of\b|greatest hits|精選|最精選|ベスト|\bthe best\b|selected hits|anthology|collection\b|original album series/i], ['single/EP', /\s-\s(single|ep)$|\((single|ep)\)$/i],
+  ['reimagined', /reimagined|re-?recorded|\brevisited\b|taylor's version|\borchestral\b|symphonic|\bacoustic\b/i], ['sessions', /\bsessions?\b|peel session|bbc/i],
 ];
 export function badWords(candidate, cardAlbum, cardArtist = '') {
   const out = [];
