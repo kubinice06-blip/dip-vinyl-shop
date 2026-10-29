@@ -275,3 +275,12 @@
 - **為什麼會錯**：三張都是模型評分（score3000／score-rest）時就落在靜，理由分別是「八〇年代抒情大歌，慢速深情」（只看同名主打）、「留白多、內省、克制」（把安靜稀疏當靜）、「中速律動帶煙霧感」（把中速 groove 當放鬆）；之後體感重判、兩輪邊界重判都因「拿不準就不改」或不在邊界窗內而放過。
 - **掃同形狀的卡**：`bias-rejudge/`，① 主曲風爵士且在靜（1,727）② 藝人／專輯名中日韓文字且在靜（789），排除店主點過／裁定過的；8 份交代理照 `BRIEF.md`（整張看、安靜但緊繃＝躁、自由／前衛爵士一律不在靜、ballad／cool／bossa／Paseo 型維持靜、這次不要「拿不準就不改」）。
 - **結果**：315 張換格（12.5%）。平靜→冷冽 151（自由、前衛、M-Base、調式靈性爵士：Paul Motian、富樫雅彥、Wayne Shorter 調式期、Andrew Hill、Nat Birchall…）、放鬆→雀躍 109（整張多快歌的華語／日語／韓語專輯：周杰倫、宇多田《First Love》、吉田拓郎、조용필、姚莉時代曲；爵士放克與硬咆勃推進：Chet Baker in New York、Makaya McCraven、Keith Jarrett Standards）、頹靡→暴躁 25（菊地雅章電氣融合、Don Cherry《Brown Rice》、光束夜）、放鬆→冷冽 11、恍惚→沸騰 10。八格：放鬆 5,119、平靜 782、恍惚 1,687、頹靡 1,611、雀躍 6,009、冷冽 1,783、沸騰 2,070、暴躁 2,833。錨點 104/104 同格。
+
+## 2026-10-29｜店主：Jonathan Harvey《Tombeau de Messiaen》不是平靜 → 古典／前衛偏誤重判 1,163 張，115 張換格
+
+- **店主點的**：《Tombeau de Messiaen》(2.4, 0, −1.2) 平靜 → (3.4, 0, −1.2) 冷冽（鋼琴對錄音帶的頻譜作品，閃爍密集、無調，緊繃）。鎖進 overrides，why 標「店主」。
+- **為什麼會錯**：模型評分給靜；10-23 酸冷二輪把它推到冷，同日「撤回推力」（沒有打擊在推不算躁）把能量拉回 2.4；稍晚店主試聽改標準為「張力、不安定，再安靜也是躁」，但體感重判保守（差 0.4 或換格才改、拿不準不改）沒動它；10-27 曲風偏誤只掃爵士與中日韓。**古典、現代音樂、電子噪音從沒被專門重看過。**
+- **掃同形狀的卡**：`classical-rejudge/`，目前在靜（x < 3）的 ① 主曲風古典 726 ② 電子 noise／industrial／glitch／concrete 316 ③ 自由／前衛爵士 108 ④ 被「撤回推力」拉回靜的 13；5 份交代理照 `BRIEF.md`（無調、頻譜、音塊、尖銳、突兀＝躁；戲劇性大編制＝躁＋重；有脈動的極簡＝躁；神聖極簡、抒情古典、慢速懸浮音塊〔店主例《There Will Be Blood》平靜〕、drone 仍是靜）。
+- **主線審稿**：117 筆逐張看。撤 2：Colin Stetson《Sorrow》（重寫 Górecki 3，整張慢而沉，與 Górecki 同留頹靡）、Pierre Henry《Le Voyage》（冥想式長篇電子，留頹靡）。改 1：Hélène Grimaud《Credo》代理給暖（雀躍），改回冷 → 冷冽。
+- **結果**：115 張換格。平靜→冷冽 40（Ryoji Ikeda、青木孝允、Alva Noto、GRM／電腦音樂、Weinberg、Dutilleux、Roslavets、Britten 四重奏、Pollini 晚期奏鳴曲、Bartók《44 Duos》、Messiaen《Vingt Regards》、Godard）、頹靡→暴躁 37（Roly Porter 3、Maurizio Bianchi 3、Pan Sonic、Scorn、Tim Hecker《Harmony in Ultraviolet》、Scelsi 2、Bruckner 5／9、Berlioz《安魂曲》、Shostakovich 110a、Tony Conrad、Kreng、Raime）、放鬆→雀躍 13（Glass、Nyman、Zauberflöte、Faust、Porgy、E.T.）、恍惚→沸騰 11（Mahler 2／5／8、Bruckner 4／8、Tchaikovsky 5、Missa solemnis、LOTR）、放鬆→沸騰 6（Brahms 4、Mahler 9、Pathétique、Firebird、Franck、Phantom）。
+- **沒改的**：標成自由爵士但實為抒情的（Shepp 抒情曲、Frisell、Chet Baker）、慢速 dark ambient 與 drone、Sunn O)))、Scott Walker。八格：放鬆 5,098、平靜 735、恍惚 1,678、頹靡 1,576、雀躍 6,023、冷冽 1,824、沸騰 2,087、暴躁 2,873。錨點 104/104 同格。
