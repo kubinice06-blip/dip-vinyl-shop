@@ -39,7 +39,7 @@ for (const t of targets) {
   }
   const cands = [];
   for (const u of urls) cands.push({ u, t: u === t.spotifyUrl ? t.spotifyTitle : await title(u) });
-  const ok = cands.filter(c => c.u !== t.spotifyUrl && c.t && !badWords(c.t, t.album, t.artist).length && ['exact', 'loose'].includes(albumMatch(t.album, c.t)));
+  const ok = cands.filter(c => c.u !== t.spotifyUrl && c.t && !/\bE\.P\.|\s-\s(Single|EP)$/i.test(c.t) && !badWords(c.t, t.album, t.artist).length && ['exact', 'loose'].includes(albumMatch(t.album, c.t)));
   const pick = ok.find(c => albumMatch(t.album, c.t) === 'exact') || ok[0] || null;
   done[t.key] = { rg, rgSource, cands, pick };
   fs.writeFileSync(OUT, JSON.stringify(done, null, 1));
