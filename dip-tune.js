@@ -178,7 +178,7 @@
 .tune-holo-t b,.tune-holo-t span{max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .tune-holo-t b{font-weight:400;font-size:14px;font-size:clamp(13px,4.6cqh,18px);color:#f4fbff;text-shadow:0 0 2px #000,0 0 4px #000,0 0 6px var(--cc),0 0 14px var(--cc)}
 .tune-holo-t span{font-size:11px;font-size:clamp(11px,3.6cqh,14px);letter-spacing:.08em;color:var(--cc);text-shadow:0 0 2px #000,0 0 4px #000,0 0 7px var(--cc)}
-.tune-stage canvas.tune-boat-front{position:absolute;left:0;top:0;width:100%;height:100%;z-index:5;pointer-events:none}
+.tune-stage canvas.tune-boat-front{position:absolute;left:0;top:0;width:160px;height:160px;z-index:5;pointer-events:none}
 .tune-holo-fx{position:absolute;left:0;top:0;width:100%;height:calc(100% + 30cqh);z-index:4;pointer-events:none}
 @keyframes tuneHoloFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
 /* 彩蛋：洋流飄帶邊框（店主附實物與設計稿：5cm 寬橘帶，上下橘邊印一排小字，中間白條，粗黑「洋流」大字壓過白條、上下吃進橘邊），繞著板子一直跑 */
@@ -1031,8 +1031,10 @@ html.tune-inapp-lock body{padding-top:120px}
     const lights = () => { const L = new THREE.Group(); L.add(new THREE.HemisphereLight(0xffffff, 0x8888aa, 0.85)); const dl = new THREE.DirectionalLight(0xffffff, 0.5); dl.position.set(3, 6, 4); L.add(dl); return L; };
     scene.add(lights());   // 只照得到洋流號（星點與格線不吃光）
     BOAT.fscene = new THREE.Scene(); BOAT.fscene.add(lights());
-    BOAT.fcv = document.createElement('canvas'); BOAT.fcv.className = 'tune-boat-front'; el.holo.insertAdjacentElement('afterend', BOAT.fcv);
-    try { BOAT.fr = new THREE.WebGLRenderer({ canvas: BOAT.fcv, alpha: true, antialias: true }); BOAT.fr.setClearColor(0x000000, 0); } catch (_) { BOAT.fr = null; }
+    // 前層不再開第二個 WebGL（2026-10-29 有人回報 Android 上整片板子變黑：多一張全螢幕抗鋸齒 WebGL 吃光繪圖記憶體，
+    // 板子那層畫不出來）。改用同一支 renderer 只畫船附近 160px 的小框到 render target，讀回貼到一張 160px 的 2D 小畫布。
+    BOAT.fcv = document.createElement('canvas'); BOAT.fcv.className = 'tune-boat-front'; BOAT.fcv.style.display = 'none'; el.holo.insertAdjacentElement('afterend', BOAT.fcv);
+    BOAT.fctx = BOAT.fcv.getContext('2d'); BOAT.fr = !!BOAT.fctx;
     const inner = makeYangliuBoat(THREE); inner.rotation.y = -Math.PI / 2; inner.position.set(0, -5.5, 0);   // 船頭 +x 轉成 +z，配合 lookAt
     const g = new THREE.Group(); g.add(inner); g.visible = false; scene.add(g); BOAT.g = g; BOAT.inner = inner;
     const gc = document.createElement('canvas'); gc.width = gc.height = 32; const gg = gc.getContext('2d'), rg = gg.createRadialGradient(16, 16, 0, 16, 16, 16);
@@ -1124,12 +1126,30 @@ html.tune-inapp-lock body{padding-top:120px}
       BOAT.tpos.set(v.toArray(), k * 3); BOAT.tcol[k * 3] = a; BOAT.tcol[k * 3 + 1] = a * .48; BOAT.tcol[k * 3 + 2] = a * .1; }
     BOAT.trail.geometry.attributes.position.needsUpdate = true; BOAT.trail.geometry.attributes.color.needsUpdate = true;
   }
-  // 前層畫布跟星圖畫布同大小、同解析度，用同一支相機畫（在主畫面 render 之後呼叫）
+  // 船在前面時：同一支相機只取船周圍 FRONT_BOX px 的視窗（在既有的橫移 view offset 上再切一塊），畫進 render target，
+  // 讀回像素（上下顛倒）貼到疊在板子上的小 2D 畫布，畫布擺在船的位置。在主畫面 render 之後呼叫。
+  const FRONT_BOX = 160;
   function renderBoatFront() {
     if (!BOAT.on || !BOAT.front || !BOAT.fr) return;
-    const w = el.gl.clientWidth, hh = el.gl.clientHeight, pr = renderer.getPixelRatio();
-    if (BOAT.fw !== w || BOAT.fh !== hh || BOAT.fpr !== pr) { BOAT.fw = w; BOAT.fh = hh; BOAT.fpr = pr; BOAT.fr.setPixelRatio(pr); BOAT.fr.setSize(w, hh, false); }
-    BOAT.fr.render(BOAT.fscene, camera);
+    const THREE = global.THREE, w = el.gl.clientWidth, h = el.gl.clientHeight, pr = renderer.getPixelRatio(), S = FRONT_BOX, n = Math.round(S * pr);
+    if (!w || !h) return;
+    if (!BOAT.rt || BOAT.rtn !== n) {
+      BOAT.rt?.dispose(); BOAT.rtn = n;
+      const MS = THREE.WebGLMultisampleRenderTarget && renderer.capabilities.isWebGL2;
+      BOAT.rt = MS ? new THREE.WebGLMultisampleRenderTarget(n, n, { samples: 4 }) : new THREE.WebGLRenderTarget(n, n);
+      BOAT.px = new Uint8Array(n * n * 4); BOAT.img = BOAT.fctx.createImageData(n, n); BOAT.fcv.width = BOAT.fcv.height = n;
+    }
+    const v = camera.view && camera.view.enabled ? { ...camera.view } : null, gr = el.gl.getBoundingClientRect(), sp = boatScreenPos(); if (!sp) return;
+    const rx = Math.round(sp.x - gr.left - S / 2), ry = Math.round(sp.y - gr.top - S / 2);
+    camera.setViewOffset(w, h, (v ? v.offsetX : 0) + rx, (v ? v.offsetY : 0) + ry, S, S);
+    const cc = renderer.getClearColor(new THREE.Color()), ca = renderer.getClearAlpha();
+    renderer.setRenderTarget(BOAT.rt); renderer.setClearColor(0x000000, 0); renderer.clear(); renderer.render(BOAT.fscene, camera);
+    renderer.readRenderTargetPixels(BOAT.rt, 0, 0, n, n, BOAT.px);
+    renderer.setRenderTarget(null); renderer.setClearColor(cc, ca);
+    if (v) camera.setViewOffset(v.fullWidth, v.fullHeight, v.offsetX, v.offsetY, v.width, v.height); else camera.clearViewOffset();
+    const d = BOAT.img.data, row = n * 4; for (let y = 0; y < n; y++) d.set(BOAT.px.subarray((n - 1 - y) * row, (n - y) * row), y * row);   // WebGL 由下往上
+    BOAT.fctx.putImageData(BOAT.img, 0, 0);
+    const st = el.stage.getBoundingClientRect(); BOAT.fcv.style.transform = `translate(${(gr.left - st.left + rx).toFixed(1)}px,${(gr.top - st.top + ry).toFixed(1)}px)`;
   }
   function hideHolo() {
     // 縮回「現在」星星的位置；縮完（0.25 秒）星圖才回到原位、原大小

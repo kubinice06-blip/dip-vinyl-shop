@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-29｜dip-vinyl-shop｜彩蛋：洋流號前層改用單一 WebGL＋160px 2D 小畫布（Android 回報板子整片變黑）
+
+- **改動**：有人回報（Android Chrome 截圖）彩蛋板子整片黑（封面、標題、歌手都不見，只剩飄帶與洋流號）。研判為前層多開的第二個全螢幕、抗鋸齒 WebGL renderer 吃光繪圖記憶體，板子那層畫不出來（未在實機重現）。
+  - 拿掉第二個 WebGLRenderer。船在前面時，主 renderer 在既有 view offset 上再切出船周圍 160px 的小視窗，畫進 render target（WebGL2 用 4x multisample），`readRenderTargetPixels` 讀回、上下翻轉後 `putImageData` 到 160px 的 2D 畫布，以 transform 擺到船的位置；畫完還原 view offset 與 clear color。`?v=63`。
+- **主要檔案**：`dip-tune.js`、`index.html`。
+- **驗證**：iPhone 13 Playwright：前後換層正常（取樣 70 次、在前 20），截圖確認船與航跡疊在封面上、板子內容完整；點船開 current.puma.taipei；無錯誤。Android 實機待回報者確認。
+
 ### 2026-10-28｜dip-vinyl-shop｜頻率光譜：`?egg=1`／`?q=` 連結一打開就武裝播放器（IG 內建瀏覽器又能一進去就出聲）
 
 - **改動**：店主「用 IG 瀏覽器，之前一進去就有聲音」。v60 把自動搜尋改走 quiet（不呼叫 `ensureAudio`），播放器沒在載入時武裝，iOS／IG 內建瀏覽器帶進新頁的「點連結那一下」授權就過期了（同 2026-10-19 random 分頁的教訓）。
