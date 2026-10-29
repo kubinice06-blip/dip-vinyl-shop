@@ -6,6 +6,7 @@
   - 拿掉第二個 WebGLRenderer。船在前面時，主 renderer 在既有 view offset 上再切出船周圍 160px 的小視窗，畫進 render target（WebGL2 用 4x multisample），`readRenderTargetPixels` 讀回、上下翻轉後 `putImageData` 到 160px 的 2D 畫布，以 transform 擺到船的位置；畫完還原 view offset 與 clear color。`?v=63`。
 - **主要檔案**：`dip-tune.js`、`index.html`。
 - **驗證**：iPhone 13 Playwright：前後換層正常（取樣 70 次、在前 20），截圖確認船與航跡疊在封面上、板子內容完整；點船開 current.puma.taipei；無錯誤。Android 實機待回報者確認。
+- **部署**：合併後 main（0b3a244）的 Cloudflare Pages 正式 build 失敗（同內容的分支預覽 build 成功、本機 `scripts/pages-build.sh` 也通過：439 檔、69 MB），判為 CF 端偶發；以本條補記觸發重建。
 
 ### 2026-10-28｜dip-vinyl-shop｜頻率光譜：`?egg=1`／`?q=` 連結一打開就武裝播放器（IG 內建瀏覽器又能一進去就出聲）
 
