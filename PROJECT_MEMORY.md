@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-29｜dip-vinyl-shop｜情緒三軸：店主點 Mew《Half the World Is Watching Me》改冷冽（冷躁輕）＋同理由 2 張
+
+- **改動**：店主「這也不是恍惚，冷、躁、輕」。10-23 體感重判以「夢幻吉他包覆、旋律清楚」把它從暴躁拉到恍惚。改 (3.4, 0.0, −0.5) 冷冽；同團《A Triumph for Man》→ 冷冽；DIIV《Oshin》撤回同理由的改判、回暴躁。`rulings.md` 補「夢幻不自動等於靜與重」。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/rulings.md`。
+- **驗證**：build-card-moods 錨點 104/104 同格；八格 恍惚 1,675、冷冽 1,826、暴躁 2,874。
+
 ### 2026-10-29｜dip-vinyl-shop｜情緒三軸：店主點 Jonathan Harvey《Tombeau de Messiaen》改冷冽＋古典／前衛偏誤重判 1,163 張（115 張換格）
 
 - **改動**：店主「這張不是平靜的耶，解析一下標準，再抓遺漏的」。成因：10-23「撤回推力」（沒打擊不算躁）把它拉回靜，後來店主改標準為「張力、不安定，再安靜也是躁」，但之後的重判偏保守、10-27 曲風偏誤只掃爵士與中日韓。

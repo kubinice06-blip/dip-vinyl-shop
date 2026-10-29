@@ -284,3 +284,10 @@
 - **主線審稿**：117 筆逐張看。撤 2：Colin Stetson《Sorrow》（重寫 Górecki 3，整張慢而沉，與 Górecki 同留頹靡）、Pierre Henry《Le Voyage》（冥想式長篇電子，留頹靡）。改 1：Hélène Grimaud《Credo》代理給暖（雀躍），改回冷 → 冷冽。
 - **結果**：115 張換格。平靜→冷冽 40（Ryoji Ikeda、青木孝允、Alva Noto、GRM／電腦音樂、Weinberg、Dutilleux、Roslavets、Britten 四重奏、Pollini 晚期奏鳴曲、Bartók《44 Duos》、Messiaen《Vingt Regards》、Godard）、頹靡→暴躁 37（Roly Porter 3、Maurizio Bianchi 3、Pan Sonic、Scorn、Tim Hecker《Harmony in Ultraviolet》、Scelsi 2、Bruckner 5／9、Berlioz《安魂曲》、Shostakovich 110a、Tony Conrad、Kreng、Raime）、放鬆→雀躍 13（Glass、Nyman、Zauberflöte、Faust、Porgy、E.T.）、恍惚→沸騰 11（Mahler 2／5／8、Bruckner 4／8、Tchaikovsky 5、Missa solemnis、LOTR）、放鬆→沸騰 6（Brahms 4、Mahler 9、Pathétique、Firebird、Franck、Phantom）。
 - **沒改的**：標成自由爵士但實為抒情的（Shepp 抒情曲、Frisell、Chet Baker）、慢速 dark ambient 與 drone、Sunn O)))、Scott Walker。八格：放鬆 5,098、平靜 735、恍惚 1,678、頹靡 1,576、雀躍 6,023、冷冽 1,824、沸騰 2,087、暴躁 2,873。錨點 104/104 同格。
+
+## 2026-10-29｜店主：Mew《Half the World Is Watching Me》不是恍惚，是冷、躁、輕
+
+- 原 v0 (3.0, 1.0, −0.1) 暴躁；10-23 體感重判以「夢幻吉他層包覆、旋律清楚」改 (2.8, 1.0, 0.3) 恍惚。店主否決 → (3.4, 0.0, −0.5) 冷冽：高音假聲、玻璃質吉他是尖細的輕，前衛搖滾的鼓在推是躁，疏離感是冷。
+- 同團《A Triumph for Man》(2.8, 0.6, 0) → (3.3, 0.0, −0.4) 冷冽。
+- 10-23 用「夢幻＝靜、暖、包覆＝重」把原本在躁的卡拉進恍惚的共 9 張；同理由最像的 DIIV《Oshin》（motorik 推進、冷調 chorus 吉他）撤回原值 (3.3, 0.8, −0.3) 暴躁。其餘 Tame Impala 兩張、The Field、George Clanton、Chapterhouse、Blush、Soda Stereo 是溫暖迷幻或厚牆，留恍惚。
+- 規則補一句：**「夢幻」不自動等於靜與重**。高音、清亮、玻璃質的吉他與嗓音算輕；鼓在推就是躁；店主「dream pop＝恍惚」指的是落日飛車那種慢而暖的。
