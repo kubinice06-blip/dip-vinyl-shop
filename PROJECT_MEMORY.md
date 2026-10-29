@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-29｜dip-vinyl-shop｜情緒三軸：店主點 Jonathan Harvey《Tombeau de Messiaen》改冷冽＋古典／前衛偏誤重判 1,163 張（115 張換格）
+
+- **改動**：店主「這張不是平靜的耶，解析一下標準，再抓遺漏的」。成因：10-23「撤回推力」（沒打擊不算躁）把它拉回靜，後來店主改標準為「張力、不安定，再安靜也是躁」，但之後的重判偏保守、10-27 曲風偏誤只掃爵士與中日韓。
+  - `batch-progress/mood-axes/classical-rejudge/`：在靜的古典 726、電子噪音／工業／glitch／concrete 316、自由爵士 108、撤回推力 13，5 支代理照 BRIEF 重判；主線審 117 筆撤 2 改 1；`merge.mjs` 寫 overrides、`build-card-moods.mjs` 重建。115 張換格：平靜→冷冽 40、頹靡→暴躁 37、放鬆→雀躍 13、恍惚→沸騰 11、放鬆→沸騰 6 等，細節見 `rulings.md`。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/classical-rejudge/`、`batch-progress/mood-axes/rulings.md`。
+- **驗證**：merge 5/5 份完整、115 筆全套用；build-card-moods 錨點 104/104 同格；《Tombeau de Messiaen》在 card-moods 為 (3.4, 0, −1.2) 冷冽。
+
 ### 2026-10-29｜dip-vinyl-shop｜彩蛋：洋流號前層改用單一 WebGL＋160px 2D 小畫布（Android 回報板子整片變黑）
 
 - **改動**：有人回報（Android Chrome 截圖）彩蛋板子整片黑（封面、標題、歌手都不見，只剩飄帶與洋流號）。研判為前層多開的第二個全螢幕、抗鋸齒 WebGL renderer 吃光繪圖記憶體，板子那層畫不出來（未在實機重現）。
