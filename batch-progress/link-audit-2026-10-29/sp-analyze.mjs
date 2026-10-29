@@ -8,8 +8,8 @@ const seed = JSON.parse(fs.readFileSync(`${ROOT}/seed_cards.json`, 'utf8'));
 const seedBy = new Map(); for (const r of seed) seedBy.set(`cover6:${r[0].toLowerCase()}|${r[1].toLowerCase()}`, r);
 const fixed = new Set(JSON.parse(fs.readFileSync(`${ROOT}/batch-progress/spotify-link-audit/2026-10-28/version-fix-plan-2026-10-27.json`, 'utf8')).map(x => x.key));
 // 10-27 稽核已人工覆核放行的旗標（flags.json 有、badkeys.json 沒有）
-const SPA = '/tmp/claude-0/-home-user/f1503c39-7ef0-590a-82ba-a39436835848/scratchpad/sp-audit';
-const priorOk = new Set(); try { const f = JSON.parse(fs.readFileSync(`${SPA}/flags.json`, 'utf8')), b = new Set(JSON.parse(fs.readFileSync(`${SPA}/badkeys.json`, 'utf8'))); for (const x of [...f.kw, ...f.mism]) if (!b.has(x[0])) priorOk.add(x[0]); } catch {}
+const SPA = new URL('.', import.meta.url).pathname;
+const priorOk = new Set(); try { const f = JSON.parse(fs.readFileSync(`${SPA}prior-2026-10-27-flags.json`, 'utf8')), b = new Set(JSON.parse(fs.readFileSync(`${SPA}prior-2026-10-27-badkeys.json`, 'utf8'))); for (const x of [...f.kw, ...f.mism]) if (!b.has(x[0])) priorOk.add(x[0]); } catch {}
 const RE = /^https:\/\/open\.spotify\.com\/album\/[A-Za-z0-9]{22}$/;
 const stat = { kvKeys: 0, withSpotify: 0, emptySpotify: 0, nullSpotify: 0, inSeed: 0, badFormat: 0, dead: 0, unknown: 0, wrongVersion: 0, albumMismatch: 0, albumPartial: 0, skippedFixed: 0, skippedPriorOk: 0 };
 const issues = [];
