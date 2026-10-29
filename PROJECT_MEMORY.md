@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-29｜dip-vinyl-shop｜情緒八格：統整現行規則（RULES.md）＋全池再檢查 21,716 張（210 張換格）
+
+- **改動**：店主「統整調整過的專輯，梳理一下整體歸類規則，並且全部再檢查一次」。
+  - `batch-progress/mood-axes/RULES.md`：十幾輪裁定收斂為現行標準（含作廢規則、六個歸錯陷阱）；`OWNER-CALIBRATION.md`：店主親點／親裁 74 張依格列表。
+  - `full-recheck/`：排除錨點與店主卡，21,716 張切 49 份由代理照 RULES.md 逐張判；主線審 220 筆撤 10；`merge.mjs` 寫 overrides、`build-card-moods.mjs` 重建。210 張換格，細節見 `rulings.md`。
+  - 試聽與串流連結的全面檢查另一支代理進行中，結果另記。
+- **主要檔案**：`data/mood/overrides.json`、`data/mood/card-moods.json`、`batch-progress/mood-axes/{RULES.md,OWNER-CALIBRATION.md,rulings.md,full-recheck/}`。
+- **驗證**：merge 49/49 份完整、210 筆全套用；錨點 104/104 同格；八格 放鬆 5,080、平靜 683、恍惚 1,687、頹靡 1,572、雀躍 6,046、冷冽 1,836、沸騰 2,122、暴躁 2,868。
+
 ### 2026-10-29｜dip-vinyl-shop｜情緒三軸：店主點 Mew《Half the World Is Watching Me》改冷冽（冷躁輕）＋同理由 2 張
 
 - **改動**：店主「這也不是恍惚，冷、躁、輕」。10-23 體感重判以「夢幻吉他包覆、旋律清楚」把它從暴躁拉到恍惚。改 (3.4, 0.0, −0.5) 冷冽；同團《A Triumph for Man》→ 冷冽；DIIV《Oshin》撤回同理由的改判、回暴躁。`rulings.md` 補「夢幻不自動等於靜與重」。
