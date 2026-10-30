@@ -29,5 +29,17 @@
 - 41729 Jolie Holland《Escondida》、Kissin' Dynamite《Megalomania》、Pigs x7 兩張：身分與廠牌核對無誤，未推翻。Escondida 錄音地不詳；Megalomania 製作人查無；Pigs 兩張錄音皆 Blank Studios、Sam Grant 製作。
 - 41730 AllMusic／Pitchfork／Slant 多頁 403，評價分數多出自搜尋摘要，建議正文不寫分數。
 
+## 研究 d 組（41731–41740）
+- 41731 SLIFT《ILION》：curatorRisk「廠牌憑記憶」查實為錯：Sub Pop（SP1626，MB 七筆 release 與官方公告一致），不是 Stolen Body。建議 label 改 Sub Pop Records。《Ummon》卡單 Stolen Body 是英國版，原版與首壓大宗為法國 Vicious Circle；寫作層寫「Vicious Circle 與 Stolen Body 共同出版」，建議 label 可改 Vicious Circle。
+- 41732 Stone Sour 首作：curatorWhy「白金首作」推翻，美國 2003 年認證金唱片（白金是《Come What(ever) May》2017）。葛萊美為入圍非得獎，兩首單曲對應屆次未能配對。MB 8 月 19 日與維基 8 月 27 日衝突，只寫 2002 年 8 月。
+- 41733 SUUNS《Zeroes QC》：curatorWhy「入圍 Polaris」推翻：2011 長短名單皆無；SUUNS 的 Polaris 紀錄是《Images du futur》2013 長名單（未進短名單）。錄音時間 Discogs 2010 年 1 月、維基 2009 年衝突，寫作層只寫蒙特婁 Breakglass。
+- 41734 SUUNS《Images du futur》：Discogs 錄音 2012 年夏與廠牌頁冬春寫歌錄音不一致，只寫 2012 年；學生抗議影響是訪談者說法，不當樂團宣稱。
+- 41735 Tacoma Radar：卡單 label 空→補 Andmoresound Records；國籍蘇格蘭（MB、Discogs）。status thin：無當年樂評，聲音靠 Numero 文案一句；moodGuess 小幅存疑（更靜更暗）。Kenny Anderson 是否為 King Creosote 未證實，勿連結。
+- 41736 The Black Angels《Passover》：「Call to Arms」本曲 10:33＋靜默＋隱藏曲，整軌 18:06；寫作層寫「整軌 18 分」勿寫成單曲 18 分。《Phosphene Dream》廠牌 Blue Horizon 核實，製作人 Dave Sardy，洛杉磯錄約六個月。
+- 41737 The Charlottes《Lovehappy》：label 空→補 The Subway Organization（SUBORG 12），四個四月天於布里斯托 S.A.M. 錄成；備選 Things Come Apart 未採。封面 CAA 無，Discogs 有。status thin，「C86 式明亮」來源未證，moodGuess 可能偏模糊偏冷。
+- 41738 The Sonora Pine：label 空→補 Quarterstick Records。moodGuess「後搖器樂」存疑：有 O'Neil、Meadows 人聲與 Coultas 真鼓，並非純器樂。成軍地（紐約／路易維爾）與 Meadows 前團（Lungfish／June of 44）來源互相衝突，facts 皆不寫。status thin。
+- 41739 Psychic Ills《Hazed Dream》：身分、廠牌核對無誤（Sacred Bones SBR-063），2011 年 4 月紐約 Seaside Lounge 2 吋磁帶錄成。未推翻。
+- 41740 AllMusic／Pitchfork／scaruffi 以外多頁 403 或 429；評價分數出自搜尋摘要，建議正文不寫分數。
+
 ## 主線（條號 41771–41780）
 - 41771：照研究 c 組推翻改卡單：廠牌 Loose Meat→Whipped Cream Records、Modey Lemon→Birdman Records（並刪「出道作」，首張是 2002 同名）、The Pictish Trail→Lost Map（Fire 是 2018 豪華重發）、Psychic Ills《Mirror Eye》→The Social Registry（Sacred Bones 是 2023 重發）、MV & EE《Gettin' Gone》→Ecstatic Peace!、《Space Homestead》→Woodsist。Loose Meat 主曲風 rock→electronic（合成器＋鼓機 indie-disco）。moodGuess 存疑 5 張不汰卡（這條線不看落格），留給上線後情緒評分照聲音事實判。
