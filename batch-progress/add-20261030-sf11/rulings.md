@@ -71,3 +71,4 @@
   - The Luvmenauts 國別 it→ca（多倫多，研究 e 49842）；Sonia Calico jp→tw、label More Time Records（研究 d）；記號士 tw、label Sony Music Taiwan（研究 e 49843）。
   - label 補：NUUAMM 十三月（研究 a）、Nicknack Crowd Control Records（研究 b）、DJ Toner Tangential Music（研究 c）、ERISTHEPLANET EQT Recordings（研究 c，盤名照 Apple／MB release 定為《IT REALLY DO BE THAT DAMN PHONE》）、PUZZLEMAN 顏社（研究 d）、ULTRA SUNN Artoffact（研究 e 49845）。
   - Space Raiders 研究 d 建議加收首作《Don't Be Daft》：不加，照「一位一張」留《Hot Cakes》。PUZZLEMAN 研究 d 列為汰卡候選（資料極薄）：身分已由 Apple 與 iTunes lookup 核實，thin 照收。
+- **49836**（Super Besse）主線採納 49835 建議，卡單改為《63610*》（MB 1be7a8d9，2015-05-25，I Love You Records ILOVEYOUREC017，10 首，首張錄音室專輯）；研究稿 la nuit* 整筆換成 63610*。聲音只有 Bandcamp 標籤（coldwave／post-punk／synthwave）與 Last.fm 團級描述，status thin；『house』『experimental』標籤無第二來源，不引。Young and Cold Records 僅黑膠歐洲出貨方，非發行廠牌。
