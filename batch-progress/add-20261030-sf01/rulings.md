@@ -20,3 +20,72 @@
   - Compilation（§5.6）：Clerks 原聲合輯、Bardo Pond《Selections: Volumes I-IV》。
   - 照 Album：椎名林檎《唄ひ手冥利〜其ノ壱〜》（翻唱輯，MB Album）、《Acid Guru Pond》（三團合作錄音室盤）、Arthur Flink《The Fifth World Recordings》（iTunes 標 EP、MB 標 Album，取 MB）。
 - 待研究層核對：Ligeti 演奏者為推定；宮沢明子年份與 Spotify 版是否同錄音；冠宇《單飛》只有 iTunes HK 一個來源；Smasher 身分（英國 grime）為推定；Kay Hoffman 國籍（瑞士巴塞爾）；Dome 2 首發 1980。
+
+## 研究 d 組
+- 30131：人間椅子兩張後藤マスヒロ加入年份三處不一（日文維基單盤條目「本作起」、樂團條目 1996、英文維基 1993），facts 一律不寫加入年；《頽廃芸術展》label 補 Trycle（2003 再版 Teichiku）、《怪人二十面相》補 Meldac。電影院錄音為日文維基單一來源。
+- 30132：Bardo Pond《Selections》實為自發 Volume I–IV CDR（2000 起）的約半數精選（Discogs 樂團自述），curatorWhy 寫「歷年單曲／EP 精選」不對，已更正；有定位，不建議移除。
+- 30133：《Acid Guru Pond》Discogs 署名含 The Melting Paraiso UFO；Discogs 備註錄於 9/3/07（單一來源，日期格式不明），2016-04-16 Fire Records FIRELP434 發行。
+- 30134：汁橙音樂／GoodieK 查無樂評與訪談（4 次搜尋抓取皆空），status thin；GoodieK＝Goodie 為推定，facts 不下斷語；Apple 掛名 Juzzy Orange Presents GoodieK。
+- 30135：Smasher 身分成立——Discogs artist 240905 為倫敦哈克尼 DJ／製作人 Jeff Russell（本名），經營 On Top Records；單曲 2017-08-11 ONTOP002、3:19（iTunes）。iTunes 標 Hip-Hop/Rap，Discogs 標 Grime／UK Garage，facts 只寫 Discogs。thin。
+- 30136：蕭亞軒推定成立——MB／Apple TW／中文維基曲目（10 首）與年份（1999-11-17）完全一致，Virgin（維京音樂）；銷量 50 萬為維基單一來源。
+- 30137：Drive Like Jehu 無推翻；評價類名次（Rolling Stone 第 16 等）與 Pitchfork 分數只放 notes。
+- 推翻策展層：2 處（Bardo Pond Selections 性質；兩張人間椅子 label 空缺補齊）。moodGuess 存疑：Smasher（只有類型標籤無聲音來源）、汁橙／GoodieK（無法驗證）、蕭亞軒（整張偏慢歌者多，建議取中間偏緩）。
+
+## 研究 e 組
+- 30141：青春大衛＝Young David，新竹搖滾／民謠樂團（StreetVoice young_david 新竹市、2009-11 加入），主唱楊大葳；與美國同名動畫無關。《第一到六天》StreetVoice 2014-07-16 為 8 首，Spotify 為 10 首（多〈笑〉〈五月雪〉）。卡單 label 禾廣查無來源，寫作層不寫廠牌。status thin（無樂評、成軍年、成員全名單）。
+- 30142：烏賊紳士＝Gentle Squid，台南四人團（陳致丞／林郁晉／葉杰翰／留介廷，StreetVoice）；《狗》7 首約 22 分鐘，為迷你專輯；發行日各平台 4/20、5/1、5/2、5/5 不一，只寫 2016 年春。label 禾廣無證據（Apple 版權 Da Cao Music Studio、發行商 StreetVoice）。「後龐克」僅出自博客來商品分類與簡介（發行端文案），status thin。
+- 30143：椎名林檎《唄ひ手冥利〜其ノ壱〜》身分成立（2002-05-27 東芝 EMI 雙碟翻唱專輯），寫作層須寫成翻唱輯；兩碟編曲者不同（亀田誠治／森俊之）。status full。
+- 30144：陳奕迅《？》MB 半形、維基全形，採全形；曲目取 MB 12 首（2 粵 1 英），中文維基文字描述與曲目表自相矛盾；金曲獎為入圍。聲音層證據偏薄（鋼琴襯底只有新聞網摘要），status full 但 sound 屬保守推定。
+- 推翻策展層：0 處年份／盤名；卡單 label 禾廣（兩張台灣盤）未證實。moodGuess 存疑：烏賊紳士（缺獨立樂評，僅發行端文案支持緊繃）；其餘不推翻。
+
+## 研究 c 組
+- 30121：Ligeti 核對成立：Spotify「Ligeti, G.: Etudes, Books 1 and 2」＝İdil Biret 的 Naxos 8.555777（2003；Discogs 1430046 曲目 6＋8＋14a＝15 軌，Naxos 目錄此曲目唯一）。官網 403、iTunes 搜尋不通，未能逐軌比對 Spotify，依盤名＋結構＋唯一性認定。14a 說法衝突（MusicWeb 稱首錄且為自動鋼琴構想、維基稱原版太難而重寫）：facts 只寫「首錄」。
+- 30122：冠宇《單飛》＝董事長樂團前主唱何志盛（1969–2000）遺作紀念專輯，2003 角頭音樂（TCM025）。第二來源：TCM 官網、好有感覺音樂、中文維基董事長樂團、Hit Radio、博客來（摘要）。**推翻策展層**：genre pop／moodGuess 流行舞曲 R&B 不成立，實為國台語搖滾（Apple 歸華語搖滾）；建議卡單 genre 改 rock、label 填角頭音樂，moodGuess 重估。官方盤名《冠宇單飛》，Spotify 為《單飛》；發行日三源不一（9/1、9/19、9/22），facts 只寫 9/22 官方。
+- 30123：Project Pablo EP 照實寫 EP（4 首 12 吋，Technicolour TCLR025，2017-10-20）；Patrick Holland＝Project Pablo 出自 Discogs 署名，溫哥華／蒙特婁背景僅見搜尋摘要。聲音為藝人自述「數位合成、乾淨高傳真」，不是 lo-fi：moodGuess 暖輕大致可，但勿寫 lo-fi。
+- 30124：張震嶽《遠走高飛》EP 照實（5 首約 18 分鐘，2019-10-18 滾石）；製作人／編曲／錄音皆查無來源，聲音僅 Apple Music 編輯文一源（輕聲饒舌＋簡單電子節拍），status 標 thin，寫作層不得捏造製作人。
+- 30125：Electric Dreams 錄音 1978-11/12（維基）、發行 1979；維基頁尾冒出的 Tom Stevens／Billy Cobham／Jerry Goodman 與 Discogs 不符，不採。Eon 錄音 1974-11 於 Generation Sound，三重奏 Beirach／Tusa／Williams，維基編輯註的 Liebman／Jan Hammer 不採；「第一張個人名義專輯」單源未寫。
+- 30126：Moksha 器樂身分出自德文維基；間奏有吟誦與銅管、大提琴客座，勿寫「完全無人聲」。德國榜第 69 名單源。Bardo Pond《Amanita》LP 為 Drunken Fish、CD 為 Matador（Discogs 同目錄號並列），卡單 label Matador 可接受；英文維基日期 4/3 對 MB／Discogs 4/9，寫作層寫「1996 年 4 月」。
+- 推翻策展層：1 處（冠宇 genre／moodGuess／label）；moodGuess 存疑：冠宇（見 30122）。
+
+## 研究 b 組（研究層，30111–30120）
+- 30111 **Misc《Beat Bouquet》推翻策展層**：不是「加拿大製作人 beat tape」，是蒙特婁三人爵士樂團（Jérôme Beaulieu 鋼琴合成器、William Côté 鼓、Jérémi Roy 貝斯，自稱 mutant jazz，PANM360 歸 Electro-Jazz），有真鼓、被處理成 glitch／lo-fi 節拍。身分（MB 4137dc7e、2025-05-28、自行發行）成立。genres 的 hiphop 無來源，建議主線酌改；moodGuess 大致可用。
+- 30112 **宮沢明子《Sonatinen Album I》**：Apple 各區（us/jp/de/gb/tw/hk/au/ca/fr）藝人頁 382111188 共 27 張，無此盤、無 collectionId；Spotify 條目無法開啟。原錄音年只能對到 Discogs 11430327（Audio Lab. Record ALC 1017~8，1974 日本 2LP，13 首小奏鳴曲，Tower Hall 青山）。Spotify 版是否同一錄音（可能是 Trio Records 數位重發）未證實；year 1974 僅對 Discogs 版。Discogs 演奏欄標 Fortepiano 未證實，facts 僅括號註記。
+- 30113 **Ránki**：演奏者、1971、Hungaroton 成立；卡單 manualEvidenceUrls 的 Discogs 12754253 是法國 BAM 授權版（年 0），原版為 Discogs 5412320（Hungaroton LPX／SLPX 11555，1971）；Discogs master 1136644。yearVerified 1971。
+- 30114 **Reuthe**：iTunes 978521330 為 2015-02-27 Bella Musica；曲目是 Longo 編號鍵盤奏鳴曲、蕭邦 Op.36／Op.60、德布西《版畫》、夏布里埃，與 curatorWhy「浪漫派與印象派」只對一半；Arkiv『V 2: Klavier Solo』（BM312462）頁已 404，是否同盤未證實。錄音日未查到。
+- 30115 **Fifth World Recordings**：兩首各約 21 分鐘、無鼓；樂評稱 fourth-world／ambient jazz，無任何來源用 spiritual jazz／soul；Jon Hassell 致敬僅零售商一個來源；Jacobus Derwort 過世年份來源衝突（2018／2019）未寫。MB Album、iTunes EP、Discogs LP Album。
+- 30116 **Charged**：Apollo（R&S 旗下，比利時），Laswell 貝斯僅 1–4、8 首；有程式鼓。曲風 Wikipedia 標 jazz-funk、Discogs 標 Future Jazz／Drum n Bass，facts 取 Discogs。
+- 30117 **Dome 2**：Blackwing Studio 1980 年 8 月錄音；Spotify「2」＝MB 2019-05-31 數位 release，發行者未證實；無鼓、偏安靜，moodGuess y 0.9 若指能量則偏高。
+- 30118 **Dost 2**：Hamburg 錄音說法無來源，未寫；Rough Trade 稱第三張專輯未能確認；有鼓、暖。
+- moodGuess 存疑：Misc（有真鼓與 glitch，非純柔軟）、Dome 2（y 偏高）。其餘相符。
+
+## 研究 a 組（研究層，30101–30110）
+- 30101 **RH Factor《Hard Groove》**：MB 855640e4／Discogs master 159239 對得上，2003-05-20 Verve，未推翻。〈I'll Stay〉為 2004 年葛萊美入圍（非得獎）。RH Factor 成軍原因、Strength EP 葛萊美入圍年份均查不到，未寫。moodGuess 大致可，但中段偏慢板新靈魂，非全程高能。
+- 30102 **Mangelsdorff《Tension》推翻策展層兩處**：(1) label L+R 是 Spotify／iTunes 的 1979 再版版權，原始首發為 CBS 62336（1963，MB／Discogs 一致），年份 1963 無誤；(2) moodGuess 寫「小號長號交錯」，實際編制無小號，是長號＋中音與次中音薩克斯風＋貝斯＋鼓，無鋼琴。錄音 1963-07-08／11 Walldorf Tonstudio 法蘭克福。
+- 30103 **Clerks 原聲帶**：MB 標 Album＋Soundtrack、iTunes 標 Compilation，掛 Various Artists，20 軌（13 音樂＋7 對白）。〈Got Me Wrong〉是 1992 年 EP《Sap》舊作，非新錄。Scott Angley 錄製說法單源（Smith 臉書貼文），已標明。
+- 30104 **Czarface Meets Ghostface**：身分成立。卡單 mbNote 的 iTunes 連結是 Instrumentals 版，非本盤。逐曲取樣來源查無，sound 勿寫具體取樣。評分未進 facts。
+- 30105 **Bent Fabric《The Happy Puppy》**：易誤讀點——〈Alley Cat〉不在本盤（在 Atco 33-148《Alley Cat》），本盤 ATCO 33-155。〈Alley Cat〉1963 年（第 5 屆）葛萊美最佳搖滾錄音，得獎。專輯逐軌樂手與編制查無，聲音只寫鋼琴小品。
+- 30106 **Klimeks《Overnites》推翻策展層**：不是專輯，是 5 首約 18 分鐘的數位 EP（Discogs「File, MP3, EP」），首發 2013-11-04 wavemob WAVE002；MB／串流的 2014-08-04 是上架日（iTunes ℗ 2013 wavemob）。主線須決定 releaseType 改 EP（走 electronic EP 例外，同 Corporate 先例）與年份取 2013 或 2014。wavemob 為 Klimeks 自己經營（Discogs label 簡介，單源）。Bandcamp／Last.fm 擋，藝人生平查無，status thin。
+- 30107 **Corporate《A5 EP》**：身分成立（MB／Discogs 18223729／Bandcamp／iTunes），3 首約 12 分鐘 EP，Play Me Records PLAY136，2016-04-18。藝人生平與樂評幾乎查不到，status thin。**moodGuess 存疑**：預估「失真重低音」無任何來源證實，標籤互相矛盾（Trap／Breaks／Glitch Hop／DnB／Bass Music），建議以實聽為準。
+- 30108 **Kay Hoffman《Floret Silva》推翻策展層**：國籍——Discogs 寫「American national born in Basel in 1949」，是美國籍、生於巴塞爾，不是「瑞士鍵盤手」；MB 無國別。錄音 1977 夏／1978 冬於佛羅倫斯 Maurizio Pieri 家庭錄音室（Robot Records、Soundohm 兩頁），1978 年 RCA Italy 擱置，1985 年日本 Belle Antique BELLE 8502 首發。人員含 Pierrot Lunaire 的 Jacqueline Darby、Gaio Chiocchio。moodGuess 大致可，但編制遠比「鍵盤與人聲」雜（管樂、鼓、電吉他、合唱）。
+- 30109 **總結**：8 張，推翻策展層 3 處（Mangelsdorff label／樂器、Klimeks 型別與年份、Kay Hoffman 國籍）；moodGuess 存疑：Mangelsdorff（樂器描述）、Corporate（失真）。
+
+## 主線研究裁定（不佔條號；2026-10-30）
+研究層 36 張全收（指定盤不換、本線不以 moodGuess 汰卡）。照研究層改卡單：
+- Klimeks《Overnites》：研究層查明是 5 首約 18 分鐘數位 EP（wavemob WAVE002，2013-11-04 首發；MB 2014-08-04 是串流上架日）→ releaseType EP＋`electronic`、年份 **2013**。
+- 冠宇《單飛》：冠宇＝董事長樂團前主唱何志盛（1969–2000）的遺作紀念專輯（角頭音樂 TCM025，2003）→ genres rock、label 角頭音樂；官方盤名《冠宇單飛》，卡上沿用 Spotify／Apple 的《單飛》（queryAlias 不動）。
+- Misc《Beat Bouquet》：不是 beat tape，是蒙特婁三人 mutant jazz 樂團 → genres jazz／electronic。
+- 廠牌與國別：Mangelsdorff《Tension》CBS（L+R 為 1979 再版）；Ránki 改用 Hungaroton 原版 Discogs 5412320 作身分證據、label Hungaroton；Kay Hoffman 國別 us（美籍、生於巴塞爾）；青春大衛 label 清空（查無廠牌）、烏賊紳士 Da Cao Music Studio、陳奕迅 Universal Music Taiwan、人間椅子《怪人二十面相》Meldac。
+- 宮沢明子：Apple 找不到這張（藝人頁 27 張皆非），身分只對 Discogs 11430327（Audio Lab 1974，2LP 13 首小奏鳴曲）；第二證據改 Apple 藝人頁（同一演奏者），原卡上 1329367209 是《Chopin Nocturnes》已撤。年份 1974 只對 Discogs 版。
+- Ligeti 確認 İdil Biret Naxos 8.555777（Naxos 此曲目唯一版本）；Smasher＝倫敦 Hackney 製作人 Jeff Russell（On Top Records）；蕭亞軒推定成立（1999-11-17 維京，10 首與 MB／Apple 一致）。
+- 寫作層照研究稿：Mangelsdorff 編制無小號；Bent Fabric 本盤不含〈Alley Cat〉；Project Pablo 不寫 lo-fi；Bardo Pond《Selections》是 Volume 系列 CDR 精選；椎名林檎寫成翻唱輯；張震嶽、Project Pablo、Klimeks、Corporate 寫成 EP、Smasher 寫成單曲、烏賊紳士寫成迷你專輯。
+
+## 鉤子層（d、e；條號 30156–30160）
+- **30156** 交件：`desc-tools/batches/hooks/add-20261030-sf01-hooks-d.json`（8）、`-hooks-e.json`（4），key 與順序照研究稿。公式照 HOOK-DISPATCH：`Array.from(hook)+Array.from(note) − 主故事： − 每個 → − 正文只寫上列各項。 − 這條骨架全批只走本張。`；full 上限 230、thin 上限 170（thin＝汁橙／GoodieK、Smasher、青春大衛、烏賊紳士）。逐筆（預算／hook 加權／hook 原始字元）：
+  - d：頽廃芸術展 208／20／20；怪人二十面相 224／23／23；Selections 228／21／25；Acid Guru Pond 223／23／23；沒有靈魂的工程師 167／21／23（thin）；So High 166／23.5／26（thin）；蕭亞軒 211／23／25；Yank Crime 227／21／28。
+  - e：第一到六天 165／24／24（thin）；狗 168／19／19（thin）；唄ひ手冥利 224／22／22；？ 229／25／25。
+  - 初稿 10 張超標，一律整格捨去：頽廃的 Trycle 倒閉＋Teichiku 再版、怪人的〈名探偵登場〉與節目名、AGP 的川田／津山 2006 合組前史與 Lemur House、限量 1000 套、Yank Crime 的〈Luau〉曲長與 Rob Crow、蕭亞軒的三位製作人、Smasher 的 2018–2021 後續單曲、椎名的 Oricon 週榜、青春大衛的 Spotify 10 首版。壓完逐張回核 hook 依賴格：全部在 g1／g2（Yank Crime 初稿 note 沒有 Trombino，已補進 g2；AGP 的顏色曲名前移到 g2）。
+  - 媒體名與媒體榜名次全數不進 note（研究稿的 Rolling Stone／Magnet／1001 Albums／Pitchfork、G-Music、勁歌金榜名次、全球華語歌曲排行榜皆未指派）；銷量 50 萬（單源）未指派。
+- **30157** 骨架歸屬（12 張 12 條，只有擁有者寫歸屬句）：頽廃芸術展＝故鄉歇業電影院自錄自混；怪人二十面相＝團名出處擴成整張概念盤；Selections＝限量自發 CDR 收編成正式廠牌合輯；Acid Guru Pond＝三國三團合作（**不走「錄完擱置多年」**——那條讓給 a 組 Kay Hoffman，AGP note 不寫 2007 錄音年）；沒有靈魂的工程師＝製作人集團成員當主角、人聲曲全掛客座；So High＝自營廠牌的編號發行；蕭亞軒＝海外選秀落選後被製作人引薦出道；Yank Crime＝鼓手兼錄音混音、大廠首作即最後一張；第一到六天＝一張專輯前後兩半換編制；狗＝標題曲歌詞的自嘲意象；唄ひ手冥利＝兩碟兩位編曲家的鏡像對照（復出作一格，不作骨架）；？＝宣傳期撞上唱片公司與電視台的版權爭議。型別：Selections 合輯、So High 單曲、狗 迷你專輯、唄ひ手冥利 翻唱輯，皆在 note 末寫「型別寫成⋯」。
+- **30158** 同藝人分軸與代稱：人間椅子 怪人二十面相＝生平（1987 弘前成軍、團名出自亂步、1989 上節目被稱文藝搖滾），第二句「成軍年＋弘前出身」、代稱「他們」；頽廃芸術展＝錄音細節（電影院、自混、標題表態），第二句「向 Black Sabbath 看齊的日本硬搖滾三人團」，成軍與團名這一格不寫。Bardo Pond 三張（請 a–c 對照）：預設 c 組《Amanita》帶生平（1991 費城成軍、團名《西藏度亡經》、轉 Matador）；Selections 只帶自發 CDR 管道，第二句「費城迷幻樂團＋吉他迴授上飄長笛與人聲」（編制領句），代稱「他們」，1991 與團名這一格不寫；Acid Guru Pond 只帶三團合作，第二句「三團團名與國別」，Bardo Pond 成員名單不寫。
+- **30159** 第二句句型（逐張配死）：樂種＋編制＝頽廃；成軍年＋出身地＝怪人；樂種＋樂器編制＝Selections；三團國別＝AGP；製作人身分＝汁橙（GoodieK）；風格標記＝Smasher；歌手身分＋主打曲風＝蕭亞軒；地區＋樂種＝Yank Crime（聖地牙哥後硬核）；所在地樂團身分＝青春大衛（新竹）；城市樂團身分＝烏賊紳士（台南）；國籍＋創作歌手＝椎名；歌手＋語種專輯＝陳奕迅。hook 只帶名字或不帶名字的 12 張，身分都由第二句補。日期「日」後一字：問 頽廃／經 怪人／在 AGP／以 Smasher／推 蕭亞軒／交 Yank Crime／上 青春大衛／由 椎名／先、才 陳奕迅；Selections、汁橙、烏賊紳士只寫到年或月（a–c 請避開以上 10 字）。
+- **30160** 自查：hook 間中文 4-gram 0 條（d、e 12 張）；hook 與自身 note 無逐字重複句（Smasher「哈克尼的 DJ」、AGP「曲名都是顏色」初稿重複，已改寫；Yank Crime 只剩人名 Trombino）。開頭前四字 12 張互異。`qa-batch hooks`：d、e 無標記（總標記 3＝a、b、c 缺檔）；`chk-hook-crossgroup`（2 組 12 張）：全部通過，hook 加權 19–25、note 165–232。

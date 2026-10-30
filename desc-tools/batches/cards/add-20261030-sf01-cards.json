@@ -44,7 +44,7 @@
   "genres": [
    "jazz"
   ],
-  "label": "L+R Records",
+  "label": "CBS",
   "country": "de",
   "moodGuess": {
    "x": 3.3,
@@ -183,7 +183,7 @@
   "key": "desc2:Klimeks|Overnites",
   "artist": "Klimeks",
   "album": "Overnites",
-  "year": 2014,
+  "year": 2013,
   "genre": "electronic",
   "genres": [
    "electronic"
@@ -201,10 +201,13 @@
   "curatorWhy": "electronic-beats：店主收藏指定盤：Klimeks 的深夜氛圍 beats 專輯。",
   "curatorRisk": "",
   "mbNote": "MB release-group 8de1abd5-fb19-473c-88b7-035fd2753713：title「Overnites」、Album、first-release-date 2014-08-04、artist-credit「Klimeks」。證據：https://music.apple.com/us/album/overnites/906376339 https://coverartarchive.org/release-group/8de1abd5-fb19-473c-88b7-035fd2753713/front-250",
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "genreException": "",
+  "releaseType": "EP",
+  "exceptionReason": "5 首約 18 分鐘的數位 EP（wavemob WAVE002，2013-11-04 首發），電子樂 EP 文化；店主 Spotify 收藏指定盤（2026-10-30）",
+  "exceptionEvidenceUrls": [
+   "https://www.discogs.com/release/5962485",
+   "https://earmilk.com/2013/11/04/klimeks-overnites-ep/"
+  ],
+  "genreException": "electronic",
   "selfTitled": false,
   "apex": null,
   "group": "a",
@@ -263,7 +266,7 @@
    "rock"
   ],
   "label": "Belle Antique",
-  "country": "ch",
+  "country": "us",
   "moodGuess": {
    "x": 2,
    "y": -0.3,
@@ -388,8 +391,8 @@
    "conclusion": "MB release-group 查 Ránki + Chopin Etudes/Ballades 無此盤；以 iTunes 同名盤（Dezső Ránki, Hungaroton 1971）與 Discogs 同曲目錄比對確認"
   },
   "manualEvidenceUrls": [
-   "https://music.apple.com/us/album/chopin-%C3%A9tudes-op-10-nocturne-op-9-no-3-ballades-opp-38-23/1816850349",
-   "https://www.discogs.com/release/12754253-Chopin-Dezs%C5%91-R%C3%A1nki-Etudes-Nocturne-Ballades"
+   "https://www.discogs.com/release/5412320",
+   "https://music.apple.com/us/album/chopin-%C3%A9tudes-op-10-nocturne-op-9-no-3-ballades-opp-38-23/1816850349"
   ],
   "curatorWhy": "classical-piano：店主收藏指定盤：Ránki 年輕時的 Hungaroton 蕭邦錄音，收練習曲、夜曲與兩首敘事曲。",
   "curatorRisk": "⚠ 演奏者由 iTunes 完全同名盤確認；掛名照池中慣例「演奏者｜作曲家: 曲目」",
@@ -509,7 +512,7 @@
   },
   "manualEvidenceUrls": [
    "https://www.discogs.com/release/11430327-Kuhlau-Clementi-Dussek-Meiko-Miyazawa-Sonatinen",
-   "https://music.apple.com/us/album/chopin-nocturnes/1329367209"
+   "https://music.apple.com/jp/artist/382111188"
   ],
   "curatorWhy": "classical-piano：店主收藏指定盤：日本鋼琴家宮沢明子的奏鳴曲小品（Sonatinen）專輯，收庫勞、克萊門蒂、杜塞克。",
   "curatorRisk": "⚠ Discogs 為 1974 Audio Lab 'Sonatinen'，Spotify 版（Trio Records 數位發行）可能是同錄音重發；iTunes 美區查無此盤，封面取 Discogs；年份 1974 待確認",
@@ -579,10 +582,10 @@
   "artist": "Misc",
   "album": "Beat Bouquet",
   "year": 2025,
-  "genre": "electronic",
+  "genre": "jazz",
   "genres": [
-   "electronic",
-   "hiphop"
+   "jazz",
+   "electronic"
   ],
   "label": "Misc",
   "country": "ca",
@@ -761,11 +764,11 @@
   "artist": "冠宇",
   "album": "單飛",
   "year": 2003,
-  "genre": "pop",
+  "genre": "rock",
   "genres": [
-   "pop"
+   "rock"
   ],
-  "label": "",
+  "label": "角頭音樂",
   "country": "tw",
   "moodGuess": {
    "x": 3.2,
@@ -957,7 +960,7 @@
   "genres": [
    "rock"
   ],
-  "label": "",
+  "label": "Meldac",
   "country": "jp",
   "moodGuess": {
    "x": 4,
@@ -1233,7 +1236,7 @@
    "rock",
    "folk"
   ],
-  "label": "禾廣",
+  "label": "",
   "country": "tw",
   "moodGuess": {
    "x": 2.8,
@@ -1316,7 +1319,7 @@
   "genres": [
    "rock"
   ],
-  "label": "禾廣",
+  "label": "Da Cao Music Studio",
   "country": "tw",
   "moodGuess": {
    "x": 3.6,
@@ -1367,7 +1370,7 @@
   "genres": [
    "pop"
   ],
-  "label": "",
+  "label": "Universal Music Taiwan",
   "country": "hk",
   "moodGuess": {
    "x": 2.8,

@@ -61,3 +61,36 @@
 - 30215：Yogee New Waves：卡單 label「CAFE BOHEMIA」兩張皆查無佐證；MB／Discogs／日維皆為 BAYON PRODUCTION（Roman Label；ROMAN-001／MB ROMAN-013）。請主線改卡單廠牌。兩張 status thin（日英維基皆無專輯頁、樂評未取得）；WAVES 聲音一句未經樂評或實聽核對，情緒評分以音檔為準。
 - 30216：WebSearch 本組用 3 次（Fine、homely 訪談、100年後 樂評），其後改 WebFetch／MB／Discogs API；日維 API 直連遭 429，改 WebFetch。QA 本組簡體字警示已清（全部改正體）。
 - 30217：moodGuess 存疑：無（九張方向與來源相符；Yogee 兩張僅憑 Discogs 風格標籤與編曲資訊，未實證）。
+
+## 研究 e 組（條號 30241–30250）
+- 30241：姫神《奥の細道》：卡單 1993 / 掛名「姫神」取自 MB 1993-11-03 Pony Canyon CD 再版（PCCR-00091）；原版為 1981-08-07 Canyon（C28R0080），原署名「姫神せんせいしょん」，出道作（Discogs master 735838、日維星吉昭條）。與汰掉《遠野》同形。建議卡年改 1981、掛名維持「姫神」，簡介寫明 1993 為再版；請主線裁定。
+- 30242：比屋定篤子《ささやかれた夢の話》：卡單 2015 為 Sony Music Direct 數位再版（MB 首發日）；原版 1999-02-20（AICT 1042，日維／Discogs 13292603）。建議卡年改 1999。第二張原創專輯，首張為《のすたるじあ》1997。
+- 30243：比屋定篤子《ルア・ラランジャ》：策展「首張全長」不成立；1999-10-01（AICT 1132）、Sony 時期第二張專輯，全作品序為第三張。卡單年 1999 無誤。製作人與樂手資料查不到，thin。
+- 30244：POiSON GiRL FRiEND《Shyness》：策展「首張、關口紀子個人計畫」不成立；1993 年第三張（前有 1991、1992），Momus 在倫敦製作；「關口紀子」查無來源，不寫，主唱署名 nOrikO。key 前綴為 desc2:（卡單原樣）。
+- 30245：ないあがらせっと《POP CITY》：策展「唯一正規全長」不成立（Apple 另列 2022 同名專輯、2025《Sound Of Garden》）。無日文樂評與成員資料，thin；聲音僅有 Apple 相近藝人（サニーデイ・サービス、くるり、Fishmans 等）可佐證。
+- 30246：ヨシンバ《042》：1999-04-21 Baidis（Teichiku）TECN-28548，Discogs 風格 Soft Rock／J-pop。策展「首張全長」無來源證實，不寫序數。成員、結成經緯查不到，thin。
+- 30247：ピューパ!!《えそらことば》：日維發行日 2019-12-05（第二張專輯），MB 首發日 2020-01-25（卡單 2020）；請主線定年份。事務所與作曲者查不到，thin。
+- 30248：THE 天国畑 JAPON《BORONGE》：§1 人工身分核對無誤（Discogs 15314386、2018-03-28、TTJCD-0001、Apple 1400033521）；序數「第三張」查無依據，不寫。Bandcamp 頁無此專輯條目，不影響身分。thin。
+- 30249：静香《天界のペルソナ》：發行日三說（MB 9-22、Discogs 9-25、英維 11-22），簡介只寫 1994 年。英維稱「唯一錄音室專輯」為單一來源，寫作層寫「PSF 時期首張」較穩。吉他手三浦マキ與鼓手小杉淳為不失者出身，不是静香成員。
+- 30250：moodGuess 存疑：ヨシンバ（Soft Rock，非強失真）、THE 天国畑 JAPON（迷幻／Stoner 加西塔琴，非派對硬搖滾）、ピューパ!!（含龐克與後搖滾成分，偏躁）、静香（有失真爆發，可能比 z=-0.5 更躁）；ないあがらせっと聲音事實查不到，無法判定。WebSearch 本組用 9 次（多數無果），日維 API 直連遭 429，改 WebFetch／MB／Discogs／iTunes lookup；QA 簡體字警示「来」為歌名「春が来たから…」與人名「鶴来正基」，屬專名，保留。
+
+## 主線研究裁定（不佔條號；2026-10-30）
+研究層 45 張全收，不汰換（本線不以 moodGuess 汰卡；研究稿指出的聲音不符只影響寫作與評分）。照研究層改卡單：
+- 年份：姫神《奥の細道》1993→**1981**（原版 1981-08-07 Canyon，原署名姫神せんせいしょん；1993 是 Pony Canyon CD 再版、MB 掛姫神。掛名維持「姫神」：同一人星吉昭的同一計畫，卡上用通行名）；比屋定篤子《ささやかれた夢の話》2015→**1999**（原版 1999-02-20，2015 為數位再版）。ピューパ!!《えそらことば》維持 MB 2020（日文維基 2019-12-05 為會場先行，寫作層只寫年份 2020）。
+- 廠牌：Yogee New Waves 兩張 CAFE BOHEMIA→Bayon Production；OGRE YOU ASSHOLE 兩張 Pony Canyon→VAP。
+- 序數與「首張」類主張以研究稿為準（KIRINJI《Fine》第 4 張、TMGE《Chicken Zombies》第 3／《GEAR BLUES》第 4、比屋定篤子《ルア・ラランジャ》第 3 張、POiSON GiRL FRiEND《Shyness》第 3 張、ないあがらせっと非唯一全長、THE BACK HORN《太陽の中の生活》不寫序數、ヨシンバ／BORONGE 不寫序數）。
+- 單一來源（THE BACK HORN 團名由來、静香「唯一錄音室專輯」）寫作層不寫；「據說」照派工禁用。
+- COHOL《空洞》聲音實為 black／death／grind（非策展的 sludge／doom）、中学生棺桶為 doomcore、ジョー山中《Joe》偏靈魂軟搖滾：照研究稿寫，卡照收。
+- `qa-batch research`：45 張 key 一致；標記 2（「国」「来」皆專名）。
+
+## 鉤子層（a、b、c；條號 30251–30255）
+- **30251** 交件：`desc-tools/batches/hooks/add-20261030-sf02-hooks-a.json`、`-b.json`、`-c.json` 各 9 張，key 與順序照研究稿。公式照 HOOK-DISPATCH：`Array.from(hook)+Array.from(note) − 主故事： − 每個 → − 正文只寫上列各項。 − 這條骨架全批只走本張。`；full 上限 230、thin 上限 170（thin＝GRASS VALLEY、きのこ帝国《愛のゆくえ》、OGRE《100年後》、Yogee 兩張）。逐筆（預算／hook 加權／hook 原始字元）：
+  - a：時間 223／21／24；卵 207／18／18；imagination 224／22.5／29；UROBOROS 204／21／21；Withering 223／19／19；LOGOS 158／18／18（thin）；フェイク 212／22／25；愛のゆくえ 164／25／25（thin）；3 223／23／23。
+  - b：Fine 200／23.5／28；homely 221／14／14；100年後 154／20.5／23（thin）；人間プログラム 230／19／19；太陽の中の生活 209／18／18；Chicken Zombies 202／16／16；GEAR BLUES 218／15／15；PARAISO 164／15／15（thin）；WAVES 165／19／27（thin）。
+  - c：揺らぎ 217／21／21；vivid 222／20／20；Sway 184／21／21；Ampersands 208／19／19；Orca 210／25／25；Especially For You 222／24／24；Twin Memories 220／20／20；トランシルヴァニア 208／16／17；謎のコスモス号 217／20／20。
+  - 初稿 14 張超標，一律整格捨去（Fader／Noise Artists 等媒體與其描述的影響名單、Kylie＆Jason 二重唱出處、Twin Memories 翻唱清單、Cosmos 的 Fender Rhodes 與水谷效果器、Withering 團員名單等）；壓完逐張回核 hook 依賴格，全部在 g1／g2（KIRINJI《3》的翻唱回評在 g4，為主故事本體、未捨）。
+- **30252** 骨架歸屬（27 張 27 條，只有擁有者寫歸屬句）：時間＝離開大公司後自費獨立發行；卵＝極簡錄音條件（兩天／單支麥克風／無節拍器）；imagination＝課堂作業組團的學院三人組；UROBOROS＝非常規樂器入金屬＋首進美國榜；Withering＝海外首次正式發行（芬蘭榜）；LOGOS＝實驗轉流行；フェイク＝舊曲以新技術重編（〈東京〉加印為 hook）；愛のゆくえ＝電影主題曲；3＝遲來的重評；Fine＝暫定標題（Orthodox）；homely＝工程師推翻錄音方式；100年後＝三部曲中段（主唱自錄 demo）；人間プログラム＝出道前團員出缺、主唱代彈；太陽の中の生活＝主唱兼奏多樂器、全員分寫詞；Chicken Zombies＝吉他手的裸音＋首進前十；GEAR BLUES＝巡演密度極高的現場樂團；PARAISO＝童年玩伴組團；WAVES＝陣容重組後排名躍升、主流前夕；揺らぎ＝盤名即聲音說明；vivid＝改名重新出發；Sway＝製作人一手演奏；Ampersands＝自我製作與管樂入團；Orca＝跨國雙廠牌首張；Especially＝翻唱撐起原創專輯的首冠；Twin Memories＝demo 開頭沿用成招牌前奏；トランシルヴァニア＝B 面長篇組曲；謎のコスモス号＝器材清單（吸塵器）。
+  - 給 d／e 與主線的撞點提醒：「貝斯手離團」在本批至少四處（人間プログラム、WAVES、homely 研究稿、爆風スランプ《HIGHLANDER》）——a–c 這邊人間プログラム只寫「主唱代彈」、WAVES 只寫陣容重組一格、homely 不寫平出離團，「送別離團貝斯手」留給 HIGHLANDER。「單曲與專輯兩地錄音」：GEAR BLUES 的〈G.W.D〉倫敦／東京只佔一格、不作骨架，骨架留給姫神。「未做母帶」：卵保留一格（柳瀬談壓縮），但骨架與 hook 都在兩天／單支麥克風，若 The Earth Beater 以母帶為骨架，請避開「沒做母帶處理」這個字串。
+- **30253** 同藝人分軸與代稱：betcover!! 時間＝生平與出資（第二句「1999 年生於東京調布、包辦詞曲編曲的主腦」）、卵＝錄音法（第二句「東京獨立樂團＋柳瀬二郎」），代稱一律「柳瀬」；DIR EN GREY UROBOROS＝結成（1997 大阪、京主唱）＋錄音、Withering＝海外發行＋樂種，代稱「他們」；きのこ帝国 フェイク＝結成與團名、愛のゆくえ＝主流期，代稱「他們」，佐藤千亜妃具名；KIRINJI 3＝兄弟結成＋〈エイリアンズ〉、Fine＝編制與標題，代稱「兄弟倆」；OGRE homely＝結成與轉向、100年後＝三部曲與出戸学，代稱「他們」；THE BACK HORN 人間＝結成與出道、太陽＝演奏署名，代稱「他們」；TMGE Chicken＝結成與アベ、GEAR＝現場與重錄，代稱「他們」；Yogee PARAISO＝結成、WAVES＝陣容與排名，代稱「他們」；mei ehara Sway＝生平＋製作人、Ampersands＝樂團與編曲習慣，代稱「她」；Wink Especially＝出道與首冠、Twin＝〈淋しい熱帯魚〉，代稱「兩人」；コスモス 古城＝成軍與組曲、謎＝器材，代稱「他們」。
+- **30254** 第二句句型（逐張配死）：樂種領句＝人間プログラム、Chicken Zombies、PARAISO、トランシルヴァニア、Withering（身分＋作詞者）；生年出身領句＝時間、Sway、vivid、揺らぎ（滋賀三人編制）、Orca（電子音樂創作者）；組合身分領句＝Especially（二人偶像）、Twin（兩人具名）、3（兄弟＋現名 KIRINJI）、Fine（兄弟分寫詞曲）、imagination（三人組）；主唱領句＝100年後、WAVES、GEAR BLUES、愛のゆくえ；團體名領句＝卵、太陽の中の生活、homely（結成年＋長野）、UROBOROS（結成年＋大阪）、フェイク、LOGOS（出道年＋新浪潮）、謎（名古屋四人團）、Ampersands。日期「日」後一字：發 時間／推 卵／由 imagination／起 UROBOROS／，Withering／上 LOGOS／問 フェイク／從 Fine／面 homely／交 人間／登 太陽／經 Chicken／接 GEAR／透 PARAISO／首 揺らぎ／亮 vivid／以 Sway／在 Ampersands／同 Orca／緊 Twin，其餘 7 張只寫到年或月（d／e 請避開以上 20 字）。媒體名與媒體榜名次全數不進 note（Music Magazine 滿分、美術手帖、RYM 等皆未指派）。
+- **30255** 自查：hook 間中文 4-gram 0 條；hook 對他張 note 只剩人名（柳瀬二郎、山田将司，同藝人）；hook 與自身 note 無逐字重複句（卵、GEAR BLUES、100年後、Orca、謎、3、太陽 初稿有近似句，已改寫 note）。開頭前四字 27 張互異。`qa-batch hooks`：a–c 無標記（總標記 2＝d、e 缺檔）；初跑的「国」已把 きのこ帝国、ゆらゆら帝国 append 進 `jp-proper-names.json`，Withering／太陽 的跨卡年份與 Telecaster／Arena 專名已改用本卡 facts 或原文（横浜アリーナ）。`chk-hook-crossgroup`（3 組 27 張）：全部通過，hook 加權 14–25、note 157–238。
