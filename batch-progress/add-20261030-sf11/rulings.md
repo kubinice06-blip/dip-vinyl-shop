@@ -53,3 +53,21 @@
 - **49844**（特撮《爆誕》）身分、年份、廠牌成立（德間 Japan Communications，TKCA-71864）；首張專輯成立；Oricon／銷量查無不寫；曲風雜（含 smooth jazz、藍調、抒情），moodGuess 輕度存疑，不為汰卡主因。
 - **49845**（ULTRA SUNN《US》）身分成立（MB 藝人註記比利時 coldwave／EBM 二人組、布魯塞爾）；廠牌 Artoffact；首張正規專輯成立；moodGuess 輕度存疑（訪談強調可唱可跳、九〇／千禧舞曲）；樂評正文未取得，thin。
 - 無建議汰卡。
+
+## 研究 d 組（49831–49840）
+- **49831**（PUZZLEMAN《睏前愛用PUZZLEMAN》）人工身分核實：MB 無此藝人；Apple tw 1558991144＋iTunes lookup 證實盤名、2021-03-31、13 首、℗ 2021 KAO!INC.（顏社）；卡單 label 空白→顏社。Discogs 403 未開。聲音零來源（moodGuess 無法核實），status thin。資料極薄，建議主線斟酌是否汰；若留，寫作不得寫鼓／速度／採樣／暖調。
+- **49832**（Skip Skip Ben Ben《鏡中鏡》）解決 curatorRisk：Spotify 熱門曲（交雜隕石、無限大、海嘯列車、小忞、穿越河流）逐曲比對 iTunes，全在《鏡中鏡》，並非較新專輯；團只有四張專輯（Bandcamp／MB 皆止於 2015），此盤即所求。國別 tw 保留（Bandcamp／MB 起源台北），但活動與北京地下圈相連，寫作層勿斷言單一地。moodGuess 輕度存疑：Bandcamp 標籤是車庫龐克／噪音流行／迷幻吉他，非合成器主導。label 無，留空。
+- **49833**（Sonia Calico《Simulation Of An Overloaded World》）推翻策展層：國別 jp→tw（MB TW、area 台北、Bandcamp 台北市）；label 空白→More Time Records（倫敦，MTR032）；『東京民謠主題』不成立（只是〈Neo Tokyo Folk〉曲名）。首張專輯、2020-10-15、dancehall／kuduro／GQOM／trance＋東亞傳統樂器，與 moodGuess 吻合。
+- **49834**（Space Raiders《Hot Cakes》）推翻策展層：〈Glam Raid〉在首作《Don't Be Daft》（1999，Skint BRASSIC 13CD），非本盤；Spotify 熱門八首對半分（本盤 4、首作 4，含最知名的〈Disko Doktor〉）。Hot Cakes 身分成立（2000、Skint BRASSIC 19CD）、可留；建議主線考慮加收或改收首作。『downtempo』無來源，只證實 big beat 分類。聲音零樂評，moodGuess 無法核實，status thin。
+- **49835**（Super Besse《la nuit*》）重大推翻：Spotify 熱門八首中六首（Holod、Posmotri na Menia、Berlin Zoo、Prikazano、Mne Vse Odno、Tak Silno）在 2015《63610*》（MB 1be7a8d9-f28b-4fe6-a91c-b6d44ade85d2，I Love You Records，10 首），Rodina 在《Un Rêve》，只有 Yunost 在《la nuit*》。la nuit* 本身身分、年份、廠牌（I Love You Records ILOVEYOURE026）無誤、為第二張專輯；建議改收《63610*》或兩張並收。官網 supersuperbessebesse.com 已轉址到無關網域，不可引用。聲音僅 Last.fm 團級描述（Korg 合成器主導後龐克），moodGuess 無本張來源，存疑。
+- 建議汰卡：無強制；PUZZLEMAN 資料過薄為首要候選。建議改收／加收：Super Besse→《63610*》、Space Raiders→加《Don't Be Daft》。
+
+## 主線（研究交件後改卡單，條號 49871 起）
+- 49871：照研究層推翻改卡單（`desc-tools/batches/cards/add-20261030-sf11-cards.json`）：
+  - **汰 pololu《A Ghost Shaped Lotus》**（研究 c 49821–49825：身分只靠 Apple TW 商店頁，台灣國別與 Flow State 前身說法都無來源）。研究 c 檔同步刪該筆。sf11 改為收 23 位、24 張。
+  - **Super Besse 改收 2015《63610*》**（研究 d：Spotify 熱門八首有六首在此盤，《la nuit*》只有一首），MB 1be7a8d9、I Love You Records。研究 d 同支代理重研此盤換掉原筆。
+  - **The Offset: Spectacles 國別回 hk**：主線策展時改 us 是錯的（研究 b 49811：香港成員三人團，Trouble In Mind 只是 2021 年十週年重發廠牌）。
+  - Posh Inverse 去掉「優雅逆轉」（研究 c：無官方來源），key 改 `desc4:Posh Inverse|我想要的都在這裡`，研究 c 檔同步。
+  - The Luvmenauts 國別 it→ca（多倫多，研究 e 49842）；Sonia Calico jp→tw、label More Time Records（研究 d）；記號士 tw、label Sony Music Taiwan（研究 e 49843）。
+  - label 補：NUUAMM 十三月（研究 a）、Nicknack Crowd Control Records（研究 b）、DJ Toner Tangential Music（研究 c）、ERISTHEPLANET EQT Recordings（研究 c，盤名照 Apple／MB release 定為《IT REALLY DO BE THAT DAMN PHONE》）、PUZZLEMAN 顏社（研究 d）、ULTRA SUNN Artoffact（研究 e 49845）。
+  - Space Raiders 研究 d 建議加收首作《Don't Be Daft》：不加，照「一位一張」留《Hot Cakes》。PUZZLEMAN 研究 d 列為汰卡候選（資料極薄）：身分已由 Apple 與 iTunes lookup 核實，thin 照收。
