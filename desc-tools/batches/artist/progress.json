@@ -11794,8 +11794,16 @@
     "dotzio",
     "championxiii"
    ],
-   "state": "cut",
-   "note": "Spotify 追蹤藝人補卡池 sf06（add-20261030-sf06，華語其他、港、韓、泰）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；20 位）；名冊 batch-progress/artist-intro/roster-sf06.json"
+   "state": "published",
+   "note": "Spotify 追蹤藝人補卡池 sf06（add-20261030-sf06，華語其他、港、韓、泰）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；20 位）；名冊 batch-progress/artist-intro/roster-sf06.json",
+   "skipped": [
+    "張亞東",
+    "Everfor",
+    "The Cheers Cheers",
+    "dotzio",
+    "Championxiii"
+   ],
+   "reviewFixes": 4
   },
   {
    "batch": "ar-d-208",
@@ -11850,8 +11858,12 @@
     "mamie minch",
     "david boring"
    ],
-   "state": "cut",
-   "note": "Spotify 追蹤藝人補卡池 sf08（add-20261030-sf08，西洋 90 年代至今獨立、alt、迷幻、shoegaze、民謠）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；40 位）；名冊 batch-progress/artist-intro/roster-sf08.json"
+   "state": "published",
+   "note": "Spotify 追蹤藝人補卡池 sf08（add-20261030-sf08，西洋 90 年代至今獨立、alt、迷幻、shoegaze、民謠）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；40 位）；名冊 batch-progress/artist-intro/roster-sf08.json",
+   "skipped": [
+    "Vinnum Sabbathi"
+   ],
+   "reviewFixes": 11
   }
  ]
 }

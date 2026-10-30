@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1010 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1019 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -988,6 +988,8 @@
 | ar-d-204 | kinoue64 | 空間、事情、時間、事象。 | 廣島出身、2001 年起活動 | 2001 年只有 MusicBrainz 單源，Bandcamp 與評論皆無佐證，且與部落格『四年八張專輯、23 歲』的說法難以相容，建議核對或拿掉 | https://kinoue64.bandcamp.com/ |
 | ar-d-204 | Magamura | Supernaturals | 2017 年 2 月 17 日先由東京廠牌 Kebko Music 推出卡帶 | The Ransom Note 的報導中卡帶與黑膠的先後與 2017-02-17 對應的載體說法不一（搜尋摘要稱卡帶早在前一年 2 月已出，2017-02-17 為黑膠），建議對照 Kebko Music Bandcamp 核實 | https://www.theransomnote.com/?p=21846 |
 | ar-d-205 | 吳書齊 | 鹿港 | 吳書齊本人彈鋼琴；『四人共同作曲』 | 事實庫唯一來源 Discogs 登記作曲為 Suchi Wu、Kevin James、Martijn Vanbuel、Toshihiro Wakaike 四人，上線簡介寫吳書齊彈鋼琴、四人共同作曲；Discogs 作曲名單與編制人名是否一致未能複核，僅供店主參考 | https://www.discogs.com/release/29454466 |
+| ar-d-206 | Shaa Khan | The World Will End on Friday | 1960 年代末與夥伴組成這個團 | Bear Family 稱 1970 年初學校樂團、1971 取名；德文維基寫 late 1960s，來源不一致 | https://www.bear-family.com/shaa-khan-the-world-will-end-on-friday-1978.html |
+| ar-d-206 | dotzio | The File You're Looking for No Longer Exist | dotzio 背後是獨立音樂人 Hsuan Chang，中文寫詞 | Bandcamp 頁面查不到 Hsuan Chang 之名，歌詞以英文為主、僅部分中文；identity 未核，建議核對該句出處。 | https://dotzio.bandcamp.com/album/the-file-youre-looking-for-no-longer-exist |
 | ar-d-207 | Frijid Pink | Frijid Pink | 一位電台音樂總監聽了，建議廠牌改推這首 | Stevers 本人訪談稱是 Dearborn AM 電台經理（station manager）；Michigan 名人堂與維基稱 DJ／音樂總監 Paul Cannon。職稱兩說並存，建議簽改寫『一位電台人士』 | https://classicbands.com/FrijidPinkInterview.html |
 | ar-d-207 | Frijid Pink | Frijid Pink | 在一次錄音預約剩下的時間即興錄下 | Michigan 名人堂稱 1967 年 session 一次錄成，與維基『session 尾端的填充曲』大致一致，無錯；僅備查 | https://michiganrockandrolllegends.com/hall-of-fame/artists/330-frijid-pink |
 | ar-d-207 | Gravy Train | (A Ballad of) A Peaceful Man | 歌詞不明講，卻都從基督教觀點出發，在英國前衛圈很少見 | Barratt 原話是『不明顯，但確實是從基督徒的觀點寫的』；『在英國前衛圈很少見』是簡介自己的判斷，無來源（Barratt 自己的說法只涵蓋歌詞立場）；『都』也過滿 | https://en.wikipedia.org/wiki/Gravy_Train_(band) |
@@ -995,6 +997,13 @@
 | ar-d-207 | The West Coast Pop Art Experimental Band | Part One | 有錢的律師出資搞定合約，Markley 就是那位律師 | 維基稱 Markley 是『有錢的花花公子／有抱負的音樂人』，toppermost 稱石油富豪養子，只有一篇搜尋摘要稱其為律師；建議改成『有錢的 Bob Markley』 | https://www.toppermost.co.uk/west-coast-pop-art-experimental-band-the/ |
 | ar-d-207 | The Cosmic Jokers | Galactic Supermarket | 老闆是 Dieter Dierks，他的錄音室是西德 krautrock 的重鎮 | 廠牌老闆是 Rolf-Ulrich Kaiser，Dierks 是錄音室老闆兼製作／混音；『老闆』易讀成廠牌老闆。另『樂手常被老闆的母親餵飽』『在 Stommeln 錄音』本層沒查到出處 | https://en.wikipedia.org/wiki/The_Cosmic_Jokers |
 | ar-d-207 | Tully | Tully | 鍵盤手 Michael Carlos 買了一台 Moog，讓 Tully 成了澳洲第一支在現場用 Moog 的樂團 | 維基與 Milesago 轉述都用 reportedly（據稱）；上線簡介寫成確定句，建議加『據稱』 | https://en.wikipedia.org/wiki/Tully_(band) |
+| ar-d-208 | Blind Melon | Blind Melon | 封面照片裡的女孩是鼓手 Glen Graham 的妹妹 Georgia；MV 以蜜蜂女孩為靈感 | MV 蜜蜂女孩演員拼法在不同來源為 DeLouch/DeLoach，且 MV 靈感來源本層未查證到第二源，建議店主確認上線簡介該句的來源 | https://en.wikipedia.org/wiki/Shannon_Hoon |
+| ar-d-208 | Bonny Light Horseman | Bonny Light Horseman | 2020 年 1 月 24 日發行 | 英文維基團條目寫專輯 2020 年 1 月 25 日發行，與上線簡介差一天，未查到第二源，請店主核對 | https://en.wikipedia.org/wiki/Bonny_Light_Horseman_(band) |
+| ar-d-208 | Modey Lemon | Thunder + Lightning | 這張由 Boyd 唱歌、彈吉他並操作 Moog 合成器，Quattrone 打鼓，編制裡少了貝斯 | 維基寫 Boyd 與 Quattrone 在專輯發行前加入 Jason Kirker（吉他與 Moog）；Lollipop 評論則說一位成員唱歌彈吉他、另有人弄 Moog。簡介把 Moog 歸給 Boyd 可能不準，且『兩個大學生』『編制只有兩人』與三人說法衝突，建議查證。 | https://en.wikipedia.org/wiki/Modey_Lemon |
+| ar-d-208 | Vinnum Sabbathi | Gravity Works | 2011 年成軍 | 成軍年來源不一致：Metal Archives 寫 2011 年 8 月，樂團 2021 年新聞稿（搜尋摘要）寫 2012；建議簡介改成不寫年份或標明來源 | https://doomed-nation.com/?p=100786 |
+| ar-d-208 | Ben Watt | Hendra | 姊姊在他寫完上一本書後過世；Hendra 是她生前常去躲靜的小屋 | Mother Jones 與 Stranger 都說是同父異母姊姊 Jennie（2012 年過世），Mother Jones 說 Hendra 是她與先生在康瓦爾的家；簡介寫『姊姊』可補成『同父異母的姊姊』，『躲靜的小屋』說法單源待核 | https://fullsite.motherjones.com/media/2014/06/contact-hendra-ben-watt-everything-but-the-girl/ |
+| ar-d-208 | Sleepytime Trio | Plus 6000 | Richmond 的 Sleepytime Trio 1994 年在維吉尼亞州成軍 | 成軍年來源不一致：MusicBrainz 為 1994，另有來源稱 1995 年（Harrisonburg）；官方 Bandcamp 沒寫年份，建議簡介不寫年份 | https://sleepytimetrio.bandcamp.com |
+| ar-d-208 | СОЮЗ | Это всё совсем не то | 首張全長不到半小時／首張專輯 | 官方 Bandcamp 在 2018 這張前還列 2017 年自題作品（MusicBrainz 為 EP），『第一張全長』需改成可核對的說法 | https://gruppasoyuz.bandcamp.com/ |
 | ar-d-209 | Daniel Ponce | Arawe | Daniel Ponce 1953 年 7 月 21 日生於哈瓦那 | 生日來源分歧（維基 1953-07-21、wikidata 1953-07-12、AfroCubaWeb 與 WKCR 為 1952），無法確定，建議只寫生於哈瓦那或改為不寫年份。 | https://afrocubaweb.com/daniel-ponce.html |
 | ar-d-209 | Spiral Deluxe | The Love Pretender | 多數曲子在東京錄、巴黎混音 | Keyi 與搜尋結果只說錄於東京（年份各說 2018 或 2019）、之後由 Mills 混音，混音地點巴黎找不到來源；錄音年也不一致。 | https://www.keyimagazine.com/2025/02/20/spiral-deluxe-to-release-final-project-the-love-pretender-an-album-dedicated-to-authenticity |
 | ar-d-210 | Danger Mouse & Daniele Luppi | Rome | 錄音地點選在羅馬 Forum Studios | Paste 說錄音在 Ortophonic Studios，與上線簡介和維基的 Forum Studios 不一致，可能是不同階段；請店主核對 | https://www.pastemagazine.com/music/danger-mouse/danger-mouse-daniele-luppi-rome |

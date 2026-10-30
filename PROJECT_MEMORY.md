@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-30｜dip-vinyl-shop｜藝人介紹 ar-d-206（sf06 華語其他／港／韓／泰）＋ar-d-208（sf08 西洋 90 年代至今獨立／alt／迷幻）上架 54 位
+
+- **改動**：照 `dip-artist-intro` skill 跑完兩批（萃取 --lean、維基預抓、補洞 6 組 Sonnet、寫作 3 組 Opus、qa-artist、主線逐位審稿、alias、issues、建分片）。補洞 WebSearch 206 每位 ≤3、208 每位 ≤2。
+  - **ar-d-206**：20 位 → 上架 15（7 full、8 thin），skipped 5（Everfor、dotzio、Championxiii 素材不到 thin 門檻；The Cheers Cheers 只有廠牌一源；張亞東主線撤稿：無聲音素材）。審稿修 4 位（劉以達補身分、「結他」改「吉他」；亂彈阿翔金馬／金鐘「三金」以中央社、NOWnews 核實改定論；JUU4E 補 NME 第二源；Glen Check 獎項加「據記載」）。
+  - **ar-d-208**：40 位 → 上架 39（19 full、20 thin），skipped 1（Vinnum Sabbathi 只有一源）。審稿修 11 位（首句補國籍 5 位、Green Jelly／Tool 時序、Modey Lemon 編制、Ben Watt《Hendra》、刪單源評價等）；Sleepytime Trio 主線補第二源。維基預抓錯頁 3 條作廢（Beachy Head、Sleepytime Trio、David Boring）。
+  - 藝人介紹 6,456 → 6,495（348 份成品）。
+- **主要檔案**：`desc-tools/batches/artist/{facts,research,output}/ar-d-20{6,8}*`、`progress.json`、`data/artist-intros/*`、`audits/ARTIST-PUB-ISSUES.md`、`batch-progress/artist-intro/ar-c-rulings.md`、`batch-progress/spotify-follow-20261030/PLAN.md`。
+- **驗證**：qa-artist gap 兩批 0 處；out 兩批僅剩 skipped 的「缺 N 位」與 Jolie Holland 278 字放寬提示；build-artist-intros 348 份成品、6,495 位、64 分片。
+
 ### 2026-10-30｜dip-vinyl-shop｜藝人介紹 ar-d-211（sf11 冷門電子／lo-fi／小廠牌）＋ar-d-212（sf12 嘻哈／R&B／靈魂／流行／以色列）上架 50 位
 
 - **ar-d-211**：24 位 → 上架 22（7 full、15 thin），skipped 2（ERISTHEPLANET、Mindchatter：素材不到 thin 門檻）。審稿修 3 位（Offset 主詞與字數、Super Besse 語病、NoSo 句構）。維基預抓錯頁 4 條作廢。

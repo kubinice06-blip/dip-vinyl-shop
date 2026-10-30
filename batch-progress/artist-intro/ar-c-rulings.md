@@ -1150,3 +1150,23 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 ## Spotify 補卡 sf11／sf12 補介紹（ar-d-211～212）小結
 
 - 54 位排入 2 批，50 位上架（20 full、30 thin）、4 位不寫；審稿合計修 5 位（另撤稿 1 位）。
+
+## ar-d-206（2026-10-30，Spotify 補卡 sf06＝華語其他、港、韓、泰）
+
+- 20 位 → 15 位上架（7 full、8 thin），5 位不寫：Everfor（無任何聲音事實，不能憑空寫 city pop）、dotzio（身分未核、國籍不明）、Championxiii（只有一句影響來源，寫不到 thin 門檻）、The Cheers Cheers（只有廠牌 Bandcamp 一源、身分查無他證，比照 ar-d-204 Chestnut Bakery）、張亞東（主線撤稿：facts 只有生平與替王菲、朴樹製作的履歷，沒有一句聲音特色，未達 thin 門檻；《Ya Tung》聲音主線 WebSearch 一次查無）。寫作 1 組 Opus（20 位一組，digest-2 空）。補洞 WebSearch 每位 ≤3。
+- 主線審稿修 4 位：劉以達首句補身分（香港吉他手與作曲人）、「結他」改「吉他」（台灣用語），壓回 250 字；亂彈阿翔金馬〈完美落地〉（自作詞曲）、2020 年第 55 屆金鐘綜藝節目主持人獎（與浩子、《台灣金頌》）與「三金」主線 WebSearch 以中央社、NOWnews 核實，去掉「據記載／被稱為」改為定論並補源；JUU4E 補 NME《Crazy World》樂評為第二源（加 dub reggae 一詞）；Glen Check 韓國大眾音樂獎連兩屆只有英韓維基同家族，加「據記載」。
+- 保留：강태환「被稱為韓國第一個自由爵士團體」（韓文維基單源，用被稱為口氣）；7FO「據報導」大阪出身（來源為訪談摘要）；Shaa Khan「八〇年代初德國最硬派現場樂團之一」放在「據說」句內；雞蛋蒸肉餅不寫「首個香港樂團」類宣稱。
+- 已上線專輯簡介待修（pubIssues）：Shaa Khan 成軍年代（簡介 1960 年代末、Bear Family 1970 年初）；dotzio 簡介「Hsuan Chang、中文寫詞」查無據。另：雞蛋蒸肉餅簡介「第一次出現香港樂隊」單源、Everfor 簡介「city pop」無源（補洞層提出，未列 pubIssues）。
+
+## ar-d-208（2026-10-30，Spotify 補卡 sf08＝西洋 90 年代至今獨立、alt、迷幻、shoegaze、民謠）
+
+- 40 位 → 39 位上架（19 full、20 thin），1 位不寫：Vinnum Sabbathi（只有 Doomed Nation 一篇訪談一源，主線 WebSearch 一次查無第二源；比照 ar-d-204 Chestnut Bakery）。補洞 WebSearch 每位 ≤2。
+- 維基預抓錯頁作廢：Beachy Head（海岬）、Sleepytime Trio（「Sleepytime」）、David Boring（Clowes 漫畫）；身分皆以卡池專輯核過。
+- 主線審稿修 11 位：22-Pistepirkko 首句補「芬蘭三人樂團」、刪重複的「評論圈最受敬重」；Blind Melon「新奧爾良」統一為「紐奧良」；Damon Albarn「被廣泛視為」→「被視為」（維基首段單源）、補主詞；Green Jelly「Keenan 與 Carey 早年待過、之後才組 Tool」時序不準，改「都曾參與」；Modey Lemon 刪「鼓手補上貝斯」（Moog 實由後加入的 Jason Kirker 負責，見 pubIssues），改「編制沒有貝斯」；The Voidz 數字前補空格；Tobin Sprout、Ben Watt、Mamie Minch、The Black Angels、Stone Sour 首句補國籍身分；Tobin Sprout 刪「lo-fi 搖滾的 AC/DC」（單源且理由說不通）；Ben Watt 刪「覺得被擠壓」、Hendra 改「部分歌曲寫給過世的同父異母姊姊」；Black Angels 刪 Levitation「美國最重要」單源評價；Mamie Minch 修琴段壓字回 243。Sleepytime Trio 主線 WebSearch 補 Lovitt 名冊與 Bats & Mice 維基為第二源（Richmond、三位成員另組 Bats & Mice）。
+- 保留：Jolie Holland 278 字（流浪、離開 Be Good Tanyas、自製 demo 被 Anti- 重發、Tom Waits 提名，是故事主體）；Helado Tropical 寫成 Helado Negro 與 Reyna Tropical 的合作（身分資訊，雖只在 notes）；Green Jelly〈Three Little Pigs〉美 17／英 5（兩源一致、成名核心）；Kissin' Dynamite 只寫 2024 德國專輯榜首；Tacoma Radar 2025 年重發（Numero 廠牌頁）；Psychic Ills 不寫 Tres Warren 死因；Blind Melon 不寫 Hoon 死因。
+- 不寫：Stone Sour 名次與銷量；SUUNS Polaris 長名單；Albarn 的 OBE／金氏紀錄；Pigs x7《衛報》榜單；Ben Watt 獎項；來源不一致的 Charlottes 貝斯手、SLIFT《ILION》序數、SUUNS 成軍年、Howlin' Fling 起始年、David Boring 成員與成軍年。
+- 已上線專輯簡介待修（pubIssues）：Blind Melon 封面蜜蜂女孩身分；Bonny Light Horseman 發行日（1/24 vs 維基 1/25）；Modey Lemon《Thunder + Lightning》編制與 Moog 歸屬；Vinnum Sabbathi《Gravity Works》成軍年；Sleepytime Trio《Plus 6000》成軍年；Ben Watt《Hendra》姊姊應為同父異母；СОЮЗ「首張全長」。
+
+## Spotify 補卡 sf06／sf08 補介紹（ar-d-206、ar-d-208）小結
+
+- 60 位排入 2 批，54 位上架（26 full、28 thin）、6 位不寫；審稿合計修 15 位（另撤稿 3 位：張亞東、The Cheers Cheers、Vinnum Sabbathi）。主線 WebSearch 6 次。
