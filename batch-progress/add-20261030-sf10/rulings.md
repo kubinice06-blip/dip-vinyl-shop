@@ -70,3 +70,6 @@
 - **41928** Monoton《Monotonprodukt 07》：維也納 Konrad Becker 的 Monoton（非池中 MONO），1982 自家出版、雙 LP 限量 500；2003 Oral 重發改英文曲名、曲序不同。The Wire 列入 1998 名單（維基）／「20 世紀百張」（Discogs 簡介，單一來源）。無樂評，聲音 thin，moodGuess『冷硬合成器律動』未驗證。
 - **41929** 本組 moodGuess 存疑清單：無明顯推翻；Mareux、Minotaur Shock、Monoton 三張因找不到聲音描述，列「未驗證」而非「存疑」，建議主線評分時聽音。
 - **41930** 工具限制：Pitchfork、AllMusic、BBC、Independent、Metal Archives、Discogs 網頁被擋，改用 Discogs／MB API。WebSearch 全組用 3 次（Kate NV、L'Acephale、Lau Nau 各 1）；推翻策展層 Kate NV 廠牌、Nukkuu 廠牌、Mareux 代表曲三處，另 Luke Abbott 無推翻。
+
+## 主線（條號 41971–41980）
+- 41971：研究層推翻策展層，卡單已改：Clutchy Hopkins 改 Crate Digler；HVOB 改 Stil vor Talent；Joep Beving 改 Deutsche Grammophon（年份 2015）；Kate NV《для FOR》改 RVNG Intl.；Lau Nau《Nukkuu》改 Locust Music；Vapour Theories 補 Fire Records。Juana Molina《Segundo》2000 阿根廷自行發行原版廠名查不到，卡單 label 清空（Domino 是 2003 國際版，不掛在 2000 原版上）。research-c「非拉丁亂碼」旗標是 Kate NV 俄文曲名，正常。
