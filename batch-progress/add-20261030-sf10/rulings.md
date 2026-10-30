@@ -111,3 +111,8 @@
 - 其餘 34 張逐張審過，未改字。媒體名、媒體榜單名次、「據說／據傳」grep 0（英國／奧地利專輯榜名次與 Mercury Prize 入圍是官方榜與獎項，不是媒體榜，照留）。
 - 41974：**頂點逐張判定 0 張**。37 張 classic 皆 ≤4（Against All Logic、Segundo 為 4），無殿堂資格；obscurity 最高 4，無 pearl 候選。
 - 41975：卡單 L'Acephale《L'Acéphale》補 `selfTitled: true`（研究 c 已核 MB 盤名＝團名）。封面 37 張 live-check：Monoton《Monotonprodukt 07》CAA release-group 原圖回 500，`covers.json` 改指 release 40e744ed 的 500px 縮圖（目視相符），其餘 200。寫入前對 origin/main 與所有 `claude/*` 分支 seed 去重 0 撞。
+- 41976：子曲風。`warm-batch` 標籤 37／空 0；`build-genre-tree --pull --write` 後 7 張未落位，寫進 `genre-l3-artist-map.json`：Barry Can't Swim→electronic/house/deep；Danger Mouse & Daniele Luppi→pop/art-pop/baroque；Luke Abbott→electronic/idm/ambient-idm；Photay→electronic/downtempo/folktronica；Rich Ruth→jazz/modal/spiritual；Vapour Theories→rock/psych-prog/space-rock；Yung Bae→soul/funk/disco-funk（seed 曲風欄由 KV 標籤推成 soul，electronic 節點吃不到）。重跑後 37/37 落位（sf09 仍 39/39），`build-draw-covers --pull --write` 完成。
+
+## 本批新藝人（無介紹）
+- 33 位全部沒有介紹、也不在排隊批次或別名鍵（Against All Logic 是 Nicolas Jaar 的別名，但掛名不同，另列；Danger Mouse 兩個合作名義各算一位）。名冊 `batch-progress/artist-intro/roster-sf10.json`（tier D、addedBy add-20261030-sf10），progress.json 追加 **ar-d-210**（state cut，33 位，未超過 45 不開溢出號）。補洞寫作由調度另派工作階段跑。
+- Against All Logic、Alvin Curran、Barry Can't Swim、Christoph De Babalon、Clutchy Hopkins、Danger Mouse & Sparklehorse、Danger Mouse & Daniele Luppi、Federico Albanese、French 79、Grandbrothers、HVOB、Joep Beving、Juana Molina、Kate NV、L'Acephale、Lau Nau、Luke Abbott、Mareux、Minotaur Shock、Monoton、Orchestra of Constant Distress、Peggy Gou、Photay、Planningtorock、Rich Ruth、Ruxpin、Saint Abdullah、Shinjuku Thief、Throwing Snow、Tomaga、Vapour Theories、Yaeji、Yung Bae。
