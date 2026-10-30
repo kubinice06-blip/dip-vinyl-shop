@@ -85,3 +85,13 @@
 
 ## 主線審稿（2026-10-30）
 - **30580** 24 張逐張讀過。改 1 處：陳穎達《動物感傷》「謝旻諺」→「謝明諺」（研究 d 把 Minyen Hsieh 誤譯；同一人在非／密閉空間卡寫謝明諺，台灣爵士薩克斯風手通行寫法）。其餘無媒體名、無「據說」、無單源評價句；字數 full 182–231、thin 130–179。`qa-batch out` 通過。
+
+## 寫入與上線（2026-10-30）
+- **30581** 頂點逐張判定：0 張。三軸為 `manual:regional-rubric`（華語圈尺度），無 classic 5、無 accessibility 5；obscurity 5 的獨立盤 listeners 皆「查無」或 >300，不列 pearl。
+- **30582** published gate 前重查 MB：Karencici《Sha Yan》MB 有條目（RG 7e187778…，策展時查無），改 MB 釘住；其餘 11 張人工身分卡 MB 重查仍查無，`mbAbsenceProof` 改成 gate 要的物件格式（三組查詢＋結論）。
+- **30583** 跨分支去重：寫入前對 origin/main 與全部 147 條 `claude/*` 分支 seed 比對藝人與盤名，0 撞。
+- **30584** 寫入：card_catalog 24／24、KV 45 鍵逐字回讀一致、試聽 24 ready、seed +24；published gate 0 error。`tw-pop-artists.json` 加 12 位（徐佳瑩、王心凌、Karencici、宝島材料行、Layton Wu、YELLOW黃宣、KUNG 龔敬文、潮州土狗、諾頓街、絕命青年、老貓偵探社、狗毛）；`rock-asia-country-map.json` 加 tw 5 位（老貓偵探社、絕命青年、荒山茉莉、頭部組成者、狗毛）；`genre-l3-artist-map.json` 補 Karencici／宝島材料行／諾頓街（pop/t-pop）、黃雨晴（pop/indie-pop/bedroom）、Yo-Sea（soul/neo-soul）、非／密閉空間（electronic/noise/concrete）、吳書齊／陳穎達（jazz/contemporary）、龔敬文／潮州土狗（hiphop/asia-rap/tw-cn）→ 子曲風 24/24 落位。
+- **30585** 情緒評分（`batch-progress/mood-axes/score-sf0507/`，與 sf07 同工單）：24 張，雀躍 9、放鬆 4、恍惚 3、沸騰 3、冷冽 2、平靜 1、頹靡 1、暴躁 1；照 RULES.md、不算落格率；build-card-moods 錨點 104/104。
+
+## 本批新藝人（無介紹）
+名冊 `batch-progress/artist-intro/roster-sf05.json`（20 位，tier D、addedBy add-20261030-sf05）→ progress.json **ar-d-205**（state cut）：徐佳瑩、王心凌、Karencici、Yu Ching 黃雨晴、老貓偵探社、宝島材料行、Yo-Sea、絕命青年、聲子蟲、荒山茉莉、非／密閉空間、頭部組成者、吳書齊、狗毛、陳穎達、Layton Wu、YELLOW黃宣、KUNG 龔敬文、潮州土狗、諾頓街。

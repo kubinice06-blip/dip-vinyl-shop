@@ -113,3 +113,13 @@
 
 ## 主線審稿（2026-10-30）
 - **30781** 47 張逐張讀過，改 2 處單源評價句：Eyeless in Gaza《Rust Red September》「當年的樂評說他們從沉重的前作走進了陽光，〈Only Whispers〉則仍帶著秋天的哀愁。」→「聲音比沉重的前作明亮，〈Only Whispers〉仍帶著秋天的哀愁。」（研究 d 30732 聲音事實）；Slow Dancer「被形容為溫柔而醒目的慢節奏 R&B」→「以溫柔的慢節奏 R&B 為主」。其餘無媒體名、無「據說」；字數 full 193–240、thin 163–179。`qa-batch out` 通過。
+
+## 寫入與上線（2026-10-30）
+- **30782** published gate 前重查 MB：Martin & Garp《Sentimental Fools》MB 有條目（RG 2180a870…，2021 Légère 歐版），改 MB 釘住；Zaratustra 仍查無，`mbAbsenceProof` 改物件格式；Discogs 封面登錄 `data/discogs-cover-registry.json`（5546763，reviewed ok）。
+- **30783** 跨分支去重：對 origin/main 與全部 `claude/*` 分支 seed，0 撞。
+- **30784** 寫入：card_catalog 47／47、KV 47 鍵逐字回讀一致、試聽 45 ready／2 unavailable、seed +47；published gate 0 error。
+- **30785** 子曲風：`genre-l3-artist-map.json` 補 Affinity（jazz/fusion/jazz-rock）、Martin & Garp（soul/classic-rnb/smooth）、Eyeless in Gaza（rock/punk-wave/post-punk）→ 46/47 落位。**Alma Cogan 留未落位**：主類型 pop，pop 下沒有傳統流行／standards 節點（同型的 Doris Day、Rosemary Clooney 是 jazz 主類型落 jazz/vocal），不為一張改卡的主類型；可逆，日後開節點再補。`build-asia-country-map` 跑過，本批無亞洲藝人。
+- **30786** 情緒評分（`score-sf0507`）：47 張，雀躍 12、暴躁 8、冷冽 8、放鬆 6、恍惚 5、頹靡 4、平靜 2、沸騰 2。主線改 1：Pierrot Lunaire《Gudrun》x 2.5→3.2（Moog 與女高音的前衛拼貼，RULES.md「安靜但緊繃也是躁」；平靜→冷冽，`review.json`）。錨點 104/104。
+
+## 本批新藝人（無介紹）
+名冊 `batch-progress/artist-intro/roster-sf07.json`（32 位，tier D、addedBy add-20261030-sf07）→ progress.json **ar-d-207**（state cut）：Atomic Rooster、Black Widow、Bloodrock、Frijid Pink、Gravy Train、High Tide、Jade Warrior、Khan、Steamhammer、Paul Kossoff、Peter Kaukonen、The West Coast Pop Art Experimental Band、The Open Mind、The Cosmic Jokers、Ikarus、Pierrot Lunaire、Affinity、Mike Ratledge、Nine Days' Wonder、Tully、Zaratustra、Martin & Garp、Slow Dancer、Paul Davis、Alma Cogan、Willie West、Sun City Girls、Eyeless in Gaza、Martyn Bates、The Sugarcubes、The Jazz Butcher、Mick Karn。
