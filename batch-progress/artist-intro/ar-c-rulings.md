@@ -1061,3 +1061,12 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 ## Spotify 補卡 sf01／sf02 補介紹（ar-d-201～202）小結
 
 - 60 位排入 2 批，55 位上架（25 full、30 thin）、5 位不寫；審稿合計修 9 位。截止日後事實：張震嶽 2026 第 37 屆金曲獎（WebSearch 核實）。
+
+## ar-d-211（2026-10-30，Spotify 補卡 sf11＝冷門與身分待查的電子、lo-fi、小廠牌藝人）
+
+- 24 位 → 22 位上架（7 full、15 thin），2 位不寫：ERISTHEPLANET（聲音格 none，唯一來源是搜尋摘要，撐不起 thin 門檻）、Mindchatter（只有一篇訪談一源，聲音素材只有童年聽什麼）。補洞 WebSearch 每位 ≤3 次，合計 35 次。
+- 主線審稿修 3 位：The Offset: Spectacles「團員用加拿大帶回的器材」主詞改回吉他手 Vince Li、刪「現場不說話也不面向觀眾」壓回 249 字；Super Besse「讓白俄羅斯仍相信 cold wave 的聽眾重新注意」語病改寫；NoSo 去掉同句重複的名字（全篇不用他／她，照各媒體 they/them）。
+- 保留：The Offset: Spectacles「被列為 2010 年代初北京 DIY 卡帶復興的推手之一」（RADII 對 Rose Mansion Analog 的描述，Vice 另證廠牌創立，用「被列為」口氣）；Natural Magic 寫「Obama 就職夜的派對」不寫年份（補洞稿 2008 與就職 2009 年 1 月對不上）；Keith McIvor 只寫「過世」不寫年月；Dudu Tassa & the Kuwaitis 寫計畫本身，個人生平留給 ar-d-212；PUZZLEMAN「台灣手指鼓的代表人物」用「被稱為」；Sonia Calico「台北地下電子圈不可少的人物」（KEXP）用「被視為」。
+- 身分：維基預抓錯頁作廢：Moin（問候語）、Natural Magic（概念條目）、Space Raiders（零食）、Super Besse（滑雪場）。NUUAMM QA「簡體字 国」是團名「踊ってばかりの国」原字，保留。
+- 不寫：記號士 Blow「黑浪潮代表」引介語、鼓手離團年；ULTRA SUNN 與 Front 242 同台次數；特撮的離筋少年份；Offset 解散年（單源）。
+- 已上線專輯簡介待修（pubIssues）：記號士《第一個記號》應為 re: public records 發行（「海邊的卡夫卡」是專訪地點）；Skip Skip Ben Ben「起源台北」；Space Raiders「Fatboy Slim 經營的 Skint」；Super Besse 三人／二人編制。
