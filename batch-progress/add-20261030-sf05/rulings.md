@@ -57,3 +57,4 @@
 - 30524：荒山茉莉《水沒之都》身分、年份（數位 2021-03-04）、8 首皆對，自發行。moodGuess 存疑：「空靈女聲」查無依據（人聲由之瀚擔任，呢喃質地），樂團自述要溫暖有活力，結尾是失控吉他回授，冷與靜可能高估，不建議汰換。
 - 30525：非／密閉空間＝音速死馬（鄭各均）與謝明諺的即興二人組，Dark Paradise 廠牌對。《Flow, Gesture, and Spaces》2019，10 首，確為正規專輯；找不到樂評，聲音只有 Discogs 標籤（Experimental／Free Improvisation／Electro，電子與爵士），含薩克斯風與木管，非純電子，moodGuess 無法證實，status thin。
 - 30526：本組推翻策展層 1 處（午夜城廠牌），無需汰換。
+- **30576** 聲子蟲《午夜城》label 改「耳光音樂 SLAP MUSIC」（研究 c：Bandcamp 官方頁；Dark Horse Music 是 2022 數位重上架標示）；MB 標 Album、6 首為首張正式錄音室專輯，取消 releaseException，releaseType 改 Album。
