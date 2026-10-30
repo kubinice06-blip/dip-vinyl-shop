@@ -107,3 +107,10 @@
 - **41768** 跨兩檔合掃（han() 中文 4-gram，out-1 定稿＋out-2＋全批 59 句 hook）：3 張以上只剩官方榜名「國專輯榜／美國專輯」（23、Everyday Robots 對 Stone Sour、CWM、Phosphene）、樂器「薩克斯風」、樂種「夢幻流行」「迷幻搖滾」；2 張只剩「原聲吉他」「布里斯托」「電子流行」與鉤子 hook 原文側（NMD hook「吉他與鋼琴」對 Escondida 正文，寫作層不改 hook）。途中另拆：「的第二張」「的第一張」「這是第二張」「這第二／三張」「團第三張」「年成軍的」「圖盧茲的」「張在年月」「年月推出」「在年月接手」「合計約」「交到手上」「錄音與混音」「音的地方」「也是樂團」「從這張開始」「在美國專」「專輯榜拿到」「登上英國」「榜最高第」「一手包辦」「自己的廠牌」「在紐卡索」「搬到洛杉磯」「撐起整張」「用處理過的」「創團成員」「首張全長」「一張全長」「錄音地點」「間錄音室」「這張專輯」（跨句黏合）。
 - **41769** 掛名與用字：Viscerals note 第二句寫「Pigs x7」，正文照卡單藝人欄寫全名 Pigs Pigs Pigs Pigs Pigs Pigs Pigs（writer-base「本卡藝人名照卡單」優先；可逆）。否定句改正面：ILION「不走主副歌」整格捨去、Tyranny「曲式刻意不規整」寫「刻意歪斜」、Dos「不花俏」寫「樸素」、Ummon「巡演無法進行」寫「巡演計畫隨之停擺」、Hazed「最長不到 5 分鐘」寫「全落在 5 分鐘以內」；Tyranny「不夠自由的媒體」是 note 原詞照留。與 hook 重複的句子不寫：Hazed 不再說「先寫歌再進錄音室」、West 不再說「西部神話／東岸」、Dos 只寫「那幾個音」承接 hook、Carnival 第二句改寫「首度單飛的唱片也在那一週登場」。CWM 主唱只寫「Taylor」（Corey Taylor 全名歸 Stone Sour 首作，照 41756）。Space Homestead 的「九間錄音室」寫成「九個地方接力錄完」（避「間錄音室」與 hook「錄音地點」）。媒體名、媒體榜單名次、星等分數皆未進正文。
 - **41770** 輔助腳本：scratchpad `wr-sf08-2/`（sf08w2-save.py 合併存檔＋字數與 hook 首句驗證、sf08w2-ngram.py 兩檔正文＋全批 hook 合掃、sf08w2-r3/r4/r5.py 定點改句）。
+
+## 主線審稿（2026-10-30，雲端主線，59 張）
+- 41776：逐張讀全文、對回研究稿與 note。改 1 處：
+  - `desc2:MV & EE|Space Homestead`：「Erika Elder 的踏板鋼琴」→「踏板鋼吉他」（研究 c 組原文「踏板鋼琴（steel）」是 pedal steel 誤譯，同組《Gettin' Gone》已寫作踏板鋼吉他）。research／hooks／input 三層已同步改字。
+- `qa-batch out` 唯一標記是 The Pictish Trail「年度專輯獎」：正文已具名 SAY Award（研究 c 組 facts），主線放行。
+- The Charlottes hook「背後站著 John Peel」：研究 d 組有「Peel 是樂團的支持者、1989 年錄 session」兩條，措辭成立，不改。
+- 其餘 58 張逐張審過，未改字。媒體名、媒體榜單名次、「據說／據傳」全文 grep 0；官方榜（美國專輯榜、英國專輯榜、德國榜、英國獨立專輯榜）照寫。`qa-check-research` 兩檔 0、`fix-spacing` 待補 0。
