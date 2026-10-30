@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-30｜dip-vinyl-shop｜Spotify 追蹤藝人補卡池：全線完成（417 張卡、318 位藝人介紹）
+
+- **店主指示**：`/dip-card-create` 依 `gap.json` 補卡池（收藏 38 張＋361 位缺漏藝人各 1–2 張代表作），一路接力。
+- **結果**：12 批（sf01–sf12）全部上線，共 417 張——sf01 36、sf02 45、sf03 23、sf04 28、sf05 24、sf06 20、sf07 47、sf08 59、sf09 39、sf10 37、sf11 24、sf12 35。跳過已在池 7；不收 37（身分釘不住、只有單曲／EP、無領銜盤、廠牌帳號）；頂點 0。藝人介紹 ar-d-201～212 上線 318 位、skipped 19。
+- **過程**：調度派 6 個卡片工作階段（各 2 批）＋6 個藝人介紹工作階段（各 2 批），最多 5 個並行；第一輪 01:53 撞上週週額度，02:00 重置後在原分支開新工作階段接續。各批明細見 PLAN.md 分批表與 `batch-progress/add-20261030-sf*/rulings.md`。
+- **主要檔案**：`batch-progress/spotify-follow-20261030/PLAN.md`（頂端加全線總結）。
+- **驗證**：各批 published gate 與 KV 回讀由各卡片工作階段完成；progress.json ar-d-201～212 全數 published。
+
 ### 2026-10-30｜dip-vinyl-shop｜藝人介紹 ar-d-206（sf06 華語其他／港／韓／泰）＋ar-d-208（sf08 西洋 90 年代至今獨立／alt／迷幻）上架 54 位
 
 - **改動**：照 `dip-artist-intro` skill 跑完兩批（萃取 --lean、維基預抓、補洞 6 組 Sonnet、寫作 3 組 Opus、qa-artist、主線逐位審稿、alias、issues、建分片）。補洞 WebSearch 206 每位 ≤3、208 每位 ≤2。
