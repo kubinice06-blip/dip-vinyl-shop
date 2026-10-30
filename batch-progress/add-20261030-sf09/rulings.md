@@ -117,3 +117,6 @@
 ## 本批新藝人（無介紹）
 - 32 位全部沒有介紹、也不在排隊批次或別名鍵（高木元輝池中只有「高木元輝＝加古隆カルテット」合作名義的介紹，個人名義另列）。名冊 `batch-progress/artist-intro/roster-sf09.json`（tier D、addedBy add-20261030-sf09），progress.json 追加 **ar-d-209**（state cut，32 位，未超過 45 不開溢出號）。補洞寫作由調度另派工作階段跑。
 - Bill Bruford's Earthworks、Bobo Stenson Trio、Daniel Ponce、David Becker Tribune、Hal Galper、Jacques Loussier、John Surman、Manu Katché、Marc Johnson、Marc Ribot、Marc Ribot's Ceramic Dog、Mark Guiliana、Michel Sardaby、Moses Yoofee Trio、New Klezmer Trio、Nils Landgren Funk Unit、Slowly Rolling Camera、The Greg Foat Group、Tyreek McDole、Greg Foat, Sokratis Votskos & The Giorgos Pappas Trio、Yttling Jazz、高木元輝、濱瀬元彦、中村一義、Dominique Fils-Aimé、uKanDanZ、Assagai、Spiral Deluxe、swing slow、Fresh Moods、Flea、Graciela Susana。
+
+## 情緒評分（score-sf09）
+- 41877：Opus 1 支照 `RULES.md`＋BRIEF 打 39 張，主線逐張看過 why 與研究稿，未改值。八格：雀躍 11、放鬆 7、平靜 5、冷冽 5、暴躁 4、恍惚 3、沸騰 3、頹靡 1；conf high 0／mid 22／low 17（low 多為無樂評的冷門盤，聲音只靠編制推）。`merge` → `build-priors` → `build-scale v0` → `build-card-moods`：錨點 104/104 同格，座標 21,933/21,933。不算落格率。
