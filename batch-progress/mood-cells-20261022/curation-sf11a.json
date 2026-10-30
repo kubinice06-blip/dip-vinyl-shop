@@ -1,0 +1,357 @@
+{
+ "group": "sf11a",
+ "factions": [
+  {
+   "id": "hk-lofi-rock",
+   "zh": "hk-lofi-rock",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-ambient-folk",
+   "zh": "jp-ambient-folk",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "ru-bedroom-pop",
+   "zh": "ru-bedroom-pop",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "uk-experimental",
+   "zh": "uk-experimental",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-beats",
+   "zh": "us-beats",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-dance-electronic",
+   "zh": "us-dance-electronic",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-electronic-newage",
+   "zh": "us-electronic-newage",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-hiphop-jazz",
+   "zh": "us-hiphop-jazz",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-indie-pop",
+   "zh": "us-indie-pop",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Moin",
+   "album": "Moot!",
+   "year": 2021,
+   "label": "AD 93",
+   "country": "gb",
+   "faction": "uk-experimental",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Raime 與 Valentina Magaletti 的處女長盤，後龐克與電子取樣並置，是 Moin 的出道代表作",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.9,
+    "z": -1.0,
+    "why": "鼓機般硬鼓、粗礪貝斯與暗黑取樣"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5f26ed11-e10d-4281-963b-8a06b1bedb78",
+    "https://coverartarchive.org/release-group/5f26ed11-e10d-4281-963b-8a06b1bedb78/front",
+    "https://ra.co/news/75454"
+   ],
+   "spotifyName": "Moin",
+   "mbRgMbid": "5f26ed11-e10d-4281-963b-8a06b1bedb78",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Spotify 的 Moin 疑為此英國三人組（MB 同名條目混有他人 mixtape），未能在 Spotify 藝人頁核對"
+  },
+  {
+   "artist": "NUUAMM",
+   "album": "w/ave",
+   "year": 2017,
+   "label": "Kilikilivilla",
+   "country": "jp",
+   "faction": "jp-ambient-folk",
+   "genres": [
+    "folk",
+    "electronic"
+   ],
+   "why": "青葉市子與 Mahito the People 的二重奏第二張，樂迷公認比首作更完整的代表作",
+   "moodGuess": {
+    "x": 1.8,
+    "y": -0.6,
+    "z": 0.3,
+    "why": "空靈吉他、環境音與低語"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/36277942-7cb1-4afb-b3fd-732d16d23636",
+    "https://coverartarchive.org/release-group/36277942-7cb1-4afb-b3fd-732d16d23636/front",
+    "https://kilikilivilla.bandcamp.com/album/w-ave"
+   ],
+   "spotifyName": "NUUAMM",
+   "mbRgMbid": "36277942-7cb1-4afb-b3fd-732d16d23636",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "NUUAMM (青葉市子 + Mahito the People)",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mindchatter",
+   "album": "DREAM SOUP",
+   "year": 2022,
+   "label": "Mind of a Genius",
+   "country": "us",
+   "faction": "us-dance-electronic",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "Bryce Connolly 第二張錄音室專輯，被樂評視為其配方最完熟之作",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": 0.5,
+    "why": "律動舞曲加迷幻人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a9fd5a44-a621-44cc-90a4-4fe9acec9abf",
+    "https://coverartarchive.org/release-group/a9fd5a44-a621-44cc-90a4-4fe9acec9abf/front",
+    "https://edmidentity.com/2022/04/10/mindchatter-perfects-his-recipe-on-sophomore-album-dream-soup/"
+   ],
+   "spotifyName": "Mindchatter",
+   "mbRgMbid": "a9fd5a44-a621-44cc-90a4-4fe9acec9abf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "NoSo",
+   "album": "Stay Proud of Me",
+   "year": 2022,
+   "label": "Partisan Records",
+   "country": "us",
+   "faction": "us-indie-pop",
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "why": "NoSo 的處女專輯，Partisan 出版，獲 Dork、Atwood 等評論肯定的成長主題 indie pop",
+   "moodGuess": {
+    "x": 2.8,
+    "y": -0.5,
+    "z": 0.4,
+    "why": "夢幻 indie pop、溫柔人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b0836818-c46d-4b15-919b-36f622a0eda9",
+    "https://coverartarchive.org/release-group/b0836818-c46d-4b15-919b-36f622a0eda9/front",
+    "https://atwoodmagazine.com/spom-noso-stay-proud-of-me-album-interview-music-feature/"
+   ],
+   "spotifyName": "NoSo",
+   "mbRgMbid": "b0836818-c46d-4b15-919b-36f622a0eda9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Natural Magic",
+   "album": "II",
+   "year": 2026,
+   "label": "Optimo Music",
+   "country": "us",
+   "faction": "us-electronic-newage",
+   "genres": [
+    "electronic"
+   ],
+   "why": "波特蘭 DJ 二人組 Natural Magic 的第二張，Optimo 出版，比限量百卷的首作卡帶更易取得",
+   "moodGuess": {
+    "x": 2.3,
+    "y": -0.4,
+    "z": 0.5,
+    "why": "新世紀感舞曲、鬆散律動"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6a77910d-a66b-4378-9dc6-0b10361630e4",
+    "https://coverartarchive.org/release-group/6a77910d-a66b-4378-9dc6-0b10361630e4/front",
+    "https://naturalmagic.bandcamp.com/album/ii"
+   ],
+   "spotifyName": "Natural Magic",
+   "mbRgMbid": "6a77910d-a66b-4378-9dc6-0b10361630e4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Spotify 的 Natural Magic 疑為此波特蘭二人組；2026 新盤評論尚少，也可改收 2015 首作 Natural Magic"
+  },
+  {
+   "artist": "Parks, Squares and Alleys",
+   "album": "Against Illusions and Reality",
+   "year": 2015,
+   "label": "",
+   "country": "ru",
+   "faction": "ru-bedroom-pop",
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "why": "樂團自發的夢幻／臥室流行代表作，RYM、AOTY 評價最高的一張",
+   "moodGuess": {
+    "x": 2.2,
+    "y": -0.6,
+    "z": 0.2,
+    "why": "夢幻吉他流行、朦朧人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/223f93d1-e464-46ef-8e6b-3432643c1623",
+    "https://coverartarchive.org/release-group/223f93d1-e464-46ef-8e6b-3432643c1623/front",
+    "https://www.discogs.com/release/11139139-Parks-Squares-And-Alleys-Against-Illusions-Reality",
+    "https://parkssquaresandalleys.bandcamp.com/album/against-illusions-and-reality"
+   ],
+   "spotifyName": "Parks, Squares and Alleys",
+   "mbRgMbid": "223f93d1-e464-46ef-8e6b-3432643c1623",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "國籍為推測（搜尋結果說似為俄羅斯），label 為自發行"
+  },
+  {
+   "artist": "The Offset: Spectacles",
+   "album": "The Offset: Spectacles",
+   "year": 2011,
+   "label": "Trouble In Mind",
+   "country": "hk",
+   "faction": "hk-lofi-rock",
+   "genres": [
+    "rock"
+   ],
+   "why": "香港樂團唯一一張全長專輯，無鼓手 lo-fi 粵語搖滾，2021 由 Trouble In Mind 重發",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.2,
+    "z": -0.7,
+    "why": "無鼓 lo-fi 噪音吉他、超現實粵語"
+   },
+   "evidence": [
+    "https://the-offsets.bandcamp.com/album/the-offset-spectacles-lp-2011",
+    "https://troubleinmindrecords.com/products/offset-spectacles-offset-spectacles-lp",
+    "https://www.vice.com/en/article/9bnwby/meet-the-offset-spectacles-new"
+   ],
+   "spotifyName": "Offset: Spectacles",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 以 artist/releasegroup 搜尋 'Offset: Spectacles' 皆無結果",
+   "manualEvidenceUrls": [
+    "https://the-offsets.bandcamp.com/album/the-offset-spectacles-lp-2011",
+    "https://troubleinmindrecords.com/products/offset-spectacles-offset-spectacles-lp"
+   ],
+   "releaseException": "",
+   "queryAlias": "憬觀:像同叠 The Offset: Spectacles",
+   "uncertain": ""
+  },
+  {
+   "artist": "Nicknack",
+   "album": "State Machine",
+   "year": 2012,
+   "label": "Crowd Control Records",
+   "country": "us",
+   "faction": "us-hiphop-jazz",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Nicknack 最完整的長盤之一，Apple／Discogs 皆列出；hip-hop 夾爵士取樣",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.3,
+    "z": 0.2,
+    "why": "boom bap 鼓與爵士取樣"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6492e1d0-383d-426f-b813-6a8280162035",
+    "https://coverartarchive.org/release-group/6492e1d0-383d-426f-b813-6a8280162035/front",
+    "https://music.apple.com/us/album/state-machine/513628106",
+    "https://www.discogs.com/NickNack-State-Machine/release/3907844"
+   ],
+   "spotifyName": "Nicknack",
+   "mbRgMbid": "6492e1d0-383d-426f-b813-6a8280162035",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Nicknack 同名可能是別人（MB 為 US 條目，早期 2001-2005 作品多為電子）；無評論共識，建議低優先"
+  },
+  {
+   "artist": "Mad Keys",
+   "album": "Balance",
+   "year": 2020,
+   "label": "",
+   "country": "us",
+   "faction": "us-beats",
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "why": "聖路易製作人首張全長，與現場樂手錄製的 instrumental hip-hop／爵士感作品",
+   "moodGuess": {
+    "x": 2.6,
+    "y": -0.3,
+    "z": 0.6,
+    "why": "爵士和弦與鬆弛鼓點"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4737fcc1-5d0b-4657-b4d7-0deca7a031ee",
+    "https://coverartarchive.org/release-group/4737fcc1-5d0b-4657-b4d7-0deca7a031ee/front",
+    "https://madkeys.bandcamp.com/album/balance",
+    "https://music.apple.com/us/album/balance/1492850794"
+   ],
+   "spotifyName": "Mad Keys",
+   "mbRgMbid": "4737fcc1-5d0b-4657-b4d7-0deca7a031ee",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "身分僅靠 Bandcamp 與 Apple 頁，無評論共識，可汰"
+  }
+ ],
+ "notes": [
+  "不收：Agosta（MB 只有 Phil/Anna/Concetta Agosta 與 Muere Agosta 等同名者，無法確認 Spotify 這位是誰，也查無正規專輯）",
+  "不收：Alexandra Atnif（MB 有 noise 藝人，僅 Seekers Of The Void 2018 / Rhythmic Brutalism Vol.1 兩張自發噪音專輯，無可靠第二來源、無評論共識，不硬湊）",
+  "不收：caldera（同名過多：Caldera 70s 爵士融合、德國 dub-techno、Stoner Doom、英國 DJ，Spotify 對應哪位無法確定）",
+  "不收：Declan McDermott（MB 僅有藝人條目，沒有任何 release group，無作品可收）",
+  "不收：Dj Toner（MB 西班牙 DJ Toner 有 Blessed are the weird people 2021 / Grandmaster Jazz 2016 等，但身分無法確認為 Spotify 該位、封面 CAA 404、無評論共識）",
+  "不收：Doctor Butcher（MB 為 1992 美國團，與 Spotify 該位是否同一人無法確認，且僅 1994 同名專輯與 demo）",
+  "不收：ERISTHEPLANET（MB 只有 2026 年 IT BE THAT DAMN PHONE 一張，剛發行、無評論與可確認身分）",
+  "不收：Four Pens（MB 查無條目，也沒找到可靠來源）",
+  "不收：North Downs（Jack Sibley，MB 只有 EP 與單曲，無長盤，不符規則）",
+  "跳過（已在池）：無。18 位皆查過 seed_cards，僅 caldera／Doctor Butcher／Parks 出現子字串誤中（Joey Calderazzo、Cher、Sand），非同一人",
+  "備註：本環境 iTunes API 回 403，封面以 CAA（HTTP 200 已驗證）為準；WebSearch 用了 9 次"
+ ]
+}

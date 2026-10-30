@@ -1,0 +1,712 @@
+{
+ "group": "sf12a",
+ "factions": [
+  {
+   "id": "uk-trip-hop",
+   "zh": "英國 trip-hop",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-hiphop",
+   "zh": "美國嘻哈",
+   "count": 4,
+   "why": ""
+  },
+  {
+   "id": "contemporary-rnb",
+   "zh": "當代 R&B",
+   "count": 4,
+   "why": ""
+  },
+  {
+   "id": "brazil-pop",
+   "zh": "巴西流行",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jazz-hiphop-soul",
+   "zh": "爵士嘻哈靈魂",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-pop",
+   "zh": "美國流行",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "uk-soul-pop",
+   "zh": "英國靈魂流行",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "us-electro-pop",
+   "zh": "美國電子流行",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "conscious-hiphop-reggae",
+   "zh": "意識嘻哈／雷鬼",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "dream-pop-indie",
+   "zh": "夢幻流行",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "uk-alt-pop",
+   "zh": "英國另類流行",
+   "count": 2,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Attica Blues",
+   "album": "Attica Blues",
+   "year": 1997,
+   "label": "Mo' Wax",
+   "country": "gb",
+   "faction": "uk-trip-hop",
+   "genres": [
+    "electronic",
+    "hiphop"
+   ],
+   "why": "Mo' Wax 時期的英國 trip-hop／abstract hip hop 代表作，樂迷公認的首張長篇與全盤代表。",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 0.8,
+    "z": -0.6,
+    "why": "慢速斷拍與低音，陰霾而懸浮"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/68dc1f49-0b2d-3bbf-b40e-a7061af3b80f/front",
+    "https://musicbrainz.org/release-group/68dc1f49-0b2d-3bbf-b40e-a7061af3b80f"
+   ],
+   "spotifyName": "Attica Blues",
+   "mbRgMbid": "68dc1f49-0b2d-3bbf-b40e-a7061af3b80f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Biig Piig",
+   "album": "11:11",
+   "year": 2025,
+   "label": "RCA",
+   "country": "gb",
+   "faction": "contemporary-rnb",
+   "genres": [
+    "pop",
+    "soul"
+   ],
+   "why": "Biig Piig 的首張正式錄音室專輯，多語、R&B 與 indie pop 混搭的集大成。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.3,
+    "z": 0.4,
+    "why": "輕盈律動，女聲低語帶點慵懶"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/83fb32ae-26d4-4522-b570-11a77563d694/front",
+    "https://musicbrainz.org/release-group/83fb32ae-26d4-4522-b570-11a77563d694"
+   ],
+   "spotifyName": "Biig Piig",
+   "mbRgMbid": "83fb32ae-26d4-4522-b570-11a77563d694",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Bubblegum(2023)MB 標 Album 但為 mixtape，未收；11:11 為首張錄音室專輯"
+  },
+  {
+   "artist": "Blubell",
+   "album": "Confissões de Camarim",
+   "year": 2016,
+   "label": "",
+   "country": "br",
+   "faction": "brazil-pop",
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "why": "聖保羅歌手 Blubell 近期最完整的原創專輯(11 首，含 Zeca Baleiro 合作)。",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.3,
+    "z": 0.8,
+    "why": "明亮的巴西流行搖滾，旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/23595da4-320a-4103-a273-31411a20ac51",
+    "https://blubellcamp.bandcamp.com/music",
+    "https://soundsandcolours.com/articles/brazil/oh-yes-im-a-great-pretender-an-interview-with-blubell-4777/"
+   ],
+   "spotifyName": "Blubell",
+   "mbRgMbid": "23595da4-320a-4103-a273-31411a20ac51",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無封面；封面需自 Bandcamp／Apple Music Brasil 取；同名 Blubell=Isabel Fontana Garcia(BR)"
+  },
+  {
+   "artist": "Def Squad",
+   "album": "El Niño",
+   "year": 1998,
+   "label": "Def Jam",
+   "country": "us",
+   "faction": "us-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Erick Sermon、Keith Murray、Redman 組成的 Def Squad 唯一專輯，90 年代東岸 funk-rap 名作。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.9,
+    "z": -0.4,
+    "why": "厚重 funk 取樣與硬派三人 rap"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/d5c4099b-d312-30b9-ba62-a82684a73ebe/front",
+    "https://musicbrainz.org/release-group/d5c4099b-d312-30b9-ba62-a82684a73ebe"
+   ],
+   "spotifyName": "Def Squad",
+   "mbRgMbid": "d5c4099b-d312-30b9-ba62-a82684a73ebe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "歌手名在池中可能為 'Def Squad' 或 'Erick Sermon, Keith Murray & Redman'"
+  },
+  {
+   "artist": "Destin Conrad",
+   "album": "Love on Digital",
+   "year": 2025,
+   "label": "Above Ground Entertainment",
+   "country": "us",
+   "faction": "contemporary-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "Destin Conrad 15 首的主要專輯，代表其當代 R&B 風格。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.1,
+    "why": "慢拍夜間 R&B，厚而暖的合成器"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/ac242c9c-36a0-4e70-85b5-3f757cffdaeb/front",
+    "https://musicbrainz.org/release-group/ac242c9c-36a0-4e70-85b5-3f757cffdaeb",
+    "https://www.discogs.com/master/3872092"
+   ],
+   "spotifyName": "DESTIN CONRAD",
+   "mbRgMbid": "ac242c9c-36a0-4e70-85b5-3f757cffdaeb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "年份依 MB／Discogs=2025；若早有 2022 首發版需核對"
+  },
+  {
+   "artist": "Dinner Party",
+   "album": "Dinner Party",
+   "year": 2020,
+   "label": "Sounds of Crenshaw / Empire",
+   "country": "us",
+   "faction": "jazz-hiphop-soul",
+   "genres": [
+    "soul",
+    "jazz"
+   ],
+   "why": "Terrace Martin、Robert Glasper、9th Wonder、Kamasi Washington 組成的超級組合，唯一正規專輯，R&B／爵士／嘻哈融合。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.7,
+    "z": 0.6,
+    "why": "溫潤爵士和聲與慢速 boom-bap 律動"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/b6eb645c-2f78-486c-aab6-5f2d14ad055f/front",
+    "https://musicbrainz.org/release-group/b6eb645c-2f78-486c-aab6-5f2d14ad055f"
+   ],
+   "spotifyName": "Dinner Party",
+   "mbRgMbid": "b6eb645c-2f78-486c-aab6-5f2d14ad055f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同名者多；此為 LA 超級組合。Dessert(2020 remix/EP)不收"
+  },
+  {
+   "artist": "Jason Derulo",
+   "album": "Jason Derülo",
+   "year": 2010,
+   "label": "Beluga Heights / Warner Bros.",
+   "country": "us",
+   "faction": "us-pop",
+   "genres": [
+    "pop",
+    "soul"
+   ],
+   "why": "首張專輯，Whatcha Say、In My Head 等熱門單曲，奠定其主流流行 R&B 地位。",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0.3,
+    "z": 0.7,
+    "why": "電子流行節拍明亮，副歌好唱"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/ebe95434-34f2-4210-bcb1-b65c1daf2302/front",
+    "https://musicbrainz.org/release-group/ebe95434-34f2-4210-bcb1-b65c1daf2302"
+   ],
+   "spotifyName": "Jason Derulo",
+   "mbRgMbid": "ebe95434-34f2-4210-bcb1-b65c1daf2302",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Jason Derulo",
+   "uncertain": ""
+  },
+  {
+   "artist": "JMSN",
+   "album": "It Is.",
+   "year": 2016,
+   "label": "White Room Records",
+   "country": "us",
+   "faction": "contemporary-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "JMSN 最受樂迷肯定的 alt-R&B 錄音室專輯之一，近年代表。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.7,
+    "z": 0.2,
+    "why": "迷幻夜行 R&B，falsetto 與低音合成器"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/caf232a6-9a62-486d-9077-c27468b7ad15/front",
+    "https://musicbrainz.org/release-group/caf232a6-9a62-486d-9077-c27468b7ad15"
+   ],
+   "spotifyName": "JMSN",
+   "mbRgMbid": "caf232a6-9a62-486d-9077-c27468b7ad15",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 標題 'It is.'，正式寫法需核對；第二張 Velvet(2018)見下"
+  },
+  {
+   "artist": "JMSN",
+   "album": "Velvet",
+   "year": 2018,
+   "label": "White Room Records",
+   "country": "us",
+   "faction": "contemporary-rnb",
+   "genres": [
+    "soul"
+   ],
+   "why": "JMSN 另一高峰，更偏 soul 的完整作品。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.8,
+    "z": 0.4,
+    "why": "絲滑慢板 soul/R&B，暖調"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/d136ed12-e634-49ec-9065-02e265038295/front",
+    "https://musicbrainz.org/release-group/d136ed12-e634-49ec-9065-02e265038295"
+   ],
+   "spotifyName": "JMSN",
+   "mbRgMbid": "d136ed12-e634-49ec-9065-02e265038295",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "KMD",
+   "album": "Mr. Hood",
+   "year": 1991,
+   "label": "Elektra",
+   "country": "us",
+   "faction": "us-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "KMD(Zev Love X 即 MF DOOM 前身)的首張，90 年代初另類爵士取樣嘻哈經典。",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.5,
+    "z": 0.5,
+    "why": "輕鬆爵士取樣與幽默 rap"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/0c6545ed-5509-3f9a-a015-b87a3ce3a33a/front",
+    "https://musicbrainz.org/release-group/0c6545ed-5509-3f9a-a015-b87a3ce3a33a"
+   ],
+   "spotifyName": "KMD",
+   "mbRgMbid": "0c6545ed-5509-3f9a-a015-b87a3ce3a33a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 有兩個同名 KMD(UK techno)，此為美國三人組(MB 543edda0)"
+  },
+  {
+   "artist": "KMD",
+   "album": "Black Bastards",
+   "year": 2001,
+   "label": "Rhymesayers",
+   "country": "us",
+   "faction": "us-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "1994 年被廠牌擱置、2001 年正式發行的傳奇專輯，另一高峰且是地下嘻哈指標。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.9,
+    "z": -0.8,
+    "why": "陰沉粗礪的黑色幽默 boom-bap"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/6e192ce4-d75d-3520-8804-b8ab7f23a394/front",
+    "https://musicbrainz.org/release-group/6e192ce4-d75d-3520-8804-b8ab7f23a394"
+   ],
+   "spotifyName": "KMD",
+   "mbRgMbid": "6e192ce4-d75d-3520-8804-b8ab7f23a394",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發日期標 1994(錄製／擱置年)，正式發行 2001"
+  },
+  {
+   "artist": "Kris Kross",
+   "album": "Totally Krossed Out",
+   "year": 1992,
+   "label": "Ruffhouse / Columbia",
+   "country": "us",
+   "faction": "us-hiphop",
+   "genres": [
+    "hiphop",
+    "pop"
+   ],
+   "why": "首張專輯，Jump 登上 Billboard 冠軍，90 年代 pop-rap 標誌作。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.4,
+    "z": 0.7,
+    "why": "Jermaine Dupri 彈跳 funk 節拍，童聲 rap"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/d96951c1-87a9-30fa-a94e-4b50b43b16d3/front",
+    "https://musicbrainz.org/release-group/d96951c1-87a9-30fa-a94e-4b50b43b16d3"
+   ],
+   "spotifyName": "Kris Kross",
+   "mbRgMbid": "d96951c1-87a9-30fa-a94e-4b50b43b16d3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lausse The Cat",
+   "album": "The Girl, The Cat and The Tree",
+   "year": 2018,
+   "label": "Velvet Blues",
+   "country": "gb",
+   "faction": "uk-alt-pop",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "倫敦 Lausse The Cat 的首張專輯，含 B-ahwe 合作，jazz-hop／neo-soul 風格。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.5,
+    "z": 0.3,
+    "why": "爵士取樣、慢拍 beat，溫潤"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/10c95c63-a9ad-4d7d-96bf-a33a90e3731b/front",
+    "https://musicbrainz.org/release-group/10c95c63-a9ad-4d7d-96bf-a33a90e3731b",
+    "https://laussethecat.bandcamp.com/"
+   ],
+   "spotifyName": "LAUSSE THE CAT",
+   "mbRgMbid": "10c95c63-a9ad-4d7d-96bf-a33a90e3731b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Lausse The Cat",
+   "uncertain": "曲風依單曲推斷（Bandcamp 無標籤）；僅兩張專輯，另有 The Mocking Stars(2025)；MB 版本 6 與 8 首並存"
+  },
+  {
+   "artist": "Maddie Ashman",
+   "album": "Her Side",
+   "year": 2026,
+   "label": "AWAL",
+   "country": "gb",
+   "faction": "uk-alt-pop",
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "why": "Maddie Ashman 的首張主要作品，8 首的微分音實驗流行。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.3,
+    "z": -0.2,
+    "why": "扭曲旋律與落拍，微分音人聲"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/7c553ba2-4977-4206-abef-2904453be42c/front",
+    "https://musicbrainz.org/release-group/7c553ba2-4977-4206-abef-2904453be42c",
+    "https://www.thelineofbestfit.com/news/maddie-ashman-announces-debut-ep-her-side",
+    "https://www.nme.com/features/music-interviews/maddie-ashman-her-side-interview-radar-3927070"
+   ],
+   "spotifyName": "Maddie Ashman",
+   "mbRgMbid": "7c553ba2-4977-4206-abef-2904453be42c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "無正規專輯；Her Side 為 7–8 首的首張主要作品（MB 兩版 8／7 首）",
+   "queryAlias": "",
+   "uncertain": "年輕藝人，口碑樣本僅數篇評論；曲風 pop/electronic 為推斷"
+  },
+  {
+   "artist": "Marian Hill",
+   "album": "Act One",
+   "year": 2016,
+   "label": "Republic / Photo Finish",
+   "country": "us",
+   "faction": "us-electro-pop",
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "why": "首張專輯，Down、Lovit 等代表，極簡電子 R&B 流行。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.3,
+    "z": 0.1,
+    "why": "極簡人聲取樣與冷靜低音"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/bb9bb0b5-e19a-4d25-a333-2732a9461e79/front",
+    "https://musicbrainz.org/release-group/bb9bb0b5-e19a-4d25-a333-2732a9461e79"
+   ],
+   "spotifyName": "Marian Hill",
+   "mbRgMbid": "bb9bb0b5-e19a-4d25-a333-2732a9461e79",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同名有 MB 攝影師；此為費城電子流行二人組"
+  },
+  {
+   "artist": "Michael Franti & Spearhead",
+   "album": "Home",
+   "year": 1994,
+   "label": "Boo Boo Wax / Capitol",
+   "country": "us",
+   "faction": "conscious-hiphop-reggae",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "Spearhead 的首張，融合嘻哈、funk、reggae，公認其早期最高峰。",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.6,
+    "z": 0.3,
+    "why": "funk 與 reggae 律動，rap 與靈魂人聲"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/21313cf6-734f-3820-9c74-71c4075bb5d8/front",
+    "https://musicbrainz.org/release-group/21313cf6-734f-3820-9c74-71c4075bb5d8"
+   ],
+   "spotifyName": "Michael Franti & Spearhead",
+   "mbRgMbid": "21313cf6-734f-3820-9c74-71c4075bb5d8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Michael Franti & Spearhead",
+   "album": "Stay Human",
+   "year": 2001,
+   "label": "",
+   "country": "us",
+   "faction": "conscious-hiphop-reggae",
+   "genres": [
+    "hiphop",
+    "world"
+   ],
+   "why": "2001 年代表作，反戰與人道主題，廣受好評並奠定其 reggae-soul 風格。",
+   "moodGuess": {
+    "x": 3.1,
+    "y": 0.5,
+    "z": 0.7,
+    "why": "陽光 reggae 吉他與 rap 吟唱"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/1771148f-bc9c-319c-bd1c-8ae5d0fe23ec/front",
+    "https://musicbrainz.org/release-group/1771148f-bc9c-319c-bd1c-8ae5d0fe23ec"
+   ],
+   "spotifyName": "Michael Franti & Spearhead",
+   "mbRgMbid": "1771148f-bc9c-319c-bd1c-8ae5d0fe23ec",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "label 欄待補"
+  },
+  {
+   "artist": "Mr Twin Sister",
+   "album": "In Heaven",
+   "year": 2011,
+   "label": "Infinity Cat",
+   "country": "us",
+   "faction": "dream-pop-indie",
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "why": "首張正式專輯，Long Island 夢幻流行 synth-pop 的公認代表。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 0.5,
+    "why": "朦朧合成器與漂浮女聲"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/1dae71fc-276c-4f2a-a789-1053f243ced1/front",
+    "https://musicbrainz.org/release-group/1dae71fc-276c-4f2a-a789-1053f243ced1"
+   ],
+   "spotifyName": "Mr Twin Sister",
+   "mbRgMbid": "1dae71fc-276c-4f2a-a789-1053f243ced1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Twin Sister",
+   "uncertain": "樂隊 2014 前名 Twin Sister；label 待核對"
+  },
+  {
+   "artist": "Mr Twin Sister",
+   "album": "Mr Twin Sister",
+   "year": 2014,
+   "label": "Domino",
+   "country": "us",
+   "faction": "dream-pop-indie",
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "why": "改名後的自題專輯，更偏舞曲化的第二高峰。",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 0.5,
+    "z": 0.3,
+    "why": "冷艷舞曲節拍與夢幻人聲"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/e5b236fb-c3ab-4ad9-ac8d-2a014427eb51/front",
+    "https://musicbrainz.org/release-group/e5b236fb-c3ab-4ad9-ac8d-2a014427eb51"
+   ],
+   "spotifyName": "Mr Twin Sister",
+   "mbRgMbid": "e5b236fb-c3ab-4ad9-ac8d-2a014427eb51",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "label 待核對"
+  },
+  {
+   "artist": "Olivia Dean",
+   "album": "The Art of Loving",
+   "year": 2025,
+   "label": "Polydor / Capitol",
+   "country": "gb",
+   "faction": "uk-soul-pop",
+   "genres": [
+    "soul",
+    "pop"
+   ],
+   "why": "第二張專輯，Man I Need 紅遍全球，確立其靈魂流行地位。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.6,
+    "z": 0.9,
+    "why": "暖調復古靈魂編制與好唱旋律"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/35eae658-4243-4bf5-91d6-5a391bbb3699/front",
+    "https://musicbrainz.org/release-group/35eae658-4243-4bf5-91d6-5a391bbb3699"
+   ],
+   "spotifyName": "Olivia Dean",
+   "mbRgMbid": "35eae658-4243-4bf5-91d6-5a391bbb3699",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Olivia Dean",
+   "album": "Messy",
+   "year": 2023,
+   "label": "Polydor",
+   "country": "gb",
+   "faction": "uk-soul-pop",
+   "genres": [
+    "soul",
+    "pop"
+   ],
+   "why": "首張專輯，獲 Mercury 提名並奠定其復古靈魂歌手路線。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.6,
+    "z": 0.8,
+    "why": "溫暖弦樂與 60s 靈魂質感"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/3653ac94-589e-414c-82f4-c363b0559d29/front",
+    "https://musicbrainz.org/release-group/3653ac94-589e-414c-82f4-c363b0559d29"
+   ],
+   "spotifyName": "Olivia Dean",
+   "mbRgMbid": "3653ac94-589e-414c-82f4-c363b0559d29",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Mercury 提名事實需核對"
+  }
+ ],
+ "notes": [
+  "Def Squad 查池無同名；Destin Conrad 對池 Onra 為子字串誤中。",
+  "Attica Blues 第二張 Test. Don't Test(2002) 不收：僅取代表作一張。",
+  "Kris Kross 查池無；Da Bomb／Young, Rich & Dangerous 不收，僅取首張。",
+  "Jason Derulo 其餘專輯不收，僅取首張。",
+  "Marian Hill 其餘專輯不收（Unusual 等），取首張。",
+  "Maddie Ashman otherworld(5 首 EP)、單曲不收，只收 Her Side。",
+  "JMSN 查池無；Olivia Dean 對池 DEAN 為子字串誤中。",
+  "範圍註記：派工寫 Attica Blues 至 Onry Ozzborn，但 batches.sf12 前 16 位實為 Attica Blues 至 Olivia Dean；Omar Apollo、Onry Ozzborn 屬第 17、19 位，未處理（應屬 sf12b）。"
+ ]
+}
