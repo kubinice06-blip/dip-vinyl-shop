@@ -74,3 +74,10 @@
 - **41558** 媒體與 thin 處理：媒體名與媒體榜單名次全部不進 note（Glen Check 的 IZM／Weiv 評語、Fishdoll 引述的 Indie Current、Juggaknots 的三家樂評名、Quamallah 的 Gilles Peterson 年度節目、雞蛋蒸肉餅的香港樂評年度樂團皆不派；樂評描述的聲音只取事實不具名）。thin 七張（劉以達、張亞東、Everfor、亂彈阿翔、The Cheers Cheers、dotzio、Championxiii）照研究稿標 thin 捨格：聲音無來源者不派聲音格（劉以達、張亞東、亂彈阿翔），〈繾綣28800BPS〉只寫曲名、不寫「數據機速率」詮釋（研究稿 sound 欄推論，不在 facts）。dotzio 地點無直接來源（台灣只由 Discogs 另一張 EP 登錄國別間接支持），第二句改交代「中文寫詞、lo-fi 獨立流行」，不寫台灣；Hsuan Chang 的漢字「張軒」未派。Superstar Quamallah 的「柏克萊教授」時序不明，只寫「長時間不錄音、在高中教書」（一句）。亂彈阿翔照主線 41571 寫成主題曲選集。
 - **41559** 時序與逝者：Quamallah 2024 Be With 首度黑膠標「標時序」（作品流傳）；Monique Chao 末曲致敬 Chester Bennington 標「口氣克制」。
 - **41560** n-gram 自查（中文 4-gram，ASCII 與標點切斷）：hook↔hook 0 條；hook↔他張 note 0 條；note↔note（剝掉指派句與「第二句以…：」領句標籤）0 條；hook↔自張 note 只剩專名「達明一派」「只愛陌生人」與樂器「薩克斯風」（無逐字重複句）；對 sf05／sf07／sf08／sf09 hook 與 sf01–sf09 已出 out 檔頭兩句只剩樂器名「薩克斯風／中音薩克斯」。兩支腳本：`node qa-batch.mjs hooks add-20261030-sf06` 全部通過 ✓；`node chk-hook-crossgroup.mjs add-20261030-sf06` ✓ 全部通過。
+
+## 寫作層（writer-1）（41561–41565）
+- **41561** 交件：`desc-tools/batches/output/add-20261030-sf06-out-1.json` 10 張（full 5：雞蛋蒸肉餅 221、AB'S 231、Kaishandao 239、盧家齊 227、Shaa Khan 224；thin 5：劉以達 130、張亞東 173、Everfor 154、亂彈阿翔 156、The Cheers Cheers 175）。`qa-batch out`、`qa-check-research`（標記 0）、`fix-spacing`（0）皆通過。初稿無超標；Kaishandao 拆同構時改長到 242，刪「裡的」「上」兩處虛字回 239。
+- **41562** 第二句領句全照 41555 指派；日期「日」後一字照 41557（劉以達 日，、雞蛋蒸肉餅 日港、AB'S 日出、Everfor 日數），其餘只寫到月或年，日期前一字逐張錯開（辦在／同年／底，／同年 8 月，／，2020／分鐘上下前的「首」等）。
+- **41563** 台灣正體：note 的「結他」「樂隊」正文改寫「吉他」「樂團」（hook 原文「香港樂隊」不動）；盧家齊盤名照台灣正體寫《Circle = 圓》（卡單 album 欄為簡體「圆」，key 不動）。藝人名照卡單：亂彈阿翔、張亞東、劉以達。
+- **41564** 否定句轉正：雞蛋蒸肉餅 note「入圍未得獎」寫成「最後停在入圍」；盧家齊 note「唱片說明形容」去掉轉述引導，改成「聲音是⋯，被歸為⋯」被動句。Shaa Khan 第二句走地名領句，hook 的「鼓手」在第三句具名 Walter Kaulhausen。
+- **41565** 自掃 han() 4-gram：本檔內跨張 0 條（拆掉「首約分鐘」「發行共首」）；對 out-2 拆掉「自己製作」「個人專輯」「之外還有」三條，合掃 out-1↔out-2 0 條（out-2 檔內另有「長約分鐘」「的這張是」「人的計畫」各 2 張，屬 writer-2）。對 sf01–sf09 已出 out 檔另拆「年月替他」「長約分鐘」；剩「年月日出」（41557 指派）、「第屆金曲」「前衛搖滾」等通用樂種／獎名殘片未動。
