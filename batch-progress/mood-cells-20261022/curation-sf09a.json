@@ -1,0 +1,848 @@
+{
+ "group": "sf09a",
+ "factions": [
+  {
+   "id": "ecm-euro-jazz",
+   "zh": "ECM／歐洲爵士",
+   "count": 8,
+   "why": ""
+  },
+  {
+   "id": "latin-jazz",
+   "zh": "拉丁爵士",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "fusion",
+   "zh": "融合爵士",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "post-bop",
+   "zh": "後咆勃",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jazz-classical",
+   "zh": "爵士古典",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "downtown-nyc",
+   "zh": "紐約 Downtown",
+   "count": 3,
+   "why": ""
+  },
+  {
+   "id": "modern-jazz",
+   "zh": "現代爵士",
+   "count": 6,
+   "why": ""
+  },
+  {
+   "id": "funk-jazz",
+   "zh": "放克爵士",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "spiritual-jazz",
+   "zh": "靈魂／電子琴爵士",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "vocal-jazz",
+   "zh": "人聲爵士",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Bill Bruford's Earthworks",
+   "album": "Earthworks",
+   "year": 1987,
+   "label": "EG",
+   "country": "gb",
+   "faction": "ecm-euro-jazz",
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "why": "布魯福德電子鼓與 Django Bates、Iain Ballamy 合組的原創樂團首作，確立其爵士轉向。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.2,
+    "z": 0.3,
+    "why": "電子鼓驅動的明亮英式爵士"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/earthworks/714393074",
+    "https://musicbrainz.org/release-group/0100c181-7b21-3e92-8a9f-62a705b31539"
+   ],
+   "spotifyName": "Bill Bruford's Earthworks",
+   "mbRgMbid": "0100c181-7b21-3e92-8a9f-62a705b31539",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bobo Stenson Trio",
+   "album": "Cantando",
+   "year": 2008,
+   "label": "ECM",
+   "country": "se",
+   "faction": "ecm-euro-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "斯滕森三重奏 ECM 後期代表作，樂評最推崇的內斂詩意之作。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": -0.3,
+    "z": -0.2,
+    "why": "沉靜抒情的鋼琴三重奏"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/cantando/1443425989",
+    "https://musicbrainz.org/release-group/215ec15a-68b4-3b54-8082-75a0b4f8ffcf"
+   ],
+   "spotifyName": "Bobo Stenson Trio",
+   "mbRgMbid": "215ec15a-68b4-3b54-8082-75a0b4f8ffcf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bobo Stenson Trio",
+   "album": "Serenity",
+   "year": 2000,
+   "label": "ECM",
+   "country": "se",
+   "faction": "ecm-euro-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "與 Anders Jormin、Jon Christensen 的經典編制，另一高峰。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": -0.2,
+    "z": -0.3,
+    "why": "空靈留白的三重奏"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/serenity/1445887930",
+    "https://musicbrainz.org/release-group/aad71fa8-3eaf-39d1-88de-df5d9da425b5"
+   ],
+   "spotifyName": "Bobo Stenson",
+   "mbRgMbid": "aad71fa8-3eaf-39d1-88de-df5d9da425b5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Daniel Ponce",
+   "album": "Arawe",
+   "year": 1988,
+   "label": "Antilles New Directions",
+   "country": "us",
+   "faction": "latin-jazz",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "古巴打擊樂手 Ponce 的代表作，融合 batá 與拉丁爵士、放克。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.1,
+    "z": 0.5,
+    "why": "繁密手鼓的拉丁爵士"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1515704-Daniel-Ponce-Pachanga-Arawe",
+    "https://musicbrainz.org/release-group/ccd2dbd6-8cf0-43bf-9cca-918db36efb39"
+   ],
+   "spotifyName": "Daniel Ponce",
+   "mbRgMbid": "ccd2dbd6-8cf0-43bf-9cca-918db36efb39",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "年份採 Discogs 主版本 1988（Antilles New Directions）；MB 為 1987；封面僅 Discogs"
+  },
+  {
+   "artist": "David Becker Tribune",
+   "album": "Siberian Express",
+   "year": 1988,
+   "label": "MCA",
+   "country": "de",
+   "faction": "fusion",
+   "genres": [
+    "jazz",
+    "rock"
+   ],
+   "why": "德國吉他手 Becker 樂團首作，MCA 發行的融合爵士代表。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.2,
+    "z": 0.2,
+    "why": "吉他主導的融合爵士"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/siberian-express/1827301586",
+    "https://www.discogs.com/master/954389-David-Becker-Tribune-Siberian-Express"
+   ],
+   "spotifyName": "David Becker Tribune",
+   "mbRgMbid": "d84febe3-a00f-4ca0-ad99-f799bc9081d9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 為 2025 再版封面；樂團知名度低"
+  },
+  {
+   "artist": "Hal Galper",
+   "album": "Reach Out!",
+   "year": 1977,
+   "label": "SteepleChase",
+   "country": "us",
+   "faction": "post-bop",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Galper 與 Michael Brecker 的 Quintet，後咆勃經典。",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.1,
+    "z": 0.4,
+    "why": "熱烈的後咆勃五重奏"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/bdbf33e6-aa7a-4387-a698-b50edab2997b/front",
+    "https://www.discogs.com/master/456159-Hal-Galper-Quintet-Reach-Out"
+   ],
+   "spotifyName": "Hal Galper",
+   "mbRgMbid": "bdbf33e6-aa7a-4387-a698-b50edab2997b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jacques Loussier",
+   "album": "Play Bach No. 1",
+   "year": 1959,
+   "label": "Decca",
+   "country": "fr",
+   "faction": "jazz-classical",
+   "genres": [
+    "jazz",
+    "classical"
+   ],
+   "why": "Play Bach 系列開山之作，三重奏爵士改編巴赫。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": -0.6,
+    "z": 0.7,
+    "why": "輕盈搖擺的巴赫爵士"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/8224505c-bf15-32a8-b907-64f90a35dadd/front",
+    "https://musicbrainz.org/release-group/8224505c-bf15-32a8-b907-64f90a35dadd"
+   ],
+   "spotifyName": "Jacques Loussier / Jacques Loussier Trio",
+   "mbRgMbid": "8224505c-bf15-32a8-b907-64f90a35dadd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "John Surman",
+   "album": "Road to Saint Ives",
+   "year": 1990,
+   "label": "ECM",
+   "country": "gb",
+   "faction": "ecm-euro-jazz",
+   "genres": [
+    "jazz",
+    "folk"
+   ],
+   "why": "Surman 獨奏合成器與低音單簧管的田園之作，ECM 代表。",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 0.6,
+    "z": 0.1,
+    "why": "遼闊的英倫田園合成器"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/road-to-saint-ives/1442285183",
+    "https://musicbrainz.org/release-group/ca53acf4-a5d7-3d3e-a86b-16799af5176d"
+   ],
+   "spotifyName": "John Surman",
+   "mbRgMbid": "ca53acf4-a5d7-3d3e-a86b-16799af5176d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "John Surman",
+   "album": "Westering Home",
+   "year": 1972,
+   "label": "Island",
+   "country": "gb",
+   "faction": "ecm-euro-jazz",
+   "genres": [
+    "jazz",
+    "folk"
+   ],
+   "why": "早期英國民謠爵士高峰，低音薩克斯風與民謠旋律。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.2,
+    "z": 0.4,
+    "why": "蘇格蘭民謠味的爵士"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/westering-home-remastered-version/1445206865",
+    "https://musicbrainz.org/release-group/42f5e61d-ac4f-3c25-8484-48686a96ff65"
+   ],
+   "spotifyName": "John Surman",
+   "mbRgMbid": "42f5e61d-ac4f-3c25-8484-48686a96ff65",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Manu Katché",
+   "album": "Neighbourhood",
+   "year": 2005,
+   "label": "ECM",
+   "country": "fr",
+   "faction": "ecm-euro-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "鼓手 Katché 首張 ECM 領銜作，與 Garbarek 等合作的代表。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": -0.2,
+    "z": 0.3,
+    "why": "流暢清透的 ECM 爵士"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/neighbourhood/1443743066",
+    "https://musicbrainz.org/release-group/408330c7-19fc-3f33-97c2-42ffcbbcd620"
+   ],
+   "spotifyName": "Manu Katché",
+   "mbRgMbid": "408330c7-19fc-3f33-97c2-42ffcbbcd620",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Marc Johnson",
+   "album": "Bass Desires",
+   "year": 1986,
+   "label": "ECM",
+   "country": "us",
+   "faction": "ecm-euro-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Johnson 與 Frisell、Scofield、Erskine 的標誌性樂團首作。",
+   "moodGuess": {
+    "x": 3,
+    "y": 0.3,
+    "z": 0.1,
+    "why": "雙吉他交纏的爵士"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/bass-desires/1444176418",
+    "https://musicbrainz.org/release-group/bd3813bc-eae7-3b86-ad78-c086481ca4a3"
+   ],
+   "spotifyName": "Marc Johnson / Marc Johnson's Bass Desires",
+   "mbRgMbid": "bd3813bc-eae7-3b86-ad78-c086481ca4a3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Marc Johnson",
+   "album": "Shades of Jade",
+   "year": 2005,
+   "label": "ECM",
+   "country": "us",
+   "faction": "ecm-euro-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "2000 年代代表作，與 Lovano、Eliane Elias 合作的抒情之作。",
+   "moodGuess": {
+    "x": 2,
+    "y": -0.2,
+    "z": 0.4,
+    "why": "優雅細膩的室內爵士"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/shades-of-jade/1443641380",
+    "https://musicbrainz.org/release-group/f569c8a2-c86a-350c-b133-62350c47713c"
+   ],
+   "spotifyName": "Marc Johnson",
+   "mbRgMbid": "f569c8a2-c86a-350c-b133-62350c47713c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Marc Ribot",
+   "album": "Rootless Cosmopolitans",
+   "year": 1990,
+   "label": "Island",
+   "country": "us",
+   "faction": "downtown-nyc",
+   "genres": [
+    "jazz",
+    "rock"
+   ],
+   "why": "Ribot 最具代表性的紐約 Downtown 吉他作品。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.5,
+    "z": -0.3,
+    "why": "粗礪即興吉他"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/rootless-cosmopolitans/1443509716",
+    "https://musicbrainz.org/release-group/adfae662-8627-31e2-976e-71c775724534"
+   ],
+   "spotifyName": "Marc Ribot",
+   "mbRgMbid": "adfae662-8627-31e2-976e-71c775724534",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Marc Ribot's Ceramic Dog",
+   "album": "Your Turn",
+   "year": 2013,
+   "label": "Northern Spy",
+   "country": "us",
+   "faction": "downtown-nyc",
+   "genres": [
+    "rock",
+    "jazz"
+   ],
+   "why": "Ceramic Dog 噪音搖滾與前衛的代表作。",
+   "moodGuess": {
+    "x": 4.1,
+    "y": 0.9,
+    "z": -0.6,
+    "why": "躁動的噪音搖滾"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/your-turn-feat-marc-ribot/621574709",
+    "https://musicbrainz.org/release-group/3b45595e-c3c1-4721-a63c-142e654866a5"
+   ],
+   "spotifyName": "Marc Ribot's Ceramic Dog",
+   "mbRgMbid": "3b45595e-c3c1-4721-a63c-142e654866a5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mark Guiliana",
+   "album": "Jersey",
+   "year": 2017,
+   "label": "Motéma",
+   "country": "us",
+   "faction": "modern-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Guiliana 爵士四重奏代表作，原聲爵士風格。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0,
+    "z": 0,
+    "why": "鼓手領銜的現代爵士"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/jersey/1266363700",
+    "https://coverartarchive.org/release-group/8911ac41-a309-43d2-adc6-b79163a9c57f/front"
+   ],
+   "spotifyName": "Mark Guiliana",
+   "mbRgMbid": "8911ac41-a309-43d2-adc6-b79163a9c57f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mark Guiliana",
+   "album": "Family First",
+   "year": 2015,
+   "label": "Motéma",
+   "country": "us",
+   "faction": "modern-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Jazz Quartet 的另一高峰。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.2,
+    "z": -0.1,
+    "why": "電氣質感的爵士四重奏"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/family-first/991969629",
+    "https://musicbrainz.org/release-group/2c52affa-018f-45f6-ab57-77a52c4b39d8"
+   ],
+   "spotifyName": "Mark Guiliana",
+   "mbRgMbid": "2c52affa-018f-45f6-ab57-77a52c4b39d8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Michel Sardaby",
+   "album": "Night Cap",
+   "year": 1970,
+   "label": "Disques Debs",
+   "country": "fr",
+   "faction": "modern-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "馬提尼克鋼琴家 Sardaby 的代表作。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": -0.3,
+    "z": 0.5,
+    "why": "溫暖的鋼琴三重奏"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/night-cap/1692690564",
+    "https://musicbrainz.org/release-group/34204913-545e-42b5-9b56-6f29620d50b4"
+   ],
+   "spotifyName": "Michel Sardaby",
+   "mbRgMbid": "34204913-545e-42b5-9b56-6f29620d50b4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 掛 Michel Sardaby Trio；label 憑記憶"
+  },
+  {
+   "artist": "Moses Yoofee Trio",
+   "album": "MYT",
+   "year": 2025,
+   "label": "Leiter",
+   "country": "il",
+   "faction": "modern-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "以色列三重奏的首張正規專輯。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0,
+    "z": 0.1,
+    "why": "輕快律動的新爵士"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/myt/1774189345",
+    "https://www.discogs.com/master/3841113-Moses-Yoofee-Trio-MYT"
+   ],
+   "spotifyName": "Moses Yoofee Trio",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB release-group 查詢僅 EP 與單曲，無 MYT",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/3841113-Moses-Yoofee-Trio-MYT",
+    "https://music.apple.com/us/album/myt/1774189345"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "年份與是否為首張未再核"
+  },
+  {
+   "artist": "New Klezmer Trio",
+   "album": "Melt Zonk Rewire",
+   "year": 1995,
+   "label": "Knitting Factory Works",
+   "country": "us",
+   "faction": "downtown-nyc",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "新克萊茲默三重奏首作，克萊茲默爵士化。",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0,
+    "z": 0,
+    "why": "詼諧跳躍的實驗克萊茲默"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/melt-zonk-rewire/1189377725",
+    "https://musicbrainz.org/release-group/627ecf7e-b064-3a78-bfd5-87005217106a"
+   ],
+   "spotifyName": "New Klezmer Trio",
+   "mbRgMbid": "627ecf7e-b064-3a78-bfd5-87005217106a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Nils Landgren Funk Unit",
+   "album": "Fonk da World",
+   "year": 2001,
+   "label": "ACT",
+   "country": "se",
+   "faction": "funk-jazz",
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "why": "Landgren 放克樂團的經典，號角感強烈。",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 0.4,
+    "z": 0.6,
+    "why": "厚實放克銅管"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/fonk-da-world/299889357",
+    "https://musicbrainz.org/release-group/e98f96a6-5f64-3a7f-8c31-85f7c13655f0"
+   ],
+   "spotifyName": "Nils Landgren Funk Unit",
+   "mbRgMbid": "e98f96a6-5f64-3a7f-8c31-85f7c13655f0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple/MB 年份 2001"
+  },
+  {
+   "artist": "Nils Landgren Funk Unit",
+   "album": "Paint It Blue",
+   "year": 1996,
+   "label": "ACT",
+   "country": "se",
+   "faction": "funk-jazz",
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "why": "Funk Unit 初期代表作。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.2,
+    "z": 0.6,
+    "why": "藍調放克長號"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/paint-it-blue/267522984",
+    "https://musicbrainz.org/release-group/9b3e1f9e-5bd5-3ce5-b39c-112d866d4b45"
+   ],
+   "spotifyName": "Nils Landgren Funk Unit",
+   "mbRgMbid": "9b3e1f9e-5bd5-3ce5-b39c-112d866d4b45",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Slowly Rolling Camera",
+   "album": "Juniper",
+   "year": 2018,
+   "label": "",
+   "country": "gb",
+   "faction": "modern-jazz",
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "why": "威爾斯三重奏 Slowly Rolling Camera 代表作。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.1,
+    "z": -0.1,
+    "why": "電子質地的新爵士"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/juniper/1379099870",
+    "https://musicbrainz.org/release-group/7b5e754e-450a-4c05-b9e1-cfae9a8b718f"
+   ],
+   "spotifyName": "Slowly Rolling Camera",
+   "mbRgMbid": "7b5e754e-450a-4c05-b9e1-cfae9a8b718f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Sokratis Votskos",
+   "album": "Sketching the Unknown",
+   "year": 2019,
+   "label": "",
+   "country": "gr",
+   "faction": "modern-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "希臘薩克斯風 Votskos 四重奏的代表專輯。",
+   "moodGuess": {
+    "x": 3.1,
+    "y": 0,
+    "z": -0.1,
+    "why": "流動即興的希臘現代爵士"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/sketching-the-unknown/1482308236",
+    "https://coverartarchive.org/release-group/cebf1603-8c4b-4aa6-9e08-e78a162eb7c9/front"
+   ],
+   "spotifyName": "Sokratis Votskos with The Giorgos Pappas Trio",
+   "mbRgMbid": "cebf1603-8c4b-4aa6-9e08-e78a162eb7c9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Sokratis Votskos Quartet",
+   "uncertain": "Spotify 名帶 Pappas Trio，對應合作盤 Impressions of Samos (2026, MB e93c0e33)，我改收其個人代表作；MB 掛名 Quartet"
+  },
+  {
+   "artist": "The Greg Foat Group",
+   "album": "Girl and Robot With Flowers",
+   "year": 2012,
+   "label": "Jazzman",
+   "country": "gb",
+   "faction": "spiritual-jazz",
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "why": "Foat 樂團口碑最高的早期代表，復古電子琴爵士。",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 0.2,
+    "z": 0.1,
+    "why": "復古合成器與電鋼琴的爵士"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/girl-and-robot-with-flowers/570355085",
+    "https://musicbrainz.org/release-group/b075ae2a-a23e-4274-869c-51515fd4d87a"
+   ],
+   "spotifyName": "The Greg Foat Group",
+   "mbRgMbid": "b075ae2a-a23e-4274-869c-51515fd4d87a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Greg Foat Group",
+   "album": "Dark Is the Sun",
+   "year": 2011,
+   "label": "Jazzman",
+   "country": "gb",
+   "faction": "spiritual-jazz",
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "why": "首作，英倫靈魂爵士電子琴風格的起點。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.3,
+    "z": -0.1,
+    "why": "陰鬱律動的靈魂爵士"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/dark-is-the-sun/433628435",
+    "https://musicbrainz.org/release-group/c5f7ce60-df73-4776-a0d9-777d76cc5097"
+   ],
+   "spotifyName": "The Greg Foat Group",
+   "mbRgMbid": "c5f7ce60-df73-4776-a0d9-777d76cc5097",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "label 憑記憶"
+  },
+  {
+   "artist": "Tyreek McDole",
+   "album": "Open Up Your Senses",
+   "year": 2025,
+   "label": "",
+   "country": "us",
+   "faction": "vocal-jazz",
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "why": "男中音新秀 McDole 的正式專輯，Thelonious Monk 比賽得主。",
+   "moodGuess": {
+    "x": 2.9,
+    "y": -0.1,
+    "z": 0.4,
+    "why": "溫暖人聲的當代人聲爵士"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/open-up-your-senses/1793335929",
+    "https://coverartarchive.org/release-group/6508575a-1e4d-470b-9b6c-084f665ded6c/front"
+   ],
+   "spotifyName": "Tyreek McDole",
+   "mbRgMbid": "6508575a-1e4d-470b-9b6c-084f665ded6c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "不收：Jon Christensen（無領銜專輯，MB 僅 Selected Recordings 精選與眾多合作盤；為 Stenson、Garbarek 等的側翼鼓手）",
+  "合併處理：Bobo Stenson／Bobo Stenson Trio、Jacques Loussier／Trio、Marc Johnson／Bass Desires、Marc Ribot／Ceramic Dog 各視為同一人",
+  "池中查無本組任何藝人（seed_cards、artist-intros、其他 curation-*.json 皆無）",
+  "Moses Yoofee Trio 僅 MB 缺專輯，走人工身分；Daniel Ponce 封面僅 Discogs",
+  "範圍補正：sf09 第 22–26 位由 sf09a 補做",
+  "跳過：The Joe Harriott-John Mayer Double Quintet → 池中寫法 Joe Harriott（Free Form、Abstract，2 張）",
+  "跳過：Toshiko Akiyoshi Trio → 池中寫法 秋吉敏子／秋吉敏子トリオ 等（14 張）及 Toshiko Akiyoshi-Lew Tabackin Big Band（1 張）"
+ ]
+}
