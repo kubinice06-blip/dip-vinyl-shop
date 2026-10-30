@@ -1020,3 +1020,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 保留：徐佳瑩「第一位拿下金曲獎的星光大道選手」（中文維基＋鏡週刊兩源）；潮州土狗「金音最佳嘻哈歌曲史上最年輕入圍」（補洞稿兩源）；YELLOW黃宣第 30 屆金曲最佳單曲製作人（與余佳倫）、第 12 屆金音最佳創作歌手；絕命青年第 34 屆金曲最佳演唱組合只寫入圍；Yo-Sea 照實寫成沖繩出身的日本歌手（卡池歸在台灣批，但身分是日本人）。
 - 不寫：王心凌代言費與熱搜數字；Karencici 金曲新人入圍（英文維基單源）；陳穎達金音得獎（只有募資頁單源）；YELLOW〈後現代獨白〉金音、典禮播錯影片；荒山茉莉「十大新團」；非／密閉空間成立年與成員本名。
 - 已上線專輯簡介待修（pubIssues）：吳書齊《鹿港》作曲名單與編制未能複核。
+
+## ar-d-207（2026-10-30，Spotify 補卡 sf07 補介紹：西洋 60–80 迷幻、prog、硬搖滾、krautrock、post-punk）
+
+- 32 位全上架（23 full、9 thin：Atomic Rooster、High Tide、Khan、Affinity、Nine Days' Wonder、Tully、Zaratustra、Martin & Garp、Slow Dancer），0 位不寫。補洞 WebSearch 每位 ≤2 次。
+- 主線審稿修 7 位：Atomic Rooster「沒有專職貝斯手、吉他手兼主唱」只對 John Du Cann 那一期成立（首張有貝斯手 Nick Graham），改寫成「最知名的一期是三人編制」並壓回 thin 159 字；Jade Warrior 的 Brian Eno 評語單源，改「據說」；Ikarus 刪「德國最早的前衛爵士搖滾專輯之一」（部落格級來源）；The Jazz Butcher 刪「北安普頓 1980 年代最有影響力的人物之一」（單源、意思含糊）；Martin & Garp 原稿只有廠牌零售頁一源，主線補樂團 Bandcamp 為第二源，且零售頁稱五人團，「二人組」改「以 Phil Martin 與 Lo van Gorp 為核心的計畫」；Tully 只有英文維基一源，主線補 Chapter Music 樂團頁（1968 年末成軍、雪梨《Hair》駐團、Carlos 的風琴與 Moog）為第二源；Mike Ratledge 補 Stereogum 訃聞為辭世第二源。
+- 截止日後事實：Mike Ratledge 2025-02-05 辭世、享年 81 歲，主線 WebSearch 核實（Stereogum、Ultimate Classic Rock、Canterbury Scene）。
+- 身分：Zaratustra 不是樂團，是 Jodorowsky 1970 年墨西哥城舞台劇的原聲（照劇作寫，演奏者 Las Damas Chinas 只寫「據電台節目介紹」）；維基預抓錯頁作廢：Black Widow（漫畫角色）、Ikarus（匈牙利巴士公司）、Affinity（軟體）、Tully（人名頁）、Martin & Garp（蘇格蘭作家）、Slow Dancer（Boz Scaggs 專輯）、Willie West（美式足球員）。
+- 保留：Paul Kossoff 1976 年航班上過世、得年 25（死因不寫）；Paul Davis〈I Go Crazy〉Hot 100 40 週為當時紀錄（份量核心）；The Sugarcubes《Life's Too Good》「第一張在全球造成影響的冰島專輯」；Eyeless in Gaza 的 Björk 具名評語；Cosmic Jokers「space rock 的首要範例」（維基首段）。
+- 不寫：Frijid Pink「第一個進 Top 10 的底特律團」、Atomic Rooster「Crane 是唯一不變的成員」、Tully「澳洲第一支現場用 Moog 的樂團」、Las Damas Chinas「墨西哥第一支自由爵士樂團」（序數單源）；Kossoff 雜誌百大名次；Bloodrock 解散年（兩源不一）；Sun City Girls 成軍年（三說）；Alma Cogan 癌別（兩說，只寫癌症）。
+- 已上線專輯簡介待修（pubIssues 7 條）：Frijid Pink 電台人士職稱、Gravy Train「在英國前衛圈很少見」與首作年、WCPAEB「Markley 是律師」、Cosmic Jokers「老闆是 Dierks」（應為 Kaiser）、Tully「第一支現場用 Moog」寫成定論。
