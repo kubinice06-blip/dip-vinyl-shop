@@ -38,3 +38,14 @@
 - **41938** Saint Abdullah《Stars Have Eyes》：無疑點（Purple Tape Pedigree、2018-04-06、第二張）。「成名作」無獨立樂評共識，不寫。兄弟國籍：兩篇來源寫伊朗出生，另一檢索摘要稱 Iranian-Canadian，僅單一來源未採。聲音含 hard beats 與近似俱樂部的收尾曲，非全慢，moodGuess 無嚴重衝突。WebSearch 用 1 次。
 - **41939** 本組廠牌核對結果：Riot Season、XL、Astro Nautico、DFA（併 Rostron Records）、Third Man、Elektrolux、Purple Tape Pedigree、Extreme 全部與 MB／Discogs 一致，無廠牌被推翻；本組推翻策展層共 1 處（41931 掛名人物）。
 - **41940** 工具限制：Pitchfork、AllMusic、Rough Trade 被擋（403／工具封鎖），Discogs 網頁 403 但 API 可用，改以 API 取人員與曲目。WebSearch 全組用 7 次（每支均 ≤3）。
+
+## 研究 a 組
+- 41901：Clutchy Hopkins《The Life of Clutchy Hopkins》首發廠牌不是 Ubiquity，是自家 Crate Digler（Discogs release 1030627／master 129528）；Ubiquity 首張是 2008《Walking Backwards》。年份 Discogs 2005、MB／維基 2006，facts 並陳，卡單 label 建議改 Crate Digler。藝人身分未公開，只寫猜測與官方宣稱；status thin（單曲與聲音細節來源少）。
+- 41902：Barry Can't Swim 策展「唯一正規專輯」過時，2025-07 已有《Loner》（Ninja Tune）；本盤仍是首張。Mercury 為入圍（shortlist）未得獎，Brit 為入圍。
+- 41903：Alvin Curran《Canti e vedute…》年份 1975（Discogs／MB／專輯維基），藝人維基頁寫 1974 不採；Ananda 成立年各處矛盾（維基 1976 vs 1975 年已有 Ananda n°1），facts 不寫成立年。
+- 41904：Alvin Curran《Maritime Rites》作曲／錄製年 1984（Jazz on the Rideau）vs 1985（New World）並陳；「NPR 委託」未在可抓取的原頁證實，不寫。無鼓無節拍，主體是現場環境錄音與即興，預估的「合成器」未證實。
+- 41905：Christoph De Babalon 約三分之一為無鼓氛圍長曲，moodGuess（x 4.8 躁）可能偏高；Pitchfork 8.4 是 2018 重製版評分。
+- 41906：Against All Logic《2012–2017》型別 Album＋Compilation，維基稱為 AAL 名義首張、Jaar 第三張錄音室專輯，走 §5.6；數位 2018-02-16（10 首）與黑膠 02-17（11 首）同年。
+- 41907：Danger Mouse & Sparklehorse 取 2010-07-12 正式發行；Linkous（2010-03）與 Chesnutt 辭世都早於發行，屬遺作事實，已標時序。曲目快慢不一，非整張慢板。
+- 41908：Rome 器材只取維基人員表，樂評提及的弦樂編制未列入人員表，facts 不寫。
+- 本組 WebSearch 用 3 次（Maritime Rites、Barry Can't Swim、Dark Night of the Soul）；推翻策展層 2 處（Clutchy 廠牌、Barry「唯一專輯」）。
