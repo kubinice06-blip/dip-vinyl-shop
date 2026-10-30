@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 967 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 984 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -971,3 +971,20 @@
 | ar-d-130 | Dewa 19 | Terbaik Terbaik | 1995 年 8 月 2 日面世 | Jakarta Post（2022 黑膠報導）與搜尋摘要所引維基都寫 1995 年 6 月 20 日發行；兩者不一致，需店主對 Aquarius 版或維基確認。 | https://www.thejakartapost.com/culture/2022/09/23/dewa-19-album-gets-vinyl-treatment-for-the-first-time |
 | ar-d-130 | M’bilia Bel | Boya Ye | 領唱的 M’bilia Bel 與他在 1980 年代中期結婚 | 維基 Mbilia Bel 頁寫 1984 年訂婚、約 1988 年關係結束，未明說結婚；事實庫引的 Tabu Ley 頁說結婚。低度存疑，建議改「相戀並育有一女」或再查 | https://en.wikipedia.org/wiki/Mbilia_Bel |
 | ar-d-130 | Nyboma | Doublé doublé | 1972 年起在 Verckys 旗下唱紅 | 維基 Nyboma 頁：1972 年他加入 Orchestre Bella Bella（後者簽 Verckys 的 Vévé 廠牌），1973 年共組 Lipua Lipua；未見「在 Verckys 旗下」直接說法，建議改為更保守的寫法或補證 | https://en.wikipedia.org/wiki/Nyboma |
+| ar-d-201 | Albert Mangelsdorff Quintet | Tension | 1947 年先以吉他手出道，同一年才改學長號 | Playbill 與 Universalis 都寫 1948 年改學長號；英文維基只有 1947 吉他手出道，沒有『同一年學長號』，德文維基有，來源不一 | https://playbill.com/article/jazz-trombonist-albert-mangelsdorff-dies-at-76 |
+| ar-d-201 | Klimeks | Overnites | wavemob 讓它 2013 年 11 月 4 日釋出 | 維基稱 wavemob 首發是 2016 年的合輯《wave 001》，與 Discogs 的 2013 日期不符；日期待核（可能 Discogs 為補登），上線簡介『年輕的英國製作人』可補『wave 一詞的帶頭人』 | https://en.wikipedia.org/wiki/Wave_music |
+| ar-d-201 | Dezső Ránki | Chopin: Études op. 10, Nocturne op. 9 no. 3 & Ballades opp. 38 & 23 | 錄音後來獲法國查爾·克羅學院唱片大獎 | 英文維基只寫 1972 Grand Prix du Disque（Chopin recital 1971），BMC 列 1972 Grand Prix du Disque 但未連結蕭邦錄音；兩者都沒寫「查爾·克羅學院」，需查證主辦單位與是否為此張 | https://en.wikipedia.org/wiki/Dezső_Ránki |
+| ar-d-201 | Manfred Reuthe | Klavier Solo I | 受尹伊桑之邀，在南韓教了八年琴 | Discogs 寫尹伊桑邀請他赴韓；Heidelberg 活動頁與德國音樂院的簡介只說 1973 年起任教首爾與大邱，沒有提尹伊桑。兩源皆未證實邀請之說，且 Discogs 寫 1980 年前教 8 年與 1973 起算相符，但「八年」只有 Discogs 單源。建議店主本機核對。 | https://dai-heidelberg.de/en/events/32nd-heidelberg-piano-week-4-22869/ |
+| ar-d-201 | 張震嶽 | 遠走高飛 | 上一回走情歌路線是 2013 年的《我是海雅谷慕》 | 中文維基與搜尋所見資料把《我是海雅谷慕》描述為以阿美族名為題、回歸大自然與環境思考的專輯，未見「情歌路線」說法；〈抱著你〉入圍年度歌曲，但整張是否為情歌專輯無來源。建議店主本機核對。 | https://zh.wikipedia.org/wiki/%E5%BC%B5%E9%9C%87%E5%B6%BD |
+| ar-d-202 | DIR EN GREY | Withering to death. | 芬蘭專輯榜上第一組上榜的非歐美藝人 | 英文維基只寫此專輯是樂團首個非亞洲榜位（芬蘭第 31 名），未寫「第一組非歐美藝人」；ja 維基的『欧米以外のアーティストとしては初』指向德國榜，且頁面自標出典不足；此「第一」宣稱無獨立兩源，建議審稿時降級或刪除 | https://en.wikipedia.org/wiki/Dir_En_Grey |
+| ar-d-202 | Wink | Especially For You ～優しさにつつまれて～ | 兩人都是少年雜誌選拔的優勝者 | 日文維基寫兩人是 Miss UP 的入賞者，英文維基寫 1987 年分別為第 7、9 名，並非優勝 | https://ja.wikipedia.org/wiki/Wink |
+| ar-d-202 | COHOL | 空洞 | 帶 grindcore 色彩的神奈川黑金屬團 COHOL | ZT Magazine 2015 訪談標題與內文稱 COHOL 為東京據點樂團，Last.fm 摘要同；未找到任何出處寫神奈川 | https://www.ztmag.com/news/zt-interrogation-facing-reality-with-tokyos-cohol/ |
+| ar-d-202 | 静香 | 天界のペルソナ | 静香一手主導：唱歌、彈吉他、搖鈴，詞曲與概念全包 | 英文維基稱吉他由三浦マキ演奏、静香負責緩慢吟誦式人聲，『彈吉他』疑為マキ；詞曲全包無來源確認 | https://en.wikipedia.org/wiki/Shizuka_(band) |
+| ar-d-205 | 吳書齊 | 鹿港 | 吳書齊本人彈鋼琴；『四人共同作曲』 | 事實庫唯一來源 Discogs 登記作曲為 Suchi Wu、Kevin James、Martijn Vanbuel、Toshihiro Wakaike 四人，上線簡介寫吳書齊彈鋼琴、四人共同作曲；Discogs 作曲名單與編制人名是否一致未能複核，僅供店主參考 | https://www.discogs.com/release/29454466 |
+| ar-d-207 | Frijid Pink | Frijid Pink | 一位電台音樂總監聽了，建議廠牌改推這首 | Stevers 本人訪談稱是 Dearborn AM 電台經理（station manager）；Michigan 名人堂與維基稱 DJ／音樂總監 Paul Cannon。職稱兩說並存，建議簽改寫『一位電台人士』 | https://classicbands.com/FrijidPinkInterview.html |
+| ar-d-207 | Frijid Pink | Frijid Pink | 在一次錄音預約剩下的時間即興錄下 | Michigan 名人堂稱 1967 年 session 一次錄成，與維基『session 尾端的填充曲』大致一致，無錯；僅備查 | https://michiganrockandrolllegends.com/hall-of-fame/artists/330-frijid-pink |
+| ar-d-207 | Gravy Train | (A Ballad of) A Peaceful Man | 歌詞不明講，卻都從基督教觀點出發，在英國前衛圈很少見 | Barratt 原話是『不明顯，但確實是從基督徒的觀點寫的』；『在英國前衛圈很少見』是簡介自己的判斷，無來源（Barratt 自己的說法只涵蓋歌詞立場）；『都』也過滿 | https://en.wikipedia.org/wiki/Gravy_Train_(band) |
+| ar-d-207 | Gravy Train | (A Ballad of) A Peaceful Man | 本作為其第二張（維基首作年份 1970／1971 自相矛盾） | 維基導言稱首作 1971，discography 稱 1970；Progressive Aspect 稱首作 1970、本作 1971。上線簡介不寫首作年份，無錯，僅備查 | https://theprogressiveaspect.net/blog/2016/11/21/gravy-train-second-birth-staircase-to-the-day/ |
+| ar-d-207 | The West Coast Pop Art Experimental Band | Part One | 有錢的律師出資搞定合約，Markley 就是那位律師 | 維基稱 Markley 是『有錢的花花公子／有抱負的音樂人』，toppermost 稱石油富豪養子，只有一篇搜尋摘要稱其為律師；建議改成『有錢的 Bob Markley』 | https://www.toppermost.co.uk/west-coast-pop-art-experimental-band-the/ |
+| ar-d-207 | The Cosmic Jokers | Galactic Supermarket | 老闆是 Dieter Dierks，他的錄音室是西德 krautrock 的重鎮 | 廠牌老闆是 Rolf-Ulrich Kaiser，Dierks 是錄音室老闆兼製作／混音；『老闆』易讀成廠牌老闆。另『樂手常被老闆的母親餵飽』『在 Stommeln 錄音』本層沒查到出處 | https://en.wikipedia.org/wiki/The_Cosmic_Jokers |
+| ar-d-207 | Tully | Tully | 鍵盤手 Michael Carlos 買了一台 Moog，讓 Tully 成了澳洲第一支在現場用 Moog 的樂團 | 維基與 Milesago 轉述都用 reportedly（據稱）；上線簡介寫成確定句，建議加『據稱』 | https://en.wikipedia.org/wiki/Tully_(band) |

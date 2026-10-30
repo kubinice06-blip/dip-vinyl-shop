@@ -1,0 +1,590 @@
+{
+ "group": "sf11a",
+ "factions": [
+  {
+   "id": "es-jazz-electronic",
+   "zh": "es-jazz-electronic",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "hk-lofi-rock",
+   "zh": "hk-lofi-rock",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-ambient-folk",
+   "zh": "jp-ambient-folk",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "noise-industrial",
+   "zh": "noise-industrial",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "ru-bedroom-pop",
+   "zh": "ru-bedroom-pop",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "uk-experimental",
+   "zh": "uk-experimental",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "us-beats",
+   "zh": "us-beats",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-dance-electronic",
+   "zh": "us-dance-electronic",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-electronic-newage",
+   "zh": "us-electronic-newage",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-hiphop",
+   "zh": "us-hiphop",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-hiphop-jazz",
+   "zh": "us-hiphop-jazz",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-indie-pop",
+   "zh": "us-indie-pop",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-latin-jazzfusion",
+   "zh": "us-latin-jazzfusion",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "us-metal",
+   "zh": "us-metal",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Moin",
+   "album": "Moot!",
+   "year": 2021,
+   "label": "AD 93",
+   "country": "gb",
+   "faction": "uk-experimental",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Raime 與 Valentina Magaletti 的處女長盤，後龐克與電子取樣並置，是 Moin 的出道代表作",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.9,
+    "z": -1.0,
+    "why": "鼓機般硬鼓、粗礪貝斯與暗黑取樣"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5f26ed11-e10d-4281-963b-8a06b1bedb78",
+    "https://coverartarchive.org/release-group/5f26ed11-e10d-4281-963b-8a06b1bedb78/front",
+    "https://ra.co/news/75454"
+   ],
+   "spotifyName": "Moin",
+   "mbRgMbid": "5f26ed11-e10d-4281-963b-8a06b1bedb78",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "熱門曲經 MB 對應 You Never End（Sophia Al-Maria 合作），確為英國三人組"
+  },
+  {
+   "artist": "NUUAMM",
+   "album": "w/ave",
+   "year": 2017,
+   "label": "Kilikilivilla",
+   "country": "jp",
+   "faction": "jp-ambient-folk",
+   "genres": [
+    "folk",
+    "electronic"
+   ],
+   "why": "青葉市子與 Mahito the People 的二重奏第二張，樂迷公認比首作更完整的代表作",
+   "moodGuess": {
+    "x": 1.8,
+    "y": -0.6,
+    "z": 0.3,
+    "why": "空靈吉他、環境音與低語"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/36277942-7cb1-4afb-b3fd-732d16d23636",
+    "https://coverartarchive.org/release-group/36277942-7cb1-4afb-b3fd-732d16d23636/front",
+    "https://kilikilivilla.bandcamp.com/album/w-ave"
+   ],
+   "spotifyName": "NUUAMM",
+   "mbRgMbid": "36277942-7cb1-4afb-b3fd-732d16d23636",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "NUUAMM (青葉市子 + Mahito the People)",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mindchatter",
+   "album": "DREAM SOUP",
+   "year": 2022,
+   "label": "Mind of a Genius",
+   "country": "us",
+   "faction": "us-dance-electronic",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "Bryce Connolly 第二張錄音室專輯，被樂評視為其配方最完熟之作",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": 0.5,
+    "why": "律動舞曲加迷幻人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a9fd5a44-a621-44cc-90a4-4fe9acec9abf",
+    "https://coverartarchive.org/release-group/a9fd5a44-a621-44cc-90a4-4fe9acec9abf/front",
+    "https://edmidentity.com/2022/04/10/mindchatter-perfects-his-recipe-on-sophomore-album-dream-soup/"
+   ],
+   "spotifyName": "Mindchatter",
+   "mbRgMbid": "a9fd5a44-a621-44cc-90a4-4fe9acec9abf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "NoSo",
+   "album": "Stay Proud of Me",
+   "year": 2022,
+   "label": "Partisan Records",
+   "country": "us",
+   "faction": "us-indie-pop",
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "why": "NoSo 的處女專輯，Partisan 出版，獲 Dork、Atwood 等評論肯定的成長主題 indie pop",
+   "moodGuess": {
+    "x": 2.8,
+    "y": -0.5,
+    "z": 0.4,
+    "why": "夢幻 indie pop、溫柔人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b0836818-c46d-4b15-919b-36f622a0eda9",
+    "https://coverartarchive.org/release-group/b0836818-c46d-4b15-919b-36f622a0eda9/front",
+    "https://atwoodmagazine.com/spom-noso-stay-proud-of-me-album-interview-music-feature/"
+   ],
+   "spotifyName": "NoSo",
+   "mbRgMbid": "b0836818-c46d-4b15-919b-36f622a0eda9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Natural Magic",
+   "album": "II",
+   "year": 2026,
+   "label": "Optimo Music",
+   "country": "us",
+   "faction": "us-electronic-newage",
+   "genres": [
+    "electronic"
+   ],
+   "why": "波特蘭 DJ 二人組 Natural Magic 的第二張，Optimo 出版，比限量百卷的首作卡帶更易取得",
+   "moodGuess": {
+    "x": 2.3,
+    "y": -0.4,
+    "z": 0.5,
+    "why": "新世紀感舞曲、鬆散律動"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6a77910d-a66b-4378-9dc6-0b10361630e4",
+    "https://coverartarchive.org/release-group/6a77910d-a66b-4378-9dc6-0b10361630e4/front",
+    "https://naturalmagic.bandcamp.com/album/ii"
+   ],
+   "spotifyName": "Natural Magic",
+   "mbRgMbid": "6a77910d-a66b-4378-9dc6-0b10361630e4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "熱門曲（Skyward Eye 等）經 MB 對應 II，身分吻合"
+  },
+  {
+   "artist": "Parks, Squares and Alleys",
+   "album": "Against Illusions and Reality",
+   "year": 2015,
+   "label": "",
+   "country": "ru",
+   "faction": "ru-bedroom-pop",
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "why": "樂團自發的夢幻／臥室流行代表作，RYM、AOTY 評價最高的一張",
+   "moodGuess": {
+    "x": 2.2,
+    "y": -0.6,
+    "z": 0.2,
+    "why": "夢幻吉他流行、朦朧人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/223f93d1-e464-46ef-8e6b-3432643c1623",
+    "https://coverartarchive.org/release-group/223f93d1-e464-46ef-8e6b-3432643c1623/front",
+    "https://www.discogs.com/release/11139139-Parks-Squares-And-Alleys-Against-Illusions-Reality",
+    "https://parkssquaresandalleys.bandcamp.com/album/against-illusions-and-reality"
+   ],
+   "spotifyName": "Parks, Squares and Alleys",
+   "mbRgMbid": "223f93d1-e464-46ef-8e6b-3432643c1623",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "國籍為推測（搜尋結果說似為俄羅斯），label 為自發行"
+  },
+  {
+   "artist": "The Offset: Spectacles",
+   "album": "The Offset: Spectacles",
+   "year": 2011,
+   "label": "Trouble In Mind",
+   "country": "hk",
+   "faction": "hk-lofi-rock",
+   "genres": [
+    "rock"
+   ],
+   "why": "香港樂團唯一一張全長專輯，無鼓手 lo-fi 粵語搖滾，2021 由 Trouble In Mind 重發",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.2,
+    "z": -0.7,
+    "why": "無鼓 lo-fi 噪音吉他、超現實粵語"
+   },
+   "evidence": [
+    "https://the-offsets.bandcamp.com/album/the-offset-spectacles-lp-2011",
+    "https://troubleinmindrecords.com/products/offset-spectacles-offset-spectacles-lp",
+    "https://www.vice.com/en/article/9bnwby/meet-the-offset-spectacles-new"
+   ],
+   "spotifyName": "Offset: Spectacles",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 以 artist/releasegroup 搜尋 'Offset: Spectacles' 皆無結果",
+   "manualEvidenceUrls": [
+    "https://the-offsets.bandcamp.com/album/the-offset-spectacles-lp-2011",
+    "https://troubleinmindrecords.com/products/offset-spectacles-offset-spectacles-lp"
+   ],
+   "releaseException": "",
+   "queryAlias": "憬觀:像同叠 The Offset: Spectacles",
+   "uncertain": ""
+  },
+  {
+   "artist": "Nicknack",
+   "album": "Dearly Departed",
+   "year": 2010,
+   "label": "",
+   "country": "us",
+   "faction": "us-hiphop-jazz",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Spotify 熱門曲（Hurt You、Mustard Seed、Cascade）皆出自此盤，Nicknack 最具代表性的長盤",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.0,
+    "z": 0.0,
+    "why": "中速電子、downtempo 質感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fff0650c-c709-4e69-9d47-04a56e52c274",
+    "https://coverartarchive.org/release-group/fff0650c-c709-4e69-9d47-04a56e52c274/front"
+   ],
+   "spotifyName": "Nicknack",
+   "mbRgMbid": "fff0650c-c709-4e69-9d47-04a56e52c274",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "熱門曲經 MB 錄音比對對應 Dearly Departed 2010；無評論共識，label 未確認，可汰"
+  },
+  {
+   "artist": "Mad Keys",
+   "album": "Balance",
+   "year": 2020,
+   "label": "",
+   "country": "us",
+   "faction": "us-beats",
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "why": "聖路易製作人首張全長，與現場樂手錄製的 instrumental hip-hop／爵士感作品",
+   "moodGuess": {
+    "x": 2.6,
+    "y": -0.3,
+    "z": 0.6,
+    "why": "爵士和弦與鬆弛鼓點"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4737fcc1-5d0b-4657-b4d7-0deca7a031ee",
+    "https://coverartarchive.org/release-group/4737fcc1-5d0b-4657-b4d7-0deca7a031ee/front",
+    "https://madkeys.bandcamp.com/album/balance",
+    "https://music.apple.com/us/album/balance/1492850794"
+   ],
+   "spotifyName": "Mad Keys",
+   "mbRgMbid": "4737fcc1-5d0b-4657-b4d7-0deca7a031ee",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "身分僅靠 Bandcamp 與 Apple 頁，無評論共識，可汰"
+  },
+  {
+   "artist": "Moin",
+   "album": "You Never End",
+   "year": 2024,
+   "label": "AD 93",
+   "country": "gb",
+   "faction": "uk-experimental",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Moin 第三張，Spotify 熱門曲（Lift You、Family Way 等）皆出自此盤，與 Moot! 同為代表作",
+   "moodGuess": {
+    "x": "3.4",
+    "y": 0.6,
+    "z": -0.8,
+    "why": "後龐克鼓點、人聲與電子渲染"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a9e4b564-2df4-4a5f-b041-95cf799f676b",
+    "https://coverartarchive.org/release-group/a9e4b564-2df4-4a5f-b041-95cf799f676b/front"
+   ],
+   "spotifyName": "Moin",
+   "mbRgMbid": "a9e4b564-2df4-4a5f-b041-95cf799f676b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Caldera",
+   "album": "Sky Islands",
+   "year": 1977,
+   "label": "Capitol",
+   "country": "us",
+   "faction": "us-latin-jazzfusion",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "洛杉磯拉丁爵士融合樂團 Caldera 的第二張，Dianne Reeves 客唱〈Sky Islands〉，樂迷公認巔峰",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.4,
+    "z": 0.6,
+    "why": "拉丁節奏、爵士融合與華麗編制"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/17aae547-cea0-4df9-80c2-e76ab4dd6a6e",
+    "https://coverartarchive.org/release-group/17aae547-cea0-4df9-80c2-e76ab4dd6a6e/front"
+   ],
+   "spotifyName": "caldera",
+   "mbRgMbid": "17aae547-cea0-4df9-80c2-e76ab4dd6a6e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Caldera",
+   "album": "Caldera",
+   "year": 1976,
+   "label": "Capitol",
+   "country": "us",
+   "faction": "us-latin-jazzfusion",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "樂團同名首作，Seraphim、Pegasus 等熱門曲所在，與《Sky Islands》並列兩大高峰",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.4,
+    "z": 0.6,
+    "why": "拉丁爵士融合、器樂炫技"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6f4d5e05-65e2-3b15-a884-a42e9e77b0a5",
+    "https://coverartarchive.org/release-group/6f4d5e05-65e2-3b15-a884-a42e9e77b0a5/front"
+   ],
+   "spotifyName": "caldera",
+   "mbRgMbid": "6f4d5e05-65e2-3b15-a884-a42e9e77b0a5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "熱門曲 Seraphim／Pegasus 的所屬專輯未逐曲核對，僅依 Caldera 1976 首作與 Sky Islands 為二大高峰推定"
+  },
+  {
+   "artist": "DJ Toner",
+   "album": "Outside",
+   "year": 2024,
+   "label": "",
+   "country": "es",
+   "faction": "es-jazz-electronic",
+   "genres": [
+    "electronic",
+    "jazz"
+   ],
+   "why": "西班牙爵士電子製作人 DJ Toner，與 Raynald Colom、Jorge Pardo、Erik Truffaz 合作；熱門曲 Camina 出自此盤",
+   "moodGuess": {
+    "x": 2.5,
+    "y": -0.1,
+    "z": 0.3,
+    "why": "爵士小號與電子節拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a2cbdc98-5b30-4c6a-bf9a-2579badd9558",
+    "https://coverartarchive.org/release-group/a2cbdc98-5b30-4c6a-bf9a-2579badd9558/front"
+   ],
+   "spotifyName": "Dj Toner",
+   "mbRgMbid": "a2cbdc98-5b30-4c6a-bf9a-2579badd9558",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "label 未確認；熱門曲僅 Camina 經 MB 對應 Outside，其餘合作曲未逐一核對"
+  },
+  {
+   "artist": "Doctor Butcher",
+   "album": "Doctor Butcher",
+   "year": 1994,
+   "label": "GUN Records",
+   "country": "us",
+   "faction": "us-metal",
+   "genres": [
+    "rock"
+   ],
+   "why": "Savatage 的 Jon Oliva、Chris Caffery 的 side project，唯一正規專輯，熱門曲 The Altar／Season of the Witch 皆在此盤",
+   "moodGuess": {
+    "x": 4.3,
+    "y": 1.6,
+    "z": -0.8,
+    "why": "重 riff 傳統金屬、沙啞嘶吼"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2ace1b3b-b649-3072-8e0a-11964eee5fdd",
+    "https://coverartarchive.org/release-group/2ace1b3b-b649-3072-8e0a-11964eee5fdd/front",
+    "https://www.metal-archives.com/albums/Doctor_Butcher/Doctor_Butcher/6479"
+   ],
+   "spotifyName": "Doctor Butcher",
+   "mbRgMbid": "2ace1b3b-b649-3072-8e0a-11964eee5fdd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Alexandra Atnif",
+   "album": "Rhythmic Brutalism Vol.1",
+   "year": 2018,
+   "label": "Rewind Forward",
+   "country": "xx",
+   "faction": "noise-industrial",
+   "genres": [
+    "electronic"
+   ],
+   "why": "早期自發卡帶集結成黑膠的工業電子／噪音代表作（Spotify 熱門曲有 Side 2 等長曲）",
+   "moodGuess": {
+    "x": 4.2,
+    "y": 1.2,
+    "z": -1.2,
+    "why": "工業節奏、回授噪音牆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ffff6c2c-2995-4c46-8160-d9a659e7cc4a",
+    "https://coverartarchive.org/release-group/ffff6c2c-2995-4c46-8160-d9a659e7cc4a/front",
+    "https://rwdfwd.com/products/alexandra-atnif-rhythmic-brutalism-vol-1"
+   ],
+   "spotifyName": "Alexandra Atnif",
+   "mbRgMbid": "ffff6c2c-2995-4c46-8160-d9a659e7cc4a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "國籍不明（country 填 xx）；Spotify 熱門曲未能對應到 Vol.1 或 Vol.2 或 Seekers Of The Void 2018，無評論共識，可汰"
+  },
+  {
+   "artist": "ERISTHEPLANET",
+   "album": "IT REALLY DO BE THAT DAMN PHONE",
+   "year": 2026,
+   "label": "",
+   "country": "us",
+   "faction": "us-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "饒舌手 ERISTHEPLANET 2026 專輯，收錄熱門曲 8 FEET TALL (feat. Rico Nasty)",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.8,
+    "z": -0.4,
+    "why": "trap 底鼓與嘶啞饒舌"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/42856fe4-7bb9-4c84-afa1-d9a36e67c78b",
+    "https://coverartarchive.org/release-group/42856fe4-7bb9-4c84-afa1-d9a36e67c78b/front"
+   ],
+   "spotifyName": "ERISTHEPLANET",
+   "mbRgMbid": "42856fe4-7bb9-4c84-afa1-d9a36e67c78b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "2026-08 新盤、評論尚少，國籍與 label 未確認"
+  }
+ ],
+ "notes": [
+  "跳過（已在池）：無。18 位皆查過 seed_cards，僅 caldera／Doctor Butcher／Parks 出現子字串誤中（Joey Calderazzo、Cher、Sand），非同一人",
+  "不收：Agosta（Spotify 熱門曲全是 remix／rework〈Carricante〉等，無自己的正規專輯）",
+  "不收：Declan McDermott（house 單曲與 remix〈Doin' It All 4 U〉等，MB 無 release group）",
+  "不收：North Downs（Jack Sibley，與 Maribou State 合作單曲；MB 僅 EP《Dad's Old Tapes》與單曲）",
+  "不收：Four Pens＝台灣樂團四枝筆（zh 維基：僅 EP《AM 6:57》《PM 11:59》、日本集結盤《One Day》、單曲；首張非集結專輯尚在籌備），MB 無條目，無正規專輯",
+  "重查（2026-10-30 熱門曲）：caldera＝1970s 洛杉磯 Caldera 收 2 張；DJ Toner＝西班牙爵士電子收《Outside》；Doctor Butcher＝Jon Oliva／Chris Caffery side project 收同名專輯；Alexandra Atnif、ERISTHEPLANET 有專輯故收（皆標 uncertain）",
+  "熱門曲核對已收 9 位：Moin 熱門曲屬 You Never End（已加收）；Natural Magic 屬 II 吻合；Nicknack 屬 Dearly Departed 2010（已由 State Machine 改正）；NUUAMM／NoSo／Parks／Mad Keys 吻合；Mindchatter 熱門曲為單曲，但 DREAM SOUP 仍為其長盤代表；Offset: Spectacles 無熱門曲資料，維持原判",
+  "備註：iTunes API 403，封面以 CAA（HTTP 200 已驗）為準；WebSearch 共用 12 次"
+ ]
+}

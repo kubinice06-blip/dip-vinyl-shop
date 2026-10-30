@@ -2,7 +2,7 @@
  "v": 1,
  "per": 40,
  "roster": "roster-20260929.json",
- "updatedAt": "2026-10-30T05:51:16.206Z",
+ "updatedAt": "2026-10-30T06:32:51.036Z",
  "batches": [
   {
    "batch": "ar-a-001",
@@ -11316,8 +11316,14 @@
     "潮州土狗",
     "諾頓街"
    ],
-   "state": "cut",
-   "note": "Spotify 追蹤藝人補卡池 sf05（add-20261030-sf05）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11）；名冊 batch-progress/artist-intro/roster-sf05.json"
+   "state": "published",
+   "note": "Spotify 追蹤藝人補卡池 sf05（add-20261030-sf05）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11）；名冊 batch-progress/artist-intro/roster-sf05.json",
+   "skipped": [
+    "頭部組成者",
+    "吳書齊",
+    "狗毛"
+   ],
+   "reviewFixes": 2
   },
   {
    "batch": "ar-d-207",
@@ -11364,8 +11370,10 @@
     "the jazz butcher",
     "mick karn"
    ],
-   "state": "cut",
-   "note": "Spotify 追蹤藝人補卡池 sf07（add-20261030-sf07）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11）；名冊 batch-progress/artist-intro/roster-sf07.json"
+   "state": "published",
+   "note": "Spotify 追蹤藝人補卡池 sf07（add-20261030-sf07）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11）；名冊 batch-progress/artist-intro/roster-sf07.json",
+   "skipped": [],
+   "reviewFixes": 7
   },
   {
    "batch": "ar-d-209",
@@ -11510,7 +11518,11 @@
     "青春大衛",
     "烏賊紳士"
    ],
-   "state": "cut",
+   "state": "published",
+   "skipped": [
+    "烏賊紳士"
+   ],
+   "reviewFixes": 4,
    "note": "店主 Spotify 追蹤藝人補卡池 add-20261030-sf01 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11）；名冊 batch-progress/artist-intro/roster-sf01.json"
   },
   {
@@ -11555,8 +11567,180 @@
     "the 天国畑 japon",
     "静香"
    ],
-   "state": "cut",
+   "state": "published",
+   "skipped": [
+    "ないあがらせっと",
+    "ヨシンバ",
+    "ピューパ!!",
+    "the 天国畑 japon"
+   ],
+   "reviewFixes": 5,
    "note": "店主 Spotify 追蹤藝人補卡池 add-20261030-sf02 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11）；名冊 batch-progress/artist-intro/roster-sf02.json"
+  },
+  {
+   "batch": "ar-d-203",
+   "tier": "D",
+   "genres": [
+    "electronic",
+    "rock",
+    "classical",
+    "folk",
+    "world",
+    "jazz",
+    "pop"
+   ],
+   "keys": [
+    "world's end girlfriend",
+    "yamataka eye & john zorn",
+    "seiichi yamamoto 山本精一",
+    "musica transonic",
+    "lsd march",
+    "taku sugimoto 杉本拓",
+    "スズキジュンゾ",
+    "割礼",
+    "穂高亜希子",
+    "みみのこと",
+    "陳信輝",
+    "far out",
+    "東方沙羅",
+    "三橋貴風 & 山屋清",
+    "関藤繁生",
+    "sinsuke fujieda group",
+    "田畑満",
+    "sam gendel & shin sasakubo",
+    "狩生健志",
+    "バズ"
+   ],
+   "state": "cut",
+   "note": "店主 Spotify 追蹤藝人補卡池 add-20261030-sf03 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11）；名冊 batch-progress/artist-intro/roster-sf03.json"
+  },
+  {
+   "batch": "ar-d-204",
+   "tier": "D",
+   "genres": [
+    "electronic",
+    "pop",
+    "jazz",
+    "classical",
+    "hiphop",
+    "rock"
+   ],
+   "keys": [
+    "立花ハジメ hajime tachibana",
+    "越美晴 miharu koshi",
+    "sketch show",
+    "doopees",
+    "chouchou",
+    "沖山秀子 hideko okiyama",
+    "篠崎史子 ayako shinozaki",
+    "yasushi ide 井出靖",
+    "ypy",
+    "kuso gvki",
+    "ecd",
+    "shakkazombie",
+    "hoshina anniversary",
+    "tokimeki records",
+    "kinoue64",
+    "emapea",
+    "志人",
+    "ironomi",
+    "magamura",
+    "concrete concrete",
+    "chestnut bakery",
+    "aka lisa",
+    "soft",
+    "dip",
+    "in the blue shirt",
+    "u.ta屋塔"
+   ],
+   "state": "cut",
+   "note": "店主 Spotify 追蹤藝人補卡池 add-20261030-sf04 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11）；名冊 batch-progress/artist-intro/roster-sf04.json"
+  },
+  {
+   "batch": "ar-d-211",
+   "tier": "D",
+   "genres": [
+    "jazz",
+    "electronic",
+    "rock",
+    "world",
+    "hiphop",
+    "pop",
+    "folk"
+   ],
+   "keys": [
+    "caldera",
+    "dj toner",
+    "doctor butcher",
+    "dudu tassa & the kuwaitis",
+    "eristheplanet",
+    "mad keys",
+    "mindchatter",
+    "moin",
+    "natural magic",
+    "nicknack",
+    "noso",
+    "nuuamm",
+    "parks, squares and alleys",
+    "posh inverse",
+    "puzzleman",
+    "skip skip ben ben",
+    "sonia calico",
+    "space raiders",
+    "super besse",
+    "the luvmenauts",
+    "the offset: spectacles",
+    "the sign of human 記號士",
+    "ultra sunn",
+    "特撮"
+   ],
+   "state": "cut",
+   "note": "Spotify 追蹤藝人補卡池 sf11（add-20261030-sf11）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；24 位）；名冊 batch-progress/artist-intro/roster-sf11.json"
+  },
+  {
+   "batch": "ar-d-212",
+   "tier": "D",
+   "genres": [
+    "electronic",
+    "pop",
+    "hiphop",
+    "soul",
+    "rock"
+   ],
+   "keys": [
+    "attica blues",
+    "biig piig",
+    "blubell",
+    "def squad",
+    "destin conrad",
+    "dinner party",
+    "dudu tassa",
+    "fortisakharof",
+    "j. valentine",
+    "jason derulo",
+    "jmsn",
+    "kmd",
+    "kris kross",
+    "lausse the cat",
+    "maddie ashman",
+    "marian hill",
+    "michael franti & spearhead",
+    "mr twin sister",
+    "my skin against your skin 激膚",
+    "noblemen",
+    "olivia dean",
+    "omar apollo",
+    "onry ozzborn",
+    "puma blue",
+    "s.c.a.b.",
+    "sad night dynamite",
+    "saya gray",
+    "the beneficiaries",
+    "the umc's",
+    "way out west"
+   ],
+   "state": "cut",
+   "note": "Spotify 追蹤藝人補卡池 sf12（add-20261030-sf12）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；30 位）；名冊 batch-progress/artist-intro/roster-sf12.json"
   },
   {
    "batch": "ar-d-206",

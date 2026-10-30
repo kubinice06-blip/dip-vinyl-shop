@@ -1,0 +1,464 @@
+{
+ "group": "sf03a",
+ "factions": [
+  {
+   "id": "jp-postrock-chamber",
+   "zh": "日本後搖／室內電子",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "jp-noise-psych",
+   "zh": "日本地下迷幻／噪音",
+   "count": 10,
+   "why": ""
+  },
+  {
+   "id": "jp-improv",
+   "zh": "日本即興／極簡",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-folk-wa",
+   "zh": "日本和風民謠／和樂器",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "world’s end girlfriend / ワールズエンドガールフレンド",
+   "uncertain": "",
+   "artist": "world's end girlfriend",
+   "album": "Hurtbreak Wonderland",
+   "year": 2007,
+   "label": "Virgin Babylon Records",
+   "country": "jp",
+   "faction": "jp-postrock-chamber",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "弦與電子、噪音交織的電影式代表作，樂迷公認 WEG 最完整的一張",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 1,
+    "z": -0.6,
+    "why": "弦樂暴漲與電子碎拍交錯，戲劇張力強、偏冷"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/8f9856f6-bca8-34d5-8dd2-72f03ae344bf/front",
+    "https://musicbrainz.org/release-group/8f9856f6-bca8-34d5-8dd2-72f03ae344bf",
+    "https://music.apple.com/jp/album/hurtbreak-wonderland/456385415"
+   ],
+   "spotifyName": "World's End Girlfriend",
+   "mbRgMbid": "8f9856f6-bca8-34d5-8dd2-72f03ae344bf"
+  },
+  {
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "world’s end girlfriend / ワールズエンドガールフレンド",
+   "uncertain": "",
+   "artist": "world's end girlfriend",
+   "album": "Seven Idiots",
+   "year": 2010,
+   "label": "Virgin Babylon Records",
+   "country": "jp",
+   "faction": "jp-postrock-chamber",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "管弦、合唱與電子拼貼的長篇組曲，是第二個高峰",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 1.2,
+    "z": -0.4,
+    "why": "大編制管弦與電子拼貼、層次厚、戲劇性強"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/dcada881-b123-4109-aea6-b3dcf557a710/front",
+    "https://musicbrainz.org/release-group/dcada881-b123-4109-aea6-b3dcf557a710",
+    "https://music.apple.com/jp/album/seven-idiots/403834181"
+   ],
+   "spotifyName": "World's End Girlfriend",
+   "mbRgMbid": "dcada881-b123-4109-aea6-b3dcf557a710"
+  },
+  {
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "山塚アイ / Yamantaka Eye / Eye / ヤマタカEYE",
+   "uncertain": "Spotify 上 Yamantaka Eye 頁面實際收錄哪張未能核對；池中另有 BOREDOMS 團名卡，非同一藝人頁",
+   "artist": "Yamataka Eye",
+   "album": "Nani Nani",
+   "year": 1995,
+   "label": "Tzadik",
+   "country": "jp",
+   "faction": "jp-noise-psych",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Boredoms 主腦山塚アイ的個人聲音拼貼專輯，Tzadik 發行的個人代表作",
+   "moodGuess": {
+    "x": 4.3,
+    "y": 1,
+    "z": -1.2,
+    "why": "嘶吼、取樣與噪音拼貼，混亂無旋律"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/e1b499f6-796d-33c7-81a5-cc1007979c6d/front",
+    "https://musicbrainz.org/release-group/e1b499f6-796d-33c7-81a5-cc1007979c6d"
+   ],
+   "spotifyName": "Yamantaka Eye",
+   "mbRgMbid": "e1b499f6-796d-33c7-81a5-cc1007979c6d"
+  },
+  {
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "山本精一 / Yamamoto Seiichi / Yamamoto Sei'ichi",
+   "uncertain": "",
+   "artist": "Seiichi Yamamoto 山本精一",
+   "album": "NOA",
+   "year": 1997,
+   "label": "Alchemy Records",
+   "country": "jp",
+   "faction": "jp-noise-psych",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "山本精一以歌與吉他走向迷幻民謠的個人名作，日本地下公認基石",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.2,
+    "z": 0.3,
+    "why": "鬆軟迷幻吉他與低吟，懸浮柔和"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/cd578c81-90ac-375c-b01e-68458de6f04b/front",
+    "https://musicbrainz.org/release-group/cd578c81-90ac-375c-b01e-68458de6f04b"
+   ],
+   "spotifyName": "Seiichi Yamamoto",
+   "mbRgMbid": "cd578c81-90ac-375c-b01e-68458de6f04b"
+  },
+  {
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "山本精一 / Yamamoto Seiichi",
+   "uncertain": "",
+   "artist": "Seiichi Yamamoto 山本精一",
+   "album": "PLAYGROUND",
+   "year": 2010,
+   "label": "P-VINE RECORDS",
+   "country": "jp",
+   "faction": "jp-noise-psych",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "成熟期的吉他迷幻與歌唱集大成，另一個高峰",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.4,
+    "z": 0,
+    "why": "層疊吉他迴圈與輕唱，朦朧流動"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/f10bd0ab-96be-4bae-a236-67e004cc6616/front",
+    "https://musicbrainz.org/release-group/f10bd0ab-96be-4bae-a236-67e004cc6616"
+   ],
+   "spotifyName": "Seiichi Yamamoto",
+   "mbRgMbid": "f10bd0ab-96be-4bae-a236-67e004cc6616"
+  },
+  {
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "代表作判斷以 P.S.F. 首張與 2020 重發為依據，評論共識資料較少",
+   "artist": "Musica Transonic",
+   "album": "Musica Transonic",
+   "year": 1995,
+   "label": "P.S.F. Records",
+   "country": "jp",
+   "faction": "jp-noise-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "P.S.F. 發行的同名首張，Musica Transonic 的原點與公認代表作（2020 Black Editions 重發）",
+   "moodGuess": {
+    "x": 4,
+    "y": 1.4,
+    "z": -0.9,
+    "why": "重迷幻搖滾與自由即興，失真牆壓迫"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/d9a86749-e6ce-345e-bac8-2845f411ac09/front",
+    "https://musicbrainz.org/release-group/d9a86749-e6ce-345e-bac8-2845f411ac09",
+    "https://music.apple.com/jp/album/musica-transonic/1526900087"
+   ],
+   "spotifyName": "Musica Transonic",
+   "mbRgMbid": "d9a86749-e6ce-345e-bac8-2845f411ac09"
+  },
+  {
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "此 rg 在 CAA 無封面，封面取 Discogs；Discogs master 238054 有封面；Spotify 實際收錄盤名未核對",
+   "artist": "LSD March",
+   "album": "突然炎のごとく",
+   "year": 2002,
+   "label": "White Elephant Records",
+   "country": "jp",
+   "faction": "jp-noise-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "LSD March 以長篇迷幻搖滾聞名，此盤（英文名 Suddenly, like flames）經 Last Visible Dog 在美重發，為代表作",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 1.2,
+    "z": -0.7,
+    "why": "長篇迷幻搖滾與反饋噪音，持續堆疊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c1584c45-16c7-3299-93fa-d04bca99b967",
+    "https://www.discogs.com/master/238054"
+   ],
+   "spotifyName": "LSD March",
+   "mbRgMbid": "c1584c45-16c7-3299-93fa-d04bca99b967"
+  },
+  {
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "杉本拓 / Sugimoto Taku",
+   "uncertain": "",
+   "artist": "Taku Sugimoto 杉本拓",
+   "album": "Opposite",
+   "year": 1998,
+   "label": "hatNOIR",
+   "country": "jp",
+   "faction": "jp-improv",
+   "genres": [
+    "classical",
+    "jazz"
+   ],
+   "why": "杉本拓的靜默吉他即興名作，Onkyo 系極簡的入口，歐洲 hatNOIR 發行",
+   "moodGuess": {
+    "x": 1.8,
+    "y": -0.8,
+    "z": -0.3,
+    "why": "稀疏吉他單音與大量留白，細而安靜"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/9d57c210-dbf8-3f15-977c-30f0d6bb91a5/front",
+    "https://musicbrainz.org/release-group/9d57c210-dbf8-3f15-977c-30f0d6bb91a5",
+    "https://music.apple.com/jp/album/opposite/990486006"
+   ],
+   "spotifyName": "Taku Sugimoto",
+   "mbRgMbid": "9d57c210-dbf8-3f15-977c-30f0d6bb91a5"
+  },
+  {
+   "mbAbsenceProof": "MusicBrainz 以 スズキジュンゾ／Suzuki Junzo／Junzo Suzuki 搜尋皆無此藝人；Discogs 有藝人頁 1081457",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/artist/1081457-Suzuki-Junzo",
+    "https://suzukijunzo.bandcamp.com"
+   ],
+   "releaseException": "",
+   "queryAlias": "Suzuki Junzo / 鈴木ジュンゾ / Junzo Suzuki",
+   "uncertain": "Spotify 上實際收錄哪張未核對；年份取 Discogs master 2009（Apple 為 2012 數位版）",
+   "artist": "スズキジュンゾ",
+   "album": "Ode to a Blue Ghost",
+   "year": 2009,
+   "label": "Plunk's Plan",
+   "country": "jp",
+   "faction": "jp-noise-psych",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "東京地下吉他手／歌手，自己經營 Plunk's Plan；本張是個人最受討論的迷幻噪音民謠盤",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 0.9,
+    "z": -0.6,
+    "why": "失真吉他與低吟，朦朧迷幻、緩慢鬱沉"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/440850",
+    "https://music.apple.com/jp/album/ode-to-a-blue-ghost/1058778850",
+    "https://suzukijunzo.bandcamp.com"
+   ],
+   "spotifyName": "Suzuki Junzo"
+  },
+  {
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Katsurei / 割禮 / かつれい",
+   "uncertain": "",
+   "artist": "割礼",
+   "album": "Paradaise・K",
+   "year": 1987,
+   "label": "baLcony RECORDS",
+   "country": "jp",
+   "faction": "jp-noise-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "名古屋迷幻搖滾 割礼 的傳說首作，日本地下迷幻基石，2010 年 P-Vine 重發",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.8,
+    "z": -0.5,
+    "why": "低吟與扭曲吉他的緩慢迷幻，陰鬱"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/d1a7e7ae-f581-4db4-9f9a-8c4b66eb7a94/front",
+    "https://musicbrainz.org/release-group/d1a7e7ae-f581-4db4-9f9a-8c4b66eb7a94",
+    "https://www.discogs.com/master/724037"
+   ],
+   "spotifyName": "割礼",
+   "mbRgMbid": "d1a7e7ae-f581-4db4-9f9a-8c4b66eb7a94"
+  },
+  {
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Katsurei / Nail Franc",
+   "uncertain": "CAA 無封面，取 Discogs master 340779；Spotify 實際收錄未核對",
+   "artist": "割礼",
+   "album": "ネイルフラン",
+   "year": 1989,
+   "label": "INVITATION",
+   "country": "jp",
+   "faction": "jp-noise-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "INVITATION 時期的第二高峰，樂迷與評論點名的迷幻名盤（2013 SSNW 重發）",
+   "moodGuess": {
+    "x": 3,
+    "y": 0.9,
+    "z": -0.4,
+    "why": "遲緩迷幻搖滾，厚重吉他與恍惚人聲"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/340779",
+    "https://musicbrainz.org/release-group/5b5bc1c3-eaf8-4dd4-a181-b121029f728d"
+   ],
+   "spotifyName": "割礼",
+   "mbRgMbid": "5b5bc1c3-eaf8-4dd4-a181-b121029f728d"
+  },
+  {
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Akiko Hotaka / ほたかあきこ",
+   "uncertain": "評論共識資料少，僅 4 張正規專輯，擇首作",
+   "artist": "穂高亜希子",
+   "album": "ひかるゆめ",
+   "year": 2011,
+   "label": "F.M.N. Sound Factory",
+   "country": "jp",
+   "faction": "jp-folk-wa",
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "why": "獨立民謠創作歌手穂高亜希子的首張個人專輯，代表其素樸清澈的歌聲",
+   "moodGuess": {
+    "x": 1.6,
+    "y": -0.7,
+    "z": 0.7,
+    "why": "原聲吉他與清透女聲，溫柔寧靜"
+   },
+   "evidence": [
+    "https://music.apple.com/jp/album/%E3%81%B2%E3%81%8B%E3%82%8B%E3%82%86%E3%82%81/1504426756",
+    "https://musicbrainz.org/release-group/ea89cf06-a4af-4a5c-9eb9-8bab379f2258",
+    "https://www.discogs.com/release/7360728"
+   ],
+   "spotifyName": "穂高亜希子",
+   "mbRgMbid": "ea89cf06-a4af-4a5c-9eb9-8bab379f2258"
+  },
+  {
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "みみのこと / Miminokoto",
+   "uncertain": "",
+   "artist": "みみのこと",
+   "album": "Hitoyogiri",
+   "year": 2011,
+   "label": "Important Records",
+   "country": "jp",
+   "faction": "jp-noise-psych",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "みみのこと（鈴木ジュンゾ參與的東京地下迷幻民謠團）經 Important Records 向海外發行的代表作",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.6,
+    "z": -0.2,
+    "why": "鬆散迷幻民謠與吉他鳴響，朦朧緩流"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/70ed4fff-fb19-4958-8936-c0ddc6b570bf/front",
+    "https://musicbrainz.org/release-group/70ed4fff-fb19-4958-8936-c0ddc6b570bf",
+    "https://www.discogs.com/release/3140692"
+   ],
+   "spotifyName": "Miminokoto",
+   "mbRgMbid": "70ed4fff-fb19-4958-8936-c0ddc6b570bf"
+  },
+  {
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "みみのこと / Green Mansions",
+   "uncertain": "CAA 無封面，取 Discogs release 1091088；Spotify 實際收錄未核對",
+   "artist": "みみのこと",
+   "album": "緑の住処",
+   "year": 2005,
+   "label": "Alchemy Records",
+   "country": "jp",
+   "faction": "jp-noise-psych",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "Alchemy 時期的全長盤，與 Hitoyogiri 並列的另一高峰",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.5,
+    "z": -0.2,
+    "why": "迷幻吉他與低吟，鬆緩恍惚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e0169f1d-5a33-4f52-9d92-e63400452eef",
+    "https://www.discogs.com/release/1091088"
+   ],
+   "spotifyName": "Miminokoto",
+   "mbRgMbid": "e0169f1d-5a33-4f52-9d92-e63400452eef"
+  }
+ ],
+ "notes": [
+  "跳過檢查（sf03a 全部 10 位）：World's End Girlfriend、Yamantaka Eye、Seiichi Yamamoto、Musica Transonic、LSD March、スズキジュンゾ、杉本拓、割礼、穂高亜希子、みみのこと 池中皆無（池有 BOREDOMS 團，非 Yamataka Eye 個人頁；Keiji Haino 非同人）",
+  "說明：Yamataka Eye 的 Spotify 頁面實收哪張未能核對，取 Tzadik《Nani Nani》；與池中 BOREDOMS 為不同藝人頁",
+  "說明：スズキジュンゾ 為 Plunk's Plan 主持人，MB 無此人，走人工身分；與池中「鈴木勲」系列無關",
+  "說明：割礼 與 穂高亜希子 池中皆無；みみのこと 與 スズキジュンゾ 有合作關係但各自獨立藝人頁",
+  "不收：Yamantaka Eye 的混音、DJ-mix（Sky Size Sea、Earth 等）；Seiichi Yamamoto 的現場盤"
+ ]
+}

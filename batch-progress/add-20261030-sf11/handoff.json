@@ -1,0 +1,39 @@
+{
+ "batch": "add-20261030-sf11",
+ "cards": 24,
+ "written": {
+  "cardCatalog": 24,
+  "kvKeys": 29,
+  "seedRows": 24,
+  "previewReady": 23,
+  "previewUnavailable": 1
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 24,
+  "changed": [
+   "desc2:Natural Magic|II",
+   "desc4:Skip Skip Ben Ben|鏡中鏡 Mirror in Mirror"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "prepareGate": "0 error",
+  "publishedGate": "0 error"
+ },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "無"
+ },
+ "artistIntro": {
+  "roster": "batch-progress/artist-intro/roster-sf11.json",
+  "batch": "ar-d-211",
+  "artists": 24,
+  "state": "cut"
+ }
+}

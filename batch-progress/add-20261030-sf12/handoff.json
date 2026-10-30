@@ -1,0 +1,41 @@
+{
+ "batch": "add-20261030-sf12",
+ "cards": 35,
+ "written": {
+  "cardCatalog": 35,
+  "kvKeys": 36,
+  "seedRows": 35,
+  "previewReady": 26,
+  "previewUnavailable": 9
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 35,
+  "changed": [
+   "desc2:Onry Ozzborn|The Grey Area",
+   "desc2:The UMC's|Fruits of Nature",
+   "desc2:Way Out West|Intensify",
+   "desc2:S.C.A.B.|Somebody in New York Loves You!"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "prepareGate": "0 error",
+  "publishedGate": "0 error"
+ },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "無"
+ },
+ "artistIntro": {
+  "roster": "batch-progress/artist-intro/roster-sf12.json",
+  "batch": "ar-d-212",
+  "artists": 30,
+  "state": "cut"
+ }
+}

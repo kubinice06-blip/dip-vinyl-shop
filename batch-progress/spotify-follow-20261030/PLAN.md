@@ -12,18 +12,18 @@
 
 | 批 | 場景（只是為了效率，分錯場景照收，不搬批） | 藝人數 | 藝人介紹批號 | 狀態 |
 |---|---|---:|---|---|
-| sf01 | favoriteAlbums 38 張（指定盤） | 38 張 | ar-d-201 | ✅ 上線 36（跳過 1 張已在池：椎名林檎《無罪モラトリアム》；不收 1：Vayda 查無此盤）；新藝人 30 位 → ar-d-201 cut |
-| sf02 | 日本：搖滾、獨立、流行、偶像、金屬 | 30 | ar-d-202 | ✅ 上線 45（跳過 0 位已在池；30 位全收）；新藝人 30 位 → ar-d-202 cut |
-| sf03 | 日本：地下、迷幻、即興、和樂器 | 20 | ar-d-203 | 派→Spotify 補卡 sf03、sf04 |
-| sf04 | 日本：電子、ambient、嘻哈、lo-fi、YMO 周邊 | 28 | ar-d-204 | 派→Spotify 補卡 sf03、sf04 |
-| sf05 | 台灣華語：流行、R&B、獨立樂團 | 27 | ar-d-205 | ✅ 上線 24（跳過 1 位已在池；不收 6 位） |
+| sf01 | favoriteAlbums 38 張（指定盤） | 38 張 | ar-d-201（✅ 介紹上線 29／skipped 1） | ✅ 上線 36（跳過 1 張已在池：椎名林檎《無罪モラトリアム》；不收 1：Vayda 查無此盤）；新藝人 30 位 → ar-d-201 cut |
+| sf02 | 日本：搖滾、獨立、流行、偶像、金屬 | 30 | ar-d-202（✅ 介紹上線 26／skipped 4） | ✅ 上線 45（跳過 0 位已在池；30 位全收）；新藝人 30 位 → ar-d-202 cut |
+| sf03 | 日本：地下、迷幻、即興、和樂器 | 20 | ar-d-203 | ✅ 上線 23（跳過 0 位已在池；20 位全收；試聽 ready 19／unavailable 4；頂點 0；藝人介紹 20 位 → ar-d-203 cut） |
+| sf04 | 日本：電子、ambient、嘻哈、lo-fi、YMO 周邊 | 28 | ar-d-204 | ✅ 上線 28（跳過 0 位已在池；收 26 位，不收 2 位：ILL BONE 無合格錄音室作、Buddhablessyou 查無；試聽 ready 24／unavailable 4；頂點 0；藝人介紹 26 位 → ar-d-204 cut） |
+| sf05 | 台灣華語：流行、R&B、獨立樂團 | 27 | ar-d-205（✅ 介紹上線 17／skipped 3） | ✅ 上線 24（跳過 1 位已在池；不收 6 位） |
 | sf06 | 華語其他、港、韓、泰；未確定身分的華語名 | 29 | ar-d-206 | 派→Spotify 補卡 sf06、sf08 |
-| sf07 | 西洋 60–80 年代：迷幻、prog、硬搖滾、krautrock、post-punk | 35 | ar-d-207 | ✅ 上線 47（跳過 0 位已在池；不收 3 位） |
+| sf07 | 西洋 60–80 年代：迷幻、prog、硬搖滾、krautrock、post-punk | 35 | ar-d-207（✅ 介紹上線 32／skipped 0） | ✅ 上線 47（跳過 0 位已在池；不收 3 位） |
 | sf08 | 西洋 90 年代至今：獨立、alt、迷幻、shoegaze、民謠 | 41 | ar-d-208 | 派→Spotify 補卡 sf06、sf08 |
 | sf09 | 爵士（含日韓爵士、ECM、世界爵士） | 41 | ar-d-209 | ✅ 上線 39（跳過 4 位已在池；收 32 位，不收 2 位：Jon Christensen 無領銜盤、Multiverse 是台灣嘻哈廠牌帳號；頂點 0；藝人介紹 32 位 cut） |
 | sf10 | 電子、實驗、新古典鋼琴、house | 33 | ar-d-210 | ✅ 上線 37（跳過 0 位已在池；收 32 位，不收 1 位：Gibran Alcocer 只有 EP；頂點 0；藝人介紹 33 位 cut） |
-| sf11 | 冷門與身分待查（電子、lo-fi、小廠牌） | 35 | ar-d-211 | 派→Spotify 補卡 sf11、sf12 |
-| sf12 | 嘻哈、R&B、靈魂、流行、以色列 | 32 | ar-d-212 | 派→Spotify 補卡 sf11、sf12 |
+| sf11 | 冷門與身分待查（電子、lo-fi、小廠牌） | 35 | ar-d-211 | ✅ 上線 24（跳過 1 位已在池：Scattered Purgatory＝破地獄；收 24 位，不收 10 位：只有單曲／EP／remix 或身分連不上 Spotify；頂點 0；藝人介紹 24 位 cut） |
+| sf12 | 嘻哈、R&B、靈魂、流行、以色列 | 32 | ar-d-212 | ✅ 上線 35（跳過 0 位已在池；收 30 位，不收 2 位：The Flexibles、KbN 身分釘不住；頂點 0；藝人介紹 30 位 cut） |
 
 - `coveredBySf01`：Bardo Pond、My Sleeping Karma、Ningen Isu、Klimeks、Patrick Holland、冠宇、烏賊紳士。這幾位的指定盤在 sf01，sf02–12 不再挑。
 - `skipLabels`：Flow State Records、War Child Records、Chicago Blues Radio 是廠牌或頻道，不是藝人，不收。其他看起來像廠牌或合輯帳號的（例 Tokimeki Records、Fresh Moods、Food-Spotter），在策展層查明後自行裁定，寫進 rulings。
@@ -55,3 +55,16 @@
 - 驗 gate 時發現 `mbAbsenceProof` 必須是物件（queries／checkedAt／conclusion），策展與 build-cards 產的是字串——上線前要轉；重查時還抓到 2 張其實 MB 有條目（Karencici、Martin & Garp），改釘住。
 - 藝人介紹名冊每批一檔 `batch-progress/artist-intro/roster-<批>.json`（格式：`{generatedAt, source, addedBy, artists, entries:[roster-20260929 同欄位]}`），progress.json 追加預留號 state cut、`desc-tools/batches/artist/cut/<號>.txt`。
 - 情緒評分兩批共用 `batch-progress/mood-axes/score-sf0507/`（select／merge 複製自 score-ml59）。
+
+## sf11／sf12 收工筆記（2026-10-30）
+- **策展層沒有 Spotify 熱門曲就會誤判冷門名**：sf11a 第一輪 9 位判不收，主線抓 `open.spotify.com/embed/artist/<id>` 的熱門曲（`__NEXT_DATA__` 的 trackList）發回重查，補回 Caldera、DJ Toner、Doctor Butcher 等 4 位。之後各批策展開工前先把熱門曲表發給代理。
+- **iTunes Search API 會長時間 403 限流**（本工作階段兩度、各十幾分鐘）：meta 的 Apple 候選大量落空時，改從 MB `release?release-group=<id>&inc=url-rels` 取 Apple 串流連結的 collectionId，再 lookup 逐軌核對，比重搜準。
+- gate 前重查 MB 又抓到 2 張人工卡其實有條目（Offset: Spectacles 在 MB 以原文名「憬觀：像同叠」登錄、記號士），改釘住——人工身分卡上線前一律用原文名再查一次。
+- 研究層會推翻主線策展的國別（Offset 主線改 us 是錯的，研究證實是香港團）；主線策展改欄位要有來源，不要憑廠牌所在地推。
+
+## sf03／sf04 收工筆記（2026-10-30）
+- **條號**：sf03 用 41201–41280、sf04 用 41301–41380（sfNN → 41001＋(NN−1)×100；30000＋批號×100 制的 303xx 已被舊 c 批佔用）。
+- **策展給的「已在池」要回查 seed**：sf04b 把 U.TA屋塔判成「已在 curation-ml4」跳過，其實 ml4 研究層汰掉、從未上線；主線補收。判準只看 seed／卡池，不看別線的策展檔。
+- **現場盤、EP 要研究層才抓得到**：スズキジュンゾ《Ode to a Blue Ghost》是三首現場 CD-R（換《Buried Sky, Spider Torn To Pieces》）；ILL BONE《死者》原版 4 曲 EP、《日本》是合輯＋現場 → 整位不收。
+- 研究層偶爾交 `status: partial`，research-base 只認 full／thin，主線改值後 qa 才算數。
+- `genre-l3-artist-map.json` 的 `_note` 欄已是逐字拆開的字元陣列（舊批遺留），不影響建樹，沒動。

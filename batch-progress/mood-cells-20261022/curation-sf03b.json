@@ -1,0 +1,451 @@
+{
+ "group": "sf03b",
+ "factions": [
+  {
+   "id": "jp-psych",
+   "zh": "日本迷幻／重搖滾",
+   "count": 4,
+   "why": ""
+  },
+  {
+   "id": "jp-avant",
+   "zh": "日本前衛／drone",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-wagakki",
+   "zh": "和樂器與民謠即興",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "jp-electone",
+   "zh": "電子琴 Electone",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "jp-jazz",
+   "zh": "日本爵士",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "jp-folk",
+   "zh": "日本民謠／soft rock",
+   "count": 2,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "陳信輝",
+   "album": "Shinki Chen & His Friends",
+   "year": 1971,
+   "label": "Philips",
+   "country": "jp",
+   "faction": "jp-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "日本 GS 後期的迷幻吉他手唯一個人名義專輯，扭曲的 fuzz 吉他與 Tokyo 當年的搖滾老手合奏，常被列為日本迷幻搖滾金字塔作品",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 2.0,
+    "why": "fuzz 吉他長奏、鬆散迷幻即興"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7c742b9b-32c7-308f-925f-5312176f3641",
+    "https://coverartarchive.org/release-group/7c742b9b-32c7-308f-925f-5312176f3641/front"
+   ],
+   "spotifyName": "Shinki Chen",
+   "mbRgMbid": "7c742b9b-32c7-308f-925f-5312176f3641",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Shinki Chen / 陳信輝 / シンキ・チェン",
+   "uncertain": "Spotify 專輯名顯示為 Shinki Chen，對應 MB 的 Shinki Chen & His Friends；label 待核"
+  },
+  {
+   "artist": "Far Out",
+   "album": "日本人",
+   "year": 1973,
+   "label": "Denon",
+   "country": "jp",
+   "faction": "jp-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "Far East Family Band 前身、宮下富実夫領軍，兩面各一首長篇，皮克·佛洛伊德式空間搖滾混日本民謠旋律，唯一專輯",
+   "moodGuess": {
+    "x": 1.0,
+    "y": -0.3,
+    "z": 2.5,
+    "why": "兩首長篇、空間感合成器與民謠旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ad6170cf-0e64-4a2c-bb66-7a2e05c635fe",
+    "https://coverartarchive.org/release-group/ad6170cf-0e64-4a2c-bb66-7a2e05c635fe/front",
+    "https://music.apple.com/us/album/nihonjin/1529081568"
+   ],
+   "spotifyName": "ファーラウト",
+   "mbRgMbid": "ad6170cf-0e64-4a2c-bb66-7a2e05c635fe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Far Out / ファーラウト / Nihonjin",
+   "uncertain": "Spotify 的 Far Out 與池中可能的同名樂團要分；Apple 標 1971，MB 與多數來源 1973；MB 日文名與 Far East Family Band 前身關係待池中比對"
+  },
+  {
+   "artist": "東方沙羅",
+   "album": "東方沙羅",
+   "year": 1995,
+   "label": "P.S.F. Records",
+   "country": "jp",
+   "faction": "jp-avant",
+   "genres": [
+    "world",
+    "electronic"
+   ],
+   "why": "南條麻人、川端稔、安田壽組成，琵琶、錫杖、鑼與電子的暗黑 drone，P.S.F. 日本前衛神祕主義代表",
+   "moodGuess": {
+    "x": -0.5,
+    "y": -1.5,
+    "z": 3.0,
+    "why": "drone 低鳴、琵琶與鑼、陰暗儀式感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ecef3112-a1ce-41c8-a812-238081d3dac0",
+    "https://coverartarchive.org/release-group/ecef3112-a1ce-41c8-a812-238081d3dac0/front",
+    "https://www.soundohm.com/product/toho-sara-2lp"
+   ],
+   "spotifyName": "Toho Sara",
+   "mbRgMbid": "ecef3112-a1ce-41c8-a812-238081d3dac0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Toho Sara / 東方沙羅",
+   "uncertain": "池中 Sa-Ra 只是誤中，不是同一位"
+  },
+  {
+   "artist": "三橋貴風 & 山屋清",
+   "album": "Komuso World In Shakuhachi 尺八 虚無僧の世界",
+   "year": 1977,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-wagakki",
+   "genres": [
+    "world"
+   ],
+   "why": "尺八名家三橋貴風與山屋清合奏虛無僧古曲，本曲（本曲）傳統的靜謐原典錄音，近年因日本和樂器爵士熱被重新發現",
+   "moodGuess": {
+    "x": 0.5,
+    "y": -1.8,
+    "z": 1.5,
+    "why": "尺八氣聲、極簡留白、傳統本曲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ea7adc5b-25bb-43b1-a92a-0d445cd51b7f",
+    "https://coverartarchive.org/release-group/ea7adc5b-25bb-43b1-a92a-0d445cd51b7f/front",
+    "https://music.apple.com/jp/album/1677729160"
+   ],
+   "spotifyName": "Kifu Mitsuhashi",
+   "mbRgMbid": "ea7adc5b-25bb-43b1-a92a-0d445cd51b7f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Kifu Mitsuhashi / 三橋貴風 / 山屋清",
+   "uncertain": "label 待核；MB 掛在三橋貴風名下，Apple 掛山屋清&三橋貴風；備選《尺八 海の詩》1976"
+  },
+  {
+   "artist": "関藤繁生",
+   "album": "Special Sound Series Vol. 2",
+   "year": 1975,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-electone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "電子琴（Electone）名家關藤繁生最知名的一張，內含《The Word II》（Mac DeMarco 翻唱），復古合成音色的日式 lounge",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.5,
+    "z": 0.5,
+    "why": "Electone 合成音色、輕快旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/80389fbb-3021-46c9-8b63-b5241faaf796",
+    "https://coverartarchive.org/release-group/80389fbb-3021-46c9-8b63-b5241faaf796/front",
+    "https://en.wikipedia.org/wiki/Sekit%C5%8D_Shigeo"
+   ],
+   "spotifyName": "SHIGEO SEKITO",
+   "mbRgMbid": "80389fbb-3021-46c9-8b63-b5241faaf796",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Shigeo Sekito / 関藤繁生 / 関藤 繁生",
+   "uncertain": "label 待核；Spotify 常標 Shigeo Sekito 'Special Sound Series Vol.2 The Word'"
+  },
+  {
+   "artist": "関藤繁生",
+   "album": "華麗なるエレクトーン -キャッチ・イン・アリス- (Special Sound Series Vol. 1)",
+   "year": 1975,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-electone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "同年第一彈，電子琴改編流行曲與原創，另一個公認高峰",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.6,
+    "z": 0.4,
+    "why": "Electone 閃亮音色、flip 節奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6bf1da91-40e8-4dc8-beb8-fe6bff930475",
+    "https://coverartarchive.org/release-group/6bf1da91-40e8-4dc8-beb8-fe6bff930475/front"
+   ],
+   "spotifyName": "SHIGEO SEKITO",
+   "mbRgMbid": "6bf1da91-40e8-4dc8-beb8-fe6bff930475",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Shigeo Sekito Catch in Alice",
+   "uncertain": "第二張可選；盤名以 MB 為準"
+  },
+  {
+   "artist": "Sinsuke Fujieda Group",
+   "album": "Informel",
+   "year": 2021,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "薩克斯風手藤枝伸介率領的日本爵士團體，抽象爵士模式與日本民謠節奏混合，主要錄音室專輯",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 0.5,
+    "z": 1.5,
+    "why": "薩克斯風即興、抽象爵士"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2217e56b-0463-4a77-a322-3a67f7400d6c",
+    "https://coverartarchive.org/release-group/2217e56b-0463-4a77-a322-3a67f7400d6c/front",
+    "https://music.apple.com/jp/album/informel/6803779123"
+   ],
+   "spotifyName": "Sinsuke Fujieda Group",
+   "mbRgMbid": "2217e56b-0463-4a77-a322-3a67f7400d6c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Shinsuke Fujieda / 藤枝伸介",
+   "uncertain": "Apple 標 2026（再發），MB 2021；label 待核；MB 另有 Shinsuke Fujieda 為同人不同拼"
+  },
+  {
+   "artist": "Sinsuke Fujieda Group",
+   "album": "FUKUSHIMA",
+   "year": 2025,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "同團近作，以福島為題的長篇爵士專輯，另一個創作高峰",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 0.3,
+    "z": 1.8,
+    "why": "薩克斯風與節奏組的長篇即興"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c21f7f2c-8752-43fb-a9d0-cd11aec6092c",
+    "https://coverartarchive.org/release-group/c21f7f2c-8752-43fb-a9d0-cd11aec6092c/front",
+    "https://music.apple.com/jp/album/fukushima/1809524899"
+   ],
+   "spotifyName": "Sinsuke Fujieda Group",
+   "mbRgMbid": "c21f7f2c-8752-43fb-a9d0-cd11aec6092c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "第二張可選，評價證據較薄；另有 Complete Edition"
+  },
+  {
+   "artist": "田畑満",
+   "album": "Lucifer",
+   "year": 2010,
+   "label": "Compare Notes",
+   "country": "jp",
+   "faction": "jp-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "川端稔（Acid Mothers Temple）周邊的迷幻重搖滾吉他手，與川端合作的長篇迷幻作品，Progarchives 有收錄",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 1.5,
+    "z": 2.5,
+    "why": "重迷幻吉他噪音長奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a842b45b-07a8-4c3c-acc0-afe70796eebd",
+    "https://coverartarchive.org/release-group/a842b45b-07a8-4c3c-acc0-afe70796eebd/front",
+    "https://www.progarchives.com/album.asp?id=35631",
+    "https://music.apple.com/jp/album/lucifer/1524901326"
+   ],
+   "spotifyName": "Mitsuru Tabata",
+   "mbRgMbid": "a842b45b-07a8-4c3c-acc0-afe70796eebd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Mitsuru Tabata / 田畑満",
+   "uncertain": "評論共識證據薄（僅 Progarchives 4 票）；Spotify 另有 Get the Car 2019、Musica Non Grata；Compare Notes 為搜尋結果所載"
+  },
+  {
+   "artist": "Sam Gendel & Shin Sasakubo",
+   "album": "Sam Gendel & Shin Sasakubo",
+   "year": 2021,
+   "label": "Leaving Records",
+   "country": "jp",
+   "faction": "jp-wagakki",
+   "genres": [
+    "folk",
+    "jazz"
+   ],
+   "why": "秩父出身的古典吉他手笹久保伸與 Sam Gendel 的合作，薩克斯風與吉他的低調即興，笹久保最廣為人知的一張",
+   "moodGuess": {
+    "x": 0.8,
+    "y": -1.5,
+    "z": 1.2,
+    "why": "清脆吉他撥弦、低語薩克斯風"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/2432284-Sam-Gendel-Shin-Sasakubo-Sam-Gendel-Shin-Sasakubo",
+    "https://music.apple.com/jp/album/1592958341"
+   ],
+   "spotifyName": "Shin Sasakubo",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 以 releasegroup Sam Gendel & Shin Sasakubo 查詢無結果（2026-10-30）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/2432284-Sam-Gendel-Shin-Sasakubo-Sam-Gendel-Shin-Sasakubo",
+    "https://music.apple.com/jp/album/1592958341"
+   ],
+   "releaseException": "",
+   "queryAlias": "Shin Sasakubo / 笹久保伸",
+   "uncertain": "署名為二人合作；若池規只認單人名義，備選 Chichibu 2021（Discogs master 2554352）；MB 藝人 090b9a8a 只收 2 張；label 為記憶需核"
+  },
+  {
+   "artist": "狩生健志",
+   "album": "Sekai",
+   "year": 2021,
+   "label": "Bruit Direct Disques",
+   "country": "jp",
+   "faction": "jp-psych",
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "why": "OWKMJ 主腦的個人專輯，疫情期間幾乎獨力完成，14 首鬆散迷幻 bedroom pop，法國 Bruit Direct 發行後被西方樂迷發現",
+   "moodGuess": {
+    "x": 1.5,
+    "y": -0.5,
+    "z": 0.8,
+    "why": "鬆軟合成器、低保真人聲"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/16305497-Kenji-Kariu-Sekai",
+    "https://tobirarecords.com/products/kariu-kenji-sekai-lp",
+    "https://music.apple.com/jp/album/1543009386"
+   ],
+   "spotifyName": "Kenji Kariu",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 藝人 狩生健志 f6cd0e28 僅有 KK、KK2 兩張，Sekai 無 release-group（2026-10-30）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/16305497-Kenji-Kariu-Sekai",
+    "https://tobirarecords.com/products/kariu-kenji-sekai-lp"
+   ],
+   "releaseException": "",
+   "queryAlias": "Kenji Kariu / 狩生健志 / 狩生 健志",
+   "uncertain": "年份 Discogs 2020、Forced Exposure/Apple 2021；備選 Rain / Water 2024（Bruit Direct）"
+  },
+  {
+   "artist": "バズ",
+   "album": "Buzz",
+   "year": 1973,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-folk",
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "why": "1972 年以《ケンとメリー〜愛と風のように〜》走紅的日本民謠搖滾團，首張專輯含該曲系列的柔和旋律",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 0.2,
+    "z": 0.0,
+    "why": "原聲吉他與柔和合聲的 70 年代日本民謠"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1625254-Buzz-29-Buzz",
+    "https://musicbrainz.org/artist/30645ba2-ace0-4f22-bf43-fd2dcef02dd3"
+   ],
+   "spotifyName": "BUZZ",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 藝人 バズ 30645ba2 無 release-group（2026-10-30）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1625254-Buzz-29-Buzz",
+    "https://www.discogs.com/artist/2366336-Buzz-29"
+   ],
+   "releaseException": "",
+   "queryAlias": "Buzz / バズ / BUZZ (JP folk)",
+   "uncertain": "Spotify 的 BUZZ 是否為這組日本民謠團未能驗證（iTunes 查詢失敗）；同名者：Korean 버즈、Da Buzz、Buzzcocks 不同；label 待核"
+  },
+  {
+   "artist": "バズ",
+   "album": "Gentle Mind From Buzz",
+   "year": 1976,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-folk",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "70 年代中期轉向 soft rock／AOR 的成熟之作，同樣是 Discogs 上列於主項的重要專輯",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": -0.2,
+    "why": "柔和 soft rock、乾淨編曲"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/2491537-Buzz-29-Gentle-Mind-From-Buzz"
+   ],
+   "spotifyName": "BUZZ",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 藝人 バズ 30645ba2 無 release-group（2026-10-30）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/2491537-Buzz-29-Gentle-Mind-From-Buzz",
+    "https://www.discogs.com/artist/2366336-Buzz-29"
+   ],
+   "releaseException": "",
+   "queryAlias": "Buzz / バズ",
+   "uncertain": "第二張，Requiem The City 1974 為備選；評價證據僅來自 Discogs 類型標籤"
+  }
+ ],
+ "notes": [
+  "全部 10 位皆未在池中（Toho Sara 僅誤中 Sa-Ra、BUZZ 僅誤中 Buzzcocks 等，非同人）。",
+  "身分：Shinki Chen＝陳信輝；ファーラウト＝Far Out（日本 1973，Far East Family Band 前身）；Toho Sara＝東方沙羅；Kifu Mitsuhashi＝三橋貴風；SHIGEO SEKITO＝関藤繁生；Mitsuru Tabata＝田畑満；Shin Sasakubo＝笹久保伸；Kenji Kariu＝狩生健志；BUZZ＝バズ（1972 日本民謠搖滾團），同名者韓國 버즈、Da Buzz、Buzzcocks 非本人。",
+  "Mitsuhashi 備選：尺八 海の詩 1976；Sasakubo 備選 Chichibu 2021；Kariu 備選 Rain / Water 2024、KK 2009 (MB 5b45f0b1，CAA 無封面)。",
+  "label 未驗證者留空，不確定處見各張 uncertain。iTunes API 對多筆查詢失敗，封面主要靠 CAA 200 與 Discogs。"
+ ]
+}
