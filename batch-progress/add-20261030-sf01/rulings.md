@@ -136,3 +136,7 @@
 
 ### 本批新藝人（無介紹）
 The RH Factor、Albert Mangelsdorff Quintet、Czarface & Ghostface Killah、Bent Fabric、Klimeks、Corporate、Kay Hoffman、Dome、Toshinori Kondo, Eraldo Bernocchi & Bill Laswell、Dezső Ránki、Derya Yıldırım & Grup Şimşek、Arthur Flink & Son of Chi、Meiko Miyazawa 宮沢明子、Manfred Reuthe、Misc、İdil Biret、John McLaughlin & The One Truth Band、Project Pablo、冠宇、張震嶽、My Sleeping Karma、Bardo Pond、人間椅子、Bardo Pond, Acid Mothers Temple & Guru Guru、Juzzy Orange & GoodieK、Smasher、蕭亞軒、Drive Like Jehu、青春大衛、烏賊紳士（30 位 → ar-d-201）
+
+## 情緒評分（score-sf0102；2026-10-30）
+- 判準照 `batch-progress/mood-axes/RULES.md`，Opus 一支打本批 chunk（不上網，讀研究稿 facts 與簡介成品），本線不算落格率。八格：放鬆 10、暴躁 10、頹靡 6、雀躍 4、沸騰 2、冷冽 2、恍惚 1、平靜 1（conf high 1／mid 22／low 13）。主線逐張抽看 why 與座標，無明顯違反 RULES 的判法（Ligeti 練習曲判躁、Bardo Pond 慢嗡鳴判靜重等皆照規則），未覆寫。
+- `merge.mjs`（81 張 0 錯）→ `build-priors.mjs` → `build-scale.mjs v0`（錨點 104/104 同格）→ `scripts/build-card-moods.mjs` **mood gate 通過**（seed 21,975 張全有座標）。
