@@ -42,3 +42,13 @@
 - **49916**　Marian Hill《Act One》：Atwood 評論有詳細聲音描述（彈指／啪聲／beat drop／即興薩克斯風 Steve Davit）。〈Down〉Hot 100 第 21 名與雙白金為維基單源（自標 citation needed）。不寫「沒有鼓」（未證）。
 - **49917**　Kris Kross《Totally Krossed Out》：無推翻；4 白金、逾 400 萬張為維基無出處段落，用語保守；維基 Jump 條未提 Jackson 5 取樣，不寫。
 - **49918**　b 組 7 張 facts 條數 10／10／10／10／10／10／10，https 全過，無千分位逗號、無簡體；status thin／full／full／full／full／thin／full。推翻策展層 1 處（KMD《Black Bastards》廠牌與年份）。
+
+## 研究 a 組
+- **49901**　Attica Blues《Attica Blues》：MB／Discogs master 69413 核實，1997 Mo' Wax（MW080LP，A&M 共有版權）；無推翻。團名取自 Archie Shepp 1972 同名專輯，與 Shepp 卡區分。聲音證據僅 Discogs 風格 Downtempo＋製作名單，無樂評原文（AllMusic 403、MusicRadar 內文被截斷）；moodGuess 與風格一致。
+- **49902**　Biig Piig《11:11》：核實 2025-02-07，RCA／Sony。策展層稱「當代 R&B」不成立：Discogs 風格 Indie Pop／House／Nu-Disco，BPM 稱 electronic pop，聲音與評分別套 R&B。Zach Nahome 製作人署名僅 Discogs 單源。moodGuess 大致吻合，不存疑。
+- **49903**　Blubell《Confissões de Camarim》：廠牌空白屬實，為自行發行（Apple ℗ Blubell、MB [no label]），非待核。2016-08-19、11 首核實；RS 巴西版稱第五張專輯、第四張原創。Zeca Baleiro 合作曲推論為〈A Tardinha〉（單源間接）。moodGuess 存疑：「明亮巴西流行搖滾」查無聲音證據，只知單曲被稱 relaxante、樂手為吉他／鍵盤／鼓／貝斯；聲音薄，status thin。
+- **49904**　Def Squad《El Niño》：1998-06-30 Def Jam（維基另列 Def Squad Records、Jive）核實，Billboard 200 第 2、金唱片。moodGuess 存疑（輕度）：funk 取樣查無證據（維基只列外部作者署名，是否取樣未證實）；聲音薄，status thin。
+- **49905**　Destin Conrad《Love on Digital》：年份 2025-04-25 核實，無 2022 首發版（2022 是 EP《Satin》）。廠牌 Above Ground Ent／Empire。第 68 屆葛萊美最佳前衛 R&B 專輯入圍（未得）。moodGuess 存疑：藝人自述想做輕快、可跳舞的 2000–2008 數位 R&B，慢拍僅〈Make It Up〉等少數；「慢拍、厚暖合成器」不成立，評分以明快為底。
+- **49906**　Dinner Party《Dinner Party》：推翻策展層「唯一正規專輯」——另有《Enigmatic Society》（2023）、《Whatchu Bringing?》（2026）。2020-07-10 Sounds of Crenshaw／Empire 核實；維基視為 EP（7 首約 23 分），MB 為 Album，照收。第 64 屆葛萊美最佳前衛 R&B 專輯入圍。Phoelix 四首（DownBeat 寫五首，採 Discogs／Okayplayer）。
+- **49907**　Jason Derulo《Jason Derülo》：年份 2010 無誤，確切日期各地不同（2/24、2/26、3/2），入文只寫年份。廠牌 Beluga Heights／Warner Bros. 核實，盤名保留 Derülo。無存疑。
+- **49908**　a 組 7 張 facts 條數 10／11／10／9／10／10／9，https 全過，無千分位逗號、無簡體；status full／full／thin／thin／full／full／full。推翻策展層 2 處（Biig Piig R&B 定性、Dinner Party「唯一」）；moodGuess 存疑 3 張（Blubell、Destin Conrad、Def Squad 輕度）。Wikipedia API 被限流，改用 WebFetch／Discogs API／MB；Billboard、Essence、AllMusic 未能開啟。
