@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 976 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 984 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -980,3 +980,11 @@
 | ar-d-202 | Wink | Especially For You ～優しさにつつまれて～ | 兩人都是少年雜誌選拔的優勝者 | 日文維基寫兩人是 Miss UP 的入賞者，英文維基寫 1987 年分別為第 7、9 名，並非優勝 | https://ja.wikipedia.org/wiki/Wink |
 | ar-d-202 | COHOL | 空洞 | 帶 grindcore 色彩的神奈川黑金屬團 COHOL | ZT Magazine 2015 訪談標題與內文稱 COHOL 為東京據點樂團，Last.fm 摘要同；未找到任何出處寫神奈川 | https://www.ztmag.com/news/zt-interrogation-facing-reality-with-tokyos-cohol/ |
 | ar-d-202 | 静香 | 天界のペルソナ | 静香一手主導：唱歌、彈吉他、搖鈴，詞曲與概念全包 | 英文維基稱吉他由三浦マキ演奏、静香負責緩慢吟誦式人聲，『彈吉他』疑為マキ；詞曲全包無來源確認 | https://en.wikipedia.org/wiki/Shizuka_(band) |
+| ar-d-205 | 吳書齊 | 鹿港 | 吳書齊本人彈鋼琴；『四人共同作曲』 | 事實庫唯一來源 Discogs 登記作曲為 Suchi Wu、Kevin James、Martijn Vanbuel、Toshihiro Wakaike 四人，上線簡介寫吳書齊彈鋼琴、四人共同作曲；Discogs 作曲名單與編制人名是否一致未能複核，僅供店主參考 | https://www.discogs.com/release/29454466 |
+| ar-d-207 | Frijid Pink | Frijid Pink | 一位電台音樂總監聽了，建議廠牌改推這首 | Stevers 本人訪談稱是 Dearborn AM 電台經理（station manager）；Michigan 名人堂與維基稱 DJ／音樂總監 Paul Cannon。職稱兩說並存，建議簽改寫『一位電台人士』 | https://classicbands.com/FrijidPinkInterview.html |
+| ar-d-207 | Frijid Pink | Frijid Pink | 在一次錄音預約剩下的時間即興錄下 | Michigan 名人堂稱 1967 年 session 一次錄成，與維基『session 尾端的填充曲』大致一致，無錯；僅備查 | https://michiganrockandrolllegends.com/hall-of-fame/artists/330-frijid-pink |
+| ar-d-207 | Gravy Train | (A Ballad of) A Peaceful Man | 歌詞不明講，卻都從基督教觀點出發，在英國前衛圈很少見 | Barratt 原話是『不明顯，但確實是從基督徒的觀點寫的』；『在英國前衛圈很少見』是簡介自己的判斷，無來源（Barratt 自己的說法只涵蓋歌詞立場）；『都』也過滿 | https://en.wikipedia.org/wiki/Gravy_Train_(band) |
+| ar-d-207 | Gravy Train | (A Ballad of) A Peaceful Man | 本作為其第二張（維基首作年份 1970／1971 自相矛盾） | 維基導言稱首作 1971，discography 稱 1970；Progressive Aspect 稱首作 1970、本作 1971。上線簡介不寫首作年份，無錯，僅備查 | https://theprogressiveaspect.net/blog/2016/11/21/gravy-train-second-birth-staircase-to-the-day/ |
+| ar-d-207 | The West Coast Pop Art Experimental Band | Part One | 有錢的律師出資搞定合約，Markley 就是那位律師 | 維基稱 Markley 是『有錢的花花公子／有抱負的音樂人』，toppermost 稱石油富豪養子，只有一篇搜尋摘要稱其為律師；建議改成『有錢的 Bob Markley』 | https://www.toppermost.co.uk/west-coast-pop-art-experimental-band-the/ |
+| ar-d-207 | The Cosmic Jokers | Galactic Supermarket | 老闆是 Dieter Dierks，他的錄音室是西德 krautrock 的重鎮 | 廠牌老闆是 Rolf-Ulrich Kaiser，Dierks 是錄音室老闆兼製作／混音；『老闆』易讀成廠牌老闆。另『樂手常被老闆的母親餵飽』『在 Stommeln 錄音』本層沒查到出處 | https://en.wikipedia.org/wiki/The_Cosmic_Jokers |
+| ar-d-207 | Tully | Tully | 鍵盤手 Michael Carlos 買了一台 Moog，讓 Tully 成了澳洲第一支在現場用 Moog 的樂團 | 維基與 Milesago 轉述都用 reportedly（據稱）；上線簡介寫成確定句，建議加『據稱』 | https://en.wikipedia.org/wiki/Tully_(band) |

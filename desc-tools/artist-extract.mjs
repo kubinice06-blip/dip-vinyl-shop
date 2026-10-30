@@ -46,6 +46,10 @@ const rosterFile = fs.readdirSync(path.join(ROOT, 'batch-progress/artist-intro')
 const roster = new Map(JSON.parse(fs.readFileSync(path.join(ROOT, 'batch-progress/artist-intro', rosterFile), 'utf8'))
   .entries.map(e => [e.key, e]))
 
+// 上架批另存的補充名冊（roster-sf05.json 這類非日期檔）一併讀；主名冊是單行 JSON，並行工作階段一起改必撞（2026-10-30）
+for (const f of fs.readdirSync(path.join(ROOT, 'batch-progress/artist-intro')).filter(f => /^roster-.+\.json$/.test(f) && !/^roster-\d+\.json$/.test(f)))
+  for (const e of JSON.parse(fs.readFileSync(path.join(path.join(ROOT, 'batch-progress/artist-intro'), f), 'utf8')).entries || []) if (!roster.has(e.key)) roster.set(e.key, e)
+
 const missing = keys.filter(k => !roster.has(k))
 if (missing.length) { console.error('名冊裡沒有這些鍵：', missing.join('、')); process.exit(1) }
 const want = new Set(keys)

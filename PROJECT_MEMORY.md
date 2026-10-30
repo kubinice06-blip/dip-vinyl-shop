@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-30｜dip-vinyl-shop｜藝人介紹 ar-d-205（sf05 台灣華語）＋ar-d-207（sf07 西洋 60–80）上架 49 位
+
+- **ar-d-205**：20 位 → 上架 17（7 full、10 thin），skipped 3（頭部組成者、吳書齊、狗毛：素材不到 thin 門檻）。審稿修 2 位（宝島材料行補 vocus 第二源、聲子蟲開場句改樂團自述口氣）。
+- **ar-d-207**：32 位全上架（23 full、9 thin）。審稿修 7 位（Atomic Rooster 編制句、Jade Warrior Eno 評語、Ikarus、Jazz Butcher、Martin & Garp 去「二人組」；Tully、Martin & Garp、Ratledge 補第二源）；Ratledge 2025 辭世以 WebSearch 核實。Zaratustra 照實寫成 Jodorowsky 舞台劇原聲。
+- **名冊**：不再把新藝人併進單行主名冊 `roster-20260929.json`（並行必撞）；`artist-extract.mjs`、`artist-alias.mjs`、`scripts/build-artist-intros.mjs` 改為一併讀 `roster-sf*.json` 這類補充名冊（主名冊優先）。ar-d-201／202／209／210 可直接用。
+- 藝人介紹 6,177 → 6,226（併 main 的 ar-d-201／202 後 6,281）；pubIssues 新增 8 條（ARTIST-PUB-ISSUES.md）。
+- **主要檔案**：`desc-tools/batches/artist/{facts,research,output}/ar-d-20{5,7}-*`、`progress.json`、`data/artist-intros/*`、`audits/ARTIST-PUB-ISSUES.md`、`batch-progress/artist-intro/ar-c-rulings.md`、`batch-progress/spotify-follow-20261030/PLAN.md`、上述三支腳本。
+- **驗證**：qa-artist gap／out 兩批皆 0 處；build-artist-intros 併 main 後重跑：334 份成品、6,281 位、64 分片。
+
 ### 2026-10-30｜dip-vinyl-shop｜藝人介紹 ar-d-201／202 上線（Spotify 補卡 sf01＋sf02，55 位）
 
 - **改動**：照 `dip-artist-intro` skill 跑完兩批（萃取 --lean、維基預抓、補洞 6 組 Sonnet、寫作 4 組 Opus、qa-artist、主線逐位審稿、alias、issues、建分片）。
