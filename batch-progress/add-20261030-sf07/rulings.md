@@ -16,6 +16,18 @@
 - 交研究層把關：Pierrot Lunaire 兩張廠牌（策展憑記憶填 Grog）、Ikarus 廠牌、Eyeless in Gaza《Pale Hands》首發年（MB 空）、Peter Kaukonen 封面（CAA 無，用 Discogs）、Slow Dancer 國別、Tully／Paul Davis 廠牌。
 - 跨分支去重：對 origin/main 與 10-28 後更新的 `claude/*` 分支 seed 查藝人名、別名、Spotify 寫法，0 撞。
 
+## 研究 a 組（30701–30710）
+- 30701：全 10 張 MB 釘住的身分、年份、廠牌、正規錄音室專輯皆核對無誤（MB 釋出資料與英文維基交叉）；status 全 full，每張 10 條 facts、皆 https。
+- 30702：推翻策展層 1 處：Gravy Train 並非「曼徹斯特」團，而是蘭開夏聖海倫斯成軍（主腦 Barratt 生於 Newton-le-Willows）；facts 照維基樂團條目寫。
+- 30703：Atomic Rooster《Death Walks Behind You》維基記 1970 年 9 月、MB 最早登錄 1970-12；卡單年份 1970 不動，facts 兩邊並陳。
+- 30704：Atomic Rooster《In Hearing Of Atomic Rooster》正名其實是《In Hearing of》，MB 與維基皆如此；卡單 album 欄多了團名（queryAlias 已有），建議顯示用正名。
+- 30705：moodGuess 存疑兩處：(1) Jade Warrior《Last Autumn's Dream》預估「柔和原聲與笛、田園靜謐」，但專輯含〈Snake〉〈The Demon Trucker〉〈Joanne〉等有鼓的硬朗搖滾，整張擺盪於內省器樂與短促硬搖之間，躁度與重度高於預估；(2) Jade Warrior《Floating World》多數曲目安靜，但〈Monkey Chant〉〈Red Lotus〉有鼓與失真吉他爆發，動態大。Black Widow《Sacrifice》主奏是長笛、薩克斯風與風琴，x 預估可能偏高；High Tide《High Tide》AllMusic 稱比首作輕。皆不建議汰換。
+- 30706：Frijid Pink 維基專輯條目標 1970-01-25，與單曲 1970 年 2 月才進 Hot 100 的時序衝突，facts 只寫 1970。
+- 30707：High Tide《Sea Shanties》的〈The Great Universal Protection Racket〉兩個維基條目曲名寫法不一（Confidence Trick／Protection Racket），哪次再版補回未查證，facts 只寫「後來再版補回」。
+- 30708：Gravy Train facts 已把基督教視角寫成團員歌詞背景（樂團條目有訪談來源），屬與作品直接綁定。High Tide 鼓手 Hadden 的健康狀況僅寫「入院」不渲染。
+- 30709：本組沒有彙編、現場、重發；無建議移除。High Tide《High Tide》AllMusic 評價偏低（作者稱像低潮），首作評價明顯較高，若主線需要在兩張間取捨，可考慮；非建議汰換。
+- 30710：來源以英文維基（action=raw）、MusicBrainz API 為主，WebSearch 0 次；聲音描述取自維基引述的 AllMusic／Prog Archives 樂評，未逐一開原頁。
+
 ## 研究 e 組（30741–30750）
 - 30741：Sugarcubes《Here Today, Tomorrow Next Week!》卡單廠牌 One Little Independent 是 2020 年改名後現名，1989 原名 One Little Indian（美國版 Elektra）；正文寫原名或「後改名」，不算推翻。
 - 30742：WCPAEB《Volume 2》正式名《Vol. 2 (Breaking Through)》，樂團第三張、Reprise 第二張；策展 curatorWhy「評價最高」不成立（維基與樂評傳記以《Volume 3》為最成熟），寫作勿稱最高評價。
@@ -26,3 +38,4 @@
 
 ## 主線（條號 30771–30790）
 - **30771** WCPAEB《Volume 2》curatorWhy 去掉「評價最高」（研究 e：維基與樂團傳記以《Volume 3》為最成熟，《Vol. 2》是最有野心的一張；正式名《Vol. 2 (Breaking Through)》）。仍收《Part One》＋《Volume 2》兩張，正文不得寫「評價最高／最佳」。Sugarcubes 廠牌正文寫原名 One Little Indian。
+- **30772** Gravy Train 出身改「蘭開夏聖海倫斯」（研究 a 推翻策展層「曼徹斯特」）。Atomic Rooster 第二張盤名維持封面通行寫法《In Hearing Of Atomic Rooster》（MB 題名《In Hearing Of》，queryAlias 已帶）。High Tide 首作評價明顯高於第二張，兩張照收（可逆，評分照實）。
