@@ -1,16 +1,16 @@
 {
- "產出日期": "2026-10-25",
+ "產出日期": "2026-10-30",
  "minNode": 20,
  "genres": [
   {
    "id": "rock",
    "zh": "搖滾",
-   "count": 5235,
+   "count": 5243,
    "children": [
     {
      "id": "indie-alt",
      "zh": "獨立另類",
-     "count": 1018,
+     "count": 1019,
      "children": [
       {
        "id": "indie-rock",
@@ -25,7 +25,7 @@
       {
        "id": "indie-pop",
        "zh": "獨立流行",
-       "count": 283
+       "count": 284
       },
       {
        "id": "art-exp",
@@ -55,24 +55,24 @@
       {
        "id": "lo-fi",
        "zh": "Lo-fi",
-       "count": 81
+       "count": 82
       }
      ]
     },
     {
      "id": "jrock-asia",
      "zh": "日亞搖滾",
-     "count": 1001,
+     "count": 1014,
      "children": [
       {
        "id": "tw",
        "zh": "台灣",
-       "count": 287
+       "count": 295
       },
       {
        "id": "jp",
        "zh": "日本",
-       "count": 280
+       "count": 285
       },
       {
        "id": "th",
@@ -206,7 +206,7 @@
     {
      "id": "metal",
      "zh": "金屬",
-     "count": 766,
+     "count": 767,
      "children": [
       {
        "id": "trad",
@@ -221,7 +221,7 @@
       {
        "id": "doom",
        "zh": "厄運與粗厚",
-       "count": 176
+       "count": 177
       },
       {
        "id": "death",
@@ -317,12 +317,12 @@
     {
      "id": "dream-post",
      "zh": "音牆後搖",
-     "count": 372,
+     "count": 374,
      "children": [
       {
        "id": "post-rock",
        "zh": "後搖滾",
-       "count": 180
+       "count": 182
       },
       {
        "id": "shoegaze",
@@ -363,7 +363,7 @@
   {
    "id": "jazz",
    "zh": "爵士",
-   "count": 4946,
+   "count": 4949,
    "children": [
     {
      "id": "bop",
@@ -484,7 +484,7 @@
     {
      "id": "contemporary",
      "zh": "當代與 Nu Jazz",
-     "count": 801,
+     "count": 804,
      "children": [
       {
        "id": "nu-jazz",
@@ -635,7 +635,7 @@
   {
    "id": "electronic",
    "zh": "電子",
-   "count": 2817,
+   "count": 2818,
    "children": [
     {
      "id": "ambient",
@@ -946,7 +946,7 @@
     {
      "id": "noise",
      "zh": "實驗與噪音",
-     "count": 293,
+     "count": 294,
      "children": [
       {
        "id": "harsh",
@@ -961,7 +961,7 @@
       {
        "id": "concrete",
        "zh": "具象音樂與拼貼",
-       "count": 76
+       "count": 77
       },
       {
        "id": "glitch",
@@ -1004,12 +1004,12 @@
   {
    "id": "soul",
    "zh": "靈魂放克",
-   "count": 1818,
+   "count": 1820,
    "children": [
     {
      "id": "classic-rnb",
      "zh": "經典 R&B / Doo-wop",
-     "count": 972,
+     "count": 973,
      "children": [
       {
        "id": "funk",
@@ -1105,7 +1105,7 @@
     {
      "id": "neo-soul",
      "zh": "Neo-Soul",
-     "count": 180,
+     "count": 181,
      "children": []
     },
     {
@@ -1137,7 +1137,7 @@
   {
    "id": "hiphop",
    "zh": "嘻哈 R&B",
-   "count": 1599,
+   "count": 1601,
    "children": [
     {
      "id": "underground",
@@ -1319,7 +1319,7 @@
     {
      "id": "asia-rap",
      "zh": "亞洲嘻哈",
-     "count": 88,
+     "count": 90,
      "children": [
       {
        "id": "jp",
@@ -1327,13 +1327,13 @@
        "count": 24
       },
       {
-       "id": "kr",
-       "zh": "韓國",
-       "count": 21
-      },
-      {
        "id": "tw-cn",
        "zh": "台灣與華語",
+       "count": 23
+      },
+      {
+       "id": "kr",
+       "zh": "韓國",
        "count": 21
       }
      ]
@@ -1683,7 +1683,7 @@
   {
    "id": "pop",
    "zh": "流行",
-   "count": 1129,
+   "count": 1137,
    "children": [
     {
      "id": "jp-pop",
@@ -1779,7 +1779,7 @@
     {
      "id": "indie-pop",
      "zh": "獨立流行",
-     "count": 158,
+     "count": 159,
      "children": [
       {
        "id": "dream",
@@ -1789,7 +1789,7 @@
       {
        "id": "bedroom",
        "zh": "Bedroom / Indietronica",
-       "count": 46
+       "count": 47
       },
       {
        "id": "chamber",
@@ -1855,7 +1855,7 @@
     {
      "id": "t-pop",
      "zh": "台灣流行",
-     "count": 83,
+     "count": 90,
      "children": []
     },
     {
