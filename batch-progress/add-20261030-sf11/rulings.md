@@ -110,3 +110,6 @@
   - `desc2:Natural Magic|II`：「距 2015 年那張以團名為題的首作整整十年」→「…隔了十一年」（2015 → 2026-01 是十一年，研究 a 稿：首作 2015 同名專輯）。
   - `desc4:Skip Skip Ben Ben|鏡中鏡 Mirror in Mirror`：「這團人 2015 年…」→「樂團 2015 年…」（措辭）。
 - 其餘 22 張逐張審過，未改字。媒體名、媒體榜單名次、「據說／據傳」grep 0；英國單曲榜第 68 名（Space Raiders）是官方榜，照留。writer-1 把 Parks、Offset、DJ Toner 三張 note 的 Bandcamp 改成不寫平台名，照准。
+- 49873：試聽 ready 23／unavailable 1（The Offset: Spectacles：只在 Bandcamp 與 Trouble In Mind 黑膠發行）。iTunes Search API 本工作階段反覆 403 限流，meta 的 Apple 候選有 4 張落空；改從 MB release 的 Apple 串流連結取 collectionId 再逐軌核對（ERISTHEPLANET fr 1895153780＝6 月 8 首原版，擴充版前八首依原序保留；Posh Inverse tw 1854977511，Apple 藝人名「優雅逆轉」9/9；PUZZLEMAN、記號士用 manualEvidence 的 Apple 頁）。
+- 49874：gate 前重查 MB，**兩張改釘住**：The Offset: Spectacles → RG 849ba641（MB 原文題名 憬觀：像同叠，2011-11-11，artist 憬觀：像同叠 HK）、記號士 → RG c088958c（2014-07-04）。卡名維持英文正規寫法（Spotify／Bandcamp／Apple 皆用 The Offset: Spectacles；記號士照池中雙寫）。PUZZLEMAN MB 藝人與盤皆 count=0，走 §1 人工、mbAbsenceProof 物件化。附帶：Apple tw 的 Posh Inverse 藝人名就是「優雅逆轉」，研究 c 說「無官方來源」不成立，但卡名已定 Posh Inverse（Spotify 寫法），不再回改，藝人介紹時把中文名列為別名。
+- 49875：封面 24 張 live-check 全 200；CAA 21、Bandcamp 1（Offset，官方 Bandcamp 2011 原版頁）、Apple 2（PUZZLEMAN、記號士）。三軸：冷門軸照錨點制改 15 張（`ratings-override.json`；Last.fm 偏低但已進串流的小廠盤一律 4，掛名拆分造成低值的 El Hajar、特撮回 3）。**頂點逐張判定 0 張**：classic 全 3，無殿堂資格；obscurity 改後最高 4，無 pearl 候選。prepare gate 0 error。

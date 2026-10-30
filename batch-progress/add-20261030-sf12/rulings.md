@@ -102,3 +102,5 @@
   - `desc2:Way Out West|Intensify`：「樂評說它以四四拍直拍為主…有寬銀幕般的電影感」→「整張以四四拍直拍為主…帶寬銀幕般的電影感」（聲音事實保留，拿掉樂評歸屬）。
   - `desc2:S.C.A.B.|Somebody in New York Loves You!`：「第三張則選…發行」→「第三張專輯在…發行」（語病）。
 - 其餘 31 張逐張審過，未改字。God Said No 的「lo que será, será」諧音、Kris Kross〈Jump〉MV 拍攝日逢亞特蘭大 20 年來首場雪，研究稿皆有載。媒體名、媒體榜單名次、「據說／據傳」grep 0；英國官方專輯榜（Olivia Dean）、RIAA 認證、葛萊美與 Mercury 入圍照留。
+- 49974：試聽 ready 26／unavailable 9（Attica Blues、Def Squad、JMSN、KMD《Black Bastards》、Franti 兩張、Mr Twin Sister、Onry Ozzborn、Noblemen：Apple 無原盤條目或已下架，逐張理由見 `preview-override.json`）。iTunes Search API 反覆 403 限流，改從 MB release 的 Apple 串流連結取 collectionId 逐軌核對（Lausse、Omar Apollo《Ivory》Apple Music Edition 前 16 軌＝標準版、S.C.A.B.、SND、Saya Gray）；Fortisakharof、激膚 Apple 曲名為拼音／英譯，主線逐軌對照 12/12、10/10。
+- 49975：封面 35 張 live-check 全 200；CAA 32、Apple 2（Blubell、激膚：CAA 404）、Bandcamp 1（Noblemen）。三軸：冷門軸照錨點制改 6 張（Dinner Party 是超級組合、Last.fm 963 為團名拆分造成→2；Beneficiaries 為 Jeff Mills 的 Axis 發行→3；小廠新盤 4），入耳難度改主流流行 6 張。**頂點逐張判定 0 張**：classic 全 ≤3，無殿堂資格；無 pearl 候選。gate 修：Jason Derulo《Jason Derülo》補 selfTitled（ü 與團名差一字但為同名盤）；Maddie Ashman《Her Side》MB 標 EP，genreException 用 electronic（微分音流行＋breakbeat，CUR-DISPATCH 長 EP 例外）。prepare gate 0 error。
