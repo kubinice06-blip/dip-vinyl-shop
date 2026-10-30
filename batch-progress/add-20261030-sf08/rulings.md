@@ -43,3 +43,4 @@
 
 ## 主線（條號 41771–41780）
 - 41771：照研究 c 組推翻改卡單：廠牌 Loose Meat→Whipped Cream Records、Modey Lemon→Birdman Records（並刪「出道作」，首張是 2002 同名）、The Pictish Trail→Lost Map（Fire 是 2018 豪華重發）、Psychic Ills《Mirror Eye》→The Social Registry（Sacred Bones 是 2023 重發）、MV & EE《Gettin' Gone》→Ecstatic Peace!、《Space Homestead》→Woodsist。Loose Meat 主曲風 rock→electronic（合成器＋鼓機 indie-disco）。moodGuess 存疑 5 張不汰卡（這條線不看落格），留給上線後情緒評分照聲音事實判。
+- 41772：照研究 d 組改卡單廠牌：SLIFT《ILION》→Sub Pop、《Ummon》→Vicious Circle（法國原版；Stolen Body 是英國版）、Tacoma Radar→Andmoresound Records（蘇格蘭樂團，國別維持 gb）、The Charlottes→The Subway Organization、The Sonora Pine→Quarterstick Records。Stone Sour 首作美國金唱片（非白金）、SUUNS《Zeroes QC》未入圍 Polaris——寫作層以研究稿為準。
