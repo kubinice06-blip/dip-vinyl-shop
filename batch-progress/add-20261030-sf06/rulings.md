@@ -26,3 +26,15 @@
   - B E N N：只有 EP《Entheos》（2021）。
 - Kaishandao《Homeland》是 6 首長 EP，照 CUR-DISPATCH-SF 長 EP 例外收（`releaseException`）。
 
+
+## 研究 a 組（41501–41510）
+- **41501**：劉以達《麻木》。MB release（1996 CD，Musician 非池中 MUS006-2）、Discogs、中文維基「錄音室專輯」三方一致為 1996 個人專輯、11 首新曲，支持主線 releaseException；廠牌「非池中」確認。聲音來源全無，status thin，moodGuess 存疑。
+- **41502**：雞蛋蒸肉餅。年份維持 2016（維基 2016-12-17；MB 實體 2017-01-21 台／02-03 港）；廠牌 GDJYB Independent（維基）與 MB 的 Redline（紅線音樂，2016-04 簽約）並存。維基稱「數學搖滾加民謠」，與 moodGuess「電子與舞曲脈衝」不符，存疑。金音創作獎措辭含糊，不寫。
+- **41503**：張亞東《Ya Tung》。維基、Discogs（Wings Music Win 2019-1，內圈 IFPI LD98）、Apple（℗ 1998）三方 1998，MB 1999-05-13 判為另一發行日，建議卡單維持 1998。聲音無任何描述，thin。
+- **41504**：AB'S。Moon Records MOON-28007 由 MB 與 Discogs 實物版確認，解除「推定」。成員名 Discogs／日維基不一，facts 不點鼓手與鍵盤手名。聲音有日維基描述（雙吉他、假音和聲），合成器比重無來源。
+
+## 研究 b 組（41511–41520）
+- **41511**：Everfor《空中閣樓》。Apple ℗ 2021 蘇偉安，無廠牌；Discogs 另有 2019《浪漫的中華街》與 2020〈幸運淚〉7 吋（Big Romantic Records），故「MB 上唯一」只對 MB 成立。city pop 為唯一聲音線索，moodGuess 存疑。
+- **41512**：Kaishandao《Homeland》。Bandcamp 自稱首張 EP，器材與標籤（Octatrack／Machinedrum、breaks／house／techno）顯示節拍導向，與 moodGuess「氛圍」不符，存疑；6 首約 31 分，長 EP 例外成立。
+- **41513**：亂彈阿翔《把我換成你》。**推翻策展層**：正式盤名帶副題「十年幕後創作精華 電影電視主題歌曲專輯」，性質是主題曲選集（TVBS 得獎名單同）；廠牌為赤腳不辣（Chockablock），非相信音樂（MB 另載禾廣娛樂 BLA004）；年份 Apple 2011-11-01，維基 2012-02-03 疑為重發。第 23 屆金曲獎最佳國語男歌手為得獎。主線決定是否仍收選集。
+- **41514**：盧家齊《Circle = 圓》。Discogs 明載為個人作品集結的雙卡帶（限量 100、2 小時 24 分），非單一概念長專；MB 標 Album。聲音（drone、部落打擊）與 moodGuess 吻合。Bandcamp 兩條事實由搜尋摘要而來，單一來源。
