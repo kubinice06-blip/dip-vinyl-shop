@@ -1,0 +1,526 @@
+{
+ "group": "sf04a",
+ "factions": [
+  {
+   "id": "jp-ymo-circle",
+   "zh": "日本 YMO 周邊",
+   "count": 4,
+   "why": "細野／高橋／坂本圈的 Yen、Alfa 系新浪潮與電子流行"
+  },
+  {
+   "id": "jp-electronic-ambient",
+   "zh": "日本電子／環境",
+   "count": 6,
+   "why": "電子、ambient、現代古典融合"
+  },
+  {
+   "id": "jp-hiphop",
+   "zh": "日本嘻哈",
+   "count": 5,
+   "why": "日本嘻哈先驅與地下"
+  },
+  {
+   "id": "jp-lofi-citypop",
+   "zh": "日本 lo-fi／城市流行",
+   "count": 1,
+   "why": "lo-fi、city pop 風格新作"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "立花ハジメ Hajime Tachibana",
+   "album": "H",
+   "year": 1982,
+   "label": "Yen Records",
+   "country": "jp",
+   "faction": "jp-ymo-circle",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Plastics 出身的立花首張個人作，高橋幸宏與坂本龍一參與，Yen 系新浪潮代表。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.2,
+    "z": -0.4,
+    "why": "硬挺機械節奏、冷調新浪潮合成器"
+   },
+   "evidence": [
+    "https://music.apple.com/jp/album/h/1530598352",
+    "https://musicbrainz.org/release-group/77551b52-e7db-4c3a-ac53-0abf13d2e5cf",
+    "https://coverartarchive.org/release-group/77551b52-e7db-4c3a-ac53-0abf13d2e5cf/front-250"
+   ],
+   "spotifyName": "Hajime Tachibana",
+   "mbRgMbid": "77551b52-e7db-4c3a-ac53-0abf13d2e5cf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "立花ハジメ",
+   "uncertain": "MB 以 立花ハジメ 登錄；Spotify 名為羅馬拼音"
+  },
+  {
+   "artist": "越美晴 Miharu Koshi",
+   "album": "Tutu",
+   "year": 1983,
+   "label": "Alfa",
+   "country": "jp",
+   "faction": "jp-ymo-circle",
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "why": "Alfa 時期的技術流行代表作，與 YMO 圈樂手合作，越美晴最受肯定的一張。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.5,
+    "z": 0.8,
+    "why": "輕盈合成器流行，俏皮暖調"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/257910",
+    "https://musicbrainz.org/release-group/d71f0ee6-5c77-4adf-99a0-488f3e4502be",
+    "https://coverartarchive.org/release-group/d71f0ee6-5c77-4adf-99a0-488f3e4502be/front-250"
+   ],
+   "spotifyName": "Miharu Koshi",
+   "mbRgMbid": "d71f0ee6-5c77-4adf-99a0-488f3e4502be",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Miharu Koshi",
+   "uncertain": ""
+  },
+  {
+   "artist": "越美晴 Miharu Koshi",
+   "album": "パラレリズム",
+   "year": 1984,
+   "label": "Yen Records",
+   "country": "jp",
+   "faction": "jp-ymo-circle",
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "why": "細野晴臣 Yen 廠牌時期的第二個高峰，歐式電子流行與 exotica 融合，樂迷公認名盤（Parallelisme）。",
+   "moodGuess": {
+    "x": 3,
+    "y": -0.3,
+    "z": 0.5,
+    "why": "華麗電子流行，帶異國夢幻感"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/194556",
+    "https://musicbrainz.org/release-group/48994e77-cf71-442d-941e-9927663e1128",
+    "https://coverartarchive.org/release-group/48994e77-cf71-442d-941e-9927663e1128/front-250"
+   ],
+   "spotifyName": "Miharu Koshi",
+   "mbRgMbid": "48994e77-cf71-442d-941e-9927663e1128",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Parallelisme",
+   "uncertain": ""
+  },
+  {
+   "artist": "Sketch Show",
+   "album": "audio sponge",
+   "year": 2002,
+   "label": "cutting edge",
+   "country": "jp",
+   "faction": "jp-ymo-circle",
+   "genres": [
+    "electronic"
+   ],
+   "why": "細野晴臣與高橋幸宏的 Sketch Show 首作，Glitch／電子民謠，YMO 後的新方向。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": -0.4,
+    "z": 0,
+    "why": "輕巧 glitch 電子與柔和人聲"
+   },
+   "evidence": [
+    "https://music.apple.com/jp/album/audio-sponge/1586154069",
+    "https://musicbrainz.org/release-group/c93a7e39-4220-3e0f-b135-e97c9eaab3f7",
+    "https://coverartarchive.org/release-group/c93a7e39-4220-3e0f-b135-e97c9eaab3f7/front-250"
+   ],
+   "spotifyName": "Sketch Show",
+   "mbRgMbid": "c93a7e39-4220-3e0f-b135-e97c9eaab3f7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "SKETCH SHOW",
+   "uncertain": "MB 標 SKETCH SHOW；Apple 作スケッチ・ショー"
+  },
+  {
+   "artist": "Doopees",
+   "album": "Doopee Time",
+   "year": 1995,
+   "label": "For Life Music",
+   "country": "jp",
+   "faction": "jp-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "日本 90 年代初期嘻哈代表之一，For Life 廠牌旗下 Doopees 唯一全長專輯代表（Dooits! 為 EP）。",
+   "moodGuess": {
+    "x": 3,
+    "y": 0.1,
+    "z": 0.7,
+    "why": "輕快爵士取樣、歡鬧派對感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/16c17efc-fe7d-3e92-b072-90d724d993fe",
+    "https://coverartarchive.org/release-group/16c17efc-fe7d-3e92-b072-90d724d993fe/front-250"
+   ],
+   "spotifyName": "DOOPEES",
+   "mbRgMbid": "16c17efc-fe7d-3e92-b072-90d724d993fe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "DOOPEES",
+   "uncertain": "名氣與評論資料少，代表性靠 MB 全長作品僅二張"
+  },
+  {
+   "artist": "Chouchou",
+   "album": "Night and Wanderer",
+   "year": 2017,
+   "label": "Chouchou",
+   "country": "jp",
+   "faction": "jp-electronic-ambient",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "日本電子／現代古典雙人組 Chouchou，Night and Wanderer 為其成熟期主要專輯（theme02）。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.1,
+    "z": -0.5,
+    "why": "空靈女聲、鋼琴與電子氛圍，夜晚感"
+   },
+   "evidence": [
+    "https://music.apple.com/jp/album/night-and-wanderer/1720039717",
+    "https://musicbrainz.org/release-group/60444700-e414-4cc1-b97b-6849ecb69d41",
+    "https://coverartarchive.org/release-group/60444700-e414-4cc1-b97b-6849ecb69d41/front-250"
+   ],
+   "spotifyName": "Chouchou",
+   "mbRgMbid": "60444700-e414-4cc1-b97b-6849ecb69d41",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Lily Chou-Chou 非同人；此為 MB a18d9ff7 的日本 Chouchou。代表作靠 MB／Apple 判斷，評論少"
+  },
+  {
+   "artist": "沖山秀子 Hideko Okiyama",
+   "album": "Summertime",
+   "year": 1981,
+   "label": "Trio Records",
+   "country": "jp",
+   "faction": "jp-electronic-ambient",
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "why": "1960–70 年代日本爵士／歌謠女伶沖山秀子的代表專輯，1981 年 Trio 錄音，後多次再版。",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.8,
+    "z": 0.7,
+    "why": "沙啞爵士女聲、慵懶暖調"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/259188",
+    "https://music.apple.com/jp/album/summer-time/1655543966"
+   ],
+   "spotifyName": "Hideko Okiyama",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 藝人 5a654a35-0b7a-4673-945f-d50487ed0884（沖山秀子）下無任何 release group；Discogs master 259188 記 1981 Trio Records",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/259188",
+    "https://music.apple.com/jp/album/summer-time/1655543966"
+   ],
+   "releaseException": "",
+   "queryAlias": "沖山秀子",
+   "uncertain": "Apple 版為 2006 Clinck 再版（封面來源）；原盤 1981"
+  },
+  {
+   "artist": "篠崎史子 Ayako Shinozaki",
+   "album": "ハープの個展 Music Now for Harp",
+   "year": 1973,
+   "label": "Denon",
+   "country": "jp",
+   "faction": "jp-electronic-ambient",
+   "genres": [
+    "classical"
+   ],
+   "why": "日本現代豎琴演奏家篠崎史子委託現代作曲家的 1973 年名盤，收武滿徹、小杉武久等作品。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0,
+    "z": -0.2,
+    "why": "豎琴現代音樂，稀疏懸浮"
+   },
+   "evidence": [
+    "https://music.apple.com/jp/album/music-now-for-harp/1705353167",
+    "https://musicbrainz.org/release-group/0060e5ed-31c6-47dd-9b2f-97d1a7cbe740"
+   ],
+   "spotifyName": "Ayako Shinozaki",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "mbRgMbid": "0060e5ed-31c6-47dd-9b2f-97d1a7cbe740",
+   "releaseException": "",
+   "queryAlias": "Ayako Shinozaki",
+   "uncertain": "MB 藝人署名含武滿徹等作曲者；封面取 Apple（CAA 無圖）；Spotify 盤名可能為 Music Now for Harp"
+  },
+  {
+   "artist": "Yasushi Ide 井出靖",
+   "album": "Cosmic Suite 2 -New Beginning-",
+   "year": 2022,
+   "label": "Grand Gallery",
+   "country": "jp",
+   "faction": "jp-electronic-ambient",
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "why": "DJ／作曲家井出靖（Lonesome Echo Strings 主腦）近年 cosmic 爵士電子作，MB 有收錄的正規專輯。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.2,
+    "z": 0.4,
+    "why": "宇宙感爵士舞曲，暖調弦樂"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/98020e07-f6af-4824-b7b2-0c4689f096a1",
+    "https://coverartarchive.org/release-group/98020e07-f6af-4824-b7b2-0c4689f096a1/front-250",
+    "https://www.discogs.com/master/2997671"
+   ],
+   "spotifyName": "Yasushi Ide",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "mbRgMbid": "98020e07-f6af-4824-b7b2-0c4689f096a1",
+   "releaseException": "",
+   "queryAlias": "井出靖",
+   "uncertain": "生涯高峰其實在 1999 Lonesome Echo Strings（Plein Soleil、Meets The World，署名不同藝人）；此處只收 Yasushi Ide 署名的盤，Cosmic Suite（2020）MB 無 RG"
+  },
+  {
+   "artist": "YPY",
+   "album": "Zurhyrethm",
+   "year": 2016,
+   "label": "EM Records",
+   "country": "jp",
+   "faction": "jp-electronic-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "大阪電子音樂人 YPY 交由 EM Records 發行的長篇專輯，bass／beat 與 dub 融合。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.5,
+    "z": -0.2,
+    "why": "低頻 beat 與 dub 空間感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/235092d3-d8d2-416c-b5e5-59e641cb4829",
+    "https://coverartarchive.org/release-group/235092d3-d8d2-416c-b5e5-59e641cb4829/front-250"
+   ],
+   "spotifyName": "YPY",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "mbRgMbid": "235092d3-d8d2-416c-b5e5-59e641cb4829",
+   "releaseException": "",
+   "queryAlias": "YPY",
+   "uncertain": "YPY 同名者多，MB 為 Japanese electronic musician；代表作選擇無評論共識可依"
+  },
+  {
+   "artist": "KUSO GVKI",
+   "album": "Culture",
+   "year": 2019,
+   "label": "Block Opera",
+   "country": "jp",
+   "faction": "jp-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "KUSO GVKI 2019 年錄音室專輯，Block Opera 發行，兩張全長中知名度較高。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.4,
+    "z": -0.1,
+    "why": "暗調 trap 與 lo-fi 嘻哈"
+   },
+   "evidence": [
+    "https://music.apple.com/jp/album/culture/1679417086",
+    "https://musicbrainz.org/release-group/d52eb015-b6e0-43fb-b61b-4579ff8d457b",
+    "https://coverartarchive.org/release-group/d52eb015-b6e0-43fb-b61b-4579ff8d457b/front-250"
+   ],
+   "spotifyName": "KUSO GVKI",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "mbRgMbid": "d52eb015-b6e0-43fb-b61b-4579ff8d457b",
+   "releaseException": "",
+   "queryAlias": "KUSO GVKI",
+   "uncertain": "國籍依 Apple JP 與 Block Opera 推定為日本；評論資料少"
+  },
+  {
+   "artist": "ECD",
+   "album": "ホームシック",
+   "year": 1995,
+   "label": "cutting edge",
+   "country": "jp",
+   "faction": "jp-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "日本嘻哈先驅 ECD（石田義則）的第二作，公認 90 年代日本語饒舌經典（Homesick）。",
+   "moodGuess": {
+    "x": 3,
+    "y": 0.4,
+    "z": 0,
+    "why": "樸素 boom bap 與日常口語饒舌"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d86b1248-2faa-4584-b33b-6f6bfb572f11",
+    "https://coverartarchive.org/release-group/d86b1248-2faa-4584-b33b-6f6bfb572f11/front-250",
+    "https://musicbrainz.org/artist/611784bf-1c97-49b9-a48e-fa7dffc7d1db"
+   ],
+   "spotifyName": "ECD",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "mbRgMbid": "d86b1248-2faa-4584-b33b-6f6bfb572f11",
+   "releaseException": "",
+   "queryAlias": "ECD",
+   "uncertain": "池中無 ECD，但 ECD 是子字串易誤中，已人工確認無同名"
+  },
+  {
+   "artist": "SHAKKAZOMBIE",
+   "album": "HERO THE S.Z.",
+   "year": 1997,
+   "label": "cutting edge",
+   "country": "jp",
+   "faction": "jp-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "日本嘻哈團 SHAKKAZOMBIE 的成名作，OSUMI 與 Ikkyu 登峰造極的日語饒舌與 sample 作品。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.5,
+    "z": 0.4,
+    "why": "厚實節拍與爵士取樣，躍動"
+   },
+   "evidence": [
+    "https://music.apple.com/jp/album/hero-the-s-z/392912544",
+    "https://musicbrainz.org/release-group/6f5dd6ee-1028-37df-be6b-055464742fc1",
+    "https://coverartarchive.org/release-group/6f5dd6ee-1028-37df-be6b-055464742fc1/front-250"
+   ],
+   "spotifyName": "Shakkazombie",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "mbRgMbid": "6f5dd6ee-1028-37df-be6b-055464742fc1",
+   "releaseException": "",
+   "queryAlias": "ShakkaZombie",
+   "uncertain": ""
+  },
+  {
+   "artist": "SHAKKAZOMBIE",
+   "album": "JOURNEY OF FORESIGHT",
+   "year": 1999,
+   "label": "cutting edge",
+   "country": "jp",
+   "faction": "jp-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "第二個高峰，更成熟的製作與主題，日本嘻哈迷常與 HERO THE S.Z. 並列的名作。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.4,
+    "z": 0.3,
+    "why": "沉穩節拍、細緻 sample"
+   },
+   "evidence": [
+    "https://music.apple.com/jp/album/journey-of-foresight/392912083",
+    "https://musicbrainz.org/release-group/9395e6d1-4d2d-3814-9caa-d36e22cb9473",
+    "https://coverartarchive.org/release-group/9395e6d1-4d2d-3814-9caa-d36e22cb9473/front-250"
+   ],
+   "spotifyName": "Shakkazombie",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "mbRgMbid": "9395e6d1-4d2d-3814-9caa-d36e22cb9473",
+   "releaseException": "",
+   "queryAlias": "ShakkaZombie",
+   "uncertain": ""
+  },
+  {
+   "artist": "Hoshina Anniversary",
+   "album": "Jomon",
+   "year": 2021,
+   "label": "ESP Institute",
+   "country": "jp",
+   "faction": "jp-electronic-ambient",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "Hoshina Anniversary 將日本傳統音階與電子結合的代表系列之一（Jomon／日本の音楽／Odoriko）。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.3,
+    "z": 0.3,
+    "why": "民族節奏混電子，神祕感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/14934bea-8b0d-486e-9e9a-b812e6e1d8e4",
+    "https://coverartarchive.org/release-group/14934bea-8b0d-486e-9e9a-b812e6e1d8e4/front-250"
+   ],
+   "spotifyName": "Hoshina Anniversary",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "mbRgMbid": "14934bea-8b0d-486e-9e9a-b812e6e1d8e4",
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 IVE|REVIVE+ 為誤中；代表作 Jomon 選自 CAA 有圖者，無評論共識"
+  },
+  {
+   "artist": "Tokimeki Records",
+   "album": "透明なガール",
+   "year": 2022,
+   "label": "Tokimeki Records",
+   "country": "jp",
+   "faction": "jp-lofi-citypop",
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "why": "Tokimeki Records 為原創 city pop／lo-fi 製作人項目（非翻唱帳號），透明なガール 為其 2022 年主要專輯。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": -0.5,
+    "z": 0.8,
+    "why": "city pop 與 lo-fi，柔暖夜感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d4d042b7-9069-428a-9f91-098e719b411d",
+    "https://coverartarchive.org/release-group/d4d042b7-9069-428a-9f91-098e719b411d/front-250",
+    "https://www.discogs.com/master/3080354"
+   ],
+   "spotifyName": "Tokimeki Records",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "mbRgMbid": "d4d042b7-9069-428a-9f91-098e719b411d",
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "身分為廠牌兼藝人；MB 有 artist 2019 成立；Tokimeki Mellow 為 EP 不收"
+  }
+ ],
+ "notes": [
+  "範圍：batches.sf04 索引 0–13，共 14 位；池中皆無，無跳過。其他 curation-sf*.json 無重複。",
+  "收：Tachibana(H)、Koshi(Tutu、パラレリズム)、Sketch Show、DOOPEES、Chouchou、Okiyama、Shinozaki、Ide、YPY、KUSO GVKI、ECD、Shakkazombie(2)、Hoshina、Tokimeki，共 16 張 / 14 位。",
+  "收：Tokimeki Records——MB／Discogs 皆為原創 city pop／lo-fi 廠牌兼藝人（透明なガール 為主盤，非翻唱帳號），故收。",
+  "Chouchou 為日本電子雙人組（MB a18d9ff7）；池中 Lily Chou-Chou 非同人，非重複。",
+  "Hoshina Anniversary：池中 IVE|REVIVE+ 為誤中子字串，非同人。",
+  "人工身分：沖山秀子 MB 無 RG，走 mbAbsenceProof；其餘 15 張 MB 釘住。",
+  "疑點：Ide 高峰在 Lonesome Echo Strings 署名盤；YPY、KUSO GVKI、Hoshina、DOOPEES 代表作靠 MB 與封面可得性，缺評論共識；沖山秀子封面取自 2006 再版。"
+ ]
+}
