@@ -10,6 +10,18 @@
 - **主要檔案**：`batch-progress/add-20261030-sf0{1,2}/`（rulings.md、manifest、handoff.json…）、`onboarding-manifest-add-20261030-sf0{1,2}-20261030.json`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*`、`data/discogs-cover-registry.json`、`genre-*`、`card-subgenres.json`、`draw-covers/`、`rock-asia-country-map.json`、`data/mood/`、`batch-progress/mood-axes/score-sf0102/`、PLAN.md。
 - **驗證**：兩批 prepare／published gate 皆 0 error；qa-batch research／hooks／out 全過；mood gate 通過。
 
+### 2026-10-30｜dip-vinyl-shop｜Spotify 追蹤藝人補卡池 sf05（台灣華語）＋sf07（西洋 60–80 迷幻／prog）上線 71 張
+
+- **改動**：照 `batch-progress/spotify-follow-20261030/PLAN.md` 跑完兩批（前一工作階段撞週額度中斷後接續：sf05 從寫作層、sf07 從鉤子層接）。
+  - **sf05**：清單 27 位，收 20 位 24 張、跳過 1 位已在池（Jo-Yu Chen＝陳珊妮）、不收 6 位（只有單曲／EP 或身分不明）。試聽 24 ready；頂點 0。
+  - **sf07**：清單 35 位，收 32 位 47 張、跳過 0、不收 3 位（Mellow Yellow 身分不明、Destroy All Monsters 只有彙編、Antena 只有 5 首）。試聽 45 ready／2 unavailable（Ikarus、Zaratustra）；頂點 0。
+  - 主線審稿：sf05 改 1（謝旻諺→謝明諺）、sf07 改 2（單源評價句）。gate 前重查 MB，Karencici、Martin & Garp 改 MB 釘住。
+  - 子曲風：`tw-pop-artists.json` +12、`rock-asia-country-map.json` +tw 5、`genre-l3-artist-map.json` 補 12 位；落位 70/71（Alma Cogan 主類型 pop 無對應節點，留著）。
+  - 情緒評分 `batch-progress/mood-axes/score-sf0507/`（71 張，主線改 1）；priors／scale v0／card-moods 重建。
+  - 藝人介紹：名冊 `batch-progress/artist-intro/roster-sf05.json`（20 位）→ ar-d-205、`roster-sf07.json`（32 位）→ ar-d-207，state cut，補洞寫作待調度另派。
+- **主要檔案**：`batch-progress/add-20261030-{sf05,sf07}/`、`onboarding-manifest-add-20261030-{sf05,sf07}-20261030.json`、`desc-tools/batches/*/add-20261030-{sf05,sf07}*`、`seed_cards.json`、`data/apple-audio-*.json`、`card-preview-status.js`、`data/discogs-cover-registry.json`、`data/mood/*`、`card-subgenres.json`、`genre-tree.json`、`draw-covers/*`、`tw-pop-artists.json`、`rock-asia-country-map.json`、`genre-l3-artist-map.json`、`desc-tools/batches/artist/{progress.json,cut/ar-d-205.txt,cut/ar-d-207.txt}`、`PLAN.md`。
+- **驗證**：兩批 published gate 0 error；card_catalog 24＋47 成功；KV 45＋47 鍵逐字回讀一致；跨 147 條 `claude/*` 分支 seed 去重 0 撞；build-card-moods 錨點 104/104。
+
 ### 2026-10-30｜dip-vinyl-shop｜Spotify 追蹤藝人補卡池：開工規劃（12 批＋藝人介紹批號預留）
 
 - **店主指示**：`/dip-card-create` 依 `gap.json` 補卡池——先上 favoriteAlbums 38 張，再為 361 位缺漏藝人各挑 1–2 張代表作，走完整上架流程與藝人介紹，一路接力、不中途回報。

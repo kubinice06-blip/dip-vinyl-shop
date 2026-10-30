@@ -16,9 +16,9 @@
 | sf02 | 日本：搖滾、獨立、流行、偶像、金屬 | 30 | ar-d-202 | ✅ 上線 45（跳過 0 位已在池；30 位全收）；新藝人 30 位 → ar-d-202 cut |
 | sf03 | 日本：地下、迷幻、即興、和樂器 | 20 | ar-d-203 | |
 | sf04 | 日本：電子、ambient、嘻哈、lo-fi、YMO 周邊 | 28 | ar-d-204 | |
-| sf05 | 台灣華語：流行、R&B、獨立樂團 | 27 | ar-d-205 | |
+| sf05 | 台灣華語：流行、R&B、獨立樂團 | 27 | ar-d-205 | ✅ 上線 24（跳過 1 位已在池；不收 6 位） |
 | sf06 | 華語其他、港、韓、泰；未確定身分的華語名 | 29 | ar-d-206 | |
-| sf07 | 西洋 60–80 年代：迷幻、prog、硬搖滾、krautrock、post-punk | 35 | ar-d-207 | |
+| sf07 | 西洋 60–80 年代：迷幻、prog、硬搖滾、krautrock、post-punk | 35 | ar-d-207 | ✅ 上線 47（跳過 0 位已在池；不收 3 位） |
 | sf08 | 西洋 90 年代至今：獨立、alt、迷幻、shoegaze、民謠 | 41 | ar-d-208 | |
 | sf09 | 爵士（含日韓爵士、ECM、世界爵士） | 41 | ar-d-209 | |
 | sf10 | 電子、實驗、新古典鋼琴、house | 33 | ar-d-210 | |
@@ -49,3 +49,9 @@
   - 推自己的分支、開 PR、自己合併，不訂閱 PR。
 - 代理派工一律加兩句：「每做完 N 筆寫進輸出檔」「輸出檔已有內容就接續」。輔助腳本放 scratchpad 子資料夾。
 - 收工時在本檔分批表的狀態欄寫 `✅ 上線 N（跳過 M 位已在池）`，並更新 `PROJECT_MEMORY.md`。
+
+## sf05／sf07 收工筆記（2026-10-30）
+- **PLAN 開頭的「Layton Wu＝吳卓源」是錯的**：Layton Wu 是另一位台灣創作者（雷頓狗），已照新藝人收。
+- 驗 gate 時發現 `mbAbsenceProof` 必須是物件（queries／checkedAt／conclusion），策展與 build-cards 產的是字串——上線前要轉；重查時還抓到 2 張其實 MB 有條目（Karencici、Martin & Garp），改釘住。
+- 藝人介紹名冊每批一檔 `batch-progress/artist-intro/roster-<批>.json`（格式：`{generatedAt, source, addedBy, artists, entries:[roster-20260929 同欄位]}`），progress.json 追加預留號 state cut、`desc-tools/batches/artist/cut/<號>.txt`。
+- 情緒評分兩批共用 `batch-progress/mood-axes/score-sf0507/`（select／merge 複製自 score-ml59）。

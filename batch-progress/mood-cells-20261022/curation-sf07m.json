@@ -1,0 +1,111 @@
+{
+ "group": "sf07m",
+ "factions": [
+  {
+   "id": "us-psych",
+   "zh": "美國迷幻",
+   "count": 0,
+   "why": ""
+  },
+  {
+   "id": "us-softrock",
+   "zh": "美國軟搖滾",
+   "count": 0,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "The West Coast Pop Art Experimental Band",
+   "album": "Volume 2",
+   "year": 1967,
+   "label": "Reprise",
+   "country": "us",
+   "faction": "us-psych",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "Reprise 第二張，迷幻轉向最徹底、評價最高的一張（換掉 1966 私壓《Volume One》）",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.0,
+    "z": 0.0,
+    "why": "迷幻流行與聲響拼貼"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/1654203c-47ab-3e0f-84f1-145dbb58d413",
+    "https://musicbrainz.org/release-group/1654203c-47ab-3e0f-84f1-145dbb58d413"
+   ],
+   "spotifyName": "The West Coast Pop Art Experimental Band",
+   "mbRgMbid": "1654203c-47ab-3e0f-84f1-145dbb58d413",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Paul Davis",
+   "album": "Singer of Songs • Teller of Tales",
+   "year": 1977,
+   "label": "Bang",
+   "country": "us",
+   "faction": "us-softrock",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "收〈I Go Crazy〉，當時告示牌百大停留最久紀錄，生涯代表作（換掉《Southern Tracks and Fantasies》）",
+   "moodGuess": {
+    "x": 2.4,
+    "y": -0.2,
+    "z": 0.8,
+    "why": "柔軟抒情軟搖滾"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/224c7335-f0d7-3ea0-9c14-ad9a571116a1",
+    "https://musicbrainz.org/release-group/224c7335-f0d7-3ea0-9c14-ad9a571116a1"
+   ],
+   "spotifyName": "Paul Davis",
+   "mbRgMbid": "224c7335-f0d7-3ea0-9c14-ad9a571116a1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Willie West",
+   "album": "Lost Soul",
+   "year": 2014,
+   "label": "Timmion",
+   "country": "us",
+   "faction": "nola-soul",
+   "genres": [
+    "soul"
+   ],
+   "why": "紐奧良靈魂歌手 Willie West 與芬蘭 Timmion 樂團合作的復出之作",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.4,
+    "z": 0.9,
+    "why": "類比復古靈魂慢歌"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/lost-soul/1000102399",
+    "https://musicbrainz.org/release-group/85436f9c-96ea-4de7-8d95-705dfdb54584"
+   ],
+   "spotifyName": "Willie West",
+   "mbRgMbid": "85436f9c-96ea-4de7-8d95-705dfdb54584",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "主線改收 3 張（取代 sf07a／b 原選）"
+ ]
+}
