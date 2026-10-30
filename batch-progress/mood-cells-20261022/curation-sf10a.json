@@ -1,0 +1,1022 @@
+{
+ "group": "sf10a",
+ "factions": [
+  {
+   "id": "electronic-house",
+   "zh": "electronic-house",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "experimental-composition",
+   "zh": "experimental-composition",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "uk-house",
+   "zh": "uk-house",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "digital-hardcore",
+   "zh": "digital-hardcore",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "beat-funk",
+   "zh": "beat-funk",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "producer-projects",
+   "zh": "producer-projects",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "neo-classical-piano",
+   "zh": "neo-classical-piano",
+   "count": 5,
+   "why": ""
+  },
+  {
+   "id": "french-synthpop",
+   "zh": "french-synthpop",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "piano-electronica",
+   "zh": "piano-electronica",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "melodic-techno",
+   "zh": "melodic-techno",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "folktronica",
+   "zh": "folktronica",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "art-pop",
+   "zh": "art-pop",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "black-metal-folk",
+   "zh": "black-metal-folk",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "finnish-freak-folk",
+   "zh": "finnish-freak-folk",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "uk-electronica",
+   "zh": "uk-electronica",
+   "count": 2,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Against All Logic",
+   "album": "2012–2017",
+   "year": 2018,
+   "label": "Other People",
+   "country": "us",
+   "faction": "electronic-house",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Nicolas Jaar 化名的 house／sample 代表作，Pitchfork 評為年度佳作",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.4,
+    "z": 0.3,
+    "why": "鼓機推進、取樣暖調的深夜 house"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/20f7f4bb-c9cb-424e-9106-cbd41a00e18f/front-250",
+    "https://musicbrainz.org/release-group/20f7f4bb-c9cb-424e-9106-cbd41a00e18f"
+   ],
+   "spotifyName": "Against All Logic",
+   "mbRgMbid": "20f7f4bb-c9cb-424e-9106-cbd41a00e18f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 標 Compilation（收錄早期單曲），但樂評與 Spotify 皆視為正式專輯；池中僅有 Nicolas Jaar 本名卡，此掛名無卡"
+  },
+  {
+   "artist": "Against All Logic",
+   "album": "2017–2019",
+   "year": 2020,
+   "label": "Other People",
+   "country": "us",
+   "faction": "electronic-house",
+   "genres": [
+    "electronic"
+   ],
+   "why": "同名義第二張，更舞曲化、更受評論肯定的高峰",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 0.3,
+    "z": 0.4,
+    "why": "明亮取樣 house，鼓點更強"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/55b7054c-b28d-4bb7-ace7-a0646775b0e8/front-250",
+    "https://musicbrainz.org/release-group/55b7054c-b28d-4bb7-ace7-a0646775b0e8"
+   ],
+   "spotifyName": "Against All Logic",
+   "mbRgMbid": "55b7054c-b28d-4bb7-ace7-a0646775b0e8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 標 Compilation，同上"
+  },
+  {
+   "artist": "Alvin Curran",
+   "album": "Maritime Rites",
+   "year": 2004,
+   "label": "New World Records",
+   "country": "us",
+   "faction": "experimental-composition",
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "why": "Curran 最廣為人知的海洋聲景／廣播藝術作品",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.6,
+    "z": -0.4,
+    "why": "海浪、號角與合成器的懸浮聲景"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/798c698a-1600-38b6-b649-ea9657ec4084/front-250",
+    "https://musicbrainz.org/release-group/798c698a-1600-38b6-b649-ea9657ec4084"
+   ],
+   "spotifyName": "Alvin Curran",
+   "mbRgMbid": "798c698a-1600-38b6-b649-ea9657ec4084",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "作品寫於 1984，CD 首發 2004（New World）"
+  },
+  {
+   "artist": "Alvin Curran",
+   "album": "Canti e vedute del giardino magnetico",
+   "year": 1975,
+   "label": "Ananda",
+   "country": "it",
+   "faction": "experimental-composition",
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "why": "1975 早期代表作，電子與錄音拼貼的奠基盤",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.2,
+    "z": -0.3,
+    "why": "磁帶拼貼與合成器，稀疏漂浮"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/769995b2-29f4-3e4b-a457-2232bce5ad85/front-250",
+    "https://musicbrainz.org/release-group/769995b2-29f4-3e4b-a457-2232bce5ad85"
+   ],
+   "spotifyName": "Alvin Curran",
+   "mbRgMbid": "769995b2-29f4-3e4b-a457-2232bce5ad85",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "英文名 Songs and Views of the Magnetic Garden"
+  },
+  {
+   "artist": "Barry Can't Swim",
+   "album": "When Will We Land?",
+   "year": 2023,
+   "label": "Ninja Tune",
+   "country": "gb",
+   "faction": "uk-house",
+   "genres": [
+    "electronic"
+   ],
+   "why": "唯一正規專輯，英國 house 新生代代表作",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.2,
+    "z": 0.7,
+    "why": "明亮 house 舞曲帶人聲取樣"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/672a4973-eaf5-4308-8261-ffad7a5a5887/front-250",
+    "https://musicbrainz.org/release-group/672a4973-eaf5-4308-8261-ffad7a5a5887"
+   ],
+   "spotifyName": "Barry Can't Swim",
+   "mbRgMbid": "672a4973-eaf5-4308-8261-ffad7a5a5887",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Christoph De Babalon",
+   "album": "If You're Into It, I'm Out of It",
+   "year": 1997,
+   "label": "Digital Hardcore Recordings",
+   "country": "de",
+   "faction": "digital-hardcore",
+   "genres": [
+    "electronic"
+   ],
+   "why": "digital hardcore／breakcore 公認里程碑",
+   "moodGuess": {
+    "x": 4.8,
+    "y": 0.9,
+    "z": -1.4,
+    "why": "扭曲破碎鼓與工業噪音"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/9091ccc2-07f0-3d44-930e-d9fca43c47c0/front-250",
+    "https://musicbrainz.org/release-group/9091ccc2-07f0-3d44-930e-d9fca43c47c0"
+   ],
+   "spotifyName": "Christoph De Babalon",
+   "mbRgMbid": "9091ccc2-07f0-3d44-930e-d9fca43c47c0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Christ. 為不同藝人"
+  },
+  {
+   "artist": "Clutchy Hopkins",
+   "album": "The Life of Clutchy Hopkins",
+   "year": 2006,
+   "label": "Ubiquity Recordings",
+   "country": "us",
+   "faction": "beat-funk",
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "why": "神秘 beat 製作人的出道代表作，funk／jazz 取樣",
+   "moodGuess": {
+    "x": 3,
+    "y": 0.4,
+    "z": 0.6,
+    "why": "老派 funk 鼓與迷幻樂器"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/070d3881-fdb3-33da-b178-caff43a4b168/front-250",
+    "https://musicbrainz.org/release-group/070d3881-fdb3-33da-b178-caff43a4b168"
+   ],
+   "spotifyName": "Clutchy Hopkins",
+   "mbRgMbid": "070d3881-fdb3-33da-b178-caff43a4b168",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "首發廠牌未能由 MB 確認"
+  },
+  {
+   "artist": "Clutchy Hopkins",
+   "album": "Walking Backwards",
+   "year": 2008,
+   "label": "Ubiquity Recordings",
+   "country": "us",
+   "faction": "beat-funk",
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "why": "第二個高峰，更豐富的器樂 funk",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.4,
+    "z": 0.6,
+    "why": "暖調 funk 與迷幻吉他"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/54ede191-69a3-384b-b214-ff3e6aeeeed5",
+    "https://music.apple.com/us/album/walking-backwards/1878500333"
+   ],
+   "spotifyName": "Clutchy Hopkins",
+   "mbRgMbid": "54ede191-69a3-384b-b214-ff3e6aeeeed5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Danger Mouse & Sparklehorse",
+   "album": "Dark Night of the Soul",
+   "year": 2010,
+   "label": "Parlophone",
+   "country": "us",
+   "faction": "producer-projects",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "Danger Mouse 與 Sparklehorse 合作、多位客座，製作人生涯高峰",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.7,
+    "z": -0.5,
+    "why": "迷幻慢板搖滾，厚殘響"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/d3e84aab-2eac-3970-b411-23d0e072fcc6/front-250",
+    "https://musicbrainz.org/release-group/d3e84aab-2eac-3970-b411-23d0e072fcc6"
+   ],
+   "spotifyName": "Danger Mouse",
+   "mbRgMbid": "d3e84aab-2eac-3970-b411-23d0e072fcc6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發 2009（網路），正式發行 2010；歸屬 Danger Mouse 本人名下"
+  },
+  {
+   "artist": "Danger Mouse & Daniele Luppi",
+   "album": "Rome",
+   "year": 2011,
+   "label": "Parlophone",
+   "country": "us",
+   "faction": "producer-projects",
+   "genres": [
+    "pop",
+    "soul"
+   ],
+   "why": "向義大利西部片配樂致敬的 Danger Mouse 主導錄音室專輯",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 0.5,
+    "z": 0.1,
+    "why": "弦樂與義式西部配樂風的人聲"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/59654e61-9ef3-4093-87a1-8c6fb8c628dc/front-250",
+    "https://musicbrainz.org/release-group/59654e61-9ef3-4093-87a1-8c6fb8c628dc"
+   ],
+   "spotifyName": "Danger Mouse",
+   "mbRgMbid": "59654e61-9ef3-4093-87a1-8c6fb8c628dc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Federico Albanese",
+   "album": "The Houseboat and the Moon",
+   "year": 2014,
+   "label": "Denovali Records",
+   "country": "de",
+   "faction": "neo-classical-piano",
+   "genres": [
+    "classical"
+   ],
+   "why": "出道盤，極簡鋼琴／弦樂的代表",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.1,
+    "z": 0.2,
+    "why": "稀疏鋼琴與弦樂"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/9b27b970-0a78-4057-af67-9fb3a21758ab/front-250",
+    "https://musicbrainz.org/release-group/9b27b970-0a78-4057-af67-9fb3a21758ab"
+   ],
+   "spotifyName": "Federico Albanese",
+   "mbRgMbid": "9b27b970-0a78-4057-af67-9fb3a21758ab",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Federico Albanese",
+   "album": "By the Deep Sea",
+   "year": 2018,
+   "label": "Neue Meister",
+   "country": "de",
+   "faction": "neo-classical-piano",
+   "genres": [
+    "classical"
+   ],
+   "why": "較完整的第二個高峰，加入電子織體",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.3,
+    "z": 0,
+    "why": "鋼琴與弦樂、淡電子底"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/4ff6292c-b888-41f1-b421-a0b7579a07aa/front-250",
+    "https://musicbrainz.org/release-group/4ff6292c-b888-41f1-b421-a0b7579a07aa"
+   ],
+   "spotifyName": "Federico Albanese",
+   "mbRgMbid": "4ff6292c-b888-41f1-b421-a0b7579a07aa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "French 79",
+   "album": "Olympic",
+   "year": 2016,
+   "label": "Alter K",
+   "country": "fr",
+   "faction": "french-synthpop",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "法國 synthpop／nu-disco 代表專輯",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.2,
+    "z": 0.5,
+    "why": "明亮合成器流行與舞曲節拍"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/f4898726-4018-4f80-9ddf-b8208369fb97/front-250",
+    "https://musicbrainz.org/release-group/f4898726-4018-4f80-9ddf-b8208369fb97"
+   ],
+   "spotifyName": "French 79",
+   "mbRgMbid": "f4898726-4018-4f80-9ddf-b8208369fb97",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "French 79",
+   "album": "Joshua",
+   "year": 2019,
+   "label": "Alter K",
+   "country": "fr",
+   "faction": "french-synthpop",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "第二張更成熟的合成器流行",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.2,
+    "z": 0.4,
+    "why": "合成器流行加人聲"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/825d8d90-4ef0-40be-8c66-4e93bf2a0c21/front-250",
+    "https://musicbrainz.org/release-group/825d8d90-4ef0-40be-8c66-4e93bf2a0c21"
+   ],
+   "spotifyName": "French 79",
+   "mbRgMbid": "825d8d90-4ef0-40be-8c66-4e93bf2a0c21",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Gibran Alcocer",
+   "album": "Music for Silhouettes",
+   "year": 2026,
+   "label": "Aemeralds GmbH",
+   "country": "mx",
+   "faction": "neo-classical-piano",
+   "genres": [
+    "classical",
+    "folk"
+   ],
+   "why": "無正規長片，此為其僅有的 6 首長 EP",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0,
+    "z": 0.4,
+    "why": "溫柔吉他與鋼琴小品"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/8f856e72-8ed4-4bd5-ac23-05fd3d6bb1d2/front-250",
+    "https://musicbrainz.org/release-group/8f856e72-8ed4-4bd5-ac23-05fd3d6bb1d2"
+   ],
+   "spotifyName": "Gibran Alcocer",
+   "mbRgMbid": "8f856e72-8ed4-4bd5-ac23-05fd3d6bb1d2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "MB 為 EP（6 首），他只有 Idea 系列單曲，此為首部多曲主要作品",
+   "queryAlias": "",
+   "uncertain": "EP 例外；是否收請把關"
+  },
+  {
+   "artist": "Grandbrothers",
+   "album": "Dilation",
+   "year": 2015,
+   "label": "FILM",
+   "country": "de",
+   "faction": "piano-electronica",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "改裝鋼琴＋電子的出道代表作",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 0.1,
+    "z": 0.1,
+    "why": "鋼琴敲擊與電子脈衝"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/a713a2ae-3456-42c0-980b-044a2338625f/front-250",
+    "https://musicbrainz.org/release-group/a713a2ae-3456-42c0-980b-044a2338625f"
+   ],
+   "spotifyName": "Grandbrothers",
+   "mbRgMbid": "a713a2ae-3456-42c0-980b-044a2338625f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Deluxe 版 2015-03-23；標準版 2015-02-23"
+  },
+  {
+   "artist": "Grandbrothers",
+   "album": "Open",
+   "year": 2017,
+   "label": "City Slang",
+   "country": "de",
+   "faction": "piano-electronica",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "City Slang 時期成熟之作",
+   "moodGuess": {
+    "x": 3,
+    "y": 0.2,
+    "z": 0.1,
+    "why": "更厚的鋼琴電子編織"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/66610789-fd17-404b-b894-2272012ca046/front-250",
+    "https://musicbrainz.org/release-group/66610789-fd17-404b-b894-2272012ca046"
+   ],
+   "spotifyName": "Grandbrothers",
+   "mbRgMbid": "66610789-fd17-404b-b894-2272012ca046",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "HVOB",
+   "album": "Trialog",
+   "year": 2015,
+   "label": "Tragen Records",
+   "country": "at",
+   "faction": "melodic-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "奧地利 melodic house 雙人組的代表長片",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.3,
+    "z": -0.3,
+    "why": "冷調旋律 techno 搭人聲"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/d6e012f8-f4f6-492c-81f7-77bfb36b240b/front-250",
+    "https://musicbrainz.org/release-group/d6e012f8-f4f6-492c-81f7-77bfb36b240b"
+   ],
+   "spotifyName": "HVOB",
+   "mbRgMbid": "d6e012f8-f4f6-492c-81f7-77bfb36b240b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "HVOB",
+   "album": "Silk",
+   "year": 2017,
+   "label": "Tragen Records",
+   "country": "at",
+   "faction": "melodic-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "更洗練的第二個高峰",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.3,
+    "z": -0.2,
+    "why": "絲滑 melodic house"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/5155e253-1e85-4137-927c-e924d0f6f079/front-250",
+    "https://musicbrainz.org/release-group/5155e253-1e85-4137-927c-e924d0f6f079"
+   ],
+   "spotifyName": "HVOB",
+   "mbRgMbid": "5155e253-1e85-4137-927c-e924d0f6f079",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Joep Beving",
+   "album": "Solipsism",
+   "year": 2015,
+   "label": "Mercury KX / Deutsche Grammophon",
+   "country": "nl",
+   "faction": "neo-classical-piano",
+   "genres": [
+    "classical"
+   ],
+   "why": "極簡獨奏鋼琴出道作，引爆 Spotify 風潮",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 0.1,
+    "z": 0.3,
+    "why": "緩慢低音鋼琴"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/0a521e04-ea56-4bfb-bb5e-80790ccf24a8/front-250",
+    "https://musicbrainz.org/release-group/0a521e04-ea56-4bfb-bb5e-80790ccf24a8"
+   ],
+   "spotifyName": "Joep Beving",
+   "mbRgMbid": "0a521e04-ea56-4bfb-bb5e-80790ccf24a8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發廠牌 iaregiantrecords（自發行），DG 於 2016 重發"
+  },
+  {
+   "artist": "Joep Beving",
+   "album": "Prehension",
+   "year": 2017,
+   "label": "Mercury KX / Deutsche Grammophon",
+   "country": "nl",
+   "faction": "neo-classical-piano",
+   "genres": [
+    "classical"
+   ],
+   "why": "第二張，更深沉的鋼琴作品",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 0.3,
+    "z": 0,
+    "why": "低沉慢板鋼琴"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/32ff8ac2-702e-4b8a-926f-f1ee9f6d2e3a/front-250",
+    "https://musicbrainz.org/release-group/32ff8ac2-702e-4b8a-926f-f1ee9f6d2e3a"
+   ],
+   "spotifyName": "Joep Beving",
+   "mbRgMbid": "32ff8ac2-702e-4b8a-926f-f1ee9f6d2e3a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Juana Molina",
+   "album": "Un día",
+   "year": 2008,
+   "label": "Domino",
+   "country": "ar",
+   "faction": "folktronica",
+   "genres": [
+    "folk",
+    "electronic"
+   ],
+   "why": "阿根廷 folktronica 公認最受推崇的專輯",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.1,
+    "z": 0.2,
+    "why": "循環吉他與人聲疊層"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/9d87b378-54e6-3cd7-88ed-b43d309d9059/front-250",
+    "https://musicbrainz.org/release-group/9d87b378-54e6-3cd7-88ed-b43d309d9059"
+   ],
+   "spotifyName": "Juana Molina",
+   "mbRgMbid": "9d87b378-54e6-3cd7-88ed-b43d309d9059",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Juana Molina",
+   "album": "Segundo",
+   "year": 2000,
+   "label": "Domino",
+   "country": "ar",
+   "faction": "folktronica",
+   "genres": [
+    "folk",
+    "electronic"
+   ],
+   "why": "風格轉折的突破作，David Byrne 讚賞",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.1,
+    "z": 0.2,
+    "why": "極簡電子與耳語人聲"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/348dec7a-5c08-367e-90c3-fdfd84ba8488/front-250",
+    "https://musicbrainz.org/release-group/348dec7a-5c08-367e-90c3-fdfd84ba8488"
+   ],
+   "spotifyName": "Juana Molina",
+   "mbRgMbid": "348dec7a-5c08-367e-90c3-fdfd84ba8488",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "阿根廷原版 2000，MB 記 Domino 國際版 2003"
+  },
+  {
+   "artist": "Kate NV",
+   "album": "Room for the Moon",
+   "year": 2020,
+   "label": "RVNG Intl.",
+   "country": "ru",
+   "faction": "art-pop",
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "why": "國際突破作，俄羅斯實驗流行代表",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0,
+    "z": 0.5,
+    "why": "輕盈合成器與復古流行"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/d7310ca8-0140-4a58-8457-305091bd106d/front-250",
+    "https://musicbrainz.org/release-group/d7310ca8-0140-4a58-8457-305091bd106d"
+   ],
+   "spotifyName": "Kate NV",
+   "mbRgMbid": "d7310ca8-0140-4a58-8457-305091bd106d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kate NV",
+   "album": "Для",
+   "year": 2018,
+   "label": "Orange Milk",
+   "country": "ru",
+   "faction": "art-pop",
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "why": "早期另一個高峰，馬林巴與八〇年代質感",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 0,
+    "z": 0.4,
+    "why": "馬林巴與合成器玩具感"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/19df5f38-8078-4b93-b008-4b99dec19bc2/front-250",
+    "https://musicbrainz.org/release-group/19df5f38-8078-4b93-b008-4b99dec19bc2"
+   ],
+   "spotifyName": "Kate NV",
+   "mbRgMbid": "19df5f38-8078-4b93-b008-4b99dec19bc2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 標題為「Для FOR」"
+  },
+  {
+   "artist": "L'Acéphale",
+   "album": "L'Acéphale",
+   "year": 2019,
+   "label": "Eisenwald",
+   "country": "us",
+   "faction": "black-metal-folk",
+   "genres": [
+    "rock"
+   ],
+   "why": "評論最高分的黑金屬與民謠混合專輯",
+   "moodGuess": {
+    "x": 4,
+    "y": 0.9,
+    "z": -1.2,
+    "why": "黑金屬嘶吼夾新民謠"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/c4f897ac-a118-41de-91d2-5acef7b2f457/front-250",
+    "https://musicbrainz.org/release-group/c4f897ac-a118-41de-91d2-5acef7b2f457"
+   ],
+   "spotifyName": "L'Acephale",
+   "mbRgMbid": "c4f897ac-a118-41de-91d2-5acef7b2f457",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Portland 專案，評論資料少；藝人名取重音正規寫法"
+  },
+  {
+   "artist": "L'Acéphale",
+   "album": "Malefeasance",
+   "year": 2009,
+   "label": "Aurora Borealis",
+   "country": "us",
+   "faction": "black-metal-folk",
+   "genres": [
+    "rock"
+   ],
+   "why": "早期兩首長曲的黑金屬代表",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.9,
+    "z": -1.2,
+    "why": "長篇陰沉黑金屬"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/2de7daff-5769-46f7-a929-4c9c1c4ec62e/front-250",
+    "https://musicbrainz.org/release-group/2de7daff-5769-46f7-a929-4c9c1c4ec62e"
+   ],
+   "spotifyName": "L'Acephale",
+   "mbRgMbid": "2de7daff-5769-46f7-a929-4c9c1c4ec62e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上"
+  },
+  {
+   "artist": "Lau Nau",
+   "album": "Kuutarha",
+   "year": 2005,
+   "label": "Locust Music",
+   "country": "fi",
+   "faction": "finnish-freak-folk",
+   "genres": [
+    "folk",
+    "electronic"
+   ],
+   "why": "芬蘭 freak folk 出道代表",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.1,
+    "z": 0.1,
+    "why": "低語人聲與田野錄音"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/d3d6a69c-52e3-3684-adc9-f9aba2ec91a8/front-250",
+    "https://musicbrainz.org/release-group/d3d6a69c-52e3-3684-adc9-f9aba2ec91a8"
+   ],
+   "spotifyName": "Lau Nau",
+   "mbRgMbid": "d3d6a69c-52e3-3684-adc9-f9aba2ec91a8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lau Nau",
+   "album": "Nukkuu",
+   "year": 2008,
+   "label": "Fonal Records",
+   "country": "fi",
+   "faction": "finnish-freak-folk",
+   "genres": [
+    "folk",
+    "electronic"
+   ],
+   "why": "第二張，更迷幻的睡眠系民謠",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.2,
+    "z": 0,
+    "why": "夢遊般迷幻民謠"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/f0e2aa9d-ee47-315a-a2c3-66cd9b546405/front-250",
+    "https://musicbrainz.org/release-group/f0e2aa9d-ee47-315a-a2c3-66cd9b546405"
+   ],
+   "spotifyName": "Lau Nau",
+   "mbRgMbid": "f0e2aa9d-ee47-315a-a2c3-66cd9b546405",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Luke Abbott",
+   "album": "Holkham Drones",
+   "year": 2010,
+   "label": "Border Community",
+   "country": "gb",
+   "faction": "uk-electronica",
+   "genres": [
+    "electronic"
+   ],
+   "why": "英國電子代表作，Border Community 經典",
+   "moodGuess": {
+    "x": 3,
+    "y": 0.2,
+    "z": 0.3,
+    "why": "溫暖琶音合成器"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/291df994-b922-4a47-b08e-40a6afef8339/front-250",
+    "https://musicbrainz.org/release-group/291df994-b922-4a47-b08e-40a6afef8339"
+   ],
+   "spotifyName": "Luke Abbott",
+   "mbRgMbid": "291df994-b922-4a47-b08e-40a6afef8339",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Luke Abbott",
+   "album": "Wysing Forest",
+   "year": 2014,
+   "label": "Border Community",
+   "country": "gb",
+   "faction": "uk-electronica",
+   "genres": [
+    "electronic"
+   ],
+   "why": "第二張，更模組化、更沉浸",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.3,
+    "z": 0,
+    "why": "模組合成器的迷幻脈動"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/df6eaa89-3a19-4c95-9fae-5d6d1f9834c2/front-250",
+    "https://musicbrainz.org/release-group/df6eaa89-3a19-4c95-9fae-5d6d1f9834c2"
+   ],
+   "spotifyName": "Luke Abbott",
+   "mbRgMbid": "df6eaa89-3a19-4c95-9fae-5d6d1f9834c2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "範圍 sf10 第 1–17 位；全部池中皆無該掛名，無整位跳過。",
+  "Against All Logic 為 Nicolas Jaar 別名；池中有 Nicolas Jaar《Space Is Only Noise》，但 Against All Logic 掛名無卡，故收；兩張 MB 標 Compilation 但為公認正式專輯。",
+  "Danger Mouse 只收本人主導的合作名義（Dark Night of the Soul = Danger Mouse & Sparklehorse；Rome = Danger Mouse & Daniele Luppi）；Gnarls Barkley／Broken Bells 不收；Cheat Codes（with Black Thought, 2022）、Danger Doom 未收。",
+  "Gibran Alcocer 無正規專輯，僅單曲與 6 首 EP《Music for Silhouettes》，以 releaseException 收一張，請把關。",
+  "池中 Christ.《Metamorphic Reproduction Miracle》是不同藝人，Federico Albanese 與池中 Rico 不同人。",
+  "全部 MB 釘住（mbRgMbid），封面來源為 CAA（Clutchy 第二張另附 iTunes）。人工身分 0 張。",
+  "Segundo 年份用阿根廷原版 2000，MB 為 2003。"
+ ]
+}
