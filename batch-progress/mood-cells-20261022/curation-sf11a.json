@@ -2,6 +2,12 @@
  "group": "sf11a",
  "factions": [
   {
+   "id": "es-jazz-electronic",
+   "zh": "es-jazz-electronic",
+   "count": 1,
+   "why": ""
+  },
+  {
    "id": "hk-lofi-rock",
    "zh": "hk-lofi-rock",
    "count": 1,
@@ -14,6 +20,12 @@
    "why": ""
   },
   {
+   "id": "noise-industrial",
+   "zh": "noise-industrial",
+   "count": 1,
+   "why": ""
+  },
+  {
    "id": "ru-bedroom-pop",
    "zh": "ru-bedroom-pop",
    "count": 1,
@@ -22,7 +34,7 @@
   {
    "id": "uk-experimental",
    "zh": "uk-experimental",
-   "count": 1,
+   "count": 2,
    "why": ""
   },
   {
@@ -44,6 +56,12 @@
    "why": ""
   },
   {
+   "id": "us-hiphop",
+   "zh": "us-hiphop",
+   "count": 1,
+   "why": ""
+  },
+  {
    "id": "us-hiphop-jazz",
    "zh": "us-hiphop-jazz",
    "count": 1,
@@ -52,6 +70,18 @@
   {
    "id": "us-indie-pop",
    "zh": "us-indie-pop",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-latin-jazzfusion",
+   "zh": "us-latin-jazzfusion",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "us-metal",
+   "zh": "us-metal",
    "count": 1,
    "why": ""
   }
@@ -86,7 +116,7 @@
    "manualEvidenceUrls": [],
    "releaseException": "",
    "queryAlias": "",
-   "uncertain": "Spotify 的 Moin 疑為此英國三人組（MB 同名條目混有他人 mixtape），未能在 Spotify 藝人頁核對"
+   "uncertain": "熱門曲經 MB 對應 You Never End（Sophia Al-Maria 合作），確為英國三人組"
   },
   {
    "artist": "NUUAMM",
@@ -209,7 +239,7 @@
    "manualEvidenceUrls": [],
    "releaseException": "",
    "queryAlias": "",
-   "uncertain": "Spotify 的 Natural Magic 疑為此波特蘭二人組；2026 新盤評論尚少，也可改收 2015 首作 Natural Magic"
+   "uncertain": "熱門曲（Skyward Eye 等）經 MB 對應 II，身分吻合"
   },
   {
    "artist": "Parks, Squares and Alleys",
@@ -278,35 +308,32 @@
   },
   {
    "artist": "Nicknack",
-   "album": "State Machine",
-   "year": 2012,
-   "label": "Crowd Control Records",
+   "album": "Dearly Departed",
+   "year": 2010,
+   "label": "",
    "country": "us",
    "faction": "us-hiphop-jazz",
    "genres": [
-    "hiphop",
     "electronic"
    ],
-   "why": "Nicknack 最完整的長盤之一，Apple／Discogs 皆列出；hip-hop 夾爵士取樣",
+   "why": "Spotify 熱門曲（Hurt You、Mustard Seed、Cascade）皆出自此盤，Nicknack 最具代表性的長盤",
    "moodGuess": {
-    "x": 3.2,
-    "y": 0.3,
-    "z": 0.2,
-    "why": "boom bap 鼓與爵士取樣"
+    "x": 2.4,
+    "y": 0.0,
+    "z": 0.0,
+    "why": "中速電子、downtempo 質感"
    },
    "evidence": [
-    "https://musicbrainz.org/release-group/6492e1d0-383d-426f-b813-6a8280162035",
-    "https://coverartarchive.org/release-group/6492e1d0-383d-426f-b813-6a8280162035/front",
-    "https://music.apple.com/us/album/state-machine/513628106",
-    "https://www.discogs.com/NickNack-State-Machine/release/3907844"
+    "https://musicbrainz.org/release-group/fff0650c-c709-4e69-9d47-04a56e52c274",
+    "https://coverartarchive.org/release-group/fff0650c-c709-4e69-9d47-04a56e52c274/front"
    ],
    "spotifyName": "Nicknack",
-   "mbRgMbid": "6492e1d0-383d-426f-b813-6a8280162035",
+   "mbRgMbid": "fff0650c-c709-4e69-9d47-04a56e52c274",
    "mbAbsenceProof": null,
    "manualEvidenceUrls": [],
    "releaseException": "",
    "queryAlias": "",
-   "uncertain": "Nicknack 同名可能是別人（MB 為 US 條目，早期 2001-2005 作品多為電子）；無評論共識，建議低優先"
+   "uncertain": "熱門曲經 MB 錄音比對對應 Dearly Departed 2010；無評論共識，label 未確認，可汰"
   },
   {
    "artist": "Mad Keys",
@@ -339,19 +366,225 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "身分僅靠 Bandcamp 與 Apple 頁，無評論共識，可汰"
+  },
+  {
+   "artist": "Moin",
+   "album": "You Never End",
+   "year": 2024,
+   "label": "AD 93",
+   "country": "gb",
+   "faction": "uk-experimental",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Moin 第三張，Spotify 熱門曲（Lift You、Family Way 等）皆出自此盤，與 Moot! 同為代表作",
+   "moodGuess": {
+    "x": "3.4",
+    "y": 0.6,
+    "z": -0.8,
+    "why": "後龐克鼓點、人聲與電子渲染"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a9e4b564-2df4-4a5f-b041-95cf799f676b",
+    "https://coverartarchive.org/release-group/a9e4b564-2df4-4a5f-b041-95cf799f676b/front"
+   ],
+   "spotifyName": "Moin",
+   "mbRgMbid": "a9e4b564-2df4-4a5f-b041-95cf799f676b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Caldera",
+   "album": "Sky Islands",
+   "year": 1977,
+   "label": "Capitol",
+   "country": "us",
+   "faction": "us-latin-jazzfusion",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "洛杉磯拉丁爵士融合樂團 Caldera 的第二張，Dianne Reeves 客唱〈Sky Islands〉，樂迷公認巔峰",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.4,
+    "z": 0.6,
+    "why": "拉丁節奏、爵士融合與華麗編制"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/17aae547-cea0-4df9-80c2-e76ab4dd6a6e",
+    "https://coverartarchive.org/release-group/17aae547-cea0-4df9-80c2-e76ab4dd6a6e/front"
+   ],
+   "spotifyName": "caldera",
+   "mbRgMbid": "17aae547-cea0-4df9-80c2-e76ab4dd6a6e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Caldera",
+   "album": "Caldera",
+   "year": 1976,
+   "label": "Capitol",
+   "country": "us",
+   "faction": "us-latin-jazzfusion",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "樂團同名首作，Seraphim、Pegasus 等熱門曲所在，與《Sky Islands》並列兩大高峰",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.4,
+    "z": 0.6,
+    "why": "拉丁爵士融合、器樂炫技"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6f4d5e05-65e2-3b15-a884-a42e9e77b0a5",
+    "https://coverartarchive.org/release-group/6f4d5e05-65e2-3b15-a884-a42e9e77b0a5/front"
+   ],
+   "spotifyName": "caldera",
+   "mbRgMbid": "6f4d5e05-65e2-3b15-a884-a42e9e77b0a5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "熱門曲 Seraphim／Pegasus 的所屬專輯未逐曲核對，僅依 Caldera 1976 首作與 Sky Islands 為二大高峰推定"
+  },
+  {
+   "artist": "DJ Toner",
+   "album": "Outside",
+   "year": 2024,
+   "label": "",
+   "country": "es",
+   "faction": "es-jazz-electronic",
+   "genres": [
+    "electronic",
+    "jazz"
+   ],
+   "why": "西班牙爵士電子製作人 DJ Toner，與 Raynald Colom、Jorge Pardo、Erik Truffaz 合作；熱門曲 Camina 出自此盤",
+   "moodGuess": {
+    "x": 2.5,
+    "y": -0.1,
+    "z": 0.3,
+    "why": "爵士小號與電子節拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a2cbdc98-5b30-4c6a-bf9a-2579badd9558",
+    "https://coverartarchive.org/release-group/a2cbdc98-5b30-4c6a-bf9a-2579badd9558/front"
+   ],
+   "spotifyName": "Dj Toner",
+   "mbRgMbid": "a2cbdc98-5b30-4c6a-bf9a-2579badd9558",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "label 未確認；熱門曲僅 Camina 經 MB 對應 Outside，其餘合作曲未逐一核對"
+  },
+  {
+   "artist": "Doctor Butcher",
+   "album": "Doctor Butcher",
+   "year": 1994,
+   "label": "GUN Records",
+   "country": "us",
+   "faction": "us-metal",
+   "genres": [
+    "rock"
+   ],
+   "why": "Savatage 的 Jon Oliva、Chris Caffery 的 side project，唯一正規專輯，熱門曲 The Altar／Season of the Witch 皆在此盤",
+   "moodGuess": {
+    "x": 4.3,
+    "y": 1.6,
+    "z": -0.8,
+    "why": "重 riff 傳統金屬、沙啞嘶吼"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2ace1b3b-b649-3072-8e0a-11964eee5fdd",
+    "https://coverartarchive.org/release-group/2ace1b3b-b649-3072-8e0a-11964eee5fdd/front",
+    "https://www.metal-archives.com/albums/Doctor_Butcher/Doctor_Butcher/6479"
+   ],
+   "spotifyName": "Doctor Butcher",
+   "mbRgMbid": "2ace1b3b-b649-3072-8e0a-11964eee5fdd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Alexandra Atnif",
+   "album": "Rhythmic Brutalism Vol.1",
+   "year": 2018,
+   "label": "Rewind Forward",
+   "country": "xx",
+   "faction": "noise-industrial",
+   "genres": [
+    "electronic"
+   ],
+   "why": "早期自發卡帶集結成黑膠的工業電子／噪音代表作（Spotify 熱門曲有 Side 2 等長曲）",
+   "moodGuess": {
+    "x": 4.2,
+    "y": 1.2,
+    "z": -1.2,
+    "why": "工業節奏、回授噪音牆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ffff6c2c-2995-4c46-8160-d9a659e7cc4a",
+    "https://coverartarchive.org/release-group/ffff6c2c-2995-4c46-8160-d9a659e7cc4a/front",
+    "https://rwdfwd.com/products/alexandra-atnif-rhythmic-brutalism-vol-1"
+   ],
+   "spotifyName": "Alexandra Atnif",
+   "mbRgMbid": "ffff6c2c-2995-4c46-8160-d9a659e7cc4a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "國籍不明（country 填 xx）；Spotify 熱門曲未能對應到 Vol.1 或 Vol.2 或 Seekers Of The Void 2018，無評論共識，可汰"
+  },
+  {
+   "artist": "ERISTHEPLANET",
+   "album": "IT REALLY DO BE THAT DAMN PHONE",
+   "year": 2026,
+   "label": "",
+   "country": "us",
+   "faction": "us-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "饒舌手 ERISTHEPLANET 2026 專輯，收錄熱門曲 8 FEET TALL (feat. Rico Nasty)",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.8,
+    "z": -0.4,
+    "why": "trap 底鼓與嘶啞饒舌"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/42856fe4-7bb9-4c84-afa1-d9a36e67c78b",
+    "https://coverartarchive.org/release-group/42856fe4-7bb9-4c84-afa1-d9a36e67c78b/front"
+   ],
+   "spotifyName": "ERISTHEPLANET",
+   "mbRgMbid": "42856fe4-7bb9-4c84-afa1-d9a36e67c78b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "2026-08 新盤、評論尚少，國籍與 label 未確認"
   }
  ],
  "notes": [
-  "不收：Agosta（MB 只有 Phil/Anna/Concetta Agosta 與 Muere Agosta 等同名者，無法確認 Spotify 這位是誰，也查無正規專輯）",
-  "不收：Alexandra Atnif（MB 有 noise 藝人，僅 Seekers Of The Void 2018 / Rhythmic Brutalism Vol.1 兩張自發噪音專輯，無可靠第二來源、無評論共識，不硬湊）",
-  "不收：caldera（同名過多：Caldera 70s 爵士融合、德國 dub-techno、Stoner Doom、英國 DJ，Spotify 對應哪位無法確定）",
-  "不收：Declan McDermott（MB 僅有藝人條目，沒有任何 release group，無作品可收）",
-  "不收：Dj Toner（MB 西班牙 DJ Toner 有 Blessed are the weird people 2021 / Grandmaster Jazz 2016 等，但身分無法確認為 Spotify 該位、封面 CAA 404、無評論共識）",
-  "不收：Doctor Butcher（MB 為 1992 美國團，與 Spotify 該位是否同一人無法確認，且僅 1994 同名專輯與 demo）",
-  "不收：ERISTHEPLANET（MB 只有 2026 年 IT BE THAT DAMN PHONE 一張，剛發行、無評論與可確認身分）",
-  "不收：Four Pens（MB 查無條目，也沒找到可靠來源）",
-  "不收：North Downs（Jack Sibley，MB 只有 EP 與單曲，無長盤，不符規則）",
   "跳過（已在池）：無。18 位皆查過 seed_cards，僅 caldera／Doctor Butcher／Parks 出現子字串誤中（Joey Calderazzo、Cher、Sand），非同一人",
-  "備註：本環境 iTunes API 回 403，封面以 CAA（HTTP 200 已驗證）為準；WebSearch 用了 9 次"
+  "不收：Agosta（Spotify 熱門曲全是 remix／rework〈Carricante〉等，無自己的正規專輯）",
+  "不收：Declan McDermott（house 單曲與 remix〈Doin' It All 4 U〉等，MB 無 release group）",
+  "不收：North Downs（Jack Sibley，與 Maribou State 合作單曲；MB 僅 EP《Dad's Old Tapes》與單曲）",
+  "不收：Four Pens＝台灣樂團四枝筆（zh 維基：僅 EP《AM 6:57》《PM 11:59》、日本集結盤《One Day》、單曲；首張非集結專輯尚在籌備），MB 無條目，無正規專輯",
+  "重查（2026-10-30 熱門曲）：caldera＝1970s 洛杉磯 Caldera 收 2 張；DJ Toner＝西班牙爵士電子收《Outside》；Doctor Butcher＝Jon Oliva／Chris Caffery side project 收同名專輯；Alexandra Atnif、ERISTHEPLANET 有專輯故收（皆標 uncertain）",
+  "熱門曲核對已收 9 位：Moin 熱門曲屬 You Never End（已加收）；Natural Magic 屬 II 吻合；Nicknack 屬 Dearly Departed 2010（已由 State Machine 改正）；NUUAMM／NoSo／Parks／Mad Keys 吻合；Mindchatter 熱門曲為單曲，但 DREAM SOUP 仍為其長盤代表；Offset: Spectacles 無熱門曲資料，維持原判",
+  "備註：iTunes API 403，封面以 CAA（HTTP 200 已驗）為準；WebSearch 共用 12 次"
  ]
 }

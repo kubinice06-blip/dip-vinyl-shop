@@ -1,0 +1,24 @@
+# add-20261030-sf11 裁定（Spotify 追蹤藝人補卡池・冷門與身分待查：電子、lo-fi、小廠牌）
+
+> 店主 2026-10-30 `/dip-card-create`：依 Spotify 追蹤藝人補卡池，每位缺漏藝人挑 1–2 張代表作（交接 `batch-progress/spotify-follow-20261030/PLAN.md`）。本工作階段負責 sf11、sf12。流程沿用情緒薄格線腳本（`batch-progress/HANDOFF-mood-cells-line.md` §二），**不做 moodGuess 邊距檢查**；情緒評分照 `batch-progress/mood-axes/RULES.md`，不算落格率。
+> 策展：`curation-sf11a.json`（16）＋`curation-sf11b.json`（14）→ 主線汰 5、改 2（`master-override-sf11asf11b.json`）→ `master-sf11asf11b.json`（25 張；MB 21、人工 4）→ `pick.json`（25）→ `build-cards.mjs`。
+> 本批卡單：`desc-tools/batches/cards/add-20261030-sf11-cards.json`（25 張；研究 a–e 各 5）。
+> **預留：研究 a 49801–49810、b 49811–49820、c 49821–49830、d 49831–49840、e 49841–49850、鉤子 49851–49860、寫作 49861–49870、主線 49871–49880。**（418xx／419xx 之後的 420xx–423xx 可能被並行的 sf03／04／06／08 取用，本批改用 498xx 避撞。）
+---
+
+## 主線策展（不佔條號）
+- **清單 35 位 → 收 24 位、25 張；跳過已在池 1 位；不收 10 位。**
+- **Spotify 藝人頁回查（主線全批 35 位）**：`open.spotify.com/embed/artist/<id>` 熱門曲逐位抓下（`scratchpad/spcheck/top.txt`）發回策展層核對。第一輪 sf11a 沒有熱門曲資料而把 9 位判不收，主線用熱門曲線索要求重查後補回 caldera（〈Sky Islands〉feat. Dianne Reeves＝洛杉磯拉丁爵士融合樂團 Caldera）、DJ Toner（與 Raynald Colom、Jorge Pardo、Erik Truffaz 合作的西班牙製作人）、Doctor Butcher（〈The Altar〉〈Season of the Witch〉＝1994 同名專輯的美國金屬樂團）、ERISTHEPLANET。Nicknack 熱門曲對應《Dearly Departed》（2010），策展改收該盤。
+- **跳過（已在池）**：Scattered Purgatory → 池中寫法 破地獄（1 張）。
+- **不收**：
+  - Agosta——熱門曲全是 remix，查無正規專輯。
+  - Declan McDermott——house 單曲與 remix。
+  - North Downs——單曲與 EP（與 Maribou State 合作曲）。
+  - Four Pens（四枝筆）——zh 維基與 MB 只有 EP、日本集結盤《One Day》與單曲，無正規錄音室專輯。
+  - sloje（單曲與 4 首 EP）、ZipZap（單曲／EP，MB 那張無法確認是同一人）。
+  - Whyte——只找到一張專輯，缺第二個身分來源。
+  - Nice Face——熱門曲對不上任何可釘住的專輯。
+  - Alexandra Atnif——策展提《Rhythmic Brutalism Vol.1》，但 Spotify 熱門曲（〈Side 2〉〈Undeciphered Distress Signal〉）對不上該盤或同年其他盤，國籍不明，身分無法與 Spotify 追蹤對象連起來，主線汰。
+- **一位只收一張（主線汰第二張）**：Moin 汰《You Never End》留《Moot!》（AD 93 首作，評論集中）；Caldera 汰 1976 同名首作留《Sky Islands》（熱門曲標題曲）；特撮汰《ヌイグルマー》留出道作《爆誕》（MB 763d5913，2000-02-23）；ULTRA SUNN 汰新作《The Beast in You》留《US》。
+- **改**：The Offset: Spectacles 國別 hk → us（Chicago Trouble In Mind 發行的美國一人計畫，研究層核實）。
+- 交研究層把關：Posh Inverse 的中文團名「優雅逆轉」與 The Sign Of Human 的「記號士」是策展填的雙寫，研究層要找到官方來源，找不到就只用英文名；The Sign Of Human 台／港國別；skip skip ben ben 熱門曲（交雜隕石、無限大、海嘯列車）是否出自較新的專輯（MB 只到 2015《鏡中鏡》）；ERISTHEPLANET 盤名（策展寫《IT REALLY DO BE THAT DAMN PHONE》，MB 寫《IT BE THAT DAMN PHONE》）照封面與 Spotify 定；Sonia Calico 國別（熱門曲含中文）；The Luvmenauts 國別；pololu 熱門曲掛 Flow State Records（PLAN 列為廠牌、不收的那個帳號；pololu 本人是藝人，照收）；Mad Keys、Nicknack、PUZZLEMAN 無評論共識，代表作依完整度推定。
