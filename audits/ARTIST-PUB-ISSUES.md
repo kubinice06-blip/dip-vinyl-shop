@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 967 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 974 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -971,3 +971,10 @@
 | ar-d-130 | Dewa 19 | Terbaik Terbaik | 1995 年 8 月 2 日面世 | Jakarta Post（2022 黑膠報導）與搜尋摘要所引維基都寫 1995 年 6 月 20 日發行；兩者不一致，需店主對 Aquarius 版或維基確認。 | https://www.thejakartapost.com/culture/2022/09/23/dewa-19-album-gets-vinyl-treatment-for-the-first-time |
 | ar-d-130 | M’bilia Bel | Boya Ye | 領唱的 M’bilia Bel 與他在 1980 年代中期結婚 | 維基 Mbilia Bel 頁寫 1984 年訂婚、約 1988 年關係結束，未明說結婚；事實庫引的 Tabu Ley 頁說結婚。低度存疑，建議改「相戀並育有一女」或再查 | https://en.wikipedia.org/wiki/Mbilia_Bel |
 | ar-d-130 | Nyboma | Doublé doublé | 1972 年起在 Verckys 旗下唱紅 | 維基 Nyboma 頁：1972 年他加入 Orchestre Bella Bella（後者簽 Verckys 的 Vévé 廠牌），1973 年共組 Lipua Lipua；未見「在 Verckys 旗下」直接說法，建議改為更保守的寫法或補證 | https://en.wikipedia.org/wiki/Nyboma |
+| ar-d-201 | Albert Mangelsdorff Quintet | Tension | 1947 年先以吉他手出道，同一年才改學長號 | Playbill 與 Universalis 都寫 1948 年改學長號；英文維基只有 1947 吉他手出道，沒有『同一年學長號』，德文維基有，來源不一 | https://playbill.com/article/jazz-trombonist-albert-mangelsdorff-dies-at-76 |
+| ar-d-201 | Klimeks | Overnites | wavemob 讓它 2013 年 11 月 4 日釋出 | 維基稱 wavemob 首發是 2016 年的合輯《wave 001》，與 Discogs 的 2013 日期不符；日期待核（可能 Discogs 為補登），上線簡介『年輕的英國製作人』可補『wave 一詞的帶頭人』 | https://en.wikipedia.org/wiki/Wave_music |
+| ar-d-201 | Dezső Ránki | Chopin: Études op. 10, Nocturne op. 9 no. 3 & Ballades opp. 38 & 23 | 錄音後來獲法國查爾·克羅學院唱片大獎 | 英文維基只寫 1972 Grand Prix du Disque（Chopin recital 1971），BMC 列 1972 Grand Prix du Disque 但未連結蕭邦錄音；兩者都沒寫「查爾·克羅學院」，需查證主辦單位與是否為此張 | https://en.wikipedia.org/wiki/Dezső_Ránki |
+| ar-d-201 | Manfred Reuthe | Klavier Solo I | 受尹伊桑之邀，在南韓教了八年琴 | Discogs 寫尹伊桑邀請他赴韓；Heidelberg 活動頁與德國音樂院的簡介只說 1973 年起任教首爾與大邱，沒有提尹伊桑。兩源皆未證實邀請之說，且 Discogs 寫 1980 年前教 8 年與 1973 起算相符，但「八年」只有 Discogs 單源。建議店主本機核對。 | https://dai-heidelberg.de/en/events/32nd-heidelberg-piano-week-4-22869/ |
+| ar-d-201 | 張震嶽 | 遠走高飛 | 上一回走情歌路線是 2013 年的《我是海雅谷慕》 | 中文維基與搜尋所見資料把《我是海雅谷慕》描述為以阿美族名為題、回歸大自然與環境思考的專輯，未見「情歌路線」說法；〈抱著你〉入圍年度歌曲，但整張是否為情歌專輯無來源。建議店主本機核對。 | https://zh.wikipedia.org/wiki/%E5%BC%B5%E9%9C%87%E5%B6%BD |
+| ar-d-202 | DIR EN GREY | Withering to death. | 芬蘭專輯榜上第一組上榜的非歐美藝人 | 英文維基只寫此專輯是樂團首個非亞洲榜位（芬蘭第 31 名），未寫「第一組非歐美藝人」；ja 維基的『欧米以外のアーティストとしては初』指向德國榜，且頁面自標出典不足；此「第一」宣稱無獨立兩源，建議審稿時降級或刪除 | https://en.wikipedia.org/wiki/Dir_En_Grey |
+| ar-d-202 | 静香 | 天界のペルソナ | 静香一手主導：唱歌、彈吉他、搖鈴，詞曲與概念全包 | 英文維基稱吉他由三浦マキ演奏、静香負責緩慢吟誦式人聲，『彈吉他』疑為マキ；詞曲全包無來源確認 | https://en.wikipedia.org/wiki/Shizuka_(band) |
