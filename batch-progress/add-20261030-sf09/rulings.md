@@ -96,3 +96,10 @@
 ## 主線（條號 41871–41880）
 - 41871：研究 b 組 Rootless Cosmopolitans 有一條 fact 寫「52 秒的〈Rate〉」，主線拿 MB 曲目表核對，〈Rate〉其實是 Mark Guiliana《Jersey》的曲子，同組研究稿串稿。這條 fact 整條刪掉，剩 7 條。鉤子層原本就沒派進 note。重跑 `merge-writer-input`。
 - 41872：研究層推翻策展層後，卡單跟著改：Family First 的廠牌改 Beat Music Productions；Spiral Deluxe 改 Axis Records；Melt Zonk Rewire 改 Tzadik；Juniper 改 Edition Records；Night Cap 改 Disques Debs；Yttling Jazz 改原版 Headspin Recordings。McDole、Samos、金字塔、Three Little Words 四張補上廠牌（研究 d 組查到）。David Becker Tribune 的國別改 us。Moses Yoofee Trio《MYT》MB 已經建檔（683dbd89），從 §1 人工身分改成 pinned，國別改 de。
+
+## 寫作層（writer-2）（41866–41870）
+- **41866** 交件：`desc-tools/batches/output/add-20261030-sf09-out-2.json` 19 張，key 逐字同序。full 14：217–239；thin 5：Samos 170、高木 143、濱瀬 164、swing slow 166、Graciela 143。`qa-check-research` 0 標記、`fix-spacing` 待補 0、`qa-batch out`（兩檔合計 39 張）全部通過；「據」字 grep 0。初稿 4 張超標（Fonk 256、Juniper 249、Girl and Robot 247、Dark Is the Sun 246），整格捨去：Fonk 拿掉盤名重述與「親自開口」；Juniper 改「Stapleton 包辦作曲」；Girl and Robot 兩段錄音日併成一句；Dark Is the Sun 縮巴洛克一句與再版廠牌句。
+- **41867** 第二句領句全照鉤子層 note 指派（41853／41858）；「日」後一字全照 41859（McDole 透、Yttling 進、高木 的、濱瀬 出、中村 正、Three Little Words 上、uKanDanZ 回、Spiral 經、swing slow 面、Fresh Moods 交、Graciela 東）。Spiral 的 Axis「主題是相信過程、活在當下」寫成「廠牌替它定的主題」，不用轉述引導詞。
+- **41868** 跨兩檔合掃 han() 4-gram（writer-1 交件中途與定稿各掃一次）：拆掉「發行這張」×4、「交給發行」×3、「第二張專輯」×3、「專輯年月日」×3、「同名首作」、「年月地點是」、「首全是他」、「這張專輯」、「廠牌發行」、「樂團在年」、「在年月日」、「吉他手年」、「發行的這張」、「唱片年月」、「完整專輯」、「他們第一」、「與鼓手都」、「是他的首」等殘片（2 張的也當 3 張拆）。定稿 2 次以上只剩樂器名（薩克斯風、低音大提琴、單簧管）與地名（斯德哥爾摩）。
+- **41869** 研究層推翻策展層照辦（以研究稿與 note 為準）：Spiral Deluxe 寫第二張、Axis；Assagai 不寫美版改題、不寫〈Kari〉，〈Hey Jude〉之後只稱「那首翻唱」；Graciela 不寫成探戈專輯；高木 只寫「簧管」與店名；濱瀬 2018 版明寫「另一次錄音」；中村 不寫披頭四與 Oricon；Nameless／Three Little Words 不掛 Juno；swing slow 的 コシミハル 寫 Miharu Koshi 並首次括注越美晴。媒體名與媒體榜單名次一律未寫（Honora 的榜單名次 note 未派）。
+- **41870** 只用 note：Juniper 三位團員的樂器（facts 有、note 沒有）不寫；Assagai 的「南非爵士團」「披頭四」不寫；Fresh Moods 不寫 Giessen 所屬邦名。Girl and Robot 第二句由「樂團的第二張專輯」改成「樂團第二張作品」，只為避開與 writer-1（Your Turn／Siberian Express／Jersey）的 4-gram，意思不變。
