@@ -40,13 +40,25 @@
   {
    "id": "modern-jazz",
    "zh": "現代爵士",
-   "count": 5,
+   "count": 6,
    "why": ""
   },
   {
    "id": "funk-jazz",
    "zh": "放克爵士",
    "count": 2,
+   "why": ""
+  },
+  {
+   "id": "spiritual-jazz",
+   "zh": "靈魂／電子琴爵士",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "vocal-jazz",
+   "zh": "人聲爵士",
+   "count": 1,
    "why": ""
   }
  ],
@@ -64,9 +76,9 @@
    ],
    "why": "布魯福德電子鼓與 Django Bates、Iain Ballamy 合組的原創樂團首作，確立其爵士轉向。",
    "moodGuess": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
+    "x": 3.4,
+    "y": -0.2,
+    "z": 0.3,
     "why": "電子鼓驅動的明亮英式爵士"
    },
    "evidence": [
@@ -93,9 +105,9 @@
    ],
    "why": "斯滕森三重奏 ECM 後期代表作，樂評最推崇的內斂詩意之作。",
    "moodGuess": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
+    "x": 1.8,
+    "y": -0.3,
+    "z": -0.2,
     "why": "沉靜抒情的鋼琴三重奏"
    },
    "evidence": [
@@ -122,9 +134,9 @@
    ],
    "why": "與 Anders Jormin、Jon Christensen 的經典編制，另一高峰。",
    "moodGuess": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
+    "x": 1.7,
+    "y": -0.2,
+    "z": -0.3,
     "why": "空靈留白的三重奏"
    },
    "evidence": [
@@ -142,7 +154,7 @@
   {
    "artist": "Daniel Ponce",
    "album": "Arawe",
-   "year": 1987,
+   "year": 1988,
    "label": "Antilles New Directions",
    "country": "us",
    "faction": "latin-jazz",
@@ -152,9 +164,9 @@
    ],
    "why": "古巴打擊樂手 Ponce 的代表作，融合 batá 與拉丁爵士、放克。",
    "moodGuess": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
+    "x": 3.6,
+    "y": 0.1,
+    "z": 0.5,
     "why": "繁密手鼓的拉丁爵士"
    },
    "evidence": [
@@ -167,7 +179,7 @@
    "manualEvidenceUrls": [],
    "releaseException": "",
    "queryAlias": "",
-   "uncertain": "封面僅 Discogs（CAA 無、iTunes 無）；Discogs 主版本標 1988，MB 1987"
+   "uncertain": "年份採 Discogs 主版本 1988（Antilles New Directions）；MB 為 1987；封面僅 Discogs"
   },
   {
    "artist": "David Becker Tribune",
@@ -182,9 +194,9 @@
    ],
    "why": "德國吉他手 Becker 樂團首作，MCA 發行的融合爵士代表。",
    "moodGuess": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
+    "x": 3.5,
+    "y": 0.2,
+    "z": 0.2,
     "why": "吉他主導的融合爵士"
    },
    "evidence": [
@@ -211,9 +223,9 @@
    ],
    "why": "Galper 與 Michael Brecker 的 Quintet，後咆勃經典。",
    "moodGuess": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
+    "x": 3.8,
+    "y": 0.1,
+    "z": 0.4,
     "why": "熱烈的後咆勃五重奏"
    },
    "evidence": [
@@ -241,9 +253,9 @@
    ],
    "why": "Play Bach 系列開山之作，三重奏爵士改編巴赫。",
    "moodGuess": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
+    "x": 2.4,
+    "y": -0.6,
+    "z": 0.7,
     "why": "輕盈搖擺的巴赫爵士"
    },
    "evidence": [
@@ -271,9 +283,9 @@
    ],
    "why": "Surman 獨奏合成器與低音單簧管的田園之作，ECM 代表。",
    "moodGuess": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
+    "x": 2.1,
+    "y": 0.6,
+    "z": 0.1,
     "why": "遼闊的英倫田園合成器"
    },
    "evidence": [
@@ -301,9 +313,9 @@
    ],
    "why": "早期英國民謠爵士高峰，低音薩克斯風與民謠旋律。",
    "moodGuess": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
+    "x": 2.8,
+    "y": 0.2,
+    "z": 0.4,
     "why": "蘇格蘭民謠味的爵士"
    },
    "evidence": [
@@ -330,9 +342,9 @@
    ],
    "why": "鼓手 Katché 首張 ECM 領銜作，與 Garbarek 等合作的代表。",
    "moodGuess": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
+    "x": 2.2,
+    "y": -0.2,
+    "z": 0.3,
     "why": "流暢清透的 ECM 爵士"
    },
    "evidence": [
@@ -359,9 +371,9 @@
    ],
    "why": "Johnson 與 Frisell、Scofield、Erskine 的標誌性樂團首作。",
    "moodGuess": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
+    "x": 3,
+    "y": 0.3,
+    "z": 0.1,
     "why": "雙吉他交纏的爵士"
    },
    "evidence": [
@@ -388,9 +400,9 @@
    ],
    "why": "2000 年代代表作，與 Lovano、Eliane Elias 合作的抒情之作。",
    "moodGuess": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
+    "x": 2,
+    "y": -0.2,
+    "z": 0.4,
     "why": "優雅細膩的室內爵士"
    },
    "evidence": [
@@ -418,9 +430,9 @@
    ],
    "why": "Ribot 最具代表性的紐約 Downtown 吉他作品。",
    "moodGuess": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
+    "x": 3.5,
+    "y": 0.5,
+    "z": -0.3,
     "why": "粗礪即興吉他"
    },
    "evidence": [
@@ -448,9 +460,9 @@
    ],
    "why": "Ceramic Dog 噪音搖滾與前衛的代表作。",
    "moodGuess": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
+    "x": 4.1,
+    "y": 0.9,
+    "z": -0.6,
     "why": "躁動的噪音搖滾"
    },
    "evidence": [
@@ -477,7 +489,7 @@
    ],
    "why": "Guiliana 爵士四重奏代表作，原聲爵士風格。",
    "moodGuess": {
-    "x": 0,
+    "x": 3.2,
     "y": 0,
     "z": 0,
     "why": "鼓手領銜的現代爵士"
@@ -506,9 +518,9 @@
    ],
    "why": "Jazz Quartet 的另一高峰。",
    "moodGuess": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
+    "x": 3.3,
+    "y": 0.2,
+    "z": -0.1,
     "why": "電氣質感的爵士四重奏"
    },
    "evidence": [
@@ -527,7 +539,7 @@
    "artist": "Michel Sardaby",
    "album": "Night Cap",
    "year": 1970,
-   "label": "",
+   "label": "Disques Debs",
    "country": "fr",
    "faction": "modern-jazz",
    "genres": [
@@ -535,9 +547,9 @@
    ],
    "why": "馬提尼克鋼琴家 Sardaby 的代表作。",
    "moodGuess": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
+    "x": 2.6,
+    "y": -0.3,
+    "z": 0.5,
     "why": "溫暖的鋼琴三重奏"
    },
    "evidence": [
@@ -550,7 +562,7 @@
    "manualEvidenceUrls": [],
    "releaseException": "",
    "queryAlias": "",
-   "uncertain": "MB 掛 Michel Sardaby Trio"
+   "uncertain": "MB 掛 Michel Sardaby Trio；label 憑記憶"
   },
   {
    "artist": "Moses Yoofee Trio",
@@ -564,9 +576,9 @@
    ],
    "why": "以色列三重奏的首張正規專輯。",
    "moodGuess": {
-    "x": 0,
+    "x": 3.4,
     "y": 0,
-    "z": 0,
+    "z": 0.1,
     "why": "輕快律動的新爵士"
    },
    "evidence": [
@@ -597,7 +609,7 @@
    ],
    "why": "新克萊茲默三重奏首作，克萊茲默爵士化。",
    "moodGuess": {
-    "x": 0,
+    "x": 3.7,
     "y": 0,
     "z": 0,
     "why": "詼諧跳躍的實驗克萊茲默"
@@ -627,9 +639,9 @@
    ],
    "why": "Landgren 放克樂團的經典，號角感強烈。",
    "moodGuess": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
+    "x": 3.9,
+    "y": 0.4,
+    "z": 0.6,
     "why": "厚實放克銅管"
    },
    "evidence": [
@@ -642,7 +654,7 @@
    "manualEvidenceUrls": [],
    "releaseException": "",
    "queryAlias": "",
-   "uncertain": ""
+   "uncertain": "Apple/MB 年份 2001"
   },
   {
    "artist": "Nils Landgren Funk Unit",
@@ -657,9 +669,9 @@
    ],
    "why": "Funk Unit 初期代表作。",
    "moodGuess": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
+    "x": 3.3,
+    "y": 0.2,
+    "z": 0.6,
     "why": "藍調放克長號"
    },
    "evidence": [
@@ -687,9 +699,9 @@
    ],
    "why": "威爾斯三重奏 Slowly Rolling Camera 代表作。",
    "moodGuess": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
+    "x": 2.3,
+    "y": 0.1,
+    "z": -0.1,
     "why": "電子質地的新爵士"
    },
    "evidence": [
@@ -703,13 +715,134 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": ""
+  },
+  {
+   "artist": "Sokratis Votskos",
+   "album": "Sketching the Unknown",
+   "year": 2019,
+   "label": "",
+   "country": "gr",
+   "faction": "modern-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "希臘薩克斯風 Votskos 四重奏的代表專輯。",
+   "moodGuess": {
+    "x": 3.1,
+    "y": 0,
+    "z": -0.1,
+    "why": "流動即興的希臘現代爵士"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/sketching-the-unknown/1482308236",
+    "https://coverartarchive.org/release-group/cebf1603-8c4b-4aa6-9e08-e78a162eb7c9/front"
+   ],
+   "spotifyName": "Sokratis Votskos with The Giorgos Pappas Trio",
+   "mbRgMbid": "cebf1603-8c4b-4aa6-9e08-e78a162eb7c9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Sokratis Votskos Quartet",
+   "uncertain": "Spotify 名帶 Pappas Trio，對應合作盤 Impressions of Samos (2026, MB e93c0e33)，我改收其個人代表作；MB 掛名 Quartet"
+  },
+  {
+   "artist": "The Greg Foat Group",
+   "album": "Girl and Robot With Flowers",
+   "year": 2012,
+   "label": "Jazzman",
+   "country": "gb",
+   "faction": "spiritual-jazz",
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "why": "Foat 樂團口碑最高的早期代表，復古電子琴爵士。",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 0.2,
+    "z": 0.1,
+    "why": "復古合成器與電鋼琴的爵士"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/girl-and-robot-with-flowers/570355085",
+    "https://musicbrainz.org/release-group/b075ae2a-a23e-4274-869c-51515fd4d87a"
+   ],
+   "spotifyName": "The Greg Foat Group",
+   "mbRgMbid": "b075ae2a-a23e-4274-869c-51515fd4d87a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Greg Foat Group",
+   "album": "Dark Is the Sun",
+   "year": 2011,
+   "label": "Jazzman",
+   "country": "gb",
+   "faction": "spiritual-jazz",
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "why": "首作，英倫靈魂爵士電子琴風格的起點。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.3,
+    "z": -0.1,
+    "why": "陰鬱律動的靈魂爵士"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/dark-is-the-sun/433628435",
+    "https://musicbrainz.org/release-group/c5f7ce60-df73-4776-a0d9-777d76cc5097"
+   ],
+   "spotifyName": "The Greg Foat Group",
+   "mbRgMbid": "c5f7ce60-df73-4776-a0d9-777d76cc5097",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "label 憑記憶"
+  },
+  {
+   "artist": "Tyreek McDole",
+   "album": "Open Up Your Senses",
+   "year": 2025,
+   "label": "",
+   "country": "us",
+   "faction": "vocal-jazz",
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "why": "男中音新秀 McDole 的正式專輯，Thelonious Monk 比賽得主。",
+   "moodGuess": {
+    "x": 2.9,
+    "y": -0.1,
+    "z": 0.4,
+    "why": "溫暖人聲的當代人聲爵士"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/open-up-your-senses/1793335929",
+    "https://coverartarchive.org/release-group/6508575a-1e4d-470b-9b6c-084f665ded6c/front"
+   ],
+   "spotifyName": "Tyreek McDole",
+   "mbRgMbid": "6508575a-1e4d-470b-9b6c-084f665ded6c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
   }
  ],
  "notes": [
-  "範圍說明：派工寫 1–21 位至 Tyreek McDole，但清單第 21 位是 Slowly Rolling Camera（Tyreek McDole 為第 26 位），依前 21 位處理，後面歸 sf09b",
   "不收：Jon Christensen（無領銜專輯，MB 僅 Selected Recordings 精選與眾多合作盤；為 Stenson、Garbarek 等的側翼鼓手）",
   "合併處理：Bobo Stenson／Bobo Stenson Trio、Jacques Loussier／Trio、Marc Johnson／Bass Desires、Marc Ribot／Ceramic Dog 各視為同一人",
   "池中查無本組任何藝人（seed_cards、artist-intros、其他 curation-*.json 皆無）",
-  "Moses Yoofee Trio 僅 MB 缺專輯，走人工身分；Daniel Ponce 封面僅 Discogs"
+  "Moses Yoofee Trio 僅 MB 缺專輯，走人工身分；Daniel Ponce 封面僅 Discogs",
+  "範圍補正：sf09 第 22–26 位由 sf09a 補做",
+  "跳過：The Joe Harriott-John Mayer Double Quintet → 池中寫法 Joe Harriott（Free Form、Abstract，2 張）",
+  "跳過：Toshiko Akiyoshi Trio → 池中寫法 秋吉敏子／秋吉敏子トリオ 等（14 張）及 Toshiko Akiyoshi-Lew Tabackin Big Band（1 張）"
  ]
 }
