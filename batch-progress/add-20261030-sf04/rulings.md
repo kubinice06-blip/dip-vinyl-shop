@@ -18,3 +18,9 @@
 - 留兩張的：越美晴（《Tutu》《パラレリズム》）、SHAKKAZOMBIE（《HERO THE S.Z.》《JOURNEY OF FORESIGHT》）。
 - 非日本藝人照收（分錯場景）：Emapea（波蘭）、Magamura（匈牙利，依廠牌推定）、concrete concrete（美國，研究層核國籍）、Chestnut Bakery（中國）、AKA lisa（瑞典）、U.TA屋塔（台灣）。
 - 交研究層把關：Yasushi Ide 高峰在 Lonesome Echo Strings 名義，本卡收其個人名義《Cosmic Suite 2》，代表性要查；YPY、KUSO GVKI、Hoshina Anniversary、DOOPEES、kinoue64、Emapea、Ironomi、dip、in the blue shirt 代表作缺評論共識；Chouchou 盤名 MB 為「theme02 Night and Wanderer」；沖山秀子封面取 2006 再版；篠崎史子封面取 Apple。§1 人工 4 張（沖山秀子、Magamura、SOFT、U.TA屋塔），沖山秀子的 `mbAbsenceProof` 是字串，上線前轉物件。
+
+## 研究 a 組
+- 41301 Doopees《Doopee Time》：推翻策展層 genre／moodGuess。來源（en／ja 維基 ヤン富田、MB 標籤）指向 shibuya-kei／plunderphonics／space age pop，Doopees 是ヤン富田製作的虛構少女二人組，非嘻哈；moodGuess 存疑，建議主線改 genre 並重評三軸或汰換。
+- 41302 Chouchou：身分確認為日本 Chouchou（MB a18d9ff7）；聲音只有 MB 標籤與官方簡介，無樂評，status thin；發行日 MB／Bandcamp 8/11 與官網 8/12 不一，採 MB。
+- 41303 越美晴《パラレリズム》：status thin（無可引用樂評，聲音靠 Discogs／MB 標籤）；curatorWhy「exotica 融合」查無來源，不入 facts。
+- 41304 立花ハジメ《H》：moodGuess 部分存疑（樂手以薩克斯風、貝斯、馬林巴、鋼琴為主，偏爵士新浪潮，非純合成器）。
