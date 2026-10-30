@@ -103,3 +103,41 @@
 - **41868** 跨兩檔合掃 han() 4-gram（writer-1 交件中途與定稿各掃一次）：拆掉「發行這張」×4、「交給發行」×3、「第二張專輯」×3、「專輯年月日」×3、「同名首作」、「年月地點是」、「首全是他」、「這張專輯」、「廠牌發行」、「樂團在年」、「在年月日」、「吉他手年」、「發行的這張」、「唱片年月」、「完整專輯」、「他們第一」、「與鼓手都」、「是他的首」等殘片（2 張的也當 3 張拆）。定稿 2 次以上只剩樂器名（薩克斯風、低音大提琴、單簧管）與地名（斯德哥爾摩）。
 - **41869** 研究層推翻策展層照辦（以研究稿與 note 為準）：Spiral Deluxe 寫第二張、Axis；Assagai 不寫美版改題、不寫〈Kari〉，〈Hey Jude〉之後只稱「那首翻唱」；Graciela 不寫成探戈專輯；高木 只寫「簧管」與店名；濱瀬 2018 版明寫「另一次錄音」；中村 不寫披頭四與 Oricon；Nameless／Three Little Words 不掛 Juno；swing slow 的 コシミハル 寫 Miharu Koshi 並首次括注越美晴。媒體名與媒體榜單名次一律未寫（Honora 的榜單名次 note 未派）。
 - **41870** 只用 note：Juniper 三位團員的樂器（facts 有、note 沒有）不寫；Assagai 的「南非爵士團」「披頭四」不寫；Fresh Moods 不寫 Giessen 所屬邦名。Girl and Robot 第二句由「樂團的第二張專輯」改成「樂團第二張作品」，只為避開與 writer-1（Your Turn／Siberian Express／Jersey）的 4-gram，意思不變。
+
+## 寫作層（writer-1）（41861–41865）
+- **41861** 交件：`desc-tools/batches/output/add-20261030-sf09-out-1.json` 20 張（full 19：202–240；thin 1：Night Cap 179）。`qa-batch out` 全部通過、`qa-check-research` 0 標記、`fix-spacing` 0 處；「據」0、媒體名／來源平台名 0、媒體榜單名次 0。初稿超標 3 張（Serenity 260、Neighbourhood 251、Reach Out! 244），整格捨去或改短句法壓回；Cantando 刪一句自加的聲音形容（note 外）、Play Bach 刪「賣得動」（facts 有、note 沒派）。
+- **41862** 第二句領句全照鉤子層 note；其中三張為拆 `手年生於`（MYT／Neighbourhood／Road to Saint Ives 三張都被派了「X 手，生年生於」）改了語序：Neighbourhood「1958 年在巴黎近郊出生」、Road to Saint Ives「德文郡人，1944 年出生」，MYT 照原樣。Westering Home 的「John Surman 一人吹⋯」改「一手包辦⋯」，避開與 Road to Saint Ives 的 `一人吹低音`。「日」後一字全照 41854：Serenity 問、Arawe 生、Reach Out! 錄、Road 發、Your Turn ，、Family First 在、Night Cap 於、MYT 由、Paint It Blue 推。
+- **41863** 跨兩檔合掃（out-1＋out-2，han() 中文 4-gram）：3 張以上只剩樂器名（薩克斯風、低音提琴、低音提琴手、低音單簧管）。途中拆掉 `發行這張`×4、`的第二張`×4、`的三重奏`、`三重奏那`、`年月地點`、`重奏年月`、`張領銜作`、`交給發行`、`第二張專輯`、`廠牌發行`、`錄下這張`、`同名首作`、`約分鐘的`（撞 Cantando hook）、`年由發行`、`全是自作`、`共同製作`、`原聲四重奏`（撞 Family First hook，改的是 Jersey 正文）等。2 張殘片保留（例 `第二張作品` Your Turn／Girl and Robot、`在年月推出` Neighbourhood／Honora）；writer-2 若再動，請主線收件時統一重掃。
+- **41863-B** 「不寫否定句」：Road to Saint Ives 的「無意寫景」由 hook 承擔，正文只寫「那番話寫在封套上，點名的正是盤名裡的聖艾夫斯」；Westering Home「不設鼓組」改正面寫「由管樂、鍵盤與打擊樂層層疊成」。
+- **41864** 研究層推翻策展層照辦：Family First 廠牌寫 Beat Music Productions、Jersey 寫 Motéma；Melt Zonk 寫 Tzadik、第二張；Siberian Express 寫美國團、第二張；Arawe 寫 1987；Night Cap 不稱首作；MYT 寫柏林；Road to Saint Ives 寫「鍵盤」。Rootless 不碰〈Rate〉（41871）。
+- **41865** 引入法（同掛名多張）：Stenson——Cantando 身分（瑞典鋼琴手的三重奏）／Serenity 生年出生地；Surman——Road 身分＋出身地／Westering 樂器清單；Johnson——Bass Desires 生年出生地／Shades 親屬（妻子共同製作）；Ribot——Rootless 側翼經歷／Your Turn 團名＋團員；Guiliana——Jersey 樂種來去／Family First 生年出生地。全照 41853，無自配。
+- 41873（主線審稿，2026-10-30）：39 張全文印出逐張讀，逐句對回研究稿與 note。抽查並核實以下各點：
+  - Katché「轉進爵士的第一步」：英文維基《Neighbourhood》條，前一張《It's About Time》走搖滾／放克路線。
+  - Galper 與 Brecker 兄弟 1969《Score》的合作：研究 a。
+  - Marc Johnson《Second Sight》1987 到 2005，相隔十八年：研究 b。
+  - 〈Rate〉已確認不在 Rootless 稿內。
+  - Jersey 收尾曲〈Where Are We Now?〉：MB 曲目表最末首。
+  - 高木元輝場地只寫店名：鉤子 41860。
+  - 濱瀬 2018 版寫明是另一次錄音：研究 d。
+  - Graciela Susana 未寫銷量與週數：單一來源，不採。
+  掃禁語、媒體名、榜單名次、「據說／據傳」皆 0。**逐張審過，未改字。**
+- 41874：頂點逐張判定：39 張皆為一般卡，判定依據如下。
+  - **hall**：無 classic=5 的卡。人工最高給 4 的是《Play Bach No. 1》《Bass Desires》《金字塔》，都還不到「該領域史上核心作品」。
+  - **pearl**：唯一 obscurity=5 的是高木元輝《Mosura Freight!》，但 Last.fm listeners 查無，「查無不能當 0」。
+  - **heresy**：無 accessibility=5 的卡。最高 4 的是 Melt Zonk Rewire、Your Turn、Mosura Freight!，屬自由即興／噪音搖滾，沒有「極端前衛、結構性難入耳」的可信舉證。
+- 41875：三軸人工校正 20 張（`ratings-override.json`），規則如下。
+  - **冷門軸錨點制（§0.8）**：機器分級被盤名拼法或英語圈偏差壓到 5 的正規廠牌盤，改成 3–4。高木元輝 5（300 張私壓、未進串流）；濱瀬元彦 4、中村一義 2、Graciela Susana 3，以日本市場為尺度。
+  - **經典軸**：《Play Bach No. 1》《Bass Desires》《金字塔》給 4。
+  - **入耳難度**：自由即興／噪音給 4；Play Bach 給 1。
+  - 其餘照 worker 基線，經典 5 不自動給。
+- 41876：試聽 ready 35、unavailable 4（`preview-override.json`）。
+  - **unavailable**：
+    - Ponce《Arawe》：Apple 無原盤。
+    - 高木：私壓，未進串流。
+    - 濱瀬：Apple 上是 2018 重錄版，不配。
+    - Fresh Moods：Apple 只有精選與後期作品。
+  - **人工配對**：Loussier 取 Decca《Play Bach No. 1》8 軌，Greg Foat《Girl and Robot》取 12/12（Part／Pt. 寫法不同），中村一義取 USM《Kinjitou》，uKanDanZ、Flea、Graciela Susana 各取原盤條目。
+- 41877：封面 CAA 33 張，縮圖表目視全部相符；另外 6 張由 `covers.json` 指定。
+  - **Discogs**：Ponce release 1401299；Becker 取 master 954389 的 1988 原版（Apple 圖是 2025 再版）；Sardaby release 30329594；高木 master 512067。
+  - **Apple**：Dark Is the Sun 433628435、Graciela Susana 1681510553。
+  - 上線前整批 live-check。
