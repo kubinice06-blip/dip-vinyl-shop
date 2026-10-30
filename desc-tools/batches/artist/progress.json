@@ -11794,8 +11794,16 @@
     "dotzio",
     "championxiii"
    ],
-   "state": "gap",
-   "note": "Spotify 追蹤藝人補卡池 sf06（add-20261030-sf06，華語其他、港、韓、泰）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；20 位）；名冊 batch-progress/artist-intro/roster-sf06.json"
+   "state": "published",
+   "note": "Spotify 追蹤藝人補卡池 sf06（add-20261030-sf06，華語其他、港、韓、泰）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；20 位）；名冊 batch-progress/artist-intro/roster-sf06.json",
+   "skipped": [
+    "張亞東",
+    "Everfor",
+    "The Cheers Cheers",
+    "dotzio",
+    "Championxiii"
+   ],
+   "reviewFixes": 4
   },
   {
    "batch": "ar-d-208",
