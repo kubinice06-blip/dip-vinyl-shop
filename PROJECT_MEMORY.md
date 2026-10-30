@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-30｜dip-vinyl-shop｜店主 Spotify 追蹤藝人對卡池：361 位缺漏清單
+
+- **改動**：店主上傳 Spotify 收藏匯出（追蹤藝人 836、收藏專輯 125），比對卡池（名稱正規化＋拉丁／原文分段＋MusicBrainz 別名＋人工修正 10 筆羅馬拼音）。卡池已有 475、缺 361；收藏專輯中藝人不在卡池 38 張。清單供另一個工作階段走 `dip-card-create` 上架。
+- **主要檔案**：`batch-progress/spotify-follow-gap-2026-10-29/{gap.json,missing-artists.csv}`（只放缺漏清單，不放完整收藏）。
+- **驗證**：抽查伍佰、張惠妹、東京事変、達明一派、スピッツ等羅馬拼音皆判為已有；少數無法確定中文名的（Jo-Yu Chen、Layton Wu 等）列為缺漏，上架前去重會再擋。
+
 ### 2026-10-29｜dip-vinyl-shop｜試聽與串流連結全面檢查（只讀稽核，修正待店主「可以」）
 
 - **改動**：店主「順便檢查試聽連結還有串流連結」。`batch-progress/link-audit-2026-10-29/`（腳本、REPORT.md、issues、fix-plan、verdicts）。
