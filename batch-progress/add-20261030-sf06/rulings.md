@@ -100,3 +100,6 @@
 ## 本批新藝人（無介紹）
 - 20 位全部沒有介紹、也不在排隊批次或別名鍵。名冊 `batch-progress/artist-intro/roster-sf06.json`（tier D、addedBy add-20261030-sf06），progress.json 追加 **ar-d-206**（state cut，20 位，未超過 45 不開溢出號），`desc-tools/batches/artist/cut/ar-d-206.txt`。補洞寫作由調度另派工作階段跑。
 - 劉以達、雞蛋蒸肉餅、張亞東、AB'S、Everfor、Kaishandao、亂彈阿翔、盧家齊、Shaa Khan、The Cheers Cheers、Fishdoll、Juggaknots、Glen Check、강태환、Superstar Quamallah、7FO、Monique Chao Jazz Orchestra、JUU4E、dotzio、Championxiii。
+
+## 情緒評分（score-sf0608）
+- 41580：Opus 2 支照 `RULES.md`＋BRIEF 打分（sf06 20 張、sf08 59 張，策展 moodGuess 不給評分代理），主線逐張看過 why 與研究稿，未改值。本批八格：雀躍 5、放鬆 4、恍惚 4、頹靡 2、冷冽 2、暴躁 2、沸騰 1、平靜 0；conf mid 6／low 14（low 多為無樂評的冷門盤）。`merge` → `build-priors` → `build-scale v0` → `build-card-moods`：錨點 104/104 同格，座標 22,311/22,311。不算落格率。

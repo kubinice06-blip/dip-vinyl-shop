@@ -121,3 +121,6 @@
 ## 本批新藝人（無介紹）
 - 40 位全部沒有介紹、也不在排隊批次或別名鍵（Ben Watt 池中只有 Everything but the Girl 名義，個人名義另列）。名冊 `batch-progress/artist-intro/roster-sf08.json`（tier D、addedBy add-20261030-sf08），progress.json 追加 **ar-d-208**（state cut，40 位，未超過 45 不開溢出號），`desc-tools/batches/artist/cut/ar-d-208.txt`。補洞寫作由調度另派工作階段跑。
 - 22-Pistepirkko、A Place to Bury Strangers、Any Other、Beachy Head、Blind Melon、Blonde Redhead、Bonny Light Horseman、Cerberus Shoal、Current Joys、Damon Albarn、Disappears、FACS、Frànçois & The Atlas Mountains、Green Jelly、Helado Tropical、Jolie Holland、Kissin' Dynamite、Loose Meat、Melody's Echo Chamber、Modey Lemon、MV & EE、The Pictish Trail、Pigs Pigs Pigs Pigs Pigs Pigs Pigs、Psychic Ills、SLIFT、Stone Sour、SUUNS、Tacoma Radar、The Black Angels、The Charlottes、The Sonora Pine、The Voidz、Tobin Sprout、Vinnum Sabbathi、Wooden Shjips、Ben Watt、Sleepytime Trio、СОЮЗ、Mamie Minch、David Boring
+
+## 情緒評分（score-sf0608）
+- 41780：Opus 2 支照 `RULES.md`＋BRIEF 打分（sf06 20 張、sf08 59 張，策展 moodGuess 不給評分代理），主線逐張看過 why 與研究稿，未改值。本批八格：暴躁 21、放鬆 12、雀躍 7、沸騰 6、恍惚 5、頹靡 4、冷冽 2、平靜 2；conf high 5／mid 38／low 16。`merge` → `build-priors` → `build-scale v0` → `build-card-moods`：錨點 104/104 同格，座標 22,311/22,311。不算落格率。
