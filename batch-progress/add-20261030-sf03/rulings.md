@@ -20,3 +20,16 @@
 - 41241　笹久保合作盤：廠牌推翻策展層的 Leaving Records，Discogs 原版與黑膠為 Carnet Records（carnet-001，2021-11-17 數位首發）；Leaving 是 Gendel 自家廠牌。卡單 label 建議改 Carnet Records。status thin（聲音細節僅零售商文案）。
 - 41242　狩生健志《Sekai》：年份以 2020 為準（黑膠 2020-12-07，Apple ℗ 2020，數位上架 2021-01-15），Bruit Direct Disques Br-d 36 確認。卡單 year 建議改 2020。聲音只證實電子／流行質地，樂器與有無鼓未證實，寫作層勿斷言合成器。
 - 41243　バズ《Buzz》：Discogs 與 MB 均為同一組日本團，廠牌 London Records（SKD(L)-1013，1973-04-10），2012 King 再發 KICS 91808。Spotify 頁無法直接核對（iTunes 403），判斷多半是這組（串流版應為 King 再發），未證實；主線以 Spotify 專輯頁曲目核對。日文維基只算小出博志、東郷昌和二人為成員，高橋幸宏僅為錄音鼓手（Discogs 樂手欄），不寫成成員。專輯收錄版〈ケンとメリー〉是否同單曲版未證實。
+
+## 研究 d 組
+- 41231　三橋貴風 & 山屋清《Komuso World In Shakuhachi》：廠牌核出 Denon（WX-7506，1977，Discogs＋MB），卡單 label 空白應補。山屋清是作曲編曲指揮、率 Contemporary Sound Orchestra 伴奏，不是三橋獨奏碟；facts 以此為準。查無樂評，status thin。
+- 41232　関藤繁生 Vol.2：廠牌核出 Columbia（日本コロムビア，GS-7012，1975-01-25）；2019-05 為日本再發。Mac DeMarco 只證「啟發」，未證取樣，facts 只寫啟發。
+- 41233　Fujieda《Informel》：廠牌 SoFa Records（SOFA1014），2021-04-21 原發，2020-10-22 於 Jirokichi 現場錄音；Apple 的 2026 為 2026-10-07 數位再發，卡片年份用 2021。「日本民謠節奏」查無來源，不寫。
+- 41234　田畑満《Lucifer》：身分（2010 Compare Notes CN-0025）屬實，但無任何樂評，僅 Bandcamp 標籤與 Discogs credits，thin；代表性未證實，建議主線視為可收但薄。
+- 41235　moodGuess 存疑（僅 notes 標記，不汰卡）：田畑《Lucifer》噪音／躁（x3 y1.5）無證據，僅迷幻長篇可證；三橋盤是否全無鼓未能證實；Fujieda x2 可能偏高。東方沙羅、関藤與預估相符。Sinsuke／Shinsuke Fujieda 為同人。
+
+## 研究 c 組
+- 41221：陳信輝盤廠牌，卡單 Philips 推翻為 Polydor（Discogs release 3891006 與 MB 皆 Polydor MR 5003）；主線改卡單 label。
+- 41222：穂高亜希子《ひかるゆめ》卡單稱「首張個人專輯」不成立（Discogs 有 2005、2008 更早發行），寫作層不得寫「首張」；代表作依據薄，status thin，年份廠牌無誤。
+- 41223：Far Out《日本人》年份採 1973（MB、Discogs、日文維基脈絡），Apple 1971 不採；廠牌 Denon 無誤。
+- 41224：割礼《ネイルフラン》、みみのこと《Hitoyogiri》找不到談速度與音色的樂評，moodGuess 只有風格標籤與編制佐證，notes 已標存疑；みみのこと卡單「民謠」無來源，寫作層勿寫。
