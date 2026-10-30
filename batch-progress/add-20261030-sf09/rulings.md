@@ -35,3 +35,13 @@
 - 41816：Marc Ribot's Ceramic Dog《Your Turn》MB 版是歐洲 Yellowbird（2013），美版 Northern Spy NSLP 038 即同一張；卡單 Northern Spy 正確。
 - 41817：Wikipedia 的 Marc Johnson 條目帶「需補引用」標籤，其中 Time／Chicago Tribune 年度榜與丹麥音樂獎為單一來源，未採用；Bill Evans 年份（1978–80）照用，已與 Shades 頁交叉。
 - 41818：外部取不到：AllMusic（403）、AAJ（403）、NPR（503）、northernspy.org 不在白名單，Katché／Ceramic Dog 部分評語取自搜尋摘要與 PopMatters、Textura。WebSearch 本組用 4 次（超出每支 3 次一次）。
+
+## 研究 e 組
+- 41841：Assagai《Assagai》**推翻策展層兩處**：(1)「US 版題為 Zimbabwe」不成立——美版 Vertigo VEL-1004 題名仍是《Assagai》、曲目同英版（Discogs master 107720）；《Zimbabwe》是另一張專輯（Philips 6308 079，曲目全異，樂團第二張也是最後一張）。(2)「含名曲 Kari」查無，首作 8 首無此曲。卡仍以《Assagai》（Vertigo 6360 030，1971）為正名。樂評稱其為相當平淡的 Afro-pop-rock，moodGuess 熱烈偏高但不致汰換。
+- 41842：Spiral Deluxe《The Love Pretender》**推翻策展層**：不是底特律二人組，是 Jeff Mills 領軍的四人電子爵士團（Mills、Gerald Mitchell、Yumiko Ohno、Kenji Hino），廠牌 Axis Records AX-122（策展 label 欄空白應補 Axis），且為第二張專輯，首張為 2018《Voodoo Magic》，非「唯一一張」。moodGuess 存疑：預估「爵士 house 四拍」，實為即興電子爵士、曲長 5–11 分鐘，建議主線重估。國別卡單 us 可維持（團員橫跨底特律／日本，Discogs 掛 US）。
+- 41843：Flea《Honora》身分、年份（2026-03-27）、廠牌 Nonesuch 皆對。moodGuess 存疑：預估「爵士搖滾、鬆而帶勁」，實際是 Parker／Butterss／Parks 爵士室內樂編制加弦樂與長笛，無失真樂器、速度偏緩，建議 y 下修。榜單名次與評論引語僅 en.wikipedia 單一來源。
+- 41844：Graciela Susana《Adoro, la reine de Saba》身分、1973-05-05、Express ETP-9072 對得上。**策展 genre 存疑**：這是日本製作的 LP，西語／法語／日語流行歌與日本民謠混合，不是探戈專輯，簡介不宜寫成探戈。銷量 100 萬張與 Oricon 220 週僅維基單一系統（en 自標 citation needed），status thin、鉤子勿當硬事實。查無編曲者與樂評。
+- 41845：swing slow《swing slow》身分、1996-10-25、Mercury PHCR-916 對得上；發行不在細野自立的 Daisyworld（1996 成立），而是 Mercury／Sun & Moon Records。聲音只有 credit 與曲名可據（細野負責節奏編曲與音效設計，越美晴和聲編曲），無評論，status thin。「Mr. Harry Hosono Jr.」只有 ja.wikipedia 越美晴條一個來源。
+- 41846：Fresh Moods《Fresh Moods》確認是 Peter Haubfleisch 個人計畫、非廠牌帳號，Elektrolux E 1101 CD、1997 對得上；人物生平只有 Discogs 藝人簡介單一來源，聲音僅有風格標籤（Future Jazz／Downtempo）與曲名，無獨立樂評。
+- 41847：uKanDanZ《Yetchalal》身分、2012 年、Buda Musique 860230 對得上；本張編制未列貝斯手（Discogs），不寫低音歸屬。樂團成軍年只有 2010 駐地一筆，不寫成軍年。
+- 41848：WebSearch 用 3 次（uKanDanZ、Assagai、Spiral Deluxe）；AllMusic／progarchives／Discogs 網頁多為 403，改走 Discogs／MB API。miharukoshi.com 不在網路白名單。swing slow 與 Graciela Susana 因此未用搜尋，來源偏薄。
