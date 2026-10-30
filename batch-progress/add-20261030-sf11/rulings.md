@@ -97,3 +97,10 @@
 - **49868** 原聲帶意象：Luvmenauts 正文只用「配樂」「替只存在想像中的電影作曲」，全檔不出現「原聲帶」，讓開 writer-1 的 NUUAMM、Natural Magic。媒體名、媒體榜名次、資料平台名 0；Space Raiders 留英國單曲榜第 68 名（官方榜）。hook 已說過的數字不重述：Luvmenauts 不再寫 10 首、記號士不再寫 11 首、Super Besse 不再寫 10 首與 31 分半。
 - **49869** 自掃（han() 4-gram，跨 out-1 已交 5 張＋out-2 12 張）：拆掉「人年月日」（PUZZLEMAN×Skip）、「專輯共首」（Sonia×Space Raiders）、「長約分鐘」（Luvmenauts×記號士）、「品年月日」、「專輯年月日」（Dudu×NUUAMM，Dudu 改「World Circuit 自⋯起推出」）、「片年月日」（PUZZLEMAN×NUUAMM）、「發行的這張」、「是台北的獨立」；定稿 2 張以上 0 條。out-1 仍在寫，主線收件時請再合掃一次。
 - **49870** 小處：Dudu Tassa 第三句主詞具名為 Tassa（前句主詞是祖父兄弟，避免「他」指涉不清）；記號士藝人名用 note 指派的「記號士（The Sign Of Human）」雙寫；ERIS 盤的年份只寫月日（note 只列 8 月 21 日）。
+
+## 寫作層（writer-1）（49861–49865）
+- **49861** 交件：`desc-tools/batches/output/add-20261030-sf11-out-1.json` 12 張（full 9：Moin 217、Mindchatter 221、NoSo 225、Natural Magic 235、Offset 210、Mad Keys 238、Caldera 238、DJ Toner 224、Doctor Butcher 238；thin 3：NUUAMM 160、Parks 167、Nicknack 175）。初稿 3 張出界（Nicknack 186、Mad Keys 246、Doctor Butcher 258），整格捨去：Nicknack 的「兼製作人」與標籤句改短、Mad Keys 的「為了《Balance》」引子、Doctor Butcher 的「不久就和 Caffery 另起爐灶」與「這張同名專輯」。`qa-batch out` 全部通過、`qa-check-research` 0、`fix-spacing` 0；「據」「也就是」grep 0。
+- **49862** 第二句全照鉤子層 49853 指派；「日」後一字照 49854（倫／十／正／發／上／放／在／全／釋／，），DJ Toner、Doctor Butcher 只到年月。日期前一字逐張不同（團／了／體／畫／組／理／成／叫／下／首）。NoSo 全文不用性別代名詞（以 Hwong、本人、這個計畫稱呼）。
+- **49863** 原聲帶意象：NUUAMM 寫「也被看作一張原聲帶，獻給身處人與幽靈之間的人」、Natural Magic 寫「夏末西岸公路旅行原聲帶」，兩張都不出現「的原聲帶」；writer-2 的 Luvmenauts 已全檔不用「原聲帶」。NUUAMM 的商品文案描述改寫成被動「被形容成」，不交代出處。
+- **49864** 資料平台名不進正文：Parks note「放上 Bandcamp」寫成「放上網路自行發行」、Offset「在 Bandcamp 首發」寫成「在網路上首度發行」、DJ Toner「Bandcamp 掛名 DJTONER Q4RTET」寫成「這次用的名義是 DJTONER Q4RTET」（可逆，主線要具名平台再改回）。Natural Magic 兩人只用 note 的姓 McKinnon／Quiet，不從 facts 補全名；Nicknack 去掉「兼製作人」（與 Mad Keys、DJ Toner 撞「兼製作人」）。媒體名與媒體榜名次 0。
+- **49865** 自掃（han() 4-gram，跨 out-1 12 張＋out-2 12 張合掃）：拆掉「倫敦廠牌」（×Sonia）、「首作年月／作年月日」（×特撮）、「同名首作／二人組年」（NUUAMM×Natural Magic）、「曲年月日」（×Sonia）、「張專輯收」「第二張專」「是第二張」（×Space Raiders）、「專輯年月日」「片年月日」（×Dudu、PUZZLEMAN）、「了年月日」（NUUAMM×NoSo）、「年月日發行」（NoSo×Caldera）、「自己把這」（×Posh）、「節拍製作／拍製作人」（×PUZZLEMAN）、「的鍵盤手」（×ULTRA SUNN）、「製作人與」（×Sonia）、「兼製作人」「與佛朗明」「的第二張」。定稿 2 張以上只剩樂種名「佛朗明哥」（Caldera×DJ Toner，hook 原文帶）；3 張以上 0 條。
