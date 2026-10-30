@@ -65,3 +65,4 @@
 - 41744：Sleepytime Trio《Plus 6000》—— Discogs 確認 1997 Lovitt Records LOV #7、12 吋 6 首、J. Robbins 錄音；卡單 label 填 Lovitt Records。
 - 41745：Mamie Minch《Razorburn Blues》—— Apple 確認 2008-05-24、11 首、℗ Mamie Minch；Discogs 另列 Morphius Records, Inc.，廠牌兩說，沿用自行發行。Chronogram 作《The Razorburn Blues》視為冠詞誤植。
 - 41746：Ben Watt《Hendra》—— 發行日以 MB 2014-04-14 為準（他處 4/15、3/24）；鼓有無來源未明。North Marine Drive 的榜名兩說（獨立榜第一／前十），facts 保守引用。
+- 41774：照研究 e 組改卡單：Sleepytime Trio 廠牌→Lovitt Records（LOV #7）、СОЮЗ→Masterskaya 且主曲風 rock→pop（第二 jazz；Bandcamp／MB 標 jazz、avant-pop，無後龐克證據）、Vinnum Sabbathi→自行發行；Mamie Minch 維持自行發行（Apple ℗ 本人）。David Boring、СОЮЗ moodGuess 與聲音不符，**不汰卡**（這條線收的是藝人代表作，不看落格），情緒評分照研究稿的聲音事實判。單一來源事實刪 2 條：David Boring 團名出處（只有 Deezer 簡介）、Hendra 的 AIM 獎（只有搜尋摘要）；研究稿已同步。
