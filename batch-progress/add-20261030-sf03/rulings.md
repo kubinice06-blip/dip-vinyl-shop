@@ -90,3 +90,9 @@
   - `desc4:バズ|Buzz`：「高橋信之在 1972 年 6 月製作成軍了日本民謠組合バズ」→「1972 年 6 月，製作人高橋信之讓日本民謠組合バズ成軍」（原句生硬）。
 - 其餘 21 張逐張審過未改字：羅針盤「1988 年前後」組成照研究 a（日維）；陳信輝「日本的 Jimi Hendrix」是 Discogs 簡介與英維兩源的稱號、非樂評評分，照留；スズキジュンゾ正文用羅馬字 Suzuki Junzo 照鉤子 41253（他在海外發行的掛名），卡面掛名留片假名。媒體名、媒體榜單名次、「據說／據傳」grep 0。
 - 41276：**頂點逐張判定 0 張**。23 張 classic 皆 ≤4（僅 world's end girlfriend《Hurtbreak Wonderland》為 4），無殿堂資格；obscurity 5 的三張（NOA、Buried Sky、Hitoyogiri，皆串流未上架）都沒有「被埋沒的傑作」級舉證，不列 pearl。
+- 41277：寫入（2026-10-30）：寫入前對 origin/main 與全部 `claude/*` 分支 seed 盤層去重 0 撞。card_catalog 23／23、KV 40 鍵（kv-add-20261030-sf03-202610300538，回讀逐字一致 40）、靜態試聽 ready 19／unavailable 4（NOA、Hitoyogiri、Buzz、Buried Sky：Apple 未上架）、seed +23；published gate 0 error。封面 CAA 17、Apple 5、Discogs 1（バズ，入 `data/discogs-cover-registry.json`，主線目視相符）。
+- 41278：子曲風：`warm-batch` 標籤 16／空 7；8 位寫進 `genre-l3-artist-map.json`（東方沙羅、三橋貴風 & 山屋清→world/asia；Sam Gendel & Shin Sasakubo→folk/indie-folk/contemporary；狩生健志→pop/indie-pop/bedroom；穂高亜希子、バズ→folk/songwriter/japan；山本精一、スズキジュンゾ→rock/psych-prog/psych），重跑後 23/23 落位。亞洲搖滾國別：自動 3（スズキジュンゾ、割礼、みみのこと），人工補 jp 6（山本精一、Musica Transonic、LSD March、陳信輝、Far Out、田畑満）。
+
+## 本批新藝人（無介紹）
+- 20 位全部沒有介紹、也不在排隊批次或別名鍵。名冊 `batch-progress/artist-intro/roster-sf03.json`（tier D、addedBy add-20261030-sf03），progress.json 追加 **ar-d-203**（state cut，20 位，未超過 45 不開溢出號），`desc-tools/batches/artist/cut/ar-d-203.txt`。補洞寫作由調度另派。
+- world's end girlfriend、Yamataka Eye & John Zorn、Seiichi Yamamoto 山本精一、Musica Transonic、LSD March、Taku Sugimoto 杉本拓、スズキジュンゾ、割礼、穂高亜希子、みみのこと、陳信輝、Far Out、東方沙羅、三橋貴風 & 山屋清、関藤繁生、Sinsuke Fujieda Group、田畑満、Sam Gendel & Shin Sasakubo、狩生健志、バズ。

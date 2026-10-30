@@ -92,3 +92,9 @@
   - `desc4:越美晴 Miharu Koshi|パラレリズム` hook：「荷蘭廠牌也發起她的唱片」→「荷蘭的廠牌也開始替她發片」（「發起唱片」不通）。
 - 其餘 27 張逐張審過未改字：Sketch Show 改名躲狂牛症、Doopees 虛構成員扮演者、沖山秀子《電車狂》皆有研究 a／b 來源；Magamura thin 180 字在上限內。媒體名、媒體榜單名次、「據說／據傳」grep 0。
 - 41374：**頂點逐張判定 0 張**。28 張 classic 皆 3，無殿堂資格；obscurity 5 的兩張（YPY《Zurhyrethm》、U.TA屋塔《緩飆公路》，皆串流未上架）都沒有遺珠級舉證，不列 pearl。
+- 41375：寫入（2026-10-30）：寫入前對 origin/main 與全部 `claude/*` 分支 seed 盤層去重 0 撞。card_catalog 28／28、KV 40 鍵（kv-add-20261030-sf04-202610300545，回讀逐字一致 40）、靜態試聽 ready 24／unavailable 4（YPY、ECD、志人、U.TA屋塔：Apple 未上架或只有另版）、seed +28；published gate 0 error。封面 CAA 22、Apple 5、Discogs 1（U.TA屋塔，入 registry，主線目視相符）。
+- 41376：子曲風：`warm-batch` 標籤 20／空 8；13 張未落位，寫進 `genre-l3-artist-map.json`（立花ハジメ→electronic/synth/new-wave；越美晴→pop/synth/synthpop；Sketch Show、YPY、in the blue shirt→electronic/jp-electronic；沖山秀子→jazz/vocal；篠崎史子→classical/contemporary；井出靖→jazz/contemporary/nu-jazz；KUSO GVKI、Emapea→hiphop/underground/instrumental；AKA lisa→pop/art-pop/modern；dip→rock/psych-prog/psych），重跑後 28/28 落位。亞洲搖滾國別：自動 Chestnut Bakery→cn、U.TA屋塔→tw，人工補 jp 3（kinoue64、SOFT、dip）。
+
+## 本批新藝人（無介紹）
+- 26 位全部沒有介紹、也不在排隊批次或別名鍵。名冊 `batch-progress/artist-intro/roster-sf04.json`（tier D、addedBy add-20261030-sf04），progress.json 追加 **ar-d-204**（state cut，26 位），`desc-tools/batches/artist/cut/ar-d-204.txt`。補洞寫作由調度另派。
+- 立花ハジメ Hajime Tachibana、越美晴 Miharu Koshi、Sketch Show、Doopees、Chouchou、沖山秀子 Hideko Okiyama、篠崎史子 Ayako Shinozaki、Yasushi Ide 井出靖、YPY、KUSO GVKI、ECD、SHAKKAZOMBIE、Hoshina Anniversary、Tokimeki Records、kinoue64、Emapea、志人、Ironomi、Magamura、concrete concrete、Chestnut Bakery、AKA lisa、SOFT、dip、in the blue shirt、U.TA屋塔。

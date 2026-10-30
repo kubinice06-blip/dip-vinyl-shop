@@ -14,8 +14,8 @@
 |---|---|---:|---|---|
 | sf01 | favoriteAlbums 38 張（指定盤） | 38 張 | ar-d-201（✅ 介紹上線 29／skipped 1） | ✅ 上線 36（跳過 1 張已在池：椎名林檎《無罪モラトリアム》；不收 1：Vayda 查無此盤）；新藝人 30 位 → ar-d-201 cut |
 | sf02 | 日本：搖滾、獨立、流行、偶像、金屬 | 30 | ar-d-202（✅ 介紹上線 26／skipped 4） | ✅ 上線 45（跳過 0 位已在池；30 位全收）；新藝人 30 位 → ar-d-202 cut |
-| sf03 | 日本：地下、迷幻、即興、和樂器 | 20 | ar-d-203 | 派→Spotify 補卡 sf03、sf04 |
-| sf04 | 日本：電子、ambient、嘻哈、lo-fi、YMO 周邊 | 28 | ar-d-204 | 派→Spotify 補卡 sf03、sf04 |
+| sf03 | 日本：地下、迷幻、即興、和樂器 | 20 | ar-d-203 | ✅ 上線 23（跳過 0 位已在池；20 位全收；試聽 ready 19／unavailable 4；頂點 0；藝人介紹 20 位 → ar-d-203 cut） |
+| sf04 | 日本：電子、ambient、嘻哈、lo-fi、YMO 周邊 | 28 | ar-d-204 | ✅ 上線 28（跳過 0 位已在池；收 26 位，不收 2 位：ILL BONE 無合格錄音室作、Buddhablessyou 查無；試聽 ready 24／unavailable 4；頂點 0；藝人介紹 26 位 → ar-d-204 cut） |
 | sf05 | 台灣華語：流行、R&B、獨立樂團 | 27 | ar-d-205（✅ 介紹上線 17／skipped 3） | ✅ 上線 24（跳過 1 位已在池；不收 6 位） |
 | sf06 | 華語其他、港、韓、泰；未確定身分的華語名 | 29 | ar-d-206 | 派→Spotify 補卡 sf06、sf08 |
 | sf07 | 西洋 60–80 年代：迷幻、prog、硬搖滾、krautrock、post-punk | 35 | ar-d-207（✅ 介紹上線 32／skipped 0） | ✅ 上線 47（跳過 0 位已在池；不收 3 位） |
@@ -55,3 +55,10 @@
 - 驗 gate 時發現 `mbAbsenceProof` 必須是物件（queries／checkedAt／conclusion），策展與 build-cards 產的是字串——上線前要轉；重查時還抓到 2 張其實 MB 有條目（Karencici、Martin & Garp），改釘住。
 - 藝人介紹名冊每批一檔 `batch-progress/artist-intro/roster-<批>.json`（格式：`{generatedAt, source, addedBy, artists, entries:[roster-20260929 同欄位]}`），progress.json 追加預留號 state cut、`desc-tools/batches/artist/cut/<號>.txt`。
 - 情緒評分兩批共用 `batch-progress/mood-axes/score-sf0507/`（select／merge 複製自 score-ml59）。
+
+## sf03／sf04 收工筆記（2026-10-30）
+- **條號**：sf03 用 41201–41280、sf04 用 41301–41380（sfNN → 41001＋(NN−1)×100；30000＋批號×100 制的 303xx 已被舊 c 批佔用）。
+- **策展給的「已在池」要回查 seed**：sf04b 把 U.TA屋塔判成「已在 curation-ml4」跳過，其實 ml4 研究層汰掉、從未上線；主線補收。判準只看 seed／卡池，不看別線的策展檔。
+- **現場盤、EP 要研究層才抓得到**：スズキジュンゾ《Ode to a Blue Ghost》是三首現場 CD-R（換《Buried Sky, Spider Torn To Pieces》）；ILL BONE《死者》原版 4 曲 EP、《日本》是合輯＋現場 → 整位不收。
+- 研究層偶爾交 `status: partial`，research-base 只認 full／thin，主線改值後 qa 才算數。
+- `genre-l3-artist-map.json` 的 `_note` 欄已是逐字拆開的字元陣列（舊批遺留），不影響建樹，沒動。
