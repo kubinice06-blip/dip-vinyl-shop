@@ -30,3 +30,11 @@
 - **49804**（NoSo《Stay Proud of Me》）身分、廠牌、年份皆對；首作成立；Baek Hwong 為非二元，行文避性別代名詞。
 - **49805**（Natural Magic《II》）身分、廠牌、年份皆對（LP 實體可能 3 月）；moodGuess 中度存疑：實為真人鼓＋貝斯的克勞特／太空搖滾即興，非『新世紀感舞曲』；『首作限量百卷卡帶』『JD Twitch 最後參與』查無頁面來源，不寫進 facts。
 - 無建議汰卡；全組五張皆通過身分核實。
+
+## 研究 b 組
+- **49811**（Parks, Squares and Alleys《Against Illusions and Reality》）身分成立（MB RG 與 Bandcamp 皆 2015-05-29，自發行）。國別存疑：MB 藝人頁 RU（莫斯科／哈巴羅夫斯克），Bandcamp 所在地寫第比利斯；country 暫維持 ru，文案不寫國名。無樂評，status thin。
+- **49812**（The Offset: Spectacles）**推翻主線國別改 us**：這是香港成員的三人團（Tom Ng、Vince Li、Ou Jian），曾在北京活動，並非 Chicago 的一人計畫；Trouble In Mind 只是 2021 十週年重發廠牌。建議 country 回 hk。專輯 2011-11-11 首發，原創專輯、無鼓，moodGuess 證實。
+- **49813**（Nicknack《Dearly Departed》）身分成立：奧斯汀 DJ／製作人 Nick Malkiewicz，2010-06-15，自家廠牌 Crowd Control Records（卡單 label 可補）。無針對本盤評論，Spotify 追蹤對象是否同一人僅靠熱門曲比對；建議可汰（策展層已列風險）。
+- **49814**（Mad Keys《Balance》）身分成立（聖路易、自發行、2020-01-09）；有真人貝斯鼓現場錄製。不寫「首張專輯」（2015 有《LoveWaves》），只寫他自稱 debut。「破百萬串流」單一自述來源。
+- **49815**（Caldera《Sky Islands》）身分成立（Capitol，1977-04-28，原創專輯）。Dianne Reeves 客唱第 1、2 首僅 Wikipedia 專輯條目一源，行文保守；城市來源不一（LA vs NYC），文案只寫美國；「樂迷公認巔峰」無來源不採。
+- 無必須汰卡者；Nicknack 與 Mad Keys 為弱案（只有一手資料），主線可擇汰。
