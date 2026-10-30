@@ -38,3 +38,10 @@
 - **49814**（Mad Keys《Balance》）身分成立（聖路易、自發行、2020-01-09）；有真人貝斯鼓現場錄製。不寫「首張專輯」（2015 有《LoveWaves》），只寫他自稱 debut。「破百萬串流」單一自述來源。
 - **49815**（Caldera《Sky Islands》）身分成立（Capitol，1977-04-28，原創專輯）。Dianne Reeves 客唱第 1、2 首僅 Wikipedia 專輯條目一源，行文保守；城市來源不一（LA vs NYC），文案只寫美國；「樂迷公認巔峰」無來源不採。
 - 無必須汰卡者；Nicknack 與 Mad Keys 為弱案（只有一手資料），主線可擇汰。
+
+## 研究 c 組（49821–49830）
+- **49821**（DJ Toner《Outside》）身分成立（MB a2cbdc98、Tangential Music TAN0040ADG、2024）；**推翻策展層**：『與 Raynald Colom 合作』本盤查無，Colom 是 2026 年《DISCIPLINANTES MCM》的客座；本盤可證客座為 Erik Truffaz（Jorge Pardo 僅見專輯文案）。label 補 Tangential Music；Bandcamp 掛名 DJTONER Q4RTET，正文用 DJ Toner。moodGuess 吻合。
+- **49822**（Doctor Butcher 同名專輯）身分成立（Jon Oliva＋Chris Caffery 副業，1994-12，GUN 050，原名《A Living Hell》，1994 年無美國版）。聲音來源只有維基歸類（前衛／力量金屬），評論頁 403，寫作勿編音色。
+- **49823**（ERISTHEPLANET）盤名依 Apple Music／MB release 定為《IT REALLY DO BE THAT DAMN PHONE》（2026-08-21，12 首，EQT Recordings），MB 的 RG 名為 6 月 8 首原版；Rico Nasty 客座只在擴充版。國別 us 與 moodGuess 無來源（uncertain）；status thin，最適合汰的一張，建議主線視內容決定。
+- **49824**（Posh Inverse）**推翻策展層**：(a) 《我想要的都在這裡》即 Bandcamp《This is all I need》（2016-07-01，MB 2016-06-28），但 Bandcamp 在它前面還有 2011《7 4/3》，『首張正規專輯』不成立；(b)『優雅逆轉』無官方來源，僅一筆活動資料庫場次標題暗示，建議藝人欄只用 Posh Inverse；(c) moodGuess『抒情嗓音』存疑，團是台北獨立／數學搖滾，同團 2020 年作被評為近乎無人聲後搖滾，此盤人聲未證。
+- **49825**（pololu《A Ghost Shaped Lotus》）人工身分只靠 Apple Music TW 頁（2023-03-10，12 首，27 分鐘，℗ pololu）；Discogs 的 Pololu 只有 Monked Records 合輯曲目、無此專輯，兩者同一人無直接證據；『台灣』『Flow State Records 前身風格』皆無來源，label 維持空白；**建議汰**。
