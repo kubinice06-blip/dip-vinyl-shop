@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-30｜dip-vinyl-shop｜Spotify 追蹤藝人補卡池 sf01＋sf02 上線（81 張）
+
+- **sf01（favoriteAlbums 指定盤）**：38 張收 36（跳過 1：椎名林檎《無罪モラトリアム》池中已有；不收 1：Vayda 查無此盤）。試聽 ready 31／unavailable 5；頂點 0；主線審稿改 3 處（Corporate hook 點名 Apple、Klimeks 單源樂評句、Beirach 語序）。
+- **sf02（日本搖滾／獨立／流行／偶像／金屬）**：30 位全收（跳過 0），45 張。試聽 ready 42／unavailable 3；頂點 0；審稿改 1 處（静香客座樂手句）。
+- **寫入**：card_catalog 81、KV 120 鍵（47＋73，回讀逐字一致）、seed +81；寫入前對 origin 全部 claude/* 分支 seed 盤層去重 0 撞。子曲風 80/81 落位（Bent Fabric 無對應節點）、亞洲搖滾國別補 6 位、抽卡封面重建。情緒評分 score-sf0102（81 張，判準照 RULES.md），mood gate 通過。
+- **藝人介紹**：兩批各 30 位新藝人 → `batch-progress/artist-intro/roster-sf01.json`／`roster-sf02.json`，progress.json 追加 ar-d-201、ar-d-202（state cut），補洞寫作由藝人介紹工作階段跑；主名冊併入也留給該工作階段（單行 JSON 並行必撞）。
+- **管線修補**：`build-manifest.mjs` 補帶卡單 `genreException`（EP／單曲卡 prepare gate 原本報錯）。
+- **主要檔案**：`batch-progress/add-20261030-sf0{1,2}/`（rulings.md、manifest、handoff.json…）、`onboarding-manifest-add-20261030-sf0{1,2}-20261030.json`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*`、`data/discogs-cover-registry.json`、`genre-*`、`card-subgenres.json`、`draw-covers/`、`rock-asia-country-map.json`、`data/mood/`、`batch-progress/mood-axes/score-sf0102/`、PLAN.md。
+- **驗證**：兩批 prepare／published gate 皆 0 error；qa-batch research／hooks／out 全過；mood gate 通過。
+
 ### 2026-10-30｜dip-vinyl-shop｜Spotify 追蹤藝人補卡池 sf09（爵士）＋sf10（電子／實驗／新古典／house）上線 76 張
 
 - **改動**：照 `batch-progress/spotify-follow-20261030/PLAN.md` 跑完兩批（研究 5、鉤子 2、寫作 2、主線審稿、試聽、封面 live-check、三軸、頂點、寫入、子曲風、情緒評分）。
