@@ -25,3 +25,13 @@
 - **Fresh Moods**：德國 Elektrolux 廠牌旗下的個人計畫（Discogs artist 10072），不是廠牌或合輯帳號，收同名首作（1997）。
 - **2 張的藝人**：Bobo Stenson Trio（《Serenity》《Cantando》）、John Surman（《Westering Home》《Road to Saint Ives》）、Marc Johnson（《Bass Desires》《Shades of Jade》）、Marc Ribot（《Rootless Cosmopolitans》＋Ceramic Dog《Your Turn》）、Mark Guiliana（Jazz Quartet《Family First》《Jersey》）、Nils Landgren Funk Unit（《Paint It Blue》《Fonk da World》）、The Greg Foat Group、Dominique Fils-Aimé（《Nameless》《Three Little Words》）。其餘各 1 張。
 - 交研究層把關：Michel Sardaby《Night Cap》、The Greg Foat Group 的廠牌（策展說是憑記憶）；David Becker Tribune 的封面是 2025 再版；Moses Yoofee Trio《MYT》是不是首張正規專輯、年份；Graciela Susana《Adoro, la reine de Saba》原盤廠牌與封面（CAA 無圖）；濱瀬元彦《Reminiscence》1986 原盤與 2018 重錄版分清楚；Spiral Deluxe 成員與國別；Assagai 美版改題《Zimbabwe》。
+
+## 研究 b 組
+- 41811：Marc Ribot《Rootless Cosmopolitans》卡單 label Island 與 LP 原版不符：英國 LP 為 Antilles（AN 8749），美國 CD 為 Island（422-842 577-2）；facts 並列，卡單 Island 可留（CD 版）。
+- 41812：Mark Guiliana《Family First》卡單 label Motéma 有誤，原版是 Guiliana 自家 Beat Music Productions（BMP003，2015-06-04，Discogs；MB 另有日本 AGATE 版），Motéma 是《Jersey》（2017）。建議主線把卡單 label 改為 Beat Music Productions。
+- 41813：Guiliana《Jersey》署名為 Mark Guiliana Jazz Quartet，寫作層用此名；《Family First》moodGuess 寫「電氣質感」存疑，實為全原聲四重奏。
+- 41814：John Surman《Westering Home》moodGuess「蘇格蘭民謠味」存疑：九首全是 Surman 自作曲，無同名曲，是一人多軌疊錄、無鼓的管樂／單簧管實驗作（Island HELP 平價系列 HELP 10）。不汰卡。錄音時間地點查無。
+- 41815：Manu Katché《Neighbourhood》、Marc Johnson《Bass Desires》《Shades of Jade》身分、年份、廠牌與 MB／Discogs／ECM 對得上；發行日各源差幾天（Neighbourhood 9-12／9-23／9-26；Shades 9-12／9-17），facts 只寫 2005 年 9 月。
+- 41816：Marc Ribot's Ceramic Dog《Your Turn》MB 版是歐洲 Yellowbird（2013），美版 Northern Spy NSLP 038 即同一張；卡單 Northern Spy 正確。
+- 41817：Wikipedia 的 Marc Johnson 條目帶「需補引用」標籤，其中 Time／Chicago Tribune 年度榜與丹麥音樂獎為單一來源，未採用；Bill Evans 年份（1978–80）照用，已與 Shades 頁交叉。
+- 41818：外部取不到：AllMusic（403）、AAJ（403）、NPR（503）、northernspy.org 不在白名單，Katché／Ceramic Dog 部分評語取自搜尋摘要與 PopMatters、Textura。WebSearch 本組用 4 次（超出每支 3 次一次）。
