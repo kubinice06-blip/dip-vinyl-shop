@@ -1,0 +1,757 @@
+{
+ "group": "sf07b",
+ "factions": [
+  {
+   "id": "de-krautprog",
+   "zh": "德國前衛",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "au-prog",
+   "zh": "澳洲前衛",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "mx-psych",
+   "zh": "墨西哥迷幻",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "modern-aor",
+   "zh": "當代 AOR",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "au-softrock",
+   "zh": "澳洲軟搖滾",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-softrock",
+   "zh": "美國軟搖滾",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "gb-trad-pop",
+   "zh": "英國傳統流行",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "nola-soul",
+   "zh": "紐奧良靈魂",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-avant",
+   "zh": "美國前衛實驗",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "uk-postpunk",
+   "zh": "英國後龐克",
+   "count": 4,
+   "why": ""
+  },
+  {
+   "id": "is-altrock",
+   "zh": "冰島另類",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "uk-indie",
+   "zh": "英國獨立流行",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "uk-artpop",
+   "zh": "英國藝術流行",
+   "count": 2,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Nine Days' Wonder",
+   "album": "Nine Days' Wonder",
+   "year": 1971,
+   "label": "Bacillus",
+   "country": "de",
+   "faction": "de-krautprog",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "德國 Nine Days' Wonder 首張同名作，自成一格的鋼琴與管風琴前衛搖滾，團的公認起點。",
+   "moodGuess": {
+    "x": 2,
+    "y": -1,
+    "z": 1,
+    "why": "管風琴與電吉他交纏的德式前衛"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4dd87668-5ba3-47ff-92fa-ee42eba14544",
+    "https://coverartarchive.org/release-group/4dd87668-5ba3-47ff-92fa-ee42eba14544"
+   ],
+   "spotifyName": "Nine Days Wonder",
+   "mbRgMbid": "4dd87668-5ba3-47ff-92fa-ee42eba14544",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Nine Days Wonder",
+   "uncertain": ""
+  },
+  {
+   "artist": "Nine Days' Wonder",
+   "album": "We Never Lost Control",
+   "year": 1973,
+   "label": "Bacillus",
+   "country": "de",
+   "faction": "de-krautprog",
+   "genres": [
+    "rock"
+   ],
+   "why": "第三張，樂迷與評論最常點名的巔峰，風格轉向更繁複的前衛搖滾。",
+   "moodGuess": {
+    "x": 2,
+    "y": -1,
+    "z": 1,
+    "why": "繁複鍵盤與女聲的前衛搖滾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/01bf4854-a4e0-3a4a-aab8-16005ca1b45c",
+    "https://coverartarchive.org/release-group/01bf4854-a4e0-3a4a-aab8-16005ca1b45c"
+   ],
+   "spotifyName": "Nine Days Wonder",
+   "mbRgMbid": "01bf4854-a4e0-3a4a-aab8-16005ca1b45c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Nine Days Wonder",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tully",
+   "album": "Tully",
+   "year": 1970,
+   "label": "Columbia",
+   "country": "au",
+   "faction": "au-prog",
+   "genres": [
+    "rock"
+   ],
+   "why": "澳洲 1968 年成軍的前衛／迷幻樂團，同名首作是其正規錄音室代表作。",
+   "moodGuess": {
+    "x": 1,
+    "y": 0,
+    "z": 1,
+    "why": "迷幻民謠與前衛搖滾的澳洲聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9271febc-0cb6-4209-a986-1420ab9862b1",
+    "https://coverartarchive.org/release-group/9271febc-0cb6-4209-a986-1420ab9862b1"
+   ],
+   "spotifyName": "Tully",
+   "mbRgMbid": "9271febc-0cb6-4209-a986-1420ab9862b1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "標籤 Columbia（EMI 澳洲）未逐項核對"
+  },
+  {
+   "artist": "Zaratustra",
+   "album": "Su Música... Su Filosofía...",
+   "year": 1970,
+   "label": "Tizoc",
+   "country": "mx",
+   "faction": "mx-psych",
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "why": "墨西哥 Zaratustra 唯一公認的作品，源自 Jodorowsky 改編尼采的舞台作，迷幻實驗代表。",
+   "moodGuess": {
+    "x": 1,
+    "y": -1,
+    "z": 1,
+    "why": "迷幻民謠與實驗朗誦，帶拉美味道"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/879215-Zaratustra-2-Su-Musica-Su-Filosofia-",
+    "https://api.discogs.com/releases/5546763"
+   ],
+   "spotifyName": "Zaratustra",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 以 Zaratustra／Zarathustra 查無此 1970 墨西哥盤；Discogs master 879215 為 Zaratustra (2)",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/879215-Zaratustra-2-Su-Musica-Su-Filosofia-",
+    "https://www.discogs.com/release/5546763"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Spotify 的 Zaratustra 身分由 Discogs 推定為墨西哥 1970；封面僅 Discogs 無 CAA/iTunes，需覆核"
+  },
+  {
+   "artist": "Martin & Garp",
+   "album": "Sentimental Fools",
+   "year": 2020,
+   "label": "Social Beats",
+   "country": "it",
+   "faction": "modern-aor",
+   "genres": [
+    "soul",
+    "pop"
+   ],
+   "why": "Martin & Garp 目前唯一專輯，當代 AOR／藍眼靈魂，P-Vine 日本發行。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": 1,
+    "why": "光滑 AOR 與藍眼靈魂"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/sentimental-fools/1536123551",
+    "https://www.discogs.com/master/1965088-Martin-Garp-Sentimental-Fools"
+   ],
+   "spotifyName": "Martin & Garp",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 查無 Martin & Garp 與 Sentimental Fools",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1965088-Martin-Garp-Sentimental-Fools",
+    "https://music.apple.com/us/album/sentimental-fools/1536123551"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "非德國 1971；為 2020 年當代團，國家依 Social Beats（義大利）暫填 it"
+  },
+  {
+   "artist": "Slow Dancer",
+   "album": "In a Mood",
+   "year": 2017,
+   "label": "Lazy Eyes",
+   "country": "au",
+   "faction": "au-softrock",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "Slow Dancer 第二張長盤，澳洲當代 soft rock／yacht 風的代表作。",
+   "moodGuess": {
+    "x": 3,
+    "y": 2,
+    "z": 1,
+    "why": "柔和軟搖滾與電鋼琴"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a1a4f5a8-6e15-44e6-8c19-cbe5335fb201",
+    "https://coverartarchive.org/release-group/a1a4f5a8-6e15-44e6-8c19-cbe5335fb201",
+    "https://music.apple.com/us/album/in-a-mood/1240988319"
+   ],
+   "spotifyName": "Slow Dancer",
+   "mbRgMbid": "a1a4f5a8-6e15-44e6-8c19-cbe5335fb201",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 藝人無國別；廠牌 Lazy Eyes 未核對"
+  },
+  {
+   "artist": "Paul Davis",
+   "album": "Cool Night",
+   "year": 1981,
+   "label": "Arista",
+   "country": "us",
+   "faction": "us-softrock",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "Paul Davis 軟搖滾巔峰，含名曲〈'65 Love Affair〉、〈Cool Night〉。",
+   "moodGuess": {
+    "x": 3,
+    "y": 2,
+    "z": 1,
+    "why": "光滑 AOR 與柔順嗓音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/66a62b3b-5c3e-30d4-8bd3-41860cb76ab0",
+    "https://coverartarchive.org/release-group/66a62b3b-5c3e-30d4-8bd3-41860cb76ab0"
+   ],
+   "spotifyName": "Paul Davis",
+   "mbRgMbid": "66a62b3b-5c3e-30d4-8bd3-41860cb76ab0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Paul Davis",
+   "album": "Southern Tracks and Fantasies",
+   "year": 1976,
+   "label": "Bang",
+   "country": "us",
+   "faction": "us-softrock",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "70 年代中期的南方軟搖滾代表，與 Cool Night 是不同時期的兩個高峰。",
+   "moodGuess": {
+    "x": 3,
+    "y": 1,
+    "z": 1,
+    "why": "南方鄉村味的軟搖滾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/67ce9f44-4ed5-3263-b5a5-0996beb4b4a9",
+    "https://coverartarchive.org/release-group/67ce9f44-4ed5-3263-b5a5-0996beb4b4a9"
+   ],
+   "spotifyName": "Paul Davis",
+   "mbRgMbid": "67ce9f44-4ed5-3263-b5a5-0996beb4b4a9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "廠牌 Bang 未核對"
+  },
+  {
+   "artist": "Alma Cogan",
+   "album": "I Love to Sing",
+   "year": 1958,
+   "label": "HMV",
+   "country": "gb",
+   "faction": "gb-trad-pop",
+   "genres": [
+    "pop",
+    "jazz"
+   ],
+   "why": "50 年代英國當紅女歌手 Alma Cogan 的首張正規專輯。",
+   "moodGuess": {
+    "x": 3,
+    "y": 1,
+    "z": 1,
+    "why": "傳統流行與輕快管弦伴奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1ac512f7-9c73-4707-a328-d4a5e174fd6b",
+    "https://coverartarchive.org/release-group/1ac512f7-9c73-4707-a328-d4a5e174fd6b"
+   ],
+   "spotifyName": "Alma Cogan",
+   "mbRgMbid": "1ac512f7-9c73-4707-a328-d4a5e174fd6b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Willie West",
+   "album": "Lost Soul",
+   "year": 2014,
+   "label": "Timmion",
+   "country": "us",
+   "faction": "nola-soul",
+   "genres": [
+    "soul"
+   ],
+   "why": "紐奧良靈魂歌手 Willie West 的復出之作，Timmion 發行，樂迷最推。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": 1,
+    "why": "復古老派靈魂與放克"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/757789-Willie-West-Lost-Soul",
+    "https://music.apple.com/us/album/lost-soul/1000102399"
+   ],
+   "spotifyName": "Willie West",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 有藝人 Willie West 但無 Lost Soul 的穩定對應（RG 85436f9c 可試）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/757789-Willie-West-Lost-Soul",
+    "https://music.apple.com/us/album/lost-soul/1000102399"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "iTunes 有兩個版本（署名 Willie West & The High Society Brothers）；MB RG 85436f9c-96ea-4de7-8d95-705dfdb54584 可改用"
+  },
+  {
+   "artist": "Sun City Girls",
+   "album": "Torch of the Mystics",
+   "year": 1990,
+   "label": "Majestic Mountain / Riot Season",
+   "country": "us",
+   "faction": "us-avant",
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "why": "Sun City Girls 公認最具代表性的專輯，迷幻即興與世界音樂交疊。",
+   "moodGuess": {
+    "x": 0,
+    "y": -1,
+    "z": 1,
+    "why": "迷幻即興與東方音階"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a22a93fe-5e62-3ffb-9e88-c0a263ca8b6e",
+    "https://coverartarchive.org/release-group/a22a93fe-5e62-3ffb-9e88-c0a263ca8b6e"
+   ],
+   "spotifyName": "Sun City Girls",
+   "mbRgMbid": "a22a93fe-5e62-3ffb-9e88-c0a263ca8b6e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Sun City Girls",
+   "album": "Dante's Disneyland Inferno",
+   "year": 1996,
+   "label": "Majestic Mountain / Abduction",
+   "country": "us",
+   "faction": "us-avant",
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "why": "第二個高峰：怪誕敘事與異國情調的後期代表。",
+   "moodGuess": {
+    "x": 0,
+    "y": -1,
+    "z": 1,
+    "why": "怪誕異國情調與搖滾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/14354dff-d47e-3eb0-b8d7-085cb73a9004",
+    "https://coverartarchive.org/release-group/14354dff-d47e-3eb0-b8d7-085cb73a9004"
+   ],
+   "spotifyName": "Sun City Girls",
+   "mbRgMbid": "14354dff-d47e-3eb0-b8d7-085cb73a9004",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 標題含彎引號 Dante’s；年份為 1996-05-06"
+  },
+  {
+   "artist": "Eyeless In Gaza",
+   "album": "Pale Hands I Loved So Well",
+   "year": 1982,
+   "label": "Cherry Red",
+   "country": "gb",
+   "faction": "uk-postpunk",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Eyeless In Gaza 1982 年代表作，後龐克與民謠、電子交融。",
+   "moodGuess": {
+    "x": -1,
+    "y": 0,
+    "z": 1,
+    "why": "細緻抒情與電子層次"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d6ef06b2-8b62-334c-b7cc-ddafa5cd4a1a",
+    "https://coverartarchive.org/release-group/d6ef06b2-8b62-334c-b7cc-ddafa5cd4a1a"
+   ],
+   "spotifyName": "Eyeless In Gaza",
+   "mbRgMbid": "d6ef06b2-8b62-334c-b7cc-ddafa5cd4a1a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 此 RG 無首發日期，年份依 Discogs 慣例 1982"
+  },
+  {
+   "artist": "Eyeless In Gaza",
+   "album": "Rust Red September",
+   "year": 1983,
+   "label": "Cherry Red",
+   "country": "gb",
+   "faction": "uk-postpunk",
+   "genres": [
+    "rock"
+   ],
+   "why": "另一個高峰，旋律更明確的後龐克抒情派。",
+   "moodGuess": {
+    "x": -1,
+    "y": 0,
+    "z": 1,
+    "why": "悲傷吉他與抒情嗓音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dcc4fd01-8162-3c01-8182-e0a8602c6c10",
+    "https://coverartarchive.org/release-group/dcc4fd01-8162-3c01-8182-e0a8602c6c10"
+   ],
+   "spotifyName": "Eyeless In Gaza",
+   "mbRgMbid": "dcc4fd01-8162-3c01-8182-e0a8602c6c10",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Martyn Bates",
+   "album": "Letters Written",
+   "year": 1982,
+   "label": "Mute",
+   "country": "gb",
+   "faction": "uk-postpunk",
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "why": "Eyeless In Gaza 主唱的首張個人專輯，暗黑民謠經典。",
+   "moodGuess": {
+    "x": -1,
+    "y": -1,
+    "z": 1,
+    "why": "孤寂嗓音與簡約吉他"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/065e5b86-cbc0-4276-80ab-8aa786d80063",
+    "https://coverartarchive.org/release-group/065e5b86-cbc0-4276-80ab-8aa786d80063"
+   ],
+   "spotifyName": "Martyn Bates",
+   "mbRgMbid": "065e5b86-cbc0-4276-80ab-8aa786d80063",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Martyn Bates",
+   "album": "The Return of the Quiet",
+   "year": 1987,
+   "label": "Cherry Red",
+   "country": "gb",
+   "faction": "uk-postpunk",
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "why": "個人作品的另一高峰，更成熟的室內民謠。",
+   "moodGuess": {
+    "x": -1,
+    "y": -1,
+    "z": 1,
+    "why": "靜謐民謠與沉鬱歌聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b17f2b0c-595f-4ec1-8acc-9e0f4574495b",
+    "https://coverartarchive.org/release-group/b17f2b0c-595f-4ec1-8acc-9e0f4574495b"
+   ],
+   "spotifyName": "Martyn Bates",
+   "mbRgMbid": "b17f2b0c-595f-4ec1-8acc-9e0f4574495b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "廠牌 Cherry Red 未核對"
+  },
+  {
+   "artist": "The Sugarcubes",
+   "album": "Life's Too Good",
+   "year": 1988,
+   "label": "One Little Independent",
+   "country": "is",
+   "faction": "is-altrock",
+   "genres": [
+    "rock"
+   ],
+   "why": "Sugarcubes 首張，含〈Birthday〉，冰島另類搖滾的代表。",
+   "moodGuess": {
+    "x": 2,
+    "y": 0,
+    "z": 1,
+    "why": "Björk 嗓音與另類搖滾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/972b3962-49dc-3bbc-ab11-c6b8f7f0838b",
+    "https://coverartarchive.org/release-group/972b3962-49dc-3bbc-ab11-c6b8f7f0838b"
+   ],
+   "spotifyName": "The Sugarcubes",
+   "mbRgMbid": "972b3962-49dc-3bbc-ab11-c6b8f7f0838b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Sugarcubes",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Sugarcubes",
+   "album": "Here Today, Tomorrow Next Week!",
+   "year": 1989,
+   "label": "One Little Independent",
+   "country": "is",
+   "faction": "is-altrock",
+   "genres": [
+    "rock"
+   ],
+   "why": "第二張，更躁動的另類搖滾，與首作並列代表。",
+   "moodGuess": {
+    "x": 2,
+    "y": 0,
+    "z": 1,
+    "why": "躁動搖滾與主唱怪誕唱腔"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c7e726f2-1e99-3bb9-83c4-4eb28af1cffe",
+    "https://coverartarchive.org/release-group/c7e726f2-1e99-3bb9-83c4-4eb28af1cffe"
+   ],
+   "spotifyName": "The Sugarcubes",
+   "mbRgMbid": "c7e726f2-1e99-3bb9-83c4-4eb28af1cffe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Sugarcubes",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Jazz Butcher",
+   "album": "A Scandal in Bohemia",
+   "year": 1984,
+   "label": "Glass",
+   "country": "gb",
+   "faction": "uk-indie",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "Jazz Butcher 早期代表，機智歌詞的英國獨立流行。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": 1,
+    "why": "輕快吉他與冷面幽默"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0d16dd68-1451-36fb-b088-9637aa231810",
+    "https://coverartarchive.org/release-group/0d16dd68-1451-36fb-b088-9637aa231810"
+   ],
+   "spotifyName": "The Jazz Butcher",
+   "mbRgMbid": "0d16dd68-1451-36fb-b088-9637aa231810",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Jazz Butcher",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Jazz Butcher",
+   "album": "Fishcotheque",
+   "year": 1988,
+   "label": "Creation",
+   "country": "gb",
+   "faction": "uk-indie",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "Jazz Butcher 最受評論與樂迷肯定的專輯，Creation 時期。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": 1,
+    "why": "明亮吉他流行與書卷氣"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c70b63f8-22f3-362d-840c-045913d67669",
+    "https://coverartarchive.org/release-group/c70b63f8-22f3-362d-840c-045913d67669"
+   ],
+   "spotifyName": "The Jazz Butcher",
+   "mbRgMbid": "c70b63f8-22f3-362d-840c-045913d67669",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Jazz Butcher",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mick Karn",
+   "album": "Titles",
+   "year": 1982,
+   "label": "Virgin",
+   "country": "gb",
+   "faction": "uk-artpop",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Japan 貝斯手 Mick Karn 首張個人專輯，無琴格貝斯與新浪潮。",
+   "moodGuess": {
+    "x": 0,
+    "y": 0,
+    "z": 1,
+    "why": "無琴格貝斯的前衛新浪潮"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c25ed73b-01c8-3a83-a8cb-6fba39f8bf36",
+    "https://music.apple.com/jp/album/titles/714989614",
+    "https://www.discogs.com/master/87988-Mick-Karn-Titles"
+   ],
+   "spotifyName": "Mick Karn",
+   "mbRgMbid": "c25ed73b-01c8-3a83-a8cb-6fba39f8bf36",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無此 RG 封面，封面用 iTunes JP"
+  },
+  {
+   "artist": "Mick Karn",
+   "album": "Dreams of Reason Produce Monsters",
+   "year": 1987,
+   "label": "Virgin",
+   "country": "gb",
+   "faction": "uk-artpop",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "第二張個人專輯，公認的後期高峰。",
+   "moodGuess": {
+    "x": 0,
+    "y": 0,
+    "z": 1,
+    "why": "低沉貝斯與異國色彩的電子搖滾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/44886f9f-2555-3604-8209-a8cab0b81af2",
+    "https://coverartarchive.org/release-group/44886f9f-2555-3604-8209-a8cab0b81af2"
+   ],
+   "spotifyName": "Mick Karn",
+   "mbRgMbid": "44886f9f-2555-3604-8209-a8cab0b81af2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "廠牌 Virgin 未核對"
+  }
+ ],
+ "notes": [
+  "不收：Mellow Yellow（MB 有芬蘭、丹麥、日本嘻哈、比利時、牙買加多組同名，皆無可辨識的正規專輯或與清單脈絡不符，查不清不收）",
+  "不收：Destroy All Monsters（正規錄音室專輯極少；《November 22, 1963》Discogs 判為彙編，其餘為現場／彙編／重組後 MB 掛載來源不明）",
+  "不收：Antena（僅 5 首迷你專輯《Camino del Sol》與彙編《Toujours du Soleil》，無正規專輯；若店主接受迷你專輯可補 MB RG 3a2f6da8-95db-4042-baa8-4f04e7425065）",
+  "同名：Nine Days Wonder 取德國 krautrock（MB f7cbf37d）；Tully 取澳洲 1968（MB 26476061）；Zaratustra 取墨西哥 1970（Discogs Zaratustra (2)，非保加利亞黑金屬）；Martin & Garp 實為 2020 年當代團，非德國 1971",
+  "全部 17 位均已查池（seed_cards、artist-intros、aliases）與其他組 curation，無已在池者"
+ ]
+}
