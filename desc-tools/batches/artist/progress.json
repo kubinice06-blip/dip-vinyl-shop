@@ -2,7 +2,7 @@
  "v": 1,
  "per": 40,
  "roster": "roster-20260929.json",
- "updatedAt": "2026-10-30T06:32:51.036Z",
+ "updatedAt": "2026-10-30T06:50:50.059Z",
  "batches": [
   {
    "batch": "ar-a-001",
@@ -11704,8 +11704,13 @@
     "ultra sunn",
     "特撮"
    ],
-   "state": "cut",
-   "note": "Spotify 追蹤藝人補卡池 sf11（add-20261030-sf11）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；24 位）；名冊 batch-progress/artist-intro/roster-sf11.json"
+   "state": "published",
+   "note": "Spotify 追蹤藝人補卡池 sf11（add-20261030-sf11）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；24 位）；名冊 batch-progress/artist-intro/roster-sf11.json",
+   "skipped": [
+    "ERISTHEPLANET",
+    "Mindchatter"
+   ],
+   "reviewFixes": 3
   },
   {
    "batch": "ar-d-212",
@@ -11749,8 +11754,13 @@
     "the umc's",
     "way out west"
    ],
-   "state": "cut",
-   "note": "Spotify 追蹤藝人補卡池 sf12（add-20261030-sf12）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；30 位）；名冊 batch-progress/artist-intro/roster-sf12.json"
+   "state": "published",
+   "note": "Spotify 追蹤藝人補卡池 sf12（add-20261030-sf12）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；30 位）；名冊 batch-progress/artist-intro/roster-sf12.json",
+   "skipped": [
+    "Noblemen",
+    "My Skin Against Your Skin 激膚"
+   ],
+   "reviewFixes": 2
   },
   {
    "batch": "ar-d-206",

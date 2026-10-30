@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 997 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1010 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1001,3 +1001,16 @@
 | ar-d-210 | Rich Ruth | I Survived, It's Over | Michael Ruth 在 2018 年退下來回家做 ambient | Nashville Scene 寫的是 2019 年一次性演出無法滿足創作、才開了 Rich Ruth；另有搜尋摘要說 2018 年退出巡演但未開頁證實，年份來源不一致，建議改成不寫年份或寫 2019 開始發片 | https://www.nashvillescene.com/music/features/rich-ruth-adds-to-the-growing-canon-of-nashville-ambient-music/article_a432cbd6-182a-11ed-960a-db4eefc336f2.html |
 | ar-d-210 | Rich Ruth | I Survived, It's Over | 錄音那一年，Nashville 北部他家一帶遭龍捲風襲擊 | Nashville Scene 全文未提龍捲風，只說疫情初期封鎖時在家中錄、當時剛被餐廳資遣；龍捲風一說本層查不到佐證，建議核對 | https://www.nashvillescene.com/music/features/rich-ruth-adds-to-the-growing-canon-of-nashville-ambient-music/article_a432cbd6-182a-11ed-960a-db4eefc336f2.html |
 | ar-d-210 | Yung Bae | Bae 5 | 前四張靠取樣拼成；〈Bad Boy〉是簽下 Arista Records 後的第一支單曲；唱片自行出版 | 僅維基單源（Arista 與〈Bad Boy〉）；Bandcamp Daily／Portland Mercury／Vice 皆未提 Arista。「前四張」純靠取樣略過度：Bae 系列另有《Japanese Disco Edits》與 Skyscraper Anonymous 等，Vice 稱五張 Bae＋三張 Japanese Disco Edits。可酌改，非確定錯誤。 | https://vice.com/en/article/how-anime-and-japanese-city-pop-influences-yung-bae |
+| ar-d-211 | Skip Skip Ben Ben | 鏡中鏡 Mirror in Mirror | 起源台北的噪音流行團 | 2015 年演出介紹寫斑斑以此名義於 2010 年起在北京獨立音樂圈發展三年、2014 年才回台灣定居；搜尋摘要（KKBOX 專文，頁面 403 未開）亦稱樂團在北京地下樂壇發跡。『起源台北』與此不合，建議改成『斑斑在北京起步、2014 年回台』。僅單頁佐證，屬低把握。 | https://gigguidetw.frontandback.co.nz/event-12047 |
+| ar-d-211 | Space Raiders | Hot Cakes | 簽進 Fatboy Slim 在布萊頓經營的 Skint | 英文維基確實寫 Skint 是 Fatboy Slim 經營，但 Electronic Sound 2015 年評論明確說 Skint 並非 Fatboy Slim 自己的廠牌：由 JC Reid、Tim Jeffery 與 Damian Harris 創辦，首張 SKINT 1 是 Norman Cook（Fatboy Slim）的單曲。建議改成『Fatboy Slim 作品所在的 Skint』或『布萊頓廠牌 Skint』。 | https://www.electronicsound.co.uk/?p=20029 |
+| ar-d-211 | Super Besse | 63610* | 2013 年在明斯克成軍的後龐克三人組 | Pop-Kultur 2020 藝人頁與訪談為二人組（Alex Sinica、Maksim Kulsha）；2016、2017 年的樂評與 beehype 則寫三人，隨年代編制有異。建議改為『二人組（早期為三人）』或只寫『明斯克的後龐克樂團』。 | https://2020.pop-kultur.berlin/en/artists/super-besse/ |
+| ar-d-211 | The Sign Of Human 記號士 | 為時間做過的註解 | 《第一個記號》在 2012 年 12 月由「海邊的卡夫卡」發行 | 中文維基列《第一個記號》為 2012 年 12 月 re: public records 發行的 EP；「海邊的卡夫卡」是台北公館的店，Blow 專訪《重建》在該處進行，並非發行方。另上線簡介稱「單曲」，維基列為 EP。 | https://zh.wikipedia.org/zh-hant/%E8%A8%98%E8%99%9F%E5%A3%AB |
+| ar-d-212 | Fortisakharof | 1900? | 兩人第一次以共同名義發行 | 可能對，但前一張《Sipurim Mehakufsa》由 Sakharof 共寫共唱並製作，簡介措辭宜保留『以 Fortisakharof 名義』 | https://he.wikipedia.org/wiki/פורטיסחרוף |
+| ar-d-212 | J. Valentine | The Testimony | Nicki Minaj 等客座只出現在 16 首限量 CDr | 未能獨立查證（Discogs release/6985873 未開頁讀到，事實庫轉述）；請本機核對 | https://www.discogs.com/release/6985873 |
+| ar-d-212 | Kris Kross | Totally Krossed Out | 1990 年在購物中心被 Dupri 撞見 | 維基寫 1990、Mental Floss 寫 1991 簽約、多篇媒體年份不一；建議簡介若要保留年份標註『約』或刪年份 | https://mentalfloss.com/posts/kriss-kross-backward-clothing-trend |
+| ar-d-212 | Lausse The Cat | The Girl, The Cat and The Tree | 本作發表於 2018 年 6 月，8 首加起來約 22 分鐘，『寫成一則童話式的概念故事』 | 維基把它稱為 EP；Euronews 稱 first and only full-length 但 Redbrick 稱 21 分鐘 EP，說法不一；另上線簡介未提 Lausse 2025 年已復出發行《The Mocking Stars》，若寫『目前只此一張』要更新 | https://en.wikipedia.org/wiki/Lausse_the_Cat |
+| ar-d-212 | Marian Hill | Act One | Haverford 高中的兩位同學 Samantha Gongol 與 Jeremy Lloyd | 本人訪談說中學（middle school）即相識，與『高中同學』不同；維基寫 Haverford High School。建議簡介改寫成『費城長大的兩人』避開校名 | https://www.bringinitbackwards.com/interview-with-marian-hill/ |
+| ar-d-212 | Michael Franti & Spearhead | Stay Human | 2001 年 5 月上市 | 維基 Franti 條目把《Stay Human》列為 2000 年專輯、Spearhead 條目也寫 Oh My God 來自 2000 年的 Stay Human；上線簡介與事實庫採 2001 年（卡池年份 2001）；兩者可能是美國 vs 全球發行日差異，建議主線核 Discogs | https://en.wikipedia.org/wiki/Spearhead_(band) |
+| ar-d-212 | Noblemen | Chord Stricken | 他們的首作《Chord Stricken》2024 年 11 月 20 日上架 Bandcamp | Bandcamp 目錄 2013 年起已有 EP《Thoughts of a Man》、2022 年《Treadmill》；建議改『首張專輯』並附註此前有 EP | https://noblemen.bandcamp.com/album/chord-stricken |
+| ar-d-212 | Onry Ozzborn | The Grey Area | 放棄亞利桑那的棒球獎學金；小學同學 Sleep 在法明頓認識 | 兩份訪談只說在亞利桑那打大學棒球並輟學，未提獎學金；Sleep 與他同在新墨西哥長大，但『小學同學』『法明頓』僅見 Apple Music 簡介與搜尋摘要，未讀到原文 | https://rapstation.com/news/onry-ozzborn-rs |
+| ar-d-212 | S.C.A.B. | Somebody in New York Loves You! | 主唱 Sean Carmago | Stereogum 與 2022 新聞稿皆拼 Sean Camargo（Camargo，非 Carmago）；joyofviolentmovement 的拼法待核。大本營 Ridgewood 與六人編制為 2025 年資料，本層未能核實 | https://www.americanpancake.com/2022/12/scab-and-alt-rock-emotional-explosions.html |
