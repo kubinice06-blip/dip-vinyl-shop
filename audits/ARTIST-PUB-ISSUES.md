@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 974 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 976 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -977,4 +977,6 @@
 | ar-d-201 | Manfred Reuthe | Klavier Solo I | 受尹伊桑之邀，在南韓教了八年琴 | Discogs 寫尹伊桑邀請他赴韓；Heidelberg 活動頁與德國音樂院的簡介只說 1973 年起任教首爾與大邱，沒有提尹伊桑。兩源皆未證實邀請之說，且 Discogs 寫 1980 年前教 8 年與 1973 起算相符，但「八年」只有 Discogs 單源。建議店主本機核對。 | https://dai-heidelberg.de/en/events/32nd-heidelberg-piano-week-4-22869/ |
 | ar-d-201 | 張震嶽 | 遠走高飛 | 上一回走情歌路線是 2013 年的《我是海雅谷慕》 | 中文維基與搜尋所見資料把《我是海雅谷慕》描述為以阿美族名為題、回歸大自然與環境思考的專輯，未見「情歌路線」說法；〈抱著你〉入圍年度歌曲，但整張是否為情歌專輯無來源。建議店主本機核對。 | https://zh.wikipedia.org/wiki/%E5%BC%B5%E9%9C%87%E5%B6%BD |
 | ar-d-202 | DIR EN GREY | Withering to death. | 芬蘭專輯榜上第一組上榜的非歐美藝人 | 英文維基只寫此專輯是樂團首個非亞洲榜位（芬蘭第 31 名），未寫「第一組非歐美藝人」；ja 維基的『欧米以外のアーティストとしては初』指向德國榜，且頁面自標出典不足；此「第一」宣稱無獨立兩源，建議審稿時降級或刪除 | https://en.wikipedia.org/wiki/Dir_En_Grey |
+| ar-d-202 | Wink | Especially For You ～優しさにつつまれて～ | 兩人都是少年雜誌選拔的優勝者 | 日文維基寫兩人是 Miss UP 的入賞者，英文維基寫 1987 年分別為第 7、9 名，並非優勝 | https://ja.wikipedia.org/wiki/Wink |
+| ar-d-202 | COHOL | 空洞 | 帶 grindcore 色彩的神奈川黑金屬團 COHOL | ZT Magazine 2015 訪談標題與內文稱 COHOL 為東京據點樂團，Last.fm 摘要同；未找到任何出處寫神奈川 | https://www.ztmag.com/news/zt-interrogation-facing-reality-with-tokyos-cohol/ |
 | ar-d-202 | 静香 | 天界のペルソナ | 静香一手主導：唱歌、彈吉他、搖鈴，詞曲與概念全包 | 英文維基稱吉他由三浦マキ演奏、静香負責緩慢吟誦式人聲，『彈吉他』疑為マキ；詞曲全包無來源確認 | https://en.wikipedia.org/wiki/Shizuka_(band) |
