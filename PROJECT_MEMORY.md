@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-30｜dip-vinyl-shop｜Spotify 追蹤藝人補卡池 sf09（爵士）＋sf10（電子／實驗／新古典／house）上線 76 張
+
+- **改動**：照 `batch-progress/spotify-follow-20261030/PLAN.md` 跑完兩批（研究 5、鉤子 2、寫作 2、主線審稿、試聽、封面 live-check、三軸、頂點、寫入、子曲風、情緒評分）。
+  - **sf09**：41 位 → 收 32 位、39 張；跳過已在池 4 位（Joe Harriott 雙五重奏、秋吉敏子トリオ、板橋文夫トリオ、菊地雅章クインテット）；不收 2 位（Jon Christensen 無領銜盤；Multiverse 經 Spotify 藝人頁回查是台灣嘻哈廠牌帳號）。試聽 ready 35／unavailable 4；頂點 0。審稿改 2 處。
+  - **sf10**：33 位 → 收 32 位、37 張；跳過 0；不收 Gibran Alcocer（只有 EP）。試聽 ready 33／unavailable 4；頂點 0。審稿改 3 處。Monoton 封面 CAA 原圖 500 改 release 縮圖。
+  - 寫入：card_catalog 76、KV 79 鍵（sf09 42、sf10 37）逐字回讀一致、seed 76 列；Discogs 封面 4 張入 `data/discogs-cover-registry.json`；子曲風 20 位寫進 `genre-l3-artist-map.json`；情緒評分 `batch-progress/mood-axes/score-sf09/`、`score-sf10/`。
+  - 藝人介紹：名冊 `batch-progress/artist-intro/roster-sf09.json`（32 位）、`roster-sf10.json`（33 位），progress.json 追加 ar-d-209、ar-d-210（state cut），補洞寫作待調度派工。
+- **主要檔案**：`batch-progress/add-20261030-sf09/`、`add-20261030-sf10/`、`onboarding-manifest-add-20261030-sf{09,10}-20261030.json`、`desc-tools/batches/*/add-20261030-sf{09,10}*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/mood/*`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`、`desc-tools/batches/artist/progress.json`、PLAN.md。
+- **驗證**：兩批 prepare／published gate 皆 0 error；封面 76/76 live-check 200；寫入前對 origin 所有 `claude/*` 分支 seed 去重 0 撞；子曲風 76/76 落位；mood 錨點 104/104 同格。
+
 ### 2026-10-30｜dip-vinyl-shop｜Spotify 追蹤藝人補卡池：開工規劃（12 批＋藝人介紹批號預留）
 
 - **店主指示**：`/dip-card-create` 依 `gap.json` 補卡池——先上 favoriteAlbums 38 張，再為 361 位缺漏藝人各挑 1–2 張代表作，走完整上架流程與藝人介紹，一路接力、不中途回報。

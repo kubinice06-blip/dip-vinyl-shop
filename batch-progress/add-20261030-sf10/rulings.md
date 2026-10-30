@@ -116,3 +116,6 @@
 ## 本批新藝人（無介紹）
 - 33 位全部沒有介紹、也不在排隊批次或別名鍵（Against All Logic 是 Nicolas Jaar 的別名，但掛名不同，另列；Danger Mouse 兩個合作名義各算一位）。名冊 `batch-progress/artist-intro/roster-sf10.json`（tier D、addedBy add-20261030-sf10），progress.json 追加 **ar-d-210**（state cut，33 位，未超過 45 不開溢出號）。補洞寫作由調度另派工作階段跑。
 - Against All Logic、Alvin Curran、Barry Can't Swim、Christoph De Babalon、Clutchy Hopkins、Danger Mouse & Sparklehorse、Danger Mouse & Daniele Luppi、Federico Albanese、French 79、Grandbrothers、HVOB、Joep Beving、Juana Molina、Kate NV、L'Acephale、Lau Nau、Luke Abbott、Mareux、Minotaur Shock、Monoton、Orchestra of Constant Distress、Peggy Gou、Photay、Planningtorock、Rich Ruth、Ruxpin、Saint Abdullah、Shinjuku Thief、Throwing Snow、Tomaga、Vapour Theories、Yaeji、Yung Bae。
+
+## 情緒評分（score-sf10）
+- 41977：Opus 1 支照 `RULES.md`＋BRIEF 打 37 張，主線逐張看過 why 與研究稿，未改值。八格：雀躍 9、放鬆 6、頹靡 6、平靜 5、暴躁 5、恍惚 3、冷冽 2、沸騰 1；conf high 3／mid 25／low 9。`merge` → `build-priors` → `build-scale v0` → `build-card-moods`：錨點 104/104 同格，座標 21,970/21,970。不算落格率。
