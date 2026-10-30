@@ -57,3 +57,11 @@
 - 41771：照研究 c 組推翻改卡單：廠牌 Loose Meat→Whipped Cream Records、Modey Lemon→Birdman Records（並刪「出道作」，首張是 2002 同名）、The Pictish Trail→Lost Map（Fire 是 2018 豪華重發）、Psychic Ills《Mirror Eye》→The Social Registry（Sacred Bones 是 2023 重發）、MV & EE《Gettin' Gone》→Ecstatic Peace!、《Space Homestead》→Woodsist。Loose Meat 主曲風 rock→electronic（合成器＋鼓機 indie-disco）。moodGuess 存疑 5 張不汰卡（這條線不看落格），留給上線後情緒評分照聲音事實判。
 - 41772：照研究 d 組改卡單廠牌：SLIFT《ILION》→Sub Pop、《Ummon》→Vicious Circle（法國原版；Stolen Body 是英國版）、Tacoma Radar→Andmoresound Records（蘇格蘭樂團，國別維持 gb）、The Charlottes→The Subway Organization、The Sonora Pine→Quarterstick Records。Stone Sour 首作美國金唱片（非白金）、SUUNS《Zeroes QC》未入圍 Polaris——寫作層以研究稿為準。
 - 41773：照研究 b 組改卡單：Current Joys 廠牌→Danger Collective Records、Cerberus Shoal→Temporary Residence Limited、Helado Tropical→Psychic Hotline；Disappears《Era》刪 curatorWhy 的 Shelley 句（他打的是《Pre Language》）。年份：《E Volo Love》改 2012（Domino WIG280 正式發行 2012-01；MB 那筆無月日的 2011 不採）；Green Jelly《Cereal Killer Soundtrack》改 1993（1992 是錄影專輯，音軌專輯 1993-03-16 Zoo）。
+
+## 研究 e 組
+- 41741：СОЮЗ《Это всё совсем не то》—— 查證其聲音為爵士流行／avant-pop／電子流行（Bandcamp 標籤、MB 流派 jazz、Europavox、goout.net），無後龐克證據；moodGuess「冷硬後龐克吉他」存疑，標 thin，建議主線汰換或聽證。廠牌 Masterskaya（MB）。
+- 41742：David Boring《Unnatural Objects and Their Humans》—— Bandcamp／MB 標籤為 noise／post-punk／industrial／no wave，非夢幻 shoegaze；moodGuess 存疑（實際更吵更躁）。自行發行。
+- 41743：Vinnum Sabbathi《Gravity Works》—— 廠牌＝自行發行（Metal Archives 標 Independent；LSDR 為後來再版）；Fuzzonaut (2015) 在 Metal Archives 是 split，Gravity Works 才是首張全長，選碟不變。
+- 41744：Sleepytime Trio《Plus 6000》—— Discogs 確認 1997 Lovitt Records LOV #7、12 吋 6 首、J. Robbins 錄音；卡單 label 填 Lovitt Records。
+- 41745：Mamie Minch《Razorburn Blues》—— Apple 確認 2008-05-24、11 首、℗ Mamie Minch；Discogs 另列 Morphius Records, Inc.，廠牌兩說，沿用自行發行。Chronogram 作《The Razorburn Blues》視為冠詞誤植。
+- 41746：Ben Watt《Hendra》—— 發行日以 MB 2014-04-14 為準（他處 4/15、3/24）；鼓有無來源未明。North Marine Drive 的榜名兩說（獨立榜第一／前十），facts 保守引用。
