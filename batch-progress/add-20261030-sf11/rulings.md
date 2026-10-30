@@ -22,3 +22,11 @@
 - **一位只收一張（主線汰第二張）**：Moin 汰《You Never End》留《Moot!》（AD 93 首作，評論集中）；Caldera 汰 1976 同名首作留《Sky Islands》（熱門曲標題曲）；特撮汰《ヌイグルマー》留出道作《爆誕》（MB 763d5913，2000-02-23）；ULTRA SUNN 汰新作《The Beast in You》留《US》。
 - **改**：The Offset: Spectacles 國別 hk → us（Chicago Trouble In Mind 發行的美國一人計畫，研究層核實）。
 - 交研究層把關：Posh Inverse 的中文團名「優雅逆轉」與 The Sign Of Human 的「記號士」是策展填的雙寫，研究層要找到官方來源，找不到就只用英文名；The Sign Of Human 台／港國別；skip skip ben ben 熱門曲（交雜隕石、無限大、海嘯列車）是否出自較新的專輯（MB 只到 2015《鏡中鏡》）；ERISTHEPLANET 盤名（策展寫《IT REALLY DO BE THAT DAMN PHONE》，MB 寫《IT BE THAT DAMN PHONE》）照封面與 Spotify 定；Sonia Calico 國別（熱門曲含中文）；The Luvmenauts 國別；pololu 熱門曲掛 Flow State Records（PLAN 列為廠牌、不收的那個帳號；pololu 本人是藝人，照收）；Mad Keys、Nicknack、PUZZLEMAN 無評論共識，代表作依完整度推定。
+
+## 研究 a 組（49801–49810）
+- **49801**（Moin《Moot!》）身分核實：MB 5f26ed11、AD 93、2021-07-09 皆對；真人鼓手（Magaletti）非鼓機，moodGuess 的 why 小修但方向不變（冷／躁）；留。
+- **49802**（NUUAMM《w/ave》）推翻策展層：label 卡單寫 Kilikilivilla，MB／Billboard JAPAN／Discogs 皆為十三月（JSGM-019）；卡單 label 改十三月。年份 2017-06-28 成立（Last.fm 的 9 月不採）。聲音零可靠來源（僅廠方文案：迷幻、夢與現實之間），moodGuess 無法核實；status thin，寫作保守。
+- **49803**（Mindchatter《DREAM SOUP》）身分、廠牌、年份皆對；第二張成立。moodGuess 輕度存疑：來源強調 indie pop 歌曲創作＋電子並重，非純律動舞曲；不為汰卡主因。
+- **49804**（NoSo《Stay Proud of Me》）身分、廠牌、年份皆對；首作成立；Baek Hwong 為非二元，行文避性別代名詞。
+- **49805**（Natural Magic《II》）身分、廠牌、年份皆對（LP 實體可能 3 月）；moodGuess 中度存疑：實為真人鼓＋貝斯的克勞特／太空搖滾即興，非『新世紀感舞曲』；『首作限量百卷卡帶』『JD Twitch 最後參與』查無頁面來源，不寫進 facts。
+- 無建議汰卡；全組五張皆通過身分核實。
