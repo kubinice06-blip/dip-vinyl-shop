@@ -1,0 +1,1072 @@
+{
+ "group": "sf08a",
+ "factions": [
+  {
+   "id": "nordic-indie",
+   "zh": "nordic-indie",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "noise-shoegaze",
+   "zh": "noise-shoegaze",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "indie-folk-it",
+   "zh": "indie-folk-it",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "shoegaze-uk",
+   "zh": "shoegaze-uk",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "90s-alt",
+   "zh": "90s-alt",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "dream-art-pop",
+   "zh": "dream-art-pop",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "folk-us",
+   "zh": "folk-us",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "post-rock-us",
+   "zh": "post-rock-us",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "bedroom-indie",
+   "zh": "bedroom-indie",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "brit-art-pop",
+   "zh": "brit-art-pop",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "post-punk-us",
+   "zh": "post-punk-us",
+   "count": 3,
+   "why": ""
+  },
+  {
+   "id": "fr-indie-pop",
+   "zh": "fr-indie-pop",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "novelty-metal",
+   "zh": "novelty-metal",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "latin-indie",
+   "zh": "latin-indie",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "americana-folk",
+   "zh": "americana-folk",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "hardrock-de",
+   "zh": "hardrock-de",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "uk-indie",
+   "zh": "uk-indie",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "psych-pop",
+   "zh": "psych-pop",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "garage-psych",
+   "zh": "garage-psych",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "psych-folk-us",
+   "zh": "psych-folk-us",
+   "count": 2,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "22-Pistepirkko",
+   "album": "Bare Bone Nest",
+   "year": 1989,
+   "label": "Bone Voyage Recording Company",
+   "country": "fi",
+   "faction": "nordic-indie",
+   "genres": [
+    "rock"
+   ],
+   "why": "芬蘭獨立搖滾代表，車庫與迷幻混血的成熟起點",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.2,
+    "z": 0.2,
+    "why": "粗礪車庫吉他配民謠旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b0a10b7a-7afe-3491-8c1c-ea38918a15ca",
+    "https://coverartarchive.org/release-group/b0a10b7a-7afe-3491-8c1c-ea38918a15ca/front"
+   ],
+   "spotifyName": "22-Pistepirkko",
+   "mbRgMbid": "b0a10b7a-7afe-3491-8c1c-ea38918a15ca",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "22-Pistepirkko",
+   "album": "Eleven",
+   "year": 1998,
+   "label": "Bone Voyage Recording Company",
+   "country": "fi",
+   "faction": "nordic-indie",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "90 年代中期電氣化轉型後的另一高峰，兼具流行旋律",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.3,
+    "z": 0.1,
+    "why": "電子節奏混吉他流行搖滾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d8d8d770-5ad5-3cad-859d-59acccb11cd1",
+    "https://coverartarchive.org/release-group/d8d8d770-5ad5-3cad-859d-59acccb11cd1/front"
+   ],
+   "spotifyName": "22-Pistepirkko",
+   "mbRgMbid": "d8d8d770-5ad5-3cad-859d-59acccb11cd1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "A Place to Bury Strangers",
+   "album": "A Place to Bury Strangers",
+   "year": 2007,
+   "label": "Killer Pimp",
+   "country": "us",
+   "faction": "noise-shoegaze",
+   "genres": [
+    "rock"
+   ],
+   "why": "紐約噪音 shoegaze 新浪潮的處女作，Jesus and Mary Chain 式牆音",
+   "moodGuess": {
+    "x": 4.2,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "失真牆與冷硬鼓機"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9631418e-b511-36e2-b065-34d0c8d77d35",
+    "https://coverartarchive.org/release-group/9631418e-b511-36e2-b065-34d0c8d77d35/front"
+   ],
+   "spotifyName": "A Place To Bury Strangers",
+   "mbRgMbid": "9631418e-b511-36e2-b065-34d0c8d77d35",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "A Place to Bury Strangers",
+   "album": "Exploding Head",
+   "year": 2009,
+   "label": "Mute",
+   "country": "us",
+   "faction": "noise-shoegaze",
+   "genres": [
+    "rock"
+   ],
+   "why": "樂迷與評論公認最高峰，Mute 發行的暴烈噪音搖滾",
+   "moodGuess": {
+    "x": 4.6,
+    "y": 1.4,
+    "z": -1,
+    "why": "震耳失真與迴授噪音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7d2eea0d-eb5b-4308-b833-7af4f69cf6bf",
+    "https://coverartarchive.org/release-group/7d2eea0d-eb5b-4308-b833-7af4f69cf6bf/front"
+   ],
+   "spotifyName": "A Place To Bury Strangers",
+   "mbRgMbid": "7d2eea0d-eb5b-4308-b833-7af4f69cf6bf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Any Other",
+   "album": "Silently. Quietly. Going Away.",
+   "year": 2015,
+   "label": "42 Records",
+   "country": "it",
+   "faction": "indie-folk-it",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "義大利 Adele Nigro 的出道作，獨立圈公認代表",
+   "moodGuess": {
+    "x": 2.4,
+    "y": -0.3,
+    "z": 0.2,
+    "why": "親密吉他獨唱與低調編曲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/463736a5-6c48-4936-8855-266a7fef930f",
+    "https://coverartarchive.org/release-group/463736a5-6c48-4936-8855-266a7fef930f/front"
+   ],
+   "spotifyName": "Any Other",
+   "mbRgMbid": "463736a5-6c48-4936-8855-266a7fef930f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同名者眾，已用 MB IT 樂團釘住"
+  },
+  {
+   "artist": "Any Other",
+   "album": "Two, Geography",
+   "year": 2018,
+   "label": "42 Records",
+   "country": "it",
+   "faction": "indie-folk-it",
+   "genres": [
+    "rock"
+   ],
+   "why": "第二張，編制更豐富、樂評最看重的一張",
+   "moodGuess": {
+    "x": 3.1,
+    "y": 0.1,
+    "z": 0,
+    "why": "帶爵士色彩的獨立搖滾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/827af40b-a0bf-43f3-a8c3-472dfca4b5fa",
+    "https://coverartarchive.org/release-group/827af40b-a0bf-43f3-a8c3-472dfca4b5fa/front"
+   ],
+   "spotifyName": "Any Other",
+   "mbRgMbid": "827af40b-a0bf-43f3-a8c3-472dfca4b5fa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Beachy Head",
+   "album": "Beachy Head",
+   "year": 2021,
+   "label": "",
+   "country": "gb",
+   "faction": "shoegaze-uk",
+   "genres": [
+    "rock"
+   ],
+   "why": "Slowdive 團員 Christian Savill 的專案，唯一正規專輯",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": -0.2,
+    "why": "霧狀吉他層疊的器樂夢幻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/774e7d0b-e2ac-43d8-95e2-e26c73674f40",
+    "https://coverartarchive.org/release-group/774e7d0b-e2ac-43d8-95e2-e26c73674f40/front"
+   ],
+   "spotifyName": "Beachy Head",
+   "mbRgMbid": "774e7d0b-e2ac-43d8-95e2-e26c73674f40",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同名另有 90 年代英國獨立樂團（MB 無發行），採 Savill 版；若 Spotify 實為另一組需剔除；廠牌待確認；label 未核對留空"
+  },
+  {
+   "artist": "Blind Melon",
+   "album": "Blind Melon",
+   "year": 1992,
+   "label": "Capitol",
+   "country": "us",
+   "faction": "90s-alt",
+   "genres": [
+    "rock"
+   ],
+   "why": "《No Rain》所在的出道作，銷量與樂迷公認代表",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.6,
+    "z": 0.7,
+    "why": "溫暖南方搖滾與迷幻吉他"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c606501d-93b9-39a6-bb4c-503233ff7be5",
+    "https://coverartarchive.org/release-group/c606501d-93b9-39a6-bb4c-503233ff7be5/front"
+   ],
+   "spotifyName": "Blind Melon",
+   "mbRgMbid": "c606501d-93b9-39a6-bb4c-503233ff7be5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Blind Melon",
+   "album": "Soup",
+   "year": 1995,
+   "label": "Capitol",
+   "country": "us",
+   "faction": "90s-alt",
+   "genres": [
+    "rock"
+   ],
+   "why": "主唱 Shannon Hoon 生前最後錄音室專輯，評價回升的第二高峰",
+   "moodGuess": {
+    "x": 3,
+    "y": 0.7,
+    "z": 0.1,
+    "why": "更陰沉黏稠的迷幻搖滾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9dba763e-7cff-36b3-af88-b755f237a4c7",
+    "https://coverartarchive.org/release-group/9dba763e-7cff-36b3-af88-b755f237a4c7/front"
+   ],
+   "spotifyName": "Blind Melon",
+   "mbRgMbid": "9dba763e-7cff-36b3-af88-b755f237a4c7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Blonde Redhead",
+   "album": "Misery Is a Butterfly",
+   "year": 2004,
+   "label": "4AD",
+   "country": "us",
+   "faction": "dream-art-pop",
+   "genres": [
+    "rock"
+   ],
+   "why": "4AD 時期代表作，轉向華麗夢幻室內搖滾",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.7,
+    "z": -0.3,
+    "why": "弦樂與朦朧嗓音的低語"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6312daed-1a02-35a0-a8ef-c6addf0336a5",
+    "https://coverartarchive.org/release-group/6312daed-1a02-35a0-a8ef-c6addf0336a5/front"
+   ],
+   "spotifyName": "Blonde Redhead",
+   "mbRgMbid": "6312daed-1a02-35a0-a8ef-c6addf0336a5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Blonde Redhead",
+   "album": "23",
+   "year": 2007,
+   "label": "4AD",
+   "country": "us",
+   "faction": "dream-art-pop",
+   "genres": [
+    "rock"
+   ],
+   "why": "另一高峰，Pitchfork 等樂評讚譽的迷幻 shoegaze 化作品",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 1,
+    "z": -0.4,
+    "why": "厚重失真與飄渺人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/91808703-144d-347e-aade-b2c58a039344",
+    "https://coverartarchive.org/release-group/91808703-144d-347e-aade-b2c58a039344/front"
+   ],
+   "spotifyName": "Blonde Redhead",
+   "mbRgMbid": "91808703-144d-347e-aade-b2c58a039344",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bonny Light Horseman",
+   "album": "Bonny Light Horseman",
+   "year": 2020,
+   "label": "37d03d",
+   "country": "us",
+   "faction": "folk-us",
+   "genres": [
+    "folk"
+   ],
+   "why": "Anaïs Mitchell、Eric D. Johnson、Josh Kaufman 組合的民謠首作",
+   "moodGuess": {
+    "x": 2,
+    "y": -0.5,
+    "z": 0.8,
+    "why": "古老民謠重新編曲，溫暖清亮"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a259fb18-a782-43e6-a40f-7517c85891dd",
+    "https://coverartarchive.org/release-group/a259fb18-a782-43e6-a40f-7517c85891dd/front"
+   ],
+   "spotifyName": "Bonny Light Horseman",
+   "mbRgMbid": "a259fb18-a782-43e6-a40f-7517c85891dd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Cerberus Shoal",
+   "album": "Homb",
+   "year": 1999,
+   "label": "",
+   "country": "us",
+   "faction": "post-rock-us",
+   "genres": [
+    "rock",
+    "experimental"
+   ],
+   "why": "後搖滾與民族實驗的公認代表作",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.8,
+    "z": -0.5,
+    "why": "管弦與鼓的長篇器樂"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/73e778bf-f1b0-39cf-be3d-ae0f7280bff8",
+    "https://coverartarchive.org/release-group/73e778bf-f1b0-39cf-be3d-ae0f7280bff8/front"
+   ],
+   "spotifyName": "Cerberus Shoal",
+   "mbRgMbid": "73e778bf-f1b0-39cf-be3d-ae0f7280bff8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "風格極冷門；類型也可標 experimental；label 未核對留空"
+  },
+  {
+   "artist": "Current Joys",
+   "album": "A Different Age",
+   "year": 2018,
+   "label": "Secretly Canadian",
+   "country": "us",
+   "faction": "bedroom-indie",
+   "genres": [
+    "rock"
+   ],
+   "why": "Nick Rattigan 以 Secretly Canadian 發行的 breakthrough",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 0.1,
+    "z": -0.2,
+    "why": "搖搖晃晃的 lo-fi 抒情搖滾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ebd94a87-9a0a-43e1-abe0-a4a627d0fc0d",
+    "https://coverartarchive.org/release-group/ebd94a87-9a0a-43e1-abe0-a4a627d0fc0d/front"
+   ],
+   "spotifyName": "Current Joys",
+   "mbRgMbid": "ebd94a87-9a0a-43e1-abe0-a4a627d0fc0d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Damon Albarn",
+   "album": "Everyday Robots",
+   "year": 2014,
+   "label": "Parlophone",
+   "country": "gb",
+   "faction": "brit-art-pop",
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "why": "Albarn 首張個人錄音室專輯，評論共識",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.5,
+    "z": -0.3,
+    "why": "低調電子節奏與沉靜自省"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/13060e0f-48d5-4fdf-87be-e53b22dd66d8",
+    "https://coverartarchive.org/release-group/13060e0f-48d5-4fdf-87be-e53b22dd66d8/front"
+   ],
+   "spotifyName": "Damon Albarn",
+   "mbRgMbid": "13060e0f-48d5-4fdf-87be-e53b22dd66d8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Damon Albarn",
+   "album": "The Nearer the Fountain, More Pure the Stream Flows",
+   "year": 2021,
+   "label": "Transgressive",
+   "country": "gb",
+   "faction": "brit-art-pop",
+   "genres": [
+    "pop"
+   ],
+   "why": "受冰島風景啟發的第二張個人專輯，多數樂評視為高峰",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.4,
+    "z": -0.4,
+    "why": "室內管弦與電子氛圍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3c520c71-b005-4ae1-9955-620b0efcb462",
+    "https://coverartarchive.org/release-group/3c520c71-b005-4ae1-9955-620b0efcb462/front"
+   ],
+   "spotifyName": "Damon Albarn",
+   "mbRgMbid": "3c520c71-b005-4ae1-9955-620b0efcb462",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Disappears",
+   "album": "Pre Language",
+   "year": 2012,
+   "label": "Kranky",
+   "country": "us",
+   "faction": "post-punk-us",
+   "genres": [
+    "rock"
+   ],
+   "why": "Chicago 後龐克／迷幻 krautrock 風格的高峰",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.5,
+    "z": -0.9,
+    "why": "重複律動與冷峻吉他"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1cf40ad3-be1e-4b55-a603-cbb263f4f2a9",
+    "https://coverartarchive.org/release-group/1cf40ad3-be1e-4b55-a603-cbb263f4f2a9/front"
+   ],
+   "spotifyName": "Disappears",
+   "mbRgMbid": "1cf40ad3-be1e-4b55-a603-cbb263f4f2a9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Disappears",
+   "album": "Era",
+   "year": 2013,
+   "label": "Kranky",
+   "country": "us",
+   "faction": "post-punk-us",
+   "genres": [
+    "rock"
+   ],
+   "why": "Steve Shelley 加入後的第一張，聲音更緊致",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 0.4,
+    "z": -1,
+    "why": "緊繃鼓點與金屬質吉他"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d64c88e1-b3b6-4b92-9531-6287f23d0b64",
+    "https://coverartarchive.org/release-group/d64c88e1-b3b6-4b92-9531-6287f23d0b64/front"
+   ],
+   "spotifyName": "Disappears",
+   "mbRgMbid": "d64c88e1-b3b6-4b92-9531-6287f23d0b64",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "FACS",
+   "album": "Present Tense",
+   "year": 2021,
+   "label": "Trouble in Mind",
+   "country": "us",
+   "faction": "post-punk-us",
+   "genres": [
+    "rock"
+   ],
+   "why": "Chicago 三人後龐克樂團，評論盛讚的代表作",
+   "moodGuess": {
+    "x": 3,
+    "y": 0.4,
+    "z": -1,
+    "why": "乾瘦節奏與冷調吉他"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2ac4280c-da30-48d1-9608-9f1945efca97",
+    "https://coverartarchive.org/release-group/2ac4280c-da30-48d1-9608-9f1945efca97/front"
+   ],
+   "spotifyName": "FACS",
+   "mbRgMbid": "2ac4280c-da30-48d1-9608-9f1945efca97",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Frànçois & The Atlas Mountains",
+   "album": "Plaine inondable",
+   "year": 2009,
+   "label": "Domino",
+   "country": "fr",
+   "faction": "fr-indie-pop",
+   "genres": [
+    "pop",
+    "folk"
+   ],
+   "why": "法國獨立流行民謠的代表出道，Domino 發行",
+   "moodGuess": {
+    "x": 2.8,
+    "y": -0.3,
+    "z": 0.6,
+    "why": "輕盈吉他與法語低唱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3af9b4aa-2a4c-43a7-a25b-ca7ba4016dd0",
+    "https://coverartarchive.org/release-group/3af9b4aa-2a4c-43a7-a25b-ca7ba4016dd0/front"
+   ],
+   "spotifyName": "Frànçois & The Atlas Mountains",
+   "mbRgMbid": "3af9b4aa-2a4c-43a7-a25b-ca7ba4016dd0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 年份 2009，Domino 版為 2011 年左右，年份需核對"
+  },
+  {
+   "artist": "Frànçois & The Atlas Mountains",
+   "album": "Piano ombre",
+   "year": 2014,
+   "label": "Domino",
+   "country": "fr",
+   "faction": "fr-indie-pop",
+   "genres": [
+    "pop"
+   ],
+   "why": "Domino 時期成熟之作，節奏與旋律更精緻",
+   "moodGuess": {
+    "x": 3.1,
+    "y": -0.1,
+    "z": 0.4,
+    "why": "明亮鍵盤與律動的法語流行"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f19f9c10-c511-4778-8c23-b0ba28624d9f",
+    "https://coverartarchive.org/release-group/f19f9c10-c511-4778-8c23-b0ba28624d9f/front"
+   ],
+   "spotifyName": "Frànçois & The Atlas Mountains",
+   "mbRgMbid": "f19f9c10-c511-4778-8c23-b0ba28624d9f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Green Jelly",
+   "album": "Cereal Killer Soundtrack",
+   "year": 1992,
+   "label": "Zoo Entertainment",
+   "country": "us",
+   "faction": "novelty-metal",
+   "genres": [
+    "rock"
+   ],
+   "why": "《Three Little Pigs》所在的代表作",
+   "moodGuess": {
+    "x": 4,
+    "y": 0.6,
+    "z": 0.5,
+    "why": "惡搞金屬與喜劇吉他"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/eb492871-bc4d-3fd3-9929-c39cb6bcb034",
+    "https://coverartarchive.org/release-group/eb492871-bc4d-3fd3-9929-c39cb6bcb034/front"
+   ],
+   "spotifyName": "Green Jelly",
+   "mbRgMbid": "eb492871-bc4d-3fd3-9929-c39cb6bcb034",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 有兩個 RG（Cereal Killer / Soundtrack），採 Soundtrack"
+  },
+  {
+   "artist": "Helado Tropical",
+   "album": "Helado Tropical",
+   "year": 2026,
+   "label": "",
+   "country": "us",
+   "faction": "latin-indie",
+   "genres": [
+    "world",
+    "electronic"
+   ],
+   "why": "Helado Negro 與 Reyna Tropical 合作專案的專輯",
+   "moodGuess": {
+    "x": 2.6,
+    "y": -0.1,
+    "z": 0.5,
+    "why": "熱帶節奏與柔和電子"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f393ea4d-e8af-4e8f-93b0-7b86e84c15a5",
+    "https://coverartarchive.org/release-group/f393ea4d-e8af-4e8f-93b0-7b86e84c15a5/front"
+   ],
+   "spotifyName": "Helado Tropical",
+   "mbRgMbid": "f393ea4d-e8af-4e8f-93b0-7b86e84c15a5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "2026-07 才發行，未能核對評論；廠牌空；Spotify 是否為此組待證"
+  },
+  {
+   "artist": "Jolie Holland",
+   "album": "Catalpa",
+   "year": 2003,
+   "label": "Anti-",
+   "country": "us",
+   "faction": "americana-folk",
+   "genres": [
+    "folk",
+    "blues"
+   ],
+   "why": "Anti- 發行的出道專輯，被視為其代表作",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.2,
+    "z": 0.6,
+    "why": "老式藍調民謠與沙啞嗓音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/50269b5e-be92-3756-b305-bd1bbbcc7b5c",
+    "https://coverartarchive.org/release-group/50269b5e-be92-3756-b305-bd1bbbcc7b5c/front"
+   ],
+   "spotifyName": "Jolie Holland",
+   "mbRgMbid": "50269b5e-be92-3756-b305-bd1bbbcc7b5c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jolie Holland",
+   "album": "Escondida",
+   "year": 2004,
+   "label": "Anti-",
+   "country": "us",
+   "faction": "americana-folk",
+   "genres": [
+    "folk"
+   ],
+   "why": "第二張，風格更成熟的爵士藍調民謠",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.2,
+    "z": 0.5,
+    "why": "低吟爵士民謠"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cb2a8a79-5501-3b3b-a814-ea509aa00172",
+    "https://coverartarchive.org/release-group/cb2a8a79-5501-3b3b-a814-ea509aa00172/front"
+   ],
+   "spotifyName": "Jolie Holland",
+   "mbRgMbid": "cb2a8a79-5501-3b3b-a814-ea509aa00172",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kissin' Dynamite",
+   "album": "Megalomania",
+   "year": 2014,
+   "label": "AFM Records",
+   "country": "de",
+   "faction": "hardrock-de",
+   "genres": [
+    "rock"
+   ],
+   "why": "德國硬搖滾最具代表的專輯，登上德國榜前列",
+   "moodGuess": {
+    "x": 4,
+    "y": 0.7,
+    "z": 0.5,
+    "why": "高亢主音與大合唱硬搖滾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/94bebb65-4ebf-4a8e-823b-a3d6d719b252",
+    "https://coverartarchive.org/release-group/94bebb65-4ebf-4a8e-823b-a3d6d719b252/front"
+   ],
+   "spotifyName": "Kissin' Dynamite",
+   "mbRgMbid": "94bebb65-4ebf-4a8e-823b-a3d6d719b252",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Loose Meat",
+   "album": "Loose Meat",
+   "year": 2016,
+   "label": "",
+   "country": "gb",
+   "faction": "uk-indie",
+   "genres": [
+    "rock"
+   ],
+   "why": "英國獨立樂團唯一長篇專輯",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.4,
+    "z": -0.2,
+    "why": "粗粝吉他搖滾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cac0cdc1-a945-405d-8772-6f8a3544c622",
+    "https://coverartarchive.org/release-group/cac0cdc1-a945-405d-8772-6f8a3544c622/front"
+   ],
+   "spotifyName": "Loose Meat",
+   "mbRgMbid": "cac0cdc1-a945-405d-8772-6f8a3544c622",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "資料稀少，廠牌空，年份依 MB；疑為英國 Loose Meat，須人工確認；label 未核對留空"
+  },
+  {
+   "artist": "Melody's Echo Chamber",
+   "album": "Melody's Echo Chamber",
+   "year": 2012,
+   "label": "Fat Possum",
+   "country": "fr",
+   "faction": "psych-pop",
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "why": "Kevin Parker 製作的迷幻夢幻流行首作",
+   "moodGuess": {
+    "x": 3,
+    "y": 0.2,
+    "z": 0.4,
+    "why": "迷幻吉他與飄渺法英人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9478c2ff-9da4-475d-b35c-3eb1788b1ad2",
+    "https://coverartarchive.org/release-group/9478c2ff-9da4-475d-b35c-3eb1788b1ad2/front"
+   ],
+   "spotifyName": "Melody's Echo Chamber",
+   "mbRgMbid": "9478c2ff-9da4-475d-b35c-3eb1788b1ad2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Melody's Echo Chamber",
+   "album": "Bon Voyage",
+   "year": 2018,
+   "label": "Domino",
+   "country": "fr",
+   "faction": "psych-pop",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "六年後歸來的第二張，樂評視為更大膽的高峰",
+   "moodGuess": {
+    "x": 3,
+    "y": 0.3,
+    "z": 0.2,
+    "why": "多語言迷幻流行"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6f48aa2f-9b8b-4bd5-8a55-5631896e8289",
+    "https://coverartarchive.org/release-group/6f48aa2f-9b8b-4bd5-8a55-5631896e8289/front"
+   ],
+   "spotifyName": "Melody's Echo Chamber",
+   "mbRgMbid": "6f48aa2f-9b8b-4bd5-8a55-5631896e8289",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Modey Lemon",
+   "album": "Thunder + Lightning",
+   "year": 2003,
+   "label": "",
+   "country": "us",
+   "faction": "garage-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "匹茲堡車庫迷幻搖滾，Fat Possum 出道作",
+   "moodGuess": {
+    "x": 4,
+    "y": 0.7,
+    "z": -0.2,
+    "why": "失真管風琴與狂暴鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a31031f4-3d94-343d-b47c-252b34650d50",
+    "https://coverartarchive.org/release-group/a31031f4-3d94-343d-b47c-252b34650d50/front"
+   ],
+   "spotifyName": "Modey Lemon",
+   "mbRgMbid": "a31031f4-3d94-343d-b47c-252b34650d50",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "廠牌待核對；label 未核對留空"
+  },
+  {
+   "artist": "MV & EE",
+   "album": "Gettin' Gone",
+   "year": 2007,
+   "label": "",
+   "country": "us",
+   "faction": "psych-folk-us",
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "why": "Matt Valentine 與 Erika Elder 的迷幻民謠，代表性專輯之一",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.4,
+    "z": 0.1,
+    "why": "漂浮的民謠迷幻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bba50cfe-4618-3af3-9cfa-28edde6a3db0",
+    "https://coverartarchive.org/release-group/bba50cfe-4618-3af3-9cfa-28edde6a3db0/front"
+   ],
+   "spotifyName": "MV & EE",
+   "mbRgMbid": "bba50cfe-4618-3af3-9cfa-28edde6a3db0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "作品極多，代表作選擇主觀；label 未核對留空"
+  },
+  {
+   "artist": "MV & EE",
+   "album": "Space Homestead",
+   "year": 2012,
+   "label": "",
+   "country": "us",
+   "faction": "psych-folk-us",
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "why": "另一個受推崇的專輯",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.5,
+    "z": 0,
+    "why": "漂浮的迷幻民謠"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/be68b92d-51aa-456f-b90d-291012b2cf5a",
+    "https://coverartarchive.org/release-group/be68b92d-51aa-456f-b90d-291012b2cf5a/front"
+   ],
+   "spotifyName": "MV & EE",
+   "mbRgMbid": "be68b92d-51aa-456f-b90d-291012b2cf5a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "作品極多，代表作選擇主觀；label 未核對留空"
+  }
+ ],
+ "notes": [
+  "跳過：（無）— 21 位在池中均無對應藝人（Damon Albarn 池中僅 Gorillaz／Blur，個人名義無卡；'Damon' 為他組）",
+  "身分：Spotify 名 Frànçois & The Atlas Mountains 在 MB 為 Frànçois & the Atlas Mountains。",
+  "Loose Meat／Beachy Head／Helado Tropical 同名或資料稀少，見各張 uncertain。",
+  "label 留空者（Beachy Head／Cerberus Shoal／Modey Lemon／MV & EE／Loose Meat／Helado Tropical）待上架時以 MB/Discogs 補。"
+ ]
+}
