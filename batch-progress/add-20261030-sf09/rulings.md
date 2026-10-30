@@ -45,3 +45,36 @@
 - 41846：Fresh Moods《Fresh Moods》確認是 Peter Haubfleisch 個人計畫、非廠牌帳號，Elektrolux E 1101 CD、1997 對得上；人物生平只有 Discogs 藝人簡介單一來源，聲音僅有風格標籤（Future Jazz／Downtempo）與曲名，無獨立樂評。
 - 41847：uKanDanZ《Yetchalal》身分、2012 年、Buda Musique 860230 對得上；本張編制未列貝斯手（Discogs），不寫低音歸屬。樂團成軍年只有 2010 駐地一筆，不寫成軍年。
 - 41848：WebSearch 用 3 次（uKanDanZ、Assagai、Spiral Deluxe）；AllMusic／progarchives／Discogs 網頁多為 403，改走 Discogs／MB API。miharukoshi.com 不在網路白名單。swing slow 與 Graciela Susana 因此未用搜尋，來源偏薄。
+
+## 研究 a 組
+- 41801：Bill Bruford's Earthworks《Earthworks》身分、1987、Editions EG（MB 寫 E'G）對得上；聲音（原音鼓加 Simmons 電子鼓、Dave Stewart 低音合成器與取樣）來自維基樂團頁與 Discogs 版本備註，沒取得樂評；專輯維基頁 404。
+- 41802：Bobo Stenson Trio《Cantando》ECM 2023，2007-12 盧加諾錄音、2008-08 發行，確認。鼓手是 Jon Fält（與《Serenity》的 Christensen 不同）。keyTracks 只放〈Pages〉。
+- 41803：Bobo Stenson Trio《Serenity》ECM 1740/41，2000-06-05。**推翻維基**：錄音地是瑞典 Brunskog 的 HageGården（ECM 官方頁與 ECM Reviews），不是奧斯陸 Rainbow。「Christensen 最後錄音」只見搜尋摘要，不寫。
+- 41804：Daniel Ponce《Arawe》LP 1987（Antilles New Directions 90631-1），確認 1987，推翻 Discogs master 的 1988（取自最早 CD）與英文維基的 1983（誤植）。Discogs master 1515704 是兩首的宣傳 12 吋，不是專輯，封面別取。樂手名單 D'Rivera／Puente 等只有 Shuga 商品頁單一來源，已在 facts 標出處。
+- 41805：David Becker Tribune《Siberian Express》**推翻策展層兩處**：樂團是美國團（洛杉磯，兄弟 David／Bruce Becker；移居德國是日後事），本張是第二張（首作是 1986《Long Peter Madsen》，MCA）。R&R 第 3 名單一來源，不建議當賣點；封面原版請取 1988 Discogs 版（Apple 為 2025 再版封面）。
+- 41806：Hal Galper《Reach Out!》身分對得上；卡掛 Hal Galper，Discogs／維基掛 Hal Galper Quintet，同一張。錄音 1976-11-11、SteepleChase SCS 1067、Brecker 兄弟在列。錄音室兩源皆未寫，不寫地點。
+- 41807：Jacques Loussier《Play Bach No. 1》1959 Decca（法國 SSL 40.500），採 1959；Discogs master 147825 寫 1962，與 MB、維基、IAJO 衝突不採。600 萬張銷量是 1973 年後三重奏整體，不歸本張。
+- 41808：John Surman《Road to Saint Ives》ECM 1418，1990-04 Rainbow Studio Oslo、1990-09-01 發行，確認 1990。**存疑**：所有一手來源只寫 keyboards，沒有 synthesizer；樂評也否認它是聖艾夫斯寫景。moodGuess 的意象存疑（不影響收卡）；y 0.6 可能略高，因無鼓組、節奏稀疏。
+- 41809：本組 WebSearch 用了 6 次（超過每支 3 次的上限，原因是 Ponce、Becker、Serenity、Loussier 身分與年份需交叉驗證）；AllMusic、jazzmusicarchives、WKCR、Discogs 網頁 403，改走 Discogs／MB API 與 ECM 官方頁。
+
+## 研究 c 組
+- 41821：New Klezmer Trio《Melt Zonk Rewire》**推翻策展層兩處**：(1) label 是 Tzadik（TZ 7103，1995，Radical Jewish Culture 系列最初六張之一），不是 Knitting Factory Works；(2) 這是第二張，不是首作（首作《Masks and Faces》1991 Nine Winds NWCD 0144，1996 Tzadik 重發）。錄音日期維基（1995）與 AllMusic 搜尋摘要（1993-04）衝突，未寫。
+- 41822：Michel Sardaby《Night Cap》身分對得上，原廠牌 Disques Debs HDD 522（1970-10-30 巴黎錄音），英文維基寫 Sound Hills 是 1993 日本再版廠牌。首作與否各源衝突（法文維基：首作是 1969 Président《Five Cat's Blues》），寫作層勿稱首作。無樂評，標 thin。
+- 41823：Moses Yoofee Trio《MYT》**推翻策展層**：國別是德國（柏林成立，Moses 1999 年生於柏林），不是以色列，卡單 country 請改 de。MB 現已有 RG（2025-02-07），可由 manual 改 pinned。確為首張完整專輯（之前只有 2023《Ocean》EP）。2024 Deutscher Jazzpreis「Liveact des Jahres」與德國榜第 72 名為德文維基單源。
+- 41824：Nils Landgren Funk Unit《Paint It Blue》完整盤名帶副題「A Tribute To Cannonball Adderley」，是致敬專輯；Brecker 兄弟、Bernard Purdie、Airto 客席，Esbjörn Svensson 彈鍵盤。1997 德國爵士獎單源（英文維基）。
+- 41825：Nils Landgren Funk Unit《Fonk da World》身分對得上（ACT 9299-2，英文維基 List of ACT albums 的 9400-0 衝突不採）；Esbjörn Svensson 製作、2001-06 斯德哥爾摩 Nord Studio 3 錄音。
+- 41826：Slowly Rolling Camera《Juniper》label 空白已補為 Edition Records（EDN1115）；非純三重奏（核心三人＋六位以上客席）。Bandcamp 稱第三張專輯，MB 算法不同，facts 以「簡介稱」呈現。
+- 41827：The Greg Foat Group《Girl and Robot With Flowers》label 確認 Jazzman（JMANCD 054），MB 與 Discogs 日期差三天（數位／CD），只寫 2012 年底；哥特堡 Kungsten Studios 兩段錄音。curatorWhy「口碑最高」無來源，不寫。
+- 41828：The Greg Foat Group《Dark Is the Sun》首作成立（Foat 官網作品清單由此起算），label 確認 Jazzman（Gerald Short 執行製作）。MB 與 Discogs 第 6 首 Part 3／Part 4 不同，取 Discogs。moodGuess z 可能偏暖，輕度存疑。
+- 41829：本組 WebSearch 用 3 次（NKT、Sardaby、Moses Yoofee），其餘走 MB／Discogs API 與 WebFetch；AllMusic、jazzmusicarchives、Discogs 網頁、Vinyl Factory 皆 403，故 Sardaby、Landgren 兩張無樂評，聲音一句以編制與風格標籤推得。
+
+## 研究 d 組（41831–41840）
+- **41831**（McDole）：curatorWhy 說他是「Thelonious Monk 比賽得主」不對——他是 2023 年 11 月 Sarah Vaughan 國際爵士人聲大賽冠軍。零售上市 2025-06-06（Discogs 2024 是宣傳 CDr）。卡單 label 空，補 Artwork Records。年齡來源 24／25 兩說，不寫。
+- **41832**（Foat／Votskos／Pappas Trio）：label 查到 Blue Crystal Records（BCRLP011），卡單補。樂手分工（duduk 誰吹）各來源互相矛盾，facts 只寫「Pappas Trio 帶 duduk 與 oud」；Pappas Trio 成員無法獨立驗證，照廠方頁掛名。status thin。
+- **41833**（Yttling Jazz）：原版廠牌是 Headspin Recordings（HEAD 004，2005），卡單 label「INGRID」是 2014 再版廠牌，應改；年份 2005 正確。moodGuess 存疑：「電子節拍」偏電子，實際是原聲爵士樂團（鼓、低音大提琴、木管）＋少量 Solina／Omnichord，偏搖滾律動。
+- **41834**（高木元輝）：身分 §1 人工成立（Discogs master 512067，Interval ILP 101，1975，限量 300 張，錄於 1975-03-28 北九州 Jazz Street 52）；BnF 目錄為第二來源。簧管類型未明（Discogs reeds／BnF saxo），不寫次中音；Jazz Street 52 不寫成咖啡館。聲音事實僅依編制與風格，無評論來源。status thin。
+- **41835**（濱瀬元彦）：卡單 1986 Shi Zen 原盤正確；**2018 Studio Mule 版是重新錄製、曲目不同（7 首）**，不是再版，Spotify 上多半是這一版。寫作層以原盤為主，提 2018 要明講是另一次錄音。原盤樂手與樂器查不到，moodGuess 的「合成器」無法證實。status thin。
+- **41836**（中村一義）：label 補 Mercury Music Entertainment（PHCL-5055）。moodGuess 存疑：「披頭四式」查無一手來源（ja 維基只提 Creation 時期英國音樂），簡介不要寫披頭四比擬。Oricon 第 10 名等只出自日文維基 stub 條目，淡化。
+- **41837**（Nameless）：curatorWhy 的「Juno 提名」查無證實；Juno 是 2020（《Stay Tuned!》）與 2024（《Our Roots Run Deep》）。highresaudio 稱「第二張」與維基「首張」矛盾，採完整長度首作（2015 有 EP）。La Voix 年份 2015／2017 兩說，不寫。
+- **41838**（Three Little Words）：curatorWhy 的「獲 Juno 獎」不成立，這張只有 2021 Polaris shortlist；靈魂／R&B 取向，爵士取向是第二張。moodGuess 存疑：節奏比 Nameless 有勁（打擊、銅管、合成器），y 可能偏低。
+- 無須汰卡；唯一建議關注：Foat 一張（41832）樂手分工與署名只能廠方頁為準。
