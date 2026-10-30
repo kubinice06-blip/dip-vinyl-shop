@@ -1011,3 +1011,53 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 ## ts1–ts11 補介紹（ar-d-129～130）小結
 
 - 80 位排入 2 批，79 位上架（61 full、18 thin）、1 位不寫；藝人介紹 6,098 → 6,177。審稿合計修 13 位。ar-d-131～134 留給下一個工作階段。
+
+## ar-d-205（2026-10-30，Spotify 補卡 sf05 補介紹：台灣華語流行、R&B、獨立樂團）
+
+- 20 位 → 17 位上架（7 full、10 thin），3 位不寫：頭部組成者（只有「台北四人器樂 stoner rock 團」一條單源，寫不出聲音）、吳書齊（三格全空，搜尋查無此人）、狗毛（只有幕後助理製作的冷資訊）。補洞 WebSearch 每位 ≤2 次。
+- 名冊：主名冊 `roster-20260929.json` 是單行 JSON，並行工作階段一起改必撞，改成 `artist-extract.mjs`／`artist-alias.mjs`／`scripts/build-artist-intros.mjs` 一併讀 `roster-sf*.json` 這類補充名冊（主名冊優先），不再把新藝人併進主名冊。
+- 主線審稿修 2 位：宝島材料行原稿只有 Blow 一源，主線補 vocus 報導（2023-10，主唱威廉、合成器／鍵盤 Dimi、台語、2020 年底成團）為第二源，正文不動；聲子蟲「toe 與 mouse on the keys 來台都由他們開場」只有樂團 Bandcamp 自述，改「據樂團自述」。
+- 保留：徐佳瑩「第一位拿下金曲獎的星光大道選手」（中文維基＋鏡週刊兩源）；潮州土狗「金音最佳嘻哈歌曲史上最年輕入圍」（補洞稿兩源）；YELLOW黃宣第 30 屆金曲最佳單曲製作人（與余佳倫）、第 12 屆金音最佳創作歌手；絕命青年第 34 屆金曲最佳演唱組合只寫入圍；Yo-Sea 照實寫成沖繩出身的日本歌手（卡池歸在台灣批，但身分是日本人）。
+- 不寫：王心凌代言費與熱搜數字；Karencici 金曲新人入圍（英文維基單源）；陳穎達金音得獎（只有募資頁單源）；YELLOW〈後現代獨白〉金音、典禮播錯影片；荒山茉莉「十大新團」；非／密閉空間成立年與成員本名。
+- 已上線專輯簡介待修（pubIssues）：吳書齊《鹿港》作曲名單與編制未能複核。
+
+## ar-d-207（2026-10-30，Spotify 補卡 sf07 補介紹：西洋 60–80 迷幻、prog、硬搖滾、krautrock、post-punk）
+
+- 32 位全上架（23 full、9 thin：Atomic Rooster、High Tide、Khan、Affinity、Nine Days' Wonder、Tully、Zaratustra、Martin & Garp、Slow Dancer），0 位不寫。補洞 WebSearch 每位 ≤2 次。
+- 主線審稿修 7 位：Atomic Rooster「沒有專職貝斯手、吉他手兼主唱」只對 John Du Cann 那一期成立（首張有貝斯手 Nick Graham），改寫成「最知名的一期是三人編制」並壓回 thin 159 字；Jade Warrior 的 Brian Eno 評語單源，改「據說」；Ikarus 刪「德國最早的前衛爵士搖滾專輯之一」（部落格級來源）；The Jazz Butcher 刪「北安普頓 1980 年代最有影響力的人物之一」（單源、意思含糊）；Martin & Garp 原稿只有廠牌零售頁一源，主線補樂團 Bandcamp 為第二源，且零售頁稱五人團，「二人組」改「以 Phil Martin 與 Lo van Gorp 為核心的計畫」；Tully 只有英文維基一源，主線補 Chapter Music 樂團頁（1968 年末成軍、雪梨《Hair》駐團、Carlos 的風琴與 Moog）為第二源；Mike Ratledge 補 Stereogum 訃聞為辭世第二源。
+- 截止日後事實：Mike Ratledge 2025-02-05 辭世、享年 81 歲，主線 WebSearch 核實（Stereogum、Ultimate Classic Rock、Canterbury Scene）。
+- 身分：Zaratustra 不是樂團，是 Jodorowsky 1970 年墨西哥城舞台劇的原聲（照劇作寫，演奏者 Las Damas Chinas 只寫「據電台節目介紹」）；維基預抓錯頁作廢：Black Widow（漫畫角色）、Ikarus（匈牙利巴士公司）、Affinity（軟體）、Tully（人名頁）、Martin & Garp（蘇格蘭作家）、Slow Dancer（Boz Scaggs 專輯）、Willie West（美式足球員）。
+- 保留：Paul Kossoff 1976 年航班上過世、得年 25（死因不寫）；Paul Davis〈I Go Crazy〉Hot 100 40 週為當時紀錄（份量核心）；The Sugarcubes《Life's Too Good》「第一張在全球造成影響的冰島專輯」；Eyeless in Gaza 的 Björk 具名評語；Cosmic Jokers「space rock 的首要範例」（維基首段）。
+- 不寫：Frijid Pink「第一個進 Top 10 的底特律團」、Atomic Rooster「Crane 是唯一不變的成員」、Tully「澳洲第一支現場用 Moog 的樂團」、Las Damas Chinas「墨西哥第一支自由爵士樂團」（序數單源）；Kossoff 雜誌百大名次；Bloodrock 解散年（兩源不一）；Sun City Girls 成軍年（三說）；Alma Cogan 癌別（兩說，只寫癌症）。
+- 已上線專輯簡介待修（pubIssues 7 條）：Frijid Pink 電台人士職稱、Gravy Train「在英國前衛圈很少見」與首作年、WCPAEB「Markley 是律師」、Cosmic Jokers「老闆是 Dierks」（應為 Kaiser）、Tully「第一支現場用 Moog」寫成定論。
+
+## ar-d-201（2026-10-30，Spotify 補卡 sf01＝店主收藏 38 張的藝人）
+
+- 名冊：`roster-sf01.json`、`roster-sf02.json` 60 位併入主名冊 `roster-20260929.json`（腳本冪等，略過已在的鍵；併入後 8,676 位）。
+- 30 位排入，29 位上架（11 full、18 thin），1 位不寫：烏賊紳士（來源只有 StreetVoice 與博客來商品頁，「聲音」只剩一句通路分類標籤，主體是成員與錄音室名單，未達 thin 門檻；比照 ar-d-125 jinsang、ar-d-130 Noori）。
+- 主線審稿修 4 位：
+  - 張震嶽：刪「縱貫線擔任鼓手巡演一年」（只有英文維基一源，WebSearch 查無佐證）；**截止日後事實**補 2026 年第 37 屆金曲獎以《跟著感覺走》獲最佳華語男歌手與最佳華語專輯（WebSearch：換日線、Marie Claire、TVBS 等多家，頒獎 2026-06-27）；作曲人獎曲名搜尋摘要不全，不寫。為壓字數刪唱詩班、兄弟本色兩句，238 字。
+  - 蕭亞軒：刪「2001 年世界音樂獎全球年度銷售最佳華語歌手」（WebSearch 只有 Marie Claire 一家與其轉載，單源獎項）。
+  - Juzzy Orange & GoodieK：刪成軍年 2009（Last.fm 用戶百科單源）。
+  - 宮沢明子：主線補第二源（一橋大學典藏《保險毎日新聞》專欄 PDF：鋼琴家、4 月 23 日辭世、Bach／Haydn／Mozart 錄音），正文不寫生卒年與比賽名次，照留。
+- 保留：人間椅子 278 字（拒換主唱、靠打工撐團是故事核心，放寬額度）；Bent Fabric〈Alley Cat〉Hot 100 第 7 名與葛萊美（已故，兩源）；Drive Like Jehu 主唱 Froberg 2023 年辭世（OPB＋維基）；Mangelsdorff「據說用香菸換來第一支長號」。
+- 不寫：RH Factor 的 DownBeat 名人堂（美國樂手規則）、Mangelsdorff 的 DownBeat／Melody Maker 票選與「第一張銅管獨奏專輯」、冠宇死因（只寫病逝）、Derya Yıldırım 出生年（1990／1993 兩說）、McLaughlin 2018 葛萊美與名人堂（單源）、İdil Biret 銷量與「第一位」。
+- 身分：Dome 維基預抓是建築條目，改用 Dome (band)；GRASS VALLEY（202）預抓是電視設備公司，作廢。
+
+## ar-d-202（2026-10-30，Spotify 補卡 sf02＝日本搖滾／獨立／流行／偶像／金屬）
+
+- 30 位排入，26 位上架（14 full、12 thin），4 位不寫：ないあがらせっと、ヨシンバ、ピューパ!!、THE 天国畑 JAPON（補洞三格皆 none，只剩發行資訊或一句維基，未達 thin 門檻）。
+- 主線審稿修 5 位：
+  - 中学生棺桶：刪「《矛先についたガム》是解散前最後一張、2022 年全新成員重啟」（成員異動、日文維基單源）；主線補 Last.fm 活動頁為第二源（punk 寄りの doom rock），106 字照留。
+  - 比屋定篤子：刪生年 1971（只有英日維基同家族）。
+  - DIR EN GREY：刪「柏林、巴黎專場未經宣傳即告售罄」（單源），改「開專場」。
+  - Thee Michelle Gun Elephant：刪「成軍成員只有チバ留到最後」（成員異動未見兩源）；後藤正文受影響改「據說」口氣（日文維基單源）。アベフトシ 2009、チバユウスケ 2023 只寫辭世年。
+  - GREENMACHiNE：「2018 年赴歐洲、隔年台灣」改「曾赴歐洲與台灣巡演」（年份日文維基單源）。
+- 保留：ジョー山中 272 字（混血、喪母、修車廠、拳擊出道的身世是主體，放寬額度）；Wink 1989 日本唱片大獎大賞與紅白、爆風スランプ〈Runner〉與紅白（份量核心，已核）；GRASS VALLEY 的 yukihiro 具名說法（Sony 官方頁）。
+- 不寫：OGRE YOU ASSHOLE 的 Johnny Marr 讚賞、Wink 與 Perfume 編舞之說（無出處）、姫神日本唱片大賞兩項（日文維基單源）、静香「唯一一張錄音室專輯」、NTsKi 榜單名次、各團 Oricon 名次與銷量。
+- きのこ帝国 QA「簡體字 国」為日文原字誤判，保留。
+- pubIssues：DIR EN GREY「芬蘭榜第一組非歐美藝人」、Wink「優勝者」應為入賞、COHOL「神奈川」應為東京據點、静香的吉他主奏是三浦マキ。
+
+## Spotify 補卡 sf01／sf02 補介紹（ar-d-201～202）小結
+
+- 60 位排入 2 批，55 位上架（25 full、30 thin）、5 位不寫；審稿合計修 9 位。截止日後事實：張震嶽 2026 第 37 屆金曲獎（WebSearch 核實）。

@@ -1,5 +1,23 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-30｜dip-vinyl-shop｜藝人介紹 ar-d-205（sf05 台灣華語）＋ar-d-207（sf07 西洋 60–80）上架 49 位
+
+- **ar-d-205**：20 位 → 上架 17（7 full、10 thin），skipped 3（頭部組成者、吳書齊、狗毛：素材不到 thin 門檻）。審稿修 2 位（宝島材料行補 vocus 第二源、聲子蟲開場句改樂團自述口氣）。
+- **ar-d-207**：32 位全上架（23 full、9 thin）。審稿修 7 位（Atomic Rooster 編制句、Jade Warrior Eno 評語、Ikarus、Jazz Butcher、Martin & Garp 去「二人組」；Tully、Martin & Garp、Ratledge 補第二源）；Ratledge 2025 辭世以 WebSearch 核實。Zaratustra 照實寫成 Jodorowsky 舞台劇原聲。
+- **名冊**：不再把新藝人併進單行主名冊 `roster-20260929.json`（並行必撞）；`artist-extract.mjs`、`artist-alias.mjs`、`scripts/build-artist-intros.mjs` 改為一併讀 `roster-sf*.json` 這類補充名冊（主名冊優先）。ar-d-201／202／209／210 可直接用。
+- 藝人介紹 6,177 → 6,226（併 main 的 ar-d-201／202 後 6,281）；pubIssues 新增 8 條（ARTIST-PUB-ISSUES.md）。
+- **主要檔案**：`desc-tools/batches/artist/{facts,research,output}/ar-d-20{5,7}-*`、`progress.json`、`data/artist-intros/*`、`audits/ARTIST-PUB-ISSUES.md`、`batch-progress/artist-intro/ar-c-rulings.md`、`batch-progress/spotify-follow-20261030/PLAN.md`、上述三支腳本。
+- **驗證**：qa-artist gap／out 兩批皆 0 處；build-artist-intros 併 main 後重跑：334 份成品、6,281 位、64 分片。
+
+### 2026-10-30｜dip-vinyl-shop｜藝人介紹 ar-d-201／202 上線（Spotify 補卡 sf01＋sf02，55 位）
+
+- **改動**：照 `dip-artist-intro` skill 跑完兩批（萃取 --lean、維基預抓、補洞 6 組 Sonnet、寫作 4 組 Opus、qa-artist、主線逐位審稿、alias、issues、建分片）。
+  - **ar-d-201**（sf01 店主收藏）：30 位 → 上線 29（11 full、18 thin）、skipped 1（烏賊紳士，素材未達 thin 門檻）。審稿修 4 位：張震嶽刪「縱貫線鼓手」單源句、補 2026 第 37 屆金曲歌王＋最佳華語專輯（WebSearch 核實）；蕭亞軒刪世界音樂獎（單源）；Juzzy Orange 刪成軍年；宮沢明子補第二源。
+  - **ar-d-202**（sf02 日本）：30 位 → 上線 26（14 full、12 thin）、skipped 4（ないあがらせっと、ヨシンバ、ピューパ!!、THE 天国畑 JAPON，三格皆無素材）。審稿修 5 位（單源的成員異動、生年、售罄、巡演年份）。
+  - 名冊：`roster-sf01.json`、`roster-sf02.json` 60 位併入主名冊 `roster-20260929.json`（8,676 位）。藝人介紹 6,177+ → 6,232 位。
+- **主要檔案**：`batch-progress/artist-intro/{roster-20260929.json,ar-c-rulings.md}`、`desc-tools/batches/artist/{progress.json,facts,research,output}/ar-d-20{1,2}*`、`data/artist-intros/*`、`audits/ARTIST-PUB-ISSUES.md`、`batch-progress/spotify-follow-20261030/PLAN.md`。
+- **驗證**：qa-artist gap／out 兩批 0 處（僅剩 skipped 的「缺 N 位」與きのこ帝国「国」日文原字誤判）；`build-artist-intros.mjs` 330 份成品、64 分片。
+
 ### 2026-10-30｜dip-vinyl-shop｜Spotify 追蹤藝人補卡池 sf01＋sf02 上線（81 張）
 
 - **sf01（favoriteAlbums 指定盤）**：38 張收 36（跳過 1：椎名林檎《無罪モラトリアム》池中已有；不收 1：Vayda 查無此盤）。試聽 ready 31／unavailable 5；頂點 0；主線審稿改 3 處（Corporate hook 點名 Apple、Klimeks 單源樂評句、Beirach 語序）。

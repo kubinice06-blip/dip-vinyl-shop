@@ -11316,8 +11316,14 @@
     "潮州土狗",
     "諾頓街"
    ],
-   "state": "cut",
-   "note": "Spotify 追蹤藝人補卡池 sf05（add-20261030-sf05）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11）；名冊 batch-progress/artist-intro/roster-sf05.json"
+   "state": "published",
+   "note": "Spotify 追蹤藝人補卡池 sf05（add-20261030-sf05）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11）；名冊 batch-progress/artist-intro/roster-sf05.json",
+   "skipped": [
+    "頭部組成者",
+    "吳書齊",
+    "狗毛"
+   ],
+   "reviewFixes": 2
   },
   {
    "batch": "ar-d-207",
@@ -11364,8 +11370,10 @@
     "the jazz butcher",
     "mick karn"
    ],
-   "state": "cut",
-   "note": "Spotify 追蹤藝人補卡池 sf07（add-20261030-sf07）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11）；名冊 batch-progress/artist-intro/roster-sf07.json"
+   "state": "published",
+   "note": "Spotify 追蹤藝人補卡池 sf07（add-20261030-sf07）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11）；名冊 batch-progress/artist-intro/roster-sf07.json",
+   "skipped": [],
+   "reviewFixes": 7
   },
   {
    "batch": "ar-d-209",
@@ -11510,7 +11518,9 @@
     "青春大衛",
     "烏賊紳士"
    ],
-   "state": "cut",
+   "state": "published",
+   "skipped": ["烏賊紳士"],
+   "reviewFixes": 4,
    "note": "店主 Spotify 追蹤藝人補卡池 add-20261030-sf01 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11）；名冊 batch-progress/artist-intro/roster-sf01.json"
   },
   {
@@ -11555,7 +11565,9 @@
     "the 天国畑 japon",
     "静香"
    ],
-   "state": "cut",
+   "state": "published",
+   "skipped": ["ないあがらせっと", "ヨシンバ", "ピューパ!!", "the 天国畑 japon"],
+   "reviewFixes": 5,
    "note": "店主 Spotify 追蹤藝人補卡池 add-20261030-sf02 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11）；名冊 batch-progress/artist-intro/roster-sf02.json"
   }
  ]
