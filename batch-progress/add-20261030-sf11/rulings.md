@@ -45,3 +45,11 @@
 - **49823**（ERISTHEPLANET）盤名依 Apple Music／MB release 定為《IT REALLY DO BE THAT DAMN PHONE》（2026-08-21，12 首，EQT Recordings），MB 的 RG 名為 6 月 8 首原版；Rico Nasty 客座只在擴充版。國別 us 與 moodGuess 無來源（uncertain）；status thin，最適合汰的一張，建議主線視內容決定。
 - **49824**（Posh Inverse）**推翻策展層**：(a) 《我想要的都在這裡》即 Bandcamp《This is all I need》（2016-07-01，MB 2016-06-28），但 Bandcamp 在它前面還有 2011《7 4/3》，『首張正規專輯』不成立；(b)『優雅逆轉』無官方來源，僅一筆活動資料庫場次標題暗示，建議藝人欄只用 Posh Inverse；(c) moodGuess『抒情嗓音』存疑，團是台北獨立／數學搖滾，同團 2020 年作被評為近乎無人聲後搖滾，此盤人聲未證。
 - **49825**（pololu《A Ghost Shaped Lotus》）人工身分只靠 Apple Music TW 頁（2023-03-10，12 首，27 分鐘，℗ pololu）；Discogs 的 Pololu 只有 Monked Records 合輯曲目、無此專輯，兩者同一人無直接證據；『台灣』『Flow State Records 前身風格』皆無來源，label 維持空白；**建議汰**。
+
+## 研究 e 組（49841–49850）
+- **49841**（Dudu Tassa & the Kuwaitis《El Hajar》）身分、盤名成立；年份 MB 2019-01-25（World Circuit，數位）、英維基記 2018-10 以色列先行，卡單 2019 照 MB；樂評缺，來源為 Songlines 專題＋商店頁。無存疑。
+- **49842**（The Luvmenauts《Ephemera》）推翻策展層：國別 it 不成立，Bandcamp 官方頁為加拿大多倫多樂團，卡單 country 改 ca，curatorWhy「義大利」須改；廠牌 Do Right! Music（MB 單源）。moodGuess 方向合理但『宇宙放克』措辭來源無，來源講 library music／surf／breaks；status thin。
+- **49843**（The Sign Of Human 記號士《為時間做過的註解》）人工身分核實：Apple（2014-07-04、℗ Sony Music Taiwan、11 首含〈二十七樓大廈〉）＋Discogs 藝人頁；國別 tw 成立（非港）；「記號士」雙寫 Apple／Discogs 皆用，保留；首張專輯成立（此前僅 2012 單曲）；label 可填 Sony Music Taiwan。聲音來源幾乎沒有，thin，寫作保守。不建議汰。
+- **49844**（特撮《爆誕》）身分、年份、廠牌成立（德間 Japan Communications，TKCA-71864）；首張專輯成立；Oricon／銷量查無不寫；曲風雜（含 smooth jazz、藍調、抒情），moodGuess 輕度存疑，不為汰卡主因。
+- **49845**（ULTRA SUNN《US》）身分成立（MB 藝人註記比利時 coldwave／EBM 二人組、布魯塞爾）；廠牌 Artoffact；首張正規專輯成立；moodGuess 輕度存疑（訪談強調可唱可跳、九〇／千禧舞曲）；樂評正文未取得，thin。
+- 無建議汰卡。
