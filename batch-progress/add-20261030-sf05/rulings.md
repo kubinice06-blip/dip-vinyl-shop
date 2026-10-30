@@ -67,3 +67,4 @@
 - **30515**：Yu Ching 黃雨晴《化為人形》(2022，8 首約 29.5 分鐘，Airhead) 國際媒體稱「首張個人專輯」，不確定是迷你專輯；維持收《The Crystal Hum》（Night School 黑膠版，英國廠牌）。WebSearch 用滿 3 次，無中文樂評。
 - **30577** **汰 庸俗禿鷹《庸俗禿鷹》**（研究 b：除 Apple 專輯頁與藝人頁外查無任何文字來源，MB／維基／Blow 皆無；成員、出身地、廠牌、曲風都無法證實，聲音事實 0 條）。§1 人工身分要兩個獨立來源，只有 Apple 不足；整位改列「不收（身分證據不足）」。卡單、研究稿移入 `dropped-cards.json`／`dropped-research.json`，`pick.json` 改 24。**sf05 定案：收 20 位 24 張、跳過 1、不收 6。**
 - **30578** 宝島材料行 genres 改 `pop`、`electronic`（研究 b：台語 City Pop／Nu Disco／Boogie，120–140 BPM 舞曲，非搖滾）。
+- **30579** 鉤子層 24 張五組交件（前一工作階段撞週額度中斷，代理的「鉤子層」rulings 小節未寫出）；`qa-batch hooks`、`chk-hook-crossgroup` 全過（hook 加權 18–26、note 149–235）。骨架歸屬、第二句領句都已寫在各張 note 尾（「第二句以…領句。這條骨架全批只走本張。」），寫作層以 note 為準。`merge-writer-input --split=2` → writer-1／writer-2 各 12。
