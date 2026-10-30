@@ -118,3 +118,20 @@
 - **30268** 第二句全照 note 指派領句；同藝人代稱具名：Wink 兩張分別用「Wink 是…二人偶像組合」與「鈴木早智子、相田翔子兩人的 Wink」；コスモス 用「走前衛迷幻搖滾路數的…是名古屋樂團」與「來自名古屋的迷幻四人團」；ジョー山中 用「他原是迷幻搖滾 Flower Travellin' Band 的主唱」與「迷幻樂團出身的主唱」；犬神 用樂種領句與「主唱凶子與鼓手明」；比屋定 用「1971 年生於那霸的歌手」與「沖縄出身的比屋定篤子」。POiSON GiRL FRiEND note 的「涉谷系」正文寫通行的「澀谷系」（可逆）。
 - **30269** 自掃：本檔 han() 4-gram 跨張 3 張以上只剩「迷幻搖滾」（樂種名，Joe／トランシルヴァニア／天界のペルソナ）；2 張的只剩專名（鈴木早智子、相田翔子、比屋定篤子）。與已交的 out-1 合掃：3 張以上只剩「冨田恵一」（out-1 專名）與上述樂種名，跨檔 2 張 0 條（拆掉「共首錄音」×BORONGE）。途中拆掉「原創專輯」「推出這張」「發行收首」「團年月日」「年月推出」「首張專輯」「團名取自」等殘片；另先比對 writer-1 的 hook／note 預防撞句。
 - **30270** 照 note 取捨的幾處：Wink《Twin Memories》專輯序數照 note 寫「第三張專輯」（略去「原創」二字避開與本檔另一張的同構）；HIGHLANDER 同理寫「第五張專輯」；《ささやかれた夢の話》hook 已寫 13 首，正文不重複曲數；《042》hook 已講曲序另排，正文只具名 Vivid Sound；GREENMACHiNE《The Earth Beater》「因故」note 未給原因，正文不補。静香 寫「吉他手三浦マキ與鼓手小杉淳都出身不失者」照 note，不稱其為團員。
+
+## 主線（條號 30271–30280；2026-10-30）
+- **30271 主線審稿**（45 張逐張審過，2026-10-30）：改 1 處。
+  - `desc4:静香|天界のペルソナ`：刪「吉他手三浦マキ與鼓手小杉淳都出身不失者。」——研究 30249 寫明兩人不是静香成員，正文接在「由同名的她一手主導」之後讀起來像團員；整句刪（187→167）。僅成品層，research／hooks 不涉事實改動。
+  - 其餘保留：writer-1 照 hook 保留片假名人名（ミト、アベフトシ、チバユウスケ，池內有先例）；writer-2「涉谷系」→「澀谷系」照台灣通行寫法；Oricon、Billboard 200 為銷售榜名次，非媒體榜，保留；跨張 4-gram 只剩樂種名「迷幻搖滾」與人名。
+- **30272 鉤子層補記**：POP CITY 原 note「串流平台相近藝人欄」整格刪（見 30259）。
+- **30273 試聽**：`preview-override.json` → `picks.mjs`：ready 42、unavailable 3（ジョー山中《Joe》、COHOL《空洞》、静香《天界のペルソナ》——Apple jp／us 皆未上架本盤）。試聽檔 HTTP 206 逐張確認。
+- **30274 封面**：CAA 41、Apple 4（`covers.json`：OGRE《homely》、ないあがらせっと、BORONGE〔人工身分〕等）；主線 live-check 45 張實際寫入的 URL（CAA 為 `/release-group/<id>/front`）全部 200 image。
+- **30275 三軸**：日本藝人卡 45 張依 §0.8 錨點制以日本語言圈為尺度人工評分（`manual:regional-rubric`，`ratings-override.json`）。
+- **30276 頂點**：45 張無 classic 5／accessibility 5、無 obscurity 5，未觸及殿堂／遺珠／異端門檻，全列一般卡。稀有度 uncommon 19、rare 24、epic 2。
+- **30277 去重與寫入**：寫入前對 origin/main 與 147 條 `claude/*` 分支的 seed（60 個不同版本）再跑一次盤層去重，sf01＋sf02 共 81 張 0 撞。prepare gate 0 error → `push-card-catalog-patches` 45／45 → `kv-token-check` 通過 → KV 73 鍵（stamp 202610300311）回讀逐字一致 → `--write-preview`、`fetch-apple-album-urls`、`build-apple-audio-runtime-map` → `--write-pool`（seed +45）→ `build-seed-genres` → `mark-manifest-published` → **published gate 0 error**。
+- **30278 子曲風**：`warm-batch` tagged 42／empty 3；`genre-l3-artist-map.json` 補 Thee Michelle Gun Elephant（garage）、コスモス・ファクトリー（prog）、ジョー山中（rock/classic/70s＋world/reggae/roots）、GREENMACHiNE（doom）、NTsKi（jp-electronic）、ないあがらせっと・ヨシンバ（rock/indie-alt/indie-pop；主類型 rock 只能掛 rock 節點）→ 45／45 落位。`build-asia-country-map.mjs --write` 自動 13 位，待裁定的中学生棺桶、THE 天国畑 JAPON、静香手寫 jp。抽卡封面重建。
+- **30279 藝人介紹**：本批 30 位全是新藝人（無介紹、未排隊），寫進 `batch-progress/artist-intro/roster-sf02.json`（tier D、addedBy add-20261030-sf02），progress.json 追加 **ar-d-202**（state cut，`cut/ar-d-202.txt`）。主名冊 roster-20260929.json 是單行 JSON、並行工作階段必撞，併入由藝人介紹工作階段處理。
+- **30280 情緒評分**：見下方「情緒評分」段（score-sf0102，判準照 RULES.md，不算落格率）。
+
+### 本批新藝人（無介紹）
+betcover!!、クラムボン、DIR EN GREY、GRASS VALLEY、きのこ帝国、KIRINJI、OGRE YOU ASSHOLE、THE BACK HORN、Thee Michelle Gun Elephant、Yogee New Waves、揺らぎ、kiki vivi lily、mei ehara、NTsKi、Wink、コスモス・ファクトリー、ジョー山中、爆風スランプ、GREENMACHiNE、COHOL、中学生棺桶、犬神サーカス団、ないあがらせっと、ヨシンバ、ピューパ!!、比屋定篤子、姫神、POiSON GiRL FRiEND、THE 天国畑 JAPON、静香（30 位 → ar-d-202）

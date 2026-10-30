@@ -3560,4 +3560,9 @@ window.DipPreviewStatus = Object.freeze({
   "ジョー山中|joe": "unavailable",
   "cohol|空洞": "unavailable",
   "静香|天界のペルソナ": "unavailable",
+  "bent fabric|the happy puppy": "unavailable",
+  "meiko miyazawa 宮沢明子|kuhlau - clementi - dussek: sonatinen album i": "unavailable",
+  "i̇dil biret|ligeti: études, books i and ii (1-14a)": "unavailable",
+  "juzzy orange & goodiek|沒有靈魂的工程師": "unavailable",
+  "青春大衛|第一到六天": "unavailable",
 });

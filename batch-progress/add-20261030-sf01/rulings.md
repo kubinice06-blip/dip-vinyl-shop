@@ -117,3 +117,22 @@
 - **30168** 轉述與來源：汁橙 note 的「Apple 掛…」寫成「曲目大多掛在 Juzzy Orange Presents GoodieK 名下」，不點平台；張震嶽「唱片介紹說」、烏賊紳士「商品介紹寫」都改成直述；怪人二十面相的評審稱號轉成間接敘述（「評審把這種音樂叫作文藝搖滾」）。青春大衛的 StreetVoice 街聲是發行管道（note 指派），照寫。否定句改正面：單飛「樂團首作還沒開始宣傳」→「首作的宣傳還在前頭」、Selections「沒進正規專輯」→「正規專輯以外」、？「歌沒排上 TVB」→「宣傳期間歌曲因此缺席 TVB」；蕭亞軒「未進前 5」整格捨去（hook 已寫止步 12 強）。媒體名、榜單名次、據說／據傳 grep 0。
 - **30169** 避免複述 hook：Hope You're Well 第二句不再寫「一人寫曲」，改補錄音、混音；青春大衛後半不重寫薩克斯風與大提琴、前半不重寫延遲音牆，改寫「搖滾曲加進鼓聲／古典吉他撐起懷舊民謠」；？ 的方大同改寫「同樣由方大同編曲」；遠走高飛不重寫輕聲吟唱，改寫電子節拍。
 - **30170** 自掃（han() 4-gram，out-1＋out-2 合掃 36 張）：3 張以上 0 條；跨檔 2 張只剩樂器名「薩克斯風」（Tension hook 對 第一到六天 hook，兩邊都是 hook 原文）；本檔內 2 張只剩專名「人間椅子」。途中拆掉：是全盤最長（Eon／怪人）、首約分鐘（遠走高飛／頽廃、狗）、第張錄音室專輯（兩張人間椅子）、首張專輯（單飛／蕭亞軒）、專輯年月日（Moksha／？）、這張是他們（Amanita／怪人）、發行的這張（怪人／汁橙）、長約分秒（AGP／Smasher）、錄音與混音（Hope You're Well 對 Yank Crime hook，改本張正文）、混音也由（Hope You're Well／頽廃）。
+
+## 主線（條號 30171–30180；2026-10-30）
+- **30171 主線審稿**（36 張逐張審過，2026-10-30）：改 3 處。
+  - `desc2:Corporate|A5 EP`：hook「三首歌在 Apple 上分屬三種曲風：嘻哈、碎拍與舞曲。」點名資料平台 → 「三首歌各走一路：嘻哈、碎拍與舞曲。」（hooks-a、out-1 同步）。
+  - `desc2:Klimeks|Overnites`：刪「樂評聽出它近似 Clams Casino，想像饒舌手在這些節拍上開口。」——單一來源評價句（166→131，thin 帶內）。
+  - `desc2:Richie Beirach|Eon`：第二句語序倒裝難讀，改為「爵士鋼琴手 Richie Beirach 1947 年生於紐約，1972 年拿到曼哈頓音樂學院作曲碩士，唱片署名寫作 Richard Beirach。」（事實不變）。
+  - 其餘保留：writer-1 自推的「嘻哈團體」（Czarface）、「爵士搖滾團」（The One Truth Band）與卡單曲風一致、不構成新事實；青春大衛「上架 StreetVoice 街聲」是本盤唯一發行通路，屬發行事實非資料平台引用；Billboard Hot 100 名次為銷售榜。
+- **30172 試聽**：`preview-override.json` 改 13 張（Hard Groove 取 Roy Hargrove 掛名原盤、Czarface 取原版不取 Instrumentals、Ránki／Reuthe／冠宇／AGP／Smasher 等人工身分與 MB 無曲目者指定 collection、Eon 以 Richard Beirach 掛名、陳奕迅《？》hk 1443783500、椎名 jp 羅馬拼音盤名、烏賊紳士 tw）→ ready 31、unavailable 5（Bent Fabric、宮沢明子、İdil Biret、汁橙／GoodieK、青春大衛：Apple 未上架）。
+- **30173 封面**：CAA 24、Apple 9、Discogs 2（宮沢明子 11430327、İdil Biret 1430046，已登錄 `data/discogs-cover-registry.json`）、manual 1（青春大衛：StreetVoice 官方專輯頁 og:image；verify 不收 `streetvoice` 來源字，記 `manual`）。人間椅子《頽廃芸術展》CAA 原圖 HEAD 500 → 改 Apple jp 1880369527。36 張縮圖表主線目視全數相符、live-check 全 200。
+- **30174 三軸**（`ratings-override.json` 逐張附理由）：古典 4 張 `manual:classical-rubric`；華語／日語 10 張 `manual:regional-rubric`；考古／小量發行 7 張 `manual:depth-rubric`；其餘機器值校正（Last.fm 被合作掛名或 VA 壓低者，例 Clerks 130、Beirach 120、Czarface 2,881）。
+- **30175 頂點**：無 classic 5／accessibility 5；唯一 obscurity 5 是宮沢明子（古典 pearl 須人工判定＋兩個證據網址，查無遺珠級證據），全列一般卡。稀有度 rare 20、uncommon 13、common 3。
+- **30176 管線修補**：`build-manifest.mjs` 原本不把卡單 `genreException` 帶進 manifest，EP／單曲卡（Klimeks、Corporate、Project Pablo、張震嶽、Smasher、烏賊紳士）prepare gate 報錯 → identity 加一行 `...(c.genreException ? { genreException } : {})`（加法、不影響既有批）。
+- **30177 去重與寫入**：盤層去重同 sf02 30277（0 撞）。prepare gate 0 error → card_catalog 36／36 → KV 47 鍵（stamp 202610300331）`Success!`、回讀逐字一致 → preview／Apple 網址／runtime map → seed +36 → seed genres → mark published → **published gate 0 error**。
+- **30178 子曲風**：warm-batch tagged 26／empty 10；`genre-l3-artist-map.json` 補宮沢明子（classical-era）、Corporate（breakbeat）、Arthur Flink & Son of Chi（jazz/contemporary/euro）、Misc（nu-jazz）、汁橙（hiphop/asia-rap/tw-cn）、AGP（psych）；`rock-asia-country-map.json` 手寫冠宇、青春大衛、烏賊紳士 tw → 35／36 落位。**Bent Fabric《The Happy Puppy》未落位**：主類型 pop、pop 下無 easy listening／鋼琴輕音樂節點，硬掛會錯，留空（卡仍可依主類型抽到）。
+- **30179 藝人介紹**：36 張扣掉 VA 與已有介紹的 Richie Beirach、椎名林檎、陳奕迅 → 30 位寫進 `roster-sf01.json`，progress.json 追加 **ar-d-201**（state cut）。
+- **30180 情緒評分**：score-sf0102（同 sf02 30280）。
+
+### 本批新藝人（無介紹）
+The RH Factor、Albert Mangelsdorff Quintet、Czarface & Ghostface Killah、Bent Fabric、Klimeks、Corporate、Kay Hoffman、Dome、Toshinori Kondo, Eraldo Bernocchi & Bill Laswell、Dezső Ránki、Derya Yıldırım & Grup Şimşek、Arthur Flink & Son of Chi、Meiko Miyazawa 宮沢明子、Manfred Reuthe、Misc、İdil Biret、John McLaughlin & The One Truth Band、Project Pablo、冠宇、張震嶽、My Sleeping Karma、Bardo Pond、人間椅子、Bardo Pond, Acid Mothers Temple & Guru Guru、Juzzy Orange & GoodieK、Smasher、蕭亞軒、Drive Like Jehu、青春大衛、烏賊紳士（30 位 → ar-d-201）
