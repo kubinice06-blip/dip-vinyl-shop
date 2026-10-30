@@ -986,7 +986,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB 以 Zaratustra／Zarathustra 查無此 1970 墨西哥盤；Discogs master 879215 為 Zaratustra (2)",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Zaratustra\"",
+    "artist:\"Zaratustra\" AND releasegroup:\"Su Música... Su Filosofía...\"",
+    "releasegroup:\"Su Música... Su Filosofía...\""
+   ],
+   "checkedAt": "2026-10-30",
+   "conclusion": "MB 以 Zaratustra／Zarathustra 查無此 1970 墨西哥盤；Discogs master 879215 為 Zaratustra (2)；主線重查：藝人搜尋 無此 release group（count=0），以 Apple／Discogs 為身分依據"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/879215-Zaratustra-2-Su-Musica-Su-Filosofia-",
    "https://www.discogs.com/release/5546763"
@@ -1025,16 +1033,11 @@
    "z": 1,
    "why": "光滑 AOR 與藍眼靈魂"
   },
-  "rgMbid": "",
-  "identitySource": "manual",
-  "mbAbsenceProof": "MB 查無 Martin & Garp 與 Sentimental Fools",
-  "manualEvidenceUrls": [
-   "https://www.discogs.com/master/1965088-Martin-Garp-Sentimental-Fools",
-   "https://music.apple.com/us/album/sentimental-fools/1536123551"
-  ],
+  "rgMbid": "2180a870-ef4e-476e-83fd-680d305e7af7",
+  "identitySource": "pinned",
   "curatorWhy": "當代 AOR：Martin & Garp 目前唯一專輯，當代 AOR／藍眼靈魂，P-Vine 日本發行。",
   "curatorRisk": "⚠ 非德國 1971；為 2020 年當代團，國家依 Social Beats（義大利）暫填 it",
-  "mbNote": "MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/1965088-Martin-Garp-Sentimental-Fools https://music.apple.com/us/album/sentimental-fools/1536123551 https://music.apple.com/us/album/sentimental-fools/1536123551 https://www.discogs.com/master/1965088-Martin-Garp-Sentimental-Fools",
+  "mbNote": "MB release-group 2180a870-ef4e-476e-83fd-680d305e7af7：title「Sentimental Fools」、Album、first-release-date 2021-01-15（Légère 歐版；日本 P-Vine 2020-10-21 首發），artist-credit「MARTIN & GARP」（主線 2026-10-30 重查補釘）。",
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
