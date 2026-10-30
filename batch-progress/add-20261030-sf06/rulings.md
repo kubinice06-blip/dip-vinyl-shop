@@ -39,7 +39,26 @@
 - **41513**：亂彈阿翔《把我換成你》。**推翻策展層**：正式盤名帶副題「十年幕後創作精華 電影電視主題歌曲專輯」，性質是主題曲選集（TVBS 得獎名單同）；廠牌為赤腳不辣（Chockablock），非相信音樂（MB 另載禾廣娛樂 BLA004）；年份 Apple 2011-11-01，維基 2012-02-03 疑為重發。第 23 屆金曲獎最佳國語男歌手為得獎。主線決定是否仍收選集。
 - **41514**：盧家齊《Circle = 圓》。Discogs 明載為個人作品集結的雙卡帶（限量 100、2 小時 24 分），非單一概念長專；MB 標 Album。聲音（drone、部落打擊）與 moodGuess 吻合。Bandcamp 兩條事實由搜尋摘要而來，單一來源。
 
+## 研究 c 組（41521–41530）
+- **41521**：Shaa Khan《The World Will End on Friday》。身分以 MB／Discogs 3243630 確認：1978 Sky Records（漢堡）sky 015，補廠牌；國別 de（杜伊斯堡）。年份取 1978（德文維基正文寫 1977 為錄音年，Discogs 錄音 1977-08）。**moodGuess 存疑**：來源是德式 Gentle Rock／前衛搖滾（Genesis、Yes 影響），無太空搖滾證據。
+- **41522**：The Cheers Cheers《Carinae》（Discogs 作《不如搬去船底星》）。Bandcamp：City Flanker 主唱王小宇的個人計畫、深圳 BoringProductions 004，標籤 jangle／C86／dream pop／shoegaze。**卡單「紹興」無來源**，不採用，country 維持 cn。搜尋兩次無結果，聲音只有 Bandcamp 單頁，status thin。
+- **41523**：Fishdoll《Noonsense》。廠牌補 Paxico Records（MB、Bandcamp 一致）；北京身分由 Bandcamp 與 Discogs 證實。**moodGuess 存疑**：Bandcamp 稱 electro-soul、有歌唱與真人貝斯，不是 lo-fi 嘻哈節拍；MB 的 hip hop producer 與此不符。
+- **41524**：Juggaknots《The Juggaknots》。MB／Discogs 1996 Fondle 'Em FE002 無誤。維基與樂評稱首作為《Clear Blue Skies》（曲名，2003《Re:Release》副題），與 MB 盤名《The Juggaknots》是同一批歌，卡單維持 MB 盤名。聲音有 Audiopile、AllMusic、SF Weekly 三處描述，與 moodGuess 吻合；y/z 值超尺不採。
+
+## 研究 d 組（41531–41540）
+- **41531**：Glen Check《Haute Couture》。廠牌補 Soundholic Entertainment SH1055（2012-03-06 另有 Beyond Music 數位授權版）；**得獎確認為得獎**：2013 年第 10 屆韓國大眾音樂獎最佳舞曲／電子專輯（韓文維基獎項表與英文專輯頁一致），第 11 屆是第二張《YOUTH!》。聲音：樂團自述 synth-pop，參照 Joy Division、New Order、Duran Duran；moodGuess「明亮 disco」小修為偏冷的有拍合成流行。
+- **41532**：강태환《소리 (Sorefa)》。MB／Discogs 4220399：2011-12-29 Audioguy Records AGCD0031 雙 CD，補廠牌；Spotify 2020 為再上架，年份維持 2011。演奏者只掛姜泰煥一人（中音薩克斯風）、風格 Free Improvisation。Tokebi（1991，JVC／Zen）為備選盤。尖銳緊繃、無調等聲音描述無樂評來源，只能推論。無獎項細節。
+- **41533**：Superstar Quamallah《Invisible Man》。Brick Records BRK-CR-094（2009）確認。**推翻策展層「與 DeQawn 共同署名」**：本張只掛個人名，DeQawn 是後來合作專輯。2024 Be With 首度黑膠（限量 500）與 Gilles Peterson 2009 年度節目屬實，後者為轉述來源。聲音證據為店方文案，缺獨立樂評。
+- **41534**：7FO《Water Falls Into a Blank》。廠牌補 RVNG Intl.（CMMND002）；來自 Commend 空間的 See 系列，大阪（N. Kawata）。原版限量數 Discogs 10、RVNG 9，兩處不一。Apple 2026 版對應 RVNG 預告的 2026-11-06 數位版，卡單 year 維持 2016 原版。聲音：dub 加 ambient、「好奇安靜幽默」，細節缺。
+
+## 研究 e 組（41541–41550）
+- **41541**：Monique Chao Jazz Orchestra《Time Chamber》。**國別 it 確認**（Bandcamp About、MB）；**領隊身分**：mentelocale 載「由 Monique Chao 創立並指揮」，O's Place Jazz 載台灣出生、現居米蘭、作曲指揮鋼琴歌手，Bandcamp 只掛她製作人。無廠牌。DownBeat 之說摘要出現但無法驗證，不寫。
+- **41542**：JUU4E《馬鹿世界》。**推翻策展層「首張專輯」**：Bandcamp 寫是在 EM Records（大阪）的第二張個人專輯；泰國人、孔敬錄音有 Bandcamp 明載，解除身分疑慮；廠牌補 EM Records。聲音：trap／嘻哈拍上疊泛亞取樣、翻唱鄧麗君。moodGuess「未聽證」，可評為有拍偏躁。
+- **41543**：dotzio《The File You're Looking for No Longer Exist》。Bandcamp 自述為「人生最初幾首歌」，自行發行；tw 僅由 Discogs 另一張 2019 卡帶 EP 的登錄國別間接支持，無自述地點。性別未知。聲音只有標籤 lofi／indie 與一則聽眾留言，thin。**moodGuess 存疑**（策展層「實驗電子」與標籤不符）。
+- **41544**：Championxiii《Champion Status》。MB 2019-06-03 Party Label，補廠牌；Shazam 簡介：靠 2018 年「Rappers Be Like」社群影片起家、〈Becky〉擴寫成曲、受 1980s R&B／嘻哈影響。本名不寫。**moodGuess 存疑**：無任何聲音來源支持 trap 重低頻攻擊性，曲短（2–3 分）、含 interlude，可能偏流行 rap，建議主線視情況汰換。
+
 ## 主線（條號 41571–41580）
 - 41571：研究 b 組 41511 指出亂彈阿翔《把我換成你》全名《把我換成你-十年幕後創作精華 電影電視主題歌曲專輯》，是十年影視主題曲合集。**照收**：第 23 屆金曲獎（2012）以本盤頒最佳國語男歌手，是他個人名義的生涯代表作，Spotify 名下也只有這張長篇；卡單 `releaseType` 改 Compilation、寫 `exceptionReason`。廠牌照研究層改「赤腳不辣」（Apple 版權與得獎名單），年份維持 2011。
 - 41572：盧家齊《Circle = 圓》研究層查到是雙卡帶作品集（WV Sorcerer WV 011、限量 100、2 小時 24 分）。改選 2024《Apex Union》不成立（MB 標 EP，且是與 Bungalovv 合作名義），**維持《Circle = 圓》**，它是 MB 上唯一一張個人 Album。
 - 41573：劉以達《麻木》研究 a 組確認 11 首新曲、Musician 非池中 MUS006-2，照錄音室專輯收（承主線策展裁定）；卡單廠牌補「非池中」。雞蛋蒸肉餅廠牌改「紅線音樂」（實體 CD 發行商，研究 a 組），年份維持 2016。張亞東《Ya Tung》年份維持 1998（維基、Discogs IFPI LD98、Apple ℗ 1998 三方一致）。
+- 41574：照研究 c–e 組改卡單：廠牌 Glen Check→Soundholic Entertainment、강태환→Audioguy Records、Shaa Khan→Sky Records、Fishdoll→Paxico Records、7FO→RVNG Intl.、Championxiii→Party Label、JUU4E→EM Records（大阪；泰國孔敬錄音）；JUU4E curatorWhy「首張」改「EM 第二張個人專輯」；Superstar Quamallah 刪「與 DeQawn 共同署名」疑點（只掛本人）；Fishdoll 主曲風 hiphop→electronic（第二 soul，Bandcamp 標 electro-soul、有歌唱）。The Cheers Cheers 的「紹興」查無來源不採。Championxiii facts 7 條（可查資料只有這些），qa 通過，照收。
