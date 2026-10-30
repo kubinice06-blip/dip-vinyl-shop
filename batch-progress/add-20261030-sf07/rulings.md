@@ -15,3 +15,14 @@
 - **例外**：Mike Ratledge《Riddles of the Sphinx》（2013 Mordant Music，1977 Mulvey／Wollen 電影配樂）——MB 次類型 Soundtrack，是 Ratledge 唯一的個人署名作品，以配樂例外收。The Cosmic Jokers 兩張是 Rolf-Ulrich Kaiser 未經樂手同意發行的爭議盤，照收，正文要寫明。
 - 交研究層把關：Pierrot Lunaire 兩張廠牌（策展憑記憶填 Grog）、Ikarus 廠牌、Eyeless in Gaza《Pale Hands》首發年（MB 空）、Peter Kaukonen 封面（CAA 無，用 Discogs）、Slow Dancer 國別、Tully／Paul Davis 廠牌。
 - 跨分支去重：對 origin/main 與 10-28 後更新的 `claude/*` 分支 seed 查藝人名、別名、Spotify 寫法，0 撞。
+
+## 研究 e 組（30741–30750）
+- 30741：Sugarcubes《Here Today, Tomorrow Next Week!》卡單廠牌 One Little Independent 是 2020 年改名後現名，1989 原名 One Little Indian（美國版 Elektra）；正文寫原名或「後改名」，不算推翻。
+- 30742：WCPAEB《Volume 2》正式名《Vol. 2 (Breaking Through)》，樂團第三張、Reprise 第二張；策展 curatorWhy「評價最高」不成立（維基與樂評傳記以《Volume 3》為最成熟），寫作勿稱最高評價。
+- 30743：Mick Karn《Dreams of Reason Produce Monsters》發行日維基 1987-02-16、MB 1987-03-09，錄於 1986-04/05；年份維持 1987。moodGuess「低沉貝斯」存疑：貝斯退居次要，實為器樂為主的新古典藝術流行（輕度，不建議汰換）。
+- 30744：Mick Karn《Titles》、Paul Davis、Jazz Butcher 兩張、Sugarcubes 皆為正規錄音室專輯，身分、年份、廠牌核對無誤；無需汰換。Davis 專輯確為〈I Go Crazy〉所在（維基歌曲條目）。
+- 30745：Karn Titles、WCPAEB、Davis 缺專輯級樂評，status 標 partial；聲音描述取自人員表與傳記。
+- 本組未含 Willie West（在 d 組）。
+
+## 主線（條號 30771–30790）
+- **30771** WCPAEB《Volume 2》curatorWhy 去掉「評價最高」（研究 e：維基與樂團傳記以《Volume 3》為最成熟，《Vol. 2》是最有野心的一張；正式名《Vol. 2 (Breaking Through)》）。仍收《Part One》＋《Volume 2》兩張，正文不得寫「評價最高／最佳」。Sugarcubes 廠牌正文寫原名 One Little Indian。
