@@ -14,3 +14,11 @@
 - **留兩張的**：KMD（《Mr. Hood》1991＋《Black Bastards》，後者 1994 錄成遭 Elektra 擱置、2001 正式發行，取 2001）、Michael Franti & Spearhead（《Home》1994＋《Stay Human》2001）、Olivia Dean（《Messy》2023＋《The Art of Loving》2025）、Omar Apollo（《Ivory》2022＋《God Said No》2024）、Way Out West（1997 同名＋《Intensify》2001）。
 - **Maddie Ashman《Her Side》**：MB 標 EP，8 首、作為主要作品發行，照 CUR-DISPATCH 長 EP 例外收，寫 `releaseException`。
 - 交研究層把關：多張廠牌欄空白或待核（Stay Human、Sad Night Dynamite、Beneficiaries、UMC's、J. Valentine、Dudu Tassa、Fortisakharof、激膚）；Destin Conrad《Love on Digital》年份；JMSN《It Is.》正式寫法；激膚《問號》與《安卓雅》何者為代表作；S.C.A.B. 2025 盤 vs 2022 同名盤；The Beneficiaries 國別廠牌；Blubell、Noblemen 封面要從 Apple／Bandcamp 取；Fortisakharof《1900?》盤名寫法與年份。
+
+## 研究 c 組
+- **49921**　Home 的 label 由「Boo Boo Wax / Capitol」改為「Capitol」：1994 首版只有 Capitol（MB、維基一致），Boo Boo Wax 是離開 Capitol 之後才成立。首版掛名為 Spearhead，改名「Michael Franti & Spearhead」是因 Capitol 擁有 Spearhead 名稱；正文宜寫明。moodGuess 存疑：reggae 成分在 1997 年才明顯，Home 是 funk／soul／偏爵士的現場樂團聲。
+- **49922**　Stay Human 補 label：美國 Six Degrees、澳洲 Boo Boo Wax、另有 Parlophone／EMI 版；建議「Boo Boo Wax / Six Degrees」。主題是死刑與司法不公（另有媒體壟斷、監獄產業），非「反戰」；樂評主列 soul／funk／hip-hop，reggae 不是主軸。moodGuess 存疑（非「陽光 reggae 吉他」，題材沉重）。年份 2001-05-15（維基內文曾誤寫 2000）。
+- **49923**　Mr Twin Sister 自題盤 label 由「Domino」改「Twin Group」（MB TWIN0001；Stereogum 寫 Twin Group／Infinite Best）。Domino 只在更早的《Color Your Life》英國版。改名緣由（Twin Sisters 樂團的法律威脅）僅維基單一來源。moodGuess 部分存疑：樂評是半夢半醒的夢幻流行，節拍不算冷艷舞曲。
+- **49924**　Olivia Dean《Messy》label 由「Polydor」改「EMI」；Mercury 為 2023 年入圍決選（shortlisted），非得獎，按入圍寫。《The Art of Loving》label Capitol／Polydor 核對無誤；Grammy 最佳新人（2026 年 2 月）、Brit 年度專輯、MOBO 年度專輯為得獎，Mercury 為入圍；Dean 發行後的訴訟與後續成績不進正文。
+- **49925**　Omar Apollo《Ivory》label 由「Warner / Stones Throw」改「Warner Records」（MB 與維基皆無 Stones Throw）；《God Said No》Warner 無誤，首發 2024-06-28（MB 6/24 為早期登錄）。《Ivory》曲風跨度大（龐克流行、拉丁 trap、corrido），評分勿只看單曲；《God Said No》樂評是 lo-fi、氛圍、失戀殘骸，moodGuess 部分存疑偏暗。
+- **49926**　c 組 7 張 facts 條數 9／9／10／10／10／10／10，status 全 full；未推翻年份與盤名。〈Hole in the Bucket〉Clio 獎說法兩個維基頁互相矛盾，未寫入。
