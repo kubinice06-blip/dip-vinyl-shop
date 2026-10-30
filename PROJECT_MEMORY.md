@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-30｜dip-vinyl-shop｜藝人介紹 ar-d-201／202 上線（Spotify 補卡 sf01＋sf02，55 位）
+
+- **改動**：照 `dip-artist-intro` skill 跑完兩批（萃取 --lean、維基預抓、補洞 6 組 Sonnet、寫作 4 組 Opus、qa-artist、主線逐位審稿、alias、issues、建分片）。
+  - **ar-d-201**（sf01 店主收藏）：30 位 → 上線 29（11 full、18 thin）、skipped 1（烏賊紳士，素材未達 thin 門檻）。審稿修 4 位：張震嶽刪「縱貫線鼓手」單源句、補 2026 第 37 屆金曲歌王＋最佳華語專輯（WebSearch 核實）；蕭亞軒刪世界音樂獎（單源）；Juzzy Orange 刪成軍年；宮沢明子補第二源。
+  - **ar-d-202**（sf02 日本）：30 位 → 上線 26（14 full、12 thin）、skipped 4（ないあがらせっと、ヨシンバ、ピューパ!!、THE 天国畑 JAPON，三格皆無素材）。審稿修 5 位（單源的成員異動、生年、售罄、巡演年份）。
+  - 名冊：`roster-sf01.json`、`roster-sf02.json` 60 位併入主名冊 `roster-20260929.json`（8,676 位）。藝人介紹 6,177+ → 6,232 位。
+- **主要檔案**：`batch-progress/artist-intro/{roster-20260929.json,ar-c-rulings.md}`、`desc-tools/batches/artist/{progress.json,facts,research,output}/ar-d-20{1,2}*`、`data/artist-intros/*`、`audits/ARTIST-PUB-ISSUES.md`、`batch-progress/spotify-follow-20261030/PLAN.md`。
+- **驗證**：qa-artist gap／out 兩批 0 處（僅剩 skipped 的「缺 N 位」與きのこ帝国「国」日文原字誤判）；`build-artist-intros.mjs` 330 份成品、64 分片。
+
 ### 2026-10-30｜dip-vinyl-shop｜Spotify 追蹤藝人補卡池 sf01＋sf02 上線（81 張）
 
 - **sf01（favoriteAlbums 指定盤）**：38 張收 36（跳過 1：椎名林檎《無罪モラトリアム》池中已有；不收 1：Vayda 查無此盤）。試聽 ready 31／unavailable 5；頂點 0；主線審稿改 3 處（Corporate hook 點名 Apple、Klimeks 單源樂評句、Beirach 語序）。
