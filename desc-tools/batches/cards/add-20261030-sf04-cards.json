@@ -234,7 +234,14 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB 藝人 5a654a35-0b7a-4673-945f-d50487ed0884（沖山秀子）下無任何 release group；Discogs master 259188 記 1981 Trio Records",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"沖山秀子\" AND releasegroup:\"Summertime\" → 0",
+    "releasegroup:\"Summer Time\" AND artist:\"Hideko Okiyama\" → 0；MB 藝人 5a654a35 下 release-group 0 筆"
+   ],
+   "checkedAt": "2026-10-30",
+   "conclusion": "MB 藝人 5a654a35-0b7a-4673-945f-d50487ed0884（沖山秀子）下無任何 release group；Discogs master 259188 記 1981 Trio Records"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/259188",
    "https://music.apple.com/jp/album/summer-time/1655543966"
@@ -740,7 +747,7 @@
     "releasegroup:Supernaturals AND artist:Magamura 0 筆"
    ],
    "checkedAt": "2026-10-30",
-   "conclusion": "MB 查無；以 Discogs release 10023740（Si Kebko Music，2xLP）與 Apple Music 為身分依據"
+   "conclusion": "MB 查無；以 Discogs release 10023740（Kebko Music，2xLP）與 Apple Music 為身分依據"
   },
   "manualEvidenceUrls": [
    "https://www.discogs.com/release/10023740",

@@ -1,0 +1,2106 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-sf04",
+ "batchNote": "薄細項策展線（add-20261030-sf04）",
+ "createdAt": "2026-10-30T05:44:18Z",
+ "albums": [
+  {
+   "artist": "立花ハジメ Hajime Tachibana",
+   "album": "H",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "77551b52-e7db-4c3a-ac53-0abf13d2e5cf",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本 YMO 周邊：Plastics 出身的立花首張個人作，高橋幸宏與坂本龍一參與，Yen 系新浪潮代表。｜⚠ MB 以 立花ハジメ 登錄；Spotify 名為羅馬拼音｜MB release-group 77551b52-e7db-4c3a-ac53-0abf13d2e5cf：title「H」、Album、first-release-date 1982-05-21、artist-credit「立花ハジメ」。證據：https://music.apple.com/jp/album/h/1530598352 https://musicbrainz.org/release-group/77551b52-e7db-4c3a-ac53-0abf13d2e5cf https://coverartarchive.org/release-group/77551b52-e7db-4c3a-ac53-0abf13d2e5cf/front-250",
+    "queryAlias": "立花ハジメ"
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/77551b52-e7db-4c3a-ac53-0abf13d2e5cf/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸錨點制：Yen 原盤、串流可得；新浪潮薩克斯風"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Plastics 的吉他手，巡迴途中在洛杉磯買了薩克斯風。平面設計師才是立花ハジメ的本業，他 1951 年生於東京，1976 年組了新浪潮樂團 Plastics。那支樂器是 1981 年赴美巡演時買的，等樂團解散，他便改吹薩克斯風。1982 年 5 月 21 日於 Yen Records 發行的《H》是他首張個人名義作品，高橋幸宏製作。細野晴臣在盤上彈貝斯與馬林巴，坂本龍一彈鋼琴，Koji Ueno 操作 Emulator 取樣機。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/%E7%AB%8B%E8%8A%B1%E3%83%8F%E3%82%B8%E3%83%A1",
+     "https://en.wikipedia.org/wiki/Plastics_%28band%29",
+     "https://musicbrainz.org/release-group/77551b52-e7db-4c3a-ac53-0abf13d2e5cf",
+     "https://www.discogs.com/master/255111-Hajime-Tachibana-H",
+     "https://www.discogs.com/release/1197224"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/17/05/04/170504bc-fa08-4b6e-0d0c-a4c0b22abca4/mzaf_3006341418445062891.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1530598352",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1530598352「Hajime Tachibana《H》」：曲目 10/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈IF〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "越美晴 Miharu Koshi",
+   "album": "Tutu",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d71f0ee6-5c77-4adf-99a0-488f3e4502be",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本 YMO 周邊：Alfa 時期的技術流行代表作，與 YMO 圈樂手合作，越美晴最受肯定的一張。｜策展無疑點｜MB release-group d71f0ee6-5c77-4adf-99a0-488f3e4502be：title「Tutu」、Album、first-release-date 1983-10-26、artist-credit「越美晴」。證據：https://www.discogs.com/master/257910 https://musicbrainz.org/release-group/d71f0ee6-5c77-4adf-99a0-488f3e4502be https://coverartarchive.org/release-group/d71f0ee6-5c77-4adf-99a0-488f3e4502be/front-250",
+    "queryAlias": "Miharu Koshi；越美晴"
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d71f0ee6-5c77-4adf-99a0-488f3e4502be/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸錨點制：Alfa 原盤、2021 重製上串流"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "示範帶被細野晴臣聽到後，鋼琴歌手越美晴轉向電子流行。父親吹低音管、母親是聲樂家，她 1960 年生在東京，1978 年從 RCA 出道，走鋼琴彈唱的 city pop。1983 年她還替遠藤賢司的錄音彈鍵盤，隨後便轉入 Yen 廠牌。《Tutu》1983 年 10 月 26 日發行，細野親任製作，錄音分在東京與布魯塞爾兩地。開場曲改唱比利時電子流行團 Telex 的〈L'Amour Toujours〉，Telex 全員都參與了錄音。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%82%B7%E3%83%9F%E3%83%8F%E3%83%AB",
+     "https://www.discogs.com/master/257910",
+     "https://www.discogs.com/release/2336861",
+     "https://trackingangle.com/features/review-explosion-vinyl-yen-records-miharu-koshi-testpattern-jun-togawa-tamao-koike",
+     "https://musicbrainz.org/release-group/d71f0ee6-5c77-4adf-99a0-488f3e4502be"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/26/b8/65/26b86567-ba25-531a-0e45-d2f07fc6a967/mzaf_4553151675149986225.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1569153054",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1569153054「コシミハル《チュチュ》」：Apple コシミハル《チュチュ》1983，9 軌＝本盤，取第 1 軌〈ラムール・トゥジュール (2021 Remastering)〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "越美晴 Miharu Koshi",
+   "album": "パラレリズム",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "48994e77-cf71-442d-941e-9927663e1128",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本 YMO 周邊：細野晴臣 Yen 廠牌時期的第二個高峰，歐式電子流行與 exotica 融合，樂迷公認名盤（Parallelisme）。｜策展無疑點｜MB release-group 48994e77-cf71-442d-941e-9927663e1128：title「パラレリズム」、Album、first-release-date 1984-09-25、artist-credit「越美晴」。證據：https://www.discogs.com/master/194556 https://musicbrainz.org/release-group/48994e77-cf71-442d-941e-9927663e1128 https://coverartarchive.org/release-group/48994e77-cf71-442d-941e-9927663e1128/front-250",
+    "queryAlias": "Parallelisme；越美晴"
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/48994e77-cf71-442d-941e-9927663e1128/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸錨點制：Yen 原盤、2021 重製上串流"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "越美晴赴歐洲巡演那年，荷蘭的廠牌也開始替她發片。這位自幼學古典的 synth-pop 歌手，1984 年 9 月 25 日推出在 Yen 的第二張《パラレリズム》，仍由細野晴臣製作。那家廠牌是阿姆斯特丹的 Pick Up Records，從這年開始發行她的單曲與專輯。全碟 9 首，A 面以〈龍宮城的戀人〉開場，B 面收標題曲，約 5 分 10 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/194556",
+     "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%82%B7%E3%83%9F%E3%83%8F%E3%83%AB",
+     "https://www.discogs.com/release/2336840",
+     "https://musicbrainz.org/release-group/48994e77-cf71-442d-941e-9927663e1128"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/44/56/70/44567022-1bcb-4f9d-4d6f-2681737ff3db/mzaf_17646191382839192576.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1573192568",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1573192568「Miharu Koshi《パラレリズム》」：Apple コシミハル《パラレリズム》9 軌（2021 Remastering 版，曲名帶副標故自動比對只中 2/9；曲序與 MB 原盤一致），取第 1 軌〈Un amoureux dans le chateau sous-marin (2021 Remastering)〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sketch Show",
+   "album": "audio sponge",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c93a7e39-4220-3e0f-b135-e97c9eaab3f7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本 YMO 周邊：細野晴臣與高橋幸宏的 Sketch Show 首作，Glitch／電子民謠，YMO 後的新方向。｜⚠ MB 標 SKETCH SHOW；Apple 作スケッチ・ショー｜MB release-group c93a7e39-4220-3e0f-b135-e97c9eaab3f7：title「audio sponge」、Album、first-release-date 2002-09-19、artist-credit「SKETCH SHOW」。證據：https://music.apple.com/jp/album/audio-sponge/1586154069 https://musicbrainz.org/release-group/c93a7e39-4220-3e0f-b135-e97c9eaab3f7 https://coverartarchive.org/release-group/c93a7e39-4220-3e0f-b135-e97c9eaab3f7/front-250",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c93a7e39-4220-3e0f-b135-e97c9eaab3f7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 12785,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 12785）；主線：冷門軸錨點制：Last.fm 1.3 萬、串流可得；電子流行"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "原本想好的團名撞上狂牛症，只好留給專輯。細野晴臣與高橋幸宏 2002 年組成電子雙人組 Sketch Show，起頭是高橋的個人作品請細野來製作。被讓出的那個名字是 Audio Sponge，於是成了出道盤的標題。《audio sponge》2002 年 9 月 19 日上市，收 12 首，坂本龍一與 Towa Tei 也來參與。兩人都開口唱，也彈傳統樂器，搭配電腦編程出的音色。曲目裡還有一首〈Theme From A Summer Place〉的翻唱。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/Sketch_Show",
+     "https://www.discogs.com/master/2221222-Sketch-Show-Audio-Sponge",
+     "https://en.wikipedia.org/wiki/Sketch_Show",
+     "https://musicbrainz.org/release-group/c93a7e39-4220-3e0f-b135-e97c9eaab3f7",
+     "https://www.discogs.com/release/2221222"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e5/a9/3b/e5a93bb7-75c2-eddc-b4b7-292e3f2d8894/mzaf_4420899012456570616.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1586154069",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1586154069「SKETCH SHOW《audio sponge》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈TURN TURN〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Doopees",
+   "album": "Doopee Time",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "16c17efc-fe7d-3e92-b072-90d724d993fe",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本嘻哈：日本 90 年代初期嘻哈代表之一，For Life 廠牌旗下 Doopees 唯一全長專輯代表（Dooits! 為 EP）。｜⚠ 名氣與評論資料少，代表性靠 MB 全長作品僅二張｜MB release-group 16c17efc-fe7d-3e92-b072-90d724d993fe：title「Doopee Time」、Album、first-release-date 1995-10-20、artist-credit「Doopees」。證據：https://musicbrainz.org/release-group/16c17efc-fe7d-3e92-b072-90d724d993fe https://coverartarchive.org/release-group/16c17efc-fe7d-3e92-b072-90d724d993fe/front-250",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/16c17efc-fe7d-3e92-b072-90d724d993fe/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 4,
+    "listeners": 109213,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 109213）；主線：冷門軸錨點制：Last.fm 10.9 萬，串流常態流通；space age pop"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Doopees 這對少女二人組，只存在於唱片裡。製作人ヤン富田在 1995 年虛構出這兩個女孩，成員 Suzi Kim 由他自己扮演，Caroline Novac 則交給 Buffalo Daughter 的大野由美子。《Doopee Time》1995 年 10 月 20 日透過 For Life Records 發行，是收了 20 首的 space age pop 概念作。鋼鼓、電子音色與唱盤片段交錯其間，最後一首翻唱海灘男孩的〈Caroline, No〉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Yann_Tomita",
+     "https://www.discogs.com/master/3371020-Doopees-Doopee-Time",
+     "https://ja.wikipedia.org/wiki/%E3%83%A4%E3%83%B3%E5%AF%8C%E7%94%B0",
+     "https://musicbrainz.org/release-group/16c17efc-fe7d-3e92-b072-90d724d993fe",
+     "https://www.discogs.com/release/3371020"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f3/8d/a8/f38da812-0abf-e6b5-6a8c-323f138cbfda/mzaf_13116594633583912567.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1460092650",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1460092650「DOOPEES《DOOPEE TIME》」：曲目 19/20 對上 MB 原盤（Apple 共 20 軌），取第 1 軌〈WHAT'S THE TIME? (SOME DAY, IN TIME)〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Chouchou",
+   "album": "Night and Wanderer",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "60444700-e414-4cc1-b97b-6849ecb69d41",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本電子／環境：日本電子／現代古典雙人組 Chouchou，Night and Wanderer 為其成熟期主要專輯（theme02）。｜⚠ 池中 Lily Chou-Chou 非同人；此為 MB a18d9ff7 的日本 Chouchou。代表作靠 MB／Apple 判斷，評論少｜MB release-group 60444700-e414-4cc1-b97b-6849ecb69d41：title「theme02 Night and Wanderer」、Album、first-release-date 2017-08-11、artist-credit「Chouchou」。證據：https://music.apple.com/jp/album/night-and-wanderer/1720039717 https://musicbrainz.org/release-group/60444700-e414-4cc1-b97b-6849ecb69d41 https://coverartarchive.org/release-group/60444700-e414-4cc1-b97b-6849ecb69d41/front-250",
+    "queryAlias": "theme02 Night and Wanderer"
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/60444700-e414-4cc1-b97b-6849ecb69d41/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 5,
+    "listeners": 2436,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2436）；主線：冷門軸錨點制：自主發行、串流可得；鋼琴人聲"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "東京雙人組 Chouchou 自己發行，只賣數位檔。主唱是 juliet Heberle，古典鋼琴出身的 arabesque Choche 包辦作曲與編曲，兩人的音樂以電子編制為底。2017 年 8 月推出的《Night and Wanderer》是第二張概念專輯，主題是旅行的夜晚，收 10 首。同時另出一張伴奏版。",
+    "sourceUrls": [
+     "https://chouchou.cc/biography/",
+     "https://chouchou.cc/songs/night_and_wanderer/",
+     "https://musicbrainz.org/release-group/60444700-e414-4cc1-b97b-6849ecb69d41",
+     "https://musicbrainz.org/release/aadf3009-9b95-49f9-9e87-fe0a81fc9768"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/72/79/62/727962cd-f1d8-274f-6200-62710a5748ef/mzaf_7581726146148765839.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1720039717",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1720039717「Chouchou《Night and Wanderer》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈l'heure Bleue〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "沖山秀子 Hideko Okiyama",
+   "album": "Summertime",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"沖山秀子\" AND releasegroup:\"Summertime\" → 0",
+      "releasegroup:\"Summer Time\" AND artist:\"Hideko Okiyama\" → 0；MB 藝人 5a654a35 下 release-group 0 筆"
+     ],
+     "checkedAt": "2026-10-30",
+     "conclusion": "MB 藝人 5a654a35-0b7a-4673-945f-d50487ed0884（沖山秀子）下無任何 release group；Discogs master 259188 記 1981 Trio Records"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/259188",
+     "https://music.apple.com/jp/album/summer-time/1655543966"
+    ],
+    "manualRuling": "雲端主線 2026-10-30 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261030-sf04）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "日本電子／環境：1960–70 年代日本爵士／歌謠女伶沖山秀子的代表專輯，1981 年 Trio 錄音，後多次再版。｜⚠ Apple 版為 2006 Clinck 再版（封面來源）；原盤 1981｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/259188 https://music.apple.com/jp/album/summer-time/1655543966 https://www.discogs.com/master/259188 https://music.apple.com/jp/album/summer-time/1655543966",
+    "queryAlias": "沖山秀子"
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1655543966",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/01/e9/3f/01e93f68-47c6-3602-4398-6984f9eb9770/4582239500095_cover.jpg/600x600bb.jpg",
+    "note": "人工身分、無 MB；取 Apple jp 1655543966「沖山 秀子《Summer Time》」官方封面；主線 2026-10-30 核對盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸錨點制：1981 原盤、2006 再版上串流；爵士人聲"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "演過黑澤明電影的沖山秀子，三天錄完十首標準曲。1945 年生的她本行是演員，那部電影是《電車狂》。錄音排在 1981 年 8 月的日活 Studio Centre，唱的全是爵士曲目。《Summertime》同年 10 月 25 日在 Trio Records 發行，標題曲之外還有〈Body And Soul〉。Takeshi Shibuya 彈鋼琴並擔任音樂總監，宮沢昭吹次中音薩克斯風，也吹長笛。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/2344600",
+     "https://api.discogs.com/masters/259188",
+     "https://api.discogs.com/releases/4111724",
+     "https://ja.wikipedia.org/wiki/沖山秀子",
+     "https://api.discogs.com/masters/259188/versions",
+     "https://www.discogs.com/master/259188",
+     "https://music.apple.com/jp/album/summer-time/1655543966"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/17/fb/07/17fb0767-dac7-8b5a-187c-945d7091ea1a/mzaf_1157334298605002961.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1655543966",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1655543966「沖山 秀子《Summer Time》」：Apple 沖山秀子《Summer Time》＝本盤（§1 人工，無 MB 曲目可比），取第 1 軌〈I’m A Fool To Want You (Cover)〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "篠崎史子 Ayako Shinozaki",
+   "album": "ハープの個展 Music Now for Harp",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0060e5ed-31c6-47dd-9b2f-97d1a7cbe740",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本電子／環境：日本現代豎琴演奏家篠崎史子委託現代作曲家的 1973 年名盤，收武滿徹、小杉武久等作品。｜⚠ MB 藝人署名含武滿徹等作曲者；封面取 Apple（CAA 無圖）；Spotify 盤名可能為 Music Now for Harp｜MB release-group 0060e5ed-31c6-47dd-9b2f-97d1a7cbe740：title「ハープの個展」、Album、first-release-date 1973、artist-credit「武満徹, 坪能克裕, 小杉武久; 篠崎史子」。證據：https://music.apple.com/jp/album/music-now-for-harp/1705353167 https://musicbrainz.org/release-group/0060e5ed-31c6-47dd-9b2f-97d1a7cbe740",
+    "queryAlias": "Ayako Shinozaki；ハープの個展；武満徹, 坪能克裕, 小杉武久; 篠崎史子"
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1705353167",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/74/ec/4e/74ec4ef7-ef11-1e41-1909-8903f3417fb0/COKM-44570.jpg/600x600bb.jpg",
+    "note": "CAA 無圖；取 Apple us 1705353167「Ayako Shinozaki《Music Now for Harp》」官方封面；主線 2026-10-30 核對盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸錨點制：Denon 原盤、Wewantsounds 重發上串流；現代音樂豎琴"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "豎琴家篠崎史子年年辦的個展，成了唱片的名字。曾在紐約茱莉亞音樂學院習琴的她，1946 年生於音樂家庭，先學小提琴，後來才改彈豎琴。1972 年起她每年辦一場「豎琴個展」獨奏會。1973 年 6 月，她進 Nippon Columbia 的第二錄音室灌錄。A 面是武滿徹的〈Stanza II〉與坪能克裕的〈Poem of Lin〉，B 面整面留給小杉武久的〈Heterodyne〉，約 24 分半，由豎琴與他的電小提琴合奏。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/27537597",
+     "https://musicyouneedtohear.com/ayako-shinozaki-music-now-for-harp/",
+     "https://www.hhv-mag.com/review/ayako-shinozaki-music-now-for-harp/?lang=en",
+     "https://musicbrainz.org/release-group/0060e5ed-31c6-47dd-9b2f-97d1a7cbe740"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d6/ba/f4/d6baf44d-8820-7995-0e0a-76a18683f075/mzaf_14427421778292283288.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1705353167",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1705353167「Ayako Shinozaki《Music Now for Harp》」：Apple Ayako Shinozaki《Music Now for Harp》3 軌＝本盤（Wewantsounds 重發），取第 1 軌〈Stanza II〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Yasushi Ide 井出靖",
+   "album": "Cosmic Suite 2 -New Beginning-",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "98020e07-f6af-4824-b7b2-0c4689f096a1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本電子／環境：DJ／作曲家井出靖（Lonesome Echo Strings 主腦）近年 cosmic 爵士電子作，MB 有收錄的正規專輯。｜⚠ 生涯高峰其實在 1999 Lonesome Echo Strings（Plein Soleil、Meets The World，署名不同藝人）；此處只收 Yasushi Ide 署名的盤，Cosmic Suite（2020）MB 無 RG｜MB release-group 98020e07-f6af-4824-b7b2-0c4689f096a1：title「Cosmic Suite2-New Beginning-」、Album、first-release-date 2022-06-24、artist-credit「Yasushi Ide」。證據：https://musicbrainz.org/release-group/98020e07-f6af-4824-b7b2-0c4689f096a1 https://coverartarchive.org/release-group/98020e07-f6af-4824-b7b2-0c4689f096a1/front-250 https://www.discogs.com/master/2997671",
+    "queryAlias": "井出靖；Yasushi Ide"
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/98020e07-f6af-4824-b7b2-0c4689f096a1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸錨點制：Grand Gallery 串流可得"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "為小提琴改編的 Jeff Mills，長成第二章太空組曲。從 1995 年起，井出靖先以 Lonesome Echo Strings 的名義發片。2020 年的《Cosmic Suite》起於他把 Jeff Mills 的音樂改編給小提琴家 Chieko Kinbara，最後擴成約 36 分鐘的太空長篇。續作的發行落在 2022 年 6 月，廠牌是 Grand Gallery，收 16 首。來賓有 Don Letts 與 DJ Krush，〈Lava〉則請 UA 演唱。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/23726150",
+     "https://forcedexposure.com/Catalog/ide-yasushi-cosmic-suite-2-new-beginning-lp/GRGWAS.001LP.html",
+     "https://api.discogs.com/masters/2997671",
+     "https://mixmag.asia/feature/best-albums-2022",
+     "https://api.discogs.com/artists/14102/releases?per_page=30",
+     "https://lightintheattic.net/products/space-jam",
+     "https://musicbrainz.org/release-group/98020e07-f6af-4824-b7b2-0c4689f096a1"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/23/fb/77/23fb7736-d9d6-2941-dded-296f03364e18/mzaf_9408783094276709397.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1628981337",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1628981337「井出 靖《Cosmic Suite2 - New Beginning》」：曲目 15/16 對上 MB 原盤（Apple 共 16 軌），取第 1 軌〈Mirror (feat. Josué Thomas)〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "YPY",
+   "album": "Zurhyrethm",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "235092d3-d8d2-416c-b5e5-59e641cb4829",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本電子／環境：大阪電子音樂人 YPY 交由 EM Records 發行的長篇專輯，bass／beat 與 dub 融合。｜⚠ YPY 同名者多，MB 為 Japanese electronic musician；代表作選擇無評論共識可依｜MB release-group 235092d3-d8d2-416c-b5e5-59e641cb4829：title「Zurhyrethm」、Album、first-release-date 2016-06-25、artist-credit「YPY」。證據：https://musicbrainz.org/release-group/235092d3-d8d2-416c-b5e5-59e641cb4829 https://coverartarchive.org/release-group/235092d3-d8d2-416c-b5e5-59e641cb4829/front-250",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/235092d3-d8d2-416c-b5e5-59e641cb4829/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 94,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 94）；主線：冷門軸錨點制：EM Records 卡帶質地，串流未上架"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 2；obscurity=5 但沒有遺珠級證據（listeners 94），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一次器材故障，成了日野浩志郎的標題曲。也領導樂團 Goat 的他是大阪的電子樂創作者，YPY 是他的獨奏計畫。〈Zurhyrethm〉就源自那次故障，他把意外當成創作上的選擇。整張用卡式錄音帶錄成，七首是從七十多首作品裡挑出來的。鼓機與合成器堆出以打擊為主的曲子，還混入泰國的 molam 與 luk thung。2016 年 3 月，南大阪的 EM Records 把它發成雙張 12 吋黑膠。",
+    "sourceUrls": [
+     "https://emrecords.bandcamp.com/album/zurhyrethm",
+     "https://api.discogs.com/releases/8285174",
+     "https://api.discogs.com/masters/976418",
+     "https://api.discogs.com/artists/3485234/releases",
+     "https://musicbrainz.org/release-group/235092d3-d8d2-416c-b5e5-59e641cb4829"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "Apple jp／us 查無 YPY《Zurhyrethm》（EM Records 2016）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "KUSO GVKI",
+   "album": "Culture",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d52eb015-b6e0-43fb-b61b-4579ff8d457b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本嘻哈：KUSO GVKI 2019 年錄音室專輯，Block Opera 發行，兩張全長中知名度較高。｜⚠ 國籍依 Apple JP 與 Block Opera 推定為日本；評論資料少｜MB release-group d52eb015-b6e0-43fb-b61b-4579ff8d457b：title「Culture」、Album、first-release-date 2019-09-27、artist-credit「KUSO GVKI」。證據：https://music.apple.com/jp/album/culture/1679417086 https://musicbrainz.org/release-group/d52eb015-b6e0-43fb-b61b-4579ff8d457b https://coverartarchive.org/release-group/d52eb015-b6e0-43fb-b61b-4579ff8d457b/front-250",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d52eb015-b6e0-43fb-b61b-4579ff8d457b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 4217,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 4217）；主線：冷門軸錨點制：Last.fm 4,200、串流可得；器樂 beat 短曲"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "杜塞道夫的日裔 beatmaker，把藝名取作臭小鬼。KUSO GVKI 這個藝名用的是日文發音，他在日本人家庭長大，國籍是德國，現在住柏林。2019 年 9 月 27 日以黑膠與數位兩種形式由 Block Opera 發行《Culture》，黑膠只壓 500 張。八首總長約 18 分鐘，後三首都有客座人聲。重低音的 beat 配上夢幻的人聲碎片，中間夾著長笛、吉他與小號。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/14192193",
+     "https://kusogvki.bandcamp.com/album/culture",
+     "https://api.discogs.com/artists/5602556",
+     "https://api.discogs.com/labels/1663698",
+     "https://musicbrainz.org/release-group/d52eb015-b6e0-43fb-b61b-4579ff8d457b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b0/5d/31/b05d3134-4a3a-7fcc-37e0-05883d6de3d3/mzaf_8271707318702497546.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1679417086",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1679417086「KUSO GVKI《Culture》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Konichiwa〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ECD",
+   "album": "ホームシック",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d86b1248-2faa-4584-b33b-6f6bfb572f11",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本嘻哈：日本嘻哈先驅 ECD（石田義則）的第二作，公認 90 年代日本語饒舌經典（Homesick）。｜⚠ 池中無 ECD，但 ECD 是子字串易誤中，已人工確認無同名｜MB release-group d86b1248-2faa-4584-b33b-6f6bfb572f11：title「ホームシック」、Album、first-release-date 1995-03-01、artist-credit「ECD」。證據：https://musicbrainz.org/release-group/d86b1248-2faa-4584-b33b-6f6bfb572f11 https://coverartarchive.org/release-group/d86b1248-2faa-4584-b33b-6f6bfb572f11/front-250 https://musicbrainz.org/artist/611784bf-1c97-49b9-a48e-fa7dffc7d1db",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d86b1248-2faa-4584-b33b-6f6bfb572f11/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 262,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 262）；主線：冷門軸錨點制：cutting edge 原盤，串流未上架但為大廠旗下"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "ECD 自己辦過饒舌活動，1995 年再交出十首。他是 1989 年嘻哈活動 CHECK YOUR MIKE 的主辦人，本名石田義則，出生地是東京。《ホームシック》1995 年 3 月 1 日登場，由 Cutting Edge 發行。製作人欄署名三位：ECD 本人、Illicit Tsuboi 與 Takeshi Kubota。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/9588293",
+     "https://ja.wikipedia.org/wiki/ECD_(ミュージシャン)",
+     "https://musicbrainz.org/release-group/d86b1248-2faa-4584-b33b-6f6bfb572f11"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "Apple ECD 目錄有《ECD》《失点 In the Park》等，無《ホームシック》（1995 cutting edge）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "SHAKKAZOMBIE",
+   "album": "HERO THE S.Z.",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6f5dd6ee-1028-37df-be6b-055464742fc1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本嘻哈：日本嘻哈團 SHAKKAZOMBIE 的成名作，OSUMI 與 Ikkyu 登峰造極的日語饒舌與 sample 作品。｜策展無疑點｜MB release-group 6f5dd6ee-1028-37df-be6b-055464742fc1：title「HERO THE S.Z.」、Album、first-release-date 1997-07-24、artist-credit「ShakkaZombie」。證據：https://music.apple.com/jp/album/hero-the-s-z/392912544 https://musicbrainz.org/release-group/6f5dd6ee-1028-37df-be6b-055464742fc1 https://coverartarchive.org/release-group/6f5dd6ee-1028-37df-be6b-055464742fc1/front-250",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6f5dd6ee-1028-37df-be6b-055464742fc1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 2515,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2515）；主線：冷門軸錨點制：cutting edge、串流可得"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Dabo、Macka-Chin、Suiken 都擠進合唱欄。OSUMI 與 Ignition Man 拿麥克風，Tsutchie 管節拍，三人 1993 年組成饒舌團 SHAKKAZOMBIE。1997 年 7 月 24 日問世的《HERO THE S.Z.》是他們第一張全長，DJ Hazime、Gore-Tex 等同圈 MC 也在合唱欄裡。全盤 14 首，製作人掛 Tsutchie。前一年 4 月，他們以翻唱〈手のひらを太陽に〉在 cutting edge 主流出道。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/6f5dd6ee-1028-37df-be6b-055464742fc1",
+     "https://en.wikipedia.org/wiki/Shakkazombie",
+     "https://ja.wikipedia.org/wiki/SHAKKAZOMBIE",
+     "https://www.discogs.com/release/4195802",
+     "https://www.netoff.co.jp/detail/0001409556/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c1/91/1f/c1911f7c-2408-7831-ccc4-defcb32afd0c/mzaf_6017089649042849449.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "392912544",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 392912544「SHAKKAZOMBIE《HERO THE S.Z.》」：Apple SHAKKAZOMBIE《HERO THE S.Z.》13 軌（MB 首個 release 含多碟，故自動比對只算 13/52），取第 1 軌〈OMEN〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "SHAKKAZOMBIE",
+   "album": "JOURNEY OF FORESIGHT",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9395e6d1-4d2d-3814-9caa-d36e22cb9473",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本嘻哈：第二個高峰，更成熟的製作與主題，日本嘻哈迷常與 HERO THE S.Z. 並列的名作。｜策展無疑點｜MB release-group 9395e6d1-4d2d-3814-9caa-d36e22cb9473：title「Journey of Foresight」、Album、first-release-date 1999-07-23、artist-credit「ShakkaZombie」。證據：https://music.apple.com/jp/album/journey-of-foresight/392912083 https://musicbrainz.org/release-group/9395e6d1-4d2d-3814-9caa-d36e22cb9473 https://coverartarchive.org/release-group/9395e6d1-4d2d-3814-9caa-d36e22cb9473/front-250",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9395e6d1-4d2d-3814-9caa-d36e22cb9473/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 1349,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1349）；主線：冷門軸錨點制：cutting edge、串流可得"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "靜默四分多鐘之後，最後一軌才冒出隱藏曲。第二張全長出自日本嘻哈團 SHAKKAZOMBIE 之手，1999 年 7 月交給 cutting edge 發行，16 軌全由團員自己製作。收尾的〈Outro (To the Pathless World)〉近 8 分鐘，2 分 19 秒後轉入靜默，約 6 分 33 秒起才是只列在小冊裡的〈A Place in the Sun〉。混音找了 Illicit Tsuboi，母帶送到紐約交給 Tom Coyne。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4198809",
+     "https://en.wikipedia.org/wiki/Shakkazombie",
+     "https://musicbrainz.org/release-group/9395e6d1-4d2d-3814-9caa-d36e22cb9473",
+     "https://ja.wikipedia.org/wiki/SHAKKAZOMBIE"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/07/48/0c/07480c7e-660b-e5c7-ed32-7e87a24cae0e/mzaf_14535541091174533280.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "392912083",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 392912083「SHAKKAZOMBIE《JOURNEY OF FORESIGHT》」：曲目 15/16 對上 MB 原盤（Apple 共 17 軌），取第 1 軌〈ELECTRONIC COMPOSITION〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hoshina Anniversary",
+   "album": "Jomon",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "14934bea-8b0d-486e-9e9a-b812e6e1d8e4",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本電子／環境：Hoshina Anniversary 將日本傳統音階與電子結合的代表系列之一（Jomon／日本の音楽／Odoriko）。｜⚠ 池中 IVE|REVIVE+ 為誤中；代表作 Jomon 選自 CAA 有圖者，無評論共識｜MB release-group 14934bea-8b0d-486e-9e9a-b812e6e1d8e4：title「Jomon」、Album、first-release-date 2021-05-14、artist-credit「Hoshina Anniversary」。證據：https://musicbrainz.org/release-group/14934bea-8b0d-486e-9e9a-b812e6e1d8e4 https://coverartarchive.org/release-group/14934bea-8b0d-486e-9e9a-b812e6e1d8e4/front-250",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/14934bea-8b0d-486e-9e9a-b812e6e1d8e4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 839,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 839）；主線：冷門軸錨點制：ESP Institute、串流可得；house 與民俗取材"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "古代日本樂器接上鐵克諾，保科芳信管這叫 Watechno。ESP Institute 先替這位東京製作人發過數張 EP，他用的名義是 Hoshina Anniversary。樂器上，他讓古老的日本樂器和電子鍵盤同台，並把本作看成這套做法的集大成。2021 年 5 月，同一家廠牌替他推出第一張專輯，75 分鐘左右的 14 首曲子，名稱都取自日本典故。",
+    "sourceUrls": [
+     "https://hoshinaanniversary.bandcamp.com/album/jomon",
+     "https://www.hhv-mag.com/review/hoshina-anniversary-hisyochi/?lang=en",
+     "https://musicbrainz.org/release/0eb32450-d257-4246-9f92-98a5670db170",
+     "https://truantsblog.com/2021/truancy-volume-283-hoshina-anniversary/",
+     "https://mixmag.asia/read/hoshina-anniversary-shin-sekai-audio-asia",
+     "https://musicbrainz.org/release-group/14934bea-8b0d-486e-9e9a-b812e6e1d8e4"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/25/bc/a2/25bca2b9-efb3-7c9c-061b-70a0aa7f1a57/mzaf_4773929098838539224.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1678112893",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1678112893「Hoshina Anniversary《Jomon》」：曲目 12/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Hitsuji〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tokimeki Records",
+   "album": "透明なガール",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d4d042b7-9069-428a-9f91-098e719b411d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本 lo-fi／城市流行：Tokimeki Records 為原創 city pop／lo-fi 製作人項目（非翻唱帳號），透明なガール 為其 2022 年主要專輯。｜⚠ 身分為廠牌兼藝人；MB 有 artist 2019 成立；Tokimeki Mellow 為 EP 不收｜MB release-group d4d042b7-9069-428a-9f91-098e719b411d：title「透明なガール」、Album、first-release-date 2022-10-04、artist-credit「Tokimeki Records」。證據：https://musicbrainz.org/release-group/d4d042b7-9069-428a-9f91-098e719b411d https://coverartarchive.org/release-group/d4d042b7-9069-428a-9f91-098e719b411d/front-250 https://www.discogs.com/master/3080354",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d4d042b7-9069-428a-9f91-098e719b411d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 5,
+    "listeners": 3151,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 3151）；主線：冷門軸錨點制：串流可得；city pop"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "翻唱〈Plastic Love〉起家的計畫，終於全唱原創。製作人高波 Yutaka 在 2019 年夏天發起 Tokimeki Records，專門重唱 1980 到 1990 年代的名曲，出道曲正是竹內まりや那首。2022 年春天起，人聲固定交給ひかり，先後放出 7 首原創單曲，其中〈Sweet Escape〉最受關注。到了 10 月上旬，第一張原創全長以數位形式上架，收 10 首。編曲以電子布吉為底，律動滑順，多種合成器層層鋪開，ひかり唱得慵懶。",
+    "sourceUrls": [
+     "https://realsound.jp/2022/08/post-1097320.html",
+     "https://realsound.jp/2022/10/post-1148115.html",
+     "https://www.nme.com/news/syd-hartha-sings-disco-infused-cover-of-the-cardigans-carnival-by-tokimeki-records-3057515",
+     "https://www.discogs.com/master/3080354",
+     "https://musicbrainz.org/release-group/d4d042b7-9069-428a-9f91-098e719b411d"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/2a/66/4d2a6691-22b8-4ba0-c90c-cc6fce1caa9b/mzaf_1562390905180089547.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1641294773",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1641294773「Tokimeki Records《透明なガール》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Virgin Mojito〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "kinoue64",
+   "album": "空間、事情、時間、事象。",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "01197e7d-5f3f-4f54-a806-2a60cd315b58",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本寢室電子：日本寢室系製作人的首張全長，奠定其空靈電子與日常感歌聲的風格｜⚠ 多張專輯無公認代表，取首張全長；2023 年另有《終末エンドロール》｜MB release-group 01197e7d-5f3f-4f54-a806-2a60cd315b58：title「空間、事情、時間、事象。」、Album、first-release-date 2022-02-03、artist-credit「kinoue64」。證據：https://music.apple.com/jp/album/1608512211 https://musicbrainz.org/release-group/01197e7d-5f3f-4f54-a806-2a60cd315b58",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/01197e7d-5f3f-4f54-a806-2a60cd315b58/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 5063,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 5063）；主線：冷門軸錨點制：Last.fm 5,000、串流可得；shoegaze"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "kinoue64 把整張放上 Bandcamp，免費下載。廣島出身、2001 年起活動的他，作品標籤是 shoegaze、indie rock 一路。2022 年 2 月 3 日放出的 8 首長約 34 分半，採 CC BY-NC 授權。隔年 7 月，這張又以卡帶形式再發。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/d0e01b09-7b44-450d-ae1b-a76339b4b053",
+     "https://kinoue64.bandcamp.com/album/--33",
+     "https://www.discogs.com/release/27617979",
+     "https://musicbrainz.org/artist/0ae66f24-6c8c-43a1-9098-b0692379c768",
+     "https://musicbrainz.org/release-group/01197e7d-5f3f-4f54-a806-2a60cd315b58"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/c7/7d/28/c77d2850-e1d1-b353-774c-eccf845f757f/mzaf_3523258735676763958.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1608512211",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1608512211「kinoue64《空間、事情、時間、事象。》」：Apple kinoue64《空間、事情、時間、事象。》8 軌，掛名盤名一致（MB 曲名羅馬字，自動比對 0/8），取第 1 軌〈Always in a Dream〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Emapea",
+   "album": "Zoning Out Volume 1",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ebb79bd7-e957-4297-aac2-9e9dfaecd039",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Lo-fi 嘻哈：波蘭 lo-fi 節拍製作人，Zoning Out 系列為其招牌，Cold Busted 發行｜⚠ 多為節拍集，代表作無評論共識；取招牌系列首作｜MB release-group ebb79bd7-e957-4297-aac2-9e9dfaecd039：title「Zoning Out Volume 1」、Album、first-release-date 2018-02-16、artist-credit「Emapea」。證據：https://music.apple.com/us/album/1339218544 https://musicbrainz.org/release-group/ebb79bd7-e957-4297-aac2-9e9dfaecd039",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ebb79bd7-e957-4297-aac2-9e9dfaecd039/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 5,
+    "listeners": 7468,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 7468）；主線：冷門軸錨點制：Last.fm 7,500、串流可得；lo-fi beat"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "二十段短節拍，最短的不到一分鐘。Emapea 來自波蘭，專門做節拍，錄音就在當地，製作一手包辦。2018 年 2 月交 Cold Busted 發行的器樂節拍共約 43 分鐘，〈Invasion〉只有 52 秒。整張是給人放空用的節拍集。〈Check It Out〉裡有滑順的鼓點、清亮琴鍵與淡淡的薩克斯風。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/52505fe7-4f88-48d5-8d1d-54a2dd11cbfc",
+     "https://emapea.bandcamp.com/album/zoning-out-volume-1",
+     "https://musicbrainz.org/release-group/ebb79bd7-e957-4297-aac2-9e9dfaecd039",
+     "https://musicbrainz.org/artist/e6328844-b409-4faa-9929-bee35d118fad"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/50/c5/a4/50c5a4dd-501f-e09a-0500-132137327b39/mzaf_13111538363222049562.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1339218544",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1339218544「Emapea《Zoning out Vol. 1》」：曲目 20/20 對上 MB 原盤（Apple 共 20 軌），取第 1 軌〈Tl to Lax〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "志人",
+   "album": "Zymolytic Human ~発酵人間~",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "aa89105e-5d2b-4727-bdcf-60a398e88eb3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本嘻哈：降神成員志人的個人代表全長，獨特詩性flow｜⚠ Spotify 寫法 sibitt＝志人（Discogs 345683）；另有與スガダイロー合作《詩種》｜MB release-group aa89105e-5d2b-4727-bdcf-60a398e88eb3：title「Zymolytic Human ~発酵人間~」、Album、first-release-date 2012-03-14、artist-credit「Sibitt」。證據：https://music.apple.com/jp/album/1857543255 https://musicbrainz.org/release-group/aa89105e-5d2b-4727-bdcf-60a398e88eb3",
+    "queryAlias": "Sibitt"
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/aa89105e-5d2b-4727-bdcf-60a398e88eb3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 172,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 172）；主線：冷門軸錨點制：P-Vine 原盤、串流未見原版；密語饒舌"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "志人在蒙特婁找來一整圈當地樂手，做成自己的個人專輯。身為二人組降神的成員，志人是日本的 MC 兼詩人。2010 年他隨三人組 Triune Gods 到蒙特婁做專輯，愛上當地的人與音樂，回頭邀請那裡音樂圈的各路人馬合作，〈人間復興〉一曲還列有 Kid Koala 與 DJ Q-Bert 的名字。2012 年 3 月 14 日面世的成品收 11 首，長達 59 分鐘。副標「発酵人間」把發酵比作正向的成長。底子是抽象的電子與嘻哈，志人說唱沉著，有時像在唸咒。",
+    "sourceUrls": [
+     "https://www.discogs.com/artist/345683",
+     "https://www.discogs.com/release/5755800",
+     "https://musicbrainz.org/artist/7e51b0a7-c7e2-4d35-b4d0-34783c6a5ceb",
+     "https://musicbrainz.org/release-group/aa89105e-5d2b-4727-bdcf-60a398e88eb3"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "Apple 只有 2017《Hakkou-Ningen》（11 軌，與 2012 P-Vine 原盤年份與曲數不同，疑為另版），不取。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ironomi",
+   "album": "虹",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "68520dcf-8092-4f8d-b899-2d6f333c3eee",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本 ambient：日本 ambient／電子作者，Kitchen. Label 發行的柔光之作｜⚠ 多張專輯，代表作憑印象取《虹》｜MB release-group 68520dcf-8092-4f8d-b899-2d6f333c3eee：title「虹」、Album、first-release-date 2015-12-24、artist-credit「いろのみ」。證據：https://music.apple.com/jp/album/1512512928 https://musicbrainz.org/release-group/68520dcf-8092-4f8d-b899-2d6f333c3eee",
+    "queryAlias": "いろのみ"
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/68520dcf-8092-4f8d-b899-2d6f333c3eee/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 5,
+    "listeners": 6372,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 6372）；主線：冷門軸錨點制：Last.fm 6,400、串流可得；鋼琴＋箏器樂"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "3 張 CD 裝了 12 首曲子，每一首都請來一位客人合作。以鋼琴與十七絃箏為本的 Ironomi 是日本二人組，本作排在第 7 張，來賓有沢田穣治、haruka nakamura 與 aspidistrafly 等人。柳平淳哉彈鋼琴，磯部優彈箏，並用 Max/MSP 自製取樣系統，把樂音即時取樣、加工，再混音成曲。2015 年 12 月 24 日由新加坡與東京兩地的 Kitchen. Label 發行，曲名全是自然意象。",
+    "sourceUrls": [
+     "https://ironomi.com/?p=about",
+     "https://musicbrainz.org/release-group/68520dcf-8092-4f8d-b899-2d6f333c3eee",
+     "https://www.discogs.com/label/761576",
+     "https://www.discogs.com/release/35932939",
+     "https://ironomi.com/?p=1863",
+     "https://ironomi.com/?p=1866",
+     "https://www.discogs.com/master/1018615"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/e3/b1/9f/e3b19f24-f8aa-ced8-223d-d3d9b1ab48c3/mzaf_652203511926317984.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1512512928",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1512512928「Ironomi《虹》」：曲目 11/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈風草 (feat. 沢田穣治)〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Magamura",
+   "album": "Supernaturals",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist Magamura 無MB條目",
+      "releasegroup:Supernaturals AND artist:Magamura 0 筆"
+     ],
+     "checkedAt": "2026-10-30",
+     "conclusion": "MB 查無；以 Discogs release 10023740（Kebko Music，2xLP）與 Apple Music 為身分依據"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/10023740",
+     "https://www.discogs.com/artist/1799610-Magamura"
+    ],
+    "manualRuling": "雲端主線 2026-10-30 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261030-sf04）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "電子：Magamura 唯一全長，雙黑膠限量發行｜⚠ 國籍依廠牌 Si Kebko（匈牙利）推定｜MB 查無（MB 查無；以 Discogs release 10023740（Si Kebko Music，2xLP）與 Apple Music 為身分依據），走 §1 人工身分。證據：https://www.discogs.com/release/10023740 https://www.discogs.com/artist/1799610-Magamura https://music.apple.com/jp/album/1283296203 https://www.discogs.com/release/10023740",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1283296203",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/6f/74/53/6f745318-a4f4-f5dc-0994-533470a95271/3663729042774_cover.jpg/600x600bb.jpg",
+    "note": "人工身分、無 MB；取 Apple us 1283296203「Magamura《Supernaturals》」官方封面；主線 2026-10-30 核對盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 59,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 59）；主線：冷門軸錨點制：小廠、串流可得；實驗電子"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Magamura 唯一的錄音，最先以一捲手工包裝的卡帶問世。匈牙利的即興實驗二人組由 Eril Fjord 與 Laurine Frost 組成，這也是兩人第一份商業發行。2017 年 2 月 17 日先由東京廠牌 Kebko Music 推出卡帶，紙盒以手工絹印。10 首長短加總 52 分鐘上下，風格橫跨 industrial、現代古典與 ambient。",
+    "sourceUrls": [
+     "https://www.theransomnote.com/?p=21846",
+     "https://www.discogs.com/label/823477",
+     "https://www.discogs.com/release/10023740",
+     "https://music.apple.com/jp/album/1283296203",
+     "https://www.discogs.com/artist/1799610-Magamura"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/98/16/a2/9816a2c2-d01e-8890-7bac-3e2911a5e4dd/mzaf_7031488535049509894.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1283296203",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1283296203「Magamura《Supernaturals》」：Apple Magamura《Supernaturals》（§1 人工，策展 evidence 同一 id），取第 1 軌〈Aspen '92〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "concrete concrete",
+   "album": "Drifter",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a1545a94-5d36-40b2-9ab8-197bbfa437e9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "後搖：器樂數學搖滾／後搖滾，唯一全長｜⚠ 同名者多；以 Spotify 上有 Drifter 者為準，國籍未確認｜MB release-group a1545a94-5d36-40b2-9ab8-197bbfa437e9：title「Drifter」、Album、first-release-date 2019-08-02、artist-credit「concrete concrete」。證據：https://music.apple.com/jp/album/1473233618 https://musicbrainz.org/release-group/a1545a94-5d36-40b2-9ab8-197bbfa437e9",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a1545a94-5d36-40b2-9ab8-197bbfa437e9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 2750,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2750）；主線：冷門軸錨點制：自主發行、串流可得；器樂 math rock"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "鼓與吉他錄在紐約，弦樂錄在波士頓，混音送去東京。紐約四人器樂樂團 concrete concrete 走的是 math rock 與 post-rock。主要錄音由 Todd Carder 操刀；弦樂與人聲移到波士頓另錄，11 人的弦樂團由團員 Andi Wang 編曲並親自指揮；母帶也一併在東京處理。2019 年 8 月 2 日自行發行，11 首合計約 45 分鐘，4 到 7 分鐘的長曲之間穿插 1 分鐘內的過場。致謝名單裡還有台灣的 Elephant Gym。",
+    "sourceUrls": [
+     "https://concretemusic.bandcamp.com/album/drifter",
+     "https://www.discogs.com/release/14713783",
+     "https://musicbrainz.org/release/69839da1-2ac7-4239-9a19-b5e798b5d3e9",
+     "https://musicbrainz.org/release-group/a1545a94-5d36-40b2-9ab8-197bbfa437e9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f3/43/5f/f3435f56-0d07-8ae1-7a41-269917aa08a0/mzaf_16667595874313825077.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1473233618",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1473233618「concrete concrete《Drifter》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Departure〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Chestnut Bakery",
+   "album": "Diaries",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2ae03718-474a-42f7-8cfc-8a9dc0fe96ba",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "華語 shoegaze：中國 shoegaze／dream pop 樂團首張全長｜策展無疑點｜MB release-group 2ae03718-474a-42f7-8cfc-8a9dc0fe96ba：title「Diaries」、Album、first-release-date 2015-11-22、artist-credit「Chestnut Bakery」。證據：https://music.apple.com/us/album/1867773485 https://musicbrainz.org/release-group/2ae03718-474a-42f7-8cfc-8a9dc0fe96ba",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2ae03718-474a-42f7-8cfc-8a9dc0fe96ba/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 4,
+    "listeners": 125767,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 125767）；主線：冷門軸錨點制：Last.fm 12.6 萬，串流常態流通；dream pop"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "珠海的大學新生，拿校園旁的烤栗子攤替樂團取了名。2011 年組團的 Chestnut Bakery 中文名栗子蛋糕房，是一支中國的 dream pop／shoegaze 樂團。樂團的出道專輯在成員畢業之際錄成，2015 年 11 月 22 日交給深圳的 BoringProductions 發行。吉他噪音與夢幻殘響打底，上面是 jangle pop 式的明亮旋律。畢業後 Levy 搬到倫敦、Rye 搬到蘇黎世；2018 年，兩首原本為這張準備的 demo 被補完，發成單曲。",
+    "sourceUrls": [
+     "https://www.discogs.com/artist/5556942",
+     "https://www.discogs.com/master/1437823",
+     "https://boringproductions.bandcamp.com/album/diaries",
+     "https://musicbrainz.org/release-group/2ae03718-474a-42f7-8cfc-8a9dc0fe96ba"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f3/b4/4b/f3b44bfc-ec42-ced0-03ad-4fcafd2ca49d/mzaf_12744455974496360859.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1867773485",
+    "storefront": "TW",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple tw 1867773485「Chestnut Bakery《Diaries》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Saturday Afternoon〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "AKA lisa",
+   "album": "Laminar Flow",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2c4b1ce0-0f1f-4e6a-ae3e-926a3066d5e8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "獨立流行：瑞典獨立流行創作者首張全長｜策展無疑點｜MB release-group 2c4b1ce0-0f1f-4e6a-ae3e-926a3066d5e8：title「Laminar Flow」、Album、first-release-date 2025-10-24、artist-credit「AKA lisa」。證據：https://music.apple.com/us/album/1835390132 https://musicbrainz.org/release-group/2c4b1ce0-0f1f-4e6a-ae3e-926a3066d5e8",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1835390132",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e0/5a/aa/e05aaad1-d9f5-c90b-3186-e82d32d84163/7300345828141.jpg/600x600bb.jpg",
+    "note": "CAA 無圖；取 Apple se 1835390132「AKA lisa《Laminar Flow》」官方封面；主線 2026-10-30 核對盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 1240,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1240）；主線：冷門軸錨點制：小廠、串流可得"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "先一首首放出單曲，花了一年多才收成 11 首的整張。斯德哥爾摩的音樂計畫 AKA lisa，2021 年由歌手兼製作人 Calle Johansson 創立。處女作裡，〈codepending〉2024 年 6 月最先放出，其餘曲子 2025 年陸續上架，到 10 月 24 日整張發行。篇幅約 35 分鐘，混合 folk、pop 與電子，動態起伏劇烈。",
+    "sourceUrls": [
+     "https://spotfestival.dk/program/aka-lisa/",
+     "https://musicbrainz.org/release-group/2c4b1ce0-0f1f-4e6a-ae3e-926a3066d5e8",
+     "https://www.goteborg.com/en/events/aka-lisa",
+     "https://music.apple.com/us/album/1835390132",
+     "https://musicbrainz.org/artist/f9c4e9cd-30c8-4578-82a6-e53d34bbba4e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/12/50/5b/12505b24-d874-17ff-3c23-8847a82fa069/mzaf_14679839539540773503.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1835390132",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 1835390132「AKA lisa《Laminar Flow》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈walk the line〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "SOFT",
+   "album": "Passing Tone",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "MB artist Soft 42f724d4（Kyoto）release-group 僅 2 筆單曲",
+      "Passing Tone 無"
+     ],
+     "checkedAt": "2026-10-30",
+     "conclusion": "MB 未收錄此專輯；Discogs 30921996 LP Album 為身分依據"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/30921996-Soft-Passing-Tone",
+     "https://oye-records.com/releases/soft-passing-tone"
+    ],
+    "manualRuling": "雲端主線 2026-10-30 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261030-sf04）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "日本迷幻：京都 SOFT 結成 30 週年的第 11 張專輯，器樂迷幻｜⚠ Spotify 的 SOFT 無法百分百確定是京都樂團（以 Passing Tone 對上 iTunes 推定）；曲數僅 5｜MB 查無（MB 未收錄此專輯；Discogs 30921996 LP Album 為身分依據），走 §1 人工身分。證據：https://www.discogs.com/release/30921996-Soft-Passing-Tone https://oye-records.com/releases/soft-passing-tone https://music.apple.com/jp/album/1738504214 https://www.discogs.com/release/30921996-Soft-Passing-Tone https://oye-records.com/releases/soft-passing-tone",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "jazz"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1738504214",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ce/d0/ae/ced0ae46-0c6c-ba39-55b3-5d7bb1de67b3/0198448107105_cover.jpg/600x600bb.jpg",
+    "note": "人工身分、無 MB；取 Apple us 1738504214「Soft《Passing Tone》」官方封面；主線 2026-10-30 核對盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 123,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 123）；主線：冷門軸錨點制：自家廠牌、串流可得；器樂迷幻"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "SOFT 為結成 30 週年，在自家錄音室錄了 5 首長曲。京都的器樂團 SOFT 結成於 1993 年，約 1997 年起在野外 rave 與地下派對演奏。這次刻意把客串壓到最少：吉他 Simiz、鼓 Pon2、雙低音提琴 Ucon，加上彈合成器的 KND。2024 年 4 月 1 日從自家廠牌 Softribe 發行，長度約 33 分鐘，開場曲叫〈Floating Dub〉，迷幻的音響裡藏著 dub 處理。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/30921996",
+     "https://www.metro.ne.jp/artist-prof/soft/",
+     "https://qetic.jp/music/soft-240419/460265/",
+     "https://www.softribe.jp/label/stjp0012.html",
+     "https://oye-records.com/releases/soft-passing-tone",
+     "https://www.discogs.com/release/30921996-Soft-Passing-Tone"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/53/eb/ea53eb64-fd79-3e0d-bb09-eee46da9a2aa/mzaf_13674011751879848687.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1738504214",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1738504214「Soft《Passing Tone》」：Apple Soft《Passing Tone》（§1 人工，策展 evidence 同一 id），取第 1 軌〈Floating Dub〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "dip",
+   "album": "TIME ACID NO CRY AIR",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3a0df86c-a270-4dd9-a407-19926f663ae0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本搖滾：日本 dip（ヤマジカズヒデ）代表作，迷幻另類搖滾｜⚠ 代表作憑印象取 1997；另有《Love to Sleep》1995｜MB release-group 3a0df86c-a270-4dd9-a407-19926f663ae0：title「TIME ACID NO CRY AIR」、Album、first-release-date 1997-09-26、artist-credit「dip」。證據：https://music.apple.com/jp/album/1774600875 https://musicbrainz.org/release-group/3a0df86c-a270-4dd9-a407-19926f663ae0",
+    "queryAlias": "dip ヤマジカズヒデ"
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3a0df86c-a270-4dd9-a407-19926f663ae0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 660,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 660）；主線：冷門軸錨點制：Eastworld 原盤、串流可得"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "轟音吉他退到後面，dip 的歌聲變得孤獨又空洞。日本迷幻搖滾樂團 dip 在 1991 年結成，核心是主唱兼吉他手 Kazuhide Yamaji。出道時的速度感到這裡已經褪去，15 首曲子淡淡排開，整張被一股壓住情緒起伏的冷靜張力罩住，是他們質地轉換的一張。1997 年 9 月 26 日經東芝 EMI 旗下 Eastworld 發行，在 EMI 時期四張專輯裡排第三。2014 年 6 月，樂團在下北澤 Club Que 依曲序把整張完整重現。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/15658332",
+     "https://ja.wikipedia.org/wiki/Dip_(バンド)",
+     "https://www.hmv.co.jp/news/article/1403180056/",
+     "https://artist.cdjournal.com/d/time-acid-no-cry-air/1197100797",
+     "https://mikk.hatenadiary.jp/entry/20140615/p1",
+     "https://musicbrainz.org/release-group/3a0df86c-a270-4dd9-a407-19926f663ae0"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/5d/ef/4d5def89-2f5a-03ad-0813-600022d57089/mzaf_10688435610938246368.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1774600875",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1774600875「dip《Time Acid No Cry Air》」：曲目 15/15 對上 MB 原盤（Apple 共 15 軌），取第 1 軌〈SERIAL〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "in the blue shirt",
+   "album": "Recollect the Feeling",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2b0a406d-eac4-415b-87cf-001c799d4ba4",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本電子：日本電子製作人 in the blue shirt 的代表全長，清新 chillwave 質地｜⚠ 另有 Cyanotype 2015、Park with a Pond 2022｜MB release-group 2b0a406d-eac4-415b-87cf-001c799d4ba4：title「Recollect the Feeling」、Album、first-release-date 2019-04-24、artist-credit「in the blue shirt」。證據：https://music.apple.com/jp/album/1457910726 https://musicbrainz.org/release-group/2b0a406d-eac4-415b-87cf-001c799d4ba4",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2b0a406d-eac4-415b-87cf-001c799d4ba4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 2373,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2373）；主線：冷門軸錨點制：串流可得；器樂電子"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "讀化學出身的京都製作人，把人聲切片放慢放柔。有村崚，電子樂計畫 in the blue shirt 的主人，畢業於京都大學，過去以切碎人聲採樣與快節奏聞名。到了第二張專輯，他決心這次要為專輯而寫曲，主題是回想聽音樂時受到的強烈感動。2019 年 4 月 24 日成為他自己新廠牌 The Wonder Laundry 的首作，10 首加總只有 24 分鐘。曲子更抒情，開場是一把原聲吉他；〈Fork in the road〉則用真吉他、貝斯與鼓手武田啓希的 6/8 拍錄成。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/2b0a406d-eac4-415b-87cf-001c799d4ba4",
+     "https://musicbrainz.org/ws/2/release?release-group=2b0a406d-eac4-415b-87cf-001c799d4ba4&inc=recordings&fmt=json",
+     "https://intheblueshirt.com/biography",
+     "https://mikiki.tokyo.jp/articles/-/21393",
+     "https://blog.intheblueshirt.com/entry/2019/01/19/022856"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/f8/70/04f87058-8e65-f191-2de7-466ad395d357/mzaf_5085597289403535421.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "appleCollectionId": "1457910726",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1457910726「In The Blue Shirt《Recollect the Feeling》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Lost in Thought〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "U.TA屋塔",
+   "album": "緩飆公路 Highway Cruising",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist U.TA屋塔 (MB 4a52ee64-2b84-4f0b-a2ac-75491210f8c4) 無任何 release-group",
+      "releasegroup:\"Highway Cruising\" / \"緩飆公路\" 查無"
+     ],
+     "checkedAt": "2026-10-22",
+     "conclusion": "MB 有藝人條目但未收此專輯；Discogs release 33801504（Hove，8 曲 CD Album）為身分依據"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/33801504-UTA-屋塔-緩飆公路-Highway-Cruising",
+     "https://noiseartists.net/home/2017/12/18/taiwan-shoegaze-guide-part1"
+    ],
+    "manualRuling": "雲端主線 2026-10-30 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261030-sf04）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "台灣 dream pop／shoegaze／lo-fi R&B：台北 dream pop 樂團唯一全長，師承 Cocteau Twins、Mazzy Star；慢拍、殘響吉他與飄浮女聲｜⚠ 原收在 ml4，研究層以聲音偏冷汰（不是身分問題），未上線；本線照收｜MB 查無（MB 有藝人條目但未收此專輯；Discogs release 33801504（Hove，8 曲 CD Album）為身分依據），走 §1 人工身分。證據：https://www.discogs.com/release/33801504-UTA-屋塔-緩飆公路-Highway-Cruising https://noiseartists.net/home/2017/12/18/taiwan-shoegaze-guide-part1 https://www.discogs.com/release/33801504-UTA-屋塔-緩飆公路-Highway-Cruising https://noiseartists.net/home/2017/12/18/taiwan-shoegaze-guide-part1",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "33801504",
+    "url": "https://i.discogs.com/PnN0w5D5VdhlpF2DqhtWdwz72Z6wthmDZtgikDKBS1k/rs:fit/g:sm/q:90/h:525/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzODAx/NTA0LTE3NTkzOTA2/OTMtNDkxMy5qcGVn.jpeg",
+    "note": "人工身分、Apple 未上架；取 Discogs 33801504（Hove UTA001，2015）primary 封面；主線 2026-10-30 核對盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸錨點制：小廠 CD，串流未上架；dream pop"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 4；obscurity=5 但沒有遺珠級證據（listeners 查無），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "從迷幻的不插電民謠二人組起家，U.TA屋塔長成四人團。dream pop 樂團 U.TA屋塔 來自台北，主唱 Urayn 與貝斯手 Garry Lu 就是當初那對二人組。吉他手加入後，2013 年夏天鼓手 JC Tao 參與錄音，編制才補齊。首張專輯在 2015 年 12 月發行，曲風游移在迷幻呢喃與吉他音牆之間，遠方隧道傳來低頻碰撞。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/33801504",
+     "https://provencalize58.rssing.com/chan-34303564/all_p5.html",
+     "https://noiseartists.net/home/2017/12/18/taiwan-shoegaze-guide-part1",
+     "https://utaband.bandcamp.com/album/xiang-limited-edition-summer-2018",
+     "https://www.discogs.com/release/33801504-UTA-屋塔-緩飆公路-Highway-Cruising"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-30T05:44:18Z",
+    "note": "Apple U.TA屋塔 只有 2018 起的單曲，無《緩飆公路》。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}
