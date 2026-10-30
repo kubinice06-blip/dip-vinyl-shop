@@ -1,0 +1,9 @@
+{
+ "batch": "add-20261030-sf10",
+ "cards": 37,
+ "written": { "cardCatalog": 37, "kvKeys": 37, "seedRows": 37, "previewReady": 33, "previewUnavailable": 4 },
+ "review": { "by": "cloud-main", "cards": 37, "changed": ["desc2:Peggy Gou|I Hear You", "desc2:Photay|Onism", "desc2:Saint Abdullah|Stars Have Eyes"] },
+ "qa": { "research": "pass", "hooks": "pass", "out": "pass", "prepareGate": "0 error", "publishedGate": "0 error" },
+ "pendingLocal": { "kv": "無", "listeners": [], "apexEvidence": [], "genreTree": "已重建", "albumOverrides": "無" },
+ "artistIntro": { "roster": "batch-progress/artist-intro/roster-sf10.json", "batch": "ar-d-210", "artists": 33, "state": "cut" }
+}
