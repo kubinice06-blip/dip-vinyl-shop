@@ -729,7 +729,14 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB 以 releasegroup Sam Gendel & Shin Sasakubo 查詢無結果（2026-10-30）",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Sam Gendel\" AND releasegroup:\"Shin Sasakubo\" → 0",
+    "artist:\"Shin Sasakubo\" → 2 筆（アヤクーチョの雨、Harmônicos），無本盤；artist:\"笹久保伸\" → 0"
+   ],
+   "checkedAt": "2026-10-30",
+   "conclusion": "MB 以 releasegroup Sam Gendel & Shin Sasakubo 查詢無結果（2026-10-30）"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/2432284-Sam-Gendel-Shin-Sasakubo-Sam-Gendel-Shin-Sasakubo",
    "https://music.apple.com/jp/album/1592958341"
@@ -770,7 +777,14 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB 藝人 狩生健志 f6cd0e28 僅有 KK、KK2 兩張，Sekai 無 release-group（2026-10-30）",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"狩生健志\" AND releasegroup:\"Sekai\" → 0",
+    "MB 藝人 狩生健志 f6cd0e28 release-group 只有 KK、KK2"
+   ],
+   "checkedAt": "2026-10-30",
+   "conclusion": "MB 藝人 狩生健志 f6cd0e28 僅有 KK、KK2 兩張，Sekai 無 release-group（2026-10-30）"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/release/16305497-Kenji-Kariu-Sekai",
    "https://tobirarecords.com/products/kariu-kenji-sekai-lp"
@@ -811,7 +825,14 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB 藝人 バズ 30645ba2 無 release-group（2026-10-30）",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"バズ\" AND releasegroup:\"Buzz\" → 0",
+    "MB 藝人 バズ 30645ba2 release-group 0 筆"
+   ],
+   "checkedAt": "2026-10-30",
+   "conclusion": "MB 藝人 バズ 30645ba2 無 release-group（2026-10-30）"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/1625254-Buzz-29-Buzz",
    "https://www.discogs.com/artist/2366336-Buzz-29"
