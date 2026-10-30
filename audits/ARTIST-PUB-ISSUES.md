@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 997 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1010 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -980,6 +980,13 @@
 | ar-d-202 | Wink | Especially For You ～優しさにつつまれて～ | 兩人都是少年雜誌選拔的優勝者 | 日文維基寫兩人是 Miss UP 的入賞者，英文維基寫 1987 年分別為第 7、9 名，並非優勝 | https://ja.wikipedia.org/wiki/Wink |
 | ar-d-202 | COHOL | 空洞 | 帶 grindcore 色彩的神奈川黑金屬團 COHOL | ZT Magazine 2015 訪談標題與內文稱 COHOL 為東京據點樂團，Last.fm 摘要同；未找到任何出處寫神奈川 | https://www.ztmag.com/news/zt-interrogation-facing-reality-with-tokyos-cohol/ |
 | ar-d-202 | 静香 | 天界のペルソナ | 静香一手主導：唱歌、彈吉他、搖鈴，詞曲與概念全包 | 英文維基稱吉他由三浦マキ演奏、静香負責緩慢吟誦式人聲，『彈吉他』疑為マキ；詞曲全包無來源確認 | https://en.wikipedia.org/wiki/Shizuka_(band) |
+| ar-d-203 | Seiichi Yamamoto 山本精一 | NOA | 1986 年加入 Boredoms 彈吉他 | 英文維基 Boredoms 條寫山本 1987 年初接替田畑滿；日文維基寫 1986，來源不一致，建議簡介改成不帶年份或再查 | https://en.wikipedia.org/wiki/Boredoms |
+| ar-d-203 | 田畑満 | Lucifer | 1986 年參與創立 Boredoms | 英文維基 Boredoms 條目只稱他是 Eye 組成的最早陣容吉他手之一、1987 年初離團；『參與創立』偏強，建議改『最早期的吉他手』 | https://en.wikipedia.org/wiki/Boredoms |
+| ar-d-204 | 篠崎史子 Ayako Shinozaki | ハープの個展 Music Now for Harp | 曾在紐約茱莉亞音樂學院習琴 | 日文維基學歷僅列桐朋女子高中與桐朋學園大學，未見茱莉亞；musicyouneedtohear 單源，建議查證或刪 | https://ja.wikipedia.org/wiki/%E7%AF%A0%E5%B4%8E%E5%8F%B2%E5%AD%90 |
+| ar-d-204 | 篠崎史子 Ayako Shinozaki | ハープの個展 Music Now for Harp | 1972 年起她每年辦一場「豎琴個展」獨奏會 | 維基只確認個展系列與第 XII、Ⅷ 回存在；起始年未見來源。佐治敬三賞的 2001 年為第 Ⅷ 回，若每年一場，起點約 1994 年，與 1972 年不合，疑有誤 | https://www.suntory.co.jp/sfa/music/saji/release/8125.pdf |
+| ar-d-204 | YPY | Zurhyrethm | 2016 年 3 月，南大阪的 EM Records 把它發成雙張 12 吋黑膠 | Meakusma 寫首張專輯 2016 年 6 月、EM Records Bandcamp 頁寫 2018 年 4 月 27 日；3 月說未見支持，建議查 Discogs／MusicBrainz 後改 | https://emrecords.bandcamp.com/album/zurhyrethm |
+| ar-d-204 | kinoue64 | 空間、事情、時間、事象。 | 廣島出身、2001 年起活動 | 2001 年只有 MusicBrainz 單源，Bandcamp 與評論皆無佐證，且與部落格『四年八張專輯、23 歲』的說法難以相容，建議核對或拿掉 | https://kinoue64.bandcamp.com/ |
+| ar-d-204 | Magamura | Supernaturals | 2017 年 2 月 17 日先由東京廠牌 Kebko Music 推出卡帶 | The Ransom Note 的報導中卡帶與黑膠的先後與 2017-02-17 對應的載體說法不一（搜尋摘要稱卡帶早在前一年 2 月已出，2017-02-17 為黑膠），建議對照 Kebko Music Bandcamp 核實 | https://www.theransomnote.com/?p=21846 |
 | ar-d-205 | 吳書齊 | 鹿港 | 吳書齊本人彈鋼琴；『四人共同作曲』 | 事實庫唯一來源 Discogs 登記作曲為 Suchi Wu、Kevin James、Martijn Vanbuel、Toshihiro Wakaike 四人，上線簡介寫吳書齊彈鋼琴、四人共同作曲；Discogs 作曲名單與編制人名是否一致未能複核，僅供店主參考 | https://www.discogs.com/release/29454466 |
 | ar-d-207 | Frijid Pink | Frijid Pink | 一位電台音樂總監聽了，建議廠牌改推這首 | Stevers 本人訪談稱是 Dearborn AM 電台經理（station manager）；Michigan 名人堂與維基稱 DJ／音樂總監 Paul Cannon。職稱兩說並存，建議簽改寫『一位電台人士』 | https://classicbands.com/FrijidPinkInterview.html |
 | ar-d-207 | Frijid Pink | Frijid Pink | 在一次錄音預約剩下的時間即興錄下 | Michigan 名人堂稱 1967 年 session 一次錄成，與維基『session 尾端的填充曲』大致一致，無錯；僅備查 | https://michiganrockandrolllegends.com/hall-of-fame/artists/330-frijid-pink |
@@ -988,6 +995,12 @@
 | ar-d-207 | The West Coast Pop Art Experimental Band | Part One | 有錢的律師出資搞定合約，Markley 就是那位律師 | 維基稱 Markley 是『有錢的花花公子／有抱負的音樂人』，toppermost 稱石油富豪養子，只有一篇搜尋摘要稱其為律師；建議改成『有錢的 Bob Markley』 | https://www.toppermost.co.uk/west-coast-pop-art-experimental-band-the/ |
 | ar-d-207 | The Cosmic Jokers | Galactic Supermarket | 老闆是 Dieter Dierks，他的錄音室是西德 krautrock 的重鎮 | 廠牌老闆是 Rolf-Ulrich Kaiser，Dierks 是錄音室老闆兼製作／混音；『老闆』易讀成廠牌老闆。另『樂手常被老闆的母親餵飽』『在 Stommeln 錄音』本層沒查到出處 | https://en.wikipedia.org/wiki/The_Cosmic_Jokers |
 | ar-d-207 | Tully | Tully | 鍵盤手 Michael Carlos 買了一台 Moog，讓 Tully 成了澳洲第一支在現場用 Moog 的樂團 | 維基與 Milesago 轉述都用 reportedly（據稱）；上線簡介寫成確定句，建議加『據稱』 | https://en.wikipedia.org/wiki/Tully_(band) |
+| ar-d-209 | Daniel Ponce | Arawe | Daniel Ponce 1953 年 7 月 21 日生於哈瓦那 | 生日來源分歧（維基 1953-07-21、wikidata 1953-07-12、AfroCubaWeb 與 WKCR 為 1952），無法確定，建議只寫生於哈瓦那或改為不寫年份。 | https://afrocubaweb.com/daniel-ponce.html |
+| ar-d-209 | Spiral Deluxe | The Love Pretender | 多數曲子在東京錄、巴黎混音 | Keyi 與搜尋結果只說錄於東京（年份各說 2018 或 2019）、之後由 Mills 混音，混音地點巴黎找不到來源；錄音年也不一致。 | https://www.keyimagazine.com/2025/02/20/spiral-deluxe-to-release-final-project-the-love-pretender-an-album-dedicated-to-authenticity |
+| ar-d-210 | Danger Mouse & Daniele Luppi | Rome | 錄音地點選在羅馬 Forum Studios | Paste 說錄音在 Ortophonic Studios，與上線簡介和維基的 Forum Studios 不一致，可能是不同階段；請店主核對 | https://www.pastemagazine.com/music/danger-mouse/danger-mouse-daniele-luppi-rome |
+| ar-d-210 | Rich Ruth | I Survived, It's Over | Michael Ruth 在 2018 年退下來回家做 ambient | Nashville Scene 寫的是 2019 年一次性演出無法滿足創作、才開了 Rich Ruth；另有搜尋摘要說 2018 年退出巡演但未開頁證實，年份來源不一致，建議改成不寫年份或寫 2019 開始發片 | https://www.nashvillescene.com/music/features/rich-ruth-adds-to-the-growing-canon-of-nashville-ambient-music/article_a432cbd6-182a-11ed-960a-db4eefc336f2.html |
+| ar-d-210 | Rich Ruth | I Survived, It's Over | 錄音那一年，Nashville 北部他家一帶遭龍捲風襲擊 | Nashville Scene 全文未提龍捲風，只說疫情初期封鎖時在家中錄、當時剛被餐廳資遣；龍捲風一說本層查不到佐證，建議核對 | https://www.nashvillescene.com/music/features/rich-ruth-adds-to-the-growing-canon-of-nashville-ambient-music/article_a432cbd6-182a-11ed-960a-db4eefc336f2.html |
+| ar-d-210 | Yung Bae | Bae 5 | 前四張靠取樣拼成；〈Bad Boy〉是簽下 Arista Records 後的第一支單曲；唱片自行出版 | 僅維基單源（Arista 與〈Bad Boy〉）；Bandcamp Daily／Portland Mercury／Vice 皆未提 Arista。「前四張」純靠取樣略過度：Bae 系列另有《Japanese Disco Edits》與 Skyscraper Anonymous 等，Vice 稱五張 Bae＋三張 Japanese Disco Edits。可酌改，非確定錯誤。 | https://vice.com/en/article/how-anime-and-japanese-city-pop-influences-yung-bae |
 | ar-d-211 | Skip Skip Ben Ben | 鏡中鏡 Mirror in Mirror | 起源台北的噪音流行團 | 2015 年演出介紹寫斑斑以此名義於 2010 年起在北京獨立音樂圈發展三年、2014 年才回台灣定居；搜尋摘要（KKBOX 專文，頁面 403 未開）亦稱樂團在北京地下樂壇發跡。『起源台北』與此不合，建議改成『斑斑在北京起步、2014 年回台』。僅單頁佐證，屬低把握。 | https://gigguidetw.frontandback.co.nz/event-12047 |
 | ar-d-211 | Space Raiders | Hot Cakes | 簽進 Fatboy Slim 在布萊頓經營的 Skint | 英文維基確實寫 Skint 是 Fatboy Slim 經營，但 Electronic Sound 2015 年評論明確說 Skint 並非 Fatboy Slim 自己的廠牌：由 JC Reid、Tim Jeffery 與 Damian Harris 創辦，首張 SKINT 1 是 Norman Cook（Fatboy Slim）的單曲。建議改成『Fatboy Slim 作品所在的 Skint』或『布萊頓廠牌 Skint』。 | https://www.electronicsound.co.uk/?p=20029 |
 | ar-d-211 | Super Besse | 63610* | 2013 年在明斯克成軍的後龐克三人組 | Pop-Kultur 2020 藝人頁與訪談為二人組（Alex Sinica、Maksim Kulsha）；2016、2017 年的樂評與 beehype 則寫三人，隨年代編制有異。建議改為『二人組（早期為三人）』或只寫『明斯克的後龐克樂團』。 | https://2020.pop-kultur.berlin/en/artists/super-besse/ |

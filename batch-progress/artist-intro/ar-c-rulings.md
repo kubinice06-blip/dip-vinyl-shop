@@ -1062,6 +1062,73 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 60 位排入 2 批，55 位上架（25 full、30 thin）、5 位不寫；審稿合計修 9 位。截止日後事實：張震嶽 2026 第 37 屆金曲獎（WebSearch 核實）。
 
+## ar-d-209（2026-10-30，Spotify 補卡 sf09＝爵士：ECM、日韓爵士、世界爵士）
+
+- 32 位全上架（19 full、13 thin），0 位不寫。補洞 WebSearch 每位 ≤2 次（本工作階段兩批共用額度）。
+- 主線審稿修 8 位：
+  - 中村一義：刪「〈世界は変わる〉用於東京 2020 帕運開幕式」（日文維基單源，主線 WebSearch 查無佐證），改寫 2004 年名義統一為 100s。
+  - Graciela Susana：刪「2024 年過世」（只有英日維基同家族，WebSearch 也只見英文維基，查無日媒訃聞）；保留 2011 年返回阿根廷。
+  - Bill Bruford's Earthworks：原稿只有英文維基一源，主線補 Louder（Bruford 1985 年以 Simmons 電子鼓上電視介紹）為第二源，正文不動。
+  - Marc Johnson：「這段錄音（三重奏）為 Evans 贏得葛萊美」不精確——得獎的《We Will Meet Again》是五重奏錄音，改「他參與的《We Will Meet Again》」；刪一句自述壓回 246 字。
+  - Manu Katché：刪「錄過超過 200 張專輯」（英文維基單源數字）；〈Sledgehammer〉三次錄成改「據說」（單源）。
+  - Nils Landgren Funk Unit：刪「至少 500 張專輯」（瑞典維基單源）與 2019 年德國聯邦十字勳章（英、瑞維基同家族，非獨立）。
+  - Mark Guiliana：「新澤西」統一為台灣慣用「紐澤西」。
+- 截止日後事實：Hal Galper 2025 年辭世（英文維基＋DownBeat 訃聞 hal-galper-19382025，兩源），照寫年份；Flea 2026 年個人爵士專輯《Honora》（維基＋Blabbermouth）。
+- 保留：Tyreek McDole「Sarah Vaughan 大賽十二年來第二位奪冠的男歌手」（NJJS＋Paris-Move 兩源）；濱瀬元彦的菊地成孔評語（具名單源、低風險）；Flea 的名人堂主詞寫樂團。
+- 不寫：Bobo Stenson 生年（維基家族）、Daniel Ponce 生年（1952／1953 兩說）、Michel Sardaby 卒年（維基家族）、高木元輝生卒年（單源）、Graciela Susana 黃金 Gardel 獎與「百萬張」、Yttling Jazz 的 Grammis（得獎／提名兩說）、Dominique Fils-Aimé 第二座 Juno、Ceramic Dog「Ribot 第一支真正的搖滾團」、Assagai「Vertigo 唯一簽下的非洲樂團」。
+- 身分：Ceramic Dog 與 Marc Ribot 分寫；中村一義照實寫成日本創作歌手（卡池在爵士批）；swing slow 是細野晴臣與越美晴的二人團；Spiral Deluxe 是 Jeff Mills 的電子爵士四重奏。
+- pubIssues：Daniel Ponce《Arawe》簡介生日、Spiral Deluxe《The Love Pretender》「巴黎混音」查無來源。
+
+## ar-d-210（2026-10-30，Spotify 補卡 sf10＝電子、實驗、新古典鋼琴、house）
+
+- 33 位全上架（13 full、20 thin），0 位不寫。補洞 WebSearch 每位 ≤2 次。
+- 主線審稿修 4 位：
+  - Rich Ruth：原稿只有 Nashville Scene 一源，主線補 Bandcamp Daily《I Survived, It's Over》Album of the Day 為第二源，正文不動。
+  - Saint Abdullah：原稿只有 Bandcamp Daily 一源，主線補 PopMatters（《Mechanical Flirtations》評）與 Volume Sydney 2023 藝人頁；兩源皆寫「生於德黑蘭、在加拿大長大」，「生於伊朗、在西方長大」改得更具體。
+  - Barry Can't Swim：刪 2024 Coachella 與 Bonobo 背靠背、2025 All Points East 壓軸（英文維基單源、第二源未開頁），改寫 Mercury Prize 十二張候選之一（維基＋Sopitas 兩源）。
+  - Juana Molina：David Byrne 稱讚、替 Feist 開場只有 Hollywood Bowl 簡介一源，改「據說」口氣；上線簡介「Byrne 邀她開場」查無來源，不寫。
+- 保留：Monoton 列入 The Wire 1998「100 Records That Set the World on Fire」（兩源，非靠出處不可的定位）；Christoph De Babalon 的 Thom Yorke 評語與 2001 年 Amnesiac 巡演開場（維基＋Cafe OTO），評語以「據說」口氣；Joep Beving 串流八千萬次照「據廠牌說法」寫（素人自壓黑膠到 DG 簽約是故事核心，必要例外）；Mareux 的 TikTok 走紅與 2023 Coachella（維基＋訪談兩源，不寫數字）；Planningtorock 以 Rostron 自述談聲音與性別，正文不用代名詞。
+- 化名與合作：Against All Logic 寫 Nicolas Jaar 化名下的舞曲；Danger Mouse 兩個合作案各寫合作本身；Mark Linkous、Tom Relleen 只寫辭世年份，不寫死因；Clutchy Hopkins 全文「據稱／傳說」口氣、不揭身分。
+- 不寫：Peggy Gou「第一位在 Berghain 演出的韓國 DJ」（缺第二源，只留她 2016 年自述的志向）、Yaeji 的 BBC Sound of 2018 與 AIM 獎、Yung Bae 的 Arista 與 Billboard、Planningtorock「DFA 自 Black Dice 以來最實驗」、L'Acephale 成軍年（2002／2003）、French 79 成軍年（2013／2014）、Daniele Luppi 出生地（兩說）。
+- pubIssues：Danger Mouse & Daniele Luppi《Rome》錄音室（Forum／Ortophonic 兩說）、Yung Bae《Bae 5》Arista 與〈Bad Boy〉單源、Rich Ruth「2018 年退下來」與 Nashville Scene 的 2019 不符、「龍捲風」一句待核。
+
+## Spotify 補卡 sf09／sf10 補介紹（ar-d-209～210）小結
+
+- 65 位排入 2 批，65 位全上架（32 full、33 thin）、0 位不寫；審稿合計修 12 位。截止日後事實：Hal Galper 2025 辭世（兩源）、Flea 2026《Honora》。本工作階段主線 WebSearch 6 次。
+## ar-d-203（2026-10-30，Spotify 補卡 sf03 補介紹：日本地下、迷幻、即興、和樂器）
+
+- 20 位全上架（8 full、12 thin），0 位不寫。補洞 2 組（10＋10）、寫作 1 組。
+- 切批：cut 檔原為卡池原文大小寫，`artist-prompt.mjs` 對不上名冊（名冊名顯示 undefined），改用 progress.json 的小寫鍵重寫 cut 檔再萃取。
+- 主線審稿修 5 位：
+  - 陳信輝：寫作層判不過 thin 門檻（無聲音格），主線補 Light in the Attic《Eve》頁（Food Brain 出身、吉他偏藍調、比作 Led Zeppelin）後自寫 thin 145 字；「日本的 Jimi Hendrix」英文維基＋Last.fm 兩源；出生年地（1949 橫濱）只有 Discogs，不寫。
+  - 狩生健志：原稿只有 Tobira 零售頁，主線補 audiopile 商品頁（東京、OWKMJ、曲風）為第二源，正文不動；《Sekai》年份 2020／2021 兩說，不寫。
+  - Seiichi Yamamoto 山本精一：刪西浦真奈「隨 DMBQ 美國巡演車禍」死因細節，只寫 2005 年辭世（補英文維基 Mana Nishiura 頁）。
+  - 関藤繁生：刪「2013 年」（〈Chamber of Reflection〉所在的《Salad Days》是 2014 年，補洞稿年份有誤）。
+  - Sam Gendel & Shin Sasakubo：原稿幾乎只寫 Gendel，改寫末句交代合作盤的形狀（一人一面、互相客串，出自上線簡介）。
+- 身分：割礼維基預抓是醫學條目、バズ預抓是 Buzz Lightyear，皆作廢；バズ改用「バズ (バンド)」。
+- 保留：world's end girlfriend 生年 1975（兩源）；田畑満不寫「Boredoms 創始成員」，寫成「Boredoms 的開端」；三橋貴風卡內基 100 週年公演（演出事實，低風險）。
+- pubIssues：山本精一加入 Boredoms 年份（1986／1987）、田畑満「創始成員」。
+
+## ar-d-204（2026-10-30，Spotify 補卡 sf04 補介紹：日本電子、ambient、嘻哈、lo-fi、YMO 周邊）
+
+- 26 位 → 25 位上架（9 full、16 thin），1 位不寫：Chestnut Bakery（全部事實只有 Discogs 一源、身分未核、無聲音格）。
+- 主線審稿修 7 位：
+  - Yasushi Ide 井出靖：寫作層因無國籍事實未寫；主線補 ototoy 藝人頁＋honeyee 專訪（日本製作人、Grand Gallery 主理、1980 年代與ヤン富田同期、引領 ORIGINAL LOVE 與小沢健二出道）後自寫 thin 148 字。
+  - Hoshina Anniversary：補 hhv-mag 專訪為第二源，同時核實本名 Yoshinobu Hoshina 與「Watechno」，補洞層原登記的 pubIssue 撤銷。
+  - Magamura：補 ADSR Collective 為第二源（匈牙利二人組、先卡帶後黑膠）。
+  - 篠崎史子：刪 1970 以色列豎琴大賽第三名、朝日現代音樂賞、紫綬褒章（皆日文維基單源的名次／獎項），留首屆佐治敬三賞（兩源）。
+  - Sketch Show：重聚句改寫為 HASYMO → YMO，順口並壓回 thin。
+  - SHAKKAZOMBIE：「被視為」改「被稱為」（英文維基單源）。
+  - Emapea：補半形空格。
+- 身分：concrete concrete 預抓是建材、SOFT 預抓是紐約的 Soft (band)，皆作廢；AKA lisa 照來源寫成瑞典計畫、KUSO GVKI 是德國 beatmaker、Magamura 是匈牙利二人組、U.TA屋塔 是台北樂團、Emapea 是波蘭節拍製作人（卡池歸在日本批，身分照來源）。
+- 已故者只寫辭世年：ECD 2018（兩源）；OSUMI 只寫「辭世後」；沖山秀子不寫生卒年；高橋幸宏卒年單源未寫。
+- 不寫：〈GET YOURSELF ARRESTED〉銷量、ECD「日本語饒舌開拓者之一」（單源）、ヤン富田「第一位職業鋼鼓手」、dip 首作登獨立榜第 1 是專輯或迷你專輯（只寫首作）、U.TA屋塔 成立年（兩說）。
+- pubIssues：篠崎史子茱莉亞學歷、個展年份推算；YPY《Zurhyrethm》日期；kinoue64「2001 年起活動」單源；Magamura 載體先後。
+
+## Spotify 補卡 sf03／sf04 補介紹（ar-d-203～204）小結
+
+- 46 位排入 2 批，45 位上架（17 full、28 thin）、1 位不寫；審稿合計修 12 位（含主線補寫 2 位）。
+
 ## ar-d-211（2026-10-30，Spotify 補卡 sf11＝冷門與身分待查的電子、lo-fi、小廠牌藝人）
 
 - 24 位 → 22 位上架（7 full、15 thin），2 位不寫：ERISTHEPLANET（聲音格 none，唯一來源是搜尋摘要，撐不起 thin 門檻）、Mindchatter（只有一篇訪談一源，聲音素材只有童年聽什麼）。補洞 WebSearch 每位 ≤3 次，合計 35 次。
