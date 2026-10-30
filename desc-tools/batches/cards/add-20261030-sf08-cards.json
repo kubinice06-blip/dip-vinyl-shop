@@ -1962,10 +1962,18 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB 有此藝人但僅 Memory-Minus（合輯），Plus 6000 無 RG；Discogs master 3036668 六曲",
+  "mbAbsenceProof": {
+   "queries": [
+    "release-group?query=artist:\"Sleepytime Trio\" → count 1（只有合輯 Memory-Minus）",
+    "release-group?query=releasegroup:\"Plus 6000\" → count 0"
+   ],
+   "checkedAt": "2026-10-30T07:00:00Z",
+   "conclusion": "MB 有 Sleepytime Trio 藝人條目但只有 1998 合輯《Memory-Minus》，《Plus 6000》（1997 Lovitt LOV #7 12 吋）查無 release-group；以 Discogs master 3036668 為身分證據。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/3036668-Sleepytime-Trio-Plus-6000",
-   "https://i.discogs.com/81CyLD5YyrTfKlswxJxI6JWPxzTp9b4sw9K7R-Jzap0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTgx/MzQtMTYxNjA0NTE4/OC0zMTY0LmpwZWc.jpeg"
+   "https://www.discogs.com/release/1518134",
+   "https://musicbrainz.org/artist/d9f25711-8e79-4567-89e4-4be1335d258e"
   ],
   "curatorWhy": "emo-hardcore：90 年代 emo／數學搖滾代表作，6 曲作為主要作品。",
   "curatorRisk": "⚠ 長 EP；封面來自 Discogs，正式用前確認",
@@ -2042,7 +2050,14 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB 只有 Slow Burn (EP)；Razorburn Blues 無 RG",
+  "mbAbsenceProof": {
+   "queries": [
+    "release-group?query=artist:\"Mamie Minch\" → count 1（只有 EP Slow Burn）",
+    "release-group?query=releasegroup:\"Razorburn Blues\" → count 0"
+   ],
+   "checkedAt": "2026-10-30T07:00:00Z",
+   "conclusion": "MB 有 Mamie Minch 藝人條目但只有 2020 EP《Slow Burn》，《Razorburn Blues》（2008 自行發行 11 首）查無 release-group；以 Apple 282954268 與樂評頁為身分證據。"
+  },
   "manualEvidenceUrls": [
    "https://music.apple.com/us/album/razorburn-blues/282954268",
    "https://www.chronogram.com/arts/mamie-minch-2148546",
