@@ -40,7 +40,7 @@
   {
    "id": "jp-folk",
    "zh": "日本民謠",
-   "count": 1,
+   "count": 2,
    "why": ""
   },
   {
@@ -52,6 +52,12 @@
   {
    "id": "jp-electro",
    "zh": "日本電子",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-psych",
+   "zh": "日本迷幻搖滾",
    "count": 1,
    "why": ""
   }
@@ -406,7 +412,7 @@
    },
    "evidence": [
     "https://musicbrainz.org/release-group/6c97bed8-3239-4e54-9d91-fbce61eb550c",
-    "https://coverartarchive.org/release-group/6c97bed8-3239-4e54-9d91-fbce61eb550c"
+    "https://music.apple.com/jp/album/375272098"
    ],
    "spotifyName": "ないあがらせっと",
    "mbRgMbid": "6c97bed8-3239-4e54-9d91-fbce61eb550c",
@@ -414,7 +420,7 @@
    "manualEvidenceUrls": [],
    "releaseException": "",
    "queryAlias": "Naigara Set",
-   "uncertain": "CAA 無封面，封面來源尚未找到，需補 Bandcamp／Discogs"
+   "uncertain": ""
   },
   {
    "artist": "ヨシンバ",
@@ -435,6 +441,7 @@
    },
    "evidence": [
     "https://musicbrainz.org/release-group/55cf2811-6d74-4b6b-a244-e18ef7ba23e4",
+    "https://music.apple.com/jp/album/1882637060",
     "https://www.discogs.com/master/3167439"
    ],
    "spotifyName": "ヨシンバ",
@@ -443,7 +450,7 @@
    "manualEvidenceUrls": [],
    "releaseException": "",
    "queryAlias": "Yoshimba",
-   "uncertain": "CAA 無封面；Discogs master 圖需確認"
+   "uncertain": ""
   },
   {
    "artist": "ピューパ",
@@ -485,7 +492,7 @@
     "pop",
     "folk"
    ],
-   "why": "沖繩出身創作歌手，2015年13首全長",
+   "why": "沖繩出身創作歌手，2015年13首全長；另收《ルア・ラランジャ》(1999)，早期代表作",
    "moodGuess": {
     "x": 1.8,
     "y": -0.8,
@@ -622,12 +629,71 @@
    "releaseException": "7首，作為主要作品發行的長EP",
    "queryAlias": "The Tengokubatake Japon",
    "uncertain": "MB 標 Album，實為 7 首"
+  },
+  {
+   "artist": "比屋定篤子",
+   "album": "ルア・ラランジャ",
+   "year": 1999,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-folk",
+   "genres": [
+    "pop",
+    "folk"
+   ],
+   "why": "沖繩出身創作歌手的首張全長，1999年，公認早期代表作",
+   "moodGuess": {
+    "x": 1.9,
+    "y": -0.8,
+    "z": 0.8,
+    "why": "輕柔的巴薩風原聲與耳語唱腔"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1301dbd3-2570-455e-8651-1d48a225eaca",
+    "https://music.apple.com/jp/album/1539275187"
+   ],
+   "spotifyName": "Hiyajo Atsuko",
+   "mbRgMbid": "1301dbd3-2570-455e-8651-1d48a225eaca",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Hiyajo Atsuko 比屋定篤子",
+   "uncertain": "MB 首發年空白，1999 依 iTunes"
+  },
+  {
+   "artist": "静香",
+   "album": "天界のペルソナ",
+   "year": 1994,
+   "label": "PSF Records",
+   "country": "jp",
+   "faction": "jp-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "PSF 日本迷幻地下搖滾名盤，静香的代表作",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 1.0,
+    "z": -0.5,
+    "why": "迷幻吉他與飄忽人聲的緩慢朦朧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f0dbee99-7f80-3a4f-aac0-765d7bb08e83",
+    "https://www.discogs.com/release/1123502"
+   ],
+   "spotifyName": "Shizuka",
+   "mbRgMbid": "f0dbee99-7f80-3a4f-aac0-765d7bb08e83",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Shizuka 静香",
+   "uncertain": "封面需 Discogs release 1123502 取圖（CAA 500）"
   }
  ],
  "notes": [
-  "不收：Shizuka（Spotify 名無法定位：MB 有荷蘭、日本鋼琴家、Chelsy 貝斯手等多位同名，無依據挑唯一者）",
   "全部 15 位在 seed_cards.json、data/artist-intros、aliases.json 均無（Poison Girls 為英國另一團，非同一人）",
-  "iTunes API 被 proxy 403，封面皆走 CAA／Discogs；ないあがらせっと、ヨシンバ封面待補",
-  "所有 MB 皆用 mbRgMbid 釘住，無人工身分"
+  "iTunes API 被 proxy 403，封面皆走 CAA／Discogs；ないあがらせっと、ヨシンバ封面已補 Apple Music",
+  "所有 MB 皆用 mbRgMbid 釘住，無人工身分",
+  "身分：Shizuka＝静香（MB 5c125b18-d098-4321-8a06-09dd06871a32，PSF Records 迷幻搖滾團），主線定案"
  ]
 }
