@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 984 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 990 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -988,3 +988,9 @@
 | ar-d-207 | The West Coast Pop Art Experimental Band | Part One | 有錢的律師出資搞定合約，Markley 就是那位律師 | 維基稱 Markley 是『有錢的花花公子／有抱負的音樂人』，toppermost 稱石油富豪養子，只有一篇搜尋摘要稱其為律師；建議改成『有錢的 Bob Markley』 | https://www.toppermost.co.uk/west-coast-pop-art-experimental-band-the/ |
 | ar-d-207 | The Cosmic Jokers | Galactic Supermarket | 老闆是 Dieter Dierks，他的錄音室是西德 krautrock 的重鎮 | 廠牌老闆是 Rolf-Ulrich Kaiser，Dierks 是錄音室老闆兼製作／混音；『老闆』易讀成廠牌老闆。另『樂手常被老闆的母親餵飽』『在 Stommeln 錄音』本層沒查到出處 | https://en.wikipedia.org/wiki/The_Cosmic_Jokers |
 | ar-d-207 | Tully | Tully | 鍵盤手 Michael Carlos 買了一台 Moog，讓 Tully 成了澳洲第一支在現場用 Moog 的樂團 | 維基與 Milesago 轉述都用 reportedly（據稱）；上線簡介寫成確定句，建議加『據稱』 | https://en.wikipedia.org/wiki/Tully_(band) |
+| ar-d-209 | Daniel Ponce | Arawe | Daniel Ponce 1953 年 7 月 21 日生於哈瓦那 | 生日來源分歧（維基 1953-07-21、wikidata 1953-07-12、AfroCubaWeb 與 WKCR 為 1952），無法確定，建議只寫生於哈瓦那或改為不寫年份。 | https://afrocubaweb.com/daniel-ponce.html |
+| ar-d-209 | Spiral Deluxe | The Love Pretender | 多數曲子在東京錄、巴黎混音 | Keyi 與搜尋結果只說錄於東京（年份各說 2018 或 2019）、之後由 Mills 混音，混音地點巴黎找不到來源；錄音年也不一致。 | https://www.keyimagazine.com/2025/02/20/spiral-deluxe-to-release-final-project-the-love-pretender-an-album-dedicated-to-authenticity |
+| ar-d-210 | Danger Mouse & Daniele Luppi | Rome | 錄音地點選在羅馬 Forum Studios | Paste 說錄音在 Ortophonic Studios，與上線簡介和維基的 Forum Studios 不一致，可能是不同階段；請店主核對 | https://www.pastemagazine.com/music/danger-mouse/danger-mouse-daniele-luppi-rome |
+| ar-d-210 | Rich Ruth | I Survived, It's Over | Michael Ruth 在 2018 年退下來回家做 ambient | Nashville Scene 寫的是 2019 年一次性演出無法滿足創作、才開了 Rich Ruth；另有搜尋摘要說 2018 年退出巡演但未開頁證實，年份來源不一致，建議改成不寫年份或寫 2019 開始發片 | https://www.nashvillescene.com/music/features/rich-ruth-adds-to-the-growing-canon-of-nashville-ambient-music/article_a432cbd6-182a-11ed-960a-db4eefc336f2.html |
+| ar-d-210 | Rich Ruth | I Survived, It's Over | 錄音那一年，Nashville 北部他家一帶遭龍捲風襲擊 | Nashville Scene 全文未提龍捲風，只說疫情初期封鎖時在家中錄、當時剛被餐廳資遣；龍捲風一說本層查不到佐證，建議核對 | https://www.nashvillescene.com/music/features/rich-ruth-adds-to-the-growing-canon-of-nashville-ambient-music/article_a432cbd6-182a-11ed-960a-db4eefc336f2.html |
+| ar-d-210 | Yung Bae | Bae 5 | 前四張靠取樣拼成；〈Bad Boy〉是簽下 Arista Records 後的第一支單曲；唱片自行出版 | 僅維基單源（Arista 與〈Bad Boy〉）；Bandcamp Daily／Portland Mercury／Vice 皆未提 Arista。「前四張」純靠取樣略過度：Bae 系列另有《Japanese Disco Edits》與 Skyscraper Anonymous 等，Vice 稱五張 Bae＋三張 Japanese Disco Edits。可酌改，非確定錯誤。 | https://vice.com/en/article/how-anime-and-japanese-city-pop-influences-yung-bae |
