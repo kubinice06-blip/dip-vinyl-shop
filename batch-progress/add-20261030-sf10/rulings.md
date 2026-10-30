@@ -49,3 +49,24 @@
 - 41907：Danger Mouse & Sparklehorse 取 2010-07-12 正式發行；Linkous（2010-03）與 Chesnutt 辭世都早於發行，屬遺作事實，已標時序。曲目快慢不一，非整張慢板。
 - 41908：Rome 器材只取維基人員表，樂評提及的弦樂編制未列入人員表，facts 不寫。
 - 本組 WebSearch 用 3 次（Maritime Rites、Barry Can't Swim、Dark Night of the Soul）；推翻策展層 2 處（Clutchy 廠牌、Barry「唯一專輯」）。
+
+## 研究 e 組
+- **41941** Vapour Theories《Celestial Scuzz》推翻策展層三處：(1) 是 Bardo Pond 的 Gibbons 兄弟（John、Michael）副專案；(2)「唯一正規長片」不成立，維基列有《Decant》《Joint Chiefs》在前；(3) 卡單 label 空白，實為 Fire Records（FIRELP607），上架廠牌用 Fire Records。發行日 Bandcamp 與 LP 為 2021-02-26，MB 數位版 02-22，年份 2021。
+- **41942** Vapour Theories moodGuess 明顯存疑：來源只描述吉他即興、持續音、回授與 Eno／Sunn O))) 式氛圍，沒有鼓或合成器節拍證據；genre 標 electronic 也不穩（MB 標籤為迷幻搖滾／stoner rock／avant-garde）。建議情緒評分往緩、重、氛圍。status thin（缺獨立樂評）。
+- **41943** Yung Bae《Bae 5》：策展 curatorWhy「銷量與口碑最高」查無來源（Bandcamp Daily 為發行前報導）；發行日 MB／樂評 2019-06-28 對 vaporwave.wiki 2019-08-29 衝突，只寫年份 2019。自行發行（無廠牌），卡單 label 空白合理；〈Bad Boy〉是簽 Arista 後首單，但無證據顯示專輯是 Arista 發行，不寫。Bandcamp Daily 明講此張轉向原創錄音，moodGuess 的「取樣」略偏。
+- **41944** Yaeji《With a Hammer》：確為首張錄音室專輯（前作 2020《What We Drew》是混音帶），XL 發行屬實。moodGuess「中速 house」略偏，來源描述為 synth-pop／ambient／jungle 混合。國際版 13 首，韓國版 CD 多一首〈Daredudu〉。
+- **41945** Tomaga《Intimate Immensity》：「終章」屬實，Relleen 2020 年 8 月過世（與作品直接綁定的可寫類，已克制）；Hands in the Dark 發行屬實。聲音：有鼓、Buchla 合成器、重低頻，動能強、情緒苦甜非陰沉。
+- **41946** Throwing Snow《Mosaic》：身分與 Houndstooth 屬實（HTH019CD）。moodGuess 輕微存疑：多首人聲主導、偏尖峰時段 epic，非全程暗沉。不採「Bristol」地名（現居倫敦）。PopMatters 評語僅取搜尋摘要。
+- 本組 WebSearch 用 3 次（Throwing Snow、Tomaga、Yung Bae 各 1）；推翻策展層 2 處（Vapour Theories 身分／長片數／廠牌、Yung Bae 銷量說法）。
+
+## 研究 c 組
+- **41921** Kate NV《для FOR》推翻策展層廠牌：卡單 Orange Milk 錯，實為 RVNG Intl.（MB RVNGNL50、維基、Discogs、Bandcamp 一致）；Orange Milk 是 2016《Binasu》。發行日 2018-06-22（Bandcamp），日本 Plancha CD 2018-06-15 較早。維基 infobox／navbox 寫 2016 自相矛盾，不採。moodGuess 大致吻合，鼓組無來源證實。
+- **41922** L'Acephale《L'Acéphale》：身分與 Eisenwald 屬實（Eisen142 CD／DLP／MC，2019-04-19；Decibel 預告 4-12 不採）。curatorWhy「評論最高分」不成立（Angry Metal Guy 3.0／5、Distorted Sound 9／10，評價分歧），不寫「最高分」。長度採 Discogs 加總約 74 分鐘（Angry Metal Guy 寫 55 分鐘不採）。成立年 MB 2002、維基分類 2003，facts 寫 MB。
+- **41923** Lau Nau《Kuutarha》：Locust L 66，2005-02-01 屬實；但 2004 年已有芬蘭自行發行 CDr（Discogs 2726141，手繪封套附樹枝），卡片年份仍取 2005（正式發行）。第九首為尼泊爾傳統曲（Discogs 備註，單一來源）。
+- **41924** Lau Nau《Nukkuu》推翻策展層廠牌：原始發行方是 Locust Music（L111），Fonal Records（FR-56）是芬蘭授權版、同日（2008-05-14）；建議卡單 label 改 Locust Music 或並列。Locust 頁寫上市 05-13，採 MB 的 05-14。來源未描述鼓與樂器細節，moodGuess 不存疑也無法證實。
+- **41925** Luke Abbott《Holkham Drones》：無疑點（Border Community 30BCCD，2010-08，首張專輯）。維基人物頁內文寫 2011、列表寫 2010，自相矛盾，採 2010。聲音有機器鼓但極簡，moodGuess 吻合。
+- **41926** Mareux《Lovers From the Past》推翻策展層：(1)〈The Perfect Girl〉不在專輯內，是 2021-12 單曲（維基稱 2015 年翻唱 The Cure 之作，走紅於 TikTok），寫作層不可寫成收錄曲；(2) MB 有兩筆同名 release-group（6152c871 卡單釘住、94ad9870），條碼同為 093624856276、曲目同，是重複條目；封面若抓 CAA，94ad9870 的 release 才有 front。廠牌 Revolution Records（Warner 旗下），首張正規專輯成立。專輯層樂評無法取得，聲音事實 thin，moodGuess 未驗證。
+- **41927** Minotaur Shock《Maritime》：身分與 4AD 屬實（CAD 2511 CD，2005-06-13 UK／08-09 US），4AD 首作。Discogs 備註錄音大部分在家、母帶 Abbey Road；Martin 是誰未列 credits，不寫。樂評全被擋，聲音 thin，moodGuess『明亮鐘琴』未驗證。
+- **41928** Monoton《Monotonprodukt 07》：維也納 Konrad Becker 的 Monoton（非池中 MONO），1982 自家出版、雙 LP 限量 500；2003 Oral 重發改英文曲名、曲序不同。The Wire 列入 1998 名單（維基）／「20 世紀百張」（Discogs 簡介，單一來源）。無樂評，聲音 thin，moodGuess『冷硬合成器律動』未驗證。
+- **41929** 本組 moodGuess 存疑清單：無明顯推翻；Mareux、Minotaur Shock、Monoton 三張因找不到聲音描述，列「未驗證」而非「存疑」，建議主線評分時聽音。
+- **41930** 工具限制：Pitchfork、AllMusic、BBC、Independent、Metal Archives、Discogs 網頁被擋，改用 Discogs／MB API。WebSearch 全組用 3 次（Kate NV、L'Acephale、Lau Nau 各 1）；推翻策展層 Kate NV 廠牌、Nukkuu 廠牌、Mareux 代表曲三處，另 Luke Abbott 無推翻。
