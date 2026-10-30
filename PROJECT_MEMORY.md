@@ -8,6 +8,18 @@
 - **主要檔案**：`desc-tools/batches/artist/{facts,research,output}/ar-d-21{1,2}-*`、`progress.json`、`data/artist-intros/*`、`audits/ARTIST-PUB-ISSUES.md`、`batch-progress/artist-intro/ar-c-rulings.md`、`batch-progress/spotify-follow-20261030/PLAN.md`。
 - **驗證**：qa-artist gap／out 兩批 0 處（僅剩 skipped 的「缺 N 位」與 NUUAMM「国」團名原字）；build-artist-intros 338 份成品、6,331 位、64 分片。
 
+### 2026-10-30｜dip-vinyl-shop｜Spotify 追蹤藝人補卡池 sf06（華語其他／港／韓／泰）＋sf08（西洋 90 年代至今獨立／alt／迷幻）上線 79 張
+
+- **改動**：照 `batch-progress/spotify-follow-20261030/PLAN.md` 跑完兩批（策展 4、研究 6、鉤子 3、寫作 4、主線審稿、試聽、封面 live-check＋目視、三軸、頂點、寫入、子曲風、情緒評分）。
+  - **sf06**：清單 29 位 → 收 20 位 20 張；跳過已在池 0；不收 9 位（Ni Jay、Tracey、WHYNOT、HH、เขียนไขและวานิช 身分釘不住；Popstar Benny、Chill Qin、B E N N 無代表性正規專輯；Food-Spotter 只有單曲）。主線改盤 Glen Check《Bleach》→《Haute Couture》並改國別 kr；劉以達《麻木》、亂彈阿翔《把我換成你》以例外收。試聽 ready 14／unavailable 6；頂點 0；審稿未改字。
+  - **sf08**：清單 41 位 → 收 40 位 59 張；跳過 0；不收 Valley Hi!（只有 4 曲 EP）。主線改盤 Frànçois《Plaine inondable》→《E Volo Love》；研究層推翻策展廠牌約 20 處全數照改。試聽 ready 57／unavailable 2；頂點 0；審稿改 1 處（MV & EE「踏板鋼琴」→踏板鋼吉他）。
+  - 身分：用 `missing-artists.csv` 的 Spotify 連結逐位對 MB url-rel／Spotify 藝人頁專輯清單，79 張 0 張對錯人。
+  - 寫入：card_catalog 79、KV 87 鍵（sf06 28、sf08 59）逐字回讀一致、seed 79；寫入前合併 origin/main，對 155 refs 的 seed 去重 0 撞。Discogs 封面 3 張入 registry。
+  - 子曲風 79/79 落位（`tw-pop-artists` +2、`rock-asia-country-map` +4、`genre-l3-artist-map` 補 14 位）；情緒評分 `batch-progress/mood-axes/score-sf0608/`（79 張，錨點 104/104）。
+  - 藝人介紹：`roster-sf06.json` 20 位 → ar-d-206、`roster-sf08.json` 40 位 → ar-d-208（state cut），補洞寫作待調度另派。
+- **主要檔案**：`batch-progress/add-20261030-sf0{6,8}/`、`onboarding-manifest-add-20261030-sf0{6,8}-20261030.json`、`desc-tools/batches/*/add-20261030-sf0{6,8}*`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-sf0{6,8}*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`data/mood/*`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`、`tw-pop-artists.json`、`rock-asia-country-map.json`、`genre-l3-artist-map.json`、`desc-tools/batches/artist/{progress.json,cut/ar-d-206.txt,cut/ar-d-208.txt}`、PLAN.md。
+- **驗證**：兩批 prepare／published gate 皆 0 error；qa-batch research／hooks／out 全過；封面 79/79 HTTP 200；mood 錨點 104/104。
+
 ### 2026-10-30｜dip-vinyl-shop｜Spotify 追蹤藝人補卡池 sf11（冷門／身分待查）＋sf12（嘻哈／R&B／靈魂／流行／以色列）上線 59 張
 
 - **改動**：照 `batch-progress/spotify-follow-20261030/PLAN.md` 跑完兩批（策展 4、研究 5×2、鉤子 2×2、寫作 2×2、主線審稿、試聽、封面 live-check、三軸、頂點、寫入、子曲風、情緒評分、藝人介紹名冊）。

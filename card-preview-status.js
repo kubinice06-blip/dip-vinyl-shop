@@ -3593,4 +3593,12 @@ window.DipPreviewStatus = Object.freeze({
   "mr twin sister|mr twin sister": "unavailable",
   "onry ozzborn|the grey area": "unavailable",
   "noblemen|chord stricken": "unavailable",
+  "劉以達|麻木": "unavailable",
+  "盧家齊|circle = 圆": "unavailable",
+  "juggaknots|the juggaknots": "unavailable",
+  "강태환|소리 (sorefa)": "unavailable",
+  "dotzio|the file you're looking for no longer exist": "unavailable",
+  "championxiii|champion status": "unavailable",
+  "the charlottes|lovehappy": "unavailable",
+  "sleepytime trio|plus 6000": "unavailable",
 });
