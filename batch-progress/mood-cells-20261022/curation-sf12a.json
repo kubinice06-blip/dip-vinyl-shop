@@ -16,7 +16,7 @@
   {
    "id": "contemporary-rnb",
    "zh": "當代 R&B",
-   "count": 4,
+   "count": 6,
    "why": ""
   },
   {
@@ -64,6 +64,12 @@
   {
    "id": "uk-alt-pop",
    "zh": "英國另類流行",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "underground-hiphop",
+   "zh": "地下嘻哈",
    "count": 2,
    "why": ""
   }
@@ -697,6 +703,126 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "Mercury 提名事實需核對"
+  },
+  {
+   "artist": "Omar Apollo",
+   "album": "Ivory",
+   "year": 2022,
+   "label": "Warner / Stones Throw",
+   "country": "us",
+   "faction": "contemporary-rnb",
+   "genres": [
+    "soul",
+    "pop"
+   ],
+   "why": "首張正式專輯，Evergreen、Tamagotchi 帶動，奠定其 indie R&B 地位。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.5,
+    "z": 0.6,
+    "why": "柔和 R&B 與 indie 吉他，嗓音溫熱"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/4e9d2da7-6a0a-4433-af20-296c35d0fda5/front",
+    "https://musicbrainz.org/release-group/4e9d2da7-6a0a-4433-af20-296c35d0fda5"
+   ],
+   "spotifyName": "Omar Apollo",
+   "mbRgMbid": "4e9d2da7-6a0a-4433-af20-296c35d0fda5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "label 待核對；Apolonio(2020)為 mixtape 不收"
+  },
+  {
+   "artist": "Omar Apollo",
+   "album": "God Said No",
+   "year": 2024,
+   "label": "Warner",
+   "country": "us",
+   "faction": "contemporary-rnb",
+   "genres": [
+    "soul",
+    "pop"
+   ],
+   "why": "第二張專輯，更完整的 R&B／funk 流行作品，評價最高。",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 0.6,
+    "z": 0.5,
+    "why": "流行 R&B 夾 funk 與搖滾，旋律清楚"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/6762716f-0457-4b26-a0ed-ec679304b1ff/front",
+    "https://musicbrainz.org/release-group/6762716f-0457-4b26-a0ed-ec679304b1ff"
+   ],
+   "spotifyName": "Omar Apollo",
+   "mbRgMbid": "6762716f-0457-4b26-a0ed-ec679304b1ff",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Onry Ozzborn",
+   "album": "The Grey Area",
+   "year": 2003,
+   "label": "",
+   "country": "us",
+   "faction": "underground-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "西雅圖 Oldominion／Grayskul 成員 Onry Ozzborn 的個人名義專輯，早期地下嘻哈代表。",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.8,
+    "z": -0.8,
+    "why": "陰鬱 beat 與低沉 rap"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/cd834f10-65d4-35de-b7bb-5676daf495b8/front",
+    "https://musicbrainz.org/release-group/cd834f10-65d4-35de-b7bb-5676daf495b8",
+    "https://www.discogs.com/artist/147758"
+   ],
+   "spotifyName": "Onry Ozzborn",
+   "mbRgMbid": "cd834f10-65d4-35de-b7bb-5676daf495b8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "個人專輯多、口碑共識薄弱，挑選依據偏弱；label 待補；Aesop Rock 合作曲未對應專輯"
+  },
+  {
+   "artist": "Onry Ozzborn",
+   "album": "Nervous Hvnd",
+   "year": 2018,
+   "label": "",
+   "country": "us",
+   "faction": "underground-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "近期個人名義的完整專輯，風格更成熟。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.8,
+    "z": -0.9,
+    "why": "暗黑迷幻 beat，低音厚"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/7db8e88b-a682-454d-b941-ca7b117c2b0c/front",
+    "https://musicbrainz.org/release-group/7db8e88b-a682-454d-b941-ca7b117c2b0c",
+    "https://www.discogs.com/artist/147758"
+   ],
+   "spotifyName": "Onry Ozzborn",
+   "mbRgMbid": "7db8e88b-a682-454d-b941-ca7b117c2b0c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上，第二張可棄"
   }
  ],
  "notes": [
@@ -707,6 +833,8 @@
   "Marian Hill 其餘專輯不收（Unusual 等），取首張。",
   "Maddie Ashman otherworld(5 首 EP)、單曲不收，只收 Her Side。",
   "JMSN 查池無；Olivia Dean 對池 DEAN 為子字串誤中。",
-  "範圍註記：派工寫 Attica Blues 至 Onry Ozzborn，但 batches.sf12 前 16 位實為 Attica Blues 至 Olivia Dean；Omar Apollo、Onry Ozzborn 屬第 17、19 位，未處理（應屬 sf12b）。"
+  "範圍註記：派工寫 Attica Blues 至 Onry Ozzborn，但 batches.sf12 前 16 位實為 Attica Blues 至 Olivia Dean；Omar Apollo、Onry Ozzborn 屬第 17、19 位，未處理（應屬 sf12b）。",
+  "補入 Omar Apollo、Onry Ozzborn(協調者指示)；查池無，Omar／Poll 為子字串誤中。",
+  "Onry Ozzborn 與 Grayskul(Onry+Tolliver)為不同名義，池中皆無，不另收 Grayskul。"
  ]
 }
