@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-30｜dip-vinyl-shop｜管理員「🏪 重跑序章」改成不存檔的預覽
+
+店主：「管理員模式重跑序章不用清空個人紀錄，跳出就結束這一輪暫時的，下次開始再一樣重來不清空」。
+取代 2026-09-09 的 `resetPrologue()`（那版會刪正式帳號的角色與序章送的五張）。
+
+- **做法**：按鈕改呼叫 `startProloguePreview()` → 開 `roguelike.html?prologue=preview`；`bootstrap()` 等登入／樂歷綁定完、確認是管理員（或沙盒）後進 `enterProloguePreview()`：
+  `PRO_PREVIEW=true`、`META=loadMeta(true)`（全新玩家：Lv.1、隨機起始 8 張、無角色、沒做過教學），畫面底部掛「🎬 序章預覽中・不存檔／結束 ✕」。
+- **擋寫入**：`saveMeta()` 直接 return；`saveRun()` 改存記憶體 `_previewRun`、`peekRunSave()`／`clearRunSave()` 跟著讀寫它（不碰正式那一趟的本機存檔與雲端墓碑）；`syncRunToCloud`／`pullCloudRun`／`flushPendingCards`／收卡寫唱片櫃一律跳過；`bindMetaToAccount` 與登出分支不得把預覽那份樂歷換掉。
+- 重新整理或離開頁面＝這一輪結束；下次再按又是全新一輪。非管理員帶 `?prologue=preview` 當一般 `?prologue=1`。後台「序章劇本」的「▶ 到前台看序章」也改連預覽。
+- **主要檔案**：`roguelike.html`、`admin.html`。
+- **驗證**：Chromium＋本機 http，沙盒種「店主／xp 5000／現金 999／13 張／有角色／進行中一趟」→ `?prologue=preview` 進捏角色、角色清空、Lv.1 → 捏角色、選冷門軸、結帳、進教學第一場（記憶體內 tutorialDone、續玩存檔皆有）→ 本機樂歷與進行中存檔逐字未變 → 回 `roguelike.html` 名字／xp／現金／收藏／角色／那一趟全數原樣 → 再進一次預覽又是全新；全程無 JS 錯誤。390px 寬截圖提示條不擋對話窗。
+
 ### 2026-10-30｜dip-vinyl-shop｜Spotify 追蹤藝人補卡池：全線完成（417 張卡、318 位藝人介紹）
 
 - **店主指示**：`/dip-card-create` 依 `gap.json` 補卡池（收藏 38 張＋361 位缺漏藝人各 1–2 張代表作），一路接力。

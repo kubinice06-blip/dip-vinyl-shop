@@ -624,7 +624,7 @@
         try { const s = await getDoc(doc(db,'users',u.uid)); return s.exists() ? (s.data().rogueMeta||null) : null; }
         catch(e){ return null; }
       };
-      // 回傳寫入的 promise：一般存檔照樣 fire-and-forget，但「重跑序章」那種存完就跳頁的
+      // 回傳寫入的 promise：一般存檔照樣 fire-and-forget，但存完就跳頁的
       // 情境要 await 它，否則 location.replace 會把還沒送出的那筆寫入直接砍掉。
       window.__saveRogueMeta = (m) => {
         const u = auth.currentUser; if(!u) return null;
@@ -1558,11 +1558,15 @@ const META_UID_KEY = 'dipRogueLastUid';
 // 但完全不讀寫雲端與正式帳號——管理員可放心測新功能，並隨時改等級／歸零／全部重置。
 let SANDBOX=false; try{ SANDBOX = localStorage.getItem('dipRogueSandbox')==='1'; }catch(e){}
 let _cloudUid = null; try{ _cloudUid = localStorage.getItem(META_UID_KEY) || null; }catch(e){}
+// 🎬 管理員「重跑序章」＝序章預覽：換一份全新玩家的樂歷跑在記憶體裡，本機、雲端、唱片櫃一律不寫。
+// 正式紀錄原封不動；重新整理／離開頁面這一輪就結束，下次再按又是全新的一輪。
+let PRO_PREVIEW=false;
+let _previewRun=null;   // 預覽中那一趟的續玩存檔（只放記憶體，取代 localStorage）
 // 登入後改用 uid 專屬 key（＝本機快取），訪客用共用 key；登出後等級不再跟著裝置走
 function metaStoreKey(){ if(SANDBOX) return META_KEY+':sandbox'; return _cloudUid ? META_KEY+':'+_cloudUid : META_KEY; }
 const keyOf = c => (c.artist+'|'+c.album).toLowerCase();
-function loadMeta(){
-  let m; try{ m = JSON.parse(localStorage.getItem(metaStoreKey())); }catch(e){}
+function loadMeta(fresh){
+  let m; if(!fresh){ try{ m = JSON.parse(localStorage.getItem(metaStoreKey())); }catch(e){} }
   if(!m) m = { xp:0, talents:{atk:0,def:0,qir:0}, runsPlayed:0, bestDepth:0, bestStreak:0, collection:[], pending:[], relicsSeen:[], relicsOwned:[], relicLv:{}, cash:0, relicWear:{} };
   m.talents = Object.assign({atk:0,def:0,qir:0}, m.talents||{});
   if(!Array.isArray(m.pending)) m.pending = [];
@@ -1587,6 +1591,7 @@ function loadMeta(){
   return m;
 }
 function saveMeta(){
+  if(PRO_PREVIEW) return null;   // 序章預覽：什麼都不寫
   try{ localStorage.setItem(metaStoreKey(), JSON.stringify(META)); }catch(e){}
   // 登入中 → 同步寫雲端（fire-and-forget；JSON 轉一圈把 undefined 洗掉，Firestore 不收）；沙盒不寫雲端
   if(_cloudUid && !SANDBOX && window.__saveRogueMeta){ try{ return window.__saveRogueMeta(JSON.parse(JSON.stringify(META))); }catch(e){} }
@@ -1631,8 +1636,8 @@ function mergeMeta(a,b){
 // 登入 → 樂歷綁帳號：雲端為主、本機訪客進度首次登入時併入；訪客檔清掉（登出後回到訪客 Lv.1）
 async function bindMetaToAccount(u){
   if(!u) return;
-  if(SANDBOX){
-    // 🧪 訪客測試中：不併雲端、不綁帳號——只重畫，讓管理員面板與登入狀態顯示出來
+  if(SANDBOX || PRO_PREVIEW){
+    // 🧪 訪客測試中／序章預覽中：不併雲端、不綁帳號（預覽那份樂歷不能被正式的蓋回去）——只重畫，讓管理員面板與登入狀態顯示出來
     const tb=document.querySelector('.topbar'); if(tb) tb.outerHTML=topbarHTML();
     if(document.getElementById('clsList')||document.getElementById('rookieHome')) renderClassSelect();
     return;
@@ -1671,7 +1676,7 @@ async function bindMetaToAccount(u){
 }
 // 未登入時「收進唱片櫃」的卡先記在 pending，登入後自動補寫進 Firestore 唱片櫃
 async function flushPendingCards(){
-  if(SANDBOX) return;   // 沙盒的卡只留本機，不補寫進正式帳號的唱片櫃
+  if(SANDBOX || PRO_PREVIEW) return;   // 沙盒的卡只留本機，不補寫進正式帳號的唱片櫃
   const user = window.__rogueUser && window.__rogueUser();
   if(!user || !window.__addToMyCollection) return;
   const pend = META.pending||[];
@@ -1873,6 +1878,7 @@ function initRoguePlayer(){
   if(u){ window.__rogueBindP = bindMetaToAccount(u); }
   else if(_cloudUid){
     _cloudUid=null; try{ localStorage.removeItem(META_UID_KEY); }catch(e){}
+    if(PRO_PREVIEW) return;   // 序章預覽那份樂歷不換掉
     META=loadMeta();
     const tb=document.querySelector('.topbar'); if(tb) tb.outerHTML=topbarHTML();
     if(document.getElementById('clsList')||document.getElementById('rookieHome')) renderClassSelect();
@@ -2448,15 +2454,15 @@ function adminPanelHTML(){
   if(!SANDBOX) return `<div class="muted" style="border:1px dashed #999;padding:8px 10px;margin:10px 0;font-size:10px;line-height:1.9">
     🧪 管理員測試：<button class="btn" style="font-size:10px" onclick="enterSandbox()">以訪客身分瀏覽</button>
     等級／卡牌全新開始，正式帳號進度完全不受影響，隨時可切回。
-    <button class="btn" style="font-size:10px;margin-left:4px" onclick="resetPrologue()">🏪 重跑序章</button>
-    只清角色與序章送的五張，樂歷／配件／現金保留。</div>`;
+    <button class="btn" style="font-size:10px;margin-left:4px" onclick="startProloguePreview()">🏪 重跑序章</button>
+    以全新玩家跑一輪、全程不存檔；正式紀錄不動，離開頁面就結束。</div>`;
   return `<div style="border:1px dashed var(--gold);background:#fffbe9;padding:8px 10px;margin:10px 0;font-size:10px;line-height:1.9">
     <b style="color:var(--gold)">🧪 訪客測試中</b>——樂歷／卡牌／配件照常累積，但獨立存本機、不寫雲端與正式帳號。
     <div class="row" style="gap:6px;margin-top:4px;flex-wrap:wrap">
       <button class="btn" style="font-size:10px" onclick="sbSetLevel()">設定等級…</button>
       <button class="btn" style="font-size:10px" onclick="sbResetXp()">樂歷歸零</button>
       <button class="btn" style="font-size:10px" onclick="sbResetAll()">全部重置</button>
-      <button class="btn" style="font-size:10px" onclick="resetPrologue()">🏪 重跑序章</button>
+      <button class="btn" style="font-size:10px" onclick="startProloguePreview()">🏪 重跑序章</button>
       <button class="btn" style="font-size:10px" onclick="exitSandbox()">離開訪客模式 →</button>
     </div></div>`;
 }
@@ -2477,27 +2483,22 @@ function sbResetAll(){
   try{ localStorage.removeItem(RUNSAVE_KEY); localStorage.removeItem(metaStoreKey()); }catch(e){}
   location.reload();
 }
-// 🏪 重跑序章：清掉角色（名字／外觀／耳朵）與序章送的那五張，回到「沒逛過唱片行」的狀態。
-// 樂歷、配件、現金、圖鑑、解鎖都保留——只有序章本身重來。
-// ⚠️ 這裡一定要寫成 null 而不是 delete：雲端是 setDoc({rogueMeta},{merge:true})，
-//    欄位「不存在」不會蓋掉雲端那份，而 mergeMeta 又是 `hi.profile || lo.profile`，
-//    下次登入就會把舊角色併回來。寫 null 才真的清得掉。
-async function resetPrologue(){
+// 🏪 重跑序章（預覽）：開新頁帶 ?prologue=preview，由 bootstrap 等登入確認是管理員後接手。
+// 不清任何東西——舊版會把正式帳號的角色與序章那五張刪掉，店主要的是「只是再看一次」。
+function startProloguePreview(){
   if(!SANDBOX && !isAdminUser()) return;
-  const who = SANDBOX ? '訪客' : '你的正式帳號';
-  if(!confirm(`重跑序章：清掉${who}的角色（名字／外觀／耳朵）與序章送的那五張唱片，`
-    + `回到沒逛過唱片行的狀態。\n樂歷、配件、現金、圖鑑都保留。\n\n確定？`)) return;
-  const starter = new Set(((META.profile && META.profile.ace) ? [META.profile.ace] : [])
-    .concat((META.profile && META.profile.albums) || []).map(keyOf));
-  if(Array.isArray(META.collection) && starter.size)
-    META.collection = META.collection.filter(c => !starter.has(keyOf(c)));   // 免得換一軸就多五張
-  META.profile = null; META.name = ''; META.avatar = null;
-  try{ localStorage.removeItem(RUNSAVE_KEY); }catch(e){}   // 進行中那一趟綁著舊角色
-  // 一定要等雲端那筆寫完再跳頁：不等的話 location.replace 會砍掉還在飛的 setDoc，
-  // 下次登入 mergeMeta 又把雲端的舊 profile 併回來，序章等於沒重跑。
-  const p = saveMeta();
-  if(p) { try{ await Promise.race([p, new Promise(r=>setTimeout(r,3000))]); }catch(e){} }
-  location.replace('roguelike.html?prologue=1');
+  location.href='roguelike.html?prologue=preview';
+}
+function enterProloguePreview(){
+  PRO_PREVIEW=true; _previewRun=null; _shop=null; RUN=null; G=null; _phase='menu';
+  META=loadMeta(true);   // 全新玩家：Lv.1、隨機起始 8 張、沒有角色、沒做過教學
+  if(!document.getElementById('proPreviewBar')){
+    const bar=document.createElement('div'); bar.id='proPreviewBar';
+    bar.style.cssText='position:fixed;left:50%;bottom:8px;transform:translateX(-50%);z-index:9999;background:#fffbe9;border:1px dashed var(--gold);color:#333;font-size:10px;padding:4px 8px;border-radius:4px;box-shadow:0 1px 4px rgba(0,0,0,.2);white-space:nowrap';
+    bar.innerHTML='🎬 序章預覽中・不存檔 <button class="btn" style="font-size:10px;padding:2px 6px;margin-left:4px" onclick="location.replace(\'roguelike.html\')">結束 ✕</button>';
+    document.body.appendChild(bar);
+  }
+  renderShopIntro();
 }
 
 // 開新的一趟前的共用守門：上一趟還沒打完 → 先問一聲（同 chooseClass）
@@ -2632,6 +2633,7 @@ function saveRun(phase){
     else if(_phase==='level')  pay.lvlIds = (_lvlChoices||[]).map(u=>u.id);
     else if(_phase==='draw')   pay.drawCards = _drawChoices ? _clone(_drawChoices) : (_drawCard ? [_clone(_drawCard)] : null);
     else if(_phase==='loot')   pay.lootCard = _lootCard ? _clone(_lootCard) : null;
+    if(PRO_PREVIEW){ _previewRun=_clone(pay); return; }   // 序章預覽：續玩存檔只放記憶體、不同步雲端
     localStorage.setItem(RUNSAVE_KEY, JSON.stringify(pay));
   }catch(e){}
   syncRunToCloud(false);
@@ -2639,7 +2641,7 @@ function saveRun(phase){
 // 雲端同步（登入才有）：戰鬥中每一手都寫太耗流量 → 平時只在場間畫面同步，
 // 「保留進度離開」時才強制連戰鬥狀態一起上傳（換裝置能接在同一手）。
 function syncRunToCloud(force){
-  if(SANDBOX) return null;   // 沙盒不同步雲端
+  if(SANDBOX || PRO_PREVIEW) return null;   // 沙盒不同步雲端
   if(!window.__saveRogueRun || !(window.__rogueUser && window.__rogueUser())) return null;
   const s = peekRunSave(); if(!s) return null;
   if(!force && s.phase==='fight') return null;
@@ -2647,13 +2649,14 @@ function syncRunToCloud(force){
 }
 function clearRunSave(){
   _phase='menu';
+  if(PRO_PREVIEW){ _previewRun=null; return; }   // 預覽中不能碰正式那一趟（本機存檔與雲端墓碑都不動）
   try{ localStorage.removeItem(RUNSAVE_KEY); }catch(e){}
   // 立墓碑：別台裝置上那份同一趟的存檔要跟著作廢，否則同一趟能結算兩次（沙盒不碰雲端）
   if(!SANDBOX && window.__saveRogueRun && window.__rogueUser && window.__rogueUser()) window.__saveRogueRun(null);
 }
 // 登入後把雲端那份拉下來比對（只在還沒開打時動本機存檔）
 async function pullCloudRun(){
-  if(SANDBOX) return false;   // 沙盒不拉雲端存檔
+  if(SANDBOX || PRO_PREVIEW) return false;   // 沙盒不拉雲端存檔
   if(_phase!=='menu') return false;
   if(!window.__loadRogueRun || !(window.__rogueUser && window.__rogueUser())) return false;
   let c=null; try{ c = await window.__loadRogueRun(); }catch(e){}
@@ -2673,7 +2676,9 @@ async function pullCloudRun(){
   return false;
 }
 function peekRunSave(){
-  let s=null; try{ s=JSON.parse(localStorage.getItem(RUNSAVE_KEY)); }catch(e){}
+  let s=null;
+  if(PRO_PREVIEW) s=_previewRun ? _clone(_previewRun) : null;
+  else { try{ s=JSON.parse(localStorage.getItem(RUNSAVE_KEY)); }catch(e){} }
   if(!s || !s.run || !s.run.classKey || !CLASSES[s.run.classKey]) return null;
   return s;
 }
@@ -4806,7 +4811,7 @@ function doKeepRunCard(i){
   const clean={artist:c.artist,album:c.album,coverUrl:c.coverUrl||'',classic:c.classic,obscurity:c.obscurity,accessibility:c.accessibility,ace:c.ace||null};
   if(!META.collection.some(x=>keyOf(x)===keyOf(clean))) META.collection.push(clean);
   const user = window.__rogueUser && window.__rogueUser();
-  if(user && !SANDBOX && window.__addToMyCollection){ window.__addToMyCollection(clean).catch(()=>{}); }   // 寫進帳號唱片櫃（Firestore）；沙盒只留本機
+  if(user && !SANDBOX && !PRO_PREVIEW && window.__addToMyCollection){ window.__addToMyCollection(clean).catch(()=>{}); }   // 寫進帳號唱片櫃（Firestore）；沙盒只留本機
   else { META.pending=META.pending||[]; if(!META.pending.some(x=>keyOf(x)===keyOf(clean))) META.pending.push(clean); }
   saveMeta();
   closeCardInfo();
@@ -5112,7 +5117,8 @@ async function bootstrap(){
   // 品味生死鬥頁的「教學關卡」入口：?tutorial=1 直接開教學（可無限重玩）；
   // 把參數洗掉，之後死亡重來／重新整理不會又被拉回教學
   const _q = new URLSearchParams(location.search);
-  const _wantTut = _q.get('tutorial')==='1', _wantPro = _q.get('prologue')==='1', _wantChar = _q.get('char')==='1';
+  const _wantPreview = _q.get('prologue')==='preview';
+  const _wantTut = _q.get('tutorial')==='1', _wantPro = _q.get('prologue')==='1' || _wantPreview, _wantChar = _q.get('char')==='1';
   if(_wantTut||_wantPro||_wantChar){ try{ history.replaceState(null,'',location.pathname); }catch(e){} }
   // 🏪 從品味生死鬥主選單來的序章／捏角色：先等登入狀態與樂歷綁定（雲端已有角色的人不該再走一次序章）
   if(_wantPro||_wantChar){
@@ -5125,6 +5131,7 @@ async function bootstrap(){
     }catch(e){}
   }
   if(_wantChar){ renderCharCreate('hub'); }
+  else if(_wantPreview && (SANDBOX || isAdminUser())) enterProloguePreview();   // 🎬 管理員序章預覽（非管理員當一般 ?prologue=1）
   else if(_wantPro){ if(META.profile){ location.replace('pvp.html'); return; } renderShopIntro(); }
   // 還沒逛過唱片行的新玩家：先走序章，不直接跳進老闆帶打
   else if(_wantTut && guardRunSave()){ if(!hasUnlock('classes') && !META.profile) renderShopIntro('tutorial'); else startTutorialRun(); }
