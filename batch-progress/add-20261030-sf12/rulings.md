@@ -22,3 +22,23 @@
 - **49924**　Olivia Dean《Messy》label 由「Polydor」改「EMI」；Mercury 為 2023 年入圍決選（shortlisted），非得獎，按入圍寫。《The Art of Loving》label Capitol／Polydor 核對無誤；Grammy 最佳新人（2026 年 2 月）、Brit 年度專輯、MOBO 年度專輯為得獎，Mercury 為入圍；Dean 發行後的訴訟與後續成績不進正文。
 - **49925**　Omar Apollo《Ivory》label 由「Warner / Stones Throw」改「Warner Records」（MB 與維基皆無 Stones Throw）；《God Said No》Warner 無誤，首發 2024-06-28（MB 6/24 為早期登錄）。《Ivory》曲風跨度大（龐克流行、拉丁 trap、corrido），評分勿只看單曲；《God Said No》樂評是 lo-fi、氛圍、失戀殘骸，moodGuess 部分存疑偏暗。
 - **49926**　c 組 7 張 facts 條數 9／9／10／10／10／10／10，status 全 full；未推翻年份與盤名。〈Hole in the Bucket〉Clio 獎說法兩個維基頁互相矛盾，未寫入。
+
+## 研究 d 組
+- **49931**　The Beneficiaries《The Crystal City Is Alive》**不是嘻哈**：Jeff Mills（Axis Records）＋Eddie Fowlkes＋詩人 Jessica Care Moore 的底特律 techno＋口語詩專輯（6 首，三首超過 11 分鐘；Axis 官網、RA、Crack）。與 Black Constellation 無關。建議 genre 改 electronic、country us（底特律）、label 補 Axis Records；三軸 moodGuess 依 techno 長篇重估，或主線決定汰換。MB 目錄號 AXCD055 與 Axis 官網 AX087 並列。
+- **49932**　The UMC's：策展寫「布朗克斯」，實為史泰登島（維基）。label Wild Pitch（EMI 發行）對；發行日 MB 1991-10-14、維基 10-15，年份不變。卡面名稱建議 The UMC's（MB 為彎引號）。
+- **49933**　Saya Gray《SAYA》：策展寫「首張正式專輯」，實為第二張（首張 2022《19 Masters》）；日裔加拿大籍。Polaris 短名單、Juno 提名僅維基單一來源，寫作層用「入圍／提名」。moodGuess 輕度存疑（folk／country 吉他加 808 與搖滾爆發，非純拼貼）。
+- **49934**　Sad Night Dynamite《Welcome the Night》：label 空白補 Pigeon Teeth（AWAL 授權；僅 Apple 單一來源）。官方文案稱「未來流行」，moodGuess「躁動失真」輕度存疑，依聽感評分。
+- **49935**　S.C.A.B.：維持 2025《Somebody in New York Loves You!》（第三張，Grind Select，MB 釘住），同名 2022 盤評論面證據不足，不翻案；皇后區 Ridgewood 樂團、非同名 scab 朋克，已查清。
+- **49936**　Onry Ozzborn《The Grey Area》：label 補 One Drop Records（MB cat 003-02）；XLR8R 等評價正面，「口碑共識薄弱」不成立，保留。Aesop Rock 合作不在本盤。
+- **49937**　Puma Blue《In Praise of Shadows》：label Blue Flowers Music（MB 另列 [PIAS]），14 首；無推翻。樂評全文（Pitchfork、AllMusic、Bandcamp）被擋，樂評面 thin，聲音事實來自 The Forty-Five 與維基。
+- **49938**　d 組 7 張 facts 條數 10／11／9／10／9／9／8，https 全過，無千分位逗號；status 全 full。Wikipedia 與 MB 為主要來源，AllMusic／Discogs／WhoSampled 403。
+
+## 研究 b 組
+- **49911**　KMD《Black Bastards》：策展層 label「Rhymesayers」錯，MB／維基皆無。首次正式發行是 2000-05-15 ReadyRock Records（RR2001，MB 另掛 Metal Face），2001 為 Sub Verse Music 再版（SVM 15，加混音與〈Q3-113〉）。建議卡片 year 2000、label ReadyRock Records；若堅持 2001 則 label 為 Sub Verse Music。MB RG 首發 1994 是 Elektra 試聽版。
+- **49912**　KMD《Mr. Hood》：1991 Elektra（60977-2）核實，無推翻；MB 標 K.M.D. 與 UK techno 同名團無涉。
+- **49913**　JMSN：正式寫法定案「It Is.」（帶句點、Is 大寫；MB RG 標題小寫 'It is.'，Hypebeast／維基用 'It Is.'）。聲音證據僅 Exclaim! 摘要＋Qobuz 流派（Pitchfork／AllMusic 擋抓），status thin；moodGuess 輕度存疑（證據偏爵士吉他＋福音味靈魂，非策展層的迷幻低音合成器），不汰。
+- **49914**　Lausse The Cat：MB／Qobuz 核得 8 首 21:51（策展層『6 與 8 首並存』只核得 8 首）；廠牌 Velvet Blues 單源（Apple 版權行為藝人本人）；曲風來源只標 Hip-Hop／Alternative Rap，策展層 genres 的 soul 無證據，建議拿掉（可逆）。moodGuess 輕度存疑（來源偏憂鬱＋厚重 808，非溫潤），不汰。
+- **49915**　Maddie Ashman《Her Side》：EP 標準版 7 首約 30 分鐘（Line of Best Fit／NME），MB 另有 8 首版（多〈So Sick〉）；卡單 releaseType 標 Compilation 疑為誤標，實為 EP，長 EP 例外成立。聲音證據僅敘述性評語，status thin，評分前需實聽。
+- **49916**　Marian Hill《Act One》：Atwood 評論有詳細聲音描述（彈指／啪聲／beat drop／即興薩克斯風 Steve Davit）。〈Down〉Hot 100 第 21 名與雙白金為維基單源（自標 citation needed）。不寫「沒有鼓」（未證）。
+- **49917**　Kris Kross《Totally Krossed Out》：無推翻；4 白金、逾 400 萬張為維基無出處段落，用語保守；維基 Jump 條未提 Jackson 5 取樣，不寫。
+- **49918**　b 組 7 張 facts 條數 10／10／10／10／10／10／10，https 全過，無千分位逗號、無簡體；status thin／full／full／full／full／thin／full。推翻策展層 1 處（KMD《Black Bastards》廠牌與年份）。
