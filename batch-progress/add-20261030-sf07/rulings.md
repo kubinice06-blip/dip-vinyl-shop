@@ -39,3 +39,16 @@
 ## 主線（條號 30771–30790）
 - **30771** WCPAEB《Volume 2》curatorWhy 去掉「評價最高」（研究 e：維基與樂團傳記以《Volume 3》為最成熟，《Vol. 2》是最有野心的一張；正式名《Vol. 2 (Breaking Through)》）。仍收《Part One》＋《Volume 2》兩張，正文不得寫「評價最高／最佳」。Sugarcubes 廠牌正文寫原名 One Little Indian。
 - **30772** Gravy Train 出身改「蘭開夏聖海倫斯」（研究 a 推翻策展層「曼徹斯特」）。Atomic Rooster 第二張盤名維持封面通行寫法《In Hearing Of Atomic Rooster》（MB 題名《In Hearing Of》，queryAlias 已帶）。High Tide 首作評價明顯高於第二張，兩張照收（可逆，評分照實）。
+
+## 研究 c 組（30721–30730）
+- **30721** Pierrot Lunaire 兩張廠牌推翻策展層「Grog」：Discogs（release 9864663、2901108）與 it.wikipedia 皆為 It（Vincenzo Micocci 的廠牌，RCA 發行壓片），目錄號 ZSLT 70025／ZPLT 34.000；Grog 無來源。《Gudrun》原訂 1976 由 Vista 發行，Vista 結束故 1977 改 It。
+- **30722** Affinity 身分無誤（1970 英國 Vertigo 6360 004）；七首中五首翻唱，策展層「Mr. Joy／I Am and So Are You 為樂迷所愛」無來源，不寫。
+- **30723** Mike Ratledge《Riddles of the Sphinx》：1977 電影配樂、2013-11-06 Mordant Music MM066 首發，年份廠牌屬實；以配樂例外保留（唯一個人署名作品）。
+- **30724** Nine Days' Wonder《We Never Lost Control》是第二張（非第三張）；無女主唱（Discogs 僅 Seyffer 主唱），moodGuess「女聲」存疑；首作無管風琴，主奏是薩克斯風／長笛，moodGuess「管風琴」存疑。
+- **30725** Tully 廠牌確認 Columbia（EMI 澳洲）SCXO 7926，1970-07，Go-Set #6／Kent #9。
+- **30726** Zaratustra：與 Jodorowsky 的關係查實（Discogs 封底註記「Escrita y dirigida por Alexandro Jodorowsky」＋ Text By、KBOO 1970 舞台劇）；但這是舞台劇名與劇場錄音，非樂團，音樂疑為 Las Damas Chinas 的自由爵士（間接證據），status thin，moodGuess「迷幻民謠」存疑，主線自行決定去留。
+- **30727** Martin & Garp 國別改荷蘭（Social Beats 在多德雷赫特；Légère、Sounds of Subterrania 稱 Dutch），建議 country nl；首發日版 P-Vine 2020-10-21。
+- **30728** Slow Dancer 國別澳洲墨爾本（Simon Okely，前 Oh Mercy 吉他手）；廠牌推翻策展層「Lazy Eyes」：美國 ATO Records ATO0398，澳洲據 Qobuz 為 Pieater（單一來源）；確為第二張（首張 2014《Surrender》）。
+- **30729** WebSearch 共用 3 次（Slow Dancer、Martin & Garp、Zaratustra）；Mordant Music 官網網域已被劫持，不採用。
+- **30773** 研究 c 組更正照收：Pierrot Lunaire 兩張 label 改 It（Micocci 廠牌、RCA 壓片；ZSLT 70025／ZPLT 34.000）；Martin & Garp 國別改 nl（荷蘭多德雷赫特 Social Beats 廠主之一 Phil Martin），首發 2020-10-21 日本 P-Vine CD，label 取 P-Vine；Slow Dancer 澳洲墨爾本、label 改 ATO Records；Tully label Columbia（EMI 澳洲）；Nine Days' Wonder《We Never Lost Control》是第二張。
+- **30774** Zaratustra《Su Música... Su Filosofía...》保留：Spotify「Zaratustra」掛名下只有這張；研究 c 查實是 1970 年 Jodorowsky 編導、取材尼采的舞台劇錄音（製作人 Victor Rapoport），不是一般樂團作品，正文照「劇場錄音」寫，演奏者不明處不寫（Las Damas Chinas 只有間接關聯，不進正文）。
