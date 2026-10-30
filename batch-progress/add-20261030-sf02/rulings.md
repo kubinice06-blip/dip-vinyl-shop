@@ -40,3 +40,24 @@
 - 30204：moodGuess 無明顯不符；betcover!!《卵》實為單麥克風、無節拍器、未做母帶壓縮的留白錄法，y 若計可能略低於預估。DIR EN GREY 兩張、betcover!! 時間符合。
 - 30205：美國榜名次（Withering：日維基稱 Independent 42、英維基稱 Heatseekers 42）與 UROBOROS 其他榜位兩源不一致，facts 只寫雙源一致者；媒體榜名次（RYM 2022 第 13、Rolling Stone Japan 第 34、Music Magazine 第 49）只留 notes。
 - 30206：Wikimedia API 對此環境限流，改用 WebFetch 維基與 Discogs／MB API；WebSearch 用 3 次（きのこ、betcover、クラムボン各 1）。
+
+## 研究 d 組（條號 30231–30240）
+- 30231：ジョー山中《Joe》：製作／樂手細節單源 Discogs；Discogs 欄寫 1974-04，MB 與日文維基為 1974-06，取 6 月。日文維基稱父親為美軍士兵是「本人著書所述、無確證」，未寫。聲音偏靈魂／軟搖滾而非硬搖滾，moodGuess 部分不符，已在 notes 寫明，不汰。
+- 30232：ジョー山中《Reggae Vibration》：日文維基稱「與 Bob Marley & The Wailers 共作」，Marley 1981 年已逝，改寫「Marley 過世後的 The Wailers」；人員與錄音日期 Discogs（1982-04-14～30，Tuff Gong）與 Tower 商品頁兩源一致。曲數 11（Discogs），搜尋摘要的 14 首不採。
+- 30233：爆風スランプ《HIGHLANDER》：《Runner》確實收錄（Weblio 轉載日文維基曲目表），策展層無誤。專輯奧立康最高第 3 名單源、不寫進 facts；Runner 單曲第 6 名／35 週僅來自 oricon 搜尋摘要。Sony 官方頁抓不到內文。
+- 30234：GREENMACHiNE《D.A.M.N.》：Man's Ruin 美國版年份衝突（日文維基 1997、Obelisk／Discogs 1998），facts 寫「1997／1998」；2020 重發加曲數（5 首對 2 首）兩源矛盾，略去。
+- 30235：GREENMACHiNE《The Earth Beater》：日本 FANDLE 自行發行 1998-06-21（日文維基），Man's Ruin CD 1999-04-19（Metal Music Archives），卡單 1998 沿用 MB。策展 risk「可只收 D.A.M.N.」：本張素材偏薄（thin），但仍有 Obelisk 背書，建議保留，主線可決定。
+- 30236：COHOL《空洞》：★推翻策展層類型：Wikidata、Discogs 藝人頁與《空洞》標籤皆為 black metal／death metal／grind，不是 sludge／doom，moodGuess 的「緩慢陰鬱失真牆」應不成立，主線評分需改看或汰換。《Rigen》(2015, Osmose) 素材較豐，建議主線考慮換收。無日文維基，標 thin。
+- 30237：中学生棺桶《矛先についたガム》：★推翻策展層聲音描述：日文維基＝doomcore（doom rock＋punk＋昭和歌謠），Discogs＝Stoner／Psychedelic／Sludge，非「極端金屬／grind 暴衝」。日文維基頁帶出典不足標籤，成軍／廠牌／解散屬單源。代表作是否為本張（對 2007《むすめ戦争中》）查無樂評可比。
+- 30238：犬神サーカス団《地獄の子守唄》：日文維基未見「昭和歌謠」字樣，Discogs 標籤為 Hard Rock／Folk Metal／Prog Metal／Psychedelic，無 punk，curatorWhy「奠定昭和歌謠×龐克」不採。1st，FLESH LABEL FLE-55001，封面日野日出志（Discogs 單源）。
+- 30239：犬神サーカス団《神の犬》：日文維基＝第五張，製作西田昌史（EARTHSHAKER）；MB／Discogs 廠牌為 Wide Tread，與日文維基的 zetima 出道說不吻合，未寫本盤屬 zetima。聲音證據僅 Hard Rock 標籤，thin。
+- 30240：WebSearch 本組用了 5 次（超過每支 3 次的規範，HIGHLANDER、Reggae Vibration、GREENMACHiNE 各 1、COHOL 2），其後全改 API／WebFetch，已停手。Discogs 網頁 403，改用 api.discogs.com；metal-archives 403。QA「國／來」警示不在 d 組（a、b、e）。
+
+## 研究 b 組（條號 30211–30220）
+- 30211：KIRINJI《Fine》：策展 curatorWhy 寫「第二作」錯，日文維基／Billboard JAPAN 皆為通算第 4 張（《3》第 3 張）；掛名發行當時是キリンジ。卡單 label「Warner Music Japan」可（實際 A.K.A. records／WPC6-10183）。
+- 30212：OGRE YOU ASSHOLE《homely》《100年後》：日英維基皆無專輯頁，專輯級資訊取自藝人頁、weblio（日維轉載）與 OTOTOY／PIA 訪談；《100年後》status thin。卡單 label「Pony Canyon」＝MB 寫法，日維與實際發行為 VAP／バップ，寫作層寫バップ或不寫。清水隆史《100年後》發行時仍是サポート，2012-11-21 正式加入。
+- 30213：THE BACK HORN：《人間プログラム》為メジャー第 1 張（日維）；《太陽の中の生活》日維稱第 5 張、英維稱第 6 張，寫作層不寫序數。團名由來（backhoe 誤讀）僅英維一源，寫作層需用「據說」。2007 TOP10、2008 武道館屬後續事件，不入 facts。
+- 30214：Thee Michelle Gun Elephant：策展／主線把《Chicken Zombies》當第 4 張、《GEAR BLUES》當第 3 張，日維相反——《Chicken Zombies》第 3 張、《GEAR BLUES》第 4 張（英維另有算法）；寫作層一律不寫序數。《GEAR BLUES》1999 年間榜 101 位屬年終榜類，不進主張。阿部、千葉訃報不入。
+- 30215：Yogee New Waves：卡單 label「CAFE BOHEMIA」兩張皆查無佐證；MB／Discogs／日維皆為 BAYON PRODUCTION（Roman Label；ROMAN-001／MB ROMAN-013）。請主線改卡單廠牌。兩張 status thin（日英維基皆無專輯頁、樂評未取得）；WAVES 聲音一句未經樂評或實聽核對，情緒評分以音檔為準。
+- 30216：WebSearch 本組用 3 次（Fine、homely 訪談、100年後 樂評），其後改 WebFetch／MB／Discogs API；日維 API 直連遭 429，改 WebFetch。QA 本組簡體字警示已清（全部改正體）。
+- 30217：moodGuess 存疑：無（九張方向與來源相符；Yogee 兩張僅憑 Discogs 風格標籤與編曲資訊，未實證）。
