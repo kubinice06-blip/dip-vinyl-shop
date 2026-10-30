@@ -14,8 +14,8 @@
 |---|---|---:|---|---|
 | sf01 | favoriteAlbums 38 張（指定盤） | 38 張 | ar-d-201（✅ 介紹上線 29／skipped 1） | ✅ 上線 36（跳過 1 張已在池：椎名林檎《無罪モラトリアム》；不收 1：Vayda 查無此盤）；新藝人 30 位 → ar-d-201 cut |
 | sf02 | 日本：搖滾、獨立、流行、偶像、金屬 | 30 | ar-d-202（✅ 介紹上線 26／skipped 4） | ✅ 上線 45（跳過 0 位已在池；30 位全收）；新藝人 30 位 → ar-d-202 cut |
-| sf03 | 日本：地下、迷幻、即興、和樂器 | 20 | ar-d-203 | ✅ 上線 23（跳過 0 位已在池；20 位全收；試聽 ready 19／unavailable 4；頂點 0；藝人介紹 20 位 → ar-d-203 cut） |
-| sf04 | 日本：電子、ambient、嘻哈、lo-fi、YMO 周邊 | 28 | ar-d-204 | ✅ 上線 28（跳過 0 位已在池；收 26 位，不收 2 位：ILL BONE 無合格錄音室作、Buddhablessyou 查無；試聽 ready 24／unavailable 4；頂點 0；藝人介紹 26 位 → ar-d-204 cut） |
+| sf03 | 日本：地下、迷幻、即興、和樂器 | 20 | ar-d-203（✅ 介紹上線 20／skipped 0） | ✅ 上線 23（跳過 0 位已在池；20 位全收；試聽 ready 19／unavailable 4；頂點 0；藝人介紹 20 位 → ar-d-203 cut） |
+| sf04 | 日本：電子、ambient、嘻哈、lo-fi、YMO 周邊 | 28 | ar-d-204（✅ 介紹上線 25／skipped 1） | ✅ 上線 28（跳過 0 位已在池；收 26 位，不收 2 位：ILL BONE 無合格錄音室作、Buddhablessyou 查無；試聽 ready 24／unavailable 4；頂點 0；藝人介紹 26 位 → ar-d-204 cut） |
 | sf05 | 台灣華語：流行、R&B、獨立樂團 | 27 | ar-d-205（✅ 介紹上線 17／skipped 3） | ✅ 上線 24（跳過 1 位已在池；不收 6 位） |
 | sf06 | 華語其他、港、韓、泰；未確定身分的華語名 | 29 | ar-d-206 | ✅ 上線 20（跳過 0 位已在池；收 20 位，不收 9 位：Ni Jay、Tracey、WHYNOT、HH、เขียนไขและวานิช 身分釘不住，Popstar Benny、Chill Qin、B E N N 無代表性正規專輯，Food-Spotter 只有單曲；頂點 0；藝人介紹 20 位 cut） |
 | sf07 | 西洋 60–80 年代：迷幻、prog、硬搖滾、krautrock、post-punk | 35 | ar-d-207（✅ 介紹上線 32／skipped 0） | ✅ 上線 47（跳過 0 位已在池；不收 3 位） |

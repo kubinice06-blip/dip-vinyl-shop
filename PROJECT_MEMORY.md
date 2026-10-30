@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-30｜dip-vinyl-shop｜藝人介紹 ar-d-203（sf03 日本地下／迷幻／即興）＋ar-d-204（sf04 日本電子／嘻哈／lo-fi）上線 45 位
+
+- **改動**：照 `dip-artist-intro` skill 跑完兩批（萃取 --lean、維基預抓、補洞 5 組 Sonnet、寫作 3 組 Opus、qa-artist、主線逐位審稿、alias、issues、建分片）。
+  - **ar-d-203**：20 位全上架（8 full、12 thin），skipped 0。審稿修 5 位（陳信輝主線補源後自寫、狩生健志補第二源、山本精一刪死因細節、関藤繁生刪錯年、Sam Gendel & Shin Sasakubo 補合作盤形狀）。
+  - **ar-d-204**：26 位 → 上架 25（9 full、16 thin），skipped 1（Chestnut Bakery：只有 Discogs 一源、身分未核）。審稿修 7 位（井出靖主線補源後自寫、Hoshina Anniversary／Magamura 補第二源、篠崎史子刪單源名次與獎項、Sketch Show、SHAKKAZOMBIE、Emapea）。
+  - cut 檔原為卡池原文大小寫，`artist-prompt.mjs` 對不上名冊，改用 progress.json 小寫鍵重寫。
+- 藝人介紹（併 main 後）337 份成品、6,326 位。
+- **主要檔案**：`desc-tools/batches/artist/{cut,facts,research,output}/ar-d-20{3,4}*`、`progress.json`、`data/artist-intros/*`、`audits/ARTIST-PUB-ISSUES.md`、`batch-progress/artist-intro/ar-c-rulings.md`、`batch-progress/spotify-follow-20261030/PLAN.md`。
+- **驗證**：qa-artist gap／out 兩批 0 處（204 僅剩 skipped 的「缺 1 位」）；build-artist-intros 337 份成品、64 分片。
+
 ### 2026-10-30｜dip-vinyl-shop｜Spotify 追蹤藝人補卡池 sf06（華語其他／港／韓／泰）＋sf08（西洋 90 年代至今獨立／alt／迷幻）上線 79 張
 
 - **改動**：照 `batch-progress/spotify-follow-20261030/PLAN.md` 跑完兩批（策展 4、研究 6、鉤子 3、寫作 4、主線審稿、試聽、封面 live-check＋目視、三軸、頂點、寫入、子曲風、情緒評分）。
