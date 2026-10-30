@@ -7,7 +7,7 @@
 ---
 
 ## 主線策展（不佔條號）
-- 清單 27 位：**收 21 位 25 張**、**跳過（已在池）1 位**、**不收 5 位**。
+- 清單 27 位：**收 21 位 25 張**、**跳過（已在池）1 位**、**不收 5 位**。（研究層後汰庸俗禿鷹，定案見 30577：收 20 位 24 張、不收 6 位）
 - **跳過**：Jo-Yu Chen → 池中寫法「陳珊妮」（2 張：《華盛頓砍倒櫻桃樹》《完美的呻吟》）。
 - **不收**：Wendy Gondeln（只有 5 首《Fracking》EP）、台北公案（Apple／MB／Discogs 只有單曲）、趙謬（只有單曲）、大師兄（同名多位；Apple 該藝人只有 5 首 EP《老本行》）、不幻（Apple／MB／Discogs 查不到可對應的台灣藝人，身分不明）。
 - **主線推翻策展層 5 處（補收 `curation-sf05m.json`）**：
@@ -58,3 +58,12 @@
 - 30525：非／密閉空間＝音速死馬（鄭各均）與謝明諺的即興二人組，Dark Paradise 廠牌對。《Flow, Gesture, and Spaces》2019，10 首，確為正規專輯；找不到樂評，聲音只有 Discogs 標籤（Experimental／Free Improvisation／Electro，電子與爵士），含薩克斯風與木管，非純電子，moodGuess 無法證實，status thin。
 - 30526：本組推翻策展層 1 處（午夜城廠牌），無需汰換。
 - **30576** 聲子蟲《午夜城》label 改「耳光音樂 SLAP MUSIC」（研究 c：Bandcamp 官方頁；Dark Horse Music 是 2022 數位重上架標示）；MB 標 Album、6 首為首張正式錄音室專輯，取消 releaseException，releaseType 改 Album。
+
+## 研究 b 組
+- **30511**：庸俗禿鷹身分——Apple 藝人 1506548059（2020-02、℗ Vulgar Vultures）與庸俗救星（Vulgar Savior，MB 725c018d，2020 年底成軍、首張 2021）是兩個不同單位，不混淆；但除 Apple 外查無任何文字來源（Blow／中文維基／MB 皆無；StreetVoice／Bandcamp／FB／Spotify 擋登入牆），成員、出身地、廠牌、曲風全未證實，status thin，建議主線汰換。
+- **30512**：Yo-Sea 確認為沖繩縣北谷町出身的日本創作歌手（ja 維基、MB 98d77b42 JP），非台灣；Spotify 同名對應判斷同一人（高可信，Spotify 頁無法讀）。
+- **30513**：宝島材料行曲風與策展層不符——來源皆為台語 City Pop／Nu Disco／Funk／Boogie（前半 120–140 BPM 舞曲），非搖滾；建議 genre 改 pop/electronic（或 funk/soul），moodGuess 的「中板 indie pop」偏保守，僅註明不汰換。
+- **30514**：老貓偵探社《小港羅曼史》為第二張全長（首張《窮的人類》2014，第三張《動物》2025），第 8 屆金音獎最佳搖滾專輯「得獎」；單曲〈耳朵宇宙先鋒隊〉僅入圍；第 6 屆《窮的人類》僅入圍。高雄出身已證實。製作人王昱辰（中文維基）。
+- **30515**：Yu Ching 黃雨晴《化為人形》(2022，8 首約 29.5 分鐘，Airhead) 國際媒體稱「首張個人專輯」，不確定是迷你專輯；維持收《The Crystal Hum》（Night School 黑膠版，英國廠牌）。WebSearch 用滿 3 次，無中文樂評。
+- **30577** **汰 庸俗禿鷹《庸俗禿鷹》**（研究 b：除 Apple 專輯頁與藝人頁外查無任何文字來源，MB／維基／Blow 皆無；成員、出身地、廠牌、曲風都無法證實，聲音事實 0 條）。§1 人工身分要兩個獨立來源，只有 Apple 不足；整位改列「不收（身分證據不足）」。卡單、研究稿移入 `dropped-cards.json`／`dropped-research.json`，`pick.json` 改 24。**sf05 定案：收 20 位 24 張、跳過 1、不收 6。**
+- **30578** 宝島材料行 genres 改 `pop`、`electronic`（研究 b：台語 City Pop／Nu Disco／Boogie，120–140 BPM 舞曲，非搖滾）。
