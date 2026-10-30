@@ -1,0 +1,36 @@
+{
+ "batch": "add-20261030-sf06",
+ "cards": 20,
+ "written": {
+  "cardCatalog": 20,
+  "kvKeys": 28,
+  "seedRows": 20,
+  "previewReady": 14,
+  "previewUnavailable": 6
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 20,
+  "changed": []
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "prepareGate": "0 error",
+  "publishedGate": "0 error"
+ },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "無"
+ },
+ "artistIntro": {
+  "roster": "batch-progress/artist-intro/roster-sf06.json",
+  "batch": "ar-d-206",
+  "artists": 20,
+  "state": "cut"
+ }
+}

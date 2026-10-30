@@ -17,9 +17,9 @@
 | sf03 | 日本：地下、迷幻、即興、和樂器 | 20 | ar-d-203 | ✅ 上線 23（跳過 0 位已在池；20 位全收；試聽 ready 19／unavailable 4；頂點 0；藝人介紹 20 位 → ar-d-203 cut） |
 | sf04 | 日本：電子、ambient、嘻哈、lo-fi、YMO 周邊 | 28 | ar-d-204 | ✅ 上線 28（跳過 0 位已在池；收 26 位，不收 2 位：ILL BONE 無合格錄音室作、Buddhablessyou 查無；試聽 ready 24／unavailable 4；頂點 0；藝人介紹 26 位 → ar-d-204 cut） |
 | sf05 | 台灣華語：流行、R&B、獨立樂團 | 27 | ar-d-205（✅ 介紹上線 17／skipped 3） | ✅ 上線 24（跳過 1 位已在池；不收 6 位） |
-| sf06 | 華語其他、港、韓、泰；未確定身分的華語名 | 29 | ar-d-206 | 派→Spotify 補卡 sf06、sf08 |
+| sf06 | 華語其他、港、韓、泰；未確定身分的華語名 | 29 | ar-d-206 | ✅ 上線 20（跳過 0 位已在池；收 20 位，不收 9 位：Ni Jay、Tracey、WHYNOT、HH、เขียนไขและวานิช 身分釘不住，Popstar Benny、Chill Qin、B E N N 無代表性正規專輯，Food-Spotter 只有單曲；頂點 0；藝人介紹 20 位 cut） |
 | sf07 | 西洋 60–80 年代：迷幻、prog、硬搖滾、krautrock、post-punk | 35 | ar-d-207（✅ 介紹上線 32／skipped 0） | ✅ 上線 47（跳過 0 位已在池；不收 3 位） |
-| sf08 | 西洋 90 年代至今：獨立、alt、迷幻、shoegaze、民謠 | 41 | ar-d-208 | 派→Spotify 補卡 sf06、sf08 |
+| sf08 | 西洋 90 年代至今：獨立、alt、迷幻、shoegaze、民謠 | 41 | ar-d-208 | ✅ 上線 59（跳過 0 位已在池；收 40 位，不收 1 位：Valley Hi! 只有 4 曲 EP；頂點 0；藝人介紹 40 位 cut） |
 | sf09 | 爵士（含日韓爵士、ECM、世界爵士） | 41 | ar-d-209 | ✅ 上線 39（跳過 4 位已在池；收 32 位，不收 2 位：Jon Christensen 無領銜盤、Multiverse 是台灣嘻哈廠牌帳號；頂點 0；藝人介紹 32 位 cut） |
 | sf10 | 電子、實驗、新古典鋼琴、house | 33 | ar-d-210 | ✅ 上線 37（跳過 0 位已在池；收 32 位，不收 1 位：Gibran Alcocer 只有 EP；頂點 0；藝人介紹 33 位 cut） |
 | sf11 | 冷門與身分待查（電子、lo-fi、小廠牌） | 35 | ar-d-211 | ✅ 上線 24（跳過 1 位已在池：Scattered Purgatory＝破地獄；收 24 位，不收 10 位：只有單曲／EP／remix 或身分連不上 Spotify；頂點 0；藝人介紹 24 位 cut） |
@@ -68,3 +68,9 @@
 - **現場盤、EP 要研究層才抓得到**：スズキジュンゾ《Ode to a Blue Ghost》是三首現場 CD-R（換《Buried Sky, Spider Torn To Pieces》）；ILL BONE《死者》原版 4 曲 EP、《日本》是合輯＋現場 → 整位不收。
 - 研究層偶爾交 `status: partial`，research-base 只認 full／thin，主線改值後 qa 才算數。
 - `genre-l3-artist-map.json` 的 `_note` 欄已是逐字拆開的字元陣列（舊批遺留），不影響建樹，沒動。
+
+## sf06／sf08 收工筆記（2026-10-30）
+- **身分核對可以直接用 `missing-artists.csv` 的 Spotify 藝人連結**：逐位對 MB 藝人頁的 Spotify url-rel；MB 沒連結的抓 `open.spotify.com/artist/<id>` 頁面的專輯清單（`<meta name="description">` 有盤名、類型、年份、曲數）對盤名。兩批 79 張 0 張對錯人。
+- **iTunes API 會整段限流**（429 或 200 空 body，持續約半小時）：meta.mjs 與試聽補查都會被吃掉，看到「no apple」先懷疑限流，慢速（每次 20 秒以上）重查再判 unavailable。
+- `build-asia-country-map.mjs` 要先有 `data/rawgenres-cache.json`（`build-genre-tree --pull` 產生）才判得出拉丁名的亞洲藝人；純漢字名一律待裁定，要手寫。
+- JUU4E 策展給 pop 主類型，實為泰國 trap；本批未改 seed 主類型，l3 掛 pop/sea-pop，日後可校正。

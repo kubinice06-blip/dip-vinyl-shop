@@ -1,0 +1,333 @@
+{
+ "group": "sf06b",
+ "factions": [
+  {
+   "id": "us-underground-hiphop",
+   "zh": "us-underground-hiphop",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-dance",
+   "zh": "jp-dance",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "kr-free-jazz",
+   "zh": "kr-free-jazz",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-jazz-rap",
+   "zh": "us-jazz-rap",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-bedroom-electronic",
+   "zh": "jp-bedroom-electronic",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "it-jazz",
+   "zh": "it-jazz",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "th-indie",
+   "zh": "th-indie",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "tw-electronic",
+   "zh": "tw-electronic",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-internet-rap",
+   "zh": "us-internet-rap",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Juggaknots",
+   "album": "The Juggaknots",
+   "year": 1996,
+   "label": "Fondle 'Em Records",
+   "country": "us",
+   "faction": "us-underground-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "紐約地下嘻哈公認經典，家族式連珠炮押韻與爵士取樣，常被列為90年代被低估的神盤",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.3,
+    "z": -0.3,
+    "why": "密集連珠炮押韻、鼓點硬、取樣偏灰暗"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/58836a73-2789-4a61-8795-ea09a424aff8/front",
+    "https://musicbrainz.org/release-group/58836a73-2789-4a61-8795-ea09a424aff8"
+   ],
+   "spotifyName": "Juggaknots",
+   "mbRgMbid": "58836a73-2789-4a61-8795-ea09a424aff8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Glen Check",
+   "album": "Bleach",
+   "year": 2022,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-dance",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "Dive Baby, Dive 等代表曲所在的錄音室專輯，東京 disco-funk 與 city pop 風格的成熟之作",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": 0.8,
+    "why": "明亮 disco 律動、清亮吉他與合成器"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/b4df9751-f26e-4bd3-a31a-3c7bbc477921/front",
+    "https://musicbrainz.org/release-group/b4df9751-f26e-4bd3-a31a-3c7bbc477921"
+   ],
+   "spotifyName": "Glen Check",
+   "mbRgMbid": "b4df9751-f26e-4bd3-a31a-3c7bbc477921",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "2013年 YOUTH! 為首張專輯，代表作取 Bleach 屬判斷；國別 MB 標 KR 但為東京樂團"
+  },
+  {
+   "artist": "강태환",
+   "album": "소리 (Sorefa)",
+   "year": 2011,
+   "label": "",
+   "country": "kr",
+   "faction": "kr-free-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "韓國自由爵士薩克斯風先驅強太煥的錄音室專輯，Spotify 上以 Sorefa 收錄",
+   "moodGuess": {
+    "x": 4.2,
+    "y": 0.0,
+    "z": -1.5,
+    "why": "無調自由即興薩克斯、尖銳緊繃"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/a4921815-49f0-4eca-87e6-c96d3c048cb0/front",
+    "https://musicbrainz.org/release-group/a4921815-49f0-4eca-87e6-c96d3c048cb0"
+   ],
+   "spotifyName": "Kang Tae Hwan",
+   "mbRgMbid": "a4921815-49f0-4eca-87e6-c96d3c048cb0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Kang Tae-Hwan",
+   "uncertain": "盤名在 MB／Apple 為 Sorefa（소리 之羅馬拼音），Spotify 版年份 2020 為再上架；選 Sorefa 對應 Apple 盤，若不符可改 1991《Tokebi》"
+  },
+  {
+   "artist": "Superstar Quamallah",
+   "album": "Invisible Man",
+   "year": 2009,
+   "label": "Brick Records",
+   "country": "us",
+   "faction": "us-jazz-rap",
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "why": "與 DeQawn 合作的爵士饒舌地下名盤，Gilles Peterson 2009 年度選盤，2024 首度發行黑膠",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.2,
+    "z": 0.6,
+    "why": "爵士取樣暖調、老派押韻、節奏放鬆"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/1691a814-f1c1-496a-957e-bef40bee5b5c/front",
+    "https://musicbrainz.org/release-group/1691a814-f1c1-496a-957e-bef40bee5b5c"
+   ],
+   "spotifyName": "Superstar Quamallah",
+   "mbRgMbid": "1691a814-f1c1-496a-957e-bef40bee5b5c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "與 DeQawn 共同署名，Discogs 主版 1532004"
+  },
+  {
+   "artist": "7FO",
+   "album": "Water Falls Into a Blank",
+   "year": 2016,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-bedroom-electronic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本個人電子音樂家 7FO 的錄音室專輯（Apple 為 2026 再上架），輕柔實驗電子",
+   "moodGuess": {
+    "x": 2.0,
+    "y": -0.6,
+    "z": -0.2,
+    "why": "細碎電子音與空氣感，安靜"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/1020997c-9130-427c-9bf2-d356b97b85c3/front",
+    "https://musicbrainz.org/release-group/1020997c-9130-427c-9bf2-d356b97b85c3"
+   ],
+   "spotifyName": "7FO",
+   "mbRgMbid": "1020997c-9130-427c-9bf2-d356b97b85c3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "極小眾；代表性證據薄弱，僅 MB 與 CAA；第二候補 電氣爆発(2019)"
+  },
+  {
+   "artist": "Monique Chao Jazz Orchestra",
+   "album": "Time Chamber",
+   "year": 2024,
+   "label": "",
+   "country": "it",
+   "faction": "it-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "該樂團唯一的錄音室專輯，8 首原創大編制爵士",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.3,
+    "z": 0.4,
+    "why": "大編制爵士，旋律明確"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/14a6518b-2526-421f-8bf0-ce6c54a4505b/front",
+    "https://musicbrainz.org/release-group/14a6518b-2526-421f-8bf0-ce6c54a4505b"
+   ],
+   "spotifyName": "Monique Chao Jazz Orchestra",
+   "mbRgMbid": "14a6518b-2526-421f-8bf0-ce6c54a4505b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "僅一張、評論資料薄弱；Apple 有 https://music.apple.com/us/album/time-chamber/1754473271"
+  },
+  {
+   "artist": "JUU4E",
+   "album": "馬鹿世界 โลกบ้า (Crazy World)",
+   "year": 2021,
+   "label": "",
+   "country": "th",
+   "faction": "th-indie",
+   "genres": [
+    "pop"
+   ],
+   "why": "泰日混合藝人 JUU4E 的首張專輯，最具辨識度的作品",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.0,
+    "z": 0.0,
+    "why": "未聽證，待評"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/2732e98f-fa6a-4642-8667-3e1348cd9a5c/front",
+    "https://musicbrainz.org/release-group/2732e98f-fa6a-4642-8667-3e1348cd9a5c"
+   ],
+   "spotifyName": "JUU4E",
+   "mbRgMbid": "2732e98f-fa6a-4642-8667-3e1348cd9a5c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "身分資料極薄（MB 無國別、無簡介），代表作未經評論證實；建議店主不必收"
+  },
+  {
+   "artist": "dotzio",
+   "album": "The File You're Looking for No Longer Exist",
+   "year": 2018,
+   "label": "",
+   "country": "tw",
+   "faction": "tw-electronic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "台灣獨立音樂人張軒（Hsuan Chang）的 dotzio 計畫，唯一一張錄音室專輯",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.0,
+    "z": -0.4,
+    "why": "實驗電子，偏安靜"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/a2af3cce-d018-42a1-88dc-9e7d00636080/front",
+    "https://musicbrainz.org/release-group/a2af3cce-d018-42a1-88dc-9e7d00636080"
+   ],
+   "spotifyName": "dotzio",
+   "mbRgMbid": "a2af3cce-d018-42a1-88dc-9e7d00636080",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "唯一專輯、極小眾；Apple TW 無自家專輯"
+  },
+  {
+   "artist": "Championxiii",
+   "album": "Champion Status",
+   "year": 2019,
+   "label": "",
+   "country": "us",
+   "faction": "us-internet-rap",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "TikTok 起家的美國饒舌歌手，唯一正規專輯",
+   "moodGuess": {
+    "x": 4.0,
+    "y": 0.5,
+    "z": -0.5,
+    "why": "trap 節奏、重低頻、攻擊性"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/396985ac-4b3b-4563-addc-3b85f64124ab/front",
+    "https://musicbrainz.org/release-group/396985ac-4b3b-4563-addc-3b85f64124ab"
+   ],
+   "spotifyName": "Championxiii",
+   "mbRgMbid": "396985ac-4b3b-4563-addc-3b85f64124ab",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "網路爆紅型，樂評共識薄弱；建議店主視情況刪"
+  }
+ ],
+ "notes": [
+  "不收：HH → 查到多個同名 HH（德國／日本／葡萄牙／台灣聲音藝術二人組姚仲涵與葉廷皓），無法確認 Spotify 這位是誰，MB 無對應台灣團體，無法釘身分",
+  "不收：Chill Qin → MB 有 TW 藝人 Chill Qin，僅有 2025《New Year 2025: Chill Qin》一張年節性質專輯，無代表性專輯",
+  "不收：เขียนไขและวานิช → MB／Discogs／網搜皆查不到，身分無法確認（泰國）",
+  "不收：Food-Spotter → Apple 僅見 2018 單曲（Can You Can You、Space Ghost），MB 無對應，不是廠牌／合輯帳號而是單曲藝人",
+  "不收：B E N N → MB 僅 EP《Entheos》(2021)，無正規專輯",
+  "跳過：無（本組 14 位池中皆無同名；Championxiii 命中 Amp 為子字串誤中，Food-Spotter 命中 Ott 誤中，Quamallah 命中 ALL 誤中）",
+  "WebSearch 用 5 次；iTunes 搜尋受 403 限流，部分封面改用 CAA 確認（皆 307 可取）"
+ ]
+}
