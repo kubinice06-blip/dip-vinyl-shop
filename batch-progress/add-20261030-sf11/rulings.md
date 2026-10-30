@@ -117,3 +117,6 @@
 ## 本批新藝人（無介紹）
 - 24 位全部沒有介紹、也不在排隊批次或別名鍵。名冊 `batch-progress/artist-intro/roster-sf11.json`（tier D、addedBy add-20261030-sf11），progress.json 追加 **ar-d-211**（state cut，24 位，未超過 45 不開溢出號），`desc-tools/batches/artist/cut/ar-d-211.txt`。補洞寫作由調度另派工作階段跑。
 - Caldera、DJ Toner、Doctor Butcher、Dudu Tassa & the Kuwaitis、ERISTHEPLANET、Mad Keys、Mindchatter、Moin、Natural Magic、Nicknack、NoSo、NUUAMM、Parks, Squares and Alleys、Posh Inverse、PUZZLEMAN、Skip Skip Ben Ben、Sonia Calico、Space Raiders、Super Besse、The Luvmenauts、The Offset: Spectacles、The Sign Of Human 記號士、ULTRA SUNN、特撮。
+
+## 情緒評分（score-sf1112）
+- 49876：Opus 1 支照 `RULES.md`＋BRIEF 打 24 張，主線逐張看過 why 與研究稿，未改值。八格：暴躁 6、恍惚 6、頹靡 4、雀躍 4、放鬆 2、沸騰 1、冷冽 1、平靜 0；conf high 1／mid 13／low 10（low 多是研究稿缺聲音描述的 thin 卡）。與 sf12 合併 `merge` → `build-priors` → `build-scale v0` → `build-card-moods`：錨點 104/104 同格，座標 22,181/22,181。不算落格率。

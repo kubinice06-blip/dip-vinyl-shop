@@ -108,3 +108,6 @@
 ## 本批新藝人（無介紹）
 - 30 位全部沒有介紹、也不在排隊批次或別名鍵。名冊 `batch-progress/artist-intro/roster-sf12.json`（tier D、addedBy add-20261030-sf12），progress.json 追加 **ar-d-212**（state cut，30 位，未超過 45 不開溢出號），`desc-tools/batches/artist/cut/ar-d-212.txt`。補洞寫作由調度另派工作階段跑。
 - Attica Blues、Biig Piig、Blubell、Def Squad、Destin Conrad、Dinner Party、Dudu Tassa、Fortisakharof、J. Valentine、Jason Derulo、JMSN、KMD、Kris Kross、Lausse The Cat、Maddie Ashman、Marian Hill、Michael Franti & Spearhead、Mr Twin Sister、My Skin Against Your Skin 激膚、Noblemen、Olivia Dean、Omar Apollo、Onry Ozzborn、Puma Blue、S.C.A.B.、Sad Night Dynamite、Saya Gray、The Beneficiaries、The UMC's、Way Out West。
+
+## 情緒評分（score-sf1112）
+- 49976：Opus 1 支照 `RULES.md`＋BRIEF 打 35 張，主線逐張看過 why 與研究稿，未改值（KMD《Black Bastards》x 2.9、Maddie Ashman x 3.0 貼門檻，照聲音描述維持）。八格：雀躍 7、恍惚 7、放鬆 5、冷冽 4、頹靡 4、沸騰 4、暴躁 3、平靜 1；conf high 4／mid 21／low 10。與 sf11 合併重建 priors／scale／card-moods：錨點 104/104 同格。不算落格率。
