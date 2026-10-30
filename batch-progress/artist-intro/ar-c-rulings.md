@@ -1062,6 +1062,39 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 60 位排入 2 批，55 位上架（25 full、30 thin）、5 位不寫；審稿合計修 9 位。截止日後事實：張震嶽 2026 第 37 屆金曲獎（WebSearch 核實）。
 
+## ar-d-209（2026-10-30，Spotify 補卡 sf09＝爵士：ECM、日韓爵士、世界爵士）
+
+- 32 位全上架（19 full、13 thin），0 位不寫。補洞 WebSearch 每位 ≤2 次（本工作階段兩批共用額度）。
+- 主線審稿修 8 位：
+  - 中村一義：刪「〈世界は変わる〉用於東京 2020 帕運開幕式」（日文維基單源，主線 WebSearch 查無佐證），改寫 2004 年名義統一為 100s。
+  - Graciela Susana：刪「2024 年過世」（只有英日維基同家族，WebSearch 也只見英文維基，查無日媒訃聞）；保留 2011 年返回阿根廷。
+  - Bill Bruford's Earthworks：原稿只有英文維基一源，主線補 Louder（Bruford 1985 年以 Simmons 電子鼓上電視介紹）為第二源，正文不動。
+  - Marc Johnson：「這段錄音（三重奏）為 Evans 贏得葛萊美」不精確——得獎的《We Will Meet Again》是五重奏錄音，改「他參與的《We Will Meet Again》」；刪一句自述壓回 246 字。
+  - Manu Katché：刪「錄過超過 200 張專輯」（英文維基單源數字）；〈Sledgehammer〉三次錄成改「據說」（單源）。
+  - Nils Landgren Funk Unit：刪「至少 500 張專輯」（瑞典維基單源）與 2019 年德國聯邦十字勳章（英、瑞維基同家族，非獨立）。
+  - Mark Guiliana：「新澤西」統一為台灣慣用「紐澤西」。
+- 截止日後事實：Hal Galper 2025 年辭世（英文維基＋DownBeat 訃聞 hal-galper-19382025，兩源），照寫年份；Flea 2026 年個人爵士專輯《Honora》（維基＋Blabbermouth）。
+- 保留：Tyreek McDole「Sarah Vaughan 大賽十二年來第二位奪冠的男歌手」（NJJS＋Paris-Move 兩源）；濱瀬元彦的菊地成孔評語（具名單源、低風險）；Flea 的名人堂主詞寫樂團。
+- 不寫：Bobo Stenson 生年（維基家族）、Daniel Ponce 生年（1952／1953 兩說）、Michel Sardaby 卒年（維基家族）、高木元輝生卒年（單源）、Graciela Susana 黃金 Gardel 獎與「百萬張」、Yttling Jazz 的 Grammis（得獎／提名兩說）、Dominique Fils-Aimé 第二座 Juno、Ceramic Dog「Ribot 第一支真正的搖滾團」、Assagai「Vertigo 唯一簽下的非洲樂團」。
+- 身分：Ceramic Dog 與 Marc Ribot 分寫；中村一義照實寫成日本創作歌手（卡池在爵士批）；swing slow 是細野晴臣與越美晴的二人團；Spiral Deluxe 是 Jeff Mills 的電子爵士四重奏。
+- pubIssues：Daniel Ponce《Arawe》簡介生日、Spiral Deluxe《The Love Pretender》「巴黎混音」查無來源。
+
+## ar-d-210（2026-10-30，Spotify 補卡 sf10＝電子、實驗、新古典鋼琴、house）
+
+- 33 位全上架（13 full、20 thin），0 位不寫。補洞 WebSearch 每位 ≤2 次。
+- 主線審稿修 4 位：
+  - Rich Ruth：原稿只有 Nashville Scene 一源，主線補 Bandcamp Daily《I Survived, It's Over》Album of the Day 為第二源，正文不動。
+  - Saint Abdullah：原稿只有 Bandcamp Daily 一源，主線補 PopMatters（《Mechanical Flirtations》評）與 Volume Sydney 2023 藝人頁；兩源皆寫「生於德黑蘭、在加拿大長大」，「生於伊朗、在西方長大」改得更具體。
+  - Barry Can't Swim：刪 2024 Coachella 與 Bonobo 背靠背、2025 All Points East 壓軸（英文維基單源、第二源未開頁），改寫 Mercury Prize 十二張候選之一（維基＋Sopitas 兩源）。
+  - Juana Molina：David Byrne 稱讚、替 Feist 開場只有 Hollywood Bowl 簡介一源，改「據說」口氣；上線簡介「Byrne 邀她開場」查無來源，不寫。
+- 保留：Monoton 列入 The Wire 1998「100 Records That Set the World on Fire」（兩源，非靠出處不可的定位）；Christoph De Babalon 的 Thom Yorke 評語與 2001 年 Amnesiac 巡演開場（維基＋Cafe OTO），評語以「據說」口氣；Joep Beving 串流八千萬次照「據廠牌說法」寫（素人自壓黑膠到 DG 簽約是故事核心，必要例外）；Mareux 的 TikTok 走紅與 2023 Coachella（維基＋訪談兩源，不寫數字）；Planningtorock 以 Rostron 自述談聲音與性別，正文不用代名詞。
+- 化名與合作：Against All Logic 寫 Nicolas Jaar 化名下的舞曲；Danger Mouse 兩個合作案各寫合作本身；Mark Linkous、Tom Relleen 只寫辭世年份，不寫死因；Clutchy Hopkins 全文「據稱／傳說」口氣、不揭身分。
+- 不寫：Peggy Gou「第一位在 Berghain 演出的韓國 DJ」（缺第二源，只留她 2016 年自述的志向）、Yaeji 的 BBC Sound of 2018 與 AIM 獎、Yung Bae 的 Arista 與 Billboard、Planningtorock「DFA 自 Black Dice 以來最實驗」、L'Acephale 成軍年（2002／2003）、French 79 成軍年（2013／2014）、Daniele Luppi 出生地（兩說）。
+- pubIssues：Danger Mouse & Daniele Luppi《Rome》錄音室（Forum／Ortophonic 兩說）、Yung Bae《Bae 5》Arista 與〈Bad Boy〉單源、Rich Ruth「2018 年退下來」與 Nashville Scene 的 2019 不符、「龍捲風」一句待核。
+
+## Spotify 補卡 sf09／sf10 補介紹（ar-d-209～210）小結
+
+- 65 位排入 2 批，65 位全上架（32 full、33 thin）、0 位不寫；審稿合計修 12 位。截止日後事實：Hal Galper 2025 辭世（兩源）、Flea 2026《Honora》。本工作階段主線 WebSearch 6 次。
 ## ar-d-203（2026-10-30，Spotify 補卡 sf03 補介紹：日本地下、迷幻、即興、和樂器）
 
 - 20 位全上架（8 full、12 thin），0 位不寫。補洞 2 組（10＋10）、寫作 1 組。

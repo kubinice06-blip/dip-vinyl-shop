@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-30｜dip-vinyl-shop｜藝人介紹 ar-d-209（sf09 爵士）＋ar-d-210（sf10 電子／實驗／新古典）上架 65 位
+
+- **改動**：照 `dip-artist-intro` skill 跑完兩批（萃取 --lean、維基預抓、補洞 8 組 Sonnet、寫作 4 組 Opus、qa-artist、主線逐位審稿、alias、issues、建分片）。補洞 WebSearch 每位 ≤2 次。
+  - **ar-d-209**：32 位全上架（19 full、13 thin），skipped 0。審稿修 8 位（中村一義刪帕運開幕式單源句、Graciela Susana 刪卒年［維基家族］、Earthworks 補 Louder 第二源、Marc Johnson 葛萊美主詞改為《We Will Meet Again》、Katché／Landgren 刪單源數字與勳章、Guiliana「紐澤西」）。截止日後：Hal Galper 2025 辭世（維基＋DownBeat）。
+  - **ar-d-210**：33 位全上架（13 full、20 thin），skipped 0。審稿修 4 位（Rich Ruth、Saint Abdullah 補第二源；Barry Can't Swim 刪 Coachella／APE 單源句；Juana Molina 的 Byrne／Feist 改「據說」）。
+  - 藝人介紹併 main（ar-d-203／204）後 6,391 位；pubIssues 新增 6 條。
+- **主要檔案**：`desc-tools/batches/artist/{cut,facts,research,output}/ar-d-2{09,10}*`、`progress.json`、`data/artist-intros/*`、`audits/ARTIST-PUB-ISSUES.md`、`batch-progress/artist-intro/ar-c-rulings.md`、`batch-progress/spotify-follow-20261030/PLAN.md`。
+- **驗證**：qa-artist gap／out 兩批皆 0 處；併 main 後 data/artist-intros 取 main 版重跑 build-artist-intros：341 份成品、6,391 位、64 分片。
+
 ### 2026-10-30｜dip-vinyl-shop｜藝人介紹 ar-d-203（sf03 日本地下／迷幻／即興）＋ar-d-204（sf04 日本電子／嘻哈／lo-fi）上線 45 位
 
 - **改動**：照 `dip-artist-intro` skill 跑完兩批（萃取 --lean、維基預抓、補洞 5 組 Sonnet、寫作 3 組 Opus、qa-artist、主線逐位審稿、alias、issues、建分片）。
