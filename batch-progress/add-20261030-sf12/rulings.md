@@ -94,3 +94,11 @@
 - **49968** 跨兩檔合掃 han() 4-gram（writer-1 檔已在、中途也在改，掃八輪）：拆掉「首約分鐘」×6、「在年月日」×5、「錄音室專輯」×3、「的第二張」×3–4、「專輯年月」×3、「首張專輯」×3、「首作年月」×3、「是年月日」×3、「長約分鐘」×3，及 2 張的「先行單曲」（對 Sad Night hook）、「年月由發」「交由發行」「父母都是」「作年月日」「裡聽得到」「之間來回」「生於年的」「長大的地方」「英語與西語」「在西班牙」「是兩人的」「作隔年月」「這張首作」「在同年月」「出道專輯」「之間切換」「同名首張」「年月日以」等（「英語與西語」「之間切換」「同名首張」是對方同向躲過來的，改成整句換形）。定稿 2 張以上只剩：專名「英國專輯榜」（Messy 對 Art of Loving）、地名「布里斯托」「布魯克林」、樂器名「吉他貝斯鼓」「大提琴手」（S.C.A.B. 對 Noblemen hook／UMC's）、hook 對 hook 的「之後這位」（SAYA 對 Dudu Tassa，兩邊都是 hook 原文，寫作層改不動，交主線）。
 - **49969** 媒體名與媒體榜單名次全文 0：只用 note 給的「樂評」（Onry、UMC's、Intensify 三張，均無媒體名）、「新聞稿」（God Said No）、「官方說明」（Sad Night）；英國專輯榜第 4 名（Messy）照 49972 屬官方榜保留。直接引語轉間接：Ivory「不像我」由 hook 承擔、正文不重引；Onry 樂評那句改寫成「要叫它 goth hop 或 abstract 都行，總之就是 dope」，去掉「我們」。Puma「光與影」寫成正面句。Noblemen 的「由 Noblemen 演奏、寫作與製作」是署名欄原文，保留引號。
 - **49970** 只用 note：Messy 不寫 Davide Rossi、BPI 金唱片、原定盤名；Way Out West 不寫 Van Halen 與〈The Gift〉單曲名次；Intensify 不寫專輯榜名次；Dudu 不寫廠牌與 Sakharof 對唱；J. Valentine 客座只寫 Nicki Minaj「等」、限定在 CDr 版，不寫銷量；激膚不寫 StreetVoice。Messy「四年後」由 note 的 2019 簽約與 2023 發行推得；Ivory 寫「2022 年 4 月」以避開跨張「隔年」黏合。激膚卡名照卡單擇用「激膚」一形（與 hook 一致）。
+
+## 主線審稿（2026-10-30，雲端主線，35 張）
+- 49973：`qa-batch out` 35/35。逐張讀全文、對回研究稿，改四處（只動措辭或刪單源評價句，research／hooks／input 不用同步）：
+  - `desc2:Onry Ozzborn|The Grey Area`：刪「樂評寫道，要叫它 goth hop 或 abstract 都行，總之就是 dope。」（單源樂評評價句）。
+  - `desc2:The UMC's|Fruits of Nature`：刪「樂評說他們押韻機智，還傳遞個性與兩性的互相尊重。」（單源樂評評價句）。
+  - `desc2:Way Out West|Intensify`：「樂評說它以四四拍直拍為主…有寬銀幕般的電影感」→「整張以四四拍直拍為主…帶寬銀幕般的電影感」（聲音事實保留，拿掉樂評歸屬）。
+  - `desc2:S.C.A.B.|Somebody in New York Loves You!`：「第三張則選…發行」→「第三張專輯在…發行」（語病）。
+- 其餘 31 張逐張審過，未改字。God Said No 的「lo que será, será」諧音、Kris Kross〈Jump〉MV 拍攝日逢亞特蘭大 20 年來首場雪，研究稿皆有載。媒體名、媒體榜單名次、「據說／據傳」grep 0；英國官方專輯榜（Olivia Dean）、RIAA 認證、葛萊美與 Mercury 入圍照留。

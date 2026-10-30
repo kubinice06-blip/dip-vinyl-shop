@@ -104,3 +104,9 @@
 - **49863** 原聲帶意象：NUUAMM 寫「也被看作一張原聲帶，獻給身處人與幽靈之間的人」、Natural Magic 寫「夏末西岸公路旅行原聲帶」，兩張都不出現「的原聲帶」；writer-2 的 Luvmenauts 已全檔不用「原聲帶」。NUUAMM 的商品文案描述改寫成被動「被形容成」，不交代出處。
 - **49864** 資料平台名不進正文：Parks note「放上 Bandcamp」寫成「放上網路自行發行」、Offset「在 Bandcamp 首發」寫成「在網路上首度發行」、DJ Toner「Bandcamp 掛名 DJTONER Q4RTET」寫成「這次用的名義是 DJTONER Q4RTET」（可逆，主線要具名平台再改回）。Natural Magic 兩人只用 note 的姓 McKinnon／Quiet，不從 facts 補全名；Nicknack 去掉「兼製作人」（與 Mad Keys、DJ Toner 撞「兼製作人」）。媒體名與媒體榜名次 0。
 - **49865** 自掃（han() 4-gram，跨 out-1 12 張＋out-2 12 張合掃）：拆掉「倫敦廠牌」（×Sonia）、「首作年月／作年月日」（×特撮）、「同名首作／二人組年」（NUUAMM×Natural Magic）、「曲年月日」（×Sonia）、「張專輯收」「第二張專」「是第二張」（×Space Raiders）、「專輯年月日」「片年月日」（×Dudu、PUZZLEMAN）、「了年月日」（NUUAMM×NoSo）、「年月日發行」（NoSo×Caldera）、「自己把這」（×Posh）、「節拍製作／拍製作人」（×PUZZLEMAN）、「的鍵盤手」（×ULTRA SUNN）、「製作人與」（×Sonia）、「兼製作人」「與佛朗明」「的第二張」。定稿 2 張以上只剩樂種名「佛朗明哥」（Caldera×DJ Toner，hook 原文帶）；3 張以上 0 條。
+
+## 主線審稿（2026-10-30，雲端主線，24 張）
+- 49872：`qa-batch out` 24/24、thin ≤180。逐張讀全文、對回研究稿，改兩處（只動措辭，research／hooks／input 不用同步）：
+  - `desc2:Natural Magic|II`：「距 2015 年那張以團名為題的首作整整十年」→「…隔了十一年」（2015 → 2026-01 是十一年，研究 a 稿：首作 2015 同名專輯）。
+  - `desc4:Skip Skip Ben Ben|鏡中鏡 Mirror in Mirror`：「這團人 2015 年…」→「樂團 2015 年…」（措辭）。
+- 其餘 22 張逐張審過，未改字。媒體名、媒體榜單名次、「據說／據傳」grep 0；英國單曲榜第 68 名（Space Raiders）是官方榜，照留。writer-1 把 Parks、Offset、DJ Toner 三張 note 的 Bandcamp 改成不寫平台名，照准。
