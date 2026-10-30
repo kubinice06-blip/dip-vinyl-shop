@@ -15,3 +15,8 @@
 - **留兩張的**：world's end girlfriend（《Hurtbreak Wonderland》《Seven Idiots》）、山本精一（《NOA》《PLAYGROUND》，Alchemy 與 P-Vine 兩期）、割礼（《Paradaise・K》《ネイルフラン》）。
 - §1 人工 4 張：スズキジュンゾ《Ode to a Blue Ghost》、笹久保合作盤、狩生健志《Sekai》、バズ《Buzz》；`mbAbsenceProof` 策展給的是字串，上線前轉成物件（sf05／sf07 坑）。
 - 交研究層把關：Musica Transonic、穂高亜希子、田畑満《Lucifer》代表作依據薄；三橋貴風盤 MB 掛名含山屋清、廠牌待核；関藤 Vol.2、Fujieda《Informel》廠牌待核（Apple 標 2026 再發、MB 2021）；狩生《Sekai》2020／2021 兩說；Far Out 年份 Apple 1971 vs MB 1973；LSD March、割礼《ネイルフラン》CAA 無封面（Discogs）。BUZZ 身分（Spotify 的 BUZZ 是否這組）iTunes 未能核對，研究層再查。
+
+## 研究 e 組
+- 41241　笹久保合作盤：廠牌推翻策展層的 Leaving Records，Discogs 原版與黑膠為 Carnet Records（carnet-001，2021-11-17 數位首發）；Leaving 是 Gendel 自家廠牌。卡單 label 建議改 Carnet Records。status thin（聲音細節僅零售商文案）。
+- 41242　狩生健志《Sekai》：年份以 2020 為準（黑膠 2020-12-07，Apple ℗ 2020，數位上架 2021-01-15），Bruit Direct Disques Br-d 36 確認。卡單 year 建議改 2020。聲音只證實電子／流行質地，樂器與有無鼓未證實，寫作層勿斷言合成器。
+- 41243　バズ《Buzz》：Discogs 與 MB 均為同一組日本團，廠牌 London Records（SKD(L)-1013，1973-04-10），2012 King 再發 KICS 91808。Spotify 頁無法直接核對（iTunes 403），判斷多半是這組（串流版應為 King 再發），未證實；主線以 Spotify 專輯頁曲目核對。日文維基只算小出博志、東郷昌和二人為成員，高橋幸宏僅為錄音鼓手（Discogs 樂手欄），不寫成成員。專輯收錄版〈ケンとメリー〉是否同單曲版未證實。
