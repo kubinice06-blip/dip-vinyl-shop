@@ -159,16 +159,11 @@
    "z": 0.1,
    "why": "R&B 底的華語流行、中板"
   },
-  "rgMbid": "",
-  "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz artist/release-group 搜尋 Karencici 無結果（2026-10-30）",
-  "manualEvidenceUrls": [
-   "https://music.apple.com/tw/album/sha-yan/1445990496",
-   "https://en.wikipedia.org/wiki/Karencici"
-  ],
+  "rgMbid": "7e187778-afe2-4b06-a4bb-bf6290f0e2bf",
+  "identitySource": "pinned",
   "curatorWhy": "台灣華語流行：首張專輯，入圍金曲最佳新人，自寫自曲的 R&B 流行",
   "curatorRisk": "⚠ 官方盤名 Sha Yan 還是《傻眼》未確證（Apple 為 Sha Yan，TVBS 提 傻眼了 為歌名）；第二張 99% Angel(2022) 未收",
-  "mbNote": "MB 查無（），走 §1 人工身分。證據：https://music.apple.com/tw/album/sha-yan/1445990496 https://en.wikipedia.org/wiki/Karencici https://music.apple.com/tw/album/sha-yan/1445990496 https://en.wikipedia.org/wiki/Karencici",
+  "mbNote": "MB release-group 7e187778-afe2-4b06-a4bb-bf6290f0e2bf：title「Sha Yan」、Album、first-release-date 2018-12-21、artist-credit「Karencici」（主線 2026-10-30 重查補釘；策展時查無）。",
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
@@ -273,7 +268,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz artist 搜尋 宝島材料行 無此團（2026-10-30）",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"宝島材料行\"",
+    "artist:\"宝島材料行\" AND releasegroup:\"宝正好廳\"",
+    "releasegroup:\"宝正好廳\""
+   ],
+   "checkedAt": "2026-10-30",
+   "conclusion": "MusicBrainz artist 搜尋 宝島材料行 無此團（2026-10-30）；主線重查：藝人搜尋 有同名條目（佐藤原材料/JP、島秀行/?、BoA/KR）但無此 release group（count=0），以 Apple／Discogs 為身分依據"
+  },
   "manualEvidenceUrls": [
    "https://music.apple.com/tw/album/%E5%AE%9D%E6%AD%A3%E5%A5%BD%E5%BB%B3/1822713060",
    "https://vocus.cc/user/@songofthesouth_tw"
@@ -455,7 +458,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"荒山茉莉\"",
+    "artist:\"荒山茉莉\" AND releasegroup:\"水沒之都\"",
+    "releasegroup:\"水沒之都\""
+   ],
+   "checkedAt": "2026-10-30",
+   "conclusion": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯；主線重查：藝人搜尋 有同名條目（茉莉/JP、山本茉莉/JP、茉莉僧/?）但無此 release group（count=0），以 Apple／Discogs 為身分依據"
+  },
   "manualEvidenceUrls": [
    "https://music.apple.com/tw/album/1551941512",
    "https://www.discogs.com/release/32139711-Molly-In-Mountain-%E8%8D%92%E5%B1%B1%E8%8C%89%E8%8E%89-%E6%B0%B4%E6%B2%92%E4%B9%8B%E9%83%BD-A-Drowning-City"
@@ -495,7 +506,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"非／密閉空間\"",
+    "artist:\"非／密閉空間\" AND releasegroup:\"Flow, Gesture, and Spaces\"",
+    "releasegroup:\"Flow, Gesture, and Spaces\""
+   ],
+   "checkedAt": "2026-10-30",
+   "conclusion": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯；主線重查：藝人搜尋 有同名條目（Various Artists/?、チーム非人間/JP、幽閉サテライト/JP、空間現代/JP、Taikuh Jikang/?）但無此 release group（count=0），以 Apple／Discogs 為身分依據"
+  },
   "manualEvidenceUrls": [
    "https://music.apple.com/tw/album/flow-gesture-and-spaces/1485642444",
    "https://www.discogs.com/release/18118501-Non-Confined-Space-Minyen-Hsieh-%E9%84%AD%E5%90%84%E5%9D%87-Flow-Gesture-and-Spaces"
@@ -535,7 +554,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"頭部組成者\"",
+    "artist:\"頭部組成者\" AND releasegroup:\"刑天\"",
+    "releasegroup:\"刑天\""
+   ],
+   "checkedAt": "2026-10-30",
+   "conclusion": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯；主線重查：藝人搜尋 有同名條目（The Beatles/GB）但無此 release group（count=0），以 Apple／Discogs 為身分依據"
+  },
   "manualEvidenceUrls": [
    "https://music.apple.com/tw/album/1597610828",
    "https://music.apple.com/tw/artist/%E9%A0%AD%E9%83%A8%E7%B5%84%E6%88%90%E8%80%85"
@@ -575,7 +602,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"吳書齊\"",
+    "artist:\"吳書齊\" AND releasegroup:\"鹿港\"",
+    "releasegroup:\"鹿港\""
+   ],
+   "checkedAt": "2026-10-30",
+   "conclusion": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯；主線重查：藝人搜尋 有同名條目（齊豫/TW、齊秦/TW、任賢齊/TW、吳欣叡/?）但無此 release group（count=0），以 Apple／Discogs 為身分依據"
+  },
   "manualEvidenceUrls": [
    "https://music.apple.com/tw/album/%E9%B9%BF%E6%B8%AF/1732186894",
    "https://www.discogs.com/release/29454466-%E5%90%B3%E6%9B%B8%E9%BD%8A-%E9%B9%BF%E6%B8%AF-Port-Deer"
@@ -615,7 +650,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"狗毛\"",
+    "artist:\"狗毛\" AND releasegroup:\"衝動\"",
+    "releasegroup:\"衝動\""
+   ],
+   "checkedAt": "2026-10-30",
+   "conclusion": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯；主線重查：藝人搜尋 有同名條目（狗毛/?）但無此 release group（count=0），以 Apple／Discogs 為身分依據"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/2252629",
    "https://music.apple.com/tw/album/553793158"
@@ -655,7 +698,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"陳穎達\"",
+    "artist:\"陳穎達\" AND releasegroup:\"動物感傷\"",
+    "releasegroup:\"動物感傷\""
+   ],
+   "checkedAt": "2026-10-30",
+   "conclusion": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯；主線重查：藝人搜尋 有同名條目（陈颖/?、董颖达/?）但無此 release group（count=0），以 Apple／Discogs 為身分依據"
+  },
   "manualEvidenceUrls": [
    "https://music.apple.com/tw/album/%E5%8B%95%E7%89%A9%E6%84%9F%E5%82%B7/1881508334",
    "https://music.apple.com/tw/artist/%E9%99%B3%E7%A9%8E%E9%81%94"
@@ -695,7 +746,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"陳穎達\"",
+    "artist:\"陳穎達\" AND releasegroup:\"你聽過Beige嗎\"",
+    "releasegroup:\"你聽過Beige嗎\""
+   ],
+   "checkedAt": "2026-10-30",
+   "conclusion": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯；主線重查：藝人搜尋 有同名條目（陈颖/?、董颖达/?）但無此 release group（count=0），以 Apple／Discogs 為身分依據"
+  },
   "manualEvidenceUrls": [
    "https://music.apple.com/tw/album/%E4%BD%A0%E8%81%BD%E9%81%8Ebeige%E5%97%8E/1881507379",
    "https://www.discogs.com/release/28006440-%E9%99%B3%E7%A9%8E%E9%81%94-%E4%BD%A0%E8%81%BD%E9%81%8E-Beige-%E5%97%8E-Do-You-Know-Beige"
@@ -807,7 +866,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz artist/release-group 查詢（2026-10-30，主線）無此藝人／專輯",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"KUNG 龔敬文\"",
+    "artist:\"KUNG 龔敬文\" AND releasegroup:\"甲洨斯丁\"",
+    "releasegroup:\"甲洨斯丁\""
+   ],
+   "checkedAt": "2026-10-30",
+   "conclusion": "MusicBrainz artist/release-group 查詢（2026-10-30，主線）無此藝人／專輯；主線重查：藝人搜尋 有同名條目（龔言脩/TW、龔婆婆/HK、龚敬业/CN、龔建忠/HK）但無此 release group（count=0），以 Apple／Discogs 為身分依據"
+  },
   "manualEvidenceUrls": [
    "https://music.apple.com/tw/album/1635515472",
    "https://music.apple.com/tw/artist/1423596323"
@@ -847,7 +914,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz artist/release-group 查詢（2026-10-30，主線）無此藝人／專輯",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"潮州土狗\"",
+    "artist:\"潮州土狗\" AND releasegroup:\"狗狗歷險記\"",
+    "releasegroup:\"狗狗歷險記\""
+   ],
+   "checkedAt": "2026-10-30",
+   "conclusion": "MusicBrainz artist/release-group 查詢（2026-10-30，主線）無此藝人／專輯；主線重查：藝人搜尋 有同名條目（井土紀州/JP、潮/?、姚望州州州州/?、鸣潮先约电台/?）但無此 release group（count=0），以 Apple／Discogs 為身分依據"
+  },
   "manualEvidenceUrls": [
    "https://music.apple.com/tw/album/1659589967",
    "https://music.apple.com/tw/artist/1547663854"
@@ -888,7 +963,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz artist/release-group 查詢（2026-10-30，主線）無此藝人／專輯",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"諾頓街\"",
+    "artist:\"諾頓街\" AND releasegroup:\"街拍\"",
+    "releasegroup:\"街拍\""
+   ],
+   "checkedAt": "2026-10-30",
+   "conclusion": "MusicBrainz artist/release-group 查詢（2026-10-30，主線）無此藝人／專輯；主線重查：藝人搜尋 有同名條目（街/?、Gorillaz/?、卡顿/?、星街すいせい/JP、樂諾/?）但無此 release group（count=0），以 Apple／Discogs 為身分依據"
+  },
   "manualEvidenceUrls": [
    "https://music.apple.com/tw/album/1819473884",
    "https://music.apple.com/tw/artist/1561914967"
