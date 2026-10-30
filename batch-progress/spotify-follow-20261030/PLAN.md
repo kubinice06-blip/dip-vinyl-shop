@@ -20,8 +20,8 @@
 | sf06 | 華語其他、港、韓、泰；未確定身分的華語名 | 29 | ar-d-206 | ✅ 上線 20（跳過 0 位已在池；收 20 位，不收 9 位：Ni Jay、Tracey、WHYNOT、HH、เขียนไขและวานิช 身分釘不住，Popstar Benny、Chill Qin、B E N N 無代表性正規專輯，Food-Spotter 只有單曲；頂點 0；藝人介紹 20 位 cut） |
 | sf07 | 西洋 60–80 年代：迷幻、prog、硬搖滾、krautrock、post-punk | 35 | ar-d-207（✅ 介紹上線 32／skipped 0） | ✅ 上線 47（跳過 0 位已在池；不收 3 位） |
 | sf08 | 西洋 90 年代至今：獨立、alt、迷幻、shoegaze、民謠 | 41 | ar-d-208 | ✅ 上線 59（跳過 0 位已在池；收 40 位，不收 1 位：Valley Hi! 只有 4 曲 EP；頂點 0；藝人介紹 40 位 cut） |
-| sf09 | 爵士（含日韓爵士、ECM、世界爵士） | 41 | ar-d-209 | ✅ 上線 39（跳過 4 位已在池；收 32 位，不收 2 位：Jon Christensen 無領銜盤、Multiverse 是台灣嘻哈廠牌帳號；頂點 0；藝人介紹 32 位 cut） |
-| sf10 | 電子、實驗、新古典鋼琴、house | 33 | ar-d-210 | ✅ 上線 37（跳過 0 位已在池；收 32 位，不收 1 位：Gibran Alcocer 只有 EP；頂點 0；藝人介紹 33 位 cut） |
+| sf09 | 爵士（含日韓爵士、ECM、世界爵士） | 41 | ar-d-209（✅ 介紹上線 32／skipped 0） | ✅ 上線 39（跳過 4 位已在池；收 32 位，不收 2 位：Jon Christensen 無領銜盤、Multiverse 是台灣嘻哈廠牌帳號；頂點 0；藝人介紹 32 位 cut） |
+| sf10 | 電子、實驗、新古典鋼琴、house | 33 | ar-d-210（✅ 介紹上線 33／skipped 0） | ✅ 上線 37（跳過 0 位已在池；收 32 位，不收 1 位：Gibran Alcocer 只有 EP；頂點 0；藝人介紹 33 位 cut） |
 | sf11 | 冷門與身分待查（電子、lo-fi、小廠牌） | 35 | ar-d-211 | ✅ 上線 24（跳過 1 位已在池：Scattered Purgatory＝破地獄；收 24 位，不收 10 位：只有單曲／EP／remix 或身分連不上 Spotify；頂點 0；藝人介紹 24 位 cut） |
 | sf12 | 嘻哈、R&B、靈魂、流行、以色列 | 32 | ar-d-212 | ✅ 上線 35（跳過 0 位已在池；收 30 位，不收 2 位：The Flexibles、KbN 身分釘不住；頂點 0；藝人介紹 30 位 cut） |
 
