@@ -11519,7 +11519,9 @@
     "烏賊紳士"
    ],
    "state": "published",
-   "skipped": ["烏賊紳士"],
+   "skipped": [
+    "烏賊紳士"
+   ],
    "reviewFixes": 4,
    "note": "店主 Spotify 追蹤藝人補卡池 add-20261030-sf01 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11）；名冊 batch-progress/artist-intro/roster-sf01.json"
   },
@@ -11566,7 +11568,12 @@
     "静香"
    ],
    "state": "published",
-   "skipped": ["ないあがらせっと", "ヨシンバ", "ピューパ!!", "the 天国畑 japon"],
+   "skipped": [
+    "ないあがらせっと",
+    "ヨシンバ",
+    "ピューパ!!",
+    "the 天国畑 japon"
+   ],
    "reviewFixes": 5,
    "note": "店主 Spotify 追蹤藝人補卡池 add-20261030-sf02 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11）；名冊 batch-progress/artist-intro/roster-sf02.json"
   },
@@ -11648,6 +11655,92 @@
    ],
    "state": "cut",
    "note": "店主 Spotify 追蹤藝人補卡池 add-20261030-sf04 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11）；名冊 batch-progress/artist-intro/roster-sf04.json"
+  },
+  {
+   "batch": "ar-d-211",
+   "tier": "D",
+   "genres": [
+    "jazz",
+    "electronic",
+    "rock",
+    "world",
+    "hiphop",
+    "pop",
+    "folk"
+   ],
+   "keys": [
+    "caldera",
+    "dj toner",
+    "doctor butcher",
+    "dudu tassa & the kuwaitis",
+    "eristheplanet",
+    "mad keys",
+    "mindchatter",
+    "moin",
+    "natural magic",
+    "nicknack",
+    "noso",
+    "nuuamm",
+    "parks, squares and alleys",
+    "posh inverse",
+    "puzzleman",
+    "skip skip ben ben",
+    "sonia calico",
+    "space raiders",
+    "super besse",
+    "the luvmenauts",
+    "the offset: spectacles",
+    "the sign of human 記號士",
+    "ultra sunn",
+    "特撮"
+   ],
+   "state": "cut",
+   "note": "Spotify 追蹤藝人補卡池 sf11（add-20261030-sf11）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；24 位）；名冊 batch-progress/artist-intro/roster-sf11.json"
+  },
+  {
+   "batch": "ar-d-212",
+   "tier": "D",
+   "genres": [
+    "electronic",
+    "pop",
+    "hiphop",
+    "soul",
+    "rock"
+   ],
+   "keys": [
+    "attica blues",
+    "biig piig",
+    "blubell",
+    "def squad",
+    "destin conrad",
+    "dinner party",
+    "dudu tassa",
+    "fortisakharof",
+    "j. valentine",
+    "jason derulo",
+    "jmsn",
+    "kmd",
+    "kris kross",
+    "lausse the cat",
+    "maddie ashman",
+    "marian hill",
+    "michael franti & spearhead",
+    "mr twin sister",
+    "my skin against your skin 激膚",
+    "noblemen",
+    "olivia dean",
+    "omar apollo",
+    "onry ozzborn",
+    "puma blue",
+    "s.c.a.b.",
+    "sad night dynamite",
+    "saya gray",
+    "the beneficiaries",
+    "the umc's",
+    "way out west"
+   ],
+   "state": "cut",
+   "note": "Spotify 追蹤藝人補卡池 sf12（add-20261030-sf12）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；30 位）；名冊 batch-progress/artist-intro/roster-sf12.json"
   }
  ]
 }

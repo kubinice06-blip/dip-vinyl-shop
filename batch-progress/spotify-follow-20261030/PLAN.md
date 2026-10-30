@@ -22,8 +22,8 @@
 | sf08 | 西洋 90 年代至今：獨立、alt、迷幻、shoegaze、民謠 | 41 | ar-d-208 | 派→Spotify 補卡 sf06、sf08 |
 | sf09 | 爵士（含日韓爵士、ECM、世界爵士） | 41 | ar-d-209 | ✅ 上線 39（跳過 4 位已在池；收 32 位，不收 2 位：Jon Christensen 無領銜盤、Multiverse 是台灣嘻哈廠牌帳號；頂點 0；藝人介紹 32 位 cut） |
 | sf10 | 電子、實驗、新古典鋼琴、house | 33 | ar-d-210 | ✅ 上線 37（跳過 0 位已在池；收 32 位，不收 1 位：Gibran Alcocer 只有 EP；頂點 0；藝人介紹 33 位 cut） |
-| sf11 | 冷門與身分待查（電子、lo-fi、小廠牌） | 35 | ar-d-211 | 派→Spotify 補卡 sf11、sf12 |
-| sf12 | 嘻哈、R&B、靈魂、流行、以色列 | 32 | ar-d-212 | 派→Spotify 補卡 sf11、sf12 |
+| sf11 | 冷門與身分待查（電子、lo-fi、小廠牌） | 35 | ar-d-211 | ✅ 上線 24（跳過 1 位已在池：Scattered Purgatory＝破地獄；收 24 位，不收 10 位：只有單曲／EP／remix 或身分連不上 Spotify；頂點 0；藝人介紹 24 位 cut） |
+| sf12 | 嘻哈、R&B、靈魂、流行、以色列 | 32 | ar-d-212 | ✅ 上線 35（跳過 0 位已在池；收 30 位，不收 2 位：The Flexibles、KbN 身分釘不住；頂點 0；藝人介紹 30 位 cut） |
 
 - `coveredBySf01`：Bardo Pond、My Sleeping Karma、Ningen Isu、Klimeks、Patrick Holland、冠宇、烏賊紳士。這幾位的指定盤在 sf01，sf02–12 不再挑。
 - `skipLabels`：Flow State Records、War Child Records、Chicago Blues Radio 是廠牌或頻道，不是藝人，不收。其他看起來像廠牌或合輯帳號的（例 Tokimeki Records、Fresh Moods、Food-Spotter），在策展層查明後自行裁定，寫進 rulings。
@@ -55,6 +55,12 @@
 - 驗 gate 時發現 `mbAbsenceProof` 必須是物件（queries／checkedAt／conclusion），策展與 build-cards 產的是字串——上線前要轉；重查時還抓到 2 張其實 MB 有條目（Karencici、Martin & Garp），改釘住。
 - 藝人介紹名冊每批一檔 `batch-progress/artist-intro/roster-<批>.json`（格式：`{generatedAt, source, addedBy, artists, entries:[roster-20260929 同欄位]}`），progress.json 追加預留號 state cut、`desc-tools/batches/artist/cut/<號>.txt`。
 - 情緒評分兩批共用 `batch-progress/mood-axes/score-sf0507/`（select／merge 複製自 score-ml59）。
+
+## sf11／sf12 收工筆記（2026-10-30）
+- **策展層沒有 Spotify 熱門曲就會誤判冷門名**：sf11a 第一輪 9 位判不收，主線抓 `open.spotify.com/embed/artist/<id>` 的熱門曲（`__NEXT_DATA__` 的 trackList）發回重查，補回 Caldera、DJ Toner、Doctor Butcher 等 4 位。之後各批策展開工前先把熱門曲表發給代理。
+- **iTunes Search API 會長時間 403 限流**（本工作階段兩度、各十幾分鐘）：meta 的 Apple 候選大量落空時，改從 MB `release?release-group=<id>&inc=url-rels` 取 Apple 串流連結的 collectionId，再 lookup 逐軌核對，比重搜準。
+- gate 前重查 MB 又抓到 2 張人工卡其實有條目（Offset: Spectacles 在 MB 以原文名「憬觀：像同叠」登錄、記號士），改釘住——人工身分卡上線前一律用原文名再查一次。
+- 研究層會推翻主線策展的國別（Offset 主線改 us 是錯的，研究證實是香港團）；主線策展改欄位要有來源，不要憑廠牌所在地推。
 
 ## sf03／sf04 收工筆記（2026-10-30）
 - **條號**：sf03 用 41201–41280、sf04 用 41301–41380（sfNN → 41001＋(NN−1)×100；30000＋批號×100 制的 303xx 已被舊 c 批佔用）。

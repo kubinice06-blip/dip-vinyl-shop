@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-30｜dip-vinyl-shop｜Spotify 追蹤藝人補卡池 sf11（冷門／身分待查）＋sf12（嘻哈／R&B／靈魂／流行／以色列）上線 59 張
+
+- **改動**：照 `batch-progress/spotify-follow-20261030/PLAN.md` 跑完兩批（策展 4、研究 5×2、鉤子 2×2、寫作 2×2、主線審稿、試聽、封面 live-check、三軸、頂點、寫入、子曲風、情緒評分、藝人介紹名冊）。
+  - **sf11**：35 位 → 收 24 位、24 張；跳過已在池 1 位（Scattered Purgatory＝破地獄）；不收 10 位（只有單曲／EP／remix，或身分連不上 Spotify：Agosta、Declan McDermott、North Downs、Four Pens、sloje、ZipZap、Whyte、Nice Face、Alexandra Atnif、pololu）。試聽 ready 23／unavailable 1；頂點 0；審稿改 2 處。gate 前重查 MB，Offset: Spectacles、記號士改釘住。
+  - **sf12**：32 位 → 收 30 位、35 張；跳過 0；不收 2 位（The Flexibles、KbN 身分釘不住）。試聽 ready 26／unavailable 9；頂點 0；審稿改 4 處（刪單源樂評句 2）。
+  - 寫入：card_catalog 59、KV 65 鍵（29＋36）逐字回讀一致、seed 59 列；寫入前對 origin 155 條分支 seed 去重 0 撞；子曲風 59/59 落位（`genre-l3-artist-map.json` 補 17 節點）；情緒評分 `batch-progress/mood-axes/score-sf1112/`，錨點 104/104。
+  - 藝人介紹：`batch-progress/artist-intro/roster-sf11.json`（24 位）→ ar-d-211、`roster-sf12.json`（30 位）→ ar-d-212，state cut，補洞寫作待調度另派。
+  - 條號用 498xx／499xx（避開並行批可能取的 420xx–423xx）。
+- **坑**：策展代理沒有 Spotify 熱門曲會誤判冷門名（主線抓 embed 頁熱門曲發回後補回 4 位）；iTunes Search API 長時間 403，改用 MB release 的 Apple 串流連結取 collectionId。細節見 PLAN.md 收工筆記。
+- **主要檔案**：`batch-progress/add-20261030-sf1{1,2}/`、`onboarding-manifest-add-20261030-sf1{1,2}-20261030.json`、`desc-tools/batches/*/add-20261030-sf1{1,2}*`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-sf1*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/mood/*`、`genre-*`、`card-subgenres.json`、`draw-covers/*`、`desc-tools/batches/artist/{progress.json,cut/ar-d-21{1,2}.txt}`、PLAN.md。
+- **驗證**：兩批 prepare／published gate 皆 0 error；qa-batch research／hooks／out 全過；封面 59/59 live-check 200；mood gate 錨點 104/104。
+
 ### 2026-10-30｜dip-vinyl-shop｜Spotify 追蹤藝人補卡池 sf03（日本地下／迷幻／即興／和樂器）＋sf04（日本電子／ambient／嘻哈／lo-fi）上線 51 張
 
 - **改動**：照 `batch-progress/spotify-follow-20261030/PLAN.md` 跑完兩批（策展 4、研究 5×2、鉤子 2×2、寫作 2×2、主線審稿、試聽、封面 live-check、三軸、頂點、寫入、子曲風、情緒評分）。
