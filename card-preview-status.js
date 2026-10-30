@@ -3561,4 +3561,8 @@ window.DipPreviewStatus = Object.freeze({
   "高木元輝|mosura freight!": "unavailable",
   "濱瀬元彦|reminiscence": "unavailable",
   "fresh moods|fresh moods": "unavailable",
+  "alvin curran|canti e vedute del giardino magnetico": "unavailable",
+  "lau nau|kuutarha": "unavailable",
+  "orchestra of constant distress|concerns": "unavailable",
+  "shinjuku thief|bloody tourist": "unavailable",
 });

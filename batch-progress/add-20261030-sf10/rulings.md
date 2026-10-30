@@ -95,3 +95,19 @@
 - **41963** 日期句逐張配不同的領頭名詞＋動詞（AAL 年月＋廠牌讓它上架、Albanese 年月＋廠牌收下、Grandbrothers 廠牌在年月把首作壓成、Beving 首作在年月以自主發行問世、Un día 年月＋Domino 替她出版、Room 廠牌年月將它發行、для FOR 廠牌於年月發出、L'Acéphale 廠牌接下這張＋年月上市、Kuutarha 隔年＋廠牌接手正式出版、Rome 唱片於年月問世、French 79 兩年後的 10 月）；全批只寫到年或月，無「日」後一字。
 - **41964** 跨兩檔合掃 han() 4-gram（writer-2 檔已齊，掃三輪；對方中途也在改，第二輪冒出「移居洛杉磯」雙方同向躲）：拆掉「專輯年月」×8、「首張專輯」×6、「首約分鐘」×4、「自行發行」×4、「年月發行」×4、「電子音樂」×3、「第一張長片」×3、「的第二張」×3，及 2 張的「他一人包辦」「錄音與混音」「他在該廠」「年月過世」「正式發行」「年月面世」「客席人聲」「第二張專輯」「混音交給」「用合成器」「靈感來自」「年月推出」「全長約分鐘」「發行日落在」「他第一張」「個人專輯」「了合成器」「在年月出版」「由他自己」「人合成器」。定稿 2 次以上只剩地名「奧勒岡州波特蘭」（L'Acéphale note 指定領句）；「美國製作人」「製作人的」兩條已隨對方改動消失。
 - **41965** 只用 note：French 79 的〈1979〉、曲數曲長、Ratatat、Cauboyz 封面（facts 有、note 沒有）不寫；Dark Night 的 Coyne／Vega 等客座不寫；Rome 不寫弦樂；Segundo 不寫 Domino 為 2000 年發行方；Un día 不寫序數；Clutchy 身分只寫猜測、不定案；Maritime Rites 不寫 NPR、不寫合成器；Canti 不寫 Ananda 成立年。媒體名與媒體榜單名次全文 0（Thom Yorke 是音樂人，note 指定的一句照寫成間接敘述）。
+
+## 寫作層（writer-2）（41966–41970）
+- **41966** 交件：`desc-tools/batches/output/add-20261030-sf10-out-2.json` 18 張，key 逐字同序。full 13：206–239；thin 5：Mareux 174、Minotaur Shock 152、Monoton 168、Shinjuku Thief 154、Vapour Theories 180。`qa-check-research` 0 標記、`fix-spacing` 待補 0、`qa-batch out`（兩檔 37 張）全部通過；「據」字 grep 0。初稿 3 張出界（Saint Abdullah 257、Yung Bae 241、Vapour 183），整格縮句：Saint Abdullah 併「集體」句與出品句、hy.poc.risy 改成「克制地切進」；Yung Bae、Vapour 各刪 2–4 字。
+- **41967** 主線中途通知 d 組改兩張 hook／note（input 重建）：Photay 新 hook「取經對象是…」，正文不依賴舊 hook，原文保留（只改日期句避撞）；Peggy Gou 照新 note 順序重寫（成名作〈It Makes You Forget (Itgehane)〉＋ AIM 獎→身分→XL 發行＋1990 年代 house→Eliasson 封面），第二句「生於 1991 年仁川的 Peggy Gou」——不用「1991 年生於」，避開 hook 尾「長片」與 Barry Can't Swim 的「張長片年」黏合。togetherness、Nanana 取樣不在新 note，已拿掉。
+- **41968** 第二句領句全照 note 指派；「日」後一字照 41959（OCD 經、Peggy 在、Photay 透、Rich Ruth 由、Ruxpin ，、Saint Abdullah 以、Tomaga 問、Yaeji 交）。日期前的領頭字逐張不同：Peggy「排定」、Photay「排入」、Tomaga 先寫廠牌再寫「年月日問世」、Yaeji「首作於」、Saint Abdullah「出品，」、Nukkuu「選定年月出片」、Mareux「在年月才出」、Abbott「要到年月才問市」、Vapour「在年月問市」、Minotaur「在年月讓它上市」、W「年月上架」、Throwing Snow「年月交到」、Shinjuku「隔年交」。
+- **41969** 跨兩檔合掃 han() 4-gram（writer-1 檔已在，掃四輪）：拆掉「專輯年月」×8、「輯年月日」×4、「在年月發／年月發行」×4、「首張專輯」×6、「錄音室專輯」×3、「電子音樂」×3、「自行發行」×4、「第一張長片」（對 hook）、「年月推出」「年月出版」「年月面世」「年月過世」「年月把它」「發行日落在」「他一人包辦」「錄音與混音」「混音交給」「搬到／移居洛杉磯」（對方同向躲過一次）「吉他手與」「開場曲叫」「的第二張」「的第一張」「是他在該廠」「客席人聲」「國製作人」「曲取樣了」「年月上架」等。定稿 2 張以上只剩地名（奧勒岡州波特蘭，L'Acéphale 對 Yung Bae）與樂器名（薩克斯風）；Photay hook 的「用合成器」對 Room for the Moon 是 hook 原文，我方不能改。
+- **41970** 只用 note、研究層推翻照辦：Throwing Snow 的 90→11 首刪減不掛樂評出處、不用「據」；Mareux 不提〈The Perfect Girl〉；Shinjuku 不寫 Thrussell、Extreme 只寫「澳洲廠牌」；Planningtorock 只寫 2011 年 5 月、代稱 Rostron；Tomaga 不寫死因與年齡，過世先於發行標時序；Yung Bae 寫自行出版、不掛 Arista 為發行方；Ruxpin 不寫代表作；Saint Abdullah 不寫加拿大與成名作。媒體名與媒體榜單名次一律未寫（Yaeji 的 Best New Music、Peggy 的英國榜名次與 Metacritic 都沒寫）。Monoton 的 The Wire 名單未派、不寫。
+
+## 主線審稿（2026-10-30，雲端主線，37 張）
+- 41973：`qa-batch out` 37/37、thin 6 張 ≤180、`qa-check-research` 兩檔 0、`fix-spacing` 0。逐張讀全文、對回研究稿，改三處（只動措辭，research／hooks／input 不用同步）：
+  - `desc2:Peggy Gou|I Hear You`：「首張錄音室專輯排定 2024 年 6 月 7 日在 XL Recordings 發行」→ 刪「排定」（已發行，不是預告）。
+  - `desc2:Photay|Onism`：「排入 2017 年 8 月 11 日，透過 Astro Nautico 推出」→ 刪「排入」（同上）。
+  - `desc2:Saint Abdullah|Stars Have Eyes`：「要求被視為集體」→「希望外界把兩人當成一個集體」（原句生硬）。
+- 其餘 34 張逐張審過，未改字。媒體名、媒體榜單名次、「據說／據傳」grep 0（英國／奧地利專輯榜名次與 Mercury Prize 入圍是官方榜與獎項，不是媒體榜，照留）。
+- 41974：**頂點逐張判定 0 張**。37 張 classic 皆 ≤4（Against All Logic、Segundo 為 4），無殿堂資格；obscurity 最高 4，無 pearl 候選。
+- 41975：卡單 L'Acephale《L'Acéphale》補 `selfTitled: true`（研究 c 已核 MB 盤名＝團名）。封面 37 張 live-check：Monoton《Monotonprodukt 07》CAA release-group 原圖回 500，`covers.json` 改指 release 40e744ed 的 500px 縮圖（目視相符），其餘 200。寫入前對 origin/main 與所有 `claude/*` 分支 seed 去重 0 撞。

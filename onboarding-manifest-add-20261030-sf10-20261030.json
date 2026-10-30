@@ -1,0 +1,2700 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-sf10",
+ "batchNote": "薄細項策展線（add-20261030-sf10）",
+ "createdAt": "2026-10-30T03:23:58Z",
+ "albums": [
+  {
+   "artist": "Against All Logic",
+   "album": "2012–2017",
+   "identity": {
+    "releaseType": "Compilation",
+    "identitySource": "pinned",
+    "rgMbid": "20f7f4bb-c9cb-424e-9106-cbd41a00e18f",
+    "upc": "",
+    "aliasesChecked": true,
+    "exceptionReason": "MB 標 Compilation，但維基明寫為 Nicolas Jaar 第三張錄音室專輯、AAL 名義首張；ALBUM_ONBOARDING §5.6 重要合輯精選制收錄",
+    "exceptionEvidenceUrls": [
+     "https://en.wikipedia.org/wiki/2012%E2%80%932017",
+     "https://musicbrainz.org/release-group/20f7f4bb-c9cb-424e-9106-cbd41a00e18f",
+     "https://coverartarchive.org/release-group/20f7f4bb-c9cb-424e-9106-cbd41a00e18f/front-250"
+    ],
+    "aliasReview": "electronic-house：Nicolas Jaar 化名的 house／sample 代表作，Pitchfork 評為年度佳作｜⚠ MB 標 Compilation（收錄早期單曲），但樂評與 Spotify 皆視為正式專輯；池中僅有 Nicolas Jaar 本名卡，此掛名無卡｜MB release-group 20f7f4bb-c9cb-424e-9106-cbd41a00e18f：title「2012–2017」、Album＋Compilation、first-release-date 2018-02-16、artist-credit「A.A.L. (Against All Logic)」。證據：https://en.wikipedia.org/wiki/2012%E2%80%932017 https://musicbrainz.org/release-group/20f7f4bb-c9cb-424e-9106-cbd41a00e18f https://coverartarchive.org/release-group/20f7f4bb-c9cb-424e-9106-cbd41a00e18f/front-250",
+    "queryAlias": "A.A.L. (Against All Logic)"
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/20f7f4bb-c9cb-424e-9106-cbd41a00e18f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 3171,
+    "source": "worker /album-rating＋主線入耳難度校正",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 3171）；主線：Nicolas Jaar 別名首作，英文維基列為錄音室專輯、樂評長期共識"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "封面上找不到 Nicolas Jaar 的名字。唱片掛名 Against All Logic，那是電子樂手 Nicolas Jaar 的化名。2018 年 2 月，他自己的廠牌 Other People 幾乎沒做預告就讓它上架，收進 2012 至 2017 年間做的 house，盤名就是這段年份區間。切碎循環的靈魂與放克取樣，配上穩定的鼓機節拍，削波與濾波磨出劈啪作響的毛邊，速度偏快。第一首就借了 David Axelrod 的取樣。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/2012%E2%80%932017",
+     "https://musicbrainz.org/release-group/20f7f4bb-c9cb-424e-9106-cbd41a00e18f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/91/ea/f0/91eaf07e-088a-240b-0312-188cb016e046/mzaf_2570104805715782095.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1828456934",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1828456934「Against All Logic《2012 - 2017》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈This Old House Is All I Have〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Alvin Curran",
+   "album": "Maritime Rites",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "798c698a-1600-38b6-b649-ea9657ec4084",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "experimental-composition：Curran 最廣為人知的海洋聲景／廣播藝術作品｜⚠ 作品寫於 1984，CD 首發 2004（New World）｜MB release-group 798c698a-1600-38b6-b649-ea9657ec4084：title「Maritime Rites」、Album、first-release-date 2004-12-06、artist-credit「Alvin Curran」。證據：https://coverartarchive.org/release-group/798c698a-1600-38b6-b649-ea9657ec4084/front-250 https://musicbrainz.org/release-group/798c698a-1600-38b6-b649-ea9657ec4084",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2004,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/798c698a-1600-38b6-b649-ea9657ec4084/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 172,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 172）；主線：冷門軸錨點制：New World Records 正常流通、已進串流（Last.fm 172 是聲音藝術聽眾少）；霧笛與環境錄音拼貼，入耳難度 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "六十多支霧角，在廣播裡同時鳴響。這是美國作曲家 Alvin Curran 為廣播做的十集環境音樂會。1980 年代中期，他沿美國東岸一路走到加拿大新伯倫瑞克，在海岸實地錄下霧角、航海鐘與汽笛，連燈塔管理員也錄了進去。John Cage、Steve Lacy、Pauline Oliveros 等十位獨奏者即興疊在上面，再由他剪接混音，全程無鼓。這批錄音到 2004 年才由 New World Records 出成雙 CD。",
+    "sourceUrls": [
+     "https://www.newworldrecords.org/products/alvin-curran-maritime-rites",
+     "https://jazzontherideau.substack.com/p/rabble-without-a-cause-december-4",
+     "https://romaeuropa.net/en/?p=12032",
+     "https://en.wikipedia.org/wiki/Alvin_Curran",
+     "https://musicbrainz.org/release-group/798c698a-1600-38b6-b649-ea9657ec4084"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ae/cd/40/aecd4058-28de-e8aa-9a0b-3d9b38699e45/mzaf_844743503060654292.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "401704775",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 401704775「Various Artists《Alvin Curran: Maritime Rites》」：New World《Maritime Rites》20 軌，主線逐軌核對 20/20（Apple 曲名多冠「Maritime Rites:」），取第 1 軌〈Maritime Rites: World Music〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Alvin Curran",
+   "album": "Canti e vedute del giardino magnetico",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "769995b2-29f4-3e4b-a457-2232bce5ad85",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "experimental-composition：1975 早期代表作，電子與錄音拼貼的奠基盤｜⚠ 英文名 Songs and Views of the Magnetic Garden｜MB release-group 769995b2-29f4-3e4b-a457-2232bce5ad85：title「Canti e vedute del giardino magnetico」、Album、first-release-date 1975、artist-credit「Alvin Curran」。證據：https://coverartarchive.org/release-group/769995b2-29f4-3e4b-a457-2232bce5ad85/front-250 https://musicbrainz.org/release-group/769995b2-29f4-3e4b-a457-2232bce5ad85",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/769995b2-29f4-3e4b-a457-2232bce5ad85/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 121,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 121）；主線：冷門軸錨點制：1975 自家 Ananda 小廠原盤，後有考古再發＝被挖出來但仍屬收藏家領域"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "風聲、燕子與蜜蜂，混進合成器的長音。美國出生、長居羅馬的 Alvin Curran 是 Musica Elettronica Viva 共同創辦人，這張在 1975 年由羅馬的 Ananda 發行，目錄號 Ananda n°1。廠牌由他和 Roberto Laneri、Giacinto Scelsi 合組，每張唱片都由作者本人從頭製作到尾。演奏、合成、錄音、混音全歸他一手。VCS3 合成器拉出的長音底下，襯著歌聲、鐘聲與自然錄音。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2403650",
+     "https://en.wikipedia.org/wiki/Songs_and_Views_of_the_Magnetic_Garden",
+     "https://musicbrainz.org/release-group/769995b2-29f4-3e4b-a457-2232bce5ad85"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "Apple 只有 2010《Solo Works - The '70s》彙整輯，無 1975 Ananda 原盤條目。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Barry Can't Swim",
+   "album": "When Will We Land?",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "672a4973-eaf5-4308-8261-ffad7a5a5887",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "uk-house：唯一正規專輯，英國 house 新生代代表作｜策展無疑點｜MB release-group 672a4973-eaf5-4308-8261-ffad7a5a5887：title「When Will We Land?」、Album、first-release-date 2023-10-20、artist-credit「Barry Can’t Swim」。證據：https://coverartarchive.org/release-group/672a4973-eaf5-4308-8261-ffad7a5a5887/front-250 https://musicbrainz.org/release-group/672a4973-eaf5-4308-8261-ffad7a5a5887",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/672a4973-eaf5-4308-8261-ffad7a5a5887/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 238176,
+    "source": "worker /album-rating＋主線入耳難度校正",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 238176）；主線：旋律明確、好入耳（新古典鋼琴／流行 house），入耳難度 2"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "九歲學鋼琴的愛丁堡人，偏好用樂器做 house。Barry Can't Swim 是 Joshua Spence Mainnie 的藝名，他 1992 年生，在愛丁堡納皮爾大學念音樂。之前只出過兩張 EP，出道專輯 2023 年 10 月交給 Ninja Tune，收 11 首、約 41 分鐘。〈Define Dancing〉用上 clave 節奏、鐘聲與循環人聲。專輯打進英國專輯榜第 12 名，隔年入圍 Mercury Prize。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Barry_Can%27t_Swim",
+     "https://musicbrainz.org/release-group/672a4973-eaf5-4308-8261-ffad7a5a5887",
+     "https://en.wikipedia.org/wiki/When_Will_We_Land%3F",
+     "https://www.clashmusic.com/reviews/barry-cant-swim-when-will-we-land/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/17/41/31/17413161-ec5f-fe5a-6632-4f9299d6ea7f/mzaf_17684168434168491741.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1687656892",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 1687656892「Barry Can't Swim《When Will We Land?》」：Ninja Tune 原盤 11 軌，取第 1 軌〈When Will We Land?〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Christoph De Babalon",
+   "album": "If You're Into It, I'm Out of It",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9091ccc2-07f0-3d44-930e-d9fca43c47c0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "digital-hardcore：digital hardcore／breakcore 公認里程碑｜⚠ 池中 Christ. 為不同藝人｜MB release-group 9091ccc2-07f0-3d44-930e-d9fca43c47c0：title「If You’re Into It, I’m Out of It」、Album、first-release-date 1997-01、artist-credit「Christoph de Babalon」。證據：https://coverartarchive.org/release-group/9091ccc2-07f0-3d44-930e-d9fca43c47c0/front-250 https://musicbrainz.org/release-group/9091ccc2-07f0-3d44-930e-d9fca43c47c0",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9091ccc2-07f0-3d44-930e-d9fca43c47c0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 7605,
+    "source": "worker /album-rating＋主線入耳難度校正",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 7605）；主線：breakcore 碎拍與無鼓氛圍長曲交錯，入耳難度 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "在 Amiga 電腦上斷斷續續做了四年。Christoph De Babalon 是漢堡出身的製作人，這張從 1993 做到 1996 年，1997 年經 Digital Hardcore Recordings 出版，成為他留在這家廠牌的唯一一張完整專輯。開場〈Opium〉約 15 分半，低鳴緩緩循環，伴著教堂鐘聲。其餘重拍曲是碎裂的 breakbeat 疊上失控合成器，中間穿插氛圍長曲。Thom Yorke 說它是自己擁有過最令人不安的專輯。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Christoph_de_Babalon",
+     "https://musicbrainz.org/release-group/9091ccc2-07f0-3d44-930e-d9fca43c47c0",
+     "https://en.wikipedia.org/wiki/If_You%27re_Into_It,_I%27m_Out_of_It"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f7/a4/69/f7a4696a-7613-166e-c2f1-58c4416f95d1/mzaf_15762413175188399605.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "909059218",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 909059218「Christoph De Babalon《If You're Into It I'm Out of It》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Opium〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Clutchy Hopkins",
+   "album": "The Life of Clutchy Hopkins",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "070d3881-fdb3-33da-b178-caff43a4b168",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "beat-funk：神秘 beat 製作人的出道代表作，funk／jazz 取樣｜⚠ 首發廠牌未能由 MB 確認｜MB release-group 070d3881-fdb3-33da-b178-caff43a4b168：title「The Life of Clutchy Hopkins」、Album、first-release-date 2006、artist-credit「Clutchy Hopkins」。證據：https://coverartarchive.org/release-group/070d3881-fdb3-33da-b178-caff43a4b168/front-250 https://musicbrainz.org/release-group/070d3881-fdb3-33da-b178-caff43a4b168",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/070d3881-fdb3-33da-b178-caff43a4b168/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 77826,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 77826）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Clutchy Hopkins 是誰，始終沒人證實。他自稱是加州的多樂器樂手。2006 年 9 月，YouTube 出現一支號稱是他紀錄片的影片，片尾網址掛的就是這張。首發落在自家廠牌 Crate Digler，內容全是器樂的老派 funk 與 downtempo 取樣 beat。外界猜過幕後是 DJ Shadow 或 Madlib，答案至今懸著。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Clutchy_Hopkins",
+     "https://www.discogs.com/release/1030627",
+     "https://www.discogs.com/master/129528",
+     "https://musicbrainz.org/release-group/070d3881-fdb3-33da-b178-caff43a4b168"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cd/59/78/cd5978f2-8154-e595-42df-e9b55dbf3654/mzaf_1598227650625808822.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1686784203",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1686784203「Clutchy Hopkins《The Life of Clutchy Hopkins》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈3:06〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Danger Mouse & Sparklehorse",
+   "album": "Dark Night of the Soul",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d3e84aab-2eac-3970-b411-23d0e072fcc6",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "producer-projects：Danger Mouse 與 Sparklehorse 合作、多位客座，製作人生涯高峰｜⚠ MB 首發 2009（網路），正式發行 2010；歸屬 Danger Mouse 本人名下｜MB release-group d3e84aab-2eac-3970-b411-23d0e072fcc6：title「Dark Night of the Soul」、Album、first-release-date 2009、artist-credit「Danger Mouse and Sparklehorse」。證據：https://coverartarchive.org/release-group/d3e84aab-2eac-3970-b411-23d0e072fcc6/front-250 https://musicbrainz.org/release-group/d3e84aab-2eac-3970-b411-23d0e072fcc6",
+    "queryAlias": "Danger Mouse and Sparklehorse"
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d3e84aab-2eac-3970-b411-23d0e072fcc6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 40739,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 40739）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一本 David Lynch 攝影集，附一張空白 CD-R。由 Danger Mouse 與 Sparklehorse 的 Mark Linkous 共同製作的這批歌，因與 EMI 的法律糾紛延後，2009 年音檔又先外流，Danger Mouse 便改成賣攝影集。客座有 Iggy Pop，標題曲則由 Lynch 親自演唱。Linkous 過世於 2010 年 3 月，Vic Chesnutt 也在錄成後離世；正式發行要等到同年 7 月。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Dark_Night_of_the_Soul_(album)",
+     "https://musicbrainz.org/release-group/d3e84aab-2eac-3970-b411-23d0e072fcc6",
+     "https://www.clashmusic.com/reviews/danger-mouse-and-sparklehorse-dark-night-of-the-soul/",
+     "https://beatsperminute.com/danger-mouse-and-sparklehorse-dark-night-of-the-soul/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/81/92/bc/8192bceb-9e2c-fd9a-049a-5ac96b6b99a5/mzaf_17048719964328919524.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "693812409",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 693812409「Danger Mouse & Sparklehorse《Dark Night of the Soul》」：Parlophone 2010 標準版 13 軌，取第 1 軌〈Revenge (feat. The Flaming Lips)〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Danger Mouse & Daniele Luppi",
+   "album": "Rome",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "59654e61-9ef3-4093-87a1-8c6fb8c628dc",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "producer-projects：向義大利西部片配樂致敬的 Danger Mouse 主導錄音室專輯｜策展無疑點｜MB release-group 59654e61-9ef3-4093-87a1-8c6fb8c628dc：title「Rome」、Album、first-release-date 2011-05-11、artist-credit「Danger Mouse & Daniele Luppi」。證據：https://coverartarchive.org/release-group/59654e61-9ef3-4093-87a1-8c6fb8c628dc/front-250 https://musicbrainz.org/release-group/59654e61-9ef3-4093-87a1-8c6fb8c628dc",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/59654e61-9ef3-4093-87a1-8c6fb8c628dc/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 97095,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 97095）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "替《黃昏三鏢客》配唱的合唱團，重新聚首。美國製作人 Danger Mouse 與義大利作曲家 Daniele Luppi 以義大利西部片配樂為靈感，花了五年合寫。曾為那部片演唱的 Cantori Moderni，與女高音 Edda Dell'Orso 一同加入。錄音地點選在羅馬 Forum Studios，用的是老器材，也請來錄過那類配樂的樂手。Jack White 與 Norah Jones 各唱三首，唱片於 2011 年 5 月問世。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Rome_(Danger_Mouse_and_Daniele_Luppi_album)",
+     "https://musicbrainz.org/release-group/59654e61-9ef3-4093-87a1-8c6fb8c628dc"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bd/3e/8b/bd3e8b1b-2b0e-caa4-e975-3e0c67138f6c/mzaf_8224256294385477350.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "710697778",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 710697778「Danger Mouse & Daniele Luppi《Rome》」：曲目 15/15 對上 MB 原盤（Apple 共 15 軌），取第 1 軌〈Theme of ''Rome''〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Federico Albanese",
+   "album": "The Houseboat and the Moon",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9b27b970-0a78-4057-af67-9fb3a21758ab",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "neo-classical-piano：出道盤，極簡鋼琴／弦樂的代表｜策展無疑點｜MB release-group 9b27b970-0a78-4057-af67-9fb3a21758ab：title「The Houseboat and the Moon」、Album、first-release-date 2014-02-28、artist-credit「Federico Albanese」。證據：https://coverartarchive.org/release-group/9b27b970-0a78-4057-af67-9fb3a21758ab/front-250 https://musicbrainz.org/release-group/9b27b970-0a78-4057-af67-9fb3a21758ab",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9b27b970-0a78-4057-af67-9fb3a21758ab/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 50707,
+    "source": "worker /album-rating＋主線入耳難度校正",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 50707）；主線：旋律明確、好入耳（新古典鋼琴／流行 house），入耳難度 2"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "鋼琴全用一台 1969 年的 Uher 盤帶機錄下。Federico Albanese 身兼作曲與鋼琴，是義大利人，生於米蘭、住在柏林。2014 年 2 月，德國廠牌 Denovali 收下他個人名義的首作。琴音先進那台德國盤式錄音機，再經電子設備加工，音色溫暖、帶著夢感。上面疊了合成器、鐘琴、顫音琴、玩具鋼琴與田野錄音，客席補上大提琴與低音管。〈Queen and Wonder〉則在鋼琴底下墊了電子節拍。",
+    "sourceUrls": [
+     "https://igloomag.com/reviews/federico-albanese-the-houseboat-and-the-moon-denovali",
+     "https://musicbrainz.org/release-group/9b27b970-0a78-4057-af67-9fb3a21758ab",
+     "https://www.textura.org/reviews/albanese_houseboatmoon.htm",
+     "https://igloomag.com/?p=46781"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cd/dc/f3/cddcf375-5510-969a-742f-f753427f9f69/mzaf_15747015508451589578.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1730029591",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1730029591「Federico Albanese《The Houseboat and the Moon》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Beyond the Milk Wood〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "French 79",
+   "album": "Olympic",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f4898726-4018-4f80-9ddf-b8208369fb97",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "french-synthpop：法國 synthpop／nu-disco 代表專輯｜策展無疑點｜MB release-group f4898726-4018-4f80-9ddf-b8208369fb97：title「Olympic」、Album、first-release-date 2016-10-21、artist-credit「French 79」。證據：https://coverartarchive.org/release-group/f4898726-4018-4f80-9ddf-b8208369fb97/front-250 https://musicbrainz.org/release-group/f4898726-4018-4f80-9ddf-b8208369fb97",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f4898726-4018-4f80-9ddf-b8208369fb97/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 383899,
+    "source": "worker /album-rating＋主線入耳難度校正",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 383899）；主線：旋律明確、好入耳（新古典鋼琴／流行 house），入耳難度 2"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "樂團 Nasser 的前吉他手，另開一個人的電子計畫。French 79 走的是 electropop 與 French touch，計畫的主人叫 Simon Henner，2014 年才掛出這個名號。兩年後的 10 月，法國廠牌 Alter K 替他推出出道作《Olympic》。他把影響來源指向 Daft Punk 與 Kraftwerk。人聲部分請來 Sarah Rebecca 與 Kid Francescoli 客串，各自替幾首歌補上嗓音。",
+    "sourceUrls": [
+     "https://fr.wikipedia.org/wiki/French_79",
+     "https://musicbrainz.org/release-group/f4898726-4018-4f80-9ddf-b8208369fb97",
+     "https://musicbrainz.org/release/d3e032a7-e5f3-4945-afa9-fac490fd278e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/79/f5/b179f591-75f8-12a7-100d-8bda586c6776/mzaf_17429704235395674952.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1441875354",
+    "storefront": "FR",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple fr 1441875354「French 79《Olympic》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Between the Buttons〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Grandbrothers",
+   "album": "Dilation",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a713a2ae-3456-42c0-980b-044a2338625f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "piano-electronica：改裝鋼琴＋電子的出道代表作｜⚠ Deluxe 版 2015-03-23；標準版 2015-02-23｜MB release-group a713a2ae-3456-42c0-980b-044a2338625f：title「Dilation」、Album、first-release-date 2015-03-23、artist-credit「Grandbrothers」。證據：https://coverartarchive.org/release-group/a713a2ae-3456-42c0-980b-044a2338625f/front-250 https://musicbrainz.org/release-group/a713a2ae-3456-42c0-980b-044a2338625f",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a713a2ae-3456-42c0-980b-044a2338625f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 40903,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 40903）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一台平台鋼琴，被自製的電磁鎚敲出電子聲。Grandbrothers 是 Erol Sarp 與 Lukas Vogel 的德瑞二人組，2011 年在杜塞道夫成軍，站在古典鋼琴與電子樂之間。分工很清楚：Sarp 彈琴，Vogel 操縱自製的電磁鎚與感應線圈去敲琴弦與琴身，鋼琴輸出再即時加工。德國 FILM 在 2015 年 3 月把首作壓成 CD，12 軌合計約 58 分鐘，最長的〈Ezra Was Right〉接近 8 分鐘。",
+    "sourceUrls": [
+     "https://de.wikipedia.org/wiki/Grandbrothers",
+     "https://grandbrothers.bandcamp.com/album/dilation-3",
+     "https://musicbrainz.org/release-group/a713a2ae-3456-42c0-980b-044a2338625f",
+     "https://musicbrainz.org/label/2cfcdbcc-87e3-4327-a8c6-43a25d906542"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e4/ae/08/e4ae08a1-22e8-fe9c-5a01-ee249ff2ace2/mzaf_5398203594607772511.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "969515920",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 969515920「Grandbrothers《Dilation (Deluxe Version)》」：曲目 12/12 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Prologue〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "HVOB",
+   "album": "Trialog",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d6e012f8-f4f6-492c-81f7-77bfb36b240b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "melodic-techno：奧地利 melodic house 雙人組的代表長片｜策展無疑點｜MB release-group d6e012f8-f4f6-492c-81f7-77bfb36b240b：title「Trialog」、Album、first-release-date 2015-04-17、artist-credit「HVOB」。證據：https://coverartarchive.org/release-group/d6e012f8-f4f6-492c-81f7-77bfb36b240b/front-250 https://musicbrainz.org/release-group/d6e012f8-f4f6-492c-81f7-77bfb36b240b",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d6e012f8-f4f6-492c-81f7-77bfb36b240b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 64363,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 64363）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "維也納二人組把 techno 專輯做成多媒體計畫。HVOB 是 Her Voice Over Boys 的縮寫，Anna Müller 與 Paul Wallner 在 2012 年成軍；Oliver Koletzki 在 SoundCloud 聽到早期曲子，把他們簽進自己的 Stil vor Talent。2015 年 4 月登場的續作找來視覺藝術家共同完成，奧地利專輯榜最高第 10 名。十首歌總長 63 分鐘左右，極簡律動配上克制的人聲，透著憂鬱。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/HVOB",
+     "https://de.wikipedia.org/wiki/HVOB",
+     "https://musicbrainz.org/release-group/d6e012f8-f4f6-492c-81f7-77bfb36b240b",
+     "https://musicbrainz.org/release/9986f776-0679-4c25-bc2e-b1f359912859"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7a/d0/67/7ad06793-cb36-9f1f-f272-b684a41e5168/mzaf_9657442249117358400.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1528144994",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1528144994「HVOB《Trialog》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Azrael〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Joep Beving",
+   "album": "Solipsism",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0a521e04-ea56-4bfb-bb5e-80790ccf24a8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "neo-classical-piano：極簡獨奏鋼琴出道作，引爆 Spotify 風潮｜⚠ MB 首發廠牌 iaregiantrecords（自發行），DG 於 2016 重發｜MB release-group 0a521e04-ea56-4bfb-bb5e-80790ccf24a8：title「Solipsism」、Album、first-release-date 2015-04-28、artist-credit「Joep Beving」。證據：https://coverartarchive.org/release-group/0a521e04-ea56-4bfb-bb5e-80790ccf24a8/front-250 https://musicbrainz.org/release-group/0a521e04-ea56-4bfb-bb5e-80790ccf24a8",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0a521e04-ea56-4bfb-bb5e-80790ccf24a8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 370295,
+    "source": "worker /album-rating＋主線入耳難度校正",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 370295）；主線：旋律明確、好入耳（新古典鋼琴／流行 house），入耳難度 2"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "阿姆斯特丹公寓的廚房裡，深夜一次錄成。荷蘭人 Joep Beving 原本在廣告業替廣告寫音樂，早年手腕勞損讓他停掉鋼琴學業；2014 年為了紓解工作壓力，他開始即興彈琴。首作在 2015 年 8 月以自主發行問世，先壓少量黑膠送親友，再放上串流，十一首安靜緩慢的獨奏鋼琴留著踏板吱聲與屋裡雜音。Deutsche Grammophon 的 A&R 在柏林酒吧聽到那批黑膠，循線簽下他，2017 年 9 月重發。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Joep_Beving",
+     "https://www.deutschegrammophon.com/en/artists/joep-beving/biography",
+     "https://www.deutschegrammophon.com/en/artists/joep-beving/news/dg-marks-the-10th-anniversary-of-joep-bevings-groundbreaking-debut-with-the-release-of-solipsism-redux-275984",
+     "https://www.deutschegrammophon.com/de/kuenstler-innen/joep-beving/pressestimmen/kollektiver-tagtraum-joep-bevings-sagenhaftes-debuetalbum-solipsism-erscheint-auf-cd-und-vinyl-244956",
+     "https://musicbrainz.org/release-group/0a521e04-ea56-4bfb-bb5e-80790ccf24a8"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f7/68/32/f768324c-c8e9-7736-0a16-72b5b0a56b31/mzaf_16025019355226100433.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1440790435",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1440790435「Joep Beving《Solipsism》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Midwayer〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Juana Molina",
+   "album": "Un día",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9d87b378-54e6-3cd7-88ed-b43d309d9059",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "folktronica：阿根廷 folktronica 公認最受推崇的專輯｜策展無疑點｜MB release-group 9d87b378-54e6-3cd7-88ed-b43d309d9059：title「Un día」、Album、first-release-date 2008-10-07、artist-credit「Juana Molina」。證據：https://coverartarchive.org/release-group/9d87b378-54e6-3cd7-88ed-b43d309d9059/front-250 https://musicbrainz.org/release-group/9d87b378-54e6-3cd7-88ed-b43d309d9059",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9d87b378-54e6-3cd7-88ed-b43d309d9059/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 26430,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 26430）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一支 Boss 迴圈踏板，把吉他疊成好幾層。阿根廷歌手 Juana Molina 是探戈歌手 Horacio Molina 的女兒，自 2002 年起用 Boss RC-20 把原聲與電子聲疊成迴圈，這套做法源於她早年反覆彈同一小段、彈到近乎恍惚。少女時期在巴黎聽到的印度古典持續音，也長遠影響了她。2008 年 10 月，Domino 替她出版，八首曲子，約 50 分鐘，〈Los hongos de Marosa〉獻給烏拉圭詩人 Marosa di Giorgio。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Juana_Molina",
+     "https://musicbrainz.org/release-group/9d87b378-54e6-3cd7-88ed-b43d309d9059",
+     "https://es.wikipedia.org/wiki/Juana_Molina"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/14/d4/a7/14d4a786-c5b1-e317-54af-0e3411fe03e8/mzaf_18355337823384650674.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "848158328",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 848158328「Juana Molina《Un Día》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Un Día〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Juana Molina",
+   "album": "Segundo",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "348dec7a-5c08-367e-90c3-fdfd84ba8488",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "folktronica：風格轉折的突破作，David Byrne 讚賞｜⚠ 阿根廷原版 2000，MB 記 Domino 國際版 2003｜MB release-group 348dec7a-5c08-367e-90c3-fdfd84ba8488：title「Segundo」、Album、first-release-date 2003-07-01、artist-credit「Juana Molina」。證據：https://coverartarchive.org/release-group/348dec7a-5c08-367e-90c3-fdfd84ba8488/front-250 https://musicbrainz.org/release-group/348dec7a-5c08-367e-90c3-fdfd84ba8488",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/348dec7a-5c08-367e-90c3-fdfd84ba8488/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 37342,
+    "source": "worker /album-rating＋主線入耳難度校正",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 37342）；主線：2000 阿根廷自發行、2003 Domino 國際版後成為其代表作"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "她曾是阿根廷的電視喜劇明星，1994 年轉做音樂。Juana Molina 在 1998 年落腳洛杉磯，此前 1996 年的首張《Rara》在阿根廷評價不佳。DreamWorks 要她交新作，最後未簽下，她便自己製作，用機器、鍵盤和吉他在家完成，Daniel Melero 在布宜諾斯艾利斯替它混音。2000 年在阿根廷自行發行後，意外在日本走紅，2003 年才有 Domino 的國際版。David Byrne 買來聽過，邀她替巡迴開場。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Juana_Molina",
+     "https://materiali-sonori.myshopify.com/products/juana-molina-segundo-remastered-reissue-cd",
+     "https://es.wikipedia.org/wiki/Juana_Molina",
+     "https://en.wikipedia.org/wiki/Segundo_(Juana_Molina_album)",
+     "https://musicbrainz.org/release-group/348dec7a-5c08-367e-90c3-fdfd84ba8488"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/40/e7/0a/40e70a70-15dc-3ff6-5cd3-d4fd646ee170/mzaf_789663918111503580.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1565403230",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1565403230「Juana Molina《Segundo (Remastered)》」：曲目 13/15 對上 MB 原盤（Apple 共 15 軌），取第 1 軌〈Martín Fierro (Remastered)〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kate NV",
+   "album": "Room for the Moon",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d7310ca8-0140-4a58-8457-305091bd106d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "art-pop：國際突破作，俄羅斯實驗流行代表｜策展無疑點｜MB release-group d7310ca8-0140-4a58-8457-305091bd106d：title「Room for the Moon」、Album、first-release-date 2020-06-12、artist-credit「Kate NV」。證據：https://coverartarchive.org/release-group/d7310ca8-0140-4a58-8457-305091bd106d/front-250 https://musicbrainz.org/release-group/d7310ca8-0140-4a58-8457-305091bd106d",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d7310ca8-0140-4a58-8457-305091bd106d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 46400,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 46400）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "《美少女戰士》與 John Cage，同列靈感清單。俄羅斯歌手 Kate NV 也是莫斯科樂團 Glintshake 的成員，本名 Ekaterina Shilonosova，學建築出身，2011 年搬到莫斯科。寫這批歌時正逢她最孤獨的階段，主題取材童年懷舊，靈感還有 Magritte 與俄羅斯兒童電影。樂器上她挑 Buchla 合成器與 Fender 吉他，以俄、英、法三語演唱。RVNG Intl. 2020 年 6 月將它發行。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Kate_NV",
+     "https://musicbrainz.org/release-group/d7310ca8-0140-4a58-8457-305091bd106d",
+     "https://musicbrainz.org/release/b847de22-e78b-48e9-8d57-8734e54f2d7b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0b/a9/b5/0ba9b5ac-fe87-dbc6-3369-8cea91740136/mzaf_17368574017119174598.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1499522230",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1499522230「Kate NV《Room for the Moon》」：曲目 11/11 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Not Not Not〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kate NV",
+   "album": "для FOR",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "19df5f38-8078-4b93-b008-4b99dec19bc2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "art-pop：早期另一個高峰，馬林巴與八〇年代質感｜⚠ MB 標題為「Для FOR」｜MB release-group 19df5f38-8078-4b93-b008-4b99dec19bc2：title「Для FOR」、Album、first-release-date 2018-06-22、artist-credit「Kate NV」。證據：https://coverartarchive.org/release-group/19df5f38-8078-4b93-b008-4b99dec19bc2/front-250 https://musicbrainz.org/release-group/19df5f38-8078-4b93-b008-4b99dec19bc2",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/19df5f38-8078-4b93-b008-4b99dec19bc2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 34000,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 34000）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "馬林巴、鐘片和合成器，拼出十首莫斯科小品。出自俄羅斯製作人 Kate NV 的這張，被形容成替那座城市配樂的對稱小品：她把首作《Binasu》的歌曲結構拆開重組，副歌整個拿掉，人聲退到後面、多半被切碎。錄音前半在春天、後半在秋天，有些點子出自公寓裡與街上聽到的聲音。曲名都是一個俄文單字配英文對照，其中一首的詞改編自 Kandinsky 的詩。RVNG Intl. 於 2018 年 6 月發出，長度約 37 分鐘。",
+    "sourceUrls": [
+     "https://katenv.bandcamp.com/album/for",
+     "https://musicbrainz.org/release-group/19df5f38-8078-4b93-b008-4b99dec19bc2",
+     "https://en.wikipedia.org/wiki/Kate_NV",
+     "https://pt.ra.co/reviews/22748",
+     "https://en.wikipedia.org/wiki/Dlya_%3D_FOR",
+     "https://www.discogs.com/release/12193399"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d6/54/0f/d6540fc6-4797-c16d-d576-986293e801cb/mzaf_4920423021871223276.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1361341632",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1361341632「Kate NV《для FOR》」：曲目 8/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈yxo EAR〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "L'Acephale",
+   "album": "L'Acéphale",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c4f897ac-a118-41de-91d2-5acef7b2f457",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "black-metal-folk：評論最高分的黑金屬與民謠混合專輯｜⚠ Portland 專案，評論資料少；藝人名取重音正規寫法｜MB release-group c4f897ac-a118-41de-91d2-5acef7b2f457：title「L'Acéphale」、Album、first-release-date 2019-04-19、artist-credit「L'Acephale」。證據：https://coverartarchive.org/release-group/c4f897ac-a118-41de-91d2-5acef7b2f457/front-250 https://musicbrainz.org/release-group/c4f897ac-a118-41de-91d2-5acef7b2f457",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c4f897ac-a118-41de-91d2-5acef7b2f457/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 206,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 206）；主線：冷門軸錨點制：Eisenwald 正常流通（Last.fm 206 偏低）；黑金屬＋實驗長篇，入耳難度 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Georges Bataille 的秘密社團，成了這個團名。來自奧勒岡州波特蘭的 L'Acephale，借的是 Bataille 組織的 Acéphale；歌詞同樣取材 Bataille、Laure 與社會學學院，寫於 2005 至 2013 年間。成員多年在多間錄音室各自錄音再修改，錄音和混音由 Gabriel Espinoza 負責，光混音就花了約六年。德國 Eisenwald 接下這張，2019 年 4 月上市，距上一張隔了十年，新民謠、後工業與旋律黑金屬揉在一起。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/c4f897ac-a118-41de-91d2-5acef7b2f457",
+     "https://musicbrainz.org/artist/12114dc1-2229-402d-8ff8-9de0ea3c3a2f",
+     "https://decibelmagazine.com/2019/03/06/video-premiere-lacephales-sovereignty/",
+     "https://www.angrymetalguy.com/lacephale-lacephale-review/",
+     "https://www.discogs.com/master/1544157"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/85/e1/7d/85e17d98-ce9d-4fc6-be27-4cad94ee6505/mzaf_5761819627664537374.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1731158096",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1731158096「L'Acephale《L'Acéphale》」：曲目 7/7 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Sovereignty (Dieu - Die Sonne Stirbt - Sovereignty)〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lau Nau",
+   "album": "Kuutarha",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d3d6a69c-52e3-3684-adc9-f9aba2ec91a8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "finnish-freak-folk：芬蘭 freak folk 出道代表｜策展無疑點｜MB release-group d3d6a69c-52e3-3684-adc9-f9aba2ec91a8：title「Kuutarha」、Album、first-release-date 2005-02-01、artist-credit「Lau Nau」。證據：https://coverartarchive.org/release-group/d3d6a69c-52e3-3684-adc9-f9aba2ec91a8/front-250 https://musicbrainz.org/release-group/d3d6a69c-52e3-3684-adc9-f9aba2ec91a8",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2005,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d3d6a69c-52e3-3684-adc9-f9aba2ec91a8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 13789,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 13789）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "手繪的封套裡，附了一根小樹枝。Lau Nau 是芬蘭的 Laura Naukkarinen 用的創作名，2004 年她在芬蘭自己發了這張 CDr，封套全是手作。低音提琴、民謠吉他、小提琴、長笛、曼陀林、斑鳩琴與塔布拉鼓等都由她親手彈，幾位友人客串。隔年 2 月，美國廠牌 Locust Music 接手正式出版。〈Kuula〉是兩把原音吉他交織，收尾的〈Sammiolinnut〉則是一陣自由的金屬碰撞聲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1046387",
+     "https://www.discogs.com/release/2726141",
+     "https://en.wikipedia.org/wiki/Lau_Nau",
+     "https://ink19.com/2005/04/magazine/music-reviews/lhljox-lau-nau",
+     "https://launau.com/2010/03/04/nukkuu/",
+     "https://stereogum.com/10503/quit_your_day_job_lau_nau/interviews/quit-your-day-job",
+     "https://musicbrainz.org/release-group/d3d6a69c-52e3-3684-adc9-f9aba2ec91a8"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "Apple 藝人目錄自 2008《Nukkuu》起，無 2005 Locust《Kuutarha》。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lau Nau",
+   "album": "Nukkuu",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f0e2aa9d-ee47-315a-a2c3-66cd9b546405",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "finnish-freak-folk：第二張，更迷幻的睡眠系民謠｜策展無疑點｜MB release-group f0e2aa9d-ee47-315a-a2c3-66cd9b546405：title「Nukkuu」、Album、first-release-date 2008-05-14、artist-credit「Lau Nau」。證據：https://coverartarchive.org/release-group/f0e2aa9d-ee47-315a-a2c3-66cd9b546405/front-250 https://musicbrainz.org/release-group/f0e2aa9d-ee47-315a-a2c3-66cd9b546405",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f0e2aa9d-ee47-315a-a2c3-66cd9b546405/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 19411,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/4/4（Last.fm listeners 19411）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "趁兒子睡著的空檔，她在閣樓與空房間裡錄音。芬蘭迷幻民謠音樂人 Lau Nau 那時搬到鄉間、有了新家庭，廠牌因此稱它是一張變動之作。混音和錄音都由她自己動手，演奏只有她和 Antti Tolvi，第一首〈Lue Kartalta〉的前半則是在 WFMU 電台錄下。盤名在芬蘭語裡是「睡著」，聲音延續首作，情緒更安定，像一串歪斜的搖籃曲。發行方 Locust Music 選定 2008 年 5 月出片，芬蘭版授權給 Fonal 同日出版。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/162873",
+     "https://launau.com/2010/03/04/nukkuu/",
+     "https://www.discogs.com/release/1339354",
+     "https://stereogum.com/10503/quit_your_day_job_lau_nau/interviews/quit-your-day-job",
+     "https://fi.wikipedia.org/wiki/Lau_Nau",
+     "https://musicbrainz.org/release-group/f0e2aa9d-ee47-315a-a2c3-66cd9b546405"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/57/45/ca/5745cab3-3eb1-4164-3d66-359abcc250f6/mzaf_8901446545531642639.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "827720641",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 827720641「Lau Nau《Nukkuu》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Lue kartalta〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Luke Abbott",
+   "album": "Holkham Drones",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "291df994-b922-4a47-b08e-40a6afef8339",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "uk-electronica：英國電子代表作，Border Community 經典｜策展無疑點｜MB release-group 291df994-b922-4a47-b08e-40a6afef8339：title「Holkham Drones」、Album、first-release-date 2010-08-23、artist-credit「Luke Abbott」。證據：https://coverartarchive.org/release-group/291df994-b922-4a47-b08e-40a6afef8339/front-250 https://musicbrainz.org/release-group/291df994-b922-4a47-b08e-40a6afef8339",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/291df994-b922-4a47-b08e-40a6afef8339/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 45995,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 45995）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "封面是 1979 年一部業餘影片的畫面。Luke Abbott 是 James Holden 的廠牌 Border Community 旗下製作人，那部片是 J. Ron Chapman 的《The Magic Sea》，由東安格利亞電影資料館提供。他從 2008 年起在該廠發 EP，首張全長作品要到 2010 年 8 月才問市。作曲、演奏、製作都不假他人，合成器琶音聽來像鳥鳴，底下配著簡單的機器鼓，速度時有變化。樂評說它的根扎在鄉間景色裡。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/291df994-b922-4a47-b08e-40a6afef8339",
+     "https://en.wikipedia.org/wiki/Luke_Abbott",
+     "https://www.discogs.com/release/2423802",
+     "https://ra.co/reviews/7896",
+     "https://www.drownedinsound.org/archive-album-review-luke-abbott-holkham-drones-4140754/",
+     "https://www.discogs.com/master/269257"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5a/67/5e/5a675e62-7745-003d-d6dd-fada989b2715/mzaf_11693767647421861457.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "385276111",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 385276111「Luke Abbott《Holkham Drones》」：曲目 12/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈2nd 5th Heavy〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mareux",
+   "album": "Lovers From the Past",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6152c871-d4e4-43d6-bea3-c7df31a798fe",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "darkwave-synth：洛杉磯暗潮合成流行的首張正規專輯，收錄代表曲〈The Perfect Girl〉｜策展無疑點｜MB release-group 6152c871-d4e4-43d6-bea3-c7df31a798fe：title「Lovers From The Past」、Album、first-release-date 2023-05-05、artist-credit「Mareux」。證據：https://music.apple.com/us/album/lovers-from-the-past/1676355334 https://musicbrainz.org/release-group/6152c871-d4e4-43d6-bea3-c7df31a798fe",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1676355334",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e5/c8/ce/e5c8cefb-c189-a4a7-7117-c88486cc7e41/093624856276.jpg/600x600bb.jpg",
+    "note": "CAA 無圖；取 Apple us 1676355334《Lovers From The Past》官方封面（曲目 9/9 已核）；主線 2026-10-30 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 367422,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 367422）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "停下音樂的那幾年，他去做醫療工作。Mareux 是住洛杉磯的伊朗裔美國音樂人，2013 年發過 EP，2015 至 2018 年轉往醫療相關領域，2020 年還當過 EMT。回到音樂後，首張正規專輯在 2023 年 5 月才出，發行的是 Revolution Records，走 darkwave、coldwave 與 synth-pop 的路子。",
+    "sourceUrls": [
+     "https://music.apple.com/us/album/lovers-from-the-past/1676355334",
+     "https://www.discogs.com/master/3340054",
+     "https://en.wikipedia.org/wiki/Mareux",
+     "https://musicbrainz.org/artist/09095919-c549-4f33-9555-70df9dd941e1",
+     "https://musicbrainz.org/release-group/6152c871-d4e4-43d6-bea3-c7df31a798fe"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/9d/aa/999daa88-89f2-b9aa-9846-b1d59c22b670/mzaf_4045445119074286410.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1676355334",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1676355334「Mareux《Lovers From The Past》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Night Vision〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Minotaur Shock",
+   "album": "Maritime",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "779960d9-7b54-3c54-a387-686e47d818fd",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "uk-electronica：David Edwards 在 4AD 的出道長片，英倫 IDM／電子民謠的代表作｜策展無疑點｜MB release-group 779960d9-7b54-3c54-a387-686e47d818fd：title「Maritime」、Album、first-release-date 2005-06-13、artist-credit「Minotaur Shock」。證據：https://music.apple.com/us/album/maritime/77344346 https://musicbrainz.org/release-group/779960d9-7b54-3c54-a387-686e47d818fd",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2005,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/779960d9-7b54-3c54-a387-686e47d818fd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 24726,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 24726）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "大半在家錄成，母帶才送進 Abbey Road。幕後是布里斯托的 David Edwards，2003 至 2005 年間一人寫曲、編曲、製作，樂器與編程也自己包下。拉小提琴的 Megan Childs 同樣是在她家錄好聲部再交來。4AD 在 2005 年 6 月讓它上市，也是他在 4AD 出的頭一張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/779960d9-7b54-3c54-a387-686e47d818fd",
+     "https://en.wikipedia.org/wiki/Minotaur_Shock",
+     "https://www.discogs.com/release/474887",
+     "https://www.discogs.com/master/95012"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/0b/91/62/0b9162bf-10a0-31a6-8562-00d1855b45f7/mzaf_8776196272688348555.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "77344346",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 77344346「Minotaur Shock《Maritime》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Muesli〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Monoton",
+   "album": "Monotonprodukt 07",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9e779878-3ccc-4868-8939-49b90fa65363",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "vienna-minimal-synth：維也納 Konrad Becker 的極簡合成器／工業代表作，後來重發成經典｜策展無疑點｜MB release-group 9e779878-3ccc-4868-8939-49b90fa65363：title「Monotonprodukt 07」、Album、first-release-date 1982、artist-credit「Monoton」。證據：https://coverartarchive.org/release-group/9e779878-3ccc-4868-8939-49b90fa65363/front-250 https://musicbrainz.org/release-group/9e779878-3ccc-4868-8939-49b90fa65363 https://www.discogs.com/artist/18328-Monoton",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "source": "caa",
+    "url": "https://coverartarchive.org/release/40e744ed-8d6b-40ef-bf24-cf292031963a/13037353622-500.jpg",
+    "note": "CAA release-group front 原圖 live-check 回 500；改取 release 40e744ed 的 500px 縮圖（image 13037353622）；主線 2026-10-30 目視與盤名相符（MONOTON／MONOTONPRODUKT 07）。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 2316,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2316）；主線：冷門軸錨點制：1982 自家出版雙 LP 限量 500 套，2000 年代再發進串流（20y++）；極簡電子實驗，入耳難度 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "曲名寫著鋸齒波、短波電報與赫茲圓舞曲。Monoton 是維也納藝術家 Konrad Becker 的實驗電子專案，這套雙 LP 由專案自己在 1982 年出版，限量 500 套，製作與作曲都記在 Becker 名下。16 首德文曲名多取自聲音與物理名詞，風格抽象、極簡。加拿大的 Oral 到 2003 年重發成 CD，曲名改成了英文。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/889713",
+     "https://musicbrainz.org/artist/510718e0-d39b-449b-b063-9acab0711aa6",
+     "https://en.wikipedia.org/wiki/Konrad_Becker",
+     "https://www.discogs.com/master/141452",
+     "https://www.discogs.com/release/171618",
+     "https://www.discogs.com/release/1910980",
+     "https://musicbrainz.org/release-group/9e779878-3ccc-4868-8939-49b90fa65363"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/74/b5/45/74b5457f-3876-5e26-b0d1-448ab3cbb5ed/mzaf_13644177958850293867.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "268995668",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 268995668「Monoton《Monotonprodukt 07 20y++》」：《Monotonprodukt 07 20y++》再版，16 軌與 MB 原盤逐軌同（Apple 用英譯曲名），主線人工核對，取第 1 軌〈Dancing & Singing〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Orchestra of Constant Distress",
+   "album": "Concerns",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d26da9f8-b780-4a15-add0-93211956ddee",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "swedish-doom：瑞典黑暗極簡金屬超級組合，Spectrum Culture 評論的最新代表作｜策展無疑點｜MB release-group d26da9f8-b780-4a15-add0-93211956ddee：title「Concerns」、Album、first-release-date 2021-07-30、artist-credit「Orchestra of Constant Distress」。證據：https://spectrumculture.com/2021/10/03/orchestra-of-constant-distress-concerns-review/ https://coverartarchive.org/release-group/d26da9f8-b780-4a15-add0-93211956ddee/front-250 https://musicbrainz.org/release-group/d26da9f8-b780-4a15-add0-93211956ddee",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "metal",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d26da9f8-b780-4a15-add0-93211956ddee/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 59,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 59）；主線：冷門軸錨點制：瑞典地下噪音搖滾、小廠發行、未進 Apple；噪音與重複，入耳難度 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "四個瑞典地下樂團老手，開場就把一個重 riff 反覆到底。吉他手 Joachim Nordwall 與 Henrik Rylander 同屬 Skull Defekts，鼓手 Anders Bryngelsson 待過 Brainbombs，貝斯則是 Henrik Andersson。那首開場曲叫 Consistence，沉重的吉他就此一層層反覆疊上去，定下整張的做法。這支瑞典器樂四人組以此交出第四張，2021 年 7 月 30 日經 Riot Season 發行。",
+    "sourceUrls": [
+     "https://spectrumculture.com/2021/10/03/orchestra-of-constant-distress-concerns-review/",
+     "https://www.discogs.com/release/19655611",
+     "https://thequietus.com/?p=30297",
+     "https://api.discogs.com/artists/5624240/releases",
+     "https://musicbrainz.org/release-group/d26da9f8-b780-4a15-add0-93211956ddee"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "Apple 只有 2017–2019 Brainbombs 四張，無 2021《Concerns》。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Peggy Gou",
+   "album": "I Hear You",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "cb7c65af-9ead-4b6c-bfac-87e8736d2cab",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "kr-house：首張正規錄音室專輯，把她的 house 招牌推到主流｜策展無疑點｜MB release-group cb7c65af-9ead-4b6c-bfac-87e8736d2cab：title「I Hear You」、Album、first-release-date 2024-06-07、artist-credit「Peggy Gou」。證據：https://music.apple.com/us/album/i-hear-you/1735512900 https://musicbrainz.org/release-group/cb7c65af-9ead-4b6c-bfac-87e8736d2cab",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cb7c65af-9ead-4b6c-bfac-87e8736d2cab/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 235591,
+    "source": "worker /album-rating＋主線入耳難度校正",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 235591）；主線：旋律明確、好入耳（新古典鋼琴／流行 house），入耳難度 2"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "成名六年後，這位韓國 DJ 才發出第一張長片。生於 1991 年仁川的 Peggy Gou 現居柏林，當年從倫敦讀時尚轉做 DJ。讓她成名的是 2018 年一張 EP 裡的〈It Makes You Forget (Itgehane)〉，那首歌拿下 AIM 獎的年度獨立單曲。首張錄音室專輯 2024 年 6 月 7 日在 XL Recordings 發行，她把取材指向 1990 年代 house。封面那片斜角鏡面由 Olafur Eliasson 設計。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Peggy_Gou",
+     "https://en.wikipedia.org/wiki/I_Hear_You_(Peggy_Gou_album)",
+     "https://www.clashmusic.com/reviews/peggy-gou-i-hear-you/",
+     "https://diymag.com/review/album/peggy-gou-i-hear-you",
+     "https://musicbrainz.org/release-group/cb7c65af-9ead-4b6c-bfac-87e8736d2cab"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/18/22/a8/1822a831-c3a9-033f-64b1-56a1fe11d85f/mzaf_6114279521205346860.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1766725549",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1766725549「Peggy Gou《I Hear You – Bonus Tracks Edition》」：曲目 14/14 對上 MB 原盤（Apple 共 15 軌），取第 1 軌〈Your Art〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Photay",
+   "album": "Onism",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "8063670b-1bd7-4ef8-a239-b5c80548462d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "downtempo-ambient：Evan Shornstein 的首張正式長片，採樣與合成器交織的招牌作｜策展無疑點｜MB release-group 8063670b-1bd7-4ef8-a239-b5c80548462d：title「Onism」、Album、first-release-date 2017-08-11、artist-credit「Photay」。證據：https://music.apple.com/us/album/onism/1254524399 https://musicbrainz.org/release-group/8063670b-1bd7-4ef8-a239-b5c80548462d",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8063670b-1bd7-4ef8-a239-b5c80548462d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 66596,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 66596）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "取經對象是 1970 年代用合成器配樂的自然紀錄片。鼓手出身的 Evan Shornstein 以 Photay 為名，來自 Woodstock，學生時期曾遠赴幾內亞學鼓。那類片子當年藉電子聲響傳達環境威脅，他也把氣候變遷放進主題。《Onism》是他首張完整長度專輯，2017 年 8 月 11 日，透過 Astro Nautico 推出，寫作、製作與錄音都一人完成。〈The Everyday Push〉裡他親手彈非洲木琴 balafon，另有薩克斯風與大提琴客席。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Photay",
+     "https://photay.bandcamp.com/album/onism-2",
+     "https://www.discogs.com/release/10692866",
+     "https://soundcloud.com/astronautico/reconstruct",
+     "https://www.discogs.com/release/11871184",
+     "https://musicbrainz.org/release-group/8063670b-1bd7-4ef8-a239-b5c80548462d"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/87/72/018772eb-c352-6f79-584c-9adc52994ded/mzaf_17629831854544005134.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1254524399",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1254524399「Photay《Onism》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Screens〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Planningtorock",
+   "album": "W",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "22030514-0952-4a11-909c-a4560e1e7dfd",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "art-pop：Janine Rostron 在 DFA 的代表作，酷兒前衛電子流行的里程碑｜策展無疑點｜MB release-group 22030514-0952-4a11-909c-a4560e1e7dfd：title「W」、Album、first-release-date 2011-05-16、artist-credit「Planningtorock」。證據：https://music.apple.com/us/album/w/1547928995 https://musicbrainz.org/release-group/22030514-0952-4a11-909c-a4560e1e7dfd",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/22030514-0952-4a11-909c-a4560e1e7dfd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 65188,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 65188）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "人聲被處理得非男非女，像從深谷裡傳出來。Planningtorock 是英國 Bolton 出身的 Jam Rostron 的計畫，本作發行時署名還是 Janine Rostron，2012 至 2013 年間才改名 Jam。照 Rostron 的說法，變聲是用來一邊玩性別、一邊傳達歌裡的情感。Rostron 個人錄音室作品中的第二張交給 DFA，2011 年 5 月上架，錄音分散在柏林、紐約、倫敦與冰島的 Akureyri。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Planningtorock",
+     "https://en.wikipedia.org/wiki/W_(Planningtorock_album)",
+     "https://theartsdesk.com/node/3694",
+     "https://ra.co/reviews/9065",
+     "https://musicbrainz.org/release-group/22030514-0952-4a11-909c-a4560e1e7dfd"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0f/8d/5c/0f8d5cee-fe17-1fae-69c4-5adb21eab90b/mzaf_16071903431931360301.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "6774235674",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 6774235674「Planningtorock《W》」：DFA 原盤 12 軌（MB 16 軌含後加曲），主線核對 12/12，取第 1 軌〈Doorway〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Rich Ruth",
+   "album": "I Survived, It's Over",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "03f776ca-3274-4133-b4db-0cefad1af332",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "nashville-instrumental：Nashville 吉他手 Michael Ruth 在 Third Man 的突破作，器樂靈性爵士／ambient 吉他｜策展無疑點｜MB release-group 03f776ca-3274-4133-b4db-0cefad1af332：title「I Survived, It's Over」、Album、first-release-date 2022-08-12、artist-credit「Rich Ruth」。證據：https://musicbrainz.org/release-group/03f776ca-3274-4133-b4db-0cefad1af332 https://coverartarchive.org/release-group/03f776ca-3274-4133-b4db-0cefad1af332/front-250",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/03f776ca-3274-4133-b4db-0cefad1af332/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 6507,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 6507）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "錄音那一年，Nashville 北部他家一帶遭龍捲風襲擊。長年隨樂團巡演的 Michael Ruth 在 2018 年退下來，回家做 ambient，Rich Ruth 就是他的計畫，這已是第三張。錄音落在 2020 年疫情期間，正逢那場風災。他先把自己的反覆合成器段落錄好，再讓鼓、風琴、踏板鋼棒吉他、長笛與薩克斯風樂手即興疊上去。2022 年 8 月 12 日由 Third Man 發行，Tortoise 的 John McEntire 負責混音。",
+    "sourceUrls": [
+     "https://www.broadwayworld.com/bwwmusic/article/Rich-Ruth-Shares-First-Track-From-Upcoming-Album-20220511",
+     "https://www.discogs.com/release/24172712",
+     "https://ravensingstheblues.com/?p=18343",
+     "https://musicbrainz.org/release-group/03f776ca-3274-4133-b4db-0cefad1af332"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3e/74/4b/3e744b9a-81d7-bf57-4bec-fe0f27745f7e/mzaf_3360285524372095973.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1854869952",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1854869952「Rich Ruth《I Survived, It's Over》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Taken Back〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ruxpin",
+   "album": "Avalon",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "50e1c31f-f00c-396c-ab1f-c6ceafe026a2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "downtempo-ambient：冰島 Ruxpin 的下行電子代表作，後於 2018 年重發｜策展無疑點｜MB release-group 50e1c31f-f00c-396c-ab1f-c6ceafe026a2：title「Avalon」、Album、first-release-date 2003-11、artist-credit「Ruxpin」。證據：https://music.apple.com/us/album/avalon/75802602 https://coverartarchive.org/release-group/50e1c31f-f00c-396c-ab1f-c6ceafe026a2/front-250 https://musicbrainz.org/release-group/50e1c31f-f00c-396c-ab1f-c6ceafe026a2",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2003,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/50e1c31f-f00c-396c-ab1f-c6ceafe026a2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 14355,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 14355）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "盤名取自亞瑟王死後前往的那座西方海上樂土。冰島人 Jónas Thor Gudmundsson 14 歲就開始做電子樂，Ruxpin 是他的藝名。那座島出自凱爾特傳說。德國 Elektrolux 於 2003 年以 CD 發行，共十四首，節拍直白，招牌是機器人般的 vocoder 人聲，底下鋪著合成器。2018 年 4 月 24 日，Sun Sea Sky 推出重新母帶版，它才首度壓成黑膠，限量 200 張。",
+    "sourceUrls": [
+     "https://n5md.com/artist/Ruxpin",
+     "https://www.discogs.com/release/204756",
+     "https://ruxpin.bandcamp.com/album/avalon",
+     "https://igloomag.com/reviews/ruxpin-avalon-remastered-sun-sea-sky",
+     "https://musicbrainz.org/release-group/50e1c31f-f00c-396c-ab1f-c6ceafe026a2"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/29/ca/97/29ca97d8-86aa-967f-13a7-97932f1698d8/mzaf_14169466698280319618.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1377048832",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1377048832「Ruxpin《Avalon (Remastered)》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈First Contact〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Saint Abdullah",
+   "album": "Stars Have Eyes",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3a7e6426-7b3f-4638-8caf-c57377539a1f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "experimental-dub：伊朗裔布魯克林兄弟檔，Bandcamp Daily 專題報導的成名作｜策展無疑點｜MB release-group 3a7e6426-7b3f-4638-8caf-c57377539a1f：title「Stars Have Eyes」、Album、first-release-date 2018-04-06、artist-credit「Saint Abdullah」。證據：https://daily.bandcamp.com/features/saint-abdullah-interview https://coverartarchive.org/release-group/3a7e6426-7b3f-4638-8caf-c57377539a1f/front-250 https://musicbrainz.org/release-group/3a7e6426-7b3f-4638-8caf-c57377539a1f",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3a7e6426-7b3f-4638-8caf-c57377539a1f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 1296,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1296）；主線：冷門軸錨點制：小廠流通、已進串流；取樣拼貼與噪音段，入耳難度 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "開場曲長 17 分鐘，錄進了德黑蘭的車流與人聲。Mohammad 與 Mehdi Mehrabani-Yeganeh 兩兄弟生於伊朗，以 Saint Abdullah 為名，希望外界把兩人當成一個集體。開場那首就是〈Taxi Ride Through Tehran〉，帶節拍與工業式節奏。兩兄弟第二度出片，由 Purple Tape Pedigree 出品，2018 年 4 月 6 日以卡帶問世。〈hy.poc.risy〉則克制地切進 1988 年 Halabja 毒氣攻擊的新聞片段。",
+    "sourceUrls": [
+     "https://daily.bandcamp.com/features/saint-abdullah-interview",
+     "https://www.discogs.com/release/11855190",
+     "https://popmatters.com/saint-abdullah-mechanical-flirtations-2639135758.html",
+     "https://www.discogs.com/release/11825111",
+     "https://musicbrainz.org/release-group/3a7e6426-7b3f-4638-8caf-c57377539a1f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d7/af/b7/d7afb77b-ace8-8fa9-05a5-d651fe6e1b8d/mzaf_15450943596822051054.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1356859694",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1356859694「Saint Abdullah《Stars Have Eyes》」：曲目 5/5 對上 MB 原盤（Apple 共 5 軌），取第 1 軌〈Taxi Ride Through Tehran〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Shinjuku Thief",
+   "album": "Bloody Tourist",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f938281c-ce29-3da3-8fa8-0d800eca3e43",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "dark-cinematic：Darrin Verhagen 的 Shinjuku Thief 早期名作，維基有專條，暗黑電影取樣的代表｜策展無疑點｜MB release-group f938281c-ce29-3da3-8fa8-0d800eca3e43：title「Bloody Tourist」、Album、first-release-date 1992、artist-credit「Shinjuku Thief」。證據：https://en.wikipedia.org/wiki/Bloody_Tourist https://coverartarchive.org/release-group/f938281c-ce29-3da3-8fa8-0d800eca3e43/front-250 https://musicbrainz.org/release-group/f938281c-ce29-3da3-8fa8-0d800eca3e43",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f938281c-ce29-3da3-8fa8-0d800eca3e43/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 5544,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 5544）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "團名借自大島渚 1969 年的電影《新宿泥棒日記》。墨爾本的 Darrin Verhagen 與 Charles、François Tétaz 合組這支實驗三人組。首作錄於 1991 年 7 至 12 月，隔年交澳洲廠牌 Extreme 發行。編制有 shakuhachi、次中音薩克斯風、貝斯、吉他與程式。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Darrin_Verhagen",
+     "https://en.wikipedia.org/wiki/Bloody_Tourist",
+     "https://www.discogs.com/release/124161",
+     "https://en.wikipedia.org/wiki/Extreme_Records",
+     "https://soundcharts.com/ja/artist/11e81bd2-c52a-6d2a-bf7c-a0369fe50396",
+     "https://www.discogs.com/release/2688824",
+     "https://musicbrainz.org/release-group/f938281c-ce29-3da3-8fa8-0d800eca3e43"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "Apple 藝人目錄有《The Scribbler》與 Witch 三部曲，無 1992《Bloody Tourist》。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Throwing Snow",
+   "album": "Mosaic",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "96a8a9ec-5f4e-49fd-8c32-d6f5b094707f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "uk-bass：Ross Tones 在 Houndstooth 的首張長片，英倫 bass 與 techno 的代表｜策展無疑點｜MB release-group 96a8a9ec-5f4e-49fd-8c32-d6f5b094707f：title「Mosaic」、Album、first-release-date 2014-06-02、artist-credit「Throwing Snow」。證據：https://music.apple.com/us/album/mosaic/1782119250 https://musicbrainz.org/release-group/96a8a9ec-5f4e-49fd-8c32-d6f5b094707f",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/96a8a9ec-5f4e-49fd-8c32-d6f5b094707f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 55103,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 55103）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "超過 90 首曲子，最後刪到只剩 11 首。Alight、Snow Ghosts 與 Throwing Snow 都是英國的 Ross Tones 用的名義，這張掛的是最後一個。刪完的成品剩約 50 分鐘，2014 年 6 月交到 fabric 夜店旗下的 Houndstooth 手上發行，他說這是為合約從零寫起的首張長篇。音樂把他過去受 dubstep、drum and bass 的影響和流行拼在一起，人聲客席有 Adda Kaleh、Kid A 等人。",
+    "sourceUrls": [
+     "https://factmag.com/2014/07/08/throwing-snow-mosaic-review",
+     "https://crackmagazine.net/article/long-reads/throwing-snow-2/2",
+     "https://musicbrainz.org/release/5865d263-0e59-4f56-b4b7-06c9f58d5b76",
+     "https://popmatters.com/182139-throwing-snow-mosaic-2495656554.html",
+     "https://musicbrainz.org/release-group/96a8a9ec-5f4e-49fd-8c32-d6f5b094707f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5d/4a/82/5d4a82da-16f7-3ebf-ce67-835b3b99418a/mzaf_13532115578402186690.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1782119250",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1782119250「Throwing Snow《Mosaic》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Avarice〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tomaga",
+   "album": "Intimate Immensity",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c0747270-d2c5-4e7e-b11f-e61154636ac9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "experimental-duo：Valentina Magaletti 與 Tom Relleen 的終章，The Quietus 專文評論｜策展無疑點｜MB release-group c0747270-d2c5-4e7e-b11f-e61154636ac9：title「Intimate Immensity」、Album、first-release-date 2021-03-26、artist-credit「Tomaga」。證據：https://thequietus.com/?p=29760 https://coverartarchive.org/release-group/c0747270-d2c5-4e7e-b11f-e61154636ac9/front-250 https://musicbrainz.org/release-group/c0747270-d2c5-4e7e-b11f-e61154636ac9",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c0747270-d2c5-4e7e-b11f-e61154636ac9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 41715,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 41715）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "趕在 Tom Relleen 生命最後幾天，兩人完成了母帶。Tomaga 是倫敦的實驗二人組，Relleen 負責低音與電子，Valentina Magaletti 打鼓。她後來提到，他們加緊作業，是因為這張的發行對 Relleen 很重要。Relleen 過世是在 2020 年 8 月，這成了兩人的最後一張專輯，由 Hands in the Dark 發行，2021 年 3 月 26 日問世。多數曲子由 Magaletti 的鼓推著走。",
+    "sourceUrls": [
+     "https://handsinthedarkrecords.bandcamp.com/album/intimate-immensity",
+     "https://thequietus.com/?p=29760",
+     "https://musicbrainz.org/release-group/c0747270-d2c5-4e7e-b11f-e61154636ac9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/aa/24/83/aa24838d-b40b-2f8c-c5ac-274409bbcb23/mzaf_2595867166582824521.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1548994338",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1548994338「Tomaga《Intimate Immensity》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Idioma〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Vapour Theories",
+   "album": "Celestial Scuzz",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "be208724-fe8a-4a16-98a2-c80de4fd57d5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "experimental-lofi：Vapour Theories 唯一正規長片，低傳真迷幻電子｜策展無疑點｜MB release-group be208724-fe8a-4a16-98a2-c80de4fd57d5：title「Celestial Scuzz」、Album、first-release-date 2021-02-22、artist-credit「Vapour Theories」。證據：https://music.apple.com/us/album/celestial-scuzz/1668034776 https://musicbrainz.org/release-group/be208724-fe8a-4a16-98a2-c80de4fd57d5",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/be208724-fe8a-4a16-98a2-c80de4fd57d5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 672,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 672）；主線：冷門軸錨點制：Fire Records 正常流通；吉他即興長篇持續音，入耳難度 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "幾個小時的即興合奏，剪成 5 首、37 分鐘。Vapour Theories 出自費城迷幻樂團 Bardo Pond，是 John 與 Michael Gibbons 這對吉他手兄弟的副專案。開場〈Unoccupied Blues〉長 13 分鐘。由 Fire Records 在 2021 年 2 月問市，收了翻玩 Eno〈The Big Ship〉的版本。",
+    "sourceUrls": [
+     "https://bardopondmusic.bandcamp.com/album/celestial-scuzz",
+     "https://en.wikipedia.org/wiki/Bardo_Pond",
+     "https://musicbrainz.org/release/18ebc717-620a-48e2-90c6-e7d7cf5ab7fb",
+     "https://musicbrainz.org/release-group/be208724-fe8a-4a16-98a2-c80de4fd57d5"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/5c/9e/0d/5c9e0d76-0055-d8f7-6cf9-18e05d05acc1/mzaf_11047849143772895659.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1668034776",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1668034776「Vapour Theories《Celestial Scuzz》」：曲目 5/5 對上 MB 原盤（Apple 共 5 軌），取第 1 軌〈Unoccupied Blues〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Yaeji",
+   "album": "With a Hammer",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "75cf3936-f661-4dc5-8796-d768949457b8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "kr-house：Yaeji 首張正規錄音室專輯，韓英雙語 house 與流行的成熟之作｜策展無疑點｜MB release-group 75cf3936-f661-4dc5-8796-d768949457b8：title「With a Hammer」、Album、first-release-date 2023-04-07、artist-credit「Yaeji」。證據：https://music.apple.com/us/album/with-a-hammer/1654198968 https://musicbrainz.org/release-group/75cf3936-f661-4dc5-8796-d768949457b8",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/75cf3936-f661-4dc5-8796-d768949457b8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 124117,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 124117）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "紐約皇后區出生的 Yaeji，歌詞英語韓語並用。她 1993 年生在 Flushing，三年級前搬到南韓，先當了兩年 DJ，才學 Ableton 做音樂。2020 年她在 XL 推出混音帶《What We Drew》，錄音室首作於 2023 年 4 月 7 日交由 XL 發行。製作人除了她本人，還有 Enayet、Loraine James 與 K Wata。樂評形容它輕盈地混合 synth-pop、爵士、techno 與 ambient。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Yaeji",
+     "https://en.wikipedia.org/wiki/With_a_Hammer",
+     "https://musicbrainz.org/release/912c89a9-b1ea-4447-9ddb-7c8fb3815b7f",
+     "https://musicbrainz.org/release-group/75cf3936-f661-4dc5-8796-d768949457b8"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c3/3d/b1/c33db179-abde-4260-bbea-971be940e712/mzaf_5546753514070484681.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1654198968",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1654198968「Yaeji《With A Hammer》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Submerge FM〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Yung Bae",
+   "album": "Bae 5",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "de88e3a7-78cd-4e89-aaca-2ef0a5f8b00a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "future-funk：Bandcamp Daily 專題報導，future funk 銷量與口碑最高的一張｜策展無疑點｜MB release-group de88e3a7-78cd-4e89-aaca-2ef0a5f8b00a：title「Bae 5」、Album、first-release-date 2019-06-28、artist-credit「YUNG BAE」。證據：https://daily.bandcamp.com/2019/04/24/yung-bae-bae-5-feature https://coverartarchive.org/release-group/de88e3a7-78cd-4e89-aaca-2ef0a5f8b00a/front-250 https://musicbrainz.org/release-group/de88e3a7-78cd-4e89-aaca-2ef0a5f8b00a",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "funk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/de88e3a7-78cd-4e89-aaca-2ef0a5f8b00a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 139729,
+    "source": "worker /album-rating＋主線入耳難度校正",
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 139729）；主線：旋律明確、好入耳（新古典鋼琴／流行 house），入耳難度 2"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "前四張靠取樣拼成，第五張換上兒童合唱與管弦樂。Yung Bae 本名 Dallas Michael Cotton，在奧勒岡州波特蘭起步，後來到洛杉磯發展。早期的 Bae 系列取樣迪斯可、放克、靈魂與復古日本流行，這張則轉向原創錄音，含現場樂隊，他的目標是做出自己的 future funk。系列始於 2014 年，2019 年的《Bae 5》編為第五號，距前作兩年，是生涯最長的空窗，唱片自行出版。收錄的〈Bad Boy〉是他簽下 Arista Records 後的第一支單曲。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Yung_Bae",
+     "https://daily.bandcamp.com/2019/04/24/yung-bae-bae-5-feature",
+     "https://vaporwave.wiki/wiki/Bae_5",
+     "https://scratchedvinyl.com/reviews/yung-bae-bae-5/",
+     "https://musicbrainz.org/release-group/de88e3a7-78cd-4e89-aaca-2ef0a5f8b00a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/37/67/a6/3767a69c-771b-9039-fcd7-0a8bdcf99c0e/mzaf_12543044638140102306.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:23:58Z",
+    "appleCollectionId": "1643027210",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1643027210「Yung Bae《Bae 5》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Pacific Standard〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}
