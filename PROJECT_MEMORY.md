@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-30｜dip-vinyl-shop｜藝人介紹 ar-d-211（sf11 冷門電子／lo-fi／小廠牌）＋ar-d-212（sf12 嘻哈／R&B／靈魂／流行／以色列）上架 50 位
+
+- **ar-d-211**：24 位 → 上架 22（7 full、15 thin），skipped 2（ERISTHEPLANET、Mindchatter：素材不到 thin 門檻）。審稿修 3 位（Offset 主詞與字數、Super Besse 語病、NoSo 句構）。維基預抓錯頁 4 條作廢。
+- **ar-d-212**：30 位 → 上架 28（13 full、15 thin），skipped 2（Noblemen 無聲音素材；激膚寫作稿主體是冷資訊，主線撤稿）。審稿修 2 位（Omar Apollo 刪推論句；Dudu Tassa 刪單源 ACUM 獎與年代）。Olivia Dean 2026 葛萊美最佳新人＋全英四項以 WebSearch 核實。
+- 補洞 WebSearch：211 每位 ≤3、212 每位 ≤2。藝人介紹 6,281 → 6,331（併 main 後以重跑結果為準）；pubIssues 新增 13 條。
+- **主要檔案**：`desc-tools/batches/artist/{facts,research,output}/ar-d-21{1,2}-*`、`progress.json`、`data/artist-intros/*`、`audits/ARTIST-PUB-ISSUES.md`、`batch-progress/artist-intro/ar-c-rulings.md`、`batch-progress/spotify-follow-20261030/PLAN.md`。
+- **驗證**：qa-artist gap／out 兩批 0 處（僅剩 skipped 的「缺 N 位」與 NUUAMM「国」團名原字）；build-artist-intros 338 份成品、6,331 位、64 分片。
+
 ### 2026-10-30｜dip-vinyl-shop｜Spotify 追蹤藝人補卡池 sf11（冷門／身分待查）＋sf12（嘻哈／R&B／靈魂／流行／以色列）上線 59 張
 
 - **改動**：照 `batch-progress/spotify-follow-20261030/PLAN.md` 跑完兩批（策展 4、研究 5×2、鉤子 2×2、寫作 2×2、主線審稿、試聽、封面 live-check、三軸、頂點、寫入、子曲風、情緒評分、藝人介紹名冊）。

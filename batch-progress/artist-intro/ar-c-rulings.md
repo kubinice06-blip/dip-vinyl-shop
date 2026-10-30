@@ -1070,3 +1070,16 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 身分：維基預抓錯頁作廢：Moin（問候語）、Natural Magic（概念條目）、Space Raiders（零食）、Super Besse（滑雪場）。NUUAMM QA「簡體字 国」是團名「踊ってばかりの国」原字，保留。
 - 不寫：記號士 Blow「黑浪潮代表」引介語、鼓手離團年；ULTRA SUNN 與 Front 242 同台次數；特撮的離筋少年份；Offset 解散年（單源）。
 - 已上線專輯簡介待修（pubIssues）：記號士《第一個記號》應為 re: public records 發行（「海邊的卡夫卡」是專訪地點）；Skip Skip Ben Ben「起源台北」；Space Raiders「Fatboy Slim 經營的 Skint」；Super Besse 三人／二人編制。
+
+## ar-d-212（2026-10-30，Spotify 補卡 sf12＝嘻哈、R&B、靈魂、流行、以色列）
+
+- 30 位 → 28 位上架（13 full、15 thin），2 位不寫：Noblemen（只有成員名單與發行目錄，聲音格 none）、My Skin Against Your Skin 激膚（寫作層交了 146 字，但聲音只剩一篇 2012 演出評論的舞台描述，主體是陣容與一場演出的冷資訊，未達 thin 門檻，主線撤稿；比照 ar-d-201 烏賊紳士）。補洞 WebSearch 每位 ≤2 次。
+- 主線審稿修 2 位：Omar Apollo 刪「從此打開聽眾」（由單源串流數字推出的概括）；Dudu Tassa 刪「ACUM 年度作曲家獎」（獎項只有維基一源）、刪 Al-Kuwaiti 兄弟「1920 年代起」（單源，且與 ar-d-211 計畫稿的年代寫法不一，不寫年代）。
+- 截止日後事實：Olivia Dean 2026-02-01 第 68 屆葛萊美最佳新人、2026-02-28 全英音樂獎四項（年度藝人、年度專輯《The Art of Loving》、流行藝人、與 Sam Fender 的年度歌曲），主線 WebSearch 核實（uDiscover、Radio X、PRS for Music 等）。
+- 保留：Kris Kross〈Jump〉Hot 100 連八週冠軍（份量核心）、Chris Kelly 2013 只寫過世年；KMD Subroc 1993 只寫過世年；Fortisakharof「以色列搖滾王子」「Minimal Compact 最早在海外成功的以色列搖滾團體之一」（「被稱為／被認為」口氣）；JMSN 的 Usher 讚語（NME＋Complex）；Dinner Party 混音版入圍葛萊美最佳前衛 R&B 專輯。
+- 不寫：Destin Conrad、Saya Gray 的葛萊美／Polaris／Juno 入圍（單源）；Kris Kross「最年輕的商業成功嘻哈團」；Jason Derulo 銷量認證；Onry Ozzborn「棒球獎學金」「法明頓」；The UMC's、Way Out West 榜單名次；Olivia Dean「自 Dua Lipa 以來首位」。
+- 已上線專輯簡介待修（pubIssues）：Fortisakharof「第一次以共同名義發行」；J. Valentine 限量 CDr／客座；Kris Kross 發現年份；Lausse The Cat、Noblemen「首作」；Marian Hill「高中同學」；Michael Franti《Stay Human》年份（維基 2000）；Onry Ozzborn 棒球獎學金與法明頓；S.C.A.B. 主唱拼法 Camargo 與編制。
+
+## Spotify 補卡 sf11／sf12 補介紹（ar-d-211～212）小結
+
+- 54 位排入 2 批，50 位上架（20 full、30 thin）、4 位不寫；審稿合計修 5 位（另撤稿 1 位）。
