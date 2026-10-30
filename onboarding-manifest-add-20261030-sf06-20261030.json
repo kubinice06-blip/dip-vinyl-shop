@@ -1,0 +1,1459 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-sf06",
+ "batchNote": "薄細項策展線（add-20261030-sf06）",
+ "createdAt": "2026-10-30T06:32:08Z",
+ "albums": [
+  {
+   "artist": "劉以達",
+   "album": "麻木",
+   "identity": {
+    "releaseType": "Compilation",
+    "identitySource": "pinned",
+    "rgMbid": "d1ddb824-fb47-3cca-ac90-df9423b3aa5c",
+    "upc": "",
+    "aliasesChecked": true,
+    "exceptionReason": "MB 與 Spotify 標 compilation，但中文維基列為錄音室專輯、1996 年 1 月以個人專輯名義發行（非池中），曲目為新作，主線裁定照錄音室專輯收",
+    "exceptionEvidenceUrls": [
+     "https://www.discogs.com/master/3488311",
+     "https://musicbrainz.org/release-group/d1ddb824-fb47-3cca-ac90-df9423b3aa5c"
+    ],
+    "aliasReview": "香港獨立／搖滾：達明一派吉他手／作曲人的首張個人專輯，粵語搖滾與電子實驗的代表作。｜⚠ MB 標 Compilation；封面僅 Discogs master；池中有達明一派但劉以達另立，不算已有｜MB release-group d1ddb824-fb47-3cca-ac90-df9423b3aa5c：title「麻木」、Album＋Compilation、first-release-date 1996、artist-credit「劉以達」。證據：https://www.discogs.com/master/3488311 https://musicbrainz.org/release-group/d1ddb824-fb47-3cca-ac90-df9423b3aa5c",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "7202289",
+    "url": "https://i.discogs.com/z7KZ16Ra8HVlLUg16md93H3Zbhcmp3uHTglhQGQCciw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyMDIy/ODktMTQzNjA1ODg4/MC04Mjg5LmpwZWc.jpeg",
+    "note": "CAA 無圖；取 Discogs master 3488311 主版 7202289 主圖；主線 2026-10-30 目視：劉以達臉部特寫、枯葉疊影，與 1996 非池中原版相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 219,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 219）；主線：冷門軸照 §0.8 錨點制以粵語圈為尺：達明一派成員的個人盤，非池中小廠，Spotify 已上架但流通有限；實驗電子與吉他，入耳度偏低"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "發片派對那晚，黃耀明宣布達明一派復合。和黃耀明組成香港二人組達明一派的劉以達，在團裡擔任吉他手兼作曲。那場派對辦在 1996 年 1 月 29 日，主角是他個人名義的《麻木》。全盤 11 首都是新曲，由劉以達一手製作與作曲，其中一首叫〈繾綣28800BPS〉。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/劉以達",
+     "https://www.discogs.com/release/7202289",
+     "https://musicbrainz.org/release/81af0311-2818-4c44-bf5a-9176c062d16f",
+     "https://musicbrainz.org/release/0800cca2-d538-4522-ac9d-60c506f30f78",
+     "https://www.last.fm/music/%E9%81%94%E6%98%8E%E4%B8%80%E6%B4%BE",
+     "https://musicbrainz.org/release-group/d1ddb824-fb47-3cca-ac90-df9423b3aa5c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "Apple hk／tw 劉以達名下只有《第四度空間》與劉以達與夢《末世極樂》，查無《麻木》。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "雞蛋蒸肉餅",
+   "album": "23:59 Before Tomorrow",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "03ca41f5-79b5-4f7e-a82c-0f9f315a1166",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "香港獨立／搖滾：香港全女子樂團首張正規專輯，獲 2017 香港樂評選年度樂團並入圍金曲獎最佳樂團。｜⚠ MB 首發 2017-01-21，Wikipedia 為 2016-12-17，年份用 2016｜MB release-group 03ca41f5-79b5-4f7e-a82c-0f9f315a1166：title「23:59 Before Tomorrow」、Album、first-release-date 2017-01-21、artist-credit「GDJYB」。證據：https://coverartarchive.org/release-group/03ca41f5-79b5-4f7e-a82c-0f9f315a1166/front https://music.apple.com/tw/album/23-59-before-tomorrow/1716818460",
+    "queryAlias": "GDJYB"
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/03ca41f5-79b5-4f7e-a82c-0f9f315a1166/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 62,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 62）；主線：香港獨立樂團首作，紅線音樂發行，港台獨立圈有名但圈外少人知"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "金曲獎最佳樂團的入圍名單上，第一次出現香港樂隊。主音、吉他、貝斯、鼓四個女生，2012 年在香港組成雞蛋蒸肉餅，把數學搖滾與民謠揉在一起。她們 2016 年 4 月與紅線音樂簽約，頭一張正規專輯《23:59 Before Tomorrow》在同年 12 月 17 日港台同步推出。11 首曲名中英粵並用，有〈榴槤乜乜乜〉〈Time in My Galaxy〉〈逃亡吧，少年呀！〉。那一屆是 2017 年的第 28 屆，雞蛋蒸肉餅最後停在入圍。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/雞蛋蒸肉餅",
+     "https://musicbrainz.org/release-group/03ca41f5-79b5-4f7e-a82c-0f9f315a1166",
+     "https://musicbrainz.org/release/21dfc9fb-d2ea-4160-911f-7cd3feea64b5"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/7d/93/64/7d93646d-d786-c7d4-27ce-bafe79e006ff/mzaf_13936471993738325544.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "appleCollectionId": "1716818460",
+    "storefront": "HK",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple hk 1716818460「雞蛋蒸肉餅《23:59 Before Tomorrow》」：曲目 10/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Whatever〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "張亞東",
+   "album": "Ya Tung",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b98782c5-185a-4163-807a-c7bacdce19da",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "中國搖滾製作人：王菲御用製作人的首張個人專輯，電子與實驗搖滾，其個人作品中最被提及者。｜⚠ MB 首發日 1999-05-13，Wikipedia 與 Apple 為 1998；封面用 Apple（CAA 無）｜MB release-group b98782c5-185a-4163-807a-c7bacdce19da：title「Ya Tung」、Album、first-release-date 1999-05-13、artist-credit「张亚东」。證據：https://music.apple.com/tw/album/ya-tung/53494409 https://www.allmusic.com/album/ya-tung-mw0000330036",
+    "queryAlias": "张亚东"
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "53494409",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m03/d26/h02/s05.bjkukytp.tif/600x600bb.jpg",
+    "note": "CAA 無圖；Apple tw 53494409（Chang Ya Tung《Ya Tung》1998、12 軌）官方圖；主線目視：張亞東黑衣側身照、直排「張亞東」字樣。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 338,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 338）；主線：王菲御用製作人的個人盤，Wings Music 正規發行，華語圈製作人名號響、個人作品流通中等"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "〈只愛陌生人〉先是他的曲名，隔年才成了王菲的專輯名。1969 年生於山西天鎮的張亞東，8 歲學大提琴，後來替王菲、朴樹、許巍做專輯。1992 年底，他辭去大同礦務局的工作赴北京，經竇唯介紹認識王菲，其後製作她的《浮躁》與 1999 年的《只愛陌生人》。他名下的《Ya Tung》1998 年交由香港的 Wings Music 發行，收 12 首。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/張亞東_(音樂人)",
+     "https://www.discogs.com/release/9413112",
+     "https://music.apple.com/tw/album/ya-tung/53494409",
+     "https://musicbrainz.org/release-group/b98782c5-185a-4163-807a-c7bacdce19da",
+     "https://musicbrainz.org/release/e8d3000e-aeb5-44a9-83d1-5dac768cd6ba"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7d/4f/94/7d4f94eb-1aa1-d60d-6acd-e925c8852f24/mzaf_17097277429177930782.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "appleCollectionId": "53494409",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 53494409「Chang Ya Tung《Ya Tung》」：Apple us 12 軌曲名為英譯（Only Love Strangers＝只愛陌生人、Spring Light＝春光…），主線逐軌對 MB 原盤 12/12 同序；取〈只愛陌生人〉，取第 2 軌〈Only Love Strangers〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "AB'S",
+   "album": "AB'S",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "fbf13ff8-ffcb-3d12-9e54-bd739b31686a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本 AOR：芳野藤丸、松下誠等組成的日本 AOR 樂團首張專輯，城市流行的代表。｜⚠ MB 名為 AB’s；廠牌為 Moon Records 係據 AB'S-2 推定｜MB release-group fbf13ff8-ffcb-3d12-9e54-bd739b31686a：title「AB’s」、Album、first-release-date 1983-01-21、artist-credit「AB’s」。證據：https://coverartarchive.org/release-group/fbf13ff8-ffcb-3d12-9e54-bd739b31686a/front https://music.apple.com/tw/album/abs-2-2023-remaster/1661080695",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fbf13ff8-ffcb-3d12-9e54-bd739b31686a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 716,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 716）；主線：日本 AOR 一線樂手組成的樂團，Moon Records 正規發行；city pop 再發熱後在日系收藏圈流通，旋律好入耳"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "雙吉他對決，主唱用英語唱，假音和聲在後頭交織。1982 年成軍的日本樂團 AB'S 由吉他手芳野藤丸與松下誠領軍，貝斯是渡辺直樹，團名取自成員血型與字母順序。同年 8 月，節奏軌在伊豆的 Izu Kitty Studio 錄下，10 月轉到東京的 Nichion Studio 混音。《AB'S》於 1983 年 1 月 21 日出成黑膠，由 Moon Records 發行，共 8 首。最長的〈Deja Vu〉6 分 19 秒，後來以 12 吋單曲在英國發行。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/AB'S",
+     "https://www.discogs.com/release/2419847",
+     "https://musicbrainz.org/release/26144d56-26a9-40ab-a5f0-0c9698b257d4",
+     "https://musicbrainz.org/release-group/fbf13ff8-ffcb-3d12-9e54-bd739b31686a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a7/b5/27/a7b52734-107b-2436-3484-3c7fa05f441d/mzaf_14983536228570237982.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "appleCollectionId": "41295850",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 41295850「AB'S《Ab's》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Deja Vu〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Everfor",
+   "album": "空中閣樓",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "8b7ef6ac-f2ab-4865-b66c-6f0f2dcb0118",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "台灣搖滾／流行：台灣創作者蘇偉安 Everfor 的首張專輯，也是 MB 上唯一正規專輯。｜⚠ 風格據推測，聲音未驗證｜MB release-group 8b7ef6ac-f2ab-4865-b66c-6f0f2dcb0118：title「空中閣樓」、Album、first-release-date 2021-10-29、artist-credit「Everfor」。證據：https://coverartarchive.org/release-group/8b7ef6ac-f2ab-4865-b66c-6f0f2dcb0118/front https://music.apple.com/tw/album/%E7%A9%BA%E4%B8%AD%E9%96%A3%E6%A8%93/1818394415",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8b7ef6ac-f2ab-4865-b66c-6f0f2dcb0118/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 1375,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1375）；主線：台灣創作者自發行首作，串流可聽但流通小；流行搖滾好入耳"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "〈幸運淚〉先壓成黃色 7 吋單曲，一年半後才排進專輯。Everfor 是台灣創作者蘇偉安的藝名，那張單曲被標為 city pop。2020 年 4 月，Big Romantic Records 把〈幸運淚〉出成 7 吋。《空中閣樓》2021 年 10 月 29 日數位上架，收 10 首，掛在他本人名下發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/15415591",
+     "https://itunes.apple.com/lookup?id=1818394415&country=tw",
+     "https://musicbrainz.org/release/133df2c3-144f-46da-9193-26df5f5fb45b",
+     "https://www.discogs.com/release/25782343",
+     "https://musicbrainz.org/release-group/8b7ef6ac-f2ab-4865-b66c-6f0f2dcb0118"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4f/ab/a1/4faba1b1-5ac7-58e0-3caf-734cb5202da7/mzaf_16256736218740819492.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "appleCollectionId": "1818394415",
+    "storefront": "TW",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple tw 1818394415「Everfor《空中閣樓》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈冰咖啡〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kaishandao",
+   "album": "Homeland",
+   "identity": {
+    "releaseType": "Compilation",
+    "identitySource": "pinned",
+    "rgMbid": "3f6e759d-f253-46ac-9668-55bdd7a23403",
+    "upc": "",
+    "aliasesChecked": true,
+    "exceptionReason": "6 首長 EP，為目前唯一主要作品",
+    "exceptionEvidenceUrls": [
+     "https://coverartarchive.org/release-group/3f6e759d-f253-46ac-9668-55bdd7a23403/front",
+     "https://music.apple.com/tw/album/homeland/6786099119"
+    ],
+    "aliasReview": "中國獨立／電子：成都製作人 Kristen Ng 的主要作品，6 首長 EP，也是 MB 上唯一一張。｜⚠ 無正規專輯，靠 releaseException 收；MB 標 EP｜MB release-group 3f6e759d-f253-46ac-9668-55bdd7a23403：title「Homeland」、EP、first-release-date 2021-05-21、artist-credit「Kaishandao」。證據：https://coverartarchive.org/release-group/3f6e759d-f253-46ac-9668-55bdd7a23403/front https://music.apple.com/tw/album/homeland/6786099119",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3f6e759d-f253-46ac-9668-55bdd7a23403/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 781,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 781）；主線：成都製作人 6 首自發行長 EP，Bandcamp 為主要通路；有拍的實驗電子"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 2；obscurity=5 但沒有遺珠級證據（listeners 781），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "成都一間青年旅館的 A303 房，被她拿來錄這張 EP。Octatrack、Machinedrum、吉他與卡式錄音機，是威靈頓出生、落腳成都的製作人 Kaishandao（本名 Kristen Ng）的器材，走 breaks 與 techno 節拍。那間旅館叫 Steam Hostel，另一處錄音地點是她在同子林的住處。曲子起初是臥室即興，疫情封鎖之後，又在俱樂部之夜與音樂節反覆改編。《Homeland》分成 6 首、加起來 31 分鐘上下，2021 年 5 月她自行發行。",
+    "sourceUrls": [
+     "https://kaishandao.bandcamp.com/album/homeland",
+     "https://musicbrainz.org/release/29afbd99-c309-42ad-bb03-16c63f644b41",
+     "https://itunes.apple.com/lookup?id=6786099119&country=tw",
+     "https://itunes.apple.com/search?term=Kaishandao&entity=album",
+     "https://musicbrainz.org/release-group/3f6e759d-f253-46ac-9668-55bdd7a23403"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6f/78/c2/6f78c27c-4476-e7ea-d904-18ff0c5d54c1/mzaf_3239952852272072982.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "appleCollectionId": "6786099119",
+    "storefront": "TW",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple tw 6786099119「Kaishandao《Homeland》」：曲目 6/6 對上 MB 原盤（Apple 共 6 軌），取第 1 軌〈To the East Coast〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "亂彈阿翔",
+   "album": "把我換成你",
+   "identity": {
+    "releaseType": "Compilation",
+    "identitySource": "pinned",
+    "rgMbid": "bff94efd-6eac-44b3-8ae6-755807037603",
+    "upc": "",
+    "aliasesChecked": true,
+    "exceptionReason": "影視主題曲合集，但金曲獎第 23 屆以本盤頒最佳國語男歌手，是藝人生涯代表作；Spotify 名下唯一個人長篇",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/bff94efd-6eac-44b3-8ae6-755807037603",
+     "https://music.apple.com/tw/album/1535762054",
+     "https://zh.wikipedia.org/wiki/%E7%AC%AC23%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E"
+    ],
+    "aliasReview": "台灣搖滾／流行：以幕後創作人身分累積十年後的專輯，獲金曲獎最佳國語男歌手。｜⚠ Apple 版標題含「十年幕後創作精華」副題；MB 2011，維基 2012-02-03；MB 無封面，Apple 有。Luantan Ascent 由維基連結推定｜MB release-group bff94efd-6eac-44b3-8ae6-755807037603：title「把我換成你 Me in Place of You」、Album、first-release-date 2011、artist-credit「Luantan Ascent」。證據：https://musicbrainz.org/release-group/bff94efd-6eac-44b3-8ae6-755807037603 https://music.apple.com/tw/album/%E6%8A%8A%E6%88%91%E6%8F%9B%E6%88%90%E4%BD%A0-%E5%8D%81%E5%B9%B4%E5%B9%95%E5%BE%8C%E5%89%B5%E4%BD%9C%E7%B2%BE%E8%8F%AF-%E9%9B%BB%E5%BD%B1%E9%9B%BB%E8%A6%96%E4%B8%BB%E9%A1%8C%E6%AD%8C%E6%9B%B2%E5%B0%88%E8%BC%AF/1535762054",
+    "queryAlias": "把我換成你 Me in Place of You；Luantan Ascent"
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1535762054",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/56/4d/27/564d2749-3247-c517-003f-1d1b0a4b3d1b/1..jpg/600x600bb.jpg",
+    "note": "CAA 無圖；Apple tw 1535762054（2011-11-01、10 軌）官方圖；主線目視：紅色戲院座椅、阿翔坐姿、「把我換成你」毛筆字與「十年幕後創作精華 電影電視主題歌曲專輯」字樣。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 56,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 56）；主線：第 23 屆金曲獎最佳國語男歌手得獎盤；赤腳不辣正規發行，華語圈流通中等；影視主題曲取向好入耳"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "同屆對手有周杰倫與陳奕迅，最佳國語男歌手頒給一張主題曲選集。亂彈是陳泰翔在宜蘭讀工專時組的搖滾樂團，他任主唱，單飛後以亂彈阿翔為名，這張收他十年替影視寫唱的主題曲。《把我換成你》共 10 首，2011 年 11 月交給赤腳不辣發行，〈春天回來〉收了鋼琴版與吉他版。那座獎是 2012 年第 23 屆金曲獎頒出的。",
+    "sourceUrls": [
+     "https://itunes.apple.com/lookup?id=1535762054&country=tw",
+     "https://news.tvbs.com.tw/entertainment/22067",
+     "https://musicbrainz.org/release-group/bff94efd-6eac-44b3-8ae6-755807037603",
+     "https://musicbrainz.org/release/e1f91d85-cef1-40aa-bd20-ad68a806fce9",
+     "https://zh.wikipedia.org/wiki/亂彈阿翔"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/55/40/8f/55408f0f-545d-9084-e361-a21b40467364/mzaf_9970877213665547679.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "appleCollectionId": "1535762054",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1535762054「Luantan Ascent《把我換成你-十年幕後創作精華 電影電視主題歌曲專輯》」：Apple 2011-11-01 原盤 10 軌，曲目 9/10 對上 MB（〈春天回來〉鋼琴版／吉他版寫法不同），取第 1 軌〈我不會留你下來 (電影《鹹豆漿》主題曲)〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "盧家齊",
+   "album": "Circle = 圆",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2784d2ca-82bc-4692-b7a6-605b0675e5a0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "台灣氛圍／實驗：台灣氛圍／drone／部落電子藝人 Lujiachi 的首張專輯，也是唯一正規長專。｜策展無疑點｜MB release-group 2784d2ca-82bc-4692-b7a6-605b0675e5a0：title「Circle = 圆」、Album、first-release-date 2016-09-09、artist-credit「Lujiachi = 盧家齊」。證據：https://coverartarchive.org/release-group/2784d2ca-82bc-4692-b7a6-605b0675e5a0/front https://musicbrainz.org/release-group/2784d2ca-82bc-4692-b7a6-605b0675e5a0",
+    "queryAlias": "Lujiachi；Lujiachi = 盧家齊"
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2784d2ca-82bc-4692-b7a6-605b0675e5a0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 1,
+    "listeners": null,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：雙卡帶作品集限量 100 份（WV Sorcerer），Last.fm 無資料；drone 與部落打擊，入耳度最低一級"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 1；obscurity=5 但沒有遺珠級證據（listeners 查無），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兩捲卡帶裝下 2 小時 24 分鐘，只壓 100 份。破地獄是台灣的 drone metal／krautrock 二人組，盧家齊是核心成員。《Circle = 圓》集結他的個人作品，多首是首度公開，2016 年 9 月由以法國與中國為據點的實驗廠牌 WV Sorcerer 出版，附特製的透明紙 OBI。第一捲有 15 分 13 秒的〈莯〉，第二捲排了四段〈Drums〉。聲音是磁性循環與合成器頻率的迷霧，被歸為一趟部落式的 drone ambient。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/9275097",
+     "https://musicbrainz.org/release/e0442bf3-8bf3-417e-b035-6612a556a964",
+     "https://wvsorcerer.bandcamp.com/",
+     "https://musicbrainz.org/release-group/2784d2ca-82bc-4692-b7a6-605b0675e5a0"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "限量 100 份雙卡帶，Apple tw 盧家齊名下只有 EP、單曲與合作盤，查無本作。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Shaa Khan",
+   "album": "The World Will End on Friday",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "21aa44c4-a39f-4049-b40c-183f31fd6669",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "德國 Krautrock：1970 年代德國 Krautrock 樂團唯一的時期專輯，MB 上最具代表。｜⚠ Apple 僅 5 首；Spotify 的 Shaa Khan 是否即此德國團未能由 Spotify 端驗證，靠名稱唯一性判定｜MB release-group 21aa44c4-a39f-4049-b40c-183f31fd6669：title「The World Will End On Friday」、Album、first-release-date 1978、artist-credit「Shaa Khan」。證據：https://coverartarchive.org/release-group/21aa44c4-a39f-4049-b40c-183f31fd6669/front https://music.apple.com/us/album/the-world-will-end-on-friday/1047702627",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/21aa44c4-a39f-4049-b40c-183f31fd6669/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 374,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 374）；主線：Sky Records 1978 原盤發行有限，2009 再發進串流——錨點 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "鼓手一個人寫完五首長歌，其中四首超過七分半。魯爾區杜伊斯堡的德國樂團 Shaa Khan 用英文唱，是被叫作「Gentle Rock」的前衛搖滾，受 Genesis、Yes 影響。那位鼓手是 Walter Kaulhausen，1960 年代末與夥伴組成這個團。1977 年 8 月，他們在施托梅爾恩的 Dierks Studios 錄音，陣容是雙主唱加一位專職鍵盤手。1978 年出版它的是漢堡的 Sky Records，這是樂團的第一張 LP。",
+    "sourceUrls": [
+     "https://de.wikipedia.org/wiki/Shaa_Khan",
+     "https://www.discogs.com/release/3243630",
+     "https://musicbrainz.org/release-group/21aa44c4-a39f-4049-b40c-183f31fd6669"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music69/v4/3b/02/22/3b022223-ef11-29d8-f50a-2fde2a13bc89/mzaf_849804834390420858.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "appleCollectionId": "1047702627",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1047702627「Shaa Khan《The World Will End On Friday》」：曲目 5/5 對上 MB 原盤（Apple 共 5 軌），取第 1 軌〈White Room〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Cheers Cheers",
+   "album": "Carinae",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3cf3fb65-1622-4d67-ae1b-1247b88efbd2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "中國獨立／電子：紹興夢幻流行／shoegaze 樂團的首張專輯。｜⚠ 代表性依據薄（只有 Last.fm 簡介），第二張為 2022 Analog Love｜MB release-group 3cf3fb65-1622-4d67-ae1b-1247b88efbd2：title「Carinae」、Album、first-release-date 2016-08-30、artist-credit「The Cheers Cheers」。證據：https://coverartarchive.org/release-group/3cf3fb65-1622-4d67-ae1b-1247b88efbd2/front https://www.last.fm/music/The+Cheers+Cheers",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3cf3fb65-1622-4d67-ae1b-1247b88efbd2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 108,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 108）；主線：中國獨立樂團自發行首作，流通極小"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 108），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "買 CD 附送一款桌遊，出它的深圳廠牌把發行當玩笑。City Flanker 的主唱王小宇以 The Cheers Cheers 名義發表私人歌曲，走 jangle pop 與 C86 式的夢幻流行。廠牌名叫 BoringProductions，2016 年 8 月經手了《Carinae》，中文盤名是《不如搬去船底星》。6 首歌只占約 20 分鐘。",
+    "sourceUrls": [
+     "https://boringproductions.bandcamp.com/album/carinae",
+     "https://api.discogs.com/artists/5556941/releases",
+     "https://musicbrainz.org/release-group/3cf3fb65-1622-4d67-ae1b-1247b88efbd2"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ae/fc/80/aefc80d1-5f2d-e925-6e5d-c47feacec24c/mzaf_11272440383783925176.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "appleCollectionId": "1637557282",
+    "storefront": "TW",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple tw 1637557282「The Cheers Cheers《不如搬去船底星》」：Apple tw《不如搬去船底星》8 軌：前 6 軌與 MB 原盤 6/6 同序，另加 2 首加收版本，取第 1 軌〈Midnight Canyon〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Fishdoll",
+   "album": "Noonsense",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "8c5e16fd-176f-4ab4-bb58-999b6de5975e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "中國嘻哈／實驗電子：北京製作人 Fishdoll 的首張專輯，中式 lo-fi 嘻哈節拍的代表。｜⚠ MB 作 hip hop producer；北京身分由 Apple 單曲名推定｜MB release-group 8c5e16fd-176f-4ab4-bb58-999b6de5975e：title「Noonsense」、Album、first-release-date 2018-01-19、artist-credit「Fishdoll」。證據：https://coverartarchive.org/release-group/8c5e16fd-176f-4ab4-bb58-999b6de5975e/front https://music.apple.com/us/album/noonsense/1322048332",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8c5e16fd-176f-4ab4-bb58-999b6de5975e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 1521,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1521）；主線：北京製作人 Paxico Records 發行，串流可聽，圈外少人知"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "米酒與井，都被這位北京歌手寫成了曲名。「虹彩般的宇宙級電子靈魂樂」，是廠牌 Paxico 給這張的形容；Fishdoll 本名 Yuyu Feng，身兼歌手、詞曲作者、製作人。9 首曲名混著北京的地景與日常，從〈Beijing Well〉、〈Rice Wine〉到〈Ripple of Mortal（水從凡漾）〉。2018 年 1 月 19 日經 Paxico Records 問世，後來又壓了 300 張 12 吋黑膠；每首歌都是她親手寫成、親手製作。",
+    "sourceUrls": [
+     "https://api.discogs.com/artists/6270227",
+     "https://fishdoll.bandcamp.com/album/noonsense",
+     "https://musicbrainz.org/release-group/8c5e16fd-176f-4ab4-bb58-999b6de5975e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/64/df/72/64df720f-9770-99a1-b1f6-c77b35e4dc69/mzaf_15598344236742333330.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "appleCollectionId": "1322048332",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1322048332「Fishdoll《Noonsense》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Toehead〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Juggaknots",
+   "album": "The Juggaknots",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "58836a73-2789-4a61-8795-ea09a424aff8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "us-underground-hiphop：紐約地下嘻哈公認經典，家族式連珠炮押韻與爵士取樣，常被列為90年代被低估的神盤｜策展無疑點｜MB release-group 58836a73-2789-4a61-8795-ea09a424aff8：title「The Juggaknots」、Album、first-release-date 1996、artist-credit「Juggaknots」。證據：https://coverartarchive.org/release-group/58836a73-2789-4a61-8795-ea09a424aff8/front https://musicbrainz.org/release-group/58836a73-2789-4a61-8795-ea09a424aff8",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/58836a73-2789-4a61-8795-ea09a424aff8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 434,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 434）；主線：1996 Fondle 'Em 小廠原盤流通極小，後有再發進串流——錨點 4；紐約地下嘻哈公認被低估的經典，classic 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Coltrane 的鋼琴取樣，墊在布朗克斯手足的押韻下。紐約嘻哈團體 Juggaknots 由 Smith 家三位手足組成，這張只有 Breezly Brewin 與 Buddy Slim 兩人押韻。那段鋼琴取自〈My Favorite Things〉，放進〈Troubleman〉，旁邊是一把冷硬的大提琴。整張是厚重、偏低頻的東岸 boom bap。1996 年，紐約廠牌 Fondle 'Em 將它出版，只壓黑膠，收 9 首歌。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Juggaknots",
+     "https://www.discogs.com/release/146172",
+     "https://audiopile.ca/?p=137519",
+     "https://en.wikipedia.org/wiki/Re:Release",
+     "https://api.discogs.com/artists/73909/releases",
+     "https://musicbrainz.org/release-group/58836a73-2789-4a61-8795-ea09a424aff8"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "Apple us 以團名搜尋專輯為 0 筆，查無本盤（1996 Fondle 'Em 黑膠）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Glen Check",
+   "album": "Haute Couture",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "32136921-f59e-43a2-8bfa-e3d64515c5de",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "kr-indie：首張正規專輯，奪韓國大眾音樂獎最佳電子專輯，首爾電子搖滾雙人組的成名作｜⚠ 主線改盤：原選 2022《Bleach》；國別改 kr（首爾樂團）｜MB release-group 32136921-f59e-43a2-8bfa-e3d64515c5de：title「Haute couture」、Album、first-release-date 2012-02-28、artist-credit「Glen Check」。證據：https://musicbrainz.org/release-group/32136921-f59e-43a2-8bfa-e3d64515c5de https://coverartarchive.org/release-group/32136921-f59e-43a2-8bfa-e3d64515c5de/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/32136921-f59e-43a2-8bfa-e3d64515c5de/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 10139,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 10139）；主線：第 10 屆韓國大眾音樂獎最佳舞曲／電子專輯得獎，韓國獨立圈一線、圈外少人知；有拍合成流行好入耳"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "參考了法國與比利時街頭藝人的打擊，再回首爾的地下室錄。Joy Division、New Order 與 Duran Duran，是首爾合成流行雙人組 Glen Check 替這張設下的參照。歌曲全由兩人自寫、自編、自錄，地下室是自家的 The Basement。37 分鐘裡排了 11 首，曲名帶著法國時裝的意象，如〈60's Cardin〉。Glen Check 2012 年 2 月 28 日把它推向市面。2013 年，它拿下第 10 屆韓國大眾音樂獎最佳舞曲／電子專輯。",
+    "sourceUrls": [
+     "https://ko.wikipedia.org/wiki/%EA%B8%80%EB%A0%8C%EC%B2%B4%ED%81%AC",
+     "https://musicbrainz.org/release/0cbe5862-ea3a-4983-be3b-2a8b9cbad121",
+     "https://musicbrainz.org/release-group/32136921-f59e-43a2-8bfa-e3d64515c5de",
+     "https://www.discogs.com/release/4445297",
+     "https://en.wikipedia.org/wiki/Haute_Couture_(album)",
+     "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85%EC%83%81"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9e/55/1c/9e551c2f-7b69-76cb-07d0-d5bbabd4183a/mzaf_13035025622102617471.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "appleCollectionId": "1804622272",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1804622272「Glen Check《Haute Couture》」：曲目 10/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈The Naked Sun〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "강태환",
+   "album": "소리 (Sorefa)",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a4921815-49f0-4eca-87e6-c96d3c048cb0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "kr-free-jazz：韓國自由爵士薩克斯風先驅強太煥的錄音室專輯，Spotify 上以 Sorefa 收錄｜⚠ 盤名在 MB／Apple 為 Sorefa（소리 之羅馬拼音），Spotify 版年份 2020 為再上架；選 Sorefa 對應 Apple 盤，若不符可改 1991《Tokebi》｜MB release-group a4921815-49f0-4eca-87e6-c96d3c048cb0：title「Sorefa」、Album、first-release-date 2011-12-29、artist-credit「Kang Tae Hwan」。證據：https://coverartarchive.org/release-group/a4921815-49f0-4eca-87e6-c96d3c048cb0/front https://musicbrainz.org/release-group/a4921815-49f0-4eca-87e6-c96d3c048cb0",
+    "queryAlias": "Kang Tae-Hwan；Sorefa；Kang Tae Hwan"
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a4921815-49f0-4eca-87e6-c96d3c048cb0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 1,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：Audioguy 雙 CD，韓國自由爵士先驅的獨奏盤，Last.fm 無資料；無伴奏自由即興中音薩克斯風，入耳度最低一級"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 1，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一個人、一把中音薩克斯風，吹滿兩片 CD。錄這張時 67 歲的강태환（姜泰煥），是 1944 年生的韓國自由爵士薩克斯風手。他在 1978 年組的三重奏，被視為韓國第一個自由爵士團體；1988 年解散後，他改以獨奏為主。2011 年他進 SonicEdge Studio 錄音，12 月 29 日首爾的 Audioguy Records 把它出成雙 CD。9 首曲子長達約 102 分鐘，多數曲名分成數個 Part，他擅長把一個長音持續好幾分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/artist/372511",
+     "https://ko.wikipedia.org/wiki/%EA%B0%95%ED%83%9C%ED%99%98_(%EC%9D%8C%EC%95%85%EA%B0%80)",
+     "https://www.discogs.com/release/4220399",
+     "https://musicbrainz.org/release/1bdb4752-b5be-4e4f-aa11-a9c860f9364b",
+     "https://api.discogs.com/artists/372511/releases",
+     "https://musicbrainz.org/release-group/a4921815-49f0-4eca-87e6-c96d3c048cb0"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "Apple kr／us 以藝人＋盤名搜尋 0 筆，查無本盤。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Superstar Quamallah",
+   "album": "Invisible Man",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "1691a814-f1c1-496a-957e-bef40bee5b5c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "us-jazz-rap：與 DeQawn 合作的爵士饒舌地下名盤，Gilles Peterson 2009 年度選盤，2024 首度發行黑膠｜策展無疑點｜MB release-group 1691a814-f1c1-496a-957e-bef40bee5b5c：title「Invisible Man」、Album、first-release-date 2009、artist-credit「Superstar Quamallah」。證據：https://coverartarchive.org/release-group/1691a814-f1c1-496a-957e-bef40bee5b5c/front https://musicbrainz.org/release-group/1691a814-f1c1-496a-957e-bef40bee5b5c",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1691a814-f1c1-496a-957e-bef40bee5b5c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 2868,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2868）；主線：Brick Records 小廠原盤，串流可聽，地下爵士饒舌圈名盤"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "父親彈靈魂風琴，兒子在 Rhodes 的循環上饒舌。本名 John Patton Jr. 的 Superstar Quamallah，是布魯克林出生、在加州活動的饒舌手、DJ、製作人，父親是 Big John Patton。1990 年代他混跡西岸地下，之後長時間不錄音，在高中教書。《Invisible Man》2009 年的發行方是 Brick Records，到 2024 年才首度壓成黑膠，限量 500 張。〈We Got Plots〉就踩著 Rhodes 與弦樂循環。",
+    "sourceUrls": [
+     "https://audiopile.ca/product/invisible-man/",
+     "https://oye-records.com/releases/superstar-quamallah-invisible-man",
+     "https://www.discogs.com/release/2140098",
+     "https://thepopcorps.co.uk/2024/04/02/jazzy-rap-first-time-on-vinyl-go-on-then/",
+     "https://musicbrainz.org/release-group/1691a814-f1c1-496a-957e-bef40bee5b5c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music7/v4/77/4b/84/774b8480-3cc4-7a08-11d9-bec396bed214/mzaf_4542816139453376410.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "appleCollectionId": "310677915",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 310677915「Superstar Quamallah《Invisible Man》」：Apple us 2009-05-19 版：碟一 14 軌與 MB 原盤 14/14 同序，碟二是同曲伴奏版；取碟一第 12 軌〈We Got Plots〉，取第 12 軌〈We Got Plots〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "7FO",
+   "album": "Water Falls Into a Blank",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "1020997c-9130-427c-9bf2-d356b97b85c3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "jp-bedroom-electronic：日本個人電子音樂家 7FO 的錄音室專輯（Apple 為 2026 再上架），輕柔實驗電子｜⚠ 極小眾；代表性證據薄弱，僅 MB 與 CAA；第二候補 電氣爆発(2019)｜MB release-group 1020997c-9130-427c-9bf2-d356b97b85c3：title「Water Falls Into a Blank」、Album、first-release-date 2016-10-07、artist-credit「7FO」。證據：https://coverartarchive.org/release-group/1020997c-9130-427c-9bf2-d356b97b85c3/front https://musicbrainz.org/release-group/1020997c-9130-427c-9bf2-d356b97b85c3",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1020997c-9130-427c-9bf2-d356b97b85c3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 183,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 183）；主線：RVNG Intl. 限量首版，2026 數位版進串流——錨點 4"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "最初的黑膠套著靛藍染布，只在紐約一處展覽空間販售。7FO 念作 nana-f-o，是大阪製作人 N. Kawata 的計畫，他形容這張 dub 與 ambient 的音樂「好奇、安靜、幽默」。那處空間是 RVNG Intl. 在紐約下東區的 Commend，唱片原是它「See」系列裡的一件作品。封面是燒在紙上的紅貓熊影像，出自 Nick Ozgunay 之手。那批黑膠 2016 年 10 月開賣，〈Rice Field of the Diorama〉這首就占了約 8 分鐘。",
+    "sourceUrls": [
+     "https://igetrvng.com/products/7fo-water-falls-into-a-blank",
+     "https://www.discogs.com/release/9466344",
+     "https://musicbrainz.org/release/b8c7a96d-9add-4e60-9bc8-4f777a1c86ee",
+     "https://www.discogs.com/master/1101005",
+     "https://musicbrainz.org/release-group/1020997c-9130-427c-9bf2-d356b97b85c3"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/62/c7/e0/62c7e0e4-223c-5f34-3e48-36d78ca3c3e0/mzaf_2803556647152391838.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "appleCollectionId": "6793183634",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 6793183634「7FO《Water Falls Into a Blank》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Botanical Dub〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Monique Chao Jazz Orchestra",
+   "album": "Time Chamber",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "14a6518b-2526-421f-8bf0-ce6c54a4505b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "it-jazz：該樂團唯一的錄音室專輯，8 首原創大編制爵士｜⚠ 僅一張、評論資料薄弱；Apple 有 https://music.apple.com/us/album/time-chamber/1754473271｜MB release-group 14a6518b-2526-421f-8bf0-ce6c54a4505b：title「Time Chamber」、Album、first-release-date 2024-09-07、artist-credit「Monique Chao Jazz Orchestra」。證據：https://coverartarchive.org/release-group/14a6518b-2526-421f-8bf0-ce6c54a4505b/front https://musicbrainz.org/release-group/14a6518b-2526-421f-8bf0-ce6c54a4505b",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/14a6518b-2526-421f-8bf0-ce6c54a4505b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 34,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 34）；主線：米蘭大樂隊自主製作首作，Last.fm 34，通路極小"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 34），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "靈感來自《七龍珠》的一首曲子，寫疫情裡困在家練習的樂手。生於台灣、定居米蘭的作曲家兼指揮 Monique Chao，在義大利創立這支 18 人的大編制爵士樂團。〈Hyperbolic Time Chamber〉就是那首，和另外 7 首一樣出自她的原創。樂團 2023 年 7 月 12、13 日在 Officine Meccaniche 錄音，銅管分三組，加上五人節奏組。2024 年 9 月出版，最後一首獻給 Chester Bennington。",
+    "sourceUrls": [
+     "https://www.mentelocale.it/milano/36766-monique-chao-jazz-orchestra-in-concerto.htm",
+     "https://osplacejazz.com/time-chamber/",
+     "https://moniquechaojazzorchestra.bandcamp.com/album/time-chamber",
+     "https://musicbrainz.org/release-group/14a6518b-2526-421f-8bf0-ce6c54a4505b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cf/b1/85/cfb1854c-95b2-80c5-3a3d-9b4f7aa0b726/mzaf_3630955408261538242.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "appleCollectionId": "1754473271",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1754473271「Monique Chao Jazz Orchestra《Time Chamber》」：曲目 7/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Hollow〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "JUU4E",
+   "album": "馬鹿世界 โลกบ้า (Crazy World)",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2732e98f-fa6a-4642-8667-3e1348cd9a5c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "th-indie：泰日混合藝人 JUU4E 的EM Records 第二張個人專輯，最具辨識度的作品｜⚠ 身分資料極薄（MB 無國別、無簡介），代表作未經評論證實；建議店主不必收｜MB release-group 2732e98f-fa6a-4642-8667-3e1348cd9a5c：title「馬鹿世界 โลกบ้า (Crazy World)」、Album、first-release-date 2021-03-19、artist-credit「JUU4E」。證據：https://coverartarchive.org/release-group/2732e98f-fa6a-4642-8667-3e1348cd9a5c/front https://musicbrainz.org/release-group/2732e98f-fa6a-4642-8667-3e1348cd9a5c",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2732e98f-fa6a-4642-8667-3e1348cd9a5c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 17,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 17）；主線：大阪 EM Records 發行，泰國饒舌在日本小廠流通，圈外幾乎無人知"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "泰國孔敬錄的 trap，裡頭翻唱了一首鄧麗君。大阪的 EM Records 推出的這一張，是泰國饒舌手兼製作人 JUU4E 為該廠牌錄的第二張個人盤。全部曲目由他一人演奏、編曲與製作，混音交給山梨縣的 Young-G。嘻哈與 trap 的拍子上，疊著泰國、日本、馬來西亞、台灣的傳統與流行取樣，也引用泰南舞蹈 ron geng 與日本民謠，取向是反對亞洲嘻哈裡的「自我東方主義」。2021 年 3 月 19 日發片時收了 16 首，播完約 43 分鐘。",
+    "sourceUrls": [
+     "https://emrecords.bandcamp.com/album/crazy-world",
+     "https://musicbrainz.org/release-group/2732e98f-fa6a-4642-8667-3e1348cd9a5c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/19/bc/cc/19bccc5c-9118-dded-ab73-26d7ff42ee5e/mzaf_13932779939872393051.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "appleCollectionId": "1558387278",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1558387278「JUU4E《馬鹿世界》」：Apple jp《馬鹿世界》16 軌，日文曲名與 MB 原盤 16/16 同序；第 1 軌是 skit，取第 2 軌〈おはようござい麻す〉，取第 2 軌〈おはようござい麻す〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "dotzio",
+   "album": "The File You're Looking for No Longer Exist",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a2af3cce-d018-42a1-88dc-9e7d00636080",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "tw-electronic：台灣獨立音樂人張軒（Hsuan Chang）的 dotzio 計畫，唯一一張錄音室專輯｜⚠ 唯一專輯、極小眾；Apple TW 無自家專輯｜MB release-group a2af3cce-d018-42a1-88dc-9e7d00636080：title「The File You’re Looking for No Longer Exist」、Album、first-release-date 2018-08-09、artist-credit「dotzio」。證據：https://coverartarchive.org/release-group/a2af3cce-d018-42a1-88dc-9e7d00636080/front https://musicbrainz.org/release-group/a2af3cce-d018-42a1-88dc-9e7d00636080",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a2af3cce-d018-42a1-88dc-9e7d00636080/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：自發行，Last.fm 1，通路極小"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "簡介只有一句：桌面上的一個檔案。dotzio 自述這是人生最初寫下的幾首歌；這個名字背後是獨立音樂人 Hsuan Chang，中文寫詞，走 lo-fi 獨立流行。2018 年 8 月放上 Bandcamp，價格由聽者自訂。8 首歌總計約 17 分鐘，中間夾兩段不滿 1 分鐘的過場。",
+    "sourceUrls": [
+     "https://musicbrainz.org/artist/4c9a4d80-740f-46bb-9b0b-63058cd16b56",
+     "https://dotzio.bandcamp.com/album/the-file-youre-looking-for-no-longer-exist",
+     "https://musicbrainz.org/release/0b312265-c567-4dac-add7-025a2c9a2c57",
+     "https://api.discogs.com/releases/25769848",
+     "https://api.discogs.com/artists/12378862/releases",
+     "https://musicbrainz.org/release-group/a2af3cce-d018-42a1-88dc-9e7d00636080"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "Apple tw 只有 dotzio 參與的合作單曲，查無本作（只在 Bandcamp 發行）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Championxiii",
+   "album": "Champion Status",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "396985ac-4b3b-4563-addc-3b85f64124ab",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "us-internet-rap：TikTok 起家的美國饒舌歌手，唯一正規專輯｜⚠ 網路爆紅型，樂評共識薄弱；建議店主視情況刪｜MB release-group 396985ac-4b3b-4563-addc-3b85f64124ab：title「Champion Status」、Album、first-release-date 2019-06-03、artist-credit「Championxiii」。證據：https://coverartarchive.org/release-group/396985ac-4b3b-4563-addc-3b85f64124ab/front https://musicbrainz.org/release-group/396985ac-4b3b-4563-addc-3b85f64124ab",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/396985ac-4b3b-4563-addc-3b85f64124ab/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 23282,
+    "source": "manual:depth-rubric",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 23282）；主線：網路起家的饒舌歌手，Party Label 發行，無樂評共識"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "〈Becky〉原本只是一段上傳社群的片段。2018 年的自製影片系列「Rappers Be Like」，讓美國的饒舌歌手 Championxiii 累積了粉絲。粉絲反應熱烈，〈Becky〉才被擴寫成完整的一首。2019 年 6 月 3 日由 Party Label 推出的《Champion Status》共 12 首，受 1980 年代 R&B 與嘻哈影響。",
+    "sourceUrls": [
+     "https://www.shazam.com/artist/-/1466737018",
+     "https://musicbrainz.org/release-group/396985ac-4b3b-4563-addc-3b85f64124ab",
+     "https://musicbrainz.org/release/dee51a4b-90be-480b-bff8-b8590f0cb4ea",
+     "https://api.discogs.com/artists/8171096/releases",
+     "https://musicbrainz.org/artist/9e2adbe0-811b-4fb9-903a-241c51513008"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-30T06:32:08Z",
+    "note": "Apple us Championxiii 名下只有單曲，查無《Champion Status》。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}
