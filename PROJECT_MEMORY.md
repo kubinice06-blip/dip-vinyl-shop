@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-10-30｜dip-vinyl-shop｜Spotify 追蹤藝人補卡池 sf03（日本地下／迷幻／即興／和樂器）＋sf04（日本電子／ambient／嘻哈／lo-fi）上線 51 張
+
+- **改動**：照 `batch-progress/spotify-follow-20261030/PLAN.md` 跑完兩批（策展 4、研究 5×2、鉤子 2×2、寫作 2×2、主線審稿、試聽、封面 live-check、三軸、頂點、寫入、子曲風、情緒評分）。
+  - **sf03**：20 位全收、23 張；跳過已在池 0。主線換盤 1（スズキジュンゾ《Ode to a Blue Ghost》是三首現場 CD-R → 《Buried Sky, Spider Torn To Pieces》）、汰第二張 4。試聽 ready 19／unavailable 4；頂點 0；審稿改 2 處。Makoto Kawabata 漢字統一「河端一」。
+  - **sf04**：28 位 → 收 26 位、28 張；跳過 0；不收 2（ILL BONE 只有 4 曲 EP 與合輯／現場盤；Buddhablessyou 查無）。U.TA屋塔 策展誤判「已在 ml4」，實為 ml4 汰卡未上線，主線補收。試聽 ready 24／unavailable 4；頂點 0；審稿改 1 處。
+  - 寫入：card_catalog 51、KV 80 鍵（各 40，逐字回讀一致）、seed +51；寫入前對 origin 全部 claude/* 分支 seed 去重 0 撞。Discogs 封面 2 張入 registry；子曲風 51/51 落位（l3 map 補 21 位）；亞洲搖滾國別補 15 位。情緒評分 `batch-progress/mood-axes/score-sf0304/`（51 張，主線未改值），錨點 104/104。
+  - 藝人介紹：`roster-sf03.json`（20 位）→ ar-d-203、`roster-sf04.json`（26 位）→ ar-d-204，state cut，補洞寫作待調度另派。
+- **主要檔案**：`batch-progress/add-20261030-sf0{3,4}/`、`onboarding-manifest-add-20261030-sf0{3,4}-20261030.json`、`desc-tools/batches/*/add-20261030-sf0{3,4}*`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-sf0{3,4}*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*`、`data/discogs-cover-registry.json`、`genre-*`、`card-subgenres.json`、`draw-covers/*`、`rock-asia-country-map.json`、`data/mood/*`、`desc-tools/batches/artist/{progress.json,cut/ar-d-20{3,4}.txt}`、PLAN.md。
+- **驗證**：兩批 prepare／published gate 皆 0 error；qa-batch research／hooks／out 全過；mood gate 錨點 104/104。
+
 ### 2026-10-30｜dip-vinyl-shop｜藝人介紹 ar-d-205（sf05 台灣華語）＋ar-d-207（sf07 西洋 60–80）上架 49 位
 
 - **ar-d-205**：20 位 → 上架 17（7 full、10 thin），skipped 3（頭部組成者、吳書齊、狗毛：素材不到 thin 門檻）。審稿修 2 位（宝島材料行補 vocus 第二源、聲子蟲開場句改樂團自述口氣）。

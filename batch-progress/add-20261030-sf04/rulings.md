@@ -98,3 +98,6 @@
 ## 本批新藝人（無介紹）
 - 26 位全部沒有介紹、也不在排隊批次或別名鍵。名冊 `batch-progress/artist-intro/roster-sf04.json`（tier D、addedBy add-20261030-sf04），progress.json 追加 **ar-d-204**（state cut，26 位），`desc-tools/batches/artist/cut/ar-d-204.txt`。補洞寫作由調度另派。
 - 立花ハジメ Hajime Tachibana、越美晴 Miharu Koshi、Sketch Show、Doopees、Chouchou、沖山秀子 Hideko Okiyama、篠崎史子 Ayako Shinozaki、Yasushi Ide 井出靖、YPY、KUSO GVKI、ECD、SHAKKAZOMBIE、Hoshina Anniversary、Tokimeki Records、kinoue64、Emapea、志人、Ironomi、Magamura、concrete concrete、Chestnut Bakery、AKA lisa、SOFT、dip、in the blue shirt、U.TA屋塔。
+
+## 情緒評分（score-sf0304）
+- 41377：Opus 1 支照 `RULES.md`＋BRIEF 打 28 張，主線逐張看過 why 與研究稿，未改值。八格：恍惚 6、頹靡 6、雀躍 5、放鬆 4、暴躁 3、冷冽 2、平靜 1、沸騰 1；conf mid 12／low 16。與 sf03 共用 `batch-progress/mood-axes/score-sf0304/`；錨點 104/104 同格，座標 22,173/22,173。不算落格率。

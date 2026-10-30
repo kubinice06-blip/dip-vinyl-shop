@@ -96,3 +96,6 @@
 ## 本批新藝人（無介紹）
 - 20 位全部沒有介紹、也不在排隊批次或別名鍵。名冊 `batch-progress/artist-intro/roster-sf03.json`（tier D、addedBy add-20261030-sf03），progress.json 追加 **ar-d-203**（state cut，20 位，未超過 45 不開溢出號），`desc-tools/batches/artist/cut/ar-d-203.txt`。補洞寫作由調度另派。
 - world's end girlfriend、Yamataka Eye & John Zorn、Seiichi Yamamoto 山本精一、Musica Transonic、LSD March、Taku Sugimoto 杉本拓、スズキジュンゾ、割礼、穂高亜希子、みみのこと、陳信輝、Far Out、東方沙羅、三橋貴風 & 山屋清、関藤繁生、Sinsuke Fujieda Group、田畑満、Sam Gendel & Shin Sasakubo、狩生健志、バズ。
+
+## 情緒評分（score-sf0304）
+- 41279：Opus 1 支照 `RULES.md`＋BRIEF 打 23 張，主線逐張看過 why 與研究稿，未改值。八格：頹靡 7、暴躁 6、放鬆 6、平靜 3、恍惚 1；conf high 1／mid 13／low 9。`merge` → `build-priors` → `build-scale v0` → `build-card-moods`：錨點 104/104 同格，座標 22,173/22,173。不算落格率。
