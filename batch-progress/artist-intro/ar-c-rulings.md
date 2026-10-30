@@ -1095,3 +1095,36 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 ## Spotify 補卡 sf09／sf10 補介紹（ar-d-209～210）小結
 
 - 65 位排入 2 批，65 位全上架（32 full、33 thin）、0 位不寫；審稿合計修 12 位。截止日後事實：Hal Galper 2025 辭世（兩源）、Flea 2026《Honora》。本工作階段主線 WebSearch 6 次。
+## ar-d-203（2026-10-30，Spotify 補卡 sf03 補介紹：日本地下、迷幻、即興、和樂器）
+
+- 20 位全上架（8 full、12 thin），0 位不寫。補洞 2 組（10＋10）、寫作 1 組。
+- 切批：cut 檔原為卡池原文大小寫，`artist-prompt.mjs` 對不上名冊（名冊名顯示 undefined），改用 progress.json 的小寫鍵重寫 cut 檔再萃取。
+- 主線審稿修 5 位：
+  - 陳信輝：寫作層判不過 thin 門檻（無聲音格），主線補 Light in the Attic《Eve》頁（Food Brain 出身、吉他偏藍調、比作 Led Zeppelin）後自寫 thin 145 字；「日本的 Jimi Hendrix」英文維基＋Last.fm 兩源；出生年地（1949 橫濱）只有 Discogs，不寫。
+  - 狩生健志：原稿只有 Tobira 零售頁，主線補 audiopile 商品頁（東京、OWKMJ、曲風）為第二源，正文不動；《Sekai》年份 2020／2021 兩說，不寫。
+  - Seiichi Yamamoto 山本精一：刪西浦真奈「隨 DMBQ 美國巡演車禍」死因細節，只寫 2005 年辭世（補英文維基 Mana Nishiura 頁）。
+  - 関藤繁生：刪「2013 年」（〈Chamber of Reflection〉所在的《Salad Days》是 2014 年，補洞稿年份有誤）。
+  - Sam Gendel & Shin Sasakubo：原稿幾乎只寫 Gendel，改寫末句交代合作盤的形狀（一人一面、互相客串，出自上線簡介）。
+- 身分：割礼維基預抓是醫學條目、バズ預抓是 Buzz Lightyear，皆作廢；バズ改用「バズ (バンド)」。
+- 保留：world's end girlfriend 生年 1975（兩源）；田畑満不寫「Boredoms 創始成員」，寫成「Boredoms 的開端」；三橋貴風卡內基 100 週年公演（演出事實，低風險）。
+- pubIssues：山本精一加入 Boredoms 年份（1986／1987）、田畑満「創始成員」。
+
+## ar-d-204（2026-10-30，Spotify 補卡 sf04 補介紹：日本電子、ambient、嘻哈、lo-fi、YMO 周邊）
+
+- 26 位 → 25 位上架（9 full、16 thin），1 位不寫：Chestnut Bakery（全部事實只有 Discogs 一源、身分未核、無聲音格）。
+- 主線審稿修 7 位：
+  - Yasushi Ide 井出靖：寫作層因無國籍事實未寫；主線補 ototoy 藝人頁＋honeyee 專訪（日本製作人、Grand Gallery 主理、1980 年代與ヤン富田同期、引領 ORIGINAL LOVE 與小沢健二出道）後自寫 thin 148 字。
+  - Hoshina Anniversary：補 hhv-mag 專訪為第二源，同時核實本名 Yoshinobu Hoshina 與「Watechno」，補洞層原登記的 pubIssue 撤銷。
+  - Magamura：補 ADSR Collective 為第二源（匈牙利二人組、先卡帶後黑膠）。
+  - 篠崎史子：刪 1970 以色列豎琴大賽第三名、朝日現代音樂賞、紫綬褒章（皆日文維基單源的名次／獎項），留首屆佐治敬三賞（兩源）。
+  - Sketch Show：重聚句改寫為 HASYMO → YMO，順口並壓回 thin。
+  - SHAKKAZOMBIE：「被視為」改「被稱為」（英文維基單源）。
+  - Emapea：補半形空格。
+- 身分：concrete concrete 預抓是建材、SOFT 預抓是紐約的 Soft (band)，皆作廢；AKA lisa 照來源寫成瑞典計畫、KUSO GVKI 是德國 beatmaker、Magamura 是匈牙利二人組、U.TA屋塔 是台北樂團、Emapea 是波蘭節拍製作人（卡池歸在日本批，身分照來源）。
+- 已故者只寫辭世年：ECD 2018（兩源）；OSUMI 只寫「辭世後」；沖山秀子不寫生卒年；高橋幸宏卒年單源未寫。
+- 不寫：〈GET YOURSELF ARRESTED〉銷量、ECD「日本語饒舌開拓者之一」（單源）、ヤン富田「第一位職業鋼鼓手」、dip 首作登獨立榜第 1 是專輯或迷你專輯（只寫首作）、U.TA屋塔 成立年（兩說）。
+- pubIssues：篠崎史子茱莉亞學歷、個展年份推算；YPY《Zurhyrethm》日期；kinoue64「2001 年起活動」單源；Magamura 載體先後。
+
+## Spotify 補卡 sf03／sf04 補介紹（ar-d-203～204）小結
+
+- 46 位排入 2 批，45 位上架（17 full、28 thin）、1 位不寫；審稿合計修 12 位（含主線補寫 2 位）。

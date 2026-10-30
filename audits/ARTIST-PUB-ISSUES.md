@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 990 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 997 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -980,6 +980,13 @@
 | ar-d-202 | Wink | Especially For You ～優しさにつつまれて～ | 兩人都是少年雜誌選拔的優勝者 | 日文維基寫兩人是 Miss UP 的入賞者，英文維基寫 1987 年分別為第 7、9 名，並非優勝 | https://ja.wikipedia.org/wiki/Wink |
 | ar-d-202 | COHOL | 空洞 | 帶 grindcore 色彩的神奈川黑金屬團 COHOL | ZT Magazine 2015 訪談標題與內文稱 COHOL 為東京據點樂團，Last.fm 摘要同；未找到任何出處寫神奈川 | https://www.ztmag.com/news/zt-interrogation-facing-reality-with-tokyos-cohol/ |
 | ar-d-202 | 静香 | 天界のペルソナ | 静香一手主導：唱歌、彈吉他、搖鈴，詞曲與概念全包 | 英文維基稱吉他由三浦マキ演奏、静香負責緩慢吟誦式人聲，『彈吉他』疑為マキ；詞曲全包無來源確認 | https://en.wikipedia.org/wiki/Shizuka_(band) |
+| ar-d-203 | Seiichi Yamamoto 山本精一 | NOA | 1986 年加入 Boredoms 彈吉他 | 英文維基 Boredoms 條寫山本 1987 年初接替田畑滿；日文維基寫 1986，來源不一致，建議簡介改成不帶年份或再查 | https://en.wikipedia.org/wiki/Boredoms |
+| ar-d-203 | 田畑満 | Lucifer | 1986 年參與創立 Boredoms | 英文維基 Boredoms 條目只稱他是 Eye 組成的最早陣容吉他手之一、1987 年初離團；『參與創立』偏強，建議改『最早期的吉他手』 | https://en.wikipedia.org/wiki/Boredoms |
+| ar-d-204 | 篠崎史子 Ayako Shinozaki | ハープの個展 Music Now for Harp | 曾在紐約茱莉亞音樂學院習琴 | 日文維基學歷僅列桐朋女子高中與桐朋學園大學，未見茱莉亞；musicyouneedtohear 單源，建議查證或刪 | https://ja.wikipedia.org/wiki/%E7%AF%A0%E5%B4%8E%E5%8F%B2%E5%AD%90 |
+| ar-d-204 | 篠崎史子 Ayako Shinozaki | ハープの個展 Music Now for Harp | 1972 年起她每年辦一場「豎琴個展」獨奏會 | 維基只確認個展系列與第 XII、Ⅷ 回存在；起始年未見來源。佐治敬三賞的 2001 年為第 Ⅷ 回，若每年一場，起點約 1994 年，與 1972 年不合，疑有誤 | https://www.suntory.co.jp/sfa/music/saji/release/8125.pdf |
+| ar-d-204 | YPY | Zurhyrethm | 2016 年 3 月，南大阪的 EM Records 把它發成雙張 12 吋黑膠 | Meakusma 寫首張專輯 2016 年 6 月、EM Records Bandcamp 頁寫 2018 年 4 月 27 日；3 月說未見支持，建議查 Discogs／MusicBrainz 後改 | https://emrecords.bandcamp.com/album/zurhyrethm |
+| ar-d-204 | kinoue64 | 空間、事情、時間、事象。 | 廣島出身、2001 年起活動 | 2001 年只有 MusicBrainz 單源，Bandcamp 與評論皆無佐證，且與部落格『四年八張專輯、23 歲』的說法難以相容，建議核對或拿掉 | https://kinoue64.bandcamp.com/ |
+| ar-d-204 | Magamura | Supernaturals | 2017 年 2 月 17 日先由東京廠牌 Kebko Music 推出卡帶 | The Ransom Note 的報導中卡帶與黑膠的先後與 2017-02-17 對應的載體說法不一（搜尋摘要稱卡帶早在前一年 2 月已出，2017-02-17 為黑膠），建議對照 Kebko Music Bandcamp 核實 | https://www.theransomnote.com/?p=21846 |
 | ar-d-205 | 吳書齊 | 鹿港 | 吳書齊本人彈鋼琴；『四人共同作曲』 | 事實庫唯一來源 Discogs 登記作曲為 Suchi Wu、Kevin James、Martijn Vanbuel、Toshihiro Wakaike 四人，上線簡介寫吳書齊彈鋼琴、四人共同作曲；Discogs 作曲名單與編制人名是否一致未能複核，僅供店主參考 | https://www.discogs.com/release/29454466 |
 | ar-d-207 | Frijid Pink | Frijid Pink | 一位電台音樂總監聽了，建議廠牌改推這首 | Stevers 本人訪談稱是 Dearborn AM 電台經理（station manager）；Michigan 名人堂與維基稱 DJ／音樂總監 Paul Cannon。職稱兩說並存，建議簽改寫『一位電台人士』 | https://classicbands.com/FrijidPinkInterview.html |
 | ar-d-207 | Frijid Pink | Frijid Pink | 在一次錄音預約剩下的時間即興錄下 | Michigan 名人堂稱 1967 年 session 一次錄成，與維基『session 尾端的填充曲』大致一致，無錯；僅備查 | https://michiganrockandrolllegends.com/hall-of-fame/artists/330-frijid-pink |
