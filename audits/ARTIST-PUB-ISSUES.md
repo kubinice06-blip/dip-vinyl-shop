@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 967 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 968 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -971,3 +971,4 @@
 | ar-d-130 | Dewa 19 | Terbaik Terbaik | 1995 年 8 月 2 日面世 | Jakarta Post（2022 黑膠報導）與搜尋摘要所引維基都寫 1995 年 6 月 20 日發行；兩者不一致，需店主對 Aquarius 版或維基確認。 | https://www.thejakartapost.com/culture/2022/09/23/dewa-19-album-gets-vinyl-treatment-for-the-first-time |
 | ar-d-130 | M’bilia Bel | Boya Ye | 領唱的 M’bilia Bel 與他在 1980 年代中期結婚 | 維基 Mbilia Bel 頁寫 1984 年訂婚、約 1988 年關係結束，未明說結婚；事實庫引的 Tabu Ley 頁說結婚。低度存疑，建議改「相戀並育有一女」或再查 | https://en.wikipedia.org/wiki/Mbilia_Bel |
 | ar-d-130 | Nyboma | Doublé doublé | 1972 年起在 Verckys 旗下唱紅 | 維基 Nyboma 頁：1972 年他加入 Orchestre Bella Bella（後者簽 Verckys 的 Vévé 廠牌），1973 年共組 Lipua Lipua；未見「在 Verckys 旗下」直接說法，建議改為更保守的寫法或補證 | https://en.wikipedia.org/wiki/Nyboma |
+| ar-d-205 | 吳書齊 | 鹿港 | 吳書齊本人彈鋼琴；『四人共同作曲』 | 事實庫唯一來源 Discogs 登記作曲為 Suchi Wu、Kevin James、Martijn Vanbuel、Toshihiro Wakaike 四人，上線簡介寫吳書齊彈鋼琴、四人共同作曲；Discogs 作曲名單與編制人名是否一致未能複核，僅供店主參考 | https://www.discogs.com/release/29454466 |
