@@ -979,7 +979,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB release-group 搜 artist:高木元輝 / Mototeru Takagi 與 releasegroup:Mosura Freight 皆無此盤（2026-10-30）",
+  "mbAbsenceProof": {
+   "queries": [
+    "release-group?query=releasegroup:\"Mosura Freight\" → count 0",
+    "release-group?query=artist:\"高木元輝\" → count 9（at まんぼう、2001.07.06、at KUKU、摩訶耶寺の高木元輝、Live At FarOut 等），無 Mosura Freight!",
+    "release-group?query=artist:\"Mototeru Takagi\"（2026-10-29 策展層同查無）"
+   ],
+   "checkedAt": "2026-10-30",
+   "conclusion": "MusicBrainz 以盤名與藝人名（漢字、羅馬字）兩個方向查詢，release-group 皆無《Mosura Freight!》；Discogs master 512067／release 4633276 與 BnF 目錄可證此盤存在。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/512067-Mototeru-Takagi-Trio-Mosura-Freight",
    "https://www.discogs.com/artist/860429-Mototeru-Takagi-Trio",

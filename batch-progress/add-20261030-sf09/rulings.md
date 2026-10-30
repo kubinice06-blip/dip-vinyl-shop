@@ -103,3 +103,12 @@
 - **41868** 跨兩檔合掃 han() 4-gram（writer-1 交件中途與定稿各掃一次）：拆掉「發行這張」×4、「交給發行」×3、「第二張專輯」×3、「專輯年月日」×3、「同名首作」、「年月地點是」、「首全是他」、「這張專輯」、「廠牌發行」、「樂團在年」、「在年月日」、「吉他手年」、「發行的這張」、「唱片年月」、「完整專輯」、「他們第一」、「與鼓手都」、「是他的首」等殘片（2 張的也當 3 張拆）。定稿 2 次以上只剩樂器名（薩克斯風、低音大提琴、單簧管）與地名（斯德哥爾摩）。
 - **41869** 研究層推翻策展層照辦（以研究稿與 note 為準）：Spiral Deluxe 寫第二張、Axis；Assagai 不寫美版改題、不寫〈Kari〉，〈Hey Jude〉之後只稱「那首翻唱」；Graciela 不寫成探戈專輯；高木 只寫「簧管」與店名；濱瀬 2018 版明寫「另一次錄音」；中村 不寫披頭四與 Oricon；Nameless／Three Little Words 不掛 Juno；swing slow 的 コシミハル 寫 Miharu Koshi 並首次括注越美晴。媒體名與媒體榜單名次一律未寫（Honora 的榜單名次 note 未派）。
 - **41870** 只用 note：Juniper 三位團員的樂器（facts 有、note 沒有）不寫；Assagai 的「南非爵士團」「披頭四」不寫；Fresh Moods 不寫 Giessen 所屬邦名。Girl and Robot 第二句由「樂團的第二張專輯」改成「樂團第二張作品」，只為避開與 writer-1（Your Turn／Siberian Express／Jersey）的 4-gram，意思不變。
+
+## 主線審稿（2026-10-30，雲端主線，39 張）
+- 前一個工作階段的 writer-1 代理在交件後被額度中斷，交件紀錄未寫進本檔；`out-1.json` 20 張、`out-2.json` 19 張皆齊，`qa-batch out` 39/39、`qa-check-research` 兩檔 0 標記、`fix-spacing` 待補 0。
+- 41873：逐張讀全文、對回研究稿。改兩處：
+  - `desc2:Bill Bruford's Earthworks|Earthworks`：「約 1984 年結束樂團的重組時期之後」→「1984 年 King Crimson 那段重組期告終後」（原句主詞不清，讀起來像 Earthworks 結束；研究 a1 的 1984 是 King Crimson 重組期結束）。
+  - `desc2:Bobo Stenson Trio|Serenity`：原句「由他和兩位夥伴錄於…HageGården ，」逗號前多一格，且後文直接出現 Jormin、Christensen 卻沒交代是誰。改成「1999 年 4 月，他和低音提琴手 Anders Jormin、鼓手 Jon Christensen 在瑞典布倫斯庫格的 HageGården 錄下 19 首，ECM 雙 CD 於 2000 年 6 月 5 日問世」（研究 a3；「日」後一字仍是「問」）。只動正文措辭，research／hooks／input 不用同步。
+- 其餘 37 張逐張審過，未改字。媒體名、媒體榜單名次、「據說／據傳」全文 grep 0。Night Cap thin 181 字（上限 180 超 1 字），屬計數邊界，不改。
+- 41874：**頂點逐張判定 0 張**。39 張 classic 皆 ≤4（Play Bach、Bass Desires、金字塔為 4），無殿堂資格；高木元輝《Mosura Freight!》obscurity 5，但只有 Discogs／BnF 目錄與 300 張限量事實，沒有遺珠級評論證據，不判 pearl。manifest `apexAssessment` 皆寫明已評估。
+- 41875：封面 39/39 live-check HTTP 200 image；寫入前對 origin/main 與所有 `claude/*` 分支 seed 去重 0 撞。
