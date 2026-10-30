@@ -1,0 +1,3310 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-sf02",
+ "batchNote": "薄細項策展線（add-20261030-sf02）",
+ "createdAt": "2026-10-30T03:10:57Z",
+ "albums": [
+  {
+   "artist": "betcover!!",
+   "album": "時間",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3daf345b-fda5-4713-a326-d419cfd79054",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本インディ：鬼才・柳瀬二郎の突破作；ジャズ、ポストパンク、歌謡が捻れて同居する、betcover!!最高評価の一枚｜策展無疑點｜MB release-group 3daf345b-fda5-4713-a326-d419cfd79054：title「時間」、Album、first-release-date 2021-08-25、artist-credit「betcover!!」。證據：https://musicbrainz.org/release-group/3daf345b-fda5-4713-a326-d419cfd79054 https://coverartarchive.org/release-group/3daf345b-fda5-4713-a326-d419cfd79054/front https://music.apple.com/jp/album/%E6%99%82%E9%96%93/1579826439",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3daf345b-fda5-4713-a326-d419cfd79054/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 100812,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 100812）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "離開 avex 之後，柳瀬二郎自掏腰包做了這張。1999 年生於東京調布的柳瀬，是一手包辦 betcover!! 詞、曲與編曲的主腦。他從 2016 年起待在 avex 旗下，2021 年 1 月離開時，合約期間寫下的作品版權都不在自己手上，於是決定自己出資做下一張。2021 年 8 月 25 日發行，是他第三張，以自主盤形式問世，共 10 首。錄音用的是五人陣容，鼓組與貝斯一應俱全。柳瀬說這張比過去更即興，也更好記；此後的現場，開始放進樂手自己的即興與編曲。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/Betcover!!",
+     "https://tokion.jp/en/2023/04/11/betcover-jiro-yanase/",
+     "https://www.discogs.com/release/23842424-betcover-時間",
+     "https://www.thefader.com/2023/01/02/song-you-need-betcover-explodes-on-the-art-rock-epic-choujin",
+     "https://musicbrainz.org/release-group/3daf345b-fda5-4713-a326-d419cfd79054"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ff/91/1e/ff911eb7-1c25-c352-22af-4e05fb45dd9d/mzaf_17027106520162115566.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1579826439",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1579826439「betcover!!《時間》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Yurei〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "betcover!!",
+   "album": "卵",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c4d03a30-0293-4e59-91e5-9582e1d22813",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本インディ：『時間』に続く大編成寄りの完成形、批評でも高評価の第二の頂点｜策展無疑點｜MB release-group c4d03a30-0293-4e59-91e5-9582e1d22813：title「卵」、Album、first-release-date 2022-12-21、artist-credit「betcover!!」。證據：https://musicbrainz.org/release-group/c4d03a30-0293-4e59-91e5-9582e1d22813 https://coverartarchive.org/release-group/c4d03a30-0293-4e59-91e5-9582e1d22813/front https://music.apple.com/jp/album/%E5%8D%B5/1658011542",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c4d03a30-0293-4e59-91e5-9582e1d22813/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 40475,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 40475）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "錄音室只租兩天，多半只架一支麥克風。東京獨立樂團 betcover!! 由主腦柳瀬二郎領軍，2022 年 12 月 21 日推出第四張專輯，10 首皆由柳瀬親手製作。錄音室位在銀座，Happy End、坂本龍一、矢野顕子都曾在此錄音；樂手大多同時演奏，人聲之後再疊上。收音方式近似古典與爵士；節拍器也撤下，速度隨樂手自然地忽快忽慢。最後連母帶處理都省掉，柳瀬說少了壓縮，才保得住老音樂的那份豐厚。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/Betcover!!",
+     "https://tokion.jp/en/2023/04/11/betcover-jiro-yanase/",
+     "https://www.thefader.com/2023/01/02/song-you-need-betcover-explodes-on-the-art-rock-epic-choujin",
+     "https://musicbrainz.org/release-group/c4d03a30-0293-4e59-91e5-9582e1d22813"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/3d/66/193d66f2-6aaa-f467-0a24-9b7c68736193/mzaf_5109069988502090911.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1658011542",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1658011542「betcover!!《卵》」：曲目 9/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Bosen〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "クラムボン",
+   "album": "imagination",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5b61ccc7-74b0-3621-abee-55931402a688",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本インディ：原田郁子・ミト・伊藤大助の三人組が手応えを掴んだ代表作；ピアノとリズムの柔らかい解像感｜策展無疑點｜MB release-group 5b61ccc7-74b0-3621-abee-55931402a688：title「imagination」、Album、first-release-date 2003-11-19、artist-credit「クラムボン」。證據：https://musicbrainz.org/release-group/5b61ccc7-74b0-3621-abee-55931402a688 https://coverartarchive.org/release-group/5b61ccc7-74b0-3621-abee-55931402a688/front https://music.apple.com/jp/album/imagination/259941845",
+    "queryAlias": "Clammbon"
+   },
+   "research": {
+    "suggestedYear": 2003,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5b61ccc7-74b0-3621-abee-55931402a688/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 6202,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 6202）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "爵士科三個學生，為了彈 Carole King 湊成一團。クラムボン是把爵士和弦接上流行與電子樂的三人組：原田郁子主唱兼鍵盤，ミト彈貝斯，伊藤大助打鼓。1999 年他們簽下 Warner，踏進主流。從前作開始，寫歌與錄音都搬到山梨的小淵沢合宿進行，單曲也就此停發。2003 年 11 月 19 日由 Columbia 發行原創第五作，三人自行製作，曲目 12 首。2004 年巡演結束後，三人各自轉入個人活動。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/クラムボン_(バンド)",
+     "https://en.wikipedia.org/wiki/Clammbon",
+     "https://www.discogs.com/release/4323199-Clammbon-Imagination",
+     "https://ototoy.jp/news/82839",
+     "https://musicbrainz.org/release-group/5b61ccc7-74b0-3621-abee-55931402a688"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b2/6c/d8/b26cd8cd-9fb8-57a5-b48a-eced60e000df/mzaf_1353210316237939626.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1085887268",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1085887268「クラムボン《Imagination (2016 Remaster)》」：曲目 12/12 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈いってらっしゃい (2016 リマスター)〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "DIR EN GREY",
+   "album": "UROBOROS",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f3a260b7-669f-3f0c-a8d6-21886fade241",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本ヘヴィ：国際的評価を決めた重量級作；ダークなプログレッシブ・ヘヴィネスと京の多彩な声｜策展無疑點｜MB release-group f3a260b7-669f-3f0c-a8d6-21886fade241：title「UROBOROS」、Album、first-release-date 2008-11-11、artist-credit「DIR EN GREY」。證據：https://musicbrainz.org/release-group/f3a260b7-669f-3f0c-a8d6-21886fade241 https://coverartarchive.org/release-group/f3a260b7-669f-3f0c-a8d6-21886fade241/front https://music.apple.com/jp/album/uroboros/293906382",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "metal",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f3a260b7-669f-3f0c-a8d6-21886fade241/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 4,
+    "listeners": 69209,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 69209）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "曼陀林、琵琶、電西塔琴，全被塞進金屬樂裡。1997 年在大阪結成的 DIR EN GREY，是一支由京領唱的五人金屬團。2008 年 1、2 月團員各自寫曲，樂團自任製作，前後輾轉約十間錄音室。編制裡還多了康加鼓與電箏，旋律帶著中東音階；京也添上一種收起嘶吼的柔和唱法。日本自 2008 年 11 月 12 日起上市，全球約 17 國同步發售。Oricon 最高第 4 名；在 Billboard 200 拿到第 114 名，是樂團首度登上該榜。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/Dir_en_grey",
+     "https://en.wikipedia.org/wiki/Uroboros_(album)",
+     "https://ja.wikipedia.org/wiki/UROBOROS",
+     "https://musicbrainz.org/release-group/f3a260b7-669f-3f0c-a8d6-21886fade241"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e3/65/74/e3657458-28a4-1198-0357-b9d7bc8ae3a3/mzaf_11251563958581334101.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "491293434",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 491293434「DIR EN GREY《UROBOROS [Remastered & Expanded]》」：曲目 17/20 對上 MB 原盤（Apple 共 15 軌），取第 1 軌〈SA BIR〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "DIR EN GREY",
+   "album": "Withering to death.",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "610ecea8-5221-32b0-83d6-378a47202ec7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本ヘヴィ：ニューメタルから叙情と凶暴を往復する転換期の傑作、バンド絶頂期の一枚｜策展無疑點｜MB release-group 610ecea8-5221-32b0-83d6-378a47202ec7：title「Withering to death.」、Album、first-release-date 2005-03-09、artist-credit「Dir en grey」。證據：https://musicbrainz.org/release-group/610ecea8-5221-32b0-83d6-378a47202ec7 https://coverartarchive.org/release-group/610ecea8-5221-32b0-83d6-378a47202ec7/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2005,
+    "yearNote": ""
+   },
+   "genres": [
+    "metal",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/610ecea8-5221-32b0-83d6-378a47202ec7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 4,
+    "listeners": 55165,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 55165）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "芬蘭專輯榜上，第一組上榜的非歐美藝人。以哥德與另類金屬為樂種的日本樂團 DIR EN GREY，歌詞全由京執筆。2005 年 3 月 9 日，Firewall Div. 替他們推出第五張主流專輯，14 首，標題取自 wither（枯萎）。在 Oricon 排到第 8 名，芬蘭則是第 31 名。這也是他們在歐洲、北美與韓國首度正式發行，同年 5 月更在柏林辦了首場歐洲單獨公演。〈悲劇は目蓋を下ろした優しき鬱〉是樂團唯一的慢板抒情曲，全程彈原音吉他。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Withering_to_death.",
+     "https://ja.wikipedia.org/wiki/Withering_to_death.",
+     "https://ja.wikipedia.org/wiki/Dir_en_grey",
+     "https://musicbrainz.org/release-group/610ecea8-5221-32b0-83d6-378a47202ec7"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/1f/fa/431ffa2b-c48a-9959-3c5c-1fe3c3c190ba/mzaf_639873226731184970.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1492676977",
+    "storefront": "JP",
+    "collectionExplicitness": "explicit",
+    "note": "Apple jp 1492676977「DIR EN GREY《Withering to Death.》」：Apple jp 同名 14 軌、2005-03-09 與 MB 原盤一致，取第 1 軌〈Merciless Cult〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "GRASS VALLEY",
+   "album": "LOGOS～行～",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "67bba02a-1bdb-4db3-8d56-438f18b98b5b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本ロック：80年代後半の東京ニューウェーヴ系ロックバンド；代表的なアルバムとして2019年リマスター配信｜⚠ Spotify の GRASS VALLEY が1980年代のこのバンドかどうか確定はできない（同名候補なし、2019リマスターが配信されている点から推定）｜MB release-group 67bba02a-1bdb-4db3-8d56-438f18b98b5b：title「Logos～行～」、Album、first-release-date 1989-06-01、artist-credit「Grass Valley」。證據：https://musicbrainz.org/release-group/67bba02a-1bdb-4db3-8d56-438f18b98b5b https://coverartarchive.org/release-group/67bba02a-1bdb-4db3-8d56-438f18b98b5b/front https://music.apple.com/jp/album/logos-%E8%A1%8C-2019-remastered/1609000433",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/67bba02a-1bdb-4db3-8d56-438f18b98b5b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 37,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 37）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "前作走實驗，第四張他們轉身寫流行歌。GRASS VALLEY 1987 年出道，屬於五人編制的新浪潮樂團。那張前作叫《STYLE》，這回的歌詞多半出自主唱出口雅之。1989 年 6 月 1 日上市，由 FITZBEAT／CBS・Sony 發行，排行最高來到第 35 名。〈TRUTH〉與〈MY LOVER〉都成了樂團的代表曲。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/GRASS_VALLEY",
+     "https://ja.wikipedia.org/wiki/LOGOS〜行〜",
+     "https://music.apple.com/jp/album/logos-%E8%A1%8C-2019-remastered/1609000433",
+     "https://musicbrainz.org/release-group/67bba02a-1bdb-4db3-8d56-438f18b98b5b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/af/2d/ec/af2dec46-c513-ee03-3275-a6d1ba37f455/mzaf_15957748870211916910.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1609000433",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1609000433「GRASS VALLEY《LOGOS～行～ (2019 Remastered)》」：Apple jp《LOGOS～行～ (2019 Remastered)》13 軌，前 11 軌為原盤，取第 1 軌〈空中回廊 (2019 Remastered)〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "きのこ帝国",
+   "album": "フェイクワールドワンダーランド",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7610cf6d-5cb7-498d-9784-6c3201391725",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本インディ：シューゲイズ的な轟音と佐藤千亜妃の湿った歌が、メジャー期を前に結晶した代表作｜策展無疑點｜MB release-group 7610cf6d-5cb7-498d-9784-6c3201391725：title「フェイクワールドワンダーランド」、Album、first-release-date 2014-10-29、artist-credit「きのこ帝国」。證據：https://musicbrainz.org/release-group/7610cf6d-5cb7-498d-9784-6c3201391725 https://coverartarchive.org/release-group/7610cf6d-5cb7-498d-9784-6c3201391725/front https://music.apple.com/jp/album/%E3%83%95%E3%82%A7%E3%82%A4%E3%82%AF%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E3%83%AF%E3%83%B3%E3%83%80%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89/926192006",
+    "queryAlias": "Kinokoteikoku"
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7610cf6d-5cb7-498d-9784-6c3201391725/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 10766,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 10766）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "單曲〈東京〉原本限量 5000 張，後來只好加印。以 shoegaze 與 indie rock 為底的きのこ帝国，2007 年由立正大學的同學結成，吉他手像蘑菇的穿著，加上ゆらゆら帝国，合成了團名；詞曲全由主唱佐藤千亜妃包辦。先行單曲〈東京〉之後，第二張全長緊接著 2014 年 10 月 29 日問世，由 DAIZAWA RECORDS／UK.PROJECT 發行。除了新歌，也收進舊曲，當年不合用的曲子，這次用現在的技術重新編曲。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/きのこ帝国",
+     "https://ototoy.jp/_/default/p/27377",
+     "https://ototoy.jp/_/default/p/46198",
+     "https://www.discogs.com/release/6347826-きのこ帝国-フェイクワールドワンダーランド",
+     "https://musicbrainz.org/release-group/7610cf6d-5cb7-498d-9784-6c3201391725"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ce/93/d0/ce93d09b-6ae8-8ee1-e406-b624446ea05d/mzaf_17966838070879911927.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "926192006",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 926192006「きのこ帝国《フェイクワールドワンダーランド》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈東京〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "きのこ帝国",
+   "album": "愛のゆくえ",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "63baae10-aed7-40e2-8bb4-977853384d7a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本インディ：メジャー1作目、轟音と歌ものの均衡が最も取れたもう一つの高峰｜策展無疑點｜MB release-group 63baae10-aed7-40e2-8bb4-977853384d7a：title「愛のゆくえ」、Album、first-release-date 2016-11-02、artist-credit「きのこ帝国」。證據：https://musicbrainz.org/release-group/63baae10-aed7-40e2-8bb4-977853384d7a https://coverartarchive.org/release-group/63baae10-aed7-40e2-8bb4-977853384d7a/front https://music.apple.com/jp/album/aino-yukue/1440658181",
+    "queryAlias": "Kinokoteikoku"
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/63baae10-aed7-40e2-8bb4-977853384d7a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 4819,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 4819）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "標題曲成了電影《湯を沸かすほどの熱い愛》的主題曲。由佐藤千亜妃主唱並寫下詞曲的 shoegaze 樂團きのこ帝国，2016 年 11 月經 EMI Records 發表第四張全長，也是主流時期第二作，共 9 首。Oricon 最佳名次為第 19 名。製作與錄音由 Uni Inoue 與 ZAK 負責。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Kinoko_Teikoku",
+     "https://ja.wikipedia.org/wiki/きのこ帝国",
+     "https://www.discogs.com/release/12209124-きのこ帝国-愛のゆくえ",
+     "https://www.discogs.com/master/1387477",
+     "https://musicbrainz.org/release-group/63baae10-aed7-40e2-8bb4-977853384d7a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3e/da/92/3eda927c-9ad9-e2bc-461e-b94adc324ae9/mzaf_12161447084312426384.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1440658181",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1440658181「きのこ帝国《Aino Yukue》」：Apple 以羅馬拼音《Aino Yukue》上架，9 軌、2016-11-02 與 MB 一致，取第 1 軌〈愛のゆくえ〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "KIRINJI",
+   "album": "3",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9929a41f-7ed6-4f64-8ac0-46df5c20880a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本ポップ：堀込兄弟時代の名盤；洒脱なAOR／ソウルと文学的な歌詞で都市型ポップの基準になった｜策展無疑點｜MB release-group 9929a41f-7ed6-4f64-8ac0-46df5c20880a：title「3」、Album、first-release-date 2000-11-08、artist-credit「キリンジ」。證據：https://musicbrainz.org/release-group/9929a41f-7ed6-4f64-8ac0-46df5c20880a https://coverartarchive.org/release-group/9929a41f-7ed6-4f64-8ac0-46df5c20880a/front https://music.apple.com/jp/album/3/258411790",
+    "queryAlias": "キリンジ"
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9929a41f-7ed6-4f64-8ac0-46df5c20880a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 8321,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 8321）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "〈エイリアンズ〉被一再翻唱，這張才被重新認識。KIRINJI 是堀込高樹、泰行兄弟在 1996 年組起的二人組，當時名叫キリンジ，1998 年由 Warner 出道，製作人是冨田恵一。第三張在 2000 年 11 月上架，13 首歌，Oricon 停在第 18 名，發行時銷量平平。〈エイリアンズ〉早一個月先發成單曲，詞曲出自堀込泰行，他想替缺乏文化氣息的郊外寫一首歌。多年後，翻唱與廣告陸續找上這首歌，專輯的評價才隨之回升。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/KIRINJI",
+     "https://ja.wikipedia.org/wiki/3_(キリンジのアルバム)",
+     "https://www.discogs.com/release/12210319-Kirinji-キリンジ-3",
+     "https://ja.wikipedia.org/wiki/エイリアンズ",
+     "https://www.discogs.com/master/1387620",
+     "https://musicbrainz.org/release-group/9929a41f-7ed6-4f64-8ac0-46df5c20880a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ff/a5/1c/ffa51c47-9525-cda9-b42d-a0cbe49f5476/mzaf_18057927140015097306.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "258411790",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 258411790「KIRINJI《3》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈グッデイ・グッバイ〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "KIRINJI",
+   "album": "Fine",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d18aeb61-f850-4ac0-a977-09dab20df711",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本ポップ：『3』に並ぶ堀込兄弟期の高峰、練り込まれたアレンジが光る第二作｜策展無疑點｜MB release-group d18aeb61-f850-4ac0-a977-09dab20df711：title「Fine」、Album、first-release-date 2001-11-21、artist-credit「キリンジ」。證據：https://musicbrainz.org/release-group/d18aeb61-f850-4ac0-a977-09dab20df711 https://coverartarchive.org/release-group/d18aeb61-f850-4ac0-a977-09dab20df711/front https://music.apple.com/jp/album/fine/258482600",
+    "queryAlias": "キリンジ"
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d18aeb61-f850-4ac0-a977-09dab20df711/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 5477,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 5477）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "專輯名原本想叫 Orthodox，封面是一幅洋梨靜物畫。堀込兄弟分寫詞曲的 KIRINJI，看中的是這個暫定標題端正、中道的印象。2001 年 11 月 21 日從 Warner 旗下 A.K.A. Records 發行，是第四張錄音室作品，本編 11 首，發行名義仍是片假名的キリンジ。冨田恵一擔任製作，並負責全曲的樂器與處理，編制裡有管樂、踏板鋼棒吉他與弦樂。〈雨は毛布のように〉找來 aiko 合唱。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/キリンジ",
+     "https://ja.wikipedia.org/wiki/Fine_(キリンジのアルバム)",
+     "https://ja.wikipedia.org/wiki/冨田恵一",
+     "https://musicbrainz.org/release-group/d18aeb61-f850-4ac0-a977-09dab20df711"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/44/66/b6/4466b65f-40ef-0245-86b0-dd62a17906f4/mzaf_5027641847852438037.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1445914788",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1445914788「KIRINJI《Fine (2018 Remaster)》」：Apple jp《Fine (2018 Remaster)》14 軌、原發行日 2001-11-21，取第 1 軌〈ムラサキ・サンセット (2018 Remaster)〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "OGRE YOU ASSHOLE",
+   "album": "homely",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4f47c792-175b-4aed-a444-336cb7f3b236",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本サイケ：サイケ／クラウトを日本語で内面化した転機作；反復と余白の気配が代表作とされる｜策展無疑點｜MB release-group 4f47c792-175b-4aed-a444-336cb7f3b236：title「homely」、Album、first-release-date 2011-08-24、artist-credit「Ogre You Asshole」。證據：https://musicbrainz.org/release-group/4f47c792-175b-4aed-a444-336cb7f3b236 https://coverartarchive.org/release-group/4f47c792-175b-4aed-a444-336cb7f3b236/front https://music.apple.com/jp/album/homely/455914169",
+    "queryAlias": "オウガ・ユー・アスホール"
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "455914169",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2f/05/a8/2f05a835-5fdd-4b18-4daa-d107d5936b04/4988021816946.png/600x600bb.jpg",
+    "note": "CAA 無圖；取已釘定試聽的 Apple 455914169（OGRE YOU ASSHOLE《homely》）官方圖，主線 2026-10-30 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 8271,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 8271）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "工程師要他們再玩得胡鬧一點。長野出身、2001 年組成的搖滾團 OGRE YOU ASSHOLE，從 2008 年起把錄音交給製作人石原洋與工程師中村宗一郎。樂團本來打算跟著節拍器錄、層層疊上吉他；中村把數位延遲換成磁帶回聲，讓他們試老吉他、老貝斯與音箱。2011 年 8 月 24 日面世，是 VAP 旗下的第四張，收錄 9 首，Oricon 排第 45 名。此後他們從美國的獨立樂風轉向迷幻、AOR、後龐克與 krautrock，石原稱這張是一次大轉向。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/OGRE_YOU_ASSHOLE",
+     "https://www.weblio.jp/content/OGRE_YOU_ASSHOLE",
+     "https://ototoy.jp/feature/20141117",
+     "https://lp.p.pia.jp/article/news/82201/index.html",
+     "https://musicbrainz.org/release-group/4f47c792-175b-4aed-a444-336cb7f3b236"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/6b/b5/d76bb5f0-81b3-4883-97ee-6b872db72ae6/mzaf_5941425549418258028.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "455914169",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 455914169「OGRE YOU ASSHOLE《homely》」：Apple jp 同名 9 軌、2011-08-24（MB 曲目為羅馬拼音故自動比對 0），取第 1 軌〈明るい部屋〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "OGRE YOU ASSHOLE",
+   "album": "100年後",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c38904ca-39fb-4efe-acad-e208a651af6f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本サイケ：反復グルーヴとポップが最も均衡した第二の頂点、バンドの評価を固めた｜策展無疑點｜MB release-group c38904ca-39fb-4efe-acad-e208a651af6f：title「100年後」、Album、first-release-date 2012-09-19、artist-credit「Ogre You Asshole」。證據：https://musicbrainz.org/release-group/c38904ca-39fb-4efe-acad-e208a651af6f https://coverartarchive.org/release-group/c38904ca-39fb-4efe-acad-e208a651af6f/front",
+    "queryAlias": "オウガ・ユー・アスホール"
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c38904ca-39fb-4efe-acad-e208a651af6f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 8248,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 8248）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "這時期的 demo，出戸学連貝斯和鼓都自己放。主唱出戸学所屬的 OGRE YOU ASSHOLE，是來自長野的搖滾樂隊。2012 年 9 月樂團經 VAP 端上第五張，共 8 首，打進 Oricon 第 47 名。石原洋與中村宗一郎繼續掌舵，延續迷幻、krautrock 與後龐克的路線，與前後兩張並稱三部曲。",
+    "sourceUrls": [
+     "https://www.weblio.jp/content/OGRE_YOU_ASSHOLE",
+     "https://ototoy.jp/feature/20141117",
+     "https://ja.wikipedia.org/wiki/OGRE_YOU_ASSHOLE",
+     "https://ototoy.jp/feature/2016111110",
+     "https://musicbrainz.org/release-group/c38904ca-39fb-4efe-acad-e208a651af6f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/50/ad/b9/50adb9ac-1fc2-bbff-eb56-f230faa44885/mzaf_7148997918947142640.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "559739842",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 559739842「OGRE YOU ASSHOLE《Hyakunengo》」：Apple 以《Hyakunengo》上架，8 軌、2012-09-19，取第 1 軌〈これから〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "THE BACK HORN",
+   "album": "人間プログラム",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c62d1d2b-4ccd-3c4e-a6c2-22766ca76d83",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本ロック：初期の情念と焦燥を剥き出しにした出世作、バンドの原点を示す｜策展無疑點｜MB release-group c62d1d2b-4ccd-3c4e-a6c2-22766ca76d83：title「人間プログラム」、Album、first-release-date 2001-10-17、artist-credit「THE BACK HORN」。證據：https://musicbrainz.org/release-group/c62d1d2b-4ccd-3c4e-a6c2-22766ca76d83 https://coverartarchive.org/release-group/c62d1d2b-4ccd-3c4e-a6c2-22766ca76d83/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c62d1d2b-4ccd-3c4e-a6c2-22766ca76d83/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 7056,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 7056）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "貝斯手出道前離團，幾首歌由主唱接手彈。另類搖滾團 THE BACK HORN 在 1998 年 4 月結成，山田将司主唱，菅波栄純彈吉他並寫大部分的詞，松田晋二打鼓兼團長。2001 年 4 月他們以〈サニー〉從 SPEEDSTAR RECORDS 主流出道，而初代貝斯手平林直己在同年 2 月就已離開，空缺另請井上富雄支援。2001 年 10 月 17 日交出主流第一張全長，11 首，Oricon 拿下第 30 名。〈水槽〉暫名「くらいやつ」，是全盤最暗的一首。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/THE_BACK_HORN",
+     "https://en.wikipedia.org/wiki/The_Back_Horn",
+     "https://ja.wikipedia.org/wiki/人間プログラム",
+     "https://musicbrainz.org/release-group/c62d1d2b-4ccd-3c4e-a6c2-22766ca76d83"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/45/cc/05/45cc0516-fa32-9509-52ad-84d09d1274b7/mzaf_1747276917152967249.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "129409656",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 129409656「THE BACK HORN《Ningen Program》」：Apple 以《Ningen Program》上架，11 軌、2001-10-17，取第 1 軌〈幾千光年の孤独〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "THE BACK HORN",
+   "album": "太陽の中の生活",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2858dfab-60e2-3991-ab40-197bb6f632d5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本ロック：成熟期の代表作、叙情とハードさが両立したアルバム｜策展無疑點｜MB release-group 2858dfab-60e2-3991-ab40-197bb6f632d5：title「太陽の中の生活」、Album、first-release-date 2006-04-19、artist-credit「THE BACK HORN」。證據：https://musicbrainz.org/release-group/2858dfab-60e2-3991-ab40-197bb6f632d5 https://coverartarchive.org/release-group/2858dfab-60e2-3991-ab40-197bb6f632d5/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2858dfab-60e2-3991-ab40-197bb6f632d5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 4121,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 4121）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "主唱山田将司這次還吹小號、拉手風琴。搖滾四人組 THE BACK HORN 的演奏署名裡，旁白與打擊也記在松田晋二名下。2006 年 4 月 19 日登場，由 SPEEDSTAR RECORDS 發行，全 11 首，Oricon 最好成績是第 19 名。作曲編曲全數署名樂團，詞多出自菅波栄純，松田、岡峰光舟與山田也各寫了歌。單曲先發了三支，〈カオスダイバー〉排在第一首。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/太陽の中の生活",
+     "https://ja.wikipedia.org/wiki/THE_BACK_HORN",
+     "https://en.wikipedia.org/wiki/The_Back_Horn",
+     "https://musicbrainz.org/release-group/2858dfab-60e2-3991-ab40-197bb6f632d5"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ef/a4/d1/efa4d132-faf0-6fb2-edc7-da25a620948e/mzaf_2713802651698813238.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "137301413",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 137301413「THE BACK HORN《Taiyo no Naka no Seikatsu》」：Apple 以《Taiyo no Naka no Seikatsu》上架，11 軌、2006-04-19，取第 1 軌〈カオスダイバー〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Thee Michelle Gun Elephant",
+   "album": "Chicken Zombies",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5792071d-4809-48eb-aa8e-c0267326fda1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本ロック：ガレージ・ロックの日本的完成形、4枚目で初期の勢いが最高潮｜策展無疑點｜MB release-group 5792071d-4809-48eb-aa8e-c0267326fda1：title「Chicken Zombies」、Album、first-release-date 1997-11-01、artist-credit「Thee Michelle Gun Elephant」。證據：https://musicbrainz.org/release-group/5792071d-4809-48eb-aa8e-c0267326fda1 https://coverartarchive.org/release-group/5792071d-4809-48eb-aa8e-c0267326fda1/front",
+    "queryAlias": "ミッシェル・ガン・エレファント"
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5792071d-4809-48eb-aa8e-c0267326fda1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 12592,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 12592）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "吉他手アベフトシ幾乎不用效果器。以車庫搖滾、藍調與 rockabilly 為底子的 Thee Michelle Gun Elephant，1991 年從大學社團起家，四人由チバユウスケ主唱，1996 年轉到日本コロムビア。アベ那把吉他的聲音，就靠琴身與音箱撐起來。1997 年 11 月 1 日經 TRIAD 上市，製作由樂團操刀，共 13 首。Oricon 衝上第 5 名，第一次打進前十。長 8 分 16 秒的〈ブギー〉擔任主打。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/Thee_michelle_gun_elephant",
+     "https://ja.wikipedia.org/wiki/Chicken_Zombies",
+     "https://musicbrainz.org/release-group/5792071d-4809-48eb-aa8e-c0267326fda1",
+     "https://en.wikipedia.org/wiki/Thee_Michelle_Gun_Elephant",
+     "https://ja.wikipedia.org/wiki/アベフトシ"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/23/89/ff/2389ffe1-9f49-4bcb-4a69-2143aba875e2/mzaf_3771407226776840878.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1814062257",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1814062257「THEE MICHELLE GUN ELEPHANT《Chicken Zombies (Remastered)》」：Apple《Chicken Zombies (Remastered)》13 軌、1997-11-01，取第 1 軌〈ロシアン・ハスキー (Remastered)〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Thee Michelle Gun Elephant",
+   "album": "GEAR BLUES",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5d2820d3-b82d-350f-8645-26efee20389f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本ロック：1998 年第三張錄音室專輯，與《Chicken Zombies》並列樂團 garage／pub rock 路線的兩個高峰，收錄〈ダニー・ゴー〉〈スモーキン・ビリー〉｜策展無疑點｜MB release-group 5d2820d3-b82d-350f-8645-26efee20389f：title「Gear Blues」、Album、first-release-date 1998-11-25、artist-credit「Thee Michelle Gun Elephant」。證據：https://musicbrainz.org/release-group/5d2820d3-b82d-350f-8645-26efee20389f https://coverartarchive.org/release-group/5d2820d3-b82d-350f-8645-26efee20389f/front",
+    "queryAlias": "ミッシェル・ガン・エレファント"
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5d2820d3-b82d-350f-8645-26efee20389f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 15161,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 15161）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一輪巡演要跑四十到六十個場地。主唱チバユウスケ帶領的 Thee Michelle Gun Elephant 走龐克與 pub rock 路線，1998 年在横浜アリーナ辦了全場站立的演出，是一組行程排得極滿的現場派。1998 年 11 月 25 日接著端出新作，發行掛 TRIAD／日本コロムビア，製作由四人親自掌舵，14 首，Oricon 第 6 名。〈G.W.D〉的單曲版錄於倫敦，專輯版改回東京重錄，開頭是一聲叫喊。壓軸的〈ダニー・ゴー〉常在演出尾聲與安可登場。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/GEAR_BLUES",
+     "https://en.wikipedia.org/wiki/Thee_Michelle_Gun_Elephant",
+     "https://ja.wikipedia.org/wiki/Thee_michelle_gun_elephant",
+     "https://musicbrainz.org/release-group/5d2820d3-b82d-350f-8645-26efee20389f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9e/4e/e8/9e4ee864-724e-db27-98c8-5f92950e1573/mzaf_8170075742895417181.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1819663100",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1819663100「thee michelle gun elephant《GEAR BLUES (Remastered)》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈WEST CABARET DRIVE (Remastered)〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Yogee New Waves",
+   "album": "PARAISO",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "799ee082-ca68-491d-b4b3-961bfcc26b95",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本インディ：シティポップ以降の新世代を代表する初作；軽やかな海辺の質感｜策展無疑點｜MB release-group 799ee082-ca68-491d-b4b3-961bfcc26b95：title「PARAISO」、Album、first-release-date 2014-09-10、artist-credit「Yogee New Waves」。證據：https://musicbrainz.org/release-group/799ee082-ca68-491d-b4b3-961bfcc26b95 https://coverartarchive.org/release-group/799ee082-ca68-491d-b4b3-961bfcc26b95/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/799ee082-ca68-491d-b4b3-961bfcc26b95/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 18646,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 18646）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "主唱和貝斯手，從小學就是玩伴。帶著 city pop 與搖滾色彩的 Yogee New Waves，由主唱兼吉他角舘健悟與貝斯手矢澤直紀在 2013 年 6 月組成。2014 年 9 月 10 日透過 BAYON PRODUCTION（Roman Label）發行首張全長，詞曲全出自角舘。〈Climax Night〉則從會場限定 EP 重錄收進來。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/Yogee_New_Waves",
+     "https://musicbrainz.org/release-group/799ee082-ca68-491d-b4b3-961bfcc26b95",
+     "https://www.discogs.com/release/11490345",
+     "https://www.discogs.com/master/1606136-Yogee-New-Waves-Paraiso"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8d/a5/81/8da581e8-ba6a-f7d6-4124-a136d302a386/mzaf_5741568917340771761.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1796365687",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1796365687「Yogee New Waves《PARAISO (Remastered 2024)》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Megumi no Amen (Remastered 2024)〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Yogee New Waves",
+   "album": "WAVES",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a6ac1c59-d615-4b45-93fe-bbe6a2c4aef6",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本インディ：サウンドの幅が広がり評価を高めた第二作、バンドの代表作｜策展無疑點｜MB release-group a6ac1c59-d615-4b45-93fe-bbe6a2c4aef6：title「WAVES」、Album、first-release-date 2017-05-17、artist-credit「Yogee New Waves」。證據：https://musicbrainz.org/release-group/a6ac1c59-d615-4b45-93fe-bbe6a2c4aef6 https://coverartarchive.org/release-group/a6ac1c59-d615-4b45-93fe-bbe6a2c4aef6/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a6ac1c59-d615-4b45-93fe-bbe6a2c4aef6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 9211,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 9211）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Oricon 從第 152 名一口氣跳到第 19 名。主唱角舘健悟領軍的 city pop 隊伍 Yogee New Waves，2017 年 1 月送走創團成員矢澤直紀，兩位支援樂手轉正，成了四人陣容。第 19 名屬於這張二專，同年 5 月交給 BAYON PRODUCTION 發行；第 152 名則是首張。年底樂團宣布，隔年春天轉投 Victor 主流。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/Yogee_New_Waves",
+     "https://musicbrainz.org/release-group/a6ac1c59-d615-4b45-93fe-bbe6a2c4aef6",
+     "https://www.discogs.com/master/2647484-Yogee-New-Waves-Waves"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/8e/c7/f08ec719-59bf-10fb-d4e2-45dd4aef4d7c/mzaf_6134609143918024247.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1234175701",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1234175701「Yogee New Waves《WAVES》」：曲目 11/12 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Ride On Wave〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "揺らぎ",
+   "album": "Still Dreaming, Still Deafening",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6b1a4176-0cab-4b9c-ba74-c3ae79a05f0c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本シューゲイズ：日本のシューゲイズ／ドリームポップ新世代、轟音の初フル作｜⚠ Spotify の yuragi が MB の『揺らぎ（シューゲイズ）』と同一かは盤名で推定（他の候補は歌手・ノイズ）｜MB release-group 6b1a4176-0cab-4b9c-ba74-c3ae79a05f0c：title「Still Dreaming, Still Deafening」、Album、first-release-date 2018-08-08、artist-credit「揺らぎ」。證據：https://musicbrainz.org/release-group/6b1a4176-0cab-4b9c-ba74-c3ae79a05f0c https://coverartarchive.org/release-group/6b1a4176-0cab-4b9c-ba74-c3ae79a05f0c/front",
+    "queryAlias": "yuragi"
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6b1a4176-0cab-4b9c-ba74-c3ae79a05f0c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 1851,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1851）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "安靜時像在作夢，大聲時震耳欲聾，正如盤名。滋賀縣的三人樂團揺らぎ玩 shoegaze 與夢幻流行，秋田未来唱歌並彈吉他，米谷幹太郎彈吉他，吉田優生打鼓。盤名裡的 Dreaming 與 Deafening，指的就是這兩種段落。2018 年 8 月 8 日首度全國流通，Flake Sounds 負責發行，6 首約 31 分鐘。壓軸〈Path Of The Moonlit Night〉約 11 分鐘長，從靜謐一路推向爆發。",
+    "sourceUrls": [
+     "https://ototoy.jp/_/default/p/777152",
+     "https://musicbrainz.org/release-group/6b1a4176-0cab-4b9c-ba74-c3ae79a05f0c",
+     "https://musicbrainz.org/ws/2/release?release-group=6b1a4176-0cab-4b9c-ba74-c3ae79a05f0c&inc=recordings&fmt=json",
+     "https://noiseartists.net/home/2020/2/7/yuragi-still-dreaming-still-deafening-review-english-amp-chinese",
+     "https://yuragiyura.bandcamp.com",
+     "https://yuragi.org"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/db/cc/e2/dbcce285-43eb-a527-333d-2345050293ea/mzaf_5126491087024968527.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1414802964",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1414802964「揺らぎ《Still Dreaming, Still Deafening》」：曲目 6/6 對上 MB 原盤（Apple 共 6 軌），取第 1 軌〈B/C〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "kiki vivi lily",
+   "album": "vivid",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "1b7cad29-0bf9-456f-814f-5b1522734ec6",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本ポップ：代表作として挙がる初期フル作、浮遊するベッドルーム・ポップ｜策展無疑點｜MB release-group 1b7cad29-0bf9-456f-814f-5b1522734ec6：title「vivid」、Album、first-release-date 2019-06-26、artist-credit「kiki vivi lily」。證據：https://musicbrainz.org/release-group/1b7cad29-0bf9-456f-814f-5b1522734ec6 https://coverartarchive.org/release-group/1b7cad29-0bf9-456f-814f-5b1522734ec6/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1b7cad29-0bf9-456f-814f-5b1522734ec6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 15064,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 15064）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "她換掉本名，因為本名先替聽眾定好了期待。福岡出身的創作歌手 kiki vivi lily 生於 1990 年，2012 年起以本名ゆり花活動，2015 年改用現名。WONK 的荒田洸在福岡看過她的演出，邀她加入 epistroph。2019 年 6 月 26 日亮相的首張完整專輯收 11 首，WONK 成員、Sweet William 與冨田恵一都有參與。她說在嘻哈圈客串兩年後，傾向拿掉多餘的編曲；〈80denier〉的打擊聲取樣自杯子這類日常物件。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/Kiki_vivi_lily",
+     "https://realsound.jp/2019/06/post-380568.html",
+     "https://www.discogs.com/master/1785028-Kiki-Vivi-Lily-Vivid",
+     "https://ototoy.jp/_/default/a/205464",
+     "https://musicbrainz.org/release-group/1b7cad29-0bf9-456f-814f-5b1522734ec6"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/55/5e/96/555e9684-656a-9386-250b-8ad6662cdbb6/mzaf_7639587276106538863.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1461083469",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1461083469「Kiki Vivi Lily《vivid》」：曲目 10/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈So Much〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "mei ehara",
+   "album": "Sway",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "1bb88547-2fa1-475d-8320-f986e99b514e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本フォーク：江原めいの代表作、静かな弾き語りに小さな室内楽アレンジ｜策展無疑點｜MB release-group 1bb88547-2fa1-475d-8320-f986e99b514e：title「Sway」、Album、first-release-date 2017-11-08、artist-credit「Mei Ehara」。證據：https://musicbrainz.org/release-group/1bb88547-2fa1-475d-8320-f986e99b514e https://coverartarchive.org/release-group/1bb88547-2fa1-475d-8320-f986e99b514e/front",
+    "queryAlias": "江原めい"
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1bb88547-2fa1-475d-8320-f986e99b514e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 179264,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 179264）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "除了貝斯和長笛，整張樂器都由製作人一人彈。1991 年生於愛知的 mei ehara，大學時為了替自主電影配樂，開始在自己家裡錄音。她先以 may.e 的名義自行發行作品，之後才簽進カクバリズム。2017 年 11 月 8 日以本名推出首作，收錄 10 首。製作人請來キセル的辻村豪文，貝斯與長笛之外的聲部全由他演奏。唱片收尾的連續三首，每一首都長過 5 分鐘。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/Mei_ehara",
+     "https://www.discogs.com/master/1586055-Mei-Ehara-Sway",
+     "https://viewofthearts.com/2024/07/23/mei-ehara-collaborations-inspirations-and-north-american-tour-exclusive-interview-japan/",
+     "https://kakubarhythm.com/artists/mei-ehara",
+     "https://musicbrainz.org/release-group/1bb88547-2fa1-475d-8320-f986e99b514e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/51/d6/ae/51d6ae48-b01f-6c31-4627-cbc64da41680/mzaf_7190184931027404037.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1303382586",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1303382586「mei ehara《Sway》」：Apple jp 同名 10 軌、2017-11-08，取第 1 軌〈戻らない〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "mei ehara",
+   "album": "Ampersands",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "722ec427-5818-492d-bec3-ec15b6915ad9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本フォーク：Swayに続く第二の頂点、細密なバンド・サウンドへ広がった｜策展無疑點｜MB release-group 722ec427-5818-492d-bec3-ec15b6915ad9：title「Ampersands」、Album、first-release-date 2020-05-13、artist-credit「Mei Ehara」。證據：https://musicbrainz.org/release-group/722ec427-5818-492d-bec3-ec15b6915ad9 https://coverartarchive.org/release-group/722ec427-5818-492d-bec3-ec15b6915ad9/front",
+    "queryAlias": "江原めい"
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/722ec427-5818-492d-bec3-ec15b6915ad9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 129000,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 129000）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "雙簧管與低音管，也排進了她這次的樂團。indie pop 歌手 mei ehara 的二度出擊，2020 年 5 月 13 日在カクバリズム推出，製作人欄寫的是她自己，共 10 首。樂手有吉他鳥居真道、貝斯 Coff、鼓手浜公氣、鍵盤兼雙簧管沼澤成毅，另有打擊與低音管，由樂團一起演奏。〈最初の日は〉早在 2018 年 12 月就以單曲發行。她說編曲時先寫鼓，再疊上貝斯與鍵盤，人聲也被當成樂器之一。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/2655698-Mei-Ehara-Ampersands",
+     "https://ja.wikipedia.org/wiki/Mei_ehara",
+     "https://viewofthearts.com/2024/07/23/mei-ehara-collaborations-inspirations-and-north-american-tour-exclusive-interview-japan/",
+     "https://en.wikipedia.org/wiki/Mei_Ehara",
+     "https://musicbrainz.org/release-group/722ec427-5818-492d-bec3-ec15b6915ad9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/26/a5/34/26a53479-b126-79fe-5178-a746f7f21f23/mzaf_5439961630239074488.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1509186266",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1509186266「mei ehara《Ampersands》」：Apple jp 同名 10 軌、2020-05-13，取第 1 軌〈昼間から夜〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "NTsKi",
+   "album": "Orca",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "86f67782-7f03-4c8f-b923-9e03c766007e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本エレクトロニカ：NTsKi の初フルアルバム、日本的な旋律とビートの折衷｜⚠ Orca は MB で Album（トラック数未確認）｜MB release-group 86f67782-7f03-4c8f-b923-9e03c766007e：title「Orca」、Album、first-release-date 2021-08-06、artist-credit「NTsKi」。證據：https://musicbrainz.org/release-group/86f67782-7f03-4c8f-b923-9e03c766007e https://coverartarchive.org/release-group/86f67782-7f03-4c8f-b923-9e03c766007e/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/86f67782-7f03-4c8f-b923-9e03c766007e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 11512,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 11512）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "在英國開始做音樂的京都人，首張由美日兩家廠牌合發。電子音樂創作者 NTsKi 在 2017 年回到日本正式展開活動，2018 年成立自己的廠牌 AMINO ACID。2021 年 8 月 6 日同時由美國 Orange Milk Records 與日本 EM Records 共同推出她的首作。她用 Logic Pro X 與類比合成器製作，人聲循環是主軸，還收進越美晴作品〈Parallélisme〉的翻唱。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/NTsKi",
+     "https://ntski.bandcamp.com/album/orca",
+     "https://musicbrainz.org/ws/2/release?release-group=86f67782-7f03-4c8f-b923-9e03c766007e&inc=recordings&fmt=json",
+     "https://musicbrainz.org/release-group/86f67782-7f03-4c8f-b923-9e03c766007e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/45/95/5d/45955d68-d915-e4fb-6773-586fe05224f9/mzaf_13968514824315100356.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1577031608",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1577031608「NTsKi《Orca》」：曲目 10/10 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Orca〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Wink",
+   "album": "Especially For You ～優しさにつつまれて～",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "07f3dece-ab9b-3b8d-92d7-d6428225e4f9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本アイドル歌謡：鈴木早智子・相田翔子のデュオ、ユーロビート歌謡の代表作｜策展無疑點｜MB release-group 07f3dece-ab9b-3b8d-92d7-d6428225e4f9：title「Especially For You ～優しさにつつまれて～」、Album、first-release-date 1989-04-26、artist-credit「Wink」。證據：https://musicbrainz.org/release-group/07f3dece-ab9b-3b8d-92d7-d6428225e4f9 https://coverartarchive.org/release-group/07f3dece-ab9b-3b8d-92d7-d6428225e4f9/front",
+    "queryAlias": "ウィンク"
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/07f3dece-ab9b-3b8d-92d7-d6428225e4f9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 1,
+    "listeners": 182,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 182）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 1，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "幾乎整張都是西洋歌翻唱，卻是她們第一張冠軍專輯。Wink 是鈴木早智子與相田翔子組成的二人偶像組合，兩人都是少年雜誌選拔的優勝者。1988 年 4 月出道時正值偶像寒冬，前兩支單曲最高只到第 20 名。第三張單曲〈愛が止まらない〉翻自 Kylie Minogue，1989 年初拿下她們首個週榜冠軍。同年 4 月 Polystar 發行她們第二張原創作品，除了〈Remember Sweet〉，其餘都是西洋歌的日文版，登上 Oricon 專輯榜第 1 名，銷量約 49.6 萬張。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/Wink",
+     "https://ja.wikipedia.org/wiki/愛が止まらない_〜Turn_it_into_love〜",
+     "https://ja.wikipedia.org/wiki/Especially_For_You_〜優しさにつつまれて〜",
+     "https://musicbrainz.org/release-group/07f3dece-ab9b-3b8d-92d7-d6428225e4f9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0e/18/d1/0e18d138-cead-d649-d179-1d1b5e32c913/mzaf_4366944565770548600.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1403239332",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1403239332「Wink《Especially for You Yasashisa Ni Tsutsumarete (Remastered 2018)》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Especially For You ~優しさにつつまれて~ (Remastered 2018)〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Wink",
+   "album": "Twin Memories",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "bfab70cd-a048-397b-8baa-577c41d840df",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本アイドル歌謡：同じ1989年、「淋しい熱帯魚」収録の絶頂期アルバム｜策展無疑點｜MB release-group bfab70cd-a048-397b-8baa-577c41d840df：title「Twin Memories」、Album、first-release-date 1989-12-01、artist-credit「Wink」。證據：https://musicbrainz.org/release-group/bfab70cd-a048-397b-8baa-577c41d840df https://coverartarchive.org/release-group/bfab70cd-a048-397b-8baa-577c41d840df/front",
+    "queryAlias": "ウィンク"
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bfab70cd-a048-397b-8baa-577c41d840df/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 1,
+    "listeners": 1171,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1171）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 1，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "〈淋しい熱帯魚〉的前奏，比正常少了兩拍。鈴木早智子、相田翔子兩人的 Wink 在 1989 年 7 月發表這支單曲。負責編曲的船山基紀覺得 demo 帶的開頭有趣，便直接沿用。MV 裡的「大魔神姿勢」與無表情演唱，定下 Wink 不笑不說話的形象。這首歌拿下日本唱片大獎大賞，兩人也首次登上紅白歌合戰。12 月 1 日緊接登場的第三張專輯，收進〈淋しい熱帯魚〉的混音版，在 Oricon 最高爬到第 2 名。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/Twin_Memories",
+     "https://ja.wikipedia.org/wiki/淋しい熱帯魚",
+     "https://musicbrainz.org/release-group/bfab70cd-a048-397b-8baa-577c41d840df"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/41/cb/b2/41cbb214-b597-37e1-ffa8-2d18bba5fe95/mzaf_971807190241393853.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1403238964",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1403238964「Wink《Twin Memories (Original Remastered 2018)》」：曲目 11/11 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Oh My Love ~Introduction~ (Original Remastered 2018)〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "コスモス・ファクトリー",
+   "album": "トランシルヴァニアの古城",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "14b18f3c-ed5c-44af-899f-b74fd59e3563",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本前衛搖滾：1973年首作，日本早期前衛／迷幻搖滾的地下名盤，團名的代表作｜策展無疑點｜MB release-group 14b18f3c-ed5c-44af-899f-b74fd59e3563：title「トランシルヴァニアの古城」、Album、first-release-date 1973、artist-credit「コスモス・ファクトリー」。證據：https://musicbrainz.org/release-group/14b18f3c-ed5c-44af-899f-b74fd59e3563 https://coverartarchive.org/release-group/14b18f3c-ed5c-44af-899f-b74fd59e3563",
+    "queryAlias": "Cosmos Factory コスモス・ファクトリー"
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/14b18f3c-ed5c-44af-899f-b74fd59e3563/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 16,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 16）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "B 面整面是一首十八分多鐘的組曲。走前衛迷幻搖滾路數的コスモス・ファクトリー是名古屋樂團，1968 年由鍵盤手泉つとむ以ザ・サイレンサー之名組成，1970 年與バーンズ成員合流後定名。那首同名組曲長約 18 分 40 秒，分成四個部分。出道作於 1973 年由日本コロムビア推出，6 至 7 月在東京 Columbia Studios 錄音，封面照片出自中平卓馬。泉つとむ彈鍵盤與 Moog，也負責主唱。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/コスモスファクトリー",
+     "https://www.discogs.com/master/223419-Cosmos-Factory-An-Old-Castle-Of-Transylvania-",
+     "https://musicbrainz.org/ws/2/release?release-group=14b18f3c-ed5c-44af-899f-b74fd59e3563&inc=recordings&fmt=json",
+     "https://theingroove.com/products/cosmos-factory-an-old-castle-of-transylvania-lp",
+     "https://www.vinylexchange.co.uk/products/cosmos-factory-an-old-castle-of-transylvania",
+     "https://musicbrainz.org/ws/2/release?release-group=14b18f3c-ed5c-44af-899f-b74fd59e3563&inc=labels&fmt=json",
+     "https://musicbrainz.org/release-group/14b18f3c-ed5c-44af-899f-b74fd59e3563"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/b4/01/a2/b401a223-2d44-9e8c-605b-98042c29dc99/mzaf_16593232323930628185.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1529082378",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1529082378「コスモス・ファクトリー《Cosmos Factory》」：Apple 以《Cosmos Factory》上架，9 軌曲目與 MB 原盤逐首一致，取第 1 軌〈サウンドトラック1984〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "コスモス・ファクトリー",
+   "album": "謎のコスモス号",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d93fe230-8a78-46be-b21f-9c0ac53b0091",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本前衛搖滾：1975年概念作，樂迷公認的第二個高峰｜⚠ 第二張是否夠格請審｜MB release-group d93fe230-8a78-46be-b21f-9c0ac53b0091：title「謎のコスモス号」、Album、first-release-date 1975-08-05、artist-credit「コスモス・ファクトリー」。證據：https://musicbrainz.org/release-group/d93fe230-8a78-46be-b21f-9c0ac53b0091 https://coverartarchive.org/release-group/d93fe230-8a78-46be-b21f-9c0ac53b0091",
+    "queryAlias": "Cosmos Factory コスモス・ファクトリー"
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d93fe230-8a78-46be-b21f-9c0ac53b0091/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 6,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 6）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "鼓手的樂器欄上，連電動吸塵器都列了進去。來自名古屋的迷幻四人團コスモス・ファクトリー，第二張轉由 Toshiba EMI 旗下的 Express 發行，時間是 1975 年 8 月 5 日。那位鼓手是岡本和夫，除了套鼓，他還兼打合成鼓與定音鼓。泉つとむ在鍵盤上動用了 Hammond B3、Mellotron、Mini-moog、ARP，以及自製的 Symphonizer。全盤改成 10 首 2 到 5 分鐘的短曲。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/d93fe230-8a78-46be-b21f-9c0ac53b0091",
+     "https://www.discogs.com/master/402896-Cosmos-Factory-A-Journey-With-The-Cosmos-Factory-謎のコスモス号",
+     "https://musicbrainz.org/ws/2/release?release-group=d93fe230-8a78-46be-b21f-9c0ac53b0091&inc=recordings&fmt=json",
+     "https://musicbrainz.org/ws/2/release?release-group=d93fe230-8a78-46be-b21f-9c0ac53b0091&inc=labels&fmt=json"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview62/v4/b6/d6/31/b6d631db-48ae-790b-babf-d8d73d1afba3/mzaf_1643773496302744497.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "720363576",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 720363576「コスモスファクトリー《Nazo no Cosmos Gou》」：Apple 以《Nazo no Cosmos Gou》上架，10 軌、1975-08-05，取第 1 軌〈日曜日の出来事〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ジョー山中",
+   "album": "Joe",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "1bb2b8ca-736d-4692-9a59-dc05d23e0750",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本搖滾：Flower Travellin' Band 主唱的首張個人作，70年代日本搖滾代表聲音｜策展無疑點｜MB release-group 1bb2b8ca-736d-4692-9a59-dc05d23e0750：title「Joe」、Album、first-release-date 1974-06、artist-credit「ジョー山中」。證據：https://musicbrainz.org/release-group/1bb2b8ca-736d-4692-9a59-dc05d23e0750 https://coverartarchive.org/release-group/1bb2b8ca-736d-4692-9a59-dc05d23e0750",
+    "queryAlias": "Joe Yamanaka ジョー山中"
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1bb2b8ca-736d-4692-9a59-dc05d23e0750/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 17,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 17）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "當過拳擊手的ジョー山中，樂團解散後獨自出片。他原是迷幻搖滾 Flower Travellin' Band 的主唱，1968 年受內田裕也之邀加入，樂團 1973 年解散。這位 1946 年生於橫濱的混血兒，17 歲便以拳擊手出道。1974 年 6 月 Atlantic 替他推出首張個人專輯，10 首曲子的製作與編曲都由山中自己擔任，大野雄二共同製作並彈電鋼琴。曲風就此轉向靈魂樂與軟搖滾。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/ジョー山中",
+     "https://www.discogs.com/release/7383250",
+     "https://www.discogs.com/master/875260",
+     "https://musicbrainz.org/release-group/1bb2b8ca-736d-4692-9a59-dc05d23e0750"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "Apple jp／us 藝人目錄查無本盤（只有其他時期作品）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ジョー山中",
+   "album": "Reggae Vibration",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "310fe1c7-5682-4366-b5e3-7b7fe8799758",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本搖滾：轉向雷鬼後的代表作，開出他晚期路線｜策展無疑點｜MB release-group 310fe1c7-5682-4366-b5e3-7b7fe8799758：title「Reggae Vibration」、Album、first-release-date 1982、artist-credit「Joe Yamanaka & The Wailers」。證據：https://musicbrainz.org/release-group/310fe1c7-5682-4366-b5e3-7b7fe8799758 https://coverartarchive.org/release-group/310fe1c7-5682-4366-b5e3-7b7fe8799758",
+    "queryAlias": "Joe Yamanaka ジョー山中；Joe Yamanaka & The Wailers"
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "world",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/310fe1c7-5682-4366-b5e3-7b7fe8799758/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 338,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 338）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "金斯敦 Tuff Gong 錄音室，他一待就是 17 天。迷幻樂團出身的主唱ジョー山中，1982 年 4 月 14 日到 30 日錄音、混音都在這裡完成。伴奏是 Bob Marley 過世後的 The Wailers，節奏組由 Family Man 與 Carly Barrett 擔綱。伊藤詳與山中聯手製作，同年交給 Teichiku 的 Black Records 廠牌發行，共 11 首，他從此轉向雷鬼。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/ジョー山中",
+     "https://www.discogs.com/release/6682377",
+     "https://tower.com/products/yamanaka-joe-reggae-vibration",
+     "https://musicbrainz.org/release-group/310fe1c7-5682-4366-b5e3-7b7fe8799758"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7e/57/5d/7e575dd5-53ee-2dc1-8674-3b47ea817d59/mzaf_11894151659655763401.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1879786539",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1879786539「ザ・ウェイラーズ & ジョー山中《REGGAE VIBRATION》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈RASTAFARI PARTⅠ〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "爆風スランプ",
+   "album": "HIGHLANDER",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "af431459-d811-42c6-9fdd-e73efaf93d51",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本搖滾：收錄代表曲〈Runner〉的專輯，爆風スランプ最廣為人知的一張｜策展無疑點｜MB release-group af431459-d811-42c6-9fdd-e73efaf93d51：title「HIGHLANDER」、Album、first-release-date 1988-11-02、artist-credit「爆風スランプ」。證據：https://musicbrainz.org/release-group/af431459-d811-42c6-9fdd-e73efaf93d51 https://coverartarchive.org/release-group/af431459-d811-42c6-9fdd-e73efaf93d51",
+    "queryAlias": "Bakufu Slump 爆風スランプ"
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/af431459-d811-42c6-9fdd-e73efaf93d51/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 202,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 202）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "〈Runner〉這首歌的起因，是貝斯手要離團。爆風スランプ 1984 年出道，是搖滾放克四人團，以噴滅火器的過激舞台聞名。貝斯手江川ほーじん不滿商業路線而要離團，サンプラザ中野便替ファンキー末吉的曲填詞，寫成〈Runner〉。1988 年 10 月單曲推出，同年首登紅白，靠電視節目插曲成為樂團第一支大熱門。1988 年 11 月 2 日，這首歌收進第五張專輯，出自 CBS/Sony，曲目 12 首。江川在 1989 年 1 月武道館公演後離團，這是他在團內最後一張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Bakufu_Slump",
+     "https://ja.wikipedia.org/wiki/爆風スランプ",
+     "https://www.weblio.jp/content/HIGH_LANDER",
+     "https://www.oricon.co.jp/prof/2588/rank/",
+     "https://musicbrainz.org/release-group/af431459-d811-42c6-9fdd-e73efaf93d51"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/52/cc/07/52cc07ab-94a4-fb2d-dff5-719275a2b5b6/mzaf_3649892036103562224.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1535477203",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1535477203「爆風スランプ《HIGHLANDER》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈耳たぶ〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "GREENMACHiNE",
+   "album": "D.A.M.N.",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "567a9239-f95e-3855-8504-edf09e910cbd",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本重型／sludge：日本 sludge／stoner 先驅，首張全長即定調｜策展無疑點｜MB release-group 567a9239-f95e-3855-8504-edf09e910cbd：title「D.A.M.N.」、Album、first-release-date 1996-12-25、artist-credit「GREENMACHiNE」。證據：https://musicbrainz.org/release-group/567a9239-f95e-3855-8504-edf09e910cbd https://coverartarchive.org/release-group/567a9239-f95e-3855-8504-edf09e910cbd",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "metal"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/567a9239-f95e-3855-8504-edf09e910cbd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 489,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 489）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "金澤一場暖場演出，讓廠牌老闆找上門。橫跨 sludge、stoner 與 hardcore 的 GREENMACHiNE，1995 年 5 月在金澤成軍，成員三人，團名來自 Kyuss 的〈Green Machine〉。那場是替 Corpus Grinders 暖場，TASTE 廠牌的 ZERO 看中他們。1996 年 12 月 25 日正式由 TASTE 發行他們的首作，僅 6 首。Frank Kozik 的 Man's Ruin Records 隨後推出附他封面的美國版。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/GREENMACHiNE",
+     "https://www.discogs.com/master/210550",
+     "https://theobelisk.net/obelisk/?p=100677",
+     "https://musicbrainz.org/release-group/567a9239-f95e-3855-8504-edf09e910cbd"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/99/b8/d799b8e7-e53c-5e7f-95a0-5fea4f8e8cc0/mzaf_7402249742219587707.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "6802783491",
+    "storefront": "JP",
+    "collectionExplicitness": "explicit",
+    "note": "Apple jp 6802783491「GREENMACHiNE《D.A.M.N +3》」：Apple《D.A.M.N +3》為 2003 年加 3 首重發，前 6 軌為原盤，取第 1 軌〈ON〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "GREENMACHiNE",
+   "album": "The Earth Beater",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "15cbf1ab-3eb0-31fa-a595-fe0950f470f1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本重型／sludge：第二張全長，樂迷與評論公認的另一個高峰｜⚠ 二選一時可只收 D.A.M.N.｜MB release-group 15cbf1ab-3eb0-31fa-a595-fe0950f470f1：title「The Earth Beater」、Album、first-release-date 1998、artist-credit「GREENMACHiNE」。證據：https://musicbrainz.org/release-group/15cbf1ab-3eb0-31fa-a595-fe0950f470f1 https://coverartarchive.org/release-group/15cbf1ab-3eb0-31fa-a595-fe0950f470f1",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "metal"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/15cbf1ab-3eb0-31fa-a595-fe0950f470f1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 619,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 619）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "第二張因故跳過母帶這一關，直接在日本自家發售。金澤的三人重型樂團 GREENMACHiNE 於 1998 年 6 月 21 日自行用 FANDLE 廠牌名義出了這張全長。收 10 首，風格偏 doom、stoner 與迷幻。美國的 Man's Ruin Records 之後把它推向海外，另出一張 10 吋 EP《Ver 0.5》，收錄本作 5 首。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/GREENMACHiNE",
+     "https://www.metalmusicarchives.com/album/greenmachine(japan)/the-earth-beater",
+     "https://www.discogs.com/master/210551",
+     "https://theobelisk.net/obelisk/?p=100677",
+     "https://musicbrainz.org/release-group/15cbf1ab-3eb0-31fa-a595-fe0950f470f1"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/87/66/d5/8766d548-9af5-786c-856c-033884dfac44/mzaf_1144613827045207744.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "6810586058",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 6810586058「Greenmachine《The Earth Beater +3》」：曲目 9/10 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Burdens of Karma〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "COHOL",
+   "album": "空洞",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b1bff288-02a8-49b8-9779-6c1f7d5c71c9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本重型／sludge：日本 sludge／doom 團 COHOL 的首張全長｜⚠ Rigen 裏現(2015)也可能是高峰｜MB release-group b1bff288-02a8-49b8-9779-6c1f7d5c71c9：title「空洞」、Album、first-release-date 2010-11-17、artist-credit「COHOL」。證據：https://musicbrainz.org/release-group/b1bff288-02a8-49b8-9779-6c1f7d5c71c9 https://coverartarchive.org/release-group/b1bff288-02a8-49b8-9779-6c1f7d5c71c9",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "metal"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b1bff288-02a8-49b8-9779-6c1f7d5c71c9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 582,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 582）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "COHOL 這四個字母，縮寫自一整句英文。帶 grindcore 色彩的神奈川黑金屬團 COHOL，團名的全稱為 Consume the Obsessed Hatred On the Liturgy。2010 年 11 月 17 日於 Satire Records 發行的這張收 9 首，曲名全用日文。貝斯手與吉他手兩人同為主唱。",
+    "sourceUrls": [
+     "https://api.discogs.com/artists/3299449",
+     "https://musicbrainz.org/artist/9b75b1fb-cc69-48aa-a026-cfccab417180",
+     "https://www.discogs.com/release/6654176",
+     "https://musicbrainz.org/release/20de5664-5304-47c9-9ade-cf1c2c246178",
+     "https://deadrhetoric.com/?p=38484",
+     "https://api.discogs.com/artists/3299449/releases",
+     "https://musicbrainz.org/release-group/b1bff288-02a8-49b8-9779-6c1f7d5c71c9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "Apple jp／us 查無 COHOL 本盤。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "中学生棺桶",
+   "album": "矛先についたガム",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "202e453d-1163-48c8-80da-4a69b504e3b3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本重型／sludge：2010年全長，團的最後一批作品之一；2004–2010 唯一有封面來源的正規盤｜⚠ 代表作憑資料有限，未必是最高峰（むすめ戦争中 2007 亦可）｜MB release-group 202e453d-1163-48c8-80da-4a69b504e3b3：title「矛先についたガム」、Album、first-release-date 2010-06-02、artist-credit「中学生棺桶」。證據：https://musicbrainz.org/release-group/202e453d-1163-48c8-80da-4a69b504e3b3 https://coverartarchive.org/release-group/202e453d-1163-48c8-80da-4a69b504e3b3 https://www.discogs.com/release/5075801",
+    "queryAlias": "Chugakusei Kanoke 中学生棺桶"
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "metal"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/202e453d-1163-48c8-80da-4a69b504e3b3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 285,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 285）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "doom 與龐克打底，又摻進昭和歌謠的色彩。主唱狩野葉蔵領軍的東京地下樂團中学生棺桶，樂種被歸為 doomcore 一類。2010 年 6 月 2 日釋出的這張掛 Diwphalanx Records 發行，12 首裡有一首叫〈のぶ江の場合〉。本作是他們 2011 年解散前的正式專輯之一。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/中学生棺桶",
+     "https://www.discogs.com/release/5075801",
+     "https://api.discogs.com/artists/2215249",
+     "https://api.discogs.com/artists/2215249/releases",
+     "https://musicbrainz.org/release-group/202e453d-1163-48c8-80da-4a69b504e3b3"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/ab/f9/d5abf993-90f3-9418-0628-a2cd0030a304/mzaf_10424622410617184538.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "6783231516",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 6783231516「中学生棺桶《矛先についたガム》」：曲目 11/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈うろんな看板〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "犬神サーカス団",
+   "album": "地獄の子守唄",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "325a1da0-71cb-394b-aad3-96869c952902",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本龐克：1999年首張全長，奠定昭和歌謠×龐克風格｜策展無疑點｜MB release-group 325a1da0-71cb-394b-aad3-96869c952902：title「地獄の子守唄」、Album、first-release-date 1999-09-23、artist-credit「犬神サーカス団」。證據：https://musicbrainz.org/release-group/325a1da0-71cb-394b-aad3-96869c952902 https://coverartarchive.org/release-group/325a1da0-71cb-394b-aad3-96869c952902",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "punk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/325a1da0-71cb-394b-aad3-96869c952902/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 591,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 591）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "高中女生在漫畫誌《ガロ》的筆友欄徵團員。把硬搖滾、重金屬與前衛搖滾攪在一起的犬神サーカス団，起點就是 1994 年的這則啟事。寫啟事的是擔任主唱、當時還在念高中的凶子，明回信加入；團名借自寺山修司電影《田園に死す》裡的馬戲團。1997 年三人離團，犬神ジン以貝斯手身分加入，團名也拿掉驚嘆號。1999 年 9 月 23 日送出的出道專輯交 FLESH LABEL 發行，14 首曲子以江湖賣藝口白〈見世物小屋口上〉開場、標題曲收尾，封面插畫出自日野日出志。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/犬神サーカス団",
+     "https://www.discogs.com/release/4295129",
+     "https://musicbrainz.org/release/dc5ead2b-418e-471f-ac52-a94900824b5c",
+     "https://musicbrainz.org/release-group/325a1da0-71cb-394b-aad3-96869c952902"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/23/bd/b7/23bdb75e-6534-4c79-5a41-fd877a8d1955/mzaf_7181284585749201603.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "81481667",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 81481667「犬神サアカス團《地獄の子守唄》」：Apple 以舊名義「犬神サアカス團」上架，14 軌、1999-09-23，取第 1 軌〈見世物小屋口上〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "犬神サーカス団",
+   "album": "神の犬",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c0dfc48e-0d68-38d3-960a-74e7d4b4ef98",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本龐克：2003年作，中期成熟代表作｜⚠ 第二張選擇偏主觀｜MB release-group c0dfc48e-0d68-38d3-960a-74e7d4b4ef98：title「神の犬」、Album、first-release-date 2003-05-28、artist-credit「犬神サーカス団」。證據：https://musicbrainz.org/release-group/c0dfc48e-0d68-38d3-960a-74e7d4b4ef98 https://coverartarchive.org/release-group/c0dfc48e-0d68-38d3-960a-74e7d4b4ef98",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2003,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "punk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c0dfc48e-0d68-38d3-960a-74e7d4b4ef98/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 449,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 449）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "EARTHSHAKER 的西田昌史，替他們坐鎮製作。主唱凶子與鼓手明是犬神サーカス団的兩位核心，凶子負責寫詞，明身兼領隊，作詞作曲也出自他手。2003 年 5 月 28 日出版第五張作品，在 15 首曲目裡，西田昌史也替其中幾首作曲。〈決死隊〉拆成其の壱、其の弐兩段。",
+    "sourceUrls": [
+     "https://vk.gy/releases/inugami-circus-dan/28963/kami-no-inu/",
+     "https://ja.wikipedia.org/wiki/犬神サーカス団",
+     "https://musicbrainz.org/release/0beeedc3-6347-445b-985f-fefc865c1c05",
+     "https://www.discogs.com/release/4297640",
+     "https://musicbrainz.org/release-group/c0dfc48e-0d68-38d3-960a-74e7d4b4ef98"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/62/da/e6/62dae602-8906-35b9-1fa9-4d25f84d885a/mzaf_14846229380264020777.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1735890477",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1735890477「犬神サーカス団《神の犬》」：曲目 14/16 對上 MB 原盤（Apple 共 16 軌），取第 1 軌〈啓示〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ないあがらせっと",
+   "album": "POP CITY",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6c97bed8-3239-4e54-9d91-fbce61eb550c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本獨立：唯一正規全長專輯｜策展無疑點｜MB release-group 6c97bed8-3239-4e54-9d91-fbce61eb550c：title「POP CITY」、Album、first-release-date 2009-10-10、artist-credit「ないあがらせっと」。證據：https://musicbrainz.org/release-group/6c97bed8-3239-4e54-9d91-fbce61eb550c https://music.apple.com/jp/album/375272098",
+    "queryAlias": "Naigara Set"
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "375272098",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/92/3b/a6/mzi.pxxdhbme.jpg/600x600bb.jpg",
+    "note": "CAA 無圖；取已釘定試聽的 Apple 375272098（ないあがらせっと《Pop City》）官方圖，主線 2026-10-30 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 40,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 40）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "曲單上有〈リゾート〉〈君と太陽〉，還有〈サマーニンジャ〉。日本獨立流行團體ないあがらせっと 2009 年 10 月 10 日掛 Studio Soup 的名義發行《POP CITY》，收錄 10 首、全長約 42 分鐘。日文與英文曲名在其中並排，從〈街のスーパーマン〉開場。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/6c97bed8-3239-4e54-9d91-fbce61eb550c",
+     "https://music.apple.com/jp/album/pop-city/375272098",
+     "https://music.apple.com/jp/artist/%E3%81%AA%E3%81%84%E3%81%82%E3%81%8C%E3%82%89%E3%81%9B%E3%81%A3%E3%81%A8/375272100",
+     "https://musicbrainz.org/artist/74f6f931-2860-4905-9fcb-5528ccc9d5a0"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/78/13/ec/7813ec97-00cb-ca42-0773-bd7791fe5a33/mzaf_3756698558001490498.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "375272098",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 375272098「ないあがらせっと《Pop City》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈街のスーパーマン〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ヨシンバ",
+   "album": "042",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "55cf2811-6d74-4b6b-a244-e18ef7ba23e4",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本獨立：1999年首張全長，團的出發點｜策展無疑點｜MB release-group 55cf2811-6d74-4b6b-a244-e18ef7ba23e4：title「042」、Album、first-release-date 1999-04-21、artist-credit「ヨシンバ」。證據：https://musicbrainz.org/release-group/55cf2811-6d74-4b6b-a244-e18ef7ba23e4 https://music.apple.com/jp/album/1882637060 https://www.discogs.com/master/3167439",
+    "queryAlias": "Yoshimba"
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1882637060",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5c/79/1b/5c791be9-197b-f8f7-cafe-48ddc1f7825a/cover.jpg/600x600bb.jpg",
+    "note": "CAA 無圖；取已釘定試聽的 Apple 1882637060（ヨシンバ《042》）官方圖，主線 2026-10-30 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 44,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 44）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "黑膠版拆成 A 面六首、B 面五首，曲序另排。走 soft rock 路線的日本團體ヨシンバ，在 1999 年 4 月 21 日把兩首單曲連同新曲收成 11 首，掛在 Teichiku 的子品牌 Baidis 底下發行，黑膠版則由 Vivid Sound 同期推出。那兩首是 1998 年的單曲〈くもの糸〉與〈これを恋と云えましょうか〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/27670098",
+     "https://www.discogs.com/master/3167439",
+     "https://www.discogs.com/release/18682336",
+     "https://www.discogs.com/release/10745753",
+     "https://www.discogs.com/artist/5959821",
+     "https://ja.wikipedia.org/wiki/中森泰弘",
+     "https://musicbrainz.org/artist/b04deca0-cd8b-4e39-9c85-9c849061c6f1",
+     "https://music.apple.com/jp/album/042/1882637060",
+     "https://www.discogs.com/release/27670182",
+     "https://musicbrainz.org/release-group/55cf2811-6d74-4b6b-a244-e18ef7ba23e4"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/92/1f/c2/921fc2dc-4c9b-2492-cd22-7ddf6c58df2b/mzaf_9864368715722291079.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1882637060",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1882637060「ヨシンバ《042》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈ラブレター〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ピューパ!!",
+   "album": "えそらことば",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c3eb65e2-6979-4d2c-a95d-35445fc97ae8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本偶像：2020年首張，9首全長，該組合的主要作品｜⚠ 偶像團，代表性弱｜MB release-group c3eb65e2-6979-4d2c-a95d-35445fc97ae8：title「えそらことば」、Album、first-release-date 2020-01-25、artist-credit「ピューパ!!」。證據：https://musicbrainz.org/release-group/c3eb65e2-6979-4d2c-a95d-35445fc97ae8 https://coverartarchive.org/release-group/c3eb65e2-6979-4d2c-a95d-35445fc97ae8",
+    "queryAlias": "pupa!!"
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c3eb65e2-6979-4d2c-a95d-35445fc97ae8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 679,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 679）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "自稱「蛹系偶像」，她們把 Future Bass 接後搖滾。ピューパ!! 是 2017 年結成的女子偶像團體，從 2018 年 8 月起正式活動，口號是「大家一起養大的蛹系偶像」。她們的音樂把 Future Bass、House 等舞曲與龐克搖滾、後搖滾揉在一起。2020 年推出的第二張作品一共 9 首，收尾的是同名曲〈えそらことば〉。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/ピューパ!!",
+     "https://musicbrainz.org/release-group/c3eb65e2-6979-4d2c-a95d-35445fc97ae8"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7d/d1/34/7dd134ce-53d7-6fec-921e-0c96001e4e7c/mzaf_1197584951266907631.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1496726581",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1496726581「ピューパ!!《えそらことば》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Ittemiyo!!〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "比屋定篤子",
+   "album": "ささやかれた夢の話",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5407558f-eea6-47cc-944b-f2805afbb68a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本民謠：沖繩出身創作歌手，2015年13首全長；另收《ルア・ラランジャ》(1999)，早期代表作｜⚠ 最具代表的可能是早期專輯ルア・ラランジャ（MB 年份空白，未收）｜MB release-group 5407558f-eea6-47cc-944b-f2805afbb68a：title「ささやかれた夢の話」、Album、first-release-date 2015-06-17、artist-credit「比屋定篤子」。證據：https://musicbrainz.org/release-group/5407558f-eea6-47cc-944b-f2805afbb68a https://coverartarchive.org/release-group/5407558f-eea6-47cc-944b-f2805afbb68a",
+    "queryAlias": "Hiyajo Atsuko 比屋定篤子"
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5407558f-eea6-47cc-944b-f2805afbb68a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1230,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1230）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "13 首曲子全出自小林治郎，詞全由她自己寫。1971 年生於那霸的歌手比屋定篤子，念美大時參加過拉丁美洲研究會。1999 年 2 月 20 日換到 Sony Music Entertainment 之後，她的原創專輯走到第二張。小林治郎是她出道前就合作的夥伴，除了包辦作曲也彈貝斯；和聲同樣由比屋定自己來。開場〈まわれ まわれ〉加入銅管與金子飛鳥弦樂團，編曲過半出自菅原弘明。〈メビウス〉曾是《世界ウルルン滞在記》的片尾曲。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/比屋定篤子",
+     "https://ja.wikipedia.org/wiki/ささやかれた夢の話",
+     "https://www.discogs.com/release/13292603",
+     "https://www.discogs.com/release/25458364",
+     "https://musicbrainz.org/release-group/5407558f-eea6-47cc-944b-f2805afbb68a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/66/20/af/6620af14-d54c-ab8b-4128-c09c70e38444/mzaf_1316783062920211973.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1539275295",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1539275295「比屋定篤子《ささやかれた夢の話》」：曲目 12/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈まわれ まわれ〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "姫神",
+   "album": "奥の細道",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "472bd88f-dde0-3e0e-a2e4-5c92b691a623",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本新世紀：姫神標誌性的東北意象新世紀音樂，90年代代表作｜策展無疑點｜MB release-group 472bd88f-dde0-3e0e-a2e4-5c92b691a623：title「奥の細道」、Album、first-release-date 1993-11-03、artist-credit「姫神」。證據：https://musicbrainz.org/release-group/472bd88f-dde0-3e0e-a2e4-5c92b691a623 https://coverartarchive.org/release-group/472bd88f-dde0-3e0e-a2e4-5c92b691a623",
+    "queryAlias": "Himekami 姫神"
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/472bd88f-dde0-3e0e-a2e4-5c92b691a623/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 107,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 107）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "同一首〈奥の細道〉，東京錄的單曲比盛岡版快。宮城出身的星吉昭用合成器作新世紀音樂，他想用合成器演奏民謠〈南部牛追唄〉，1980 年以姫神せんせいしょん之名起步。1981 年 8 月 7 日的出道作由 Canyon 發行，收 10 首，在盛岡錄成。東京錄的那個單曲版本，以合成器呈現日本原風景而受到注目。1984 年起名義改為姫神，1993 年由 Pony Canyon 再版成 CD。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/星吉昭",
+     "https://www.discogs.com/release/5463489",
+     "https://ja.wikipedia.org/wiki/姫神",
+     "https://www.discogs.com/release/6951020",
+     "https://musicbrainz.org/release-group/472bd88f-dde0-3e0e-a2e4-5c92b691a623"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/26/81/9d/26819d9a-3916-8dee-d06c-afa3c6933f48/mzaf_14063022718140105070.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "317989313",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 317989313「姫神《奥の細道》」：曲目 7/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈ありそ (荒磯)〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "POiSON GiRL FRiEND",
+   "album": "Shyness",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f1cc24fc-edc2-3898-8be0-c7a9c243554b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本電子：關口紀子個人計畫，90年代首張全長｜策展無疑點｜MB release-group f1cc24fc-edc2-3898-8be0-c7a9c243554b：title「Shyness」、Album、first-release-date 1993-07-21、artist-credit「POiSON GiRL FRiEND」。證據：https://musicbrainz.org/release-group/f1cc24fc-edc2-3898-8be0-c7a9c243554b https://coverartarchive.org/release-group/f1cc24fc-edc2-3898-8be0-c7a9c243554b",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f1cc24fc-edc2-3898-8be0-c7a9c243554b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 517,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 517）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "倫敦另錄的弦樂，整批挪給了之後的 EP。POiSON GiRL FRiEND 是 nOrikO 一人的澀谷系個人計畫，名稱取自 Momus 的專輯《The Poison Boyfriend》。錄音地點是倫敦 Berwick Street Studios，製作、編曲都交給英國音樂人 Momus。1993 年 7 月 21 日開賣，經手的是日本コロムビア，這是她第三張作品，共 11 首。nOrikO 自己寫了〈Monche〉〈More I See〉〈Doomed Love〉。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/POiSON_GiRL_FRiEND",
+     "https://www.discogs.com/release/2263384",
+     "https://en.wikipedia.org/wiki/Momus_(musician)",
+     "https://www.discogs.com/master/3629481",
+     "https://musicbrainz.org/release-group/f1cc24fc-edc2-3898-8be0-c7a9c243554b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ed/76/ac/ed76ac4b-a982-37e0-23a1-4d83bc0c7eba/mzaf_15001790172678884245.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1548881364",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1548881364「Poison Girl Friend《Shyness》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Madame de Sade〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "THE 天国畑 JAPON",
+   "album": "BORONGE",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Tengokubatake\"",
+      "artist:\"Tengokubatake\" AND releasegroup:\"BORONGE\""
+     ],
+     "checkedAt": "2026-10-30",
+     "conclusion": "MB 藝人只建了 2022 年 EP 與合作盤，查無 BORONGE 的 release group，以 Discogs release 15314386 與 Apple 1400033521 為身分依據"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/release/15314386",
+     "https://music.apple.com/jp/album/boronge/1400033521"
+    ],
+    "manualRuling": "雲端主線 2026-10-30 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261030-sf02）",
+    "coverSourceHint": "apple-verified-collection",
+    "aliasReview": "日本搖滾：2018 年自主發行的第三張正規專輯，收錄樂團代表曲目的錄音室版本；原策展 HIGHROCKER 在 MB 掛名 PUNK ROCKER LABOR UNION（別名企劃），主線改收本團名義正規作｜策展無疑點｜MB 查無（MB 藝人只建了 2022 年 EP 與合作盤，查無 BORONGE 的 release group，以 Discogs release 15314386 與 Apple 1400033521 為身分依據），走 §1 人工身分。證據：https://www.discogs.com/release/15314386 https://music.apple.com/jp/album/boronge/1400033521 https://www.discogs.com/release/15314386 https://music.apple.com/jp/album/boronge/1400033521",
+    "queryAlias": "The Tengokubatake Japon"
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "appleCollectionId": "1400033521",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/9b/32/47/9b3247ad-48d1-a020-47b5-8c67e73000aa/859754157528_cover.jpg/600x600bb.jpg",
+    "note": "CAA 無圖；取已釘定試聽的 Apple 1400033521（THE 天国畑 JAPON《BORONGE》）官方圖，主線 2026-10-30 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 8,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 8）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "錄音室與廠牌，都掛著樂團自己的名字。THE 天国畑 JAPON 是東京三人搖滾團，切明羽多亮彈貝斯兼主唱，チャン太田打鼓，Naichan Oppy 彈吉他。2018 年 3 月 28 日歸入樂團同名廠牌，編號 TTJCD-0001，共 10 首，在 Tengokubatake Studio 錄成。客串有西塔琴與塔布拉鼓，風格是迷幻、stoner 與獨立搖滾。",
+    "sourceUrls": [
+     "https://tengokubatake.bandcamp.com",
+     "https://www.discogs.com/release/15314386",
+     "https://www.discogs.com/artist/5212811",
+     "https://www.discogs.com/release/8925456",
+     "https://music.apple.com/jp/album/boronge/1400033521"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6e/10/18/6e1018f8-c539-ed8d-4272-17715fd06fa7/mzaf_14218222118672677707.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1400033521",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1400033521「THE 天国畑 JAPON《BORONGE》」：Apple jp 同名 10 軌、2018-03-28（§1 人工身分的同一條目），取第 1 軌〈BUZZ MAN〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "比屋定篤子",
+   "album": "ルア・ラランジャ",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "1301dbd3-2570-455e-8651-1d48a225eaca",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本民謠：沖繩出身創作歌手的首張全長，1999年，公認早期代表作｜⚠ MB 首發年空白，1999 依 iTunes｜MB release-group 1301dbd3-2570-455e-8651-1d48a225eaca：title「ルア・ラランジャ」、Album、first-release-date （空）、artist-credit「比屋定篤子」。證據：https://musicbrainz.org/release-group/1301dbd3-2570-455e-8651-1d48a225eaca https://music.apple.com/jp/album/1539275187",
+    "queryAlias": "Hiyajo Atsuko 比屋定篤子"
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "pop",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1301dbd3-2570-455e-8651-1d48a225eaca/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 71,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 71）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "〈まなざし〉出現兩次，最後一首換成原聲版。沖縄出身的比屋定篤子，唱的是偏爵士與巴薩的歌。1999 年 10 月 1 日再由 SMEJ Associated Records 推出這張，共 11 首。第 4 首是原曲，收尾則是〈まなざし〜アコースティック〉。一個月前先發的單曲〈オレンジ色の午後に／ルア・ラランジャのテーマ〉，兩首也都收了進來。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/2440111",
+     "https://music.apple.com/jp/album/%E3%83%AB%E3%82%A2-%E3%83%A9%E3%83%A9%E3%83%B3%E3%82%B8%E3%83%A3/1539275187",
+     "https://ja.wikipedia.org/wiki/比屋定篤子",
+     "https://musicbrainz.org/release-group/1301dbd3-2570-455e-8651-1d48a225eaca"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/d1/b8/84/d1b884dc-9c2b-af33-33a5-64bebd9f916a/mzaf_11238653849184515263.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "appleCollectionId": "1539275187",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1539275187「比屋定篤子《ルア・ラランジャ》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈ルア・ラランジャのテーマ〉。主線 2026-10-30 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "静香",
+   "album": "天界のペルソナ",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f0dbee99-7f80-3a4f-aac0-765d7bb08e83",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本迷幻搖滾：PSF 日本迷幻地下搖滾名盤，静香的代表作｜⚠ 封面需 Discogs release 1123502 取圖（CAA 500）｜MB release-group f0dbee99-7f80-3a4f-aac0-765d7bb08e83：title「天界のペルソナ」、Album、first-release-date 1994-09-22、artist-credit「静香」。證據：https://musicbrainz.org/release-group/f0dbee99-7f80-3a4f-aac0-765d7bb08e83 https://www.discogs.com/release/1123502",
+    "queryAlias": "Shizuka 静香"
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f0dbee99-7f80-3a4f-aac0-765d7bb08e83/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 2724,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2724）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "主唱静香的本業，是製作球體關節人偶。1992 年在東京成形的地下迷幻搖滾團静香，由同名的她一手主導：唱歌、彈吉他、搖鈴，詞曲與整張的概念也全包。1994 年 P.S.F. Records 將它發行，7 首共約 46 分鐘，最長的〈６グラムの星〉達 10 分 20 秒。人聲像吟誦，吉他從輕撥推到失真獨奏，曲子常從安靜處衝向大聲的高潮。",
+    "sourceUrls": [
+     "https://musicbrainz.org/artist/5c125b18-d098-4321-8a06-09dd06871a32",
+     "https://www.discogs.com/artist/636174",
+     "https://www.discogs.com/release/1123502",
+     "https://en.wikipedia.org/wiki/Shizuka_(band)",
+     "https://musicbrainz.org/release-group/f0dbee99-7f80-3a4f-aac0-765d7bb08e83"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-10-30T03:10:57Z",
+    "note": "PSF 原盤 Apple 未上架（搜尋只命中同名的工藤静香）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  }
+ ]
+}

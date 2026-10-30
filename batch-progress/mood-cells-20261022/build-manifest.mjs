@@ -43,6 +43,7 @@ const albums = cards.map(c => {
         manualRuling: `雲端主線 ${NOW.slice(0, 10)} 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 ${batch}）`,
         coverSourceHint: covers[c.key]?.source === 'apple' ? 'apple-verified-collection' : (covers[c.key]?.source || '') } : {}),
       ...(c.exceptionReason ? { exceptionReason: c.exceptionReason, exceptionEvidenceUrls: c.exceptionEvidenceUrls } : {}),
+      ...(c.genreException ? { genreException: c.genreException } : {}),
       aliasReview: `${c.curatorWhy}｜${c.curatorRisk || '策展無疑點'}｜${c.mbNote}`.slice(0, 1500), queryAlias: c.queryAlias || '',
       ...(c.selfTitled ? { selfTitledVerified: true } : {}) },
     research: { suggestedYear: c.year, yearNote: '' },

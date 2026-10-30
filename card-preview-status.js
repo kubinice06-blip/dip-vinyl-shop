@@ -3557,4 +3557,7 @@ window.DipPreviewStatus = Object.freeze({
   "don carlos & gold|never run away": "unavailable",
   "triston palma|fancyness": "unavailable",
   "congo ashanti roy|sign of the star": "unavailable",
+  "ジョー山中|joe": "unavailable",
+  "cohol|空洞": "unavailable",
+  "静香|天界のペルソナ": "unavailable",
 });
