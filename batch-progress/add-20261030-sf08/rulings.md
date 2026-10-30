@@ -11,11 +11,23 @@
 - **身分核對**：gap.json 的 Spotify 藝人連結逐位對 MB 藝人頁，46 張直接對上、0 張對錯人；MB 無 Spotify 連結的 13 張抓 Spotify 藝人頁專輯清單對盤名，全部在該藝人名下（Beachy Head 2021 同名專輯＝Christian Savill 那組；Tacoma Radar、The Sonora Pine、David Boring 港團、Modey Lemon、Disappears、Pictish Trail、22-Pistepirkko、Any Other 皆對上）。Loose Meat 經 MB 藝人頁的 Spotify 連結確認是英國那組（MB 標籤 dance／electronic／experimental，研究層照實寫聲音）。The Charlottes 的 Spotify 藝人頁只露出合輯，《Lovehappy》以 MB＋Discogs 為證。
 - **主線改 2 處**（`master-override-sf08asf08b.json`）：
   - Frànçois & The Atlas Mountains：原選 2009 自發行《Plaine inondable》→ 改 2011《E Volo Love》（MB 3fb62205，Domino 首張、樂團的突破作）。
-  - Beachy Head 補廠牌 Kscope。
+  - Beachy Head 補廠牌（主線初填 Kscope 有誤，研究 a 組更正為 Graveface Records，見 41775）。
 - **跳過（池中已有）**：無。Ben Watt 池中只有 Everything but the Girl 名義，個人名義另收。
 - **不收**：Valley Hi!（只有 2021 年 4 曲 EP，MB 查無）。
 - Sleepytime Trio《Plus 6000》是 1997 年 6 首長 EP，照長 EP 例外收；Mamie Minch《Razorburn Blues》MB 無條目，走 §1 人工。
 
+
+## 研究 a 組（41701–41710）
+- 41701：22-Pistepirkko《Bare Bone Nest》—— 卡單 label「Bone Voyage Recording Company」存疑：MB／Discogs 的 1989 芬蘭原版是 Sonet 旗下 Spirit（SPIRITCD 1），Bone Voyage 查不到對應；建議卡單 label 改 Spirit。Trouser Press／AllMusic 列 1990（英國版），MB／Yle／維基 1989，採 1989。
+- 41702：22-Pistepirkko《Eleven》—— 同上，MB 為 Sonet（FI）、EFA／Clearspot（DE），版權頁 Bare Bone Business Oy（疑為樂團自家公司）；建議 label 改 Sonet。聲音符合 moodGuess（鼓機＋合成器）。
+- 41703：A Place to Bury Strangers《A Place to Bury Strangers》—— 身分與 Killer Pimp 對上（2007-08-13，維基專輯條寫 09-17，採 MB）。moodGuess「冷硬鼓機」存疑：Discogs 與樂評都指真人鼓（Jay Space），非鼓機，但鼓點急促機械，冷硬感成立。
+- 41704：A Place to Bury Strangers《Exploding Head》—— 製作署名 Andy Smith 為 Discogs 單一來源；維基「首張 major label」不採（Mute 是獨立廠牌）。聲音符合 moodGuess，樂評稱人聲較清、節奏有舞動感。
+- 41705：Any Other《Silently. Quietly. Going Away.》—— 推翻策展層：卡單 label「42 Records」錯，出道作 2015 年原版是 Bello Records（GBR001，MB／Discogs 一致）；42 Records 是第二張的廠牌。moodGuess「親密吉他獨唱與低調編曲」存疑：評論稱 Pavement／Built to Spill 式電吉他、急切粗礪的獨立搖滾，偏躁而非安靜獨唱（建議 x 升、y 升）。Rockit 寫 2016，採 2015。
+- 41706：Any Other《Two, Geography》—— label 42 Records 對（2018-09-14）。聲音以原聲吉他、薩克斯風為主、「very dry」，可能比 moodGuess（x 3.1）更輕更暖。製作人與錄音地點查無來源，不寫。
+- 41707：Beachy Head《Beachy Head》—— 推翻策展層／主線：label 不是 Kscope，MB（2021-04-30 XW 與 US grave168）、Discogs、Bandcamp 全指向 Graveface Records，卡單 label 應改 Graveface Records。身分確認是 Slowdive 吉他手 Christian Savill 那組（成員 Ryan Graveface、Steve Clarke、Matt Duckworth、Rachel Goswell）。moodGuess「器樂夢幻」存疑：有人聲、評論稱原聲吉他為主、緩慢，y 1.0 可能偏高。
+- 41708：Blind Melon《Blind Melon》—— 無疑點。MB 1992-09-14、Discogs 09-22，同年。
+- 41709：Blind Melon《Soup》—— 無疑點；Hoon 逝世已按「與作品直接綁定的遺作事實」寫，標明時序。
+- 41710：Blonde Redhead《Misery Is a Butterfly》《23》—— 兩張皆無疑點。「4AD 第一張」未查證，facts 不寫；維基專輯條 clavichord 疑為 clavinet 之誤，採 Discogs。《23》Pitchfork 排名屬榜單，僅在 facts 末端一條，主線可刪。Bonny Light Horseman《Bonny Light Horseman》—— label 37d03d 對（MB／Discogs），無疑點；《Hadestown》背景未在來源驗證，未寫。
 
 ## 研究 b 組（41711–41720）
 - 41711：Current Joys《A Different Age》廠牌卡單 Secretly Canadian 錯，MB 與 Atwood 皆為 Danger Collective Records（Secretly Canadian 2023 才發《LOVE + POP》）→ 卡單 label 改 Danger Collective Records，curatorWhy 措辭作廢。
@@ -66,3 +78,4 @@
 - 41745：Mamie Minch《Razorburn Blues》—— Apple 確認 2008-05-24、11 首、℗ Mamie Minch；Discogs 另列 Morphius Records, Inc.，廠牌兩說，沿用自行發行。Chronogram 作《The Razorburn Blues》視為冠詞誤植。
 - 41746：Ben Watt《Hendra》—— 發行日以 MB 2014-04-14 為準（他處 4/15、3/24）；鼓有無來源未明。North Marine Drive 的榜名兩說（獨立榜第一／前十），facts 保守引用。
 - 41774：照研究 e 組改卡單：Sleepytime Trio 廠牌→Lovitt Records（LOV #7）、СОЮЗ→Masterskaya 且主曲風 rock→pop（第二 jazz；Bandcamp／MB 標 jazz、avant-pop，無後龐克證據）、Vinnum Sabbathi→自行發行；Mamie Minch 維持自行發行（Apple ℗ 本人）。David Boring、СОЮЗ moodGuess 與聲音不符，**不汰卡**（這條線收的是藝人代表作，不看落格），情緒評分照研究稿的聲音事實判。單一來源事實刪 2 條：David Boring 團名出處（只有 Deezer 簡介）、Hendra 的 AIM 獎（只有搜尋摘要）；研究稿已同步。
+- 41775：照研究 a 組改卡單廠牌：Beachy Head→Graveface Records（主線策展誤填 Kscope）、Any Other《Silently. Quietly. Going Away.》→Bello Records（42 Records 是第二張）、22-Pistepirkko《Bare Bone Nest》→Spirit（Sonet 旗下）、《Eleven》→Sonet。
