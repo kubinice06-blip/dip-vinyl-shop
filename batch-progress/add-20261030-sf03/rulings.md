@@ -48,3 +48,9 @@
 - **41213**：スズキジュンゾ《Ode to a Blue Ghost》：原版 2009 Plunk's Plan CD-R 三首現場錄音，Apple 流通的是 2012 Utech 四首版；Bandcamp 無此盤；人聲有無查不到，moodGuess「低吟」存疑，不汰卡。年份維持 2009。
 - **41214**：Musica Transonic 首作代表作依據：Burning Ambulance 評論加 2020 Black Editions 18 首雙 LP 重發，足以支持，不推翻；廠牌 P.S.F.、年份 1995 屬實。曲名全為希臘字母拼寫，keyTracks 留空。
 - **41215**：杉本拓《Opposite》廠牌 hatNOIR、1998 屬實；找不到針對本盤的樂評，status thin，聲音只依 Wikipedia 風格描述與曲長；單吉他，琴種未查到不寫。
+- **41216**：主線換盤後核對《Buried Sky, Spider Torn To Pieces》：MB／Discogs 一致，2010-08-11、Plunk's Plan ppcd 003、日本 CD 正規專輯、九首約 57 分鐘；人聲存在已證，但「失真、低吟、緩慢」無來源，moodGuess 存疑不汰卡；無樂評，status thin，聲音措辭保守。
+
+## 主線（條號 41271–41280）
+- 41271：研究層推翻策展層，卡單已改：world's end girlfriend《Hurtbreak Wonderland》廠牌改 Human Highway（2007 原版 HHR42，Virgin Babylon 是 2010／2013 再版）；陳信輝改 Polydor（MR 5003）；三橋貴風 & 山屋清補 Denon（WX-7506）；関藤繁生 Vol.2 補 Columbia（GS-7012）；Sinsuke Fujieda Group 補 SoFa Records（SOFA1014，年份留 2021，Apple 2026 是數位再發）；Sam Gendel & Shin Sasakubo 改 Carnet Records（carnet-001；Leaving 是 Gendel 自己的廠牌）；狩生健志《Sekai》年份改 2020（黑膠 2020-12-07）；バズ《Buzz》補 London Records（SKD(L)-1013）。
+- 41272：**スズキジュンゾ換盤**：研究 b 核出《Ode to a Blue Ghost》原版是 2009 年三首現場錄音 CD-R（策展說 MB 查無也不對，MB 有藝人 289c9c9f 與 19 個 release-group）。改收《Buried Sky, Spider Torn To Pieces》（2010-08-11，Plunk's Plan ppcd 003，9 曲 CD 正規專輯，MB 1aea8f3e 釘住，CAA 有圖）；早期的《Cosmic Blues Experience》《Eight-Sided Infinity》都只有 3 曲、CAA 無圖，不選。研究 b 41216 重查。人工身分從 4 張降為 3 張。
+- 41273：割礼《Paradaise・K》研究 b 核出是迷你專輯（LP 6 首、CD 7 首），MB 記 Album；6 首以上、作為主要作品發行，符合長 EP 例外，照留。穂高亜希子《ひかるゆめ》不是首張（Discogs 有 2005、2008 更早發行），正文不寫「首張」。LSD March 不是長篇堆疊（7 首、偏克制 lo-fi），以研究稿為準。BUZZ 身分：MB 30645ba2／Discogs 皆指 1972 年成立的日本團（〈ケンとメリー〉出道），Spotify 頁未能直接核對，照判斷收；高橋幸宏只是錄音鼓手，不寫成成員。
