@@ -112,3 +112,8 @@
 - 其餘 37 張逐張審過，未改字。媒體名、媒體榜單名次、「據說／據傳」全文 grep 0。Night Cap thin 181 字（上限 180 超 1 字），屬計數邊界，不改。
 - 41874：**頂點逐張判定 0 張**。39 張 classic 皆 ≤4（Play Bach、Bass Desires、金字塔為 4），無殿堂資格；高木元輝《Mosura Freight!》obscurity 5，但只有 Discogs／BnF 目錄與 300 張限量事實，沒有遺珠級評論證據，不判 pearl。manifest `apexAssessment` 皆寫明已評估。
 - 41875：封面 39/39 live-check HTTP 200 image；寫入前對 origin/main 與所有 `claude/*` 分支 seed 去重 0 撞。
+- 41876：子曲風。`warm-batch` 標籤 37／空 2；`build-genre-tree --pull --write` 後 13 張未落位，寫進 `genre-l3-artist-map.json`：David Becker Tribune→jazz/fusion/guitar；Jacques Loussier、Michel Sardaby→jazz/bop/piano；Tyreek McDole、Dominique Fils-Aimé→jazz/contemporary/vocal；Foat／Votskos／Pappas Trio→jazz/contemporary/world；Fresh Moods、Spiral Deluxe→electronic/downtempo/nu-jazz（Spiral 主曲風是 electronic，jazz 節點吃不到）；Graciela Susana→world/latin/latin-pop；Assagai→rock/psych-prog/art-rock（主曲風 rock，非洲節點吃不到）；swing slow→pop/jp-pop/singer-songwriter。重跑後 39/39 落位，`build-draw-covers --pull --write` 完成。
+
+## 本批新藝人（無介紹）
+- 32 位全部沒有介紹、也不在排隊批次或別名鍵（高木元輝池中只有「高木元輝＝加古隆カルテット」合作名義的介紹，個人名義另列）。名冊 `batch-progress/artist-intro/roster-sf09.json`（tier D、addedBy add-20261030-sf09），progress.json 追加 **ar-d-209**（state cut，32 位，未超過 45 不開溢出號）。補洞寫作由調度另派工作階段跑。
+- Bill Bruford's Earthworks、Bobo Stenson Trio、Daniel Ponce、David Becker Tribune、Hal Galper、Jacques Loussier、John Surman、Manu Katché、Marc Johnson、Marc Ribot、Marc Ribot's Ceramic Dog、Mark Guiliana、Michel Sardaby、Moses Yoofee Trio、New Klezmer Trio、Nils Landgren Funk Unit、Slowly Rolling Camera、The Greg Foat Group、Tyreek McDole、Greg Foat, Sokratis Votskos & The Giorgos Pappas Trio、Yttling Jazz、高木元輝、濱瀬元彦、中村一義、Dominique Fils-Aimé、uKanDanZ、Assagai、Spiral Deluxe、swing slow、Fresh Moods、Flea、Graciela Susana。
