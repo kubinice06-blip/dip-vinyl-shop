@@ -92,3 +92,11 @@
 ## 主線審稿（2026-10-30，雲端主線，20 張）
 - 41575：逐張讀全文、對回研究稿與 note，**逐張審過，未改字**。抽查兩處單源事實：雞蛋蒸肉餅「首隊入圍金曲獎最佳樂團的香港樂隊」——主線讀中文維基原文（2017 年 5 月第 28 屆入圍，「成為首隊入圍該獎項的香港樂隊」）屬實；盧家齊為破地獄（Scattered Purgatory）核心成員——研究 b 組有 Discogs／廠牌兩源。dotzio「放上 Bandcamp」是發行管道、非來源平台，放行。張亞東 key 內盤名、盧家齊 album 欄保留官方「圆」字，正文寫《Circle = 圓》。
 - `qa-batch out` 通過、`qa-check-research` 兩檔 0、`fix-spacing` 待補 0；媒體名、媒體榜單名次、「據說／據傳」grep 0。
+- 41576：**頂點逐張判定 0 張**。20 張 classic 皆 ≤4（亂彈阿翔《把我換成你》金曲獎得獎盤、Glen Check《Haute Couture》韓國大眾音樂獎得獎盤、Juggaknots 首作為 4），無殿堂資格；obscurity 5 的 Kaishandao、盧家齊、The Cheers Cheers、Monique Chao、dotzio 都只有廠牌／Bandcamp 事實，沒有遺珠級評論證據，不判 pearl。冷門軸照 §0.8 錨點制（華語、韓、泰卡記 `manual:regional-rubric`）。
+- 41577：試聽 ready 14／unavailable 6（劉以達、盧家齊、Juggaknots、강태환、dotzio、Championxiii：Apple 查無原盤）。張亞東《Ya Tung》Apple 曲名是英譯，主線逐軌對 MB 12/12 同序；Superstar Quamallah 取碟一第 12 軌（碟二是伴奏版）；JUU4E 首軌是 skit，取第 2 軌。iTunes API 中途限流（429／空回應）約 40 分鐘，改慢速重查補齊，未以限流為由標 unavailable。
+- 41578：封面 20/20 live-check HTTP 200 image；非 CAA 3 張（劉以達 Discogs、張亞東與亂彈阿翔 Apple）主線目視，Discogs 7202289 登錄 `data/discogs-cover-registry.json`。寫入前合併 origin/main（sf03／04、sf11／12 已上線），對 origin 155 個 refs（65 份不同 seed）做藝人＋盤層去重 0 撞。
+- 41579：寫入 card_catalog 20／20、KV 28 鍵（20 張＋CJK 別名鍵；`verify-wave-kv` 與 sf08 合計 87 鍵逐字一致）、靜態試聽 14、seed +20；prepare／published gate 皆 0 error。`tw-pop-artists.json` +2（Everfor、亂彈阿翔）；`rock-asia-country-map.json` +劉以達 hk、雞蛋蒸肉餅 hk、The Cheers Cheers cn（AB'S jp 由腳本自動判定）；`genre-l3-artist-map.json` 補 張亞東／dotzio→electronic/synth/indietronica、Everfor／亂彈阿翔→pop/t-pop、盧家齊→electronic/ambient/drone、Fishdoll→electronic/downtempo/beats、Glen Check→electronic/synth/synthpop、Superstar Quamallah→hiphop/underground/jazz-rap、Monique Chao→jazz/swing/big-band、JUU4E→pop/sea-pop（策展給 pop 主類型，實為泰國 trap，主類型未改，留待日後校正）、Championxiii→hiphop/pop-rap。子曲風 20/20 落位，`build-draw-covers --pull --write` 完成。
+
+## 本批新藝人（無介紹）
+- 20 位全部沒有介紹、也不在排隊批次或別名鍵。名冊 `batch-progress/artist-intro/roster-sf06.json`（tier D、addedBy add-20261030-sf06），progress.json 追加 **ar-d-206**（state cut，20 位，未超過 45 不開溢出號），`desc-tools/batches/artist/cut/ar-d-206.txt`。補洞寫作由調度另派工作階段跑。
+- 劉以達、雞蛋蒸肉餅、張亞東、AB'S、Everfor、Kaishandao、亂彈阿翔、盧家齊、Shaa Khan、The Cheers Cheers、Fishdoll、Juggaknots、Glen Check、강태환、Superstar Quamallah、7FO、Monique Chao Jazz Orchestra、JUU4E、dotzio、Championxiii。
