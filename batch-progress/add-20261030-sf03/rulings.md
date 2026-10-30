@@ -33,3 +33,18 @@
 - 41222：穂高亜希子《ひかるゆめ》卡單稱「首張個人專輯」不成立（Discogs 有 2005、2008 更早發行），寫作層不得寫「首張」；代表作依據薄，status thin，年份廠牌無誤。
 - 41223：Far Out《日本人》年份採 1973（MB、Discogs、日文維基脈絡），Apple 1971 不採；廠牌 Denon 無誤。
 - 41224：割礼《ネイルフラン》、みみのこと《Hitoyogiri》找不到談速度與音色的樂評，moodGuess 只有風格標籤與編制佐證，notes 已標存疑；みみのこと卡單「民謠」無來源，寫作層勿寫。
+
+## 研究 a 組
+- 41201 Hurtbreak Wonderland：卡單 label=Virgin Babylon 有誤；2007 原版為 Human Highway（HHR42），Virgin Babylon 是 2010／2013 再版。建議卡上 label 改 Human Highway（可逆，manifest 欄位）。年份 2007 無誤。
+- 41202 Seven Idiots：身分無誤（Virgin Babylon VBR-001，2010-09-14）。聲音面來源薄（僅評論引言與樂手署名），標 thin；moodGuess 無反證，不存疑。
+- 41203 Nani Nani：掛名 Yamataka Eye & John Zorn 可用（Discogs 中 Dekoboko Hajime 與 Zorn 樂器欄相同）。錄音日期 Discogs booklet 3/17–18 對英維 4/17–18，facts 採 booklet；寫作層避談月份。
+- 41204 NOA：moodGuess 存疑（卡單說「歌與吉他、低吟」，但曲目與 MB 標籤 noise／experimental 看不出有歌，傾向器樂吉他）；年份 1997（Discogs ©℗1997、MB）對英維／日維 1998，推翻後者。聲音事實薄，status thin。
+- 41205 PLAYGROUND：身分無誤，聲音事實充分（人聲、吉他、貝斯、單一鼓手）。「迷幻」一詞無來源，不影響收卡。
+
+## 研究 b 組
+
+- **41211**：LSD March 推翻策展「長篇迷幻搖滾」：本盤七首、Dusted 與 Scaruffi 皆指向克制 lo-fi 的慢編排，偶爾爆發；moodGuess 存疑（x 可能偏低），不汰卡。Dusted 引文為 WebSearch 摘要間接引述，原頁 404，寫作層不放全文引句。重發年採 2004（Discogs／MB），Scaruffi 寫 2005。
+- **41212**：割礼《Paradaise・K》實為迷你專輯（LP 六首、CD 七首、2010 P-Vine 版十一首）；找不到任何聲音樂評，sound 只依 Discogs 風格標籤與曲長；moodGuess（低吟、扭曲、緩慢、陰鬱）全無證據，存疑不汰卡。Touch Label 重發不寫國別。
+- **41213**：スズキジュンゾ《Ode to a Blue Ghost》：原版 2009 Plunk's Plan CD-R 三首現場錄音，Apple 流通的是 2012 Utech 四首版；Bandcamp 無此盤；人聲有無查不到，moodGuess「低吟」存疑，不汰卡。年份維持 2009。
+- **41214**：Musica Transonic 首作代表作依據：Burning Ambulance 評論加 2020 Black Editions 18 首雙 LP 重發，足以支持，不推翻；廠牌 P.S.F.、年份 1995 屬實。曲名全為希臘字母拼寫，keyTracks 留空。
+- **41215**：杉本拓《Opposite》廠牌 hatNOIR、1998 屬實；找不到針對本盤的樂評，status thin，聲音只依 Wikipedia 風格描述與曲長；單吉他，琴種未查到不寫。

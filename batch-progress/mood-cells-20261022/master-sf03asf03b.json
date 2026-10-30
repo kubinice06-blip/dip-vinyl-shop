@@ -314,17 +314,14 @@
   }
  },
  {
-  "mbAbsenceProof": "MusicBrainz 以 スズキジュンゾ／Suzuki Junzo／Junzo Suzuki 搜尋皆無此藝人；Discogs 有藝人頁 1081457",
-  "manualEvidenceUrls": [
-   "https://www.discogs.com/artist/1081457-Suzuki-Junzo",
-   "https://suzukijunzo.bandcamp.com"
-  ],
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
   "releaseException": "",
-  "queryAlias": "Suzuki Junzo / 鈴木ジュンゾ / Junzo Suzuki",
-  "uncertain": "Spotify 上實際收錄哪張未核對；年份取 Discogs master 2009（Apple 為 2012 數位版）",
+  "queryAlias": "埋める空 千切れる蜘蛛",
+  "uncertain": "主線換盤：代表作缺評論共識，取早期正規 CD 專輯中曲目完整、CAA 有封面者",
   "artist": "スズキジュンゾ",
-  "album": "Ode to a Blue Ghost",
-  "year": 2009,
+  "album": "Buried Sky, Spider Torn To Pieces",
+  "year": 2010,
   "label": "Plunk's Plan",
   "country": "jp",
   "faction": "jp-noise-psych",
@@ -332,7 +329,7 @@
    "rock",
    "folk"
   ],
-  "why": "東京地下吉他手／歌手，自己經營 Plunk's Plan；本張是個人最受討論的迷幻噪音民謠盤",
+  "why": "Plunk's Plan 自家廠牌的 9 曲 CD 正規專輯；原選《Ode to a Blue Ghost》是 2009 年三首現場 CD-R，不合錄音室專輯規則",
   "moodGuess": {
    "x": 2.9,
    "y": 0.9,
@@ -340,14 +337,20 @@
    "why": "失真吉他與低吟，朦朧迷幻、緩慢鬱沉"
   },
   "evidence": [
-   "https://www.discogs.com/master/440850",
-   "https://music.apple.com/jp/album/ode-to-a-blue-ghost/1058778850",
-   "https://suzukijunzo.bandcamp.com"
+   "https://musicbrainz.org/release-group/1aea8f3e-6b45-43d8-8e60-220dd85eb303",
+   "https://www.discogs.com/release/2583234"
   ],
   "spotifyName": "Suzuki Junzo",
+  "mbRgMbid": "1aea8f3e-6b45-43d8-8e60-220dd85eb303",
   "group": "sf03a",
   "factionZh": "日本地下迷幻／噪音",
-  "mb": null
+  "mb": {
+   "title": "Buried Sky, Spider Torn To Pieces [埋める空 千切れる蜘蛛]",
+   "type": "Album",
+   "sec": [],
+   "date": "2010-08-11",
+   "credit": "Suzuki Junzo"
+  }
  },
  {
   "mbAbsenceProof": null,

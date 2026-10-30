@@ -1,2 +1,42 @@
-{"drop":[["関藤繁生","華麗なるエレクトーン -キャッチ・イン・アリス- (Special Sound Series Vol. 1)"],["Sinsuke Fujieda Group","FUKUSHIMA"],["バズ","Gentle Mind From Buzz"],["みみのこと","緑の住処"]],
- "fix":{"Yamataka Eye|Nani Nani":{"artist":"Yamataka Eye & John Zorn","queryAlias":"Dekoboko Hajime & Yamataka Eye；Yamantaka Eye","uncertain":"MB 掛名 Dekoboko Hajime（John Zorn 化名）& Yamataka Eye；Apple 掛 Yamataka Eye & John Zorn，卡上用後者"}}}
+{
+ "drop": [
+  [
+   "関藤繁生",
+   "華麗なるエレクトーン -キャッチ・イン・アリス- (Special Sound Series Vol. 1)"
+  ],
+  [
+   "Sinsuke Fujieda Group",
+   "FUKUSHIMA"
+  ],
+  [
+   "バズ",
+   "Gentle Mind From Buzz"
+  ],
+  [
+   "みみのこと",
+   "緑の住処"
+  ]
+ ],
+ "fix": {
+  "Yamataka Eye|Nani Nani": {
+   "artist": "Yamataka Eye & John Zorn",
+   "queryAlias": "Dekoboko Hajime & Yamataka Eye；Yamantaka Eye",
+   "uncertain": "MB 掛名 Dekoboko Hajime（John Zorn 化名）& Yamataka Eye；Apple 掛 Yamataka Eye & John Zorn，卡上用後者"
+  },
+  "スズキジュンゾ|Ode to a Blue Ghost": {
+   "album": "Buried Sky, Spider Torn To Pieces",
+   "year": 2010,
+   "label": "Plunk's Plan",
+   "mbRgMbid": "1aea8f3e-6b45-43d8-8e60-220dd85eb303",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "queryAlias": "埋める空 千切れる蜘蛛",
+   "evidence": [
+    "https://musicbrainz.org/release-group/1aea8f3e-6b45-43d8-8e60-220dd85eb303",
+    "https://www.discogs.com/release/2583234"
+   ],
+   "why": "Plunk's Plan 自家廠牌的 9 曲 CD 正規專輯；原選《Ode to a Blue Ghost》是 2009 年三首現場 CD-R，不合錄音室專輯規則",
+   "uncertain": "主線換盤：代表作缺評論共識，取早期正規 CD 專輯中曲目完整、CAA 有封面者"
+  }
+ }
+}
