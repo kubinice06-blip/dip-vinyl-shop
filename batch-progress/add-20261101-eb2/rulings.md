@@ -51,3 +51,14 @@
 - **47140**：moodGuess 存疑（不汰）：《5 ran do čepice》「尖銳」、《Výlety》「稀疏尖銳」（實為柔和木管與小打擊樂）、《Dialogy》「無調」皆無聲音來源可證；其餘與 Discogs 風格標籤相符。
 - 本組 8 張：full 7、thin 1；facts 8 至 9 條皆 https；推翻策展層 1 處（Výlety 軌數）。
 - 47172：照研究 a 組再換 2 張。**Aladár Pege《Pege》**（1980 Pepita）：Discogs 標 Compilation，三首是 1976–78 爵士節現場（客座 Art Farmer、Leo Wright、Benny Bailey、ORF Big Band），不是正規錄音室專輯，汰；Pege 只留《Synchronicity》。**Mihály Dresch Quartet《...Folyondár...》**：1995-05-12 Közgáz Jazz Club 現場，MB 標 Live，Dresch 最重要作品不是現場盤，不開例外，汰；Dresch 留《Mozdulatlan Utazás》。補回汰換區 **Jazz Q《Symbiosis》**（1974 Supraphon）、**Fermáta《Huascaran》**（1977 Opus），皆 MB 釘住，置 group a 原位。匈牙利 19、捷克斯洛伐克 21。《A Szarvassá Vált Fiak》是 MAKUZ 為 Győr 芭蕾舞團寫的器樂大樂團舞劇音樂（非合唱），屬 Szabados 自由爵士樂團正作，照收。
+
+## 研究 c 組
+- **47121**　Csík《Csík Gusztáv És Együttese》：匈牙利維基稱 1977 首張大碟是波蘭 Polskie Nagrania《Jazz Jamboree 77 Vol.1》，與 Pepita SLPX 17506 並存、關係不明；facts 只寫 Discogs 可核的 Pepita 版，不寫『第一張大碟』。thin。
+- **47122**　Bergendy《Jazz》：確認全盤四首器樂長曲、爵士搖滾；匈牙利維基證實樂團 1958 年起家是大學爵士團，不推翻策展層。thin。
+- **47123**　Dimenzió：János Másik／Janos Masik 視為同一人，不查其他身分；『唯一專輯』不寫。thin。
+- **47124**　Syrius《Széttört Álmok》：1976 為換血後陣容，不可套 1970–73 傳奇陣容；『匈牙利爵士館藏第一』未核實，不寫。thin。
+- **47125**　Berki：Shabu-Shabu 成員 Discogs 未標，只寫全員陣容；Fogarasi／Jávori 即 Csík 三重奏班底。thin。
+- **47126**　Harcsa《Red Baggage》：Discogs 2008 vs 維基 2009，卡單 2008 不推翻，寫作層不寫月份；2009 Fonogram 獎屬前作，不寫。thin。
+- **47127**　Jazz Q《Coniunctio》：Discogs 版本為 Gramofonový klub 版；B 面曲長兩源不一致，只寫 A 面 19:15。full。
+- **47128**　Jazz Q《Pozorovatelna》：1973-01-29 錄音日僅 Discogs 單源，建議寫『1973 年初』；〈Pori 72〉不寫成芬蘭 Pori 爵士節。full。
+- **47129**　全組 moodGuess 存疑（聲音無樂評佐證，僅 credits／風格標籤）：Csík、Bergendy、Dimenzió、Syrius、Berki、Harcsa 的『躁／靜』軸；Coniunctio、Pozorovatelna 與 moodGuess 吻合。無須汰換。
