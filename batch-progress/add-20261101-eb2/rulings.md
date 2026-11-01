@@ -114,3 +114,12 @@
   - **汰 `desc2:Walter Norris & Aladár Pege|Synchronicity`**：研究 b 組 facts 寫明是 1978-05-05 紐倫堡 Meistersingerhalle East-West Jazz Festival 現場錄音（MB 查無、Discogs 未標 Live，策展沒抓到），不是 Pege 最重要的作品，不開現場例外；另外正文的「低音大提琴的帕格尼尼」外號也只有單源。卡單、研究 b、鉤子 b、writer-1 輸入與成品同步刪除，`master-override` 加 drop。不再補位（汰換區剩捷克盤，均需重跑研究；本批照實 39 張）。
 - 其餘 37 張逐張審過，未改字。媒體名、媒體榜單名次、「據說／據傳／據報導／被認為／被形容為／似乎」全文 grep 0。Eva Olmerová 末句兩度入獄、Super Trio 的 Vukán 兼職牙醫皆有捷克／匈牙利維基＋Discogs 支撐，保留。
 - 改完重跑 `qa-batch research`／`out` 39/39、`qa-check-research` 兩檔 0 標記、`fix-spacing` 待補 0。
+- 47175：**試聽 ready 25／unavailable 14**。Hungaroton「Hungarian Jazz History」系列與 Supraphon 數位重發覆蓋大半，逐張 lookup 核對曲目：重發加收曲目的取原盤 A1（V Holomóci Městě… 取第 4 軌、其餘取第 1 軌）；《Okno》用兩張合一的《Okno & Dveře》前 8 軌；Dimenzió 由 MB release url-rels 連到 Apple gb。Adyton、Szarvassá、Grencsó、Piknik、Sham、Sámánének、Ultraviola、Bergendy、Dresch、Motus、Výlety、Polymelomodus、Impresie、Berki 查無對得上的串流，照實標 unavailable。
+- 47176：**三軸**：冷門軸照 §0.8 錨點制全批 3、經典軸全批 3；易聽軸自由爵士／即興類 2（Szabados 兩張、Binder 兩張、Grencsó、Stivín 兩張、Dašek《Dialogy》）、人聲與歌曲類 4（Olmerová、Harcsa、Berki、Syrius），其餘 3（`ratings-override.json`）。
+- 47177：**頂點逐張判定 0 張**。39 張 classic 皆 3、obscurity 3，無殿堂／遺珠／異端資格；manifest `apexAssessment` 皆寫明已評估。
+- 47178：**身分**：gate 前人工身分卡逐張用 MB 重查，The Super Trio《Birthday Party》（9b46be4f，Krém SLPX 37047 1987）、Laco Déczi《Pietoso》（f49624ee，Supraphon 數位重發）改釘住（最終 MB 釘住 25、人工 14）；Brom《Polymelomodus》MB 只有兩個掛名不一的 2015 重發 RG、Déczi《Jazz Cellula》MB 同名 RG 是 2008 美國新作，皆維持人工身分並寫進 conclusion。Discogs 封面 21 張登錄 registry。
+- 47179：**寫入**：寫入前對 origin 163 條分支 seed 去重 0 撞。card_catalog 39／39、KV 39 鍵逐字回讀一致、seed 39 列、published gate 0 error。子曲風：`warm-batch` 標籤 28／空 11，未落位 20 張補進 `genre-l3-artist-map.json` 後 39/39 落位；`build-draw-covers` 完成。
+
+## 本批新藝人（無介紹）
+- 39 張 30 個掛名，扣掉已有介紹的 Syrius，29 位進名冊 `batch-progress/artist-intro/roster-eb2.json`（tier D、addedBy add-20261101-eb2），progress.json 追加 **ar-d-242**（state cut，29 位）。補洞寫作由調度另派工作階段跑。
+- György Szabados、György Szabados & MAKUZ、Binder Quintet、Mihály Dresch Quartet、Fermáta、Grencsó Kollektíva、Jazz Q、Károly Binder、Energit、The Super Trio、Béla Szakcsi Lakatos、Gonda Sextet、Tomsits Jazz Group、Csaba Deseő Jazz Quintet、Gusztáv Csík Quartet、Bergendy、Dimenzió、Tamás Berki & Shabu-Shabu、Veronika Harcsa、Karel Velebný & SHQ、Laco Déczi、Jiří Stivín & Co. Jazz System、Jiří Stivín & Pierre Favre、Rudolf Dašek、Emil Viklický、Karel Růžička、Gustav Brom、Gabriel Jonáš、Eva Olmerová。

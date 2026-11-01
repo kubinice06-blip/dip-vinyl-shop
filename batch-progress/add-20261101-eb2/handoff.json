@@ -1,0 +1,39 @@
+{
+ "batch": "add-20261101-eb2",
+ "cards": 39,
+ "written": {
+  "cardCatalog": 39,
+  "kvKeys": 39,
+  "seedRows": 39,
+  "previewReady": 25,
+  "previewUnavailable": 14
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 39,
+  "changed": [
+   "desc2:György Szabados|Az Esküvő = The Wedding",
+   "desc2:Jazz Q|Symbiosis"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "prepareGate": "0 error",
+  "publishedGate": "0 error"
+ },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "無"
+ },
+ "artistIntro": {
+  "roster": "batch-progress/artist-intro/roster-eb2.json",
+  "batch": "ar-d-242",
+  "artists": 29,
+  "state": "cut"
+ }
+}
