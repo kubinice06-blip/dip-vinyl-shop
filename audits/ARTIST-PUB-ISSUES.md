@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1034 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1049 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1038,3 +1038,18 @@
 | ar-d-242 | György Szabados & MAKUZ | A Szarvassá Vált Fiak | 鋼琴手 György Szabados 在 1980 年代初成立了它 | 成立年各源不一（Fonó 1983、hu 維基 1988），「1980 年代初」無法證實，建議改「1980 年代」或不寫 | https://www.fono.hu/en/news/tribute-to-szabados-gyorgy/ |
 | ar-d-242 | Károly Binder | Kontinentspiel | 1981 年贏得 Kalis 爵士鋼琴大賽 | 比賽是波蘭 Kalisz 國際爵士鋼琴大賽，拼法應為 Kalisz；李斯特頁另說 1981 年得獎曲是 Kontinentspiel，簡介寫「一人彈鋼琴、豎琴」之類編制細節未驗 | https://uni.lisztacademy.hu/teaching-staff/binder-karoly-787 |
 | ar-d-242 | Béla Szakcsi Lakatos | Sham | 1972 年創立融合團體 Rákfogó | 匈牙利維基與英文維基都只寫他加入 Rákfogó（1972 年起），沒有說他創團；事實庫舊條目寫「創團人」，來源只有一條匈牙利維基導言，待本機再核。 | https://hu.wikipedia.org/wiki/Szakcsi_Lakatos_B%C3%A9la |
+| ar-d-243 | Wanda Warska | Somnambulicy | 到了 1964 年，夫妻倆在華沙開了一家夜店，店名 Piwnica Wandy Warskiej | 開設年各源不一（1964／1965／1967），Warska 條寫 1964 年而 Kurylewicz 條與 pl 維基指 1965 年 | https://en.wikipedia.org/wiki/Wanda_Warska |
+| ar-d-243 | Janusz Zabiegliński | Janusz Zabiegliński and His Swingtet | 1969 年，他前往伊拉克當了三年營建工程師 | pl 維基寫 1969 年起在伊拉克約三年、1971 年返波蘭，前後只有約兩年，內部不一致；另載 1975 至 1979 年又在中東當工程師。建議改成「1969 年前往伊拉克工作」，不寫年數。 | https://pl.wikipedia.org/wiki/Janusz_Zabiegli%C5%84ski |
+| ar-d-243 | Krzysztof Sadowski | Three Thousands Points | 這位爵士風琴手也替 Irena Santor 等歌手寫歌 | pl 維基只寫他替數位波蘭歌手寫歌，未列 Irena Santor；本層未能驗證，建議改成「也替歌手寫流行歌」或補來源。 | https://pl.wikipedia.org/wiki/Krzysztof_Sadowski_(kompozytor) |
+| ar-d-243 | Grupa Organowa Krzysztofa Sadowskiego | Na kosmodromie | 唱歌兼吹長笛的 Liliana Urbańska 是他的妻子 | pl 維基寫兩人 1990 年代初才結婚並一起成立兒童樂團 Tęcza，且稱 Sadowski 為她的前夫；1972 年錄音時並非夫妻，現在也已不是。建議改成「後來與他結婚的」或刪去婚姻關係。待本機複核。 | https://pl.wikipedia.org/wiki/Krzysztof_Sadowski_(kompozytor) |
+| ar-d-243 | Stanisław Sojka | Blublula | 卡托維治音樂學院 | 校名中文慣用譯為「卡托維茲」，簡介用字與其他卡一致性待核（非事實錯誤）。 | https://en.wikipedia.org/wiki/Stanis%C5%82aw_Soyka |
+| ar-d-243 | Ewa Bem | Dla Ciebie jestem sobą | 1987 年 PolJazz 出 LP | pl 維基將此合作專輯列為 1986 年；卡池為 1987，發行年待本機核（Discogs 可能是 1987 再版）。 | https://pl.wikipedia.org/wiki/Ewa_Bem |
+| ar-d-244 | Алексей Кузнецов, Николай Громин | Джанго | 兩人 1978 年 5 月錄成，也是 Кузнецов 頭一回以完整獨奏者身分出唱片 | Radio Svoboda 稱專輯 1977 年發行並提到更早的 1965 年《Джаз-65》錄音與 1970 年代與 Leonid Chizhik 的專輯；年份與「頭一回」兩處待核 | https://www.svoboda.org/a/420522.html |
+| ar-d-244 | Джазовый ансамбль Игоря Бриля | Утро Земли | 1978 年發行 | 俄文維基 Bril 與 Oseychuk 條目記為 1979 年，Discogs master 標 1978，年份待核 | https://ru.wikipedia.org/wiki/%D0%91%D1%80%D0%B8%D0%BB%D1%8C,_%D0%98%D0%B3%D0%BE%D1%80%D1%8C_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87 |
+| ar-d-244 | ВИА Севиль | Севиль | 1978 年才出了這張 | Azertag（Melodiya 數位版報導）稱專輯 1975 年首發，與 Discogs 的 1978 不一致；是否為同一版本待核 | https://azertag.az/ru/xeber/melodiya_vypustila_cifrovuyu_versiyu_dzhazovogo_alboma_vagifa_mustafazade-4302795 |
+| ar-d-244 | Synopsis | Synopsis | 1984 年同一批人改以 Zentralquartett 之名續演 | 德文維基記樂團約 1978 年散去、1984 年 3 月在巴黎重聚才改名，1975 年起貝斯手 Klaus Koch 也曾接替 Bauer；「續演」會讓人以為沒有中斷。屬措辭精確度問題，不算錯。 | https://de.wikipedia.org/wiki/Zentralquartett |
+| ar-d-244 | Manfred Schulze Bläserquintett | Viertens | Manfred Schulze 在東德吹上低音薩克斯風 | 德文維基與英文來源都寫 Baritonsaxophon（中文是上低音薩克斯風）；「低音薩克斯風」指 bass sax，是另一種樂器。 | https://de.wikipedia.org/wiki/Manfred_Schulze_(Musiker) |
+| ar-d-244 | Ensemble Studio 4 (Ernst-Ludwig Petrowsky) | Jazz Mit Dem Ensemble Studio 4 | 這支組合被視為東德第一支定期演奏爵士的樂團 | 「第一」只有英文維基單源（寫的是 first band in the GDR playing jazz regularly），查不到第二源佐證；建議降成可查證的版本，例如「英文維基稱它是東德最早定期演奏爵士的團體」或拿掉。 | https://en.wikipedia.org/wiki/Ernst-Ludwig_Petrowsky |
+| ar-d-244 | Ensemble Studio 4 (Ernst-Ludwig Petrowsky) | Jazz Mit Dem Ensemble Studio 4 | 一支東德廣播的爵士組合 | 沒有開到的來源說 Studio IV 隸屬東德廣播；Petrowsky 本人曾在東德廣播大樂團的說法也只有搜尋摘要。建議確認或刪去「廣播」。 | https://www.freejazzblog.org/2023/07/ernst-ludwig-luten-petrowsky-1933-2023.html |
+| ar-d-244 | Günther Fischer-Quintett | Kombination | 東德薩克斯風手 Günther Fischer 1971 年就替電影《Eolomea》寫下第一部配樂 | 德文維基的作品表只把《Eolomea》（1971）列為作品，未寫『第一部』；『第一』類宣稱查無兩源，建議降為『1971 年就替《Eolomea》寫配樂』。 | https://de.wikipedia.org/wiki/G%C3%BCnther_Fischer |
+| ar-d-244 | Uschi Brüning & Günther Fischer-Quintett | Uschi Brüning Und Das Günther Fischer-Quintett | 唱片 1972 年 6 至 7 月錄成，1973 年由 Amiga 發行 | 德文維基 Günther Fischer 條目寫兩張 Amiga 專輯為 1971 與 1974 年；Discogs 為 1973。可能是不同張或維基有誤，需查 Discogs 版本年份。 | https://de.wikipedia.org/wiki/G%C3%BCnther_Fischer |
