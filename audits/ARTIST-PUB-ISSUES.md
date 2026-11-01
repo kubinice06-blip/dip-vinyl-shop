@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1019 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1033 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1023,3 +1023,17 @@
 | ar-d-212 | Noblemen | Chord Stricken | 他們的首作《Chord Stricken》2024 年 11 月 20 日上架 Bandcamp | Bandcamp 目錄 2013 年起已有 EP《Thoughts of a Man》、2022 年《Treadmill》；建議改『首張專輯』並附註此前有 EP | https://noblemen.bandcamp.com/album/chord-stricken |
 | ar-d-212 | Onry Ozzborn | The Grey Area | 放棄亞利桑那的棒球獎學金；小學同學 Sleep 在法明頓認識 | 兩份訪談只說在亞利桑那打大學棒球並輟學，未提獎學金；Sleep 與他同在新墨西哥長大，但『小學同學』『法明頓』僅見 Apple Music 簡介與搜尋摘要，未讀到原文 | https://rapstation.com/news/onry-ozzborn-rs |
 | ar-d-212 | S.C.A.B. | Somebody in New York Loves You! | 主唱 Sean Carmago | Stereogum 與 2022 新聞稿皆拼 Sean Camargo（Camargo，非 Carmago）；joyofviolentmovement 的拼法待核。大本營 Ridgewood 與六人編制為 2025 年資料，本層未能核實 | https://www.americanpancake.com/2022/12/scab-and-alt-rock-emotional-explosions.html |
+| ar-d-241 | Marius Popp | Nodul Gordian | 1984 年，Electrecord 推出這六首 | 羅馬尼亞維基列為 1983 年（Seria Jazz 第 20 號），CD 重發 2014；與簡介的 1984 不一致，待核 Discogs／Electrecord 目錄 | https://ro.wikipedia.org/wiki/Marius_Popp |
+| ar-d-241 | Dan Mîndrilă | Alter Ego | 1981 年，同一家廠牌替他發行了本盤 | jurnalfm 的作品列為 1980 年 Electrecord；年份待核 Electrecord 目錄 | https://jurnalfm.ro/dan-mandrila/ |
+| ar-d-241 | Johnny Răducanu | Jazz în Țara Mea / Jazz in My Country | 1976 年 Electrecord 發行本盤 | 羅馬尼亞維基列《Jazz în țara mea》為 1967 年，《Jazz în trio》1966 年（Seria Jazz 第 4 號）；與簡介／卡池年份有出入，待核 Discogs | https://ro.wikipedia.org/wiki/Johnny_R%C4%83ducanu |
+| ar-d-241 | Guido Manusardi | Free Jazz | 在瑞典住了約五年 | 官網（guidomanusardi.com）寫在瑞典「七年」，義大利維基寫約五年；兩者不一致，待店主決定寫法或改「數年」 | https://www.guidomanusardi.com/ |
+| ar-d-241 | Ramon Tavernier / Cătălin Tîrcolea | Panpipe in Jazz | 1979 年 Electrecord 推出此盤 | 羅馬尼亞維基登記 1977 年、Tîrcolea 官網稱首作為 1978 年；年份待核 Discogs 與廠牌目錄 | https://ro.wikipedia.org/wiki/Ramon_Tavernier |
+| ar-d-241 | Anca Parghel | Carpathian Colors | 11 首的作曲欄都寫傳統 | 事實庫引 Discogs（release 12349463）載 12 首、總長 55 分 27 秒；上線簡介寫 11 首，需對 Discogs 與實體盤核對曲數 | https://www.discogs.com/release/12349463 |
+| ar-d-241 | Lala Kovačev | Izvorni folklor i džez Lale Kovačeva | 1986 年，PGP RTB 替它出版 | 維基列此專輯為 1985、官網列 1987，三方不一致；Discogs release 6529464 才是準，未能開頁確認 | https://lalakovacev.com/ |
+| ar-d-241 | Zagreb Jazz Quartet | With Pain I Was Born | 南斯拉夫的爵士團裡，只有這一團交給外國經紀人 | 「只有這一團」是唯一性宣稱，查證中沒有任何來源支持，建議改寫或刪除 | https://hr.wikipedia.org/wiki/Bo%C5%A1ko_Petrovi%C4%87 |
+| ar-d-241 | Stjepko Gut & Big Band RTB | Stjepko Gut & Big Band RTB | PGP RTB 在 1987 年發行 | sr 維基的作品表列為 1986，Discogs release 7445345 待核對發行年；兩者可能是錄音年與發行年之差 | https://sr.wikipedia.org/wiki/%D0%A1%D1%82%D1%98%D0%B5%D0%BF%D0%BA%D0%BE_%D0%93%D1%83%D1%82 |
+| ar-d-241 | Lyubomir Denev Jazz Trio | Lyubomir Denev Jazz Trio | 1979 年作曲系畢業，同年進 Balkanton 棚錄好，隔年出版 | 搜尋結果見 JazzMusicArchives 稱 Balkanton 專輯為 1979，與 Discogs 1980 發行年不同；未開頁，僅供店主核對錄音年（簡介的「同年錄好」未見來源） | https://www.jazzmusicarchives.com/artist/lyubomir-denev |
+| ar-d-241 | Vesselin Nikolov and White, Green and Red | Don Juan | 長笛手 Vesselin Nikolov …他除了長笛，也吹高音與次中音薩克斯風 | BTA 人物頁只稱他為薩克斯風手與作曲家，未載長笛；請對 Discogs 專輯署名核對 | https://www.bta.bg/bg/galleries/archive/182224 |
+| ar-d-241 | Theodosii Spassov & Stefan Moutafchiev | The Long Road | 後兩首出自 Spassov 之手，交給爵士組合 Jazz Line 演奏 | Discogs 曲目頁載 B 面〈Pravo Plovdivsko Horo〉由 White, Green And Red 演奏；Jazz Line 無依據。另「後兩首」與曲目頁不盡相符，請核對 | https://www.discogs.com/release/2339037 |
+| ar-d-242 | György Szabados & MAKUZ | A Szarvassá Vált Fiak | 鋼琴手 György Szabados 在 1980 年代初成立了它 | 成立年各源不一（Fonó 1983、hu 維基 1988），「1980 年代初」無法證實，建議改「1980 年代」或不寫 | https://www.fono.hu/en/news/tribute-to-szabados-gyorgy/ |
+| ar-d-242 | Károly Binder | Kontinentspiel | 1981 年贏得 Kalis 爵士鋼琴大賽 | 比賽是波蘭 Kalisz 國際爵士鋼琴大賽，拼法應為 Kalisz；李斯特頁另說 1981 年得獎曲是 Kontinentspiel，簡介寫「一人彈鋼琴、豎琴」之類編制細節未驗 | https://uni.lisztacademy.hu/teaching-staff/binder-karoly-787 |

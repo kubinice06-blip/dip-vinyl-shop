@@ -1170,3 +1170,17 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 ## Spotify 補卡 sf06／sf08 補介紹（ar-d-206、ar-d-208）小結
 
 - 60 位排入 2 批，54 位上架（26 full、28 thin）、6 位不寫；審稿合計修 15 位（另撤稿 3 位：張亞東、The Cheers Cheers、Vinnum Sabbathi）。主線 WebSearch 6 次。
+
+## ar-d-241（2026-11-01，鐵幕爵士 eb1 補介紹：Kőrössy、羅馬尼亞 Electrecord 爵士、南斯拉夫、保加利亞）
+
+- 34 位 → 上架 31（17 full、14 thin），skipped 3：Bora Roković（f 欄只剩「1950 年代西行的爵士樂手之一」，無樂器無聲音）、Toranj 77（只有 Discogs 風格標籤，連國籍都沒有）、Septet Rousse（只剩唱片背面資訊）。補洞 WebSearch 每位 ≤2（Spassov & Moutafchiev 兩人鍵 3 次）。
+- 維基預抓：主線另以 scratchpad 版 `artist-wiki.mjs`（per-key 語言表 ro／hu／it／sr／hr／bg／fr／de）補抓當地語言維基，13／34 有頁；手刪錯頁 Birdland（紐約俱樂部）。英文預抓「Green White Green」是奈及利亞電影，補洞層排除。
+- 主線審稿修 5 位：
+  - Petar Ugrin：原稿只有 sl 維基一源（底稿是 Mazur 悼文，未能開頁），卻寫成 full 並帶 1944 生年。主線 WebSearch 只找到 en 維基 RTV Slovenia Big Band「音樂總監是 Petar Ugrin」（同維基家族），改 thin、刪生年與「1972」改「1970 年代初」、刪「最重要的斯洛維尼亞爵士樂手之一」（單源評價）、比賽一句改「據稱」。
+  - Lala Kovačev：首句以年份起、沒有身分，改「塞爾維亞爵士鼓手，1939 年生於 Kikinda」；刪「大致」「安靜」壓回 249 字。
+  - Mircea Tiberian：「該國第一個爵士與流行音樂系」兩維基同家族、序數宣稱，刪「該國第一個」。
+  - Cătălin Tîrcolea：「他的簡介稱」轉述句改「據稱」（Discogs 簡介單源）。
+- 保留：Körössy 的 Willis Conover 評語（具名、廣播人非樂評，單源低風險）；1969 移居美國亞特蘭大（ro 維基＋jazzma 訃文；PLAN 寫的 MPS 西德錄音是同年赴美前）。Harry Tavitian 的 Securitate 經過全以「據 Tavitian 自述」寫（RFE/RL 2010 訪談）。Jazz Focus 65 的 Leviev／Don Ellis〈Bulgarian Bulge〉以「據說」寫。Tiberian 2025 年 10 月辭世（Agerpres＋維基兩源）。
+- 不寫：Körössy「第一位融合民俗／引進自由爵士」、Tîrcolea／Tavernier「第一個把排簫帶進爵士」（只寫「較早…之一」）、Simić「塞爾維亞第一個大樂團」、Manusardi 蒙特勒「第一位」、Moutafchiev 卒年（bg 維基單源）、Ugrin 卒年與普列舍倫基金會獎（單源）、Jazz Focus 65 完整陣容（說法不一）、Stjepko Gut「Hampton 團唯一白人」（RTS 與 sr 維基不一，只寫「唯一歐洲人、兩位白人之一」）。
+- 跨鍵：Harry Tavitian 兩鍵（二重奏 Creativ／七重奏 Orient Express）、Lala Kovačev 兩鍵（人／1982 樂團）、B.P. Convention 與 Zagreb Jazz Quartet（同為 Boško Petrović）切入角度各異。
+- pubIssues 13 條（多為專輯年份 ±1、Parghel 曲數、Spassov「Jazz Line」團名、Nikolov 樂器、Zagreb Jazz Quartet「外國經紀人」查無來源）。
