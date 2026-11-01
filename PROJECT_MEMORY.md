@@ -1,5 +1,35 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-01｜dip-vinyl-shop｜鐵幕爵士＋MPS 策展線 eb3（波蘭 60–80 年代）＋eb4（蘇聯 Melodiya＋東德 Amiga）上線 78 張
+
+- **改動**：照 `batch-progress/eastbloc-jazz-20261101/PLAN.md` 跑完兩批（策展 4、研究 5×2、鉤子 2×2、寫作 2×2、主線審稿、試聽、封面目視、三軸、頂點、寫入、子曲風、情緒評分、藝人介紹名冊）。
+  - **eb3**：策展 48 → 主線汰 8 → 上線 40（Polish Jazz／Muza 主流與人聲、70–80 年代 fusion／free）；跳過已在池 0。研究推翻：《Lola》改英國 Decca。試聽 ready 31／unavailable 9；頂點 0；審稿改 3 處（Workoholic hook 事實錯、Sojka「女高音」、卡托維治譯名統一）。
+  - **eb4**：策展 48 → 主線汰 8（含西里爾去重漏抓的已在池 9 張換補）→ 研究汰 5（Krug 現場、Modern Soul Band 流行歌、《Für Fenz》、Ludwig-Sextett 7 吋 EP、Вайнштейн 重發彙編）、補 3 → 上線 38（蘇聯 18、東德 20）。現場例外 3（Hörmusik、Чижик《Reminiscences》、Modern Jazz Big Band 65）。gate 前重查 MB 改釘《Утро Земли》。試聽 ready 7／unavailable 31；頂點 0；審稿改 1 處（Solarius 刪推測句）。
+  - 寫入：card_catalog 78、KV 78 鍵逐字回讀一致、seed 78；寫入前對 origin 全部 `claude/*` 分支 seed 與 eb 卡單去重 0 撞。Discogs 封面 31 張入 registry。冷門軸全走 §0.8 地區錨點制。
+  - 子曲風 78/78 落位（`genre-l3-artist-map.json` 補 36 位）；情緒評分 `score-eb3`／`score-eb4`，錨點 104/104。
+  - 藝人介紹：`roster-eb3.json` 31 位 → ar-d-243、`roster-eb4.json` 31 位 → ar-d-244（state cut），補洞寫作待調度另派。
+  - 合併 main（eb1／eb2／eb5）：產生檔取 main 版後重跑 write-preview／write-pool／registry／Apple 網址／seed-genres／mood／子曲風／抽卡封面；progress.json、genre-l3 JSON 層合併。
+- **主要檔案**：`batch-progress/add-20261101-eb{3,4}/`、`onboarding-manifest-add-20261101-eb{3,4}-20261101.json`、`desc-tools/batches/*/add-20261101-eb{3,4}*`、`batch-progress/mood-cells-20261022/{curation,master}-eb{3,4}*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*`、`data/discogs-cover-registry.json`、`data/mood/*`、`genre-*`、`card-subgenres.json`、`draw-covers/*`、`desc-tools/nonlatin-proper-names.json`（新）、`batch-progress/mood-axes/score-eb{3,4}/`、`batch-progress/artist-intro/roster-eb{3,4}.json`、`desc-tools/batches/artist/{progress.json,cut/ar-d-24{3,4}.txt}`、PLAN.md。
+- **驗證**：兩批 prepare／published gate 皆 0 error（合併 main 後重驗）；qa-batch research／hooks／out 全過（剩被曲名切斷的西里爾專名誤報 2 則）；封面 78 張 HTTP 200＋Discogs 31 張目視；mood 錨點 104/104。
+
+### 2026-11-01｜dip-vinyl-shop｜鐵幕爵士＋MPS 策展線 eb1（Kőrössy＋羅馬尼亞＋南斯拉夫＋保加利亞）＋eb2（匈牙利＋捷克斯洛伐克）上線 79 張
+
+- **改動**：照 `batch-progress/eastbloc-jazz-20261101/PLAN.md` 跑完兩批（策展 4、研究 5×2、鉤子 2×2、寫作 2×2、主線審稿、試聽、封面目視、三軸、頂點、寫入、子曲風、情緒評分、藝人介紹名冊）。
+  - **eb1**：策展 48 → 主線汰 8 → 上線 40（羅馬尼亞 18〔含 Kőrössy《Identification》等 3 張〕、南斯拉夫 15、保加利亞 6、匈牙利 1）；跳過已在池 0。現場例外 2（《Transylvanian Suite》、Jazz Focus 65）。審稿改 6 處（刪單源評價 4、身分句 1、編制 1）。試聽 ready 7／unavailable 33；頂點 0。
+  - **eb2**：策展 48 → 主線汰 8、研究汰 5（Bass On Top 單曲、Derby 舞劇、Pege 彙編、Folyondár 現場、Synchronicity 現場）、補 4 → 上線 39（匈牙利 18、捷克斯洛伐克 21）。審稿改 2 處。試聽 ready 25／unavailable 14；頂點 0。
+  - 寫入：card_catalog 79、KV 79 鍵逐字回讀一致、seed 79；寫入前對 origin 163 條分支 seed 與 eb3–eb5 卡單去重 0 撞。gate 前重查 MB 改釘 3 張。Discogs 封面 45 張入 registry。子曲風 79/79 落位（`genre-l3-artist-map.json` 補 42 位）。情緒評分 `batch-progress/mood-axes/score-eb12/`（錨點 104/104）。
+  - 藝人介紹：`roster-eb1.json` 34 位 → ar-d-241、`roster-eb2.json` 29 位 → ar-d-242（state cut；Syrius 已有介紹），補洞寫作待調度另派。
+- **主要檔案**：`batch-progress/add-20261101-eb{1,2}/`、`onboarding-manifest-add-20261101-eb{1,2}-20261101.json`、`desc-tools/batches/*/add-20261101-eb{1,2}*`、`batch-progress/mood-cells-20261022/{curation,master,master-override}-eb{1,2}*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`data/discogs-cover-registry.json`、`data/mood/*`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/*`、`genre-l3-artist-map.json`、`desc-tools/batches/artist/{progress.json,cut/ar-d-24{1,2}.txt}`、`batch-progress/artist-intro/roster-eb{1,2}.json`、PLAN.md。
+- **驗證**：兩批 prepare／published gate 皆 0 error；qa-batch research／hooks／out 全過；封面 79 張 HTTP 200＋縮圖目視；mood 錨點 104/104；合併 main（eb5）後重跑 write-preview／write-pool／seed-genres／mood／子曲風。
+
+### 2026-11-01｜dip-vinyl-shop｜鐵幕爵士＋MPS 策展線 eb5 上線 38 張（MPS／SABA 西德廠牌＋東歐移民西方錄音）
+
+- **店主指示**：「Yancy Körössy* - Identification 收錄 並且擴展相關專輯」→「擴張到 200 張」；本工作階段負責 eb5。
+- **結果**：策展 48（eb5a MPS／SABA 24、eb5b 東歐移民 24）→ 主線汰 8 → 研究後再汰 2（Leviev《Blues for the Fisherman》、Monty Alexander《Love & Sunshine》皆為現場）→ **上線 38**：Dauner、Koller、Gruntz、Mangelsdorff ×2、Kriegel、Rolf Kühn、Ponty ×2、Gulda、Herbolzheimer、Dave Pike Set ×2、Peterson、Monty Alexander／Ranglin、Singers Unlimited、Mark Murphy、Mariano、Clarke-Boland；Goykovich ×2、Urbaniak《Fusion》、Makowicz ×2、Vitous ×3、Hammer ×2、Szabo《Jazz Raga》、Zoller Koller Solal、《We'll Remember Komeda》、Joachim Kühn ×2、Bacsik ×2、Ponomarev。MB 釘住 37、§1 人工 1。掛名照池中寫法（Gabor Szabo、Miroslav Vitous）。頂點 0。試聽 ready 32／unavailable 6。審稿改 5 張（刪單源評價 3、曲名、人名）。子曲風 38/38 落第三層。情緒八格：雀躍 12、冷冽 9、放鬆 6、暴躁 5、沸騰 3、平靜 2、恍惚 1。
+- **藝人介紹**：新藝人 21 位 → `roster-eb5.json`、progress.json `ar-d-245`（cut），補洞寫作待調度另派。
+- **主要檔案**：`batch-progress/add-20261101-eb5/`（rulings、manifest、handoff）、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261101-eb5*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、`data/mood/*`、`batch-progress/mood-axes/score-eb5/`、`data/discogs-cover-registry.json`、PLAN.md 分批表。
+- **驗證**：qa research／hooks／out 全過；prepare 與 published gate 0 error；card_catalog 38／38；KV 38 鍵回讀逐字一致；封面 38/38 live-check 200；mood gate 錨點 104/104。
+
 ### 2026-11-01｜dip-vinyl-shop｜鐵幕爵士＋MPS 策展線：開工規劃（5 批約 200 張）
 
 - **店主指示**：「Yancy Körössy* - Identification 收錄 並且擴展相關專輯 給我策展計畫」→ 草案 45 張後「擴張到 200 張」。

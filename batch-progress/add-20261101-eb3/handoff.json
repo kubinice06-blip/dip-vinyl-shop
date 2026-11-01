@@ -1,0 +1,24 @@
+{
+ "batch": "add-20261101-eb3",
+ "manifest": "onboarding-manifest-add-20261101-eb3-20261101.json",
+ "cards": 40,
+ "published": {
+  "cardCatalog": 40,
+  "kv": 40,
+  "seed": 40,
+  "apex": 0
+ },
+ "gate": {
+  "prepare": 0,
+  "published": 0
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 40,
+  "changed": [
+   "desc2:String Connection|Workoholic",
+   "desc2:Stanisław Sojka|Blublula"
+  ]
+ },
+ "pendingLocal": []
+}

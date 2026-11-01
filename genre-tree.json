@@ -363,32 +363,32 @@
   {
    "id": "jazz",
    "zh": "爵士",
-   "count": 5072,
+   "count": 5189,
    "children": [
     {
      "id": "bop",
      "zh": "Bebop / Hard Bop",
-     "count": 1439,
+     "count": 1471,
      "children": [
       {
        "id": "hard-bop",
        "zh": "Hard Bop",
-       "count": 428
+       "count": 436
       },
       {
        "id": "post-bop",
        "zh": "Post-Bop / 現代爵士",
-       "count": 401
+       "count": 404
       },
       {
        "id": "bebop",
        "zh": "Bebop",
-       "count": 386
+       "count": 392
       },
       {
        "id": "piano",
        "zh": "鋼琴",
-       "count": 188
+       "count": 205
       },
       {
        "id": "sax",
@@ -405,17 +405,17 @@
     {
      "id": "free",
      "zh": "自由與前衛",
-     "count": 1011,
+     "count": 1031,
      "children": [
       {
        "id": "avant",
        "zh": "前衛與 New Thing",
-       "count": 521
+       "count": 532
       },
       {
        "id": "free-improv",
        "zh": "自由即興",
-       "count": 231
+       "count": 233
       },
       {
        "id": "post-bop",
@@ -425,12 +425,12 @@
       {
        "id": "fusion",
        "zh": "偏 Fusion",
-       "count": 82
+       "count": 87
       },
       {
        "id": "euro",
        "zh": "歐陸自由爵士",
-       "count": 64
+       "count": 68
       },
       {
        "id": "spiritual",
@@ -442,32 +442,32 @@
     {
      "id": "fusion",
      "zh": "Fusion / Jazz-Funk",
-     "count": 910,
+     "count": 960,
      "children": [
       {
        "id": "jazz-funk",
        "zh": "Jazz-Funk",
-       "count": 250
+       "count": 261
       },
       {
        "id": "smooth",
        "zh": "Smooth / 當代",
-       "count": 164
+       "count": 168
+      },
+      {
+       "id": "jazz-rock",
+       "zh": "Jazz-Rock",
+       "count": 104
       },
       {
        "id": "acid-nu",
        "zh": "Acid / Nu Jazz",
-       "count": 79
+       "count": 81
       },
       {
        "id": "japan",
        "zh": "日本 Fusion",
        "count": 75
-      },
-      {
-       "id": "jazz-rock",
-       "zh": "Jazz-Rock",
-       "count": 72
       },
       {
        "id": "latin",
@@ -484,65 +484,65 @@
     {
      "id": "contemporary",
      "zh": "當代與 Nu Jazz",
-     "count": 844,
+     "count": 874,
      "children": [
       {
        "id": "nu-jazz",
        "zh": "Nu / Acid Jazz",
-       "count": 289
+       "count": 293
       },
       {
        "id": "smooth",
        "zh": "Smooth / Lounge",
-       "count": 257
+       "count": 262
       },
       {
        "id": "post-bop",
        "zh": "偏 Post-Bop",
-       "count": 161
+       "count": 163
       },
       {
        "id": "free",
        "zh": "偏前衛",
-       "count": 117
+       "count": 120
       },
       {
        "id": "piano",
        "zh": "鋼琴",
-       "count": 107
+       "count": 112
       },
       {
        "id": "euro",
        "zh": "ECM / 歐陸",
-       "count": 86
+       "count": 94
       },
       {
        "id": "vocal",
        "zh": "人聲",
-       "count": 67
+       "count": 73
       },
       {
        "id": "world",
        "zh": "世界與靈性",
-       "count": 57
+       "count": 66
       }
      ]
     },
     {
      "id": "vocal",
      "zh": "人聲爵士",
-     "count": 373,
+     "count": 380,
      "children": []
     },
     {
      "id": "swing",
      "zh": "Swing / 大樂團",
-     "count": 290,
+     "count": 300,
      "children": [
       {
        "id": "big-band",
        "zh": "大樂團",
-       "count": 87
+       "count": 94
       },
       {
        "id": "vocal",
@@ -552,7 +552,7 @@
       {
        "id": "piano",
        "zh": "鋼琴",
-       "count": 40
+       "count": 41
       },
       {
        "id": "dixieland",
@@ -581,12 +581,12 @@
     {
      "id": "modal",
      "zh": "Modal / 靈性爵士",
-     "count": 193,
+     "count": 195,
      "children": [
       {
        "id": "modal",
        "zh": "Modal",
-       "count": 91
+       "count": 93
       },
       {
        "id": "spiritual",
@@ -598,13 +598,13 @@
     {
      "id": "cool",
      "zh": "Cool / 西岸",
-     "count": 187,
+     "count": 189,
      "children": []
     },
     {
      "id": "latin",
      "zh": "拉丁與巴莎",
-     "count": 161,
+     "count": 165,
      "children": [
       {
        "id": "afro-cuban",
@@ -614,14 +614,14 @@
       {
        "id": "bossa",
        "zh": "Bossa / 巴西",
-       "count": 77
+       "count": 81
       }
      ]
     },
     {
      "id": "ecm",
      "zh": "ECM / 歐陸",
-     "count": 125,
+     "count": 126,
      "children": []
     },
     {

@@ -3,8 +3,8 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **449** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 237、已核可 211、已退回 1）。
-最後更新：2026-10-24
+共 **547** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 241、已核可 305、已退回 1）。
+最後更新：2026-11-01
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
 `matchedOn` 欄記的就是實際對上哪幾項。圖片沿用 Discogs 圖床網址，
@@ -434,11 +434,66 @@
 | Ta-ku 《DUSTY Vol.1》 | [#5337929](https://www.discogs.com/release/5337929) | 2012 | Not On Label (Ta-Ku Self-Released) | none | 唯一版本、主線目視與盤名相符 | ok |
 | Ta-ku 《DUSTY Vol. 2》 | [#5337950](https://www.discogs.com/release/5337950) | 2012 | Not On Label (Ta-Ku Self-Released) | none | 唯一版本、主線目視與盤名相符 | ok |
 
+## add-20261024-mc44（6 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Byron Allen Trio 《Byron Allen Trio》 | [#2012133](https://www.discogs.com/release/2012133) | 1965 | ESP-Disk' | 1005 | 原版、主線目視與盤名相符 | ok |
+| Eje Thelin / Pierre Favre / Jouk Minor 《Candles of Vision》 | [#655806](https://www.discogs.com/release/655806) | 1972 | Calig | CAL 30 609 | 原版、主線目視與盤名相符 | ok |
+| Free Music Quintet 《Free Music One and Two》 | [#3366369](https://www.discogs.com/release/3366369) | 1968 | ESP-Disk' | 1083 | 原版、主線目視與盤名相符 | ok |
+| Gunter Hampel Group 《Music From Europe》 | [#1771734](https://www.discogs.com/release/1771734) | 1967 | ESP-Disk' | ESP 1042 | 原版、主線目視與盤名相符 | ok |
+| Itaru Oki, Michel Pilz, Ralf Hübner 《One Year - Afternoon & Evening》 | [#430383](https://www.discogs.com/release/430383) | 1980 | FMP | FMP 0720 | 原版、主線目視與盤名相符 | ok |
+| The Ric Colbeck Quartet 《The Sun Is Coming Up》 | [#1803663](https://www.discogs.com/release/1803663) | 1970 | Fontana | 6383 001 | 原版、主線目視與盤名相符 | ok |
+
 ## add-20261024-mc45（1 張）
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
 | General Magic 《Rechenkönig》 | [#14949](https://www.discogs.com/release/14949) | 2000 | Mego | MEGO 032 | Discogs master 449091 的版本、主線目視與盤名相符 | ok |
+
+## add-20261024-mc47（5 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Bernhard Wambach 《Stockhausen: Klavierstücke vol. II》 | [#828359](https://www.discogs.com/release/828359) | 1989 | Koch Schwann Musica Mundi | 310 009 H1 | 唯一版本、主線目視與盤名相符 | ok |
+| Elisabeth Chojnacka 《Clavecin 2000》 | [#929496](https://www.discogs.com/release/929496) | — | Philips | 6526 009 | Discogs master 1027400 的版本、主線目視與盤名相符 | ok |
+| Elisabeth Chojnacka 《Clavecin d'aujourd'hui》 | [#393420](https://www.discogs.com/release/393420) | 1977 | Erato | STU 71010 | Discogs master 4303572 的版本、主線目視與盤名相符 | ok |
+| Irvine Arditti 《Recital for Violin》 | [#9244794](https://www.discogs.com/release/9244794) | 1990 | Disques Montaigne | 789003 | Discogs master 1155438 的版本、主線目視與盤名相符 | ok |
+| Maurizio Pollini 《Webern: Variationen op. 27 / Boulez: Sonate No. 2》 | [#5298170](https://www.discogs.com/release/5298170) | 1978 | Deutsche Grammophon | 2530 803 | Discogs master 1311523 的版本、主線目視與盤名相符 | ok |
+
+## add-20261024-mc48（19 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Alan Feinberg 《Wuorinen: Piano Works》 | [#5163353](https://www.discogs.com/release/5163353) | 2005 | Col Legno | WWE 1CD 20236 | 唯一版本、主線目視與盤名相符 | ok |
+| Continuum 《Wolpe: Enactments / From Here On Farther / Second Piece for Violin Alone》 | [#2769054](https://www.discogs.com/release/2769054) | 1984 | Nonesuch | 78024 | 唯一版本、主線目視與盤名相符 | ok |
+| David Holzman 《Martino: Twelve Preludes / Fantasies and Impromptus》 | [#10709788](https://www.discogs.com/release/10709788) | 1995 | Albany Records | TROY 169 | 唯一版本、主線目視與盤名相符 | ok |
+| Harvey Sollberger 《Twentieth-Century Flute Music》 | [#2589932](https://www.discogs.com/release/2589932) | 1975 | Nonesuch | HB-73028 | 唯一版本、主線目視與盤名相符 | ok |
+| Miranda Cuckson 《Martino: Music by Donald Martino》 | [#28216207](https://www.discogs.com/release/28216207) | 2008 | Centaur Records | CRC 2955 | 唯一版本、主線目視與盤名相符 | ok |
+| Miranda Cuckson & Blair McMillen 《Shapey: Music by Ralph Shapey》 | [#11584076](https://www.discogs.com/release/11584076) | 2007 | Centaur Records | CRC 2900 | 唯一版本、主線目視與盤名相符 | ok |
+| Miranda Cuckson & Blair McMillen 《Shapey: More Music by Ralph Shapey》 | [#11338478](https://www.discogs.com/release/11338478) | 2010 | Centaur Records | CRC 3103 | 唯一版本、主線目視與盤名相符 | ok |
+| Paul Zukofsky 《Sessions / Blackwood: Sonata for Violin / Second Sonata》 | [#2950420](https://www.discogs.com/release/2950420) | 1976 | CP² Recordings | CP²/ 1 | 唯一版本、主線目視與盤名相符 | ok |
+| Randall Hodgkinson 《Martino / Sessions: Fantasies and Impromptus / Piano Sonata No. 2》 | [#5323104](https://www.discogs.com/release/5323104) | 1984 | New World Records | NW 320 | 唯一版本、主線目視與盤名相符 | ok |
+| Speculum Musicae 《Martino / Wuorinen: Notturno / Speculum Speculi》 | [#7068189](https://www.discogs.com/release/7068189) | 1974 | Nonesuch | H-71300 | Discogs master 842228 的版本、主線目視與盤名相符 | ok |
+| Speculum Musicae 《Lieberson / Wuorinen / Shifrin: A Fifteenth Anniversary Album》 | [#7041964](https://www.discogs.com/release/7041964) | 1985 | Bridge Records (4) | BDG 2005 | 唯一版本、主線目視與盤名相符 | ok |
+| The Ars Combinatoria String Quartet 《Babbitt: String Quartets》 | [#13560497](https://www.discogs.com/release/13560497) | 2017 | Not On Label (Erik Carlson (2) Self-released) | none | 唯一版本、主線目視與盤名相符 | ok |
+| The Composers Quartet 《Crawford Seeger / Perle / Babbitt: String Quartet / String Quartet No. 5 / String Quartet No. 2》 | [#2750744](https://www.discogs.com/release/2750744) | 1973 | Nonesuch | H-71280 | Discogs master 852265 的版本、主線目視與盤名相符 | ok |
+| The Composers Quartet 《Carter / Babbitt / Powell: Three American String Quartets》 | [#2466956](https://www.discogs.com/release/2466956) | 1990 | Music & Arts | CD-606 | 唯一版本、主線目視與盤名相符 | ok |
+| The Contemporary Chamber Players of the University of Chicago 《Shapey: String Quartet No. 7》 | [#3705952](https://www.discogs.com/release/3705952) | 1978 | Composers Recordings, Inc. | CRI 391 | 唯一版本、主線目視與盤名相符 | ok |
+| The Fine Arts Quartet 《Babbitt: Quartet no. 3 / Wuorinen: String Quartet》 | [#3157244](https://www.discogs.com/release/3157244) | 1972 | Turnabout | TV-S 34515 | Discogs master 3206967 的版本、主線目視與盤名相符 | ok |
+| The Group for Contemporary Music 《Wuorinen / Harvey / Peterson: Second String Quartet / String Quartet No. 1 / String Quartet No. 1》 | [#8767287](https://www.discogs.com/release/8767287) | 1992 | Koch International Classics | 3-7121-2 H1 | Discogs master 1085575 的版本、主線目視與盤名相符 | ok |
+| The Group for Contemporary Music 《Wuorinen: Fortune / Tashi / Violin Variations / Cello Variations II / Album Leaf》 | [#4514469](https://www.discogs.com/release/4514469) | 1994 | Koch International Classics | 3-7242-2 H1 | Discogs master 814020 的版本、主線目視與盤名相符 | ok |
+| The Group for Contemporary Music 《Martino: From the Other Side / Quodlibets II / Notturno》 | [#10920158](https://www.discogs.com/release/10920158) | 1994 | Koch International Classics | 3-7245-2 H1 | 唯一版本、主線目視與盤名相符 | ok |
+
+## add-20261024-md32（5 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| chra 《On a Fateful Morning》 | [#11180853](https://www.discogs.com/release/11180853) | 2017 | Editions Mego | EMEGO 244 | 原版、主線目視與盤名相符 | ok |
+| Jim Haynes 《The Decline Effect》 | [#3108461](https://www.discogs.com/release/3108461) | 2011 | Helen Scarsdale Agency | HMS021 | 原版、主線目視與盤名相符 | ok |
+| Luigi Archetti 《Null II / Null III》 | [#3458364](https://www.discogs.com/release/3458364) | 2012 | Die Schachtel | ZEIT C09 | 原版、主線目視與盤名相符 | ok |
+| Slomo 《The Bog》 | [#1544775](https://www.discogs.com/release/1544775) | 2008 | Important Records (2) | imprec212 | 原版、主線目視與盤名相符 | ok |
+| William Fowler Collins 《The Resurrections Unseen》 | [#3357393](https://www.discogs.com/release/3357393) | 2011 | Type | TYPE103V | 原版、主線目視與盤名相符 | ok |
 
 ## add-20261024-ml58（14 張）
 
@@ -458,6 +513,124 @@
 | Triston Palma 《Joker Lover》 | [#1626634](https://www.discogs.com/release/1626634) | 1982 | Jah Guidance | VPRL 1015 | Discogs master 340930 的版本、主線目視與盤名相符 | ok |
 | Wayne Wade 《Poor and Humble》 | [#1572851](https://www.discogs.com/release/1572851) | — | Live & Learn Records | LL LP 002 | Discogs master 547170 的版本、主線目視與盤名相符 | ok |
 | Well Pleased & Satisfied 《Love Train》 | [#3119410](https://www.discogs.com/release/3119410) | 1979 | Burning Rockers | BR 1004 | Discogs master 477449 的版本、主線目視與盤名相符 | ok |
+
+## add-20261024-ml59（4 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Bim Sherman 《Lovers Leap Showcase》 | [#3283122](https://www.discogs.com/release/3283122) | 1978 | Scorpio (5) | none | Discogs master 238246 的版本、主線目視與盤名相符 | ok |
+| Don Carlos & Gold 《Never Run Away》 | [#983259](https://www.discogs.com/release/983259) | 1984 | Kingdom Records | KVL 9017 | Discogs master 235063 的版本、主線目視與盤名相符 | ok |
+| Earl Cunningham 《Earl Cunningham》 | [#3811948](https://www.discogs.com/release/3811948) | 1983 | Vista Sounds | VSLP 4021 | Discogs master 2522074 的版本、主線目視與盤名相符 | ok |
+| Triston Palma 《Fancyness》 | [#1115064](https://www.discogs.com/release/1115064) | 1982 | Gorgon Records | none | 唯一版本、主線目視與盤名相符 | ok |
+
+## add-20261030-sf01（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| İdil Biret 《Ligeti: Études, Books I and II (1-14a)》 | [#1430046](https://www.discogs.com/release/1430046) | 2003 | Naxos | 8.555777 | MB 釘住盤的同一 Naxos 編號、主線目視與盤名相符 | ok |
+| Meiko Miyazawa 宮沢明子 《Kuhlau / Clementi / Dussek: Sonatinen Album I》 | [#11430327](https://www.discogs.com/release/11430327) | 1974 | Audio Lab. Record | — | 人工身分唯一證據（研究層核對 13 首小奏鳴曲）、主線目視與盤名相符 | ok |
+
+## add-20261030-sf03（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| バズ 《Buzz》 | [#9184711](https://www.discogs.com/release/9184711) | 1973 | London Records | SKD(L)-1013 | Discogs 藝人頁與盤名、年份、廠牌一致、主線目視與盤名相符 | ok |
+
+## add-20261030-sf04（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| U.TA屋塔 《緩飆公路 Highway Cruising》 | [#33801504](https://www.discogs.com/release/33801504) | 2015 | Hove | UTA001 | Discogs 藝人頁與盤名、年份、廠牌一致、主線目視與盤名相符 | ok |
+
+## add-20261030-sf06（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| 劉以達 《麻木》 | [#7202289](https://www.discogs.com/release/7202289) | 1996 | Musician 非池中 | MUS006-2 | Discogs master 3488311 的版本、主線目視與盤名相符 | ok |
+
+## add-20261030-sf07（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Zaratustra 《Su Música... Su Filosofía...》 | [#5546763](https://www.discogs.com/release/5546763) | 1970 | Tizoc | TVRC 40001 | Discogs master 879215 的原版、主線目視與盤名相符 | ok |
+
+## add-20261030-sf08（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Sleepytime Trio 《Plus 6000》 | [#1518134](https://www.discogs.com/release/1518134) | 1997 | Lovitt Records | LOV #7 | Discogs master 3036668 的版本、主線目視與盤名相符 | ok |
+| The Charlottes 《Lovehappy》 | [#378731](https://www.discogs.com/release/378731) | 1989 | The Subway Organization | SUBORG 12 | Discogs master 28005 的版本、主線目視與盤名相符 | ok |
+
+## add-20261030-sf09（4 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Daniel Ponce 《Arawe》 | [#1401299](https://www.discogs.com/release/1401299) | 1987 | Antilles New Directions | 90631-1 | 年份 1987、廠牌 Antilles New Directions、目錄號 90631-1 | pending |
+| David Becker Tribune 《Siberian Express》 | [#7947422](https://www.discogs.com/release/7947422) | 1988 | MCA Records | MCAD-42159 | 年份 1988、廠牌 MCA Records、目錄號 MCAD-42159 | pending |
+| Michel Sardaby 《Night Cap》 | [#30329594](https://www.discogs.com/release/30329594) | 1970 | Disques Debs | HDD 522 | 年份 1970、廠牌 Disques Debs、目錄號 HDD 522 | pending |
+| 高木元輝 《Mosura Freight!》 | [#4633276](https://www.discogs.com/release/4633276) | 1975 | Interval | ILP 101 | 年份 1975、廠牌 Interval、目錄號 ILP 101 | pending |
+
+## add-20261101-eb1（24 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Aura Urziceanu 《Oh, My Love》 | [#1165145](https://www.discogs.com/release/1165145) | 1974 | Electrecord | STM-EDE 01029 | Discogs master 445824 的版本、主線目視與盤名相符 | ok |
+| B.P. Convention 《Blue Sunset》 | [#3173124](https://www.discogs.com/release/3173124) | 1975 | Jugoton | LSY-63041 | Discogs master 1086190 的版本、主線目視與盤名相符 | ok |
+| Bora Roković 《III sastanak u studiju》 | [#4668704](https://www.discogs.com/release/4668704) | 1961 | PGP RTB | LP 408 | Discogs master 567751 的版本、主線目視與盤名相符 | ok |
+| Dusko Goykovich 《Belgrade Blues》 | [#5046024](https://www.discogs.com/release/5046024) | 1967 | PGP RTB | LPV 4201 | Discogs master 561714 的版本、主線目視與盤名相符 | ok |
+| Dusko Goykovich 《Internacionalni jazz oktet Duška Gojkovića sa Keni Klarkom》 | [#4046446](https://www.discogs.com/release/4046446) | 1961 | PGP RTB | LP-403 | Discogs master 493508 的版本、主線目視與盤名相符 | ok |
+| Focus Jazz Quartet 《Focus Jazz Quartet》 | [#5917435](https://www.discogs.com/release/5917435) | 1986 | Балкантон | ВТА 11676 | Discogs master 732201 的版本、主線目視與盤名相符 | ok |
+| Guido Manusardi 《Free Jazz》 | [#3593059](https://www.discogs.com/release/3593059) | 1968 | Electrecord | EDD 1196 | Discogs master 452995 的版本、主線目視與盤名相符 | ok |
+| Ion Baciu Jr. 《Jazz cu Ion Baciu Jr.》 | [#2413094](https://www.discogs.com/release/2413094) | 1981 | Electrecord | ST-EDE 01896 | Discogs master 999185 的版本、主線目視與盤名相符 | ok |
+| Jack Dieval 《II sastanak u studiju》 | [#4668644](https://www.discogs.com/release/4668644) | 1961 | PGP RTB | LP 406 | Discogs master 567750 的版本、主線目視與盤名相符 | ok |
+| Jazz Focus 65 《Quartet Jazz Focus-65》 | [#3698688](https://www.discogs.com/release/3698688) | 1967 | Балкантон | ВТА 1006 | Discogs master 1241832 的版本、主線目視與盤名相符 | ok |
+| Jazz Orkestar Radio-Televizije Beograd 《Jazz Orkestar Radio-Televizije Beograd》 | [#15324684](https://www.discogs.com/release/15324684) | 1963 | PGP RTB | LPV 4200 | Discogs master 1740242 的版本、主線目視與盤名相符 | ok |
+| Lala Kovačev 《Izvorni folklor i džez Lale Kovačeva》 | [#6529464](https://www.discogs.com/release/6529464) | 1986 | PGP RTB | 2122189 | Discogs master 784312 的版本、主線目視與盤名相符 | ok |
+| Lala Kovačev Group 《Balkan Impressions》 | [#2643518](https://www.discogs.com/release/2643518) | 1982 | PGP RTB | 2120992 | Discogs master 1526344 的版本、主線目視與盤名相符 | ok |
+| Lyubomir Denev Jazz Trio 《Lyubomir Denev Jazz Trio》 | [#1654518](https://www.discogs.com/release/1654518) | 1980 | Балкантон | ВТА 10449 | Discogs master 731785 的版本、主線目視與盤名相符 | ok |
+| Marković-Gut Sextet 《Marković-Gut Sextet》 | [#3625227](https://www.discogs.com/release/3625227) | 1980 | PGP RTB | 2120429 | Discogs master 1150183 的版本、主線目視與盤名相符 | ok |
+| Petar Ugrin 《Samo muzika》 | [#1244753](https://www.discogs.com/release/1244753) | 1979 | RTV Ljubljana | LD 0479 | Discogs master 586251 的版本、主線目視與盤名相符 | ok |
+| Stjepko Gut & Big Band RTB 《Stjepko Gut & Big Band RTB》 | [#7445345](https://www.discogs.com/release/7445345) | 1987 | PGP RTB | 2122596 | Discogs master 882078 的版本、主線目視與盤名相符 | ok |
+| Theodosii Spassov & Stefan Moutafchiev 《The Long Road》 | [#2339037](https://www.discogs.com/release/2339037) | 1986 | Балкантон | ВНА 12215 | Discogs master 3015161 的版本、主線目視與盤名相符 | ok |
+| Toranj 77 《Miting》 | [#3121284](https://www.discogs.com/release/3121284) | 1980 | PGP RTB | LP 5389 | Discogs master 1949875 的版本、主線目視與盤名相符 | ok |
+| Trumpets & Rhythm Unit 《Trumpets & Rhythm Unit》 | [#634442](https://www.discogs.com/release/634442) | 1979 | PGP RTB | LP 4206 | Discogs master 253610 的版本、主線目視與盤名相符 | ok |
+| Vesselin Nikolov and White, Green and Red 《Don Juan》 | [#3853019](https://www.discogs.com/release/3853019) | 1979 | Балкантон | ВТА 10359 | Discogs master 846080 的版本、主線目視與盤名相符 | ok |
+| Yancy Körössy 《Identification》 | [#5945049](https://www.discogs.com/release/5945049) | 1970 | MPS Records | 15260 ST | Discogs master 431493 的版本、主線目視與盤名相符 | ok |
+| Yancy Körössy 《Seria Jazz Nr. 1》 | [#7785671](https://www.discogs.com/release/7785671) | 1965 | Electrecord | EDD_1104 | Discogs master 140817 的版本、主線目視與盤名相符 | ok |
+| Yancy Körössy 《Kőrössy János És Együttese》 | [#3518291](https://www.discogs.com/release/3518291) | 1964 | Qualiton | LPX 7301 | Discogs master 507009 的版本、主線目視與盤名相符 | ok |
+
+## add-20261101-eb2（21 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Béla Szakcsi Lakatos 《Sham》 | [#3954768](https://www.discogs.com/release/3954768) | 1990 | Krém | SLPX 37376 | Discogs master 2636027 的版本、主線目視與盤名相符 | ok |
+| Eva Olmerová 《Eva Olmerová》 | [#9642021](https://www.discogs.com/release/9642021) | 1968 | Supraphon | 1 15 0495 | Discogs master 75593 的版本、主線目視與盤名相符 | ok |
+| Gabriel Jonáš 《Impresie》 | [#4253150](https://www.discogs.com/release/4253150) | 1979 | Opus | 9115 0729 | 唯一版本、主線目視與盤名相符 | ok |
+| Gonda Sextet 《Sámánének》 | [#8144498](https://www.discogs.com/release/8144498) | 1976 | Pepita | SLPX 17484 | Discogs master 961305 的版本、主線目視與盤名相符 | ok |
+| Grencsó Kollektíva 《1988-89》 | [#2491745](https://www.discogs.com/release/2491745) | 1990 | Adyton | 001 | Discogs master 1283485 的版本、主線目視與盤名相符 | ok |
+| Gustav Brom 《Polymelomodus》 | [#1805998](https://www.discogs.com/release/1805998) | 1977 | Supraphon | 1 15 2143 | Discogs master 895907 的版本、主線目視與盤名相符 | ok |
+| Gusztáv Csík Quartet 《Csík Gusztáv És Együttese》 | [#1145197](https://www.discogs.com/release/1145197) | 1977 | Pepita | SLPX 17506 | Discogs master 726810 的版本、主線目視與盤名相符 | ok |
+| György Szabados 《Adyton》 | [#2426960](https://www.discogs.com/release/2426960) | 1983 | Krém | SLPX 17724 | Discogs master 2557472 的版本、主線目視與盤名相符 | ok |
+| György Szabados & MAKUZ 《A Szarvassá Vált Fiak》 | [#2709251](https://www.discogs.com/release/2709251) | 1989 | Krém | SLPX 37215 | Discogs master 784373 的版本、主線目視與盤名相符 | ok |
+| Jiří Stivín & Co. Jazz System 《5 ran do čepice》 | [#2796883](https://www.discogs.com/release/2796883) | 1972 | Supraphon | 1 15 1229 | Discogs master 321932 的版本、主線目視與盤名相符 | ok |
+| Jiří Stivín & Pierre Favre 《Výlety》 | [#8507556](https://www.discogs.com/release/8507556) | 1981 | Supraphon | 1115 3381-82 | Discogs master 321100 的版本、主線目視與盤名相符 | ok |
+| Karel Růžička 《Ozvěny》 | [#1474956](https://www.discogs.com/release/1474956) | 1980 | Supraphon | 1115 2448 | Discogs master 807065 的版本、主線目視與盤名相符 | ok |
+| Karel Velebný & SHQ 《Nonet》 | [#8477610](https://www.discogs.com/release/8477610) | 1968 | SABA | SB 15 160 ST | Discogs master 228423 的版本、主線目視與盤名相符 | ok |
+| Karel Velebný & SHQ 《Motus》 | [#5781987](https://www.discogs.com/release/5781987) | 1972 | Supraphon | 1 15 1138 | Discogs master 308645 的版本、主線目視與盤名相符 | ok |
+| Károly Binder 《Kontinentspiel》 | [#6657639](https://www.discogs.com/release/6657639) | 1989 | Krém | SLPX 37210 | Discogs master 797830 的版本、主線目視與盤名相符 | ok |
+| Laco Déczi 《Pietoso》 | [#2553230](https://www.discogs.com/release/2553230) | 1969 | Supraphon | 1 15 0596 | Discogs master 287976 的版本、主線目視與盤名相符 | ok |
+| Laco Déczi 《Jazz Cellula》 | [#5198202](https://www.discogs.com/release/5198202) | 1978 | Opus | 9115 0703 | Discogs master 631492 的版本、主線目視與盤名相符 | ok |
+| Rudolf Dašek 《Pohádka pro Beritku》 | [#7425033](https://www.discogs.com/release/7425033) | 1971 | Supraphon | 0 15 0843 | Discogs master 329056 的版本、主線目視與盤名相符 | ok |
+| Rudolf Dašek 《Dialogy》 | [#9036901](https://www.discogs.com/release/9036901) | 1979 | Supraphon | 1115 2533 | Discogs master 329042 的版本、主線目視與盤名相符 | ok |
+| The Super Trio 《Birthday Party》 | [#5539362](https://www.discogs.com/release/5539362) | 1987 | Krém | SLPX 37047 | Discogs master 3279115 的版本、主線目視與盤名相符 | ok |
+| Tomsits Jazz Group 《Álom És Valóság (Dream And Reality)》 | [#16040421](https://www.discogs.com/release/16040421) | 1978 | Pepita | SLPX 17549 | Discogs master 321004 的版本、主線目視與盤名相符 | ok |
+
+## add-20261101-eb5（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Elek Bacsik 《Bird and Dizzy: A Musical Tribute》 | [#2188803](https://www.discogs.com/release/2188803) | 1975 | Flying Dutchman | BDL1-1082 | Discogs master 2464921 的主版本、主線目視與盤名相符 | ok |
+| Miroslav Vitous 《Majesty Music》 | [#3749325](https://www.discogs.com/release/3749325) | 1976 | Arista | AL 4099 | Discogs master 284896 的主版本、主線目視與盤名相符 | ok |
 
 ## c49（3 張）
 
