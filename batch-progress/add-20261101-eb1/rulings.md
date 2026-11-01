@@ -48,3 +48,15 @@
 - 47037：Blue Sunset：目錄號 Discogs LSY-63041／MB SY 63841 不一致，簡介不寫目錄號；客席 Clark Terry、Art Farmer、Ernie Wilkins、Albert Mangelsdorff、Gianni Basso 出自 Discogs credits。
 - 47038：Toranj 77：hr 維基無條目，僅 Discogs credits，thin；「札格拉布」團所在地僅卡單說法，寫作層寫「克羅埃西亞樂手」。
 - 47039：Wikimedia 對此環境大量回 429，維基以 WebFetch／WebSearch 補；WebSearch 用 3 次。無推翻盤名、年份、廠牌。
+
+## 研究 b 組（47011–47020）
+- 47011：輸出 `desc-tools/batches/research/add-20261101-eb1-b.json`（8 張）；status：Alter Ego／Jazz în Trio／Free Jazz／Panpipe／Zboruri／Tavitian 為 full，Jazz în Țara Mea、Baciu Jr. 為 thin。facts 8–10 條。全組只有 Discogs（API）＋少量維基／Sonar Kollektiv／Dusty Groove 轉述，無樂評，聲音事實僅編制、曲長、風格標籤。
+- 47012：身分全部對上，無推翻盤名／年份／廠牌。Baciu Jr.（manual）：Discogs master 999185／release 2413094，1981-11、ST-EDE 01896 與卡單一致；第二來源仍只有 Discogs 體系（藝人頁、Alter Ego credits 交叉），Bandcamp／重發廠頁查不到，curatorRisk 未解除，待主線補。
+- 47013：年份衝突兩處，皆不改卡單：(a) Răducanu《Jazz în Țara Mea》en 維基寫 1967，Discogs／MB 為 1976，目錄號 STM-EDE 01186 與 1970 年代中期相符，採 1976；(b) Panpipe in Jazz ro 維基寫 1977，Discogs／MB 為 1979（01494 介於 1976 與 1981 之間），採 1979。另 Jazz în Trio 原盤為 10 吋 EDD 1164，Discogs 發行日 1967-11-03、錄音 1966（2011 重發盤註記），en 維基寫 1966，採卡單 1967；curatorRisk 的署名「Crețu Răducanu」不成問題（本姓 Răducan Crețu）。
+- 47014：moodGuess 存疑：Manusardi《Free Jazz》（預估 z -1.2 無調；僅一份零售商文案稱偏抒情現代主義，2011 重發盤 Discogs 標 Post Bop，建議上線實聽打分）；Răducanu《Jazz în Țara Mea》（「民謠旋律」查無依據，且為七人三管樂團）；Panpipe（11 首中 6 首有女聲獨唱與合唱團，非純器樂）。其餘 5 張無異議，不建議汰換。
+- 47015：Free Jazz 另有編號資訊：Sonar Kollektiv 稱 Seria Jazz Nr. 6、ST-EDE 01196，Discogs 為 EDD 1196；以 Discogs 為準。Dusty Groove 頁面 WebFetch 403，僅用 WebSearch 摘要轉述，已在 notes 標明。
+- 47016：Alter Ego B 面作曲欄 Discogs 為 Unknown Artist，與搜尋摘要「八首皆 Mîndrilă 作曲」不一，facts 照 Discogs credits；RYM 年份 1978 不採。Tavitian 盤是 1985 年兩場現場、1986 Leo 發行，卡單 releaseException 已涵蓋，照卡單。
+- 47017：WebSearch 用 3 次（Alter Ego、Manusardi、Baciu）；Wikimedia 對 curl 回 429，維基改走 WebFetch。Discogs 搜尋 API 不需 token 可用，藝人頁 profile 是最有用的人物來源。本組 8 張：full 6、thin 2；推翻策展層 0 處，moodGuess 存疑 3。
+
+## 主線（條號 47071–47080）
+- 47071：研究 d、e 組交了 8 張 `status: partial`（research-base 只認 full／thin），主線一律改 thin（d：Marković-Gut、Balkan Impressions、Izvorni folklor；e：Stjepko Gut、Septet Rousse、Denev、Don Juan、The Long Road）。`qa-batch research` 40/40、key 一致；唯一標記是 e 組 facts 內的保加利亞／塞爾維亞西里爾曲名，屬原文，寫作層不寫進正文。研究層 moodGuess 存疑 9 張（Popp《Nodul Gordian》、Tiberian、Trumpets & Rhythm Unit、Birdland、Manusardi、《Jazz în Țara Mea》、《Panpipe in Jazz》、Spassov、Septet Rousse）全部不汰（本線不做落格篩選）；Spassov／Moutafchiev《The Long Road》半張是民歌合奏與合唱，照民謠融合爵士收，genres 保留 jazz＋world 判斷待子曲風。
