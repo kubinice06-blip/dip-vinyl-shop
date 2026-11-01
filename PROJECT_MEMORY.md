@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-01｜dip-vinyl-shop｜藝人介紹 ar-d-243（eb3 波蘭 60–80 年代）＋ar-d-244（eb4 蘇聯 Melodiya＋東德 Amiga）上架 62 位
+
+- **改動**：照 `dip-artist-intro` skill 跑完鐵幕爵士線最後兩批（萃取 --lean、維基預抓＋當地語言補抓、補洞 8 組 Sonnet、寫作 4 組 Opus、qa-artist、主線逐位審稿、alias、issues、建分片）。
+  - **ar-d-243**：31 位全上架（23 full、8 thin），skipped 0；補洞搜尋 55 次。審稿修 3 位（Kurylewicz Quintet 刪與本人鍵重複的結尾；Karolak 補漏字、Time Killers 主詞、壓字數；Nahorny 維也納獎補「業餘」）。
+  - **ar-d-244**：31 位全上架（24 full、7 thin），skipped 0；補洞搜尋 50 次。審稿修 2 位（Gumpert 刪與 Synopsis 重複句、獎名改 Albert-Mangelsdorff-Preis；Modern Jazz Big Band 65 改寫「現場大樂團」並壓回 thin 字數）。補洞推翻特注：Vintskevich 生於俄羅斯庫爾斯克。
+  - 維基預抓用 scratchpad 版 `artist-wiki.mjs`，新增 `LANGMAP`（per-key 語言表）與 `TITLES`（手指定頁名）兩個環境變數；243 有頁 29／31、244 有頁 24／31。撞維基 API 限流時改手指定頁名重抓。
+  - 藝人介紹 358 份成品、6,635 位。
+- **主要檔案**：`desc-tools/batches/artist/{facts,research,output}/ar-d-24{3,4}*`、`progress.json`、`data/artist-intros/*`、`audits/ARTIST-PUB-ISSUES.md`、`batch-progress/artist-intro/ar-c-rulings.md`、`batch-progress/eastbloc-jazz-20261101/PLAN.md`。
+- **驗證**：qa-artist gap 兩批 0 處、out 兩批 0 處；build-artist-intros 358 份成品、64 分片。
+
 ### 2026-11-01｜dip-vinyl-shop｜藝人介紹 ar-d-241（eb1 Kőrössy＋羅馬尼亞＋南斯拉夫＋保加利亞）＋ar-d-242（eb2 匈牙利＋捷克斯洛伐克）上架 58 位
 
 - **改動**：照 `dip-artist-intro` skill 跑完兩批（萃取 --lean、維基預抓＋當地語言維基補抓、補洞 7 組 Sonnet、寫作 4 組 Opus、qa-artist、主線逐位審稿、alias、issues、建分片）。補洞 WebSearch 每位 ≤2。
