@@ -13,3 +13,7 @@
 - 50–100：通過。抽查 Topography of the Lungs（5）、Evan Parker《The Snake Decides》（5）、Joe Harriott《Free Form》（5）、Bonanza Banzai（Hungaroton＝3）、Cecil Taylor《Looking Ahead!》（硬蕊 3，早期近 bop）。
 - 100–150：通過。抽查 Roscoe Mitchell《Sound》（5）、Braxton《Montreux/Berlin》（5）、Arditti《Ligeti Edition 1》（5）、Keller Quartett Kurtág（ECM＝2）、Leroy Jenkins（硬蕊方向修正）。
 - 200–250：通過。抽查 Zorn《Cobra》（5）、Voice Crack 兩張（Uhlang 自營無再發＝5）、Subotnick《Touch》、Matthew Shipp《Symbol Systems》。
+
+## s03
+- 0–50：通過。抽查 Nancarrow《Studies for Player Piano》（5）、Brötzmann《Solo》、Parker／Guy《Incision》、Wolfgang Fuchs（Uhlklang 無再發＝5）、Kris Davis（非代表作 3）。
+- 50–100：通過。抽查 Arditti《Freeman Etudes》、Joe Morris《Singularity》、Bead CDr＝5、Holzman Wolpe、Wishart《Tongues of Fire》。本段無 5 分經典屬合理（獨奏／二重奏次要盤多）。
