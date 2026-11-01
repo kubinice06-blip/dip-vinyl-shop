@@ -117,3 +117,6 @@
 ## 本批新藝人（無介紹）
 - 40 張 33 個掛名；扣掉已有介紹 2 位（Krzysztof Komeda、Zbigniew Namysłowski），**31 位**寫進 `batch-progress/artist-intro/roster-eb3.json`（tier D、addedBy add-20261101-eb3），progress.json 追加 **ar-d-243**（state cut，31 位，未超過 45 不開溢出號），`desc-tools/batches/artist/cut/ar-d-243.txt`。補洞寫作由調度另派工作階段跑。
 - Andrzej Kurylewicz Quintet、Andrzej Kurylewicz、Andrzej Trzaskowski Quintet、Andrzej Trzaskowski Sextet、Polish Jazz Quartet、Mieczysław Kosz、Novi Singers、Zbigniew Namysłowski Modern Jazz Quartet、Wanda Warska、The Włodzimierz Nahorny Trio、Jerzy Milian Trio、Jazz Studio Orchestra of the Polish Radio、Janusz Zabiegliński、Wojciech Karolak, Michał Urbaniak & Czesław Bartkowski、Michał Urbaniak Group、Zbigniew Namysłowski Quintet、Wojciech Karolak、Krzysztof Sadowski、Grupa Organowa Krzysztofa Sadowskiego、Extra Ball、Laboratorium、String Connection、Czesław Bartkowski、Jan Ptaszyn Wróblewski、Marek Bliziński、Janusz Muniak Quintet、Tomasz Szukalski、Krzysztof Ścierański、Andrzej Przybielski、Stanisław Sojka、Ewa Bem。
+
+## 情緒評分（score-eb3）
+- 51382：Opus 1 支照 `RULES.md`＋BRIEF 打 40 張，主線看過分布與 why，未改值。八格：雀躍 15、放鬆 8、沸騰 6、冷冽 6、暴躁 5（平靜／恍惚／頹靡 0）；自由／前衛（Trzaskowski ×2、Kurylewicz《10+8》、Komeda《Ballet Etudes》、Przybielski）落冷冽，Hammond 放克落雀躍／沸騰，Novi《Bossa Nova》、Ewa Bem、Kosz 落放鬆。conf high 1／mid 25／low 14。`merge` → `build-priors` → `build-scale v0` → `build-card-moods`：錨點 104/104 同格，座標 22,351/22,351。不算落格率。
