@@ -1171,6 +1171,39 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 60 位排入 2 批，54 位上架（26 full、28 thin）、6 位不寫；審稿合計修 15 位（另撤稿 3 位：張亞東、The Cheers Cheers、Vinnum Sabbathi）。主線 WebSearch 6 次。
 
+## ar-d-241（2026-11-01，鐵幕爵士 eb1 補介紹：Kőrössy、羅馬尼亞 Electrecord 爵士、南斯拉夫、保加利亞）
+
+- 34 位 → 上架 31（18 full、13 thin），skipped 3：Bora Roković（f 欄只剩「1950 年代西行的爵士樂手之一」，無樂器無聲音）、Toranj 77（只有 Discogs 風格標籤，連國籍都沒有）、Septet Rousse（只剩唱片背面資訊）。補洞 WebSearch 每位 ≤2（Spassov & Moutafchiev 兩人鍵 3 次）。
+- 維基預抓：主線另以 scratchpad 版 `artist-wiki.mjs`（per-key 語言表 ro／hu／it／sr／hr／bg／fr／de）補抓當地語言維基，13／34 有頁；手刪錯頁 Birdland（紐約俱樂部）。英文預抓「Green White Green」是奈及利亞電影，補洞層排除。
+- 主線審稿修 5 位：
+  - Petar Ugrin：原稿只有 sl 維基一源（底稿是 Mazur 悼文，未能開頁），卻寫成 full 並帶 1944 生年。主線 WebSearch 只找到 en 維基 RTV Slovenia Big Band「音樂總監是 Petar Ugrin」（同維基家族），改 thin、刪生年與「1972」改「1970 年代初」、刪「最重要的斯洛維尼亞爵士樂手之一」（單源評價）、比賽一句改「據稱」。
+  - Lala Kovačev：首句以年份起、沒有身分，改「塞爾維亞爵士鼓手，1939 年生於 Kikinda」；刪「大致」「安靜」壓回 249 字。
+  - Mircea Tiberian：「該國第一個爵士與流行音樂系」兩維基同家族、序數宣稱，刪「該國第一個」。
+  - Cătălin Tîrcolea：「他的簡介稱」轉述句改「據稱」（Discogs 簡介單源）。
+- 保留：Körössy 的 Willis Conover 評語（具名、廣播人非樂評，單源低風險）；1969 移居美國亞特蘭大（ro 維基＋jazzma 訃文；PLAN 寫的 MPS 西德錄音是同年赴美前）。Harry Tavitian 的 Securitate 經過全以「據 Tavitian 自述」寫（RFE/RL 2010 訪談）。Jazz Focus 65 的 Leviev／Don Ellis〈Bulgarian Bulge〉以「據說」寫。Tiberian 2025 年 10 月辭世（Agerpres＋維基兩源）。
+- 不寫：Körössy「第一位融合民俗／引進自由爵士」、Tîrcolea／Tavernier「第一個把排簫帶進爵士」（只寫「較早…之一」）、Simić「塞爾維亞第一個大樂團」、Manusardi 蒙特勒「第一位」、Moutafchiev 卒年（bg 維基單源）、Ugrin 卒年與普列舍倫基金會獎（單源）、Jazz Focus 65 完整陣容（說法不一）、Stjepko Gut「Hampton 團唯一白人」（RTS 與 sr 維基不一，只寫「唯一歐洲人、兩位白人之一」）。
+- 跨鍵：Harry Tavitian 兩鍵（二重奏 Creativ／七重奏 Orient Express）、Lala Kovačev 兩鍵（人／1982 樂團）、B.P. Convention 與 Zagreb Jazz Quartet（同為 Boško Petrović）切入角度各異。
+- pubIssues 13 條（多為專輯年份 ±1、Parghel 曲數、Spassov「Jazz Line」團名、Nikolov 樂器、Zagreb Jazz Quartet「外國經紀人」查無來源）。
+
+## ar-d-242（2026-11-01，鐵幕爵士 eb2 補介紹：匈牙利、捷克斯洛伐克）
+
+- 29 位 → 上架 27（20 full、7 thin），skipped 2：Dimenzió（全部事實只有 BMC 一源、沒有任何聲音描述）、Gabriel Jonáš（只有一條 Discogs 身世，sk 維基 404）。補洞 WebSearch 每位 ≤2（實際多為 1）。
+- 維基預抓：當地語言補抓 hu／cs／sk，24／29 有頁；錯頁 Dimenzió（en「Dimension」、hu 數學詞條）、Karel Růžička（en 是 1909 年生的同名作曲家）作廢，照《Ozvěny》定為 1940–2016 的鋼琴家（父）。
+- 主線審稿修 4 位：
+  - Karel Růžička：原稿只有 cs 維基一源，主線補 Czech Radio PRSO 八十冥誕紀念文（1940 年 6 月生、Jazz Celula 與 SHQ、音樂院教作曲與鋼琴、主持 Frýdlant 夏季爵士工作坊、兒子是旅美薩克斯風手）為第二源，正文不動。
+  - Tomsits Jazz Group：「隨 Dizzy Gillespie 等老牌明星巡演」改「參加…的歐洲巡演」（英文維基稱開場團、BMC 稱同行，兩說取交集），補半形空格。
+  - Bergendy：「同名專輯被列為匈牙利史上最重要的專輯之一」主詞不明（前句是單曲〈Mindig ugyanúgy〉），改「樂團 1972 年的同名專輯」（HVG＋BBJ 兩源）；刪字壓回 250。
+  - Energit：末句「他被視為捷克藍調的代表人物」主詞改 Andršt；刪字壓回 250。
+- 保留：Eva Olmerová 269 字用放寬額度（入獄、被禁演、家變是人物故事主體）；「兩度入獄」「當局禁止她與 Prague Big Band 同台」不帶年份與場地（cs 維基細節＋ČT24 概述「入獄與禁令」）。Laco Déczi 1985 年離開捷克斯洛伐克（cs 維基、igsymposium、Prague PROMS 三源；1986 一說只見本人網站）。Rudolf Dašek 2013 年過世（維基＋wikidata，卒日兩說故不寫日）。Harcsa 的 Tower Records 榜首寫「據報導」。
+- 不寫：Szabados 工作坊栽培 Dresch／Grencsó（維基同家族）、MAKUZ「第一個專門演出他作品的編制」、Déczi 的 StB 線民爭議（sk 維基單源）與獎項（單源）、Gustav Brom「歐洲任期最長」與 DownBeat 名次（單源）、Bergendy《Hétfő》「匈牙利第一張雙專輯」、Fermáta／Grencsó 成軍年（說法不一）。
+- 跨鍵：György Szabados 與 & MAKUZ、Binder Quintet 與 Károly Binder、Jiří Stivín 兩個合作鍵切入角度各異。
+- pubIssues 3 條（MAKUZ「1980 年代初成立」無據、《Kontinentspiel》「Kalis」應為波蘭 Kalisz、Szakcsi Lakatos「創立 Rákfogó」應為加入）。
+
+## 鐵幕爵士 eb1／eb2 補介紹（ar-d-241～242）小結
+
+- 63 位排入 2 批，上架 58 位（38 full、20 thin）、skipped 5；審稿合計修 9 位。主線 WebSearch 2 次（Petar Ugrin、Karel Růžička 補第二源）。
+- 當地語言維基預抓用 scratchpad 版 `artist-wiki.mjs` 加 per-key 語言表；若之後東歐、非英語系批次常態化，值得把 `LANGMAP` 做進正式腳本。
+
 ## ar-d-245（2026-11-01，鐵幕爵士＋MPS 策展線 eb5＝西德 MPS／SABA 60–70 年代、東歐樂手移民西方後的錄音）
 
 - 21 位排入，21 位全上架（16 full、5 thin：Wolfgang Dauner Quintet、Jean-Luc Ponty Experience、Dusko Goykovich、Elek Bacsik、Valery Ponomarev），skipped 0。補洞 3 組（10／10／1），搜尋合計 99 次；pubIssues 0。

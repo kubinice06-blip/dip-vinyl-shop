@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-01｜dip-vinyl-shop｜藝人介紹 ar-d-241（eb1 Kőrössy＋羅馬尼亞＋南斯拉夫＋保加利亞）＋ar-d-242（eb2 匈牙利＋捷克斯洛伐克）上架 58 位
+
+- **改動**：照 `dip-artist-intro` skill 跑完兩批（萃取 --lean、維基預抓＋當地語言維基補抓、補洞 7 組 Sonnet、寫作 4 組 Opus、qa-artist、主線逐位審稿、alias、issues、建分片）。補洞 WebSearch 每位 ≤2。
+  - **ar-d-241**：34 位 → 上架 31（18 full、13 thin），skipped 3（Bora Roković、Toranj 77、Septet Rousse：素材不到 thin 門檻）。審稿修 5 位（Petar Ugrin 單源改 thin、刪生年；Lala Kovačev 首句補身分；Tiberian 刪「該國第一個」；Tîrcolea 轉述句改「據稱」）。
+  - **ar-d-242**：29 位 → 上架 27（20 full、7 thin），skipped 2（Dimenzió 只有 BMC 一源、Gabriel Jonáš 只有一條身世）。審稿修 4 位（Karel Růžička 補 Czech Radio 第二源；Tomsits 巡演兩說取交集；Bergendy、Energit 主詞）。
+  - 維基預抓多半只有英文，主線以 scratchpad 版 `artist-wiki.mjs` 加 per-key 語言表（ro／hu／cs／sk／sr／hr／bg／it／fr／de）補抓，241 有頁 13／34、242 有頁 24／29。
+  - 藝人介紹（併 main 的 ar-d-245 等後）354 份成品、6,573 位。
+- **主要檔案**：`desc-tools/batches/artist/{facts,research,output}/ar-d-24{1,2}*`、`progress.json`、`data/artist-intros/*`、`audits/ARTIST-PUB-ISSUES.md`、`batch-progress/artist-intro/ar-c-rulings.md`、`batch-progress/eastbloc-jazz-20261101/PLAN.md`。
+- **驗證**：qa-artist gap 兩批 0 處；out 兩批只剩 skipped 的「缺 N 位」與 Eva Olmerová 269 字放寬提示；併 main 後 data/artist-intros 取 main 版重跑 build-artist-intros：354 份成品、64 分片。
+
 ### 2026-11-01｜dip-vinyl-shop｜鐵幕爵士＋MPS 策展線 eb3（波蘭 60–80 年代）＋eb4（蘇聯 Melodiya＋東德 Amiga）上線 78 張
 
 - **改動**：照 `batch-progress/eastbloc-jazz-20261101/PLAN.md` 跑完兩批（策展 4、研究 5×2、鉤子 2×2、寫作 2×2、主線審稿、試聽、封面目視、三軸、頂點、寫入、子曲風、情緒評分、藝人介紹名冊）。
