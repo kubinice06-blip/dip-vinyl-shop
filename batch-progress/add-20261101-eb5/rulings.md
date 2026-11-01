@@ -57,3 +57,25 @@
 - 43537：Hammer《The First Seven Days》1975 Nemperor NE 432 成立，Red Gate Studio（Kent, NY）；除 Kindler（小提琴）與 David Earle Johnson（conga）外幾乎一人完成。Malma Maliny／MPS 連結只有 Wikipedia 單一來源，未寫入簡介建議。
 - 43538：Goodman & Hammer《Like Children》1974 Nemperor NE 430 成立；主署名 Goodman 為美國人，Hammer 為共同署名，「捷克移民」身分只屬 Hammer。發行日 7/26 單一來源，只寫 1974。
 - 本組 moodGuess 存疑：《The Name Is Makowicz》（重）、Majesty Music、First Meeting（輕）。推翻策展層：43533、43536。WebSearch 共用 8 次（含 Fusion、Duets、Makowicz、Majesty、First Meeting、Like Children、First Seven Days 各 1），逾每支 3 次上限，特此註明。
+
+## 研究 b 組
+
+- 43511：Gulda《Music for 4 Soloists and Band No. 1》首發廠牌為 SABA（SB 15 097 ST，1965，MB 與 Discogs master 330092 一致），不是 Amadeo；MPS CRM 625 為 1971 重發。建議卡單 label 改 SABA。
+- 43512：Love & Sunshine 年份維持 1975（MB、Discogs 各國版本皆 1975，Apple 1976 不採）；錄音 1974 年 10 月（Discogs 單源）。
+- 43513：Open Strings 年份維持 1972（Wikipedia 寫 1971、錄音 1971 年 12 月）；moodGuess 存疑：預估電聲小提琴躁尖，廠方稱 pre-fusion，是否電聲未證實，建議 x 不宜過高。
+- 43514：Dave Pike Set《Four Reasons》未找到樂評證明是「另一高峰」，策展層『更成熟』無來源，status thin；主線若嫌重複可汰。
+- 43515：Herbolzheimer《My Kind of Sunshine》專輯 1972、錄音 1970／1971 年 12 月於慕尼黑 Domicile，掌聲為後製（Discogs 註）；artist 建議用 MB 寫法或簡稱 Peter Herbolzheimer。
+- 43516：Motions and Emotions 年份取 1969（Discogs 德國主版顯示 1970，但英法版 1969、MB／Wikipedia／MPS 官網皆 1969）；管弦樂錄於紐約 A&R、鋼琴錄於 Villingen。
+- 43517：Love & Sunshine 的 reggae 融合說法無來源，不寫；Gulda、Four Reasons、Love & Sunshine 因無聲音樂評，標 thin。
+- 43518：Sunday Walk、Noisy Silence 兩張的 moodGuess 與廠方描述相符，未見不符；Noisy Silence 的 Rettenbacher 名字三源寫法不同，facts 採 Discogs。
+- 另：AllMusic、Jazz Music Archives 403；WebSearch 用 3 次；Bing 經 WebFetch 無效。
+
+## 主線（研究後裁定）
+- 43571：
+  - **汰 Milcho Leviev《Blues for the Fisherman》**：研究 c 查出是 1980 年 6 月倫敦 Ronnie Scott's 現場、實質主角是 Art Pepper，比照 Sun Ra、Violin Summit 不收現場盤。本批定案 **39 張**（不補位：候補全是同藝人第三張或池中已多的藝人）。
+  - **掛名照卡池既有寫法**：池中是「Gabor Szabo」（2 張）、「Miroslav Vitous」（2 張）無變音符號，本批改成同一寫法，卡池藝人不分裂（正文可寫 Szabó／Vitouš）。卡單、研究稿、meta 三層 key 同步改。
+  - Herbolzheimer 掛名改「Peter Herbolzheimer Rhythm Combination & Brass」（他的樂團通稱，原策展寫法是 MB 的封面拼字）。
+  - Gulda《Music for 4 Soloists and Band No. 1》label 改 SABA（研究 b：SABA SB 15 097 ST 1965 原版，MPS CRM 625 為 1971 重發，查無 Amadeo 版）。
+  - 年份：Goykovich《Swinging Macedonia》改 1967（研究 c：1966-08 科隆錄音，MB／Discogs master 1967、外盒印 1967 年 1 月）；Szabo《Jazz Raga》改 1967（研究 e：1966-08 錄音，Impulse! 1967 年初發行）。
+  - moodGuess 存疑（Bacsik《Bird and Dizzy》、Makowicz《The Name Is Makowicz》、Vitous《Majesty Music》等）：本線不以 moodGuess 汰卡，照研究稿寫聲音；評分時照實打。
+  - 研究 d 支 WebSearch 用 8 次（超過每支 3 次），全工作階段額度內，記錄不追究。
