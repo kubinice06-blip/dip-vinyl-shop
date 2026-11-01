@@ -1,5 +1,5 @@
 {
- "產出日期": "2026-10-30",
+ "產出日期": "2026-11-01",
  "minNode": 20,
  "genres": [
   {
@@ -363,22 +363,22 @@
   {
    "id": "jazz",
    "zh": "爵士",
-   "count": 4994,
+   "count": 5034,
    "children": [
     {
      "id": "bop",
      "zh": "Bebop / Hard Bop",
-     "count": 1427,
+     "count": 1436,
      "children": [
       {
        "id": "hard-bop",
        "zh": "Hard Bop",
-       "count": 423
+       "count": 427
       },
       {
        "id": "post-bop",
        "zh": "Post-Bop / 現代爵士",
-       "count": 397
+       "count": 401
       },
       {
        "id": "bebop",
@@ -388,12 +388,12 @@
       {
        "id": "piano",
        "zh": "鋼琴",
-       "count": 183
+       "count": 186
       },
       {
        "id": "sax",
        "zh": "薩克斯風",
-       "count": 119
+       "count": 120
       },
       {
        "id": "blue-note",
@@ -405,12 +405,12 @@
     {
      "id": "free",
      "zh": "自由與前衛",
-     "count": 988,
+     "count": 996,
      "children": [
       {
        "id": "avant",
        "zh": "前衛與 New Thing",
-       "count": 511
+       "count": 518
       },
       {
        "id": "free-improv",
@@ -420,39 +420,39 @@
       {
        "id": "post-bop",
        "zh": "偏 Post-Bop",
-       "count": 146
+       "count": 151
       },
       {
        "id": "fusion",
        "zh": "偏 Fusion",
-       "count": 80
+       "count": 82
+      },
+      {
+       "id": "euro",
+       "zh": "歐陸自由爵士",
+       "count": 64
       },
       {
        "id": "spiritual",
        "zh": "靈性與 Modal",
        "count": 63
-      },
-      {
-       "id": "euro",
-       "zh": "歐陸自由爵士",
-       "count": 57
       }
      ]
     },
     {
      "id": "fusion",
      "zh": "Fusion / Jazz-Funk",
-     "count": 888,
+     "count": 903,
      "children": [
       {
        "id": "jazz-funk",
        "zh": "Jazz-Funk",
-       "count": 243
+       "count": 249
       },
       {
        "id": "smooth",
        "zh": "Smooth / 當代",
-       "count": 163
+       "count": 164
       },
       {
        "id": "acid-nu",
@@ -467,7 +467,7 @@
       {
        "id": "jazz-rock",
        "zh": "Jazz-Rock",
-       "count": 68
+       "count": 70
       },
       {
        "id": "latin",
@@ -484,37 +484,37 @@
     {
      "id": "contemporary",
      "zh": "當代與 Nu Jazz",
-     "count": 826,
+     "count": 836,
      "children": [
       {
        "id": "nu-jazz",
        "zh": "Nu / Acid Jazz",
-       "count": 288
+       "count": 289
       },
       {
        "id": "smooth",
        "zh": "Smooth / Lounge",
-       "count": 254
+       "count": 257
       },
       {
        "id": "post-bop",
        "zh": "偏 Post-Bop",
-       "count": 159
+       "count": 161
       },
       {
        "id": "free",
        "zh": "偏前衛",
-       "count": 113
+       "count": 117
       },
       {
        "id": "piano",
        "zh": "鋼琴",
-       "count": 105
+       "count": 107
       },
       {
        "id": "euro",
        "zh": "ECM / 歐陸",
-       "count": 71
+       "count": 81
       },
       {
        "id": "vocal",
@@ -531,23 +531,23 @@
     {
      "id": "vocal",
      "zh": "人聲爵士",
-     "count": 364,
+     "count": 370,
      "children": []
     },
     {
      "id": "swing",
      "zh": "Swing / 大樂團",
-     "count": 282,
+     "count": 286,
      "children": [
       {
        "id": "big-band",
        "zh": "大樂團",
-       "count": 82
+       "count": 83
       },
       {
        "id": "vocal",
        "zh": "人聲與標準曲",
-       "count": 74
+       "count": 76
       },
       {
        "id": "piano",
@@ -557,7 +557,7 @@
       {
        "id": "dixieland",
        "zh": "Dixieland / 紐奧良",
-       "count": 33
+       "count": 34
       }
      ]
     },
@@ -581,12 +581,12 @@
     {
      "id": "modal",
      "zh": "Modal / 靈性爵士",
-     "count": 192,
+     "count": 193,
      "children": [
       {
        "id": "modal",
        "zh": "Modal",
-       "count": 90
+       "count": 91
       },
       {
        "id": "spiritual",
@@ -598,7 +598,7 @@
     {
      "id": "cool",
      "zh": "Cool / 西岸",
-     "count": 185,
+     "count": 187,
      "children": []
     },
     {
