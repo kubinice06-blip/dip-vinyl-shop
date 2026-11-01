@@ -46,3 +46,14 @@
 - 43547：Kühn《Hip Elegy》年份 1976（MB／Discogs 德版）成立，AllMusic／Presto 1977 為重發；iTunes 為 Most Perfect Sound 重發版。錄音 1975-11 Ludwigsburg 僅檢索摘要，未核故不寫，status thin。
 - 43548：Ponomarev《Means of Identification》錄音 1985-04-14 Van Gelder、1987 Reservoir RSR 101（目錄最前，不寫「廠牌第一張」）。出走細節與 Blakey 年份無可靠來源，只寫 1973 年起定居美國，status thin。Discogs 鋼琴手「Takao Hideki」姓名順序未核。
 - 本組 moodGuess 存疑：Bacsik《Bird and Dizzy》（重）、Szabó《Jazz Raga》、《We'll Remember Komeda》（輕）。推翻策展層：43541（兩處）。WebSearch 共用 3 次（Bacsik 兩次、Kühn 一次）。
+
+## 研究 d 組
+- 43531：Urbaniak《Fusion》實質是 1973 西德 CBS《Super Constellation》（S 65744）加一首〈Fusion〉的 1974 美國 Columbia 重發（KC 32852）；卡片年份取 1974 不改，簡介可提原版 1973。Discogs 有兩個 master（1136896 僅 2 首、似宣傳單曲；202678 查無），以 release 1047097 為準。Makowicz 在本盤彈鍵盤，與本批另兩張 Makowicz 同為 Urbaniak 班底。
+- 43532：《Classic Jazz Duets》1982 Stash ST-216 成立；查無正式樂評，聲音事實取編制與曲目（鋼琴＋低音提琴、無鼓）。Mraz 離捷克年份查無可靠來源不寫；Jazz Music Archives「俱樂部現場錄音」為單一非正式留言，不採。
+- 43533：《The Name Is Makowicz》推翻策展層「獨奏鋼琴」：實為 Marc Johnson、Bill Goodwin、Gene Estes 加客串 Phil Woods 的帶鼓編制，Sheffield 直刻（1983-04），moodGuess 存疑（非獨奏、有鼓）。錄音日 4/23–29（Discogs）與 4/25–29（樂評）不一致，寫作層寫「4 月下旬」。
+- 43534：Vitouš《Infinite Search》年份 1970（Embryo SD 524）成立，錄音為 1969 秋（Wikipedia 10/8、Discogs 11 月，不一致）；Weather Report 創團年各源 1970／1971 不一，寫作層不寫確切年。
+- 43535：Vitouš《Majesty Music》確認為 Arista AL 4099（1976），jazz.com／Wikipedia 說 ECM 是錯的。查無正式樂評，status thin。moodGuess 存疑：策展層「沉靜室內樂」不符，實為三位鼓手加 conga 與 Mini Moog 的融合小品。
+- 43536：Vitouš《First Meeting》推翻策展層：陣容是 Surman、Kenny Kirkland、Jon Christensen（Discogs／MB／Wikipedia 一致），不是 Garbarek／Erskine。錄音 1979-05 奧斯陸 Talent Studio、Eicher 製作、Kongshaug 錄音。moodGuess 輕度存疑（樂評語彙偏暖、鼓為輕柔鈸，冷暖建議重估）。
+- 43537：Hammer《The First Seven Days》1975 Nemperor NE 432 成立，Red Gate Studio（Kent, NY）；除 Kindler（小提琴）與 David Earle Johnson（conga）外幾乎一人完成。Malma Maliny／MPS 連結只有 Wikipedia 單一來源，未寫入簡介建議。
+- 43538：Goodman & Hammer《Like Children》1974 Nemperor NE 430 成立；主署名 Goodman 為美國人，Hammer 為共同署名，「捷克移民」身分只屬 Hammer。發行日 7/26 單一來源，只寫 1974。
+- 本組 moodGuess 存疑：《The Name Is Makowicz》（重）、Majesty Music、First Meeting（輕）。推翻策展層：43533、43536。WebSearch 共用 8 次（含 Fusion、Duets、Makowicz、Majesty、First Meeting、Like Children、First Seven Days 各 1），逾每支 3 次上限，特此註明。
