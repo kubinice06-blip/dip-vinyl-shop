@@ -15,6 +15,14 @@
   - PLAN.md 分片表 R4 列
 - **驗證**：三片合併檢查都通過——每個 key 剛好一筆，值都是 1–5 整數；keep 1 張。
 
+### 2026-11-01｜dip-vinyl-shop｜三軸重評 R1：s01–s03 verdicts 750 張
+
+- **範圍**：鐵幕爵士 eb1–5＋情緒薄格 mc 前段（至 mc5），15 段各 50 張派 Opus 代理照 `RUBRIC.md` 重評；只產 verdicts，不改 seed／manifest／card_catalog。
+- **新舊分布（1/2/3/4/5）**：經典 0/32/663/55/0 → 0/10/375/340/25；冷門 0/4/174/112/460 → 0/44/563/119/24；硬蕊 0/58/455/83/154 → 17/152/127/322/132。
+- **錨點**：Yancy Körössy《Identification》經典 4 ✅；Szabados《Az Esküvő》經典 5 ✅。
+- **主線驗收**：每段抽 5 張覆核，0 段退回；主線改 1 筆（Wanda Warska《Somnambulicy》冷門 4→3，Muza 國營）。紀錄在 `verdicts/R1-review.md`、`verdicts/s0{1,2,3}.summary.md`。
+- **驗證**：三片合併檢查各 250 key 全到、值皆 1–5 整數、無重複、無 keep。
+
 ### 2026-11-01｜dip-vinyl-shop｜三軸重評線開工：情緒薄格／Spotify／鐵幕爵士 2,957 張（判準失準）
 
 - **店主**：「Yancy Körössy 那張怎麼可能都只有三顆星？你的判斷標準是不是已經失準了」「後來補上的頻率缺口全部都要檢查」。
