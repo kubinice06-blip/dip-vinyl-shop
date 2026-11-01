@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-01｜dip-vinyl-shop｜鐵幕爵士＋MPS 策展線：全線完成（195 張、藝人介紹 141 位）
+
+- **店主指示**：收錄 Yancy Körössy《Identification》並擴展到 200 張。
+- **結果**：eb1 羅馬尼亞＋巴爾幹 40、eb2 匈牙利＋捷克斯洛伐克 39、eb3 波蘭 40、eb4 蘇聯＋東德 38、eb5 MPS／SABA＋東歐移民西方錄音 38，合計 195 張（eb5 跳過已在池 6）。Körössy 收《Identification》、《Seria Jazz Nr. 1》等 3 張。試聽 ready 102／195（國營廠盤 Apple 上架率低：eb1 7／40、eb4 7／38）。頂點 0。藝人介紹 ar-d-241～245 上線 141 位、skipped 5。
+- **過程**：3 個卡片工作階段（eb1＋2、eb3＋4、eb5）＋3 個藝人介紹工作階段，約 3.5 小時；未撞額度。明細見 PLAN.md 與 `batch-progress/add-20261101-eb*/rulings.md`。
+- **主要檔案**：`batch-progress/eastbloc-jazz-20261101/PLAN.md`（頂端加全線總結）。
+- **驗證**：各批 published gate 與 KV 回讀由卡片工作階段完成；progress.json ar-d-241～245 全數 published；seed 內 Yancy Körössy 3 張。
+
 ### 2026-11-01｜dip-vinyl-shop｜藝人介紹 ar-d-243（eb3 波蘭 60–80 年代）＋ar-d-244（eb4 蘇聯 Melodiya＋東德 Amiga）上架 62 位
 
 - **改動**：照 `dip-artist-intro` skill 跑完鐵幕爵士線最後兩批（萃取 --lean、維基預抓＋當地語言補抓、補洞 8 組 Sonnet、寫作 4 組 Opus、qa-artist、主線逐位審稿、alias、issues、建分片）。
