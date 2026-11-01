@@ -1,0 +1,721 @@
+{
+ "group": "eb4b",
+ "factions": [
+  {
+   "id": "dd-free",
+   "zh": "東德自由／前衛爵士",
+   "count": 8,
+   "why": "Synopsis／Gumpert／Sommer／Bauer 一脈，Amiga Jazz 與 FMP 的東德自由爵士。"
+  },
+  {
+   "id": "dd-mainstream",
+   "zh": "東德主流／摩登爵士",
+   "count": 6,
+   "why": "1960 年代起 Amiga 的摩登、cool、bop 與大樂團爵士。"
+  },
+  {
+   "id": "dd-fusion",
+   "zh": "東德 fusion／爵士搖滾大樂團",
+   "count": 5,
+   "why": "Lenz、Modern Soul Band、Fischer 的爵士搖滾與靈魂爵士。"
+  },
+  {
+   "id": "dd-vocal",
+   "zh": "東德爵士人聲",
+   "count": 5,
+   "why": "Brüning、Wroblewsky、Krug 與樂團合作的人聲爵士。"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Synopsis",
+   "album": "Synopsis",
+   "year": 1974,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Petrowsky、Bauer、Gumpert、Sommer 四人首度同台的 Amiga 錄音，東德自由爵士的奠基盤，後來的 Zentralquartett 即由此而來。",
+   "moodGuess": {
+    "x": 4.2,
+    "y": -0.1,
+    "z": -0.4,
+    "why": "無調集體即興、四件樂器尖銳交織，緊繃偏冷"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/471258",
+    "https://musicbrainz.org/release-group/c08058fa-c56a-4533-85f0-d9eeddbacc78"
+   ],
+   "mbRgMbid": "c08058fa-c56a-4533-85f0-d9eeddbacc78",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Synopsis Petrowsky Bauer Gumpert Sommer",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ulrich Gumpert Workshop Band",
+   "album": "Ulrich Gumpert Workshop Band",
+   "year": 1980,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Gumpert 的七重奏／工作坊樂團，東德最具代表性的前衛大樂團式錄音，Amiga Jazz 系列的重點作。",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.7,
+    "z": -0.2,
+    "why": "七重奏厚實管樂與不和諧，滿載動能"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/491848",
+    "https://www.discogs.com/release/522316"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 查詢 'Ulrich Gumpert Workshop Band'（artist 與 releasegroup 兩種）於 2026-11-01 皆無此 1980 Amiga LP。",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/491848",
+    "https://www.discogs.com/release/522316"
+   ],
+   "releaseException": "",
+   "queryAlias": "Gumpert Workshop Band Amiga 1980",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ulrich Gumpert",
+   "album": "'N Tango für Gitti",
+   "year": 1984,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Gumpert 的 Amiga Jazz 鋼琴獨奏，兼具幽默與前衛，是他東德時期最具個人面貌的一張。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": -0.4,
+    "z": 0.2,
+    "why": "獨奏鋼琴，跳躍且帶諷刺的小品，不輕鬆"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/487584",
+    "https://musicbrainz.org/release-group/9288d49b-cda3-430f-ba20-2162bd7d031e"
+   ],
+   "mbRgMbid": "9288d49b-cda3-430f-ba20-2162bd7d031e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "N Tango fuer Gitti",
+   "uncertain": ""
+  },
+  {
+   "artist": "Günter Sommer",
+   "album": "Hörmusik",
+   "year": 1979,
+   "label": "FMP",
+   "country": "dd",
+   "faction": "dd-free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Baby Sommer 的鼓與打擊獨奏代表作，在東柏林錄製、經 FMP 在西方發行，是東德自由鼓樂的標竿。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.0,
+    "z": -0.5,
+    "why": "獨奏打擊樂，音色開闊、質地金屬而冷"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/194390",
+    "https://musicbrainz.org/release-group/93c316f3-8683-4ee2-93a7-ee2a43002d18"
+   ],
+   "mbRgMbid": "93c316f3-8683-4ee2-93a7-ee2a43002d18",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Gunter Sommer Hormusik",
+   "uncertain": "MB 首發 1979（XG），Discogs master 標 1980 FMP；年份取 MB。藝人名採國際寫法 Günter Sommer（不含 Baby）。"
+  },
+  {
+   "artist": "Conrad Bauer",
+   "album": "Conrad Bauer",
+   "year": 1981,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Bauer 的長號獨奏專輯，延展技法（循環呼吸、複音）在東德爵士史上被一再提及。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.5,
+    "z": -0.3,
+    "why": "獨奏長號，低頻厚實但線條凌厲"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/552471",
+    "https://musicbrainz.org/release-group/3c7e155c-bb25-41dc-9ac3-fdc2d7282be3"
+   ],
+   "mbRgMbid": "3c7e155c-bb25-41dc-9ac3-fdc2d7282be3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Conrad Bauer",
+   "album": "Flüchtiges Glück",
+   "year": 1986,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Bauer 晚期東德的重要錄音，以四重奏／重疊錄音拓展長號的聲部語彙。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.4,
+    "z": -0.2,
+    "why": "長號為主的自由即興，密度中高、色調偏冷"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/135661",
+    "https://musicbrainz.org/release-group/18069c78-bb39-4d9c-b14d-2c66aa438a05"
+   ],
+   "mbRgMbid": "18069c78-bb39-4d9c-b14d-2c66aa438a05",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Fluechtiges Glueck",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bergisch-Brandenburgisches Quartett",
+   "album": "Bergisch-Brandenburgisches Quartett",
+   "year": 1984,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "東西德樂手跨越圍牆組成的 BBQ，Amiga Jazz 少見的東西合作自由爵士盤，後來於 Black Truffle 重發。",
+   "moodGuess": {
+    "x": 4.0,
+    "y": 0.3,
+    "z": -0.5,
+    "why": "集體即興，密集且諷刺性的突兀轉折"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/328262",
+    "https://musicbrainz.org/release-group/7b9795fe-8d00-42b8-a3db-8943c8d6eb1e"
+   ],
+   "mbRgMbid": "7b9795fe-8d00-42b8-a3db-8943c8d6eb1e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發日 1982-12-12，Discogs master 標 Amiga 1984；年份採 1984（LP 發行年），可再核。成員含西德樂手，仍以 Amiga 東德首發歸 dd。"
+  },
+  {
+   "artist": "Manfred Schulze Bläser Quintett",
+   "album": "Viertens",
+   "year": 1988,
+   "label": "FMP",
+   "country": "dd",
+   "faction": "dd-free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Schulze 的木管銅管五重奏，結合巴赫式對位與自由即興，是東德「室內自由爵士」的代表；FMP 為其在西方的主要出版商。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.6,
+    "z": 0.1,
+    "why": "管樂五重奏，對位厚實、旋律性強，中度緊張"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1735542",
+    "https://www.discogs.com/release/2846295"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz 查詢 'Manfred Schulze Bläser Quintett' 與 releasegroup:Viertens 於 2026-11-01 無對應結果。",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1735542",
+    "https://www.discogs.com/release/2846295"
+   ],
+   "releaseException": "",
+   "queryAlias": "Manfred Schulze Blaeserquintett Viertens",
+   "uncertain": "Schulze 五重奏 FMP 尚有《Nummer 12》（1986 現場），本張取錄音室作。"
+  },
+  {
+   "artist": "Manfred Ludwig-Sextett",
+   "album": "Jazz",
+   "year": 1963,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "1960 年代東德摩登爵士的起點之一，cool／bossa 取向，Petrowsky、Kühn 世代的早期舞台。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": -0.6,
+    "z": 0.6,
+    "why": "cool jazz 與 bossa 的輕盈小編制，放鬆"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1026527",
+    "https://www.discogs.com/release/4750275"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz 查詢 artist:'Manfred Ludwig-Sextett' 於 2026-11-01 無結果。",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1026527",
+    "https://www.discogs.com/release/4750275"
+   ],
+   "releaseException": "",
+   "queryAlias": "Manfred Ludwig Sextett Jazz",
+   "uncertain": ""
+  },
+  {
+   "artist": "Modern Jazz Big Band 65",
+   "album": "Modern Jazz Big Band 65",
+   "year": 1966,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Amiga 最早的現代大樂團專輯，東德摩登大樂團的基準，曲目以原創與 bop 為主。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.6,
+    "z": 0.7,
+    "why": "大樂團銅管厚實、明快向前"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1246969",
+    "https://musicbrainz.org/release-group/41b5cb0e-5044-4dcf-b3ec-3c2b4fb80829"
+   ],
+   "mbRgMbid": "41b5cb0e-5044-4dcf-b3ec-3c2b4fb80829",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ensemble Studio 4 (Ernst-Ludwig Petrowsky)",
+   "album": "Jazz Mit Dem Ensemble Studio 4",
+   "year": 1969,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Petrowsky 領軍的 Studio 4，東德摩登／後 bop 與自由爵士過渡期的重要錄音。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.2,
+    "z": 0.0,
+    "why": "薩克斯領銜的摩登爵士，緊湊但清晰"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/652639",
+    "https://musicbrainz.org/release-group/67c2a9ba-3d40-4067-b911-5ab3752b4bae"
+   ],
+   "mbRgMbid": "67c2a9ba-3d40-4067-b911-5ab3752b4bae",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Ensemble Studio 4 Petrowsky",
+   "uncertain": ""
+  },
+  {
+   "artist": "Rolf Kühn Quintett",
+   "album": "Solarius",
+   "year": 1965,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Rolf Kühn 在東柏林錄製的五重奏，Joachim Kühn 於 1966 出走前的東德時期錄音，曲目含 Joachim 的演奏。",
+   "moodGuess": {
+    "x": 3.0,
+    "y": -0.3,
+    "z": -0.1,
+    "why": "摩登／後 bop，清亮的鋼琴與單簧管"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/516294",
+    "https://musicbrainz.org/release-group/d2e86992-0ef0-4732-9a98-289e3f50045b"
+   ],
+   "mbRgMbid": "d2e86992-0ef0-4732-9a98-289e3f50045b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Rolf Kuhn Solarius",
+   "uncertain": "領銜者為 Rolf 而非 Joachim；歸 Joachim 東德時期。MB RG 首發 2012（重發），原盤 1965 Amiga。池中 Rolf + Joachim Kühn Quintet《Transfiguration》為不同盤。"
+  },
+  {
+   "artist": "Friedhelm Schönfeld",
+   "album": "Friedhelm Schönfeld",
+   "year": 1978,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Schönfeld 三重奏的代表作，鋼琴為主，風格介於 Bill Evans 與東德自己的抒情語彙。",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.0,
+    "z": 0.2,
+    "why": "鋼琴三重奏，旋律清楚、節奏不急"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/584224",
+    "https://musicbrainz.org/release-group/0b2ccab1-fb11-42cd-ace9-c5312ab0bc6b"
+   ],
+   "mbRgMbid": "0b2ccab1-fb11-42cd-ace9-c5312ab0bc6b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Friedhelm Schönfeld & Hubert Katzenbeier",
+   "album": "Jazz",
+   "year": 1973,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Amiga 以爵士二重奏出版的少數盤，鋼琴與薩克斯對話的室內氣質。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": -0.4,
+    "z": 0.3,
+    "why": "二重奏，內省而有空間"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/573039",
+    "https://musicbrainz.org/release-group/4da5f0eb-9b39-4046-95fa-49c46c7c7836"
+   ],
+   "mbRgMbid": "4da5f0eb-9b39-4046-95fa-49c46c7c7836",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Schönfeld Katzenbeier Jazz 1973",
+   "uncertain": "盤名僅「Jazz」，與 Gerlach/Schönfeld 1968《Jazz》不同盤；dedupe 用的盤名「Jazz」需靠藝人名區分。"
+  },
+  {
+   "artist": "Klaus Lenz",
+   "album": "Für Fenz",
+   "year": 1970,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Klaus Lenz 的第一張 Amiga 專輯，東德爵士搖滾／大樂團的開端。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.4,
+    "z": 0.6,
+    "why": "明亮的銅管與搖擺節奏，輕快帶暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/859903",
+    "https://musicbrainz.org/release-group/35482d6b-21b0-4caf-b652-d835feeba074"
+   ],
+   "mbRgMbid": "35482d6b-21b0-4caf-b652-d835feeba074",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Klaus Lenz Fuer Fenz",
+   "uncertain": ""
+  },
+  {
+   "artist": "Klaus Lenz Modern Soul Big Band",
+   "album": "Klaus Lenz Modern Soul Big Band",
+   "year": 1974,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Lenz 把爵士大樂團、靈魂與放克結合的代表作，今日 Amiga 重發最常被提的一張。",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.8,
+    "z": 0.7,
+    "why": "放克節奏加厚銅管，推進感強而暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/915792",
+    "https://musicbrainz.org/release-group/b64746ea-079e-40f0-87be-9c7710dda7f9"
+   ],
+   "mbRgMbid": "b64746ea-079e-40f0-87be-9c7710dda7f9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Klaus Lenz Big Band",
+   "album": "Aufbruch",
+   "year": 1976,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Lenz Big Band 的巔峰爵士搖滾大樂團專輯，Jazz-Rock 與巴爾幹旋律交織。",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 0.8,
+    "z": 0.4,
+    "why": "fusion 大樂團，節奏駁雜、銅管密集"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/617094",
+    "https://musicbrainz.org/release-group/5374b267-7ea0-4318-a315-2aee090b7c71"
+   ],
+   "mbRgMbid": "5374b267-7ea0-4318-a315-2aee090b7c71",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Modern Soul Band",
+   "album": "Modern Soul Band",
+   "year": 1976,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Lenz 弟子們組成的 Modern Soul Band 首張，soul-jazz 與 jazz-rock 風格，東德 groove 蒐藏常客。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.8,
+    "z": 0.7,
+    "why": "靈魂爵士節奏、風琴與銅管厚實溫暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1857774",
+    "https://musicbrainz.org/release-group/e41488d6-92ce-4535-8fd4-29d914b52657"
+   ],
+   "mbRgMbid": "e41488d6-92ce-4535-8fd4-29d914b52657",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Günther Fischer-Quintett",
+   "album": "Kombination",
+   "year": 1978,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Fischer 的 Amiga Jazz 專輯，爵士搖滾與電子鍵盤，是他爵士身分最清楚的一張。",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0.5,
+    "z": 0.1,
+    "why": "電鋼琴與薩克斯的 fusion，節奏緊湊"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1024465",
+    "https://musicbrainz.org/release-group/dc4f28e2-3cee-41a3-acad-3eca7b98d63e"
+   ],
+   "mbRgMbid": "dc4f28e2-3cee-41a3-acad-3eca7b98d63e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Gunther Fischer Quintett Kombination",
+   "uncertain": ""
+  },
+  {
+   "artist": "Uschi Brüning & Günther Fischer-Quintett",
+   "album": "Uschi Brüning Und Das Günther Fischer-Quintett",
+   "year": 1973,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-vocal",
+   "genres": [
+    "jazz"
+   ],
+   "why": "東德爵士第一女聲 Brüning 與 Fischer 五重奏的首張，爵士搖滾人聲的起點。",
+   "moodGuess": {
+    "x": 3.1,
+    "y": 0.6,
+    "z": 0.3,
+    "why": "爵士搖滾人聲，節奏中速、編曲厚"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/743017",
+    "https://musicbrainz.org/release-group/b6b3e666-e4ef-4dc2-9243-19903577c6c2"
+   ],
+   "mbRgMbid": "b6b3e666-e4ef-4dc2-9243-19903577c6c2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Uschi Bruening Fischer Quintett",
+   "uncertain": ""
+  },
+  {
+   "artist": "Uschi Brüning",
+   "album": "Uschi Brüning",
+   "year": 1982,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-vocal",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Brüning 的個人專輯，大樂團與人聲的成熟之作，Amiga 時期的個人代表。",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.6,
+    "z": 0.5,
+    "why": "大編制人聲爵士，邊界躁、暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/837293",
+    "https://musicbrainz.org/release-group/f8427bfc-9eda-3157-965e-d52a41e50f6c"
+   ],
+   "mbRgMbid": "f8427bfc-9eda-3157-965e-d52a41e50f6c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Uschi Bruening",
+   "uncertain": ""
+  },
+  {
+   "artist": "Uschi Brüning & Ernst-Ludwig Petrowsky",
+   "album": "Kontraste",
+   "year": 1987,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-vocal",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Brüning 與 Petrowsky 的自由人聲／薩克斯二重奏，被視為東德即興人聲的高峰，Usel 組合的代表。",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.1,
+    "z": -0.4,
+    "why": "人聲與薩克斯自由對話，尖銳而緊繃"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/471264",
+    "https://musicbrainz.org/release-group/0d1ff798-e97f-4dad-8e06-48766f60096c"
+   ],
+   "mbRgMbid": "0d1ff798-e97f-4dad-8e06-48766f60096c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發 1987，Discogs master 標 1988；年份取 MB。池中 Petrowsky《Just for Fun》不同盤。"
+  },
+  {
+   "artist": "Pascal von Wroblewsky",
+   "album": "Swinging Pool",
+   "year": 1986,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-vocal",
+   "genres": [
+    "jazz"
+   ],
+   "why": "東德 80 年代最受歡迎的爵士女聲，Amiga Jazz 的主流 swing／bossa 人聲代表。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": -0.2,
+    "z": 0.8,
+    "why": "swing 與 bossa 的柔和人聲，放鬆溫暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/573196",
+    "https://musicbrainz.org/release-group/0ced7491-7ffd-44c3-ab11-c68e00ae82dc"
+   ],
+   "mbRgMbid": "0ced7491-7ffd-44c3-ab11-c68e00ae82dc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 1986，Discogs master 標 1987；年份取 MB。"
+  },
+  {
+   "artist": "Manfred Krug & Modern Jazz Big Band 65",
+   "album": "Manfred Krug Und Die Modern Jazz Big Band 65",
+   "year": 1966,
+   "label": "Amiga",
+   "country": "dd",
+   "faction": "dd-vocal",
+   "genres": [
+    "jazz"
+   ],
+   "why": "東德演員歌手 Krug 與 Modern Jazz Big Band 的爵士人聲首作，把摩登爵士帶向大眾。",
+   "moodGuess": {
+    "x": 3.1,
+    "y": 0.6,
+    "z": 0.8,
+    "why": "大樂團伴奏下的爵士人聲，明亮擺盪"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1167876",
+    "https://musicbrainz.org/release-group/8142a355-6cb0-4488-bb36-da13c7ae3b1a"
+   ],
+   "mbRgMbid": "8142a355-6cb0-4488-bb36-da13c7ae3b1a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Manfred Krug Modern Jazz Big Band 65",
+   "uncertain": "與同組 Modern Jazz Big Band 65 同一樂團但專輯不同。"
+  }
+ ],
+ "notes": [
+  "共 24 張：free 8、主流 6、fusion 5、人聲 5。MB 查得到 21 張，人工身分 3 張（Gumpert Workshop Band、Manfred Schulze Bläser Quintett《Viertens》、Manfred Ludwig-Sextett《Jazz》）。",
+  "country 一律 dd（首發皆 1990 前）。Zentralquartett 首張 LP（Amiga，Discogs 1990）因年份不在 1990 前而未收；Klaus Lenz Jazz & Rock Machine《Fusion》為 1979 西德 Toncooperative 版，歸西德，未收。",
+  "備選（未入提名）：Hannes Zerbe Blech Band（Amiga 1984，MB 1509a6d1）、Jens Gerlach/Friedhelm Schönfeld《Jazz》（Amiga 1968，爵士詩朗誦，MB 650ad85f）、Helmut 'Joe' Sachse《Solo》（Amiga 1989，Discogs master 383520，MB 無）、Günther Fischer《Günther Fischer》（Amiga 1979）、Theo Schumann Combo（1969）、Manfred Schulze Bläser Quintett《Nummer 12》（FMP 1986 現場）。",
+  "Synopsis／Hörmusik／Viertens 等 FMP 相關盤為東德藝人的正規錄音室作；Hörmusik 年份取 MB 1979（Discogs 標 1980 FMP）。",
+  "Rolf Kühn Quintett《Solarius》以 Joachim Kühn 東德時期錄音歸入；封面來源皆為 Discogs master／release 頁（含封面圖），未逐張驗 iTunes；Sommer／Brüning 名稱採國際寫法（不含 Baby）。",
+  "Discogs 對 Joachim Kühn 本人名義的東德盤搜尋無獨立 Amiga LP（其東德時期錄音多為 Rolf 領銜或選集），故 Kühn 僅一張。Günter Sommer／Gumpert 其他 FMP 盤多為西德或 1990 後錄音，未收。",
+  "WebSearch 0 次，全用 MB／Discogs API。"
+ ]
+}

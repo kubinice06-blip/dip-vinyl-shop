@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-01｜dip-vinyl-shop｜鐵幕爵士＋MPS 策展線 eb3（波蘭 60–80 年代）＋eb4（蘇聯 Melodiya＋東德 Amiga）上線 78 張
+
+- **改動**：照 `batch-progress/eastbloc-jazz-20261101/PLAN.md` 跑完兩批（策展 4、研究 5×2、鉤子 2×2、寫作 2×2、主線審稿、試聽、封面目視、三軸、頂點、寫入、子曲風、情緒評分、藝人介紹名冊）。
+  - **eb3**：策展 48 → 主線汰 8 → 上線 40（Polish Jazz／Muza 主流與人聲、70–80 年代 fusion／free）；跳過已在池 0。研究推翻：《Lola》改英國 Decca。試聽 ready 31／unavailable 9；頂點 0；審稿改 3 處（Workoholic hook 事實錯、Sojka「女高音」、卡托維治譯名統一）。
+  - **eb4**：策展 48 → 主線汰 8（含西里爾去重漏抓的已在池 9 張換補）→ 研究汰 5（Krug 現場、Modern Soul Band 流行歌、《Für Fenz》、Ludwig-Sextett 7 吋 EP、Вайнштейн 重發彙編）、補 3 → 上線 38（蘇聯 18、東德 20）。現場例外 3（Hörmusik、Чижик《Reminiscences》、Modern Jazz Big Band 65）。gate 前重查 MB 改釘《Утро Земли》。試聽 ready 7／unavailable 31；頂點 0；審稿改 1 處（Solarius 刪推測句）。
+  - 寫入：card_catalog 78、KV 78 鍵逐字回讀一致、seed 78；寫入前對 origin 全部 `claude/*` 分支 seed 與 eb 卡單去重 0 撞。Discogs 封面 31 張入 registry。冷門軸全走 §0.8 地區錨點制。
+  - 子曲風 78/78 落位（`genre-l3-artist-map.json` 補 36 位）；情緒評分 `score-eb3`／`score-eb4`，錨點 104/104。
+  - 藝人介紹：`roster-eb3.json` 31 位 → ar-d-243、`roster-eb4.json` 31 位 → ar-d-244（state cut），補洞寫作待調度另派。
+  - 合併 main（eb1／eb2／eb5）：產生檔取 main 版後重跑 write-preview／write-pool／registry／Apple 網址／seed-genres／mood／子曲風／抽卡封面；progress.json、genre-l3 JSON 層合併。
+- **主要檔案**：`batch-progress/add-20261101-eb{3,4}/`、`onboarding-manifest-add-20261101-eb{3,4}-20261101.json`、`desc-tools/batches/*/add-20261101-eb{3,4}*`、`batch-progress/mood-cells-20261022/{curation,master}-eb{3,4}*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*`、`data/discogs-cover-registry.json`、`data/mood/*`、`genre-*`、`card-subgenres.json`、`draw-covers/*`、`desc-tools/nonlatin-proper-names.json`（新）、`batch-progress/mood-axes/score-eb{3,4}/`、`batch-progress/artist-intro/roster-eb{3,4}.json`、`desc-tools/batches/artist/{progress.json,cut/ar-d-24{3,4}.txt}`、PLAN.md。
+- **驗證**：兩批 prepare／published gate 皆 0 error（合併 main 後重驗）；qa-batch research／hooks／out 全過（剩被曲名切斷的西里爾專名誤報 2 則）；封面 78 張 HTTP 200＋Discogs 31 張目視；mood 錨點 104/104。
 ### 2026-11-01｜dip-vinyl-shop｜藝人介紹 ar-d-245（鐵幕爵士 eb5：MPS／SABA＋東歐移民西方錄音）上線 21 位
 
 - **結果**：21 位全上架（16 full、5 thin），skipped 0。補洞 3 組 Sonnet（搜尋 99 次）、寫作 2 組 Opus、qa-artist gap／out 皆 0 處；pubIssues 0。

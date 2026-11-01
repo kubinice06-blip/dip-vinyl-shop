@@ -1,0 +1,3109 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-eb4",
+ "batchNote": "薄細項策展線（add-20261101-eb4）",
+ "createdAt": "2026-11-01T12:47:42Z",
+ "albums": [
+  {
+   "artist": "Леонид Чижик",
+   "album": "Reminiscences",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      {
+       "query": "releasegroup:\"Reminiscences\"",
+       "count": 39,
+       "topTitles": [
+        "Reminiscences｜Prisma Circus",
+        "Réminiscences｜Bertrand Loreau",
+        "Reminiscences｜Prague Big BandMilan Svoboda"
+       ]
+      },
+      {
+       "query": "artist:\"Леонид Чижик\" AND releasegroup:\"Reminiscences\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "releasegroup:\"Leonid Chizhik\"",
+       "count": 0,
+       "topTitles": []
+      }
+     ],
+     "checkedAt": "2026-11-01",
+     "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 485894 有完整曲目與封面"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/485894",
+     "https://www.discogs.com/release/3985641"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb4）",
+    "coverSourceHint": "discogs",
+    "exceptionReason": "現場例外：1980 年莫斯科與列寧格勒獨奏音樂會的雙 LP；Чижик 的獨奏即興代表作本來就是音樂會錄音（Ganelin 先例）",
+    "exceptionEvidenceUrls": [
+     "https://www.discogs.com/master/485894",
+     "https://www.discogs.com/release/3985641"
+    ],
+    "aliasReview": "蘇聯主流 bop／modal（Melodiya）：蘇聯後咆勃鋼琴代表人物的個人名義主作，Warren／Waller 題材的精緻鋼琴三重奏｜策展無疑點｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/485894 https://www.discogs.com/release/3985641 https://www.discogs.com/master/485894 https://www.discogs.com/release/3985641",
+    "queryAlias": "Leonid Chizhik；Леонид Чижик Воспоминания"
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "3985641",
+    "url": "https://i.discogs.com/7jOP0pYdG1boQpkZ1BDy0wH0Kmb1CgGSdxfQUqRKSFs/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5ODU2/NDEtMTQ5MjQxMTAz/OS02Njc4LmpwZWc.jpeg",
+    "note": "MB 查無（manual）；Discogs release 3985641：目錄號 С 60—16155-8、年份 1981、廠牌 Мелодия、盤名皆對上；取 images[0]（原盤封面）",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 1,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Melodiya 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 1 偏英語圈不採；經典 4：該國爵士史公認代表作（研究稿）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "他把 Fats Waller 的老歌，拆成九分鐘的變奏。Леонид Чижик（Leonid Chizhik）1947 年生於基希涅夫，這位鋼琴手拆開的老歌是〈Ain't Misbehavin'〉。Harry Warren 的〈September in the Rain〉被他拉得更長，足足 12 分半。整套錄音取自 1980 年莫斯科與列寧格勒兩地的音樂會，1981 年出成雙黑膠，曲目只署名一架鋼琴。早在 1970 年代初，他就已在台上公開彈奏獨奏即興。",
+    "sourceUrls": [
+     "https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D0%B6%D0%B8%D0%BA,_%D0%9B%D0%B5%D0%BE%D0%BD%D0%B8%D0%B4_%D0%90%D1%80%D0%BA%D0%B0%D0%B4%D1%8C%D0%B5%D0%B2%D0%B8%D1%87",
+     "https://en.wikipedia.org/wiki/Leonid_Chizhik",
+     "https://www.discogs.com/release/3985641",
+     "https://www.discogs.com/master/485894"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "Apple 只有《In Concert (Live)》1980 8 軌（Mezhdunarodnaya Kniga），與 Melodiya《Reminiscences》9 軌僅 3 軌同名（Participation／Dedication／Creole Love Call），為不同發行；ru/us/jp/ee/lt 搜尋，藝人目錄另有 Tesseract 2020"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Лембит Саарсалу, Леонид Винцкевич",
+   "album": "Джаз вдвоем",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      {
+       "query": "releasegroup:\"Джаз вдвоем\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "artist:\"Лембит Саарсалу, Леонид Винцкевич\" AND releasegroup:\"Джаз вдвоем\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "releasegroup:\"Two Playing Jazz\"",
+       "count": 0,
+       "topTitles": []
+      }
+     ],
+     "checkedAt": "2026-11-01",
+     "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 970402 有完整曲目與封面"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/970402",
+     "https://www.discogs.com/release/8233305"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "波羅的海爵士（愛沙尼亞）：愛沙尼亞薩克斯風宗師與鋼琴家的雙人 modal 錄音，波羅的海爵士的抒情一端｜⚠ MB 查無 1986 原盤；Discogs 僅 1 個版本｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/970402 https://www.discogs.com/release/8233305 https://www.discogs.com/master/970402 https://www.discogs.com/release/8233305",
+    "queryAlias": "Two Playing Jazz；Lembit Saarsalu & Leonid Vintskevich；Лембит Саарсалу Леонид Винцкевич Джаз вдвоем"
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "8233305",
+    "url": "https://i.discogs.com/kKNZY0-TgDmtTSKf38bR6b3rJh0TTMi-7vMDss4g6us/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyMzMz/MDUtMTQ1NzYzMjM2/MS0yNzczLmpwZWc.jpeg",
+    "note": "MB 查無（manual）；Discogs release 8233305：目錄號 A60 00219 004、年份 1986、廠牌 Мелодия、盤名皆對上；取 images[0]（原盤封面）",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 1,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Melodiya 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 1 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "愛沙尼亞的薩克斯風，對上庫爾斯克的鋼琴。吹奏的 Лембит Саарсалу（Lembit Saarsalu）有「薩克斯風之王」的外號；鋼琴手 Леонид Винцкевич 生於庫爾斯克，是他合作最久的國際搭檔。曲目有兩首 Cole Porter，約 8 分的〈Эстонский диалог〉由 Saarsalu 改編自民謠，1986 年出版。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/8233305",
+     "https://www.discogs.com/master/970402",
+     "https://et.wikipedia.org/wiki/Lembit_Saarsalu",
+     "https://jazzprovince.ru/eng/uchastniki/1996/leonid-vintskevich/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "ru/us/jp/ee/lt 搜尋；Saarsalu 藝人目錄只有 2022《Take My Love》10 軌，與 1986《Джаз вдвоем》6 軌無關"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Каданс",
+   "album": "Иванушка-дурачок",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      {
+       "query": "releasegroup:\"Иванушка-дурачок\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "artist:\"Каданс\" AND releasegroup:\"Иванушка-дурачок\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "releasegroup:\"Ivanushka the Fool\"",
+       "count": 0,
+       "topTitles": []
+      }
+     ],
+     "checkedAt": "2026-11-01",
+     "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 582860 有完整曲目與封面"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/582860",
+     "https://www.discogs.com/release/3546960"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "蘇聯主流 bop／modal（Melodiya）：Lukyanov 領軍的莫斯科室內爵士團，改編 Coltrane 並融入俄式旋律的 modal 代表作｜⚠ 藝人名以團名 Kadans 為主，Lukyanov 為指揮；去重請兩種都查｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/582860 https://www.discogs.com/release/3546960 https://www.discogs.com/master/582860 https://www.discogs.com/release/3546960",
+    "queryAlias": "Ivanushka the Fool；Kadans (German Lukyanov)；Каданс Иванушка-дурачок；Cadence Moscow Chamber Jazz Ensemble"
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "3546960",
+    "url": "https://i.discogs.com/tTUWxzBwzyHQ_gM9xBeux4PNl6z2onY-DZb1gM_iPFU/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1NDY5/NjAtMTQ2Mjc3OTQ4/NS05NTA3LmpwZWc.jpeg",
+    "note": "MB 查無（manual）；Discogs release 3546960：目錄號 C60—17435-6、年份 1982、廠牌 Мелодия、盤名皆對上；取 images[0]（原盤封面）",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 1,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Melodiya 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 1 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "七個人，用管樂的音色疊出大樂團的厚度。吹富魯格號又彈鋼琴的 Герман Лукьянов（German Lukyanov）是團長，樂團是莫斯科的七重奏 Каданс。兩位薩克斯風手兼吹長笛，長號手也兼低音號。六首裡只有開場的〈Наима〉是 John Coltrane 的曲子，長 6 分 56 秒。標題曲〈Иванушка-дурачок〉與〈Белая ворона〉等另外五首，全由 Лукьянов 作曲並指揮。錄音做於 1981 年，唱片等到 1982 年才面市。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3546960",
+     "https://ru.wikipedia.org/wiki/%D0%9B%D1%83%D0%BA%D1%8C%D1%8F%D0%BD%D0%BE%D0%B2,_%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD_%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%D0%B8%D1%87",
+     "https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D0%B6%D0%B8%D0%BA,_%D0%9B%D0%B5%D0%BE%D0%BD%D0%B8%D0%B4_%D0%90%D1%80%D0%BA%D0%B0%D0%B4%D1%8C%D0%B5%D0%B2%D0%B8%D1%87",
+     "https://www.discogs.com/release/3888435",
+     "https://www.discogs.com/master/582860"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "ru/us/jp/ee/lt 西里爾＋拉丁搜尋 Каданс／Cadence／Ivanushka，無任何 Apple 條目"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Алексей Кузнецов, Николай Громин",
+   "album": "Джанго",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      {
+       "query": "releasegroup:\"Джанго\"",
+       "count": 3,
+       "topTitles": [
+        "Джанго｜Чемберлин",
+        "Джанго (osv)｜Metox",
+        "Джанго. Джазовые Композиции｜Алексей КузнецовНиколай Громин"
+       ]
+      },
+      {
+       "query": "artist:\"Алексей Кузнецов, Николай Громин\" AND releasegroup:\"Джанго\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "releasegroup:\"Django\"",
+       "count": 334,
+       "topTitles": [
+        "Django Django｜Django Django",
+        "Django Django｜Django Django",
+        "LateNightTales: Django Django｜Django Django"
+       ]
+      }
+     ],
+     "checkedAt": "2026-11-01",
+     "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 458682 有完整曲目與封面"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/458682",
+     "https://www.discogs.com/release/3752143"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "蘇聯主流 bop／modal（Melodiya）：蘇聯吉他雙人向 Django Reinhardt 致敬的搖擺／吉普賽爵士名盤｜策展無疑點｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/458682 https://www.discogs.com/release/3752143 https://www.discogs.com/master/458682 https://www.discogs.com/release/3752143",
+    "queryAlias": "Django；Alexei Kuznetsov & Nikolai Gromin；Алексей Кузнецов Николай Громин Джанго"
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "3752143",
+    "url": "https://i.discogs.com/AybOQsFZXQ70nvh1ofvQeOdAtwqlYPKZ8_PJ1aCxRJQ/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3NTIx/NDMtMTQ2MjY5MzA3/OS02ODc1LmpwZWc.jpeg",
+    "note": "MB 查無（manual）；Discogs release 3752143：目錄號 33 С 60—11247-48、年份 1978、廠牌 Мелодия、盤名皆對上；取 images[0]（原盤封面）",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 1,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Melodiya 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 1 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "借了 John Lewis 的曲名當盤名，彈的是兩把吉他。Алексей Кузнецов 彈德國 Framus 吉他，搭檔是 Николай Громин。盤名〈Джанго〉原是 John Lewis 寫給 Django Reinhardt 的曲子。曲目另有 Fats Waller 與 Chick Corea 各一首，再加上 Кузнецов 自作、長 9 分鐘的〈Испания〉。兩人 1978 年 5 月錄成，這也是 Кузнецов 頭一回以完整獨奏者身分出唱片。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3752143",
+     "https://www.discogs.com/master/458682",
+     "https://ru.wikipedia.org/wiki/%D0%9A%D1%83%D0%B7%D0%BD%D0%B5%D1%86%D0%BE%D0%B2,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2%D0%B8%D1%87_(%D0%BC%D1%83%D0%B7%D1%8B%D0%BA%D0%B0%D0%BD%D1%82)"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2b/90/10/2b9010d2-1cb1-1d11-28ef-b55268b57a13/mzaf_475196707838856284.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "appleCollectionId": "1768260928",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1768260928「Алексей Кузнецов & Николай Громин《Джанго. Джазовые композиции》」：Melodiya《Джанго. Джазовые композиции》6 軌，逐軌對 Discogs 3752143 6/6（Жимолость…Сент-Луис блюз），℗1978 Мелодия，取第 1 軌〈Жимолость〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tiit Paulus",
+   "album": "Tiit Paulus ja sõbrad",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      {
+       "query": "releasegroup:\"Tiit Paulus ja sõbrad\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "artist:\"Tiit Paulus\" AND releasegroup:\"Tiit Paulus ja sõbrad\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "releasegroup:\"Тийт Паулус и друзья\"",
+       "count": 0,
+       "topTitles": []
+      }
+     ],
+     "checkedAt": "2026-11-01",
+     "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 472651 有完整曲目與封面"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/472651",
+     "https://www.discogs.com/release/3888435"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "波羅的海爵士（愛沙尼亞）：愛沙尼亞大提琴／貝斯手的朋友班底錄音，modal 與 jazz-funk 混合的塔林爵士代表｜⚠ 池中無 Tiit Paulus 其他作品｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/472651 https://www.discogs.com/release/3888435 https://www.discogs.com/master/472651 https://www.discogs.com/release/3888435",
+    "queryAlias": "Тийт Паулус и друзья"
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "3888435",
+    "url": "https://i.discogs.com/aki6SSow7r7hfsmxOm5UYyPn5sP0bO_Fr9rDSAc3sH8/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4ODg0/MzUtMTM0ODE2MDMx/My00MTc0LmpwZWc.jpeg",
+    "note": "MB 查無（manual）；Discogs release 3888435：目錄號 С60—15457-8、年份 1981、廠牌 Мелодия、盤名皆對上；取 images[0]（原盤封面）",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 12,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 12）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Melodiya 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 12 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "同一面上，並排著一對父子寫的曲子。領銜的 Tiit Paulus 是塔林的爵士吉他手，曲子並排的是 B 面。父親 Uno Naissoo 寫了〈Pastorale〉，兒子、電鋼琴手 Tõnu Naissoo 寫了〈Janne〉。Uno Naissoo 是愛沙尼亞作曲家，1980 年 1 月 5 日，他在塔林去世；同一年，這張就在塔林錄音室灌成。A 面收了 Charlie Parker 的〈Moose the Mooche〉，改用單簧管吹奏。唱片 1981 年問世。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3888435",
+     "https://musicbrainz.org/artist/04a37a07-9fcc-4bd2-ba30-e4ad624f6800",
+     "https://www.discogs.com/master/472651",
+     "https://en.wikipedia.org/wiki/Uno_Naissoo",
+     "https://et.wikipedia.org/wiki/Lembit_Saarsalu"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "ee/ru/us/jp 搜尋；Tiit Paulus 藝人目錄（en/ru/Instrumentaalansambel）無 1981 Melodiya 專輯"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Džässkvartett «Tallinn»",
+   "album": "Džässkvartett «Tallinn»",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      {
+       "query": "releasegroup:\"Džässkvartett «Tallinn»\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "artist:\"Džässkvartett «Tallinn»\" AND releasegroup:\"Džässkvartett «Tallinn»\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "releasegroup:\"Джаз-квартет Таллин\"",
+       "count": 0,
+       "topTitles": []
+      }
+     ],
+     "checkedAt": "2026-11-01",
+     "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 816329 有完整曲目與封面"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/816329",
+     "https://www.discogs.com/release/11814346"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "波羅的海爵士（愛沙尼亞）：愛沙尼亞 cool 派四重奏唯一專輯，北歐式冷靜抒情｜策展無疑點｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/816329 https://www.discogs.com/release/11814346 https://www.discogs.com/master/816329 https://www.discogs.com/release/11814346",
+    "queryAlias": "Джаз-квартет Таллин；Tallinn Jazz Quartet",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "11814346",
+    "url": "https://i.discogs.com/olD5PQ0BIl7TFrvLG74SsNujJN4WG7XKQNf2wmYuo6Y/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODE0/MzQ2LTE1MjI5NDI1/NTItMjAzMC5qcGVn.jpeg",
+    "note": "MB 查無（manual）；Discogs release 11814346：目錄號 С60 19783 007、年份 1983、廠牌 Мелодия、盤名皆對上；取 images[0]（原盤封面）",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Melodiya 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 查無 偏英語圈不採"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "那首〈Kuukiired〉，也是電視台替團長拍的紀錄片片名。這支塔林四重奏由 Lembit Saarsalu 帶領，紀錄片拍的團長就是他。〈Kuukiired〉的作曲者是 Jimmy Van Heusen，同名紀錄片完成於 1982 年，唱片則晚一年，在 1983 年上市。編制是薩克斯風配吉他、低音提琴與鼓，八首以抒情中板為主。吉他手 Tiit Paulus 寫了〈Melanhoolne valss〉，Saarsalu 自己寫了〈Muretu lapsepõlv〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/11814346",
+     "https://www.discogs.com/master/816329",
+     "https://et.wikipedia.org/wiki/Lembit_Saarsalu",
+     "https://en.wikipedia.org/wiki/Uno_Naissoo"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "ru/us/jp/ee/lt 西里爾＋愛沙尼亞文＋拉丁搜尋，無 Apple 條目"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Джазовый ансамбль Игоря Бриля",
+   "album": "Утро Земли",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "bcd22c9b-68b4-42b8-ad52-610e9950fad1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "fusion／jazz-rock（Arsenal、Allegro 等）：Bril 領軍的 fusion 代表作，帶巴爾幹民謠與自由即興段｜策展無疑點｜MB release-group bcd22c9b-68b4-42b8-ad52-610e9950fad1：title「Утро Земли」、Album、first-release-date（空）、artist-credit「Джазовый ансамбль Игоря Бриля」；release 為 Мелодия 33 С60—11295-6（SU）。gate 前主線重查 MB 改釘住。證據：https://www.discogs.com/master/468140 https://www.discogs.com/release/3846778",
+    "queryAlias": "Morning of the Earth；Igor Bril Jazz Ensemble；Джазовый ансамбль Игоря Бриля Утро Земли；Utro Zemli"
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "3846778",
+    "url": "https://i.discogs.com/O4iUW6xcEIOotoF870LvXHKg61hxq2BwscHR5kQhFqQ/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NDY3/NzgtMTQ5OTg0MTQz/NS00Njg2LmpwZWc.jpeg",
+    "note": "MB 查無（manual）；Discogs release 3846778：目錄號 33 С60-11295-96、年份 1978、廠牌 Мелодия、盤名皆對上；取 images[0]（原盤封面）",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 24,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 24）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Melodiya 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 24 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "開場曲出自薩克斯風手，其餘五首是團長寫的。莫斯科出生的團長畢業於 Gnessin 音樂師範學院鋼琴系，他是 Игорь Бриль。開場〈Улица без конца〉的作者，是在團裡待了 18 年的首席獨奏。〈Балканский орнамент〉則是團長寫的其中一首。聲音走 fusion 與 jazz-funk，中間帶自由即興，1978 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3846778",
+     "https://www.discogs.com/master/468140",
+     "https://ru.wikipedia.org/wiki/%D0%91%D1%80%D0%B8%D0%BB%D1%8C,_%D0%98%D0%B3%D0%BE%D1%80%D1%8C_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87",
+     "https://musicbrainz.org/release-group/bcd22c9b-68b4-42b8-ad52-610e9950fad1"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "ru/us/jp/ee/lt 西里爾＋拉丁搜尋 Igor Bril／Утро Земли，無 Apple 條目"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Аллегро",
+   "album": "Sphinx",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b3a1552f-6d4c-4313-b045-76b51adb9eba",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "fusion／jazz-rock（Arsenal、Allegro 等）：Levinovsky 的 Allegro 巔峰，Mobile Fidelity 後來也發行日版，是蘇聯 fusion 的海外代表｜⚠ MB 條目藝人為 Allegro Jazz Ensemble（1986 Sphinx，已核對）｜MB release-group b3a1552f-6d4c-4313-b045-76b51adb9eba：title「Sphinx」、Album、first-release-date 1986、artist-credit「Allegro Jazz Ensemble」。證據：https://musicbrainz.org/release-group/b3a1552f-6d4c-4313-b045-76b51adb9eba https://www.discogs.com/master/555403 https://www.discogs.com/release/8651302",
+    "queryAlias": "Allegro (Nikolai Levinovsky)；Аллегро Сфинкс；Allegro Jazz Ensemble"
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b3a1552f-6d4c-4313-b045-76b51adb9eba/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 0,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 0）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Melodiya 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 0 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "八人樂團裡，有位 1961 年生的年輕薩克斯風手。曲子全出自鋼琴手兼團長 Николай Левиновский（Nikolai Levinovsky），樂團叫 Аллегро。那位薩克斯風手是生於列寧格勒的 Игорь Бутман（Igor Butman）。八人裡另有長號、小號兼富魯格號、鼓與打擊，還有一位合成器手。標題曲〈Сфинкс〉有 9 分 46 秒，B 面收 13 分 44 秒的音樂會組曲〈Портреты друзей〉。錄音與出版都落在 1986 年。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/8651302",
+     "https://www.discogs.com/master/555403",
+     "https://jazz.com/encyclopedia/levinovsky-nick-nikolay-jacovlevich",
+     "https://www.discogs.com/artist/461080",
+     "https://en.wikipedia.org/wiki/Viatcheslav_Nazarov",
+     "https://en.wikipedia.org/wiki/Sphinx_(album)",
+     "https://musicbrainz.org/release-group/b3a1552f-6d4c-4313-b045-76b51adb9eba"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "Apple jp 1655085834《Nikolai Levinovsky: Sphinx》℗1987 Melodiya 僅 3 軌（Sphinx／Triptych／Portraits of Friends），與 MB 1986 九軌（In the World 四樂章、Legend 三樂章）內容不同，僅 Sphinx 同名，不配"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ВИА Севиль",
+   "album": "Севиль",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      {
+       "query": "releasegroup:\"Севиль\"",
+       "count": 1,
+       "topTitles": [
+        "Севиль - Sevil｜ВИА Севиль"
+       ]
+      },
+      {
+       "query": "artist:\"ВИА Севиль\" AND releasegroup:\"Севиль\"",
+       "count": 1,
+       "topTitles": [
+        "Севиль - Sevil｜ВИА Севиль"
+       ]
+      },
+      {
+       "query": "releasegroup:\"Sevil\"",
+       "count": 4,
+       "topTitles": [
+        "Sevil｜Sevil",
+        "Севиль - Sevil｜ВИА Севиль",
+        "Semeni / Sevil Neşelen｜Nesrin Sipahi"
+       ]
+      }
+     ],
+     "checkedAt": "2026-11-01",
+     "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 696229 有完整曲目與封面"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/696229",
+     "https://www.discogs.com/release/5241431"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "民謠融合（mugham、愛沙尼亞民謠）：Vagif Mustafazadeh 領軍的人聲樂團，mugham 與 jazz-funk 並置的民謠融合｜⚠ VIA（人聲器樂團）；Mustafazadeh 為藝術指導，歸藝人以團名較穩｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/696229 https://www.discogs.com/release/5241431 https://www.discogs.com/master/696229 https://www.discogs.com/release/5241431",
+    "queryAlias": "Sevil；Sevil Ensemble (Vagif Mustafazadeh)；Вокально-инструментальный ансамбль Севиль；VIA Sevil"
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "5241431",
+    "url": "https://i.discogs.com/R4LmOyIB1Dd2vLM9KI_kPhOy_lNLRXraIpvHgQ-w5S4/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUyNDE0/MzEtMTQzMDY1MTQ1/Mi03MDg2LmpwZWc.jpeg",
+    "note": "MB 查無（manual）；Discogs release 5241431：目錄號 33 С60-10157-58、年份 1978、廠牌 Мелодия、盤名皆對上；取 images[0]（原盤封面）",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 59,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 59）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Melodiya 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 59 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "被嫌太前衛的鋼琴手，改帶一支人聲器樂團。ВИА Севиль 1971 年成立，以亞塞拜然國家電視廣播為基地。那位鋼琴手是 Вагиф Мустафазаде（Vagif Mustafazadeh），他的實驗對當局太前衛，被建議改做更易接受的計畫。他帶這支團到 1977 年，1978 年才出了這張，歌用亞塞拜然語唱，B 面還有一首就叫〈Мугам〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5241431",
+     "https://www.discogs.com/master/696229",
+     "https://www.discogs.com/artist/949241",
+     "https://www.discogs.com/artist/3617579",
+     "https://en.wikipedia.org/wiki/Vagif_Mustafazadeh",
+     "https://en.wikipedia.org/wiki/Jazz_mugham",
+     "https://www.stampthewax.com/2020/09/08/a-brief-history-of-azerbaijanian-soviet-jazz-funk/",
+     "https://doctorhead.ru/product/vagif_mustafazade_via_sevil_lp/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a1/6a/31/a16a3139-e5c6-6f3d-9b19-c48f80c3de80/mzaf_2558493318296752198.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "appleCollectionId": "1508154767",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1508154767「Севиль《Ансамбль \"Севиль\" п/у Вагифа Мустафа-заде》」：Melodiya《Ансамбль Севиль п/у Вагифа Мустафа-заде》8 軌，逐軌對 Discogs 5241431 8/8（Дороги…Сегодняшний день），℗1978 Мелодия，取第 1 軌〈Дороги〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lembit Saarsalu kvartett",
+   "album": "2 x Labajalg",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "441a7ba4-a2e6-43b7-ab9b-317d44b39f40",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "民謠融合（mugham、愛沙尼亞民謠）：愛沙尼亞薩克斯風宗師的四重奏，把民謠舞曲 labajalg 改編為爵士的代表錄音｜⚠ MB 日期 1981，Discogs 版面 1980；填 1980｜MB release-group 441a7ba4-a2e6-43b7-ab9b-317d44b39f40：title「2 x Labajalg」、Album、first-release-date 1981、artist-credit「Lembit Saarsalu kvartett」。證據：https://musicbrainz.org/release-group/441a7ba4-a2e6-43b7-ab9b-317d44b39f40 https://www.discogs.com/master/897800 https://www.discogs.com/release/2791041",
+    "queryAlias": "2 x Rustic Waltz；Lembit Saarsalu Quartet；Lembit Saarsalu kvartett 2 x Labajalg；Лембит Саарсалу"
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/441a7ba4-a2e6-43b7-ab9b-317d44b39f40/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 14,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 14）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Melodiya 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 14 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "團名寫著四重奏，盤上卻有七個人。帶團的 Lembit Saarsalu 自學薩克斯風，身旁有鋼琴兼管風琴、吉他、低音提琴與打擊。多出來的是 Paul Mägi 的小提琴，以及 Dunja Trofimova 的人聲客串。labajalg 是愛沙尼亞民間舞，3/4 拍、重音落在第一拍；A 面的〈Avage Viru Väravad〉把民謠舞曲改成了爵士。B 面另有一段以 Luiz Bonfá 為題的即興。這張盤 1980 年推出。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2791041",
+     "https://www.discogs.com/master/897800",
+     "https://www.discogs.com/artist/801333",
+     "https://et.wikipedia.org/wiki/Lembit_Saarsalu",
+     "https://www.discogs.com/artist/1037109",
+     "https://www.discogs.com/artist/3608603",
+     "https://www.discogs.com/artist/1315715",
+     "https://musicbrainz.org/release-group/441a7ba4-a2e6-43b7-ab9b-317d44b39f40"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "ee/ru/us/jp/lt 搜尋；Saarsalu 兩個藝人目錄（拉丁／西里爾）僅 Take My Love 2022，無 2 x Labajalg"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Владимир Тарасов",
+   "album": "Atto",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      {
+       "query": "releasegroup:\"Atto\"",
+       "count": 36,
+       "topTitles": [
+        "Atto｜Osvaldo Coluccino",
+        "Atto I - Atto II｜Ovskum",
+        "Atto d'amore｜Serge Santiágo"
+       ]
+      },
+      {
+       "query": "artist:\"Владимир Тарасов\" AND releasegroup:\"Atto\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "releasegroup:\"Vladimir Tarasov\"",
+       "count": 0,
+       "topTitles": []
+      }
+     ],
+     "checkedAt": "2026-11-01",
+     "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 816461 有完整曲目與封面"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/816461",
+     "https://www.discogs.com/release/6633011"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "自由／前衛爵士：Ganelin Trio 鼓手的打擊樂獨奏，Atto 系列首作，單面一首長篇｜⚠ Atto II（1987）等後續僅在池外；本組只提首作｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/816461 https://www.discogs.com/release/6633011 https://www.discogs.com/master/816461 https://www.discogs.com/release/6633011",
+    "queryAlias": "Vladimir Tarasov；Владимир Тарасов Atto；Atto I"
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "6633011",
+    "url": "https://i.discogs.com/TrBWUgLZNrVsu6i292OAll1VlGl_SOtkTuVIr3lnyoE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY2MzMw/MTEtMTY1MjY5NDQ1/MC0yNjUyLmpwZWc.jpeg",
+    "note": "MB 查無（manual）；Discogs release 6633011：目錄號 С60 23565 004、年份 1986、廠牌 Мелодия、盤名皆對上；取 images[0]（原盤封面）",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 1,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Melodiya 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 1 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Ganelin 三重奏的鼓手，一個人錄滿兩面。Владимир Тарасов（Vladimir Tarasov）身兼鼓手、作曲家與影像藝術家，1971 至 1986 年是 Ganelin–Tarasov–Chekasin 三重奏的成員。他動用的有鼓、talking drum、tam-tam、鑼、鐘琴、木魚與 cowbell，另外還吹小號。兩面各是一首約 19 分鐘的長篇。錄音在 1984 年，那年他開始演奏打擊獨奏；唱片 1986 年出版，是 Atto 系列的第一張。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/6633011",
+     "https://www.discogs.com/master/816461",
+     "https://www.mic.lt/en/persons/tarasov",
+     "https://english.lithuanianculture.lt/?p=7220"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "Apple 的 ATTO I（2 軌共約 36 分，Vilnius 錄音室 ℗1984）與 ATTO II（Monotypes，8 軌，℗1986）為分開的獨立專輯，時長與分軌都對不上 Melodiya《Atto》A1/B1 各約 19 分的 2 軌，不配"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Архангельск",
+   "album": "Призраки старого города",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      {
+       "query": "releasegroup:\"Призраки старого города\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "artist:\"Архангельск\" AND releasegroup:\"Призраки старого города\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "releasegroup:\"Ghosts of the Old Town\"",
+       "count": 0,
+       "topTitles": []
+      }
+     ],
+     "checkedAt": "2026-11-01",
+     "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 383697 有完整曲目與封面"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/383697",
+     "https://www.discogs.com/release/3088180"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "自由／前衛爵士：Rezitsky 帶領的 Arkhangelsk 樂團，1987 年愛沙尼亞電台錄音，兩面長篇自由即興｜⚠ 1990 發行、1987 錄音；若 1991 前首發定義嚴格也符｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/383697 https://www.discogs.com/release/3088180 https://www.discogs.com/master/383697 https://www.discogs.com/release/3088180",
+    "queryAlias": "Ghosts of the Old Town；Arkhangelsk (Vladimir Rezitsky)；Архангельск Призраки старого города；Prizraki starogo goroda"
+   },
+   "research": {
+    "suggestedYear": 1990,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "3088180",
+    "url": "https://i.discogs.com/sqaEleUhHEly5Lhfv6rZV6fy31qhq2DaVrGO0fH2vYo/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwODgx/ODAtMTQ1NjUwNzg0/NS0yODQ3LmpwZWc.jpeg",
+    "note": "MB 查無（manual）；Discogs release 3088180：目錄號 С60 28963 004、年份 1990、廠牌 Мелодия、盤名皆對上；取 images[0]（原盤封面）",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 9,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 9）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Melodiya 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 9 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "近北極的城市，被說成真正的俄羅斯紐奧良。Архангельск 是 Владимир Резицкий（Vladimir Rezitsky）創辦的自由爵士團。他婉拒加入其他名團，留在家鄉阿爾漢格爾斯克組團，這句評語出自 Leo Feigin。愛沙尼亞電台 1987 年替他們錄音，三年後的 1990 年才出版；兩面各一段長篇，口琴、tuba、小提琴輪流出現。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3088180",
+     "https://www.discogs.com/master/383697",
+     "https://www.discogs.com/artist/761263",
+     "https://www.theransomnote.com/music/8-tracks/8-tracks-of-experimental-russian-jazz-with-gost-zvuk",
+     "https://aonb.ru/upload/rs/bibliografija/rezickij.pdf",
+     "https://www.discogs.com/artist/761222"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "ru/us/jp/ee/lt 搜尋，藝人目錄查無 Архангельск，無 Apple 條目"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tatevik Oganesyan",
+   "album": "Day Dream",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9a379380-372d-421f-9364-aa81ab641a99",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "人聲：亞美尼亞爵士歌手唱 Ellington／Gershwin 標準曲，蘇聯最受肯定的人聲爵士專輯之一｜⚠ Discogs 與 MB 姓名拼法 Hovanesian/Oganesyan，用 Hovhannisyan 為通行寫法｜MB release-group 9a379380-372d-421f-9364-aa81ab641a99：title「Day Dream」、Album、first-release-date 1986、artist-credit「Tatevik Oganesyan」。證據：https://musicbrainz.org/release-group/9a379380-372d-421f-9364-aa81ab641a99 https://www.discogs.com/master/470993 https://www.discogs.com/release/7388369",
+    "queryAlias": "Tatevik Hovhannisyan；Tatevik Oganesyan Дневные мечты"
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9a379380-372d-421f-9364-aa81ab641a99/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 9,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 9）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Melodiya 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 9 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "人稱「來自埃里溫的 Ella」，這裡全用英語唱。唱的 Tatevik Oganesyan 出身亞美尼亞，被視為蘇聯最好的爵士歌手之一。她另有「Lady Jazz」「爵士女王」等外號。九首都是標準曲，從 Ellington 一派的〈Mood Indigo〉〈Day Dream〉到 Monk 的〈Round About Midnight〉。伴奏的爵士樂團裡，有愛沙尼亞吉他手 Tiit Paulus。錄音橫跨 1984 與 1985 兩年，1986 年出版。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7388369",
+     "https://www.discogs.com/master/470993",
+     "https://www.discogs.com/artist/1104695",
+     "https://www.discogs.com/artist/2856728",
+     "https://hetq.am/en/author/143",
+     "https://musicbrainz.org/release-group/9a379380-372d-421f-9364-aa81ab641a99"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "ru/us/jp/ee/lt 搜尋；Татевик Оганесян 藝人目錄無專輯（lookup 空）"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Владимир Чекасин",
+   "album": "Prisiminimai",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      {
+       "query": "releasegroup:\"Prisiminimai\"",
+       "count": 4,
+       "topTitles": [
+        "Prisiminimai｜Irena Starošaitė",
+        "Prisiminimai｜Geltona",
+        "Vasaros Prisiminimai｜Vytautas Šiškauskas"
+       ]
+      },
+      {
+       "query": "artist:\"Владимир Чекасин\" AND releasegroup:\"Prisiminimai\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "releasegroup:\"The Memoirs\"",
+       "count": 11,
+       "topTitles": [
+        "The Memoirs of an Outlaw｜Abigail Hopkins",
+        "The Memoirs of Sherlock Holmes｜Sir Arthur Conan Doyle",
+        "The Memoirs of Sherlock Holmes｜Sir Arthur Conan DoyleDerek Jacobi"
+       ]
+      }
+     ],
+     "checkedAt": "2026-11-01",
+     "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 571676 有完整曲目與封面"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/571676",
+     "https://www.discogs.com/release/1614497"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "自由／前衛爵士：Chekasin 在立陶宛錄製的五段式組曲，個人名義另一高峰，自由爵士與拼貼並用｜⚠ 池中已有 Chekasin Nomen Nescio｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/571676 https://www.discogs.com/release/1614497 https://www.discogs.com/master/571676 https://www.discogs.com/release/1614497",
+    "queryAlias": "The Memoirs；Vladimir Chekasin；Владимир Чекасин Воспоминания"
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "1614497",
+    "url": "https://i.discogs.com/GQhYmRXN6L-wHlR6TZ8cQk9279poaF4nO8OvOLiNT9Y/rs:fit/g:sm/q:90/h:586/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MTQ0/OTctMTIzNTQ3NTU5/NC5qcGVn.jpeg",
+    "note": "MB 查無（manual）；Discogs release 1614497：目錄號 С60 23447 000、年份 1986、廠牌 Мелодия、盤名皆對上；取 images[0]（原盤封面）",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Melodiya 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 查無 偏英語圈不採"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Чекасин 的四重奏，把五段組曲寫成「回憶錄」。1971 年起住在立陶宛的 Владимир Чекасин（Vladimir Chekasin）在藝術學院任教，主奏薩克斯風。盤名用立陶宛語、俄語、英語並列成 Prisiminimai、Воспоминания、The Memoirs，整部組曲共 40 分 27 秒。他包辦薩克斯風、單簧管與長笛，也操作合成器；另一位鍵盤手彈合成器與鋼琴，再加上低音與打擊。錄音完成於 1985 年，1986 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1614497",
+     "https://www.discogs.com/artist/345803",
+     "https://jazzhistory.lt/en/9/tekstai",
+     "https://www.discogs.com/artist/761260",
+     "https://www.discogs.com/artist/1394276",
+     "https://www.discogs.com/master/571676"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "ru/us/jp 搜尋；Chekasin 目錄只有 Aspect Ratio 2020、La Grande Sonata 2020、Golden Years of the Soviet New Jazz Vol.3（Leo 合輯），無 Prisiminimai"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Константин Петросян, Татевик Оганесян, Биг-бэнд Владимира Чекасина",
+   "album": "Концерт для голоса и оркестра",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      {
+       "query": "releasegroup:\"Концерт для голоса и оркестра\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "artist:\"Константин Петросян, Татевик Оганесян, Биг-бэнд Владимира Чекасина\" AND releasegroup:\"Концерт для голоса и оркестра\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "releasegroup:\"Concerto for Voice and Orchestra\"",
+       "count": 0,
+       "topTitles": []
+      }
+     ],
+     "checkedAt": "2026-11-01",
+     "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 523201 有完整曲目與封面"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/523201",
+     "https://www.discogs.com/release/8223014"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "人聲：Chekasin 大樂團與兩位人聲的兩面長篇，蘇聯少見的人聲＋前衛大樂團寫作｜⚠ 藝人欄含三方名義，建卡時可簡為 Chekasin Big-Band；2 曲長篇｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/523201 https://www.discogs.com/release/8223014 https://www.discogs.com/master/523201 https://www.discogs.com/release/8223014",
+    "queryAlias": "Concerto for Voice and Orchestra；Konstantin Petrosian, Tatevik Hovhannisyan & Vladimir Chekasin Big-Band；Константин Петросян Татевик Оганесян Биг-бэнд Владимира Чекасина Концерт для голоса и оркестра"
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "8223014",
+    "url": "https://i.discogs.com/NCDVKXAF0ohbG0RA-BABe0qPptYPm2e1gk08Wb_nzW4/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyMjMw/MTQtMTQ1NzQ0MTE3/NS0yOTk2LmpwZWc.jpeg",
+    "note": "MB 查無（manual）；Discogs release 8223014：目錄號 С60 24479 009、年份 1986、廠牌 Мелодия、盤名皆對上；取 images[0]（原盤封面）",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Melodiya 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 查無 偏英語圈不採"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "別的大樂團都婉拒了，這部協奏曲轉往立陶宛。作曲兼彈鋼琴的是埃里溫出身的 Константин Петросян，作品為歌手 Татевик Оганесян 而寫。Liudas Šaltenis 出主意找 Владимир Чекасин 的樂團，首演在考那斯與維爾紐斯。那是立陶宛國家音樂學院爵士樂團，由 Чекасин 指揮。作品把亞美尼亞聖詠 sharakan 接上大樂團的現代語彙，一部曲子跨兩面，B 面標著〈（Окончание）〉。全盤在 1986 年面世。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/8223014",
+     "https://www.discogs.com/master/523201",
+     "https://jazzhistory.lt/en/9/tekstai",
+     "https://en.wikipedia.org/wiki/Konstantin_Petrossian",
+     "https://www.discogs.com/artist/2856728"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "ru/us/jp 搜尋；Chekasin／Петросян／Оганесян 目錄皆無此專輯"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Petras Vyšniauskas Quartet",
+   "album": "Ieškojimai ir atradimai",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      {
+       "query": "releasegroup:\"Ieškojimai ir atradimai\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "artist:\"Petras Vyšniauskas Quartet\" AND releasegroup:\"Ieškojimai ir atradimai\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "releasegroup:\"Searchings and Discoveries\"",
+       "count": 0,
+       "topTitles": []
+      }
+     ],
+     "checkedAt": "2026-11-01",
+     "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 386535 有完整曲目與封面"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/386535",
+     "https://www.discogs.com/release/2962234"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "波羅的海爵士（愛沙尼亞）：立陶宛薩克斯風手 Vyšniauskas 領軍的四重奏，把立陶宛民謠主題與巴爾幹節奏改編為自由爵士｜策展無疑點｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/386535 https://www.discogs.com/release/2962234 https://www.discogs.com/master/386535 https://www.discogs.com/release/2962234",
+    "queryAlias": "Searchings and Discoveries；Jazz Quartet Led By Petras Vyšniauskas"
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "2962234",
+    "url": "https://i.discogs.com/KWKQTd3vkdkB7qNcpThdTqbbD0zFWqzFXq00Strl6uQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5NjIy/MzQtMTM3OTA1NTky/My03NTM2LmpwZWc.jpeg",
+    "note": "MB 查無（manual）；Discogs release 2962234：目錄號 С60 21387 001、年份 1984、廠牌 Мелодия、盤名皆對上；取 images[0]（原盤封面）",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Melodiya 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 查無 偏英語圈不採；經典 4：該國爵士史公認代表作（研究稿）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一首立陶宛民謠，撐起 A 面整整 19 分鐘。Petras Vyšniauskas 說自己在立陶宛民謠裡聽見 Coltrane 的回聲，他在四重奏裡負責薩克斯風。A 面 19 分 10 秒的長篇，以民謠〈When I Grew at My Dear Mother〉為主題。前景是雙薩克斯風：Vyšniauskas 吹高音與次中音，Vytautas Labutis 吹次中音，底下只有電貝斯與打擊樂。1983 年在維爾紐斯錄成的這張，1984 年才發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2962234",
+     "https://www.discogs.com/master/386535",
+     "https://jazzhistory.lt/en/10/tekstai",
+     "https://en.wikipedia.org/wiki/Petras_Vy%C5%A1niauskas"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "lt/ru/us/jp 搜尋；Vyšniauskas 目錄只有 Leo Records 合輯、Trio Alliance 等，無 Ieškojimai ir atradimai"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Джаз-хорал Александра Киладзе",
+   "album": "Джаз-хорал Александра Киладзе",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      {
+       "query": "releasegroup:\"Джаз-хорал Александра Киладзе\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "artist:\"Джаз-хорал Александра Киладзе\" AND releasegroup:\"Джаз-хорал Александра Киладзе\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "releasegroup:\"Jazz Choral\"",
+       "count": 0,
+       "topTitles": []
+      }
+     ],
+     "checkedAt": "2026-11-01",
+     "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 3568505 有完整曲目與封面"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/3568505",
+     "https://www.discogs.com/release/5324042"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "民謠融合（mugham、愛沙尼亞民謠）：喬治亞作曲家 Kiladze 把喬治亞合唱傳統與 swing 爵士結合的人聲＋樂團專輯，喬治亞爵士罕見的錄音室盤｜⚠ Georgian 派系唯一一張；Tbilisi 錄音室盤｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/3568505 https://www.discogs.com/release/5324042 https://www.discogs.com/master/3568505 https://www.discogs.com/release/5324042",
+    "queryAlias": "Jazz Choral；Aleksandre Kiladze's Jazz Choral；Kiladze Jazz Chorale",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "5324042",
+    "url": "https://i.discogs.com/QkgHPSwEIzok2WR3uMr3mUtIc3onuuSAaug6NcqFlAA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUzMjQw/NDItMTM5MDU2ODY2/OC05MDEzLmpwZWc.jpeg",
+    "note": "MB 查無（manual）；Discogs release 5324042：目錄號 С60 26343 003、年份 1987、廠牌 Мелодия、盤名皆對上；取 images[0]（原盤封面）",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 15,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 15）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Melodiya 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 15 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "人聲十一人，疊在鋼琴、貝斯、鼓與薩克斯風上。Джаз-хорал Александра Киладзе 1985 年在喬治亞成軍，是一支爵士合唱團。聲部是四女高音、兩女中音、兩男高音、兩男中低音與一男低音。原創曲多由喬治亞詞作者配詞，例如〈Апрель в Тбилиси〉與〈Гимн солнцу〉。全長約 30 分鐘的這張 1987 年出版，也是他們在 Melodiya 唯一的一張。2024 年 2 月 5 日，Tbilisi Records 把它重發，列為廠牌首張發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5324042",
+     "https://www.soundohm.com/product/aleksandre-kiladze-s-jazz",
+     "https://oye-records.com/releases/aleksandre-kiladzes-jazz-choral-aleksandre-kiladzes-jazz-choral",
+     "https://www.discogs.com/master/3568505"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/27/79/d92779e6-d45e-0574-4339-82362f95f62f/mzaf_14439733185867404669.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "appleCollectionId": "1889117194",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1889117194「Джаз-хорал Александра Киладзе《Джаз-хорал Александра Киладзе》」：Melodiya《Джаз-хорал Александра Киладзе》9 軌，逐軌對 Discogs 5324042 9/9，℗1988 Мелодия（Discogs 年份 1987），取第 1 軌〈Счастливое утро〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Джазовый ансамбль Игоря Бриля",
+   "album": "Оркестр приехал",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "044d8886-7116-4daf-ad12-9bcf37804e1e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "fusion／jazz-rock（Arsenal、Allegro 等）：Bril 領軍的 Afro-Cuban 與 jazz-funk 風格作品，第二個高峰（與《Утро Земли》不同路線）｜策展無疑點｜MB release-group 044d8886-7116-4daf-ad12-9bcf37804e1e：title「Оркестр приехал」、Album、first-release-date 1980、artist-credit「Джазовый ансамбль Игоря Бриля」。證據：https://musicbrainz.org/release-group/044d8886-7116-4daf-ad12-9bcf37804e1e https://www.discogs.com/master/497228 https://www.discogs.com/release/5233837",
+    "queryAlias": "An Orchestra Came；Igor Bril Jazz Ensemble；Игорь Бриль Оркестр приехал；Jazz Ensemble Directed By Igor Brill"
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/044d8886-7116-4daf-ad12-9bcf37804e1e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 51,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 51）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Melodiya 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 51 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "低音號、Elka 電鋼琴，再加兩位拉丁打擊手。這支莫斯科的爵士合奏團走 Afro-Cuban 與 jazz-funk，團長 Игорь Бриль 自己兼彈 Elka 與合成器，在三角鋼琴與電鋼琴上各有獨奏。團裡另有兩名薩克斯風手、低音號、鼓與電貝斯，邦哥鼓與康加鼓則交給那兩位拉丁打擊手。A1〈В Кубинских Ритмах〉掛名 Kenny Dorham 與團長，B 面三首都是團長自作。盤名意為「樂團來了」，1980 年發行，錄於全蘇錄音室。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5233837",
+     "https://ru.wikipedia.org/wiki/%D0%91%D1%80%D0%B8%D0%BB%D1%8C,_%D0%98%D0%B3%D0%BE%D1%80%D1%8C_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87",
+     "https://www.discogs.com/master/497228",
+     "https://www.philharmonia.spb.ru/en/persons/biography/57664",
+     "https://musicbrainz.org/release-group/044d8886-7116-4daf-ad12-9bcf37804e1e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "ru/us/jp/ee/lt 西里爾＋拉丁搜尋，無 Apple 條目"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Synopsis",
+   "album": "Synopsis",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c08058fa-c56a-4533-85f0-d9eeddbacc78",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "東德自由／前衛爵士：Petrowsky、Bauer、Gumpert、Sommer 四人首度同台的 Amiga 錄音，東德自由爵士的奠基盤，後來的 Zentralquartett 即由此而來。｜策展無疑點｜MB release-group c08058fa-c56a-4533-85f0-d9eeddbacc78：title「Synopsis」、Album、first-release-date 1974、artist-credit「Synopsis - Ernst-Ludwig Petrowsky, Conrad Bauer, Ulrich Gumpert, Günter Sommer」。證據：https://www.discogs.com/master/471258 https://musicbrainz.org/release-group/c08058fa-c56a-4533-85f0-d9eeddbacc78",
+    "queryAlias": "Synopsis Petrowsky Bauer Gumpert Sommer；Synopsis - Ernst-Ludwig Petrowsky, Conrad Bauer, Ulrich Gumpert, Günter Sommer",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c08058fa-c56a-4533-85f0-d9eeddbacc78/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 197,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 197）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Amiga 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 197 偏英語圈不採；經典 4：該國爵士史公認代表作（研究稿）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "四人各寫一首，再加一首集體創作與一首傳統曲。Synopsis 是 1973 年成團的東德自由爵士四人組。A 面三首分別出自 Gumpert、Bauer、Petrowsky，B 面有 Sommer 的曲子，集體創作是〈Holzland〉，傳統曲則是〈Kommt, ihr G'spielen〉。編制為薩克斯風兼長笛、長號、鋼琴與鼓。1974 年 4 月的錄音選在 Amiga 錄音室，位於柏林。1984 年同一批人改以 Zentralquartett 之名續演。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2426929",
+     "https://www.discogs.com/master/471258",
+     "https://de.wikipedia.org/wiki/Ernst-Ludwig_Petrowsky",
+     "https://de.wikipedia.org/wiki/Ulrich_Gumpert",
+     "https://de.wikipedia.org/wiki/Conny_Bauer",
+     "https://en.wikipedia.org/wiki/G%C3%BCnter_Sommer",
+     "https://musicbrainz.org/release-group/c08058fa-c56a-4533-85f0-d9eeddbacc78"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "Apple 的《Synopsis》(us 1567424966, 1986 ℗Synopsis, Masks／Grotto…) 為另一個樂團，曲目與 Petrowsky/Bauer/Gumpert/Sommer 版 6 軌全不同；2008 Zentralquartett&Synopsis 為不同專輯"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ulrich Gumpert Workshop Band",
+   "album": "Ulrich Gumpert Workshop Band",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      {
+       "query": "releasegroup:\"Ulrich Gumpert Workshop Band\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "artist:\"Ulrich Gumpert Workshop Band\" AND releasegroup:\"Ulrich Gumpert Workshop Band\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "releasegroup:\"Gumpert Workshop Band Amiga 1980\"",
+       "count": 0,
+       "topTitles": []
+      }
+     ],
+     "checkedAt": "2026-11-01",
+     "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 查詢 'Ulrich Gumpert Workshop Band'（artist 與 releasegroup 兩種）於 2026-11-01 皆無此 1980 Amiga LP。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/491848",
+     "https://www.discogs.com/release/522316"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "東德自由／前衛爵士：Gumpert 的七重奏／工作坊樂團，東德最具代表性的前衛大樂團式錄音，Amiga Jazz 系列的重點作。｜策展無疑點｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/491848 https://www.discogs.com/release/522316 https://www.discogs.com/master/491848 https://www.discogs.com/release/522316",
+    "queryAlias": "Gumpert Workshop Band Amiga 1980",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "522316",
+    "url": "https://i.discogs.com/hLBqGhN5p9_5Ab36H4OEMJ8TzQrGadUCjuptzZjeKa8/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUyMjMx/Ni0xNjkxNjU2NjE3/LTI4MzMuanBlZw.jpeg",
+    "note": "MB 查無（manual）；Discogs release 522316：目錄號 8 55 753、年份 1980、廠牌 AMIGA、盤名皆對上；取 images[0]（原盤封面）",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 20,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 20）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Amiga 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 20 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "東德的八人樂團，錄音地點在西柏林。Ulrich Gumpert 彈鋼琴，開場的〈Hahnenkopf〉是他寫的。1979 年 3 月，團員走進西柏林藝術學院，錄音由東德國營廠與西柏林的 FMP 合製，Amiga 1980 年推出。編制有三把薩克斯風加單簧管、小號與長號，配上鋼琴、貝斯和鼓。其餘曲子也出自團員：Conrad Bauer 寫了〈Blau Blusen Blues〉，Günter Sommer 寫了〈Hilferuf einer Schnecke〉（蝸牛的求救聲）。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/522316",
+     "https://www.jazzword.com/reviews/conrad-bauer-manfred-hering-ernst-ludwig-petrowsky-ulrich-gumpert-klaus-koch-gunter-baby-sommer/",
+     "https://de.wikipedia.org/wiki/Ulrich_Gumpert",
+     "https://www.discogs.com/master/491848"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/74/82/70/mzm.kjhetygj.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "appleCollectionId": "392681457",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 392681457「Ulrich Gumpert Workshop Band《Ulrich Gumpert Workshop Band》」：Jazzwerkstatt 2010 雙碟再發：第 2 碟 5 軌（Hahnenkopf…Hilferuf einer Schnecke）對 Discogs 522316 Amiga 8 55 753 原盤 5/5，第 1 碟為額外錄音；軌序 5＝第 2 碟第 1 軌，取第 5 軌〈Hahnenkopf〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ulrich Gumpert",
+   "album": "'N Tango für Gitti",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9288d49b-cda3-430f-ba20-2162bd7d031e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "東德自由／前衛爵士：Gumpert 的 Amiga Jazz 鋼琴獨奏，兼具幽默與前衛，是他東德時期最具個人面貌的一張。｜策展無疑點｜MB release-group 9288d49b-cda3-430f-ba20-2162bd7d031e：title「'N Tango für Gitti - Ulrich Gumpert Solo」、Album、first-release-date 1984、artist-credit「Ulrich Gumpert」。證據：https://www.discogs.com/master/487584 https://musicbrainz.org/release-group/9288d49b-cda3-430f-ba20-2162bd7d031e",
+    "queryAlias": "N Tango fuer Gitti；'N Tango für Gitti - Ulrich Gumpert Solo"
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "2242469",
+    "url": "https://i.discogs.com/g9LEJlMgEhNgSFVC_jeIJsrOrwwAG5i4LCF4dpak6Ec/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNDI0/NjktMTY2NDY5NTQx/Ny0zMjI3LmpwZWc.jpeg",
+    "note": "CAA 404；Discogs release 2242469（MB release 74567b08 連結）：目錄號 8 56 073、年份 1984、廠牌 AMIGA、盤名皆對上",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Amiga 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 查無 偏英語圈不採"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "廣播錄好的鋼琴獨奏，隔了兩年才出成唱片。生在東德 Jena 的 Ulrich Gumpert 是自由爵士鋼琴手，五首曲子全是他自己寫的。錄製單位是東德國家廣播，日期為 1982 年 2 月 10 日，Amiga 於 1984 年出版。盤上就一台鋼琴，同名曲 7 分 51 秒，〈Dave〉最長，達 10 分 28 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2242469",
+     "https://www.discogs.com/master/487584",
+     "https://de.wikipedia.org/wiki/Ulrich_Gumpert",
+     "https://www.jazzword.com/reviews/conrad-bauer-manfred-hering-ernst-ludwig-petrowsky-ulrich-gumpert-klaus-koch-gunter-baby-sommer/",
+     "https://musicbrainz.org/release-group/9288d49b-cda3-430f-ba20-2162bd7d031e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "de/us/jp 搜尋；Gumpert 目錄有 Jazzwerkstatt 與 Intakt 多張，無獨立 'N Tango für Gitti（5 軌），2010 Workshop Band 雙碟內只有一首同名片段混編，不配"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Günter Sommer",
+   "album": "Hörmusik",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "93c316f3-8683-4ee2-93a7-ee2a43002d18",
+    "upc": "",
+    "aliasesChecked": true,
+    "exceptionReason": "現場例外：1979-08-11 柏林藝術學院「Jazz Now / Jazz aus der DDR」現場錄音，FMP 0790 於 1980 首發；Günter Sommer 東德鼓獨奏的代表作本來就是這場現場（Ganelin 先例）",
+    "exceptionEvidenceUrls": [
+     "https://www.discogs.com/master/194390",
+     "https://musicbrainz.org/release-group/93c316f3-8683-4ee2-93a7-ee2a43002d18"
+    ],
+    "aliasReview": "東德自由／前衛爵士：Baby Sommer 的鼓與打擊獨奏代表作，在東柏林錄製、經 FMP 在西方發行，是東德自由鼓樂的標竿。｜⚠ MB 首發 1979（XG），Discogs master 標 1980 FMP；年份取 MB。藝人名採國際寫法 Günter Sommer（不含 Baby）。｜MB release-group 93c316f3-8683-4ee2-93a7-ee2a43002d18：title「Hörmusik」、Album＋Live、first-release-date 1979、artist-credit「Günter Sommer」。證據：https://www.discogs.com/master/194390 https://musicbrainz.org/release-group/93c316f3-8683-4ee2-93a7-ee2a43002d18",
+    "queryAlias": "Gunter Sommer Hormusik"
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "771039",
+    "url": "https://i.discogs.com/d3cXxF0tBfeVxHACc31XFP_ALTzMKMpHB9oov8e0YCc/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc3MTAz/OS0xNDIxNzY5NjAy/LTQxNDkuanBlZw.jpeg",
+    "note": "CAA 404；Discogs release 771039（master 194390 main release）：盤名 Hörmusik、曲目 2/2（1./2. Teil）、廠牌 FMP FMP 0790 對上；年份 1980 vs MB 1979 差一年",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 16,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 16）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：FMP 小廠首發，原盤壓量與通路有限、屬收藏家領域；Last.fm 16 偏英語圈不採；經典 4：該國爵士史公認代表作（研究稿）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "盤名直譯是「聽的音樂」，整張只有鼓與打擊。Günter Sommer 的暱稱「Baby」取自美國鼓手 Baby Dodds。1979 年 8 月 11 日他在柏林藝術學院的 Jazz Now / Jazz aus der DDR 活動上，現場錄下自己第一張鼓與打擊獨奏。兩面各錄一段，分別長 18 分 15 秒與 16 分 26 秒，作曲也由他包辦。FMP 在 1980 年首發，Amiga 隔年換上另一個封面再出；後來他又錄了《Hörmusik Zwei》，延伸成一個系列。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/771039",
+     "https://www.discogs.com/master/194390",
+     "https://de.wikipedia.org/wiki/G%C3%BCnter_Sommer",
+     "https://en.wikipedia.org/wiki/G%C3%BCnter_Sommer",
+     "https://musicbrainz.org/release-group/93c316f3-8683-4ee2-93a7-ee2a43002d18"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "de/us/jp 搜尋；Sommer 目錄（含 Gunter Baby Sommer）無 FMP《Hörmusik》"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Conrad Bauer",
+   "album": "Conrad Bauer",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3c7e155c-bb25-41dc-9ac3-fdc2d7282be3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "東德自由／前衛爵士：Bauer 的長號獨奏專輯，延展技法（循環呼吸、複音）在東德爵士史上被一再提及。｜策展無疑點｜MB release-group 3c7e155c-bb25-41dc-9ac3-fdc2d7282be3：title「Conrad Bauer」、Album、first-release-date 1981、artist-credit「Conrad Bauer」。證據：https://www.discogs.com/master/552471 https://musicbrainz.org/release-group/3c7e155c-bb25-41dc-9ac3-fdc2d7282be3",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3c7e155c-bb25-41dc-9ac3-fdc2d7282be3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 18,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 18）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Amiga 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 18 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Axel、Otto、Alma，長號獨奏的曲名都是人名。Conrad Bauer 是長號手 Johannes Bauer 的哥哥，這張盤從頭到尾只有他一人吹長號，六首的作曲者也是他。曲目從〈Axel〉〈Rüdiger〉一路排到〈Lotte〉，最長的〈Alma〉有 8 分 53 秒。連續三天的錄音排在 1980 年 8 月 25 至 27 日，地點是柏林 Amiga 錄音室，1981 年出版。他的獨奏向來以多聲部的 multiphonics 與循環換氣著稱。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4538408",
+     "https://www.discogs.com/master/552471",
+     "https://en.wikipedia.org/wiki/Conny_Bauer",
+     "https://de.wikipedia.org/wiki/Conny_Bauer",
+     "https://musicbrainz.org/release-group/3c7e155c-bb25-41dc-9ac3-fdc2d7282be3"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "de/us/jp 搜尋；Conrad Bauer 目錄只有 Between Heaven And Earth、Bauer Bauer、Hummelsummen"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Conrad Bauer",
+   "album": "Flüchtiges Glück",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "18069c78-bb39-4d9c-b14d-2c66aa438a05",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "東德自由／前衛爵士：Bauer 晚期東德的重要錄音，以四重奏／重疊錄音拓展長號的聲部語彙。｜策展無疑點｜MB release-group 18069c78-bb39-4d9c-b14d-2c66aa438a05：title「Flüchtiges Glück」、Album、first-release-date 1986、artist-credit「Conrad Bauer」。證據：https://www.discogs.com/master/135661 https://musicbrainz.org/release-group/18069c78-bb39-4d9c-b14d-2c66aa438a05",
+    "queryAlias": "Fluechtiges Glueck"
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/18069c78-bb39-4d9c-b14d-2c66aa438a05/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 19,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 19）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：科隆 Riskant 小廠盤，原盤壓量與通路有限、屬收藏家領域；Last.fm 19 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "科隆地底的一座蓄水池，替一支長號拖出 45 秒的殘響。原本想念吉他的 Conrad Bauer，因名額太擠才改學長號，成了東德的長號手。為了「Vor Der Flut」計畫，他在 1984 年 12 月 17 日走進科隆供水公司 Severin 的地下蓄水池就地吹奏，曲名〈Severin〉便取自這裡。重發版註明這是現場演奏、無疊錄，每個音都在殘響裡拖尾、層層疊起。六首都由他作曲，1986 年由科隆的 Riskant 發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/483837",
+     "https://www.discogs.com/release/15878488",
+     "https://de.wikipedia.org/wiki/Conny_Bauer",
+     "https://musicbrainz.org/release-group/18069c78-bb39-4d9c-b14d-2c66aa438a05"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "de/us/jp 搜尋；Conrad Bauer 目錄無 Flüchtiges Glück"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bergisch-Brandenburgisches Quartett",
+   "album": "Bergisch-Brandenburgisches Quartett",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7b9795fe-8d00-42b8-a3db-8943c8d6eb1e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "東德自由／前衛爵士：東西德樂手跨越圍牆組成的 BBQ，Amiga Jazz 少見的東西合作自由爵士盤，後來於 Black Truffle 重發。｜⚠ MB 首發日 1982-12-12，Discogs master 標 Amiga 1984；年份採 1984（LP 發行年），可再核。成員含西德樂手，仍以 Amiga 東德首發歸 dd。｜MB release-group 7b9795fe-8d00-42b8-a3db-8943c8d6eb1e：title「Bergisch-Brandenburgisches Quartett」、Album、first-release-date 1982-12-12、artist-credit「Bergisch-Brandenburgisches Quartett」。證據：https://www.discogs.com/master/328262 https://musicbrainz.org/release-group/7b9795fe-8d00-42b8-a3db-8943c8d6eb1e",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7b9795fe-8d00-42b8-a3db-8943c8d6eb1e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 19,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 19）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Amiga 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 19 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "西德的貝格與東德的勃蘭登堡，拼成這支四重奏的名字。它是跨東西德合組的自由爵士團：Rüdiger Carl 與 Hans Reichel 住西德貝格地區，Ernst-Ludwig Petrowsky 住東柏林，屬勃蘭登堡一帶，Sven-Åke Johansson 住西柏林，四人在 1980 年組團。錄音挑定 1982 年 3 月 1 日這天，地點是東柏林青年才俊之家，Amiga 到 1984 年才推出。四人都掛作曲，樂器之外，還敲電話簿與鞋撐、操作收音機。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2247627",
+     "https://magnetmagazine.com/2022/10/21/essential-new-music-bergisch-brandenburgisches-quartetts-live-82/",
+     "https://www.freejazzblog.org/2021/01/bergisch-brandenburgisches-quartett.html",
+     "https://en.wikipedia.org/wiki/Ernst-Ludwig_Petrowsky",
+     "https://musicbrainz.org/release-group/7b9795fe-8d00-42b8-a3db-8943c8d6eb1e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "Apple de/us 僅 Black Truffle 2022《Live '82》2 軌（Part 1／2），為不同錄音／發行，與原盤 7 軌不符"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Manfred Schulze Bläserquintett",
+   "album": "Viertens",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      {
+       "query": "releasegroup:\"Viertens\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "artist:\"Manfred Schulze Bläserquintett\" AND releasegroup:\"Viertens\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "releasegroup:\"Manfred Schulze Blaeserquintett Viertens\"",
+       "count": 0,
+       "topTitles": []
+      }
+     ],
+     "checkedAt": "2026-11-01",
+     "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz 查詢 'Manfred Schulze Bläser Quintett' 與 releasegroup:Viertens 於 2026-11-01 無對應結果。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/1735542",
+     "https://www.discogs.com/release/2846295"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "東德自由／前衛爵士：Schulze 的木管銅管五重奏，結合巴赫式對位與自由即興，是東德「室內自由爵士」的代表；FMP 為其在西方的主要出版商。｜⚠ Schulze 五重奏 FMP 尚有《Nummer 12》（1986 現場），本張取錄音室作。｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/1735542 https://www.discogs.com/release/2846295 https://www.discogs.com/master/1735542 https://www.discogs.com/release/2846295",
+    "queryAlias": "Manfred Schulze Blaeserquintett Viertens"
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "2846295",
+    "url": "https://i.discogs.com/EwGqGe2C_aNgmLJS8e850dTEMgK37hHcwWxZoofzTQE/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NDYy/OTUtMTQ1NDYxMTc1/OS00NDA5LmpwZWc.jpeg",
+    "note": "MB 查無（manual）；Discogs release 2846295：目錄號 FMP 1230、年份 1988、廠牌 FMP、盤名皆對上；取 images[0]（原盤封面）",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：FMP 小廠盤，原盤壓量與通路有限、屬收藏家領域；Last.fm 查無 偏英語圈不採"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "巴哈的姓化成四個音，成了五支吹管的中心。Manfred Schulze 在東德吹上低音薩克斯風，1969 年創立這支吹管五重奏。那首〈B-A-C-H〉以音名拼出主題，長 15 分 44 秒；另一首曲子則題給金恩博士。五人全吹管，他之外是三位簧管手與長號手 Johannes Bauer，記譜段落與集體即興交替。樂團 1986 年 7 月 19 日進 FMP 的錄音室，唱片在 1988 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2846295",
+     "https://de.wikipedia.org/wiki/Manfred_Schulze_(Musiker)",
+     "https://www.discogs.com/master/1735542",
+     "https://www.jazztimes.com/archives/manfred-schulze-blaserquintett-viertens-nummer-12/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "de/us/jp 搜尋；Manfred Schulze 目錄無專輯，無 FMP《Viertens》"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ensemble Studio 4 (Ernst-Ludwig Petrowsky)",
+   "album": "Jazz Mit Dem Ensemble Studio 4",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "67c2a9ba-3d40-4067-b911-5ab3752b4bae",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "東德主流／摩登爵士：Petrowsky 領軍的 Studio 4，東德摩登／後 bop 與自由爵士過渡期的重要錄音。｜策展無疑點｜MB release-group 67c2a9ba-3d40-4067-b911-5ab3752b4bae：title「Jazz Mit Dem Ensemble Studio 4」、Album、first-release-date 1969、artist-credit「Ensemble Studio 4 , Leitung Ernst Ludwig Petrowsky」。證據：https://www.discogs.com/master/652639 https://musicbrainz.org/release-group/67c2a9ba-3d40-4067-b911-5ab3752b4bae",
+    "queryAlias": "Ensemble Studio 4 Petrowsky；Ensemble Studio 4 , Leitung Ernst Ludwig Petrowsky"
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "3638947",
+    "url": "https://i.discogs.com/Ms9TKyQjcrreUcVBCvh2ixlI_XxhbdhKF-EsfPh9CXQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2Mzg5/NDctMTMzODQwMzAy/OC04MDYxLmpwZWc.jpeg",
+    "note": "CAA 404；Discogs release 3638947（MB release 83f6e64f 連結）：目錄號 8 55 187、年份 1969、廠牌 AMIGA、盤名皆對上",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Amiga 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 查無 偏英語圈不採"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "1968 年夏天的蒙特勒，台上站著一支東德廣播的爵士組合。Ernst-Ludwig Petrowsky 帶隊，他是少數獲准赴西方演出的東德爵士樂手。那年 6 月 13 日，Studio 4 登上蒙特勒爵士音樂節，這支組合被視為東德第一支定期演奏爵士的樂團。隔年 4 至 5 月，他們在柏林分三次錄成本作，由 Amiga 發行。前線是小號兼柔音號、長號與中音薩克斯風三管，加上鋼琴三重奏；三首來自鋼琴手 Eberhard Weise，Petrowsky 寫兩首，另與人合寫一首。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3638947",
+     "https://www.discogs.com/master/652639",
+     "https://en.wikipedia.org/wiki/Ernst-Ludwig_Petrowsky",
+     "https://musicbrainz.org/release-group/67c2a9ba-3d40-4067-b911-5ab3752b4bae"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "de/us 搜尋；Petrowsky 目錄僅 Jazzwerkstatt／Intakt 後期作品，無 1969 Ensemble Studio 4"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Rolf Kühn Quintett",
+   "album": "Solarius",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d2e86992-0ef0-4732-9a98-289e3f50045b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "東德主流／摩登爵士：Rolf Kühn 在東柏林錄製的五重奏，Joachim Kühn 於 1966 出走前的東德時期錄音，曲目含 Joachim 的演奏。｜⚠ 領銜者為 Rolf 而非 Joachim；歸 Joachim 東德時期。MB RG 首發 2012（重發），原盤 1965 Amiga。池中 Rolf + Joachim Kühn Quintet《Transfiguration》為不同盤。｜MB release-group d2e86992-0ef0-4732-9a98-289e3f50045b：title「Solarius」、Album、first-release-date 2012、artist-credit「Rolf Kühn」。證據：https://www.discogs.com/master/516294 https://musicbrainz.org/release-group/d2e86992-0ef0-4732-9a98-289e3f50045b",
+    "queryAlias": "Rolf Kuhn Solarius；Rolf Kühn"
+   },
+   "research": {
+    "suggestedYear": 1965,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "2662491",
+    "url": "https://i.discogs.com/S43UipEgzdTd6js8Z0x0biiZ2W--sIHg3Ux21tHc_0o/rs:fit/g:sm/q:90/h:545/w:547/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2NjI0/OTEtMTQzMjg3MjEz/MS0zMzU3LmpwZWc.jpeg",
+    "note": "CAA 404；Discogs release 2662491（master 516294 原版 LP）：目錄號 8 50 046、年份 1965、廠牌 AMIGA、盤名與 6 軌皆對上；不取 MB 連的 2012 CD 再發",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 42,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 42）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Amiga 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 42 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "東德的弟弟彈鋼琴，西德的哥哥吹單簧管，旁邊兩位波蘭人。Rolf Kühn 是生於科隆的西德公民，弟弟 Joachim 生於萊比錫。兩位波蘭樂手裡，薩克斯風交給 Michał Urbaniak，鼓交給 Czesław Bartkowski。1964 年 11 月 29、30 兩天，五人在柏林錄完，Amiga 1965 年發行。1966 年，Joachim 應哥哥之邀永久離開東德。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2662491",
+     "https://www.discogs.com/master/516294",
+     "https://de.wikipedia.org/wiki/Joachim_K%C3%BChn",
+     "https://musicbrainz.org/release-group/d2e86992-0ef0-4732-9a98-289e3f50045b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "de/us/jp 搜尋；Rolf Kühn 目錄 23 張（Edel/MPS/intuition 等）無 Solarius（Amiga 1965／2012 CD 再發）"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Friedhelm Schönfeld",
+   "album": "Friedhelm Schönfeld",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0b2ccab1-fb11-42cd-ace9-c5312ab0bc6b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "東德主流／摩登爵士：Schönfeld 三重奏的代表作，鋼琴為主，風格介於 Bill Evans 與東德自己的抒情語彙。｜策展無疑點｜MB release-group 0b2ccab1-fb11-42cd-ace9-c5312ab0bc6b：title「Friedhelm Schönfeld」、Album、first-release-date 1978、artist-credit「Friedhelm Schönfeld」。證據：https://www.discogs.com/release/584224 https://musicbrainz.org/release-group/0b2ccab1-fb11-42cd-ace9-c5312ab0bc6b",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "584224",
+    "url": "https://i.discogs.com/kZt9biLcWl9eWF9JS_AxN4BbPPNchLIeLPS4XtKGgvo/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4NDIy/NC0xMzA0MTc0NTA5/LmpwZWc.jpeg",
+    "note": "CAA 404；Discogs release 584224（MB release 252d8fc5 連結）：目錄號 8 55 628、年份 1978、廠牌 AMIGA、盤名皆對上",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 10,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 10）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Amiga 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 10 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "長笛、次中音單簧管、次中音薩克斯風，一人輪著吹。Friedhelm Schönfeld 1938 年生於 Zehrensdorf，是東德新爵士的開路者之一，曲子與編曲也出自他。其餘編制是低音提琴、鼓與大提琴，錄音從 1978 年 8 月 28 日起，分四天錄完，由 Amiga 發行。唱片分成四個樂段，B 面是一首 20 分 15 秒的〈Für Gipsy〉。他的妻子以 Gipsy 之名當歌手。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/584224",
+     "https://de.wikipedia.org/wiki/Friedhelm_Sch%C3%B6nfeld",
+     "https://musicbrainz.org/release-group/0b2ccab1-fb11-42cd-ace9-c5312ab0bc6b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "Apple de 僅 Jazzwerkstatt 2010《Start》14 軌與 2016《What Happened》，無 1978 Amiga 4 軌專輯"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Friedhelm Schönfeld & Hubert Katzenbeier",
+   "album": "Jazz",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4da5f0eb-9b39-4046-95fa-49c46c7c7836",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "東德主流／摩登爵士：Amiga 以爵士二重奏出版的少數盤，鋼琴與薩克斯對話的室內氣質。｜⚠ 盤名僅「Jazz」，與 Gerlach/Schönfeld 1968《Jazz》不同盤；dedupe 用的盤名「Jazz」需靠藝人名區分。｜MB release-group 4da5f0eb-9b39-4046-95fa-49c46c7c7836：title「Jazz」、Album、first-release-date 1973、artist-credit「Friedhelm Schönfeld, Hubert Katzenbeier」。證據：https://www.discogs.com/release/573039 https://musicbrainz.org/release-group/4da5f0eb-9b39-4046-95fa-49c46c7c7836",
+    "queryAlias": "Schönfeld Katzenbeier Jazz 1973"
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4da5f0eb-9b39-4046-95fa-49c46c7c7836/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Amiga 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 查無 偏英語圈不採"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "廣播舞蹈樂團的兩位舊同事，帶六位樂手錄下《Jazz》。Hubert Katzenbeier 自學長號；吹簧管的 Friedhelm Schönfeld 在 1960 至 1970 年間，與他同在柏林廣播舞蹈管弦樂團。錄製於 1972 年 10 至 11 月，地點為 Amiga 錄音室。六位樂手含鋼琴與兩位貝斯手，鼓手也有兩位，其中之一是 Günter Sommer。A 面的〈Trio-Dimensionen〉與 B 面的〈Quartett〉，曲名透露出組合在輪換。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/573039",
+     "https://de.wikipedia.org/wiki/Friedhelm_Sch%C3%B6nfeld",
+     "https://de.wikipedia.org/wiki/Hubert_Katzenbeier",
+     "https://musicbrainz.org/release-group/4da5f0eb-9b39-4046-95fa-49c46c7c7836"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "de/us 搜尋；Schönfeld 目錄無與 Katzenbeier 合作的《Jazz》"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Klaus Lenz Modern Soul Big Band",
+   "album": "Klaus Lenz Modern Soul Big Band",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b64746ea-079e-40f0-87be-9c7710dda7f9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "東德 fusion／爵士搖滾大樂團：Lenz 把爵士大樂團、靈魂與放克結合的代表作，今日 Amiga 重發最常被提的一張。｜策展無疑點｜MB release-group b64746ea-079e-40f0-87be-9c7710dda7f9：title「Klaus Lenz Modern Soul Big Band」、Album、first-release-date 1974、artist-credit「Klaus Lenz Modern Soul Big Band」。證據：https://www.discogs.com/master/915792 https://musicbrainz.org/release-group/b64746ea-079e-40f0-87be-9c7710dda7f9",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b64746ea-079e-40f0-87be-9c7710dda7f9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 5,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 5）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Amiga 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 5 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兩支樂團併成一支，17 個人把銅管疊上電貝斯。由小號手 Klaus Lenz 帶團，1972 年他的 Klaus-Lenz-Band 與 Modern Soul Band 合併。17 人裡有十位管樂手，底下墊著電鋼琴、電風琴、吉他與兩把電貝斯。1973 年 4 月 5 日那天，樂團在德勒斯登衛生博物館錄音，1974 年 Amiga 把它壓成唱片。長號手 Conrad Bauer 寫了〈Soul Five〉，〈Reverend Lee〉則交給 Uschi Brüning 演唱。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/504890",
+     "https://de.wikipedia.org/wiki/Klaus_Lenz",
+     "https://de.wikipedia.org/wiki/Modern_Soul_Band",
+     "https://www.discogs.com/master/915792",
+     "https://musicbrainz.org/release-group/b64746ea-079e-40f0-87be-9c7710dda7f9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/7d/53/ab/7d53abaa-2a2d-007b-f5f9-9988ada74871/mzaf_17772768113654420516.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "appleCollectionId": "1646695145",
+    "storefront": "DE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple de 1646695145「Klaus Lenz & Modern Soul Big Band《Jazz- und Soul-Hits》」：Sony BMG 2007 CD 再發《Jazz- und Soul-Hits》：前 5 軌（Soul Five…Fusion）對 Discogs 504890 Amiga 8 55 380 原盤 5/5，後 5 軌為 bonus（Discogs 8650488 同版），取第 1 軌〈Soul Five〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Klaus Lenz Big Band",
+   "album": "Aufbruch",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5374b267-7ea0-4318-a315-2aee090b7c71",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "東德 fusion／爵士搖滾大樂團：Lenz Big Band 的巔峰爵士搖滾大樂團專輯，Jazz-Rock 與巴爾幹旋律交織。｜策展無疑點｜MB release-group 5374b267-7ea0-4318-a315-2aee090b7c71：title「Aufbruch」、Album、first-release-date 1976、artist-credit「Klaus Lenz Big Band」。證據：https://www.discogs.com/master/617094 https://musicbrainz.org/release-group/5374b267-7ea0-4318-a315-2aee090b7c71",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5374b267-7ea0-4318-a315-2aee090b7c71/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 22,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 22）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Amiga 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 22 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "16 人全是器樂，合成器和電風琴撐起 jazz-rock。作曲與編曲多由團長 Klaus Lenz 和薩克斯風手 Axel-Glenn Müller 分擔，Wolfgang Fiedler 一人管四種鍵盤。樂團 1974 年在波蘭 Muza 出過同名 LP，1975 年 Amiga 再出一張同名盤，本作是 1976 年的續作。錄音於 1975 年 11 月在柏林完成，B 面的〈Hallo, Igor〉長 12 分 25 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/933212",
+     "https://de.wikipedia.org/wiki/Klaus_Lenz",
+     "https://www.discogs.com/master/617094",
+     "https://musicbrainz.org/release-group/5374b267-7ea0-4318-a315-2aee090b7c71"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "de 搜尋；Klaus Lenz 各藝人目錄僅 Hi-Di-Ho（26 軌現場／合輯）、Die Frühen Jahre、Jazz- und Soul-Hits、Live 1971，無 Aufbruch（Blow Out／Balkantanz…）"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Günther Fischer-Quintett",
+   "album": "Kombination",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "dc4f28e2-3cee-41a3-acad-3eca7b98d63e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "東德 fusion／爵士搖滾大樂團：Fischer 的 Amiga Jazz 專輯，爵士搖滾與電子鍵盤，是他爵士身分最清楚的一張。｜策展無疑點｜MB release-group dc4f28e2-3cee-41a3-acad-3eca7b98d63e：title「Kombination」、Album、first-release-date 1978、artist-credit「Günther Fischer-Quintett」。證據：https://www.discogs.com/master/1024465 https://musicbrainz.org/release-group/dc4f28e2-3cee-41a3-acad-3eca7b98d63e",
+    "queryAlias": "Gunther Fischer Quintett Kombination"
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/dc4f28e2-3cee-41a3-acad-3eca7b98d63e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 15,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 15）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Amiga 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 15 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "A 面三首的曲名，寫的是機器、單調與混雜。東德薩克斯風手 Günther Fischer 1971 年就替電影《Eolomea》寫下第一部配樂。〈Maschinerie〉與〈Monotonie〉出自鍵盤手 Mario Peters，〈Konglomerat〉則是 Fischer 的作品。錄音期間是 1978 年 1 月 6 日到 30 日，地點柏林。Fischer 吹長笛與三種薩克斯風，合成器也歸他；電鋼琴與 Clavinet 之外，還有吉他、電貝斯和鼓。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/371639",
+     "https://www.berliner-kurier.de/berlin/guenther-fischer-der-ddr-weltstar-mit-dem-saxophon-verzauberte-marlene-dietrich-li.2226593",
+     "https://www.discogs.com/release/470381",
+     "https://www.discogs.com/master/1024465",
+     "https://musicbrainz.org/release-group/dc4f28e2-3cee-41a3-acad-3eca7b98d63e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "de/us 搜尋；Fischer 目錄僅 Die Film-Hits、與 Brüning 合輯，無 Kombination 5 軌"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Uschi Brüning & Günther Fischer-Quintett",
+   "album": "Uschi Brüning Und Das Günther Fischer-Quintett",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b6b3e666-e4ef-4dc2-9243-19903577c6c2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "東德爵士人聲：東德爵士第一女聲 Brüning 與 Fischer 五重奏的首張，爵士搖滾人聲的起點。｜策展無疑點｜MB release-group b6b3e666-e4ef-4dc2-9243-19903577c6c2：title「Uschi Brüning und das Günther Fischer-Quintett」、Album、first-release-date 1973、artist-credit「Uschi Brüning und das Günther Fischer-Quintett」。證據：https://www.discogs.com/master/743017 https://musicbrainz.org/release-group/b6b3e666-e4ef-4dc2-9243-19903577c6c2",
+    "queryAlias": "Uschi Bruening Fischer Quintett"
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b6b3e666-e4ef-4dc2-9243-19903577c6c2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 5,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 5）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Amiga 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 5 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "萊比錫出身的女歌手，與第一次巡演同台的五重奏一起錄音。Uschi Brüning 成為職業歌手後的第一次巡演，就與這支五重奏同台。唱片 1972 年 6 至 7 月錄成，1973 年由 Amiga 發行。歌詞多由 Gisela Steineckert 填寫、Fischer 作曲；她擔任領唱，也加入鍵盤手 Reinhard Lakomy 組的合唱團，部分曲子加上弦樂。吉他與電貝斯做出爵士搖滾的律動，〈Székesfehérvár〉是一首以匈牙利城市為名的器樂曲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/470381",
+     "https://www.discogs.com/master/743017",
+     "https://de.wikipedia.org/wiki/Uschi_Brüning",
+     "https://musicbrainz.org/release-group/b6b3e666-e4ef-4dc2-9243-19903577c6c2"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/47/dd/08/47dd085a-9034-da59-df6a-ede64cbfa10d/mzaf_13030839064173758603.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "appleCollectionId": "1711616398",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1711616398「Uschi Brüning & Günther Fischer Quintett《Uschi Brüning Und Das Günther Fischer-Quintett》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Welch ein Zufall〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Uschi Brüning & Ernst-Ludwig Petrowsky",
+   "album": "Kontraste",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0d1ff798-e97f-4dad-8e06-48766f60096c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "東德爵士人聲：Brüning 與 Petrowsky 的自由人聲／薩克斯二重奏，被視為東德即興人聲的高峰，Usel 組合的代表。｜⚠ MB 首發 1987，Discogs master 標 1988；年份取 MB。池中 Petrowsky《Just for Fun》不同盤。｜MB release-group 0d1ff798-e97f-4dad-8e06-48766f60096c：title「Kontraste」、Album、first-release-date 1987、artist-credit「Uschi Brüning & Ernst-Ludwig Petrowsky」。證據：https://www.discogs.com/master/471264 https://musicbrainz.org/release-group/0d1ff798-e97f-4dad-8e06-48766f60096c",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "2370557",
+    "url": "https://i.discogs.com/4n408G4GlZnJquyMzyO0Ji7eVVEWnHD--siXZp5FEvY/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNzA1/NTctMTYzMzQyNjMw/Ny0xNzYyLmpwZWc.jpeg",
+    "note": "CAA 404；Discogs release 2370557：目錄號 8 56 261（同 MB release f32283a1）、廠牌 AMIGA、盤名與 12 軌皆對上；年份 1988 vs MB 1987 差一年",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 2,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Amiga 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 2 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "人聲對上薩克斯風，背景還借了一張廣播劇音效唱片。這對東德搭檔 1981 年起合作、1982 年結婚：Ernst-Ludwig Petrowsky 吹薩克斯風、單簧管與長笛，Uschi Brüning 以人聲對答。背景雜訊取自 Litera 的《Hörspielgeräusche I und II》。兩人在 1987 年 11 月錄完，隔年發行。12 首多半很短，大半是 Petrowsky 的作曲，也收了 Ornette Coleman 的〈Lonely Woman〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/471264",
+     "https://www.discogs.com/release/2370557",
+     "https://de.wikipedia.org/wiki/Ernst-Ludwig_Petrowsky",
+     "https://de.wikipedia.org/wiki/Uschi_Brüning",
+     "https://musicbrainz.org/release-group/0d1ff798-e97f-4dad-8e06-48766f60096c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "de/us 搜尋；Petrowsky／Brüning 目錄無 Amiga《Kontraste》（Enfant、Ornette Et Cetera 等為後期作品）"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Pascal von Wroblewsky",
+   "album": "Swinging Pool",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0ced7491-7ffd-44c3-ab11-c68e00ae82dc",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "東德爵士人聲：東德 80 年代最受歡迎的爵士女聲，Amiga Jazz 的主流 swing／bossa 人聲代表。｜⚠ MB 1986，Discogs master 標 1987；年份取 MB。｜MB release-group 0ced7491-7ffd-44c3-ab11-c68e00ae82dc：title「Swinging Pool」、Album、first-release-date 1986、artist-credit「Pascal von Wroblewsky」。證據：https://www.discogs.com/master/573196 https://musicbrainz.org/release-group/0ced7491-7ffd-44c3-ab11-c68e00ae82dc",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0ced7491-7ffd-44c3-ab11-c68e00ae82dc/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 10,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 10）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Amiga 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 10 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "15 歲唱民謠與藍調的東柏林女孩，1983 年轉向爵士。她叫 Pascal von Wroblewsky，1962 年生於東柏林，15 歲就上台。這是她的首張專輯，1986 年在 Amiga 推出，拿下 Goldene Amiga。她也是 1978 年成立的爵士搖滾團 Bajazzo 的長期成員。標題曲是 Reinhard Walter 的原創，其餘 8 首選的是標準曲；Walter 帶著 Studio-Orchester 伴奏，兩把電吉他與無品貝斯墊在底下。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/572699",
+     "https://de.wikipedia.org/wiki/Pascal_von_Wroblewsky",
+     "https://www.discogs.com/master/573196",
+     "https://musicbrainz.org/release-group/0ced7491-7ffd-44c3-ab11-c68e00ae82dc"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "de/us 搜尋；Pascal von Wroblewsky 目錄僅 Seventies Songbook 2012、Triple Step 等，無 Swinging Pool"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Modern Jazz Big Band 65",
+   "album": "Modern Jazz Big Band 65",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "41b5cb0e-5044-4dcf-b3ec-3c2b4fb80829",
+    "upc": "",
+    "aliasesChecked": true,
+    "exceptionReason": "現場例外：1965-01-22 柏林 Theater der Freundschaft 音樂會錄音（Amiga 8 50 054，單聲道）；這個東德現代爵士大樂團的唱片紀錄只有這場演出，代表作本來就是現場",
+    "exceptionEvidenceUrls": [
+     "https://www.discogs.com/master/1246969",
+     "https://musicbrainz.org/release-group/41b5cb0e-5044-4dcf-b3ec-3c2b4fb80829"
+    ],
+    "aliasReview": "東德主流／摩登爵士：Amiga 最早的現代大樂團專輯，東德摩登大樂團的基準，曲目以原創與 bop 為主。｜策展無疑點｜MB release-group 41b5cb0e-5044-4dcf-b3ec-3c2b4fb80829：title「Modern Jazz Big Band 65」、Album、first-release-date 1966、artist-credit「Modern Jazz Big Band 65」。證據：https://www.discogs.com/master/1246969 https://musicbrainz.org/release-group/41b5cb0e-5044-4dcf-b3ec-3c2b4fb80829",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1966,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "985367",
+    "url": "https://i.discogs.com/er6yetHXyp5Fn5xcwHzvdTqv8ZzEVEb40xCrJQjD6Nc/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk4NTM2/Ny0xMTgwOTU2NjE4/LmpwZWc.jpeg",
+    "note": "CAA 404；Discogs release 985367（MB release 73231c7d 連結）：目錄號 8 50 054、年份 1966、廠牌 AMIGA、盤名皆對上",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 5,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 5）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Amiga 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 5 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "同一場演出分成兩半，這一半全交給樂團。Klaus Lenz 吹小號領隊，他 1940 年生於柏林。1965 年 1 月 22 日的這場演出留下現場錄音，另一半收進與 Manfred Krug 合作的 Amiga 唱片。單聲道 LP 在 1966 年問世，薩克斯風與小號各五支、長號四支，加上節奏組，Lenz 寫了其中兩首。團裡的 Ernst-Ludwig Petrowsky、Manfred Schulze 與鼓手 Günter Sommer，日後都成為東德自由爵士的代表人物。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/985367",
+     "https://www.discogs.com/release/513916",
+     "https://de.wikipedia.org/wiki/Klaus_Lenz",
+     "https://www.discogs.com/master/1246969",
+     "https://musicbrainz.org/release-group/41b5cb0e-5044-4dcf-b3ec-3c2b4fb80829"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/45/03/3e/45033eb0-df26-f5da-02fb-1cdd9cfca69b/mzaf_10778990123036139053.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "appleCollectionId": "1646694685",
+    "storefront": "DE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple de 1646694685「Klaus Lenz & Modern Jazz Big Band 65《Die Frühen Jahre》」：Sony BMG 2007《Die Frühen Jahre》：前 6 軌對 MB Modern Jazz Big Band 65 6/6（Ein Nachmittag in Berlin…Night in Tunesia），後 4 軌為 live bonus，取第 1 軌〈Ein Nachmittag in Berlin〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Uschi Brüning",
+   "album": "Uschi Brüning",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f8427bfc-9eda-3157-965e-d52a41e50f6c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "東德爵士人聲：Brüning 的個人專輯，大樂團與人聲的成熟之作，Amiga 時期的個人代表。｜策展無疑點｜MB release-group f8427bfc-9eda-3157-965e-d52a41e50f6c：title「Uschi Brüning」、Album、first-release-date 1982、artist-credit「Uschi Brüning」。證據：https://www.discogs.com/master/837293 https://musicbrainz.org/release-group/f8427bfc-9eda-3157-965e-d52a41e50f6c",
+    "queryAlias": "Uschi Bruening",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "519530",
+    "url": "https://i.discogs.com/p3oVud7w6YjQwsfjelPw_Y72U24NM7nxRBY4UxrDv7g/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxOTUz/MC0xNTg5MjkzMzAy/LTk2NDkuanBlZw.jpeg",
+    "note": "CAA 404；Discogs release 519530（master 837293 main release）：目錄號 8 55 896（同 MB release 84e32395）、年份 1982、廠牌 AMIGA、盤名皆對上",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 7,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 7）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Amiga 國營廠正規發行、在該國主流流通，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 7 偏英語圈不採"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "流行歌、標準曲與 bebop，13 首交給錄音室樂團與弦樂。主唱 Uschi Brüning 是東德爵士歌手，唱的幾乎都是別人的曲子，從 Sly Stone〈Higher〉到 Charlie Parker〈Anthropology〉。伴奏是 Eberhard Weise 領導的 Studio-Orchester 與弦樂組。Ernst-Ludwig Petrowsky 寫了唱片說明，也在〈My Funny Valentine〉客串上低音薩克斯風。Amiga 1982 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/519530",
+     "https://de.wikipedia.org/wiki/Uschi_Brüning",
+     "https://www.discogs.com/master/837293",
+     "https://musicbrainz.org/release-group/f8427bfc-9eda-3157-965e-d52a41e50f6c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T12:47:42Z",
+    "note": "de 搜尋；Uschi Brüning 目錄有 Das Porträt／Tagesträume 1971-2021 等合輯與後期作品，不能配 1982 Amiga 13 軌原盤；1711616398 為 1973 另一張專輯"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  }
+ ]
+}

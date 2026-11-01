@@ -1,0 +1,743 @@
+{
+ "group": "eb3a",
+ "factions": [
+  {
+   "id": "pl-muza-mainstream",
+   "zh": "波蘭 Polish Jazz 主流／modal／cool",
+   "count": 13,
+   "why": "Polish Jazz 系列（Muza）60 年代到 70 年代初主流／modal／cool"
+  },
+  {
+   "id": "pl-vocal",
+   "zh": "波蘭人聲（Novi、Warska、Marianna Wróblewska）",
+   "count": 6,
+   "why": "Novi Singers 與 Warska 等人聲爵士"
+  },
+  {
+   "id": "pl-organ-vibes-trio",
+   "zh": "波蘭風琴／鋼琴三重奏／顫音",
+   "count": 3,
+   "why": "風琴／鋼琴三重奏／顫音琴"
+  },
+  {
+   "id": "pl-bigband",
+   "zh": "波蘭大樂團",
+   "count": 2,
+   "why": "波蘭電台大樂團"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Andrzej Kurylewicz Quintet",
+   "album": "Go Right",
+   "year": 1963,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-muza-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Polish Jazz 系列早期的 hard bop 代表作，Kurylewicz 把歐式旋律感與美式搖擺揉在一起，是東歐 modern jazz 初期的標準樣本。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.3,
+    "z": 0.5,
+    "why": "硬咆勃式搖擺，主題旋律明確、好入耳，聲部清楚不糊"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/295406",
+    "https://music.apple.com/pl/album/go-right-polish-jazz/1122249516",
+    "https://musicbrainz.org/release-group/f0ad9ebb-8543-4c25-ae88-fdace9b5daec"
+   ],
+   "mbRgMbid": "f0ad9ebb-8543-4c25-ae88-fdace9b5daec",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Andrzej Kurylewicz Quintet",
+   "album": "10+8",
+   "year": 1968,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-muza-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Kurylewicz 後期 Polish Jazz 作，更接近 modal 與第三流派的現代語法，與 Go Right 是不同高峰。",
+   "moodGuess": {
+    "x": 3,
+    "y": 0.4,
+    "z": -0.2,
+    "why": "modal 色彩、主題偏抽象，疏離偏冷"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/295407",
+    "https://musicbrainz.org/release-group/1c8cfd47-64b4-4a82-bddf-7ee6e7dd3e88",
+    "https://api.discogs.com/masters/295407"
+   ],
+   "mbRgMbid": "1c8cfd47-64b4-4a82-bddf-7ee6e7dd3e88",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "10+8 / Ten+Eight",
+   "uncertain": ""
+  },
+  {
+   "artist": "Andrzej Kurylewicz",
+   "album": "Polish Radio Big Band",
+   "year": 1965,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-bigband",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Polish Jazz Vol.2，波蘭電台大樂團的現代大編制作品，Kurylewicz 作為作曲／編曲者的代表。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.7,
+    "z": 0.5,
+    "why": "大樂團厚度，旋律線清楚"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/861081",
+    "https://music.apple.com/pl/album/andrzej-kurylewicz-polish-big-band-polish-jazz-vol-2/1473272623",
+    "https://musicbrainz.org/release-group/a3054a2f-dd56-413b-85f0-2c0a1ec14482"
+   ],
+   "mbRgMbid": "a3054a2f-dd56-413b-85f0-2c0a1ec14482",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Andrzej Kurylewicz Polish Big Band",
+   "uncertain": ""
+  },
+  {
+   "artist": "Andrzej Trzaskowski Quintet",
+   "album": "Polish Jazz Vol. 4",
+   "year": 1965,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-muza-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Trzaskowski 作為波蘭爵士理論家與作曲家的代表錄音室作，cool／third-stream 取向的 Polish Jazz 早期經典。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.2,
+    "z": 0,
+    "why": "冷靜剋制的 cool 語法，節奏不逼人"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/316561",
+    "https://music.apple.com/pl/album/the-andrzej-trzaskowski-quintet-polish-jazz-vol-4/1439457563",
+    "https://musicbrainz.org/release-group/b2a901a1-2b98-433c-82fa-f049998b8fd4"
+   ],
+   "mbRgMbid": "b2a901a1-2b98-433c-82fa-f049998b8fd4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "The Andrzej Trzaskowski Quintet",
+   "uncertain": ""
+  },
+  {
+   "artist": "Andrzej Trzaskowski Sextet",
+   "album": "Seant",
+   "year": 1967,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-muza-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Trzaskowski 與美國小號手 Ted Curson 合作，Polish Jazz 系列中最國際化的 post-bop／modal 錄音室專輯；與 Vol.4 是不同高峰。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.3,
+    "z": -0.2,
+    "why": "post-bop，Curson 小號尖銳，旋律偏抽象"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/357332",
+    "https://music.apple.com/pl/album/seant-feat-ted-curson-polish-jazz-vol-11/1374876162",
+    "https://musicbrainz.org/release-group/12210b21-1258-476a-a381-26a64ec6bad4"
+   ],
+   "mbRgMbid": "12210b21-1258-476a-a381-26a64ec6bad4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Seant feat. Ted Curson",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jan Ptaszyn Wróblewski",
+   "album": "Sweet Beat",
+   "year": 1972,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-muza-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Wróblewski 70 年代初的爵士 groove 專輯，代表他在 Sprzedawcy Glonów（歸 eb3b）之前的主流／爵士流行路線。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.2,
+    "z": 0.8,
+    "why": "輕快 groove、旋律好入耳"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/448934",
+    "https://music.apple.com/pl/album/sweet-beat/1487741623",
+    "https://musicbrainz.org/release-group/bb00de8f-7253-48d2-86db-409bcac8947c"
+   ],
+   "mbRgMbid": "bb00de8f-7253-48d2-86db-409bcac8947c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "是否算 Polish Jazz 級重要作有爭議；Wróblewski 60 年代個人名義錄音室盤在 Discogs 只有 EP（Swingin Upstairs 7\" EP）、Polish Jazz Quartet 屬團名。池子夠可被汰換。"
+  },
+  {
+   "artist": "Polish Jazz Quartet",
+   "album": "Polish Jazz Quartet",
+   "year": 1965,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-muza-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Polish Jazz Vol.3，Wróblewski／Karolak 等組成的團名專輯，波蘭 modern mainstream 的標準範本。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0,
+    "z": 0.3,
+    "why": "流暢現代爵士，旋律清楚、不躁"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/302966",
+    "https://music.apple.com/pl/album/polish-jazz-quartet-polish-jazz-vol-3/1439332084",
+    "https://musicbrainz.org/release-group/0443ea13-1cf6-4ebf-8ae4-a1412fe983b5"
+   ],
+   "mbRgMbid": "0443ea13-1cf6-4ebf-8ae4-a1412fe983b5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Polish Jazz Quartet (Polish Jazz Vol. 3)",
+   "uncertain": "MB 該 RG 掛名 Jan Ptaszyn Wróblewski、日期 1964，與 Discogs 1965 差一年；藝人欄採團名。"
+  },
+  {
+   "artist": "Mieczysław Kosz",
+   "album": "Reminiscence",
+   "year": 1972,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-muza-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Polish Jazz Vol.25，Kosz 抒情鋼琴三重奏，被樂迷公認為波蘭爵士最美的鋼琴專輯之一，Kosz 英年早逝使之成為遺作式經典。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.3,
+    "z": 0.6,
+    "why": "抒情鋼琴、旋律明確、安靜溫暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/235564",
+    "https://music.apple.com/pl/album/reminiscence-polish-jazz-vol-25/1315075384",
+    "https://musicbrainz.org/release-group/f2d20266-d461-32c7-a656-727f94b27923"
+   ],
+   "mbRgMbid": "f2d20266-d461-32c7-a656-727f94b27923",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Mieczysław Kosz Trio",
+   "uncertain": ""
+  },
+  {
+   "artist": "Novi Singers",
+   "album": "Bossa Nova",
+   "year": 1967,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-vocal",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Novi 的 Polish Jazz 版專輯，無詞人聲與 bossa 的早期歐洲實驗。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": -0.5,
+    "z": 0.6,
+    "why": "人聲 bossa，輕盈溫暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/183858",
+    "https://music.apple.com/pl/album/bossa-nova-polish-jazz/1122252263",
+    "https://musicbrainz.org/release-group/a1b31410-fbee-39cc-9750-0f3fb0bae3c8"
+   ],
+   "mbRgMbid": "a1b31410-fbee-39cc-9750-0f3fb0bae3c8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Novi Singers",
+   "album": "Torpedo",
+   "year": 1970,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-vocal",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Novi Singers 轉向前衛 scat 與人聲拼貼的轉折作，歐洲人聲爵士史上被重新評價的一張。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.2,
+    "z": -0.8,
+    "why": "無詞人聲、不和諧，疏離緊繃"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/183857",
+    "https://music.apple.com/pl/album/torpedo/1447285083",
+    "https://musicbrainz.org/release-group/0c19863c-aa16-416c-a2bb-e3c2a57219c9"
+   ],
+   "mbRgMbid": "0c19863c-aa16-416c-a2bb-e3c2a57219c9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "年份 MB／iTunes 1970，Discogs 1972；採 MB。"
+  },
+  {
+   "artist": "Novi Singers",
+   "album": "Rien ne va plus",
+   "year": 1973,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-vocal",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Novi Singers 的 Polish Jazz 高峰，人聲爵士與 Bernard Kawka 等編曲的成熟集大成。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0,
+    "z": -0.4,
+    "why": "現代人聲編制，旋律不易記、偏冷"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/302942",
+    "https://music.apple.com/pl/album/rien-ne-va-plus/1610597286",
+    "https://musicbrainz.org/release-group/51bba562-b16d-4590-9c73-9fef63487669"
+   ],
+   "mbRgMbid": "51bba562-b16d-4590-9c73-9fef63487669",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Rien Ne Va Plus",
+   "uncertain": ""
+  },
+  {
+   "artist": "Novi Quartet",
+   "album": "Novi in Wonderland",
+   "year": 1968,
+   "label": "SABA",
+   "country": "pl",
+   "faction": "pl-vocal",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Novi 在西德 SABA（MPS 系）錄製的專輯，把波蘭人聲爵士帶向西歐。",
+   "moodGuess": {
+    "x": 3,
+    "y": -0.3,
+    "z": 0.2,
+    "why": "人聲爵士，明亮輕巧"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/335752",
+    "https://music.apple.com/pl/album/novi-in-wonderland/1039380707",
+    "https://musicbrainz.org/release-group/f7c3868a-52d1-45bd-827a-b7bbf2b610dc"
+   ],
+   "mbRgMbid": "f7c3868a-52d1-45bd-827a-b7bbf2b610dc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "iTunes 掛名 Novi Singers；MB 掛名 Novi Quartet。與 Novi 其他三張同一藝人，若嫌多可先汰此張。"
+  },
+  {
+   "artist": "Zbigniew Namysłowski Modern Jazz Quartet",
+   "album": "Lola",
+   "year": 1964,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-muza-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Namysłowski 首張個人名義 LP，波蘭 hard bop 起點；與池中 Winobranie（1973）是不同時期。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.3,
+    "z": 0.3,
+    "why": "硬咆勃，旋律清楚推進有勁"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/322720",
+    "https://music.apple.com/pl/album/lola/1855520675"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 查 Lola／Namysłowski 無此 LP；Discogs master 322720 有 1964 Muza 原盤與 2025 重發。",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/322720",
+    "https://www.discogs.com/release/3282923"
+   ],
+   "releaseException": "",
+   "queryAlias": "Zbigniew Namysłowski Quartet Lola",
+   "uncertain": ""
+  },
+  {
+   "artist": "Zbigniew Namysłowski Quartet",
+   "album": "Polish Jazz Vol. 6",
+   "year": 1966,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-muza-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Polish Jazz Vol.6，含〈Straszna Franka〉等招牌曲，Namysłowski 的 modal／民謠色彩成形之作。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.4,
+    "z": -0.3,
+    "why": "modal 推進、旋律偏民謠式但即興多"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/257019",
+    "https://music.apple.com/pl/album/zbigniew-namyslowski-quartet-polish-jazz/1195918021",
+    "https://musicbrainz.org/release-group/cccda6c0-fdee-4edc-8f2e-026e62754bdb"
+   ],
+   "mbRgMbid": "cccda6c0-fdee-4edc-8f2e-026e62754bdb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Zbigniew Namysłowski Quartet",
+   "uncertain": "MB 另有 53f905b3-4d4d-4974-b00c-b7257ff9b556（Polish Jazz (6)）重複 RG，採 2004 重發那筆。原盤無專屬標題，專輯名取系列編號。"
+  },
+  {
+   "artist": "Wanda Warska",
+   "album": "Somnambulicy",
+   "year": 1961,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-vocal",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Warska 與 Kurylewicz 三重奏／四重奏合作的 10 吋 LP，波蘭 cool 人聲爵士的奠基錄音。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.4,
+    "z": 0.3,
+    "why": "cool 人聲、輕聲細語"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1434460",
+    "https://api.discogs.com/masters/1434460"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz 查 Somnambulicy 與 Wanda Warska 無此 RG（僅 Muzyka Teatralna I Telewizyjna）；Discogs master 1434460 有 1961 Muza 10\" LP。",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1434460",
+    "https://www.discogs.com/release/12625146"
+   ],
+   "releaseException": "",
+   "queryAlias": "Wanda Warska & Andrzej Kurylewicz Somnambulicy",
+   "uncertain": "iTunes 無；封面只能走 Discogs。10 吋 8 曲，長度偏短但為正規 LP。Warska 原提名 Sings Standards 為 7\" EP 已剔除。"
+  },
+  {
+   "artist": "The Włodzimierz Nahorny Trio",
+   "album": "Heart",
+   "year": 1968,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-organ-vibes-trio",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Polish Jazz Vol.15，Nahorny 鋼琴三重奏最完整的 60 年代錄音室作。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.4,
+    "z": 0.4,
+    "why": "鋼琴三重奏，旋律抒情清楚"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/317273",
+    "https://music.apple.com/pl/album/heart-polish-jazz-vol-15/1440504029",
+    "https://musicbrainz.org/release-group/757b1d8c-dbd6-4f0f-851e-f6f8628cfccb"
+   ],
+   "mbRgMbid": "757b1d8c-dbd6-4f0f-851e-f6f8628cfccb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Włodzimierz Nahorny Trio Heart",
+   "uncertain": "MB 有兩個 RG：757b1d8c（1968，採用）與 9a0dd7e7-f9c2-41ec-8052-a770f5468899（1967）。"
+  },
+  {
+   "artist": "Krzysztof Sadowski",
+   "album": "Krzysztof Sadowski and His Hammond Organ",
+   "year": 1970,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-organ-vibes-trio",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Polish Jazz Vol.21，波蘭 Hammond 風琴爵士的代表，後來被 groove／crate-digging 圈重新發掘。",
+   "moodGuess": {
+    "x": 3,
+    "y": 0.8,
+    "z": 0.6,
+    "why": "Hammond 厚度、groove 好入耳"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/302954",
+    "https://music.apple.com/pl/album/krzysztof-sadowski-and-his-hammond-organ-polish-jazz-vol-21/1439458400",
+    "https://musicbrainz.org/release-group/9f2bbe4a-a785-475d-8c49-71f486c1cb15"
+   ],
+   "mbRgMbid": "9f2bbe4a-a785-475d-8c49-71f486c1cb15",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Krzysztof Sadowski And His Hammond Organ",
+   "uncertain": ""
+  },
+  {
+   "artist": "Michał Urbaniak's Group",
+   "album": "Live Recording",
+   "year": 1971,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-muza-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Polish Jazz Vol.24，Urbaniak 出走前最重要的波蘭時期現場錄音，modal 到 fusion 的過渡，後世樂迷公認代表作。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.6,
+    "z": -0.3,
+    "why": "電氣化 modal 即興，推進強、旋律抽象"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/457833",
+    "https://music.apple.com/pl/album/live-recording-polish-jazz-vol-24/1364715891",
+    "https://musicbrainz.org/release-group/35121836-700c-42e8-85c6-2a53422bc06d"
+   ],
+   "mbRgMbid": "35121836-700c-42e8-85c6-2a53422bc06d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "現場盤；Urbaniak 波蘭時期（1971）最重要的作品本來就是此現場錄音。",
+   "queryAlias": "Michal Urbaniak's Group",
+   "uncertain": "與 eb3b 的 Urbaniak 70s 中期那批（Parathyphus B 等）不同盤，但時期銜接；若 eb3b 要收可由主線取捨。"
+  },
+  {
+   "artist": "Jerzy Milian Trio",
+   "album": "Baazaar",
+   "year": 1969,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-organ-vibes-trio",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Polish Jazz Vol.17，Milian 顫音琴三重奏的前衛 modal 作品，波蘭爵士中被 sample／crate 圈推崇的一張。",
+   "moodGuess": {
+    "x": 3,
+    "y": 0,
+    "z": -0.5,
+    "why": "顫音琴冷光、旋律不明確"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/306294",
+    "https://music.apple.com/pl/album/baazaar-polish-jazz-vol-17/1438910168",
+    "https://musicbrainz.org/release-group/eeb477f1-7284-42f2-bc5f-e6e5f0337900"
+   ],
+   "mbRgMbid": "eeb477f1-7284-42f2-bc5f-e6e5f0337900",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "年份 MB／iTunes 1969，Discogs 1970；採 1969。"
+  },
+  {
+   "artist": "Jazz Studio Orchestra of the Polish Radio",
+   "album": "Jazz Studio Orchestra of the Polish Radio",
+   "year": 1970,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-bigband",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Polish Jazz Vol.19，波蘭電台爵士工作室大樂團，匯集 60–70 年代主力作曲編曲者的錄音室專輯。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.8,
+    "z": 0.2,
+    "why": "大樂團厚度、旋律多樣"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/811264",
+    "https://music.apple.com/pl/album/jazz-studio-orchestra-of-the-polish-radio-polish-jazz-vol-19/1473813443",
+    "https://musicbrainz.org/release-group/0418966c-aa83-4782-9d04-8b97c086b55b"
+   ],
+   "mbRgMbid": "0418966c-aa83-4782-9d04-8b97c086b55b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Studio Jazzowe Polskiego Radia",
+   "uncertain": ""
+  },
+  {
+   "artist": "Marianna Wróblewska",
+   "album": "Sound of Marianna Wróblewska",
+   "year": 1972,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-vocal",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Polish Jazz 系列中少見的女歌手個人專輯，波蘭 70 年代初主流人聲爵士。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.2,
+    "z": 0.5,
+    "why": "人聲爵士、溫暖入耳"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/879967",
+    "https://music.apple.com/pl/album/sound-of-marianna-wroblewska-polish-jazz/1250116527"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz 查 Marianna Wróblewska 無 RG。Discogs master 879967 有 1972 Muza 原盤。",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/879967",
+    "https://www.discogs.com/release/7419433"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "知名度相對低；可被汰換。"
+  },
+  {
+   "artist": "Krzysztof Komeda",
+   "album": "Ballet Etudes",
+   "year": 1963,
+   "label": "Metronome",
+   "country": "pl",
+   "faction": "pl-muza-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Komeda 在丹麥 Metronome 錄的國際五重奏專輯，歐洲爵士史上少數早期 Komeda 正規錄音室作，池中尚未收。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.3,
+    "z": -0.2,
+    "why": "cool 氣質、旋律憂鬱疏離"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/804910",
+    "https://music.apple.com/pl/album/ballet-etudes-the-music-of-komeda-a-jazz/1251998342",
+    "https://musicbrainz.org/release-group/5f4ba72c-7ac3-482c-a106-9ace8190db3e"
+   ],
+   "mbRgMbid": "5f4ba72c-7ac3-482c-a106-9ace8190db3e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Ballet Etudes / The Music of Komeda - A Jazz Message From Poland Presented by an International Quintet",
+   "uncertain": "MB 另有 Ballet Etudes（1995 重發）5b41de30-237e-4b7a-abf2-202c0d31cd8a；採 1963 原盤那筆。"
+  },
+  {
+   "artist": "Janusz Zabiegliński",
+   "album": "Janusz Zabiegliński and His Swingtet",
+   "year": 1967,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-muza-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Polish Jazz Vol.9，波蘭 mainstream swing 的代表，與 modal／前衛路線對照。",
+   "moodGuess": {
+    "x": 3.1,
+    "y": 0.2,
+    "z": 0.7,
+    "why": "swing、旋律明確、歡快"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/950178",
+    "https://music.apple.com/pl/album/janusz-zabiegli%C5%84ski-and-his-swingtet-polish-jazz-vol-9/1437547439",
+    "https://musicbrainz.org/release-group/ab1fd068-8baa-4c88-90ef-e7b1a26ffd21"
+   ],
+   "mbRgMbid": "ab1fd068-8baa-4c88-90ef-e7b1a26ffd21",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Janusz Zabiegliński And His Swingtet",
+   "uncertain": ""
+  },
+  {
+   "artist": "Wojciech Karolak, Michał Urbaniak & Czesław Bartkowski",
+   "album": "Moving South",
+   "year": 1973,
+   "label": "Pronit",
+   "country": "pl",
+   "faction": "pl-muza-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Karolak 管風琴領軍的三人錄音室作（原名 Podróż na południe），波蘭 70 年代初 Hammond groove 小品。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.3,
+    "z": 0.2,
+    "why": "Hammond groove，推進輕快"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/389551",
+    "https://music.apple.com/pl/album/moving-south/1599603167"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz 查 Podróż na południe／Moving South 無對應（僅 Southside Movement 同名他作）；Discogs master 389551 有 1973 Pronit。",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/389551",
+    "https://www.discogs.com/release/3252185"
+   ],
+   "releaseException": "",
+   "queryAlias": "Podróż na południe",
+   "uncertain": "1973 剛好與 eb3b 的 Karolak 70s 銜接；Karolak 其餘盤歸 eb3b，此張可被主線取捨。"
+  }
+ ],
+ "notes": [
+  "Jazz Darings、Bernard Kawka、Stanisław Cieślak、Andrzej Dąbrowski 的爵士名義正規錄音室盤在 Discogs／MB／iTunes 都查不到合格標的（Dąbrowski 為流行歌手；Kawka 為 Novi 編曲者無個人盤），照實不湊數。",
+  "Wanda Warska《Sings Standards》與 Ptaszyn Wróblewski All Stars《Swingin' Upstairs》皆為 7\" EP，剔除；Novi《Christine》(1965)亦未收。",
+  "去重：24 張均查過，同藝人同盤 0 撞；池中既有 Komeda 7、Namysłowski《Winobranie》、Urbaniak《Facts of Life》未重收。其他 curation-eb*.json 尚未存在。",
+  "MB 查得到 20 張；人工身分 4 張（Lola、Somnambulicy、Marianna Wróblewska、Moving South），其中 Somnambulicy 無 iTunes 封面，只有 Discogs。",
+  "替補池（若主線汰換）：Jazz Carriers《Carry On!》(1973, MB 8f23a32a-db99-4967-8333-10090b2fdb91)、Adam Makowicz《Unit》(1973, Discogs 302946，疑歸 eb3b)、Sadowski《Na Kosmodromie》(1972, Pronit)、Novi《Christine》(1965)。",
+  "名稱：Trzaskowski Quintet／Nahorny Trio 的 The 去掉或保留依 MB／iTunes；寫入卡池時以 queryAlias 回查。"
+ ]
+}
