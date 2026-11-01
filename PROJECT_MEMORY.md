@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-01｜dip-vinyl-shop｜鐵幕爵士＋MPS 策展線：開工規劃（5 批約 200 張）
+
+- **店主指示**：「Yancy Körössy* - Identification 收錄 並且擴展相關專輯 給我策展計畫」→ 草案 45 張後「擴張到 200 張」。
+- **查證**：《Identification》是 MPS（西德）1969 錄、1970 發行，Kőrössy 第一張西方錄音（Hans Rettenbacher、Charly Antolini），不是 Electrecord 盤。卡池東歐爵士只有 Komeda、Stańko、Seifert、Namysłowski 1 張、Ganelin、Petrowsky 1 張；羅馬尼亞／匈牙利／捷克／南斯拉夫／保加利亞全空。
+- **規劃**：`batch-progress/eastbloc-jazz-20261101/`——`PLAN.md`（eb1 Kőrössy＋羅馬尼亞＋巴爾幹、eb2 匈牙利＋捷克斯洛伐克、eb3 波蘭、eb4 蘇聯＋東德、eb5 MPS／SABA 與東歐移民西方錄音，各 40 張）、`CUR-DISPATCH-EB.md`（策展派工，產出沿用情緒薄格線 curation 格式與全套腳本）。藝人介紹預留 ar-d-241～245（溢出 251～255）。
+- **主要檔案**：同上兩檔。
+- **驗證**：純規劃文件。
+
 ### 2026-10-30｜dip-vinyl-shop｜管理員「🏪 重跑序章」改成不存檔的預覽
 
 店主：「管理員模式重跑序章不用清空個人紀錄，跳出就結束這一輪暫時的，下次開始再一樣重來不清空」。
