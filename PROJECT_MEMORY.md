@@ -8,6 +8,21 @@
 - **主要檔案**：`batch-progress/rerate-20261101/verdicts/s04–s06-*.json`、`s04–s06.summary.md`、`PLAN.md`。
 - **驗證**：合併檢查三片各 250／250，缺 0、重複 0、值皆 1–5 整數；keep 0。
 
+### 2026-11-01｜dip-vinyl-shop｜三軸重評 R4：s10–s12 verdicts 707 張
+
+- **範圍**：情緒薄格 ml5–ml59、ml6、ml9 後段，加上 Spotify 補卡 sf01–sf12（日本、台灣華語、韓國、港中、歐陸、店主收藏盤）。只交 verdicts，seed、manifest、card_catalog 都沒動。
+- **新舊分布（1/2/3/4/5）**：
+  - 經典度：舊 1/50/622/34/0 → 新 1/36/374/281/15。
+  - 冷門度：舊 11/82/189/288/137 → 新 11/203/335/150/8。
+  - 硬蕊度：舊 32/118/486/66/5 → 新 161/335/174/35/2。
+- **過程**：15 段，每段派一支 Opus 代理，沒有退回重派。主線抽核後改了 6 張，5 張是正規獨立廠的冷門度 4→3，1 張是 Black Angels《Passover》經典度 5→4。
+- **踩到的坑**：代理共用 scratchpad，暫存腳本互相覆蓋，有一次跨段誤寫，已清掉、核對無混入。往後派工要指定各支代理用獨立檔名。
+- **主要檔案**：
+  - `batch-progress/rerate-20261101/verdicts/s10–s12-*.json`
+  - `s10/s11/s12.summary.md`
+  - PLAN.md 分片表 R4 列
+- **驗證**：三片合併檢查都通過——每個 key 剛好一筆，值都是 1–5 整數；keep 1 張。
+
 ### 2026-11-01｜dip-vinyl-shop｜三軸重評 R3：s07–s09 verdicts 750 張
 
 - **範圍**：情緒薄格 md4 後段–md9、ml1–ml49（dark ambient／drone／dub techno、roots／lovers rock、soul／R&B、lo-fi、post-rock），15 段各 50 張派 Opus 代理照 `DISPATCH.md` 評分；只交 verdicts，不動 seed／manifest／card_catalog。
