@@ -3601,4 +3601,13 @@ window.DipPreviewStatus = Object.freeze({
   "championxiii|champion status": "unavailable",
   "the charlottes|lovehappy": "unavailable",
   "sleepytime trio|plus 6000": "unavailable",
+  "andrzej kurylewicz quintet|10+8": "unavailable",
+  "krzysztof sadowski|three thousands points": "unavailable",
+  "string connection|workoholic": "unavailable",
+  "jan ptaszyn wróblewski|skleroptak": "unavailable",
+  "marek bliziński|the wave": "unavailable",
+  "tomasz szukalski|tina kamila": "unavailable",
+  "krzysztof ścierański|bass line": "unavailable",
+  "andrzej przybielski|w sferze dotyku": "unavailable",
+  "ewa bem|dla ciebie jestem sobą": "unavailable",
 });
