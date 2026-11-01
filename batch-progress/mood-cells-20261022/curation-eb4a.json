@@ -1,0 +1,642 @@
+{
+ "group": "eb4a",
+ "factions": [
+  {
+   "id": "mainstream",
+   "zh": "蘇聯主流 bop／modal（Melodiya）",
+   "count": 3,
+   "why": ""
+  },
+  {
+   "id": "baltic",
+   "zh": "波羅的海爵士（愛沙尼亞）",
+   "count": 4,
+   "why": ""
+  },
+  {
+   "id": "bigband",
+   "zh": "大樂團（Lundstrem／Weinstein／Rosner）",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "fusion",
+   "zh": "fusion／jazz-rock（Arsenal、Allegro 等）",
+   "count": 3,
+   "why": ""
+  },
+  {
+   "id": "folkfusion",
+   "zh": "民謠融合（mugham、愛沙尼亞民謠）",
+   "count": 3,
+   "why": ""
+  },
+  {
+   "id": "free",
+   "zh": "自由／前衛爵士",
+   "count": 3,
+   "why": ""
+  },
+  {
+   "id": "vocal",
+   "zh": "人聲",
+   "count": 2,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Леонид Чижик",
+   "album": "Reminiscences",
+   "year": 1981,
+   "label": "Melodiya",
+   "country": "su",
+   "faction": "mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "蘇聯後咆勃鋼琴代表人物的個人名義主作，Warren／Waller 題材的精緻鋼琴三重奏",
+   "moodGuess": {
+    "x": 2.8,
+    "y": -0.4,
+    "z": 0.8,
+    "why": "流暢 post-bop 鋼琴，旋律好入耳"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/485894",
+    "https://www.discogs.com/release/3985641"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 485894 有完整曲目與封面",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/485894",
+    "https://www.discogs.com/release/3985641"
+   ],
+   "releaseException": "",
+   "queryAlias": "Leonid Chizhik；Леонид Чижик Воспоминания",
+   "uncertain": ""
+  },
+  {
+   "artist": "Лембит Саарсалу, Леонид Винцкевич",
+   "album": "Джаз вдвоем",
+   "year": 1986,
+   "label": "Melodiya",
+   "country": "su",
+   "faction": "baltic",
+   "genres": [
+    "jazz"
+   ],
+   "why": "愛沙尼亞薩克斯風宗師與鋼琴家的雙人 modal 錄音，波羅的海爵士的抒情一端",
+   "moodGuess": {
+    "x": 2.3,
+    "y": -0.2,
+    "z": 0.6,
+    "why": "薩克斯風與鋼琴雙人，安靜 modal"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/970402",
+    "https://www.discogs.com/release/8233305"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 970402 有完整曲目與封面",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/970402",
+    "https://www.discogs.com/release/8233305"
+   ],
+   "releaseException": "",
+   "queryAlias": "Two Playing Jazz；Lembit Saarsalu & Leonid Vintskevich；Лембит Саарсалу Леонид Винцкевич Джаз вдвоем",
+   "uncertain": "MB 查無 1986 原盤；Discogs 僅 1 個版本"
+  },
+  {
+   "artist": "Каданс",
+   "album": "Иванушка-дурачок",
+   "year": 1982,
+   "label": "Melodiya",
+   "country": "su",
+   "faction": "mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Lukyanov 領軍的莫斯科室內爵士團，改編 Coltrane 並融入俄式旋律的 modal 代表作",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.4,
+    "z": -0.2,
+    "why": "Coltrane 式 modal，推進強旋律偏疏"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/582860",
+    "https://www.discogs.com/release/3546960"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 582860 有完整曲目與封面",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/582860",
+    "https://www.discogs.com/release/3546960"
+   ],
+   "releaseException": "",
+   "queryAlias": "Ivanushka the Fool；Kadans (German Lukyanov)；Каданс Иванушка-дурачок；Cadence Moscow Chamber Jazz Ensemble",
+   "uncertain": "藝人名以團名 Kadans 為主，Lukyanov 為指揮；去重請兩種都查"
+  },
+  {
+   "artist": "Алексей Кузнецов, Николай Громин",
+   "album": "Джанго",
+   "year": 1978,
+   "label": "Melodiya",
+   "country": "su",
+   "faction": "mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "蘇聯吉他雙人向 Django Reinhardt 致敬的搖擺／吉普賽爵士名盤",
+   "moodGuess": {
+    "x": 3.0,
+    "y": -0.6,
+    "z": 1.0,
+    "why": "原音吉他搖擺，旋律明亮"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/458682",
+    "https://www.discogs.com/release/3752143"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 458682 有完整曲目與封面",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/458682",
+    "https://www.discogs.com/release/3752143"
+   ],
+   "releaseException": "",
+   "queryAlias": "Django；Alexei Kuznetsov & Nikolai Gromin；Алексей Кузнецов Николай Громин Джанго",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tiit Paulus",
+   "album": "Tiit Paulus ja sõbrad",
+   "year": 1981,
+   "label": "Melodiya",
+   "country": "su",
+   "faction": "baltic",
+   "genres": [
+    "jazz"
+   ],
+   "why": "愛沙尼亞大提琴／貝斯手的朋友班底錄音，modal 與 jazz-funk 混合的塔林爵士代表",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.1,
+    "z": 0.3,
+    "why": "modal funk 律動，旋律友善"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/472651",
+    "https://www.discogs.com/release/3888435"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 472651 有完整曲目與封面",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/472651",
+    "https://www.discogs.com/release/3888435"
+   ],
+   "releaseException": "",
+   "queryAlias": "Тийт Паулус и друзья",
+   "uncertain": "池中無 Tiit Paulus 其他作品"
+  },
+  {
+   "artist": "Džässkvartett «Tallinn»",
+   "album": "Džässkvartett «Tallinn»",
+   "year": 1983,
+   "label": "Melodiya",
+   "country": "su",
+   "faction": "baltic",
+   "genres": [
+    "jazz"
+   ],
+   "why": "愛沙尼亞 cool 派四重奏唯一專輯，北歐式冷靜抒情",
+   "moodGuess": {
+    "x": 2.2,
+    "y": -0.6,
+    "z": 0.5,
+    "why": "cool jazz 抒情，鬆而亮"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/816329",
+    "https://www.discogs.com/release/11814346"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 816329 有完整曲目與封面",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/816329",
+    "https://www.discogs.com/release/11814346"
+   ],
+   "releaseException": "",
+   "queryAlias": "Džässkvartett Tallinn；Джаз-квартет Таллин；Tallinn Jazz Quartet",
+   "uncertain": ""
+  },
+  {
+   "artist": "Джаз-оркестр Иосифа Вайнштейна",
+   "album": "Ленинградский джаз-оркестр",
+   "year": 1978,
+   "label": "Melodiya",
+   "country": "su",
+   "faction": "bigband",
+   "genres": [
+    "jazz"
+   ],
+   "why": "列寧格勒 Weinstein 大樂團代表作，蘇聯 swing／big band 的最高水準之一",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.7,
+    "z": 1.0,
+    "why": "大樂團擺盪，旋律清楚"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/630693",
+    "https://www.discogs.com/release/6040071"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 630693 有完整曲目與封面",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/630693",
+    "https://www.discogs.com/release/6040071"
+   ],
+   "releaseException": "",
+   "queryAlias": "Leningrad Jazz Orchestra；Iosif Weinstein Jazz Orchestra；Оркестр Иосифа Вайнштейна Ленинградский джаз-оркестр；Yusef Wainstein",
+   "uncertain": ""
+  },
+  {
+   "artist": "Джазовый ансамбль Игоря Бриля",
+   "album": "Утро Земли",
+   "year": 1978,
+   "label": "Melodiya",
+   "country": "su",
+   "faction": "fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Bril 領軍的 fusion 代表作，帶巴爾幹民謠與自由即興段",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.5,
+    "z": -0.2,
+    "why": "fusion 推進，民謠旋律偶現"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/468140",
+    "https://www.discogs.com/release/3846778"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 468140 有完整曲目與封面",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/468140",
+    "https://www.discogs.com/release/3846778"
+   ],
+   "releaseException": "",
+   "queryAlias": "Morning of the Earth；Igor Bril Jazz Ensemble；Джазовый ансамбль Игоря Бриля Утро Земли；Utro Zemli",
+   "uncertain": ""
+  },
+  {
+   "artist": "Аллегро",
+   "album": "Sphinx",
+   "year": 1986,
+   "label": "Melodiya",
+   "country": "su",
+   "faction": "fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Levinovsky 的 Allegro 巔峰，Mobile Fidelity 後來也發行日版，是蘇聯 fusion 的海外代表",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0.6,
+    "z": -0.4,
+    "why": "fusion 組曲，電氣冷光"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b3a1552f-6d4c-4313-b045-76b51adb9eba",
+    "https://www.discogs.com/master/555403",
+    "https://www.discogs.com/release/8651302"
+   ],
+   "mbRgMbid": "b3a1552f-6d4c-4313-b045-76b51adb9eba",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Allegro (Nikolai Levinovsky)；Аллегро Сфинкс",
+   "uncertain": "MB 條目藝人為 Allegro Jazz Ensemble（1986 Sphinx，已核對）"
+  },
+  {
+   "artist": "ВИА Севиль",
+   "album": "Севиль",
+   "year": 1978,
+   "label": "Melodiya",
+   "country": "su",
+   "faction": "folkfusion",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "Vagif Mustafazadeh 領軍的人聲樂團，mugham 與 jazz-funk 並置的民謠融合",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.2,
+    "z": 0.5,
+    "why": "mugham 旋律＋律動，偏暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/696229",
+    "https://www.discogs.com/release/5241431"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 696229 有完整曲目與封面",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/696229",
+    "https://www.discogs.com/release/5241431"
+   ],
+   "releaseException": "",
+   "queryAlias": "Sevil；Sevil Ensemble (Vagif Mustafazadeh)；Вокально-инструментальный ансамбль Севиль；VIA Sevil",
+   "uncertain": "VIA（人聲器樂團）；Mustafazadeh 為藝術指導，歸藝人以團名較穩"
+  },
+  {
+   "artist": "Lembit Saarsalu kvartett",
+   "album": "2 x Labajalg",
+   "year": 1980,
+   "label": "Melodiya",
+   "country": "su",
+   "faction": "folkfusion",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "愛沙尼亞薩克斯風宗師的四重奏，把民謠舞曲 labajalg 改編為爵士的代表錄音",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 0.0,
+    "z": 0.7,
+    "why": "民謠旋律＋中速搖擺"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/441a7ba4-a2e6-43b7-ab9b-317d44b39f40",
+    "https://www.discogs.com/master/897800",
+    "https://www.discogs.com/release/2791041"
+   ],
+   "mbRgMbid": "441a7ba4-a2e6-43b7-ab9b-317d44b39f40",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "2 x Rustic Waltz；Lembit Saarsalu Quartet；Lembit Saarsalu kvartett 2 x Labajalg；Лембит Саарсалу",
+   "uncertain": "MB 日期 1981，Discogs 版面 1980；填 1980"
+  },
+  {
+   "artist": "Владимир Тарасов",
+   "album": "Atto",
+   "year": 1986,
+   "label": "Melodiya",
+   "country": "su",
+   "faction": "free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Ganelin Trio 鼓手的打擊樂獨奏，Atto 系列首作，單面一首長篇",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.3,
+    "z": -1.2,
+    "why": "打擊樂獨奏，緊繃稀疏"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/816461",
+    "https://www.discogs.com/release/6633011"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 816461 有完整曲目與封面",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/816461",
+    "https://www.discogs.com/release/6633011"
+   ],
+   "releaseException": "",
+   "queryAlias": "Vladimir Tarasov；Владимир Тарасов Atto；Atto I",
+   "uncertain": "Atto II（1987）等後續僅在池外；本組只提首作"
+  },
+  {
+   "artist": "Архангельск",
+   "album": "Призраки старого города",
+   "year": 1990,
+   "label": "Melodiya",
+   "country": "su",
+   "faction": "free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Rezitsky 帶領的 Arkhangelsk 樂團，1987 年愛沙尼亞電台錄音，兩面長篇自由即興",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 0.3,
+    "z": -1.3,
+    "why": "自由即興，尖銳"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/383697",
+    "https://www.discogs.com/release/3088180"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 383697 有完整曲目與封面",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/383697",
+    "https://www.discogs.com/release/3088180"
+   ],
+   "releaseException": "",
+   "queryAlias": "Ghosts of the Old Town；Arkhangelsk (Vladimir Rezitsky)；Архангельск Призраки старого города；Prizraki starogo goroda",
+   "uncertain": "1990 發行、1987 錄音；若 1991 前首發定義嚴格也符"
+  },
+  {
+   "artist": "Tatevik Oganesyan",
+   "album": "Day Dream",
+   "year": 1986,
+   "label": "Melodiya",
+   "country": "su",
+   "faction": "vocal",
+   "genres": [
+    "jazz"
+   ],
+   "why": "亞美尼亞爵士歌手唱 Ellington／Gershwin 標準曲，蘇聯最受肯定的人聲爵士專輯之一",
+   "moodGuess": {
+    "x": 2.1,
+    "y": -0.4,
+    "z": 1.0,
+    "why": "標準曲抒情，聲音甜"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9a379380-372d-421f-9364-aa81ab641a99",
+    "https://www.discogs.com/master/470993",
+    "https://www.discogs.com/release/7388369"
+   ],
+   "mbRgMbid": "9a379380-372d-421f-9364-aa81ab641a99",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Tatevik Hovhannisyan；Tatevik Oganesyan Дневные мечты",
+   "uncertain": "Discogs 與 MB 姓名拼法 Hovanesian/Oganesyan，用 Hovhannisyan 為通行寫法"
+  },
+  {
+   "artist": "Владимир Чекасин",
+   "album": "Prisiminimai",
+   "year": 1986,
+   "label": "Melodiya",
+   "country": "su",
+   "faction": "free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Chekasin 在立陶宛錄製的五段式組曲，個人名義另一高峰，自由爵士與拼貼並用",
+   "moodGuess": {
+    "x": 4.1,
+    "y": 0.3,
+    "z": -1.1,
+    "why": "自由爵士組曲，突兀不協和"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/571676",
+    "https://www.discogs.com/release/1614497"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 571676 有完整曲目與封面",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/571676",
+    "https://www.discogs.com/release/1614497"
+   ],
+   "releaseException": "",
+   "queryAlias": "The Memoirs；Vladimir Chekasin；Владимир Чекасин Воспоминания",
+   "uncertain": "池中已有 Chekasin Nomen Nescio"
+  },
+  {
+   "artist": "Константин Петросян, Татевик Оганесян, Биг-бэнд Владимира Чекасина",
+   "album": "Концерт для голоса и оркестра",
+   "year": 1986,
+   "label": "Melodiya",
+   "country": "su",
+   "faction": "vocal",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Chekasin 大樂團與兩位人聲的兩面長篇，蘇聯少見的人聲＋前衛大樂團寫作",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.5,
+    "z": -0.5,
+    "why": "人聲與大樂團長篇，戲劇性強"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/523201",
+    "https://www.discogs.com/release/8223014"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 523201 有完整曲目與封面",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/523201",
+    "https://www.discogs.com/release/8223014"
+   ],
+   "releaseException": "",
+   "queryAlias": "Concerto for Voice and Orchestra；Konstantin Petrosian, Tatevik Hovhannisyan & Vladimir Chekasin Big-Band；Константин Петросян Татевик Оганесян Биг-бэнд Владимира Чекасина Концерт для голоса и оркестра",
+   "uncertain": "藝人欄含三方名義，建卡時可簡為 Chekasin Big-Band；2 曲長篇"
+  },
+  {
+   "artist": "Petras Vyšniauskas Quartet",
+   "album": "Ieškojimai ir atradimai",
+   "year": 1984,
+   "label": "Melodiya",
+   "country": "su",
+   "faction": "baltic",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "立陶宛薩克斯風手 Vyšniauskas 領軍的四重奏，把立陶宛民謠主題與巴爾幹節奏改編為自由爵士",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.1,
+    "z": -0.4,
+    "why": "自由爵士加民謠主題，緊繃但有旋律"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/386535",
+    "https://www.discogs.com/release/2962234"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 386535 有完整曲目與封面",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/386535",
+    "https://www.discogs.com/release/2962234"
+   ],
+   "releaseException": "",
+   "queryAlias": "Searchings and Discoveries；Jazz Quartet Led By Petras Vyšniauskas",
+   "uncertain": ""
+  },
+  {
+   "artist": "Джаз-хорал Александра Киладзе",
+   "album": "Джаз-хорал Александра Киладзе",
+   "year": 1987,
+   "label": "Melodiya",
+   "country": "su",
+   "faction": "folkfusion",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "喬治亞作曲家 Kiladze 把喬治亞合唱傳統與 swing 爵士結合的人聲＋樂團專輯，喬治亞爵士罕見的錄音室盤",
+   "moodGuess": {
+    "x": 3.1,
+    "y": 0.3,
+    "z": 0.8,
+    "why": "喬治亞合唱＋swing，旋律明亮"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/3568505",
+    "https://www.discogs.com/release/5324042"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 3568505 有完整曲目與封面",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/3568505",
+    "https://www.discogs.com/release/5324042"
+   ],
+   "releaseException": "",
+   "queryAlias": "Jazz Choral；Aleksandre Kiladze's Jazz Choral；Kiladze Jazz Chorale",
+   "uncertain": "Georgian 派系唯一一張；Tbilisi 錄音室盤"
+  },
+  {
+   "artist": "Джазовый ансамбль Игоря Бриля",
+   "album": "Оркестр приехал",
+   "year": 1980,
+   "label": "Melodiya",
+   "country": "su",
+   "faction": "fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Bril 領軍的 Afro-Cuban 與 jazz-funk 風格作品，第二個高峰（與《Утро Земли》不同路線）",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.4,
+    "z": 0.6,
+    "why": "古巴律動 jazz-funk，旋律明亮"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/044d8886-7116-4daf-ad12-9bcf37804e1e",
+    "https://www.discogs.com/master/497228",
+    "https://www.discogs.com/release/5233837"
+   ],
+   "mbRgMbid": "044d8886-7116-4daf-ad12-9bcf37804e1e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "An Orchestra Came；Igor Bril Jazz Ensemble；Игорь Бриль Оркестр приехал；Jazz Ensemble Directed By Igor Brill",
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "池中已有（西里爾拼寫藝人名）而已剔除：Kuryokhin Ways of Freedom、Chekasin Nomen Nescio、Mustafazadeh 1979、Arsenal 1979／1983、Allegro Контрасты、Garanian Лабиринт、Ponomareva Искушение、Lundstrem 1973；池中另有 Chizhik Лента Мёбиуса、Rosner Караван、Lundstrem В сочных тонах 等，故 Chizhik 只收一張。",
+  "country 一律 su；皆 1991 前首發。Allegro 池中已有 2 張，本組仍收 Sphinx（MB 查得到的 1986 代表作），主線可汰。",
+  "Georgian 僅 Kiladze 一張；Latvian 未找到可靠爵士正規錄音室盤（Vīgners 為流行／schlager，Pauls 池中已有）；Lithuanian 以 Vyšniauskas 為主（Sasnauskas 為 1991 年盤不收，Ganelin 系排除）；Armenian 為 Hovhannisyan 人聲。",
+  "未收：Gennady Golstein（僅 1965 Vee Jay 美版）、Roman Kunsman（蘇聯時期無 Melodiya LP）、Anatoly Kroll（Sovremennik 偏 estrada）、Boris Frumkin（僅 Gramofon 1969 流行器樂）。",
+  "封面皆以 Discogs master 圖為準（API 回報有 images）。",
+  "主線回饋後：artist／album 改原盤原文，英譯在 queryAlias（以「；」分隔）；主線汰除 5 張，剩 19 張。"
+ ]
+}
