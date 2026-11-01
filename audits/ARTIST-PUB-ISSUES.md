@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1033 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1034 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1037,3 +1037,4 @@
 | ar-d-241 | Theodosii Spassov & Stefan Moutafchiev | The Long Road | 後兩首出自 Spassov 之手，交給爵士組合 Jazz Line 演奏 | Discogs 曲目頁載 B 面〈Pravo Plovdivsko Horo〉由 White, Green And Red 演奏；Jazz Line 無依據。另「後兩首」與曲目頁不盡相符，請核對 | https://www.discogs.com/release/2339037 |
 | ar-d-242 | György Szabados & MAKUZ | A Szarvassá Vált Fiak | 鋼琴手 György Szabados 在 1980 年代初成立了它 | 成立年各源不一（Fonó 1983、hu 維基 1988），「1980 年代初」無法證實，建議改「1980 年代」或不寫 | https://www.fono.hu/en/news/tribute-to-szabados-gyorgy/ |
 | ar-d-242 | Károly Binder | Kontinentspiel | 1981 年贏得 Kalis 爵士鋼琴大賽 | 比賽是波蘭 Kalisz 國際爵士鋼琴大賽，拼法應為 Kalisz；李斯特頁另說 1981 年得獎曲是 Kontinentspiel，簡介寫「一人彈鋼琴、豎琴」之類編制細節未驗 | https://uni.lisztacademy.hu/teaching-staff/binder-karoly-787 |
+| ar-d-242 | Béla Szakcsi Lakatos | Sham | 1972 年創立融合團體 Rákfogó | 匈牙利維基與英文維基都只寫他加入 Rákfogó（1972 年起），沒有說他創團；事實庫舊條目寫「創團人」，來源只有一條匈牙利維基導言，待本機再核。 | https://hu.wikipedia.org/wiki/Szakcsi_Lakatos_B%C3%A9la |
