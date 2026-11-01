@@ -1215,3 +1215,16 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   2. Joachim Kühn：「被稱為 20 世紀最成功的爵士鋼琴手之一」改為「鋼琴廠 Bechstein 稱他為…」（商業夥伴自述）。
   3. Elek Bacsik：結尾「他並不滿足」語意懸空，改寫為「心裡想的卻是爵士俱樂部」（來源：他自述想要俱樂部與音樂節）；修後壓回 thin 160 字內。
 - 其餘 18 位逐位核對補洞稿 facts，未改；穐吉敏子照東亞人名規則保留漢字。
+
+## ar-d-243（2026-11-01，鐵幕爵士 eb3 補介紹：波蘭 60–80 年代爵士）
+
+- 31 位排入，31 位全上架（23 full、8 thin：Trzaskowski Sextet、Polish Jazz Quartet、Novi Singers、Zabiegliński、Karolak／Urbaniak／Bartkowski 合作鍵、Krzysztof Sadowski、Grupa Organowa、Ścierański），skipped 0。補洞 4 組（10／10／10／1），搜尋合計 55 次（WebSearch 每位 ≤2，Wróblewski 3 次）。
+- 維基預抓：scratchpad 版 `artist-wiki.mjs` 加 `LANGMAP`（全批 pl）與 `TITLES`（手指定頁名）。錯頁作廢：Polish Jazz Quartet（en「Polish jazz」、pl 消歧義）、String Connection（en「Connection string」）。Sadowski pl 消歧義，補洞層認定 1936 年生的 Hammond 風琴手。預抓途中撞維基 API 限流，Sojka／Ewa Bem 等以手指定頁名重抓。
+- Polish Jazz Quartet 以 1965 年卡池專輯＋Discogs 認定為 Wróblewski 領軍的四重奏；貝斯手三種拼法，正文不寫名。
+- **主線審稿**（修 3 位）：
+  1. Andrzej Kurylewicz Quintet：刪末句「Kurylewicz 被視為波蘭爵士的先驅」（與本人鍵結尾重複；本人鍵保留）。
+  2. Wojciech Karolak：「隨父母經營區被帶到克拉科夫」漏字，照 facts 補「經 Pruszków 的營區」；Time Killers 主詞改為「（樂團）專輯據說被樂評票選為…」（維基同家族、單源）；刪「氣氛大師」壓回 247 字。
+  3. The Włodzimierz Nahorny Trio：1967 年維也納獎補「業餘」（notes：本人說常被與 1966 年世界現代爵士大賽混淆；上線簡介亦寫業餘爵士節）。
+- 裁定：《Jazz Forum》讀者票選名次（Bartkowski、Ścierański、Bliziński、Sojka、Ewa Bem）一律不寫——媒體名不進正文，波蘭也無 Swing Journal 那種店主特准例外；Warska 與 Ewa Bem 都有「波蘭爵士第一夫人」的稱號且各有出處，兩篇都保留。Bliziński「波蘭第一位世界級爵士吉他手」（只見維基家族）不寫；Sadowski 2019 年後的指控與起訴不寫；Urbaniak 1971 年蒙特勒獎（en 維基單源）不寫；Kosz 死因不寫。Sojka 2025 年 8 月卒於索波特（pl／en 維基＋報導兩源）、Wróblewski 2024 年 5 月卒（維基＋Polskie Radio）照寫。
+- 跨鍵：Kurylewicz（五重奏／本人）、Trzaskowski（五重奏帶音樂取向／六重奏寫 Curson 客座）、Namysłowski 兩個樂團鍵（本人已有介紹）、Karolak（本人／三人合作）、Sadowski（本人／風琴樂團）切入角度各異。Jerzy Milian Trio、Trzaskowski Quintet 因無本人鍵，帶簡短生平。
+- pubIssues：Ewa Bem 專輯年（1987／1986）、Warska《Somnambulicy》Piwnica 開設年、Zabiegliński「伊拉克三年」、《Na kosmodromie》Urbańska「是他的妻子」（1990 年代初才結婚）、Sojka《Blublula》「卡托維治」譯名等。
