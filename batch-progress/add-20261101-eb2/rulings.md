@@ -65,3 +65,15 @@
 - **47127**　Jazz Q《Coniunctio》：Discogs 版本為 Gramofonový klub 版；B 面曲長兩源不一致，只寫 A 面 19:15。full。
 - **47128**　Jazz Q《Pozorovatelna》：1973-01-29 錄音日僅 Discogs 單源，建議寫『1973 年初』；〈Pori 72〉不寫成芬蘭 Pori 爵士節。full。
 - **47129**　全組 moodGuess 存疑（聲音無樂評佐證，僅 credits／風格標籤）：Csík、Bergendy、Dimenzió、Syrius、Berki、Harcsa 的『躁／靜』軸；Coniunctio、Pozorovatelna 與 moodGuess 吻合。無須汰換。
+
+## 研究 e 組（47141–47150）
+- **47141**　Viklický《Okno》：年份 Discogs／MB 1981，盤面 ℗ 1980，cdmusic.cz 與英維基 1980；寫『1979 年錄成、1980–81 年發行』。錄音日 Discogs 11–13 日、cdmusic 11–14 日，採 Discogs。Vinnie／Vinton Johnson 同人。full。
+- **47142**　Viklický《V Holomóci Městě…》：Holomóc＝哈納方言的奧洛穆茨（cs 維基 Olomouc 條）；曲名取景奧洛穆茨一帶屬字面推論。「摩拉維亞民謠」是英維基對他整體風格的敘述，非本盤樂評。維基 discography 漏列此盤，以 Discogs 為準。full。
+- **47143**　Růžička《Ozvěny》：盤面 1980／錄音 1979-03（cs 維基寫 1979）。Petr Král 次中音、四重奏；Petrof 平台鋼琴出自盤面備註。full。
+- **47144**　Energit《Energit》：curatorWhy 的 Mahavishnu 影響有英維基支持（指樂團整體、非本盤樂評），捷克維基無；寫作層請標明出處。Black Point 擴充版頁 404，只據搜尋摘要。full。
+- **47145**　Brom《Polymelomodus》：原盤走 §1 人工（Discogs 1805998，ČSSR 1977，錄於 1976 年底廣播電台一號錄音室）；B4 即 Steely Dan〈Do It Again〉；Soulstrut 為使用者貼文，慎引。full。
+- **47146**　Fermáta《Fermáta》：thin。無樂評、無錄音日；曲長 Discogs master 與斯維基差數秒，採 master 並寫『約』；Jupiter Records 1976 版僅單源；Perpetuum 長曲留給即興為推論。
+- **47147**　Jonáš《Impresie》：thin。sk／cs／en 維基皆無條目，僅 Discogs 簡介與 Apple；年份盤面 1978／錄音 1978-04，Discogs 登 1979，寫『1978 年春錄成』；〈Pozdrav Ch. Coreovi〉不斷言 Chick Corea；〈Akela〉作者歸屬不確定。與 Růžička《Ozvěny》共用 Kořínek／Vejvoda／Král 三位與 Mozarteum。
+- **47148**　Olmerová《Eva Olmerová》：盤名確認為 Gramofonový Klub 版（0/1 15 0495，1968），同批錄音一般版為 1969《Jazz-Feeling》；cs 維基稱《Jazz Feelin'》（1968）指一般版，寫作層以卡單盤名為準。Apple 同名為 2001 合輯、1974 同名為 Traditional Jazz Studio，皆非本卡。Mahalia Jackson 取自單源（cs 維基），曲目 Discogs 皆標 Traditional。full。
+- **47149**　moodGuess 全組未推翻、亦無聽感樂評佐證；Energit、Brom、Olmerová 吻合電氣長套曲／大編制放克／福音暖嗓。Jonáš、Fermáta 的『空氣感／旋律性』無來源，僅 credits。無須汰換。
+- **47150**　WebSearch 用了 3 次（Okno、Energit、Brom）；維基 curl 429 後改 WebFetch，其餘走 Discogs API。年份分歧：Okno、Ozvěny、Impresie 皆盤面年與卡單年差 0–1 年，已逐張寫入 notes。
