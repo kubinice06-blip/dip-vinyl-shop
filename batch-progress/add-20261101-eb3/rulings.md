@@ -18,3 +18,11 @@
   - Marianna Wróblewska《Sound of…》：§1 人工身分、策展自評知名度低，人聲已有 Novi 3、Warska、Ewa Bem、Sojka。
 - 年份：MB 首發年是 2004／2006 重發的（Kurylewicz《10+8》、Bartkowski《Drums Dream》、Ptaszyn《Sprzedawcy glonów》），取 Discogs 原盤年；研究層核對。
 
+
+## 研究 a 組
+- 51301：8 張全為 Discogs 原盤核對，盤名、年份、廠牌（Polskie Nagrania Muza）與卡單一致，未推翻。
+- 51302：《10+8》MB 首發 2006 為重發年，Discogs 原盤 1968（XL 0439，1967-10 華沙錄音），上架年 1968。
+- 51303：《Seant》年份各說不一（Discogs 1967、en.wikipedia 1966，錄音期亦不同），維持卡單 1967。
+- 51304：《Polish Jazz Quartet》MB 掛 Ptaszyn、1964，Discogs 掛團名、1965（錄音 1964-12）；維持卡單。
+- 51305：moodGuess 存疑：Trzaskowski《Polish Jazz Vol. 4》（18 分鐘序列技法《Synopsis》）與《Seant》（B 面 24 分鐘前衛長篇）可能比預估更冷更抽象。其餘 6 張相符。
+- 51306：Rebela（《10+8》）為 Discogs 署名樂器，內容未能查證；Kosz A 面改編曲原作者 Discogs 未標，facts 不寫原作者。
