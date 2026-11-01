@@ -34,4 +34,4 @@
 | R2 | s04–s06 | mc5 後段–md4 | ✅ verdicts 750 張（經典度新分布 1/2/3/4/5＝0/8/448/282/12）；冷門度口徑：場景主力廠（Cryo Chamber、Cyclic Law、Miasmah、Touch、Room40、Kranky、Mego）首發即上串流＝3，極小廠／私壓有數位＝4，套用時可對照他片 |
 | R3 | s07–s09 | md4 後段–ml5 | ✅ verdicts 750 張（經典度新分布 1/2/3/4/5＝0/23/411/301/15） |
 | R4 | s10–s12 | ml5–sf12 | ✅ verdicts 707 張（經典度新分布 1/2/3/4/5＝1/36/374/281/15；s10 250、s11 250、s12 207；主線改 6 張、退回 0 段） |
-| 套用 | — | — | |
+| 套用 | — | 全 2,957 張 | ✅ 三軸有變 2,780、稀有度有變 1,278；seed 字串替換、manifest 222 份（根目錄＋batch-progress）、card_catalog 2,957 筆（只推四欄）；published gate 111 份：評分／稀有度／card_catalog／seed 相關檢查 0 error；唯一殘留是 CAA 封面間歇 HTTP 500（三輪重跑各不相同，累計 17 張出現過，release-group JSON 端點同樣 500，屬 CAA 上游問題、與本次無關，待封面線處理）；明細 `applied.json`、`REPORT.md`，錨點寫進 ALBUM_ONBOARDING §0.8.1 |

@@ -81,3 +81,9 @@
 - `seed_cards.json`：三軸欄字串替換（2026-11-01 套用）。
 - manifest：根目錄與 `batch-progress/add-*/onboarding-manifest.json` 兩份，`ratings.source`＝`manual:rerate-20261101`，舊值在 `ratings.previous`，`rarity` 依公式重算。
 - Firestore `card_catalog`：`publish-manifest` 乾跑產 patch，過濾成只含 classic／obscurity／accessibility／rarity 四欄（`publish-stage/rerate-20261101/card-catalog-patches.json`），推 2,957 筆成功、0 失敗。
+
+## Published gate
+
+- 111 份 manifest 全跑（12 路平行，失敗者降平行度再跑兩輪）。published gate 111 份：評分／稀有度／card_catalog／seed 相關檢查 0 error；唯一殘留是 CAA 封面間歇 HTTP 500（三輪重跑各不相同，累計 17 張出現過，release-group JSON 端點同樣 500，屬 CAA 上游問題、與本次無關，待封面線處理）。
+- md14 四張原聲帶簡介：manifest 同步成 10-23 原聲帶線改寫後的 KV 文字，重跑通過。
+- 出現過 500 的封面（17）：Alice Russell — My Favourite Letters、Anjou — Anjou、Apocryphos, Kammarheit & Atrium Carceri — Onyx、Brian Reitzell — Hannibal: Season 1, Volume 1、Han Bennink — Solo、Jade Warrior — Last Autumn's Dream、Kevin Richard Martin — Sirens、Linval Thompson — Look How Me Sexy、Mount Eerie — Ocean Roar、Oren Ambarchi — Suspension、Port Blue — The Airship、Set Fire to Flames — Telegraphs in Negative / Mouths Trapped in Static、Supersilent — 12、Vector Hold — Mechanized、Waveshaper — Exploration 84、Welle: Erdball — Die Wunderwelt der Technik、静香 — 天界のペルソナ
