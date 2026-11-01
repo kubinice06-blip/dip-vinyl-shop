@@ -19,3 +19,4 @@
 - 50–100：通過。抽查 Arditti《Freeman Etudes》、Joe Morris《Singularity》、Bead CDr＝5、Holzman Wolpe、Wishart《Tongues of Fire》。本段無 5 分經典屬合理（獨奏／二重奏次要盤多）。
 - 100–150：通過。抽查 Tony Oxley《Ichnos》、LaSalle Quartet Ligeti（DG）、Pacifica Carter（葛萊美、Naxos＝2）、Aperghis《Machinations》、Mari Poll（新人非首選＝2）。新音樂原本一律硬蕊 5，降回 4、新複雜主義留 5，方向合理。
 - 200–250：通過。抽查 Pollini Webern／Boulez（DG，5）、Composers Quartet Carter、Chojnacka《Clavecin 2000》、TESTPATTERN《Après-midi》、Plastics（日系 techno-pop 硬蕊 2）。
+- 150–200：通過。抽查 New York Art Quartet、Giuseppi Logan（ESP＝3）、Helffer Boulez、Woodward Barraqué、Acting Trio（硬蕊方向修正）。
