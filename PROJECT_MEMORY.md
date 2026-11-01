@@ -15,6 +15,14 @@
   - PLAN.md 分片表 R4 列
 - **驗證**：三片合併檢查都通過——每個 key 剛好一筆，值都是 1–5 整數；keep 1 張。
 
+### 2026-11-01｜dip-vinyl-shop｜三軸重評 R3：s07–s09 verdicts 750 張
+
+- **範圍**：情緒薄格 md4 後段–md9、ml1–ml49（dark ambient／drone／dub techno、roots／lovers rock、soul／R&B、lo-fi、post-rock），15 段各 50 張派 Opus 代理照 `DISPATCH.md` 評分；只交 verdicts，不動 seed／manifest／card_catalog。
+- **新舊分布（1/2/3/4/5）**：經典度 0/78/595/77/0 → 0/23/411/301/15；冷門度 13/92/246/218/181 → 4/216/362/160/8；硬蕊度 0/133/437/163/17 → 155/335/195/63/2（dark ambient／drone 4→3、soul／dub／lo-fi 3→1–2）。
+- **主線**：每段抽 5 張覆核，退回重派 0 段；改 1 張（Kammarheit《Asleep and Well Hidden》冷門 3→4）。GY!BE 兩張曾依「Polaris 得獎」改經典 4，查證為誤記（2013 得獎作是《Allelujah! Don't Bend! Ascend!》）已撤回。第一段後派工補充：小廠首刷限量已串流冷門給 4、重要獎項得獎入圍經典至少 4。
+- **主要檔案**：`batch-progress/rerate-20261101/verdicts/s07–s09-*.json`、`s07–s09.summary.md`、`r3-mainline.log`、`PLAN.md`。
+- **驗證**：node 合併檢查三片各 250／250，缺 0、重複 0、值皆 1–5 整數；keep 1（問題總部《User Guide: I》）。
+
 ### 2026-11-01｜dip-vinyl-shop｜三軸重評 R1：s01–s03 verdicts 750 張
 
 - **範圍**：鐵幕爵士 eb1–5＋情緒薄格 mc 前段（至 mc5），15 段各 50 張派 Opus 代理照 `RUBRIC.md` 重評；只產 verdicts，不改 seed／manifest／card_catalog。
