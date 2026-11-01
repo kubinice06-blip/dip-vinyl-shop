@@ -1170,3 +1170,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 ## Spotify 補卡 sf06／sf08 補介紹（ar-d-206、ar-d-208）小結
 
 - 60 位排入 2 批，54 位上架（26 full、28 thin）、6 位不寫；審稿合計修 15 位（另撤稿 3 位：張亞東、The Cheers Cheers、Vinnum Sabbathi）。主線 WebSearch 6 次。
+
+## ar-d-245（2026-11-01，鐵幕爵士＋MPS 策展線 eb5＝西德 MPS／SABA 60–70 年代、東歐樂手移民西方後的錄音）
+
+- 21 位排入，21 位全上架（16 full、5 thin：Wolfgang Dauner Quintet、Jean-Luc Ponty Experience、Dusko Goykovich、Elek Bacsik、Valery Ponomarev），skipped 0。補洞 3 組（10／10／1），搜尋合計 99 次；pubIssues 0。
+- 維基預抓錯頁作廢 1 條：`peter herbolzheimer rhythm combination & brass` 抓到「Brass」。查無預抓 4 條（Ponty Experience、Dave Pike Set、Monty Alexander / Ernest Ranglin、Dusko Goykovich），補洞自查。
+- 同人兩鍵：`wolfgang dauner` 寫人、`wolfgang dauner quintet` 寫五重奏編制與《The Oimels》，不重複生平。合作鍵一律寫參與者身分＋合作形狀。
+- 衝突處理：Clarke-Boland 成立年三說不一 → 不寫成立年；Koller 卒日 21／22 日 → 只寫生年；Hans Koller 獎起始年 1996／1997 兩說 → 不寫年份；Ponomarev 在信差年份 → 只寫「約四年」、生年單源不寫。
+- **主線審稿**（修 3 位）：
+  1. Hans Koller：「被稱為歐洲戰後爵士史上最具影響力」改為「MPS 稱他為…」（廠牌自述，主詞要寫出）；刪「奧地利聯邦總理府自 1997 年起」的年份；刪「晚年因後輩整理獨奏錄音而復出」（與 1995 年退出音樂的事實相牴，來源只說 Urbanek 延續其合奏實驗），改寫成後者。
+  2. Joachim Kühn：「被稱為 20 世紀最成功的爵士鋼琴手之一」改為「鋼琴廠 Bechstein 稱他為…」（商業夥伴自述）。
+  3. Elek Bacsik：結尾「他並不滿足」語意懸空，改寫為「心裡想的卻是爵士俱樂部」（來源：他自述想要俱樂部與音樂節）；修後壓回 thin 160 字內。
+- 其餘 18 位逐位核對補洞稿 facts，未改；穐吉敏子照東亞人名規則保留漢字。

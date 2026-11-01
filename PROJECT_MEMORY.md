@@ -11,6 +11,12 @@
   - 合併 main（eb1／eb2／eb5）：產生檔取 main 版後重跑 write-preview／write-pool／registry／Apple 網址／seed-genres／mood／子曲風／抽卡封面；progress.json、genre-l3 JSON 層合併。
 - **主要檔案**：`batch-progress/add-20261101-eb{3,4}/`、`onboarding-manifest-add-20261101-eb{3,4}-20261101.json`、`desc-tools/batches/*/add-20261101-eb{3,4}*`、`batch-progress/mood-cells-20261022/{curation,master}-eb{3,4}*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*`、`data/discogs-cover-registry.json`、`data/mood/*`、`genre-*`、`card-subgenres.json`、`draw-covers/*`、`desc-tools/nonlatin-proper-names.json`（新）、`batch-progress/mood-axes/score-eb{3,4}/`、`batch-progress/artist-intro/roster-eb{3,4}.json`、`desc-tools/batches/artist/{progress.json,cut/ar-d-24{3,4}.txt}`、PLAN.md。
 - **驗證**：兩批 prepare／published gate 皆 0 error（合併 main 後重驗）；qa-batch research／hooks／out 全過（剩被曲名切斷的西里爾專名誤報 2 則）；封面 78 張 HTTP 200＋Discogs 31 張目視；mood 錨點 104/104。
+### 2026-11-01｜dip-vinyl-shop｜藝人介紹 ar-d-245（鐵幕爵士 eb5：MPS／SABA＋東歐移民西方錄音）上線 21 位
+
+- **結果**：21 位全上架（16 full、5 thin），skipped 0。補洞 3 組 Sonnet（搜尋 99 次）、寫作 2 組 Opus、qa-artist gap／out 皆 0 處；pubIssues 0。
+- **審稿**：主線修 3 位（Hans Koller 評價主詞改 MPS、刪獎項起始年與「復出」句；Joachim Kühn 評價主詞改 Bechstein；Elek Bacsik 結尾改寫）。維基預抓錯頁 1（Herbolzheimer→「Brass」）作廢。細節見 `batch-progress/artist-intro/ar-c-rulings.md`「ar-d-245」。
+- **主要檔案**：`desc-tools/batches/artist/{facts,research,output}/ar-d-245-*`、`progress.json`（ar-d-245 published）、`data/artist-intros/*`（6,516 位）、`batch-progress/eastbloc-jazz-20261101/PLAN.md`。
+- **驗證**：21/21 鍵在分片中可讀回；ar-d-243／244 開工時 main 上尚未 cut，本工作階段未接。
 
 ### 2026-11-01｜dip-vinyl-shop｜鐵幕爵士＋MPS 策展線 eb1（Kőrössy＋羅馬尼亞＋南斯拉夫＋保加利亞）＋eb2（匈牙利＋捷克斯洛伐克）上線 79 張
 
