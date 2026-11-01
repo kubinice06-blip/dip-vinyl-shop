@@ -68,3 +68,4 @@
 - **51448**　主線汰 Krug／Modern Soul Band／Für Fenz 後，e 組補 3 張：Wroblewsky《Swinging Pool》（年份 de.wikipedia＋MB 1986、Discogs 1987，卡單 1986 留）、Modern Jazz Big Band 65 同名盤、Brüning 1982 個人盤。研究稿已刪舊 3 張，key 順序照卡單。
 - **51449**　Modern Jazz Big Band 65 同名盤**是現場錄音**（Discogs 備註 recorded live 1965-01-22 Berlin，單聲道，Amiga 8 50 054），與 Krug 合作盤是同一場演出的兩半。建議開 `releaseException`；年份 Discogs／MB 1966、de.wikipedia 1965，卡單 1966 留。
 - **51450**　Brüning 1982 個人盤：錄音室盤（Discogs 無錄音日期），13 首標準曲／流行歌配 Studio-Orchester 與弦樂，Petrowsky 客串長笛、上低音薩克斯風並寫說明；爵士濃度中等。
+- 51477：研究 e 組補研究：Modern Jazz Big Band 65 同名盤與已汰的 Krug 盤是 1965-01-22 同一場現場的兩半。此團唱片紀錄只有這場，照「代表作本來就是現場」收、寫 `exceptionReason`（Krug 盤汰的理由是 Krug 是歌手／演員，那張不是他的代表作）。研究 d 稿刪 Manfred Ludwig-Sextett 殘留，key 與卡單一致。

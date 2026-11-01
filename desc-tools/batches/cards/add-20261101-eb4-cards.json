@@ -1372,8 +1372,11 @@
   "curatorRisk": "",
   "mbNote": "MB release-group 41b5cb0e-5044-4dcf-b3ec-3c2b4fb80829：title「Modern Jazz Big Band 65」、Album、first-release-date 1966、artist-credit「Modern Jazz Big Band 65」。證據：https://www.discogs.com/master/1246969 https://musicbrainz.org/release-group/41b5cb0e-5044-4dcf-b3ec-3c2b4fb80829",
   "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
+  "exceptionReason": "現場例外：1965-01-22 柏林 Theater der Freundschaft 音樂會錄音（Amiga 8 50 054，單聲道）；這個東德現代爵士大樂團的唱片紀錄只有這場演出，代表作本來就是現場",
+  "exceptionEvidenceUrls": [
+   "https://www.discogs.com/master/1246969",
+   "https://musicbrainz.org/release-group/41b5cb0e-5044-4dcf-b3ec-3c2b4fb80829"
+  ],
   "genreException": "",
   "selfTitled": true,
   "apex": null,
