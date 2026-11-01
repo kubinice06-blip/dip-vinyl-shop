@@ -6,3 +6,6 @@
 - 100–150：通過。抽查 Przybielski（千張私發＝5）、Oganesyan、Synopsis、Laboratorium、Ścierański（硬蕊度方向已修正）。
 - 150–200：通過。抽查 Dauner《Free Action》、Ponty《Open Strings》、Goykovich《Swinging Macedonia》、Vitouš《Infinite Search》、Peterson。
 - 200–250：通過。抽查 Rheingold、Rational Youth（5，加拿大首張全合成器流行專輯）、Laserdance、Gábor Lázár、Snowy Red。
+
+## s02
+- 0–50：通過。抽查 Contortions《Buy》（5）、As Mercenárias（5，Rolling Stone Brasil 巴西龐克第 5）、Braxton《Dortmund 1976》（5）、Tim Berne、Waveshaper（硬蕊 1）。冷門 5 全數由 Last.fm 值校回 3（Pi／Intakt／Clean Feed 正規廠）。
