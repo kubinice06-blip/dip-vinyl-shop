@@ -1,0 +1,705 @@
+{
+ "group": "eb5a",
+ "factions": [
+  {
+   "id": "de-mps-german",
+   "zh": "MPS／SABA 德語區與歐陸樂手",
+   "count": 12,
+   "why": "MPS 與 SABA 錄下的西德／奧地利／瑞士／法國樂手：自由、jazz-rock、大樂隊與古典跨界。"
+  },
+  {
+   "id": "de-mps-us",
+   "zh": "MPS／SABA 美國樂手",
+   "count": 10,
+   "why": "赴歐錄音的美國與牙買加樂手，hard bop、人聲、融合與前衛。"
+  },
+  {
+   "id": "de-mps-other",
+   "zh": "MPS／SABA 其他",
+   "count": 2,
+   "why": "跨國合奏與大樂隊。"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Wolfgang Dauner",
+   "album": "Free Action",
+   "year": 1967,
+   "label": "SABA",
+   "country": "de",
+   "faction": "de-mps-german",
+   "genres": [
+    "jazz"
+   ],
+   "why": "西德自由／搖滾爵士的開山盤，Dauner 與 Ponty、Weber、Neumeier 在 SABA 錄下歐陸爵士脫離美式 bop 的宣言。",
+   "moodGuess": {
+    "x": 4,
+    "y": 0.2,
+    "z": -0.3,
+    "why": "自由即興帶搖滾脈衝，推著走偏躁、偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/adb39fa2-e4aa-446b-9ccd-ff8320b28841",
+    "https://music.apple.com/us/album/free-action-with-jean-luc-ponty-gerd-dudek-eberhard/804038554"
+   ],
+   "mbRgMbid": "adb39fa2-e4aa-446b-9ccd-ff8320b28841",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Wolfgang Dauner Quintet",
+   "album": "The Oimels",
+   "year": 1969,
+   "label": "MPS",
+   "country": "de",
+   "faction": "de-mps-german",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Dauner 轉向電子琴與迷幻實驗的 MPS 時期代表，常被德國 jazz-rock 史與 Jazzanova 系重發列為必聽。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.6,
+    "z": 0.1,
+    "why": "電子琴糊音與迷幻，偏躁偏重"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/817ba92d-653b-35bd-a9bb-f6862a2abfbf",
+    "https://music.apple.com/us/album/the-oimels/985982647"
+   ],
+   "mbRgMbid": "817ba92d-653b-35bd-a9bb-f6862a2abfbf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Hans Koller",
+   "album": "Exclusiv",
+   "year": 1963,
+   "label": "SABA",
+   "country": "de",
+   "faction": "de-mps-german",
+   "genres": [
+    "jazz"
+   ],
+   "why": "奧地利薩克斯風手 Koller 為 SABA 錄下的歐洲 cool／modern 爵士高峰，德語區 free 與 cool 的橋梁。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": -0.4,
+    "z": 0.3,
+    "why": "cool 取向，聲部清晰、節制，偏靜偏輕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4db1243e-0059-4b82-9ec0-c224249a8d48",
+    "https://music.apple.com/us/album/exclusiv/804027647"
+   ],
+   "mbRgMbid": "4db1243e-0059-4b82-9ec0-c224249a8d48",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "George Gruntz",
+   "album": "Noon in Tunisia",
+   "year": 1967,
+   "label": "SABA",
+   "country": "de",
+   "faction": "de-mps-german",
+   "genres": [
+    "jazz"
+   ],
+   "why": "瑞士鋼琴家 Gruntz 把北非音階與 Don Cherry 式現代爵士融為一體，MPS／SABA 世界爵士前身的名作。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0,
+    "z": 0.6,
+    "why": "北非節奏帶推進，輕盈溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/80edcb6e-1ac9-4ec6-b4ad-38cd39e809dc",
+    "https://music.apple.com/us/album/noon-in-tunisia/1039379263"
+   ],
+   "mbRgMbid": "80edcb6e-1ac9-4ec6-b4ad-38cd39e809dc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Albert Mangelsdorff",
+   "album": "Albert Mangelsdorff and His Friends",
+   "year": 1969,
+   "label": "MPS",
+   "country": "de",
+   "faction": "de-mps-german",
+   "genres": [
+    "jazz"
+   ],
+   "why": "西德長號之王 Mangelsdorff 的 MPS 高峰，與 Wild Bill Davis、Elvin Jones 等人跨國合奏，展現歐洲爵士的自信。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.3,
+    "z": 0.6,
+    "why": "擺盪明亮，團體互動推進，偏躁偏暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2fe56b7c-987d-3c76-9e8f-5c4b9970b4eb",
+    "https://music.apple.com/us/album/albert-mangelsdorff-and-his-friends/1235111256"
+   ],
+   "mbRgMbid": "2fe56b7c-987d-3c76-9e8f-5c4b9970b4eb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "卡池已有 Mangelsdorff 4 張，這是第 5 張；與 Never Let It End 二選一亦可"
+  },
+  {
+   "artist": "Albert Mangelsdorff Quartet",
+   "album": "Never Let It End",
+   "year": 1970,
+   "label": "MPS",
+   "country": "de",
+   "faction": "de-mps-german",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Mangelsdorff 在 MPS 錄的現代四重奏代表作，同期歐洲 free bop 水準指標。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.2,
+    "z": 0,
+    "why": "自由 bop，張力持續，中性色溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d683ac7d-b52e-4e16-9e14-d08576182e98",
+    "https://music.apple.com/us/album/never-let-it-end/803471357"
+   ],
+   "mbRgMbid": "d683ac7d-b52e-4e16-9e14-d08576182e98",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Volker Kriegel",
+   "album": "Inside: Missing Link",
+   "year": 1972,
+   "label": "MPS",
+   "country": "de",
+   "faction": "de-mps-german",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Kriegel 以吉他寫下的德國 jazz-rock 早期經典，MPS 旗下 fusion 路線的招牌。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.3,
+    "z": -0.1,
+    "why": "jazz-rock 吉他推進，邊緣躁，色溫中性"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e37a5060-4288-4350-a463-2f8efa486c97",
+    "https://music.apple.com/us/album/inside-missing-link/1072431342"
+   ],
+   "mbRgMbid": "e37a5060-4288-4350-a463-2f8efa486c97",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 年份 1972，Apple 標 1973；查證其一"
+  },
+  {
+   "artist": "Rolf Kühn",
+   "album": "Devil in Paradise",
+   "year": 1971,
+   "label": "MPS",
+   "country": "de",
+   "faction": "de-mps-german",
+   "genres": [
+    "jazz"
+   ],
+   "why": "單簧管手 Rolf Kühn 的 MPS 搖滾爵士與自由融合作品，西德 fusion 場景代表。",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0.5,
+    "z": -0.2,
+    "why": "電聲推進加自由即興，偏躁偏重偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dd0e55f0-58ea-425a-bb4b-dfe3dbb245af",
+    "https://coverartarchive.org/release-group/dd0e55f0-58ea-425a-bb4b-dfe3dbb245af/front"
+   ],
+   "mbRgMbid": "dd0e55f0-58ea-425a-bb4b-dfe3dbb245af",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "藝人為 Rolf Kühn（Rolf Kühn Jazzgroup 署名）；與池中 Rolf+Joachim Kühn Quintet 不同藝人"
+  },
+  {
+   "artist": "Jean-Luc Ponty",
+   "album": "Sunday Walk",
+   "year": 1967,
+   "label": "SABA",
+   "country": "de",
+   "faction": "de-mps-german",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Ponty 在 Black Forest 錄下的歐陸小提琴爵士名作，與 Dauner、Eberhard Weber 合作，MPS／SABA 代表性的爵士小提琴。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": -0.3,
+    "z": 0.5,
+    "why": "小提琴明亮輕巧，快板偏躁，溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/63762c74-49a6-4e55-a01d-168bd5cf8fcf",
+    "https://music.apple.com/us/album/sunday-walk/873095025"
+   ],
+   "mbRgMbid": "63762c74-49a6-4e55-a01d-168bd5cf8fcf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jean-Luc Ponty Experience",
+   "album": "Open Strings",
+   "year": 1972,
+   "label": "MPS",
+   "country": "de",
+   "faction": "de-mps-german",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Ponty 與 Joachim Kühn 等人的電聲小提琴 fusion，MPS 時期代表，歐洲 fusion 起點之一。",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.2,
+    "z": 0.2,
+    "why": "電聲小提琴急促，躁、尖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/527eebd2-97d4-450e-b071-7e37359068ca",
+    "https://music.apple.com/us/album/open-strings/966606016"
+   ],
+   "mbRgMbid": "527eebd2-97d4-450e-b071-7e37359068ca",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Joachim Kühn 為樂手，專輯署名 Ponty，無歸屬 eb5b 的衝突；若主線介意可刪"
+  },
+  {
+   "artist": "Friedrich Gulda",
+   "album": "Music for 4 Soloists and Band No. 1",
+   "year": 1965,
+   "label": "Amadeo／MPS",
+   "country": "de",
+   "faction": "de-mps-german",
+   "genres": [
+    "jazz"
+   ],
+   "why": "古典鋼琴大師 Gulda 與 J.J. Johnson、Freddie Hubbard、Sahib Shihab 的第三潮流大樂隊作品，Gulda 爵士盤中最受重視者。",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 0.5,
+    "z": 0.4,
+    "why": "大樂隊重編制、推進強"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ecb29d8e-b635-4c5f-84b6-605e8b8dd20e",
+    "https://coverartarchive.org/release-group/ecb29d8e-b635-4c5f-84b6-605e8b8dd20e/front"
+   ],
+   "mbRgMbid": "ecb29d8e-b635-4c5f-84b6-605e8b8dd20e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 標 1965，首發廠牌 Amadeo，MPS／SABA 為重發；廠牌身分請主線酌情；首發年請再核"
+  },
+  {
+   "artist": "The MPS Rhythm Combination & Brass / Peter Herbolzheimer",
+   "album": "My Kind of Sunshine",
+   "year": 1972,
+   "label": "MPS",
+   "country": "de",
+   "faction": "de-mps-german",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Herbolzheimer 組建的 MPS 旗艦 funk 大樂隊首作，70 年代歐洲大樂隊 funk 範本，常被 Jazzman 系重發收藏。",
+   "moodGuess": {
+    "x": 4,
+    "y": 0.6,
+    "z": 0.7,
+    "why": "大樂隊 funk 衝勁，厚、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4b8e5728-fc97-4314-bd1a-6d9d53ff25aa",
+    "https://coverartarchive.org/release-group/4b8e5728-fc97-4314-bd1a-6d9d53ff25aa/front"
+   ],
+   "mbRgMbid": "4b8e5728-fc97-4314-bd1a-6d9d53ff25aa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "artist 名稱請以 MB 為準，可簡為 Peter Herbolzheimer；池中無此人"
+  },
+  {
+   "artist": "The Dave Pike Set",
+   "album": "Noisy Silence - Gentle Noise",
+   "year": 1969,
+   "label": "MPS",
+   "country": "de",
+   "faction": "de-mps-us",
+   "genres": [
+    "jazz"
+   ],
+   "why": "美國震音琴手 Dave Pike 在德國組的 Set，印度音階加迷幻 jazz-funk，MPS 最搶手重發之一。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.4,
+    "z": 0.4,
+    "why": "迷幻脈動，躁、厚度中偏重、溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7ae9d19b-04b0-3fb2-a69d-6ce30d033ea3",
+    "https://music.apple.com/us/album/noisy-silence-gentle-noise/1132901246"
+   ],
+   "mbRgMbid": "7ae9d19b-04b0-3fb2-a69d-6ce30d033ea3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Dave Pike Set",
+   "album": "Four Reasons",
+   "year": 1969,
+   "label": "MPS",
+   "country": "de",
+   "faction": "de-mps-us",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Pike Set 另一個高峰，印度與搖滾爵士的融合更成熟（含 Volker Kriegel 吉他）。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.3,
+    "z": 0.5,
+    "why": "同上，更躁更暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/18ef6ec1-e69e-3bc3-9a86-ef1e5d7d795a",
+    "https://music.apple.com/us/album/four-reasons/890515984"
+   ],
+   "mbRgMbid": "18ef6ec1-e69e-3bc3-9a86-ef1e5d7d795a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "第二張，需確為另一高峰；若主線嫌重複可刪"
+  },
+  {
+   "artist": "Oscar Peterson",
+   "album": "Motions and Emotions",
+   "year": 1969,
+   "label": "MPS",
+   "country": "de",
+   "faction": "de-mps-us",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Peterson 在 MPS 的管弦樂流行名盤（Claus Ogerman 編曲），Beatles／Bacharach 翻唱，MPS 期最暢銷之一。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": -0.3,
+    "z": 0.8,
+    "why": "抒情管弦，輕暖，邊緣靜"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3a4a64cd-194e-3b20-8a99-1df552851da1",
+    "https://music.apple.com/us/album/motions-emotions-with-bucky-pizzarelli-sam-jones-bobby/803872834"
+   ],
+   "mbRgMbid": "3a4a64cd-194e-3b20-8a99-1df552851da1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池已有 Peterson 12 張（含 MPS 的 Exclusively For My Friends 與 My Favorite Instrument）"
+  },
+  {
+   "artist": "Monty Alexander",
+   "album": "Love & Sunshine",
+   "year": 1975,
+   "label": "MPS",
+   "country": "de",
+   "faction": "de-mps-us",
+   "genres": [
+    "jazz"
+   ],
+   "why": "牙買加鋼琴家 Alexander 的 MPS 全盛期，融合 reggae 與 bop，常被樂迷列為其 70 年代最佳。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.1,
+    "z": 0.9,
+    "why": "明亮律動，輕暖，邊緣躁"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c4ab10c7-b166-4ab8-b5ae-792a31c89905",
+    "https://music.apple.com/us/album/love-and-sunshine/890815665"
+   ],
+   "mbRgMbid": "c4ab10c7-b166-4ab8-b5ae-792a31c89905",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 年份 1976；MB 1975"
+  },
+  {
+   "artist": "Monty Alexander / Ernest Ranglin",
+   "album": "Rass!",
+   "year": 1974,
+   "label": "MPS",
+   "country": "de",
+   "faction": "de-mps-us",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Alexander 與牙買加吉他宗師 Ranglin 的 reggae-jazz 開創作。",
+   "moodGuess": {
+    "x": 3,
+    "y": -0.2,
+    "z": 0.9,
+    "why": "慵懶節奏，輕暖，邊緣躁"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b13d4c85-783e-402f-8513-571604cb0cb3",
+    "https://music.apple.com/us/album/rass/873098008"
+   ],
+   "mbRgMbid": "b13d4c85-783e-402f-8513-571604cb0cb3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "第二張"
+  },
+  {
+   "artist": "The Singers Unlimited",
+   "album": "Feeling Free",
+   "year": 1975,
+   "label": "MPS",
+   "country": "de",
+   "faction": "de-mps-us",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Singers Unlimited 四部和聲加 Pat Williams 管弦樂，MPS 人聲爵士經典，Bill Evans 之外最受 sampler 追捧的 MPS 錄音。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.4,
+    "z": 0.8,
+    "why": "多層人聲柔和，暖、靜"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/63599ab9-c25a-4ea6-84de-b02fa72c57a0",
+    "https://music.apple.com/us/album/feeling-free-with-the-pat-williams-orchestra/887891627"
+   ],
+   "mbRgMbid": "63599ab9-c25a-4ea6-84de-b02fa72c57a0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "卡池已有 Complete A Capella Sessions 與 Four of Us"
+  },
+  {
+   "artist": "Freddie Hubbard",
+   "album": "The Hub of Hubbard",
+   "year": 1969,
+   "label": "MPS",
+   "country": "de",
+   "faction": "de-mps-us",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Hubbard 首次離開 Blue Note 後在 MPS 錄的 hard bop，Eddie Daniels、Roland Hanna 等同台，歐洲錄音經典。",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.2,
+    "z": 0.4,
+    "why": "hard bop 高速，躁、輕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b5751a47-462d-3676-9fc1-53b35971cf97",
+    "https://music.apple.com/us/album/the-hub-of-hubbard/1438636575"
+   ],
+   "mbRgMbid": "b5751a47-462d-3676-9fc1-53b35971cf97",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中無此盤；Hubbard 已 22 張，注意藝人上限（不是這張的問題）"
+  },
+  {
+   "artist": "Mark Murphy",
+   "album": "Midnight Mood",
+   "year": 1968,
+   "label": "SABA",
+   "country": "de",
+   "faction": "de-mps-us",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Murphy 與 Clarke-Boland Big Band 在 SABA 的夜間人聲名盤，歐洲 vocalese 代表。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.3,
+    "z": 0.4,
+    "why": "夜間人聲柔和，靜"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5f71da28-b33c-39ee-8490-211cac3c6da3",
+    "https://music.apple.com/us/album/midnight-mood/804649456"
+   ],
+   "mbRgMbid": "5f71da28-b33c-39ee-8490-211cac3c6da3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Charlie Mariano",
+   "album": "Helen 12 Trees",
+   "year": 1976,
+   "label": "MPS",
+   "country": "de",
+   "faction": "de-mps-us",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Mariano 與 Jasper van't Hof 等人的歐洲融合旅行，MPS 時期最受樂迷推崇之一。",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 0.1,
+    "z": 0,
+    "why": "民族味融合，邊緣靜"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6d966386-4ea7-3ba9-95fd-d34d52391bb9",
+    "https://music.apple.com/us/album/helen-12-trees/1074342581"
+   ],
+   "mbRgMbid": "6d966386-4ea7-3ba9-95fd-d34d52391bb9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中僅有 Mariano & Watanabe 一張"
+  },
+  {
+   "artist": "Sun Ra and his Intergalactic Research Arkestra",
+   "album": "It's After the End of the World",
+   "year": 1970,
+   "label": "MPS",
+   "country": "de",
+   "faction": "de-mps-us",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Sun Ra 1970 年在 Donaueschingen／柏林音樂節的 MPS 現場錄音，歐洲 free／space jazz 史上最重要的一次。",
+   "moodGuess": {
+    "x": 4.3,
+    "y": 1,
+    "z": -0.5,
+    "why": "自由爆裂集體即興，躁、重、冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f7ed02a3-bf79-449b-817f-9c898576088b",
+    "https://music.apple.com/us/album/its-after-the-end-of-the-world-live-at/921542669"
+   ],
+   "mbRgMbid": "f7ed02a3-bf79-449b-817f-9c898576088b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "現場盤，為該藝人／組合最重要作品；MPS 以正式專輯發行",
+   "queryAlias": "",
+   "uncertain": "池中 Sun Ra 已 16 張"
+  },
+  {
+   "artist": "Stuff Smith / Stéphane Grappelli / Svend Asmussen / Jean-Luc Ponty",
+   "album": "Violin Summit",
+   "year": 1966,
+   "label": "SABA",
+   "country": "de",
+   "faction": "de-mps-other",
+   "genres": [
+    "jazz"
+   ],
+   "why": "四位小提琴宗師的歷史性聚會，SABA 在 Black Forest 錄音，爵士小提琴公認傳世現場。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": 0.6,
+    "why": "四把小提琴對話，輕、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4cadbd35-5791-4a70-b511-8a84c23c4203",
+    "https://coverartarchive.org/release-group/4cadbd35-5791-4a70-b511-8a84c23c4203/front"
+   ],
+   "mbRgMbid": "4cadbd35-5791-4a70-b511-8a84c23c4203",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "現場盤，為該藝人／組合最重要作品；MPS 以正式專輯發行",
+   "queryAlias": "",
+   "uncertain": "署名多人，請主線決定寫法；年份 MB 1967，錄音 1966 年 12 月"
+  },
+  {
+   "artist": "The Kenny Clarke - Francy Boland Big Band",
+   "album": "All Smiles",
+   "year": 1968,
+   "label": "MPS",
+   "country": "de",
+   "faction": "de-mps-other",
+   "genres": [
+    "jazz"
+   ],
+   "why": "科隆組建的跨國大樂隊在 MPS 的代表作，歐洲大樂隊爵士水準的證明，池中僅有 Golden Eight。",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 0.7,
+    "z": 0.6,
+    "why": "大樂隊聲牆厚推進，躁、重、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/62074717-0155-4f51-b7b7-0ec0ec77fe00",
+    "https://music.apple.com/us/album/all-smiles/828422998"
+   ],
+   "mbRgMbid": "62074717-0155-4f51-b7b7-0ec0ec77fe00",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "artist 寫法請以 MB 為準"
+  }
+ ],
+ "notes": [
+  "MB 全部查得到（24/24），人工身分 0。年份依 MB 首發年；Gulda 標 1965 但首發廠牌為 Amadeo，廠牌／年份存疑。",
+  "池內去重全部為 0（含藝人子字串）。重複風險：Mangelsdorff 池 4＋提 2、Peterson 池 12＋提 1、Sun Ra 池 16、Hubbard 池 22，主線可先砍這些。",
+  "Dauner《Output》為 ECM 排除；Baden Powell／Joe Pass／George Duke 的 MPS 盤池中已有，未再提。",
+  "封面來源：Apple Music／iTunes 或 CAA（Rolf Kühn、Gulda、Herbolzheimer、Violin Summit 為 CAA）。",
+  "evidence 每張只放 MB RG 與封面兩個 https，未另查 Discogs；主線若要第三來源可補。",
+  "排除東歐移民樂手（歸 eb5b）與 Yancy Körössy（歸 eb1）。Clarke-Boland 只有 All Smiles 一張，Latin Kaleidoscope 無 MB RG 命中。"
+ ]
+}
