@@ -97,3 +97,17 @@
 - **51368** 日期：「日」後一字只有 Workoholic 日起、Skleroptak 日開、Blublula 日上（照 51359）。本組 9 張有「某年某月在華沙錄」，初稿跨兩檔合掃撞出 `月在華沙` ×6、`在華沙錄` ×5、`月的華沙` ×4、`錄於年月` ×3，逐張改成不同的領頭名詞＋介詞：Kujaviak「於…進華沙灌錄」、Easy!「錄製於華沙」、Na kosmodromie「七人編制…到華沙錄成」、Go Ahead「全新陣容在華沙進棚」、Modern Pentathlon「華沙的錄音則完成於」、Quasimodo「錄於華沙」、Question Mark「錄音的城市是華沙，時間…」、Bass Line「用的是華沙的 Studio M-1」、Blublula「那批錄音在華沙完成」、The Wave B 面改「日期已到」。另拆 `貝斯與鼓`、`風與長笛`、`的電鋼琴`、`鋼琴與合`、`斯風彈電`。定稿與 out-1 合掃，3 張以上只剩樂器名（薩克斯風、鋼琴三重奏、電小提琴類）與專名（克拉科夫、音樂學院）。
 - **51369** 研究層禁區照辦：Modern Pentathlon 的分面說法用轉述語氣，寫成「被看作代表作的那一面」；Three Thousands 不寫成現場、只寫 B 面隔年在華沙愛樂廳錄；Workoholic 只寫一把小提琴；Skleroptak 寫比利時樂團與布魯塞爾錄音、Wróblewski 寫曲並坐進聲部；Sprzedawcy 寫各曲演奏者各有出入；Blublula 鋼琴歸 Karolak、Sojka 只掛人聲；Ewa Bem 寫「credits 上只有兩位演奏者」；Namysłowski 1977 的樂團只寫「還有一支樂團加入」；Tina Kamila 不寫弦樂。
 - **51370** 卡托維治／卡托維茲：Birthday 與 Blublula 兩張 note 的中譯不同（同一城市 Katowice），各照自己 note 寫，主線審稿可統一（可逆）。Ewa Bem 199 字貼近下限的偏低端，note 已全數寫入，未補 note 外事實。
+
+## 寫作層（writer-1）
+- **51361** 交件：`desc-tools/batches/output/add-20261101-eb3-out-1.json` 20 張（全 full），字數 212–238（Go Right 220、10+8 233、Polish Radio Big Band 213、Vol. 4 237、Seant 213、Polish Jazz Quartet 231、Reminiscence 233、Bossa Nova 226、Torpedo 226、Rien ne va plus 231、Lola 226、Somnambulicy 215、Heart 231、Baazaar 226、Jazz Studio Orchestra 225、Ballet Etudes 212、Zabiegliński 231、Moving South 230、Paratyphus B 238、Inactin 234）。初稿超標 3 張（Vol. 4 261、Seant 257、Reminiscence 249），整格捨去：Vol. 4 的「精確長度」與爵士版字樣、Seant 的「Trzaskowski Sextet featuring Ted Curson」掛名句（hook 已說客座）、Reminiscence 的「除了打鼓」與「地點在華沙」尾句。`qa-batch out`（40 張）全部通過、`qa-check-research` 0、`fix-spacing` 0；據／也就是／這張專輯開頭 grep 0。
+- **51362** 首句逐字照 hook；第二句全照 note 指派領句（51353 配表）。不複述 hook 的處理：Ballet Etudes 的「華沙冷淡→歐洲」hook 已說，正文只補「冷眼看它的是國內樂評」；Zabiegliński 拿掉「以土木工程為業」、改寫「除了豎笛還兼中音薩克斯風」；Bossa Nova 拿掉「主張把人聲當樂器」，只給團名原文；Lola 拿掉「國內一時無從購得」；Somnambulicy 第三句不再寫「10 吋」。Zabiegliński 編制「其餘五人」照 facts 六人名單核算（他＋顫音琴、吉他、鋼琴、貝斯、鼓）。Moving South「名單上沒有貝斯手」、Big Band「波蘭幾乎沒有純爵士大編制的傳統」兩處否定照 51355 列為內容保留。媒體名與媒體榜單名次未寫（note 本無）。
+- **51363** 日期與單聲道句型配死：「日」後一字只有 Kosz 日在（他於…日在華沙過世）、Jazz Studio 日於、Ballet Etudes 日進、Moving South 日兼、Paratyphus 日他。單聲道 7 張各一種寫法（單聲道錄音由 Muza／以單聲道 LP 問世／發行的 LP 是單聲道／發行的單聲道 LP 上／Muza 1970 年的出版品／替它出了單聲道唱片／單聲道黑膠在…上市），Somnambulicy 改「錄音為單聲道」。跨兩檔合掃途中拆掉 `要等到年`、`在華沙完成`、`裡彈鋼琴`、`五支薩克`、`進錄音室`、`錄於華沙`、`完成於年月`、`錄音在年`、`的小提琴`、`顫音琴與`、`吹長笛的`、`華沙的錄音`、`在年月日`、`錄音室時`、`的電鋼琴`、`合唱團的`、`的波蘭電台爵士`、`到華沙錄`、`華沙錄成`、`克斯風與`、`三重奏錄`、`是年月地`。定稿合掃 3 張以上只剩樂器名（薩克斯風類、電小提琴）與專名（音樂學院）。
+- **51364** 留給主線（不可由寫作層改）：`唱的是華沙的`＝Torpedo 第二句（51353 指派領句）對 out-2 Bass Line，2 張；`提琴與鼓`＝Moving South hook 對 out-2 W sferze dotyku，2 張。另 `華沙愛樂廳`（Zabiegliński／Three Thousands）、`斯圖加特`（Go Right／Inactin）為專名。
+
+## 主線審稿（2026-11-01，雲端主線，40 張）
+- 51377：逐張讀全文、對回研究稿與 note。改 3 處（只動正文措辭，hooks 檔同步首句）：
+  - `desc2:String Connection|Workoholic` hook「掛著「弦」字的團名，弦樂器只有一把？」→「團名掛著「弦」，提琴卻只有一把。」（Ścierański 的電貝斯也是弦樂器，原句事實錯）。
+  - `desc2:Stanisław Sojka|Blublula`：童聲合唱團「女高音」→「高音部」×2（男童不稱女高音）；「卡托維茲」→「卡托維治」（與 Birthday 同譯）。
+- 其餘 37 張未改字。媒體名、媒體榜單名次、「據說／據傳」、Sadowski 指控全文 0；`qa-batch out` 40/40 通過。字數 199–239。
+- 51378：gate 前修補：covers.json 的 Apple 條目 source 改 `apple-verified-collection`＋`appleCollectionId`（§4 例外要件）；4 張人工身分卡 `mbAbsenceProof` 改物件，主線實查 MB（盤名、藝人＋盤名、英譯別名）：Lola 只命中 The Kinks 1977《Lola》、Moving South 只命中 Southside Movement 1975 同名他作，其餘 0，人工身分成立。Discogs 封面 7 張登錄 registry（→ 507）。`build-manifest` → prepare gate **0 error**（warning 44：UPC 40、人工身分 4）。
+- 51379：**頂點逐張判定 0 張**。classic 最高 4（7 張）、accessibility 最高 4，無殿堂／異端資格；Przybielski《W sferze dotyku》obscurity 5、listeners 18 數字上過 pearl 門檻，但只有 Discogs 限量版事實、沒有遺珠級評論證據（sf09 高木元輝先例），不判 pearl。

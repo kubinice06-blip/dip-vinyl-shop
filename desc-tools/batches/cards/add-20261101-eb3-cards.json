@@ -368,7 +368,31 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 查 Lola／Namysłowski 無此 LP；Discogs master 322720 有 1964 Muza 原盤與 2025 重發。",
+  "mbAbsenceProof": {
+   "queries": [
+    {
+     "query": "releasegroup:\"Lola\"",
+     "count": 298,
+     "topTitles": [
+      "Lola, Lola, Lola!｜Zwarte Lola",
+      "Lola Lola｜Rafeé",
+      "Lola, Lola｜Lowland Trio"
+     ]
+    },
+    {
+     "query": "artist:\"Zbigniew Namysłowski Modern Jazz Quartet\" AND releasegroup:\"Lola\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "releasegroup:\"Zbigniew Namysłowski Quartet Lola\"",
+     "count": 0,
+     "topTitles": []
+    }
+   ],
+   "checkedAt": "2026-11-01",
+   "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 查 Lola／Namysłowski 無此 LP；Discogs master 322720 有 1964 Muza 原盤與 2025 重發。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/322720",
    "https://www.discogs.com/release/3282923"
@@ -408,7 +432,27 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz 查 Somnambulicy 與 Wanda Warska 無此 RG（僅 Muzyka Teatralna I Telewizyjna）；Discogs master 1434460 有 1961 Muza 10\" LP。",
+  "mbAbsenceProof": {
+   "queries": [
+    {
+     "query": "releasegroup:\"Somnambulicy\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "artist:\"Wanda Warska\" AND releasegroup:\"Somnambulicy\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "releasegroup:\"Wanda Warska & Andrzej Kurylewicz Somnambulicy\"",
+     "count": 0,
+     "topTitles": []
+    }
+   ],
+   "checkedAt": "2026-11-01",
+   "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz 查 Somnambulicy 與 Wanda Warska 無此 RG（僅 Muzyka Teatralna I Telewizyjna）；Discogs master 1434460 有 1961 Muza 10\" LP。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/1434460",
    "https://www.discogs.com/release/12625146"
@@ -623,7 +667,29 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz 查 Podróż na południe／Moving South 無對應（僅 Southside Movement 同名他作）；Discogs master 389551 有 1973 Pronit。",
+  "mbAbsenceProof": {
+   "queries": [
+    {
+     "query": "releasegroup:\"Moving South\"",
+     "count": 1,
+     "topTitles": [
+      "Moving South｜Southside Movement"
+     ]
+    },
+    {
+     "query": "artist:\"Wojciech Karolak, Michał Urbaniak & Czesław Bartkowski\" AND releasegroup:\"Moving South\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "releasegroup:\"Podróż na południe\"",
+     "count": 0,
+     "topTitles": []
+    }
+   ],
+   "checkedAt": "2026-11-01",
+   "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz 查 Podróż na południe／Moving South 無對應（僅 Southside Movement 同名他作）；Discogs master 389551 有 1973 Pronit。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/389551",
    "https://www.discogs.com/release/3252185"
@@ -1328,7 +1394,22 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz 搜尋 releasegroup:「W sferze dotyku」 與 artist:「Andrzej Przybielski」 無此盤（僅 Sesja Open 2011、Custom Trio 2001），人工身分。",
+  "mbAbsenceProof": {
+   "queries": [
+    {
+     "query": "releasegroup:\"W sferze dotyku\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "artist:\"Andrzej Przybielski\" AND releasegroup:\"W sferze dotyku\"",
+     "count": 0,
+     "topTitles": []
+    }
+   ],
+   "checkedAt": "2026-11-01",
+   "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名查詢，無本盤條目。MusicBrainz 搜尋 releasegroup:「W sferze dotyku」 與 artist:「Andrzej Przybielski」 無此盤（僅 Sesja Open 2011、Custom Trio 2001），人工身分。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/2115562",
    "https://www.discogs.com/release/1356396"
