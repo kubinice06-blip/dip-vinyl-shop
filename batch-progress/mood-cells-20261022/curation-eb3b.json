@@ -1,0 +1,742 @@
+{
+ "group": "eb3b",
+ "factions": [
+  {
+   "id": "pl-fusion",
+   "zh": "波蘭融合／爵士放克",
+   "count": 15,
+   "why": "70–80 年代 Polish Jazz 系列與 PolJazz 的融合主流"
+  },
+  {
+   "id": "pl-free",
+   "zh": "波蘭自由／實驗",
+   "count": 2,
+   "why": "Urbaniak 實驗期與 80 年代自由即興"
+  },
+  {
+   "id": "pl-postbop",
+   "zh": "波蘭後 bop／大樂團",
+   "count": 5,
+   "why": "Wróblewski、Muniak 等後 bop 與大樂團"
+  },
+  {
+   "id": "pl-vocal",
+   "zh": "波蘭人聲爵士",
+   "count": 2,
+   "why": "Sojka、Bem 等 80 年代人聲爵士"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Michał Urbaniak Group",
+   "album": "Paratyphus B",
+   "year": 1973,
+   "label": "Spiegelei",
+   "country": "pl",
+   "faction": "pl-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Urbaniak 離開波蘭前的電子小提琴融合代表作，德國 Spiegelei 發行，後世稀有融合盤的標竿。",
+   "moodGuess": {
+    "x": 4.3,
+    "y": 0.9,
+    "z": -0.6,
+    "why": "電小提琴與電鋼琴的緊繃融合，旋律不明確"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/938854",
+    "https://musicbrainz.org/release-group/f4767fbf-ae5b-45b8-9e9b-2fdecdb7451b",
+    "https://coverartarchive.org/release-group/f4767fbf-ae5b-45b8-9e9b-2fdecdb7451b",
+    "https://music.apple.com/pl/album/paratyphus-b/1355394963"
+   ],
+   "mbRgMbid": "f4767fbf-ae5b-45b8-9e9b-2fdecdb7451b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 掛名 Michal Urbaniak Group（無變音符號）；卡名用 Michał Urbaniak Group。同組 Inactin 同一藝人名。"
+  },
+  {
+   "artist": "Michał Urbaniak Group",
+   "album": "Inactin",
+   "year": 1973,
+   "label": "Spiegelei",
+   "country": "pl",
+   "faction": "pl-free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "與 Paratyphus B 同年的另一高峰，更偏自由即興與電聲實驗，是波蘭自由／融合交界的重要盤。",
+   "moodGuess": {
+    "x": 4.0,
+    "y": 0.8,
+    "z": -0.9,
+    "why": "自由即興加電聲，旋律性低"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/496184",
+    "https://musicbrainz.org/release-group/602d4348-5d0c-4209-a45b-cdbd86de6760",
+    "https://coverartarchive.org/release-group/602d4348-5d0c-4209-a45b-cdbd86de6760"
+   ],
+   "mbRgMbid": "602d4348-5d0c-4209-a45b-cdbd86de6760",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發年 1973，部分資料記 1972；從 MB/Discogs 取 1973。"
+  },
+  {
+   "artist": "Zbigniew Namysłowski Quintet",
+   "album": "Kujaviak Goes Funky",
+   "year": 1975,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Polish Jazz 系列 Vol.46，把庫雅維亞民謠旋律接上放克，是波蘭融合最常被推薦的一張。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.2,
+    "z": 0.7,
+    "why": "民謠旋律加放克節奏，輕快好入耳"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/322675",
+    "https://musicbrainz.org/release-group/0de26f58-0f14-4ce9-9a91-14b3b6bdce2d",
+    "https://coverartarchive.org/release-group/0de26f58-0f14-4ce9-9a91-14b3b6bdce2d"
+   ],
+   "mbRgMbid": "0de26f58-0f14-4ce9-9a91-14b3b6bdce2d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Zbigniew Namysłowski",
+   "album": "Zbigniew Namysłowski",
+   "year": 1977,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Namysłowski 70 年代融合高峰之二（iTunes 標題 Namysłowski），爵士搖滾與放克，與 Kujaviak 風格不同。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.4,
+    "z": 0.3,
+    "why": "爵士搖滾加放克，段落鮮明"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/530584",
+    "https://musicbrainz.org/release-group/098d8104-a068-4e58-920e-2291ce6f885c",
+    "https://coverartarchive.org/release-group/098d8104-a068-4e58-920e-2291ce6f885c"
+   ],
+   "mbRgMbid": "098d8104-a068-4e58-920e-2291ce6f885c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同名自題專輯，注意去重只看 album 名；不是 1978 的《Namysłowski》（iTunes 另列）。"
+  },
+  {
+   "artist": "Zbigniew Namysłowski Air Condition",
+   "album": "Follow Your Kite",
+   "year": 1980,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Namysłowski 與 Air Condition（含 Sendecki）樂團的代表，波蘭爵士放克／爵士搖滾的 80 年代起點。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": -0.3,
+    "z": 0.6,
+    "why": "明亮的電鋼琴放克，旋律清楚"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/846945",
+    "https://music.apple.com/pl/album/follow-your-kite/1488945600",
+    "https://www.discogs.com/release/2082944"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz 搜尋 releasegroup:「Follow Your Kite」 與 artist:「Air Condition」 皆無此盤（僅 Air Condition 單曲 Street 69），人工身分。",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/846945",
+    "https://music.apple.com/pl/album/follow-your-kite/1488945600"
+   ],
+   "releaseException": "",
+   "queryAlias": "Zbigniew Namysłowski & Air Condition",
+   "uncertain": "藝人名取 Discogs 寫法 Zbigniew Namysłowski Air Condition；與池中 Namysłowski 為子字串，去重只擋同名專輯。"
+  },
+  {
+   "artist": "Wojciech Karolak",
+   "album": "Easy!",
+   "year": 1975,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Karolak 的 Hammond／電鋼琴爵士放克代表作，Discogs 與歐洲 rare groove 圈長年追捧的波蘭融合盤。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": -0.2,
+    "z": 0.8,
+    "why": "電琴放克，旋律明確好入耳"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/302948",
+    "https://musicbrainz.org/release-group/1fa450a9-e457-4593-9bfe-dd96137c1f7c",
+    "https://coverartarchive.org/release-group/1fa450a9-e457-4593-9bfe-dd96137c1f7c",
+    "https://www.discogs.com/release/614100"
+   ],
+   "mbRgMbid": "1fa450a9-e457-4593-9bfe-dd96137c1f7c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "iTunes 標 1974，MB/Discogs 為 1975，取 1975；MB 無 CAA 封面，封面取 Discogs master 圖。"
+  },
+  {
+   "artist": "Krzysztof Sadowski",
+   "album": "Three Thousands Points",
+   "year": 1975,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Hammond 風琴大師 Sadowski 的爵士搖滾轉型作，Polish Jazz 系列。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.6,
+    "z": 0.2,
+    "why": "Hammond 與電吉他的爵士搖滾，厚實有推進"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/463078",
+    "https://musicbrainz.org/release-group/64bba72d-14a8-4e72-b853-1342c7c90b83",
+    "https://coverartarchive.org/release-group/64bba72d-14a8-4e72-b853-1342c7c90b83"
+   ],
+   "mbRgMbid": "64bba72d-14a8-4e72-b853-1342c7c90b83",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Krzysztof Sadowski And His Group",
+   "uncertain": ""
+  },
+  {
+   "artist": "Grupa Organowa Krzysztofa Sadowskiego",
+   "album": "Na kosmodromie",
+   "year": 1972,
+   "label": "Pronit",
+   "country": "pl",
+   "faction": "pl-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Sadowski 風琴團早期的爵士放克，波蘭稀有 groove 盤，與 Three Thousands Points 是不同時期的高峰。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.7,
+    "z": 0.4,
+    "why": "Hammond groove，厚暖旋律明確"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/789638",
+    "https://musicbrainz.org/release-group/a96b835b-9e42-46f8-8d28-6e8db50a4ac2",
+    "https://coverartarchive.org/release-group/a96b835b-9e42-46f8-8d28-6e8db50a4ac2"
+   ],
+   "mbRgMbid": "a96b835b-9e42-46f8-8d28-6e8db50a4ac2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "藝人名為樂團名，與 Krzysztof Sadowski 互為子字串 Sadowski 重疊（同人兩張）。"
+  },
+  {
+   "artist": "Extra Ball",
+   "album": "Birthday",
+   "year": 1976,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Extra Ball 的 Polish Jazz 系列首作，波蘭爵士搖滾／融合新生代的起點。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.3,
+    "z": 0.2,
+    "why": "爵士搖滾，段落清楚"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/302205",
+    "https://musicbrainz.org/release-group/497af0f1-2881-4094-baff-60eafb97e796",
+    "https://coverartarchive.org/release-group/497af0f1-2881-4094-baff-60eafb97e796"
+   ],
+   "mbRgMbid": "497af0f1-2881-4094-baff-60eafb97e796",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Extra Ball",
+   "album": "Go Ahead",
+   "year": 1979,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Polish Jazz Vol.59，Extra Ball 更成熟的融合，與 Birthday 是不同階段。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.2,
+    "z": 0.3,
+    "why": "輕盈的融合，鍵盤旋律明確"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/302207",
+    "https://musicbrainz.org/release-group/9c2ec0a6-6b17-4b1f-a877-94411d668608",
+    "https://coverartarchive.org/release-group/9c2ec0a6-6b17-4b1f-a877-94411d668608"
+   ],
+   "mbRgMbid": "9c2ec0a6-6b17-4b1f-a877-94411d668608",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Laboratorium",
+   "album": "Modern Pentathlon",
+   "year": 1976,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Laboratorium 的 Polish Jazz 融合首作，波蘭爵士搖滾的標誌。",
+   "moodGuess": {
+    "x": 4.0,
+    "y": 0.6,
+    "z": -0.2,
+    "why": "緊密的爵士搖滾，銅管推進"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/296414",
+    "https://musicbrainz.org/release-group/3ce0eee6-5458-4438-8de9-8dd7917eec62",
+    "https://coverartarchive.org/release-group/3ce0eee6-5458-4438-8de9-8dd7917eec62"
+   ],
+   "mbRgMbid": "3ce0eee6-5458-4438-8de9-8dd7917eec62",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Laboratorium",
+   "album": "Quasimodo",
+   "year": 1979,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Polish Jazz Vol.58，Laboratorium 的另一高峰，更富戲劇與實驗。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.2,
+    "z": 0.1,
+    "why": "融合帶實驗氣息"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/323420",
+    "https://musicbrainz.org/release-group/063a92f2-3da0-4587-bb9d-3e165db42a39",
+    "https://coverartarchive.org/release-group/063a92f2-3da0-4587-bb9d-3e165db42a39"
+   ],
+   "mbRgMbid": "063a92f2-3da0-4587-bb9d-3e165db42a39",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "String Connection",
+   "album": "Workoholic",
+   "year": 1982,
+   "label": "PolJazz",
+   "country": "pl",
+   "faction": "pl-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Dębski 的 String Connection，弦樂與爵士放克的獨特融合，80 年代波蘭爵士代表。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": 0.3,
+    "why": "弦樂加爵士放克，明亮"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/497218",
+    "https://musicbrainz.org/release-group/00ab2297-41ab-44da-89b4-ef34a2daa9e3",
+    "https://coverartarchive.org/release-group/00ab2297-41ab-44da-89b4-ef34a2daa9e3"
+   ],
+   "mbRgMbid": "00ab2297-41ab-44da-89b4-ef34a2daa9e3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Czesław Bartkowski",
+   "album": "Drums Dream",
+   "year": 1976,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "波蘭頂尖鼓手 Bartkowski 的 Polish Jazz Vol.50 個人作。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.3,
+    "z": -0.3,
+    "why": "鼓手領軍的融合，節奏為主"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/302943",
+    "https://musicbrainz.org/release-group/979d36b8-62e3-46ba-b200-55cadf146069",
+    "https://coverartarchive.org/release-group/979d36b8-62e3-46ba-b200-55cadf146069"
+   ],
+   "mbRgMbid": "979d36b8-62e3-46ba-b200-55cadf146069",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發年顯示 2006（重發），原盤 1976 取 Discogs/iTunes。"
+  },
+  {
+   "artist": "Jan Ptaszyn Wróblewski",
+   "album": "Sprzedawcy glonów",
+   "year": 1973,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-postbop",
+   "genres": [
+    "jazz"
+   ],
+   "why": "與 Studio Jazzowe PR 合作的大樂團爵士放克，波蘭大樂團融合的經典。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.7,
+    "z": 0.4,
+    "why": "大樂團放克，銅管厚實"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/515628",
+    "https://musicbrainz.org/release-group/d320e072-69f0-35ea-9145-6ce33c3c245c",
+    "https://coverartarchive.org/release-group/d320e072-69f0-35ea-9145-6ce33c3c245c"
+   ],
+   "mbRgMbid": "d320e072-69f0-35ea-9145-6ce33c3c245c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Jan Ptaszyn Wróblewski & Studio Jazzowe PR",
+   "uncertain": "MB 首發年 2006（重發）；Discogs 1973、iTunes 1974，取 1973。與 eb3a 的 Ptaszyn 1973 前切分邊界上，主線留意。"
+  },
+  {
+   "artist": "Jan Ptaszyn Wróblewski",
+   "album": "Skleroptak",
+   "year": 1976,
+   "label": "PolJazz",
+   "country": "pl",
+   "faction": "pl-postbop",
+   "genres": [
+    "jazz"
+   ],
+   "why": "與 BRT Jazz Orchestra 的後 bop 大樂團作，Ptaszyn 70 年代中期另一高峰。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.8,
+    "z": 0.5,
+    "why": "大樂團後 bop，旋律明確"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/393331",
+    "https://musicbrainz.org/release-group/ad02c38d-30fc-4047-8957-0242ecc902ae",
+    "https://coverartarchive.org/release-group/ad02c38d-30fc-4047-8957-0242ecc902ae"
+   ],
+   "mbRgMbid": "ad02c38d-30fc-4047-8957-0242ecc902ae",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 標 1976；實際首發廠牌待確認（PolJazz/Biały Kruk 為重發俱樂部版）。"
+  },
+  {
+   "artist": "Marek Bliziński",
+   "album": "The Wave",
+   "year": 1980,
+   "label": "Poljazz",
+   "country": "pl",
+   "faction": "pl-postbop",
+   "genres": [
+    "jazz"
+   ],
+   "why": "吉他手 Bliziński 的後 bop／modal 代表作，Discogs 評價很高。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": -0.2,
+    "z": 0.2,
+    "why": "清亮吉他的後 bop"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/302210",
+    "https://musicbrainz.org/release-group/cb0eea6c-481e-417d-b4f7-f3dce110cad4",
+    "https://coverartarchive.org/release-group/cb0eea6c-481e-417d-b4f7-f3dce110cad4",
+    "https://www.discogs.com/release/2315706"
+   ],
+   "mbRgMbid": "cb0eea6c-481e-417d-b4f7-f3dce110cad4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 無首發年；Discogs master 1980；MB 無 CAA，封面取 Discogs。"
+  },
+  {
+   "artist": "Janusz Muniak Quintet",
+   "album": "Question Mark",
+   "year": 1978,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-postbop",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Polish Jazz Vol.54，Muniak 的後 bop／實驗代表作。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.2,
+    "z": -0.2,
+    "why": "後 bop，旋律偏抽象"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/286474",
+    "https://musicbrainz.org/release-group/b219d70e-9942-41a8-8559-4f0f68f23ede",
+    "https://coverartarchive.org/release-group/b219d70e-9942-41a8-8559-4f0f68f23ede"
+   ],
+   "mbRgMbid": "b219d70e-9942-41a8-8559-4f0f68f23ede",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "清單外增補（Muniak 名單外），可汰。"
+  },
+  {
+   "artist": "Tomasz Szukalski",
+   "album": "Tina Kamila",
+   "year": 1986,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-postbop",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Szukalski 以薩克斯獨奏抒情與強吹並重的個人代表，80 年代波蘭後 bop。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.6,
+    "z": 0.7,
+    "why": "抒情薩克斯，厚暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/853243",
+    "https://musicbrainz.org/release-group/2a1471a9-9e4a-499d-bde0-3ce755f33356",
+    "https://coverartarchive.org/release-group/2a1471a9-9e4a-499d-bde0-3ce755f33356"
+   ],
+   "mbRgMbid": "2a1471a9-9e4a-499d-bde0-3ce755f33356",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Krzysztof Ścierański",
+   "album": "Bass Line",
+   "year": 1983,
+   "label": "PolJazz",
+   "country": "pl",
+   "faction": "pl-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Ścierański（電貝斯）的個人首張代表，80 年代波蘭貝斯融合。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": -0.2,
+    "z": 0.2,
+    "why": "貝斯領軍的爵士放克"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/300734",
+    "https://musicbrainz.org/release-group/63d4a0c1-58d8-4edb-9e46-19c6dc967fd1",
+    "https://coverartarchive.org/release-group/63d4a0c1-58d8-4edb-9e46-19c6dc967fd1"
+   ],
+   "mbRgMbid": "63d4a0c1-58d8-4edb-9e46-19c6dc967fd1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 無 CAA，封面取 Discogs。"
+  },
+  {
+   "artist": "Andrzej Przybielski",
+   "album": "W sferze dotyku",
+   "year": 1984,
+   "label": "Alma Art",
+   "country": "pl",
+   "faction": "pl-free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "波蘭自由爵士小號 Przybielski 最受推崇的盤之一，80 年代波蘭自由即興代表。",
+   "moodGuess": {
+    "x": 4.1,
+    "y": -0.2,
+    "z": -1.3,
+    "why": "自由即興小號，無調性冷冽"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/2115562",
+    "https://www.discogs.com/release/1356396"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz 搜尋 releasegroup:「W sferze dotyku」 與 artist:「Andrzej Przybielski」 無此盤（僅 Sesja Open 2011、Custom Trio 2001），人工身分。",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/2115562",
+    "https://www.discogs.com/release/1356396"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 拼寫 W Sferze Dotyku；MB 查無。"
+  },
+  {
+   "artist": "Stanisław Sojka",
+   "album": "Blublula",
+   "year": 1981,
+   "label": "Polskie Nagrania Muza",
+   "country": "pl",
+   "faction": "pl-vocal",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Polish Jazz 系列中 Sojka 的首張，鋼琴自彈自唱的人聲爵士，波蘭人聲爵士代表。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": -0.3,
+    "z": 0.7,
+    "why": "鋼琴伴唱，輕柔旋律明確"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/302950",
+    "https://musicbrainz.org/release-group/3227e5bd-9d7d-4c39-b3f0-e22844f9e611",
+    "https://coverartarchive.org/release-group/3227e5bd-9d7d-4c39-b3f0-e22844f9e611"
+   ],
+   "mbRgMbid": "3227e5bd-9d7d-4c39-b3f0-e22844f9e611",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Sojka 亦寫作 Soyka，採 Sojka（與 MB 及指定一致）。"
+  },
+  {
+   "artist": "Ewa Bem",
+   "album": "Dla Ciebie jestem sobą",
+   "year": 1987,
+   "label": "PolJazz",
+   "country": "pl",
+   "faction": "pl-vocal",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Ewa Bem 與 Marek Bliziński 合作的 bossa／爵士人聲作，80 年代波蘭人聲爵士。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": -0.5,
+    "z": 1.0,
+    "why": "bossa 人聲，溫暖放鬆"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/848281",
+    "https://musicbrainz.org/release-group/7d7119b5-9468-4cad-9a09-3798bcd496b3",
+    "https://coverartarchive.org/release-group/7d7119b5-9468-4cad-9a09-3798bcd496b3"
+   ],
+   "mbRgMbid": "7d7119b5-9468-4cad-9a09-3798bcd496b3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "清單外增補（人聲類補足），可汰；Ewa Bem 可能與 eb3a 人聲組重疊，需 grep。"
+  },
+  {
+   "artist": "Wojciech Karolak",
+   "album": "Time Killers",
+   "year": 1985,
+   "label": "Helicon",
+   "country": "pl",
+   "faction": "pl-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Karolak、Szukalski、Bartkowski 三人的融合現場感錄音，80 年代波蘭融合。",
+   "moodGuess": {
+    "x": 3.1,
+    "y": 0.3,
+    "z": 0.0,
+    "why": "輕盈的三人融合"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/302944",
+    "https://musicbrainz.org/release-group/93bd2cdc-c8d5-458f-9305-a1383fbf245d",
+    "https://coverartarchive.org/release-group/93bd2cdc-c8d5-458f-9305-a1383fbf245d"
+   ],
+   "mbRgMbid": "93bd2cdc-c8d5-458f-9305-a1383fbf245d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Karolak, Szukalski, Bartkowski",
+   "uncertain": "三人合名；MB 掛 Karolak，首發年 2006 為重發，原盤 1985；Karolak 第二張，可汰。"
+  }
+ ],
+ "notes": [
+  "MB 查得到 22 張、人工身分 2 張（Follow Your Kite、W sferze dotyku）",
+  "自由爵士類僅 2 張，池子確實薄（波蘭自由多在 Stańko/Seifert/Przybielski 圈，已被排除）",
+  "清單內查無或不適：Sesja 80、Mainstream、Jagodziński、Sendecki、Żądło、Przybielski Kwartet 70s 盤在 MB/Discogs 無合格 70–80s 正規盤或無封面，未提",
+  "Muniak、Ewa Bem 為清單外增補",
+  "去重：seed_cards.json 池內無本批任何一張（Urbaniak/Namysłowski 僅 Facts of Life/Winobranie）"
+ ]
+}
