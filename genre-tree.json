@@ -1,5 +1,5 @@
 {
- "產出日期": "2026-10-30",
+ "產出日期": "2026-11-01",
  "minNode": 20,
  "genres": [
   {
@@ -363,32 +363,32 @@
   {
    "id": "jazz",
    "zh": "爵士",
-   "count": 4994,
+   "count": 5073,
    "children": [
     {
      "id": "bop",
      "zh": "Bebop / Hard Bop",
-     "count": 1427,
+     "count": 1445,
      "children": [
       {
        "id": "hard-bop",
        "zh": "Hard Bop",
-       "count": 423
+       "count": 430
       },
       {
        "id": "post-bop",
        "zh": "Post-Bop / 現代爵士",
-       "count": 397
+       "count": 399
       },
       {
        "id": "bebop",
        "zh": "Bebop",
-       "count": 386
+       "count": 388
       },
       {
        "id": "piano",
        "zh": "鋼琴",
-       "count": 183
+       "count": 192
       },
       {
        "id": "sax",
@@ -405,17 +405,17 @@
     {
      "id": "free",
      "zh": "自由與前衛",
-     "count": 988,
+     "count": 1001,
      "children": [
       {
        "id": "avant",
        "zh": "前衛與 New Thing",
-       "count": 511
+       "count": 518
       },
       {
        "id": "free-improv",
        "zh": "自由即興",
-       "count": 225
+       "count": 227
       },
       {
        "id": "post-bop",
@@ -425,7 +425,7 @@
       {
        "id": "fusion",
        "zh": "偏 Fusion",
-       "count": 80
+       "count": 82
       },
       {
        "id": "spiritual",
@@ -442,17 +442,22 @@
     {
      "id": "fusion",
      "zh": "Fusion / Jazz-Funk",
-     "count": 888,
+     "count": 921,
      "children": [
       {
        "id": "jazz-funk",
        "zh": "Jazz-Funk",
-       "count": 243
+       "count": 250
       },
       {
        "id": "smooth",
        "zh": "Smooth / 當代",
-       "count": 163
+       "count": 164
+      },
+      {
+       "id": "jazz-rock",
+       "zh": "Jazz-Rock",
+       "count": 89
       },
       {
        "id": "acid-nu",
@@ -463,11 +468,6 @@
        "id": "japan",
        "zh": "日本 Fusion",
        "count": 75
-      },
-      {
-       "id": "jazz-rock",
-       "zh": "Jazz-Rock",
-       "count": 68
       },
       {
        "id": "latin",
@@ -484,65 +484,65 @@
     {
      "id": "contemporary",
      "zh": "當代與 Nu Jazz",
-     "count": 826,
+     "count": 842,
      "children": [
       {
        "id": "nu-jazz",
        "zh": "Nu / Acid Jazz",
-       "count": 288
+       "count": 290
       },
       {
        "id": "smooth",
        "zh": "Smooth / Lounge",
-       "count": 254
+       "count": 255
       },
       {
        "id": "post-bop",
        "zh": "偏 Post-Bop",
-       "count": 159
+       "count": 161
       },
       {
        "id": "free",
        "zh": "偏前衛",
-       "count": 113
+       "count": 114
       },
       {
        "id": "piano",
        "zh": "鋼琴",
-       "count": 105
+       "count": 107
       },
       {
        "id": "euro",
        "zh": "ECM / 歐陸",
-       "count": 71
+       "count": 77
       },
       {
        "id": "vocal",
        "zh": "人聲",
-       "count": 67
+       "count": 69
       },
       {
        "id": "world",
        "zh": "世界與靈性",
-       "count": 54
+       "count": 58
       }
      ]
     },
     {
      "id": "vocal",
      "zh": "人聲爵士",
-     "count": 364,
+     "count": 369,
      "children": []
     },
     {
      "id": "swing",
      "zh": "Swing / 大樂團",
-     "count": 282,
+     "count": 287,
      "children": [
       {
        "id": "big-band",
        "zh": "大樂團",
-       "count": 82
+       "count": 85
       },
       {
        "id": "vocal",
@@ -552,7 +552,7 @@
       {
        "id": "piano",
        "zh": "鋼琴",
-       "count": 40
+       "count": 41
       },
       {
        "id": "dixieland",
@@ -581,12 +581,12 @@
     {
      "id": "modal",
      "zh": "Modal / 靈性爵士",
-     "count": 192,
+     "count": 194,
      "children": [
       {
        "id": "modal",
        "zh": "Modal",
-       "count": 90
+       "count": 92
       },
       {
        "id": "spiritual",
@@ -604,7 +604,7 @@
     {
      "id": "latin",
      "zh": "拉丁與巴莎",
-     "count": 161,
+     "count": 163,
      "children": [
       {
        "id": "afro-cuban",
@@ -614,7 +614,7 @@
       {
        "id": "bossa",
        "zh": "Bossa / 巴西",
-       "count": 77
+       "count": 79
       }
      ]
     },
