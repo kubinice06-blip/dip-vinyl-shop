@@ -71,3 +71,5 @@
 - 51338：8 張皆原創錄音室／電台錄音專輯，無選輯、無重複卡、無建議移除。池內同藝人：Extra Ball 兩張、Laboratorium 兩張，皆不同階段，不需汰。
 - 51339：moodGuess 存疑彙整（僅供參考，不作汰卡依據）：Modern Pentathlon（無銅管）、Workoholic（無弦樂組）、Drums Dream（獨奏占比）、Sprzedawcy glonów（風格含 Contemporary Jazz，未必全放克）、Birthday（無鼓組）。其餘三張（Na kosmodromie、Go Ahead、Quasimodo）無明顯不符。
 - 51340：資料限制：樂評幾乎取不到（culture.pl、Discogs 網頁 403；pl.wikipedia 專輯條 404，Wikipedia API 限流改 WebFetch；WebSearch 用 3 次，兩次完全無關）。聲音 facts 以 Discogs API 的 credits（編制、效果器、錄音地月份、曲長）與風格標籤為主，各卡 sound 欄已標明非樂評。
+- 51372：研究 d 組報 Krzysztof Sadowski 2019 年遭公開指控、2022 年起訴、未判決（pl.wikipedia）。卡片收的是 1972／1975 錄音作品，指控與作品無關、且未判決，**兩張照收**；正文不寫此事（未判決＋與專輯無關）。日後若有判決再議。
+- 51373：《Sprzedawcy glonów》Discogs 共同署名 Studio Jazzowe Polskiego Radia，卡片掛名維持 Wróblewski（MB 掛名；他是樂團領導），正文交代樂團。
