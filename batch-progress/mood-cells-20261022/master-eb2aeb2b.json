@@ -144,6 +144,44 @@
   }
  },
  {
+  "artist": "Károly Binder",
+  "album": "Kontinentspiel",
+  "year": 1989,
+  "label": "Krém",
+  "country": "hu",
+  "faction": "hu-free",
+  "genres": [
+   "jazz"
+  ],
+  "why": "Binder Károly 鋼琴／樂團的前衛爵士代表，Krém 廠 80 年代匈牙利前衛的重要一張。",
+  "moodGuess": {
+   "x": 3.4,
+   "y": 0.3,
+   "z": -0.5,
+   "why": "現代爵士與即興混合，邊緣躁、輕、微冷"
+  },
+  "evidence": [
+   "https://www.discogs.com/master/797830",
+   "https://www.discogs.com/release/6657639",
+   "https://musicbrainz.org/release-group/00b7d470-2326-4d62-8d7b-c79f291fa847"
+  ],
+  "mbRgMbid": "00b7d470-2326-4d62-8d7b-c79f291fa847",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "",
+  "group": "eb2a",
+  "factionZh": "匈牙利自由／前衛",
+  "mb": {
+   "title": "Kontinentspiel",
+   "type": "Album",
+   "sec": [],
+   "date": "1989",
+   "credit": "Károly Binder"
+  }
+ },
+ {
   "artist": "Mihály Dresch Quartet",
   "album": "Mozdulatlan Utazás",
   "year": 2000,
@@ -292,40 +330,6 @@
   "mb": null
  },
  {
-  "artist": "Aladár Pege Trio",
-  "album": "Bass On Top",
-  "year": 1966,
-  "label": "Supraphon",
-  "country": "hu",
-  "faction": "hu-mainstream",
-  "genres": [
-   "jazz"
-  ],
-  "why": "Pege 60 年代的硬咆勃／cool 三重奏，在捷克 Supraphon 錄製，歐洲低音大提琴爵士的早期經典。",
-  "moodGuess": {
-   "x": 2.9,
-   "y": 0.4,
-   "z": 0.6,
-   "why": "硬咆勃主題清楚，邊緣靜、輕、暖"
-  },
-  "evidence": [
-   "https://www.discogs.com/master/1591988",
-   "https://www.discogs.com/release/8157958"
-  ],
-  "mbRgMbid": "",
-  "mbAbsenceProof": "MusicBrainz release-group 以 artist+title 搜尋無此盤；Discogs master 1591988 為身分來源",
-  "manualEvidenceUrls": [
-   "https://www.discogs.com/master/1591988",
-   "https://www.discogs.com/release/8157958"
-  ],
-  "releaseException": "",
-  "queryAlias": "Pege Trio；Pege Aladár",
-  "uncertain": "MB 查無。廠牌為捷克 Supraphon，但為匈牙利藝人；country 填 hu。",
-  "group": "eb2a",
-  "factionZh": "匈牙利主流／後咆勃",
-  "mb": null
- },
- {
   "artist": "Walter Norris & Aladár Pege",
   "album": "Synchronicity",
   "year": 1979,
@@ -358,44 +362,6 @@
   "group": "eb2a",
   "factionZh": "匈牙利主流／後咆勃",
   "mb": null
- },
- {
-  "artist": "György Vukán",
-  "album": "Derby",
-  "year": 1989,
-  "label": "Krém / Magyar Rádió",
-  "country": "hu",
-  "faction": "hu-mainstream",
-  "genres": [
-   "jazz"
-  ],
-  "why": "鋼琴家兼作曲家 Vukán 的 80 年代作，匈牙利現代爵士鋼琴的代表。",
-  "moodGuess": {
-   "x": 3,
-   "y": 0.4,
-   "z": 0.4,
-   "why": "現代爵士鋼琴，邊緣躁、輕、微暖"
-  },
-  "evidence": [
-   "https://www.discogs.com/master/1933443",
-   "https://www.discogs.com/release/4881364",
-   "https://musicbrainz.org/release-group/fba5793f-ac8a-4624-8a14-1ecdf8f6820a"
-  ],
-  "mbRgMbid": "fba5793f-ac8a-4624-8a14-1ecdf8f6820a",
-  "mbAbsenceProof": null,
-  "manualEvidenceUrls": [],
-  "releaseException": "",
-  "queryAlias": "Vukán Derby",
-  "uncertain": "Vukán György 依國際寫法 György Vukán。",
-  "group": "eb2a",
-  "factionZh": "匈牙利主流／後咆勃",
-  "mb": {
-   "title": "Derby",
-   "type": "Album",
-   "sec": [],
-   "date": "1989",
-   "credit": "Vukán"
-  }
  },
  {
   "artist": "The Super Trio",
@@ -1307,6 +1273,43 @@
    "type": "Album",
    "sec": [],
    "date": "1975",
+   "credit": "Energit"
+  }
+ },
+ {
+  "album": "Piknik",
+  "year": 1978,
+  "label": "Panton",
+  "country": "cs",
+  "faction": "cs-fusion",
+  "genres": [
+   "jazz"
+  ],
+  "why": "Energit 第二張，融合爵士／放克更成熟，近年重發被樂迷肯定。",
+  "moodGuess": {
+   "x": 3.8,
+   "y": 0.5,
+   "z": 0.3,
+   "why": "放克融合，律動明亮旋律清楚"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/278f78a1-5ffa-4022-b104-ff32f9565d3d",
+   "https://www.discogs.com/master/566942"
+  ],
+  "mbRgMbid": "278f78a1-5ffa-4022-b104-ff32f9565d3d",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "Energit Piknik Panton",
+  "uncertain": "iTunes 未查得 Piknik 單張（只有 2009 合輯）；封面走 Discogs。",
+  "artist": "Energit",
+  "group": "eb2b",
+  "factionZh": "捷克斯洛伐克爵士搖滾／融合",
+  "mb": {
+   "title": "Piknik",
+   "type": "Album",
+   "sec": [],
+   "date": "1978",
    "credit": "Energit"
   }
  },
