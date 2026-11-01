@@ -1,0 +1,9 @@
+{
+ "batch": "add-20261101-eb5", "cards": 38,
+ "written": { "cardCatalog": 38, "kvKeys": 38, "seedRows": 38, "previewReady": 32, "previewUnavailable": 6 },
+ "review": { "by": "cloud-main", "cards": 38, "changed": ["desc2:Wolfgang Dauner Quintet|The Oimels", "desc2:Oscar Peterson|Motions and Emotions", "desc2:Jerry Goodman & Jan Hammer|Like Children", "desc2:Gabor Szabo|Jazz Raga", "desc2:Michał Urbaniak, Tomasz Stańko, Attila Zoller & Urszula Dudziak|We'll Remember Komeda"] },
+ "qa": { "research": "pass", "hooks": "pass", "out": "pass", "prepareGate": "0 error", "publishedGate": "0 error" },
+ "apex": 0,
+ "pendingLocal": { "kv": "無", "listeners": [], "apexEvidence": [], "genreTree": "已重建", "albumOverrides": "無" },
+ "artistIntro": { "roster": "batch-progress/artist-intro/roster-eb5.json", "batch": "ar-d-245", "artists": 21, "state": "cut" }
+}
