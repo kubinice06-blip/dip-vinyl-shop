@@ -69,3 +69,16 @@
 - **51449**　Modern Jazz Big Band 65 同名盤**是現場錄音**（Discogs 備註 recorded live 1965-01-22 Berlin，單聲道，Amiga 8 50 054），與 Krug 合作盤是同一場演出的兩半。建議開 `releaseException`；年份 Discogs／MB 1966、de.wikipedia 1965，卡單 1966 留。
 - **51450**　Brüning 1982 個人盤：錄音室盤（Discogs 無錄音日期），13 首標準曲／流行歌配 Studio-Orchester 與弦樂，Petrowsky 客串長笛、上低音薩克斯風並寫說明；爵士濃度中等。
 - 51477：研究 e 組補研究：Modern Jazz Big Band 65 同名盤與已汰的 Krug 盤是 1965-01-22 同一場現場的兩半。此團唱片紀錄只有這場，照「代表作本來就是現場」收、寫 `exceptionReason`（Krug 盤汰的理由是 Krug 是歌手／演員，那張不是他的代表作）。研究 d 稿刪 Manfred Ludwig-Sextett 殘留，key 與卡單一致。
+
+## 研究 b 組
+- **51411**　Allegro《Sphinx》：蘇聯 Melodiya C60 24695 003（1986，錄於 1986，印量 9920）為原版；Discogs 原盤為五段（Sphinx／三段 Triptych／Portraits of Friends），英文維基九段是後來西方版分段，facts 採原盤。moodGuess 存疑：來源顯示編制含一位合成器手，風格被歸 post-bop／現代主流，無證據是明確電聲 fusion。curatorWhy「Mobile Fidelity 日版」查無日版證據，不採用。
+- **51412**　ВИА Севиль《Севиль》：阿塞拜疆（巴庫）作品、阿塞拜疆語演唱；策展層 scene 寫「愛沙尼亞民謠」是誤植，與愛沙尼亞無關。Discogs 稱 Sevil 1977 解散而盤 1978 出版，推測是編輯既有錄音，錄音年查無來源故不寫。Mustafazadeh 是否親自彈奏僅 Discogs 單一來源（uncertain）。聲音事實不足，標 thin。
+- **51413**　Saarsalu《2 x Labajalg》：首發年 1980 成立（印刷標示 1980，印量 3000），MB 的 1981 是後續壓次。團名 kvartett 但盤上樂手含小提琴與人聲共七人，facts 寫實際編制。非現場、非合輯。
+- **51414**　Tarasov《Atto》：1986 LP（錄於 1984）是 Atto 系列第一張。Discogs 側邊標 A「Atto I」B「Atto II」，與 mic.lt（Atto II 副題 Monotypes 為 1987 另一張）衝突，疑 Discogs 將兩面當兩個編號，兩種記載並列；卡片仍為《Atto》1986。curatorRisk「Atto II 在池外」成立。全盤僅 Tarasov 一人、無電子。
+- **51415**　Архангельск《Призраки старого города》：1990 發行、1987 錄、版權頁 1989 成立。盤背只寫「愛沙尼亞電台錄音」，是棚錄或現場音樂會錄音查無，不寫；已在報告列出。aonb.ru 書目頁（503）只取得搜尋摘要，視為旁證。標 thin。
+- **51416**　Day Dream：MB／Discogs 一致，1986，錄於 1984–85，英語演唱。姓名 Datevik Hovanesian／Tatevik Oganesyan／Hovhannisyan 為同一人。伴奏為 Igor Bril 爵士樂團，部分愛沙尼亞樂手與錄音師，但錄音地無直接來源。
+- **51417**　Chekasin《Prisiminimai》：1986 LP（錄於 1985，40 分 27 秒五段組曲），非現場。推測即立陶宛爵士史所述 Chekasin 四重奏《Nostalgia》電子版（人員完全相同、1986、Vilnius Recording Studio），但兩名稱是否同一作品無直接來源，標 uncertain。moodGuess 存疑：「突兀不協和」無來源佐證，「自由爵士與拼貼」亦查無，不採用。
+- **51418**　Концерт для голоса и оркестра：策展層「2 曲長篇」不對，實為一部作品跨 A／B 面（B 面為「終章」）。作曲年 1985（立陶宛爵士史）／1986（Petrossian 作品表）並列，卡片年份以發行 1986 為準。棚錄（Vilnius Recording Studio），非現場。歌手與池中 Day Dream 為同一人。
+- **51419**　b 組全部 8 張皆為 Melodiya 原版首發，未發現合輯、EP 長度或現場錄音；唯 Arkhangelsk 一張錄音性質（棚／播出／現場）未證實。
+- **51420**　WebSearch 本組用 8 次（每張 1 次內，另有 0 次再查）；Wikipedia API 被代理 429，改用 WebFetch 與 Discogs API。
+- 51478：研究 b 組推翻照辦：ВИА Севиль 是亞塞拜然（巴庫）團、亞塞拜然語演唱，不是愛沙尼亞；《Концерт для голоса и оркестра》是一部跨 A／B 面的協奏曲，正文不寫「兩首」；掛名維持 MB／Discogs 原文三方署名。研究稿西里爾專名進 `desc-tools/nonlatin-proper-names.json` 白名單，兩處被曲名切斷的長專名改用〈〉包起；`qa-batch research` 兩批全部通過。
