@@ -77,3 +77,4 @@
 - **47148**　Olmerová《Eva Olmerová》：盤名確認為 Gramofonový Klub 版（0/1 15 0495，1968），同批錄音一般版為 1969《Jazz-Feeling》；cs 維基稱《Jazz Feelin'》（1968）指一般版，寫作層以卡單盤名為準。Apple 同名為 2001 合輯、1974 同名為 Traditional Jazz Studio，皆非本卡。Mahalia Jackson 取自單源（cs 維基），曲目 Discogs 皆標 Traditional。full。
 - **47149**　moodGuess 全組未推翻、亦無聽感樂評佐證；Energit、Brom、Olmerová 吻合電氣長套曲／大編制放克／福音暖嗓。Jonáš、Fermáta 的『空氣感／旋律性』無來源，僅 credits。無須汰換。
 - **47150**　WebSearch 用了 3 次（Okno、Energit、Brom）；維基 curl 429 後改 WebFetch，其餘走 Discogs API。年份分歧：Okno、Ozvěny、Impresie 皆盤面年與卡單年差 0–1 年，已逐張寫入 notes。
+- 47173：封面。人工身分 17 張＋CAA 缺圖者取 Discogs master／release 主圖（`covers.json`，逐張 HTTP 200 image），其餘 CAA release-group front 200。主線 2026-11-01 縮圖表 40 張逐張目視與盤名相符。Jazz Q《Coniunctio》封面印「Blue Effect & Jazz Q Praha」，MB 掛名 Jazz Q，照 MB 掛 Jazz Q（池中 Blue Effect 只有《Nová syntéza》，不撞）；寫作層可寫兩團合錄。
