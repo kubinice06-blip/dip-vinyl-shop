@@ -13,11 +13,11 @@
 
 | 批 | 場景 | 目標 | 藝人介紹批號 | 狀態 |
 |---|---|---:|---|---|
-| eb1 | **Kőrössy 本人（《Identification》必收）＋羅馬尼亞**（Electrecord 爵士系列 1960–90：Johnny Răducanu、Aura Urziceanu、Richard Oschanitzky、Dan Mîndrilă、Marius Popp、Harry Tavitian、Mircea Tiberian、Anca Parghel、Ion Baciu、Decebal Bădilă…）＋**巴爾幹**（南斯拉夫：Dusko Goykovich、Boško Petrović、Bora Rokovic、RTB Big Band；保加利亞：Milcho Leviev、Jazz Focus 65、Anatoly Vapirov、Simeon Shterev） | 40 | ar-d-241 | |
-| eb2 | **匈牙利**（Szabados György、Pege Aladár、Gonda János、Dresch Mihály、Kőszegi Imre、Vukán György、Rátonyi Róbert、Szakcsi Lakatos Béla、Lakatos Tony、Binder Károly、Grencsó István…）＋**捷克斯洛伐克**（Jazz Q、Karel Velebný／SHQ、Laco Déczi、Jiří Stivín、Emil Viklický、Karel Růžička、Rudolf Dašek、Jiří Mráz、Gustav Brom、Junior Trio、Martin Kratochvíl…） | 40 | ar-d-242 | |
+| eb1 | **Kőrössy 本人（《Identification》必收）＋羅馬尼亞**（Electrecord 爵士系列 1960–90：Johnny Răducanu、Aura Urziceanu、Richard Oschanitzky、Dan Mîndrilă、Marius Popp、Harry Tavitian、Mircea Tiberian、Anca Parghel、Ion Baciu、Decebal Bădilă…）＋**巴爾幹**（南斯拉夫：Dusko Goykovich、Boško Petrović、Bora Rokovic、RTB Big Band；保加利亞：Milcho Leviev、Jazz Focus 65、Anatoly Vapirov、Simeon Shterev） | 40 | ar-d-241 | ✅ 上線 40（跳過 0 張已在池；試聽 ready 7／unavailable 33；頂點 0；新藝人 34） |
+| eb2 | **匈牙利**（Szabados György、Pege Aladár、Gonda János、Dresch Mihály、Kőszegi Imre、Vukán György、Rátonyi Róbert、Szakcsi Lakatos Béla、Lakatos Tony、Binder Károly、Grencsó István…）＋**捷克斯洛伐克**（Jazz Q、Karel Velebný／SHQ、Laco Déczi、Jiří Stivín、Emil Viklický、Karel Růžička、Rudolf Dašek、Jiří Mráz、Gustav Brom、Junior Trio、Martin Kratochvíl…） | 40 | ar-d-242 | ✅ 上線 39（跳過 0 張已在池；研究汰 5、照實 39；試聽 ready 25／unavailable 14；頂點 0；新藝人 29） |
 | eb3 | **波蘭 60–80 年代**（Polish Jazz 系列等；Andrzej Kurylewicz、Jan Ptaszyn Wróblewski、Mieczysław Kosz、Andrzej Trzaskowski、Michał Urbaniak、Urszula Dudziak、Novi Singers、Zbigniew Namysłowski 其他作、Krzysztof Sadowski、Marek Bliziński、Włodzimierz Nahorny、Wojciech Karolak、Stanisław Sojka、Extra Ball、Sesja 80、Krzysztof Komeda 其他正規作…） | 40 | ar-d-243 | |
 | eb4 | **蘇聯**（Melodiya：Vagif Mustafazadeh、Leonid Chizhik、Alexey Kozlov／Arsenal、Igor Bril、Vladimir Chekasin、Vladimir Tarasov、Gennady Golstein、Allegro、Georgian／Baltic 爵士、Roman Kunsman…）＋**東德**（Amiga：Günter "Baby" Sommer、Ulrich Gumpert、Conrad Bauer、Manfred Schulze、Zentralquartett、Klaus Lenz、Joachim Kühn 東德時期…） | 40 | ar-d-244 | |
-| eb5 | **MPS／SABA（西德）60–70 年代**——《Identification》同廠：Wolfgang Dauner、Hans Koller、George Gruntz、Dave Pike Set、Monty Alexander、Hampton Hawes、Oscar Peterson 在 MPS 未入池的盤、Friedrich Gulda 爵士盤、Lee Konitz、The Singers Unlimited、Rolf Kühn、Albert Mangelsdorff 未入池盤、Volker Kriegel 未入池盤…；也收**東歐移民到西方後的錄音**（Leviev、Goykovich、Urbaniak 美國期、Adam Makowicz、Joachim Kühn 西方期、Gábor Szabó 未入池盤） | 40 | ar-d-245 | |
+| eb5 | **MPS／SABA（西德）60–70 年代**——《Identification》同廠：Wolfgang Dauner、Hans Koller、George Gruntz、Dave Pike Set、Monty Alexander、Hampton Hawes、Oscar Peterson 在 MPS 未入池的盤、Friedrich Gulda 爵士盤、Lee Konitz、The Singers Unlimited、Rolf Kühn、Albert Mangelsdorff 未入池盤、Volker Kriegel 未入池盤…；也收**東歐移民到西方後的錄音**（Leviev、Goykovich、Urbaniak 美國期、Adam Makowicz、Joachim Kühn 西方期、Gábor Szabó 未入池盤） | 40 | ar-d-245 | ✅ 上線 38（跳過 6 張已在池：Baden Powell《Tristeza on Guitar》、Joe Pass《Intercontinental》、George Duke、Don Cherry《Eternal Rhythm》、Globe Unity、Urszula Dudziak；汰現場盤 4：Sun Ra、Violin Summit、Leviev、Monty《Love & Sunshine》；頂點 0；試聽 32／unavailable 6；新藝人 21 位切 ar-d-245） |
 
 名單只是方向，策展層查證後增刪。藝人介紹每批一號，超過 45 位就開溢出號 ar-d-251～255。**不要用 ar-d-1xx 或 201～212**，前者是店主另一個對話在用，後者已被 Spotify 補卡線用掉。
 
@@ -51,3 +51,11 @@
   - 推自己的分支、開 PR、自己合併，不訂閱 PR。
 - 派代理一律加「每做完 N 筆寫檔／已有內容就接續」。**每過一層就 commit＋push 一次存檔**。
 - 收工時在分批表狀態欄寫 `✅ 上線 N（跳過 M 位已在池）`，並更新 `PROJECT_MEMORY.md`。
+
+## eb1／eb2 收工筆記（2026-11-01）
+- **條號**：eb 線用 ebN → 47001＋(N−1)×100（eb1 47001–47080、eb2 47101–47180）。
+- **國營廠盤的現場陷阱**：MB／Discogs 常不標 Live，研究層一查才知道——eb1《Transylvanian Suite》（Leo）、Jazz Focus 65（Bulgaria 音樂廳）照例外收；eb2 Walter Norris & Pege《Synchronicity》（紐倫堡 East-West Jazz Festival）、Dresch《...Folyondár...》（Közgáz Jazz Club）汰。策展派工要求查 Discogs notes 的錄音地點。
+- **單曲／彙編也會混進來**：Pege Trio《Bass On Top》是 7 吋兩首、Pege《Pege》含爵士節現場彙編、Vukán《Derby》是舞劇組曲，研究層都抓到。
+- **試聽差很大**：羅馬尼亞／南斯拉夫／保加利亞原盤幾乎不在串流（eb1 7/40），匈牙利 Hungaroton「Hungarian Jazz History」與 Supraphon 數位重發覆蓋大半（eb2 25/39）。重發常加收曲目，取原盤 A1 要逐軌對。iTunes Search 中途 403 限流，lookup 端點不受影響。
+- **人工身分卡 gate 前一律用 MB 重查**：抓到 Belgrade Blues、Super Trio《Birthday Party》、Déczi《Pietoso》其實有 MB 條目（多為數位重發 RG），改釘住。
+- 匈牙利人名照池中慣例用西式「名 姓」；同一人跨掛名統一（Kőrössy 三種寫法 → Yancy Körössy；Szabados Quartet → György Szabados）。
