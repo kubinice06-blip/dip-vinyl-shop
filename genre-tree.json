@@ -1,5 +1,5 @@
 {
- "產出日期": "2026-10-30",
+ "產出日期": "2026-11-01",
  "minNode": 20,
  "genres": [
   {
@@ -363,32 +363,32 @@
   {
    "id": "jazz",
    "zh": "爵士",
-   "count": 4994,
+   "count": 5032,
    "children": [
     {
      "id": "bop",
      "zh": "Bebop / Hard Bop",
-     "count": 1427,
+     "count": 1441,
      "children": [
       {
        "id": "hard-bop",
        "zh": "Hard Bop",
-       "count": 423
+       "count": 424
       },
       {
        "id": "post-bop",
        "zh": "Post-Bop / 現代爵士",
-       "count": 397
+       "count": 398
       },
       {
        "id": "bebop",
        "zh": "Bebop",
-       "count": 386
+       "count": 390
       },
       {
        "id": "piano",
        "zh": "鋼琴",
-       "count": 183
+       "count": 191
       },
       {
        "id": "sax",
@@ -405,12 +405,12 @@
     {
      "id": "free",
      "zh": "自由與前衛",
-     "count": 988,
+     "count": 995,
      "children": [
       {
        "id": "avant",
        "zh": "前衛與 New Thing",
-       "count": 511
+       "count": 515
       },
       {
        "id": "free-improv",
@@ -425,7 +425,7 @@
       {
        "id": "fusion",
        "zh": "偏 Fusion",
-       "count": 80
+       "count": 83
       },
       {
        "id": "spiritual",
@@ -435,39 +435,39 @@
       {
        "id": "euro",
        "zh": "歐陸自由爵士",
-       "count": 57
+       "count": 61
       }
      ]
     },
     {
      "id": "fusion",
      "zh": "Fusion / Jazz-Funk",
-     "count": 888,
+     "count": 905,
      "children": [
       {
        "id": "jazz-funk",
        "zh": "Jazz-Funk",
-       "count": 243
+       "count": 247
       },
       {
        "id": "smooth",
        "zh": "Smooth / 當代",
-       "count": 163
+       "count": 166
       },
       {
        "id": "acid-nu",
        "zh": "Acid / Nu Jazz",
+       "count": 81
+      },
+      {
+       "id": "jazz-rock",
+       "zh": "Jazz-Rock",
        "count": 79
       },
       {
        "id": "japan",
        "zh": "日本 Fusion",
        "count": 75
-      },
-      {
-       "id": "jazz-rock",
-       "zh": "Jazz-Rock",
-       "count": 68
       },
       {
        "id": "latin",
@@ -484,17 +484,17 @@
     {
      "id": "contemporary",
      "zh": "當代與 Nu Jazz",
-     "count": 826,
+     "count": 840,
      "children": [
       {
        "id": "nu-jazz",
        "zh": "Nu / Acid Jazz",
-       "count": 288
+       "count": 290
       },
       {
        "id": "smooth",
        "zh": "Smooth / Lounge",
-       "count": 254
+       "count": 258
       },
       {
        "id": "post-bop",
@@ -504,45 +504,45 @@
       {
        "id": "free",
        "zh": "偏前衛",
-       "count": 113
+       "count": 115
       },
       {
        "id": "piano",
        "zh": "鋼琴",
-       "count": 105
+       "count": 108
       },
       {
        "id": "euro",
        "zh": "ECM / 歐陸",
-       "count": 71
+       "count": 73
       },
       {
        "id": "vocal",
        "zh": "人聲",
-       "count": 67
+       "count": 71
       },
       {
        "id": "world",
        "zh": "世界與靈性",
-       "count": 54
+       "count": 59
       }
      ]
     },
     {
      "id": "vocal",
      "zh": "人聲爵士",
-     "count": 364,
+     "count": 366,
      "children": []
     },
     {
      "id": "swing",
      "zh": "Swing / 大樂團",
-     "count": 282,
+     "count": 287,
      "children": [
       {
        "id": "big-band",
        "zh": "大樂團",
-       "count": 82
+       "count": 86
       },
       {
        "id": "vocal",
@@ -598,13 +598,13 @@
     {
      "id": "cool",
      "zh": "Cool / 西岸",
-     "count": 185,
+     "count": 187,
      "children": []
     },
     {
      "id": "latin",
      "zh": "拉丁與巴莎",
-     "count": 161,
+     "count": 163,
      "children": [
       {
        "id": "afro-cuban",
@@ -614,14 +614,14 @@
       {
        "id": "bossa",
        "zh": "Bossa / 巴西",
-       "count": 77
+       "count": 79
       }
      ]
     },
     {
      "id": "ecm",
      "zh": "ECM / 歐陸",
-     "count": 125,
+     "count": 126,
      "children": []
     },
     {
