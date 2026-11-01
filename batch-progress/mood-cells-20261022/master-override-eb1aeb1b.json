@@ -1,0 +1,18 @@
+{
+ "drop": [
+  ["Aura Urziceanu", "Aura"],
+  ["Brigitte Petry și Formația Richard Oschanitzky", "Brigitte Petry și Formația Richard Oschanitzky"],
+  ["Vocal Jazz Quartet / Radu Ghizășan", "Conexiuni Bop - Formații Sibiene de Jazz"],
+  ["Tone Janša Quartet", "Beogradski Jazz Festival '78"],
+  ["Jazz Quintet", "Idea"],
+  ["Lyudmil Georgiev", "Midnight Hour"],
+  ["Johnny Răducanu", "Confesiuni"],
+  ["Trio Manusardi", "Impresii din Vacanță"]
+ ],
+ "fix": {
+  "Yancy Körössy|Identification": {"country": "ro"},
+  "Jancsi Körössy|Seria Jazz Nr. 1": {"artist": "Yancy Körössy", "queryAlias": "Jancsi Körössy；Kőrössy János"},
+  "Kőrössy János|Kőrössy János És Együttese": {"artist": "Yancy Körössy", "queryAlias": "Kőrössy János；Jancsi Körössy"},
+  "Dusko Goykovich|Internacionalni jazz oktet Duška Gojkovića sa Keni Klarkom": {"releaseException": ""}
+ }
+}

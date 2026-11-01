@@ -1,0 +1,43 @@
+{
+ "batch": "add-20261101-eb1",
+ "cards": 40,
+ "written": {
+  "cardCatalog": 40,
+  "kvKeys": 40,
+  "seedRows": 40,
+  "previewReady": 7,
+  "previewUnavailable": 33
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 40,
+  "changed": [
+   "desc2:Yancy Körössy|Identification",
+   "desc2:Marius Popp|Nodul Gordian",
+   "desc2:Aura Urziceanu|Seară de Jazz cu Aura",
+   "desc2:Guido Manusardi|Free Jazz",
+   "desc2:Ramon Tavernier / Cătălin Tîrcolea|Panpipe in Jazz",
+   "desc2:Petar Ugrin|Samo muzika"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "prepareGate": "0 error",
+  "publishedGate": "0 error"
+ },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "無"
+ },
+ "artistIntro": {
+  "roster": "batch-progress/artist-intro/roster-eb1.json",
+  "batch": "ar-d-241",
+  "artists": 34,
+  "state": "cut"
+ }
+}

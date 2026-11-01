@@ -363,32 +363,32 @@
   {
    "id": "jazz",
    "zh": "爵士",
-   "count": 5032,
+   "count": 5111,
    "children": [
     {
      "id": "bop",
      "zh": "Bebop / Hard Bop",
-     "count": 1441,
+     "count": 1459,
      "children": [
       {
        "id": "hard-bop",
        "zh": "Hard Bop",
-       "count": 424
+       "count": 431
       },
       {
        "id": "post-bop",
        "zh": "Post-Bop / 現代爵士",
-       "count": 398
+       "count": 400
       },
       {
        "id": "bebop",
        "zh": "Bebop",
-       "count": 390
+       "count": 392
       },
       {
        "id": "piano",
        "zh": "鋼琴",
-       "count": 191
+       "count": 200
       },
       {
        "id": "sax",
@@ -405,17 +405,17 @@
     {
      "id": "free",
      "zh": "自由與前衛",
-     "count": 995,
+     "count": 1008,
      "children": [
       {
        "id": "avant",
        "zh": "前衛與 New Thing",
-       "count": 515
+       "count": 522
       },
       {
        "id": "free-improv",
        "zh": "自由即興",
-       "count": 225
+       "count": 227
       },
       {
        "id": "post-bop",
@@ -425,7 +425,7 @@
       {
        "id": "fusion",
        "zh": "偏 Fusion",
-       "count": 83
+       "count": 85
       },
       {
        "id": "spiritual",
@@ -442,27 +442,27 @@
     {
      "id": "fusion",
      "zh": "Fusion / Jazz-Funk",
-     "count": 905,
+     "count": 938,
      "children": [
       {
        "id": "jazz-funk",
        "zh": "Jazz-Funk",
-       "count": 247
+       "count": 254
       },
       {
        "id": "smooth",
        "zh": "Smooth / 當代",
-       "count": 166
+       "count": 167
+      },
+      {
+       "id": "jazz-rock",
+       "zh": "Jazz-Rock",
+       "count": 100
       },
       {
        "id": "acid-nu",
        "zh": "Acid / Nu Jazz",
        "count": 81
-      },
-      {
-       "id": "jazz-rock",
-       "zh": "Jazz-Rock",
-       "count": 79
       },
       {
        "id": "japan",
@@ -484,65 +484,65 @@
     {
      "id": "contemporary",
      "zh": "當代與 Nu Jazz",
-     "count": 840,
+     "count": 856,
      "children": [
       {
        "id": "nu-jazz",
        "zh": "Nu / Acid Jazz",
-       "count": 290
+       "count": 292
       },
       {
        "id": "smooth",
        "zh": "Smooth / Lounge",
-       "count": 258
+       "count": 259
       },
       {
        "id": "post-bop",
        "zh": "偏 Post-Bop",
-       "count": 159
+       "count": 161
       },
       {
        "id": "free",
        "zh": "偏前衛",
-       "count": 115
+       "count": 116
       },
       {
        "id": "piano",
        "zh": "鋼琴",
-       "count": 108
+       "count": 110
       },
       {
        "id": "euro",
        "zh": "ECM / 歐陸",
-       "count": 73
+       "count": 79
       },
       {
        "id": "vocal",
        "zh": "人聲",
-       "count": 71
+       "count": 73
       },
       {
        "id": "world",
        "zh": "世界與靈性",
-       "count": 59
+       "count": 63
       }
      ]
     },
     {
      "id": "vocal",
      "zh": "人聲爵士",
-     "count": 366,
+     "count": 371,
      "children": []
     },
     {
      "id": "swing",
      "zh": "Swing / 大樂團",
-     "count": 287,
+     "count": 292,
      "children": [
       {
        "id": "big-band",
        "zh": "大樂團",
-       "count": 86
+       "count": 89
       },
       {
        "id": "vocal",
@@ -552,7 +552,7 @@
       {
        "id": "piano",
        "zh": "鋼琴",
-       "count": 40
+       "count": 41
       },
       {
        "id": "dixieland",
@@ -581,12 +581,12 @@
     {
      "id": "modal",
      "zh": "Modal / 靈性爵士",
-     "count": 192,
+     "count": 194,
      "children": [
       {
        "id": "modal",
        "zh": "Modal",
-       "count": 90
+       "count": 92
       },
       {
        "id": "spiritual",
@@ -604,7 +604,7 @@
     {
      "id": "latin",
      "zh": "拉丁與巴莎",
-     "count": 163,
+     "count": 165,
      "children": [
       {
        "id": "afro-cuban",
@@ -614,7 +614,7 @@
       {
        "id": "bossa",
        "zh": "Bossa / 巴西",
-       "count": 79
+       "count": 81
       }
      ]
     },

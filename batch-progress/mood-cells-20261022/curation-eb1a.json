@@ -1,0 +1,722 @@
+{
+ "group": "eb1a",
+ "factions": [
+  {
+   "id": "ro-korossy",
+   "zh": "Kőrössy 本人",
+   "why": "《Identification》（MPS）與他在 Electrecord／Qualiton 的早期正規作",
+   "count": 3
+  },
+  {
+   "id": "ro-electrecord",
+   "zh": "羅馬尼亞 Electrecord 爵士",
+   "why": "Seria Jazz 與 1966–84 正規錄音室作：modal、爵士搖滾、人聲、民謠融合、咆勃",
+   "count": 16
+  },
+  {
+   "id": "ro-free",
+   "zh": "羅馬尼亞自由／現代與旅外",
+   "why": "Tavitian 自由即興、Tiberian、Parghel 等 80–90 年代以後",
+   "count": 4
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Yancy Körössy",
+   "album": "Identification",
+   "year": 1970,
+   "label": "MPS",
+   "country": "de",
+   "faction": "ro-korossy",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Kőrössy 1969 年在西德 MPS 錄的第一張西方作品，Rettenbacher／Antolini 三重奏，羅馬尼亞爵士鋼琴手打進西歐的代表",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.2,
+    "z": 1.0,
+    "why": "咆勃鋼琴三重奏標準曲，搖擺旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dbb6ed3d-b6c7-4c77-8300-92701186ec0c",
+    "https://www.discogs.com/master/431493",
+    "https://api.discogs.com/masters/431493",
+    "https://music.apple.com/us/album/identification/1075911193"
+   ],
+   "mbRgMbid": "dbb6ed3d-b6c7-4c77-8300-92701186ec0c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 的首發日期是 2006 重發（日本盤），原盤 1970；西德發行但藝人為羅馬尼亞背景，country 填 de 以符合發行地，主線可改 ro"
+  },
+  {
+   "artist": "Jancsi Körössy",
+   "album": "Seria Jazz Nr. 1",
+   "year": 1965,
+   "label": "Electrecord",
+   "country": "ro",
+   "faction": "ro-korossy",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Electrecord「Seria Jazz」系列第 1 號，1965 年 8 月羅馬尼亞廣播電視錄音室錄製，羅馬尼亞戰後爵士的起點盤",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.1,
+    "z": 0.9,
+    "why": "硬咆勃鋼琴三重奏，標準曲、旋律明確"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e859d48f-bff7-449f-a08c-f258364cd94f",
+    "https://www.discogs.com/master/140817",
+    "https://api.discogs.com/masters/140817",
+    "https://www.discogs.com/release/7785671"
+   ],
+   "mbRgMbid": "e859d48f-bff7-449f-a08c-f258364cd94f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Jancsi Körössy",
+   "uncertain": "MB 對應的是 2011 Jazzhus Disk 數位重發，標題為「Jancsi Körössy」，曲目與原盤完全一致；原盤為 10 吋 LP（Discogs 標 LP 10\"），若店規不收 10 吋請主線汰換"
+  },
+  {
+   "artist": "Kőrössy János",
+   "album": "Kőrössy János És Együttese",
+   "year": 1964,
+   "label": "Qualiton",
+   "country": "hu",
+   "faction": "ro-korossy",
+   "genres": [
+    "jazz"
+   ],
+   "why": "匈牙利 Qualiton 為他出的早期 LP，西移前的匈牙利／羅馬尼亞時期作品，對照 Electrecord 錄音",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.0,
+    "z": 0.8,
+    "why": "早期咆勃小編制，旋律清楚"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/507009",
+    "https://api.discogs.com/masters/507009"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz 以 Kőrössy／Körössy／Korossy 與盤名查詢，只有 Identification、2011 Jazzhus 重發與晚年錄音，無 1964 Qualiton LP",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/507009",
+    "https://api.discogs.com/masters/507009"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "曲目 13 首、LPX 7301，可能偏短曲合集式 LP；藝人名拼法與 Identification 不同，建議主線合併為同一人；匈牙利盤，eb2 可能也會碰到"
+  },
+  {
+   "artist": "Cvartetul de Jazz Paul Weiner",
+   "album": "Spirale",
+   "year": 1976,
+   "label": "Electrecord",
+   "country": "ro",
+   "faction": "ro-electrecord",
+   "genres": [
+    "jazz"
+   ],
+   "why": "羅馬尼亞爵士黑膠最搶手的一張，modal／靈性爵士，Discogs 想要數全區最高，Jazzanova 合輯也收",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.4,
+    "z": -0.3,
+    "why": "modal 懸浮、旋律抽象偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a59e1ab9-9b25-4474-96fc-9f7b6b47a47c",
+    "https://www.discogs.com/master/686332",
+    "https://api.discogs.com/masters/686332"
+   ],
+   "mbRgMbid": "a59e1ab9-9b25-4474-96fc-9f7b6b47a47c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Paul Weiner",
+   "uncertain": ""
+  },
+  {
+   "artist": "Marius Popp",
+   "album": "Panoramic Jazz Rock",
+   "year": 1977,
+   "label": "Electrecord",
+   "country": "ro",
+   "faction": "ro-electrecord",
+   "genres": [
+    "jazz",
+    "rock"
+   ],
+   "why": "羅馬尼亞爵士搖滾代表作，Electrecord 鍵盤手 Marius Popp 的原典，近年海外 crate-digger 首選",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.7,
+    "z": 0.3,
+    "why": "爵士搖滾合成器與鼓推進，厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a2c28a42-4678-4ecf-9cca-91eaa0f32a22",
+    "https://www.discogs.com/master/553787",
+    "https://api.discogs.com/masters/553787"
+   ],
+   "mbRgMbid": "a2c28a42-4678-4ecf-9cca-91eaa0f32a22",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Marius Popp",
+   "album": "Nodul Gordian",
+   "year": 1984,
+   "label": "Electrecord",
+   "country": "ro",
+   "faction": "ro-electrecord",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Popp 80 年代 jazz-funk／後咆勃作，與 1977 年爵士搖滾是不同高峰",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.4,
+    "z": 0.3,
+    "why": "jazz-funk 律動、合成器"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a5a98dd5-1e0f-4a5a-941d-b389714522aa",
+    "https://www.discogs.com/master/747041",
+    "https://api.discogs.com/masters/747041"
+   ],
+   "mbRgMbid": "a5a98dd5-1e0f-4a5a-941d-b389714522aa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Aura Urziceanu",
+   "album": "Seară de Jazz cu Aura",
+   "year": 1974,
+   "label": "Electrecord",
+   "country": "ro",
+   "faction": "ro-electrecord",
+   "genres": [
+    "jazz"
+   ],
+   "why": "羅馬尼亞爵士人聲第一人的爵士專輯，大樂團伴奏加吉普賽爵士色彩",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.3,
+    "z": 1.0,
+    "why": "人聲＋大樂團，旋律暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/63ec995b-0a5a-4014-8092-ab6ac3c9b0c0",
+    "https://www.discogs.com/master/1151033",
+    "https://api.discogs.com/masters/1151033"
+   ],
+   "mbRgMbid": "63ec995b-0a5a-4014-8092-ab6ac3c9b0c0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Aura Urziceanu",
+   "album": "Oh, My Love",
+   "year": 1974,
+   "label": "Electrecord",
+   "country": "ro",
+   "faction": "ro-electrecord",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Aura 英語靈魂爵士一面，Soul-Jazz／jazz-funk，與《Seară de Jazz》是不同路線",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.2,
+    "z": 1.2,
+    "why": "靈魂嗓、柔和律動"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/445824",
+    "https://api.discogs.com/masters/445824",
+    "https://music.apple.com/us/album/oh-my-love/1894791195"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz 以 Aura Urziceanu 與 Oh, My Love 查詢無此盤",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/445824",
+    "https://api.discogs.com/masters/445824"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 上有數位版（1974 標年）"
+  },
+  {
+   "artist": "Dan Mîndrilă",
+   "album": "Alter Ego",
+   "year": 1981,
+   "label": "Electrecord",
+   "country": "ro",
+   "faction": "ro-electrecord",
+   "genres": [
+    "jazz",
+    "rock"
+   ],
+   "why": "羅馬尼亞融合爵士代表作，爵士搖滾／funk 的 80 年代成熟形態",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.5,
+    "z": 0.2,
+    "why": "融合爵士，電吉他鍵盤"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8fa2d047-d120-4d32-b25b-90b76acc4d80",
+    "https://www.discogs.com/master/616359",
+    "https://api.discogs.com/masters/616359"
+   ],
+   "mbRgMbid": "8fa2d047-d120-4d32-b25b-90b76acc4d80",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Johnny Răducanu",
+   "album": "Jazz în Trio",
+   "year": 1967,
+   "label": "Electrecord",
+   "country": "ro",
+   "faction": "ro-electrecord",
+   "genres": [
+    "jazz"
+   ],
+   "why": "羅馬尼亞爵士貝斯手 Johnny Răducanu 的首批 Electrecord 錄音，Trio 咆勃之後的後咆勃經典",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.0,
+    "z": 0.8,
+    "why": "貝斯領銜三重奏，後咆勃、旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/12fff548-7818-473d-ad18-da807d0dffe9",
+    "https://www.discogs.com/master/232971",
+    "https://api.discogs.com/masters/232971"
+   ],
+   "mbRgMbid": "12fff548-7818-473d-ad18-da807d0dffe9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Johnny Crețu Răducanu",
+   "uncertain": "Discogs 署名「Johnny - Crețu Răducanu」，MB 為 2011 數位重發"
+  },
+  {
+   "artist": "Johnny Răducanu",
+   "album": "Jazz în Țara Mea / Jazz in My Country",
+   "year": 1976,
+   "label": "Electrecord",
+   "country": "ro",
+   "faction": "ro-electrecord",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "把羅馬尼亞民謠素材帶進爵士的民謠融合名作，Răducanu 後期風格代表",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.2,
+    "z": 0.5,
+    "why": "民謠旋律的爵士，鋼琴與貝斯"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/05bd8055-dd82-4568-956c-85e07291b5e2",
+    "https://www.discogs.com/master/570364",
+    "https://api.discogs.com/masters/570364"
+   ],
+   "mbRgMbid": "05bd8055-dd82-4568-956c-85e07291b5e2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Trio Manusardi",
+   "album": "Impresii din Vacanță",
+   "year": 1974,
+   "label": "Electrecord",
+   "country": "ro",
+   "faction": "ro-electrecord",
+   "genres": [
+    "jazz"
+   ],
+   "why": "義大利鋼琴手 Manusardi 在布加勒斯特的 modal／拉丁爵士，海外爵士迷追的羅馬尼亞盤",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.2,
+    "z": 0.4,
+    "why": "modal 拉丁律動"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4bea3db1-da7f-3957-b98a-f2942300ffd6",
+    "https://www.discogs.com/master/348782",
+    "https://api.discogs.com/masters/348782"
+   ],
+   "mbRgMbid": "4bea3db1-da7f-3957-b98a-f2942300ffd6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Guido Manusardi Trio",
+   "uncertain": "Manusardi 是義大利人（長居瑞典）但專輯由 Electrecord 在羅馬尼亞發行；Discogs 署名 The Guido Manusardi Trio"
+  },
+  {
+   "artist": "Guido Manusardi",
+   "album": "Free Jazz",
+   "year": 1968,
+   "label": "Electrecord",
+   "country": "ro",
+   "faction": "ro-electrecord",
+   "genres": [
+    "jazz"
+   ],
+   "why": "東歐最早的自由爵士唱片之一，羅馬尼亞自由爵士的起點",
+   "moodGuess": {
+    "x": 4.0,
+    "y": 0.3,
+    "z": -1.2,
+    "why": "自由爵士，無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6251246f-edff-4524-9c0a-49c5da82583c",
+    "https://www.discogs.com/master/452995",
+    "https://api.discogs.com/masters/452995"
+   ],
+   "mbRgMbid": "6251246f-edff-4524-9c0a-49c5da82583c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上，義大利人，Electrecord 錄製發行"
+  },
+  {
+   "artist": "Ramon Tavernier / Cătălin Tîrcolea",
+   "album": "Panpipe in Jazz",
+   "year": 1979,
+   "label": "Electrecord",
+   "country": "ro",
+   "faction": "ro-electrecord",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "排笛（nai）進爵士 funk 的特殊盤，羅馬尼亞民族樂器爵士化的代表",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.1,
+    "z": 0.4,
+    "why": "nai 與 jazz-funk 律動"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d4bbc19b-2e6a-4bb5-ae07-33e1cf502334",
+    "https://www.discogs.com/master/609126",
+    "https://api.discogs.com/masters/609126"
+   ],
+   "mbRgMbid": "d4bbc19b-2e6a-4bb5-ae07-33e1cf502334",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Ramon Tavernier",
+   "uncertain": ""
+  },
+  {
+   "artist": "Cătălin Tîrcolea",
+   "album": "Zboruri",
+   "year": 1982,
+   "label": "Electrecord",
+   "country": "ro",
+   "faction": "ro-electrecord",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Tîrcolea 融合爵士代表，鍵盤主導的 80 年代羅馬尼亞 jazz-funk",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.5,
+    "z": 0.0,
+    "why": "融合、合成器"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1a868e5c-92d6-4aeb-987a-2653e6dba3c6",
+    "https://www.discogs.com/master/504013",
+    "https://api.discogs.com/masters/504013"
+   ],
+   "mbRgMbid": "1a868e5c-92d6-4aeb-987a-2653e6dba3c6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Vocal Jazz Quartet / Radu Ghizășan",
+   "album": "Conexiuni Bop - Formații Sibiene de Jazz",
+   "year": 1979,
+   "label": "Electrecord",
+   "country": "ro",
+   "faction": "ro-electrecord",
+   "genres": [
+    "jazz"
+   ],
+   "why": "錫比烏爵士圈的咆勃與人聲爵士，羅馬尼亞地方場景的代表盤",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.1,
+    "z": 0.9,
+    "why": "咆勃、人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/edf37e7d-e567-4e9b-9f27-51e19b39a548",
+    "https://www.discogs.com/master/660900",
+    "https://api.discogs.com/masters/660900"
+   ],
+   "mbRgMbid": "edf37e7d-e567-4e9b-9f27-51e19b39a548",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Radu Ghizășan",
+   "uncertain": "split 形式（兩團各一面），主線可酌情不收"
+  },
+  {
+   "artist": "Ion Baciu Jr.",
+   "album": "Jazz cu Ion Baciu Jr.",
+   "year": 1981,
+   "label": "Electrecord",
+   "country": "ro",
+   "faction": "ro-electrecord",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Baciu 靈魂爵士與後咆勃混合的個人專輯，羅馬尼亞 80 年代鍵盤爵士",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.3,
+    "z": 0.6,
+    "why": "soul-jazz、爵士搖滾"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/999185",
+    "https://api.discogs.com/masters/999185"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz 以 Ion Baciu 與盤名查詢無結果",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/999185",
+    "https://api.discogs.com/masters/999185"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "manualEvidence 只有 Discogs，第二來源待主線補（Bandcamp／重發廠）"
+  },
+  {
+   "artist": "Brigitte Petry și Formația Richard Oschanitzky",
+   "album": "Brigitte Petry și Formația Richard Oschanitzky",
+   "year": 1966,
+   "label": "Electrecord",
+   "country": "ro",
+   "faction": "ro-electrecord",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Oschanitzky 是羅馬尼亞大樂團爵士的奠基者，這張把 60 年代 swing 大樂團與人聲帶上 LP",
+   "moodGuess": {
+    "x": 3.1,
+    "y": 0.3,
+    "z": 0.9,
+    "why": "大樂團人聲、舞曲式 swing"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1178677",
+    "https://api.discogs.com/masters/1178677"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz 以 Richard Oschanitzky 與 Brigitte Petry 查詢無此盤",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1178677",
+    "https://api.discogs.com/masters/1178677"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏流行舞曲人聲，爵士純度存疑；第二來源待補"
+  },
+  {
+   "artist": "Harry Tavitian & Corneliu Stroe",
+   "album": "Transylvanian Suite",
+   "year": 1986,
+   "label": "Leo Records",
+   "country": "ro",
+   "faction": "ro-free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "羅馬尼亞自由即興的國際代表：亞美尼亞裔 Tavitian 的提琴與 Stroe 鼓，英國 Leo 發行",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.4,
+    "z": -1.3,
+    "why": "自由即興、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6879b549-5ade-4fe0-85ce-8fbc4680798e",
+    "https://www.discogs.com/master/540084",
+    "https://api.discogs.com/masters/540084"
+   ],
+   "mbRgMbid": "6879b549-5ade-4fe0-85ce-8fbc4680798e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "MB 標 Live；為羅馬尼亞自由爵士最重要作品，本就是現場／即興錄音",
+   "queryAlias": "Harry Tavitian",
+   "uncertain": ""
+  },
+  {
+   "artist": "Harry Tavitian & Orient Express",
+   "album": "Axis Mundi",
+   "year": 1999,
+   "label": "Casa Radio",
+   "country": "ro",
+   "faction": "ro-free",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "Tavitian 把東方音階與爵士融合的後期代表",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.4,
+    "z": -0.4,
+    "why": "東方音階融合"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3464619e-7dac-4089-bed3-23116e5c2780",
+    "https://www.discogs.com/master/450923",
+    "https://api.discogs.com/masters/450923"
+   ],
+   "mbRgMbid": "3464619e-7dac-4089-bed3-23116e5c2780",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Harry Tavitian",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mircea Tiberian",
+   "album": "Alone in Heaven",
+   "year": 1998,
+   "label": "Intercont Music",
+   "country": "ro",
+   "faction": "ro-free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Tiberian 獨奏鋼琴代表作，羅馬尼亞 90 年代爵士鋼琴的核心",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.2,
+    "z": -0.2,
+    "why": "獨奏鋼琴、抽象"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dfeb5622-2b55-4032-ae9f-92ab6915b1d8",
+    "https://www.discogs.com/master/484884",
+    "https://api.discogs.com/masters/484884"
+   ],
+   "mbRgMbid": "dfeb5622-2b55-4032-ae9f-92ab6915b1d8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Anca Parghel",
+   "album": "Carpathian Colors",
+   "year": 1993,
+   "label": "NABEL",
+   "country": "ro",
+   "faction": "ro-free",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "羅馬尼亞人聲爵士旅德代表作，喀爾巴阡民謠與爵士",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.1,
+    "z": 0.0,
+    "why": "人聲與民謠素材"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e8e6b04c-ce74-4092-ba86-2d981c3abb87",
+    "https://www.discogs.com/master/1403403",
+    "https://api.discogs.com/masters/1403403"
+   ],
+   "mbRgMbid": "e8e6b04c-ce74-4092-ba86-2d981c3abb87",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Aura Urziceanu",
+   "album": "Aura",
+   "year": 1973,
+   "label": "Electrecord",
+   "country": "ro",
+   "faction": "ro-electrecord",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Aura 在 Electrecord 的首張 LP，抒情爵士與流行之間，風格較柔",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.3,
+    "z": 1.0,
+    "why": "柔和人聲"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/502889",
+    "https://api.discogs.com/masters/502889"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 以 Aura／Aura Urziceanu 查詢的 Aura 都是其他藝人",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/502889",
+    "https://api.discogs.com/masters/502889"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 風格標 Smooth Jazz，爵士純度偏低，優先汰換"
+  }
+ ],
+ "notes": [
+  "提名 23 張（目標 24），羅馬尼亞可靠 LP 池已近見底，照實交，不湊數。",
+  "人名慣例：Identification 用 Yancy Körössy（專輯署名），Electrecord 用 Jancsi Körössy（MB／Discogs 署名），Qualiton 一張用 Kőrössy János；三者同一人，主線上架時請統一藝人鍵（建議 Yancy Körössy 或 Jancsi Körössy 擇一）。",
+  "Kőrössy 只有一張 Electrecord 正規 LP（Seria Jazz Nr.1，Discogs 標 10 吋）；其他 Electrecord 只是 7 吋（Pian 1959）或 2006 年耶誕盤，故第二張改用 Qualiton 1964（hu）。",
+  "MB 中 Seria Jazz Nr.1 與 Jazz în Trio 只有 2011 Jazzhus Disk 數位重發（曲目一致），已據曲目核對後掛 MB RG。",
+  "封面來源：MB 有 CAA 的盤（Spirale、Popp 兩張、Aura、Mîndrilă、Răducanu 兩張、Panpipe、Zboruri、Conexiuni Bop、Axis Mundi、Alone in Heaven、Carpathian Colors）走 CAA；Identification、Seria Jazz、Manusardi、Qualiton、Baciu 等走 Discogs 主頁／API master 的 images（api.discogs.com/masters/ID，無需金鑰）。Oh, My Love 另有 Apple Music。",
+  "曲風／純度存疑可優先汰換：Aura(1973)、Brigitte Petry／Oschanitzky、Conexiuni Bop（split）。",
+  "羅馬尼亞還有但我沒提的候選（給 eb1b）：Johnny Răducanu《Confesiuni》(1979)／《Confesiuni II》(1982)／《Jazz Made in Romania》(1987)；Harry Tavitian & Corneliu Stroe《Creation Suite / Creațiunea》(Electrecord 1991，MB 標 Live)、Creativ《Horizons》(Leo 1985)、Creativ《East-West Creativ Combinations》(1988)；Cătălin Tîrcolea《Nature Boy》(1985)；Marius Popp《Jazz Restitutio 3》(1993)；Mircea Tiberian《Never Ending Story》(1992)；Anca Parghel《Midnight Prayer》(1996)／《Jazz, My Secret Soul》(1994)；Aura《Over The Rainbow》(1984)／《Am Iubit Odată》(1981)；Nicolas Simion Group feat. Dusko Goykovich《Balkan Jazz》(2001)；Roșu și Negru《Leopardul》(7 吋，不收)；Friedrich Gulda《Jam Session la Electrecord》(EDD 1180，Gulda 屬 eb5)；Electrecord 的 Illinois 大學爵士樂團盤(1969)。",
+  "Decebal Bădilă 在 Discogs 只查到 2001／2022 年的晚期作與 Cicero 合錄，沒有 Electrecord 年代正規作，未提。",
+  "疑點：Identification 的 country 我填 de（發行地西德 MPS）；若主線認為該以藝人國籍分組可改 ro。Qualiton 那張與 Ion Baciu、Petry 的第二來源只有 Discogs（含 API），建議主線補。"
+ ]
+}
