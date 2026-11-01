@@ -18,7 +18,31 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 485894 有完整曲目與封面",
+  "mbAbsenceProof": {
+   "queries": [
+    {
+     "query": "releasegroup:\"Reminiscences\"",
+     "count": 39,
+     "topTitles": [
+      "Reminiscences｜Prisma Circus",
+      "Réminiscences｜Bertrand Loreau",
+      "Reminiscences｜Prague Big BandMilan Svoboda"
+     ]
+    },
+    {
+     "query": "artist:\"Леонид Чижик\" AND releasegroup:\"Reminiscences\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "releasegroup:\"Leonid Chizhik\"",
+     "count": 0,
+     "topTitles": []
+    }
+   ],
+   "checkedAt": "2026-11-01",
+   "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 485894 有完整曲目與封面"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/485894",
    "https://www.discogs.com/release/3985641"
@@ -61,7 +85,27 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 970402 有完整曲目與封面",
+  "mbAbsenceProof": {
+   "queries": [
+    {
+     "query": "releasegroup:\"Джаз вдвоем\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "artist:\"Лембит Саарсалу, Леонид Винцкевич\" AND releasegroup:\"Джаз вдвоем\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "releasegroup:\"Two Playing Jazz\"",
+     "count": 0,
+     "topTitles": []
+    }
+   ],
+   "checkedAt": "2026-11-01",
+   "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 970402 有完整曲目與封面"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/970402",
    "https://www.discogs.com/release/8233305"
@@ -101,7 +145,27 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 582860 有完整曲目與封面",
+  "mbAbsenceProof": {
+   "queries": [
+    {
+     "query": "releasegroup:\"Иванушка-дурачок\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "artist:\"Каданс\" AND releasegroup:\"Иванушка-дурачок\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "releasegroup:\"Ivanushka the Fool\"",
+     "count": 0,
+     "topTitles": []
+    }
+   ],
+   "checkedAt": "2026-11-01",
+   "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 582860 有完整曲目與封面"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/582860",
    "https://www.discogs.com/release/3546960"
@@ -141,7 +205,35 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 458682 有完整曲目與封面",
+  "mbAbsenceProof": {
+   "queries": [
+    {
+     "query": "releasegroup:\"Джанго\"",
+     "count": 3,
+     "topTitles": [
+      "Джанго｜Чемберлин",
+      "Джанго (osv)｜Metox",
+      "Джанго. Джазовые Композиции｜Алексей КузнецовНиколай Громин"
+     ]
+    },
+    {
+     "query": "artist:\"Алексей Кузнецов, Николай Громин\" AND releasegroup:\"Джанго\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "releasegroup:\"Django\"",
+     "count": 334,
+     "topTitles": [
+      "Django Django｜Django Django",
+      "Django Django｜Django Django",
+      "LateNightTales: Django Django｜Django Django"
+     ]
+    }
+   ],
+   "checkedAt": "2026-11-01",
+   "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 458682 有完整曲目與封面"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/458682",
    "https://www.discogs.com/release/3752143"
@@ -181,7 +273,27 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 472651 有完整曲目與封面",
+  "mbAbsenceProof": {
+   "queries": [
+    {
+     "query": "releasegroup:\"Tiit Paulus ja sõbrad\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "artist:\"Tiit Paulus\" AND releasegroup:\"Tiit Paulus ja sõbrad\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "releasegroup:\"Тийт Паулус и друзья\"",
+     "count": 0,
+     "topTitles": []
+    }
+   ],
+   "checkedAt": "2026-11-01",
+   "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 472651 有完整曲目與封面"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/472651",
    "https://www.discogs.com/release/3888435"
@@ -221,7 +333,27 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 816329 有完整曲目與封面",
+  "mbAbsenceProof": {
+   "queries": [
+    {
+     "query": "releasegroup:\"Džässkvartett «Tallinn»\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "artist:\"Džässkvartett «Tallinn»\" AND releasegroup:\"Džässkvartett «Tallinn»\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "releasegroup:\"Джаз-квартет Таллин\"",
+     "count": 0,
+     "topTitles": []
+    }
+   ],
+   "checkedAt": "2026-11-01",
+   "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 816329 有完整曲目與封面"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/816329",
    "https://www.discogs.com/release/11814346"
@@ -259,16 +391,11 @@
    "z": -0.2,
    "why": "fusion 推進，民謠旋律偶現"
   },
-  "rgMbid": "",
-  "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 468140 有完整曲目與封面",
-  "manualEvidenceUrls": [
-   "https://www.discogs.com/master/468140",
-   "https://www.discogs.com/release/3846778"
-  ],
+  "rgMbid": "bcd22c9b-68b4-42b8-ad52-610e9950fad1",
+  "identitySource": "pinned",
   "curatorWhy": "fusion／jazz-rock（Arsenal、Allegro 等）：Bril 領軍的 fusion 代表作，帶巴爾幹民謠與自由即興段",
   "curatorRisk": "",
-  "mbNote": "MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/468140 https://www.discogs.com/release/3846778 https://www.discogs.com/master/468140 https://www.discogs.com/release/3846778",
+  "mbNote": "MB release-group bcd22c9b-68b4-42b8-ad52-610e9950fad1：title「Утро Земли」、Album、first-release-date（空）、artist-credit「Джазовый ансамбль Игоря Бриля」；release 為 Мелодия 33 С60—11295-6（SU）。gate 前主線重查 MB 改釘住。證據：https://www.discogs.com/master/468140 https://www.discogs.com/release/3846778",
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
@@ -337,7 +464,35 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 696229 有完整曲目與封面",
+  "mbAbsenceProof": {
+   "queries": [
+    {
+     "query": "releasegroup:\"Севиль\"",
+     "count": 1,
+     "topTitles": [
+      "Севиль - Sevil｜ВИА Севиль"
+     ]
+    },
+    {
+     "query": "artist:\"ВИА Севиль\" AND releasegroup:\"Севиль\"",
+     "count": 1,
+     "topTitles": [
+      "Севиль - Sevil｜ВИА Севиль"
+     ]
+    },
+    {
+     "query": "releasegroup:\"Sevil\"",
+     "count": 4,
+     "topTitles": [
+      "Sevil｜Sevil",
+      "Севиль - Sevil｜ВИА Севиль",
+      "Semeni / Sevil Neşelen｜Nesrin Sipahi"
+     ]
+    }
+   ],
+   "checkedAt": "2026-11-01",
+   "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 696229 有完整曲目與封面"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/696229",
    "https://www.discogs.com/release/5241431"
@@ -413,7 +568,31 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 816461 有完整曲目與封面",
+  "mbAbsenceProof": {
+   "queries": [
+    {
+     "query": "releasegroup:\"Atto\"",
+     "count": 36,
+     "topTitles": [
+      "Atto｜Osvaldo Coluccino",
+      "Atto I - Atto II｜Ovskum",
+      "Atto d'amore｜Serge Santiágo"
+     ]
+    },
+    {
+     "query": "artist:\"Владимир Тарасов\" AND releasegroup:\"Atto\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "releasegroup:\"Vladimir Tarasov\"",
+     "count": 0,
+     "topTitles": []
+    }
+   ],
+   "checkedAt": "2026-11-01",
+   "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 816461 有完整曲目與封面"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/816461",
    "https://www.discogs.com/release/6633011"
@@ -453,7 +632,27 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 383697 有完整曲目與封面",
+  "mbAbsenceProof": {
+   "queries": [
+    {
+     "query": "releasegroup:\"Призраки старого города\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "artist:\"Архангельск\" AND releasegroup:\"Призраки старого города\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "releasegroup:\"Ghosts of the Old Town\"",
+     "count": 0,
+     "topTitles": []
+    }
+   ],
+   "checkedAt": "2026-11-01",
+   "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 383697 有完整曲目與封面"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/383697",
    "https://www.discogs.com/release/3088180"
@@ -528,7 +727,35 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 571676 有完整曲目與封面",
+  "mbAbsenceProof": {
+   "queries": [
+    {
+     "query": "releasegroup:\"Prisiminimai\"",
+     "count": 4,
+     "topTitles": [
+      "Prisiminimai｜Irena Starošaitė",
+      "Prisiminimai｜Geltona",
+      "Vasaros Prisiminimai｜Vytautas Šiškauskas"
+     ]
+    },
+    {
+     "query": "artist:\"Владимир Чекасин\" AND releasegroup:\"Prisiminimai\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "releasegroup:\"The Memoirs\"",
+     "count": 11,
+     "topTitles": [
+      "The Memoirs of an Outlaw｜Abigail Hopkins",
+      "The Memoirs of Sherlock Holmes｜Sir Arthur Conan Doyle",
+      "The Memoirs of Sherlock Holmes｜Sir Arthur Conan DoyleDerek Jacobi"
+     ]
+    }
+   ],
+   "checkedAt": "2026-11-01",
+   "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 571676 有完整曲目與封面"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/571676",
    "https://www.discogs.com/release/1614497"
@@ -568,7 +795,27 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 523201 有完整曲目與封面",
+  "mbAbsenceProof": {
+   "queries": [
+    {
+     "query": "releasegroup:\"Концерт для голоса и оркестра\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "artist:\"Константин Петросян, Татевик Оганесян, Биг-бэнд Владимира Чекасина\" AND releasegroup:\"Концерт для голоса и оркестра\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "releasegroup:\"Concerto for Voice and Orchestra\"",
+     "count": 0,
+     "topTitles": []
+    }
+   ],
+   "checkedAt": "2026-11-01",
+   "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 523201 有完整曲目與封面"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/523201",
    "https://www.discogs.com/release/8223014"
@@ -609,7 +856,27 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 386535 有完整曲目與封面",
+  "mbAbsenceProof": {
+   "queries": [
+    {
+     "query": "releasegroup:\"Ieškojimai ir atradimai\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "artist:\"Petras Vyšniauskas Quartet\" AND releasegroup:\"Ieškojimai ir atradimai\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "releasegroup:\"Searchings and Discoveries\"",
+     "count": 0,
+     "topTitles": []
+    }
+   ],
+   "checkedAt": "2026-11-01",
+   "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 386535 有完整曲目與封面"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/386535",
    "https://www.discogs.com/release/2962234"
@@ -650,7 +917,27 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 3568505 有完整曲目與封面",
+  "mbAbsenceProof": {
+   "queries": [
+    {
+     "query": "releasegroup:\"Джаз-хорал Александра Киладзе\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "artist:\"Джаз-хорал Александра Киладзе\" AND releasegroup:\"Джаз-хорал Александра Киладзе\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "releasegroup:\"Jazz Choral\"",
+     "count": 0,
+     "topTitles": []
+    }
+   ],
+   "checkedAt": "2026-11-01",
+   "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 3568505 有完整曲目與封面"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/3568505",
    "https://www.discogs.com/release/5324042"
@@ -760,7 +1047,27 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 查詢 'Ulrich Gumpert Workshop Band'（artist 與 releasegroup 兩種）於 2026-11-01 皆無此 1980 Amiga LP。",
+  "mbAbsenceProof": {
+   "queries": [
+    {
+     "query": "releasegroup:\"Ulrich Gumpert Workshop Band\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "artist:\"Ulrich Gumpert Workshop Band\" AND releasegroup:\"Ulrich Gumpert Workshop Band\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "releasegroup:\"Gumpert Workshop Band Amiga 1980\"",
+     "count": 0,
+     "topTitles": []
+    }
+   ],
+   "checkedAt": "2026-11-01",
+   "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 查詢 'Ulrich Gumpert Workshop Band'（artist 與 releasegroup 兩種）於 2026-11-01 皆無此 1980 Amiga LP。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/491848",
    "https://www.discogs.com/release/522316"
@@ -978,7 +1285,27 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz 查詢 'Manfred Schulze Bläser Quintett' 與 releasegroup:Viertens 於 2026-11-01 無對應結果。",
+  "mbAbsenceProof": {
+   "queries": [
+    {
+     "query": "releasegroup:\"Viertens\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "artist:\"Manfred Schulze Bläserquintett\" AND releasegroup:\"Viertens\"",
+     "count": 0,
+     "topTitles": []
+    },
+    {
+     "query": "releasegroup:\"Manfred Schulze Blaeserquintett Viertens\"",
+     "count": 0,
+     "topTitles": []
+    }
+   ],
+   "checkedAt": "2026-11-01",
+   "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz 查詢 'Manfred Schulze Bläser Quintett' 與 releasegroup:Viertens 於 2026-11-01 無對應結果。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/1735542",
    "https://www.discogs.com/release/2846295"
