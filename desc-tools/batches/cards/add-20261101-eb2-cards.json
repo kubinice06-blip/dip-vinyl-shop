@@ -408,24 +408,11 @@
    "z": 0.5,
    "why": "後咆勃合奏，邊緣躁、輕、暖"
   },
-  "rgMbid": "",
-  "identitySource": "manual",
-  "mbAbsenceProof": {
-   "queries": [
-    "artist:\"The Super Trio\" AND releasegroup:\"Birthday Party\" → count 1",
-    "releasegroup:\"Birthday Party\" → count 108",
-    "artist:\"Super Trio Vukán Berkes Kőszegi Birthday Party\" AND releasegroup:\"Birthday Party\" → count 0"
-   ],
-   "checkedAt": "2026-11-01T12:03:51.157Z",
-   "conclusion": "⚑待主線核：The Super Trio《Birthday Party》1987 9b46be4f-79c3-43fa-9ba3-b9bd55d5831a策展層：MusicBrainz release-group 以 artist+title 搜尋無此盤；Discogs master 3279115 為身分來源"
-  },
-  "manualEvidenceUrls": [
-   "https://www.discogs.com/master/3279115",
-   "https://www.discogs.com/release/5539362"
-  ],
+  "rgMbid": "9b46be4f-79c3-43fa-9ba3-b9bd55d5831a",
+  "identitySource": "pinned",
   "curatorWhy": "匈牙利主流／後咆勃：Vukán、Berkes、Kőszegi 三位匈牙利爵士名家合組，80 年代匈牙利主流爵士的合奏代表。",
   "curatorRisk": "⚠ MB 查無（同名盤皆他人）。為三人合組團。",
-  "mbNote": "MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/3279115 https://www.discogs.com/release/5539362 https://www.discogs.com/master/3279115 https://www.discogs.com/release/5539362",
+  "mbNote": "MB release-group 9b46be4f-79c3-43fa-9ba3-b9bd55d5831a：title「Birthday Party」、Album、first-release-date 1987、artist-credit「The Super Trio」、release Krém SLPX 37047 HU。證據：https://www.discogs.com/master/3279115 https://www.discogs.com/release/5539362（gate 前主線重查 MB 改釘住）",
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
@@ -976,24 +963,11 @@
    "z": 0.4,
    "why": "後咆勃小號領銜，旋律清楚"
   },
-  "rgMbid": "",
-  "identitySource": "manual",
-  "mbAbsenceProof": {
-   "queries": [
-    "artist:\"Laco Déczi\" AND releasegroup:\"Pietoso\" → count 1",
-    "releasegroup:\"Pietoso\" → count 1",
-    "artist:\"Laco Deczi Jazz Celula Pietoso Laco Tropp\" AND releasegroup:\"Pietoso\" → count 0"
-   ],
-   "checkedAt": "2026-11-01T12:04:19.180Z",
-   "conclusion": "⚑待主線核：Laco DécziCellula Quintet《Pietoso》 f49624ee-efbf-49fd-91b7-ae83c5173163；Laco DécziCellula Quintet《Pietoso》 f49624ee-efbf-49fd-91b7-ae83c5173163策展層：MB 有同名 RG f49624ee 但無首發年與廠牌資料，無法確認為同一張，改走 Discogs master"
-  },
-  "manualEvidenceUrls": [
-   "https://www.discogs.com/master/287976",
-   "https://music.apple.com/cz/album/pietoso-feat-laco-tropp/1405664519"
-  ],
+  "rgMbid": "f49624ee-efbf-49fd-91b7-ae83c5173163",
+  "identitySource": "pinned",
   "curatorWhy": "捷克斯洛伐克後咆勃／主流：Déczi 與 Jazz Celula 的首張後咆勃專輯，斯洛伐克小號手在捷克時期的起點。",
   "curatorRisk": "⚠ MB 同名 RG 未能確認，若審稿能確認可補 mbid。",
-  "mbNote": "MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/287976 https://music.apple.com/cz/album/pietoso-feat-laco-tropp/1405664519 https://www.discogs.com/master/287976 https://musicbrainz.org/release-group/f49624ee-efbf-49fd-91b7-ae83c5173163 https://music.apple.com/cz/album/pietoso-feat-laco-tropp/1405664519",
+  "mbNote": "MB release-group f49624ee-efbf-49fd-91b7-ae83c5173163：title「Pietoso」、Album、first-release-date（空）、artist-credit「Laco Déczi & Cellula Quintet」、唯一 release 為 Supraphon a.s. 數位重發（XW）；原盤 1969 Supraphon，曲目一致。證據：https://www.discogs.com/master/287976 https://music.apple.com/cz/album/pietoso-feat-laco-tropp/1405664519（gate 前主線重查 MB 改釘住）",
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
@@ -1033,7 +1007,7 @@
     "artist:\"Laco Deczi Jazz Celula Opus\" AND releasegroup:\"Jazz Cellula\" → count 0"
    ],
    "checkedAt": "2026-11-01T12:04:26.957Z",
-   "conclusion": "⚑待主線核：Laco Deczi & Jazz Cellula《Jazz Cellula》2008 6e248bc4-4453-4523-a413-5fc9d52962b1；Laco Deczi & Jazz Cellula《Jazz Cellula》2008 6e248bc4-4453-4523-a413-5fc9d52962b1策展層：MusicBrainz release-group search (artist+title) returns no match; Discogs master is the identity source"
+   "conclusion": "MB 的「Laco Deczi & Jazz Cellula《Jazz Cellula》2008」(6e248bc4) 是 Déczi 移居美國後 2008 年的同名新作，不是 1978 Opus 原盤；原盤在 MB 查無。"
   },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/631492",
@@ -1426,7 +1400,7 @@
     "artist:\"Gustav Brom Orchestra Polymelomodus\" AND releasegroup:\"Polymelomodus\" → count 0"
    ],
    "checkedAt": "2026-11-01T12:05:11.186Z",
-   "conclusion": "⚑待主線核：Gustav Brom《Polymelomodus》2015-09-25 5072329d-f976-41e9-9a8b-c90b5ab781f2；Gustav Brom《Polymelomodus》2015-09-25 5072329d-f976-41e9-9a8b-c90b5ab781f2；Orchestr Gustava Broma《Polymelomodus》2015-08-15 c8a3a959-ca2b-4b3c-99be-4e4c8eca3dab策展層：MB 的 Polymelomodus RG 首發日 2015（重發），無 1977 LP 條目，改走 Discogs master"
+   "conclusion": "MB 只有 2015 年數位重發的兩個 release-group（5072329d「Gustav Brom」2015-09-25、c8a3a959「Orchestr Gustava Broma」2015-08-15），無 1977 Supraphon 原盤條目，且兩個重發 RG 掛名不一、無法判定哪個代表本作，故不釘、走人工身分。策展層：MB 的 Polymelomodus RG 首發日 2015（重發），無 1977 LP 條目，改走 Discogs master"
   },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/895907",
@@ -1551,7 +1525,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group search (artist+title) returns no match; Discogs master is the identity source",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Eva Olmerová\" AND releasegroup:\"Eva Olmerová\" → count 0",
+    "releasegroup:\"Eva Olmerová\" → count 0",
+    "artist:\"Eva Olmerova Supraphon 1968\" AND releasegroup:\"Eva Olmerová\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T12:05:28.248Z",
+   "conclusion": "「artist:\"Eva Olmerová\" AND releasegroup:\"Eva Olmerová\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Eva Olmerová\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Eva Olmerova Supraphon 1968\" AND releasegroup:\"Eva Olmerová\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group search (artist+title) returns no match; Discogs master is the identity source"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/75593",
    "https://www.discogs.com/artist/355512"
