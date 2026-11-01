@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-01｜dip-vinyl-shop｜鐵幕爵士＋MPS 策展線 eb5 上線 38 張（MPS／SABA 西德廠牌＋東歐移民西方錄音）
+
+- **店主指示**：「Yancy Körössy* - Identification 收錄 並且擴展相關專輯」→「擴張到 200 張」；本工作階段負責 eb5。
+- **結果**：策展 48（eb5a MPS／SABA 24、eb5b 東歐移民 24）→ 主線汰 8 → 研究後再汰 2（Leviev《Blues for the Fisherman》、Monty Alexander《Love & Sunshine》皆為現場）→ **上線 38**：Dauner、Koller、Gruntz、Mangelsdorff ×2、Kriegel、Rolf Kühn、Ponty ×2、Gulda、Herbolzheimer、Dave Pike Set ×2、Peterson、Monty Alexander／Ranglin、Singers Unlimited、Mark Murphy、Mariano、Clarke-Boland；Goykovich ×2、Urbaniak《Fusion》、Makowicz ×2、Vitous ×3、Hammer ×2、Szabo《Jazz Raga》、Zoller Koller Solal、《We'll Remember Komeda》、Joachim Kühn ×2、Bacsik ×2、Ponomarev。MB 釘住 37、§1 人工 1。掛名照池中寫法（Gabor Szabo、Miroslav Vitous）。頂點 0。試聽 ready 32／unavailable 6。審稿改 5 張（刪單源評價 3、曲名、人名）。子曲風 38/38 落第三層。情緒八格：雀躍 12、冷冽 9、放鬆 6、暴躁 5、沸騰 3、平靜 2、恍惚 1。
+- **藝人介紹**：新藝人 21 位 → `roster-eb5.json`、progress.json `ar-d-245`（cut），補洞寫作待調度另派。
+- **主要檔案**：`batch-progress/add-20261101-eb5/`（rulings、manifest、handoff）、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261101-eb5*`、`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*`、`genre-l3-artist-map.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、`data/mood/*`、`batch-progress/mood-axes/score-eb5/`、`data/discogs-cover-registry.json`、PLAN.md 分批表。
+- **驗證**：qa research／hooks／out 全過；prepare 與 published gate 0 error；card_catalog 38／38；KV 38 鍵回讀逐字一致；封面 38/38 live-check 200；mood gate 錨點 104/104。
+
 ### 2026-11-01｜dip-vinyl-shop｜鐵幕爵士＋MPS 策展線：開工規劃（5 批約 200 張）
 
 - **店主指示**：「Yancy Körössy* - Identification 收錄 並且擴展相關專輯 給我策展計畫」→ 草案 45 張後「擴張到 200 張」。

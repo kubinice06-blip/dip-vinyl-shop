@@ -127,3 +127,6 @@
 ## 本批新藝人（無介紹）
 - 扣掉已有介紹 10 位（Albert Mangelsdorff、Albert Mangelsdorff Quartet、Volker Kriegel、Jean-Luc Ponty、Oscar Peterson、The Singers Unlimited、Mark Murphy、Michał Urbaniak、Adam Makowicz、Gabor Szabo）與已排隊 1 位（Friedrich Gulda），**新藝人 21 位**寫進名冊 `batch-progress/artist-intro/roster-eb5.json`（tier D、addedBy add-20261101-eb5），progress.json 追加 **ar-d-245**（state cut，21 位，未超過 45 不開溢出號 ar-d-255），`desc-tools/batches/artist/cut/ar-d-245.txt`。補洞寫作由調度另派工作階段跑。
 - Wolfgang Dauner、Wolfgang Dauner Quintet、Hans Koller、George Gruntz、Rolf Kühn、Jean-Luc Ponty Experience、Peter Herbolzheimer Rhythm Combination & Brass、The Dave Pike Set、Monty Alexander / Ernest Ranglin、Charlie Mariano、The Kenny Clarke - Francy Boland Big Band、Dusko Goykovich、Adam Makowicz & George Mraz、Miroslav Vitous、Jan Hammer、Jerry Goodman & Jan Hammer、Attila Zoller, Hans Koller & Martial Solal、Michał Urbaniak, Tomasz Stańko, Attila Zoller & Urszula Dudziak、Joachim Kühn、Elek Bacsik、Valery Ponomarev。
+
+## 情緒評分（score-eb5）
+- 43579：Opus 1 支照 `RULES.md`＋BRIEF 打 38 張，主線逐張看過值與研究稿，未改值。八格：雀躍 12、冷冽 9、放鬆 6、暴躁 5、沸騰 3、平靜 2、恍惚 1、頹靡 0；conf high 1／mid 26／low 11。自由爵士 6 張全判躁、色溫 ≤ −0.6；咆勃／大樂團判暖。`merge` → `build-priors` → `build-scale v0` → `build-card-moods`：錨點 104/104 同格，座標 22,349/22,349。不算落格率。
