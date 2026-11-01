@@ -21,3 +21,30 @@
 - 47004：moodGuess 存疑：Marius Popp《Nodul Gordian》（預估合成器；Discogs credits 只有鋼琴與電鋼琴，無合成器）。其餘 7 張無異議。不建議汰換。
 - 47005：Aura《Oh, My Love》曲目為流行翻唱（含三首葡語曲名 Canto Triste／Reza／Dindi），原唱者未逐首查，facts 不指原唱。
 - 47006：Weiner 四重奏成員取自 Discogs credits；維基只確認 Flora 咖啡館三重奏班底（Hromadka、Kamocsa、Butoi），兩者重疊但未見來源直接說明，寫作層宜保守。
+
+## 研究 c 組
+- 47021 Tiberian《Alone in Heaven》moodGuess 存疑：策展寫「獨奏鋼琴」，Discogs credits 是鋼琴＋薩克斯風＋貝斯＋鼓四重奏；錄音 1996 年 11 月、1998 年發行。
+- 47022 Trumpets & Rhythm Unit moodGuess 存疑：策展寫「雙小號」，實際前線四把小號（Gojković／Fidri／Ugrin／Gut），Roković 全程電鋼琴；專輯 1979 年 5 月發行、3 月 16–17 日貝爾格勒錄。
+- 47023 Gojković《Belgrade Blues》：1966-05-19 貝爾格勒錄、1967 發行（LPV 4201）；陣容是美國獨奏家（Nistico／Fontana／Pierce／Moore／Zito），Gojković 1956 起住西德，不是「在地南斯拉夫樂手」。Pierce 掛名單一來源；Herman 樂團成員說法未核證，未寫。
+- 47024 Roković《III》與 Dieval《II》：Discogs 演奏者欄有可疑人員（Roković 盤的 Sydow／Hoitz；Dieval 盤列了五人卻稱四重奏），無第二來源，facts 用「Discogs 列出」保守寫，notes 要求寫作層不點名。
+- 47025 國營廠盤（Gojković 1961、Roković、Dieval、TRU、Belgrade Blues）皆只有 Discogs＋編制／曲目／風格標籤，無樂評音色，status 全標 thin；Roković 生平查無可信頁，未寫。
+- 47026 Parghel／Tavitian／Tiberian 身分與年份、廠牌（NABEL 4656／Casa Radio DDD 014／Intercont IMCD 1128）全部對上，無推翻。Parghel 只列 Vocals, Piano，是否另有伴奏未知；Discogs 簡介裡被拿來比較的歌手只剩連結代號，不寫名。
+- 本組 8 張：full 1（Tavitian）、thin 7；推翻策展層 0 處，moodGuess 存疑 2（Tiberian、TRU）。
+
+## 研究 e 組
+- 47041 全組 8 張身分（盤名／年份／廠牌／目錄號）對 Discogs release 全部相符：Ugrin（LD 0479, 1979）、Gut（PGP RTB 2122596, 1987）、Jazz Focus 65（BTA 1006, 1967）、Septet Rousse（BTA 10490, 1980，MB RG 相符）、Denev（BTA 10449, 1980）、Nikolov（BTA 10359, 1979）、Focus Jazz Quartet（BTA 11676, 1986）、Spassov／Moutafchiev（ВНА 12215, 1986）。無年份或廠牌推翻。
+- 47042 推翻策展層 2 處：(a) Focus Jazz Quartet 非「Jazz Focus 65 後繼」（成員為 1980 年代 Donchev 世代，唯 Simeon Shterev 兩團皆有；facts 不寫後繼）；(b) Jazz Focus 65「Balkanton 首張正規 LP」查無來源，未採信。另 Spassov「民謠融合爵士的起點」亦未採信。
+- 47043 Jazz Focus 65：BTA 1006 vs 搜尋摘要另有 BTA 1098／1966 之說，Discogs 僅 1967，採 1967（4 月 Bulgaria 音樂廳現場）。樂手列名僅出自 alo.bg 二手商品頁（單源），寫作層需謹慎。與 MPS 西德盤（eb5）不同。
+- 47044 moodGuess 存疑：Spassov／Moutafchiev《The Long Road》—— 盤中過半是民歌合奏團管弦與合唱，爵士只佔 A 面後段與 B 面開頭，爵士純度低，主線請考慮是否保留；Septet Rousse —— 電聲配置，可能比「自由」更近融合（輕度）。
+- 47045 本組 8 張：full 1（Ugrin）、partial 5（Gut、Rousse、Denev、Nikolov、Spassov）、thin 2（Jazz Focus 65、Focus Jazz Quartet）。國營廠盤皆只有 Discogs 加維基（sl／bg／sr／en）與 BNR／BTA 摘要，無樂評；聲音事實以編制、器材、曲長、Discogs 風格標籤為主。
+
+## 研究 d 組（47031–47040）
+- 47031：輸出 `desc-tools/batches/research/add-20261101-eb1-d.json`（8 張）；status：Jazz Orkestar RTB full、Marković-Gut partial、Balkan Impressions partial、Izvorni folklor partial、Blue Sunset full、Zagreb JQ full、Toranj 77 thin、Birdland thin。
+- 47032：Marković-Gut：Stjepko Gut 是小號手（Discogs、en 維基），非策展卡單所稱長號；Marković 次中音薩克斯風。已寫入 notes。
+- 47033：Birdland：Discogs 團頁稱 1978 年春在瑞士伯恩由南斯拉夫留學生組成，非貝爾格勒本地團；country yu 保留，簡介不得寫貝爾格勒團。moodGuess「電聲厚」存疑（credits 只有 Piano／Guitar，無電子樂器）。
+- 47034：Izvorni folklor 年份三源不一（Discogs 1986／en 維基 1985／官網 1987），卡單照 Discogs 1986；Discogs 藝人欄掛 Branislav Kovačev，與 Lala Kovačev 同一人。
+- 47035：Lala Kovačev 也是 1963 年 RTB 大樂團專輯的鼓手（Discogs credits、en 維基），兩張卡可互見，不算同構。
+- 47036：Zagreb JQ：錄音 1965-04-09 西德 Walldorf、Fontana NL 發行，製作 Lippmann+Rau；hr 維基稱經紀公司 Fritz & Rau，寫作層只寫 Discogs 封底的 Lippmann+Rau。
+- 47037：Blue Sunset：目錄號 Discogs LSY-63041／MB SY 63841 不一致，簡介不寫目錄號；客席 Clark Terry、Art Farmer、Ernie Wilkins、Albert Mangelsdorff、Gianni Basso 出自 Discogs credits。
+- 47038：Toranj 77：hr 維基無條目，僅 Discogs credits，thin；「札格拉布」團所在地僅卡單說法，寫作層寫「克羅埃西亞樂手」。
+- 47039：Wikimedia 對此環境大量回 429，維基以 WebFetch／WebSearch 補；WebSearch 用 3 次。無推翻盤名、年份、廠牌。

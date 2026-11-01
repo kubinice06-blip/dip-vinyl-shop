@@ -178,5 +178,273 @@
   "status": "thin",
   "notes": "【身分】pinned，MB rg 05bd8055 → release ccdcb878（RO 1976，STM-EDE 01186）→ Discogs release 4800510／master 570364，三者一致。【年份衝突】英文維基百科 Electrecord 錄音清單寫「Jazz în țara mea（1967）」，但 Discogs 與 MB 都是 1976，目錄號 STM-EDE 01186 介於 Panpipe in Jazz（1979，01494）之前、其他 1970 年代 EDE 號之間，與 1976 吻合；維基百科年份疑似筆誤，不採、卡單 1976 保留。【moodGuess】x2.8／y0.2／z0.5「民謠旋律的爵士」：無任何來源說明旋律取自民謠，曲名只有 Joc／Vals 等舞曲提示，編制上也比預估寬（七人、三管樂），不寫入 facts；moodGuess 部分存疑：民謠旋律一說查無依據。【聲音依據】編制與曲名取自 Discogs；找不到樂評或錄音細節，故 status thin。【選輯性質】原創專輯，非選輯。",
   "coverage": "thin"
+ },
+ {
+  "key": "desc2:Guido Manusardi|Free Jazz",
+  "artist": "Guido Manusardi",
+  "album": "Free Jazz",
+  "facts": [
+   {
+    "f": "原版是 1968 年 Electrecord 的 10 吋單聲道 LP，目錄號 EDD 1196，1967 年錄成、1968 年 2 月發行；Sonar Kollektiv 頁面記載它是 Seria Jazz 系列第 6 號，封套上另有副標〈Avangarda〉。",
+    "src": "https://www.discogs.com/release/3593059"
+   },
+   {
+    "f": "錄音地點是布加勒斯特，時間為 1967 年秋天；2011 年美國 Jazzhus Disk 重發 CD（JD-7622）授權自 Electrecord，並註記這項錄音資訊。",
+    "src": "https://www.discogs.com/release/6098796"
+   },
+   {
+    "f": "Guido Manusardi 是義大利鋼琴手，1935 年 12 月 3 日生於基亞文納；他先在瑞士、德國、荷蘭、丹麥待過，在瑞典住了約五年，並在斯德哥爾摩認識貝斯手 Red Mitchell，1967 年才搬到布加勒斯特，一住七年。",
+    "src": "https://it.wikipedia.org/wiki/Guido_Manusardi"
+   },
+   {
+    "f": "樂手是 Manusardi（鋼琴）、Johnny Răducanu（低音大提琴）、Vasile Ganea（鼓）、Dan Mîndrilă（次中音薩克斯風）與 Nicolae Farcaș（長號）；薩克斯風與長號只出現在 A1 與 B3 到 B5，〈Time In Bucharest〉是鋼琴、貝斯與鼓的三重奏。",
+    "src": "https://www.discogs.com/release/3593059"
+   },
+   {
+    "f": "全盤五首、共約 31 分鐘：A 面〈Suita No. 1〉長 12 分 25 秒，是全盤的主體，另有〈Time In Bucharest〉4 分 15 秒；B 面〈Blues For Ago〉〈Valeriana〉〈Blues For Vally〉各約 4 到 5 分鐘。",
+    "src": "https://www.discogs.com/release/3593059"
+   },
+   {
+    "f": "Discogs 的風格標籤是 Free Jazz；美國唱片行 Dusty Groove 的文案則說，它比起徹底前衛，更像抒情的現代主義（lyrical modernist），並特別點出 Mîndrilă 稜角分明的次中音與 Manusardi 鋼琴的對比。",
+    "src": "https://www.dustygroove.com/item/633536/Guido-Manusardi:Free-Jazz-10-inch-LP"
+   },
+   {
+    "f": "製作人 Iosif Hastreiter，錄音師 Theodor Negrescu，樂評文字由 Cornel Chiriac 撰寫，圖像設計 Iuliu Sînpetru，攝影 Sorin Radu。",
+    "src": "https://www.discogs.com/release/3593059"
+   },
+   {
+    "f": "1998 年日本 Norma 以〈Avangarda〉為名重發（NLP1008）；2007 年 Jazzanova 編的《Romanian Jazz: Jazz from the Electrecord Archives 1966–1978》收進〈Blues for Vali〉，Sonar Kollektiv 的 Bandcamp 頁面列出同一組五人。",
+    "src": "https://sonarkollektiv.bandcamp.com/track/blues-for-vali"
+   },
+   {
+    "f": "Manusardi 之後與 Roy Eldridge、Dexter Gordon、Johnny Griffin、Lee Konitz 同台，並與 Red Mitchell 錄了兩張二重奏專輯（1983、1991年）。",
+    "src": "https://it.wikipedia.org/wiki/Guido_Manusardi"
+   }
+  ],
+  "hookCandidates": [
+   "義大利鋼琴手 Manusardi 1967 年搬到布加勒斯特，在那裡錄下了這張被取名《Free Jazz》的 10 吋唱片。",
+   "Johnny Răducanu 在這張裡拉的是低音大提琴，A 面一首〈Suita No. 1〉就占了十二分多鐘。"
+  ],
+  "sound": "鋼琴、低音大提琴、鼓加上次中音薩克斯風與長號的五重奏，主體是一首十二分鐘的組曲，接著是短小的藍調與鋼琴三重奏；偏調式與抒情的現代爵士，而非全無架構的噪音；單聲道、10 吋規格。",
+  "keyTracks": [
+   "Suita No. 1",
+   "Time In Bucharest",
+   "Blues For Vally"
+  ],
+  "status": "full",
+  "notes": "【身分】pinned，MB rg 6251246f → release e4e7c587（RO 1968，Electrecord EDD 1196）→ Discogs release 3593059／master 452995，一致。【署名】Discogs 掛名 Guido Manusardi；卡單 curatorRisk 的「義大利人，Electrecord 錄製發行」屬實（it 維基百科：1967 年搬到布加勒斯特，Free Jazz 列為羅馬尼亞發行 LP）。【編號】Seria Jazz Nr. 6 與目錄號 ST-EDE 01196 來自 Sonar Kollektiv Bandcamp 單頁，其餘為 EDD 1196（Discogs），兩者以 Discogs 為準，序號為單一來源，只放入 facts 一條並與目錄號分開寫；【moodGuess】x4／y0.3／z-1.2「自由爵士，無調」：標題與 Discogs 標籤雖是 Free Jazz，但只有一份零售商文案（Dusty Groove，WebFetch 403，僅見 WebSearch 摘要）說偏抒情現代主義，且 Discogs 的 2011 重發盤標為 Post Bop，moodGuess 存疑：自由／無調程度可能低於預估，聲音事實僅一份零售商文案支持，建議上線後實聽再打分。【Dusty Groove】該頁 403，facts 採 WebSearch 摘要的轉述，非逐字引用。【選輯性質】原創專輯。",
+  "coverage": "full"
+ },
+ {
+  "key": "desc2:Ramon Tavernier / Cătălin Tîrcolea|Panpipe in Jazz",
+  "artist": "Ramon Tavernier / Cătălin Tîrcolea",
+  "album": "Panpipe in Jazz",
+  "facts": [
+   {
+    "f": "1979 年 Electrecord 發行的 12 吋立體聲 LP，目錄號 STM-EDE 01494，黑底灰字標籤；封套標題寫作〈Naiul În Jazz (Panpipe In Jazz)〉，11 首曲子，A 面五首、B 面六首，每首約 3 到 5 分鐘。",
+    "src": "https://www.discogs.com/release/2043139"
+   },
+   {
+    "f": "掛名「Orchestra Ramon Tavernier」，Ramon Tavernier 擔任作曲、配器與指揮，Cătălin Tîrcolea 是排簫（nai）獨奏；另有女歌手 Elena Abagiu 獨唱，與合唱團 Grupul 5T 在 A2、A4、A5、B8、B10、B11 加入人聲，所以不是純器樂盤。",
+    "src": "https://www.discogs.com/release/2043139"
+   },
+   {
+    "f": "曲目為羅馬尼亞文，有〈Nu-ncerca Să Te Minți〉〈Mai Frumos Ca Orice Vis〉等歌曲，也有〈Cîntec De Leagăn〉（搖籃曲）、〈Doină Și Joc〉（多伊納與舞曲）這類帶民間形式的器樂，以及〈Non Stop〉〈Zig-Zag〉；Discogs 風格標籤為 Jazz-Funk。",
+    "src": "https://www.discogs.com/release/2043139"
+   },
+   {
+    "f": "Ramon Tavernier 1927 年 12 月 19 日生於布加勒斯特，法國裔，是輕音樂作曲家、指揮與配器；1954 年起與羅馬尼亞廣播合作，1955 年起與 Electrecord 合作，1964 到 1965 年任該廠音樂秘書；1989 年前也用 Constantin Alexandru 的筆名。",
+    "src": "https://ro.wikipedia.org/wiki/Ramon_Tavernier"
+   },
+   {
+    "f": "羅馬尼亞語維基百科稱 Tavernier 是第一位把羅馬尼亞民間樂器用進輕音樂與爵士的人，Margareta Pâslaru、Dan Spătaru、Angela Similea 等歌手唱過他的歌，這張排簫專輯在該頁登記為 1977 年。",
+    "src": "https://ro.wikipedia.org/wiki/Ramon_Tavernier"
+   },
+   {
+    "f": "Cătălin Tîrcolea 生於布加勒斯特，父親是小提琴手與指揮 Traian Tîrcolea、母親是民俗歌舞團的首席舞者；他 5 歲上電視拉小提琴，17 歲改以排簫為主要樂器，1979 年自奇普里安·波倫貝斯庫音樂院作曲系畢業。",
+    "src": "https://www.discogs.com/artist/774584-Cătălin-Tîrcolea"
+   },
+   {
+    "f": "他的簡介稱，1978 年與荷蘭 Ekseption 鍵盤手 Rick van der Linden 錄了第一張《Variations》，被視為排簫與合成器結合的首例；之後還和 Johnny Răducanu、Ramon Tavernier、Richard Oschanitzky、Kurt Hauenstein（Supermax）、Luis Bacalov 等人合作，作品共 21 張專輯。",
+    "src": "https://www.discogs.com/artist/774584-Cătălin-Tîrcolea"
+   },
+   {
+    "f": "圖像設計 Ion Mițurcă，樂評文字 Florian Lungu，英文譯文 Constantin Stihi-Boos；Discogs 未登記錄音日期與錄音師。",
+    "src": "https://www.discogs.com/release/2043139"
+   }
+  ],
+  "hookCandidates": [
+   "羅馬尼亞排簫手 Tîrcolea 與配器家 Ramon Tavernier 把排簫放進爵士放克樂團，還加了女聲與合唱。",
+   "Tavernier 是第一個把羅馬尼亞民間樂器帶進輕音樂與爵士的人。"
+  ],
+  "sound": "排簫獨奏在大樂團前面，配上人聲與合唱團，曲式有歌曲、搖籃曲與帶民間舞蹈名稱的器樂；律動走爵士放克，立體聲國營廠錄音，3 到 5 分鐘的短曲。",
+  "keyTracks": [
+   "Non Stop",
+   "Doină Și Joc",
+   "Zig-Zag"
+  ],
+  "status": "full",
+  "notes": "【身分】pinned，MB rg d4bbc19b → release be4a180b（RO 1979，STM-EDE 01494）→ Discogs release 2043139／master 609126，一致。【年份衝突】ro 維基百科（Ramon Tavernier 條）寫 Panpipe in Jazz 為 1977，Discogs 與 MB 為 1979；目錄號 01494 介於 1976 的 01186 與 1981 的 01782、01896 之間，較合 1979，維基百科疑為筆誤或另指錄音年，卡單 1979 保留。【moodGuess】x2.8／y0.1／z0.4「nai 與 jazz-funk 律動」：排簫與 jazz-funk 標籤成立，但有女聲獨唱與合唱團（11 首中 6 首有人聲），並非純器樂，moodGuess 部分存疑：人聲歌曲比重高於預估。【聲音依據】編制取自 Discogs credits，沒有找到樂評；速度與調性無資料。【選輯性質】原創專輯。【署名】卡單雙人掛名與 Discogs 一致（Ramon Tavernier 樂團＋Tîrcolea 獨奏）。",
+  "coverage": "full"
+ },
+ {
+  "key": "desc2:Cătălin Tîrcolea|Zboruri",
+  "artist": "Cătălin Tîrcolea",
+  "album": "Zboruri",
+  "facts": [
+   {
+    "f": "1982 年 Electrecord 發行的 12 吋 LP，目錄號 ST-EDE 01951，黑底白字標籤，附羅馬尼亞文與英文樂評；七首，A 面〈Zboruri〉〈Speranța〉〈Latino〉〈De-a Lung Și Joc〉，B 面〈Pe Cinci〉〈Balada〉〈Exotica〉。",
+    "src": "https://www.discogs.com/release/4130920"
+   },
+   {
+    "f": "Discogs 註記：這批錄音由羅馬尼亞廣播電視（Înregistrări RTV）於 1980 年 12 月 28 日到 1981 年 6 月 6 日之間錄製，錄音師 Alexandru Pârlea，製作人 Cristian Păunescu。",
+    "src": "https://www.discogs.com/release/4130920"
+   },
+   {
+    "f": "Cătălin Tîrcolea 吹排簫（高音、中音、低音三種）與「鳥笛」長笛、打擊並指揮；樂手有 Mircea Tiberian（鋼琴與電鋼琴）、Erwin Surin（弦樂與合成器）、Iulian Vrabete（貝斯）、Costin Petrescu（鼓與打擊）、Cristian Teodorescu（次中音薩克斯風）、Paul Pîrciu（長號）、Leopold Reisenhauer（小號）。",
+    "src": "https://www.discogs.com/release/4130920"
+   },
+   {
+    "f": "七首裡有三首 Tîrcolea 自作（A1、A4、B6），三首署 Mircea Tiberian 作曲（A2、A4、B7），A3〈Latino〉署名 Eumir Deodato，B5〈Pe Cinci〉署名 Paul Desmond（曲名意為「五拍」）。",
+    "src": "https://www.discogs.com/release/4130920"
+   },
+   {
+    "f": "Discogs 風格標籤為 Fusion 與 Jazz-Funk，樂種標為爵士與放克／靈魂；排簫搭電鋼琴、合成器和電貝斯，是羅馬尼亞八〇年代初的融合爵士。",
+    "src": "https://www.discogs.com/master/504013"
+   },
+   {
+    "f": "Cătălin Tîrcolea 1979 年畢業於奇普里安·波倫貝斯庫音樂院作曲系，17 歲起以排簫為主要樂器；他的簡介稱 1978 年與 Ekseption 的 Rick van der Linden 錄《Variations》，是排簫與合成器結合的首例，至今共 21 張專輯。",
+    "src": "https://www.discogs.com/artist/774584-Cătălin-Tîrcolea"
+   },
+   {
+    "f": "鋼琴手 Mircea Tiberian 在此盤彈鋼琴與電鋼琴，並登記為 A2、A4、B7 三首的作曲。",
+    "src": "https://www.discogs.com/release/4130920"
+   },
+   {
+    "f": "1979 年的《Panpipe in Jazz》掛 Ramon Tavernier 樂團、Tîrcolea 只是排簫獨奏，並有女歌手與合唱團；這張 1982 年盤則由 Tîrcolea 自己署名領軍，沒有人聲歌手列名。",
+    "src": "https://www.discogs.com/release/2043139"
+   }
+  ],
+  "hookCandidates": [
+   "Tîrcolea 在這張 1982 年的盤裡，把排簫搭上電鋼琴與合成器，還翻演了 Eumir Deodato 和 Paul Desmond 的曲子。",
+   "七首曲子錄於 1980 年底到 1981 年中，由羅馬尼亞廣播電視錄音室完成。"
+  ],
+  "sound": "高音、中音、低音排簫與鳥笛在前，電鋼琴、合成器弦樂、電貝斯與鼓構成融合爵士／爵士放克的律動，並有薩克斯風、長號與小號的管樂段落；廣播電視錄音室的立體聲錄音。",
+  "keyTracks": [
+   "Zboruri",
+   "Latino",
+   "Exotica"
+  ],
+  "status": "full",
+  "notes": "【身分】pinned，MB rg 1a868e5c → release 89fa5f00（RO 1982，ST-EDE 01951）→ Discogs release 4130920／master 504013，一致。【年份】錄音 1980-12-28 至 1981-06-06，發行 1982，卡單 1982 成立。【moodGuess】x3.3／y0.5／z0「融合、合成器」：與 Discogs 風格及 credits 的合成器、電鋼琴、電貝斯吻合，未見存疑。【聲音依據】編制與風格取自 Discogs；速度、調性未見文字，找不到樂評，故不寫。【Tiberian 一條】Tiberian 後來的地位未查到來源，facts 只寫其在此盤的角色。【選輯性質】原創專輯。【作曲欄】A4 同時登記 Tîrcolea 與 Tiberian，兩人皆列，照 Discogs 原樣。",
+  "coverage": "full"
+ },
+ {
+  "key": "desc2:Ion Baciu Jr.|Jazz cu Ion Baciu Jr.",
+  "artist": "Ion Baciu Jr.",
+  "album": "Jazz cu Ion Baciu Jr.",
+  "facts": [
+   {
+    "f": "1981 年 11 月 Electrecord 發行的 12 吋 LP，目錄號 ST-EDE 01896；封套上不印系列名，Discogs 將它歸入 Seria Jazz。六首：A 面〈În 3〉（封底寫作 -„3”-，標籤寫 În 3）、〈Elegie〉、〈Fantezie〉，B 面〈Inconsecvență〉〈Blues〉〈Nu Privi Înapoi〉。",
+    "src": "https://www.discogs.com/release/2413094"
+   },
+   {
+    "f": "曲子偏長，六首總長約 35 分鐘：〈Blues〉7 分 26 秒最長，〈Fantezie〉6 分 02 秒，其餘約 4 分半到 6 分鐘。",
+    "src": "https://www.discogs.com/release/2413094"
+   },
+   {
+    "f": "Ion Baciu Jr. 彈鋼琴，並擔任全部曲目的作曲與管弦配器；樂手有 Dan Dimitriu（電貝斯）、Mihai Farcaș（鼓）、Dan Mîndrilă（薩克斯風）與 Nicolae Farcaș（長號），是一個兩管樂（薩克斯風、長號）加節奏組的小型樂團。",
+    "src": "https://www.discogs.com/release/2413094"
+   },
+   {
+    "f": "製作人 Cristian Păunescu，錄音師 Theodor Negrescu，封面設計 Dana Marinescu；Discogs 的風格標籤是 Soul-Jazz、Post Bop、Jazz-Rock。",
+    "src": "https://www.discogs.com/master/999185"
+   },
+   {
+    "f": "Ion Baciu Jr. 是羅馬尼亞爵士鋼琴手，1959 年生，錄這張盤時約 22 歲；他的父親 Ion Baciu（1931–1995）是交響樂指揮，1962 到 1986 年任雅西「摩爾多瓦」愛樂樂團常任指揮，1968 年起兼任音樂總監。",
+    "src": "https://www.discogs.com/artist/1025872"
+   },
+   {
+    "f": "同一年，他在 Dan Mîndrilă 的 Electrecord 專輯《Alter Ego》（ST-EDE 01782）裡彈鍵盤；兩張盤共用 Mîndrilă、Nicolae Farcaș 與錄音師 Theodor Negrescu。",
+    "src": "https://www.discogs.com/release/5073334"
+   },
+   {
+    "f": "Discogs 另有一版 1980 年代重壓盤，封面誤漏印藝人名，目錄號與曲目相同。",
+    "src": "https://www.discogs.com/release/8503183"
+   },
+   {
+    "f": "Dan Mîndrilă 1938 年生，薩克斯風手兼作曲家，1963 年加入 Electrecord 管弦樂團，1970 年成為 East European All Stars Big Band 成員。",
+    "src": "https://www.discogs.com/artist/775079-Dan-Mîndrilă"
+   }
+  ],
+  "hookCandidates": [
+   "Ion Baciu Jr. 錄這張盤時約 22 歲，父親是雅西愛樂的常任指揮。",
+   "全盤六首都是 Baciu 自己的作曲與配器，其中一首只叫〈În 3〉（三）。"
+  ],
+  "sound": "鋼琴領銜的五人團，薩克斯風與長號雙管，加電貝斯與鼓，靈魂爵士與後咆勃、爵士搖滾的混合；曲子偏長（四到七分半），有一首藍調。",
+  "keyTracks": [
+   "În 3",
+   "Blues",
+   "Nu Privi Înapoi"
+  ],
+  "status": "thin",
+  "notes": "【身分】manual：Discogs master 999185／release 2413094（Romania，Electrecord ST-EDE 01896，發行 1981-11）盤名、年份、廠牌與卡單一致；MB 無此 release-group。第二來源：Discogs 藝人頁 775079／1025872 與 Alter Ego release 5073334 的 credits 交叉（Baciu Jr. 鍵盤、Mîndrilă 薩克斯風、Farcaș 長號），但仍屬 Discogs 體系；找不到 Bandcamp、重發廠頁或樂評，第二來源待主線補，curatorRisk 沒有解除。【用戶留言】「書店發表會、最佳爵士樂手」出自 Discogs 一則用戶留言（透過搜尋摘要，API 不回留言），單一來源、未能自行打開頁面驗證，未放入 facts。【moodGuess】x3.4／y0.3／z0.6 soul-jazz／爵士搖滾，與 Discogs 風格吻合，未見存疑。【聲音依據】只有編制與風格標籤，沒有速度、調性或錄音質感的文字，故 status thin。【重壓版】Discogs 另有重壓版 8503183（credits 相同）。【選輯性質】原創專輯。",
+  "coverage": "thin"
+ },
+ {
+  "key": "desc2:Harry Tavitian & Corneliu Stroe|Transylvanian Suite",
+  "artist": "Harry Tavitian & Corneliu Stroe",
+  "album": "Transylvanian Suite",
+  "facts": [
+   {
+    "f": "1986 年英國 Leo Records 發行的 12 吋 LP（LR 132），製作人是廠長 Leo Feigin；A 面錄於 1985 年 2 月 10 日的布加勒斯特現場，B 面錄於 1985 年 3 月 24 日的錫比烏國際爵士音樂節現場。",
+    "src": "https://www.discogs.com/release/2896224"
+   },
+   {
+    "f": "這是二重奏：Harry Tavitian 彈鋼琴、吹牧羊人長笛（fluier）並兼打擊，Corneliu Stroe 打鼓與打擊、吹牧羊人長笛、吹低音號（tuba）。",
+    "src": "https://www.discogs.com/release/2896224"
+   },
+   {
+    "f": "四首都很長：〈Etude〉9 分 23 秒、A2〈Transylvanian Suite〉17 分、B1〈Two Romanian Dances From \"Codex Caioni\"〉11 分 18 秒、B2〈At The Gate Of The Levant〉16 分 20 秒，全盤合計約 54 分鐘，每面約 26 到 28 分鐘。",
+    "src": "https://www.discogs.com/release/2896224"
+   },
+   {
+    "f": "三首由 Tavitian 作曲，B1 是他改編 Ion Căianu 的作品；Discogs 風格標籤為 Free Jazz，另標 Avant-garde Jazz。樂評文字由 Virgil Mihaiu 撰寫，封面 Judy Fields，攝影 Hans Kumpf。",
+    "src": "https://www.discogs.com/release/2896224"
+   },
+   {
+    "f": "Leo Records 1979 年由俄羅斯出生的 Leo Feigin 在倫敦創立，主要發行自由爵士與蘇聯前衛音樂，早期聲譽建立在 Ganelin Trio 上；1987 年 DownBeat 評論稱它是蘇聯前衛錄音在東西方的主要出口。",
+    "src": "https://en.wikipedia.org/wiki/Leo_Records"
+   },
+   {
+    "f": "1994 年 11 月，Tavitian 自己在羅馬尼亞以卡帶自費重發（編號 #002，發行於 RAKS ED-X 60 空白卡帶），註記同樣兩場 1985 年現場。",
+    "src": "https://www.discogs.com/release/4437886"
+   },
+   {
+    "f": "Harry Tavitian 1952 年 8 月 11 日生於康斯坦察，亞美尼亞裔，畢業於布加勒斯特音樂院；1978 到 1987 年間主持康斯坦察圖書館的爵士俱樂部，風格橫跨自由爵士、藍調、民族爵士與前衛。",
+    "src": "https://en.wikipedia.org/wiki/Harry_Tavitian"
+   },
+   {
+    "f": "Discogs 稱 Creativ 是 Tavitian 1978 年在康斯坦察創辦並領導的羅馬尼亞自由爵士團體；英文維基百科稱 Creativ 是他與鼓手 Stroe 的二重奏。",
+    "src": "https://www.discogs.com/artist/2447802-Creativ-2"
+   },
+   {
+    "f": "Corneliu Stroe（1949–2017）生於布加勒斯特，小時候全家搬到梅迪亞什，1981 到 2005 年是 Tavitian 的 Creativ 成員，合作專輯有 1985 年《Horizons》和 1986 年這張。",
+    "src": "https://en.wikipedia.org/wiki/Corneliu_Stroe"
+   }
+  ],
+  "hookCandidates": [
+   "羅馬尼亞自由爵士二重奏 Tavitian 與 Stroe，1985 年在布加勒斯特與錫比烏兩場現場錄音，後由倫敦的 Leo Records 發行。",
+   "Corneliu Stroe 在這張二重奏裡除了鼓，還吹牧羊人長笛和低音號。"
+  ],
+  "sound": "鋼琴與鼓的自由爵士二重奏，加上牧羊人長笛、低音號與打擊，曲子長達 9 到 17 分鐘，兩場現場錄音；曲名帶羅馬尼亞與前現代音樂的指涉。",
+  "keyTracks": [
+   "Transylvanian Suite",
+   "At The Gate Of The Levant",
+   "Two Romanian Dances From \"Codex Caioni\""
+  ],
+  "status": "full",
+  "notes": "【身分】pinned，MB rg 6879b549 → release 688ede39（GB 1986，Leo Records LR 132；MB 拼寫 Transilvanian Suite）＋6b5b4988（RO 1994 卡帶）→ Discogs release 2896224／master 540084，一致，年份 1986 成立（英文維基百科 Tavitian 條同為 1986；錄音是 1985 年兩場現場，風格上屬現場專輯，但 Tavitian 與 Stroe 最具代表性的就是這張，卡單已有 releaseException 的話照卡單）。【署名】Discogs 掛名 Harry Tavitian, Corneliu Stroe，與卡單一致。【moodGuess】x3.8／y0.4／z-1.3 自由即興、無調：Discogs 標 Free Jazz／Avant-garde，樂器含鋼琴、鼓、低音號，無電聲；但無任何樂評說明調性是否無調，z 值僅屬風格推斷，不寫入 facts。【聲音依據】編制與長度取自 Discogs，找不到樂評，錄音質感（現場錄音）有註記但無文字描述。【Leo Records】一條 facts 為廠牌背景，來源 en 維基百科。【Codex Caioni】Wikipedia 頁面 404，僅照 Discogs credits 寫「Ion Căianu 作品」，不寫其年代。【選輯性質】原創現場專輯；若卡單 releaseException 缺漏，主線需補現場盤理由。",
+  "coverage": "full"
  }
 ]
