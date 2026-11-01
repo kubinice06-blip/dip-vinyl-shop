@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-01｜dip-vinyl-shop｜三軸重評 R2：s04–s06 verdicts 750 張
+
+- **範圍**：情緒薄格 mc5 後段–mc9、md1–md4、md10–md34（electro／minimal techno、dark ambient／drone、恐怖配樂、雲端饒舌、slowcore／darkwave、dark jazz、funeral doom），15 段各 50 張派 Opus 代理照 `DISPATCH.md` 重評；只產 verdicts，不改 seed／manifest／card_catalog。
+- **新舊分布（1/2/3/4/5）**：經典度 0/26/659/65/0 → 0/8/448/282/12；冷門度 6/40/164/256/284 → 3/99/447/178/23；硬蕊度 0/16/578/121/35 → 2/103/416/212/17。
+- **主線**：每段抽 5 張覆核，退回重派 0 段。改 33 張：經典 5→4 兩張（Lil Peep《HELLBOY》、Bohren《Sunset Mission》，缺權威依據）；Corrupted 兩張冷門 4→5（極小廠無串流，代理從寬）；冷門度口徑不一（當代小廠首發即上數位給 4）→ 定「場景主力廠＝3、極小廠／私壓＝4」，主線改 22 張 4→3 並發規則給在飛代理；硬蕊 2 張微調。明細在 `verdicts/s04–s06.summary.md`（主線改動的 verdict 帶 `mainline:true`）。
+- **主要檔案**：`batch-progress/rerate-20261101/verdicts/s04–s06-*.json`、`s04–s06.summary.md`、`PLAN.md`。
+- **驗證**：合併檢查三片各 250／250，缺 0、重複 0、值皆 1–5 整數；keep 0。
+
 ### 2026-11-01｜dip-vinyl-shop｜三軸重評 R3：s07–s09 verdicts 750 張
 
 - **範圍**：情緒薄格 md4 後段–md9、ml1–ml49（dark ambient／drone／dub techno、roots／lovers rock、soul／R&B、lo-fi、post-rock），15 段各 50 張派 Opus 代理照 `DISPATCH.md` 評分；只交 verdicts，不動 seed／manifest／card_catalog。
