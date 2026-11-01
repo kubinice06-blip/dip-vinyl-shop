@@ -27,8 +27,11 @@
   "curatorRisk": "",
   "mbNote": "MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/485894 https://www.discogs.com/release/3985641 https://www.discogs.com/master/485894 https://www.discogs.com/release/3985641",
   "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
+  "exceptionReason": "現場例外：1980 年莫斯科與列寧格勒獨奏音樂會的雙 LP；Чижик 的獨奏即興代表作本來就是音樂會錄音（Ganelin 先例）",
+  "exceptionEvidenceUrls": [
+   "https://www.discogs.com/master/485894",
+   "https://www.discogs.com/release/3985641"
+  ],
   "genreException": "",
   "selfTitled": false,
   "apex": null,
@@ -236,46 +239,6 @@
   "lineType": "廣度",
   "scene": "薄細項策展線（波羅的海爵士（愛沙尼亞））",
   "queryAlias": "Джаз-квартет Таллин；Tallinn Jazz Quartet",
-  "republic": "",
-  "cover": null
- },
- {
-  "key": "desc2:Джаз-оркестр Иосифа Вайнштейна|Ленинградский джаз-оркестр",
-  "artist": "Джаз-оркестр Иосифа Вайнштейна",
-  "album": "Ленинградский джаз-оркестр",
-  "year": 1978,
-  "genre": "jazz",
-  "genres": [
-   "jazz"
-  ],
-  "label": "Melodiya",
-  "country": "su",
-  "moodGuess": {
-   "x": 3.3,
-   "y": 0.7,
-   "z": 1,
-   "why": "大樂團擺盪，旋律清楚"
-  },
-  "rgMbid": "",
-  "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋（藝人／盤名）查無此專輯；Discogs master 630693 有完整曲目與封面",
-  "manualEvidenceUrls": [
-   "https://www.discogs.com/master/630693",
-   "https://www.discogs.com/release/6040071"
-  ],
-  "curatorWhy": "大樂團（Lundstrem／Weinstein／Rosner）：列寧格勒 Weinstein 大樂團代表作，蘇聯 swing／big band 的最高水準之一",
-  "curatorRisk": "",
-  "mbNote": "MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/630693 https://www.discogs.com/release/6040071 https://www.discogs.com/master/630693 https://www.discogs.com/release/6040071",
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "genreException": "",
-  "selfTitled": false,
-  "apex": null,
-  "group": "a",
-  "lineType": "廣度",
-  "scene": "薄細項策展線（大樂團（Lundstrem／Weinstein／Rosner））",
-  "queryAlias": "Leningrad Jazz Orchestra；Iosif Weinstein Jazz Orchestra；Оркестр Иосифа Вайнштейна Ленинградский джаз-оркестр；Yusef Wainstein",
   "republic": "",
   "cover": null
  },

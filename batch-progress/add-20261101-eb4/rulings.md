@@ -52,3 +52,16 @@
 - 51473：研究 d 組：Manfred Ludwig-Sextett《Jazz》（Amiga 5 50 204）實為 4 曲 7 吋 EP，**汰**，不補（池子照實交）。Conrad Bauer《Flüchtiges Glück》廠牌改 Riskant（西德科隆，1986），1984-12-17 科隆地下蓄水池無聽眾的長號獨奏錄音，非音樂會現場，照收；藝人是東德樂手，country 維持 dd。Manfred Schulze 掛名照 Discogs 改「Manfred Schulze Bläserquintett」（卡單、研究 d 稿 key 同步）。
 - 51474：eb4 定案 **39 張**（蘇聯 19、東德 20）。
 - 51475：研究 c 組：Günter Sommer《Hörmusik》確為 1979-08-11 柏林藝術學院現場（MB 主類型 Album＋Live），照 Ganelin 先例收、`exceptionReason` 寫明；年份改 FMP 首發 1980（1979 是錄音年）。Ulrich Gumpert Workshop Band 錄於西柏林藝術學院、無來源明寫現場，照錄音室盤收，正文不稱現場也不稱棚錄。
+
+## 研究 a 組（蘇聯 8 張；條號 51401–51410）
+- **51401** Чижик《Reminiscences》：Discogs 1981 Melodiya C 60—16155-8 是**雙黑膠現場錄音**（1980 年莫斯科「Warsaw」音樂廳與列寧格勒 Capella），非錄音室專輯；建議開 `releaseException`（先例 Ganelin）。年份俄文維基寫 1979、英文維基與 Discogs 寫 1981，採 1981。是否純獨奏僅有「只署名鋼琴」。
+- **51402** Вайнштейн《Ленинградский джаз-оркестр》：**重發／彙編性質**。Discogs 內頁寫錄音 1959 年，但曲目含 1963 年電影歌曲，自相矛盾；俄文維基稱 C60 11007-08 是 1967 年第二張盤（D 19159-60）的 1978 年重發，Голощёкин 條目稱 1962 年錄音收進 1979 年 LP。有歷史定位（蘇聯 swing 大樂團代表），建議保留，寫作層不可寫成 1978 新錄，錄音年不下定論。
+- **51403** Бриль《Утро Земли》：年份 Discogs 1978、俄文維基 1979（兩處），暫採 1978，請主線決定；實際陣容、錄音日期查無，thin；moodGuess 存疑（無法確認整張有鼓與電聲、是否民謠旋律）。
+- **51404** Кузнецов／Громин《Джанго》：推翻策展層「向 Django Reinhardt 致敬的吉普賽爵士」——盤名取自 John Lewis 曲〈Django〉，曲目含 Waller、Corea、Jobim，是雙吉他標準曲盤；1978-05-24~26 錄音室。moodGuess「原音吉他搖擺」存疑（Corea、Jobim 曲目，acoustic 未證實）。
+- **51405** Tiit Paulus：推翻策展層「大提琴／貝斯手」——Discogs 與 MB 皆為**吉他手**（1945-06-14 生於塔林），Toivo Unt 才是貝斯。錄音室，1980 錄、1981 發。
+- **51406** Каданс《Иванушка-дурачок》：推翻策展層「整張改編 Coltrane」——只有 A1〈Naima〉是 Coltrane，其餘五首為 Lukyanov 原創。1982 發行、1981 錄音。電聲／鼓組細節未證實。
+- **51407** Džässkvartett «Tallinn»：Saarsalu 領軍的塔林爵士四重奏，與 Paulus 盤同班底；「唯一專輯」未證實故不寫。與 Paulus 早期另一個塔林四重奏（Aniko／Unt／Rull）不同組，勿混。
+- **51408** Саарсалу／Винцкевич《Джаз вдвоем》：雙人（薩克斯風＋鋼琴），錄音地點日期查無，thin；一則俄文來源稱 1986 年首批登 North Sea Jazz，與 Kadans 1984 年已赴 North Sea 的記載衝突，未採用。
+- **51409** 技術：維基 API 對代理端 429，改用 WebFetch 讀維基；WebSearch 用 3 次（Chizhik、Saarsalu、Paulus）。俄文專名在 facts 一律以〈〉包起，來源網址已百分號編碼，避免 QA 非拉丁亂碼警示。
+- **51410** 英文曲名（如 Honeysuckle Rose、Moonbeams）Discogs 未登錄，屬推定，facts 與 notes 已標，寫作層請用原文曲名。
+- 51476：研究 a 組：Леонид Чижик《Reminiscences》是 1980 年莫斯科與列寧格勒音樂會的雙 LP，Чижик 的獨奏即興代表作本來就是音樂會錄音，照 Ganelin 先例收、`exceptionReason` 寫明，年份取 Discogs／英文維基 1981。Джаз-оркестр Иосифа Вайнштейна《Ленинградский джаз-оркестр》研究證實是早年錄音的 1978 重發（錄音年互相矛盾），不是正規新錄錄音室專輯，**汰**（卡單、研究 a 稿同步刪）。Бриль《Утро Земли》年份維持 Discogs 1978。eb4 定案 **38 張**（蘇聯 18、東德 20）。
