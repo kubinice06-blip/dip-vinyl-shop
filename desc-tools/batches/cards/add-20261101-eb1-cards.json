@@ -88,7 +88,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz 以 Kőrössy／Körössy／Korossy 與盤名查詢，只有 Identification、2011 Jazzhus 重發與晚年錄音，無 1964 Qualiton LP",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Yancy Körössy\" AND releasegroup:\"Kőrössy János És Együttese\" → count 0",
+    "releasegroup:\"Kőrössy János És Együttese\" → count 0",
+    "artist:\"Kőrössy János\" AND releasegroup:\"Kőrössy János És Együttese\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T11:53:48.497Z",
+   "conclusion": "「artist:\"Yancy Körössy\" AND releasegroup:\"Kőrössy János És Együttese\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Kőrössy János És Együttese\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Kőrössy János\" AND releasegroup:\"Kőrössy János És Együttese\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz 以 Kőrössy／Körössy／Korossy 與盤名查詢，只有 Identification、2011 Jazzhus 重發與晚年錄音，無 1964 Qualiton LP"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/507009",
    "https://api.discogs.com/masters/507009"
@@ -269,7 +277,14 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz 以 Aura Urziceanu 與 Oh, My Love 查詢無此盤",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Aura Urziceanu\" AND releasegroup:\"Oh, My Love\" → count 0",
+    "releasegroup:\"Oh, My Love\" → count 26"
+   ],
+   "checkedAt": "2026-11-01T11:53:51.649Z",
+   "conclusion": "「artist:\"Aura Urziceanu\" AND releasegroup:\"Oh, My Love\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Oh, My Love\"」count=26，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz 以 Aura Urziceanu 與 Oh, My Love 查詢無此盤"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/445824",
    "https://api.discogs.com/masters/445824"
@@ -522,7 +537,14 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz 以 Ion Baciu 與盤名查詢無結果",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Ion Baciu Jr.\" AND releasegroup:\"Jazz cu Ion Baciu Jr.\" → count 0",
+    "releasegroup:\"Jazz cu Ion Baciu Jr.\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T11:53:58.101Z",
+   "conclusion": "「artist:\"Ion Baciu Jr.\" AND releasegroup:\"Jazz cu Ion Baciu Jr.\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Jazz cu Ion Baciu Jr.\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz 以 Ion Baciu 與盤名查詢無結果"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/999185",
    "https://api.discogs.com/masters/999185"
@@ -705,16 +727,11 @@
    "z": 0.6,
    "why": "硬咆勃／調式，旋律清楚，搖擺推進"
   },
-  "rgMbid": "",
-  "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
-  "manualEvidenceUrls": [
-   "https://www.discogs.com/master/561714-The-Duško-Gojković-Sextet-Featuring-Sal-Nistico-And-Carl-Fontana-Belgrade-Blues",
-   "https://www.discogs.com/release/5046024"
-  ],
+  "rgMbid": "c28205ea-f48c-445e-9c7b-ba9ea53f6ac0",
+  "identitySource": "pinned",
   "curatorWhy": "南斯拉夫 PGP-RTB（貝爾格勒）：南斯拉夫爵士史上最常被提起的國營廠硬咆勃／調式專輯：Gojković 在貝爾格勒與美國獨奏家 Sal Nistico、Carl Fontana 合錄，PGP RTB 原版",
   "curatorRisk": "⚠ 在地錄製於貝爾格勒；Goykovich 西方期（Enja／MPS）留給 eb5",
-  "mbNote": "MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/561714-The-Duško-Gojković-Sextet-Featuring-Sal-Nistico-And-Carl-Fontana-Belgrade-Blues https://www.discogs.com/release/5046024 https://www.discogs.com/master/561714-The-Duško-Gojković-Sextet-Featuring-Sal-Nistico-And-Carl-Fontana-Belgrade-Blues https://www.discogs.com/release/5046024 https://i.discogs.com/WYsasqUbGtUjr5yUElTn13jgOo1EDHm4Ex-NbhEOMko/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUwNDYw/MjQtMTczOTk4NDQ0/Mi01NjM4LmpwZWc.jpeg",
+  "mbNote": "MB release-group c28205ea-f48c-445e-9c7b-ba9ea53f6ac0：title「Belgrade Blues」、Album、first-release-date 2013-12-02（只登錄 2013 德國數位重發）、artist-credit「Dusko Goykovich」；原盤 1967 PGP RTB，曲目一致。證據：https://www.discogs.com/master/561714-The-Duško-Gojković-Sextet-Featuring-Sal-Nistico-And-Carl-Fontana-Belgrade-Blues https://www.discogs.com/release/5046024",
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
@@ -747,7 +764,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Dusko Goykovich\" AND releasegroup:\"Internacionalni jazz oktet Duška Gojkovića sa Keni Klarkom\" → count 0",
+    "releasegroup:\"Internacionalni jazz oktet Duška Gojkovića sa Keni Klarkom\" → count 0",
+    "artist:\"Duško Gojković Kenny Clarke Internacionalni Jazz Oktet\" AND releasegroup:\"Internacionalni jazz oktet Duška Gojkovića sa Keni Klarkom\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T11:54:12.416Z",
+   "conclusion": "「artist:\"Dusko Goykovich\" AND releasegroup:\"Internacionalni jazz oktet Duška Gojkovića sa Keni Klarkom\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Internacionalni jazz oktet Duška Gojkovića sa Keni Klarkom\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Duško Gojković Kenny Clarke Internacionalni Jazz Oktet\" AND releasegroup:\"Internacionalni jazz oktet Duška Gojkovića sa Keni Klarkom\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/493508-Duško-Gojković-Kenny-Clarke-Internacionalni-Jazz-Oktet-Duška-Gojkovića-Sa-Keni-Klarkom",
    "https://www.discogs.com/release/4046446"
@@ -787,7 +812,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Trumpets & Rhythm Unit\" AND releasegroup:\"Trumpets & Rhythm Unit\" → count 0",
+    "releasegroup:\"Trumpets & Rhythm Unit\" → count 0",
+    "artist:\"Gojković Kovačev Trumpets & Rhythm Unit\" AND releasegroup:\"Trumpets & Rhythm Unit\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T11:54:20.422Z",
+   "conclusion": "「artist:\"Trumpets & Rhythm Unit\" AND releasegroup:\"Trumpets & Rhythm Unit\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Trumpets & Rhythm Unit\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Gojković Kovačev Trumpets & Rhythm Unit\" AND releasegroup:\"Trumpets & Rhythm Unit\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/253610-Trumpets-Rhythm-Unit-Gojković-Kovačev-Trumpets-Rhythm-Unit",
    "https://www.discogs.com/release/634442"
@@ -827,7 +860,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Bora Roković\" AND releasegroup:\"III sastanak u studiju\" → count 0",
+    "releasegroup:\"III sastanak u studiju\" → count 0",
+    "artist:\"Trio Borislava Rokovića III Sastanak U Studiju\" AND releasegroup:\"III sastanak u studiju\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T11:54:28.256Z",
+   "conclusion": "「artist:\"Bora Roković\" AND releasegroup:\"III sastanak u studiju\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"III sastanak u studiju\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Trio Borislava Rokovića III Sastanak U Studiju\" AND releasegroup:\"III sastanak u studiju\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/567751-Trio-Borislava-Rokovića-Sa-Milanom-Stojanovićem-I-Vojislavom-Đonovićem-III-Sastanak-U-Studiju",
    "https://www.discogs.com/release/4668704"
@@ -867,7 +908,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Jack Dieval\" AND releasegroup:\"II sastanak u studiju\" → count 0",
+    "releasegroup:\"II sastanak u studiju\" → count 0",
+    "artist:\"Jack Dieval Quartet Sastanak U Studiju\" AND releasegroup:\"II sastanak u studiju\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T11:54:36.314Z",
+   "conclusion": "「artist:\"Jack Dieval\" AND releasegroup:\"II sastanak u studiju\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"II sastanak u studiju\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Jack Dieval Quartet Sastanak U Studiju\" AND releasegroup:\"II sastanak u studiju\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/567750-Jack-Dieval-I-Njegov-Kvartet-Sa-Eduardom-Sadjilom-I-Predragom-Ivanovićem-II-Sastanak-U-Studiju",
    "https://www.discogs.com/release/4668644"
@@ -907,7 +956,14 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Jazz Orkestar Radio-Televizije Beograd\" AND releasegroup:\"Jazz Orkestar Radio-Televizije Beograd\" → count 1",
+    "releasegroup:\"Jazz Orkestar Radio-Televizije Beograd\" → count 1"
+   ],
+   "checkedAt": "2026-11-01T11:54:39.016Z",
+   "conclusion": "「artist:\"Jazz Orkestar Radio-Televizije Beograd\" AND releasegroup:\"Jazz Orkestar Radio-Televizije Beograd\"」count=1，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Jazz Orkestar Radio-Televizije Beograd\"」count=1，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/1740242-Jazz-Orkestar-Radio-Televizije-Beograd-Jazz-Orkestar-Radio-Televizije-Beograd-",
    "https://www.discogs.com/release/15324684"
@@ -947,7 +1003,14 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Marković-Gut Sextet\" AND releasegroup:\"Marković-Gut Sextet\" → count 0",
+    "releasegroup:\"Marković-Gut Sextet\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T11:54:45.295Z",
+   "conclusion": "「artist:\"Marković-Gut Sextet\" AND releasegroup:\"Marković-Gut Sextet\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Marković-Gut Sextet\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/1150183-Marković-Gut-Sextet-Marković-Gut-Sextet",
    "https://www.discogs.com/release/3625227"
@@ -988,7 +1051,14 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Lala Kovačev Group\" AND releasegroup:\"Balkan Impressions\" → count 0",
+    "releasegroup:\"Balkan Impressions\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T11:54:48.022Z",
+   "conclusion": "「artist:\"Lala Kovačev Group\" AND releasegroup:\"Balkan Impressions\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Balkan Impressions\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/1526344-Lala-Kovačev-Group-Balkan-Impressions",
    "https://www.discogs.com/release/2643518"
@@ -1029,7 +1099,14 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Lala Kovačev\" AND releasegroup:\"Izvorni folklor i džez Lale Kovačeva\" → count 0",
+    "releasegroup:\"Izvorni folklor i džez Lale Kovačeva\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T11:54:50.805Z",
+   "conclusion": "「artist:\"Lala Kovačev\" AND releasegroup:\"Izvorni folklor i džez Lale Kovačeva\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Izvorni folklor i džez Lale Kovačeva\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/784312-Lala-Kovačev-Izvorni-Folklor-I-Džez-Lale-Kovačeva",
    "https://www.discogs.com/release/6529464"
@@ -1139,7 +1216,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Toranj 77\" AND releasegroup:\"Miting\" → count 0",
+    "releasegroup:\"Miting\" → count 0",
+    "artist:\"Željko Kovačević Toranj 77\" AND releasegroup:\"Miting\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T11:54:57.956Z",
+   "conclusion": "「artist:\"Toranj 77\" AND releasegroup:\"Miting\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Miting\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Željko Kovačević Toranj 77\" AND releasegroup:\"Miting\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/1949875-Željko-Kovačević-Toranj-77-Miting",
    "https://www.discogs.com/release/3121284"
@@ -1214,7 +1299,14 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Petar Ugrin\" AND releasegroup:\"Samo muzika\" → count 0",
+    "releasegroup:\"Samo muzika\" → count 1"
+   ],
+   "checkedAt": "2026-11-01T11:55:01.393Z",
+   "conclusion": "「artist:\"Petar Ugrin\" AND releasegroup:\"Samo muzika\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Samo muzika\"」count=1，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/586251-Petar-Ugrin-Samo-Muzika",
    "https://www.discogs.com/release/1244753"
@@ -1254,7 +1346,14 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Stjepko Gut & Big Band RTB\" AND releasegroup:\"Stjepko Gut & Big Band RTB\" → count 0",
+    "releasegroup:\"Stjepko Gut & Big Band RTB\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T11:55:04.067Z",
+   "conclusion": "「artist:\"Stjepko Gut & Big Band RTB\" AND releasegroup:\"Stjepko Gut & Big Band RTB\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Stjepko Gut & Big Band RTB\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/882078-Stjepko-Gut-Big-Band-RTB-Stjepko-Gut-Big-Band-RTB",
    "https://www.discogs.com/release/7445345"
@@ -1294,7 +1393,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Jazz Focus 65\" AND releasegroup:\"Quartet Jazz Focus-65\" → count 0",
+    "releasegroup:\"Quartet Jazz Focus-65\" → count 0",
+    "artist:\"Джаз Фокус-65\" AND releasegroup:\"Quartet Jazz Focus-65\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T11:55:08.228Z",
+   "conclusion": "「artist:\"Jazz Focus 65\" AND releasegroup:\"Quartet Jazz Focus-65\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Quartet Jazz Focus-65\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Джаз Фокус-65\" AND releasegroup:\"Quartet Jazz Focus-65\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/1241832-Джаз-Фокус-65-Квартет-Джаз-Фокус-65-Quartet-Jazz-Focus-65",
    "https://www.discogs.com/release/3698688"
@@ -1372,7 +1479,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Lyubomir Denev Jazz Trio\" AND releasegroup:\"Lyubomir Denev Jazz Trio\" → count 0",
+    "releasegroup:\"Lyubomir Denev Jazz Trio\" → count 0",
+    "artist:\"Любомир Денев\" AND releasegroup:\"Lyubomir Denev Jazz Trio\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T11:55:13.004Z",
+   "conclusion": "「artist:\"Lyubomir Denev Jazz Trio\" AND releasegroup:\"Lyubomir Denev Jazz Trio\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Lyubomir Denev Jazz Trio\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Любомир Денев\" AND releasegroup:\"Lyubomir Denev Jazz Trio\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/731785-Lyubomir-Denev-Jazz-Trio-And-Petko-Tomanov-Lyubomir-Denev-Jazz-Trio",
    "https://www.discogs.com/release/1654518"
@@ -1412,7 +1527,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Vesselin Nikolov and White, Green and Red\" AND releasegroup:\"Don Juan\" → count 0",
+    "releasegroup:\"Don Juan\" → count 180",
+    "artist:\"Веселин Николов Дон Жуан\" AND releasegroup:\"Don Juan\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T11:55:17.600Z",
+   "conclusion": "「artist:\"Vesselin Nikolov and White, Green and Red\" AND releasegroup:\"Don Juan\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Don Juan\"」count=180，前五筆無同藝人同盤名的 release-group；「artist:\"Веселин Николов Дон Жуан\" AND releasegroup:\"Don Juan\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/846080-Vesselin-Nikolov-And-White-Green-And-Reds-Дон-Жуан-Don-Juan",
    "https://www.discogs.com/release/3853019"
@@ -1452,7 +1575,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Focus Jazz Quartet\" AND releasegroup:\"Focus Jazz Quartet\" → count 0",
+    "releasegroup:\"Focus Jazz Quartet\" → count 0",
+    "artist:\"Джаз Квартет Фокус\" AND releasegroup:\"Focus Jazz Quartet\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T11:55:25.757Z",
+   "conclusion": "「artist:\"Focus Jazz Quartet\" AND releasegroup:\"Focus Jazz Quartet\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Focus Jazz Quartet\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Джаз Квартет Фокус\" AND releasegroup:\"Focus Jazz Quartet\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/732201-Джаз-Квартет-Фокус-Джаз-Квартет-Фокус-Focus-Jazz-Quartet",
    "https://www.discogs.com/release/5917435"
@@ -1493,7 +1624,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Theodosii Spassov & Stefan Moutafchiev\" AND releasegroup:\"The Long Road\" → count 0",
+    "releasegroup:\"The Long Road\" → count 70",
+    "artist:\"Теодосий Спасов Дълъг Път\" AND releasegroup:\"The Long Road\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T11:55:30.309Z",
+   "conclusion": "「artist:\"Theodosii Spassov & Stefan Moutafchiev\" AND releasegroup:\"The Long Road\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"The Long Road\"」count=70，前五筆無同藝人同盤名的 release-group；「artist:\"Теодосий Спасов Дълъг Път\" AND releasegroup:\"The Long Road\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/3015161-Теодосий-Спасов-Theodosii-Spassov-Стефан-Мутафчиев-Stefan-Moutafchiev-",
    "https://www.discogs.com/release/2339037"
