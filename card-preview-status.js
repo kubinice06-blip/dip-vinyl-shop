@@ -3601,4 +3601,10 @@ window.DipPreviewStatus = Object.freeze({
   "championxiii|champion status": "unavailable",
   "the charlottes|lovehappy": "unavailable",
   "sleepytime trio|plus 6000": "unavailable",
+  "rolf kühn|devil in paradise": "unavailable",
+  "friedrich gulda|music for 4 soloists and band no. 1": "unavailable",
+  "peter herbolzheimer rhythm combination & brass|my kind of sunshine": "unavailable",
+  "adam makowicz & george mraz|classic jazz duets": "unavailable",
+  "miroslav vitous|majesty music": "unavailable",
+  "elek bacsik|bird and dizzy: a musical tribute": "unavailable",
 });
