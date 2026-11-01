@@ -60,3 +60,4 @@
 
 ## 主線（條號 47071–47080）
 - 47071：研究 d、e 組交了 8 張 `status: partial`（research-base 只認 full／thin），主線一律改 thin（d：Marković-Gut、Balkan Impressions、Izvorni folklor；e：Stjepko Gut、Septet Rousse、Denev、Don Juan、The Long Road）。`qa-batch research` 40/40、key 一致；唯一標記是 e 組 facts 內的保加利亞／塞爾維亞西里爾曲名，屬原文，寫作層不寫進正文。研究層 moodGuess 存疑 9 張（Popp《Nodul Gordian》、Tiberian、Trumpets & Rhythm Unit、Birdland、Manusardi、《Jazz în Țara Mea》、《Panpipe in Jazz》、Spassov、Septet Rousse）全部不汰（本線不做落格篩選）；Spassov／Moutafchiev《The Long Road》半張是民歌合奏與合唱，照民謠融合爵士收，genres 保留 jazz＋world 判斷待子曲風。
+- 47072：封面。人工身分 20 張＋CAA 404 的 B.P. Convention《Blue Sunset》共 24 張取 Discogs master 主圖（`covers.json`，逐張 HTTP 200 image）；其餘 16 張 CAA release-group front 200。主線 2026-11-01 縮圖表 40 張逐張目視與盤名相符（Jazz Focus 65 的 Discogs 主圖是圈標中心貼紙＋放射紋封套，原盤即此形制，照用）。
