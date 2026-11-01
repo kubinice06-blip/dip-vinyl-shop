@@ -32,13 +32,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
+    "classic": 3,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 32236,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T13:46:31Z",
-    "note": "機器基線 2/3/2（Last.fm listeners 32236）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：英國榜第6名銀唱片、Saville設計；Polydor主流；新浪漫合成流行",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T13:46:31Z",
+     "note": "機器基線 2/3/2（Last.fm listeners 32236）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -103,13 +112,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 3,
     "listeners": 48098,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T13:46:31Z",
-    "note": "機器基線 3/3/4（Last.fm listeners 48098）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：EBM先驅首作、場景史必提；Crépuscule再版流通；早期極簡合成短曲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T13:46:31Z",
+     "note": "機器基線 3/3/4（Last.fm listeners 48098）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -179,13 +197,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 3,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 2366,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-22T13:46:31Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 2366）；主線：listeners 2,366；Metamatic 自營廠正規發行並上串流，John Foxx 圈內知名、圈外少人知，給 3（§0.8）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Foxx晚期合作中期作；自營Metamatic正規；類比合成流行帶人聲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-22T13:46:31Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 2366）；主線：listeners 2,366；Metamatic 自營廠正規發行並上串流，John Foxx 圈內知名、圈外少人知，給 3（§0.8）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -249,13 +276,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 2,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 179,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-10-22T13:46:31Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 179）；主線：Last.fm 中文掛名 listeners 179 失真；寶麗金正規發行、香港粵語流行主流流通，以該語言圈為尺度給 2（§0.8）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：達明一派首張全長、迷惘夜車、本地金唱片；寶麗金主流；粵語synth-pop",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 3,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-10-22T13:46:31Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 179）；主線：Last.fm 中文掛名 listeners 179 失真；寶麗金正規發行、香港粵語流行主流流通，以該語言圈為尺度給 2（§0.8）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -321,13 +357,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 2,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 148321,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T13:46:31Z",
-    "note": "機器基線 3/2/3（Last.fm listeners 148321）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：首作、Great Commandment美舞曲榜冠；Metronome/Atlantic主流；synth-pop",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T13:46:31Z",
+     "note": "機器基線 3/2/3（Last.fm listeners 148321）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -399,9 +444,18 @@
     "obscurity": 3,
     "accessibility": 3,
     "listeners": 278,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-22T13:46:31Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 278）；主線：listeners 278；原盤是 Klaus Schulze 的 Innovative Communication 正規發行、當年流通有限，Apple 查無本盤串流，給 3（§0.8）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：西柏林地下前衛，Schulze製作；IC正規廠有限發行；11分長曲digital punk",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-22T13:46:31Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 278）；主線：listeners 278；原盤是 Klaus Schulze 的 Innovative Communication 正規發行、當年流通有限，Apple 查無本盤串流，給 3（§0.8）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -463,14 +517,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
-    "accessibility": 3,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 52067,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T13:46:31Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 52067）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：同名熱門曲撐起的美版合集；ATCO主流；hi-NRG合成流行",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T13:46:31Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 52067）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -531,13 +594,22 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 3,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 15868,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T13:46:31Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 15868）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：dark synth代表作，場景常被推薦；New Rose正規獨立廠；暗色舞曲合成",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T13:46:31Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 15868）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -603,15 +675,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
-    "accessibility": 3,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 62225,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T13:46:31Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 62225）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：團唯一白金、The Metro/Sex代表作；Geffen主流；新浪潮合成流行",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T13:46:31Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 62225）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -676,12 +757,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 3808,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T13:46:31Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 3808）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：瑞典合成首作；Silence正規廠、有串流→非4；實驗synth-pop",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T13:46:31Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 3808）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -746,13 +836,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
-    "accessibility": 3,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
     "listeners": 36333,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T13:46:31Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 36333）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：英榜第4金唱片、Conny Plank製作，評論高；Chrysalis主流；冷調長曲synth",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T13:46:31Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 36333）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -818,14 +917,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
-    "accessibility": 3,
+    "obscurity": 2,
+    "accessibility": 2,
     "listeners": 82329,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T13:46:31Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 82329）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：第二張德榜13，延續首作；Metronome/Atlantic主流；synth-pop",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T13:46:31Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 82329）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

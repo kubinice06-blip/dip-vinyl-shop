@@ -32,13 +32,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 27938,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 3/3/4（Last.fm listeners 27938）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Atrium Carceri 早期代表作，CMI 時期常被推薦；CMI 圈內通路→3；dark ambient→3",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 3/3/4（Last.fm listeners 27938）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -109,11 +118,20 @@
    "ratings": {
     "classic": 3,
     "obscurity": 3,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 22199,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 3/3/4（Last.fm listeners 22199）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：CMI 時期中段作；圈內廠牌→3；dark ambient 敘事→3",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 3/3/4（Last.fm listeners 22199）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -183,11 +201,20 @@
    "ratings": {
     "classic": 3,
     "obscurity": 3,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 25039,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 3/3/4（Last.fm listeners 25039）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Cryo Chamber 中期作；本場景主要廠牌有串流→3；dark ambient→3",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 3/3/4（Last.fm listeners 25039）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -257,12 +284,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 13055,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 3/4/4（Last.fm listeners 13055）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：系列續章；Cryo Chamber→3；dark ambient 長曲→3",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 3/4/4（Last.fm listeners 13055）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -329,12 +365,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 5441,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 3/4/4（Last.fm listeners 5441）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：副計畫系列作；Cryo Chamber→3；太空 dark ambient→3",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 3/4/4（Last.fm listeners 5441）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -402,12 +447,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 8282,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 3/4/4（Last.fm listeners 8282）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：副計畫系列作；Cryo Chamber→3；太空 dark ambient→3",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 3/4/4（Last.fm listeners 8282）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -474,13 +528,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 2241,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/5/4（Last.fm listeners 2241）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Cryo Chamber 穩定作；場景主廠牌串流→3；層疊太空氛圍→3",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/5/4（Last.fm listeners 2241）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -548,14 +611,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 4,
     "listeners": 791,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 3/5/4（Last.fm listeners 791）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Dronny Darko 廠牌首作；Cryo Chamber→3；厚重 drone 近乎寂靜→4",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 3/5/4（Last.fm listeners 791）",
+     "rarity": "epic"
+    }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -622,14 +694,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 4,
     "listeners": 618,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 3/5/4（Last.fm listeners 618）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Cryo Chamber 第二張；→3；lowercase／minimal drone→4",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 3/5/4（Last.fm listeners 618）",
+     "rarity": "epic"
+    }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -694,13 +775,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 5050,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/4/4（Last.fm listeners 5050）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Ugasanie 突破作、Cryo 常被推薦的極地盤；→3；pad 加田野錄音→3",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/4/4（Last.fm listeners 5050）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -768,13 +858,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 4039,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/4/4（Last.fm listeners 4039）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：概念作，評價穩定；Cryo Chamber→3；田野錄音 drone→3",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/4/4（Last.fm listeners 4039）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -842,15 +941,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 2220,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/5/2（Last.fm listeners 2220）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：三部曲首張；Cryo Chamber→3；儀式 drone 帶失真鼓擊，cur 2 方向錯→3",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/5/2（Last.fm listeners 2220）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -917,14 +1025,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 1016,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 3/5/4（Last.fm listeners 1016）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：三位場景名家合作，非各自代表作；Cryo Chamber→3；dark ambient→3",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 3/5/4（Last.fm listeners 1016）",
+     "rarity": "epic"
+    }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -992,13 +1109,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 2868,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/5/4（Last.fm listeners 2868）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Cryo Chamber 第二張；→3；心理性 drone→3",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/5/4（Last.fm listeners 2868）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1065,12 +1191,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 2653,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 2653）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：廠牌起點作；Cryo Chamber→3；工業 dark ambient→3",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 2653）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1137,13 +1272,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 5776,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/4/4（Last.fm listeners 5776）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：廠牌首張；Cryo Chamber→3；電影式 dark ambient 帶人聲→3",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/4/4（Last.fm listeners 5776）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1210,13 +1354,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 693,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/5/4（Last.fm listeners 693）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：概念盤；Cryo Chamber 有串流→3（listeners 低僅報警）；dark ambient→3",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/5/4（Last.fm listeners 693）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1282,13 +1435,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 4,
     "listeners": 1763,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/5/4（Last.fm listeners 1763）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Cryo Chamber 作；→3；刮擦高頻、horror 質地→4",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/5/4（Last.fm listeners 1763）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1355,13 +1517,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 8926,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/4/4（Last.fm listeners 8926）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：吉他 drone 作；Cryo Chamber→3；guitar drone→3",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/4/4（Last.fm listeners 8926）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1428,13 +1599,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 4,
     "listeners": 2598,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/5/4（Last.fm listeners 2598）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Cryo Chamber 作；→3；田野錄音、noise 標籤→4",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/5/4（Last.fm listeners 2598）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1503,12 +1683,21 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 5,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 3109,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 4/4/5（Last.fm listeners 3109）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：raison d'être 早期重要作；CMI 圈內主廠→3；聖詠加工業金屬聲→4",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 4/4/5（Last.fm listeners 3109）",
+     "rarity": "epic"
+    }
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -1579,12 +1768,21 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 5,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 9349,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 4/4/5（Last.fm listeners 9349）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：後期強作、評論肯定；CMI→3；鐘聲、金屬刮擦、無打擊→4",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 4/4/5（Last.fm listeners 9349）",
+     "rarity": "epic"
+    }
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -1651,13 +1849,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
-    "accessibility": 5,
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 9000,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 4/4/5（Last.fm listeners 9000）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Spectrum Culture 稱 dark ambient 經典，Cyclic Law 定本黑膠再版；CMI→3；20 分長曲、金屬尖嘯→4",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 4/4/5（Last.fm listeners 9000）",
+     "rarity": "epic"
+    }
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -1726,12 +1933,21 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 5,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 13364,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 4/4/5（Last.fm listeners 13364）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Phase 組曲受推崇，2026 擴充再版；CMI→3；工業實驗 dark ambient→4",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 4/4/5（Last.fm listeners 13364）",
+     "rarity": "epic"
+    }
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -1798,13 +2014,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 8580,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 3/4/4（Last.fm listeners 8580）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Desiderii Marginis 首張代表作，Cyclic Law 重製黑膠；CMI→3；軍樂鼓工業氛圍→3",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 3/4/4（Last.fm listeners 8580）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1872,13 +2097,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 14114,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/4/4（Last.fm listeners 14114）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Sephiroth 代表作、CMI ritual 名盤；→3；儀式鼓加田野錄音→3",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/4/4（Last.fm listeners 14114）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1945,15 +2179,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
-    "accessibility": 5,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 4,
     "listeners": 230,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/5/5（Last.fm listeners 230）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：CMI 限量1000 金碟單曲盤；小量壓製、串流未確→4；72 分鐘極簡長曲→4",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 5,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/5/5（Last.fm listeners 230）",
+     "rarity": "epic"
+    }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2013,13 +2256,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 15396,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/4/4（Last.fm listeners 15396）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Cities Last Broadcast 首張代表作；Cyclic Law 有串流→3；環境錄音氛圍→3",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/4/4（Last.fm listeners 15396）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2088,13 +2340,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 282,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/5/4（Last.fm listeners 282）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Apocryphos 早期作；Cyclic Law 限量但有數位→3；drone→3",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/5/4（Last.fm listeners 282）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2162,13 +2423,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 27220,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 3/3/4（Last.fm listeners 27220）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Kammarheit 首張正式專輯、場景常推；Cyclic Law→3；平靜 drone→3｜主線：首刷 500 張小廠、後進串流→§0.8 錨點 4",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 3/3/4（Last.fm listeners 27220）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2237,13 +2507,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 10840,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 3/4/4（Last.fm listeners 10840）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：睽違十年回歸作、評價高；Cyclic Law 有數位→3；冥想式 dark ambient→3",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 3/4/4（Last.fm listeners 10840）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2312,13 +2591,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 13093,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/4/4（Last.fm listeners 13093）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Cyclic Law三部曲終章、場景二線穩定作；限量1000、2021重發；較旋律的dark ambient",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/4/4（Last.fm listeners 13093）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2387,15 +2675,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 13095,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/4/4（Last.fm listeners 13095）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Treha Sektori代表作之一、Cyclic Law重發；小廠限量有Bandcamp；人聲弦樂團塊儀式drone",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/4/4（Last.fm listeners 13095）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2460,15 +2757,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 5,
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 5401,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 3/4/4（Last.fm listeners 5401）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：dark ambient公認基準之作、2010雙碟重混再版；Malignant小廠1995、有串流；長篇低頻drone",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 3/4/4（Last.fm listeners 5401）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2536,15 +2842,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 3316,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 3/4/4（Last.fm listeners 3316）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Yen Pox第二張、與首作並列代表；Malignant小廠；65分鐘濃密工業質地drone",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 3/4/4（Last.fm listeners 3316）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2610,13 +2925,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
-    "accessibility": 5,
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
     "listeners": 1790,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 3/5/5（Last.fm listeners 1790）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：兩大dark ambient團合作、樂評稱極佳；限量1000、2015 Transgredient重發；無題長曲drone",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 5,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 3/5/5（Last.fm listeners 1790）",
+     "rarity": "epic"
+    }
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -2681,14 +3005,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 4,
     "listeners": 2958,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 3/5/4（Last.fm listeners 2958）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：睽違15年回歸作、廠方讚譽但非代表作；Malignant正規小廠有Bandcamp；長篇沉浸drone",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 3/5/4（Last.fm listeners 2958）",
+     "rarity": "epic"
+    }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2753,13 +3086,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 4,
     "listeners": 377,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/5/4（Last.fm listeners 377）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：BJ Nilsen早期Hazard系列首張、自然聲響處理；Malignant小廠有Bandcamp；dark ambient帶工業",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/5/4（Last.fm listeners 377）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2821,15 +3163,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 5,
-    "accessibility": 3,
+    "accessibility": 4,
     "listeners": 133,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/5/3（Last.fm listeners 133）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Amon+Nimh計畫首作、義大利場景特色；Silentes極小廠、無再發；四首長篇下降式dark ambient",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/5/3（Last.fm listeners 133）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2889,13 +3240,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 2482,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/5/4（Last.fm listeners 2482）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Glacial Movements主理人中期作；小廠有Bandcamp；冰冷drone帶鋼琴鐘聲",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/5/4（Last.fm listeners 2482）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2962,13 +3322,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 22597,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 3/3/4（Last.fm listeners 22597）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Cold Meat Industry時期代表作、Cryo Chamber重發；正規廠牌圈內知名；敘事性電影感dark ambient",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 3/3/4（Last.fm listeners 22597）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -3035,13 +3404,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 9927,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/4/4（Last.fm listeners 9927）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Inade 1997–2001素材集、非Aldebaran級代表作；Loki Foundation小廠有數位；長篇dark ambient",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/4/4（Last.fm listeners 9927）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -3108,13 +3486,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 4,
     "listeners": 2529,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/5/4（Last.fm listeners 2529）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Inade中期穩定作；Loki小廠、2008再版有數位；dark ambient帶工業質地",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/5/4（Last.fm listeners 2529）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -3181,13 +3568,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 1994,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 2/5/4（Last.fm listeners 1994）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Glacial Movements開廠早期盤、isolationist特色；限量500、Bandcamp可聽；極地取樣drone",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 2/5/4（Last.fm listeners 1994）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -3253,9 +3649,18 @@
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 5373,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:46:53Z",
-    "note": "機器基線 3/4/4（Last.fm listeners 5373）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Mick Harris的Lull後期作、非Dreamt About Dreams級；小廠Bandcamp可聽；極簡冰冷長篇drone",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:46:53Z",
+     "note": "機器基線 3/4/4（Last.fm listeners 5373）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
