@@ -221,47 +221,6 @@
   }
  },
  {
-  "artist": "Mihály Dresch Quartet",
-  "album": "...Folyondár...",
-  "year": 1995,
-  "label": "Adyton",
-  "country": "hu",
-  "faction": "hu-folk-fusion",
-  "genres": [
-   "jazz",
-   "world"
-  ],
-  "why": "Dresch 與 Dudás Mihály 的四重奏，匈牙利民謠爵士融合的 90 年代代表。",
-  "moodGuess": {
-   "x": 3,
-   "y": 0.3,
-   "z": 0.2,
-   "why": "民謠旋律明確，中速，邊緣躁、輕、暖"
-  },
-  "evidence": [
-   "https://www.discogs.com/master/2361526",
-   "https://www.discogs.com/release/8699059",
-   "https://musicbrainz.org/release-group/4a566f60-c7c1-4632-95f8-20f413ff41a7"
-  ],
-  "mbRgMbid": "4a566f60-c7c1-4632-95f8-20f413ff41a7",
-  "mbAbsenceProof": null,
-  "manualEvidenceUrls": [],
-  "releaseException": "",
-  "queryAlias": "Dresch Dudás Mihály Quartett Folyondár",
-  "uncertain": "MB 署名 Dresch Dudás Mihály Quartett。",
-  "group": "eb2a",
-  "factionZh": "匈牙利民謠融合",
-  "mb": {
-   "title": "...Folyondár...",
-   "type": "Album",
-   "sec": [
-    "Live"
-   ],
-   "date": "1995-06-30",
-   "credit": "Dresch Dudás Mihály Quartett"
-  }
- },
- {
   "artist": "Grencsó Kollektíva",
   "album": "1988-89",
   "year": 1990,
@@ -293,40 +252,6 @@
   "uncertain": "MB 查無。",
   "group": "eb2a",
   "factionZh": "匈牙利自由／前衛",
-  "mb": null
- },
- {
-  "artist": "Aladár Pege",
-  "album": "Pege",
-  "year": 1980,
-  "label": "Pepita",
-  "country": "hu",
-  "faction": "hu-mainstream",
-  "genres": [
-   "jazz"
-  ],
-  "why": "匈牙利低音大提琴巨匠 Pege 的 Pepita 代表作，匈牙利後咆勃主流爵士的標準盤。",
-  "moodGuess": {
-   "x": 3,
-   "y": 0.5,
-   "z": 0.6,
-   "why": "後咆勃，旋律明確、搖擺好入耳，邊緣躁、重、暖"
-  },
-  "evidence": [
-   "https://www.discogs.com/master/928084",
-   "https://www.discogs.com/release/2482663"
-  ],
-  "mbRgMbid": "",
-  "mbAbsenceProof": "MusicBrainz release-group 以 artist+title 搜尋無此盤；Discogs master 928084 為身分來源",
-  "manualEvidenceUrls": [
-   "https://www.discogs.com/master/928084",
-   "https://www.discogs.com/release/2482663"
-  ],
-  "releaseException": "",
-  "queryAlias": "Pege Aladár Pege",
-  "uncertain": "MB 查無。Pege Aladár 依國際寫法 Aladár Pege。",
-  "group": "eb2a",
-  "factionZh": "匈牙利主流／後咆勃",
   "mb": null
  },
  {
@@ -858,6 +783,45 @@
   }
  },
  {
+  "album": "Symbiosis",
+  "year": 1974,
+  "label": "Supraphon",
+  "country": "cs",
+  "faction": "cs-fusion",
+  "genres": [
+   "jazz",
+   "rock"
+  ],
+  "why": "Jazz Q 的巔峰專輯，融合爵士與前衛搖滾，捷克斯洛伐克爵士搖滾公認經典。",
+  "moodGuess": {
+   "x": 3.6,
+   "y": 0.9,
+   "z": -0.4,
+   "why": "厚重電聲融合，旋律線有但偏冷"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/16193261-0187-4acb-88d0-f2b792cba254",
+   "https://www.discogs.com/master/115153",
+   "https://music.apple.com/cz/album/symbiosis/1386931418"
+  ],
+  "mbRgMbid": "16193261-0187-4acb-88d0-f2b792cba254",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "Jazz Q Martin Kratochvil Symbiosis",
+  "uncertain": "",
+  "artist": "Jazz Q",
+  "group": "eb2b",
+  "factionZh": "捷克斯洛伐克爵士搖滾／融合",
+  "mb": {
+   "title": "Symbiosis",
+   "type": "Album",
+   "sec": [],
+   "date": "1974",
+   "credit": "Jazz Q"
+  }
+ },
+ {
   "album": "Nonet",
   "year": 1968,
   "label": "SABA",
@@ -1383,6 +1347,45 @@
    "type": "Album",
    "sec": [],
    "date": "1975",
+   "credit": "Fermáta"
+  }
+ },
+ {
+  "album": "Huascaran",
+  "year": 1977,
+  "label": "Opus",
+  "country": "cs",
+  "faction": "sk-fusion",
+  "genres": [
+   "jazz",
+   "rock"
+  ],
+  "why": "Fermáta 最受推崇的融合爵士專輯，Opus 的斯洛伐克融合代表。",
+  "moodGuess": {
+   "x": 3.5,
+   "y": 0.5,
+   "z": -0.2,
+   "why": "電聲融合，長篇鋪陳"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/9e552c02-e902-3433-b680-a1d8d903633a",
+   "https://www.discogs.com/master/144218",
+   "https://music.apple.com/cz/album/huascaran/1533354496"
+  ],
+  "mbRgMbid": "9e552c02-e902-3433-b680-a1d8d903633a",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "Fermata Huascaran Opus",
+  "uncertain": "MB／Apple 標 1977，Discogs master 標 1978；取 1977。",
+  "artist": "Fermáta",
+  "group": "eb2b",
+  "factionZh": "斯洛伐克 Opus",
+  "mb": {
+   "title": "Huascaran",
+   "type": "Album",
+   "sec": [],
+   "date": "1977",
    "credit": "Fermáta"
   }
  },

@@ -24,3 +24,30 @@
 
 ## 主線（條號 47171–47180）
 - 47171：照研究 b 組推翻策展層換 2 張。**Aladár Pege Trio《Bass On Top》**：Discogs master 1591988 只有兩個版本，皆 1966 Supraphon 7 吋 45 轉（〈Salute To Ray Brown〉〈Dalia〉兩首），是單曲不是專輯，汰。**György Vukán《Derby》**：兩幕舞劇組曲，管弦樂團＋Budapest Brass Ensemble＋人聲，Vukán 掛作曲指揮，不是爵士盤，汰。補回主線先前汰換區的 **Károly Binder《Kontinentspiel》**（1989 Krém，MB 釘住）與 **Energit《Piknik》**（1978 Panton，MB 釘住），同置 group b 原位，由研究 b 組補研究。匈牙利 21、捷克斯洛伐克 19。
+
+## 研究 a 組
+- **47101**：Pege《Pege》（Pepita 1980）Discogs 標 Compilation，三首為 1976–78 爵士節現場錄音，客座 Art Farmer／Leo Wright／Benny Bailey／ORF Big Band。BMC 列為其個人專輯，但依 PLAN「只收正規錄音室專輯」→ 列移除候選，交主線裁量；facts 照實寫選輯性質。《Bass on Top》已另收。
+- **47102**：Dresch《...Folyondár...》為現場專輯（1995-05-12 Közgáz Jazz Club，MB 亦標 Live）；現場例外條件（最重要作品即現場盤）Dresch 不成立，交主線裁量；Dresch 另已收《Mozdulatlan Utazás》。
+- **47103**：Szabados & MAKUZ《A Szarvassá Vált Fiak》為 1985 年 Győr 芭蕾舞劇音樂（器樂大樂團，無合唱）。moodGuess「合唱加樂團」前提不成立，列 moodGuess 存疑；英文維基「1956 革命」靈感說與 Retkes／Discogs 的 1985 舞劇委託不同，facts 採後者。
+- **47104**：Szabados《Adyton》年份 Discogs／Retkes／維基 1983，BMC 1982；採 1983。BMC 稱「自行發行」與封面 Krém 不符，不採。
+- **47105**：Binder Quintet 年份英文維基 1982，其餘 1983，採 1983；Discogs 全曲作曲記 Dresch，單一來源，用「記為」。
+- **47106**：Mozdulatlan Utazás 即 BMC／classical-music 的《Riding the Wind》（Fonó FA-084-2 同 November Music NVR 2003-2）；已在 facts 兩個號都寫。
+- **47107**：Grencsó《1988-89》資料極薄（只有 Discogs＋維基目錄），status thin；Adyton 001／1990 為 Discogs 單一來源；moodGuess「冷」無聲音證據，列存疑。
+- 本組 8 張：full 7、thin 1；facts 7→8 至 9 條皆 https；推翻策展層：Pege 非單一錄音室盤、MAKUZ 盤無合唱、Dresch Folyondár 為現場盤。
+- **47117**　（換卡）Bass On Top／Derby 經主線汰除，研究稿改為 Károly Binder《Kontinentspiel》與 Energit《Piknik》。
+- **47118**　Binder《Kontinentspiel》：Discogs 1989（Krém SLPX 37210），影片說明 1986，保 1989。實為單人多樂器（鋼琴、豎琴、打擊樂、人聲）加踢踏舞者的長篇自由即興，curatorWhy「鋼琴／樂團」不準；moodGuess 存疑（躁、輕與無鼓長篇不符，應偏靜）。thin。
+- **47119**　Energit《Piknik》：推翻策展層「第二張」（cs 維基年表為第四張）；「被樂迷肯定／近年重發」查無來源未寫。thin。
+
+## 研究 d 組（47131–47140）
+- **47131**：8 張全走 Discogs master／release API 取 credits、notes、錄音日期；Discogs 全部對上卡單盤名、年份、廠牌。維基（cs／en）只補人物生平。Wikimedia 直連 raw 被擋，改 WebFetch。
+- **47132**：Velebný《Nonet》SABA SB 15 160 ST，1968-02-20 錄於 Villingen SABA-Tonstudio（MPS 所在地）；標籤印《Nonet》，英文維基寫《Karel Velebný Nonet, SHQ & Woodwinds》。九人編制由 Discogs 名單數出。1968 秋天車禍僅捷克維基單一來源，標出處、不寫傷勢。
+- **47133**：Velebný《Motus》Discogs ℗1972、錄音 1971-02-09～03-17；英文維基列 1971。取 1972。
+- **47134**：Déczi《Pietoso》錄音 1968-11-07～13；MB 同名 RG f49624ee 本層未能確認，不動人工身分。Clifford Brown／Miles 影響僅捷克維基。
+- **47135**：Déczi《Jazz Cellula》版權年 1978、錄音 1977-06（Pezinok Opus 錄音室）；Apple 標 1977 即錄音年，卡單 1978 不動。
+- **47136**：Stivín《5 ran do čepice》錄音日期 1972-02-25～27 僅 kultowenagrania.pl 單一來源，另有 1974 說法，卡單 1972 不動。
+- **47137**：推翻策展層：Stivín & Favre《Výlety》實為 24 首（A9、B7、C3、D5），非策展層寫的 28 軌。
+- **47138**：Dašek《Pohádka pro Beritku》為單聲道會員版；曲目自寫 5＋標準曲 4。「首張個人專輯」無來源，不寫。
+- **47139**：Dašek《Dialogy》資料最薄（無樂評、無廠牌文案），status thin；每首對手樂手來自 Discogs 曲目 credits。
+- **47140**：moodGuess 存疑（不汰）：《5 ran do čepice》「尖銳」、《Výlety》「稀疏尖銳」（實為柔和木管與小打擊樂）、《Dialogy》「無調」皆無聲音來源可證；其餘與 Discogs 風格標籤相符。
+- 本組 8 張：full 7、thin 1；facts 8 至 9 條皆 https；推翻策展層 1 處（Výlety 軌數）。
+- 47172：照研究 a 組再換 2 張。**Aladár Pege《Pege》**（1980 Pepita）：Discogs 標 Compilation，三首是 1976–78 爵士節現場（客座 Art Farmer、Leo Wright、Benny Bailey、ORF Big Band），不是正規錄音室專輯，汰；Pege 只留《Synchronicity》。**Mihály Dresch Quartet《...Folyondár...》**：1995-05-12 Közgáz Jazz Club 現場，MB 標 Live，Dresch 最重要作品不是現場盤，不開例外，汰；Dresch 留《Mozdulatlan Utazás》。補回汰換區 **Jazz Q《Symbiosis》**（1974 Supraphon）、**Fermáta《Huascaran》**（1977 Opus），皆 MB 釘住，置 group a 原位。匈牙利 19、捷克斯洛伐克 21。《A Szarvassá Vált Fiak》是 MAKUZ 為 Győr 芭蕾舞團寫的器樂大樂團舞劇音樂（非合唱），屬 Szabados 自由爵士樂團正作，照收。
