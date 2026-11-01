@@ -82,3 +82,6 @@
 - **51419**　b 組全部 8 張皆為 Melodiya 原版首發，未發現合輯、EP 長度或現場錄音；唯 Arkhangelsk 一張錄音性質（棚／播出／現場）未證實。
 - **51420**　WebSearch 本組用 8 次（每張 1 次內，另有 0 次再查）；Wikipedia API 被代理 429，改用 WebFetch 與 Discogs API。
 - 51478：研究 b 組推翻照辦：ВИА Севиль 是亞塞拜然（巴庫）團、亞塞拜然語演唱，不是愛沙尼亞；《Концерт для голоса и оркестра》是一部跨 A／B 面的協奏曲，正文不寫「兩首」；掛名維持 MB／Discogs 原文三方署名。研究稿西里爾專名進 `desc-tools/nonlatin-proper-names.json` 白名單，兩處被曲名切斷的長專名改用〈〉包起；`qa-batch research` 兩批全部通過。
+
+## 鉤子層（d、e）（51456–51460）
+- **51456**　骨架預配（開工即寫，供 a–c 對齊；定稿見 51457）：d1 Bauer《Flüchtiges Glück》＝特殊錄音空間（科隆地下蓄水池、45 秒殘響、Riskant 西德廠）；d2 BBQ＝東西德成員以住地拼團名；d3 Schulze《Viertens》＝以音名寫主題的純吹管作曲（FMP 只當發行資料、不當骨架）；d4 Studio 4＝獲准出國登上蒙特勒（「出國受限」骨架歸本張）；d5《Solarius》＝東西德兄弟同台＋弟弟出走後唱片絕版（「出走」骨架歸本張，Lenz《Aufbruch》不寫 1977 遷西德）；d6 Schönfeld 1978＝一人輪吹三件木管＋大提琴入編制；d7 Schönfeld & Katzenbeier＝廣播舞蹈管弦樂團舊同事合掛名；e1 Lenz Modern Soul Big Band＝兩團合併；e2《Aufbruch》＝同名盤之後的下一張＋鍵盤電聲擴張；e3《Kombination》＝電影配樂作曲家的器樂 fusion；e4 Brüning & Fischer＝歌手與首巡樂團的德語歌曲盤；e5《Kontraste》＝夫妻二重奏＋廣播劇音效素材；e6 Wroblewsky＝首張即拿 Goldene Amiga（「首張」骨架歸本張）；e7 MJBB65＝一場演出分給兩張唱片＋「日後成為東德自由爵士代表」的大樂團早年班底（「大樂團」骨架歸本張；「柏林現場」骨架讓給 c 組 Hörmusik，本張只寫「一場演出」）；e8 Brüning 1982＝跨曲風翻唱配錄音室樂團。**d–e 全不取**：國營廠、審查、柏林現場、電台錄製、FMP 發行、Synopsis／Zentralquartett、Bauer 的多聲部泛音與循環呼吸（歸 c 組 Bauer Amiga 盤）。
