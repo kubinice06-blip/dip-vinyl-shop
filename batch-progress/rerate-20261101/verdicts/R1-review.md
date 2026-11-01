@@ -9,3 +9,4 @@
 
 ## s02
 - 0–50：通過。抽查 Contortions《Buy》（5）、As Mercenárias（5，Rolling Stone Brasil 巴西龐克第 5）、Braxton《Dortmund 1976》（5）、Tim Berne、Waveshaper（硬蕊 1）。冷門 5 全數由 Last.fm 值校回 3（Pi／Intakt／Clean Feed 正規廠）。
+- 150–200：通過。抽查 Berio《Sequenzas》EIC（5）、Stockhausen《Mantra》（5）、Yasunao Tone《Solo for Wounded CD》（5）、Zorn《Pool》（硬蕊 3→5 方向修正）、Étron Fou 兩張冷門 4（小廠原盤＋授權再發）。
