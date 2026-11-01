@@ -53,7 +53,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 以 artist+title 搜尋無此盤；Discogs master 2557472 為身分來源",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"György Szabados\" AND releasegroup:\"Adyton\" → count 0",
+    "releasegroup:\"Adyton\" → count 0",
+    "artist:\"Szabados Adyton\" AND releasegroup:\"Adyton\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T12:03:15.350Z",
+   "conclusion": "「artist:\"György Szabados\" AND releasegroup:\"Adyton\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Adyton\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Szabados Adyton\" AND releasegroup:\"Adyton\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 以 artist+title 搜尋無此盤；Discogs master 2557472 為身分來源"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/2557472",
    "https://www.discogs.com/release/2426960"
@@ -93,7 +101,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 以 artist+title 搜尋無此盤；Discogs master 784373 為身分來源",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"György Szabados & MAKUZ\" AND releasegroup:\"A Szarvassá Vált Fiak\" → count 0",
+    "releasegroup:\"A Szarvassá Vált Fiak\" → count 0",
+    "artist:\"Szabados György\" AND releasegroup:\"A Szarvassá Vált Fiak\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T12:03:22.750Z",
+   "conclusion": "「artist:\"György Szabados & MAKUZ\" AND releasegroup:\"A Szarvassá Vált Fiak\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"A Szarvassá Vált Fiak\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Szabados György\" AND releasegroup:\"A Szarvassá Vált Fiak\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 以 artist+title 搜尋無此盤；Discogs master 784373 為身分來源"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/784373",
    "https://www.discogs.com/release/2709251"
@@ -240,7 +256,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 以 artist+title 搜尋無此盤；Discogs master 1283485 為身分來源",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Grencsó Kollektíva\" AND releasegroup:\"1988-89\" → count 0",
+    "releasegroup:\"1988-89\" → count 3",
+    "artist:\"Grencsó Kollektíva 1988 89\" AND releasegroup:\"1988-89\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T12:03:40.889Z",
+   "conclusion": "「artist:\"Grencsó Kollektíva\" AND releasegroup:\"1988-89\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"1988-89\"」count=3，前五筆無同藝人同盤名的 release-group；「artist:\"Grencsó Kollektíva 1988 89\" AND releasegroup:\"1988-89\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 以 artist+title 搜尋無此盤；Discogs master 1283485 為身分來源"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/1283485",
    "https://www.discogs.com/release/2491745"
@@ -333,46 +357,6 @@
   "cover": null
  },
  {
-  "key": "desc2:Walter Norris & Aladár Pege|Synchronicity",
-  "artist": "Walter Norris & Aladár Pege",
-  "album": "Synchronicity",
-  "year": 1979,
-  "genre": "jazz",
-  "genres": [
-   "jazz"
-  ],
-  "label": "Enja",
-  "country": "hu",
-  "moodGuess": {
-   "x": 3.2,
-   "y": 0.4,
-   "z": 0,
-   "why": "鋼琴／低音二重奏，即興偏自由，邊緣躁、輕、中性"
-  },
-  "rgMbid": "",
-  "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 以 artist+title 搜尋無此盤；Discogs master 374370 為身分來源",
-  "manualEvidenceUrls": [
-   "https://www.discogs.com/master/374370",
-   "https://www.discogs.com/release/1098974"
-  ],
-  "curatorWhy": "匈牙利主流／後咆勃：美國鋼琴家 Walter Norris 與 Pege 的二重奏，Enja 出品，匈牙利爵士登上西方樂壇的代表盤。",
-  "curatorRisk": "⚠ MB 查無（找到 Synchronicity 皆非此盤）。country 填 de（Enja 慕尼黑），派系仍屬匈牙利。",
-  "mbNote": "MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/374370 https://www.discogs.com/release/1098974 https://www.discogs.com/master/374370 https://www.discogs.com/release/1098974",
-  "releaseType": "Album",
-  "exceptionReason": "",
-  "exceptionEvidenceUrls": [],
-  "genreException": "",
-  "selfTitled": false,
-  "apex": null,
-  "group": "b",
-  "lineType": "廣度",
-  "scene": "薄細項策展線（匈牙利主流／後咆勃）",
-  "queryAlias": "Norris Pege Synchronicity",
-  "republic": "",
-  "cover": null
- },
- {
   "key": "desc2:Energit|Piknik",
   "artist": "Energit",
   "album": "Piknik",
@@ -426,7 +410,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 以 artist+title 搜尋無此盤；Discogs master 3279115 為身分來源",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"The Super Trio\" AND releasegroup:\"Birthday Party\" → count 1",
+    "releasegroup:\"Birthday Party\" → count 108",
+    "artist:\"Super Trio Vukán Berkes Kőszegi Birthday Party\" AND releasegroup:\"Birthday Party\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T12:03:51.157Z",
+   "conclusion": "⚑待主線核：The Super Trio《Birthday Party》1987 9b46be4f-79c3-43fa-9ba3-b9bd55d5831a策展層：MusicBrainz release-group 以 artist+title 搜尋無此盤；Discogs master 3279115 為身分來源"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/3279115",
    "https://www.discogs.com/release/5539362"
@@ -890,7 +882,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group search (artist+title) returns no match; Discogs master is the identity source",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Karel Velebný & SHQ\" AND releasegroup:\"Nonet\" → count 0",
+    "releasegroup:\"Nonet\" → count 33",
+    "artist:\"Karel Velebny SHQ Nonet SABA\" AND releasegroup:\"Nonet\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T12:03:55.180Z",
+   "conclusion": "「artist:\"Karel Velebný & SHQ\" AND releasegroup:\"Nonet\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Nonet\"」count=33，前五筆無同藝人同盤名的 release-group；「artist:\"Karel Velebny SHQ Nonet SABA\" AND releasegroup:\"Nonet\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group search (artist+title) returns no match; Discogs master is the identity source"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/228423",
    "https://www.discogs.com/artist/41414"
@@ -930,7 +930,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group search (artist+title) returns no match; Discogs master is the identity source",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Karel Velebný & SHQ\" AND releasegroup:\"Motus\" → count 0",
+    "releasegroup:\"Motus\" → count 25",
+    "artist:\"SHQ Velebny Motus\" AND releasegroup:\"Motus\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T12:04:06.296Z",
+   "conclusion": "「artist:\"Karel Velebný & SHQ\" AND releasegroup:\"Motus\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Motus\"」count=25，前五筆無同藝人同盤名的 release-group；「artist:\"SHQ Velebny Motus\" AND releasegroup:\"Motus\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group search (artist+title) returns no match; Discogs master is the identity source"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/308645",
    "https://www.discogs.com/artist/41414"
@@ -970,7 +978,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB 有同名 RG f49624ee 但無首發年與廠牌資料，無法確認為同一張，改走 Discogs master",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Laco Déczi\" AND releasegroup:\"Pietoso\" → count 1",
+    "releasegroup:\"Pietoso\" → count 1",
+    "artist:\"Laco Deczi Jazz Celula Pietoso Laco Tropp\" AND releasegroup:\"Pietoso\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T12:04:19.180Z",
+   "conclusion": "⚑待主線核：Laco DécziCellula Quintet《Pietoso》 f49624ee-efbf-49fd-91b7-ae83c5173163；Laco DécziCellula Quintet《Pietoso》 f49624ee-efbf-49fd-91b7-ae83c5173163策展層：MB 有同名 RG f49624ee 但無首發年與廠牌資料，無法確認為同一張，改走 Discogs master"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/287976",
    "https://music.apple.com/cz/album/pietoso-feat-laco-tropp/1405664519"
@@ -1010,7 +1026,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group search (artist+title) returns no match; Discogs master is the identity source",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Laco Déczi\" AND releasegroup:\"Jazz Cellula\" → count 2",
+    "releasegroup:\"Jazz Cellula\" → count 2",
+    "artist:\"Laco Deczi Jazz Celula Opus\" AND releasegroup:\"Jazz Cellula\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T12:04:26.957Z",
+   "conclusion": "⚑待主線核：Laco Deczi & Jazz Cellula《Jazz Cellula》2008 6e248bc4-4453-4523-a413-5fc9d52962b1；Laco Deczi & Jazz Cellula《Jazz Cellula》2008 6e248bc4-4453-4523-a413-5fc9d52962b1策展層：MusicBrainz release-group search (artist+title) returns no match; Discogs master is the identity source"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/631492",
    "https://music.apple.com/cz/album/jazz-cellula/1533360833"
@@ -1050,7 +1074,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group search (artist+title) returns no match; Discogs master is the identity source",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Jiří Stivín & Co. Jazz System\" AND releasegroup:\"5 ran do čepice\" → count 0",
+    "releasegroup:\"5 ran do čepice\" → count 0",
+    "artist:\"Jiri Stivin Co Jazz System 5 ran do cepice\" AND releasegroup:\"5 ran do čepice\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T12:04:34.740Z",
+   "conclusion": "「artist:\"Jiří Stivín & Co. Jazz System\" AND releasegroup:\"5 ran do čepice\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"5 ran do čepice\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Jiri Stivin Co Jazz System 5 ran do cepice\" AND releasegroup:\"5 ran do čepice\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group search (artist+title) returns no match; Discogs master is the identity source"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/321932",
    "https://www.discogs.com/artist/1808854"
@@ -1090,7 +1122,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB 的 Výlety = Excursions RG（2fb4d74e）標 2019，是重發而非 1981 首發，不用；改走 Discogs master",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Jiří Stivín & Pierre Favre\" AND releasegroup:\"Výlety\" → count 1",
+    "releasegroup:\"Výlety\" → count 3",
+    "artist:\"Jiri Stivin Pierre Favre Vylety Excursions\" AND releasegroup:\"Výlety\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T12:04:40.813Z",
+   "conclusion": "「artist:\"Jiří Stivín & Pierre Favre\" AND releasegroup:\"Výlety\"」count=1，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Výlety\"」count=3，前五筆無同藝人同盤名的 release-group；「artist:\"Jiri Stivin Pierre Favre Vylety Excursions\" AND releasegroup:\"Výlety\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MB 的 Výlety = Excursions RG（2fb4d74e）標 2019，是重發而非 1981 首發，不用；改走 Discogs master"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/321100",
    "https://www.discogs.com/artist/340034"
@@ -1130,7 +1170,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group search (artist+title) returns no match; Discogs master is the identity source",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Rudolf Dašek\" AND releasegroup:\"Pohádka pro Beritku\" → count 0",
+    "releasegroup:\"Pohádka pro Beritku\" → count 0",
+    "artist:\"Rudolf Dasek Pohadka pro Beritku Jazz on Six Strings\" AND releasegroup:\"Pohádka pro Beritku\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T12:04:48.215Z",
+   "conclusion": "「artist:\"Rudolf Dašek\" AND releasegroup:\"Pohádka pro Beritku\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Pohádka pro Beritku\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Rudolf Dasek Pohadka pro Beritku Jazz on Six Strings\" AND releasegroup:\"Pohádka pro Beritku\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group search (artist+title) returns no match; Discogs master is the identity source"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/329056",
    "https://music.apple.com/cz/album/jazz-on-six-strings-poh%C3%A1dka-pro-beritku/1406729963"
@@ -1170,7 +1218,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group search (artist+title) returns no match; Discogs master is the identity source",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Rudolf Dašek\" AND releasegroup:\"Dialogy\" → count 0",
+    "releasegroup:\"Dialogy\" → count 0",
+    "artist:\"Rudolf Dasek Dialogy\" AND releasegroup:\"Dialogy\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T12:04:56.622Z",
+   "conclusion": "「artist:\"Rudolf Dašek\" AND releasegroup:\"Dialogy\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Dialogy\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Rudolf Dasek Dialogy\" AND releasegroup:\"Dialogy\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group search (artist+title) returns no match; Discogs master is the identity source"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/329042",
    "https://music.apple.com/us/album/dialogy/1397786883"
@@ -1280,7 +1336,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group search (artist+title) returns no match; Discogs master is the identity source",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Karel Růžička\" AND releasegroup:\"Ozvěny\" → count 0",
+    "releasegroup:\"Ozvěny\" → count 3",
+    "artist:\"Karel Ruzicka Ozveny\" AND releasegroup:\"Ozvěny\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T12:05:04.900Z",
+   "conclusion": "「artist:\"Karel Růžička\" AND releasegroup:\"Ozvěny\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Ozvěny\"」count=3，前五筆無同藝人同盤名的 release-group；「artist:\"Karel Ruzicka Ozveny\" AND releasegroup:\"Ozvěny\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group search (artist+title) returns no match; Discogs master is the identity source"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/807065",
    "https://music.apple.com/cz/album/ozv%C4%9Bny-feat-petr-kr%C3%A1l-petr-ko%C5%99%C3%ADnek-josef-vejvoda/1420200022"
@@ -1355,7 +1419,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB 的 Polymelomodus RG 首發日 2015（重發），無 1977 LP 條目，改走 Discogs master",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Gustav Brom\" AND releasegroup:\"Polymelomodus\" → count 1",
+    "releasegroup:\"Polymelomodus\" → count 2",
+    "artist:\"Gustav Brom Orchestra Polymelomodus\" AND releasegroup:\"Polymelomodus\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T12:05:11.186Z",
+   "conclusion": "⚑待主線核：Gustav Brom《Polymelomodus》2015-09-25 5072329d-f976-41e9-9a8b-c90b5ab781f2；Gustav Brom《Polymelomodus》2015-09-25 5072329d-f976-41e9-9a8b-c90b5ab781f2；Orchestr Gustava Broma《Polymelomodus》2015-08-15 c8a3a959-ca2b-4b3c-99be-4e4c8eca3dab策展層：MB 的 Polymelomodus RG 首發日 2015（重發），無 1977 LP 條目，改走 Discogs master"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/895907",
    "https://www.discogs.com/artist/320238"
@@ -1431,7 +1503,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group search (artist+title) returns no match; Discogs master is the identity source",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Gabriel Jonáš\" AND releasegroup:\"Impresie\" → count 0",
+    "releasegroup:\"Impresie\" → count 0",
+    "artist:\"Gabriel Jonas Impresie Opus\" AND releasegroup:\"Impresie\" → count 0"
+   ],
+   "checkedAt": "2026-11-01T12:05:18.619Z",
+   "conclusion": "「artist:\"Gabriel Jonáš\" AND releasegroup:\"Impresie\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Impresie\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Gabriel Jonas Impresie Opus\" AND releasegroup:\"Impresie\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group search (artist+title) returns no match; Discogs master is the identity source"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/release/4253150",
    "https://music.apple.com/cz/album/impresie/1574208918"
