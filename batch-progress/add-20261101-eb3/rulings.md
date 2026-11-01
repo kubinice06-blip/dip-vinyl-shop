@@ -59,3 +59,15 @@
 
 ## 主線（研究層推翻後）（51371–）
 - 51371：照研究 b 組，《Lola》原盤是英國 Decca 1964（LK 4644／SKL 4644，倫敦錄音），卡單 label 由 Polskie Nagrania Muza 改 Decca；仍收（波蘭樂手、Namysłowski 60 年代代表作）。《Baazaar》年份維持 1969（MB／Polish Jazz 系列表），Discogs 1970 並列於 facts。
+
+## 研究 d 組
+- 51331：《Na kosmodromie》label：Discogs 版本頁 labels 欄為 Pronit（SXL 0748），錄音掛名 Polskie Nagrania Warszawa，沿用卡單 Pronit。⚠ 敏感：Krzysztof Sadowski 本人 2019 年遭記者公開指控、2022 年 12 月檢方起訴一案（2017 年兒童爵士工作坊，他否認、無判決；來源 pl.wikipedia）。facts 未納入，是否保留此卡及池中 Three Thousands Points 由主線裁量。
+- 51332：《Go Ahead》與《Birthday》：Discogs 人員表顯示只有 Śmietana 一人留在原班，其餘全換；Birthday 無正式鼓手（只有 Radecki 打擊樂），Go Ahead 有 Bronikowski 鼓。
+- 51333：《Modern Pentathlon》moodGuess 存疑：why 寫『銅管推進』，編制表無銅管（只有薩克斯風、低音豎笛）。pl.wikipedia 稱同名曲是波蘭第一首音序器曲目卻又說錄音時未用音序器，自相矛盾，facts 只寫維基原述；該維基另稱賣 11 萬 5 千張，單一來源未採。
+- 51334：《Quasimodo》Polish Jazz Vol. 58、1979 成立；pl.wikipedia『四首作品加四段即興小品』與 Discogs 8 個曲目編號相符。人聲經 Echo Space Chorus 效果處理出自 Discogs 分工欄。
+- 51335：《Workoholic》策展層『弦樂加爵士放克』不成立：弦樂器只有 Dębski 一支小提琴，無弦樂組，facts 已寫明，寫作層勿寫弦樂團。版本為 Polskie Stowarzyszenie Jazzowe 會員俱樂部版（PolJazz PSJ-107），錄音 1982 年 5 月 17、18 日 Studio PR Poznań。
+- 51336：《Drums Dream》MB 首發 2006（重發）→ 取 Discogs 原盤 1976（SX 1419，Polish Jazz Vol. 50，已填 yearVerified）。pl.wikipedia 稱波蘭第一張鼓手名義專輯，單一來源未採。moodGuess『節奏為主』存疑：Stańko、Makowicz、Szukalski 獨奏占相當比例。
+- 51337：《Sprzedawcy glonów》MB 首發 2006（重發）→ 取 Discogs 1973（英文維基與 iTunes 1974，不採），已填 yearVerified。實為 Studio Jazzowe Polskiego Radia 與 Wróblewski 共同署名的電台拼貼專輯，六首錄音日期橫跨 1971 至 1973；Discogs 人員表為整張合集，不同曲目演奏者不同，勿寫成同時演奏的 40 多人。Wróblewski 領導 Studio Jazzowe 年份兩維基衝突，採 pl 的 1968 成立。
+- 51338：8 張皆原創錄音室／電台錄音專輯，無選輯、無重複卡、無建議移除。池內同藝人：Extra Ball 兩張、Laboratorium 兩張，皆不同階段，不需汰。
+- 51339：moodGuess 存疑彙整（僅供參考，不作汰卡依據）：Modern Pentathlon（無銅管）、Workoholic（無弦樂組）、Drums Dream（獨奏占比）、Sprzedawcy glonów（風格含 Contemporary Jazz，未必全放克）、Birthday（無鼓組）。其餘三張（Na kosmodromie、Go Ahead、Quasimodo）無明顯不符。
+- 51340：資料限制：樂評幾乎取不到（culture.pl、Discogs 網頁 403；pl.wikipedia 專輯條 404，Wikipedia API 限流改 WebFetch；WebSearch 用 3 次，兩次完全無關）。聲音 facts 以 Discogs API 的 credits（編制、效果器、錄音地月份、曲長）與風格標籤為主，各卡 sound 欄已標明非樂評。
