@@ -1243,7 +1243,14 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz 以 artist/releasegroup 查詢 Elek Bacsik『Bird and Dizzy』無結果（2026-11-01）",
+  "mbAbsenceProof": {
+   "queries": [
+    "release-group?query=releasegroup:\"Bird and Dizzy\" → count 0",
+    "release-group?query=artist:\"Elek Bacsik\" → count 5（Jazz in Paris: Nuages、The Electric Guitar of the Eclectic Elek Bacsic、Jazz in Paris: Guitar Conceptions、I Giganti Del Jazz Vol. 84、Guitare / Autour de Minuit），無 Bird and Dizzy"
+   ],
+   "checkedAt": "2026-11-01",
+   "conclusion": "MusicBrainz 以盤名與藝人名兩個方向查詢皆無《Bird and Dizzy: A Musical Tribute》；Discogs master 2464921／release 2188803（Flying Dutchman BDL1-1082，US 1975）可證此盤存在。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/2464921",
    "https://www.discogs.com/master/2464921-Elek-Bacsik-Bird-And-Dizzy-A-Musical-Tribute"

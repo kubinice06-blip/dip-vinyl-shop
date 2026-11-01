@@ -105,3 +105,19 @@
 - **43563** 自掃 han() 4-gram（本檔 19 張＋hooks a–e 38 條 hook，排除同卡自身）：2 張以上只剩樂器名（薩克斯風、小提琴手）、地名（法蘭克福）與樂種名（自由爵士：Free Action 正文對 Devil in Paradise 的 hook）。途中拆掉：錄下這張 ×2、年月進錄、年月在錄、年月錄於、年月他在、法國小提琴手 ×2、最長一首近分鐘、拉大提琴、彈西塔琴、錄成同年發行、在年發行、鋼琴家的、吉他貝斯與鼓、編寫並指揮管弦樂、曲包括與、這張爵士、移居歐洲、在慕尼黑、鋼琴家在（Gruntz 對 Free Action hook）。writer-2 尚未交件，跨兩檔合掃留主線收件時跑。
 - **43564** 轉述引導詞處理：Open Strings 的「廠方稱⋯最好的狀態」改寫成「MPS 把它定位成⋯」（廠牌的定位動作，非引述）；Mangelsdorff《And His Friends》的「MPS 說他此時開始走向更自由的語言」改成「也把這段時間看作⋯」；Herbolzheimer 掌聲後製直接平敘（不寫「唱片資料註明」）；Helen 12 Trees 的樂評語「強勁重複的四音型」不掛「樂評說」，直敘為 Bruce 的貝斯線驅動全場（hook 已有「四音型」，正文不再重複該詞）。全檔無「據說／據傳」、無媒體名與榜單名次（本半 note 本來就沒有）。
 - **43565** 開頭兩句補樂種／身分：Free Action 第二句帶「自由爵士」（取 sound 欄，非 note 原詞；hook 只有「德國鋼琴家」）、Sunday Walk 帶「爵士四重奏編制」、Four Reasons 第二句以團名領句後由編制交代震音琴。Noisy Silence hook 的 Citroën 懸念 note 未給收尾格，正文不去 facts 撈「樂團那輛車」，照 43551「依賴只在 hook 本身」辦。Exclusiv 第二句寫「Hans Koller 吹薩克斯風」，hook 的「舊帶」由「另一段四重奏才是那捲舊帶」具名，不重寫 1959 年。
+
+## 寫作層（writer-2）（43566–43570）
+- **43566** 交件：`desc-tools/batches/output/add-20261101-eb5-out-2.json` 19 張（full 14：187–235；thin 5：Swinging Macedonia 176、Slavic Mood 171、Majesty Music 129、Hip Elegy 150、Means of Identification 163）。初稿無超標；Electric Guitar 初稿 178 掉下限，補「在前領奏」「貝斯手與鼓手各有兩位輪替」「交由法國的 Fontana」回到 187（不去 facts 撈新格）。`qa-batch out`（兩檔 38 張）全部通過、thin ≤180 ✓；`qa-check-research` 標記 0；`fix-spacing` 0 處。
+- **43567** 第二句領句全照鉤子層 43558 配表（發起人／音樂學院／封面拼法／樂器／赴美年份／處境／國籍與樂器／身兼多職／廠牌關係／時事／分工／身世／三人國籍並列／作曲欄／親屬／鼓手履歷／族裔／巡演經歷／是字句）。「日」後一字照 43559：Fusion「日他」、Like Children「日告」，其餘只寫到月或年。不複述 hook 的處理：ZKS 不再寫 U 67，改具名錄音機 SABA T 600 與麥克風廠 Neumann；Electric Guitar 的 Gainsbourg 與「名下第一張」都留在 hook，第二句改帶 Clark Terry；Hip Elegy 第二句以 Mouzon 履歷具名 hook 的「美國融合鼓手」。ZKS note「不設節奏組」改正面寫「編制就這三人」（否定句規則）。
+- **43568** 轉述引導詞：note 的「樂評部落格說」（Majesty Music）與「樂評說」（First Meeting 撥弦弓拉、鈸輕柔）直敘為聲音事實，不掛出處；Jazz Raga「有樂評回顧」只寫「它後來累積出長久的小眾崇拜」；Like Children 寫「當年的評論把它的氣氛形容為⋯」（不具名、無媒體）；All Smiles 的「MPS 形容」保留（廠牌對自家唱片的描述，note 指定）。全檔無媒體名、榜單名次、「據說／據傳」、來源平台名。
+- **43569** 自掃（han() 4-gram，本組正文＋writer-1 已交 out-1 正文）：跨兩檔 ≥2 張只剩樂器名（薩克斯風、低音提琴、小提琴手〔hook 原文〕、次中音／中音薩克斯）、地名布達佩斯、note 指定的「音樂學院」（Swinging Macedonia 對 First Seven Days，各自 note 的領句詞）。途中拆掉：在年發行×4、於年發行×3、是標準曲×3、重奏年月、錄成本作、十首全是、的第一張、鋼琴打鼓、推出本作、拉小提琴、吉他與西塔琴、的吉他手、錄下這張、都在其中、自己製作、貝斯與鼓、住在美國（改「以美國為家」）、科隆的錄下本作、錄音落在年月、隔年發行、是貝斯鼓、五重奏年月、之間來回、管弦樂的、團年月日、他手在這、廠牌發行、標準曲與、吹薩克斯×3、彈貝斯打鼓、年月的錄、進錄音室、年月他在、替他發行、年月錄於、在科隆錄音、最長一首、的版本年。跨批（其他 add-2026* out）高頻殘片另拆：交給發行（54 次）、首張專輯、分鐘左右／上下、共約分鐘、加起來約、錄音地點、樂評形容、交由發行、擔任製作、的頭一張、其中一首。
+- **43570** 掛名照 43571：卡 key 不動，正文寫 Gábor Szabó、Miroslav Vitouš；Jazz Raga 寫 1966 年 8 月錄、1967 年初 Impulse! 發行；Swinging Macedonia 寫 1966 年 8 月科隆、Philips 1967 年。Komeda 逝世只寫「1968 年底摔傷，1969 年 4 月辭世」，不寫地點與病名；Seifert 只寫姓（note 未給全名）。日野皓正照東亞人名規則。writer-1 若再改稿，跨兩檔合掃由主線收件時重跑一次。
+
+## 主線審稿（2026-11-01，雲端主線，38 張）
+- 43576：逐張讀全文、對回研究稿。改 5 張（`desc-override.json`；只動正文，research／hooks／input 不用同步）：
+  - `desc2:Wolfgang Dauner Quintet|The Oimels`：「〈A Day In A Life〉」→「〈A Day in the Life〉」（Discogs 原盤印錯的標題；披頭四原曲名，研究 a 第二來源 iajo.org 也寫 the Life）。
+  - `desc2:Oscar Peterson|Motions and Emotions`：刪「Till Brönner 認為它說不定是一張完美的器樂專輯。」（單源評價句，出自廠方重發頁）。
+  - `desc2:Jerry Goodman & Jan Hammer|Like Children`：刪「當年的評論把它的氣氛形容為溫暖放鬆，同時又不安地探索。」（單一刊物 1975 年評語，媒體評語整句不寫）。
+  - `desc2:Gabor Szabo|Jazz Raga`：刪「它後來累積出長久的小眾崇拜。」（單一樂評網站的評價）。
+  - `desc2:Michał Urbaniak…|We'll Remember Komeda`：「他的波蘭夥伴在西德」→「他的夥伴們在西德」（陣中 Attila Zoller 是匈牙利人，研究 e）；「與 Seifert 的兩把小提琴」→「與 Zbigniew Seifert 的兩把小提琴」（首次出現補全名）。
+- 其餘 33 張逐張審過，未改字。媒體名、媒體榜單名次、「據說／據傳」全文 grep 0。
