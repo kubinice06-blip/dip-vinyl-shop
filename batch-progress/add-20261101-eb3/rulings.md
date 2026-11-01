@@ -47,3 +47,15 @@
 - 51346：moodGuess 存疑（僅供參考，不作汰卡依據）：Skleroptak（大樂團加拉丁打擊與鍵盤、吉他，可能比預估更躁更暖）、Question Mark（有電鋼琴與吉他，電氣化程度比『抽象後 bop』高）、W sferze dotyku（free bop 語彙，未必無調性）；其餘五張相符。
 - 51347：本組 8 張皆原創錄音室／廣播室專輯，無選輯、無重複卡、無建議移除。MB 首發年為重發年的卡（2004／2006）本組沒有，8 張年份與 Discogs 原盤一致（Bliziński 的 The Wave MB 無首發年，取 Discogs 1980）。
 - 51348：資料限制：樂評幾乎取不到（culture.pl 403、pl.wikipedia 專輯條 404），WebSearch 用 3 次；聲音 facts 以 Discogs credits（編制、效果器、錄音地）、曲長與風格標籤為主，各卡 notes 已標寫作層限制。
+
+## 研究 b 組
+- 51311：《Lola》label 推翻卡單。原盤是英國 Decca 1964（LK 4644／SKL 4644，倫敦 Decca 3 號錄音室，Mike Vernon 製作），Discogs master 322720 版本表無任何 Muza 版；卡單 label 應改 Decca。年份 1964 成立。署名 Zbigniew Namysłowski Modern Jazz Quartet；「第一張鐵幕外錄製的波蘭爵士專輯」出自 Namysłowski 自述與樂評，facts 寫「據其說法」。錄音日期有 1964-08 與 1964-09-18 兩說，facts 寫「夏末」。manual 身分 Discogs 核對無誤。
+- 51312：《Baazaar》年份衝突：MB／iTunes／維基 Polish Jazz 列表 1969，Discogs 全部 Muza 原盤 1970（錄音 1969 年 6 月）。卡單 1969 保留，建議主線評估改 1970；facts 兩說並列。《Jazz Studio Orchestra》同形（Discogs 1970、錄音 1969 年 10 月），卡單 1970 成立。
+- 51313：《Torpedo》年份：Discogs master 掛 1972（主發行為立體聲重發），但同 master 有 1970 Muza 單聲道 XL 0657，pl.wikipedia 亦 1970，卡單 1970 成立。
+- 51314：《Somnambulicy》manual 身分核對：Discogs master 1434460／release 12625146 盤名、1961、Muza L 0348 相符；10 吋 8 曲，列正規 LP。封面署名 Warska 與 Kurylewicz 三重奏／四重奏。
+- 51315：moodGuess 存疑（僅供參考，不作汰卡依據）：Torpedo（有電吉他、電貝斯、bongo 的律動底，Discogs 標 Jazz-Rock，不是靜態疏離）、Rien ne va plus（翻唱 Bacharach／披頭四／bossa nova，旋律好記、偏暖亮，卡單「偏冷」存疑）、Heart（Discogs 標 Free Jazz，與「旋律抒情清楚」有距離）、Baazaar（Discogs 標 Modal／Easy Listening）。
+- 51316：8 張皆原創錄音室專輯，無選輯、無重複卡、無建議移除。facts 不採單源且互相矛盾者：Namysłowski 專輯是否全為自作曲（everythingjazz 與 Discogs 曲目不一致）。〈Serce Muniaka〉致敬 Muniak 由曲名推得，Discogs 樂手名單無 Muniak，寫作層勿寫他參與。
+- 51317：資料限制：樂評幾乎取不到（culture.pl、Discogs 網頁、AllMusic 403；Wikipedia API 限流，改 WebFetch）；WebSearch 用 3 次。聲音 facts 以 Discogs credits（編制、錄音地與月份）、曲長與維基為主，「聲音一句」多為由編制推得的描述。
+
+## 主線（研究層推翻後）（51371–）
+- 51371：照研究 b 組，《Lola》原盤是英國 Decca 1964（LK 4644／SKL 4644，倫敦錄音），卡單 label 由 Polskie Nagrania Muza 改 Decca；仍收（波蘭樂手、Namysłowski 60 年代代表作）。《Baazaar》年份維持 1969（MB／Polish Jazz 系列表），Discogs 1970 並列於 facts。
