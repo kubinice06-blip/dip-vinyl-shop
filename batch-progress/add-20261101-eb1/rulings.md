@@ -110,3 +110,6 @@
 ## 本批新藝人（無介紹）
 - 34 位全部沒有介紹、也不在排隊批次或別名鍵。名冊 `batch-progress/artist-intro/roster-eb1.json`（tier D、addedBy add-20261101-eb1），progress.json 追加 **ar-d-241**（state cut，34 位，未超過 45 不開溢出號）。補洞寫作由調度另派工作階段跑。
 - Yancy Körössy、Cvartetul de Jazz Paul Weiner、Marius Popp、Aura Urziceanu、Dan Mîndrilă、Johnny Răducanu、Guido Manusardi、Ramon Tavernier / Cătălin Tîrcolea、Cătălin Tîrcolea、Ion Baciu Jr.、Harry Tavitian & Corneliu Stroe、Harry Tavitian & Orient Express、Mircea Tiberian、Anca Parghel、Dusko Goykovich、Trumpets & Rhythm Unit、Bora Roković、Jack Dieval、Jazz Orkestar Radio-Televizije Beograd、Marković-Gut Sextet、Lala Kovačev Group、Lala Kovačev、B.P. Convention、Zagreb Jazz Quartet、Toranj 77、Birdland、Petar Ugrin、Stjepko Gut & Big Band RTB、Jazz Focus 65、Septet Rousse、Lyubomir Denev Jazz Trio、Vesselin Nikolov and White, Green and Red、Focus Jazz Quartet、Theodosii Spassov & Stefan Moutafchiev。
+
+## 情緒評分（score-eb12）
+- 47080：Opus 1 支照 `RULES.md`＋BRIEF 打 40 張（`batch-progress/mood-axes/score-eb12/`，與 eb2 共用目錄），主線逐張看過 why 與研究稿，未改值。八格：雀躍 23、冷冽 8、放鬆 6、平靜 2、暴躁 1、恍惚／頹靡／沸騰 0；conf high 0／mid 25／low 15（國營廠盤無樂評，聲音只靠編制推）。`merge` → `build-priors` → `build-scale v0` → `build-card-moods`：錨點 104/104 同格，座標 22,390/22,390。不算落格率。

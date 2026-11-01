@@ -123,3 +123,6 @@
 ## 本批新藝人（無介紹）
 - 39 張 30 個掛名，扣掉已有介紹的 Syrius，29 位進名冊 `batch-progress/artist-intro/roster-eb2.json`（tier D、addedBy add-20261101-eb2），progress.json 追加 **ar-d-242**（state cut，29 位）。補洞寫作由調度另派工作階段跑。
 - György Szabados、György Szabados & MAKUZ、Binder Quintet、Mihály Dresch Quartet、Fermáta、Grencsó Kollektíva、Jazz Q、Károly Binder、Energit、The Super Trio、Béla Szakcsi Lakatos、Gonda Sextet、Tomsits Jazz Group、Csaba Deseő Jazz Quintet、Gusztáv Csík Quartet、Bergendy、Dimenzió、Tamás Berki & Shabu-Shabu、Veronika Harcsa、Karel Velebný & SHQ、Laco Déczi、Jiří Stivín & Co. Jazz System、Jiří Stivín & Pierre Favre、Rudolf Dašek、Emil Viklický、Karel Růžička、Gustav Brom、Gabriel Jonáš、Eva Olmerová。
+
+## 情緒評分（score-eb12）
+- 47180：Opus 1 支照 `RULES.md`＋BRIEF 打 39 張（與 eb1 共用 `score-eb12/`），主線逐張看過 why，未改值。八格：雀躍 10、冷冽 8、暴躁 8、放鬆 7、沸騰 5、恍惚 1、平靜／頹靡 0；conf mid 2／low 37。自由爵士／前衛類（Szabados 三張、Binder 兩張、Stivín 兩張、Dašek《Dialogy》、Grencsó、Jazz Q《Coniunctio》）照 RULES 全判躁＋冷，落冷冽或暴躁。錨點 104/104 同格，座標 22,390/22,390。不算落格率。
