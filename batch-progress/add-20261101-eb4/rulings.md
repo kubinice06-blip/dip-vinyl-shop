@@ -65,3 +65,6 @@
 - **51409** 技術：維基 API 對代理端 429，改用 WebFetch 讀維基；WebSearch 用 3 次（Chizhik、Saarsalu、Paulus）。俄文專名在 facts 一律以〈〉包起，來源網址已百分號編碼，避免 QA 非拉丁亂碼警示。
 - **51410** 英文曲名（如 Honeysuckle Rose、Moonbeams）Discogs 未登錄，屬推定，facts 與 notes 已標，寫作層請用原文曲名。
 - 51476：研究 a 組：Леонид Чижик《Reminiscences》是 1980 年莫斯科與列寧格勒音樂會的雙 LP，Чижик 的獨奏即興代表作本來就是音樂會錄音，照 Ganelin 先例收、`exceptionReason` 寫明，年份取 Discogs／英文維基 1981。Джаз-оркестр Иосифа Вайнштейна《Ленинградский джаз-оркестр》研究證實是早年錄音的 1978 重發（錄音年互相矛盾），不是正規新錄錄音室專輯，**汰**（卡單、研究 a 稿同步刪）。Бриль《Утро Земли》年份維持 Discogs 1978。eb4 定案 **38 張**（蘇聯 18、東德 20）。
+- **51448**　主線汰 Krug／Modern Soul Band／Für Fenz 後，e 組補 3 張：Wroblewsky《Swinging Pool》（年份 de.wikipedia＋MB 1986、Discogs 1987，卡單 1986 留）、Modern Jazz Big Band 65 同名盤、Brüning 1982 個人盤。研究稿已刪舊 3 張，key 順序照卡單。
+- **51449**　Modern Jazz Big Band 65 同名盤**是現場錄音**（Discogs 備註 recorded live 1965-01-22 Berlin，單聲道，Amiga 8 50 054），與 Krug 合作盤是同一場演出的兩半。建議開 `releaseException`；年份 Discogs／MB 1966、de.wikipedia 1965，卡單 1966 留。
+- **51450**　Brüning 1982 個人盤：錄音室盤（Discogs 無錄音日期），13 首標準曲／流行歌配 Studio-Orchester 與弦樂，Petrowsky 客串長笛、上低音薩克斯風並寫說明；爵士濃度中等。
