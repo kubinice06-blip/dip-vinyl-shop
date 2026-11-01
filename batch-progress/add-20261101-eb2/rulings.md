@@ -33,6 +33,9 @@
 - **47105**：Binder Quintet 年份英文維基 1982，其餘 1983，採 1983；Discogs 全曲作曲記 Dresch，單一來源，用「記為」。
 - **47106**：Mozdulatlan Utazás 即 BMC／classical-music 的《Riding the Wind》（Fonó FA-084-2 同 November Music NVR 2003-2）；已在 facts 兩個號都寫。
 - **47107**：Grencsó《1988-89》資料極薄（只有 Discogs＋維基目錄），status thin；Adyton 001／1990 為 Discogs 單一來源；moodGuess「冷」無聲音證據，列存疑。
+- **47108**：主線採我的建議汰 Pege《Pege》與 Dresch《...Folyondár...》，原位換入 Fermáta《Huascaran》與 Jazz Q《Symbiosis》（MB 釘住）；兩筆舊研究已自 a 檔移除。
+- **47109**：Fermáta《Huascaran》年份：錄音 1977 年 6 月、封面與 ℗ 皆 1977、斯洛伐克維基／MB／Apple 1977；Discogs master 與英文維基 1978 源自最早的 Gramofónový klub 會員版壓於 1978。裁定卡片年份保留 1977，實際上市日查不到。〈80 000〉地震死亡人數說法僅 Jazz Music Archives 單一來源，只寫『曲名取自地震』。
+- **47110**：Jazz Q《Symbiosis》1973 年 3–10 月錄、1974 Supraphon；moodGuess 的「冷、重」無聲音證據（鍵盤＋英語女聲＋大鍵琴／管風琴，旋律性強），列存疑。全組現為 8 張：full 7、thin 1（Grencsó）。
 - 本組 8 張：full 7、thin 1；facts 7→8 至 9 條皆 https；推翻策展層：Pege 非單一錄音室盤、MAKUZ 盤無合唱、Dresch Folyondár 為現場盤。
 - **47117**　（換卡）Bass On Top／Derby 經主線汰除，研究稿改為 Károly Binder《Kontinentspiel》與 Energit《Piknik》。
 - **47118**　Binder《Kontinentspiel》：Discogs 1989（Krém SLPX 37210），影片說明 1986，保 1989。實為單人多樂器（鋼琴、豎琴、打擊樂、人聲）加踢踏舞者的長篇自由即興，curatorWhy「鋼琴／樂團」不準；moodGuess 存疑（躁、輕與無鼓長篇不符，應偏靜）。thin。
