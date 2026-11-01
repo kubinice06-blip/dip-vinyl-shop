@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-01｜dip-vinyl-shop｜藝人介紹 ar-d-245（鐵幕爵士 eb5：MPS／SABA＋東歐移民西方錄音）上線 21 位
+
+- **結果**：21 位全上架（16 full、5 thin），skipped 0。補洞 3 組 Sonnet（搜尋 99 次）、寫作 2 組 Opus、qa-artist gap／out 皆 0 處；pubIssues 0。
+- **審稿**：主線修 3 位（Hans Koller 評價主詞改 MPS、刪獎項起始年與「復出」句；Joachim Kühn 評價主詞改 Bechstein；Elek Bacsik 結尾改寫）。維基預抓錯頁 1（Herbolzheimer→「Brass」）作廢。細節見 `batch-progress/artist-intro/ar-c-rulings.md`「ar-d-245」。
+- **主要檔案**：`desc-tools/batches/artist/{facts,research,output}/ar-d-245-*`、`progress.json`（ar-d-245 published）、`data/artist-intros/*`（6,516 位）、`batch-progress/eastbloc-jazz-20261101/PLAN.md`。
+- **驗證**：21/21 鍵在分片中可讀回；ar-d-243／244 開工時 main 上尚未 cut，本工作階段未接。
+
 ### 2026-11-01｜dip-vinyl-shop｜鐵幕爵士＋MPS 策展線 eb1（Kőrössy＋羅馬尼亞＋南斯拉夫＋保加利亞）＋eb2（匈牙利＋捷克斯洛伐克）上線 79 張
 
 - **改動**：照 `batch-progress/eastbloc-jazz-20261101/PLAN.md` 跑完兩批（策展 4、研究 5×2、鉤子 2×2、寫作 2×2、主線審稿、試聽、封面目視、三軸、頂點、寫入、子曲風、情緒評分、藝人介紹名冊）。
