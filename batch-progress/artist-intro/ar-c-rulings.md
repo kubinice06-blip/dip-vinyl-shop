@@ -1228,3 +1228,20 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 裁定：《Jazz Forum》讀者票選名次（Bartkowski、Ścierański、Bliziński、Sojka、Ewa Bem）一律不寫——媒體名不進正文，波蘭也無 Swing Journal 那種店主特准例外；Warska 與 Ewa Bem 都有「波蘭爵士第一夫人」的稱號且各有出處，兩篇都保留。Bliziński「波蘭第一位世界級爵士吉他手」（只見維基家族）不寫；Sadowski 2019 年後的指控與起訴不寫；Urbaniak 1971 年蒙特勒獎（en 維基單源）不寫；Kosz 死因不寫。Sojka 2025 年 8 月卒於索波特（pl／en 維基＋報導兩源）、Wróblewski 2024 年 5 月卒（維基＋Polskie Radio）照寫。
 - 跨鍵：Kurylewicz（五重奏／本人）、Trzaskowski（五重奏帶音樂取向／六重奏寫 Curson 客座）、Namysłowski 兩個樂團鍵（本人已有介紹）、Karolak（本人／三人合作）、Sadowski（本人／風琴樂團）切入角度各異。Jerzy Milian Trio、Trzaskowski Quintet 因無本人鍵，帶簡短生平。
 - pubIssues：Ewa Bem 專輯年（1987／1986）、Warska《Somnambulicy》Piwnica 開設年、Zabiegliński「伊拉克三年」、《Na kosmodromie》Urbańska「是他的妻子」（1990 年代初才結婚）、Sojka《Blublula》「卡托維治」譯名等。
+
+## ar-d-244（2026-11-01，鐵幕爵士 eb4 補介紹：蘇聯 Melodiya 爵士＋東德 Amiga 爵士）
+
+- 31 位排入，31 位全上架（24 full、7 thin：Кузнецов／Громин、Tiit Paulus、Džässkvartett «Tallinn»、Джаз-хорал Киладзе、Rolf Kühn Quintett、Schönfeld & Katzenbeier、Modern Jazz Big Band 65），skipped 0。補洞 4 組（10／10／10／1），搜尋合計 50 次。
+- 維基預抓：scratchpad 版 `artist-wiki.mjs` 的 `LANGMAP`（ru／et／lt／az／hy／ka，德文名預設 de）與 `TITLES`（Бриль、Чекасин、Zentralquartett、Petrowsky、Klaus Lenz 手指定）。查無頁 7 位由補洞自查。
+- 推翻主線特注：Леонид Винцкевич 生於俄羅斯庫爾斯克（兩份維基），不是愛沙尼亞人；正文寫「俄羅斯鋼琴手」。Synopsis 確認為 Petrowsky／Bauer／Gumpert／Sommer；Conrad Bauer 與弟 Hannes 為不同人。Tatevik Oganesyan 各源拼法不一（Hovanesian／Hovhannisyan），以外號與樂團認定同一人。
+- **主線審稿**（修 2 位）：
+  1. Ulrich Gumpert：刪「被視為東德自由爵士最重要的樂團之一」（與 Synopsis 鍵重複）；「德國爵士獎（又稱 Albert-Mangelsdorff-Preis）」改寫獎名 Albert-Mangelsdorff-Preis，避免與 2021 年起的聯邦 Deutscher Jazzpreis 混淆；刪「九〇年代」壓回 249 字。
+  2. Modern Jazz Big Band 65：「領軍的現場大樂團」語意不清，改「領軍的大樂團，留下單聲道現場錄音」；精簡壓回 thin 160 字。
+- 裁定：Schulze 訃聞「比任何人都更形塑東德爵士」、Vyšniauskas「最深刻原創」、Studio 4「東德第一支定期演奏爵士的樂團」皆單源不寫；Sommer 國安線人爭議與各人單源獎項不寫；Kiladze 地位句寫「重發廠牌稱…」；ERR 稱 Paulus「傳奇」不用。Petrowsky 2023 年卒（en 維基＋Free Jazz Blog 訃文）照寫，不寫日。Klaus Lenz 在世與否未證，不寫已故／至今。
+- 跨鍵：Saarsalu（二重奏／四重奏／Tallinn 四重奏）、Oganesyan（本人／協奏曲合作）、Gumpert（本人／Workshop Band）、Schönfeld（本人／與 Katzenbeier）、Lenz（兩個大樂團＋MJBB 65）、Brüning（本人／與 Fischer／與 Petrowsky）、Petrowsky（Studio 4／與 Brüning）切入角度各異；Rolf Kühn Quintett 只寫《Solarius》編制。
+- pubIssues：《Джанго》《Утро Земли》《Севиль》年份、Schulze《Viertens》「低音薩克斯風」應為上低音、Studio 4 兩條無據、Synopsis「1984 年續演」措辭、Fischer《Kombination》「《Eolomea》第一部配樂」、Brüning＆Fischer 專輯年等。
+
+## 鐵幕爵士 eb3／eb4 補介紹（ar-d-243～244）小結
+
+- 62 位排入 2 批，上架 62 位、skipped 0；審稿合計修 5 位。補洞搜尋 105 次（WebSearch 每位 ≤2 的上限只有 3 位小幅超過）。主線 WebSearch 0 次。
+- 當地語言預抓再次證明有用（243 有頁 29／31、244 有頁 24／31）；`LANGMAP`／`TITLES` 兩個環境變數值得併進正式 `artist-wiki.mjs`。
