@@ -32,13 +32,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 1280,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 1280）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Pablo×Tubby 受讚 dub 盤，Rock of Ages 比肩早期名作；Shanachie 流通；器樂 dub",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 1280）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -108,14 +117,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 2,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 2）；主線：Last.fm listeners 2（盤名彎引號與 Shanachie 版名對不上）失真；Augustus Pablo 的正規專輯、reggae 圈知名、圈外少人知，給 4（§0.8）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Rockers 廠中期作，非代表；自家廠後 Shanachie 再發；melodica 器樂偏柔",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 2）；主線：Last.fm listeners 2（盤名彎引號與 Shanachie 版名對不上）失真；Augustus Pablo 的正規專輯、reggae 圈知名、圈外少人知，給 4（§0.8）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -177,13 +195,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 29,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 29）；主線：Last.fm listeners 29（盤名省略號對不上）失真；Pablo dub 正典之一、上串流，給 4（§0.8）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Mundell 名盤的 dub 伴侶，roots dub 常被推薦；Greensleeves/RAS 流通；dub",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 29）；主線：Last.fm listeners 29（盤名省略號對不上）失真；Pablo dub 正典之一、上串流，給 4（§0.8）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -251,13 +278,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 150,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 150）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Dub Me Crazy 系列公認最佳之一，John Peel 推動；Ariwa 獨立長銷；實驗 dub",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 150）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -326,14 +362,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 483,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 483）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：後期 lovers dub 企劃作；Ariwa/RAS 正常流通；lovers rock 底柔和",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 483）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -403,9 +448,18 @@
     "obscurity": 4,
     "accessibility": 3,
     "listeners": 5,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 5）；主線：Last.fm listeners 5（長盤名對不上）失真；Ariwa 系正規發行並上串流，給 4（§0.8）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Bob Andy 節奏的 dub 再造，非主線；I-Anka 小廠、2014 再版；dub",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 5）；主線：Last.fm listeners 5（長盤名對不上）失真；Ariwa 系正規發行並上串流，給 4（§0.8）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -477,9 +531,18 @@
     "obscurity": 3,
     "accessibility": 3,
     "listeners": 21783,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 21783）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Kaya 曲目 dub 版，Tubby 混音；Third World 英廠流通；器樂 dub",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 21783）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -547,13 +610,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 3,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 3480,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 3480）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Miller 個人代表作，標題曲名曲；牙買加 Jam Sounds 本地流通；roots 人聲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 3480）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -616,13 +688,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 3581,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 3581）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Pablo 製作的 cult roots 和聲盤、唯一專輯；Rockers 小廠，2018 再發；和聲 roots",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 3581）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -687,13 +768,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 123,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 123）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Wackie's 代表 dub 盤，Basic Channel 再發系列；布朗克斯小廠原盤；lo-fi dub",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 123）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -762,13 +852,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 12215,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 12215）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Love Joys 代表作、Wackies lovers 名盤；小廠絕版 20 年後再發；lovers rock",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 12215）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -836,14 +935,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 13272,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 13272）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Brutal Out Deh 後第二張；Nighthawk 美國獨立正規流通；和聲 roots",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 13272）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -909,14 +1017,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 854,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 854）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：早期 dancehall 穩定作；Midnight Rock 英國小廠；人聲 roots/dancehall",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 854）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -983,14 +1100,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 7067,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 7067）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：二線穩定作；Jah Guidance/VP 流通；early dancehall",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 7067）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1057,13 +1183,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 3,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 38626,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 38626）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Trojan 發行，非 Englishman/Bounty Hunter 級代表；正規流通；dancehall",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 38626）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1131,14 +1266,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 7178,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 7178）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Live & Learn 中期作；美國獨立廠流通；roots 人聲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 7178）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1204,14 +1348,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 2329,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 2329）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：含同名熱門單曲；Black Roots 自家小廠；roots/lovers",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 2329）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1275,13 +1428,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 3,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 16589,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 16589）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：同名曲為 Minott 招牌歌之一；Black Roots 後有再發；roots 人聲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 16589）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1343,14 +1505,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 1011,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 1011）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：含最大熱門〈Buy Off the Bar〉；牙買加 Power House 小廠；人聲+dub 延伸",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 1011）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1417,14 +1588,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 3904,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 3904）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Linval 時期作，Fire House Rock 更具代表；Jah Guidance/VP；Scientist dub 混",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 3904）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1493,9 +1673,18 @@
     "obscurity": 4,
     "accessibility": 3,
     "listeners": 7,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 7）；主線：Last.fm listeners 7（長盤名對不上）失真；Rockers International 正規發行，給 4（§0.8）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Rockers All Stars dub 盤；英國小廠原盤；器樂 dub",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 7）；主線：Last.fm listeners 7（長盤名對不上）失真；Rockers International 正規發行，給 4（§0.8）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1560,12 +1749,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 116,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 116）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Act 1 續作；Wackie's 小廠、Basic Channel 再發；lo-fi dub",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 116）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1636,9 +1834,18 @@
     "obscurity": 4,
     "accessibility": 3,
     "listeners": 3,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 3）；主線：Last.fm listeners 3（盤名 Dubd'sco 撇號對不上）失真；Bunny Wailer 自營 Solomonic 正規發行，給 4（§0.8）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Sings the Wailers 的 dub 版；Solomonic 自家廠、後合輯再發；dub",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 3）；主線：Last.fm listeners 3（盤名 Dubd'sco 撇號對不上）失真；Bunny Wailer 自營 Solomonic 正規發行，給 4（§0.8）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1700,14 +1907,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 377,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 377）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：類比時期穩定作；Tuff Gong 牙買加本地壓；情歌與社會歌｜主線：Tuff Gong 為牙買加正規大廠，非私壓，錨點 3",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 377）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1767,13 +1983,22 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 456,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 456）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Prophet 代表作，Junjo+Roots Radics；Greensleeves 正規英國流通；roots 人聲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 456）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1843,14 +2068,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 113,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 113）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：早期自家盤，僅六首；Black Roots 小廠；lovers/roots",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 113）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1913,14 +2147,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 36,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 36）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Tony Tuff 首張個人盤；Black Roots 小廠；roots 人聲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 36）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1985,14 +2228,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 946,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 946）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：早期 Junjo 時期盤；Jah Life 小廠、2025 再壓；dancehall",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 946）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2053,13 +2305,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 2026,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 2026）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Levy 首張專輯、Junjo 早期 dancehall 關鍵作；Burning Sounds 英國流通；人聲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 2026）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2123,14 +2384,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 285,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 285）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：早期盤，Scientist 混音；JB Music 小廠；dancehall 人聲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 285）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2191,13 +2461,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 2135,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 2135）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Rico 在 2 Tone 的代表個人作；Chrysalis 體系但商業有限；長號器樂 reggae",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 2135）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2265,14 +2544,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 92,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 92）；主線：Last.fm listeners 92（Apple／Last.fm 寫作 Supersize）失真；Wrasse 正規發行並上串流，給 4（§0.8）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Prince Fatty 第二張，評價中等；Mr Bongo 正規；復古 reggae 人聲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 92）；主線：Last.fm listeners 92（Apple／Last.fm 寫作 Supersize）失真；Wrasse 正規發行並上串流，給 4（§0.8）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2337,12 +2625,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 5118,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T03:21:40Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 5118）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Nostalgia 77 曲 dub 化企劃；Tru Thoughts 正規；長篇 dub",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T03:21:40Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 5118）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {

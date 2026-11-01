@@ -36,9 +36,18 @@
     "obscurity": 4,
     "accessibility": 3,
     "listeners": 3180,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 3180）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：自營小廠 drone 佳作；微型廠牌、有串流；緩慢持續 drone",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 3180）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -106,13 +115,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 3,
     "listeners": 8705,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 8705）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Celer 常被推薦的代表作之一；Home Normal 限量 500、有串流；67 分長篇 drone",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 8705）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -181,12 +199,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 1931,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 1931）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：中期佳作；限量 500 黑膠小廠、有串流；shoegaze 味氛圍",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 1931）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -252,13 +279,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 3853,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 3853）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Kompakt Pop Ambient 定義作之一、2024 官方再發；正規廠；催眠 drone 節奏",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 3853）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -325,13 +361,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 3,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 11096,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 11096）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Hollie Kenniff 代表作；Western Vinyl 正規流通；溫和吉他氛圍",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 11096）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -399,14 +444,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 6631,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 6631）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：第二張 Western Vinyl 佳作；正規流通；夢幻合成器與弦樂",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 6631）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -471,13 +525,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 3,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 11948,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 11948）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：McGuire 個人代表作、評論強；Editions Mego 正規；溫暖吉他循環",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 11948）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -547,12 +610,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 8236,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 8236）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：佳作、RA 稱最易入口；Editions Mego；末曲 20 分長篇",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 8236）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -620,13 +692,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 3486,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 3486）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Schneider 首張代表作；Third Man 正規；單一 pedal steel 長音處理",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 3486）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -692,13 +773,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 31988,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 31988）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：SUSS ambient country 代表作；Northern Spy 再發；柔和西部氛圍",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 31988）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -764,13 +854,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 3,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 15066,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 15066）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Eno/Lanois 合製、infinite guitar 首秀，第四世界邪典名盤；EG 正規；柔和",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 15066）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -838,14 +937,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 200,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 200）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：兩人二度合作、評價不錯非代表；自營小廠、聽眾極少；旋律歌曲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 200）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -915,13 +1023,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 4,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 8100,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 8100）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：中期器樂佳作；自營廠有串流；Guthrie 招牌旋律吉他",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 8100）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -985,15 +1102,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 2,
+    "obscurity": 2,
     "accessibility": 3,
     "listeners": 11499,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 11499）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：大牌合作但評價混雜；Columbia 國際發行；兩面長篇組曲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 11499）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1060,13 +1186,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 56223,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 56223）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：psydub/psychill 場景代表盤；Aleph Zero 小廠、圈內流通；可舞 downtempo",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 56223）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1133,13 +1268,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 9324,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 9324）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：以色列 psychill 圈代表作；Aleph Zero 圈內流通；五首逾十分鐘",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 9324）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1200,15 +1344,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 2,
-    "accessibility": 3,
+    "accessibility": 1,
     "listeners": 126003,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/2/3（Last.fm listeners 126003）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Billboard 雷鬼榜冠軍 78 週、藝人代表作；廣泛流通；柔和 dub 雷鬼",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/2/3（Last.fm listeners 126003）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1274,14 +1427,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 2,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 104030,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/2/3（Last.fm listeners 104030）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Halftribe 最受歡迎作之一；Dronarivm 小廠但串流熱；溫暖夏日氛圍",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/2/3（Last.fm listeners 104030）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1346,12 +1508,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 176,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 176）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：佳作；Home Normal 小廠有串流；田野錄音＋模組合成器",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 176）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1417,14 +1588,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 107,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 107）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：合作佳作；Home Normal 小廠有串流；溫和有機氛圍",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 107）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1488,12 +1668,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 129,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 129）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：佳作；Home Normal 小廠有串流；類比氛圍遊走旋律與噪音",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 129）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1559,14 +1748,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 120,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:09:05Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 120）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：佳作；Home Normal 小廠有串流；新古典氛圍流行",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:09:05Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 120）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

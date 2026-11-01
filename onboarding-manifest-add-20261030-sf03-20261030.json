@@ -34,12 +34,21 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 3,
     "listeners": 86340,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 86340）；主線：冷門軸錨點制：代表作、Last.fm 8.6 萬，正常流通；後搖＋電子＋弦管，入耳中等"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：wegf 公認代表作；Human Highway 獨立但國際有一定流通（86k 聽眾）；長篇管弦後搖",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 86340）；主線：冷門軸錨點制：代表作、Last.fm 8.6 萬，正常流通；後搖＋電子＋弦管，入耳中等",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -107,13 +116,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 3,
     "listeners": 26796,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 26796）；主線：冷門軸錨點制：Last.fm 2.7 萬、串流可得；拼貼密度高"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Virgin Babylon 首發、80 分鐘評價高的代表期作；國際流通；拼貼故障管弦",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 26796）；主線：冷門軸錨點制：Last.fm 2.7 萬、串流可得；拼貼密度高",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -180,14 +198,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 1,
+    "obscurity": 3,
+    "accessibility": 5,
     "listeners": 249,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 249）；主線：冷門軸錨點制：Tzadik 正常流通但聽眾少；噪音即興，入耳難"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Eye×Zorn Tzadik 即興合作，非雙方代表；Tzadik 正規獨立廠；噪音前衛拼貼（原 1 方向錯）",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 249）；主線：冷門軸錨點制：Tzadik 正常流通但聽眾少；噪音即興，入耳難",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -253,14 +280,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": null,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸錨點制：Alchemy 1997 小廠，串流未上架"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：山本精一首張個人 CD；Alchemy 極小廠；短曲吉他民謠音響",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸錨點制：Alchemy 1997 小廠，串流未上架",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -322,14 +358,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 4,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": null,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸錨點制：P-Vine 流通、串流可得；歌謠吉他小品"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：羅針盤後重返歌唱之作，中期佳作；P-Vine 正規獨立；雙人小編制歌謠搖滾",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸錨點制：P-Vine 流通、串流可得；歌謠吉他小品",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -397,14 +442,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 1,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 883,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 883）；主線：冷門軸錨點制：P.S.F. 原盤＋2020 重發上串流；高音量迷幻即興"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：High Rise／Ruins／AMT 交會首作，地下迷幻圈有地位；P.S.F. 正規獨立；即興重型迷幻（原 1 方向錯）",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 883）；主線：冷門軸錨點制：P.S.F. 原盤＋2020 重發上串流；高音量迷幻即興",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -471,13 +525,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 152,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 152）；主線：冷門軸錨點制：小廠原盤、重發版上串流；lo-fi 迷幻"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：LSD March 首張全長，Scaruffi 有評；原盤限量 200 張小廠 LP；模糊吉他迷幻",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 152）；主線：冷門軸錨點制：小廠原盤、重發版上串流；lo-fi 迷幻",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -544,15 +607,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 1,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": null,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸錨點制：hatNOIR 串流可得；音響派極簡吉他"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：杉本拓旋律期代表獨奏盤；hatNOIR 正規獨立廠；稀疏獨奏吉他小品（原 1 方向錯）",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸錨點制：hatNOIR 串流可得；音響派極簡吉他",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -619,12 +691,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": null,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸錨點制：自家 Plunk's Plan，串流未上架"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：鈴木ジュンゾ個人作；自家 Plunk's Plan 自主發行；15 分長篇吉他迷幻",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸錨點制：自家 Plunk's Plan，串流未上架",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -689,9 +770,18 @@
     "obscurity": 4,
     "accessibility": 3,
     "listeners": 54,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 54）；主線：冷門軸錨點制：1987 小廠原盤、P-Vine 重發上串流"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：割礼早期迷你專輯；Balcony 極小廠；慢速迷幻搖滾",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 54）；主線：冷門軸錨點制：1987 小廠原盤、P-Vine 重發上串流",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -760,13 +850,22 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 488,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 488）；主線：冷門軸錨點制：串流可得、聽眾少"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：割礼大廠出道、名古屋迷幻代表作；Victor 系正規發行銷量有限；長篇慢迷幻",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 488）；主線：冷門軸錨點制：串流可得、聽眾少",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -837,14 +936,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 4,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 166,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 166）；主線：冷門軸錨點制：小廠、串流可得；歌謠民謠"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：穗高亞希子 F.M.N. 時期作；小型正規獨立廠；安靜民謠彈唱（原 4 方向錯）",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 166）；主線：冷門軸錨點制：小廠、串流可得；歌謠民謠",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -910,12 +1018,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 3,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 3）；主線：冷門軸錨點制：Important 限量，串流未上架"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：鈴木ジュンゾ團體作；Important 正規獨立廠；吉他迷幻搖滾",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 3）；主線：冷門軸錨點制：Important 限量，串流未上架",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -977,13 +1094,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 81,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 81）；主線：冷門軸錨點制：1971 Polydor 原盤、串流可得，聽眾少；藍調迷幻吉他"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：「日本 Hendrix」陳信輝個人代表作、日迷幻名盤；Polydor 正規；重吉他迷幻長曲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 81）；主線：冷門軸錨點制：1971 Polydor 原盤、串流可得，聽眾少；藍調迷幻吉他",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1052,13 +1178,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 204,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 204）；主線：冷門軸錨點制：1973 Denon 原盤、串流可得；兩面長曲"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Far East Family Band 前身、日本迷幻前衛名盤常被列舉；Denon 正規；兩首 18–20 分長曲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 204）；主線：冷門軸錨點制：1973 Denon 原盤、串流可得；兩面長曲",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1127,14 +1262,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 17,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 17）；主線：冷門軸錨點制：P.S.F. 原盤、Black Editions 重發上串流；原聲儀式即興"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：南條／河端民族儀式計畫首作；P.S.F. 正規獨立；原聲民族樂器儀式長曲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 17）；主線：冷門軸錨點制：P.S.F. 原盤、Black Editions 重發上串流；原聲儀式即興",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1198,12 +1342,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": null,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸錨點制：Denon 原盤、串流可得；尺八＋樂團"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：三橋貴風尺八本曲配管弦樂；Denon 正規；冥想式尺八長篇",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸錨點制：Denon 原盤、串流可得；尺八＋樂團",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1270,15 +1423,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 8,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 8）；主線：冷門軸錨點制：Columbia 原盤、串流可得；電子琴輕音樂"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：電子琴翻奏西洋流行曲；Columbia 正規；旋律直白（原 4 方向錯）",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 8）；主線：冷門軸錨點制：Columbia 原盤、串流可得；電子琴輕音樂",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1342,12 +1504,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 147,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 147）；主線：冷門軸錨點制：SoFa 小廠、串流可得"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：藤枝伸介團現場完整版；SoFa 正規小型獨立；民族融合爵士即興",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 147）；主線：冷門軸錨點制：SoFa 小廠、串流可得",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1414,13 +1585,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 2,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 2）；主線：冷門軸錨點制：小廠、串流可得、聽眾極少；長篇迷幻"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Boredoms 創團吉他手個人作；Compare Notes 極小廠；迷幻吉他搖滾",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 2）；主線：冷門軸錨點制：小廠、串流可得、聽眾極少；長篇迷幻",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1503,14 +1683,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 4,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 73,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 73）；主線：冷門軸錨點制：小廠、串流可得；吉他薩克斯風二重奏"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Gendel 與笹久保伸的疫情遠距合作；Carnet 小廠但 Gendel 有國際流通；安靜私密吉他薩克斯風（原 4 偏高）",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 73）；主線：冷門軸錨點制：小廠、串流可得；吉他薩克斯風二重奏",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1594,12 +1783,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 1,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：冷門軸錨點制：海外小廠、串流可得"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：OWKMJ 主腦第三張個人作；Bruit Direct 正規實驗獨立廠；平直念唱的偏離流行",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：冷門軸錨點制：海外小廠、串流可得",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1681,14 +1879,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 5,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 3,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-30T05:37:49Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 3）；主線：冷門軸錨點制：London 原盤（廣告歌出道的民謠搖滾），串流未上架"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Buzz 首張、含 33 萬張熱賣〈ケンとメリー〉；London 正規主流；民謠流行（原 5 方向錯）",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-30T05:37:49Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 3）；主線：冷門軸錨點制：London 原盤（廣告歌出道的民謠搖滾），串流未上架",
+     "rarity": "epic"
+    }
    },
-   "rarity": "epic",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

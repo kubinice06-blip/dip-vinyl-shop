@@ -32,13 +32,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 2347,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:05:32Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 2347）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Valgeir 睽違五年的主要個人作、評價最佳；Bedroom Community 正規；古大提琴疊層無主題 drone",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:05:32Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 2347）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -106,15 +115,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": null,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T20:05:32Z",
-    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典卡 Last.fm 掛名分散（worker 以指揮掛名查無；作曲家掛名僅 57 listeners），照 §0.7／§0.8 錨點：瑞士 Accord 1988 原盤、串流未上架，屬收藏家領域"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Scelsi 管弦作品世界首錄全集首碟、作曲家友人指揮，Scelsi 錄音史要件；Accord 正規；微分音長音（原 2 方向錯）",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-23T20:05:32Z",
+     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典卡 Last.fm 掛名分散（worker 以指揮掛名查無；作曲家掛名僅 57 listeners），照 §0.7／§0.8 錨點：瑞士 Accord 1988 原盤、串流未上架，屬收藏家領域",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -175,15 +193,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": null,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-10-23T20:05:32Z",
-    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典卡 Last.fm 掛名分散（worker 以指揮掛名查無），照 §0.7／§0.8 錨點：瑞士 Accord 1990 原盤、串流未上架，屬收藏家領域"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：同套 Accord 世界首錄第三碟，Hymnos/Chukrum 首錄；正規古典通路；銅管扭結微分音",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-10-23T20:05:32Z",
+     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典卡 Last.fm 掛名分散（worker 以指揮掛名查無），照 §0.7／§0.8 錨點：瑞士 Accord 1990 原盤、串流未上架，屬收藏家領域",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -245,12 +272,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 317,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:05:32Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 317）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Gordon 七支低音管長篇、Timber 姊妹作非代表；Cantaloupe 正規；無旋律連續音型簧片音團",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:05:32Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 317）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -319,12 +355,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 132,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:05:32Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 132）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Bára 第四張、Dacapo 首張，圈內好評；丹麥國家古典廠數位正規；低音提琴扭曲泛音極端音域",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:05:32Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 132）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -392,12 +437,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 115,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:05:32Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 115）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：一小時單曲低音提琴＋電子；Sono Luminus/ESP 正規；液化低頻、攻擊性噪音",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:05:32Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 115）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -464,13 +518,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 6701,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:05:32Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 6701）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Maria W Horn 突破作、圈內最受注目；Hallow Ground 獨立正規可串流；雙四重奏＋管風琴 drone",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:05:32Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 6701）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -536,13 +599,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 2432,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:05:32Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 2432）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Jensen 首張個人作、含 Jóhannsson 合作曲，圈內好評起點；Miasmah 小廠限量、數位可聽；大提琴迴圈疊層 drone｜主線：Miasmah屬正規小眾廠、首發即有數位→3",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:05:32Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 2432）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -611,12 +683,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 589,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:05:32Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 589）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Singer 三部曲首章、管風琴新作；Touch 正規實驗廠；多架管風琴長音",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:05:32Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 589）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -683,12 +764,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 1,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:05:32Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：機器以合掛名查得 listeners 1（失真）；以 Lustmord 單掛名重查 488，obscurity 同為 5"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Lustmord×Horvath 拆解 November 的企劃作；Sub Rosa 正規（listeners 異常低疑為標記問題）；極簡鋼琴＋暗黑音景",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:05:32Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 1）；主線：機器以合掛名查得 listeners 1（失真）；以 Lustmord 單掛名重查 488，obscurity 同為 5",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -758,12 +848,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 1423,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:05:32Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 1423）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Fjellström 第二張 Miasmah 個人作；小廠數位可聽；霧狀管弦感惡夢氛圍｜主線：Miasmah屬正規小眾廠、首發即有數位→3",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:05:32Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 1423）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -832,12 +931,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 12588,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:05:32Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 12588）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Lustmord 短片配樂擴充，次於 Heresy 等正典；Nextera 正規；drone＋電影音效",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:05:32Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 12588）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -906,12 +1014,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 2,
     "accessibility": 3,
     "listeners": 4380,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:05:32Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 4380）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Netflix《Dark》終季原聲，追劇族群廣；Lakeshore 正規國際；解體銅木管 Eno 式氛圍",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:05:32Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 4380）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -980,15 +1097,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
+    "classic": 2,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 126,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:05:32Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 126）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Fortitude 第三季（僅 4 集）配樂，Frost 次要作；數位小量發行；冷冽氛圍配樂",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:05:32Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 126）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1055,12 +1181,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 628,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T20:05:32Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 628）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：與 Mosse 的影像裝置聲音專輯；Vinyl Factory 藝術限量；降頻超音波、火燒、田野錄音拼貼",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T20:05:32Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 628）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {

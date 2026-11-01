@@ -33,13 +33,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
-    "accessibility": 3,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
     "listeners": 75904,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 75904）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Runaljod 三部曲終章，團體代表作群；國際流通、大型巡演；北歐民謠吟唱",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 75904）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -109,14 +118,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
-    "accessibility": 3,
+    "obscurity": 2,
+    "accessibility": 2,
     "listeners": 24909,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 24909）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：第六作，非代表作；國際流通；北歐民謠打擊吟唱",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 24909）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -183,14 +201,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 6305,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 6305）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：個人中期佳作；Neurot 正規；鋼琴弦樂哥德民謠",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 6305）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -255,15 +282,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
+    "classic": 2,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 1711,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 1711）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：前作抽人聲器樂版，衍生作；Neurot 正規；新古典 ambient",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 1711）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -329,14 +365,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 2972,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 2972）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：第七作；Neurot 正規；哥德民謠＋drone",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 2972）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -401,13 +446,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 20254,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 20254）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：NSB 早期名作；自發 CDr、SoD/Digitalis 再發後可數位聽；長篇 drone 民謠",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 20254）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -474,9 +528,18 @@
     "obscurity": 4,
     "accessibility": 3,
     "listeners": 7111,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 7111）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：原 22 套 CDr，2012 Ba Da Bing 廣發；三小時 drone 民謠",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 7111）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -542,13 +605,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 66735,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 66735）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Discogs 稱最受歡迎作；原 150 套卡帶、Ba Da Bing 再發可串流；六小時 drone",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 66735）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -622,9 +694,18 @@
     "obscurity": 4,
     "accessibility": 3,
     "listeners": 6927,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 6927）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Blackest Rainbow 小廠 500 套；漫畫冊形式；長篇 drone 民謠",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 6927）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -688,13 +769,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 3,
     "listeners": 21884,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 21884）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Fursaxa 代表作；ATP 正規發行；疊唱迷幻民謠",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 21884）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -763,14 +853,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 699,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 699）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Reverb Worship 極小廠，廠方 Bandcamp 數位可得；鬼魅傳統民謠改編",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 699）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -833,14 +932,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 18781,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 18781）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：第二作；Prophecy 正規；dark folk 加 doom",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 18781）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -907,12 +1015,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 1332,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 1332）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Shark Men 小廠 525 張膠，有數位；兩首慢 dark jazz/post-rock",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 1332）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -980,13 +1097,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 3,
     "listeners": 12550,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 12550）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Radare 最多人聽、口碑最集中的一張，德國 dark jazz 代表；Golden Antenna 小廠 400 張、Bandcamp 可聽；doom 爵士長篇",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 12550）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1057,9 +1183,18 @@
     "obscurity": 4,
     "accessibility": 3,
     "listeners": 6116,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 6116）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：第四張、Twin Peaks 風延續，評價穩定非首選；Golden Antenna 小廠數位可聽；黑暗爵士配樂感",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 6116）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1127,12 +1262,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 907,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 907）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Mansur 第四作、KDE 衍生計畫中期作；Denovali 正規國際通路；烏德琴＋電子黑暗爵士",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 907）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1201,13 +1345,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 3,
     "listeners": 5390,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 5390）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Köhnen 新計畫首作、TFE 最多人聽；Svart Lava 極小廠數位發行；drone 黑暗爵士",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 5390）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1277,12 +1430,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 43,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 43）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：DN 眾多即興作之一；自發行 200 CD＋Bandcamp 數位（非 5：可串流）；36 分鐘靜止 drone",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 43）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1346,12 +1508,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 4,
     "listeners": 62,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 62）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：DN 中期作；Consouling 小廠 LP 300 張、數位可聽；drone＋回授低吼噪音",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 62）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1415,12 +1586,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 139,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 139）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：DN 2025 新作；Utech 188 張限量、數位可聽；合成器 drone＋管風琴儀式感",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 139）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1487,13 +1667,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 63933,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 63933）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：BQ 首作、2009 起部落格推崇的代表作，聽眾最多；Lidar/Denovali 正規；溫柔憂鬱電影氛圍",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 63933）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1562,13 +1751,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 3,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 34722,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 34722）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：第二張、延續首作非突破；Denovali 正規；弦樂氛圍電子",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 34722）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1636,13 +1834,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 3,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 37308,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 37308）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：第三張、Trakl 詩題，評價中等；Denovali 正規；憂鬱電影感氛圍",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 37308）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1708,12 +1915,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 2241,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 2241）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Voigt＋Burger 合作、獲 Exclaim/Textura 好評但非 GAS 正典；Kompakt 正規；慢速哥德 ambient techno",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 2241）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1776,12 +1992,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 532,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 532）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Svarte Greiner 晚期現場作；Miasmah 300 CD、數位可聽；大提琴長音沉思 drone｜主線：Miasmah屬正規小眾廠、首發即有數位→3",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 532）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1849,12 +2074,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 132,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 132）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Elegi 復出第三張；Dronarivm 限量 200、數位可聽；鋼琴大提琴黑暗新古典",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 132）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1922,13 +2156,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 3,
     "listeners": 18662,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 18662）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Skelton 最常被推薦的代表作；原盤私壓 CDR 100 張，Type 正式版可串流；弓弦民謠 drone",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 18662）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1996,12 +2239,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 2473,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T15:44:48Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 2473）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Köner 三部曲中段，正典屬 90 年代極地 drone；Denovali 正規；鋼琴古提琴＋工業暗響",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T15:44:48Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 2473）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {

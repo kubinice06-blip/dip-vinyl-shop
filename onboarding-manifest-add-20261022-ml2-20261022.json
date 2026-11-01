@@ -33,12 +33,21 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 96463,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 4/3/2（Last.fm listeners 96463）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：該計畫最受肯定之作；國際正規發行；慢板夢幻民謠",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 4/3/2（Last.fm listeners 96463）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -104,12 +113,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 1,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 760772,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/1/2（Last.fm listeners 760772）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：終章、評價中等（團員自認非最佳）；Fontana/Capitol 流通；層疊吉他夢幻",
+    "previous": {
+     "classic": 3,
+     "obscurity": 1,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/1/2（Last.fm listeners 760772）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -174,15 +192,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 238631,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 4/2/2（Last.fm listeners 238631）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：最直白流行的一張、非代表作；Fontana/Capitol 流通；清晰英文流行",
+    "previous": {
+     "classic": 4,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 4/2/2（Last.fm listeners 238631）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -246,12 +273,21 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 1,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 617133,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 4/1/2（Last.fm listeners 617133）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：第二張、確立風格；Carpark/Bella Union 國際流通，非入門盤；dream pop",
+    "previous": {
+     "classic": 4,
+     "obscurity": 1,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 4/1/2（Last.fm listeners 617133）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -317,15 +353,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 41965,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/3/2（Last.fm listeners 41965）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：公認最佳一張；Captured Tracks 聲量中等；穀倉錄音夢幻民謠",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/3/2（Last.fm listeners 41965）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -391,15 +436,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 40721,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/3/2（Last.fm listeners 40721）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：唯一全長、瑞典 balearic dream pop 代表；Acéphale 首壓 1000 張、已上串流；熱帶夢幻流行",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/3/2（Last.fm listeners 40721）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -466,12 +520,21 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 1,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 555053,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 4/1/2（Last.fm listeners 555053）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：首張代表作；Fat Possum 國際流通、非入門名單；殘響卧室流行",
+    "previous": {
+     "classic": 4,
+     "obscurity": 1,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 4/1/2（Last.fm listeners 555053）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -536,13 +599,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
     "listeners": 73723,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 4/3/2（Last.fm listeners 73723）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：晚期穩定作、非代表；Matador 流通；拼貼即興氛圍",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 4/3/2（Last.fm listeners 73723）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -607,13 +679,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 2,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 142807,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/2/3（Last.fm listeners 142807）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：突破代表作、廣獲好評；RVNG 國際流通；雙語柔和合成器民謠",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/2/3（Last.fm listeners 142807）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -679,15 +760,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 3,
-    "accessibility": 3,
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
     "listeners": 59814,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 4/3/3（Last.fm listeners 59814）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：4AD 首作評價好但聲量次於前作；4AD 流通；68 分鐘柔和電子民謠",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 4/3/3（Last.fm listeners 59814）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -751,13 +841,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 2,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 141920,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/2/3（Last.fm listeners 141920）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：首張代表作；Acéphale 小廠正規發行；慢速 slowcore 失真霧",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/2/3（Last.fm listeners 141920）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -828,9 +927,18 @@
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 120273,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 4/2/2（Last.fm listeners 120273）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：代表作之一（與 A Strangely Isolated Place 並列）；Independiente/Domino 流通；shoegaze 電子",
+    "previous": {
+     "classic": 4,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 4/2/2（Last.fm listeners 120273）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -896,12 +1004,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 63445,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/3/2（Last.fm listeners 63445）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：晚期佳作非代表；Bella Union/Fat Possum 流通；太空流行弦樂",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/3/2（Last.fm listeners 63445）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -971,9 +1088,18 @@
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 122359,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 4/2/2（Last.fm listeners 122359）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Deserter's Songs 之後重要作；V2 國際流通；管弦迷幻流行",
+    "previous": {
+     "classic": 4,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 4/2/2（Last.fm listeners 122359）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1041,14 +1167,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
-    "accessibility": 3,
+    "obscurity": 2,
+    "accessibility": 2,
     "listeners": 52435,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 52435）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：中期穩定作；V2 發行英國榜 16；夢幻流行",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 52435）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1113,15 +1248,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 3,
     "listeners": 71158,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/3/2（Last.fm listeners 71158）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Matador 首作代表；Matador 國際流通；極慢迷幻靈魂民謠",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/3/2（Last.fm listeners 71158）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1188,14 +1332,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 19765,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/4/2（Last.fm listeners 19765）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：第二張、聲量較低；Matador 發行但商業冷淡；更慢更昏沉",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/4/2（Last.fm listeners 19765）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1265,13 +1418,22 @@
    "ratings": {
     "classic": 4,
     "obscurity": 2,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 175114,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 4/2/4（Last.fm listeners 175114）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：首張代表作；Because 重發流通；怪誕水下迷幻、仍有旋律",
+    "previous": {
+     "classic": 4,
+     "obscurity": 2,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 4/2/4（Last.fm listeners 175114）",
+     "rarity": "epic"
+    }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1334,15 +1496,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 357502,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/2/2（Last.fm listeners 357502）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：首張代表；Stones Throw 子廠、串流聲量大；60s 迷幻軟搖滾",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/2/2（Last.fm listeners 357502）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1406,15 +1577,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 4,
     "listeners": 8047,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/4/4（Last.fm listeners 8047）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Sun Araw 代表大作（Drag City 合發）；正規小眾廠；79 分鐘朦朧 drone 長篇",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/4/4（Last.fm listeners 8047）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1483,9 +1663,18 @@
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 36362,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/3/2（Last.fm listeners 36362）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：個人器樂第二張；Darla 小廠正規發行；殘響吉他器樂",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/3/2（Last.fm listeners 36362）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1556,12 +1745,21 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 9886,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 4/4/2（Last.fm listeners 9886）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Cocteau 與 Budd 合作名盤、4AD 史常提；4AD 正規但屬旁支發行，listeners 低為掛名分散；氛圍夢幻",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 4/4/2（Last.fm listeners 9886）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1629,13 +1827,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 15882,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 2/4/4（Last.fm listeners 15882）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Manual 最受推崇之作；Darla 小廠限量 CD、已上串流；長篇氛圍 shoegaze",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 2/4/4（Last.fm listeners 15882）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1705,11 +1912,20 @@
    "ratings": {
     "classic": 4,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 157796,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 4/2/2（Last.fm listeners 157796）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：兩人代表作；Parlophone 國際發行；長篇弦樂合唱氛圍",
+    "previous": {
+     "classic": 4,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 4/2/2（Last.fm listeners 157796）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1779,14 +1995,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
-    "accessibility": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 228,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 4/5/4（Last.fm listeners 228）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：FRKWYS 系列名作；RVNG 正規發行入串流，listeners 低為掛名分散；dub 迷幻即興",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 4/5/4（Last.fm listeners 228）",
+     "rarity": "epic"
+    }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1848,13 +2073,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 3,
     "listeners": 72009,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 72009）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：突破代表作；Not Not Fun 小廠首發、後 Weird World 重發；dub 迷幻",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 72009）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1926,9 +2160,18 @@
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 41727,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/3/2（Last.fm listeners 41727）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：續作評價好非首選；Mexican Summer 發行聲量中；溫和 dub 流行",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/3/2（Last.fm listeners 41727）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1994,15 +2237,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 136742,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/2/2（Last.fm listeners 136742）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：首張代表作；ATO 國際流通；殘響假聲靈魂",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/2/2（Last.fm listeners 136742）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2068,15 +2320,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 57654,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/3/2（Last.fm listeners 57654）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：代表作、評論高度肯定；Fat Possum 流通；弦樂迷幻靈魂",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/3/2（Last.fm listeners 57654）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2147,13 +2408,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 3,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 37989,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 37989）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：非代表作（代表作為 Ambivalence Avenue）；Mush 正規小廠；低傳真民謠電子柔和",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 37989）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2224,9 +2494,18 @@
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 127387,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/2/2（Last.fm listeners 127387）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Warp 中期佳作；國際廠牌正常流通；有機吉他民謠電子",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/2/2（Last.fm listeners 127387）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2297,9 +2576,18 @@
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 105754,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/2/2（Last.fm listeners 105754）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Hospice 才是代表作，此張評價穩定；Anti- 正常流通；慢板夢幻獨立搖滾",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/2/2（Last.fm listeners 105754）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2365,15 +2653,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 12005,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 2/4/2（Last.fm listeners 12005）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Tarnation 公認代表作、4AD 慢核/哥德鄉村 cult 盤；正規廠牌但商業有限；緩慢民謠",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 2/4/2（Last.fm listeners 12005）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2442,9 +2739,18 @@
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 166971,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 4/2/2（Last.fm listeners 166971）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：MMJ 早期代表作之一；正規流通；殘響民謠搖滾",
+    "previous": {
+     "classic": 4,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 4/2/2（Last.fm listeners 166971）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2513,9 +2819,18 @@
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 296983,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 4/2/2（Last.fm listeners 296983）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Kurt Vile 代表作；Matador 正常流通；長篇但旋律慵懶易聽",
+    "previous": {
+     "classic": 4,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 4/2/2（Last.fm listeners 296983）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2580,13 +2895,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 11326,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 2/4/2（Last.fm listeners 11326）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：晚期作評論好評（Mojo/Uncut）；Bella Union 流通；口白與爵士色彩柔和",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 2/4/2（Last.fm listeners 11326）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2652,12 +2976,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 14841,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/4/2（Last.fm listeners 14841）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：復出作評價中上；Bella Union 正常流通；交響流行搖滾",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/4/2（Last.fm listeners 14841）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2724,13 +3057,22 @@
    "ratings": {
     "classic": 4,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 185492,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 4/2/2（Last.fm listeners 185492）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：代表作、Mercury 獎提名；正規廠牌流通；老派 crooner 情歌",
+    "previous": {
+     "classic": 4,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 4/2/2（Last.fm listeners 185492）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2795,12 +3137,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 15504,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T09:47:02Z",
-    "note": "機器基線 3/4/2（Last.fm listeners 15504）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：早期佳作非代表作；Setanta 正規流通；柔和抒情",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T09:47:02Z",
+     "note": "機器基線 3/4/2（Last.fm listeners 15504）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {

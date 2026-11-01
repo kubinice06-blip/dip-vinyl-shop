@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-01｜dip-vinyl-shop｜三軸重評「套用」：2,957 張寫進 seed／manifest／card_catalog
+
+- **範圍**：R1–R4 verdicts（s01–s12）合併成 `batch-progress/rerate-20261101/applied.json`，keep 2 張沿用舊值。三軸有變 2,780 張、稀有度有變 1,278 張；頂點卡 0（apex 不需同步）。
+- **本範圍新舊（1/2/3/4/5）**：經典度 1/186/2539/231/0 → 1/77/1608/1204/67；冷門度 30/218/773/874/1062 → 18/562/1707/607/63；硬蕊度 32/325/1956/433/211 → 335/925/912/632/153。稀有度 C/R/U/E/L 9/290/2310/338/10 → 22/819/1658/444/14。全池 1079/7976/11183/2143/125 → 1092/8505/10531/2249/129。
+- **錨點**：Yancy Körössy《Identification》3/3/3 → 4/3/2（uncommon 不變）；Szabados《Az Esküvő》→ 5/3/4（epic）。
+- **寫入**：seed 三軸欄字串替換（命中 2,780＝要改數、總筆數 22,506 不變、長度不變、逐列比對只動第 3–5 欄）；manifest 根目錄與 `batch-progress/add-*/` 兩份共 222 檔，`source`＝`manual:rerate-20261101`、舊值進 `ratings.previous`、rarity 重算；card_catalog 以 `publish-manifest` 乾跑產 patch、過濾成 classic／obscurity／accessibility／rarity 四欄推 2,957／2,957，抽 10 張讀回一致、欄位數不變。前台稀有度由 seed 即時算，無其他產物需重建（build-seed-genres 0 變動、店內印刷 0 張命中）。
+- **規範**：`ALBUM_ONBOARDING.md` 新增 §0.8.1（經典度錨點表、冷門度 worker 值必須依 §0.8 校正、硬蕊度＝入耳難度 5＝晦澀、交件前分布自檢）；`dip-card-create` SKILL Phase 2 加一行指向。
+- **主要檔案**：`seed_cards.json`、`onboarding-manifest-add-2026{1022..1101}-*.json`、`batch-progress/add-*/onboarding-manifest.json`、`batch-progress/rerate-20261101/{apply.mjs,applied.json,report.mjs,REPORT.md,PLAN.md}`、`ALBUM_ONBOARDING.md`、`.claude/skills/dip-card-create/SKILL.md`。
+- **順手修**：md14 四張原聲帶（Lustmord《First Reformed》、山岡晃《SILENT HILL 2》、Kurzel《Macbeth》、Young《Sinister》）的 manifest 簡介落後於 10-23 原聲帶簡介重寫線的 KV 版，gate 報 `/album-desc 不一致`；兩份 manifest 的 `description.text` 同步成線上 KV 文字（加 `syncedFrom`），重跑已綠。
+- **驗證**：published gate 111 份：評分／稀有度／card_catalog／seed 相關檢查 0 error；唯一殘留是 CAA 封面間歇 HTTP 500（三輪重跑各不相同，累計 17 張出現過，release-group JSON 端點同樣 500，屬 CAA 上游問題、與本次無關，待封面線處理）。
+
 ### 2026-11-01｜dip-vinyl-shop｜三軸重評 R2：s04–s06 verdicts 750 張
 
 - **範圍**：情緒薄格 mc5 後段–mc9、md1–md4、md10–md34（electro／minimal techno、dark ambient／drone、恐怖配樂、雲端饒舌、slowcore／darkwave、dark jazz、funeral doom），15 段各 50 張派 Opus 代理照 `DISPATCH.md` 重評；只產 verdicts，不改 seed／manifest／card_catalog。

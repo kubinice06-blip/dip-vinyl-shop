@@ -33,13 +33,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 57629,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T11:04:39Z",
-    "note": "機器基線 2/3/2（Last.fm listeners 57629）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：雙白金、R&B 榜冠，但代表作是 Rapture；Elektra 主流流通；柔和成人 R&B 抒情",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T11:04:39Z",
+     "note": "機器基線 2/3/2（Last.fm listeners 57629）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -104,15 +113,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 2,
-    "accessibility": 3,
+    "accessibility": 1,
     "listeners": 106109,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T11:04:39Z",
-    "note": "機器基線 3/2/3（Last.fm listeners 106109）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Kem 自費首作、Motown 重發金唱片，其代表作；主流流通；smooth R&B 慢歌",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T11:04:39Z",
+     "note": "機器基線 3/2/3（Last.fm listeners 106109）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -177,15 +195,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
-    "accessibility": 3,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 86580,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T11:04:39Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 86580）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Kem 最暢銷白金作、R&B 榜冠；Motown 主流；smooth 成人 R&B",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T11:04:39Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 86580）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -250,14 +277,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
-    "accessibility": 3,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 29880,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T11:04:39Z",
-    "note": "機器基線 3/3/3（Last.fm listeners 29880）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Billboard 200 第 2、葛萊美入圍，但延續前作配方；Motown 主流；柔和抒情",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T11:04:39Z",
+     "note": "機器基線 3/3/3（Last.fm listeners 29880）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -323,14 +359,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 3,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 9112,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T11:04:39Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 9112）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Billboard 200 第 3、葛萊美入圍；AllMusic 三星中評；Motown 主流（listeners 低為報警）；smooth ballads",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T11:04:39Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 9112）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -396,14 +441,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 1140,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T11:04:39Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 1140）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Percy Faith 指揮的讚美詩合作盤，非其代表作；Columbia 正規、CD 再發（worker 5 誤）；管弦合唱聖詩短曲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T11:04:39Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 1140）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -470,15 +524,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 28,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-23T11:04:39Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 28）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：情歌藝術歌曲選集，生涯中非首選；Columbia 正規發行（listeners 28 只是報警）；柔和抒情",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-23T11:04:39Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 28）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

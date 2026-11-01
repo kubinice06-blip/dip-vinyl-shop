@@ -61,6 +61,8 @@ description: One-line entry point for adding album cards to dip vinyl — accept
   Firestore 舊文件刪除、KV key 搬移——`card_catalog`／`album_overrides` 的文件 id 是
   `(artist+'|'+album).toLowerCase().replace(/\//g,'-').trim()`，改字串就是改 id。
 - 人工覆核不可省：聽眾數異常（同名誤配）、AI 推估的冷門度、藝人名爆版、封面真偽反查。
+- **人工評分（深掘、非英語圈、主線修正）一律照 `ALBUM_ONBOARDING.md` §0.8.1 三軸錨點**：經典度以所屬場景為尺度、
+  藝人代表作至少 4；冷門度 worker 值必須依 §0.8 校正；硬蕊度＝入耳難度，5＝晦澀（2026-11-01 店主指正）。
 
 ## Phase 3：簡介產線（desc-restyle 成品標準）
 

@@ -33,15 +33,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
     "listeners": 1798,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-24T00:05:35Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 1798）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Wikipedia 列為 Corsano 獨奏代表／自營 CDr 廠，但有流通（listeners 1.8k）／現成物打擊加薩克斯",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-24T00:05:35Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 1798）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -103,12 +112,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 4,
     "listeners": 418,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-24T00:05:35Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 418）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Corsano 獨奏系列之一／自營 Hot Cars Warp 小廠／短篇鼓與改造簧管",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-24T00:05:35Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 418）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -171,12 +189,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 4,
     "listeners": 0,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-24T00:05:35Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 0）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Favre／Centazzo 雙打擊二重奏／Ictus 小廠 LP，2020 年官方再發／鑼鈸打擊即興",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-24T00:05:35Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 0）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -241,12 +268,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 4,
     "listeners": 0,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-24T00:05:35Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 0）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Beresford／Bennink 二重奏／Nato 法國小廠 LP／玩具樂器式自由即興",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-24T00:05:35Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 0）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -309,12 +345,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 4,
     "listeners": 4,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-24T00:05:35Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 4）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：三人無貝斯即興，非代表作／Artesuono 義大利小廠／自由即興短篇",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-24T00:05:35Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 4）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -379,14 +424,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 5,
     "listeners": 1,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-24T00:05:35Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 1）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Minton／Turner 長年二重奏錄音／Leo 正規獨立廠／乾嘔尖叫的延伸人聲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-24T00:05:35Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 1）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -446,12 +500,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 22,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-24T00:05:35Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 22）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Parker／Prévost 二重奏，非代表作／Matchless 正規小廠有數位／長篇薩克斯鼓即興",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-24T00:05:35Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 22）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -515,12 +578,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 4,
     "listeners": 17,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-24T00:05:35Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 17）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Battaglia／Oxley 二重奏起點／Splasc(H) 義大利小廠／鋼琴鼓自由即興",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-24T00:05:35Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 17）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -587,15 +659,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 112,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-24T00:05:35Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 112）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Oxley 大廠三部曲之一，Penguin 3.5、Watson 稱傑作／CBS 正規但商業失敗／英國自由即興",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-24T00:05:35Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 112）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -656,15 +737,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 162,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-24T00:05:35Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 162）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Watson：使先前音樂皆顯灰暗，Oxley 代表作／RCA 正規但發行有限／音色序列式即興",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-24T00:05:35Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 162）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -725,12 +815,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 4,
     "listeners": 19,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-24T00:05:35Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 19）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Pilz 三重奏 FMP 錄音／FMP 小廠 LP／低音單簧管無鋼琴自由即興",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-24T00:05:35Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 19）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -796,12 +895,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 4,
     "listeners": 2,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-24T00:05:35Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 2）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Tomlinson 三重奏／Emanem 小廠／長號電子打擊集體即興",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-24T00:05:35Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 2）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -865,12 +973,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 4,
     "listeners": 0,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-24T00:05:35Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 0）"
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：三人即興，無評論／Creative Sources 限量但有數位／單簧管人聲延伸技法",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-24T00:05:35Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 0）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
