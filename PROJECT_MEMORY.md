@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪 R8：s10–s12 verdicts 750 張
+
+- **範圍**：c133 日本爵士企劃盤，與 c13x–c154 的 Blue Note／Pacific Jazz／UA 目錄盤（1946–1998，含 LT／GXF 庫存盤、80–90 年代復興期）。15 段各 50 張，派 Opus 代理照 `rerate-20261102/DISPATCH.md` 重評。只產出 verdicts，seed、manifest、card_catalog 都沒動。
+- **新舊分布（1/2/3/4/5）**：
+  - 經典度 0/43/349/337/21 → 0/50/483/207/10。
+  - 冷門度 0/4/41/242/463 → 0/67/269/350/64。
+  - 硬蕊度 4/622/83/38/3 → 100/503/133/13/1。
+- **主線**：每段抽 5 張覆核，改 2 張：Fats Navarro《Fabulous Vol.2》經典 4→5（與 Vol.1 一致）、Hank Mobley《A Slice of the Top》經典 3→4。退回 0 段。s11 經典度 3 佔 71%（過七成自檢線），回掃後判定是片內庫存盤與二線藝人居多，不是錨點失準。
+- **給套用工作階段**：有十幾張知名 BN 盤的 Last.fm 聽眾數疑似錯配（例如 Cafe Bohemia、Night of the Cookers、Up at Minton's、Doin' the Thing，聽眾數只有個位到百位），照硬下限給了冷門度 4。名單在各片 summary。Miles Davis《Vol.1》《Vol.2》、Milt Jackson BLP 1509、Konitz/Mulligan 試聽 unavailable 卻給 4，是依 ADDENDUM 的「確知有正式數位版」例外。
+- **主要檔案**：`batch-progress/rerate-20261102/verdicts/s1{0,1,2}-*.json`、`s1{0,1,2}.summary.md`、`PLAN.md` 分片表。
+- **驗證**：三片合併檢查各 250/250，miss 0、bad 0、keep 0；冷門度下限逐張機械檢查，除上述 4 張例外以外全部符合。
+
 ### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪 R9：s13–s15 verdicts 750 張
 
 - **範圍**：
