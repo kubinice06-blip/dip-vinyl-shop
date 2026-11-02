@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-02｜dip-vinyl-shop｜頂點 7 星重審 V1：Z01／Z02／Z03 verdicts 交齊（702 張）
+
+- **範圍**：Z01–Z03 全為 A 組現有頂點卡（無新候選）。15 段 Opus 代理，主線每段抽查，退回 0 段，主線改 38 筆。只交 verdicts，未動 seed／manifest／card_catalog／album_overrides。
+- **A 組原 tier → 7 星**：hall 524→72（Z01 22／Z02 21／Z03 29）、heresy 91→9、pearl 87→0（listeners <300 的幾張都已正式再發或壓量無據）。強度 3：hall 38、heresy 3（Trout Mask Replica、Metal Machine Music、Pulse Demon）。
+- **主線口徑**：代理自評 strength 1 一律 none；同藝人只留強度 3 的（Dylan、Bowie、Springsteen、Led Zeppelin、Merzbow 等次作刷掉，Kid A 本身 7 星還原 hall 3）；獨立搖滾／P-Funk／grunge 等樂評圈聖典圈外知名度不足 → none。逐筆見 `apex7/verdicts/mainline-V1.tsv`。
+- **listeners**：Z 片查 672 筆、有效值 510；新增 `fetch-listeners-S.mjs`，S01／S02 403 張寫 `listeners-S.json`（有效值 393）。
+- **主要檔案**：`batch-progress/audit-20261102/apex7/verdicts/{Z01,Z02,Z03}-*.json`、`{Z01,Z02,Z03}.summary.md`、`mainline-V1.tsv`、`apex7/shards/Z0{1,2,3}.json`、`listeners-S.json`、`PLAN.md`。
+- **驗證**：三片合併檢查全過（每 key 一筆、無缺無多、apex7 ∈ hall／pearl／heresy／none）。
+
 ### 2026-11-02｜dip-vinyl-shop｜頂點 7 星重審 V2：Z04／Z05／Z06 verdicts 交齊（698 張）
 
 - **範圍**：Z04（A 組現有頂點 215＋H 19）、Z05（H 137＋P 97）、Z06（X 123＋P 105＋S 2）。15 段 Opus 代理，主線每段抽 5 張，退回 0 段，主線改 17 筆（多為勉強 7 星降 none，Schnabel 貝多芬全集升 hall 1）。只交 verdicts，未動 seed／manifest／card_catalog／album_overrides。

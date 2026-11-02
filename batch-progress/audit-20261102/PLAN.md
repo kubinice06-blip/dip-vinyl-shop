@@ -73,4 +73,5 @@
 
 | 工作階段 | 片 | 狀態 |
 |---|---|---|
+| V1 | Z01、Z02、Z03 | ✅ 702 張，全為 A 組（新候選 0）。hall 524→72（Z01 22／Z02 21／Z03 29）、heresy 91→9（Z01 4／Z02 5／Z03 0）、pearl 87→0（listeners <300 的幾張都已正式再發或壓量無據）。強度 3：hall 38、heresy 3（Trout Mask、Metal Machine Music、Pulse Demon）。listeners 補 Z 片 672 筆、有效值 510（Z01 163／Z02 157／Z03 190）；S01／S02 寫 `listeners-S.json`（403 張，有效值 393）。主線改 38 筆（strength 1 一律 none、同藝人只留強度 3、樂評圈聖典圈外知名度不足 none；Kid A 還原 hall 3），退回 0 段 |
 | V2 | Z04、Z05、Z06 | ✅ 698 張。Z04 A 組 215 張留 20（hall 168→18、heresy 25→2、pearl 22→0），H 候選 19 過 5；Z05 H 137 過 25（hall 21／heresy 4）、P 97 過 0；Z06 X 123 過 heresy 6、P 105＋S 2 過 0。listeners 補 271 張（Z04 142／Z05 101／Z06 28）。主線改 17 筆（另去重 1 筆），退回 0 段 |
