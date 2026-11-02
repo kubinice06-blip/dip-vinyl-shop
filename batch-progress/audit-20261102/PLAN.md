@@ -58,7 +58,7 @@
 
 | 工作階段 | 片 | 狀態 |
 |---|---|---|
-| U1 | A01、A02、A03 | |
+| U1 | A01、A02、A03 | ✅ A01 230 張（apex：hall 85／pearl 0／heresy 16／none 129）；A02 230 張（hall 81／pearl 0／heresy 20／none 129）；A03 230 張（hall 83／pearl 0／heresy 24／none 123）。舊 5 星標準，頂點待 7 星重審；原流亡 87 張 shard 全缺 listeners，冷門度仍判 5 的 4 張列在 summary 待補查 |
 | U2 | A04、S01、S02 | ✅ A04 227 張（apex：hall 92／pearl 2／heresy 23／none 110）；S01 210 張（hall 2／none 208）；S02 193 張（none 193）。舊 5 星標準，頂點待 7 星重審；S 組冷門度方向待 KV listeners 重套下限 |
 | U3 | H01、H02、H03 | |
 | U4 | H04、H05、X01 | |
