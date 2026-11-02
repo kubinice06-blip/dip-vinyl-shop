@@ -66,3 +66,11 @@
 | U6 | P03、P04、P05 | ✅ 645 張（apex：hall 0／pearl 89／heresy 0／none 556）；P03 pearl 52、P04 pearl 33、P05 pearl 4。舊 5 星標準判定，待 7 星重審；拆名錯配只限「國際以羅馬字名為主的藝人」或「語言圈主流暢銷作」，其餘 listeners 當有效值（見各 summary） |
 | 彙整 | — | |
 | 套用 | — | |
+
+## 頂點 7 星重審（apex7）
+
+工作清單 1,400 張分 Z01–Z06，派工見 `apex7/DISPATCH.md`，verdicts 在 `apex7/verdicts/`。
+
+| 工作階段 | 片 | 狀態 |
+|---|---|---|
+| V2 | Z04、Z05、Z06 | ✅ 698 張。Z04 A 組 215 張留 20（hall 168→18、heresy 25→2、pearl 22→0），H 候選 19 過 5；Z05 H 137 過 25（hall 21／heresy 4）、P 97 過 0；Z06 X 123 過 heresy 6、P 105＋S 2 過 0。listeners 補 271 張（Z04 142／Z05 101／Z06 28）。主線改 17 筆（另去重 1 筆），退回 0 段 |
