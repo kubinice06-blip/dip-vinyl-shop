@@ -63,8 +63,8 @@ const MISMATCH = {
   'Al Di Meola, John McLaughlin & Paco de Lucía|Passion, Grace & Fire': 3,
   'Jule Styne|Funny Girl': 3,
   'Lerner & Loewe|Brigadoon': 3,
-  // s18（Suicide 首作為 1001 Albums 常客、張惠妹華語圈主流＝2）
-  'Suicide|Suicide: Alan Vega and Martin Rev': 2,
+  // s18（Suicide 第二張：ZE／Antilles 正規發行、首作光環下的知名續作＝3；張惠妹華語圈主流＝2）
+  'Suicide|Suicide: Alan Vega and Martin Rev': 3,
   '張惠妹|我可以抱你嗎？愛人': 2,
   // s18：listeners=0 是查詢漏抓，視同缺值（R10 主線裁定，維持 verdict 值）
   'Azra|Filigranski pločnici': null, 'Azra|Sunčana strana ulice': null, 'Azra|Azra': null, 'Riblja Čorba|Mrtva priroda': null,
@@ -212,5 +212,5 @@ for (const f of manifestFiles) {
 }
 const miss = all.filter(x => !seen.has(x.key));
 if (miss.length) throw new Error(`manifest 找不到 ${miss.length} 張，例 ${miss[0].key}`);
-fs.writeFileSync(D + 'touched-manifests.json', JSON.stringify(touched, null, 1) + '\n');
+if (touched.length) fs.writeFileSync(D + 'touched-manifests.json', JSON.stringify(touched, null, 1) + '\n');
 console.log(`manifest：改 ${mfiles} 檔、${mcards} 筆（根目錄＋batch 副本合計）`);

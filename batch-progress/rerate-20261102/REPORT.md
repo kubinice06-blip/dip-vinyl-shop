@@ -11,7 +11,7 @@
 | 軸 | 舊 | 新 |
 |---|---|---|
 | 經典度 | 27/1680/2310/2155/209 | 0/286/2771/2873/451 |
-| 冷門度 | 37/367/1586/3330/1061 | 36/765/1858/2481/1241 |
+| 冷門度 | 37/367/1586/3330/1061 | 36/764/1859/2481/1241 |
 | 硬蕊度 | 118/4595/442/1143/83 | 1042/3356/1456/429/98 |
 
 ### 稀有度（common／rare／uncommon／epic／legendary）
@@ -25,14 +25,14 @@
 
 - 有適用下限的非豁免卡 4235 張，verdict 全已合乎下限；機械抬分 0 張（三張數位版但書漏標關鍵字者已補進但書判準）。
 - 豁免 169 張：Last.fm 疑錯配 41；ADDENDUM 但書：確知有正式數位版 38；listeners=0 漏抓（視同缺值） 4；floorExempt（評分工作階段主線裁定） 86。
-- Last.fm 疑錯配（不套下限，冷門度照 RUBRIC 錨點）：Carlos Santana《Oneness: Silver Dreams-Golden Reality》4→3、Émile Parisien Quintet《Sfumato》5→3、Carlos Di Sarli《Archivo RCA: 1954 / 1958》4→3、Carmen Linares《Antología de la mujer en el cante》5→3、Fernanda de Utrera y Bernarda de Utrera《El cante de Fernanda y Bernarda de Utrera》5→3、José Mercé《Aire》4→3、Sek Loso《Sek》4→3、ไททศมิตร《เพื่อชีวิตกู》5→3、Carl Perkins (rockabilly)《Dance Album of Carl Perkins》4→3、Fats Domino《Rock and Rollin' with Fats Domino》5→3、Johnny Burnette and the Rock 'n' Roll Trio《Johnny Burnette and the Rock 'n' Roll Trio》4→3、Quartetto Italiano《Debussy: String Quartet / Ravel: String Quartet》4→3、Toby Fox《UNDERTALE: Soundtrack》4→2、Udo Lindenberg & Das Panikorchester《Alles klar auf der Andrea Doria》4→3、星野源《Gen》4→3、藤井風《Prema》4→3、Isaiah Rashad《IT’S BEEN AWFUL》4→3、告五人 Accusefive《我們就像那些要命的傻瓜》4→2、告五人 Accusefive《我肯定在幾百年前就說過愛你》4→2、Art Blakey and the Jazz Messengers《Meet You at the Jazz Corner of the World, Volume 1》4→3、Horace Silver《Doin' the Thing: Live at the Village Gate》4→3、Kenny Clarke & Francy Boland《The Golden Eight》4→3、Stanley Turrentine《Up at Minton's, Volume 1》4→3、Stanley Turrentine《Up at Minton's, Volume 2》4→3、Zoot Sims & Bob Brookmeyer《Stretching Out》4→3、Art Blakey and the Jazz Messengers《Meet You at the Jazz Corner of the World, Volume 2》4→3、Billie Holiday《Ladylove》4→3、Freddie Hubbard《The Night of the Cookers: Live at Club La Marchal, Volume 1》4→3、Freddie Hubbard《The Night of the Cookers: Live at Club La Marchal, Volume 2》4→3、Ornette Coleman《At the "Golden Circle" Stockholm, Volume Two》4→3、Götz Alsmann《In Paris.》4→3、Stacey Kent《Raconte-moi…》4→3、Lonnie Smith《Evolution》4→3、Brian Blade Fellowship《Body and Shadow》4→3、THE SQUARE《R·E·S·O·R·T》4→3、Miles Davis《Miles in Tokyo: Miles Davis Live in Concert》4→3、Al Di Meola, John McLaughlin & Paco de Lucía《Passion, Grace & Fire》4→3、Jule Styne《Funny Girl》5→3、Lerner & Loewe《Brigadoon》5→3、Suicide《Suicide: Alan Vega and Martin Rev》5→2、張惠妹《我可以抱你嗎？愛人》5→2。
+- Last.fm 疑錯配（不套下限，冷門度照 RUBRIC 錨點）：Carlos Santana《Oneness: Silver Dreams-Golden Reality》4→3、Émile Parisien Quintet《Sfumato》5→3、Carlos Di Sarli《Archivo RCA: 1954 / 1958》4→3、Carmen Linares《Antología de la mujer en el cante》5→3、Fernanda de Utrera y Bernarda de Utrera《El cante de Fernanda y Bernarda de Utrera》5→3、José Mercé《Aire》4→3、Sek Loso《Sek》4→3、ไททศมิตร《เพื่อชีวิตกู》5→3、Carl Perkins (rockabilly)《Dance Album of Carl Perkins》4→3、Fats Domino《Rock and Rollin' with Fats Domino》5→3、Johnny Burnette and the Rock 'n' Roll Trio《Johnny Burnette and the Rock 'n' Roll Trio》4→3、Quartetto Italiano《Debussy: String Quartet / Ravel: String Quartet》4→3、Toby Fox《UNDERTALE: Soundtrack》4→2、Udo Lindenberg & Das Panikorchester《Alles klar auf der Andrea Doria》4→3、星野源《Gen》4→3、藤井風《Prema》4→3、Isaiah Rashad《IT’S BEEN AWFUL》4→3、告五人 Accusefive《我們就像那些要命的傻瓜》4→2、告五人 Accusefive《我肯定在幾百年前就說過愛你》4→2、Art Blakey and the Jazz Messengers《Meet You at the Jazz Corner of the World, Volume 1》4→3、Horace Silver《Doin' the Thing: Live at the Village Gate》4→3、Kenny Clarke & Francy Boland《The Golden Eight》4→3、Stanley Turrentine《Up at Minton's, Volume 1》4→3、Stanley Turrentine《Up at Minton's, Volume 2》4→3、Zoot Sims & Bob Brookmeyer《Stretching Out》4→3、Art Blakey and the Jazz Messengers《Meet You at the Jazz Corner of the World, Volume 2》4→3、Billie Holiday《Ladylove》4→3、Freddie Hubbard《The Night of the Cookers: Live at Club La Marchal, Volume 1》4→3、Freddie Hubbard《The Night of the Cookers: Live at Club La Marchal, Volume 2》4→3、Ornette Coleman《At the "Golden Circle" Stockholm, Volume Two》4→3、Götz Alsmann《In Paris.》4→3、Stacey Kent《Raconte-moi…》4→3、Lonnie Smith《Evolution》4→3、Brian Blade Fellowship《Body and Shadow》4→3、THE SQUARE《R·E·S·O·R·T》4→3、Miles Davis《Miles in Tokyo: Miles Davis Live in Concert》4→3、Al Di Meola, John McLaughlin & Paco de Lucía《Passion, Grace & Fire》4→3、Jule Styne《Funny Girl》5→3、Lerner & Loewe《Brigadoon》5→3、Suicide《Suicide: Alan Vega and Martin Rev》5→3、張惠妹《我可以抱你嗎？愛人》5→2。
 
 ### 各線
 
 | 線 | 張數 | 軸 | 舊 1/2/3/4/5 | 新 1/2/3/4/5 |
 |---|---:|---|---|---|
 | c 系列（c48-rescue～c198） | 5374 | 經典度 | 25/1422/1801/1917/209 | 0/271/2415/2310/378 |
-| c 系列（c48-rescue～c198） | 5374 | 冷門度 | 22/134/1239/3130/849 | 29/575/1493/2177/1100 |
+| c 系列（c48-rescue～c198） | 5374 | 冷門度 | 22/134/1239/3130/849 | 29/574/1494/2177/1100 |
 | c 系列（c48-rescue～c198） | 5374 | 硬蕊度 | 95/3875/374/947/83 | 884/2779/1232/384/95 |
 | c 系列（c48-rescue～c198） | 5374 | 稀有度 C/R/U/E/L | 39/2122/2712/485/16 | 97/1950/2648/632/47 |
 | csea 東南亞 | 90 | 經典度 | 0/39/27/24/0 | 0/1/20/48/21 |
@@ -89,7 +89,7 @@
 | 全池 | 經典度 1/2/3/4/5 | 冷門度 | 硬蕊度 |
 |---|---|---|---|
 | 套用前 | 255/3474/8645/8748/1384 | 1512/3814/7930/6861/2389 | 4183/11165/3659/2973/526 |
-| 套用後 | 228/2080/9106/9466/1626 | 1510/4172/7634/6279/2911 | 5107/9926/4673/2259/541 |
+| 套用後 | 228/2080/9106/9466/1626 | 1510/4171/7635/6279/2911 | 5107/9926/4673/2259/541 |
 
 ## 四、變動最大 20 張（第二輪，三軸差絕對值總和）
 
@@ -110,11 +110,11 @@
 | Skara Brae《Skara Brae》 | c63 | 2/4/4 | 5/3/2 | uncommon→uncommon | 英文維基稱為該樂種最重要專輯之一、首張愛語和聲錄音；Gael-Linn 正規、聽眾 4,526；柔和和聲，舊 4 方向錯 |
 | Socrates Drank the Conium《Taste of Conium》 | c62 | 1/3/5 | 3/5/3 | uncommon→uncommon | 早期藍調硬搖滾，含 13 分鐘翻唱；L 277 試聽 unavailable 依下限 5；長篇即興但非前衛 |
 | Stompin' Ground《Measured by the Richter Scale》 | ts10 | 2/2/2 | 4/5/3 | rare→epic | 新加坡hardcore開山團首張全長，場景史必提；聽眾5、無串流→5；hardcore |
-| Suicide《Suicide: Alan Vega and Martin Rev》 | c51 | 5/5/5 | 4/2/3 | legendary→uncommon | Ocasek製作次作，NME年度；下限：L<1000且無串流→5（聽眾疑分散）；合成器極簡較流行 |
 | Turid《Vittras visor》 | c61 | 2/4/4 | 4/3/1 | uncommon→rare | progg 民謠歌手首作代表；Silence；民謠歌曲 |
 | Waters《Waters》 | c144 | 2/5/4 | 3/3/1 | uncommon→rare | BN首支人聲團首張，非代表性；正規廠商業平淡L1171→3；家族和聲soul/disco |
 | Щурците《20-и Век》 | c56 | 2/3/4 | 4/5/2 | uncommon→uncommon | 保加利亞搖滾經典團代表作之一；L27 無串流→5；搖滾 |
 | เดอะ ซัน《เสือ สิงห์ กระทิง แรด》 | ts7 | 3/2/4 | 4/5/2 | uncommon→uncommon | 1998 Seesan 三項搖滾獎得主，團代表作；L5 無串流→5；硬搖滾/流行搖滾旋律直白 |
+| စိုင်းထီးဆိုင်《ပျောက်ဆုံးသော နိဗ္ဗာန်ဘုံ》 | c129 | 1/3/4 | 3/4/1 | rare→rare | Sai Htee Saing與Wild Ones最早有紀錄專輯，歷史地位／L=0有串流→4／流行歌，原4方向誤 |
 
 ## 五、錨點
 
@@ -125,4 +125,13 @@
 - `seed_cards.json`：三軸欄字串替換，三道防呆（總筆數不變、命中數＝要改數、逐列比對只動第 3–5 欄且新值正確）。
 - manifest：根目錄（2026-09-01 起）與 `batch-progress/add-*/onboarding-manifest.json` 兩份，`ratings.source`＝`manual:rerate-20261102`，舊值在 `ratings.previous`，`rarity` 依公式重算；`note` 記理由與下限觸發／豁免。
 - Firestore `card_catalog`：`publish-manifest` 乾跑產 patch，過濾成只含 classic／obscurity／accessibility／rarity 四欄（`publish-stage/rerate-20261102/card-catalog-patches.json`）。
-- 產物：`build-seed-genres` 0 變動；店內印刷卡（`data/shop/print/shop-a6`、`shop-a7-a4` 的 html／jsx）重出。
+- 產物：`build-seed-genres` 0 變動；店內印刷卡（`data/shop/print/shop-a6`、`shop-a7-a4` 的 html／jsx）重出（57 張在售品三軸有變）。
+
+## 七、published gate（302 份根目錄 manifest）
+
+- 三軸／稀有度／card_catalog 評分欄／seed 相關：**0 error**。card_catalog 推 6,666／6,666，抽 12 張讀回一致。
+- 其餘皆為既有、與本次無關的殘留（留給各自的線）：
+  - `/album-desc 文字與 manifest 不一致` 1,145 張：manifest 簡介落後於 desc-restyle 等線改寫後的 KV 版。
+  - CAA 封面間歇 HTTP 500 28 張（照第一輪不擋）。
+  - 已不在卡池的 5 張（Steve Lacy《Oh yeah?》、崔健《新长征路上的摇滚》、窦唯《山河水》、Air《Air Time》、Wings《Belenggu Irama》）：卡池 0 筆、card_catalog 404。
+  - `card_catalog.coverUrl` 與 manifest 不一致 5 張（羅文、宮沢昭、佐藤允彦、浅川マキ、井上陽水）；X-Cache MISS 4、試聽地圖不一致 5。

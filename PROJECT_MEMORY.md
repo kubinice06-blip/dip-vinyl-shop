@@ -1,5 +1,18 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪「套用」：6,666 張寫進 seed／manifest／card_catalog（含第一輪補冷門度下限）
+
+- **範圍**：第二輪 26 片 verdicts 6,381 張合併＋冷門度下限機械檢查 → `rerate-20261102/applied.json`（三軸有變 5,864、稀有度有變 3,094、keep 4）；第一輪 2,957 張以 `rerate-20261101/applied.json` 新值為底套同一張下限表 → `floor-r1.json`（抬分 802：→3 41、→4 419、→5 342；稀有度有變 173）。
+- **下限豁免**：第二輪 169 張＝Last.fm 疑錯配 41（調度點名 9 張 BN 等知名盤＋同系列卷次＋各片 summary 標的，冷門度照錨點給 3，語言圈主流給 2）、listeners=0 漏抓 4（Azra×3、Riblja Čorba）、`floorExempt` 86、數位版但書 38。第一輪 67 張＝疑錯配 40（判準：第一輪已判 ≤2、下限要一口氣抬到 4–5，抽看全是大廠／華語主流拆名，例蕭亞軒、陳奕迅、Twin Peaks 原聲）＋但書 27。
+- **第二輪新舊（1/2/3/4/5）**：經典度 27/1680/2310/2155/209 → 0/286/2771/2873/451；冷門度 37/367/1586/3330/1061 → 36/764/1859/2481/1241；硬蕊度 118/4595/442/1143/83 → 1042/3356/1456/429/98。稀有度 C/R/U/E/L 43/2651/3117/554/16 → 102/2274/3260/696/49。
+- **全池**：1092/8505/10531/2249/129 → 1148/8071/10639/2471/177。
+- **錨點**：《Identification》4/3/2 → 4/4/2（L=113、試聽 ready，uncommon 不變）。
+- **寫入**：seed 三軸欄字串替換 6,666（三道防呆：總筆數 22,506 不變、命中＝要改數、逐列只動第 3–5 欄）；manifest 根目錄 302 份＋`batch-progress/add-*/` 副本共 425 檔、8,325 筆，`source`＝`manual:rerate-20261102`、`previous` 留舊值、`note` 記下限觸發／豁免，排版逐字保留；card_catalog `publish-manifest` 乾跑→過濾四欄推 6,666／6,666，抽 12 張讀回一致；店內印刷卡 shop-a6／shop-a7-a4（html＋jsx）重出（57 張在售品有變）；build-seed-genres 0 變動。
+- **規範**：冷門度下限表＋疑錯配例外寫進 `ALBUM_ONBOARDING.md` §0.8.1、`RUBRIC-ADDENDUM.md`；`dip-card-create` SKILL Phase 2 指向。
+- **主要檔案**：`seed_cards.json`、`onboarding-manifest-*.json`（2026-09-01 起）、`batch-progress/add-*/onboarding-manifest.json`、`batch-progress/rerate-20261102/{apply.mjs,applied.json,floor-r1.json,touched-manifests.json,report.mjs,REPORT.md,RUBRIC-ADDENDUM.md,PLAN.md}`、`data/shop/print/shop-a6.*`、`shop-a7-a4.*`、`ALBUM_ONBOARDING.md`、`.claude/skills/dip-card-create/SKILL.md`。
+- **驗證**：published gate 302 份：三軸／稀有度／card_catalog 評分欄／seed 相關 0 error。殘留皆既有、與本次無關：manifest 簡介落後 KV 1,145 張（desc-restyle 等線改寫後未回寫 manifest，量大未順手修）、CAA 500 28、已不在卡池 5 張（Steve Lacy《Oh yeah?》、崔健、窦唯、Air、Wings）、coverUrl 不一致 5。
+- **順手修**：Suicide《Suicide: Alan Vega and Martin Rev》是第二張不是首作，疑錯配值 2→3（seed、manifest、card_catalog 單張補推）。
+
 ### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪 R6：s04–s06 verdicts 750 張
 
 - **範圍**：ts7 東南亞搖滾／金屬、ts 法韓華嘻哈、ts6 neofolk／psytrance／rockabilly、c100 古典名盤、c101 遊戲／動畫配樂、日本演歌、韓國 100 大名盤、港台華語、中國搖滾、拉美、c109／c110 法義、德語 NDW、2024–26 國際新碟、c112 日本新碟、c113 沖繩島唄、c114 福音。15 段各 50 張派 Opus 代理照 `rerate-20261102/DISPATCH.md` 重評；只產出 verdicts，seed、manifest、card_catalog 都沒動。

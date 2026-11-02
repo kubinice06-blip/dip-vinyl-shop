@@ -66,6 +66,13 @@ L.push('', '## 六、寫入', '',
   '- `seed_cards.json`：三軸欄字串替換，三道防呆（總筆數不變、命中數＝要改數、逐列比對只動第 3–5 欄且新值正確）。',
   '- manifest：根目錄（2026-09-01 起）與 `batch-progress/add-*/onboarding-manifest.json` 兩份，`ratings.source`＝`manual:rerate-20261102`，舊值在 `ratings.previous`，`rarity` 依公式重算；`note` 記理由與下限觸發／豁免。',
   '- Firestore `card_catalog`：`publish-manifest` 乾跑產 patch，過濾成只含 classic／obscurity／accessibility／rarity 四欄（`publish-stage/rerate-20261102/card-catalog-patches.json`）。',
-  '- 產物：`build-seed-genres` 0 變動；店內印刷卡（`data/shop/print/shop-a6`、`shop-a7-a4` 的 html／jsx）重出。', '');
+  '- 產物：`build-seed-genres` 0 變動；店內印刷卡（`data/shop/print/shop-a6`、`shop-a7-a4` 的 html／jsx）重出（57 張在售品三軸有變）。', '',
+  '## 七、published gate（302 份根目錄 manifest）', '',
+  '- 三軸／稀有度／card_catalog 評分欄／seed 相關：**0 error**。card_catalog 推 6,666／6,666，抽 12 張讀回一致。',
+  '- 其餘皆為既有、與本次無關的殘留（留給各自的線）：',
+  '  - `/album-desc 文字與 manifest 不一致` 1,145 張：manifest 簡介落後於 desc-restyle 等線改寫後的 KV 版。',
+  '  - CAA 封面間歇 HTTP 500 28 張（照第一輪不擋）。',
+  '  - 已不在卡池的 5 張（Steve Lacy《Oh yeah?》、崔健《新长征路上的摇滚》、窦唯《山河水》、Air《Air Time》、Wings《Belenggu Irama》）：卡池 0 筆、card_catalog 404。',
+  '  - `card_catalog.coverUrl` 與 manifest 不一致 5 張（羅文、宮沢昭、佐藤允彦、浅川マキ、井上陽水）；X-Cache MISS 4、試聽地圖不一致 5。', '');
 fs.writeFileSync(D + 'REPORT.md', L.join('\n'));
 console.log(L.join('\n'));
