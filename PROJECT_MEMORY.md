@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪 R12：s22–s24 verdicts 750 張
+
+- **範圍**：c74–c93（Sarah／Creation 系 twee、美國福音、日本環境音樂／onkyo／techno、UK DIY 與後龐克、Rounder 藍草、URC 民謠、SST／Dischord、lovers rock／dub、loft 與靈性爵士、Johnny's Disk、影史原聲、台灣流行／獨立、英美新浪潮）。15 段各 50 張派 Opus 代理；只交 verdicts，不動 seed／manifest／card_catalog。
+- **新舊分布（1/2/3/4/5）**：經典度 9/345/213/153/30 → 0/38/372/301/39；冷門度 2/9/23/710/6 → 7/54/163/286/240；硬蕊度 15/507/30/188/10 → 90/399/174/79/8。
+- **主線**：每段抽 5 張覆核，退回 0 段。冷門度下限豁免 78 張，標 `floorExempt: true`：大廠電影原聲 19 張（Last.fm 鍵錯配，Lion King 99 人、Matrix 944 人），以及華語圈主流 59 張（伍佰、滅火器、董事長、閃靈等；依 §0.8「以該語言圈為尺度」）。**套用時機械下限要跳過這個欄位。**
+- **主要檔案**：`batch-progress/rerate-20261102/verdicts/s22–s24-*.json`、`s22/s23/s24.summary.md`、`PLAN.md`。
+- **驗證**：三片 node 合併檢查各 250／250，缺 0、重複 0、值皆 1–5 整數；keep 0。
 ### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪 R11：s19–s21 verdicts 750 張
 
 - **範圍**：東歐搖滾、雷鬼／dub、巴西 soul、AACM／歐洲自由爵士、北歐／義大利 prog、希臘藝術歌、Dust-to-Digital 考古、東南亞選輯、圖書館／合成器、印度古典與寶萊塢、日本爵士私壓、英國 Vertigo／Deram Nova、美國私壓民謠、Jesus music、日本新浪潮／交響前衛、英國自由即興、C86／Sarah。15 段各 50 張，派 Opus。
@@ -8,7 +15,7 @@
   - 冷門度 0/7/146/595/2 → 0/20/179/311/240。
   - 硬蕊度 5/462/38/232/13 → 110/301/225/92/22。
 - **主線**：每段抽 5 張覆核，退回重派 1 段（s20-200-250 首稿把唯一作／首作代表作打 3，經典度 26/50 張給 3）。主線改 10 張：Tolerance《Anonym》冷門 4→5；Bernard Fevre、Cecil Leuter、Egisto Macchi、Kathy Stobart、Mistress Mary、Rick Saucedo、The Tree People、Tom Nehls、Vernon Wray 經典 3→4；Cressida《Asylum》經典 5→4（單一雜誌評語不算依據）。
-- **給套用工作階段**：8 張試聽 unavailable 但確知有正式數位版、依 addendum 給冷門 4（Mikey Dread、Cassiano、Λένα Πλάτωνος、Ρίτα Αμπατζή、Big Joe Williams、Koichi Matsukaze、Yasuhiro Kohno《Peace》、難波弘之），機械抬 5 前先看 why。寶萊塢原聲 L<100 照下限給 4，在印地語圈其實是主流，屬下限規則的已知副作用。
+- **給套用工作階段**：8 張試聽 unavailable 但確知有正式數位版、依 addendum 給冷門 4（Mikey Dread、Cassiano、Λένα Πλάτωνος、Ρίτα Αμπατζή、Big Joe Williams、Koichi Matsukaze、Yasuhiro Kohno《Peace》、難波弘之），已標 `floorExempt: true`，套用時跳過。寶萊塢原聲 L<100 照下限給 4，在印地語圈其實是主流，屬下限規則的已知副作用。
 - **主要檔案**：`batch-progress/rerate-20261102/verdicts/s19–s21-*.json`、`s19–s21.summary.md`、`PLAN.md` 分片表。
 - **驗證**：node 合併檢查三片各 250/250，miss 0、bad 0、keep 0；冷門下限機械檢查除上述 8 張數位版例外外 0 違規。
 
