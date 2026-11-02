@@ -1,5 +1,20 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪 R6：s04–s06 verdicts 750 張
+
+- **範圍**：ts7 東南亞搖滾／金屬、ts 法韓華嘻哈、ts6 neofolk／psytrance／rockabilly、c100 古典名盤、c101 遊戲／動畫配樂、日本演歌、韓國 100 大名盤、港台華語、中國搖滾、拉美、c109／c110 法義、德語 NDW、2024–26 國際新碟、c112 日本新碟、c113 沖繩島唄、c114 福音。15 段各 50 張派 Opus 代理照 `rerate-20261102/DISPATCH.md` 重評；只產出 verdicts，seed、manifest、card_catalog 都沒動。
+- **新舊分布（1/2/3/4/5）**：
+  - 經典度 3/129/289/262/67 → 0/19/228/398/105。
+  - 冷門度 11/86/407/207/39 → 13/119/237/287/94。
+  - 硬蕊度 42/588/24/96/0 → 168/424/130/26/2。
+- **主線覆核**：每段抽 5 張以上，退回重派 0 段，改 8 張（`R6-mainline.log`）：
+  - 口徑「只有獎項得獎或單一媒體年榜＝4，不是 5」：The Quiett《Q Train》、Beenzino《NOWITZKI》、넉살《작은 것들의 신》、Subsonic Eye《Nature of Things》、譚詠麟《忘不了您》經典 5→4；Death in June《Nada!》5→4。
+  - Charli xcx、Madonna 2026 新作冷門 1→2。
+  - 經典度 5 偏多（105 張）主要來自 c100 古典名盤、c101 遊戲配樂正典、韓國 100 大名盤、Rolling Stone 法義百大，依據都寫在 why。
+- **給套用**：listeners 疑似配錯但照下限機械給分的盤列在各片 summary（UNDERTALE L=575、藤井風《Prema》L=277、BIGBANG／G.O.D 等）。keep 3 張（2026-07 後新碟無評論）。
+- **主要檔案**：`batch-progress/rerate-20261102/verdicts/s04–s06-*.json`、`s04–s06.summary.md`、`R6-mainline.log`、`PLAN.md`。
+- **驗證**：node 合併檢查三片各 250／250，缺 0、重複 0、值皆 1–5 整數；冷門下限機械檢查除 ADDENDUM 數位版附註 4 張外 0 違規。
+
 ### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪 R5：s01–s03 verdicts 750 張
 
 - **範圍**：shop 店主指定、downtempo dt1–dt5、新爵士 nj1–nj5、細分類 ts1–ts11（東南亞／南亞／蒙古搖滾、衣索比亞、剛果、佛朗明哥、法朵、探戈）。15 段各 50 張派 Opus 代理照 `DISPATCH.md` 評分；只交 verdicts，不動 seed／manifest／card_catalog。
