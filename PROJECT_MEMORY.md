@@ -20,6 +20,17 @@
   - `PLAN.md`。
 - **驗證**：合併檢查三片各 250／250，缺 0、重複 0、多餘 0，值皆 1–5 整數；keep 0。
 
+### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪 R13：s25–s26 verdicts 381 張
+
+- **範圍**：c93 尾–c99（前衛／後龐克／金屬、日搖、戰前藍調與早期爵士、hip-hop／soul、電子、民謠鄉村、印度原聲、世界音樂）＋csea 東南亞 90 張。s25 拆 5 段、s26 拆 3 段派 Opus 代理；只交 verdicts，不動 seed／manifest／card_catalog。
+- **新舊分布（1/2/3/4/5）**：
+  - 經典度：舊 0/54/63/227/37 → 新 0/6/137/190/48。
+  - 冷門度：舊 5/33/104/151/88 → 新 3/83/116/104/75。
+  - 硬蕊度：舊 12/269/22/60/18 → 新 86/187/64/34/10。
+- **主線**：每段抽 5 張覆核，退回重派 0 段，改 1 張（Sheila Majid《Emosi》冷門 2→3，與 Search《Fenomena》口徑統一）；刪 1 筆代理越界寫入的範圍外 verdict。冷門下限低於表 2 張（Gil Scott-Heron & Brian Jackson《The First Minute of a New Day》、Tony Scott《Djanger Bali》），依 ADDENDUM 串流例外接受。s26 冷門 5 佔 42%，幾乎全是「<1,000＋無試聽」硬規則機械值。
+- **主要檔案**：`batch-progress/rerate-20261102/verdicts/s25-*.json`、`s26-*.json`、`s25.summary.md`、`s26.summary.md`、`r13-mainline.log`、`PLAN.md`。
+- **驗證**：node 合併檢查兩片 250／250、131／131，缺 0、重複 0、值皆 1–5 整數；keep 0。
+
 ### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪開工：9 月起入庫 6,381 張＋冷門度下限
 
 - **店主**：「但 Identification 很冷門吧？」→「改 從 9 月初開始入庫的專輯都要檢查一下 除了冷門度 其他兩軸也要」。
