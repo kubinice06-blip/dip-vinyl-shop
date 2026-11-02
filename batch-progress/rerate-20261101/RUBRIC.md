@@ -72,8 +72,10 @@
 
 `score = classic + accessibility + (obscurity>=5 ? 1 : 0)`
 
-- 10 以上 legendary
-- 8 以上 epic
-- 6 以上 uncommon
-- 4 以上 rare
-- 其餘 common
+- 9 以上 legendary
+- 8 epic
+- 7 uncommon
+- 6 rare
+- 5 以下 common
+
+（2026-11-02 店主定案方案 A 改門檻；原為 10/8/6/4。）

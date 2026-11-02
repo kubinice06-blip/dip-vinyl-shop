@@ -10,7 +10,7 @@ const D = 'batch-progress/rerate-20261102/', D1 = 'batch-progress/rerate-2026110
 const WRITE = process.argv.includes('--write');
 const SRC = 'manual:rerate-20261102', AT = '2026-11-02T00:00:00Z';
 const AX = ['classic', 'obscurity', 'accessibility'];
-const rarityOf = (c, o, a) => { const s = c + a + (o >= 5 ? 1 : 0); return s >= 10 ? 'legendary' : s >= 8 ? 'epic' : s >= 6 ? 'uncommon' : s >= 4 ? 'rare' : 'common'; };
+const rarityOf = (c, o, a) => { const s = c + a + (o >= 5 ? 1 : 0); return s >= 9 ? 'legendary' : s >= 8 ? 'epic' : s >= 7 ? 'uncommon' : s >= 6 ? 'rare' : 'common'; };
 const J = p => JSON.parse(fs.readFileSync(p, 'utf8'));
 
 // ---- Last.fm 疑錯配：不套下限，冷門度照 RUBRIC 錨點（調度裁定 2026-11-02；名單出自各片 summary）----

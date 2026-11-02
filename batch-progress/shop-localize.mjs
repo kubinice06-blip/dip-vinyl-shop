@@ -18,7 +18,7 @@ if (!batch || !stamp) { console.error('用法: node batch-progress/shop-localize
 
 const norm = s => String(s || '').toLowerCase().replace(/[‐-―－]/g, '-').normalize('NFKC').replace(/[^\p{L}\p{N}]+/gu, '');
 const key = (a, b) => norm(a) + '|' + norm(b);
-const rarityOf = (c, o, x) => { const s = c + x + (o >= 5 ? 1 : 0); return s >= 10 ? 'legendary' : s >= 8 ? 'epic' : s >= 6 ? 'uncommon' : s >= 4 ? 'rare' : 'common'; };
+const rarityOf = (c, o, x) => { const s = c + x + (o >= 5 ? 1 : 0); return s >= 9 ? 'legendary' : s >= 8 ? 'epic' : s >= 7 ? 'uncommon' : s >= 6 ? 'rare' : 'common'; };
 
 const m = JSON.parse(fs.readFileSync(`batch-progress/${batch}/onboarding-manifest.json`, 'utf8'));
 const local = JSON.parse(fs.readFileSync(`batch-progress/${batch}/local-${stamp}.json`, 'utf8'));

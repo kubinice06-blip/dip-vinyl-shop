@@ -177,7 +177,7 @@
     const c = Number(row[2]) || 0, o = Number(row[3]) || 0, a = Number(row[4]) || 0;
     if (!o) return null;
     const s = c + a + (o >= 5 ? 1 : 0);
-    return s >= 10 ? 'legendary' : s >= 8 ? 'epic' : s >= 6 ? 'uncommon' : s >= 4 ? 'rare' : 'common';
+    return s >= 9 ? 'legendary' : s >= 8 ? 'epic' : s >= 7 ? 'uncommon' : s >= 6 ? 'rare' : 'common';
   };
   const ZH = { Jazz: '爵士', Soul: '靈魂', 'R&B': '節奏藍調', 'Hip-Hop': '嘻哈', Rock: '搖滾', Folk: '民謠', 'City Pop': '城市流行', Pop: '流行', Electronic: '電子', Soundtrack: '原聲帶', Classical: '古典', Reggae: '雷鬼' };
 

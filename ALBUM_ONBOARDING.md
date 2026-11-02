@@ -277,7 +277,7 @@ Last.fm listeners 只當報警。補充三條口徑（重評線定案）：
 - 候選很多時先跑 `/album-rating` 排序，只替短名單解封面與試聽。
 - 三軸一律使用同一套 `/album-rating` 基準；人工修正必須在 manifest 留下理由。
 - `accessibility` 是硬蕊／入耳難度，5 最晦澀，不是好聽度。
-- 稀有度公式：`classic + accessibility + (obscurity >= 5 ? 1 : 0)`；10 以上 legendary、8 以上 epic、6 以上 uncommon、4 以上 rare，其餘 common。
+- 稀有度公式：`classic + accessibility + (obscurity >= 5 ? 1 : 0)`；9 以上 legendary、8 epic、7 uncommon、6 rare、5 以下 common（2026-11-02 店主定案方案 A：原門檻 10/8/6/4 讓傳奇比頂點卡還少、低分卡太少，改成金字塔分布）。
 
 ### 3. 頂點卡資格評估
 

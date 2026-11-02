@@ -6,7 +6,7 @@ import fs from 'node:fs';
 const D = 'batch-progress/rerate-20261101/';
 const WRITE = process.argv.includes('--write');
 const SRC = 'manual:rerate-20261101';
-const rarityOf = (c, o, a) => { const s = c + a + (o >= 5 ? 1 : 0); return s >= 10 ? 'legendary' : s >= 8 ? 'epic' : s >= 6 ? 'uncommon' : s >= 4 ? 'rare' : 'common'; };
+const rarityOf = (c, o, a) => { const s = c + a + (o >= 5 ? 1 : 0); return s >= 9 ? 'legendary' : s >= 8 ? 'epic' : s >= 7 ? 'uncommon' : s >= 6 ? 'rare' : 'common'; };
 
 const shard = {}; for (const f of fs.readdirSync(D + 'shards').sort()) for (const x of JSON.parse(fs.readFileSync(D + 'shards/' + f, 'utf8'))) shard[x.key] = x;
 const verdict = {}; for (const f of fs.readdirSync(D + 'verdicts').filter(f => /^s\d\d-.*\.json$/.test(f)).sort())

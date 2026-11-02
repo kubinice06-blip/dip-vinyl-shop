@@ -3507,10 +3507,10 @@ ${discogs ? '- Discogs：' + discogs : ''}
     if (!row) return null;
     if (row[8] && SHOP_TIER_LABEL[row[8]]) return { tier: row[8], label: SHOP_TIER_LABEL[row[8]] };
     const score = (Number(row[2]) || 0) + (Number(row[4]) || 0) + ((Number(row[3]) || 0) >= 5 ? 1 : 0);
-    if (score >= 10) return { tier: 'legendary', label: '傳奇' };
+    if (score >= 9) return { tier: 'legendary', label: '傳奇' };
     if (score >= 8) return { tier: 'epic', label: '史詩' };
-    if (score >= 6) return { tier: 'uncommon', label: '獨特' };
-    if (score >= 4) return { tier: 'rare', label: '稀有' };
+    if (score >= 7) return { tier: 'uncommon', label: '獨特' };
+    if (score >= 6) return { tier: 'rare', label: '稀有' };
     return { tier: 'common', label: '普通' };
   }
   let shopItems = [];
@@ -4187,7 +4187,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
   // ───────── 一般卡池批次匯入（seed_cards.json → card_catalog）─────────
   const rarityFromStats = (c, o, a) => {
     const s = (c || 0) + (a || 0) + ((o || 0) >= 5 ? 1 : 0);
-    return s >= 10 ? 'legendary' : s >= 8 ? 'epic' : s >= 6 ? 'uncommon' : s >= 4 ? 'rare' : 'common';
+    return s >= 9 ? 'legendary' : s >= 8 ? 'epic' : s >= 7 ? 'uncommon' : s >= 6 ? 'rare' : 'common';
   };
   document.getElementById('seedImportBtn')?.addEventListener('click', async () => {
     const msg = document.getElementById('seedImportMsg');
