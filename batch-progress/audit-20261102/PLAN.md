@@ -63,6 +63,6 @@
 | U3 | H01、H02、H03 | ✅ 660 張（apex：hall 102／pearl 0／heresy 4／none 554）；H01 hall 34、H02 hall 35＋heresy 4、H03 hall 33。舊 5 星標準判定，待 7 星重審 |
 | U4 | H04、H05、X01 | |
 | U5 | X02、P01、P02 | |
-| U6 | P03、P04、P05 | |
+| U6 | P03、P04、P05 | ✅ 645 張（apex：hall 0／pearl 89／heresy 0／none 556）；P03 pearl 52、P04 pearl 33、P05 pearl 4。舊 5 星標準判定，待 7 星重審；拆名錯配只限「國際以羅馬字名為主的藝人」或「語言圈主流暢銷作」，其餘 listeners 當有效值（見各 summary） |
 | 彙整 | — | |
 | 套用 | — | |
