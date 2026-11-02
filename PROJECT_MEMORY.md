@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-02｜dip-vinyl-shop｜頂點 7 星重審 V2：Z04／Z05／Z06 verdicts 交齊（698 張）
+
+- **範圍**：Z04（A 組現有頂點 215＋H 19）、Z05（H 137＋P 97）、Z06（X 123＋P 105＋S 2）。15 段 Opus 代理，主線每段抽 5 張，退回 0 段，主線改 17 筆（多為勉強 7 星降 none，Schnabel 貝多芬全集升 hall 1）。只交 verdicts，未動 seed／manifest／card_catalog／album_overrides。
+- **A 組原 tier → 7 星**：hall 168→18、heresy 25→2、pearl 22→0（留 20／215）。
+- **新候選通過**：Z04 H 5；Z05 hall 21＋heresy 4；Z06 heresy 6；P 組 202 張全 none（壓量無據或已正式再發）。強度 3：London Calling、Are You Experienced、Exile、VU & Nico、Joshua Tree、Astral Weeks、白色專輯、Solti Ring、TNB《Changez les Blockeurs》、非常階段《蔵六の奇病》。
+- **listeners**：`fetch-listeners.mjs` 補 271 張有效值（Z04 142／Z05 101／Z06 28）。
+- **待彙整**：古典參考錄音進不進 hall 的口徑（Gould／Casals／Kleiber／Schnabel 進，Furtwängler／Britten 不進）要全池統一；異端只收 harsh noise 代表盤，新複雜／Lachenmann／自由爵士／噪音搖滾一律 none。
+- **主要檔案**：`batch-progress/audit-20261102/apex7/verdicts/{Z04,Z05,Z06}-*.json`、`{Z04,Z05,Z06}.summary.md`、`apex7/shards/Z0{4,5,6}.json`（listenersKV）、`PLAN.md`。
+- **驗證**：三片合併檢查全過（每 key 一筆、apex7 ∈ hall／pearl／heresy／none、頂點 strength 1–3）。
+
 ### 2026-11-02｜dip-vinyl-shop｜全池稽核 U5：X02／P01／P02 verdicts 交齊（692 張）
 
 - **範圍**：異端候選 172 張（X02）＋流亡候選 520 張（P01、P02 各 260），原 tier 全為 null。15 段 Opus 代理，主線每段抽 5 張；X02 140–172 第一版 32 張判 22 張 heresy（同藝人整串進、證據只到藝人層）整段退回重派，重判 4 張。主線逐張改 11 筆。只交 verdicts，未動卡池。
