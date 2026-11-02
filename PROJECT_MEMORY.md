@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪 R12：s22–s24 verdicts 750 張
+
+- **範圍**：c74–c93（Sarah／Creation 系 twee、美國福音、日本環境音樂／onkyo／techno、UK DIY 與後龐克、Rounder 藍草、URC 民謠、SST／Dischord、lovers rock／dub、loft 與靈性爵士、Johnny's Disk、影史原聲、台灣流行／獨立、英美新浪潮）。15 段各 50 張派 Opus 代理；只交 verdicts，不動 seed／manifest／card_catalog。
+- **新舊分布（1/2/3/4/5）**：經典度 9/345/213/153/30 → 0/38/372/301/39；冷門度 2/9/23/710/6 → 7/54/163/286/240；硬蕊度 15/507/30/188/10 → 90/399/174/79/8。
+- **主線**：每段抽 5 張覆核，退回 0 段。冷門度下限豁免 78 張，標 `floorExempt: true`：大廠電影原聲 19 張（Last.fm 鍵錯配，Lion King 99 人、Matrix 944 人），以及華語圈主流 59 張（伍佰、滅火器、董事長、閃靈等；依 §0.8「以該語言圈為尺度」）。**套用時機械下限要跳過這個欄位。**
+- **主要檔案**：`batch-progress/rerate-20261102/verdicts/s22–s24-*.json`、`s22/s23/s24.summary.md`、`PLAN.md`。
+- **驗證**：三片 node 合併檢查各 250／250，缺 0、重複 0、值皆 1–5 整數；keep 0。
+
 ### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪 R10：s16–s18 verdicts 750 張
 
 - **範圍**：c179–c186、c195–c198 日本爵士／fusion（1967–1989）；c48-rescue 古典；c49–c56 跨類型正典、華語／日語、東南亞、蘇聯、南斯拉夫、土耳其／阿拉伯、中東歐。15 段各 50 張派 Opus 代理照 `rerate-20261102/DISPATCH.md` 重評；只產出 verdicts，seed、manifest、card_catalog 都沒動。
