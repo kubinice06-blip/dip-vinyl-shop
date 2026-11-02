@@ -1,5 +1,25 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪 R9：s13–s15 verdicts 750 張
+
+- **範圍**：
+  - c154–c170：Blue Note 1997–2026 年的目錄盤。
+  - c171–c179：日本爵士與融合，1957–1983 年。
+  - 15 段各 50 張，派 Opus 代理照 `rerate-20261102/DISPATCH.md` 重評。只產出 verdicts，seed、manifest、card_catalog 都沒動。
+- **新舊分布（1/2/3/4/5）**：
+  - 經典度 0/143/369/237/1 → 0/63/498/182/7。
+  - 冷門度 0/6/94/370/280 → 1/156/229/307/57。
+  - 硬蕊度 12/561/107/70/0 → 140/403/178/28/1。
+- **主線覆核**：每段抽 5 張，退回重派 0 段，改 6 張：
+  - 經典度 5→4 三張：Andrew Hill《Time Lines》、Blanchard《A Tale of God's Will》、日野皓正《City Connection》。
+  - 經典度 4→3 三張：「唯一作＝代表作」的機械推論，包括 Ottignon、Booster、Ruben Hein。
+  - Blue Note 片經典度 3 佔 68–70%：主線逐張看過，判定是目錄照單收、非代表作偏多所致，不是失準。理由寫在 summary。
+- **留給套用工作階段**：約十張聽眾 10–65 位的 Blue Note 盤，疑似 worker 對錯條目，冷門度照硬規則給了下限分。
+- **主要檔案**：
+  - `batch-progress/rerate-20261102/verdicts/s13–s15-*.json`、`s13–s15.summary.md`、`r9-mainline.log`。
+  - `PLAN.md`。
+- **驗證**：合併檢查三片各 250／250，缺 0、重複 0、多餘 0，值皆 1–5 整數；keep 0。
+
 ### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪開工：9 月起入庫 6,381 張＋冷門度下限
 
 - **店主**：「但 Identification 很冷門吧？」→「改 從 9 月初開始入庫的專輯都要檢查一下 除了冷門度 其他兩軸也要」。
