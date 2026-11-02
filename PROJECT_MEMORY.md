@@ -1,5 +1,62 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪 R10：s16–s18 verdicts 750 張
+
+- **範圍**：c179–c186、c195–c198 日本爵士／fusion（1967–1989）；c48-rescue 古典；c49–c56 跨類型正典、華語／日語、東南亞、蘇聯、南斯拉夫、土耳其／阿拉伯、中東歐。15 段各 50 張派 Opus 代理照 `rerate-20261102/DISPATCH.md` 重評；只產出 verdicts，seed、manifest、card_catalog 都沒動。
+- **新舊分布（1/2/3/4/5）**：
+  - 經典度 0/166/224/332/28 → 0/48/332/299/71。
+  - 冷門度 5/25/200/473/47 → 7/67/155/298/223。
+  - 硬蕊度 12/538/52/123/25 → 147/364/157/61/21。
+- **主線覆核**：每段抽 5 張＋全段掃 why，退回重派 0 段，改 6 張：
+  - 赤尾三千子《横笛》經典 3→4（代理自寫代表作卻給 3）；はっぴいえんど《HAPPY END》經典 4→3。
+  - Azra 三張、Riblja Čorba《Mrtva priroda》冷門 5→3：listeners＝0 是查詢漏抓，視同缺值。**套用時須豁免冷門下限**。
+  - 日本 fusion／GJT／MJQ 企劃系列經典度 3 佔 52–80%：整條目錄匯入、二線作屬實，代表作皆 4，判定非失準。
+- **主要檔案**：`batch-progress/rerate-20261102/verdicts/s16–s18-*.json`、`s16–s18.summary.md`、`r10-mainline.log`、`PLAN.md`。
+- **驗證**：node 合併檢查三片各 250／250，缺 0、重複 0、值皆 1–5 整數；keep 0；冷門下限機械檢查除上述豁免與 ADDENDUM 數位版附註 2 張外 0 違規。
+
+### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪 R8：s10–s12 verdicts 750 張
+
+- **範圍**：c133 日本爵士企劃盤，與 c13x–c154 的 Blue Note／Pacific Jazz／UA 目錄盤（1946–1998，含 LT／GXF 庫存盤、80–90 年代復興期）。15 段各 50 張，派 Opus 代理照 `rerate-20261102/DISPATCH.md` 重評。只產出 verdicts，seed、manifest、card_catalog 都沒動。
+- **新舊分布（1/2/3/4/5）**：
+  - 經典度 0/43/349/337/21 → 0/50/483/207/10。
+  - 冷門度 0/4/41/242/463 → 0/67/269/350/64。
+  - 硬蕊度 4/622/83/38/3 → 100/503/133/13/1。
+- **主線**：每段抽 5 張覆核，改 2 張：Fats Navarro《Fabulous Vol.2》經典 4→5（與 Vol.1 一致）、Hank Mobley《A Slice of the Top》經典 3→4。退回 0 段。s11 經典度 3 佔 71%（過七成自檢線），回掃後判定是片內庫存盤與二線藝人居多，不是錨點失準。
+- **給套用工作階段**：有十幾張知名 BN 盤的 Last.fm 聽眾數疑似錯配（例如 Cafe Bohemia、Night of the Cookers、Up at Minton's、Doin' the Thing，聽眾數只有個位到百位），照硬下限給了冷門度 4。名單在各片 summary。Miles Davis《Vol.1》《Vol.2》、Milt Jackson BLP 1509、Konitz/Mulligan 試聽 unavailable 卻給 4，是依 ADDENDUM 的「確知有正式數位版」例外。
+- **主要檔案**：`batch-progress/rerate-20261102/verdicts/s1{0,1,2}-*.json`、`s1{0,1,2}.summary.md`、`PLAN.md` 分片表。
+- **驗證**：三片合併檢查各 250/250，miss 0、bad 0、keep 0；冷門度下限逐張機械檢查，除上述 4 張例外以外全部符合。
+
+### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪 R9：s13–s15 verdicts 750 張
+
+- **範圍**：
+  - c154–c170：Blue Note 1997–2026 年的目錄盤。
+  - c171–c179：日本爵士與融合，1957–1983 年。
+  - 15 段各 50 張，派 Opus 代理照 `rerate-20261102/DISPATCH.md` 重評。只產出 verdicts，seed、manifest、card_catalog 都沒動。
+- **新舊分布（1/2/3/4/5）**：
+  - 經典度 0/143/369/237/1 → 0/63/498/182/7。
+  - 冷門度 0/6/94/370/280 → 1/156/229/307/57。
+  - 硬蕊度 12/561/107/70/0 → 140/403/178/28/1。
+- **主線覆核**：每段抽 5 張，退回重派 0 段，改 6 張：
+  - 經典度 5→4 三張：Andrew Hill《Time Lines》、Blanchard《A Tale of God's Will》、日野皓正《City Connection》。
+  - 經典度 4→3 三張：「唯一作＝代表作」的機械推論，包括 Ottignon、Booster、Ruben Hein。
+  - Blue Note 片經典度 3 佔 68–70%：主線逐張看過，判定是目錄照單收、非代表作偏多所致，不是失準。理由寫在 summary。
+- **留給套用工作階段**：約十張聽眾 10–65 位的 Blue Note 盤，疑似 worker 對錯條目，冷門度照硬規則給了下限分。
+- **主要檔案**：
+  - `batch-progress/rerate-20261102/verdicts/s13–s15-*.json`、`s13–s15.summary.md`、`r9-mainline.log`。
+  - `PLAN.md`。
+- **驗證**：合併檢查三片各 250／250，缺 0、重複 0、多餘 0，值皆 1–5 整數；keep 0。
+
+### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪 R13：s25–s26 verdicts 381 張
+
+- **範圍**：c93 尾–c99（前衛／後龐克／金屬、日搖、戰前藍調與早期爵士、hip-hop／soul、電子、民謠鄉村、印度原聲、世界音樂）＋csea 東南亞 90 張。s25 拆 5 段、s26 拆 3 段派 Opus 代理；只交 verdicts，不動 seed／manifest／card_catalog。
+- **新舊分布（1/2/3/4/5）**：
+  - 經典度：舊 0/54/63/227/37 → 新 0/6/137/190/48。
+  - 冷門度：舊 5/33/104/151/88 → 新 3/83/116/104/75。
+  - 硬蕊度：舊 12/269/22/60/18 → 新 86/187/64/34/10。
+- **主線**：每段抽 5 張覆核，退回重派 0 段，改 1 張（Sheila Majid《Emosi》冷門 2→3，與 Search《Fenomena》口徑統一）；刪 1 筆代理越界寫入的範圍外 verdict。冷門下限低於表 2 張（Gil Scott-Heron & Brian Jackson《The First Minute of a New Day》、Tony Scott《Djanger Bali》），依 ADDENDUM 串流例外接受。s26 冷門 5 佔 42%，幾乎全是「<1,000＋無試聽」硬規則機械值。
+- **主要檔案**：`batch-progress/rerate-20261102/verdicts/s25-*.json`、`s26-*.json`、`s25.summary.md`、`s26.summary.md`、`r13-mainline.log`、`PLAN.md`。
+- **驗證**：node 合併檢查兩片 250／250、131／131，缺 0、重複 0、值皆 1–5 整數；keep 0。
+
 ### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪開工：9 月起入庫 6,381 張＋冷門度下限
 
 - **店主**：「但 Identification 很冷門吧？」→「改 從 9 月初開始入庫的專輯都要檢查一下 除了冷門度 其他兩軸也要」。
