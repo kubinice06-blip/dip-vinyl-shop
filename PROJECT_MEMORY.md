@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-02｜dip-vinyl-shop｜全池稽核 U5：X02／P01／P02 verdicts 交齊（692 張）
+
+- **範圍**：異端候選 172 張（X02）＋流亡候選 520 張（P01、P02 各 260），原 tier 全為 null。15 段 Opus 代理，主線每段抽 5 張；X02 140–172 第一版 32 張判 22 張 heresy（同藝人整串進、證據只到藝人層）整段退回重派，重判 4 張。主線逐張改 11 筆。只交 verdicts，未動卡池。
+- **apex**：X02 heresy 27／none 145（強度 3：Ferneyhough 鋼琴全集、Pharmakon《Bestial Burden》）；P01 pearl 63／none 197（強度 3：Dada《Jyo》、Deerfield《Nil Desperandum》）；P02 pearl 50／none 210。
+- **三軸**：X02 硬蕊度原值整片 5→平均 4.23（歌劇、文藝復興複音、Grainger、Pole 等錯列降到 1–3），冷門度 4.16→3.59（DG／Decca／ECM 正規盤高估）；P 組冷門度原值整片 5→約 4.6（有數位版降 4、聽眾錯配照錨點 2–3），經典度、硬蕊度無系統偏差。
+- **主線判準**：heresy 要單盤可信描述，證據只到藝人層 → none；pearl 要實質冷門度 5（私壓／極小廠、無串流），被 ADDENDUM 下限機械抬到 5 的大廠／國營廠／正規商業廠盤 → none，疑錯配 → none。
+- **待彙整**：照舊 5 星標準判定，頂點要按 7 星重審；Ogun／Okka／Incus／India Navigation 類小型專業廠 pearl 判法不一，建議整批二選一；多數 pearl 證據網址是照格式拼的或 Discogs 搜尋頁，套用前要補成本盤頁。
+- **主要檔案**：`batch-progress/audit-20261102/verdicts/{X02,P01,P02}-*.json`、`{X02,P01,P02}.summary.md`、`PLAN.md`。
+- **驗證**：三片合併檢查全過（每 key 一筆、三軸 1–5、apex 合法、頂點皆 ≥2 個 https 證據、heresy 皆硬蕊 5、pearl 皆冷門 5 且 L<300）。
+
 ### 2026-11-02｜dip-vinyl-shop｜全池稽核 U4：H04／H05／X01 verdicts 交齊（679 張）
 
 - **範圍**：殿堂候選 439 張（H04 220、H05 219）＋異端候選 240 張（X01），原 tier 全為 null。15 段 Opus 代理，主線每段抽 5 張，退回 0 段，主線逐張改 21 筆（含 3 筆只換死連結）。只交 verdicts，未動卡池。

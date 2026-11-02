@@ -62,7 +62,7 @@
 | U2 | A04、S01、S02 | ✅ A04 227 張（apex：hall 92／pearl 2／heresy 23／none 110）；S01 210 張（hall 2／none 208）；S02 193 張（none 193）。舊 5 星標準，頂點待 7 星重審；S 組冷門度方向待 KV listeners 重套下限 |
 | U3 | H01、H02、H03 | ✅ 660 張（apex：hall 102／pearl 0／heresy 4／none 554）；H01 hall 34、H02 hall 35＋heresy 4、H03 hall 33。舊 5 星標準判定，待 7 星重審 |
 | U4 | H04、H05、X01 | ✅ H04 220 張（apex：hall 34／pearl 0／heresy 3／none 183）；H05 219 張（hall 10／pearl 0／heresy 3／none 206）；X01 240 張（hall 0／pearl 8／heresy 88／none 144）。舊 5 星標準判定，待 7 星重審；X01 異端約四成成立，候選池集中在 Xenakis／Lachenmann／新複雜／日噪，彙整時按強度裁 |
-| U5 | X02、P01、P02 | |
+| U5 | X02、P01、P02 | ✅ X02 172 張（apex：hall 0／pearl 0／heresy 27／none 145）；P01 260 張（hall 0／pearl 63／heresy 0／none 197）；P02 260 張（hall 0／pearl 50／heresy 0／none 210）。舊 5 星標準判定，待 7 星重審；X02 末段太鬆退回重派一次；pearl 只收實質私壓／極小廠，被下限抬到 5 的大廠盤一律 none；Ogun／Okka／Incus 類小型專業廠口徑未統一，留彙整二選一 |
 | U6 | P03、P04、P05 | ✅ 645 張（apex：hall 0／pearl 89／heresy 0／none 556）；P03 pearl 52、P04 pearl 33、P05 pearl 4。舊 5 星標準判定，待 7 星重審；拆名錯配只限「國際以羅馬字名為主的藝人」或「語言圈主流暢銷作」，其餘 listeners 當有效值（見各 summary） |
 | 彙整 | — | |
 | 套用 | — | |
