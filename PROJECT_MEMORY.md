@@ -1,5 +1,71 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-02｜dip-vinyl-shop｜全池稽核 U4：H04／H05／X01 verdicts 交齊（679 張）
+
+- **範圍**：殿堂候選 439 張（H04 220、H05 219）＋異端候選 240 張（X01），原 tier 全為 null。15 段 Opus 代理，主線每段抽 5 張，退回 0 段，主線逐張改 21 筆（含 3 筆只換死連結）。只交 verdicts，未動卡池。
+- **apex**：H04 hall 34／heresy 3／none 183；H05 hall 10／heresy 3／none 206；X01 heresy 88／pearl 8／none 144。強度 3：hall 15、heresy 23。
+- **三軸**：H 組經典度 5.00→約 4.6（代表作次級盤 5→4），冷門度 −0.3；X 組硬蕊度原本全 5、降到平均 4.27（Coil／Current 93 民謠期、浪漫派古典 5→2–3），冷門度 −0.70（國際古典正規廠誤標 5）。
+- **主線判準**：殿堂要兩個獨立歷代榜／正典來源，或該國權威榜首位級；只有樂評傳說、單一榜單、獎項銷量→none。異端要專輯層級的可信描述；只有類型歸屬→none（私壓、L 有效＜300 的改 pearl）。H 組遇明確異端照實判 heresy。
+- **注意**：照舊 5 星標準判定（派工早於 DISPATCH 改 7 星），彙整時頂點要按 7 星重審。
+- **主要檔案**：`batch-progress/audit-20261102/verdicts/{H04,H05,X01}-*.json`、`{H04,H05,X01}.review.md`、`.summary.md`、`PLAN.md`。
+- **驗證**：三片合併檢查全過（每 key 一筆、三軸 1–5、apex 合法、頂點皆 ≥2 個 https 證據）；X01 證據網址實測，3 個 404 已換。
+
+### 2026-11-02｜dip-vinyl-shop｜全池稽核 U6：流亡候選 P03–P05 判定 645 張
+
+- **結果**：apex hall 0／pearl 89／heresy 0／none 556（P03 52、P04 33、P05 4；強度 3 共 7 張）。舊 5 星標準，頂點待調度按 7 星重審。
+- **三軸**：冷門度原本全是 5，平均降到 4.60（P03）、4.25（P04）、3.57（P05）——主因是有正式數位版的盤給 4、拆名錯配的主流盤照錨點給 2–3；經典度、硬蕊度大致持平。
+- **主線退回**：主線第一次補的「漢字掛名＝錯配」規則下得太寬，P04 三段、P05 一段把國營廠／日本小廠盤一律壓到 3、私壓 pearl 全撤；收窄成「國際以羅馬字名為主的藝人，或語言圈主流暢銷作」才算錯配後，整段退回重判；P04-52-104 還原成已驗收版本。另主線直接改 P03 Caretaker、P05 渡辺貞夫等 18 張。
+- **主要檔案**：`batch-progress/audit-20261102/verdicts/P03-*.json`、`P04-*.json`、`P05-*.json`、`P0{3,4,5}.summary.md`、`PLAN.md`。
+- **驗證**：三片合併檢查——每 key 一筆、三軸 1–5、apex 合法；未改 seed／manifest／card_catalog。
+
+### 2026-11-02｜dip-vinyl-shop｜全池稽核 U3：H01／H02／H03 殿堂候選 verdicts 交齊（660 張）
+
+- **範圍**：殿堂候選 660 張（原值經典度全是 5、無 tier）。15 段 Opus 代理判定，主線每段抽 5 張覆核，退回 0 段，逐張改 25 筆。只交 verdicts，沒動卡池。
+- **apex**：hall 102／heresy 4／pearl 0／none 554。強度 3 有 41 張。heresy 4 張是 Derek Bailey、Evan Parker 的 Incus 盤，原本列在殿堂候選。
+- **三軸**：經典度 5.00→約 4.54（三片分別 4.49／4.56／4.56）。多數代表作次要盤降到 4，非代表作的吹奏場次降到 3。冷門度降約 0.25，集中在 ECM、Impulse、Can、Jarrett 誤標 5 的盤。硬蕊度大致持平。
+- **主線判準**（寫進各 summary）：
+  - 以下退 none：子類型或場景里程碑（Age of Quarrel、American Football、Jane Doe）、本國榜非首位級（RS Brasil／阿根廷 #13）、藝人次代表作、年資未滿（2019 年以後）、未指定錄音的作品卡、同曲有多個名版並立。
+  - 證據只是轉引的降強度。
+- **注意**：本片照舊 5 星標準判定，彙整時頂點要按 7 星重審。
+- **主要檔案**：`batch-progress/audit-20261102/verdicts/H0{1,2,3}-*-*.json`、`H0{1,2,3}.json`（合併檔）、`H0{1,2,3}.summary.md`。
+- **驗證**：合併檢查三片都過（每 key 一筆、三軸 1–5、apex 合法）。分段重疊的 1 張（第 44 張）以後段為準，兩段已同步。
+
+### 2026-11-02｜dip-vinyl-shop｜全池稽核 U1：A01／A02／A03 verdicts 交齊（690 張）
+
+- **範圍**：現有頂點卡 690 張，15 段 Opus 代理判定，主線每段抽查。
+- **apex**（原 tier → 新判定）：殿堂 514 → 留 248、改 none 266；異端 89 → 留 60（另 1 張 Dolphy《Out to Lunch!》異端改殿堂）、改 none 28；流亡 87 → 全改 none。合計 hall 249／heresy 60／pearl 0／none 381。
+  - 流亡全撤：shard 的 listeners 全是缺值（build-worklist 只讀 9 月後 manifest），而且多數已有考古串流再發，冷門度判 ≤4。新冷門度仍判 5 的 4 張列在各片 summary，待 KV 查 listeners。
+  - 判定照舊 5 星標準，頂點待 7 星重審。
+- **三軸**：經典度 +0.05～+0.12，殿堂卡原值 4 補到 5 的有數十張。冷門度 −0.13～−0.38，主流盤原值偏高。硬蕊度 −0.18～−0.02。
+- **主線**：改 22 張，多是代理自評 strength 1、同藝人第 3～4 張殿堂、DJ 混音或首錄參考版，改成 none；另補填兩段漏填的 strength。
+  - A02-46-92 偏鬆（9 張 strength 1）。沒有整段退回，主線就地撤 6 張。其餘各段沒有系統性偏差，退回 0 段。
+- **主要檔案**：`batch-progress/audit-20261102/verdicts/A0[123]-*.json`、`A0[123].summary.md`、`A0[123].mainline.md`。
+- **驗證**：三片合併檢查都過：每 key 一筆、三軸 1–5、apex 合法、留下的頂點都符合該軸 5。
+
+### 2026-11-02｜dip-vinyl-shop｜全池稽核 U2：A04／S01／S02 verdicts 交齊（630 張）
+
+- **範圍**：A04 現有頂點 227 張、S01／S02 9 月前一般卡盲評 403 張。15 段 Opus 代理判定，主線每段抽 5 張覆核，退回 0 段。只交 verdicts，沒動卡池。
+- **A04**：apex hall 92／pearl 2／heresy 23／none 110。
+  - 殿堂撤 86/178，撤的多是藝人代表作層級。
+  - 流亡撤 20/22，多數冷門度判 ≤4（已有考古串流再發或大廠盤）。
+  - 小久保隆只因 shard 缺 listeners 被撤，主線改成暫留，待 KV 核實。
+  - 判定照的是舊 5 星標準，頂點要按 7 星重審。
+- **S 組一致率**：經典度 40%／47%，cur 偏低，集中在 none 層，代表作被壓在 2–3。冷門度 39%／38%，cur 偏高約 0.6。硬蕊度 63%／53%，偏差小。
+  - S 組幾乎全部缺 listeners，冷門度下限沒套到，所以冷門度方向待 KV 重套下限再定論。
+- **主線改動**：Arovane《Organism》經典度 2→3、Theo Parrish《Sketches》冷門度 3→4；補 A04-91-136 漏填的 strength；刪 S02-0-39 越界的 1 筆。
+- **主要檔案**：`batch-progress/audit-20261102/verdicts/`（A04／S01／S02 段檔、`*.summary.md`、`*.mainline.json`、`summarize.py`）。
+- **驗證**：`summarize.py` 合併檢查三片都過（每 key 一筆、三軸 1–5、apex 合法、tier 與該軸 5 相符）。
+
+### 2026-11-02｜dip-vinyl-shop｜頂點卡標準更正：該軸要到 7 星
+
+- **店主**：「不是五分就可以進 是要七分 我以前有寫過標準」。
+- **依據**：`CARD_GAME_DESIGN.md` §8.2 寫明王牌（頂點）＝單軸 7，前台那一軸也顯示 7 星。
+- **改動**：
+  - `ALBUM_ONBOARDING.md` §3 加上「頂點＝該軸 7 星」，並補各 tier 的 7 星錨點。
+  - `batch-progress/audit-20261102/DISPATCH.md` 的頂點定義改成 5 星對照 7 星錨點表。
+  - 已開工的 U1–U6 收不到中途訊息，照舊標準交件；彙整時把判為頂點的另派一輪，按 7 星重審。
+- **驗證**：文件改動，無資料寫入。
+
 ### 2026-11-02｜dip-vinyl-shop｜全池評分稽核＋頂點卡篩選開工
 
 - **店主**：「全部檢查評分是否失準 是否有些要上頂點卡」。
@@ -180,7 +246,7 @@
 
 - **範圍**：情緒薄格 mc5 後段–mc9、md1–md4、md10–md34（electro／minimal techno、dark ambient／drone、恐怖配樂、雲端饒舌、slowcore／darkwave、dark jazz、funeral doom），15 段各 50 張派 Opus 代理照 `DISPATCH.md` 重評；只產 verdicts，不改 seed／manifest／card_catalog。
 - **新舊分布（1/2/3/4/5）**：經典度 0/26/659/65/0 → 0/8/448/282/12；冷門度 6/40/164/256/284 → 3/99/447/178/23；硬蕊度 0/16/578/121/35 → 2/103/416/212/17。
-- **主線**：每段抽 5 張覆核，退回重派 0 段。改 28 張：經典 5→4 兩張（Lil Peep《HELLBOY》、Bohren《Sunset Mission》，缺權威依據）；Corrupted 兩張冷門 4→5（極小廠無串流，代理從寬）；冷門度口徑不一（當代小廠首發即上數位給 4）→ 定「場景主力廠＝3、極小廠／私壓＝4」，主線改 22 張 4→3 並發規則給在飛代理；硬蕊 2 張微調。明細在 `verdicts/s04–s06.summary.md`（主線改動的 verdict 帶 `mainline:true`）。
+- **主線**：每段抽 5 張覆核，退回重派 0 段。改 28 張：經典 5→4 兩張（Lil Peep《HELLBOY》、Bohren《Sunset Mission》，缺權威依據）；Corrupted 兩張冷門 4→5（極小廠無串流，代理從寬）；冷門度口徑不一（當代小廠首發即上數位給 4）→ 定「場景主力廠＝3、極小廠／私壓＝4」，主線改 25 張 4→3 並發規則給在飛代理；硬蕊 2 張微調。明細在 `verdicts/s04–s06.summary.md`（主線改動的 verdict 帶 `mainline:true`）。
 - **主要檔案**：`batch-progress/rerate-20261101/verdicts/s04–s06-*.json`、`s04–s06.summary.md`、`PLAN.md`。
 - **驗證**：合併檢查三片各 250／250，缺 0、重複 0、值皆 1–5 整數；keep 0。
 
