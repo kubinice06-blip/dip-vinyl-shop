@@ -215,6 +215,26 @@ Last.fm listeners 只當報警。補充三條口徑（重評線定案）：
 - 當代場景主力廠（Cryo Chamber、Cyclic Law、Miasmah、Touch、Room40、Kranky、Mego 等）首發即上串流＝3；
   極小廠／私壓、首刷限量但已上串流＝4；有正式串流再發的考古盤最多 4。
 
+**冷門度下限（硬規則，2026-11-02 店主指正「但 Identification 很冷門吧？」後補）**：上面的「看原盤通路」
+會反過頭給低（國營廠盤當成本國主流＝3、MPS 當成正規發行＝2–3）。冷門度的尺度是**我們的玩家撞見這份錄音的機率**，
+不是它在原產國的流通量。錨點判完後，再用 Last.fm listeners 機械檢查一次，**只往上抬、不往下壓**：
+
+| 條件 | 冷門度 |
+|---|---|
+| listeners < 1,000，且 manifest `preview.status`＝`ready`（有串流） | **至少 4** |
+| listeners < 1,000，且 `preview.status` 不是 `ready`（串流上找不到） | **5** |
+| listeners 1,000–4,999 | 至少 3 |
+| listeners 缺值 | 照錨點判，不套下限 |
+
+- **但書（數位版）**：試聽不是 `ready`，但確知該盤有 Spotify／Bandcamp 等正式數位版，在 `why`／`note` 寫明，給 4 不給 5。
+- **例外（聽眾數疑似錯配）**：知名盤聽眾數極低，只因 Last.fm 上的盤名寫法不同、掛名拆散、同系列知名卷次
+  （例：Horace Silver《Doin' the Thing》、Freddie Hubbard《Night of the Cookers》Vol.1／2、
+  Ornette Coleman《Golden Circle》Vol.2、蕭亞軒《蕭亞軒》、陳奕迅《？》）、listeners＝0 是查詢漏抓（Azra、Riblja Čorba）
+  ——**不套下限，照錨點判**（知名國際盤通常 3、該語言圈主流 2）。判準：已依錨點判為 ≤2 的正規／主流盤，
+  下限卻要一口氣抬到 4–5，先當成錯配查。例外與理由寫進 `note`。
+- 套用實例與名單：`batch-progress/rerate-20261102/`（`RUBRIC-ADDENDUM.md`、`apply.mjs` 的 `MISMATCH`、`REPORT.md`）。
+  《Identification》L=113、試聽 ready → 冷門度 3→4。
+
 **硬蕊度 accessibility＝入耳難度，5＝晦澀前衛，1＝旋律親切。不是好聽度。**
 
 | 分 | 錨點 |

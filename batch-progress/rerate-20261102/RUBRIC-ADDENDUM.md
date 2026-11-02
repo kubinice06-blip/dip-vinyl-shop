@@ -28,4 +28,10 @@
 
 - 下限只往上抬，不往下壓。聽眾多的盤照 RUBRIC 錨點判，可以給 1–2。
 - 「試聽 ready」只是「有串流」的近似。代理若確知該盤有 Spotify／Bandcamp 正式數位版，可在 `why` 註明，冷門度給 4。
+- **例外：聽眾數疑似錯配不套下限，照 RUBRIC 錨點判**（2026-11-02 套用工作階段調度裁定）。例如：
+  - 同系列知名卷次、盤名寫法不同（Horace Silver《Doin' the Thing》、Freddie Hubbard《Night of the Cookers》Vol.1／Vol.2、Ornette Coleman《Golden Circle》Vol.2、Art Blakey《Jazz Corner of the World》Vol.1／2 等）：冷門度給 **3**。
+  - 該語言圈主流盤因拆名而聽眾數低（告五人、張惠妹、蕭亞軒、陳奕迅）：照錨點給 2。
+  - listeners＝0 是查詢漏抓（Azra、Riblja Čorba）：視同缺值。
+  - 第一輪套下限的判準：已依錨點判為 ≤2 的正規／主流盤，下限卻要一口氣抬到 4–5，視為疑錯配，維持原值。
+  - 完整名單在 `apply.mjs` 的 `MISMATCH`，套用結果見 `REPORT.md`。
 - 評分代理照這張表直接給分。套用工作階段會再機械檢查一次，第一輪 2,957 張也一併套用。
