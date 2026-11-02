@@ -61,7 +61,7 @@
 | U1 | A01、A02、A03 | ✅ A01 230 張（apex：hall 85／pearl 0／heresy 16／none 129）；A02 230 張（hall 81／pearl 0／heresy 20／none 129）；A03 230 張（hall 83／pearl 0／heresy 24／none 123）。舊 5 星標準，頂點待 7 星重審；原流亡 87 張 shard 全缺 listeners，冷門度仍判 5 的 4 張列在 summary 待補查 |
 | U2 | A04、S01、S02 | ✅ A04 227 張（apex：hall 92／pearl 2／heresy 23／none 110）；S01 210 張（hall 2／none 208）；S02 193 張（none 193）。舊 5 星標準，頂點待 7 星重審；S 組冷門度方向待 KV listeners 重套下限 |
 | U3 | H01、H02、H03 | ✅ 660 張（apex：hall 102／pearl 0／heresy 4／none 554）；H01 hall 34、H02 hall 35＋heresy 4、H03 hall 33。舊 5 星標準判定，待 7 星重審 |
-| U4 | H04、H05、X01 | |
+| U4 | H04、H05、X01 | ✅ H04 220 張（apex：hall 34／pearl 0／heresy 3／none 183）；H05 219 張（hall 10／pearl 0／heresy 3／none 206）；X01 240 張（hall 0／pearl 8／heresy 88／none 144）。舊 5 星標準判定，待 7 星重審；X01 異端約四成成立，候選池集中在 Xenakis／Lachenmann／新複雜／日噪，彙整時按強度裁 |
 | U5 | X02、P01、P02 | |
 | U6 | P03、P04、P05 | ✅ 645 張（apex：hall 0／pearl 89／heresy 0／none 556）；P03 pearl 52、P04 pearl 33、P05 pearl 4。舊 5 星標準判定，待 7 星重審；拆名錯配只限「國際以羅馬字名為主的藝人」或「語言圈主流暢銷作」，其餘 listeners 當有效值（見各 summary） |
 | 彙整 | — | |
