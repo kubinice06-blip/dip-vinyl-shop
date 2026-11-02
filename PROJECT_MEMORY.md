@@ -1,5 +1,19 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-02｜dip-vinyl-shop｜全池稽核 U2：A04／S01／S02 verdicts 交齊（630 張）
+
+- **範圍**：A04 現有頂點 227 張、S01／S02 9 月前一般卡盲評 403 張。15 段 Opus 代理判定，主線每段抽 5 張覆核，退回 0 段。只交 verdicts，沒動卡池。
+- **A04**：apex hall 92／pearl 2／heresy 23／none 110。
+  - 殿堂撤 86/178，撤的多是藝人代表作層級。
+  - 流亡撤 20/22，多數冷門度判 ≤4（已有考古串流再發或大廠盤）。
+  - 小久保隆只因 shard 缺 listeners 被撤，主線改成暫留，待 KV 核實。
+  - 判定照的是舊 5 星標準，頂點要按 7 星重審。
+- **S 組一致率**：經典度 40%／47%，cur 偏低，集中在 none 層，代表作被壓在 2–3。冷門度 39%／38%，cur 偏高約 0.6。硬蕊度 63%／53%，偏差小。
+  - S 組幾乎全部缺 listeners，冷門度下限沒套到，所以冷門度方向待 KV 重套下限再定論。
+- **主線改動**：Arovane《Organism》經典度 2→3、Theo Parrish《Sketches》冷門度 3→4；補 A04-91-136 漏填的 strength；刪 S02-0-39 越界的 1 筆。
+- **主要檔案**：`batch-progress/audit-20261102/verdicts/`（A04／S01／S02 段檔、`*.summary.md`、`*.mainline.json`、`summarize.py`）。
+- **驗證**：`summarize.py` 合併檢查三片都過（每 key 一筆、三軸 1–5、apex 合法、tier 與該軸 5 相符）。
+
 ### 2026-11-02｜dip-vinyl-shop｜頂點卡標準更正：該軸要到 7 星
 
 - **店主**：「不是五分就可以進 是要七分 我以前有寫過標準」。
