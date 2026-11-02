@@ -1,12 +1,473 @@
 [
-{"key":"Elis Regina & Antônio Carlos Jobim|Elis & Tom","classic":5,"obscurity":2,"accessibility":1,"apex":"hall","strength":2,"evidence":["https://en.wikipedia.org/wiki/Elis_%26_Tom","https://en.wikipedia.org/wiki/List_of_Rolling_Stone_Brasil_100_Greatest_Brazilian_Music_Records"],"why":"RS Brasil 百大第 11，bossa nova 史人人必提（與 H02-0-45 同判）","keep":false},
-{"key":"Elisabeth Schwarzkopf & Dietrich Fischer-Dieskau|Mahler: Des Knaben Wunderhorn","classic":5,"obscurity":3,"accessibility":2,"apex":"hall","strength":2,"evidence":["https://en.wikipedia.org/wiki/Des_Knaben_Wunderhorn_(Mahler)","https://www.gramophone.co.uk/features/article/mahler-s-des-knaben-wunderhorn-a-guide-to-the-best-recordings"],"why":"Szell／EMI 1968 版長年為此曲首選參考錄音，Penguin／Gramophone 共識","keep":false},
-{"key":"Elisabeth Schwarzkopf|R. Strauss: Vier letzte Lieder (Szell)","classic":5,"obscurity":3,"accessibility":2,"apex":"hall","strength":3,"evidence":["https://en.wikipedia.org/wiki/Four_Last_Songs","https://www.gramophone.co.uk/features/article/strauss-s-four-last-songs-a-guide-to-the-best-recordings"],"why":"史上最常被列為首選的《最後四首歌》，Gramophone 名錄常客；後浪漫歌曲入耳 3→2","keep":false},
-{"key":"Ella Fitzgerald|Ella Fitzgerald Sings the Harold Arlen Song Book","classic":4,"obscurity":2,"accessibility":1,"apex":"none","why":"Songbook 系列佳作，但非 Cole Porter／Gershwin 那類核心卷；聽眾 1.2 萬→冷門 2","keep":false},
-{"key":"Ella Fitzgerald|Ella Fitzgerald Sings the Irving Berlin Song Book","classic":4,"obscurity":2,"accessibility":1,"apex":"none","why":"Songbook 系列一卷，強作非首選；標準曲人聲爵士入耳 1","keep":false},
-{"key":"Elton John, Tim Rice & Hans Zimmer|The Lion King: Original Motion Picture Soundtrack","classic":4,"obscurity":1,"accessibility":1,"apex":"none","why":"暢銷葛萊美原聲，非樂評正典；聽眾 99 為錯配不套下限","keep":false},
-{"key":"Elvis Costello and The Attractions|Imperial Bedroom","classic":5,"obscurity":2,"accessibility":2,"apex":"hall","strength":1,"evidence":["https://en.wikipedia.org/wiki/Imperial_Bedroom","https://en.wikipedia.org/wiki/1001_Albums_You_Must_Hear_Before_You_Die"],"why":"RS 500（2003）與 1001 Albums 收錄；但 Costello 最必提的是 This Year's Model，邊緣","keep":false},
-{"key":"Emerson String Quartet|Bartók: The 6 String Quartets","classic":5,"obscurity":3,"accessibility":4,"apex":"none","why":"葛萊美與 Gramophone 年度唱片，但巴托克四重奏參考版有多家並立；DG 盤聽眾 232 屬錯配，冷門 4→3","keep":false},
-{"key":"Emil Gilels|Grieg: Lyric Pieces","classic":5,"obscurity":3,"accessibility":1,"apex":"none","why":"Penguin／Gramophone 推崇的參考版，但曲目屬小品，非古典人人必提層級","keep":false},
-{"key":"Eminem|The Marshall Mathers LP","classic":5,"obscurity":1,"accessibility":2,"apex":"hall","strength":3,"evidence":["https://en.wikipedia.org/wiki/The_Marshall_Mathers_LP","https://www.rollingstone.com/music/music-lists/best-albums-of-all-time-1062063/"],"why":"RS 500、1001 Albums、葛萊美；千禧嘻哈人人必提。內容尖銳 1→2","keep":false}
+{
+"key": "Elis Regina & Antônio Carlos Jobim|Elis & Tom",
+"classic": 5,
+"obscurity": 2,
+"accessibility": 1,
+"apex": "hall",
+"strength": 2,
+"evidence": [
+"https://en.wikipedia.org/wiki/Elis_%26_Tom",
+"https://en.wikipedia.org/wiki/List_of_Rolling_Stone_Brasil_100_Greatest_Brazilian_Music_Records"
+],
+"why": "RS Brasil 百大第 11，bossa nova 史人人必提（與 H02-0-45 同判）",
+"keep": false
+},
+{
+"key": "Elisabeth Schwarzkopf & Dietrich Fischer-Dieskau|Mahler: Des Knaben Wunderhorn",
+"classic": 5,
+"obscurity": 3,
+"accessibility": 2,
+"apex": "hall",
+"strength": 2,
+"evidence": [
+"https://en.wikipedia.org/wiki/Des_Knaben_Wunderhorn_(Mahler)",
+"https://www.gramophone.co.uk/features/article/mahler-s-des-knaben-wunderhorn-a-guide-to-the-best-recordings"
+],
+"why": "Szell／EMI 1968 版長年為此曲首選參考錄音，Penguin／Gramophone 共識",
+"keep": false
+},
+{
+"key": "Elisabeth Schwarzkopf|R. Strauss: Vier letzte Lieder (Szell)",
+"classic": 5,
+"obscurity": 3,
+"accessibility": 2,
+"apex": "hall",
+"strength": 3,
+"evidence": [
+"https://en.wikipedia.org/wiki/Four_Last_Songs",
+"https://www.gramophone.co.uk/features/article/strauss-s-four-last-songs-a-guide-to-the-best-recordings"
+],
+"why": "史上最常被列為首選的《最後四首歌》，Gramophone 名錄常客；後浪漫歌曲入耳 3→2",
+"keep": false
+},
+{
+"key": "Ella Fitzgerald|Ella Fitzgerald Sings the Harold Arlen Song Book",
+"classic": 4,
+"obscurity": 2,
+"accessibility": 1,
+"apex": "none",
+"why": "Songbook 系列佳作，但非 Cole Porter／Gershwin 那類核心卷；聽眾 1.2 萬→冷門 2",
+"keep": false
+},
+{
+"key": "Ella Fitzgerald|Ella Fitzgerald Sings the Irving Berlin Song Book",
+"classic": 4,
+"obscurity": 2,
+"accessibility": 1,
+"apex": "none",
+"why": "Songbook 系列一卷，強作非首選；標準曲人聲爵士入耳 1",
+"keep": false
+},
+{
+"key": "Elton John, Tim Rice & Hans Zimmer|The Lion King: Original Motion Picture Soundtrack",
+"classic": 4,
+"obscurity": 1,
+"accessibility": 1,
+"apex": "none",
+"why": "暢銷葛萊美原聲，非樂評正典；聽眾 99 為錯配不套下限",
+"keep": false
+},
+{
+"key": "Elvis Costello and The Attractions|Imperial Bedroom",
+"classic": 5,
+"obscurity": 2,
+"accessibility": 2,
+"apex": "hall",
+"strength": 1,
+"evidence": [
+"https://en.wikipedia.org/wiki/Imperial_Bedroom",
+"https://en.wikipedia.org/wiki/1001_Albums_You_Must_Hear_Before_You_Die"
+],
+"why": "RS 500（2003）與 1001 Albums 收錄；但 Costello 最必提的是 This Year's Model，邊緣",
+"keep": false
+},
+{
+"key": "Emerson String Quartet|Bartók: The 6 String Quartets",
+"classic": 5,
+"obscurity": 3,
+"accessibility": 4,
+"apex": "none",
+"why": "葛萊美與 Gramophone 年度唱片，但巴托克四重奏參考版有多家並立；DG 盤聽眾 232 屬錯配，冷門 4→3",
+"keep": false
+},
+{
+"key": "Emil Gilels|Grieg: Lyric Pieces",
+"classic": 5,
+"obscurity": 3,
+"accessibility": 1,
+"apex": "none",
+"why": "Penguin／Gramophone 推崇的參考版，但曲目屬小品，非古典人人必提層級",
+"keep": false
+},
+{
+"key": "Eminem|The Marshall Mathers LP",
+"classic": 5,
+"obscurity": 1,
+"accessibility": 2,
+"apex": "hall",
+"strength": 3,
+"evidence": [
+"https://en.wikipedia.org/wiki/The_Marshall_Mathers_LP",
+"https://www.rollingstone.com/music/music-lists/best-albums-of-all-time-1062063/"
+],
+"why": "RS 500、1001 Albums、葛萊美；千禧嘻哈人人必提。內容尖銳 1→2",
+"keep": false
+},
+{
+"key": "Emmylou Harris|Wrecking Ball",
+"classic": 5,
+"obscurity": 2,
+"accessibility": 2,
+"apex": "none",
+"why": "葛萊美、Lanois 製作的生涯轉折名作；非該領域人人必提。氛圍民謠搖滾入耳 3→2",
+"keep": false
+},
+{
+"key": "Ennio Morricone|The Good, the Bad and the Ugly",
+"classic": 5,
+"obscurity": 1,
+"accessibility": 2,
+"apex": "hall",
+"strength": 1,
+"evidence": [
+"https://www.classicfm.com/composers/morricone/best-film-scores/",
+"https://www.euronews.com/2023/11/10/culture-re-view-celebrating-ennio-morricones-most-essential-film-scores"
+],
+"why": "電影配樂史最常被列為最具代表性的配樂之一；無單一權威榜，強度 1",
+"keep": false
+},
+{
+"key": "Enrico Caruso|The Complete Recordings",
+"classic": 5,
+"obscurity": 3,
+"accessibility": 2,
+"apex": "none",
+"why": "錄音史奠基人物，但為全集彙編，不列殿堂",
+"keep": false
+},
+{
+"key": "Ensemble intercontemporain|Berio: Sequenzas",
+"classic": 5,
+"obscurity": 4,
+"accessibility": 4,
+"apex": "none",
+"why": "DG 20/21 名套；聽眾 63＋試聽 ready→下限 4；擴展技法無調 4",
+"keep": false
+},
+{
+"key": "Enya|Shepherd Moons",
+"classic": 4,
+"obscurity": 1,
+"accessibility": 1,
+"apex": "none",
+"why": "暢銷代表作之一，但 Watermark 才是首要經典",
+"keep": false
+},
+{
+"key": "Enya|Watermark",
+"classic": 5,
+"obscurity": 1,
+"accessibility": 1,
+"apex": "none",
+"why": "new age 里程碑（Orinoco Flow），非樂評正典層級",
+"keep": false
+},
+{
+"key": "Eraserheads|Cutterpillow",
+"classic": 5,
+"obscurity": 2,
+"accessibility": 2,
+"apex": "none",
+"why": "OPM 史第三暢銷，菲律賓搖滾里程碑；查無權威榜首位，不列殿堂",
+"keep": false
+},
+{
+"key": "Eraserheads|UltraElectroMagneticPop!",
+"classic": 5,
+"obscurity": 2,
+"accessibility": 2,
+"apex": "none",
+"why": "出道作、OPM 樂團潮起點；殿堂證據不足",
+"keep": false
+},
+{
+"key": "Eric B. & Rakim|Paid in Full",
+"classic": 5,
+"obscurity": 2,
+"accessibility": 2,
+"apex": "hall",
+"strength": 3,
+"evidence": [
+"https://en.wikipedia.org/wiki/Paid_in_Full_(album)",
+"https://www.rollingstone.com/music/music-lists/best-albums-of-all-time-1062063/"
+],
+"why": "RS 500 前段、1001 Albums、The Source 經典；嘻哈史人人必提",
+"keep": false
+},
+{
+"key": "Erich Kleiber|R. Strauss: Der Rosenkavalier (1954)",
+"classic": 5,
+"obscurity": 3,
+"accessibility": 3,
+"apex": "none",
+"why": "Decca 1954 版經典參考，但 Karajan 1956 版更常列首選，不列殿堂",
+"keep": false
+},
+{
+"key": "Erroll Garner|Erroll Garner",
+"classic": 3,
+"obscurity": 3,
+"accessibility": 1,
+"apex": "none",
+"why": "泛名早期盤，非 Concert by the Sea 那類代表作；旋律化鋼琴入耳 1",
+"keep": false
+},
+{
+"key": "Evan Parker, Derek Bailey & Han Bennink|The Topography of the Lungs",
+"classic": 5,
+"obscurity": 5,
+"accessibility": 5,
+"apex": "heresy",
+"strength": 3,
+"evidence": [
+"https://en.wikipedia.org/wiki/The_Topography_of_the_Lungs",
+"https://en.wikipedia.org/wiki/Incus_Records"
+],
+"why": "Incus 1，英國非慣用語法自由即興奠基；殿堂不成立，改判異端（比照 Bailey Solo Guitar）",
+"keep": false
+},
+{
+"key": "Evan Parker|Saxophone Solos",
+"classic": 5,
+"obscurity": 5,
+"accessibility": 5,
+"apex": "heresy",
+"strength": 3,
+"evidence": [
+"https://en.wikipedia.org/wiki/Saxophone_Solos",
+"https://en.wikipedia.org/wiki/Evan_Parker"
+],
+"why": "無伴奏薩克斯循環換氣、多音技法極端；聽眾 387 無串流→5。改判異端",
+"keep": false
+},
+{
+"key": "Evan Parker|The Snake Decides",
+"classic": 4,
+"obscurity": 5,
+"accessibility": 5,
+"apex": "heresy",
+"strength": 2,
+"evidence": [
+"https://en.wikipedia.org/wiki/The_Snake_Decides",
+"https://en.wikipedia.org/wiki/Evan_Parker"
+],
+"why": "高音薩克斯獨奏長篇循環換氣，極端；殿堂不成立，改判異端",
+"keep": false
+},
+{
+"key": "Ewa Demarczyk|Ewa Demarczyk śpiewa piosenki Zygmunta Koniecznego",
+"classic": 5,
+"obscurity": 3,
+"accessibility": 2,
+"apex": "none",
+"why": "波蘭詩歌香頌里程碑、白金；國際殿堂證據不足",
+"keep": false
+},
+{
+"key": "Fabrizio De André|La buona novella",
+"classic": 5,
+"obscurity": 3,
+"accessibility": 2,
+"apex": "none",
+"why": "義大利 cantautore 名作；De André 最必提為 Crêuza de mä，不列殿堂",
+"keep": false
+},
+{
+"key": "Fariz RM|Sakura",
+"classic": 5,
+"obscurity": 4,
+"accessibility": 2,
+"apex": "none",
+"why": "印尼城市流行出道名盤；聽眾 3,431，原盤小廠→4",
+"keep": false
+},
+{
+"key": "Fat Freddy's Drop|Based on a True Story",
+"classic": 5,
+"obscurity": 2,
+"accessibility": 2,
+"apex": "none",
+"why": "紐西蘭史上暢銷里程碑；非跨來源正典",
+"keep": false
+},
+{
+"key": "Fats Domino|This Is Fats Domino!",
+"classic": 5,
+"obscurity": 3,
+"accessibility": 1,
+"apex": "none",
+"why": "搖滾奠基人代表盤（Blueberry Hill）；殿堂共識未確證；聽眾 1,656→至少 3",
+"keep": false
+},
+{
+"key": "Fats Navarro|The Fabulous Fats Navarro, Vol.2",
+"classic": 4,
+"obscurity": 3,
+"accessibility": 2,
+"apex": "none",
+"why": "Blue Note bebop 彙編；聽眾 10 為盤名拆卷錯配，不套下限→3",
+"keep": false
+},
+{
+"key": "Fats Navarro|The Fabulous Fats Navarro, Volume 1",
+"classic": 4,
+"obscurity": 3,
+"accessibility": 2,
+"apex": "none",
+"why": "同上，bebop 小號重要錄音；聽眾 8 屬錯配→3",
+"keep": false
+},
+{
+"key": "Fehlfarben|Monarchie und Alltag",
+"classic": 5,
+"obscurity": 3,
+"accessibility": 2,
+"apex": "hall",
+"strength": 2,
+"evidence": [
+"https://en.wikipedia.org/wiki/Monarchie_und_Alltag",
+"https://www.the-berliner.com/music-clubs/fehlfarben-peter-hein-monarchie-und-alltag-interview/"
+],
+"why": "Rolling Stone 德國版列為史上最佳德語專輯，該國權威榜首位級",
+"keep": false
+},
+{
+"key": "Fela Kuti|Expensive Shit",
+"classic": 5,
+"obscurity": 2,
+"accessibility": 2,
+"apex": "hall",
+"strength": 2,
+"evidence": [
+"https://en.wikipedia.org/wiki/Expensive_Shit",
+"https://notjustok.com/news/burna-boy-sunny-ade-and-fela-kuti-in-rolling-stones-500-greatest-albums/"
+],
+"why": "RS 500（2020）#402、Pitchfork 70 年代榜 #78；afrobeat 必提。國際流通→冷門 2",
+"keep": false
+},
+{
+"key": "Fela Kuti|Zombie",
+"classic": 5,
+"obscurity": 2,
+"accessibility": 2,
+"apex": "hall",
+"strength": 1,
+"evidence": [
+"https://en.wikipedia.org/wiki/Zombie_(album)",
+"https://en.wikipedia.org/wiki/Fela_Kuti_discography"
+],
+"why": "afrobeat 最具代表的政治名作；1001 收錄未確證，強度 1",
+"keep": false
+},
+{
+"key": "Fela Ransome-Kuti and the Africa '70 with Ginger Baker|Live!",
+"classic": 4,
+"obscurity": 3,
+"accessibility": 3,
+"apex": "none",
+"why": "Fela 早期重要現場；非代表作首位",
+"keep": false
+},
+{
+"key": "Fergus McCreadie|Forest Floor",
+"classic": 4,
+"obscurity": 3,
+"accessibility": 2,
+"apex": "none",
+"why": "Mercury 提名、近作；年資短，經典 5→4",
+"keep": false
+},
+{
+"key": "Fikret Kızılok|Zaman Zaman",
+"classic": 5,
+"obscurity": 3,
+"accessibility": 2,
+"apex": "none",
+"why": "土耳其民謠搖滾名盤；國際殿堂證據不足",
+"keep": false
+},
+{
+"key": "Fiona Apple|Fetch the Bolt Cutters",
+"classic": 5,
+"obscurity": 2,
+"accessibility": 3,
+"apex": "none",
+"why": "Pitchfork 10 分、RS 500（2020）收錄，但年資尚短不算長期共識",
+"keep": false
+},
+{
+"key": "Fire Engines|Lubricate Your Living Room",
+"classic": 4,
+"obscurity": 5,
+"accessibility": 4,
+"apex": "none",
+"why": "蘇格蘭後龐克 cult 盤；聽眾 780 無串流→5",
+"keep": false
+},
+{
+"key": "Fishmans|98.12.28 Otokotachi no Wakare",
+"classic": 5,
+"obscurity": 3,
+"accessibility": 3,
+"apex": "none",
+"why": "RYM 高位的告別現場，cult 共識；非跨來源正典",
+"keep": false
+},
+{
+"key": "Fishmans|Long Season",
+"classic": 5,
+"obscurity": 3,
+"accessibility": 3,
+"apex": "hall",
+"strength": 2,
+"evidence": [
+"https://en.wikipedia.org/wiki/Long_Season",
+"https://pitchfork.com/reviews/albums/fishmans-long-season/"
+],
+"why": "Paste 史上 300 大第 7、Pitchfork 9.3、RYM 全史前 30；日本搖滾正典",
+"keep": false
+},
+{
+"key": "Fito Páez|El Amor Después del Amor",
+"classic": 5,
+"obscurity": 2,
+"accessibility": 1,
+"apex": "hall",
+"strength": 1,
+"evidence": [
+"https://en.wikipedia.org/wiki/El_amor_despu%C3%A9s_del_amor",
+"https://billiken.lat/interesante/el-amor-despues-del-amor-fue-el-disco-mas-vendido-en-la-historia-argentina/"
+],
+"why": "RS 阿根廷搖滾百大第 13、阿根廷搖滾史最暢銷；聽眾 0 為漏抓，主流→冷門 5→2",
+"keep": false
+},
+{
+"key": "Flatt & Scruggs|Foggy Mountain Jamboree",
+"classic": 5,
+"obscurity": 3,
+"accessibility": 2,
+"apex": "none",
+"why": "葛萊美名人堂、bluegrass 典範；1001 收錄未確證，不列殿堂",
+"keep": false
+},
+{
+"key": "Fletcher Henderson|A Study in Frustration: The Fletcher Henderson Story",
+"classic": 5,
+"obscurity": 3,
+"accessibility": 2,
+"apex": "none",
+"why": "大樂團奠基彙編，評論稱必備；Penguin 皇冠未確證。1920s 搖擺入耳 4→2",
+"keep": false
+}
 ]
