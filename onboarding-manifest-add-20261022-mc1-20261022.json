@@ -531,20 +531,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 598,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：電影配樂第二張，榜13但片評差；EMI 正規發行；合成流行，僅〈Stahlherz〉長篇",
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=598）3→4",
     "previous": {
-     "classic": 2,
-     "obscurity": 5,
-     "accessibility": 4,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-22T09:34:54Z",
-     "note": "機器基線 2/5/4（Last.fm listeners 598）",
-     "rarity": "uncommon"
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：電影配樂第二張，榜13但片評差；EMI 正規發行；合成流行，僅〈Stahlherz〉長篇",
+     "rarity": "rare"
     }
    },
    "rarity": "rare",
@@ -1106,23 +1106,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 22,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：DRO 中期作，收入 Síntesis 盒裝；小廠且 listeners 極低報警；簡單節奏、好記旋律",
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=22）4→5",
     "previous": {
-     "classic": 4,
-     "obscurity": 3,
-     "accessibility": 3,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-10-22T09:34:54Z",
-     "note": "機器基線 4/5/3（Last.fm listeners 22）；主線：Last.fm 掛名（El Aviador Dro Y Sus Obreros Especializados）對不上、listeners 只有 22 失真；DRO 正規發行、西班牙 tecno-pop 圈內知名，圈外幾乎無人知，冷門軸照 §0.8 錨點制給 3",
-     "rarity": "uncommon"
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：DRO 中期作，收入 Síntesis 盒裝；小廠且 listeners 極低報警；簡單節奏、好記旋律",
+     "rarity": "rare"
     }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

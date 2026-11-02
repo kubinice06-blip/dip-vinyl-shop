@@ -862,20 +862,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
+    "obscurity": 5,
     "accessibility": 3,
     "listeners": 949,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：第二張，人聲成焦點的穩定作；Denovali 正規有數位；慢速 dark jazz",
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=949）3→5",
     "previous": {
      "classic": 3,
-     "obscurity": 5,
-     "accessibility": 4,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-22T06:05:22Z",
-     "note": "機器基線 3/5/4（Last.fm listeners 949）",
-     "rarity": "epic"
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：第二張，人聲成焦點的穩定作；Denovali 正規有數位；慢速 dark jazz",
+     "rarity": "uncommon"
     }
    },
    "rarity": "uncommon",

@@ -525,23 +525,23 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 3,
+    "obscurity": 5,
     "accessibility": 1,
     "listeners": 28,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：情歌藝術歌曲選集，生涯中非首選；Columbia 正規發行（listeners 28 只是報警）；柔和抒情",
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=28）3→5",
     "previous": {
-     "classic": 3,
-     "obscurity": 5,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T11:04:39Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 28）",
-     "rarity": "uncommon"
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 1,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：情歌藝術歌曲選集，生涯中非首選；Columbia 正規發行（listeners 28 只是報警）；柔和抒情",
+     "rarity": "common"
     }
    },
-   "rarity": "common",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

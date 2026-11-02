@@ -1677,19 +1677,19 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 3,
     "listeners": 61,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Darla《Bliss Out》系列小量發行，listeners 極低報警；即興長篇 ambient",
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=61）4→5",
     "previous": {
      "classic": 3,
-     "obscurity": 5,
+     "obscurity": 4,
      "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T03:20:38Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 61）",
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Darla《Bliss Out》系列小量發行，listeners 極低報警；即興長篇 ambient",
      "rarity": "uncommon"
     }
    },

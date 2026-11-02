@@ -2496,23 +2496,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 3,
     "listeners": 141,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：作者自稱最成功、三部曲首部，drone場景要盤／Transgredient小廠，listeners報警／手工長音",
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=141）4→5",
     "previous": {
-     "classic": 3,
-     "obscurity": 5,
-     "accessibility": 4,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-22T06:05:47Z",
-     "note": "機器基線 3/5/4（Last.fm listeners 141）",
-     "rarity": "epic"
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：作者自稱最成功、三部曲首部，drone場景要盤／Transgredient小廠，listeners報警／手工長音",
+     "rarity": "uncommon"
     }
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3384,20 +3384,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
+    "obscurity": 4,
     "accessibility": 4,
     "listeners": 22,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Touch個人第三作，評價佳非代表作／Touch正規發行，listeners因長題名失準／無節拍抽象靜電",
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=22）3→4",
     "previous": {
-     "classic": 4,
-     "obscurity": 4,
-     "accessibility": 5,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-10-22T06:05:47Z",
-     "note": "機器基線 4/5/5（Last.fm listeners 22）；主線：Last.fm 以芬蘭文全題查得 listeners 22 失真（Pan Sonic 成員，池中《Kilo》為尺）；照 §0.8 冷門軸 5→4。",
-     "rarity": "epic"
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Touch個人第三作，評價佳非代表作／Touch正規發行，listeners因長題名失準／無節拍抽象靜電",
+     "rarity": "uncommon"
     }
    },
    "rarity": "uncommon",
