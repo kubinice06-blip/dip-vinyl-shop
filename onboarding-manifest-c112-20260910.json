@@ -28,12 +28,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 111236,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：2026 新盤，場景地位未成形，評論共識未定→3；睽違 8 年新作；國際發行；舞曲流行"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -95,12 +104,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 133469,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：新作，代表作為Golden Hour；Lost Highway主流；鄉村流行"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -162,12 +180,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 2,
+    "classic": 3,
+    "obscurity": 1,
     "accessibility": 2,
     "listeners": 320581,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：新作中等，代表作屬Demon Days；主流；印度元素另類流行"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -229,14 +256,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 1,
+    "classic": 3,
     "obscurity": 1,
     "accessibility": 1,
     "listeners": 1031844,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 1,
+     "obscurity": 1,
+     "accessibility": 1,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "common"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：2026 新盤，場景地位未成形，評論共識未定→3；入門級主流；流行搖滾"
    },
-   "rarity": "common",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -362,14 +398,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 1,
-    "obscurity": 3,
+    "classic": 3,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 44914,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 1,
+     "obscurity": 3,
+     "accessibility": 1,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "common"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：2026 新盤，場景地位未成形，評論共識未定→3；晚期作非代表作；大廠全球發行；流行搖滾"
    },
-   "rarity": "common",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -497,13 +542,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 3,
     "listeners": 39163,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：The Collective續作；Matador國際；短促噪音電子，有門檻"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -562,14 +616,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 3,
     "accessibility": 4,
     "listeners": 50379,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：新作，代表作屬Through Silver in Blood；自營Neurot→3；sludge長篇"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -628,12 +691,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
+    "classic": 3,
+    "obscurity": 2,
     "accessibility": 4,
     "listeners": 65187,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：新作，代表作為Jane Doe；Epitaph國際；混沌金屬硬蕊"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -696,11 +768,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 31346,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：穩定新作；Dead Oceans國際；民謠搖滾"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -763,11 +844,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 26914,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：晚期穩定之作；Drag City國際；低吟民謠"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -832,12 +922,21 @@
    "ratings": {
     "classic": 4,
     "obscurity": 2,
-    "accessibility": 4,
+    "accessibility": 2,
     "listeners": 325248,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 2,
+     "accessibility": 4,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：沿用 worker 4：獨立流行圈受注目之作；L 32 萬；本張轉向流行，原 4 過高→2"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -899,12 +998,21 @@
    "ratings": {
     "classic": 3,
     "obscurity": 2,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 108502,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：2026 新盤，場景地位未成形，評論共識未定→3；Loma Vista 國際發行；主流嘻哈"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -963,12 +1071,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 427083,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：新作，代表作為The Melodic Blue；Columbia主流；嘻哈"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1030,13 +1147,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 748,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：新作，代表作為Cilvia Demo；L748（疑撇號分名）+串流→下限4；嘻哈；冷門度下限豁免：Last.fm 疑錯配"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1231,11 +1357,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 84800,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：新作，代表作為Collapsed in Sunbeams；Transgressive國際；另類R&B"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1296,12 +1431,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 27224,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Daptone第二張穩定之作；正規國際；復古靈魂慢歌"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1365,11 +1509,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 9181,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：新作非代表；L9181、Hyperdub→3；glitch電子，需投入"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1433,10 +1586,19 @@
    "ratings": {
     "classic": 3,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 147532,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：2026 新盤，場景地位未成形，評論共識未定→3；美國鄉村一線；民謠鄉村旋律直白"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1564,11 +1726,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 804,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：沿用 4：日本另類圈受推崇的個人作；L<1k 有串流→4；慵懶迷幻流行"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1632,13 +1803,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 1060,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：2026 新盤，場景地位未成形，評論共識未定→3；L 1k–5k→下限 3；日搖一線老團，易聽"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1700,11 +1880,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 8542,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：2026 新盤，場景地位未成形，評論共識未定→3；L 8.5k 日系主流圈外少知；電子 J-pop"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1768,13 +1957,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 4,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 266,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：2026 新盤，場景地位未成形，評論共識未定→3；L<1k 有串流→4；粗獷民謠龐克嘶吼人聲"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1836,13 +2034,22 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 3,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 65520,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：選秀團首張、合格非首選；Sony JP主流；J-pop"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1903,13 +2110,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 1819,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：2026 新盤，場景地位未成形，評論共識未定→3；L 1.8k→下限 3；J-pop 編曲繁忙但旋律強"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1970,13 +2186,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 4,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 747,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：2026 新盤，場景地位未成形，評論共識未定→3；L<1k 有串流→4；新迷幻搖滾，原 4 過高"
    },
-   "rarity": "epic",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2037,14 +2262,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 2619,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：2026 新盤，場景地位未成形，評論共識未定→3；L 2.6k→下限 3；實驗民謠、長短段落落差大"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2103,14 +2337,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 7285,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：晚期穩定作，代表作為Hymn to the Immortal Wind；L7285、TRL→3；器樂後搖長篇"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2170,14 +2413,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
+    "classic": 2,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 681,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：6軌迷你專輯、非首選；L681+串流→4；另類搖滾"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2239,11 +2491,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 284,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：2026 新盤，場景地位未成形，評論共識未定→3；L<1k 有串流→下限 4；迷幻搖滾需投入"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2305,14 +2566,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 187573,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：K-pop正規作、非首選；STARSHIP主流；偶像流行"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2374,13 +2644,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 1252,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：新作非代表；L1252、YG主流→3；旋律民謠流行"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2442,11 +2721,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 41216,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：2026 新盤，場景地位未成形，評論共識未定→3；K-pop 一線大量流通；編曲較衝但屬主流"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2508,14 +2796,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 67767,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：K-pop正規作、合格非首選；KOZ主流；偶像流行"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2576,13 +2873,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 76,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：2026 新盤，場景地位未成形，評論共識未定→3；L<1k 有串流→4；韓語搖滾創作歌手"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2644,11 +2950,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 24856,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：2026 新盤，場景地位未成形，評論共識未定→3；L 2.5 萬串流熱門；柔和爵士味獨立樂"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2711,14 +3026,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 3006,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：2026 新盤，場景地位未成形，評論共識未定→3；L 3k→下限 3；台灣獨立搖滾，慢版抒情"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2779,12 +3103,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 25,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：2026 新盤，場景地位未成形，評論共識未定→3；台灣老團新作含重錄；L 25 有串流→4；主流搖滾"
    },
    "rarity": "rare",
    "apexAssessment": {

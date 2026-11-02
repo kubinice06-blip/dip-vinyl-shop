@@ -63,6 +63,9 @@ description: One-line entry point for adding album cards to dip vinyl — accept
 - 人工覆核不可省：聽眾數異常（同名誤配）、AI 推估的冷門度、藝人名爆版、封面真偽反查。
 - **人工評分（深掘、非英語圈、主線修正）一律照 `ALBUM_ONBOARDING.md` §0.8.1 三軸錨點**：經典度以所屬場景為尺度、
   藝人代表作至少 4；冷門度 worker 值必須依 §0.8 校正；硬蕊度＝入耳難度，5＝晦澀（2026-11-01 店主指正）。
+- **冷門度下限（硬規則）照 `ALBUM_ONBOARDING.md` §0.8.1「冷門度下限」表**：Last.fm listeners <1,000＋試聽 ready ≥4、
+  <1,000＋試聽非 ready＝5（確知有正式數位版給 4）、1,000–4,999 ≥3；聽眾數疑似錯配（盤名寫法不同、同系列知名卷次、
+  listeners＝0 漏抓）不套下限、照錨點判（2026-11-02 店主指正《Identification》）。
 
 ## Phase 3：簡介產線（desc-restyle 成品標準）
 

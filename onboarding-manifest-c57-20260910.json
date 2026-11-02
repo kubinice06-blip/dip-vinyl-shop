@@ -30,11 +30,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 5,
+    "accessibility": 1,
     "listeners": 152,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Holt Bunny Lee 時期一般作；L152 試聽無→5；甜歌"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -91,13 +100,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 85,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：I-Roy 早期第二張非首選；L85 試聽無→5；toasting"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

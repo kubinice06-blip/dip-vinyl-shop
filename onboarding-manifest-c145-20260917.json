@@ -27,14 +27,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
-    "accessibility": 3,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 1032,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：62年四重奏庫存盤；L1032→3；硬咆勃"
    },
-   "rarity": "epic",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -95,14 +104,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
-    "accessibility": 3,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 3423,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：65年與Morgan庫存盤；L3.4k→3；硬咆勃"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -165,14 +183,23 @@
     "note": "試聽探測釘定的 collectionId 650042400（gb）：Jimmy Smith — Confirmation"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 227,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：57年庫存盤；L227有串流→4；風琴硬咆勃"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -232,12 +259,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 187,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：79年LT拼湊庫存盤；L187有串流→4；調式後咆勃"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -301,13 +337,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 106,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：64年庫存盤；L106有串流→4；靈魂爵士"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -368,14 +413,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 68751,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：58年三重奏庫存盤日本先發；聽眾數疑撞名→3；鋼琴咆勃"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -436,14 +490,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 730,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：57年庫存盤；L730有串流→4；藍調咆勃吉他"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -507,13 +570,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 2052,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：59年三重奏庫存盤日本先發；L2k→3；鋼琴咆勃"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -574,12 +646,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 12879,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Klugh代表作之一；大廠流通L12.9k→2；smooth jazz"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -641,12 +722,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 2235,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線改4：66年八重奏，評論普遍列為 Mobley 晚期最具企圖的遺珠；L2.2k→3；硬咆勃"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -708,14 +798,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 18335,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：67年庫存盤中流通最廣；L18k BN常規→2；硬咆勃"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -776,12 +875,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 250,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：63–64年庫存盤；L250無串流→5；靈魂爵士吉他"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -840,14 +948,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 8582,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：57年庫存盤；BN再發L8.6k→3；硬咆勃"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -908,14 +1025,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 5552,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：62年與Clark/Blakey庫存盤；L5.6k BN再發→3；硬咆勃"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -977,13 +1103,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 746,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：60年庫存盤；L746有串流→4；靈魂爵士"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1044,12 +1179,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 5718,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：68年Benson在場庫存盤，評價中等；L5.7k→3；硬咆勃"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1112,14 +1256,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
-    "accessibility": 3,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 3141,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：61–62年三場殘軌拼盤，非代表作；L3.1k→3；主流咆勃"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1182,14 +1335,23 @@
     "note": "試聽探測釘定的 collectionId 1840773267（us）：Ike Quebec — The Complete Blue Note 45 Sessions (Remastered 2025)"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 165,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：61年風琴抒情庫存盤；L165有串流→4；抒情靈魂爵士"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1249,12 +1411,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 82,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：60年庫存盤遲至80年發行；L82無串流→5；硬咆勃"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1313,14 +1484,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 684,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：64年庫存盤；L684有串流→4；靈魂爵士"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1381,14 +1561,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 5035,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：67年庫存盤；L5k BN再發→3；硬咆勃"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1449,14 +1638,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 2608,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：62年Clark同場庫存盤；L2.6k→3；硬咆勃吉他"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1517,14 +1715,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 124,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：60年雙主奏庫存盤日本先發；L124有串流→4；硬咆勃"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1584,14 +1791,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 110,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：56年庫存盤；L110有串流→4；咆勃吉他"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1652,12 +1868,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 2,
     "obscurity": 5,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 117,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：75年LA錄音僅日本GXF發行；L117無串流→5；長篇調式後咆勃"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1716,13 +1941,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 5897,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Hill 68年庫存盤，評價高的遺珠；BN庫存再發L5.9k→3；稜角後咆勃"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1783,12 +2017,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 3937,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：68年Spaulding/Chambers庫存盤；BN再發→3；偏前衛後咆勃"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1852,12 +2095,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 11272,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Klugh最受喜愛的抒情吉他盤之一；L11.3k→2；柔和smooth jazz"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1921,13 +2173,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 927,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：70年最後BN錄音庫存盤；L927有串流→4；硬咆勃/靈魂"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1988,12 +2249,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 3,
     "accessibility": 3,
     "listeners": 36634,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：59/63年兩場拼盤，63年場偏新主流；BN再發→3；後咆勃"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2056,14 +2326,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 2971,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：58年Small's現場庫存盤；L2.97k→3；風琴靈魂爵士"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2123,13 +2402,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 1943,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：69年公認最佳BN遺珠之一；L1.9k→3；太空感調式風琴"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2192,11 +2480,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 13740,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Laws 80年中期作，同名曲有榜；大廠流通L13.7k→2；R&B融合"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2260,13 +2557,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 700,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：61年末次錄音庫存盤；L700有串流→4；R&B咆勃"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2327,12 +2633,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 1224,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：69年與Land合作庫存盤；L1224→3；調式後咆勃長曲"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2397,13 +2712,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 4,
+    "accessibility": 1,
     "listeners": 825,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Klugh 81年作，中期穩定；L825有串流→4；smooth jazz吉他"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2465,12 +2789,21 @@
     "discogsReleaseId": "3357862"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 951,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：62年庫存盤；L951無串流→5；靈魂爵士/拉丁"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2530,11 +2863,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 6281,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：65年與McLean庫存盤；L6.3k→3；硬咆勃"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2597,14 +2939,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 2,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 17,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：81年殘軌拼盤；L17無串流→5；風琴靈魂爵士"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2664,13 +3015,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 1239,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：67年Corea/Vitous在場的庫存盤；L1239→3；硬咆勃/拉丁"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2730,14 +3090,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 3,
     "listeners": 718,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：69年現場庫存盤；L718無串流→5；電/原聲小提琴爵士即興"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2794,14 +3163,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 137,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：61年三重奏標準曲庫存盤；L137有串流→4；主流咆勃"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2860,14 +3238,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 2834,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：61年庫存盤日本先發；L2.8k→3；靈魂爵士/咆勃吉他"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2927,14 +3314,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 6176,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Shorter加入JM首錄的庫存盤，非團代表作；BN再發→3；硬咆勃"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

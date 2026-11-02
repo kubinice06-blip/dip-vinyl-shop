@@ -28,14 +28,23 @@
     "discogsReleaseId": "1786358"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 3,
     "listeners": 12,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Tracey 現場，非 Under Milk Wood；L12 unavailable 下限 5；英式後 bop"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -93,13 +102,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 2418,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：新奧爾良吉他手穩定作；L2418 下限 3；主流吉他"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -160,13 +178,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 63,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：中等評價；L63 ready 下限 4；吉他融合易聽"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -228,11 +255,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 33,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Hays Blue Note 期佳作；L33 ready 下限 4；後 bop 鋼琴"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -295,11 +331,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 135,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Hagans 首張領銜，中等；L135 ready 下限 4；現代後 bop"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -362,11 +407,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
-    "accessibility": 3,
+    "obscurity": 2,
+    "accessibility": 2,
     "listeners": 53409,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：兩大吉他手合作，廣為推薦；L53k；吉他 bop 易聽"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -430,13 +484,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 2264,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Lovano 雙次中音編制，穩定作；L2264 下限 3；主流 bop"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -496,11 +559,20 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 1,
     "listeners": 18580,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "common"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：smooth jazz 平淡；L18k 但圈外少碰；柔和"
    },
    "rarity": "common",
    "apexAssessment": {
@@ -563,11 +635,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 202,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Monk 曲目致敬，中等；L202 ready 下限 4；後 bop"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -631,13 +712,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 318,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：二重奏佳作非代表作；L318 ready 下限 4；抒情顫音琴"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -698,14 +788,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 468,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Blue Note 期佳作，非代表作；L468 ready 下限 4；主流鋼琴"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -766,13 +865,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 2928,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：中等現場盤；L2928 下限 3；主流吉他爵士"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -833,11 +941,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 4351,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Rubalcaba 向 Gillespie 致敬，評論肯定；L4351 下限 3；後 bop 鋼琴"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -902,10 +1019,19 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 87,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Special Edition 晚期，中等；L87 unavailable 下限 5；後 bop 編曲"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -964,13 +1090,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 17,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：大西順子代表作，日本爵士重要現場；L17 ready 下限 4；三重奏即興"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1032,14 +1167,23 @@
     "note": "試聽探測釘定的 collectionId 720589750（us）：Jimmy Smith — The Master II (feat. Kenny Burrell) [Live]"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 232,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Smith＋Burrell 重聚現場，中等；L232 ready 下限 4；風琴三重奏"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1100,13 +1244,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 74922,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1957 Pacific Jazz 抒情場次，評價高；L75k；柔和 ballad"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1167,11 +1320,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 16660,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Reeves Blue Note 期穩定作；L16k 正規流通；人聲爵士柔和"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1236,14 +1398,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 298,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：爵士嘻哈混種嘗試，討論多但非首選；L298 ready 下限 4；M-Base 節奏複雜"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1304,12 +1475,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 49,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：法國三重奏首作；L49 ready 下限 4；鋼琴三重奏"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1373,14 +1553,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 29170,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Charlie Hunter Blue Note 首作、代表作；L29k 流通；groove 爵士"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1442,14 +1631,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 585,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1968 錄音 1995 才出的庫存盤；L585 ready 下限 4；soul jazz 律動"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1512,13 +1710,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 1659,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：丹麥兄弟檔，該圈二線；L1659 下限 3；主流當代爵士"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1581,13 +1788,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 58,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：中等；L58 ready 下限 4；hard bop 六重奏"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1648,13 +1864,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 242,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首作，中等；L242 ready 下限 4；主流 hard bop"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1719,13 +1944,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 614,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：晚期穩定作；L614 ready 下限 4；藍調人聲爵士"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1786,14 +2020,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 18718,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Ferrell 代表作，原為日本 1990；L18k 但試聽 unavailable；人聲技巧"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1850,14 +2093,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 3360,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：smooth jazz 平淡；L3360 下限 3；柔和"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1918,13 +2170,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 918,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Lovano 高評價現場雙碟；L918 ready 下限 4；四重奏長篇即興"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1988,11 +2249,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 3758,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Schuller 編曲第三潮流，Lovano 代表作之一；L3758 下限 3；管弦編制需投入"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2056,11 +2326,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 10073,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Terrasson 首作、成名代表作；L10k 正規流通；主流鋼琴三重奏"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2129,13 +2408,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 127,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：中等評價；L127 ready 下限 4；主流 hard bop"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2196,12 +2484,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 7,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Pullen 非洲巴西編制現場，非代表作 Kele Mou Bana；L7 ready 下限 4；團簇＋律動"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2265,14 +2562,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 19,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：美國現場首秀，非首選；L19 ready 下限 4；後 bop 鋼琴"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2335,14 +2641,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 6168,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Elling 首作、葛萊美提名代表作；L6168 正規但有限；vocalese 略有門檻"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2404,11 +2719,20 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 10750,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：McFerrin 次要作；L10750 正規流通；人聲玩性略有門檻"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2473,11 +2797,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 5635,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1969–70 庫存場次初出，有限發行；L5635；靈魂律動爵士"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2541,13 +2874,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 406,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1970 庫存現場；L406 ready 下限 4；soul jazz"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2609,13 +2951,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 4,
+    "accessibility": 1,
     "listeners": 8,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：葛萊美最佳爵士人聲獲獎現場；L8 ready 下限 4；標準曲柔和"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

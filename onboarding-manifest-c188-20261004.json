@@ -28,14 +28,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 2,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z",
-    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=2）僅供對照。"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：カリオカ第三張錄音室作；L=2+unavailable→5；森巴 fusion",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=2）僅供對照。",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -95,13 +104,22 @@
     "note": "試聽探測釘定的 collectionId 1594125136（jp）：小林泉美 — Coconuts High +4。2026-10-04 改用：原本的 CAA 圖（https://coverartarchive.org/release-group/253a5dc9-4964-46b3-b429-3f78df544bc0/front）在 archive.org 連續三輪回 500。"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 147,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z",
-    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=147）僅供對照。"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：小林泉美本名首張，city pop 挖掘圈知名；L=147+ready→4；熱帶流行人聲",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=147）僅供對照。",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -166,13 +184,22 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 1898,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z",
-    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=1898）僅供對照。"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：高中正義 Kitty 年度作之一；L1898→下限3，本國主流；旋律吉他 fusion",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=1898）僅供對照。",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -308,15 +335,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 93,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z",
-    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=93）僅供對照。"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：領銜作少，Deep Jazz Reality 等多個考古再版系列；L93 有串流→4；無鋼琴 modal 四重奏",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=93）僅供對照。",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -379,13 +415,22 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 9,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z",
-    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=9）僅供對照。"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：紐約時期少數領銜作，有 Liebman；L9 有串流→4；fusion 傾向的現代爵士",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=9）僅供對照。",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -449,15 +494,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 67,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z",
-    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=67）僅供對照。"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Casiopea 與 Lee Ritenour 合錄企劃；L=67+ready→4；fusion",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=67）僅供對照。",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -517,14 +571,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 3,
     "listeners": 12,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z",
-    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=12）僅供對照。"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：與《Susto》同批錄音的姊妹作，菊地電子 funk 時期要作；L12 無串流→5；20 分鐘長篇律動",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=12）僅供對照。",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -581,15 +644,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 34836,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z",
-    "note": "§0.8 depth 錨點：正規廠牌但當年商業失敗或發行有限。機器值 3（listeners=34836）僅供對照。"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：浪花 Express 首張代表作、City Pop On Vinyl 復刻；L=3.5 萬→2；fusion",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "note": "§0.8 depth 錨點：正規廠牌但當年商業失敗或發行有限。機器值 3（listeners=34836）僅供對照。",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -651,15 +723,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 76,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z",
-    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=76）僅供對照。"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：The Players 第四張、換薩克斯手，中期作；L=76+unavailable→5；爵士放克",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=76）僅供對照。",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -716,15 +797,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 2,
     "listeners": 316,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z",
-    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=316）僅供對照。"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：和泉宏隆加入奠定後期聲音的轉折作；L=316+ready→4；舊值4方向反了，fusion",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=316）僅供對照。",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -783,13 +873,22 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 55,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z",
-    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=55）僅供對照。"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日野中期 NY fusion，代表作屬 City Connection/Daydream；L55＋無串流→5；管樂 funk 易聽",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=55）僅供對照。",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -850,15 +949,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 1032,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z",
-    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=1032）僅供對照。"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：浪花 Express 第二張；L=1032→下限3；舊值4方向反了，fusion",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=1032）僅供對照。",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -918,13 +1026,22 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 1,
     "listeners": 65,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z",
-    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=65）僅供對照。"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：她的首作，三組伴奏的標準曲集；L65 無串流→5；人聲標準曲柔和",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=65）僅供對照。",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -984,14 +1101,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 3,
     "listeners": 53,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z",
-    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=53）僅供對照。"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Kazumi Band 代表作、DOMO 首號；L53 無串流→5；複雜編制 fusion 需投入",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=53）僅供對照。",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1049,15 +1175,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 1203,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z",
-    "note": "§0.8 depth 錨點：原盤私壓／小廠，但已有授權考古再發——「被挖出來了，但仍是收藏家領域」。機器值 5（listeners=1203）僅供對照。"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日本首張登 Oricon 冠軍的 fusion 盤，場景里程碑；L1203→3；旋律吉他 fusion",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "note": "§0.8 depth 錨點：原盤私壓／小廠，但已有授權考古再發——「被挖出來了，但仍是收藏家領域」。機器值 5（listeners=1203）僅供對照。",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1119,14 +1254,23 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 1114,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z",
-    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=1114）僅供對照。"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：兩年巡演精選現場盤，非首選；L1114→3；串燒旋律曲",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 5（listeners=1114）僅供對照。",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1187,15 +1331,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 69,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z",
-    "note": "§0.8 depth 錨點：原盤私壓／小廠或僅卡帶流通，未見授權再發進串流。機器值 5（listeners=69）僅供對照。"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：500 張自費壓製、唯一作的 J-fusion 收藏盤；L=69+unavailable→5；Rhodes fusion",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "note": "§0.8 depth 錨點：原盤私壓／小廠或僅卡帶流通，未見授權再發進串流。機器值 5（listeners=69）僅供對照。",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1388,12 +1541,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 6130,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z",
-    "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 4（listeners=6130）僅供對照。"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Casiopea 倫敦錄音第十張，中期作；L=6130 日本主流→3；fusion",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "note": "§0.8 depth 錨點：考古再發後已可得，但仍在收藏家領域，未進入一般流通。機器值 4（listeners=6130）僅供對照。",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1459,12 +1621,21 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 79195,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z",
-    "note": "§0.8 depth 錨點：正規廠牌但當年商業失敗或發行有限。機器值 3（listeners=79195）僅供對照。"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Casiopea 代表作之一、十九種版本含亞洲授權；L=7.9 萬→2；fusion",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "note": "§0.8 depth 錨點：正規廠牌但當年商業失敗或發行有限。機器值 3（listeners=79195）僅供對照。",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {

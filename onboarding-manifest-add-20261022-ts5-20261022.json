@@ -33,13 +33,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 717,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 2/5/2（Last.fm listeners 717）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：第10張，金音嘻哈專輯入圍，中期佳作；L717有串流→4；東岸風平順饒舌",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 2/5/2（Last.fm listeners 717）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -106,15 +115,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 19934,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 2/4/2（Last.fm listeners 19934）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張，金曲最佳新人得獎，藝人代表作；L2萬台灣主流；R&B華語饒舌",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 2/4/2（Last.fm listeners 19934）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -180,13 +198,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 25482,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 2/3/2（Last.fm listeners 25482）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張，〈Without You〉爆紅，金曲新人入圍，代表作；L2.5萬；流行饒舌",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 2/3/2（Last.fm listeners 25482）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -251,13 +278,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": null,
-    "source": "worker /album-rating（obscurity:ai）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 3/4/2（Last.fm listeners 查無）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張個人，Hit FM十大、金曲三項入圍，代表作；滾石主流發行；流行R&B饒舌",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:ai）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 3/4/2（Last.fm listeners 查無）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -322,15 +358,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 41685,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 3/3/2（Last.fm listeners 41685）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Higher Brothers 首張、〈Made in China〉成名、88rising 國際推廣；L4萬；trap",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 3/3/2（Last.fm listeners 41685）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -395,12 +440,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 2,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 451,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 3/5/2（Last.fm listeners 451）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：GAI 首張正規專輯，成名單曲不在本盤；L451 有串流→4；川味主流饒舌",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 3/5/2（Last.fm listeners 451）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -467,12 +521,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 94,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 3/5/2（Last.fm listeners 94）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：第二張，西域概念，非代表作；L94有串流→4；華語流行饒舌",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 3/5/2（Last.fm listeners 94）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -540,15 +603,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 2,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 2/5/2（Last.fm listeners 2）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：金音最佳嘻哈專輯得獎、中華音樂人十大，代表作；L2有串流→4；主流饒舌",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 2/5/2（Last.fm listeners 2）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -612,13 +684,22 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 3,
-    "accessibility": 4,
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 297,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 4/5/4（Last.fm listeners 297）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：港產 rap metal/粵語嘻哈里程碑、叱咤組合金獎、名人堂；L297 有串流→4；nu metal 粗口饒舌",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 4/5/4（Last.fm listeners 297）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4",
+     "rarity": "epic"
+    }
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -683,15 +764,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 141,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 2/5/2（Last.fm listeners 141）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首位以饒舌入圍金曲最佳國語女歌手的代表作，登iTunes榜首；L141有串流→4；主流饒舌",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 2/5/2（Last.fm listeners 141）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -756,15 +846,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 1,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 3/5/2（Last.fm listeners 1）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：成都方言饒舌代表人物首張個人專輯；L1無試聽→5；四川話饒舌",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 3/5/2（Last.fm listeners 1）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -823,15 +922,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 117,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 2/5/2（Last.fm listeners 117）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：港嘻哈首張，叱咤生力軍銅獎、電台榜單曲，團體代表作；L117無試聽→5；粵語饒舌",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 2/5/2（Last.fm listeners 117）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -889,13 +997,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 5169,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 4/4/2（Last.fm listeners 5169）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：韓國嘻哈開山盤，兩支單曲公認韓國嘻哈經典；L5169、韓語圈外少知→3；九〇年代嘻哈",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 4/4/2（Last.fm listeners 5169）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -960,15 +1077,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 10415,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 2/4/2（Last.fm listeners 10415）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Jazzyfact 唯一專輯、Beenzino 起家作，韓國嘻哈名盤；L10415、韓語圈外少知→3；爵士饒舌",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 2/4/2（Last.fm listeners 10415）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1030,13 +1156,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 80,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 80）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Deepflow 代表作、獲韓國大眾音樂獎年度音樂人；L80 有串流→4；韓語硬派饒舌",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 80）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1101,15 +1236,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 294,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 3/5/2（Last.fm listeners 294）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：韓國嘻哈大獎年度專輯得獎，韓地下嘻哈名盤；L294有串流→4；技術型饒舌；主線:classic 5→4",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 3/5/2（Last.fm listeners 294）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1171,15 +1315,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 29944,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 2/3/2（Last.fm listeners 29944）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：〈Meteor〉數位榜冠軍、韓國嘻哈大獎年度歌；韓語圈主流；旋律饒舌/R&B",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 2/3/2（Last.fm listeners 29944）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1242,15 +1395,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 68053,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 2/3/2（Last.fm listeners 68053）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張正規專輯，SMTM後代表作；L6.8萬韓圈主流；R&B風旋律饒舌",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 2/3/2（Last.fm listeners 68053）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1312,15 +1474,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 13000,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 3/4/2（Last.fm listeners 13000）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：韓國大眾音樂獎年度專輯；韓語圈一線、圈外少知；偏實驗的韓語饒舌；主線:classic 5→4",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 3/4/2（Last.fm listeners 13000）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1387,15 +1558,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 844,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 2/5/2（Last.fm listeners 844）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：韓國大眾音樂獎最佳嘻哈專輯得獎，韓嘻哈里程碑；L844有串流→4；器樂嘻哈製作盤；主線:classic 5→4",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 2/5/2（Last.fm listeners 844）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1461,13 +1641,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 5495,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 2/4/2（Last.fm listeners 5495）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Dok2 正規作、Gaon 第9，非公認高峰；韓語圈主流、L5495→3；trap",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 2/4/2（Last.fm listeners 5495）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1532,13 +1721,22 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 1854,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 2/5/4（Last.fm listeners 1854）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：獲韓國大眾音樂獎最佳饒舌專輯；L1854→3；密集抽象的韓語饒舌",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 2/5/4（Last.fm listeners 1854）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1605,13 +1803,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 5947,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 4/4/2（Last.fm listeners 5947）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：法語饒舌公認經典，Groove年度專輯、Abcdr稱經典；法語圈一線圈外少知；敘事型boom bap",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 4/4/2（Last.fm listeners 5947）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1677,15 +1884,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 21942,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 3/3/2（Last.fm listeners 21942）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：突破作，雙金唱片、單曲Top50冠軍；法語圈主流圈外少知；主流法式饒舌",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 3/3/2（Last.fm listeners 21942）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1748,13 +1964,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 78998,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 3/3/2（Last.fm listeners 78998）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Diam's 生涯高峰、〈La Boulette〉冠軍、雙白金；L7.9萬流通廣；流行饒舌",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 3/3/2（Last.fm listeners 78998）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1891,15 +2116,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 106849,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 3/2/2（Last.fm listeners 106849）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Damso 公認代表作、法語饒舌 2010s 要盤；L10萬、國際流通；自剖式饒舌",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 3/2/2（Last.fm listeners 106849）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1962,13 +2196,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 18698,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 18698）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：La Rumeur 首張、法國地下饒舌名盤；L18698、法語圈外少知；陰沉 boom bap",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 3/4/3（Last.fm listeners 18698）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2035,15 +2278,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 4611,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 2/4/4（Last.fm listeners 4611）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Lunatic 唯一專輯，法國饒舌公認經典、Abcdr 盛讚；L4611→3；壓迫感硬派饒舌",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 2/4/4（Last.fm listeners 4611）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2101,15 +2353,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 24506,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 3/3/2（Last.fm listeners 24506）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Booba 代表作之一、法國榜第3、金唱片；法語圈主流、圈外少知；法式硬派饒舌",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 3/3/2（Last.fm listeners 24506）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2173,13 +2434,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 3,
-    "accessibility": 3,
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 74,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 4/5/3（Last.fm listeners 74）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：法語饒舌正典，雙金、入圍Victoires；L74（變音符分散）有串流→下限4；硬派boom bap",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 4/5/3（Last.fm listeners 74）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2245,15 +2515,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 11332,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 2/4/2（Last.fm listeners 11332）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1999 法國饒舌經典、Victoires 2000 獲獎；法語圈一線、圈外少知；DJ Mehdi 製作的街頭饒舌",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 2/4/2（Last.fm listeners 11332）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2314,15 +2593,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 25316,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 3/3/2（Last.fm listeners 25316）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：bounce 女王代表作、Metacritic 79、Pitchfork 7.8；自家廠、L25316→3；bounce 舞曲饒舌",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 3/3/2（Last.fm listeners 25316）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2388,13 +2676,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 12,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 2/5/2（Last.fm listeners 12）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：紐奧良bounce早期Big Boy盤，非團體代表作；L12有串流→4；粗獷bounce",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 2/5/2（Last.fm listeners 12）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2463,15 +2760,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 131,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 3/5/2（Last.fm listeners 131）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：紐奧良 bounce 之王代表作、含〈Back That Ass Up〉原版；L131 有串流→4；bounce",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 3/5/2（Last.fm listeners 131）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2613,15 +2919,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 47541,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 3/3/2（Last.fm listeners 47541）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：No Limit首張，Billboard 200第13名，藝人代表作；國際正常流通；南方街頭饒舌",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 3/3/2（Last.fm listeners 47541）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2684,15 +2999,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 5347,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 3/4/2（Last.fm listeners 5347）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Mia X 代表作、Billboard 200 第21、金唱片；No Limit，圈外少知→3；南方饒舌",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 3/4/2（Last.fm listeners 5347）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2755,15 +3079,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 2754,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 2/5/2（Last.fm listeners 2754）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：個人首張，Billboard 200第9名，Mannie Fresh全製作；L2754下限3；南方饒舌",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 2/5/2（Last.fm listeners 2754）；主線：Last.fm 對華語／韓語／法語與地方廠牌嘻哈盤覆蓋不足（listeners 失真），冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以各地嘻哈圈為尺度：主流大廠或場景頭牌 2–3、獨立或地方廠牌 4",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2826,13 +3159,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 3,
     "listeners": 64180,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 3/3/4（Last.fm listeners 64180）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：phonk開創者4AD首張，Pitchfork 8.0；L6.4萬；殘響低傳真暗黑取樣，有門檻",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 3/3/4（Last.fm listeners 64180）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2897,15 +3239,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 104841,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 2/2/2（Last.fm listeners 104841）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張獲 Complex/Fader 注意的作品、emo rap 先驅代表；網路廣傳；lo-fi 陰暗雲饒舌",
+    "previous": {
+     "classic": 2,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 2/2/2（Last.fm listeners 104841）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2962,15 +3313,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 3,
     "listeners": 238660,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 2/2/3（Last.fm listeners 238660）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張完整專輯，Akina系列為其招牌；L23.9萬；孟菲斯暗黑雲端饒舌、低傳真",
+    "previous": {
+     "classic": 2,
+     "obscurity": 2,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 2/2/3（Last.fm listeners 238660）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3034,13 +3394,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 192134,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 2/2/2（Last.fm listeners 192134）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Lil Tracy 首張專輯，評價普通；L19萬；emo rap",
+    "previous": {
+     "classic": 2,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 2/2/2（Last.fm listeners 192134）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -3107,13 +3476,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 1,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 3,
     "listeners": 526035,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 3/1/4（Last.fm listeners 526035）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Ecco2k 代表作、Fader 稱 2019 突出發行；L52萬流通廣；故障感實驗流行",
+    "previous": {
+     "classic": 3,
+     "obscurity": 1,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 3/1/4（Last.fm listeners 526035）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -3180,13 +3558,22 @@
    "ratings": {
     "classic": 4,
     "obscurity": 2,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 418192,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-22T03:26:29Z",
-    "note": "機器基線 4/2/4（Last.fm listeners 418192）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張錄音室專輯、Billboard 200 第9；廣泛流通；陰暗 trap/horrorcore",
+    "previous": {
+     "classic": 4,
+     "obscurity": 2,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-22T03:26:29Z",
+     "note": "機器基線 4/2/4（Last.fm listeners 418192）",
+     "rarity": "epic"
+    }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

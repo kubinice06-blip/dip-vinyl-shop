@@ -1255,19 +1255,19 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 74,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "重評沿用舊值：查無足夠資料（listeners 74），沿用現值",
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=74）3→4",
     "previous": {
      "classic": 3,
      "obscurity": 3,
      "accessibility": 3,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-10-23T08:21:58Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 74）；主線：非拉丁掛名照 §0.8：台灣獨立樂團正規發行，華語圈外少人知，給 3",
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "重評沿用舊值：查無足夠資料（listeners 74），沿用現值",
      "rarity": "uncommon"
     }
    },
@@ -1335,20 +1335,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 2,
+    "obscurity": 3,
     "accessibility": 1,
     "listeners": 1986,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：晚期作非代表作；主流發行；國語 R&B 流行",
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L 1,000–4,999 → ≥3，L=1986）2→3",
     "previous": {
      "classic": 3,
      "obscurity": 2,
-     "accessibility": 3,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-10-23T08:21:58Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 1986）；主線：非拉丁掛名照 §0.8：華語一線歌手正規專輯、串流主流流通，給 2",
-     "rarity": "uncommon"
+     "accessibility": 1,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：晚期作非代表作；主流發行；國語 R&B 流行",
+     "rarity": "rare"
     }
    },
    "rarity": "rare",

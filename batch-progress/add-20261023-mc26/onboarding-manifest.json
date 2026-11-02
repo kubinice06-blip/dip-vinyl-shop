@@ -943,23 +943,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 393,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：最後一張錄音室作，金唱片 2.5 萬；BMG 匈牙利正規發行；synth-pop",
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=393）3→5",
     "previous": {
      "classic": 3,
-     "obscurity": 5,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T07:12:50Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 393）",
-     "rarity": "uncommon"
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：最後一張錄音室作，金唱片 2.5 萬；BMG 匈牙利正規發行；synth-pop",
+     "rarity": "rare"
     }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
