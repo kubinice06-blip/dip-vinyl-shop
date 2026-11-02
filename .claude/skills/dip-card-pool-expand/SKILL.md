@@ -42,10 +42,10 @@ node dip-vinyl-shop/scripts/verify-album-onboarding.mjs <manifest.json> --publis
 
 稀有度公式（`admin.html` 與後台一致）：
 `score = classic + accessibility + (obscurity>=5 ? 1 : 0)`
-→ `>=10 legendary / >=8 epic / >=6 uncommon / >=4 rare / 其餘 common`
+→ `>=9 legendary / >=8 epic / >=7 uncommon / >=6 rare / <=5 common`（2026-11-02 方案 A；原 10/8/6/4）
 
-> 注意：「冷門好聽」的卡（classic 3、accessibility 2、obscurity 5）score 只有 6，
-> 大量加入會把稀有度分布往 uncommon 壓。想撐住曲線就要刻意留一成 accessibility 3–4 的硬派作品。
+> 注意：「冷門好聽」的卡（classic 3、accessibility 2、obscurity 5）score 只有 6（rare）。
+> 2026-11-02 起門檻刻意做成金字塔：普通約四成、傳奇約 3%，不必再為撐曲線硬塞硬派作品。
 
 ## 執行步驟
 

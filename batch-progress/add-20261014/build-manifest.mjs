@@ -13,7 +13,7 @@ const covers = opt(D + 'covers.json'), rov = opt(D + 'ratings-override.json'), d
 const out = new Map(fs.readdirSync('desc-tools/batches/output').filter(f => f.startsWith(batch + '-out-')).flatMap(f => rd('desc-tools/batches/output/' + f)).map(x => [x.key, x.desc]));
 const research = new Map(fs.readdirSync('desc-tools/batches/research').filter(f => f.startsWith(batch + '-')).flatMap(f => { const r = rd('desc-tools/batches/research/' + f); return Array.isArray(r) ? r : Object.values(r); }).map(x => [x.key, x]));
 const BANNED = /(融合多種元素|具有代表性|層次豐富|傑作|必聽|里程碑|獨樹一格)/;
-const rarityOf = (c, o, x) => { const s = c + x + (o >= 5 ? 1 : 0); return s >= 10 ? 'legendary' : s >= 8 ? 'epic' : s >= 6 ? 'uncommon' : s >= 4 ? 'rare' : 'common'; };
+const rarityOf = (c, o, x) => { const s = c + x + (o >= 5 ? 1 : 0); return s >= 9 ? 'legendary' : s >= 8 ? 'epic' : s >= 7 ? 'uncommon' : s >= 6 ? 'rare' : 'common'; };
 const miss = [];
 const albums = cards.map(c => {
   const m = meta[c.key], r = research.get(c.key), o = rov[c.key] || {};

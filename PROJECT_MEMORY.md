@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-02｜dip-vinyl-shop｜稀有度門檻改方案 A（金字塔分布）：≥9 傳奇／8 史詩／7 獨特／6 稀有／≤5 普通
+
+- **緣由**：店主嫌「傳奇比頂點卡還少」、要「低分比較多」，看試算選方案 A：公式不變 `classic + accessibility + (obscurity>=5 ? 1 : 0)`，門檻 10/8/6/4 → 9/8/7/6。
+- **全池（22,506）**：頂點不受影響（殿堂 692、流亡 109、異端 116）。一般卡 傳奇／史詩／獨特／稀有／普通 138/2252/10123/7929/1147 → **735/1655/3811/6312/9076**；變動 14,838（稀有→普通 7,929、獨特→稀有 6,312、史詩→傳奇 597），與試算一致（`batch-progress/rarity-pyramid-20261102/distribution.json`）。
+- **程式**：perl 依「門檻數字＋後接 tier 名」改 22 檔：`index.html`（rarityFromRatings＋註解）、`admin.html` 兩處、`shop-all.html`、`music-map.html`、`battle.html`／`roguelike.html` 外框 class、`scripts/verify-album-onboarding.mjs`、`dip-card-pool-expand/scripts/3-build-cards.mjs`、`4-prewarm-covers.mjs`、`rerate-2026110{1,2}/{apply,report}.mjs`，以及舊批 build-manifest／`shop-localize.mjs`／`c48/ratings.mjs`。**沒動**：`battle.html` `cardTotal(c)>=10` 困難模式選卡（遊戲平衡，非稀有度）。repo 裡沒有 Worker／functions 原始碼。
+- **文件**：`ALBUM_ONBOARDING.md`、`rerate-20261101/RUBRIC.md`、`dip-card-pool-expand/SKILL.md`、`CARD_GAME_DESIGN.md` 門檻表。`dip-card-create/SKILL.md` 本來就沒寫門檻，不用改。
+- **資料**：manifest 485 檔（根目錄＋`add-*` 副本）17,451 筆，只改 `rarity` 欄：472 檔 12,087 筆（防呆：除 rarity 值外逐字相同；重跑 0 變動）。card_catalog 先整份列出（22,796 文件），只 patch「已存 rarity 且與新門檻不符」的 12,875 筆（含頂點卡存公式 rarity 的 255 筆；596 筆原本就存 legendary，免推），PATCH 帶 `updateMask=rarity`＋`currentDocument.exists=true`。無 rarity 欄的 2,757 筆、不在卡池的 290 筆不動。
+- **使用者收藏**：`collections/{uid}/cards` 不存 rarity，唱片櫃以 `/album-rating` 三軸即時用 rarityFromRatings 算，不用改使用者資料。店內印刷卡只印三軸星等與頂點徽章、不印一般稀有度，不用重出；runtime 資料檔也沒有存 rarity。
+- **主要檔案**：上列程式／文件、`onboarding-manifest-*.json`、`batch-progress/add-*/onboarding-manifest.json`、`batch-progress/rarity-pyramid-20261102/{apply.mjs,dump-catalog.mjs,push.mjs,distribution.json,card-catalog-patches.json}`。
+- **驗證**：card_catalog 推 12,875／12,875、失敗 0；抽 15 張讀回 15/15 一致；推完重新列出整份 card_catalog 再比對，待改 0。manifest 重跑 0 變動。published gate 抽 15 份（c29、c48、c60、c75、c100、c120、c140、c160、c185、csea、dt3、ts2、ml40、sf05、eb3）**稀有度 0 error**；其餘 error 全是既有的「/album-desc 與 manifest 不一致」（簡介落後 KV）。Playwright 開 index.html 搜尋頁：Some Girls 4/2/1 顯示普通（灰字、無外框）、Noah Howard《The Black Ark》與 Sonny Sharrock《Black Woman》3/5/5 顯示傳奇（橘框）。
+
 ### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪「套用」：6,666 張寫進 seed／manifest／card_catalog（含第一輪補冷門度下限）
 
 - **範圍**：第二輪 26 片 verdicts 6,381 張合併＋冷門度下限機械檢查 → `rerate-20261102/applied.json`（三軸有變 5,864、稀有度有變 3,094、keep 4）；第一輪 2,957 張以 `rerate-20261101/applied.json` 新值為底套同一張下限表 → `floor-r1.json`（抬分 802：→3 41、→4 419、→5 342；稀有度有變 173）。

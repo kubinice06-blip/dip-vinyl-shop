@@ -1528,7 +1528,7 @@ function rarityCls(card){
   if(!card || card.ace) return '';
   const s=(card.classic||0)+(card.accessibility||0)+((card.obscurity||0)>=5?1:0);
   if(!s) return '';
-  return s>=10?' r-legendary':s>=8?' r-epic':s>=6?' r-uncommon':s>=4?' r-rare':' r-common';
+  return s>=9?' r-legendary':s>=8?' r-epic':s>=7?' r-uncommon':s>=6?' r-rare':' r-common';
 }
 function cardHTML(card, attr){
   const ace=card.ace?` ace-border ace-${card.ace}`:rarityCls(card);

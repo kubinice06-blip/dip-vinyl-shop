@@ -115,7 +115,7 @@ const R = {
 
 const rarityOf = (c, o, a) => {
   const s = c + a + (o >= 5 ? 1 : 0);
-  return s >= 10 ? 'legendary' : s >= 8 ? 'epic' : s >= 6 ? 'uncommon' : s >= 4 ? 'rare' : 'common';
+  return s >= 9 ? 'legendary' : s >= 8 ? 'epic' : s >= 7 ? 'uncommon' : s >= 6 ? 'rare' : 'common';
 };
 
 const out = {};

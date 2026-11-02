@@ -5,7 +5,7 @@ import fs from 'node:fs'; import { execSync } from 'node:child_process';
 const D = 'batch-progress/rerate-20261101/';
 const rev = process.argv[2] || 'b1f385ec6';
 const ap = JSON.parse(fs.readFileSync(D + 'applied.json', 'utf8'));
-const rarityOf = (c, o, a) => { const s = c + a + (o >= 5 ? 1 : 0); return s >= 10 ? 'legendary' : s >= 8 ? 'epic' : s >= 6 ? 'uncommon' : s >= 4 ? 'rare' : 'common'; };
+const rarityOf = (c, o, a) => { const s = c + a + (o >= 5 ? 1 : 0); return s >= 9 ? 'legendary' : s >= 8 ? 'epic' : s >= 7 ? 'uncommon' : s >= 6 ? 'rare' : 'common'; };
 const R = ['common', 'rare', 'uncommon', 'epic', 'legendary'], AX = ['classic', 'obscurity', 'accessibility'];
 const ZH = { classic: '經典度', obscurity: '冷門度', accessibility: '硬蕊度' };
 const dist = (xs, f, keys) => { const c = Object.fromEntries(keys.map(k => [k, 0])); for (const x of xs) c[f(x)]++; return keys.map(k => c[k]); };
