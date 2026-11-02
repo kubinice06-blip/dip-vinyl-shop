@@ -1,8 +1,29 @@
 {
  "spot": [
   "A04-0-45：Beatles Help!、Byrds Sweetheart of the Rodeo、Microphones Glow Pt.2、Go-Go's Beauty and the Beat、Ensemble Al-Salaam（全同意）",
-  "A04-45-91：TG 20 Jazz Funk Greats、Shaggs Philosophy、Pogues Rum Sodomy、Replacements Let It Be、This Heat Deceit（全同意；20 JFG classic 5 但 none 屬嚴格判準內）"
+  "A04-45-91：TG 20 Jazz Funk Greats、Shaggs Philosophy、Pogues Rum Sodomy、Replacements Let It Be、This Heat Deceit（全同意；20 JFG classic 5 但 none 屬嚴格判準內）",
+  "A04-91-136：Venetian Snares Rossz Csillag、Pinkerton、Uncle Tupelo No Depression、Techno! 合輯、Swordfishtrombones（同意）",
+  "A04-136-182：Wendy Carlos Clockwork Orange、モア、Willie Dixon I Am the Blues、X JAPAN Blue Blood、千と千尋（同意）",
+  "A04-182-227：張學友 吻別、孫燕姿、阿爆、들국화、小久保隆（小久保隆改判）"
  ],
- "changes": [],
- "returns": []
+ "changes": [
+  {
+   "key": "A04-91-136 頂點 20 張",
+   "field": "strength",
+   "from": "未填",
+   "to": "1–3",
+   "why": "代理漏填 strength；主線依代理 why 的信心與歷代榜依據補（Blade Runner／Techno!／누명 填 1，代理自陳信心偏低）"
+  },
+  {
+   "key": "小久保隆|Get at the Wave",
+   "field": "apex",
+   "from": "none",
+   "to": "pearl（strength 1）",
+   "why": "代理判冷門度 5 仍撤流亡，只因 shard listeners 為 null；那是 repo 沒存 KV 聽眾數，不是 Last.fm 查無。改為暫留，待彙整用 KV 核 <300"
+  }
+ ],
+ "returns": [],
+ "notes": [
+  "A 組流亡 22 張只有 2 張在 shard 帶 listeners（其餘 null＝repo 沒存 KV 值，不是查無）。代理以「listeners 缺值」撤銷的流亡中，冷門度同時判 ≤4（已上串流再發或大廠）的照撤；冷門度判 5 只因缺值撤的改暫留 pearl strength 1，待彙整以 KV 核實。U1 的 A01–A03 可能有同樣情況。"
+ ]
 }
