@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪 R5：s01–s03 verdicts 750 張
+
+- **範圍**：shop 店主指定、downtempo dt1–dt5、新爵士 nj1–nj5、細分類 ts1–ts11（東南亞／南亞／蒙古搖滾、衣索比亞、剛果、佛朗明哥、法朵、探戈）。15 段各 50 張派 Opus 代理照 `DISPATCH.md` 評分；只交 verdicts，不動 seed／manifest／card_catalog。
+- **新舊分布（1/2/3/4/5）**：經典度 2/192/384/172/0 → 0/14/295/409/32；冷門度 14/192/253/156/135 → 5/150/286/235/74；硬蕊度 11/544/59/136/0 → 102/442/176/29/1。
+- **主線**：每段抽 5 張覆核，退回重派 0 段，改 9 張（Éthiopiques 五卷與 Moses Boyd Exodus 冷門 5→4：有 Spotify 正式數位版；Damon Locks《NOW》硬蕊 2→3；Opposition Party《Zombified》經典 3→4）。
+- **給套用**：listeners 疑似錯鍵（Santana《Oneness》4、Parisien《Sfumato》1、佛朗明哥名盤 L=0–11）照下限機械抬分，清單在各片 summary，建議套用前重查。
+- **主要檔案**：`batch-progress/rerate-20261102/verdicts/s01–s03-*.json`、`s01–s03.summary.md`、`PLAN.md`。
+- **驗證**：node 合併檢查三片各 250／250，缺 0、重複 0、值皆 1–5 整數；keep 1（Yufu《To My Pen Pal》）；下限機械檢查僅 ADDENDUM 例外條款註明串流者。
+
 ### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪 R7：s07–s09 verdicts 750 張
 
 - **範圍**：c114–c133，包括 Nashboro 福音、日本噪音／硬蕊／前衛爵士、NYHC／youth crew、英倫民謠、芝加哥／底特律 house-techno、台灣獨立、波羅的海、伊朗、伊比利、緬泰印尼、波蘭搖滾、Blue Note 與日本爵士。15 段各 50 張，派 Opus 代理照 `rerate-20261102/DISPATCH.md` 重評。只產出 verdicts，seed、manifest、card_catalog 都沒動。
