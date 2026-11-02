@@ -2235,6 +2235,7 @@
   **還沒解決**：新開的雲端工作階段會讀到新規則，預期不再被擋，但沒實測；再被擋就在 `.claude/settings.json` 加放行規則（待店主決定）。
 - PR #79 另帶了一份 `scripts/desc-gen/from_onboarding_manifest.mjs`，與 main 的 `scripts/kv-from-manifest.mjs` 是同一支，合併後留一份即可。
 
+
 ### 2026-10-03｜dip-vinyl-shop｜add-20261003：店主指定新增 何欣穗《完美小姐》（1999）——雲端段完成
 
 **改動摘要**：店主「新增專輯：何欣穗 完美小姐」。池中無此盤（同藝人已有《她的。發光搖擺》《She & Me》）；ctw3 曾因封面留置。
@@ -5951,6 +5952,7 @@ Pulp Fiction、Trainspotting、Easy Rider、Bombay）。**店主本機能連那�
 → **0 error、31 warning**。`seed_cards.json`、`apex_pool.json`、KV、Firestore 全未動，
 published 五旗標全 false。
 
+
 ### 2026-08-23（同日第十二筆）｜dip-vinyl-shop｜c-45 嘻哈 136 張＋淨化版試聽這個從沒被檢查過的條件
 
 `onboarding-manifest-c45-hiphop-20260823.json`：**136 張，0 error、6 warning（皆為老盤查無條碼，
@@ -6747,6 +6749,7 @@ Second Winter、Strong Persuader、Kingfish、T-Bone Blues。與現池、apex_po
 回讀確認 `desc`、三軸、`rarity` 都原封不動。（`card_catalog` 的規則允許未登入寫入，
 但限制文件形狀，見 firestore.rules。）
 
+
 ### 2026-08-23（後續）｜dip-vinyl-shop｜後台卡牌校正：補上封面欄位、簡介不再顯示舊的心理測驗式描述
 
 店主：後台的簡介很奇怪，而且無法改封面。兩件事都是**後台與前台已經對不上**。
@@ -6982,6 +6985,7 @@ Nancarrow 投入自動鋼琴「之前」寫給真人彈的曲子；Biggs 的 hoo
 **驗證**：六批 published gate 在店主貼完試聽後全部 0 error（c-23 與 c-27 的殘餘 error
 就是上述破圖，修完歸零）；六張新封面 Node fetch 實測 200 並已推進 Firestore。
 
+
 ### 2026-08-16（續三）｜dip-vinyl-shop｜心情選歌結果頁新增「專輯介紹」小按鈕＋浮動視窗
 
 店主指示：心情選歌的欄位加一顆小按鈕「專輯介紹」，點開是浮動視窗看專輯的正式介紹。
@@ -7209,6 +7213,7 @@ Martinon、Prêtre、Minkowski、Slatkin…）。
 **驗證**：六批 prepare gate 0 error；published gate 在試聽貼完前 error 數＝待貼 95 張，貼完後 0；
 KV 167 筆寫入（抽驗 12/12）；封面預熱 167/167 進 Firestore `card_catalog`；
 `apple-audio-map` 7,779 → 7,850、runtime map 7,051 筆。
+
 
 ### 2026-08-16（續）｜mood-quiz（無 git）｜心情段落全案完成：300 張卡 / 1272 段，全庫總驗零問題
 
@@ -8354,6 +8359,7 @@ Sonnet 唯一優勢是會補正確外部事實，但那同時是編造風險，�
 
 **index.html 尚未修改**，線上功能仍走原本的 `/claude` API。
 
+
 ### 2026-08-15｜dip-vinyl-shop＋classical-expansion（無 git）｜古典 c-08 共 36 張上架，seed 7,743；試聽再補「年份衝突」第三道關卡
 
 seed 7,707 →**7,743**，classical 擴充累計 **223 張上架**。
@@ -8660,6 +8666,7 @@ Albert Ayler《Spiritual Unity》的重複卡。**下方 2026-08-14 的重切段
 卡池另有一件待辦已另立背景任務：
 **118 張同時掛 jazz 與 hiphop 的卡需要逐張稽核**（多數是 jazz rap 的正確雙標，但掃到 Janet Jackson《Control》這類明顯誤標）。
 
+
 ### 2026-08-14｜新功能：拍封面搜尋（測試版）——Haiku 視覺辨識＋卡池比對
 
 - Repo：`dip-vinyl-worker`（新端點）＋`dip-vinyl-shop`（搜尋專輯頁 UI）
@@ -8754,6 +8761,7 @@ r-10 的 writer-1 在**修剪階段**吃到一次 529 Overloaded（伺服器端�
 
 **r-11**。重切後總共 r-01..r-23 共 845 張，已上線 349 張，剩 13 批 496 張尚未進 hook。
 共用骨架帳本在 `desc-restyle/batches/recut/LEDGER.md`。
+
 
 ### 2026-08-11｜desc-restyle（無 git）｜wave3 重切後開跑：r-01..r-06 上線 181 張
 
@@ -13584,6 +13592,7 @@ hiphop 含標 1277、soul 928——嘻哈R&B合計約 2205，超越爵士成第�
 
 ## 逐次改動記錄（新到舊）
 
+
 ### 2026-08-16｜dip-vinyl-shop＋dip-vinyl-worker｜資安健檢：關閉公開 AI 代理、撤除外洩的 Discogs token
 
 店主要求做一次網站安全健檢，查出兩個**已可被實際利用**的問題，當日修補完成。
@@ -13706,6 +13715,7 @@ Celibidache《Bruckner 8》2024→1985（他終身不錄音，母帶 2024 年才
 第二道證明缺口已比當初小得多，但那段抑制**先不要拿掉**——三道稽核都只覆蓋古典擴充的 manifest，
 早期非古典卡沒掃過。
 
+
 ### 2026-08-15｜dip-vinyl-home（classical-expansion）｜p1z：十張「卡單本身錯了」的卡逐張裁定
 
 身分解析器判定「該演奏家從未錄過卡片指名作品」的 10 張（c-17×3、c-19×5、c-20×2），
@@ -13725,6 +13735,7 @@ manual-identity 2 張（Nyiregyházi、Antonia Brico）、needsRuling 2 張（Si
 所有封面一律用帶 `Range: bytes=0-1023` 的 GET 實測，9 個網址全回 206。
 Rossini Gala（bc31e658）與 Nyiregyházi Live Vol.1（29f98bb7）RG 層與 release 層封面皆 404，
 已據此改判。避重複：Nelsons 同批 c-20 已有卡故不選、Rostropovich 池內已四張故不選。
+
 
 ### 2026-08-15｜dip-vinyl-home（.claude/skills，無 git）｜dip-deep-dig 產出 Cowork 可攜版，修掉三處環境依賴
 
@@ -13985,6 +13996,7 @@ Bobby Womack《I Still Love You》、Albert Ayler《Spiritual Unity》的重複�
 - 新檔與腳本寫檔格式逐字相符：true；apex 現檔與 `indent=1` 逐字相符：true。
 - 行數 7484 = 列數；空 genres 0；`node --check` 腳本通過。
 
+
 ### 2026-08-14（同日追加）｜shop｜孤兒卡收尾：52 張補曲風、修腳本洗年份的 bug、補回 4 張年份
 
 承接同日 jazz+hiphop 稽核時發現的 53 張空 genres 卡（任何派系都抽不到）。
@@ -14068,6 +14080,7 @@ ECM New Series 的影像聲軌拼貼，主體是旁白與引用蒙太奇，十�
    腳本一跑就會整檔重排產生假 diff。尚未處理。
 3. jazz+hiphop 稽核留下的待裁示 33 張（見下一筆）。
 
+
 ### 2026-08-14｜shop｜jazz+hiphop 雙標稽核：22 張移除 jazz，卡片零移除
 
 稽核兩池裡同時掛 jazz 與 hiphop 的卡：**seed 118 張＋apex 2 張，合計 120 張**。
@@ -14145,6 +14158,7 @@ New Kingdom《Paradise Don't Come Cheap》(6875)、Zion.T《OO》(6456)、
 Big K.R.I.T.《4eva Is a Mighty Long Time》(6670)；
 資料不足兩張是 Chance《Star Line》(4415, 2025)、A$AP Rocky《Don't Be Dumb》(5307, 2026)。
 其餘 22 張傾向保留（Madlib／DOOM／billy woods／Earl 等有爵士取樣痕跡但無法逐軌指名來源）。
+
 
 ### 2026-08-10（同日第五次追加）｜shop｜開關移到頂欄、換類型會停播、結果頁文案改寫
 
@@ -15118,6 +15132,7 @@ wrangler kv bulk put 回 Success；verify-kv 49/49 一致；兩張移除卡的 K
 - 主要檔案：`desc-restyle/BATCH_PLAN.md`（新增）、`desc-restyle/batches/wave2/w2-062~128-cards.json`（67 份新卡單）、`desc-restyle/progress.json`（新增 `batchPlan` 欄）
 - 驗證：67 份卡單逐檔重讀比對——卡片總數 3,329、**重複 key 0**、與可分池總數相符；正規化後**跨批藝人 0 組**；正規化未誤併（唯一合併多種原始字串的組是 `sun ra`／`the sun ra arkestra`，確為同一人；`mix`＝Little Mix、`brother`＝Little Brother 皆為單一藝人被剝掉 little 前綴）。
 - 後續：**執行時直接讀預切卡單，不要再跑 `build-next-batches.mjs`**（該工具現已回報可分池 0 張）。卡池日後若新增專輯，新卡不在這 67 批內、需另行分批。
+
 
 ### 2026-08-02｜desc-restyle：批次 061 共 50 張上線（平行模式收官，060／061 合計 100 張）
 - Repo：`desc-restyle`；`dip-vinyl-shop` 僅更新本備忘錄
