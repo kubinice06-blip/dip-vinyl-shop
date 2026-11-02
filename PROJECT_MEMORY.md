@@ -1,5 +1,20 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪 R7：s07–s09 verdicts 750 張
+
+- **範圍**：c114–c133，包括 Nashboro 福音、日本噪音／硬蕊／前衛爵士、NYHC／youth crew、英倫民謠、芝加哥／底特律 house-techno、台灣獨立、波羅的海、伊朗、伊比利、緬泰印尼、波蘭搖滾、Blue Note 與日本爵士。15 段各 50 張，派 Opus 代理照 `rerate-20261102/DISPATCH.md` 重評。只產出 verdicts，seed、manifest、card_catalog 都沒動。
+- **新舊分布（1/2/3/4/5）**：
+  - 經典度 7/279/224/231/9 → 0/42/289/380/39。
+  - 冷門度 0/5/318/426/1 → 0/44/188/335/183。
+  - 硬蕊度 5/504/27/200/14 → 99/333/219/67/32。
+- **主線**：每段抽 5 張覆核，退回 0 段，改 3 張經典度：Quicksand《Manic Compression》3→4、Kourosh Yaghmaei《Gol-e Yakh》5→4、洪佩瑜《明室》5→4。逐段紀錄在 `verdicts/r7-mainline.log`。
+- **留給套用工作階段**：
+  - 依 ADDENDUM 但書（試聽 unavailable 但有正式數位版）給冷門度 4、不給 5 的有 8 張，名單在各片 summary。機械套下限的話會抬到 5。
+  - L 值疑似對錯實體：告五人兩張、ザ・スターリン《Fish Inn》（照硬規則給下限分），以及 Ahmad Jamal《Happy Moods》（L 14 萬，照廠牌給 3）。
+- **教訓**：子代理共用 scratchpad，同名暫存腳本互相覆蓋，一支代理一度把 s09 的卡寫進 s08 的輸出檔（已自清，合併檢查確認 extra 0）。以後派工要指定各代理用自己的子目錄。
+- **主要檔案**：`batch-progress/rerate-20261102/verdicts/s0{7,8,9}-*.json`、`s0{7,8,9}.summary.md`、`r7-mainline.log`、`PLAN.md` 分片表。
+- **驗證**：三片合併檢查各 250/250，miss 0、bad 0、keep 0；冷門度下限逐張機械檢查，除上述 8 張但書例外以外全部符合。
+
 ### 2026-11-02｜dip-vinyl-shop｜三軸重評第二輪 R12：s22–s24 verdicts 750 張
 
 - **範圍**：c74–c93（Sarah／Creation 系 twee、美國福音、日本環境音樂／onkyo／techno、UK DIY 與後龐克、Rounder 藍草、URC 民謠、SST／Dischord、lovers rock／dub、loft 與靈性爵士、Johnny's Disk、影史原聲、台灣流行／獨立、英美新浪潮）。15 段各 50 張派 Opus 代理；只交 verdicts，不動 seed／manifest／card_catalog。
