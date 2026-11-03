@@ -1,0 +1,162 @@
+{
+ "the beatles|the beatles (white album)": {
+  "name": "projects/price-manager-e8846/databases/(default)/documents/card_catalog/the beatles|the beatles (white album)",
+  "fields": {
+   "album": {
+    "stringValue": "The Beatles (White Album)"
+   },
+   "coverUrl": {
+    "stringValue": "https://i.scdn.co/image/ab67616d0000b2739daf50d073fd6e7ad9bc0076"
+   },
+   "cardId": {
+    "stringValue": "the beatles|the beatles (white album)"
+   },
+   "updatedAt": {
+    "integerValue": "1788092508885"
+   },
+   "obscurity": {
+    "integerValue": "1"
+   },
+   "classic": {
+    "integerValue": "5"
+   },
+   "accessibility": {
+    "integerValue": "2"
+   },
+   "seed": {
+    "booleanValue": true
+   },
+   "artist": {
+    "stringValue": "The Beatles"
+   },
+   "rarity": {
+    "stringValue": "uncommon"
+   }
+  },
+  "createTime": "2026-07-02T23:22:03.632261Z",
+  "updateTime": "2026-11-03T14:55:01.695115Z"
+ },
+ "the beatles|the beatles": {
+  "name": "projects/price-manager-e8846/databases/(default)/documents/card_catalog/the beatles|the beatles",
+  "fields": {
+   "cardId": {
+    "stringValue": "the beatles|the beatles"
+   },
+   "album": {
+    "stringValue": "The Beatles"
+   },
+   "coverUrl": {
+    "stringValue": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/fa/5b/89/fa5b898d-bad6-e053-4195-260e5c74f2bb/00602567725466.rgb.jpg/600x600bb.jpg"
+   },
+   "rarity": {
+    "stringValue": "uncommon"
+   },
+   "updatedAt": {
+    "integerValue": "1"
+   },
+   "obscurity": {
+    "integerValue": "1"
+   },
+   "seed": {
+    "booleanValue": true
+   },
+   "accessibility": {
+    "integerValue": "2"
+   },
+   "artist": {
+    "stringValue": "The Beatles"
+   },
+   "classic": {
+    "integerValue": "5"
+   }
+  },
+  "createTime": "2026-07-06T14:38:02.502031Z",
+  "updateTime": "2026-11-03T14:55:01.508900Z"
+ },
+ "guru|jazzmatazz volume 1": {
+  "name": "projects/price-manager-e8846/databases/(default)/documents/card_catalog/guru|jazzmatazz volume 1",
+  "fields": {
+   "accessibility": {
+    "integerValue": "1"
+   },
+   "obscurity": {
+    "integerValue": "3"
+   },
+   "artist": {
+    "stringValue": "Guru"
+   },
+   "updatedAt": {
+    "integerValue": "1786897901136"
+   },
+   "desc": {
+    "stringValue": "爵士嘻哈（Jazzy Hip-Hop）的起點——不再只是取樣爵士唱片，而是真的請來爵士樂手現場與嘻哈音樂人合作。陣容囊括Donald Byrd（小號）、Roy Ayers（鐵琴）、Branford Marsalis（薩克斯風）等傳奇。Guru先立好電子節拍與bass line，讓爵士大師在律動上即興，最後才填詞，做出嘻哈前所未見的有機聲響。它把嘻哈的節奏與爵士的生命力結合成跨越時代的聲音，三十年後依然鮮活。非常容易入耳。"
+   },
+   "classic": {
+    "integerValue": "4"
+   },
+   "upc": {
+    "stringValue": "094632199829"
+   },
+   "rarity": {
+    "stringValue": "common"
+   },
+   "coverUrl": {
+    "stringValue": "https://coverartarchive.org/release-group/cb4db891-330d-394d-af54-3edc37e8416e/front"
+   },
+   "rgMbid": {
+    "stringValue": "cb4db891-330d-394d-af54-3edc37e8416e"
+   },
+   "album": {
+    "stringValue": "Jazzmatazz Volume 1"
+   },
+   "cardId": {
+    "stringValue": "guru|jazzmatazz volume 1"
+   }
+  },
+  "createTime": "2026-08-15T09:11:19.215054Z",
+  "updateTime": "2026-11-02T08:00:20.824066Z"
+ },
+ "guru|jazzmatazz, vol. 1": {
+  "name": "projects/price-manager-e8846/databases/(default)/documents/card_catalog/guru|jazzmatazz, vol. 1",
+  "fields": {
+   "obscurity": {
+    "integerValue": "2"
+   },
+   "updatedAt": {
+    "integerValue": "1"
+   },
+   "album": {
+    "stringValue": "Jazzmatazz, Vol. 1"
+   },
+   "tier": {
+    "stringValue": "hall"
+   },
+   "artist": {
+    "stringValue": "Guru"
+   },
+   "rarity": {
+    "stringValue": "common"
+   },
+   "cardId": {
+    "stringValue": "guru|jazzmatazz, vol. 1"
+   },
+   "seed": {
+    "booleanValue": true
+   },
+   "apex": {
+    "booleanValue": true
+   },
+   "classic": {
+    "integerValue": "4"
+   },
+   "coverUrl": {
+    "stringValue": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/20/8a/1c/208a1c15-f7fd-1cb2-f214-c6d17370da44/00094632199850.rgb.jpg/600x600bb.jpg"
+   },
+   "accessibility": {
+    "integerValue": "1"
+   }
+  },
+  "createTime": "2026-07-02T23:22:07.072379Z",
+  "updateTime": "2026-11-03T16:31:32.617311Z"
+ }
+}
