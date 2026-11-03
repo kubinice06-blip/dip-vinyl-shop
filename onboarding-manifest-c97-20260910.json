@@ -1976,21 +1976,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "heresy",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為異端（該軸 7 星）。Merzbow harsh noise高峰期代表盤，58分鐘無間斷噪音牆，屬Pulse Demon同級的極端",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Merzbow",
-     "https://en.wikipedia.org/wiki/Japanoise"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原異端降為一般卡。同級內一藝人一張：Merzbow heresy 留《Pulse Demon》。7 星錨點本身、7 星重審強度 3",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "heresy",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為異端（該軸 7 星）。Merzbow harsh noise高峰期代表盤，58分鐘無間斷噪音牆，屬Pulse Demon同級的極端",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Merzbow",
+      "https://en.wikipedia.org/wiki/Japanoise"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "一個日本的噪音企劃，這張由瑞典的 The Releasing Eskimo 發行。盤名全稱帶副標 Psycho-Analytic Study of Coital Noise Posture。盤上記著 1994 年的瑞典盤編號 IGLOO 001、CD，四軌只以 Part 1 到 Part 4 編號，長度 9:22、25:06、20:59 與 2:54。",
@@ -2015,8 +2016,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -2062,21 +2063,22 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "heresy",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為異端（該軸 7 星）。Merzbow單軌73分鐘harsh noise，極端度到位但非其最常被引的代表盤，勉強",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Merzbow",
-     "https://en.wikipedia.org/wiki/Masami_Akita_discography"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原異端降為一般卡。同級內一藝人一張：Merzbow heresy 留《Pulse Demon》。7 星錨點本身、7 星重審強度 3",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "heresy",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為異端（該軸 7 星）。Merzbow單軌73分鐘harsh noise，極端度到位但非其最常被引的代表盤，勉強",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Merzbow",
+      "https://en.wikipedia.org/wiki/Masami_Akita_discography"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "秋田昌美長年為日本的書籍與雜誌撰稿與編輯。英文維基記他的寫作題材多為音樂、現代藝術與地下文化。盤上記著這張 1990 年的日本盤由 Alchemy Records 發行、編號 ARCD-017、CD，整片只掛一個軌號，〈Rainbow Electronics〉一條走完 73:29。同一條目記他在上百家獨立廠牌發行過錄音。",
@@ -2101,8 +2103,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {

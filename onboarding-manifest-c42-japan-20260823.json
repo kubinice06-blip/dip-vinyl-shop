@@ -5323,21 +5323,22 @@
       },
       "rarity": "legendary",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原異端未達該軸 7 星，降為一般卡。灰野敬二噪音迷幻現場極端（5），非 harsh noise wall 級公認最難入耳",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "heresy",
+        "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。灰野敬二 100 分鐘雙現場首作，極高音量回授噪音迷幻，被稱日本噪音搖滾的震撼啟示；灰野系以此張為準",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Fushitsusha_(1989_album)",
+          "https://daily.redbullmusicacademy.com/2014/10/keiji-haino-guide/"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "heresy",
-          "reason": "日文維基將不失者歸入ノイズロック，英文維基把樂團曲風列到 Japanoise 一端，灰野本人四十年拒絕商業妥協的即興路線亦有多方報導；兩張黑膠的高音量自由即興確屬極難入耳，符合異端門檻。",
-          "evidenceUrls": [
-            "https://ja.wikipedia.org/wiki/%E7%81%B0%E9%87%8E%E6%95%AC%E4%BA%8C",
-            "https://en.wikipedia.org/wiki/Fushitsusha"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原異端未達該軸 7 星，降為一般卡。灰野敬二噪音迷幻現場極端（5），非 harsh noise wall 級公認最難入耳",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:apex-rebalance-20261103"
       },
       "description": {
         "text": "灰野敬二在 1970 年代末組成的樂團形態，起初是與白石民夫的雙人編制，後來多以三人進行，他把 hard rock 的方法論整個搬進來。1989 年 7 月由 PSF Records 發行的首作是兩張一組的現場錄音（PSF-3／PSF-4，八曲）：吉他長時間停在潰爛的失真上，貝斯與鼓維持極慢的推進，人聲在上頭拉長、破音、再拉長，全片黑的封套只印「不失者」三字。他自七〇年代起的百餘種錄音幾乎都走獨立流通，Sonic Youth 的 Thurston Moore 等人長年擁護；2026 年 3 月他獲頒威尼斯雙年展音樂部門的終身成就金獅獎。",
@@ -5367,8 +5368,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {

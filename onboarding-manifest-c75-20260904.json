@@ -1478,21 +1478,22 @@
    },
    "rarity": "common",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L31有效，小型福音廠原盤，壓量無據；藝人知名、非收藏聖杯；5星",
-    "evidenceUrls": [
-     "https://www.last.fm/music/The%20Clark%20Sisters/Count%20It%20All%20Joy",
-     "https://musicbrainz.org/release-group/0dc43d29-615f-43f0-a193-d4297942e30f"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：The Clark Sisters pearl 留《Unworthy》。兩張強度相同；取較早、listeners 較低者",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L31有效，小型福音廠原盤，壓量無據；藝人知名、非收藏聖杯；5星",
+     "evidenceUrls": [
+      "https://www.last.fm/music/The%20Clark%20Sisters/Count%20It%20All%20Joy",
+      "https://musicbrainz.org/release-group/0dc43d29-615f-43f0-a193-d4297942e30f"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "母親的人聲出現在最後兩首，credit 欄標著未掛名。製作欄這次多了 Elbernita「Twinkie」Clark，與 Bernie Mendelson 並列，鍵盤也是她彈的——英文維基寫，到了這個時候，母親已經把團的主導權交到她手上。唱片標籤把同名曲〈Count It All Joy〉印成了 Counting On Joy。Bob Marovich 說，Sound of Gospel 的唱片就算不認識藝人也值得買，製作水準一貫在水準之上。",
@@ -1515,8 +1516,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {

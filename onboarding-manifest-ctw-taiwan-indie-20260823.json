@@ -499,21 +499,22 @@
       },
       "rarity": "legendary",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原異端未達該軸 7 星，降為一般卡。台灣噪音先驅，但無「史上最難入耳之一」國際公認依據，止於5",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "heresy",
+        "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。台灣第一個噪音團、自製自發的首張噪音專輯，反藝術暴力表演；華語圈極端先驅，但缺國際「史上極端」公論",
+        "evidenceUrls": [
+          "https://soundtraces.tw/?p=100580",
+          "https://whitefungus.com/wasteland-utopia-history-taiwanese-noise"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "heresy",
-          "reason": "全碟母帶做成單一軌、約 51 分鐘不分軌，Discogs 標記 Noise／Experimental／Industrial，段落標題與勞工遊行現場錄音直接嵌入，無旋律與節拍可依附，符合異端的極端入耳難度。",
-          "evidenceUrls": [
-            "https://api.discogs.com/releases/1360708",
-            "https://musicbrainz.org/release-group/c653c34d-05c6-47e0-afc7-be22f3607542"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原異端未達該軸 7 星，降為一般卡。台灣噪音先驅，但無「史上最難入耳之一」國際公認依據，止於5",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:apex-rebalance-20261103"
       },
       "description": {
         "text": "1994 年由台北的 Noise 廠牌發行（NA 03），只壓四百張。母帶做成單一軌、約五十一分鐘不斷開，內部分成十二個標題段落，其中〈11:15 AM, June 29, 1994. Labor's Demonstration／Police's Declaration in Taipei〉直接嵌入那天台北勞工遊行與警方廣播的現場錄音。噪音、工業與電子器材的持續堆疊是全片唯一的語言，封面自稱 Made in Taiwan Noise Production。",
@@ -543,8 +544,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {

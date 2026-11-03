@@ -1788,13 +1788,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "開創地位跨來源且長期一致：英文維基〈Black Sabbath (album)〉導言直指其為公認的第一張真正重金屬專輯、同名曲被列為史上最偉大重金屬歌曲並被視為 doom metal 起點，〈Heavy metal music〉條目也把該團列為曲風創始者之一並專章討論其歌詞取向，符合殿堂所需的開創與長期共識。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Black_Sabbath_(album)",
-          "https://en.wikipedia.org/wiki/Heavy_metal_music"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原殿堂降為一般卡。同級內一藝人一張：Black Sabbath hall 留《Paranoid》。7 星重審通過（同名首張未過）；War Pigs／Iron Man，重金屬的大眾門面",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "開創地位跨來源且長期一致：英文維基〈Black Sabbath (album)〉導言直指其為公認的第一張真正重金屬專輯、同名曲被列為史上最偉大重金屬歌曲並被視為 doom metal 起點，〈Heavy metal music〉條目也把該團列為曲風創始者之一並專章討論其歌詞取向，符合殿堂所需的開創與長期共識。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Black_Sabbath_(album)",
+            "https://en.wikipedia.org/wiki/Heavy_metal_music"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:apex-rebalance-20261103"
       },
       "description": {
         "text": "1969 年 11 月 17 日，樂團用一場十二小時的錄音把現場曲目直接搬進倫敦 Regent Sound，Rodger Bain 製作，隔年 2 月 13 日由 Vertigo 發行。同名開場曲以緩速的三全音音程起手，被視為第一首 doom metal；Iommi 早年在鐵工廠切斷兩根指尖後改造出的按弦方式，決定了整碟的和聲語法。英國 Vertigo 版與美國 Warner 版曲目編排不同，美版把〈Behind the Wall of Sleep〉〈N.I.B.〉等併成組曲並補進〈Wicked World〉。",
@@ -1827,8 +1835,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -10721,10 +10729,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "九〇年代後製美學的頂點，年度榜三連冠與葛萊美紀錄俱在，惟史上級榜單排名浮動、學界共識尚未定於一，建議交店主覆核後再考慮升格。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為殿堂。殿堂補位：稽核強度 3、listeners 106 萬；RS500 收錄",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Odelay",
+          "https://www.rollingstone.com/music/music-lists/best-albums-of-all-time-1062063/"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "九〇年代後製美學的頂點，年度榜三連冠與葛萊美紀錄俱在，惟史上級榜單排名浮動、學界共識尚未定於一，建議交店主覆核後再考慮升格。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:apex-rebalance-20261103"
       },
       "description": {
         "text": "1994 年先和 Tom Rothrock、Rob Schnapf 錄了收尾曲〈Ramshackle〉，其餘多在 1995 年於 Dust Brothers 位在洛杉磯 Silver Lake 的自宅錄音室完成，取樣密度與曲風跳接由此而來。1996 年 6 月 DGC 發行，《Rolling Stone》、Pazz & Jop 與《NME》年度票選都把它排在第一，第 39 屆葛萊美獎拿下最佳另類專輯，〈Where It's At〉另得最佳男搖滾演唱。封面那隻跨欄的匈牙利可蒙犬，是 Joan Ludwig 為 1977 年美國育犬協會會刊拍的。",
@@ -10756,8 +10775,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {

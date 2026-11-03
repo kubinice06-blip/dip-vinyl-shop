@@ -2088,10 +2088,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 2、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。首張，兩面長篇咒語循環＋嘶吼噪音的儀式工業，被視為最陰森的早期工業盤之一；但非噪音牆級",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Nature_Unveiled",
+     "https://www.allmusic.com/album/nature-unveiled-mw0000801613",
+     "https://trouserpress.com/reviews/current-93/"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 2、obscurity 4、accessibility 5，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "A、B 兩面各只放一首，每首都逼近 20 分鐘。Current 93 由 David Tibet 創立，這張 12 吋在 1984 年交給比利時的 L.A.Y.L.A.H. Antirecords，限量 1000 張。A 面量起來是 18 分 59 秒，B 面約 19 分 50 秒。Tibet 領銜，Nurse With Wound 的 Steven Stapleton 也一同進錄音室。聲音是磨刺的磁帶迴圈與嗡鳴的合成器噪音，貼近當年的 industrial。",
@@ -2118,8 +2130,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

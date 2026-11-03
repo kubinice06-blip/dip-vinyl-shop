@@ -454,10 +454,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 1691），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。心理聲學電腦合成，PopMatters 置於 Mego 筆電圈最邊緣、TMT 稱比前作更具挑戰；刺耳但仍有 acid 律動",
+    "evidenceUrls": [
+     "https://popmatters.com/114942-hecker-acid-in-the-style-of-david-tudor-2496112895.html",
+     "https://tinymixtapes.com/music-review/hecker-acid-style-david-tudor",
+     "https://en.wikipedia.org/wiki/Florian_Hecker"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 1691），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "Buchla 合成器接上類比電腦，一個人錄完整張噪音。Hecker 早在 1998 年就於 Mego 出了第一張專輯；Mego 結束之後，Peter Rehberg 另創 Editions Mego，這張就在 2009 年 5 月由新廠牌發行。合成器是 Buchla 的模組系統，類比電腦則出自 Comdyna。標題把美國實驗作曲家 David Tudor 和 acid 這個字眼擺在一起。六軌全用同一個曲名，步調狂亂，重複的節奏型才一冒出來就被打散。",
@@ -487,7 +499,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -959,10 +971,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 892），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。以耳聲發射（第三耳）為素材，需大音量播放、在耳內產生刺痛音；聲音藝術極端里程碑、Tzadik 唯一代表作",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Maryanne_Amacher",
+     "https://www.villagevoice.com/1999/08/10/consumer-guide-17/",
+     "https://www.freejazzblog.org/2023/11/the-tzadik-stream-is-flood-part-2-of-2.html"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 892），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "Amacher 要聽者的耳朵自己發出聲音。美國作曲家 Maryanne Amacher 在賓州大學跟 Stockhausen 學作曲，後來與 Cage 合作。1992 年起，她把耳內音改稱耳聲傳射，說那是耳朵裡的小喇叭，副標題「第三隻耳朵」就從這裡來。刺耳的質地正是為了誘發耳聲傳射；另一首聽來像垃圾桶沿著金屬滑槽摔落。她的作品多為特定場地而作，用大量擴音器激發結構傳導聲。1999 年這張由 Tzadik 發行，其中三首是多聲道裝置縮成雙聲道的節錄。",
@@ -986,7 +1010,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {

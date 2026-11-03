@@ -1526,10 +1526,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 62），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。荷蘭薩克斯＋鼓雙人，單曲 36 分噪音化自由爵士／drone；Quietus 稱把自由爵士丟進碾碎機；新盤、影響力有限",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Dead_Neanderthals",
+     "https://deadneanderthals.bandcamp.com/album/craters"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 62），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "二人組錄這張，多出第三個人。Dead Neanderthals 平常只有吹薩克斯風的 Otto Kokke 與打鼓的 René Aquarius 兩人，這回加進來的是貝斯手 Maxime Petit。〈Craters〉一首長 36 分 38 秒，樂評描述它從低沉震盪的 drone 開始，約 1 分 57 秒回授進場，約 9 分 30 秒才浮上來；貝斯粗啞，鼓只偶爾重重敲下。整張於 2017 年 3 月 17 日發片，廠牌為 Consouling Sounds。",
@@ -1552,8 +1563,8 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

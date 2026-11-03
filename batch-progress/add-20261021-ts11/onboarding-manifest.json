@@ -1070,21 +1070,22 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。蒙古流通CD，壓量無據，非收藏聖杯",
-    "evidenceUrls": [
-     "https://www.last.fm/music/Altan%20Urag/Nation",
-     "https://musicbrainz.org/release-group/fa5823a3-dae4-474f-a3cb-aba5b9f2baf3"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Altan Urag pearl 留《Once Upon a Time in Mongolia》。兩張強度、經典度相同；取 listeners 較低者（冷門度軸）",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。蒙古流通CD，壓量無據，非收藏聖杯",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Altan%20Urag/Nation",
+      "https://musicbrainz.org/release-group/fa5823a3-dae4-474f-a3cb-aba5b9f2baf3"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "Altan Urag 的 2010 年，名下並列三張新作。樂團 2002 年 5 月成軍，玩 folk rock，全體團員受過蒙古古典音樂訓練。《Nation》是其中一張，以無廠牌 CD 的形式在蒙古流通。14 軌的曲名多取自地景，像〈Kherulen River〉（克魯倫河）、遠山，以及草原上的五座山丘。",
@@ -1109,8 +1110,8 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {

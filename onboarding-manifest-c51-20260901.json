@@ -35,21 +35,22 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為殿堂（該軸 7 星）。RS500 2003#62、1001、90 年代各大榜；U2 代表作，跨類型知名",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Achtung_Baby",
-     "https://www.rollingstone.com/music/music-lists/best-albums-of-all-time-1062063/"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原殿堂降為一般卡。同級內一藝人一張：U2 hall 留《The Joshua Tree》。葛萊美年度專輯、樂團最高銷量；7 星重審強度 3",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "hall",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為殿堂（該軸 7 星）。RS500 2003#62、1001、90 年代各大榜；U2 代表作，跨類型知名",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Achtung_Baby",
+      "https://www.rollingstone.com/music/music-lists/best-albums-of-all-time-1062063/"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "柏林那間錄音室裡他們差點拆夥，救回來的是〈One〉的兩段和弦。1990 年 10 月起，他們在柏林的 Hansa 錄音室僵持不下：節奏組想守住傳統搖滾，Bono 與 The Edge 要往工業與電子舞曲走，一度認真考慮解散，直到 The Edge 即興彈出那段和弦進行，士氣才回來。唱片 1991 年 11 月由 Island Records 發行，在《Billboard》200 以冠軍開出，全球賣出約 1800 萬張，並在 1993 年拿下葛萊美最佳搖滾團體或雙人組演出獎。",
@@ -71,8 +72,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -5052,22 +5053,23 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "heresy",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為異端（該軸 7 星）。非常階段（7星錨點所列）公認代表作，RBMA日噪史與noisextra稱seminal，harsh noise極端",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Hijokaidan",
-     "https://daily.redbullmusicacademy.com/2014/10/birth-of-noise-in-japan-feature",
-     "https://noisextra.com/category/1980s/page/8"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原異端降為一般卡。同級內一藝人一張：非常階段 heresy 留《蔵六の奇病》。7 星重審強度 3、經典度 5；日本噪音的起點之一",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：obscurity=5、listeners=312，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "heresy",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為異端（該軸 7 星）。非常階段（7星錨點所列）公認代表作，RBMA日噪史與noisextra稱seminal，harsh noise極端",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Hijokaidan",
+      "https://daily.redbullmusicacademy.com/2014/10/birth-of-noise-in-japan-feature",
+      "https://noisextra.com/category/1980s/page/8"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "主辦單位把團名寫錯，他們索性用那個錯的名字用了四十年。1979 年 JOJO 広重 與頭士奈生樹 另起了螺旋階段之外的這條支線，團員高山謙一 說這比較像非常階段，也就是緊急逃生梯；1980 年 6 月他們到東京新宿 ACB Hall 演出時，主辦方就把團名寫成了非常階段，JOJO 広重 索性沿用。早期的他們以行為表演為主，重心後來才從表演轉向聲音，本作正是噪音牆已經成形的那個階段，1985 年 5 月由 JOJO 広重 主持的大阪廠牌 Alchemy Records 發行。",
@@ -5086,8 +5088,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -5133,21 +5135,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "heresy",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為異端（該軸 7 星）。Masonna流通最廣作，無節拍無曲式的嘶吼回授噪音，與Merzbow、非常階段並列日噪極端代表",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Masonna",
-     "https://en.wikipedia.org/wiki/Japanoise"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原異端降為一般卡。同級內一藝人一張：Masonna heresy 留《Spectrum Ripper》。稽核強度 3、listeners 較高；Masonna 最具代表性的 harsh noise 作",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：obscurity=5、listeners=2118；accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "heresy",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為異端（該軸 7 星）。Masonna流通最廣作，無節拍無曲式的嘶吼回授噪音，與Merzbow、非常階段並列日噪極端代表",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Masonna",
+      "https://en.wikipedia.org/wiki/Japanoise"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "團名是一整句法文的縮寫，拆開來一樣不讓人聽懂。那句話是 Mademoiselle Anne Sanglante Ou Notre Nymphomanie Auréolé，山崎マゾ 1987 年起用它當這個獨作計畫的名字。1996 年這張由 Relapse 旗下的實驗支線 Release Entertainment 發行，是他流通最廣的一張。全碟七軌，靠剪接式的編輯與大量效果器把嘶吼與回授一起過濾再處理，人聲成了另一種噪音源。",
@@ -5166,8 +5169,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -5614,10 +5617,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。四段組曲混合刺耳噪音與黑金屬氛圍，樂評稱 punishing；但含旋律化合成器，未到 harsh noise wall",
+    "evidenceUrls": [
+     "https://exclaim.ca/music/article/prurient-pleasure_ground",
+     "https://www.normanrecords.com/records/86231-prurient-pleasure-ground"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "最早的版本只是 No Fun Fest 攤位上一盒自製卡帶。那場音樂節由 Carlos Giffoni 策劃；同年 Rhode Island 的 Load Records 把它正式發行，2007 年再壓成黑膠。Prurient 是 Dominick Fernow 的主要名義，他 1998 年開始發表作品，同年創辦 Hospital Productions。2016 年 9 月 Hospital Productions 把這張重壓成豪華雙黑膠，定位是一張硬派噪音經典。",
@@ -5640,8 +5654,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -5757,10 +5771,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。power electronics：嘶吼、咳嗽嘔吐聲與工業噪音，樂評稱近年最佳噪音盤之一；Whitehouse 已占同型高位",
+    "evidenceUrls": [
+     "https://factmag.com/2014/11/19/pharmakon-bestial-burden-review",
+     "https://www.slugmag.com/music/national-music-reviews/pharmakon-bestial-burden/"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "看過手術中拍下的體內照片之後，她把那種恐懼錄成一張唱片。起點是一次緊急手術，Margaret Chardiet 在康復期間寫完整張，術後臥床三週、無法巡演，這是她以 Pharmakon 之名的第二張，2014 年 10 月 14 日由布魯克林的 Sacred Bones 發行。整張的主題是身體與意識的分裂——身體像是有自己的意志，與她的意志無關；有兩首曲子直接把劇烈的咳嗽與嘔吐聲收進來當素材。全碟六首、約 32 分鐘，同名曲擺在最後，人聲一路失控。",
@@ -5783,8 +5808,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -10199,10 +10224,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。一小時單曲：嗩吶短取樣反覆，樂團即興層層加厚直至噪音吞沒原聲，日本噪音即興極端代表",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Ground_Zero_(band)",
+     "https://en.wikipedia.org/wiki/Otomo_Yoshihide"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "一段首爾的嗩吶錄音，被八個人圍著疊成五十七分鐘。被取樣的是嗩吶演奏者 Kim Suk Chul 1996 年 11 月在 Yong-Gang Hall 的演奏，大友良英把它拉成整曲的底色，唱盤、Sachiko M 的取樣機、田中悠美子的太棹三味線與菊地成孔的高音薩克斯風一層層疊上去，鼓組把密度推到近乎崩塌。全碟只有這一首曲子，長 57 分 2 秒，1997 年 4 月由日本的 Creativeman Disc. 發行，是 PROJECT: CONSUME 三卷企劃的第一卷。",
@@ -10226,8 +10262,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

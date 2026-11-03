@@ -263,10 +263,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。瑞典邪典盤，但由 Silence 正規發行，目錄已上串流，非稀有地下（主線補收：代理判 no 是因缺聖杯口碑，但過硬條件：listeners 有效 1–299、非錯配、冷門度 5）",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Philemon+Arthur+and+the+Dung/Philemon+Arthur+and+the+Dung",
+     "https://sv.wikipedia.org/wiki/Philemon_Arthur_and_the_Dung"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "1972 年拿下 Grammis，而反對它得獎的抗議聲，是那個獎停辦到 1987 年的原因之一。斯科訥的雙人組只用 Philemon Arthur 與 The Dung 兩個化名。原盤背面印著 1971 年春天錄於自家閣樓；盤式錄音機、爆音麥克風、走音的吉他與手風琴，加上鍋子與暖氣片，沒有鼓組。22 軌，〈Missan spinner〉只有 21 秒。Träd, Gräs och Stenar 在第一屆 Gärdet 音樂節翻唱〈In kommer Gösta〉。",
@@ -287,8 +298,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

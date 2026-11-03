@@ -220,10 +220,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Curran 首張個人作，原盤由他與 Scelsi 等人自營小廠 Ananda 發行；2018 Superior Viaduct 考古重發。屬收藏圈名作，但非聖杯級",
+    "evidenceUrls": [
+     "https://www.forcedexposure.com/catalog/SV.129LP.html",
+     "https://musicbrainz.org/release-group/769995b2-29f4-3e4b-a457-2232bce5ad85"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "風聲、燕子與蜜蜂，混進合成器的長音。美國出生、長居羅馬的 Alvin Curran 是 Musica Elettronica Viva 共同創辦人，這張在 1975 年由羅馬的 Ananda 發行，目錄號 Ananda n°1。廠牌由他和 Roberto Laneri、Giacinto Scelsi 合組，每張唱片都由作者本人從頭製作到尾。演奏、合成、錄音、混音全歸他一手。VCS3 合成器拉出的長音底下，襯著歌聲、鐘聲與自然錄音。",
@@ -244,8 +255,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

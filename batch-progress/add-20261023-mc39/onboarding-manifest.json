@@ -51,21 +51,22 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。無伴奏薩克斯 80 分鐘、編碼曲名，前衛自由爵士 5 星範疇",
-    "evidenceUrls": [
-     "https://www.last.fm/music/Anthony%20Braxton/Saxophone%20Improvisations%2C%20Series%20F.",
-     "https://musicbrainz.org/release-group/571f44fe-ead5-36fe-92d3-3ca67af75286"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Anthony Braxton pearl 留《Seven Compositions 1978》。稽核判 pearl 強度 2（Series F 稽核判的是 heresy，不是 pearl）",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 7），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。無伴奏薩克斯 80 分鐘、編碼曲名，前衛自由爵士 5 星範疇",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Anthony%20Braxton/Saxophone%20Improvisations%2C%20Series%20F.",
+      "https://musicbrainz.org/release-group/571f44fe-ead5-36fe-92d3-3ca67af75286"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "一個人吹完兩張 LP，曲名全是字母加數字的編碼。只有 Anthony Braxton 一人吹薩克斯風，是一套自由爵士錄音室獨奏，1972 年 2 月 25 日在巴黎錄成，地點是 Decca 錄音室，由法國 America 發行。這是他繼《For Alto》之後的第二張薩克斯風獨奏專輯，〈NR-12-C (33 M)〉這類編碼曲名，承接的正是前作的做法：把長音、顫音、複音逐一編目，Braxton 稱之為「語言音樂」。",
@@ -87,8 +88,8 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -371,10 +372,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 14），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。FMP 正規廠，Parker／Guy 二重奏起點但非稀有聖杯（主線補收：代理判 no 是因缺聖杯口碑，但過硬條件：listeners 有效 1–299、非錯配、冷門度 5）",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Evan+Parker+%26+Barry+Guy/Incision",
+     "https://en.wikipedia.org/wiki/Barry_Guy"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 14），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "Parker 用這張二重奏，確認自己信得過 Guy。高音與次中音薩克斯風手 Evan Parker 自己做了封面設計，對面是低音提琴手 Barry Guy，不用鼓。當時正逢倫敦爵士作曲家管弦樂團內部動盪，Parker 要確認的信任，同時落在音樂與私人兩個層面。六段錄音完成於 1981 年 3 月的柏林，曲名從〈Incision 1〉排到〈Incision 6〉，由 FMP 發行。這場錄音後來促成 Parker、Guy 與打擊手 Paul Lytton 的三重奏。",
@@ -396,8 +408,8 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -870,21 +882,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。前衛爵士拼貼，5星",
-    "evidenceUrls": [
-     "https://www.last.fm/music/Roscoe%20Mitchell/L-R-G%20%2F%20The%20Maze%20%2F%20S%20II%20Examples",
-     "https://musicbrainz.org/release-group/1b924676-ff9c-4cf7-bbcf-786ac401173f"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Roscoe Mitchell pearl 留《Nonaah》。經典度 4、AACM 名作，知名度遠高於另一張",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 64），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。前衛爵士拼貼，5星",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Roscoe%20Mitchell/L-R-G%20%2F%20The%20Maze%20%2F%20S%20II%20Examples",
+      "https://musicbrainz.org/release-group/1b924676-ff9c-4cf7-bbcf-786ac401173f"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "八位打擊樂手敲鐘、鑼與水桶，Braxton 也在其中。1940 年芝加哥出生的 Roscoe Mitchell 是 AACM 早期成員。那件八人打擊作品叫〈The Maze〉，除了 Braxton，Henry Threadgill 與 Mitchell 自己也下場。Chuck Nessa 回憶，這張籌備了一年多，那段時間他每個週末都到威斯康辛的 Mitchell 家討論。1978 年 Nessa Records 推出雙 LP，三件作品分在三地錄成。",
@@ -908,8 +921,8 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -1686,22 +1699,23 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L18有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
-    "evidenceUrls": [
-     "https://www.last.fm/music/Ned%20Rothenberg/Trespass",
-     "https://musicbrainz.org/release-group/b62e4c79-cdf2-48ac-a15c-d02351ccb000",
-     "https://www.discogs.com/release/2395156"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Ned Rothenberg pearl 留《Trials of the Argo》。兩張強度、經典度相同；取首張個人作",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 18），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L18有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Ned%20Rothenberg/Trespass",
+      "https://musicbrainz.org/release-group/b62e4c79-cdf2-48ac-a15c-d02351ccb000",
+      "https://www.discogs.com/release/2395156"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "列在演奏者欄的，還有吹中音薩克斯風的 John Zorn。1985 年夏天，吹薩克斯風與低音單簧管的 Ned Rothenberg 走進紐約 Radio City 的錄音室，曲子全由他寫、也由他製作。A 面五首多在 3 到 6 分鐘之間，B 面則以三段組曲〈Kakeai〉開場。唱片 1986 年上市，廠牌是 Lumina。",
@@ -1725,8 +1739,8 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {

@@ -1310,10 +1310,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 5），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Wackie's 名盤但 Basic Channel 系統性重發、有數位；非傳說級稀有（主線補收：代理判 no 是因缺聖杯口碑，但過硬條件：listeners 有效 1–299、非錯配、冷門度 5）",
+    "evidenceUrls": [
+     "https://musicbrainz.org/release-group/93bcb866-8aab-4682-a778-90676281219e",
+     "https://www.last.fm/music/Tyrone+Evans/Sings+Bullwackie+Style"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 5），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "十首詞曲，全掛他與廠主兩個人的名字。The Paragons 這支牙買加 rocksteady 名團，創團成員裡就有 Tyrone Evans；團裡的〈The Tide Is High〉後來名揚世界。他之後搬到紐約。那位廠主是 Lloyd Barnes，Wackie's 在 1982 年把這張發行出來。",
@@ -1338,8 +1349,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

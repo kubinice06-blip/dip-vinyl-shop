@@ -117,10 +117,21 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：obscurity=5、listeners=132，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。印尼爵士流行盤，未查到原盤壓量或考古再發依據（主線補收：代理判 no 是因缺聖杯口碑，但過硬條件：listeners 有效 1–299、非錯配、冷門度 5）",
+    "evidenceUrls": [
+     "https://musicbrainz.org/release-group/3456758c-27bd-4282-acdd-a687017cfbca",
+     "https://www.last.fm/music/Rien+Djamain/Api+Asmara"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：obscurity=5、listeners=132，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "唱歌是跟著姊姊學的，第一張就交給 Jack Lesmana Combo 伴奏。姊姊叫 Ida Djamain，她自己 1956 年生於 Ujung Pandang，把 Jack Lesmana 當成領她進爵士的老師。這張 1975 年由萬隆的 Hidayat 唱片公司發行，全碟 12 首以 bossa nova 打底，編曲、監製與錄音技師都由 Jack Lesmana 一人擔任。Rolling Stone Indonesia 的 150 張最佳印尼專輯把它排在第 7 名。",
@@ -139,8 +150,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   }
  ]

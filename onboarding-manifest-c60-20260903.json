@@ -1512,10 +1512,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。1968 自製樂器的全噪音即興，被稱噪音之父、比同代任何唱片都更無結構；Allied 小廠，Lion 重發",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Nihilist_Spasm_Band",
+     "https://faroutmagazine.co.uk/nihilist-spasm-band-noise-rock/"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "他們在旅館酒吧拿到週一晚的駐場，酬勞是免費喝酒。樂團 1965 年組於安大略省倫敦市，成員是常出入畫家 Greg Curnoe 畫室的一群人；spasm band 這個詞指的就是使用自製樂器的樂團。八個人的樂器多為自製或改造：三個半弦的電貝斯、滑管單簧管、Art Pratten 自製的「Pratt-a-various」，另有三個人吹 kazoo。樂器互不調音，也不設速度與拍號，音量一路推高，〈The Byron Bog〉是這樣。六首曲子的標題各由一位團員取。",
@@ -1539,8 +1550,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

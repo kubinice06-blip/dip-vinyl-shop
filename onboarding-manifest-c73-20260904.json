@@ -2066,21 +2066,22 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Made In Japan Records 正規小廠 LP／CD 兩版，壓量無據，不到聖杯；L=5",
-    "evidenceUrls": [
-     "https://www.last.fm/music/%E5%A4%A2%E5%B9%BB/%E9%81%8E%E3%81%8E%E5%8E%BB%E3%82%8A%E3%81%97%E7%8E%8B%E5%9B%BD%E3%81%AE%E7%8E%8B%E5%A5%B3",
-     "https://musicbrainz.org/release-group/89f59f78-32b0-4e8e-b71e-03f6b445e2d3"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：夢幻 pearl 留《Sinfonia della Luna》。經典度 4、稽核強度 2（另一張 1）",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Made In Japan Records 正規小廠 LP／CD 兩版，壓量無據，不到聖杯；L=5",
+     "evidenceUrls": [
+      "https://www.last.fm/music/%E5%A4%A2%E5%B9%BB/%E9%81%8E%E3%81%8E%E5%8E%BB%E3%82%8A%E3%81%97%E7%8E%8B%E5%9B%BD%E3%81%AE%E7%8E%8B%E5%A5%B3",
+      "https://musicbrainz.org/release-group/89f59f78-32b0-4e8e-b71e-03f6b445e2d3"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "第三軌的主唱是客座 Kazue Akao。同一份 credit 上，封面美術掛的是 Tomoki Ueno——這張一九八八年的 MIJ-1020LP 上，外人插手的地方就這兩處。其餘欄位是鍵盤手兼製作、主唱、貝斯與鼓，另有一人在七首裡的三首上彈木吉他與電吉他。曲名有兩個直接取自英美文學：〈The Lady Of Shalott〉出自 Tennyson 那首敘事詩；〈Dazzling Ligeia〉裡的 Ligeia，則是 Poe 一八三八年那篇短篇小說的女主角。",
@@ -2104,8 +2105,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {

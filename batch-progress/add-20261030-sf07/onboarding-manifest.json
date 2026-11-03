@@ -2287,10 +2287,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 2、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Jodorowsky 1970 舞台劇《Zaratustra》配樂，由可能是墨西哥首支自由爵士團 Las Damas Chinas 演出，題材稀奇；但 Tizoc 2015 已有數位重製，壓量依據不足",
+    "evidenceUrls": [
+     "https://kboo.com/node/80539",
+     "https://www.last.fm/music/Zaratustra/Su+M%C3%BAsica...+Su+Filosof%C3%ADa..."
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 2、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "Jodorowsky 編導的舞台劇，留下這張錄音。Zaratustra 是這齣 1970 年墨西哥舞台劇的名字，取材尼采的《查拉圖斯特拉如是說》，封底註明由他編劇並導演。唱片同年由墨西哥的 Tizoc 出版，演員有 Isela Vega 等人。全盤十六段，包括〈Tibetana〉與〈Las muertes de Zaratustra〉。",
@@ -2313,7 +2324,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {

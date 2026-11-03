@@ -791,10 +791,22 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Nimbus West 洛杉磯極小廠、Arkestra 圈靈性爵士珍品；後有 Pure Pleasure 再發",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Linda+Hill/Lullaby+for+Linda",
+     "https://store.acousticsounds.com/d/146228/Linda_Hill-Lullaby_For_Linda-180_Gram_Vinyl_Record",
+     "https://theingroove.com/products/linda-hill-lullaby-for-linda-pure-pleasure-lp"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "四軌的長度全在十分鐘以上，最長的 A1 有 14:10、最短的 A2 也有 10:12。兩庫在這四個數字上逐軌一致。credit 欄有九條演奏與人聲，鋼琴那條同時兼 Vocals 與 Liner Notes，長笛有兩條，另有貝斯、鼓與打擊；法國號那條的 tracks 欄只寫 B1。2019 年那次再發兩庫各寫各的廠牌：MB 那側寫 Pure Pleasure Records，Discogs 那側寫 UGMAA 與 Nimbus West Records。",
@@ -817,8 +829,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1934,10 +1946,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Strata-East 稀見盤，但查無可信原盤／再發依據頁，寧缺（主線補收：代理判 no 是因缺聖杯口碑，但過硬條件：listeners 有效 1–299、非錯配、冷門度 5）",
+    "evidenceUrls": [
+     "https://musicbrainz.org/release-group/9be97aed-129b-4abb-9428-8ca74bbd9588",
+     "https://www.last.fm/music/Muriel+Winston/A+Fresh+Viewpoint"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "註記欄逐一寫出兒童合唱團六個人的名字，指揮寫的是掛名者本人。同一欄接著記錄音在 1974 年 10 月 21、31 日的 Minot Studios, White Plains。credit 欄上她掛人聲、製作人與音樂總監三個角色，另有貝斯、鼓與打擊、長笛與鋼琴。2014 年那筆日本 CD 的授權欄寫著 La Verne Wilson，多出的 credit 裡音樂指導掛的是同一位貝斯手。十二個曲位裡最短的是第 4 軌〈Sing Chillun Sing〉1:55。",
@@ -1961,8 +1984,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

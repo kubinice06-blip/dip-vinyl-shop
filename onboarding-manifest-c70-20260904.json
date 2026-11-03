@@ -1363,10 +1363,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。1985 Telegraph 小廠唯一專輯，戶川純客席，被稱「日本的 Neu!」地下名作；P-Vine 晚近才首度黑膠重發",
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E3%81%AE%E3%81%84%E3%81%A5%E3%82%93%E3%81%9A%E3%82%8A/%E6%8A%B1%E6%93%81",
+     "https://towerrecords.com/products/noidunzuri-houyou"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "戸川純掛的是「美声」與小鼓，合唱另分大聲、小聲、変声。大聲的是彈貝斯與鍵盤的福田研，小聲的是鼓手川上拓巳，変声的是吉他手田畑満，另有 Okuta 的吉他與打樂器、伊神いんどり的「歌と唱」。原盤 1985 年 11 月由東京的 Telegraph 發行，兩面分別叫「ぬえ面」與「きりん面」，きりん面上排著〈きんにゃもにゃ〉〈どんたく ばやし〉〈よさこい のいづ踊り〉這些祭典曲名。再發廠牌形容它是 industrial 與民謠之間的失落環節。",
@@ -1388,8 +1399,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1668,10 +1679,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。1984 Zero Records 極小獨立廠首作，工藤冬里／向井千惠，日本地下迷幻民謠公認聖杯級名作；後經 Alchemy、Black Editions 重發",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Ch%C3%A9-SHIZU/%E7%B4%84%E6%9D%9F%E3%81%AF%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84",
+     "https://en.wikipedia.org/wiki/Ch%C3%A9-Shizu",
+     "https://www.tornlightrecords.com/shop/che-shizu-i-cant-promise/"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "一把二胡當主奏樂器，錄音從 1983 年 8 月一路拉到 1984 年 9 月。拉琴的是向井千惠（Chie Mukai），她同時主唱並作詞；工藤冬里（Tori Kudo）彈吉他與鋼琴也唱也寫詞，西村卓也的貝斯之外還畫了插畫，高橋朝打擊。1984 年由京都的 Zero Records 發行，封面並印英文題《I Can't Promise》。十一首裡 B 面第四首以韓文標題收錄，其實是寺内タケシとブルー・ジーンズ 1965 年錄過的〈涙のギター〉。",
@@ -1693,8 +1716,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

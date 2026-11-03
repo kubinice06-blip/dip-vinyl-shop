@@ -473,10 +473,21 @@
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "歐洲自由爵士的重要側翼作品，但長期近乎絕跡、缺乏持續的跨來源正典討論，不足以列入殿堂；硬蕊 4 未達異端門檻。本環境無 listeners，流亡不評，惟原盤稀有、2022年前幾無流通，疑似 pearl，待店主補 listeners 覆核。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "pearl",
+        "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Vogue 法國正規廠，收藏價高但已多次再發；非私壓、壓量無據極小（主線補收：代理判 no 是因缺聖杯口碑，但過硬條件：listeners 有效 1–299、非錯配、冷門度 5）",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Barney+Wilen/Zodiac",
+          "https://en.wikipedia.org/wiki/Barney_Wilen"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "歐洲自由爵士的重要側翼作品，但長期近乎絕跡、缺乏持續的跨來源正典討論，不足以列入殿堂；硬蕊 4 未達異端門檻。本環境無 listeners，流亡不評，惟原盤稀有、2022年前幾無流通，疑似 pearl，待店主補 listeners 覆核。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:apex-rebalance-20261103"
       },
       "description": {
         "text": "法國薩克斯風手Barney Wilen 1966年為好友一部「不存在的電影」——受克蘇魯文學影響、最終只停在分鏡階段的超級英雄動畫——所寫的配樂。電影沒拍成，他們便以「黃道十二宮」概念建構出以音樂為敘事主體的聲音電影；正逢自由爵士盛行，Wilen放棄拿手的悠揚旋律，改以破碎、不規則、極具張力的自由爵士刻畫各星座性格。每首僅兩三分鐘，封面可愛內容卻驚人，當年銷量極差、母帶佚失，直到2022年才由家族提供私藏首版修復再版。",
@@ -506,8 +517,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {

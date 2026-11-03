@@ -1420,10 +1420,22 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。1977 John Richbourg 小廠 Seventy Seven 唯一專輯，原盤在二手市場天價三十年的 sweet soul 聖杯；後經 Athens of the North、P-Vine、Real Gone 重發",
+    "evidenceUrls": [
+     "https://www.last.fm/music/The+Brief+Encounter/Introducing+-+The+Brief+Encounter",
+     "https://aotns.bandcamp.com/album/introducing",
+     "https://guerssen.com/product/introducing-the-brief-encounter/"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "第一首歌就叫〈Brief Encounter (Introduction)〉，四分二十三秒的自我介紹。1977 年由 Seventy Seven Records 發行，廠牌主人是納許維爾的傳奇電台 DJ John Richbourg，他也掛執行製作，作曲、編曲與製作都由樂團自己包辦。錄音在阿拉巴馬州的 Muscle Shoals Sound Studios，電鋼琴與弦樂鋪出柔軟的底，男聲和聲層層交疊。英國 Jazzman Records 2010 年首度復刻。",
@@ -1443,8 +1455,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

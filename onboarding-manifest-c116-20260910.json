@@ -1389,21 +1389,22 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L155有效，GISM／Lip Cream 名合輯，曲目多見他處與盜版、壓量無據；不到7",
-    "evidenceUrls": [
-     "https://www.last.fm/music/Various%20Artists/Hardcore%20Unlawful%20Assembly",
-     "https://musicbrainz.org/release-group/ebfa26ae-74f5-4d08-a961-dec256e04b81"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Various Artists pearl 留《Bouquet of Steel》。三張中稽核強度最高（pearl2）；Sheffield 1980 地下合輯。註：VA 不是單一藝人，套用時可考慮豁免",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L155有效，GISM／Lip Cream 名合輯，曲目多見他處與盜版、壓量無據；不到7",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Various%20Artists/Hardcore%20Unlawful%20Assembly",
+      "https://musicbrainz.org/release-group/ebfa26ae-74f5-4d08-a961-dec256e04b81"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "八支樂團各兩首，第七、八軌的主唱當年沒有掛名。十六軌約五十四分鐘，最短一分二十七秒、最長五分二十三秒，四首超過四分鐘。那沒有掛名的兩軌是 Lip Cream，當時他們還沒有自己的專輯，唱的是 Baki。1984 年 8 月由 AA Records 發行，編號 AA 004，被視為這條線合輯裡的金字塔。",
@@ -1425,8 +1426,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -1998,10 +1999,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。日本 harsh noise 雙人組代表作，全程高密度回授尖嘯噪音牆，日本噪音第二波核心；該團頂點原只在流亡（主線補）",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Incapacitants",
+     "https://musicbrainz.org/release-group/6d75acb3-c9d7-3855-9d4c-635e816e3158",
+     "https://www.last.fm/music/Incapacitants/Quietus"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "兩段二十多分鐘的長曲中間，夾了一首四分二十三秒的短曲。頭尾兩軌分別是二十三分十二秒與二十一分零七秒，三軌總長約四十九分鐘，長度比例接近五比一比五。有一處來源記這兩位的曲名常引用自己的職業，他們的正職分別是銀行員與公務員。這張是 1993 年在 Alchemy Records 出的 CD，從最早的卡帶到黑膠再到這張，三種載體各佔一張。",
@@ -2023,8 +2036,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2441,10 +2454,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。大阪 harsh noise 核心計畫，自製多頸吉他噪音、28 分長軌；類型本身極端，但單盤評述缺，質感偏紋理",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Solmania",
+     "https://nts.live/artists/31918-solmania",
+     "https://www.forcedexposure.com/Artists/SOLMANIA.html"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "第一首佔掉二十七分四十七秒，第二首只有三十四秒。兩首同題的〈Metamorphor Chorus〉分列第三與第五軌，前者二十分二十二秒、後者三分零七秒，長度差了六倍以上，五軌總長約五十六分鐘。這是大野雅彦從早年那批卡帶轉到 Alchemy Records 之後的第一張 CD，1991 年 1 月發行；那家廠牌幾乎所有作品的平面設計都出自他手。",
@@ -2466,8 +2491,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2596,10 +2621,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。吉田恭淑 harsh noise 計畫，Xerxes 廠主，日本噪音第二波代表；整面高密度刺耳噪音，類型即極端",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Government_Alpha",
+     "https://www.discogs.com/artist/74531"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "七軌四十二分鐘，六軌擠在四分半到六分半之間，收尾那軌九分十七秒。七個曲名全是英文的造詞或罕用字：收尾那首題作〈Enantiodromia〉，字眼出自榮格心理學，〈Clairaudient Isabelle〉的頭一個字指聽覺通靈，其餘幾首則是自造的複合詞。這張唯一的實體版本 1999 年 9 月出在瑞典、編號 SEGER 1，作者本名吉田恭淑。",
@@ -2621,8 +2657,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -3071,10 +3107,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。1990 P.S.F. 小廠 PSF-7、灰野首張 PSF 獨奏 CD，絕版三十五年至 2025 Black Truffle 才重發；日本地下聖典之一",
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E7%81%B0%E9%87%8E%E6%95%AC%E4%BA%8C/%E6%BB%B2%E6%9C%89%E7%84%A1",
+     "https://en.wikipedia.org/wiki/Keiji_Haino",
+     "https://www.allmusic.com/album/nijiumu-mw0001127655"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "一段五十三分四十一秒的錄音從頭到尾沒有分軌。整張碟因此沒有曲序可談。這個漢字盤名同時是灰野敬二個人名義下一個計畫的名字，羅馬字讀作 Nijiumu。1990 年由 P.S.F. Records 發行、編號 PSFD-7；那家廠牌設在東京，專做地下迷幻與自由即興，名字取自四年前的另一張碟。",
@@ -3097,8 +3145,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

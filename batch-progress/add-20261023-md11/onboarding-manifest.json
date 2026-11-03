@@ -461,22 +461,23 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。限量600張紙套CD，屬一般限量品，無聖杯地位依據",
-    "evidenceUrls": [
-     "https://www.last.fm/music/Organum/Sanctus",
-     "https://musicbrainz.org/release-group/d88f60d4-8e7a-3732-ba6f-8b3cefa8a8a4",
-     "https://www.discogs.com/release/624361"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Organum pearl 留《Vacant Lights》。經典度 4、稽核強度 2（另兩張 3／1）",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 194），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。限量600張紙套CD，屬一般限量品，無聖杯地位依據",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Organum/Sanctus",
+      "https://musicbrainz.org/release-group/d88f60d4-8e7a-3732-ba6f-8b3cefa8a8a4",
+      "https://www.discogs.com/release/624361"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "四段一樣長，每段都是 10 分 59 秒。drone 計畫 Organum 由 David Jackman 主持。Robot Records 2006 年 1 月推出的 CD 只做了 600 張。一套三部曲由它開篇，後兩部分別在 2006 年與 2007 年問世。說明頁上留著給一位逝者的題獻。",
@@ -499,8 +500,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -551,22 +552,23 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。限量600張紙套CD，屬一般限量品，無聖杯地位依據",
-    "evidenceUrls": [
-     "https://www.last.fm/music/Organum/Amen",
-     "https://musicbrainz.org/release-group/d9079f3c-e599-44a7-8a2c-972b136b7410",
-     "https://www.discogs.com/release/885225"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Organum pearl 留《Vacant Lights》。經典度 4、稽核強度 2（另兩張 3／1）",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 145），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。限量600張紙套CD，屬一般限量品，無聖杯地位依據",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Organum/Amen",
+      "https://musicbrainz.org/release-group/d9079f3c-e599-44a7-8a2c-972b136b7410",
+      "https://www.discogs.com/release/885225"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "內頁引了一句 Unto The Aeon Of Aeons。Holy 三部曲的第二部，出自 David Jackman 的 drone 計畫 Organum。Die Stadt 於 2006 年 11 月出版，印量 600 張。音樂只有兩段，長度都接近 20 分鐘。第三部《Omega》則留到 2007 年才跟上。",
@@ -589,8 +591,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -2336,10 +2338,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 346），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。美國重噪音代表，Soleilmoon 限量 CD、封套指示最大音量播放的整面噪音；單盤評述少，靠藝人層級定性",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Daniel_Menche",
+     "https://danielmenche.bandcamp.com/music"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 346），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "素材清單裡，有被摧毀的人聲與一首被遺忘的舊歌。Daniel Menche 是波特蘭的噪音音樂家，1969 年生，自學出身，1989 年開始錄音。封套上列的素材還有類比與數位處理、受折磨的電子聲，並請聽者把音量開到最大，同時當心別弄壞喇叭。1994 年春夏，他在 Skunkworks Studios 錄下這些聲音，同年 Soleilmoon 出成限量 CD，裝進手工紙做的三折封套，七段的總時長約 62 分鐘。",
@@ -2369,8 +2382,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

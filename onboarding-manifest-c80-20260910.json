@@ -200,21 +200,22 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L30有效，白標私壓LP，但壓量無據、無聖杯地位；5星",
-    "evidenceUrls": [
-     "https://www.last.fm/music/Third%20Quadrant/Seeing%20Yourself%20as%20You%20Really%20Are",
-     "https://musicbrainz.org/release-group/80e7e32b-9ade-4b13-be38-7ad185cb66d5"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Third Quadrant pearl 留《N = R* FP NE FL FI FC L》。稽核強度 3（另一張 2）",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L30有效，白標私壓LP，但壓量無據、無聖杯地位；5星",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Third%20Quadrant/Seeing%20Yourself%20as%20You%20Really%20Are",
+      "https://musicbrainz.org/release-group/80e7e32b-9ade-4b13-be38-7ad185cb66d5"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "同一組人先做了兩捲卡帶，這一張黑膠上標著白標。1982 年的 TTS 8049，廠牌欄是 Rock Cottage，那個實體的 Discogs 簡介只有一句「為 Third Quadrant 而設」，底下只有兩筆。四個人的分工這次固定，不再一軌一換。第五軌兩邊對不上：Discogs 記〈The Whole World's Gone Fission〉13 分 17 秒，MusicBrainz 的標題少一個所有格的 s、長度記 13 分 21 秒，媒體欄還記成 CD。",
@@ -235,8 +236,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -2045,21 +2046,22 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
-    "evidenceUrls": [
-     "https://www.last.fm/music/Geoff%20Mann/Chants%20Would%20Be%20a%20Fine%20Thing",
-     "https://musicbrainz.org/release-group/89ae5d73-f4a4-4e2b-99f7-318f15cc08d3"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Geoff Mann pearl 留《I May Sing Grace》。經典度 3（另兩張 2）",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Geoff%20Mann/Chants%20Would%20Be%20a%20Fine%20Thing",
+      "https://musicbrainz.org/release-group/89ae5d73-f4a4-4e2b-99f7-318f15cc08d3"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "Discogs 給這一捲的風格標籤是 Experimental，同一位藝人另外兩張標的是 Prog Rock。1984 年的 Twilight Records GM001，九軌，錄音在索爾福德的 Twilight Sound Studios——廠牌名與錄音室名是同一個字。廠牌頁十三筆多半是本地樂團的七吋單曲，本捲是裡面唯一不用 TRS 編號的一筆。credit 五個名字：他唱歌並彈吉他、鍵盤與打擊，另有電吉他、人聲與工程，Jane Mann 掛曼陀林、小提琴與人聲。",
@@ -2081,8 +2083,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -2128,21 +2130,22 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
-    "evidenceUrls": [
-     "https://www.last.fm/music/Geoff%20Mann/Psalm%20Enchanted%20Evening",
-     "https://musicbrainz.org/release-group/887b3b79-af2e-4332-b00e-89f070bc409b"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Geoff Mann pearl 留《I May Sing Grace》。經典度 3（另兩張 2）",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Geoff%20Mann/Psalm%20Enchanted%20Evening",
+      "https://musicbrainz.org/release-group/887b3b79-af2e-4332-b00e-89f070bc409b"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "整張碟的 credit 只有兩個名字：一個唱歌兼打電子鼓，一個彈吉他。1986 年 2 月的 Wobbly Records WOB001，六軌，錄音在曼徹斯特的 Pullman Studios。條目自己註明沒有現行的 CD 版，並逐軌指出每一首可以在哪張碟上找到。廠牌頁只有九筆：這張之後，1994 年出過一張向他致意的合輯，接著整整二十九年沒有東西，2023 到 2026 年才一口氣排完七個編號。Geoff Mann 1993 年 2 月 5 日在羅奇代爾去世。",
@@ -2164,8 +2167,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -2506,22 +2509,23 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L1有效，私製卡帶，但藝人有 Bandcamp 數位流通、壓量無據；不到7",
-    "evidenceUrls": [
-     "https://www.last.fm/music/Treatment/The%20World%20of%20Treatment",
-     "https://musicbrainz.org/release-group/eabb7d39-6c02-411e-b07b-12b6c0241b02",
-     "https://www.discogs.com/release/12543540"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Treatment pearl 留《Intensive》。兩張強度相同；取首張",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L1有效，私製卡帶，但藝人有 Bandcamp 數位流通、壓量無據；不到7",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Treatment/The%20World%20of%20Treatment",
+      "https://musicbrainz.org/release-group/eabb7d39-6c02-411e-b07b-12b6c0241b02",
+      "https://www.discogs.com/release/12543540"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "一捲帶子十九首歌，條目上只有一句話：很多是從沒發表過的錄音。1986 年的 UYB1，廠牌欄填 Not On Label，公司欄只有製造方：Mike Saturn Entertainments PLC。演出者、製作人、錄音室與曲長，紀錄上一項也沒有。Discogs 給了 garage rock、psychedelic rock 與 prog rock 三個標籤。藝人條目掛的網址之一是 nothinghead.com，而 B 面第五軌就叫〈Nothinghead〉。",
@@ -2542,8 +2546,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {

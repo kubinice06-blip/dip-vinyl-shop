@@ -195,10 +195,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Iskra 原壓僅 100 張旋即絕跡，被稱史上最稀有自由爵士 LP 之一；近年才有 Black Editions 等復刻",
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E9%AB%98%E6%9F%B3%E6%98%8C%E8%A1%8C/Eclipse%2F%E4%BE%B5%E8%9D%95",
+     "https://tobirarecords.com/products/masayuki-takayanagi-eclipse-lp",
+     "https://fusetronsound.com/products/takayanagi-new-direction-unit-masayuki-eclipse"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "B 面整面是一首 25:23，A 面的兩首來自同一次 session。〈First Session I〉10:47 與〈First Session II〉9:07 切自同一場，B 面則是〈Second Session (Mass Projection)〉一首到底；三個標題都不是曲題，而是場次編號加上括號裡的方法名。錄音關係記著 1975 年 3 月 14 日，編制是電吉他、木管、電貝斯與鼓加打擊四人，錄音工程是青木幹夫。",
@@ -220,8 +232,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -3081,10 +3093,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。工藤冬里早期自主卡帶（轉 Org 前），原帶極罕；但 2021 已有官方數位版，盤名對應待查",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Maher+Shalal+Hash+Baz/maher+shalal+hash+baz+%E7%AC%AC%EF%BC%91%E9%9B%86",
+     "https://en.wikipedia.org/wiki/Maher_Shalal_Hash_Baz_(band)"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "十九軌裡最短的曲名只有一個字，最長的那個有三十一個字。一個字的是〈蝶〉與〈夏〉，三十一個字的那首把一個路口的名字整句寫進了標題。長度也一樣散：十九軌裡有四軌不到一分鐘，最短的〈蝶〉只有 0:34，第八軌 7:22 是它的十三倍，全張約 63:22。這捲卡帶出在 1985 年的日本 D's レーベル，編號 D-021，是 工藤冬里 這支團名下 65 個盤裡年份最早的兩張之一。",
@@ -3105,8 +3128,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -3738,21 +3761,22 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L4有效，PSF 2006檔案現場CD，壓量無據；5星冷門",
-    "evidenceUrls": [
-     "https://www.last.fm/music/%E5%85%89%E6%9D%9F%E5%A4%9C/%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E3%83%BB%E3%83%A9%E3%82%A4%E3%83%961979%20%E5%90%89%E7%A5%A5%E5%AF%BA%E3%83%9E%E3%82%A4%E3%83%8A%E3%83%BC%20%5BFirst%20live%201979%20Kichijoji%20Minor%5D",
-     "https://musicbrainz.org/release-group/d5b84838-b8b5-4145-b280-438eb083fb5f"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：光束夜 pearl 留《The Dark Spot》。經典度 3（另一張 2）",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L4有效，PSF 2006檔案現場CD，壓量無據；5星冷門",
+     "evidenceUrls": [
+      "https://www.last.fm/music/%E5%85%89%E6%9D%9F%E5%A4%9C/%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E3%83%BB%E3%83%A9%E3%82%A4%E3%83%961979%20%E5%90%89%E7%A5%A5%E5%AF%BA%E3%83%9E%E3%82%A4%E3%83%8A%E3%83%BC%20%5BFirst%20live%201979%20Kichijoji%20Minor%5D",
+      "https://musicbrainz.org/release-group/d5b84838-b8b5-4145-b280-438eb083fb5f"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "三軌全部無題，長度分別是 7:06、9:14、8:48，全張 25:08。三軌之間相差不到兩分半，是一組幾乎等寬的錄音，也沒有一個曲名可以引。盤名自己把年份與場所寫了進去，還在方括號裡附上一行英譯：那是 1979 年在 吉祥寺マイナー 的演出；唱片要到 2006 年才問世。這張 CD 出在日本的 P.S.F. Records，編號 PSFD-166。",
@@ -3773,8 +3797,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   }
  ]
