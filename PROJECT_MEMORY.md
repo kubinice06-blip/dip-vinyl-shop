@@ -1,5 +1,65 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W8：s22／s23／s24 verdicts 交齊（750 張）
+
+- **範圍**：第三輪早期無來源紀錄卡 s22–s24（Ricardo Villalobos … Sun Ra & Walt Dickerson）。先跑 `fetch-listeners.mjs` 補 listenersKV（三片各 250 列），15 段 Opus 代理，主線每段抽 5 張，退回 0 段，主線改 6 筆（Inflated Tear 5→4 無依據；Hazel Eyes、Shaggy 聖誕盤經典度 1→2；Singular Act II 冷門度照下限 2→3；Suffocation 硬蕊度 5→4）。只交 verdicts，未動 seed／manifest／card_catalog。
+- **新舊分布（1/2/3/4/5）**：經典度 41/170/293/246/0 → 0/101/272/279/98；冷門度 93/210/240/136/71 → 75/405/203/66/1；硬蕊度 278/280/115/77/0 → 250/307/133/60/0。
+- **主要檔案**：`batch-progress/rerate-20261103/verdicts/{s22,s23,s24}-*.json`、`{s22,s23,s24}.summary.md`、`W8-review-notes.md`、`shards/s2{2,3,4}.json`（listenersKV）、`PLAN.md`。
+- **驗證**：三片合併檢查全過（每 key 一筆、無缺無多、三軸 1–5 整數；未註明錯配卻低於冷門度下限 0 張）。
+### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W10：s28–s31 verdicts 交齊（775 張）
+
+- **範圍**：s28／s29／s30 各 250、s31 25，共 775 張（T–Z、變音字母、日文／華語／韓語藝人段）。先跑 `fetch-listeners.mjs` 補 listenersKV，再派 16 段 Opus 代理，主線每段抽 5 張（共 80 張）全數一致，退回 0 段，主線改 0 張。只交 verdicts，沒有動 seed、manifest、card_catalog。
+- **新舊分布（1/2/3/4/5）**：經典度 18/135/335/287/0 → 0/80/277/324/94；冷門度 64/168/239/174/130 → 53/328/275/118/1；硬蕊度 201/382/117/75/0 → 210/369/136/57/3。
+- **重點**：冷門度 5 從 130 張降到 1 張。被降的多是 TBM 等日本爵士盤，以及 Enja、Black Saint、MPS 正規盤；舊值是 worker 絕對分級，這些盤已有串流再發，最多 4。經典度 5 給了有依據的場景里程碑：華語搖滾／民謠、city pop、TBM 名盤、1001 Albums、Pazz & Jop 年度第一。
+- **疑錯配沒套下限的 57 張**：s28 8、s29 15、s30 30、s31 4，全部在 `why` 註明。多數是華語／日語藝人的中英拆名、古典盤名泛稱、系列卷次、符號盤名，比照第二輪 MISMATCH 先例。套用工作階段可以再查一次聽眾數。
+- **主要檔案**：`batch-progress/rerate-20261103/verdicts/s{28,29,30,31}-*.json`、`s{28,29,30,31}.summary.md`、`shards/s{28,29,30,31}.json`（listenersKV）、`PLAN.md`。
+- **驗證**：四片合併檢查全過：每個 key 都有一筆、無缺無多、三軸都是 1–5 的整數。keep 1 張（江文也，查無發行資料）。
+
+
+### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W4：s10／s11／s12 verdicts 交齊（750 張）
+
+- **範圍**：第三輪 s10–s12（藝人 F–J 段早期無評分來源卡），先跑 `fetch-listeners.mjs` 補 listenersKV（有效值約 96%）。15 段 Opus 代理，主線每段逐張瀏覽、抽核，退回 0 段，主線改 8 張。只交 verdicts，未動 seed／manifest／card_catalog。
+- **經典度** 舊→新 26/153/347/224/0 → 1/78/266/335/70；**冷門度** 86/178/242/158/86 → 60/322/294/72/2；**硬蕊度** 220/300/141/89/0 → 201/330/163/53/3。
+- **主線改動**：同藝人第二張 5 分、寫不出榜單依據的降 4（Daily Operation、Wichita Lineman、Cziffra 李斯特、Joker）；正規大廠盤冷門 3→2（Fleetwood Mac 兩張、Gene《Olympian》）；Injury Reserve《By the Time I Get to Phoenix》硬蕊 5→4。逐筆見 `verdicts/s1{0,1,2}-mainline.log`。
+- **給套用階段**：低於冷門度下限 49 張全是代理註明的疑錯配／漏抓（古典盤名拆分佔多數，Karajan 7 張、Szell、Reiner、Gould 等），清單在各 summary；keep 7 張（2026 新作無資料等）。
+- **主要檔案**：`batch-progress/rerate-20261103/verdicts/s1{0,1,2}-*.json`、`s1{0,1,2}.summary.md`、`shards/s1{0,1,2}.json`（listenersKV）、`PLAN.md`。
+- **驗證**：三片合併檢查全過（每 key 一筆、無缺無多、三軸皆 1–5 整數）。
+
+### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W2：s04／s05／s06 verdicts 交齊（750 張）
+
+- **範圍**：9 月前入庫、無評分來源紀錄的早期卡 s04–s06（Billy Joel → Current 93）。先跑 `fetch-listeners.mjs` 補 `listenersKV`，15 段 Opus 代理評分，主線每段抽 5 張以上覆核，退回 0 段，主線改 9 筆。只交 verdicts，未動 seed／manifest／card_catalog。
+- **新舊分布（1/2/3/4/5）**：經典度 22/158/318/252/0 → 5/79/252/319/95；冷門度 98/166/266/146/74 → 83/363/249/55/0；硬蕊度 259/280/113/98/0 → 279/286/117/67/1。
+- **主線口徑**：5 分要有正典榜單依據，銷量、冠軍、葛萊美年度專輯只算 4（Don't Be Cruel、Night Moves、Blank Banshee 0、...Baby One More Time、Let My Children Hear Music、Christopher Cross 5→4）；「評價平淡」是 2 不是 1（Chicago《Twenty 1》）；無串流只是查不到、非確知私壓的冷門 5 改 4（郭芝苑、呂泉生）。
+- **錯配（不套下限）**：古典盤名拆分、卷次／掛名／標點拆名，`why` 皆註明，名單在各 `sNN.summary.md`，給套用工作階段過 `MISMATCH`。
+- **主要檔案**：`batch-progress/rerate-20261103/verdicts/{s04,s05,s06}-*.json`、`{s04,s05,s06}.summary.md`、`mainline-W2.tsv`、`shards/s0{4,5,6}.json`（listenersKV）、`PLAN.md`。
+- **驗證**：三片合併檢查全過（每 key 一筆、無缺無多、三軸 1–5 整數）；冷門度下限機械檢查違規者全為已註明的疑錯配。
+
+### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W6：s16／s17／s18 verdicts 交齊（750 張）
+
+- **範圍**：s16–s18（Lil Baby → Myung-Whun Chung）。先跑 `fetch-listeners.mjs` 補 `listenersKV`（有效值 720／750），15 段 Opus 代理評分，主線每段抽 5 張＋全查經典度 5 分清單與下限缺口，退回 0 段，主線改 7 筆。
+- **新舊分布（1/2/3/4/5）**：經典度 20/164/326/240/0 → 7/98/255/297/93；冷門度 109/191/235/142/73 → 95/344/252/58/1；硬蕊度 252/280/132/86/0 → 258/284/157/48/3。
+- **主線口徑**：5 分要寫得出正典依據，獎項入圍／得獎（Mercury 入圍、Brit 獎）、白金銷量、「生涯代表作」只算 4（Little Simz《Grey Area》、Manics《Everything Must Go》、Ministry《Psalm 69》、Minnie Riperton《Perfect Angel》、Lil Louis《French Kiss》5→4）；代表作至少 4（Maggie Rogers 3→4）；MC HotDog《犬》冷門度 2→3。
+- **錯配（不套下限）**：古典盤名、省略號／撇號盤名、中文拆名（MC HotDog 四張）、掛他人名下等 42 張，`why` 皆註明，給套用工作階段過 `MISMATCH`。
+- **主要檔案**：`batch-progress/rerate-20261103/verdicts/{s16,s17,s18}-*.json`、`{s16,s17,s18}.summary.md`、`*-mainline.log`、`shards/s1{6,7,8}.json`（listenersKV）、`PLAN.md`。
+- **驗證**：三片合併檢查全過（每 key 一筆、無缺無多、三軸 1–5 整數）；冷門度下限機械檢查違規者全為已註明的疑錯配。
+### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W7：s19／s20／s21 verdicts 交齊（750 張）
+
+- **範圍**：9 月前入庫、無評分來源紀錄的卡。先跑 `fetch-listeners.mjs` 補 listenersKV，15 段 Opus 代理，主線每段抽 5 張，退回 0 段，主線改 5 筆（Orlando 冷門度 5→4；Psychic Chasms、Fear of a Blank Planet、Worlds 經典度 5→4；Passenger《All the Little Lights》4→3）。只交 verdicts，沒動 seed／manifest／card_catalog。
+- **新舊分布（三片合計）**：經典度 12/172/313/253/0 → 1/76/262/344/67；冷門度 95/194/248/142/71 → 70/343/279/58/0；硬蕊度 228/267/169/86/0 → 218/290/181/58/3。
+- **錯配例外**：古典盤（作曲家前綴／外文盤名）、標點（省略號、句點、彎引號）、藝人名寫法（PiL Ltd.）聽眾數極低者不套下限，why 都有註明。
+- **留給套用**：Otis Redding《Dictionary of Soul》有兩張卡（兩種盤名）。
+- **主要檔案**：`batch-progress/rerate-20261103/verdicts/{s19,s20,s21}-*.json`、`{s19,s20,s21}.summary.md`、`shards/s19–s21.json`（listenersKV）、`PLAN.md`。
+- **驗證**：三片合併檢查全過（每 key 恰一筆、三軸皆 1–5 整數）。
+
+### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W1：s01／s02／s03 verdicts 交齊（750 張）
+
+- **範圍**：9 月前入庫、無評分來源紀錄的早期卡 s01–s03（!!! → Billy Joel）。先跑 `fetch-listeners.mjs` 補 `listenersKV`（有效值 723／750），15 段 Opus 代理評分，主線每段抽 5 張覆核，退回 0 段，主線改 6 筆。只交 verdicts，未動 seed／manifest／card_catalog。
+- **新舊分布（1/2/3/4/5）**：經典度 22/142/308/278/0 → 1/73/256/341/79；冷門度 98/156/234/160/102 → 77/336/264/73/0；硬蕊度 232/284/115/119/0 → 231/300/142/76/1。
+- **主線口徑**：5 分要寫得出正典依據，暢銷／單年年榜只算代表作 4（Ace of Base《The Sign》、Andrew Bird《Eggs》、Alvvays《Blue Rev》5→4）；同藝人 5 分不超過兩張（Bathory《Hammerheart》5→4）；古典作曲家掛名的低聽眾一律視為錯配給 3（Zemlinsky）；keep 沿用的冷門 5 無私壓依據改 4（Billy Hart）。
+- **錯配（不套下限）**：古典盤名、分卷／彎引號／省略號拆名、掛他人名下（Bill Evans 兩張）共 44 張，`why` 皆註明，給套用工作階段過 `MISMATCH`。
+- **主要檔案**：`batch-progress/rerate-20261103/verdicts/{s01,s02,s03}-*.json`、`{s01,s02,s03}.summary.md`、`*-mainline.log`、`shards/s0{1,2,3}.json`（listenersKV）、`PLAN.md`。
+- **驗證**：三片合併檢查全過（每 key 一筆、無缺無多、三軸 1–5 整數）；冷門度下限機械檢查違規者全為已註明的疑錯配。
+
 ### 2026-11-02｜dip-vinyl-shop｜頂點 7 星重審 V1：Z01／Z02／Z03 verdicts 交齊（702 張）
 
 - **範圍**：Z01–Z03 全為 A 組現有頂點卡（無新候選）。15 段 Opus 代理，主線每段抽查，退回 0 段，主線改 38 筆。只交 verdicts，未動 seed／manifest／card_catalog／album_overrides。
