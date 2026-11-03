@@ -21,3 +21,4 @@
 - s24-50-100 抽查：Village Vanguard（5 Penguin 皇冠，L=5,179 本即無下限）、Spin Doctors（代表作 4 維持）、Ask the Ages（4／3／4 維持）、Special Ed Legal（下限 3 正確）、Sophie（硬 4 方向對）。整段通過，未改。
 - s24-0-50 抽查：A Quiet Storm（5 維持，類型命名之作）、Canción Animal（5 維持）、Don’t Give Up On Me（錯配成立）、Soft Machine Third（5／硬 4 維持）、Litania（冷 4，New Albion 小廠）。整段通過，未改。
 - s24-100-150 抽查：Focus（5 有 Penguin Core 依據）、Stars of the Lid 兩張（5，drone 正典）、Ninety Miles（錯配成立）、Stanley Cowell Musa（4／4 Strata-East 維持）、Stephen Hough（下限 4 正確）。整段通過，未改。
+- s24-150-200 抽查：Drumming（5 維持）、Steve Lacy Saravah 盤（硬 4、下限 4 正確）、Gemini Rights（藝人名括號錯配成立）、Structures from Silence（5 維持）、Eivets Rednow（2 認可，化名器樂企劃）。整段通過，未改。

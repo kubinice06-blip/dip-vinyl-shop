@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W8：s22／s23／s24 verdicts 交齊（750 張）
+
+- **範圍**：第三輪早期無來源紀錄卡 s22–s24（Ricardo Villalobos … Sun Ra & Walt Dickerson）。先跑 `fetch-listeners.mjs` 補 listenersKV（三片各 250 列），15 段 Opus 代理，主線每段抽 5 張，退回 0 段，主線改 6 筆（Inflated Tear 5→4 無依據；Hazel Eyes、Shaggy 聖誕盤經典度 1→2；Singular Act II 冷門度照下限 2→3；Suffocation 硬蕊度 5→4）。只交 verdicts，未動 seed／manifest／card_catalog。
+- **新舊分布（1/2/3/4/5）**：經典度 41/170/293/246/0 → 0/101/272/279/98；冷門度 93/210/240/136/71 → 75/405/203/66/1；硬蕊度 278/280/115/77/0 → 250/307/133/60/0。
+- **主要檔案**：`batch-progress/rerate-20261103/verdicts/{s22,s23,s24}-*.json`、`{s22,s23,s24}.summary.md`、`W8-review-notes.md`、`shards/s2{2,3,4}.json`（listenersKV）、`PLAN.md`。
+- **驗證**：三片合併檢查全過（每 key 一筆、無缺無多、三軸 1–5 整數；未註明錯配卻低於冷門度下限 0 張）。
+
 ### 2026-11-02｜dip-vinyl-shop｜頂點 7 星重審 V1：Z01／Z02／Z03 verdicts 交齊（702 張）
 
 - **範圍**：Z01–Z03 全為 A 組現有頂點卡（無新候選）。15 段 Opus 代理，主線每段抽查，退回 0 段，主線改 38 筆。只交 verdicts，未動 seed／manifest／card_catalog／album_overrides。
