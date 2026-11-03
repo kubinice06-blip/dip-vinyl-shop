@@ -108,7 +108,19 @@
 
 ## 6. published gate
 
-見第 8 節（gate 結果）。
+跑了 21 份 manifest（`--published`，共 3,558 張）：本次改到的 20 份＋c36。日誌在 `publish-stage/gates-hall303/`，不進版控。
+
+- 共 1,709 個 error，**與本次套用相關的類別 0 error**：
+  - tier、卡池列（新殿堂的 seed 列）、card_catalog tier／rarity、hall classic=5 都通過。
+  - 第一輪抓到 7 筆「hall 候選必須 classic=5」，經典度補正後重跑 6 份，0 筆。
+- `album_overrides.tier 不一致` 42 筆：新殿堂與先前幾輪等待本機同步的卡，預期中，見第 7 節第 1 項。
+- 其餘都是既有類別，與本次無關，沒有順手修：
+  - `/album-desc` 與 manifest 不一致，佔絕大多數。
+  - `card_catalog.coverUrl` 不一致、封面 HTTP 錯誤。
+  - 舊名 manifest 列：
+    - Big Brother **and** the Holding Company《Cheap Thrills》：卡池已改名為「&」，這張殿堂卡本身已在池中。
+    - John Coltrane Quartet《Ballads》、The Oscar Peterson Trio《Night Train》。
+  - 已不在卡池的舊列：Ghost、崔健、窦唯、Mother Earth、Caravan。
 
 ## 7. 待本機事項
 
