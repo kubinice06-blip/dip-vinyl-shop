@@ -60,7 +60,11 @@
 
 ## 6. published gate
 
-見本節末，跑的是本次改到的根目錄 manifest 243 份。
+跑本次改到的根目錄 manifest 243 份（`--published`）：共 2,908 個 error，**與本次套用相關的類別 0 error**——三軸、稀有度、tier、卡池列（seed／王牌入口）、card_catalog 評分欄、album_overrides.tier 全過。
+
+- 落在 apply-c 2,713 張上的 error 367 個，全是既有的兩類：`/album-desc` 與 manifest 不一致 308（簡介改寫後沒回寫 manifest）、`card_catalog.coverUrl` 不一致 59。
+- 其餘是同檔其他卡的既有問題：album-desc 落後 KV（多數）、coverUrl（9 月前的舊 manifest 為主）、已不在卡池的 24 張（崔健、窦唯、萬能青年旅店、Ghost、Placebo 等；第二輪報告已列過，卡名改過或已移出）、CAA／網址 HTTP、試聽靜態地圖缺 11 張。都與本次無關，沒順手修。
+- 日誌：`publish-stage/gates-audit-c/`（不進版控）。
 
 ## 7. 待本機處理
 
