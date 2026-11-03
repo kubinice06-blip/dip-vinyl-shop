@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-03｜dip-vinyl-shop｜頂點重整套用：202 筆寫進 seed／manifest／card_catalog（殿堂 170／流亡 254／異端 85）
+
+- **範圍**：`decisions-q1.json`（111）＋`decisions-q2.json`（91）合併 202 筆，key 不重複、`from` 全等於 seed 現值。只動 tier：殿堂→一般 37、流亡→一般 25、異端→一般 13、一般→殿堂 36、一般→異端 44、一般→流亡 47。
+- **結果**：殿堂 171→170（含《台客的復仇》）、流亡 232→254、異端 54→85；同級內一藝人多張 0。全池 傳奇 467→424、史詩 1,679、獨特 4,072、稀有 6,864、普通 8,959（22,507 張）。
+- **寫入**：seed 第 9 欄 202 列（三道防呆，重跑 0 變動）；manifest 67 檔 135 筆＋新流亡 4 張補 listeners（apexAssessment `source` manual:apex-rebalance-20261103、舊判定留 `previous`）；card_catalog 推 202／202（升 127 寫 tier＋apex、降 75 刪 tier／apex 補 seed:true），整份重列 202 張 0 不符、全池 seed↔catalog tier 0 不符（順手補既有落差モア《モア》tier pearl），抽 15 讀回 15/15。
+- **寫死名單**：新手禮 18 張全仍殿堂，0 換；NEOCLASSIC 不用換；battle 備援 Revolver→Abbey Road、roguelike 教學王牌 Swans Cop→Filth。店內印刷卡重出 0 差異。
+- **待本機**：album_overrides.tier 設 127／清 75（後台「⇄ 依卡池同步頂點旗標」）；玩家卡匣旗標問題同方案 C，待店主選。
+- **主要檔案**：`seed_cards.json`、`onboarding-manifest-*.json`、`batch-progress/add-*/onboarding-manifest.json`、`battle.html`、`roguelike.html`、`batch-progress/apex-rebalance-20261103/{apply-r.mjs,apply-r.json,push-catalog.mjs,REPORT.md,card-catalog-patches.json,album-overrides-tier.json,touched-manifests.json}`。
+- **驗證**：published gate 54 份 3,351 張，tier／卡池列／card_catalog tier／rarity／pearl listeners 0 error（首輪 4 張新流亡缺 listeners 已補）；album_overrides.tier 2 張待本機同步；其餘為既有 album-desc／coverUrl／舊列。
+
 ### 2026-11-03｜dip-vinyl-shop｜add-20261103：濁水溪公社《台客的復仇》上架（店主指定殿堂）
 
 - **店主**：「濁水溪公社 台客的復仇 殿堂」。原不在卡池，單張完整上架；上一個工作階段卡在權限確認，本次接續（封面登錄已在前一筆提交）。

@@ -46,7 +46,12 @@
 
 ## 4. published gate
 
-GATE_PLACEHOLDER
+跑本次改到的根目錄 manifest 54 份（`--published`，3,351 張）：共 1,109 個 error，**與本次套用相關的類別 0 error**——tier、卡池列（seed／王牌入口）、card_catalog tier／rarity、pearl listeners 全過。
+
+- 第一輪抓到 4 張新流亡（한대수《고무신》、김두수《자유혼》、Barney Wilen《Zodiac》、浜瀬元彦《Reminiscence》）manifest `ratings.listeners` 是 null，gate 要求整數 → 補 Q2 從 worker 取回的值（55／148／191／15），重跑通過。
+- `album_overrides.tier 不一致` 2 張（不失者《不失者 (Double Live)》、零與聲音解放組織《Z.S.L.O.》）：已有 override 文件、等本機同步（第 5 節第 1 項），預期中。
+- 其餘全是既有類別：`/album-desc` 與 manifest 不一致（簡介改寫後沒回寫 manifest，佔絕大多數）、`card_catalog.coverUrl` 不一致、已不在卡池的舊 manifest 列（Ghost、崔健、窦唯、Air、Wings 等）、John Coltrane Quartet《Ballads》（manifest 藝人名與卡池 `John Coltrane` 不同的舊列）、封面 HTTP 500／404。與本次無關，沒順手修。
+- 日誌：`publish-stage/gates-apex-rebal/`（不進版控）。
 
 ## 5. 待本機處理
 
