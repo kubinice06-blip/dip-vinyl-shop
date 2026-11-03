@@ -31,21 +31,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。單曲為正典，專輯本身非歷代榜核心",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Grandmaster%20Flash%20%26%20The%20Furious%20Five/The%20Message",
+          "https://musicbrainz.org/release-group/2348a270-ad78-30e1-b50f-82b2445c15f0"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "把 rap 從派對叫陣推向都市社會寫實的公認起點：標題曲 2002 年首年即入選國家錄音登記（史上第一筆嘻哈錄音），專輯收入《1001 Albums You Must Hear Before You Die》，四十年來仍是嘻哈正典的入口。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/The_Message_(Grandmaster_Flash_and_the_Furious_Five_song)",
-            "https://en.wikipedia.org/wiki/The_Message_(Grandmaster_Flash_and_the_Furious_Five_album)"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。單曲為正典，專輯本身非歷代榜核心",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "1982 年 10 月由 Sugar Hill Records 發行，錄於紐澤西 Englewood 的 Sweet Mountain 錄音室，Sylvia Robinson 與 Clifton「Jiggs」Chase 掌製作。標題曲由 Duke Bootee（Edward Fletcher）與 Melle Mel 在 1980 年紐約地鐵大罷工後寫成，貝斯線走得極慢、編曲刻意留白，把敘事推到最前面；〈Scorpio〉則是純粹的 electro 合成器路線。2002 年國家錄音登記首年收錄，是名單上第一筆嘻哈錄音。",
@@ -78,8 +79,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {

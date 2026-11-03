@@ -1,5 +1,34 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-03｜dip-vinyl-shop｜殿堂擴充套用（殿堂 303）＋重複卡合併（白色專輯、Jazzmatazz）
+
+- **殿堂**：`hall-expansion.json` 133 張 null→hall。
+  - 套用前驗證：133 張都在 seed，第 9 欄都是空的。
+  - 結果：殿堂 170→**303**，流亡 254、異端 85 不動。同級內一藝人一張，只有 Miles Davis 兩張（Kind of Blue＋In a Silent Way）。
+  - 寫入：
+    - seed 第 9 欄 133 列（三道防呆）。
+    - manifest 20 檔 55 筆，`apexAssessment` 註明店主定案殿堂擴充，`source` 為 `manual:hall-expansion-20261103`。
+    - card_catalog 推 133／133；整份重列後全池 seed↔catalog tier 0 不符；抽 15 張讀回 15/15。
+- **經典度補正（主線裁定）**：新殿堂中有 16 張 classic<5，gate 擋下「hall 候選必須 classic=5」。照《台客的復仇》先例改為 5，冷門度、硬蕊度不動：seed 16 列、manifest 8 筆、card_catalog 16／16。
+- **重複合併**：
+  - 刪 `The Beatles|The Beatles (White Album)`、`Guru|Jazzmatazz Volume 1`，seed 22,507→22,505。
+  - 併到保留那筆的欄位：
+    - 白色專輯的 Apple 試聽配對 → 保留那筆原本是 unavailable，已併入並重建 runtime。
+    - Spotify 連結 → 寫進 KV `cover6`。
+    - Guru 的 upc＋rgMbid → 寫進 card_catalog。
+  - 已刪除：manifest c36 一列、card_catalog 2 份文件、KV 8 鍵（`kv-token-check` 通過）、子曲風／情緒底稿／年份／試聽的鍵。刪除前都已備份到 `dedupe-backup/`。
+- **未動**：
+  - 新手禮 18 張全部仍是殿堂，不用動。
+  - 玩家卡匣雲端查不到（403），沒動，列在 REPORT 4.3。
+- **待本機**：
+  - 後台「⇄ 依卡池同步頂點旗標」（設 133 張）。
+  - 手動刪 `album_overrides/the beatles|the beatles (white album)`。
+  - 情緒前台檔沒重建：被既有缺口擋住，《台客的復仇》沒有情緒座標。
+- **主要檔案**：
+  - `seed_cards.json`、`onboarding-manifest-*.json`、`card-subgenres.json`、`data/{apple-audio-map-v1,apple-audio-runtime-v1,release-years-v1}.json`、`data/mood/card-moods-v0.json`、`data/shop/print/*`。
+  - `batch-progress/apex-rebalance-20261103/{apply-h.mjs,apply-h.json,push-catalog-h.mjs,classic5-h.mjs,dedupe.mjs,dedupe-backup/,REPORT-hall303.md}`。
+- **驗證**：published gate 21 份、3,558 張，與本次相關的類別 0 error；album_overrides.tier 42 筆等本機同步；其餘都是既有類別。`dedupe.mjs --verify` 終態全符。
+
 ### 2026-11-03｜dip-vinyl-shop｜殿堂擴充到 303 定案＋重複卡合併（白色專輯、Jazzmatazz）
 
 - **店主**：殿堂太少，要再挑一輪到 300，看完提案後修改兩輪才定案。

@@ -368,10 +368,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "以樂史論確為殿堂候選（《滾石》五百大＋布魯斯名人堂），但本筆輸入的 rgMbid 指向 1962 年的另一張同名專輯、封面亦是 1962 年那張，身分未釘死前不宜掛頂點，請上游修正 RG 後再評。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Bo%20Diddley/Bo%20Diddley",
+          "https://musicbrainz.org/release-group/f1cedb26-816f-3815-8489-c317ede4cae0"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "以樂史論確為殿堂候選（《滾石》五百大＋布魯斯名人堂），但本筆輸入的 rgMbid 指向 1962 年的另一張同名專輯、封面亦是 1962 年那張，身分未釘死前不宜掛頂點，請上游修正 RG 後再評。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "Chess 1958 年把 1955 年來的單曲集成的首張唱片，開頭〈Bo Diddley〉〈I'm a Man〉〈Bring It to Jerome〉三連發，就把那組後來被叫作 Bo Diddley beat 的切分節奏定了型。錄音班底是芝加哥藍調的核心：Billy Boy Arnold 在〈I'm a Man〉的口琴、Little Walter 在〈Diddley Daddy〉的口琴、Otis Spann 的鋼琴。末尾的〈Who Do You Love?〉與〈Pretty Thing〉日後被英國團反覆翻唱。2022 年獲布魯斯名人堂列入專輯類。",
@@ -402,8 +413,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -2346,10 +2357,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "影響力層面的評價極高，但長期共識多以「催生 punk 的上游」定位而非本身列入史上核心，且商業與同時代接受度極差，殿堂資格建議店主與 Ramones、Stooges 一併排序後再定。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/New%20York%20Dolls/New%20York%20Dolls",
+          "https://musicbrainz.org/release-group/4cdd4c59-e38f-382b-b01c-e69829faa69c"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "影響力層面的評價極高，但長期共識多以「催生 punk 的上游」定位而非本身列入史上核心，且商業與同時代接受度極差，殿堂資格建議店主與 Ramones、Stooges 一併排序後再定。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "1973 年 4 月在紐約 Record Plant 錄成，Mercury 發行，製作人是流行品味細緻、對這團評價其實保留的 Todd Rundgren——但 Johansen 與 Sylvain 事後都說他抓對了他們現場的聲音。首任鼓手 Billy Murcia 前一年死於倫敦，Jerry Nolan 接手。封面五人上妝著女裝，〈Personality Crisis〉〈Trash〉〈Jet Boy〉把 Brill Building 的流行寫法疊在粗糙的 rock and roll 上。銷量慘澹，卻成了 1970 年代 punk 的直接上游。",
@@ -2381,8 +2403,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -4924,21 +4946,22 @@
       },
       "rarity": "legendary",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。synth-punk 源頭、1001 收，但屬樂評圈聖典，圈外知名度不足",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Suicide/Suicide",
+          "https://musicbrainz.org/release-group/702d4a53-9f00-3f57-a723-e5e267518454"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "電子搖滾與 industrial 的起點性文獻：《Rolling Stone》五百大、Pitchfork 七〇年代最佳專輯名單長期收錄，維基條目亦記載其對 Springsteen、Spacemen 3 等跨世代藝人的直接影響，屬該領域史上核心。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/Suicide_(1977_album)",
-            "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。synth-punk 源頭、1001 收，但屬樂評圈聖典，圈外知名度不足",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "Alan Vega 的人聲配 Martin Rev 的電子琴與鼓機，1977 年 12 月由 Red Star 發行，Craig Leon 與 Marty Thau 製作，在紐約 Ultima Sound 四天錄完。Leon 把替雷鬼樂手工作時看來的手法搬進來，用 Eventide 數位延遲替人聲加回音。〈Frankie Teardrop〉十分鐘的殺人敘事，歌詞是混音階段才由 Vega 改定的。當年美國樂評一面倒惡評，唱片也沒進榜。",
@@ -4970,8 +4993,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -5356,10 +5379,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "概念與影響力都足，但五百大名次偏後且跨來源共識多集中於樂團整體形象而非單張唱片，尚不足以列為該領域史上核心。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Devo/Q%3A%20Are%20We%20Not%20Men%3F%20A%3A%20We%20Are%20Devo!",
+          "https://musicbrainz.org/release-group/60a754f9-50e1-346a-97db-925a1e2ad7e0"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "概念與影響力都足，但五百大名次偏後且跨來源共識多集中於樂團整體形象而非單張唱片，尚不足以列為該領域史上核心。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "Brian Eno 在 Conny Plank 的科隆錄音室替 Devo 製作的首作，1978 年由 Warner Bros.（北美）與 Virgin（歐洲）發行。當時樂團還沒簽約，機票與棚費是 Eno 自掏腰包，條件是日後分成。Eno 幾乎替每個聲部寫了合成器橋段，Devo 只採用三、四首，衝突後改請 David Bowie 進來重混。〈(I Can't Get No) Satisfaction〉的解構翻唱與〈Jocko Homo〉的 de-evolution 教義是全片核心。",
@@ -5391,8 +5425,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -8332,21 +8366,22 @@
       },
       "rarity": "legendary",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。死亡金屬開山作，屬類型里程碑 5 星",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Death/Scream%20Bloody%20Gore",
+          "https://musicbrainz.org/release-group/4b2378ca-9617-3b4a-bac3-dcc23a0467bf"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "跨來源長期共識把 death metal 的成形歸到本作（維基 death metal 條目引《舊金山紀事報》「第一張真正的 death metal 唱片」、AllMusic 稱 Schuldiner 為曲風之父），是該領域無可替代的開山文獻。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/Scream_Bloody_Gore",
-            "https://en.wikipedia.org/wiki/Death_metal"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。死亡金屬開山作，屬類型里程碑 5 星",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "Chuck Schuldiner 一人包辦吉他、貝斯與主唱，鼓手 Chris Reifert 只參與這一張。專輯錄了兩次：第一次在佛羅里達 American Recording 只錄到吉他與鼓，Combat 聽完直接退件；第二次改到洛杉磯的 Music Grinder，由 Randy Burns 製作。〈Sacrificial〉的原名被廠牌以怕惹上 PMRC 為由砍短。AllMusic 的 Rivadavia 認為 Possessed 的《Seven Churches》還卡在 thrash 與 death metal 之間，本作才把後者的核心要素定下來。",
@@ -8379,8 +8414,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -10883,10 +10918,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "九〇年代末最被引用的製作範本之一，惟主要背書集中於 Pitchfork 一系與英國樂媒，跨來源長期共識的廣度仍不及殿堂門檻，建議店主覆核。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/The%20Flaming%20Lips/The%20Soft%20Bulletin",
+          "https://musicbrainz.org/release-group/1a021034-95d1-3a2d-bdca-73b25e455e49"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "九〇年代末最被引用的製作範本之一，惟主要背書集中於 Pitchfork 一系與英國樂媒，跨來源長期共識的廣度仍不及殿堂門檻，建議店主覆核。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "前作《Zaireeka》是要四台音響同時播放的四片裝實驗，接著這張反而轉向工整的旋律。1997 年 4 月到 1999 年 2 月在紐約州 Cassadaga 的 Tarbox Road，由樂團、Dave Fridmann 與 Scott Booker 共同製作：那種交響感不是找樂團來拉，而是把多台 MIDI 鍵盤刻意失準後層層疊起，再配上電子節拍。封面改自 Lawrence Schiller 的《The Acid Test: Neal Cassady》，原照登在《Life》1966 年談 LSD 的報導裡，畫面是 Cassady 與自己的影子共舞。",
@@ -10918,8 +10964,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -13996,10 +14042,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "是 post-punk 轉向電子舞曲最常被引用的接點，殿堂資格相當接近，但《滾石》500 大在 2003 與 2012 兩版皆未收錄、要到 2020 年才入列，長期共識的連續性還不夠，建議交店主覆核後再升格。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/New%20Order/Power%2C%20Corruption%20%26%20Lies",
+          "https://musicbrainz.org/release-group/16cc9dfc-594d-3fb9-b789-3e1bfcb6f9f8"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "是 post-punk 轉向電子舞曲最常被引用的接點，殿堂資格相當接近，但《滾石》500 大在 2003 與 2012 兩版皆未收錄、要到 2020 年才入列，長期共識的連續性還不夠，建議交店主覆核後再升格。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "1983 年 5 月 2 日由 Factory 發行，錄於倫敦 Islington 的 Britannia Row，樂團自己製作。〈Age of Consent〉仍是吉他樂團的骨架，〈5-8-6〉已經整段交給 sequencer 跑，被評為早期 house 的字面實踐；同期錄的〈Blue Monday〉以非專輯十二吋單曲發行，只在部分卡帶與 CD 版被補進曲目。Peter Saville 的封面把 Fantin-Latour 的玫瑰靜物配上一組模組化色碼字母表——Tony Wilson 為了借畫對館長說「我相信人民想要它」。",
@@ -14031,8 +14088,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {

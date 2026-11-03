@@ -5886,41 +5886,42 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
+        "classic": 5,
         "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:audit-20261102",
+        "source": "manual:hall-expansion-20261103",
         "checkedAt": "2026-11-03T00:00:00Z",
-        "note": "全池稽核 audit-20261102（方案 C）：迪斯可里程碑單曲所在盤，但專輯本身非正典核心；經典度降 4，硬蕊度改 1",
+        "note": "店主 2026-11-03 定案殿堂擴充：殿堂最低門檻 classic=5，經典度由 4 調為 5（只動經典度）",
         "previous": {
-          "classic": 5,
+          "classic": 4,
           "obscurity": 2,
-          "accessibility": 2,
-          "source": "manual:genre-anchors",
-          "checkedAt": "2026-08-23T02:48:19Z",
-          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；十七分鐘標題曲確立 disco 長版形式,標題曲入選搖滾名人堂 500 Songs That Shaped Rock and Roll",
-          "rarity": "uncommon"
+          "accessibility": 1,
+          "listeners": null,
+          "source": "manual:audit-20261102",
+          "checkedAt": "2026-11-03T00:00:00Z",
+          "note": "全池稽核 audit-20261102（方案 C）：迪斯可里程碑單曲所在盤，但專輯本身非正典核心；經典度降 4，硬蕊度改 1",
+          "rarity": "common"
         }
       },
-      "rarity": "common",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。迪斯可名曲所在盤，專輯本身非正典核心",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Donna%20Summer/Love%20to%20Love%20You%20Baby",
+          "https://musicbrainz.org/release-group/b0866510-7c36-32ed-a03a-f71798ece1ed"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "開啟 disco 長版單面曲式與慕尼黑製作路線,標題曲獲搖滾名人堂 500 Songs That Shaped Rock and Roll 收錄,跨來源長期公認為該領域核心",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/Love_to_Love_You_Baby_(song)",
-            "https://en.wikipedia.org/wiki/Love_to_Love_You_Baby_(album)",
-            "https://musicbrainz.org/release-group/b0866510-7c36-32ed-a03a-f71798ece1ed"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。迪斯可名曲所在盤，專輯本身非正典核心",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "Giorgio Moroder 與 Pete Bellotte 在慕尼黑替 Donna Summer 打造的第二張專輯,也是她首度在美國與國際發行的作品。Summer 提出歌名構想後,Moroder 把三分鐘的原始單曲拉長成佔滿一整面的十七分鐘版本,以綿延的四四拍、弦樂與她刻意壓低的喘息唱腔推進。標題曲美國流行榜第 2,專輯登 Billboard 200 第 11,搖滾名人堂將該曲列入 500 Songs That Shaped Rock and Roll。",
@@ -5953,8 +5954,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {

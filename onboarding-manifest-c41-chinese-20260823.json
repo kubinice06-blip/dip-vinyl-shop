@@ -108,22 +108,22 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。粵語流行起點，該地區里程碑止於5",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%E8%A8%B1%E5%86%A0%E5%82%91/%E5%8D%8A%E6%96%A4%E5%85%AB%E5%85%A9",
+          "https://musicbrainz.org/release-group/55b343d1-3290-35fb-a139-e699c0a32419"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "當年最暢銷粵語唱片，1977 年香港金唱片頒獎典禮百週年紀念大獎、1978 年白金唱片；〈浪子心聲〉四十年間由鄧麗君、梅艷芳、Beyond 到周杰倫反覆翻唱，跨來源長期共識足列粵語流行核心。",
-          "evidenceUrls": [
-            "https://zh.wikipedia.org/wiki/半斤八兩_(專輯)",
-            "https://zh.wikipedia.org/wiki/許冠傑",
-            "https://musicbrainz.org/release-group/55b343d1-3290-35fb-a139-e699c0a32419"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。粵語流行起點，該地區里程碑止於5",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "許冠傑第三張粵語大碟，也是黎彼得首次與他合寫歌詞的一張。同名主題曲把打工仔的怨氣寫成順口溜，〈浪子心聲〉走另一端，日後由鄧麗君、梅艷芳、Beyond 到周杰倫反覆翻唱。〈打雀英雄傳〉改編自佳藝電視版《射鵰英雄傳》主題曲，〈鬼馬大家樂〉則把溫拿與陳秋霞的舊曲重填詞串成組曲。當年最暢銷粵語唱片，1977 年香港金唱片頒獎典禮獲百週年紀念大獎。",
@@ -156,8 +156,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -746,29 +746,41 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
+        "classic": 5,
         "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:audit-20261102",
+        "source": "manual:hall-expansion-20261103",
         "checkedAt": "2026-11-03T00:00:00Z",
-        "note": "全池稽核 audit-20261102（方案 C）：含〈Monica〉的成名作；粵語主流→2",
+        "note": "店主 2026-11-03 定案殿堂擴充：殿堂最低門檻 classic=5，經典度由 4 調為 5（只動經典度）",
         "previous": {
-          "classic": 5,
+          "classic": 4,
           "obscurity": 2,
           "accessibility": 1,
-          "source": "manual:genre-anchors",
-          "checkedAt": "2026-08-23T05:03:23Z",
-          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈Monica〉定下他的勁歌熱舞路線並獲選 1999 年香港電台世紀金曲，全碟四白金，屬大眾曲目。",
-          "rarity": "rare"
+          "listeners": null,
+          "source": "manual:audit-20261102",
+          "checkedAt": "2026-11-03T00:00:00Z",
+          "note": "全池稽核 audit-20261102（方案 C）：含〈Monica〉的成名作；粵語主流→2",
+          "rarity": "common"
         }
       },
-      "rarity": "common",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "〈Monica〉的世紀金曲地位無疑，但共識集中在單曲層次而非整碟，殿堂門檻暫未跨過，建議店主複核。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%E5%BC%B5%E5%9C%8B%E6%A6%AE/Leslie",
+          "https://musicbrainz.org/release-group/f5a1dfb2-c6f9-45fb-9706-f97c67d7cb27"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "〈Monica〉的世紀金曲地位無疑，但共識集中在單曲層次而非整碟，殿堂門檻暫未跨過，建議店主複核。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "張國榮第四張粵語大碟，黎小田監製，因〈Monica〉太紅而常被逕稱《Monica》。〈Monica〉改編自吉川晃司的同名單曲，黎彼得填詞，強拍節奏加上他自創的舞步，替他定下 1980 年代勁歌熱舞的路線，1999 年獲香港電台選為世紀金曲。碟內另有顧嘉煇作曲、黃霑填詞的《鹿鼎記》主題曲〈始終會行運〉，以及〈儂本多情〉、〈緣份〉等劇集電影歌。銷量突破四白金。",
@@ -801,8 +813,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -976,21 +988,22 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。粵語流行里程碑，該地區類型經典止於5",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%E6%A2%85%E8%89%B7%E8%8A%B3/%E5%A3%9E%E5%A5%B3%E5%AD%A9",
+          "https://musicbrainz.org/release-group/0a54ad88-dcc4-4099-abc4-24c7bb529aba"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "銷量逾四十萬張並長年被記為香港史上最高銷量專輯，同時定義了梅艷芳的舞台形象，中英文維基與香港電台十大中文金曲委員會編纂之收藏指南均予專章，屬粵語流行史核心。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/Anita_Mui",
-            "https://zh.wikipedia.org/wiki/壞女孩"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。粵語流行里程碑，該地區類型經典止於5",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "一九八五年底由華星推出、黎小田監製，在香港賣出逾四十萬張，長年被記為當地史上最高銷量唱片。選曲近乎一份八十年代的翻唱清單：標題曲來自 Sheena Easton 的〈Strut〉，〈抱你十個世紀〉與〈點都要愛〉取自 Madonna，〈夢伴〉、〈魅力的散發〉來自近藤真彥，〈孤身走我路〉來自山口百惠。林振強與潘偉源的粵詞把這些舞曲改寫成敢認慾望的女聲，標題曲一九九五年在廣州演出時遭當局以內容不雅禁唱。",
@@ -1023,8 +1036,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -1321,21 +1334,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。港樂里程碑屬該地 5，非跨類型國際正典",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Beyond/%E6%A8%82%E8%88%87%E6%80%92",
+          "https://musicbrainz.org/release-group/4f019b75-7e4f-3428-a2a7-0091661b201e"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "獲華語金曲獎三十年評選列入「30 年 30 碟」，收錄的〈海闊天空〉三十年來持續被引為香港社會運動與紀念場合的代表曲，中英文來源長期一致視 Beyond 為最具影響力的粵語搖滾樂隊，此碟為其定論之作。",
-          "evidenceUrls": [
-            "https://zh.wikipedia.org/wiki/樂與怒",
-            "https://en.wikipedia.org/wiki/Beyond_(band)"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。港樂里程碑屬該地 5，非跨類型國際正典",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "一九九三年五月十四日由華納推出，Beyond 第九張粵語大碟，也是黃家駒生前參與的最後一張。錄音在東京進行，經紀公司給了更大預算與創作自由，樂隊從富士山下的小屋搬進市區錄音室，編曲由四人與日籍音樂人梁邦彥共同擔綱，監製也掛在自己名下。〈海闊天空〉由黃家駒一手包辦詞曲，取得當年十大中文金曲與叱咤我最喜愛的本地創作歌曲大獎；同年六月他在東京錄影時墜台，六日後離世。",
@@ -1368,8 +1382,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -2067,22 +2081,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。華語流行核心盤，屬該語區第一級（5），非跨類型國際正典",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%E5%91%A8%E6%9D%B0%E5%80%AB/%E8%8C%83%E7%89%B9%E8%A5%BF",
+          "https://musicbrainz.org/release-group/732b78cb-9f7d-383d-86cc-5cf7e43c9658"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "第13屆金曲獎拿下最佳專輯、製作人、作曲、作詞、編曲五項，又入選華語金曲獎「30年30碟」，並為台灣2001年度銷量冠軍，跨來源長期共識足列華語流行史核心。",
-          "evidenceUrls": [
-            "https://zh.wikipedia.org/wiki/%E8%8C%83%E7%89%B9%E8%A5%BF",
-            "https://en.wikipedia.org/wiki/Fantasy_(Jay_Chou_album)",
-            "https://web.archive.org/web/20101222011719/http://www.chinesemusicawards.org/News/2010/1218/146.html"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。華語流行核心盤，屬該語區第一級（5），非跨類型國際正典",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "2001年9月由台灣博德曼發行的第二張，周杰倫仍是全碟作曲兼製作人，編曲分給林邁可、洪敬堯與鍾興民。方文山的詞把場景寫得極具體，〈上海一九四三〉、〈威廉古堡〉、〈愛在西元前〉各撐起一個時空。隔年第13屆金曲獎，本作獲最佳流行音樂演唱專輯獎與最佳專輯製作人獎，周杰倫以〈愛在西元前〉得最佳作曲人、方文山以〈威廉古堡〉得最佳作詞人、鍾興民以〈雙截棍〉得最佳編曲人。",
@@ -2115,8 +2129,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -2558,21 +2572,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。華語 R&B 開端，該國類型第一名盤級止於5",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%E9%99%B6%E5%96%86/%E9%99%B6%E5%96%86%E5%90%8C%E5%90%8D%E5%B0%88%E8%BC%AF",
+          "https://musicbrainz.org/release-group/0266bc3c-2456-44be-99d2-c779fce923ff"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "跨來源共識指其為華語流行導入節奏藍調製作範式的起點：金曲獎最佳唱片製作人、中華音樂人交流協會十大專輯，〈望春風〉更帶起台語老歌新唱風潮，足列華語流行史核心。",
-          "evidenceUrls": [
-            "https://zh.wikipedia.org/wiki/%E9%99%B6%E5%96%86_(%E5%B0%88%E8%BC%AF)",
-            "https://en.wikipedia.org/wiki/David_Tao_(album)"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。華語 R&B 開端，該國類型第一名盤級止於5",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "1997年12月由俠客唱片發行的首張創作專輯，陶喆自己作曲編曲，與王治平、Jim Lee 共同製作，全碟用機場廣播與答錄機留言等短過場串接段落。〈飛機場的10:30〉、〈愛，很簡單〉、〈沙灘〉把美式節奏藍調的和聲寫法與轉音直接搬進國語歌；〈望春風〉改編鄧雨賢舊作，開了老歌新唱的路。隔年第9屆金曲獎五項提名，奪下最佳新人與最佳唱片製作人。",
@@ -2605,8 +2620,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -3911,22 +3926,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。台灣流行轉捩點，該國名盤級止於5",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%E8%98%87%E8%8A%AE/%E8%98%87%E8%8A%AE%E5%B0%88%E8%BC%AF",
+          "https://musicbrainz.org/release-group/a3672742-6bcb-46f3-bf89-c838426588bb"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "百佳榜第二名、與《之乎者也》並稱時代分水嶺，首度把靈魂樂唱法帶進國語歌壇，並拿下金馬獎與香港電影金像獎電影歌曲獎，跨來源長期共識足列華語樂史核心。",
-          "evidenceUrls": [
-            "https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82200%E6%9C%80%E4%BD%B3%E5%B0%88%E8%BC%AF",
-            "https://zh.wikipedia.org/wiki/%E8%98%87%E8%8A%AE",
-            "https://zh.wikipedia.org/wiki/%E6%90%AD%E9%8C%AF%E8%BB%8A"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。台灣流行轉捩點，該國名盤級止於5",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "一九八三年電影《搭錯車》的原聲大碟，也是蘇芮的出道唱片。三十一歲前她在西餐廳唱英文歌，經崔苔菁的電視節目被導演虞戡平相中，簽進新成立的飛碟。李壽全統籌音樂：〈一樣的月光〉由他作曲、吳念真與羅大佑填詞，〈是否〉出自羅大佑，〈請跟我來〉〈把握〉〈變〉由梁弘志包辦，〈酒干倘賣無〉是侯德健的手筆。她把靈魂樂的嘶啞唱法帶進國語歌，黑白四格封面確立「黑色旋風」形象，台灣百佳專輯排名第二。",
@@ -3960,8 +3975,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -4186,20 +4201,41 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
+        "classic": 5,
         "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第九屆金曲獎最佳流行音樂演唱唱片獎、台灣流行音樂百佳專輯（1993-2005）第四十一名，公認的張雨生創作代表作。"
+        "source": "manual:hall-expansion-20261103",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "店主 2026-11-03 定案殿堂擴充：殿堂最低門檻 classic=5，經典度由 4 調為 5（只動經典度）",
+        "previous": {
+          "classic": 4,
+          "obscurity": 2,
+          "accessibility": 2,
+          "listeners": null,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第九屆金曲獎最佳流行音樂演唱唱片獎、台灣流行音樂百佳專輯（1993-2005）第四十一名，公認的張雨生創作代表作。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "金曲最佳專輯加百佳第四十一名，地位穩固但未達史上核心的跨來源共識，維持一般卡。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%E5%BC%B5%E9%9B%A8%E7%94%9F/%E5%8F%A3%E6%98%AF%E5%BF%83%E9%9D%9E",
+          "https://musicbrainz.org/release-group/79b81dcf-f4ee-457c-8695-cc8af2dc43e3"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "金曲最佳專輯加百佳第四十一名，地位穩固但未達史上核心的跨來源共識，維持一般卡。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "張雨生生前發行的最後一張唱片，十一首詞曲全部自己寫、自己製作。樂手是固定班底：他與黃中岳的吉他、譚明輝的貝斯、姜永正的鼓，鍵盤與全碟編曲交給櫻井弘二，王俊傑混音。〈愛情…〉只有一分鐘，接著〈…的圖案〉續完，兩軌拆成一組；〈河〉長達六分鐘，〈在黃昏融化了世界的色彩以前〉這種長句標題也照樣入歌。封面出自義大利畫家 Paolo Rui。一九九八年拿下第九屆金曲獎最佳流行音樂演唱唱片獎，台灣百佳專輯第四十一名。",
@@ -4232,8 +4268,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -4902,21 +4938,22 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。華語流行出道名盤，該地區類型里程碑止於5",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%E5%BC%B5%E6%83%A0%E5%A6%B9/%E5%A7%8A%E5%A6%B9",
+          "https://musicbrainz.org/release-group/760141fb-985d-3b45-849e-7fabad2de396"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "評論端在兩百張最佳專輯的後段名單中列第十名，商業端為台灣史上最暢銷的十張之一，中英文維基與協會年度榜單長期並存，屬台灣流行音樂史核心文獻。",
-          "evidenceUrls": [
-            "https://zh.wikipedia.org/wiki/姊妹_(專輯)",
-            "https://en.wikipedia.org/wiki/Sisters_(A-Mei_album)"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。華語流行出道名盤，該地區類型里程碑止於5",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "一九九六年十二月豐華唱片發行的首張國語專輯，卑南族的張惠妹族名為 Kulilay Amit。張雨生擔任主要製作人，並寫下〈姊妹〉與〈水藍色眼淚〉的詞曲；首波之後的〈原來你什麼都不要〉由郭子作曲、鄔裕康填詞、李伯傑編曲，成為她最長銷的一首。台灣賣出一百二十一萬張，《台灣流行音樂200最佳專輯》一九九三至二〇〇五年部分列第十名。",
@@ -4948,8 +4985,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -5343,21 +5380,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。華語流行名盤，單一地區經典止於5",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%E7%8E%8B%E8%8F%B2/%E5%A4%A9%E7%A9%BA",
+          "https://musicbrainz.org/release-group/2a5a3e99-a8b0-321f-b789-78d780aede72"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "跨來源長期共識明確：中華音樂人交流協會「台灣流行音樂200最佳專輯」1993–2005 部分列第十六名，第七屆金曲獎最佳演唱錄音專輯獎得主，並為金曲龍虎榜當年度銷售冠軍，被唱片業界視為國語唱片市場的典範，屬華語流行史核心文獻。",
-          "evidenceUrls": [
-            "https://zh.wikipedia.org/wiki/天空_(王靖雯專輯)",
-            "https://zh.wikipedia.org/wiki/台灣流行音樂200最佳專輯"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。華語流行名盤，單一地區經典止於5",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "一九九四年十一月十日以「王靖雯」之名發行，香港新藝寶、台灣福茂出品，楊明煌製作、屠穎編曲。十首歌名一律取兩字，除改編 The Cranberries〈Dreams〉的〈掙脫〉與竇唯編曲的〈誓言〉外全是台灣音樂人原創，擺脫了港星赴台把粵語舊歌重填國語詞的慣例。福茂當時代理 Decca，錄音講究，隔年拿下第七屆金曲獎最佳演唱錄音專輯獎，也在「台灣流行音樂200最佳專輯」列第十六名。",
@@ -5390,8 +5428,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {

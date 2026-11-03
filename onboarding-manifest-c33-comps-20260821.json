@@ -1091,40 +1091,42 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
+        "classic": 5,
         "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:audit-20261102",
+        "source": "manual:hall-expansion-20261103",
         "checkedAt": "2026-11-03T00:00:00Z",
-        "note": "全池稽核 audit-20261102（方案 C）：藝人正典錄音，但這是 1997 合輯，無針對本輯的正典共識；殿堂不成立",
+        "note": "店主 2026-11-03 定案殿堂擴充：殿堂最低門檻 classic=5，經典度由 4 調為 5（只動經典度）",
         "previous": {
-          "classic": 5,
+          "classic": 4,
           "obscurity": 2,
-          "accessibility": 3,
-          "source": "manual:genre-anchors",
-          "checkedAt": "2026-08-21T20:27:45Z",
-          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；古典女聲藍調的定義者，搖滾名人堂與葛萊美終身成就雙重認證；官方雙碟精選流通廣，但 1920 年代蟲膠母源的音質對現代耳朵仍有門檻。",
-          "rarity": "epic"
+          "accessibility": 2,
+          "listeners": null,
+          "source": "manual:audit-20261102",
+          "checkedAt": "2026-11-03T00:00:00Z",
+          "note": "全池稽核 audit-20261102（方案 C）：藝人正典錄音，但這是 1997 合輯，無針對本輯的正典共識；殿堂不成立",
+          "rarity": "rare"
         }
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。1997 合輯，無針對本輯的正典共識",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Bessie%20Smith/The%20Essential%20Bessie%20Smith",
+          "https://musicbrainz.org/release-group/d8c3eec2-f73d-33f0-881b-09a5346a0a4e"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "Bessie Smith 1989 年同時入選搖滾名人堂與葛萊美終身成就獎，被公認為古典女聲藍調的核心人物，這套 Columbia 官方雙碟是其 1923–33 年錄音的標準文獻。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/Bessie_Smith",
-            "https://musicbrainz.org/release-group/d8c3eec2-f73d-33f0-881b-09a5346a0a4e"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。1997 合輯，無針對本輯的正典共識",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "Columbia／Legacy 於 1997 年推出的雙碟精選，從藍調皇后 1923 至 1933 年間約一百六十首 Columbia 錄音裡挑出三十六首：與 Louis Armstrong 合作的〈St. Louis Blues〉、〈Backwater Blues〉、〈Nobody Knows You When You're Down and Out〉俱在。她的女低音不靠麥克風也能壓過整團，伴奏名單還有 Fletcher Henderson、James P. Johnson；1989 年入選搖滾名人堂。",
@@ -1156,8 +1158,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -2720,22 +2722,22 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。精選輯，RS500(2003) 有收但非跨類型核心正典，拿不準",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Hank%20Williams/40%20Greatest%20Hits",
+          "https://musicbrainz.org/release-group/4a48eaed-2b09-3147-b310-187bfc692849"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "《滾石》五百大三個版本皆入榜、Christgau 基本唱片庫收錄，且是首度不加假立體聲與後製配唱的整編，公認為鄉村樂錄音史的核心文獻。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/40_Greatest_Hits_(Hank_Williams_album)",
-            "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time",
-            "https://musicbrainz.org/release-group/4a48eaed-2b09-3147-b310-187bfc692849"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。精選輯，RS500(2003) 有收但非跨類型核心正典，拿不準",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "Mercury 在 1978 年、Hank Williams 逝世二十五週年推出的雙唱片，四十首依年序從〈Move It on Over〉排起。相較 MGM 早年那些加了假立體聲、後製配唱甚至與兒子拼接對唱的版本，這套首度讓錄音回到原始樣貌，也成為他生涯銷量最高的唱片。2003 年《滾石》五百大專輯列第九十四名。",
@@ -2767,8 +2769,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {

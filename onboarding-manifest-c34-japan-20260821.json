@@ -8032,21 +8032,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。日本 punk 第一名盤屬該國 5 星，綜合國際歷代榜不收",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/THE%20BLUE%20HEARTS/THE%20BLUE%20HEARTS",
+          "https://musicbrainz.org/release-group/45503be2-43b3-3221-88d5-a6fb3ae18dd1"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "日本 punk 的起點級錄音，跨來源長期共識明確：Rolling Stone Japan 百大第3、HMV 百大藝人第19，且〈リンダ リンダ〉已成國民曲目。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/The_Blue_Hearts",
-            "https://ja.wikipedia.org/wiki/THE_BLUE_HEARTS_(アルバム)"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。日本 punk 第一名盤屬該國 5 星，綜合國際歷代榜不收",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "甲本ヒロト、真島昌利、河口純之助、梶原徹也1985年組成，1987年5月由メルダック推出的同名出道作，自己掛製作，也是他們錄音室作品裡收錄時間最短、衝勁最足的一張。〈リンダ リンダ〉〈未来は僕等の手の中〉〈終わらない歌〉〈少年の詩〉全在此，インディーズ時期的〈人にやさしく〉反而未收。2007年Rolling Stone Japan的日本搖滾百大專輯把它排在第3位。",
@@ -8078,8 +8079,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -8664,21 +8665,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。坂本知名配樂，主題曲有名但專輯不在綜合歷代榜",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%E5%9D%82%E6%9C%AC%E9%BE%8D%E4%B8%80/%E6%88%A6%E5%A0%B4%E3%81%AE%E3%83%A1%E3%83%AA%E3%83%BC%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9",
+          "https://musicbrainz.org/release-group/3870eb3e-3447-384e-8d8a-aeddab4ef00b"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "電影配樂領域的長期核心：BAFTA 作曲獎與毎日映画コンクール雙獎肯定，主題曲在1985年JASRAC海外分配額年榜居第3，翻奏不絕。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/Merry_Christmas_Mr._Lawrence_(soundtrack)",
-            "https://ja.wikipedia.org/wiki/戦場のメリークリスマス_(サウンドトラック)"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。坂本知名配樂，主題曲有名但專輯不在綜合歷代榜",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "大島渚1983年電影的原聲帶，同年5月1日由ロンドンレコード發行，是坂本龍一的第一部電影配樂，他同時在片中飾演ヨノイ大尉。作曲以「不屬於西方也不屬於東方、不在任何時代」為念，主題曲〈Merry Christmas Mr. Lawrence〉用Emulator II與酒杯採樣做出鐘聲般的音色，低音刻意讓調準偏離。此作為他拿下1984年英國電影學院獎作曲獎；David Sylvian填詞演唱的〈Forbidden Colours〉則是同一主題的歌唱版。",
@@ -8708,8 +8710,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {

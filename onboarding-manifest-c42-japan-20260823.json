@@ -3525,21 +3525,22 @@
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。視覺系奠基盤，屬日本國內/類型第一級（5），非跨類型正典",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/X%20JAPAN/BLUE%20BLOOD",
+          "https://musicbrainz.org/release-group/e19eba92-e977-3153-b834-0715525a9eae"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "2007 年《滾石》日本版「日本搖滾名盤 100」列第 15 名，2018 年 We Rock 雜誌「メタル総選挙」由讀者與職業樂手票選為日本硬式搖滾／金屬史上第一名，兩個獨立來源、相隔十一年仍指向同一結論，足列該領域史上核心。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/Blue_Blood_(X_Japan_album)",
-            "https://ja.wikipedia.org/wiki/BLUE_BLOOD_(Xのアルバム)"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。視覺系奠基盤，屬日本國內/類型第一級（5），非跨類型正典",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "1989 年 4 月 CBS・ソニー發行的大廠出道作，X 與津田直士共同製作。〈PROLOGUE〉〈ENDLESS RAIN〉〈ROSE OF PAIN〉三曲動用四十六人編制的管弦樂團，〈UNFINISHED〉用弦樂四重奏，編曲出自斎藤ネコ；〈X〉與〈オルガスム〉的合唱找來 GASTUNK 的 BAKI 等當時往來樂團的成員灌錄。封面印著樂團標語 PSYCHEDELIC VIOLENCE CRIME OF VISUAL SHOCK。オリコン最高第六名、在榜逾一百週，日本唱片協會雙白金。",
@@ -3572,8 +3573,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {

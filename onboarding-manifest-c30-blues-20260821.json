@@ -17983,21 +17983,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。芝加哥藍調必提屬 5；RS500 僅 2003 版，圈外知名度不足",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Howlin'%20Wolf/Moanin'%20in%20the%20Moonlight",
+          "https://musicbrainz.org/release-group/75d0f3a2-5938-3f4d-b845-174b81eace3b"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "藍調名人堂專輯類入選與《滾石》五百大名單構成跨來源長期共識,曲目〈Smokestack Lightnin'〉為公認的類型基石。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/Moanin%27_in_the_Moonlight",
-            "https://en.wikipedia.org/wiki/Blues_Hall_of_Fame"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。芝加哥藍調必提屬 5；RS500 僅 2003 版，圈外知名度不足",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "Chess 在 1959 年把 Howlin' Wolf 於 1951 至 1958 年間發行的單曲集結成他的第一張 LP,〈Moanin' at Midnight〉、〈How Many More Years〉、〈Smokestack Lightnin'〉、〈Evil〉都在其中。Chester Burnett 的沙啞咆哮配上 Hubert Sumlin 的吉他,把 Delta blues 的粗礪搬進芝加哥的電聲編制。《滾石》2020 年版五百大專輯名單將它列在第 477 位,2014 年並獲選進入藍調名人堂的專輯類。",
@@ -18030,8 +18031,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {

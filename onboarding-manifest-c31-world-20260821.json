@@ -4169,21 +4169,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。非洲放克里程碑在單曲，專輯未進綜合歷代榜",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Manu%20Dibango/Soul%20Makossa",
+          "https://musicbrainz.org/release-group/155f0e18-4ab7-3c71-a8a0-2e3d32b9fc22"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "標題曲跨來源長期共識:被稱為史上最常被取樣的非洲歌曲、1974 年葛萊美兩項提名、2022 年《滾石》200 大舞曲第 35 名、2024 年 PBS 紀錄片《Disco: Soundtrack of a Revolution》專章討論,且本專輯即該曲的正規發行載體。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/Soul_Makossa",
-            "https://en.wikipedia.org/wiki/Manu_Dibango"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。非洲放克里程碑在單曲，專輯未進綜合歷代榜",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "喀麥隆薩克斯風手 Manu Dibango 1972 年把〈Soul Makossa〉錄成非洲盃足球賽會歌的 B 面,makossa 一詞在他的母語 Duala 語裡即「我跳舞」。DJ David Mancuso 在布魯克林挖到它,並經 WBLS 電台的 Frankie Crocker 推開,Atlantic 遂向法國 Fiesta 取得授權,1973 年結成這張美版專輯,單曲攻上 Billboard Hot 100 第 35 名。副歌那句 ma-ma-ko, ma-ma-sa, ma-ko ma-ko-sa 日後被麥可傑克森與蕾哈娜先後沿用。",
@@ -4216,8 +4217,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -6014,22 +6015,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。衣索比亞爵士定義作＝類型 5 星",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Mulatu%20Astatke/Ethio%20Jazz",
+          "https://musicbrainz.org/release-group/b3940e49-3c5e-48b5-b9e1-f2b7e01feaff"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "Mulatu Astatke 公認為 ethio-jazz 之父，本作是該樂種在衣索比亞本土的奠基專輯，並經 Éthiopiques 系列長期再版而成為跨來源共識的核心文本。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/Mulatu_Astatke",
-            "https://en.wikipedia.org/wiki/Ethio-jazz",
-            "https://musicbrainz.org/release-group/b3940e49-3c5e-48b5-b9e1-f2b7e01feaff"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。衣索比亞爵士定義作＝類型 5 星",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "衣索比亞顫音琴手 Mulatu Astatke（1943 年生於吉馬）先後在倫敦三一音樂學院求學，並成為柏克利音樂學院第一位非洲學生，1969 年帶著他自己命名的 ethio-jazz 回到阿迪斯阿貝巴。1974 年由 Amha Records 發行的本作，封面主標題為阿姆哈拉文「የካቲት」（Yekatit），是衣索比亞第一張以整張作品為單位構思、而非拼湊舊單曲的專輯。五聲音階旋律配上顫音琴、康加鼓與電風琴，〈Yèkèrmo Sèw〉後來因 2005 年電影《愛情，不用尋找》而廣為人知。1975 年 Amha 被德爾格政權逼走後，唱片一度絕跡。",
@@ -6062,8 +6063,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -10872,21 +10873,22 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。拉丁曼波類型頂點，類型第一名盤 5 級",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Tito%20Puente/Dance%20Mania",
+          "https://musicbrainz.org/release-group/522f179f-7c31-3a7c-95ed-c22218eba84f"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "美國國會圖書館國家錄音登錄（2002）與《1001 Albums You Must Hear Before You Die》兩個彼此獨立的長期名錄同時收錄，屬 mambo／拉丁樂史核心無疑。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/Dance_Mania_(album)",
-            "https://en.wikipedia.org/wiki/National_Recording_Registry"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。拉丁曼波類型頂點，類型第一名盤 5 級",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "Tito Puente 在 RCA Victor 的 1958 年錄音，是他 mambo 全盛期最暢銷的一張。Santitos Colón 主唱，Ray Barretto 打 conga，Bobby Rodríguez 彈貝斯；Puente 自己包辦編曲並兼任 timbales、鐵琴與馬林巴。〈El Cayuco〉、〈3-D Mambo〉一類曲目節奏直白、銅管齊整，正是紐約 Palladium 舞廳全盛期的聲音。2002 年獲美國國會圖書館選入國家錄音登錄，也被收進《1001 Albums You Must Hear Before You Die》。",
@@ -10919,8 +10921,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -16625,21 +16627,22 @@
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。西方首張印度古典 LP，歷史里程碑但非綜合歷代榜正典",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Ali%20Akbar%20Khan/Music%20of%20India%3A%20Morning%20and%20Evening%20Ragas",
+          "https://musicbrainz.org/release-group/92fade71-c90b-4069-9493-e2ed00d32175"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "被記為史上第一張印度古典音樂專輯，促成 HMV 開始製作長時值印度古典錄音，並帶動 Ravi Shankar 隔年首度赴西方演出；二〇二五年另獲 Uncut「500 Greatest Albums of the 1950s」列名（第 426 位）。地位跨越唱片史與印度音樂西傳史，建議店主複核後定案。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/Music_of_India:_Morning_and_Evening_Ragas",
-            "https://en.wikipedia.org/wiki/Ali_Akbar_Khan"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。西方首張印度古典 LP，歷史里程碑但非綜合歷代榜正典",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "一九五五年四月十八日，沙羅德琴手 Ali Akbar Khan 應小提琴家 Yehudi Menuhin 之邀赴紐約參加 Living Arts of India 藝術節，在紐約現代美術館旁的招待所錄下這批演奏：Chatur Lal 打塔布拉、Shirish Gor 彈坦布拉，Menuhin 本人在每段前口述導聆，一面走晨間拉格 Sindhu Bhairavi、一面走晚間的 Pilu Baroowa。一般認定這是史上第一張印度古典音樂 LP，成功後促使 HMV 開始製作長時值的印度古典錄音，也推動 Ravi Shankar 隔年首度赴歐演出。",
@@ -16668,8 +16671,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -16976,22 +16979,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。印度古典跨界名盤、1001 收錄，但類型較窄，未達跨類型史上正典",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Shivkumar%20Sharma%2C%20Brij%20Bhushan%20Kabra%20%26%20Hariprasad%20Chaurasia/Call%20of%20the%20Valley",
+          "https://musicbrainz.org/release-group/6329db5a-77c2-30b4-9fa0-aca1151f7e26"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "跨來源長期共識明確：白金唱片、《1001 Albums You Must Hear Before You Die》收錄、AllMusic 評者 Ken Hunt 直言新手若只買一張印度古典樂唱片就該買它，三位演奏者的維基條目亦各自將其列為代表錄音，足列該領域史上核心。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/Call_of_the_Valley",
-            "https://en.wikipedia.org/wiki/Hariprasad_Chaurasia",
-            "https://en.wikipedia.org/wiki/Shivkumar_Sharma"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。印度古典跨界名盤、1001 收錄，但類型較窄，未達跨類型史上正典",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "1968 年由 His Master's Voice 發行（ECSD 2382）的概念作，Shivkumar Sharma 的 santoor 揚琴、Brij Bhushan Kabra 的滑棒吉他、Hariprasad Chaurasia 的 bansuri 竹笛三線交錯。全片用不同時辰的拉格串起喀什米爾牧羊人的一天，從〈Ahir Bhairav〉走到〈Rag Pahadi〉。後來它成為全球銷量最高的印度音樂唱片之一，拿下白金唱片，並被收進《1001 Albums You Must Hear Before You Die》。",
@@ -17021,8 +17024,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -17602,21 +17605,22 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。印度電影音樂轉捩點、Time 原聲榜，但不在 RS500／1001 等綜合歷代榜，屬類型里程碑 5",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/A.R.%20Rahman/Roja",
+          "https://musicbrainz.org/release-group/fc023a2d-7ddb-3911-9ee8-a819a5fae4f1"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "跨來源長期共識充分：《時代》雜誌影史十大原聲帶、印度國家電影獎最佳音樂總監（史上首位以出道作獲獎者）、Vairamuthu 獲最佳作詞，且被普遍視為改寫印度電影音樂編曲語彙的起點，足列該領域史上核心。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/Roja_(soundtrack)",
-            "https://en.wikipedia.org/wiki/A._R._Rahman"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。印度電影音樂轉捩點、Time 原聲榜，但不在 RS500／1001 等綜合歷代榜，屬類型里程碑 5",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "A. R. Rahman 的出道原聲帶，配 Mani Ratnam 的坦米爾語電影《Roja》，1992 年 7 月 27 日由 Lahari Music 發行。Mani Ratnam 在頒獎場合聽到他的廣告配樂後直接找上門，Rahman 也因此放棄去 Berklee 唸書。〈Chinna Chinna Aasai〉由 Minmini 演唱，〈Thamizha Thamizha〉的詞取自詩人 Subramanya Bharathi。他以此拿下印度國家電影獎最佳音樂總監，是首位以出道作獲獎者；《時代》雜誌 2005 年也把它列入影史十大原聲帶。",
@@ -17646,8 +17650,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -22643,22 +22647,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。葡萄牙／法朵第一名盤級，依標準該國第一名盤只到 5",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Am%C3%A1lia%20Rodrigues/Busto",
+          "https://musicbrainz.org/release-group/aa45b66e-1d48-470a-8f89-3d01e65771fe"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "葡萄牙樂評名單 BLITZ 五十大將其列為 1960 年代第二名，且公認開啟 Amália 與作曲家 Alain Oulman 的合作時代、確立 fado 從街頭曲牌轉向作曲家作品的路線，屬 fado 史核心。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/Am%C3%A1lia_Rodrigues_(1962_album)",
-            "https://en.wikipedia.org/wiki/Am%C3%A1lia_Rodrigues",
-            "https://en.wikipedia.org/wiki/Alain_Oulman"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。葡萄牙／法朵第一名盤級，依標準該國第一名盤只到 5",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "1962 年由 Columbia 發行，封面是 Joaquim Valente 為 Amália Rodrigues 塑的頭像，因此俗稱《Busto》，另有以首曲為題的《Asas fechadas》版本。錄音在里斯本 Teatro Taborda 完成，José Nunes 彈 guitarra portuguesa、Castro Mota 彈 viola、Alain Oulman 彈鋼琴——兩人的長期合作自此開始。曲目含〈Estranha forma de vida〉。BLITZ 葡萄牙五十大名單列它為 1960 年代第二。",
@@ -22688,8 +22692,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -32577,21 +32581,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。早期 dub 類型里程碑，非跨類型正典",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/The%20Upsetters/Blackboard%20Jungle%20Dub",
+          "https://musicbrainz.org/release-group/ec6694c4-2238-31f7-9b0f-ca33a9eb3d2a"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "英文維基dub條目把1973年春天的這張列為dub曲風成形時最早的純dub專輯之一並稱為landmark recording,專輯條目另記其為第一張立體聲、第一張用上殘響的dub唱片,兩處獨立敘述都指向曲風起點的核心地位。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/Dub_(music)",
-            "https://en.wikipedia.org/wiki/Upsetters_14_Dub_Blackboard_Jungle"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。早期 dub 類型里程碑，非跨類型正典",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "1973年春天,Lee「Scratch」Perry以《Upsetters 14 Dub Blackboard Jungle》之名在牙買加只壓了三百張,由他與King Tubby共同混音。英文維基的dub條目把它列為最早問世的純dub專輯之一,專輯條目另記其為第一張立體聲、也是第一張用上殘響的dub唱片。錄音班底橫跨Barrett兄弟、Augustus Pablo的口風琴與Tommy McCook;日後改題《Blackboard Jungle Dub》重發的版本換過曲目,〈Cloak a Dagger (version 3)〉即出自該版。",
@@ -32624,8 +32629,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
