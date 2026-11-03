@@ -481,7 +481,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L3有效，但 Octavia 有SACD再發；不到7",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E5%85%AB%E5%9F%8E%E4%B8%80%E5%A4%AB/Side%20By%20Side",
+     "https://musicbrainz.org/release-group/86c1a08f-5ece-41a3-b50c-84b147ee3e5e"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -510,8 +513,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -631,7 +634,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L3有效，Living Audio 單一LP，壓量無據、無聖杯名聲；5星",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E5%8C%97%E6%9D%91%E8%8B%B1%E6%B2%BB/Happy%20Cooking",
+     "https://musicbrainz.org/release-group/b20d6496-a61d-4024-aa14-5fa7057f8783"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -660,8 +666,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1210,7 +1216,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L1有效，單一LP，壓量無據、無聖杯名聲；5星",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E5%8C%97%E6%9D%91%E8%8B%B1%E6%B2%BB/Happy%20Cooking%20Vol.%20II",
+     "https://musicbrainz.org/release-group/94cc4142-81a3-4984-80ab-72f302ca3961"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -1239,8 +1248,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

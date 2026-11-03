@@ -409,7 +409,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -2528,7 +2528,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L186有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/String%20Connection/Workoholic",
+     "https://musicbrainz.org/release-group/00ab2297-41ab-44da-89b4-ef34a2daa9e3"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -2559,7 +2562,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -3188,7 +3191,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Alma Art限量1000張，超過數百張門檻；非聖杯級",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Andrzej%20Przybielski/W%20sferze%20dotyku",
+     "https://www.discogs.com/release/1356396"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -3218,7 +3224,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {

@@ -49,7 +49,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。據稱僅200張的Vanity 0001，但已有2019 CD與VOD限800套盒再發，拿不準判none",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Dada/Jyo",
+     "https://musicbrainz.org/release-group/e1abd52e-2696-4864-bf35-1e5e6a415f6b"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -80,8 +83,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -658,7 +661,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Vanity卡帶套裝海外曾12萬日圓成交；但2020有Kyou一般CD與VOD 500套重發，已非未再發",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Salaried%20Man%20Club/Gray%20Cross",
+     "https://musicbrainz.org/release-group/2f76c024-6b12-474e-8b1e-3b1d6e5d2410"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -689,8 +695,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -739,7 +745,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Vanity手工卡帶壓量無據，2020已CD與黑膠再發",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Den%20Sei%20Kwan/Pocket%20Planetaria",
+     "https://musicbrainz.org/release-group/07b6122f-3588-46f9-b404-2384d29611f7"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -770,8 +779,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2012,7 +2021,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L6有效，1991 Crown CD再發；不到7",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E5%90%89%E9%87%8E%E5%A4%A7%E4%BD%9C%EF%BC%86%E3%83%97%E3%83%AD%E3%82%B9%E3%83%86%E3%82%A3%E3%83%86%E3%83%A5%E3%83%BC%E3%83%88/%E5%BE%8C%E3%82%8D%E5%A7%BF%E3%81%AE%E7%B4%A0%E6%95%B5%E3%81%AA%E5%83%95%E3%81%9F%E3%81%A1",
+     "https://musicbrainz.org/release-group/7a4acdf2-cd0a-481d-8f99-7c00d8563bd5"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -2044,8 +2056,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

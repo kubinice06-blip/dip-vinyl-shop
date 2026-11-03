@@ -862,7 +862,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。2012 自發行 CD+DVD，樂團台灣知名，非極小壓量聖杯；L=34",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E6%BF%81%E6%B0%B4%E6%BA%AA%E5%85%AC%E7%A4%BE/%E9%AC%BC%E5%B3%B6%E7%A4%BE%E6%9C%83%E6%AA%94%E6%A1%88",
+     "https://musicbrainz.org/release-group/1c6e1fad-0f2e-40f6-a57a-a858b2e1970a"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -890,8 +893,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

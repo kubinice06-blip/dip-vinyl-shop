@@ -1258,7 +1258,11 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。限量300、無數位，但2024新作尚無聖杯地位",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Deathprod/Let%20Me%20Be%20Forever%20Animal",
+     "https://musicbrainz.org/release-group/3836ef0e-3a92-4f17-a6fb-1f71d0238221",
+     "https://www.discogs.com/release/31026103"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -1288,8 +1292,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

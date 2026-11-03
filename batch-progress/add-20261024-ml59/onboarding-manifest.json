@@ -135,7 +135,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。極小廠showcase，壓量無據，非聖杯",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Delton%20Screechie/Living%20In%20The%20Ghetto%20Showcase",
+     "https://musicbrainz.org/release-group/716e03f6-dbfd-4f0c-a08b-fe9c9ffac313"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -166,7 +169,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -957,7 +960,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },

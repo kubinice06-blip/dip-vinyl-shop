@@ -1821,7 +1821,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠LP壓量無據，非公認聖杯",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Dadawah/Peace%20%26%20Love%3A%20Wadadasow",
+     "https://musicbrainz.org/release-group/e8f1a795-f4c9-3270-843d-e5cbe90c9232"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -1848,8 +1851,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

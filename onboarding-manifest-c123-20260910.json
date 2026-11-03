@@ -2622,7 +2622,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。listeners 276近門檻，已有2003 CD再發",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Dzeltenie%20pastnieki/Man%20%C4%BCoti%20pat%C4%ABk%20jaunais%20vilnis",
+     "https://musicbrainz.org/release-group/1cc6f732-20f0-3461-be19-d06a7cea8eb9"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -2652,8 +2655,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

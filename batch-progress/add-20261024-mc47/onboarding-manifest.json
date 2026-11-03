@@ -85,7 +85,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -246,7 +246,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -411,7 +411,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -564,7 +564,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。獨奏小提琴極端技法選集，屬現代音樂 5 星範圍",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Irvine%20Arditti/Recital%20for%20Violin",
+     "https://www.discogs.com/release/9244794"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -596,7 +599,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -818,7 +821,11 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Stockhausen 鋼琴曲演奏版之一，學院前衛 5",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Bernhard%20Wambach/Stockhausen%3A%20Klavierst%C3%BCcke%20vol.%20II",
+     "https://musicbrainz.org/release-group/47005c47-95cc-449b-a3f5-11d3462fb82e",
+     "https://www.discogs.com/release/828359"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -851,7 +858,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -1047,7 +1054,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1332,7 +1339,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   }

@@ -122,7 +122,11 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L2有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Stan%20Tracey%20Quartet/Captain%20Adventure",
+     "https://musicbrainz.org/release-group/d9ed221d-260a-4f36-9a17-62f1bb685ed1",
+     "https://www.discogs.com/release/888330"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -152,8 +156,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -423,7 +427,11 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L214有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Steve%20Beresford/The%20Bath%20of%20Surprise",
+     "https://musicbrainz.org/release-group/eb6b3069-9d9a-3f23-a553-2c9ea345dc37",
+     "https://www.discogs.com/release/889723"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -452,8 +460,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   }
  ]

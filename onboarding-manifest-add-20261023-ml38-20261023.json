@@ -479,7 +479,11 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L103有效，Prophets 原盤＋1977牙買加重壓，壓量無據；不到7",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Wayne%20Wade/Black%20Is%20Our%20Colour",
+     "https://musicbrainz.org/release-group/7e335e52-231c-4df3-8f99-495908736d07",
+     "https://www.discogs.com/release/858370"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -512,8 +516,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

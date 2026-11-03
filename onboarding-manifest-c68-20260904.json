@@ -48,7 +48,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。私壓99張、2014年成交$4500屬聖杯級；但Discogs列10個版本、多次合法考古重發，不符「從未或極小量重發」",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Sindelfingen/Odgipig",
+     "https://musicbrainz.org/release-group/e424ce5d-d806-47be-b52f-18afbd86ec02"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -77,8 +80,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

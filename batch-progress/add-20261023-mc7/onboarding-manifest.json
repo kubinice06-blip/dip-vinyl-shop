@@ -2335,7 +2335,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L170有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Oliver%20Ho/Universal",
+     "https://musicbrainz.org/release-group/cbb069b8-bde6-42d3-bd65-72b3b0c945b6"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -2367,8 +2370,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

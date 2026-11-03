@@ -49,7 +49,11 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。傳99張但有Wooden Hill重發與2022 Cherry Red套盒（串流可得），不到7",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Complex/The%20Way%20We%20Feel",
+     "https://musicbrainz.org/release-group/7870bfb0-b9a6-4c70-9520-02625ff27803",
+     "https://www.discogs.com/release/4253420"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -79,8 +83,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   }
  ]

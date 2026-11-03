@@ -139,7 +139,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Jezzreel/Rockers%20Showcase%20Volume%202",
+     "https://musicbrainz.org/release-group/8a3c5b29-a1be-48ee-a91f-c1fed099afee"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -170,8 +173,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -310,7 +313,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。自家廠私壓但壓量無據，非公認聖杯",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Audley%20Rollens/Showcase%20Prevail",
+     "https://musicbrainz.org/release-group/478db991-eea8-402b-bf0a-562ddab816e7"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -341,8 +347,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

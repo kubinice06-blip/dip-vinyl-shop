@@ -1272,7 +1272,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。FMP早期LP，壓量無據，非公認聖杯",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Christmann%20Sch%C3%B6nenberg%20Duo/We%20Play",
+     "https://musicbrainz.org/release-group/53d822c7-6259-4cac-8440-935bb35fa26b"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -1302,8 +1305,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1431,7 +1434,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Georg%20Gr%C3%A4we%20Quintet/Pink%20Pong",
+     "https://musicbrainz.org/release-group/74eec6f7-c0e4-457c-8ccf-25737d3edcba"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -1460,8 +1466,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1855,7 +1861,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L19有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Pierre%20Favre%20Trio/Santana",
+     "https://musicbrainz.org/release-group/0f20a62a-cb5f-4f74-b48e-c10ba767a985"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -1887,8 +1896,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   }
  ]

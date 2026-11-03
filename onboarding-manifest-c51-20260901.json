@@ -71,8 +71,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -5086,8 +5086,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -5166,8 +5166,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -7371,7 +7371,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。非慣用語法即興屬 5 星前衛，不是 harsh noise wall／反音樂里程碑級；同段 Parker、Topography 也是 none（主線改）",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Derek%20Bailey/Solo%20Guitar%20Volume%201",
+     "https://musicbrainz.org/release-group/bec9e173-a085-37c6-956d-7145b92539fb"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -7399,8 +7402,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

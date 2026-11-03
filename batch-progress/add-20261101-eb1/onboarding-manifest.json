@@ -1301,7 +1301,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Harry%20Tavitian%20%26%20Corneliu%20Stroe/Transylvanian%20Suite",
+     "https://musicbrainz.org/release-group/6879b549-5ade-4fe0-85ce-8fbc4680798e"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -1335,7 +1338,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -1466,7 +1469,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L6有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Mircea%20Tiberian/Alone%20in%20Heaven",
+     "https://musicbrainz.org/release-group/dfeb5622-2b55-4032-ae9f-92ab6915b1d8"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -1498,7 +1504,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -3096,7 +3102,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },

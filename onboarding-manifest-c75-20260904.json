@@ -1398,7 +1398,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L17有效，Sound of Gospel 原盤，壓量無據、無聖杯名聲；5星",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/The%20Clark%20Sisters/Unworthy",
+     "https://musicbrainz.org/release-group/b64f35ef-6ee2-48bf-a40d-78087f5cbf75"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -1427,8 +1430,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1478,7 +1481,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L31有效，小型福音廠原盤，壓量無據；藝人知名、非收藏聖杯；5星",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/The%20Clark%20Sisters/Count%20It%20All%20Joy",
+     "https://musicbrainz.org/release-group/0dc43d29-615f-43f0-a193-d4297942e30f"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -1509,8 +1515,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

@@ -1900,7 +1900,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -2201,7 +2201,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。限量1000張超出數百張門檻，Cold Meat為專業廠，無聖杯地位",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Moljebka%20Pvlse/Sadalmelik",
+     "https://musicbrainz.org/release-group/25133df1-39d2-3cf0-bdc5-ebd2489fae38"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -2233,7 +2236,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -2818,7 +2821,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -3193,7 +3196,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Hall%20of%20Mirrors/Reflections%20on%20Black",
+     "https://musicbrainz.org/release-group/4c9865e3-8e3c-4758-b84a-6d8027b9bc3c"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -3225,7 +3231,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {

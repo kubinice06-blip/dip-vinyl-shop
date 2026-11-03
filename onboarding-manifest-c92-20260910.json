@@ -754,7 +754,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。2012 Hove 小廠 CD，樂團台灣知名，非極小壓量聖杯；L=5",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E5%A4%BE%E5%AD%90%E9%9B%BB%E5%8B%95%E5%A4%A7%E6%A8%82%E9%9A%8A/%E5%9C%B0%E4%B8%8B%E4%BA%BA",
+     "https://www.discogs.com/release/8269115"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -782,8 +785,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

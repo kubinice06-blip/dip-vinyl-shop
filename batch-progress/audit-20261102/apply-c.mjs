@@ -72,8 +72,18 @@ if (process.argv.includes('--manifest')) {
         const nw = x.new, r = a.ratings, ap = a.apexAssessment || {};
         const rar = rarityOf(nw.classic, nw.obscurity, nw.accessibility);
         const curTier = ap.eligible ? ap.tier : null;
+        // 上架入口旗標跟著 tier 走（gate 依 published.seedCards／apexPool 找卡池列）；流亡證據補 Last.fm 頁＋MB／Discogs 本盤頁
+        const pubOk = !a.published || (a.published.seedCards === !nw.tier && a.published.apexPool === !!nw.tier);
+        const pearlEv = () => { const u = [`https://www.last.fm/music/${encodeURIComponent(a.artist)}/${encodeURIComponent(a.album)}`];
+          if (a.identity?.rgMbid) u.push(`https://musicbrainz.org/release-group/${a.identity.rgMbid}`);
+          if (a.cover?.discogsReleaseId) u.push(`https://www.discogs.com/release/${a.cover.discogsReleaseId}`);
+          return u; };
+        const evOk = !(nw.tier === 'pearl' && ap.eligible && (ap.evidenceUrls || []).length < 2);
         const done = r.classic === nw.classic && r.obscurity === nw.obscurity && r.accessibility === nw.accessibility && a.rarity === rar && curTier === nw.tier;
-        if (done) continue;
+        if (done && pubOk && evOk) continue;
+        if (!pubOk) { a.published.seedCards = !nw.tier; a.published.apexPool = !!nw.tier; }
+        if (!evOk) a.apexAssessment.evidenceUrls = pearlEv();
+        if (done) { n++; continue; }
         const axChanged = x.old.classic !== nw.classic || x.old.obscurity !== nw.obscurity || x.old.accessibility !== nw.accessibility;
         if (axChanged || r.classic !== nw.classic || r.obscurity !== nw.obscurity || r.accessibility !== nw.accessibility) {
           if (r.source !== SRC) r.previous = { classic: r.classic, obscurity: r.obscurity, accessibility: r.accessibility, source: r.source, checkedAt: r.checkedAt, ...(r.note ? { note: r.note } : {}), rarity: a.rarity };
@@ -87,13 +97,14 @@ if (process.argv.includes('--manifest')) {
             ? `方案 C（audit-20261102，2026-11-03）：升為${TN[nw.tier]}（該軸 7 星）。` + (nw.tier === 'pearl' && !x.apexWhy ? `流亡照原始定義：Last.fm listeners ${x.listeners}（1–299、非疑錯配）、稽核冷門度 5。` : (x.apexWhy || ''))
             : `方案 C（audit-20261102，2026-11-03）：原${TN[curTier] || curTier}未達該軸 7 星，降為一般卡。` + (x.apexWhy || x.why || '');
           a.apexAssessment = { eligible: !!nw.tier, tier: nw.tier, reason, evidenceUrls: nw.tier ? (x.evidence || []) : [], previous: ap.previous || prev, assessedAt: AT, source: SRC };
+          if (nw.tier === 'pearl' && a.apexAssessment.evidenceUrls.length < 2) a.apexAssessment.evidenceUrls = pearlEv();
         }
         a.rarity = rar; n++;
       }
       if (n) { fs.writeFileSync(p, JSON.stringify(m, null, ind) + (raw.endsWith('\n') ? '\n' : '')); mfiles++; mcards += n; touched.push(p); }
     }
   }
-  if (touched.length) fs.writeFileSync(D + 'touched-manifests.json', JSON.stringify(touched, null, 1) + '\n');
+  if (touched.length) { const prev = fs.existsSync(D + 'touched-manifests.json') ? J(D + 'touched-manifests.json') : []; fs.writeFileSync(D + 'touched-manifests.json', JSON.stringify([...new Set([...prev, ...touched])].sort(), null, 1) + '\n'); }
   console.log(`manifest：改 ${mfiles} 檔、${mcards} 筆｜apply-c 有 manifest 的 ${seen.size}／${list.length}（其餘為早期無 manifest 的卡）`);
 }
 

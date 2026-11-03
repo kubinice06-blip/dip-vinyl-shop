@@ -451,7 +451,11 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/John%20Holt/Introspective",
+     "https://musicbrainz.org/release-group/8ccdcbcb-a987-403c-8715-e97717585aff",
+     "https://www.discogs.com/release/9808771"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -480,8 +484,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -954,7 +958,11 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Body Music LP，壓量無據，非收藏聖杯",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Alton%20Ellis/A%20New%20Day",
+     "https://musicbrainz.org/release-group/5dd7251d-ff9d-40b7-bef4-a136a4516b7d",
+     "https://www.discogs.com/release/3045824"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -985,8 +993,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

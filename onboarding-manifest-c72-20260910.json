@@ -50,7 +50,11 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Hope%20of%20Glory/Under%20the%20Spout%20Where%20the%20Glory%20Comes%20Out",
+     "https://musicbrainz.org/release-group/1c1af9d5-febb-41a2-b478-b3a8edfd0ae3",
+     "https://www.discogs.com/release/13813030"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -80,8 +84,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -131,7 +135,11 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。客壓LP翌年即由Myrrh正規再發，不符",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Bob%20Ayala/Joy%20by%20Surprise",
+     "https://musicbrainz.org/release-group/3df63c92-4f76-4c41-9316-02f35a13f642",
+     "https://www.discogs.com/release/2058610"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -159,8 +167,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

@@ -1003,7 +1003,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠唯一 LP、L=4，但壓量與聖杯名聲均無依據",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E7%9C%9F%E8%8A%BD%E6%AD%A3%E6%81%B5/%E7%9C%9F%E8%8A%BD%E6%AD%A3%E6%81%B5%E3%81%A8%E5%B0%8F%E3%81%95%E3%81%AA%E8%A9%A9",
+     "https://www.discogs.com/release/12624822"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -1033,8 +1036,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

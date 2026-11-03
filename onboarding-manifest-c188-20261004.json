@@ -1353,7 +1353,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。私壓500張、無再發、L69；但查無收藏圈聖杯地位依據，屬5星冷門",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/South%20Wind%20Section/South%20Wind",
+     "https://musicbrainz.org/release-group/601d1603-1c95-4f87-9db1-fc21eb3be9fe"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -1381,8 +1384,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

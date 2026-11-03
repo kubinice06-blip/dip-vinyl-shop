@@ -520,7 +520,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。一次性私壓，但2000年已有Gear Fab母帶CD再發",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Deerfield/Nil%20Desperandum",
+     "https://musicbrainz.org/release-group/3f651dbf-d3a5-42f1-bc49-6a189e9ba6e2"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -550,8 +553,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

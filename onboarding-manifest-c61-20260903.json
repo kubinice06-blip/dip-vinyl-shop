@@ -930,7 +930,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。1976 自資約 500 張的義大利前衛搖滾私壓，但後來多次 CD／LP 再版，不算聖杯級絕版；只到 5",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Errata%20Corrige/Siegfried%2C%20il%20drago%20e%20altre%20storie",
+     "https://musicbrainz.org/release-group/d36e5969-1fd5-3113-a812-11d45a41a959"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -958,8 +961,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1452,7 +1455,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。listeners 252但壓量無據、再發狀況不明，聖杯地位依據不足；噪音搖滾僅5星",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Mahogany%20Brain/With%20(Junk-Saucepan)%20When%20(Spoon-Trigger)",
+     "https://musicbrainz.org/release-group/f07c5f9a-cbf5-3176-bf06-b823329aebf9"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -1483,8 +1489,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

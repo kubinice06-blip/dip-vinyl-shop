@@ -118,7 +118,11 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。2019 Octave Lab CD 正式再發；L=1",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E7%94%9F%E6%B4%BB%E5%90%91%E4%B8%8A%E5%A7%94%E5%93%A1%E4%BC%9A/Live%20in%20Masuda",
+     "https://musicbrainz.org/release-group/44bf88b7-f2d7-460d-ab5a-98a9065ae56e",
+     "https://www.discogs.com/release/9761821"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -146,8 +150,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

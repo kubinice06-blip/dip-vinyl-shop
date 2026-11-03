@@ -590,7 +590,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Disc Akabana 一般 CD，無壓量極小依據，非收藏聖杯；L=5",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E5%A4%A7%E5%B7%A5%E5%93%B2%E5%BC%98/%E3%82%86%E3%82%93%E3%81%9F%20%E3%81%A8%E3%81%85%20%E3%81%98%E3%82%89%E3%81%B0",
+     "https://musicbrainz.org/release-group/08de40a3-de49-4f30-8b1f-4550245650ce"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -618,8 +621,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2471,7 +2474,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L25有效，マルフク地方廠LP，壓量無據、非私壓聖杯；5星",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E5%98%89%E6%89%8B%E8%8B%85%E6%9E%97%E6%98%8C/%E5%98%89%E6%89%8B%E8%8B%85%E6%9E%97%E6%98%8C",
+     "https://musicbrainz.org/release-group/1a68fd15-6cdd-4299-95d7-24969346f7a3"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -2499,8 +2505,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   }
  ]

@@ -400,7 +400,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -616,7 +616,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Zorn 遊戲作品早期盤，碎片化即興，屬前衛即興 5，非 7",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Eugene%20Chadbourne%20%26%20John%20Zorn/School",
+     "https://musicbrainz.org/release-group/0cb3cdea-75ad-419e-b271-02a38a3d9fa0"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -648,7 +651,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -726,7 +729,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -943,7 +946,11 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L7有效，Rift 單次LP，壓量無據；作者知名度高、非聖杯；5星",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Tom%20Cora%2C%20David%20Moss/Cargo%20Cult%20Revival",
+     "https://musicbrainz.org/release-group/d75b1d7c-4f44-4fc9-810c-99f88bd947d4",
+     "https://www.discogs.com/release/1003533"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -975,7 +982,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {

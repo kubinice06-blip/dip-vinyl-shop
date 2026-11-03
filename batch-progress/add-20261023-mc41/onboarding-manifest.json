@@ -451,7 +451,11 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L35有效，但作品收入2000 EMF合輯與 Bandcamp 雙CD；不到7",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Trevor%20Wishart/Tongues%20of%20Fire",
+     "https://musicbrainz.org/release-group/3cf34252-f3ff-3fb7-8e5a-70061cb7e6fe",
+     "https://www.discogs.com/release/776947"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -484,8 +488,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -553,7 +557,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。微型廠 CD、聽眾 21；量產 CD、無壓量極小或聖杯紀錄",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/A_dontigny/Geisteswissenschaften",
+     "https://www.discogs.com/release/4010943"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -582,8 +589,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

@@ -50,7 +50,11 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L243有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Pablo%20Picasso/Soft%20Type",
+     "https://musicbrainz.org/release-group/2fd2764a-fb7c-4e55-8a2a-1f89a3947600",
+     "https://www.discogs.com/release/1707107"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -79,8 +83,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -207,7 +211,11 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L102有效，1992 SSE 有CD再發；不到7",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Z.O.A/Humanical%20Garden",
+     "https://musicbrainz.org/release-group/1178fbfa-969d-4b5b-8c8e-d549c0b9fe01",
+     "https://www.discogs.com/release/1427264"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -236,8 +244,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   }
  ]

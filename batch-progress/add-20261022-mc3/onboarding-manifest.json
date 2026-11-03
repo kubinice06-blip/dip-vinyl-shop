@@ -448,7 +448,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Moers Music正規小廠LP，壓量非極小，非聖杯",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Anthony%20Braxton/Seven%20Compositions%201978",
+     "https://musicbrainz.org/release-group/5ad90adc-2cf6-4352-8ff6-ef0f9c43ad1e"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -478,8 +481,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1263,7 +1266,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L289有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Spontaneous%20Music%20Ensemble/Challenge",
+     "https://musicbrainz.org/release-group/b3e3e67b-af0b-4672-a213-7d961d5cc11f"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -1292,8 +1298,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1511,7 +1517,11 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Howard%20Riley/Synopsis",
+     "https://musicbrainz.org/release-group/b25f59c1-fc7d-480c-8f2d-887e0c90db31",
+     "https://www.discogs.com/release/2326955"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -1545,8 +1555,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   }
  ]

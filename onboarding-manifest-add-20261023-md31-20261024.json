@@ -963,7 +963,11 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Main/Surcease",
+     "https://musicbrainz.org/release-group/28549a64-d6ba-49f3-a1b8-00cab73e0026",
+     "https://www.discogs.com/release/852020"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -993,8 +997,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

@@ -467,7 +467,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -782,7 +782,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -916,7 +916,11 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Emanem CD，2003新近錄音、壓量無據，非聖杯",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Alan%20Tomlinson%20%2F%20Steve%20Beresford%20%2F%20Roger%20Turner/Trap%20Street",
+     "https://musicbrainz.org/release-group/ced3ac6a-61dd-427f-90d8-7abb33e319d9",
+     "https://www.discogs.com/release/2332869"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -949,7 +953,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {

@@ -1850,7 +1850,11 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠CD，壓量無據，非收藏聖杯",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Boris%20Divider/La%20hora%20de%20las%20m%C3%A1quinas",
+     "https://musicbrainz.org/release-group/4cd55a07-5001-3a1c-a1b0-a48d5d584f41",
+     "https://www.discogs.com/release/860550"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -1879,8 +1883,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

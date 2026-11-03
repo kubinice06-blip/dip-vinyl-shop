@@ -1065,7 +1065,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠12吋，壓量無據，非收藏圈聖杯；只到一般冷門",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/Adonis/H.O.U.S.E.",
+     "https://musicbrainz.org/release-group/cb3615bb-f195-45e2-bdbf-9fc1c5cc376a"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -1096,8 +1099,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

@@ -654,7 +654,10 @@
     "eligible": true,
     "tier": "pearl",
     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。台灣小廠單版現場 CD，量產 CD 非聖杯；聽眾 13 但收藏圈無傳說地位",
-    "evidenceUrls": [],
+    "evidenceUrls": [
+     "https://www.last.fm/music/1976/Late%20Summer%20of%201976%20%E4%B8%8D%E6%8F%92%E9%9B%BB%E7%8F%BE%E5%A0%B4%E5%AF%A6%E6%B3%81",
+     "https://musicbrainz.org/release-group/ff37aa1e-7fb4-3c6c-bd36-8f4f6578afe1"
+    ],
     "previous": {
      "eligible": false,
      "tier": null,
@@ -681,8 +684,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
