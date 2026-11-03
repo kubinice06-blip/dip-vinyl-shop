@@ -65,7 +65,7 @@
 | U5 | X02、P01、P02 | ✅ X02 172 張（apex：hall 0／pearl 0／heresy 27／none 145）；P01 260 張（hall 0／pearl 63／heresy 0／none 197）；P02 260 張（hall 0／pearl 50／heresy 0／none 210）。舊 5 星標準判定，待 7 星重審；X02 末段太鬆退回重派一次；pearl 只收實質私壓／極小廠，被下限抬到 5 的大廠盤一律 none；Ogun／Okka／Incus 類小型專業廠口徑未統一，留彙整二選一 |
 | U6 | P03、P04、P05 | ✅ 645 張（apex：hall 0／pearl 89／heresy 0／none 556）；P03 pearl 52、P04 pearl 33、P05 pearl 4。舊 5 星標準判定，待 7 星重審；拆名錯配只限「國際以羅馬字名為主的藝人」或「語言圈主流暢銷作」，其餘 listeners 當有效值（見各 summary） |
 | 彙整 | — | |
-| 套用 | — | |
+| 套用 | — | ✅ 2026-11-03 方案 C：2,713 張寫進 seed／manifest／card_catalog；殿堂 170、流亡 232、異端 54；album_overrides 留本機（後台「依卡池同步頂點旗標」）。見 `REPORT.md` |
 
 ## 頂點 7 星重審（apex7）
 
