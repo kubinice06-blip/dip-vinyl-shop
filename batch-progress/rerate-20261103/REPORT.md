@@ -77,3 +77,15 @@
 - Firestore `card_catalog`：只推 classic／obscurity／accessibility／rarity 四欄（`updateMask`＋`currentDocument.exists=true`），6,548／6,548 成功、失敗 0；抽 15 張讀回 15/15；推完整份重列（22,796 文件）比對 0 不符。payload 在 `publish-stage/rerate-20261103/card-catalog-patches.json`（不進版控）。
 - 店內印刷卡：A6／A7／A7-A4 的 html＋jsx、A4 PDF 重出（在售 116 張中 7 張三軸有變）。`build-seed-genres` 0 變動。
 
+## 七、published gate（抽 15 份）
+
+- 抽 15 份 manifest（c29、mc48、c60、c75、c100、c120、c140、c160、c185、csea、dt3、ts2、ml40、sf05、eb3），共 548 張，89 error。
+- **三軸／稀有度／seed／card_catalog 評分欄：0 error。**
+- 殘留全是既有、與本次無關：`/album-desc 文字與 manifest 不一致` 84（manifest 簡介落後 KV）、`card_catalog.coverUrl 不一致` 1（Christone "Kingfish" Ingram）、已不在卡池的 Wings《Belenggu Irama》4 條。
+- 日誌：`publish-stage/gates-rerate3/`（不進版控）。
+- 本批 7,525 張沒有 manifest，gate 碰不到；正確性靠 seed 三道防呆＋card_catalog 整份重列比對。
+
+## 八、留給其他線
+
+- Tamia《Tamia》年份 1978 應為 1998（W9）；Otis Redding《Dictionary of Soul》兩種盤名各一張卡（W7）。本次只動三軸，沒處理。
+
