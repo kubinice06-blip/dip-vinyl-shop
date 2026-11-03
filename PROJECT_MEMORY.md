@@ -85,6 +85,16 @@
 - **主要檔案**：`batch-progress/audit-20261102/verdicts/`（A04／S01／S02 段檔、`*.summary.md`、`*.mainline.json`、`summarize.py`）。
 - **驗證**：`summarize.py` 合併檢查三片都過（每 key 一筆、三軸 1–5、apex 合法、tier 與該軸 5 相符）。
 
+### 2026-11-03｜dip-vinyl-shop｜頂點方案 C 拍板＋三軸重評第三輪開工
+
+- **店主**：頂點選方案 C，早期無評分來源的卡同意整批重評（「1 c」「2 好」）。
+- **方案 C**：`batch-progress/audit-20261102/apply-c.json` 共 2,713 張三軸或 tier 有變。
+  - 全池：殿堂 170、流亡 232、異端 54、傳奇 471、史詩 1,612、獨特 3,943、稀有 6,587、普通 9,437。
+  - 交給套用工作階段做，照 `APPLY-C.md`。
+- **第三輪**：7,525 張、31 片，派 W1–W10 只交 verdicts。套用要等方案 C 合併後才跑。
+- **主要檔案**：`batch-progress/audit-20261102/{APPLY-C.md,build-apply-c.js,apply-c.json}`、`batch-progress/rerate-20261103/`。
+- **驗證**：apply-c 試算的全池分布與報告方案 C 一致。
+
 ### 2026-11-02｜dip-vinyl-shop｜全池稽核＋頂點 7 星重審：彙整
 
 - **9 月前一般卡**（抽樣 403 張，已套 KV listeners）：
